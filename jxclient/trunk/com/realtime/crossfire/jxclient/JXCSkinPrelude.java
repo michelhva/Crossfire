@@ -45,8 +45,7 @@ public class JXCSkinPrelude implements JXCSkin
     {
         mydialog_keybind.clear();
 
-        final Font font_default_medium = getFont("default.theme/fonts/default.ttf");
-        final Font font_stats = font_default_medium.deriveFont(12f);
+        final Font font_stats = getFont("default.theme/fonts/default.ttf").deriveFont(12f);
         try
         {
             //Query-Reply Dialog
@@ -84,17 +83,8 @@ public class JXCSkinPrelude implements JXCSkin
     {
         mydialog_query.clear();
 
-        final Font font_default_normal = getFont("default.theme/fonts/default.ttf");
-        final Font font_default_large = font_default_normal.deriveFont(16f);
-        final Font font_menu = font_default_normal.deriveFont(14f);
-        final Font font_stats = font_default_normal.deriveFont(12f);
-        final Font font_types = font_default_normal.deriveFont(12f);
-        final Font font_default_medium = font_default_normal.deriveFont(14f);
-        final Font font_regular_normal = getFont("default.theme/fonts/regular.ttf");
-        final Font font_regular_small = font_regular_normal.deriveFont(16f);
-        final Font font_cmdline = font_regular_small.deriveFont(14f);
-        final Font font_log_normal = getFont("default.theme/fonts/courbd.ttf");
-        final Font font_log = font_log_normal.deriveFont(8f);
+        final Font font_stats = getFont("default.theme/fonts/default.ttf").deriveFont(12f);
+        final Font font_cmdline = getFont("default.theme/fonts/regular.ttf").deriveFont(16f).deriveFont(14f);
 
         GUICommandList command_rinv_up = new GUICommandList();
         try
@@ -143,12 +133,9 @@ public class JXCSkinPrelude implements JXCSkin
         System.out.println("Free Memory after getMainInterface GC 1:"+Runtime.getRuntime().freeMemory()/1024+" KB");
 
         final Font font_default_normal = getFont("default.theme/fonts/default.ttf");
-        final Font font_regular_normal = getFont("default.theme/fonts/regular.ttf");
-        final Font font_default_small = font_regular_normal.deriveFont(8f);
-        final Font font_default_medium = font_default_normal.deriveFont(14f);
+        final Font font_default_small = getFont("default.theme/fonts/regular.ttf").deriveFont(8f);
         final Font font_default_large = font_default_normal.deriveFont(16f);
         final Font font_log = getFont("default.theme/fonts/courbd.ttf").deriveFont(8f);
-        final Font font_menu = font_default_normal.deriveFont(14f);
         final Font font_stats = font_default_normal.deriveFont(12f);
         final Font font_types = font_default_normal.deriveFont(12f);
         final Font font_cmdline = font_default_small.deriveFont(14f);
