@@ -1143,6 +1143,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         catch (final JXCSkinException e)
         {
+            e.printStackTrace();
             endRendering();
             newGui = null;
         }
@@ -1160,6 +1161,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         catch (final JXCSkinException e)
         {
+            e.printStackTrace();
             endRendering();
             newGui = null;
         }
@@ -1187,6 +1189,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         catch (final JXCSkinException e)
         {
+            e.printStackTrace();
             endRendering();
             newGui = null;
         }
