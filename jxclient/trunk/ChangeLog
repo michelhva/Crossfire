@@ -1,3 +1,15 @@
+2007-07-04  Andreas Kirschbaum
+
+	* Change skin handling from hard-coded JXCSkinPrelude class to
+	config files:
+	- Option -S now takes a skin name, not a class name.
+	- jxclient.jar now includes the default skin. The name is
+	"default". This means "java -jar jxclient.jar" works.
+	- Skins now are specified through config files. The skin name is
+	either a directory or a directory name under
+	com/realtime/crossfire/jxclient/skins/ which can be accessed
+	through the class loader.
+
 2007-06-22  Andreas Kirschbaum
 
 	* Implement map2 command. Remove obsolete commands map1, map1a,

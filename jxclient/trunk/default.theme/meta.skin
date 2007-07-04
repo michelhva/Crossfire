@@ -1,0 +1,62 @@
+
+font font_metaurl     default 16
+font font_description default 14
+
+commandlist command_metaconnect
+commandlist command_metacancel
+commandlist command_metaup
+commandlist command_metadown
+
+picture background 0 0 1024 768 metaserver
+text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl
+label_picture metacomment 200 650 600 118 empty font_description
+meta_element metaselect1 300 250 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 0
+meta_element metaselect2 300 280 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 1
+meta_element metaselect3 300 310 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 2
+meta_element metaselect4 300 340 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 3
+meta_element metaselect5 300 370 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 4
+meta_element metaselect6 300 400 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 5
+meta_element metaselect7 300 430 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 6
+meta_element metaselect8 300 460 400 20 metaentry_tcp metaentry_udp font_metaurl metaurl metacomment 7
+
+commandlist_add command_metaup metaselect1 SCROLLUP
+commandlist_add command_metaup metaselect2 SCROLLUP
+commandlist_add command_metaup metaselect3 SCROLLUP
+commandlist_add command_metaup metaselect4 SCROLLUP
+commandlist_add command_metaup metaselect5 SCROLLUP
+commandlist_add command_metaup metaselect6 SCROLLUP
+commandlist_add command_metaup metaselect7 SCROLLUP
+commandlist_add command_metaup metaselect8 SCROLLUP
+
+commandlist_add command_metadown metaselect1 SCROLLDOWN
+commandlist_add command_metadown metaselect2 SCROLLDOWN
+commandlist_add command_metadown metaselect3 SCROLLDOWN
+commandlist_add command_metadown metaselect4 SCROLLDOWN
+commandlist_add command_metadown metaselect5 SCROLLDOWN
+commandlist_add command_metadown metaselect6 SCROLLDOWN
+commandlist_add command_metadown metaselect7 SCROLLDOWN
+commandlist_add command_metadown metaselect8 SCROLLDOWN
+
+commandlist_add command_metaconnect metaurl CONNECT
+commandlist_add command_metacancel null GUI_START
+
+button metaconnect 620 600 135 55 button_small_active button_small_pushed command_metaconnect font_metaurl DARK_GRAY 42 34 Connect
+button metacancel  620 670 135 55 button_small_active button_small_pushed command_metacancel  font_metaurl DARK_GRAY 42 34 Cancel
+button metaup      270 250  20 25 metaup              metaup              command_metaup
+button metadown    270 470  20 25 metadown            metadown            command_metadown
+
+add background
+add metaurl
+add metaconnect
+add metaup
+add metadown
+add metacomment
+add metaselect1
+add metaselect2
+add metaselect3
+add metaselect4
+add metaselect5
+add metaselect6
+add metaselect7
+add metaselect8
+add metacancel

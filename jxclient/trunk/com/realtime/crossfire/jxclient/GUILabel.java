@@ -28,6 +28,7 @@ import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
 import java.io.Reader;
@@ -88,17 +89,17 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
 
     public static final int LABEL_SPELL_DESCRIPTION = -5;
 
-    private void commonInit(String picture, Font nf) throws IOException
+    private void commonInit(BufferedImage picture, Font nf) throws IOException
     {
         if (picture != null)
-            mybackground = new ImageIcon(getClass().getClassLoader().getResource(picture));
+            mybackground = new ImageIcon(picture);
         else
             mybackground = null;
         myfont = nf;
         createBuffer();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, Font nf, Color clr, String cap) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, Color clr, String cap) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
@@ -107,7 +108,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, Font nf, String cap) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, String cap) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
@@ -115,7 +116,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, Font nf, int stat) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, int stat) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
@@ -127,7 +128,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, String picture, Font nf, Color clr, int stat) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, Color clr, int stat) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);

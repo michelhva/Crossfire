@@ -6,28 +6,45 @@
         <mkdir dir="${build}"/>
     </target>
     <target name="compile" depends="init">
-        <javac srcdir="${src}" destdir="${build}" target="1.5" debug="yes">
+        <delete dir="${build}/jxclient"/>
+        <mkdir dir="${build}/jxclient"/>
+        <javac srcdir="${src}" destdir="${build}/jxclient" target="1.5" debug="yes">
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
-    <target name="jar" depends="compile">
-        <copy file="cache/unknown.png" todir="${build}"/>
-        <jar destfile="jxclient.jar" basedir="${build}" excludes="**/JXCSkinPrelude.class">
-            <exclude name="**/skins/**"/>
+    <target name="jar" depends="compile,skin.prelude">
+        <jar destfile="jxclient.jar">
+            <fileset dir="${build}/jxclient"/>
+            <fileset dir="." includes="default.theme/pictures/spells/*.png"/>
+            <zipfileset src="jxcskin_prelude.jar"/>
+            <fileset dir="cache" includes="unknown.png"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
             </manifest>
         </jar>
     </target>
     <target name="skin.prelude" depends="compile">
-        <mkdir dir="${build}/skins/prelude/default.theme"/>
-        <copy todir="${build}/skins/prelude/default.theme">
-            <fileset dir="default.theme"/>
+        <delete dir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default"/>
+        <copy todir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default">
+            <fileset dir="default.theme">
+                <include name="*.skin"/>
+                <include name="fonts/**"/>
+                <include name="pictures/**"/>
+                <exclude name="pictures/background_chat.png"/>
+                <exclude name="pictures/background_staff.jpg"/>
+                <exclude name="pictures/menu_example.png"/>
+                <exclude name="pictures/menuitem_background.png"/>
+                <exclude name="pictures/metaserver2.png"/>
+                <exclude name="pictures/scroll_bottom.png"/>
+                <exclude name="pictures/scroll_middle.png"/>
+                <exclude name="pictures/spellbelt.png"/>
+                <exclude name="pictures/spells/**"/>
+                <exclude name="pictures/spells_extended.png"/>
+                <exclude name="pictures/spells_shrinked.png"/>
+                <exclude name="pictures/standardbeltscreen.png"/>
+            </fileset>
         </copy>
-        <copy file="${build}/com/realtime/crossfire/jxclient/JXCSkinPrelude.class"
-              todir="${build}/skins/prelude/com/realtime/crossfire/jxclient"/>
-        <jar destfile="jxcskin_prelude.jar" basedir="${build}/skins/prelude">
-        </jar>
+        <jar destfile="jxcskin_prelude.jar" basedir="${build}/skin.prelude"/>
     </target>
     <target name="clean">
         <delete dir="${build}" failonerror="false"/>

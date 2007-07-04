@@ -27,7 +27,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -71,15 +70,12 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         SN,
     }
 
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture_full, final String picture_negative, final String picture_empty, final int stat, final Orientation orientation) throws IOException
+    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        pictureFull = ImageIO.read(this.getClass().getClassLoader().getResource(picture_full));
-        if (picture_negative != null)
-            pictureNegative = ImageIO.read(this.getClass().getClassLoader().getResource(picture_negative));
-        else
-            pictureNegative = null;
-        pictureEmpty = ImageIO.read(this.getClass().getClassLoader().getResource(picture_empty));
+        pictureFull = picture_full;
+        pictureNegative = picture_negative;
+        pictureEmpty = picture_empty;
         this.stat = stat;
         createBuffer();
         this.orientation = orientation;

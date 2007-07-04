@@ -24,6 +24,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -401,23 +402,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         initGUI(id);
     }
 
-    public void init(final int w, final int h, final int b, final int f, final String skinclass)
+    public void init(final int w, final int h, final int b, final int f, final String skinName)
     {
         CfMapUpdater.processNewmap();
         addKeyListener(this);
         addMouseListener(this);
         addMouseMotionListener(this);
         jxcWindowRenderer.init(w, h, b, f);
-        try
-        {
-            myskin = (JXCSkin)(Class.forName(skinclass).newInstance());
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            System.exit(1);
-        }
-
+        setSkin(skinName);
         try
         {
             initRendering();
@@ -1319,5 +1311,34 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public GUILabel getTooltip()
     {
         return jxcWindowRenderer.getCurrentGui().getTooltip();
+    }
+
+    /**
+     * Set the skin to use.
+     *
+     * @param skinName The skin name to set.
+     */
+    private void setSkin(final String skinName)
+    {
+        try
+        {
+            // check for skin in directory
+            final File dir = new File(skinName);
+            if (dir.exists() && dir.isDirectory())
+            {
+                myskin = new JXCSkinDirLoader(dir);
+            }
+            else
+            {
+                // fallback: built-in resource
+                myskin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
+            }
+        }
+        catch (final JXCSkinException ex)
+        {
+            System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
     }
 }

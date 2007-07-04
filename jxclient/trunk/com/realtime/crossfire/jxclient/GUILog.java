@@ -31,7 +31,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
-import javax.imageio.ImageIO;
 
 /**
  *
@@ -67,13 +66,10 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
      */
     private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
 
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nt) throws IOException
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font nf, final int nt) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        if (picture != null)
-            mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
-        else
-            mybackground = null;
+        mybackground = picture;
         myfont = nf;
         mynrchars = nw/5;
         myindex = 0;
@@ -85,13 +81,10 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         createBuffer();
     }
 
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final String picture, final Font nf, final int nnw, final int nt) throws IOException
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font nf, final int nnw, final int nt) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        if (picture != null)
-            mybackground = ImageIO.read(getClass().getClassLoader().getResourceAsStream(picture));
-        else
-            mybackground = null;
+        mybackground = picture;
         myfont = nf;
         mynrchars = nnw;
         myindex = 0;

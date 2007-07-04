@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * This is the representation of all the statistics of a player, like its speed
  * or its experience.
@@ -454,6 +457,52 @@ public class Stats
     }
 
     /**
+     * Maps stat names to stat index values. Only stats useful in skin files
+     * are included.
+     */
+    private static Map<String, Integer> statTable = new HashMap<String, Integer>();
+    static
+    {
+        statTable.put("AC", CS_STAT_AC);
+        statTable.put("CHA", CS_STAT_CHA);
+        statTable.put("CON", CS_STAT_CON);
+        statTable.put("DAM", CS_STAT_DAM);
+        statTable.put("DEX", CS_STAT_DEX);
+        statTable.put("EXP", CS_STAT_EXP64);
+        statTable.put("FOOD", CS_STAT_FOOD);
+        statTable.put("GRACE", CS_STAT_GRACE);
+        statTable.put("HP", CS_STAT_HP);
+        statTable.put("INT", CS_STAT_INT);
+        statTable.put("LEVEL", CS_STAT_LEVEL);
+        statTable.put("POW", CS_STAT_POW);
+        statTable.put("RANGE", CS_STAT_RANGE);
+        statTable.put("RES_ACID", CS_STAT_RES_ACID);
+        statTable.put("RES_BLIND", CS_STAT_RES_BLIND);
+        statTable.put("RES_COLD", CS_STAT_RES_COLD);
+        statTable.put("RES_CONF", CS_STAT_RES_CONF);
+        statTable.put("RES_DEATH", CS_STAT_RES_DEATH);
+        statTable.put("RES_DEPLETE", CS_STAT_RES_DEPLETE);
+        statTable.put("RES_DRAIN", CS_STAT_RES_DRAIN);
+        statTable.put("RES_ELEC", CS_STAT_RES_ELEC);
+        statTable.put("RES_FEAR", CS_STAT_RES_FEAR);
+        statTable.put("RES_FIRE", CS_STAT_RES_FIRE);
+        statTable.put("RES_GHOSTHIT", CS_STAT_RES_GHOSTHIT);
+        statTable.put("RES_HOLYWORD", CS_STAT_RES_HOLYWORD);
+        statTable.put("RES_MAG", CS_STAT_RES_MAG);
+        statTable.put("RES_PARA", CS_STAT_RES_PARA);
+        statTable.put("RES_PHYS", CS_STAT_RES_PHYS);
+        statTable.put("RES_POISON", CS_STAT_RES_POISON);
+        statTable.put("RES_SLOW", CS_STAT_RES_SLOW);
+        statTable.put("SP", CS_STAT_SP);
+        statTable.put("SPEED", CS_STAT_SPEED);
+        statTable.put("STR", CS_STAT_STR);
+        statTable.put("TITLE", CS_STAT_TITLE);
+        statTable.put("TURN_UNDEAD", CS_STAT_TURN_UNDEAD);
+        statTable.put("WC", CS_STAT_WC);
+        statTable.put("WIS", CS_STAT_WIS);
+    }
+
+    /**
      * Adds a new skill to the list of known skills.
      * @param id The numerical identifier for the new skill.
      * @param n The skill name.
@@ -608,5 +657,24 @@ public class Stats
         {
             mystats[i] = 0;
         }
+    }
+
+    /**
+     * Convert a stat name into a stat index.
+     *
+     * @param name The stat name.
+     *
+     * @return The stat index.
+     *
+     * @throws IllegalArgumentException if the stat name is undefined
+     */
+    public static int parseStat(final String name)
+    {
+        if (!statTable.containsKey(name))
+        {
+            throw new IllegalArgumentException();
+        }
+
+        return statTable.get(name);
     }
 }
