@@ -41,7 +41,7 @@ public class GUIPicture extends GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, Transparency.TRANSLUCENT);
+        mybuffer = gconf.createCompatibleImage(nw, nh, picture.getTransparency());
         final Graphics2D g = mybuffer.createGraphics();
         g.drawImage(picture, 0, 0, picture.getWidth(), picture.getHeight(), null);
         g.dispose();
