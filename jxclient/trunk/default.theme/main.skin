@@ -438,7 +438,7 @@ commandlist_add rsp_display btn_rsp_undisplay SHOW
 button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active command_menu_display
 
 # TextPaneUp (679, 100)
-picture log_upper_back 0+679 0+100 301 204 log1_expanded_inactive
+picture log_upper_back 0+679 0+100 302 204 log1_expanded_inactive
 log log_upper 10+679 3+100 250 198 empty font_log 511
 commandlist command_log_upper_up
 commandlist_add command_log_upper_up log_upper SCROLLUP
