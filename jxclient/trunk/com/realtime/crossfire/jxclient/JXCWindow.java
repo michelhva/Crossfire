@@ -352,9 +352,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
     }
 
-    private void initRendering()
+    private void initRendering(final boolean fullScreen)
     {
-        jxcWindowRenderer.initRendering();
+        jxcWindowRenderer.initRendering(fullScreen);
         framecount = 0;
         keyBindings.loadKeyBindings("keybindings.txt", this);
         loadSpellBelt("spellbelt.data");
@@ -402,7 +402,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         initGUI(id);
     }
 
-    public void init(final int w, final int h, final int b, final int f, final String skinName)
+    public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen)
     {
         CfMapUpdater.processNewmap();
         addKeyListener(this);
@@ -412,7 +412,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         setSkin(skinName);
         try
         {
-            initRendering();
+            initRendering(fullScreen);
             initGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
             for (;;)
             {

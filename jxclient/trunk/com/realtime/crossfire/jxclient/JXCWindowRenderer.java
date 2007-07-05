@@ -61,15 +61,17 @@ public class JXCWindowRenderer
         forcePaint = true;
     }
 
-    public void initRendering()
+    public void initRendering(boolean fullScreen)
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         isfullscreen = gd.isFullScreenSupported();
-        if (!gd.isFullScreenSupported())
+        if (!fullScreen || !gd.isFullScreenSupported())
         {
-            System.out.println("Warning ! True full-screen support is not available.");
-            jxcWindow.setUndecorated(true);
+            if (fullScreen)
+            {
+                System.out.println("Warning ! True full-screen support is not available.");
+            }
             oldDisplayMode = gd.getDisplayMode();
 
             jxcWindow.setSize(displayMode.getWidth(), displayMode.getHeight());
