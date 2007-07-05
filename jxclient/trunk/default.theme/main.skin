@@ -27,15 +27,15 @@ gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_emp
 gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN
 
 # UpperPane (207, 27)
-picture title_back     0+207  0+27 1024 128 title
-label_stat label_hp       236+207 64+27  20 16 font_types HP
-label_stat label_fp       284+207 64+27  36 16 font_types FOOD
-label_stat label_sp       333+207 64+27  36 16 font_types SP
-label_stat label_gp       381+207 64+27  36 16 font_types GRACE
-label_stat label_title     32+207 24+27 512 24 font_default_large TITLE
+picture title_back          0+227  0+27 610 85 title
+label_stat label_hp       216+227 64+27  20 16 font_types HP
+label_stat label_fp       264+227 64+27  36 16 font_types FOOD
+label_stat label_sp       313+227 64+27  36 16 font_types SP
+label_stat label_gp       361+227 64+27  36 16 font_types GRACE
+label_stat label_title     12+227 24+27 512 24 font_default_large TITLE
 
 # UpperBar (113, 0)
-picture up_back        0+113 0 1024 32 background_up
+picture up_back             0+113 0 813 29 background_up
 label_stat label_stat_str 318+113 3 32 16 font_types STR
 label_stat label_stat_dex 403+113 3 32 16 font_types DEX
 label_stat label_stat_con 488+113 3 32 16 font_types CON
@@ -69,7 +69,7 @@ commandlist_add command_magicmap_display btn_magicmap_show HIDE
 commandlist_add command_magicmap_display btn_magicmap_hide SHOW
 
 # LeftBar (0, 0)
-picture left_back 0 0 128 768 background_left
+picture left_back 0 0 113 768 background_left
 
 # RightBar (926, 0)
 picture right_back 0+926 0 98 768 background_right
@@ -260,7 +260,7 @@ label_stat label_sstat_dam   200+319 49+621 56 20 font_stats DAM
 label_stat label_sstat_speed 200+319 71+621 56 20 font_stats SPEED
 
 # Panel (199, 551)
-picture panel_back 0+199 0+551 700 230 background_panel
+picture panel_back 0+199 0+551 627 217 background_panel
 picture panel_spells 392+199 74+551 224 123 spell_panel
 label_stat label_panel_spells_icon 400+199 85+551 100 20 font_stats SPELL_ICON
 label_stat label_panel_spells_name 450+199 85+551 100 20 font_stats SPELL_NAME
@@ -284,24 +284,24 @@ item floor floor9 0+199+9+306 0+551+165 32 32 empty marker_cursed marker_applied
 item floor floorA 0+199+9+340 0+551+165 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 10 font_default_small
 
 # Resistances (630, 628)
-picture gr0_back   0+630   0+628 32 11 res_gauge_empty
-picture gr1_back  76+630   0+628 32 11 res_gauge_empty
-picture gr2_back 152+630   0+628 32 11 res_gauge_empty
-picture gr3_back   0+630  21+628 32 11 res_gauge_empty
-picture gr4_back  76+630  21+628 32 11 res_gauge_empty
-picture gr5_back 152+630  21+628 32 11 res_gauge_empty
-picture gr6_back   0+630  42+628 32 11 res_gauge_empty
-picture gr7_back  76+630  42+628 32 11 res_gauge_empty
-picture gr8_back 152+630  42+628 32 11 res_gauge_empty
-picture gr9_back   0+630  63+628 32 11 res_gauge_empty
-picture grA_back  76+630  63+628 32 11 res_gauge_empty
-picture grB_back 152+630  63+628 32 11 res_gauge_empty
-picture grC_back   0+630  84+628 32 11 res_gauge_empty
-picture grD_back  76+630  84+628 32 11 res_gauge_empty
-picture grE_back 152+630  84+628 32 11 res_gauge_empty
-picture grF_back   0+630 105+628 32 11 res_gauge_empty
-picture grG_back  76+630 105+628 32 11 res_gauge_empty
-picture grH_back 152+630 105+628 32 11 res_gauge_empty
+picture gr0_back   0+630   0+628 29 11 res_gauge_empty
+picture gr1_back  76+630   0+628 29 11 res_gauge_empty
+picture gr2_back 152+630   0+628 29 11 res_gauge_empty
+picture gr3_back   0+630  21+628 29 11 res_gauge_empty
+picture gr4_back  76+630  21+628 29 11 res_gauge_empty
+picture gr5_back 152+630  21+628 29 11 res_gauge_empty
+picture gr6_back   0+630  42+628 29 11 res_gauge_empty
+picture gr7_back  76+630  42+628 29 11 res_gauge_empty
+picture gr8_back 152+630  42+628 29 11 res_gauge_empty
+picture gr9_back   0+630  63+628 29 11 res_gauge_empty
+picture grA_back  76+630  63+628 29 11 res_gauge_empty
+picture grB_back 152+630  63+628 29 11 res_gauge_empty
+picture grC_back   0+630  84+628 29 11 res_gauge_empty
+picture grD_back  76+630  84+628 29 11 res_gauge_empty
+picture grE_back 152+630  84+628 29 11 res_gauge_empty
+picture grF_back   0+630 105+628 29 11 res_gauge_empty
+picture grG_back  76+630 105+628 29 11 res_gauge_empty
+picture grH_back 152+630 105+628 29 11 res_gauge_empty
 
 
 gauge gr0   0+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PHYS WE
