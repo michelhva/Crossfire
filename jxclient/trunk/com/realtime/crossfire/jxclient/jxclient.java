@@ -60,6 +60,7 @@ public class jxclient
             String str_bpp = prefs.get("bpp", "-1");
             String str_freq = prefs.get("frequency", "0");
             String str_skin = prefs.get("skin", "default");
+            boolean fullScreen = true;
 
             // fix changed default skin name
             if (str_skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
@@ -95,6 +96,10 @@ public class jxclient
                     str_skin = args[i+1];
                     i++;
                 }
+                else if (args[i].equals("-N"))
+                {
+                    fullScreen = false;
+                }
                 else if ((args[i].equals("-opengl")))
                 {
                     System.setProperty("sun.java2d.opengl", "True");
@@ -119,7 +124,7 @@ public class jxclient
             prefs.put("skin", str_skin);
 
             JXCWindow jxwin = new JXCWindow();
-            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height), Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin);
+            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height), Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin, fullScreen);
         }
         catch (Exception e)
         {
