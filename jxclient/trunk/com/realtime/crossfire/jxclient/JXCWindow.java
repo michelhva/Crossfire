@@ -962,10 +962,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         synchronized(semaphore_drawing)
         {
             final GUIElement elected = findElement(e, false);
-            deactivateCurrentElement();
-            elected.mousePressed(e);
-            if (elected.isActive())
-                myactive_element = elected;
+            if (elected != null)
+            {
+                deactivateCurrentElement();
+                elected.mousePressed(e);
+                if (elected.isActive())
+                {
+                    myactive_element = elected;
+                }
+            }
         }
     }
 
@@ -974,9 +979,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         synchronized(semaphore_drawing)
         {
             final GUIElement elected = findElement(e, false);
-            if (myactive_element!=elected)
-                deactivateCurrentElement();
-            elected.mouseReleased(e);
+            if (elected != null)
+            {
+                if (myactive_element != elected)
+                {
+                    deactivateCurrentElement();
+                }
+                elected.mouseReleased(e);
+            }
         }
     }
 
