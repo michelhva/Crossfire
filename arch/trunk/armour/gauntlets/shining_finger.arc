@@ -10,7 +10,8 @@ shining_finger.111
 shining_finger.112
 mina
 magicmap black
-speed .1
+anim_speed 10
+client_anim_random 1
 Str 2
 resist_physical 3
 dam +3

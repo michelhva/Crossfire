@@ -6,7 +6,8 @@ anim
 s_barrack_u.x11
 s_barrack_u.x12
 mina
-speed -0.1
+anim_speed 1
+client_anim_random 10
 magicmap brown
 no_pick 1
 visibility 100
@@ -20,7 +21,8 @@ anim
 s_barrack_u.x11
 s_barrack_u.x12
 mina
-speed -0.1
+anim_speed 1
+client_anim_random 10
 magicmap brown
 y 1
 no_pick 1

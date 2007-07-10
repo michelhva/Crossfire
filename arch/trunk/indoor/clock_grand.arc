@@ -7,7 +7,8 @@ anim
 clock_grand.111
 clock_grand.112
 mina
-speed -0.05
+anim_speed 20
+client_anim_random 1
 weight 80000
 value 500
 material 20

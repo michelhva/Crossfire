@@ -12,7 +12,8 @@ sting.114
 sting.113
 sting.112
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 material 2
 dam 5
 magic 3

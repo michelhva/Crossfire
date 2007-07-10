@@ -10,7 +10,8 @@ mithril.113
 mithril.114
 mina
 nrof 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 value 800
 weight 50
 material 2

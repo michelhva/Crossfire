@@ -12,7 +12,8 @@ firestar.112
 firestar.113
 mina
 weapontype 7
-speed 0.30
+anim_speed 3
+client_anim_random 1
 type 15
 last_sp 9
 face firestar.111

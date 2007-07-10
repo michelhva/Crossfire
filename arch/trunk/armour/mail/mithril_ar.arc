@@ -12,7 +12,8 @@ mithril_ar.111
 mithril_ar.112
 mithril_ar.113
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 ac 6
 resist_physical 35
 last_sp 18

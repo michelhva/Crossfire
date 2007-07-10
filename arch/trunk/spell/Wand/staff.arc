@@ -15,7 +15,8 @@ staff.112
 staff.111
 mina
 color_fg brown
-speed -0.1
+anim_speed 10
+client_anim_random 1
 type 109
 value 50
 weight 2500

@@ -8,7 +8,8 @@ dagger_f.112
 dagger_f.113
 dagger_f.114
 mina
-speed .2
+anim_speed 5
+client_anim_random 1
 Cha 4
 dam 2
 luck 3

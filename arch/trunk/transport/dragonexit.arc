@@ -2,7 +2,8 @@ Object dragon_exit
 name dragon
 face dragon.x71
 type 66
-speed 0.4
+anim_speed 2
+client_anim_random 1
 anim
 dragon.x71
 dragon.x72

@@ -9,7 +9,8 @@ magi_staff.112
 magi_staff.113
 magi_staff.112
 mina
-speed .2
+anim_speed 5
+client_anim_random 1
 material 16
 weapontype 8
 resist_magic 30

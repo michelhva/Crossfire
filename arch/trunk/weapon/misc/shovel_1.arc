@@ -22,4 +22,6 @@ name_pl shovels
 client_type 145
 body_arm -2
 skill two handed weapons
+anim_speed 5
+client_anim_random 1
 end

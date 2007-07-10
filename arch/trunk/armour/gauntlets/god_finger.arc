@@ -9,7 +9,8 @@ anim
 god_finger.111
 god_finger.112
 mina
-speed .1
+anim_speed 10
+client_anim_random 1
 Str 2
 Dex -1
 magicmap orange

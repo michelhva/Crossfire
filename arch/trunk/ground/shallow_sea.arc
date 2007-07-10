@@ -14,7 +14,8 @@ smoothface shallow_sea.113 shallow_sea_S.113
 smoothface shallow_sea.114 shallow_sea_S.114
 magicmap light_blue
 smoothlevel 19
-speed 0.2
+anim_speed 5
+client_anim_sync 1
 move_block all
 no_pick 1
 is_water 1

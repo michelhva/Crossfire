@@ -5,7 +5,8 @@ forge.111
 forge.112
 forge.113
 mina
-speed -0.2
+anim_speed 5
+client_anim_random 1
 glow_radius 1
 no_pick 1
 type 122

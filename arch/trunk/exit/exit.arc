@@ -1,7 +1,8 @@
 Object exit
 face exit.111
 magicmap blue
-speed 0.5
+anim_speed 2
+client_anim_random 1
 type 66
 no_pick 1
 anim

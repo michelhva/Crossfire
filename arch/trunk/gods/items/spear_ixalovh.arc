@@ -10,7 +10,8 @@ spear_ixalovh.111
 spear_ixalovh.112
 spear_ixalovh.113
 mina
-speed -0.02
+anim_speed 10
+client_anim_random 1
 Pow 1
 sp 1
 material 256

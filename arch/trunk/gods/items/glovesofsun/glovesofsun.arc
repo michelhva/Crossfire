@@ -14,7 +14,8 @@ glovesofsun.111
 glovesofsun.112
 glovesofsun.113
 mina
-speed 0.25
+anim_speed 4
+client_anim_random 1
 material 8
 weight 900
 value 20000

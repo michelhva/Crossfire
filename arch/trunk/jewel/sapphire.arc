@@ -8,7 +8,8 @@ sapphire.112
 mina
 color_fg blue
 nrof 1
-speed -0.1
+anim_speed 10
+client_anim_random 1
 value 185
 weight 50
 identified 1

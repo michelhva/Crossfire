@@ -17,7 +17,8 @@ bagpipe.118
 bagpipe.119
 bagpipe.11A
 mina
-speed -0.3
+anim_speed 3
+client_anim_random 1
 weight 3000
 value 1000
 magicmap orange

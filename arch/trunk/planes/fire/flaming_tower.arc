@@ -17,7 +17,8 @@ flamingtower.x14
 flamingtower.x12
 mina
 is_animated 1
-speed 0.5
+anim_speed 2
+client_anim_random 1
 no_pick 1
 visibility 100
 magicmap grey
@@ -43,7 +44,8 @@ flamingtower.x14
 flamingtower.x12
 mina
 is_animated 1
-speed 0.5
+anim_speed 2
+client_anim_random 1
 no_pick 1
 y 1
 visibility 100

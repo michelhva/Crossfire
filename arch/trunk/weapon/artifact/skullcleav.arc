@@ -9,7 +9,8 @@ skullcleav.112
 skullcleav.113
 skullcleav.114
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 last_sp 11
 type 15
 weight 32000

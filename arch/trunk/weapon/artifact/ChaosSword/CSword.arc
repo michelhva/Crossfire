@@ -19,7 +19,8 @@ CSword.11C
 CSword.111
 CSword.112
 mina
-speed 0.3
+anim_speed 3
+client_anim_random 1
 material 2
 weight 20000
 Str 1

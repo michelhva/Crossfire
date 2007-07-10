@@ -10,7 +10,8 @@ dust_effect.111
 dust_effect.112
 dust_effect.113
 mina
-speed 1
+anim_speed 1
+client_anim_random 1
 attacktype 4194304
 wc -3
 dam 1

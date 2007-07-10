@@ -1,6 +1,7 @@
 Object glue
 face glue.111
-speed -0.06
+anim_speed 15
+client_anim_random 1
 anim
 glue.111
 glue.112

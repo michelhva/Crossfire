@@ -28,7 +28,8 @@ name the wheel
 is_animated 1
 no_pick 1
 move_block all
-speed -0.1
+anim_speed 10
+client_anim_random 1
 anim
 thewheel_short.111
 thewheel_short.111
@@ -59,7 +60,8 @@ name the wheel
 is_animated 1
 no_pick 1
 move_block all
-speed -0.1
+anim_speed 10
+client_anim_random 1
 anim
 thewheel_tall.x11
 thewheel_tall.x11
@@ -89,7 +91,8 @@ face thewheel_tall.x11
 name the wheel
 is_animated 1
 no_pick 1
-speed -0.1
+anim_speed 10
+client_anim_random 1
 anim
 thewheel_tall.x11
 thewheel_tall.x11

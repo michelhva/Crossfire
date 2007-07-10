@@ -19,7 +19,8 @@ weight 30000
 attacktype 65
 weapontype 1
 value 175000
-speed 0.1
+anim_speed 10
+client_anim_random 1
 anim
 uw_sword.111
 uw_sword.112

@@ -12,7 +12,8 @@ reflector.112
 reflector.113
 reflector.112
 mina
-speed 0.25
+anim_speed 4
+client_anim_random 1
 ac 3
 resist_physical 5
 reflect_spell 1

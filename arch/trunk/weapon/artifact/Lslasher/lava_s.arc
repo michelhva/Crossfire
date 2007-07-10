@@ -10,7 +10,8 @@ mina
 Str 2
 Con 2
 dam 30
-speed 0.250000
+anim_speed 4
+client_anim_random 1
 type 15
 resist_cold 75
 attacktype 5

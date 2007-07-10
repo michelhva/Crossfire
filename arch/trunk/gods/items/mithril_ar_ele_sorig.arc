@@ -4,7 +4,8 @@ name mithril chainmail of lightning of Sorig
 type 16
 face mithril_ar_ele.111
 animation mithril_ar_ele
-speed 0.3
+anim_speed 3
+client_anim_random 1
 ac 4
 resist_physical 40
 resist_electricity 40

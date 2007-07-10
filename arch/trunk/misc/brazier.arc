@@ -6,7 +6,8 @@ brazier.112
 brazier.113
 brazier.114
 mina
-speed -0.2
+anim_speed 5
+client_anim_random 1
 glow_radius 3
 no_pick 1
 move_block all

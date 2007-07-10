@@ -14,6 +14,8 @@ u_horn.113
 u_horn.114
 u_horn.115
 mina
+anim_speed 2
+client_anim_random 1
 type 15
 nrof 1
 color_fg black

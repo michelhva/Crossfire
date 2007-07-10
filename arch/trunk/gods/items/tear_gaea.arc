@@ -9,7 +9,8 @@ tear.114
 mina
 nrof 1
 level 10
-speed 0.25
+anim_speed 4
+client_anim_random 1
 color_fg blue
 type 5
 sp 35

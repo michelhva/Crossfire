@@ -10,7 +10,8 @@ robe_midnight.111
 robe_midnight.112
 robe_midnight.113
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 magicmap black
 ac 5
 Dex 1
