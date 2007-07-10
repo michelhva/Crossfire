@@ -6,7 +6,8 @@ firepot.112
 firepot.113
 firepot.114
 mina
-speed -0.30
+anim_speed 3
+client_anim_random 1
 no_pick 1
 move_block all
 glow_radius 3

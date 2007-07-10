@@ -16,7 +16,8 @@ smoothface oil_sea.111 oil_sea_S.111
 smoothface oil_sea.112 oil_sea_S.112
 smoothface oil_sea.113 oil_sea_S.113
 smoothface oil_sea.114 oil_sea_S.114
-speed 0.1
+anim_speed 10
+client_anim_sync 1
 move_block all
 no_pick 1
 is_water 1
@@ -44,7 +45,8 @@ smoothface oil_sea.111 oil_sea_S.111
 smoothface oil_sea.112 oil_sea_S.112
 smoothface oil_sea.113 oil_sea_S.113
 smoothface oil_sea.114 oil_sea_S.114
-speed 0.01
+anim_speed 10
+client_anim_sync 1
 no_pick 1
 is_water 1
 is_floor 1

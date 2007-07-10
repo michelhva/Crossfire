@@ -11,7 +11,8 @@ speedboots.112
 speedboots.113
 speedboots.112
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 value 50000
 weight 5000
 type 99

@@ -7,7 +7,8 @@ chandelier_2.112
 chandelier_2.113
 chandelier_2.114
 mina
-speed -0.30
+anim_speed 3
+client_anim_random 1
 glow_radius 4
 no_pick 1
 color_fg yellow
@@ -22,7 +23,8 @@ chandelier_2_copper.112
 chandelier_2_copper.113
 chandelier_2_copper.114
 mina
-speed -0.30
+anim_speed 3
+client_anim_random 1
 glow_radius 4
 no_pick 1
 color_fg yellow

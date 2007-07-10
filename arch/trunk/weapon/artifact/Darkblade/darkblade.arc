@@ -18,7 +18,8 @@ darkblade.113
 darkblade.112
 darkblade.111
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 Cha -1
 Con 2
 hp 1

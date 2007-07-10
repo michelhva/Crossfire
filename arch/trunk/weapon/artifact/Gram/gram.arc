@@ -10,7 +10,8 @@ gram.112
 gram.113
 gram.114
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 material 2
 dam 18
 exp 1

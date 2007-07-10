@@ -2,7 +2,8 @@ Object castle_a
 name castle
 type 66
 face castle_a.x11
-speed -0.300
+anim_speed 3
+client_anim_random 1
 anim
 castle_a.x11
 castle_a.x12

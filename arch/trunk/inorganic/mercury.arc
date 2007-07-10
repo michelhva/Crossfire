@@ -22,7 +22,8 @@ anim
 fix_mercury.111
 fix_mercury.112
 mina
-speed 0.5
+anim_speed 2
+client_anim_random 1
 material 512
 materialname mercury
 value 400

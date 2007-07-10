@@ -14,7 +14,8 @@ smoothface deep_sea.111 deep_sea_S.111
 smoothface deep_sea.112 deep_sea_S.112
 smoothface deep_sea.113 deep_sea_S.113
 smoothface deep_sea.114 deep_sea_S.114
-speed 0.2
+anim_speed 5
+client_anim_sync 1
 move_block all
 no_pick 1
 is_water 1

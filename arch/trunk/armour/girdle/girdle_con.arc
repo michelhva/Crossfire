@@ -10,7 +10,8 @@ anim
 girdle_con.111
 girdle_con.112
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 magicmap blue
 Con 2
 weight 2500

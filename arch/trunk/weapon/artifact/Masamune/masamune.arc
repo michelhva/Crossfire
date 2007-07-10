@@ -10,7 +10,8 @@ masamune.111
 masamune.114
 masamune.114
 mina
-speed .2
+anim_speed 5
+client_anim_random 1
 slaying undead
 last_sp 3
 Str 2

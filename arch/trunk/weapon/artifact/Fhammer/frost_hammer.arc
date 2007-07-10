@@ -11,7 +11,8 @@ frost_hammer.112
 frost_hammer.113
 frost_hammer.114
 mina
-speed .4
+anim_speed 2
+client_anim_random 1
 material 256
 materialname glacium
 dam 10

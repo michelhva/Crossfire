@@ -11,7 +11,8 @@ luggage.116
 luggage.117
 luggage.118
 mina
-speed 0.5
+anim_speed 2
+client_anim_random 1
 type 122
 material 2
 value 100000

@@ -14,6 +14,7 @@ magicmap brown
 name_pl torches
 client_type 1102
 end
+
 Object torch_1
 name torch
 face torch_lit1.111
@@ -28,11 +29,13 @@ changing 1
 value 0
 weight 500
 speed 0.15
+client_anim_random 1
 glow_radius 3
 magicmap orange
 name_pl torches
 client_type 1102
 end
+
 Object dim_torch
 name torch
 face torch_lit2.111
@@ -47,11 +50,13 @@ changing 1
 value 0
 weight 500
 speed 0.15
+client_anim_random 1
 glow_radius 2
 is_lightable 1
 name_pl torches
 client_type 1102
 end
+
 Object burnt_torch
 name burnt out torch
 face torch_unlit.111

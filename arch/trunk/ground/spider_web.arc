@@ -1,7 +1,8 @@
 Object spider_web
 name spider web
 face spider_web.111
-speed -0.01
+anim_speed 20
+client_anim_sync 1
 anim
 spider_web.111
 spider_web.112

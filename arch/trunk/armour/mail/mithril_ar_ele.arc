@@ -15,7 +15,8 @@ mithril_ar_ele.112
 mithril_ar_ele.113
 mithril_ar_ele.113
 mina
-speed 0.3
+anim_speed 3
+client_anim_random 1
 ac 4
 resist_physical 40
 resist_electricity 30

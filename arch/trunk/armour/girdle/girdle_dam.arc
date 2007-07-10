@@ -10,7 +10,8 @@ anim
 girdle_dam.111
 girdle_dam.112
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 dam 10
 weight 2500
 value 70000

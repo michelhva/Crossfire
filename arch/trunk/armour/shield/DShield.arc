@@ -11,7 +11,8 @@ anim
 DShield.111
 DShield.112
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 msg
   There is a evil spirit in the shield.
 endmsg

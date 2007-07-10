@@ -13,7 +13,8 @@ DShield.112
 DShield.111
 DShield.113
 mina
-speed 0.25
+anim_speed 4
+client_anim_random 1
 Cha -5
 msg
   There is a powerful evil spirit in the

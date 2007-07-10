@@ -9,7 +9,8 @@ anim
 helmetxray.111
 helmetxray.112
 mina
-speed 0.05
+anim_speed 20
+client_anim_random 1
 type 34
 weight 6000
 ac 2

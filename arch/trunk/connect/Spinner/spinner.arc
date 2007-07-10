@@ -1,7 +1,8 @@
 Object spinner_-135
 name spinner
 face spinner.11B
-speed 1
+anim_speed 1
+client_anim_random 1
 type 90
 no_pick 1
 sp 3
@@ -21,7 +22,8 @@ end
 Object spinner_-90
 name spinner
 face spinner.11B
-speed 1
+anim_speed 1
+client_anim_random 1
 type 90
 no_pick 1
 sp 2
@@ -47,7 +49,8 @@ end
 Object spinner_-45
 name spinner
 face spinner.11B
-speed 0.5
+anim_speed 2
+client_anim_random 1
 type 90
 no_pick 1
 sp 1
@@ -73,7 +76,8 @@ end
 Object spinner_45
 name spinner
 face spinner.111
-speed 0.5
+anim_speed 2
+client_anim_random 1
 type 90
 no_pick 1
 sp -1
@@ -99,7 +103,8 @@ end
 Object spinner_90
 name spinner
 face spinner.111
-speed 1
+anim_speed 1
+client_anim_random 1
 type 90
 no_pick 1
 sp -2
@@ -125,7 +130,8 @@ end
 Object spinner_135
 name spinner
 face spinner.111
-speed 1
+anim_speed 1
+client_anim_random 1
 type 90
 no_pick 1
 sp -3
@@ -145,7 +151,8 @@ end
 Object spinner_180
 name spinner
 face spinner.11B
-speed 1
+anim_speed 1
+client_anim_random 1
 type 90
 no_pick 1
 sp 4

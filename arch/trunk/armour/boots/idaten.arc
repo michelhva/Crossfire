@@ -9,7 +9,8 @@ anim
 idaten.111
 idaten.112
 mina
-speed 0.3
+anim_speed 3
+client_anim_random 1
 exp 20
 value 50000
 weight 5000

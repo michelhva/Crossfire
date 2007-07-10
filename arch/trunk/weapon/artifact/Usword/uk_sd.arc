@@ -13,7 +13,8 @@ uk_sd.115
 uk_sd.116
 uk_sd.117
 mina
-speed .4
+anim_speed 2
+client_anim_random 1
 material 2
 Str 2
 Dex 2

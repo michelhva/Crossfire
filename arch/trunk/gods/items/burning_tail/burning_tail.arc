@@ -10,7 +10,8 @@ burningtail.111
 burningtail.112
 burningtail.113
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 material 256
 dam 40
 weight 10000

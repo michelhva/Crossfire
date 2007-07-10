@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+Add client_anim_... support for all objects that support it, remove
+their speed attributes if the only reason they had speed set was for
+animation.
+MSW 2007-07-09
+
 Remove all 'editable' fields, obsolete with Crossedit removal.
  (almost all .arc impacted)
 Nicolas Weeger 2007-06-13

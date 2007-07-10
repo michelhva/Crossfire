@@ -8,7 +8,8 @@ burning_fountain.112
 burning_fountain.113
 mina
 walk_on	1
-speed 0.50
+anim_speed 2
+client_anim_random 1
 color_fg grey
 no_pick 1
 end

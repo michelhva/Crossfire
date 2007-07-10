@@ -16,7 +16,8 @@ holyave.11A
 holyave.11B
 holyave.11C
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 last_sp 9
 dam 15
 type 15

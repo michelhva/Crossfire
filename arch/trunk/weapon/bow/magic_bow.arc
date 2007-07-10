@@ -9,7 +9,8 @@ magic_bow.112
 magic_bow.113
 magic_bow.114
 mina
-speed 0.1
+anim_speed 10
+client_anim_random 1
 material 16
 face magic_bow.111
 magic 7

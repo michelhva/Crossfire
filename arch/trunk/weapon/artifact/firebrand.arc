@@ -9,7 +9,8 @@ firebrand.111
 firebrand.112
 firebrand.113
 mina
-speed 0.25
+anim_speed 4
+client_anim_random 1
 material 2
 dam 9
 weight 22000

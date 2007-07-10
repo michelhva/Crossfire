@@ -6,7 +6,8 @@ burningwall_0.111
 burningwall_0.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -21,7 +22,8 @@ burningwall_1.111
 burningwall_1.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -36,7 +38,8 @@ burningwall_2.111
 burningwall_2.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -51,7 +54,8 @@ burningwall_3.111
 burningwall_3.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -66,7 +70,8 @@ burningwall_4.111
 burningwall_4.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -81,7 +86,8 @@ burningwall_5.111
 burningwall_5.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -96,7 +102,8 @@ burningwall_6.111
 burningwall_6.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -111,7 +118,8 @@ burningwall_7.111
 burningwall_7.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -126,7 +134,8 @@ burningwall_8.111
 burningwall_8.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -141,7 +150,8 @@ burningwall_9.111
 burningwall_9.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -156,7 +166,8 @@ burningwall_A.111
 burningwall_A.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -171,7 +182,8 @@ burningwall_B.111
 burningwall_B.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -186,7 +198,8 @@ burningwall_C.111
 burningwall_C.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -201,7 +214,8 @@ burningwall_D.111
 burningwall_D.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -216,7 +230,8 @@ burningwall_E.111
 burningwall_E.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1
@@ -231,7 +246,8 @@ burningwall_F.111
 burningwall_F.112
 mina
 is_animated 1
-speed 0.2
+anim_speed 5
+client_anim_random 1
 color_fg brown
 move_block all
 no_pick 1

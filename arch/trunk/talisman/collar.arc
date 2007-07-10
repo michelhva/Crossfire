@@ -8,7 +8,8 @@ collar.112
 collar.113
 collar.112
 mina
-speed .3
+anim_speed 3
+client_anim_random 1
 color_fg red
 type 39
 material 12

@@ -5,7 +5,8 @@ dice.111
 dice.112
 dice.113
 mina
-speed -0.2
+anim_speed 5
+client_anim_random 1
 name dice
 nrof 1
 is_animated 1

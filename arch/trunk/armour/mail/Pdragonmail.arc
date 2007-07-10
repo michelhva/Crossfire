@@ -9,7 +9,8 @@ anim
 Pdragonmail.111
 Pdragonmail.112
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 last_sp 13
 ac 8
 material 256

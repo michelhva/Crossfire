@@ -15,7 +15,8 @@ DShield.112
 DShield.111
 DShield.113
 mina
-speed 0.2
+anim_speed 5
+client_anim_random 1
 msg
   There is a strong evil spirit in the shield
   trying to dominate you.

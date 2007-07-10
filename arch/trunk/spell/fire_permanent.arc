@@ -12,7 +12,8 @@ burnout.117
 burnout.118
 burnout.119
 mina
-speed 1
+anim_speed 1
+client_anim_random 1
 color_fg red
 no_pick 1
 end
