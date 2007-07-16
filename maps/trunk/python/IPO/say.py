@@ -30,18 +30,22 @@
 priceWritingPen = 100
 priceScrollOfLiteracy = 5000
 priceMailScroll = 5
-priceBag = 5
-pricePackage = 50
-priceCarton = 200
 priceFactor = 50	# platinum to silver conversion
 
-# Map storage
+# package information
+# The format is: <name to display to player> : [ price (in plat), max weight, archetype, name ]
+packages = { 'bag' : [ 5, 5000, 'bag', 'IPO-bag'], 'package' : [ 50, 50000, 'package', 'IPO-package' ], 'carton' : [ 200, 100000, 'carton_box_1', 'IPO-carton' ] }
+#priceBag = 5
+#pricePackage = 50
+#priceCarton = 200
+
+# Map storage for packages
 storage_map = '/planes/IPO_storage'
 storage_x = 2
 storage_y = 2
 
 # Post office sack name (one word without space)
-sackNames = [ 'IPO-bag', 'IPO-package', 'IPO-carton' ]
+#sackNames = [ 'IPO-bag', 'IPO-package', 'IPO-carton' ]
 
 import Crossfire
 import string
@@ -58,13 +62,17 @@ text = string.split(Crossfire.WhatIsMessage())
 
 if text[0] == 'help' or text[0] == 'yes':
 	# split the help message in two parts to prevent the server from truncating it.
-	message = 'How can I help you?\nHere is a quick list of commands I understand:\n\n- pen   (%s platinum)\n- literacy    (%s platinum)\n- mailscroll <friend>   (%s platinum)\n- bag <friend>   (%s platinum)\n- package <friend>   (%s platinum)'%(priceWritingPen, priceScrollOfLiteracy, priceMailScroll, priceBag, pricePackage)
-	whoami.Say(message)
-
-	message = '- carton <friend>   (%s platinum)\n- send <friend>\n- receive'%(priceCarton)
+	whoami.Say('How can I help you?\nWe are proud to sell some interesting services.\nYou can buy:')
+	whoami.Say('- pen (%s platinum)\n- literacy scroll (%s platinum)')
+	whoami.Say('You can send letters to friends:\n')
+	whoami.Say('- mailscroll <friend> (%s platinum)')
+	whoami.Say('You can also send items, here are our fees:')
+	for pack in packages.keys():
+		# weight is in grams, so need to convert.
+		whoami.Say('- %s (max weight: %d kg, price: %d platinum)'%(pack, packages[pack][1] / 1000, packages[pack][0]))
+	
 	if activator.DungeonMaster:
-		message += '\n- mailwarning <player>'
-	whoami.Say(message)
+		whoami.Say('As a DungeonMaster, you can also order:\n- mailwarning <player>')
 
 
 elif text[0] == 'pen':
@@ -124,25 +132,16 @@ elif text[0] == 'mailwarning':
 		whoami.Say('You need to be DM to be able to use this command')
 
 
-elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
+elif packages.has_key(text[0]):
 	if len(text) == 2:
 		if log.info(text[1]):
-			if text[0] == 'bag':
-				price = priceBag
-				max = 5000
-				item = 'bag'
-			elif text[0] == 'package':
-				price = pricePackage
-				max = 50000
-				item = 'package'
-			else:
-				price = priceCarton
-				max = 100000
-				item = 'carton_box_1'
+			price = packages[text[0]][0]
+			max = packages[text[0]][1]
+			item = packages[text[0]][2]
 
 			if activator.PayAmount(price*priceFactor):
 				box = activator.CreateObject(item)
-				box.Name = 'IPO-'+text[0]+' T: '+text[1]+' F: '+activatorname
+				box.Name = packages[text[0]][3] + ' T: '+text[1]+' F: '+activatorname
 				box.WeightLimit = max
 				box.Str = 0
 				whoami.Say('Here is your %s'%text[0])
@@ -159,7 +158,8 @@ elif text[0] == 'bag' or text[0] == 'package' or text[0] == 'carton':
 elif text[0] == 'send':
 	if len(text) == 2:
 		count = 0
-		for sackName in sackNames:
+		for package in packages.keys():
+			sackName = packages[package][3]
 			inv = activator.CheckInventory(sackName)
 			while inv:
 				next = inv.Below
@@ -189,7 +189,8 @@ elif text[0] == 'receive':
 	map = Crossfire.ReadyMap(storage_map)
 	if map:
 		count = 0
-		for sackName in sackNames:
+		for package in packages.keys():
+			sackName = packages[package][3]
 			item = map.ObjectAt(storage_x, storage_y)
 			while item:
 				previous = item.Above
