@@ -16,7 +16,6 @@ type 67
 move_type fly_low
 no_pick 1
 color_fg white
-color_bg khaki
 is_used_up 1
 resist_fire 100
 resist_electricity 100

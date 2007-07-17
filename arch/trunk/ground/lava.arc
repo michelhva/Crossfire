@@ -22,7 +22,6 @@ smoothface lava.114 lava_S.114
 smoothface lava.115 lava_S.115
 smoothlevel 28
 color_fg yellow
-color_bg red
 speed 0.2
 no_pick 1
 attacktype 4
@@ -49,7 +48,6 @@ lava.114
 lava.115
 mina
 color_fg yellow
-color_bg red
 speed 0.2
 no_pick 1
 smoothlevel 28

@@ -8,7 +8,6 @@ destruction.113
 destruction.114
 mina
 color_fg black
-color_bg khaki
 speed 1
 is_used_up 1
 no_pick 1

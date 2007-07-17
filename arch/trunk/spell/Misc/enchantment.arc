@@ -9,7 +9,6 @@ enchantment.114
 enchantment.115
 mina
 color_fg blue
-color_bg khaki
 speed 1
 is_used_up 1
 no_pick 1

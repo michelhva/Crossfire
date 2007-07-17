@@ -6,7 +6,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face speedbwall.111
-color_bg yellow
 anim
 speedbwall.111
 speedbwall.112

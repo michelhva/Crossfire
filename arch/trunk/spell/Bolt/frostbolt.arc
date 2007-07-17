@@ -14,7 +14,6 @@ frostbolt.171
 frostbolt.181
 mina
 color_fg light_blue
-color_bg white
 move_type fly_low
 is_animated 0
 is_turnable 1

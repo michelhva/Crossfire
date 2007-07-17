@@ -15,7 +15,6 @@ woodfloor.111
 mina
 no_pick 1
 walk_on 1
-color_bg dark_orange
 is_floor 1
 magicmap dark_orange
 end

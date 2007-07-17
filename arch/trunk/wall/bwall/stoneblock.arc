@@ -6,7 +6,6 @@ activate_on_release 1
 no_pick 1
 face earthwall.111
 color_fg grey
-color_bg yellow
 anim
 stoneblock.115
 stoneblock.114

@@ -14,7 +14,6 @@ firebolt.171
 firebolt.181
 mina
 color_fg red
-color_bg khaki
 is_animated 0
 is_turnable 1
 move_type fly_low

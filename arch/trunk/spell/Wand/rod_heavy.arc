@@ -7,7 +7,6 @@ rod_heavy.112
 rod_heavy.113
 mina
 color_fg black
-color_bg khaki
 speed -0.25
 type 3
 value 700

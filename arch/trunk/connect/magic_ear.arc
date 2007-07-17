@@ -6,7 +6,6 @@ msg
 Click.
 endmsg
 magicmap white
-color_bg green
 no_pick 1
 invisible 1
 end

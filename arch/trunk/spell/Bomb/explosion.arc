@@ -2,7 +2,6 @@ Object explosion
 type 102
 subtype 6
 face explosion.111
-color_bg white
 anim
 explosion.111
 explosion.112

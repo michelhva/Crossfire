@@ -3,7 +3,6 @@ name sandy
 race faerie
 face sandy.111
 color_fg brown
-color_bg khaki
 anim
 sandy.112
 sandy.113

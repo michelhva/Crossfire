@@ -7,7 +7,6 @@ det_magic.112
 det_magic.113
 mina
 color_fg blue
-color_bg khaki
 speed 1
 is_used_up 1
 no_pick 1
