@@ -4,7 +4,6 @@ face t_house1.111
 type 66
 no_pick 1
 move_block all
-editable 2
 end
 More
 Object t_house1_2

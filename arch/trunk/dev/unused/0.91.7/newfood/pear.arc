@@ -7,6 +7,5 @@ type 6
 material 32
 value 2
 weight 100
-editable 2048
 identified 1
 end

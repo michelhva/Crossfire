@@ -2,7 +2,6 @@ Object university
 face university.111
 type 66
 no_pick 1
-editable 2
 end
 More
 Object university_2
