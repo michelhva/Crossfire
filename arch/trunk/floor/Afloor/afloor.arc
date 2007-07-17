@@ -4,7 +4,6 @@ face afloor.131
 no_pick 1
 is_floor 1
 color_fg black
-color_bg brown
 end
 Object afloor_left
 name a floor
@@ -12,14 +11,12 @@ face afloor.171
 no_pick 1
 is_floor 1
 color_fg black
-color_bg brown
 end
 Object ahole_right
 face ahole.131
 type 66
 no_pick 1
 color_fg black
-color_bg brown
 visibility 100
 client_type 25012
 end
@@ -28,7 +25,6 @@ face ahole.171
 type 66
 no_pick 1
 color_fg black
-color_bg brown
 visibility 100
 client_type 25012
 end

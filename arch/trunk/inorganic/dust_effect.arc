@@ -4,7 +4,6 @@ type 79
 level 1
 face dust_effect.111
 color_fg brown
-color_bg khaki
 anim
 dust_effect.111
 dust_effect.112

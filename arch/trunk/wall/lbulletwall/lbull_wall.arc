@@ -17,7 +17,6 @@ lbull_wall.171
 lbull_wall.181
 mina
 is_animated 0
-color_bg yellow
 speed -0.16
 no_pick 1
 move_block all
@@ -34,7 +33,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.111
-color_bg yellow
 sp 1
 dam 29
 speed -0.04
@@ -52,7 +50,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.121
-color_bg yellow
 sp 2
 dam 29
 speed -0.04
@@ -70,7 +67,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.131
-color_bg yellow
 sp 3
 dam 29
 speed -0.04
@@ -88,7 +84,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.141
-color_bg yellow
 sp 4
 dam 29
 speed -0.04
@@ -106,7 +101,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.151
-color_bg yellow
 sp 5
 dam 29
 speed -0.04
@@ -124,7 +118,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.161
-color_bg yellow
 sp 6
 dam 29
 speed -0.04
@@ -142,7 +135,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.171
-color_bg yellow
 sp 7
 dam 29
 speed -0.04
@@ -160,7 +152,6 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face lbull_wall.181
-color_bg yellow
 sp 8
 dam 29
 speed -0.04

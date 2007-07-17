@@ -12,7 +12,6 @@ manabolt.113
 manabolt.114
 mina
 color_fg black
-color_bg khaki
 speed 1
 range 3
 duration 3

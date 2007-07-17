@@ -10,7 +10,6 @@ steam.111
 steam.112
 mina
 color_fg red
-color_bg khaki
 move_type fly_low
 generator 1
 speed 1

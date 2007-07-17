@@ -2,7 +2,6 @@ Object burning_l_shop1
 name burning shop
 face burning_l_shop1.x11
 color_fg black
-color_bg yellow
 type 66
 no_pick 1
 move_block all

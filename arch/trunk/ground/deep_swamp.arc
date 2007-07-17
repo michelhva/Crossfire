@@ -8,7 +8,6 @@ deep_swamp.111
 deep_swamp.112
 mina
 color_fg green
-color_bg grey
 no_pick 1
 is_water 1
 walk_on 1

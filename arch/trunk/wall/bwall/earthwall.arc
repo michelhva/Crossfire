@@ -9,7 +9,6 @@ earthwall.113
 blank.111
 mina
 is_animated 0
-color_bg yellow
 tear_down 1
 hp 24
 maxhp 24

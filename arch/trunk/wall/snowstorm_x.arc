@@ -6,7 +6,6 @@ activate_on_push 1
 activate_on_release 1
 face icestorm.113
 color_fg grey
-color_bg blue
 speed -0.02
 dam 1
 ac 3

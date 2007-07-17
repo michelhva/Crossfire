@@ -1,6 +1,5 @@
 Object random_wealth
 face randomWeal.111
-color_bg orange
 type 4
 hp 1
 randomitems random_wealth

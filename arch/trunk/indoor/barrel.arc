@@ -1,7 +1,6 @@
 Object barrel
 face barrel.111
 color_fg brown
-color_bg khaki
 material 16
 weight 100000
 move_block all

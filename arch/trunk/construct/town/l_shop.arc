@@ -2,7 +2,6 @@ Object l_shop1
 name shop
 face l_shop1.x11
 magicmap black
-color_bg yellow
 type 66
 no_pick 1
 move_block all

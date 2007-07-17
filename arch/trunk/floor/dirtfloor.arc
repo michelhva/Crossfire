@@ -1,6 +1,5 @@
 Object dirtfloor
 face dirtfloor.111
-color_bg dark_orange
 no_pick 1
 is_floor 1
 magicmap dark_orange
