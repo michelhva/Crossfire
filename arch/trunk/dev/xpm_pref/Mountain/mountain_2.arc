@@ -4,7 +4,6 @@ face mountain_2.x11
 no_pick 1
 slow_move 20
 blocksview 1
-editable 8
 end
 More
 Object mountain_2_2

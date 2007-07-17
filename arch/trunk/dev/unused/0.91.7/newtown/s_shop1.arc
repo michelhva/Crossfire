@@ -5,5 +5,4 @@ color_fg black
 color_bg yellow
 type 66
 no_pick 1
-editable 2
 end
