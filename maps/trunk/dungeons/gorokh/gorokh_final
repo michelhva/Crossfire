@@ -3,7 +3,7 @@ name Gorokh Final
 difficulty 95
 region wilderness
 width 59
-height 59
+height 61
 enter_x 51
 enter_y 6
 msg
@@ -305,7 +305,111 @@ end
 arch blocked
 name Eternal Darkness
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 33
+sp 5
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 33
+sp 6
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -658,7 +762,20 @@ arch blocked
 name Eternal Darkness
 x 1
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 34
+sp 5
+x 1
+y 59
+connected 666
+end
+arch pit_closed
+hp 34
+sp 6
+x 1
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -1011,7 +1128,114 @@ arch blocked
 name Eternal Darkness
 x 2
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 35
+sp 5
+x 2
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 2
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 35
+sp 6
+x 2
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -1364,7 +1588,20 @@ arch blocked
 name Eternal Darkness
 x 3
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 36
+sp 5
+x 3
+y 59
+connected 666
+end
+arch pit_closed
+hp 36
+sp 6
+x 3
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -1717,7 +1954,114 @@ arch blocked
 name Eternal Darkness
 x 4
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 37
+sp 5
+x 4
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 4
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 37
+sp 6
+x 4
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -2070,7 +2414,20 @@ arch blocked
 name Eternal Darkness
 x 5
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 38
+sp 5
+x 5
+y 59
+connected 666
+end
+arch pit_closed
+hp 38
+sp 6
+x 5
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -2346,6 +2703,13 @@ name infernal rocks
 x 6
 y 45
 glow_radius 1
+end
+arch duplicator
+name bye bye generator
+other_arch generate_devil
+x 6
+y 46
+connected 666
 end
 arch small_stones
 x 6
@@ -2367,7 +2731,7 @@ hp 3500
 maxhp 3500
 sp 500
 maxsp 500
-exp 125000
+exp 1000
 wc -30
 ac -35
 speed 0.2
@@ -2431,6 +2795,13 @@ x 6
 y 51
 glow_radius 1
 end
+arch duplicator
+name bye bye generator
+other_arch generate_devil
+x 6
+y 52
+connected 666
+end
 arch small_stones
 x 6
 y 52
@@ -2451,7 +2822,7 @@ hp 3500
 maxhp 3500
 sp 500
 maxsp 500
-exp 125000
+exp 1000
 wc -30
 ac -35
 speed 0.2
@@ -2519,7 +2890,114 @@ arch blocked
 name Eternal Darkness
 x 6
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 39
+sp 5
+x 6
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 6
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 39
+sp 6
+x 6
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -2605,7 +3083,8 @@ y 13
 glow_radius 1
 end
 arch Greater_Demon
-title of Gorokh
+name Quargh, cousin of Gorokh
+exp 700000
 ac -30
 x 7
 y 13
@@ -2880,7 +3359,20 @@ arch blocked
 name Eternal Darkness
 x 7
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 40
+sp 5
+x 7
+y 59
+connected 666
+end
+arch pit_closed
+hp 40
+sp 6
+x 7
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -3264,7 +3756,114 @@ arch blocked
 name Eternal Darkness
 x 8
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 41
+sp 5
+x 8
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 8
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 41
+sp 6
+x 8
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -3567,6 +4166,14 @@ y 48
 connected 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike_closed
+other_arch spike_closed
+x 9
+y 49
+connected 666
+activate_on_release 0
 end
 arch mountain_cave2
 name Gorokh's Treasure cave
@@ -3639,7 +4246,20 @@ arch blocked
 name Eternal Darkness
 x 9
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 42
+sp 5
+x 9
+y 59
+connected 666
+end
+arch pit_closed
+hp 42
+sp 6
+x 9
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -4025,7 +4645,114 @@ arch blocked
 name Eternal Darkness
 x 10
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 43
+sp 5
+x 10
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 10
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 43
+sp 6
+x 10
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -4397,7 +5124,20 @@ arch blocked
 name Eternal Darkness
 x 11
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 44
+sp 5
+x 11
+y 59
+connected 666
+end
+arch pit_closed
+hp 44
+sp 6
+x 11
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -4674,6 +5414,13 @@ x 12
 y 45
 glow_radius 1
 end
+arch duplicator
+name bye bye generator
+other_arch generate_devil
+x 12
+y 46
+connected 666
+end
 arch small_stones
 x 12
 y 46
@@ -4694,7 +5441,7 @@ hp 3500
 maxhp 3500
 sp 500
 maxsp 500
-exp 125000
+exp 1000
 wc -30
 ac -35
 speed 0.2
@@ -4758,6 +5505,13 @@ x 12
 y 51
 glow_radius 1
 end
+arch duplicator
+name bye bye generator
+other_arch generate_devil
+x 12
+y 52
+connected 666
+end
 arch small_stones
 x 12
 y 52
@@ -4778,7 +5532,7 @@ hp 3500
 maxhp 3500
 sp 500
 maxsp 500
-exp 125000
+exp 1000
 wc -30
 ac -35
 speed 0.2
@@ -4846,7 +5600,16 @@ arch blocked
 name Eternal Darkness
 x 12
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 12
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 12
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -5199,7 +5962,114 @@ arch blocked
 name Eternal Darkness
 x 13
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 33
+sp 52
+x 13
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 13
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 33
+sp 53
+x 13
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -5546,7 +6416,20 @@ arch blocked
 name Eternal Darkness
 x 14
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 34
+sp 52
+x 14
+y 59
+connected 666
+end
+arch pit_closed
+hp 34
+sp 53
+x 14
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -5628,359 +6511,466 @@ end
 arch mountain
 name infernal rocks
 x 15
-y 13
-glow_radius 1
-end
-arch medium_stones
-x 15
-y 14
-end
-arch mountain
-name infernal rocks
-x 15
-y 15
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 16
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 17
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 18
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 19
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 20
-glow_radius 1
-end
-arch large_stones
-x 15
-y 21
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 22
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 23
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 24
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 25
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 26
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 27
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 28
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 29
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 30
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 31
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 32
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 33
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 34
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 35
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 36
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 37
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 38
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 39
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 40
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 41
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 42
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 43
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 44
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 45
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 46
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 47
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 48
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 49
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 15
-y 50
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 51
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 52
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 15
-y 53
-glow_radius 1
-end
-arch blocked
-name Eternal Darkness
-x 15
-y 54
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 15
-y 55
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 15
-y 56
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 15
-y 57
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 15
-y 58
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 16
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 16
-y 1
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 16
-y 2
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 16
-y 3
-blocksview 0
-end
-arch blocked
-name Eternal Darkness
-x 16
-y 4
-blocksview 0
-end
-arch mountain
-name infernal rocks
-x 16
-y 5
-glow_radius 1
-end
-arch mountain
-name infernal rocks
-x 16
-y 6
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 7
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 8
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 9
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 10
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 11
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
-y 12
-glow_radius 1
-end
-arch permanent_lava
-name eternal lake of fire
-x 16
 y 13
 glow_radius 1
 end
 arch medium_stones
+x 15
+y 14
+end
+arch mountain
+name infernal rocks
+x 15
+y 15
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 16
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 17
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 18
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 19
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 20
+glow_radius 1
+end
+arch large_stones
+x 15
+y 21
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 22
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 23
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 24
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 25
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 26
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 27
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 28
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 29
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 30
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 31
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 32
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 33
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 34
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 35
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 36
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 37
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 38
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 39
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 40
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 41
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 42
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 43
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 44
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 45
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 46
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 47
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 48
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 49
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 15
+y 50
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 51
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 52
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 15
+y 53
+glow_radius 1
+end
+arch blocked
+name Eternal Darkness
+x 15
+y 54
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 15
+y 55
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 15
+y 56
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 15
+y 57
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 15
+y 58
+end
+arch pit_closed
+hp 35
+sp 52
+x 15
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 15
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 35
+sp 53
+x 15
+y 60
+connected 666
+end
+arch blocked
+name Eternal Darkness
+x 16
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 16
+y 1
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 16
+y 2
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 16
+y 3
+blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 16
+y 4
+blocksview 0
+end
+arch mountain
+name infernal rocks
+x 16
+y 5
+glow_radius 1
+end
+arch mountain
+name infernal rocks
+x 16
+y 6
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 7
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 8
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 9
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 10
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 11
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 12
+glow_radius 1
+end
+arch permanent_lava
+name eternal lake of fire
+x 16
+y 13
+glow_radius 1
+end
+arch medium_stones
 x 16
 y 14
 end
@@ -6238,7 +7228,20 @@ arch blocked
 name Eternal Darkness
 x 16
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 36
+sp 52
+x 16
+y 59
+connected 666
+end
+arch pit_closed
+hp 36
+sp 53
+x 16
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -6579,7 +7582,114 @@ arch blocked
 name Eternal Darkness
 x 17
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 37
+sp 52
+x 17
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 17
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 37
+sp 53
+x 17
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -6920,7 +8030,20 @@ arch blocked
 name Eternal Darkness
 x 18
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 38
+sp 52
+x 18
+y 59
+connected 666
+end
+arch pit_closed
+hp 38
+sp 53
+x 18
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -7257,7 +8380,114 @@ arch blocked
 name Eternal Darkness
 x 19
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 39
+sp 52
+x 19
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 19
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 39
+sp 53
+x 19
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -7485,7 +8715,8 @@ y 40
 glow_radius 1
 end
 arch Greater_Demon
-title of Gorokh
+name Snargh, cousin of Gorokh
+exp 700000
 ac -30
 x 20
 y 40
@@ -7598,7 +8829,20 @@ arch blocked
 name Eternal Darkness
 x 20
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 40
+sp 52
+x 20
+y 59
+connected 666
+end
+arch pit_closed
+hp 40
+sp 53
+x 20
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -7933,7 +9177,114 @@ arch blocked
 name Eternal Darkness
 x 21
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 41
+sp 52
+x 21
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 21
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 41
+sp 53
+x 21
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -8283,7 +9634,20 @@ arch blocked
 name Eternal Darkness
 x 22
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 42
+sp 52
+x 22
+y 59
+connected 666
+end
+arch pit_closed
+hp 42
+sp 53
+x 22
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -8622,17 +9986,13 @@ title Python
 slaying /python/misc/greet_message.py
 end
 end
-arch permanent_lava
-name eternal lake of fire
+arch large_stones
 x 23
 y 32
-glow_radius 1
 end
-arch permanent_lava
-name eternal lake of fire
+arch large_stones
 x 23
 y 33
-glow_radius 1
 end
 arch large_stones
 x 23
@@ -8786,7 +10146,114 @@ arch blocked
 name Eternal Darkness
 x 23
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 43
+sp 52
+x 23
+y 59
+connected 666
+end
+arch shadowtiger
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+dam 50
+wc -50
+ac -90
+x 23
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_acid 99
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_turn_undead 99
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+run_away 20
+can_use_scroll 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch creeping_frost_immunity
+end
+arch immolation_immunity
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+end
+arch pit_closed
+hp 43
+sp 53
+x 23
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -9126,7 +10593,20 @@ arch blocked
 name Eternal Darkness
 x 24
 y 58
-blocksview 0
+end
+arch pit_closed
+hp 44
+sp 52
+x 24
+y 59
+connected 666
+end
+arch pit_closed
+hp 44
+sp 53
+x 24
+y 60
+connected 666
 end
 arch blocked
 name Eternal Darkness
@@ -9311,11 +10791,9 @@ arch large_stones
 x 25
 y 33
 end
-arch permanent_lava
-name eternal lake of fire
+arch large_stones
 x 25
 y 34
-glow_radius 1
 end
 arch permanent_lava
 name eternal lake of fire
@@ -9455,7 +10933,16 @@ arch blocked
 name Eternal Darkness
 x 25
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 25
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 25
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -9626,11 +11113,9 @@ arch large_stones
 x 26
 y 31
 end
-arch permanent_lava
-name eternal lake of fire
+arch large_stones
 x 26
 y 32
-glow_radius 1
 end
 arch large_stones
 x 26
@@ -9776,7 +11261,14 @@ arch blocked
 name Eternal Darkness
 x 26
 y 58
-blocksview 0
+end
+arch tile_tan_floor
+x 26
+y 59
+end
+arch tile_tan_floor
+x 26
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -10109,7 +11601,14 @@ arch blocked
 name Eternal Darkness
 x 27
 y 58
-blocksview 0
+end
+arch tile_tan_floor
+x 27
+y 59
+end
+arch tile_tan_floor
+x 27
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -10427,7 +11926,14 @@ arch blocked
 name Eternal Darkness
 x 28
 y 58
-blocksview 0
+end
+arch tile_tan_floor
+x 28
+y 59
+end
+arch tile_tan_floor
+x 28
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -10768,7 +12274,22 @@ arch blocked
 name Eternal Darkness
 x 29
 y 58
-blocksview 0
+end
+arch tile_tan_floor
+x 29
+y 59
+end
+arch tile_tan_floor
+x 29
+y 60
+end
+arch sign
+name DM Lounge
+msg
+Dungeon Master's Lounge
+endmsg
+x 29
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -11097,7 +12618,16 @@ arch blocked
 name Eternal Darkness
 x 30
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 30
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 30
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -11432,7 +12962,16 @@ arch blocked
 name Eternal Darkness
 x 31
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 31
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 31
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -11773,7 +13312,16 @@ arch blocked
 name Eternal Darkness
 x 32
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 32
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 32
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -12098,7 +13646,16 @@ arch blocked
 name Eternal Darkness
 x 33
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 33
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 33
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -12429,7 +13986,16 @@ arch blocked
 name Eternal Darkness
 x 34
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 34
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 34
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -12754,7 +14320,16 @@ arch blocked
 name Eternal Darkness
 x 35
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 35
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 35
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -13083,7 +14658,16 @@ arch blocked
 name Eternal Darkness
 x 36
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 36
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 36
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -13412,7 +14996,16 @@ arch blocked
 name Eternal Darkness
 x 37
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 37
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 37
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -13752,7 +15345,16 @@ arch blocked
 name Eternal Darkness
 x 38
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 38
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 38
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -14079,7 +15681,16 @@ arch blocked
 name Eternal Darkness
 x 39
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 39
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 39
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -14421,7 +16032,16 @@ arch blocked
 name Eternal Darkness
 x 40
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 40
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 40
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -14623,7 +16243,8 @@ x 41
 y 36
 end
 arch Greater_Demon
-title of Gorokh
+name Tlargh, cousin of Gorokh
+exp 700000
 ac -30
 x 41
 y 36
@@ -14756,7 +16377,16 @@ arch blocked
 name Eternal Darkness
 x 41
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 41
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 41
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -15095,7 +16725,16 @@ arch blocked
 name Eternal Darkness
 x 42
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 42
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 42
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -15438,7 +17077,16 @@ arch blocked
 name Eternal Darkness
 x 43
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 43
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 43
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -15785,7 +17433,16 @@ arch blocked
 name Eternal Darkness
 x 44
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 44
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 44
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -16118,7 +17775,16 @@ arch blocked
 name Eternal Darkness
 x 45
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 45
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 45
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -16149,6 +17815,21 @@ x 46
 y 4
 blocksview 0
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 5
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 46
+y 5
+connected 666
+end
 arch mountain
 name infernal rocks
 x 46
@@ -16164,11 +17845,27 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 6
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 46
 y 6
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 7
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16176,11 +17873,27 @@ x 46
 y 7
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 8
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 46
 y 8
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 9
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16188,15 +17901,39 @@ x 46
 y 9
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 10
+connected 666
+activate_on_release 0
+end
 arch large_stones
 x 46
 y 10
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 11
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
 x 46
 y 11
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 46
+y 12
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16464,7 +18201,16 @@ arch blocked
 name Eternal Darkness
 x 46
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 46
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 46
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -16495,6 +18241,21 @@ x 47
 y 4
 blocksview 0
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 5
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 47
+y 5
+connected 666
+end
 arch mountain
 name infernal rocks
 x 47
@@ -16510,6 +18271,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 6
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 47
+y 6
+connected 666
+end
 arch mountain
 name infernal rocks
 x 47
@@ -16524,6 +18300,14 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 7
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16531,11 +18315,27 @@ x 47
 y 7
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 8
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 47
 y 8
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 9
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16543,15 +18343,39 @@ x 47
 y 9
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 10
+connected 666
+activate_on_release 0
+end
 arch large_stones
 x 47
 y 10
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 11
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
 x 47
 y 11
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 47
+y 12
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16825,7 +18649,16 @@ arch blocked
 name Eternal Darkness
 x 47
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 47
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 47
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -16856,6 +18689,21 @@ x 48
 y 4
 blocksview 0
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 5
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 48
+y 5
+connected 666
+end
 arch mountain
 name infernal rocks
 x 48
@@ -16870,6 +18718,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 6
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 48
+y 6
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -16886,6 +18749,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 7
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 48
+y 7
+connected 666
+end
 arch mountain
 name infernal rocks
 x 48
@@ -16900,6 +18778,14 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 8
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -16907,17 +18793,49 @@ x 48
 y 8
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 9
+connected 666
+activate_on_release 0
+end
 arch large_stones
 x 48
 y 9
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 10
+connected 666
+activate_on_release 0
 end
 arch large_stones
 x 48
 y 10
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 11
+connected 666
+activate_on_release 0
+end
 arch medium_stones
 x 48
 y 11
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 48
+y 12
+connected 666
+activate_on_release 0
 end
 arch medium_stones
 x 48
@@ -17189,7 +19107,16 @@ arch blocked
 name Eternal Darkness
 x 48
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 48
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 48
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -17220,6 +19147,21 @@ x 49
 y 4
 blocksview 0
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 5
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 49
+y 5
+connected 666
+end
 arch mountain
 name infernal rocks
 x 49
@@ -17234,6 +19176,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 6
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 49
+y 6
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -17250,6 +19207,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 7
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 49
+y 7
+connected 666
+end
 arch mountain
 name infernal rocks
 x 49
@@ -17264,6 +19236,22 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 8
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye spike
+other_arch spike_closed
+x 49
+y 8
+connected 666
+activate_on_release 0
 end
 arch large_stones
 x 49
@@ -17278,6 +19266,22 @@ glow_radius 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 9
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye spike
+other_arch spike_closed
+x 49
+y 9
+connected 666
+activate_on_release 0
+end
 arch large_stones
 x 49
 y 9
@@ -17291,17 +19295,41 @@ glow_radius 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 10
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 49
 y 10
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 11
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 49
 y 11
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 49
+y 12
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
@@ -17577,7 +19605,16 @@ arch blocked
 name Eternal Darkness
 x 49
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 49
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 49
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -17608,6 +19645,21 @@ x 50
 y 4
 blocksview 0
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 5
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 50
+y 5
+connected 666
+end
 arch mountain
 name infernal rocks
 x 50
@@ -17623,13 +19675,45 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 6
+connected 666
+activate_on_release 0
+end
 arch small_stones
 x 50
 y 6
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 7
+connected 666
+activate_on_release 0
+end
 arch small_stones
 x 50
 y 7
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 8
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye lever
+other_arch button_lever
+x 50
+y 8
+connected 666
+activate_on_release 0
 end
 arch magic_mouth
 msg
@@ -17651,6 +19735,22 @@ y 8
 connected 2
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 9
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye spike
+other_arch spike_closed
+x 50
+y 9
+connected 666
+activate_on_release 0
+end
 arch large_stones
 x 50
 y 9
@@ -17664,17 +19764,41 @@ glow_radius 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 10
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 50
 y 10
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 11
+connected 666
+activate_on_release 0
+end
 arch permanent_lava
 name eternal lake of fire
 x 50
 y 11
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 50
+y 12
+connected 666
+activate_on_release 0
 end
 arch mountain
 name infernal rocks
@@ -17952,7 +20076,16 @@ arch blocked
 name Eternal Darkness
 x 50
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 50
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 50
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -17997,19 +20130,58 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike_closed
+other_arch spike_closed
+x 51
+y 6
+connected 666
+activate_on_release 0
 end
 arch small_stones
 x 51
 y 6
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 7
+connected 666
+activate_on_release 0
+end
 arch small_stones
 x 51
 y 7
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 8
+connected 666
+activate_on_release 0
 end
 arch small_stones
 x 51
 y 8
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 9
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 51
+y 9
+connected 666
+end
 arch mountain
 name infernal rocks
 x 51
@@ -18025,6 +20197,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 10
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 51
+y 10
+connected 666
+end
 arch mountain
 name infernal rocks
 x 51
@@ -18039,12 +20226,28 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 11
+connected 666
+activate_on_release 0
 end
 arch permanent_lava
 name eternal lake of fire
 x 51
 y 11
 glow_radius 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 51
+y 12
+connected 666
+activate_on_release 0
 end
 arch mountain
 name infernal rocks
@@ -18324,7 +20527,16 @@ arch blocked
 name Eternal Darkness
 x 51
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 51
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 51
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -18369,6 +20581,14 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike_closed
+other_arch spike_closed
+x 52
+y 6
+connected 666
+activate_on_release 0
 end
 arch small_stones
 x 52
@@ -18379,9 +20599,25 @@ x 52
 y 6
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 52
+y 7
+connected 666
+activate_on_release 0
+end
 arch small_stones
 x 52
 y 7
+end
+arch creator
+name spike_closed
+other_arch spike_closed
+x 52
+y 8
+connected 666
+activate_on_release 0
 end
 arch small_stones
 x 52
@@ -18396,6 +20632,21 @@ x 52
 y 8
 glow_radius 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 52
+y 9
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 52
+y 9
+connected 666
+end
 arch mountain
 name infernal rocks
 x 52
@@ -18410,6 +20661,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 52
+y 10
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 52
+y 10
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -18426,6 +20692,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 52
+y 11
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 52
+y 11
+connected 666
+end
 arch mountain
 name infernal rocks
 x 52
@@ -18440,6 +20721,14 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 52
+y 12
+connected 666
+activate_on_release 0
 end
 arch mountain
 name infernal rocks
@@ -18721,7 +21010,16 @@ arch blocked
 name Eternal Darkness
 x 52
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 52
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 52
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -18782,6 +21080,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 7
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 7
+connected 666
+end
 arch mountain
 name infernal rocks
 x 53
@@ -18796,6 +21109,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 8
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 8
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -18812,6 +21140,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 9
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 9
+connected 666
+end
 arch mountain
 name infernal rocks
 x 53
@@ -18826,6 +21169,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 10
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 10
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -18842,6 +21200,21 @@ blocksview 1
 no_magic 1
 damned 1
 end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 11
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 11
+connected 666
+end
 arch mountain
 name infernal rocks
 x 53
@@ -18856,6 +21229,21 @@ can_roll 0
 blocksview 1
 no_magic 1
 damned 1
+end
+arch creator
+name spike moving
+other_arch spike_moving
+x 53
+y 12
+connected 666
+activate_on_release 0
+end
+arch duplicator
+name bye bye safety
+other_arch rock
+x 53
+y 12
+connected 666
 end
 arch mountain
 name infernal rocks
@@ -19146,7 +21534,16 @@ arch blocked
 name Eternal Darkness
 x 53
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 53
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 53
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -19499,7 +21896,16 @@ arch blocked
 name Eternal Darkness
 x 54
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 54
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 54
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -19852,7 +22258,16 @@ arch blocked
 name Eternal Darkness
 x 55
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 55
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 55
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -20205,7 +22620,44 @@ arch blocked
 name Eternal Darkness
 x 56
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 56
+y 59
+end
+arch magic_mouth
+name hideous evil laughter
+msg
+Gorokh has noticed you. You feel the regard of Gorokh to the depths of your soul. You hear hideous, evil laughter ...
+endmsg
+x 56
+y 59
+connected 666
+activate_on_release 0
+end
+arch small_stones
+x 56
+y 60
+end
+arch altar_trigger
+name nasty stuff trigger
+msg
+A gong sounds ...
+endmsg
+food 1
+x 56
+y 60
+last_sp 1
+connected 666
+end
+arch creator
+name create food
+other_arch food
+x 56
+y 60
+connected 665
+activate_on_push 0
 end
 arch blocked
 name Eternal Darkness
@@ -20558,7 +23010,16 @@ arch blocked
 name Eternal Darkness
 x 57
 y 58
-blocksview 0
+end
+arch blocked
+name Eternal Darkness
+x 57
+y 59
+end
+arch blocked
+name Eternal Darkness
+x 57
+y 60
 end
 arch blocked
 name Eternal Darkness
@@ -20911,5 +23372,41 @@ arch blocked
 name Eternal Darkness
 x 58
 y 58
-blocksview 0
+end
+arch magic_mouth
+name limited time
+msg
+.
+Gorokh has not yet become aware of you. You feel as though you should get this quest finished.That you should get out of here quickly.
+.
+You know once Gorokh knows you are here you will die ...
+.
+endmsg
+x 58
+y 59
+connected 665
+end
+arch spike_moving
+x 58
+y 59
+end
+arch apple
+x 58
+y 59
+end
+arch small_stones
+x 58
+y 60
+end
+arch altar_trigger
+name start timer
+slaying apple
+msg
+A tinkling bell rings and echoes in the distance.
+endmsg
+exp 29900
+food 1
+x 58
+y 60
+connected 665
 end
