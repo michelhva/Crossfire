@@ -158,6 +158,11 @@ public class CrossfireServerConnection extends ServerConnection
     /** The command prefix for the "version" command. */
     private static final byte[] versionPrefix = { 'v', 'e', 'r', 's', 'i', 'o', 'n', ' ', };
 
+    /**
+     * The defined animations.
+     */
+    private final Animations animations = new Animations();
+
     public CrossfireServerConnection(String hostname, int port)
     {
         super(hostname, port);
@@ -580,12 +585,14 @@ public class CrossfireServerConnection extends ServerConnection
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int flags = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int[] faces = new int[(packet.length-pos)/2];
+                        if (faces.length <= 0) throw new UnknownCommandException("no faces in anim command");
                         for (int i = 0; i < faces.length; i++)
                         {
                             faces[i] = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         }
                         if (pos != packet.length) break;
-                        // XXX: anim command not implemented
+                        if((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
+                        animations.addAnimation(num&0x1FFF, flags, faces);
                     }
                     return;
                 }
@@ -1199,6 +1206,18 @@ public class CrossfireServerConnection extends ServerConnection
                 }
                 break;
 
+            case 't':
+                if (packet[pos++] != 'i') break;
+                if (packet[pos++] != 'c') break;
+                if (packet[pos++] != 'k') break;
+                if (packet[pos++] != ' ') break;
+                {
+                    final int tickno = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    if (pos != packet.length) break;
+                    CfMapUpdater.processTick(tickno);
+                }
+                return;
+
             case 'u':
                 if (packet[pos++] != 'p') break;
                 if (packet[pos++] != 'd') break;
@@ -1378,7 +1397,13 @@ public class CrossfireServerConnection extends ServerConnection
                     case 0x19:
                         if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
                         final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        CfMapUpdater.processMapFace(x, y, type-0x10, face&0x7FFF);
+                        if ((face&0x8000) == 0) {
+                            CfMapUpdater.processMapFace(x, y, type-0x10, face);
+                        } else {
+                            final Animation animation = animations.get(face&0x1FFF);
+                            if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x7FFF));
+                            CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3);
+                        }
                         if (len == 3)
                         {
                             if (face == 0)
@@ -1386,7 +1411,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
                             }
 
-                            if ((face&0x8000) != 0)
+                            if ((face&0x8000) == 0)
                             {
                                 final int smooth = packet[pos++]&0xFF;
                                 // XXX: update smoothing information
@@ -1394,7 +1419,7 @@ public class CrossfireServerConnection extends ServerConnection
                             else
                             {
                                 final int animSpeed = packet[pos++]&0xFF;
-                                // XXX: update animation speed information
+                                CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
                             }
                         }
                         else if (len == 4)
@@ -1405,7 +1430,7 @@ public class CrossfireServerConnection extends ServerConnection
                             }
 
                             final int animSpeed = packet[pos++]&0xFF;
-                            // XXX: update animation speed information
+                            CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
 
                             final int smooth = packet[pos++]&0xFF;
                             // XXX: update smoothing information
@@ -1426,7 +1451,7 @@ public class CrossfireServerConnection extends ServerConnection
                 throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
             }
         }
-        CfMapUpdater.processMapEnd();
+        CfMapUpdater.processMapEnd(true);
     }
 
     /**
@@ -1450,6 +1475,7 @@ public class CrossfireServerConnection extends ServerConnection
             "extendedTextInfos 1",
             "itemcmd 2",
             "spellmon 1",
+            "tick 1",
             "mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
         sendRequestinfo("image_info");
         sendRequestinfo("skill_info");
@@ -1581,6 +1607,14 @@ public class CrossfireServerConnection extends ServerConnection
             else if (option.equals("darkness"))
             {
                 // do not care
+            }
+            else if (option.equals("tick"))
+            {
+                if (!value.equals("1"))
+                {
+                    System.err.println("Error: the server is too old for this client since it does not support the tick=1 setup option.");
+                    System.exit(1);
+                }
             }
             else
             {
