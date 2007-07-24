@@ -262,9 +262,9 @@ label_stat label_sstat_speed 200+319 71+621 56 20 font_stats SPEED
 # Panel (199, 551)
 picture panel_back 0+199 0+551 627 217 background_panel
 picture panel_spells 392+199 74+551 224 123 spell_panel
-label_stat label_panel_spells_icon 400+199 85+551 100 20 font_stats SPELL_ICON
-label_stat label_panel_spells_name 450+199 85+551 100 20 font_stats SPELL_NAME
-label_stat label_panel_spells_description 450+199 105+551 100 20 font_stats SPELL_DESCRIPTION
+label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats SPELL_ICON
+label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats SPELL_NAME
+label_spell label_panel_spells_description 450+199 105+551 100 20 font_stats SPELL_DESCRIPTION
 
 set_invisible panel_spells
 set_invisible label_panel_spells_icon

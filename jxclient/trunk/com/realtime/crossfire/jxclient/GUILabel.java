@@ -46,7 +46,7 @@ import javax.swing.text.MutableAttributeSet;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILabel extends GUIElement implements CrossfireStatsListener, CrossfireQueryListener, CrossfireDrawextinfoListener, SpellListener
+public class GUILabel extends GUIElement implements CrossfireStatsListener, CrossfireQueryListener, CrossfireDrawextinfoListener
 {
     /**
      * Size of border around text in auto-resize mode.
@@ -63,8 +63,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
 
     private boolean stat_based = false;
 
-    private boolean spell_based = false;
-
     private Color mycolor = Color.WHITE;
 
     /**
@@ -78,16 +76,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
      * If set, auto-resize this element to the extent of {@link #mycaption}.
      */
     private boolean autoResize = false;
-
-    public static final int LABEL_SPELL_NAME = -1;
-
-    public static final int LABEL_SPELL_ICON = -2;
-
-    public static final int LABEL_SPELL_COST = -3;
-
-    public static final int LABEL_SPELL_LEVEL = -4;
-
-    public static final int LABEL_SPELL_DESCRIPTION = -5;
 
     private void commonInit(BufferedImage picture, Font nf) throws IOException
     {
@@ -121,10 +109,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
         mystat = stat;
-        if (stat >= 0)
-            stat_based = true;
-        else // Spell or special display
-            spell_based = true;
+        stat_based = true;
         render();
     }
 
@@ -133,10 +118,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
         mystat = stat;
-        if (stat >= 0)
-            stat_based = true;
-        else // Spell or special display
-            spell_based = true;
+        stat_based = true;
         mycolor = clr;
         render();
     }
@@ -373,46 +355,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         }
     }
 
-    public void spellChanged(SpellChangedEvent evt)
-    {
-        if (spell_based)
-        {
-            Spell sp = evt.getSpell();
-            if (sp == null)
-            {
-                mycaption = "";
-            }
-            else
-            {
-                switch (mystat)
-                {
-                case LABEL_SPELL_NAME:
-                    mycaption = sp.getName();
-                    break;
-
-                case LABEL_SPELL_DESCRIPTION:
-                    mycaption = sp.getMessage();
-                    break;
-
-                case LABEL_SPELL_ICON:
-                    mycaption = "";
-                    mybackground = sp.getImageIcon();
-                    createBuffer();
-                    break;
-
-                case LABEL_SPELL_COST:
-                    mycaption="M:"+sp.getMana()+" G:"+sp.getGrace();
-                    break;
-
-                case LABEL_SPELL_LEVEL:
-                    mycaption = Integer.toString(sp.getLevel());
-                    break;
-                }
-            }
-            render();
-        }
-    }
-
     /**
      * If auto-resizing is enabled, calculate the new width and height.
      */
@@ -434,6 +376,18 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         {
             g.dispose();
         }
+    }
+
+    /**
+     * Set the background image.
+     *
+     * @param background The new background image.
+     */
+    protected void setBackground(final ImageIcon background)
+    {
+        mybackground = background;
+        createBuffer();
+        render();
     }
 
     /** {@inheritDoc} */
