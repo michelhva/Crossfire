@@ -108,6 +108,7 @@ public class jxclient
                 {
                     System.out.println("");
                     System.out.println("Available options:");
+                    System.out.println(" -N        : Disable full-screen mode;");
                     System.out.println(" -W <size> : Width of the screen, in pixels;");
                     System.out.println(" -H <size> : Height of the screen, in pixels;");
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
