@@ -414,6 +414,22 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int stat = parseStat(args[7]);
                             elements.insert(name, new GUILabel(window, name, x, y, w, h, null, font, stat));
                         }
+                        else if (args[0].equals("label_spell"))
+                        {
+                            if (args.length != 8)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final Font font = fonts.lookup(args[6]);
+                            final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
+                            elements.insert(name, new GUISpellLabel(window, name, x, y, w, h, null, font, type));
+                        }
                         else if (args[0].equals("listener"))
                         {
                             if (args.length != 3)
@@ -774,12 +790,6 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             // ignore
         }
-
-        if (name.equals("SPELL_COST")) return GUILabel.LABEL_SPELL_COST;
-        if (name.equals("SPELL_DESCRIPTION")) return GUILabel.LABEL_SPELL_DESCRIPTION;
-        if (name.equals("SPELL_ICON")) return GUILabel.LABEL_SPELL_ICON;
-        if (name.equals("SPELL_LEVEL")) return GUILabel.LABEL_SPELL_LEVEL;
-        if (name.equals("SPELL_NAME")) return GUILabel.LABEL_SPELL_NAME;
 
         throw new IOException("invalid stat name: "+name);
     }
