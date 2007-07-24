@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface SpellListener
 {
-    public void SpellChanged(SpellChangedEvent evt);
+    public void spellChanged(SpellChangedEvent evt);
 }
