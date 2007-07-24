@@ -20,9 +20,13 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.AWTKeyStroke;
+import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
 import java.awt.Graphics;
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,6 +35,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import javax.swing.event.MouseInputListener;
 import javax.swing.JFrame;
@@ -128,6 +133,35 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      * The gui element in which the mouse is.
      */
     private GUIElement mouseElement = null;
+
+    /**
+     * The {@link WindowFocusListener} registered for this window. It resets
+     * the keyboard modifier state when the window loses the focus. The idea is
+     * to prevent the following: user switches from jxclient to another window
+     * with CTRL+ALT+direction key. This makes jxclient enter RUN mode since
+     * CTRL was pressed. The following key release event is not received by
+     * jxclient because it does not own the focus. Therefore jxclient's CTRL
+     * state is still active when the user switches back to jxclient. A
+     * following direction key then causes the character to run which is not
+     * what the player wants.
+     */
+    private final WindowFocusListener windowFocusListener = new WindowAdapter()
+    {
+        /** {@inheritDoc} */
+        public void windowLostFocus(final WindowEvent e)
+        {
+            Arrays.fill(key_shift, false);
+            stopRunning();
+        }
+    };
+
+    /**
+     * Create a new instance.
+     */
+    public JXCWindow()
+    {
+        addWindowFocusListener(windowFocusListener);
+    }
 
     public boolean checkRun()
     {
@@ -814,22 +848,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void keyPressed(final KeyEvent e)
     {
+        updateModifiers(e);
         switch (e.getKeyCode())
         {
         case KeyEvent.VK_ALT:
-            setKeyShift(KEY_SHIFT_ALT, true);
-            break;
-
         case KeyEvent.VK_ALT_GRAPH:
-            setKeyShift(KEY_SHIFT_ALTGR, true);
-            break;
-
         case KeyEvent.VK_SHIFT:
-            setKeyShift(KEY_SHIFT_SHIFT, true);
-            break;
-
         case KeyEvent.VK_CONTROL:
-            setKeyShift(KEY_SHIFT_CTRL, true);
             break;
 
         default:
@@ -870,27 +895,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void keyReleased(final KeyEvent e)
     {
+        updateModifiers(e);
         switch (e.getKeyCode())
         {
         case KeyEvent.VK_ALT:
-            setKeyShift(KEY_SHIFT_ALT, false);
-            break;
-
         case KeyEvent.VK_ALT_GRAPH:
-            setKeyShift(KEY_SHIFT_ALTGR, false);
-            break;
-
         case KeyEvent.VK_SHIFT:
-            setKeyShift(KEY_SHIFT_SHIFT, false);
-            break;
-
         case KeyEvent.VK_CONTROL:
-            setKeyShift(KEY_SHIFT_CTRL, false);
-            if (is_run_active)
-            {
-                sendNcom(0, "run_stop");
-                is_run_active = false;
-            }
             break;
 
         default:
@@ -934,6 +945,39 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             handleKeyType(e);
         }
+    }
+
+    /**
+     * Update the saved modifier state from a key event.
+     *
+     * @param keyEvent The key event to process.
+     */
+    private void updateModifiers(final KeyEvent keyEvent)
+    {
+        final int mask = keyEvent.getModifiersEx();
+        setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
+        setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
+        setKeyShift(KEY_SHIFT_ALTGR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
+        if (!getKeyShift(KEY_SHIFT_CTRL))
+        {
+            stopRunning();
+        }
+    }
+
+    /**
+     * Tell the server to stop running. If the character is not running, do
+     * nothing.
+     */
+    private void stopRunning()
+    {
+        if (!is_run_active)
+        {
+            return;
+        }
+
+        sendNcom(0, "run_stop");
+        is_run_active = false;
     }
 
     public void mouseClicked(final MouseEvent e)
