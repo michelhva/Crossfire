@@ -57,6 +57,11 @@ public class CfMapUpdater
     private static final List<CfMapSquare> squares = new LinkedList<CfMapSquare>();
 
     /**
+     * The animations in the visible map area.
+     */
+    private static final CfMapAnimations visibleAnimations = new CfMapAnimations(CrossfireServerConnection.MAP_WIDTH, CrossfireServerConnection.MAP_HEIGHT);
+
+    /**
      * Private constructor to prevent instantiation.
      */
     private CfMapUpdater()
@@ -140,6 +145,10 @@ public class CfMapUpdater
      */
     public static void processMapClear(final int x, final int y)
     {
+        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+        {
+            visibleAnimations.remove(x, y, layer);
+        }
         map.clearSquare(x, y);
     }
 
@@ -160,6 +169,7 @@ public class CfMapUpdater
         if (face == 0)
         {
             f = null;
+            visibleAnimations.remove(x, y, layer);
         }
         else
         {
@@ -168,6 +178,48 @@ public class CfMapUpdater
         }
 
         map.setFace(x, y, layer, f);
+    }
+
+    /**
+     * Update a map square by changing an animation.
+     *
+     * @param x The x-coordinate of the square.
+     *
+     * @param y The y-coordinate of the square.
+     *
+     * @param layer The layer to update.
+     *
+     * @param animation The animation to set.
+     */
+    public static void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
+    {
+        visibleAnimations.add(x, y, layer, animation, type);
+    }
+
+    /**
+     * Update a map square by changing the animation speed.
+     *
+     * @param x The x-coordinate of the square.
+     *
+     * @param y The y-coordinate of the square.
+     *
+     * @param layer The layer to update.
+     *
+     * @param animationSpeed The animation speed to set.
+     */
+    public static void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
+    {
+        visibleAnimations.updateSpeed(x, y, layer, animationSpeed);
+    }
+
+    /**
+     * Update all animation to the given tick number.
+     *
+     * @param tickno The tick number.
+     */
+    public static void processTick(final int tickno)
+    {
+        visibleAnimations.tick(tickno);
     }
 
     /**
@@ -187,9 +239,17 @@ public class CfMapUpdater
     /**
      * Finish processing of a set of map square changes. Notifies listeners
      * about changes.
+     *
+     * @param alwaysProcess If set, notify listeners even if no changes are
+     * present.
      */
-    public static void processMapEnd()
+    public static void processMapEnd(final boolean alwaysProcess)
     {
+        if (!alwaysProcess && squares.isEmpty())
+        {
+            return;
+        }
+
         final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), squares);
         for (final CrossfireMapListener listener : mylistenersMap)
         {
@@ -255,6 +315,8 @@ public class CfMapUpdater
                     map.dirty(x, y);
                 }
             }
+            visibleAnimations.clear();
+            /* XXX: does not call callbacks */
             return;
         }
 
@@ -301,6 +363,8 @@ public class CfMapUpdater
             }
             ty++;
         }
+
+        visibleAnimations.scroll(dx, dy);
 
         final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
         for (final CrossfireMapscrollListener listener : mylistenersMapscroll)
@@ -350,6 +414,8 @@ public class CfMapUpdater
         map.clearSquare(0, 0);
         map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, CrossfireServerConnection.MAP_HEIGHT-1);
 
+        visibleAnimations.clear();
+
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         for (final CrossfireNewmapListener listener : mylistenersNewmap)
         {
@@ -365,5 +431,15 @@ public class CfMapUpdater
     public static CfMap getMap()
     {
         return map;
+    }
+
+    /**
+     * Add a modified square to the current transaction.
+     *
+     * @param mapSquare The map square to add.
+     */
+    public static void addModifiedSquare(final CfMapSquare mapSquare)
+    {
+        squares.add(mapSquare);
     }
 }

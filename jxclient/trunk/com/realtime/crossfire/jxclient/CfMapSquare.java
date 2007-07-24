@@ -141,7 +141,13 @@ public class CfMapSquare
      */
     public void dirty()
     {
+        if (dirty)
+        {
+            return;
+        }
+
         dirty = true;
+        CfMapUpdater.addModifiedSquare(this);
     }
 
     /**
