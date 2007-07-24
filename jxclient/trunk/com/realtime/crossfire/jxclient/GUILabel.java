@@ -240,7 +240,9 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
             {
             case Stats.CS_STAT_SPEED:
             case Stats.CS_STAT_WEAP_SP:
-                mycaption = String.valueOf(s.getStat(mystat)/1000)+"."+String.valueOf(s.getStat(mystat)%1000);
+                final int statValue = s.getStat(mystat);
+                final int tmp = (statValue*100+Stats.FLOAT_MULTI/2)/Stats.FLOAT_MULTI;
+                mycaption = tmp/100+"."+tmp/10%10+tmp%10;
                 break;
 
             case Stats.CS_STAT_RANGE:

@@ -425,6 +425,11 @@ public class Stats
     public static final int CS_NUM_SKILLS = 50;
 
     /**
+     * Factor used to convert float int int values.
+     */
+    public static final int FLOAT_MULTI = 100000;
+
+    /**
      * The table of all known skills.
      * @since 1.0
      */
