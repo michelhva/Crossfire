@@ -174,7 +174,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         final SpellChangedEvent evt = new SpellChangedEvent(this, s);
         for (final SpellListener sl : myspelllisteners)
         {
-            sl.SpellChanged(evt);
+            sl.spellChanged(evt);
         }
     }
 

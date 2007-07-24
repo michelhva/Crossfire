@@ -373,7 +373,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         }
     }
 
-    public void SpellChanged(SpellChangedEvent evt)
+    public void spellChanged(SpellChangedEvent evt)
     {
         if (spell_based)
         {
