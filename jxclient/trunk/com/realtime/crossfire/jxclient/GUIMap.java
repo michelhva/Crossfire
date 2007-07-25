@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.Faces;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;
@@ -68,7 +69,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = true;
 
-        mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
+        mysquaresize = Faces.SQUARE_SIZE;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -86,7 +87,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
 
         if (big)
         {
-            mysquaresize = CrossfireServerConnection.SQUARE_SIZE;
+            mysquaresize = Faces.SQUARE_SIZE;
         }
         else
         {
@@ -324,8 +325,8 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
-            final int dx = e.getX()/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
-            final int dy = e.getY()/CrossfireServerConnection.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
+            final int dx = e.getX()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
+            final int dy = e.getY()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
             try
             {
                 final JXCWindow jxcw = (JXCWindow)e.getSource();

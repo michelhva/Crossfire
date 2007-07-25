@@ -40,6 +40,12 @@ import javax.swing.ImageIcon;
 public class Faces
 {
     /**
+     * The pixel size of the gaming squares. Notice that they are supposed to
+     * be *squares*, so only a single value is needed :)
+     */
+    public static final int SQUARE_SIZE = 64;
+
+    /**
      * The maximum number of concurrently sent "askface" commands.
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
@@ -65,7 +71,7 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
+        faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)));
         originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
         {
