@@ -47,7 +47,6 @@ public class Face
 
     public Face(final int id, final String name, final ImageIcon imageIcon)
     {
-        super();
         this.id = id;
         this.name = name;
         this.imageIcon = imageIcon;
@@ -56,7 +55,6 @@ public class Face
 
     public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
     {
-        super();
         this.id = id;
         this.name = name;
         this.imageIcon = imageIcon;
