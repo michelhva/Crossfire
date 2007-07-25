@@ -30,7 +30,7 @@ import javax.swing.ImageIcon;
  *
  * @author Andreas Kirschbaum
  */
-public class FaceCache
+public class FileCache
 {
     /**
      * The directory where the images are saved.
@@ -42,7 +42,7 @@ public class FaceCache
      *
      * @param cacheDir The directory where the images are saved.
      */
-    public FaceCache(final File cacheDir)
+    public FileCache(final File cacheDir)
     {
         this.cacheDir = cacheDir;
     }
