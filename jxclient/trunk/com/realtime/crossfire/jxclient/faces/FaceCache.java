@@ -42,10 +42,12 @@ public class FaceCache
     /**
      * Return a face by face id.
      *
+     * @param id The face id to look up.
+     *
      * @return The face, or <code>null</code> if the face is not cached.
      */
     public Face getFace(final int id)
     {
-        return faces[index];
+        return faces[id];
     }
 }
