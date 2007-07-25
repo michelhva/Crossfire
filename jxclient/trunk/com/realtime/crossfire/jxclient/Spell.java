@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 

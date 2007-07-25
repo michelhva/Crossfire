@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import javax.swing.event.EventListenerList;
 
 /**

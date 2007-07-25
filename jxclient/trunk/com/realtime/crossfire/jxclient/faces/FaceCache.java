@@ -17,7 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
 import java.io.File;

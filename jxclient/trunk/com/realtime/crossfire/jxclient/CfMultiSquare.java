@@ -2,6 +2,8 @@
 
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
+
 /**
  * Represents a square outside the viewable area that contains multi-square
  * objects.

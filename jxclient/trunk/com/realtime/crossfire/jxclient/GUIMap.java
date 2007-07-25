@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;
