@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -98,18 +97,18 @@ public class Faces
     private static final Set<Integer> pendingFaces = new HashSet<Integer>();
 
     /**
-     * The server connection to send "askface" commands to.
+     * The callback functions to use.
      */
-    private static CrossfireServerConnection crossfireServerConnection;
+    private static FacesCallback facesCallback;
 
     /**
-     * Set the server connection to send "askface" commands to.
+     * Set the callback functions to use.
      *
-     * @param crossfireServerConnection the server connection
+     * @param facesCallback The callback functions to use.
      */
-    public static void setCrossfireServerConnection(final CrossfireServerConnection crossfireServerConnection)
+    public static void setFacesCallback(final FacesCallback facesCallback)
     {
-        Faces.crossfireServerConnection = crossfireServerConnection;
+        Faces.facesCallback = facesCallback;
     }
 
     public static Face getFace(final int index)
@@ -241,7 +240,7 @@ public class Faces
             final int face = it.next();
             if (!pendingAskfaces.contains(face))
             {
-                crossfireServerConnection.sendAskface(face);
+                facesCallback.sendAskface(face);
                 pendingAskfaces.add(face);
             }
         }
