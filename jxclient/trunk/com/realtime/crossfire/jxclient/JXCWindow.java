@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Faces;
 import java.awt.AWTKeyStroke;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.Faces;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

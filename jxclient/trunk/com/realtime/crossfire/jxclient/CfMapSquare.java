@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.faces.Face;
+
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
  * #LAYERS} faces as well as a darkness value.
