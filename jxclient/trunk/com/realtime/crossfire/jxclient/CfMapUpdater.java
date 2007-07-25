@@ -173,7 +173,6 @@ public class CfMapUpdater
         }
         else
         {
-            Faces.ensureFaceExists(face);
             f = Faces.getFace(face);
         }
 
@@ -279,17 +278,7 @@ public class CfMapUpdater
             return;
         }
 
-        final Face f;
-        if (face == 0)
-        {
-            f = null;
-        }
-        else
-        {
-            Faces.ensureFaceExists(face);
-            f = Faces.getFace(face);
-        }
-
+        final Face f = face == 0 ? null : Faces.getFace(face);
         map.setMultiFace(x, y, layer, f);
     }
 

@@ -109,7 +109,7 @@ public class Faces
             final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
             final GraphicsDevice gd = ge.getDefaultScreenDevice();
             final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[index] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
+            faces[index] = new Face(0, "face#"+index, unknownImageIcon, originalUnknownImageIcon);
         }
         return faces[index];
     }
@@ -187,44 +187,12 @@ public class Faces
         if (im == null || oim == null)
         {
             askface(pixnum);
-            faces[pixnum] = new Face(pixnum, pixname, null);
+            faces[pixnum] = new Face(pixnum, pixname, unknownImageIcon, originalUnknownImageIcon);
         }
         else
         {
             faces[pixnum] = new Face(pixnum, pixname, im, oim);
         }
-    }
-
-    public static void ensureFaceExists(final int val)
-    {
-        getFace(val);
-        if (faces[val].getImageIcon() == null)
-        {
-            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            final GraphicsDevice gd = ge.getDefaultScreenDevice();
-            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[val].setImageIcon(new ImageIcon(gconf.createCompatibleImage(CrossfireServerConnection.SQUARE_SIZE, CrossfireServerConnection.SQUARE_SIZE, Transparency.OPAQUE)));
-        }
-    }
-
-    /**
-     * Return the image to use for unknown or invalid faces.
-     *
-     * @return the image to use for unknown or invalid faces
-     */
-    public static ImageIcon getUnknownImageIcon()
-    {
-        return unknownImageIcon;
-    }
-
-    /**
-     * Return the image to use for unknown or invalid faces.
-     *
-     * @return the image to use for unknown or invalid faces
-     */
-    public static ImageIcon getOriginalUnknownImageIcon()
-    {
-        return originalUnknownImageIcon;
     }
 
     /**

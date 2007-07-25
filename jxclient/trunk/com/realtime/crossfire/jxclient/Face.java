@@ -30,14 +30,12 @@ import javax.swing.ImageIcon;
 public class Face
 {
     /**
-     * The image scaled to be used in map view. May be <code>null</code> if the
-     * face is not known or invalid.
+     * The image scaled to be used in map view.
      */
     private ImageIcon imageIcon;
 
     /**
-     * The original (unscaled) image. May be <code>null</code> if the face if
-     * not known or invalid.
+     * The original (unscaled) image.
      */
     private ImageIcon originalImageIcon;
 
@@ -45,16 +43,12 @@ public class Face
 
     private String name;
 
-    public Face(final int id, final String name, final ImageIcon imageIcon)
-    {
-        this.id = id;
-        this.name = name;
-        this.imageIcon = imageIcon;
-        originalImageIcon = imageIcon;
-    }
-
     public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
     {
+        if (name == null) throw new IllegalArgumentException();
+        if (imageIcon == null) throw new IllegalArgumentException();
+        if (originalImageIcon == null) throw new IllegalArgumentException();
+
         this.id = id;
         this.name = name;
         this.imageIcon = imageIcon;
@@ -63,16 +57,22 @@ public class Face
 
     public void setImageIcon(final ImageIcon imageIcon)
     {
+        if (imageIcon == null) throw new IllegalArgumentException();
+
         this.imageIcon = imageIcon;
     }
 
     public void setOriginalImageIcon(final ImageIcon originalImageIcon)
     {
+        if (originalImageIcon == null) throw new IllegalArgumentException();
+
         this.originalImageIcon = originalImageIcon;
     }
 
     public void setName(final String name)
     {
+        if (name == null) throw new IllegalArgumentException();
+
         this.name = name;
     }
 
@@ -98,23 +98,21 @@ public class Face
     /**
      * Return the image scaled to be used in map view.
      *
-     * @return the scaled image; returns {@link Faces#unknownImageIcon} if the
-     * face is unknown or invalid.
+     * @return The scaled image.
      */
     public ImageIcon getImageIcon()
     {
-        return imageIcon != null ? imageIcon : Faces.getUnknownImageIcon();
+        return imageIcon;
     }
 
     /**
      * Return the original (unscaled) image.
      *
-     * @return the unscaled image; returns {@link Faces#unknownImageIcon} if
-     * the face is unknown or invalid.
+     * @return The unscaled image.
      */
     public ImageIcon getOriginalImageIcon()
     {
-        return originalImageIcon != null ? originalImageIcon : Faces.getOriginalUnknownImageIcon();
+        return originalImageIcon;
     }
 
     public String getName()
