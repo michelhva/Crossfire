@@ -154,7 +154,6 @@ public class ItemsList
 
     public static void addItem2(final int location, final int tag, final int flags, final int weight, final int face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) throws IOException
     {
-        Faces.ensureFaceExists(face);
         CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, type);
         itemsManager.addItem(item);
     }
@@ -188,7 +187,6 @@ public class ItemsList
             int animspeed = dis.readUnsignedByte();
             int nrof = dis.readInt();
             pos += 7;
-            Faces.ensureFaceExists(faceid);
             CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, nrof);
             itemsManager.addItem(item);
         }
@@ -259,7 +257,6 @@ public class ItemsList
 
     public static void createPlayer(final int tag, final int weight, final int face, final String name) throws IOException
     {
-        Faces.ensureFaceExists(face);
         itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
     }
 
@@ -475,7 +472,6 @@ public class ItemsList
 
     public static void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message) throws IOException
     {
-        Faces.ensureFaceExists(face);
         Faces.getFace(face).setName("spell_"+tag);
         try
         {
