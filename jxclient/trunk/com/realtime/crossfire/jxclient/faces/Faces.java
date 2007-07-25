@@ -52,7 +52,10 @@ public class Faces
 
     private static final FileCache fileCache = new FileCache(new File("cache"));
 
-    private static Face[] faces = new Face[65536];
+    /**
+     * The face cache which holds all known faces.
+     */
+    private static final FaceCache faceCache = new FaceCache();
 
     /**
      * The image icon to display for unknown or invalid faces. It is never
@@ -71,7 +74,7 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        faces[0] = new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)));
+        faceCache.addFace(new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE))));
         originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
         {
@@ -111,14 +114,18 @@ public class Faces
 
     public static Face getFace(final int index)
     {
-        if (faces[index] == null)
+        final Face face = faceCache.getFace(index);
+        if (face != null)
         {
-            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            final GraphicsDevice gd = ge.getDefaultScreenDevice();
-            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            faces[index] = new Face(0, "face#"+index, unknownImageIcon, originalUnknownImageIcon);
+            return face;
         }
-        return faces[index];
+
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final Face newFace = new Face(index, "face#"+index, unknownImageIcon, originalUnknownImageIcon);
+        faceCache.addFace(newFace);
+        return newFace;
     }
 
     // TODO: implement faceset
@@ -141,13 +148,13 @@ public class Faces
             if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
             {
                 System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
-                final Face f = faces[pixnum];
+                final Face f = faceCache.getFace(pixnum);
                 f.setImageIcon(unknownImageIcon);
                 f.setOriginalImageIcon(originalUnknownImageIcon);
             }
             else
             {
-                final Face f = faces[pixnum];
+                final Face f = faceCache.getFace(pixnum);
                 f.setImageIcon(getScaledImageIcon(img));
                 f.setOriginalImageIcon(img);
                 fileCache.save(f.getName()+".x1.png", f.getOriginalImageIcon());
@@ -194,11 +201,11 @@ public class Faces
         if (im == null || oim == null)
         {
             askface(pixnum);
-            faces[pixnum] = new Face(pixnum, pixname, unknownImageIcon, originalUnknownImageIcon);
+            faceCache.addFace(new Face(pixnum, pixname, unknownImageIcon, originalUnknownImageIcon));
         }
         else
         {
-            faces[pixnum] = new Face(pixnum, pixname, im, oim);
+            faceCache.addFace(new Face(pixnum, pixname, im, oim));
         }
     }
 
