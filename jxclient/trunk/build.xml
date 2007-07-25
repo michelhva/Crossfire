@@ -8,7 +8,7 @@
     <target name="compile" depends="init">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
-        <javac srcdir="${src}" destdir="${build}/jxclient" target="1.5" debug="yes">
+        <javac srcdir="${src}" destdir="${build}/jxclient" target="1.5" debug="yes" fork="yes">
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
