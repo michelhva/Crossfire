@@ -91,8 +91,8 @@ public class ImageScale2x
             outFile += "2x";
             outFile += ".png";
             System.out.println("Writing: "+outFile);
-            final FaceCache faceCache = new FaceCache(new File("cache"));
-            faceCache.save(outFile, out);
+            final FileCache fileCache = new FileCache(new File("cache"));
+            fileCache.save(outFile, out);
         }
         catch (Exception e)
         {

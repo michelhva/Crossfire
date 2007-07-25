@@ -50,7 +50,7 @@ public class Faces
      */
     public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
 
-    private static final FaceCache faceCache = new FaceCache(new File("cache"));
+    private static final FileCache fileCache = new FileCache(new File("cache"));
 
     private static Face[] faces = new Face[65536];
 
@@ -150,8 +150,8 @@ public class Faces
                 final Face f = faces[pixnum];
                 f.setImageIcon(getScaledImageIcon(img));
                 f.setOriginalImageIcon(img);
-                faceCache.save(f.getName()+".x1.png", f.getOriginalImageIcon());
-                faceCache.save(f.getName()+".x2.png", f.getImageIcon());
+                fileCache.save(f.getName()+".x1.png", f.getOriginalImageIcon());
+                fileCache.save(f.getName()+".x2.png", f.getImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
@@ -189,8 +189,8 @@ public class Faces
     // TODO: implement faceset
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
-        final ImageIcon im = faceCache.load(pixname+".x2.png");
-        final ImageIcon oim = faceCache.load(pixname+".x1.png");
+        final ImageIcon im = fileCache.load(pixname+".x2.png");
+        final ImageIcon oim = fileCache.load(pixname+".x1.png");
         if (im == null || oim == null)
         {
             askface(pixnum);
