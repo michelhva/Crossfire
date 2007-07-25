@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FacesCallback;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -37,7 +38,7 @@ import java.util.List;
  *
  * @author Andreas Kirschbaum
  */
-public class CrossfireServerConnection extends ServerConnection
+public class CrossfireServerConnection extends ServerConnection implements FacesCallback
 {
     /**
      * The total number of map layers to display.
