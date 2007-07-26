@@ -94,6 +94,7 @@ public class JXCWindowRenderer
             jxcWindow.setSize(displayMode.getWidth(), displayMode.getHeight());
             jxcWindow.setResizable(false);
             jxcWindow.setVisible(true);
+            jxcWindow.setLocationRelativeTo(null);
         }
         else
         {
