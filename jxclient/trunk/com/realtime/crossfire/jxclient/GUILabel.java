@@ -228,7 +228,23 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
                 break;
 
             case Stats.CS_STAT_RANGE:
-                mycaption = s.getRange();
+                final String rangeString = s.getRange();
+                if (rangeString.startsWith("Range: spell "))
+                {
+                    mycaption = rangeString.substring(13);
+                }
+                else if (rangeString.startsWith("Range: "))
+                {
+                    mycaption = rangeString.substring(7);
+                }
+                else if (rangeString.startsWith("Skill: "))
+                {
+                    mycaption = rangeString.substring(7);
+                }
+                else
+                {
+                    mycaption = rangeString;
+                }
                 break;
 
             case Stats.CS_STAT_TITLE:

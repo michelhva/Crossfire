@@ -1,13 +1,13 @@
 
 font font_default_small squealer  8
 font font_types         squealer 12
-font font_stats         squealer 12
-font font_cmdline       squealer 14
+font font_stats         squealer 14
+font font_cmdline       regular  11
 font font_default_large squealer 16
+font font_log           regular  11
+font font_tooltip       squealer 16
 
-font font_log           courbd   8
-
-tooltip font_types
+tooltip font_tooltip
 
 # Map Group
 map playfield -32 -32 1088 832
@@ -251,13 +251,13 @@ set_invisible rspI
 set_invisible rspJ
 
 # SecondaryStats (319, 621)
-label_stat label_sstat_level   0+319  4+621 64 20 font_stats LEVEL
-label_stat label_sstat_exp     0+319 27+621 64 20 font_stats EXP
-label_stat label_sstat_range   0+319 49+621 85 20 font_stats RANGE
-label_stat label_sstat_wc    200+319  4+621 56 20 font_stats WC
-label_stat label_sstat_ac    200+319 27+621 56 20 font_stats AC
-label_stat label_sstat_dam   200+319 49+621 56 20 font_stats DAM
-label_stat label_sstat_speed 200+319 71+621 56 20 font_stats SPEED
+label_stat label_sstat_level   0+309  4+621 110 20 font_stats LEVEL
+label_stat label_sstat_exp     0+309 27+621 110 20 font_stats EXP
+label_stat label_sstat_range   0+309 49+621 110 20 font_stats RANGE
+label_stat label_sstat_wc    200+319  4+621  56 20 font_stats WC
+label_stat label_sstat_ac    200+319 27+621  56 20 font_stats AC
+label_stat label_sstat_dam   200+319 49+621  56 20 font_stats DAM
+label_stat label_sstat_speed 200+319 71+621  56 20 font_stats SPEED
 
 # Panel (199, 551)
 picture panel_back 0+199 0+551 627 217 background_panel
