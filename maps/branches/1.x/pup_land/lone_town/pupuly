@@ -1,16 +1,16 @@
 arch map
-region lonetown
 name pupuly
+difficulty 6
+region lonetown
+width 52
+height 34
+enter_x 7
+enter_y 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 17:45:30 1996
 endmsg
-hp 7
-sp 14
-x 52
-y 34
-level 6
 end
 arch grass
 end
@@ -4641,7 +4641,6 @@ Click
 endmsg
 x 21
 y 23
-protected 1230
 connected 1230
 end
 arch dungeon_floor
@@ -5688,7 +5687,6 @@ hp 7
 sp 24
 x 25
 y 6
-protected 5
 connected 5
 end
 arch key2
@@ -5700,39 +5698,32 @@ end
 arch guildmaster
 name old man
 msg
-@match tree|Tree
+@match tree
 I l.. love laurels very much.
-@match laurels|Laurels
+@match laurel
 Laurel, laurel,...
-Oh! N.. Now I remember ,
-Eureca's wife is called "Lauretta"!
-@match pupuly|Pupuly
+Oh! N.. Now I remember, Eureca's wife is called "Lauretta"!
+@match pupuly
 Y.. Y.. Yes, I.. I'm.. I am Pupuly.
-@match wife|Wife
-I know her. But I c.. can.. cannot
-remember her name right now.
-@match eureca|Eureca
+@match wife
+I know her, but I c.. can.. cannot remember her name right now.
+@match eureca
 He is the l.. lord of this country.
-I.. I served him for about 20 years.
-And now I live in retirement.
-@match ring|Ring
-Y.. you may take the r.. ring as reward
-for k.. kicking Nazgul's butt.
+I.. I served him for about 20 years. And now I live in retirement.
+@match ring
+Y.. you may take the r.. ring as reward for k.. kicking Nazgul's butt.
 It's on the 5-th floor.
-@match [Tt]hieves|[Nn]azgul
+@match thieves|nazgul
 They w.. wanted to steal my ring.
-Th.. Thought they could cheat on ol'
-Pupuly!
-@match key|Key
-The "Guard Room Key"? I f.. forgot
-it's purpose. It had s.. something
-to do with E.. Eureca I think.
+Th.. thought they could cheat on ol' Pupuly!
+@match key
+The "Guard Room Key"?
+I f.. forgot it's purpose.
+I th.. think it had s.. something to do with E.. Eureca.
 @match *
-Th.. Thank you for saving me. 
+Th.. Thank you for saving me.
 We were a.. attacked by the Thieves.
-My servant tried to open the escape
-pits, b.. but ... 
-I'm afraid that he got k.. killed.
+My servant tried to open the escape pits, b.. but ... I'm afraid that he got k.. killed.
 endmsg
 hp 500
 ac -10
@@ -5768,7 +5759,6 @@ end
 arch ggate_closed
 x 25
 y 9
-protected 999
 connected 999
 end
 arch afloor_right
@@ -5900,7 +5890,6 @@ hp 26
 sp 6
 x 25
 y 25
-protected 5
 connected 5
 end
 arch dungeon_floor
@@ -6060,15 +6049,12 @@ end
 arch magic_mouth
 name 10
 msg
-The old man say:
-That l.. lever doesn't work, this gate
-is l.. locked. P.. Please go upstairs
-and t.. try to open the escape pit for
-me.
+The old man says:
+That l.. lever doesn't work; this gate is l.. locked.
+P.. Please go upstairs and t.. try to open the escape pit for me.
 endmsg
 x 26
 y 10
-protected 10
 connected 10
 walk_on 0
 fly_on 0
@@ -6084,7 +6070,6 @@ end
 arch button_lever
 x 26
 y 10
-protected 11
 connected 11
 end
 arch afloor_right
@@ -8658,7 +8643,6 @@ wc 15
 x 36
 y 18
 speed 2.000000
-protected 11
 value 1
 connected 11
 end
@@ -8671,7 +8655,6 @@ name 5
 x 36
 y 19
 speed 0.500000
-protected 5
 connected 5
 end
 arch blocked
@@ -8852,7 +8835,6 @@ arch button_small
 name 10
 x 37
 y 18
-protected 10
 weight 10
 connected 10
 end
@@ -8864,7 +8846,6 @@ ac 0
 x 37
 y 18
 speed 2.000000
-protected 11
 connected 11
 end
 arch igate_closed_1
@@ -8872,7 +8853,6 @@ name 5
 x 37
 y 19
 speed 0.500000
-protected 5
 connected 5
 end
 arch blocked
@@ -9574,9 +9554,8 @@ end
 arch note
 name servant's notes
 msg
-Tomorrow I'll have to plant trees
-again. That crazy old man...
-I should try to make him loose count.
+Tomorrow I'll have to plant trees again. That crazy old man...
+I should try to make him lose count.
 endmsg
 x 41
 y 14
@@ -10110,7 +10089,6 @@ hp 25
 sp 24
 x 44
 y 7
-protected 5
 connected 5
 end
 arch wraith
@@ -10870,7 +10848,6 @@ end
 arch gate_closed_2
 x 48
 y 4
-protected 5
 connected 5
 end
 arch woodfloor
@@ -11067,7 +11044,6 @@ arch button_lever
 name escape pits
 x 49
 y 5
-protected 5
 connected 5
 end
 arch corpse
