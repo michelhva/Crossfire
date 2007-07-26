@@ -1,14 +1,15 @@
 arch map
+name Scorn Mansion - Entrance
+difficulty 1
 region scorn
-name entrance
+width 30
+height 50
+enter_x 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 27 23:34:42 1994
 endmsg
-width 30
-height 50
-enter_x 14
 end
 arch woodfloor
 end
@@ -290,11 +291,10 @@ end
 arch swall_2_1_1
 y 46
 end
-arch woods
-y 47
-end
 arch woods_2
 y 47
+smoothlevel 100
+move_block swim boat
 end
 arch swall_2_1_1
 y 47
@@ -526,9 +526,9 @@ x 1
 y 37
 end
 arch orc
-speed_left -0.700000
 x 1
 y 37
+speed_left -0.700000
 end
 arch woods_2
 x 1
@@ -565,6 +565,8 @@ end
 arch evergreens
 x 1
 y 46
+smoothlevel 100
+move_block swim boat
 end
 arch mountain_cave
 name Filur's cave
@@ -573,6 +575,7 @@ hp 25
 sp 1
 x 1
 y 47
+smoothlevel 125
 end
 arch woods
 x 1
@@ -667,8 +670,8 @@ y 15
 end
 arch spider
 name small spider
-dam 20
 exp 50
+dam 20
 x 2
 y 15
 end
@@ -807,6 +810,8 @@ end
 arch woods
 x 2
 y 47
+smoothlevel 100
+move_block swim boat
 end
 arch medium_stones
 x 2
@@ -985,10 +990,14 @@ end
 arch swamp
 x 3
 y 29
+smoothlevel 72
+move_block swim boat
 end
 arch swamp
 x 3
 y 30
+smoothlevel 36
+move_block swim boat
 end
 arch woods
 x 3
@@ -1221,10 +1230,13 @@ end
 arch swamp
 x 4
 y 29
+smoothlevel 36
+move_block swim boat
 end
 arch small_stones
 x 4
 y 30
+smoothlevel 72
 end
 arch woods_2
 x 4
@@ -1370,9 +1382,9 @@ x 5
 y 9
 end
 arch button_handle
-connected 1
 x 5
 y 9
+connected 1
 end
 arch woodfloor
 x 5
@@ -1649,9 +1661,9 @@ x 6
 y 10
 end
 arch igateTrg2
-connected 1
 x 6
 y 10
+connected 1
 end
 arch woodfloor
 x 6
@@ -1904,9 +1916,9 @@ x 7
 y 9
 end
 arch button_handle
-connected 1
 x 7
 y 9
+connected 1
 end
 arch woodfloor
 x 7
@@ -3074,9 +3086,9 @@ x 11
 y 48
 end
 arch kobold
-speed_left -0.900000
 x 11
 y 48
+speed_left -0.900000
 end
 arch brush
 x 11
@@ -3420,9 +3432,9 @@ x 13
 y 19
 end
 arch grate_closed_1
-connected 96
 x 13
 y 19
+connected 96
 end
 arch grass
 x 13
@@ -3639,9 +3651,9 @@ x 14
 y 19
 end
 arch grate_closed_1
-connected 96
 x 14
 y 19
+connected 96
 end
 arch grass
 x 14
@@ -3859,9 +3871,9 @@ y 18
 end
 arch button_handle
 name Garden gate opener
-connected 96
 x 15
 y 18
+connected 96
 end
 arch woodfloor
 x 15
@@ -3877,9 +3889,9 @@ y 20
 end
 arch button_handle
 name Garden gate opener
-connected 96
 x 15
 y 20
+connected 96
 end
 arch grass
 x 15
@@ -5150,23 +5162,31 @@ end
 arch woods
 x 20
 y 34
+move_block swim boat
 end
 arch woods
 x 20
 y 35
+smoothlevel 20
+move_block swim boat
 end
 arch brush
 x 20
 y 36
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_nse
+arch sea_nse
 name lake
 x 20
 y 36
+smoothlevel 20
+move_block walk
 end
 arch small_stones
 x 20
 y 37
+smoothlevel 20
 end
 arch woods
 x 20
@@ -5425,29 +5445,37 @@ end
 arch woods
 x 21
 y 35
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_nw
+arch sea_nw
 name lake
 x 21
 y 35
+move_block walk
 end
 arch sea
 name lake
 x 21
 y 36
+move_block walk
 end
 arch small_stones
 x 21
 y 37
+smoothlevel 20
 end
-arch biglake_sw
+arch sea_sw
 name lake
 x 21
 y 37
+move_block walk
 end
 arch woods_2
 x 21
 y 38
+smoothlevel 0
+move_block swim boat
 end
 arch woods
 x 21
@@ -5692,16 +5720,19 @@ arch sea
 name lake
 x 22
 y 35
+move_block walk
 end
 arch sea
 name lake
 x 22
 y 36
+move_block walk
 end
 arch sea
 name lake
 x 22
 y 37
+move_block walk
 end
 arch woods_2
 x 22
@@ -5928,32 +5959,44 @@ end
 arch woods
 x 23
 y 34
+smoothlevel 0
+move_block swim boat
 end
 arch woods
 x 23
 y 35
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_ne
+arch sea_ne
 name lake
 x 23
 y 35
+move_block walk
 end
 arch sea
 name lake
 x 23
 y 36
+move_block swim
 end
 arch hills_rocky
 x 23
 y 37
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_se
+arch sea_se
+name lake
 x 23
 y 37
+move_block walk
 end
 arch hills_rocky
 x 23
 y 38
+smoothlevel 0
+move_block swim boat
 end
 arch woods_2
 x 23
@@ -6197,28 +6240,37 @@ end
 arch woods
 x 24
 y 34
+move_block swim boat
 end
 arch woods
 x 24
 y 35
+smoothlevel 20
+move_block swim boat
 end
 arch woods
 x 24
 y 36
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_nes
+arch sea_nes
 name lake
 x 24
 y 36
+smoothlevel 20
+move_block walk
 end
 arch large_stones
 x 24
 y 37
+smoothlevel 0
 end
 arch goblin
-speed_left -0.900000
 x 24
 y 37
+speed_left -0.900000
+smoothlevel 20
 end
 arch hills_rocky
 x 24
