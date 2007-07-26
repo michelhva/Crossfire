@@ -136,6 +136,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private GUIElement mouseElement = null;
 
     /**
+     * The width of the client area.
+     */
+    private int windowWidth = 0;
+
+    /**
+     * The height of the client area.
+     */
+    private int windowHeight = 0;
+
+    /**
      * The {@link WindowFocusListener} registered for this window. It resets
      * the keyboard modifier state when the window loses the focus. The idea is
      * to prevent the following: user switches from jxclient to another window
@@ -439,6 +449,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen, final String server)
     {
+        windowWidth = w;
+        windowHeight = h;
         CfMapUpdater.processNewmap();
         addKeyListener(this);
         addMouseListener(this);
@@ -1071,7 +1083,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         if (elected != null)
         {
-            e.translatePoint(-elected.x, -elected.y);
+            e.translatePoint(-elected.x-jxcWindowRenderer.getOffsetX(), -elected.y-jxcWindowRenderer.getOffsetY());
         }
 
         return elected;
@@ -1079,8 +1091,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e, final boolean ignoreButtons)
     {
-        final int x = e.getX();
-        final int y = e.getY();
+        final int x = e.getX()-jxcWindowRenderer.getOffsetX();
+        final int y = e.getY()-jxcWindowRenderer.getOffsetY();
         final int b = e.getButton();
         final GUIElement elected;
         switch(b)
@@ -1402,5 +1414,25 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             System.exit(1);
             throw new AssertionError();
         }
+    }
+
+    /**
+     * Return the width of the client area.
+     *
+     * @return The width of the client area.
+     */
+    public int getWindowWidth()
+    {
+        return windowWidth;
+    }
+
+    /**
+     * Return the height of the client area.
+     *
+     * @return The height of the client area.
+     */
+    public int getWindowHeight()
+    {
+        return windowHeight;
     }
 }

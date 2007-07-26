@@ -139,9 +139,9 @@ public class TooltipManager
         tooltip.setVisible(true);
         tooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.getX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, jxcWindow.getWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(activeGuiElement.getX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, jxcWindow.getWindowWidth()-tooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= jxcWindow.getHeight())
+        if (activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= jxcWindow.getWindowHeight())
         {
             ty = activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }
