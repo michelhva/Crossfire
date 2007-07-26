@@ -119,6 +119,8 @@ public class GUIItemSpelllist extends GUIItem
 
         myspell = spell;
         render();
+
+        setTooltipText(spell == null ? null : spell.getTooltipText());
     }
 
     private void setIndex(final int index)
