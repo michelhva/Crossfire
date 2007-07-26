@@ -66,6 +66,12 @@ public class ItemsManager
     private final EventListenerList currentFloorListeners = new EventListenerList();
 
     /**
+     * The list of {@link CrossfirePlayerListener}s to be notified about
+     * changes of the current player.
+     */
+    private final EventListenerList playerListeners = new EventListenerList();
+
+    /**
      * Modified floor tiles for which no events have been delivered.
      */
     private final Set<Integer> modifiedFloors = new HashSet<Integer>();
@@ -290,6 +296,12 @@ public class ItemsManager
         {
             addModified(modifiedInventories, items.get(this.player.getTag()));
         }
+
+        final CrossfireCommandPlayerEvent evt = new CrossfireCommandPlayerEvent(this);
+        for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+        {
+            listener.commandPlayerReceived(evt);
+        }
     }
 
     /**
@@ -489,6 +501,28 @@ public class ItemsManager
     public void removeCurrentFloorListener(final CurrentFloorListener listener)
     {
         currentFloorListeners.remove(CurrentFloorListener.class, listener);
+    }
+
+    /**
+     * Add a {@link CrossfirePlayerListener} to be notified about changes of
+     * the current player.
+     *
+     * @param listener the listener to add
+     */
+    public void addCrossfirePlayerListeners(final CrossfirePlayerListener listener)
+    {
+        playerListeners.add(CrossfirePlayerListener.class, listener);
+    }
+
+    /**
+     * Remove a {@link CrossfirePlayerListener} to be notified about changes of
+     * the current player.
+     *
+     * @param listener the listener to remove
+     */
+    public void removeCrossfirePlayerListeners(final CrossfirePlayerListener listener)
+    {
+        playerListeners.remove(CrossfirePlayerListener.class, listener);
     }
 
     /**
