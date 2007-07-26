@@ -18,6 +18,8 @@ picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty
 picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty
 gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN
 gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN
+label_stat label_hp     8+72 12+732 32  32 font_types HP
+label_stat label_fp    86+72 12+732 32  32 font_types FOOD
 
 # RGauges Group (820, 552)
 picture staff_back    40+820  0+552 64 256 background_staff
@@ -25,13 +27,11 @@ picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty
 picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty
 gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN
 gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN
+label_stat label_gp  772+72  12+732 32  32 font_types GRACE
+label_stat label_sp  848+72  12+732 32  32 font_types SP
 
 # UpperPane (207, 27)
 picture title_back          0+227  0+27 610 85 title
-label_stat label_hp       216+227 64+27  20 16 font_types HP
-label_stat label_fp       264+227 64+27  36 16 font_types FOOD
-label_stat label_sp       313+227 64+27  36 16 font_types SP
-label_stat label_gp       361+227 64+27  36 16 font_types GRACE
 label_stat label_title     12+227 24+27 512 24 font_default_large TITLE
 
 # UpperBar (113, 0)
