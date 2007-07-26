@@ -100,7 +100,7 @@ public class jxclient
                 {
                     fullScreen = false;
                 }
-                else if (args[i].equals("-opengl"))
+                else if (args[i].equals("--opengl"))
                 {
                     System.setProperty("sun.java2d.opengl", "True");
                 }
@@ -114,7 +114,7 @@ public class jxclient
                     System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
                     System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
                     System.out.println(" -S <skin> : Skin name to use.");
-                    System.out.println(" -opengl   : Enable the OpenGL rendering pipeline.");
+                    System.out.println(" --opengl  : Enable the OpenGL rendering pipeline.");
                     System.exit(1);
                 }
             }
