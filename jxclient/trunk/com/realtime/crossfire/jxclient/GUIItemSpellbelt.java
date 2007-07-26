@@ -153,6 +153,16 @@ public class GUIItemSpellbelt extends GUIItem
 
         myspellbelt = spellBeltItem;
         render();
+
+        if (myspellbelt == null)
+        {
+            setTooltipText(null);
+        }
+        else
+        {
+            final Spell spell = myspellbelt.getSpell();
+            setTooltipText(spell == null ? null : spell.getTooltipText());
+        }
     }
 
     private void setIndex(final int index)

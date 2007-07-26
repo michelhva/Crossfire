@@ -33,6 +33,7 @@ import java.awt.Transparency;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
+import java.util.regex.Pattern;
 import java.util.Stack;
 import javax.swing.ImageIcon;
 import javax.swing.text.html.HTML;
@@ -52,6 +53,11 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
      * Size of border around text in auto-resize mode.
      */
     public static final int AUTO_BORDER_SIZE = 2;
+
+    /**
+     * The pattern used to split a string into lines.
+     */
+    private static final Pattern patternLineBreak = Pattern.compile("\n");
 
     private ImageIcon mybackground = null;
 
@@ -385,8 +391,15 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
         try
         {
             final FontRenderContext context = g.getFontRenderContext();
-            final Rectangle2D size = myfont.getStringBounds(mycaption, context);
-            setSize((int)size.getWidth()+1+2*AUTO_BORDER_SIZE, (int)size.getHeight()+1+2*AUTO_BORDER_SIZE);
+            int width = 0;
+            int height = 0;
+            for (final String str : patternLineBreak.split(mycaption, -1))
+            {
+                final Rectangle2D size = myfont.getStringBounds(mycaption, context);
+                width = Math.max(width, (int)size.getWidth());
+                height += (int)size.getHeight();
+            }
+            setSize(width+2*AUTO_BORDER_SIZE, height+2*AUTO_BORDER_SIZE);
         }
         finally
         {

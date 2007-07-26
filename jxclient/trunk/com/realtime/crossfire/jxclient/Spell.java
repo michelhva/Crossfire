@@ -195,4 +195,14 @@ public class Spell
         str = str+" Damage:"+mydamage+" Skill:"+myskill+" Path:"+mypath;
         return str;
     }
+
+    /**
+     * Return a description for this spell to be used in tooltips.
+     *
+     * @return The tooltip text.
+     */
+    public String getTooltipText()
+    {
+        return mymessage.length() > 0 ? myname+"\n"+mymessage : myname;
+    }
 }
