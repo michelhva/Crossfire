@@ -1,14 +1,14 @@
 arch map
-region pupland
 name pplant_ud2
+difficulty 5
+region pupland
+width 20
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb  6 01:15:33 1996
 endmsg
-width 20
-height 16
-difficulty 5
 end
 arch blocked
 end
@@ -546,50 +546,43 @@ x 6
 y 1
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 2
+connected 1
 end
 arch cobblestones
 x 6
 y 2
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 3
+connected 1
 end
 arch cobblestones
 x 6
 y 3
 end
 arch ggate_closed
-connected 1
 x 6
 y 3
+connected 1
 end
 arch magic_mouth
 msg
-The cave chief appears to be a
-gnome of the tougher kind!
+The cave chief appears to be a gnome of the tougher kind!
 endmsg
-connected 1
-walk_on 0
-fly_on 0
 food 1
 x 6
 y 4
+connected 1
+walk_on 0
+fly_on 0
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 4
+connected 1
 end
 arch pstone_1
 x 6
@@ -602,10 +595,12 @@ end
 arch pstone_1
 x 6
 y 6
+smoothlevel 0
 end
 arch pstone_1
 x 6
 y 7
+smoothlevel 1
 end
 arch pstone_1
 x 6
@@ -615,7 +610,7 @@ arch pstone_1
 x 6
 y 9
 end
-arch biglake_nw
+arch sea_nw
 x 6
 y 9
 end
@@ -668,13 +663,13 @@ y 2
 end
 arch gnome
 name cave chief
-type 0
-carrying 100
-unaggressive 1
-level 6
 exp 2000
 x 7
 y 2
+level 6
+type 0
+carrying 100
+unaggressive 1
 arch key2
 name gnome key
 slaying 958473
@@ -683,8 +678,6 @@ arch random_wealth
 hp 2
 end
 arch random_gem
-msg
-endmsg
 hp 2
 end
 end
@@ -705,9 +698,10 @@ x 7
 y 5
 end
 arch sea
-no_pass 0
 x 7
 y 6
+smoothlevel 0
+move_block 0
 end
 arch pier_2_1_2
 x 7
@@ -716,6 +710,7 @@ end
 arch sea
 x 7
 y 7
+smoothlevel 1
 end
 arch sea
 x 7
@@ -796,7 +791,7 @@ arch pstone_1
 x 8
 y 4
 end
-arch biglake_nw
+arch sea_nw
 x 8
 y 4
 end
@@ -805,9 +800,9 @@ x 8
 y 5
 end
 arch sea
-no_pass 0
 x 8
 y 6
+move_block 0
 end
 arch pier_2_1_2
 x 8
@@ -833,7 +828,7 @@ arch pstone_1
 x 8
 y 11
 end
-arch biglake_sew
+arch sea_sew
 x 8
 y 11
 end
@@ -869,11 +864,9 @@ arch mine_2_1_2
 x 9
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 9
 y 1
+connected 1
 end
 arch pstone_1
 x 9
@@ -895,7 +888,7 @@ arch pstone_1
 x 9
 y 3
 end
-arch biglake_nw
+arch sea_nw
 x 9
 y 3
 end
@@ -908,9 +901,9 @@ x 9
 y 5
 end
 arch sea
-no_pass 0
 x 9
 y 6
+move_block 0
 end
 arch pier_1_3
 x 9
@@ -1073,9 +1066,14 @@ x 11
 y 6
 end
 arch sea
-no_pass 0
 x 11
 y 7
+move_block 0
+end
+arch rowboat
+x 11
+y 7
+type 0
 end
 arch sea
 x 11
@@ -1149,22 +1147,22 @@ x 12
 y 6
 end
 arch sea
-no_pass 0
 x 12
 y 7
+move_block 0
 end
 arch snake
 name water snake
-level 7
-generator 0
-attacktype 1025
-wc -5
 hp 30
 maxhp 30
-resist_acid 80
-resist_poison 100
+wc -5
 x 12
 y 7
+level 7
+attacktype 1025
+resist_acid 80
+resist_poison 100
+generator 0
 end
 arch sea
 x 12
@@ -1178,8 +1176,7 @@ arch pstone_1
 x 12
 y 10
 end
-arch biglake_se
-name sea
+arch sea_se
 x 12
 y 10
 end
@@ -1316,8 +1313,7 @@ arch pstone_1
 x 14
 y 6
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 14
 y 6
 end
@@ -1333,8 +1329,7 @@ arch pstone_1
 x 14
 y 9
 end
-arch biglake_se
-name sea
+arch sea_se
 x 14
 y 9
 end
@@ -1393,8 +1388,7 @@ arch pstone_1
 x 15
 y 4
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 15
 y 4
 end
@@ -1410,8 +1404,7 @@ arch pstone_1
 x 15
 y 6
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 15
 y 6
 end
@@ -1671,7 +1664,7 @@ arch pstone_1
 x 18
 y 8
 end
-arch biglake_se
+arch sea_se
 x 18
 y 8
 end
@@ -1841,9 +1834,4 @@ end
 arch cave1
 x 19
 y 15
-end
-arch rowboat
-type 0
-x 11
-y 7
 end
