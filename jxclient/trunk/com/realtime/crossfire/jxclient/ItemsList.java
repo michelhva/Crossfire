@@ -577,7 +577,7 @@ public class ItemsList
      * Remove a {@link CurrentFloorListener} to be notified about current floor
      * changes.
      *
-     * @param listener the listener to add
+     * @param listener the listener to remove
      */
     public static void removeCurrentFloorListener(final CurrentFloorListener listener)
     {
