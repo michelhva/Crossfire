@@ -20,11 +20,13 @@
 package com.realtime.crossfire.jxclient;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferStrategy;
+import java.awt.Insets;
 
 /**
  * @author Andreas Kirschbaum
@@ -60,6 +62,16 @@ public class JXCWindowRenderer
      */
     private boolean forcePaint = false;
 
+    /**
+     * The x-offset of of the visible window.
+     */
+    private int offsetX = 0;
+
+    /**
+     * The y-offset of of the visible window.
+     */
+    private int offsetY = 0;
+
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
         this.jxcWindow = jxcWindow;
@@ -91,7 +103,9 @@ public class JXCWindowRenderer
             }
             oldDisplayMode = gd.getDisplayMode();
 
-            jxcWindow.setSize(displayMode.getWidth(), displayMode.getHeight());
+            final Dimension size = new Dimension(displayMode.getWidth(), displayMode.getHeight());
+            jxcWindow.getRootPane().setPreferredSize(size);
+            jxcWindow.pack();
             jxcWindow.setResizable(false);
             jxcWindow.setVisible(true);
             jxcWindow.setLocationRelativeTo(null);
@@ -109,6 +123,10 @@ public class JXCWindowRenderer
         }
         jxcWindow.createBufferStrategy(2);
         bufferStrategy = jxcWindow.getBufferStrategy();
+
+        final Insets insets = jxcWindow.getInsets();
+        offsetX = insets.left;
+        offsetY = insets.top;
     }
 
     public void endRendering()
@@ -138,6 +156,7 @@ public class JXCWindowRenderer
             do
             {
                 final Graphics g = bufferStrategy.getDrawGraphics();
+                g.translate(offsetX, offsetY);
                 if (bufferStrategy.contentsRestored())
                 {
                     redrawBlack(g);
@@ -159,6 +178,7 @@ public class JXCWindowRenderer
         for (int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();
+            g.translate(offsetX, offsetY);
             redrawBlack(g);
             g.dispose();
             bufferStrategy.show();
@@ -183,7 +203,7 @@ public class JXCWindowRenderer
     private void redrawBlack(final Graphics g)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, jxcWindow.getWidth(), jxcWindow.getHeight());
+        g.fillRect(0, 0, jxcWindow.getWindowWidth(), jxcWindow.getWindowHeight());
     }
 
     public void setCurrentDialog(final Gui dialog)
@@ -250,5 +270,25 @@ public class JXCWindowRenderer
         {
             currentDialog.getFirstTextArea().setHideInput(hideInput);
         }
+    }
+
+    /**
+     * Return the x-offset of of the visible window.
+     *
+     * @return The x-offset of of the visible window.
+     */
+    public int getOffsetX()
+    {
+        return offsetX;
+    }
+
+    /**
+     * Return the y-offset of of the visible window.
+     *
+     * @return The y-offset of of the visible window.
+     */
+    public int getOffsetY()
+    {
+        return offsetY;
     }
 }
