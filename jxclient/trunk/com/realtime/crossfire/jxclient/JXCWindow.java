@@ -437,7 +437,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         initGUI(id);
     }
 
-    public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen)
+    public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen, final String server)
     {
         CfMapUpdater.processNewmap();
         addKeyListener(this);
@@ -448,7 +448,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         try
         {
             initRendering(fullScreen);
-            initGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+            if (server != null)
+            {
+                connect(server, 13327);
+            }
+            else
+            {
+                initGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+            }
             for (;;)
             {
                 synchronized(semaphore_drawing)

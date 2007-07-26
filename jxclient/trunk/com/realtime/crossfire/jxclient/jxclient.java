@@ -61,6 +61,7 @@ public class jxclient
             int freq = prefs.getInt("frequency", 0);
             String skin = prefs.get("skin", "default");
             boolean fullScreen = true;
+            String server = null;
 
             // fix changed default skin name
             if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
@@ -104,17 +105,24 @@ public class jxclient
                 {
                     System.setProperty("sun.java2d.opengl", "True");
                 }
+                else if (args[i].equals("--server") && i+1 < args.length)
+                {
+                    server = args[i+1];
+                    i++;
+                }
                 else
                 {
                     System.out.println("");
                     System.out.println("Available options:");
-                    System.out.println(" -N        : Disable full-screen mode;");
-                    System.out.println(" -W <size> : Width of the screen, in pixels;");
-                    System.out.println(" -H <size> : Height of the screen, in pixels;");
-                    System.out.println(" -B <bpp>  : Bit per pixels, or (-1) for multibpp mode;");
-                    System.out.println(" -F <freq> : Refresh frequency of the screen in Hz (0:guess);");
-                    System.out.println(" -S <skin> : Skin name to use.");
-                    System.out.println(" --opengl  : Enable the OpenGL rendering pipeline.");
+                    System.out.println(" -N             : Disable full-screen mode;");
+                    System.out.println(" -W <size>      : Width of the screen, in pixels;");
+                    System.out.println(" -H <size>      : Height of the screen, in pixels;");
+                    System.out.println(" -B <bpp>       : Bit per pixels, or (-1) for multibpp mode;");
+                    System.out.println(" -F <freq>      : Refresh frequency of the screen in Hz (0:guess);");
+                    System.out.println(" -S <skin>      : Skin name to use.");
+                    System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
+                    System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
+                    System.out.println("                  windows.");
                     System.exit(1);
                 }
             }
@@ -125,7 +133,7 @@ public class jxclient
             prefs.put("skin", skin);
 
             final JXCWindow jxwin = new JXCWindow();
-            jxwin.init(width, height, bpp, freq, skin, fullScreen);
+            jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
         }
         catch (final Exception e)
         {
