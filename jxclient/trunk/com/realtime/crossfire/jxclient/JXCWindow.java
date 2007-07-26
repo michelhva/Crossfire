@@ -50,6 +50,11 @@ import javax.swing.JFrame;
  */
 public class JXCWindow extends JFrame implements KeyListener, MouseInputListener, CrossfireDrawextinfoListener, CrossfireQueryListener
 {
+    /**
+     * The prefix for the window title.
+     */
+    private static final String TITLE_PREFIX = "jxclient";
+
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
@@ -146,6 +151,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private int windowHeight = 0;
 
     /**
+     * The currently connected server. Set to <code>null</code> if unconnected.
+     */
+    private String hostname = null;
+
+    /**
      * The {@link WindowFocusListener} registered for this window. It resets
      * the keyboard modifier state when the window loses the focus. The idea is
      * to prevent the following: user switches from jxclient to another window
@@ -167,10 +177,32 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     };
 
     /**
+     * The listener to detect a changed player name.
+     */
+    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    {
+        /** {@inheritDoc} */
+        public void commandPlayerReceived(final CrossfireCommandPlayerEvent evt)
+        {
+            final ItemsManager itemsManager = (ItemsManager)evt.getSource();
+            final CfPlayer player = itemsManager.getPlayer();
+            if (player == null)
+            {
+                setTitle(TITLE_PREFIX+" - "+hostname);
+            }
+            else
+            {
+                setTitle(TITLE_PREFIX+" - "+hostname+" - "+player.getName());
+            }
+        }
+    };
+
+    /**
      * Create a new instance.
      */
     public JXCWindow()
     {
+        super(TITLE_PREFIX);
         addWindowFocusListener(windowFocusListener);
     }
 
@@ -487,10 +519,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void connect(final String hostname, final int port)
     {
+        this.hostname = hostname;
         myserver = new CrossfireServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
         myserver.addCrossfireQueryListener(this);
+        myserver.addCrossfirePlayerListener(crossfirePlayerListener);
         initGUI(GUI_MAIN);
+        setTitle(TITLE_PREFIX+" - "+hostname);
         myserver.connect();
         Faces.setFacesCallback(myserver);
     }

@@ -19,13 +19,15 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.EventListener;
+
 /**
  *
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
  */
-public interface CrossfirePlayerListener
+public interface CrossfirePlayerListener extends EventListener
 {
     public void commandPlayerReceived(CrossfireCommandPlayerEvent evt);
 }

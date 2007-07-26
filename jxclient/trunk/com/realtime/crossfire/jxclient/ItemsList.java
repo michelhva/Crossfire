@@ -583,4 +583,24 @@ public class ItemsList
     {
         itemsManager.removeCurrentFloorListener(listener);
     }
+
+    /**
+     * Adds a new listener monitoring the
+     * player S->C messages.
+     * @param listener The listener to remove.
+     */
+    public static void addCrossfirePlayerListener(final CrossfirePlayerListener listener)
+    {
+        itemsManager.addCrossfirePlayerListeners(listener);
+    }
+
+    /**
+     * Removes the given listener from the list of objects listening to the
+     * player S->C messages.
+     * @param listener The listener to remove.
+     */
+    public static void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
+    {
+        itemsManager.removeCrossfirePlayerListeners(listener);
+    }
 }

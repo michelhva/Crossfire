@@ -261,7 +261,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
-        CfPlayer.addCrossfirePlayerListeners(listener);
+        ItemsList.addCrossfirePlayerListener(listener);
     }
 
     /**
@@ -272,7 +272,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfirePlayerListener(CrossfirePlayerListener listener)
     {
-        CfPlayer.removeCrossfirePlayerListeners(listener);
+        ItemsList.removeCrossfirePlayerListener(listener);
     }
 
     /**

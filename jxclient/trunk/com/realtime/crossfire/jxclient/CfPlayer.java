@@ -36,8 +36,6 @@ public class CfPlayer extends CfItem
 {
     private static List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
 
-    private static List<CrossfirePlayerListener> mylisteners_player = new ArrayList<CrossfirePlayerListener>();
-
     private static Stats mystats = new Stats();
 
     public CfPlayer(int tag, int weight, Face face, String name)
@@ -48,16 +46,6 @@ public class CfPlayer extends CfItem
     public static Stats getStats()
     {
         return mystats;
-    }
-
-    public static void addCrossfirePlayerListeners(final CrossfirePlayerListener listener)
-    {
-        mylisteners_player.add(listener);
-    }
-
-    public static void removeCrossfirePlayerListeners(final CrossfirePlayerListener listener)
-    {
-        mylisteners_player.remove(listener);
     }
 
     public static void addCrossfireStatsListeners(final CrossfireStatsListener listener)
