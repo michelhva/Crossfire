@@ -341,7 +341,7 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
                 String str = " - ";
                 int w = m.stringWidth(str);
                 mygc.drawString(str, myx+(autoResize ? AUTO_BORDER_SIZE : 0), myy+(autoResize ? AUTO_BORDER_SIZE : 0));
-                myx+=w;
+                myx += w;
             }
             else
             {
