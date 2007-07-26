@@ -71,27 +71,27 @@ public class jxclient
             boolean mkdir_result = (new File("cache")).mkdirs();
             for (int i = 0; i < args.length; i++)
             {
-                if ((args[i].equals("-W")) && (i+1 < args.length))
+                if (args[i].equals("-W") && i+1 < args.length)
                 {
                     str_width = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-H")) && (i+1 < args.length))
+                else if (args[i].equals("-H") && i+1 < args.length)
                 {
                     str_height = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-B")) && (i+1 < args.length))
+                else if (args[i].equals("-B") && i+1 < args.length)
                 {
                     str_bpp = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-F")) && (i+1 < args.length))
+                else if (args[i].equals("-F") && i+1 < args.length)
                 {
                     str_freq = args[i+1];
                     i++;
                 }
-                else if ((args[i].equals("-S")) && (i+1 < args.length))
+                else if (args[i].equals("-S") && i+1 < args.length)
                 {
                     str_skin = args[i+1];
                     i++;
@@ -100,7 +100,7 @@ public class jxclient
                 {
                     fullScreen = false;
                 }
-                else if ((args[i].equals("-opengl")))
+                else if (args[i].equals("-opengl"))
                 {
                     System.setProperty("sun.java2d.opengl", "True");
                 }
