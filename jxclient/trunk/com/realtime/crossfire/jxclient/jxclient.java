@@ -37,12 +37,12 @@ public class jxclient
      * The program entry point.
      * @since 1.0
      */
-    public static void main(String args[])
+    public static void main(final String args[])
     {
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
-        jxclient game = new jxclient(args);
+        final jxclient game = new jxclient(args);
     }
 
     /**
@@ -50,11 +50,11 @@ public class jxclient
      * Initialization of a JXCWindow is the only task performed here.
      * @since 1.0
      */
-    public jxclient(String args[])
+    public jxclient(final String args[])
     {
         try
         {
-            Preferences prefs = Preferences.userRoot();
+            final Preferences prefs = Preferences.userRoot();
             String str_width = prefs.get("width", "1024");
             String str_height = prefs.get("height", "768");
             String str_bpp = prefs.get("bpp", "-1");
@@ -68,7 +68,7 @@ public class jxclient
                     str_skin = "default";
             }
 
-            boolean mkdir_result = (new File("cache")).mkdirs();
+            final boolean mkdir_result = (new File("cache")).mkdirs();
             for (int i = 0; i < args.length; i++)
             {
                 if (args[i].equals("-W") && i+1 < args.length)
@@ -124,10 +124,10 @@ public class jxclient
             prefs.put("frequency", str_freq);
             prefs.put("skin", str_skin);
 
-            JXCWindow jxwin = new JXCWindow();
+            final JXCWindow jxwin = new JXCWindow();
             jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height), Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin, fullScreen);
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(1);
