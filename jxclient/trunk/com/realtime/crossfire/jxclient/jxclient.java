@@ -55,17 +55,17 @@ public class jxclient
         try
         {
             final Preferences prefs = Preferences.userRoot();
-            String str_width = prefs.get("width", "1024");
-            String str_height = prefs.get("height", "768");
-            String str_bpp = prefs.get("bpp", "-1");
-            String str_freq = prefs.get("frequency", "0");
-            String str_skin = prefs.get("skin", "default");
+            int width = prefs.getInt("width", 1024);
+            int height = prefs.getInt("height", 768);
+            int bpp = prefs.getInt("bpp", -1);
+            int freq = prefs.getInt("frequency", 0);
+            String skin = prefs.get("skin", "default");
             boolean fullScreen = true;
 
             // fix changed default skin name
-            if (str_skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
+            if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
             {
-                    str_skin = "default";
+                    skin = "default";
             }
 
             final boolean mkdir_result = (new File("cache")).mkdirs();
@@ -73,27 +73,27 @@ public class jxclient
             {
                 if (args[i].equals("-W") && i+1 < args.length)
                 {
-                    str_width = args[i+1];
+                    width = Integer.parseInt(args[i+1]);
                     i++;
                 }
                 else if (args[i].equals("-H") && i+1 < args.length)
                 {
-                    str_height = args[i+1];
+                    height = Integer.parseInt(args[i+1]);
                     i++;
                 }
                 else if (args[i].equals("-B") && i+1 < args.length)
                 {
-                    str_bpp = args[i+1];
+                    bpp = Integer.parseInt(args[i+1]);
                     i++;
                 }
                 else if (args[i].equals("-F") && i+1 < args.length)
                 {
-                    str_freq = args[i+1];
+                    freq = Integer.parseInt(args[i+1]);
                     i++;
                 }
                 else if (args[i].equals("-S") && i+1 < args.length)
                 {
-                    str_skin = args[i+1];
+                    skin = args[i+1];
                     i++;
                 }
                 else if (args[i].equals("-N"))
@@ -118,14 +118,14 @@ public class jxclient
                     System.exit(1);
                 }
             }
-            prefs.put("width", str_width);
-            prefs.put("height", str_height);
-            prefs.put("bpp", str_bpp);
-            prefs.put("frequency", str_freq);
-            prefs.put("skin", str_skin);
+            prefs.putInt("width", width);
+            prefs.putInt("height", height);
+            prefs.putInt("bpp", bpp);
+            prefs.putInt("frequency", freq);
+            prefs.put("skin", skin);
 
             final JXCWindow jxwin = new JXCWindow();
-            jxwin.init(Integer.parseInt(str_width), Integer.parseInt(str_height), Integer.parseInt(str_bpp), Integer.parseInt(str_freq), str_skin, fullScreen);
+            jxwin.init(width, height, bpp, freq, skin, fullScreen);
         }
         catch (final Exception e)
         {
