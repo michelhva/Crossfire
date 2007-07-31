@@ -20,6 +20,11 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUICommand;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
+import com.realtime.crossfire.jxclient.gui.GUIText;
 import java.awt.AWTKeyStroke;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -1118,7 +1123,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         if (elected != null)
         {
-            e.translatePoint(-elected.x-jxcWindowRenderer.getOffsetX(), -elected.y-jxcWindowRenderer.getOffsetY());
+            e.translatePoint(-elected.getX()-jxcWindowRenderer.getOffsetX(), -elected.getY()-jxcWindowRenderer.getOffsetY());
         }
 
         return elected;

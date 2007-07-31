@@ -17,8 +17,13 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
+import com.realtime.crossfire.jxclient.CrossfireCommandNewmapEvent;
+import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
+import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
+import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;

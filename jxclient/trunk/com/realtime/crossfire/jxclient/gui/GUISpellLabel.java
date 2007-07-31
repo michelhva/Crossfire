@@ -17,8 +17,12 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.Spell;
+import com.realtime.crossfire.jxclient.SpellChangedEvent;
+import com.realtime.crossfire.jxclient.SpellListener;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.io.IOException;

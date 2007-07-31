@@ -19,6 +19,24 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIButton;
+import com.realtime.crossfire.jxclient.gui.GUICommand;
+import com.realtime.crossfire.jxclient.gui.GUICommandText;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.GUIGauge;
+import com.realtime.crossfire.jxclient.gui.GUIItemFloor;
+import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
+import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
+import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
+import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
+import com.realtime.crossfire.jxclient.gui.GUIMap;
+import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
+import com.realtime.crossfire.jxclient.gui.GUIPicture;
+import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
+import com.realtime.crossfire.jxclient.gui.GUIText;
+import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
