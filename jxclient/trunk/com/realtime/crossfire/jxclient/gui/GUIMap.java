@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CfMapSquare;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireCommandMapEvent;
 import com.realtime.crossfire.jxclient.CrossfireCommandMapscrollEvent;
@@ -31,6 +30,7 @@ import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;

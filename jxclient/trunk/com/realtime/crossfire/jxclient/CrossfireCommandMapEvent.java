@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.util.EventObject;
 import java.util.List;
 
