@@ -217,7 +217,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireMapListener(CrossfireMapListener listener)
     {
-        CfMapUpdater.addCrossfireMapListeners(listener);
+        CfMapUpdater.addCrossfireMapListener(listener);
     }
 
     /**
@@ -228,7 +228,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireMapListener(CrossfireMapListener listener)
     {
-        CfMapUpdater.removeCrossfireMapListeners(listener);
+        CfMapUpdater.removeCrossfireMapListener(listener);
     }
 
     /**
@@ -239,7 +239,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMapUpdater.addCrossfireNewmapListeners(listener);
+        CfMapUpdater.addCrossfireNewmapListener(listener);
     }
 
     /**
@@ -250,7 +250,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
     {
-        CfMapUpdater.removeCrossfireNewmapListeners(listener);
+        CfMapUpdater.removeCrossfireNewmapListener(listener);
     }
 
     /**
@@ -283,7 +283,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireStatsListener(CrossfireStatsListener listener)
     {
-        CfPlayer.addCrossfireStatsListeners(listener);
+        CfPlayer.addCrossfireStatsListener(listener);
     }
 
     /**
@@ -294,7 +294,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireStatsListener(CrossfireStatsListener listener)
     {
-        CfPlayer.removeCrossfireStatsListeners(listener);
+        CfPlayer.removeCrossfireStatsListener(listener);
     }
 
     /**
@@ -305,7 +305,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMapUpdater.addCrossfireMapscrollListeners(listener);
+        CfMapUpdater.addCrossfireMapscrollListener(listener);
     }
 
     /**
@@ -316,7 +316,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireMapscrollListener(CrossfireMapscrollListener listener)
     {
-        CfMapUpdater.removeCrossfireMapscrollListeners(listener);
+        CfMapUpdater.removeCrossfireMapscrollListener(listener);
     }
 
     /**
@@ -371,7 +371,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMagicMap.addCrossfireMagicmapListeners(listener);
+        CfMagicMap.addCrossfireMagicmapListener(listener);
     }
 
     /**
@@ -382,7 +382,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
-        CfMagicMap.removeCrossfireMagicmapListeners(listener);
+        CfMagicMap.removeCrossfireMagicmapListener(listener);
     }
 
     /**
@@ -437,7 +437,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
     {
-        ItemsList.addCrossfireSpellAddedListeners(listener);
+        ItemsList.addCrossfireSpellAddedListener(listener);
     }
 
     /**
@@ -448,7 +448,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireSpellAddedListener(CrossfireSpellAddedListener listener)
     {
-        ItemsList.removeCrossfireSpellAddedListeners(listener);
+        ItemsList.removeCrossfireSpellAddedListener(listener);
     }
 
     /**
@@ -459,7 +459,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
     {
-        ItemsList.addCrossfireSpellUpdatedListeners(listener);
+        ItemsList.addCrossfireSpellUpdatedListener(listener);
     }
 
     /**
@@ -470,7 +470,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireSpellUpdatedListener(CrossfireSpellUpdatedListener listener)
     {
-        ItemsList.removeCrossfireSpellUpdatedListeners(listener);
+        ItemsList.removeCrossfireSpellUpdatedListener(listener);
     }
 
     /**
@@ -481,7 +481,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
     {
-        ItemsList.addCrossfireSpellRemovedListeners(listener);
+        ItemsList.addCrossfireSpellRemovedListener(listener);
     }
 
     /**
@@ -492,7 +492,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireSpellRemovedListener(CrossfireSpellRemovedListener listener)
     {
-        ItemsList.removeCrossfireSpellRemovedListeners(listener);
+        ItemsList.removeCrossfireSpellRemovedListener(listener);
     }
 
     /** {@inheritDoc} */

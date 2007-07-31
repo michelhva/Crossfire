@@ -63,32 +63,32 @@ public class ItemsList
         }
     }
 
-    public static void addCrossfireSpellAddedListeners(final CrossfireSpellAddedListener listener)
+    public static void addCrossfireSpellAddedListener(final CrossfireSpellAddedListener listener)
     {
         mylisteners_addspell.add(listener);
     }
 
-    public static void removeCrossfireSpellAddedListeners(final CrossfireSpellAddedListener listener)
+    public static void removeCrossfireSpellAddedListener(final CrossfireSpellAddedListener listener)
     {
         mylisteners_addspell.remove(listener);
     }
 
-    public static void addCrossfireSpellUpdatedListeners(final CrossfireSpellUpdatedListener listener)
+    public static void addCrossfireSpellUpdatedListener(final CrossfireSpellUpdatedListener listener)
     {
         mylisteners_updspell.add(listener);
     }
 
-    public static void removeCrossfireSpellUpdatedListeners(final CrossfireSpellUpdatedListener listener)
+    public static void removeCrossfireSpellUpdatedListener(final CrossfireSpellUpdatedListener listener)
     {
         mylisteners_updspell.remove(listener);
     }
 
-    public static void addCrossfireSpellRemovedListeners(final CrossfireSpellRemovedListener listener)
+    public static void addCrossfireSpellRemovedListener(final CrossfireSpellRemovedListener listener)
     {
         mylisteners_delspell.add(listener);
     }
 
-    public static void removeCrossfireSpellRemovedListeners(final CrossfireSpellRemovedListener listener)
+    public static void removeCrossfireSpellRemovedListener(final CrossfireSpellRemovedListener listener)
     {
         mylisteners_delspell.remove(listener);
     }
@@ -591,7 +591,7 @@ public class ItemsList
      */
     public static void addCrossfirePlayerListener(final CrossfirePlayerListener listener)
     {
-        itemsManager.addCrossfirePlayerListeners(listener);
+        itemsManager.addCrossfirePlayerListener(listener);
     }
 
     /**
@@ -601,6 +601,6 @@ public class ItemsList
      */
     public static void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
     {
-        itemsManager.removeCrossfirePlayerListeners(listener);
+        itemsManager.removeCrossfirePlayerListener(listener);
     }
 }

@@ -509,7 +509,7 @@ public class ItemsManager
      *
      * @param listener the listener to add
      */
-    public void addCrossfirePlayerListeners(final CrossfirePlayerListener listener)
+    public void addCrossfirePlayerListener(final CrossfirePlayerListener listener)
     {
         playerListeners.add(CrossfirePlayerListener.class, listener);
     }
@@ -520,7 +520,7 @@ public class ItemsManager
      *
      * @param listener the listener to remove
      */
-    public void removeCrossfirePlayerListeners(final CrossfirePlayerListener listener)
+    public void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
     {
         playerListeners.remove(CrossfirePlayerListener.class, listener);
     }
