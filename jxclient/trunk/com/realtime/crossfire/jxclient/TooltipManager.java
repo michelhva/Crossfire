@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
+
 /**
  * Manages the tooltip display.
  *

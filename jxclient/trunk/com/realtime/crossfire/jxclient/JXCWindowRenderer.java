@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.Gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
