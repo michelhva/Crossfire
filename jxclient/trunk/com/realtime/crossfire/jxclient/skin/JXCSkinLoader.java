@@ -17,8 +17,20 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
+import com.realtime.crossfire.jxclient.CrossfireMapListener;
+import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
+import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
+import com.realtime.crossfire.jxclient.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.CrossfireSpellAddedListener;
+import com.realtime.crossfire.jxclient.CrossfireSpellRemovedListener;
+import com.realtime.crossfire.jxclient.CrossfireSpellUpdatedListener;
+import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
@@ -37,6 +49,10 @@ import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
+import com.realtime.crossfire.jxclient.GUICommandList;
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.SpellListener;
+import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
