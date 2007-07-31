@@ -34,12 +34,12 @@ public class CfMagicMap
 {
     private static final List<CrossfireMagicmapListener> mylisteners_magicmap = new ArrayList<CrossfireMagicmapListener>();
 
-    public static void addCrossfireMagicmapListeners(final CrossfireMagicmapListener listener)
+    public static void addCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
     {
         mylisteners_magicmap.add(listener);
     }
 
-    public static void removeCrossfireMagicmapListeners(final CrossfireMagicmapListener listener)
+    public static void removeCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
     {
         mylisteners_magicmap.remove(listener);
     }

@@ -75,7 +75,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireMapListeners(final CrossfireMapListener listener)
+    public static void addCrossfireMapListener(final CrossfireMapListener listener)
     {
         mylistenersMap.add(listener);
     }
@@ -85,7 +85,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireMapListeners(final CrossfireMapListener listener)
+    public static void removeCrossfireMapListener(final CrossfireMapListener listener)
     {
         mylistenersMap.remove(listener);
     }
@@ -95,7 +95,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireNewmapListeners(final CrossfireNewmapListener listener)
+    public static void addCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
         mylistenersNewmap.add(listener);
     }
@@ -105,7 +105,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireNewmapListeners(final CrossfireNewmapListener listener)
+    public static void removeCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
         mylistenersNewmap.remove(listener);
     }
@@ -115,7 +115,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireMapscrollListeners(final CrossfireMapscrollListener listener)
+    public static void addCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
         mylistenersMapscroll.add(listener);
     }
@@ -125,7 +125,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireMapscrollListeners(final CrossfireMapscrollListener listener)
+    public static void removeCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
         mylistenersMapscroll.remove(listener);
     }
