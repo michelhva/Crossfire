@@ -21,6 +21,9 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.map.CfMap;
+import com.realtime.crossfire.jxclient.map.CfMapAnimations;
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

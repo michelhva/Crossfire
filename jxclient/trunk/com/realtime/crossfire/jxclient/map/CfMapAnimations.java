@@ -17,8 +17,10 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.map;
 
+import com.realtime.crossfire.jxclient.Animation;
+import com.realtime.crossfire.jxclient.CfMapUpdater;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
