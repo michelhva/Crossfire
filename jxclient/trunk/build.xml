@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <project name="jxclient" default="all" basedir=".">
     <property name="src" value="."/>
+    <property name="src.test" value="src/test"/>
     <property name="build" value="build"/>
     <target name="init">
         <mkdir dir="${build}"/>
@@ -53,5 +54,21 @@
         <delete file="jxcskin_prelude.jar" failonerror="false"/>
     </target>
     <target name="all" depends="jar,skin.prelude">
+    </target>
+    <target name="check" depends="compile">
+        <mkdir dir="${build}/reports"/>
+        <mkdir dir="${build}/test"/>
+        <javac srcdir="${src.test}" destdir="${build}/test" classpath="${build}/jxclient" debug="on" source="1.5"/>
+        <junit fork="yes" haltonerror="yes" haltonfailure="yes">
+            <jvmarg value="-ea"/>
+            <classpath>
+                <pathelement location="${build}/jxclient"/>
+                <pathelement location="${build}/test"/>
+            </classpath>
+            <formatter type="brief"/>
+            <batchtest fork="yes" todir="${build}/reports">
+                <fileset dir="${src.test}" includes="**/*Test.java"/>
+            </batchtest>
+        </junit>
     </target>
 </project>
