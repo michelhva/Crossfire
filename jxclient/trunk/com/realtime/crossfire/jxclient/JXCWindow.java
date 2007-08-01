@@ -1178,56 +1178,39 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         switch (evt.getType())
         {
-        case 1: //Books
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
+        case CrossfireServerConnection.MSG_TYPE_BOOK:
             setDialogStatus(DLG_BOOK);
             break;
 
-        case 2: //Cards
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_CARD);
+        case CrossfireServerConnection.MSG_TYPE_CARD:
+        case CrossfireServerConnection.MSG_TYPE_PAPER:
+        case CrossfireServerConnection.MSG_TYPE_SIGN:
+        case CrossfireServerConnection.MSG_TYPE_MONUMENT:
+        case CrossfireServerConnection.MSG_TYPE_DIALOG:
             break;
 
-        case 3: //Papers
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_PAPER);
-            break;
-
-        case 4: //Signs
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_SIGN);
-            break;
-
-        case 5: //Monuments
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_MONUMENT);
-            break;
-
-        case 6: //Scripted Dialogs
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_SCRIPTED_DIALOG);
-            break;
-
-        case 7: // Message of the Day
-            //System.out.println("Message is:"+evt.getMessage());
-            //System.out.println("Subtype is:"+evt.getSubType());
-            //setDialogStatus(DLG_MOTD);
+        case CrossfireServerConnection.MSG_TYPE_MOTD:
             /*
              * We do not display a MOTD dialog, because it interferes with the
              * query dialog that gets displayed just after it.
              */
             break;
 
-        default: //Let's consider those as books for now, k ?
-            System.out.println("Message is:"+evt.getMessage());
-            System.out.println("Subtype is:"+evt.getSubType());
-            setDialogStatus(DLG_BOOK);
+        case CrossfireServerConnection.MSG_TYPE_ADMIN:
+        case CrossfireServerConnection.MSG_TYPE_SHOP:
+        case CrossfireServerConnection.MSG_TYPE_COMMAND:
+        case CrossfireServerConnection.MSG_TYPE_ATTRIBUTE:
+        case CrossfireServerConnection.MSG_TYPE_SKILL:
+        case CrossfireServerConnection.MSG_TYPE_APPLY:
+        case CrossfireServerConnection.MSG_TYPE_ATTACK:
+        case CrossfireServerConnection.MSG_TYPE_COMMUNICATION:
+        case CrossfireServerConnection.MSG_TYPE_SPELL:
+        case CrossfireServerConnection.MSG_TYPE_ITEM:
+        case CrossfireServerConnection.MSG_TYPE_MISC:
+        case CrossfireServerConnection.MSG_TYPE_VICTIM:
+            break;
+
+        default:
             break;
         }
     }

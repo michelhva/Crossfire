@@ -535,7 +535,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("log"))
                         {
-                            if (args.length != 8)
+                            if (args.length != 11)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -546,8 +546,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
-                            final Font font = fonts.lookup(args[7]);
-                            elements.insert(name, new GUILog(window, name, x, y, w, h, pictureEmpty, font));
+                            final Font fontPrint = fonts.lookup(args[7]);
+                            final Font fontFixed = fonts.lookup(args[8]);
+                            final Font fontFixedBold = fonts.lookup(args[9]);
+                            final Font fontArcane = fonts.lookup(args[10]);
+                            elements.insert(name, new GUILog(window, name, x, y, w, h, pictureEmpty, fontPrint, fontFixed, fontFixedBold, fontArcane));
                         }
                         else if (args[0].equals("magicmap"))
                         {
