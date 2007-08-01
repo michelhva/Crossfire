@@ -72,6 +72,46 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     private List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
 
+    /** drawextinfo message type: character did read a book. */
+    public static final int MSG_TYPE_BOOK = 1;
+    /** drawextinfo message type: character did read a card. */
+    public static final int MSG_TYPE_CARD = 2;
+    /** drawextinfo message type: character did read a paper. */
+    public static final int MSG_TYPE_PAPER = 3;
+    /** drawextinfo message type: character did read a sign. */
+    public static final int MSG_TYPE_SIGN = 4;
+    /** drawextinfo message type: character did read a monument. */
+    public static final int MSG_TYPE_MONUMENT = 5;
+    /** drawextinfo message type: a NPC/magic mouth/altar/etc. talks. */
+    public static final int MSG_TYPE_DIALOG = 6;
+    /** drawextinfo message type: motd text. */
+    public static final int MSG_TYPE_MOTD = 7;
+    /** drawextinfo message type: general server message. */
+    public static final int MSG_TYPE_ADMIN = 8;
+    /** drawextinfo message type: shop related message. */
+    public static final int MSG_TYPE_SHOP = 9;
+    /** drawextinfo message type: response to command processing. */
+    public static final int MSG_TYPE_COMMAND = 10;
+    /** drawextinfo message type: attribute (stats, resistances, etc.) change
+     * message. */
+    public static final int MSG_TYPE_ATTRIBUTE = 11;
+    /** drawextinfo message type: message related to using skills. */
+    public static final int MSG_TYPE_SKILL = 12;
+    /** drawextinfo message type: an object was applied. */
+    public static final int MSG_TYPE_APPLY = 13;
+    /** drawextinfo message type: attack related message. */
+    public static final int MSG_TYPE_ATTACK = 14;
+    /** drawextinfo message type: communication between players. */
+    public static final int MSG_TYPE_COMMUNICATION = 15;
+    /** drawextinfo message type: spell related information. */
+    public static final int MSG_TYPE_SPELL = 16;
+    /** drawextinfo message type: item related information. */
+    public static final int MSG_TYPE_ITEM = 17;
+    /** drawextinfo message type: message that does not fit in any other category. */
+    public static final int MSG_TYPE_MISC = 18;
+    /** drawextinfo message type: something bad is happening to the player. */
+    public static final int MSG_TYPE_VICTIM = 19;
+
     public static final int MSG_TYPE_BOOK_CLASP_1 = 1;
     public static final int MSG_TYPE_BOOK_CLASP_2 = 2;
     public static final int MSG_TYPE_BOOK_ELEGANT_1 = 3;
@@ -1460,7 +1500,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private void cmd_version(final int csval, final int scval, final String vinfo) throws IOException
     {
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
-        sendToggleextendedtext(1, 2, 3, 4, 5, 6, 7);
+        sendToggleextendedtext(MSG_TYPE_BOOK, MSG_TYPE_CARD, MSG_TYPE_PAPER, MSG_TYPE_SIGN, MSG_TYPE_MONUMENT, MSG_TYPE_DIALOG, MSG_TYPE_MOTD);
         sendSetup(
             "sound 0",
             "exp64 1",
