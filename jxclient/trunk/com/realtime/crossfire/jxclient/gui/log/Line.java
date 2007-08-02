@@ -103,15 +103,11 @@ public class Line implements Iterable<Segment>
     }
 
     /**
-     * Replace the last segment. The line must not be empty.
-     *
-     * @param segment The new segment.
+     * Remove the last segment. The line must not be empty.
      */
-    public void replaceLastSegment(final Segment segment)
+    public void removeLastSegment()
     {
-        if (segment == null) throw new IllegalArgumentException();
-
-        segments.set(segments.size()-1, segment);
+        segments.remove(segments.size()-1);
     }
 
     /**
