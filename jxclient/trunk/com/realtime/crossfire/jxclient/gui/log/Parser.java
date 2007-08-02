@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 /**
  * Parser to parse drawextinfo messages received from a Crossfire server and
@@ -56,6 +57,16 @@ public class Parser
         colors.put("red", Color.RED);
         colors.put("white", Color.WHITE);
     }
+
+    /**
+     * The pattern to split a string into words.
+     */
+    private static final Pattern wordSeparatorPattern = Pattern.compile(" ");
+
+    /**
+     * Pattern to match line breaks.
+     */
+    private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
 
     /**
      * Whether bold face is enabled.
@@ -102,9 +113,35 @@ public class Parser
         }
 
         resetAttributes(defaultColor);
-        for (final String line : text.split("\n", -1))
+        for (final String line : endOfLinePattern.split(text, -1))
         {
             parseLine(line, defaultColor, buffer);
+        }
+    }
+
+    /**
+     * Parse a plain text message without media tags.
+     *
+     * @param text The text message to parse.
+     *
+     * @param color The color to use.
+     *
+     * @param buffer The buffer to update.
+     */
+    public void parseWithoutMediaTags(final String text, final Color color, final Buffer buffer)
+    {
+        if (text == null) throw new IllegalArgumentException();
+        if (buffer == null) throw new IllegalArgumentException();
+
+        if (text.isEmpty())
+        {
+            return;
+        }
+
+        resetAttributes(color);
+        for (final String line : endOfLinePattern.split(text, -1))
+        {
+            parseLineWithoutMediaTags(line, buffer);
         }
     }
 
@@ -145,6 +182,20 @@ public class Parser
             processText(text.substring(begin, imax), line);
         }
 
+        buffer.addLine(line);
+    }
+
+    /**
+     * Parse one text line of a plain text message without media tags.
+     *
+     * @param text The text to process.
+     *
+     * @param buffer The buffer instance to add to.
+     */
+    private void parseLineWithoutMediaTags(final String text, final Buffer buffer)
+    {
+        final Line line = new Line();
+        processText(text, line);
         buffer.addLine(line);
     }
 
@@ -243,6 +294,7 @@ public class Parser
             return;
         }
 
+        final String newText;
         if (!line.isEmpty())
         {
             final Segment prevSegment = line.getLastSegment();
@@ -252,12 +304,28 @@ public class Parser
             && prevSegment.getFont() == font
             && prevSegment.getColor() == color)
             {
-                line.replaceLastSegment(new Segment(prevSegment.getText()+text, bold, italic, underline, font, color));
-                return;
+                newText = prevSegment.getText()+text;
+                line.removeLastSegment();
+            }
+            else
+            {
+                newText = text;
             }
         }
+        else
+        {
+            newText = text;
+        }
 
-        line.addSegment(new Segment(text, bold, italic, underline, font, color));
+        final String[] words = wordSeparatorPattern.split(newText, -1);
+        for (int i = 0; i < words.length-1; i++)
+        {
+            line.addSegment(new Segment(words[i]+" ", bold, italic, underline, font, color));
+        }
+        if (!words[words.length-1].isEmpty())
+        {
+            line.addSegment(new Segment(words[words.length-1], bold, italic, underline, font, color));
+        }
     }
 
     /**

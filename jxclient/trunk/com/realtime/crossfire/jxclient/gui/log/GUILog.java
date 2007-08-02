@@ -43,7 +43,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.regex.Pattern;
 
 /**
  *
@@ -126,11 +125,6 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
      * {@link #displayBottom} is unset.
      */
     private int topOffset = 0;
-
-    /**
-     * Pattern to match line breaks.
-     */
-    private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
 
     /**
      * Create a new instance.
@@ -254,13 +248,13 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > getWidth())
             {
-                updateAttributes(line, beginIndex, totalHeight, i, minY, maxY);
+                updateAttributes(line, beginIndex, i, totalHeight, minY, maxY);
 
+                totalHeight += maxY-minY;
                 x = 0;
                 minY = 0;
                 maxY = 0;
                 beginIndex = i;
-                totalHeight += maxY-minY;
             }
 
             segment.setX(x);
@@ -366,7 +360,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     /** {@inheritDoc} */
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        addLines(evt.getPrompt(), Color.RED);
+        parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
         render();
     }
 
@@ -380,7 +374,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     /** {@inheritDoc} */
     public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
     {
-        addLines(evt.getText(), findColor(evt.getTextType()));
+        parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
         render();
     }
 
@@ -421,25 +415,6 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
             return Color.WHITE;
         default:
             return null;
-        }
-    }
-
-    /**
-     * Add plain text lines to {@link #buffer}. The passed text may consist of
-     * multiple lines separated by {@link #endOfLinePattern}.
-     *
-     * @param lines The line(s) to add.
-     *
-     * @param color The line color; may be <code>null</code> to use default
-     * color.
-     */
-    private void addLines(final String lines, final Color color)
-    {
-        for (final String text : endOfLinePattern.split(lines, -1))
-        {
-            final Line line = new Line();
-            line.addSegment(new Segment(text, false, false, false, Segment.Font.PRINT, color));
-            buffer.addLine(line);
         }
     }
 
