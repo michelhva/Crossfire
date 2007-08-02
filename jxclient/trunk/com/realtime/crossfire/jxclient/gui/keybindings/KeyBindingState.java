@@ -17,7 +17,10 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.gui.keybindings;
+
+import com.realtime.crossfire.jxclient.GUICommandList;
+import com.realtime.crossfire.jxclient.JXCWindow;
 
 /**
  * Manage the state for the key binding dialog.
