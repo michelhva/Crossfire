@@ -15,12 +15,20 @@ The JXClient uses the fullscreen support provided by the JVM.
 Note that under Linux with a Sun JXM 1.5, fullscreen mode is
 not supported.
 Although the client will switch to windowed mode if real
-fullscreen is not available, it is important to note that 
+fullscreen is not available, it is important to note that
 accelerated support will probably end up being disabled. If
 you are using Linux, I strongly encourage you to try running
-the "Mustang" 1.6 JVM instead (Mustang is available on 
+the "Mustang" 1.6 JVM instead (Mustang is available on
 http://java.sun.com -->Early access downloads).
 To check if the graphical operations are accelerated, you can
 add "-Dsun.java2d.trace=log,timestamp,count,out:java2d.log" to
 your JVM command line, run the client, then check the content
 of java2d.log.
+
+Compiling the sources:
+----------------------
+Install Ant on your system; be sure to install the optional tasks as well. Make
+sure both the JAVA_HOME and ANT_HOME environment variables are set correctly.
+
+Change into the jxclient directory. On the console type "ant" - that's all. Run
+the client with "java -jar jxclient.jar".
