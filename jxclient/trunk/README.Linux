@@ -1,0 +1,158 @@
+-------------------------------------------------------------------------------
+Example Linux build environment setup and troubleshooting tips
+-------------------------------------------------------------------------------
+
+This summary of a setup on an x86_64 Mandriva 2007.0 system may help identify
+some of the build environment setup issues that may crop up on a Linux system.
+The Mandriva distribution uses urpmi to manage RPM package installation.  Use
+the command appropriate to your particular distribution.  Packages required
+may vary, but the requirements for Mandriva 2007.0 are shown here to give a
+basic idea of what is needed.
+
+1) Download Sun JDK from http://java.sun.com/javase/downloads/index.jsp
+
+2) Unpack and install the JDK.  For example:
+
+   $ sudo bash jdk-6u2-linux-amd64-rpm.bin
+
+3) Find out where the JDK was installed.
+
+   $ rpm -ql jdk
+   .
+   .
+   .
+   $ ls -l /usr/java
+   total 0
+   lrwxrwxrwx 1 root root  16 Aug  4 13:54 default -> /usr/java/latest/
+   drwxr-xr-x 9 root root 448 Aug  4 13:54 jdk1.6.0_02/
+   lrwxrwxrwx 1 root root  21 Aug  4 13:54 latest -> /usr/java/jdk1.6.0_02/
+
+3) Put the newly installed Sun Java first in your run path by fixing the login
+   profile and/or executing these export commands.
+
+     $ export PATH=/usr/java/latest/bin;$PATH
+     $ export JAVA_HOME=/usr/java/latest
+
+   If the primary login shell is BASH, ~/.bash_profile is where to put these
+   commands so that the changes persist across sessions.
+
+4) Install ant.
+
+   $ sudo urpmi ant
+   One of the following packages is needed:
+    1- java-1.4.2-gcj-compat-devel-1.4.2.0-40.103.1mdv2007.0.x86_64 : JPacka...
+    2- kaffe-devel-1.1.7-1mdk.x86_64 : Development package with static libs ...
+   headers for kaffe (to install)
+   What is your choice? (1-2) 1
+   One of the following packages is needed:
+    1- xml-commons-resolver10-1.3.03-5.1mdv2007.0.x86_64 : XmlResolver 1.0 u...
+   utility from xml-commons (to install)
+    2- xml-commons-resolver11-1.3.03-5.1mdv2007.0.x86_64 : XmlResolver 1.1 u...
+    3- xml-commons-resolver12-1.3.03-5.1mdv2007.0.x86_64 : XmlResolver 1.2 f...
+   What is your choice? (1-3) 3
+   To satisfy dependencies, the following packages are going to be installed
+   ant-1.6.5-21mdv2007.0.x86_64
+   antlr-2.7.6-4.1mdv2007.0.x86_64
+   bouncycastle-1.33-3mdv2007.0.x86_64
+   bouncycastle-jdk1.4-1.33-3mdv2007.0.x86_64
+   classpath-0.92-3mdv2007.0.x86_64
+   classpathx-jaf-1.1.1-1mdv2007.0.x86_64
+   classpathx-mail-1.1.1-3mdv2007.0.x86_64
+   classpathx-mail-monolithic-1.1.1-3mdv2007.0.x86_64
+   eclipse-ecj-3.2.0-12.3mdv2007.0.x86_64
+   gcc-java-4.1.1-3mdk.x86_64
+   gcj-tools-4.1.1-3mdk.x86_64
+   gjdoc-0.7.7-9mdv2007.0.x86_64
+   jamvm-1.4.3-3.1mdv2007.0.x86_64
+   java-1.4.2-gcj-compat-1.4.2.0-40.103.1mdv2007.0.x86_64
+   java-1.4.2-gcj-compat-devel-1.4.2.0-40.103.1mdv2007.0.x86_64
+   jikes-1.23-0.20050308.1mdk.x86_64
+   jpackage-utils-1.7.0-1.4mdv2007.0.noarch
+   lib64gcj7-devel-4.1.1-3mdk.x86_64
+   xalan-j2-2.7.0-2.2mdv2007.0.x86_64
+   xerces-j2-2.8.0-1mdv2007.0.x86_64
+   xml-commons-1.3.03-5.1mdv2007.0.x86_64
+   xml-commons-resolver12-1.3.03-5.1mdv2007.0.x86_64
+   Proceed with the installation of the 22 packages? (84 MB) (Y/n) Y
+
+5) Install some additional packages.
+
+   $ sudo urpmi xml-commons-apis
+   One of the following packages is needed:
+    1- xml-commons-jaxp-1.1-apis-1.3.03-5.1mdv2007.0.x86_64 : JAXP 1.1, DOM2...
+    2- xml-commons-jaxp-1.2-apis-1.3.03-5.1mdv2007.0.x86_64 : JAXP 1.2, DOM ...
+    3- xml-commons-jaxp-1.3-apis-1.3.03-5.1mdv2007.0.x86_64 : JAXP 1.3, DOM ...
+   What is your choice? (1-3) 3
+
+   $ sudo urpmi ant-junit
+   To satisfy dependencies, the following packages are going to be installed:
+   ant-junit-1.6.5-21mdv2007.0.x86_64
+   junit-3.8.2-1.1mdv2007.0.x86_64
+   Proceed with the installation of the 2 packages? (2 MB) (Y/n) y
+
+6) Troubleshooting may be required.  Use --execdebug to identify some issues.
+   Note the difference in output between the first and second commands.
+
+   $ ant
+   Exception in thread "main" java.lang.NoClassDefFoundError: org.apache.tools.
+   ant.launch.Launcher
+      at gnu.java.lang.MainThread.run(libgcj.so.7)
+   Caused by: java.lang.ClassNotFoundException: org.apache.tools.ant.launch.Lau
+   ncher not found in gnu.gcj.runtime.SystemClassLoader{urls=[/usr/bin/build-cl
+   asspath,/usr/lib/jvm/java-gcj/lib/tools.jar], parent=gnu.gcj.runtime.Extensi
+   onClassLoader{urls=[/usr/share/java-ext/bcprov-jdk14-1.33.jar], parent=null}
+   }
+      at java.net.URLClassLoader.findClass(libgcj.so.7)
+      at java.lang.ClassLoader.loadClass(libgcj.so.7)
+      at java.lang.ClassLoader.loadClass(libgcj.so.7)
+      at java.lang.Class.forName(libgcj.so.7)
+      at gnu.java.lang.MainThread.run(libgcj.so.7)
+
+   $ ant --execdebug
+   exec "/usr/java/latest/jre/bin/java" -classpath "/usr/bin/build-classpath: e
+   rror: JAVAVER_JNIDIR /usr/lib/java-1.6.0 does not exist or is not a director
+   y:/usr/bin/build-classpath: error: JAVAVER_JNIDIR /usr/lib/java-1.6.0 does n
+   ot exist or is not a directory:/usr/java/latest/lib/tools.jar" -Dant.home="/
+   usr/share/ant" -Dant.library.dir="/usr/share/ant/lib" org.apache.tools.ant.l
+   aunch.Launcher -cp ""
+   Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/tools/
+   ant/launch/Launcher
+
+   For some reason, something is looking for the directory /usr/lib/java-1.6.0.
+   Oddly, all that is needed in this case is to create the directory.
+
+   $ sudo mkdir /usr/lib/java-1.6.0
+
+7) Build the application.
+
+   $ ant
+   Build build.xml
+
+   init:
+
+   compile:
+     [delete] Deleting directory /home/data/svn/crossfire/jxclient/trunk/build/
+   jxclient
+     [mkdir] Created dir: /home/data/svn/crossfire/jxclient/trunk/build/jxclien
+   t
+     [javac] Compiling 115 source files to /home/data/svn/crossfire/jxclient/tr
+   unk/build/jxclient
+
+   skin.prelude:
+     [copy] Copying 188 files to /home/data/svn/crossfire/jxclient/trunk/build/
+   skin.prelude/com/realtime/crossfire/jxclient/skins/default
+     [jar] Building jar: /home/data/svn/crossfire/jxclient/trunk/jxcskin_prelud
+   e.jar
+
+   jar:
+     [jar] Building jar: /home/data/svn/crossfire/jxclient/trunk/jxclient.jar
+
+   all:
+
+   BUILD SUCCESSFUL
+   Total time: 7 seconds
+
+8) Run the application.
+
+   $ bash run.sh
+
