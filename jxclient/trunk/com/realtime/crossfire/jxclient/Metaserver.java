@@ -40,48 +40,90 @@ public class Metaserver
 
     private static int metaserver_port = 13326;
 
-    private static List<MetaserverEntry> metalist = null;
+    private static final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
     public static synchronized List<MetaserverEntry> query()
     {
-        if (metalist != null)
+        if (!metalist.isEmpty())
         {
             return metalist;
         }
 
-        metalist = new ArrayList<MetaserverEntry>();
+        metalist.clear();
+        parseEntry("127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
         try
         {
-            Socket mysocket = new Socket(metaserver_name, metaserver_port);
-            DataInputStream in = new DataInputStream(mysocket.getInputStream());
-            BufferedReader bin = new BufferedReader(new InputStreamReader(in));
-
-            String entry = "127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0";
-            while (entry != null)
+            final Socket socket = new Socket(metaserver_name, metaserver_port);
+            try
             {
-                entry = bin.readLine();
-                if (entry != null)
+                final DataInputStream in = new DataInputStream(socket.getInputStream());
+                try
                 {
-                    String[] entries = entry.split("\\|");
-                    MetaserverEntry me = new MetaserverEntry(entries[0], entries[2], entries[5], entries[4], Integer.parseInt(entries[3]), Integer.parseInt(entries[1]));
-                    metalist.add(me);
+                    final BufferedReader bin = new BufferedReader(new InputStreamReader(in));
+                    try
+                    {
+                        for (;;)
+                        {
+                            final String entry = bin.readLine();
+                            if (entry == null)
+                            {
+                                break;
+                            }
+                            parseEntry(entry);
+                        }
+                    }
+                    finally
+                    {
+                        bin.close();
+                    }
+                }
+                finally
+                {
+                    in.close();
                 }
             }
-            bin.close();
-            in.close();
-            mysocket.close();
+            finally
+            {
+                socket.close();
+            }
         }
-        catch (UnknownHostException e)
+        catch (final UnknownHostException e)
         {
-            MetaserverEntry me = new MetaserverEntry("127.0.0.1", "localhost", "Localhost", "unknown", 0, 0);
-            metalist.add(me);
+            // ignore
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(0);
         }
         Collections.sort(metalist);
         return metalist;
+    }
+
+    /**
+     * Parse a metaserver response line and add an entry to {@link #metalist}.
+     *
+     * @param entry The metaserver response lines to parse.
+     */
+    private static void parseEntry(final String entry)
+    {
+        final String[] entries = entry.split("\\|");
+        if (entries.length != 9)
+        {
+            System.err.println("Dropping invalid metaserver response line: "+entry);
+            return;
+        }
+
+        final MetaserverEntry me;
+        try
+        {
+            me = new MetaserverEntry(entries[0], entries[2], entries[5], entries[4], Integer.parseInt(entries[3]), Integer.parseInt(entries[1]));
+        }
+        catch (final NumberFormatException ex)
+        {
+            System.err.println("Dropping invalid metaserver response line: "+entry);
+            return;
+        }
+        metalist.add(me);
     }
 }
