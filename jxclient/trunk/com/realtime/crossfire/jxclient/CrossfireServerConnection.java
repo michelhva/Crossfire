@@ -1212,7 +1212,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             if (Stats.CS_STAT_RESIST_START <= stat && stat < Stats.CS_STAT_RESIST_START+Stats.RESIST_TYPES)
                             {
                                 final int resist = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                stats.setStat(stat, resist);
+                                stats.setStat(stat, (resist&0x8000) != 0 ? resist-0x10000 : resist);
                             }
                             else if (Stats.CS_STAT_SKILLINFO <= stat && stat < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
                             {
