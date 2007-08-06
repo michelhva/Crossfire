@@ -1139,7 +1139,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         switch (stat)
                         {
                         case Stats.CS_STAT_EXP:
-                            final int experience1 = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int experience1 = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF); // XXX: shoud be 4 bytes?
                             stats.setExperience(experience1);
                             break;
 
