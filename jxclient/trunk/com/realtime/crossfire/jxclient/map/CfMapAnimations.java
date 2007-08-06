@@ -132,8 +132,8 @@ public class CfMapAnimations
      */
     public void updateSpeed(final int x, final int y, final int layer, final int speed)
     {
-        assert 0 <= x && x < width;
-        assert 0 <= y && y < height;
+        assert 0 <= x;
+        assert 0 <= y;
 
         final Location location = new Location(x, y, layer);
         final AnimationState animationState = animations.get(location);
@@ -168,7 +168,7 @@ public class CfMapAnimations
             {
                 final int newX = location.x-dx;
                 final int newY = location.y-dy;
-                if (0 <= location.x && location.x < width && 0 <= location.y && location.y < height) // in-map bounds animations are dropped if scrolled off the visible area
+                if (0 <= newX && newX < width && 0 <= newY && newY < height) // in-map bounds animations are dropped if scrolled off the visible area
                 {
                     animations.put(new Location(newX, newY, location.layer), e.getValue());
                 }
