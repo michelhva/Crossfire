@@ -116,8 +116,7 @@ public class CfMapAnimations
         assert 0 <= x;
         assert 0 <= y;
 
-        final Location location = new Location(x, y, layer);
-        animations.remove(location);
+        animations.remove(new Location(x, y, layer));
     }
 
     /**
