@@ -150,10 +150,7 @@ public class CfMapUpdater
      */
     public static void processMapClear(final int x, final int y)
     {
-        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
-        {
-            visibleAnimations.remove(x, y, layer);
-        }
+        visibleAnimations.remove(x, y);
         map.clearSquare(x, y);
     }
 

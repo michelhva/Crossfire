@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.Animation;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
+import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -100,6 +101,21 @@ public class CfMapAnimations
         final AnimationState animationState = new AnimationState(animation, type);
         animations.put(location, animationState);
         animationState.draw(location, -1);
+    }
+
+    /**
+     * Remove all visible animations for a tile.
+     *
+     * @param x The x-coordinate to un-animate.
+     *
+     * @param y The y-coordinate to un-animate.
+     */
+    public void remove(final int x, final int y)
+    {
+        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+        {
+            animations.remove(new Location(x, y, layer));
+        }
     }
 
     /**
