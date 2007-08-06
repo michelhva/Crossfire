@@ -568,17 +568,18 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("map"))
                         {
-                            if (args.length != 6)
+                            if (args.length != 7)
                             {
                                 throw new IOException("syntax error");
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
-                            elements.insert(name, new GUIMap(window, name, x, y, w, h));
+                            final int tileSize = parseInt(args[2]);
+                            final int x = parseInt(args[3]);
+                            final int y = parseInt(args[4]);
+                            final int w = parseInt(args[5]);
+                            final int h = parseInt(args[6]);
+                            elements.insert(name, new GUIMap(window, name, tileSize, x, y, w, h));
                         }
                         else if (args[0].equals("meta_element"))
                         {

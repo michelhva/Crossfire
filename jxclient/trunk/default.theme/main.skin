@@ -13,7 +13,7 @@ font font_tooltip        squealer 16
 tooltip font_tooltip
 
 # Map Group
-map playfield -32 -32 1088 832
+map playfield 64 -32 -32 1088 832
 
 # LGauges Group (80, 574)
 picture sword_back     16+80  0+574 64 256 background_sword
