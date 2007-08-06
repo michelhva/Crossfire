@@ -74,18 +74,34 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
      */
     private Color[] darknessColors = new Color[256];
 
-    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh) throws IOException
+    /**
+     * Create a new instance.
+     *
+     * @param tileSize The size of one tile in pixels.
+     */
+    public GUIMap(final JXCWindow jxcWindow, final String nn, final int tileSize, final int nx, final int ny, final int nw, final int nh) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
-        use_big_images = true;
+        if (tileSize == 32)
+        {
+            use_big_images = false;
+        }
+        else if (tileSize == 64)
+        {
+            use_big_images = true;
+        }
+        else
+        {
+            throw new IOException("invalid tile size "+tileSize);
+        }
 
-        mysquaresize = Faces.SQUARE_SIZE;
+        mysquaresize = tileSize;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
-        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
-        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
+        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IOException("nw="+nw+"!="+CrossfireServerConnection.MAP_WIDTH*mysquaresize);
+        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IOException("nh="+nh+"!="+CrossfireServerConnection.MAP_HEIGHT*mysquaresize);
 
         createBuffer();
     }
