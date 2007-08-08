@@ -1,0 +1,58 @@
+If your looking on how to set up and use these scripts, see the INSTALL
+file.
+
+This directory contains the code for the metaserver.  Since the metaserver
+will almost certainly run on a system different from either the server or
+client, it makes sense for it to be its own directory in order to make updates
+easy.
+
+The metaserver is a php + mysql set of scripts.  Reasons for using php +
+mysql:
+
+1) These are quite common utilities, and many ISPs or other hosting services
+will be able to run these (compared to say a standalone perl script)
+
+2) By being run from a web server, this effectively gives us multithreading -
+the metaserver update script can now do operations that may take a while (dns
+lookups) which can not be done in a single threaded standalone script.
+
+3) mysql takes care of file locking for us (basically don't need it).  It also
+lets us do quick searches, dumps, etc, without needing to rely on other
+external programs (grep, sort, etc).  While mysql is used in the initial
+version, the code is designed to make it easy to support other SQL compatible
+databases.
+
+4) I'm quite familiar with php + mysql, so writing and testing it is much
+easier with those tools than some other combination.
+
+Brief description of the files:
+
+common.php: some common routines/values common to all the scripts.
+meta_client.php: Script that provides the data to the client in easy to
+  parse form.
+meta_html.php: Script that produces HTML table for viewing in a browser.
+meta_update.php: Script that the server uses (via HTTP_POST) to update
+  its information.
+mysql_db.php: File that provides wrapper functions around the mysql
+  calls.
+
+COPYRIGHT:
+
+    Copyright (C) 2007 Mark Wedel & Crossfire Development Team
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+    The author can be reached via e-mail to crossfire-devel@real-time.com
+

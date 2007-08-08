@@ -1,0 +1,84 @@
+Technical information about the metasever and its operation:
+
+-----------------------------------------------------------------------------
+TABLES:
+
+blacklist:  This table is used to blacklist certain hosts.  For example, if a
+server is reporting itself to the metaserver in violation of metaserver rules,
+adding it to this table will result in the metaserver script ignoring it.  You
+can use either hostname or IP address.  Note that in both cases, it will treat
+the entries in the blacklist file as regular expressions, so if you put in
+something like 129\.129\.129\..*, you will blacklist the entire 129.129.129
+subnet.  There is no front end to insert/remove entries from this table - you
+will either need to use mysql commands, or if you have it set up, something
+like phpmyadmin.  Simple sql command to insert entry
+
+insert into blacklist (hostname) values("10.150.6.22$");
+insert into blacklist (hostname) values("myhost.foobar.com");
+
+Note that for IP address or partial host names, you will likely want to put $
+at the end of the entry - this is because without it, you will get partial
+matches - in the above example, if the entry was "10.150.6.22", then in
+addition to 10.150.6.22 being blacklisted, 10.150.6.220 -> 10.150.6.229 would
+be blacklisted.  This is much more an issue with hostnames.
+
+servers:  This contains the list of servers.  This is the bulk of the
+metaserver work - the update script adds entries, and the get scripts pulls
+the data out of this table and sends it to the client/prints it out.
+
+------------------------------------------------------------------------------
+Server POST updates:
+
+The server uses HTTP POST to send updates to the metaservers.  For
+this to work, there has to be agreement on on the variable names.  In case
+someone wants to write another script and not have to reverse engineer the
+existing ones, here is that list:
+
+hostname: hostname of the server
+port: Port to connect to
+html_comment: html comment
+text_comment: text (non html) comment
+archbase: text string describe base of archetypes
+mapbase: text string describe base of maps
+codebase: text string describe base of server code
+flags: short string of character flags
+num_players: number of players on server
+in_bytes: Number of bytes server has received.
+out_bytes: number of bytes the server has sent.
+uptime: Uptime in seconds.
+version: Version of server
+sc_version, cs_version: Protocol version that the server is using.
+
+Note that for simplicity, it is these same names that are used when the client
+retrieves the data as well as the different fields in the database.
+
+------------------------------------------------------------------------------
+Client Updates:
+
+The client just fetches a simple URL for the updates, and then parses the
+data returned.  The data is returned as a set of 'variable=value' pairs,
+each on its own newline.  The server makes sure there are no newlines
+in any of the strings (the update script replaces newlines with spaces).
+The variables are the same as in the POST updates above.
+
+To make parsing a bit easier, each block of data is contained in a 
+START_SERVER_DATA/END_SERVER_DATA block.  For example:
+
+START_SERVER_DATA
+hostname=myhost.com
+port=13327
+...
+END_SERVER_DATA
+START_SERVER_DATA
+hostname=metalforge
+port=13327
+...
+END_SERVER_DATA
+
+The metaserver may not send all variable pairs defined - for example,
+if the archbase/codebase/mapbase values are not set by the server,
+the metaserver will not send those variable pairs.
+
+The order of the variables in the START/END server blocks has no defined
+order, so it could be that num_players shows up first (after the START
+line).
