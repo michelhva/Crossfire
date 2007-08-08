@@ -1,0 +1,55 @@
+Steps to set up a metaserver instance:
+
+0) Prerequisites:  You need a webserver that has php script support, and
+   the php script support must have mysql database support.
+1) You will need to connect to your mysql database as the administrator
+   in order to create some tables.
+2) Create a 'metaserver' database:
+    mysql> create database metaserver;
+3) Create user (default metaserver) with password (default metaserver) with
+   all rights to the metaserver database:
+   mysql> GRANT ALL ON metaserver.* TO 'metaserver'@'localhost' identified by
+	 'metaserver';
+
+   NOTE: the database, user, and password can all easily be changed in
+   mysql_db.php file - this can be useful if your password or database is
+   different (ISP assigned for example)
+
+4) Create the tables:
+   mysql> CREATE TABLE `blacklist` (
+	  `entry` int(11) NOT NULL auto_increment,
+	  `hostname` varchar(80),
+	  PRIMARY KEY  (`entry`))
+
+   mysql> CREATE TABLE `servers` (
+	  `entry` int(11) NOT NULL auto_increment,
+	  `hostname` varchar(80),
+	  `port` int(11),
+	  `html_comment` varchar(1024),
+	  `text_comment` varchar(256),
+	  `archbase` varchar(20),
+	  `mapbase` varchar(20),
+	  `codebase` varchar(20),
+	  `flags` varchar(20),
+	  `num_players` int(11),
+	  `in_bytes` int(11),
+	  `out_bytes` int(11),
+	  `uptime` int(11),
+	  `version` varchar(20),
+	  `sc_version` varchar(20),
+	  `cs_version` varchar(20),
+	  `last_update` datetime,
+	  PRIMARY KEY  (`entry`))
+
+   I personally like to add the primary key of entry as it makes it
+   very easy to delete entries, update a specific row, etc.
+
+5) Update the common.php to use correct database (require_once fields).
+
+6) Update common.php for logging options.  Note that if you comment out the
+   $LOGFILE, you will get no logging.
+
+7) If you have issues with bad/misbehaving hosts, you may wish to blacklist
+   them.  See the TECHNICAL file for details.
+
+You should be all done.
