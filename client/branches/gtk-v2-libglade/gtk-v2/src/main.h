@@ -27,6 +27,7 @@
 #define NUM_COLORS 13
 extern GdkColor root_color[NUM_COLORS];
 GtkWidget *window_root, *spinbutton_count;
+GladeXML *xml;
 
 #define DEFAULT_IMAGE_SIZE      32
 extern int map_image_size, map_image_half_size, image_size;
