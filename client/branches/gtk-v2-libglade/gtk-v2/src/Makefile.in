@@ -216,6 +216,8 @@ infodir = @infodir@
 install_sh = @install_sh@
 libdir = @libdir@
 libexecdir = @libexecdir@
+libglade_CFLAGS = @libglade_CFLAGS@
+libglade_LIBS = @libglade_LIBS@
 localstatedir = @localstatedir@
 mandir = @mandir@
 mkdir_p = @mkdir_p@
@@ -235,6 +237,7 @@ INCLUDES = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-I$(top_srcdir)/common -I$(top_srcdir)/help \
 	@GTK2_CFLAGS@ \
+	$(libglade_CFLAGS) \
 	@SDL_CFLAGS@
 
 PROTO_SOURCES = \
@@ -264,7 +267,7 @@ crossfire_client_gtk2_SOURCES = \
 	image.h main.h gtk2proto.h \
 	callbacks.h
 
-crossfire_client_gtk2_LDADD = ../../common/libcfclient.a @GTK2_LIBS@ @DMALLOC_LIB@ $(INTLLIBS) $(X_LIBS) @SDL_LIBS@ @OPENGL_LIBS@ @WIN32_LIBS@
+crossfire_client_gtk2_LDADD = ../../common/libcfclient.a @GTK2_LIBS@ @libglade_LIBS@ @DMALLOC_LIB@ $(INTLLIBS) $(X_LIBS) @SDL_LIBS@ @OPENGL_LIBS@ @WIN32_LIBS@
 all: all-am
 
 .SUFFIXES:
