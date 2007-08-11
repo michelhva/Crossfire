@@ -309,7 +309,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MKDIR TAR DEPEND CP RM PERL AR PKG_CONFIG SVNVERSION CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS WIN32_LIBS ac_pt_PKG_CONFIG GTK2_CFLAGS GTK2_LIBS GTK_CONFIG GTK_CFLAGS GTK_LIBS CFGTK libglade_CFLAGS libglade_LIBS MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT PACKAGE_LIBS INTLLIBS LUA_LIBS HAVE_LIBLUA_TRUE HAVE_LIBLUA_FALSE OPENGL_LIBS LN_S RANLIB ac_ct_RANLIB EGREP GUI_OBJS GUI_SRCS SND_LIBS TARGET CF_SUBDIRS ALSA9_TARGET ALSA9_LIBS SDL_CONFIG SDL_CFLAGS SDL_LIBS _libcurl_config LIBCURL_CPPFLAGS LIBCURL DMALLOC_LIB XPM SOUNDDIR LIBXPM_LIB CF_DATADIR LIBOBJS LTLIBOBJS'
+ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MKDIR TAR DEPEND CP RM PERL AR PKG_CONFIG SVNVERSION CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS WIN32_LIBS ac_pt_PKG_CONFIG GTK2_CFLAGS GTK2_LIBS GTK_CONFIG GTK_CFLAGS GTK_LIBS CFGTK LIBGLADE_CFLAGS LIBGLADE_LIBS MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT PACKAGE_LIBS INTLLIBS LUA_LIBS HAVE_LIBLUA_TRUE HAVE_LIBLUA_FALSE OPENGL_LIBS LN_S RANLIB ac_ct_RANLIB EGREP GUI_OBJS GUI_SRCS SND_LIBS TARGET CF_SUBDIRS ALSA9_TARGET ALSA9_LIBS SDL_CONFIG SDL_CFLAGS SDL_LIBS _libcurl_config LIBCURL_CPPFLAGS LIBCURL DMALLOC_LIB XPM SOUNDDIR LIBXPM_LIB CF_DATADIR LIBOBJS LTLIBOBJS'
 ac_subst_files=''
 
 # Initialize some variables set by options.
@@ -782,14 +782,14 @@ ac_env_GTK2_LIBS_set=${GTK2_LIBS+set}
 ac_env_GTK2_LIBS_value=$GTK2_LIBS
 ac_cv_env_GTK2_LIBS_set=${GTK2_LIBS+set}
 ac_cv_env_GTK2_LIBS_value=$GTK2_LIBS
-ac_env_libglade_CFLAGS_set=${libglade_CFLAGS+set}
-ac_env_libglade_CFLAGS_value=$libglade_CFLAGS
-ac_cv_env_libglade_CFLAGS_set=${libglade_CFLAGS+set}
-ac_cv_env_libglade_CFLAGS_value=$libglade_CFLAGS
-ac_env_libglade_LIBS_set=${libglade_LIBS+set}
-ac_env_libglade_LIBS_value=$libglade_LIBS
-ac_cv_env_libglade_LIBS_set=${libglade_LIBS+set}
-ac_cv_env_libglade_LIBS_value=$libglade_LIBS
+ac_env_LIBGLADE_CFLAGS_set=${LIBGLADE_CFLAGS+set}
+ac_env_LIBGLADE_CFLAGS_value=$LIBGLADE_CFLAGS
+ac_cv_env_LIBGLADE_CFLAGS_set=${LIBGLADE_CFLAGS+set}
+ac_cv_env_LIBGLADE_CFLAGS_value=$LIBGLADE_CFLAGS
+ac_env_LIBGLADE_LIBS_set=${LIBGLADE_LIBS+set}
+ac_env_LIBGLADE_LIBS_value=$LIBGLADE_LIBS
+ac_cv_env_LIBGLADE_LIBS_set=${LIBGLADE_LIBS+set}
+ac_cv_env_LIBGLADE_LIBS_value=$LIBGLADE_LIBS
 
 #
 # Report the --help message.
@@ -919,10 +919,10 @@ Some influential environment variables:
   PKG_CONFIG  path to pkg-config utility
   GTK2_CFLAGS C compiler flags for GTK2, overriding pkg-config
   GTK2_LIBS   linker flags for GTK2, overriding pkg-config
-  libglade_CFLAGS
-              C compiler flags for libglade, overriding pkg-config
-  libglade_LIBS
-              linker flags for libglade, overriding pkg-config
+  LIBGLADE_CFLAGS
+              C compiler flags for LIBGLADE, overriding pkg-config
+  LIBGLADE_LIBS
+              linker flags for LIBGLADE, overriding pkg-config
 
 Use these variables to override the choices made by `configure' or to help
 it to find libraries and programs with nonstandard names/locations.
@@ -6829,12 +6829,12 @@ fi
     if eval "test x$HAVE_GTK2 = xyes" ; then
 
 pkg_failed=no
-echo "$as_me:$LINENO: checking for libglade" >&5
-echo $ECHO_N "checking for libglade... $ECHO_C" >&6
+echo "$as_me:$LINENO: checking for LIBGLADE" >&5
+echo $ECHO_N "checking for LIBGLADE... $ECHO_C" >&6
 
 if test -n "$PKG_CONFIG"; then
-    if test -n "$libglade_CFLAGS"; then
-        pkg_cv_libglade_CFLAGS="$libglade_CFLAGS"
+    if test -n "$LIBGLADE_CFLAGS"; then
+        pkg_cv_LIBGLADE_CFLAGS="$LIBGLADE_CFLAGS"
     else
         if test -n "$PKG_CONFIG" && \
     { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libglade-2.0 >= 2.0.0\"") >&5
@@ -6842,7 +6842,7 @@ if test -n "$PKG_CONFIG"; then
   ac_status=$?
   echo "$as_me:$LINENO: \$? = $ac_status" >&5
   (exit $ac_status); }; then
-  pkg_cv_libglade_CFLAGS=`$PKG_CONFIG --cflags "libglade-2.0 >= 2.0.0" 2>/dev/null`
+  pkg_cv_LIBGLADE_CFLAGS=`$PKG_CONFIG --cflags "libglade-2.0 >= 2.0.0" 2>/dev/null`
 else
   pkg_failed=yes
 fi
@@ -6851,8 +6851,8 @@ else
 	pkg_failed=untried
 fi
 if test -n "$PKG_CONFIG"; then
-    if test -n "$libglade_LIBS"; then
-        pkg_cv_libglade_LIBS="$libglade_LIBS"
+    if test -n "$LIBGLADE_LIBS"; then
+        pkg_cv_LIBGLADE_LIBS="$LIBGLADE_LIBS"
     else
         if test -n "$PKG_CONFIG" && \
     { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libglade-2.0 >= 2.0.0\"") >&5
@@ -6860,7 +6860,7 @@ if test -n "$PKG_CONFIG"; then
   ac_status=$?
   echo "$as_me:$LINENO: \$? = $ac_status" >&5
   (exit $ac_status); }; then
-  pkg_cv_libglade_LIBS=`$PKG_CONFIG --libs "libglade-2.0 >= 2.0.0" 2>/dev/null`
+  pkg_cv_LIBGLADE_LIBS=`$PKG_CONFIG --libs "libglade-2.0 >= 2.0.0" 2>/dev/null`
 else
   pkg_failed=yes
 fi
@@ -6879,12 +6879,12 @@ else
         _pkg_short_errors_supported=no
 fi
         if test $_pkg_short_errors_supported = yes; then
-	        libglade_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
+	        LIBGLADE_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
         else
-	        libglade_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
+	        LIBGLADE_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
         fi
 	# Put the nasty error message in config.log where it belongs
-	echo "$libglade_PKG_ERRORS" >&5
+	echo "$LIBGLADE_PKG_ERRORS" >&5
 
 	echo "$as_me:$LINENO: result: no" >&5
 echo "${ECHO_T}no" >&6
@@ -6892,14 +6892,16 @@ echo "${ECHO_T}no" >&6
 elif test $pkg_failed = untried; then
 	HAVE_LIBGLADE=no
 else
-	libglade_CFLAGS=$pkg_cv_libglade_CFLAGS
-	libglade_LIBS=$pkg_cv_libglade_LIBS
+	LIBGLADE_CFLAGS=$pkg_cv_LIBGLADE_CFLAGS
+	LIBGLADE_LIBS=$pkg_cv_LIBGLADE_LIBS
         echo "$as_me:$LINENO: result: yes" >&5
 echo "${ECHO_T}yes" >&6
 	HAVE_LIBGLADE=yes
 fi
         if eval "test x$HAVE_LIBGLADE = xyes" ; then
             CF_SUBDIRS="$CF_SUBDIRS gtk-v2"
+
+
             { echo "$as_me:$LINENO: GTK+-2.0 & Libglade-2.0 found; will build gtk-v2 client" >&5
 echo "$as_me: GTK+-2.0 & Libglade-2.0 found; will build gtk-v2 client" >&6;}
         else
@@ -13056,8 +13058,8 @@ s,@GTK_CONFIG@,$GTK_CONFIG,;t t
 s,@GTK_CFLAGS@,$GTK_CFLAGS,;t t
 s,@GTK_LIBS@,$GTK_LIBS,;t t
 s,@CFGTK@,$CFGTK,;t t
-s,@libglade_CFLAGS@,$libglade_CFLAGS,;t t
-s,@libglade_LIBS@,$libglade_LIBS,;t t
+s,@LIBGLADE_CFLAGS@,$LIBGLADE_CFLAGS,;t t
+s,@LIBGLADE_LIBS@,$LIBGLADE_LIBS,;t t
 s,@MAINTAINER_MODE_TRUE@,$MAINTAINER_MODE_TRUE,;t t
 s,@MAINTAINER_MODE_FALSE@,$MAINTAINER_MODE_FALSE,;t t
 s,@MAINT@,$MAINT,;t t

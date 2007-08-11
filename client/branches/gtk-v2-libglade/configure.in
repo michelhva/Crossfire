@@ -189,9 +189,11 @@ if eval "test x$gtkv2 = xyes" ; then
     fi
     if eval "test x$HAVE_GTK2 = xyes" ; then
         dnl Check for Libglade-2.0
-        PKG_CHECK_MODULES(libglade, libglade-2.0 >= 2.0.0, [HAVE_LIBGLADE=yes], [HAVE_LIBGLADE=no]) 
+        PKG_CHECK_MODULES(LIBGLADE, libglade-2.0 >= 2.0.0, [HAVE_LIBGLADE=yes], [HAVE_LIBGLADE=no]) 
         if eval "test x$HAVE_LIBGLADE = xyes" ; then
             CF_SUBDIRS="$CF_SUBDIRS gtk-v2"
+            AC_SUBST(LIBGLADE_CFLAGS)
+            AC_SUBST(LIBGLADE_LIBS)
             AC_MSG_NOTICE(GTK+-2.0 & Libglade-2.0 found; will build gtk-v2 client)
         else
             AC_MSG_WARN(Libglade-2.0 libraries not found; will not build gtk-v2 client)
