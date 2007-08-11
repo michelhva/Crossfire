@@ -30,6 +30,7 @@ char *rcsid_gtk2_config_c =
 #endif
 
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 #include <ctype.h>
 
 #include "client.h"
@@ -335,30 +336,50 @@ void save_defaults()
 void config_init(GtkWidget *window_root)
 {
     static int has_init=0;
+    GladeXML* xml_local;
     int count, i;
 
     has_init=1;
 
-    config_window = create_config_window();
+    config_window = glade_xml_get_widget(xml, "config_window");
+    xml_local = glade_get_widget_tree(GTK_WIDGET(config_window));
 
-    config_spinbutton_cwindow = lookup_widget(config_window, "config_spinbutton_cwindow");
-    config_button_echo = lookup_widget(config_window, "config_button_echo");
-    config_button_fasttcp = lookup_widget(config_window, "config_button_fasttcp");
-    config_button_grad_color  = lookup_widget(config_window, "config_button_grad_color");
-    config_button_foodbeep = lookup_widget(config_window, "config_button_foodbeep");
-    config_button_sound = lookup_widget(config_window, "config_button_sound");
-    config_button_cache = lookup_widget(config_window, "config_button_cache");
-    config_button_download = lookup_widget(config_window, "config_button_download");
-    config_button_fog = lookup_widget(config_window, "config_button_fog");
-    config_button_smoothing = lookup_widget(config_window, "config_button_smoothing");
-    config_spinbutton_iconscale = lookup_widget(config_window, "config_spinbutton_iconscale");
-    config_spinbutton_mapscale = lookup_widget(config_window, "config_spinbutton_mapscale");
-    config_spinbutton_mapwidth = lookup_widget(config_window, "config_spinbutton_mapwidth");
-    config_spinbutton_mapheight = lookup_widget(config_window, "config_spinbutton_mapheight");
-    config_combobox_displaymode = lookup_widget(config_window, "config_combobox_displaymode");
-    config_combobox_faceset = lookup_widget(config_window, "config_combobox_faceset");
-    config_combobox_lighting = lookup_widget(config_window, "config_combobox_lighting");
-    config_combobox_theme = lookup_widget(config_window, "config_combobox_theme");
+    config_spinbutton_cwindow =
+        glade_xml_get_widget(xml_local, "config_spinbutton_cwindow");
+    config_button_echo =
+        glade_xml_get_widget(xml_local, "config_button_echo");
+    config_button_fasttcp =
+        glade_xml_get_widget(xml_local, "config_button_fasttcp");
+    config_button_grad_color =
+        glade_xml_get_widget(xml_local, "config_button_grad_color");
+    config_button_foodbeep =
+        glade_xml_get_widget(xml_local, "config_button_foodbeep");
+    config_button_sound =
+        glade_xml_get_widget(xml_local, "config_button_sound");
+    config_button_cache =
+        glade_xml_get_widget(xml_local, "config_button_cache");
+    config_button_download =
+        glade_xml_get_widget(xml_local, "config_button_download");
+    config_button_fog =
+        glade_xml_get_widget(xml_local, "config_button_fog");
+    config_button_smoothing =
+        glade_xml_get_widget(xml_local, "config_button_smoothing");
+    config_spinbutton_iconscale =
+        glade_xml_get_widget(xml_local, "config_spinbutton_iconscale");
+    config_spinbutton_mapscale =
+        glade_xml_get_widget(xml_local, "config_spinbutton_mapscale");
+    config_spinbutton_mapwidth =
+        glade_xml_get_widget(xml_local, "config_spinbutton_mapwidth");
+    config_spinbutton_mapheight =
+        glade_xml_get_widget(xml_local, "config_spinbutton_mapheight");
+    config_combobox_displaymode =
+        glade_xml_get_widget(xml_local, "config_combobox_displaymode");
+    config_combobox_faceset =
+        glade_xml_get_widget(xml_local, "config_combobox_faceset");
+    config_combobox_lighting =
+        glade_xml_get_widget(xml_local, "config_combobox_lighting");
+    config_combobox_theme =
+        glade_xml_get_widget(xml_local, "config_combobox_theme");
 
     /*
      * Display mode combo box setup.
@@ -759,6 +780,7 @@ void save_winpos()
     FILE    *save;
     int     x,y,w,h,wx,wy;
     extern GtkWidget *window_root;
+    GladeXML* xml_tree;
 
     sprintf(savename,"%s/.crossfire/gwinpos2", getenv("HOME"));
     if (!(save=fopen(savename,"w"))) {
@@ -769,20 +791,27 @@ void save_winpos()
     get_window_coord(window_root, &x,&y, &wx,&wy,&w,&h);
     fprintf(save,"window_root: +%d+%dx%dx%d\n", wx, wy, w, h);
 
+    xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+
     fprintf(save,"vpaned_map_stats: %d\n",
-	    gtk_paned_get_position(GTK_PANED(lookup_widget(window_root,"vpaned_map_stats"))));
+        gtk_paned_get_position(GTK_PANED(
+            glade_xml_get_widget(xml_tree, "vpaned_map_stats"))));
 
     fprintf(save,"vpaned_info_inventory: %d\n",
-	    gtk_paned_get_position(GTK_PANED(lookup_widget(window_root,"vpaned_info_inventory"))));
+        gtk_paned_get_position(GTK_PANED(
+            glade_xml_get_widget(xml_tree, "vpaned_info_inventory"))));
 
     fprintf(save,"vpaned_inv_look: %d\n",
-	    gtk_paned_get_position(GTK_PANED(lookup_widget(window_root,"vpaned_inv_look"))));
+        gtk_paned_get_position(GTK_PANED(
+            glade_xml_get_widget(xml_tree, "vpaned_inv_look"))));
 
     fprintf(save,"hpaned_map_other: %d\n",
-	    gtk_paned_get_position(GTK_PANED(lookup_widget(window_root,"hpaned_map_other"))));
+        gtk_paned_get_position(GTK_PANED(
+            glade_xml_get_widget(xml_tree, "hpaned_map_other"))));
 
     fprintf(save,"hpaned_statbar_stats: %d\n",
-	    gtk_paned_get_position(GTK_PANED(lookup_widget(window_root,"hpaned_statbar_stats"))));
+        gtk_paned_get_position(GTK_PANED(
+            glade_xml_get_widget(xml_tree, "hpaned_statbar_stats"))));
 
     fclose(save);
     sprintf(buf,"Window positions saved to %s",savename);
@@ -802,12 +831,16 @@ on_save_window_position_activate       (GtkMenuItem     *menuitem,
 void load_window_positions(GtkWidget *window_root)
 {
     char loadname[MAX_BUF],buf[MAX_BUF], *cp;
+    GladeXML *xml_tree;
     FILE    *load;
 
     sprintf(loadname,"%s/.crossfire/gwinpos2", getenv("HOME"));
     if (!(load=fopen(loadname,"r"))) {
         return;
     }
+
+    xml_tree = glade_get_widget_tree(GTK_WIDGET (window_root));
+
     while(fgets(buf, MAX_BUF-1, load)!=NULL) {
 	if ((cp=strchr(buf,':'))!=NULL) {
 	    *cp=0;
@@ -829,7 +862,8 @@ void load_window_positions(GtkWidget *window_root)
 		/* The save names match the widget names, so this works fine to load
 		 * up the values.
 		 */
-		gtk_paned_set_position(GTK_PANED(lookup_widget(window_root,buf)), atoi(cp));
+                gtk_paned_set_position(GTK_PANED(
+                    glade_xml_get_widget(xml_tree, buf)), atoi(cp));
 	    } else {
 		LOG(LOG_ERROR,"gtk-v2:load_window_positions", "Found unknown line %s in %s\n",
 		    buf, loadname);
