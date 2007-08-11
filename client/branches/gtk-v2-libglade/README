@@ -1,0 +1,124 @@
+See INSTALL file for notes on installing.
+
+------------------------------------------------------------------------------
+Converting keybindings from old save files for use with the client:
+
+
+1) You will need to get a copy of your character file.
+
+2) Type  "mkdir ~/.crossfire".  This will automatically be done the first
+   time you run the client.
+
+3) Type awk 'BEGIN {ORS=" "} /^key /
+	{for (i=2; i<=NF; i++) print $i;printf "\n"}'
+	 infile > ~/.crossfire/keys
+	(Note that this should all be entered on one line, but is broken up
+	here to be more readable.)
+	'infile' is the name of the character file.
+
+Note that the client use global keybindings, and not per character.  This
+means that the same keybindings will be for all characters you play with the
+client.
+
+The gtk client and x11 client both use the same keybindings file.
+
+------------------------------------------------------------------------------
+Sound support:
+
+If you wnat sound support (only useful if you have a system that has good
+sound hardware), you will also need to get some sounds for the program.
+You will need the raw sound files - the .au files no longer work with the
+client.
+
+ The sounds file determines what file is played for what sound.  The default
+location for the sound files is <prefix>/share/cfclient/sounds. <prefix>
+is the -prefix= option given when running configure, default of /usr/local.
+
+You can set this to another directory at the configure stage by using
+--with-sound-dir=/some/directory.  This file is only used for compiled in
+defaults.  If you have a ~/.crossfire/sounds file (some format), that file
+will be used instead of the built in defaults.
+
+Sound are now played by separate process invoked from crossfire client.
+The process - called sound server - adjusts sounds' volume according to
+relative position of player and sound source on map and mixes the sounds
+together, so many sounds can be played simultaneously.
+
+CONFIG FILE
+
+The config file ~/.crossfire/sndconfig contains some configurable settings. If
+there is no such file, one with default settings will be created.
+
+The file contains following fields:
+
+stereo:  	1 means stereo sound, 0 - mono
+
+bits: 		bitrate of generated sound - 8 or 16
+		16 means better quality, especially when more sounds
+		are to be played simultaneously, but takes more memory
+
+signed: 	if we should sent signed data to the soundcard. 1 means yes.
+
+frequency:	speed of playing data. This should be 11025, or sound pitch
+		will change
+
+buffers: 	how many buffers to allocate
+buflen: 	how big the buffers should be. buffers*buflen shouldn't be
+                smaller than the longest sound to be played.
+
+simultaneously: home many sound can be played at the same time. When this
+		setting is bigger, each sound volume will decrease.
+
+HOW DOES IT WORK?
+
+The sound server gets information about sounds to be played on standard input.
+The information is a line:
+<sound number> <sound type> <relative x> <relative y>
+All those numbers are hex.
+The file ~/.crossfire/sounds contains description of sound numbers and types.
+For example:
+3 0 5 0
+Means that normal sound SOUND_FUMBLE spell should be played as it's source was
+5 units to the right of player.
+
+Sounds are mixed in special buffers, which are in fact one buffer, which should
+be big enough for the biggest sound to be played.
+
+The buffers, if contain anything, are sent one by one to the sound device.
+Each buffer is cleaned after playing.
+
+Sounds data is multiplied by some ratio (<1) evaluated from it's position and
+volume and added to the buffers, starting from the next after the one being
+played.
+
+So bigger buffer means bigger delay, before the sound is actually played, but
+the smaller buffer is, the bigger is possibility, we won't succeed filling the
+next buffer, before last is played.
+
+------------------------------------------------------------------------------
+IMAGES
+
+The client will get any images that it is missing from the server.  This
+can include the entire image set.
+
+To decrease bandwidth used when actually playing the sounds, it is suggested
+you download the image archive and install it.  The default location
+for the archive is <prefix>/share/cfclient/, where <prefix> is deteremined
+by the -prefix= option given when running configure.
+
+The mechanism the client uses to find a matching image file when the
+server tells it an image name is thus:
+
+1) Look in ~/.crossfire/gfx.  If an image is found here, irrespective of the
+set and checksum of the image on the server, it will be used.  The only
+way images are placed into the gfx directory is by the user actually
+copying them to that directory.  The gfx directory allows a user to override
+images with versions he prefers.
+
+2) Look in ~/.crossfire/crossfire-images then <prefix>/share/cfclient/crossfire-images.
+If the checksum matches the image from the
+respective directory is used.  Note that if the checksums match, it really doesn't
+matter what image location we use, as it is the same image.
+
+4) Get the image from the server.  If -cache is set, a copy of it is put into
+~/.crossfire/crossfire-images.
