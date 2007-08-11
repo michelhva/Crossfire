@@ -309,7 +309,7 @@ ac_includes_default="\
 # include <unistd.h>
 #endif"
 
-ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MKDIR TAR DEPEND CP RM PERL AR PKG_CONFIG SVNVERSION CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS WIN32_LIBS ac_pt_PKG_CONFIG GTK2_CFLAGS GTK2_LIBS GTK_CONFIG GTK_CFLAGS GTK_LIBS CFGTK MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT PACKAGE_LIBS INTLLIBS LUA_LIBS HAVE_LIBLUA_TRUE HAVE_LIBLUA_FALSE OPENGL_LIBS LN_S RANLIB ac_ct_RANLIB EGREP GUI_OBJS GUI_SRCS SND_LIBS TARGET CF_SUBDIRS ALSA9_TARGET ALSA9_LIBS SDL_CONFIG SDL_CFLAGS SDL_LIBS _libcurl_config LIBCURL_CPPFLAGS LIBCURL DMALLOC_LIB XPM SOUNDDIR LIBXPM_LIB CF_DATADIR LIBOBJS LTLIBOBJS'
+ac_subst_vars='SHELL PATH_SEPARATOR PACKAGE_NAME PACKAGE_TARNAME PACKAGE_VERSION PACKAGE_STRING PACKAGE_BUGREPORT exec_prefix prefix program_transform_name bindir sbindir libexecdir datadir sysconfdir sharedstatedir localstatedir libdir includedir oldincludedir infodir mandir build_alias host_alias target_alias DEFS ECHO_C ECHO_N ECHO_T LIBS build build_cpu build_vendor build_os host host_cpu host_vendor host_os target target_cpu target_vendor target_os INSTALL_PROGRAM INSTALL_SCRIPT INSTALL_DATA CYGPATH_W PACKAGE VERSION ACLOCAL AUTOCONF AUTOMAKE AUTOHEADER MAKEINFO install_sh STRIP ac_ct_STRIP INSTALL_STRIP_PROGRAM mkdir_p AWK SET_MAKE am__leading_dot AMTAR am__tar am__untar MKDIR TAR DEPEND CP RM PERL AR PKG_CONFIG SVNVERSION CC CFLAGS LDFLAGS CPPFLAGS ac_ct_CC EXEEXT OBJEXT DEPDIR am__include am__quote AMDEP_TRUE AMDEP_FALSE AMDEPBACKSLASH CCDEPMODE am__fastdepCC_TRUE am__fastdepCC_FALSE CPP X_CFLAGS X_PRE_LIBS X_LIBS X_EXTRA_LIBS WIN32_LIBS ac_pt_PKG_CONFIG GTK2_CFLAGS GTK2_LIBS GTK_CONFIG GTK_CFLAGS GTK_LIBS CFGTK libglade_CFLAGS libglade_LIBS MAINTAINER_MODE_TRUE MAINTAINER_MODE_FALSE MAINT PACKAGE_LIBS INTLLIBS LUA_LIBS HAVE_LIBLUA_TRUE HAVE_LIBLUA_FALSE OPENGL_LIBS LN_S RANLIB ac_ct_RANLIB EGREP GUI_OBJS GUI_SRCS SND_LIBS TARGET CF_SUBDIRS ALSA9_TARGET ALSA9_LIBS SDL_CONFIG SDL_CFLAGS SDL_LIBS _libcurl_config LIBCURL_CPPFLAGS LIBCURL DMALLOC_LIB XPM SOUNDDIR LIBXPM_LIB CF_DATADIR LIBOBJS LTLIBOBJS'
 ac_subst_files=''
 
 # Initialize some variables set by options.
@@ -782,6 +782,14 @@ ac_env_GTK2_LIBS_set=${GTK2_LIBS+set}
 ac_env_GTK2_LIBS_value=$GTK2_LIBS
 ac_cv_env_GTK2_LIBS_set=${GTK2_LIBS+set}
 ac_cv_env_GTK2_LIBS_value=$GTK2_LIBS
+ac_env_libglade_CFLAGS_set=${libglade_CFLAGS+set}
+ac_env_libglade_CFLAGS_value=$libglade_CFLAGS
+ac_cv_env_libglade_CFLAGS_set=${libglade_CFLAGS+set}
+ac_cv_env_libglade_CFLAGS_value=$libglade_CFLAGS
+ac_env_libglade_LIBS_set=${libglade_LIBS+set}
+ac_env_libglade_LIBS_value=$libglade_LIBS
+ac_cv_env_libglade_LIBS_set=${libglade_LIBS+set}
+ac_cv_env_libglade_LIBS_value=$libglade_LIBS
 
 #
 # Report the --help message.
@@ -911,6 +919,10 @@ Some influential environment variables:
   PKG_CONFIG  path to pkg-config utility
   GTK2_CFLAGS C compiler flags for GTK2, overriding pkg-config
   GTK2_LIBS   linker flags for GTK2, overriding pkg-config
+  libglade_CFLAGS
+              C compiler flags for libglade, overriding pkg-config
+  libglade_LIBS
+              linker flags for libglade, overriding pkg-config
 
 Use these variables to override the choices made by `configure' or to help
 it to find libraries and programs with nonstandard names/locations.
@@ -3678,7 +3690,7 @@ ac_x_header_dirs='
 /usr/openwin/share/include'
 
 if test "$ac_x_includes" = no; then
-  # Guess where to find include files, by looking for Xlib.h.
+  # Guess where to find include files, by looking for Intrinsic.h.
   # First, try using that file with no special directory specified.
   cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
@@ -3686,7 +3698,7 @@ _ACEOF
 cat confdefs.h >>conftest.$ac_ext
 cat >>conftest.$ac_ext <<_ACEOF
 /* end confdefs.h.  */
-#include <X11/Xlib.h>
+#include <X11/Intrinsic.h>
 _ACEOF
 if { (eval echo "$as_me:$LINENO: \"$ac_cpp conftest.$ac_ext\"") >&5
   (eval $ac_cpp conftest.$ac_ext) 2>conftest.er1
@@ -3713,7 +3725,7 @@ else
 sed 's/^/| /' conftest.$ac_ext >&5
 
   for ac_dir in $ac_x_header_dirs; do
-  if test -r "$ac_dir/X11/Xlib.h"; then
+  if test -r "$ac_dir/X11/Intrinsic.h"; then
     ac_x_includes=$ac_dir
     break
   fi
@@ -3727,18 +3739,18 @@ if test "$ac_x_libraries" = no; then
   # See if we find them without any special options.
   # Don't add to $LIBS permanently.
   ac_save_LIBS=$LIBS
-  LIBS="-lX11 $LIBS"
+  LIBS="-lXt $LIBS"
   cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
 cat confdefs.h >>conftest.$ac_ext
 cat >>conftest.$ac_ext <<_ACEOF
 /* end confdefs.h.  */
-#include <X11/Xlib.h>
+#include <X11/Intrinsic.h>
 int
 main ()
 {
-XrmInitialize ()
+XtMalloc (0)
   ;
   return 0;
 }
@@ -6216,7 +6228,7 @@ echo "$as_me: X11 found - will build X client" >&6;}
 fi
 
 if eval "test x$gtkv1 = xyes" ; then
-if eval "test x$cfgtk2 = xyes" ; then
+    if eval "test x$cfgtk2 = xyes" ; then
 
 
 if test "x$ac_cv_env_PKG_CONFIG_set" != "xset"; then
@@ -6394,16 +6406,18 @@ echo "${ECHO_T}yes" >&6
 	HAVE_GTK2=yes
 fi
         if eval "test x$HAVE_GTK2 = xyes" ; then
-	GTK_CFLAGS="`$PKG_CONFIG --cflags gtk+-2.0` -DCFGTK2 -DGTK_ENABLE_BROKEN -DGTK_WINDOW_DIALOG=GTK_WINDOW_TOPLEVEL"
-	GTK_LIBS=`$PKG_CONFIG --libs gtk+-2.0`
-	CF_SUBDIRS="$CF_SUBDIRS gtk"
-	CFGTK="no"
+            GTK_CFLAGS="`$PKG_CONFIG --cflags gtk+-2.0` -DCFGTK2 -DGTK_ENABLE_BROKEN -DGTK_WINDOW_DIALOG=GTK_WINDOW_TOPLEVEL"
+            GTK_LIBS=`$PKG_CONFIG --libs gtk+-2.0`
+            CF_SUBDIRS="$CF_SUBDIRS gtk"
+            CFGTK="no"
             { echo "$as_me:$LINENO: GTK+ 2 found - building original gtk-v1 client with GTK+ 2.0.0" >&5
 echo "$as_me: GTK+ 2 found - building original gtk-v1 client with GTK+ 2.0.0" >&6;}
-else
-            { echo "$as_me:$LINENO: WARNING: GTK2 not found and --enable-cfgtk2 is set - cannot original gtk-v1 client" >&5
-echo "$as_me: WARNING: GTK2 not found and --enable-cfgtk2 is set - cannot original gtk-v1 client" >&2;}
-fi
+        else
+            { echo "$as_me:$LINENO: WARNING: GTK+ 2 not found and --enable-cfgtk2 is set - cannot
+build original gtk-v1 client" >&5
+echo "$as_me: WARNING: GTK+ 2 not found and --enable-cfgtk2 is set - cannot
+build original gtk-v1 client" >&2;}
+        fi
     else
 
 # Check whether --with-gtk-prefix or --without-gtk-prefix was given.
@@ -6719,15 +6733,15 @@ rm -f conftest.err conftest.$ac_objext \
 
   rm -f conf.gtktest
 
-if eval "test x$CFGTK = xyes"; then
-            { echo "$as_me:$LINENO: GTK 1 found - building gtk client" >&5
+        if eval "test x$CFGTK = xyes"; then
+             { echo "$as_me:$LINENO: GTK 1 found - building gtk client" >&5
 echo "$as_me: GTK 1 found - building gtk client" >&6;}
-	GTK_LIBS=$GTK_LIBS
-	GTK_CFLAGS="$GTK_CFLAGS"
+             GTK_LIBS=$GTK_LIBS
+             GTK_CFLAGS="$GTK_CFLAGS"
 
 
-	CF_SUBDIRS="$CF_SUBDIRS gtk"
-	else
+             CF_SUBDIRS="$CF_SUBDIRS gtk"
+                       else
             { echo "$as_me:$LINENO: WARNING: GTK 1 not found - not building building gtk-v1 client" >&5
 echo "$as_me: WARNING: GTK 1 not found - not building building gtk-v1 client" >&2;}
         fi
@@ -6739,6 +6753,7 @@ fi
 
 
 if eval "test x$gtkv2 = xyes" ; then
+    if eval "test x$HAVE_GTK2 != xyes" ; then
 
 pkg_failed=no
 echo "$as_me:$LINENO: checking for GTK2" >&5
@@ -6800,23 +6815,102 @@ fi
 
 	echo "$as_me:$LINENO: result: no" >&5
 echo "${ECHO_T}no" >&6
-                gtkv2="no"
+                HAVE_GTK2=no
 elif test $pkg_failed = untried; then
-	gtkv2="no"
+	HAVE_GTK2=no
 else
 	GTK2_CFLAGS=$pkg_cv_GTK2_CFLAGS
 	GTK2_LIBS=$pkg_cv_GTK2_LIBS
         echo "$as_me:$LINENO: result: yes" >&5
 echo "${ECHO_T}yes" >&6
-	CF_SUBDIRS="$CF_SUBDIRS gtk-v2"
+	HAVE_GTK2=yes
 fi
-        if eval "test x$gtkv2 = xyes" ; then
-      { echo "$as_me:$LINENO: GTK+ 2 found - will build gtk-v2 client" >&5
-echo "$as_me: GTK+ 2 found - will build gtk-v2 client" >&6;}
+    fi
+    if eval "test x$HAVE_GTK2 = xyes" ; then
+
+pkg_failed=no
+echo "$as_me:$LINENO: checking for libglade" >&5
+echo $ECHO_N "checking for libglade... $ECHO_C" >&6
+
+if test -n "$PKG_CONFIG"; then
+    if test -n "$libglade_CFLAGS"; then
+        pkg_cv_libglade_CFLAGS="$libglade_CFLAGS"
     else
-      { echo "$as_me:$LINENO: WARNING: GTK+ 2 libraries not found - will not build gtk-v2 client" >&5
-echo "$as_me: WARNING: GTK+ 2 libraries not found - will not build gtk-v2 client" >&2;}
+        if test -n "$PKG_CONFIG" && \
+    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libglade-2.0 >= 2.0.0\"") >&5
+  ($PKG_CONFIG --exists --print-errors "libglade-2.0 >= 2.0.0") 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; then
+  pkg_cv_libglade_CFLAGS=`$PKG_CONFIG --cflags "libglade-2.0 >= 2.0.0" 2>/dev/null`
+else
+  pkg_failed=yes
 fi
+    fi
+else
+	pkg_failed=untried
+fi
+if test -n "$PKG_CONFIG"; then
+    if test -n "$libglade_LIBS"; then
+        pkg_cv_libglade_LIBS="$libglade_LIBS"
+    else
+        if test -n "$PKG_CONFIG" && \
+    { (echo "$as_me:$LINENO: \$PKG_CONFIG --exists --print-errors \"libglade-2.0 >= 2.0.0\"") >&5
+  ($PKG_CONFIG --exists --print-errors "libglade-2.0 >= 2.0.0") 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; then
+  pkg_cv_libglade_LIBS=`$PKG_CONFIG --libs "libglade-2.0 >= 2.0.0" 2>/dev/null`
+else
+  pkg_failed=yes
+fi
+    fi
+else
+	pkg_failed=untried
+fi
+
+
+
+if test $pkg_failed = yes; then
+
+if $PKG_CONFIG --atleast-pkgconfig-version 0.20; then
+        _pkg_short_errors_supported=yes
+else
+        _pkg_short_errors_supported=no
+fi
+        if test $_pkg_short_errors_supported = yes; then
+	        libglade_PKG_ERRORS=`$PKG_CONFIG --short-errors --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
+        else
+	        libglade_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libglade-2.0 >= 2.0.0"`
+        fi
+	# Put the nasty error message in config.log where it belongs
+	echo "$libglade_PKG_ERRORS" >&5
+
+	echo "$as_me:$LINENO: result: no" >&5
+echo "${ECHO_T}no" >&6
+                HAVE_LIBGLADE=no
+elif test $pkg_failed = untried; then
+	HAVE_LIBGLADE=no
+else
+	libglade_CFLAGS=$pkg_cv_libglade_CFLAGS
+	libglade_LIBS=$pkg_cv_libglade_LIBS
+        echo "$as_me:$LINENO: result: yes" >&5
+echo "${ECHO_T}yes" >&6
+	HAVE_LIBGLADE=yes
+fi
+        if eval "test x$HAVE_LIBGLADE = xyes" ; then
+            CF_SUBDIRS="$CF_SUBDIRS gtk-v2"
+            { echo "$as_me:$LINENO: GTK+-2.0 & Libglade-2.0 found; will build gtk-v2 client" >&5
+echo "$as_me: GTK+-2.0 & Libglade-2.0 found; will build gtk-v2 client" >&6;}
+        else
+            { echo "$as_me:$LINENO: WARNING: Libglade-2.0 libraries not found; will not build gtk-v2 client" >&5
+echo "$as_me: WARNING: Libglade-2.0 libraries not found; will not build gtk-v2 client" >&2;}
+            gtkv2="no"
+        fi
+    else
+        { echo "$as_me:$LINENO: WARNING: GTK+ 2 libraries not found; will not build gtk-v2 client" >&5
+echo "$as_me: WARNING: GTK+ 2 libraries not found; will not build gtk-v2 client" >&2;}
+    fi
 else
     { echo "$as_me:$LINENO: gtkv2 client disabled" >&5
 echo "$as_me: gtkv2 client disabled" >&6;}
@@ -12074,6 +12168,110 @@ fi
 done
 
 
+if eval "text x$sound = xyes"; then
+
+for ac_func in atexit
+do
+as_ac_var=`echo "ac_cv_func_$ac_func" | $as_tr_sh`
+echo "$as_me:$LINENO: checking for $ac_func" >&5
+echo $ECHO_N "checking for $ac_func... $ECHO_C" >&6
+if eval "test \"\${$as_ac_var+set}\" = set"; then
+  echo $ECHO_N "(cached) $ECHO_C" >&6
+else
+  cat >conftest.$ac_ext <<_ACEOF
+/* confdefs.h.  */
+_ACEOF
+cat confdefs.h >>conftest.$ac_ext
+cat >>conftest.$ac_ext <<_ACEOF
+/* end confdefs.h.  */
+/* Define $ac_func to an innocuous variant, in case <limits.h> declares $ac_func.
+   For example, HP-UX 11i <limits.h> declares gettimeofday.  */
+#define $ac_func innocuous_$ac_func
+
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char $ac_func (); below.
+    Prefer <limits.h> to <assert.h> if __STDC__ is defined, since
+    <limits.h> exists even on freestanding compilers.  */
+
+#ifdef __STDC__
+# include <limits.h>
+#else
+# include <assert.h>
+#endif
+
+#undef $ac_func
+
+/* Override any gcc2 internal prototype to avoid an error.  */
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+/* We use char because int might match the return type of a gcc2
+   builtin and then its argument prototype would still apply.  */
+char $ac_func ();
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_$ac_func) || defined (__stub___$ac_func)
+choke me
+#else
+char (*f) () = $ac_func;
+#endif
+#ifdef __cplusplus
+}
+#endif
+
+int
+main ()
+{
+return f != $ac_func;
+  ;
+  return 0;
+}
+_ACEOF
+rm -f conftest.$ac_objext conftest$ac_exeext
+if { (eval echo "$as_me:$LINENO: \"$ac_link\"") >&5
+  (eval $ac_link) 2>conftest.er1
+  ac_status=$?
+  grep -v '^ *+' conftest.er1 >conftest.err
+  rm -f conftest.er1
+  cat conftest.err >&5
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); } &&
+	 { ac_try='test -z "$ac_c_werror_flag"
+			 || test ! -s conftest.err'
+  { (eval echo "$as_me:$LINENO: \"$ac_try\"") >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; } &&
+	 { ac_try='test -s conftest$ac_exeext'
+  { (eval echo "$as_me:$LINENO: \"$ac_try\"") >&5
+  (eval $ac_try) 2>&5
+  ac_status=$?
+  echo "$as_me:$LINENO: \$? = $ac_status" >&5
+  (exit $ac_status); }; }; then
+  eval "$as_ac_var=yes"
+else
+  echo "$as_me: failed program was:" >&5
+sed 's/^/| /' conftest.$ac_ext >&5
+
+eval "$as_ac_var=no"
+fi
+rm -f conftest.err conftest.$ac_objext \
+      conftest$ac_exeext conftest.$ac_ext
+fi
+echo "$as_me:$LINENO: result: `eval echo '${'$as_ac_var'}'`" >&5
+echo "${ECHO_T}`eval echo '${'$as_ac_var'}'`" >&6
+if test `eval echo '${'$as_ac_var'}'` = yes; then
+  cat >>confdefs.h <<_ACEOF
+#define `echo "HAVE_$ac_func" | $as_tr_cpp` 1
+_ACEOF
+
+fi
+done
+
+fi
 
 
 
@@ -12858,6 +13056,8 @@ s,@GTK_CONFIG@,$GTK_CONFIG,;t t
 s,@GTK_CFLAGS@,$GTK_CFLAGS,;t t
 s,@GTK_LIBS@,$GTK_LIBS,;t t
 s,@CFGTK@,$CFGTK,;t t
+s,@libglade_CFLAGS@,$libglade_CFLAGS,;t t
+s,@libglade_LIBS@,$libglade_LIBS,;t t
 s,@MAINTAINER_MODE_TRUE@,$MAINTAINER_MODE_TRUE,;t t
 s,@MAINTAINER_MODE_FALSE@,$MAINTAINER_MODE_FALSE,;t t
 s,@MAINT@,$MAINT,;t t
