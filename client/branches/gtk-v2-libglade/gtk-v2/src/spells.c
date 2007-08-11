@@ -27,6 +27,7 @@ char *rcsid_gtk2_spells_c =
 #endif
 
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 
 #include "client.h"
 
@@ -182,17 +183,18 @@ void
 on_spells_activate                     (GtkMenuItem     *menuitem,
                                         gpointer         user_data)
 {
+    GladeXML *xml_tree;
+
     if (!has_init) {
 	GtkCellRenderer *renderer;
 	GtkTreeViewColumn *column;
 
-	spell_window = create_spell_window();
-	spell_invoke = lookup_widget(spell_window,"spell_invoke");
-	spell_cast = lookup_widget(spell_window,"spell_cast");
-
-	spell_options = lookup_widget(spell_window,"spell_options");
-
-	spell_treeview = lookup_widget(spell_window, "spell_treeview");
+        spell_window = glade_xml_get_widget(xml, "spell_window");
+        xml_tree = glade_get_widget_tree(GTK_WIDGET(spell_window));
+        spell_invoke = glade_xml_get_widget(xml_tree,"spell_invoke");
+        spell_cast = glade_xml_get_widget(xml_tree,"spell_cast");
+        spell_options = glade_xml_get_widget(xml_tree,"spell_options");
+        spell_treeview = glade_xml_get_widget(xml_tree, "spell_treeview");
 
 	spell_store = gtk_list_store_new(14,
 				G_TYPE_OBJECT,	/* Image - not used */
@@ -292,20 +294,28 @@ on_spells_activate                     (GtkMenuItem     *menuitem,
 					     GTK_SORT_ASCENDING);
 
 	/* the style code will set the colors for these */
-	spell_label[Style_Attuned] = lookup_widget(spell_window,"spell_label_attuned");
-	spell_label[Style_Repelled] = lookup_widget(spell_window,"spell_label_repelled");
-	spell_label[Style_Denied] = lookup_widget(spell_window,"spell_label_denied");
-	spell_label[Style_Normal] = lookup_widget(spell_window,"spell_label_normal");
+        spell_label[Style_Attuned] =
+            glade_xml_get_widget(xml_tree, "spell_label_attuned");
+        spell_label[Style_Repelled] =
+            glade_xml_get_widget(xml_tree, "spell_label_repelled");
+        spell_label[Style_Denied] =
+            glade_xml_get_widget(xml_tree, "spell_label_denied");
+        spell_label[Style_Normal] =
+            glade_xml_get_widget(xml_tree, "spell_label_normal");
 
 	/* We use eventboxes because the label widget is a transparent widget -
 	 * we can't set the background in it and have it work.
 	 * But we can set the background in the event box, and put the label
 	 * widget in the eventbox.
 	 */
-	spell_eventbox[Style_Attuned] = lookup_widget(spell_window,"spell_eventbox_attuned");
-	spell_eventbox[Style_Repelled] = lookup_widget(spell_window,"spell_eventbox_repelled");
-	spell_eventbox[Style_Denied] = lookup_widget(spell_window,"spell_eventbox_denied");
-	spell_eventbox[Style_Normal] = lookup_widget(spell_window,"spell_eventbox_normal");
+        spell_eventbox[Style_Attuned] =
+            glade_xml_get_widget(xml_tree, "spell_eventbox_attuned");
+        spell_eventbox[Style_Repelled] =
+            glade_xml_get_widget(xml_tree, "spell_eventbox_repelled");
+        spell_eventbox[Style_Denied] =
+            glade_xml_get_widget(xml_tree, "spell_eventbox_denied");
+        spell_eventbox[Style_Normal] =
+            glade_xml_get_widget(xml_tree, "spell_eventbox_normal");
     }
     gtk_widget_set_sensitive(spell_invoke, FALSE);
     gtk_widget_set_sensitive(spell_cast, FALSE);

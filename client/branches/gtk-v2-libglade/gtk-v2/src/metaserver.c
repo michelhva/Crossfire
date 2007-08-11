@@ -27,6 +27,7 @@ char *rcsid_gtk2_metaserver_c =
 #endif
 
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 
 #include "client.h"
 
@@ -66,19 +67,24 @@ char *get_metaserver()
     GtkTreeIter iter;
     int i, j;
     const gchar *metaserver_txt;
+    GladeXML *xml_tree;
 
     if (!has_init) {
 	GtkTreeViewColumn *column;
 	GtkCellRenderer *renderer;
 
+        metaserver_window = glade_xml_get_widget (xml, "metaserver_window");
+        xml_tree = glade_get_widget_tree(GTK_WIDGET(metaserver_window));
 
-	metaserver_window = create_metaserver_window();
 	gtk_window_set_transient_for(GTK_WINDOW(metaserver_window), GTK_WINDOW(window_root));
 
-	treeview_metaserver = lookup_widget(metaserver_window, "treeview_metaserver");
-	metaserver_button = lookup_widget(metaserver_window, "metaserver_select");
-	metaserver_status = lookup_widget(metaserver_window, "metaserver_status");
-	metaserver_entry = lookup_widget(metaserver_window, "metaserver_text_entry");
+        treeview_metaserver = glade_xml_get_widget(xml_tree, "treeview_metaserver");
+        metaserver_button =
+            glade_xml_get_widget(xml_tree, "metaserver_select");
+        metaserver_status =
+            glade_xml_get_widget(xml_tree, "metaserver_status");
+        metaserver_entry =
+            glade_xml_get_widget(xml_tree, "metaserver_text_entry");
 
 	store_metaserver = gtk_list_store_new (6,
                                 G_TYPE_STRING,
