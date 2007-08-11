@@ -37,6 +37,7 @@ char *rcsid_gtk2_map_c =
 
 /* Pick up the gtk headers we need */
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 #ifndef WIN32
 #include <gdk/gdkx.h>
 #else
@@ -90,13 +91,17 @@ int gettimeofday(struct timeval* tp, void* tzp) {
 /* This initializes the stuff we need for the map. */
 void map_init(GtkWidget *window_root)
 {
-    map_drawing_area = lookup_widget(window_root,"drawingarea_map");
+    GladeXML* xml_tree;
+
+    xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+    map_drawing_area = glade_xml_get_widget(xml_tree, "drawingarea_map");
 
     gtk_widget_set_size_request (map_drawing_area,
 		use_config[CONFIG_MAPWIDTH] * map_image_size,
 		use_config[CONFIG_MAPHEIGHT] * map_image_size);
 
-    map_notebook = lookup_widget(window_root,"map_notebook");
+    map_notebook = glade_xml_get_widget(xml_tree, "map_notebook");
+
     mapgc = gdk_gc_new(map_drawing_area->window);
     gtk_widget_show(map_drawing_area);
     gtk_widget_add_events (map_drawing_area, GDK_BUTTON_PRESS_MASK);
