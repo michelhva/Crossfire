@@ -35,6 +35,7 @@ char *rcsid_gtk2_main_c =
 #include <windows.h>
 #endif
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 #include <stdio.h>
 #include <errno.h>
 
@@ -49,6 +50,7 @@ char *rcsid_gtk2_main_c =
 #include "mapdata.h"
 
 GtkWidget *window_root, *magic_map;
+GladeXML *xml;
 
 /* Sets up the basic colors. */
 const char *colorname[NUM_COLORS] = {
@@ -591,6 +593,7 @@ main (int argc, char *argv[])
     int i, got_one=0;
     static char file_cache[ MAX_BUF ];
     GdkGeometry geometry;
+    GladeXML *xml_tree;
 
 #ifdef ENABLE_NLS
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -644,8 +647,14 @@ main (int argc, char *argv[])
      * The following code was added by Glade to create one of each component
      * (except popup menus), just so that you see something after building
      * the project. Delete any components that you don't want shown initially.
+     *
+     * For now, look for the glade file in ${prefix}/share/crossfire/client.
+     * FIXME! make install does not yet copy a file there.  Also, this file
+     * name probably should not be hardcoded.
      */
-    window_root = create_window_root ();
+
+    xml = glade_xml_new(PACKAGE_DATA_DIR"/crossfire-client/gtk-v2.glade", NULL, NULL);
+    window_root = glade_xml_get_widget(xml, "window_root");
 
     /* Purely arbitrary min window size */
     geometry.min_width=800;
@@ -687,7 +696,9 @@ main (int argc, char *argv[])
     gtk_widget_show (window_root);
 
     map_init(window_root);
-    magic_map = lookup_widget(window_root,"drawingarea_magic_map");
+
+    xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+    magic_map = glade_xml_get_widget(xml_tree, "drawingarea_magic_map");
 
     snprintf( file_cache, MAX_BUF, "%s/.crossfire/servers.cache", getenv( "HOME" ) );
     cached_server_file = file_cache;
