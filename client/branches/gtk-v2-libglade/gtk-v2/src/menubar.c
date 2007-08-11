@@ -33,6 +33,7 @@ char *rcsid_gtk2_menubar_c =
 #include <windows.h>
 #endif
 #include <gtk/gtk.h>
+#include <glade/glade.h>
 
 #include "client.h"
 
@@ -99,10 +100,15 @@ menu_quit_character                       (GtkMenuItem     *menuitem,
 
 void enable_menu_items(int enable)
 {
+    GladeXML *xml_tree;
 
-    gtk_widget_set_sensitive(lookup_widget(window_root,"quit_character1"), enable);
-    gtk_widget_set_sensitive(lookup_widget(window_root,"disconnect"), enable);
-    gtk_widget_set_sensitive(lookup_widget(window_root,"spells"), enable);
-    gtk_widget_set_sensitive(lookup_widget(window_root,"pickup1"), enable);
-
+    xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+    gtk_widget_set_sensitive(
+        glade_xml_get_widget(xml_tree, "quit_character1"), enable);
+    gtk_widget_set_sensitive(
+        glade_xml_get_widget(xml_tree, "disconnect"), enable);
+    gtk_widget_set_sensitive(
+        glade_xml_get_widget(xml_tree, "spells"), enable);
+    gtk_widget_set_sensitive(
+        glade_xml_get_widget(xml_tree, "pickup1"), enable);
 }
