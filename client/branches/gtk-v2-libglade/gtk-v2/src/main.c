@@ -651,6 +651,8 @@ main (int argc, char *argv[])
      * For now, look for the glade file in ${prefix}/share/crossfire/client.
      * FIXME! make install does not yet copy a file there.  Also, this file
      * name probably should not be hardcoded.
+     *
+     * glade_init() is implicitly called on glade_xml_new().
      */
 
     xml = glade_xml_new(PACKAGE_DATA_DIR"/crossfire-client/gtk-v2.glade", NULL, NULL);
