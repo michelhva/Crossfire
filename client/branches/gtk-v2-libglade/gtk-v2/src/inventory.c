@@ -399,11 +399,21 @@ void inventory_init(GtkWidget *window_root)
     GladeXML *xml_tree;
 
     inventory_get_styles();
+
     xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+
     inv_notebook = glade_xml_get_widget(xml_tree,"notebook_inv");
     treeview_look = glade_xml_get_widget(xml_tree, "treeview_look");
     weight_label = glade_xml_get_widget(xml_tree,"label_inv_weight");
     inv_table = glade_xml_get_widget(xml_tree,"inv_table");
+
+    glade_xml_signal_connect(xml_tree, "on_notebook_switch_page",
+        (GCallback) on_notebook_switch_page);
+    glade_xml_signal_connect(xml_tree, "on_inv_table_expose_event",
+        (GCallback) on_inv_table_expose_event);
+    glade_xml_signal_connect(xml_tree, "list_row_collapse",
+        (GCallback) list_row_collapse);
+
     inv_table_tooltips = gtk_tooltips_new();
     gtk_tooltips_enable(inv_table_tooltips);
 

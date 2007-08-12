@@ -65,7 +65,11 @@ menu_about                       (GtkMenuItem     *menuitem,
         about_window = glade_xml_get_widget(xml, "about_window");
 
         xml_tree = glade_get_widget_tree(GTK_WIDGET(menuitem));
+
         textview = glade_xml_get_widget(xml_tree, "about_textview");
+
+        glade_xml_signal_connect(xml_tree, "on_about_close_clicked",
+            (GCallback) on_about_close_clicked);
 
 	textbuf = gtk_text_view_get_buffer(GTK_TEXT_VIEW(textview));
 

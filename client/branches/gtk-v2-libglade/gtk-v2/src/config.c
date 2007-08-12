@@ -336,50 +336,57 @@ void save_defaults()
 void config_init(GtkWidget *window_root)
 {
     static int has_init=0;
-    GladeXML* xml_local;
+    GladeXML* xml_tree;
     int count, i;
 
     has_init=1;
 
     config_window = glade_xml_get_widget(xml, "config_window");
-    xml_local = glade_get_widget_tree(GTK_WIDGET(config_window));
+    xml_tree = glade_get_widget_tree(GTK_WIDGET(config_window));
 
     config_spinbutton_cwindow =
-        glade_xml_get_widget(xml_local, "config_spinbutton_cwindow");
+        glade_xml_get_widget(xml_tree, "config_spinbutton_cwindow");
     config_button_echo =
-        glade_xml_get_widget(xml_local, "config_button_echo");
+        glade_xml_get_widget(xml_tree, "config_button_echo");
     config_button_fasttcp =
-        glade_xml_get_widget(xml_local, "config_button_fasttcp");
+        glade_xml_get_widget(xml_tree, "config_button_fasttcp");
     config_button_grad_color =
-        glade_xml_get_widget(xml_local, "config_button_grad_color");
+        glade_xml_get_widget(xml_tree, "config_button_grad_color");
     config_button_foodbeep =
-        glade_xml_get_widget(xml_local, "config_button_foodbeep");
+        glade_xml_get_widget(xml_tree, "config_button_foodbeep");
     config_button_sound =
-        glade_xml_get_widget(xml_local, "config_button_sound");
+        glade_xml_get_widget(xml_tree, "config_button_sound");
     config_button_cache =
-        glade_xml_get_widget(xml_local, "config_button_cache");
+        glade_xml_get_widget(xml_tree, "config_button_cache");
     config_button_download =
-        glade_xml_get_widget(xml_local, "config_button_download");
+        glade_xml_get_widget(xml_tree, "config_button_download");
     config_button_fog =
-        glade_xml_get_widget(xml_local, "config_button_fog");
+        glade_xml_get_widget(xml_tree, "config_button_fog");
     config_button_smoothing =
-        glade_xml_get_widget(xml_local, "config_button_smoothing");
+        glade_xml_get_widget(xml_tree, "config_button_smoothing");
     config_spinbutton_iconscale =
-        glade_xml_get_widget(xml_local, "config_spinbutton_iconscale");
+        glade_xml_get_widget(xml_tree, "config_spinbutton_iconscale");
     config_spinbutton_mapscale =
-        glade_xml_get_widget(xml_local, "config_spinbutton_mapscale");
+        glade_xml_get_widget(xml_tree, "config_spinbutton_mapscale");
     config_spinbutton_mapwidth =
-        glade_xml_get_widget(xml_local, "config_spinbutton_mapwidth");
+        glade_xml_get_widget(xml_tree, "config_spinbutton_mapwidth");
     config_spinbutton_mapheight =
-        glade_xml_get_widget(xml_local, "config_spinbutton_mapheight");
+        glade_xml_get_widget(xml_tree, "config_spinbutton_mapheight");
     config_combobox_displaymode =
-        glade_xml_get_widget(xml_local, "config_combobox_displaymode");
+        glade_xml_get_widget(xml_tree, "config_combobox_displaymode");
     config_combobox_faceset =
-        glade_xml_get_widget(xml_local, "config_combobox_faceset");
+        glade_xml_get_widget(xml_tree, "config_combobox_faceset");
     config_combobox_lighting =
-        glade_xml_get_widget(xml_local, "config_combobox_lighting");
+        glade_xml_get_widget(xml_tree, "config_combobox_lighting");
     config_combobox_theme =
-        glade_xml_get_widget(xml_local, "config_combobox_theme");
+        glade_xml_get_widget(xml_tree, "config_combobox_theme");
+
+    glade_xml_signal_connect(xml_tree, "on_config_button_save_clicked",
+        (GCallback) on_config_button_save_clicked);
+    glade_xml_signal_connect(xml_tree, "on_config_button_apply_clicked",
+        (GCallback) on_config_button_apply_clicked);
+    glade_xml_signal_connect(xml_tree, "on_config_button_close_clicked",
+        (GCallback) on_config_button_close_clicked);
 
     /*
      * Display mode combo box setup.
