@@ -78,13 +78,28 @@ char *get_metaserver()
 
 	gtk_window_set_transient_for(GTK_WINDOW(metaserver_window), GTK_WINDOW(window_root));
 
-        treeview_metaserver = glade_xml_get_widget(xml_tree, "treeview_metaserver");
+        treeview_metaserver = glade_xml_get_widget(xml_tree,
+            "treeview_metaserver");
+
         metaserver_button =
             glade_xml_get_widget(xml_tree, "metaserver_select");
         metaserver_status =
             glade_xml_get_widget(xml_tree, "metaserver_status");
         metaserver_entry =
             glade_xml_get_widget(xml_tree, "metaserver_text_entry");
+
+        glade_xml_signal_connect(xml_tree, "on_metaserver_select_clicked",
+            (GCallback) on_metaserver_select_clicked);
+        glade_xml_signal_connect(xml_tree, "on_metaserver_text_entry_activate",
+            (GCallback) on_metaserver_text_entry_activate);
+        glade_xml_signal_connect(xml_tree, "on_button_metaserver_quit_pressed",
+            (GCallback) on_button_metaserver_quit_pressed);
+        glade_xml_signal_connect(xml_tree,
+            "on_metaserver_text_entry_key_press_event",
+            (GCallback) on_metaserver_text_entry_key_press_event);
+        glade_xml_signal_connect(xml_tree,
+            "on_treeview_metaserver_row_activaed",
+            (GCallback) on_treeview_metaserver_row_activated);
 
 	store_metaserver = gtk_list_store_new (6,
                                 G_TYPE_STRING,

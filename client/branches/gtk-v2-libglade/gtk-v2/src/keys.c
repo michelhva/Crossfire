@@ -417,6 +417,9 @@ void keys_init(GtkWidget *window_root)
     entry_commands = glade_xml_get_widget(xml_tree, "entry_commands");
     spinbutton_count = glade_xml_get_widget(xml_tree, "spinbutton_count");
 
+    glade_xml_signal_connect(xml_tree, "on_entry_commands_activate",
+        (GCallback) on_entry_commands_activate);
+
     keybinding_window = glade_xml_get_widget(xml, "keybinding_window");
     xml_tree = glade_get_widget_tree(GTK_WIDGET(keybinding_window));
 
@@ -442,6 +445,20 @@ void keys_init(GtkWidget *window_root)
         glade_xml_get_widget(xml_tree, "keybinding_button_update");
     keybinding_button_bind =
         glade_xml_get_widget(xml_tree, "keybinding_button_bind");
+
+    glade_xml_signal_connect(xml_tree,
+        "on_keybinding_entry_key_key_press_event",
+        (GCallback) on_keybinding_entry_key_key_press_event);
+    glade_xml_signal_connect(xml_tree, "on_keybinding_button_remove_clicked",
+        (GCallback) on_keybinding_button_remove_clicked);
+    glade_xml_signal_connect(xml_tree, "on_keybinding_button_update_clicked",
+        (GCallback) on_keybinding_button_update_clicked);
+    glade_xml_signal_connect(xml_tree, "on_keybinding_button_bind_clicked",
+        (GCallback) on_keybinding_button_bind_clicked);
+    glade_xml_signal_connect(xml_tree, "on_keybinding_button_clear_clicked",
+        (GCallback) on_keybinding_button_clear_clicked);
+    glade_xml_signal_connect(xml_tree, "on_keybinding_button_close_clicked",
+        (GCallback) on_keybinding_button_close_clicked);
 
     gtk_widget_set_sensitive(keybinding_button_remove, FALSE);
     gtk_widget_set_sensitive(keybinding_button_update, FALSE);

@@ -196,6 +196,15 @@ on_spells_activate                     (GtkMenuItem     *menuitem,
         spell_options = glade_xml_get_widget(xml_tree,"spell_options");
         spell_treeview = glade_xml_get_widget(xml_tree, "spell_treeview");
 
+        glade_xml_signal_connect(xml_tree, "on_spell_treeview_row_activated",
+            (GCallback) on_spell_treeview_row_activated);
+        glade_xml_signal_connect(xml_tree, "on_spell_cast_clicked",
+            (GCallback) on_spell_cast_clicked);
+        glade_xml_signal_connect(xml_tree, "on_spell_invoke_clicked",
+            (GCallback) on_spell_invoke_clicked);
+        glade_xml_signal_connect(xml_tree, "on_spell_close_clicked",
+            (GCallback) on_spell_close_clicked);
+
 	spell_store = gtk_list_store_new(14,
 				G_TYPE_OBJECT,	/* Image - not used */
 				G_TYPE_STRING,	/* Name */
