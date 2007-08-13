@@ -336,7 +336,8 @@ void save_defaults()
 void config_init(GtkWidget *window_root)
 {
     static int has_init=0;
-    GladeXML* xml_tree;
+    GladeXML *xml_tree;
+    GtkWidget *widget;
     int count, i;
 
     has_init=1;
@@ -381,12 +382,17 @@ void config_init(GtkWidget *window_root)
     config_combobox_theme =
         glade_xml_get_widget(xml_tree, "config_combobox_theme");
 
-    glade_xml_signal_connect(xml_tree, "on_config_button_save_clicked",
-        (GCallback) on_config_button_save_clicked);
-    glade_xml_signal_connect(xml_tree, "on_config_button_apply_clicked",
-        (GCallback) on_config_button_apply_clicked);
-    glade_xml_signal_connect(xml_tree, "on_config_button_close_clicked",
-        (GCallback) on_config_button_close_clicked);
+    widget = glade_xml_get_widget(xml_tree, "config_button_save");
+    g_signal_connect ((gpointer) widget, "clicked",
+        G_CALLBACK (on_config_button_save_clicked), NULL);
+
+    widget = glade_xml_get_widget(xml_tree, "config_button_apply");
+    g_signal_connect ((gpointer) widget, "clicked",
+        G_CALLBACK (on_config_button_apply_clicked), NULL);
+
+    widget = glade_xml_get_widget(xml_tree, "config_button_close");
+    g_signal_connect ((gpointer) widget, "clicked",
+        G_CALLBACK (on_config_button_close_clicked), NULL);
 
     /*
      * Display mode combo box setup.

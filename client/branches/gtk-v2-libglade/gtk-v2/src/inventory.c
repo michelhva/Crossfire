@@ -407,12 +407,12 @@ void inventory_init(GtkWidget *window_root)
     weight_label = glade_xml_get_widget(xml_tree,"label_inv_weight");
     inv_table = glade_xml_get_widget(xml_tree,"inv_table");
 
-    glade_xml_signal_connect(xml_tree, "on_notebook_switch_page",
-        (GCallback) on_notebook_switch_page);
-    glade_xml_signal_connect(xml_tree, "on_inv_table_expose_event",
-        (GCallback) on_inv_table_expose_event);
-    glade_xml_signal_connect(xml_tree, "list_row_collapse",
-        (GCallback) list_row_collapse);
+    g_signal_connect((gpointer) inv_notebook, "switch_page",
+        (GCallback) on_notebook_switch_page, NULL);
+    g_signal_connect((gpointer) inv_table, "expose_event",
+        (GCallback) on_inv_table_expose_event, NULL);
+    g_signal_connect((gpointer) treeview_look, "row_collapsed",
+        (GCallback) list_row_collapse, NULL);
 
     inv_table_tooltips = gtk_tooltips_new();
     gtk_tooltips_enable(inv_table_tooltips);

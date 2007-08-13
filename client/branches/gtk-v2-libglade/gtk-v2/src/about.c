@@ -51,7 +51,8 @@ void
 menu_about                       (GtkMenuItem     *menuitem,
                                         gpointer         user_data)
 {
-    GladeXML* xml_tree;
+    GladeXML *xml_tree;
+    GtkWidget *widget;
 
     if (!about_window) {
 	GtkWidget   *textview;
@@ -68,8 +69,9 @@ menu_about                       (GtkMenuItem     *menuitem,
 
         textview = glade_xml_get_widget(xml_tree, "about_textview");
 
-        glade_xml_signal_connect(xml_tree, "on_about_close_clicked",
-            (GCallback) on_about_close_clicked);
+        widget = glade_xml_get_widget(xml, "about_close");
+        g_signal_connect ((gpointer) widget, "clicked",
+            G_CALLBACK (on_about_close_clicked), NULL);
 
 	textbuf = gtk_text_view_get_buffer(GTK_TEXT_VIEW(textview));
 

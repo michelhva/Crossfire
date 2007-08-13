@@ -68,6 +68,7 @@ char *get_metaserver()
     int i, j;
     const gchar *metaserver_txt;
     GladeXML *xml_tree;
+    GtkWidget *widget;
 
     if (!has_init) {
 	GtkTreeViewColumn *column;
@@ -80,7 +81,6 @@ char *get_metaserver()
 
         treeview_metaserver = glade_xml_get_widget(xml_tree,
             "treeview_metaserver");
-
         metaserver_button =
             glade_xml_get_widget(xml_tree, "metaserver_select");
         metaserver_status =
@@ -88,18 +88,22 @@ char *get_metaserver()
         metaserver_entry =
             glade_xml_get_widget(xml_tree, "metaserver_text_entry");
 
-        glade_xml_signal_connect(xml_tree, "on_metaserver_select_clicked",
-            (GCallback) on_metaserver_select_clicked);
-        glade_xml_signal_connect(xml_tree, "on_metaserver_text_entry_activate",
-            (GCallback) on_metaserver_text_entry_activate);
-        glade_xml_signal_connect(xml_tree, "on_button_metaserver_quit_pressed",
-            (GCallback) on_button_metaserver_quit_pressed);
-        glade_xml_signal_connect(xml_tree,
-            "on_metaserver_text_entry_key_press_event",
-            (GCallback) on_metaserver_text_entry_key_press_event);
-        glade_xml_signal_connect(xml_tree,
-            "on_treeview_metaserver_row_activaed",
-            (GCallback) on_treeview_metaserver_row_activated);
+        g_signal_connect ((gpointer) metaserver_window, "destroy",
+            G_CALLBACK (on_window_destroy_event), NULL);
+        g_signal_connect ((gpointer) treeview_metaserver, "row_activated",
+            G_CALLBACK (on_treeview_metaserver_row_activated), NULL);
+        g_signal_connect ((gpointer) metaserver_entry, "activate",
+            G_CALLBACK (on_metaserver_text_entry_activate), NULL);
+        g_signal_connect ((gpointer) metaserver_entry, "key_press_event",
+            G_CALLBACK (on_metaserver_text_entry_key_press_event), NULL);
+        g_signal_connect ((gpointer) metaserver_button, "clicked",
+            G_CALLBACK (on_metaserver_select_clicked), NULL);
+
+        widget = glade_xml_get_widget(xml_tree, "button_metaserver_quit");
+        g_signal_connect ((gpointer) widget, "pressed",
+            G_CALLBACK (on_button_metaserver_quit_pressed), NULL);
+        g_signal_connect ((gpointer) widget, "activate",
+            G_CALLBACK (on_button_metaserver_quit_pressed), NULL);
 
 	store_metaserver = gtk_list_store_new (6,
                                 G_TYPE_STRING,

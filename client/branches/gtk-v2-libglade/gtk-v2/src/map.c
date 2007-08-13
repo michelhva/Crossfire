@@ -98,12 +98,12 @@ void map_init(GtkWidget *window_root)
     map_drawing_area = glade_xml_get_widget(xml_tree, "drawingarea_map");
     map_notebook = glade_xml_get_widget(xml_tree, "map_notebook");
 
-    glade_xml_signal_connect(xml_tree, "on_drawingarea_map_expose_event",
-        (GCallback) on_drawingarea_map_expose_event);
-    glade_xml_signal_connect(xml_tree, "on_drawingarea_map_button_press_event",
-        (GCallback) on_drawingarea_map_button_press_event);
-    glade_xml_signal_connect(xml_tree, "on_drawingarea_magic_map_expose_event",
-        (GCallback) on_drawingarea_magic_map_expose_event);
+    g_signal_connect ((gpointer) map_drawing_area, "expose_event",
+        G_CALLBACK (on_drawingarea_map_expose_event), NULL);
+    g_signal_connect ((gpointer) map_drawing_area, "button_press_event",
+        G_CALLBACK (on_drawingarea_map_button_press_event), NULL);
+    g_signal_connect ((gpointer) map_notebook, "expose_event",
+        G_CALLBACK (on_drawingarea_magic_map_expose_event), NULL);
 
     gtk_widget_set_size_request (map_drawing_area,
 		use_config[CONFIG_MAPWIDTH] * map_image_size,
