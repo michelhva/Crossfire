@@ -658,6 +658,13 @@ main (int argc, char *argv[])
     xml = glade_xml_new(PACKAGE_DATA_DIR"/crossfire-client/gtk-v2.glade", NULL, NULL);
     window_root = glade_xml_get_widget(xml, "window_root");
 
+    g_signal_connect_swapped ((gpointer) window_root, "key_press_event",
+        G_CALLBACK (keyfunc), GTK_OBJECT (window_root));
+    g_signal_connect_swapped ((gpointer) window_root, "key_release_event",
+        G_CALLBACK (keyrelfunc), GTK_OBJECT (window_root));
+    g_signal_connect ((gpointer) window_root, "destroy",
+        G_CALLBACK (on_window_destroy_event), NULL);
+
     /* Purely arbitrary min window size */
     geometry.min_width=800;
     geometry.min_height=600;
