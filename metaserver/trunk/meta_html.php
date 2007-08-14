@@ -36,7 +36,7 @@ $qret = db_query($db, $query);
 
 // This really shouldn't happen, but might as well log for if it does.
 if (db_num_rows($qret)<1) {
-    print "<html><head>No metaservers listed on server</head><body>No metaservers listed on server</body>\n";
+    print "<html><head><title>No metaservers listed on server</title></head><body>No metaservers listed on server</body>\n";
     db_close($db);
     exit;
 }
