@@ -2830,7 +2830,6 @@
 
 <widget class="GtkWindow" id="keybinding_window">
   <property name="height_request">600</property>
-  <property name="visible">True</property>
   <property name="title" translatable="yes">Keybindings</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_CENTER_ON_PARENT</property>
@@ -3220,7 +3219,6 @@
 </widget>
 
 <widget class="GtkWindow" id="spell_window">
-  <property name="visible">True</property>
   <property name="title" translatable="yes">Spell Information</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_CENTER_ON_PARENT</property>
@@ -3534,7 +3532,6 @@
 </widget>
 
 <widget class="GtkWindow" id="config_window">
-  <property name="visible">True</property>
   <property name="title" translatable="yes">Configuration Window</property>
   <property name="type">GTK_WINDOW_TOPLEVEL</property>
   <property name="window_position">GTK_WIN_POS_CENTER_ON_PARENT</property>
