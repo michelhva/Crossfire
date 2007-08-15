@@ -852,6 +852,7 @@ end
 arch boulder
 x 3
 y 1
+map_layer living
 end
 arch pstone_1
 x 3
@@ -3791,6 +3792,7 @@ end
 arch gravestone
 x 13
 y 35
+map_layer living
 end
 arch pstone_1
 x 13
@@ -5078,6 +5080,7 @@ end
 arch gnoll
 name Captain of the Guard
 hp 150
+maxhp 150
 dam 15
 x 19
 y 8
