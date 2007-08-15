@@ -1,6 +1,11 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+
+Partial fix for bug #1772759: Too much alchemy causes client crash.
+ common/item.c: find item in container too.
+Nicolas Weeger 2007-08-15
+
 gtk-v2/src/stats.c
 - Applied patch by "Olivier Huet" <huet.o@free.fr> to fix experience label and
   progress bar for high levels (int -> sint64, %d -> %"FMT64").
