@@ -1,7 +1,11 @@
 #
-# Makefile for crossfire client
+# Makefile for crossfire 0.95.0 and beyond
 #
-#   Copyright (C) 2005,2007 Mark Wedel & Crossfire Development Team
+# This file will eventually be replaced by a configure script.  But for
+# now, this simple makefile should do the job.
+#
+#   Copyright (C) 2001 Mark Wedel & Crossfire Development Team
+#   Copyright (C) 1992 Frank Tore Johansen
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -17,16 +21,7 @@
 #   along with this program; if not, write to the Free Software
 #   Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
-#   The author can be reached via e-mail to crossfire-devel@real-time.com
+#   The authors can be reached via e-mail to crossfire-devel@real-time.com
 
-SUBDIRS = glade src themes
-
-pkgdata_DATA = gtk-v2.glade
-
-EXTRA_DIST = \
-	gtk-v2.glade \
-	gtk-v2.gladep \
-	README \
-	README-dev \
-	TODO
+pkgdata_DATA = gtk-v1.glade
 
