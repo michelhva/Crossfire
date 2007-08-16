@@ -32,6 +32,8 @@ GladeXML *xml;
 #define DEFAULT_IMAGE_SIZE      32
 extern int map_image_size, map_image_half_size, image_size;
 
+#define DEFAULT_XML_PATH PACKAGE_DATA_DIR "/" PACKAGE
+#define DEFAULT_XML_FILE DEFAULT_XML_PATH "/gtk-v2.glade"
 
 /* Notebook page of the magic map */
 #define MAGIC_MAP_PAGE	1

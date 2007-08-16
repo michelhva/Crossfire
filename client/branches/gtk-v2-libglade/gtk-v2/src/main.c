@@ -655,7 +655,12 @@ main (int argc, char *argv[])
      * glade_init() is implicitly called on glade_xml_new().
      */
 
-    xml = glade_xml_new(PACKAGE_DATA_DIR"/crossfire-client/gtk-v2.glade", NULL, NULL);
+    xml = glade_xml_new(DEFAULT_XML_FILE, NULL, NULL);
+    if (! xml) {
+        fprintf (stderr, "Failed to load xml file: %s\n", DEFAULT_XML_FILE);
+        exit(-1);
+    }
+
     window_root = glade_xml_get_widget(xml, "window_root");
 
     g_signal_connect_swapped ((gpointer) window_root, "key_press_event",
