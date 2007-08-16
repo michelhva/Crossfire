@@ -791,9 +791,11 @@ void save_winpos()
 {
     char savename[MAX_BUF],buf[MAX_BUF];
     FILE    *save;
-    int     x,y,w,h,wx,wy;
+    int     loop,x,y,w,h,wx,wy;
     extern GtkWidget *window_root;
-    GladeXML* xml_tree;
+    GList *pane_list, *list_loop;
+    GladeXML *xml_tree;
+    GtkWidget *widget;
 
     sprintf(savename,"%s/.crossfire/gwinpos2", getenv("HOME"));
     if (!(save=fopen(savename,"w"))) {
@@ -806,30 +808,32 @@ void save_winpos()
 
     xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
 
-    fprintf(save,"vpaned_map_stats: %d\n",
-        gtk_paned_get_position(GTK_PANED(
-            glade_xml_get_widget(xml_tree, "vpaned_map_stats"))));
+    /*
+     * Iterate through all widgets whose names begin with hpaned_* and vpaned_*
+     * to save the widget name and the position of the pane divider.  Widgets
+     * are dynamically found and processed so long as the .glade file designer
+     * adheres to the naming conventions that Glade Designer uses.
+     */
 
-    fprintf(save,"vpaned_info_inventory: %d\n",
-        gtk_paned_get_position(GTK_PANED(
-            glade_xml_get_widget(xml_tree, "vpaned_info_inventory"))));
+    pane_list = glade_xml_get_widget_prefix(xml_tree, "hpaned_");
+    for (list_loop = pane_list; list_loop; list_loop = g_list_next(list_loop)) {
+        widget = list_loop->data;
+        fprintf(save, "%s: %d\n", glade_get_widget_name(widget),
+            gtk_paned_get_position(GTK_PANED(widget)));
+    }
+    g_list_free(pane_list);
 
-    fprintf(save,"vpaned_inv_look: %d\n",
-        gtk_paned_get_position(GTK_PANED(
-            glade_xml_get_widget(xml_tree, "vpaned_inv_look"))));
-
-    fprintf(save,"hpaned_map_other: %d\n",
-        gtk_paned_get_position(GTK_PANED(
-            glade_xml_get_widget(xml_tree, "hpaned_map_other"))));
-
-    fprintf(save,"hpaned_statbar_stats: %d\n",
-        gtk_paned_get_position(GTK_PANED(
-            glade_xml_get_widget(xml_tree, "hpaned_statbar_stats"))));
+    pane_list = glade_xml_get_widget_prefix(xml_tree, "vpaned_");
+    for (list_loop = pane_list; list_loop; list_loop = g_list_next(list_loop)) {
+        widget = list_loop->data;
+        fprintf(save, "%s: %d\n", glade_get_widget_name(widget),
+            gtk_paned_get_position(GTK_PANED(widget)));
+    }
+    g_list_free(pane_list);
 
     fclose(save);
     sprintf(buf,"Window positions saved to %s",savename);
     draw_info(buf,NDI_BLUE);
-
 }
 
 
