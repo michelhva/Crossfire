@@ -791,7 +791,7 @@ void save_winpos()
 {
     char savename[MAX_BUF],buf[MAX_BUF];
     FILE    *save;
-    int     loop,x,y,w,h,wx,wy;
+    int     x,y,w,h,wx,wy;
     extern GtkWidget *window_root;
     GList *pane_list, *list_loop;
     GladeXML *xml_tree;
