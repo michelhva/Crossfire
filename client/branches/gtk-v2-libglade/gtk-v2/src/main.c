@@ -89,6 +89,7 @@ const char *usercolorname[NUM_COLORS] = {
 "tan"                 /* 12 */
 };
 
+char xml_file[MAX_BUF] = DEFAULT_XML_FILE;
 GdkColor root_color[NUM_COLORS];
 struct timeval timeout;
 extern int maxfd;
@@ -301,6 +302,7 @@ static void usage(char *progname)
     puts("-triminfowindow  - Trims size of information window(s)");
     puts("-notriminfowindow  - Do not trims size of information window(s) (default)");
     puts("-updatekeycodes  - Update the saved bindings for this keyboard.");
+    puts("-xml_file <file> - Glade Designer XML client UI layout file.");
 
     exit(0);
 }
@@ -558,6 +560,14 @@ int parse_args(int argc, char **argv)
 	    want_config[CONFIG_SPLASH] = FALSE;
 	    continue;
 	}
+	else if (!strcmp(argv[on_arg],"-xml_file")) {
+	    if (++on_arg == argc) {
+		LOG(LOG_WARNING,"gtk::init_windows","-xml_file requires a glade xml file name");
+		return 1;
+	    }
+	    strncpy (xml_file, argv[on_arg], MAX_BUF-1);
+	    continue;
+	}
 	else {
 	    LOG(LOG_WARNING,"gtk::init_windows","Do not understand option %s", argv[on_arg]);
 	    usage(argv[0]);
@@ -655,9 +665,9 @@ main (int argc, char *argv[])
      * glade_init() is implicitly called on glade_xml_new().
      */
 
-    xml = glade_xml_new(DEFAULT_XML_FILE, NULL, NULL);
+    xml = glade_xml_new(xml_file, NULL, NULL);
     if (! xml) {
-        fprintf (stderr, "Failed to load xml file: %s\n", DEFAULT_XML_FILE);
+        fprintf (stderr, "Failed to load xml file: %s\n", xml_file);
         exit(-1);
     }
 
