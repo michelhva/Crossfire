@@ -467,10 +467,6 @@ AC_PROG_GCC_TRADITIONAL
 AC_FUNC_VPRINTF
 AC_CHECK_FUNCS(mkdir socket strcspn sysconf getaddrinfo)
 
-if eval "text x$sound = xyes"; then
-   AC_CHECK_FUNCS([atexit]) 
-fi
-
 AC_SUBST(XPM)
 AC_SUBST(SOUNDDIR)
 AC_SUBST(LIBXPM_LIB)
@@ -509,4 +505,5 @@ dnl descend into these subdirs.
 AC_OUTPUT([
 	Makefile gtk/Makefile x11/Makefile common/Makefile 
 	sound-src/Makefile gtk-v2/Makefile pixmaps/Makefile
-	gtk-v2/src/Makefile  gtk-v2/themes/Makefile help/Makefile utils/Makefile ] )
+	gtk-v2/glade/Makefile gtk-v2/src/Makefile gtk-v2/themes/Makefile
+	help/Makefile utils/Makefile ] )
