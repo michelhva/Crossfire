@@ -537,7 +537,7 @@ uninstall-am: uninstall-binPROGRAMS uninstall-info-am
 
 
 proto:
-	cproto -E $(CC) -e -o gtk2proto.h  $(SDL_CFLAGS) $(LIBGLADE_CFLAGS) $(DEFAULT_INCLUDES) $(PROTO_SOURCES)
+	cproto -e -o gtk2proto.h  $(SDL_CFLAGS) $(LIBGLADE_CFLAGS) $(DEFAULT_INCLUDES) $(PROTO_SOURCES)
 	chmod 644 gtk2proto.h
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.
