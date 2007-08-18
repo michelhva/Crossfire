@@ -1,4 +1,39 @@
 -------------------------------------------------------------------------------
+Notes on using .glade layout files for the libglade version of the GTK2 client
+-------------------------------------------------------------------------------
+
+1) Launch the GTK-v2 client with a command similar to the following example.
+
+   crossfire-client-gtk2 -xml_file /path/to/layout.glade
+
+   If something does not work as expected, be sure to start the client from a
+   console window.  The client will report informational and error messages.
+
+2) If the -xml_file parameter is not accepted, the client is an old client that
+   does not support libglade.  This could happen if a recent client is compiled
+   but the system does not have the libglade-2.0 libraries on it.  Check the
+   output of ./configure.  It may report that the gtk-v2 client will not be
+   built.  If this happens, the client on the system will be an old one with
+   a date and time that do not correspond to the current build date and time.
+
+3) The first time a layout is used, ~/.crossfire/gwinpos2 will not contain the
+   correct screen sizes for the layout.  This may cause the client to look bad,
+   and it can be tricky to find the size bars if panes overlap.  With patience,
+   they may be found and used to size the client panes better.  Use the Client
+   Save Window Position command to save the adjustments.  They will be used to
+   restore the saved settings the next time the client is started.
+
+   Presently the screen sizes are lost every time a different layout is tried.
+   It may be that this limitation will be removed from a future version of the
+   client.  In the mean time, save copies of the ~/.crossfire/gwinpos2 file
+   for each layout you care to keep, then restore the copy when you want to
+   use the layout it corresponds with.
+
+4) Some layouts appear to not allow resizing of the overall window.  It is not
+   yet known why this is the case.  The window size code was not altered for
+   the libglade conversion.
+
+-------------------------------------------------------------------------------
 Notes about designing .glade files for the libglade version of the GTK2 client
 -------------------------------------------------------------------------------
 
@@ -23,4 +58,29 @@ Notes about designing .glade files for the libglade version of the GTK2 client
    either "hpaned_" or "vpaned_".  The client will only save window positions
    for the widgets named in this way (this is the default naming convention
    used by the Glade Designer application).
+
+3) Set all hpaned and vpaned size bars to result in a default layout that has
+   a decent appearance.  It is not sufficient to have the layout look good in
+   the layout designer.  You must verify that the Position propery on the
+   Widget tab is set and that it's checkbox is checked.
+
+4) When creating tabbed notebooks be sure the first tab is the tab that should
+   be visible when the client starts up.
+
+5) Most layouts may be altered by creatively cut/pasting elements.  Do not use
+   copy/paste, as that will cause the widgets to be renamed.
+
+6) The inventory icon pane is an excellent "temporary" holding area that may
+   be used to hold widgets while other areas of the layout are being worked
+   on.
+
+7) More complex changes may be made by temporarily expanding the outer vbox
+   container and using the bottom rows to paste things into.  Be careful when
+   reducing it back to the original size.  Glade Designer deletes the bottom
+   layers first, even if there are empty ones in the middle.  Any widgets in
+   the removed layer are lost.
+
+8) Save periodically, and keep working copies.  It is very easy to ruin a
+   layout so that it is hard to return to a proper state, and widget errors
+   may cause the client to crash at run-time when it is most inconventient.
 
