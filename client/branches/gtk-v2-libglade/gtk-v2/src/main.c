@@ -39,8 +39,6 @@ char *rcsid_gtk2_main_c =
 #include <stdio.h>
 #include <errno.h>
 
-#include "interface.h"
-#include "support.h"
 #include "main.h"
 #include "client.h"
 #include "image.h"
@@ -613,9 +611,6 @@ main (int argc, char *argv[])
 
     gtk_set_locale ();
     gtk_init (&argc, &argv);
-
-
-    add_pixmap_directory (PACKAGE_DATA_DIR "/" PACKAGE "/pixmaps");
 
     /* parse_args() has to come after init_client_vars() */
     init_client_vars();

@@ -35,8 +35,6 @@ char *rcsid_gtk_pickup_c =
 #include <gtk/gtk.h>
 #include <glade/glade.h>
 
-#include "interface.h"
-#include "support.h"
 #include "main.h"
 #include "client.h"
 #include "image.h"

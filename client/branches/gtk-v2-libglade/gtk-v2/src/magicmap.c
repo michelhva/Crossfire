@@ -33,10 +33,6 @@ char *rcsid_gtk2_magicmap_c =
 
 #include "client.h"
 
-#include "callbacks.h"
-#include "interface.h"
-#include "support.h"
-
 #include "main.h"
 
 /* in main.c - this is the drawing area for the magic map */

@@ -38,8 +38,6 @@ char *rcsid_gtk2_info_c =
 
 #include "image.h"
 #include "gtk2proto.h"
-#include "interface.h"
-#include "support.h"
 
 #include "main.h"
 

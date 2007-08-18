@@ -37,11 +37,10 @@ char *rcsid_gtk2_menubar_c =
 
 #include "client.h"
 
-#include "callbacks.h"
-#include "interface.h"
-#include "support.h"
 #include "p_cmd.h"
 #include "main.h"
+#include "image.h"
+#include "gtk2proto.h"
 
 /* Few quick notes on the menubar:
  * 1) Using the stock Quit menu item for some reason causes it to

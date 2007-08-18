@@ -48,8 +48,6 @@ typedef int KeyCode; /* Undefined type */
 #endif
 #include <gdk/gdkkeysyms.h>
 
-#include "support.h"
-
 #include "client-types.h"
 #include "main.h"
 #include "client.h"
@@ -59,7 +57,6 @@ typedef int KeyCode; /* Undefined type */
 #include "image.h"
 #include "gtk2proto.h"
 #include "p_cmd.h"
-#include "interface.h"
 
 static GtkWidget *fire_label, *run_label, *keybinding_window, *keybinding_checkbutton_control,
     *keybinding_checkbutton_shift, *keybinding_checkbutton_alt, *keybinding_checkbutton_meta,

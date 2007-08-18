@@ -34,8 +34,6 @@ char *rcsid_gtk2_config_c =
 #include <ctype.h>
 
 #include "client.h"
-#include "interface.h"
-#include "support.h"
 
 #include "main.h"
 #include "image.h"
