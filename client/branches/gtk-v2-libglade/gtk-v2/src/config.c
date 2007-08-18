@@ -34,7 +34,6 @@ char *rcsid_gtk2_config_c =
 #include <ctype.h>
 
 #include "client.h"
-
 #include "interface.h"
 #include "support.h"
 
@@ -849,6 +848,7 @@ void load_window_positions(GtkWidget *window_root)
 {
     char loadname[MAX_BUF],buf[MAX_BUF], *cp;
     GladeXML *xml_tree;
+    GtkWidget *widget;
     FILE    *load;
 
     sprintf(loadname,"%s/.crossfire/gwinpos2", getenv("HOME"));
@@ -875,12 +875,21 @@ void load_window_positions(GtkWidget *window_root)
 		    LOG(LOG_ERROR,"gtk-v2:load_window_positions", "Window size %s corrupt\n",
 			cp);
 		}
-	    } else if (strstr(buf,"pane")) {
-		/* The save names match the widget names, so this works fine to load
-		 * up the values.
-		 */
-                gtk_paned_set_position(GTK_PANED(
-                    glade_xml_get_widget(xml_tree, buf)), atoi(cp));
+            } else if (strstr(buf,"paned_")) {
+                /*
+                 * The save names are a re-sizeable pane, but check to be sure
+                 * it is a valid widget namve if only to prevent sending a
+                 * generic error to stderr if it does not exist in the current
+                 * layout.
+                 */
+                widget = glade_xml_get_widget(xml_tree, buf);
+                if (widget) {
+                    gtk_paned_set_position(GTK_PANED(widget), atoi(cp));
+                } else {
+                    LOG(LOG_INFO,"gtk-v2:load_window_positions",
+                        "%s in %s not found in this UI layout.\n",
+                        buf, loadname);
+                }
 	    } else {
 		LOG(LOG_ERROR,"gtk-v2:load_window_positions", "Found unknown line %s in %s\n",
 		    buf, loadname);
