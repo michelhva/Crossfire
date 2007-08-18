@@ -41,7 +41,6 @@ char *rcsid_gtk2_about_c =
 #include "main.h"
 #include "image.h"
 #include "gtk2proto.h"
-#include "about.h"
 #include "../../pixmaps/crossfiretitle.xpm"
 
 
