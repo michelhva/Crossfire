@@ -180,6 +180,7 @@ extern void signal_pipe(int i);
 extern int init_sounds(void);
 extern void SoundCmd(unsigned char *data, int len);
 /* spells.c */
+extern void spell_get_styles(void);
 extern void update_spell_information(void);
 extern void on_spells_activate(GtkMenuItem *menuitem, gpointer user_data);
 extern void on_spell_treeview_row_activated(GtkTreeView *treeview, GtkTreePath *path, GtkTreeViewColumn *column, gpointer user_data);
