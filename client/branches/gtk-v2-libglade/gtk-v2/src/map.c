@@ -50,7 +50,6 @@ char *rcsid_gtk2_map_c =
 #include "image.h"
 #include "main.h"
 #include "client.h"
-#include "support.h"
 #include "mapdata.h"
 #include "gtk2proto.h"
 

@@ -33,8 +33,6 @@ char *rcsid_gtk2_metaserver_c =
 
 #include "image.h"
 #include "gtk2proto.h"
-#include "interface.h"
-#include "support.h"
 #include "metaserver.h"
 #include "main.h"
 #include <pthread.h>

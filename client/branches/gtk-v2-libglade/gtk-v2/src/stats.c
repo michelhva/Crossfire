@@ -33,10 +33,6 @@ char *rcsid_gtk2_stats_c =
 
 #include "client.h"
 
-#include "callbacks.h"
-#include "interface.h"
-#include "support.h"
-
 #include "main.h"
 
 #define STAT_BAR_HP	0

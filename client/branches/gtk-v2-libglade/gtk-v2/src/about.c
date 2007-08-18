@@ -32,11 +32,9 @@ char *rcsid_gtk2_about_c =
 #include <gtk/gtk.h>
 #include <glade/glade.h>
 #include <ctype.h>
+#include <about.h>
 
 #include "client.h"
-
-#include "interface.h"
-#include "support.h"
 
 #include "main.h"
 #include "image.h"

@@ -50,10 +50,7 @@ PROTO_SOURCES = \
 
 crossfire_client_gtk2_SOURCES = \
 	$(PROTO_SOURCES) \
-	support.c support.h \
-	interface.c interface.h \
-	image.h main.h gtk2proto.h \
-	callbacks.h
+	image.h main.h gtk2proto.h
 
 crossfire_client_gtk2_LDADD = ../../common/libcfclient.a @LIBGLADE_LIBS@ @DMALLOC_LIB@ $(INTLLIBS) $(X_LIBS) @SDL_LIBS@ @OPENGL_LIBS@ @WIN32_LIBS@
 

@@ -33,9 +33,6 @@ char *rcsid_gtk2_inventory_c =
 
 #include "client.h"
 
-#include "interface.h"
-#include "support.h"
-
 #include "main.h"
 #include "image.h"
 #include "gtk2proto.h"
