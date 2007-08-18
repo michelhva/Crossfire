@@ -1,5 +1,8 @@
 Changes for SVN top of tree:
 
+Fix treefort3, make it 1 tile instead of weird missing square.
+Nicolas Weeger 2007-08-18
+
 Add client_anim_... support for all objects that support it, remove
 their speed attributes if the only reason they had speed set was for
 animation.
