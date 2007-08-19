@@ -23,5 +23,17 @@
 #
 #   The authors can be reached via e-mail to crossfire-devel@real-time.com
 
-pkgdata_DATA = gtk-v1.glade
+XML_FILES = \
+	gtk-v1.glade \
+	gtk-v2.glade \
+ 	meflin.glade
+
+PRJ_FILES = $(foreach XML,$(XML_FILES),$(XML)p)
+
+pkgdata_DATA = $(XML_FILES)
+
+EXTRA_DIST = \
+	$(XML_FILES) \
+	$(PRJ_FILES) \
+	README
 

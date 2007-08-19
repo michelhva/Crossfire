@@ -21,11 +21,7 @@
 
 SUBDIRS = glade src themes
 
-pkgdata_DATA = gtk-v2.glade
-
 EXTRA_DIST = \
-	gtk-v2.glade \
-	gtk-v2.gladep \
 	README \
 	README-dev \
 	TODO
