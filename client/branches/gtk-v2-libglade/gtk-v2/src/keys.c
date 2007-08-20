@@ -410,6 +410,7 @@ void keys_init(GtkWidget *window_root)
 #endif
 
     xml_tree = glade_get_widget_tree(GTK_WIDGET(window_root));
+
     fire_label = glade_xml_get_widget(xml_tree, "fire_label");
     run_label = glade_xml_get_widget(xml_tree, "run_label");
     entry_commands = glade_xml_get_widget(xml_tree, "entry_commands");
@@ -418,7 +419,7 @@ void keys_init(GtkWidget *window_root)
     g_signal_connect ((gpointer) entry_commands, "activate",
         G_CALLBACK (on_entry_commands_activate), NULL);
 
-    keybinding_window = glade_xml_get_widget(xml, "keybinding_window");
+    keybinding_window = glade_xml_get_widget(dialog_xml, "keybinding_window");
     xml_tree = glade_get_widget_tree(GTK_WIDGET(keybinding_window));
 
     keybinding_checkbutton_control =

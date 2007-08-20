@@ -2,21 +2,36 @@
 Notes on using .glade layout files for the libglade version of the GTK2 client
 -------------------------------------------------------------------------------
 
-1) Launch the GTK-v2 client with a command similar to the following example.
+1) The GTK-v2 client uses two different Glade Designer XML files.  The first
+   describes the client's main game window, and the second describes all of
+   the other dialogs that the client uses.  The default XML layouts are
+   defined in the main.h header file, but one or both may be specified with
+   command-line arguments.
 
-   crossfire-client-gtk2 -xml_file /path/to/layout.glade
+   At the time of this writing, the default window is defined by gtk-v2.glade
+   and the common dialogs are defined in dialogs.glade.
+
+2) To launch the GTK-v2 client and use of a different layout template, start
+   the client with a command similar to the following example.
+
+     crossfire-client-gtk2 -window_xml /path/to/layout.glade
 
    If something does not work as expected, be sure to start the client from a
    console window.  The client will report informational and error messages.
 
-2) If the -xml_file parameter is not accepted, the client is an old client that
-   does not support libglade.  This could happen if a recent client is compiled
-   but the system does not have the libglade-2.0 libraries on it.  Check the
-   output of ./configure.  It may report that the gtk-v2 client will not be
-   built.  If this happens, the client on the system will be an old one with
-   a date and time that do not correspond to the current build date and time.
+   To specify a different common dialog XML file, append an additional
+   argument on the command-line:
 
-3) The first time a layout is used, ~/.crossfire/gwinpos2 will not contain the
+     -dialog_xml /path/to/dialogs.glade
+
+3) If the -window_xml parameter is not accepted, the client is an old client
+   that does not support libglade.  This could happen if a recent client is
+   compiled but the system does not have the libglade-2.0 libraries on it.
+   Check the output of ./configure.  It may report that the gtk-v2 client will
+   not be built.  If this happens, the client on the system will be an old one
+   with a date and time that do not correspond to the current build.
+
+4) The first time a layout is used, ~/.crossfire/gwinpos2 will not contain the
    correct screen sizes for the layout.  This may cause the client to look bad,
    and it can be tricky to find the size bars if panes overlap.  With patience,
    they may be found and used to size the client panes better.  Use the Client
@@ -29,7 +44,7 @@ Notes on using .glade layout files for the libglade version of the GTK2 client
    for each layout you care to keep, then restore the copy when you want to
    use the layout it corresponds with.
 
-4) Some layouts appear to not allow resizing of the overall window.  It is not
+5) Some layouts appear to not allow resizing of the overall window.  It is not
    yet known why this is the case.  The window size code was not altered for
    the libglade conversion.
 

@@ -339,7 +339,7 @@ void config_init(GtkWidget *window_root)
 
     has_init=1;
 
-    config_window = glade_xml_get_widget(xml, "config_window");
+    config_window = glade_xml_get_widget(dialog_xml, "config_window");
     xml_tree = glade_get_widget_tree(GTK_WIDGET(config_window));
 
     config_spinbutton_cwindow =

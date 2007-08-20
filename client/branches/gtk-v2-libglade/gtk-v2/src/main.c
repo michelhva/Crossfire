@@ -48,7 +48,6 @@ char *rcsid_gtk2_main_c =
 #include "mapdata.h"
 
 GtkWidget *window_root, *magic_map;
-GladeXML *xml;
 
 /* Sets up the basic colors. */
 const char *colorname[NUM_COLORS] = {
@@ -87,7 +86,8 @@ const char *usercolorname[NUM_COLORS] = {
 "tan"                 /* 12 */
 };
 
-char xml_file[MAX_BUF] = DEFAULT_XML_FILE;
+char dialog_xml_file[MAX_BUF] = DIALOG_XML_FILE_DEFAULT;
+char window_xml_file[MAX_BUF] = WINDOW_XML_FILE_DEFAULT;
 GdkColor root_color[NUM_COLORS];
 struct timeval timeout;
 extern int maxfd;
@@ -300,7 +300,8 @@ static void usage(char *progname)
     puts("-triminfowindow  - Trims size of information window(s)");
     puts("-notriminfowindow  - Do not trims size of information window(s) (default)");
     puts("-updatekeycodes  - Update the saved bindings for this keyboard.");
-    puts("-xml_file <file> - Glade Designer XML client UI layout file.");
+    puts("-window_xml <file> - Glade Designer client UI layout XML file.");
+    puts("-dialog_xml <file> - Glade Designer popup dialog XML file.");
 
     exit(0);
 }
@@ -558,12 +559,22 @@ int parse_args(int argc, char **argv)
 	    want_config[CONFIG_SPLASH] = FALSE;
 	    continue;
 	}
-	else if (!strcmp(argv[on_arg],"-xml_file")) {
+	else if (!strcmp(argv[on_arg],"-window_xml")) {
 	    if (++on_arg == argc) {
-		LOG(LOG_WARNING,"gtk::init_windows","-xml_file requires a glade xml file name");
+		LOG(LOG_WARNING,"gtk::init_windows",
+                    "-window_xml requires a glade xml file name");
 		return 1;
 	    }
-	    strncpy (xml_file, argv[on_arg], MAX_BUF-1);
+	    strncpy (window_xml_file, argv[on_arg], MAX_BUF-1);
+	    continue;
+	}
+	else if (!strcmp(argv[on_arg],"-dialog_xml")) {
+	    if (++on_arg == argc) {
+		LOG(LOG_WARNING,"gtk::init_windows",
+                    "-dialog_xml requires a glade xml file name");
+		return 1;
+	    }
+	    strncpy (dialog_xml_file, argv[on_arg], MAX_BUF-1);
 	    continue;
 	}
 	else {
@@ -651,22 +662,28 @@ main (int argc, char *argv[])
     /*
      * The following code was added by Glade to create one of each component
      * (except popup menus), just so that you see something after building
-     * the project. Delete any components that you don't want shown initially.
+     * the project. Set the attribute "visible" to "no" for any dialogs that
+     * should not be shown initially.
      *
-     * For now, look for the glade file in ${prefix}/share/crossfire/client.
-     * FIXME! make install does not yet copy a file there.  Also, this file
-     * name probably should not be hardcoded.
+     * First, load up the common dialogs, then load up the root window.
      *
      * glade_init() is implicitly called on glade_xml_new().
+     *
      */
 
-    xml = glade_xml_new(xml_file, NULL, NULL);
-    if (! xml) {
-        fprintf (stderr, "Failed to load xml file: %s\n", xml_file);
+    dialog_xml = glade_xml_new(dialog_xml_file, NULL, NULL);
+    if (! dialog_xml) {
+        fprintf (stderr, "Failed to load xml file: %s\n", dialog_xml_file);
         exit(-1);
     }
 
-    window_root = glade_xml_get_widget(xml, "window_root");
+    window_xml = glade_xml_new(window_xml_file, NULL, NULL);
+    if (! window_xml) {
+        fprintf (stderr, "Failed to load xml file: %s\n", window_xml_file);
+        exit(-1);
+    }
+
+    window_root = glade_xml_get_widget(window_xml, "window_root");
 
     g_signal_connect_swapped ((gpointer) window_root, "key_press_event",
         G_CALLBACK (keyfunc), GTK_OBJECT (window_root));
