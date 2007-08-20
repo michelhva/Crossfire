@@ -188,8 +188,9 @@ on_spells_activate                     (GtkMenuItem     *menuitem,
 	GtkCellRenderer *renderer;
 	GtkTreeViewColumn *column;
 
-        spell_window = glade_xml_get_widget(xml, "spell_window");
+        spell_window = glade_xml_get_widget(dialog_xml, "spell_window");
         xml_tree = glade_get_widget_tree(GTK_WIDGET(spell_window));
+
         spell_invoke = glade_xml_get_widget(xml_tree,"spell_invoke");
         spell_cast = glade_xml_get_widget(xml_tree,"spell_cast");
         spell_options = glade_xml_get_widget(xml_tree,"spell_options");

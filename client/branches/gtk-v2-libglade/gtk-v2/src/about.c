@@ -45,7 +45,7 @@ char *rcsid_gtk2_about_c =
 static GtkWidget   *about_window=NULL;
 
 void
-menu_about                       (GtkMenuItem     *menuitem,
+menu_about                             (GtkMenuItem     *menuitem,
                                         gpointer         user_data)
 {
     GladeXML *xml_tree;
@@ -60,13 +60,12 @@ menu_about                       (GtkMenuItem     *menuitem,
 	GdkPixmap *aboutgdkpixmap;
 	GdkBitmap *aboutgdkmask;
 
-        about_window = glade_xml_get_widget(xml, "about_window");
-
-        xml_tree = glade_get_widget_tree(GTK_WIDGET(menuitem));
+        about_window = glade_xml_get_widget(dialog_xml, "about_window");
+        xml_tree = glade_get_widget_tree(GTK_WIDGET(about_window));
 
         textview = glade_xml_get_widget(xml_tree, "about_textview");
 
-        widget = glade_xml_get_widget(xml, "about_close");
+        widget = glade_xml_get_widget(xml_tree, "about_close");
         g_signal_connect ((gpointer) widget, "clicked",
             G_CALLBACK (on_about_close_clicked), NULL);
 

@@ -72,7 +72,8 @@ char *get_metaserver()
 	GtkTreeViewColumn *column;
 	GtkCellRenderer *renderer;
 
-        metaserver_window = glade_xml_get_widget (xml, "metaserver_window");
+        metaserver_window = glade_xml_get_widget (dialog_xml,
+            "metaserver_window");
         xml_tree = glade_get_widget_tree(GTK_WIDGET(metaserver_window));
 
 	gtk_window_set_transient_for(GTK_WINDOW(metaserver_window), GTK_WINDOW(window_root));

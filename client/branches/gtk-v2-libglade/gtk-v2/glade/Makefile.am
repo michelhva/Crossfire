@@ -25,6 +25,7 @@
 
 XML_FILES = \
 	chthonic.glade \
+	dialogs.glade \
 	gtk-v1.glade \
 	gtk-v2.glade \
  	meflin.glade
