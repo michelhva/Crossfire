@@ -32,7 +32,9 @@ XML_FILES = \
 
 PRJ_FILES = $(foreach XML,$(XML_FILES),$(XML)p)
 
-pkgdata_DATA = $(XML_FILES)
+gladedir=$(pkgdatadir)/glade-gtk2
+
+glade_DATA = $(XML_FILES)
 
 EXTRA_DIST = \
 	$(XML_FILES) \
