@@ -16,7 +16,7 @@ color_fg grey
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 editable 32
 Cha 20
 other_arch spell_magic_drain

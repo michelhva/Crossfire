@@ -11,8 +11,8 @@ mina
 is_animated 0
 no_pick 1
 weight 1000000
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 visibility 50
 magicmap grey
 end

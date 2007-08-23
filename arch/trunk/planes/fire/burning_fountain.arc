@@ -7,7 +7,7 @@ burning_fountain.111
 burning_fountain.112
 burning_fountain.113
 mina
-walk_on	1
+move_on walk
 anim_speed 2
 client_anim_random 1
 color_fg grey

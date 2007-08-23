@@ -11,7 +11,7 @@ is_animated 0
 invisible 1
 color_fg grey
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 32770
 no_magic 1
 dam 1

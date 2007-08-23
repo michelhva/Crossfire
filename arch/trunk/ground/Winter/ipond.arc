@@ -2,7 +2,7 @@ Object ipond
 name small pond
 type 67
 race /terrain/plains
-walk_on 1
+move_on walk
 face ipond.111
 color_fg blue
 no_pick 1

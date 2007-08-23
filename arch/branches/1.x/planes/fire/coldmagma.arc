@@ -18,7 +18,7 @@ mina
 type 102
 subtype 7
 level 30000
-walk_on 1
+move_on walk
 is_floor 1
 is_animated 1
 speed 0.15

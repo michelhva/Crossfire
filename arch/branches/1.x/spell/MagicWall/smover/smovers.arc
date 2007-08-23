@@ -36,8 +36,7 @@ speed 0.2
 type 40
 no_pick 1
 maxsp 1
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -58,8 +57,7 @@ invisible 0
 type 40
 no_pick 1
 sp 1
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -82,8 +80,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 2
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -104,8 +101,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 3
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -128,8 +124,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 4
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -150,8 +145,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 5
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -174,8 +168,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 6
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -196,8 +189,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 7
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end
@@ -220,8 +212,7 @@ speed -0.4
 type 40
 no_pick 1
 sp 8
-walk_on 1
-fly_on 0
+move_on walk
 editable 32
 visibility 50
 end

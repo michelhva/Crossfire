@@ -17,7 +17,7 @@ color_fg orange
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 editable 32
 attacktype 1
 dam 90

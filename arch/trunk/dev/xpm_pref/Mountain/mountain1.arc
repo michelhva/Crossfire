@@ -3,7 +3,7 @@ name mountains
 face mountain1.111
 type 67
 race /terrain/mountain
-walk_on 1
+move_on walk
 color_fg grey
 no_pick 1
 blocksview 1

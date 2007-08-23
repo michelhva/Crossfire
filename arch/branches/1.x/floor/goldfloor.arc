@@ -14,7 +14,7 @@ goldfloor.111
 woodfloor.111
 mina
 no_pick 1
-walk_on 1
+move_on walk
 color_bg dark_orange
 editable 48
 is_floor 1

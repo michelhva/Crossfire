@@ -6,7 +6,7 @@ other_arch mithril_ar_ele
 slaying mithril
 food 500
 no_pick 1
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end

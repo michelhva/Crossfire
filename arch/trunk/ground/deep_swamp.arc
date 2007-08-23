@@ -10,7 +10,7 @@ mina
 color_fg green
 no_pick 1
 is_water 1
-walk_on 1
+move_on walk
 slow_move 5
 is_wooded 1
 smoothlevel 8

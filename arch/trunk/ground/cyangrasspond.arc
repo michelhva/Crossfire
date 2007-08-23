@@ -2,7 +2,7 @@ Object cyangrasspond
 name small pond
 type 67
 race /terrain/plains
-walk_on 1
+move_on walk
 face cyangrasspond.111
 color_fg green
 no_pick 1

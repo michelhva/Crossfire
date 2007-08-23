@@ -7,8 +7,7 @@ subtype 5
 face v_splash.111
 animation vitriol_splash
 is_turnable 0
-walk_on 1
-fly_on 1
+move_on walk fly_low
 glow_radius 2
 speed 1
 move_type fly_low
@@ -30,8 +29,7 @@ v_splash.111
 v_splash.112
 mina
 is_turnable 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 glow_radius 2
 speed 1
 wc -30
@@ -46,7 +44,7 @@ Object vitriol_pool
 type 102
 subtype 7
 level 1
-walk_on 1
+move_on walk
 wc -30
 stand_still 1
 name vitriol pool

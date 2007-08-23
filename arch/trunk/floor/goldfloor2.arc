@@ -14,7 +14,7 @@ goldfloor2.111
 woodfloor2.111
 mina
 no_pick 1
-walk_on 1
+move_on walk
 is_floor 1
 magicmap dark_orange
 end

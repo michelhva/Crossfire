@@ -21,7 +21,7 @@ gem.111
 mina
 anim_speed 2
 client_anim_random 1
-walk_on 1
+move_on walk
 visibility 100
 end
 
@@ -48,7 +48,7 @@ ruby.111
 mina
 anim_speed 2
 client_anim_random 1
-walk_on 1
+move_on walk
 visibility 100
 end
 
@@ -75,6 +75,6 @@ pearl.111
 mina
 anim_speed 2
 client_anim_random 1
-walk_on 1
+move_on walk
 visibility 100
 end

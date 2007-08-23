@@ -2,7 +2,7 @@ Object beach
 face beach.111
 type 67
 race /terrain/desert
-walk_on 1
+move_on walk
 no_pick 1
 slow_move 1
 is_wooded 0

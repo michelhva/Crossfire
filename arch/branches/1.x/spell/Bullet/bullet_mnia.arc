@@ -14,8 +14,7 @@ mina
 is_animated 0
 is_turnable 0
 no_pick 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 speed 10
 attacktype 32770
 wc -30

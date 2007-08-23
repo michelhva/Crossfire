@@ -2,7 +2,7 @@ Object s_bridge2
 name bridge
 face s_bridge2.111
 type 67
-walk_on 1
+move_on walk
 no_pick 1
 magicmap grey
 editable 2
@@ -11,7 +11,7 @@ Object s_bridge2a
 name bridge
 face s_bridge2a.111
 type 67
-walk_on 1
+move_on walk
 no_pick 1
 magicmap grey
 editable 2
@@ -20,7 +20,7 @@ Object s_bridge2b
 name bridge
 face s_bridge2b.111
 type 67
-walk_on 1
+move_on walk
 no_pick 1
 magicmap grey
 editable 2

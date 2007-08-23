@@ -10,8 +10,7 @@ exit.113
 exit.115
 exit.117
 mina
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 2
 visibility 100
 client_type 25012

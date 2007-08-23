@@ -5,6 +5,6 @@ food 200
 type 139
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end

@@ -16,6 +16,6 @@ color_fg light_blue
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 other_arch spell_transference
 end

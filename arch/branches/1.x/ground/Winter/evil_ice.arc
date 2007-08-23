@@ -2,7 +2,7 @@ Object evil_ice
 type 102
 subtype 7
 level 1
-walk_on 1
+move_on walk
 wc -30
 lifesave 1
 name strange looking ice

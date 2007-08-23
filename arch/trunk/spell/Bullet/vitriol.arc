@@ -42,7 +42,7 @@ Object vitriol_pool
 type 102
 subtype 7
 level 1
-walk_on 1
+move_on walk
 wc -30
 stand_still 1
 name vitriol pool

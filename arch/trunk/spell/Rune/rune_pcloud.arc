@@ -17,6 +17,6 @@ color_fg green
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 Cha 20
 end
