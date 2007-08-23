@@ -10,7 +10,7 @@ altar.111
 altar.112
 mina
 no_pick 1
-walk_on 1
+move_on walk
 visibility 50
 magicmap grey
 end

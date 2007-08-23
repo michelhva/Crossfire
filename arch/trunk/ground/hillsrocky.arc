@@ -3,7 +3,7 @@ name hills
 face hillsrocky.111
 type 67
 race /terrain/hills
-walk_on 1
+move_on walk
 is_hilly 1
 no_pick 1
 slow_move 2

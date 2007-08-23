@@ -3,7 +3,7 @@
 Object chaos
 type 102
 subtype 7
-walk_on 1
+move_on walk
 level 1
 wc -30
 lifesave 1
@@ -32,7 +32,7 @@ end
 Object major_chaos
 type 102
 subtype 7
-walk_on 1
+move_on walk
 level 1
 wc -30
 lifesave 1

@@ -6,7 +6,7 @@ other_arch dragon_mail
 slaying dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -18,7 +18,7 @@ other_arch blue_dragon_mail
 slaying blue_dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -30,7 +30,7 @@ other_arch green_dragon_mail
 slaying green_dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end

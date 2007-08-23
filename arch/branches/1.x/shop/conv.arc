@@ -6,7 +6,7 @@ food 40
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 magicmap light_blue
@@ -19,7 +19,7 @@ type 103
 food 5
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -31,7 +31,7 @@ food 20
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -43,7 +43,7 @@ food 10
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -55,7 +55,7 @@ food 5
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -68,7 +68,7 @@ sp 5
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -80,7 +80,7 @@ food 100
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -92,7 +92,7 @@ food 100
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end

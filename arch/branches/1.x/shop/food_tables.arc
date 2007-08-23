@@ -6,7 +6,7 @@ food 7
 type 103
 no_pick 1
 face table_2.111
-walk_on 1
+move_on walk
 editable 64
 end
 Object dragon_steak_table
@@ -17,7 +17,7 @@ food 15
 type 103
 no_pick 1
 face table_2.111
-walk_on 1
+move_on walk
 editable 64
 end
 Object waybread_table
@@ -28,7 +28,7 @@ food 25
 type 103
 no_pick 1
 face table_2.111
-walk_on 1
+move_on walk
 editable 64
 end
 Object booze_table
@@ -39,6 +39,6 @@ food 3
 type 103
 no_pick 1
 face table_2.111
-walk_on 1
+move_on walk
 editable 64
 end

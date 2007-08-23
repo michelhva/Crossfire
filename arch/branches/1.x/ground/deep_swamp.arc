@@ -11,7 +11,7 @@ color_fg green
 color_bg grey
 no_pick 1
 is_water 1
-walk_on 1
+move_on walk
 slow_move 5
 is_wooded 1
 editable 8

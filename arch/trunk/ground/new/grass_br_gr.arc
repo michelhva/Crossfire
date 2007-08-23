@@ -2,7 +2,7 @@ Object grass_br_gr
 name dying grass
 face grass_br_gr.111
 type 67
-walk_on 1
+move_on walk
 is_floor 1
 color_fg green
 no_pick 1

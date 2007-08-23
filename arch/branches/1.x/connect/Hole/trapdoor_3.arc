@@ -6,7 +6,7 @@ anim
 trapdoor_3.111
 hole.111
 mina
-walk_on 1
+move_on walk
 no_pick 1
 weight 1
 editable 2

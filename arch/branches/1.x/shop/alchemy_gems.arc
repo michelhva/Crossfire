@@ -20,7 +20,7 @@ polymorph.114
 gem.111
 mina
 speed 0.4
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -46,7 +46,7 @@ polymorph.114
 ruby.111
 mina
 speed 0.4
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end
@@ -72,7 +72,7 @@ polymorph.114
 pearl.111
 mina
 speed 0.4
-walk_on 1
+move_on walk
 editable 64
 visibility 100
 end

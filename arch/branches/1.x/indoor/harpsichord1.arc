@@ -6,7 +6,7 @@ type 31
 exp 30
 face harpsichord1.x11
 no_pick 1
-walk_on 1
+move_on walk
 editable 48
 visibility 50
 end
@@ -20,7 +20,7 @@ x 1
 exp 30
 face harpsichord1.x11
 no_pick 1
-walk_on 1
+move_on walk
 editable 48
 visibility 50
 end
@@ -34,7 +34,7 @@ y 1
 exp 30
 face harpsichord1.x11
 no_pick 1
-walk_on 1
+move_on walk
 editable 48
 visibility 50
 end
@@ -49,7 +49,7 @@ y 1
 exp 30
 face harpsichord1.x11
 no_pick 1
-walk_on 1
+move_on walk
 editable 48
 visibility 50
 end

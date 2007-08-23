@@ -10,7 +10,7 @@ mina
 is_animated 0
 exp 30
 no_pick 1
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 visibility 50
 end

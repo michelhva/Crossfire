@@ -11,6 +11,6 @@ altar.112
 mina
 is_animated 0
 no_pick 1
-walk_on 1
+move_on walk
 visibility 50
 end

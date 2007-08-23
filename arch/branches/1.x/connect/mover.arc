@@ -33,8 +33,7 @@ speed 0.2
 type 40
 no_pick 1
 maxsp 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -52,8 +51,7 @@ invisible 1
 type 40
 no_pick 1
 sp 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -73,8 +71,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 2
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -92,8 +89,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 3
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -113,8 +109,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 4
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -131,9 +126,8 @@ magicmap blue
 speed -0.2
 type 40
 no_pick 1
+move_on walk fly_low
 sp 5
-walk_on 1
-fly_on 1
 editable 32
 visibility 50
 end
@@ -153,8 +147,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 6
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -172,8 +165,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end
@@ -193,8 +185,7 @@ speed -0.2
 type 40
 no_pick 1
 sp 8
-walk_on 1
-fly_on 1
+move_on walk fly_low
 editable 32
 visibility 50
 end

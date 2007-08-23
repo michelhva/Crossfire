@@ -5,8 +5,7 @@ speed 1
 type 90
 no_pick 1
 sp 3
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.111
 spinner.113
@@ -27,8 +26,7 @@ speed 1
 type 90
 no_pick 1
 sp 2
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.111
 spinner.112
@@ -55,8 +53,7 @@ speed 0.5
 type 90
 no_pick 1
 sp 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.111
 spinner.112
@@ -83,8 +80,7 @@ speed 0.5
 type 90
 no_pick 1
 sp -1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.11D
 spinner.11C
@@ -111,8 +107,7 @@ speed 1
 type 90
 no_pick 1
 sp -2
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.11D
 spinner.11C
@@ -139,8 +134,7 @@ speed 1
 type 90
 no_pick 1
 sp -3
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.11D
 spinner.11B
@@ -161,8 +155,7 @@ speed 1
 type 90
 no_pick 1
 sp 4
-walk_on 1
-fly_on 1
+move_on walk fly_low
 anim
 spinner.111
 spinner.114

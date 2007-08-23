@@ -1,7 +1,7 @@
 Object ice
 name ice
 face ice.111
-walk_on 1
+move_on walk
 slow_move 8
 no_pick 1
 editable 8

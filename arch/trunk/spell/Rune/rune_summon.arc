@@ -18,7 +18,7 @@ color_fg white
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 2
 dam 90
 Cha 20
@@ -45,7 +45,7 @@ color_fg black
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 2
 dam 90
 Cha 20
@@ -72,7 +72,7 @@ color_fg brown
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 2
 dam 90
 Cha 20
@@ -98,7 +98,7 @@ color_fg red
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 2
 dam 90
 Cha 20
@@ -125,7 +125,7 @@ color_fg blue
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 2
 dam 90
 Cha 20

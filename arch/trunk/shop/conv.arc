@@ -6,7 +6,7 @@ food 40
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 magicmap light_blue
 end
@@ -18,7 +18,7 @@ type 103
 food 5
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object ruby_converter
@@ -29,7 +29,7 @@ food 20
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object silver_converter
@@ -40,7 +40,7 @@ food 10
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object gold_converter
@@ -51,7 +51,7 @@ food 5
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object platinum_converter
@@ -63,7 +63,7 @@ sp 5
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object platinum_converter2
@@ -74,7 +74,7 @@ food 100
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end
 Object jade_converter
@@ -85,6 +85,6 @@ food 100
 type 103
 no_pick 1
 face conv.111
-walk_on 1
+move_on walk
 visibility 100
 end

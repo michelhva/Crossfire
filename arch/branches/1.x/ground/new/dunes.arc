@@ -2,7 +2,7 @@ Object dunes
 face dunes.111
 type 67
 race /terrain/desert
-walk_on 1
+move_on walk
 color_fg green
 color_bg yellow
 no_pick 1

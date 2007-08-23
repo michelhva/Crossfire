@@ -9,7 +9,7 @@ mina
 type 102
 subtype 7
 level 1
-walk_on 1
+move_on walk
 lifesave 1
 wc -30
 dam 3

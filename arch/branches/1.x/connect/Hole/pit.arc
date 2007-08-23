@@ -44,7 +44,7 @@ hole.119
 hole.11A
 mina
 is_animated 0
-walk_on 1
+move_on walk
 wc 0
 maxsp 1
 editable 18

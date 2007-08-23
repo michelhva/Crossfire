@@ -5,8 +5,7 @@ name chaos
 type 102
 subtype 7
 level 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 wc -30
 lifesave 1
 face ball_lightning.111

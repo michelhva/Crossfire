@@ -45,7 +45,7 @@ hole_white-any-c-marble.111
 white-pink-c-marble.111
 mina
 is_animated 0
-walk_on 1
+move_on walk
 wc 0
 maxsp 1
 visibility 50
@@ -100,7 +100,7 @@ hole_white-any-c-marble.112
 white-pink-c-marble.112
 mina
 is_animated 0
-walk_on 1
+move_on walk
 wc 0
 maxsp 1
 visibility 50
@@ -155,7 +155,7 @@ hole_white-any-c-marble.113
 white-pink-c-marble.113
 mina
 is_animated 0
-walk_on 1
+move_on walk
 wc 0
 maxsp 1
 visibility 50
@@ -210,7 +210,7 @@ hole_white-any-c-marble.114
 white-pink-c-marble.114
 mina
 is_animated 0
-walk_on 1
+move_on walk
 wc 0
 maxsp 1
 visibility 50

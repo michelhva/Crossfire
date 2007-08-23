@@ -2,7 +2,7 @@ Object swamp
 face swamp.111
 type 67
 race /terrain/swamp
-walk_on 1
+move_on walk
 color_bg green
 color_fg brown
 no_pick 1

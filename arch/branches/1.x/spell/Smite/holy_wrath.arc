@@ -15,6 +15,5 @@ speed_left -0.21
 move_type fly_low
 no_pick 1
 editable 0
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end

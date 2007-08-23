@@ -6,7 +6,7 @@ other_arch dragon_mail
 slaying dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 visibility 100
 end
 Object create_blue_dragon_mail
@@ -17,7 +17,7 @@ other_arch blue_dragon_mail
 slaying blue_dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 visibility 100
 end
 Object create_green_dragon_mail
@@ -28,6 +28,6 @@ other_arch green_dragon_mail
 slaying green_dragon_scale
 food 5
 no_pick 1
-walk_on 1
+move_on walk
 visibility 100
 end

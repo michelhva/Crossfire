@@ -3,7 +3,7 @@ name cold marsh
 face cmarsh.111
 type 67
 race /terrain/swamp
-walk_on 1
+move_on walk
 color_fg green
 no_pick 1
 is_water 1

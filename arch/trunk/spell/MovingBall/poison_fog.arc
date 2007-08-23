@@ -12,7 +12,7 @@ mina
 color_fg green
 is_used_up 1
 is_animated 1
-walk_on 1
+move_on walk
 move_type fly_low
 no_pick 1
 speed 0.2

@@ -16,7 +16,7 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 editable 32
 attacktype 18
 dam 35
@@ -41,7 +41,7 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 editable 32
 Cha 20
 end
@@ -64,7 +64,7 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 editable 32
 Cha 20
 end

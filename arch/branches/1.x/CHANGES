@@ -152,7 +152,7 @@ Added level 1 to all archetypes with type 88 (CONE) that can do damage.
 
 ground/chaos.arc, arch chaos and arch major_chaos
 ground/lava.arc, arch lava and arch permanent_lava
-Added walk_on 1.
+Added move_on walk.
 
 ground/chaos_ball.arc, arch chaos_ball
 magic/banishment.arc, arch banishment
@@ -170,7 +170,7 @@ magic/Effect/paralyze.arc, arch paralyze
 magic/Effect/slow.arc, arch slow
 magic/Effect/turnundead.arc, arch turn_undead
 magic/Mana/manablast.arc, arch manablast
-Added walk_on 1 and fly_on 1.
+Added move_on walk and fly_on 1.
 
 connect/trig_altar.arc
 connect/trig_lever.arc
@@ -209,10 +209,10 @@ Some archetypes had fly_on or walk_on set, although they were not handled
 by move_apply().  - Jan Echternach 5/16/2000
 
 ground/sea.arc, arch sea1
-Removed walk_on 1.
+Removed move_on walk.
 
 ground/meteor.arc, arch fire_trail
-Removed walk_on 1 and fly_on 1.
+Removed move_on walk and fly_on 1.
 
 
 spell/gu_horn.arc, spell/horn.arc, spell/horn1.arc, spell/horn3.arc

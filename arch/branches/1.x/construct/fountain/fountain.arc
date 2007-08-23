@@ -7,7 +7,7 @@ fountain.111
 fountain.112
 fountain.113
 mina
-walk_on	1
+move_on walk
 speed 0.50
 magicmap grey
 editable 2

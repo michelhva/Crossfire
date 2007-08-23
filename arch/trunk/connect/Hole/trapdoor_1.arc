@@ -6,7 +6,7 @@ anim
 trapdoor_1.111
 hole.111
 mina
-walk_on 1
+move_on walk
 no_pick 1
 weight 100000
 visibility 50

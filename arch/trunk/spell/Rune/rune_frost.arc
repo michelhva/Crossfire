@@ -16,7 +16,7 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 attacktype 18
 dam 35
 Cha 20
@@ -40,7 +40,7 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 Cha 20
 end
 Object rune_large_icestorm
@@ -62,6 +62,6 @@ level 1
 is_animated 0
 invisible 1
 no_pick 1
-walk_on 1
+move_on walk
 Cha 20
 end
