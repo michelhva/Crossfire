@@ -1202,8 +1202,7 @@ if necessary.
 endmsg
 x 5
 y 8
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch magic_mouth
 msg

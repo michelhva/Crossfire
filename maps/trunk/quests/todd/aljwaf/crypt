@@ -112,7 +112,7 @@ You hear the sound of shifting sand...
 endmsg
 x 1
 y 1
-fly_on 0
+move_on walk
 end
 arch dirtfloor
 x 1
@@ -646,7 +646,7 @@ endmsg
 food 1
 x 5
 y 11
-fly_on 0
+move_on walk
 end
 arch marble
 x 5
@@ -1123,7 +1123,7 @@ Creak.
 endmsg
 x 10
 y 5
-fly_on 0
+move_on walk
 end
 arch dirtfloor
 x 10

@@ -388,8 +388,7 @@ Thanks for saving us from Guuh and his bandits!
 You may take whatever you wish from our treasure room.
 endmsg
 connected 4
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 3
 y 7
@@ -857,8 +856,7 @@ A gang of bandits have broken into our storehouse.
 Please help us save our livestock!
 endmsg
 connected 7
-walk_on 0
-fly_on 0
+move_on 0
 x 8
 y 7
 end

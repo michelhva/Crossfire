@@ -2703,7 +2703,7 @@ slaying pshop14
 x 12
 y 3
 connected 2
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2724,7 +2724,7 @@ slaying pshop14
 x 12
 y 4
 move_block all
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2744,7 +2744,7 @@ slaying pshop14
 x 12
 y 5
 connected 2
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2840,7 +2840,7 @@ slaying pshop14
 x 12
 y 12
 connected 1
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2861,7 +2861,7 @@ slaying pshop14
 x 12
 y 13
 move_block all
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2882,7 +2882,7 @@ slaying pshop14
 x 12
 y 14
 connected 1
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12

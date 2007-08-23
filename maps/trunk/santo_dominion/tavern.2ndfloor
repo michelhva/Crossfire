@@ -4408,7 +4408,7 @@ x 23
 y 25
 type 0
 attacktype 0
-walk_on 0
+move_on 0
 lifesave 0
 end
 arch boulder
@@ -5522,8 +5522,7 @@ endmsg
 x 29
 y 26
 connected 14
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 name 13
@@ -5534,8 +5533,7 @@ endmsg
 x 29
 y 26
 connected 13
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 name 12
@@ -5546,8 +5544,7 @@ endmsg
 x 29
 y 26
 connected 12
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 name 11
@@ -5558,8 +5555,7 @@ endmsg
 x 29
 y 26
 connected 11
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch blocked
 x 29
@@ -5933,8 +5929,7 @@ endmsg
 x 31
 y 26
 connected 20
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 31

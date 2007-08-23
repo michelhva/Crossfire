@@ -913,8 +913,7 @@ Go to your doom robber!
 endmsg
 x 5
 connected 7
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dun_2_1_2
 x 5
@@ -1939,8 +1938,7 @@ Shazzamm!
 endmsg
 x 10
 connected 9
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dun_2_1_2
 x 10
@@ -3296,8 +3294,7 @@ endmsg
 x 16
 y 22
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch stonefloor2
 x 16
@@ -3832,7 +3829,7 @@ No man may enter the tomb of Al Jwaf.
 endmsg
 x 19
 y 2
-fly_on 0
+move_on walk
 end
 arch stonefloor2
 x 19

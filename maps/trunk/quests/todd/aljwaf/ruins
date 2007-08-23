@@ -1974,8 +1974,7 @@ endmsg
 x 13
 y 17
 connected 4
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch desert
 x 13
@@ -2091,8 +2090,7 @@ endmsg
 x 14
 y 11
 connected 3
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch desert
 x 14
@@ -2895,8 +2893,7 @@ food 1
 x 19
 y 11
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch bwall_4
 x 19

@@ -1195,8 +1195,8 @@ x 4
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1218,8 +1218,8 @@ x 4
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1236,8 +1236,8 @@ x 4
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1254,8 +1254,8 @@ x 4
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 4
@@ -1362,9 +1362,8 @@ slaying wurfbude
 x 4
 y 19
 connected 2
-walk_off 0
-fly_on 1
-fly_off 0
+move_on walk fly_low
+move_off 0
 end
 arch check_inv
 slaying wurfbude
@@ -1372,9 +1371,8 @@ x 4
 y 19
 last_sp 0
 connected 11
-walk_off 0
-fly_on 1
-fly_off 0
+move_on walk fly_low
+move_off 0
 end
 arch teleporter
 name exit here
@@ -1557,8 +1555,8 @@ x 5
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1580,8 +1578,8 @@ x 5
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1598,8 +1596,8 @@ x 5
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1616,8 +1614,8 @@ x 5
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 5
@@ -1986,8 +1984,8 @@ x 6
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2009,8 +2007,8 @@ x 6
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2027,8 +2025,8 @@ x 6
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2045,8 +2043,8 @@ x 6
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 6
@@ -2365,8 +2363,8 @@ x 7
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2388,8 +2386,8 @@ x 7
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2406,8 +2404,8 @@ x 7
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2424,8 +2422,8 @@ x 7
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 7
@@ -2722,8 +2720,8 @@ x 8
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2745,8 +2743,8 @@ x 8
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2763,8 +2761,8 @@ x 8
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2781,8 +2779,8 @@ x 8
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 8
@@ -3100,8 +3098,8 @@ x 9
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3123,8 +3121,8 @@ x 9
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3141,8 +3139,8 @@ x 9
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3159,8 +3157,8 @@ x 9
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 9
@@ -3379,9 +3377,8 @@ slaying wurfbude
 x 9
 y 24
 connected 2
-walk_off 0
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off fly_low
 end
 arch check_inv
 slaying wurfbude
@@ -3389,8 +3386,8 @@ x 9
 y 24
 last_sp 0
 connected 1
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch teleporter
 name enter here
@@ -4166,8 +4163,7 @@ endmsg
 x 11
 y 25
 connected 11
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_magic
 x 11

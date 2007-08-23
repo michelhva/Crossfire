@@ -1089,8 +1089,6 @@ hp 5
 sp 34
 x 4
 y 4
-walk_on 0
-fly_on 0
 end
 arch woodfloor2
 x 4
@@ -1550,8 +1548,6 @@ hp 46
 sp 46
 x 6
 y 4
-walk_on 0
-fly_on 0
 end
 arch woodfloor2
 x 6
@@ -2065,8 +2061,6 @@ hp 28
 sp 37
 x 8
 y 4
-walk_on 0
-fly_on 0
 end
 arch woodfloor2
 x 8
@@ -2256,7 +2250,7 @@ x 8
 y 30
 last_sp 0
 connected 321
-walk_off 0
+move_off 0
 end
 arch altar
 name 320
@@ -2603,8 +2597,6 @@ slaying /world/world_109_126
 hp 16
 x 10
 y 4
-walk_on 0
-fly_on 0
 end
 arch woodfloor2
 x 10

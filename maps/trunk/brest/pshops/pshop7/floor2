@@ -84,8 +84,7 @@ arch pit_closed
 connected 1
 hp 21
 sp 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 y 23
 end
 arch mouse
@@ -486,8 +485,7 @@ arch pit_closed
 connected 1
 hp 9
 sp 14
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 2
 y 23
 end
@@ -753,8 +751,7 @@ arch pit_closed
 connected 1
 hp 8
 sp 11
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 3
 y 23
 end
@@ -1042,8 +1039,7 @@ arch pit_closed
 connected 1
 hp 16
 sp 6
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 4
 y 23
 end
@@ -1530,8 +1526,7 @@ arch pit_closed
 connected 1
 hp 7
 sp 9
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 6
 y 23
 end
@@ -2051,8 +2046,7 @@ arch pit_closed
 connected 1
 hp 5
 sp 6
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 8
 y 23
 end
@@ -2415,7 +2409,7 @@ arch check_floor
 slaying pshop7
 connected 41
 move_block all
-walk_off 1
+move_off walk
 x 10
 y 11
 end
@@ -2684,7 +2678,7 @@ end
 arch check_floor
 slaying pshop7
 move_block all
-walk_off 1
+move_off walk
 x 11
 y 11
 end
@@ -2988,7 +2982,7 @@ end
 arch check_floor
 slaying pshop7
 connected 41
-walk_off 1
+move_off walk
 x 12
 y 11
 end
@@ -3881,7 +3875,7 @@ arch check_floor
 slaying pshop7
 connected 42
 move_block all
-walk_off 1
+move_off walk
 x 15
 y 7
 end
@@ -3903,7 +3897,7 @@ end
 arch check_floor
 slaying pshop7
 move_block all
-walk_off 1
+move_off walk
 x 15
 y 8
 end
@@ -3932,7 +3926,7 @@ end
 arch check_floor
 slaying pshop7
 connected 42
-walk_off 1
+move_off walk
 x 15
 y 9
 end
@@ -4033,7 +4027,7 @@ end
 arch check_floor
 slaying pshop7
 connected 40
-walk_off 1
+move_off walk
 x 15
 y 13
 end
@@ -4055,7 +4049,7 @@ end
 arch check_floor
 slaying pshop7
 move_block all
-walk_off 1
+move_off walk
 x 15
 y 14
 end
@@ -4073,7 +4067,7 @@ arch check_floor
 slaying pshop7
 connected 40
 move_block all
-walk_off 1
+move_off walk
 x 15
 y 15
 end
@@ -4953,7 +4947,7 @@ end
 arch check_floor
 slaying pshop7
 connected 43
-walk_off 1
+move_off walk
 x 18
 y 11
 end
@@ -5244,7 +5238,7 @@ end
 arch check_floor
 slaying pshop7
 move_block all
-walk_off 1
+move_off walk
 x 19
 y 11
 end
@@ -5505,7 +5499,7 @@ arch check_floor
 slaying pshop7
 connected 43
 move_block all
-walk_off 1
+move_off walk
 x 20
 y 11
 end

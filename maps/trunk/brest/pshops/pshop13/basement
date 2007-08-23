@@ -562,7 +562,7 @@ slaying pshop13
 x 3
 y 20
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 4
@@ -1163,7 +1163,7 @@ slaying pshop13
 x 7
 y 13
 move_block all
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 7
@@ -1183,7 +1183,7 @@ slaying pshop13
 x 7
 y 14
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 7
@@ -2761,7 +2761,7 @@ slaying pshop13
 x 18
 y 3
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 18
@@ -2778,7 +2778,7 @@ slaying pshop13
 x 18
 y 4
 move_block all
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 18
@@ -2798,7 +2798,7 @@ slaying pshop13
 x 18
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch dirtfloor
 x 18

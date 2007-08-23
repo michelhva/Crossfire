@@ -178,7 +178,7 @@ arch mover_2
 x 1
 y 6
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 1
@@ -188,7 +188,7 @@ arch mover_1
 x 1
 y 7
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 1
@@ -198,7 +198,7 @@ arch mover_1
 x 1
 y 8
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 1
@@ -208,7 +208,7 @@ arch mover_1
 x 1
 y 9
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 1
@@ -218,7 +218,7 @@ arch mover_1
 x 1
 y 10
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 1
@@ -271,7 +271,7 @@ arch mover_7
 x 1
 y 18
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch ape
 msg
@@ -327,7 +327,7 @@ arch mover_3
 x 2
 y 5
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch marble
 x 2
@@ -379,7 +379,7 @@ arch mover_8
 x 2
 y 11
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 2
@@ -423,7 +423,7 @@ arch mover_7
 x 2
 y 18
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch ape
 msg
@@ -484,7 +484,7 @@ arch mover_3
 x 3
 y 5
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch marble
 x 3
@@ -550,7 +550,7 @@ arch mover_7
 x 3
 y 11
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 3
@@ -604,7 +604,7 @@ arch mover_7
 x 3
 y 18
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 4
@@ -636,7 +636,7 @@ arch mover_4
 x 4
 y 5
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch marble
 x 4
@@ -688,7 +688,7 @@ arch mover_7
 x 4
 y 11
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 4
@@ -784,7 +784,7 @@ arch mover_5
 x 5
 y 6
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 5
@@ -794,7 +794,7 @@ arch mover_5
 x 5
 y 7
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 5
@@ -804,7 +804,7 @@ arch mover_5
 x 5
 y 8
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 5
@@ -814,7 +814,7 @@ arch mover_5
 x 5
 y 9
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 5
@@ -824,7 +824,7 @@ arch mover_6
 x 5
 y 10
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 5
@@ -912,8 +912,7 @@ food 1
 x 6
 y 8
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch flagstone
 x 6
@@ -2128,7 +2127,7 @@ arch mover_3
 x 17
 y 18
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch ape
 msg
@@ -2256,7 +2255,7 @@ arch mover_3
 x 18
 y 18
 attacktype 1
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 19

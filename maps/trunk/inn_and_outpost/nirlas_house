@@ -440,7 +440,7 @@ hp 4
 sp 25
 x 1
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 1
@@ -452,7 +452,7 @@ hp 4
 sp 25
 x 1
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 1
@@ -464,7 +464,7 @@ hp 4
 sp 25
 x 1
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 1
@@ -476,7 +476,7 @@ hp 4
 sp 25
 x 1
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 1
@@ -703,7 +703,7 @@ hp 4
 sp 25
 x 2
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 2
@@ -715,7 +715,7 @@ hp 4
 sp 25
 x 2
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 2
@@ -727,7 +727,7 @@ hp 4
 sp 25
 x 2
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 2
@@ -739,7 +739,7 @@ hp 4
 sp 25
 x 2
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 2
@@ -976,7 +976,7 @@ hp 4
 sp 25
 x 3
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 3
@@ -988,7 +988,7 @@ hp 4
 sp 25
 x 3
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 3
@@ -1000,7 +1000,7 @@ hp 4
 sp 25
 x 3
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 3
@@ -1012,7 +1012,7 @@ hp 4
 sp 25
 x 3
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 3
@@ -1024,7 +1024,7 @@ hp 4
 sp 25
 x 3
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 3
@@ -1302,7 +1302,7 @@ hp 4
 sp 25
 x 4
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 4
@@ -1314,7 +1314,7 @@ hp 4
 sp 25
 x 4
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 4
@@ -1582,7 +1582,7 @@ hp 4
 sp 25
 x 5
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 5
@@ -1594,7 +1594,7 @@ hp 4
 sp 25
 x 5
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 5
@@ -2031,7 +2031,7 @@ hp 4
 sp 25
 x 7
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 7
@@ -2043,7 +2043,7 @@ hp 4
 sp 25
 x 7
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 7
@@ -2055,7 +2055,7 @@ hp 4
 sp 25
 x 7
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 7
@@ -2067,7 +2067,7 @@ hp 4
 sp 25
 x 7
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 7
@@ -2079,7 +2079,7 @@ hp 4
 sp 25
 x 7
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 7
@@ -2271,7 +2271,7 @@ hp 4
 sp 25
 x 8
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 8
@@ -2297,7 +2297,7 @@ hp 4
 sp 25
 x 8
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 8
@@ -2348,7 +2348,7 @@ hp 4
 sp 25
 x 8
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 8
@@ -2512,7 +2512,7 @@ hp 4
 sp 25
 x 9
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 9
@@ -2571,7 +2571,7 @@ hp 4
 sp 25
 x 9
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 9
@@ -2583,7 +2583,7 @@ hp 4
 sp 25
 x 9
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 9
@@ -2595,7 +2595,7 @@ hp 4
 sp 25
 x 9
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 9
@@ -2733,7 +2733,7 @@ hp 4
 sp 25
 x 10
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 10
@@ -2807,7 +2807,7 @@ hp 4
 sp 25
 x 10
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 10
@@ -2819,7 +2819,7 @@ hp 4
 sp 25
 x 10
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 10
@@ -2971,7 +2971,7 @@ hp 4
 sp 25
 x 11
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 11
@@ -3048,7 +3048,7 @@ hp 4
 sp 25
 x 11
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 11
@@ -3202,7 +3202,7 @@ hp 4
 sp 25
 x 12
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 12
@@ -3432,7 +3432,7 @@ hp 4
 sp 25
 x 13
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3444,7 +3444,7 @@ hp 4
 sp 25
 x 13
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3456,7 +3456,7 @@ hp 4
 sp 25
 x 13
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3468,7 +3468,7 @@ hp 4
 sp 25
 x 13
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3480,7 +3480,7 @@ hp 4
 sp 25
 x 13
 y 21
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3534,7 +3534,7 @@ hp 4
 sp 25
 x 13
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 13
@@ -3684,7 +3684,7 @@ hp 4
 sp 25
 x 14
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3696,7 +3696,7 @@ hp 4
 sp 25
 x 14
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3708,7 +3708,7 @@ hp 4
 sp 25
 x 14
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3720,7 +3720,7 @@ hp 4
 sp 25
 x 14
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3732,7 +3732,7 @@ hp 4
 sp 25
 x 14
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3779,7 +3779,7 @@ hp 4
 sp 25
 x 14
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3791,7 +3791,7 @@ hp 4
 sp 25
 x 14
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3803,7 +3803,7 @@ hp 4
 sp 25
 x 14
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 14
@@ -3842,7 +3842,7 @@ hp 4
 sp 25
 x 15
 y 2
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3854,7 +3854,7 @@ hp 4
 sp 25
 x 15
 y 3
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3866,7 +3866,7 @@ hp 4
 sp 25
 x 15
 y 4
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3878,7 +3878,7 @@ hp 4
 sp 25
 x 15
 y 5
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3895,7 +3895,7 @@ hp 4
 sp 25
 x 15
 y 7
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3971,7 +3971,7 @@ hp 4
 sp 25
 x 15
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3983,7 +3983,7 @@ hp 4
 sp 25
 x 15
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -3999,7 +3999,7 @@ hp 4
 sp 25
 x 15
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4011,7 +4011,7 @@ hp 4
 sp 25
 x 15
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4023,7 +4023,7 @@ hp 4
 sp 25
 x 15
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4066,7 +4066,7 @@ hp 4
 sp 25
 x 15
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4078,7 +4078,7 @@ hp 4
 sp 25
 x 15
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4090,7 +4090,7 @@ hp 4
 sp 25
 x 15
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 15
@@ -4122,7 +4122,7 @@ hp 4
 sp 25
 x 16
 y 1
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4134,7 +4134,7 @@ hp 4
 sp 25
 x 16
 y 2
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4146,7 +4146,7 @@ hp 4
 sp 25
 x 16
 y 3
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4158,7 +4158,7 @@ hp 4
 sp 25
 x 16
 y 4
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4170,7 +4170,7 @@ hp 4
 sp 25
 x 16
 y 5
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4187,7 +4187,7 @@ hp 4
 sp 25
 x 16
 y 7
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4199,7 +4199,7 @@ hp 4
 sp 25
 x 16
 y 8
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4211,7 +4211,7 @@ hp 4
 sp 25
 x 16
 y 9
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4223,7 +4223,7 @@ hp 4
 sp 25
 x 16
 y 10
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4235,7 +4235,7 @@ hp 4
 sp 25
 x 16
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4247,7 +4247,7 @@ hp 4
 sp 25
 x 16
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4294,7 +4294,7 @@ hp 4
 sp 25
 x 16
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4306,7 +4306,7 @@ hp 4
 sp 25
 x 16
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4318,7 +4318,7 @@ hp 4
 sp 25
 x 16
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4369,7 +4369,7 @@ hp 4
 sp 25
 x 16
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4381,7 +4381,7 @@ hp 4
 sp 25
 x 16
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4393,7 +4393,7 @@ hp 4
 sp 25
 x 16
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 16
@@ -4425,7 +4425,7 @@ hp 4
 sp 25
 x 17
 y 1
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4437,7 +4437,7 @@ hp 4
 sp 25
 x 17
 y 2
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4449,7 +4449,7 @@ hp 4
 sp 25
 x 17
 y 3
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4461,7 +4461,7 @@ hp 4
 sp 25
 x 17
 y 4
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4473,7 +4473,7 @@ hp 4
 sp 25
 x 17
 y 5
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4490,7 +4490,7 @@ hp 4
 sp 25
 x 17
 y 7
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4502,7 +4502,7 @@ hp 4
 sp 25
 x 17
 y 8
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4514,7 +4514,7 @@ hp 4
 sp 25
 x 17
 y 9
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4526,7 +4526,7 @@ hp 4
 sp 25
 x 17
 y 10
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4538,7 +4538,7 @@ hp 4
 sp 25
 x 17
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4586,7 +4586,7 @@ hp 4
 sp 25
 x 17
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4598,7 +4598,7 @@ hp 4
 sp 25
 x 17
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4610,7 +4610,7 @@ hp 4
 sp 25
 x 17
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4666,7 +4666,7 @@ hp 4
 sp 25
 x 17
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4678,7 +4678,7 @@ hp 4
 sp 25
 x 17
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 17
@@ -4710,7 +4710,7 @@ hp 4
 sp 25
 x 18
 y 1
-fly_on 0
+move_on walk
 end
 arch grass
 x 18
@@ -4909,7 +4909,7 @@ hp 4
 sp 25
 x 18
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 18
@@ -4921,7 +4921,7 @@ hp 4
 sp 25
 x 18
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 18
@@ -5122,7 +5122,7 @@ hp 4
 sp 25
 x 19
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 19
@@ -5134,7 +5134,7 @@ hp 4
 sp 25
 x 19
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 19
@@ -5146,7 +5146,7 @@ hp 4
 sp 25
 x 19
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 19
@@ -5251,7 +5251,7 @@ hp 4
 sp 25
 x 20
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5292,7 +5292,7 @@ hp 4
 sp 25
 x 20
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5304,7 +5304,7 @@ hp 4
 sp 25
 x 20
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5351,7 +5351,7 @@ hp 4
 sp 25
 x 20
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5363,7 +5363,7 @@ hp 4
 sp 25
 x 20
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5375,7 +5375,7 @@ hp 4
 sp 25
 x 20
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5387,7 +5387,7 @@ hp 4
 sp 25
 x 20
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 20
@@ -5511,7 +5511,7 @@ hp 4
 sp 25
 x 21
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5523,7 +5523,7 @@ hp 4
 sp 25
 x 21
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5613,7 +5613,7 @@ hp 4
 sp 25
 x 21
 y 24
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5625,7 +5625,7 @@ hp 4
 sp 25
 x 21
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5637,7 +5637,7 @@ hp 4
 sp 25
 x 21
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5649,7 +5649,7 @@ hp 4
 sp 25
 x 21
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5661,7 +5661,7 @@ hp 4
 sp 25
 x 21
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 21
@@ -5834,7 +5834,7 @@ hp 4
 sp 25
 x 22
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5846,7 +5846,7 @@ hp 4
 sp 25
 x 22
 y 21
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5858,7 +5858,7 @@ hp 4
 sp 25
 x 22
 y 22
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5870,7 +5870,7 @@ hp 4
 sp 25
 x 22
 y 23
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5882,7 +5882,7 @@ hp 4
 sp 25
 x 22
 y 24
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5894,7 +5894,7 @@ hp 4
 sp 25
 x 22
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5906,7 +5906,7 @@ hp 4
 sp 25
 x 22
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5918,7 +5918,7 @@ hp 4
 sp 25
 x 22
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -5930,7 +5930,7 @@ hp 4
 sp 25
 x 22
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 22
@@ -6077,7 +6077,7 @@ hp 4
 sp 25
 x 23
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6089,7 +6089,7 @@ hp 4
 sp 25
 x 23
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6101,7 +6101,7 @@ hp 4
 sp 25
 x 23
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6113,7 +6113,7 @@ hp 4
 sp 25
 x 23
 y 21
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6125,7 +6125,7 @@ hp 4
 sp 25
 x 23
 y 22
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6137,7 +6137,7 @@ hp 4
 sp 25
 x 23
 y 23
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6149,7 +6149,7 @@ hp 4
 sp 25
 x 23
 y 24
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6161,7 +6161,7 @@ hp 4
 sp 25
 x 23
 y 25
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6173,7 +6173,7 @@ hp 4
 sp 25
 x 23
 y 26
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6185,7 +6185,7 @@ hp 4
 sp 25
 x 23
 y 27
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6197,7 +6197,7 @@ hp 4
 sp 25
 x 23
 y 28
-fly_on 0
+move_on walk
 end
 arch grass
 x 23
@@ -6308,7 +6308,7 @@ hp 4
 sp 25
 x 24
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6320,7 +6320,7 @@ hp 4
 sp 25
 x 24
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6346,7 +6346,7 @@ hp 4
 sp 25
 x 24
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6358,7 +6358,7 @@ hp 4
 sp 25
 x 24
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6370,7 +6370,7 @@ hp 4
 sp 25
 x 24
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6382,7 +6382,7 @@ hp 4
 sp 25
 x 24
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 24
@@ -6568,7 +6568,7 @@ hp 4
 sp 25
 x 25
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6580,7 +6580,7 @@ hp 4
 sp 25
 x 25
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6592,7 +6592,7 @@ hp 4
 sp 25
 x 25
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6604,7 +6604,7 @@ hp 4
 sp 25
 x 25
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6616,7 +6616,7 @@ hp 4
 sp 25
 x 25
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6628,7 +6628,7 @@ hp 4
 sp 25
 x 25
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6640,7 +6640,7 @@ hp 4
 sp 25
 x 25
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6652,7 +6652,7 @@ hp 4
 sp 25
 x 25
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6664,7 +6664,7 @@ hp 4
 sp 25
 x 25
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6676,7 +6676,7 @@ hp 4
 sp 25
 x 25
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 25
@@ -6806,7 +6806,7 @@ hp 4
 sp 25
 x 26
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6818,7 +6818,7 @@ hp 4
 sp 25
 x 26
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6830,7 +6830,7 @@ hp 4
 sp 25
 x 26
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6842,7 +6842,7 @@ hp 4
 sp 25
 x 26
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6854,7 +6854,7 @@ hp 4
 sp 25
 x 26
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6866,7 +6866,7 @@ hp 4
 sp 25
 x 26
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6878,7 +6878,7 @@ hp 4
 sp 25
 x 26
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6890,7 +6890,7 @@ hp 4
 sp 25
 x 26
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6902,7 +6902,7 @@ hp 4
 sp 25
 x 26
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -6914,7 +6914,7 @@ hp 4
 sp 25
 x 26
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 26
@@ -7033,7 +7033,7 @@ hp 4
 sp 25
 x 27
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7045,7 +7045,7 @@ hp 4
 sp 25
 x 27
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7057,7 +7057,7 @@ hp 4
 sp 25
 x 27
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7069,7 +7069,7 @@ hp 4
 sp 25
 x 27
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7081,7 +7081,7 @@ hp 4
 sp 25
 x 27
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7093,7 +7093,7 @@ hp 4
 sp 25
 x 27
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7105,7 +7105,7 @@ hp 4
 sp 25
 x 27
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7117,7 +7117,7 @@ hp 4
 sp 25
 x 27
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7129,7 +7129,7 @@ hp 4
 sp 25
 x 27
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7141,7 +7141,7 @@ hp 4
 sp 25
 x 27
 y 20
-fly_on 0
+move_on walk
 end
 arch grass
 x 27
@@ -7198,7 +7198,7 @@ hp 4
 sp 25
 x 28
 y 4
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7252,7 +7252,7 @@ hp 4
 sp 25
 x 28
 y 11
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7264,7 +7264,7 @@ hp 4
 sp 25
 x 28
 y 12
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7276,7 +7276,7 @@ hp 4
 sp 25
 x 28
 y 13
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7288,7 +7288,7 @@ hp 4
 sp 25
 x 28
 y 14
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7300,7 +7300,7 @@ hp 4
 sp 25
 x 28
 y 15
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7312,7 +7312,7 @@ hp 4
 sp 25
 x 28
 y 16
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7324,7 +7324,7 @@ hp 4
 sp 25
 x 28
 y 17
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7336,7 +7336,7 @@ hp 4
 sp 25
 x 28
 y 18
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7348,7 +7348,7 @@ hp 4
 sp 25
 x 28
 y 19
-fly_on 0
+move_on walk
 end
 arch grass
 x 28
@@ -7360,8 +7360,8 @@ hp 4
 sp 25
 x 28
 y 20
-fly_on 0
 end
+move_on walk
 arch grass
 x 28
 y 20

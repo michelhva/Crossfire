@@ -1135,8 +1135,7 @@ y 15
 resist_physical 30
 resist_fire 30
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch pstone_2
 x 5
@@ -2094,8 +2093,7 @@ the spectator fees.
 endmsg
 x 11
 y 6
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch pstone_2
 x 11
