@@ -2812,7 +2812,7 @@ slaying pshop21
 x 12
 y 13
 connected 1
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2832,7 +2832,7 @@ slaying pshop21
 x 12
 y 14
 move_block all
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2853,7 +2853,7 @@ slaying pshop21
 x 12
 y 15
 connected 1
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2878,7 +2878,7 @@ slaying pshop21
 x 12
 y 17
 connected 2
-walk_off 1
+move_off walk
 end
 arch magic_mouth
 msg
@@ -2906,7 +2906,7 @@ slaying pshop21
 x 12
 y 18
 move_block all
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12
@@ -2927,7 +2927,7 @@ slaying pshop21
 x 12
 y 19
 connected 2
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 12

@@ -2301,8 +2301,7 @@ msg
 You hear the sound of moving rock.
 endmsg
 connected 6
-walk_on 0
-fly_on 0
+move_on 0
 x 6
 y 10
 end
@@ -2315,8 +2314,7 @@ arms... to unleash an inferno of snow
 and ice!
 endmsg
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 x 6
 y 10
 end
@@ -2447,8 +2445,7 @@ msg
 You hear the sound of moving rock.
 endmsg
 connected 36
-walk_on 0
-fly_on 0
+move_on 0
 x 6
 y 23
 end
@@ -2460,8 +2457,7 @@ dimension! They look extremely
 dangerous...
 endmsg
 connected 35
-walk_on 0
-fly_on 0
+move_on 0
 x 6
 y 23
 end
@@ -6609,7 +6605,7 @@ x 16
 y 32
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 16
 y 32
@@ -6634,7 +6630,7 @@ hp 100
 dam 200
 level 40
 attacktype 4
-fly_on 1
+move_on walk fly_low
 x 16
 y 33
 end
@@ -6643,7 +6639,7 @@ x 16
 y 34
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 16
 y 34
@@ -7080,7 +7076,7 @@ x 17
 y 32
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 17
 y 32
@@ -7104,7 +7100,7 @@ hp 100
 dam 150
 level 40
 attacktype 256
-fly_on 1
+move_on walk fly_low
 x 17
 y 33
 end
@@ -7113,7 +7109,7 @@ x 17
 y 34
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 17
 y 34
@@ -7123,7 +7119,7 @@ x 17
 y 35
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 17
 y 35
@@ -7471,7 +7467,7 @@ x 18
 y 32
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 18
 y 32
@@ -7497,7 +7493,7 @@ hp 100
 dam 500
 level 40
 attacktype 1048576
-fly_on 1
+move_on walk fly_low
 x 18
 y 33
 end
@@ -7506,7 +7502,7 @@ x 18
 y 34
 end
 arch permanent_lava
-walk_on 0
+move_on 0
 move_block all
 x 18
 y 34
@@ -7612,8 +7608,7 @@ msg
 You hear the sound of moving rock.
 endmsg
 connected 16
-walk_on 0
-fly_on 0
+move_on 0
 x 19
 y 10
 end
@@ -7625,8 +7620,7 @@ Suddenly they rise their mechanical
 arms... to unleash a fiery inferno!
 endmsg
 connected 15
-walk_on 0
-fly_on 0
+move_on 0
 x 19
 y 10
 end
@@ -7796,8 +7790,7 @@ msg
 You hear the sound of moving rock.
 endmsg
 connected 26
-walk_on 0
-fly_on 0
+move_on 0
 x 19
 y 23
 end
@@ -7809,8 +7802,7 @@ Suddenly they rise their mechanical
 arms... to unleash a sparkling inferno!
 endmsg
 connected 25
-walk_on 0
-fly_on 0
+move_on 0
 x 19
 y 23
 end

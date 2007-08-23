@@ -15,7 +15,7 @@ arch invis_exit
 slaying /world/world_115_101
 hp 44
 sp 43
-fly_on 0
+move_on walk
 end
 arch brush
 end
@@ -72,7 +72,7 @@ slaying /world/world_115_101
 hp 44
 sp 43
 y 9
-fly_on 0
+move_on walk
 end
 arch brush
 y 9
@@ -612,7 +612,7 @@ slaying /world/world_115_101
 hp 44
 sp 43
 x 9
-fly_on 0
+move_on walk
 end
 arch brush
 x 9
@@ -679,7 +679,7 @@ hp 44
 sp 43
 x 9
 y 9
-fly_on 0
+move_on walk
 end
 arch brush
 x 9

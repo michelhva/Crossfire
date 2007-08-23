@@ -625,7 +625,7 @@ slaying /world/world_116_104
 hp 13
 sp 25
 x 5
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 5
@@ -725,7 +725,7 @@ hp 13
 sp 20
 x 5
 y 20
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 6
@@ -1928,7 +1928,7 @@ slaying /world/world_116_104
 hp 18
 sp 25
 x 15
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 15
@@ -2028,7 +2028,7 @@ hp 18
 sp 20
 x 15
 y 20
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 16

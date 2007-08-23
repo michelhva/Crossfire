@@ -2197,8 +2197,7 @@ Cowards need not enter. Cowardly
 running about may get one ejected
 from entering this training center.
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 elevation 452
 x 10
 y 15

@@ -11837,8 +11837,7 @@ be executed on sight.
 endmsg
 x 25
 y 46
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
 x 25
@@ -17425,8 +17424,7 @@ be executed on sight.
 endmsg
 x 33
 y 46
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
 x 33

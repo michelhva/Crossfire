@@ -407,8 +407,7 @@ Stand back.  Guards only.
 endmsg
 x 3
 y 6
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dirtfloor
 x 3
@@ -891,8 +890,7 @@ Rubies are very valuable to our society.
 endmsg
 x 6
 y 11
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dirtfloor
 x 6
@@ -1719,8 +1717,7 @@ You will probably need some more rubies to power them.  I think 250 should do it
 endmsg
 x 13
 y 5
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dirtfloor
 x 13
@@ -1934,8 +1931,6 @@ food 2500
 x 14
 y 11
 connected 21
-walk_on 0
-walk_off 0
 end
 arch teleporter
 hp 14

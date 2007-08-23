@@ -22,7 +22,7 @@ end
 arch button_plate
 y 1
 connected 2
-walk_off 0
+move_off 0
 end
 arch grate_open_1
 maxsp 3
@@ -32,12 +32,12 @@ end
 arch button_plate
 y 2
 connected 3
-walk_off 0
+move_off 0
 end
 arch button_plate
 y 3
 connected 96
-walk_off 0
+move_off 0
 end
 arch blocked
 y 4

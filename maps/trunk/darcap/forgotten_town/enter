@@ -313,8 +313,7 @@ arch sign_w
 msg
 Exit to Darcap
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 2
 y 1
 end
@@ -603,8 +602,7 @@ Hello adventurer. Since you have the TownPass
 you may take the shortcut into the town.
 endmsg
 connected 159
-walk_on 0
-fly_on 0
+move_on 0
 x 4
 end
 arch woodfloor
@@ -629,8 +627,7 @@ msg
 Entry to the forgotten City
 Only higher level players!
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 4
 y 1
 end
@@ -2216,8 +2213,7 @@ arch sign
 msg
 Be VERY careful!
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 14
 y 12
 end
@@ -2941,8 +2937,7 @@ name Exit to Darcap
 slaying /world/world_116_102
 hp 28
 sp 30
-walk_on 0
-fly_on 0
+move_on 0
 x 18
 y 18
 end

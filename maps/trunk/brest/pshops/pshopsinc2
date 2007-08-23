@@ -406,189 +406,189 @@ slaying pshop1
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop2
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop3
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop4
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop5
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop6
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop7
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop8
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop9
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop10
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop11
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop12
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop13
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop14
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop15
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop16
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop17
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop18
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop19
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop20
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop21
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop22
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop23
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop24
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop25
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop26
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch check_floor
 slaying pshop27
 x 3
 y 5
 connected 1
-walk_off 1
+move_off walk
 end
 arch woodfloor
 x 3
@@ -646,8 +646,7 @@ endmsg
 x 3
 y 8
 connected 6
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 3
@@ -3279,8 +3278,7 @@ endmsg
 x 31
 y 4
 connected 101
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 31

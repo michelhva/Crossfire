@@ -4108,7 +4108,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 16
 y 29
 end
@@ -4470,7 +4470,7 @@ final_map /planes/greenway8
 exit_on_final_map no
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 17
 y 47
 end
@@ -4630,7 +4630,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 18
 y 25
 end
@@ -5717,7 +5717,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 22
 y 38
 end
@@ -6008,7 +6008,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 23
 y 42
 end
@@ -6486,7 +6486,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 25
 y 33
 end
@@ -6537,7 +6537,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 25
 y 39
 end
@@ -6981,7 +6981,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 27
 y 24
 end
@@ -7311,7 +7311,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 28
 y 35
 end
@@ -7794,7 +7794,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 30
 y 28
 end
@@ -8466,7 +8466,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 33
 y 5
 end
@@ -9733,7 +9733,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 37
 y 23
 end
@@ -10800,7 +10800,7 @@ floorstyle outdoor_lush
 wallstyle trees
 endmsg
 slaying /!
-fly_on 0
+move_on walk
 x 41
 y 4
 end

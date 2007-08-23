@@ -444,7 +444,7 @@ endmsg
 slaying cornerbrook_under
 hp 1
 sp 1
-walk_on 0
+move_on 0
 x 2
 y 11
 end
@@ -3675,8 +3675,7 @@ Heres a little something for you.
 Don't spend it all on sweets now.
 endmsg
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 22
 y 19
@@ -3691,8 +3690,7 @@ at me all day.  Maybe I better hide
 it again...
 endmsg
 connected 6
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 22
 y 19

@@ -85,8 +85,7 @@ hp 21
 sp 7
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch mouse
 y 23
@@ -488,8 +487,7 @@ sp 14
 x 2
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch mouse
 x 2
@@ -755,8 +753,7 @@ sp 11
 x 3
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch mouse
 x 3
@@ -1044,8 +1041,7 @@ sp 6
 x 4
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch mouse
 x 4
@@ -1532,8 +1528,7 @@ sp 9
 x 6
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch neko
 name Mouser
@@ -2053,8 +2048,7 @@ sp 6
 x 8
 y 23
 connected 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch mouse
 x 8
@@ -2417,7 +2411,7 @@ x 10
 y 11
 connected 41
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 10
@@ -2686,7 +2680,7 @@ slaying pshop13
 x 11
 y 11
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 11
@@ -2990,7 +2984,7 @@ slaying pshop13
 x 12
 y 11
 connected 41
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 12
@@ -3883,7 +3877,7 @@ x 15
 y 7
 connected 42
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 15
@@ -3905,7 +3899,7 @@ slaying pshop13
 x 15
 y 8
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 15
@@ -3934,7 +3928,7 @@ slaying pshop13
 x 15
 y 9
 connected 42
-walk_off 1
+move_off walk
 end
 arch duplicator
 other_arch grate_closed_1
@@ -4035,7 +4029,7 @@ slaying pshop13
 x 15
 y 13
 connected 40
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 15
@@ -4057,7 +4051,7 @@ slaying pshop13
 x 15
 y 14
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 15
@@ -4075,7 +4069,7 @@ x 15
 y 15
 connected 40
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 15
@@ -4955,7 +4949,7 @@ slaying pshop13
 x 18
 y 11
 connected 43
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 18
@@ -5246,7 +5240,7 @@ slaying pshop13
 x 19
 y 11
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 19
@@ -5507,7 +5501,7 @@ x 20
 y 11
 connected 43
 move_block all
-walk_off 1
+move_off walk
 end
 arch dungeon_magic
 x 20
