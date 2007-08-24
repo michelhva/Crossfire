@@ -1,7 +1,6 @@
 Object ice
 name ice
 face ice.111
-move_on walk
 slow_move 8
 no_pick 1
 magicmap white
