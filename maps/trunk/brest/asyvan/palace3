@@ -298,9 +298,6 @@ arch wwall_2_1_2
 x 3
 y 12
 end
-arch afloor_left
-x 4
-end
 arch dungeon_magic
 x 4
 end
@@ -310,10 +307,6 @@ end
 arch wwall_3_3
 x 4
 end
-arch afloor_left
-x 4
-y 1
-end
 arch dungeon_magic
 x 4
 y 1
@@ -325,10 +318,6 @@ end
 arch wwall_2_1_1
 x 4
 y 1
-end
-arch afloor_left
-x 4
-y 2
 end
 arch dungeon_magic
 x 4
@@ -342,10 +331,6 @@ arch wwall_2_1_1
 x 4
 y 2
 end
-arch afloor_left
-x 4
-y 3
-end
 arch dungeon_magic
 x 4
 y 3
@@ -358,10 +343,6 @@ arch wwall_2_1_1
 x 4
 y 3
 end
-arch afloor_left
-x 4
-y 4
-end
 arch dungeon_magic
 x 4
 y 4
@@ -373,10 +354,6 @@ end
 arch wwall_2_1_1
 x 4
 y 4
-end
-arch afloor_left
-x 4
-y 5
 end
 arch dungeon_magic
 x 4
@@ -397,10 +374,6 @@ end
 arch afloor_left
 x 4
 y 6
-end
-arch afloor_left
-x 4
-y 7
 end
 arch dungeon_magic
 x 4
@@ -469,9 +442,6 @@ arch wwall_2_1_2
 x 4
 y 12
 end
-arch afloor_left
-x 5
-end
 arch dungeon_magic
 x 5
 end
@@ -489,10 +459,6 @@ arch afloor_left
 x 5
 y 1
 end
-arch afloor_left
-x 5
-y 2
-end
 arch dungeon_magic
 x 5
 y 2
@@ -505,10 +471,6 @@ arch potion_heroism
 x 5
 y 2
 end
-arch afloor_left
-x 5
-y 3
-end
 arch dungeon_magic
 x 5
 y 3
@@ -521,10 +483,6 @@ arch random_wealth
 x 5
 y 3
 end
-arch afloor_left
-x 5
-y 4
-end
 arch dungeon_magic
 x 5
 y 4
@@ -536,10 +494,6 @@ end
 arch random_wealth
 x 5
 y 4
-end
-arch afloor_left
-x 5
-y 5
 end
 arch dungeon_magic
 x 5
@@ -561,10 +515,6 @@ arch afloor_left
 x 5
 y 6
 end
-arch afloor_left
-x 5
-y 7
-end
 arch dungeon_magic
 x 5
 y 7
@@ -577,10 +527,6 @@ arch wwall_1_4
 x 5
 y 7
 end
-arch afloor_left
-x 5
-y 8
-end
 arch dungeon_magic
 x 5
 y 8
@@ -592,10 +538,6 @@ end
 arch random_wealth
 x 5
 y 8
-end
-arch afloor_left
-x 5
-y 9
 end
 arch dungeon_magic
 x 5
@@ -609,10 +551,6 @@ arch random_wealth
 x 5
 y 9
 end
-arch afloor_left
-x 5
-y 10
-end
 arch dungeon_magic
 x 5
 y 10
@@ -624,10 +562,6 @@ end
 arch random_wealth
 x 5
 y 10
-end
-arch afloor_left
-x 5
-y 11
 end
 arch dungeon_magic
 x 5
@@ -653,9 +587,6 @@ arch wwall_2_1_2
 x 5
 y 12
 end
-arch afloor_left
-x 6
-end
 arch dungeon_magic
 x 6
 end
@@ -665,11 +596,11 @@ end
 arch wwall_2_1_2
 x 6
 end
-arch afloor_left
+arch dungeon_magic
 x 6
 y 1
 end
-arch dungeon_magic
+arch afloor_left
 x 6
 y 1
 end
@@ -679,10 +610,6 @@ hp 23
 sp 5
 x 6
 y 1
-end
-arch afloor_left
-x 6
-y 2
 end
 arch dungeon_magic
 x 6
@@ -696,10 +623,6 @@ arch potion_fire
 x 6
 y 2
 end
-arch afloor_left
-x 6
-y 3
-end
 arch dungeon_magic
 x 6
 y 3
@@ -712,10 +635,6 @@ arch potion_cold
 x 6
 y 3
 end
-arch afloor_left
-x 6
-y 4
-end
 arch dungeon_magic
 x 6
 y 4
@@ -727,10 +646,6 @@ end
 arch potion_invulnerability
 x 6
 y 4
-end
-arch afloor_left
-x 6
-y 5
 end
 arch dungeon_magic
 x 6
@@ -765,10 +680,6 @@ sp 8
 x 6
 y 6
 end
-arch afloor_left
-x 6
-y 7
-end
 arch dungeon_magic
 x 6
 y 7
@@ -781,10 +692,6 @@ arch wwall_3_3
 x 6
 y 7
 end
-arch afloor_left
-x 6
-y 8
-end
 arch dungeon_magic
 x 6
 y 8
@@ -796,10 +703,6 @@ end
 arch wwall_2_1_1
 x 6
 y 8
-end
-arch afloor_left
-x 6
-y 9
 end
 arch dungeon_magic
 x 6
@@ -813,10 +716,6 @@ arch wwall_2_1_1
 x 6
 y 9
 end
-arch afloor_left
-x 6
-y 10
-end
 arch dungeon_magic
 x 6
 y 10
@@ -828,10 +727,6 @@ end
 arch wwall_2_1_1
 x 6
 y 10
-end
-arch afloor_left
-x 6
-y 11
 end
 arch dungeon_magic
 x 6
@@ -857,9 +752,6 @@ arch wwall_3_1
 x 6
 y 12
 end
-arch afloor_left
-x 7
-end
 arch dungeon_magic
 x 7
 end
@@ -868,10 +760,6 @@ x 7
 end
 arch wwall_2_1_2
 x 7
-end
-arch afloor_left
-x 7
-y 1
 end
 arch dungeon_magic
 x 7
@@ -888,10 +776,6 @@ sp 2
 x 7
 y 1
 end
-arch afloor_left
-x 7
-y 2
-end
 arch dungeon_magic
 x 7
 y 2
@@ -904,10 +788,6 @@ arch potion_magic
 x 7
 y 2
 end
-arch afloor_left
-x 7
-y 3
-end
 arch dungeon_magic
 x 7
 y 3
@@ -920,10 +800,6 @@ arch random_wealth
 x 7
 y 3
 end
-arch afloor_left
-x 7
-y 4
-end
 arch dungeon_magic
 x 7
 y 4
@@ -935,10 +811,6 @@ end
 arch random_wealth
 x 7
 y 4
-end
-arch afloor_left
-x 7
-y 5
 end
 arch dungeon_magic
 x 7
@@ -960,10 +832,6 @@ arch afloor_left
 x 7
 y 6
 end
-arch afloor_left
-x 7
-y 7
-end
 arch dungeon_magic
 x 7
 y 7
@@ -976,10 +844,6 @@ arch wwall_1_3
 x 7
 y 7
 end
-arch afloor_left
-x 7
-y 8
-end
 arch dungeon_magic
 x 7
 y 8
@@ -991,10 +855,6 @@ end
 arch random_wealth
 x 7
 y 8
-end
-arch afloor_left
-x 7
-y 9
 end
 arch dungeon_magic
 x 7
@@ -1008,10 +868,6 @@ arch random_wealth
 x 7
 y 9
 end
-arch afloor_left
-x 7
-y 10
-end
 arch dungeon_magic
 x 7
 y 10
@@ -1023,10 +879,6 @@ end
 arch random_wealth
 x 7
 y 10
-end
-arch afloor_left
-x 7
-y 11
 end
 arch dungeon_magic
 x 7
@@ -1052,9 +904,6 @@ arch wwall_2_1_2
 x 7
 y 12
 end
-arch afloor_left
-x 8
-end
 arch dungeon_magic
 x 8
 end
@@ -1064,10 +913,6 @@ end
 arch wwall_3_3
 x 8
 end
-arch afloor_left
-x 8
-y 1
-end
 arch dungeon_magic
 x 8
 y 1
@@ -1079,10 +924,6 @@ end
 arch wwall_2_1_1
 x 8
 y 1
-end
-arch afloor_left
-x 8
-y 2
 end
 arch dungeon_magic
 x 8
@@ -1096,10 +937,6 @@ arch wwall_2_1_1
 x 8
 y 2
 end
-arch afloor_left
-x 8
-y 3
-end
 arch dungeon_magic
 x 8
 y 3
@@ -1112,10 +949,6 @@ arch wwall_2_1_1
 x 8
 y 3
 end
-arch afloor_left
-x 8
-y 4
-end
 arch dungeon_magic
 x 8
 y 4
@@ -1127,10 +960,6 @@ end
 arch wwall_2_1_1
 x 8
 y 4
-end
-arch afloor_left
-x 8
-y 5
 end
 arch dungeon_magic
 x 8
@@ -1151,10 +980,6 @@ end
 arch afloor_left
 x 8
 y 6
-end
-arch afloor_left
-x 8
-y 7
 end
 arch dungeon_magic
 x 8

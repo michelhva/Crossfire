@@ -1493,11 +1493,11 @@ arch dungeon_magic
 x 5
 y 32
 end
-arch grassmedium
+arch dungeon_magic
 x 5
 y 33
 end
-arch dungeon_magic
+arch grassmedium
 x 5
 y 33
 end
@@ -1740,11 +1740,11 @@ x 6
 y 32
 type 77
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 33
 end
-arch dungeon_magic
+arch flagstone
 x 6
 y 33
 end
@@ -1957,6 +1957,10 @@ x 7
 y 28
 type 77
 end
+arch dungeon_magic
+x 7
+y 29
+end
 arch check_inv
 slaying brest_town_house
 x 7
@@ -1969,7 +1973,7 @@ y 29
 end
 arch dungeon_magic
 x 7
-y 29
+y 30
 end
 arch flagstone
 x 7
@@ -1977,7 +1981,7 @@ y 30
 end
 arch dungeon_magic
 x 7
-y 30
+y 31
 end
 arch flagstone
 x 7
@@ -1985,7 +1989,7 @@ y 31
 end
 arch dungeon_magic
 x 7
-y 31
+y 32
 end
 arch flagstone
 x 7
@@ -1993,7 +1997,7 @@ y 32
 end
 arch dungeon_magic
 x 7
-y 32
+y 33
 end
 arch flagstone
 x 7
@@ -2001,7 +2005,7 @@ y 33
 end
 arch dungeon_magic
 x 7
-y 33
+y 34
 end
 arch invis_exit
 slaying /world/world_107_123
@@ -2011,10 +2015,6 @@ x 7
 y 34
 end
 arch flagstone
-x 7
-y 34
-end
-arch dungeon_magic
 x 7
 y 34
 end
@@ -2223,6 +2223,10 @@ x 8
 y 28
 connected 10101010
 end
+arch dungeon_magic
+x 8
+y 29
+end
 arch check_inv
 slaying brest_town_house
 x 8
@@ -2235,7 +2239,7 @@ y 29
 end
 arch dungeon_magic
 x 8
-y 29
+y 30
 end
 arch trigger_marker
 slaying brest_town_house
@@ -2268,7 +2272,7 @@ y 30
 end
 arch dungeon_magic
 x 8
-y 30
+y 31
 end
 arch flagstone
 x 8
@@ -2276,7 +2280,7 @@ y 31
 end
 arch dungeon_magic
 x 8
-y 31
+y 32
 end
 arch flagstone
 x 8
@@ -2284,7 +2288,7 @@ y 32
 end
 arch dungeon_magic
 x 8
-y 32
+y 33
 end
 arch flagstone
 x 8
@@ -2292,7 +2296,7 @@ y 33
 end
 arch dungeon_magic
 x 8
-y 33
+y 34
 end
 arch invis_exit
 slaying /world/world_107_123
@@ -2302,10 +2306,6 @@ x 8
 y 34
 end
 arch flagstone
-x 8
-y 34
-end
-arch dungeon_magic
 x 8
 y 34
 end
@@ -2494,6 +2494,10 @@ x 9
 y 28
 type 77
 end
+arch dungeon_magic
+x 9
+y 29
+end
 arch check_inv
 slaying brest_town_house
 x 9
@@ -2506,7 +2510,7 @@ y 29
 end
 arch dungeon_magic
 x 9
-y 29
+y 30
 end
 arch flagstone
 x 9
@@ -2514,7 +2518,7 @@ y 30
 end
 arch dungeon_magic
 x 9
-y 30
+y 31
 end
 arch flagstone
 x 9
@@ -2522,7 +2526,7 @@ y 31
 end
 arch dungeon_magic
 x 9
-y 31
+y 32
 end
 arch flagstone
 x 9
@@ -2530,7 +2534,7 @@ y 32
 end
 arch dungeon_magic
 x 9
-y 32
+y 33
 end
 arch flagstone
 x 9
@@ -2538,7 +2542,7 @@ y 33
 end
 arch dungeon_magic
 x 9
-y 33
+y 34
 end
 arch invis_exit
 slaying /world/world_107_123
@@ -2548,10 +2552,6 @@ x 9
 y 34
 end
 arch flagstone
-x 9
-y 34
-end
-arch dungeon_magic
 x 9
 y 34
 end
@@ -2760,11 +2760,11 @@ x 10
 y 32
 type 77
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 33
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 33
 end
@@ -2982,11 +2982,11 @@ arch dungeon_magic
 x 11
 y 32
 end
-arch grassmedium
+arch dungeon_magic
 x 11
 y 33
 end
-arch dungeon_magic
+arch grassmedium
 x 11
 y 33
 end
