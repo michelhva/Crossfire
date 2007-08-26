@@ -150,6 +150,9 @@ end
 arch wwall_2_1_1
 y 15
 end
+arch dungeon_magic
+y 16
+end
 arch afloor_left
 y 16
 end
@@ -295,6 +298,10 @@ hp 1
 sp 15
 x 1
 y 15
+end
+arch dungeon_magic
+x 1
+y 16
 end
 arch afloor_left
 x 1
@@ -452,6 +459,10 @@ end
 arch random_food
 x 2
 y 15
+end
+arch dungeon_magic
+x 2
+y 16
 end
 arch afloor_left
 x 2
@@ -609,6 +620,10 @@ end
 arch random_food
 x 3
 y 15
+end
+arch dungeon_magic
+x 3
+y 16
 end
 arch afloor_left
 x 3
@@ -775,6 +790,10 @@ arch random_food
 x 4
 y 15
 end
+arch dungeon_magic
+x 4
+y 16
+end
 arch afloor_left
 x 4
 y 16
@@ -932,6 +951,10 @@ arch random_food
 x 5
 y 15
 end
+arch dungeon_magic
+x 5
+y 16
+end
 arch afloor_left
 x 5
 y 16
@@ -1084,6 +1107,10 @@ end
 arch wwall_2_1_1
 x 6
 y 15
+end
+arch dungeon_magic
+x 6
+y 16
 end
 arch afloor_left
 x 6
@@ -1240,6 +1267,10 @@ end
 arch afloor_left
 x 7
 y 15
+end
+arch dungeon_magic
+x 7
+y 16
 end
 arch afloor_left
 x 7
@@ -1410,11 +1441,11 @@ arch afloor_left
 x 8
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 8
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 8
 y 15
 end
@@ -1424,6 +1455,10 @@ hp 32
 sp 25
 x 8
 y 15
+end
+arch dungeon_magic
+x 8
+y 16
 end
 arch afloor_left
 x 8
@@ -1575,6 +1610,10 @@ end
 arch afloor_left
 x 9
 y 15
+end
+arch dungeon_magic
+x 9
+y 16
 end
 arch afloor_left
 x 9
@@ -1728,6 +1767,10 @@ end
 arch wwall_2_1_1
 x 10
 y 15
+end
+arch dungeon_magic
+x 10
+y 16
 end
 arch afloor_left
 x 10
@@ -1885,6 +1928,10 @@ end
 arch random_food
 x 11
 y 15
+end
+arch dungeon_magic
+x 11
+y 16
 end
 arch afloor_left
 x 11
@@ -2051,6 +2098,10 @@ arch random_food
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 16
+end
 arch afloor_left
 x 12
 y 16
@@ -2208,6 +2259,10 @@ arch random_food
 x 13
 y 15
 end
+arch dungeon_magic
+x 13
+y 16
+end
 arch afloor_left
 x 13
 y 16
@@ -2365,6 +2420,10 @@ arch random_food
 x 14
 y 15
 end
+arch dungeon_magic
+x 14
+y 16
+end
 arch afloor_left
 x 14
 y 16
@@ -2513,6 +2572,10 @@ sp 15
 x 15
 y 15
 end
+arch dungeon_magic
+x 15
+y 16
+end
 arch afloor_left
 x 15
 y 16
@@ -2521,12 +2584,19 @@ arch wwall_2_1_2
 x 15
 y 16
 end
+arch dungeon_magic
+x 16
+end
 arch afloor_left
 x 16
 end
 arch wwall_2_2_3
 x 16
 end
+arch dungeon_magic
+x 16
+y 1
+end
 arch afloor_left
 x 16
 y 1
@@ -2534,6 +2604,10 @@ end
 arch wwall_2_1_1
 x 16
 y 1
+end
+arch dungeon_magic
+x 16
+y 2
 end
 arch afloor_left
 x 16
@@ -2543,6 +2617,10 @@ arch wwall_2_1_1
 x 16
 y 2
 end
+arch dungeon_magic
+x 16
+y 3
+end
 arch afloor_left
 x 16
 y 3
@@ -2550,6 +2628,10 @@ end
 arch wwall_2_1_1
 x 16
 y 3
+end
+arch dungeon_magic
+x 16
+y 4
 end
 arch afloor_left
 x 16
@@ -2559,6 +2641,10 @@ arch wwall_2_1_1
 x 16
 y 4
 end
+arch dungeon_magic
+x 16
+y 5
+end
 arch afloor_left
 x 16
 y 5
@@ -2566,6 +2652,10 @@ end
 arch wwall_2_1_1
 x 16
 y 5
+end
+arch dungeon_magic
+x 16
+y 6
 end
 arch afloor_left
 x 16
@@ -2575,6 +2665,10 @@ arch wwall_2_1_1
 x 16
 y 6
 end
+arch dungeon_magic
+x 16
+y 7
+end
 arch afloor_left
 x 16
 y 7
@@ -2582,6 +2676,10 @@ end
 arch wwall_2_1_1
 x 16
 y 7
+end
+arch dungeon_magic
+x 16
+y 8
 end
 arch afloor_left
 x 16
@@ -2591,6 +2689,10 @@ arch wwall_2_1_1
 x 16
 y 8
 end
+arch dungeon_magic
+x 16
+y 9
+end
 arch afloor_left
 x 16
 y 9
@@ -2598,6 +2700,10 @@ end
 arch wwall_2_1_1
 x 16
 y 9
+end
+arch dungeon_magic
+x 16
+y 10
 end
 arch afloor_left
 x 16
@@ -2607,6 +2713,10 @@ arch wwall_2_1_1
 x 16
 y 10
 end
+arch dungeon_magic
+x 16
+y 11
+end
 arch afloor_left
 x 16
 y 11
@@ -2614,6 +2724,10 @@ end
 arch wwall_2_1_1
 x 16
 y 11
+end
+arch dungeon_magic
+x 16
+y 12
 end
 arch afloor_left
 x 16
@@ -2623,6 +2737,10 @@ arch wwall_2_1_1
 x 16
 y 12
 end
+arch dungeon_magic
+x 16
+y 13
+end
 arch afloor_left
 x 16
 y 13
@@ -2630,6 +2748,10 @@ end
 arch wwall_2_1_1
 x 16
 y 13
+end
+arch dungeon_magic
+x 16
+y 14
 end
 arch afloor_left
 x 16
@@ -2639,6 +2761,10 @@ arch wwall_3_4
 x 16
 y 14
 end
+arch dungeon_magic
+x 16
+y 15
+end
 arch afloor_left
 x 16
 y 15
@@ -2646,6 +2772,10 @@ end
 arch wwall_2_1_1
 x 16
 y 15
+end
+arch dungeon_magic
+x 16
+y 16
 end
 arch afloor_left
 x 16

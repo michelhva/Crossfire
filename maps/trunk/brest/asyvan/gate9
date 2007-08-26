@@ -1121,6 +1121,10 @@ arch grass
 x 8
 y 7
 end
+arch mountain_2
+x 8
+y 8
+end
 arch woods_3
 x 8
 y 10
@@ -1551,6 +1555,11 @@ end
 arch grass
 x 11
 y 20
+end
+arch jessyb
+x 11
+y 20
+speed_left -6.400000
 end
 arch dirtfloor
 x 11
@@ -2650,6 +2659,10 @@ x 20
 y 5
 end
 arch dirtfloor
+x 20
+y 6
+end
+arch volcano_low
 x 20
 y 6
 end
@@ -3811,17 +3824,4 @@ end
 arch sea
 x 28
 y 28
-end
-arch mountain_2
-x 8
-y 8
-end
-arch jessyb
-x 11
-y 20
-speed_left -6.400000
-end
-arch volcano_low
-x 20
-y 6
 end

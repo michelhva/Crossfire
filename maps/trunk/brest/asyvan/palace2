@@ -192,10 +192,6 @@ arch wwall_2_1_2
 x 1
 y 2
 end
-arch afloor_left
-x 1
-y 3
-end
 arch dungeon_magic
 x 1
 y 3
@@ -211,11 +207,11 @@ sp 2
 x 1
 y 3
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 4
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 4
 end
@@ -234,10 +230,6 @@ arch afloor_left
 x 1
 y 5
 end
-arch afloor_left
-x 1
-y 6
-end
 arch dungeon_magic
 x 1
 y 6
@@ -249,10 +241,6 @@ end
 arch wwall_2_1_2
 x 1
 y 6
-end
-arch afloor_left
-x 1
-y 7
 end
 arch dungeon_magic
 x 1
@@ -269,11 +257,11 @@ sp 2
 x 1
 y 7
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 8
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 8
 end
@@ -292,10 +280,6 @@ arch afloor_left
 x 1
 y 9
 end
-arch afloor_left
-x 1
-y 10
-end
 arch dungeon_magic
 x 1
 y 10
@@ -307,10 +291,6 @@ end
 arch wwall_2_1_2
 x 1
 y 10
-end
-arch afloor_left
-x 1
-y 11
 end
 arch dungeon_magic
 x 1
@@ -327,11 +307,11 @@ sp 2
 x 1
 y 11
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 12
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 12
 end
@@ -349,10 +329,6 @@ end
 arch afloor_left
 x 1
 y 13
-end
-arch afloor_left
-x 1
-y 14
 end
 arch dungeon_magic
 x 1
@@ -941,6 +917,10 @@ arch afloor_left
 x 5
 y 2
 end
+arch swall_1_4_half
+x 5
+y 2
+end
 arch wwall_2_2_3
 x 5
 y 2
@@ -1154,7 +1134,7 @@ arch afloor_left
 x 6
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 2
 end
@@ -1803,7 +1783,7 @@ arch afloor_left
 x 10
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 2
 end
@@ -1949,6 +1929,10 @@ x 11
 y 2
 end
 arch afloor_left
+x 11
+y 2
+end
+arch swall_1_3_half
 x 11
 y 2
 end
@@ -2699,11 +2683,11 @@ sp 2
 x 15
 y 3
 end
-arch afloor_left
+arch dungeon_magic
 x 15
 y 4
 end
-arch dungeon_magic
+arch afloor_left
 x 15
 y 4
 end
@@ -2714,10 +2698,6 @@ sp 18
 x 15
 y 4
 end
-arch afloor_left
-x 15
-y 5
-end
 arch dungeon_magic
 x 15
 y 5
@@ -2730,10 +2710,6 @@ arch random_wealth
 x 15
 y 5
 end
-arch afloor_left
-x 15
-y 6
-end
 arch dungeon_magic
 x 15
 y 6
@@ -2745,10 +2721,6 @@ end
 arch wwall_2_1_2
 x 15
 y 6
-end
-arch afloor_left
-x 15
-y 7
 end
 arch dungeon_magic
 x 15
@@ -2765,11 +2737,11 @@ sp 2
 x 15
 y 7
 end
-arch afloor_left
+arch dungeon_magic
 x 15
 y 8
 end
-arch dungeon_magic
+arch afloor_left
 x 15
 y 8
 end
@@ -2780,10 +2752,6 @@ sp 4
 x 15
 y 8
 end
-arch afloor_left
-x 15
-y 9
-end
 arch dungeon_magic
 x 15
 y 9
@@ -2796,10 +2764,6 @@ arch random_wealth
 x 15
 y 9
 end
-arch afloor_left
-x 15
-y 10
-end
 arch dungeon_magic
 x 15
 y 10
@@ -2811,10 +2775,6 @@ end
 arch wwall_2_1_2
 x 15
 y 10
-end
-arch afloor_left
-x 15
-y 11
 end
 arch dungeon_magic
 x 15
@@ -2831,11 +2791,11 @@ sp 2
 x 15
 y 11
 end
-arch afloor_left
+arch dungeon_magic
 x 15
 y 12
 end
-arch dungeon_magic
+arch afloor_left
 x 15
 y 12
 end
@@ -2845,10 +2805,6 @@ hp 1
 sp 1
 x 15
 y 12
-end
-arch afloor_left
-x 15
-y 13
 end
 arch dungeon_magic
 x 15
@@ -2861,10 +2817,6 @@ end
 arch random_wealth
 x 15
 y 13
-end
-arch afloor_left
-x 15
-y 14
 end
 arch dungeon_magic
 x 15
@@ -2892,10 +2844,6 @@ hp 15
 sp 15
 x 15
 y 15
-end
-arch afloor_left
-x 15
-y 16
 end
 arch dungeon_magic
 x 15
