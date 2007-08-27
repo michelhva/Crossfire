@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
@@ -497,7 +498,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
                                 else if (type.equals("map"))
                                 {
-                                    server.addCrossfireMapListener((CrossfireMapListener)element);
+                                    CfMapUpdater.addCrossfireMapListener((CrossfireMapListener)element);
                                 }
                                 else if (type.equals("mapscroll"))
                                 {
@@ -505,7 +506,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
                                 else if (type.equals("newmap"))
                                 {
-                                    server.addCrossfireNewmapListener((CrossfireNewmapListener)element);
+                                    CfMapUpdater.addCrossfireNewmapListener((CrossfireNewmapListener)element);
                                 }
                                 else if (type.equals("query"))
                                 {
