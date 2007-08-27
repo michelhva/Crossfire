@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name lake_house
 region scorn
 width 20
 height 20
@@ -72,6 +72,8 @@ y 19
 end
 arch grass
 x 1
+smoothlevel 0
+move_block swim boat
 end
 arch sea_sw
 x 1
@@ -79,6 +81,8 @@ end
 arch grass
 x 1
 y 1
+smoothlevel 0
+move_block swim boat
 end
 arch key
 x 1
@@ -155,7 +159,7 @@ end
 arch sign_e
 name Mailbox
 msg
-Lake House 
+Lake House
 7 Stronghold Road
 endmsg
 x 1
@@ -171,6 +175,8 @@ end
 arch grass
 x 2
 y 1
+smoothlevel 0
+move_block swim boat
 end
 arch sea_sw
 x 2
@@ -258,6 +264,7 @@ end
 arch sea
 x 3
 y 1
+smoothlevel 0
 end
 arch pstone_1
 x 3
@@ -537,6 +544,7 @@ end
 arch sea
 x 5
 y 1
+smoothlevel 32
 end
 arch pstone_1
 x 5
@@ -648,10 +656,13 @@ end
 arch sea
 x 6
 y 1
+smoothlevel 32
 end
 arch grass
 x 6
 y 2
+smoothlevel 30
+move_block swim boat
 end
 arch cobblestones2
 x 6
@@ -743,18 +754,24 @@ y 19
 end
 arch sea
 x 7
+smoothlevel 30
 end
 arch grass
 x 7
 y 1
+smoothlevel 2
+move_block swim boat
 end
 arch sea_se
 x 7
 y 1
+smoothlevel 32
 end
 arch grass
 x 7
 y 2
+smoothlevel 30
+move_block swim boat
 end
 arch cobblestones2
 x 7
@@ -858,6 +875,8 @@ end
 arch grass
 x 8
 y 1
+smoothlevel 20
+move_block swim boat
 end
 arch grass
 x 8
@@ -982,6 +1001,8 @@ end
 arch grass
 x 9
 y 1
+smoothlevel 22
+move_block swim boat
 end
 arch grass
 x 9
@@ -1085,6 +1106,8 @@ end
 arch grass
 x 10
 y 1
+smoothlevel 24
+move_block swim boat
 end
 arch grass
 x 10
@@ -1184,10 +1207,13 @@ y 19
 end
 arch sea
 x 11
+smoothlevel 10
 end
 arch grass
 x 11
 y 1
+smoothlevel 21
+move_block swim boat
 end
 arch grass
 x 11
@@ -1316,6 +1342,8 @@ end
 arch grass
 x 12
 y 1
+smoothlevel 21
+move_block swim boat
 end
 arch grass
 x 12
@@ -1431,6 +1459,8 @@ y 19
 end
 arch grass
 x 13
+smoothlevel 10
+move_block swim boat
 end
 arch sea_se
 x 13
@@ -1438,6 +1468,8 @@ end
 arch grass
 x 13
 y 1
+smoothlevel 20
+move_block swim boat
 end
 arch grass
 x 13
