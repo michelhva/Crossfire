@@ -503,7 +503,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
                                 else if (type.equals("mapscroll"))
                                 {
-                                    server.addCrossfireMapscrollListener((CrossfireMapscrollListener)element);
+                                    CfMapUpdater.addCrossfireMapscrollListener((CrossfireMapscrollListener)element);
                                 }
                                 else if (type.equals("newmap"))
                                 {
