@@ -21,8 +21,8 @@ picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty
 picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty
 gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN
 gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN
-label_stat label_hp     8+72 12+732 32  32 font_types HP
-label_stat label_fp    86+72 12+732 32  32 font_types FOOD
+label_stat label_hp     8+72 12+732 32  32 font_types WHITE HP
+label_stat label_fp    86+72 12+732 32  32 font_types WHITE FOOD
 
 # RGauges Group (820, 552)
 picture staff_back    40+820  0+552 64 256 background_staff
@@ -30,22 +30,22 @@ picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty
 picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty
 gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN
 gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN
-label_stat label_gp  772+72  12+732 32  32 font_types GRACE
-label_stat label_sp  848+72  12+732 32  32 font_types SP
+label_stat label_gp  772+72  12+732 32  32 font_types WHITE GRACE
+label_stat label_sp  848+72  12+732 32  32 font_types WHITE SP
 
 # UpperPane (207, 27)
 picture title_back          0+227  0+27 610 85 title
-label_stat label_title     12+227 24+27 512 24 font_default_large TITLE
+label_stat label_title     12+227 24+27 512 24 font_default_large WHITE TITLE
 
 # UpperBar (113, 0)
 picture up_back             0+113 0 813 29 background_up
-label_stat label_stat_str 318+113 3 32 16 font_types STR
-label_stat label_stat_dex 403+113 3 32 16 font_types DEX
-label_stat label_stat_con 488+113 3 32 16 font_types CON
-label_stat label_stat_int 573+113 3 32 16 font_types INT
-label_stat label_stat_pow 658+113 3 32 16 font_types POW
-label_stat label_stat_wis 743+113 3 32 16 font_types WIS
-label_stat label_stat_cha 828+113 3 32 16 font_types CHA
+label_stat label_stat_str 318+113 3 32 16 font_types WHITE STR
+label_stat label_stat_dex 403+113 3 32 16 font_types WHITE DEX
+label_stat label_stat_con 488+113 3 32 16 font_types WHITE CON
+label_stat label_stat_int 573+113 3 32 16 font_types WHITE INT
+label_stat label_stat_pow 658+113 3 32 16 font_types WHITE POW
+label_stat label_stat_wis 743+113 3 32 16 font_types WHITE WIS
+label_stat label_stat_cha 828+113 3 32 16 font_types WHITE CHA
 
 picture magicmap_content 0+113 20+3 232 232 magicmap_content
 magicmap magicmap       18+113 38+3 196 196
@@ -254,13 +254,13 @@ set_invisible rspI
 set_invisible rspJ
 
 # SecondaryStats (319, 621)
-label_stat label_sstat_level   0+309  4+621 110 20 font_stats LEVEL
-label_stat label_sstat_exp     0+309 27+621 110 20 font_stats EXP
-label_stat label_sstat_range   0+309 49+621 110 20 font_stats RANGE
-label_stat label_sstat_wc    200+319  4+621  56 20 font_stats WC
-label_stat label_sstat_ac    200+319 27+621  56 20 font_stats AC
-label_stat label_sstat_dam   200+319 49+621  56 20 font_stats DAM
-label_stat label_sstat_speed 200+319 71+621  56 20 font_stats SPEED
+label_stat label_sstat_level   0+309  4+621 110 20 font_stats WHITE LEVEL
+label_stat label_sstat_exp     0+309 27+621 110 20 font_stats WHITE EXP
+label_stat label_sstat_range   0+309 49+621 110 20 font_stats WHITE RANGE
+label_stat label_sstat_wc    200+319  4+621  56 20 font_stats WHITE WC
+label_stat label_sstat_ac    200+319 27+621  56 20 font_stats WHITE AC
+label_stat label_sstat_dam   200+319 49+621  56 20 font_stats WHITE DAM
+label_stat label_sstat_speed 200+319 71+621  56 20 font_stats WHITE SPEED
 
 # Panel (199, 551)
 picture panel_back 0+199 0+551 627 217 background_panel
