@@ -201,28 +201,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * player S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfirePlayerListener(CrossfirePlayerListener listener)
-    {
-        ItemsList.addCrossfirePlayerListener(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * player S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfirePlayerListener(CrossfirePlayerListener listener)
-    {
-        ItemsList.removeCrossfirePlayerListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
      * stats S->C messages.
      * @param listener The listener to remove.
      * @since 1.0
