@@ -65,6 +65,11 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
     protected final Font myfont;
 
     /**
+     * The background color of this item.
+     */
+    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
+
+    /**
      * The {@link CfItemModifiedListener} used to detect attribute changes of
      * the displayed item.
      */
@@ -136,7 +141,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         final Graphics2D g = mybuffer.createGraphics();
         g.drawImage(mypicbackground, 0, 0, null);
 
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.setBackground(backgroundColor);
         g.clearRect(0, 0, w, h);
         render(g);
         g.dispose();
