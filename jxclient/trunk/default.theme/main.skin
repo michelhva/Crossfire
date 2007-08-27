@@ -451,10 +451,7 @@ commandlist_add command_log_upper_down log_upper SCROLLDOWN
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive command_log_upper_down
 
-listener map playfield
-listener newmap playfield
 listener newmap magicmap
-listener mapscroll playfield
 listener stats gauge_hp
 listener stats gauge_fp
 listener stats gauge_gp

@@ -499,14 +499,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 {
                                     CfMagicMap.addCrossfireMagicmapListener((CrossfireMagicmapListener)element);
                                 }
-                                else if (type.equals("map"))
-                                {
-                                    CfMapUpdater.addCrossfireMapListener((CrossfireMapListener)element);
-                                }
-                                else if (type.equals("mapscroll"))
-                                {
-                                    CfMapUpdater.addCrossfireMapscrollListener((CrossfireMapscrollListener)element);
-                                }
                                 else if (type.equals("newmap"))
                                 {
                                     CfMapUpdater.addCrossfireNewmapListener((CrossfireNewmapListener)element);
@@ -583,7 +575,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[4]);
                             final int w = parseInt(args[5]);
                             final int h = parseInt(args[6]);
-                            elements.insert(name, new GUIMap(window, name, tileSize, x, y, w, h));
+                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
+                            elements.insert(name, element);
+                            CfMapUpdater.addCrossfireMapListener(element);
+                            CfMapUpdater.addCrossfireNewmapListener(element);
+                            CfMapUpdater.addCrossfireMapscrollListener(element);
                         }
                         else if (args[0].equals("meta_element"))
                         {
