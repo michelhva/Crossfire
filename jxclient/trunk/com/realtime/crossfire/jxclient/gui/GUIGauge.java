@@ -36,6 +36,7 @@ import java.io.IOException;
  *
  * @version 1.0
  * @author Lauwenmark
+ * @author Andreas Kirschbaum
  * @since 1.0
  */
 public class GUIGauge extends GUIElement implements CrossfireStatsListener
@@ -66,6 +67,8 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
 
     private final Orientation orientation;
 
+    private final String tooltipPrefix;
+
     public enum Orientation
     {
         WE,
@@ -74,7 +77,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         SN,
     }
 
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation) throws IOException
+        public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         pictureFull = picture_full;
@@ -83,7 +86,9 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         this.stat = stat;
         createBuffer();
         this.orientation = orientation;
+        this.tooltipPrefix = tooltipPrefix;
         setValues(0, 0, 0);
+        setTooltipText(tooltipPrefix == null ? null : tooltipPrefix+curValue);
     }
     public void render()
     {
@@ -292,6 +297,8 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         this.minValue = minValue;
         this.maxValue = maxValue;
         render();
+
+        setTooltipText(tooltipPrefix == null ? null : tooltipPrefix+curValue);
     }
 
     /** {@inheritDoc} */

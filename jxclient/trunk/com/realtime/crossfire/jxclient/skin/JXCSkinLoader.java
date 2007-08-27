@@ -347,7 +347,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("gauge"))
                         {
-                            if (args.length != 11)
+                            if (args.length < 11)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -362,7 +362,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureEmpty = getPicture(args[8]);
                             final int stat = parseStat(args[9]);
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
-                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation);
+                            final String tooltipPrefix = parseText(args, 11);
+                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             elements.insert(name, element);
                             CfPlayer.addCrossfireStatsListener(element);
                         }
