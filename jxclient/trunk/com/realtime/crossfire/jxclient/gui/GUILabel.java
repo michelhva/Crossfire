@@ -57,11 +57,11 @@ public class GUILabel extends GUIElement
 
     private ImageIcon mybackground = null;
 
-    private Font myfont;
+    private final Font myfont;
 
     private String mycaption = "";
 
-    private Color mycolor = Color.WHITE;
+    private final Color mycolor;
 
     /**
      * If set, the opaque background color; if <code>null</code>, the
@@ -75,26 +75,28 @@ public class GUILabel extends GUIElement
      */
     private boolean autoResize = false;
 
-    private void commonInit(BufferedImage picture, Font font) throws IOException
+    private void commonInit(final BufferedImage picture) throws IOException
     {
         mybackground = picture == null ? null : new ImageIcon(picture);
-        myfont = font;
         createBuffer();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String name, int x, int y, int w, int h, BufferedImage picture, Font font, Color color, String text) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text) throws IOException
     {
         super(jxcWindow, name, x, y, w, h);
-        commonInit(picture, font);
+        myfont = font;
+        commonInit(picture);
         mycolor = color;
         mycaption = text;
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String name, int x, int y, int w, int h, BufferedImage picture, Font font, String text) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final String text) throws IOException
     {
         super(jxcWindow, name, x, y, w, h);
-        commonInit(picture, font);
+        myfont = font;
+        commonInit(picture);
+        mycolor = Color.WHITE;
         mycaption = text;
         render();
     }
@@ -115,7 +117,7 @@ public class GUILabel extends GUIElement
         }
     }
 
-    public void setText(String ntxt)
+    public void setText(final String ntxt)
     {
         if (ntxt == null) throw new IllegalArgumentException();
         if (!mycaption.equals(ntxt))
@@ -155,7 +157,7 @@ public class GUILabel extends GUIElement
     {
         try
         {
-            Graphics2D g = mybuffer.createGraphics();
+            final Graphics2D g = mybuffer.createGraphics();
             g.setBackground(new Color(0, 0, 0, 0.0f));
             g.clearRect(0, 0, w, h);
             if (mybackground != null)
@@ -171,18 +173,18 @@ public class GUILabel extends GUIElement
             g.setColor(mycolor);
 
             mycaption = mycaption.replaceAll("\n", "<br>");
-            Reader reader = new StringReader(mycaption);
+            final Reader reader = new StringReader(mycaption);
             try
             {
                 new ParserDelegator().parse(reader, new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0), false);
             }
-            catch (Exception e)
+            catch (final Exception e)
             {
                 e.printStackTrace();
             }
             g.dispose();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
