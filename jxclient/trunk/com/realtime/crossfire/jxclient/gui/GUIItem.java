@@ -78,7 +78,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         }
     };
 
-    public GUIItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mypicbackground = picture;
@@ -96,7 +96,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
 
     public abstract void scrollDown();
 
-    public void mouseClicked(MouseEvent e)
+    public void mouseClicked(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         switch(e.getButton())
@@ -133,7 +133,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
 
     protected void render()
     {
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
         g.drawImage(mypicbackground, 0, 0, null);
 
         g.setBackground(new Color(0, 0, 0, 0.0f));
@@ -157,7 +157,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
     {
     }
 
-    public void setVisible(boolean v)
+    public void setVisible(final boolean v)
     {
         super.setVisible(v);
         render();
