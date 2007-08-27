@@ -1,5 +1,5 @@
 arch map
-name castle
+name Castle
 region brest
 width 28
 height 33
@@ -278,6 +278,10 @@ arch dirtfloor
 x 1
 y 16
 end
+arch chinese_dragon
+x 1
+y 16
+end
 arch dirtfloor
 x 1
 y 17
@@ -393,6 +397,10 @@ arch dirtfloor
 x 2
 y 4
 end
+arch big_dragon
+x 2
+y 4
+end
 arch dirtfloor
 x 2
 y 5
@@ -406,6 +414,10 @@ x 2
 y 6
 end
 arch dirtfloor
+x 2
+y 7
+end
+arch chinese_dragon
 x 2
 y 7
 end
@@ -441,11 +453,19 @@ arch dirtfloor
 x 2
 y 12
 end
+arch chinese_dragon
+x 2
+y 12
+end
 arch dirtfloor
 x 2
 y 13
 end
 arch dirtfloor
+x 2
+y 14
+end
+arch chinese_dragon
 x 2
 y 14
 end
@@ -636,6 +656,10 @@ arch dirtfloor
 x 3
 y 16
 end
+arch chinese_dragon
+x 3
+y 16
+end
 arch dirtfloor
 x 3
 y 17
@@ -677,6 +701,10 @@ x 3
 y 24
 end
 arch dirtfloor
+x 3
+y 25
+end
+arch demon_lord
 x 3
 y 25
 end
@@ -1004,6 +1032,10 @@ arch dirtfloor
 x 5
 y 12
 end
+arch chinese_dragon
+x 5
+y 12
+end
 arch dirtfloor
 x 5
 y 13
@@ -1012,11 +1044,19 @@ arch dirtfloor
 x 5
 y 14
 end
+arch chinese_dragon
+x 5
+y 14
+end
 arch dirtfloor
 x 5
 y 15
 end
 arch dirtfloor
+x 5
+y 16
+end
+arch chinese_dragon
 x 5
 y 16
 end
@@ -1306,7 +1346,7 @@ arch dirtfloor
 x 7
 y 11
 end
-arch bwall_0
+arch bwall_3_3
 x 7
 y 11
 end
@@ -1314,7 +1354,7 @@ arch dirtfloor
 x 7
 y 12
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 12
 end
@@ -1322,7 +1362,7 @@ arch dirtfloor
 x 7
 y 13
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 13
 end
@@ -1330,7 +1370,7 @@ arch dirtfloor
 x 7
 y 14
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 14
 end
@@ -1338,7 +1378,7 @@ arch dirtfloor
 x 7
 y 15
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 15
 end
@@ -1346,7 +1386,7 @@ arch dirtfloor
 x 7
 y 16
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 16
 end
@@ -1354,7 +1394,7 @@ arch dirtfloor
 x 7
 y 17
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 17
 end
@@ -1557,7 +1597,7 @@ arch dirtfloor
 x 8
 y 11
 end
-arch bwall_0
+arch bwall_3_3
 x 8
 y 11
 end
@@ -1565,7 +1605,7 @@ arch dirtfloor
 x 8
 y 12
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 12
 end
@@ -1573,7 +1613,7 @@ arch dirtfloor
 x 8
 y 13
 end
-arch bwall_0
+arch bwall_3_4
 x 8
 y 13
 end
@@ -1581,7 +1621,7 @@ arch dirtfloor
 x 8
 y 14
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 14
 end
@@ -1589,7 +1629,7 @@ arch dirtfloor
 x 8
 y 15
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 15
 end
@@ -1597,7 +1637,7 @@ arch dirtfloor
 x 8
 y 16
 end
-arch bwall_0
+arch bwall_3_4
 x 8
 y 16
 end
@@ -1605,7 +1645,7 @@ arch dirtfloor
 x 8
 y 17
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 17
 end
@@ -1804,7 +1844,7 @@ arch dirtfloor
 x 9
 y 11
 end
-arch earthwall
+arch bwall_2_2_3
 x 9
 y 11
 end
@@ -1812,7 +1852,7 @@ arch dirtfloor
 x 9
 y 12
 end
-arch bwall_0
+arch bwall_2_2_4
 x 9
 y 12
 end
@@ -1832,7 +1872,7 @@ arch dirtfloor
 x 9
 y 14
 end
-arch bwall_0
+arch bwall_2_2_3
 x 9
 y 14
 end
@@ -1840,7 +1880,7 @@ arch dirtfloor
 x 9
 y 15
 end
-arch bwall_0
+arch bwall_2_2_4
 x 9
 y 15
 end
@@ -1859,7 +1899,7 @@ arch dirtfloor
 x 9
 y 17
 end
-arch bwall_0
+arch bwall_3_3
 x 9
 y 17
 end
@@ -2121,7 +2161,7 @@ arch dirtfloor
 x 10
 y 17
 end
-arch bwall_0
+arch bwall_3_3
 x 10
 y 17
 end
@@ -2267,7 +2307,7 @@ arch dirtfloor
 x 11
 y 3
 end
-arch bwall_0
+arch bwall_2_2_2
 x 11
 y 3
 end
@@ -2275,7 +2315,7 @@ arch dirtfloor
 x 11
 y 4
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 4
 end
@@ -2283,7 +2323,7 @@ arch dirtfloor
 x 11
 y 5
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 5
 end
@@ -2291,7 +2331,7 @@ arch dirtfloor
 x 11
 y 6
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 6
 end
@@ -2299,7 +2339,7 @@ arch dirtfloor
 x 11
 y 7
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 7
 end
@@ -2307,7 +2347,7 @@ arch dirtfloor
 x 11
 y 8
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 8
 end
@@ -2315,7 +2355,7 @@ arch dirtfloor
 x 11
 y 9
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 9
 end
@@ -2323,7 +2363,7 @@ arch dirtfloor
 x 11
 y 10
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 10
 end
@@ -2331,7 +2371,7 @@ arch dirtfloor
 x 11
 y 11
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 11
 end
@@ -2339,7 +2379,7 @@ arch dirtfloor
 x 11
 y 12
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 12
 end
@@ -2347,7 +2387,7 @@ arch dirtfloor
 x 11
 y 13
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 13
 end
@@ -2355,7 +2395,7 @@ arch dirtfloor
 x 11
 y 14
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 14
 end
@@ -2363,7 +2403,7 @@ arch dirtfloor
 x 11
 y 15
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 15
 end
@@ -2371,7 +2411,7 @@ arch dirtfloor
 x 11
 y 16
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 16
 end
@@ -2379,7 +2419,7 @@ arch dirtfloor
 x 11
 y 17
 end
-arch bwall_0
+arch bwall_3_4
 x 11
 y 17
 end
@@ -3960,6 +4000,10 @@ arch dirtfloor
 x 17
 y 25
 end
+arch big_elec
+x 17
+y 25
+end
 arch dirtfloor
 x 17
 y 26
@@ -4871,11 +4915,19 @@ arch dirtfloor
 x 21
 y 22
 end
+arch behemoth
+x 21
+y 22
+end
 arch dirtfloor
 x 21
 y 23
 end
 arch dirtfloor
+x 21
+y 24
+end
+arch behemoth
 x 21
 y 24
 end
@@ -5297,6 +5349,10 @@ arch dirtfloor
 x 23
 y 22
 end
+arch behemoth
+x 23
+y 22
+end
 arch dirtfloor
 x 23
 y 23
@@ -5513,6 +5569,10 @@ x 24
 y 23
 end
 arch dirtfloor
+x 24
+y 24
+end
+arch behemoth
 x 24
 y 24
 end
@@ -6164,64 +6224,4 @@ end
 arch blocked
 x 27
 y 32
-end
-arch chinese_dragon
-x 1
-y 16
-end
-arch big_dragon
-x 2
-y 4
-end
-arch chinese_dragon
-x 2
-y 7
-end
-arch chinese_dragon
-x 2
-y 12
-end
-arch chinese_dragon
-x 2
-y 14
-end
-arch chinese_dragon
-x 3
-y 16
-end
-arch demon_lord
-x 3
-y 25
-end
-arch chinese_dragon
-x 5
-y 12
-end
-arch chinese_dragon
-x 5
-y 14
-end
-arch chinese_dragon
-x 5
-y 16
-end
-arch big_elec
-x 17
-y 25
-end
-arch behemoth
-x 21
-y 22
-end
-arch behemoth
-x 21
-y 24
-end
-arch behemoth
-x 23
-y 22
-end
-arch behemoth
-x 24
-y 24
 end
