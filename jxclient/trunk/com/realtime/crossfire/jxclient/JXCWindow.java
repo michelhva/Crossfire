@@ -595,7 +595,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private void handleKeyPress(final KeyEvent e)
     {
-        if ((myserver == null)||(myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING))
+        if (myserver == null || myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING)
             return;
 
         final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
@@ -831,7 +831,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private void handleKeyType(final KeyEvent e)
     {
-        if ((myserver == null)||(myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING))
+        if (myserver == null || myserver.getStatus() != CrossfireServerConnection.STATUS_PLAYING)
             return;
 
         final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
