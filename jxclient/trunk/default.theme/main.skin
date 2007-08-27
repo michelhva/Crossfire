@@ -77,7 +77,7 @@ picture left_back_bottom 0 87  29 681 background_left_bottom
 
 # RightBar (926, 0)
 picture right_back_top     0+926   0 98 103 background_right_top
-picture right_back_bottom 68+926 103 30 665 background_right_bottom
+#picture right_back_bottom 68+926 103 30 665 background_right_bottom
 
 # LInventory (26, 171)
 picture spellbelt_left_back 0+26 171 45 597 spellbelt_left
@@ -469,7 +469,7 @@ add title_back
 add left_back_top
 add left_back_bottom
 add right_back_top
-add right_back_bottom
+#add right_back_bottom
 add spellbelt_left_back
 add inv_right_back
 add panel_back
