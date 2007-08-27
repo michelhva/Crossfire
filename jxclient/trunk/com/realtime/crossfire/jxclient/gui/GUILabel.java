@@ -19,10 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.Font;
@@ -51,7 +48,7 @@ import javax.swing.text.MutableAttributeSet;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILabel extends GUIElement implements CrossfireStatsListener
+public class GUILabel extends GUIElement
 {
     /**
      * Size of border around text in auto-resize mode.
@@ -68,10 +65,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener
     private Font myfont;
 
     private String mycaption = "";
-
-    private int mystat=0;
-
-    private boolean stat_based = false;
 
     private Color mycolor = Color.WHITE;
 
@@ -111,25 +104,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener
         super(jxcWindow, nn, nx, ny, nw, nh);
         commonInit(picture, nf);
         mycaption = cap;
-        render();
-    }
-
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, int stat) throws IOException
-    {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        commonInit(picture, nf);
-        mystat = stat;
-        stat_based = true;
-        render();
-    }
-
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, Color clr, int stat) throws IOException
-    {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        commonInit(picture, nf);
-        mystat = stat;
-        stat_based = true;
-        mycolor = clr;
         render();
     }
 
@@ -221,57 +195,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener
             e.printStackTrace();
         }
         setChanged();
-    }
-
-    public void commandStatsReceived(CrossfireCommandStatsEvent evt)
-    {
-        if (stat_based)
-        {
-            Stats s = evt.getStats();
-            switch (mystat)
-            {
-            case Stats.CS_STAT_SPEED:
-            case Stats.CS_STAT_WEAP_SP:
-                final int statValue = s.getStat(mystat);
-                final int tmp = (statValue*100+Stats.FLOAT_MULTI/2)/Stats.FLOAT_MULTI;
-                mycaption = tmp/100+"."+tmp/10%10+tmp%10;
-                break;
-
-            case Stats.CS_STAT_RANGE:
-                final String rangeString = s.getRange();
-                if (rangeString.startsWith("Range: spell "))
-                {
-                    mycaption = rangeString.substring(13);
-                }
-                else if (rangeString.startsWith("Range: "))
-                {
-                    mycaption = rangeString.substring(7);
-                }
-                else if (rangeString.startsWith("Skill: "))
-                {
-                    mycaption = rangeString.substring(7);
-                }
-                else
-                {
-                    mycaption = rangeString;
-                }
-                break;
-
-            case Stats.CS_STAT_TITLE:
-                mycaption = s.getTitle();
-                break;
-
-            case Stats.CS_STAT_EXP64:
-            case Stats.CS_STAT_EXP:
-                mycaption = String.valueOf(s.getExperience());
-                break;
-
-            default:
-                mycaption = String.valueOf(s.getStat(mystat));
-                break;
-            }
-            render();
-        }
     }
 
     class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback

@@ -47,6 +47,7 @@ import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
 import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
+import com.realtime.crossfire.jxclient.gui.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
@@ -495,7 +496,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
-                            final GUILabel element = new GUILabel(window, name, x, y, w, h, null, font, color, stat);
+                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat);
                             elements.insert(name, element);
                             CfPlayer.addCrossfireStatsListener(element);
                         }
