@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.Font;
-import java.awt.FontMetrics;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -35,12 +34,8 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.regex.Pattern;
-import java.util.Stack;
 import javax.swing.ImageIcon;
-import javax.swing.text.html.HTML;
-import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.parser.ParserDelegator;
-import javax.swing.text.MutableAttributeSet;
 
 /**
  *
@@ -182,7 +177,7 @@ public class GUILabel extends GUIElement
             Reader reader = new StringReader(mycaption);
             try
             {
-                new ParserDelegator().parse(reader, new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize()), false);
+                new ParserDelegator().parse(reader, new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0), false);
             }
             catch (Exception e)
             {
@@ -195,101 +190,6 @@ public class GUILabel extends GUIElement
             e.printStackTrace();
         }
         setChanged();
-    }
-
-    class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
-    {
-        private Stack<Font> myfonts = new Stack<Font>();
-
-        private Stack<Color> mycolors = new Stack<Color>();
-
-        private Graphics2D mygc;
-
-        private int myx = 0;
-
-        private int myy = 0;
-
-        private int myorigx = 0;
-
-        public InternalHTMLRenderer(Font fd, Color fdc, Graphics2D g, int x, int y)
-        {
-            myfonts.push(fd);
-            mycolors.push(fdc);
-            mygc = g;
-            myx = x;
-            myy = y;
-            myorigx = myx;
-        }
-
-        public void handleText(char[] data, int pos)
-        {
-            mygc.setFont(myfonts.peek());
-            mygc.setColor(mycolors.peek());
-            FontMetrics m = mygc.getFontMetrics();
-            String str = new String(data);
-            int w = m.stringWidth(str);
-            mygc.drawString(str, myx+(autoResize ? AUTO_BORDER_SIZE : 0), myy+(autoResize ? AUTO_BORDER_SIZE : 0));
-            myx += w;
-        }
-
-        public void handleStartTag(HTML.Tag tag, MutableAttributeSet attrSet, int pos)
-        {
-            if (tag.equals(HTML.Tag.A))
-            {
-                myfonts.push(myfonts.peek());
-                mycolors.push(Color.YELLOW);
-                //myy += mydefaultfont.getSize()+1;
-            }
-            else if (tag.equals(HTML.Tag.B))
-            {
-                myfonts.push(myfonts.peek().deriveFont(Font.BOLD));
-                mycolors.push(mycolors.peek());
-            }
-            else if (tag.equals(HTML.Tag.I))
-            {
-                myfonts.push(myfonts.peek().deriveFont(Font.ITALIC));
-                mycolors.push(mycolors.peek());
-            }
-            else if (tag.equals(HTML.Tag.LI))
-            {
-                myfonts.push(myfonts.peek());
-                mycolors.push(mycolors.peek());
-                mygc.setFont(myfonts.peek());
-                mygc.setColor(mycolors.peek());
-                FontMetrics m = mygc.getFontMetrics();
-                myx = myorigx;
-                myy += myfonts.peek().getSize()+1;
-                String str = " - ";
-                int w = m.stringWidth(str);
-                mygc.drawString(str, myx+(autoResize ? AUTO_BORDER_SIZE : 0), myy+(autoResize ? AUTO_BORDER_SIZE : 0));
-                myx += w;
-            }
-            else
-            {
-                myfonts.push(myfonts.peek());
-                mycolors.push(mycolors.peek());
-            }
-        }
-
-        public void handleSimpleTag(HTML.Tag tag, MutableAttributeSet attrSet, int pos)
-        {
-            if (tag.equals(HTML.Tag.BR))
-            {
-                myy += myfonts.peek().getSize()+1;
-                myx = myorigx;
-            }
-            /*else
-            {
-                System.out.println("Tag:"+tag);
-            }*/
-        }
-
-        public void handleEndTag(HTML.Tag tag, int pos)
-        {
-            myfonts.pop();
-            mycolors.pop();
-            //System.out.println("End Tag:"+tag);
-        }
     }
 
     /**
