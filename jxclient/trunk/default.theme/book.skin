@@ -4,11 +4,9 @@ commandlist command_book_close
 font font_metaurl squealer 14
 
 picture book_background 50 50 900 600 bouquin
-label_text book_text 190 100 850 550 font_metaurl DARK_GRAY
+label_drawextinfo book_text 190 100 850 550 font_metaurl DARK_GRAY
 button book_close 690 510 135 55 button_small_active button_small_pushed command_book_close font_metaurl DARK_GRAY 20 34 Close
 commandlist_add command_book_close null GUI_LEAVE_DIALOG
-
-listener drawextinfo book_text
 
 add book_background
 add book_text

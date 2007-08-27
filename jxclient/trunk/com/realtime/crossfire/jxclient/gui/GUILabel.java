@@ -19,11 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawextinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Stats;
@@ -55,7 +51,7 @@ import javax.swing.text.MutableAttributeSet;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILabel extends GUIElement implements CrossfireStatsListener, CrossfireQueryListener, CrossfireDrawextinfoListener
+public class GUILabel extends GUIElement implements CrossfireStatsListener
 {
     /**
      * Size of border around text in auto-resize mode.
@@ -276,18 +272,6 @@ public class GUILabel extends GUIElement implements CrossfireStatsListener, Cros
             }
             render();
         }
-    }
-
-    public void commandQueryReceived(CrossfireCommandQueryEvent evt)
-    {
-        mycaption = evt.getPrompt();
-        render();
-    }
-
-    public void commandDrawextinfoReceived(CrossfireCommandDrawextinfoEvent evt)
-    {
-        mycaption = evt.getMessage();
-        render();
     }
 
     class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback

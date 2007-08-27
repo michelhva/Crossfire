@@ -45,6 +45,8 @@ import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
+import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
+import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
@@ -358,7 +360,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureEmpty = getPicture(args[8]);
                             final int stat = parseStat(args[9]);
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
-                            elements.insert(name, new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation));
+                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation);
+                            elements.insert(name, element);
+                            CfPlayer.addCrossfireStatsListener(element);
                         }
                         else if (args[0].equals("item"))
                         {
@@ -395,13 +399,53 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else if (type.equals("spelllist"))
                             {
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                final GUIItemSpelllist tmp = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = tmp;
+                                ItemsList.addCrossfireSpellAddedListener(tmp);
+                                ItemsList.addCrossfireSpellRemovedListener(tmp);
+                                ItemsList.addCrossfireSpellUpdatedListener(tmp);
                             }
                             else
                             {
                                 throw new IOException("undefined item type: "+type);
                             }
                             elements.insert(name, element);
+                        }
+                        else if (args[0].equals("label_drawextinfo"))
+                        {
+                            if (args.length != 8)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final Font font = fonts.lookup(args[6]);
+                            final Color color = parseColor(args[7]);
+                            final GUILabelDrawextinfo element = new GUILabelDrawextinfo(window, name, x, y, w, h, font, color);
+                            elements.insert(name, element);
+                            server.addCrossfireDrawextinfoListener(element);
+                        }
+                        else if (args[0].equals("label_query"))
+                        {
+                            if (args.length != 8)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final Font font = fonts.lookup(args[6]);
+                            final Color color = parseColor(args[7]);
+                            final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color);
+                            elements.insert(name, element);
+                            server.addCrossfireQueryListener(element);
                         }
                         else if (args[0].equals("label_text"))
                         {
@@ -451,7 +495,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
-                            elements.insert(name, new GUILabel(window, name, x, y, w, h, null, font, color, stat));
+                            final GUILabel element = new GUILabel(window, name, x, y, w, h, null, font, color, stat);
+                            elements.insert(name, element);
+                            CfPlayer.addCrossfireStatsListener(element);
                         }
                         else if (args[0].equals("label_spell"))
                         {
@@ -467,68 +513,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
-                            elements.insert(name, new GUISpellLabel(window, name, x, y, w, h, null, font, type));
-                        }
-                        else if (args[0].equals("listener"))
-                        {
-                            if (args.length != 3)
-                            {
-                                throw new IOException("synaxt error");
-                            }
-
-                            final String type = args[1];
-                            final GUIElement element = elements.lookup(args[2]);
-                            try
-                            {
-                                if (type.equals("addspell"))
-                                {
-                                    ItemsList.addCrossfireSpellAddedListener((CrossfireSpellAddedListener)element);
-                                }
-                                else if (type.equals("delspell"))
-                                {
-                                    ItemsList.addCrossfireSpellRemovedListener((CrossfireSpellRemovedListener)element);
-                                }
-                                else if (type.equals("drawextinfo"))
-                                {
-                                    server.addCrossfireDrawextinfoListener((CrossfireDrawextinfoListener)element);
-                                }
-                                else if (type.equals("drawinfo"))
-                                {
-                                    server.addCrossfireDrawinfoListener((CrossfireDrawinfoListener)element);
-                                }
-                                else if (type.equals("magicmap"))
-                                {
-                                    CfMagicMap.addCrossfireMagicmapListener((CrossfireMagicmapListener)element);
-                                }
-                                else if (type.equals("newmap"))
-                                {
-                                    CfMapUpdater.addCrossfireNewmapListener((CrossfireNewmapListener)element);
-                                }
-                                else if (type.equals("query"))
-                                {
-                                    server.addCrossfireQueryListener((CrossfireQueryListener)element);
-                                }
-                                else if (type.equals("spell"))
-                                {
-                                    window.addSpellListener((SpellListener)element);
-                                }
-                                else if (type.equals("stats"))
-                                {
-                                    CfPlayer.addCrossfireStatsListener((CrossfireStatsListener)element);
-                                }
-                                else if (type.equals("updspell"))
-                                {
-                                    ItemsList.addCrossfireSpellUpdatedListener((CrossfireSpellUpdatedListener)element);
-                                }
-                                else
-                                {
-                                    throw new IOException("unknown listener type '"+args[1]+"'");
-                                }
-                            }
-                            catch (final ClassCastException ex)
-                            {
-                                throw new IOException("element "+args[2]+" is not of type "+args[1]);
-                            }
+                            final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, font, type);
+                            elements.insert(name, element);
+                            window.addSpellListener((SpellListener)element);
                         }
                         else if (args[0].equals("log"))
                         {
@@ -547,7 +534,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontFixed = fonts.lookup(args[8]);
                             final Font fontFixedBold = fonts.lookup(args[9]);
                             final Font fontArcane = fonts.lookup(args[10]);
-                            elements.insert(name, new GUILog(window, name, x, y, w, h, pictureEmpty, fontPrint, fontFixed, fontFixedBold, fontArcane));
+                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fontPrint, fontFixed, fontFixedBold, fontArcane);
+                            elements.insert(name, element);
+                            server.addCrossfireQueryListener(element);
+                            server.addCrossfireDrawextinfoListener(element);
+                            server.addCrossfireDrawinfoListener(element);
                         }
                         else if (args[0].equals("magicmap"))
                         {
@@ -561,7 +552,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            elements.insert(name, new GUIMagicMap(window, name, x, y, w, h));
+                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h);
+                            elements.insert(name, element);
+                            CfMagicMap.addCrossfireMagicmapListener(element);
+                            CfMapUpdater.addCrossfireNewmapListener(element);
                         }
                         else if (args[0].equals("map"))
                         {
