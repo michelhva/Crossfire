@@ -40,6 +40,7 @@ import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUICommandText;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIGauge;
+import com.realtime.crossfire.jxclient.gui.GUIItem;
 import com.realtime.crossfire.jxclient.gui.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
@@ -385,7 +386,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureLocked = getPicture(args[11]);
                             final int index = parseInt(args[12]);
                             final Font font = fonts.lookup(args[13]);
-                            final GUIElement element;
+                            final GUIItem element;
                             if(type.equals("floor"))
                             {
                                 element = new GUIItemFloor(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
@@ -411,6 +412,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("undefined item type: "+type);
                             }
                             elements.insert(name, element);
+                            server.addCrossfireUpdateFaceListener(element);
                         }
                         else if (args[0].equals("label_drawextinfo"))
                         {

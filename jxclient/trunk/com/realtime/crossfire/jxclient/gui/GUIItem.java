@@ -28,6 +28,8 @@ import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.CrossfireSpellAddedListener;
 import com.realtime.crossfire.jxclient.CrossfireSpellRemovedListener;
 import com.realtime.crossfire.jxclient.CrossfireSpellUpdatedListener;
+import com.realtime.crossfire.jxclient.CrossfireUpdateFaceListener;
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
@@ -48,7 +50,7 @@ import java.io.IOException;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireSpellAddedListener, CrossfireSpellRemovedListener, CrossfireSpellUpdatedListener
+public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireSpellAddedListener, CrossfireSpellRemovedListener, CrossfireSpellUpdatedListener, CrossfireUpdateFaceListener
 {
     protected final BufferedImage mypiccursed;
 
@@ -203,5 +205,22 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
+    }
+
+    /** {@inheritDoc} */
+    public void updateFace(final int faceID)
+    {
+        if (myitem == null)
+        {
+            return;
+        }
+
+        final Face face = myitem.getFace();
+        if (face == null || face.getID() != faceID)
+        {
+            return;
+        }
+
+        render();
     }
 }

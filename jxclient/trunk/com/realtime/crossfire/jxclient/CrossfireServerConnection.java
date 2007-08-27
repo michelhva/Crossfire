@@ -66,6 +66,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     private List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
 
+    /**
+     * The {@link CrossfireUpdateFaceListener}s to be notified.
+     */
+    private final List<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
+
     /** drawextinfo message type: character did read a book. */
     public static final int MSG_TYPE_BOOK = 1;
     /** drawextinfo message type: character did read a card. */
@@ -263,6 +268,16 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public synchronized void removeCrossfireQueryListener(CrossfireQueryListener listener)
     {
         mylisteners_query.remove(listener);
+    }
+
+    /**
+     * Add a listener to be notified about face image changes.
+     *
+     * @param listener The listener to add.
+     */
+    public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
+    {
+        crossfireUpdateFaceListeners.add(listener);
     }
 
     /** {@inheritDoc} */
@@ -621,6 +636,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             if (pos+len != packet.length) break;
                             final int pixmap = Faces.setImage(face, 0, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
+                            for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
+                            {
+                                    listener.updateFace(pixmap);
+                            }
                         }
                         return;
 
