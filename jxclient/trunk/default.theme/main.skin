@@ -72,7 +72,8 @@ commandlist_add command_magicmap_display btn_magicmap_show HIDE
 commandlist_add command_magicmap_display btn_magicmap_hide SHOW
 
 # LeftBar (0, 0)
-picture left_back 0 0 113 768 background_left
+picture left_back_top    0  0 113 87 background_left_top
+picture left_back_bottom 0 87  29 681 background_left_bottom
 
 # RightBar (926, 0)
 picture right_back 0+926 0 98 768 background_right
@@ -464,7 +465,8 @@ add gauge_gp
 add gauge_sp
 add up_back
 add title_back
-add left_back
+add left_back_top
+add left_back_bottom
 add right_back
 add spellbelt_left_back
 add inv_right_back
