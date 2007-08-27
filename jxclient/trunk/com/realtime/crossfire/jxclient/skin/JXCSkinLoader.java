@@ -367,6 +367,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             elements.insert(name, element);
                             CfPlayer.addCrossfireStatsListener(element);
                         }
+                        else if (args[0].equals("ignore"))
+                        {
+                            if (args.length != 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            elements.lookup(args[1]).setIgnore();
+                        }
                         else if (args[0].equals("item"))
                         {
                             if (args.length != 14)
