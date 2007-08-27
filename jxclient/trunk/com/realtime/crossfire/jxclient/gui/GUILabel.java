@@ -75,30 +75,30 @@ public class GUILabel extends GUIElement
      */
     private boolean autoResize = false;
 
-    private void commonInit(BufferedImage picture, Font nf) throws IOException
+    private void commonInit(BufferedImage picture, Font font) throws IOException
     {
         if (picture != null)
             mybackground = new ImageIcon(picture);
         else
             mybackground = null;
-        myfont = nf;
+        myfont = font;
         createBuffer();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, Color clr, String cap) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String name, int x, int y, int w, int h, BufferedImage picture, Font font, Color color, String text) throws IOException
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        commonInit(picture, nf);
-        mycolor = clr;
-        mycaption = cap;
+        super(jxcWindow, name, x, y, w, h);
+        commonInit(picture, font);
+        mycolor = color;
+        mycaption = text;
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, Font nf, String cap) throws IOException
+    public GUILabel(final JXCWindow jxcWindow, String name, int x, int y, int w, int h, BufferedImage picture, Font font, String text) throws IOException
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        commonInit(picture, nf);
-        mycaption = cap;
+        super(jxcWindow, name, x, y, w, h);
+        commonInit(picture, font);
+        mycaption = text;
         render();
     }
 
