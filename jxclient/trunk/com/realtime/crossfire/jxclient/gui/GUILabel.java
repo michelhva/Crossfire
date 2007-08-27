@@ -77,10 +77,7 @@ public class GUILabel extends GUIElement
 
     private void commonInit(BufferedImage picture, Font font) throws IOException
     {
-        if (picture != null)
-            mybackground = new ImageIcon(picture);
-        else
-            mybackground = null;
+        mybackground = picture == null ? null : new ImageIcon(picture);
         myfont = font;
         createBuffer();
     }
