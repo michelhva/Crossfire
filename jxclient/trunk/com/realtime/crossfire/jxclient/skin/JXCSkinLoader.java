@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CfPlayer;
 import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
@@ -495,7 +496,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
                                 else if (type.equals("magicmap"))
                                 {
-                                    server.addCrossfireMagicmapListener((CrossfireMagicmapListener)element);
+                                    CfMagicMap.addCrossfireMagicmapListener((CrossfireMagicmapListener)element);
                                 }
                                 else if (type.equals("map"))
                                 {
