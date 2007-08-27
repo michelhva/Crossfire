@@ -245,28 +245,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * magicmap S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireMagicmapListener(CrossfireMagicmapListener listener)
-    {
-        CfMagicMap.addCrossfireMagicmapListener(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * magicmap S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
-    {
-        CfMagicMap.removeCrossfireMagicmapListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
      * query S->C messages.
      * @param listener The listener to remove.
      * @since 1.0
