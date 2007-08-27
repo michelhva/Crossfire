@@ -479,7 +479,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
                             final Font font = fonts.lookup(args[7]);
-                            elements.insert(name, new GUILabel(window, name, x, y, w, h, pictureEmpty, font, ""));
+                            elements.insert(name, new GUILabel(window, name, x, y, w, h, pictureEmpty, font, Color.WHITE, ""));
                         }
                         else if (args[0].equals("label_stat"))
                         {

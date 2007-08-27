@@ -91,16 +91,6 @@ public class GUILabel extends GUIElement
         render();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final String text) throws IOException
-    {
-        super(jxcWindow, name, x, y, w, h);
-        myfont = font;
-        commonInit(picture);
-        mycolor = Color.WHITE;
-        mycaption = text;
-        render();
-    }
-
     /**
      * Enable or disable auto-resizing. If enabled, the gui element's size
      * changes to the displayed text's size.
