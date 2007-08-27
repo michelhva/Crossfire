@@ -438,7 +438,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("label_stat"))
                         {
-                            if (args.length != 8)
+                            if (args.length != 9)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -449,8 +449,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
-                            final int stat = parseStat(args[7]);
-                            elements.insert(name, new GUILabel(window, name, x, y, w, h, null, font, stat));
+                            final Color color = parseColor(args[7]);
+                            final int stat = parseStat(args[8]);
+                            elements.insert(name, new GUILabel(window, name, x, y, w, h, null, font, color, stat));
                         }
                         else if (args[0].equals("label_spell"))
                         {
