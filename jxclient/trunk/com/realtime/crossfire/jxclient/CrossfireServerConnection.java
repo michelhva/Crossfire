@@ -60,15 +60,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public static final int MAP_HEIGHT = 13;
 
-    private List<CrossfireGoodbyeListener> mylisteners_goodbye = new ArrayList<CrossfireGoodbyeListener>();
-
-    private List<CrossfireAddmeSuccessListener> mylisteners_addme_success = new ArrayList<CrossfireAddmeSuccessListener>();
-
     private List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
 
     private List<CrossfireDrawextinfoListener> mylisteners_drawextinfo = new ArrayList<CrossfireDrawextinfoListener>();
-
-    private List<CrossfireAddmeFailedListener> mylisteners_addme_failed = new ArrayList<CrossfireAddmeFailedListener>();
 
     private List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
 
@@ -203,50 +197,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     {
         super(hostname, port);
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * goodbye S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireGoodbyeListener(CrossfireGoodbyeListener listener)
-    {
-        mylisteners_goodbye.add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * goodbye S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireGoodbyeListener(CrossfireGoodbyeListener listener)
-    {
-        mylisteners_goodbye.remove(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * addme_success S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireAddmeSuccessListener(CrossfireAddmeSuccessListener listener)
-    {
-        mylisteners_addme_success.add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * addme_success S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireAddmeSuccessListener(CrossfireAddmeSuccessListener listener)
-    {
-        mylisteners_addme_success.remove(listener);
     }
 
     /**
@@ -423,28 +373,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public synchronized void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener)
     {
         CfMagicMap.removeCrossfireMagicmapListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * addme_failed S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireAddmeFailedListener(CrossfireAddmeFailedListener listener)
-    {
-        mylisteners_addme_failed.add(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * addme_failed S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireAddmeFailedListener(CrossfireAddmeFailedListener listener)
-    {
-        mylisteners_addme_failed.remove(listener);
     }
 
     /**
