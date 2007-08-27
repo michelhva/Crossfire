@@ -53,6 +53,7 @@ import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
+import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.SpellListener;
 import com.realtime.crossfire.jxclient.Stats;
@@ -480,11 +481,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 if (type.equals("addspell"))
                                 {
-                                    server.addCrossfireSpellAddedListener((CrossfireSpellAddedListener)element);
+                                    ItemsList.addCrossfireSpellAddedListener((CrossfireSpellAddedListener)element);
                                 }
                                 else if (type.equals("delspell"))
                                 {
-                                    server.addCrossfireSpellRemovedListener((CrossfireSpellRemovedListener)element);
+                                    ItemsList.addCrossfireSpellRemovedListener((CrossfireSpellRemovedListener)element);
                                 }
                                 else if (type.equals("drawextinfo"))
                                 {
@@ -524,7 +525,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
                                 else if (type.equals("updspell"))
                                 {
-                                    server.addCrossfireSpellUpdatedListener((CrossfireSpellUpdatedListener)element);
+                                    ItemsList.addCrossfireSpellUpdatedListener((CrossfireSpellUpdatedListener)element);
                                 }
                                 else
                                 {
