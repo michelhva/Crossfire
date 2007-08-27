@@ -201,50 +201,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * map1 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireMapListener(CrossfireMapListener listener)
-    {
-        CfMapUpdater.addCrossfireMapListener(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * map1 S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireMapListener(CrossfireMapListener listener)
-    {
-        CfMapUpdater.removeCrossfireMapListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * newmap S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void addCrossfireNewmapListener(CrossfireNewmapListener listener)
-    {
-        CfMapUpdater.addCrossfireNewmapListener(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * newmap S->C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
-     */
-    public synchronized void removeCrossfireNewmapListener(CrossfireNewmapListener listener)
-    {
-        CfMapUpdater.removeCrossfireNewmapListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
      * player S->C messages.
      * @param listener The listener to remove.
      * @since 1.0
