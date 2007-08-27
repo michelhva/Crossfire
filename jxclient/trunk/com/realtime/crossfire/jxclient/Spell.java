@@ -33,8 +33,6 @@ public class Spell
 {
     private final ImageIcon myspellpic;
 
-    private String myspellname;
-
     private final String myid;
 
     private final int mytag;
