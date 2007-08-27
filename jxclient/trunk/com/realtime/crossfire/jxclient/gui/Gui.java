@@ -177,7 +177,7 @@ public class Gui
         GUIElement elected = null;
         for (final GUIElement element : elements)
         {
-            if (element.isVisible())
+            if (element.isVisible() && !element.isIgnore())
             {
                 if (element.getX() <= x && x < element.getX()+element.getWidth())
                 {

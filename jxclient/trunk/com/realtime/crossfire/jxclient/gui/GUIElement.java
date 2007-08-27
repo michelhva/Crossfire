@@ -63,6 +63,11 @@ public abstract class GUIElement implements MouseListener
     protected boolean visible = true;
 
     /**
+     * Whether this gui element should be ignored for user interaction.
+     */
+    private boolean ignore = false;
+
+    /**
      * The name of this element.
      */
     protected final String myname;
@@ -182,6 +187,24 @@ public abstract class GUIElement implements MouseListener
             visible = v;
             setChanged();
         }
+    }
+
+    /**
+     * Return whether this gui element should be ignored for user interaction.
+     *
+     * @return Whether this gui element should be ignored for user interaction.
+     */
+    public boolean isIgnore()
+    {
+        return ignore;
+    }
+
+    /**
+     * Mark this gui element to be ignored for user interaction.
+     */
+    public void setIgnore()
+    {
+        ignore = true;
     }
 
     public String getName()
