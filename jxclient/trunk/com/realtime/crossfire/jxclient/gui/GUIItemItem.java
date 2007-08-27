@@ -31,12 +31,12 @@ import java.io.IOException;
 
 public abstract class GUIItemItem extends GUIItem
 {
-    public GUIItemItem(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItemItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
     }
 
-    protected void render(Graphics g)
+    protected void render(final Graphics g)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -69,7 +69,7 @@ public abstract class GUIItemItem extends GUIItem
         }
     }
 
-    protected void button2Clicked(JXCWindow jxcw)
+    protected void button2Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -81,7 +81,7 @@ public abstract class GUIItemItem extends GUIItem
         {
             jxcw.getCrossfireServerConnection().sendApply(item.getTag());
         }
-        catch (Exception ex)
+        catch (final Exception ex)
         {
             ex.printStackTrace();
             System.exit(0);
