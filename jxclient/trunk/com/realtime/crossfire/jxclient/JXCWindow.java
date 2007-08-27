@@ -1115,17 +1115,19 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     private GUIElement findElement(final MouseEvent e, final boolean ignoreButtons)
     {
-        GUIElement elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e, ignoreButtons);
+        GUIElement elected = null;
 
         final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
         if (currentDialog != null)
         {
-            final GUIElement myother = manageMouseEvents(currentDialog, e, ignoreButtons);
-            if (myother != null)
-            {
-                elected = myother;
-            }
+            elected = manageMouseEvents(currentDialog, e, ignoreButtons);
         }
+
+        if (elected == null)
+        {
+            elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e, ignoreButtons);
+        }
+
         if (elected != null)
         {
             e.translatePoint(-elected.getX()-jxcWindowRenderer.getOffsetX(), -elected.getY()-jxcWindowRenderer.getOffsetY());
