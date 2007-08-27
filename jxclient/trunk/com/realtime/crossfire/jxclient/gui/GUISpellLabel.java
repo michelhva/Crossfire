@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Spell;
 import com.realtime.crossfire.jxclient.SpellChangedEvent;
 import com.realtime.crossfire.jxclient.SpellListener;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -94,7 +95,7 @@ public class GUISpellLabel extends GUILabel implements SpellListener
      */
     public GUISpellLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Type type) throws IOException
     {
-        super(jxcWindow, name, x, y, w, h, picture, font, "");
+        super(jxcWindow, name, x, y, w, h, picture, font, Color.WHITE, "");
         this.type = type;
     }
 
