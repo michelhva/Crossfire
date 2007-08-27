@@ -24,6 +24,7 @@
 #   The authors can be reached via e-mail to crossfire-devel@real-time.com
 
 XML_FILES = \
+	caelestis.glade \
 	chthonic.glade \
 	dialogs.glade \
 	gtk-v1.glade \

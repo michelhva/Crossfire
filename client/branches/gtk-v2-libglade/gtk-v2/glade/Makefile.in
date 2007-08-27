@@ -222,6 +222,7 @@ target_cpu = @target_cpu@
 target_os = @target_os@
 target_vendor = @target_vendor@
 XML_FILES = \
+	caelestis.glade \
 	chthonic.glade \
 	dialogs.glade \
 	gtk-v1.glade \
