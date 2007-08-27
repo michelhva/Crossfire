@@ -265,7 +265,9 @@ label_stat label_sstat_dam   200+319 49+621  56 20 font_stats WHITE DAM
 label_stat label_sstat_speed 200+319 71+621  56 20 font_stats WHITE SPEED
 
 # Panel (199, 551)
-picture panel_back 0+199 0+551 627 217 background_panel
+picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left
+picture panel_back_dragon_right 543+199  0+551  62  64 background_panel_dragon_right
+picture panel_back_bottom         0+199 64+551 626 153 background_panel_bottom
 picture panel_spells 392+199 74+551 224 123 spell_panel
 label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats SPELL_ICON
 label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats SPELL_NAME
@@ -472,7 +474,9 @@ add right_back_top
 #add right_back_bottom
 add spellbelt_left_back
 add inv_right_back
-add panel_back
+add panel_back_bottom
+add panel_back_dragon_left
+add panel_back_dragon_right
 add gr0_back
 add gr1_back
 add gr2_back
