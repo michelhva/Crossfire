@@ -63,7 +63,7 @@ public class GUIItemSpelllist extends GUIItem
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        final List<Spell> list = ItemsList.getSpellList();
+        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
         return myindex+1 < list.size();
     }
 
@@ -135,7 +135,7 @@ public class GUIItemSpelllist extends GUIItem
         }
         myindex = index;
 
-        final List<Spell> list = ItemsList.getSpellList();
+        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
         setSpell(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
     }
 }

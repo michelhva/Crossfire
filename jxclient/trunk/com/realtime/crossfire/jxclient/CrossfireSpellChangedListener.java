@@ -19,29 +19,26 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import java.util.EventObject;
-
-/**
- *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
- */
-public class CrossfireCommandAddSpellEvent extends EventObject
+public interface CrossfireSpellChangedListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
+    /**
+     * A new spell was added.
+     *
+     * @param The added spell.
+     */
+    void spellAdded(Spell spell);
 
-    private Spell myspell;
+    /**
+     * A spell was removed.
+     *
+     * @param The removed spell.
+     */
+    void spellRemoved(Spell spell);
 
-    public CrossfireCommandAddSpellEvent(Object src, Spell sp)
-    {
-        super(src);
-        myspell = sp;
-    }
-
-    public Spell getSpell()
-    {
-        return myspell;
-    }
+    /**
+     * A spell was modified.
+     *
+     * @param The modified spell.
+     */
+    void spellModified(Spell spell);
 }

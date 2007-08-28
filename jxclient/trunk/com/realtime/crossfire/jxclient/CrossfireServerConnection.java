@@ -351,7 +351,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             final String message = new String(packet, pos, messageLength, "UTF-8");
                             pos += messageLength;
                             if (pos > packet.length) break;
-                            ItemsList.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
+                            ItemsList.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
                         }
                         if (pos != packet.length) break;
                         return;
@@ -443,7 +443,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (pos != packet.length) break;
-                            ItemsList.deleteSpell(tag);
+                            ItemsList.getSpellsManager().deleteSpell(tag);
                         }
                         return;
                     }
@@ -1086,7 +1086,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int grace = (flags&UPD_SP_GRACE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int damage = (flags&UPD_SP_DAMAGE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         if (pos != packet.length) break;
-                        ItemsList.updateSpell(flags, tag, mana, grace, damage);
+                        ItemsList.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
                     }
                     return;
                 }
@@ -1352,11 +1352,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 if (value.equals("1"))
                 {
-                    ItemsList.setSpellMode(ItemsList.SPELLMODE_SENT);
+                    ItemsList.getSpellsManager().setSpellMode(SpellsManager.SPELLMODE_SENT);
                 }
                 else
                 {
-                    ItemsList.setSpellMode(ItemsList.SPELLMODE_LOCAL);
+                    ItemsList.getSpellsManager().setSpellMode(SpellsManager.SPELLMODE_LOCAL);
                 }
             }
             else if (option.equals("sound"))
