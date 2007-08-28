@@ -65,7 +65,7 @@ public class GUIItemFloor extends GUIItemItem
     public GUIItemFloor(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
-        ItemsList.addCurrentFloorListener(currentFloorListener);
+        ItemsList.getItemsManager().addCurrentFloorListener(currentFloorListener);
         setIndex(index, false);
         render();
     }
@@ -89,7 +89,7 @@ public class GUIItemFloor extends GUIItemItem
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        return myindex+1 < ItemsList.getItems(ItemsList.getCurrentFloor()).size();
+        return myindex+1 < ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloor()).size();
     }
 
     public void scrollDown()
@@ -124,9 +124,9 @@ public class GUIItemFloor extends GUIItemItem
         }
         try
         {
-            if (ItemsList.getPlayer() != null)
+            if (ItemsList.getItemsManager().getPlayer() != null)
             {
-                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getPlayer().getTag(), item.getTag(), jxcw.getRepeatCount());
+                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getRepeatCount());
             }
         }
         catch (Exception ex)
@@ -153,15 +153,15 @@ public class GUIItemFloor extends GUIItemItem
 
         if (myindex >= 0)
         {
-            ItemsList.removeFloorLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().removeFloorLocationListener(myindex, floorLocationListener);
         }
         myindex = index;
         if (myindex >= 0)
         {
-            ItemsList.addFloorLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().addFloorLocationListener(myindex, floorLocationListener);
         }
 
-        final List<CfItem> list = ItemsList.getItems(ItemsList.getCurrentFloor());
+        final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloor());
         setItem(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
     }
 }

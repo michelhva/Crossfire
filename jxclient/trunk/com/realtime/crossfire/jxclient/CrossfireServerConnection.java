@@ -413,7 +413,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 }
                                 while (pos < packet.length);
                                 if (pos != packet.length) break;
-                                ItemsList.cleanInventory(tag);
+                                ItemsList.getItemsManager().cleanInventory(tag);
                             }
                             return;
 
@@ -428,7 +428,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                     tags[i] = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 }
                                 if (pos != packet.length) break;
-                                ItemsList.removeItems(tags);
+                                ItemsList.getItemsManager().removeItems(tags);
                             }
                             return;
                         }
@@ -670,7 +670,34 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     case '1':
                         if (packet[pos++] != ' ') break;
                         dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
-                        ItemsList.addItems(dis);
+                        {
+                            final int len = dis.available();
+                            int pos2 = 0;
+                            final int location = dis.readInt();
+                            pos2 += 4;
+                            while (pos2 < len)
+                            {
+                                final int tag = dis.readInt();
+                                final int flags = dis.readInt();
+                                final int weight = dis.readInt();
+                                final int faceid = dis.readInt();
+                                final int namelength = dis.readUnsignedByte();
+                                pos2 += 17;
+                                final byte buf[] = new byte[namelength];
+                                dis.readFully(buf);
+                                final String[] names = new String(buf).split("\0", 2);
+                                final String name = names[0];
+                                final String namePl = names[names.length >= 2 ? 1 : 0];
+                                pos2 += namelength;
+                                final int anim = dis.readUnsignedShort();
+                                final int animspeed = dis.readUnsignedByte();
+                                final int nrof = dis.readInt();
+                                pos2 += 7;
+                                final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, nrof);
+                                ItemsList.getItemsManager().addItem(item);
+                            }
+                            ItemsList.getItemsManager().fireEvents();
+                        }
                         return;
 
                     case '2':
@@ -692,9 +719,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 final int animSpeed = packet[pos++]&0xFF;
                                 final int nrof = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int type = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                ItemsList.addItem2(location, tag, flags, weight, face, name, namePl, anim, animSpeed, nrof, type);
+                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, type));
                             }
-                            ItemsList.addItems2Processed();
+                            ItemsList.getItemsManager().fireEvents();
                         }
                         return;
                     }
@@ -767,7 +794,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     final String name = new String(packet, pos, nameLength, "UTF-8");
                     pos += nameLength;
                     if (pos != packet.length) break;
-                    ItemsList.createPlayer(tag, weight, face, name);
+                    ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
                 }
                 return;
 
@@ -1428,7 +1455,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public List<CfItem> getItems(int location)
     {
-        return ItemsList.getItems(location);
+        return ItemsList.getItemsManager().getItems(location);
     }
 
     /**
@@ -1438,7 +1465,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public CfPlayer getPlayer()
     {
-        return ItemsList.getPlayer();
+        return ItemsList.getItemsManager().getPlayer();
     }
 
     public void drawInfo(String msg, int col)
