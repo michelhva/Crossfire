@@ -123,6 +123,34 @@ public class ItemsManager
     }
 
     /**
+     * Clear the inventory of an item.
+     *
+     * @param tag The item tag.
+     */
+    public void cleanInventory(final int tag)
+    {
+        for (final CfItem item : getItems(tag))
+        {
+            removeItem(item);
+        }
+        fireEvents();
+    }
+
+    /**
+     * Delete items by tag.
+     *
+     * @param tags The tags to delete.
+     */
+    public void removeItems(final int[] tags)
+    {
+        for (final int tag : tags)
+        {
+            removeItem(tag);
+        }
+        fireEvents();
+    }
+
+    /**
      * Delete an item by tag.
      *
      * @param tag the tag of the item to delete

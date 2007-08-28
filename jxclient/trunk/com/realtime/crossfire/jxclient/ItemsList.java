@@ -132,20 +132,12 @@ public class ItemsList
 
     public static void removeItems(final int[] tags) throws IOException
     {
-        for (int tag : tags)
-        {
-            itemsManager.removeItem(tag);
-        }
-        itemsManager.fireEvents();
+        itemsManager.removeItems(tags);
     }
 
     public static void cleanInventory(final int tag) throws IOException
     {
-        for (final CfItem item : itemsManager.getItems(tag))
-        {
-            itemsManager.removeItem(item);
-        }
-        itemsManager.fireEvents();
+        itemsManager.cleanInventory(tag);
     }
 
     public static void addItem2(final int location, final int tag, final int flags, final int weight, final int face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) throws IOException
