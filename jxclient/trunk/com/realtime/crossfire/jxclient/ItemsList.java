@@ -115,11 +115,6 @@ public class ItemsList
         }
     }
 
-    public static int getSpellMode()
-    {
-        return myspellmode;
-    }
-
     public static List<CfItem> getItems(int location)
     {
         return itemsManager.getItems(location);
