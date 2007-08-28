@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import java.io.DataInputStream;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -362,10 +361,9 @@ public class ItemsList
         spells.add(sp);
 
         final CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(), sp);
-        Iterator<CrossfireSpellAddedListener> it = addspellListeners.iterator();
-        while (it.hasNext())
+        for (final CrossfireSpellAddedListener listener : addspellListeners)
         {
-            it.next().commandAddSpellReceived(evt);
+            listener.commandAddSpellReceived(evt);
         }
     }
 
