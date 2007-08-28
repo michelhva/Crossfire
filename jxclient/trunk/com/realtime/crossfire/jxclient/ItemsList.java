@@ -124,14 +124,10 @@ public class ItemsList
             return;
         }
 
+        final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && itemsManager.getCurrentFloor() == item.getTag() && item.isOpen();
+        item.update(flags, tag, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_FLAGS) != 0)
         {
-            boolean wasopen = false;
-            if (itemsManager.getCurrentFloor() == item.getTag())
-            {
-                wasopen = item.isOpen();
-            }
-            item.setFlags(valFlags);
             if (item.isOpen())
             {
                 itemsManager.setCurrentFloor(item.getTag());
@@ -141,31 +137,6 @@ public class ItemsList
                 itemsManager.setCurrentFloor(0);
             }
         }
-        if ((flags&CfItem.UPD_WEIGHT) != 0)
-        {
-            item.setWeight(valWeight);
-        }
-        if ((flags&CfItem.UPD_FACE) != 0)
-        {
-            item.setFace(Faces.getFace(valFace));
-        }
-        if ((flags&CfItem.UPD_NAME) != 0)
-        {
-            item.setName(valName, valNamePl);
-        }
-        if ((flags&CfItem.UPD_ANIM) != 0)
-        {
-            //Unused for now
-        }
-        if ((flags&CfItem.UPD_ANIMSPEED) != 0)
-        {
-            //Unused for now
-        }
-        if ((flags&CfItem.UPD_NROF) != 0)
-        {
-            item.setNrOf(valNrof);
-        }
-        item.fireModified();
     }
 
     public static List<Spell> getSpellList()

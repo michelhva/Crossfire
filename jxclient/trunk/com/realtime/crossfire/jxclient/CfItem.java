@@ -257,6 +257,39 @@ public class CfItem
         mytype = -1;
     }
 
+    public void update(final int updateFlags, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
+    {
+        if ((updateFlags&UPD_FLAGS) != 0)
+        {
+            setFlags(flags);
+        }
+        if ((updateFlags&UPD_WEIGHT) != 0)
+        {
+            setWeight(weight);
+        }
+        if ((updateFlags&UPD_FACE) != 0)
+        {
+            setFace(face);
+        }
+        if ((updateFlags&UPD_NAME) != 0)
+        {
+            setName(name, namePl);
+        }
+        if ((updateFlags&UPD_ANIM) != 0)
+        {
+            //Unused for now
+        }
+        if ((updateFlags&UPD_ANIMSPEED) != 0)
+        {
+            //Unused for now
+        }
+        if ((updateFlags&UPD_NROF) != 0)
+        {
+            setNrOf(nrof);
+        }
+        fireModified();
+    }
+
     /**
      * Notify all listener
      */
