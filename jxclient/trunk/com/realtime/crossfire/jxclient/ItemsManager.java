@@ -111,6 +111,23 @@ public class ItemsManager
     }
 
     /**
+     * Return an item by tag. This function may return the player object.
+     *
+     * @param tag The tag.
+     *
+     * @return The item or <code>null</code> if no such item exists.
+     */
+    public synchronized CfItem getItemOrPlayer(final int tag)
+    {
+        if (player != null && player.getTag() == tag)
+        {
+            return player;
+        }
+
+        return getItem(tag);
+    }
+
+    /**
      * Return an item by tag.
      *
      * @param tag the tag
