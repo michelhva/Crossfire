@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**
@@ -157,7 +156,7 @@ public class Spell
         myid = null;
     }
 
-    public Spell(String filename, String spellname, String id) throws IOException
+    public Spell(String filename, String spellname, String id)
     {
         myspellpic = new ImageIcon(getClass().getClassLoader().getResource(filename));
         if (myspellpic == null)
