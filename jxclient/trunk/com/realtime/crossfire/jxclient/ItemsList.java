@@ -42,13 +42,13 @@ public class ItemsList
 
     private static final ItemsManager itemsManager = new ItemsManager();
 
-    private static List<Spell> myspells = new ArrayList<Spell>();
+    private static final List<Spell> myspells = new ArrayList<Spell>();
 
-    private static List<CrossfireSpellAddedListener> mylisteners_addspell = new ArrayList<CrossfireSpellAddedListener>();
+    private static final List<CrossfireSpellAddedListener> mylisteners_addspell = new ArrayList<CrossfireSpellAddedListener>();
 
-    private static List<CrossfireSpellUpdatedListener> mylisteners_updspell = new ArrayList<CrossfireSpellUpdatedListener>();
+    private static final List<CrossfireSpellUpdatedListener> mylisteners_updspell = new ArrayList<CrossfireSpellUpdatedListener>();
 
-    private static List<CrossfireSpellRemovedListener> mylisteners_delspell = new ArrayList<CrossfireSpellRemovedListener>();
+    private static final List<CrossfireSpellRemovedListener> mylisteners_delspell = new ArrayList<CrossfireSpellRemovedListener>();
 
     static
     {
@@ -56,7 +56,7 @@ public class ItemsList
         {
             initSpells();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
             System.exit(0);
@@ -93,7 +93,7 @@ public class ItemsList
         mylisteners_delspell.remove(listener);
     }
 
-    public static void setSpellMode(int nm)
+    public static void setSpellMode(final int nm)
     {
         myspellmode = nm;
         if (nm == SPELLMODE_LOCAL)
@@ -103,7 +103,7 @@ public class ItemsList
             {
                 initSpells();
             }
-            catch (IOException e)
+            catch (final IOException e)
             {
                 e.printStackTrace();
                 System.exit(1);
@@ -370,7 +370,7 @@ public class ItemsList
         sp.setSkill(skill);
         myspells.add(sp);
 
-        CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(), sp);
+        final CrossfireCommandAddSpellEvent evt = new CrossfireCommandAddSpellEvent(new Object(), sp);
         Iterator<CrossfireSpellAddedListener> it = mylisteners_addspell.iterator();
         while (it.hasNext())
         {
