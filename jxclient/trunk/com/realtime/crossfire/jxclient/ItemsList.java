@@ -115,72 +115,6 @@ public class ItemsList
         }
     }
 
-    public static List<CfItem> getItems(int location)
-    {
-        return itemsManager.getItems(location);
-    }
-
-    public static CfPlayer getPlayer()
-    {
-        return itemsManager.getPlayer();
-    }
-
-    public static int getCurrentFloor()
-    {
-        return itemsManager.getCurrentFloor();
-    }
-
-    public static void removeItems(final int[] tags) throws IOException
-    {
-        itemsManager.removeItems(tags);
-    }
-
-    public static void cleanInventory(final int tag) throws IOException
-    {
-        itemsManager.cleanInventory(tag);
-    }
-
-    public static void addItem2(final int location, final int tag, final int flags, final int weight, final int face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) throws IOException
-    {
-        CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, type);
-        itemsManager.addItem(item);
-    }
-
-    public static void addItems2Processed()
-    {
-        itemsManager.fireEvents();
-    }
-
-    public static void addItems(DataInputStream dis) throws IOException
-    {
-        int len = dis.available();
-        int pos = 0;
-        int location = dis.readInt();
-        pos += 4;
-        while (pos<len)
-        {
-            int tag = dis.readInt();
-            int flags = dis.readInt();
-            int weight = dis.readInt();
-            int faceid = dis.readInt();
-            int namelength = dis.readUnsignedByte();
-            pos += 17;
-            byte buf[] = new byte[namelength];
-            dis.readFully(buf);
-            String[] names = new String(buf).split("\0", 2);
-            String name = names[0];
-            String namePl = names[names.length >= 2 ? 1 : 0];
-            pos += namelength;
-            int anim = dis.readUnsignedShort();
-            int animspeed = dis.readUnsignedByte();
-            int nrof = dis.readInt();
-            pos += 7;
-            CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, nrof);
-            itemsManager.addItem(item);
-        }
-        itemsManager.fireEvents();
-    }
-
     public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) throws IOException
     {
         final CfItem item;
@@ -241,11 +175,6 @@ public class ItemsList
             item.setNrOf(valNrof);
         }
         item.fireModified();
-    }
-
-    public static void createPlayer(final int tag, final int weight, final int face, final String name) throws IOException
-    {
-        itemsManager.setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
     }
 
     public static List<Spell> getSpellList()
@@ -497,97 +426,8 @@ public class ItemsList
         // XXX: deleteSpell() not yet implemented
     }
 
-    /**
-     * Add a {@link LocationListener}s to be notified about changes in a floor
-     * tile.
-     *
-     * @param index the floor tile
-     *
-     * @param listener the listener
-     */
-    public static void addFloorLocationListener(final int index, final LocationListener listener)
+    public static ItemsManager getItemsManager()
     {
-        itemsManager.addFloorLocationListener(index, listener);
-    }
-
-    /**
-     * Remove a {@link LocationListener}s to be notified about changes in a
-     * floor tile.
-     *
-     * @param index the floor tile
-     *
-     * @param listener the listener
-     */
-    public static void removeFloorLocationListener(final int index, final LocationListener listener)
-    {
-        itemsManager.removeFloorLocationListener(index, listener);
-    }
-
-    /**
-     * Add a {@link LocationListener}s to be notified about changes in an
-     * inventory slot.
-     *
-     * @param index the inventory slot
-     *
-     * @param listener the listener
-     */
-    public static void addInventoryLocationListener(final int index, final LocationListener listener)
-    {
-        itemsManager.addInventoryLocationListener(index, listener);
-    }
-
-    /**
-     * Remove a {@link LocationListener}s to be notified about changes in an
-     * inventory slot.
-     *
-     * @param index the inventory slot
-     *
-     * @param listener the listener
-     */
-    public static void removeInventoryLocationListener(final int index, final LocationListener listener)
-    {
-        itemsManager.removeInventoryLocationListener(index, listener);
-    }
-
-    /**
-     * Add a {@link CurrentFloorListener} to be notified about current floor
-     * changes.
-     *
-     * @param listener the listener to add
-     */
-    public static void addCurrentFloorListener(final CurrentFloorListener listener)
-    {
-        itemsManager.addCurrentFloorListener(listener);
-    }
-
-    /**
-     * Remove a {@link CurrentFloorListener} to be notified about current floor
-     * changes.
-     *
-     * @param listener the listener to remove
-     */
-    public static void removeCurrentFloorListener(final CurrentFloorListener listener)
-    {
-        itemsManager.removeCurrentFloorListener(listener);
-    }
-
-    /**
-     * Adds a new listener monitoring the
-     * player S->C messages.
-     * @param listener The listener to remove.
-     */
-    public static void addCrossfirePlayerListener(final CrossfirePlayerListener listener)
-    {
-        itemsManager.addCrossfirePlayerListener(listener);
-    }
-
-    /**
-     * Removes the given listener from the list of objects listening to the
-     * player S->C messages.
-     * @param listener The listener to remove.
-     */
-    public static void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
-    {
-        itemsManager.removeCrossfirePlayerListener(listener);
+        return itemsManager;
     }
 }

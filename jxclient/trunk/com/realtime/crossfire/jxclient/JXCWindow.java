@@ -535,7 +535,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver = new CrossfireServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
         myserver.addCrossfireQueryListener(this);
-        ItemsList.addCrossfirePlayerListener(crossfirePlayerListener);
+        ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
         initGUI(GUI_MAIN);
         setTitle(TITLE_PREFIX+" - "+hostname);
         myserver.connect();

@@ -76,13 +76,13 @@ public class GUIItemInventory extends GUIItemItem
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        final CfPlayer player = ItemsList.getPlayer();
+        final CfPlayer player = ItemsList.getItemsManager().getPlayer();
         if (player == null)
         {
             return false;
         }
 
-        final List<CfItem> list = ItemsList.getItems(player.getTag());
+        final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
         return myindex+1 < list.size();
     }
 
@@ -157,7 +157,7 @@ public class GUIItemInventory extends GUIItemItem
 
         try
         {
-            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getCurrentFloor(), item.getTag(), jxcw.getRepeatCount());
+            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getCurrentFloor(), item.getTag(), jxcw.getRepeatCount());
         }
         catch (Exception ex)
         {
@@ -180,18 +180,18 @@ public class GUIItemInventory extends GUIItemItem
 
         if (myindex >= 0)
         {
-            ItemsList.removeInventoryLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().removeInventoryLocationListener(myindex, inventoryLocationListener);
         }
         myindex = index;
         if (myindex >= 0)
         {
-            ItemsList.addInventoryLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().addInventoryLocationListener(myindex, inventoryLocationListener);
         }
 
-        final CfPlayer player = ItemsList.getPlayer();
+        final CfPlayer player = ItemsList.getItemsManager().getPlayer();
         if (player != null)
         {
-            final List<CfItem> list = ItemsList.getItems(player.getTag());
+            final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
             if (0 <= myindex && myindex < list.size())
             {
                 setItem(list.get(myindex));
