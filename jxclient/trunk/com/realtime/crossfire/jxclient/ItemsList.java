@@ -117,20 +117,11 @@ public class ItemsList
 
     public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) throws IOException
     {
-        final CfItem item;
-        final CfPlayer player = itemsManager.getPlayer();
-        if (player != null && player.getTag() == tag)
+        final CfItem item = itemsManager.getItemOrPlayer(tag);
+        if (item == null)
         {
-            item = player;
-        }
-        else
-        {
-            item = itemsManager.getItem(tag);
-            if (item == null)
-            {
-                System.err.println("updateItem: undefined item "+tag);
-                return;
-            }
+            System.err.println("updateItem: undefined item "+tag);
+            return;
         }
 
         if ((flags&CfItem.UPD_FLAGS) != 0)
