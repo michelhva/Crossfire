@@ -21,16 +21,12 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.CfItem;
 import com.realtime.crossfire.jxclient.CfItemModifiedListener;
-import com.realtime.crossfire.jxclient.CrossfireCommandAddSpellEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandDelSpellEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandUpdSpellEvent;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireSpellAddedListener;
-import com.realtime.crossfire.jxclient.CrossfireSpellRemovedListener;
-import com.realtime.crossfire.jxclient.CrossfireSpellUpdatedListener;
+import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.Spell;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
@@ -50,7 +46,7 @@ import java.io.IOException;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireSpellAddedListener, CrossfireSpellRemovedListener, CrossfireSpellUpdatedListener, CrossfireUpdateFaceListener
+public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireSpellChangedListener, CrossfireUpdateFaceListener
 {
     protected final BufferedImage mypiccursed;
 
@@ -152,15 +148,18 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
 
     protected abstract void render(final Graphics g);
 
-    public void commandAddSpellReceived(final CrossfireCommandAddSpellEvent evt)
+    /** {@inheritDoc} */
+    public void spellAdded(final Spell spell)
     {
     }
 
-    public void commandUpdSpellReceived(final CrossfireCommandUpdSpellEvent evt)
+    /** {@inheritDoc} */
+    public void spellRemoved(final Spell spell)
     {
     }
 
-    public void commandDelSpellReceived(final CrossfireCommandDelSpellEvent evt)
+    /** {@inheritDoc} */
+    public void spellModified(final Spell spell)
     {
     }
 

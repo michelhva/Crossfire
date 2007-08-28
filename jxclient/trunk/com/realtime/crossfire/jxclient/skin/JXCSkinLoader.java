@@ -30,9 +30,7 @@ import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireSpellAddedListener;
-import com.realtime.crossfire.jxclient.CrossfireSpellRemovedListener;
-import com.realtime.crossfire.jxclient.CrossfireSpellUpdatedListener;
+import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -414,9 +412,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 final GUIItemSpelllist tmp = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                                 element = tmp;
-                                ItemsList.addCrossfireSpellAddedListener(tmp);
-                                ItemsList.addCrossfireSpellRemovedListener(tmp);
-                                ItemsList.addCrossfireSpellUpdatedListener(tmp);
+                                ItemsList.getSpellsManager().addCrossfireSpellChangedListener(tmp);
                             }
                             else
                             {
