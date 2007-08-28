@@ -346,12 +346,12 @@ public class ItemsList
         {
             Faces.askface(face);
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
 
-        Spell sp = new Spell(Faces.getFace(face), tag, name, message);
+        final Spell sp = new Spell(Faces.getFace(face), tag, name, message);
         sp.setLevel(level);
         sp.setCastingTime(castingTime);
         sp.setMana(mana);
