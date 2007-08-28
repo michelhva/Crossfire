@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
 import java.io.DataInputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -99,15 +98,7 @@ public class ItemsList
         if (nm == SPELLMODE_LOCAL)
         {
             myspells.clear();
-            try
-            {
-                initSpells();
-            }
-            catch (final IOException e)
-            {
-                e.printStackTrace();
-                System.exit(1);
-            }
+            initSpells();
         }
         else
         {
@@ -115,7 +106,7 @@ public class ItemsList
         }
     }
 
-    public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) throws IOException
+    public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = itemsManager.getItemOrPlayer(tag);
         if (item == null)
@@ -144,7 +135,7 @@ public class ItemsList
         return myspells;
     }
 
-    private static void initSpells() throws IOException
+    private static void initSpells()
     {
         if (myspellmode != SPELLMODE_LOCAL)
         {
@@ -349,7 +340,7 @@ public class ItemsList
         myspells.add(new Spell("default.theme/pictures/spells/si_196.png", "Missile Swarm", "missile swarm"));
     }
 
-    public static void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message) throws IOException
+    public static void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
     {
         Faces.getFace(face).setName("spell_"+tag);
         try
@@ -378,12 +369,12 @@ public class ItemsList
         }
     }
 
-    public static void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) throws IOException
+    public static void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
     {
         // XXX: updateSpell() not yet implemented
     }
 
-    public static void deleteSpell(final int tag) throws IOException
+    public static void deleteSpell(final int tag)
     {
         // XXX: deleteSpell() not yet implemented
     }
