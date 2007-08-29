@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -556,7 +555,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[6]);
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
                             elements.insert(name, element);
-                            CfMapUpdater.addCrossfireMapscrollListener(element);
                         }
                         else if (args[0].equals("meta_element"))
                         {
