@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.gui.Gui;
@@ -541,7 +540,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h);
                             elements.insert(name, element);
-                            CfMagicMap.addCrossfireMagicmapListener(element);
                             CfMapUpdater.addCrossfireNewmapListener(element);
                         }
                         else if (args[0].equals("map"))
