@@ -104,14 +104,7 @@ public class GUIItemSpellbelt extends GUIItem
         }
 
         final int status = myspellbelt.getStatus();
-        if (status == SpellBeltItem.STATUS_CAST)
-        {
-            myspellbelt.setStatus(SpellBeltItem.STATUS_INVOKE);
-        }
-        else
-        {
-            myspellbelt.setStatus(SpellBeltItem.STATUS_CAST);
-        }
+        myspellbelt.setStatus(status == SpellBeltItem.STATUS_CAST ? SpellBeltItem.STATUS_INVOKE : SpellBeltItem.STATUS_CAST);
         render();
     }
 
