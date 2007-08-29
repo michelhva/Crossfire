@@ -49,7 +49,7 @@ import javax.swing.ImageIcon;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMap extends GUIElement implements CrossfireMapListener, CrossfireNewmapListener, CrossfireMapscrollListener
+public class GUIMap extends GUIElement implements CrossfireNewmapListener, CrossfireMapscrollListener
 {
     /**
      * The color to use for overlaying fog-of-war tiles.
@@ -73,6 +73,29 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
      * color. Not yet allocated entries are set to <code>null</code>.
      */
     private Color[] darknessColors = new Color[256];
+
+    /**
+     * The {@link CrossfireMapListener} registered to receive map updates.
+     */
+    private final CrossfireMapListener crossfireMapListener = new CrossfireMapListener()
+    {
+        /** {@inheritDoc} */
+        public void commandMapReceived(final CrossfireCommandMapEvent evt)
+        {
+            synchronized(mybuffer)
+            {
+                final Graphics2D g = mybuffer.createGraphics();
+                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                {
+                    for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                    {
+                        redrawSquare(g, x, y);
+                    }
+                }
+            }
+            setChanged();
+        }
+    };
 
     /**
      * Create a new instance.
@@ -104,6 +127,7 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IOException("nh="+nh+"!="+CrossfireServerConnection.MAP_HEIGHT*mysquaresize);
 
         createBuffer();
+        CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
     }
 
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big) throws IOException
@@ -325,22 +349,6 @@ public class GUIMap extends GUIElement implements CrossfireMapListener, Crossfir
         synchronized(mybuffer)
         {
             render();
-        }
-        setChanged();
-    }
-
-    public void commandMapReceived(final CrossfireCommandMapEvent evt)
-    {
-        synchronized(mybuffer)
-        {
-            final Graphics2D g = mybuffer.createGraphics();
-            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
-            {
-                for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
-                {
-                    redrawSquare(g, x, y);
-                }
-            }
         }
         setChanged();
     }

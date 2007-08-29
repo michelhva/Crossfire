@@ -556,7 +556,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[6]);
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
                             elements.insert(name, element);
-                            CfMapUpdater.addCrossfireMapListener(element);
                             CfMapUpdater.addCrossfireNewmapListener(element);
                             CfMapUpdater.addCrossfireMapscrollListener(element);
                         }
