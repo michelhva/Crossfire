@@ -49,7 +49,7 @@ import javax.swing.ImageIcon;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMap extends GUIElement implements CrossfireMapscrollListener
+public class GUIMap extends GUIElement
 {
     /**
      * The color to use for overlaying fog-of-war tiles.
@@ -115,6 +115,93 @@ public class GUIMap extends GUIElement implements CrossfireMapscrollListener
     };
 
     /**
+     * The {@link CrossfireMapscrollListener} registered to receive map_scroll
+     * commands.
+     */
+    private final CrossfireMapscrollListener crossfireMapscrollListener = new CrossfireMapscrollListener()
+    {
+        /** {@inheritDoc} */
+        public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
+        {
+            synchronized(mybuffer)
+            {
+                final int dx = -evt.getDX();
+                final int dy = -evt.getDY();
+                if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
+                {
+                    render();
+                    return;
+                }
+
+                final int x;
+                final int w;
+                if (dx < 0)
+                {
+                    x = -dx;
+                    w = CrossfireServerConnection.MAP_WIDTH+dx;
+                }
+                else
+                {
+                    x = 0;
+                    w = CrossfireServerConnection.MAP_WIDTH-dx;
+                }
+                final int y;
+                final int h;
+                if (dy < 0)
+                {
+                    y = -dy;
+                    h = CrossfireServerConnection.MAP_HEIGHT+dy;
+                }
+                else
+                {
+                    y = 0;
+                    h = CrossfireServerConnection.MAP_HEIGHT-dy;
+                }
+
+                final Graphics2D g = mybuffer.createGraphics();
+                try
+                {
+                    g.copyArea(x*mysquaresize, y*mysquaresize, w*mysquaresize, h*mysquaresize, dx*mysquaresize, dy*mysquaresize);
+
+                    for (int yy = 0; yy < y; yy++)
+                    {
+                        for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        {
+                            redrawSquare(g, xx, yy);
+                        }
+                    }
+
+                    for (int yy = y+h; yy < CrossfireServerConnection.MAP_HEIGHT; yy++)
+                    {
+                        for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        {
+                            redrawSquare(g, xx, yy);
+                        }
+                    }
+
+                    for (int yy = y; yy < y+h; yy++)
+                    {
+                        for (int xx = 0; xx < x; xx++)
+                        {
+                            redrawSquare(g, xx, yy);
+                        }
+
+                        for (int xx = x+w; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        {
+                            redrawSquare(g, xx, yy);
+                        }
+                    }
+                }
+                finally
+                {
+                    g.dispose();
+                }
+            }
+            setChanged();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param tileSize The size of one tile in pixels.
@@ -146,6 +233,7 @@ public class GUIMap extends GUIElement implements CrossfireMapscrollListener
         createBuffer();
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
+        CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big) throws IOException
@@ -281,85 +369,6 @@ public class GUIMap extends GUIElement implements CrossfireMapscrollListener
                 sx-mysquaresize, sy-mysquaresize, sx, sy,
                 null);
         }
-    }
-
-    public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
-    {
-        synchronized(mybuffer)
-        {
-            final int dx = -evt.getDX();
-            final int dy = -evt.getDY();
-            if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
-            {
-                render();
-                return;
-            }
-
-            final int x;
-            final int w;
-            if (dx < 0)
-            {
-                x = -dx;
-                w = CrossfireServerConnection.MAP_WIDTH+dx;
-            }
-            else
-            {
-                x = 0;
-                w = CrossfireServerConnection.MAP_WIDTH-dx;
-            }
-            final int y;
-            final int h;
-            if (dy < 0)
-            {
-                y = -dy;
-                h = CrossfireServerConnection.MAP_HEIGHT+dy;
-            }
-            else
-            {
-                y = 0;
-                h = CrossfireServerConnection.MAP_HEIGHT-dy;
-            }
-
-            final Graphics2D g = mybuffer.createGraphics();
-            try
-            {
-                g.copyArea(x*mysquaresize, y*mysquaresize, w*mysquaresize, h*mysquaresize, dx*mysquaresize, dy*mysquaresize);
-
-                for (int yy = 0; yy < y; yy++)
-                {
-                    for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
-                    {
-                        redrawSquare(g, xx, yy);
-                    }
-                }
-
-                for (int yy = y+h; yy < CrossfireServerConnection.MAP_HEIGHT; yy++)
-                {
-                    for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
-                    {
-                        redrawSquare(g, xx, yy);
-                    }
-                }
-
-                for (int yy = y; yy < y+h; yy++)
-                {
-                    for (int xx = 0; xx < x; xx++)
-                    {
-                        redrawSquare(g, xx, yy);
-                    }
-
-                    for (int xx = x+w; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
-                    {
-                        redrawSquare(g, xx, yy);
-                    }
-                }
-            }
-            finally
-            {
-                g.dispose();
-            }
-        }
-        setChanged();
     }
 
     /** {@inheritDoc} */
