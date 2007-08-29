@@ -356,11 +356,52 @@ public class SpellsManager
 
     public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
     {
-        // XXX: updateSpell() not yet implemented
+        int index = 0;
+        for (final Spell spell : spells)
+        {
+            if (spell.getTag() == tag)
+            {
+                if ((flags&CrossfireServerConnection.UPD_SP_MANA) != 0)
+                {
+                    spell.setMana(mana);
+                }
+
+                if ((flags&CrossfireServerConnection.UPD_SP_GRACE) != 0)
+                {
+                    spell.setGrace(mana);
+                }
+
+                if ((flags&CrossfireServerConnection.UPD_SP_DAMAGE) != 0)
+                {
+                    spell.setDamage(mana);
+                }
+
+                for (final CrossfireSpellChangedListener listener : listeners)
+                {
+                    listener.spellModified(spell, index);
+                }
+                break;
+            }
+            index++;
+        }
     }
 
     public void deleteSpell(final int tag)
     {
-        // XXX: deleteSpell() not yet implemented
+        int index = 0;
+        for (final Spell spell : spells)
+        {
+            if (spell.getTag() == tag)
+            {
+                spells.remove(index);
+
+                for (final CrossfireSpellChangedListener listener : listeners)
+                {
+                    listener.spellRemoved(spell, index);
+                }
+                break;
+            }
+            index++;
+        }
     }
 }
