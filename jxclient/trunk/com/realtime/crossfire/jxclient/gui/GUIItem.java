@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.CfItem;
 import com.realtime.crossfire.jxclient.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
@@ -46,7 +45,7 @@ import java.io.IOException;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireSpellChangedListener, CrossfireUpdateFaceListener
+public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireUpdateFaceListener
 {
     protected final BufferedImage mypiccursed;
 
@@ -147,21 +146,6 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
     }
 
     protected abstract void render(final Graphics g);
-
-    /** {@inheritDoc} */
-    public void spellAdded(final Spell spell)
-    {
-    }
-
-    /** {@inheritDoc} */
-    public void spellRemoved(final Spell spell)
-    {
-    }
-
-    /** {@inheritDoc} */
-    public void spellModified(final Spell spell)
-    {
-    }
 
     public void setVisible(final boolean v)
     {

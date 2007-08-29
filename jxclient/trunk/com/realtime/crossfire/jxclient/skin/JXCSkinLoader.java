@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -55,7 +54,6 @@ import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.SpellListener;
 import com.realtime.crossfire.jxclient.Stats;
@@ -410,9 +408,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else if (type.equals("spelllist"))
                             {
-                                final GUIItemSpelllist tmp = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
-                                element = tmp;
-                                ItemsList.getSpellsManager().addCrossfireSpellChangedListener(tmp);
+                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else
                             {
