@@ -36,7 +36,7 @@ public class GUIItemSpelllist extends GUIItem
 
     private int myindex = -1;
 
-    public GUIItemSpelllist(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft) throws IOException
+    public GUIItemSpelllist(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
@@ -73,7 +73,7 @@ public class GUIItemSpelllist extends GUIItem
         render();
     }
 
-    protected void button1Clicked(JXCWindow jxcw)
+    protected void button1Clicked(final JXCWindow jxcw)
     {
         if (myspell == null)
         {
@@ -92,15 +92,15 @@ public class GUIItemSpelllist extends GUIItem
         }
     }
 
-    protected void button2Clicked(JXCWindow jxcw)
+    protected void button2Clicked(final JXCWindow jxcw)
     {
     }
 
-    protected void button3Clicked(JXCWindow jxcw)
+    protected void button3Clicked(final JXCWindow jxcw)
     {
     }
 
-    protected void render(Graphics g)
+    protected void render(final Graphics g)
     {
         if (myspell == null)
         {
