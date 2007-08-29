@@ -21,11 +21,6 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
-import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
-import com.realtime.crossfire.jxclient.CrossfireMapListener;
-import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
-import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
