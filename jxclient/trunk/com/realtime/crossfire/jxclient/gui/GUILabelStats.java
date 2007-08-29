@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.CfPlayer;
 import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
@@ -35,12 +36,69 @@ import java.io.IOException;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUILabelStats extends GUILabel implements CrossfireStatsListener
+public class GUILabelStats extends GUILabel
 {
     /**
      * The stat to display.
      */
     private final int stat;
+
+    /**
+     * The {@link CrossfireStatsListener} registered to be notified about stat
+     * changes.
+     */
+    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    {
+        /** {@inheritDoc} */
+        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        {
+            final Stats s = evt.getStats();
+            final String text;
+            switch (stat)
+            {
+            case Stats.CS_STAT_SPEED:
+            case Stats.CS_STAT_WEAP_SP:
+                final int statValue = s.getStat(stat);
+                final int tmp = (statValue*100+Stats.FLOAT_MULTI/2)/Stats.FLOAT_MULTI;
+                text = tmp/100+"."+tmp/10%10+tmp%10;
+                break;
+
+            case Stats.CS_STAT_RANGE:
+                final String rangeString = s.getRange();
+                if (rangeString.startsWith("Range: spell "))
+                {
+                    text = rangeString.substring(13);
+                }
+                else if (rangeString.startsWith("Range: "))
+                {
+                    text = rangeString.substring(7);
+                }
+                else if (rangeString.startsWith("Skill: "))
+                {
+                    text = rangeString.substring(7);
+                }
+                else
+                {
+                    text = rangeString;
+                }
+                break;
+
+            case Stats.CS_STAT_TITLE:
+                text = s.getTitle();
+                break;
+
+            case Stats.CS_STAT_EXP64:
+            case Stats.CS_STAT_EXP:
+                text = String.valueOf(s.getExperience());
+                break;
+
+            default:
+                text = String.valueOf(s.getStat(stat));
+                break;
+            }
+            setText(text);
+        }
+    };
 
     /**
      * Create a new instance.
@@ -67,55 +125,6 @@ public class GUILabelStats extends GUILabel implements CrossfireStatsListener
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
         this.stat = stat;
-    }
-
-    /** {@inheritDoc} */
-    public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
-    {
-        final Stats s = evt.getStats();
-        final String text;
-        switch (stat)
-        {
-        case Stats.CS_STAT_SPEED:
-        case Stats.CS_STAT_WEAP_SP:
-            final int statValue = s.getStat(stat);
-            final int tmp = (statValue*100+Stats.FLOAT_MULTI/2)/Stats.FLOAT_MULTI;
-            text = tmp/100+"."+tmp/10%10+tmp%10;
-            break;
-
-        case Stats.CS_STAT_RANGE:
-            final String rangeString = s.getRange();
-            if (rangeString.startsWith("Range: spell "))
-            {
-                text = rangeString.substring(13);
-            }
-            else if (rangeString.startsWith("Range: "))
-            {
-                text = rangeString.substring(7);
-            }
-            else if (rangeString.startsWith("Skill: "))
-            {
-                text = rangeString.substring(7);
-            }
-            else
-            {
-                text = rangeString;
-            }
-            break;
-
-        case Stats.CS_STAT_TITLE:
-            text = s.getTitle();
-            break;
-
-        case Stats.CS_STAT_EXP64:
-        case Stats.CS_STAT_EXP:
-            text = String.valueOf(s.getExperience());
-            break;
-
-        default:
-            text = String.valueOf(s.getStat(stat));
-            break;
-        }
-        setText(text);
+        CfPlayer.addCrossfireStatsListener(crossfireStatsListener);
     }
 }

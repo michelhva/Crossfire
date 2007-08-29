@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
-import com.realtime.crossfire.jxclient.CfPlayer;
 import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
@@ -30,7 +29,6 @@ import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
@@ -502,7 +500,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int stat = parseStat(args[8]);
                             final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat);
                             elements.insert(name, element);
-                            CfPlayer.addCrossfireStatsListener(element);
                         }
                         else if (args[0].equals("label_spell"))
                         {
