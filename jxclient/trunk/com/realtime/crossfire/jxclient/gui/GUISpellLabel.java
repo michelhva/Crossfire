@@ -77,53 +77,53 @@ public class GUISpellLabel extends GUILabel
      */
     private final SpellListener spellListener = new SpellListener()
     {
-	/** {@inheritDoc} */
-	public void spellChanged(final SpellChangedEvent evt)
-	{
-	    final Spell sp = evt.getSpell();
-	    if (sp == null)
-	    {
-		setText("");
-		return;
-	    }
+        /** {@inheritDoc} */
+        public void spellChanged(final SpellChangedEvent evt)
+        {
+            final Spell sp = evt.getSpell();
+            if (sp == null)
+            {
+                setText("");
+                return;
+            }
 
-	    switch (type)
-	    {
-	    case SPELL_NAME:
-		setText(sp.getName());
-		break;
+            switch (type)
+            {
+            case SPELL_NAME:
+                setText(sp.getName());
+                break;
 
-	    case SPELL_ICON:
-		setText("");
-		setBackground(sp.getImageIcon());
-		break;
+            case SPELL_ICON:
+                setText("");
+                setBackground(sp.getImageIcon());
+                break;
 
-	    case SPELL_COST:
-		final int mana = sp.getMana();
-		final int grace = sp.getGrace();
-		if (grace == 0)
-		{
-		    setText("M:"+mana);
-		}
-		else if (mana == 0)
-		{
-		    setText("G:"+grace);
-		}
-		else
-		{
-		    setText("M:"+mana+" G:"+grace);
-		}
-		break;
+            case SPELL_COST:
+                final int mana = sp.getMana();
+                final int grace = sp.getGrace();
+                if (grace == 0)
+                {
+                    setText("M:"+mana);
+                }
+                else if (mana == 0)
+                {
+                    setText("G:"+grace);
+                }
+                else
+                {
+                    setText("M:"+mana+" G:"+grace);
+                }
+                break;
 
-	    case SPELL_LEVEL:
-		setText(Integer.toString(sp.getLevel()));
-		break;
+            case SPELL_LEVEL:
+                setText(Integer.toString(sp.getLevel()));
+                break;
 
-	    case SPELL_DESCRIPTION:
-		setText(sp.getMessage());
-		break;
-	    }
-	}
+            case SPELL_DESCRIPTION:
+                setText(sp.getMessage());
+                break;
+            }
+        }
     };
 
     /**
