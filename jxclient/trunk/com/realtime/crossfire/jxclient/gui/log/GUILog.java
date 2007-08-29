@@ -50,7 +50,7 @@ import java.util.ListIterator;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScrollable, CrossfireDrawinfoListener, CrossfireDrawextinfoListener
+public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawinfoListener, CrossfireDrawextinfoListener
 {
     /**
      * The number of pixels to scroll.
@@ -127,6 +127,19 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
     private int topOffset = 0;
 
     /**
+     * The {@link CrossfireQueryListener} registered to receive query commands.
+     */
+    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
+    {
+        /** {@inheritDoc} */
+        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        {
+            parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
+            render();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
@@ -165,6 +178,7 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         this.fontFixedBold = fontFixedBold;
         this.fontArcane = fontArcane;
         createBuffer();
+        jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
     }
 
     protected void render()
@@ -355,13 +369,6 @@ public class GUILog extends GUIElement implements CrossfireQueryListener, GUIScr
         }
 
         throw new AssertionError();
-    }
-
-    /** {@inheritDoc} */
-    public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
-    {
-        parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
-        render();
     }
 
     /** {@inheritDoc} */
