@@ -361,7 +361,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String tooltipPrefix = parseText(args, 11);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             elements.insert(name, element);
-                            CfPlayer.addCrossfireStatsListener(element);
                         }
                         else if (args[0].equals("ignore"))
                         {

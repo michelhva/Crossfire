@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.CfPlayer;
 import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
@@ -39,7 +40,7 @@ import java.io.IOException;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public class GUIGauge extends GUIElement implements CrossfireStatsListener
+public class GUIGauge extends GUIElement
 {
     private final int stat;
 
@@ -77,7 +78,45 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         SN,
     }
 
-        public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix) throws IOException
+    /**
+     * The {@link CrossfireStatsListener} registered to be notified about stat
+     * changes.
+     */
+    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    {
+        /** {@inheritDoc} */
+        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        {
+            final Stats s = evt.getStats();
+            switch (stat)
+            {
+            case Stats.CS_STAT_HP:
+                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
+                break;
+
+            case Stats.CS_STAT_SP:
+                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
+                break;
+
+            case Stats.CS_STAT_FOOD:
+                setValues(s.getStat(stat), 0, 999);
+                break;
+
+            case Stats.CS_STAT_GRACE:
+                setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
+                break;
+
+            default:
+                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
+                {
+                    setValues(s.getStat(stat), -100, 100);
+                }
+                break;
+            }
+        }
+    };
+
+    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         pictureFull = picture_full;
@@ -89,6 +128,7 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         this.tooltipPrefix = tooltipPrefix;
         setValues(0, 0, 0);
         setTooltipText(tooltipPrefix == null ? null : tooltipPrefix+curValue);
+        CfPlayer.addCrossfireStatsListener(crossfireStatsListener);
     }
     public void render()
     {
@@ -245,36 +285,6 @@ public class GUIGauge extends GUIElement implements CrossfireStatsListener
         }
         g.dispose();
         setChanged();
-    }
-
-    public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
-    {
-        final Stats s = evt.getStats();
-        switch (stat)
-        {
-        case Stats.CS_STAT_HP:
-            setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
-            break;
-
-        case Stats.CS_STAT_SP:
-            setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
-            break;
-
-        case Stats.CS_STAT_FOOD:
-            setValues(s.getStat(stat), 0, 999);
-            break;
-
-        case Stats.CS_STAT_GRACE:
-            setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
-            break;
-
-        default:
-            if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
-            {
-                setValues(s.getStat(stat), -100, 100);
-            }
-            break;
-        }
     }
 
     /**
