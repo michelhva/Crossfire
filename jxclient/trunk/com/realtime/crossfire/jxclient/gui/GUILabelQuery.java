@@ -31,8 +31,20 @@ import java.io.IOException;
  *
  * @author Andreas Kirschbaum
  */
-public class GUILabelQuery extends GUILabel implements CrossfireQueryListener
+public class GUILabelQuery extends GUILabel
 {
+    /**
+     * The {@link CrossfireQueryListener} registered to receive query commands.
+     */
+    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
+    {
+        /** {@inheritDoc} */
+        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        {
+            setText(evt.getPrompt());
+        }
+    };
+
     /**
      * Create a new instance.
      *
@@ -55,11 +67,6 @@ public class GUILabelQuery extends GUILabel implements CrossfireQueryListener
     public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color) throws IOException
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
-    }
-
-    /** {@inheritDoc} */
-    public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
-    {
-        setText(evt.getPrompt());
+        jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
     }
 }

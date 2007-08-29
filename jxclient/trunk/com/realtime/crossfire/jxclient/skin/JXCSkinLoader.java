@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.CrossfireMapListener;
 import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
-import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -445,7 +444,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color color = parseColor(args[7]);
                             final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color);
                             elements.insert(name, element);
-                            server.addCrossfireQueryListener(element);
                         }
                         else if (args[0].equals("label_text"))
                         {
