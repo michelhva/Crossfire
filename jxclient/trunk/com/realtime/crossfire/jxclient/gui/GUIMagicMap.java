@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.CfMagicMap;
+import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.CrossfireCommandNewmapEvent;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
@@ -40,7 +41,7 @@ import java.io.IOException;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMagicMap extends GUIElement implements CrossfireNewmapListener
+public class GUIMagicMap extends GUIElement
 {
     private final Color[] mycolors = new Color[]
     {
@@ -84,20 +85,29 @@ public class GUIMagicMap extends GUIElement implements CrossfireNewmapListener
         }
     };
 
+    /**
+     * The {@link CrossfireNewmapListener} registered to receive newmap
+     * commands.
+     */
+    private final CrossfireNewmapListener crossfireNewmapListener = new CrossfireNewmapListener()
+    {
+        /** {@inheritDoc} */
+        public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
+        {
+            Graphics2D g = mybuffer.createGraphics();
+            g.setBackground(new Color(0, 0, 0, 0.0f));
+            g.clearRect(0, 0, w, h);
+            g.dispose();
+            setChanged();
+        }
+    };
+
     public GUIMagicMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         createBuffer();
         CfMagicMap.addCrossfireMagicmapListener(crossfireMagicmapListener);
-    }
-
-    public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
-    {
-        Graphics2D g = mybuffer.createGraphics();
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, w, h);
-        g.dispose();
-        setChanged();
+        CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
     }
 
     /** {@inheritDoc} */

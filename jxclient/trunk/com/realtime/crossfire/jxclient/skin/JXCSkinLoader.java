@@ -540,7 +540,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h);
                             elements.insert(name, element);
-                            CfMapUpdater.addCrossfireNewmapListener(element);
                         }
                         else if (args[0].equals("map"))
                         {
