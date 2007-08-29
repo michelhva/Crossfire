@@ -412,7 +412,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("undefined item type: "+type);
                             }
                             elements.insert(name, element);
-                            server.addCrossfireUpdateFaceListener(element);
                         }
                         else if (args[0].equals("label_drawextinfo"))
                         {

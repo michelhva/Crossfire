@@ -45,7 +45,7 @@ import java.io.IOException;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable, CrossfireUpdateFaceListener
+public abstract class GUIItem extends GUIElement implements GUIScrollable
 {
     protected final BufferedImage mypiccursed;
 
@@ -80,6 +80,30 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         }
     };
 
+    /**
+     * The {@link CrossfireUpdateFaceListener} registered to detect updated
+     * faces.
+     */
+    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    {
+        /** {@inheritDoc} */
+        public void updateFace(final int faceID)
+        {
+            if (myitem == null)
+            {
+                return;
+            }
+
+            final Face face = myitem.getFace();
+            if (face == null || face.getID() != faceID)
+            {
+                return;
+            }
+
+            render();
+        }
+    };
+
     public GUIItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
@@ -92,6 +116,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         myfont = mft;
         createBuffer();
         render();
+        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     public abstract void scrollUp();
@@ -188,22 +213,5 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable, Cross
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
-    }
-
-    /** {@inheritDoc} */
-    public void updateFace(final int faceID)
-    {
-        if (myitem == null)
-        {
-            return;
-        }
-
-        final Face face = myitem.getFace();
-        if (face == null || face.getID() != faceID)
-        {
-            return;
-        }
-
-        render();
     }
 }
