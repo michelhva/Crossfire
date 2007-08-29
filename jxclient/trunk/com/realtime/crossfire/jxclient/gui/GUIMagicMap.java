@@ -42,7 +42,7 @@ import java.io.IOException;
  */
 public class GUIMagicMap extends GUIElement implements CrossfireNewmapListener
 {
-    Color[] mycolors = new Color[]
+    private Color[] mycolors = new Color[]
     {
         Color.BLACK, Color.WHITE, Color.BLUE,
         Color.RED, Color.GREEN, Color.YELLOW,
