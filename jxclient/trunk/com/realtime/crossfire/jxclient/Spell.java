@@ -177,12 +177,7 @@ public class Spell
 
     public ImageIcon getImageIcon()
     {
-        if (myspellpic != null)
-            return myspellpic;
-        else
-        {
-            return myface.getOriginalImageIcon();
-        }
+        return myspellpic != null ? myspellpic : myface.getOriginalImageIcon();
     }
 
     public String toString()
