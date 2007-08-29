@@ -111,42 +111,42 @@ public class Spell
         return myface;
     }
 
-    public void setLevel(int nv)
+    public void setLevel(final int nv)
     {
         mylevel = nv;
     }
 
-    public void setCastingTime(int nv)
+    public void setCastingTime(final int nv)
     {
         mycastingtime = nv;
     }
 
-    public void setMana(int nv)
+    public void setMana(final int nv)
     {
         mymana = nv;
     }
 
-    public void setGrace(int nv)
+    public void setGrace(final int nv)
     {
         mygrace = nv;
     }
 
-    public void setDamage(int nv)
+    public void setDamage(final int nv)
     {
         mydamage = nv;
     }
 
-    public void setSkill(int nv)
+    public void setSkill(final int nv)
     {
         myskill = nv;
     }
 
-    public void setPath(int nv)
+    public void setPath(final int nv)
     {
         mypath = nv;
     }
 
-    public Spell(Face f, int tag, String spellname, String spellmessage)
+    public Spell(final Face f, final int tag, final String spellname, final String spellmessage)
     {
         myspellpic = null;
         myface = f;
@@ -156,7 +156,7 @@ public class Spell
         myid = null;
     }
 
-    public Spell(String filename, String spellname, String id)
+    public Spell(final String filename, final String spellname, final String id)
     {
         myspellpic = new ImageIcon(getClass().getClassLoader().getResource(filename));
         if (myspellpic == null)
