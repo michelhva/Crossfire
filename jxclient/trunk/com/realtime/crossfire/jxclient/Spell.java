@@ -153,7 +153,7 @@ public class Spell
         mytag = tag;
         myname = spellname;
         mymessage = spellmessage;
-        myid = null;
+        myid = Integer.toString(tag);
     }
 
     public Spell(final String filename, final String spellname, final String id)
