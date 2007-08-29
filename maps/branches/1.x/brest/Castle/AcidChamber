@@ -1,13 +1,13 @@
 arch map
-region brest
 name AcidChamber
+region brest
+width 28
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jul  2 01:36:19 1994
 endmsg
-x 28
-y 10
 end
 arch dirtfloor
 end

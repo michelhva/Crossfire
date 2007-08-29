@@ -9,11 +9,14 @@ Creator: majorwoo josh@woosworld.net
 Date:    10/17/2004
 endmsg
 end
+arch dungeon_magic
+end
 arch woodfloor
 end
 arch flagstone_2_2_2
 end
 arch dungeon_magic
+y 1
 end
 arch woodfloor
 y 1
@@ -22,7 +25,7 @@ arch flagstone_2_1_1
 y 1
 end
 arch dungeon_magic
-y 1
+y 2
 end
 arch woodfloor
 y 2
@@ -31,7 +34,7 @@ arch flagstone_2_1_1
 y 2
 end
 arch dungeon_magic
-y 2
+y 3
 end
 arch woodfloor
 y 3
@@ -40,7 +43,7 @@ arch flagstone_2_1_1
 y 3
 end
 arch dungeon_magic
-y 3
+y 4
 end
 arch woodfloor
 y 4
@@ -49,7 +52,7 @@ arch flagstone_2_1_1
 y 4
 end
 arch dungeon_magic
-y 4
+y 5
 end
 arch woodfloor
 y 5
@@ -58,7 +61,7 @@ arch flagstone_2_1_1
 y 5
 end
 arch dungeon_magic
-y 5
+y 6
 end
 arch woodfloor
 y 6
@@ -67,7 +70,7 @@ arch flagstone_2_1_1
 y 6
 end
 arch dungeon_magic
-y 6
+y 7
 end
 arch woodfloor
 y 7
@@ -76,7 +79,7 @@ arch flagstone_2_1_1
 y 7
 end
 arch dungeon_magic
-y 7
+y 8
 end
 arch woodfloor
 y 8
@@ -85,7 +88,7 @@ arch flagstone_2_1_1
 y 8
 end
 arch dungeon_magic
-y 8
+y 9
 end
 arch woodfloor
 y 9
@@ -94,15 +97,12 @@ arch flagstone_2_1_1
 y 9
 end
 arch dungeon_magic
-y 9
+y 10
 end
 arch woodfloor
 y 10
 end
 arch flagstone_2_2_1
-y 10
-end
-arch dungeon_magic
 y 10
 end
 arch blocked
@@ -114,6 +114,9 @@ end
 arch blocked
 y 13
 end
+arch dungeon_magic
+x 1
+end
 arch woodfloor
 x 1
 end
@@ -122,21 +125,22 @@ x 1
 end
 arch dungeon_magic
 x 1
+y 1
 end
 arch woodfloor
 x 1
 y 1
 unique 1
 end
-arch dungeon_magic
-x 1
-y 1
-end
 arch key2
 name pshop1 key
 slaying pshop1
 x 1
 y 1
+end
+arch dungeon_magic
+x 1
+y 2
 end
 arch woodfloor
 x 1
@@ -151,7 +155,7 @@ connected 1
 end
 arch dungeon_magic
 x 1
-y 2
+y 3
 end
 arch woodfloor
 x 1
@@ -169,21 +173,17 @@ connected 1
 end
 arch dungeon_magic
 x 1
-y 3
+y 4
 end
 arch woodfloor
 x 1
 y 4
 end
 arch dungeon_magic
-x 1
-y 4
-end
-arch woodfloor
 x 1
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 1
 y 5
 end
@@ -195,13 +195,17 @@ sp 5
 x 1
 y 5
 end
+arch dungeon_magic
+x 1
+y 6
+end
 arch woodfloor
 x 1
 y 6
 end
 arch dungeon_magic
 x 1
-y 6
+y 7
 end
 arch woodfloor
 x 1
@@ -219,7 +223,7 @@ connected 15
 end
 arch dungeon_magic
 x 1
-y 7
+y 8
 end
 arch woodfloor
 x 1
@@ -233,16 +237,12 @@ connected 15
 end
 arch dungeon_magic
 x 1
-y 8
+y 9
 end
 arch woodfloor
 x 1
 y 9
 unique 1
-end
-arch dungeon_magic
-x 1
-y 9
 end
 arch key2
 name pshop15 key
@@ -250,15 +250,15 @@ slaying pshop15
 x 1
 y 9
 end
+arch dungeon_magic
+x 1
+y 10
+end
 arch woodfloor
 x 1
 y 10
 end
 arch flagstone_2_1_2
-x 1
-y 10
-end
-arch dungeon_magic
 x 1
 y 10
 end
@@ -274,6 +274,9 @@ arch blocked
 x 1
 y 13
 end
+arch dungeon_magic
+x 2
+end
 arch woodfloor
 x 2
 end
@@ -282,6 +285,7 @@ x 2
 end
 arch dungeon_magic
 x 2
+y 1
 end
 arch woodfloor
 x 2
@@ -293,7 +297,7 @@ y 1
 end
 arch dungeon_magic
 x 2
-y 1
+y 2
 end
 arch woodfloor
 x 2
@@ -306,7 +310,7 @@ y 2
 end
 arch dungeon_magic
 x 2
-y 2
+y 3
 end
 arch woodfloor
 x 2
@@ -315,7 +319,7 @@ unique 1
 end
 arch dungeon_magic
 x 2
-y 3
+y 4
 end
 arch woodfloor
 x 2
@@ -323,7 +327,7 @@ y 4
 end
 arch dungeon_magic
 x 2
-y 4
+y 5
 end
 arch woodfloor
 x 2
@@ -331,7 +335,7 @@ y 5
 end
 arch dungeon_magic
 x 2
-y 5
+y 6
 end
 arch woodfloor
 x 2
@@ -339,7 +343,7 @@ y 6
 end
 arch dungeon_magic
 x 2
-y 6
+y 7
 end
 arch woodfloor
 x 2
@@ -348,7 +352,7 @@ unique 1
 end
 arch dungeon_magic
 x 2
-y 7
+y 8
 end
 arch woodfloor
 x 2
@@ -361,7 +365,7 @@ y 8
 end
 arch dungeon_magic
 x 2
-y 8
+y 9
 end
 arch woodfloor
 x 2
@@ -373,17 +377,13 @@ y 9
 end
 arch dungeon_magic
 x 2
-y 9
+y 10
 end
 arch woodfloor
 x 2
 y 10
 end
 arch flagstone_3_1
-x 2
-y 10
-end
-arch dungeon_magic
 x 2
 y 10
 end
@@ -399,6 +399,9 @@ arch blocked
 x 2
 y 13
 end
+arch dungeon_magic
+x 3
+end
 arch woodfloor
 x 3
 end
@@ -407,21 +410,22 @@ x 3
 end
 arch dungeon_magic
 x 3
+y 1
 end
 arch woodfloor
 x 3
 y 1
 unique 1
 end
-arch dungeon_magic
-x 3
-y 1
-end
 arch key2
 name pshop2 key
 slaying pshop2
 x 3
 y 1
+end
+arch dungeon_magic
+x 3
+y 2
 end
 arch woodfloor
 x 3
@@ -435,7 +439,7 @@ connected 2
 end
 arch dungeon_magic
 x 3
-y 2
+y 3
 end
 arch woodfloor
 x 3
@@ -453,7 +457,7 @@ connected 2
 end
 arch dungeon_magic
 x 3
-y 3
+y 4
 end
 arch woodfloor
 x 3
@@ -461,7 +465,7 @@ y 4
 end
 arch dungeon_magic
 x 3
-y 4
+y 5
 end
 arch woodfloor
 x 3
@@ -469,7 +473,7 @@ y 5
 end
 arch dungeon_magic
 x 3
-y 5
+y 6
 end
 arch woodfloor
 x 3
@@ -477,7 +481,7 @@ y 6
 end
 arch dungeon_magic
 x 3
-y 6
+y 7
 end
 arch woodfloor
 x 3
@@ -495,7 +499,7 @@ connected 16
 end
 arch dungeon_magic
 x 3
-y 7
+y 8
 end
 arch woodfloor
 x 3
@@ -509,16 +513,12 @@ connected 16
 end
 arch dungeon_magic
 x 3
-y 8
+y 9
 end
 arch woodfloor
 x 3
 y 9
 unique 1
-end
-arch dungeon_magic
-x 3
-y 9
 end
 arch key2
 name pshop16 key
@@ -526,15 +526,15 @@ slaying pshop16
 x 3
 y 9
 end
+arch dungeon_magic
+x 3
+y 10
+end
 arch woodfloor
 x 3
 y 10
 end
 arch flagstone_2_1_2
-x 3
-y 10
-end
-arch dungeon_magic
 x 3
 y 10
 end
@@ -550,6 +550,9 @@ arch blocked
 x 3
 y 13
 end
+arch dungeon_magic
+x 4
+end
 arch woodfloor
 x 4
 end
@@ -558,6 +561,7 @@ x 4
 end
 arch dungeon_magic
 x 4
+y 1
 end
 arch woodfloor
 x 4
@@ -569,7 +573,7 @@ y 1
 end
 arch dungeon_magic
 x 4
-y 1
+y 2
 end
 arch woodfloor
 x 4
@@ -582,7 +586,7 @@ y 2
 end
 arch dungeon_magic
 x 4
-y 2
+y 3
 end
 arch woodfloor
 x 4
@@ -591,7 +595,7 @@ unique 1
 end
 arch dungeon_magic
 x 4
-y 3
+y 4
 end
 arch woodfloor
 x 4
@@ -599,7 +603,7 @@ y 4
 end
 arch dungeon_magic
 x 4
-y 4
+y 5
 end
 arch woodfloor
 x 4
@@ -607,7 +611,7 @@ y 5
 end
 arch dungeon_magic
 x 4
-y 5
+y 6
 end
 arch woodfloor
 x 4
@@ -615,7 +619,7 @@ y 6
 end
 arch dungeon_magic
 x 4
-y 6
+y 7
 end
 arch woodfloor
 x 4
@@ -624,7 +628,7 @@ unique 1
 end
 arch dungeon_magic
 x 4
-y 7
+y 8
 end
 arch woodfloor
 x 4
@@ -637,7 +641,7 @@ y 8
 end
 arch dungeon_magic
 x 4
-y 8
+y 9
 end
 arch woodfloor
 x 4
@@ -649,17 +653,13 @@ y 9
 end
 arch dungeon_magic
 x 4
-y 9
+y 10
 end
 arch woodfloor
 x 4
 y 10
 end
 arch flagstone_3_1
-x 4
-y 10
-end
-arch dungeon_magic
 x 4
 y 10
 end
@@ -675,6 +675,9 @@ arch blocked
 x 4
 y 13
 end
+arch dungeon_magic
+x 5
+end
 arch woodfloor
 x 5
 end
@@ -683,21 +686,22 @@ x 5
 end
 arch dungeon_magic
 x 5
+y 1
 end
 arch woodfloor
 x 5
 y 1
 unique 1
 end
-arch dungeon_magic
-x 5
-y 1
-end
 arch key2
 name pshop3 key
 slaying pshop3
 x 5
 y 1
+end
+arch dungeon_magic
+x 5
+y 2
 end
 arch woodfloor
 x 5
@@ -711,7 +715,7 @@ connected 3
 end
 arch dungeon_magic
 x 5
-y 2
+y 3
 end
 arch woodfloor
 x 5
@@ -729,7 +733,7 @@ connected 3
 end
 arch dungeon_magic
 x 5
-y 3
+y 4
 end
 arch woodfloor
 x 5
@@ -737,7 +741,7 @@ y 4
 end
 arch dungeon_magic
 x 5
-y 4
+y 5
 end
 arch woodfloor
 x 5
@@ -745,7 +749,7 @@ y 5
 end
 arch dungeon_magic
 x 5
-y 5
+y 6
 end
 arch woodfloor
 x 5
@@ -753,7 +757,7 @@ y 6
 end
 arch dungeon_magic
 x 5
-y 6
+y 7
 end
 arch woodfloor
 x 5
@@ -771,7 +775,7 @@ connected 17
 end
 arch dungeon_magic
 x 5
-y 7
+y 8
 end
 arch woodfloor
 x 5
@@ -785,16 +789,12 @@ connected 17
 end
 arch dungeon_magic
 x 5
-y 8
+y 9
 end
 arch woodfloor
 x 5
 y 9
 unique 1
-end
-arch dungeon_magic
-x 5
-y 9
 end
 arch key2
 name pshop17 key
@@ -802,15 +802,15 @@ slaying pshop17
 x 5
 y 9
 end
+arch dungeon_magic
+x 5
+y 10
+end
 arch woodfloor
 x 5
 y 10
 end
 arch flagstone_2_1_2
-x 5
-y 10
-end
-arch dungeon_magic
 x 5
 y 10
 end
@@ -826,6 +826,9 @@ arch blocked
 x 5
 y 13
 end
+arch dungeon_magic
+x 6
+end
 arch woodfloor
 x 6
 end
@@ -834,6 +837,7 @@ x 6
 end
 arch dungeon_magic
 x 6
+y 1
 end
 arch woodfloor
 x 6
@@ -845,7 +849,7 @@ y 1
 end
 arch dungeon_magic
 x 6
-y 1
+y 2
 end
 arch woodfloor
 x 6
@@ -858,7 +862,7 @@ y 2
 end
 arch dungeon_magic
 x 6
-y 2
+y 3
 end
 arch woodfloor
 x 6
@@ -867,7 +871,7 @@ unique 1
 end
 arch dungeon_magic
 x 6
-y 3
+y 4
 end
 arch woodfloor
 x 6
@@ -875,7 +879,7 @@ y 4
 end
 arch dungeon_magic
 x 6
-y 4
+y 5
 end
 arch woodfloor
 x 6
@@ -883,7 +887,7 @@ y 5
 end
 arch dungeon_magic
 x 6
-y 5
+y 6
 end
 arch woodfloor
 x 6
@@ -891,7 +895,7 @@ y 6
 end
 arch dungeon_magic
 x 6
-y 6
+y 7
 end
 arch woodfloor
 x 6
@@ -900,7 +904,7 @@ unique 1
 end
 arch dungeon_magic
 x 6
-y 7
+y 8
 end
 arch woodfloor
 x 6
@@ -913,7 +917,7 @@ y 8
 end
 arch dungeon_magic
 x 6
-y 8
+y 9
 end
 arch woodfloor
 x 6
@@ -925,17 +929,13 @@ y 9
 end
 arch dungeon_magic
 x 6
-y 9
+y 10
 end
 arch woodfloor
 x 6
 y 10
 end
 arch flagstone_3_1
-x 6
-y 10
-end
-arch dungeon_magic
 x 6
 y 10
 end
@@ -951,6 +951,9 @@ arch blocked
 x 6
 y 13
 end
+arch dungeon_magic
+x 7
+end
 arch woodfloor
 x 7
 end
@@ -959,21 +962,22 @@ x 7
 end
 arch dungeon_magic
 x 7
+y 1
 end
 arch woodfloor
 x 7
 y 1
 unique 1
 end
-arch dungeon_magic
-x 7
-y 1
-end
 arch key2
 name pshop4 key
 slaying pshop4
 x 7
 y 1
+end
+arch dungeon_magic
+x 7
+y 2
 end
 arch woodfloor
 x 7
@@ -987,7 +991,7 @@ connected 4
 end
 arch dungeon_magic
 x 7
-y 2
+y 3
 end
 arch woodfloor
 x 7
@@ -1005,7 +1009,7 @@ connected 4
 end
 arch dungeon_magic
 x 7
-y 3
+y 4
 end
 arch woodfloor
 x 7
@@ -1013,7 +1017,7 @@ y 4
 end
 arch dungeon_magic
 x 7
-y 4
+y 5
 end
 arch woodfloor
 x 7
@@ -1021,7 +1025,7 @@ y 5
 end
 arch dungeon_magic
 x 7
-y 5
+y 6
 end
 arch woodfloor
 x 7
@@ -1029,7 +1033,7 @@ y 6
 end
 arch dungeon_magic
 x 7
-y 6
+y 7
 end
 arch woodfloor
 x 7
@@ -1047,7 +1051,7 @@ connected 18
 end
 arch dungeon_magic
 x 7
-y 7
+y 8
 end
 arch woodfloor
 x 7
@@ -1061,16 +1065,12 @@ connected 18
 end
 arch dungeon_magic
 x 7
-y 8
+y 9
 end
 arch woodfloor
 x 7
 y 9
 unique 1
-end
-arch dungeon_magic
-x 7
-y 9
 end
 arch key2
 name pshop18 key
@@ -1078,15 +1078,15 @@ slaying pshop18
 x 7
 y 9
 end
+arch dungeon_magic
+x 7
+y 10
+end
 arch woodfloor
 x 7
 y 10
 end
 arch flagstone_2_1_2
-x 7
-y 10
-end
-arch dungeon_magic
 x 7
 y 10
 end
@@ -1102,6 +1102,9 @@ arch blocked
 x 7
 y 13
 end
+arch dungeon_magic
+x 8
+end
 arch woodfloor
 x 8
 end
@@ -1110,6 +1113,7 @@ x 8
 end
 arch dungeon_magic
 x 8
+y 1
 end
 arch woodfloor
 x 8
@@ -1121,7 +1125,7 @@ y 1
 end
 arch dungeon_magic
 x 8
-y 1
+y 2
 end
 arch woodfloor
 x 8
@@ -1134,7 +1138,7 @@ y 2
 end
 arch dungeon_magic
 x 8
-y 2
+y 3
 end
 arch woodfloor
 x 8
@@ -1143,7 +1147,7 @@ unique 1
 end
 arch dungeon_magic
 x 8
-y 3
+y 4
 end
 arch woodfloor
 x 8
@@ -1151,7 +1155,7 @@ y 4
 end
 arch dungeon_magic
 x 8
-y 4
+y 5
 end
 arch woodfloor
 x 8
@@ -1159,7 +1163,7 @@ y 5
 end
 arch dungeon_magic
 x 8
-y 5
+y 6
 end
 arch woodfloor
 x 8
@@ -1167,7 +1171,7 @@ y 6
 end
 arch dungeon_magic
 x 8
-y 6
+y 7
 end
 arch woodfloor
 x 8
@@ -1176,7 +1180,7 @@ unique 1
 end
 arch dungeon_magic
 x 8
-y 7
+y 8
 end
 arch woodfloor
 x 8
@@ -1189,7 +1193,7 @@ y 8
 end
 arch dungeon_magic
 x 8
-y 8
+y 9
 end
 arch woodfloor
 x 8
@@ -1201,17 +1205,13 @@ y 9
 end
 arch dungeon_magic
 x 8
-y 9
+y 10
 end
 arch woodfloor
 x 8
 y 10
 end
 arch flagstone_3_1
-x 8
-y 10
-end
-arch dungeon_magic
 x 8
 y 10
 end
@@ -1227,6 +1227,9 @@ arch blocked
 x 8
 y 13
 end
+arch dungeon_magic
+x 9
+end
 arch woodfloor
 x 9
 end
@@ -1235,21 +1238,22 @@ x 9
 end
 arch dungeon_magic
 x 9
+y 1
 end
 arch woodfloor
 x 9
 y 1
 unique 1
 end
-arch dungeon_magic
-x 9
-y 1
-end
 arch key2
 name pshop5 key
 slaying pshop5
 x 9
 y 1
+end
+arch dungeon_magic
+x 9
+y 2
 end
 arch woodfloor
 x 9
@@ -1263,7 +1267,7 @@ connected 5
 end
 arch dungeon_magic
 x 9
-y 2
+y 3
 end
 arch woodfloor
 x 9
@@ -1281,7 +1285,7 @@ connected 5
 end
 arch dungeon_magic
 x 9
-y 3
+y 4
 end
 arch woodfloor
 x 9
@@ -1289,7 +1293,7 @@ y 4
 end
 arch dungeon_magic
 x 9
-y 4
+y 5
 end
 arch woodfloor
 x 9
@@ -1297,7 +1301,7 @@ y 5
 end
 arch dungeon_magic
 x 9
-y 5
+y 6
 end
 arch woodfloor
 x 9
@@ -1305,7 +1309,7 @@ y 6
 end
 arch dungeon_magic
 x 9
-y 6
+y 7
 end
 arch woodfloor
 x 9
@@ -1323,7 +1327,7 @@ connected 19
 end
 arch dungeon_magic
 x 9
-y 7
+y 8
 end
 arch woodfloor
 x 9
@@ -1337,16 +1341,12 @@ connected 19
 end
 arch dungeon_magic
 x 9
-y 8
+y 9
 end
 arch woodfloor
 x 9
 y 9
 unique 1
-end
-arch dungeon_magic
-x 9
-y 9
 end
 arch key2
 name pshop19 key
@@ -1354,15 +1354,15 @@ slaying pshop19
 x 9
 y 9
 end
+arch dungeon_magic
+x 9
+y 10
+end
 arch woodfloor
 x 9
 y 10
 end
 arch flagstone_2_1_2
-x 9
-y 10
-end
-arch dungeon_magic
 x 9
 y 10
 end
@@ -1378,6 +1378,9 @@ arch blocked
 x 9
 y 13
 end
+arch dungeon_magic
+x 10
+end
 arch woodfloor
 x 10
 end
@@ -1386,6 +1389,7 @@ x 10
 end
 arch dungeon_magic
 x 10
+y 1
 end
 arch woodfloor
 x 10
@@ -1397,7 +1401,7 @@ y 1
 end
 arch dungeon_magic
 x 10
-y 1
+y 2
 end
 arch woodfloor
 x 10
@@ -1410,7 +1414,7 @@ y 2
 end
 arch dungeon_magic
 x 10
-y 2
+y 3
 end
 arch woodfloor
 x 10
@@ -1419,7 +1423,7 @@ unique 1
 end
 arch dungeon_magic
 x 10
-y 3
+y 4
 end
 arch woodfloor
 x 10
@@ -1427,7 +1431,7 @@ y 4
 end
 arch dungeon_magic
 x 10
-y 4
+y 5
 end
 arch woodfloor
 x 10
@@ -1435,7 +1439,7 @@ y 5
 end
 arch dungeon_magic
 x 10
-y 5
+y 6
 end
 arch woodfloor
 x 10
@@ -1443,7 +1447,7 @@ y 6
 end
 arch dungeon_magic
 x 10
-y 6
+y 7
 end
 arch woodfloor
 x 10
@@ -1452,7 +1456,7 @@ unique 1
 end
 arch dungeon_magic
 x 10
-y 7
+y 8
 end
 arch woodfloor
 x 10
@@ -1465,7 +1469,7 @@ y 8
 end
 arch dungeon_magic
 x 10
-y 8
+y 9
 end
 arch woodfloor
 x 10
@@ -1477,17 +1481,13 @@ y 9
 end
 arch dungeon_magic
 x 10
-y 9
+y 10
 end
 arch woodfloor
 x 10
 y 10
 end
 arch flagstone_3_1
-x 10
-y 10
-end
-arch dungeon_magic
 x 10
 y 10
 end
@@ -1503,6 +1503,9 @@ arch blocked
 x 10
 y 13
 end
+arch dungeon_magic
+x 11
+end
 arch woodfloor
 x 11
 end
@@ -1511,21 +1514,22 @@ x 11
 end
 arch dungeon_magic
 x 11
+y 1
 end
 arch woodfloor
 x 11
 y 1
 unique 1
 end
-arch dungeon_magic
-x 11
-y 1
-end
 arch key2
 name pshop6 key
 slaying pshop6
 x 11
 y 1
+end
+arch dungeon_magic
+x 11
+y 2
 end
 arch woodfloor
 x 11
@@ -1539,7 +1543,7 @@ connected 6
 end
 arch dungeon_magic
 x 11
-y 2
+y 3
 end
 arch woodfloor
 x 11
@@ -1557,7 +1561,7 @@ connected 6
 end
 arch dungeon_magic
 x 11
-y 3
+y 4
 end
 arch woodfloor
 x 11
@@ -1565,7 +1569,7 @@ y 4
 end
 arch dungeon_magic
 x 11
-y 4
+y 5
 end
 arch woodfloor
 x 11
@@ -1573,7 +1577,7 @@ y 5
 end
 arch dungeon_magic
 x 11
-y 5
+y 6
 end
 arch woodfloor
 x 11
@@ -1581,7 +1585,7 @@ y 6
 end
 arch dungeon_magic
 x 11
-y 6
+y 7
 end
 arch woodfloor
 x 11
@@ -1599,7 +1603,7 @@ connected 20
 end
 arch dungeon_magic
 x 11
-y 7
+y 8
 end
 arch woodfloor
 x 11
@@ -1613,16 +1617,12 @@ connected 20
 end
 arch dungeon_magic
 x 11
-y 8
+y 9
 end
 arch woodfloor
 x 11
 y 9
 unique 1
-end
-arch dungeon_magic
-x 11
-y 9
 end
 arch key2
 name pshop20 key
@@ -1630,15 +1630,15 @@ slaying pshop20
 x 11
 y 9
 end
+arch dungeon_magic
+x 11
+y 10
+end
 arch woodfloor
 x 11
 y 10
 end
 arch flagstone_2_1_2
-x 11
-y 10
-end
-arch dungeon_magic
 x 11
 y 10
 end
@@ -1654,6 +1654,9 @@ arch blocked
 x 11
 y 13
 end
+arch dungeon_magic
+x 12
+end
 arch woodfloor
 x 12
 end
@@ -1662,6 +1665,7 @@ x 12
 end
 arch dungeon_magic
 x 12
+y 1
 end
 arch woodfloor
 x 12
@@ -1673,7 +1677,7 @@ y 1
 end
 arch dungeon_magic
 x 12
-y 1
+y 2
 end
 arch woodfloor
 x 12
@@ -1686,7 +1690,7 @@ y 2
 end
 arch dungeon_magic
 x 12
-y 2
+y 3
 end
 arch woodfloor
 x 12
@@ -1695,7 +1699,7 @@ unique 1
 end
 arch dungeon_magic
 x 12
-y 3
+y 4
 end
 arch woodfloor
 x 12
@@ -1703,7 +1707,7 @@ y 4
 end
 arch dungeon_magic
 x 12
-y 4
+y 5
 end
 arch woodfloor
 x 12
@@ -1711,7 +1715,7 @@ y 5
 end
 arch dungeon_magic
 x 12
-y 5
+y 6
 end
 arch woodfloor
 x 12
@@ -1719,7 +1723,7 @@ y 6
 end
 arch dungeon_magic
 x 12
-y 6
+y 7
 end
 arch woodfloor
 x 12
@@ -1728,7 +1732,7 @@ unique 1
 end
 arch dungeon_magic
 x 12
-y 7
+y 8
 end
 arch woodfloor
 x 12
@@ -1741,7 +1745,7 @@ y 8
 end
 arch dungeon_magic
 x 12
-y 8
+y 9
 end
 arch woodfloor
 x 12
@@ -1753,17 +1757,13 @@ y 9
 end
 arch dungeon_magic
 x 12
-y 9
+y 10
 end
 arch woodfloor
 x 12
 y 10
 end
 arch flagstone_3_1
-x 12
-y 10
-end
-arch dungeon_magic
 x 12
 y 10
 end
@@ -1779,6 +1779,9 @@ arch blocked
 x 12
 y 13
 end
+arch dungeon_magic
+x 13
+end
 arch woodfloor
 x 13
 end
@@ -1787,21 +1790,22 @@ x 13
 end
 arch dungeon_magic
 x 13
+y 1
 end
 arch woodfloor
 x 13
 y 1
 unique 1
 end
-arch dungeon_magic
-x 13
-y 1
-end
 arch key2
 name pshop7 key
 slaying pshop7
 x 13
 y 1
+end
+arch dungeon_magic
+x 13
+y 2
 end
 arch woodfloor
 x 13
@@ -1815,7 +1819,7 @@ connected 7
 end
 arch dungeon_magic
 x 13
-y 2
+y 3
 end
 arch woodfloor
 x 13
@@ -1833,7 +1837,7 @@ connected 7
 end
 arch dungeon_magic
 x 13
-y 3
+y 4
 end
 arch woodfloor
 x 13
@@ -1841,7 +1845,7 @@ y 4
 end
 arch dungeon_magic
 x 13
-y 4
+y 5
 end
 arch woodfloor
 x 13
@@ -1849,7 +1853,7 @@ y 5
 end
 arch dungeon_magic
 x 13
-y 5
+y 6
 end
 arch woodfloor
 x 13
@@ -1857,7 +1861,7 @@ y 6
 end
 arch dungeon_magic
 x 13
-y 6
+y 7
 end
 arch woodfloor
 x 13
@@ -1875,7 +1879,7 @@ connected 21
 end
 arch dungeon_magic
 x 13
-y 7
+y 8
 end
 arch woodfloor
 x 13
@@ -1889,16 +1893,12 @@ connected 21
 end
 arch dungeon_magic
 x 13
-y 8
+y 9
 end
 arch woodfloor
 x 13
 y 9
 unique 1
-end
-arch dungeon_magic
-x 13
-y 9
 end
 arch key2
 name pshop21 key
@@ -1906,15 +1906,15 @@ slaying pshop21
 x 13
 y 9
 end
+arch dungeon_magic
+x 13
+y 10
+end
 arch woodfloor
 x 13
 y 10
 end
 arch flagstone_2_1_2
-x 13
-y 10
-end
-arch dungeon_magic
 x 13
 y 10
 end
@@ -1930,6 +1930,9 @@ arch blocked
 x 13
 y 13
 end
+arch dungeon_magic
+x 14
+end
 arch woodfloor
 x 14
 end
@@ -1938,6 +1941,7 @@ x 14
 end
 arch dungeon_magic
 x 14
+y 1
 end
 arch woodfloor
 x 14
@@ -1949,7 +1953,7 @@ y 1
 end
 arch dungeon_magic
 x 14
-y 1
+y 2
 end
 arch woodfloor
 x 14
@@ -1962,7 +1966,7 @@ y 2
 end
 arch dungeon_magic
 x 14
-y 2
+y 3
 end
 arch woodfloor
 x 14
@@ -1971,21 +1975,17 @@ unique 1
 end
 arch dungeon_magic
 x 14
-y 3
+y 4
 end
 arch woodfloor
 x 14
 y 4
 end
 arch dungeon_magic
-x 14
-y 4
-end
-arch woodfloor
 x 14
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 5
 end
@@ -1993,13 +1993,17 @@ arch platinum_converter
 x 14
 y 5
 end
+arch dungeon_magic
+x 14
+y 6
+end
 arch woodfloor
 x 14
 y 6
 end
 arch dungeon_magic
 x 14
-y 6
+y 7
 end
 arch woodfloor
 x 14
@@ -2007,7 +2011,7 @@ y 7
 end
 arch dungeon_magic
 x 14
-y 7
+y 8
 end
 arch woodfloor
 x 14
@@ -2020,7 +2024,7 @@ y 8
 end
 arch dungeon_magic
 x 14
-y 8
+y 9
 end
 arch woodfloor
 x 14
@@ -2032,17 +2036,13 @@ y 9
 end
 arch dungeon_magic
 x 14
-y 9
+y 10
 end
 arch woodfloor
 x 14
 y 10
 end
 arch flagstone_3_1
-x 14
-y 10
-end
-arch dungeon_magic
 x 14
 y 10
 end
@@ -2058,6 +2058,9 @@ arch blocked
 x 14
 y 13
 end
+arch dungeon_magic
+x 15
+end
 arch woodfloor
 x 15
 end
@@ -2066,21 +2069,22 @@ x 15
 end
 arch dungeon_magic
 x 15
+y 1
 end
 arch woodfloor
 x 15
 y 1
 unique 1
 end
-arch dungeon_magic
-x 15
-y 1
-end
 arch key2
 name pshop8 key
 slaying pshop8
 x 15
 y 1
+end
+arch dungeon_magic
+x 15
+y 2
 end
 arch woodfloor
 x 15
@@ -2094,7 +2098,7 @@ connected 8
 end
 arch dungeon_magic
 x 15
-y 2
+y 3
 end
 arch woodfloor
 x 15
@@ -2112,7 +2116,7 @@ connected 8
 end
 arch dungeon_magic
 x 15
-y 3
+y 4
 end
 arch woodfloor
 x 15
@@ -2120,7 +2124,7 @@ y 4
 end
 arch dungeon_magic
 x 15
-y 4
+y 5
 end
 arch woodfloor
 x 15
@@ -2128,7 +2132,7 @@ y 5
 end
 arch dungeon_magic
 x 15
-y 5
+y 6
 end
 arch woodfloor
 x 15
@@ -2136,21 +2140,17 @@ y 6
 end
 arch dungeon_magic
 x 15
-y 6
+y 7
 end
 arch woodfloor
 x 15
 y 7
 end
 arch dungeon_magic
-x 15
-y 7
-end
-arch woodfloor
 x 15
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 8
 end
@@ -2167,13 +2167,17 @@ endmsg
 x 15
 y 8
 end
+arch dungeon_magic
+x 15
+y 9
+end
 arch woodfloor
 x 15
 y 9
 end
 arch dungeon_magic
 x 15
-y 9
+y 10
 end
 arch woodfloor
 x 15
@@ -2193,10 +2197,6 @@ sp 2
 x 15
 y 10
 end
-arch dungeon_magic
-x 15
-y 10
-end
 arch blocked
 x 15
 y 11
@@ -2209,6 +2209,9 @@ arch blocked
 x 15
 y 13
 end
+arch dungeon_magic
+x 16
+end
 arch woodfloor
 x 16
 end
@@ -2217,6 +2220,7 @@ x 16
 end
 arch dungeon_magic
 x 16
+y 1
 end
 arch woodfloor
 x 16
@@ -2228,7 +2232,7 @@ y 1
 end
 arch dungeon_magic
 x 16
-y 1
+y 2
 end
 arch woodfloor
 x 16
@@ -2241,7 +2245,7 @@ y 2
 end
 arch dungeon_magic
 x 16
-y 2
+y 3
 end
 arch woodfloor
 x 16
@@ -2250,21 +2254,17 @@ unique 1
 end
 arch dungeon_magic
 x 16
-y 3
+y 4
 end
 arch woodfloor
 x 16
 y 4
 end
 arch dungeon_magic
-x 16
-y 4
-end
-arch woodfloor
 x 16
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 5
 end
@@ -2272,13 +2272,17 @@ arch diamond_converter
 x 16
 y 5
 end
+arch dungeon_magic
+x 16
+y 6
+end
 arch woodfloor
 x 16
 y 6
 end
 arch dungeon_magic
 x 16
-y 6
+y 7
 end
 arch woodfloor
 x 16
@@ -2286,7 +2290,7 @@ y 7
 end
 arch dungeon_magic
 x 16
-y 7
+y 8
 end
 arch woodfloor
 x 16
@@ -2299,7 +2303,7 @@ y 8
 end
 arch dungeon_magic
 x 16
-y 8
+y 9
 end
 arch woodfloor
 x 16
@@ -2311,17 +2315,13 @@ y 9
 end
 arch dungeon_magic
 x 16
-y 9
+y 10
 end
 arch woodfloor
 x 16
 y 10
 end
 arch flagstone_3_1
-x 16
-y 10
-end
-arch dungeon_magic
 x 16
 y 10
 end
@@ -2337,6 +2337,9 @@ arch blocked
 x 16
 y 13
 end
+arch dungeon_magic
+x 17
+end
 arch woodfloor
 x 17
 end
@@ -2345,21 +2348,22 @@ x 17
 end
 arch dungeon_magic
 x 17
+y 1
 end
 arch woodfloor
 x 17
 y 1
 unique 1
 end
-arch dungeon_magic
-x 17
-y 1
-end
 arch key2
 name pshop9 key
 slaying pshop9
 x 17
 y 1
+end
+arch dungeon_magic
+x 17
+y 2
 end
 arch woodfloor
 x 17
@@ -2373,7 +2377,7 @@ connected 9
 end
 arch dungeon_magic
 x 17
-y 2
+y 3
 end
 arch woodfloor
 x 17
@@ -2391,7 +2395,7 @@ connected 9
 end
 arch dungeon_magic
 x 17
-y 3
+y 4
 end
 arch woodfloor
 x 17
@@ -2399,7 +2403,7 @@ y 4
 end
 arch dungeon_magic
 x 17
-y 4
+y 5
 end
 arch woodfloor
 x 17
@@ -2407,7 +2411,7 @@ y 5
 end
 arch dungeon_magic
 x 17
-y 5
+y 6
 end
 arch woodfloor
 x 17
@@ -2415,7 +2419,7 @@ y 6
 end
 arch dungeon_magic
 x 17
-y 6
+y 7
 end
 arch woodfloor
 x 17
@@ -2433,7 +2437,7 @@ connected 22
 end
 arch dungeon_magic
 x 17
-y 7
+y 8
 end
 arch woodfloor
 x 17
@@ -2447,16 +2451,12 @@ connected 22
 end
 arch dungeon_magic
 x 17
-y 8
+y 9
 end
 arch woodfloor
 x 17
 y 9
 unique 1
-end
-arch dungeon_magic
-x 17
-y 9
 end
 arch key2
 name pshop22 key
@@ -2464,15 +2464,15 @@ slaying pshop22
 x 17
 y 9
 end
+arch dungeon_magic
+x 17
+y 10
+end
 arch woodfloor
 x 17
 y 10
 end
 arch flagstone_2_1_2
-x 17
-y 10
-end
-arch dungeon_magic
 x 17
 y 10
 end
@@ -2488,6 +2488,9 @@ arch blocked
 x 17
 y 13
 end
+arch dungeon_magic
+x 18
+end
 arch woodfloor
 x 18
 end
@@ -2496,6 +2499,7 @@ x 18
 end
 arch dungeon_magic
 x 18
+y 1
 end
 arch woodfloor
 x 18
@@ -2507,7 +2511,7 @@ y 1
 end
 arch dungeon_magic
 x 18
-y 1
+y 2
 end
 arch woodfloor
 x 18
@@ -2520,7 +2524,7 @@ y 2
 end
 arch dungeon_magic
 x 18
-y 2
+y 3
 end
 arch woodfloor
 x 18
@@ -2529,7 +2533,7 @@ unique 1
 end
 arch dungeon_magic
 x 18
-y 3
+y 4
 end
 arch woodfloor
 x 18
@@ -2537,7 +2541,7 @@ y 4
 end
 arch dungeon_magic
 x 18
-y 4
+y 5
 end
 arch woodfloor
 x 18
@@ -2545,7 +2549,7 @@ y 5
 end
 arch dungeon_magic
 x 18
-y 5
+y 6
 end
 arch woodfloor
 x 18
@@ -2553,7 +2557,7 @@ y 6
 end
 arch dungeon_magic
 x 18
-y 6
+y 7
 end
 arch woodfloor
 x 18
@@ -2562,7 +2566,7 @@ unique 1
 end
 arch dungeon_magic
 x 18
-y 7
+y 8
 end
 arch woodfloor
 x 18
@@ -2575,7 +2579,7 @@ y 8
 end
 arch dungeon_magic
 x 18
-y 8
+y 9
 end
 arch woodfloor
 x 18
@@ -2587,17 +2591,13 @@ y 9
 end
 arch dungeon_magic
 x 18
-y 9
+y 10
 end
 arch woodfloor
 x 18
 y 10
 end
 arch flagstone_3_1
-x 18
-y 10
-end
-arch dungeon_magic
 x 18
 y 10
 end
@@ -2613,6 +2613,9 @@ arch blocked
 x 18
 y 13
 end
+arch dungeon_magic
+x 19
+end
 arch woodfloor
 x 19
 end
@@ -2621,21 +2624,22 @@ x 19
 end
 arch dungeon_magic
 x 19
+y 1
 end
 arch woodfloor
 x 19
 y 1
 unique 1
 end
-arch dungeon_magic
-x 19
-y 1
-end
 arch key2
 name pshop10 key
 slaying pshop10
 x 19
 y 1
+end
+arch dungeon_magic
+x 19
+y 2
 end
 arch woodfloor
 x 19
@@ -2649,7 +2653,7 @@ connected 10
 end
 arch dungeon_magic
 x 19
-y 2
+y 3
 end
 arch woodfloor
 x 19
@@ -2667,7 +2671,7 @@ connected 10
 end
 arch dungeon_magic
 x 19
-y 3
+y 4
 end
 arch woodfloor
 x 19
@@ -2675,7 +2679,7 @@ y 4
 end
 arch dungeon_magic
 x 19
-y 4
+y 5
 end
 arch woodfloor
 x 19
@@ -2683,7 +2687,7 @@ y 5
 end
 arch dungeon_magic
 x 19
-y 5
+y 6
 end
 arch woodfloor
 x 19
@@ -2691,7 +2695,7 @@ y 6
 end
 arch dungeon_magic
 x 19
-y 6
+y 7
 end
 arch woodfloor
 x 19
@@ -2709,7 +2713,7 @@ connected 23
 end
 arch dungeon_magic
 x 19
-y 7
+y 8
 end
 arch woodfloor
 x 19
@@ -2723,16 +2727,12 @@ connected 23
 end
 arch dungeon_magic
 x 19
-y 8
+y 9
 end
 arch woodfloor
 x 19
 y 9
 unique 1
-end
-arch dungeon_magic
-x 19
-y 9
 end
 arch key2
 name pshop23 key
@@ -2740,15 +2740,15 @@ slaying pshop23
 x 19
 y 9
 end
+arch dungeon_magic
+x 19
+y 10
+end
 arch woodfloor
 x 19
 y 10
 end
 arch flagstone_2_1_2
-x 19
-y 10
-end
-arch dungeon_magic
 x 19
 y 10
 end
@@ -2764,6 +2764,9 @@ arch blocked
 x 19
 y 13
 end
+arch dungeon_magic
+x 20
+end
 arch woodfloor
 x 20
 end
@@ -2772,6 +2775,7 @@ x 20
 end
 arch dungeon_magic
 x 20
+y 1
 end
 arch woodfloor
 x 20
@@ -2783,7 +2787,7 @@ y 1
 end
 arch dungeon_magic
 x 20
-y 1
+y 2
 end
 arch woodfloor
 x 20
@@ -2796,7 +2800,7 @@ y 2
 end
 arch dungeon_magic
 x 20
-y 2
+y 3
 end
 arch woodfloor
 x 20
@@ -2805,7 +2809,7 @@ unique 1
 end
 arch dungeon_magic
 x 20
-y 3
+y 4
 end
 arch woodfloor
 x 20
@@ -2813,7 +2817,7 @@ y 4
 end
 arch dungeon_magic
 x 20
-y 4
+y 5
 end
 arch woodfloor
 x 20
@@ -2821,7 +2825,7 @@ y 5
 end
 arch dungeon_magic
 x 20
-y 5
+y 6
 end
 arch woodfloor
 x 20
@@ -2829,7 +2833,7 @@ y 6
 end
 arch dungeon_magic
 x 20
-y 6
+y 7
 end
 arch woodfloor
 x 20
@@ -2838,7 +2842,7 @@ unique 1
 end
 arch dungeon_magic
 x 20
-y 7
+y 8
 end
 arch woodfloor
 x 20
@@ -2851,7 +2855,7 @@ y 8
 end
 arch dungeon_magic
 x 20
-y 8
+y 9
 end
 arch woodfloor
 x 20
@@ -2863,17 +2867,13 @@ y 9
 end
 arch dungeon_magic
 x 20
-y 9
+y 10
 end
 arch woodfloor
 x 20
 y 10
 end
 arch flagstone_3_1
-x 20
-y 10
-end
-arch dungeon_magic
 x 20
 y 10
 end
@@ -2889,6 +2889,9 @@ arch blocked
 x 20
 y 13
 end
+arch dungeon_magic
+x 21
+end
 arch woodfloor
 x 21
 end
@@ -2897,21 +2900,22 @@ x 21
 end
 arch dungeon_magic
 x 21
+y 1
 end
 arch woodfloor
 x 21
 y 1
 unique 1
 end
-arch dungeon_magic
-x 21
-y 1
-end
 arch key2
 name pshop11 key
 slaying pshop11
 x 21
 y 1
+end
+arch dungeon_magic
+x 21
+y 2
 end
 arch woodfloor
 x 21
@@ -2925,7 +2929,7 @@ connected 11
 end
 arch dungeon_magic
 x 21
-y 2
+y 3
 end
 arch woodfloor
 x 21
@@ -2943,7 +2947,7 @@ connected 11
 end
 arch dungeon_magic
 x 21
-y 3
+y 4
 end
 arch woodfloor
 x 21
@@ -2951,7 +2955,7 @@ y 4
 end
 arch dungeon_magic
 x 21
-y 4
+y 5
 end
 arch woodfloor
 x 21
@@ -2959,7 +2963,7 @@ y 5
 end
 arch dungeon_magic
 x 21
-y 5
+y 6
 end
 arch woodfloor
 x 21
@@ -2967,7 +2971,7 @@ y 6
 end
 arch dungeon_magic
 x 21
-y 6
+y 7
 end
 arch woodfloor
 x 21
@@ -2985,7 +2989,7 @@ connected 24
 end
 arch dungeon_magic
 x 21
-y 7
+y 8
 end
 arch woodfloor
 x 21
@@ -2999,16 +3003,12 @@ connected 24
 end
 arch dungeon_magic
 x 21
-y 8
+y 9
 end
 arch woodfloor
 x 21
 y 9
 unique 1
-end
-arch dungeon_magic
-x 21
-y 9
 end
 arch key2
 name pshop24 key
@@ -3016,15 +3016,15 @@ slaying pshop24
 x 21
 y 9
 end
+arch dungeon_magic
+x 21
+y 10
+end
 arch woodfloor
 x 21
 y 10
 end
 arch flagstone_2_1_2
-x 21
-y 10
-end
-arch dungeon_magic
 x 21
 y 10
 end
@@ -3040,6 +3040,9 @@ arch blocked
 x 21
 y 13
 end
+arch dungeon_magic
+x 22
+end
 arch woodfloor
 x 22
 end
@@ -3048,6 +3051,7 @@ x 22
 end
 arch dungeon_magic
 x 22
+y 1
 end
 arch woodfloor
 x 22
@@ -3059,7 +3063,7 @@ y 1
 end
 arch dungeon_magic
 x 22
-y 1
+y 2
 end
 arch woodfloor
 x 22
@@ -3072,7 +3076,7 @@ y 2
 end
 arch dungeon_magic
 x 22
-y 2
+y 3
 end
 arch woodfloor
 x 22
@@ -3081,7 +3085,7 @@ unique 1
 end
 arch dungeon_magic
 x 22
-y 3
+y 4
 end
 arch woodfloor
 x 22
@@ -3089,7 +3093,7 @@ y 4
 end
 arch dungeon_magic
 x 22
-y 4
+y 5
 end
 arch woodfloor
 x 22
@@ -3097,7 +3101,7 @@ y 5
 end
 arch dungeon_magic
 x 22
-y 5
+y 6
 end
 arch woodfloor
 x 22
@@ -3105,7 +3109,7 @@ y 6
 end
 arch dungeon_magic
 x 22
-y 6
+y 7
 end
 arch woodfloor
 x 22
@@ -3114,7 +3118,7 @@ unique 1
 end
 arch dungeon_magic
 x 22
-y 7
+y 8
 end
 arch woodfloor
 x 22
@@ -3127,7 +3131,7 @@ y 8
 end
 arch dungeon_magic
 x 22
-y 8
+y 9
 end
 arch woodfloor
 x 22
@@ -3139,17 +3143,13 @@ y 9
 end
 arch dungeon_magic
 x 22
-y 9
+y 10
 end
 arch woodfloor
 x 22
 y 10
 end
 arch flagstone_3_1
-x 22
-y 10
-end
-arch dungeon_magic
 x 22
 y 10
 end
@@ -3165,6 +3165,9 @@ arch blocked
 x 22
 y 13
 end
+arch dungeon_magic
+x 23
+end
 arch woodfloor
 x 23
 end
@@ -3173,21 +3176,22 @@ x 23
 end
 arch dungeon_magic
 x 23
+y 1
 end
 arch woodfloor
 x 23
 y 1
 unique 1
 end
-arch dungeon_magic
-x 23
-y 1
-end
 arch key2
 name pshop12 key
 slaying pshop12
 x 23
 y 1
+end
+arch dungeon_magic
+x 23
+y 2
 end
 arch woodfloor
 x 23
@@ -3201,7 +3205,7 @@ connected 12
 end
 arch dungeon_magic
 x 23
-y 2
+y 3
 end
 arch woodfloor
 x 23
@@ -3219,7 +3223,7 @@ connected 12
 end
 arch dungeon_magic
 x 23
-y 3
+y 4
 end
 arch woodfloor
 x 23
@@ -3227,7 +3231,7 @@ y 4
 end
 arch dungeon_magic
 x 23
-y 4
+y 5
 end
 arch woodfloor
 x 23
@@ -3235,7 +3239,7 @@ y 5
 end
 arch dungeon_magic
 x 23
-y 5
+y 6
 end
 arch woodfloor
 x 23
@@ -3243,7 +3247,7 @@ y 6
 end
 arch dungeon_magic
 x 23
-y 6
+y 7
 end
 arch woodfloor
 x 23
@@ -3261,7 +3265,7 @@ connected 25
 end
 arch dungeon_magic
 x 23
-y 7
+y 8
 end
 arch woodfloor
 x 23
@@ -3275,16 +3279,12 @@ connected 25
 end
 arch dungeon_magic
 x 23
-y 8
+y 9
 end
 arch woodfloor
 x 23
 y 9
 unique 1
-end
-arch dungeon_magic
-x 23
-y 9
 end
 arch key2
 name pshop25 key
@@ -3292,15 +3292,15 @@ slaying pshop25
 x 23
 y 9
 end
+arch dungeon_magic
+x 23
+y 10
+end
 arch woodfloor
 x 23
 y 10
 end
 arch flagstone_2_1_2
-x 23
-y 10
-end
-arch dungeon_magic
 x 23
 y 10
 end
@@ -3316,6 +3316,9 @@ arch blocked
 x 23
 y 13
 end
+arch dungeon_magic
+x 24
+end
 arch woodfloor
 x 24
 end
@@ -3324,6 +3327,7 @@ x 24
 end
 arch dungeon_magic
 x 24
+y 1
 end
 arch woodfloor
 x 24
@@ -3335,7 +3339,7 @@ y 1
 end
 arch dungeon_magic
 x 24
-y 1
+y 2
 end
 arch woodfloor
 x 24
@@ -3348,7 +3352,7 @@ y 2
 end
 arch dungeon_magic
 x 24
-y 2
+y 3
 end
 arch woodfloor
 x 24
@@ -3357,7 +3361,7 @@ unique 1
 end
 arch dungeon_magic
 x 24
-y 3
+y 4
 end
 arch woodfloor
 x 24
@@ -3365,7 +3369,7 @@ y 4
 end
 arch dungeon_magic
 x 24
-y 4
+y 5
 end
 arch woodfloor
 x 24
@@ -3373,7 +3377,7 @@ y 5
 end
 arch dungeon_magic
 x 24
-y 5
+y 6
 end
 arch woodfloor
 x 24
@@ -3381,7 +3385,7 @@ y 6
 end
 arch dungeon_magic
 x 24
-y 6
+y 7
 end
 arch woodfloor
 x 24
@@ -3390,7 +3394,7 @@ unique 1
 end
 arch dungeon_magic
 x 24
-y 7
+y 8
 end
 arch woodfloor
 x 24
@@ -3403,7 +3407,7 @@ y 8
 end
 arch dungeon_magic
 x 24
-y 8
+y 9
 end
 arch woodfloor
 x 24
@@ -3415,17 +3419,13 @@ y 9
 end
 arch dungeon_magic
 x 24
-y 9
+y 10
 end
 arch woodfloor
 x 24
 y 10
 end
 arch flagstone_3_1
-x 24
-y 10
-end
-arch dungeon_magic
 x 24
 y 10
 end
@@ -3441,6 +3441,9 @@ arch blocked
 x 24
 y 13
 end
+arch dungeon_magic
+x 25
+end
 arch woodfloor
 x 25
 end
@@ -3449,21 +3452,22 @@ x 25
 end
 arch dungeon_magic
 x 25
+y 1
 end
 arch woodfloor
 x 25
 y 1
 unique 1
 end
-arch dungeon_magic
-x 25
-y 1
-end
 arch key2
 name pshop13 key
 slaying pshop13
 x 25
 y 1
+end
+arch dungeon_magic
+x 25
+y 2
 end
 arch woodfloor
 x 25
@@ -3477,7 +3481,7 @@ connected 13
 end
 arch dungeon_magic
 x 25
-y 2
+y 3
 end
 arch woodfloor
 x 25
@@ -3495,7 +3499,7 @@ connected 13
 end
 arch dungeon_magic
 x 25
-y 3
+y 4
 end
 arch woodfloor
 x 25
@@ -3503,7 +3507,7 @@ y 4
 end
 arch dungeon_magic
 x 25
-y 4
+y 5
 end
 arch woodfloor
 x 25
@@ -3511,7 +3515,7 @@ y 5
 end
 arch dungeon_magic
 x 25
-y 5
+y 6
 end
 arch woodfloor
 x 25
@@ -3519,7 +3523,7 @@ y 6
 end
 arch dungeon_magic
 x 25
-y 6
+y 7
 end
 arch woodfloor
 x 25
@@ -3537,7 +3541,7 @@ connected 26
 end
 arch dungeon_magic
 x 25
-y 7
+y 8
 end
 arch woodfloor
 x 25
@@ -3551,16 +3555,12 @@ connected 26
 end
 arch dungeon_magic
 x 25
-y 8
+y 9
 end
 arch woodfloor
 x 25
 y 9
 unique 1
-end
-arch dungeon_magic
-x 25
-y 9
 end
 arch key2
 name pshop26 key
@@ -3568,15 +3568,15 @@ slaying pshop26
 x 25
 y 9
 end
+arch dungeon_magic
+x 25
+y 10
+end
 arch woodfloor
 x 25
 y 10
 end
 arch flagstone_2_1_2
-x 25
-y 10
-end
-arch dungeon_magic
 x 25
 y 10
 end
@@ -3592,6 +3592,9 @@ arch blocked
 x 25
 y 13
 end
+arch dungeon_magic
+x 26
+end
 arch woodfloor
 x 26
 end
@@ -3600,6 +3603,7 @@ x 26
 end
 arch dungeon_magic
 x 26
+y 1
 end
 arch woodfloor
 x 26
@@ -3611,7 +3615,7 @@ y 1
 end
 arch dungeon_magic
 x 26
-y 1
+y 2
 end
 arch woodfloor
 x 26
@@ -3624,7 +3628,7 @@ y 2
 end
 arch dungeon_magic
 x 26
-y 2
+y 3
 end
 arch woodfloor
 x 26
@@ -3633,7 +3637,7 @@ unique 1
 end
 arch dungeon_magic
 x 26
-y 3
+y 4
 end
 arch woodfloor
 x 26
@@ -3641,7 +3645,7 @@ y 4
 end
 arch dungeon_magic
 x 26
-y 4
+y 5
 end
 arch woodfloor
 x 26
@@ -3649,7 +3653,7 @@ y 5
 end
 arch dungeon_magic
 x 26
-y 5
+y 6
 end
 arch woodfloor
 x 26
@@ -3657,7 +3661,7 @@ y 6
 end
 arch dungeon_magic
 x 26
-y 6
+y 7
 end
 arch woodfloor
 x 26
@@ -3666,7 +3670,7 @@ unique 1
 end
 arch dungeon_magic
 x 26
-y 7
+y 8
 end
 arch woodfloor
 x 26
@@ -3679,7 +3683,7 @@ y 8
 end
 arch dungeon_magic
 x 26
-y 8
+y 9
 end
 arch woodfloor
 x 26
@@ -3691,17 +3695,13 @@ y 9
 end
 arch dungeon_magic
 x 26
-y 9
+y 10
 end
 arch woodfloor
 x 26
 y 10
 end
 arch flagstone_3_1
-x 26
-y 10
-end
-arch dungeon_magic
 x 26
 y 10
 end
@@ -3717,6 +3717,9 @@ arch blocked
 x 26
 y 13
 end
+arch dungeon_magic
+x 27
+end
 arch woodfloor
 x 27
 end
@@ -3725,21 +3728,22 @@ x 27
 end
 arch dungeon_magic
 x 27
+y 1
 end
 arch woodfloor
 x 27
 y 1
 unique 1
 end
-arch dungeon_magic
-x 27
-y 1
-end
 arch key2
 name pshop14 key
 slaying pshop14
 x 27
 y 1
+end
+arch dungeon_magic
+x 27
+y 2
 end
 arch woodfloor
 x 27
@@ -3753,7 +3757,7 @@ connected 14
 end
 arch dungeon_magic
 x 27
-y 2
+y 3
 end
 arch woodfloor
 x 27
@@ -3771,7 +3775,7 @@ connected 14
 end
 arch dungeon_magic
 x 27
-y 3
+y 4
 end
 arch woodfloor
 x 27
@@ -3779,7 +3783,7 @@ y 4
 end
 arch dungeon_magic
 x 27
-y 4
+y 5
 end
 arch woodfloor
 x 27
@@ -3787,7 +3791,7 @@ y 5
 end
 arch dungeon_magic
 x 27
-y 5
+y 6
 end
 arch woodfloor
 x 27
@@ -3795,7 +3799,7 @@ y 6
 end
 arch dungeon_magic
 x 27
-y 6
+y 7
 end
 arch woodfloor
 x 27
@@ -3813,7 +3817,7 @@ connected 27
 end
 arch dungeon_magic
 x 27
-y 7
+y 8
 end
 arch woodfloor
 x 27
@@ -3827,16 +3831,12 @@ connected 27
 end
 arch dungeon_magic
 x 27
-y 8
+y 9
 end
 arch woodfloor
 x 27
 y 9
 unique 1
-end
-arch dungeon_magic
-x 27
-y 9
 end
 arch key2
 name pshop27 key
@@ -3844,15 +3844,15 @@ slaying pshop27
 x 27
 y 9
 end
+arch dungeon_magic
+x 27
+y 10
+end
 arch woodfloor
 x 27
 y 10
 end
 arch flagstone_2_1_2
-x 27
-y 10
-end
-arch dungeon_magic
 x 27
 y 10
 end
@@ -3868,15 +3868,19 @@ arch blocked
 x 27
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 28
 end
-arch dungeon_magic
+arch woodfloor
 x 28
 end
 arch flagstone_3_3
 x 28
 end
+arch dungeon_magic
+x 28
+y 1
+end
 arch woodfloor
 x 28
 y 1
@@ -3887,7 +3891,7 @@ y 1
 end
 arch dungeon_magic
 x 28
-y 1
+y 2
 end
 arch woodfloor
 x 28
@@ -3898,20 +3902,20 @@ x 28
 y 2
 end
 arch dungeon_magic
-x 28
-y 2
-end
-arch woodfloor
 x 28
 y 3
 end
-arch dungeon_magic
+arch woodfloor
 x 28
 y 3
 end
 arch flagstone_2_2_1
 x 28
 y 3
+end
+arch dungeon_magic
+x 28
+y 4
 end
 arch magic_mouth
 name Elite Dragon Guard
@@ -3926,10 +3930,6 @@ arch woodfloor
 x 28
 y 4
 end
-arch dungeon_magic
-x 28
-y 4
-end
 arch dun0
 name Elite Dragon Guard
 face pl_dragon_bl.151
@@ -3953,11 +3953,11 @@ y 5
 move_block 0
 can_roll 0
 end
-arch woodfloor
+arch dungeon_magic
 x 28
 y 6
 end
-arch dungeon_magic
+arch woodfloor
 x 28
 y 6
 end
@@ -3968,11 +3968,11 @@ x 28
 y 6
 blocksview 0
 end
-arch woodfloor
+arch dungeon_magic
 x 28
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 28
 y 7
 end
@@ -3980,6 +3980,10 @@ arch flagstone_2_2_2
 x 28
 y 7
 end
+arch dungeon_magic
+x 28
+y 8
+end
 arch woodfloor
 x 28
 y 8
@@ -3990,17 +3994,13 @@ y 8
 end
 arch dungeon_magic
 x 28
-y 8
+y 9
 end
 arch woodfloor
 x 28
 y 9
 end
 arch flagstone_2_1_1
-x 28
-y 9
-end
-arch dungeon_magic
 x 28
 y 9
 end
@@ -4028,15 +4028,19 @@ arch blocked
 x 28
 y 13
 end
-arch woodfloor2
+arch dungeon_magic
 x 29
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 end
 arch flagstone_3_3
 x 29
 end
+arch dungeon_magic
+x 29
+y 1
+end
 arch woodfloor2
 x 29
 y 1
@@ -4047,7 +4051,7 @@ y 1
 end
 arch dungeon_magic
 x 29
-y 1
+y 2
 end
 arch woodfloor2
 x 29
@@ -4058,14 +4062,10 @@ x 29
 y 2
 end
 arch dungeon_magic
-x 29
-y 2
-end
-arch woodfloor2
 x 29
 y 3
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 y 3
 end
@@ -4073,11 +4073,11 @@ arch flagstone_3_4
 x 29
 y 3
 end
-arch woodfloor2
+arch dungeon_magic
 x 29
 y 4
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 y 4
 end
@@ -4085,11 +4085,11 @@ arch flagstone_1_2
 x 29
 y 4
 end
-arch woodfloor2
+arch dungeon_magic
 x 29
 y 5
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 y 5
 end
@@ -4098,11 +4098,11 @@ name Managers Office
 x 29
 y 5
 end
-arch woodfloor2
+arch dungeon_magic
 x 29
 y 6
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 y 6
 end
@@ -4110,11 +4110,11 @@ arch flagstone_1_1
 x 29
 y 6
 end
-arch woodfloor2
+arch dungeon_magic
 x 29
 y 7
 end
-arch dungeon_magic
+arch woodfloor2
 x 29
 y 7
 end
@@ -4122,6 +4122,10 @@ arch flagstone_3_4
 x 29
 y 7
 end
+arch dungeon_magic
+x 29
+y 8
+end
 arch woodfloor2
 x 29
 y 8
@@ -4132,17 +4136,13 @@ y 8
 end
 arch dungeon_magic
 x 29
-y 8
+y 9
 end
 arch woodfloor2
 x 29
 y 9
 end
 arch flagstone_2_1_1
-x 29
-y 9
-end
-arch dungeon_magic
 x 29
 y 9
 end
@@ -4169,6 +4169,9 @@ end
 arch blocked
 x 29
 y 13
+end
+arch dungeon_magic
+x 30
 end
 arch woodfloor2
 x 30
@@ -4178,12 +4181,9 @@ x 30
 end
 arch dungeon_magic
 x 30
-end
-arch woodfloor2
-x 30
 y 1
 end
-arch dungeon_magic
+arch woodfloor2
 x 30
 y 1
 end
@@ -4194,17 +4194,13 @@ sp 1
 x 30
 y 1
 end
-arch woodfloor2
-x 30
-y 2
-end
 arch dungeon_magic
 x 30
 y 2
 end
 arch woodfloor2
 x 30
-y 3
+y 2
 end
 arch dungeon_magic
 x 30
@@ -4212,11 +4208,19 @@ y 3
 end
 arch woodfloor2
 x 30
-y 4
+y 3
 end
 arch dungeon_magic
 x 30
 y 4
+end
+arch woodfloor2
+x 30
+y 4
+end
+arch dungeon_magic
+x 30
+y 5
 end
 arch woodfloor2
 x 30
@@ -4232,7 +4236,7 @@ can_roll 0
 end
 arch dungeon_magic
 x 30
-y 5
+y 6
 end
 arch woodfloor2
 x 30
@@ -4240,7 +4244,7 @@ y 6
 end
 arch dungeon_magic
 x 30
-y 6
+y 7
 end
 arch woodfloor2
 x 30
@@ -4248,7 +4252,7 @@ y 7
 end
 arch dungeon_magic
 x 30
-y 7
+y 8
 end
 arch woodfloor2
 x 30
@@ -4256,7 +4260,7 @@ y 8
 end
 arch dungeon_magic
 x 30
-y 8
+y 9
 end
 arch woodfloor2
 x 30
@@ -4268,17 +4272,13 @@ y 9
 end
 arch dungeon_magic
 x 30
-y 9
+y 10
 end
 arch woodfloor2
 x 30
 y 10
 end
 arch flagstone_2_1_2
-x 30
-y 10
-end
-arch dungeon_magic
 x 30
 y 10
 end
@@ -4294,6 +4294,9 @@ arch blocked
 x 30
 y 13
 end
+arch dungeon_magic
+x 31
+end
 arch woodfloor2
 x 31
 end
@@ -4302,6 +4305,7 @@ x 31
 end
 arch dungeon_magic
 x 31
+y 1
 end
 arch woodfloor2
 x 31
@@ -4314,7 +4318,7 @@ no_pick 1
 end
 arch dungeon_magic
 x 31
-y 1
+y 2
 end
 arch woodfloor2
 x 31
@@ -4322,7 +4326,7 @@ y 2
 end
 arch dungeon_magic
 x 31
-y 2
+y 3
 end
 arch woodfloor2
 x 31
@@ -4330,7 +4334,7 @@ y 3
 end
 arch dungeon_magic
 x 31
-y 3
+y 4
 end
 arch woodfloor2
 x 31
@@ -4338,7 +4342,7 @@ y 4
 end
 arch dungeon_magic
 x 31
-y 4
+y 5
 end
 arch woodfloor2
 x 31
@@ -4346,7 +4350,7 @@ y 5
 end
 arch dungeon_magic
 x 31
-y 5
+y 6
 end
 arch woodfloor2
 x 31
@@ -4354,7 +4358,7 @@ y 6
 end
 arch dungeon_magic
 x 31
-y 6
+y 7
 end
 arch woodfloor2
 x 31
@@ -4362,7 +4366,7 @@ y 7
 end
 arch dungeon_magic
 x 31
-y 7
+y 8
 end
 arch woodfloor2
 x 31
@@ -4370,7 +4374,7 @@ y 8
 end
 arch dungeon_magic
 x 31
-y 8
+y 9
 end
 arch woodfloor2
 x 31
@@ -4389,17 +4393,13 @@ no_pick 1
 end
 arch dungeon_magic
 x 31
-y 9
+y 10
 end
 arch woodfloor2
 x 31
 y 10
 end
 arch flagstone_2_1_2
-x 31
-y 10
-end
-arch dungeon_magic
 x 31
 y 10
 end
@@ -4428,6 +4428,9 @@ name dozen red roses
 x 31
 y 13
 end
+arch dungeon_magic
+x 32
+end
 arch woodfloor2
 x 32
 end
@@ -4436,6 +4439,7 @@ x 32
 end
 arch dungeon_magic
 x 32
+y 1
 end
 arch woodfloor2
 x 32
@@ -4447,7 +4451,7 @@ y 1
 end
 arch dungeon_magic
 x 32
-y 1
+y 2
 end
 arch woodfloor2
 x 32
@@ -4463,7 +4467,7 @@ can_roll 0
 end
 arch dungeon_magic
 x 32
-y 2
+y 3
 end
 arch woodfloor2
 x 32
@@ -4471,7 +4475,7 @@ y 3
 end
 arch dungeon_magic
 x 32
-y 3
+y 4
 end
 arch woodfloor2
 x 32
@@ -4479,7 +4483,7 @@ y 4
 end
 arch dungeon_magic
 x 32
-y 4
+y 5
 end
 arch woodfloor2
 x 32
@@ -4496,7 +4500,7 @@ y 5
 end
 arch dungeon_magic
 x 32
-y 5
+y 6
 end
 arch magic_mouth
 name Manager
@@ -4536,7 +4540,7 @@ can_roll 0
 end
 arch dungeon_magic
 x 32
-y 6
+y 7
 end
 arch magic_mouth
 name Manager
@@ -4572,10 +4576,6 @@ arch chair_2.3
 x 32
 y 7
 end
-arch dungeon_magic
-x 32
-y 7
-end
 arch dun0
 name Manager
 face pl_dragon_g.151
@@ -4583,13 +4583,17 @@ x 32
 y 7
 blocksview 0
 end
+arch dungeon_magic
+x 32
+y 8
+end
 arch woodfloor2
 x 32
 y 8
 end
 arch dungeon_magic
 x 32
-y 8
+y 9
 end
 arch woodfloor2
 x 32
@@ -4607,17 +4611,13 @@ no_pick 1
 end
 arch dungeon_magic
 x 32
-y 9
+y 10
 end
 arch woodfloor2
 x 32
 y 10
 end
 arch flagstone_2_1_2
-x 32
-y 10
-end
-arch dungeon_magic
 x 32
 y 10
 end
@@ -4645,6 +4645,9 @@ arch blocked
 x 32
 y 13
 end
+arch dungeon_magic
+x 33
+end
 arch woodfloor2
 x 33
 end
@@ -4653,6 +4656,7 @@ x 33
 end
 arch dungeon_magic
 x 33
+y 1
 end
 arch woodfloor2
 x 33
@@ -4665,7 +4669,7 @@ no_pick 1
 end
 arch dungeon_magic
 x 33
-y 1
+y 2
 end
 arch woodfloor2
 x 33
@@ -4673,7 +4677,7 @@ y 2
 end
 arch dungeon_magic
 x 33
-y 2
+y 3
 end
 arch woodfloor2
 x 33
@@ -4681,7 +4685,7 @@ y 3
 end
 arch dungeon_magic
 x 33
-y 3
+y 4
 end
 arch woodfloor2
 x 33
@@ -4689,7 +4693,7 @@ y 4
 end
 arch dungeon_magic
 x 33
-y 4
+y 5
 end
 arch woodfloor2
 x 33
@@ -4697,7 +4701,7 @@ y 5
 end
 arch dungeon_magic
 x 33
-y 5
+y 6
 end
 arch woodfloor2
 x 33
@@ -4705,7 +4709,7 @@ y 6
 end
 arch dungeon_magic
 x 33
-y 6
+y 7
 end
 arch woodfloor2
 x 33
@@ -4713,7 +4717,7 @@ y 7
 end
 arch dungeon_magic
 x 33
-y 7
+y 8
 end
 arch woodfloor2
 x 33
@@ -4721,7 +4725,7 @@ y 8
 end
 arch dungeon_magic
 x 33
-y 8
+y 9
 end
 arch woodfloor2
 x 33
@@ -4739,17 +4743,13 @@ no_pick 1
 end
 arch dungeon_magic
 x 33
-y 9
+y 10
 end
 arch woodfloor2
 x 33
 y 10
 end
 arch flagstone_2_1_2
-x 33
-y 10
-end
-arch dungeon_magic
 x 33
 y 10
 end
@@ -4777,6 +4777,9 @@ arch blocked
 x 33
 y 13
 end
+arch dungeon_magic
+x 34
+end
 arch woodfloor2
 x 34
 end
@@ -4785,6 +4788,7 @@ x 34
 end
 arch dungeon_magic
 x 34
+y 1
 end
 arch woodfloor2
 x 34
@@ -4797,7 +4801,7 @@ no_pick 1
 end
 arch dungeon_magic
 x 34
-y 1
+y 2
 end
 arch woodfloor2
 x 34
@@ -4805,7 +4809,7 @@ y 2
 end
 arch dungeon_magic
 x 34
-y 2
+y 3
 end
 arch woodfloor2
 x 34
@@ -4817,7 +4821,7 @@ y 3
 end
 arch dungeon_magic
 x 34
-y 3
+y 4
 end
 arch woodfloor2
 x 34
@@ -4829,7 +4833,7 @@ y 4
 end
 arch dungeon_magic
 x 34
-y 4
+y 5
 end
 arch woodfloor2
 x 34
@@ -4842,7 +4846,7 @@ no_pick 1
 end
 arch dungeon_magic
 x 34
-y 5
+y 6
 end
 arch woodfloor2
 x 34
@@ -4854,7 +4858,7 @@ y 6
 end
 arch dungeon_magic
 x 34
-y 6
+y 7
 end
 arch woodfloor2
 x 34
@@ -4866,7 +4870,7 @@ y 7
 end
 arch dungeon_magic
 x 34
-y 7
+y 8
 end
 arch woodfloor2
 x 34
@@ -4874,7 +4878,7 @@ y 8
 end
 arch dungeon_magic
 x 34
-y 8
+y 9
 end
 arch woodfloor2
 x 34
@@ -4886,17 +4890,13 @@ y 9
 end
 arch dungeon_magic
 x 34
-y 9
+y 10
 end
 arch woodfloor2
 x 34
 y 10
 end
 arch flagstone_2_1_2
-x 34
-y 10
-end
-arch dungeon_magic
 x 34
 y 10
 end
@@ -4924,6 +4924,9 @@ arch blocked
 x 34
 y 13
 end
+arch dungeon_magic
+x 35
+end
 arch woodfloor2
 x 35
 end
@@ -4932,6 +4935,7 @@ x 35
 end
 arch dungeon_magic
 x 35
+y 1
 end
 arch woodfloor2
 x 35
@@ -4943,7 +4947,7 @@ y 1
 end
 arch dungeon_magic
 x 35
-y 1
+y 2
 end
 arch woodfloor2
 x 35
@@ -4955,7 +4959,7 @@ y 2
 end
 arch dungeon_magic
 x 35
-y 2
+y 3
 end
 arch woodfloor2
 x 35
@@ -4967,7 +4971,7 @@ y 3
 end
 arch dungeon_magic
 x 35
-y 3
+y 4
 end
 arch woodfloor2
 x 35
@@ -4979,7 +4983,7 @@ y 4
 end
 arch dungeon_magic
 x 35
-y 4
+y 5
 end
 arch woodfloor2
 x 35
@@ -4991,7 +4995,7 @@ y 5
 end
 arch dungeon_magic
 x 35
-y 5
+y 6
 end
 arch woodfloor2
 x 35
@@ -5003,7 +5007,7 @@ y 6
 end
 arch dungeon_magic
 x 35
-y 6
+y 7
 end
 arch woodfloor2
 x 35
@@ -5015,7 +5019,7 @@ y 7
 end
 arch dungeon_magic
 x 35
-y 7
+y 8
 end
 arch woodfloor2
 x 35
@@ -5027,7 +5031,7 @@ y 8
 end
 arch dungeon_magic
 x 35
-y 8
+y 9
 end
 arch woodfloor2
 x 35
@@ -5039,17 +5043,13 @@ y 9
 end
 arch dungeon_magic
 x 35
-y 9
+y 10
 end
 arch woodfloor2
 x 35
 y 10
 end
 arch flagstone_2_2_4
-x 35
-y 10
-end
-arch dungeon_magic
 x 35
 y 10
 end

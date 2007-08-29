@@ -61,6 +61,14 @@ arch grass
 x 1
 y 1
 end
+arch courthouse
+name Shop Headquarters
+slaying pshopsinc
+hp 15
+sp 10
+x 1
+y 1
+end
 arch grass
 x 1
 y 2
@@ -80,6 +88,15 @@ end
 arch grass
 x 1
 y 6
+end
+arch guild
+name Private Shop 14
+slaying pshop14/gfloor
+hp 12
+sp 21
+x 1
+y 6
+move_block 0
 end
 arch grass
 x 1
@@ -182,6 +199,14 @@ arch grass
 x 4
 y 1
 end
+arch guild
+name Private Shop 1
+slaying pshop1/gfloor
+hp 12
+sp 21
+x 4
+y 1
+end
 arch grass
 x 4
 y 2
@@ -207,6 +232,15 @@ arch grass
 x 4
 y 6
 end
+arch guild
+name Private Shop 15
+slaying pshop15/gfloor
+hp 12
+sp 21
+x 4
+y 6
+move_block 0
+end
 arch grass
 x 4
 y 7
@@ -300,6 +334,14 @@ arch grass
 x 7
 y 1
 end
+arch guild
+name Private Shop 2
+slaying pshop2/gfloor
+hp 12
+sp 21
+x 7
+y 1
+end
 arch grass
 x 7
 y 2
@@ -319,6 +361,15 @@ end
 arch grass
 x 7
 y 6
+end
+arch guild
+name Private Shop 16
+slaying pshop16/gfloor
+hp 12
+sp 21
+x 7
+y 6
+move_block 0
 end
 arch grass
 x 7
@@ -417,6 +468,14 @@ arch grass
 x 10
 y 1
 end
+arch guild
+name Private Shop 3
+slaying pshop3/gfloor
+hp 12
+sp 21
+x 10
+y 1
+end
 arch grass
 x 10
 y 2
@@ -436,6 +495,15 @@ end
 arch grass
 x 10
 y 6
+end
+arch guild
+name Private Shop 17
+slaying pshop17/gfloor
+hp 12
+sp 21
+x 10
+y 6
+move_block 0
 end
 arch grass
 x 10
@@ -530,6 +598,14 @@ arch grass
 x 13
 y 1
 end
+arch guild
+name Private Shop 4
+slaying pshop4/gfloor
+hp 12
+sp 21
+x 13
+y 1
+end
 arch grass
 x 13
 y 2
@@ -549,6 +625,15 @@ end
 arch grass
 x 13
 y 6
+end
+arch guild
+name Private Shop 18
+slaying pshop18/gfloor
+hp 12
+sp 21
+x 13
+y 6
+move_block 0
 end
 arch grass
 x 13
@@ -648,6 +733,14 @@ arch grass
 x 16
 y 1
 end
+arch guild
+name Private Shop 5
+slaying pshop5/gfloor
+hp 12
+sp 21
+x 16
+y 1
+end
 arch grass
 x 16
 y 2
@@ -667,6 +760,15 @@ end
 arch grass
 x 16
 y 6
+end
+arch guild
+name Private Shop 19
+slaying pshop19/gfloor
+hp 12
+sp 21
+x 16
+y 6
+move_block 0
 end
 arch grass
 x 16
@@ -761,6 +863,14 @@ arch grass
 x 19
 y 1
 end
+arch guild
+name Private Shop 6
+slaying pshop6/gfloor
+hp 12
+sp 21
+x 19
+y 1
+end
 arch grass
 x 19
 y 2
@@ -780,6 +890,15 @@ end
 arch grass
 x 19
 y 6
+end
+arch guild
+name Private Shop 20
+slaying pshop20/gfloor
+hp 12
+sp 21
+x 19
+y 6
+move_block 0
 end
 arch grass
 x 19
@@ -878,6 +997,14 @@ arch grass
 x 22
 y 1
 end
+arch guild
+name Private Shop 7
+slaying pshop7/gfloor
+hp 12
+sp 21
+x 22
+y 1
+end
 arch grass
 x 22
 y 2
@@ -897,6 +1024,15 @@ end
 arch grass
 x 22
 y 6
+end
+arch guild
+name Private Shop 21
+slaying pshop21/gfloor
+hp 12
+sp 21
+x 22
+y 6
+move_block 0
 end
 arch grass
 x 22
@@ -991,6 +1127,14 @@ arch grass
 x 25
 y 1
 end
+arch guild
+name Private Shop 8
+slaying pshop8/gfloor
+hp 12
+sp 21
+x 25
+y 1
+end
 arch grass
 x 25
 y 2
@@ -1010,6 +1154,15 @@ end
 arch grass
 x 25
 y 6
+end
+arch guild
+name Private Shop 22
+slaying pshop22/gfloor
+hp 12
+sp 21
+x 25
+y 6
+move_block 0
 end
 arch grass
 x 25
@@ -1109,6 +1262,14 @@ arch grass
 x 28
 y 1
 end
+arch guild
+name Private Shop 9
+slaying pshop9/gfloor
+hp 12
+sp 21
+x 28
+y 1
+end
 arch grass
 x 28
 y 2
@@ -1128,6 +1289,15 @@ end
 arch grass
 x 28
 y 6
+end
+arch guild
+name Private Shop 23
+slaying pshop23/gfloor
+hp 12
+sp 21
+x 28
+y 6
+move_block 0
 end
 arch grass
 x 28
@@ -1222,6 +1392,14 @@ arch grass
 x 31
 y 1
 end
+arch guild
+name Private Shop 10
+slaying pshop10/gfloor
+hp 12
+sp 21
+x 31
+y 1
+end
 arch grass
 x 31
 y 2
@@ -1241,6 +1419,15 @@ end
 arch grass
 x 31
 y 6
+end
+arch guild
+name Private Shop 24
+slaying pshop24/gfloor
+hp 12
+sp 21
+x 31
+y 6
+move_block 0
 end
 arch grass
 x 31
@@ -1339,6 +1526,14 @@ arch grass
 x 34
 y 1
 end
+arch guild
+name Private Shop 11
+slaying pshop11/gfloor
+hp 12
+sp 21
+x 34
+y 1
+end
 arch grass
 x 34
 y 2
@@ -1358,6 +1553,15 @@ end
 arch grass
 x 34
 y 6
+end
+arch guild
+name Private Shop 25
+slaying pshop25/gfloor
+hp 12
+sp 21
+x 34
+y 6
+move_block 0
 end
 arch grass
 x 34
@@ -1449,6 +1653,14 @@ arch evergreens
 x 37
 end
 arch grass
+x 37
+y 1
+end
+arch guild
+name Private Shop 12
+slaying pshop12/gfloor
+hp 12
+sp 21
 x 37
 y 1
 end
@@ -1476,6 +1688,15 @@ end
 arch grass
 x 37
 y 6
+end
+arch guild
+name Private Shop 26
+slaying pshop26/gfloor
+hp 12
+sp 21
+x 37
+y 6
+move_block 0
 end
 arch grass
 x 37
@@ -1567,6 +1788,14 @@ arch evergreens
 x 40
 end
 arch grass
+x 40
+y 1
+end
+arch guild
+name Private Shop 13
+slaying pshop13/gfloor
+hp 12
+sp 21
 x 40
 y 1
 end
@@ -1598,334 +1827,6 @@ arch grass
 x 40
 y 6
 end
-arch grass
-x 40
-y 7
-end
-arch evergreens
-x 40
-y 8
-end
-arch evergreens
-x 41
-end
-arch grass
-x 41
-y 1
-end
-arch grass
-x 41
-y 2
-end
-arch marble
-x 41
-y 3
-end
-arch marble
-x 41
-y 4
-end
-arch marble
-x 41
-y 5
-end
-arch grass
-x 41
-y 6
-end
-arch grass
-x 41
-y 7
-end
-arch evergreens
-x 41
-y 8
-end
-arch evergreens
-x 42
-end
-arch evergreens
-x 42
-y 1
-end
-arch evergreens
-x 42
-y 2
-end
-arch invis_exit
-slaying ../../world/world_107_123
-hp 21
-sp 24
-x 42
-y 3
-end
-arch marble
-x 42
-y 3
-end
-arch invis_exit
-slaying ../../world/world_107_123
-hp 21
-sp 24
-x 42
-y 4
-end
-arch marble
-x 42
-y 4
-end
-arch invis_exit
-slaying ../../world/world_107_123
-hp 21
-sp 24
-x 42
-y 5
-end
-arch marble
-x 42
-y 5
-end
-arch evergreens
-x 42
-y 6
-end
-arch evergreens
-x 42
-y 7
-end
-arch evergreens
-x 42
-y 8
-end
-arch courthouse
-name Shop Headquarters
-slaying pshopsinc
-hp 15
-sp 10
-x 1
-y 1
-end
-arch guild
-name Private Shop 14
-slaying pshop14/gfloor
-hp 12
-sp 21
-x 1
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 1
-slaying pshop1/gfloor
-hp 12
-sp 21
-x 4
-y 1
-end
-arch guild
-name Private Shop 15
-slaying pshop15/gfloor
-hp 12
-sp 21
-x 4
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 2
-slaying pshop2/gfloor
-hp 12
-sp 21
-x 7
-y 1
-end
-arch guild
-name Private Shop 16
-slaying pshop16/gfloor
-hp 12
-sp 21
-x 7
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 3
-slaying pshop3/gfloor
-hp 12
-sp 21
-x 10
-y 1
-end
-arch guild
-name Private Shop 17
-slaying pshop17/gfloor
-hp 12
-sp 21
-x 10
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 4
-slaying pshop4/gfloor
-hp 12
-sp 21
-x 13
-y 1
-end
-arch guild
-name Private Shop 18
-slaying pshop18/gfloor
-hp 12
-sp 21
-x 13
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 5
-slaying pshop5/gfloor
-hp 12
-sp 21
-x 16
-y 1
-end
-arch guild
-name Private Shop 19
-slaying pshop19/gfloor
-hp 12
-sp 21
-x 16
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 6
-slaying pshop6/gfloor
-hp 12
-sp 21
-x 19
-y 1
-end
-arch guild
-name Private Shop 20
-slaying pshop20/gfloor
-hp 12
-sp 21
-x 19
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 7
-slaying pshop7/gfloor
-hp 12
-sp 21
-x 22
-y 1
-end
-arch guild
-name Private Shop 21
-slaying pshop21/gfloor
-hp 12
-sp 21
-x 22
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 8
-slaying pshop8/gfloor
-hp 12
-sp 21
-x 25
-y 1
-end
-arch guild
-name Private Shop 22
-slaying pshop22/gfloor
-hp 12
-sp 21
-x 25
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 9
-slaying pshop9/gfloor
-hp 12
-sp 21
-x 28
-y 1
-end
-arch guild
-name Private Shop 23
-slaying pshop23/gfloor
-hp 12
-sp 21
-x 28
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 10
-slaying pshop10/gfloor
-hp 12
-sp 21
-x 31
-y 1
-end
-arch guild
-name Private Shop 24
-slaying pshop24/gfloor
-hp 12
-sp 21
-x 31
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 11
-slaying pshop11/gfloor
-hp 12
-sp 21
-x 34
-y 1
-end
-arch guild
-name Private Shop 25
-slaying pshop25/gfloor
-hp 12
-sp 21
-x 34
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 12
-slaying pshop12/gfloor
-hp 12
-sp 21
-x 37
-y 1
-end
-arch guild
-name Private Shop 26
-slaying pshop26/gfloor
-hp 12
-sp 21
-x 37
-y 6
-move_block 0
-end
-arch guild
-name Private Shop 13
-slaying pshop13/gfloor
-hp 12
-sp 21
-x 40
-y 1
-end
 arch guild
 name Private Shop 27
 slaying pshop27/gfloor
@@ -1934,4 +1835,103 @@ sp 21
 x 40
 y 6
 move_block 0
+end
+arch grass
+x 40
+y 7
+end
+arch evergreens
+x 40
+y 8
+end
+arch evergreens
+x 41
+end
+arch grass
+x 41
+y 1
+end
+arch grass
+x 41
+y 2
+end
+arch marble
+x 41
+y 3
+end
+arch marble
+x 41
+y 4
+end
+arch marble
+x 41
+y 5
+end
+arch grass
+x 41
+y 6
+end
+arch grass
+x 41
+y 7
+end
+arch evergreens
+x 41
+y 8
+end
+arch evergreens
+x 42
+end
+arch evergreens
+x 42
+y 1
+end
+arch evergreens
+x 42
+y 2
+end
+arch invis_exit
+slaying ../../world/world_107_123
+hp 21
+sp 24
+x 42
+y 3
+end
+arch marble
+x 42
+y 3
+end
+arch invis_exit
+slaying ../../world/world_107_123
+hp 21
+sp 24
+x 42
+y 4
+end
+arch marble
+x 42
+y 4
+end
+arch invis_exit
+slaying ../../world/world_107_123
+hp 21
+sp 24
+x 42
+y 5
+end
+arch marble
+x 42
+y 5
+end
+arch evergreens
+x 42
+y 6
+end
+arch evergreens
+x 42
+y 7
+end
+arch evergreens
+x 42
+y 8
 end
