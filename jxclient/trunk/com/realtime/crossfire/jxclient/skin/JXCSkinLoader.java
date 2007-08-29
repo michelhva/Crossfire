@@ -51,7 +51,6 @@ import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.SpellListener;
 import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
 import java.awt.Font;
@@ -512,7 +511,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, font, type);
                             elements.insert(name, element);
-                            window.addSpellListener((SpellListener)element);
                         }
                         else if (args[0].equals("log"))
                         {
