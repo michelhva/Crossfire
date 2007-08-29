@@ -49,7 +49,7 @@ import javax.swing.ImageIcon;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMap extends GUIElement implements CrossfireNewmapListener, CrossfireMapscrollListener
+public class GUIMap extends GUIElement implements CrossfireMapscrollListener
 {
     /**
      * The color to use for overlaying fog-of-war tiles.
@@ -98,6 +98,23 @@ public class GUIMap extends GUIElement implements CrossfireNewmapListener, Cross
     };
 
     /**
+     * The {@link CrossfireNewmapListener} registered to receive newmap
+     * commands.
+     */
+    private final CrossfireNewmapListener crossfireNewmapListener = new CrossfireNewmapListener()
+    {
+        /** {@inheritDoc} */
+        public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
+        {
+            synchronized(mybuffer)
+            {
+                render();
+            }
+            setChanged();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param tileSize The size of one tile in pixels.
@@ -128,6 +145,7 @@ public class GUIMap extends GUIElement implements CrossfireNewmapListener, Cross
 
         createBuffer();
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
+        CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
     }
 
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big) throws IOException
@@ -340,15 +358,6 @@ public class GUIMap extends GUIElement implements CrossfireNewmapListener, Cross
             {
                 g.dispose();
             }
-        }
-        setChanged();
-    }
-
-    public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
-    {
-        synchronized(mybuffer)
-        {
-            render();
         }
         setChanged();
     }
