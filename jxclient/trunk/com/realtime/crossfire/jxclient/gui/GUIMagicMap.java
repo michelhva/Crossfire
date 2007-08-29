@@ -73,12 +73,7 @@ public class GUIMagicMap extends GUIElement implements CrossfireNewmapListener
                 for (int x = 0; x < evt.getWidth(); x++)
                 {
                     final byte square = data[datapos];
-                    final Color scolor;
-                    if (square > 10)
-                        scolor = Color.DARK_GRAY;
-                    else
-                        scolor = mycolors[square];
-
+                    final Color scolor = square >= mycolors.length ? Color.DARK_GRAY : mycolors[square];
                     g.setColor(scolor);
                     g.fillRect(x*4, y*4, (x*4)+4, (y*4)+4);
                     datapos++;
