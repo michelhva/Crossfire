@@ -99,3 +99,37 @@ Notes about designing .glade files for the libglade version of the GTK2 client
    layout so that it is hard to return to a proper state, and widget errors
    may cause the client to crash at run-time when it is most inconventient.
 
+9) When adding a combo box that is to be dynamically filled at run-time, be
+   absolutely sure to press the ellipsis "..." button next to the empty Items:
+   box, then press the OK button on the Edit Text Property dialog.  This
+   causes the XML file combo box definition to contain an essential property:
+
+     <property name="items" translatable="yes"></property>
+
+   Without this property, at run-time the following code snippet will set
+   model to NULL.
+
+     model = gtk_combo_box_get_model(GTK_COMBO_BOX(config_combobox_theme));
+     count =  gtk_tree_model_iter_n_children(model, NULL);
+
+   This construct is used several times in config.c's setup_config_window().
+   When model is NULL, the subsequent code that attempts to use the model
+   generates console errors like:
+
+     (crossfire-client-gtk2:9632): Gtk-CRITICAL **:
+     gtk_tree_model_iter_n_children: assertion `GTK_IS_TREE_MODEL (tree_model)'
+     failed
+
+     (crossfire-client-gtk2:9632): Gtk-CRITICAL **: gtk_combo_box_append_text:
+     assertion `GTK_IS_LIST_STORE (combo_box->priv->model)' failed
+
+     (crossfire-client-gtk2:9632): Gtk-CRITICAL **: gtk_combo_box_append_text:
+     assertion `GTK_IS_LIST_STORE (combo_box->priv->model)' failed
+
+     (crossfire-client-gtk2:9632): Gtk-CRITICAL **: gtk_combo_box_append_text:
+     assertion `GTK_IS_LIST_STORE (combo_box->priv->model)' failed
+
+     (crossfire-client-gtk2:9632): Gtk-CRITICAL **:
+     gtk_tree_model_iter_n_children: assertion `GTK_IS_TREE_MODEL (tree_model)'
+     failed
+
