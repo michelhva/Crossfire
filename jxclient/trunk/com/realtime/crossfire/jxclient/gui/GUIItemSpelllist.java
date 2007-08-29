@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Spell;
@@ -36,10 +37,44 @@ public class GUIItemSpelllist extends GUIItem
 
     private int myindex = -1;
 
+    /**
+     * The {@link CrossfireSpellChangedListener} used to detect spell changes.
+     */
+    private final CrossfireSpellChangedListener crossfireSpellChangedListener = new CrossfireSpellChangedListener()
+    {
+        /** {@inheritDoc} */
+        public void spellAdded(final Spell spell, final int index)
+        {
+            if (myindex >= index)
+            {
+                setSpell();
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void spellRemoved(final Spell spell, final int index)
+        {
+            if (myindex >= index)
+            {
+                setSpell();
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void spellModified(final Spell spell, final int index)
+        {
+            if (myindex == index)
+            {
+                setSpell();
+            }
+        }
+    };
+
     public GUIItemSpelllist(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft) throws IOException
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
+        ItemsList.getSpellsManager().addCrossfireSpellChangedListener(crossfireSpellChangedListener);
         render();
     }
 
@@ -114,8 +149,11 @@ public class GUIItemSpelllist extends GUIItem
         }
     }
 
-    private void setSpell(final Spell spell)
+    private void setSpell()
     {
+        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
+        final Spell spell = 0 <= myindex && myindex < list.size() ? list.get(myindex) : null;
+
         if (myspell == spell)
         {
             return;
@@ -135,7 +173,6 @@ public class GUIItemSpelllist extends GUIItem
         }
         myindex = index;
 
-        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
-        setSpell(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
+        setSpell();
     }
 }
