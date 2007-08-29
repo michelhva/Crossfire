@@ -526,7 +526,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontArcane = fonts.lookup(args[10]);
                             final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fontPrint, fontFixed, fontFixedBold, fontArcane);
                             elements.insert(name, element);
-                            server.addCrossfireDrawextinfoListener(element);
                             server.addCrossfireDrawinfoListener(element);
                         }
                         else if (args[0].equals("magicmap"))

@@ -50,7 +50,7 @@ import java.util.ListIterator;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawinfoListener, CrossfireDrawextinfoListener
+public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawinfoListener
 {
     /**
      * The number of pixels to scroll.
@@ -139,6 +139,16 @@ public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawin
         }
     };
 
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
+    {
+        /** {@inheritDoc} */
+        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        {
+            parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
+            render();
+        }
+    };
+
     /**
      * Create a new instance.
      *
@@ -179,6 +189,7 @@ public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawin
         this.fontArcane = fontArcane;
         createBuffer();
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
+        jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }
 
     protected void render()
@@ -369,13 +380,6 @@ public class GUILog extends GUIElement implements GUIScrollable, CrossfireDrawin
         }
 
         throw new AssertionError();
-    }
-
-    /** {@inheritDoc} */
-    public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
-    {
-        parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
-        render();
     }
 
     /** {@inheritDoc} */
