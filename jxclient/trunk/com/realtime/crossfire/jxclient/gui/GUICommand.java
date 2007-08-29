@@ -108,20 +108,15 @@ public class GUICommand
         switch (myorder)
         {
         case SHOW:
-            if (!mytarget.isVisible())
-                mytarget.setVisible(true);
+            mytarget.setVisible(true);
             break;
 
         case HIDE:
-            if (mytarget.isVisible())
-                mytarget.setVisible(false);
+            mytarget.setVisible(false);
             break;
 
         case TOGGLE:
-            if (mytarget.isVisible())
-                mytarget.setVisible(false);
-            else
-                mytarget.setVisible(true);
+            mytarget.setVisible(!mytarget.isVisible());
             break;
 
         case PRINT:
