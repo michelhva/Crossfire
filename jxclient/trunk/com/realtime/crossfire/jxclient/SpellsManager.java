@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -44,6 +46,23 @@ public class SpellsManager
     private final List<Spell> spells = new ArrayList<Spell>();
 
     private final List<CrossfireSpellChangedListener> listeners = new ArrayList<CrossfireSpellChangedListener>();
+
+    /**
+     * A {@link Comparator} to compare {@link Spell} instances by spell path
+     * and name.
+     */
+    private final Comparator<Spell> spellNameComparator = new Comparator<Spell>()
+    {
+        /** {@inheritDoc} */
+        public int compare(final Spell spell1, final Spell spell2)
+        {
+            final int path1 = spell1.getPath();
+            final int path2 = spell2.getPath();
+            if (path1 < path2) return -1;
+            if (path1 > path2) return +1;
+            return String.CASE_INSENSITIVE_ORDER.compare(spell1.getName(), spell2.getName());
+        }
+    };
 
     /**
      * Create a new instance.
@@ -319,11 +338,19 @@ public class SpellsManager
 
     private void addSpell(final Spell sp)
     {
-        spells.add(sp);
+        final int index = Collections.binarySearch(spells, sp, spellNameComparator);
+        if (index < 0)
+        {
+            spells.add(-index-1, sp);
+        }
+        else
+        {
+            spells.set(index, sp);
+        }
 
         for (final CrossfireSpellChangedListener listener : listeners)
         {
-            listener.spellAdded(sp, spells.size()-1);
+            listener.spellAdded(sp, index);
         }
     }
 
