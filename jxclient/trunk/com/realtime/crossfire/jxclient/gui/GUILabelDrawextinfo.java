@@ -31,8 +31,21 @@ import java.io.IOException;
  *
  * @author Andreas Kirschbaum
  */
-public class GUILabelDrawextinfo extends GUILabel implements CrossfireDrawextinfoListener
+public class GUILabelDrawextinfo extends GUILabel
 {
+    /**
+     * The {@link CrossfireDrawextinfoListener} registered to receive
+     * drawextinfo messages.
+     */
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
+    {
+        /** {@inheritDoc} */
+        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        {
+            setText(evt.getMessage());
+        }
+    };
+
     /**
      * Create a new instance.
      *
@@ -55,11 +68,6 @@ public class GUILabelDrawextinfo extends GUILabel implements CrossfireDrawextinf
     public GUILabelDrawextinfo(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color) throws IOException
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
-    }
-
-    /** {@inheritDoc} */
-    public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
-    {
-        setText(evt.getMessage());
+        jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }
 }
