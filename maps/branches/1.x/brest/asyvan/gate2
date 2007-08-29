@@ -1,13 +1,13 @@
 arch map
-region brest
 name gate2
+region brest
+width 21
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Sep 20 15:07:11 1994
 endmsg
-x 21
-y 21
 end
 arch woodfloor
 end
@@ -2358,6 +2358,10 @@ arch woodfloor
 x 16
 y 17
 end
+arch giant
+x 16
+y 17
+end
 arch woodfloor
 x 16
 y 18
@@ -2497,6 +2501,10 @@ x 17
 y 16
 end
 arch woodfloor
+x 17
+y 17
+end
+arch giant
 x 17
 y 17
 end
@@ -2642,6 +2650,10 @@ arch woodfloor
 x 18
 y 17
 end
+arch giant
+x 18
+y 17
+end
 arch woodfloor
 x 18
 y 18
@@ -2782,6 +2794,10 @@ x 19
 y 16
 end
 arch woodfloor
+x 19
+y 17
+end
+arch giant
 x 19
 y 17
 end
@@ -2971,20 +2987,4 @@ end
 arch bwall_2_2_4
 x 20
 y 20
-end
-arch giant
-x 16
-y 17
-end
-arch giant
-x 17
-y 17
-end
-arch giant
-x 18
-y 17
-end
-arch giant
-x 19
-y 17
 end

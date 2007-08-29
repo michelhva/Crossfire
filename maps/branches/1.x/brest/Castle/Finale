@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region brest
+width 7
+height 60
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jul  2 01:53:43 1994
 endmsg
-x 7
-y 60
 end
 arch dirtfloor
 end
@@ -1423,6 +1424,10 @@ arch dirtfloor
 x 3
 y 24
 end
+arch titan
+x 3
+y 24
+end
 arch dirtfloor
 x 3
 y 25
@@ -1439,6 +1444,10 @@ arch dirtfloor
 x 3
 y 28
 end
+arch titan
+x 3
+y 28
+end
 arch dirtfloor
 x 3
 y 29
@@ -1452,6 +1461,10 @@ x 3
 y 31
 end
 arch dirtfloor
+x 3
+y 32
+end
+arch titan
 x 3
 y 32
 end
@@ -1531,6 +1544,10 @@ arch dirtfloor
 x 3
 y 46
 end
+arch chinese_dragon
+x 3
+y 46
+end
 arch dirtfloor
 x 3
 y 47
@@ -1551,6 +1568,10 @@ arch dirtfloor
 x 3
 y 51
 end
+arch chinese_dragon
+x 3
+y 51
+end
 arch dirtfloor
 x 3
 y 52
@@ -1564,6 +1585,10 @@ x 3
 y 54
 end
 arch dirtfloor
+x 3
+y 55
+end
+arch chinese_dragon
 x 3
 y 55
 end
@@ -1729,6 +1754,10 @@ arch dirtfloor
 x 4
 y 19
 end
+arch titan
+x 4
+y 19
+end
 arch dirtfloor
 x 4
 y 20
@@ -1801,6 +1830,10 @@ arch dirtfloor
 x 4
 y 37
 end
+arch titan
+x 4
+y 37
+end
 arch dirtfloor
 x 4
 y 38
@@ -1865,11 +1898,19 @@ arch dirtfloor
 x 4
 y 48
 end
+arch chinese_dragon
+x 4
+y 48
+end
 arch dirtfloor
 x 4
 y 49
 end
 arch dirtfloor
+x 4
+y 50
+end
+arch chinese_dragon
 x 4
 y 50
 end
@@ -1881,6 +1922,10 @@ arch dirtfloor
 x 4
 y 52
 end
+arch chinese_dragon
+x 4
+y 52
+end
 arch dirtfloor
 x 4
 y 53
@@ -1889,11 +1934,19 @@ arch dirtfloor
 x 4
 y 54
 end
+arch chinese_dragon
+x 4
+y 54
+end
 arch dirtfloor
 x 4
 y 55
 end
 arch dirtfloor
+x 4
+y 56
+end
+arch chinese_dragon
 x 4
 y 56
 end
@@ -2722,56 +2775,4 @@ end
 arch bwall_2_2_4
 x 6
 y 59
-end
-arch titan
-x 3
-y 24
-end
-arch titan
-x 3
-y 28
-end
-arch titan
-x 3
-y 32
-end
-arch chinese_dragon
-x 3
-y 46
-end
-arch chinese_dragon
-x 3
-y 51
-end
-arch chinese_dragon
-x 3
-y 55
-end
-arch titan
-x 4
-y 19
-end
-arch titan
-x 4
-y 37
-end
-arch chinese_dragon
-x 4
-y 48
-end
-arch chinese_dragon
-x 4
-y 50
-end
-arch chinese_dragon
-x 4
-y 52
-end
-arch chinese_dragon
-x 4
-y 54
-end
-arch chinese_dragon
-x 4
-y 56
 end

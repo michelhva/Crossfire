@@ -1,13 +1,13 @@
 arch map
-region brest
 name castle
+region brest
+width 28
+height 33
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Aug 30 20:56:43 1994
 endmsg
-x 28
-y 33
 end
 arch blocked
 end
@@ -278,6 +278,10 @@ arch dirtfloor
 x 1
 y 16
 end
+arch chinese_dragon
+x 1
+y 16
+end
 arch dirtfloor
 x 1
 y 17
@@ -393,6 +397,10 @@ arch dirtfloor
 x 2
 y 4
 end
+arch big_dragon
+x 2
+y 4
+end
 arch dirtfloor
 x 2
 y 5
@@ -406,6 +414,10 @@ x 2
 y 6
 end
 arch dirtfloor
+x 2
+y 7
+end
+arch chinese_dragon
 x 2
 y 7
 end
@@ -441,11 +453,19 @@ arch dirtfloor
 x 2
 y 12
 end
+arch chinese_dragon
+x 2
+y 12
+end
 arch dirtfloor
 x 2
 y 13
 end
 arch dirtfloor
+x 2
+y 14
+end
+arch chinese_dragon
 x 2
 y 14
 end
@@ -636,6 +656,10 @@ arch dirtfloor
 x 3
 y 16
 end
+arch chinese_dragon
+x 3
+y 16
+end
 arch dirtfloor
 x 3
 y 17
@@ -677,6 +701,10 @@ x 3
 y 24
 end
 arch dirtfloor
+x 3
+y 25
+end
+arch demon_lord
 x 3
 y 25
 end
@@ -1004,6 +1032,10 @@ arch dirtfloor
 x 5
 y 12
 end
+arch chinese_dragon
+x 5
+y 12
+end
 arch dirtfloor
 x 5
 y 13
@@ -1012,11 +1044,19 @@ arch dirtfloor
 x 5
 y 14
 end
+arch chinese_dragon
+x 5
+y 14
+end
 arch dirtfloor
 x 5
 y 15
 end
 arch dirtfloor
+x 5
+y 16
+end
+arch chinese_dragon
 x 5
 y 16
 end
@@ -3960,6 +4000,10 @@ arch dirtfloor
 x 17
 y 25
 end
+arch big_elec
+x 17
+y 25
+end
 arch dirtfloor
 x 17
 y 26
@@ -4871,11 +4915,19 @@ arch dirtfloor
 x 21
 y 22
 end
+arch behemoth
+x 21
+y 22
+end
 arch dirtfloor
 x 21
 y 23
 end
 arch dirtfloor
+x 21
+y 24
+end
+arch behemoth
 x 21
 y 24
 end
@@ -5297,6 +5349,10 @@ arch dirtfloor
 x 23
 y 22
 end
+arch behemoth
+x 23
+y 22
+end
 arch dirtfloor
 x 23
 y 23
@@ -5513,6 +5569,10 @@ x 24
 y 23
 end
 arch dirtfloor
+x 24
+y 24
+end
+arch behemoth
 x 24
 y 24
 end
@@ -6164,64 +6224,4 @@ end
 arch blocked
 x 27
 y 32
-end
-arch chinese_dragon
-x 1
-y 16
-end
-arch big_dragon
-x 2
-y 4
-end
-arch chinese_dragon
-x 2
-y 7
-end
-arch chinese_dragon
-x 2
-y 12
-end
-arch chinese_dragon
-x 2
-y 14
-end
-arch chinese_dragon
-x 3
-y 16
-end
-arch demon_lord
-x 3
-y 25
-end
-arch chinese_dragon
-x 5
-y 12
-end
-arch chinese_dragon
-x 5
-y 14
-end
-arch chinese_dragon
-x 5
-y 16
-end
-arch big_elec
-x 17
-y 25
-end
-arch behemoth
-x 21
-y 22
-end
-arch behemoth
-x 21
-y 24
-end
-arch behemoth
-x 23
-y 22
-end
-arch behemoth
-x 24
-y 24
 end

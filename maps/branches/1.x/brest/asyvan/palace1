@@ -1,13 +1,13 @@
 arch map
-region brest
 name palace1
+region brest
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Sep 20 12:04:51 1994
 endmsg
-x 17
-y 17
 end
 arch dungeon_magic
 end
@@ -281,11 +281,11 @@ arch wwall_2_1_2
 x 1
 y 14
 end
-arch afloor_left
+arch dungeon_magic
 x 1
 y 15
 end
-arch dungeon_magic
+arch afloor_left
 x 1
 y 15
 end
@@ -1282,7 +1282,7 @@ arch magic_mouth
 msg
 
 A deep voice says: This is the story
-that should bring you closer to the 
+that should bring you closer to the
 treasure that hides above.
  ---
 Right beside you is the key that leads
@@ -2502,14 +2502,14 @@ arch afloor_left
 x 15
 y 15
 end
-arch dungeon_magic
-x 15
-y 15
-end
 arch stair_3_up
 slaying /brest/asyvan/palace2
 hp 15
 sp 15
+x 15
+y 15
+end
+arch dungeon_magic
 x 15
 y 15
 end
