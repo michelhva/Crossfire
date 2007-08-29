@@ -1775,6 +1775,7 @@ have different styles.</property>
 	    <widget class="GtkComboBox" id="config_combobox_theme">
 	      <property name="width_request">170</property>
 	      <property name="visible">True</property>
+	      <property name="items" translatable="yes"></property>
 	      <property name="add_tearoffs">False</property>
 	      <property name="focus_on_click">True</property>
 	    </widget>
