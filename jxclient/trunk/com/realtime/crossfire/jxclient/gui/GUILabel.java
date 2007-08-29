@@ -53,13 +53,13 @@ public class GUILabel extends GUIElement
     /**
      * The pattern used to split a string into lines.
      */
-    private static final Pattern patternLineBreak = Pattern.compile("\n");
+    private static final Pattern patternLineBreak = Pattern.compile("<br>");
 
     private ImageIcon mybackground = null;
 
     private final Font myfont;
 
-    private String mycaption = "";
+    private String mycaption = null;
 
     private final Color mycolor;
 
@@ -87,8 +87,7 @@ public class GUILabel extends GUIElement
         myfont = font;
         commonInit(picture);
         mycolor = color;
-        mycaption = text;
-        render();
+        setText(text);
     }
 
     /**
@@ -110,9 +109,10 @@ public class GUILabel extends GUIElement
     public void setText(final String ntxt)
     {
         if (ntxt == null) throw new IllegalArgumentException();
-        if (!mycaption.equals(ntxt))
+        final String tmp = ntxt.replaceAll("\n", "<br>");
+        if (mycaption == null || !mycaption.equals(tmp))
         {
-            mycaption = ntxt;
+            mycaption = tmp;
             autoResize();
             render();
         }
@@ -162,7 +162,6 @@ public class GUILabel extends GUIElement
             g.setFont(myfont);
             g.setColor(mycolor);
 
-            mycaption = mycaption.replaceAll("\n", "<br>");
             final Reader reader = new StringReader(mycaption);
             try
             {
@@ -199,7 +198,7 @@ public class GUILabel extends GUIElement
             int height = 0;
             for (final String str : patternLineBreak.split(mycaption, -1))
             {
-                final Rectangle2D size = myfont.getStringBounds(mycaption, context);
+                final Rectangle2D size = myfont.getStringBounds(str, context);
                 width = Math.max(width, (int)size.getWidth());
                 height += (int)size.getHeight();
             }
