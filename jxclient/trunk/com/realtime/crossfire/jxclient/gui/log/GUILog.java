@@ -139,6 +139,10 @@ public class GUILog extends GUIElement implements GUIScrollable
         }
     };
 
+    /**
+     * The {@link CrossfireDrawextinfoListener} registered to receive
+     * drawextinfo commands.
+     */
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
