@@ -107,7 +107,7 @@ public class Parser
         if (text == null) throw new IllegalArgumentException();
         if (buffer == null) throw new IllegalArgumentException();
 
-        if (text.isEmpty())
+        if (text.length() == 0)
         {
             return;
         }
@@ -133,7 +133,7 @@ public class Parser
         if (text == null) throw new IllegalArgumentException();
         if (buffer == null) throw new IllegalArgumentException();
 
-        if (text.isEmpty())
+        if (text.length() == 0)
         {
             return;
         }
@@ -223,7 +223,7 @@ public class Parser
      */
     private void processTag(final String tag, final Color defaultColor)
     {
-        if (tag.isEmpty())
+        if (tag.length() == 0)
         {
             return;
         }
@@ -289,7 +289,7 @@ public class Parser
      */
     private void processText(final String text, final Line line)
     {
-        if (text.isEmpty())
+        if (text.length() == 0)
         {
             return;
         }
@@ -322,7 +322,7 @@ public class Parser
         {
             line.addSegment(new Segment(words[i]+" ", bold, italic, underline, font, color));
         }
-        if (!words[words.length-1].isEmpty())
+        if (words[words.length-1].length() > 0)
         {
             line.addSegment(new Segment(words[words.length-1], bold, italic, underline, font, color));
         }
