@@ -31,17 +31,6 @@
                 <include name="*.skin"/>
                 <include name="fonts/**"/>
                 <include name="pictures/**"/>
-                <exclude name="pictures/background_chat.png"/>
-                <exclude name="pictures/background_staff.jpg"/>
-                <exclude name="pictures/menu_example.png"/>
-                <exclude name="pictures/menuitem_background.png"/>
-                <exclude name="pictures/metaserver2.png"/>
-                <exclude name="pictures/scroll_bottom.png"/>
-                <exclude name="pictures/scroll_middle.png"/>
-                <exclude name="pictures/spellbelt.png"/>
-                <exclude name="pictures/spells_extended.png"/>
-                <exclude name="pictures/spells_shrinked.png"/>
-                <exclude name="pictures/standardbeltscreen.png"/>
             </fileset>
         </copy>
         <jar destfile="jxcskin_prelude.jar" basedir="${build}/skin.prelude"/>
