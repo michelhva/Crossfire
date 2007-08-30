@@ -32,20 +32,20 @@ import javax.swing.ImageIcon;
 public class ImageScale2x
 {
     /** The src data from the image */
-    private int[] srcData;
+    private final int[] srcData;
 
     /** The width of the image */
-    private int width;
+    private final int width;
 
     /** The height of the image */
-    private int height;
+    private final int height;
 
     /**
      * Create a new scaler that will scale the passed image
      *
      * @param srcImage The image to be scaled
      */
-    public ImageScale2x(ImageIcon srcImageIcon)
+    public ImageScale2x(final ImageIcon srcImageIcon)
     {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
@@ -64,9 +64,9 @@ public class ImageScale2x
      */
     public ImageIcon getScaledImage()
     {
-        RawScale2x scaler = new RawScale2x(srcData, width, height);
+        final RawScale2x scaler = new RawScale2x(srcData, width, height);
 
-        BufferedImage image = new BufferedImage(width*2, height*2, BufferedImage.TYPE_INT_ARGB);
+        final BufferedImage image = new BufferedImage(width*2, height*2, BufferedImage.TYPE_INT_ARGB);
         image.setRGB(0, 0, width*2, height*2, scaler.getScaledData(), 0, width*2);
 
         return new ImageIcon(image);
@@ -77,24 +77,22 @@ public class ImageScale2x
      *
      * @param argv The arguments passed in to the test code
      */
-    public static void main(String argv[])
+    public static void main(final String argv[])
     {
-        String srcFile = "randam_orig.png";
+        final String srcFile = "randam_orig.png";
         try
         {
             System.out.println("Reading: "+srcFile);
-            ImageIcon src = new ImageIcon(srcFile);
-            ImageScale2x scaler = new ImageScale2x(src);
-            ImageIcon out = scaler.getScaledImage();
+            final ImageIcon src = new ImageIcon(srcFile);
+            final ImageScale2x scaler = new ImageScale2x(src);
+            final ImageIcon out = scaler.getScaledImage();
 
-            String outFile = srcFile.substring(0, srcFile.length()-4);
-            outFile += "2x";
-            outFile += ".png";
+            final String outFile = srcFile.substring(0, srcFile.length()-4)+"2x.png";
             System.out.println("Writing: "+outFile);
             final FileCache fileCache = new FileCache(new File("cache"));
             fileCache.save(outFile, out);
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
