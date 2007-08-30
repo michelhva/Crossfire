@@ -34,11 +34,11 @@ import java.util.List;
  */
 public class CfPlayer extends CfItem
 {
-    private static List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
+    private static final List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
 
-    private static Stats mystats = new Stats();
+    private static final Stats mystats = new Stats();
 
-    public CfPlayer(int tag, int weight, Face face, String name)
+    public CfPlayer(final int tag, final int weight, final Face face, final String name)
     {
         super(0, tag, 0, weight, face, name, name, 1);
     }
@@ -60,7 +60,7 @@ public class CfPlayer extends CfItem
 
     public static void setStatsProcessed()
     {
-        CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), mystats);
+        final CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), mystats);
         Iterator<CrossfireStatsListener> it = mylisteners_stats.iterator();
         while (it.hasNext())
         {
