@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <project name="jxclient" default="all" basedir=".">
-    <property name="src" value="."/>
+    <property name="src.jxclient" value="src/jxclient"/>
     <property name="src.test" value="src/test"/>
     <property name="build" value="build"/>
     <target name="init">
@@ -9,7 +9,7 @@
     <target name="compile" depends="init">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
-        <javac srcdir="${src}" destdir="${build}/jxclient" source="1.5" debug="yes" fork="yes">
+        <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.5" debug="yes" fork="yes">
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
