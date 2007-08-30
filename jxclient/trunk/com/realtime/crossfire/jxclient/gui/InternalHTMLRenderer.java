@@ -115,16 +115,11 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
             myy += myfonts.peek().getSize()+1;
             myx = myorigx;
         }
-        /*else
-        {
-            System.out.println("Tag:"+tag);
-        }*/
     }
 
     public void handleEndTag(final HTML.Tag tag, final int pos)
     {
         myfonts.pop();
         mycolors.pop();
-        //System.out.println("End Tag:"+tag);
     }
 }

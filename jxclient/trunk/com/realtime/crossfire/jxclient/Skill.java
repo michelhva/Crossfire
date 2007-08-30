@@ -43,13 +43,11 @@ public class Skill
 
     public void setLevel(int nv)
     {
-//        System.out.println("Skill "+myname+": Setting level to "+nv);
         mylevel = nv;
     }
 
     public void setExperience(long exp)
     {
-//        System.out.println("Skill "+myname+": Setting experience to "+exp);
         myexperience = exp;
     }
 

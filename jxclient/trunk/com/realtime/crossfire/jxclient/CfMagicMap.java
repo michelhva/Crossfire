@@ -49,7 +49,6 @@ public class CfMagicMap
         final int len = dis.available();
         final byte buf[] = new byte[len];
 
-        System.out.println("**************** MAGIC MAPPING ********************");
         dis.readFully(buf);
 
         final String str = new String(buf);

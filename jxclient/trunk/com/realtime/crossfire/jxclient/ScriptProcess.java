@@ -236,7 +236,6 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
 
     public void runScriptCommand(String cmdline)
     {
-        System.out.println("Script Command:"+cmdline);
         if (cmdline.startsWith("watch "))
         {
             cmd_watch(cmdline);
