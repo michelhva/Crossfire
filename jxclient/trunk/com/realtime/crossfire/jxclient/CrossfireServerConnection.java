@@ -1470,8 +1470,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     public void drawInfo(String msg, int col)
     {
-        CrossfireCommandDrawinfoEvent evt = new
-                CrossfireCommandDrawinfoEvent(this, msg, col);
+        CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, msg, col);
         Iterator<CrossfireDrawinfoListener> it = mylisteners_drawinfo.iterator();
         while (it.hasNext())
         {
