@@ -37,7 +37,7 @@ public class SpellBeltItem
 
     public SpellBeltItem(int idx, int status)
     {
-        myspell = (Spell)ItemsList.getSpellsManager().getSpellList().get(idx);
+        myspell = ItemsList.getSpellsManager().getSpellList().get(idx);
         mystatus = status;
     }
 
