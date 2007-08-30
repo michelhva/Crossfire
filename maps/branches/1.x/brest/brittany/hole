@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Hole
 region brest
 width 50
 height 50
@@ -14739,23 +14739,23 @@ arch kobold
 x 45
 y 7
 end
+arch dungeon_magic
+x 45
+y 8
+end
 arch dirtfloor
+x 45
+y 8
+end
+arch kobold
 x 45
 y 8
 end
 arch dungeon_magic
 x 45
-y 8
-end
-arch kobold
-x 45
-y 8
-end
-arch dirtfloor
-x 45
 y 9
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 9
 end
@@ -14763,23 +14763,23 @@ arch kobold
 x 45
 y 9
 end
+arch dungeon_magic
+x 45
+y 10
+end
 arch dirtfloor
+x 45
+y 10
+end
+arch kobold
 x 45
 y 10
 end
 arch dungeon_magic
 x 45
-y 10
-end
-arch kobold
-x 45
-y 10
-end
-arch dirtfloor
-x 45
 y 11
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 11
 end
@@ -14787,11 +14787,11 @@ arch kobold
 x 45
 y 11
 end
-arch dirtfloor
+arch dungeon_magic
 x 45
 y 12
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 12
 end
@@ -14799,11 +14799,11 @@ arch kobold
 x 45
 y 12
 end
-arch dirtfloor
+arch dungeon_magic
 x 45
 y 13
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 13
 end
@@ -14811,11 +14811,11 @@ arch kobold
 x 45
 y 13
 end
-arch dirtfloor
+arch dungeon_magic
 x 45
 y 14
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 14
 end
@@ -14823,11 +14823,11 @@ arch kobold
 x 45
 y 14
 end
-arch dirtfloor
+arch dungeon_magic
 x 45
 y 15
 end
-arch dungeon_magic
+arch dirtfloor
 x 45
 y 15
 end
@@ -15149,11 +15149,11 @@ arch kobold
 x 46
 y 7
 end
-arch dirtfloor
+arch dungeon_magic
 x 46
 y 8
 end
-arch dungeon_magic
+arch dirtfloor
 x 46
 y 8
 end
@@ -15190,7 +15190,7 @@ arch dirtfloor
 x 46
 y 12
 end
-arch swall_1_2
+arch swall_1_1
 x 46
 y 12
 end
@@ -15198,7 +15198,7 @@ arch dirtfloor
 x 46
 y 13
 end
-arch swall_1_2
+arch swall_2_1_1
 x 46
 y 13
 end
@@ -15210,11 +15210,11 @@ arch swall_2_2_1
 x 46
 y 14
 end
-arch dirtfloor
+arch dungeon_magic
 x 46
 y 15
 end
-arch dungeon_magic
+arch dirtfloor
 x 46
 y 15
 end
@@ -15533,11 +15533,11 @@ arch kobold
 x 47
 y 7
 end
-arch dirtfloor
+arch dungeon_magic
 x 47
 y 8
 end
-arch dungeon_magic
+arch dirtfloor
 x 47
 y 8
 end
@@ -15549,7 +15549,7 @@ arch dirtfloor
 x 47
 y 9
 end
-arch swall_2_1_2
+arch swall_1_3
 x 47
 y 9
 end
@@ -15596,15 +15596,15 @@ arch dirtfloor
 x 47
 y 14
 end
-arch swall_2_1_2
+arch swall_1_3
 x 47
 y 14
 end
-arch dirtfloor
+arch dungeon_magic
 x 47
 y 15
 end
-arch dungeon_magic
+arch dirtfloor
 x 47
 y 15
 end
@@ -15923,11 +15923,11 @@ arch kobold
 x 48
 y 7
 end
-arch dirtfloor
+arch dungeon_magic
 x 48
 y 8
 end
-arch dungeon_magic
+arch dirtfloor
 x 48
 y 8
 end
@@ -15996,11 +15996,11 @@ x 48
 y 14
 connected 1
 end
-arch dirtfloor
+arch dungeon_magic
 x 48
 y 15
 end
-arch dungeon_magic
+arch dirtfloor
 x 48
 y 15
 end
@@ -16315,11 +16315,11 @@ arch kobold
 x 49
 y 7
 end
-arch dirtfloor
+arch dungeon_magic
 x 49
 y 8
 end
-arch dungeon_magic
+arch dirtfloor
 x 49
 y 8
 end
@@ -16331,7 +16331,7 @@ arch dirtfloor
 x 49
 y 9
 end
-arch swall_2_1_2
+arch swall_1_4
 x 49
 y 9
 end
@@ -16374,15 +16374,15 @@ arch dirtfloor
 x 49
 y 14
 end
-arch swall_2_1_2
+arch swall_1_4
 x 49
 y 14
 end
-arch dirtfloor
+arch dungeon_magic
 x 49
 y 15
 end
-arch dungeon_magic
+arch dirtfloor
 x 49
 y 15
 end
