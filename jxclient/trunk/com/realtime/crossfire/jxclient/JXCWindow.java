@@ -230,13 +230,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void terminateScript(final ScriptProcess sp)
     {
-        System.out.println("Script "+sp+" terminated");
         myserver.removeScriptMonitor((CrossfireScriptMonitorListener)sp);
     }
 
     public void runScript(final String cmdline)
     {
-        System.out.println("Script to run: "+cmdline);
         try
         {
             final ScriptProcess sp = new ScriptProcess(cmdline, this);
@@ -452,9 +450,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void endRendering()
     {
-        final long endtime = System.nanoTime();
-        final long totaltime = endtime-starttime;
-        System.out.println(framecount+" frames in "+totaltime/1000000+" ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
+//        final long endtime = System.nanoTime();
+//        final long totaltime = endtime-starttime;
+//        System.out.println(framecount+" frames in "+totaltime/1000000+" ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
         jxcWindowRenderer.endRendering();
         keyBindings.saveKeyBindings("keybindings.txt");
         saveSpellBelt("spellbelt.data");
