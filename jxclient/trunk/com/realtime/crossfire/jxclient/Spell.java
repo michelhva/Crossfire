@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import java.net.URL;
 import javax.swing.ImageIcon;
 
 /**
@@ -158,7 +159,12 @@ public class Spell
 
     public Spell(final String filename, final String spellname, final String id)
     {
-        myspellpic = new ImageIcon(getClass().getClassLoader().getResource(filename));
+        final URL url = getClass().getClassLoader().getResource(filename);
+        if (url == null)
+        {
+            throw new IllegalArgumentException("resource '"+filename+"' does not exist");
+        }
+        myspellpic = new ImageIcon(url);
         if (myspellpic == null)
         {
             throw new IllegalArgumentException("resource '"+filename+"' does not exist");
