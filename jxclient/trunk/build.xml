@@ -16,7 +16,7 @@
     <target name="jar" depends="compile,skin.prelude">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
-            <fileset dir="." includes="default.theme/pictures/spells/*.png"/>
+            <fileset dir="." includes="resource/spells/*.png"/>
             <zipfileset src="jxcskin_prelude.jar"/>
             <fileset dir="cache" includes="unknown.png"/>
             <manifest>
@@ -39,7 +39,6 @@
                 <exclude name="pictures/scroll_bottom.png"/>
                 <exclude name="pictures/scroll_middle.png"/>
                 <exclude name="pictures/spellbelt.png"/>
-                <exclude name="pictures/spells/**"/>
                 <exclude name="pictures/spells_extended.png"/>
                 <exclude name="pictures/spells_shrinked.png"/>
                 <exclude name="pictures/standardbeltscreen.png"/>
