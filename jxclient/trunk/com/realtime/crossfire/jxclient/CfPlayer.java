@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -61,10 +60,9 @@ public class CfPlayer extends CfItem
     public static void setStatsProcessed()
     {
         final CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), mystats);
-        Iterator<CrossfireStatsListener> it = mylisteners_stats.iterator();
-        while (it.hasNext())
+        for (final CrossfireStatsListener listener : mylisteners_stats)
         {
-            it.next().commandStatsReceived(evt);
+            listener.commandStatsReceived(evt);
         }
     }
 }

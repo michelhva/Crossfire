@@ -26,7 +26,6 @@ import java.awt.Transparency;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 import javax.swing.ImageIcon;
 
@@ -234,10 +233,13 @@ public class Faces
      */
     private static void sendAskface() throws IOException
     {
-        final Iterator<Integer> it = pendingFaces.iterator();
-        while (it.hasNext() && pendingAskfaces.size() < CONCURRENT_ASKFACE_COMMANDS)
+        for (final int face : pendingFaces)
         {
-            final int face = it.next();
+            if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS)
+            {
+                break;
+            }
+
             if (!pendingAskfaces.contains(face))
             {
                 facesCallback.sendAskface(face);

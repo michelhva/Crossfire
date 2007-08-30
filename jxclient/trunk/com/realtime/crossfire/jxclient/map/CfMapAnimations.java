@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -175,10 +174,8 @@ public class CfMapAnimations
         final Map<Location, AnimationState> tmp = new HashMap<Location, AnimationState>(animations);
         animations.clear();
 
-        final Iterator<Map.Entry<Location, AnimationState>> it = tmp.entrySet().iterator();
-        while (it.hasNext())
+        for (final Map.Entry<Location, AnimationState> e : tmp.entrySet())
         {
-            final Map.Entry<Location, AnimationState> e = it.next();
             final Location location = e.getKey();
             if (0 <= location.x && location.x < width && 0 <= location.y && location.y < height) // out-of-map bounds animations are dropped not scrolled
             {
@@ -211,10 +208,8 @@ public class CfMapAnimations
         }
 
         CfMapUpdater.processMapBegin();
-        final Iterator<Map.Entry<Location, AnimationState>> it = animations.entrySet().iterator();
-        while (it.hasNext())
+        for (final Map.Entry<Location, AnimationState> e : animations.entrySet())
         {
-            final Map.Entry<Location, AnimationState> e = it.next();
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
             animationState.updateTickno(tickno, location);
