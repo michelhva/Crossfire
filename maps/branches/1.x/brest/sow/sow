@@ -1332,11 +1332,11 @@ no_pick 1
 arch tome
 title of Temple Naive
 msg
-Temple Naive is located North West of 
-Santo Dominion. There is a dagger 
-of much power, but needs the negative 
-qualities removed.  The temple requires 
-an offering of diamonds to communicate 
+Temple Naive is located North West of
+Santo Dominion. There is a dagger
+of much power, but needs the negative
+qualities removed.  The temple requires
+an offering of diamonds to communicate
 with the dead.
 endmsg
 level 5
@@ -1585,12 +1585,12 @@ no_pick 1
 arch tome
 title of Elven Moon
 msg
-The Elven Moon is a place located 
-North East of Lake Country. It is 
-said the Bow of Elven Moon is ripe 
-with magic.  The entrance has a 
-protective magical barrier that 
-requires one to solve a riddle to 
+The Elven Moon is a place located
+North East of Lake Country. It is
+said the Bow of Elven Moon is ripe
+with magic.  The entrance has a
+protective magical barrier that
+requires one to solve a riddle to
 dispell the magic.
 endmsg
 level 7
@@ -1824,8 +1824,8 @@ arch tome
 title of Temple Justice
 msg
 Temple Justice is located West of Darcap.
-There is a mighty hammer at the top.  A 
-broad sword and a high shield raise the 
+There is a mighty hammer at the top.  A
+broad sword and a high shield raise the
 gate to the tower.
 endmsg
 level 6
@@ -2647,7 +2647,7 @@ Never heard of anyone by that name.
 @match Vim|vim
 Vim was once a great empire in the East.
 @match *
-Find the objects that I require and you will 
+Find the objects that I require and you will
 be given a great reward.
 endmsg
 face wizard.151
@@ -5907,9 +5907,6 @@ x 29
 y 31
 end
 arch altar
-msg
-
-endmsg
 food 4
 x 30
 connected 50

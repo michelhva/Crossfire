@@ -4452,12 +4452,12 @@ name moat
 x 13
 y 6
 end
-arch brush
+arch tree5
+name ornamental pine
 x 13
 y 7
 end
-arch tree5
-name ornamental pine
+arch brush
 x 13
 y 7
 end
@@ -4505,6 +4505,66 @@ end
 arch greenmarblelight
 x 13
 y 15
+end
+arch big_wiz
+name Pyromancy Scroll Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 13
+y 15
+level 108
+attacktype 86180
+resist_physical 65
+resist_fire 100
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 2
+run_away 0
+arch rod_light
+hp 500
+maxhp 500
+sp 90
+level 110
+startequip 1
+end
+arch scroll_new
+sp 3
+nrof 10
+level 110
+end
+arch scroll_new
+sp 6
+nrof 10
+level 110
+end
+arch scroll_new
+sp 57
+nrof 10
+level 110
+end
+arch key2
+name pyromancy scroll key
+name_pl pyromancy scroll keys
+slaying pyromancy_scroll_key
+end
+arch stylus
+end
 end
 arch greenmarblelight
 x 13
@@ -4639,6 +4699,67 @@ end
 arch greenmarblemedium
 x 13
 y 42
+end
+arch big_wiz
+name Summoning Scroll Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 13
+y 42
+level 108
+attacktype 87169
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 64
+arch rod_light
+hp 500
+maxhp 500
+sp 128
+level 110
+end
+arch scroll_new
+sp 91
+nrof 10
+level 110
+end
+arch scroll_new
+sp 65
+nrof 10
+level 110
+end
+arch scroll_new
+other_arch devil
+sp 9
+nrof 10
+level 110
+end
+arch key2
+name summoning scroll key
+name_pl summoning scroll keys
+slaying summoning_scroll_key
+end
+arch spell_magehound
+end
+arch stylus
+end
 end
 arch greenmarblemedium
 x 13
@@ -5680,6 +5801,57 @@ arch greenmarblelight
 x 17
 y 15
 end
+arch big_wiz
+name Pyromancy Book Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 17
+y 15
+level 108
+attacktype 86180
+resist_physical 65
+resist_fire 100
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 2
+run_away 0
+arch rod_light
+hp 500
+maxhp 500
+sp 90
+level 110
+startequip 1
+end
+arch pyro_book
+end
+arch pyro_book_l1
+end
+arch pyro_book_l1
+end
+arch key2
+name pyromancy book key
+name_pl pyromancy book keys
+slaying pyromancy_book_key
+end
+arch stylus
+end
+end
 arch greenmarblelight
 x 17
 y 16
@@ -5795,6 +5967,61 @@ end
 arch greenmarblemedium
 x 17
 y 42
+end
+arch big_wiz
+name Summoning Book Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 17
+y 42
+level 108
+attacktype 87169
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 64
+arch rod_light
+hp 500
+maxhp 500
+sp 123
+level 110
+end
+arch summoner_book
+value 200
+randomitems none
+arch spell_magehound
+end
+end
+arch summoner_book_l1
+end
+arch summoner_book_l1
+end
+arch key2
+name summoning book key
+name_pl summoning book keys
+slaying summoning_book_key
+end
+arch spell_magehound
+end
+arch stylus
+end
 end
 arch greenmarblemedium
 x 17
@@ -8231,6 +8458,33 @@ arch greenmarble
 x 25
 y 12
 end
+arch Cwyvern
+name Zorn wyvern of chaos
+title Guardian of the Treasure
+Con 50
+Wis 20
+Pow 50
+exp 2000000
+wc -75
+ac -75
+x 25
+y 12
+level 109
+attacktype 262429
+resist_magic 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_poison -25
+resist_slow 50
+resist_fear 100
+resist_deplete 50
+resist_chaos 50
+resist_godpower 20
+resist_holyword 50
+run_away 0
+end
 arch lightgreenmarble
 x 25
 y 13
@@ -9164,6 +9418,37 @@ end
 arch redslate
 x 28
 y 13
+end
+arch big_chaos_dragon
+name Zorn dragon of chaos
+title Guardian of the Treasure
+Con 75
+Wis 20
+Pow 20
+sp 0
+maxsp 250
+exp 4500000
+dam 50
+wc -95
+ac -95
+x 28
+y 13
+level 110
+attacktype 262429
+resist_magic 75
+resist_confusion 75
+resist_acid 75
+resist_drain 75
+resist_weaponmagic 25
+resist_poison -25
+resist_slow 75
+resist_fear 100
+resist_deplete 75
+resist_chaos 75
+resist_godpower 20
+resist_holyword 75
+path_attuned 14
+run_away 0
 end
 arch redslate
 x 28
@@ -10515,6 +10800,33 @@ end
 arch greenmarble
 x 32
 y 12
+end
+arch Cwyvern
+name Zorn wyvern of chaos
+title Guardian of the Treasure
+Con 50
+Wis 20
+Pow 50
+exp 2000000
+wc -75
+ac -75
+x 32
+y 12
+level 109
+attacktype 262429
+resist_magic 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_poison -25
+resist_slow 50
+resist_fear 100
+resist_deplete 50
+resist_chaos 50
+resist_godpower 20
+resist_holyword 50
+run_away 0
 end
 arch lightgreenmarble
 x 32
@@ -13072,6 +13384,66 @@ arch greenmarblemedium
 x 40
 y 13
 end
+arch big_wiz
+name Evocation Scroll Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 40
+y 13
+level 108
+attacktype 86192
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 100
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 4
+run_away 0
+arch rod_light
+hp 500
+maxhp 500
+sp 88
+level 110
+startequip 1
+end
+arch scroll_new
+sp 180
+nrof 10
+level 110
+end
+arch scroll_new
+sp 17
+nrof 10
+level 110
+end
+arch scroll_new
+sp 113
+nrof 10
+level 110
+end
+arch key2
+name evocation scroll key
+name_pl evocation scroll keys
+slaying evocation_scroll_key
+end
+arch stylus
+end
+end
 arch greenmarblemedium
 x 40
 y 14
@@ -13199,6 +13571,66 @@ end
 arch greenmarblelight
 x 40
 y 43
+end
+arch big_wiz
+name Sorcery Scroll Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 40
+y 43
+level 108
+attacktype 87200
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 16
+run_away 0
+arch scroll_new
+sp 64
+nrof 10
+level 110
+end
+arch scroll_new
+sp 23
+nrof 10
+level 110
+end
+arch scroll_new
+sp 63
+nrof 10
+level 110
+end
+arch key2
+name sorcery scroll key
+name_pl sorcery scroll keys
+slaying sorcery_scroll_key
+end
+arch rod_light
+hp 500
+maxhp 500
+sp 85
+level 110
+startequip 1
+end
+arch stylus
+end
 end
 arch greenmarblemedium
 x 40
@@ -14225,6 +14657,57 @@ arch greenmarblemedium
 x 44
 y 13
 end
+arch big_wiz
+name Evocation Book Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 44
+y 13
+level 108
+attacktype 86192
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 100
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 4
+run_away 0
+arch evoker_book
+end
+arch evoker_book_l1
+end
+arch evoker_book_l1
+end
+arch key2
+name evocation book key
+name_pl evocation book keys
+slaying evocation_book_key
+end
+arch rod_light
+hp 500
+maxhp 500
+sp 88
+level 110
+startequip 1
+end
+arch stylus
+end
+end
 arch greenmarblemedium
 x 44
 y 14
@@ -14360,6 +14843,57 @@ end
 arch greenmarblelight
 x 44
 y 43
+end
+arch big_wiz
+name Sorcery Book Writer
+title of Zorn
+Con 35
+Pow 50
+hp 5000
+maxhp 5000
+sp 250
+maxsp 250
+exp 1000000
+wc -30
+ac -25
+x 44
+y 43
+level 108
+attacktype 87200
+resist_physical 65
+resist_fire 65
+resist_electricity 65
+resist_cold 65
+resist_confusion 65
+resist_acid 65
+resist_drain 65
+resist_weaponmagic 65
+resist_slow -25
+resist_deplete 65
+resist_death 65
+resist_chaos 65
+path_attuned 16
+run_away 0
+arch sorcerer_book
+end
+arch sorcerer_book_l1
+end
+arch sorcerer_book_l1
+end
+arch key2
+name sorcery book key
+name_pl sorcery book keys
+slaying sorcery_book_key
+end
+arch rod_light
+hp 500
+maxhp 500
+sp 85
+level 110
+startequip 1
+end
+arch stylus
+end
 end
 arch greenmarblemedium
 x 44
@@ -19242,538 +19776,4 @@ end
 arch brush
 x 58
 y 58
-end
-arch big_wiz
-name Pyromancy Scroll Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 13
-y 15
-level 108
-attacktype 86180
-resist_physical 65
-resist_fire 100
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 2
-run_away 0
-arch rod_light
-hp 500
-maxhp 500
-sp 90
-level 110
-startequip 1
-end
-arch scroll_new
-sp 3
-nrof 10
-level 110
-end
-arch scroll_new
-sp 6
-nrof 10
-level 110
-end
-arch scroll_new
-sp 57
-nrof 10
-level 110
-end
-arch key2
-name pyromancy scroll key
-name_pl pyromancy scroll keys
-slaying pyromancy_scroll_key
-end
-arch stylus
-end
-end
-arch big_wiz
-name Summoning Scroll Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 13
-y 42
-level 108
-attacktype 87169
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 64
-arch rod_light
-hp 500
-maxhp 500
-sp 128
-level 110
-end
-arch scroll_new
-sp 91
-nrof 10
-level 110
-end
-arch scroll_new
-sp 65
-nrof 10
-level 110
-end
-arch scroll_new
-other_arch devil
-sp 9
-nrof 10
-level 110
-end
-arch key2
-name summoning scroll key
-name_pl summoning scroll keys
-slaying summoning_scroll_key
-end
-arch spell_magehound
-end
-arch stylus
-end
-end
-arch big_wiz
-name Pyromancy Book Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 17
-y 15
-level 108
-attacktype 86180
-resist_physical 65
-resist_fire 100
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 2
-run_away 0
-arch rod_light
-hp 500
-maxhp 500
-sp 90
-level 110
-startequip 1
-end
-arch pyro_book
-end
-arch pyro_book_l1
-end
-arch pyro_book_l1
-end
-arch key2
-name pyromancy book key
-name_pl pyromancy book keys
-slaying pyromancy_book_key
-end
-arch stylus
-end
-end
-arch big_wiz
-name Summoning Book Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 17
-y 42
-level 108
-attacktype 87169
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 64
-arch rod_light
-hp 500
-maxhp 500
-sp 123
-level 110
-end
-arch summoner_book
-value 200
-randomitems none
-arch spell_magehound
-end
-end
-arch summoner_book_l1
-end
-arch summoner_book_l1
-end
-arch key2
-name summoning book key
-name_pl summoning book keys
-slaying summoning_book_key
-end
-arch spell_magehound
-end
-arch stylus
-end
-end
-arch Cwyvern
-name Zorn wyvern of chaos
-title Guardian of the Treasure
-Con 50
-Wis 20
-Pow 50
-exp 2000000
-wc -75
-ac -75
-x 25
-y 12
-level 109
-attacktype 262429
-resist_magic 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_poison -25
-resist_slow 50
-resist_fear 100
-resist_deplete 50
-resist_chaos 50
-resist_godpower 20
-resist_holyword 50
-run_away 0
-end
-arch big_chaos_dragon
-name Zorn dragon of chaos
-title Guardian of the Treasure
-Con 75
-Wis 20
-Pow 20
-sp 0
-maxsp 250
-exp 4500000
-dam 50
-wc -95
-ac -95
-x 28
-y 13
-level 110
-attacktype 262429
-resist_magic 75
-resist_confusion 75
-resist_acid 75
-resist_drain 75
-resist_weaponmagic 25
-resist_poison -25
-resist_slow 75
-resist_fear 100
-resist_deplete 75
-resist_chaos 75
-resist_godpower 20
-resist_holyword 75
-path_attuned 14
-run_away 0
-end
-arch Cwyvern
-name Zorn wyvern of chaos
-title Guardian of the Treasure
-Con 50
-Wis 20
-Pow 50
-exp 2000000
-wc -75
-ac -75
-x 32
-y 12
-level 109
-attacktype 262429
-resist_magic 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_poison -25
-resist_slow 50
-resist_fear 100
-resist_deplete 50
-resist_chaos 50
-resist_godpower 20
-resist_holyword 50
-run_away 0
-end
-arch big_wiz
-name Evocation Scroll Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 40
-y 13
-level 108
-attacktype 86192
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 100
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 4
-run_away 0
-arch rod_light
-hp 500
-maxhp 500
-sp 88
-level 110
-startequip 1
-end
-arch scroll_new
-sp 180
-nrof 10
-level 110
-end
-arch scroll_new
-sp 17
-nrof 10
-level 110
-end
-arch scroll_new
-sp 113
-nrof 10
-level 110
-end
-arch key2
-name evocation scroll key
-name_pl evocation scroll keys
-slaying evocation_scroll_key
-end
-arch stylus
-end
-end
-arch big_wiz
-name Sorcery Scroll Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 40
-y 43
-level 108
-attacktype 87200
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 16
-run_away 0
-arch scroll_new
-sp 64
-nrof 10
-level 110
-end
-arch scroll_new
-sp 23
-nrof 10
-level 110
-end
-arch scroll_new
-sp 63
-nrof 10
-level 110
-end
-arch key2
-name sorcery scroll key
-name_pl sorcery scroll keys
-slaying sorcery_scroll_key
-end
-arch rod_light
-hp 500
-maxhp 500
-sp 85
-level 110
-startequip 1
-end
-arch stylus
-end
-end
-arch big_wiz
-name Evocation Book Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 44
-y 13
-level 108
-attacktype 86192
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 100
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 4
-run_away 0
-arch evoker_book
-end
-arch evoker_book_l1
-end
-arch evoker_book_l1
-end
-arch key2
-name evocation book key
-name_pl evocation book keys
-slaying evocation_book_key
-end
-arch rod_light
-hp 500
-maxhp 500
-sp 88
-level 110
-startequip 1
-end
-arch stylus
-end
-end
-arch big_wiz
-name Sorcery Book Writer
-title of Zorn
-Con 35
-Pow 50
-hp 5000
-maxhp 5000
-sp 250
-maxsp 250
-exp 1000000
-wc -30
-ac -25
-x 44
-y 43
-level 108
-attacktype 87200
-resist_physical 65
-resist_fire 65
-resist_electricity 65
-resist_cold 65
-resist_confusion 65
-resist_acid 65
-resist_drain 65
-resist_weaponmagic 65
-resist_slow -25
-resist_deplete 65
-resist_death 65
-resist_chaos 65
-path_attuned 16
-run_away 0
-arch sorcerer_book
-end
-arch sorcerer_book_l1
-end
-arch sorcerer_book_l1
-end
-arch key2
-name sorcery book key
-name_pl sorcery book keys
-slaying sorcery_book_key
-end
-arch rod_light
-hp 500
-maxhp 500
-sp 85
-level 110
-startequip 1
-end
-arch stylus
-end
 end

@@ -259,7 +259,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -288,7 +288,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -546,7 +546,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -583,7 +583,7 @@ speed 0
 level 107
 invisible 1
 connected 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -614,8 +614,8 @@ arch barrel
 x 4
 y 6
 material 0
+move_block 0
 no_pick 1
-no_pass 0
 end
 arch woodfloor2
 x 4
@@ -916,8 +916,8 @@ arch barrel
 x 6
 y 8
 material 0
+move_block 0
 no_pick 1
-no_pass 0
 end
 arch woodfloor2
 x 6
@@ -1322,7 +1322,7 @@ arch longtable_1_1
 name counter
 x 9
 y 10
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -1332,7 +1332,7 @@ arch longtable_2_1_1
 name counter
 x 9
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -1342,7 +1342,7 @@ arch longtable_1_2
 name counter
 x 9
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 9
@@ -1388,7 +1388,7 @@ speed 0
 level 107
 invisible 1
 connected 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -1425,7 +1425,7 @@ speed 0
 level 107
 invisible 1
 connected 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -1456,8 +1456,8 @@ arch barrel
 x 10
 y 6
 material 0
+move_block 0
 no_pick 1
-no_pass 0
 end
 arch woodfloor2
 x 10
@@ -1729,7 +1729,7 @@ speed 0
 level 107
 invisible 1
 connected 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
@@ -1758,7 +1758,7 @@ speed 0
 level 107
 invisible 1
 connected 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch woodfloor2
