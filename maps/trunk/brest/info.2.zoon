@@ -390,6 +390,10 @@ arch woodfloor
 x 1
 y 2
 end
+arch troll
+x 1
+y 2
+end
 arch woodfloor
 x 1
 y 3
@@ -598,6 +602,10 @@ x 1
 y 39
 end
 arch woodfloor
+x 1
+y 40
+end
+arch behemoth
 x 1
 y 40
 end
@@ -1034,6 +1042,10 @@ arch woodfloor
 x 2
 y 44
 end
+arch big_elec
+x 2
+y 44
+end
 arch woodfloor
 x 2
 y 45
@@ -1164,7 +1176,15 @@ arch woodfloor
 x 3
 y 2
 end
+arch dragon
+x 3
+y 2
+end
 arch woodfloor
+x 3
+y 3
+end
+arch dragon
 x 3
 y 3
 end
@@ -1887,6 +1907,10 @@ arch woodfloor
 x 4
 y 44
 end
+arch big_elec
+x 4
+y 44
+end
 arch woodfloor
 x 4
 y 45
@@ -2017,7 +2041,15 @@ arch woodfloor
 x 5
 y 2
 end
+arch dragon
+x 5
+y 2
+end
 arch woodfloor
+x 5
+y 3
+end
+arch dragon
 x 5
 y 3
 end
@@ -2234,6 +2266,10 @@ x 5
 y 29
 end
 arch woodfloor
+x 5
+y 30
+end
+arch dread
 x 5
 y 30
 end
@@ -2718,6 +2754,10 @@ arch woodfloor
 x 6
 y 44
 end
+arch big_elec
+x 6
+y 44
+end
 arch woodfloor
 x 6
 y 45
@@ -2786,6 +2826,10 @@ arch woodfloor
 x 6
 y 54
 end
+arch dread
+x 6
+y 54
+end
 arch woodfloor
 x 6
 y 55
@@ -2837,6 +2881,10 @@ x 7
 y 1
 end
 arch woodfloor
+x 7
+y 2
+end
+arch troll
 x 7
 y 2
 end
@@ -3273,6 +3321,10 @@ arch woodfloor
 x 8
 y 4
 end
+arch giant
+x 8
+y 4
+end
 arch woodfloor
 x 8
 y 5
@@ -3281,11 +3333,19 @@ arch woodfloor
 x 8
 y 6
 end
+arch giant
+x 8
+y 6
+end
 arch woodfloor
 x 8
 y 7
 end
 arch woodfloor
+x 8
+y 8
+end
+arch troll
 x 8
 y 8
 end
@@ -3451,6 +3511,10 @@ arch woodfloor
 x 8
 y 30
 end
+arch dread
+x 8
+y 30
+end
 arch woodfloor
 x 8
 y 31
@@ -3528,6 +3592,10 @@ x 8
 y 43
 end
 arch woodfloor
+x 8
+y 44
+end
+arch big_elec
 x 8
 y 44
 end
@@ -3661,6 +3729,10 @@ arch woodfloor
 x 9
 y 2
 end
+arch giant
+x 9
+y 2
+end
 arch woodfloor
 x 9
 y 3
@@ -3669,11 +3741,19 @@ arch woodfloor
 x 9
 y 4
 end
+arch giant
+x 9
+y 4
+end
 arch woodfloor
 x 9
 y 5
 end
 arch woodfloor
+x 9
+y 6
+end
+arch giant
 x 9
 y 6
 end
@@ -4331,6 +4411,10 @@ arch woodfloor
 x 10
 y 44
 end
+arch big_elec
+x 10
+y 44
+end
 arch woodfloor
 x 10
 y 45
@@ -4592,6 +4676,11 @@ x 11
 y 19
 end
 arch woodfloor
+x 11
+y 20
+end
+arch demon_lord
+name ab
 x 11
 y 20
 end
@@ -5085,6 +5174,10 @@ arch woodfloor
 x 12
 y 41
 end
+arch behemoth
+x 12
+y 41
+end
 arch woodfloor
 x 12
 y 42
@@ -5098,6 +5191,10 @@ x 12
 y 43
 end
 arch woodfloor
+x 12
+y 44
+end
+arch big_elec
 x 12
 y 44
 end
@@ -8969,11 +9066,19 @@ arch woodfloor
 x 21
 y 32
 end
+arch cobra
+x 21
+y 32
+end
 arch woodfloor
 x 21
 y 33
 end
 arch woodfloor
+x 21
+y 34
+end
+arch cobra
 x 21
 y 34
 end
@@ -8985,6 +9090,10 @@ arch woodfloor
 x 21
 y 36
 end
+arch cobra
+x 21
+y 36
+end
 arch woodfloor
 x 21
 y 37
@@ -8993,11 +9102,19 @@ arch woodfloor
 x 21
 y 38
 end
+arch cobra
+x 21
+y 38
+end
 arch woodfloor
 x 21
 y 39
 end
 arch woodfloor
+x 21
+y 40
+end
+arch dragon
 x 21
 y 40
 end
@@ -9865,11 +9982,19 @@ arch woodfloor
 x 23
 y 33
 end
+arch giant
+x 23
+y 33
+end
 arch woodfloor
 x 23
 y 34
 end
 arch woodfloor
+x 23
+y 35
+end
+arch giant
 x 23
 y 35
 end
@@ -9881,11 +10006,19 @@ arch woodfloor
 x 23
 y 37
 end
+arch giant
+x 23
+y 37
+end
 arch woodfloor
 x 23
 y 38
 end
 arch woodfloor
+x 23
+y 39
+end
+arch giant
 x 23
 y 39
 end
@@ -10288,6 +10421,10 @@ x 24
 y 32
 end
 arch woodfloor
+x 24
+y 33
+end
+arch dragon
 x 24
 y 33
 end
@@ -10753,11 +10890,19 @@ arch woodfloor
 x 25
 y 34
 end
+arch giant
+x 25
+y 34
+end
 arch woodfloor
 x 25
 y 35
 end
 arch woodfloor
+x 25
+y 36
+end
+arch giant
 x 25
 y 36
 end
@@ -10769,11 +10914,19 @@ arch woodfloor
 x 25
 y 38
 end
+arch giant
+x 25
+y 38
+end
 arch woodfloor
 x 25
 y 39
 end
 arch woodfloor
+x 25
+y 40
+end
+arch dragon
 x 25
 y 40
 end
@@ -11645,11 +11798,19 @@ arch woodfloor
 x 27
 y 33
 end
+arch giant
+x 27
+y 33
+end
 arch woodfloor
 x 27
 y 34
 end
 arch woodfloor
+x 27
+y 35
+end
+arch giant
 x 27
 y 35
 end
@@ -11661,11 +11822,19 @@ arch woodfloor
 x 27
 y 37
 end
+arch giant
+x 27
+y 37
+end
 arch woodfloor
 x 27
 y 38
 end
 arch woodfloor
+x 27
+y 39
+end
+arch giant
 x 27
 y 39
 end
@@ -12563,6 +12732,10 @@ x 29
 y 37
 end
 arch woodfloor
+x 29
+y 38
+end
+arch big_wiz
 x 29
 y 38
 end
@@ -17285,177 +17458,4 @@ end
 arch wall_2_2_4
 x 39
 y 59
-end
-arch troll
-x 1
-y 2
-end
-arch behemoth
-x 1
-y 40
-end
-arch big_elec
-x 2
-y 44
-end
-arch dragon
-x 3
-y 2
-end
-arch dragon
-x 3
-y 3
-end
-arch big_elec
-x 4
-y 44
-end
-arch dragon
-x 5
-y 2
-end
-arch dragon
-x 5
-y 3
-end
-arch dread
-x 5
-y 30
-end
-arch big_elec
-x 6
-y 44
-end
-arch dread
-x 6
-y 54
-end
-arch troll
-x 7
-y 2
-end
-arch giant
-x 8
-y 4
-end
-arch giant
-x 8
-y 6
-end
-arch troll
-x 8
-y 8
-end
-arch dread
-x 8
-y 30
-end
-arch big_elec
-x 8
-y 44
-end
-arch giant
-x 9
-y 2
-end
-arch giant
-x 9
-y 4
-end
-arch giant
-x 9
-y 6
-end
-arch big_elec
-x 10
-y 44
-end
-arch demon_lord
-name ab
-x 11
-y 20
-end
-arch behemoth
-x 12
-y 41
-end
-arch big_elec
-x 12
-y 44
-end
-arch cobra
-x 21
-y 32
-end
-arch cobra
-x 21
-y 34
-end
-arch cobra
-x 21
-y 36
-end
-arch cobra
-x 21
-y 38
-end
-arch dragon
-x 21
-y 40
-end
-arch giant
-x 23
-y 33
-end
-arch giant
-x 23
-y 35
-end
-arch giant
-x 23
-y 37
-end
-arch giant
-x 23
-y 39
-end
-arch dragon
-x 24
-y 33
-end
-arch giant
-x 25
-y 34
-end
-arch giant
-x 25
-y 36
-end
-arch giant
-x 25
-y 38
-end
-arch dragon
-x 25
-y 40
-end
-arch giant
-x 27
-y 33
-end
-arch giant
-x 27
-y 35
-end
-arch giant
-x 27
-y 37
-end
-arch giant
-x 27
-y 39
-end
-arch big_wiz
-x 29
-y 38
 end
