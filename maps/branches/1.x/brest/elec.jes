@@ -1,14 +1,14 @@
 arch map
-region brest
 name elec
+difficulty 12
+region brest
+width 60
+height 48
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 02:13:14 1994
 endmsg
-x 60
-y 48
-level 12
 end
 arch dungeon_floor
 end
