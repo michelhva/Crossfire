@@ -1,15 +1,15 @@
 arch map
 name The Grand Hall
+darkness 1
+width 22
+height 26
+enter_x 15
+enter_y 2
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    6/14/2003
 endmsg
-width 22
-height 26
-enter_x 15
-enter_y 2
-darkness 1
 end
 arch flagstone
 end
@@ -172,198 +172,198 @@ arch dwall_2_1_2
 x 1
 end
 arch flagstone
-unique 1
 x 1
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 4
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 5
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 10
+unique 1
 end
 arch dwall_2_1_2
 name shortcut
-move_block 0
 x 1
 y 10
+move_block 0
 end
 arch dungeon_magic
 x 1
 y 10
 end
 arch flagstone
-unique 1
 x 1
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 12
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 13
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 14
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 15
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 16
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 17
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 18
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 19
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 20
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 21
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 22
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 23
+unique 1
 end
 arch flagstone
-unique 1
 x 1
 y 24
-end
-arch flagstone
-x 1
-y 25
-end
-arch dwall_2_1_2
-x 1
-y 25
-end
-arch flagstone
-x 2
-end
-arch dwall_2_1_2
-x 2
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 1
+y 25
+end
+arch dwall_2_1_2
+x 1
+y 25
+end
+arch flagstone
+x 2
+end
+arch dwall_2_1_2
+x 2
+end
+arch flagstone
 x 2
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 4
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 5
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 2
@@ -374,14 +374,14 @@ x 2
 y 10
 end
 arch flagstone
-unique 1
 x 2
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 2
 y 12
+unique 1
 end
 arch dwall_2_2_2
 x 2
@@ -392,9 +392,9 @@ x 2
 y 12
 end
 arch flagstone
-unique 1
 x 2
 y 13
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -409,87 +409,87 @@ x 2
 y 13
 end
 arch flagstone
+x 2
+y 14
 unique 1
+end
+arch dungeon_magic
 x 2
 y 14
 end
-arch dungeon_magic
-x 2
-y 14
-end
 arch swall_2_1_1
 x 2
 y 14
 end
 arch flagstone
+x 2
+y 15
 unique 1
+end
+arch dungeon_magic
 x 2
 y 15
 end
-arch dungeon_magic
-x 2
-y 15
-end
 arch swall_2_1_1
 x 2
 y 15
 end
 arch flagstone
+x 2
+y 16
 unique 1
+end
+arch dungeon_magic
 x 2
 y 16
 end
-arch dungeon_magic
-x 2
-y 16
-end
 arch swall_2_1_1
 x 2
 y 16
 end
 arch flagstone
+x 2
+y 17
 unique 1
+end
+arch dungeon_magic
 x 2
 y 17
 end
-arch dungeon_magic
-x 2
-y 17
-end
 arch swall_2_1_1
 x 2
 y 17
 end
 arch flagstone
+x 2
+y 18
 unique 1
+end
+arch dungeon_magic
 x 2
 y 18
 end
-arch dungeon_magic
-x 2
-y 18
-end
 arch swall_2_1_1
 x 2
 y 18
 end
 arch flagstone
+x 2
+y 19
 unique 1
+end
+arch dungeon_magic
 x 2
 y 19
 end
-arch dungeon_magic
-x 2
-y 19
-end
 arch swall_2_1_1
 x 2
 y 19
 end
 arch flagstone
-unique 1
 x 2
 y 20
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -500,9 +500,9 @@ x 2
 y 20
 end
 arch flagstone
-unique 1
 x 2
 y 21
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -513,9 +513,9 @@ x 2
 y 21
 end
 arch flagstone
-unique 1
 x 2
 y 22
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -526,9 +526,9 @@ x 2
 y 22
 end
 arch flagstone
-unique 1
 x 2
 y 23
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -543,43 +543,43 @@ x 2
 y 23
 end
 arch flagstone
-unique 1
 x 2
 y 24
-end
-arch flagstone
-x 2
-y 25
-end
-arch dwall_2_1_2
-x 2
-y 25
-end
-arch flagstone
-x 3
-end
-arch dwall_2_1_2
-x 3
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 2
+y 25
+end
+arch dwall_2_1_2
+x 2
+y 25
+end
+arch flagstone
+x 3
+end
+arch dwall_2_1_2
+x 3
+end
+arch flagstone
 x 3
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 4
+unique 1
 end
 arch swall_2_2_2
 x 3
@@ -594,9 +594,9 @@ x 3
 y 4
 end
 arch flagstone
-unique 1
 x 3
 y 5
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -607,9 +607,9 @@ x 3
 y 5
 end
 arch flagstone
-unique 1
 x 3
 y 6
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -620,9 +620,9 @@ x 3
 y 6
 end
 arch flagstone
-unique 1
 x 3
 y 7
+unique 1
 end
 arch swall_2_2_1
 x 3
@@ -637,19 +637,19 @@ x 3
 y 7
 end
 arch flagstone
-unique 1
 x 3
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 3
@@ -660,14 +660,14 @@ x 3
 y 10
 end
 arch flagstone
-unique 1
 x 3
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 3
 y 12
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -678,99 +678,99 @@ x 3
 y 12
 end
 arch flagstone
+x 3
+y 13
 unique 1
+end
+arch dungeon_magic
 x 3
 y 13
 end
-arch dungeon_magic
-x 3
-y 13
-end
 arch flagstone
-unique 1
 x 3
 y 14
+unique 1
 end
 arch dungeon_magic
 x 3
 y 14
 end
 arch flagstone
+x 3
+y 15
 unique 1
+end
+arch dungeon_magic
 x 3
 y 15
 end
-arch dungeon_magic
-x 3
-y 15
-end
 arch flagstone
-unique 1
 x 3
 y 16
+unique 1
 end
 arch dungeon_magic
 x 3
 y 16
 end
 arch flagstone
+x 3
+y 17
 unique 1
+end
+arch dungeon_magic
 x 3
 y 17
 end
-arch dungeon_magic
-x 3
-y 17
-end
 arch flagstone
-unique 1
 x 3
 y 18
+unique 1
 end
 arch dungeon_magic
 x 3
 y 18
 end
 arch flagstone
+x 3
+y 19
 unique 1
+end
+arch dungeon_magic
 x 3
 y 19
 end
-arch dungeon_magic
-x 3
-y 19
-end
 arch flagstone
-unique 1
 x 3
 y 20
+unique 1
 end
 arch dungeon_magic
 x 3
 y 20
 end
 arch flagstone
-unique 1
 x 3
 y 21
+unique 1
 end
 arch dungeon_magic
 x 3
 y 21
 end
 arch flagstone
-unique 1
 x 3
 y 22
+unique 1
 end
 arch dungeon_magic
 x 3
 y 22
 end
 arch flagstone
-unique 1
 x 3
 y 23
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -781,43 +781,43 @@ x 3
 y 23
 end
 arch flagstone
-unique 1
 x 3
 y 24
-end
-arch flagstone
-x 3
-y 25
-end
-arch dwall_2_1_2
-x 3
-y 25
-end
-arch flagstone
-x 4
-end
-arch dwall_2_1_2
-x 4
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 3
+y 25
+end
+arch dwall_2_1_2
+x 3
+y 25
+end
+arch flagstone
+x 4
+end
+arch dwall_2_1_2
+x 4
+end
+arch flagstone
 x 4
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 4
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -828,27 +828,27 @@ x 4
 y 4
 end
 arch flagstone
-unique 1
 x 4
 y 5
+unique 1
 end
 arch dungeon_magic
 x 4
 y 5
 end
 arch flagstone
-unique 1
 x 4
 y 6
+unique 1
 end
 arch dungeon_magic
 x 4
 y 6
 end
 arch flagstone
-unique 1
 x 4
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 4
@@ -859,19 +859,19 @@ x 4
 y 7
 end
 arch flagstone
-unique 1
 x 4
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 4
@@ -882,14 +882,14 @@ x 4
 y 10
 end
 arch flagstone
-unique 1
 x 4
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 4
 y 12
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -900,99 +900,99 @@ x 4
 y 12
 end
 arch flagstone
+x 4
+y 13
 unique 1
+end
+arch dungeon_magic
 x 4
 y 13
 end
-arch dungeon_magic
-x 4
-y 13
-end
 arch flagstone
-unique 1
 x 4
 y 14
+unique 1
 end
 arch dungeon_magic
 x 4
 y 14
 end
 arch flagstone
+x 4
+y 15
 unique 1
+end
+arch dungeon_magic
 x 4
 y 15
 end
-arch dungeon_magic
-x 4
-y 15
-end
 arch flagstone
-unique 1
 x 4
 y 16
+unique 1
 end
 arch dungeon_magic
 x 4
 y 16
 end
 arch flagstone
+x 4
+y 17
 unique 1
+end
+arch dungeon_magic
 x 4
 y 17
 end
-arch dungeon_magic
-x 4
-y 17
-end
 arch flagstone
-unique 1
 x 4
 y 18
+unique 1
 end
 arch dungeon_magic
 x 4
 y 18
 end
 arch flagstone
+x 4
+y 19
 unique 1
+end
+arch dungeon_magic
 x 4
 y 19
 end
-arch dungeon_magic
-x 4
-y 19
-end
 arch flagstone
-unique 1
 x 4
 y 20
+unique 1
 end
 arch dungeon_magic
 x 4
 y 20
 end
 arch flagstone
-unique 1
 x 4
 y 21
+unique 1
 end
 arch dungeon_magic
 x 4
 y 21
 end
 arch flagstone
-unique 1
 x 4
 y 22
+unique 1
 end
 arch dungeon_magic
 x 4
 y 22
 end
 arch flagstone
-unique 1
 x 4
 y 23
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -1003,43 +1003,43 @@ x 4
 y 23
 end
 arch flagstone
-unique 1
 x 4
 y 24
-end
-arch flagstone
-x 4
-y 25
-end
-arch dwall_2_1_2
-x 4
-y 25
-end
-arch flagstone
-x 5
-end
-arch dwall_2_1_2
-x 5
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 4
+y 25
+end
+arch dwall_2_1_2
+x 4
+y 25
+end
+arch flagstone
+x 5
+end
+arch dwall_2_1_2
+x 5
+end
+arch flagstone
 x 5
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 4
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -1050,27 +1050,27 @@ x 5
 y 4
 end
 arch flagstone
-unique 1
 x 5
 y 5
+unique 1
 end
 arch dungeon_magic
 x 5
 y 5
 end
 arch flagstone
-unique 1
 x 5
 y 6
+unique 1
 end
 arch dungeon_magic
 x 5
 y 6
 end
 arch flagstone
-unique 1
 x 5
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 5
@@ -1081,19 +1081,19 @@ x 5
 y 7
 end
 arch flagstone
-unique 1
 x 5
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 5
@@ -1104,14 +1104,14 @@ x 5
 y 10
 end
 arch flagstone
-unique 1
 x 5
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 5
 y 12
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -1122,9 +1122,9 @@ x 5
 y 12
 end
 arch flagstone
-unique 1
 x 5
 y 13
+unique 1
 end
 arch swall_2_1_1
 x 5
@@ -1139,22 +1139,22 @@ x 5
 y 13
 end
 arch flagstone
+x 5
+y 14
 unique 1
+end
+arch swall_2_1_1
 x 5
 y 14
 end
-arch swall_2_1_1
-x 5
-y 14
-end
 arch dungeon_magic
 x 5
 y 14
 end
 arch flagstone
-unique 1
 x 5
 y 15
+unique 1
 end
 arch swall_2_1_1
 x 5
@@ -1165,9 +1165,9 @@ x 5
 y 15
 end
 arch flagstone
-unique 1
 x 5
 y 16
+unique 1
 end
 arch swall_2_1_1
 x 5
@@ -1178,9 +1178,9 @@ x 5
 y 16
 end
 arch flagstone
-unique 1
 x 5
 y 17
+unique 1
 end
 arch swall_2_1_1
 x 5
@@ -1191,18 +1191,18 @@ x 5
 y 17
 end
 arch flagstone
+x 5
+y 18
 unique 1
+end
+arch swall_2_1_1
 x 5
 y 18
 end
-arch swall_2_1_1
-x 5
-y 18
-end
 arch flagstone
-unique 1
 x 5
 y 19
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -1217,9 +1217,9 @@ x 5
 y 19
 end
 arch flagstone
-unique 1
 x 5
 y 20
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -1230,27 +1230,27 @@ x 5
 y 20
 end
 arch flagstone
-unique 1
 x 5
 y 21
+unique 1
 end
 arch dungeon_magic
 x 5
 y 21
 end
 arch flagstone
-unique 1
 x 5
 y 22
+unique 1
 end
 arch dungeon_magic
 x 5
 y 22
 end
 arch flagstone
-unique 1
 x 5
 y 23
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -1261,43 +1261,43 @@ x 5
 y 23
 end
 arch flagstone
-unique 1
 x 5
 y 24
-end
-arch flagstone
-x 5
-y 25
-end
-arch dwall_2_1_2
-x 5
-y 25
-end
-arch flagstone
-x 6
-end
-arch dwall_2_1_2
-x 6
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 5
+y 25
+end
+arch dwall_2_1_2
+x 5
+y 25
+end
+arch flagstone
+x 6
+end
+arch dwall_2_1_2
+x 6
+end
+arch flagstone
 x 6
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 4
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -1308,27 +1308,27 @@ x 6
 y 4
 end
 arch flagstone
-unique 1
 x 6
 y 5
+unique 1
 end
 arch dungeon_magic
 x 6
 y 5
 end
 arch flagstone
-unique 1
 x 6
 y 6
+unique 1
 end
 arch dungeon_magic
 x 6
 y 6
 end
 arch flagstone
-unique 1
 x 6
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 6
@@ -1339,19 +1339,19 @@ x 6
 y 7
 end
 arch flagstone
-unique 1
 x 6
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 6
@@ -1362,14 +1362,14 @@ x 6
 y 10
 end
 arch flagstone
-unique 1
 x 6
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 6
@@ -1440,9 +1440,9 @@ x 6
 y 19
 end
 arch flagstone
-unique 1
 x 6
 y 20
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -1457,27 +1457,27 @@ x 6
 y 20
 end
 arch flagstone
-unique 1
 x 6
 y 21
+unique 1
 end
 arch dungeon_magic
 x 6
 y 21
 end
 arch flagstone
-unique 1
 x 6
 y 22
+unique 1
 end
 arch dungeon_magic
 x 6
 y 22
 end
 arch flagstone
-unique 1
 x 6
 y 23
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -1488,43 +1488,43 @@ x 6
 y 23
 end
 arch flagstone
-unique 1
 x 6
 y 24
-end
-arch flagstone
-x 6
-y 25
-end
-arch dwall_2_1_2
-x 6
-y 25
-end
-arch flagstone
-x 7
-end
-arch dwall_2_1_2
-x 7
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 6
+y 25
+end
+arch dwall_2_1_2
+x 6
+y 25
+end
+arch flagstone
+x 7
+end
+arch dwall_2_1_2
+x 7
+end
+arch flagstone
 x 7
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 4
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1535,27 +1535,27 @@ x 7
 y 4
 end
 arch flagstone
-unique 1
 x 7
 y 5
+unique 1
 end
 arch dungeon_magic
 x 7
 y 5
 end
 arch flagstone
-unique 1
 x 7
 y 6
+unique 1
 end
 arch dungeon_magic
 x 7
 y 6
 end
 arch flagstone
-unique 1
 x 7
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 7
@@ -1566,19 +1566,19 @@ x 7
 y 7
 end
 arch flagstone
-unique 1
 x 7
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 7
@@ -1589,14 +1589,14 @@ x 7
 y 10
 end
 arch flagstone
-unique 1
 x 7
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 7
@@ -1615,10 +1615,10 @@ x 7
 y 13
 end
 arch creator
-connected 6
-lifesave 1
 x 7
 y 14
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 7
@@ -1629,10 +1629,10 @@ x 7
 y 14
 end
 arch creator
-connected 6
-lifesave 1
 x 7
 y 15
+connected 6
+lifesave 1
 end
 arch marble
 x 7
@@ -1643,10 +1643,10 @@ x 7
 y 15
 end
 arch creator
-connected 6
-lifesave 1
 x 7
 y 16
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 7
@@ -1657,10 +1657,10 @@ x 7
 y 16
 end
 arch creator
-connected 6
-lifesave 1
 x 7
 y 17
+connected 6
+lifesave 1
 end
 arch marble
 x 7
@@ -1671,10 +1671,10 @@ x 7
 y 17
 end
 arch creator
-connected 6
-lifesave 1
 x 7
 y 18
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 7
@@ -1693,9 +1693,9 @@ x 7
 y 19
 end
 arch flagstone
-unique 1
 x 7
 y 20
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1706,27 +1706,27 @@ x 7
 y 20
 end
 arch flagstone
-unique 1
 x 7
 y 21
+unique 1
 end
 arch dungeon_magic
 x 7
 y 21
 end
 arch flagstone
-unique 1
 x 7
 y 22
+unique 1
 end
 arch dungeon_magic
 x 7
 y 22
 end
 arch flagstone
-unique 1
 x 7
 y 23
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1737,43 +1737,43 @@ x 7
 y 23
 end
 arch flagstone
-unique 1
 x 7
 y 24
-end
-arch flagstone
-x 7
-y 25
-end
-arch dwall_2_1_2
-x 7
-y 25
-end
-arch flagstone
-x 8
-end
-arch dwall_2_1_2
-x 8
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 7
+y 25
+end
+arch dwall_2_1_2
+x 7
+y 25
+end
+arch flagstone
+x 8
+end
+arch dwall_2_1_2
+x 8
+end
+arch flagstone
 x 8
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 4
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1784,27 +1784,27 @@ x 8
 y 4
 end
 arch flagstone
-unique 1
 x 8
 y 5
+unique 1
 end
 arch dungeon_magic
 x 8
 y 5
 end
 arch flagstone
-unique 1
 x 8
 y 6
+unique 1
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch flagstone
-unique 1
 x 8
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 8
@@ -1815,19 +1815,19 @@ x 8
 y 7
 end
 arch flagstone
-unique 1
 x 8
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 8
@@ -1843,22 +1843,22 @@ y 11
 end
 arch trigger
 name Load
-arch event_apply
-title Python
-slaying /python/guilds/guildjoin.py
-name GUILD_TEMPLATE
-end
 msg
 Pull to add member to guild.
 endmsg
-connected 6
 x 8
 y 11
+connected 6
+arch event_apply
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guildjoin.py
+end
 end
 arch flagstone
-unique 1
 x 8
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 8
@@ -1877,10 +1877,10 @@ x 8
 y 13
 end
 arch creator
+x 8
+y 14
 connected 6
 lifesave 1
-x 8
-y 14
 end
 arch marble
 x 8
@@ -1899,9 +1899,9 @@ x 8
 y 15
 end
 arch spikes_hidden
-connected 5
 x 8
 y 15
+connected 5
 end
 arch marble
 x 8
@@ -1912,9 +1912,9 @@ x 8
 y 16
 end
 arch spikes_hidden
-connected 5
 x 8
 y 16
+connected 5
 end
 arch blackmarble
 x 8
@@ -1925,15 +1925,15 @@ x 8
 y 17
 end
 arch spikes_hidden
-connected 5
 x 8
 y 17
+connected 5
 end
 arch creator
-connected 6
-lifesave 1
 x 8
 y 18
+connected 6
+lifesave 1
 end
 arch marble
 x 8
@@ -1952,9 +1952,9 @@ x 8
 y 19
 end
 arch flagstone
-unique 1
 x 8
 y 20
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1965,27 +1965,27 @@ x 8
 y 20
 end
 arch flagstone
-unique 1
 x 8
 y 21
+unique 1
 end
 arch dungeon_magic
 x 8
 y 21
 end
 arch flagstone
-unique 1
 x 8
 y 22
+unique 1
 end
 arch dungeon_magic
 x 8
 y 22
 end
 arch flagstone
-unique 1
 x 8
 y 23
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1996,43 +1996,43 @@ x 8
 y 23
 end
 arch flagstone
-unique 1
 x 8
 y 24
-end
-arch flagstone
-x 8
-y 25
-end
-arch dwall_2_1_2
-x 8
-y 25
-end
-arch flagstone
-x 9
-end
-arch dwall_2_1_2
-x 9
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 8
+y 25
+end
+arch dwall_2_1_2
+x 8
+y 25
+end
+arch flagstone
+x 9
+end
+arch dwall_2_1_2
+x 9
+end
+arch flagstone
 x 9
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 4
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -2043,27 +2043,27 @@ x 9
 y 4
 end
 arch flagstone
-unique 1
 x 9
 y 5
+unique 1
 end
 arch dungeon_magic
 x 9
 y 5
 end
 arch flagstone
-unique 1
 x 9
 y 6
+unique 1
 end
 arch dungeon_magic
 x 9
 y 6
 end
 arch flagstone
-unique 1
 x 9
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 9
@@ -2074,19 +2074,19 @@ x 9
 y 7
 end
 arch flagstone
-unique 1
 x 9
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 9
@@ -2101,9 +2101,9 @@ x 9
 y 11
 end
 arch flagstone
-unique 1
 x 9
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 9
@@ -2122,10 +2122,10 @@ x 9
 y 13
 end
 arch creator
-connected 6
-lifesave 1
 x 9
 y 14
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 9
@@ -2144,9 +2144,9 @@ x 9
 y 15
 end
 arch spikes_hidden
-connected 5
 x 9
 y 15
+connected 5
 end
 arch marble
 x 9
@@ -2154,10 +2154,10 @@ y 16
 end
 arch chair_3.2
 name Seat of Peril
-material 0
-no_pick 1
 x 9
 y 16
+material 0
+no_pick 1
 end
 arch dungeon_magic
 x 9
@@ -2172,15 +2172,15 @@ x 9
 y 17
 end
 arch spikes_hidden
-connected 5
 x 9
 y 17
+connected 5
 end
 arch creator
-connected 6
-lifesave 1
 x 9
 y 18
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 9
@@ -2199,9 +2199,9 @@ x 9
 y 19
 end
 arch flagstone
-unique 1
 x 9
 y 20
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -2212,27 +2212,27 @@ x 9
 y 20
 end
 arch flagstone
-unique 1
 x 9
 y 21
+unique 1
 end
 arch dungeon_magic
 x 9
 y 21
 end
 arch flagstone
-unique 1
 x 9
 y 22
+unique 1
 end
 arch dungeon_magic
 x 9
 y 22
 end
 arch flagstone
-unique 1
 x 9
 y 23
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -2243,43 +2243,43 @@ x 9
 y 23
 end
 arch flagstone
-unique 1
 x 9
 y 24
-end
-arch flagstone
-x 9
-y 25
-end
-arch dwall_2_1_2
-x 9
-y 25
-end
-arch flagstone
-x 10
-end
-arch dwall_2_1_2
-x 10
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 9
+y 25
+end
+arch dwall_2_1_2
+x 9
+y 25
+end
+arch flagstone
+x 10
+end
+arch dwall_2_1_2
+x 10
+end
+arch flagstone
 x 10
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 4
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2290,27 +2290,27 @@ x 10
 y 4
 end
 arch flagstone
-unique 1
 x 10
 y 5
+unique 1
 end
 arch dungeon_magic
 x 10
 y 5
 end
 arch flagstone
-unique 1
 x 10
 y 6
+unique 1
 end
 arch dungeon_magic
 x 10
 y 6
 end
 arch flagstone
-unique 1
 x 10
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 10
@@ -2321,19 +2321,19 @@ x 10
 y 7
 end
 arch flagstone
-unique 1
 x 10
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 10
@@ -2344,21 +2344,21 @@ x 10
 y 10
 end
 arch flagstone
-unique 1
 x 10
 y 11
+unique 1
 end
 arch button_handle
 name Lock
+x 10
+y 11
 connected 5
 activate_on_release 0
-x 10
-y 11
 end
 arch flagstone
-unique 1
 x 10
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 10
@@ -2377,10 +2377,10 @@ x 10
 y 13
 end
 arch creator
+x 10
+y 14
 connected 6
 lifesave 1
-x 10
-y 14
 end
 arch marble
 x 10
@@ -2399,9 +2399,9 @@ x 10
 y 15
 end
 arch spikes_hidden
-connected 5
 x 10
 y 15
+connected 5
 end
 arch marble
 x 10
@@ -2412,9 +2412,9 @@ x 10
 y 16
 end
 arch spikes_hidden
-connected 5
 x 10
 y 16
+connected 5
 end
 arch blackmarble
 x 10
@@ -2425,15 +2425,15 @@ x 10
 y 17
 end
 arch spikes_hidden
-connected 5
 x 10
 y 17
+connected 5
 end
 arch creator
-connected 6
-lifesave 1
 x 10
 y 18
+connected 6
+lifesave 1
 end
 arch marble
 x 10
@@ -2452,9 +2452,9 @@ x 10
 y 19
 end
 arch flagstone
-unique 1
 x 10
 y 20
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2465,27 +2465,27 @@ x 10
 y 20
 end
 arch flagstone
-unique 1
 x 10
 y 21
+unique 1
 end
 arch dungeon_magic
 x 10
 y 21
 end
 arch flagstone
-unique 1
 x 10
 y 22
+unique 1
 end
 arch dungeon_magic
 x 10
 y 22
 end
 arch flagstone
-unique 1
 x 10
 y 23
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2496,43 +2496,43 @@ x 10
 y 23
 end
 arch flagstone
-unique 1
 x 10
 y 24
-end
-arch flagstone
-x 10
-y 25
-end
-arch dwall_2_1_2
-x 10
-y 25
-end
-arch flagstone
-x 11
-end
-arch dwall_2_1_2
-x 11
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 10
+y 25
+end
+arch dwall_2_1_2
+x 10
+y 25
+end
+arch flagstone
+x 11
+end
+arch dwall_2_1_2
+x 11
+end
+arch flagstone
 x 11
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 4
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -2543,27 +2543,27 @@ x 11
 y 4
 end
 arch flagstone
-unique 1
 x 11
 y 5
+unique 1
 end
 arch dungeon_magic
 x 11
 y 5
 end
 arch flagstone
-unique 1
 x 11
 y 6
+unique 1
 end
 arch dungeon_magic
 x 11
 y 6
 end
 arch flagstone
-unique 1
 x 11
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 11
@@ -2574,19 +2574,19 @@ x 11
 y 7
 end
 arch flagstone
-unique 1
 x 11
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 10
+unique 1
 end
 arch dwall_2_1_2
 x 11
@@ -2597,14 +2597,14 @@ x 11
 y 10
 end
 arch flagstone
-unique 1
 x 11
 y 11
+unique 1
 end
 arch flagstone
-unique 1
 x 11
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 11
@@ -2623,10 +2623,10 @@ x 11
 y 13
 end
 arch creator
-connected 6
-lifesave 1
 x 11
 y 14
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 11
@@ -2637,10 +2637,10 @@ x 11
 y 14
 end
 arch creator
-connected 6
-lifesave 1
 x 11
 y 15
+connected 6
+lifesave 1
 end
 arch marble
 x 11
@@ -2651,10 +2651,10 @@ x 11
 y 15
 end
 arch creator
-connected 6
-lifesave 1
 x 11
 y 16
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 11
@@ -2665,10 +2665,10 @@ x 11
 y 16
 end
 arch creator
-connected 6
-lifesave 1
 x 11
 y 17
+connected 6
+lifesave 1
 end
 arch marble
 x 11
@@ -2679,10 +2679,10 @@ x 11
 y 17
 end
 arch creator
-connected 6
-lifesave 1
 x 11
 y 18
+connected 6
+lifesave 1
 end
 arch blackmarble
 x 11
@@ -2701,9 +2701,9 @@ x 11
 y 19
 end
 arch flagstone
-unique 1
 x 11
 y 20
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -2714,27 +2714,27 @@ x 11
 y 20
 end
 arch flagstone
-unique 1
 x 11
 y 21
+unique 1
 end
 arch dungeon_magic
 x 11
 y 21
 end
 arch flagstone
-unique 1
 x 11
 y 22
+unique 1
 end
 arch dungeon_magic
 x 11
 y 22
 end
 arch flagstone
-unique 1
 x 11
 y 23
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -2745,43 +2745,43 @@ x 11
 y 23
 end
 arch flagstone
-unique 1
 x 11
 y 24
-end
-arch flagstone
-x 11
-y 25
-end
-arch dwall_2_1_2
-x 11
-y 25
-end
-arch flagstone
-x 12
-end
-arch dwall_2_1_2
-x 12
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 11
+y 25
+end
+arch dwall_2_1_2
+x 11
+y 25
+end
+arch flagstone
+x 12
+end
+arch dwall_2_1_2
+x 12
+end
+arch flagstone
 x 12
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 3
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 4
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -2792,27 +2792,27 @@ x 12
 y 4
 end
 arch flagstone
-unique 1
 x 12
 y 5
+unique 1
 end
 arch dungeon_magic
 x 12
 y 5
 end
 arch flagstone
-unique 1
 x 12
 y 6
+unique 1
 end
 arch dungeon_magic
 x 12
 y 6
 end
 arch flagstone
-unique 1
 x 12
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 12
@@ -2823,19 +2823,19 @@ x 12
 y 7
 end
 arch flagstone
-unique 1
 x 12
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 10
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -2850,9 +2850,9 @@ x 12
 y 10
 end
 arch flagstone
-unique 1
 x 12
 y 11
+unique 1
 end
 arch teleporter
 slaying guild_HQ
@@ -2862,9 +2862,9 @@ x 12
 y 11
 end
 arch flagstone
-unique 1
 x 12
 y 12
+unique 1
 end
 arch swall_2_1_2
 x 12
@@ -2942,9 +2942,9 @@ x 12
 y 19
 end
 arch flagstone
-unique 1
 x 12
 y 20
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -2959,27 +2959,27 @@ x 12
 y 20
 end
 arch flagstone
-unique 1
 x 12
 y 21
+unique 1
 end
 arch dungeon_magic
 x 12
 y 21
 end
 arch flagstone
-unique 1
 x 12
 y 22
+unique 1
 end
 arch dungeon_magic
 x 12
 y 22
 end
 arch flagstone
-unique 1
 x 12
 y 23
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -2990,38 +2990,38 @@ x 12
 y 23
 end
 arch flagstone
-unique 1
 x 12
 y 24
-end
-arch flagstone
-x 12
-y 25
-end
-arch dwall_2_1_2
-x 12
-y 25
-end
-arch flagstone
-x 13
-end
-arch dwall_2_1_2
-x 13
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 12
+y 25
+end
+arch dwall_2_1_2
+x 12
+y 25
+end
+arch flagstone
+x 13
+end
+arch dwall_2_1_2
+x 13
+end
+arch flagstone
 x 13
 y 1
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 2
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 3
+unique 1
 end
 arch teleporter
 slaying guild_HQ
@@ -3031,9 +3031,9 @@ x 13
 y 3
 end
 arch flagstone
-unique 1
 x 13
 y 4
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3052,27 +3052,27 @@ x 13
 y 4
 end
 arch flagstone
-unique 1
 x 13
 y 5
+unique 1
 end
 arch dungeon_magic
 x 13
 y 5
 end
 arch flagstone
-unique 1
 x 13
 y 6
+unique 1
 end
 arch dungeon_magic
 x 13
 y 6
 end
 arch flagstone
-unique 1
 x 13
 y 7
+unique 1
 end
 arch swall_1_3
 x 13
@@ -3087,19 +3087,19 @@ x 13
 y 7
 end
 arch flagstone
-unique 1
 x 13
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 10
+unique 1
 end
 arch dwall_3_3
 x 13
@@ -3110,9 +3110,9 @@ x 13
 y 10
 end
 arch flagstone
-unique 1
 x 13
 y 11
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3123,9 +3123,9 @@ x 13
 y 11
 end
 arch flagstone
-unique 1
 x 13
 y 12
+unique 1
 end
 arch dwall_3_4
 x 13
@@ -3136,9 +3136,9 @@ x 13
 y 12
 end
 arch flagstone
-unique 1
 x 13
 y 13
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3153,22 +3153,22 @@ x 13
 y 13
 end
 arch flagstone
+x 13
+y 14
 unique 1
+end
+arch swall_2_1_1
 x 13
 y 14
 end
-arch swall_2_1_1
-x 13
-y 14
-end
 arch dungeon_magic
 x 13
 y 14
 end
 arch flagstone
-unique 1
 x 13
 y 15
+unique 1
 end
 arch swall_2_1_1
 x 13
@@ -3179,9 +3179,9 @@ x 13
 y 15
 end
 arch flagstone
-unique 1
 x 13
 y 16
+unique 1
 end
 arch swall_2_1_1
 x 13
@@ -3192,9 +3192,9 @@ x 13
 y 16
 end
 arch flagstone
-unique 1
 x 13
 y 17
+unique 1
 end
 arch swall_2_1_1
 x 13
@@ -3205,18 +3205,18 @@ x 13
 y 17
 end
 arch flagstone
+x 13
+y 18
 unique 1
+end
+arch swall_2_1_1
 x 13
 y 18
 end
-arch swall_2_1_1
-x 13
-y 18
-end
 arch flagstone
-unique 1
 x 13
 y 19
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3231,9 +3231,9 @@ x 13
 y 19
 end
 arch flagstone
-unique 1
 x 13
 y 20
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3244,27 +3244,27 @@ x 13
 y 20
 end
 arch flagstone
-unique 1
 x 13
 y 21
+unique 1
 end
 arch dungeon_magic
 x 13
 y 21
 end
 arch flagstone
-unique 1
 x 13
 y 22
+unique 1
 end
 arch dungeon_magic
 x 13
 y 22
 end
 arch flagstone
-unique 1
 x 13
 y 23
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3275,9 +3275,9 @@ x 13
 y 23
 end
 arch flagstone
-unique 1
 x 13
 y 24
+unique 1
 end
 arch flagstone
 x 13
@@ -3306,9 +3306,9 @@ x 14
 y 1
 end
 arch flagstone
-unique 1
 x 14
 y 2
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3319,9 +3319,9 @@ x 14
 y 2
 end
 arch flagstone
-unique 1
 x 14
 y 3
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3332,9 +3332,9 @@ x 14
 y 3
 end
 arch flagstone
-unique 1
 x 14
 y 4
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3345,27 +3345,27 @@ x 14
 y 4
 end
 arch flagstone
-unique 1
 x 14
 y 5
+unique 1
 end
 arch dungeon_magic
 x 14
 y 5
 end
 arch flagstone
-unique 1
 x 14
 y 6
+unique 1
 end
 arch dungeon_magic
 x 14
 y 6
 end
 arch flagstone
-unique 1
 x 14
 y 7
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3376,9 +3376,9 @@ x 14
 y 7
 end
 arch flagstone
-unique 1
 x 14
 y 8
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3389,9 +3389,9 @@ x 14
 y 8
 end
 arch flagstone
-unique 1
 x 14
 y 9
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3402,9 +3402,9 @@ x 14
 y 9
 end
 arch flagstone
-unique 1
 x 14
 y 10
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3415,113 +3415,113 @@ x 14
 y 10
 end
 arch flagstone
-unique 1
 x 14
 y 11
+unique 1
 end
 arch flagstone
+x 14
+y 12
 unique 1
+end
+arch dungeon_magic
 x 14
 y 12
 end
-arch dungeon_magic
-x 14
-y 12
-end
 arch flagstone
-unique 1
 x 14
 y 13
+unique 1
 end
 arch dungeon_magic
 x 14
 y 13
 end
 arch flagstone
+x 14
+y 14
 unique 1
+end
+arch dungeon_magic
 x 14
 y 14
 end
-arch dungeon_magic
-x 14
-y 14
-end
 arch flagstone
-unique 1
 x 14
 y 15
+unique 1
 end
 arch dungeon_magic
 x 14
 y 15
 end
 arch flagstone
+x 14
+y 16
 unique 1
+end
+arch dungeon_magic
 x 14
 y 16
 end
-arch dungeon_magic
-x 14
-y 16
-end
 arch flagstone
-unique 1
 x 14
 y 17
+unique 1
 end
 arch dungeon_magic
 x 14
 y 17
 end
 arch flagstone
+x 14
+y 18
 unique 1
+end
+arch dungeon_magic
 x 14
 y 18
 end
-arch dungeon_magic
-x 14
-y 18
-end
 arch flagstone
-unique 1
 x 14
 y 19
+unique 1
 end
 arch dungeon_magic
 x 14
 y 19
 end
 arch flagstone
+x 14
+y 20
 unique 1
+end
+arch dungeon_magic
 x 14
 y 20
 end
-arch dungeon_magic
-x 14
-y 20
-end
 arch flagstone
-unique 1
 x 14
 y 21
+unique 1
 end
 arch dungeon_magic
 x 14
 y 21
 end
 arch flagstone
-unique 1
 x 14
 y 22
+unique 1
 end
 arch dungeon_magic
 x 14
 y 22
 end
 arch flagstone
-unique 1
 x 14
 y 23
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -3532,28 +3532,28 @@ x 14
 y 23
 end
 arch flagstone
-unique 1
 x 14
 y 24
-end
-arch flagstone
-x 14
-y 25
-end
-arch dwall_2_1_2
-x 14
-y 25
-end
-arch flagstone
-x 15
-end
-arch dwall_2_1_2
-x 15
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 14
+y 25
+end
+arch dwall_2_1_2
+x 14
+y 25
+end
+arch flagstone
+x 15
+end
+arch dwall_2_1_2
+x 15
+end
+arch flagstone
 x 15
 y 1
+unique 1
 end
 arch dungeon_magic
 x 15
@@ -3567,198 +3567,198 @@ x 15
 y 1
 end
 arch flagstone
+x 15
+y 2
 unique 1
+end
+arch dungeon_magic
 x 15
 y 2
 end
-arch dungeon_magic
-x 15
-y 2
-end
 arch flagstone
-unique 1
 x 15
 y 3
+unique 1
 end
 arch dungeon_magic
 x 15
 y 3
 end
 arch flagstone
+x 15
+y 4
 unique 1
+end
+arch dungeon_magic
 x 15
 y 4
 end
-arch dungeon_magic
-x 15
-y 4
-end
 arch flagstone
-unique 1
 x 15
 y 5
+unique 1
 end
 arch dungeon_magic
 x 15
 y 5
 end
 arch flagstone
+x 15
+y 6
 unique 1
+end
+arch dungeon_magic
 x 15
 y 6
 end
-arch dungeon_magic
-x 15
-y 6
-end
 arch flagstone
-unique 1
 x 15
 y 7
+unique 1
 end
 arch dungeon_magic
 x 15
 y 7
 end
 arch flagstone
+x 15
+y 8
 unique 1
+end
+arch dungeon_magic
 x 15
 y 8
 end
-arch dungeon_magic
-x 15
-y 8
-end
 arch flagstone
-unique 1
 x 15
 y 9
+unique 1
 end
 arch dungeon_magic
 x 15
 y 9
 end
 arch flagstone
+x 15
+y 10
 unique 1
+end
+arch dungeon_magic
 x 15
 y 10
 end
-arch dungeon_magic
-x 15
-y 10
-end
 arch flagstone
-unique 1
 x 15
 y 11
+unique 1
 end
 arch dungeon_magic
 x 15
 y 11
 end
 arch flagstone
+x 15
+y 12
 unique 1
+end
+arch dungeon_magic
 x 15
 y 12
 end
-arch dungeon_magic
-x 15
-y 12
-end
 arch flagstone
-unique 1
 x 15
 y 13
+unique 1
 end
 arch dungeon_magic
 x 15
 y 13
 end
 arch flagstone
+x 15
+y 14
 unique 1
+end
+arch dungeon_magic
 x 15
 y 14
 end
-arch dungeon_magic
-x 15
-y 14
-end
 arch flagstone
-unique 1
 x 15
 y 15
+unique 1
 end
 arch dungeon_magic
 x 15
 y 15
 end
 arch flagstone
+x 15
+y 16
 unique 1
+end
+arch dungeon_magic
 x 15
 y 16
 end
-arch dungeon_magic
-x 15
-y 16
-end
 arch flagstone
-unique 1
 x 15
 y 17
+unique 1
 end
 arch dungeon_magic
 x 15
 y 17
 end
 arch flagstone
+x 15
+y 18
 unique 1
+end
+arch dungeon_magic
 x 15
 y 18
 end
-arch dungeon_magic
-x 15
-y 18
-end
 arch flagstone
-unique 1
 x 15
 y 19
+unique 1
 end
 arch dungeon_magic
 x 15
 y 19
 end
 arch flagstone
+x 15
+y 20
 unique 1
+end
+arch dungeon_magic
 x 15
 y 20
 end
-arch dungeon_magic
-x 15
-y 20
-end
 arch flagstone
-unique 1
 x 15
 y 21
+unique 1
 end
 arch dungeon_magic
 x 15
 y 21
 end
 arch flagstone
-unique 1
 x 15
 y 22
+unique 1
 end
 arch dungeon_magic
 x 15
 y 22
 end
 arch flagstone
-unique 1
 x 15
 y 23
+unique 1
 end
 arch dungeon_magic
 x 15
@@ -3769,9 +3769,9 @@ x 15
 y 23
 end
 arch flagstone
-unique 1
 x 15
 y 24
+unique 1
 end
 arch flagstone
 x 15
@@ -3788,108 +3788,108 @@ arch dwall_2_1_2
 x 16
 end
 arch flagstone
+x 16
+y 1
 unique 1
+end
+arch dungeon_magic
 x 16
 y 1
 end
-arch dungeon_magic
-x 16
-y 1
-end
 arch flagstone
-unique 1
 x 16
 y 2
+unique 1
 end
 arch dungeon_magic
 x 16
 y 2
 end
 arch flagstone
+x 16
+y 3
 unique 1
+end
+arch dungeon_magic
 x 16
 y 3
 end
-arch dungeon_magic
-x 16
-y 3
-end
 arch flagstone
-unique 1
 x 16
 y 4
+unique 1
 end
 arch dungeon_magic
 x 16
 y 4
 end
 arch flagstone
+x 16
+y 5
 unique 1
+end
+arch dungeon_magic
 x 16
 y 5
 end
-arch dungeon_magic
-x 16
-y 5
-end
 arch flagstone
-unique 1
 x 16
 y 6
+unique 1
 end
 arch dungeon_magic
 x 16
 y 6
 end
 arch flagstone
+x 16
+y 7
 unique 1
+end
+arch dungeon_magic
 x 16
 y 7
 end
-arch dungeon_magic
-x 16
-y 7
-end
 arch flagstone
-unique 1
 x 16
 y 8
+unique 1
 end
 arch dungeon_magic
 x 16
 y 8
 end
 arch flagstone
+x 16
+y 9
 unique 1
+end
+arch dungeon_magic
 x 16
 y 9
 end
-arch dungeon_magic
-x 16
-y 9
-end
 arch flagstone
-unique 1
 x 16
 y 10
+unique 1
 end
 arch dungeon_magic
 x 16
 y 10
 end
 arch flagstone
-unique 1
 x 16
 y 11
+unique 1
 end
 arch dungeon_magic
 x 16
 y 11
 end
 arch flagstone
-unique 1
 x 16
 y 12
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -3900,9 +3900,9 @@ x 16
 y 12
 end
 arch flagstone
-unique 1
 x 16
 y 13
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -3917,87 +3917,87 @@ x 16
 y 13
 end
 arch flagstone
+x 16
+y 14
 unique 1
+end
+arch dungeon_magic
 x 16
 y 14
 end
-arch dungeon_magic
-x 16
-y 14
-end
 arch swall_2_1_1
 x 16
 y 14
 end
 arch flagstone
+x 16
+y 15
 unique 1
+end
+arch dungeon_magic
 x 16
 y 15
 end
-arch dungeon_magic
-x 16
-y 15
-end
 arch swall_2_1_1
 x 16
 y 15
 end
 arch flagstone
+x 16
+y 16
 unique 1
+end
+arch dungeon_magic
 x 16
 y 16
 end
-arch dungeon_magic
-x 16
-y 16
-end
 arch swall_2_1_1
 x 16
 y 16
 end
 arch flagstone
+x 16
+y 17
 unique 1
+end
+arch dungeon_magic
 x 16
 y 17
 end
-arch dungeon_magic
-x 16
-y 17
-end
 arch swall_2_1_1
 x 16
 y 17
 end
 arch flagstone
+x 16
+y 18
 unique 1
+end
+arch dungeon_magic
 x 16
 y 18
 end
-arch dungeon_magic
-x 16
-y 18
-end
 arch swall_2_1_1
 x 16
 y 18
 end
 arch flagstone
+x 16
+y 19
 unique 1
+end
+arch dungeon_magic
 x 16
 y 19
 end
-arch dungeon_magic
-x 16
-y 19
-end
 arch swall_2_1_1
 x 16
 y 19
 end
 arch flagstone
-unique 1
 x 16
 y 20
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -4008,9 +4008,9 @@ x 16
 y 20
 end
 arch flagstone
-unique 1
 x 16
 y 21
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -4021,9 +4021,9 @@ x 16
 y 21
 end
 arch flagstone
-unique 1
 x 16
 y 22
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -4034,9 +4034,9 @@ x 16
 y 22
 end
 arch flagstone
-unique 1
 x 16
 y 23
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -4051,28 +4051,28 @@ x 16
 y 23
 end
 arch flagstone
-unique 1
 x 16
 y 24
-end
-arch flagstone
-x 16
-y 25
-end
-arch dwall_2_1_2
-x 16
-y 25
-end
-arch flagstone
-x 17
-end
-arch dwall_2_1_2
-x 17
-end
-arch flagstone
 unique 1
+end
+arch flagstone
+x 16
+y 25
+end
+arch dwall_2_1_2
+x 16
+y 25
+end
+arch flagstone
+x 17
+end
+arch dwall_2_1_2
+x 17
+end
+arch flagstone
 x 17
 y 1
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -4083,99 +4083,99 @@ x 17
 y 1
 end
 arch flagstone
+x 17
+y 2
 unique 1
+end
+arch dungeon_magic
 x 17
 y 2
 end
-arch dungeon_magic
-x 17
-y 2
-end
 arch flagstone
-unique 1
 x 17
 y 3
+unique 1
 end
 arch dungeon_magic
 x 17
 y 3
 end
 arch flagstone
+x 17
+y 4
 unique 1
+end
+arch dungeon_magic
 x 17
 y 4
 end
-arch dungeon_magic
-x 17
-y 4
-end
 arch flagstone
-unique 1
 x 17
 y 5
+unique 1
 end
 arch dungeon_magic
 x 17
 y 5
 end
 arch flagstone
+x 17
+y 6
 unique 1
+end
+arch dungeon_magic
 x 17
 y 6
 end
-arch dungeon_magic
-x 17
-y 6
-end
 arch flagstone
-unique 1
 x 17
 y 7
+unique 1
 end
 arch dungeon_magic
 x 17
 y 7
 end
 arch flagstone
+x 17
+y 8
 unique 1
+end
+arch dungeon_magic
 x 17
 y 8
 end
-arch dungeon_magic
-x 17
-y 8
-end
 arch flagstone
-unique 1
 x 17
 y 9
+unique 1
 end
 arch dungeon_magic
 x 17
 y 9
 end
 arch flagstone
-unique 1
 x 17
 y 10
+unique 1
 end
 arch dungeon_magic
 x 17
 y 10
 end
 arch flagstone
-unique 1
 x 17
 y 11
+unique 1
 end
 arch dungeon_magic
 x 17
 y 11
 end
 arch flagstone
-unique 1
 x 17
 y 12
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -4186,64 +4186,64 @@ x 17
 y 12
 end
 arch flagstone
-unique 1
 x 17
 y 13
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 14
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 15
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 16
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 17
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 18
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 19
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 20
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 21
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 22
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 23
+unique 1
 end
 arch flagstone
-unique 1
 x 17
 y 24
+unique 1
 end
 arch flagstone
 x 17
