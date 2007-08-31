@@ -1,5 +1,5 @@
 arch map
-name Tower of Zoon, Level 1
+name Tower of Zoon
 difficulty 1
 region brest
 width 40
@@ -2007,11 +2007,20 @@ arch woodfloor
 x 3
 y 72
 end
+arch giant
+name Thepaut
+x 3
+y 72
+end
 arch woodfloor
 x 3
 y 73
 end
 arch woodfloor
+x 3
+y 74
+end
+arch giant
 x 3
 y 74
 end
@@ -2402,6 +2411,11 @@ arch woodfloor
 x 4
 y 50
 end
+arch big_wiz
+name Georges  Louis
+x 4
+y 50
+end
 arch woodfloor
 x 4
 y 51
@@ -2568,6 +2582,11 @@ x 4
 y 75
 end
 arch woodfloor
+x 4
+y 76
+end
+arch giant
+name Ouvradou
 x 4
 y 76
 end
@@ -2976,6 +2995,10 @@ x 5
 y 59
 end
 arch woodfloor
+x 5
+y 60
+end
+arch troll
 x 5
 y 60
 end
@@ -3551,6 +3574,10 @@ arch woodfloor
 x 6
 y 72
 end
+arch giant
+x 6
+y 72
+end
 arch woodfloor
 x 6
 y 73
@@ -3975,6 +4002,10 @@ x 7
 y 63
 end
 arch woodfloor
+x 7
+y 64
+end
+arch dragon
 x 7
 y 64
 end
@@ -4412,6 +4443,10 @@ arch woodfloor
 x 8
 y 60
 end
+arch troll
+x 8
+y 60
+end
 arch woodfloor
 x 8
 y 61
@@ -4501,6 +4536,10 @@ x 8
 y 76
 end
 arch woodfloor
+x 8
+y 77
+end
+arch dragon
 x 8
 y 77
 end
@@ -4930,7 +4969,15 @@ arch woodfloor
 x 9
 y 75
 end
+arch dragon
+x 9
+y 75
+end
 arch woodfloor
+x 9
+y 76
+end
+arch dragon
 x 9
 y 76
 end
@@ -5351,6 +5398,10 @@ x 10
 y 64
 end
 arch woodfloor
+x 10
+y 65
+end
+arch dragon
 x 10
 y 65
 end
@@ -5845,6 +5896,10 @@ x 11
 y 73
 end
 arch woodfloor
+x 11
+y 74
+end
+arch dragon
 x 11
 y 74
 end
@@ -6487,6 +6542,11 @@ x 13
 y 29
 end
 arch woodfloor
+x 13
+y 30
+end
+arch titan
+name Rannou
 x 13
 y 30
 end
@@ -10200,11 +10260,19 @@ arch woodfloor
 x 21
 y 20
 end
+arch chinese_dragon
+x 21
+y 20
+end
 arch woodfloor
 x 21
 y 21
 end
 arch woodfloor
+x 21
+y 22
+end
+arch chinese_dragon
 x 21
 y 22
 end
@@ -10785,6 +10853,10 @@ arch woodfloor
 x 22
 y 49
 end
+arch big_elec
+x 22
+y 49
+end
 arch woodfloor
 x 22
 y 50
@@ -11031,11 +11103,19 @@ arch woodfloor
 x 23
 y 20
 end
+arch chinese_dragon
+x 23
+y 20
+end
 arch woodfloor
 x 23
 y 21
 end
 arch woodfloor
+x 23
+y 22
+end
+arch chinese_dragon
 x 23
 y 22
 end
@@ -11370,6 +11450,10 @@ x 24
 y 5
 end
 arch woodfloor
+x 24
+y 6
+end
+arch baslic
 x 24
 y 6
 end
@@ -11887,11 +11971,19 @@ arch woodfloor
 x 25
 y 20
 end
+arch chinese_dragon
+x 25
+y 20
+end
 arch woodfloor
 x 25
 y 21
 end
 arch woodfloor
+x 25
+y 22
+end
+arch chinese_dragon
 x 25
 y 22
 end
@@ -12738,11 +12830,19 @@ arch woodfloor
 x 27
 y 20
 end
+arch chinese_dragon
+x 27
+y 20
+end
 arch woodfloor
 x 27
 y 21
 end
 arch woodfloor
+x 27
+y 22
+end
+arch chinese_dragon
 x 27
 y 22
 end
@@ -13550,11 +13650,19 @@ arch woodfloor
 x 29
 y 20
 end
+arch chinese_dragon
+x 29
+y 20
+end
 arch woodfloor
 x 29
 y 21
 end
 arch woodfloor
+x 29
+y 22
+end
+arch chinese_dragon
 x 29
 y 22
 end
@@ -13853,6 +13961,10 @@ x 30
 y 5
 end
 arch woodfloor
+x 30
+y 6
+end
+arch baslic
 x 30
 y 6
 end
@@ -14473,6 +14585,11 @@ arch woodfloor
 x 31
 y 52
 end
+arch gaelotroll
+name ab
+x 31
+y 52
+end
 arch woodfloor
 x 31
 y 53
@@ -15055,6 +15172,10 @@ x 33
 y 5
 end
 arch woodfloor
+x 33
+y 6
+end
+arch baslic
 x 33
 y 6
 end
@@ -15732,11 +15853,19 @@ arch woodfloor
 x 34
 y 61
 end
+arch dread
+x 34
+y 61
+end
 arch woodfloor
 x 34
 y 62
 end
 arch woodfloor
+x 34
+y 63
+end
+arch dread
 x 34
 y 63
 end
@@ -16523,11 +16652,19 @@ arch woodfloor
 x 36
 y 61
 end
+arch dread
+x 36
+y 61
+end
 arch woodfloor
 x 36
 y 62
 end
 arch woodfloor
+x 36
+y 63
+end
+arch dread
 x 36
 y 63
 end
@@ -18084,141 +18221,4 @@ end
 arch wall_2_2_4
 x 39
 y 79
-end
-arch giant
-name Thepaut
-x 3
-y 72
-end
-arch giant
-x 3
-y 74
-end
-arch big_wiz
-name Georges  Louis
-x 4
-y 50
-end
-arch giant
-name Ouvradou
-x 4
-y 76
-end
-arch troll
-x 5
-y 60
-end
-arch giant
-x 6
-y 72
-end
-arch dragon
-x 7
-y 64
-end
-arch troll
-x 8
-y 60
-end
-arch dragon
-x 8
-y 77
-end
-arch dragon
-x 9
-y 75
-end
-arch dragon
-x 9
-y 76
-end
-arch dragon
-x 10
-y 65
-end
-arch dragon
-x 11
-y 74
-end
-arch titan
-name Rannou
-x 13
-y 30
-end
-arch chinese_dragon
-x 21
-y 20
-end
-arch chinese_dragon
-x 21
-y 22
-end
-arch big_elec
-x 22
-y 49
-end
-arch chinese_dragon
-x 23
-y 20
-end
-arch chinese_dragon
-x 23
-y 22
-end
-arch baslic
-x 24
-y 6
-end
-arch chinese_dragon
-x 25
-y 20
-end
-arch chinese_dragon
-x 25
-y 22
-end
-arch chinese_dragon
-x 27
-y 20
-end
-arch chinese_dragon
-x 27
-y 22
-end
-arch chinese_dragon
-x 29
-y 20
-end
-arch chinese_dragon
-x 29
-y 22
-end
-arch baslic
-x 30
-y 6
-end
-arch gaelotroll
-name ab
-x 31
-y 52
-end
-arch baslic
-x 33
-y 6
-end
-arch dread
-x 34
-y 61
-end
-arch dread
-x 34
-y 63
-end
-arch dread
-x 36
-y 61
-end
-arch dread
-x 36
-y 63
 end
