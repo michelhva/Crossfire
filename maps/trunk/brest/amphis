@@ -1,5 +1,5 @@
 arch map
-name amphis
+name Amphis
 difficulty 25
 region brest
 width 80
@@ -686,6 +686,11 @@ x 5
 y 3
 end
 arch dungeon_floor
+x 5
+y 4
+end
+arch titan
+name Yves Maddrummer
 x 5
 y 4
 end
@@ -1635,17 +1640,13 @@ end
 arch redcwall_2_1_2
 x 9
 end
-arch woodfloor
-x 9
-y 1
-end
 arch dungeon_magic
 x 9
 y 1
 end
 arch woodfloor
 x 9
-y 2
+y 1
 end
 arch dungeon_magic
 x 9
@@ -1653,7 +1654,7 @@ y 2
 end
 arch woodfloor
 x 9
-y 3
+y 2
 end
 arch dungeon_magic
 x 9
@@ -1661,17 +1662,21 @@ y 3
 end
 arch woodfloor
 x 9
-y 4
+y 3
 end
 arch dungeon_magic
 x 9
 y 4
 end
 arch woodfloor
+x 9
+y 4
+end
+arch dungeon_magic
 x 9
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 5
 end
@@ -1684,11 +1689,11 @@ x 9
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 7
 end
@@ -1696,11 +1701,11 @@ arch random_shield
 x 9
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 8
 end
@@ -1708,11 +1713,11 @@ arch table_3
 x 9
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 9
 end
@@ -1720,11 +1725,11 @@ arch generate_kobold
 x 9
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 10
 end
@@ -1736,11 +1741,11 @@ arch random_weapon
 x 9
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 11
 end
@@ -1748,11 +1753,11 @@ arch generate_kobold
 x 9
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 12
 end
@@ -1764,11 +1769,11 @@ arch random_shield
 x 9
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 13
 end
@@ -1776,11 +1781,11 @@ arch generate_kobold
 x 9
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 14
 end
@@ -1792,11 +1797,11 @@ arch random_weapon
 x 9
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 15
 end
@@ -1804,11 +1809,11 @@ arch generate_kobold
 x 9
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 16
 end
@@ -1820,11 +1825,11 @@ arch random_shield
 x 9
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 17
 end
@@ -1832,11 +1837,11 @@ arch generate_kobold
 x 9
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 18
 end
@@ -1844,11 +1849,11 @@ arch table_3
 x 9
 y 18
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 19
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 19
 end
@@ -1856,11 +1861,11 @@ arch generate_kobold
 x 9
 y 19
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 20
 end
@@ -2009,6 +2014,11 @@ arch dungeon_floor
 x 9
 y 41
 end
+arch chinese_dragon
+name Olivier Keyboard
+x 9
+y 41
+end
 arch dungeon_floor
 x 9
 y 42
@@ -2018,6 +2028,11 @@ x 9
 y 43
 end
 arch dungeon_floor
+x 9
+y 44
+end
+arch big_elec
+name Michel Bass
 x 9
 y 44
 end
@@ -2051,17 +2066,13 @@ end
 arch redcwall_2_1_2
 x 10
 end
-arch woodfloor
-x 10
-y 1
-end
 arch dungeon_magic
 x 10
 y 1
 end
 arch woodfloor
 x 10
-y 2
+y 1
 end
 arch dungeon_magic
 x 10
@@ -2069,7 +2080,7 @@ y 2
 end
 arch woodfloor
 x 10
-y 3
+y 2
 end
 arch dungeon_magic
 x 10
@@ -2077,17 +2088,21 @@ y 3
 end
 arch woodfloor
 x 10
-y 4
+y 3
 end
 arch dungeon_magic
 x 10
 y 4
 end
 arch woodfloor
+x 10
+y 4
+end
+arch dungeon_magic
 x 10
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 5
 end
@@ -2100,19 +2115,19 @@ x 10
 y 6
 connected 1
 end
-arch woodfloor
-x 10
-y 7
-end
 arch dungeon_magic
 x 10
 y 7
 end
 arch woodfloor
+x 10
+y 7
+end
+arch dungeon_magic
 x 10
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 8
 end
@@ -2120,19 +2135,19 @@ arch table_3
 x 10
 y 8
 end
-arch woodfloor
-x 10
-y 9
-end
 arch dungeon_magic
 x 10
 y 9
 end
 arch woodfloor
+x 10
+y 9
+end
+arch dungeon_magic
 x 10
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 10
 end
@@ -2140,11 +2155,11 @@ arch table_3
 x 10
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 10
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 11
 end
@@ -2156,11 +2171,11 @@ arch random_food
 x 10
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 10
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 12
 end
@@ -2168,19 +2183,19 @@ arch table_3
 x 10
 y 12
 end
-arch woodfloor
-x 10
-y 13
-end
 arch dungeon_magic
 x 10
 y 13
 end
 arch woodfloor
+x 10
+y 13
+end
+arch dungeon_magic
 x 10
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 14
 end
@@ -2192,19 +2207,19 @@ arch random_food
 x 10
 y 14
 end
-arch woodfloor
-x 10
-y 15
-end
 arch dungeon_magic
 x 10
 y 15
 end
 arch woodfloor
+x 10
+y 15
+end
+arch dungeon_magic
 x 10
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 16
 end
@@ -2212,19 +2227,19 @@ arch table_3
 x 10
 y 16
 end
-arch woodfloor
-x 10
-y 17
-end
 arch dungeon_magic
 x 10
 y 17
 end
 arch woodfloor
+x 10
+y 17
+end
+arch dungeon_magic
 x 10
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 18
 end
@@ -2236,19 +2251,19 @@ arch random_weapon
 x 10
 y 18
 end
-arch woodfloor
-x 10
-y 19
-end
 arch dungeon_magic
 x 10
 y 19
 end
 arch woodfloor
+x 10
+y 19
+end
+arch dungeon_magic
 x 10
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 20
 end
@@ -2439,17 +2454,13 @@ end
 arch redcwall_2_1_2
 x 11
 end
-arch woodfloor
-x 11
-y 1
-end
 arch dungeon_magic
 x 11
 y 1
 end
 arch woodfloor
 x 11
-y 2
+y 1
 end
 arch dungeon_magic
 x 11
@@ -2457,7 +2468,7 @@ y 2
 end
 arch woodfloor
 x 11
-y 3
+y 2
 end
 arch dungeon_magic
 x 11
@@ -2465,17 +2476,21 @@ y 3
 end
 arch woodfloor
 x 11
-y 4
+y 3
 end
 arch dungeon_magic
 x 11
 y 4
 end
 arch woodfloor
+x 11
+y 4
+end
+arch dungeon_magic
 x 11
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 5
 end
@@ -2488,11 +2503,11 @@ x 11
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 11
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 7
 end
@@ -2500,11 +2515,11 @@ arch table_3
 x 11
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 11
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 8
 end
@@ -2524,19 +2539,19 @@ arch random_shield
 x 11
 y 9
 end
-arch woodfloor
-x 11
-y 10
-end
 arch dungeon_magic
 x 11
 y 10
 end
 arch woodfloor
+x 11
+y 10
+end
+arch dungeon_magic
 x 11
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 11
 end
@@ -2544,11 +2559,11 @@ arch table_3
 x 11
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 11
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 12
 end
@@ -2556,11 +2571,11 @@ arch random_weapon
 x 11
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 11
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 13
 end
@@ -2568,19 +2583,19 @@ arch table_3
 x 11
 y 13
 end
-arch woodfloor
-x 11
-y 14
-end
 arch dungeon_magic
 x 11
 y 14
 end
 arch woodfloor
+x 11
+y 14
+end
+arch dungeon_magic
 x 11
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 15
 end
@@ -2592,19 +2607,19 @@ arch random_weapon
 x 11
 y 15
 end
-arch woodfloor
-x 11
-y 16
-end
 arch dungeon_magic
 x 11
 y 16
 end
 arch woodfloor
+x 11
+y 16
+end
+arch dungeon_magic
 x 11
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 17
 end
@@ -2612,27 +2627,27 @@ arch table_3
 x 11
 y 17
 end
-arch woodfloor
-x 11
-y 18
-end
 arch dungeon_magic
 x 11
 y 18
 end
 arch woodfloor
 x 11
-y 19
+y 18
 end
 arch dungeon_magic
 x 11
 y 19
 end
 arch woodfloor
+x 11
+y 19
+end
+arch dungeon_magic
 x 11
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 11
 y 20
 end
@@ -2782,17 +2797,13 @@ end
 arch redcwall_2_1_2
 x 12
 end
-arch woodfloor
-x 12
-y 1
-end
 arch dungeon_magic
 x 12
 y 1
 end
 arch woodfloor
 x 12
-y 2
+y 1
 end
 arch dungeon_magic
 x 12
@@ -2800,7 +2811,7 @@ y 2
 end
 arch woodfloor
 x 12
-y 3
+y 2
 end
 arch dungeon_magic
 x 12
@@ -2808,17 +2819,21 @@ y 3
 end
 arch woodfloor
 x 12
-y 4
+y 3
 end
 arch dungeon_magic
 x 12
 y 4
 end
 arch woodfloor
+x 12
+y 4
+end
+arch dungeon_magic
 x 12
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 5
 end
@@ -2831,11 +2846,11 @@ x 12
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 12
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 7
 end
@@ -2843,11 +2858,11 @@ arch table_3
 x 12
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 12
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 8
 end
@@ -2867,19 +2882,19 @@ arch random_weapon
 x 12
 y 9
 end
-arch woodfloor
-x 12
-y 10
-end
 arch dungeon_magic
 x 12
 y 10
 end
 arch woodfloor
+x 12
+y 10
+end
+arch dungeon_magic
 x 12
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 11
 end
@@ -2887,11 +2902,11 @@ arch table_3
 x 12
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 12
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 12
 end
@@ -2899,11 +2914,11 @@ arch random_food
 x 12
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 12
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 13
 end
@@ -2915,19 +2930,19 @@ arch random_weapon
 x 12
 y 13
 end
-arch woodfloor
-x 12
-y 14
-end
 arch dungeon_magic
 x 12
 y 14
 end
 arch woodfloor
+x 12
+y 14
+end
+arch dungeon_magic
 x 12
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 15
 end
@@ -2935,19 +2950,19 @@ arch table_3
 x 12
 y 15
 end
-arch woodfloor
-x 12
-y 16
-end
 arch dungeon_magic
 x 12
 y 16
 end
 arch woodfloor
+x 12
+y 16
+end
+arch dungeon_magic
 x 12
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 17
 end
@@ -2955,27 +2970,27 @@ arch table_3
 x 12
 y 17
 end
-arch woodfloor
-x 12
-y 18
-end
 arch dungeon_magic
 x 12
 y 18
 end
 arch woodfloor
 x 12
-y 19
+y 18
 end
 arch dungeon_magic
 x 12
 y 19
 end
 arch woodfloor
+x 12
+y 19
+end
+arch dungeon_magic
 x 12
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 12
 y 20
 end
@@ -3100,6 +3115,11 @@ arch dungeon_floor
 x 12
 y 47
 end
+arch big_dragon
+name Jose Lyrics
+x 12
+y 47
+end
 arch dungeon_floor
 x 12
 y 48
@@ -3118,17 +3138,13 @@ end
 arch redcwall_2_1_2
 x 13
 end
-arch woodfloor
-x 13
-y 1
-end
 arch dungeon_magic
 x 13
 y 1
 end
 arch woodfloor
 x 13
-y 2
+y 1
 end
 arch dungeon_magic
 x 13
@@ -3136,7 +3152,7 @@ y 2
 end
 arch woodfloor
 x 13
-y 3
+y 2
 end
 arch dungeon_magic
 x 13
@@ -3144,17 +3160,21 @@ y 3
 end
 arch woodfloor
 x 13
-y 4
+y 3
 end
 arch dungeon_magic
 x 13
 y 4
 end
 arch woodfloor
+x 13
+y 4
+end
+arch dungeon_magic
 x 13
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 13
 y 5
 end
@@ -3167,17 +3187,13 @@ x 13
 y 6
 connected 1
 end
-arch woodfloor
-x 13
-y 7
-end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor
 x 13
-y 8
+y 7
 end
 arch dungeon_magic
 x 13
@@ -3185,7 +3201,7 @@ y 8
 end
 arch woodfloor
 x 13
-y 9
+y 8
 end
 arch dungeon_magic
 x 13
@@ -3193,7 +3209,7 @@ y 9
 end
 arch woodfloor
 x 13
-y 10
+y 9
 end
 arch dungeon_magic
 x 13
@@ -3201,7 +3217,7 @@ y 10
 end
 arch woodfloor
 x 13
-y 11
+y 10
 end
 arch dungeon_magic
 x 13
@@ -3209,7 +3225,7 @@ y 11
 end
 arch woodfloor
 x 13
-y 12
+y 11
 end
 arch dungeon_magic
 x 13
@@ -3217,7 +3233,7 @@ y 12
 end
 arch woodfloor
 x 13
-y 13
+y 12
 end
 arch dungeon_magic
 x 13
@@ -3225,7 +3241,7 @@ y 13
 end
 arch woodfloor
 x 13
-y 14
+y 13
 end
 arch dungeon_magic
 x 13
@@ -3233,7 +3249,7 @@ y 14
 end
 arch woodfloor
 x 13
-y 15
+y 14
 end
 arch dungeon_magic
 x 13
@@ -3241,7 +3257,7 @@ y 15
 end
 arch woodfloor
 x 13
-y 16
+y 15
 end
 arch dungeon_magic
 x 13
@@ -3249,7 +3265,7 @@ y 16
 end
 arch woodfloor
 x 13
-y 17
+y 16
 end
 arch dungeon_magic
 x 13
@@ -3257,7 +3273,7 @@ y 17
 end
 arch woodfloor
 x 13
-y 18
+y 17
 end
 arch dungeon_magic
 x 13
@@ -3265,17 +3281,21 @@ y 18
 end
 arch woodfloor
 x 13
-y 19
+y 18
 end
 arch dungeon_magic
 x 13
 y 19
 end
 arch woodfloor
+x 13
+y 19
+end
+arch dungeon_magic
 x 13
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 13
 y 20
 end
@@ -3428,17 +3448,13 @@ end
 arch redcwall_2_1_2
 x 14
 end
-arch woodfloor
-x 14
-y 1
-end
 arch dungeon_magic
 x 14
 y 1
 end
 arch woodfloor
 x 14
-y 2
+y 1
 end
 arch dungeon_magic
 x 14
@@ -3446,17 +3462,21 @@ y 2
 end
 arch woodfloor
 x 14
-y 3
+y 2
 end
 arch dungeon_magic
 x 14
 y 3
 end
 arch woodfloor
+x 14
+y 3
+end
+arch dungeon_magic
 x 14
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 4
 end
@@ -3464,11 +3484,11 @@ arch chest
 x 14
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 5
 end
@@ -3481,11 +3501,11 @@ x 14
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 7
 end
@@ -3493,11 +3513,11 @@ arch table_3
 x 14
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 8
 end
@@ -3505,11 +3525,11 @@ arch generate_orc
 x 14
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 9
 end
@@ -3517,11 +3537,11 @@ arch table_3
 x 14
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 10
 end
@@ -3533,23 +3553,23 @@ arch generate_orc
 x 14
 y 10
 end
+arch dungeon_magic
+x 14
+y 11
+end
 arch woodfloor
+x 14
+y 11
+end
+arch table_3
 x 14
 y 11
 end
 arch dungeon_magic
 x 14
-y 11
-end
-arch table_3
-x 14
-y 11
-end
-arch woodfloor
-x 14
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 12
 end
@@ -3557,11 +3577,11 @@ arch generate_orc
 x 14
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 13
 end
@@ -3569,11 +3589,11 @@ arch table_3
 x 14
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 14
 end
@@ -3581,11 +3601,11 @@ arch generate_orc
 x 14
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 15
 end
@@ -3593,11 +3613,11 @@ arch table_3
 x 14
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 16
 end
@@ -3605,11 +3625,11 @@ arch generate_orc
 x 14
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 17
 end
@@ -3617,31 +3637,31 @@ arch table_3
 x 14
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 14
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 18
 end
 arch generate_orc
 x 14
 y 18
-end
-arch woodfloor
-x 14
-y 19
 end
 arch dungeon_magic
 x 14
 y 19
 end
 arch woodfloor
+x 14
+y 19
+end
+arch dungeon_magic
 x 14
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 14
 y 20
 end
@@ -3832,17 +3852,13 @@ end
 arch redcwall_2_1_2
 x 15
 end
-arch woodfloor
-x 15
-y 1
-end
 arch dungeon_magic
 x 15
 y 1
 end
 arch woodfloor
 x 15
-y 2
+y 1
 end
 arch dungeon_magic
 x 15
@@ -3850,17 +3866,21 @@ y 2
 end
 arch woodfloor
 x 15
-y 3
+y 2
 end
 arch dungeon_magic
 x 15
 y 3
 end
 arch woodfloor
+x 15
+y 3
+end
+arch dungeon_magic
 x 15
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 4
 end
@@ -3868,11 +3888,11 @@ arch chest
 x 15
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 15
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 5
 end
@@ -3885,21 +3905,17 @@ x 15
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 15
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 7
 end
 arch table_3
 x 15
 y 7
-end
-arch woodfloor
-x 15
-y 8
 end
 arch dungeon_magic
 x 15
@@ -3907,9 +3923,13 @@ y 8
 end
 arch woodfloor
 x 15
-y 9
+y 8
 end
 arch dungeon_magic
+x 15
+y 9
+end
+arch woodfloor
 x 15
 y 9
 end
@@ -3917,19 +3937,19 @@ arch table_3
 x 15
 y 9
 end
-arch woodfloor
-x 15
-y 10
-end
 arch dungeon_magic
 x 15
 y 10
 end
 arch woodfloor
+x 15
+y 10
+end
+arch dungeon_magic
 x 15
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 11
 end
@@ -3937,19 +3957,19 @@ arch table_3
 x 15
 y 11
 end
-arch woodfloor
-x 15
-y 12
-end
 arch dungeon_magic
 x 15
 y 12
 end
 arch woodfloor
+x 15
+y 12
+end
+arch dungeon_magic
 x 15
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 13
 end
@@ -3961,19 +3981,19 @@ arch random_shield
 x 15
 y 13
 end
-arch woodfloor
-x 15
-y 14
-end
 arch dungeon_magic
 x 15
 y 14
 end
 arch woodfloor
+x 15
+y 14
+end
+arch dungeon_magic
 x 15
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 15
 end
@@ -3981,11 +4001,11 @@ arch table_3
 x 15
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 15
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 16
 end
@@ -3993,11 +4013,11 @@ arch random_weapon
 x 15
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 15
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 17
 end
@@ -4005,11 +4025,11 @@ arch table_3
 x 15
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 15
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 18
 end
@@ -4017,19 +4037,19 @@ arch random_food
 x 15
 y 18
 end
-arch woodfloor
-x 15
-y 19
-end
 arch dungeon_magic
 x 15
 y 19
 end
 arch woodfloor
+x 15
+y 19
+end
+arch dungeon_magic
 x 15
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 15
 y 20
 end
@@ -4229,17 +4249,13 @@ end
 arch redcwall_2_1_2
 x 16
 end
-arch woodfloor
-x 16
-y 1
-end
 arch dungeon_magic
 x 16
 y 1
 end
 arch woodfloor
 x 16
-y 2
+y 1
 end
 arch dungeon_magic
 x 16
@@ -4247,17 +4263,21 @@ y 2
 end
 arch woodfloor
 x 16
-y 3
+y 2
 end
 arch dungeon_magic
 x 16
 y 3
 end
 arch woodfloor
+x 16
+y 3
+end
+arch dungeon_magic
 x 16
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 4
 end
@@ -4265,11 +4285,11 @@ arch table_4
 x 16
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 5
 end
@@ -4282,11 +4302,11 @@ x 16
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 7
 end
@@ -4294,11 +4314,11 @@ arch table_3
 x 16
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 8
 end
@@ -4310,11 +4330,11 @@ arch generate_gnoll
 x 16
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 9
 end
@@ -4322,19 +4342,19 @@ arch table_3
 x 16
 y 9
 end
-arch woodfloor
-x 16
-y 10
-end
 arch dungeon_magic
 x 16
 y 10
 end
 arch woodfloor
+x 16
+y 10
+end
+arch dungeon_magic
 x 16
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 11
 end
@@ -4346,19 +4366,19 @@ arch random_shield
 x 16
 y 11
 end
-arch woodfloor
-x 16
-y 12
-end
 arch dungeon_magic
 x 16
 y 12
 end
 arch woodfloor
+x 16
+y 12
+end
+arch dungeon_magic
 x 16
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 13
 end
@@ -4366,19 +4386,19 @@ arch table_3
 x 16
 y 13
 end
-arch woodfloor
-x 16
-y 14
-end
 arch dungeon_magic
 x 16
 y 14
 end
 arch woodfloor
+x 16
+y 14
+end
+arch dungeon_magic
 x 16
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 15
 end
@@ -4386,11 +4406,11 @@ arch table_3
 x 16
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 16
 end
@@ -4398,11 +4418,11 @@ arch generate_gnoll
 x 16
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 16
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 17
 end
@@ -4414,27 +4434,27 @@ arch random_food
 x 16
 y 17
 end
-arch woodfloor
-x 16
-y 18
-end
 arch dungeon_magic
 x 16
 y 18
 end
 arch woodfloor
 x 16
-y 19
+y 18
 end
 arch dungeon_magic
 x 16
 y 19
 end
 arch woodfloor
+x 16
+y 19
+end
+arch dungeon_magic
 x 16
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 16
 y 20
 end
@@ -4592,6 +4612,11 @@ arch dungeon_floor
 x 16
 y 41
 end
+arch demon_lord
+name Fred Lyrics
+x 16
+y 41
+end
 arch dungeon_floor
 x 16
 y 42
@@ -4634,27 +4659,27 @@ end
 arch redcwall_2_1_2
 x 17
 end
-arch woodfloor
-x 17
-y 1
-end
 arch dungeon_magic
 x 17
 y 1
 end
 arch woodfloor
 x 17
-y 2
+y 1
 end
 arch dungeon_magic
 x 17
 y 2
 end
 arch woodfloor
+x 17
+y 2
+end
+arch dungeon_magic
 x 17
 y 3
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 3
 end
@@ -4663,11 +4688,11 @@ name Remy
 x 17
 y 3
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 4
 end
@@ -4684,11 +4709,11 @@ endmsg
 x 17
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 5
 end
@@ -4701,21 +4726,17 @@ x 17
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 7
 end
 arch table_3
 x 17
 y 7
-end
-arch woodfloor
-x 17
-y 8
 end
 arch dungeon_magic
 x 17
@@ -4723,9 +4744,13 @@ y 8
 end
 arch woodfloor
 x 17
-y 9
+y 8
 end
 arch dungeon_magic
+x 17
+y 9
+end
+arch woodfloor
 x 17
 y 9
 end
@@ -4733,11 +4758,11 @@ arch table_3
 x 17
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 10
 end
@@ -4745,17 +4770,21 @@ arch generate_gnoll
 x 17
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 11
 end
 arch table_3
 x 17
 y 11
+end
+arch dungeon_magic
+x 17
+y 12
 end
 arch woodfloor
 x 17
@@ -4763,13 +4792,9 @@ y 12
 end
 arch dungeon_magic
 x 17
-y 12
-end
-arch woodfloor
-x 17
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 13
 end
@@ -4777,11 +4802,11 @@ arch table_3
 x 17
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 14
 end
@@ -4789,11 +4814,11 @@ arch generate_gnoll
 x 17
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 15
 end
@@ -4801,19 +4826,19 @@ arch table_3
 x 17
 y 15
 end
-arch woodfloor
-x 17
-y 16
-end
 arch dungeon_magic
 x 17
 y 16
 end
 arch woodfloor
+x 17
+y 16
+end
+arch dungeon_magic
 x 17
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 17
 end
@@ -4821,11 +4846,11 @@ arch table_3
 x 17
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 17
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 18
 end
@@ -4833,19 +4858,19 @@ arch generate_gnoll
 x 17
 y 18
 end
-arch woodfloor
-x 17
-y 19
-end
 arch dungeon_magic
 x 17
 y 19
 end
 arch woodfloor
+x 17
+y 19
+end
+arch dungeon_magic
 x 17
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 17
 y 20
 end
@@ -5036,17 +5061,13 @@ end
 arch redcwall_2_1_2
 x 18
 end
-arch woodfloor
-x 18
-y 1
-end
 arch dungeon_magic
 x 18
 y 1
 end
 arch woodfloor
 x 18
-y 2
+y 1
 end
 arch dungeon_magic
 x 18
@@ -5054,17 +5075,21 @@ y 2
 end
 arch woodfloor
 x 18
-y 3
+y 2
 end
 arch dungeon_magic
 x 18
 y 3
 end
 arch woodfloor
+x 18
+y 3
+end
+arch dungeon_magic
 x 18
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 4
 end
@@ -5072,11 +5097,11 @@ arch table_4
 x 18
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 5
 end
@@ -5089,11 +5114,11 @@ x 18
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 7
 end
@@ -5101,19 +5126,19 @@ arch table_3
 x 18
 y 7
 end
-arch woodfloor
-x 18
-y 8
-end
 arch dungeon_magic
 x 18
 y 8
 end
 arch woodfloor
+x 18
+y 8
+end
+arch dungeon_magic
 x 18
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 9
 end
@@ -5125,19 +5150,19 @@ arch random_shield
 x 18
 y 9
 end
-arch woodfloor
-x 18
-y 10
-end
 arch dungeon_magic
 x 18
 y 10
 end
 arch woodfloor
+x 18
+y 10
+end
+arch dungeon_magic
 x 18
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 11
 end
@@ -5149,11 +5174,11 @@ arch random_food
 x 18
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 12
 end
@@ -5161,11 +5186,11 @@ arch generate_gnoll
 x 18
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 13
 end
@@ -5177,11 +5202,11 @@ arch random_weapon
 x 18
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 14
 end
@@ -5189,11 +5214,11 @@ arch random_weapon
 x 18
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 18
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 15
 end
@@ -5201,19 +5226,19 @@ arch table_3
 x 18
 y 15
 end
-arch woodfloor
-x 18
-y 16
-end
 arch dungeon_magic
 x 18
 y 16
 end
 arch woodfloor
+x 18
+y 16
+end
+arch dungeon_magic
 x 18
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 17
 end
@@ -5221,27 +5246,27 @@ arch table_3
 x 18
 y 17
 end
-arch woodfloor
-x 18
-y 18
-end
 arch dungeon_magic
 x 18
 y 18
 end
 arch woodfloor
 x 18
-y 19
+y 18
 end
 arch dungeon_magic
 x 18
 y 19
 end
 arch woodfloor
+x 18
+y 19
+end
+arch dungeon_magic
 x 18
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 18
 y 20
 end
@@ -5432,17 +5457,13 @@ end
 arch redcwall_2_1_2
 x 19
 end
-arch woodfloor
-x 19
-y 1
-end
 arch dungeon_magic
 x 19
 y 1
 end
 arch woodfloor
 x 19
-y 2
+y 1
 end
 arch dungeon_magic
 x 19
@@ -5450,17 +5471,21 @@ y 2
 end
 arch woodfloor
 x 19
-y 3
+y 2
 end
 arch dungeon_magic
 x 19
 y 3
 end
 arch woodfloor
+x 19
+y 3
+end
+arch dungeon_magic
 x 19
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 4
 end
@@ -5468,11 +5493,11 @@ arch chest
 x 19
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 19
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 5
 end
@@ -5485,21 +5510,17 @@ x 19
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 19
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 7
 end
 arch table_3
 x 19
 y 7
-end
-arch woodfloor
-x 19
-y 8
 end
 arch dungeon_magic
 x 19
@@ -5507,15 +5528,23 @@ y 8
 end
 arch woodfloor
 x 19
-y 9
+y 8
 end
 arch dungeon_magic
+x 19
+y 9
+end
+arch woodfloor
 x 19
 y 9
 end
 arch table_3
 x 19
 y 9
+end
+arch dungeon_magic
+x 19
+y 10
 end
 arch woodfloor
 x 19
@@ -5523,23 +5552,15 @@ y 10
 end
 arch dungeon_magic
 x 19
-y 10
-end
-arch woodfloor
-x 19
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 11
 end
 arch table_3
 x 19
 y 11
-end
-arch woodfloor
-x 19
-y 12
 end
 arch dungeon_magic
 x 19
@@ -5547,9 +5568,13 @@ y 12
 end
 arch woodfloor
 x 19
-y 13
+y 12
 end
 arch dungeon_magic
+x 19
+y 13
+end
+arch woodfloor
 x 19
 y 13
 end
@@ -5557,19 +5582,19 @@ arch table_3
 x 19
 y 13
 end
-arch woodfloor
-x 19
-y 14
-end
 arch dungeon_magic
 x 19
 y 14
 end
 arch woodfloor
+x 19
+y 14
+end
+arch dungeon_magic
 x 19
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 15
 end
@@ -5577,19 +5602,19 @@ arch table_3
 x 19
 y 15
 end
-arch woodfloor
-x 19
-y 16
-end
 arch dungeon_magic
 x 19
 y 16
 end
 arch woodfloor
+x 19
+y 16
+end
+arch dungeon_magic
 x 19
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 17
 end
@@ -5601,27 +5626,27 @@ arch random_weapon
 x 19
 y 17
 end
-arch woodfloor
-x 19
-y 18
-end
 arch dungeon_magic
 x 19
 y 18
 end
 arch woodfloor
 x 19
-y 19
+y 18
 end
 arch dungeon_magic
 x 19
 y 19
 end
 arch woodfloor
+x 19
+y 19
+end
+arch dungeon_magic
 x 19
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 19
 y 20
 end
@@ -5821,17 +5846,13 @@ end
 arch redcwall_2_1_2
 x 20
 end
-arch woodfloor
-x 20
-y 1
-end
 arch dungeon_magic
 x 20
 y 1
 end
 arch woodfloor
 x 20
-y 2
+y 1
 end
 arch dungeon_magic
 x 20
@@ -5839,17 +5860,21 @@ y 2
 end
 arch woodfloor
 x 20
-y 3
+y 2
 end
 arch dungeon_magic
 x 20
 y 3
 end
 arch woodfloor
+x 20
+y 3
+end
+arch dungeon_magic
 x 20
 y 4
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 4
 end
@@ -5857,11 +5882,11 @@ arch chest
 x 20
 y 4
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 5
 end
@@ -5874,11 +5899,11 @@ x 20
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 7
 end
@@ -5886,11 +5911,11 @@ arch table_3
 x 20
 y 7
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 8
 end
@@ -5898,11 +5923,11 @@ arch generate_orc
 x 20
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 9
 end
@@ -5910,11 +5935,11 @@ arch table_3
 x 20
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 10
 end
@@ -5922,11 +5947,11 @@ arch generate_orc
 x 20
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 11
 end
@@ -5934,11 +5959,11 @@ arch table_3
 x 20
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 12
 end
@@ -5950,11 +5975,11 @@ arch generate_orc
 x 20
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 13
 end
@@ -5962,11 +5987,11 @@ arch table_3
 x 20
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 14
 end
@@ -5974,11 +5999,11 @@ arch generate_orc
 x 20
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 15
 end
@@ -5986,11 +6011,11 @@ arch table_3
 x 20
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 16
 end
@@ -5998,11 +6023,11 @@ arch generate_orc
 x 20
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 17
 end
@@ -6014,11 +6039,11 @@ arch random_shield
 x 20
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 20
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 18
 end
@@ -6026,19 +6051,19 @@ arch generate_orc
 x 20
 y 18
 end
-arch woodfloor
-x 20
-y 19
-end
 arch dungeon_magic
 x 20
 y 19
 end
 arch woodfloor
+x 20
+y 19
+end
+arch dungeon_magic
 x 20
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 20
 y 20
 end
@@ -6220,6 +6245,11 @@ arch dungeon_floor
 x 20
 y 47
 end
+arch titan
+name Helene Drums
+x 20
+y 47
+end
 arch dungeon_floor
 x 20
 y 48
@@ -6238,17 +6268,13 @@ end
 arch redcwall_2_1_2
 x 21
 end
-arch woodfloor
-x 21
-y 1
-end
 arch dungeon_magic
 x 21
 y 1
 end
 arch woodfloor
 x 21
-y 2
+y 1
 end
 arch dungeon_magic
 x 21
@@ -6256,7 +6282,7 @@ y 2
 end
 arch woodfloor
 x 21
-y 3
+y 2
 end
 arch dungeon_magic
 x 21
@@ -6264,17 +6290,21 @@ y 3
 end
 arch woodfloor
 x 21
-y 4
+y 3
 end
 arch dungeon_magic
 x 21
 y 4
 end
 arch woodfloor
+x 21
+y 4
+end
+arch dungeon_magic
 x 21
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 21
 y 5
 end
@@ -6287,17 +6317,13 @@ x 21
 y 6
 connected 1
 end
-arch woodfloor
-x 21
-y 7
-end
 arch dungeon_magic
 x 21
 y 7
 end
 arch woodfloor
 x 21
-y 8
+y 7
 end
 arch dungeon_magic
 x 21
@@ -6305,7 +6331,7 @@ y 8
 end
 arch woodfloor
 x 21
-y 9
+y 8
 end
 arch dungeon_magic
 x 21
@@ -6313,7 +6339,7 @@ y 9
 end
 arch woodfloor
 x 21
-y 10
+y 9
 end
 arch dungeon_magic
 x 21
@@ -6321,7 +6347,7 @@ y 10
 end
 arch woodfloor
 x 21
-y 11
+y 10
 end
 arch dungeon_magic
 x 21
@@ -6329,7 +6355,7 @@ y 11
 end
 arch woodfloor
 x 21
-y 12
+y 11
 end
 arch dungeon_magic
 x 21
@@ -6337,7 +6363,7 @@ y 12
 end
 arch woodfloor
 x 21
-y 13
+y 12
 end
 arch dungeon_magic
 x 21
@@ -6345,17 +6371,21 @@ y 13
 end
 arch woodfloor
 x 21
-y 14
+y 13
 end
 arch dungeon_magic
 x 21
 y 14
 end
 arch woodfloor
+x 21
+y 14
+end
+arch dungeon_magic
 x 21
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 21
 y 15
 end
@@ -6363,17 +6393,13 @@ arch random_food
 x 21
 y 15
 end
-arch woodfloor
-x 21
-y 16
-end
 arch dungeon_magic
 x 21
 y 16
 end
 arch woodfloor
 x 21
-y 17
+y 16
 end
 arch dungeon_magic
 x 21
@@ -6381,7 +6407,7 @@ y 17
 end
 arch woodfloor
 x 21
-y 18
+y 17
 end
 arch dungeon_magic
 x 21
@@ -6389,17 +6415,21 @@ y 18
 end
 arch woodfloor
 x 21
-y 19
+y 18
 end
 arch dungeon_magic
 x 21
 y 19
 end
 arch woodfloor
+x 21
+y 19
+end
+arch dungeon_magic
 x 21
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 21
 y 20
 end
@@ -6590,17 +6620,13 @@ end
 arch redcwall_2_1_2
 x 22
 end
-arch woodfloor
-x 22
-y 1
-end
 arch dungeon_magic
 x 22
 y 1
 end
 arch woodfloor
 x 22
-y 2
+y 1
 end
 arch dungeon_magic
 x 22
@@ -6608,7 +6634,7 @@ y 2
 end
 arch woodfloor
 x 22
-y 3
+y 2
 end
 arch dungeon_magic
 x 22
@@ -6616,17 +6642,21 @@ y 3
 end
 arch woodfloor
 x 22
-y 4
+y 3
 end
 arch dungeon_magic
 x 22
 y 4
 end
 arch woodfloor
+x 22
+y 4
+end
+arch dungeon_magic
 x 22
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 5
 end
@@ -6639,11 +6669,11 @@ x 22
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 22
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 7
 end
@@ -6651,19 +6681,19 @@ arch table_3
 x 22
 y 7
 end
-arch woodfloor
-x 22
-y 8
-end
 arch dungeon_magic
 x 22
 y 8
 end
 arch woodfloor
+x 22
+y 8
+end
+arch dungeon_magic
 x 22
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 9
 end
@@ -6675,19 +6705,19 @@ arch random_weapon
 x 22
 y 9
 end
-arch woodfloor
-x 22
-y 10
-end
 arch dungeon_magic
 x 22
 y 10
 end
 arch woodfloor
+x 22
+y 10
+end
+arch dungeon_magic
 x 22
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 11
 end
@@ -6699,19 +6729,19 @@ arch random_shield
 x 22
 y 11
 end
-arch woodfloor
-x 22
-y 12
-end
 arch dungeon_magic
 x 22
 y 12
 end
 arch woodfloor
+x 22
+y 12
+end
+arch dungeon_magic
 x 22
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 13
 end
@@ -6719,11 +6749,11 @@ arch table_3
 x 22
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 22
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 14
 end
@@ -6731,11 +6761,11 @@ arch random_weapon
 x 22
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 22
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 15
 end
@@ -6743,19 +6773,19 @@ arch table_3
 x 22
 y 15
 end
-arch woodfloor
-x 22
-y 16
-end
 arch dungeon_magic
 x 22
 y 16
 end
 arch woodfloor
+x 22
+y 16
+end
+arch dungeon_magic
 x 22
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 17
 end
@@ -6763,27 +6793,27 @@ arch table_3
 x 22
 y 17
 end
-arch woodfloor
-x 22
-y 18
-end
 arch dungeon_magic
 x 22
 y 18
 end
 arch woodfloor
 x 22
-y 19
+y 18
 end
 arch dungeon_magic
 x 22
 y 19
 end
 arch woodfloor
+x 22
+y 19
+end
+arch dungeon_magic
 x 22
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 22
 y 20
 end
@@ -6936,6 +6966,11 @@ arch dungeon_floor
 x 22
 y 42
 end
+arch big_wiz
+name Francois Guitar
+x 22
+y 42
+end
 arch dungeon_floor
 x 22
 y 43
@@ -6974,17 +7009,13 @@ end
 arch redcwall_2_1_2
 x 23
 end
-arch woodfloor
-x 23
-y 1
-end
 arch dungeon_magic
 x 23
 y 1
 end
 arch woodfloor
 x 23
-y 2
+y 1
 end
 arch dungeon_magic
 x 23
@@ -6992,7 +7023,7 @@ y 2
 end
 arch woodfloor
 x 23
-y 3
+y 2
 end
 arch dungeon_magic
 x 23
@@ -7000,17 +7031,21 @@ y 3
 end
 arch woodfloor
 x 23
-y 4
+y 3
 end
 arch dungeon_magic
 x 23
 y 4
 end
 arch woodfloor
+x 23
+y 4
+end
+arch dungeon_magic
 x 23
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 5
 end
@@ -7023,21 +7058,17 @@ x 23
 y 6
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 23
 y 7
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 7
 end
 arch table_3
 x 23
 y 7
-end
-arch woodfloor
-x 23
-y 8
 end
 arch dungeon_magic
 x 23
@@ -7045,15 +7076,23 @@ y 8
 end
 arch woodfloor
 x 23
-y 9
+y 8
 end
 arch dungeon_magic
+x 23
+y 9
+end
+arch woodfloor
 x 23
 y 9
 end
 arch table_3
 x 23
 y 9
+end
+arch dungeon_magic
+x 23
+y 10
 end
 arch woodfloor
 x 23
@@ -7061,13 +7100,9 @@ y 10
 end
 arch dungeon_magic
 x 23
-y 10
-end
-arch woodfloor
-x 23
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 11
 end
@@ -7075,19 +7110,19 @@ arch table_3
 x 23
 y 11
 end
-arch woodfloor
-x 23
-y 12
-end
 arch dungeon_magic
 x 23
 y 12
 end
 arch woodfloor
+x 23
+y 12
+end
+arch dungeon_magic
 x 23
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 13
 end
@@ -7095,19 +7130,19 @@ arch table_3
 x 23
 y 13
 end
-arch woodfloor
-x 23
-y 14
-end
 arch dungeon_magic
 x 23
 y 14
 end
 arch woodfloor
+x 23
+y 14
+end
+arch dungeon_magic
 x 23
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 15
 end
@@ -7119,19 +7154,19 @@ arch random_shield
 x 23
 y 15
 end
-arch woodfloor
-x 23
-y 16
-end
 arch dungeon_magic
 x 23
 y 16
 end
 arch woodfloor
+x 23
+y 16
+end
+arch dungeon_magic
 x 23
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 17
 end
@@ -7139,27 +7174,27 @@ arch table_3
 x 23
 y 17
 end
-arch woodfloor
-x 23
-y 18
-end
 arch dungeon_magic
 x 23
 y 18
 end
 arch woodfloor
 x 23
-y 19
+y 18
 end
 arch dungeon_magic
 x 23
 y 19
 end
 arch woodfloor
+x 23
+y 19
+end
+arch dungeon_magic
 x 23
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 23
 y 20
 end
@@ -7350,17 +7385,13 @@ end
 arch redcwall_2_1_2
 x 24
 end
-arch woodfloor
-x 24
-y 1
-end
 arch dungeon_magic
 x 24
 y 1
 end
 arch woodfloor
 x 24
-y 2
+y 1
 end
 arch dungeon_magic
 x 24
@@ -7368,7 +7399,7 @@ y 2
 end
 arch woodfloor
 x 24
-y 3
+y 2
 end
 arch dungeon_magic
 x 24
@@ -7376,17 +7407,21 @@ y 3
 end
 arch woodfloor
 x 24
-y 4
+y 3
 end
 arch dungeon_magic
 x 24
 y 4
 end
 arch woodfloor
+x 24
+y 4
+end
+arch dungeon_magic
 x 24
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 5
 end
@@ -7399,19 +7434,19 @@ x 24
 y 6
 connected 1
 end
-arch woodfloor
-x 24
-y 7
-end
 arch dungeon_magic
 x 24
 y 7
 end
 arch woodfloor
+x 24
+y 7
+end
+arch dungeon_magic
 x 24
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 8
 end
@@ -7419,11 +7454,11 @@ arch table_3
 x 24
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 24
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 9
 end
@@ -7431,11 +7466,11 @@ arch random_weapon
 x 24
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 24
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 10
 end
@@ -7443,11 +7478,11 @@ arch table_3
 x 24
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 24
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 11
 end
@@ -7455,21 +7490,17 @@ arch random_weapon
 x 24
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 24
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 12
 end
 arch table_3
 x 24
 y 12
-end
-arch woodfloor
-x 24
-y 13
 end
 arch dungeon_magic
 x 24
@@ -7477,9 +7508,13 @@ y 13
 end
 arch woodfloor
 x 24
-y 14
+y 13
 end
 arch dungeon_magic
+x 24
+y 14
+end
+arch woodfloor
 x 24
 y 14
 end
@@ -7487,19 +7522,19 @@ arch table_3
 x 24
 y 14
 end
-arch woodfloor
-x 24
-y 15
-end
 arch dungeon_magic
 x 24
 y 15
 end
 arch woodfloor
+x 24
+y 15
+end
+arch dungeon_magic
 x 24
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 16
 end
@@ -7507,19 +7542,19 @@ arch table_3
 x 24
 y 16
 end
-arch woodfloor
-x 24
-y 17
-end
 arch dungeon_magic
 x 24
 y 17
 end
 arch woodfloor
+x 24
+y 17
+end
+arch dungeon_magic
 x 24
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 18
 end
@@ -7531,19 +7566,19 @@ arch random_weapon
 x 24
 y 18
 end
-arch woodfloor
-x 24
-y 19
-end
 arch dungeon_magic
 x 24
 y 19
 end
 arch woodfloor
+x 24
+y 19
+end
+arch dungeon_magic
 x 24
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 24
 y 20
 end
@@ -7743,17 +7778,13 @@ end
 arch redcwall_2_1_2
 x 25
 end
-arch woodfloor
-x 25
-y 1
-end
 arch dungeon_magic
 x 25
 y 1
 end
 arch woodfloor
 x 25
-y 2
+y 1
 end
 arch dungeon_magic
 x 25
@@ -7761,7 +7792,7 @@ y 2
 end
 arch woodfloor
 x 25
-y 3
+y 2
 end
 arch dungeon_magic
 x 25
@@ -7769,17 +7800,21 @@ y 3
 end
 arch woodfloor
 x 25
-y 4
+y 3
 end
 arch dungeon_magic
 x 25
 y 4
 end
 arch woodfloor
+x 25
+y 4
+end
+arch dungeon_magic
 x 25
 y 5
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 5
 end
@@ -7801,11 +7836,11 @@ x 25
 y 7
 connected 1
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 8
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 8
 end
@@ -7813,11 +7848,11 @@ arch table_3
 x 25
 y 8
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 9
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 9
 end
@@ -7825,11 +7860,11 @@ arch generate_kobold
 x 25
 y 9
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 10
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 10
 end
@@ -7837,11 +7872,11 @@ arch table_3
 x 25
 y 10
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 11
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 11
 end
@@ -7849,11 +7884,11 @@ arch generate_kobold
 x 25
 y 11
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 12
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 12
 end
@@ -7861,11 +7896,11 @@ arch table_3
 x 25
 y 12
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 13
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 13
 end
@@ -7873,11 +7908,11 @@ arch generate_kobold
 x 25
 y 13
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 14
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 14
 end
@@ -7889,11 +7924,11 @@ arch random_food
 x 25
 y 14
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 15
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 15
 end
@@ -7905,11 +7940,11 @@ arch generate_kobold
 x 25
 y 15
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 16
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 16
 end
@@ -7917,11 +7952,11 @@ arch table_3
 x 25
 y 16
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 17
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 17
 end
@@ -7929,11 +7964,11 @@ arch generate_kobold
 x 25
 y 17
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 18
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 18
 end
@@ -7941,11 +7976,11 @@ arch table_3
 x 25
 y 18
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 19
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 19
 end
@@ -7953,11 +7988,11 @@ arch generate_kobold
 x 25
 y 19
 end
-arch woodfloor
+arch dungeon_magic
 x 25
 y 20
 end
-arch dungeon_magic
+arch woodfloor
 x 25
 y 20
 end
@@ -11715,6 +11750,10 @@ x 50
 y 13
 end
 arch woodfloor
+x 50
+y 14
+end
+arch behemoth
 x 50
 y 14
 end
@@ -16253,43 +16292,4 @@ end
 arch redcwall_2_2_4
 x 79
 y 38
-end
-arch titan
-name Yves Maddrummer
-x 5
-y 4
-end
-arch chinese_dragon
-name Olivier Keyboard
-x 9
-y 41
-end
-arch big_elec
-name Michel Bass
-x 9
-y 44
-end
-arch big_dragon
-name Jose Lyrics
-x 12
-y 47
-end
-arch demon_lord
-name Fred Lyrics
-x 16
-y 41
-end
-arch titan
-name Helene Drums
-x 20
-y 47
-end
-arch big_wiz
-name Francois Guitar
-x 22
-y 42
-end
-arch behemoth
-x 50
-y 14
 end
