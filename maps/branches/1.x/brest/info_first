@@ -1,13 +1,14 @@
 arch map
+name Tower of Zoon, Level 1
+difficulty 1
 region brest
-name info_first
+width 40
+height 80
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:44:50 1994
 endmsg
-x 40
-y 80
 end
 arch woodfloor
 end
@@ -7350,7 +7351,7 @@ end
 arch book_read
 msg
 Don't try to kill the poor secretary.
-She has so many things to do that 
+She has so many things to do that
 she won't open the door very quick...
 endmsg
 x 15
