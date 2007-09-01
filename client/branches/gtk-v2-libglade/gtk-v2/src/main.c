@@ -83,11 +83,13 @@ const char *usercolorname[NUM_COLORS] = {
 "grey"  ,               /* 9  */
 "brown",                /* 10 */
 "yellow",               /* 11 */
-"tan"                 /* 12 */
+"tan"                   /* 12 */
 };
 
-char dialog_xml_file[MAX_BUF] = DIALOG_XML_FILE_DEFAULT;
-char window_xml_file[MAX_BUF] = WINDOW_XML_FILE_DEFAULT;
+char dialog_xml_file[MAX_BUF] = DIALOG_XML_FILENAME;
+char dialog_xml_path[MAX_BUF] = "";
+char window_xml_file[MAX_BUF] = WINDOW_XML_FILENAME;
+char window_xml_path[MAX_BUF] = "";
 GdkColor root_color[NUM_COLORS];
 struct timeval timeout;
 extern int maxfd;
@@ -565,7 +567,7 @@ int parse_args(int argc, char **argv)
                     "-window_xml requires a glade xml file name");
 		return 1;
 	    }
-	    strncpy (window_xml_file, argv[on_arg], MAX_BUF-1);
+	    strncpy (window_xml_path, argv[on_arg], MAX_BUF-1);
 	    continue;
 	}
 	else if (!strcmp(argv[on_arg],"-dialog_xml")) {
@@ -574,7 +576,7 @@ int parse_args(int argc, char **argv)
                     "-dialog_xml requires a glade xml file name");
 		return 1;
 	    }
-	    strncpy (dialog_xml_file, argv[on_arg], MAX_BUF-1);
+	    strncpy (dialog_xml_path, argv[on_arg], MAX_BUF-1);
 	    continue;
 	}
 	else {
@@ -658,31 +660,47 @@ main (int argc, char *argv[])
 	use_config[CONFIG_SOUND] = FALSE;
     else use_config[CONFIG_SOUND] = TRUE;
 
+    /*
+     * Load Glade XML layout files for the main client window and for the other
+     * popup dialogs.  The popup dialogs must all have the "visible" attribute
+     * set to "no" so they are not shown initially.
+     *
+     * NOTE:  glade_init() is implicitly called on glade_xml_new().
+     *
+     * First, load up the common dialogs.  If the XML file path is already set,
+     * it is because a command-line parameter was used to specify it.  If not
+     * set, construct the path to the file from the default path and name
+     * settings.
+     */
+    if (! dialog_xml_path[0]) {
+        strncat(dialog_xml_path, XML_PATH_DEFAULT, MAX_BUF-1);
+        strncat(dialog_xml_path, dialog_xml_file,
+            MAX_BUF-strlen(dialog_xml_path)-1);
+    }
+    dialog_xml = glade_xml_new(dialog_xml_path, NULL, NULL);
+    if (! dialog_xml) {
+        fprintf (stderr, "Failed to load xml file: %s\n", dialog_xml_path);
+        exit(-1);
+    }
 
     /*
-     * The following code was added by Glade to create one of each component
-     * (except popup menus), just so that you see something after building
-     * the project. Set the attribute "visible" to "no" for any dialogs that
-     * should not be shown initially.
-     *
-     * First, load up the common dialogs, then load up the root window.
-     *
-     * glade_init() is implicitly called on glade_xml_new().
-     *
+     * Next, load up the root window.  If the XML file path is already set, it
+     * is because a command-line parameter was used to specify it.  If not set,
+     * construct the path to the file from the default settings, and any values
+     * loaded from the gdefaults2 file.
      */
-
-    dialog_xml = glade_xml_new(dialog_xml_file, NULL, NULL);
-    if (! dialog_xml) {
-        fprintf (stderr, "Failed to load xml file: %s\n", dialog_xml_file);
-        exit(-1);
+    if (! window_xml_path[0]) {
+        strncat(window_xml_path, XML_PATH_DEFAULT, MAX_BUF-1);
+        strncat(window_xml_path, window_xml_file,
+            MAX_BUF-strlen(window_xml_path)-1);
     }
-
-    window_xml = glade_xml_new(window_xml_file, NULL, NULL);
+    window_xml = glade_xml_new(window_xml_path, NULL, NULL);
     if (! window_xml) {
-        fprintf (stderr, "Failed to load xml file: %s\n", window_xml_file);
+        fprintf (stderr, "Failed to load xml file: %s\n", window_xml_path);
         exit(-1);
     }
 
+    /* Begin connecting signals for the root window loaded by libglade. */
     window_root = glade_xml_get_widget(window_xml, "window_root");
 
     g_signal_connect_swapped ((gpointer) window_root, "key_press_event",
