@@ -1,6 +1,41 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+
+Make metaserver1 gather it's data in its own thread.  Brought back from trunk
+common/metaserver.c: Add ms1_is_running flag, re-work some of the metaserver1
+  logic so the function structure makes it easy to spawn the thread,
+  rename metaserver2_check_status() to just metaserver_check_status()
+gtk-v2/src/metaserver.c: Change call to metaserver_check_status(), resort
+  data after getting all info from sever.
+MSW 2007-08-31
+
+Add support for metaserver2 in client.  For the X11/C clients, they use basic
+interface (drawn in text window, select a number), so no changes to the GUI
+portions of those clients was done - gtk2 uses window, so some extra work
+there.  Brought back from trunk
+--
+*/Makefile.in: rebuilt
+acinclude.m4: New file - added for LIBCURL_CHECK_CONFIG macro support.
+aclocal.m4: Rebuilt
+configure: Add --disable-metaserver2 option, check for Curl, pthread.  Make
+  sure user either has curl installed or has used --disable-metaserver2
+configure, */Makefile.in:  Rebuilt with Curl support
+common/cconfig.h: Add note about METASERVER2 (controlled via configure)
+common/client.c: Add metaserver2 global
+common/client.h: Add metaserver2 global
+common/config.h.in: Rebuilt by autoheader.
+common/init.c: Add call to init_metaserver()
+common/metaserver.c: Support for metaserver2.  More fields in Meta_Info.
+  Re-arrange file a little so logical functions are together.
+common/metaserver.h: New fields in Meta_Info, some renamed to keep
+  it consistent accross all of metaserver2.
+common/proto.h: rebuilt
+gtk-v2/src/metaserver.c: Add support for threaded metaserver2 retrievals -
+  need to make sure data is accessed in thread safe way, also need to 
+  add check for status of retrieval thread.
+MSW 2007-08-31
+
 Fix map not updated at tick causing items to appear non animated.
  gtk/gx11.c
  gtk-v2/src/main.c
