@@ -3561,6 +3561,10 @@ arch flagstone
 x 22
 y 21
 end
+arch swall_1_4_half
+x 22
+y 21
+end
 arch cave_13
 x 22
 y 21
@@ -3817,15 +3821,15 @@ arch marble
 x 23
 y 20
 end
-arch flagstone
-x 23
-y 21
-end
 arch dungeon_magic
 x 23
 y 21
 end
-arch swall_1_4
+arch flagstone
+x 23
+y 21
+end
+arch swall_2_1_2
 x 23
 y 21
 end
@@ -4004,15 +4008,15 @@ arch marble
 x 24
 y 20
 end
-arch flagstone
-x 24
-y 21
-end
 arch dungeon_magic
 x 24
 y 21
 end
-arch swall_1_3
+arch flagstone
+x 24
+y 21
+end
+arch swall_2_1_2
 x 24
 y 21
 end
@@ -4192,6 +4196,10 @@ x 25
 y 20
 end
 arch flagstone
+x 25
+y 21
+end
+arch swall_1_3_half
 x 25
 y 21
 end
