@@ -391,6 +391,10 @@ arch marble
 x 3
 y 13
 end
+arch swall_1_4_half
+x 3
+y 13
+end
 arch cwall_1_2
 x 3
 y 13
@@ -470,15 +474,15 @@ arch marble
 x 4
 y 12
 end
-arch marble
-x 4
-y 13
-end
 arch dungeon_magic
 x 4
 y 13
 end
-arch swall_1_4
+arch marble
+x 4
+y 13
+end
+arch swall_2_1_2
 x 4
 y 13
 end
@@ -573,11 +577,11 @@ arch marble
 x 5
 y 12
 end
-arch marble
+arch dungeon_magic
 x 5
 y 13
 end
-arch dungeon_magic
+arch marble
 x 5
 y 13
 end
@@ -620,6 +624,10 @@ arch cwall_0
 x 6
 y 2
 end
+arch swall_1_1_half
+x 6
+y 2
+end
 arch marble
 x 6
 y 3
@@ -629,6 +637,10 @@ x 6
 y 3
 end
 arch marble
+x 6
+y 4
+end
+arch swall_1_2_half
 x 6
 y 4
 end
@@ -688,11 +700,11 @@ arch marble
 x 6
 y 12
 end
-arch marble
+arch dungeon_magic
 x 6
 y 13
 end
-arch dungeon_magic
+arch marble
 x 6
 y 13
 end
@@ -802,11 +814,11 @@ arch marble
 x 7
 y 12
 end
-arch marble
+arch dungeon_magic
 x 7
 y 13
 end
-arch dungeon_magic
+arch marble
 x 7
 y 13
 end
@@ -920,11 +932,11 @@ arch marble
 x 8
 y 12
 end
-arch marble
+arch dungeon_magic
 x 8
 y 13
 end
-arch dungeon_magic
+arch marble
 x 8
 y 13
 end
@@ -967,6 +979,10 @@ arch cwall_0
 x 9
 y 2
 end
+arch swall_1_1_half
+x 9
+y 2
+end
 arch marble
 x 9
 y 3
@@ -976,6 +992,10 @@ x 9
 y 3
 end
 arch marble
+x 9
+y 4
+end
+arch swall_1_2_half
 x 9
 y 4
 end
@@ -1035,11 +1055,11 @@ arch marble
 x 9
 y 12
 end
-arch marble
+arch dungeon_magic
 x 9
 y 13
 end
-arch dungeon_magic
+arch marble
 x 9
 y 13
 end
@@ -1138,11 +1158,11 @@ arch marble
 x 10
 y 12
 end
-arch marble
+arch dungeon_magic
 x 10
 y 13
 end
-arch dungeon_magic
+arch marble
 x 10
 y 13
 end
@@ -1225,15 +1245,15 @@ arch marble
 x 11
 y 12
 end
-arch marble
-x 11
-y 13
-end
 arch dungeon_magic
 x 11
 y 13
 end
-arch swall_1_3
+arch marble
+x 11
+y 13
+end
+arch swall_2_1_2
 x 11
 y 13
 end
@@ -1337,6 +1357,10 @@ x 12
 y 12
 end
 arch marble
+x 12
+y 13
+end
+arch swall_1_3_half
 x 12
 y 13
 end
