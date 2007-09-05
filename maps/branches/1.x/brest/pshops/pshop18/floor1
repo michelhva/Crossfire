@@ -2810,7 +2810,7 @@ end
 arch check_floor
 slaying pshop18
 connected 1
-walk_off 1
+move_off walk
 x 12
 y 13
 end
@@ -2830,7 +2830,7 @@ end
 arch check_floor
 slaying pshop18
 no_pass 1
-walk_off 1
+move_off walk
 x 12
 y 14
 end
@@ -2851,7 +2851,7 @@ end
 arch check_floor
 slaying pshop18
 connected 1
-walk_off 1
+move_off walk
 x 12
 y 15
 end
@@ -2876,7 +2876,7 @@ end
 arch check_floor
 slaying pshop18
 connected 2
-walk_off 1
+move_off walk
 x 12
 y 17
 end
@@ -2904,7 +2904,7 @@ end
 arch check_floor
 slaying pshop18
 no_pass 1
-walk_off 1
+move_off walk
 x 12
 y 18
 end
@@ -2925,7 +2925,7 @@ end
 arch check_floor
 slaying pshop18
 connected 2
-walk_off 1
+move_off walk
 x 12
 y 19
 end

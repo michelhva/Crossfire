@@ -3017,8 +3017,7 @@ msg
 You hear a gate open.
 endmsg
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 x 17
 y 26
 end
@@ -4209,8 +4208,7 @@ msg
 Click!
 endmsg
 connected 15
-walk_on 0
-fly_on 0
+move_on 0
 x 24
 y 22
 end
@@ -4404,8 +4402,7 @@ msg
 Click!
 endmsg
 connected 18
-walk_on 0
-fly_on 0
+move_on 0
 x 25
 y 22
 end
@@ -4590,8 +4587,7 @@ y 21
 end
 arch magic_mouth
 connected 17
-walk_on 0
-fly_on 0
+move_on 0
 x 26
 y 22
 end

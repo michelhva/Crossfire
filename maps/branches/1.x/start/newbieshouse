@@ -1250,8 +1250,7 @@ and by triggering a (sometimes hidden) button or switch.
 Be careful not to stand in the way when they swing
 close again...Ouch.
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 4
 y 7
 end
@@ -1440,8 +1439,7 @@ msg
 You would have been quite badly hurt by that trap...
 endmsg
 connected 87
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 x 4
 y 25
@@ -2201,8 +2199,7 @@ arch sign_w
 msg
 Beds to reality
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 7
 y 10
 end
@@ -2265,7 +2262,7 @@ To fight, nothing is more easy.
 Just run into the ants.
 -------------------
 endmsg
-walk_on 1
+move_on walk
 x 7
 y 15
 end
@@ -2789,8 +2786,7 @@ like this one in the game.
 Never forget to read them.
 They give you useful information.
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 9
 y 5
 end
@@ -3425,8 +3421,7 @@ arch sign_e
 msg
 Doors and keys.
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 11
 y 10
 end
@@ -3476,7 +3471,7 @@ and talk with Manu, the crazy
 key binder.
 -------------------
 endmsg
-walk_on 1
+move_on walk
 x 11
 y 12
 end
@@ -4797,8 +4792,7 @@ an arrow or a bolt.
 There are also locked doors which
 can only be opened with special keys...
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 15
 y 9
 end

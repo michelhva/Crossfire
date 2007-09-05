@@ -4406,7 +4406,7 @@ lifesave 0
 attacktype 0
 hp 0
 dam 0
-walk_on 0
+move_on 0
 x 23
 y 25
 end
@@ -5519,8 +5519,7 @@ Hooray! The potion is completed. Now my
 friend Gorgon can be cured.
 endmsg
 connected 14
-walk_on 0
-fly_on 0
+move_on 0
 x 29
 y 26
 end
@@ -5531,8 +5530,7 @@ You put the shadow viper's skin
 into the cauldron.
 endmsg
 connected 13
-walk_on 0
-fly_on 0
+move_on 0
 x 29
 y 26
 end
@@ -5543,8 +5541,7 @@ You put the scorpion's stinger into
 the cauldron.
 endmsg
 connected 12
-walk_on 0
-fly_on 0
+move_on 0
 x 29
 y 26
 end
@@ -5555,8 +5552,7 @@ You put the beholder's tongue into
 the cauldron.
 endmsg
 connected 11
-walk_on 0
-fly_on 0
+move_on 0
 x 29
 y 26
 end
@@ -5930,8 +5926,7 @@ Bonzo the Banker cries:
 Guards!! Kill this filthy thief!
 endmsg
 connected 20
-walk_on 0
-fly_on 0
+move_on 0
 x 31
 y 26
 end

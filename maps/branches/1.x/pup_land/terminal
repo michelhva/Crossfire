@@ -1376,8 +1376,7 @@ You must have a Regular Army Passport to
 enter this gate. Please present your passport.
 endmsg
 connected 1002
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 14
 y 9
@@ -1393,8 +1392,7 @@ msg
 Ah! Army personnel. Please enter.
 endmsg
 connected 1001
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 14
 y 9

@@ -1246,8 +1246,7 @@ Dungeon Masters to be able
 to reset the Scorn Sale Shop
 if necessary.
 endmsg
-walk_on 1
-fly_on 1
+move_on walk fly_low
 x 5
 y 8
 end

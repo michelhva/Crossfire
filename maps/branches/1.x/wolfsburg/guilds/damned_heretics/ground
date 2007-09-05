@@ -5121,8 +5121,6 @@ name Scorn
 slaying /world/world_105_115
 hp 5
 sp 38
-walk_on 0
-fly_on 0
 x 24
 y 1
 end
@@ -5144,8 +5142,6 @@ name Brest
 slaying /world/world_107_123
 hp 27
 sp 35
-walk_on 0
-fly_on 0
 x 24
 y 2
 end
@@ -5166,8 +5162,6 @@ name Santo Dominion
 slaying /world/world_102_108
 hp 20
 sp 14
-walk_on 0
-fly_on 0
 x 24
 y 3
 end
@@ -5189,8 +5183,6 @@ name Navar
 slaying /world/world_121_116
 hp 48
 sp 45
-walk_on 0
-fly_on 0
 x 24
 y 4
 end
@@ -5212,8 +5204,6 @@ name Darcap
 slaying /world/world_116_102
 hp 24
 sp 41
-walk_on 0
-fly_on 0
 x 24
 y 5
 end
@@ -5232,8 +5222,6 @@ end
 arch perm_magic_portal
 name Pupland Terminal
 slaying /pup_land/terminal
-walk_on 0
-fly_on 0
 x 24
 y 6
 end
@@ -5253,8 +5241,6 @@ end
 arch perm_magic_portal
 name Nurnberg
 slaying /pup_land/nurnberg/city
-walk_on 0
-fly_on 0
 x 24
 y 7
 end
@@ -5276,8 +5262,6 @@ name Ancient Pupland
 slaying /pup_land/nurnberg/apartment/to_past
 hp 4
 sp 4
-walk_on 0
-fly_on 0
 x 24
 y 8
 end
@@ -5349,8 +5333,6 @@ unique 1
 is_animated 0
 hp 1
 sp 1
-walk_on 0
-fly_on 0
 x 24
 y 13
 end

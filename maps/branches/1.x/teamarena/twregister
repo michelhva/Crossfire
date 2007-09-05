@@ -404,8 +404,7 @@ msg
 @match *
 Stand back.  Guards only.
 endmsg
-walk_on 0
-fly_on 0
+move_on 0
 x 3
 y 6
 end
@@ -888,8 +887,7 @@ The Sphere draws it's power from the rubies.
 @match ruby|Ruby|rubies|Rubies
 Rubies are very valuable to our society.
 endmsg
-walk_on 0
-fly_on 0
+move_on 0
 x 6
 y 11
 end
@@ -1716,8 +1714,7 @@ Team 1 should enter on the left, and Team 2 on the right!
 Oh, we have been having some trouble powering the teleporters...
 You will probably need some more rubies to power them.  I think 250 should do it for your team for awhile..
 endmsg
-walk_on 0
-fly_on 0
+move_on 0
 x 13
 y 5
 end
@@ -1931,8 +1928,6 @@ arch marker
 slaying tw_spectator
 connected 21
 food 2500
-walk_on 0
-walk_off 0
 x 14
 y 11
 end

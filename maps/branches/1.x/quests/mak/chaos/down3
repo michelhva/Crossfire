@@ -4952,8 +4952,7 @@ food 1
 x 18
 y 2
 connected 2
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 msg
@@ -4964,7 +4963,7 @@ endmsg
 food 1
 x 18
 y 2
-fly_on 0
+move_on walk
 end
 arch dungeon_floor
 x 18

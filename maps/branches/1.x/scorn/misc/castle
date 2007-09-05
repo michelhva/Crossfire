@@ -1494,8 +1494,7 @@ msg
 The Guards kneel to the 
 Prince of Scorn
 endmsg
-walk_on 0
-fly_on 0
+move_on 0
 x 10
 y 14
 connected 25
@@ -1512,8 +1511,7 @@ endmsg
 x 10
 y 15
 connected 22
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch cobblestones2
 x 10
@@ -1531,8 +1529,7 @@ endmsg
 x 10
 y 16
 connected 20
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch cobblestones2
 x 10
@@ -1671,42 +1668,42 @@ slaying Noble Rank Prince
 x 11
 y 15
 connected 25
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Marquis
 x 11
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Earl
 x 11
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Count
 x 11
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Duke
 x 11
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Archduke
 x 11
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 11
@@ -1717,7 +1714,7 @@ slaying Noble Rank Baron
 x 11
 y 16
 connected 22
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 11
@@ -1728,14 +1725,14 @@ slaying Noble Rank Baronet
 x 11
 y 17
 connected 21
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Knight
 x 11
 y 17
 connected 20
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 11
@@ -1860,42 +1857,42 @@ slaying Noble Rank Prince
 x 12
 y 15
 connected 25
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Marquis
 x 12
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Earl
 x 12
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Count
 x 12
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Duke
 x 12
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Archduke
 x 12
 y 15
 connected 23
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 12
@@ -1906,7 +1903,7 @@ slaying Noble Rank Baron
 x 12
 y 16
 connected 22
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 12
@@ -1917,14 +1914,14 @@ slaying Noble Rank Baronet
 x 12
 y 17
 connected 21
-walk_off 0
+move_off 0
 end
 arch check_inv
 slaying Noble Rank Knight
 x 12
 y 17
 connected 20
-walk_off 0
+move_off 0
 end
 arch cobblestones2
 x 12
@@ -2064,8 +2061,7 @@ The guards bow to the Noble of Scorn
 endmsg
 x 13
 y 15
-walk_on 0
-fly_on 0
+move_on 0
 connected 23
 end
 arch cobblestones2
@@ -2084,8 +2080,7 @@ endmsg
 x 13
 y 16
 connected 21
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch cobblestones2
 x 13

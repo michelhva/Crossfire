@@ -15,7 +15,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 3
 sp 13
-fly_on 0
+move_on walk
 end
 arch brush
 end
@@ -71,7 +71,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 3
 sp 13
-fly_on 0
+move_on walk
 y 9
 end
 arch brush
@@ -610,7 +610,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 3
 sp 13
-fly_on 0
+move_on walk
 x 9
 end
 arch brush
@@ -676,7 +676,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 3
 sp 13
-fly_on 0
+move_on walk
 x 9
 y 9
 end

@@ -1193,8 +1193,7 @@ The Administration
 endmsg
 x 4
 y 3
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 4
