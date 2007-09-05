@@ -11244,8 +11244,7 @@ Run away! Run away!
 endmsg
 x 27
 y 49
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
 x 27
@@ -13134,8 +13133,7 @@ Run away! Run away!
 endmsg
 x 31
 y 49
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
 x 31
