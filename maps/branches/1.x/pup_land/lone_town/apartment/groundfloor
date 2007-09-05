@@ -2366,8 +2366,7 @@ endmsg
 x 10
 y 31
 connected 1001
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor
@@ -2390,8 +2389,7 @@ endmsg
 x 10
 y 32
 connected 1003
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor2
@@ -2414,8 +2412,7 @@ endmsg
 x 10
 y 33
 connected 1005
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor
@@ -4184,8 +4181,7 @@ endmsg
 x 16
 y 31
 connected 1007
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor
@@ -4204,8 +4200,7 @@ endmsg
 x 16
 y 32
 connected 1009
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor2
@@ -4224,8 +4219,7 @@ endmsg
 x 16
 y 33
 connected 1011
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor
@@ -6073,8 +6067,7 @@ endmsg
 x 24
 y 35
 connected 3201
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch woodfloor
@@ -6543,7 +6536,7 @@ x 26
 y 35
 last_sp 0
 connected 3201
-walk_off 0
+move_off 0
 end
 arch altar
 name 3200

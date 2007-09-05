@@ -745,7 +745,7 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
+move_on walk
 x 6
 y 16
 end
@@ -840,7 +840,7 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
+move_on walk
 x 7
 y 16
 end
@@ -953,7 +953,7 @@ arch invis_exit
 slaying /world/world_121_116
 hp 46
 sp 40
-fly_on 0
+move_on walk
 x 8
 y 16
 end

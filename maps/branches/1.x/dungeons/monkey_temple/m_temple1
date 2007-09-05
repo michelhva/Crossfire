@@ -2973,7 +2973,7 @@ arch magic_mouth
 msg
 This wall looks like it might be on some sort of rail...
 endmsg
-fly_on 0
+move_on walk
 food 1
 x 19
 y 14
@@ -3475,7 +3475,7 @@ arch magic_mouth
 msg
 The base of the wall is suspiciously clean from swamp grime.
 endmsg
-fly_on 0
+move_on walk
 food 1
 x 22
 y 11

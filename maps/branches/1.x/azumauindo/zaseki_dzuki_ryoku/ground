@@ -8714,8 +8714,6 @@ hp 5
 sp 38
 x 24
 y 1
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8739,8 +8737,6 @@ hp 27
 sp 35
 x 24
 y 2
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8762,8 +8758,6 @@ hp 20
 sp 14
 x 24
 y 3
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8787,8 +8781,6 @@ hp 48
 sp 45
 x 24
 y 4
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8812,8 +8804,6 @@ hp 24
 sp 41
 x 24
 y 5
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8833,8 +8823,6 @@ name_pl Pupland Terminal
 slaying /pup_land/terminal
 x 24
 y 6
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8856,8 +8844,6 @@ name_pl Nurnberg
 slaying /pup_land/nurnberg/city
 x 24
 y 7
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8881,8 +8867,6 @@ hp 4
 sp 4
 x 24
 y 8
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -8953,9 +8937,7 @@ hp 0
 sp 0
 x 24
 y 13
-walk_on 0
 is_animated 0
-fly_on 0
 unique 1
 end
 arch grass

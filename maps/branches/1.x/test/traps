@@ -1255,8 +1255,7 @@ close again...Ouch.
 endmsg
 x 4
 y 7
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 4
@@ -1445,8 +1444,7 @@ endmsg
 x 4
 y 25
 connected 87
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch trap
@@ -2204,8 +2202,7 @@ Beds to reality
 endmsg
 x 7
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 7
@@ -2268,7 +2265,7 @@ Just run into the ants.
 endmsg
 x 7
 y 15
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 7
@@ -2784,8 +2781,7 @@ They give you useful information.
 endmsg
 x 9
 y 5
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 9
@@ -3438,8 +3434,7 @@ Doors and keys.
 endmsg
 x 11
 y 10
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 11
@@ -3489,7 +3484,7 @@ key binder.
 endmsg
 x 11
 y 12
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 11
@@ -4808,8 +4803,7 @@ can only be opened with special keys...
 endmsg
 x 15
 y 9
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 15

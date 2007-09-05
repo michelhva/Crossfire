@@ -836,12 +836,12 @@ end
 arch pstone_1
 x 6
 y 5
-walk_off 1
+move_off walk
 end
 arch bench_1_1
 x 6
 y 5
-fly_on 1
+move_on fly_low
 end
 arch mover_3
 x 6
@@ -865,9 +865,8 @@ end
 arch bench_2_1_1
 x 6
 y 6
-walk_on 1
-walk_off 1
-fly_on 1
+move_on walk fly_low
+move_off walk
 end
 arch mover_3
 x 6
@@ -891,9 +890,8 @@ end
 arch bench_2_1_1
 x 6
 y 7
-walk_on 1
-walk_off 1
-fly_on 1
+move_on walk fly_low
+move_off walk
 end
 arch mover_3
 x 6
@@ -917,9 +915,8 @@ end
 arch bench_2_1_1
 x 6
 y 8
-walk_on 1
-walk_off 1
-fly_on 1
+move_on walk fly_low
+move_off walk
 end
 arch mover_3
 x 6
@@ -943,9 +940,8 @@ end
 arch bench_2_1_1
 x 6
 y 9
-walk_on 1
-walk_off 1
-fly_on 1
+move_on walk fly_low
+move_off walk
 end
 arch mover_3
 x 6

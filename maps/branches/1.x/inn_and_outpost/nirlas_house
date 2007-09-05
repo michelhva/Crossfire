@@ -439,7 +439,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 1
 y 15
 end
@@ -451,7 +451,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 1
 y 16
 end
@@ -463,7 +463,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 1
 y 17
 end
@@ -475,7 +475,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 1
 y 18
 end
@@ -702,7 +702,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 2
 y 15
 end
@@ -714,7 +714,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 2
 y 16
 end
@@ -726,7 +726,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 2
 y 17
 end
@@ -738,7 +738,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 2
 y 18
 end
@@ -975,7 +975,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 3
 y 15
 end
@@ -987,7 +987,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 3
 y 16
 end
@@ -999,7 +999,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 3
 y 17
 end
@@ -1011,7 +1011,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 3
 y 18
 end
@@ -1023,7 +1023,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 3
 y 19
 end
@@ -1301,7 +1301,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 4
 y 16
 end
@@ -1313,7 +1313,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 4
 y 17
 end
@@ -1581,7 +1581,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 5
 y 16
 end
@@ -1593,7 +1593,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 5
 y 17
 end
@@ -2030,7 +2030,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 7
 y 14
 end
@@ -2042,7 +2042,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 7
 y 15
 end
@@ -2054,7 +2054,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 7
 y 16
 end
@@ -2066,7 +2066,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 7
 y 17
 end
@@ -2078,7 +2078,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 7
 y 18
 end
@@ -2270,7 +2270,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 8
 y 14
 end
@@ -2296,7 +2296,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 8
 y 17
 end
@@ -2347,7 +2347,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 8
 y 25
 end
@@ -2511,7 +2511,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 9
 y 17
 end
@@ -2570,7 +2570,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 9
 y 25
 end
@@ -2582,7 +2582,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 9
 y 26
 end
@@ -2594,7 +2594,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 9
 y 27
 end
@@ -2732,7 +2732,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 10
 y 17
 end
@@ -2806,7 +2806,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 10
 y 26
 end
@@ -2818,7 +2818,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 10
 y 27
 end
@@ -2970,7 +2970,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 11
 y 17
 end
@@ -3047,7 +3047,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 11
 y 27
 end
@@ -3201,7 +3201,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 12
 y 17
 end
@@ -3431,7 +3431,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 17
 end
@@ -3443,7 +3443,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 18
 end
@@ -3455,7 +3455,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 19
 end
@@ -3467,7 +3467,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 20
 end
@@ -3479,7 +3479,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 21
 end
@@ -3533,7 +3533,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 13
 y 28
 end
@@ -3683,7 +3683,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 16
 end
@@ -3695,7 +3695,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 17
 end
@@ -3707,7 +3707,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 18
 end
@@ -3719,7 +3719,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 19
 end
@@ -3731,7 +3731,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 20
 end
@@ -3778,7 +3778,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 26
 end
@@ -3790,7 +3790,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 27
 end
@@ -3802,7 +3802,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 14
 y 28
 end
@@ -3841,7 +3841,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 2
 end
@@ -3853,7 +3853,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 3
 end
@@ -3865,7 +3865,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 4
 end
@@ -3877,7 +3877,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 5
 end
@@ -3894,7 +3894,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 7
 end
@@ -3970,7 +3970,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 16
 end
@@ -3982,7 +3982,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 17
 end
@@ -3998,7 +3998,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 18
 end
@@ -4010,7 +4010,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 19
 end
@@ -4022,7 +4022,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 20
 end
@@ -4065,7 +4065,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 26
 end
@@ -4077,7 +4077,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 27
 end
@@ -4089,7 +4089,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 15
 y 28
 end
@@ -4121,7 +4121,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 1
 end
@@ -4133,7 +4133,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 2
 end
@@ -4145,7 +4145,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 3
 end
@@ -4157,7 +4157,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 4
 end
@@ -4169,7 +4169,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 5
 end
@@ -4186,7 +4186,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 7
 end
@@ -4198,7 +4198,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 8
 end
@@ -4210,7 +4210,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 9
 end
@@ -4222,7 +4222,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 10
 end
@@ -4234,7 +4234,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 11
 end
@@ -4246,7 +4246,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 12
 end
@@ -4293,7 +4293,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 18
 end
@@ -4305,7 +4305,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 19
 end
@@ -4317,7 +4317,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 20
 end
@@ -4368,7 +4368,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 26
 end
@@ -4380,7 +4380,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 27
 end
@@ -4392,7 +4392,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 16
 y 28
 end
@@ -4424,7 +4424,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 1
 end
@@ -4436,7 +4436,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 2
 end
@@ -4448,7 +4448,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 3
 end
@@ -4460,7 +4460,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 4
 end
@@ -4472,7 +4472,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 5
 end
@@ -4489,7 +4489,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 7
 end
@@ -4501,7 +4501,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 8
 end
@@ -4513,7 +4513,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 9
 end
@@ -4525,7 +4525,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 10
 end
@@ -4537,7 +4537,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 11
 end
@@ -4585,7 +4585,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 18
 end
@@ -4597,7 +4597,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 19
 end
@@ -4609,7 +4609,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 20
 end
@@ -4665,7 +4665,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 27
 end
@@ -4677,7 +4677,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 17
 y 28
 end
@@ -4709,7 +4709,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 18
 y 1
 end
@@ -4908,7 +4908,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 18
 y 27
 end
@@ -4920,7 +4920,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 18
 y 28
 end
@@ -5121,7 +5121,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 19
 y 26
 end
@@ -5133,7 +5133,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 19
 y 27
 end
@@ -5145,7 +5145,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 19
 y 28
 end
@@ -5250,7 +5250,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 12
 end
@@ -5291,7 +5291,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 18
 end
@@ -5303,7 +5303,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 19
 end
@@ -5350,7 +5350,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 25
 end
@@ -5362,7 +5362,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 26
 end
@@ -5374,7 +5374,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 27
 end
@@ -5386,7 +5386,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 20
 y 28
 end
@@ -5510,7 +5510,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 12
 end
@@ -5522,7 +5522,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 13
 end
@@ -5612,7 +5612,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 24
 end
@@ -5624,7 +5624,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 25
 end
@@ -5636,7 +5636,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 26
 end
@@ -5648,7 +5648,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 27
 end
@@ -5660,7 +5660,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 21
 y 28
 end
@@ -5833,7 +5833,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 20
 end
@@ -5845,7 +5845,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 21
 end
@@ -5857,7 +5857,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 22
 end
@@ -5869,7 +5869,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 23
 end
@@ -5881,7 +5881,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 24
 end
@@ -5893,7 +5893,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 25
 end
@@ -5905,7 +5905,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 26
 end
@@ -5917,7 +5917,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 27
 end
@@ -5929,7 +5929,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 22
 y 28
 end
@@ -6076,7 +6076,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 18
 end
@@ -6088,7 +6088,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 19
 end
@@ -6100,7 +6100,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 20
 end
@@ -6112,7 +6112,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 21
 end
@@ -6124,7 +6124,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 22
 end
@@ -6136,7 +6136,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 23
 end
@@ -6148,7 +6148,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 24
 end
@@ -6160,7 +6160,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 25
 end
@@ -6172,7 +6172,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 26
 end
@@ -6184,7 +6184,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 27
 end
@@ -6196,7 +6196,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 23
 y 28
 end
@@ -6307,7 +6307,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 13
 end
@@ -6319,7 +6319,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 14
 end
@@ -6345,7 +6345,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 17
 end
@@ -6357,7 +6357,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 18
 end
@@ -6369,7 +6369,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 19
 end
@@ -6381,7 +6381,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 24
 y 20
 end
@@ -6567,7 +6567,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 11
 end
@@ -6579,7 +6579,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 12
 end
@@ -6591,7 +6591,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 13
 end
@@ -6603,7 +6603,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 14
 end
@@ -6615,7 +6615,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 15
 end
@@ -6627,7 +6627,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 16
 end
@@ -6639,7 +6639,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 17
 end
@@ -6651,7 +6651,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 18
 end
@@ -6663,7 +6663,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 19
 end
@@ -6675,7 +6675,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 25
 y 20
 end
@@ -6805,7 +6805,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 11
 end
@@ -6817,7 +6817,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 12
 end
@@ -6829,7 +6829,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 13
 end
@@ -6841,7 +6841,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 14
 end
@@ -6853,7 +6853,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 15
 end
@@ -6865,7 +6865,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 16
 end
@@ -6877,7 +6877,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 17
 end
@@ -6889,7 +6889,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 18
 end
@@ -6901,7 +6901,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 19
 end
@@ -6913,7 +6913,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 26
 y 20
 end
@@ -7032,7 +7032,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 11
 end
@@ -7044,7 +7044,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 12
 end
@@ -7056,7 +7056,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 13
 end
@@ -7068,7 +7068,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 14
 end
@@ -7080,7 +7080,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 15
 end
@@ -7092,7 +7092,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 16
 end
@@ -7104,7 +7104,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 17
 end
@@ -7116,7 +7116,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 18
 end
@@ -7128,7 +7128,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 19
 end
@@ -7140,7 +7140,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 27
 y 20
 end
@@ -7197,7 +7197,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 4
 end
@@ -7251,7 +7251,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 11
 end
@@ -7263,7 +7263,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 12
 end
@@ -7275,7 +7275,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 13
 end
@@ -7287,7 +7287,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 14
 end
@@ -7299,7 +7299,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 15
 end
@@ -7311,7 +7311,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 16
 end
@@ -7323,7 +7323,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 17
 end
@@ -7335,7 +7335,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 18
 end
@@ -7347,7 +7347,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 19
 end
@@ -7359,7 +7359,7 @@ arch invis_exit
 slaying /world/world_116_101
 hp 4
 sp 25
-fly_on 0
+move_on walk
 x 28
 y 20
 end

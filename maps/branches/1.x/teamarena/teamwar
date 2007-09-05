@@ -1043,7 +1043,7 @@ end
 arch button_trigger
 invisible 1
 connected 2
-walk_off 0
+move_off 0
 x 4
 y 16
 end
@@ -4732,7 +4732,7 @@ end
 arch button_trigger
 invisible 1
 connected 1
-walk_off 0
+move_off 0
 x 19
 y 20
 end
@@ -8366,7 +8366,7 @@ end
 arch button_trigger
 invisible 1
 connected 3
-walk_off 0
+move_off 0
 x 34
 y 16
 end

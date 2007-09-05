@@ -626,7 +626,7 @@ arch oakdoor
 slaying /world/world_116_104
 hp 13
 sp 25
-walk_on 1
+move_on walk
 x 5
 end
 arch woodfloor
@@ -725,7 +725,7 @@ arch oakdoor
 slaying /world/world_116_104
 hp 13
 sp 20
-walk_on 1
+move_on walk
 x 5
 y 20
 end
@@ -1929,7 +1929,7 @@ arch oakdoor
 slaying /world/world_116_104
 hp 18
 sp 25
-walk_on 1
+move_on walk
 x 15
 end
 arch woodfloor
@@ -2028,7 +2028,7 @@ arch oakdoor
 slaying /world/world_116_104
 hp 18
 sp 20
-walk_on 1
+move_on walk
 x 15
 y 20
 end

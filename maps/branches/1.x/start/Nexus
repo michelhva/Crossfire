@@ -1641,7 +1641,7 @@ This does however mean that many others may be adventuring in the same areas.
 endmsg
 x 9
 y 12
-walk_on 1
+move_on walk
 end
 arch tile_white_floor
 x 9
@@ -2133,8 +2133,7 @@ Take this teleporter to the beginners house where you can learn some basic skill
 endmsg
 x 12
 y 9
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch tile_white_floor
 x 12
@@ -2681,7 +2680,7 @@ either in beginners house or Scorn. You have been warned.
 endmsg
 x 15
 y 12
-walk_on 1
+move_on walk
 end
 arch tile_white_floor
 x 15

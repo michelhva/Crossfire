@@ -1332,7 +1332,7 @@ y 6
 type 64
 last_sp 1
 connected 4
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 8
@@ -1579,7 +1579,7 @@ x 9
 y 9
 type 64
 connected 2
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 9
@@ -1602,8 +1602,8 @@ y 11
 type 64
 last_sp 1
 connected 2
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 end
 arch dungeon_magic
 x 9
@@ -1616,8 +1616,8 @@ x 9
 y 12
 type 64
 connected 20
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 end
 arch woodfloor
 x 9
@@ -1640,8 +1640,8 @@ x 9
 y 14
 type 64
 connected 20
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 end
 arch dungeon_magic
 x 9
@@ -1778,7 +1778,7 @@ x 10
 y 9
 type 64
 connected 2
-walk_on 1
+move_on walk
 end
 arch woodfloor
 x 10
@@ -1801,7 +1801,7 @@ y 11
 type 64
 last_sp 1
 connected 2
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 10
@@ -1814,8 +1814,8 @@ x 10
 y 12
 type 64
 connected 20
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 end
 arch woodfloor
 x 10
@@ -1838,8 +1838,8 @@ x 10
 y 14
 type 64
 connected 20
-walk_on 1
-walk_off 1
+move_on walk
+move_off walk
 end
 arch dungeon_magic
 x 10
@@ -2426,7 +2426,7 @@ y 5
 type 64
 last_sp 1
 connected 4
-walk_on 1
+move_on walk
 end
 arch dungeon_magic
 x 14

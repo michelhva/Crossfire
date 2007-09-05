@@ -1972,8 +1972,7 @@ msg
 The wind howls.
 endmsg
 connected 4
-walk_on 0
-fly_on 0
+move_on 0
 x 13
 y 17
 end
@@ -2089,8 +2088,7 @@ msg
 Dust clogs your nose, it's hard to see.
 endmsg
 connected 3
-walk_on 0
-fly_on 0
+move_on 0
 x 14
 y 11
 end
@@ -2892,8 +2890,7 @@ msg
 Ooooooo beware the Dusty Death...
 endmsg
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 food 1
 x 19
 y 11

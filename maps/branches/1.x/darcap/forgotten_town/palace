@@ -3080,8 +3080,7 @@ the test at the beginning twice.
 endmsg
 x 18
 y 4
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch marble
 x 18

@@ -2950,7 +2950,7 @@ end
 arch mover_5
 attacktype 1
 level 1
-fly_on 0
+move_on walk
 x 21
 y 9
 end
@@ -2966,7 +2966,7 @@ end
 arch mover_5
 attacktype 1
 level 1
-fly_on 0
+move_on walk
 x 21
 y 10
 end
