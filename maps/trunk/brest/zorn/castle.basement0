@@ -1,5 +1,5 @@
 arch map
-name castle.basement0
+name Zorn Castle Basement
 region brest
 darkness 5
 width 59
@@ -1954,6 +1954,10 @@ arch trap_rocks
 x 6
 y 11
 end
+arch dungeon_magic
+x 6
+y 12
+end
 arch earth
 name dirt floor
 x 6
@@ -1976,10 +1980,6 @@ x 6
 y 12
 end
 arch trap_rocks
-x 6
-y 12
-end
-arch dungeon_magic
 x 6
 y 12
 end
@@ -2003,16 +2003,16 @@ name dirt floor
 x 6
 y 16
 end
+arch dungeon_magic
+x 6
+y 17
+end
 arch earth
 name dirt floor
 x 6
 y 17
 end
 arch trap_rocks
-x 6
-y 17
-end
-arch dungeon_magic
 x 6
 y 17
 end
@@ -2046,16 +2046,16 @@ name dirt floor
 x 6
 y 23
 end
+arch dungeon_magic
+x 6
+y 24
+end
 arch earth
 name dirt floor
 x 6
 y 24
 end
 arch trap_rocks
-x 6
-y 24
-end
-arch dungeon_magic
 x 6
 y 24
 end
@@ -2089,16 +2089,16 @@ name dirt floor
 x 6
 y 30
 end
+arch dungeon_magic
+x 6
+y 31
+end
 arch earth
 name dirt floor
 x 6
 y 31
 end
 arch trap_rocks
-x 6
-y 31
-end
-arch dungeon_magic
 x 6
 y 31
 end
@@ -2152,6 +2152,10 @@ name dirt floor
 x 6
 y 41
 end
+arch dungeon_magic
+x 6
+y 42
+end
 arch earth
 name dirt floor
 x 6
@@ -2163,7 +2167,7 @@ y 42
 end
 arch dungeon_magic
 x 6
-y 42
+y 43
 end
 arch earth
 name dirt floor
@@ -2171,10 +2175,6 @@ x 6
 y 43
 end
 arch trap_rocks
-x 6
-y 43
-end
-arch dungeon_magic
 x 6
 y 43
 end
@@ -2213,6 +2213,10 @@ name dirt floor
 x 6
 y 50
 end
+arch dungeon_magic
+x 6
+y 51
+end
 arch earth
 name dirt floor
 x 6
@@ -2227,10 +2231,6 @@ x 6
 y 51
 end
 arch trap_rocks
-x 6
-y 51
-end
-arch dungeon_magic
 x 6
 y 51
 end
@@ -2337,6 +2337,10 @@ name dirt floor
 x 7
 y 10
 end
+arch dungeon_magic
+x 7
+y 11
+end
 arch earth
 name dirt floor
 x 7
@@ -2364,7 +2368,7 @@ y 11
 end
 arch dungeon_magic
 x 7
-y 11
+y 12
 end
 arch earth
 name dirt floor
@@ -2388,10 +2392,6 @@ x 7
 y 12
 end
 arch trap_rocks
-x 7
-y 12
-end
-arch dungeon_magic
 x 7
 y 12
 end
@@ -2430,16 +2430,16 @@ name dirt floor
 x 7
 y 19
 end
+arch dungeon_magic
+x 7
+y 20
+end
 arch earth
 name dirt floor
 x 7
 y 20
 end
 arch trap_rocks
-x 7
-y 20
-end
-arch dungeon_magic
 x 7
 y 20
 end
@@ -2478,16 +2478,16 @@ name dirt floor
 x 7
 y 27
 end
+arch dungeon_magic
+x 7
+y 28
+end
 arch earth
 name dirt floor
 x 7
 y 28
 end
 arch trap_rocks
-x 7
-y 28
-end
-arch dungeon_magic
 x 7
 y 28
 end
@@ -2526,6 +2526,10 @@ name dirt floor
 x 7
 y 35
 end
+arch dungeon_magic
+x 7
+y 36
+end
 arch earth
 name dirt floor
 x 7
@@ -2537,7 +2541,7 @@ y 36
 end
 arch dungeon_magic
 x 7
-y 36
+y 37
 end
 arch earth
 name dirt floor
@@ -2550,7 +2554,7 @@ y 37
 end
 arch dungeon_magic
 x 7
-y 37
+y 38
 end
 arch earth
 name dirt floor
@@ -2558,10 +2562,6 @@ x 7
 y 38
 end
 arch trap_rocks
-x 7
-y 38
-end
-arch dungeon_magic
 x 7
 y 38
 end
@@ -2625,6 +2625,10 @@ name dirt floor
 x 7
 y 50
 end
+arch dungeon_magic
+x 7
+y 51
+end
 arch earth
 name dirt floor
 x 7
@@ -2639,10 +2643,6 @@ x 7
 y 51
 end
 arch trap_rocks
-x 7
-y 51
-end
-arch dungeon_magic
 x 7
 y 51
 end
@@ -3122,6 +3122,10 @@ arch dun4
 x 8
 y 50
 end
+arch dungeon_magic
+x 8
+y 51
+end
 arch earth
 name dirt floor
 x 8
@@ -3136,10 +3140,6 @@ x 8
 y 51
 end
 arch trap_rocks
-x 8
-y 51
-end
-arch dungeon_magic
 x 8
 y 51
 end
@@ -13999,6 +13999,10 @@ arch dun2
 x 38
 y 50
 end
+arch dungeon_magic
+x 38
+y 51
+end
 arch earth
 name dirt floor
 x 38
@@ -14033,10 +14037,6 @@ x 38
 y 51
 end
 arch trap_rocks
-x 38
-y 51
-end
-arch dungeon_magic
 x 38
 y 51
 end
@@ -17466,12 +17466,12 @@ arch cave4
 x 48
 y 6
 end
-arch earth
-name dirt floor
+arch dungeon_magic
 x 48
 y 7
 end
-arch dungeon_magic
+arch earth
+name dirt floor
 x 48
 y 7
 end
@@ -17871,12 +17871,12 @@ arch cave4
 x 49
 y 6
 end
-arch earth
-name dirt floor
+arch dungeon_magic
 x 49
 y 7
 end
-arch dungeon_magic
+arch earth
+name dirt floor
 x 49
 y 7
 end
@@ -18368,12 +18368,12 @@ arch cave4
 x 50
 y 6
 end
-arch earth
-name dirt floor
+arch dungeon_magic
 x 50
 y 7
 end
-arch dungeon_magic
+arch earth
+name dirt floor
 x 50
 y 7
 end
@@ -18775,6 +18775,10 @@ arch dun7
 x 50
 y 50
 end
+arch dungeon_magic
+x 50
+y 51
+end
 arch earth
 name dirt floor
 x 50
@@ -18793,10 +18797,6 @@ x 50
 y 51
 end
 arch trap_rocks
-x 50
-y 51
-end
-arch dungeon_magic
 x 50
 y 51
 end
@@ -18876,12 +18876,12 @@ arch cave4
 x 51
 y 6
 end
-arch earth
-name dirt floor
+arch dungeon_magic
 x 51
 y 7
 end
-arch dungeon_magic
+arch earth
+name dirt floor
 x 51
 y 7
 end
@@ -18901,6 +18901,10 @@ name dirt floor
 x 51
 y 8
 end
+arch dungeon_magic
+x 51
+y 9
+end
 arch earth
 name dirt floor
 x 51
@@ -18923,10 +18927,6 @@ x 51
 y 9
 end
 arch trap_rocks
-x 51
-y 9
-end
-arch dungeon_magic
 x 51
 y 9
 end
@@ -18990,6 +18990,10 @@ name dirt floor
 x 51
 y 21
 end
+arch dungeon_magic
+x 51
+y 22
+end
 arch earth
 name dirt floor
 x 51
@@ -19004,10 +19008,6 @@ x 51
 y 22
 end
 arch trap_rocks
-x 51
-y 22
-end
-arch dungeon_magic
 x 51
 y 22
 end
@@ -19046,6 +19046,10 @@ name dirt floor
 x 51
 y 29
 end
+arch dungeon_magic
+x 51
+y 30
+end
 arch earth
 name dirt floor
 x 51
@@ -19064,10 +19068,6 @@ x 51
 y 30
 end
 arch trap_rocks
-x 51
-y 30
-end
-arch dungeon_magic
 x 51
 y 30
 end
@@ -19131,6 +19131,10 @@ name dirt floor
 x 51
 y 42
 end
+arch dungeon_magic
+x 51
+y 43
+end
 arch earth
 name dirt floor
 x 51
@@ -19145,10 +19149,6 @@ x 51
 y 43
 end
 arch trap_rocks
-x 51
-y 43
-end
-arch dungeon_magic
 x 51
 y 43
 end
@@ -19182,6 +19182,10 @@ name dirt floor
 x 51
 y 49
 end
+arch dungeon_magic
+x 51
+y 50
+end
 arch earth
 name dirt floor
 x 51
@@ -19205,7 +19209,7 @@ y 50
 end
 arch dungeon_magic
 x 51
-y 50
+y 51
 end
 arch earth
 name dirt floor
@@ -19225,10 +19229,6 @@ x 51
 y 51
 end
 arch trap_rocks
-x 51
-y 51
-end
-arch dungeon_magic
 x 51
 y 51
 end
