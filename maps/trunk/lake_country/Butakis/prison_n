@@ -114,6 +114,11 @@ arch dungeon_floor
 x 1
 y 1
 end
+arch big_elec
+name Thundermate
+x 1
+y 1
+end
 arch dungeon_floor
 x 1
 y 2
@@ -149,6 +154,17 @@ end
 arch dungeon_floor
 x 1
 y 8
+end
+arch big_wiz
+name Fiery, Wist's fervent pupil
+hp 5500
+x 1
+y 8
+carrying 23700
+invisible 1
+arch chalice
+name chalice of fire
+end
 end
 arch dungeon_floor
 x 1
@@ -208,6 +224,11 @@ arch dungeon_floor
 x 2
 y 5
 end
+arch chinese_dragon
+name Snow
+x 2
+y 5
+end
 arch dungeon_floor
 x 2
 y 6
@@ -241,6 +262,11 @@ x 2
 y 12
 end
 arch dungeon_floor
+x 2
+y 13
+end
+arch titan
+name Tinker
 x 2
 y 13
 end
@@ -353,6 +379,12 @@ x 4
 y 3
 end
 arch dungeon_floor
+x 4
+y 4
+end
+arch chinese_dragon
+name Ice
+hp 2000
 x 4
 y 4
 end
@@ -1058,6 +1090,18 @@ arch dungeon_floor
 x 11
 y 3
 end
+arch jessyb
+name Joey
+x 11
+y 3
+carrying 75
+arch note
+msg
+My heart is held by Grunter. Help me
+get it back and I will reward you.
+endmsg
+end
+end
 arch dungeon_floor
 x 11
 y 4
@@ -1551,48 +1595,4 @@ end
 arch dun5
 x 15
 y 15
-end
-arch big_elec
-name Thundermate
-x 1
-y 1
-end
-arch big_wiz
-name Fiery, Wist's fervent pupil
-hp 5500
-x 1
-y 8
-carrying 23700
-invisible 1
-arch chalice
-name chalice of fire
-end
-end
-arch chinese_dragon
-name Snow
-x 2
-y 5
-end
-arch titan
-name Tinker
-x 2
-y 13
-end
-arch chinese_dragon
-name Ice
-hp 2000
-x 4
-y 4
-end
-arch jessyb
-name Joey
-x 11
-y 3
-carrying 75
-arch note
-msg
-My heart is held by Grunter. Help me
-get it back and I will reward you.
-endmsg
-end
 end

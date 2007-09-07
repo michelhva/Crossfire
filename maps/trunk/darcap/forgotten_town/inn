@@ -1,14 +1,14 @@
 arch map
 name Forgotten Town Inn
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/21/2005
-endmsg
 width 20
 height 15
 enter_x 9
 enter_y 14
+msg
+Creator: Knut Ahlers
+Date:    7/21/2005
+endmsg
 end
 arch woodfloor2
 end
@@ -161,9 +161,9 @@ x 1
 y 10
 end
 arch longtable_1_4
-move_block all
 x 1
 y 10
+move_block all
 end
 arch booze
 x 1
@@ -244,9 +244,9 @@ x 2
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 2
 y 10
+move_block all
 end
 arch woodfloor2
 x 2
@@ -283,18 +283,18 @@ x 3
 y 2
 end
 arch button_small
-connected 1
 x 3
 y 2
+connected 1
 end
 arch woodfloor2
 x 3
 y 3
 end
 arch igateTrg1
-connected 1
 x 3
 y 3
+connected 1
 end
 arch woodfloor2
 x 3
@@ -329,18 +329,18 @@ x 3
 y 9
 end
 arch fatman
-random_movement 0
 x 3
 y 9
+random_movement 0
 end
 arch woodfloor2
 x 3
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 3
 y 10
+move_block all
 end
 arch booze
 x 3
@@ -396,9 +396,9 @@ arch altar_trigger
 name drop 10pp to access saveappartement
 slaying platinum coin
 food 10
-connected 1
 x 4
 y 4
+connected 1
 end
 arch woodfloor2
 x 4
@@ -425,9 +425,9 @@ x 4
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 4
 y 10
+move_block all
 end
 arch woodfloor2
 x 4
@@ -508,9 +508,9 @@ x 5
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 5
 y 10
+move_block all
 end
 arch booze
 x 5
@@ -595,9 +595,9 @@ x 6
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 6
 y 10
+move_block all
 end
 arch woodfloor2
 x 6
@@ -682,9 +682,9 @@ x 7
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 7
 y 10
+move_block all
 end
 arch heart
 x 7
@@ -765,36 +765,36 @@ x 8
 y 10
 end
 arch longtable_2_2_3
-move_block all
 x 8
 y 10
+move_block all
 end
 arch woodfloor2
 x 8
 y 11
 end
 arch longtable_2_1_1
-move_block all
 x 8
 y 11
+move_block all
 end
 arch woodfloor2
 x 8
 y 12
 end
 arch longtable_2_1_1
-move_block all
 x 8
 y 12
+move_block all
 end
 arch woodfloor2
 x 8
 y 13
 end
 arch longtable_1_2
-move_block all
 x 8
 y 13
+move_block all
 end
 arch woodfloor2
 x 8
@@ -819,18 +819,18 @@ x 9
 y 2
 end
 arch button_small
-connected 2
 x 9
 y 2
+connected 2
 end
 arch woodfloor2
 x 9
 y 3
 end
 arch igateTrg1
-connected 2
 x 9
 y 3
+connected 2
 end
 arch woodfloor2
 x 9
@@ -913,9 +913,9 @@ arch altar_trigger
 name drop 10pp to access saveappartement
 slaying platinum coin
 food 10
-connected 2
 x 10
 y 4
+connected 2
 end
 arch woodfloor2
 x 10
@@ -1015,36 +1015,36 @@ x 11
 y 10
 end
 arch longtable_2_2_2
-move_block all
 x 11
 y 10
+move_block all
 end
 arch woodfloor2
 x 11
 y 11
 end
 arch longtable_2_1_1
-move_block all
 x 11
 y 11
+move_block all
 end
 arch woodfloor2
 x 11
 y 12
 end
 arch longtable_2_1_1
-move_block all
 x 11
 y 12
+move_block all
 end
 arch woodfloor2
 x 11
 y 13
 end
 arch longtable_1_2
-move_block all
 x 11
 y 13
+move_block all
 end
 arch woodfloor2
 x 11
@@ -1121,9 +1121,9 @@ x 12
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 12
 y 10
+move_block all
 end
 arch booze
 x 12
@@ -1208,9 +1208,9 @@ x 13
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 13
 y 10
+move_block all
 end
 arch woodfloor2
 x 13
@@ -1291,9 +1291,9 @@ x 14
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 14
 y 10
+move_block all
 end
 arch booze
 x 14
@@ -1334,18 +1334,18 @@ x 15
 y 2
 end
 arch button_small
-connected 3
 x 15
 y 2
+connected 3
 end
 arch woodfloor2
 x 15
 y 3
 end
 arch igateTrg1
-connected 3
 x 15
 y 3
+connected 3
 end
 arch woodfloor2
 x 15
@@ -1380,9 +1380,9 @@ x 15
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 15
 y 10
+move_block all
 end
 arch woodfloor2
 x 15
@@ -1434,9 +1434,9 @@ arch altar_trigger
 name drop 10pp to access saveappartement
 slaying platinum coin
 food 10
-connected 3
 x 16
 y 4
+connected 3
 end
 arch woodfloor2
 x 16
@@ -1467,19 +1467,19 @@ name sorcerer
 face sorcerer.151
 hp 100
 maxhp 100
-pick_up 0
-randomitems standard
 x 16
 y 9
+randomitems standard
+pick_up 0
 end
 arch woodfloor2
 x 16
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 16
 y 10
+move_block all
 end
 arch booze
 x 16
@@ -1556,9 +1556,9 @@ x 17
 y 10
 end
 arch longtable_2_1_2
-move_block all
 x 17
 y 10
+move_block all
 end
 arch woodfloor2
 x 17
@@ -1631,18 +1631,18 @@ x 18
 y 9
 end
 arch sailor
-random_movement 0
 x 18
 y 9
+random_movement 0
 end
 arch woodfloor2
 x 18
 y 10
 end
 arch longtable_1_3
-move_block all
 x 18
 y 10
+move_block all
 end
 arch booze
 x 18

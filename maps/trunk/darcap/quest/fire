@@ -467,6 +467,10 @@ arch dirtfloor
 x 2
 y 10
 end
+arch dragon
+x 2
+y 10
+end
 arch dirtfloor
 x 2
 y 11
@@ -475,7 +479,15 @@ arch dirtfloor
 x 2
 y 12
 end
+arch dragon
+x 2
+y 12
+end
 arch dirtfloor
+x 2
+y 13
+end
+arch dragon
 x 2
 y 13
 end
@@ -1134,6 +1146,10 @@ arch dirtfloor
 x 5
 y 20
 end
+arch dragon
+x 5
+y 20
+end
 arch dirtfloor
 x 5
 y 21
@@ -1716,6 +1732,10 @@ arch dirtfloor
 x 8
 y 15
 end
+arch dragon
+x 8
+y 15
+end
 arch dirtfloor
 x 8
 y 16
@@ -1831,6 +1851,10 @@ x 9
 y 1
 end
 arch dirtfloor
+x 9
+y 2
+end
+arch dragon
 x 9
 y 2
 end
@@ -2032,6 +2056,10 @@ arch dirtfloor
 x 10
 y 1
 end
+arch dragon
+x 10
+y 1
+end
 arch dirtfloor
 x 10
 y 2
@@ -2105,6 +2133,10 @@ x 10
 y 13
 end
 arch dirtfloor
+x 10
+y 14
+end
+arch dragon
 x 10
 y 14
 end
@@ -2334,6 +2366,10 @@ arch dirtfloor
 x 11
 y 15
 end
+arch dragon
+x 11
+y 15
+end
 arch dirtfloor
 x 11
 y 16
@@ -2343,6 +2379,10 @@ x 11
 y 16
 end
 arch dirtfloor
+x 11
+y 17
+end
+arch dragon
 x 11
 y 17
 end
@@ -2456,11 +2496,19 @@ arch dirtfloor
 x 12
 y 2
 end
+arch dragon
+x 12
+y 2
+end
 arch dirtfloor
 x 12
 y 3
 end
 arch dirtfloor
+x 12
+y 4
+end
+arch dragon
 x 12
 y 4
 end
@@ -2650,7 +2698,15 @@ arch dirtfloor
 x 13
 y 2
 end
+arch dragon
+x 13
+y 2
+end
 arch dirtfloor
+x 13
+y 3
+end
+arch dragon
 x 13
 y 3
 end
@@ -3169,6 +3225,10 @@ arch dirtfloor
 x 15
 y 8
 end
+arch active_volcano
+x 15
+y 8
+end
 arch dirtfloor
 x 15
 y 9
@@ -3181,11 +3241,19 @@ arch dirtfloor
 x 15
 y 10
 end
+arch active_volcano
+x 15
+y 10
+end
 arch dirtfloor
 x 15
 y 11
 end
 arch dirtfloor
+x 15
+y 12
+end
+arch active_volcano
 x 15
 y 12
 end
@@ -3198,6 +3266,10 @@ x 15
 y 13
 end
 arch dirtfloor
+x 15
+y 14
+end
+arch active_volcano
 x 15
 y 14
 end
@@ -3696,6 +3768,10 @@ arch dirtfloor
 x 17
 y 22
 end
+arch dragon
+x 17
+y 22
+end
 arch dirtfloor
 x 17
 y 23
@@ -4053,11 +4129,19 @@ arch dirtfloor
 x 19
 y 8
 end
+arch active_volcano
+x 19
+y 8
+end
 arch dirtfloor
 x 19
 y 9
 end
 arch dirtfloor
+x 19
+y 10
+end
+arch active_volcano
 x 19
 y 10
 end
@@ -4069,11 +4153,19 @@ arch dirtfloor
 x 19
 y 12
 end
+arch active_volcano
+x 19
+y 12
+end
 arch dirtfloor
 x 19
 y 13
 end
 arch dirtfloor
+x 19
+y 14
+end
+arch active_volcano
 x 19
 y 14
 end
@@ -4507,6 +4599,10 @@ x 21
 y 16
 end
 arch dirtfloor
+x 21
+y 17
+end
+arch dragon
 x 21
 y 17
 end
@@ -5126,6 +5222,10 @@ x 24
 y 14
 end
 arch dirtfloor
+x 24
+y 15
+end
+arch dragon
 x 24
 y 15
 end
@@ -5761,6 +5861,10 @@ arch dirtfloor
 x 27
 y 1
 end
+arch dragon
+x 27
+y 1
+end
 arch dirtfloor
 x 27
 y 2
@@ -5846,6 +5950,10 @@ x 27
 y 14
 end
 arch dirtfloor
+x 27
+y 15
+end
+arch dragon
 x 27
 y 15
 end
@@ -6026,6 +6134,10 @@ arch dirtfloor
 x 28
 y 9
 end
+arch dragon
+x 28
+y 9
+end
 arch dirtfloor
 x 28
 y 10
@@ -6203,6 +6315,10 @@ arch dirtfloor
 x 29
 y 4
 end
+arch dragon
+x 29
+y 4
+end
 arch dirtfloor
 x 29
 y 5
@@ -6260,6 +6376,10 @@ x 29
 y 15
 end
 arch dirtfloor
+x 29
+y 16
+end
+arch dragon
 x 29
 y 16
 end
@@ -6416,6 +6536,10 @@ arch dirtfloor
 x 30
 y 5
 end
+arch dragon
+x 30
+y 5
+end
 arch dirtfloor
 x 30
 y 6
@@ -6464,6 +6588,10 @@ arch dirtfloor
 x 30
 y 13
 end
+arch dragon
+x 30
+y 13
+end
 arch dirtfloor
 x 30
 y 14
@@ -6477,6 +6605,10 @@ x 30
 y 15
 end
 arch dirtfloor
+x 30
+y 16
+end
+arch dragon
 x 30
 y 16
 end
@@ -6642,7 +6774,15 @@ arch dirtfloor
 x 31
 y 8
 end
+arch dragon
+x 31
+y 8
+end
 arch dirtfloor
+x 31
+y 9
+end
+arch dragon
 x 31
 y 9
 end
@@ -7658,144 +7798,4 @@ end
 arch timberwall_2_2_4
 x 35
 y 35
-end
-arch dragon
-x 2
-y 10
-end
-arch dragon
-x 2
-y 12
-end
-arch dragon
-x 2
-y 13
-end
-arch dragon
-x 5
-y 20
-end
-arch dragon
-x 8
-y 15
-end
-arch dragon
-x 9
-y 2
-end
-arch dragon
-x 10
-y 1
-end
-arch dragon
-x 10
-y 14
-end
-arch dragon
-x 11
-y 15
-end
-arch dragon
-x 11
-y 17
-end
-arch dragon
-x 12
-y 2
-end
-arch dragon
-x 12
-y 4
-end
-arch dragon
-x 13
-y 2
-end
-arch dragon
-x 13
-y 3
-end
-arch active_volcano
-x 15
-y 8
-end
-arch active_volcano
-x 15
-y 10
-end
-arch active_volcano
-x 15
-y 12
-end
-arch active_volcano
-x 15
-y 14
-end
-arch dragon
-x 17
-y 22
-end
-arch active_volcano
-x 19
-y 8
-end
-arch active_volcano
-x 19
-y 10
-end
-arch active_volcano
-x 19
-y 12
-end
-arch active_volcano
-x 19
-y 14
-end
-arch dragon
-x 21
-y 17
-end
-arch dragon
-x 24
-y 15
-end
-arch dragon
-x 27
-y 1
-end
-arch dragon
-x 27
-y 15
-end
-arch dragon
-x 28
-y 9
-end
-arch dragon
-x 29
-y 4
-end
-arch dragon
-x 29
-y 16
-end
-arch dragon
-x 30
-y 5
-end
-arch dragon
-x 30
-y 13
-end
-arch dragon
-x 30
-y 16
-end
-arch dragon
-x 31
-y 8
-end
-arch dragon
-x 31
-y 9
 end

@@ -1,14 +1,14 @@
 arch map
 name Goblin Training
+reset_timeout 3600
 region wilderness
+width 32
+height 17
 msg
 Creator: CF Java Map Editor
 Date:    6/19/2003
 cvs #2
 endmsg
-width 32
-height 17
-reset_timeout 3600
 end
 arch flagstone
 end
@@ -177,9 +177,9 @@ x 1
 y 15
 end
 arch button_handle
-connected 1
 x 1
 y 15
+connected 1
 end
 arch flagstone
 x 1
@@ -1284,22 +1284,22 @@ x 16
 y 7
 end
 arch spikes_closed
+x 16
+y 7
 connected 1
 no_magic 1
 damned 1
-x 16
-y 7
 end
 arch flagstone
 x 16
 y 8
 end
 arch spikes_closed
+x 16
+y 8
 connected 1
 no_magic 1
 damned 1
-x 16
-y 8
 end
 arch flagstone
 x 16
@@ -1463,17 +1463,17 @@ train here. Following that time the
 Zombies will return to their graves
 and will be unavailable a while.
 endmsg
-connected 777
 food 1
 x 18
+connected 777
 end
 arch magic_mouth
 msg
 TRAINING PERIOD HAS ENDED.
 endmsg
-connected 666
 food 1
 x 18
+connected 666
 end
 arch blocked
 x 18
@@ -1560,32 +1560,32 @@ x 18
 y 13
 end
 arch spikes_closed
-invisible 1
-connected 777
 x 18
 y 14
+invisible 1
+connected 777
 end
 arch spikes_moving
-invisible 1
 x 18
 y 14
+invisible 1
 end
 arch food
-invisible 1
 x 18
 y 14
+invisible 1
 end
 arch spikes_closed
-connected 777
 x 18
 y 15
+connected 777
 end
 arch altar_trigger
 name destroy generators then reset
 food 1
-connected 666
 x 18
 y 16
+connected 666
 end
 arch blocked
 x 19
@@ -1647,9 +1647,9 @@ x 19
 y 12
 end
 arch button_handle
-connected 1
 x 19
 y 12
+connected 1
 end
 arch flagstone
 x 19
@@ -1780,9 +1780,9 @@ x 20
 y 14
 end
 arch spikes_open
-connected 1
 x 20
 y 15
+connected 1
 end
 arch food
 x 20
@@ -1790,21 +1790,21 @@ y 15
 end
 arch altar_trigger
 name start timer
-food 1
-connected 777
 exp 15500
+food 1
 x 20
 y 16
+connected 777
 end
 arch blocked
 x 21
 end
 arch firewall_4
-invisible 1
 dam 58
-level 100
-speed -0.5
 x 21
+speed -0.5
+level 100
+invisible 1
 end
 arch blocked
 x 21
@@ -1871,197 +1871,197 @@ x 21
 y 16
 end
 arch firewall_2
-invisible 1
 dam 58
-level 100
-speed -0.5
 x 21
 y 16
+speed -0.5
+level 100
+invisible 1
 end
 arch woodfloor
 x 22
 end
 arch grate_closed_2
+x 22
 connected 666
 no_magic 1
 damned 1
-x 22
 end
 arch woodfloor
 x 22
 y 1
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 1
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 2
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 2
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 3
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 3
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 4
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 4
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 5
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 5
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 6
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 6
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 7
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 7
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 8
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 8
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 9
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 9
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 10
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 10
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 11
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 11
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 12
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 12
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 13
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 13
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 14
 end
 arch grate_closed_2
-connected 666
-no_magic 1
-damned 1
 x 22
 y 14
+connected 666
+no_magic 1
+damned 1
 end
 arch woodfloor
 x 22
 y 15
 end
 arch grate_closed_2
+x 22
+y 15
 connected 666
 no_magic 1
 damned 1
-x 22
-y 15
 end
 arch woodfloor
 x 22
 y 16
 end
 arch grate_closed_2
+x 22
+y 16
 connected 666
 no_magic 1
 damned 1
-x 22
-y 16
 end
 arch permanent_lava
 x 23
@@ -2311,9 +2311,9 @@ x 25
 y 1
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 1
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2330,9 +2330,9 @@ x 25
 y 3
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 3
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2349,9 +2349,9 @@ x 25
 y 5
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 5
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2368,9 +2368,9 @@ x 25
 y 7
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 7
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2387,9 +2387,9 @@ x 25
 y 9
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 9
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2406,9 +2406,9 @@ x 25
 y 11
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 11
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2425,9 +2425,9 @@ x 25
 y 13
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 13
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2444,9 +2444,9 @@ x 25
 y 15
 end
 arch generate_zombie
-speed -0.01
 x 25
 y 15
+speed -0.01
 end
 arch woodfloor
 x 25
@@ -2639,9 +2639,9 @@ x 27
 y 1
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 1
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2658,9 +2658,9 @@ x 27
 y 3
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 3
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2677,9 +2677,9 @@ x 27
 y 5
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 5
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2696,9 +2696,9 @@ x 27
 y 7
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 7
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2715,9 +2715,9 @@ x 27
 y 9
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 9
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2734,9 +2734,9 @@ x 27
 y 11
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 11
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2753,9 +2753,9 @@ x 27
 y 13
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 13
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2772,9 +2772,9 @@ x 27
 y 15
 end
 arch generate_zombie
-speed -0.01
 x 27
 y 15
+speed -0.01
 end
 arch woodfloor
 x 27
@@ -2967,9 +2967,9 @@ x 29
 y 1
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 1
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -2986,9 +2986,9 @@ x 29
 y 3
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 3
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3005,9 +3005,9 @@ x 29
 y 5
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 5
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3024,9 +3024,9 @@ x 29
 y 7
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 7
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3043,9 +3043,9 @@ x 29
 y 9
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 9
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3062,9 +3062,9 @@ x 29
 y 11
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 11
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3081,9 +3081,9 @@ x 29
 y 13
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 13
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3100,9 +3100,9 @@ x 29
 y 15
 end
 arch generate_zombie
-speed -0.01
 x 29
 y 15
+speed -0.01
 end
 arch woodfloor
 x 29
@@ -3295,9 +3295,9 @@ x 31
 y 1
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 1
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3314,9 +3314,9 @@ x 31
 y 3
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 3
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3333,9 +3333,9 @@ x 31
 y 5
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 5
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3352,9 +3352,9 @@ x 31
 y 7
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 7
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3371,9 +3371,9 @@ x 31
 y 9
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 9
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3390,9 +3390,9 @@ x 31
 y 11
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 11
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3409,9 +3409,9 @@ x 31
 y 13
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 13
+speed -0.01
 end
 arch woodfloor
 x 31
@@ -3428,9 +3428,9 @@ x 31
 y 15
 end
 arch generate_zombie
-speed -0.01
 x 31
 y 15
+speed -0.01
 end
 arch woodfloor
 x 31

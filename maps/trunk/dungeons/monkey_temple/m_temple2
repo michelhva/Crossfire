@@ -1264,6 +1264,17 @@ y 18
 speed 0.0
 connected 10
 end
+arch medium_demon
+name Antioch
+title the demon
+msg
+@match *
+COWER BEFORE MY WRATH!
+endmsg
+sp 40
+x 9
+y 18
+end
 arch teleporter
 hp 9
 sp 8
@@ -2404,16 +2415,5 @@ arch teleporter
 hp 13
 sp 2
 x 19
-y 18
-end
-arch medium_demon
-name Antioch
-title the demon
-msg
-@match *
-COWER BEFORE MY WRATH!
-endmsg
-sp 40
-x 9
 y 18
 end

@@ -528,6 +528,10 @@ arch small_stones
 x 5
 y 6
 end
+arch giant
+x 5
+y 6
+end
 arch small_stones
 x 5
 y 7
@@ -2387,6 +2391,10 @@ arch random_treasure
 x 21
 y 10
 end
+arch dragon
+x 21
+y 10
+end
 arch small_stones
 x 21
 y 11
@@ -3283,6 +3291,10 @@ arch chest
 x 26
 y 11
 end
+arch giant
+x 26
+y 11
+end
 arch small_stones
 x 26
 y 12
@@ -3909,6 +3921,10 @@ x 31
 y 7
 end
 arch small_stones
+x 31
+y 8
+end
+arch dragon
 x 31
 y 8
 end
@@ -7026,20 +7042,4 @@ end
 arch bwall_2_2_4
 x 59
 y 24
-end
-arch giant
-x 5
-y 6
-end
-arch dragon
-x 21
-y 10
-end
-arch giant
-x 26
-y 11
-end
-arch dragon
-x 31
-y 8
 end

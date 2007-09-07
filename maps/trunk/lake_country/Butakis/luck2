@@ -293,6 +293,10 @@ arch dungeon_floor
 x 1
 y 10
 end
+arch behemoth
+x 1
+y 10
+end
 arch dungeon_floor
 x 1
 y 11
@@ -360,6 +364,10 @@ x 1
 y 17
 end
 arch dungeon_floor
+x 1
+y 18
+end
+arch behemoth
 x 1
 y 18
 end
@@ -812,6 +820,10 @@ arch dungeon_floor
 x 3
 y 11
 end
+arch behemoth
+x 3
+y 11
+end
 arch dungeon_floor
 x 3
 y 12
@@ -879,6 +891,10 @@ x 3
 y 18
 end
 arch dungeon_floor
+x 3
+y 19
+end
+arch behemoth
 x 3
 y 19
 end
@@ -1835,6 +1851,10 @@ arch dungeon_floor
 x 7
 y 29
 end
+arch titan
+x 7
+y 29
+end
 arch dungeon_floor
 x 7
 y 30
@@ -1881,6 +1901,10 @@ arch pstone_2
 x 8
 y 5
 end
+arch dread
+x 8
+y 5
+end
 arch dungeon_floor
 x 8
 y 6
@@ -1894,6 +1918,10 @@ x 8
 y 7
 end
 arch pstone_2
+x 8
+y 7
+end
+arch dread
 x 8
 y 7
 end
@@ -2229,6 +2257,10 @@ arch pstone_2
 x 10
 y 5
 end
+arch dread
+x 10
+y 5
+end
 arch dungeon_floor
 x 10
 y 6
@@ -2242,6 +2274,10 @@ x 10
 y 7
 end
 arch pstone_2
+x 10
+y 7
+end
+arch dread
 x 10
 y 7
 end
@@ -2593,6 +2629,10 @@ arch pstone_2
 x 12
 y 5
 end
+arch dread
+x 12
+y 5
+end
 arch dungeon_floor
 x 12
 y 6
@@ -2606,6 +2646,10 @@ x 12
 y 7
 end
 arch pstone_2
+x 12
+y 7
+end
+arch dread
 x 12
 y 7
 end
@@ -2967,6 +3011,10 @@ arch pstone_2
 x 14
 y 5
 end
+arch dread
+x 14
+y 5
+end
 arch dungeon_floor
 x 14
 y 6
@@ -2980,6 +3028,10 @@ x 14
 y 7
 end
 arch pstone_2
+x 14
+y 7
+end
+arch dread
 x 14
 y 7
 end
@@ -3443,6 +3495,10 @@ arch pstone_2
 x 16
 y 5
 end
+arch dread
+x 16
+y 5
+end
 arch dungeon_floor
 x 16
 y 6
@@ -3456,6 +3512,10 @@ x 16
 y 7
 end
 arch pstone_2
+x 16
+y 7
+end
+arch dread
 x 16
 y 7
 end
@@ -3830,6 +3890,10 @@ arch pstone_2
 x 18
 y 5
 end
+arch dread
+x 18
+y 5
+end
 arch dungeon_floor
 x 18
 y 6
@@ -3843,6 +3907,10 @@ x 18
 y 7
 end
 arch pstone_2
+x 18
+y 7
+end
+arch dread
 x 18
 y 7
 end
@@ -3943,6 +4011,10 @@ x 18
 y 27
 end
 arch dungeon_floor
+x 18
+y 28
+end
+arch big_dragon
 x 18
 y 28
 end
@@ -4168,6 +4240,10 @@ arch pstone_2
 x 20
 y 5
 end
+arch dread
+x 20
+y 5
+end
 arch dungeon_floor
 x 20
 y 6
@@ -4181,6 +4257,10 @@ x 20
 y 7
 end
 arch pstone_2
+x 20
+y 7
+end
+arch dread
 x 20
 y 7
 end
@@ -4520,6 +4600,10 @@ arch pstone_2
 x 22
 y 5
 end
+arch dread
+x 22
+y 5
+end
 arch dungeon_floor
 x 22
 y 6
@@ -4533,6 +4617,10 @@ x 22
 y 7
 end
 arch pstone_2
+x 22
+y 7
+end
+arch dread
 x 22
 y 7
 end
@@ -4802,6 +4890,10 @@ arch dungeon_floor
 x 23
 y 28
 end
+arch big_dragon
+x 23
+y 28
+end
 arch dungeon_floor
 x 23
 y 29
@@ -4852,6 +4944,10 @@ arch pstone_2
 x 24
 y 5
 end
+arch dread
+x 24
+y 5
+end
 arch dungeon_floor
 x 24
 y 6
@@ -4865,6 +4961,10 @@ x 24
 y 7
 end
 arch pstone_2
+x 24
+y 7
+end
+arch dread
 x 24
 y 7
 end
@@ -5781,6 +5881,10 @@ arch dungeon_floor
 x 28
 y 23
 end
+arch big_dragon
+x 28
+y 23
+end
 arch dungeon_floor
 x 28
 y 24
@@ -6596,108 +6700,4 @@ end
 arch mine12
 x 31
 y 31
-end
-arch behemoth
-x 1
-y 10
-end
-arch behemoth
-x 1
-y 18
-end
-arch behemoth
-x 3
-y 11
-end
-arch behemoth
-x 3
-y 19
-end
-arch titan
-x 7
-y 29
-end
-arch dread
-x 8
-y 5
-end
-arch dread
-x 8
-y 7
-end
-arch dread
-x 10
-y 5
-end
-arch dread
-x 10
-y 7
-end
-arch dread
-x 12
-y 5
-end
-arch dread
-x 12
-y 7
-end
-arch dread
-x 14
-y 5
-end
-arch dread
-x 14
-y 7
-end
-arch dread
-x 16
-y 5
-end
-arch dread
-x 16
-y 7
-end
-arch dread
-x 18
-y 5
-end
-arch dread
-x 18
-y 7
-end
-arch big_dragon
-x 18
-y 28
-end
-arch dread
-x 20
-y 5
-end
-arch dread
-x 20
-y 7
-end
-arch dread
-x 22
-y 5
-end
-arch dread
-x 22
-y 7
-end
-arch big_dragon
-x 23
-y 28
-end
-arch dread
-x 24
-y 5
-end
-arch dread
-x 24
-y 7
-end
-arch big_dragon
-x 28
-y 23
 end

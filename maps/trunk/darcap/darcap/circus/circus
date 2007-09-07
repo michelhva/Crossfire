@@ -1240,6 +1240,14 @@ x 10
 y 10
 move_block all
 end
+arch collesium
+name The Big Top
+slaying bigtop
+hp 17
+sp 30
+x 10
+y 10
+end
 arch grass
 x 10
 y 11
@@ -2809,12 +2817,4 @@ end
 arch grass
 x 23
 y 23
-end
-arch collesium
-name The Big Top
-slaying bigtop
-hp 17
-sp 30
-x 10
-y 10
 end

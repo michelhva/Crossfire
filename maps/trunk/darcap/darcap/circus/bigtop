@@ -2038,6 +2038,10 @@ arch pstone_1
 x 9
 y 10
 end
+arch dread
+x 9
+y 10
+end
 arch pstone_1
 x 9
 y 11
@@ -2103,6 +2107,10 @@ x 9
 y 20
 end
 arch pstone_1
+x 9
+y 21
+end
+arch baslic
 x 9
 y 21
 end
@@ -3720,6 +3728,10 @@ arch pstone_1
 x 17
 y 8
 end
+arch Balrog
+x 17
+y 8
+end
 arch pstone_1
 x 17
 y 9
@@ -3793,6 +3805,10 @@ x 17
 y 20
 end
 arch pstone_1
+x 17
+y 21
+end
+arch cyclops
 x 17
 y 21
 end
@@ -6496,6 +6512,10 @@ arch pstone_1
 x 29
 y 9
 end
+arch titan
+x 29
+y 9
+end
 arch pstone_1
 x 29
 y 10
@@ -6565,6 +6585,10 @@ x 29
 y 20
 end
 arch pstone_1
+x 29
+y 21
+end
+arch gaelotroll
 x 29
 y 21
 end
@@ -8229,6 +8253,10 @@ arch pstone_1
 x 37
 y 20
 end
+arch troll
+x 37
+y 20
+end
 arch pstone_1
 x 37
 y 21
@@ -8383,6 +8411,10 @@ x 38
 y 9
 end
 arch pstone_1
+x 38
+y 10
+end
+arch behemoth
 x 38
 y 10
 end
@@ -10541,36 +10573,4 @@ end
 arch grassmedium
 x 47
 y 31
-end
-arch dread
-x 9
-y 10
-end
-arch baslic
-x 9
-y 21
-end
-arch Balrog
-x 17
-y 8
-end
-arch cyclops
-x 17
-y 21
-end
-arch titan
-x 29
-y 9
-end
-arch gaelotroll
-x 29
-y 21
-end
-arch troll
-x 37
-y 20
-end
-arch behemoth
-x 38
-y 10
 end

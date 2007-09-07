@@ -1607,6 +1607,37 @@ arch grass
 x 16
 y 10
 end
+arch giant
+name Billy
+msg
+@match *
+Me not speak good, you say to Hermes.
+endmsg
+exp 0
+dam 15
+x 16
+y 10
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_deplete 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+randomitems none
+friendly 1
+arch key2
+name key
+slaying Hermes Key
+end
+end
 arch grass
 x 16
 y 11
@@ -2248,35 +2279,4 @@ end
 arch blocked
 x 22
 y 14
-end
-arch giant
-name Billy
-msg
-@match *
-Me not speak good, you say to Hermes.
-endmsg
-exp 0
-dam 15
-x 16
-y 10
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_deplete 100
-resist_chaos 100
-resist_godpower 100
-resist_holyword 100
-randomitems none
-friendly 1
-arch key2
-name key
-slaying Hermes Key
-end
 end

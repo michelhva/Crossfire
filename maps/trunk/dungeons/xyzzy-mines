@@ -44324,6 +44324,10 @@ arch medium_stones
 x 81
 y 55
 end
+arch titan
+x 81
+y 55
+end
 arch medium_stones
 x 81
 y 56
@@ -54864,6 +54868,10 @@ arch medium_stones
 x 100
 y 28
 end
+arch dragon
+x 100
+y 28
+end
 arch medium_stones
 x 100
 y 29
@@ -57156,6 +57164,10 @@ x 104
 y 27
 end
 arch medium_stones
+x 104
+y 28
+end
+arch dragon
 x 104
 y 28
 end
@@ -60011,6 +60023,10 @@ arch medium_stones
 x 109
 y 27
 end
+arch dragon
+x 109
+y 27
+end
 arch medium_stones
 x 109
 y 28
@@ -60336,6 +60352,10 @@ x 109
 y 70
 end
 arch medium_stones
+x 109
+y 71
+end
+arch big_dragon
 x 109
 y 71
 end
@@ -71134,24 +71154,4 @@ end
 arch bwall_0
 x 127
 y 76
-end
-arch titan
-x 81
-y 55
-end
-arch dragon
-x 100
-y 28
-end
-arch dragon
-x 104
-y 28
-end
-arch dragon
-x 109
-y 27
-end
-arch big_dragon
-x 109
-y 71
 end

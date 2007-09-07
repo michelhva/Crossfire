@@ -1,13 +1,13 @@
 arch map
 name Funhouse
+width 20
+height 28
+enter_y 4
 msg
 Creator: K. Ahlers
 Date:    6/5/2006
 Mail: info@knutshome.de
 endmsg
-width 20
-height 28
-enter_y 4
 end
 arch grass
 end
@@ -35,9 +35,9 @@ arch grass
 y 5
 end
 arch button_small
+y 5
 invisible 1
 connected 123
-y 5
 end
 arch grass
 y 6
@@ -106,8 +106,8 @@ arch blocked
 y 26
 end
 arch spikes_open
-connected 123
 y 27
+connected 123
 end
 arch food
 y 27
@@ -116,8 +116,8 @@ arch grass
 x 1
 end
 arch igate_closed_2
-connected 666
 x 1
+connected 666
 end
 arch grass
 x 1
@@ -140,20 +140,20 @@ x 1
 y 4
 end
 arch button_small
-invisible 1
-connected 123
 x 1
 y 4
+invisible 1
+connected 123
 end
 arch grass
 x 1
 y 5
 end
 arch button_small
-invisible 1
-connected 123
 x 1
 y 5
+invisible 1
+connected 123
 end
 arch grass
 x 1
@@ -252,11 +252,11 @@ x 1
 y 26
 end
 arch altar_trigger
-food 1
-connected 555
 exp 15500
+food 1
 x 1
 y 27
+connected 555
 end
 arch grass
 x 2
@@ -399,9 +399,9 @@ x 2
 y 25
 end
 arch igate_closed_2
-connected 666
 x 2
 y 25
+connected 666
 end
 arch blocked
 x 2
@@ -415,8 +415,8 @@ arch grass
 x 3
 end
 arch igate_closed_2
-connected 666
 x 3
+connected 666
 end
 arch grass
 x 3
@@ -549,9 +549,9 @@ msg
 The generators are destroyed now!
 There won't be any more monsters!
 endmsg
-connected 666
 x 3
 y 27
+connected 666
 end
 arch grass
 x 4
@@ -678,9 +678,9 @@ x 4
 y 25
 end
 arch igate_closed_2
-connected 666
 x 4
 y 25
+connected 666
 end
 arch blocked
 x 4
@@ -694,8 +694,8 @@ arch grass
 x 5
 end
 arch igate_closed_2
-connected 666
 x 5
+connected 666
 end
 arch grass
 x 5
@@ -960,9 +960,9 @@ x 6
 y 25
 end
 arch igate_closed_2
-connected 666
 x 6
 y 25
+connected 666
 end
 arch blocked
 x 6
@@ -984,8 +984,8 @@ arch grass
 x 7
 end
 arch igate_closed_2
-connected 666
 x 7
+connected 666
 end
 arch grass
 x 7
@@ -1110,9 +1110,9 @@ x 7
 y 26
 end
 arch spikes_closed
-connected 555
 x 7
 y 27
+connected 555
 end
 arch grass
 x 8
@@ -1243,9 +1243,9 @@ x 8
 y 25
 end
 arch igate_closed_2
-connected 666
 x 8
 y 25
+connected 666
 end
 arch blocked
 x 8
@@ -1253,16 +1253,16 @@ y 26
 end
 arch altar
 food 1
-connected 666
 x 8
 y 27
+connected 666
 end
 arch grass
 x 9
 end
 arch igate_closed_2
-connected 666
 x 9
+connected 666
 end
 arch grass
 x 9
@@ -1511,9 +1511,9 @@ x 10
 y 25
 end
 arch igate_closed_2
-connected 666
 x 10
 y 25
+connected 666
 end
 arch blocked
 x 10
@@ -1527,8 +1527,8 @@ arch grass
 x 11
 end
 arch igate_closed_2
-connected 666
 x 11
+connected 666
 end
 arch grass
 x 11
@@ -1789,9 +1789,9 @@ x 12
 y 25
 end
 arch igate_closed_2
-connected 666
 x 12
 y 25
+connected 666
 end
 arch blocked
 x 12
@@ -1805,8 +1805,8 @@ arch grass
 x 13
 end
 arch igate_closed_2
-connected 666
 x 13
+connected 666
 end
 arch grass
 x 13
@@ -2055,9 +2055,9 @@ x 14
 y 25
 end
 arch igate_closed_2
-connected 666
 x 14
 y 25
+connected 666
 end
 arch blocked
 x 14
@@ -2071,8 +2071,8 @@ arch grass
 x 15
 end
 arch igate_closed_2
-connected 666
 x 15
+connected 666
 end
 arch grass
 x 15
@@ -2333,9 +2333,9 @@ x 16
 y 25
 end
 arch igate_closed_2
-connected 666
 x 16
 y 25
+connected 666
 end
 arch blocked
 x 16
@@ -2349,8 +2349,8 @@ arch grass
 x 17
 end
 arch igate_closed_2
-connected 666
 x 17
+connected 666
 end
 arch grass
 x 17
@@ -2617,9 +2617,9 @@ x 18
 y 25
 end
 arch igate_closed_2
-connected 666
 x 18
 y 25
+connected 666
 end
 arch blocked
 x 18

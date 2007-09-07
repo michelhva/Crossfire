@@ -777,6 +777,16 @@ arch woodfloor
 x 3
 y 28
 end
+arch dread
+name KeyDread
+x 3
+y 28
+carrying 100
+arch key2
+name Key to Adventurers Guild
+slaying advguildkey
+end
+end
 arch woodfloor
 x 3
 y 29
@@ -4039,6 +4049,11 @@ arch woodfloor
 x 20
 y 15
 end
+arch behemoth
+x 20
+y 15
+unaggressive 1
+end
 arch woodfloor
 x 20
 y 16
@@ -4967,6 +4982,11 @@ arch woodfloor
 x 25
 y 11
 end
+arch big_wiz
+x 25
+y 11
+unaggressive 1
+end
 arch woodfloor
 x 25
 y 12
@@ -4982,6 +5002,11 @@ end
 arch woodfloor
 x 25
 y 15
+end
+arch chinese_dragon
+x 25
+y 15
+unaggressive 1
 end
 arch woodfloor
 x 25
@@ -5265,8 +5290,8 @@ endmsg
 x 26
 y 24
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch woodfloor
@@ -5274,6 +5299,18 @@ x 26
 y 25
 end
 arch woodfloor
+x 26
+y 26
+end
+arch sphinx
+name homesick sphinx
+msg
+@match Hello
+Hello! Please don't talk in here.
+@match *
+I don't know any riddles right now.
+Please leave me alone.
+endmsg
 x 26
 y 26
 end
@@ -5558,6 +5595,11 @@ arch woodfloor
 x 28
 y 11
 end
+arch big_dragon
+x 28
+y 11
+unaggressive 1
+end
 arch woodfloor
 x 28
 y 12
@@ -5771,6 +5813,11 @@ end
 arch woodfloor
 x 29
 y 15
+end
+arch titan
+x 29
+y 15
+unaggressive 1
 end
 arch woodfloor
 x 29
@@ -6351,51 +6398,4 @@ end
 arch wall_2_2_4
 x 31
 y 31
-end
-arch dread
-name KeyDread
-x 3
-y 28
-carrying 100
-arch key2
-name Key to Adventurers Guild
-slaying advguildkey
-end
-end
-arch behemoth
-x 20
-y 15
-unaggressive 1
-end
-arch big_wiz
-x 25
-y 11
-unaggressive 1
-end
-arch chinese_dragon
-x 25
-y 15
-unaggressive 1
-end
-arch sphinx
-name homesick sphinx
-msg
-@match Hello
-Hello! Please don't talk in here.
-@match *
-I don't know any riddles right now.
-Please leave me alone.
-endmsg
-x 26
-y 26
-end
-arch big_dragon
-x 28
-y 11
-unaggressive 1
-end
-arch titan
-x 29
-y 15
-unaggressive 1
 end
