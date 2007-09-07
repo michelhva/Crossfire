@@ -1129,6 +1129,15 @@ arch swamp
 x 9
 y 15
 end
+arch giant
+name lonely hill giant
+x 9
+y 15
+carrying 250
+arch gem
+nrof 5
+end
+end
 arch swamp
 x 9
 y 16
@@ -1651,6 +1660,14 @@ end
 arch swamp
 x 14
 y 13
+end
+arch baslic
+x 14
+y 13
+carrying 750
+arch gem
+nrof 15
+end
 end
 arch swamp
 x 14
@@ -2202,21 +2219,4 @@ end
 arch biglake_se
 x 19
 y 19
-end
-arch giant
-name lonely hill giant
-x 9
-y 15
-carrying 250
-arch gem
-nrof 5
-end
-end
-arch baslic
-x 14
-y 13
-carrying 750
-arch gem
-nrof 15
-end
 end

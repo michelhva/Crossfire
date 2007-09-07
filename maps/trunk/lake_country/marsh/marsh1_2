@@ -747,6 +747,10 @@ arch swamp
 x 7
 y 8
 end
+arch ent
+x 7
+y 8
+end
 arch swamp
 x 7
 y 9
@@ -1056,6 +1060,10 @@ x 10
 y 8
 end
 arch swamp
+x 10
+y 9
+end
+arch ent
 x 10
 y 9
 end
@@ -2017,12 +2025,4 @@ end
 arch biglake_se
 x 19
 y 19
-end
-arch ent
-x 7
-y 8
-end
-arch ent
-x 10
-y 9
 end

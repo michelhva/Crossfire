@@ -176,6 +176,24 @@ arch large_stones
 x 1
 y 3
 end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 3
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 1
 y 4
@@ -339,6 +357,25 @@ x 1
 y 29
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 1
 y 30
@@ -364,6 +401,25 @@ sp 11
 x 1
 y 32
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 1
@@ -425,6 +481,24 @@ end
 arch large_stones
 x 2
 y 6
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 2
+y 6
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 2
@@ -754,6 +828,24 @@ arch large_stones
 x 4
 y 1
 end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 1
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 4
 y 2
@@ -903,6 +995,25 @@ x 4
 y 29
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 4
 y 30
@@ -928,6 +1039,25 @@ sp 13
 x 4
 y 32
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 4
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 4
@@ -987,6 +1117,24 @@ end
 arch large_stones
 x 5
 y 7
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 5
+y 7
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 5
@@ -1312,6 +1460,24 @@ arch large_stones
 x 7
 y 1
 end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 1
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 7
 y 2
@@ -1339,6 +1505,24 @@ end
 arch large_stones
 x 7
 y 6
+end
+arch dragonman
+name dragonman butcher
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 6
+speed 0.450000
+speed_left -14.749998
+level 20
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 7
@@ -1463,6 +1647,25 @@ x 7
 y 29
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 29
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 7
 y 30
@@ -1488,6 +1691,25 @@ sp 16
 x 7
 y 32
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 7
+y 32
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 7
@@ -3059,6 +3281,40 @@ arch large_stones
 x 14
 y 23
 end
+arch dragonman
+name dragonman guard
+msg
+@match Open|open|enter|gate|door
+What's your name? What's your
+business?
+@match Orcus|Balrog|Asmodeus|Jessy
+Gatekeeper! OPEN!!.
+@match Kill|KILL|kill
+Great! We all need some excercises!
+@match sacrifice
+Aha, the more fresh flesh the better.
+Put the sacrifice away!!
+@match *
+You'd better leave before I throw
+you out or summon more guards
+endmsg
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 14
+y 23
+speed 0.450000
+speed_left -14.749998
+level 20
+unaggressive 1
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 14
 y 24
@@ -4028,6 +4284,36 @@ arch large_stones
 x 18
 y 6
 end
+arch dragonman
+name patrolling dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 18
+y 6
+speed 0.800000
+speed_left -19.600002
+level 20
+carrying 100
+unaggressive 1
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 18
 y 7
@@ -4469,6 +4755,40 @@ end
 arch large_stones
 x 19
 y 23
+end
+arch dragonman
+name dragonman guard
+msg
+@match Open|open|enter|gate|door
+What's your name? What's your
+business?
+@match Orcus|Balrog|Asmodeus|Jessy
+Gatekeeper! OPEN!!.
+@match Kill|KILL|kill
+Great! We all need some excercises!
+@match sacrifice
+Aha, the more fresh flesh the better.
+Put the sacrifice away!!
+@match *
+You'd better leave before I throw
+you out or summon more guards
+endmsg
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 19
+y 23
+speed 0.450000
+speed_left -14.749998
+level 20
+unaggressive 1
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 19
@@ -5834,6 +6154,36 @@ x 26
 y 5
 connected 1
 end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 26
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
+end
 arch large_stones
 x 26
 y 6
@@ -5993,6 +6343,17 @@ sp 12
 x 27
 y 2
 connected 11
+end
+arch titan
+name guardian
+hp 10000
+x 27
+y 2
+speed 0.800000
+speed_left -3.030000
+resist_physical 30
+resist_fire 90
+resist_weaponmagic 30
 end
 arch pit_closed
 hp 24
@@ -6183,6 +6544,36 @@ sp 11
 x 28
 y 5
 connected 1
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 28
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 28
@@ -6473,6 +6864,25 @@ x 29
 y 30
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 29
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch large_stones
 x 29
 y 31
@@ -6498,6 +6908,25 @@ sp 18
 x 29
 y 33
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 29
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 29
@@ -6543,6 +6972,36 @@ sp 15
 x 30
 y 5
 connected 1
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 30
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 30
@@ -6701,6 +7160,14 @@ x 31
 y 1
 connected 11
 end
+arch big_wiz
+name guardian
+hp 8500
+x 31
+y 1
+resist_physical 30
+resist_weaponmagic 30
+end
 arch pit_closed
 hp 14
 sp 9
@@ -6846,6 +7313,25 @@ x 31
 y 30
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 31
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch large_stones
 x 31
 y 31
@@ -6871,6 +7357,25 @@ sp 22
 x 31
 y 33
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 31
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 31
@@ -6925,6 +7430,36 @@ sp 12
 x 32
 y 5
 connected 1
+end
+arch dragonman
+name dragonman lieutenant
+Wis 30
+hp 9500
+sp 1000
+dam 30
+x 32
+y 5
+speed 0.800000
+speed_left -21.200003
+level 20
+carrying 100
+sleep 0
+arch key2
+name Dragonbadge
+slaying badge_dragon
+msg
+This flaming red badge is a symbol of
+status and importance.
+endmsg
+face baby_drag.113
+value 10000
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+arch abil_fear
+end
 end
 arch large_stones
 x 32
@@ -7272,6 +7807,25 @@ x 33
 y 30
 connected 1
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 33
+y 30
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch large_stones
 x 33
 y 31
@@ -7297,6 +7851,25 @@ sp 13
 x 33
 y 33
 connected 1
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 33
+y 33
+speed 0.450000
+speed_left -14.749998
+level 20
+sleep 0
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 33
@@ -7680,577 +8253,4 @@ end
 arch blocked
 x 35
 y 35
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 3
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 2
-y 6
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 1
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 4
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 5
-y 7
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 1
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman butcher
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 6
-speed 0.450000
-speed_left -14.749998
-level 20
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 29
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 7
-y 32
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman guard
-msg
-@match Open|open|enter|gate|door
-What's your name? What's your
-business?
-@match Orcus|Balrog|Asmodeus|Jessy
-Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-Great! We all need some excercises!
-@match sacrifice
-Aha, the more fresh flesh the better.
-Put the sacrifice away!!
-@match *
-You'd better leave before I throw
-you out or summon more guards
-endmsg
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 14
-y 23
-speed 0.450000
-speed_left -14.749998
-level 20
-unaggressive 1
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name patrolling dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 18
-y 6
-speed 0.800000
-speed_left -19.600002
-level 20
-carrying 100
-unaggressive 1
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman guard
-msg
-@match Open|open|enter|gate|door
-What's your name? What's your
-business?
-@match Orcus|Balrog|Asmodeus|Jessy
-Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
-Great! We all need some excercises!
-@match sacrifice
-Aha, the more fresh flesh the better.
-Put the sacrifice away!!
-@match *
-You'd better leave before I throw
-you out or summon more guards
-endmsg
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 19
-y 23
-speed 0.450000
-speed_left -14.749998
-level 20
-unaggressive 1
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 26
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch titan
-name guardian
-hp 10000
-x 27
-y 2
-speed 0.800000
-speed_left -3.030000
-resist_physical 30
-resist_fire 90
-resist_weaponmagic 30
-end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 28
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 29
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 29
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 30
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch big_wiz
-name guardian
-hp 8500
-x 31
-y 1
-resist_physical 30
-resist_weaponmagic 30
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 31
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 31
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman lieutenant
-Wis 30
-hp 9500
-sp 1000
-dam 30
-x 32
-y 5
-speed 0.800000
-speed_left -21.200003
-level 20
-carrying 100
-sleep 0
-arch key2
-name Dragonbadge
-slaying badge_dragon
-msg
-This flaming red badge is a symbol of
-status and importance.
-endmsg
-face baby_drag.113
-value 10000
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-arch abil_fear
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 33
-y 30
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 33
-y 33
-speed 0.450000
-speed_left -14.749998
-level 20
-sleep 0
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
 end

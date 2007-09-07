@@ -840,6 +840,13 @@ arch grass
 x 7
 y 3
 end
+arch inn
+slaying inn
+hp 17
+sp 14
+x 7
+y 3
+end
 arch grass
 x 7
 y 4
@@ -1150,6 +1157,10 @@ arch grass
 x 10
 y 5
 end
+arch courthouse
+x 10
+y 5
+end
 arch grass
 x 10
 y 6
@@ -1187,6 +1198,10 @@ x 10
 y 12
 end
 arch grass
+x 10
+y 13
+end
+arch store_general
 x 10
 y 13
 end
@@ -1680,11 +1695,23 @@ arch grass
 x 15
 y 5
 end
+arch barrack_long
+x 15
+y 5
+end
 arch grass
 x 15
 y 6
 end
+arch barrack_long
+x 15
+y 6
+end
 arch grass
+x 15
+y 7
+end
+arch barrack_long
 x 15
 y 7
 end
@@ -1716,7 +1743,15 @@ arch grass
 x 15
 y 12
 end
+arch barrack_long
+x 15
+y 12
+end
 arch grass
+x 15
+y 13
+end
+arch barrack_long
 x 15
 y 13
 end
@@ -1724,7 +1759,15 @@ arch grass
 x 15
 y 14
 end
+arch barrack_long
+x 15
+y 14
+end
 arch grass
+x 15
+y 15
+end
+arch barrack_long
 x 15
 y 15
 end
@@ -1732,7 +1775,15 @@ arch grass
 x 15
 y 16
 end
+arch barrack_long
+x 15
+y 16
+end
 arch grass
+x 15
+y 17
+end
+arch barrack_long
 x 15
 y 17
 end
@@ -1881,6 +1932,10 @@ x 17
 y 1
 end
 arch cobblestones2
+x 17
+y 2
+end
+arch keep
 x 17
 y 2
 end
@@ -2247,59 +2302,4 @@ end
 arch cwall_2_2_4
 x 19
 y 19
-end
-arch inn
-slaying inn
-hp 17
-sp 14
-x 7
-y 3
-end
-arch courthouse
-x 10
-y 5
-end
-arch store_general
-x 10
-y 13
-end
-arch barrack_long
-x 15
-y 5
-end
-arch barrack_long
-x 15
-y 6
-end
-arch barrack_long
-x 15
-y 7
-end
-arch barrack_long
-x 15
-y 12
-end
-arch barrack_long
-x 15
-y 13
-end
-arch barrack_long
-x 15
-y 14
-end
-arch barrack_long
-x 15
-y 15
-end
-arch barrack_long
-x 15
-y 16
-end
-arch barrack_long
-x 15
-y 17
-end
-arch keep
-x 17
-y 2
 end

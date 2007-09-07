@@ -1272,6 +1272,27 @@ arch dungeon_floor
 x 7
 y 4
 end
+arch big_dragon
+name Takuse, the old fiery dragon
+Int 5
+hp 5500
+maxsp 80
+exp 200000
+dam 30
+wc -25
+ac -11
+x 7
+y 4
+speed -0.500000
+level 20
+carrying 25000
+arch spell_mass_confusion
+end
+arch dragon_scale
+name Heart of Takuse
+face burnout.111
+end
+end
 arch dungeon_floor
 x 7
 y 5
@@ -1483,11 +1504,19 @@ arch dungeon_floor
 x 8
 y 12
 end
+arch dragon
+x 8
+y 12
+end
 arch dungeon_floor
 x 8
 y 13
 end
 arch dungeon_floor
+x 8
+y 14
+end
+arch dragon
 x 8
 y 14
 end
@@ -1963,11 +1992,19 @@ arch dungeon_floor
 x 11
 y 12
 end
+arch dragon
+x 11
+y 12
+end
 arch dungeon_floor
 x 11
 y 13
 end
 arch dungeon_floor
+x 11
+y 14
+end
+arch dragon
 x 11
 y 14
 end
@@ -2839,11 +2876,23 @@ arch dungeon_floor
 x 16
 y 11
 end
+arch dragon
+x 16
+y 11
+end
 arch dungeon_floor
 x 16
 y 12
 end
+arch dragon
+x 16
+y 12
+end
 arch dungeon_floor
+x 16
+y 13
+end
+arch dragon
 x 16
 y 13
 end
@@ -2995,6 +3044,10 @@ arch dungeon_floor
 x 17
 y 10
 end
+arch dragon
+x 17
+y 10
+end
 arch dungeon_floor
 x 17
 y 11
@@ -3158,11 +3211,23 @@ arch dungeon_floor
 x 18
 y 11
 end
+arch dragon
+x 18
+y 11
+end
 arch dungeon_floor
 x 18
 y 12
 end
+arch dragon
+x 18
+y 12
+end
 arch dungeon_floor
+x 18
+y 13
+end
+arch dragon
 x 18
 y 13
 end
@@ -3342,6 +3407,10 @@ x 19
 y 9
 end
 arch dungeon_floor
+x 19
+y 10
+end
+arch dragon
 x 19
 y 10
 end
@@ -4453,11 +4522,19 @@ arch dungeon_floor
 x 25
 y 7
 end
+arch dragon
+x 25
+y 7
+end
 arch dungeon_floor
 x 25
 y 8
 end
 arch dungeon_floor
+x 25
+y 9
+end
+arch dragon
 x 25
 y 9
 end
@@ -4566,6 +4643,10 @@ x 25
 y 25
 end
 arch jungle_2
+x 25
+y 26
+end
+arch big_dragon
 x 25
 y 26
 end
@@ -4782,6 +4863,10 @@ arch dungeon_floor
 x 27
 y 2
 end
+arch big_dragon
+x 27
+y 2
+end
 arch dungeon_floor
 x 27
 y 3
@@ -5019,6 +5104,10 @@ y 13
 move_block 0
 end
 arch dungeon_floor
+x 28
+y 14
+end
+arch big_dragon
 x 28
 y 14
 end
@@ -5480,6 +5569,10 @@ arch dungeon_floor
 x 31
 y 2
 end
+arch big_dragon
+x 31
+y 2
+end
 arch dungeon_floor
 x 31
 y 3
@@ -5541,6 +5634,10 @@ x 31
 y 14
 end
 arch dungeon_floor
+x 31
+y 15
+end
+arch big_dragon
 x 31
 y 15
 end
@@ -6384,101 +6481,4 @@ end
 arch jungle_2
 x 35
 y 27
-end
-arch big_dragon
-name Takuse, the old fiery dragon
-Int 5
-hp 5500
-maxsp 80
-exp 200000
-dam 30
-wc -25
-ac -11
-x 7
-y 4
-speed -0.500000
-level 20
-carrying 25000
-arch spell_mass_confusion
-end
-arch dragon_scale
-name Heart of Takuse
-face burnout.111
-end
-end
-arch dragon
-x 8
-y 12
-end
-arch dragon
-x 8
-y 14
-end
-arch dragon
-x 11
-y 12
-end
-arch dragon
-x 11
-y 14
-end
-arch dragon
-x 16
-y 11
-end
-arch dragon
-x 16
-y 12
-end
-arch dragon
-x 16
-y 13
-end
-arch dragon
-x 17
-y 10
-end
-arch dragon
-x 18
-y 11
-end
-arch dragon
-x 18
-y 12
-end
-arch dragon
-x 18
-y 13
-end
-arch dragon
-x 19
-y 10
-end
-arch dragon
-x 25
-y 7
-end
-arch dragon
-x 25
-y 9
-end
-arch big_dragon
-x 25
-y 26
-end
-arch big_dragon
-x 27
-y 2
-end
-arch big_dragon
-x 28
-y 14
-end
-arch big_dragon
-x 31
-y 2
-end
-arch big_dragon
-x 31
-y 15
 end

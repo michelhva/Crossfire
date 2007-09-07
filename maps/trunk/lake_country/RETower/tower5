@@ -2500,6 +2500,15 @@ arch permanent_lava
 x 14
 y 4
 end
+arch demon_lord
+hp 5000
+x 14
+y 4
+carrying 100
+arch key2
+slaying tower5
+end
+end
 arch permanent_lava
 x 14
 y 5
@@ -3398,6 +3407,10 @@ arch permanent_lava
 x 20
 y 4
 end
+arch demon_lord
+x 20
+y 4
+end
 arch permanent_lava
 x 20
 y 5
@@ -4165,17 +4178,4 @@ name firewall
 face fireball.111
 x 24
 y 24
-end
-arch demon_lord
-hp 5000
-x 14
-y 4
-carrying 100
-arch key2
-slaying tower5
-end
-end
-arch demon_lord
-x 20
-y 4
 end

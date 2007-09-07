@@ -625,8 +625,8 @@ hp 200
 x 4
 y 14
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch woodfloor
@@ -767,6 +767,13 @@ end
 arch jungle_2
 x 5
 y 18
+end
+arch unicorn
+hp 500
+x 5
+y 18
+speed 0.500000
+speed_left -23.389999
 end
 arch jungle_2
 x 5
@@ -2376,8 +2383,8 @@ x 16
 y 9
 type 0
 carrying 2120
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 arch eyeglasses
 end
@@ -3018,11 +3025,4 @@ end
 arch blocked
 x 20
 y 23
-end
-arch unicorn
-hp 500
-x 5
-y 18
-speed 0.500000
-speed_left -23.389999
 end
