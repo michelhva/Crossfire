@@ -707,6 +707,15 @@ arch pstone_1
 x 5
 y 9
 end
+arch dragon
+hp 1300
+dam 50
+wc -10
+x 5
+y 9
+arch spell_mass_confusion
+end
+end
 arch pstone_1
 x 5
 y 10
@@ -1190,6 +1199,15 @@ end
 arch pstone_1
 x 9
 y 8
+end
+arch dragon
+hp 1300
+dam 50
+wc -10
+x 9
+y 8
+arch spell_mass_confusion
+end
 end
 arch pstone_1
 x 9
@@ -1698,6 +1716,15 @@ end
 arch pstone_1
 x 13
 y 4
+end
+arch dragon
+hp 1300
+dam 50
+wc -10
+x 13
+y 4
+arch spell_mass_confusion
+end
 end
 arch pstone_1
 x 13
@@ -2936,6 +2963,15 @@ arch pstone_1
 x 22
 y 19
 end
+arch dragon
+hp 1300
+dam 50
+wc -10
+x 22
+y 19
+arch spell_mass_confusion
+end
+end
 arch pstone_1
 x 22
 y 20
@@ -3289,6 +3325,15 @@ end
 arch pstone_1
 x 25
 y 6
+end
+arch dragon
+hp 1300
+dam 50
+wc -10
+x 25
+y 6
+arch spell_mass_confusion
+end
 end
 arch pstone_1
 x 25
@@ -3984,49 +4029,4 @@ end
 arch bwall_2_2_4
 x 29
 y 24
-end
-arch dragon
-hp 1300
-dam 50
-wc -10
-x 5
-y 9
-arch spell_mass_confusion
-end
-end
-arch dragon
-hp 1300
-dam 50
-wc -10
-x 9
-y 8
-arch spell_mass_confusion
-end
-end
-arch dragon
-hp 1300
-dam 50
-wc -10
-x 13
-y 4
-arch spell_mass_confusion
-end
-end
-arch dragon
-hp 1300
-dam 50
-wc -10
-x 22
-y 19
-arch spell_mass_confusion
-end
-end
-arch dragon
-hp 1300
-dam 50
-wc -10
-x 25
-y 6
-arch spell_mass_confusion
-end
 end

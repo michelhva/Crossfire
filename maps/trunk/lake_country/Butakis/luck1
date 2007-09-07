@@ -317,6 +317,10 @@ arch woodfloor
 x 1
 y 11
 end
+arch big_dragon
+x 1
+y 11
+end
 arch woodfloor
 x 1
 y 12
@@ -2591,6 +2595,10 @@ arch woodfloor
 x 11
 y 13
 end
+arch big_dragon
+x 11
+y 13
+end
 arch woodfloor
 x 11
 y 14
@@ -2767,6 +2775,10 @@ x 12
 y 15
 end
 arch woodfloor
+x 12
+y 16
+end
+arch big_dragon
 x 12
 y 16
 end
@@ -3205,8 +3217,8 @@ resist_fire 100
 resist_electricity 100
 resist_cold 100
 carrying 5000
-monster 1
 move_type walk
+monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
@@ -4593,6 +4605,10 @@ arch woodfloor
 x 21
 y 15
 end
+arch dragon
+x 21
+y 15
+end
 arch woodfloor
 x 21
 y 16
@@ -5228,20 +5244,4 @@ arch button_plate
 x 29
 y 22
 connected 61
-end
-arch big_dragon
-x 1
-y 11
-end
-arch big_dragon
-x 11
-y 13
-end
-arch big_dragon
-x 12
-y 16
-end
-arch dragon
-x 21
-y 15
 end

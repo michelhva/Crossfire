@@ -1172,6 +1172,10 @@ arch dungeon_floor
 x 3
 y 51
 end
+arch big_dragon
+x 3
+y 51
+end
 arch dungeon_floor
 x 3
 y 52
@@ -1973,6 +1977,10 @@ arch pstone_2
 x 6
 y 23
 end
+arch giant
+x 6
+y 23
+end
 arch pstone_2
 x 6
 y 24
@@ -2304,6 +2312,10 @@ arch pstone_2
 x 7
 y 23
 end
+arch giant
+x 7
+y 23
+end
 arch pstone_2
 x 7
 y 24
@@ -2441,6 +2453,10 @@ x 7
 y 45
 end
 arch dungeon_magic
+x 7
+y 45
+end
+arch big_wiz
 x 7
 y 45
 end
@@ -2644,6 +2660,10 @@ x 8
 y 22
 end
 arch pstone_2
+x 8
+y 23
+end
+arch giant
 x 8
 y 23
 end
@@ -2996,6 +3016,10 @@ x 9
 y 22
 end
 arch pstone_2
+x 9
+y 23
+end
+arch giant
 x 9
 y 23
 end
@@ -6324,6 +6348,10 @@ arch pstone_2
 x 18
 y 35
 end
+arch chinese_dragon
+x 18
+y 35
+end
 arch pstone_2
 x 18
 y 36
@@ -6332,11 +6360,19 @@ arch pstone_2
 x 18
 y 37
 end
+arch chinese_dragon
+x 18
+y 37
+end
 arch pstone_2
 x 18
 y 38
 end
 arch pstone_2
+x 18
+y 39
+end
+arch chinese_dragon
 x 18
 y 39
 end
@@ -6918,6 +6954,10 @@ arch pstone_2
 x 20
 y 34
 end
+arch chinese_dragon
+x 20
+y 34
+end
 arch pstone_2
 x 20
 y 35
@@ -6926,11 +6966,19 @@ arch pstone_2
 x 20
 y 36
 end
+arch chinese_dragon
+x 20
+y 36
+end
 arch pstone_2
 x 20
 y 37
 end
 arch pstone_2
+x 20
+y 38
+end
+arch chinese_dragon
 x 20
 y 38
 end
@@ -7494,11 +7542,23 @@ arch large_stones
 x 22
 y 23
 end
+arch dragon
+x 22
+y 23
+end
 arch large_stones
 x 22
 y 24
 end
+arch dragon
+x 22
+y 24
+end
 arch large_stones
+x 22
+y 25
+end
+arch dragon
 x 22
 y 25
 end
@@ -7559,11 +7619,19 @@ arch pstone_2
 x 22
 y 34
 end
+arch chinese_dragon
+x 22
+y 34
+end
 arch pstone_2
 x 22
 y 35
 end
 arch pstone_2
+x 22
+y 36
+end
+arch chinese_dragon
 x 22
 y 36
 end
@@ -7984,6 +8052,10 @@ x 23
 y 38
 end
 arch pstone_2
+x 23
+y 39
+end
+arch chinese_dragon
 x 23
 y 39
 end
@@ -8306,6 +8378,10 @@ arch large_stones
 x 24
 y 24
 end
+arch dragon
+x 24
+y 24
+end
 arch large_stones
 x 24
 y 25
@@ -8372,6 +8448,10 @@ x 24
 y 35
 end
 arch pstone_2
+x 24
+y 36
+end
+arch chinese_dragon
 x 24
 y 36
 end
@@ -8758,6 +8838,10 @@ x 25
 y 33
 end
 arch pstone_2
+x 25
+y 34
+end
+arch chinese_dragon
 x 25
 y 34
 end
@@ -9578,6 +9662,10 @@ x 27
 y 35
 end
 arch pstone_2
+x 27
+y 36
+end
+arch chinese_dragon
 x 27
 y 36
 end
@@ -12755,6 +12843,10 @@ arch dungeon_floor
 x 34
 y 56
 end
+arch chinese_dragon
+x 34
+y 56
+end
 arch dungeon_floor
 x 34
 y 57
@@ -13528,11 +13620,19 @@ arch dungeon_floor
 x 36
 y 54
 end
+arch chinese_dragon
+x 36
+y 54
+end
 arch dungeon_floor
 x 36
 y 55
 end
 arch dungeon_floor
+x 36
+y 56
+end
+arch chinese_dragon
 x 36
 y 56
 end
@@ -14688,11 +14788,19 @@ arch dungeon_floor
 x 39
 y 54
 end
+arch chinese_dragon
+x 39
+y 54
+end
 arch dungeon_floor
 x 39
 y 55
 end
 arch dungeon_floor
+x 39
+y 56
+end
+arch chinese_dragon
 x 39
 y 56
 end
@@ -15684,6 +15792,10 @@ arch dungeon_floor
 x 42
 y 42
 end
+arch chinese_dragon
+x 42
+y 42
+end
 arch dungeon_floor
 x 42
 y 43
@@ -15708,11 +15820,19 @@ arch dungeon_floor
 x 42
 y 48
 end
+arch chinese_dragon
+x 42
+y 48
+end
 arch dungeon_floor
 x 42
 y 49
 end
 arch dungeon_floor
+x 42
+y 50
+end
+arch chinese_dragon
 x 42
 y 50
 end
@@ -15728,6 +15848,10 @@ arch dungeon_floor
 x 42
 y 53
 end
+arch chinese_dragon
+x 42
+y 53
+end
 arch dungeon_floor
 x 42
 y 54
@@ -15737,6 +15861,10 @@ x 42
 y 55
 end
 arch dungeon_floor
+x 42
+y 56
+end
+arch chinese_dragon
 x 42
 y 56
 end
@@ -15770,6 +15898,10 @@ arch dungeon_floor
 x 43
 y 2
 end
+arch big_dragon
+x 43
+y 2
+end
 arch dungeon_floor
 x 43
 y 3
@@ -15778,11 +15910,19 @@ arch dungeon_floor
 x 43
 y 4
 end
+arch big_dragon
+x 43
+y 4
+end
 arch dungeon_floor
 x 43
 y 5
 end
 arch dungeon_floor
+x 43
+y 6
+end
+arch big_dragon
 x 43
 y 6
 end
@@ -15998,6 +16138,10 @@ arch dungeon_floor
 x 43
 y 45
 end
+arch chinese_dragon
+x 43
+y 45
+end
 arch dungeon_floor
 x 43
 y 46
@@ -16324,6 +16468,10 @@ arch dungeon_floor
 x 44
 y 40
 end
+arch chinese_dragon
+x 44
+y 40
+end
 arch dungeon_floor
 x 44
 y 41
@@ -16356,6 +16504,10 @@ arch dungeon_floor
 x 44
 y 48
 end
+arch chinese_dragon
+x 44
+y 48
+end
 arch dungeon_floor
 x 44
 y 49
@@ -16368,6 +16520,10 @@ arch dungeon_floor
 x 44
 y 51
 end
+arch chinese_dragon
+x 44
+y 51
+end
 arch dungeon_floor
 x 44
 y 52
@@ -16377,6 +16533,10 @@ x 44
 y 53
 end
 arch dungeon_floor
+x 44
+y 54
+end
+arch chinese_dragon
 x 44
 y 54
 end
@@ -16599,6 +16759,10 @@ arch dungeon_floor
 x 45
 y 42
 end
+arch chinese_dragon
+x 45
+y 42
+end
 arch dungeon_floor
 x 45
 y 43
@@ -16655,6 +16819,10 @@ arch dungeon_floor
 x 45
 y 56
 end
+arch chinese_dragon
+x 45
+y 56
+end
 arch dungeon_floor
 x 45
 y 57
@@ -16685,11 +16853,19 @@ arch dungeon_floor
 x 46
 y 2
 end
+arch big_dragon
+x 46
+y 2
+end
 arch dungeon_floor
 x 46
 y 3
 end
 arch dungeon_floor
+x 46
+y 4
+end
+arch big_dragon
 x 46
 y 4
 end
@@ -16758,11 +16934,19 @@ arch dungeon_floor
 x 46
 y 18
 end
+arch big_dragon
+x 46
+y 18
+end
 arch dungeon_floor
 x 46
 y 19
 end
 arch dungeon_floor
+x 46
+y 20
+end
+arch big_dragon
 x 46
 y 20
 end
@@ -16774,11 +16958,19 @@ arch dungeon_floor
 x 46
 y 22
 end
+arch big_dragon
+x 46
+y 22
+end
 arch dungeon_floor
 x 46
 y 23
 end
 arch dungeon_floor
+x 46
+y 24
+end
+arch big_dragon
 x 46
 y 24
 end
@@ -16790,6 +16982,10 @@ arch dungeon_floor
 x 46
 y 26
 end
+arch big_dragon
+x 46
+y 26
+end
 arch dungeon_floor
 x 46
 y 27
@@ -16798,11 +16994,19 @@ arch dungeon_floor
 x 46
 y 28
 end
+arch big_dragon
+x 46
+y 28
+end
 arch dungeon_floor
 x 46
 y 29
 end
 arch dungeon_floor
+x 46
+y 30
+end
+arch big_dragon
 x 46
 y 30
 end
@@ -16882,6 +17086,10 @@ arch dungeon_floor
 x 46
 y 46
 end
+arch chinese_dragon
+x 46
+y 46
+end
 arch dungeon_floor
 x 46
 y 47
@@ -16890,11 +17098,19 @@ arch dungeon_floor
 x 46
 y 48
 end
+arch chinese_dragon
+x 46
+y 48
+end
 arch dungeon_floor
 x 46
 y 49
 end
 arch dungeon_floor
+x 46
+y 50
+end
+arch chinese_dragon
 x 46
 y 50
 end
@@ -16907,6 +17123,10 @@ x 46
 y 52
 end
 arch dungeon_floor
+x 46
+y 53
+end
+arch chinese_dragon
 x 46
 y 53
 end
@@ -16965,6 +17185,10 @@ x 47
 y 5
 end
 arch dungeon_floor
+x 47
+y 6
+end
+arch big_dragon
 x 47
 y 6
 end
@@ -17121,11 +17345,19 @@ arch dungeon_floor
 x 47
 y 39
 end
+arch chinese_dragon
+x 47
+y 39
+end
 arch dungeon_floor
 x 47
 y 40
 end
 arch dungeon_floor
+x 47
+y 41
+end
+arch chinese_dragon
 x 47
 y 41
 end
@@ -17138,6 +17370,10 @@ x 47
 y 43
 end
 arch dungeon_floor
+x 47
+y 44
+end
+arch chinese_dragon
 x 47
 y 44
 end
@@ -17186,6 +17422,10 @@ x 47
 y 55
 end
 arch dungeon_floor
+x 47
+y 56
+end
+arch chinese_dragon
 x 47
 y 56
 end
@@ -18004,6 +18244,10 @@ x 50
 y 36
 end
 arch dungeon_magic
+x 50
+y 36
+end
+arch big_wiz
 x 50
 y 36
 end
@@ -18456,6 +18700,10 @@ arch dungeon_floor
 x 52
 y 2
 end
+arch big_dragon
+x 52
+y 2
+end
 arch dungeon_floor
 x 52
 y 3
@@ -18464,11 +18712,19 @@ arch dungeon_floor
 x 52
 y 4
 end
+arch big_dragon
+x 52
+y 4
+end
 arch dungeon_floor
 x 52
 y 5
 end
 arch dungeon_floor
+x 52
+y 6
+end
+arch big_dragon
 x 52
 y 6
 end
@@ -19015,6 +19271,10 @@ x 53
 y 39
 end
 arch dungeon_magic
+x 53
+y 39
+end
+arch big_wiz
 x 53
 y 39
 end
@@ -19932,6 +20192,10 @@ x 56
 y 36
 end
 arch dungeon_magic
+x 56
+y 36
+end
+arch big_wiz
 x 56
 y 36
 end
@@ -21375,268 +21639,4 @@ end
 arch bwall_0
 x 59
 y 59
-end
-arch big_dragon
-x 3
-y 51
-end
-arch giant
-x 6
-y 23
-end
-arch giant
-x 7
-y 23
-end
-arch big_wiz
-x 7
-y 45
-end
-arch giant
-x 8
-y 23
-end
-arch giant
-x 9
-y 23
-end
-arch chinese_dragon
-x 18
-y 35
-end
-arch chinese_dragon
-x 18
-y 37
-end
-arch chinese_dragon
-x 18
-y 39
-end
-arch chinese_dragon
-x 20
-y 34
-end
-arch chinese_dragon
-x 20
-y 36
-end
-arch chinese_dragon
-x 20
-y 38
-end
-arch dragon
-x 22
-y 23
-end
-arch dragon
-x 22
-y 24
-end
-arch dragon
-x 22
-y 25
-end
-arch chinese_dragon
-x 22
-y 34
-end
-arch chinese_dragon
-x 22
-y 36
-end
-arch chinese_dragon
-x 23
-y 39
-end
-arch dragon
-x 24
-y 24
-end
-arch chinese_dragon
-x 24
-y 36
-end
-arch chinese_dragon
-x 25
-y 34
-end
-arch chinese_dragon
-x 27
-y 36
-end
-arch chinese_dragon
-x 34
-y 56
-end
-arch chinese_dragon
-x 36
-y 54
-end
-arch chinese_dragon
-x 36
-y 56
-end
-arch chinese_dragon
-x 39
-y 54
-end
-arch chinese_dragon
-x 39
-y 56
-end
-arch chinese_dragon
-x 42
-y 42
-end
-arch chinese_dragon
-x 42
-y 48
-end
-arch chinese_dragon
-x 42
-y 50
-end
-arch chinese_dragon
-x 42
-y 53
-end
-arch chinese_dragon
-x 42
-y 56
-end
-arch big_dragon
-x 43
-y 2
-end
-arch big_dragon
-x 43
-y 4
-end
-arch big_dragon
-x 43
-y 6
-end
-arch chinese_dragon
-x 43
-y 45
-end
-arch chinese_dragon
-x 44
-y 40
-end
-arch chinese_dragon
-x 44
-y 48
-end
-arch chinese_dragon
-x 44
-y 51
-end
-arch chinese_dragon
-x 44
-y 54
-end
-arch chinese_dragon
-x 45
-y 42
-end
-arch chinese_dragon
-x 45
-y 56
-end
-arch big_dragon
-x 46
-y 2
-end
-arch big_dragon
-x 46
-y 4
-end
-arch big_dragon
-x 46
-y 18
-end
-arch big_dragon
-x 46
-y 20
-end
-arch big_dragon
-x 46
-y 22
-end
-arch big_dragon
-x 46
-y 24
-end
-arch big_dragon
-x 46
-y 26
-end
-arch big_dragon
-x 46
-y 28
-end
-arch big_dragon
-x 46
-y 30
-end
-arch chinese_dragon
-x 46
-y 46
-end
-arch chinese_dragon
-x 46
-y 48
-end
-arch chinese_dragon
-x 46
-y 50
-end
-arch chinese_dragon
-x 46
-y 53
-end
-arch big_dragon
-x 47
-y 6
-end
-arch chinese_dragon
-x 47
-y 39
-end
-arch chinese_dragon
-x 47
-y 41
-end
-arch chinese_dragon
-x 47
-y 44
-end
-arch chinese_dragon
-x 47
-y 56
-end
-arch big_wiz
-x 50
-y 36
-end
-arch big_dragon
-x 52
-y 2
-end
-arch big_dragon
-x 52
-y 4
-end
-arch big_dragon
-x 52
-y 6
-end
-arch big_wiz
-x 53
-y 39
-end
-arch big_wiz
-x 56
-y 36
 end

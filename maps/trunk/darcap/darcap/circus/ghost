@@ -3479,6 +3479,12 @@ arch dungeon_floor
 x 25
 y 2
 end
+arch golem_necro
+x 25
+y 2
+unaggressive 1
+stand_still 1
+end
 arch dungeon_floor
 x 25
 y 3
@@ -3883,6 +3889,12 @@ arch dungeon_floor
 x 28
 y 3
 end
+arch dread
+x 28
+y 3
+unaggressive 1
+stand_still 1
+end
 arch dungeon_floor
 x 28
 y 4
@@ -3970,6 +3982,12 @@ end
 arch dungeon_floor
 x 28
 y 13
+end
+arch big_dragon_worthless
+x 28
+y 13
+unaggressive 1
+stand_still 1
 end
 arch dungeon_floor
 x 28
@@ -4364,22 +4382,4 @@ end
 arch woodwall_2_2_4
 x 31
 y 15
-end
-arch golem_necro
-x 25
-y 2
-unaggressive 1
-stand_still 1
-end
-arch dread
-x 28
-y 3
-unaggressive 1
-stand_still 1
-end
-arch big_dragon_worthless
-x 28
-y 13
-unaggressive 1
-stand_still 1
 end

@@ -1574,6 +1574,17 @@ arch medium_stones
 x 7
 y 1
 end
+arch big_demon
+x 7
+y 1
+speed_left -0.400000
+carrying 100
+arch key2
+slaying gateway
+end
+arch ability_fire
+end
+end
 arch medium_stones
 x 7
 y 2
@@ -3535,6 +3546,11 @@ x 16
 y 16
 end
 arch pstone_5
+x 16
+y 16
+end
+arch big_demon
+name The Summoner
 x 16
 y 16
 end
@@ -5735,6 +5751,17 @@ arch medium_stones
 x 26
 y 25
 end
+arch big_demon
+x 26
+y 25
+speed_left -0.400000
+carrying 100
+arch key2
+slaying inner_circle
+end
+arch ability_fire
+end
+end
 arch medium_stones
 x 26
 y 26
@@ -7506,31 +7533,4 @@ end
 arch bwall_2_2_4
 x 34
 y 34
-end
-arch big_demon
-x 7
-y 1
-speed_left -0.400000
-carrying 100
-arch key2
-slaying gateway
-end
-arch ability_fire
-end
-end
-arch big_demon
-name The Summoner
-x 16
-y 16
-end
-arch big_demon
-x 26
-y 25
-speed_left -0.400000
-carrying 100
-arch key2
-slaying inner_circle
-end
-arch ability_fire
-end
 end

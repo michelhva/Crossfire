@@ -1,17 +1,17 @@
 arch map
 name Generalstore Basement
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/21/2005
-endmsg
+shopitems light source:50;inorganic:20;*:0
+shopmin 500
+shopmax 60000
 width 15
 height 15
 enter_x 13
 enter_y 1
-shopitems light source:50;inorganic:20;*:0
-shopmin 500
-shopmax 60000
+msg
+Creator: Knut Ahlers
+Date:    7/21/2005
+endmsg
 end
 arch stonefloor2
 end
@@ -160,10 +160,10 @@ x 1
 y 12
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 1
 y 13
+no_magic 1
+damned 1
 end
 arch rod_heavy
 name heavy rod of the ancient mages
@@ -174,18 +174,18 @@ with it whole cities with one strike but
 it have a special safety: Only ancient
 mages can use its power.
 endmsg
-value 7
-identified 1
-level 115
 hp 0
 maxhp 0
 x 1
 y 13
+level 115
+value 7
+identified 1
 arch spell_destruction
-level 0
-casting_time 0
 sp 9000
 maxsp 0
+level 0
+casting_time 0
 end
 end
 arch stonefloor2
@@ -350,6 +350,12 @@ arch shop_empty
 x 4
 y 4
 end
+arch byakie
+x 4
+y 4
+resist_physical 50
+can_cast_spell 0
+end
 arch shop_empty
 x 4
 y 5
@@ -614,6 +620,12 @@ arch shop_empty
 x 8
 y 4
 end
+arch byakie
+x 8
+y 4
+resist_physical 50
+can_cast_spell 0
+end
 arch shop_empty
 x 8
 y 5
@@ -863,16 +875,16 @@ arch wwall_2_1_2
 x 12
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 12
 y 1
-end
-arch stonefloor2
 no_magic 1
 damned 1
+end
+arch stonefloor2
 x 12
 y 2
+no_magic 1
+damned 1
 end
 arch shop_empty
 x 12
@@ -933,10 +945,10 @@ arch wwall_2_1_2
 x 13
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 13
 y 1
+no_magic 1
+damned 1
 end
 arch stair_up
 slaying general
@@ -946,10 +958,10 @@ x 13
 y 1
 end
 arch stonefloor2
-no_magic 1
-damned 1
 x 13
 y 2
+no_magic 1
+damned 1
 end
 arch shop_empty
 x 13
@@ -1124,16 +1136,4 @@ end
 arch wwall_2_2_4
 x 14
 y 14
-end
-arch byakie
-can_cast_spell 0
-resist_physical 50
-x 4
-y 4
-end
-arch byakie
-can_cast_spell 0
-resist_physical 50
-x 8
-y 4
 end

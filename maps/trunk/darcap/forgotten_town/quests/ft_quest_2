@@ -1,14 +1,14 @@
 arch map
 name Forgotten Town - Quest 2
+width 30
+height 30
+enter_x 1
+enter_y 1
 msg
 Creator: K. Ahlers
 Date:    7/28/2006
 Mail: info@knutshome.de
 endmsg
-width 30
-height 30
-enter_x 1
-enter_y 1
 end
 arch grass
 end
@@ -687,9 +687,9 @@ x 3
 y 24
 end
 arch generate_mouse
-invisible 1
 x 3
 y 24
+invisible 1
 end
 arch rough_wall_2_1_2
 x 3
@@ -1526,9 +1526,9 @@ x 8
 y 9
 end
 arch roughwall_2_1_1
-move_block 0
 x 8
 y 9
+move_block 0
 end
 arch grass
 x 8
@@ -2249,9 +2249,9 @@ x 11
 y 29
 end
 arch generate_mouse
-invisible 1
 x 11
 y 29
+invisible 1
 end
 arch roughwall_2_1_2
 x 11
@@ -2529,6 +2529,24 @@ arch grass
 x 13
 y 13
 end
+arch big_wiz
+other_arch spectre
+hp 5000
+maxhp 5000
+sp 300
+maxsp 300
+exp 100
+x 13
+y 13
+speed 4.0
+level 40
+attacktype 4245
+path_attuned 14
+pick_up 64
+generator 1
+can_use_skill 1
+can_see_in_dark 1
+end
 arch grass
 x 13
 y 14
@@ -2672,12 +2690,12 @@ x 14
 y 7
 end
 arch teleporter
-invisible 1
 hp 12
 sp 12
-speed 1
 x 14
 y 7
+speed 1
+invisible 1
 end
 arch grass
 x 14
@@ -3096,9 +3114,9 @@ x 16
 y 15
 end
 arch grass
-move_block all
 x 16
 y 16
+move_block all
 end
 arch grass
 x 16
@@ -3597,9 +3615,9 @@ x 19
 y 2
 end
 arch generate_mouse
-invisible 1
 x 19
 y 2
+invisible 1
 end
 arch rough_wall_2_1_2
 x 19
@@ -3928,9 +3946,9 @@ x 20
 y 21
 end
 arch rough_wall_2_1_1
-move_block 0
 x 20
 y 21
+move_block 0
 end
 arch grass
 x 20
@@ -5798,22 +5816,4 @@ end
 arch roughwall_2_2_4
 x 29
 y 29
-end
-arch big_wiz
-level 40
-exp 100
-other_arch spectre
-generator 1
-attacktype 4245
-hp 5000
-maxhp 5000
-sp 300
-maxsp 300
-path_attuned 14
-can_see_in_dark 1
-can_use_skill 1
-pick_up 64
-speed 4.0
-x 13
-y 13
 end

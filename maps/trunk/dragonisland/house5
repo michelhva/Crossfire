@@ -395,6 +395,10 @@ arch dungeon_floor
 x 3
 y 10
 end
+arch giant
+x 3
+y 10
+end
 arch dungeon_floor
 x 3
 y 11
@@ -1816,8 +1820,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-x 3
-y 10
 end
