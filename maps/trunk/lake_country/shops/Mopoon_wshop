@@ -308,11 +308,19 @@ arch dungeon_floor
 x 2
 y 2
 end
+arch chinese_dragon
+x 2
+y 2
+end
 arch dungeon_floor
 x 2
 y 3
 end
 arch dungeon_floor
+x 2
+y 4
+end
+arch big_dragon
 x 2
 y 4
 end
@@ -719,6 +727,10 @@ speed 0.500000
 connected 9
 end
 arch dungeon_floor
+x 4
+y 22
+end
+arch big_dragon
 x 4
 y 22
 end
@@ -4089,6 +4101,12 @@ arch dungeon_floor
 x 22
 y 20
 end
+arch big_elec
+dam 0
+x 22
+y 20
+unaggressive 1
+end
 arch dungeon_floor
 x 22
 y 21
@@ -4442,6 +4460,10 @@ x 24
 y 9
 end
 arch dungeon_floor
+x 24
+y 10
+end
+arch big_elec
 x 24
 y 10
 end
@@ -5152,26 +5174,4 @@ end
 arch blocked
 x 27
 y 27
-end
-arch chinese_dragon
-x 2
-y 2
-end
-arch big_dragon
-x 2
-y 4
-end
-arch big_dragon
-x 4
-y 22
-end
-arch big_elec
-dam 0
-x 22
-y 20
-unaggressive 1
-end
-arch big_elec
-x 24
-y 10
 end

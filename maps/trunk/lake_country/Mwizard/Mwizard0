@@ -1,17 +1,17 @@
 arch map
-region lakecountry
 name Mwizard0
+reset_timeout 7200
+difficulty 8
+region lakecountry
+width 34
+height 30
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Mar 24 09:44:45 1995
 endmsg
-width 34
-height 30
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 8
 end
 arch flagstone
 end
@@ -611,9 +611,9 @@ end
 arch gnome
 name Ugly Gnome
 hp 200
-carrying 100
 x 2
 y 21
+carrying 100
 arch key2
 name a Big Key
 slaying 135
@@ -2391,6 +2391,16 @@ arch grass
 x 10
 y 4
 end
+arch ent
+x 10
+y 4
+arch spell_mass_confusion
+end
+arch spell_poison_cloud
+end
+arch spell_paralyze
+end
+end
 arch grass
 x 10
 y 5
@@ -2449,24 +2459,24 @@ x 10
 y 15
 end
 arch spikes_closed
+x 10
+y 15
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
 no_magic 1
-x 10
-y 15
 end
 arch flagstone
 x 10
 y 16
 end
 arch button_handle
+x 10
+y 16
 resist_physical 30
 resist_confusion 30
 connected 33
-x 10
-y 16
 end
 arch flagstone
 x 10
@@ -2635,16 +2645,16 @@ y 8
 end
 arch locked_door1
 name Black Gate
-face ldoor_brown1.111
+slaying no_key_for_wiztower
 msg
 The key to this gate has long been
 lost...
 endmsg
-slaying no_key_for_wiztower
-no_magic 0
-damned 0
+face ldoor_brown1.111
 x 11
 y 8
+no_magic 0
+damned 0
 end
 arch flagstone
 x 11
@@ -2683,13 +2693,13 @@ x 11
 y 15
 end
 arch spikes_closed
+x 11
+y 15
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
 no_magic 1
-x 11
-y 15
 end
 arch flagstone
 x 11
@@ -2870,16 +2880,16 @@ y 8
 end
 arch locked_door1
 name Black Gate
-face ldoor_brown1.111
+slaying no_key_for_wiztower
 msg
 The key to this gate has long been
 lost...
 endmsg
-slaying no_key_for_wiztower
-no_magic 0
-damned 0
+face ldoor_brown1.111
 x 12
 y 8
+no_magic 0
+damned 0
 end
 arch flagstone
 x 12
@@ -2899,7 +2909,6 @@ y 12
 end
 arch scroll
 name glowing scroll
-face naz_report.111
 msg
 Welcome to the Tower of Magi, the
 traditional testing ground for those
@@ -2914,10 +2923,11 @@ where you may restore your strength and
 determination.
 - GOOD LUCK.
 endmsg
-material 0
-no_pick 1
+face naz_report.111
 x 12
 y 12
+material 0
+no_pick 1
 end
 arch flagstone
 x 12
@@ -2932,13 +2942,13 @@ x 12
 y 15
 end
 arch spikes_closed
+x 12
+y 15
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
 no_magic 1
-x 12
-y 15
 end
 arch flagstone
 x 12
@@ -2973,9 +2983,9 @@ x 12
 y 20
 end
 arch chest
-carrying 3000
 x 12
 y 20
+carrying 3000
 arch bagpipe
 end
 end
@@ -3084,6 +3094,16 @@ arch grass
 x 13
 y 4
 end
+arch ent
+x 13
+y 4
+arch spell_mass_confusion
+end
+arch spell_poison_cloud
+end
+arch spell_paralyze
+end
+end
 arch grass
 x 13
 y 5
@@ -3114,16 +3134,16 @@ y 8
 end
 arch locked_door1
 name Black Gate
-face ldoor_brown1.111
+slaying no_key_for_wiztower
 msg
 The key to this gate has long been
 lost...
 endmsg
-slaying no_key_for_wiztower
-no_magic 0
-damned 0
+face ldoor_brown1.111
 x 13
 y 8
+no_magic 0
+damned 0
 end
 arch flagstone
 x 13
@@ -3162,13 +3182,13 @@ x 13
 y 15
 end
 arch spikes_closed
+x 13
+y 15
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
 no_magic 1
-x 13
-y 15
 end
 arch flagstone
 x 13
@@ -3369,22 +3389,22 @@ x 14
 y 15
 end
 arch spikes_closed
+x 14
+y 15
 speed 0.500000
 resist_physical 30
 resist_confusion 30
 connected 33
 no_magic 1
-x 14
-y 15
 end
 arch flagstone
 x 14
 y 16
 end
 arch teleporter
-speed 0.000000
 x 14
 y 16
+speed 0.000000
 end
 arch flagstone
 x 14
@@ -4409,21 +4429,21 @@ y 3
 end
 arch wizard
 name Journeyman Summoner
-type 0
 Con 2
 Wis 15
 Int 4
 hp 240
 maxsp 50
 exp 1700
+x 19
+y 3
 speed 0.210000
 attack_movement 7
 level 11
-monster 1
+type 0
 move_type walk
+monster 1
 can_cast_spell 1
-x 19
-y 3
 arch spell_summon_earth_elemental
 end
 arch spell_summon_earth_elemental
@@ -7143,24 +7163,4 @@ end
 arch flagstone
 x 33
 y 29
-end
-arch ent
-x 10
-y 4
-arch spell_mass_confusion
-end
-arch spell_poison_cloud
-end
-arch spell_paralyze
-end
-end
-arch ent
-x 13
-y 4
-arch spell_mass_confusion
-end
-arch spell_poison_cloud
-end
-arch spell_paralyze
-end
 end
