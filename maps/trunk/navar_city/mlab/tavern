@@ -3533,8 +3533,8 @@ x 6
 y 49
 value 20000
 weight 9999999
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch marble
 x 6
@@ -4550,8 +4550,8 @@ x 8
 y 47
 value 20000
 weight 9999999
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch marble
 x 8
@@ -4580,8 +4580,8 @@ x 8
 y 51
 value 20000
 weight 9999999
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch marble
 x 8
@@ -5729,8 +5729,8 @@ x 10
 y 49
 value 20000
 weight 9999999
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch marble
 x 10
@@ -7269,8 +7269,8 @@ hp 20
 x 13
 y 34
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch marble
@@ -8889,8 +8889,8 @@ y 27
 level 2
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -10063,8 +10063,8 @@ x 18
 y 23
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -10109,8 +10109,8 @@ x 18
 y 27
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -12574,8 +12574,8 @@ x 22
 y 27
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -13725,8 +13725,8 @@ maxhp 100
 x 24
 y 26
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -16613,8 +16613,8 @@ hp 50
 x 29
 y 28
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_cast_spell 1
 end
@@ -17762,8 +17762,8 @@ x 31
 y 24
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -17807,8 +17807,8 @@ x 31
 y 29
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -18348,8 +18348,8 @@ maxhp 100
 x 32
 y 30
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -18671,8 +18671,8 @@ endmsg
 x 33
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch stonefloor2
@@ -19194,8 +19194,8 @@ x 34
 y 7
 value 200
 weight 100000
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch blackmarble
 x 34
@@ -20292,8 +20292,8 @@ x 36
 y 21
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 arch random_wealth
 end
@@ -21953,8 +21953,8 @@ x 39
 y 30
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -23051,8 +23051,8 @@ hp 225
 x 41
 y 34
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -24576,8 +24576,8 @@ arch viking
 x 44
 y 20
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch stonefloor2
@@ -26232,8 +26232,8 @@ hp 100
 x 47
 y 20
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -28670,8 +28670,8 @@ x 52
 y 5
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch woodfloor2
@@ -30018,8 +30018,8 @@ x 54
 y 17
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -30837,8 +30837,8 @@ x 55
 y 34
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch flagstone
@@ -37169,6 +37169,10 @@ arch cobblestones2
 x 69
 y 20
 end
+arch dragon
+x 69
+y 20
+end
 arch cobblestones2
 x 69
 y 21
@@ -37253,11 +37257,23 @@ arch cobblestones2
 x 69
 y 31
 end
+arch dragon
+x 69
+y 31
+end
 arch cobblestones2
 x 69
 y 32
 end
+arch dragon
+x 69
+y 32
+end
 arch cobblestones2
+x 69
+y 33
+end
+arch dragon
 x 69
 y 33
 end
@@ -37673,6 +37689,10 @@ x 70
 y 21
 end
 arch cobblestones2
+x 70
+y 22
+end
+arch dragon
 x 70
 y 22
 end
@@ -39791,6 +39811,10 @@ arch cobblestones2
 x 74
 y 25
 end
+arch cobra
+x 74
+y 25
+end
 arch cobblestones2
 x 74
 y 26
@@ -40327,6 +40351,10 @@ x 75
 y 21
 end
 arch cobblestones2
+x 75
+y 22
+end
+arch serpent
 x 75
 y 22
 end
@@ -41569,6 +41597,10 @@ x 77
 y 21
 end
 arch cobblestones2
+x 77
+y 22
+end
+arch cobra
 x 77
 y 22
 end
@@ -47341,6 +47373,10 @@ end
 arch random_treasure
 end
 end
+arch dragon
+x 86
+y 28
+end
 arch cobblestones2
 x 86
 y 29
@@ -47354,6 +47390,10 @@ arch random_treasure
 end
 arch random_treasure
 end
+end
+arch dragon
+x 86
+y 29
 end
 arch cobblestones2
 x 86
@@ -52046,44 +52086,4 @@ end
 arch grass
 x 94
 y 79
-end
-arch dragon
-x 69
-y 20
-end
-arch dragon
-x 69
-y 31
-end
-arch dragon
-x 69
-y 32
-end
-arch dragon
-x 69
-y 33
-end
-arch dragon
-x 70
-y 22
-end
-arch cobra
-x 74
-y 25
-end
-arch serpent
-x 75
-y 22
-end
-arch cobra
-x 77
-y 22
-end
-arch dragon
-x 86
-y 28
-end
-arch dragon
-x 86
-y 29
 end

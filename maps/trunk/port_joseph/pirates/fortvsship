@@ -717,6 +717,17 @@ x 3
 y 27
 is_floor 1
 end
+arch rowboat
+slaying /world/world_100_116
+hp 39
+sp 23
+x 3
+y 27
+type 41
+connected 7
+activate_on_push 1
+activate_on_release 1
+end
 arch sea
 x 3
 y 28
@@ -1083,6 +1094,10 @@ x 5
 y 21
 end
 arch cobblestones2
+x 5
+y 22
+end
+arch barrack_long
 x 5
 y 22
 end
@@ -1641,6 +1656,10 @@ arch sea
 x 9
 y 9
 end
+arch big_galleon
+x 9
+y 9
+end
 arch sea
 x 9
 y 10
@@ -2150,6 +2169,10 @@ arch sea
 x 12
 y 12
 end
+arch big_galleon
+x 12
+y 12
+end
 arch sea
 x 12
 y 13
@@ -2615,6 +2638,10 @@ arch sea
 x 15
 y 10
 end
+arch big_galleon
+x 15
+y 10
+end
 arch sea
 x 15
 y 11
@@ -2965,6 +2992,10 @@ arch sea
 x 17
 y 23
 end
+arch big_galleon
+x 17
+y 23
+end
 arch sea
 x 17
 y 24
@@ -3038,6 +3069,10 @@ x 18
 y 6
 end
 arch sea
+x 18
+y 7
+end
+arch big_galleon
 x 18
 y 7
 end
@@ -3284,6 +3319,10 @@ arch sea
 x 20
 y 3
 end
+arch big_galleon
+x 20
+y 3
+end
 arch sea
 x 20
 y 4
@@ -3346,6 +3385,10 @@ x 20
 y 17
 end
 arch sea
+x 20
+y 18
+end
+arch big_galleon
 x 20
 y 18
 end
@@ -3873,47 +3916,4 @@ end
 arch sea
 x 24
 y 29
-end
-arch rowboat
-slaying /world/world_100_116
-hp 39
-sp 23
-x 3
-y 27
-type 41
-connected 7
-activate_on_push 1
-activate_on_release 1
-end
-arch barrack_long
-x 5
-y 22
-end
-arch big_galleon
-x 9
-y 9
-end
-arch big_galleon
-x 12
-y 12
-end
-arch big_galleon
-x 15
-y 10
-end
-arch big_galleon
-x 17
-y 23
-end
-arch big_galleon
-x 18
-y 7
-end
-arch big_galleon
-x 20
-y 3
-end
-arch big_galleon
-x 20
-y 18
 end

@@ -280,6 +280,10 @@ arch woodfloor
 x 1
 y 24
 end
+arch troll
+x 1
+y 24
+end
 arch woodfloor
 x 1
 y 25
@@ -2103,6 +2107,10 @@ arch woodfloor
 x 14
 y 24
 end
+arch troll
+x 14
+y 24
+end
 arch woodfloor
 x 14
 y 25
@@ -2446,12 +2454,4 @@ end
 arch wwall_2_2_4
 x 16
 y 26
-end
-arch troll
-x 1
-y 24
-end
-arch troll
-x 14
-y 24
 end

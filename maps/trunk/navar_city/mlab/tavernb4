@@ -4148,6 +4148,10 @@ arch small_stones
 x 17
 y 30
 end
+arch big_elec
+x 17
+y 30
+end
 arch small_stones
 x 17
 y 31
@@ -4469,8 +4473,8 @@ x 19
 y 4
 type 0
 randomitems standard
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch small_stones
@@ -4879,6 +4883,10 @@ x 20
 y 31
 end
 arch small_stones
+x 20
+y 32
+end
+arch big_elec
 x 20
 y 32
 end
@@ -15819,12 +15827,4 @@ end
 arch cave22
 x 59
 y 39
-end
-arch big_elec
-x 17
-y 30
-end
-arch big_elec
-x 20
-y 32
 end

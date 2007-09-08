@@ -802,6 +802,13 @@ arch dirtfloor
 x 5
 y 20
 end
+arch giantrat
+Wis 15
+x 5
+y 20
+see_invisible 1
+can_see_in_dark 1
+end
 arch dirtfloor
 x 5
 y 21
@@ -1403,6 +1410,13 @@ end
 arch dirtfloor
 x 10
 y 15
+end
+arch giantrat
+Wis 15
+x 10
+y 15
+see_invisible 1
+can_see_in_dark 1
 end
 arch dirtfloor
 x 10
@@ -3933,6 +3947,13 @@ arch dirtfloor
 x 29
 y 10
 end
+arch giantrat
+Wis 15
+x 29
+y 10
+see_invisible 1
+can_see_in_dark 1
+end
 arch dirtfloor
 x 29
 y 11
@@ -4416,6 +4437,13 @@ end
 arch dirtfloor
 x 33
 y 5
+end
+arch giantrat
+Wis 15
+x 33
+y 5
+see_invisible 1
+can_see_in_dark 1
 end
 arch dirtfloor
 x 33
@@ -5300,32 +5328,4 @@ end
 arch blocked
 x 39
 y 24
-end
-arch giantrat
-Wis 15
-x 5
-y 20
-see_invisible 1
-can_see_in_dark 1
-end
-arch giantrat
-Wis 15
-x 10
-y 15
-see_invisible 1
-can_see_in_dark 1
-end
-arch giantrat
-Wis 15
-x 29
-y 10
-see_invisible 1
-can_see_in_dark 1
-end
-arch giantrat
-Wis 15
-x 33
-y 5
-see_invisible 1
-can_see_in_dark 1
 end

@@ -11389,6 +11389,11 @@ arch woodfloor2
 x 43
 y 39
 end
+arch troll
+name Moetoo
+x 43
+y 39
+end
 arch woodfloor2
 x 43
 y 40
@@ -11684,6 +11689,11 @@ x 44
 y 40
 end
 arch woodfloor2
+x 44
+y 41
+end
+arch troll
+name Moe
 x 44
 y 41
 end
@@ -13177,14 +13187,4 @@ end
 arch grass
 x 49
 y 49
-end
-arch troll
-name Moetoo
-x 43
-y 39
-end
-arch troll
-name Moe
-x 44
-y 41
 end

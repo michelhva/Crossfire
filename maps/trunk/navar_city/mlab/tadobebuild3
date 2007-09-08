@@ -5327,6 +5327,17 @@ arch cobblestones
 x 18
 y 14
 end
+arch dragon_exit
+slaying /mlab/citydeclouds/cloudworlddecity
+msg
+You feel very tired.
+You dream of dragons and the sky...
+endmsg
+hp 29
+sp 112
+x 18
+y 14
+end
 arch dungeon_magic
 x 18
 y 15
@@ -12069,15 +12080,4 @@ x 39
 y 41
 move_block 0
 blocksview 0
-end
-arch dragon_exit
-slaying /mlab/citydeclouds/cloudworlddecity
-msg
-You feel very tired.
-You dream of dragons and the sky...
-endmsg
-hp 29
-sp 112
-x 18
-y 14
 end
