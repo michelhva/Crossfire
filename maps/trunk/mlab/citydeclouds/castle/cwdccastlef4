@@ -28625,6 +28625,26 @@ arch flagstone
 x 35
 y 62
 end
+arch big_dragon_ancient
+name impossibly ancient red dragon
+name_pl impossibly ancient red dragon
+Wis 25
+hp 15000
+maxhp 15000
+sp 120
+maxsp 150
+dam 55
+x 35
+y 62
+level 70
+carrying 100
+arch key2
+name golden key
+name_pl golden key
+slaying cofegdf4ng
+face key_brown.111
+end
+end
 arch light4
 x 35
 y 63
@@ -55286,6 +55306,15 @@ x 65
 y 32
 end
 arch flagstone
+x 65
+y 33
+end
+arch pentagram_111
+x 65
+y 33
+invisible 1
+end
+arch pentagram_111
 x 65
 y 33
 end
@@ -82845,33 +82874,4 @@ x 98
 y 98
 move_block 0
 blocksview 0
-end
-arch big_dragon_ancient
-name impossibly ancient red dragon
-name_pl impossibly ancient red dragon
-Wis 25
-hp 15000
-maxhp 15000
-sp 120
-maxsp 150
-dam 55
-x 35
-y 62
-level 70
-carrying 100
-arch key2
-name golden key
-name_pl golden key
-slaying cofegdf4ng
-face key_brown.111
-end
-end
-arch pentagram_111
-x 65
-y 33
-invisible 1
-end
-arch pentagram_111
-x 65
-y 33
 end

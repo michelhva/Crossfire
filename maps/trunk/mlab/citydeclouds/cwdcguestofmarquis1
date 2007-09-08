@@ -811,6 +811,10 @@ arch dungeon_floor
 x 2
 y 2
 end
+arch giantrat
+x 2
+y 2
+end
 arch dungeon_floor
 x 2
 y 3
@@ -987,6 +991,10 @@ arch dungeon_floor
 x 2
 y 31
 end
+arch cobra
+x 2
+y 31
+end
 arch dungeon_floor
 x 2
 y 32
@@ -1012,6 +1020,10 @@ x 2
 y 37
 end
 arch dungeon_floor
+x 2
+y 38
+end
+arch cobra
 x 2
 y 38
 end
@@ -1205,6 +1217,10 @@ arch dungeon_floor
 x 3
 y 5
 end
+arch giantrat
+x 3
+y 5
+end
 arch dungeon_floor
 x 3
 y 6
@@ -1341,11 +1357,19 @@ arch dungeon_floor
 x 3
 y 34
 end
+arch cobra
+x 3
+y 34
+end
 arch dungeon_floor
 x 3
 y 35
 end
 arch dungeon_floor
+x 3
+y 36
+end
+arch cobra
 x 3
 y 36
 end
@@ -1603,6 +1627,10 @@ arch dungeon_floor
 x 4
 y 9
 end
+arch giantrat
+x 4
+y 9
+end
 arch dungeon_floor
 x 4
 y 10
@@ -1708,6 +1736,10 @@ x 4
 y 28
 end
 arch dungeon_floor
+x 4
+y 29
+end
+arch cobra
 x 4
 y 29
 end
@@ -2101,6 +2133,10 @@ arch dungeon_floor
 x 5
 y 39
 end
+arch cobra
+x 5
+y 39
+end
 arch dungeon_floor
 x 5
 y 40
@@ -2416,6 +2452,10 @@ x 6
 y 30
 end
 arch dungeon_floor
+x 6
+y 31
+end
+arch cobra
 x 6
 y 31
 end
@@ -2689,6 +2729,10 @@ arch dungeon_floor
 x 7
 y 6
 end
+arch giantrat
+x 7
+y 6
+end
 arch dungeon_floor
 x 7
 y 7
@@ -2706,6 +2750,10 @@ x 7
 y 10
 end
 arch dungeon_floor
+x 7
+y 11
+end
+arch giantrat
 x 7
 y 11
 end
@@ -2826,6 +2874,10 @@ x 7
 y 35
 end
 arch dungeon_floor
+x 7
+y 36
+end
+arch cobra
 x 7
 y 36
 end
@@ -3012,6 +3064,10 @@ x 8
 y 1
 end
 arch dungeon_floor
+x 8
+y 2
+end
+arch giantrat
 x 8
 y 2
 end
@@ -3537,6 +3593,10 @@ arch dungeon_floor
 x 9
 y 30
 end
+arch cobra
+x 9
+y 30
+end
 arch dungeon_floor
 x 9
 y 31
@@ -3550,6 +3610,10 @@ x 9
 y 33
 end
 arch dungeon_floor
+x 9
+y 34
+end
+arch cobra
 x 9
 y 34
 end
@@ -3932,6 +3996,10 @@ x 10
 y 38
 end
 arch dungeon_floor
+x 10
+y 39
+end
+arch cobra
 x 10
 y 39
 end
@@ -7465,6 +7533,10 @@ arch dungeon_floor
 x 25
 y 2
 end
+arch giantrat
+x 25
+y 2
+end
 arch dungeon_floor
 x 25
 y 3
@@ -7478,6 +7550,10 @@ x 25
 y 5
 end
 arch dungeon_floor
+x 25
+y 6
+end
+arch giantrat
 x 25
 y 6
 end
@@ -7557,6 +7633,10 @@ arch dungeon_floor
 x 25
 y 23
 end
+arch shadowtiger
+x 25
+y 23
+end
 arch dungeon_floor
 x 25
 y 24
@@ -7566,6 +7646,10 @@ x 25
 y 25
 end
 arch dungeon_floor
+x 25
+y 26
+end
+arch fire_serpent
 x 25
 y 26
 end
@@ -7613,6 +7697,10 @@ arch dungeon_floor
 x 25
 y 35
 end
+arch shadowtiger
+x 25
+y 35
+end
 arch dungeon_floor
 x 25
 y 36
@@ -7622,6 +7710,10 @@ x 25
 y 37
 end
 arch dungeon_floor
+x 25
+y 38
+end
+arch shadowtiger
 x 25
 y 38
 end
@@ -7711,6 +7803,10 @@ arch dungeon_floor
 x 26
 y 11
 end
+arch giantrat
+x 26
+y 11
+end
 arch dungeon_floor
 x 26
 y 12
@@ -8053,6 +8149,10 @@ arch dungeon_floor
 x 27
 y 34
 end
+arch shadowtiger
+x 27
+y 34
+end
 arch dungeon_floor
 x 27
 y 35
@@ -8066,6 +8166,10 @@ x 27
 y 37
 end
 arch dungeon_floor
+x 27
+y 38
+end
+arch shadowtiger
 x 27
 y 38
 end
@@ -8235,6 +8339,10 @@ arch dungeon_floor
 x 28
 y 27
 end
+arch fire_serpent
+x 28
+y 27
+end
 arch dungeon_floor
 x 28
 y 28
@@ -8333,6 +8441,10 @@ arch dungeon_floor
 x 29
 y 1
 end
+arch giantrat
+x 29
+y 1
+end
 arch dungeon_floor
 x 29
 y 2
@@ -8349,6 +8461,10 @@ arch dungeon_floor
 x 29
 y 5
 end
+arch giantrat
+x 29
+y 5
+end
 arch dungeon_floor
 x 29
 y 6
@@ -8362,6 +8478,10 @@ x 29
 y 8
 end
 arch dungeon_floor
+x 29
+y 9
+end
+arch giantrat
 x 29
 y 9
 end
@@ -8421,6 +8541,10 @@ arch dungeon_floor
 x 29
 y 20
 end
+arch shadowtiger
+x 29
+y 20
+end
 arch dungeon_floor
 x 29
 y 21
@@ -8442,6 +8566,10 @@ x 29
 y 24
 end
 arch dungeon_floor
+x 29
+y 25
+end
+arch fire_serpent
 x 29
 y 25
 end
@@ -8490,6 +8618,10 @@ x 29
 y 34
 end
 arch dungeon_floor
+x 29
+y 35
+end
+arch shadowtiger
 x 29
 y 35
 end
@@ -8611,6 +8743,10 @@ arch dungeon_floor
 x 30
 y 15
 end
+arch shadowtiger
+x 30
+y 15
+end
 arch dungeon_floor
 x 30
 y 16
@@ -8716,6 +8852,10 @@ x 30
 y 37
 end
 arch dungeon_floor
+x 30
+y 38
+end
+arch shadowtiger
 x 30
 y 38
 end
@@ -9550,6 +9690,10 @@ arch dirtfloor
 x 34
 y 1
 end
+arch shadowtiger
+x 34
+y 1
+end
 arch dirtfloor
 x 34
 y 2
@@ -9995,6 +10139,10 @@ move_block all
 blocksview 1
 end
 arch dirtfloor
+x 35
+y 20
+end
+arch shadowtiger
 x 35
 y 20
 end
@@ -10735,6 +10883,10 @@ x 38
 y 2
 end
 arch dirtfloor
+x 38
+y 3
+end
+arch shadowtiger
 x 38
 y 3
 end
@@ -11102,6 +11254,10 @@ arch dirtfloor
 x 39
 y 14
 end
+arch shadowtiger
+x 39
+y 14
+end
 arch dirtfloor
 x 39
 y 15
@@ -11135,6 +11291,10 @@ x 39
 y 20
 end
 arch dirtfloor
+x 39
+y 21
+end
+arch shadowtiger
 x 39
 y 21
 end
@@ -11451,6 +11611,10 @@ x 40
 y 17
 end
 arch dirtfloor
+x 40
+y 18
+end
+arch shadowtiger
 x 40
 y 18
 end
@@ -12237,6 +12401,10 @@ arch dirtfloor
 x 43
 y 4
 end
+arch shadowtiger
+x 43
+y 4
+end
 arch dirtfloor
 x 43
 y 5
@@ -12900,6 +13068,10 @@ arch dirtfloor
 x 45
 y 20
 end
+arch shadowtiger
+x 45
+y 20
+end
 arch dirtfloor
 x 45
 y 21
@@ -13172,6 +13344,10 @@ arch dirtfloor
 x 46
 y 15
 end
+arch shadowtiger
+x 46
+y 15
+end
 arch dirtfloor
 x 46
 y 16
@@ -13412,6 +13588,10 @@ arch dirtfloor
 x 47
 y 1
 end
+arch shadowtiger
+x 47
+y 1
+end
 arch dirtfloor
 x 47
 y 2
@@ -13488,6 +13668,10 @@ arch dirtfloor
 x 47
 y 19
 end
+arch shadowtiger
+x 47
+y 19
+end
 arch dirtfloor
 x 47
 y 20
@@ -13521,6 +13705,15 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 47
+y 25
+end
+arch pentagram_111
+x 47
+y 25
+invisible 1
+end
+arch pentagram_111
 x 47
 y 25
 end
@@ -14356,6 +14549,43 @@ end
 arch dirtfloor
 x 49
 y 9
+end
+arch gryphon
+hp 9000
+maxhp 9000
+sp 200
+maxsp 200
+x 49
+y 9
+level 40
+arch random_potion
+end
+arch random_spells
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
+arch random_wealth
+end
 end
 arch dirtfloor
 x 49
@@ -15243,6 +15473,10 @@ arch dirtfloor
 x 51
 y 18
 end
+arch shadowtiger
+x 51
+y 18
+end
 arch dirtfloor
 x 51
 y 19
@@ -15484,6 +15718,10 @@ move_block all
 blocksview 1
 end
 arch dirtfloor
+x 52
+y 3
+end
+arch shadowtiger
 x 52
 y 3
 end
@@ -15885,6 +16123,10 @@ arch dirtfloor
 x 53
 y 21
 end
+arch shadowtiger
+x 53
+y 21
+end
 arch dirtfloor
 x 53
 y 22
@@ -16174,6 +16416,10 @@ x 54
 y 14
 end
 arch dirtfloor
+x 54
+y 15
+end
+arch shadowtiger
 x 54
 y 15
 end
@@ -16721,6 +16967,10 @@ arch dirtfloor
 x 56
 y 2
 end
+arch shadowtiger
+x 56
+y 2
+end
 arch dirtfloor
 x 56
 y 3
@@ -16738,6 +16988,10 @@ x 56
 y 5
 end
 arch dirtfloor
+x 56
+y 6
+end
+arch shadowtiger
 x 56
 y 6
 end
@@ -17130,6 +17384,10 @@ x 57
 y 20
 end
 arch dirtfloor
+x 57
+y 21
+end
+arch shadowtiger
 x 57
 y 21
 end
@@ -17677,6 +17935,10 @@ arch dirtfloor
 x 59
 y 12
 end
+arch shadowtiger
+x 59
+y 12
+end
 arch dirtfloor
 x 59
 y 13
@@ -17702,6 +17964,10 @@ x 59
 y 18
 end
 arch dirtfloor
+x 59
+y 19
+end
+arch shadowtiger
 x 59
 y 19
 end
@@ -18217,6 +18483,10 @@ arch dirtfloor
 x 61
 y 2
 end
+arch shadowtiger
+x 61
+y 2
+end
 arch dirtfloor
 x 61
 y 3
@@ -18314,6 +18584,10 @@ x 61
 y 20
 end
 arch dirtfloor
+x 61
+y 21
+end
+arch shadowtiger
 x 61
 y 21
 end
@@ -19128,278 +19402,4 @@ end
 arch blocked
 x 63
 y 46
-end
-arch giantrat
-x 2
-y 2
-end
-arch cobra
-x 2
-y 31
-end
-arch cobra
-x 2
-y 38
-end
-arch giantrat
-x 3
-y 5
-end
-arch cobra
-x 3
-y 34
-end
-arch cobra
-x 3
-y 36
-end
-arch giantrat
-x 4
-y 9
-end
-arch cobra
-x 4
-y 29
-end
-arch cobra
-x 5
-y 39
-end
-arch cobra
-x 6
-y 31
-end
-arch giantrat
-x 7
-y 6
-end
-arch giantrat
-x 7
-y 11
-end
-arch cobra
-x 7
-y 36
-end
-arch giantrat
-x 8
-y 2
-end
-arch cobra
-x 9
-y 30
-end
-arch cobra
-x 9
-y 34
-end
-arch cobra
-x 10
-y 39
-end
-arch giantrat
-x 25
-y 2
-end
-arch giantrat
-x 25
-y 6
-end
-arch shadowtiger
-x 25
-y 23
-end
-arch fire_serpent
-x 25
-y 26
-end
-arch shadowtiger
-x 25
-y 35
-end
-arch shadowtiger
-x 25
-y 38
-end
-arch giantrat
-x 26
-y 11
-end
-arch shadowtiger
-x 27
-y 34
-end
-arch shadowtiger
-x 27
-y 38
-end
-arch fire_serpent
-x 28
-y 27
-end
-arch giantrat
-x 29
-y 1
-end
-arch giantrat
-x 29
-y 5
-end
-arch giantrat
-x 29
-y 9
-end
-arch shadowtiger
-x 29
-y 20
-end
-arch fire_serpent
-x 29
-y 25
-end
-arch shadowtiger
-x 29
-y 35
-end
-arch shadowtiger
-x 30
-y 15
-end
-arch shadowtiger
-x 30
-y 38
-end
-arch shadowtiger
-x 34
-y 1
-end
-arch shadowtiger
-x 35
-y 20
-end
-arch shadowtiger
-x 38
-y 3
-end
-arch shadowtiger
-x 39
-y 14
-end
-arch shadowtiger
-x 39
-y 21
-end
-arch shadowtiger
-x 40
-y 18
-end
-arch shadowtiger
-x 43
-y 4
-end
-arch shadowtiger
-x 45
-y 20
-end
-arch shadowtiger
-x 46
-y 15
-end
-arch shadowtiger
-x 47
-y 1
-end
-arch shadowtiger
-x 47
-y 19
-end
-arch pentagram_111
-x 47
-y 25
-invisible 1
-end
-arch pentagram_111
-x 47
-y 25
-end
-arch gryphon
-hp 9000
-maxhp 9000
-sp 200
-maxsp 200
-x 49
-y 9
-level 40
-arch random_potion
-end
-arch random_spells
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-arch random_wealth
-end
-end
-arch shadowtiger
-x 51
-y 18
-end
-arch shadowtiger
-x 52
-y 3
-end
-arch shadowtiger
-x 53
-y 21
-end
-arch shadowtiger
-x 54
-y 15
-end
-arch shadowtiger
-x 56
-y 2
-end
-arch shadowtiger
-x 56
-y 6
-end
-arch shadowtiger
-x 57
-y 21
-end
-arch shadowtiger
-x 59
-y 12
-end
-arch shadowtiger
-x 59
-y 19
-end
-arch shadowtiger
-x 61
-y 2
-end
-arch shadowtiger
-x 61
-y 21
 end

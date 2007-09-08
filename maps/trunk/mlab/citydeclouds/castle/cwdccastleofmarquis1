@@ -2389,6 +2389,17 @@ arch dungeon_floor
 x 7
 y 27
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 7
+y 27
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 7
 y 28
@@ -3329,6 +3340,17 @@ arch dungeon_floor
 x 9
 y 32
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 9
+y 32
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 9
 y 33
@@ -3727,6 +3749,17 @@ arch dungeon_floor
 x 10
 y 25
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 10
+y 25
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 10
 y 26
@@ -4017,6 +4050,17 @@ arch longtable_4
 x 11
 y 10
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 11
+y 10
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 11
 y 11
@@ -4032,6 +4076,17 @@ end
 arch longtable_4
 x 11
 y 12
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 11
+y 12
+speed -0.800000
+level 70
 end
 arch dungeon_floor
 x 11
@@ -4049,6 +4104,17 @@ arch longtable_4
 x 11
 y 14
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 11
+y 14
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 11
 y 15
@@ -4065,6 +4131,17 @@ arch longtable_4
 x 11
 y 16
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 11
+y 16
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 11
 y 17
@@ -4080,6 +4157,17 @@ end
 arch longtable_4
 x 11
 y 18
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 11
+y 18
+speed -0.800000
+level 70
 end
 arch dungeon_floor
 x 11
@@ -5284,6 +5372,17 @@ arch blocked
 x 13
 y 61
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 13
+y 62
+speed -0.800000
+level 70
+end
 arch blocked
 x 14
 end
@@ -5482,6 +5581,17 @@ arch dungeon_floor
 x 14
 y 25
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 14
+y 25
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 14
 y 26
@@ -5541,6 +5651,17 @@ end
 arch dungeon_floor
 x 14
 y 32
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 14
+y 32
+speed -0.800000
+level 70
 end
 arch dungeon_floor
 x 14
@@ -7390,6 +7511,17 @@ arch dungeon_floor
 x 18
 y 25
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 18
+y 25
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 18
 y 26
@@ -7836,6 +7968,17 @@ end
 arch dungeon_floor
 x 19
 y 32
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 19
+y 32
+speed -0.800000
+level 70
 end
 arch dungeon_floor
 x 19
@@ -9005,6 +9148,17 @@ arch dungeon_floor
 x 22
 y 25
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 22
+y 25
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 22
 y 26
@@ -9468,6 +9622,17 @@ arch dungeon_floor
 x 23
 y 29
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 23
+y 29
+speed -0.800000
+level 70
+end
 arch dungeon_floor
 x 23
 y 30
@@ -9479,6 +9644,17 @@ end
 arch dungeon_floor
 x 23
 y 32
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 23
+y 32
+speed -0.800000
+level 70
 end
 arch dungeon_floor
 x 23
@@ -13605,6 +13781,10 @@ arch dungeon_floor
 x 32
 y 41
 end
+arch giantrat
+x 32
+y 41
+end
 arch dungeon_floor
 x 32
 y 42
@@ -14036,6 +14216,10 @@ arch dungeon_floor
 x 33
 y 36
 end
+arch giantrat
+x 33
+y 36
+end
 arch dungeon_floor
 x 33
 y 37
@@ -14460,6 +14644,10 @@ x 34
 y 37
 end
 arch dungeon_floor
+x 34
+y 38
+end
+arch giantrat
 x 34
 y 38
 end
@@ -14945,6 +15133,10 @@ x 35
 y 40
 end
 arch dungeon_floor
+x 35
+y 41
+end
+arch giantrat
 x 35
 y 41
 end
@@ -20763,6 +20955,10 @@ arch dungeon_floor
 x 48
 y 20
 end
+arch skree
+x 48
+y 20
+end
 arch dungeon_floor
 x 48
 y 21
@@ -20820,6 +21016,10 @@ x 48
 y 29
 end
 arch dungeon_floor
+x 48
+y 30
+end
+arch skree
 x 48
 y 30
 end
@@ -21261,6 +21461,10 @@ arch dungeon_floor
 x 49
 y 28
 end
+arch skree
+x 49
+y 28
+end
 arch dungeon_floor
 x 49
 y 29
@@ -21286,6 +21490,10 @@ y 32
 connected 2
 end
 arch dungeon_floor
+x 49
+y 33
+end
+arch dread
 x 49
 y 33
 end
@@ -21609,6 +21817,10 @@ arch dungeon_floor
 x 50
 y 22
 end
+arch skree
+x 50
+y 22
+end
 arch dungeon_floor
 x 50
 y 23
@@ -21618,6 +21830,10 @@ x 50
 y 24
 end
 arch dungeon_floor
+x 50
+y 25
+end
+arch skree
 x 50
 y 25
 end
@@ -22076,6 +22292,10 @@ arch dungeon_floor
 x 51
 y 39
 end
+arch dread
+x 51
+y 39
+end
 arch dungeon_floor
 x 51
 y 40
@@ -22109,6 +22329,10 @@ x 51
 y 46
 end
 arch dungeon_floor
+x 51
+y 47
+end
+arch dread
 x 51
 y 47
 end
@@ -22403,6 +22627,10 @@ x 52
 y 26
 end
 arch dungeon_floor
+x 52
+y 27
+end
+arch skree
 x 52
 y 27
 end
@@ -22746,6 +22974,10 @@ x 53
 y 23
 end
 arch dungeon_floor
+x 53
+y 24
+end
+arch skree
 x 53
 y 24
 end
@@ -23131,6 +23363,10 @@ arch dungeon_floor
 x 54
 y 20
 end
+arch skree
+x 54
+y 20
+end
 arch dungeon_floor
 x 54
 y 21
@@ -23239,6 +23475,10 @@ arch dungeon_floor
 x 54
 y 37
 end
+arch dread
+x 54
+y 37
+end
 arch dungeon_floor
 x 54
 y 38
@@ -23264,6 +23504,10 @@ x 54
 y 43
 end
 arch dungeon_floor
+x 54
+y 44
+end
+arch dread
 x 54
 y 44
 end
@@ -23566,6 +23810,10 @@ arch dungeon_floor
 x 55
 y 26
 end
+arch skree
+x 55
+y 26
+end
 arch dungeon_floor
 x 55
 y 27
@@ -23575,6 +23823,10 @@ x 55
 y 28
 end
 arch dungeon_floor
+x 55
+y 29
+end
+arch skree
 x 55
 y 29
 end
@@ -23599,6 +23851,10 @@ y 32
 connected 2
 end
 arch dungeon_floor
+x 55
+y 33
+end
+arch dread
 x 55
 y 33
 end
@@ -26417,260 +26673,4 @@ end
 arch blocked
 x 63
 y 63
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 7
-y 27
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 9
-y 32
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 10
-y 25
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 11
-y 10
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 11
-y 12
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 11
-y 14
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 11
-y 16
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 11
-y 18
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 13
-y 62
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 14
-y 25
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 14
-y 32
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 18
-y 25
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 19
-y 32
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 22
-y 25
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 23
-y 29
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 23
-y 32
-speed -0.800000
-level 70
-end
-arch giantrat
-x 32
-y 41
-end
-arch giantrat
-x 33
-y 36
-end
-arch giantrat
-x 34
-y 38
-end
-arch giantrat
-x 35
-y 41
-end
-arch skree
-x 48
-y 20
-end
-arch skree
-x 48
-y 30
-end
-arch skree
-x 49
-y 28
-end
-arch dread
-x 49
-y 33
-end
-arch skree
-x 50
-y 22
-end
-arch skree
-x 50
-y 25
-end
-arch dread
-x 51
-y 39
-end
-arch dread
-x 51
-y 47
-end
-arch skree
-x 52
-y 27
-end
-arch skree
-x 53
-y 24
-end
-arch skree
-x 54
-y 20
-end
-arch dread
-x 54
-y 37
-end
-arch dread
-x 54
-y 44
-end
-arch skree
-x 55
-y 26
-end
-arch skree
-x 55
-y 29
-end
-arch dread
-x 55
-y 33
 end

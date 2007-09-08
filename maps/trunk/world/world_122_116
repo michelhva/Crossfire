@@ -241,6 +241,9 @@ end
 arch grass
 y 39
 end
+arch barrack_up
+y 39
+end
 arch dungeon_magic
 y 40
 end
@@ -936,6 +939,10 @@ x 2
 y 39
 move_block all
 end
+arch university
+x 2
+y 39
+end
 arch dungeon_magic
 x 2
 y 40
@@ -988,6 +995,12 @@ x 2
 y 45
 end
 arch grass
+x 2
+y 45
+end
+arch palace
+name Navr City Palace
+name_pl Navr City Palace
 x 2
 y 45
 end
@@ -1529,6 +1542,14 @@ x 4
 y 34
 end
 arch grass
+x 4
+y 34
+end
+arch a_civic
+name Civic Theater
+slaying /navar_city/misc/theater
+hp 15
+sp 28
 x 4
 y 34
 end
@@ -3633,6 +3654,14 @@ arch cobblestones2
 x 10
 y 38
 end
+arch barn_west
+name Warehouse #1
+slaying /navar_city/warehouse1
+hp 8
+sp 24
+x 10
+y 38
+end
 arch dungeon_magic
 x 10
 y 39
@@ -4686,6 +4715,14 @@ arch cobblestones2
 x 13
 y 38
 end
+arch barn_west
+name Warehouse #2
+slaying /navar_city/warehouse2
+hp 13
+sp 25
+x 13
+y 38
+end
 arch dungeon_magic
 x 13
 y 39
@@ -4759,6 +4796,17 @@ x 13
 y 47
 end
 arch grass
+x 13
+y 47
+end
+arch church
+name Church of Ixalovh
+slaying /navar_city/temples/ixalovh
+msg
+Under construction!
+endmsg
+hp 4
+sp 18
 x 13
 y 47
 end
@@ -5732,6 +5780,14 @@ arch cobblestones2
 x 16
 y 38
 end
+arch barn_west
+name Warehouse #3
+slaying /navar_city/warehouse3
+hp 2
+sp 34
+x 16
+y 38
+end
 arch dungeon_magic
 x 16
 y 39
@@ -5745,6 +5801,14 @@ x 16
 y 40
 end
 arch cobblestones2
+x 16
+y 40
+end
+arch barn_west
+name Warehouse #4
+slaying /navar_city/warehouse4
+hp 27
+sp 15
 x 16
 y 40
 end
@@ -5761,6 +5825,14 @@ x 16
 y 42
 end
 arch cobblestones2
+x 16
+y 42
+end
+arch barn_west
+name Warehouse #5
+slaying /navar_city/warehouse5
+hp 24
+sp 9
 x 16
 y 42
 end
@@ -5777,6 +5849,14 @@ x 16
 y 44
 end
 arch cobblestones2
+x 16
+y 44
+end
+arch barn_west
+name Warehouse #6
+slaying /navar_city/warehouse6
+hp 4
+sp 27
 x 16
 y 44
 end
@@ -5793,6 +5873,13 @@ x 16
 y 46
 end
 arch cobblestones2
+x 16
+y 46
+end
+arch barn_west
+name Warehouse #7
+slaying /navar_city/warehouse7
+hp 7
 x 16
 y 46
 end
@@ -5809,6 +5896,13 @@ x 16
 y 48
 end
 arch cobblestones2
+x 16
+y 48
+end
+arch barn_west
+name Deserted Warehouse
+slaying /navar_city/warehouse8
+sp 1
 x 16
 y 48
 end
@@ -7581,7 +7675,15 @@ arch sea1
 x 21
 y 39
 end
+arch longship
+x 21
+y 39
+end
 arch sea1
+x 21
+y 40
+end
+arch longship
 x 21
 y 40
 end
@@ -7601,6 +7703,15 @@ arch sea1
 x 21
 y 42
 move_block all
+end
+arch big_galleon
+name To Darcap
+name_pl To Darcap
+slaying /world/world_116_102
+hp 32
+sp 37
+x 21
+y 42
 end
 arch sea1
 x 21
@@ -7623,6 +7734,15 @@ x 21
 y 45
 move_block all
 end
+arch big_galleon
+name to Wolfsburg
+name_pl to Wolfsburg
+slaying /world/world_128_109
+hp 44
+sp 25
+x 21
+y 45
+end
 arch sea1
 x 21
 y 46
@@ -7643,6 +7763,10 @@ arch sea1
 x 21
 y 48
 move_block all
+end
+arch big_galleon
+x 21
+y 48
 end
 arch sea1
 x 21
@@ -15474,128 +15598,4 @@ arch sea
 x 49
 y 49
 elevation -3437
-end
-arch barrack_up
-y 39
-end
-arch university
-x 2
-y 39
-end
-arch palace
-name Navr City Palace
-name_pl Navr City Palace
-x 2
-y 45
-end
-arch a_civic
-name Civic Theater
-slaying /navar_city/misc/theater
-hp 15
-sp 28
-x 4
-y 34
-end
-arch barn_west
-name Warehouse #1
-slaying /navar_city/warehouse1
-hp 8
-sp 24
-x 10
-y 38
-end
-arch barn_west
-name Warehouse #2
-slaying /navar_city/warehouse2
-hp 13
-sp 25
-x 13
-y 38
-end
-arch church
-name Church of Ixalovh
-slaying /navar_city/temples/ixalovh
-msg
-Under construction!
-endmsg
-hp 4
-sp 18
-x 13
-y 47
-end
-arch barn_west
-name Warehouse #3
-slaying /navar_city/warehouse3
-hp 2
-sp 34
-x 16
-y 38
-end
-arch barn_west
-name Warehouse #4
-slaying /navar_city/warehouse4
-hp 27
-sp 15
-x 16
-y 40
-end
-arch barn_west
-name Warehouse #5
-slaying /navar_city/warehouse5
-hp 24
-sp 9
-x 16
-y 42
-end
-arch barn_west
-name Warehouse #6
-slaying /navar_city/warehouse6
-hp 4
-sp 27
-x 16
-y 44
-end
-arch barn_west
-name Warehouse #7
-slaying /navar_city/warehouse7
-hp 7
-x 16
-y 46
-end
-arch barn_west
-name Deserted Warehouse
-slaying /navar_city/warehouse8
-sp 1
-x 16
-y 48
-end
-arch longship
-x 21
-y 39
-end
-arch longship
-x 21
-y 40
-end
-arch big_galleon
-name To Darcap
-name_pl To Darcap
-slaying /world/world_116_102
-hp 32
-sp 37
-x 21
-y 42
-end
-arch big_galleon
-name to Wolfsburg
-name_pl to Wolfsburg
-slaying /world/world_128_109
-hp 44
-sp 25
-x 21
-y 45
-end
-arch big_galleon
-x 21
-y 48
 end

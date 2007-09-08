@@ -32019,6 +32019,10 @@ y 50
 move_block 0
 blocksview 0
 end
+arch big_dragon
+x 39
+y 50
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -39653,6 +39657,10 @@ y 40
 move_block 0
 blocksview 0
 end
+arch big_dragon
+x 48
+y 40
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -39813,6 +39821,10 @@ move_block 0
 blocksview 0
 end
 arch fog
+x 48
+y 59
+end
+arch big_dragon
 x 48
 y 59
 end
@@ -49007,6 +49019,10 @@ x 59
 y 48
 move_block 0
 blocksview 0
+end
+arch big_dragon
+x 59
+y 48
 end
 arch blocked
 name nothing
@@ -80965,20 +80981,4 @@ x 98
 y 98
 move_block 0
 blocksview 0
-end
-arch big_dragon
-x 39
-y 50
-end
-arch big_dragon
-x 48
-y 40
-end
-arch big_dragon
-x 48
-y 59
-end
-arch big_dragon
-x 59
-y 48
 end

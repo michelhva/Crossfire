@@ -1053,6 +1053,10 @@ arch dungeon_floor
 x 3
 y 4
 end
+arch dread
+x 3
+y 4
+end
 arch dungeon_floor
 x 3
 y 5
@@ -1073,6 +1077,10 @@ name_pl woodfloor
 x 3
 y 8
 end
+arch dread
+x 3
+y 8
+end
 arch dungeon_floor
 x 3
 y 9
@@ -1082,6 +1090,10 @@ x 3
 y 10
 end
 arch dungeon_floor
+x 3
+y 11
+end
+arch dread
 x 3
 y 11
 end
@@ -1253,6 +1265,10 @@ x 4
 y 13
 end
 arch dungeon_floor
+x 4
+y 14
+end
+arch dread
 x 4
 y 14
 end
@@ -1428,6 +1444,10 @@ arch dungeon_floor
 x 5
 y 16
 end
+arch dread
+x 5
+y 16
+end
 arch dungeon_floor
 x 5
 y 17
@@ -1540,6 +1560,10 @@ arch dungeon_floor
 x 6
 y 3
 end
+arch dread
+x 6
+y 3
+end
 arch dungeon_floor
 x 6
 y 4
@@ -1552,6 +1576,10 @@ arch dungeon_floor
 x 6
 y 6
 end
+arch dread
+x 6
+y 6
+end
 arch dungeon_floor
 x 6
 y 7
@@ -1561,6 +1589,10 @@ x 6
 y 8
 end
 arch dungeon_floor
+x 6
+y 9
+end
+arch dread
 x 6
 y 9
 end
@@ -1737,6 +1769,10 @@ x 7
 y 11
 end
 arch dungeon_floor
+x 7
+y 12
+end
+arch dread
 x 7
 y 12
 end
@@ -2043,6 +2079,10 @@ arch dungeon_floor
 x 9
 y 4
 end
+arch dread
+x 9
+y 4
+end
 arch dungeon_floor
 x 9
 y 5
@@ -2055,11 +2095,19 @@ arch dungeon_floor
 x 9
 y 7
 end
+arch dread
+x 9
+y 7
+end
 arch dungeon_floor
 x 9
 y 8
 end
 arch dungeon_floor
+x 9
+y 9
+end
+arch dread
 x 9
 y 9
 end
@@ -7842,52 +7890,4 @@ end
 arch cwall_3_1
 x 34
 y 1
-end
-arch dread
-x 3
-y 4
-end
-arch dread
-x 3
-y 8
-end
-arch dread
-x 3
-y 11
-end
-arch dread
-x 4
-y 14
-end
-arch dread
-x 5
-y 16
-end
-arch dread
-x 6
-y 3
-end
-arch dread
-x 6
-y 6
-end
-arch dread
-x 6
-y 9
-end
-arch dread
-x 7
-y 12
-end
-arch dread
-x 9
-y 4
-end
-arch dread
-x 9
-y 7
-end
-arch dread
-x 9
-y 9
 end
