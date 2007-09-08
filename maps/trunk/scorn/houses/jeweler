@@ -1,17 +1,17 @@
 arch map
-region scorn
 name jeweler
+reset_timeout 7200
+difficulty 2
+region scorn
+width 13
+height 14
+enter_x 7
+enter_y 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 28 20:40:38 2002
 endmsg
-width 13
-height 14
-enter_x 7
-enter_y 13
-reset_timeout 7200
-difficulty 2
 end
 arch grass
 end
@@ -190,10 +190,10 @@ y 2
 end
 arch platinum_converter
 name Buy Amulet (100pp)
-other_arch amulet
 name_pl Buy Amulet (100pp)
-food 100
+other_arch amulet
 sp 1
+food 100
 x 2
 y 2
 end
@@ -206,63 +206,63 @@ x 2
 y 4
 end
 arch hugenugget
-no_pick 1
 x 2
 y 4
+no_pick 1
 end
 arch woodfloor
 x 2
 y 5
 end
 arch largenugget
-no_pick 1
 x 2
 y 5
+no_pick 1
 end
 arch woodfloor
 x 2
 y 6
 end
 arch mithril
-no_pick 1
 x 2
 y 6
+no_pick 1
 end
 arch woodfloor
 x 2
 y 7
 end
 arch hugenugget
-no_pick 1
 x 2
 y 7
+no_pick 1
 end
 arch woodfloor
 x 2
 y 8
 end
 arch mithril
-no_pick 1
 x 2
 y 8
+no_pick 1
 end
 arch woodfloor
 x 2
 y 9
 end
 arch largenugget
-no_pick 1
 x 2
 y 9
+no_pick 1
 end
 arch woodfloor
 x 2
 y 10
 end
 arch hugenugget
-no_pick 1
 x 2
 y 10
+no_pick 1
 end
 arch woodfloor
 x 2
@@ -308,20 +308,20 @@ x 3
 y 2
 end
 arch table
-no_pick 1
 x 3
 y 2
+no_pick 1
 end
 arch quarto
+title Beguilement
 msg
 You may create a ring of Beguilement
 with a ring, a potion of charisma, and
 3 diamonds of great value.
 endmsg
-title Beguilement
-no_pick 1
 x 3
 y 2
+no_pick 1
 end
 arch woodfloor
 x 3
@@ -384,9 +384,9 @@ x 3
 y 12
 end
 arch table_2
-move_block all
 x 3
 y 12
+move_block all
 end
 arch woodfloor
 x 3
@@ -412,20 +412,20 @@ x 4
 y 2
 end
 arch table
-no_pick 1
 x 4
 y 2
+no_pick 1
 end
 arch quarto
+title Healer
 msg
 You can create a ring of the Healer
 with a ring, a potion of wisdom, a holy
 symbol, and 3 emeralds of great value.
 endmsg
-title Healer
-no_pick 1
 x 4
 y 2
+no_pick 1
 end
 arch woodfloor
 x 4
@@ -499,9 +499,9 @@ x 5
 y 2
 end
 arch bookshelf
-no_pick 1
 x 5
 y 2
+no_pick 1
 end
 arch woodfloor
 x 5
@@ -587,9 +587,9 @@ x 6
 y 2
 end
 arch clock
-no_pick 1
 x 6
 y 2
+no_pick 1
 end
 arch woodfloor
 x 6
@@ -675,9 +675,9 @@ x 7
 y 2
 end
 arch bookshelf
-no_pick 1
 x 7
 y 2
+no_pick 1
 end
 arch woodfloor
 x 7
@@ -766,20 +766,20 @@ x 8
 y 2
 end
 arch table
-no_pick 1
 x 8
 y 2
+no_pick 1
 end
 arch quarto
+title Holiness
 msg
 You can create an amulet of holy power with
 an amulet, two potions of wisdom, a holy
 symbol, and 30 pearls.
 endmsg
-title Holiness
-no_pick 1
 x 8
 y 2
+no_pick 1
 end
 arch woodfloor
 x 8
@@ -865,20 +865,20 @@ x 9
 y 2
 end
 arch table
-no_pick 1
 x 9
 y 2
+no_pick 1
 end
 arch quarto
+title Magic
 msg
 You can create a ring of Magic with a ring
 a potion of magical resistance, a potion
 of power, and 3 diamonds of great value.
 endmsg
-title Magic
-no_pick 1
 x 9
 y 2
+no_pick 1
 end
 arch woodfloor
 x 9
@@ -917,21 +917,21 @@ x 9
 y 9
 end
 arch pedestal
-invisible 1
-connected 11
 x 9
 y 9
+invisible 1
+connected 11
 end
 arch woodfloor
 x 9
 y 10
 end
 arch ggate_closed
+x 9
+y 10
 connected 11
 no_magic 1
 damned 1
-x 9
-y 10
 end
 arch woodfloor
 x 9
@@ -939,32 +939,32 @@ y 11
 end
 arch check_floor
 slaying jewler_house1
-connected 11
 x 9
 y 11
+connected 11
 end
 arch woodfloor
 x 9
 y 12
 end
 arch trigger_marker
+slaying jewler_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying jewler_house1
-connected 10
-speed 1.0
 food 504
 x 9
 y 12
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 9
 y 12
+connected 10
 end
 arch woodfloor
 x 9
@@ -991,10 +991,10 @@ y 2
 end
 arch platinum_converter
 name Buy Ring (50pp)
-other_arch ring
-food 50
-sp 1
 name_pl Buy Ring (50pp)
+other_arch ring
+sp 1
+food 50
 x 10
 y 2
 end
@@ -1007,45 +1007,45 @@ x 10
 y 4
 end
 arch hugenugget
-no_pick 1
 x 10
 y 4
+no_pick 1
 end
 arch woodfloor
 x 10
 y 5
 end
 arch largenugget
-no_pick 1
 x 10
 y 5
+no_pick 1
 end
 arch woodfloor
 x 10
 y 6
 end
 arch mithril
-no_pick 1
 x 10
 y 6
+no_pick 1
 end
 arch woodfloor
 x 10
 y 7
 end
 arch hugenugget
-no_pick 1
 x 10
 y 7
+no_pick 1
 end
 arch woodfloor
 x 10
 y 8
 end
 arch mithril
-no_pick 1
 x 10
 y 8
+no_pick 1
 end
 arch woodfloor
 x 10

@@ -2925,6 +2925,11 @@ arch dungeon_floor
 x 19
 y 15
 end
+arch cobra
+hp 100
+x 19
+y 15
+end
 arch dungeon_floor
 x 19
 y 16
@@ -4449,9 +4454,4 @@ end
 arch mine12
 x 29
 y 24
-end
-arch cobra
-hp 100
-x 19
-y 15
 end

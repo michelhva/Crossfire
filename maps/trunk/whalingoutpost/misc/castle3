@@ -5416,6 +5416,10 @@ arch bench_2_1_1
 x 29
 y 31
 end
+arch big_elec
+x 29
+y 31
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -5515,6 +5519,10 @@ x 29
 y 52
 end
 arch snow4
+x 29
+y 52
+end
+arch chinese_dragon
 x 29
 y 52
 end
@@ -5635,6 +5643,10 @@ x 30
 y 28
 end
 arch longtable_2_2_2
+x 30
+y 28
+end
+arch big_elec
 x 30
 y 28
 end
@@ -6142,6 +6154,10 @@ arch longtable_4
 x 32
 y 32
 end
+arch big_elec
+x 32
+y 32
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -6326,6 +6342,10 @@ arch longtable_2_2_3
 x 33
 y 28
 end
+arch big_elec
+x 33
+y 28
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -6479,6 +6499,10 @@ x 33
 y 54
 end
 arch snow4
+x 33
+y 54
+end
+arch chinese_dragon
 x 33
 y 54
 end
@@ -6681,6 +6705,14 @@ end
 arch snow4
 x 34
 y 51
+end
+arch chinese_dragon
+x 34
+y 51
+carrying 100
+arch key2
+slaying castle2key2
+end
 end
 arch flagstone
 x 34
@@ -8364,6 +8396,10 @@ arch snow4
 x 49
 y 54
 end
+arch chinese_dragon
+x 49
+y 54
+end
 arch flagstone
 x 49
 y 55
@@ -8377,6 +8413,10 @@ x 49
 y 56
 end
 arch snow4
+x 49
+y 56
+end
+arch chinese_dragon
 x 49
 y 56
 end
@@ -9006,6 +9046,10 @@ arch snow5
 x 51
 y 53
 end
+arch chinese_dragon
+x 51
+y 53
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -9346,6 +9390,10 @@ arch snow5
 x 52
 y 50
 end
+arch chinese_dragon
+x 52
+y 50
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -9455,6 +9503,10 @@ x 52
 y 58
 end
 arch snow5
+x 52
+y 58
+end
+arch chinese_dragon
 x 52
 y 58
 end
@@ -10119,6 +10171,10 @@ arch snow5
 x 54
 y 51
 end
+arch chinese_dragon
+x 54
+y 51
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -10181,6 +10237,10 @@ arch slevel_3_1
 x 54
 y 56
 end
+arch chinese_dragon
+x 54
+y 56
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -10210,6 +10270,10 @@ x 54
 y 58
 end
 arch flagstone
+x 54
+y 59
+end
+arch chinese_dragon
 x 54
 y 59
 end
@@ -10464,6 +10528,10 @@ x 55
 y 49
 end
 arch snow4
+x 55
+y 49
+end
+arch chinese_dragon
 x 55
 y 49
 end
@@ -11191,6 +11259,10 @@ arch snow5
 x 57
 y 50
 end
+arch chinese_dragon
+x 57
+y 50
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -11243,6 +11315,10 @@ arch snow5
 x 57
 y 54
 end
+arch chinese_dragon
+x 57
+y 54
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -11280,6 +11356,14 @@ end
 arch snow5
 x 57
 y 57
+end
+arch chinese_dragon
+x 57
+y 57
+carrying 100
+arch key2
+slaying castle2key1
+end
 end
 arch flagstone
 x 57
@@ -11721,6 +11805,10 @@ arch flagstone
 x 59
 y 52
 end
+arch chinese_dragon
+x 59
+y 52
+end
 arch flagstone
 x 59
 y 53
@@ -12268,92 +12356,4 @@ end
 arch fog
 x 63
 y 60
-end
-arch big_elec
-x 29
-y 31
-end
-arch chinese_dragon
-x 29
-y 52
-end
-arch big_elec
-x 30
-y 28
-end
-arch big_elec
-x 32
-y 32
-end
-arch big_elec
-x 33
-y 28
-end
-arch chinese_dragon
-x 33
-y 54
-end
-arch chinese_dragon
-x 34
-y 51
-carrying 100
-arch key2
-slaying castle2key2
-end
-end
-arch chinese_dragon
-x 49
-y 54
-end
-arch chinese_dragon
-x 49
-y 56
-end
-arch chinese_dragon
-x 51
-y 53
-end
-arch chinese_dragon
-x 52
-y 50
-end
-arch chinese_dragon
-x 52
-y 58
-end
-arch chinese_dragon
-x 54
-y 51
-end
-arch chinese_dragon
-x 54
-y 56
-end
-arch chinese_dragon
-x 54
-y 59
-end
-arch chinese_dragon
-x 55
-y 49
-end
-arch chinese_dragon
-x 57
-y 50
-end
-arch chinese_dragon
-x 57
-y 54
-end
-arch chinese_dragon
-x 57
-y 57
-carrying 100
-arch key2
-slaying castle2key1
-end
-end
-arch chinese_dragon
-x 59
-y 52
 end

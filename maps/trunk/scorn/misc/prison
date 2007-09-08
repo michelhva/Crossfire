@@ -6100,6 +6100,10 @@ arch grass
 x 18
 y 15
 end
+arch chinese_dragon
+x 18
+y 15
+end
 arch grass
 x 18
 y 16
@@ -6117,6 +6121,10 @@ x 18
 y 19
 end
 arch grass
+x 18
+y 20
+end
+arch chinese_dragon
 x 18
 y 20
 end
@@ -7596,6 +7604,10 @@ arch grass
 x 23
 y 7
 end
+arch dread
+x 23
+y 7
+end
 arch grass
 x 23
 y 8
@@ -7646,6 +7658,10 @@ x 23
 y 18
 end
 arch grass
+x 23
+y 19
+end
+arch chinese_dragon
 x 23
 y 19
 end
@@ -7809,6 +7825,16 @@ arch woodfloor
 x 23
 y 46
 end
+arch giant
+name The Chef
+msg
+@match *
+I am the prison warden. You leave these
+monsters alone or I thump thee one
+endmsg
+x 23
+y 46
+end
 arch woodfloor
 x 23
 y 47
@@ -7892,6 +7918,10 @@ x 24
 y 8
 end
 arch grass
+x 24
+y 9
+end
+arch dread
 x 24
 y 9
 end
@@ -11174,6 +11204,10 @@ arch dirtfloor
 x 34
 y 8
 end
+arch dragon
+x 34
+y 8
+end
 arch dirtfloor
 x 34
 y 9
@@ -11861,6 +11895,10 @@ x 36
 y 8
 end
 arch dirtfloor
+x 36
+y 9
+end
+arch dragon
 x 36
 y 9
 end
@@ -14225,42 +14263,4 @@ end
 arch bwall_2_2_4
 x 43
 y 54
-end
-arch chinese_dragon
-x 18
-y 15
-end
-arch chinese_dragon
-x 18
-y 20
-end
-arch dread
-x 23
-y 7
-end
-arch chinese_dragon
-x 23
-y 19
-end
-arch giant
-name The Chef
-msg
-@match *
-I am the prison warden. You leave these
-monsters alone or I thump thee one
-endmsg
-x 23
-y 46
-end
-arch dread
-x 24
-y 9
-end
-arch dragon
-x 34
-y 8
-end
-arch dragon
-x 36
-y 9
 end

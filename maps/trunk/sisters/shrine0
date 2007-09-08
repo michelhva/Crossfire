@@ -558,6 +558,10 @@ name viper generator
 other_arch cobra
 x 10
 end
+arch cobra
+x 10
+y 6
+end
 arch snake
 x 10
 y 8
@@ -651,6 +655,10 @@ arch generate_kobold
 name viper generator
 other_arch cobra
 x 11
+end
+arch cobra
+x 11
+y 6
 end
 arch snake
 x 11
@@ -2544,6 +2552,10 @@ arch medium_stones
 x 17
 y 41
 end
+arch cobra
+x 17
+y 41
+end
 arch medium_stones
 x 17
 y 42
@@ -4248,6 +4260,10 @@ name viper generator
 other_arch cobra
 x 24
 end
+arch cobra
+x 24
+y 6
+end
 arch snake
 x 24
 y 8
@@ -4428,6 +4444,10 @@ name viper generator
 other_arch cobra
 x 25
 end
+arch cobra
+x 25
+y 6
+end
 arch snake
 x 25
 y 8
@@ -4542,6 +4562,10 @@ arch snake
 x 25
 y 34
 end
+arch cobra
+x 25
+y 35
+end
 arch generate_kobold
 name viper generator
 other_arch cobra
@@ -4576,6 +4600,10 @@ end
 arch snake
 x 25
 y 42
+end
+arch cobra
+x 25
+y 43
 end
 arch generate_kobold
 name viper generator
@@ -4711,6 +4739,10 @@ arch snake
 x 26
 y 34
 end
+arch cobra
+x 26
+y 35
+end
 arch blocked
 x 26
 y 38
@@ -4739,6 +4771,10 @@ end
 arch snake
 x 26
 y 42
+end
+arch cobra
+x 26
+y 43
 end
 arch generate_kobold
 name viper generator
@@ -5273,40 +5309,4 @@ end
 arch blocked
 x 35
 y 27
-end
-arch cobra
-x 10
-y 6
-end
-arch cobra
-x 11
-y 6
-end
-arch cobra
-x 17
-y 41
-end
-arch cobra
-x 24
-y 6
-end
-arch cobra
-x 25
-y 6
-end
-arch cobra
-x 25
-y 35
-end
-arch cobra
-x 25
-y 43
-end
-arch cobra
-x 26
-y 35
-end
-arch cobra
-x 26
-y 43
 end

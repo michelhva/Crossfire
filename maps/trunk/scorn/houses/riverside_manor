@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Riverside Manor
+difficulty 2
+region scorn
+width 25
+height 25
+enter_x 11
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 25
-height 25
-enter_x 11
-enter_y 1
-difficulty 2
 outdoor 1
 end
 arch grass
@@ -253,16 +253,16 @@ x 1
 y 10
 end
 arch tree
-blocksview 1
-move_block all
 x 1
 y 11
+move_block all
+blocksview 1
 end
 arch tree
-blocksview 1
-move_block all
 x 1
 y 12
+move_block all
+blocksview 1
 end
 arch woodfloor
 x 1
@@ -506,14 +506,14 @@ y 21
 end
 arch quarterstaff
 name Gramp's walking stick
+slaying Gramp's walking stick
 msg
 This staff says:
 Prpty of G Malone - hands off.
 endmsg
-type 21
-slaying Gramp's walking stick
 x 2
 y 21
+type 21
 end
 arch table_3
 x 2
@@ -598,9 +598,9 @@ msg
 @match *
 eeeek!  I think I saw a mouse.
 endmsg
-randomitems jail
 x 3
 y 7
+randomitems jail
 end
 arch woodfloor
 x 3
@@ -1134,9 +1134,9 @@ Think it's under the table...
 @match *
 Darn bird keeps me awake all night...
 endmsg
-randomitems jail
 x 6
 y 21
+randomitems jail
 end
 arch woodfloor
 x 6
@@ -1592,19 +1592,19 @@ x 9
 y 11
 end
 arch tree
-blocksview 1
-move_block all
 x 9
 y 12
+move_block all
+blocksview 1
 end
 arch brush
 x 9
 y 13
 end
 arch hedge_2_1_2
-move_block all
 x 9
 y 13
+move_block all
 end
 arch grass
 x 9
@@ -1632,10 +1632,10 @@ y 19
 end
 arch key2
 name Esmeralda
-face goose.131
 name_pl Esmeralda
 title the Goose
 slaying EsmeraldaTheGoose
+face goose.131
 animation goose
 x 9
 y 19
@@ -1681,10 +1681,10 @@ x 10
 y 1
 end
 arch tree
-blocksview 1
-move_block all
 x 10
 y 2
+move_block all
+blocksview 1
 end
 arch grass
 x 10
@@ -1707,9 +1707,9 @@ x 10
 y 7
 end
 arch brazier
-glow_radius 0
 x 10
 y 7
+glow_radius 0
 end
 arch stonefloor2
 x 10
@@ -1908,9 +1908,9 @@ x 11
 y 13
 end
 arch button_small
-connected 5
 x 11
 y 14
+connected 5
 end
 arch woodfloor
 x 11
@@ -2044,9 +2044,9 @@ x 12
 y 11
 end
 arch button_small
-connected 5
 x 12
 y 12
+connected 5
 end
 arch stonefloor2
 x 12
@@ -2057,14 +2057,14 @@ x 12
 y 13
 end
 arch mdoor_closed_1
-connected 5
 x 12
 y 13
+connected 5
 end
 arch button_small
-connected 5
 x 12
 y 14
+connected 5
 end
 arch woodfloor
 x 12
@@ -2176,9 +2176,9 @@ x 13
 y 11
 end
 arch button_small
-connected 5
 x 13
 y 12
+connected 5
 end
 arch stonefloor2
 x 13
@@ -2292,9 +2292,9 @@ x 14
 y 5
 end
 arch brazier
-glow_radius 0
 x 14
 y 5
+glow_radius 0
 end
 arch stonefloor2
 x 14
@@ -2356,9 +2356,9 @@ x 14
 y 14
 end
 arch stove
-type 0
 x 14
 y 14
+type 0
 end
 arch woodfloor
 x 14
@@ -2383,9 +2383,9 @@ Dunno... but if you find Joey, he'll be somewhere nearby...
 @match *
 Whatda want?
 endmsg
-randomitems jail
 x 14
 y 15
+randomitems jail
 end
 arch woodfloor
 x 14
@@ -2489,15 +2489,15 @@ x 15
 y 6
 end
 arch locked_door2
+slaying hovel_key
 msg
 You'll need the key to open this door.
 Although, judging by the smell,
 why you'd want to go in is a mystery...
 endmsg
-blocksview 1
-slaying hovel_key
 x 15
 y 6
+blocksview 1
 end
 arch woodfloor
 x 15
@@ -2959,9 +2959,9 @@ x 18
 y 4
 end
 arch orc_chief_arc
-will_apply 6
 x 18
 y 4
+will_apply 6
 end
 arch woodfloor
 x 18
@@ -3098,9 +3098,9 @@ x 19
 y 3
 end
 arch brazier
-glow_radius 1
 x 19
 y 3
+glow_radius 1
 end
 arch woodfloor
 x 19
@@ -3150,10 +3150,10 @@ arch sheep
 msg
 baaa!
 endmsg
-monster 0
-unaggressive 1
 x 19
 y 11
+monster 0
+unaggressive 1
 end
 arch grass
 x 19
@@ -3346,25 +3346,25 @@ x 20
 y 16
 end
 arch tree
-blocksview 1
-move_block all
 x 20
 y 17
+move_block all
+blocksview 1
 end
 arch tree
-blocksview 1
-move_block all
 x 20
 y 18
+move_block all
+blocksview 1
 end
 arch grass
 x 20
 y 19
 end
 arch tree
-blocksview 1
 x 20
 y 20
+blocksview 1
 end
 arch grass
 x 20
@@ -3383,23 +3383,23 @@ x 20
 y 23
 end
 arch bones5
-type 122
-no_pick 1
 x 20
 y 23
+type 122
+no_pick 1
 arch card
-face card_skull.111
 msg
 special delivery for Mr. White...
 endmsg
+face card_skull.111
 end
 arch key2
 name key
-face key_blue.111
+slaying BZA_whitedoor
 msg
 B.A.  #1
 endmsg
-slaying BZA_whitedoor
+face key_blue.111
 end
 end
 arch grass
@@ -3434,10 +3434,10 @@ y 3
 end
 arch chole_2
 name hole in the floor
+slaying riverside_under
 msg
 Smells like orc.
 endmsg
-slaying riverside_under
 hp 1
 sp 1
 x 21
@@ -3528,16 +3528,16 @@ x 21
 y 18
 end
 arch tree
-blocksview 1
-move_block all
 x 21
 y 19
+move_block all
+blocksview 1
 end
 arch tree
-blocksview 1
-move_block all
 x 21
 y 20
+move_block all
+blocksview 1
 end
 arch grass
 x 21
@@ -3548,16 +3548,16 @@ x 21
 y 22
 end
 arch tree
-blocksview 1
-move_block all
 x 21
 y 22
+move_block all
+blocksview 1
 end
 arch tree
-blocksview 1
-move_block all
 x 21
 y 23
+move_block all
+blocksview 1
 end
 arch grass
 x 21
@@ -3641,9 +3641,9 @@ x 22
 y 9
 end
 arch brazier
-glow_radius 1
 x 22
 y 9
+glow_radius 1
 end
 arch woodfloor
 x 22
@@ -3654,10 +3654,10 @@ x 22
 y 10
 end
 arch tree
-blocksview 1
-move_block all
 x 22
 y 11
+move_block all
+blocksview 1
 end
 arch grass
 x 22

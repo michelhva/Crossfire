@@ -1877,6 +1877,11 @@ arch dungeon_magic
 x 6
 y 5
 end
+arch pentagram_111
+x 6
+y 5
+type 0
+end
 arch flagstone
 name floor
 face shop_empty.111
@@ -4856,9 +4861,4 @@ end
 arch cwall_2_2_4
 x 14
 y 33
-end
-arch pentagram_111
-x 6
-y 5
-type 0
 end

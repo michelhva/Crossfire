@@ -1,15 +1,15 @@
 arch map
-region scorn
 name newhouse1
+region scorn
+width 20
+height 20
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 19 01:25:36 1994
 endmsg
-width 20
-height 20
-enter_x 1
-enter_y 1
 end
 arch grass
 end
@@ -2691,6 +2691,7 @@ y 16
 end
 arch card
 name Gate Pass
+slaying gate_pass
 msg
 The holder of this card is allowed free
 access into and out of the City of Scorn
@@ -2700,11 +2701,10 @@ of Scorn reserves the right to revoke
 said access at any time of its choosing
 without recompense or liability.
 endmsg
-slaying gate_pass
-value 800
-identified 1
 x 18
 y 16
+value 800
+identified 1
 end
 arch earthwall
 x 18

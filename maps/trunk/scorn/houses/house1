@@ -1,16 +1,16 @@
 arch map
-region scorn
 name <untitled>
+region scorn
+width 32
+height 16
+enter_x 11
+enter_y 14
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:34:30 1993
 Inverted: Dec 19 1998 (to fit streets)
 endmsg
-width 32
-height 16
-enter_x 11
-enter_y 14
 end
 arch woodfloor
 end
@@ -443,9 +443,9 @@ x 4
 y 12
 end
 arch gnoll
-speed_left -0.600000
 x 4
 y 12
+speed_left -0.600000
 end
 arch grass
 x 4
@@ -854,19 +854,19 @@ x 9
 y 8
 end
 arch door_look_2
-move_block 0
 x 9
 y 8
+move_block 0
 end
 arch woodfloor
 x 9
 y 9
 end
 arch door_look_2
-move_block 0
-blocksview 1
 x 9
 y 9
+move_block 0
+blocksview 1
 end
 arch woodfloor
 x 9
@@ -943,10 +943,10 @@ x 10
 y 10
 end
 arch door_look_1
-move_block 0
-blocksview 1
 x 10
 y 10
+move_block 0
+blocksview 1
 end
 arch magic_mouth
 msg
@@ -975,9 +975,9 @@ arch exit
 slaying /world/world_105_115
 hp 8
 sp 45
-invisible 1
 x 10
 y 15
+invisible 1
 end
 arch cobblestones
 x 10
@@ -1030,10 +1030,10 @@ x 11
 y 10
 end
 arch door_look_1
-move_block 0
-blocksview 1
 x 11
 y 10
+move_block 0
+blocksview 1
 end
 arch magic_mouth
 msg
@@ -1062,9 +1062,9 @@ arch exit
 slaying /world/world_105_115
 hp 8
 sp 45
-invisible 1
 x 11
 y 15
+invisible 1
 end
 arch cobblestones
 x 11
@@ -1564,9 +1564,9 @@ x 17
 y 12
 end
 arch gnoll
-speed_left -0.600000
 x 17
 y 12
+speed_left -0.600000
 end
 arch brush
 x 17
@@ -2060,18 +2060,18 @@ x 23
 y 6
 end
 arch door_look_2
-move_block 0
 x 23
 y 6
+move_block 0
 end
 arch woodfloor
 x 23
 y 7
 end
 arch door_look_2
-move_block 0
 x 23
 y 7
+move_block 0
 end
 arch woodfloor
 x 23
@@ -2446,9 +2446,9 @@ x 27
 y 6
 end
 arch gnoll
+x 27
+y 6
 speed_left -0.700000
-x 27
-y 6
 end
 arch tree
 x 27
@@ -2649,9 +2649,9 @@ x 30
 y 1
 end
 arch generate_gnoll
-speed_left -0.220000
 x 30
 y 1
+speed_left -0.220000
 end
 arch jungle_1
 x 30
@@ -2682,9 +2682,9 @@ x 30
 y 7
 end
 arch generate_gnoll
+x 30
+y 7
 speed_left -0.124000
-x 30
-y 7
 end
 arch evergreen
 x 30
@@ -2723,9 +2723,9 @@ x 30
 y 14
 end
 arch generate_gnoll
-speed_left -0.220000
 x 30
 y 14
+speed_left -0.220000
 end
 arch grass
 x 30

@@ -1,12 +1,14 @@
 arch map
-region scorn
 name testing_area
+difficulty 1000
+region scorn
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 27 20:34:51 2001
 endmsg
-level 1000
 end
 arch shop_empty
 end

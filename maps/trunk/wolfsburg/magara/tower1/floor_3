@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region wolfsburg
-x 30
-y 35
+width 30
+height 35
 end
 arch small_stones
 end
@@ -3979,6 +3980,10 @@ arch woodfloor
 x 18
 y 30
 end
+arch titan
+x 18
+y 30
+end
 arch woodfloor
 x 18
 y 31
@@ -4747,6 +4752,10 @@ arch small_stones
 x 23
 y 3
 end
+arch troll
+x 23
+y 3
+end
 arch small_stones
 x 23
 y 4
@@ -5123,6 +5132,10 @@ arch small_stones
 x 25
 y 7
 end
+arch troll
+x 25
+y 7
+end
 arch small_stones
 x 25
 y 8
@@ -5180,6 +5193,10 @@ x 25
 y 19
 end
 arch small_stones
+x 25
+y 20
+end
+arch giant
 x 25
 y 20
 end
@@ -5374,6 +5391,10 @@ x 26
 y 17
 end
 arch small_stones
+x 26
+y 18
+end
+arch giant
 x 26
 y 18
 end
@@ -5580,6 +5601,10 @@ x 27
 y 17
 end
 arch small_stones
+x 27
+y 18
+end
+arch giant
 x 27
 y 18
 end
@@ -6317,28 +6342,4 @@ end
 arch bwall_2_2_4
 x 29
 y 34
-end
-arch titan
-x 18
-y 30
-end
-arch troll
-x 23
-y 3
-end
-arch troll
-x 25
-y 7
-end
-arch giant
-x 25
-y 20
-end
-arch giant
-x 26
-y 18
-end
-arch giant
-x 27
-y 18
 end

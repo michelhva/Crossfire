@@ -1,16 +1,16 @@
 arch map
 name Resir's House
+reset_timeout 7200
+difficulty 1
+width 25
+height 10
+enter_x 1
+enter_y 1
 msg
 Creator: Knut Ahlers
 Email: webmaster@knutshome.de
 Date: Sat Jul  16 23:11:00 2005
 endmsg
-width 25
-height 10
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 end
 arch cobblestones2
 end
@@ -354,12 +354,12 @@ y 4
 end
 arch chest
 name Resir
-face corpse1.111
 name_pl Resir
-carrying 1575
-randomitems none
+face corpse1.111
 x 5
 y 4
+carrying 1575
+randomitems none
 arch random_wealth
 end
 arch potion_restoration
@@ -429,9 +429,9 @@ x 6
 y 3
 end
 arch key
-invisible 1
 x 6
 y 3
+invisible 1
 end
 arch dirtfloor
 x 6

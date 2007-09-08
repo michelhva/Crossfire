@@ -1,17 +1,17 @@
 arch map
-region scorn
 name bowyer
+reset_timeout 7200
+difficulty 2
+region scorn
+width 12
+height 15
+enter_x 6
+enter_y 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 28 14:07:57 2002
 endmsg
-width 12
-height 15
-enter_x 6
-enter_y 14
-reset_timeout 7200
-difficulty 2
 end
 arch grass
 end
@@ -192,20 +192,20 @@ x 2
 y 3
 end
 arch desk
-no_pick 1
 x 2
 y 3
+no_pick 1
 end
 arch book_clasp
+title Dragons
 msg
 Create projectiles of Slay Dragon
 with 20 bolts or arrows and a
 single claw from one of the beasts.
 endmsg
-title Dragons
-no_pick 1
 x 2
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 2
@@ -216,80 +216,80 @@ x 2
 y 5
 end
 arch dresser2
-no_pick 1
 x 2
 y 5
+no_pick 1
 end
 arch book_clasp
+title Fire
 msg
 Create projectiles of Fire
 with 20 bolts or arrows and the
 meat of a wyvern.
 endmsg
-title Fire
-no_pick 1
 x 2
 y 5
+no_pick 1
 end
 arch woodfloor2
 x 2
 y 6
 end
 arch dresser2
-no_pick 1
 x 2
 y 6
+no_pick 1
 end
 arch book_clasp
+title Cold
 msg
 Create projectiles of Cold
 with 20 bolts or arrows and the
 remnants of a ghost.
 endmsg
-title Cold
-no_pick 1
 x 2
 y 6
+no_pick 1
 end
 arch woodfloor2
 x 2
 y 7
 end
 arch dresser2
-no_pick 1
 x 2
 y 7
+no_pick 1
 end
 arch book_clasp
+title Paralysis
 msg
 Projectiles of Paralysis can be
 made with 20 arrows or bolts and
 the eye of a beholder.
 endmsg
-title Paralysis
-no_pick 1
 x 2
 y 7
+no_pick 1
 end
 arch woodfloor2
 x 2
 y 8
 end
 arch dresser2
-no_pick 1
 x 2
 y 8
+no_pick 1
 end
 arch book_clasp
+title Poison
 msg
 Projectiles of Poison can be
 made with 20 arrows or bolts and
 the stinger of a scorpion.
 endmsg
-title Poison
-no_pick 1
 x 2
 y 8
+no_pick 1
 end
 arch woodfloor2
 x 2
@@ -417,20 +417,20 @@ x 3
 y 12
 end
 arch table_2
-move_block all
-no_pick 1
 x 3
 y 12
+move_block all
+no_pick 1
 end
 arch woodfloor2
 x 3
 y 13
 end
 arch table_2
-move_block all
-no_pick 1
 x 3
 y 13
+move_block all
+no_pick 1
 end
 arch woodfloor2
 x 3
@@ -475,9 +475,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 4
 y 5
+slow_move 0.000000
 end
 arch woodfloor2
 x 4
@@ -487,9 +487,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 4
 y 6
+slow_move 0.000000
 end
 arch woodfloor2
 x 4
@@ -499,9 +499,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 4
 y 7
+slow_move 0.000000
 end
 arch woodfloor2
 x 4
@@ -578,9 +578,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 5
 y 5
+slow_move 0.000000
 end
 arch woodfloor2
 x 5
@@ -598,9 +598,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 5
 y 7
+slow_move 0.000000
 end
 arch woodfloor2
 x 5
@@ -610,9 +610,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 5
 y 8
+slow_move 0.000000
 end
 arch woodfloor2
 x 5
@@ -685,9 +685,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 6
 y 5
+slow_move 0.000000
 end
 arch woodfloor2
 x 6
@@ -697,9 +697,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 6
 y 6
+slow_move 0.000000
 end
 arch woodfloor2
 x 6
@@ -709,9 +709,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 6
 y 7
+slow_move 0.000000
 end
 arch woodfloor2
 x 6
@@ -721,9 +721,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 6
 y 8
+slow_move 0.000000
 end
 arch woodfloor2
 x 6
@@ -807,9 +807,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 7
 y 7
+slow_move 0.000000
 end
 arch woodfloor2
 x 7
@@ -819,9 +819,9 @@ arch glue
 name sawdust
 name_pl sawdust
 exp 0
-slow_move 0.000000
 x 7
 y 8
+slow_move 0.000000
 end
 arch woodfloor2
 x 7
@@ -919,21 +919,21 @@ x 8
 y 10
 end
 arch pedestal
-invisible 1
-connected 11
 x 8
 y 10
+invisible 1
+connected 11
 end
 arch woodfloor2
 x 8
 y 11
 end
 arch ggate_closed
-damned 1
-no_magic 1
-connected 11
 x 8
 y 11
+connected 11
+no_magic 1
+damned 1
 end
 arch woodfloor2
 x 8
@@ -941,32 +941,32 @@ y 12
 end
 arch check_floor
 slaying bowyer_house1
-connected 11
 x 8
 y 12
+connected 11
 end
 arch woodfloor2
 x 8
 y 13
 end
 arch trigger_marker
+slaying bowyer_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying bowyer_house1
-connected 10
-speed 1.0
 food 504
 x 8
 y 13
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 8
 y 13
+connected 10
 end
 arch woodfloor2
 x 8
@@ -996,20 +996,20 @@ x 9
 y 3
 end
 arch desk
-no_pick 1
 x 9
 y 3
+no_pick 1
 end
 arch book_clasp
+title Lightning
 msg
 Projectiles of Lightning
 can be made with 20 arrows or bolts
 and the tooth of a skull.
 endmsg
-title Lightning
-no_pick 1
 x 9
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 9
