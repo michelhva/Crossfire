@@ -3194,6 +3194,11 @@ arch dungeon_floor
 x 20
 y 13
 end
+arch mine_secret_2_1
+x 20
+y 13
+move_block 0
+end
 arch dungeon_floor
 x 20
 y 14
@@ -3781,9 +3786,4 @@ end
 arch mine12
 x 23
 y 23
-end
-arch mine_secret_2_1
-x 20
-y 13
-move_block 0
 end

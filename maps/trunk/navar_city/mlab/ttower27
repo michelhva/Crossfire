@@ -365,6 +365,16 @@ arch marble
 x 2
 y 11
 end
+arch big_dragon
+hp 4500
+x 2
+y 11
+carrying 100
+arch key2
+slaying tttower274
+face key_blue.111
+end
+end
 arch blackmarble
 x 2
 y 12
@@ -374,6 +384,10 @@ x 2
 y 12
 end
 arch marble
+x 2
+y 13
+end
+arch big_dragon
 x 2
 y 13
 end
@@ -924,11 +938,19 @@ arch marble
 x 4
 y 15
 end
+arch dragon
+x 4
+y 15
+end
 arch blackmarble
 x 4
 y 16
 end
 arch dungeon_magic
+x 4
+y 16
+end
+arch dragon
 x 4
 y 16
 end
@@ -1188,6 +1210,10 @@ arch dungeon_magic
 x 5
 y 11
 end
+arch big_dragon
+x 5
+y 11
+end
 arch marble
 x 5
 y 12
@@ -1197,6 +1223,10 @@ x 5
 y 13
 end
 arch dungeon_magic
+x 5
+y 13
+end
+arch big_dragon
 x 5
 y 13
 end
@@ -2374,6 +2404,10 @@ arch dungeon_magic
 x 10
 y 3
 end
+arch bone_drake
+x 10
+y 3
+end
 arch marble
 x 10
 y 4
@@ -2383,6 +2417,10 @@ x 10
 y 5
 end
 arch dungeon_magic
+x 10
+y 5
+end
+arch Cwyvern
 x 10
 y 5
 end
@@ -2623,6 +2661,10 @@ arch dungeon_magic
 x 11
 y 6
 end
+arch bone_drake
+x 11
+y 6
+end
 arch marble
 x 11
 y 7
@@ -2727,6 +2769,10 @@ arch dungeon_magic
 x 11
 y 18
 end
+arch big_elec
+x 11
+y 18
+end
 arch marble
 x 11
 y 19
@@ -2742,6 +2788,16 @@ end
 arch marble
 x 11
 y 21
+end
+arch big_elec
+hp 4500
+x 11
+y 21
+carrying 100
+arch key2
+slaying tttower271
+face key_blue.111
+end
 end
 arch blackmarble
 x 11
@@ -2791,6 +2847,16 @@ arch dungeon_magic
 x 12
 y 1
 end
+arch bone_drake
+hp 9000
+x 12
+y 1
+carrying 100
+arch key2
+slaying tttower273
+face key_blue.111
+end
+end
 arch marble
 x 12
 y 2
@@ -2800,6 +2866,10 @@ x 12
 y 3
 end
 arch dungeon_magic
+x 12
+y 3
+end
+arch Cwyvern
 x 12
 y 3
 end
@@ -3017,6 +3087,10 @@ arch dungeon_magic
 x 13
 y 4
 end
+arch bone_drake
+x 13
+y 4
+end
 arch marble
 x 13
 y 5
@@ -3026,6 +3100,10 @@ x 13
 y 6
 end
 arch dungeon_magic
+x 13
+y 6
+end
+arch bone_drake
 x 13
 y 6
 end
@@ -3260,6 +3338,10 @@ arch dungeon_magic
 x 14
 y 3
 end
+arch Cwyvern
+x 14
+y 3
+end
 arch marble
 x 14
 y 4
@@ -3400,6 +3482,10 @@ arch marble
 x 14
 y 20
 end
+arch big_elec
+x 14
+y 20
+end
 arch blackmarble
 x 14
 y 21
@@ -3476,6 +3562,10 @@ x 15
 y 4
 end
 arch dungeon_magic
+x 15
+y 4
+end
+arch bone_drake
 x 15
 y 4
 end
@@ -4321,6 +4411,11 @@ arch marble
 x 18
 y 11
 end
+arch chinese_dragon
+hp 2000
+x 18
+y 11
+end
 arch blackmarble
 x 18
 y 12
@@ -4330,6 +4425,11 @@ x 18
 y 12
 end
 arch marble
+x 18
+y 13
+end
+arch chinese_dragon
+hp 2000
 x 18
 y 13
 end
@@ -4828,6 +4928,10 @@ arch marble
 x 20
 y 9
 end
+arch chinese_dragon
+x 20
+y 9
+end
 arch blackmarble
 x 20
 y 10
@@ -4837,6 +4941,11 @@ x 20
 y 10
 end
 arch marble
+x 20
+y 11
+end
+arch chinese_dragon
+hp 2000
 x 20
 y 11
 end
@@ -4869,6 +4978,11 @@ x 20
 y 14
 end
 arch marble
+x 20
+y 15
+end
+arch chinese_dragon
+hp 2000
 x 20
 y 15
 end
@@ -5112,6 +5226,11 @@ x 21
 y 13
 end
 arch dungeon_magic
+x 21
+y 13
+end
+arch chinese_dragon
+hp 2000
 x 21
 y 13
 end
@@ -5327,6 +5446,16 @@ end
 arch marble
 x 22
 y 11
+end
+arch chinese_dragon
+hp 3000
+x 22
+y 11
+carrying 100
+arch key2
+slaying tttower272
+face key_blue.111
+end
 end
 arch blackmarble
 x 22
@@ -5968,133 +6097,4 @@ end
 arch blocked
 x 25
 y 25
-end
-arch big_dragon
-hp 4500
-x 2
-y 11
-carrying 100
-arch key2
-slaying tttower274
-face key_blue.111
-end
-end
-arch big_dragon
-x 2
-y 13
-end
-arch dragon
-x 4
-y 15
-end
-arch dragon
-x 4
-y 16
-end
-arch big_dragon
-x 5
-y 11
-end
-arch big_dragon
-x 5
-y 13
-end
-arch bone_drake
-x 10
-y 3
-end
-arch Cwyvern
-x 10
-y 5
-end
-arch bone_drake
-x 11
-y 6
-end
-arch big_elec
-x 11
-y 18
-end
-arch big_elec
-hp 4500
-x 11
-y 21
-carrying 100
-arch key2
-slaying tttower271
-face key_blue.111
-end
-end
-arch bone_drake
-hp 9000
-x 12
-y 1
-carrying 100
-arch key2
-slaying tttower273
-face key_blue.111
-end
-end
-arch Cwyvern
-x 12
-y 3
-end
-arch bone_drake
-x 13
-y 4
-end
-arch bone_drake
-x 13
-y 6
-end
-arch Cwyvern
-x 14
-y 3
-end
-arch big_elec
-x 14
-y 20
-end
-arch bone_drake
-x 15
-y 4
-end
-arch chinese_dragon
-hp 2000
-x 18
-y 11
-end
-arch chinese_dragon
-hp 2000
-x 18
-y 13
-end
-arch chinese_dragon
-x 20
-y 9
-end
-arch chinese_dragon
-hp 2000
-x 20
-y 11
-end
-arch chinese_dragon
-hp 2000
-x 20
-y 15
-end
-arch chinese_dragon
-hp 2000
-x 21
-y 13
-end
-arch chinese_dragon
-hp 3000
-x 22
-y 11
-carrying 100
-arch key2
-slaying tttower272
-face key_blue.111
-end
 end

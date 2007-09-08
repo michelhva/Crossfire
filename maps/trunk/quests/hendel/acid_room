@@ -1031,6 +1031,10 @@ face marble_blgr.111
 x 3
 y 35
 end
+arch giant
+x 3
+y 35
+end
 arch marble
 face marble_blgr.111
 x 3
@@ -1347,6 +1351,10 @@ face marble_blgr.111
 x 4
 y 36
 end
+arch giant
+x 4
+y 36
+end
 arch marble
 face marble_blgr.111
 x 4
@@ -1606,6 +1614,10 @@ face marble_blgr.111
 x 5
 y 32
 end
+arch dragon
+x 5
+y 32
+end
 arch marble
 face marble_blgr.111
 x 5
@@ -1622,6 +1634,10 @@ y 34
 end
 arch marble
 face marble_blgr.111
+x 5
+y 35
+end
+arch giant
 x 5
 y 35
 end
@@ -1876,6 +1892,10 @@ y 30
 end
 arch marble
 face marble_blgr.111
+x 6
+y 31
+end
+arch dragon
 x 6
 y 31
 end
@@ -2315,6 +2335,27 @@ arch marble
 face marble_blgr.111
 x 8
 y 6
+end
+arch big_dragon
+Con 15
+Int 25
+hp 6000
+maxhp 6000
+maxsp 40
+x 8
+y 6
+resist_magic -100
+resist_cold 30
+resist_poison -100
+carrying 100
+can_use_scroll 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_wand 1
+arch key2
+slaying set_individual_value ACID5
+end
 end
 arch marble
 face marble_blgr.111
@@ -4159,6 +4200,10 @@ face marble_blgr.111
 x 13
 y 31
 end
+arch dragon
+x 13
+y 31
+end
 arch marble
 face marble_blgr.111
 x 13
@@ -4439,6 +4484,10 @@ y 31
 end
 arch marble
 face marble_blgr.111
+x 14
+y 32
+end
+arch dragon
 x 14
 y 32
 end
@@ -4741,6 +4790,10 @@ y 34
 end
 arch marble
 face marble_blgr.111
+x 15
+y 35
+end
+arch giant
 x 15
 y 35
 end
@@ -5057,6 +5110,10 @@ y 35
 end
 arch marble
 face marble_blgr.111
+x 16
+y 36
+end
+arch giant
 x 16
 y 36
 end
@@ -5379,6 +5436,10 @@ y 34
 end
 arch marble
 face marble_blgr.111
+x 17
+y 35
+end
+arch giant
 x 17
 y 35
 end
@@ -6274,65 +6335,4 @@ end
 arch pstone_1
 x 20
 y 49
-end
-arch giant
-x 3
-y 35
-end
-arch giant
-x 4
-y 36
-end
-arch dragon
-x 5
-y 32
-end
-arch giant
-x 5
-y 35
-end
-arch dragon
-x 6
-y 31
-end
-arch big_dragon
-Con 15
-Int 25
-hp 6000
-maxhp 6000
-maxsp 40
-x 8
-y 6
-resist_magic -100
-resist_cold 30
-resist_poison -100
-carrying 100
-can_use_scroll 1
-can_use_armour 1
-can_use_weapon 1
-can_use_ring 1
-can_use_wand 1
-arch key2
-slaying set_individual_value ACID5
-end
-end
-arch dragon
-x 13
-y 31
-end
-arch dragon
-x 14
-y 32
-end
-arch giant
-x 15
-y 35
-end
-arch giant
-x 16
-y 36
-end
-arch giant
-x 17
-y 35
 end

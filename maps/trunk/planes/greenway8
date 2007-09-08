@@ -1133,6 +1133,10 @@ arch evergreens
 x 5
 y 39
 end
+arch dragon
+x 5
+y 39
+end
 arch evergreens
 x 5
 y 40
@@ -6821,6 +6825,10 @@ arch woods_2
 x 33
 y 34
 end
+arch dragon
+x 33
+y 34
+end
 arch brush
 x 33
 y 35
@@ -8604,6 +8612,10 @@ arch woods_2
 x 42
 y 29
 end
+arch ent
+x 42
+y 29
+end
 arch woods_2
 x 42
 y 30
@@ -10114,16 +10126,4 @@ end
 arch darkforest
 x 49
 y 49
-end
-arch dragon
-x 5
-y 39
-end
-arch dragon
-x 33
-y 34
-end
-arch ent
-x 42
-y 29
 end

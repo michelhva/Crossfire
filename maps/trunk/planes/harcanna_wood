@@ -3052,6 +3052,17 @@ arch grass
 x 13
 y 39
 end
+arch gryphon
+name Non
+Wis 13
+hp 3600
+maxhp 3600
+exp 380000
+x 13
+y 39
+level 22
+sleep 0
+end
 arch grass
 x 13
 y 40
@@ -7335,6 +7346,29 @@ arch grass
 x 32
 y 30
 end
+arch gryphon
+name Verdan
+Wis 13
+hp 4000
+maxhp 4000
+exp 380000
+x 32
+y 30
+level 22
+sleep 0
+arch sapphire
+name Heart of Verdan
+name_pl Hearts of Verdan
+msg
+This large sapphire has a faint glow.
+endmsg
+face pretty_sapphire.111
+material 256
+value 1850
+weight 500
+glow_radius 1
+end
+end
 arch grass
 x 32
 y 31
@@ -11150,38 +11184,4 @@ end
 arch darkforest
 x 49
 y 49
-end
-arch gryphon
-name Non
-Wis 13
-hp 3600
-maxhp 3600
-exp 380000
-x 13
-y 39
-level 22
-sleep 0
-end
-arch gryphon
-name Verdan
-Wis 13
-hp 4000
-maxhp 4000
-exp 380000
-x 32
-y 30
-level 22
-sleep 0
-arch sapphire
-name Heart of Verdan
-name_pl Hearts of Verdan
-msg
-This large sapphire has a faint glow.
-endmsg
-face pretty_sapphire.111
-material 256
-value 1850
-weight 500
-glow_radius 1
-end
 end

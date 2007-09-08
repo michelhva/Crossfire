@@ -1300,6 +1300,10 @@ arch treed_hills
 x 6
 y 31
 end
+arch giant
+x 6
+y 31
+end
 arch treed_hills
 x 6
 y 32
@@ -1500,6 +1504,10 @@ x 7
 y 30
 end
 arch treed_hills
+x 7
+y 31
+end
+arch giant
 x 7
 y 31
 end
@@ -2828,6 +2836,10 @@ arch treed_hills
 x 14
 y 7
 end
+arch dragon
+x 14
+y 7
+end
 arch treed_hills
 x 14
 y 8
@@ -3020,6 +3032,10 @@ x 15
 y 5
 end
 arch woods
+x 15
+y 6
+end
+arch dragon
 x 15
 y 6
 end
@@ -3231,6 +3247,10 @@ x 16
 y 7
 end
 arch woods
+x 16
+y 8
+end
+arch dragon
 x 16
 y 8
 end
@@ -7817,6 +7837,10 @@ arch treed_hills
 x 38
 y 45
 end
+arch ent
+x 38
+y 45
+end
 arch jungle_1
 x 38
 y 46
@@ -10049,28 +10073,4 @@ end
 arch evergreens
 x 49
 y 49
-end
-arch giant
-x 6
-y 31
-end
-arch giant
-x 7
-y 31
-end
-arch dragon
-x 14
-y 7
-end
-arch dragon
-x 15
-y 6
-end
-arch dragon
-x 16
-y 8
-end
-arch ent
-x 38
-y 45
 end

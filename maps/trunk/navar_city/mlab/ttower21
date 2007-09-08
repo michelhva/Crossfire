@@ -1304,6 +1304,10 @@ name_pl woodfloor
 x 8
 y 2
 end
+arch skree
+x 8
+y 2
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2878,8 +2882,4 @@ x 17
 y 17
 move_block 0
 blocksview 0
-end
-arch skree
-x 8
-y 2
 end

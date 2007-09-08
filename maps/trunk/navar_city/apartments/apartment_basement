@@ -1,13 +1,13 @@
 arch map
-region navar
 name Permenant Apartment
+region navar
+darkness 1
+width 20
+height 15
 msg
 Creator: CF Java Map Editor
 Date:    3/8/2005
 endmsg
-width 20
-height 15
-darkness 1
 end
 arch dungeon_floor
 end
@@ -727,9 +727,9 @@ arch stair3_ystone_up
 slaying /navar_city/apartments/apartment
 hp 9
 sp 10
-unique 1
 x 9
 y 10
+unique 1
 end
 arch dungeon_floor
 x 9

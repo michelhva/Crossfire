@@ -1994,6 +1994,18 @@ arch woodfloor
 x 11
 y 3
 end
+arch giant
+name Oliver
+msg
+@match *
+Me am havin sum party eh?
+endmsg
+x 11
+y 3
+pick_up 4
+unaggressive 1
+sleep 0
+end
 arch woodfloor
 x 11
 y 4
@@ -2776,16 +2788,4 @@ end
 arch wall_2_2_4
 x 14
 y 29
-end
-arch giant
-name Oliver
-msg
-@match *
-Me am havin sum party eh?
-endmsg
-x 11
-y 3
-unaggressive 1
-pick_up 4
-sleep 0
 end

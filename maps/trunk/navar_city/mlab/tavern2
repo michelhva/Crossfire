@@ -3100,8 +3100,8 @@ x 8
 y 34
 value 200
 weight 300000
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch magic_banned
 x 8
@@ -5124,6 +5124,11 @@ arch woodfloor
 x 13
 y 21
 end
+arch titan
+x 13
+y 21
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 22
@@ -5136,6 +5141,11 @@ arch woodfloor
 x 13
 y 24
 end
+arch titan
+x 13
+y 24
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 25
@@ -5147,6 +5157,11 @@ end
 arch woodfloor
 x 13
 y 27
+end
+arch titan
+x 13
+y 27
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -8548,8 +8563,8 @@ x 24
 y 3
 value 200
 weight 100000
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch woodfloor
 x 24
@@ -16787,8 +16802,8 @@ x 46
 y 6
 value 200
 weight 300000
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch unholy_ground
 x 46
@@ -21403,19 +21418,4 @@ x 59
 y 40
 move_block 0
 blocksview 0
-end
-arch titan
-x 13
-y 21
-unaggressive 1
-end
-arch titan
-x 13
-y 24
-unaggressive 1
-end
-arch titan
-x 13
-y 27
-unaggressive 1
 end

@@ -618,6 +618,10 @@ arch booze
 x 1
 y 45
 end
+arch big_dragon
+x 1
+y 45
+end
 arch small_stones
 x 1
 y 46
@@ -1768,6 +1772,10 @@ arch small_stones
 x 5
 y 47
 end
+arch dread
+x 5
+y 47
+end
 arch small_stones
 x 5
 y 48
@@ -2205,6 +2213,10 @@ arch small_stones
 x 7
 y 32
 end
+arch giant
+x 7
+y 32
+end
 arch small_stones
 x 7
 y 33
@@ -2613,6 +2625,10 @@ arch small_stones
 x 9
 y 16
 end
+arch dragon
+x 9
+y 16
+end
 arch small_stones
 x 9
 y 17
@@ -2710,6 +2726,10 @@ arch small_stones
 x 9
 y 35
 end
+arch giant
+x 9
+y 35
+end
 arch small_stones
 x 9
 y 36
@@ -2759,6 +2779,10 @@ x 9
 y 44
 end
 arch small_stones
+x 9
+y 45
+end
+arch dread
 x 9
 y 45
 end
@@ -3413,6 +3437,10 @@ arch small_stones
 x 12
 y 36
 end
+arch giant
+x 12
+y 36
+end
 arch small_stones
 x 12
 y 37
@@ -3548,6 +3576,10 @@ x 13
 y 12
 end
 arch small_stones
+x 13
+y 13
+end
+arch dragon
 x 13
 y 13
 end
@@ -3895,6 +3927,10 @@ arch small_stones
 x 14
 y 38
 end
+arch giant
+x 14
+y 38
+end
 arch small_stones
 x 14
 y 39
@@ -3978,6 +4014,10 @@ x 15
 y 2
 end
 arch small_stones
+x 15
+y 3
+end
+arch dragon
 x 15
 y 3
 end
@@ -4730,6 +4770,10 @@ arch small_stones
 x 18
 y 16
 end
+arch dragon
+x 18
+y 16
+end
 arch small_stones
 x 18
 y 17
@@ -4877,6 +4921,10 @@ arch awall_2_1_2
 x 19
 end
 arch small_stones
+x 19
+y 1
+end
+arch cobra
 x 19
 y 1
 end
@@ -8775,6 +8823,10 @@ arch small_stones
 x 33
 y 38
 end
+arch dragon
+x 33
+y 38
+end
 arch small_stones
 x 33
 y 39
@@ -9220,6 +9272,10 @@ x 35
 y 23
 end
 arch small_stones
+x 35
+y 24
+end
+arch dragon
 x 35
 y 24
 end
@@ -9831,7 +9887,15 @@ arch small_stones
 x 37
 y 45
 end
+arch dragon
+x 37
+y 45
+end
 arch small_stones
+x 37
+y 46
+end
+arch dragon
 x 37
 y 46
 end
@@ -11035,6 +11099,10 @@ arch small_stones
 x 42
 y 33
 end
+arch dragon
+x 42
+y 33
+end
 arch small_stones
 x 42
 y 34
@@ -11836,6 +11904,10 @@ x 45
 y 29
 end
 arch small_stones
+x 45
+y 30
+end
+arch dragon
 x 45
 y 30
 end
@@ -13085,76 +13157,4 @@ end
 arch bwall_2_2_4
 x 49
 y 49
-end
-arch big_dragon
-x 1
-y 45
-end
-arch dread
-x 5
-y 47
-end
-arch giant
-x 7
-y 32
-end
-arch dragon
-x 9
-y 16
-end
-arch giant
-x 9
-y 35
-end
-arch dread
-x 9
-y 45
-end
-arch giant
-x 12
-y 36
-end
-arch dragon
-x 13
-y 13
-end
-arch giant
-x 14
-y 38
-end
-arch dragon
-x 15
-y 3
-end
-arch dragon
-x 18
-y 16
-end
-arch cobra
-x 19
-y 1
-end
-arch dragon
-x 33
-y 38
-end
-arch dragon
-x 35
-y 24
-end
-arch dragon
-x 37
-y 45
-end
-arch dragon
-x 37
-y 46
-end
-arch dragon
-x 42
-y 33
-end
-arch dragon
-x 45
-y 30
 end
