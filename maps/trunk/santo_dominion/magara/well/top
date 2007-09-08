@@ -3210,6 +3210,10 @@ arch pstone_1
 x 23
 y 2
 end
+arch giant
+x 23
+y 2
+end
 arch pstone_1
 x 23
 y 3
@@ -3467,6 +3471,10 @@ x 25
 y 1
 end
 arch pstone_1
+x 25
+y 2
+end
+arch giant
 x 25
 y 2
 end
@@ -4082,12 +4090,4 @@ end
 arch blocked
 x 29
 y 20
-end
-arch giant
-x 23
-y 2
-end
-arch giant
-x 25
-y 2
 end

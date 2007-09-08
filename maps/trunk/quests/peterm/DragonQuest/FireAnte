@@ -583,6 +583,10 @@ arch pstone_2
 x 4
 y 15
 end
+arch big_dragon
+x 4
+y 15
+end
 arch pstone_2
 x 4
 y 16
@@ -1044,6 +1048,10 @@ x 8
 y 14
 end
 arch pstone_2
+x 8
+y 15
+end
+arch big_dragon
 x 8
 y 15
 end
@@ -1475,6 +1483,10 @@ arch pstone_2
 x 12
 y 12
 end
+arch big_dragon
+x 12
+y 12
+end
 arch pstone_2
 x 12
 y 13
@@ -1753,6 +1765,10 @@ arch pstone_2
 x 15
 y 4
 end
+arch big_dragon
+x 15
+y 4
+end
 arch pstone_2
 x 15
 y 5
@@ -1770,6 +1786,10 @@ x 15
 y 8
 end
 arch pstone_2
+x 15
+y 9
+end
+arch big_dragon
 x 15
 y 9
 end
@@ -2574,24 +2594,4 @@ end
 arch blocked
 x 21
 y 21
-end
-arch big_dragon
-x 4
-y 15
-end
-arch big_dragon
-x 8
-y 15
-end
-arch big_dragon
-x 12
-y 12
-end
-arch big_dragon
-x 15
-y 4
-end
-arch big_dragon
-x 15
-y 9
 end

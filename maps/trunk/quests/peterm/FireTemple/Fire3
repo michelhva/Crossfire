@@ -1062,6 +1062,10 @@ arch pstone_1
 x 5
 y 25
 end
+arch demon_lord
+x 5
+y 25
+end
 arch pstone_1
 x 5
 y 26
@@ -1277,6 +1281,14 @@ y 5
 speed -0.000100
 invisible 0
 end
+arch demon_lord
+x 7
+y 5
+carrying 100
+arch key2
+slaying Fire3d1
+end
+end
 arch pstone_1
 x 7
 y 6
@@ -1453,6 +1465,10 @@ arch pstone_1
 x 8
 y 10
 end
+arch big_demon
+x 8
+y 10
+end
 arch pstone_1
 x 8
 y 11
@@ -1634,6 +1650,10 @@ x 9
 y 16
 end
 arch pstone_1
+x 9
+y 17
+end
+arch big_demon
 x 9
 y 17
 end
@@ -2389,8 +2409,8 @@ y 12
 speed 0.000000
 type 20
 glow_radius 3
-move_block all
 move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2410,8 +2430,8 @@ y 13
 speed 0.000000
 type 20
 glow_radius 3
-move_block all
 move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2431,8 +2451,8 @@ y 14
 speed 0.000000
 type 20
 glow_radius 3
-move_block all
 move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2452,8 +2472,8 @@ y 15
 speed 0.000000
 type 20
 glow_radius 3
-move_block all
 move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -2473,8 +2493,8 @@ y 16
 speed 0.000000
 type 20
 glow_radius 3
-move_block all
 move_type 0
+move_block all
 end
 arch pstone_1
 x 14
@@ -3987,6 +4007,18 @@ arch pstone_1
 x 23
 y 3
 end
+arch Balrog
+x 23
+y 3
+carrying 23800
+arch key2
+slaying Fire3d2
+end
+arch chalice
+name Chalice of Fire
+material 256
+end
+end
 arch pstone_1
 x 23
 y 4
@@ -4297,6 +4329,16 @@ end
 arch pstone_1
 x 24
 y 24
+end
+arch Balrog
+x 24
+y 24
+carrying 12300
+invisible 1
+arch crown
+name Crown of Fire
+material 256
+end
 end
 arch pstone_1
 x 24
@@ -5653,6 +5695,10 @@ x 31
 y 10
 end
 arch pstone_1
+x 31
+y 11
+end
+arch Greater_Demon
 x 31
 y 11
 end
@@ -7767,50 +7813,4 @@ end
 arch dun7
 x 39
 y 31
-end
-arch demon_lord
-x 5
-y 25
-end
-arch demon_lord
-x 7
-y 5
-carrying 100
-arch key2
-slaying Fire3d1
-end
-end
-arch big_demon
-x 8
-y 10
-end
-arch big_demon
-x 9
-y 17
-end
-arch Balrog
-x 23
-y 3
-carrying 23800
-arch key2
-slaying Fire3d2
-end
-arch chalice
-name Chalice of Fire
-material 256
-end
-end
-arch Balrog
-x 24
-y 24
-carrying 12300
-invisible 1
-arch crown
-name Crown of Fire
-material 256
-end
-end
-arch Greater_Demon
-x 31
-y 11
 end

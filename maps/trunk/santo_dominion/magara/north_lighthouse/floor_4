@@ -705,6 +705,10 @@ arch dungeon_floor
 x 3
 y 25
 end
+arch dread
+x 3
+y 25
+end
 arch dungeon_floor
 x 3
 y 26
@@ -2638,6 +2642,10 @@ arch dungeon_floor
 x 14
 y 20
 end
+arch dragon
+x 14
+y 20
+end
 arch dungeon_floor
 x 14
 y 21
@@ -3015,6 +3023,10 @@ x 16
 y 21
 end
 arch dungeon_floor
+x 16
+y 22
+end
+arch dragon
 x 16
 y 22
 end
@@ -4234,6 +4246,10 @@ arch dungeon_floor
 x 24
 y 23
 end
+arch dragon
+x 24
+y 23
+end
 arch dungeon_floor
 x 24
 y 24
@@ -5119,20 +5135,4 @@ end
 arch bwall_2_2_4
 x 29
 y 29
-end
-arch dread
-x 3
-y 25
-end
-arch dragon
-x 14
-y 20
-end
-arch dragon
-x 16
-y 22
-end
-arch dragon
-x 24
-y 23
 end

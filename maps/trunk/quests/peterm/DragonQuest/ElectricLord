@@ -987,6 +987,74 @@ arch pstone_2
 x 10
 y 2
 end
+arch dragonman
+name Blue Dragonlord
+Int 5
+hp 7000
+maxhp 7000
+maxsp 50
+exp 200000
+dam 40
+wc -12
+ac -15
+x 10
+y 2
+level 30
+resist_magic 30
+carrying 17100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch mjoellnir
+name Thunderfist
+Con 1
+dam 22
+attacktype 264
+resist_electricity 45
+resist_cold -20
+path_attuned 8
+material 0
+value 250000
+weight 17000
+magic 5
+end
+arch key2
+slaying ElectricLordKey
+end
+end
 arch pstone_2
 x 10
 y 3
@@ -1693,6 +1761,18 @@ arch pstone_2
 x 17
 y 7
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 17
+y 7
+speed -0.500000
+level 25
+end
 arch pstone_2
 x 17
 y 8
@@ -1910,6 +1990,18 @@ end
 arch pstone_2
 x 20
 y 2
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 20
+y 2
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 20
@@ -2164,6 +2256,18 @@ end
 arch pstone_2
 x 23
 y 8
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 23
+y 8
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 23
@@ -2457,6 +2561,18 @@ arch pstone_2
 x 27
 y 4
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 27
+y 4
+speed -0.500000
+level 25
+end
 arch pstone_2
 x 27
 y 5
@@ -2546,6 +2662,18 @@ end
 arch pstone_2
 x 28
 y 8
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 28
+y 8
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 28
@@ -3605,132 +3733,4 @@ end
 arch blocked
 x 40
 y 15
-end
-arch dragonman
-name Blue Dragonlord
-Int 5
-hp 7000
-maxhp 7000
-maxsp 50
-exp 200000
-dam 40
-wc -12
-ac -15
-x 10
-y 2
-level 30
-resist_magic 30
-carrying 17100
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch mjoellnir
-name Thunderfist
-Con 1
-dam 22
-attacktype 264
-resist_electricity 45
-resist_cold -20
-path_attuned 8
-material 0
-value 250000
-weight 17000
-magic 5
-end
-arch key2
-slaying ElectricLordKey
-end
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 7
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 2
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 8
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 27
-y 4
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 8
-speed -0.500000
-level 25
 end

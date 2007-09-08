@@ -237,6 +237,14 @@ arch cave4
 x 2
 y 10
 end
+arch pentagram_111
+hp 6
+sp 6
+x 2
+y 11
+path_attuned 2
+connected 2
+end
 arch cave2
 x 2
 y 14
@@ -455,6 +463,14 @@ y 5
 path_attuned 2
 connected 2
 lifesave 1
+end
+arch pentagram_111
+hp 3
+sp 12
+x 5
+y 5
+path_attuned 1
+connected 1
 end
 arch woodfloor
 x 5
@@ -875,20 +891,4 @@ end
 arch blocked
 x 8
 y 14
-end
-arch pentagram_111
-hp 6
-sp 6
-x 2
-y 11
-path_attuned 2
-connected 2
-end
-arch pentagram_111
-hp 3
-sp 12
-x 5
-y 5
-path_attuned 1
-connected 1
 end
