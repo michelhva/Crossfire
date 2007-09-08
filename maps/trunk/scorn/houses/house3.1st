@@ -1,15 +1,15 @@
 arch map
-region scorn
 name Mike Miller's house
+region scorn
+width 10
+height 10
+enter_x 6
+enter_y 8
 msg
 Creator: Huhanhi
 Created with :  CF Java Map Editor
 Date:    3/23/2005
 endmsg
-width 10
-height 10
-enter_x 6
-enter_y 8
 end
 arch woodfloor
 end
@@ -82,17 +82,17 @@ end
 arch chest_2
 name mike miller's chest
 name_pl mike miller's chests
-no_pick 1
 x 1
 y 1
+no_pick 1
 arch bones3
 name Rat key
+name_pl Rat keys
+slaying ratkey0001
 msg
 A key made from rat bones... Yuck!
 endmsg
 type 21
-name_pl Rat keys
-slaying ratkey0001
 material 32
 end
 arch goldcoin
@@ -104,15 +104,16 @@ x 1
 y 2
 end
 arch mdoor_closed_1
-connected 1
 x 1
 y 2
+connected 1
 end
 arch woodfloor
 x 1
 y 3
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -122,14 +123,13 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 1
 y 3
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 1
@@ -140,6 +140,7 @@ x 1
 y 4
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -149,14 +150,13 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 1
 y 4
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 1
@@ -260,36 +260,21 @@ Hey, first go hunt down those pixies!
 @match *
 Can you hear the noise?
 endmsg
-weight 63129
-no_pick 1
-blocksview 1
-randomitems imp
-level 15
-exp 4000
-speed 0.2
-attacktype 31
-dam 8
-wc -50
+Con 2
+Pow 100
 hp 250
 maxhp 250
-ac 5
-Con 2
 sp 500
 maxsp 500
-Pow 100
-path_attuned 271
-see_invisible 1
-can_see_in_dark 1
-can_use_weapon 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
-stand_still 1
-will_apply 8
-pick_up 0
+exp 4000
+dam 8
+wc -50
+ac 5
+x 2
+y 3
+speed 0.2
+level 15
+attacktype 31
 resist_physical 25
 resist_magic 25
 resist_fire 50
@@ -303,15 +288,30 @@ resist_ghosthit 50
 resist_poison 25
 resist_slow 50
 resist_paralyze 75
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 50
-resist_turn_undead 100
 resist_death 90
 resist_chaos 80
-resist_blind 80
 resist_holyword 50
-x 2
-y 3
+resist_blind 80
+path_attuned 271
+weight 63129
+randomitems imp
+pick_up 0
+will_apply 8
+no_pick 1
+see_invisible 1
+blocksview 1
+can_use_scroll 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+stand_still 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
 arch robe
 end
 arch quarterstaff
@@ -336,6 +336,7 @@ x 2
 y 4
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -345,14 +346,13 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 2
 y 4
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 2
@@ -385,10 +385,10 @@ y 7
 end
 arch corpse_pl
 name corpse
-type 122
 name_pl corpses
 x 2
 y 7
+type 122
 arch goldcoin
 nrof 4
 end
@@ -399,11 +399,11 @@ y 8
 end
 arch chest_2
 name suspicious chest
-type 4
-no_pick 1
-randomitems traps
 x 2
 y 8
+type 4
+randomitems traps
+no_pick 1
 arch amulet
 name Gold-plated necklace
 name_pl Gold-plated necklaces
@@ -411,21 +411,21 @@ value 1200
 identified 1
 end
 arch rune_poison_cloud
-level 15
 dam 15
+level 15
 end
 arch potion_generic
 title of Cure Poison
+sp 68
 value 600
 identified 1
-sp 68
 end
 arch random_gem
 end
 arch ring
 name silver ring
-face ring.117
 name_pl silver rings
+face ring.117
 value 600
 identified 1
 end
@@ -457,6 +457,7 @@ x 3
 y 2
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -466,14 +467,13 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 3
 y 2
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 3
@@ -484,6 +484,7 @@ x 3
 y 3
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -493,20 +494,20 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 3
 y 3
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 3
 y 4
 end
 arch altar_trigger
+slaying Angry Pixie's head
 msg
 .
 .
@@ -516,23 +517,22 @@ Ooh, you killed the pixies!
 Now I can go to my cellar and have some bottles of wine. Thanks again!
 By the way, you can take the contents of the chest in the back room.
 endmsg
-invisible 1
-slaying Angry Pixie's head
-food 1
-connected 1
 exp 0
-last_sp 1
+food 1
 x 3
 y 4
+invisible 1
+last_sp 1
+connected 1
 end
 arch woodfloor
 x 3
 y 5
 end
 arch door_2
-move_block 0
 x 3
 y 5
+move_block 0
 end
 arch woodfloor
 x 3
@@ -581,20 +581,20 @@ x 4
 y 2
 end
 arch chair_1.1
-value 0
-no_pick 1
 x 4
 y 2
+value 0
+no_pick 1
 end
 arch woodfloor
 x 4
 y 3
 end
 arch desk
-value 0
-no_pick 1
 x 4
 y 3
+value 0
+no_pick 1
 arch goldcoin
 nrof 4
 end
@@ -618,9 +618,9 @@ x 4
 y 6
 end
 arch bed_1
-no_pick 1
 x 4
 y 6
+no_pick 1
 end
 arch woodfloor
 x 4
@@ -661,20 +661,20 @@ x 5
 y 2
 end
 arch table_3
-value 0
-no_pick 1
 x 5
 y 2
+value 0
+no_pick 1
 end
 arch woodfloor
 x 5
 y 3
 end
 arch chair_1.2
-value 0
-no_pick 1
 x 5
 y 3
+value 0
+no_pick 1
 end
 arch woodfloor
 x 5
@@ -763,9 +763,9 @@ x 6
 y 6
 end
 arch chair
-no_pick 1
 x 6
 y 6
+no_pick 1
 end
 arch woodfloor
 x 6
@@ -783,9 +783,9 @@ arch oakdoor
 slaying /world/world_104_115
 hp 45
 sp 34
-move_on walk
 x 6
 y 9
+move_on walk
 end
 arch woodfloor
 x 7
@@ -822,9 +822,9 @@ x 7
 y 5
 end
 arch door_2
-move_block 0
 x 7
 y 5
+move_block 0
 end
 arch woodfloor
 x 7
@@ -896,24 +896,24 @@ x 8
 y 6
 end
 arch table_4
-no_pick 1
 x 8
 y 6
+no_pick 1
 end
 arch booze
-identified 0
-cursed 1
 x 8
 y 6
+identified 0
+cursed 1
 end
 arch woodfloor
 x 8
 y 7
 end
 arch table_4
-no_pick 1
 x 8
 y 7
+no_pick 1
 end
 arch woodfloor
 x 8

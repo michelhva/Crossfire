@@ -1861,6 +1861,11 @@ x 14
 y 1
 level 120
 end
+arch giant
+exp 0
+x 14
+y 1
+end
 arch dirtfloor
 x 14
 y 2
@@ -2122,9 +2127,4 @@ end
 arch blocked
 x 15
 y 15
-end
-arch giant
-exp 0
-x 14
-y 1
 end

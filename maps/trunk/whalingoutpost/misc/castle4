@@ -813,6 +813,10 @@ arch snow4
 x 27
 y 31
 end
+arch chinese_dragon
+x 27
+y 31
+end
 arch flagstone
 x 27
 y 32
@@ -842,6 +846,10 @@ x 27
 y 35
 end
 arch snow4
+x 27
+y 35
+end
+arch chinese_dragon
 x 27
 y 35
 end
@@ -963,6 +971,10 @@ x 28
 y 28
 end
 arch snow5
+x 28
+y 28
+end
+arch chinese_dragon
 x 28
 y 28
 end
@@ -1289,6 +1301,10 @@ arch snow5
 x 29
 y 33
 end
+arch chinese_dragon
+x 29
+y 33
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -1676,6 +1692,10 @@ arch snow4
 x 31
 y 27
 end
+arch chinese_dragon
+x 31
+y 27
+end
 arch afloor_left
 name floor
 name_pl floor
@@ -1715,6 +1735,10 @@ x 31
 y 30
 end
 arch snow5
+x 31
+y 30
+end
+arch chinese_dragon
 x 31
 y 30
 end
@@ -1954,6 +1978,10 @@ arch slevel_3_4
 x 32
 y 32
 end
+arch chinese_dragon
+x 32
+y 32
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -1985,6 +2013,10 @@ x 32
 y 35
 end
 arch slevel_2_2_4
+x 32
+y 35
+end
+arch chinese_dragon
 x 32
 y 35
 end
@@ -2102,6 +2134,10 @@ x 33
 y 28
 end
 arch snow5
+x 33
+y 28
+end
+arch chinese_dragon
 x 33
 y 28
 end
@@ -2494,6 +2530,10 @@ arch slevel_2_2_3
 x 35
 y 28
 end
+arch chinese_dragon
+x 35
+y 28
+end
 arch afloor_right
 name floor
 name_pl floor
@@ -2525,6 +2565,10 @@ x 35
 y 31
 end
 arch slevel_3_4
+x 35
+y 31
+end
+arch chinese_dragon
 x 35
 y 31
 end
@@ -2559,6 +2603,10 @@ x 35
 y 34
 end
 arch slevel_3_4
+x 35
+y 34
+end
+arch chinese_dragon
 x 35
 y 34
 end
@@ -2746,6 +2794,15 @@ end
 arch snow5
 x 36
 y 36
+end
+arch chinese_dragon
+x 36
+y 36
+carrying 100
+arch key2
+name cellar key
+slaying castleb1keepkey1
+end
 end
 arch istone
 x 36
@@ -3615,61 +3672,4 @@ end
 arch fog
 x 55
 y 20
-end
-arch chinese_dragon
-x 27
-y 31
-end
-arch chinese_dragon
-x 27
-y 35
-end
-arch chinese_dragon
-x 28
-y 28
-end
-arch chinese_dragon
-x 29
-y 33
-end
-arch chinese_dragon
-x 31
-y 27
-end
-arch chinese_dragon
-x 31
-y 30
-end
-arch chinese_dragon
-x 32
-y 32
-end
-arch chinese_dragon
-x 32
-y 35
-end
-arch chinese_dragon
-x 33
-y 28
-end
-arch chinese_dragon
-x 35
-y 28
-end
-arch chinese_dragon
-x 35
-y 31
-end
-arch chinese_dragon
-x 35
-y 34
-end
-arch chinese_dragon
-x 36
-y 36
-carrying 100
-arch key2
-name cellar key
-slaying castleb1keepkey1
-end
 end

@@ -3501,6 +3501,10 @@ arch istone
 x 17
 y 50
 end
+arch chinese_dragon
+x 17
+y 50
+end
 arch istone
 x 17
 y 51
@@ -3626,6 +3630,10 @@ x 19
 y 47
 end
 arch istone
+x 19
+y 48
+end
+arch chinese_dragon
 x 19
 y 48
 end
@@ -3842,6 +3850,10 @@ x 22
 y 44
 end
 arch istone
+x 22
+y 45
+end
+arch chinese_dragon
 x 22
 y 45
 end
@@ -4057,6 +4069,10 @@ arch istone
 x 24
 y 43
 end
+arch chinese_dragon
+x 24
+y 43
+end
 arch istone
 x 24
 y 44
@@ -4445,6 +4461,10 @@ arch istone
 x 26
 y 40
 end
+arch chinese_dragon
+x 26
+y 40
+end
 arch istone
 x 26
 y 41
@@ -4525,6 +4545,10 @@ arch dungeon_floor
 x 27
 y 29
 end
+arch big_elec
+x 27
+y 29
+end
 arch dungeon_floor
 x 27
 y 30
@@ -4538,6 +4562,10 @@ x 27
 y 32
 end
 arch dungeon_floor
+x 27
+y 33
+end
+arch big_elec
 x 27
 y 33
 end
@@ -4930,6 +4958,10 @@ arch istone
 x 29
 y 40
 end
+arch chinese_dragon
+x 29
+y 40
+end
 arch istone
 x 29
 y 41
@@ -5163,6 +5195,10 @@ x 31
 y 29
 end
 arch shield
+x 31
+y 29
+end
+arch big_elec
 x 31
 y 29
 end
@@ -5856,6 +5892,10 @@ x 35
 y 27
 end
 arch dungeon_floor
+x 35
+y 28
+end
+arch big_elec
 x 35
 y 28
 end
@@ -6763,6 +6803,10 @@ arch istone
 x 48
 y 8
 end
+arch chinese_dragon
+x 48
+y 8
+end
 arch istone
 x 48
 y 9
@@ -7152,6 +7196,10 @@ x 50
 y 4
 end
 arch istone
+x 50
+y 5
+end
+arch chinese_dragon
 x 50
 y 5
 end
@@ -7514,6 +7562,10 @@ arch istone
 x 51
 y 53
 end
+arch chinese_dragon
+x 51
+y 53
+end
 arch istone
 x 51
 y 54
@@ -7902,6 +7954,10 @@ arch istone
 x 53
 y 8
 end
+arch chinese_dragon
+x 53
+y 8
+end
 arch istone
 x 53
 y 9
@@ -7982,11 +8038,19 @@ arch istone
 x 53
 y 48
 end
+arch chinese_dragon
+x 53
+y 48
+end
 arch istone
 x 53
 y 49
 end
 arch istone
+x 53
+y 50
+end
+arch chinese_dragon
 x 53
 y 50
 end
@@ -8089,6 +8153,10 @@ x 54
 y 2
 end
 arch istone
+x 54
+y 3
+end
+arch chinese_dragon
 x 54
 y 3
 end
@@ -8263,6 +8331,10 @@ arch istone
 x 54
 y 58
 end
+arch big_elec
+x 54
+y 58
+end
 arch istone
 x 54
 y 59
@@ -8420,6 +8492,10 @@ x 55
 y 48
 end
 arch istone
+x 55
+y 49
+end
+arch chinese_dragon
 x 55
 y 49
 end
@@ -8912,6 +8988,10 @@ x 57
 y 52
 end
 arch istone
+x 57
+y 53
+end
+arch chinese_dragon
 x 57
 y 53
 end
@@ -9322,6 +9402,10 @@ speed 0.500000
 connected 1000
 end
 arch istone
+x 59
+y 53
+end
+arch chinese_dragon
 x 59
 y 53
 end
@@ -9745,88 +9829,4 @@ end
 arch blocked
 x 62
 y 57
-end
-arch chinese_dragon
-x 17
-y 50
-end
-arch chinese_dragon
-x 19
-y 48
-end
-arch chinese_dragon
-x 22
-y 45
-end
-arch chinese_dragon
-x 24
-y 43
-end
-arch chinese_dragon
-x 26
-y 40
-end
-arch big_elec
-x 27
-y 29
-end
-arch big_elec
-x 27
-y 33
-end
-arch chinese_dragon
-x 29
-y 40
-end
-arch big_elec
-x 31
-y 29
-end
-arch big_elec
-x 35
-y 28
-end
-arch chinese_dragon
-x 48
-y 8
-end
-arch chinese_dragon
-x 50
-y 5
-end
-arch chinese_dragon
-x 51
-y 53
-end
-arch chinese_dragon
-x 53
-y 8
-end
-arch chinese_dragon
-x 53
-y 48
-end
-arch chinese_dragon
-x 53
-y 50
-end
-arch chinese_dragon
-x 54
-y 3
-end
-arch big_elec
-x 54
-y 58
-end
-arch chinese_dragon
-x 55
-y 49
-end
-arch chinese_dragon
-x 57
-y 53
-end
-arch chinese_dragon
-x 59
-y 53
 end

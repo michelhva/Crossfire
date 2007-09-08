@@ -398,8 +398,8 @@ ac 0
 x 3
 y 6
 type 0
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch shop_empty
@@ -1306,8 +1306,8 @@ hp 100
 x 12
 y 12
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 can_pass_thru 1
 end

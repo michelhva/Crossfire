@@ -1,12 +1,12 @@
 arch map
 name small_manor2
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Dec 29 15:20:06 1994
 endmsg
-width 20
-height 20
 end
 arch grass_only
 end
@@ -329,12 +329,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 3
+y 9
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 3
-y 9
 arch axe_4
 end
 arch shield
@@ -452,12 +452,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 4
+y 9
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 4
-y 9
 arch axe_4
 end
 arch shield
@@ -473,13 +473,13 @@ arch gnoll
 name The Commander
 hp 30
 exp 40
+x 4
+y 10
 level 5
 carrying 36700
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 4
-y 10
 arch key2
 slaying simple
 end
@@ -570,9 +570,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 5
 y 4
+carrying 29000
 arch leather_armour
 end
 arch axe
@@ -693,9 +693,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 6
 y 4
+carrying 29000
 arch leather_armour
 end
 arch axe
@@ -710,9 +710,9 @@ x 6
 y 6
 end
 arch door_look_1
-move_block 0
 x 6
 y 6
+move_block 0
 end
 arch woodfloor
 x 6
@@ -721,12 +721,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 6
+y 7
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 6
-y 7
 arch axe_4
 end
 arch shield
@@ -755,9 +755,9 @@ x 6
 y 10
 end
 arch door_look_2
-move_block 0
 x 6
 y 10
+move_block 0
 end
 arch flagstone
 x 6
@@ -873,12 +873,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 7
+y 9
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 7
-y 9
 arch axe_4
 end
 arch shield
@@ -893,12 +893,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 7
+y 10
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 7
-y 10
 arch axe_4
 end
 arch shield
@@ -976,12 +976,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 8
+y 4
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 8
-y 4
 arch axe_4
 end
 arch shield
@@ -998,9 +998,9 @@ x 8
 y 6
 end
 arch door_look_1
-move_block 0
 x 8
 y 6
+move_block 0
 end
 arch woodfloor
 x 8
@@ -1009,12 +1009,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 8
+y 7
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 8
-y 7
 arch axe_4
 end
 arch shield
@@ -1112,12 +1112,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 9
+y 3
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 9
-y 3
 arch axe_4
 end
 arch shield
@@ -1150,9 +1150,9 @@ x 9
 y 7
 end
 arch door_look_2
-move_block 0
 x 9
 y 7
+move_block 0
 end
 arch flagstone
 x 9
@@ -1284,12 +1284,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 10
+y 8
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 10
-y 8
 arch axe_4
 end
 arch shield
@@ -1433,12 +1433,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 11
+y 8
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 11
-y 8
 arch axe_4
 end
 arch shield
@@ -1453,12 +1453,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 11
+y 9
 carrying 30000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 11
-y 9
 arch axe_4
 end
 arch shield
@@ -1566,9 +1566,9 @@ x 12
 y 8
 end
 arch door_look_2
-move_block 0
 x 12
 y 8
+move_block 0
 end
 arch flagstone
 x 12
