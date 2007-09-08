@@ -835,6 +835,10 @@ arch marble
 x 3
 y 1
 end
+arch dread
+x 3
+y 1
+end
 arch marble
 x 3
 y 2
@@ -964,6 +968,10 @@ x 3
 y 21
 end
 arch marble
+x 3
+y 22
+end
+arch behemoth
 x 3
 y 22
 end
@@ -1486,6 +1494,10 @@ x 5
 y 20
 end
 arch marble
+x 5
+y 21
+end
+arch behemoth
 x 5
 y 21
 end
@@ -2677,6 +2689,10 @@ arch marble
 x 10
 y 1
 end
+arch troll
+x 10
+y 1
+end
 arch marble
 x 10
 y 2
@@ -3566,6 +3582,10 @@ arch marble
 x 13
 y 2
 end
+arch troll
+x 13
+y 2
+end
 arch marble
 x 13
 y 3
@@ -4072,6 +4092,10 @@ x 14
 y 26
 connected 12
 end
+arch cobra
+x 14
+y 26
+end
 arch marble
 x 14
 y 27
@@ -4143,6 +4167,10 @@ sp 15
 x 14
 y 31
 connected 12
+end
+arch cobra
+x 14
+y 31
 end
 arch marble
 x 14
@@ -4517,6 +4545,10 @@ arch dwall_2_1_2
 x 16
 end
 arch marble
+x 16
+y 1
+end
+arch troll
 x 16
 y 1
 end
@@ -5702,6 +5734,10 @@ x 19
 y 26
 connected 12
 end
+arch cobra
+x 19
+y 26
+end
 arch marble
 x 19
 y 27
@@ -5773,6 +5809,10 @@ sp 16
 x 19
 y 31
 connected 12
+end
+arch cobra
+x 19
+y 31
 end
 arch marble
 x 19
@@ -6147,6 +6187,10 @@ x 21
 y 26
 connected 13
 end
+arch giant
+x 21
+y 26
+end
 arch marble
 x 21
 y 27
@@ -6218,6 +6262,10 @@ sp 15
 x 21
 y 31
 connected 13
+end
+arch giant
+x 21
+y 31
 end
 arch marble
 x 21
@@ -6415,6 +6463,10 @@ x 22
 y 26
 connected 13
 end
+arch giant
+x 22
+y 26
+end
 arch marble
 x 22
 y 27
@@ -6486,6 +6538,10 @@ sp 15
 x 22
 y 31
 connected 13
+end
+arch giant
+x 22
+y 31
 end
 arch marble
 x 22
@@ -6691,6 +6747,10 @@ x 23
 y 26
 connected 13
 end
+arch giant
+x 23
+y 26
+end
 arch marble
 x 23
 y 27
@@ -7033,6 +7093,10 @@ x 24
 y 31
 connected 13
 end
+arch giant
+x 24
+y 31
+end
 arch marble
 x 24
 y 32
@@ -7233,6 +7297,10 @@ x 25
 y 26
 connected 13
 end
+arch giant
+x 25
+y 26
+end
 arch marble
 x 25
 y 27
@@ -7304,6 +7372,10 @@ sp 16
 x 25
 y 31
 connected 13
+end
+arch giant
+x 25
+y 31
 end
 arch marble
 x 25
@@ -7491,6 +7563,10 @@ x 26
 y 26
 connected 13
 end
+arch giant
+x 26
+y 26
+end
 arch marble
 x 26
 y 27
@@ -7562,6 +7638,10 @@ sp 16
 x 26
 y 31
 connected 13
+end
+arch giant
+x 26
+y 31
 end
 arch marble
 x 26
@@ -8895,84 +8975,4 @@ end
 arch blocked
 x 32
 y 32
-end
-arch dread
-x 3
-y 1
-end
-arch behemoth
-x 3
-y 22
-end
-arch behemoth
-x 5
-y 21
-end
-arch troll
-x 10
-y 1
-end
-arch troll
-x 13
-y 2
-end
-arch cobra
-x 14
-y 26
-end
-arch cobra
-x 14
-y 31
-end
-arch troll
-x 16
-y 1
-end
-arch cobra
-x 19
-y 26
-end
-arch cobra
-x 19
-y 31
-end
-arch giant
-x 21
-y 26
-end
-arch giant
-x 21
-y 31
-end
-arch giant
-x 22
-y 26
-end
-arch giant
-x 22
-y 31
-end
-arch giant
-x 23
-y 26
-end
-arch giant
-x 24
-y 31
-end
-arch giant
-x 25
-y 26
-end
-arch giant
-x 25
-y 31
-end
-arch giant
-x 26
-y 26
-end
-arch giant
-x 26
-y 31
 end

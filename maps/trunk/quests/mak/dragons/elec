@@ -792,6 +792,26 @@ arch pstone_1
 x 4
 y 12
 end
+arch big_elec
+name elderly electric dragon
+Con 15
+Wis 25
+Pow 40
+hp 5500
+maxhp 5500
+sp 130
+exp 100000
+dam 35
+wc -25
+ac -16
+x 4
+y 12
+level 22
+carrying 100
+arch key2
+slaying elecdkey
+end
+end
 arch pstone_1
 x 4
 y 13
@@ -1143,6 +1163,10 @@ x 6
 y 16
 end
 arch pstone_1
+x 6
+y 17
+end
+arch big_elec
 x 6
 y 17
 end
@@ -1540,6 +1564,10 @@ arch pstone_1
 x 9
 y 8
 end
+arch big_elec
+x 9
+y 8
+end
 arch pstone_1
 x 9
 y 9
@@ -1557,6 +1585,10 @@ x 9
 y 12
 end
 arch pstone_1
+x 9
+y 13
+end
+arch big_elec
 x 9
 y 13
 end
@@ -1581,6 +1613,10 @@ x 9
 y 18
 end
 arch pstone_1
+x 9
+y 19
+end
+arch big_elec
 x 9
 y 19
 end
@@ -3640,6 +3676,10 @@ arch pstone_1
 x 20
 y 7
 end
+arch big_elec
+x 20
+y 7
+end
 arch pstone_1
 x 20
 y 8
@@ -3661,6 +3701,10 @@ x 20
 y 12
 end
 arch pstone_1
+x 20
+y 13
+end
+arch big_elec
 x 20
 y 13
 end
@@ -4240,6 +4284,10 @@ arch pstone_1
 x 24
 y 9
 end
+arch big_elec
+x 24
+y 9
+end
 arch pstone_1
 x 24
 y 10
@@ -4261,6 +4309,10 @@ x 24
 y 14
 end
 arch pstone_1
+x 24
+y 15
+end
+arch big_elec
 x 24
 y 15
 end
@@ -4889,56 +4941,4 @@ end
 arch blocked
 x 27
 y 26
-end
-arch big_elec
-name elderly electric dragon
-Con 15
-Wis 25
-Pow 40
-hp 5500
-maxhp 5500
-sp 130
-exp 100000
-dam 35
-wc -25
-ac -16
-x 4
-y 12
-level 22
-carrying 100
-arch key2
-slaying elecdkey
-end
-end
-arch big_elec
-x 6
-y 17
-end
-arch big_elec
-x 9
-y 8
-end
-arch big_elec
-x 9
-y 13
-end
-arch big_elec
-x 9
-y 19
-end
-arch big_elec
-x 20
-y 7
-end
-arch big_elec
-x 20
-y 13
-end
-arch big_elec
-x 24
-y 9
-end
-arch big_elec
-x 24
-y 15
 end

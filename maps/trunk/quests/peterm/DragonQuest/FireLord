@@ -595,6 +595,10 @@ arch pstone_2
 x 3
 y 13
 end
+arch big_dragon_ancient
+x 3
+y 13
+end
 arch pstone_2
 x 3
 y 14
@@ -967,6 +971,39 @@ arch random_talisman
 x 5
 y 8
 end
+arch dragonman
+name High Dragon Lord
+Int 6
+hp 6000
+maxhp 6000
+maxsp 100
+exp 300000
+dam 50
+wc -30
+ac -17
+x 5
+y 8
+speed -0.600000
+level 30
+carrying 17100
+arch key2
+slaying FireLordKey
+end
+arch firebrand
+name Flametongue
+Con 1
+Pow 1
+dam 23
+attacktype 260
+resist_magic -20
+resist_fire 45
+path_attuned 2
+material 0
+value 260000
+weight 17000
+magic 7
+end
+end
 arch pstone_2
 x 5
 y 9
@@ -1020,6 +1057,10 @@ x 5
 y 18
 end
 arch pstone_2
+x 5
+y 19
+end
+arch big_dragon_ancient
 x 5
 y 19
 end
@@ -1818,6 +1859,10 @@ arch pstone_2
 x 10
 y 16
 end
+arch big_dragon_ancient
+x 10
+y 16
+end
 arch pstone_2
 x 10
 y 17
@@ -2433,49 +2478,4 @@ end
 arch blocked
 x 15
 y 30
-end
-arch big_dragon_ancient
-x 3
-y 13
-end
-arch dragonman
-name High Dragon Lord
-Int 6
-hp 6000
-maxhp 6000
-maxsp 100
-exp 300000
-dam 50
-wc -30
-ac -17
-x 5
-y 8
-speed -0.600000
-level 30
-carrying 17100
-arch key2
-slaying FireLordKey
-end
-arch firebrand
-name Flametongue
-Con 1
-Pow 1
-dam 23
-attacktype 260
-resist_magic -20
-resist_fire 45
-path_attuned 2
-material 0
-value 260000
-weight 17000
-magic 7
-end
-end
-arch big_dragon_ancient
-x 5
-y 19
-end
-arch big_dragon_ancient
-x 10
-y 16
 end

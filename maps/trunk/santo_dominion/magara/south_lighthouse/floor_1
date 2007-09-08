@@ -7392,6 +7392,10 @@ name floor
 x 26
 y 37
 end
+arch dread
+x 26
+y 37
+end
 arch afloor_left
 name floor
 x 26
@@ -9155,8 +9159,4 @@ end
 arch bwall_2_2_4
 x 32
 y 39
-end
-arch dread
-x 26
-y 37
 end

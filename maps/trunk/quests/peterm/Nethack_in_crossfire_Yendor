@@ -4599,6 +4599,16 @@ arch pstone_4
 x 14
 y 9
 end
+arch g_worm
+name Purple Worm
+x 14
+y 9
+carrying 100
+arch key2
+name Acid Key
+slaying Acid_Key
+end
+end
 arch pstone_4
 x 14
 y 10
@@ -8776,6 +8786,19 @@ end
 arch pstone_4
 x 27
 y 14
+end
+arch golem_necro
+name Steel Golem
+hp 30000
+exp 200000
+x 27
+y 14
+carrying 100
+randomitems none
+arch key2
+name Steel Key
+slaying Steel_Key
+end
 end
 arch pstone_4
 x 27
@@ -10869,6 +10892,21 @@ end
 arch pstone_4
 x 33
 y 30
+end
+arch big_wiz
+name wizard of Yendor
+hp 7500
+exp 300000
+x 33
+y 30
+level 30
+carrying 600
+arch amulet_lifesave
+name Amulet of Yendor
+slaying Amulet of Yendor
+material 0
+lifesave 0
+end
 end
 arch pstone_4
 x 33
@@ -14423,6 +14461,15 @@ end
 arch pstone_4
 x 44
 y 35
+end
+arch demon_lord
+x 44
+y 35
+carrying 100
+arch key2
+name Wizard Key
+slaying The_Wiz
+end
 end
 arch pstone_4
 x 44
@@ -22585,51 +22632,4 @@ end
 arch dun_2_2_4
 x 68
 y 68
-end
-arch g_worm
-name Purple Worm
-x 14
-y 9
-carrying 100
-arch key2
-name Acid Key
-slaying Acid_Key
-end
-end
-arch golem_necro
-name Steel Golem
-hp 30000
-exp 200000
-x 27
-y 14
-carrying 100
-randomitems none
-arch key2
-name Steel Key
-slaying Steel_Key
-end
-end
-arch big_wiz
-name wizard of Yendor
-hp 7500
-exp 300000
-x 33
-y 30
-level 30
-carrying 600
-arch amulet_lifesave
-name Amulet of Yendor
-slaying Amulet of Yendor
-material 0
-lifesave 0
-end
-end
-arch demon_lord
-x 44
-y 35
-carrying 100
-arch key2
-name Wizard Key
-slaying The_Wiz
-end
 end

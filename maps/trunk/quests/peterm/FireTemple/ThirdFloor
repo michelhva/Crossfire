@@ -2118,6 +2118,17 @@ arch cobblestones
 x 10
 y 1
 end
+arch gaelotroll
+name DemonProf
+race demon
+exp 30000
+x 10
+y 1
+resist_magic 30
+resist_fire 100
+resist_electricity 30
+randomitems Balrog
+end
 arch cobblestones
 x 10
 y 2
@@ -2455,6 +2466,20 @@ arch cobblestones
 x 12
 y 8
 end
+arch shadowtiger
+name Demon Tiger
+race demon
+exp 20000
+x 12
+y 8
+speed 0.200000
+resist_fire 100
+carrying 100
+randomitems rich_old
+arch key2
+slaying door34
+end
+end
 arch cobblestones
 x 12
 y 9
@@ -2478,6 +2503,22 @@ end
 arch cobblestones
 x 12
 y 22
+end
+arch dragonman
+name Deformed demon
+race demon
+Con 5
+hp 1000
+maxhp 1000
+exp 10000
+x 12
+y 22
+speed 0.100000
+speed_left -2.070000
+carrying 100
+arch key2
+slaying door31
+end
 end
 arch cobblestones
 x 12
@@ -3228,6 +3269,29 @@ end
 arch cobblestones
 x 17
 y 28
+end
+arch troll
+name demon troll
+race demon
+x 17
+y 28
+resist_fire 100
+carrying 175
+arch key2
+slaying door32
+end
+arch note
+msg
+This note is pretty damaged.  You
+read it, but you can only understand
+little bits and pieces.  But you can
+make out enough to figure out that
+research on an alchemical procedure
+for summoning fire elementals is on
+this floor
+endmsg
+material 256
+end
 end
 arch cobblestones
 x 17
@@ -5835,68 +5899,4 @@ end
 arch mine12
 x 29
 y 30
-end
-arch gaelotroll
-name DemonProf
-race demon
-exp 30000
-x 10
-y 1
-resist_magic 30
-resist_fire 100
-resist_electricity 30
-randomitems Balrog
-end
-arch shadowtiger
-name Demon Tiger
-race demon
-exp 20000
-x 12
-y 8
-speed 0.200000
-resist_fire 100
-carrying 100
-randomitems rich_old
-arch key2
-slaying door34
-end
-end
-arch dragonman
-name Deformed demon
-race demon
-Con 5
-hp 1000
-maxhp 1000
-exp 10000
-x 12
-y 22
-speed 0.100000
-speed_left -2.070000
-carrying 100
-arch key2
-slaying door31
-end
-end
-arch troll
-name demon troll
-race demon
-x 17
-y 28
-resist_fire 100
-carrying 175
-arch key2
-slaying door32
-end
-arch note
-msg
-This note is pretty damaged.  You
-read it, but you can only understand
-little bits and pieces.  But you can
-make out enough to figure out that
-research on an alchemical procedure
-for summoning fire elementals is on
-this floor
-endmsg
-material 256
-end
 end

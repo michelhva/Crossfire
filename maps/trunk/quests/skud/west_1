@@ -4298,6 +4298,12 @@ arch marble
 x 18
 y 9
 end
+arch unicorn
+hp 2
+maxhp 2
+x 18
+y 9
+end
 arch marble
 x 18
 y 10
@@ -4755,6 +4761,10 @@ x 20
 y 16
 end
 arch marble
+x 20
+y 17
+end
+arch dread
 x 20
 y 17
 end
@@ -6853,14 +6863,4 @@ end
 arch cwall_2_2_4
 x 29
 y 39
-end
-arch unicorn
-hp 2
-maxhp 2
-x 18
-y 9
-end
-arch dread
-x 20
-y 17
 end

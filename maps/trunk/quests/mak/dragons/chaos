@@ -1033,6 +1033,10 @@ arch dungeon_floor
 x 5
 y 5
 end
+arch Cwyvern
+x 5
+y 5
+end
 arch dungeon_floor
 x 5
 y 6
@@ -1062,6 +1066,10 @@ x 5
 y 12
 end
 arch dungeon_floor
+x 5
+y 13
+end
+arch Cwyvern
 x 5
 y 13
 end
@@ -1256,6 +1264,10 @@ x 6
 y 19
 end
 arch dungeon_floor
+x 6
+y 20
+end
+arch Cwyvern
 x 6
 y 20
 end
@@ -2660,6 +2672,36 @@ arch dungeon_floor
 x 14
 y 12
 end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+maxhp 6500
+sp 100
+maxsp 300
+exp 300000
+x 14
+y 12
+speed 0.400000
+speed_left -1.310000
+level 30
+resist_physical 100
+resist_magic 80
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 30000
+arch gem
+nrof 600
+end
+arch abil_icestorm
+end
+arch spell_sm_lightning
+end
+arch spell_mass_confusion
+end
+end
 arch dungeon_floor
 x 14
 y 13
@@ -2803,6 +2845,10 @@ x 15
 y 3
 end
 arch dungeon_floor
+x 15
+y 4
+end
+arch Cwyvern
 x 15
 y 4
 end
@@ -3052,6 +3098,10 @@ x 16
 y 21
 end
 arch dungeon_floor
+x 16
+y 22
+end
+arch Cwyvern
 x 16
 y 22
 end
@@ -4557,6 +4607,10 @@ arch dungeon_floor
 x 24
 y 21
 end
+arch Cwyvern
+x 24
+y 21
+end
 arch dungeon_floor
 x 24
 y 22
@@ -4647,6 +4701,10 @@ arch dungeon_floor
 x 25
 y 4
 end
+arch Cwyvern
+x 25
+y 4
+end
 arch dungeon_floor
 x 25
 y 5
@@ -4676,6 +4734,10 @@ x 25
 y 11
 end
 arch dungeon_floor
+x 25
+y 12
+end
+arch Cwyvern
 x 25
 y 12
 end
@@ -5805,66 +5867,4 @@ end
 arch blocked
 x 30
 y 34
-end
-arch Cwyvern
-x 5
-y 5
-end
-arch Cwyvern
-x 5
-y 13
-end
-arch Cwyvern
-x 6
-y 20
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-maxhp 6500
-sp 100
-maxsp 300
-exp 300000
-x 14
-y 12
-speed 0.400000
-speed_left -1.310000
-level 30
-resist_physical 100
-resist_magic 80
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 30000
-arch gem
-nrof 600
-end
-arch abil_icestorm
-end
-arch spell_sm_lightning
-end
-arch spell_mass_confusion
-end
-end
-arch Cwyvern
-x 15
-y 4
-end
-arch Cwyvern
-x 16
-y 22
-end
-arch Cwyvern
-x 24
-y 21
-end
-arch Cwyvern
-x 25
-y 4
-end
-arch Cwyvern
-x 25
-y 12
 end

@@ -4168,6 +4168,10 @@ arch stonefloor2
 x 21
 y 1
 end
+arch cobra
+x 21
+y 1
+end
 arch stonefloor2
 x 21
 y 2
@@ -4339,6 +4343,10 @@ arch stonefloor2
 x 22
 y 1
 end
+arch cobra
+x 22
+y 1
+end
 arch stonefloor2
 x 22
 y 2
@@ -4495,6 +4503,10 @@ arch dun_2_1_2
 x 23
 end
 arch stonefloor2
+x 23
+y 1
+end
+arch cobra
 x 23
 y 1
 end
@@ -4676,6 +4688,10 @@ x 24
 y 1
 end
 arch stonefloor2
+x 24
+y 2
+end
+arch cobra
 x 24
 y 2
 end
@@ -5815,20 +5831,4 @@ end
 arch dun_2_2_4
 x 29
 y 29
-end
-arch cobra
-x 21
-y 1
-end
-arch cobra
-x 22
-y 1
-end
-arch cobra
-x 23
-y 1
-end
-arch cobra
-x 24
-y 2
 end

@@ -3008,6 +3008,41 @@ arch medium_stones
 x 15
 y 2
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 15
+y 2
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 15
 y 3
@@ -3263,6 +3298,10 @@ arch medium_stones
 x 16
 y 20
 end
+arch g_worm
+x 16
+y 20
+end
 arch medium_stones
 x 16
 y 21
@@ -3312,6 +3351,41 @@ end
 arch medium_stones
 x 17
 y 2
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 17
+y 2
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 17
@@ -3776,6 +3850,10 @@ arch medium_stones
 x 19
 y 24
 end
+arch g_worm
+x 19
+y 24
+end
 arch medium_stones
 x 19
 y 25
@@ -3853,6 +3931,41 @@ end
 arch medium_stones
 x 20
 y 4
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 20
+y 4
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 20
@@ -4438,6 +4551,41 @@ arch medium_stones
 x 23
 y 11
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 23
+y 11
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 23
 y 12
@@ -4449,6 +4597,41 @@ end
 arch medium_stones
 x 23
 y 14
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 23
+y 14
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 23
@@ -4789,6 +4972,41 @@ arch medium_stones
 x 25
 y 16
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 25
+y 16
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 25
 y 17
@@ -4990,6 +5208,41 @@ arch medium_stones
 x 26
 y 23
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 26
+y 23
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 26
 y 24
@@ -5062,6 +5315,41 @@ end
 arch medium_stones
 x 27
 y 7
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 27
+y 7
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 27
@@ -5224,6 +5512,41 @@ arch medium_stones
 x 28
 y 4
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 28
+y 4
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 28
 y 5
@@ -5291,6 +5614,41 @@ end
 arch medium_stones
 x 28
 y 21
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 28
+y 21
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 28
@@ -5407,6 +5765,41 @@ arch medium_stones
 x 29
 y 12
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 29
+y 12
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
+end
 arch medium_stones
 x 29
 y 13
@@ -5426,6 +5819,41 @@ end
 arch medium_stones
 x 29
 y 17
+end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 500000
+dam 60
+wc -50
+ac -40
+x 29
+y 17
+speed -0.700000
+level 50
+resist_confusion 100
+resist_paralyze 100
+carrying 25000
+arch spell_magic_missile
+end
+arch abil_slow
+end
+arch spell_dragonbreath
+end
+arch abil_icestorm
+end
+arch gem
+nrof 500
+end
 end
 arch medium_stones
 x 29
@@ -5898,432 +6326,4 @@ end
 arch rough_wall_2_2_4
 x 31
 y 28
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 15
-y 2
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch g_worm
-x 16
-y 20
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 17
-y 2
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch g_worm
-x 19
-y 24
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 20
-y 4
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 23
-y 11
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 23
-y 14
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 25
-y 16
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 26
-y 23
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 27
-y 7
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 28
-y 4
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 28
-y 21
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 29
-y 12
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 500000
-dam 60
-wc -50
-ac -40
-x 29
-y 17
-speed -0.700000
-level 50
-resist_confusion 100
-resist_paralyze 100
-carrying 25000
-arch spell_magic_missile
-end
-arch abil_slow
-end
-arch spell_dragonbreath
-end
-arch abil_icestorm
-end
-arch gem
-nrof 500
-end
 end

@@ -1170,6 +1170,10 @@ arch woodfloor2
 x 5
 y 15
 end
+arch titan
+x 5
+y 15
+end
 arch woodfloor2
 x 5
 y 16
@@ -1181,6 +1185,14 @@ end
 arch woodfloor2
 x 5
 y 18
+end
+arch cyclops
+x 5
+y 18
+carrying 100
+arch key2
+slaying tdoor1
+end
 end
 arch woodfloor2
 x 5
@@ -1837,6 +1849,14 @@ arch woodfloor2
 x 8
 y 14
 end
+arch titan
+x 8
+y 14
+carrying 100
+arch key2
+slaying tdoor2
+end
+end
 arch woodfloor2
 x 8
 y 15
@@ -1846,6 +1866,10 @@ x 8
 y 16
 end
 arch woodfloor2
+x 8
+y 17
+end
+arch titan
 x 8
 y 17
 end
@@ -3465,6 +3489,10 @@ arch woodfloor2
 x 15
 y 5
 end
+arch cyclops
+x 15
+y 5
+end
 arch woodfloor2
 x 15
 y 6
@@ -3474,6 +3502,10 @@ x 15
 y 7
 end
 arch woodfloor2
+x 15
+y 8
+end
+arch cyclops
 x 15
 y 8
 end
@@ -3498,6 +3530,10 @@ x 15
 y 13
 end
 arch woodfloor2
+x 15
+y 14
+end
+arch cyclops
 x 15
 y 14
 end
@@ -3679,6 +3715,10 @@ arch woodfloor2
 x 16
 y 18
 end
+arch titan
+x 16
+y 18
+end
 arch woodfloor2
 x 16
 y 19
@@ -3692,6 +3732,10 @@ x 16
 y 21
 end
 arch woodfloor2
+x 16
+y 22
+end
+arch titan
 x 16
 y 22
 end
@@ -3718,6 +3762,19 @@ end
 arch woodfloor2
 x 16
 y 28
+end
+arch titan
+name Meganthropopulos
+hp 10000
+maxhp 10000
+exp 300000
+x 16
+y 28
+carrying 12300
+arch crown
+name Meganthropopulos' Crown
+material 0
+end
 end
 arch woodfloor2
 x 16
@@ -3985,6 +4042,10 @@ arch woodfloor2
 x 18
 y 8
 end
+arch titan
+x 18
+y 8
+end
 arch woodfloor2
 x 18
 y 9
@@ -4009,6 +4070,10 @@ arch woodfloor2
 x 18
 y 14
 end
+arch cyclops
+x 18
+y 14
+end
 arch woodfloor2
 x 18
 y 15
@@ -4025,6 +4090,10 @@ arch woodfloor2
 x 18
 y 18
 end
+arch cyclops
+x 18
+y 18
+end
 arch woodfloor2
 x 18
 y 19
@@ -4038,6 +4107,10 @@ x 18
 y 21
 end
 arch woodfloor2
+x 18
+y 22
+end
+arch cyclops
 x 18
 y 22
 end
@@ -4302,6 +4375,10 @@ arch woodfloor2
 x 20
 y 5
 end
+arch titan
+x 20
+y 5
+end
 arch woodfloor2
 x 20
 y 6
@@ -4311,6 +4388,10 @@ x 20
 y 7
 end
 arch woodfloor2
+x 20
+y 8
+end
+arch cyclops
 x 20
 y 8
 end
@@ -4342,6 +4423,10 @@ arch woodfloor2
 x 20
 y 15
 end
+arch cyclops
+x 20
+y 15
+end
 arch woodfloor2
 x 20
 y 16
@@ -4359,6 +4444,10 @@ x 20
 y 19
 end
 arch woodfloor2
+x 20
+y 20
+end
+arch cyclops
 x 20
 y 20
 end
@@ -4383,6 +4472,10 @@ x 20
 y 25
 end
 arch woodfloor2
+x 20
+y 26
+end
+arch cyclops
 x 20
 y 26
 end
@@ -6200,6 +6293,10 @@ arch woodfloor2
 x 28
 y 19
 end
+arch titan
+x 28
+y 19
+end
 arch woodfloor2
 x 28
 y 20
@@ -6400,6 +6497,10 @@ x 29
 y 13
 end
 arch woodfloor2
+x 29
+y 14
+end
+arch titan
 x 29
 y 14
 end
@@ -6634,6 +6735,14 @@ end
 arch woodfloor2
 x 30
 y 16
+end
+arch cyclops
+x 30
+y 16
+carrying 100
+arch key2
+slaying tdoor3
+end
 end
 arch woodfloor2
 x 30
@@ -7072,6 +7181,10 @@ arch woodfloor2
 x 32
 y 14
 end
+arch titan
+x 32
+y 14
+end
 arch woodfloor2
 x 32
 y 15
@@ -7091,6 +7204,14 @@ end
 arch woodfloor2
 x 32
 y 19
+end
+arch cyclops
+x 32
+y 19
+carrying 100
+arch key2
+slaying tdoor4
+end
 end
 arch woodfloor2
 x 32
@@ -8101,125 +8222,4 @@ end
 arch flagstone_2_2_4
 x 36
 y 34
-end
-arch titan
-x 5
-y 15
-end
-arch cyclops
-x 5
-y 18
-carrying 100
-arch key2
-slaying tdoor1
-end
-end
-arch titan
-x 8
-y 14
-carrying 100
-arch key2
-slaying tdoor2
-end
-end
-arch titan
-x 8
-y 17
-end
-arch cyclops
-x 15
-y 5
-end
-arch cyclops
-x 15
-y 8
-end
-arch cyclops
-x 15
-y 14
-end
-arch titan
-x 16
-y 18
-end
-arch titan
-x 16
-y 22
-end
-arch titan
-name Meganthropopulos
-hp 10000
-maxhp 10000
-exp 300000
-x 16
-y 28
-carrying 12300
-arch crown
-name Meganthropopulos' Crown
-material 0
-end
-end
-arch titan
-x 18
-y 8
-end
-arch cyclops
-x 18
-y 14
-end
-arch cyclops
-x 18
-y 18
-end
-arch cyclops
-x 18
-y 22
-end
-arch titan
-x 20
-y 5
-end
-arch cyclops
-x 20
-y 8
-end
-arch cyclops
-x 20
-y 15
-end
-arch cyclops
-x 20
-y 20
-end
-arch cyclops
-x 20
-y 26
-end
-arch titan
-x 28
-y 19
-end
-arch titan
-x 29
-y 14
-end
-arch cyclops
-x 30
-y 16
-carrying 100
-arch key2
-slaying tdoor3
-end
-end
-arch titan
-x 32
-y 14
-end
-arch cyclops
-x 32
-y 19
-carrying 100
-arch key2
-slaying tdoor4
-end
 end

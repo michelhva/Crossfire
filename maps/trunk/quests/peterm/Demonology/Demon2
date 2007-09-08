@@ -353,6 +353,10 @@ arch woodfloor
 x 3
 y 8
 end
+arch big_demon
+x 3
+y 8
+end
 arch woodfloor
 x 3
 y 9
@@ -648,6 +652,10 @@ x 6
 y 7
 end
 arch woodfloor
+x 6
+y 8
+end
+arch big_demon
 x 6
 y 8
 end
@@ -966,6 +974,10 @@ x 9
 y 7
 end
 arch woodfloor
+x 9
+y 8
+end
+arch big_demon
 x 9
 y 8
 end
@@ -1504,16 +1516,4 @@ end
 arch dwall_2_2_4
 x 14
 y 14
-end
-arch big_demon
-x 3
-y 8
-end
-arch big_demon
-x 6
-y 8
-end
-arch big_demon
-x 9
-y 8
 end
