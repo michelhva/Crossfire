@@ -26843,6 +26843,10 @@ arch woodfloor
 x 32
 y 68
 end
+arch Cwyvern
+x 32
+y 68
+end
 arch light4
 x 32
 y 69
@@ -27769,6 +27773,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 33
+y 63
+end
+arch Cwyvern
 x 33
 y 63
 end
@@ -30868,6 +30876,10 @@ name_pl woodfloor
 x 36
 y 50
 end
+arch Cwyvern
+x 36
+y 50
+end
 arch light4
 x 36
 y 51
@@ -31831,6 +31843,10 @@ name_pl woodfloor
 x 37
 y 44
 end
+arch Cwyvern
+x 37
+y 44
+end
 arch light4
 x 37
 y 45
@@ -32106,6 +32122,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 37
+y 66
+end
+arch Cwyvern
 x 37
 y 66
 end
@@ -34179,6 +34199,10 @@ name_pl woodfloor
 x 39
 y 56
 end
+arch Cwyvern
+x 39
+y 56
+end
 arch light4
 x 39
 y 57
@@ -34217,6 +34241,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 39
+y 59
+end
+arch Cwyvern
 x 39
 y 59
 end
@@ -34971,6 +34999,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 40
+y 40
+end
+arch Cwyvern
 x 40
 y 40
 end
@@ -37992,6 +38024,10 @@ name_pl woodfloor
 x 43
 y 35
 end
+arch Cwyvern
+x 43
+y 35
+end
 arch light4
 x 43
 y 36
@@ -40464,6 +40500,10 @@ name_pl woodfloor
 x 45
 y 63
 end
+arch Cwyvern
+x 45
+y 63
+end
 arch light4
 x 45
 y 64
@@ -42081,6 +42121,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 47
+y 37
+end
+arch Cwyvern
 x 47
 y 37
 end
@@ -44425,6 +44469,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 49
+y 60
+end
+arch Cwyvern
 x 49
 y 60
 end
@@ -47068,6 +47116,10 @@ name_pl woodfloor
 x 52
 y 35
 end
+arch Cwyvern
+x 52
+y 35
+end
 arch light4
 x 52
 y 36
@@ -49387,6 +49439,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 54
+y 63
+end
+arch Cwyvern
 x 54
 y 63
 end
@@ -52039,6 +52095,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 57
+y 37
+end
+arch Cwyvern
 x 57
 y 37
 end
@@ -55277,6 +55337,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 60
+y 56
+end
+arch Cwyvern
 x 60
 y 56
 end
@@ -58225,6 +58289,10 @@ name_pl woodfloor
 x 63
 y 43
 end
+arch Cwyvern
+x 63
+y 43
+end
 arch light4
 x 63
 y 44
@@ -58272,6 +58340,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 63
+y 46
+end
+arch Cwyvern
 x 63
 y 46
 end
@@ -58322,6 +58394,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 63
+y 49
+end
+arch Cwyvern
 x 63
 y 49
 end
@@ -88530,80 +88606,4 @@ x 98
 y 98
 move_block 0
 blocksview 0
-end
-arch Cwyvern
-x 32
-y 68
-end
-arch Cwyvern
-x 33
-y 63
-end
-arch Cwyvern
-x 36
-y 50
-end
-arch Cwyvern
-x 37
-y 44
-end
-arch Cwyvern
-x 37
-y 66
-end
-arch Cwyvern
-x 39
-y 56
-end
-arch Cwyvern
-x 39
-y 59
-end
-arch Cwyvern
-x 40
-y 40
-end
-arch Cwyvern
-x 43
-y 35
-end
-arch Cwyvern
-x 45
-y 63
-end
-arch Cwyvern
-x 47
-y 37
-end
-arch Cwyvern
-x 49
-y 60
-end
-arch Cwyvern
-x 52
-y 35
-end
-arch Cwyvern
-x 54
-y 63
-end
-arch Cwyvern
-x 57
-y 37
-end
-arch Cwyvern
-x 60
-y 56
-end
-arch Cwyvern
-x 63
-y 43
-end
-arch Cwyvern
-x 63
-y 46
-end
-arch Cwyvern
-x 63
-y 49
 end

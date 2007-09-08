@@ -2292,6 +2292,10 @@ arch chair_1.4
 x 7
 y 9
 end
+arch dread
+x 7
+y 9
+end
 arch marble
 x 7
 y 10
@@ -2321,6 +2325,10 @@ x 7
 y 13
 end
 arch chair_1.4
+x 7
+y 13
+end
+arch dread
 x 7
 y 13
 end
@@ -2361,6 +2369,10 @@ x 7
 y 18
 end
 arch chair_1.4
+x 7
+y 18
+end
+arch dread
 x 7
 y 18
 end
@@ -2377,6 +2389,10 @@ x 7
 y 20
 end
 arch chair_1.4
+x 7
+y 20
+end
+arch dread
 x 7
 y 20
 end
@@ -2888,6 +2904,10 @@ arch slevel_3_4
 x 8
 y 7
 end
+arch dread
+x 8
+y 7
+end
 arch marble
 x 8
 y 8
@@ -2908,6 +2928,10 @@ arch marble
 x 8
 y 11
 end
+arch dread
+x 8
+y 11
+end
 arch marble
 x 8
 y 12
@@ -2925,6 +2949,10 @@ x 8
 y 15
 end
 arch marble
+x 8
+y 16
+end
+arch dread
 x 8
 y 16
 end
@@ -3876,11 +3904,19 @@ arch chair_2.1
 x 10
 y 7
 end
+arch dread
+x 10
+y 7
+end
 arch marble
 x 10
 y 8
 end
 arch marble
+x 10
+y 9
+end
+arch dread
 x 10
 y 9
 end
@@ -3896,11 +3932,19 @@ arch marble
 x 10
 y 12
 end
+arch dread
+x 10
+y 12
+end
 arch marble
 x 10
 y 13
 end
 arch marble
+x 10
+y 14
+end
+arch dread
 x 10
 y 14
 end
@@ -3920,11 +3964,19 @@ arch marble
 x 10
 y 18
 end
+arch dread
+x 10
+y 18
+end
 arch marble
 x 10
 y 19
 end
 arch marble
+x 10
+y 20
+end
+arch dread
 x 10
 y 20
 end
@@ -4373,6 +4425,10 @@ arch marble
 x 11
 y 16
 end
+arch dread
+x 11
+y 16
+end
 arch marble
 x 11
 y 17
@@ -4811,6 +4867,10 @@ arch marble
 x 12
 y 12
 end
+arch dread
+x 12
+y 12
+end
 arch marble
 x 12
 y 13
@@ -4836,6 +4896,10 @@ x 12
 y 18
 end
 arch marble
+x 12
+y 19
+end
+arch dread
 x 12
 y 19
 end
@@ -5216,11 +5280,19 @@ arch chair_2.1
 x 13
 y 7
 end
+arch dread
+x 13
+y 7
+end
 arch marble
 x 13
 y 8
 end
 arch marble
+x 13
+y 9
+end
+arch dread
 x 13
 y 9
 end
@@ -5245,6 +5317,10 @@ x 13
 y 14
 end
 arch marble
+x 13
+y 15
+end
+arch dread
 x 13
 y 15
 end
@@ -5618,6 +5694,17 @@ end
 arch blocked
 x 13
 y 61
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 13
+y 62
+speed -0.800000
+level 70
 end
 arch blocked
 x 14
@@ -6113,6 +6200,10 @@ arch chair_2.1
 x 15
 y 7
 end
+arch dread
+x 15
+y 7
+end
 arch marble
 x 15
 y 8
@@ -6129,6 +6220,10 @@ arch marble
 x 15
 y 10
 end
+arch dread
+x 15
+y 10
+end
 arch marble
 x 15
 y 11
@@ -6138,6 +6233,10 @@ x 15
 y 12
 end
 arch marble
+x 15
+y 13
+end
+arch dread
 x 15
 y 13
 end
@@ -6153,11 +6252,19 @@ arch brazier
 x 15
 y 15
 end
+arch dread
+x 15
+y 15
+end
 arch marble
 x 15
 y 16
 end
 arch marble
+x 15
+y 17
+end
+arch dread
 x 15
 y 17
 end
@@ -6174,6 +6281,10 @@ x 15
 y 20
 end
 arch brazier
+x 15
+y 20
+end
+arch dread
 x 15
 y 20
 end
@@ -11728,6 +11839,17 @@ arch woodfloor
 x 25
 y 30
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 25
+y 30
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 25
 y 31
@@ -11736,6 +11858,17 @@ arch woodfloor
 x 25
 y 32
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 25
+y 32
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 25
 y 33
@@ -11743,6 +11876,17 @@ end
 arch woodfloor
 x 25
 y 34
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 25
+y 34
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 25
@@ -11755,6 +11899,17 @@ end
 arch woodfloor
 x 25
 y 37
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 25
+y 37
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 25
@@ -12940,6 +13095,10 @@ arch woodfloor
 x 27
 y 36
 end
+arch dread
+x 27
+y 36
+end
 arch woodfloor
 x 27
 y 37
@@ -14097,6 +14256,17 @@ arch woodfloor
 x 29
 y 30
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 29
+y 30
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 29
 y 31
@@ -14117,6 +14287,17 @@ arch woodfloor
 x 29
 y 35
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 29
+y 35
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 29
 y 36
@@ -14128,6 +14309,17 @@ end
 arch woodfloor
 x 29
 y 38
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 29
+y 38
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 29
@@ -14630,6 +14822,10 @@ arch woodfloor
 x 30
 y 24
 end
+arch dread
+x 30
+y 24
+end
 arch woodfloor
 x 30
 y 25
@@ -14679,6 +14875,17 @@ end
 arch woodfloor
 x 30
 y 33
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 30
+y 33
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 30
@@ -15237,6 +15444,10 @@ arch woodfloor
 x 31
 y 37
 end
+arch dread
+x 31
+y 37
+end
 arch woodfloor
 x 31
 y 38
@@ -15312,6 +15523,17 @@ name_pl woodfloor
 x 31
 y 45
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 31
+y 45
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -15344,6 +15566,17 @@ name_pl woodfloor
 x 31
 y 49
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 31
+y 49
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -15353,6 +15586,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 31
+y 51
+end
+arch dread
 x 31
 y 51
 end
@@ -15367,6 +15604,17 @@ name woodfloor
 name_pl woodfloor
 x 31
 y 53
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 31
+y 53
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -15714,6 +15962,10 @@ arch woodfloor
 x 32
 y 32
 end
+arch dread
+x 32
+y 32
+end
 arch woodfloor
 x 32
 y 33
@@ -15900,6 +16152,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 32
+y 55
+end
+arch dread
 x 32
 y 55
 end
@@ -16753,6 +17009,17 @@ arch woodfloor
 x 34
 y 31
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 34
+y 31
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 34
 y 32
@@ -16769,6 +17036,17 @@ arch woodfloor
 x 34
 y 35
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 34
+y 35
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 34
 y 36
@@ -16780,6 +17058,17 @@ end
 arch woodfloor
 x 34
 y 38
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 34
+y 38
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 34
@@ -16846,6 +17135,10 @@ name_pl woodfloor
 x 34
 y 45
 end
+arch dread
+x 34
+y 45
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16888,6 +17181,17 @@ name_pl woodfloor
 x 34
 y 50
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 34
+y 50
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16897,6 +17201,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 34
+y 52
+end
+arch dread
 x 34
 y 52
 end
@@ -17239,6 +17547,10 @@ arch woodfloor
 x 35
 y 25
 end
+arch dread
+x 35
+y 25
+end
 arch woodfloor
 x 35
 y 26
@@ -17369,6 +17681,17 @@ name_pl woodfloor
 x 35
 y 47
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 35
+y 47
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -17416,6 +17739,17 @@ name woodfloor
 name_pl woodfloor
 x 35
 y 55
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 35
+y 55
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -17798,6 +18132,10 @@ arch woodfloor
 x 36
 y 37
 end
+arch dread
+x 36
+y 37
+end
 arch woodfloor
 x 36
 y 38
@@ -17902,6 +18240,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 36
+y 49
+end
+arch dread
 x 36
 y 49
 end
@@ -18257,6 +18599,10 @@ arch woodfloor
 x 37
 y 24
 end
+arch dread
+x 37
+y 24
+end
 arch woodfloor
 x 37
 y 25
@@ -18295,6 +18641,10 @@ arch woodfloor
 x 37
 y 30
 end
+arch dread
+x 37
+y 30
+end
 arch woodfloor
 x 37
 y 31
@@ -18317,6 +18667,17 @@ end
 arch woodfloor
 x 37
 y 33
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 37
+y 33
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 37
@@ -18488,6 +18849,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 37
+y 53
+end
+arch dread
 x 37
 y 53
 end
@@ -18869,6 +19234,10 @@ arch woodfloor
 x 38
 y 37
 end
+arch dread
+x 38
+y 37
+end
 arch woodfloor
 x 38
 y 38
@@ -18934,6 +19303,17 @@ name_pl woodfloor
 x 38
 y 45
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 38
+y 45
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -18977,6 +19357,17 @@ name woodfloor
 name_pl woodfloor
 x 38
 y 51
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 38
+y 51
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -19349,11 +19740,26 @@ arch woodfloor
 x 39
 y 30
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 39
+y 30
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 39
 y 31
 end
 arch woodfloor
+x 39
+y 32
+end
+arch dread
 x 39
 y 32
 end
@@ -19379,6 +19785,17 @@ end
 arch woodfloor
 x 39
 y 35
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 39
+y 35
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 39
@@ -19469,6 +19886,17 @@ name woodfloor
 name_pl woodfloor
 x 39
 y 48
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 39
+y 48
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -19888,6 +20316,17 @@ arch woodfloor
 x 40
 y 38
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 40
+y 38
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 40
 y 39
@@ -19993,6 +20432,10 @@ name_pl woodfloor
 x 40
 y 50
 end
+arch dread
+x 40
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20027,6 +20470,17 @@ name woodfloor
 name_pl woodfloor
 x 40
 y 54
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 40
+y 54
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -20406,6 +20860,17 @@ arch woodfloor
 x 41
 y 33
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 41
+y 33
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 41
 y 34
@@ -20518,6 +20983,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 41
+y 47
+end
+arch dread
 x 41
 y 47
 end
@@ -21029,6 +21498,17 @@ name_pl woodfloor
 x 42
 y 45
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 42
+y 45
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -21065,6 +21545,17 @@ name_pl woodfloor
 x 42
 y 51
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 42
+y 51
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -21074,6 +21565,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 42
+y 53
+end
+arch dread
 x 42
 y 53
 end
@@ -21293,6 +21788,17 @@ arch random_treasure
 x 43
 y 23
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 23
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 43
 y 24
@@ -21316,6 +21822,17 @@ end
 arch random_treasure
 x 43
 y 26
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 26
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 43
@@ -21337,6 +21854,17 @@ arch woodfloor
 x 43
 y 29
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 29
+speed -0.800000
+level 70
+end
 arch woodfloor
 x 43
 y 30
@@ -21348,6 +21876,17 @@ end
 arch woodfloor
 x 43
 y 32
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 32
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 43
@@ -21372,6 +21911,10 @@ arch woodfloor
 x 43
 y 35
 end
+arch dread
+x 43
+y 35
+end
 arch woodfloor
 x 43
 y 36
@@ -21379,6 +21922,17 @@ end
 arch woodfloor
 x 43
 y 37
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 37
+speed -0.800000
+level 70
 end
 arch woodfloor
 x 43
@@ -21472,6 +22026,17 @@ name woodfloor
 name_pl woodfloor
 x 43
 y 48
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 43
+y 48
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -21966,6 +22531,17 @@ name woodfloor
 name_pl woodfloor
 x 44
 y 54
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 44
+y 54
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -22972,6 +23548,17 @@ name_pl woodfloor
 x 46
 y 46
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 46
+y 46
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -22990,6 +23577,10 @@ name_pl woodfloor
 x 46
 y 49
 end
+arch dread
+x 46
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -23001,6 +23592,17 @@ name woodfloor
 name_pl woodfloor
 x 46
 y 51
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 46
+y 51
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -23584,6 +24186,10 @@ name_pl woodfloor
 x 47
 y 53
 end
+arch dread
+x 47
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -23593,6 +24199,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 47
+y 55
+end
+arch dread
 x 47
 y 55
 end
@@ -24055,6 +24665,10 @@ name_pl woodfloor
 x 48
 y 45
 end
+arch dread
+x 48
+y 45
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -24087,6 +24701,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 48
+y 49
+end
+arch dread
 x 48
 y 49
 end
@@ -31058,622 +31676,4 @@ end
 arch blocked
 x 63
 y 63
-end
-arch dread
-x 7
-y 9
-end
-arch dread
-x 7
-y 13
-end
-arch dread
-x 7
-y 18
-end
-arch dread
-x 7
-y 20
-end
-arch dread
-x 8
-y 7
-end
-arch dread
-x 8
-y 11
-end
-arch dread
-x 8
-y 16
-end
-arch dread
-x 10
-y 7
-end
-arch dread
-x 10
-y 9
-end
-arch dread
-x 10
-y 12
-end
-arch dread
-x 10
-y 14
-end
-arch dread
-x 10
-y 18
-end
-arch dread
-x 10
-y 20
-end
-arch dread
-x 11
-y 16
-end
-arch dread
-x 12
-y 12
-end
-arch dread
-x 12
-y 19
-end
-arch dread
-x 13
-y 7
-end
-arch dread
-x 13
-y 9
-end
-arch dread
-x 13
-y 15
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 13
-y 62
-speed -0.800000
-level 70
-end
-arch dread
-x 15
-y 7
-end
-arch dread
-x 15
-y 10
-end
-arch dread
-x 15
-y 13
-end
-arch dread
-x 15
-y 15
-end
-arch dread
-x 15
-y 17
-end
-arch dread
-x 15
-y 20
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 25
-y 30
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 25
-y 32
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 25
-y 34
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 25
-y 37
-speed -0.800000
-level 70
-end
-arch dread
-x 27
-y 36
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 29
-y 30
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 29
-y 35
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 29
-y 38
-speed -0.800000
-level 70
-end
-arch dread
-x 30
-y 24
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 30
-y 33
-speed -0.800000
-level 70
-end
-arch dread
-x 31
-y 37
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 31
-y 45
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 31
-y 49
-speed -0.800000
-level 70
-end
-arch dread
-x 31
-y 51
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 31
-y 53
-speed -0.800000
-level 70
-end
-arch dread
-x 32
-y 32
-end
-arch dread
-x 32
-y 55
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 34
-y 31
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 34
-y 35
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 34
-y 38
-speed -0.800000
-level 70
-end
-arch dread
-x 34
-y 45
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 34
-y 50
-speed -0.800000
-level 70
-end
-arch dread
-x 34
-y 52
-end
-arch dread
-x 35
-y 25
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 35
-y 47
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 35
-y 55
-speed -0.800000
-level 70
-end
-arch dread
-x 36
-y 37
-end
-arch dread
-x 36
-y 49
-end
-arch dread
-x 37
-y 24
-end
-arch dread
-x 37
-y 30
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 37
-y 33
-speed -0.800000
-level 70
-end
-arch dread
-x 37
-y 53
-end
-arch dread
-x 38
-y 37
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 38
-y 45
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 38
-y 51
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 39
-y 30
-speed -0.800000
-level 70
-end
-arch dread
-x 39
-y 32
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 39
-y 35
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 39
-y 48
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 40
-y 38
-speed -0.800000
-level 70
-end
-arch dread
-x 40
-y 50
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 40
-y 54
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 41
-y 33
-speed -0.800000
-level 70
-end
-arch dread
-x 41
-y 47
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 42
-y 45
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 42
-y 51
-speed -0.800000
-level 70
-end
-arch dread
-x 42
-y 53
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 23
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 26
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 29
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 32
-speed -0.800000
-level 70
-end
-arch dread
-x 43
-y 35
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 37
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 43
-y 48
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 44
-y 54
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 46
-y 46
-speed -0.800000
-level 70
-end
-arch dread
-x 46
-y 49
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 46
-y 51
-speed -0.800000
-level 70
-end
-arch dread
-x 47
-y 53
-end
-arch dread
-x 47
-y 55
-end
-arch dread
-x 48
-y 45
-end
-arch dread
-x 48
-y 49
 end

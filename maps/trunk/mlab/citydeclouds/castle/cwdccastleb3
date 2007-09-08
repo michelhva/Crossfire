@@ -18016,6 +18016,10 @@ arch large_stones
 x 12
 y 66
 end
+arch Cwyvern
+x 12
+y 66
+end
 arch large_stones
 x 12
 y 67
@@ -18029,6 +18033,10 @@ x 12
 y 68
 end
 arch large_stones
+x 12
+y 69
+end
+arch Cwyvern
 x 12
 y 69
 end
@@ -18976,6 +18984,10 @@ arch dirtfloor
 x 13
 y 48
 end
+arch Cwyvern
+x 13
+y 48
+end
 arch dirtfloor
 x 13
 y 49
@@ -19037,6 +19049,10 @@ x 13
 y 62
 end
 arch small_stones
+x 13
+y 63
+end
+arch Cwyvern
 x 13
 y 63
 end
@@ -19076,6 +19092,10 @@ arch small_stones
 x 13
 y 71
 end
+arch big_dragon_ancient
+x 13
+y 71
+end
 arch small_stones
 x 13
 y 72
@@ -19965,6 +19985,10 @@ arch dirtfloor
 x 14
 y 51
 end
+arch big_dragon_ancient
+x 14
+y 51
+end
 arch dirtfloor
 x 14
 y 52
@@ -20001,6 +20025,10 @@ arch pstone_2
 x 14
 y 59
 end
+arch big_dragon_ancient
+x 14
+y 59
+end
 arch large_stones
 x 14
 y 60
@@ -20018,6 +20046,10 @@ x 14
 y 63
 end
 arch large_stones
+x 14
+y 64
+end
+arch big_dragon_ancient
 x 14
 y 64
 end
@@ -20775,6 +20807,10 @@ arch dirtfloor
 x 15
 y 38
 end
+arch Cwyvern
+x 15
+y 38
+end
 arch dirtfloor
 x 15
 y 39
@@ -20791,6 +20827,10 @@ arch large_stones
 x 15
 y 42
 end
+arch big_dragon_ancient
+x 15
+y 42
+end
 arch large_stones
 x 15
 y 43
@@ -20800,6 +20840,10 @@ x 15
 y 44
 end
 arch large_stones
+x 15
+y 45
+end
+arch big_dragon_ancient
 x 15
 y 45
 end
@@ -20840,6 +20884,10 @@ x 15
 y 53
 end
 arch dirtfloor
+x 15
+y 54
+end
+arch Cwyvern
 x 15
 y 54
 end
@@ -20907,6 +20955,10 @@ arch pstone_2
 x 15
 y 69
 end
+arch big_dragon_ancient
+x 15
+y 69
+end
 arch pstone_2
 x 15
 y 70
@@ -20936,6 +20988,10 @@ x 15
 y 75
 end
 arch small_stones
+x 15
+y 76
+end
+arch Cwyvern
 x 15
 y 76
 end
@@ -21568,6 +21624,10 @@ arch steppe
 x 16
 y 31
 end
+arch Cwyvern
+x 16
+y 31
+end
 arch steppe
 x 16
 y 32
@@ -21597,6 +21657,10 @@ x 16
 y 38
 end
 arch dirtfloor
+x 16
+y 39
+end
+arch big_dragon_ancient
 x 16
 y 39
 end
@@ -21640,6 +21704,10 @@ arch dirtfloor
 x 16
 y 48
 end
+arch big_dragon_ancient
+x 16
+y 48
+end
 arch dirtfloor
 x 16
 y 49
@@ -21669,6 +21737,10 @@ x 16
 y 55
 end
 arch dirtfloor
+x 16
+y 56
+end
+arch big_dragon_ancient
 x 16
 y 56
 end
@@ -21724,6 +21796,10 @@ arch pstone_2
 x 16
 y 67
 end
+arch Cwyvern
+x 16
+y 67
+end
 arch pstone_2
 x 16
 y 68
@@ -21753,6 +21829,10 @@ x 16
 y 74
 end
 arch small_stones
+x 16
+y 75
+end
+arch Cwyvern
 x 16
 y 75
 end
@@ -22359,6 +22439,10 @@ x 17
 y 35
 end
 arch pstone_3
+x 17
+y 36
+end
+arch big_dragon_ancient
 x 17
 y 36
 end
@@ -22534,6 +22618,10 @@ arch dirtfloor
 x 17
 y 73
 end
+arch Cwyvern
+x 17
+y 73
+end
 arch dirtfloor
 x 17
 y 74
@@ -22547,6 +22635,10 @@ x 17
 y 76
 end
 arch small_stones
+x 17
+y 77
+end
+arch big_dragon_ancient
 x 17
 y 77
 end
@@ -23073,6 +23165,10 @@ arch pstone_2
 x 18
 y 23
 end
+arch big_dragon_ancient
+x 18
+y 23
+end
 arch pstone_3
 x 18
 y 24
@@ -23106,6 +23202,10 @@ x 18
 y 31
 end
 arch pstone_3
+x 18
+y 32
+end
+arch big_dragon_ancient
 x 18
 y 32
 end
@@ -23217,6 +23317,10 @@ arch pstone_2
 x 18
 y 59
 end
+arch Cwyvern
+x 18
+y 59
+end
 arch large_stones
 x 18
 y 60
@@ -23234,6 +23338,10 @@ x 18
 y 63
 end
 arch large_stones
+x 18
+y 64
+end
+arch Cwyvern
 x 18
 y 64
 end
@@ -23306,6 +23414,10 @@ x 18
 y 81
 end
 arch steppe
+x 18
+y 82
+end
+arch big_dragon_ancient
 x 18
 y 82
 end
@@ -23820,6 +23932,10 @@ arch dirtfloor
 x 19
 y 26
 end
+arch big_dragon_ancient
+x 19
+y 26
+end
 arch pstone_3
 x 19
 y 27
@@ -23828,11 +23944,19 @@ arch pstone_3
 x 19
 y 28
 end
+arch big_dragon_ancient
+x 19
+y 28
+end
 arch steppe
 x 19
 y 29
 end
 arch steppe
+x 19
+y 30
+end
+arch Cwyvern
 x 19
 y 30
 end
@@ -23885,6 +24009,10 @@ x 19
 y 42
 end
 arch small_stones
+x 19
+y 43
+end
+arch Cwyvern
 x 19
 y 43
 end
@@ -23944,6 +24072,10 @@ arch pstone_3
 x 19
 y 53
 end
+arch big_dragon_ancient
+x 19
+y 53
+end
 arch pstone_3
 x 19
 y 54
@@ -23980,6 +24112,10 @@ arch large_stones
 x 19
 y 62
 end
+arch big_dragon_ancient
+x 19
+y 62
+end
 arch large_stones
 x 19
 y 63
@@ -24008,6 +24144,10 @@ arch dirtfloor
 x 19
 y 69
 end
+arch big_dragon_ancient
+x 19
+y 69
+end
 arch dirtfloor
 x 19
 y 70
@@ -24033,6 +24173,10 @@ x 19
 y 74
 end
 arch small_stones
+x 19
+y 75
+end
+arch big_dragon_ancient
 x 19
 y 75
 end
@@ -24073,6 +24217,10 @@ x 19
 y 83
 end
 arch steppe
+x 19
+y 84
+end
+arch big_dragon_ancient
 x 19
 y 84
 end
@@ -24545,6 +24693,10 @@ x 20
 y 20
 end
 arch dirtfloor
+x 20
+y 21
+end
+arch Cwyvern
 x 20
 y 21
 end
@@ -24676,6 +24828,10 @@ arch large_stones
 x 20
 y 48
 end
+arch big_dragon_ancient
+x 20
+y 48
+end
 arch small_stones
 x 20
 y 49
@@ -24693,6 +24849,10 @@ x 20
 y 50
 end
 arch small_stones
+x 20
+y 51
+end
+arch Cwyvern
 x 20
 y 51
 end
@@ -24717,6 +24877,10 @@ x 20
 y 55
 end
 arch pstone_3
+x 20
+y 56
+end
+arch big_dragon_ancient
 x 20
 y 56
 end
@@ -24756,6 +24920,10 @@ arch large_stones
 x 20
 y 65
 end
+arch Cwyvern
+x 20
+y 65
+end
 arch large_stones
 x 20
 y 66
@@ -24781,6 +24949,10 @@ x 20
 y 71
 end
 arch dirtfloor
+x 20
+y 72
+end
+arch big_dragon_ancient
 x 20
 y 72
 end
@@ -25321,6 +25493,10 @@ arch dirtfloor
 x 21
 y 25
 end
+arch Cwyvern
+x 21
+y 25
+end
 arch dirtfloor
 x 21
 y 26
@@ -25357,6 +25533,10 @@ arch dirtfloor
 x 21
 y 34
 end
+arch Cwyvern
+x 21
+y 34
+end
 arch dirtfloor
 x 21
 y 35
@@ -25390,6 +25570,10 @@ x 21
 y 41
 end
 arch steppe
+x 21
+y 42
+end
+arch big_dragon_ancient
 x 21
 y 42
 end
@@ -25470,6 +25654,10 @@ x 21
 y 59
 end
 arch large_stones
+x 21
+y 60
+end
+arch big_dragon_ancient
 x 21
 y 60
 end
@@ -25557,6 +25745,10 @@ arch steppe
 x 21
 y 79
 end
+arch big_dragon_ancient
+x 21
+y 79
+end
 arch steppe
 x 21
 y 80
@@ -25570,6 +25762,10 @@ x 21
 y 82
 end
 arch steppe
+x 21
+y 83
+end
+arch Cwyvern
 x 21
 y 83
 end
@@ -26016,6 +26212,10 @@ arch dirtfloor
 x 22
 y 20
 end
+arch big_dragon_ancient
+x 22
+y 20
+end
 arch dirtfloor
 x 22
 y 21
@@ -26080,6 +26280,10 @@ arch dirtfloor
 x 22
 y 36
 end
+arch big_dragon_ancient
+x 22
+y 36
+end
 arch dirtfloor
 x 22
 y 37
@@ -26089,6 +26293,10 @@ x 22
 y 38
 end
 arch steppe
+x 22
+y 39
+end
+arch Cwyvern
 x 22
 y 39
 end
@@ -26200,6 +26408,10 @@ arch large_stones
 x 22
 y 65
 end
+arch big_dragon_ancient
+x 22
+y 65
+end
 arch pstone_1
 x 22
 y 66
@@ -26261,6 +26473,10 @@ x 22
 y 80
 end
 arch steppe
+x 22
+y 81
+end
+arch Cwyvern
 x 22
 y 81
 end
@@ -26723,6 +26939,10 @@ arch pstone_2
 x 23
 y 24
 end
+arch big_dragon_ancient
+x 23
+y 24
+end
 arch dirtfloor
 x 23
 y 25
@@ -26827,6 +27047,10 @@ arch large_stones
 x 23
 y 45
 end
+arch big_dragon_ancient
+x 23
+y 45
+end
 arch small_stones
 x 23
 y 46
@@ -26872,6 +27096,10 @@ x 23
 y 53
 end
 arch pstone_3
+x 23
+y 54
+end
+arch Cwyvern
 x 23
 y 54
 end
@@ -26935,6 +27163,10 @@ arch pstone_1
 x 23
 y 67
 end
+arch Cwyvern
+x 23
+y 67
+end
 arch pstone_1
 x 23
 y 68
@@ -26955,6 +27187,10 @@ arch pstone_1
 x 23
 y 71
 end
+arch big_dragon_ancient
+x 23
+y 71
+end
 arch dirtfloor
 x 23
 y 72
@@ -26963,11 +27199,19 @@ arch dirtfloor
 x 23
 y 73
 end
+arch big_dragon_ancient
+x 23
+y 73
+end
 arch dirtfloor
 x 23
 y 74
 end
 arch dirtfloor
+x 23
+y 75
+end
+arch Cwyvern
 x 23
 y 75
 end
@@ -27004,6 +27248,10 @@ x 23
 y 83
 end
 arch steppe
+x 23
+y 84
+end
+arch big_dragon_ancient
 x 23
 y 84
 end
@@ -27566,6 +27814,10 @@ arch pstone_1
 x 24
 y 41
 end
+arch big_dragon_ancient
+x 24
+y 41
+end
 arch pstone_1
 x 24
 y 42
@@ -27599,6 +27851,10 @@ x 24
 y 48
 end
 arch small_stones
+x 24
+y 49
+end
+arch big_dragon_ancient
 x 24
 y 49
 end
@@ -27642,6 +27898,10 @@ arch pstone_3
 x 24
 y 57
 end
+arch big_dragon_ancient
+x 24
+y 57
+end
 arch pstone_3
 x 24
 y 58
@@ -27667,6 +27927,10 @@ x 24
 y 62
 end
 arch pstone_1
+x 24
+y 63
+end
+arch Cwyvern
 x 24
 y 63
 end
@@ -28174,6 +28438,10 @@ arch steppe
 x 25
 y 18
 end
+arch Cwyvern
+x 25
+y 18
+end
 arch steppe
 x 25
 y 19
@@ -28187,6 +28455,10 @@ x 25
 y 21
 end
 arch dirtfloor
+x 25
+y 22
+end
+arch big_dragon_ancient
 x 25
 y 22
 end
@@ -28374,6 +28646,10 @@ arch small_stones
 x 25
 y 51
 end
+arch big_dragon_ancient
+x 25
+y 51
+end
 arch pstone_3
 x 25
 y 52
@@ -28483,6 +28759,10 @@ x 25
 y 75
 end
 arch dirtfloor
+x 25
+y 76
+end
+arch Cwyvern
 x 25
 y 76
 end
@@ -28538,6 +28818,10 @@ arch steppe
 x 25
 y 87
 end
+arch Cwyvern
+x 25
+y 87
+end
 arch steppe
 x 25
 y 88
@@ -29198,6 +29482,10 @@ arch small_stones
 x 26
 y 44
 end
+arch big_dragon_ancient
+x 26
+y 44
+end
 arch small_stones
 x 26
 y 45
@@ -29407,6 +29695,10 @@ x 26
 y 81
 end
 arch steppe
+x 26
+y 82
+end
+arch Cwyvern
 x 26
 y 82
 end
@@ -30363,6 +30655,10 @@ arch dirtfloor
 x 27
 y 77
 end
+arch big_dragon_ancient
+x 27
+y 77
+end
 arch dirtfloor
 x 27
 y 78
@@ -30834,6 +31130,10 @@ x 28
 y 19
 end
 arch steppe
+x 28
+y 20
+end
+arch Cwyvern
 x 28
 y 20
 end
@@ -31366,6 +31666,10 @@ arch dirtfloor
 x 28
 y 75
 end
+arch Cwyvern
+x 28
+y 75
+end
 arch dirtfloor
 x 28
 y 76
@@ -31398,6 +31702,10 @@ arch small_stones
 x 28
 y 83
 end
+arch big_dragon_ancient
+x 28
+y 83
+end
 arch small_stones
 x 28
 y 84
@@ -31411,6 +31719,10 @@ x 28
 y 86
 end
 arch pstone_1
+x 28
+y 87
+end
+arch Cwyvern
 x 28
 y 87
 end
@@ -32129,6 +32441,10 @@ x 29
 y 54
 end
 arch pstone_2
+x 29
+y 55
+end
+arch Cwyvern
 x 29
 y 55
 end
@@ -32324,6 +32640,10 @@ arch pstone_3
 x 29
 y 81
 end
+arch big_dragon_ancient
+x 29
+y 81
+end
 arch small_stones
 x 29
 y 82
@@ -32357,6 +32677,10 @@ x 29
 y 88
 end
 arch pstone_1
+x 29
+y 89
+end
+arch Cwyvern
 x 29
 y 89
 end
@@ -33077,6 +33401,10 @@ arch dirtfloor
 x 30
 y 52
 end
+arch big_dragon_ancient
+x 30
+y 52
+end
 arch dirtfloor
 x 30
 y 53
@@ -34220,11 +34548,19 @@ arch pstone_3
 x 31
 y 77
 end
+arch Cwyvern
+x 31
+y 77
+end
 arch pstone_3
 x 31
 y 78
 end
 arch pstone_3
+x 31
+y 79
+end
+arch big_dragon_ancient
 x 31
 y 79
 end
@@ -34261,6 +34597,10 @@ x 31
 y 87
 end
 arch dirtfloor
+x 31
+y 88
+end
+arch big_dragon_ancient
 x 31
 y 88
 end
@@ -35005,6 +35345,10 @@ arch pstone_2
 x 32
 y 45
 end
+arch big_dragon_ancient
+x 32
+y 45
+end
 arch pstone_2
 x 32
 y 46
@@ -35298,6 +35642,10 @@ x 32
 y 84
 end
 arch dirtfloor
+x 32
+y 85
+end
+arch big_dragon_ancient
 x 32
 y 85
 end
@@ -36270,6 +36618,10 @@ arch pstone_3
 x 33
 y 78
 end
+arch big_dragon_ancient
+x 33
+y 78
+end
 arch pstone_3
 x 33
 y 79
@@ -36282,11 +36634,19 @@ arch small_stones
 x 33
 y 81
 end
+arch Cwyvern
+x 33
+y 81
+end
 arch small_stones
 x 33
 y 82
 end
 arch small_stones
+x 33
+y 83
+end
+arch big_dragon_ancient
 x 33
 y 83
 end
@@ -37000,6 +37360,10 @@ x 34
 y 42
 end
 arch pstone_2
+x 34
+y 43
+end
+arch big_dragon_ancient
 x 34
 y 43
 end
@@ -37283,6 +37647,10 @@ arch dirtfloor
 x 34
 y 87
 end
+arch big_dragon_ancient
+x 34
+y 87
+end
 arch dirtfloor
 x 34
 y 88
@@ -37992,6 +38360,10 @@ arch pstone_2
 x 35
 y 48
 end
+arch big_dragon_ancient
+x 35
+y 48
+end
 arch pstone_2
 x 35
 y 49
@@ -38016,6 +38388,10 @@ arch pstone_3
 x 35
 y 53
 end
+arch Cwyvern
+x 35
+y 53
+end
 arch pstone_3
 x 35
 y 54
@@ -38033,6 +38409,10 @@ x 35
 y 55
 end
 arch pstone_3
+x 35
+y 56
+end
+arch Cwyvern
 x 35
 y 56
 end
@@ -38231,6 +38611,10 @@ x 35
 y 88
 end
 arch dirtfloor
+x 35
+y 89
+end
+arch Cwyvern
 x 35
 y 89
 end
@@ -39157,6 +39541,10 @@ arch pstone_3
 x 36
 y 82
 end
+arch Cwyvern
+x 36
+y 82
+end
 arch pstone_3
 x 36
 y 83
@@ -39910,6 +40298,10 @@ arch pstone_2
 x 37
 y 51
 end
+arch big_dragon_ancient
+x 37
+y 51
+end
 arch pstone_2
 x 37
 y 52
@@ -39923,6 +40315,10 @@ x 37
 y 54
 end
 arch pstone_3
+x 37
+y 55
+end
+arch Cwyvern
 x 37
 y 55
 end
@@ -40090,6 +40486,10 @@ arch pstone_3
 x 37
 y 78
 end
+arch Cwyvern
+x 37
+y 78
+end
 arch small_stones
 x 37
 y 79
@@ -40119,6 +40519,10 @@ x 37
 y 85
 end
 arch small_stones
+x 37
+y 86
+end
+arch Cwyvern
 x 37
 y 86
 end
@@ -40811,6 +41215,10 @@ arch steppe
 x 38
 y 43
 end
+arch big_dragon_ancient
+x 38
+y 43
+end
 arch steppe
 x 38
 y 44
@@ -40820,6 +41228,10 @@ x 38
 y 45
 end
 arch pstone_2
+x 38
+y 46
+end
+arch Cwyvern
 x 38
 y 46
 end
@@ -41073,6 +41485,10 @@ arch pstone_3
 x 38
 y 83
 end
+arch big_dragon_ancient
+x 38
+y 83
+end
 arch small_stones
 x 38
 y 84
@@ -41094,6 +41510,10 @@ x 38
 y 88
 end
 arch dirtfloor
+x 38
+y 89
+end
+arch big_dragon_ancient
 x 38
 y 89
 end
@@ -41769,6 +42189,10 @@ arch dirtfloor
 x 39
 y 41
 end
+arch Cwyvern
+x 39
+y 41
+end
 arch steppe
 x 39
 y 42
@@ -41854,6 +42278,10 @@ x 39
 y 58
 end
 arch pstone_3
+x 39
+y 59
+end
+arch big_dragon_ancient
 x 39
 y 59
 end
@@ -42040,6 +42468,10 @@ x 39
 y 85
 end
 arch small_stones
+x 39
+y 86
+end
+arch big_dragon_ancient
 x 39
 y 86
 end
@@ -42759,6 +43191,10 @@ arch steppe
 x 40
 y 46
 end
+arch big_dragon_ancient
+x 40
+y 46
+end
 arch pstone_3
 x 40
 y 47
@@ -42779,6 +43215,10 @@ arch pstone_3
 x 40
 y 51
 end
+arch Cwyvern
+x 40
+y 51
+end
 arch pstone_3
 x 40
 y 52
@@ -42788,6 +43228,10 @@ x 40
 y 53
 end
 arch pstone_3
+x 40
+y 54
+end
+arch big_dragon_ancient
 x 40
 y 54
 end
@@ -43001,11 +43445,19 @@ arch small_stones
 x 40
 y 79
 end
+arch Cwyvern
+x 40
+y 79
+end
 arch small_stones
 x 40
 y 80
 end
 arch small_stones
+x 40
+y 81
+end
+arch big_dragon_ancient
 x 40
 y 81
 end
@@ -43738,6 +44190,10 @@ arch steppe
 x 41
 y 44
 end
+arch big_dragon_ancient
+x 41
+y 44
+end
 arch steppe
 x 41
 y 45
@@ -43751,6 +44207,10 @@ x 41
 y 47
 end
 arch pstone_3
+x 41
+y 48
+end
+arch Cwyvern
 x 41
 y 48
 end
@@ -44031,6 +44491,10 @@ x 41
 y 87
 end
 arch dirtfloor
+x 41
+y 88
+end
+arch Cwyvern
 x 41
 y 88
 end
@@ -44694,6 +45158,10 @@ x 42
 y 35
 end
 arch dirtfloor
+x 42
+y 36
+end
+arch Cwyvern
 x 42
 y 36
 end
@@ -45015,6 +45483,10 @@ arch pstone_1
 x 42
 y 84
 end
+arch big_dragon_ancient
+x 42
+y 84
+end
 arch dirtfloor
 x 42
 y 85
@@ -45828,6 +46300,10 @@ arch pstone_3
 x 43
 y 59
 end
+arch Cwyvern
+x 43
+y 59
+end
 arch pstone_3
 x 43
 y 60
@@ -46491,6 +46967,10 @@ face fog.111
 x 44
 y 23
 end
+arch big_dragon_ancient
+x 44
+y 23
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -46672,6 +47152,10 @@ x 44
 y 37
 end
 arch pstone_1
+x 44
+y 38
+end
+arch big_dragon_ancient
 x 44
 y 38
 end
@@ -46739,6 +47223,10 @@ arch pstone_2
 x 44
 y 49
 end
+arch big_dragon_ancient
+x 44
+y 49
+end
 arch pstone_2
 x 44
 y 50
@@ -46775,6 +47263,10 @@ arch pstone_2
 x 44
 y 55
 end
+arch Cwyvern
+x 44
+y 55
+end
 arch pstone_2
 x 44
 y 56
@@ -46808,6 +47300,10 @@ x 44
 y 61
 end
 arch dirtfloor
+x 44
+y 62
+end
+arch big_dragon_ancient
 x 44
 y 62
 end
@@ -47656,6 +48152,10 @@ arch dirtfloor
 x 45
 y 41
 end
+arch Cwyvern
+x 45
+y 41
+end
 arch pstone_1
 x 45
 y 42
@@ -47668,11 +48168,19 @@ arch dirtfloor
 x 45
 y 44
 end
+arch Cwyvern
+x 45
+y 44
+end
 arch dirtfloor
 x 45
 y 45
 end
 arch dirtfloor
+x 45
+y 46
+end
+arch Cwyvern
 x 45
 y 46
 end
@@ -47705,6 +48213,10 @@ x 45
 y 51
 end
 arch dirtfloor
+x 45
+y 52
+end
+arch big_dragon_ancient
 x 45
 y 52
 end
@@ -47872,6 +48384,10 @@ arch dirtfloor
 x 45
 y 75
 end
+arch Cwyvern
+x 45
+y 75
+end
 arch dirtfloor
 x 45
 y 76
@@ -47893,6 +48409,10 @@ x 45
 y 80
 end
 arch pstone_1
+x 45
+y 81
+end
+arch Cwyvern
 x 45
 y 81
 end
@@ -47921,6 +48441,10 @@ x 45
 y 86
 end
 arch dirtfloor
+x 45
+y 87
+end
+arch Cwyvern
 x 45
 y 87
 end
@@ -48677,6 +49201,10 @@ arch pstone_2
 x 46
 y 60
 end
+arch Cwyvern
+x 46
+y 60
+end
 arch pstone_2
 x 46
 y 61
@@ -48774,6 +49302,10 @@ x 46
 y 76
 end
 arch steppe
+x 46
+y 77
+end
+arch Cwyvern
 x 46
 y 77
 end
@@ -49462,6 +49994,10 @@ arch pstone_1
 x 47
 y 36
 end
+arch big_dragon_ancient
+x 47
+y 36
+end
 arch pstone_1
 x 47
 y 37
@@ -49495,6 +50031,10 @@ x 47
 y 42
 end
 arch pstone_1
+x 47
+y 43
+end
+arch Cwyvern
 x 47
 y 43
 end
@@ -49676,6 +50216,10 @@ arch dirtfloor
 x 47
 y 73
 end
+arch big_dragon_ancient
+x 47
+y 73
+end
 arch dirtfloor
 x 47
 y 74
@@ -49700,6 +50244,10 @@ arch steppe
 x 47
 y 79
 end
+arch big_dragon_ancient
+x 47
+y 79
+end
 arch steppe
 x 47
 y 80
@@ -49716,11 +50264,19 @@ arch pstone_1
 x 47
 y 83
 end
+arch Cwyvern
+x 47
+y 83
+end
 arch pstone_1
 x 47
 y 84
 end
 arch pstone_1
+x 47
+y 85
+end
+arch big_dragon_ancient
 x 47
 y 85
 end
@@ -50433,6 +50989,10 @@ arch pstone_1
 x 48
 y 45
 end
+arch big_dragon_ancient
+x 48
+y 45
+end
 arch pstone_1
 x 48
 y 46
@@ -50489,11 +51049,19 @@ arch pstone_2
 x 48
 y 54
 end
+arch big_dragon_ancient
+x 48
+y 54
+end
 arch pstone_2
 x 48
 y 55
 end
 arch pstone_2
+x 48
+y 56
+end
+arch big_dragon_ancient
 x 48
 y 56
 end
@@ -50522,6 +51090,10 @@ x 48
 y 60
 end
 arch pstone_2
+x 48
+y 61
+end
+arch big_dragon_ancient
 x 48
 y 61
 end
@@ -51320,6 +51892,10 @@ arch dirtfloor
 x 49
 y 38
 end
+arch big_dragon_ancient
+x 49
+y 38
+end
 arch dirtfloor
 x 49
 y 39
@@ -51503,6 +52079,10 @@ x 49
 y 68
 end
 arch dirtfloor
+x 49
+y 69
+end
+arch Cwyvern
 x 49
 y 69
 end
@@ -52254,6 +52834,10 @@ arch pstone_1
 x 50
 y 35
 end
+arch big_dragon_ancient
+x 50
+y 35
+end
 arch pstone_1
 x 50
 y 36
@@ -52275,6 +52859,10 @@ x 50
 y 40
 end
 arch pstone_1
+x 50
+y 41
+end
+arch Cwyvern
 x 50
 y 41
 end
@@ -52326,6 +52914,10 @@ arch dirtfloor
 x 50
 y 52
 end
+arch Cwyvern
+x 50
+y 52
+end
 arch dirtfloor
 x 50
 y 53
@@ -52347,6 +52939,10 @@ x 50
 y 57
 end
 arch pstone_2
+x 50
+y 58
+end
+arch Cwyvern
 x 50
 y 58
 end
@@ -52382,11 +52978,19 @@ arch dirtfloor
 x 50
 y 65
 end
+arch big_dragon_ancient
+x 50
+y 65
+end
 arch dirtfloor
 x 50
 y 66
 end
 arch dirtfloor
+x 50
+y 67
+end
+arch big_dragon_ancient
 x 50
 y 67
 end
@@ -52399,6 +53003,10 @@ x 50
 y 69
 end
 arch dirtfloor
+x 50
+y 70
+end
+arch Cwyvern
 x 50
 y 70
 end
@@ -52419,6 +53027,10 @@ x 50
 y 74
 end
 arch steppe
+x 50
+y 75
+end
+arch Cwyvern
 x 50
 y 75
 end
@@ -52459,6 +53071,10 @@ x 50
 y 82
 end
 arch pstone_3
+x 50
+y 83
+end
+arch Cwyvern
 x 50
 y 83
 end
@@ -52862,6 +53478,10 @@ face fog.111
 x 51
 y 15
 end
+arch big_dragon_ancient
+x 51
+y 15
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -53241,6 +53861,10 @@ arch dirtfloor
 x 51
 y 48
 end
+arch Cwyvern
+x 51
+y 48
+end
 arch dirtfloor
 x 51
 y 49
@@ -53274,6 +53898,10 @@ x 51
 y 53
 end
 arch dirtfloor
+x 51
+y 54
+end
+arch big_dragon_ancient
 x 51
 y 54
 end
@@ -53318,6 +53946,10 @@ x 51
 y 62
 end
 arch pstone_2
+x 51
+y 63
+end
+arch Cwyvern
 x 51
 y 63
 end
@@ -53400,6 +54032,10 @@ x 51
 y 79
 end
 arch dirtfloor
+x 51
+y 80
+end
+arch big_dragon_ancient
 x 51
 y 80
 end
@@ -53886,6 +54522,10 @@ face fog.111
 x 52
 y 20
 end
+arch big_dragon
+x 52
+y 20
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -54176,6 +54816,10 @@ name_pl stonefloor
 x 52
 y 45
 end
+arch Cwyvern
+x 52
+y 45
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -54266,6 +54910,10 @@ arch pstone_2
 x 52
 y 61
 end
+arch big_dragon_ancient
+x 52
+y 61
+end
 arch pstone_2
 x 52
 y 62
@@ -54331,6 +54979,10 @@ x 52
 y 76
 end
 arch steppe
+x 52
+y 77
+end
+arch Cwyvern
 x 52
 y 77
 end
@@ -55096,11 +55748,19 @@ arch dirtfloor
 x 53
 y 40
 end
+arch big_dragon_ancient
+x 53
+y 40
+end
 arch dirtfloor
 x 53
 y 41
 end
 arch pstone_1
+x 53
+y 42
+end
+arch big_dragon_ancient
 x 53
 y 42
 end
@@ -55168,6 +55828,10 @@ name_pl stonefloor
 x 53
 y 51
 end
+arch big_dragon_ancient
+x 53
+y 51
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -55215,6 +55879,10 @@ x 53
 y 58
 end
 arch pstone_3
+x 53
+y 59
+end
+arch big_dragon_ancient
 x 53
 y 59
 end
@@ -55276,6 +55944,10 @@ arch dirtfloor
 x 53
 y 70
 end
+arch Cwyvern
+x 53
+y 70
+end
 arch dirtfloor
 x 53
 y 71
@@ -55289,6 +55961,10 @@ x 53
 y 73
 end
 arch pstone_3
+x 53
+y 74
+end
+arch big_dragon_ancient
 x 53
 y 74
 end
@@ -56030,6 +56706,10 @@ arch pstone_1
 x 54
 y 36
 end
+arch big_dragon_ancient
+x 54
+y 36
+end
 arch pstone_1
 x 54
 y 37
@@ -56081,6 +56761,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 54
+y 46
+end
+arch Cwyvern
 x 54
 y 46
 end
@@ -56143,6 +56827,10 @@ x 54
 y 54
 end
 arch pstone_2
+x 54
+y 55
+end
+arch Cwyvern
 x 54
 y 55
 end
@@ -57276,11 +57964,19 @@ arch steppe
 x 55
 y 77
 end
+arch big_dragon_ancient
+x 55
+y 77
+end
 arch dirtfloor
 x 55
 y 78
 end
 arch dirtfloor
+x 55
+y 79
+end
+arch big_dragon_ancient
 x 55
 y 79
 end
@@ -58030,6 +58726,10 @@ arch pstone_1
 x 56
 y 39
 end
+arch Cwyvern
+x 56
+y 39
+end
 arch pstone_1
 x 56
 y 40
@@ -58091,6 +58791,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 56
+y 50
+end
+arch big_dragon_ancient
 x 56
 y 50
 end
@@ -58301,6 +59005,10 @@ x 56
 y 80
 end
 arch pstone_1
+x 56
+y 81
+end
+arch Cwyvern
 x 56
 y 81
 end
@@ -59055,6 +59763,10 @@ arch pstone_1
 x 57
 y 36
 end
+arch big_dragon_ancient
+x 57
+y 36
+end
 arch dirtfloor
 x 57
 y 37
@@ -59083,11 +59795,19 @@ arch pstone_1
 x 57
 y 41
 end
+arch Cwyvern
+x 57
+y 41
+end
 arch pstone_3
 x 57
 y 42
 end
 arch pstone_2
+x 57
+y 43
+end
+arch big_dragon_ancient
 x 57
 y 43
 end
@@ -59159,7 +59879,15 @@ arch small_stones
 x 57
 y 56
 end
+arch Cwyvern
+x 57
+y 56
+end
 arch small_stones
+x 57
+y 57
+end
+arch big_dragon_ancient
 x 57
 y 57
 end
@@ -60184,7 +60912,15 @@ arch pstone_2
 x 58
 y 53
 end
+arch Cwyvern
+x 58
+y 53
+end
 arch small_stones
+x 58
+y 54
+end
+arch big_dragon_ancient
 x 58
 y 54
 end
@@ -60208,11 +60944,19 @@ arch pstone_3
 x 58
 y 59
 end
+arch big_dragon_ancient
+x 58
+y 59
+end
 arch pstone_3
 x 58
 y 60
 end
 arch pstone_2
+x 58
+y 61
+end
+arch Cwyvern
 x 58
 y 61
 end
@@ -60357,6 +61101,10 @@ x 58
 y 76
 end
 arch pstone_3
+x 58
+y 77
+end
+arch Cwyvern
 x 58
 y 77
 end
@@ -61201,6 +61949,10 @@ arch steppe
 x 59
 y 45
 end
+arch Cwyvern
+x 59
+y 45
+end
 arch steppe
 x 59
 y 46
@@ -62221,6 +62973,10 @@ x 60
 y 39
 end
 arch pstone_2
+x 60
+y 40
+end
+arch big_dragon_ancient
 x 60
 y 40
 end
@@ -63277,6 +64033,10 @@ arch pstone_2
 x 61
 y 43
 end
+arch big_dragon_ancient
+x 61
+y 43
+end
 arch pstone_2
 x 61
 y 44
@@ -63313,6 +64073,10 @@ arch pstone_2
 x 61
 y 49
 end
+arch Cwyvern
+x 61
+y 49
+end
 arch pstone_2
 x 61
 y 50
@@ -63322,6 +64086,10 @@ x 61
 y 50
 end
 arch pstone_2
+x 61
+y 51
+end
+arch big_dragon_ancient
 x 61
 y 51
 end
@@ -63349,6 +64117,10 @@ arch small_stones
 x 61
 y 55
 end
+arch big_dragon_ancient
+x 61
+y 55
+end
 arch small_stones
 x 61
 y 56
@@ -63366,6 +64138,10 @@ x 61
 y 58
 end
 arch pstone_2
+x 61
+y 59
+end
+arch Cwyvern
 x 61
 y 59
 end
@@ -65408,6 +66184,10 @@ arch pstone_2
 x 63
 y 48
 end
+arch Cwyvern
+x 63
+y 48
+end
 arch pstone_2
 x 63
 y 49
@@ -65447,6 +66227,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 63
+y 58
+end
+arch Cwyvern
 x 63
 y 58
 end
@@ -67214,6 +67998,10 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 65
+y 15
+end
+arch big_dragon
 x 65
 y 15
 end
@@ -84294,6 +85082,10 @@ face fog.111
 x 77
 y 48
 end
+arch big_dragon
+x 77
+y 48
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -118610,796 +119402,4 @@ name_pl cloud
 face fog.111
 x 98
 y 98
-end
-arch Cwyvern
-x 12
-y 66
-end
-arch Cwyvern
-x 12
-y 69
-end
-arch Cwyvern
-x 13
-y 48
-end
-arch Cwyvern
-x 13
-y 63
-end
-arch big_dragon_ancient
-x 13
-y 71
-end
-arch big_dragon_ancient
-x 14
-y 51
-end
-arch big_dragon_ancient
-x 14
-y 59
-end
-arch big_dragon_ancient
-x 14
-y 64
-end
-arch Cwyvern
-x 15
-y 38
-end
-arch big_dragon_ancient
-x 15
-y 42
-end
-arch big_dragon_ancient
-x 15
-y 45
-end
-arch Cwyvern
-x 15
-y 54
-end
-arch big_dragon_ancient
-x 15
-y 69
-end
-arch Cwyvern
-x 15
-y 76
-end
-arch Cwyvern
-x 16
-y 31
-end
-arch big_dragon_ancient
-x 16
-y 39
-end
-arch big_dragon_ancient
-x 16
-y 48
-end
-arch big_dragon_ancient
-x 16
-y 56
-end
-arch Cwyvern
-x 16
-y 67
-end
-arch Cwyvern
-x 16
-y 75
-end
-arch big_dragon_ancient
-x 17
-y 36
-end
-arch Cwyvern
-x 17
-y 73
-end
-arch big_dragon_ancient
-x 17
-y 77
-end
-arch big_dragon_ancient
-x 18
-y 23
-end
-arch big_dragon_ancient
-x 18
-y 32
-end
-arch Cwyvern
-x 18
-y 59
-end
-arch Cwyvern
-x 18
-y 64
-end
-arch big_dragon_ancient
-x 18
-y 82
-end
-arch big_dragon_ancient
-x 19
-y 26
-end
-arch big_dragon_ancient
-x 19
-y 28
-end
-arch Cwyvern
-x 19
-y 30
-end
-arch Cwyvern
-x 19
-y 43
-end
-arch big_dragon_ancient
-x 19
-y 53
-end
-arch big_dragon_ancient
-x 19
-y 62
-end
-arch big_dragon_ancient
-x 19
-y 69
-end
-arch big_dragon_ancient
-x 19
-y 75
-end
-arch big_dragon_ancient
-x 19
-y 84
-end
-arch Cwyvern
-x 20
-y 21
-end
-arch big_dragon_ancient
-x 20
-y 48
-end
-arch Cwyvern
-x 20
-y 51
-end
-arch big_dragon_ancient
-x 20
-y 56
-end
-arch Cwyvern
-x 20
-y 65
-end
-arch big_dragon_ancient
-x 20
-y 72
-end
-arch Cwyvern
-x 21
-y 25
-end
-arch Cwyvern
-x 21
-y 34
-end
-arch big_dragon_ancient
-x 21
-y 42
-end
-arch big_dragon_ancient
-x 21
-y 60
-end
-arch big_dragon_ancient
-x 21
-y 79
-end
-arch Cwyvern
-x 21
-y 83
-end
-arch big_dragon_ancient
-x 22
-y 20
-end
-arch big_dragon_ancient
-x 22
-y 36
-end
-arch Cwyvern
-x 22
-y 39
-end
-arch big_dragon_ancient
-x 22
-y 65
-end
-arch Cwyvern
-x 22
-y 81
-end
-arch big_dragon_ancient
-x 23
-y 24
-end
-arch big_dragon_ancient
-x 23
-y 45
-end
-arch Cwyvern
-x 23
-y 54
-end
-arch Cwyvern
-x 23
-y 67
-end
-arch big_dragon_ancient
-x 23
-y 71
-end
-arch big_dragon_ancient
-x 23
-y 73
-end
-arch Cwyvern
-x 23
-y 75
-end
-arch big_dragon_ancient
-x 23
-y 84
-end
-arch big_dragon_ancient
-x 24
-y 41
-end
-arch big_dragon_ancient
-x 24
-y 49
-end
-arch big_dragon_ancient
-x 24
-y 57
-end
-arch Cwyvern
-x 24
-y 63
-end
-arch Cwyvern
-x 25
-y 18
-end
-arch big_dragon_ancient
-x 25
-y 22
-end
-arch big_dragon_ancient
-x 25
-y 51
-end
-arch Cwyvern
-x 25
-y 76
-end
-arch Cwyvern
-x 25
-y 87
-end
-arch big_dragon_ancient
-x 26
-y 44
-end
-arch Cwyvern
-x 26
-y 82
-end
-arch big_dragon_ancient
-x 27
-y 77
-end
-arch Cwyvern
-x 28
-y 20
-end
-arch Cwyvern
-x 28
-y 75
-end
-arch big_dragon_ancient
-x 28
-y 83
-end
-arch Cwyvern
-x 28
-y 87
-end
-arch Cwyvern
-x 29
-y 55
-end
-arch big_dragon_ancient
-x 29
-y 81
-end
-arch Cwyvern
-x 29
-y 89
-end
-arch big_dragon_ancient
-x 30
-y 52
-end
-arch Cwyvern
-x 31
-y 77
-end
-arch big_dragon_ancient
-x 31
-y 79
-end
-arch big_dragon_ancient
-x 31
-y 88
-end
-arch big_dragon_ancient
-x 32
-y 45
-end
-arch big_dragon_ancient
-x 32
-y 85
-end
-arch big_dragon_ancient
-x 33
-y 78
-end
-arch Cwyvern
-x 33
-y 81
-end
-arch big_dragon_ancient
-x 33
-y 83
-end
-arch big_dragon_ancient
-x 34
-y 43
-end
-arch big_dragon_ancient
-x 34
-y 87
-end
-arch big_dragon_ancient
-x 35
-y 48
-end
-arch Cwyvern
-x 35
-y 53
-end
-arch Cwyvern
-x 35
-y 56
-end
-arch Cwyvern
-x 35
-y 89
-end
-arch Cwyvern
-x 36
-y 82
-end
-arch big_dragon_ancient
-x 37
-y 51
-end
-arch Cwyvern
-x 37
-y 55
-end
-arch Cwyvern
-x 37
-y 78
-end
-arch Cwyvern
-x 37
-y 86
-end
-arch big_dragon_ancient
-x 38
-y 43
-end
-arch Cwyvern
-x 38
-y 46
-end
-arch big_dragon_ancient
-x 38
-y 83
-end
-arch big_dragon_ancient
-x 38
-y 89
-end
-arch Cwyvern
-x 39
-y 41
-end
-arch big_dragon_ancient
-x 39
-y 59
-end
-arch big_dragon_ancient
-x 39
-y 86
-end
-arch big_dragon_ancient
-x 40
-y 46
-end
-arch Cwyvern
-x 40
-y 51
-end
-arch big_dragon_ancient
-x 40
-y 54
-end
-arch Cwyvern
-x 40
-y 79
-end
-arch big_dragon_ancient
-x 40
-y 81
-end
-arch big_dragon_ancient
-x 41
-y 44
-end
-arch Cwyvern
-x 41
-y 48
-end
-arch Cwyvern
-x 41
-y 88
-end
-arch Cwyvern
-x 42
-y 36
-end
-arch big_dragon_ancient
-x 42
-y 84
-end
-arch Cwyvern
-x 43
-y 59
-end
-arch big_dragon_ancient
-x 44
-y 23
-end
-arch big_dragon_ancient
-x 44
-y 38
-end
-arch big_dragon_ancient
-x 44
-y 49
-end
-arch Cwyvern
-x 44
-y 55
-end
-arch big_dragon_ancient
-x 44
-y 62
-end
-arch Cwyvern
-x 45
-y 41
-end
-arch Cwyvern
-x 45
-y 44
-end
-arch Cwyvern
-x 45
-y 46
-end
-arch big_dragon_ancient
-x 45
-y 52
-end
-arch Cwyvern
-x 45
-y 75
-end
-arch Cwyvern
-x 45
-y 81
-end
-arch Cwyvern
-x 45
-y 87
-end
-arch Cwyvern
-x 46
-y 60
-end
-arch Cwyvern
-x 46
-y 77
-end
-arch big_dragon_ancient
-x 47
-y 36
-end
-arch Cwyvern
-x 47
-y 43
-end
-arch big_dragon_ancient
-x 47
-y 73
-end
-arch big_dragon_ancient
-x 47
-y 79
-end
-arch Cwyvern
-x 47
-y 83
-end
-arch big_dragon_ancient
-x 47
-y 85
-end
-arch big_dragon_ancient
-x 48
-y 45
-end
-arch big_dragon_ancient
-x 48
-y 54
-end
-arch big_dragon_ancient
-x 48
-y 56
-end
-arch big_dragon_ancient
-x 48
-y 61
-end
-arch big_dragon_ancient
-x 49
-y 38
-end
-arch Cwyvern
-x 49
-y 69
-end
-arch big_dragon_ancient
-x 50
-y 35
-end
-arch Cwyvern
-x 50
-y 41
-end
-arch Cwyvern
-x 50
-y 52
-end
-arch Cwyvern
-x 50
-y 58
-end
-arch big_dragon_ancient
-x 50
-y 65
-end
-arch big_dragon_ancient
-x 50
-y 67
-end
-arch Cwyvern
-x 50
-y 70
-end
-arch Cwyvern
-x 50
-y 75
-end
-arch Cwyvern
-x 50
-y 83
-end
-arch big_dragon_ancient
-x 51
-y 15
-end
-arch Cwyvern
-x 51
-y 48
-end
-arch big_dragon_ancient
-x 51
-y 54
-end
-arch Cwyvern
-x 51
-y 63
-end
-arch big_dragon_ancient
-x 51
-y 80
-end
-arch big_dragon
-x 52
-y 20
-end
-arch Cwyvern
-x 52
-y 45
-end
-arch big_dragon_ancient
-x 52
-y 61
-end
-arch Cwyvern
-x 52
-y 77
-end
-arch big_dragon_ancient
-x 53
-y 40
-end
-arch big_dragon_ancient
-x 53
-y 42
-end
-arch big_dragon_ancient
-x 53
-y 51
-end
-arch big_dragon_ancient
-x 53
-y 59
-end
-arch Cwyvern
-x 53
-y 70
-end
-arch big_dragon_ancient
-x 53
-y 74
-end
-arch big_dragon_ancient
-x 54
-y 36
-end
-arch Cwyvern
-x 54
-y 46
-end
-arch Cwyvern
-x 54
-y 55
-end
-arch big_dragon_ancient
-x 55
-y 77
-end
-arch big_dragon_ancient
-x 55
-y 79
-end
-arch Cwyvern
-x 56
-y 39
-end
-arch big_dragon_ancient
-x 56
-y 50
-end
-arch Cwyvern
-x 56
-y 81
-end
-arch big_dragon_ancient
-x 57
-y 36
-end
-arch Cwyvern
-x 57
-y 41
-end
-arch big_dragon_ancient
-x 57
-y 43
-end
-arch Cwyvern
-x 57
-y 56
-end
-arch big_dragon_ancient
-x 57
-y 57
-end
-arch Cwyvern
-x 58
-y 53
-end
-arch big_dragon_ancient
-x 58
-y 54
-end
-arch big_dragon_ancient
-x 58
-y 59
-end
-arch Cwyvern
-x 58
-y 61
-end
-arch Cwyvern
-x 58
-y 77
-end
-arch Cwyvern
-x 59
-y 45
-end
-arch big_dragon_ancient
-x 60
-y 40
-end
-arch big_dragon_ancient
-x 61
-y 43
-end
-arch Cwyvern
-x 61
-y 49
-end
-arch big_dragon_ancient
-x 61
-y 51
-end
-arch big_dragon_ancient
-x 61
-y 55
-end
-arch Cwyvern
-x 61
-y 59
-end
-arch Cwyvern
-x 63
-y 48
-end
-arch Cwyvern
-x 63
-y 58
-end
-arch big_dragon
-x 65
-y 15
-end
-arch big_dragon
-x 77
-y 48
 end

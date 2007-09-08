@@ -437,6 +437,12 @@ arch flagstone
 x 4
 y 9
 end
+arch dread
+name Heavy Dread
+x 4
+y 9
+level 110
+end
 arch flagstone
 x 4
 y 10
@@ -983,10 +989,4 @@ end
 arch blocked
 x 10
 y 13
-end
-arch dread
-name Heavy Dread
-x 4
-y 9
-level 110
 end

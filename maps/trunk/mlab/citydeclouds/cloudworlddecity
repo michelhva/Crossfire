@@ -20865,6 +20865,10 @@ face fog.111
 x 18
 y 15
 end
+arch big_dragon
+x 18
+y 15
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -25967,6 +25971,10 @@ face fog.111
 x 21
 y 64
 end
+arch big_dragon
+x 21
+y 64
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -30057,6 +30065,10 @@ face fog.111
 x 24
 y 20
 end
+arch big_dragon
+x 24
+y 20
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -36955,6 +36967,20 @@ y 107
 move_block 0
 blocksview 0
 end
+arch dragon_exit
+name dragon to Navar
+name_pl dragon express
+slaying /world/world_121_116
+msg
+Grrr
+You awake outside the gates of Navar.
+Was it all a dream?
+endmsg
+hp 33
+sp 46
+x 28
+y 108
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -36982,6 +37008,16 @@ name woodfloor
 name_pl woodfloor
 x 28
 y 111
+end
+arch dragon_exit
+name docked dragon
+name_pl docked dragon
+msg
+@match *
+zzzzzzzzz
+endmsg
+x 28
+y 112
 end
 arch blocked
 name nothing
@@ -43652,6 +43688,20 @@ y 107
 move_block 0
 blocksview 0
 end
+arch dragon_exit
+name dragon to Wolfsburg
+name_pl dragon express
+slaying /world/world_128_108
+msg
+Grrr
+You awake outside the gates of Wolfsburg.
+Was it all a dream?
+endmsg
+hp 27
+sp 48
+x 33
+y 108
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -43679,6 +43729,21 @@ name woodfloor
 name_pl woodfloor
 x 33
 y 111
+end
+arch dragon_exit
+name dragon to Scorn
+name_pl dragon express
+slaying /world/world_105_115
+msg
+GARRRR!!
+SNARL!!!!!
+You awake outside the gates of Scorn.
+Was it all a dream?
+endmsg
+hp 24
+sp 37
+x 33
+y 112
 end
 arch blocked
 name nothing
@@ -51470,6 +51535,20 @@ y 107
 move_block 0
 blocksview 0
 end
+arch dragon_exit
+name dragon to Brest
+name_pl dragon express
+slaying /world/world_107_123
+msg
+GAHRRR SNARL!!!! GRRRRR!!!!
+You awake outside the gates of Brest.
+Was it all a dream?
+endmsg
+hp 21
+sp 12
+x 38
+y 108
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -51497,6 +51576,20 @@ name woodfloor
 name_pl woodfloor
 x 38
 y 111
+end
+arch dragon_exit
+name dragon to Darcap
+name_pl dragon express
+slaying /world/world_116_102
+msg
+Grrrrrrrrrrrrrr
+You awake outside the gates of Darcap.
+Was it all a dream?
+endmsg
+hp 27
+sp 48
+x 38
+y 112
 end
 arch blocked
 name nothing
@@ -67694,6 +67787,10 @@ arch grass
 x 48
 y 81
 end
+arch courthouse
+x 48
+y 81
+end
 arch grass
 x 48
 y 82
@@ -67711,6 +67808,10 @@ x 48
 y 85
 end
 arch grass
+x 48
+y 86
+end
+arch prison
 x 48
 y 86
 end
@@ -67763,6 +67864,10 @@ x 48
 y 94
 end
 arch grass
+x 48
+y 95
+end
+arch barrack_up
 x 48
 y 95
 end
@@ -67923,6 +68028,11 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 48
+y 108
+end
+arch barn2
+name hangar
 x 48
 y 108
 end
@@ -70928,6 +71038,10 @@ arch grass
 x 50
 y 92
 end
+arch fort
+x 50
+y 92
+end
 arch grass
 x 50
 y 93
@@ -70957,6 +71071,10 @@ x 50
 y 98
 end
 arch grass
+x 50
+y 99
+end
+arch barrack_long
 x 50
 y 99
 end
@@ -71762,6 +71880,10 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 51
+y 33
+end
+arch big_dragon
 x 51
 y 33
 end
@@ -77532,6 +77654,10 @@ arch grass
 x 54
 y 95
 end
+arch barrack_up
+x 54
+y 95
+end
 arch grass
 x 54
 y 96
@@ -79643,6 +79769,14 @@ move_block 0
 blocksview 0
 end
 arch fog
+x 55
+y 107
+end
+arch collesium
+name Chess Collesium
+slaying misc/cwdcchessarenaa2
+hp 31
+sp 13
 x 55
 y 107
 end
@@ -83158,6 +83292,10 @@ arch grass
 x 57
 y 93
 end
+arch barrack_up
+x 57
+y 93
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -83179,6 +83317,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 57
+y 95
+end
+arch barrack_up
 x 57
 y 95
 end
@@ -84216,6 +84358,10 @@ face fog.111
 x 58
 y 30
 end
+arch big_dragon
+x 58
+y 30
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -85037,6 +85183,10 @@ arch grass
 x 58
 y 93
 end
+arch barrack_up
+x 58
+y 93
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -85058,6 +85208,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 58
+y 95
+end
+arch barrack_up
 x 58
 y 95
 end
@@ -86761,6 +86915,10 @@ arch grass
 x 59
 y 76
 end
+arch temple1
+x 59
+y 76
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -86914,6 +87072,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 59
+y 89
+end
+arch prison
 x 59
 y 89
 end
@@ -87264,6 +87426,18 @@ face fog.111
 x 59
 y 112
 end
+arch keep
+name Cloud World Keep
+slaying keep/cwdcrandkeep1
+msg
+It is ... quiet here... the doors
+unlocked... but uninviting.
+endmsg
+hp 12
+sp 21
+x 59
+y 112
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -87559,6 +87733,14 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 59
+y 133
+end
+arch fort
+name Castle of the Marquis
+slaying castle/cwdccastleofmarquis1
+hp 32
+sp 57
 x 59
 y 133
 end
@@ -88883,6 +89065,10 @@ arch grass
 x 60
 y 84
 end
+arch palace
+x 60
+y 84
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -88982,6 +89168,10 @@ arch grass
 x 60
 y 92
 end
+arch store_general
+x 60
+y 92
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -89003,6 +89193,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 60
+y 94
+end
+arch store_general
 x 60
 y 94
 end
@@ -89054,6 +89248,10 @@ move_block 0
 blocksview 0
 end
 arch flagstone
+x 60
+y 98
+end
+arch house_largish
 x 60
 y 98
 end
@@ -93011,6 +93209,10 @@ arch grass
 x 62
 y 89
 end
+arch guild
+x 62
+y 89
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -93050,6 +93252,10 @@ arch grass
 x 62
 y 92
 end
+arch store_general
+x 62
+y 92
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -93071,6 +93277,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 62
+y 94
+end
+arch store_general
 x 62
 y 94
 end
@@ -95017,6 +95227,10 @@ arch grass
 x 63
 y 87
 end
+arch guild
+x 63
+y 87
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -95113,6 +95327,10 @@ move_block 0
 blocksview 0
 end
 arch grass
+x 63
+y 95
+end
+arch outpost_tower
 x 63
 y 95
 end
@@ -95152,6 +95370,10 @@ move_block 0
 blocksview 0
 end
 arch flagstone
+x 63
+y 98
+end
+arch house_largish
 x 63
 y 98
 end
@@ -95668,6 +95890,12 @@ face fog.111
 x 63
 y 132
 end
+arch barrack_up
+name Guest House
+name_pl Guest House
+x 63
+y 132
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -95680,6 +95908,15 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 63
+y 133
+end
+arch barrack_long
+name Guest House
+name_pl Guest House
+slaying cwdcguestofmarquis1
+hp 43
+sp 40
 x 63
 y 133
 end
@@ -100788,6 +101025,14 @@ face fog.111
 x 66
 y 38
 end
+arch wizard_tower
+name top of very tall tower
+slaying /navar_city/mlab/tavern
+hp 1
+sp 20
+x 66
+y 38
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -102089,6 +102334,12 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 66
+y 109
+end
+arch stronghold
+name gold repository
+name_pl gold repository
 x 66
 y 109
 end
@@ -105046,6 +105297,10 @@ face fog.111
 x 68
 y 26
 end
+arch big_dragon
+x 68
+y 26
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -106000,6 +106255,10 @@ arch grass
 x 68
 y 83
 end
+arch university
+x 68
+y 83
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -106073,6 +106332,10 @@ x 68
 y 87
 end
 arch grass
+x 68
+y 87
+end
+arch temple1
 x 68
 y 87
 end
@@ -106111,6 +106374,10 @@ x 68
 y 89
 end
 arch grass
+x 68
+y 89
+end
+arch temple1
 x 68
 y 89
 end
@@ -106149,6 +106416,10 @@ x 68
 y 91
 end
 arch grass
+x 68
+y 91
+end
+arch barrack_long
 x 68
 y 91
 end
@@ -106168,6 +106439,10 @@ x 68
 y 92
 end
 arch grass
+x 68
+y 92
+end
+arch l_shop1
 x 68
 y 92
 end
@@ -108342,6 +108617,10 @@ arch grass
 x 69
 y 96
 end
+arch church
+x 69
+y 96
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -110286,6 +110565,10 @@ arch grass
 x 70
 y 87
 end
+arch temple1
+x 70
+y 87
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -110321,6 +110604,10 @@ x 70
 y 89
 end
 arch grass
+x 70
+y 89
+end
+arch temple1
 x 70
 y 89
 end
@@ -110359,6 +110646,10 @@ x 70
 y 91
 end
 arch grass
+x 70
+y 91
+end
+arch barrack_long
 x 70
 y 91
 end
@@ -110378,6 +110669,10 @@ x 70
 y 92
 end
 arch grass
+x 70
+y 92
+end
+arch l_shop1
 x 70
 y 92
 end
@@ -114572,6 +114867,10 @@ arch grass
 x 72
 y 91
 end
+arch barrack_long
+x 72
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -114588,6 +114887,10 @@ x 72
 y 92
 end
 arch grass
+x 72
+y 92
+end
+arch l_shop1
 x 72
 y 92
 end
@@ -116653,6 +116956,10 @@ arch grass
 x 73
 y 91
 end
+arch barrack_long
+x 73
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -118299,6 +118606,10 @@ arch grass
 x 74
 y 77
 end
+arch a_civic
+x 74
+y 77
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -118581,6 +118892,10 @@ arch grass
 x 74
 y 91
 end
+arch barrack_long
+x 74
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -118600,6 +118915,10 @@ arch grass
 x 74
 y 92
 end
+arch barrack_long
+x 74
+y 92
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -118616,6 +118935,10 @@ x 74
 y 93
 end
 arch grass
+x 74
+y 93
+end
+arch barrack_long
 x 74
 y 93
 end
@@ -120454,6 +120777,10 @@ arch grass
 x 75
 y 91
 end
+arch barrack_long
+x 75
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -122289,6 +122616,10 @@ arch grass
 x 76
 y 89
 end
+arch courthouse
+x 76
+y 89
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -122324,6 +122655,10 @@ x 76
 y 91
 end
 arch grass
+x 76
+y 91
+end
+arch barrack_long
 x 76
 y 91
 end
@@ -122343,6 +122678,10 @@ x 76
 y 92
 end
 arch grass
+x 76
+y 92
+end
+arch barrack_long
 x 76
 y 92
 end
@@ -122362,6 +122701,10 @@ x 76
 y 93
 end
 arch grass
+x 76
+y 93
+end
+arch barrack_long
 x 76
 y 93
 end
@@ -124367,6 +124710,10 @@ arch grass
 x 77
 y 91
 end
+arch barrack_long
+x 77
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -124402,6 +124749,10 @@ x 77
 y 93
 end
 arch grass
+x 77
+y 93
+end
+arch barrack_long
 x 77
 y 93
 end
@@ -126390,6 +126741,10 @@ arch grass
 x 78
 y 91
 end
+arch barrack_long
+x 78
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -126409,6 +126764,10 @@ arch grass
 x 78
 y 92
 end
+arch barrack_long
+x 78
+y 92
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -126425,6 +126784,10 @@ x 78
 y 93
 end
 arch grass
+x 78
+y 93
+end
+arch barrack_long
 x 78
 y 93
 end
@@ -134308,6 +134671,14 @@ face fog.111
 x 82
 y 91
 end
+arch guild
+name Town Haus
+slaying apartment/cwdctownhaus1lvl1
+hp 15
+sp 22
+x 82
+y 91
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -137758,6 +138129,10 @@ arch marble
 x 84
 y 98
 end
+arch barrack_long
+x 84
+y 98
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -139353,6 +139728,14 @@ face fog.111
 x 85
 y 88
 end
+arch guild
+name Town Haus
+slaying apartment/cwdctownhaus3lvl1
+hp 15
+sp 22
+x 85
+y 88
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -139392,6 +139775,14 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 85
+y 91
+end
+arch store_alchemy
+name Potion Shop
+slaying shops/cwdcpotionshop1
+hp 14
+sp 18
 x 85
 y 91
 end
@@ -139434,6 +139825,14 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 85
+y 94
+end
+arch guild
+name Town Haus
+slaying apartment/cwdctownhaus2lvl1
+hp 15
+sp 22
 x 85
 y 94
 end
@@ -139503,6 +139902,10 @@ arch marble
 x 85
 y 99
 end
+arch barrack_long
+x 85
+y 99
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -139520,6 +139923,10 @@ move_block 0
 blocksview 0
 end
 arch marble
+x 85
+y 100
+end
+arch barrack_long
 x 85
 y 100
 end
@@ -141146,6 +141553,10 @@ arch marble
 x 86
 y 98
 end
+arch barrack_long
+x 86
+y 98
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -142858,6 +143269,14 @@ face fog.111
 x 87
 y 99
 end
+arch guild
+name Town Haus
+slaying apartment/cwdctownhaus4lvl1
+hp 15
+sp 22
+x 87
+y 99
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -144495,6 +144914,14 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 88
+y 95
+end
+arch store_general
+name General Shop
+slaying shops/cwdcgenshop1
+hp 14
+sp 18
 x 88
 y 95
 end
@@ -149587,6 +150014,12 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 91
+y 91
+end
+arch l_shop1
+name mansion
+name_pl mansion
 x 91
 y 91
 end
@@ -206657,6 +207090,10 @@ face fog.111
 x 125
 y 6
 end
+arch big_dragon
+x 125
+y 6
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -207997,6 +208434,20 @@ arch evergreens
 name cloud
 name_pl cloud
 face fog.111
+x 125
+y 115
+end
+arch s_inn
+name Snow Cloud Cafe
+slaying shops/cdcwcafe1
+msg
+You enter a nice cafe upon a cold,
+almost frozen, cloud.
+Host: Welcome to the Snow Cloud Cafe.
+Where would you like to sit?
+endmsg
+hp 14
+sp 15
 x 125
 y 115
 end
@@ -211669,6 +212120,11 @@ x 128
 y 12
 end
 arch grass
+x 128
+y 12
+end
+arch castle_a
+name Cloud World Castle
 x 128
 y 12
 end
@@ -220663,6 +221119,10 @@ face fog.111
 x 134
 y 8
 end
+arch big_dragon
+x 134
+y 8
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -228190,464 +228650,4 @@ x 139
 y 139
 move_block 0
 blocksview 0
-end
-arch big_dragon
-x 18
-y 15
-end
-arch big_dragon
-x 21
-y 64
-end
-arch big_dragon
-x 24
-y 20
-end
-arch dragon_exit
-name dragon to Navar
-name_pl dragon express
-slaying /world/world_121_116
-msg
-Grrr
-You awake outside the gates of Navar.
-Was it all a dream?
-endmsg
-hp 33
-sp 46
-x 28
-y 108
-end
-arch dragon_exit
-name docked dragon
-name_pl docked dragon
-msg
-@match *
-zzzzzzzzz
-endmsg
-x 28
-y 112
-end
-arch dragon_exit
-name dragon to Wolfsburg
-name_pl dragon express
-slaying /world/world_128_108
-msg
-Grrr
-You awake outside the gates of Wolfsburg.
-Was it all a dream?
-endmsg
-hp 27
-sp 48
-x 33
-y 108
-end
-arch dragon_exit
-name dragon to Scorn
-name_pl dragon express
-slaying /world/world_105_115
-msg
-GARRRR!!
-SNARL!!!!!
-You awake outside the gates of Scorn.
-Was it all a dream?
-endmsg
-hp 24
-sp 37
-x 33
-y 112
-end
-arch dragon_exit
-name dragon to Brest
-name_pl dragon express
-slaying /world/world_107_123
-msg
-GAHRRR SNARL!!!! GRRRRR!!!!
-You awake outside the gates of Brest.
-Was it all a dream?
-endmsg
-hp 21
-sp 12
-x 38
-y 108
-end
-arch dragon_exit
-name dragon to Darcap
-name_pl dragon express
-slaying /world/world_116_102
-msg
-Grrrrrrrrrrrrrr
-You awake outside the gates of Darcap.
-Was it all a dream?
-endmsg
-hp 27
-sp 48
-x 38
-y 112
-end
-arch courthouse
-x 48
-y 81
-end
-arch prison
-x 48
-y 86
-end
-arch barrack_up
-x 48
-y 95
-end
-arch barn2
-name hangar
-x 48
-y 108
-end
-arch fort
-x 50
-y 92
-end
-arch barrack_long
-x 50
-y 99
-end
-arch big_dragon
-x 51
-y 33
-end
-arch barrack_up
-x 54
-y 95
-end
-arch collesium
-name Chess Collesium
-slaying misc/cwdcchessarenaa2
-hp 31
-sp 13
-x 55
-y 107
-end
-arch barrack_up
-x 57
-y 93
-end
-arch barrack_up
-x 57
-y 95
-end
-arch big_dragon
-x 58
-y 30
-end
-arch barrack_up
-x 58
-y 93
-end
-arch barrack_up
-x 58
-y 95
-end
-arch temple1
-x 59
-y 76
-end
-arch prison
-x 59
-y 89
-end
-arch keep
-name Cloud World Keep
-slaying keep/cwdcrandkeep1
-msg
-It is ... quiet here... the doors
-unlocked... but uninviting.
-endmsg
-hp 12
-sp 21
-x 59
-y 112
-end
-arch fort
-name Castle of the Marquis
-slaying castle/cwdccastleofmarquis1
-hp 32
-sp 57
-x 59
-y 133
-end
-arch palace
-x 60
-y 84
-end
-arch store_general
-x 60
-y 92
-end
-arch store_general
-x 60
-y 94
-end
-arch house_largish
-x 60
-y 98
-end
-arch guild
-x 62
-y 89
-end
-arch store_general
-x 62
-y 92
-end
-arch store_general
-x 62
-y 94
-end
-arch guild
-x 63
-y 87
-end
-arch outpost_tower
-x 63
-y 95
-end
-arch house_largish
-x 63
-y 98
-end
-arch barrack_up
-name Guest House
-name_pl Guest House
-x 63
-y 132
-end
-arch barrack_long
-name Guest House
-name_pl Guest House
-slaying cwdcguestofmarquis1
-hp 43
-sp 40
-x 63
-y 133
-end
-arch wizard_tower
-name top of very tall tower
-slaying /navar_city/mlab/tavern
-hp 1
-sp 20
-x 66
-y 38
-end
-arch stronghold
-name gold repository
-name_pl gold repository
-x 66
-y 109
-end
-arch big_dragon
-x 68
-y 26
-end
-arch university
-x 68
-y 83
-end
-arch temple1
-x 68
-y 87
-end
-arch temple1
-x 68
-y 89
-end
-arch barrack_long
-x 68
-y 91
-end
-arch l_shop1
-x 68
-y 92
-end
-arch church
-x 69
-y 96
-end
-arch temple1
-x 70
-y 87
-end
-arch temple1
-x 70
-y 89
-end
-arch barrack_long
-x 70
-y 91
-end
-arch l_shop1
-x 70
-y 92
-end
-arch barrack_long
-x 72
-y 91
-end
-arch l_shop1
-x 72
-y 92
-end
-arch barrack_long
-x 73
-y 91
-end
-arch a_civic
-x 74
-y 77
-end
-arch barrack_long
-x 74
-y 91
-end
-arch barrack_long
-x 74
-y 92
-end
-arch barrack_long
-x 74
-y 93
-end
-arch barrack_long
-x 75
-y 91
-end
-arch courthouse
-x 76
-y 89
-end
-arch barrack_long
-x 76
-y 91
-end
-arch barrack_long
-x 76
-y 92
-end
-arch barrack_long
-x 76
-y 93
-end
-arch barrack_long
-x 77
-y 91
-end
-arch barrack_long
-x 77
-y 93
-end
-arch barrack_long
-x 78
-y 91
-end
-arch barrack_long
-x 78
-y 92
-end
-arch barrack_long
-x 78
-y 93
-end
-arch guild
-name Town Haus
-slaying apartment/cwdctownhaus1lvl1
-hp 15
-sp 22
-x 82
-y 91
-end
-arch barrack_long
-x 84
-y 98
-end
-arch guild
-name Town Haus
-slaying apartment/cwdctownhaus3lvl1
-hp 15
-sp 22
-x 85
-y 88
-end
-arch store_alchemy
-name Potion Shop
-slaying shops/cwdcpotionshop1
-hp 14
-sp 18
-x 85
-y 91
-end
-arch guild
-name Town Haus
-slaying apartment/cwdctownhaus2lvl1
-hp 15
-sp 22
-x 85
-y 94
-end
-arch barrack_long
-x 85
-y 99
-end
-arch barrack_long
-x 85
-y 100
-end
-arch barrack_long
-x 86
-y 98
-end
-arch guild
-name Town Haus
-slaying apartment/cwdctownhaus4lvl1
-hp 15
-sp 22
-x 87
-y 99
-end
-arch store_general
-name General Shop
-slaying shops/cwdcgenshop1
-hp 14
-sp 18
-x 88
-y 95
-end
-arch l_shop1
-name mansion
-name_pl mansion
-x 91
-y 91
-end
-arch big_dragon
-x 125
-y 6
-end
-arch s_inn
-name Snow Cloud Cafe
-slaying shops/cdcwcafe1
-msg
-You enter a nice cafe upon a cold,
-almost frozen, cloud.
-Host: Welcome to the Snow Cloud Cafe.
-Where would you like to sit?
-endmsg
-hp 14
-sp 15
-x 125
-y 115
-end
-arch castle_a
-name Cloud World Castle
-x 128
-y 12
-end
-arch big_dragon
-x 134
-y 8
 end
