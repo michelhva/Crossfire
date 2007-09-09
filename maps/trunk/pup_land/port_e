@@ -1,12 +1,13 @@
 arch map
-region pupland
 name port_e
+region pupland
+width 32
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 00:35:14 1996
 endmsg
-x 32
 end
 arch sea
 move_block 0
@@ -131,6 +132,10 @@ x 2
 y 2
 move_block 0
 end
+arch big_galleon
+x 2
+y 2
+end
 arch sea
 x 2
 y 3
@@ -144,6 +149,10 @@ arch sea
 x 2
 y 5
 move_block 0
+end
+arch big_galleon
+x 2
+y 5
 end
 arch sea
 x 2
@@ -337,6 +346,10 @@ arch cobblestones2
 x 4
 y 11
 end
+arch barn
+x 4
+y 11
+end
 arch cobblestones2
 x 4
 y 12
@@ -428,6 +441,10 @@ x 6
 y 2
 move_block 0
 end
+arch longship
+x 6
+y 2
+end
 arch sea
 x 6
 y 3
@@ -437,6 +454,10 @@ x 6
 y 4
 move_block 0
 end
+arch longship
+x 6
+y 4
+end
 arch sea
 x 6
 y 5
@@ -445,6 +466,10 @@ arch sea
 x 6
 y 6
 move_block 0
+end
+arch longship
+x 6
+y 6
 end
 arch cobblestones2
 x 6
@@ -463,6 +488,10 @@ x 6
 y 10
 end
 arch cobblestones2
+x 6
+y 11
+end
+arch barn
 x 6
 y 11
 end
@@ -636,6 +665,10 @@ arch cobblestones2
 x 8
 y 11
 end
+arch barn
+x 8
+y 11
+end
 arch cobblestones2
 x 8
 y 12
@@ -727,25 +760,47 @@ x 10
 y 2
 move_block 0
 end
+arch rowboat
+hp 1
+sp 1
+x 10
+y 2
+end
 arch sea
 x 10
 y 3
 move_block 0
+end
+arch rowboat
+x 10
+y 3
 end
 arch sea
 x 10
 y 4
 move_block 0
 end
+arch rowboat
+x 10
+y 4
+end
 arch sea
 x 10
 y 5
 move_block 0
 end
+arch rowboat
+x 10
+y 5
+end
 arch sea
 x 10
 y 6
 move_block 0
+end
+arch rowboat
+x 10
+y 6
 end
 arch cobblestones2
 x 10
@@ -1030,6 +1085,10 @@ x 14
 y 2
 move_block 0
 end
+arch s_ship
+x 14
+y 2
+end
 arch sea
 x 14
 y 3
@@ -1043,6 +1102,14 @@ arch sea
 x 14
 y 5
 move_block 0
+end
+arch s_ship
+name To Nurnberg
+slaying nurnberg/city
+hp 1
+sp 26
+x 14
+y 5
 end
 arch sea
 x 14
@@ -1345,10 +1412,18 @@ x 18
 y 2
 move_block 0
 end
+arch fishboat
+x 18
+y 2
+end
 arch sea
 x 18
 y 3
 move_block 0
+end
+arch fishboat
+x 18
+y 3
 end
 arch sea
 x 18
@@ -1359,10 +1434,18 @@ x 18
 y 5
 move_block 0
 end
+arch fishboat
+x 18
+y 5
+end
 arch sea
 x 18
 y 6
 move_block 0
+end
+arch fishboat
+x 18
+y 6
 end
 arch cobblestones2
 x 18
@@ -1650,6 +1733,10 @@ x 22
 y 3
 move_block 0
 end
+arch big_galleon
+x 22
+y 3
+end
 arch sea
 x 22
 y 4
@@ -1659,6 +1746,10 @@ arch sea
 x 22
 y 5
 move_block 0
+end
+arch big_galleon
+x 22
+y 5
 end
 arch sea
 x 22
@@ -1753,6 +1844,10 @@ x 23
 y 10
 end
 arch cobblestones2
+x 23
+y 11
+end
+arch barn
 x 23
 y 11
 end
@@ -1915,6 +2010,10 @@ arch cobblestones2
 x 25
 y 11
 end
+arch barn
+x 25
+y 11
+end
 arch cobblestones2
 x 25
 y 12
@@ -2056,8 +2155,8 @@ arch wizard
 x 27
 y 9
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch cobblestones2
@@ -2065,6 +2164,10 @@ x 27
 y 10
 end
 arch cobblestones2
+x 27
+y 11
+end
+arch barn
 x 27
 y 11
 end
@@ -2390,106 +2493,4 @@ end
 arch sea1
 x 31
 y 15
-end
-arch big_galleon
-x 2
-y 2
-end
-arch big_galleon
-x 2
-y 5
-end
-arch barn
-x 4
-y 11
-end
-arch longship
-x 6
-y 2
-end
-arch longship
-x 6
-y 4
-end
-arch longship
-x 6
-y 6
-end
-arch barn
-x 6
-y 11
-end
-arch barn
-x 8
-y 11
-end
-arch rowboat
-hp 1
-sp 1
-x 10
-y 2
-end
-arch rowboat
-x 10
-y 3
-end
-arch rowboat
-x 10
-y 4
-end
-arch rowboat
-x 10
-y 5
-end
-arch rowboat
-x 10
-y 6
-end
-arch s_ship
-x 14
-y 2
-end
-arch s_ship
-name To Nurnberg
-slaying nurnberg/city
-hp 1
-sp 26
-x 14
-y 5
-end
-arch fishboat
-x 18
-y 2
-end
-arch fishboat
-x 18
-y 3
-end
-arch fishboat
-x 18
-y 5
-end
-arch fishboat
-x 18
-y 6
-end
-arch big_galleon
-x 22
-y 3
-end
-arch big_galleon
-x 22
-y 5
-end
-arch barn
-x 23
-y 11
-end
-arch barn
-x 25
-y 11
-end
-arch barn
-x 27
-y 11
 end
