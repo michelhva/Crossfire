@@ -5766,8 +5766,8 @@ dam 12
 x 23
 y 13
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch mountain
 x 23
@@ -7525,8 +7525,8 @@ dam 12
 x 30
 y 15
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch brush
 x 30
@@ -8012,8 +8012,8 @@ dam 12
 x 32
 y 8
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch brush
 x 32
@@ -9031,8 +9031,8 @@ dam 12
 x 36
 y 14
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch marsh
 x 36
@@ -10009,6 +10009,17 @@ arch light3
 x 40
 y 13
 end
+arch temple_ruin
+name Ruined Temple
+slaying /dungeons/monkey_temple/m_temple1
+msg
+Ook. Oook.  Aka.  Akaaa.
+endmsg
+hp 1
+sp 11
+x 40
+y 13
+end
 arch brush
 x 40
 y 14
@@ -10733,8 +10744,8 @@ dam 12
 x 43
 y 8
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch jungle_1
 x 43
@@ -10992,8 +11003,8 @@ dam 12
 x 44
 y 7
 level 5
-unaggressive 1
 pick_up 4
+unaggressive 1
 end
 arch jungle_1
 x 44
@@ -12449,15 +12460,4 @@ arch mountain2
 x 49
 y 49
 elevation 9015
-end
-arch temple_ruin
-name Ruined Temple
-slaying /dungeons/monkey_temple/m_temple1
-msg
-Ook. Oook.  Aka.  Akaaa.
-endmsg
-hp 1
-sp 11
-x 40
-y 13
 end

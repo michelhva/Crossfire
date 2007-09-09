@@ -9,258 +9,206 @@ tile_path_3 world_126_119
 tile_path_4 world_125_118
 end
 arch sea
-x 0
-y 0
 elevation -1652
 end
 arch sea
-x 0
 y 1
 elevation -1527
 end
 arch sea
-x 0
 y 2
 elevation -1467
 end
 arch sea
-x 0
 y 3
 elevation -1432
 end
 arch sea
-x 0
 y 4
 elevation -1394
 end
 arch sea
-x 0
 y 5
 elevation -1347
 end
 arch sea
-x 0
 y 6
 elevation -1288
 end
 arch sea
-x 0
 y 7
 elevation -1213
 end
 arch sea
-x 0
 y 8
 elevation -1120
 end
 arch sea
-x 0
 y 9
 elevation -1007
 end
 arch sea
-x 0
 y 10
 elevation -874
 end
 arch sea
-x 0
 y 11
 elevation -726
 end
 arch sea
-x 0
 y 12
 elevation -569
 end
 arch sea
-x 0
 y 13
 elevation -419
 end
 arch sea
-x 0
 y 14
 elevation -295
 end
 arch sea
-x 0
 y 15
 elevation -208
 end
 arch sea
-x 0
 y 16
 elevation -152
 end
 arch sea
-x 0
 y 17
 elevation -108
 end
 arch shallow_sea
-x 0
 y 18
 elevation -61
 end
 arch shallow_sea
-x 0
 y 19
 elevation -9
 end
 arch desert
-x 0
 y 20
 elevation 153
 end
 arch desert
-x 0
 y 21
 elevation 957
 end
 arch tree
-x 0
 y 22
 elevation 1585
 end
 arch hills
-x 0
 y 23
 elevation 1900
 end
 arch hills
-x 0
 y 24
 elevation 1085
 end
 arch desert
-x 0
 y 25
 elevation 772
 end
 arch desert
-x 0
 y 26
 elevation 106
 end
 arch desert
-x 0
 y 27
 elevation 231
 end
 arch hills
-x 0
 y 28
 elevation 1292
 end
 arch hills
-x 0
 y 29
 elevation 1840
 end
 arch steppe
-x 0
 y 30
 elevation 3507
 end
 arch steppe
-x 0
 y 31
 elevation 4088
 end
 arch hills_rocky
-x 0
 y 32
 elevation 4025
 end
 arch hills_rocky
-x 0
 y 33
 elevation 3220
 end
 arch hills
-x 0
 y 34
 elevation 1660
 end
 arch shallow_sea
-x 0
 y 35
 elevation -10
 end
 arch sea
-x 0
 y 36
 elevation -643
 end
 arch sea
-x 0
 y 37
 elevation -1229
 end
 arch sea
-x 0
 y 38
 elevation -1762
 end
 arch sea
-x 0
 y 39
 elevation -2253
 end
 arch sea
-x 0
 y 40
 elevation -2706
 end
 arch sea
-x 0
 y 41
 elevation -3122
 end
 arch sea
-x 0
 y 42
 elevation -3504
 end
 arch sea
-x 0
 y 43
 elevation -3855
 end
 arch sea
-x 0
 y 44
 elevation -4177
 end
 arch sea
-x 0
 y 45
 elevation -4472
 end
 arch sea
-x 0
 y 46
 elevation -4739
 end
 arch sea
-x 0
 y 47
 elevation -4976
 end
 arch deep_sea
-x 0
 y 48
 elevation -5180
 end
 arch deep_sea
-x 0
 y 49
 elevation -5345
 end
 arch sea
 x 1
-y 0
 elevation -978
 end
 arch sea
@@ -510,7 +458,6 @@ elevation -5703
 end
 arch brush
 x 2
-y 0
 elevation 114
 end
 arch sea
@@ -760,7 +707,6 @@ elevation -6039
 end
 arch brush
 x 3
-y 0
 elevation 705
 end
 arch shallow_sea
@@ -1010,7 +956,6 @@ elevation -6353
 end
 arch brush
 x 4
-y 0
 elevation 824
 end
 arch grass
@@ -1260,7 +1205,6 @@ elevation -6643
 end
 arch grass
 x 5
-y 0
 elevation 234
 end
 arch grass
@@ -1510,7 +1454,6 @@ elevation -6909
 end
 arch brush
 x 6
-y 0
 elevation 291
 end
 arch brush
@@ -1760,7 +1703,6 @@ elevation -7149
 end
 arch brush
 x 7
-y 0
 elevation 886
 end
 arch brush
@@ -2010,7 +1952,6 @@ elevation -7360
 end
 arch tree
 x 8
-y 0
 elevation 1057
 end
 arch brush
@@ -2260,7 +2201,6 @@ elevation -7540
 end
 arch brush
 x 9
-y 0
 elevation 899
 end
 arch brush
@@ -2510,7 +2450,6 @@ elevation -7686
 end
 arch brush
 x 10
-y 0
 elevation 525
 end
 arch brush
@@ -2760,7 +2699,6 @@ elevation -7796
 end
 arch brush
 x 11
-y 0
 elevation 152
 end
 arch shallow_sea
@@ -3010,7 +2948,6 @@ elevation -7867
 end
 arch shallow_sea
 x 12
-y 0
 elevation -10
 end
 arch shallow_sea
@@ -3260,7 +3197,6 @@ elevation -7897
 end
 arch shallow_sea
 x 13
-y 0
 elevation -69
 end
 arch sea
@@ -3510,7 +3446,6 @@ elevation -7884
 end
 arch sea
 x 14
-y 0
 elevation -198
 end
 arch sea
@@ -3760,7 +3695,6 @@ elevation -7828
 end
 arch sea
 x 15
-y 0
 elevation -301
 end
 arch sea
@@ -4010,7 +3944,6 @@ elevation -7726
 end
 arch sea
 x 16
-y 0
 elevation -364
 end
 arch sea
@@ -4260,7 +4193,6 @@ elevation -7579
 end
 arch sea
 x 17
-y 0
 elevation -385
 end
 arch sea
@@ -4510,7 +4442,6 @@ elevation -7388
 end
 arch sea
 x 18
-y 0
 elevation -369
 end
 arch sea
@@ -4760,7 +4691,6 @@ elevation -7153
 end
 arch sea
 x 19
-y 0
 elevation -326
 end
 arch sea
@@ -5010,7 +4940,6 @@ elevation -6876
 end
 arch sea
 x 20
-y 0
 elevation -262
 end
 arch sea
@@ -5260,7 +5189,6 @@ elevation -6559
 end
 arch sea
 x 21
-y 0
 elevation -185
 end
 arch sea
@@ -5510,7 +5438,6 @@ elevation -6205
 end
 arch shallow_sea
 x 22
-y 0
 elevation -99
 end
 arch shallow_sea
@@ -5760,7 +5687,6 @@ elevation -5819
 end
 arch shallow_sea
 x 23
-y 0
 elevation -10
 end
 arch brush
@@ -6010,7 +5936,6 @@ elevation -5405
 end
 arch brush
 x 24
-y 0
 elevation 349
 end
 arch tree
@@ -6260,7 +6185,6 @@ elevation -4969
 end
 arch tree
 x 25
-y 0
 elevation 1171
 end
 arch tree
@@ -6510,7 +6434,6 @@ elevation -4519
 end
 arch brush
 x 26
-y 0
 elevation 532
 end
 arch tree
@@ -6760,7 +6683,6 @@ elevation -4066
 end
 arch brush
 x 27
-y 0
 elevation 368
 end
 arch brush
@@ -7010,7 +6932,6 @@ elevation -3625
 end
 arch brush
 x 28
-y 0
 elevation 128
 end
 arch desert
@@ -7260,7 +7181,6 @@ elevation -3217
 end
 arch evergreens
 x 29
-y 0
 elevation 1483
 end
 arch hills_rocky
@@ -7510,7 +7430,6 @@ elevation -2866
 end
 arch tree
 x 30
-y 0
 elevation 2225
 end
 arch tree
@@ -7760,7 +7679,6 @@ elevation -2597
 end
 arch hills_rocky
 x 31
-y 0
 elevation 2795
 end
 arch tree
@@ -8010,7 +7928,6 @@ elevation -2415
 end
 arch steppe
 x 32
-y 0
 elevation 3421
 end
 arch tree
@@ -8260,7 +8177,6 @@ elevation -2311
 end
 arch steppe
 x 33
-y 0
 elevation 3265
 end
 arch tree
@@ -8510,7 +8426,6 @@ elevation -2264
 end
 arch tree
 x 34
-y 0
 elevation 1654
 end
 arch brush
@@ -8760,7 +8675,6 @@ elevation -2251
 end
 arch hills_rocky
 x 35
-y 0
 elevation 2787
 end
 arch brush
@@ -9010,7 +8924,6 @@ elevation -2256
 end
 arch steppe
 x 36
-y 0
 elevation 3069
 end
 arch hills
@@ -9260,7 +9173,6 @@ elevation -2269
 end
 arch hills_rocky
 x 37
-y 0
 elevation 1427
 end
 arch hills
@@ -9510,7 +9422,6 @@ elevation -2286
 end
 arch hills
 x 38
-y 0
 elevation 1506
 end
 arch hills_rocky
@@ -9760,7 +9671,6 @@ elevation -2304
 end
 arch jungle_1
 x 39
-y 0
 elevation 1267
 end
 arch hills
@@ -10010,7 +9920,6 @@ elevation -2325
 end
 arch hills_rocky
 x 40
-y 0
 elevation 1620
 end
 arch jungle_1
@@ -10260,7 +10169,6 @@ elevation -2355
 end
 arch hills
 x 41
-y 0
 elevation 1172
 end
 arch desert
@@ -10510,7 +10418,6 @@ elevation -2400
 end
 arch desert
 x 42
-y 0
 elevation 494
 end
 arch brush
@@ -10760,7 +10667,6 @@ elevation -2465
 end
 arch desert
 x 43
-y 0
 elevation 11
 end
 arch shallow_sea
@@ -11010,7 +10916,6 @@ elevation -2554
 end
 arch desert
 x 44
-y 0
 elevation 39
 end
 arch shallow_sea
@@ -11260,7 +11165,6 @@ elevation -2668
 end
 arch desert
 x 45
-y 0
 elevation 46
 end
 arch swamp
@@ -11510,7 +11414,6 @@ elevation -2805
 end
 arch desert
 x 46
-y 0
 elevation 856
 end
 arch desert
@@ -11760,7 +11663,6 @@ elevation -2962
 end
 arch hills
 x 47
-y 0
 elevation 1094
 end
 arch shallow_sea
@@ -12010,7 +11912,6 @@ elevation -3136
 end
 arch grass
 x 48
-y 0
 elevation 646
 end
 arch shallow_sea
@@ -12260,7 +12161,6 @@ elevation -3318
 end
 arch sea
 x 49
-y 0
 elevation -248
 end
 arch sea
