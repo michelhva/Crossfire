@@ -3050,6 +3050,13 @@ arch large_stones
 x 12
 y 22
 end
+arch city_tower
+slaying /darcap/town2/tower1
+hp 14
+sp 6
+x 12
+y 22
+end
 arch large_stones
 x 12
 y 23
@@ -3781,6 +3788,14 @@ arch large_stones
 x 15
 y 20
 end
+arch store_general
+name Bob's Bakery
+slaying /darcap/town2/shop_f
+hp 13
+sp 11
+x 15
+y 20
+end
 arch large_stones
 x 15
 y 21
@@ -3794,6 +3809,14 @@ x 15
 y 23
 end
 arch large_stones
+x 15
+y 24
+end
+arch guild
+name Guild of Sages
+slaying /darcap/town2/shop_b
+hp 28
+sp 4
 x 15
 y 24
 end
@@ -12372,27 +12395,4 @@ arch evergreen
 x 49
 y 49
 elevation 2811
-end
-arch city_tower
-slaying /darcap/town2/tower1
-hp 14
-sp 6
-x 12
-y 22
-end
-arch store_general
-name Bob's Bakery
-slaying /darcap/town2/shop_f
-hp 13
-sp 11
-x 15
-y 20
-end
-arch guild
-name Guild of Sages
-slaying /darcap/town2/shop_b
-hp 28
-sp 4
-x 15
-y 24
 end

@@ -8,258 +8,206 @@ tile_path_3 world_117_101
 tile_path_4 world_116_100
 end
 arch sea
-x 0
-y 0
 elevation -1450
 end
 arch sea
-x 0
 y 1
 elevation -625
 end
 arch sea
-x 0
 y 2
 elevation -1544
 end
 arch sea
-x 0
 y 3
 elevation -2033
 end
 arch sea
-x 0
 y 4
 elevation -2415
 end
 arch sea
-x 0
 y 5
 elevation -2721
 end
 arch sea
-x 0
 y 6
 elevation -2972
 end
 arch sea
-x 0
 y 7
 elevation -3179
 end
 arch sea
-x 0
 y 8
 elevation -3348
 end
 arch sea
-x 0
 y 9
 elevation -3485
 end
 arch sea
-x 0
 y 10
 elevation -3592
 end
 arch sea
-x 0
 y 11
 elevation -3671
 end
 arch sea
-x 0
 y 12
 elevation -3721
 end
 arch sea
-x 0
 y 13
 elevation -3742
 end
 arch sea
-x 0
 y 14
 elevation -3732
 end
 arch sea
-x 0
 y 15
 elevation -3689
 end
 arch sea
-x 0
 y 16
 elevation -3609
 end
 arch sea
-x 0
 y 17
 elevation -3489
 end
 arch sea
-x 0
 y 18
 elevation -3324
 end
 arch sea
-x 0
 y 19
 elevation -3108
 end
 arch sea
-x 0
 y 20
 elevation -2831
 end
 arch sea
-x 0
 y 21
 elevation -2484
 end
 arch sea
-x 0
 y 22
 elevation -2051
 end
 arch sea
-x 0
 y 23
 elevation -1543
 end
 arch sea
-x 0
 y 24
 elevation -964
 end
 arch sea
-x 0
 y 25
 elevation -409
 end
 arch desert
-x 0
 y 26
 elevation 112
 end
 arch desert
-x 0
 y 27
 elevation 280
 end
 arch brush
-x 0
 y 28
 elevation 199
 end
 arch sea
-x 0
 y 29
 elevation -926
 end
 arch sea
-x 0
 y 30
 elevation -1754
 end
 arch sea
-x 0
 y 31
 elevation -2363
 end
 arch sea
-x 0
 y 32
 elevation -2854
 end
 arch sea
-x 0
 y 33
 elevation -3267
 end
 arch sea
-x 0
 y 34
 elevation -3626
 end
 arch sea
-x 0
 y 35
 elevation -3946
 end
 arch sea
-x 0
 y 36
 elevation -4235
 end
 arch sea
-x 0
 y 37
 elevation -4499
 end
 arch sea
-x 0
 y 38
 elevation -4741
 end
 arch sea
-x 0
 y 39
 elevation -4964
 end
 arch deep_sea
-x 0
 y 40
 elevation -5168
 end
 arch deep_sea
-x 0
 y 41
 elevation -5353
 end
 arch deep_sea
-x 0
 y 42
 elevation -5520
 end
 arch deep_sea
-x 0
 y 43
 elevation -5666
 end
 arch deep_sea
-x 0
 y 44
 elevation -5792
 end
 arch deep_sea
-x 0
 y 45
 elevation -5896
 end
 arch deep_sea
-x 0
 y 46
 elevation -5980
 end
 arch deep_sea
-x 0
 y 47
 elevation -6042
 end
 arch deep_sea
-x 0
 y 48
 elevation -6082
 end
 arch deep_sea
-x 0
 y 49
 elevation -6101
 end
 arch sea
 x 1
-y 0
 elevation -1794
 end
 arch sea
@@ -509,7 +457,6 @@ elevation -6296
 end
 arch sea
 x 2
-y 0
 elevation -1685
 end
 arch sea
@@ -759,7 +706,6 @@ elevation -6498
 end
 arch sea
 x 3
-y 0
 elevation -1533
 end
 arch sea
@@ -1009,7 +955,6 @@ elevation -6708
 end
 arch sea
 x 4
-y 0
 elevation -1692
 end
 arch sea
@@ -1259,7 +1204,6 @@ elevation -6927
 end
 arch sea
 x 5
-y 0
 elevation -1794
 end
 arch sea
@@ -1509,7 +1453,6 @@ elevation -7156
 end
 arch sea
 x 6
-y 0
 elevation -1686
 end
 arch sea
@@ -1759,7 +1702,6 @@ elevation -7397
 end
 arch sea
 x 7
-y 0
 elevation -1955
 end
 arch sea
@@ -2009,7 +1951,6 @@ elevation -7649
 end
 arch sea
 x 8
-y 0
 elevation -4885
 end
 arch deep_sea
@@ -2259,7 +2200,6 @@ elevation -7914
 end
 arch sea
 x 9
-y 0
 elevation -4980
 end
 arch deep_sea
@@ -2509,7 +2449,6 @@ elevation -8191
 end
 arch deep_sea
 x 10
-y 0
 elevation -5636
 end
 arch deep_sea
@@ -2759,7 +2698,6 @@ elevation -8480
 end
 arch deep_sea
 x 11
-y 0
 elevation -5055
 end
 arch sea
@@ -3009,7 +2947,6 @@ elevation -8780
 end
 arch sea
 x 12
-y 0
 elevation -2783
 end
 arch sea
@@ -3259,7 +3196,6 @@ elevation -9089
 end
 arch sea
 x 13
-y 0
 elevation -2003
 end
 arch sea
@@ -3509,7 +3445,6 @@ elevation -9405
 end
 arch sea
 x 14
-y 0
 elevation -1946
 end
 arch sea
@@ -3759,7 +3694,6 @@ elevation -9727
 end
 arch sea
 x 15
-y 0
 elevation -1892
 end
 arch sea
@@ -4009,7 +3943,6 @@ elevation -10051
 end
 arch sea
 x 16
-y 0
 elevation -4842
 end
 arch sea
@@ -4259,7 +4192,6 @@ elevation -10375
 end
 arch deep_sea
 x 17
-y 0
 elevation -14982
 end
 arch sea
@@ -4509,7 +4441,6 @@ elevation -10695
 end
 arch deep_sea
 x 18
-y 0
 elevation -26843
 end
 arch deep_sea
@@ -4759,7 +4690,6 @@ elevation -11008
 end
 arch deep_sea
 x 19
-y 0
 elevation -13809
 end
 arch deep_sea
@@ -5009,7 +4939,6 @@ elevation -11313
 end
 arch sea
 x 20
-y 0
 elevation -4898
 end
 arch deep_sea
@@ -5259,7 +5188,6 @@ elevation -11605
 end
 arch deep_sea
 x 21
-y 0
 elevation -15135
 end
 arch deep_sea
@@ -5509,7 +5437,6 @@ elevation -11882
 end
 arch deep_sea
 x 22
-y 0
 elevation -9237
 end
 arch deep_sea
@@ -5759,7 +5686,6 @@ elevation -12143
 end
 arch deep_sea
 x 23
-y 0
 elevation -6455
 end
 arch sea
@@ -6009,7 +5935,6 @@ elevation -12386
 end
 arch sea
 x 24
-y 0
 elevation -3503
 end
 arch sea
@@ -6259,7 +6184,6 @@ elevation -12610
 end
 arch sea
 x 25
-y 0
 elevation -2000
 end
 arch sea
@@ -6509,7 +6433,6 @@ elevation -12815
 end
 arch deep_sea
 x 26
-y 0
 elevation -6327
 end
 arch deep_sea
@@ -6759,7 +6682,6 @@ elevation -13000
 end
 arch deep_sea
 x 27
-y 0
 elevation -22131
 end
 arch deep_sea
@@ -7009,7 +6931,6 @@ elevation -13166
 end
 arch deep_sea
 x 28
-y 0
 elevation -13506
 end
 arch deep_sea
@@ -7259,7 +7180,6 @@ elevation -13315
 end
 arch deep_sea
 x 29
-y 0
 elevation -22112
 end
 arch deep_sea
@@ -7509,7 +7429,6 @@ elevation -13448
 end
 arch deep_sea
 x 30
-y 0
 elevation -15017
 end
 arch deep_sea
@@ -7759,7 +7678,6 @@ elevation -13567
 end
 arch sea
 x 31
-y 0
 elevation -4991
 end
 arch deep_sea
@@ -8009,7 +7927,6 @@ elevation -13674
 end
 arch deep_sea
 x 32
-y 0
 elevation -8657
 end
 arch deep_sea
@@ -8259,7 +8176,6 @@ elevation -13772
 end
 arch deep_sea
 x 33
-y 0
 elevation -11575
 end
 arch deep_sea
@@ -8509,7 +8425,6 @@ elevation -13862
 end
 arch deep_sea
 x 34
-y 0
 elevation -6759
 end
 arch deep_sea
@@ -8759,7 +8674,6 @@ elevation -13948
 end
 arch sea
 x 35
-y 0
 elevation -4833
 end
 arch deep_sea
@@ -9009,7 +8923,6 @@ elevation -14032
 end
 arch sea
 x 36
-y 0
 elevation -4273
 end
 arch sea
@@ -9259,7 +9172,6 @@ elevation -14116
 end
 arch sea
 x 37
-y 0
 elevation -2795
 end
 arch sea
@@ -9509,7 +9421,6 @@ elevation -14201
 end
 arch deep_sea
 x 38
-y 0
 elevation -5144
 end
 arch sea
@@ -9759,7 +9670,6 @@ elevation -14289
 end
 arch deep_sea
 x 39
-y 0
 elevation -11038
 end
 arch sea
@@ -10009,7 +9919,6 @@ elevation -14381
 end
 arch deep_sea
 x 40
-y 0
 elevation -19959
 end
 arch sea
@@ -10259,7 +10168,6 @@ elevation -14479
 end
 arch deep_sea
 x 41
-y 0
 elevation -11030
 end
 arch deep_sea
@@ -10509,7 +10417,6 @@ elevation -14582
 end
 arch deep_sea
 x 42
-y 0
 elevation -6460
 end
 arch deep_sea
@@ -10759,7 +10666,6 @@ elevation -14691
 end
 arch sea
 x 43
-y 0
 elevation -4978
 end
 arch deep_sea
@@ -11009,7 +10915,6 @@ elevation -14805
 end
 arch deep_sea
 x 44
-y 0
 elevation -9441
 end
 arch deep_sea
@@ -11259,7 +11164,6 @@ elevation -14924
 end
 arch deep_sea
 x 45
-y 0
 elevation -12459
 end
 arch deep_sea
@@ -11509,7 +11413,6 @@ elevation -15046
 end
 arch deep_sea
 x 46
-y 0
 elevation -14070
 end
 arch deep_sea
@@ -11759,7 +11662,6 @@ elevation -15172
 end
 arch deep_sea
 x 47
-y 0
 elevation -26283
 end
 arch deep_sea
@@ -12009,7 +11911,6 @@ elevation -15299
 end
 arch deep_sea
 x 48
-y 0
 elevation -24556
 end
 arch deep_sea
@@ -12259,7 +12160,6 @@ elevation -15426
 end
 arch deep_sea
 x 49
-y 0
 elevation -15781
 end
 arch deep_sea

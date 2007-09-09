@@ -1,16 +1,16 @@
 arch map
 name world_106_114
+reset_timeout 7200
+difficulty 1
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May 18 22:55:56 2002
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 tile_path_1 world_106_113
 tile_path_2 world_107_114
