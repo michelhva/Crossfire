@@ -1,15 +1,15 @@
 arch map
-region nurnberg
 name fshop
+region nurnberg
+shopitems food:100;flesh:100;*:-90
+shopmax 20000
+width 22
+height 22
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb  9 23:09:38 1996
 endmsg
-x 22
-y 22
-shopitems food:100;flesh:100;*:-90
-shopmax 20000
 end
 arch invis_exit
 slaying city

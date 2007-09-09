@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name townA_mshop
+region lonetown
+width 28
+height 28
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 04:12:24 1996
 endmsg
-x 28
-y 28
 end
 arch grass
 end

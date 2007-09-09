@@ -1,6 +1,8 @@
 arch map
-region lonetown
 name townA_church_ud
+region lonetown
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -142,13 +144,13 @@ y 7
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 1
@@ -341,13 +343,13 @@ y 4
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 3
@@ -405,13 +407,13 @@ y 10
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 3
@@ -687,13 +689,13 @@ y 2
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 6
@@ -753,8 +755,8 @@ hp 10000
 x 6
 y 8
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_floor
@@ -801,13 +803,13 @@ y 14
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 6

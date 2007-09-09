@@ -1,13 +1,13 @@
 arch map
-region pupland
 name grave
+region pupland
+width 15
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Aug  8 17:59:57 1996
 endmsg
-x 15
-y 17
 end
 arch dungeon_magic
 end

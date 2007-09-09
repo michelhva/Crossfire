@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name bank
+region nurnberg
+width 25
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb  9 03:43:25 1996
 endmsg
-width 25
-height 20
 end
 arch grass
 end
@@ -1056,16 +1056,16 @@ y 3
 end
 arch man
 name bank clerk
-face man.171
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.171
 hp 180
-friendly 1
-unaggressive 0
 x 10
 y 3
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 10
@@ -1081,16 +1081,16 @@ y 5
 end
 arch woman
 name bank clerk
-face woman.171
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.171
 hp 180
-friendly 1
-unaggressive 0
 x 10
 y 5
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 10
@@ -1106,16 +1106,16 @@ y 7
 end
 arch woman
 name bank clerk
-face woman.171
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.171
 hp 180
-friendly 1
-unaggressive 0
 x 10
 y 7
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 10
@@ -1234,10 +1234,10 @@ msg
 I'm too busy to answer your queries.
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 11
 y 8
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 11
@@ -1335,16 +1335,16 @@ y 5
 end
 arch woman
 name bank clerk
-face woman.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.131
 hp 180
-friendly 1
-unaggressive 0
 x 12
 y 5
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 12
@@ -1356,16 +1356,16 @@ y 6
 end
 arch woman
 name bank clerk
-face woman.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.131
 hp 180
-friendly 1
-unaggressive 0
 x 12
 y 6
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 12
@@ -1448,10 +1448,10 @@ end
 arch sage
 name President of the bank
 hp 180
-friendly 1
-unaggressive 0
 x 13
 y 1
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 13
@@ -1504,10 +1504,10 @@ msg
 I'm too busy to answer your queries.
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 13
 y 8
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 13
@@ -1605,16 +1605,16 @@ y 5
 end
 arch man
 name bank clerk
-face man.171
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.171
 hp 180
-friendly 1
-unaggressive 0
 x 14
 y 5
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 14
@@ -1626,16 +1626,16 @@ y 6
 end
 arch man
 name bank clerk
-face man.171
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face man.171
 hp 180
-friendly 1
-unaggressive 0
 x 14
 y 6
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 14
@@ -1750,10 +1750,10 @@ msg
 I'm too busy to answer your queries.
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 15
 y 8
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 15
@@ -1843,16 +1843,16 @@ y 3
 end
 arch woman
 name bank clerk
-face woman.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.131
 hp 180
-friendly 1
-unaggressive 0
 x 16
 y 3
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 16
@@ -1876,16 +1876,16 @@ y 7
 end
 arch woman
 name bank clerk
-face woman.131
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
+face woman.131
 hp 180
-friendly 1
-unaggressive 0
 x 16
 y 7
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 16
@@ -1991,22 +1991,22 @@ y 5
 end
 arch man
 name Hoff
-face man.131
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
+title bank teller
 msg
 @match *
 I'm too busy to answer your queries.
 endmsg
-title bank teller
+face man.131
 hp 180
-unaggressive 0
-friendly 1
-stand_still 1
 x 17
 y 5
+friendly 1
+unaggressive 0
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch afloor_left
 x 17
@@ -2119,9 +2119,9 @@ x 18
 y 4
 end
 arch bench_2_1_1
-move_block all
 x 18
 y 4
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -2132,9 +2132,9 @@ x 18
 y 5
 end
 arch bench_2_1_1
-move_block all
 x 18
 y 5
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -2145,9 +2145,9 @@ x 18
 y 6
 end
 arch bench_2_1_1
-move_block all
 x 18
 y 6
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -2597,18 +2597,18 @@ x 22
 y 7
 end
 arch door_look_2
-move_block 0
 x 22
 y 7
+move_block 0
 end
 arch woodfloor
 x 22
 y 8
 end
 arch door_look_2
-move_block 0
 x 22
 y 8
+move_block 0
 end
 arch woodfloor
 x 22

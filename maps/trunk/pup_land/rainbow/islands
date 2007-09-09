@@ -3075,6 +3075,13 @@ arch jungle_2
 x 17
 y 16
 end
+arch tower_a
+slaying station
+hp 7
+sp 14
+x 17
+y 16
+end
 arch grass
 x 17
 y 17
@@ -6188,11 +6195,4 @@ end
 arch sea
 x 34
 y 34
-end
-arch tower_a
-slaying station
-hp 7
-sp 14
-x 17
-y 16
 end

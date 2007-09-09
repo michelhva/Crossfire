@@ -1,12 +1,15 @@
 arch map
+name <unnamed>
+swap_time 5
+difficulty 20
 region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jul 13 00:15:50 1997
 endmsg
-level 20
-value 5
 end
 arch cobblestones2
 end

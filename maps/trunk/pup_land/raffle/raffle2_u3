@@ -1,15 +1,15 @@
 arch map
-region pupland
 name raffle2_u3
+swap_time 5
+reset_timeout 3600
+region pupland
+width 25
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr  1 19:24:57 1997
 endmsg
-width 25
-height 32
-reset_timeout 3600
-swap_time 5
 end
 arch blocked
 end
@@ -181,10 +181,10 @@ end
 arch button_small
 name 1103
 face button_sma.112
-value 1
-connected 1103
 x 1
 y 1
+value 1
+connected 1103
 end
 arch boulder
 x 1
@@ -196,10 +196,10 @@ y 2
 end
 arch spikes_open
 name 1103
-speed 0.500000
-connected 1103
 x 1
 y 3
+speed 0.500000
+connected 1103
 end
 arch boulder
 x 1
@@ -207,11 +207,11 @@ y 3
 end
 arch spikes_closed
 name 1003
+x 1
+y 4
 speed 0.500000
 value 1
 connected 1003
-x 1
-y 4
 end
 arch magic_mouth
 name 1203
@@ -220,22 +220,22 @@ Rufus says:
 Arrgh! You murdered Raffy, my friend.
 Now I'll kill you!
 endmsg
-connected 1203
 x 1
 y 5
+connected 1203
 end
 arch button_small
 name 1203
-connected 1203
 x 1
 y 5
+connected 1203
 end
 arch spikes_open
 name 1003
-speed 0.500000
-connected 1003
 x 1
 y 5
+speed 0.500000
+connected 1003
 end
 arch blocked
 x 1
@@ -297,9 +297,9 @@ x 1
 y 12
 end
 arch t_boulder
-nrof 3
 x 1
 y 12
+nrof 3
 end
 arch dungeon_magic
 x 1
@@ -329,6 +329,10 @@ arch flagstone
 x 1
 y 15
 end
+arch troll
+x 1
+y 15
+end
 arch dungeon_magic
 x 1
 y 16
@@ -342,6 +346,10 @@ x 1
 y 17
 end
 arch flagstone
+x 1
+y 17
+end
+arch troll
 x 1
 y 17
 end
@@ -358,6 +366,10 @@ x 1
 y 19
 end
 arch flagstone
+x 1
+y 19
+end
+arch troll
 x 1
 y 19
 end
@@ -441,10 +453,10 @@ x 1
 y 27
 end
 arch spikes_closed
-speed 0.500000
-connected 1203
 x 1
 y 27
+speed 0.500000
+connected 1203
 end
 arch dungeon_magic
 x 1
@@ -642,10 +654,10 @@ x 2
 y 22
 end
 arch gate_closed_2
-speed 0.500000
-connected 1202
 x 2
 y 22
+speed 0.500000
+connected 1202
 end
 arch dungeon_magic
 x 2
@@ -692,10 +704,10 @@ x 2
 y 27
 end
 arch spikes_closed
-speed 0.500000
-connected 1203
 x 2
 y 27
+speed 0.500000
+connected 1203
 end
 arch dungeon_magic
 x 2
@@ -704,6 +716,19 @@ end
 arch flagstone
 x 2
 y 28
+end
+arch cyclops
+name Rufus
+Wis 3
+x 2
+y 28
+carrying 2100
+arch potion_invulnerability
+end
+arch key2
+name Wizard's key
+slaying raffle2_wizard_door
+end
 end
 arch dungeon_magic
 x 2
@@ -734,10 +759,10 @@ x 3
 end
 arch spikes_open
 name 1103
-speed 0.500000
-connected 1103
 x 3
 y 1
+speed 0.500000
+connected 1103
 end
 arch boulder
 x 3
@@ -749,31 +774,31 @@ y 2
 end
 arch button_small
 name 105
-weight 2
-connected 105
 x 3
 y 3
+weight 2
+connected 105
 end
 arch button_small
 name 101
-connected 101
 x 3
 y 3
+connected 101
 end
 arch spikes_closed
 name 100
-speed 0.500000
-connected 100
 x 3
 y 3
+speed 0.500000
+connected 100
 end
 arch spikes_open
 name 100
+x 3
+y 4
 speed 0.500000
 value 1
 connected 100
-x 3
-y 4
 end
 arch boulder
 x 3
@@ -875,6 +900,10 @@ arch flagstone
 x 3
 y 15
 end
+arch troll
+x 3
+y 15
+end
 arch dungeon_magic
 x 3
 y 16
@@ -888,6 +917,10 @@ x 3
 y 17
 end
 arch flagstone
+x 3
+y 17
+end
+arch troll
 x 3
 y 17
 end
@@ -904,6 +937,10 @@ x 3
 y 19
 end
 arch flagstone
+x 3
+y 19
+end
+arch troll
 x 3
 y 19
 end
@@ -972,10 +1009,10 @@ x 3
 y 27
 end
 arch spikes_closed
-speed 0.500000
-connected 1203
 x 3
 y 27
+speed 0.500000
+connected 1203
 end
 arch dungeon_magic
 x 3
@@ -1018,10 +1055,10 @@ x 4
 end
 arch spikes_closed
 name 1002
-speed 0.500000
-connected 1002
 x 4
 y 1
+speed 0.500000
+connected 1002
 end
 arch blocked
 x 4
@@ -1259,23 +1296,23 @@ name 1202
 msg
 Click! The west gate has opened.
 endmsg
-connected 1202
 x 5
 y 1
+connected 1202
 end
 arch button_small
 name 1202
-connected 1202
 x 5
 y 1
+connected 1202
 end
 arch spikes_open
 name 1002
+x 5
+y 1
 speed 0.500000
 value 1
 connected 1002
-x 5
-y 1
 end
 arch blocked
 x 5
@@ -1283,31 +1320,31 @@ y 2
 end
 arch button_small
 name 106
-weight 2
-connected 106
 x 5
 y 3
+weight 2
+connected 106
 end
 arch button_small
 name 102
-connected 102
 x 5
 y 3
+connected 102
 end
 arch spikes_closed
 name 105
-speed 0.500000
-connected 105
 x 5
 y 3
+speed 0.500000
+connected 105
 end
 arch spikes_open
 name 105
+x 5
+y 4
 speed 0.500000
 value 1
 connected 105
-x 5
-y 4
 end
 arch boulder
 x 5
@@ -1409,6 +1446,10 @@ arch flagstone
 x 5
 y 15
 end
+arch troll
+x 5
+y 15
+end
 arch dungeon_magic
 x 5
 y 16
@@ -1422,6 +1463,10 @@ x 5
 y 17
 end
 arch flagstone
+x 5
+y 17
+end
+arch troll
 x 5
 y 17
 end
@@ -1438,6 +1483,10 @@ x 5
 y 19
 end
 arch flagstone
+x 5
+y 19
+end
+arch troll
 x 5
 y 19
 end
@@ -1527,16 +1576,26 @@ y 28
 end
 arch pedestal
 name 1003
-face pedestal.111
 slaying troll
-value 1
-connected 1003
+face pedestal.111
 x 5
 y 29
+value 1
+connected 1003
 end
 arch small_stones
 x 5
 y 29
+end
+arch troll
+name Raffy
+msg
+@match *
+Help!
+endmsg
+x 5
+y 29
+randomitems none
 end
 arch small_stones
 x 5
@@ -1806,24 +1865,24 @@ y 2
 end
 arch button_small
 name 101
-connected 101
 x 7
 y 3
+connected 101
 end
 arch spikes_closed
 name 106
-speed 0.500000
-connected 106
 x 7
 y 3
+speed 0.500000
+connected 106
 end
 arch spikes_open
 name 106
+x 7
+y 4
 speed 0.500000
 value 1
 connected 106
-x 7
-y 4
 end
 arch boulder
 x 7
@@ -1877,24 +1936,24 @@ x 7
 y 9
 end
 arch mine2
-move_block 0
 x 7
 y 9
+move_block 0
 end
 arch dungeon_magic
 x 7
 y 10
 end
 arch pedestal
-connected 104
 x 7
 y 10
+connected 104
 end
 arch mover_1
-level 1
-attacktype 1
 x 7
 y 10
+level 1
+attacktype 1
 end
 arch flagstone
 x 7
@@ -1903,48 +1962,48 @@ end
 arch pit_open
 hp 15
 sp 12
-connected 104
 x 7
 y 10
+connected 104
 end
 arch dungeon_magic
 x 7
 y 11
 end
 arch mover_5
-level 1
-attacktype 1
 x 7
 y 11
+level 1
+attacktype 1
 end
 arch button_small
 name 104
-connected 104
 x 7
 y 11
+connected 104
 end
 arch flagstone
 x 7
 y 11
 end
 arch grate_closed_1
-speed 0.500000
-connected 103
 x 7
 y 11
+speed 0.500000
+connected 103
 end
 arch button_small
 name 104
-weight 2
-connected 104
 x 7
 y 12
+weight 2
+connected 104
 end
 arch button_small
 name 103
-connected 103
 x 7
 y 12
+connected 103
 end
 arch dungeon_magic
 x 7
@@ -1962,11 +2021,11 @@ x 7
 y 12
 end
 arch grate_open_1
+x 7
+y 12
 speed 0.500000
 value 1
 connected 102
-x 7
-y 12
 end
 arch dungeon_magic
 x 7
@@ -1977,9 +2036,9 @@ x 7
 y 13
 end
 arch ggate_open
-connected 101
 x 7
 y 13
+connected 101
 end
 arch dungeon_magic
 x 7
@@ -2001,6 +2060,10 @@ arch flagstone
 x 7
 y 15
 end
+arch troll
+x 7
+y 15
+end
 arch dungeon_magic
 x 7
 y 16
@@ -2014,6 +2077,10 @@ x 7
 y 17
 end
 arch flagstone
+x 7
+y 17
+end
+arch troll
 x 7
 y 17
 end
@@ -2313,10 +2380,10 @@ y 22
 end
 arch mover_3
 maxhp 1
-level 1
-attacktype 1
 x 8
 y 22
+level 1
+attacktype 1
 end
 arch flagstone
 x 8
@@ -2356,10 +2423,10 @@ y 26
 end
 arch mover_3
 maxhp 1
-level 1
-attacktype 1
 x 8
 y 26
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 8
@@ -2468,9 +2535,9 @@ name Rod of Fire Ball
 hp 60
 maxhp 60
 sp 3
-level 3
 x 9
 y 7
+level 3
 end
 arch small_stones
 x 9
@@ -2526,9 +2593,9 @@ x 9
 y 13
 end
 arch ggate_open
-connected 201
 x 9
 y 13
+connected 201
 end
 arch dungeon_magic
 x 9
@@ -2550,6 +2617,10 @@ arch flagstone
 x 9
 y 15
 end
+arch troll
+x 9
+y 15
+end
 arch dungeon_magic
 x 9
 y 16
@@ -2563,6 +2634,10 @@ x 9
 y 17
 end
 arch flagstone
+x 9
+y 17
+end
+arch troll
 x 9
 y 17
 end
@@ -2602,26 +2677,26 @@ x 9
 y 21
 end
 arch mover_5
-level 1
-attacktype 1
 x 9
 y 21
+level 1
+attacktype 1
 end
 arch detector
 name 1002
 slaying icecube
-connected 1002
 x 9
 y 21
+connected 1002
 end
 arch small_stones
 x 9
 y 21
 end
 arch icecube
-no_pick 1
 x 9
 y 21
+no_pick 1
 end
 arch dungeon_magic
 x 9
@@ -2645,10 +2720,10 @@ y 23
 end
 arch mover_5
 maxhp 1
-level 1
-attacktype 1
 x 9
 y 23
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 9
@@ -2668,10 +2743,10 @@ y 25
 end
 arch mover_1
 maxhp 1
-level 1
-attacktype 1
 x 9
 y 25
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 9
@@ -2687,10 +2762,10 @@ y 26
 end
 arch mover_1
 maxhp 1
-level 1
-attacktype 1
 x 9
 y 26
+level 1
+attacktype 1
 end
 arch flagstone
 x 9
@@ -2811,9 +2886,9 @@ x 10
 y 10
 end
 arch button_lever
-connected 100
 x 10
 y 10
+connected 100
 end
 arch flagstone
 x 10
@@ -2925,10 +3000,10 @@ y 24
 end
 arch grate_closed_2
 face swall_5.111
-speed 0.500000
-connected 1001
 x 10
 y 24
+speed 0.500000
+connected 1001
 end
 arch flagstone
 x 10
@@ -2963,10 +3038,10 @@ x 10
 y 28
 end
 arch igate_closed_2
-speed 0.500000
-connected 2003
 x 10
 y 28
+speed 0.500000
+connected 2003
 end
 arch flagstone
 x 10
@@ -3213,10 +3288,10 @@ x 11
 y 24
 end
 arch button_lever
-invisible 1
-connected 1001
 x 11
 y 24
+invisible 1
+connected 1001
 end
 arch dungeon_magic
 x 11
@@ -3252,10 +3327,10 @@ y 28
 end
 arch mover_3
 maxhp 1
-level 1
-attacktype 1
 x 11
 y 28
+level 1
+attacktype 1
 end
 arch flagstone
 x 11
@@ -3271,10 +3346,10 @@ y 30
 end
 arch mover_3
 maxhp 1
-level 1
-attacktype 1
 x 11
 y 30
+level 1
+attacktype 1
 end
 arch flagstone
 x 11
@@ -3289,11 +3364,11 @@ x 12
 end
 arch igate_open_1
 name 2610
+x 12
+y 1
 speed 0.500000
 value 1
 connected 2610
-x 12
-y 1
 end
 arch food
 x 12
@@ -3312,16 +3387,16 @@ name 2010
 msg
 The Dreads' eyes have appeared.
 endmsg
-connected 2010
 x 12
 y 2
+connected 2010
 end
 arch altar
 name 2010
 food 1
-connected 2010
 x 12
 y 2
+connected 2010
 end
 arch dungeon_magic
 x 12
@@ -3584,10 +3659,10 @@ x 12
 y 28
 end
 arch igate_closed_2
-speed 0.500000
-connected 2003
 x 12
 y 28
+speed 0.500000
+connected 2003
 end
 arch dungeon_magic
 x 12
@@ -3804,14 +3879,23 @@ x 13
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 13
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 13
 y 22
+end
+arch dread
+sp 30
+x 13
+y 22
+attack_movement 0
+level 25
+randomitems none
+run_away 0
 end
 arch flagstone
 x 13
@@ -3830,9 +3914,9 @@ x 13
 y 26
 end
 arch pedestal
-connected 2003
 x 13
 y 26
+connected 2003
 end
 arch sign_e
 msg
@@ -3864,9 +3948,9 @@ y 28
 end
 arch pedestal_trigger
 name 2610
-connected 2610
 x 13
 y 28
+connected 2610
 end
 arch brush
 x 13
@@ -3874,14 +3958,14 @@ y 28
 end
 arch altar
 name altar of Dread eyes
+slaying Dread's eye
 msg
 Click! A gate has opened.
 endmsg
-slaying Dread's eye
 food 1
-connected 2001
 x 13
 y 28
+connected 2001
 end
 arch flagstone
 x 13
@@ -3978,9 +4062,9 @@ x 14
 y 10
 end
 arch button_lever
-connected 200
 x 14
 y 10
+connected 200
 end
 arch flagstone
 x 14
@@ -4055,10 +4139,10 @@ x 14
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 14
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 14
@@ -4252,9 +4336,9 @@ x 15
 y 13
 end
 arch ggate_open
-connected 101
 x 15
 y 13
+connected 101
 end
 arch flagstone
 x 15
@@ -4293,14 +4377,23 @@ x 15
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 15
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 15
 y 22
+end
+arch dread
+sp 30
+x 15
+y 22
+attack_movement 0
+level 25
+randomitems none
+run_away 0
 end
 arch flagstone
 x 15
@@ -4561,10 +4654,10 @@ x 16
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 16
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 16
@@ -4643,31 +4736,31 @@ y 2
 end
 arch button_small
 name 205
-weight 2
-connected 205
 x 17
 y 3
+weight 2
+connected 205
 end
 arch button_small
 name 201
-connected 201
 x 17
 y 3
+connected 201
 end
 arch spikes_closed
 name 200
-speed 0.500000
-connected 200
 x 17
 y 3
+speed 0.500000
+connected 200
 end
 arch spikes_open
 name 200
+x 17
+y 4
 speed 0.500000
 value 1
 connected 200
-x 17
-y 4
 end
 arch boulder
 x 17
@@ -4717,20 +4810,20 @@ x 17
 y 9
 end
 arch mine2
-move_block 0
 x 17
 y 9
+move_block 0
 end
 arch pedestal
-connected 204
 x 17
 y 10
+connected 204
 end
 arch mover_1
-level 1
-attacktype 1
 x 17
 y 10
+level 1
+attacktype 1
 end
 arch flagstone
 x 17
@@ -4739,44 +4832,44 @@ end
 arch pit_open
 hp 9
 sp 12
-connected 204
 x 17
 y 10
+connected 204
 end
 arch mover_5
-level 1
-attacktype 1
 x 17
 y 11
+level 1
+attacktype 1
 end
 arch button_small
 name 204
-connected 204
 x 17
 y 11
+connected 204
 end
 arch flagstone
 x 17
 y 11
 end
 arch grate_closed_1
-speed 0.500000
-connected 203
 x 17
 y 11
+speed 0.500000
+connected 203
 end
 arch button_small
 name 204
-weight 2
-connected 204
 x 17
 y 12
+weight 2
+connected 204
 end
 arch button_small
 name 203
-connected 203
 x 17
 y 12
+connected 203
 end
 arch dungeon_magic
 x 17
@@ -4794,11 +4887,11 @@ x 17
 y 12
 end
 arch grate_open_1
+x 17
+y 12
 speed 0.500000
 value 1
 connected 202
-x 17
-y 12
 end
 arch flagstone
 x 17
@@ -4809,9 +4902,9 @@ x 17
 y 13
 end
 arch ggate_open
-connected 201
 x 17
 y 13
+connected 201
 end
 arch flagstone
 x 17
@@ -4874,14 +4967,23 @@ x 17
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 17
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 17
 y 22
+end
+arch dread
+sp 30
+x 17
+y 22
+attack_movement 0
+level 25
+randomitems none
+run_away 0
 end
 arch flagstone
 x 17
@@ -5105,10 +5207,10 @@ x 18
 y 18
 end
 arch grate_closed_1
-speed 0.500000
-connected 2001
 x 18
 y 18
+speed 0.500000
+connected 2001
 end
 arch flagstone
 x 18
@@ -5119,9 +5221,9 @@ x 18
 y 20
 end
 arch button_handle
-connected 2002
 x 18
 y 20
+connected 2002
 end
 arch generate_beholder
 x 18
@@ -5132,10 +5234,10 @@ x 18
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 18
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 18
@@ -5214,31 +5316,31 @@ y 2
 end
 arch button_small
 name 206
-weight 2
-connected 206
 x 19
 y 3
+weight 2
+connected 206
 end
 arch button_small
 name 202
-connected 202
 x 19
 y 3
+connected 202
 end
 arch spikes_closed
 name 205
-speed 0.500000
-connected 205
 x 19
 y 3
+speed 0.500000
+connected 205
 end
 arch spikes_open
 name 205
+x 19
+y 4
 speed 0.500000
 value 1
 connected 205
-x 19
-y 4
 end
 arch boulder
 x 19
@@ -5369,14 +5471,23 @@ x 19
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 19
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 19
 y 22
+end
+arch dread
+sp 30
+x 19
+y 22
+attack_movement 0
+level 25
+randomitems none
+run_away 0
 end
 arch flagstone
 x 19
@@ -5594,10 +5705,10 @@ x 20
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 20
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 20
@@ -5680,24 +5791,24 @@ y 2
 end
 arch button_small
 name 201
-connected 201
 x 21
 y 3
+connected 201
 end
 arch spikes_closed
 name 206
-speed 0.500000
-connected 206
 x 21
 y 3
+speed 0.500000
+connected 206
 end
 arch spikes_open
 name 206
+x 21
+y 4
 speed 0.500000
 value 1
 connected 206
-x 21
-y 4
 end
 arch boulder
 x 21
@@ -5800,19 +5911,19 @@ x 21
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 21
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 21
 y 22
 end
 arch button_handle
-connected 2002
 x 21
 y 22
+connected 2002
 end
 arch flagstone
 x 21
@@ -5839,9 +5950,9 @@ x 21
 y 26
 end
 arch director_5
-speed_left -17.699993
 x 21
 y 26
+speed_left -17.699993
 end
 arch brush
 x 21
@@ -5852,9 +5963,9 @@ x 21
 y 28
 end
 arch director_7
-speed_left -10.499998
 x 21
 y 28
+speed_left -10.499998
 end
 arch flagstone
 x 21
@@ -6008,10 +6119,10 @@ x 22
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 22
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 22
@@ -6039,10 +6150,10 @@ y 24
 end
 arch mover_7
 maxhp 1
-level 1
-attacktype 1
 x 22
 y 24
+level 1
+attacktype 1
 end
 arch flagstone
 x 22
@@ -6122,9 +6233,9 @@ end
 arch pit_closed
 hp 20
 sp 23
-connected 2010
 x 23
 y 1
+connected 2010
 end
 arch generate_orc
 name Dread's eye
@@ -6139,23 +6250,22 @@ exp 50000
 dam 25
 wc -20
 ac -50
-speed 0.900000
-level 15
-resist_magic 100
-resist_fire 100
-resist_poison 100
-resist_paralyze 100
-resist_fear 100
-carrying 1
-weight 1000
-move_type walk fly_low
-monster 1
-move_type walk
-generator 0
-see_invisible 1
-can_cast_spell 1
 x 23
 y 1
+speed 0.900000
+level 15
+resist_magic 100
+resist_fire 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+carrying 1
+weight 1000
+move_type walk
+monster 1
+generator 0
+see_invisible 1
+can_cast_spell 1
 arch big_eye
 name Dread's eye
 end
@@ -6163,9 +6273,9 @@ end
 arch pit_closed
 hp 20
 sp 23
-connected 2010
 x 23
 y 2
+connected 2010
 end
 arch generate_orc
 name Dread's eye
@@ -6180,23 +6290,22 @@ exp 50000
 dam 25
 wc -20
 ac -50
-speed 0.900000
-level 15
-resist_magic 100
-resist_fire 100
-resist_poison 100
-resist_paralyze 100
-resist_fear 100
-carrying 1
-weight 1000
-move_type walk fly_low
-monster 1
-move_type walk
-generator 0
-see_invisible 1
-can_cast_spell 1
 x 23
 y 2
+speed 0.900000
+level 15
+resist_magic 100
+resist_fire 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+carrying 1
+weight 1000
+move_type walk
+monster 1
+generator 0
+see_invisible 1
+can_cast_spell 1
 arch big_eye
 name Dread's eye
 end
@@ -6204,9 +6313,9 @@ end
 arch pit_closed
 hp 20
 sp 23
-connected 2010
 x 23
 y 3
+connected 2010
 end
 arch generate_orc
 name Dread's eye
@@ -6221,6 +6330,8 @@ exp 50000
 dam 25
 wc -20
 ac -50
+x 23
+y 3
 speed 0.900000
 level 15
 resist_magic 100
@@ -6230,14 +6341,11 @@ resist_paralyze 100
 resist_fear 100
 carrying 1
 weight 1000
-move_type walk fly_low
-monster 1
 move_type walk
+monster 1
 generator 0
 see_invisible 1
 can_cast_spell 1
-x 23
-y 3
 arch big_eye
 name Dread's eye
 end
@@ -6245,9 +6353,9 @@ end
 arch pit_closed
 hp 20
 sp 23
-connected 2010
 x 23
 y 4
+connected 2010
 end
 arch generate_orc
 name Dread's eye
@@ -6262,6 +6370,8 @@ exp 50000
 dam 25
 wc -20
 ac -50
+x 23
+y 4
 speed 0.900000
 level 15
 resist_magic 100
@@ -6271,14 +6381,11 @@ resist_paralyze 100
 resist_fear 100
 carrying 1
 weight 1000
-move_type walk fly_low
-monster 1
 move_type walk
+monster 1
 generator 0
 see_invisible 1
 can_cast_spell 1
-x 23
-y 4
 arch big_eye
 name Dread's eye
 end
@@ -6419,10 +6526,10 @@ x 23
 y 21
 end
 arch gate_closed_1
-speed 0.500000
-connected 2002
 x 23
 y 21
+speed 0.500000
+connected 2002
 end
 arch flagstone
 x 23
@@ -6457,10 +6564,10 @@ y 24
 end
 arch mover_7
 maxhp 1
-level 1
-attacktype 1
 x 23
 y 24
+level 1
+attacktype 1
 end
 arch flagstone
 x 23
@@ -6468,10 +6575,10 @@ y 25
 end
 arch mover_1
 maxhp 1
-level 1
-attacktype 1
 x 23
 y 25
+level 1
+attacktype 1
 end
 arch flagstone
 x 23
@@ -6727,115 +6834,4 @@ end
 arch mine12
 x 24
 y 31
-end
-arch troll
-x 1
-y 15
-end
-arch troll
-x 1
-y 17
-end
-arch troll
-x 1
-y 19
-end
-arch cyclops
-name Rufus
-Wis 3
-carrying 2100
-x 2
-y 28
-arch potion_invulnerability
-end
-arch key2
-name Wizard's key
-slaying raffle2_wizard_door
-end
-end
-arch troll
-x 3
-y 15
-end
-arch troll
-x 3
-y 17
-end
-arch troll
-x 3
-y 19
-end
-arch troll
-x 5
-y 15
-end
-arch troll
-x 5
-y 17
-end
-arch troll
-x 5
-y 19
-end
-arch troll
-name Raffy
-msg
-@match *
-Help!
-endmsg
-randomitems none
-x 5
-y 29
-end
-arch troll
-x 7
-y 15
-end
-arch troll
-x 7
-y 17
-end
-arch troll
-x 9
-y 15
-end
-arch troll
-x 9
-y 17
-end
-arch dread
-sp 30
-attack_movement 0
-level 25
-randomitems none
-run_away 0
-x 13
-y 22
-end
-arch dread
-sp 30
-attack_movement 0
-level 25
-randomitems none
-run_away 0
-x 15
-y 22
-end
-arch dread
-sp 30
-attack_movement 0
-level 25
-randomitems none
-run_away 0
-x 17
-y 22
-end
-arch dread
-sp 30
-attack_movement 0
-level 25
-randomitems none
-run_away 0
-x 19
-y 22
 end

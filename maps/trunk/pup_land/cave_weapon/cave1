@@ -1,14 +1,14 @@
 arch map
-region pupland
 name cave1
+difficulty 10
+region pupland
+width 32
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 22:55:26 1996
 endmsg
-x 32
-y 20
-level 10
 end
 arch exit
 slaying ../world
@@ -2787,18 +2787,18 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-resist_physical 28
 x 28
 y 15
 attack_movement 7
 level 12
 type 0
-monster 1
+resist_physical 28
 move_type walk
+monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+can_use_wand 1
 end
 arch dungeon_floor
 x 28
@@ -3142,8 +3142,8 @@ level 0
 type 0
 material 0
 randomitems none
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch invis_exit

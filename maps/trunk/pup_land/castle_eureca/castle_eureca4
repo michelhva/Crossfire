@@ -1,14 +1,14 @@
 arch map
-region pupland
 name castle_eureca4
+difficulty 5
+region pupland
+width 23
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar  7 21:49:31 1996
 endmsg
-x 23
-y 21
-level 5
 end
 arch flagstone
 end
@@ -154,8 +154,8 @@ arch barrel
 hp 10
 x 1
 y 1
-alive 1
 move_block 0
+alive 1
 friendly 1
 can_roll 0
 end
@@ -349,8 +349,8 @@ arch barrel
 hp 10
 x 2
 y 1
-alive 1
 move_block 0
+alive 1
 friendly 1
 can_roll 0
 end
@@ -546,8 +546,8 @@ arch barrel
 hp 10
 x 3
 y 1
-alive 1
 move_block 0
+alive 1
 friendly 1
 can_roll 0
 end
@@ -754,8 +754,8 @@ arch barrel
 hp 10
 x 4
 y 1
-alive 1
 move_block 0
+alive 1
 friendly 1
 can_roll 0
 end
@@ -972,11 +972,19 @@ arch woodfloor
 x 5
 y 3
 end
+arch baslic
+x 5
+y 3
+end
 arch woodfloor
 x 5
 y 4
 end
 arch woodfloor
+x 5
+y 5
+end
+arch baslic
 x 5
 y 5
 end
@@ -3902,12 +3910,4 @@ X:entrance to treasure room
 endmsg
 x 22
 y 20
-end
-arch baslic
-x 5
-y 3
-end
-arch baslic
-x 5
-y 5
 end

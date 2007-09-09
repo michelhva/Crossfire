@@ -1,21 +1,21 @@
 arch map
 name Keep Ground Floor
+darkness 1
+width 30
+height 22
+enter_x 7
+enter_y 20
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/3/2002
 endmsg
-width 30
-height 22
-enter_x 7
-enter_y 20
-darkness 1
 end
 arch teleporter
 hp 2
 sp 5
-connected 5
 speed 0.0
+connected 5
 end
 arch stair_down_4
 name basement stairs
@@ -140,9 +140,9 @@ end
 arch teleporter
 hp 13
 sp 17
-connected 10
-speed 0.0
 x 1
+speed 0.0
+connected 10
 end
 arch stair_up_2
 slaying /Lots/Lot1/keep2
@@ -167,126 +167,126 @@ x 1
 y 4
 end
 arch woodfloor
+x 1
+y 5
 unique 1
+end
+arch stwall_2_1_1
 x 1
 y 5
 end
-arch stwall_2_1_1
-x 1
-y 5
-end
 arch woodfloor
-unique 1
 x 1
 y 6
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 6
 end
 arch woodfloor
-unique 1
 x 1
 y 7
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 7
 end
 arch woodfloor
-unique 1
 x 1
 y 8
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 8
 end
 arch woodfloor
-unique 1
 x 1
 y 9
+unique 1
 end
 arch stwall_3_2
 x 1
 y 9
 end
 arch woodfloor
+x 1
+y 10
 unique 1
+end
+arch stwall_2_1_1
 x 1
 y 10
 end
-arch stwall_2_1_1
-x 1
-y 10
-end
 arch woodfloor
-unique 1
 x 1
 y 11
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 11
 end
 arch woodfloor
+x 1
+y 12
 unique 1
+end
+arch stwall_2_1_1
 x 1
 y 12
 end
-arch stwall_2_1_1
-x 1
-y 12
-end
 arch woodfloor
-unique 1
 x 1
 y 13
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 13
 end
 arch woodfloor
+x 1
+y 14
 unique 1
+end
+arch stwall_2_1_1
 x 1
 y 14
 end
-arch stwall_2_1_1
-x 1
-y 14
-end
 arch woodfloor
-unique 1
 x 1
 y 15
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 15
 end
 arch woodfloor
-unique 1
 x 1
 y 16
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 16
 end
 arch woodfloor
-unique 1
 x 1
 y 17
+unique 1
 end
 arch stwall_2_1_1
 x 1
 y 17
 end
 arch woodfloor
-unique 1
 x 1
 y 18
+unique 1
 end
 arch stwall_2_2_1
 x 1
@@ -329,9 +329,9 @@ x 2
 y 3
 end
 arch woodfloor
-unique 1
 x 2
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 2
@@ -342,9 +342,9 @@ x 2
 y 5
 end
 arch woodfloor
-unique 1
 x 2
 y 5
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -352,71 +352,71 @@ y 6
 end
 arch creator
 other_arch woodfloor
-connected 5
 x 2
 y 6
+connected 5
 end
 arch goldfloor
 name drop X for Basement
 slaying gem
 food 1
-connected 5
-unique 1
 x 2
 y 6
+connected 5
+unique 1
 end
 arch dungeon_magic
 x 2
 y 7
 end
 arch woodfloor
-unique 1
 x 2
 y 7
+unique 1
 end
 arch dungeon_magic
 x 2
 y 8
 end
 arch woodfloor
-unique 1
 x 2
 y 8
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 2
 y 8
+connected 1
 end
 arch dungeon_magic
 x 2
 y 9
 end
 arch woodfloor
-unique 1
 x 2
 y 9
+unique 1
 end
 arch stwall_closed_1
-connected 1
 x 2
 y 9
+connected 1
 end
 arch dungeon_magic
 x 2
 y 10
 end
 arch woodfloor
-unique 1
 x 2
 y 10
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 2
 y 10
+connected 1
 end
 arch dungeon_magic
 x 2
@@ -427,9 +427,9 @@ x 2
 y 11
 end
 arch woodfloor
-unique 1
 x 2
 y 11
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -440,9 +440,9 @@ x 2
 y 12
 end
 arch woodfloor
-unique 1
 x 2
 y 12
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -453,9 +453,9 @@ x 2
 y 13
 end
 arch woodfloor
-unique 1
 x 2
 y 13
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -466,9 +466,9 @@ x 2
 y 14
 end
 arch woodfloor
-unique 1
 x 2
 y 14
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -479,9 +479,9 @@ x 2
 y 15
 end
 arch woodfloor
-unique 1
 x 2
 y 15
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -492,9 +492,9 @@ x 2
 y 16
 end
 arch woodfloor
-unique 1
 x 2
 y 16
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -505,14 +505,14 @@ x 2
 y 17
 end
 arch woodfloor
-unique 1
 x 2
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 2
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 2
@@ -549,9 +549,9 @@ end
 arch teleporter
 hp 26
 sp 17
-connected 8
-speed 0.0
 x 3
+speed 0.0
+connected 8
 end
 arch well
 slaying /Lots/Lot1/keep_b
@@ -568,9 +568,9 @@ x 3
 y 3
 end
 arch woodfloor
-unique 1
 x 3
 y 4
+unique 1
 end
 arch stwall_3_3
 x 3
@@ -581,9 +581,9 @@ x 3
 y 5
 end
 arch woodfloor
-unique 1
 x 3
 y 5
+unique 1
 end
 arch stwall_1_2
 x 3
@@ -594,36 +594,36 @@ x 3
 y 6
 end
 arch woodfloor
-unique 1
 x 3
 y 6
+unique 1
 end
 arch dungeon_magic
 x 3
 y 7
 end
 arch woodfloor
-unique 1
 x 3
 y 7
+unique 1
 end
 arch dungeon_magic
 x 3
 y 8
 end
 arch woodfloor
-unique 1
 x 3
 y 8
+unique 1
 end
 arch dungeon_magic
 x 3
 y 9
 end
 arch woodfloor
-unique 1
 x 3
 y 9
+unique 1
 end
 arch swall_1_4
 x 3
@@ -638,9 +638,9 @@ x 3
 y 10
 end
 arch woodfloor
-unique 1
 x 3
 y 10
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -651,9 +651,9 @@ x 3
 y 11
 end
 arch woodfloor
-unique 1
 x 3
 y 11
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -664,9 +664,9 @@ x 3
 y 12
 end
 arch woodfloor
-unique 1
 x 3
 y 12
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -677,9 +677,9 @@ x 3
 y 13
 end
 arch woodfloor
-unique 1
 x 3
 y 13
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -690,9 +690,9 @@ x 3
 y 14
 end
 arch woodfloor
-unique 1
 x 3
 y 14
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -703,9 +703,9 @@ x 3
 y 15
 end
 arch woodfloor
-unique 1
 x 3
 y 15
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -716,9 +716,9 @@ x 3
 y 16
 end
 arch woodfloor
-unique 1
 x 3
 y 16
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -729,14 +729,14 @@ x 3
 y 17
 end
 arch woodfloor
-unique 1
 x 3
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 3
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 3
@@ -779,9 +779,9 @@ x 4
 y 3
 end
 arch woodfloor
-unique 1
 x 4
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 4
@@ -792,9 +792,9 @@ x 4
 y 5
 end
 arch woodfloor
-unique 1
 x 4
 y 5
+unique 1
 end
 arch dungeon_magic
 x 4
@@ -802,48 +802,48 @@ y 6
 end
 arch creator
 other_arch woodfloor
-connected 40
 x 4
 y 6
+connected 40
 end
 arch goldfloor
 name drop Dragonbadge for guard
+slaying Dragonbadge
 msg
 Dig. Dig. Dig.
 endmsg
-slaying Dragonbadge
 food 1
-connected 7
-unique 1
 x 4
 y 6
+connected 7
+unique 1
 end
 arch dungeon_magic
 x 4
 y 7
 end
 arch woodfloor
-unique 1
 x 4
 y 7
+unique 1
 end
 arch dungeon_magic
 x 4
 y 8
 end
 arch woodfloor
-unique 1
 x 4
 y 8
+unique 1
 end
 arch dungeon_magic
 x 4
 y 9
 end
 arch woodfloor
-unique 1
 x 4
 y 9
+unique 1
 end
 arch swall_2_2_3
 x 4
@@ -866,22 +866,22 @@ x 4
 y 11
 end
 arch woodfloor
+x 4
+y 11
 unique 1
+end
+arch swall_2_1_1
 x 4
 y 11
 end
-arch swall_2_1_1
-x 4
-y 11
-end
 arch dungeon_magic
 x 4
 y 12
 end
 arch woodfloor
-unique 1
 x 4
 y 12
+unique 1
 end
 arch swall_2_1_1
 x 4
@@ -892,9 +892,9 @@ x 4
 y 13
 end
 arch woodfloor
-unique 1
 x 4
 y 13
+unique 1
 end
 arch swall_2_1_1
 x 4
@@ -905,9 +905,9 @@ x 4
 y 14
 end
 arch woodfloor
-unique 1
 x 4
 y 14
+unique 1
 end
 arch swall_2_1_1
 x 4
@@ -918,9 +918,9 @@ x 4
 y 15
 end
 arch woodfloor
-unique 1
 x 4
 y 15
+unique 1
 end
 arch swall_2_1_1
 x 4
@@ -931,9 +931,9 @@ x 4
 y 16
 end
 arch woodfloor
-unique 1
 x 4
 y 16
+unique 1
 end
 arch swall_2_1_1
 x 4
@@ -952,9 +952,9 @@ x 4
 y 17
 end
 arch woodfloor
-unique 1
 x 4
 y 18
+unique 1
 end
 arch swall_1_2
 x 4
@@ -991,14 +991,14 @@ end
 arch teleporter
 hp 7
 sp 16
-connected 6
-speed 0.0
 x 5
+speed 0.0
+connected 6
 end
 arch light_guard
+x 5
 resist_physical 0
 resist_magic 0
-x 5
 end
 arch dungeon_magic
 x 5
@@ -1009,9 +1009,9 @@ x 5
 y 3
 end
 arch woodfloor
-unique 1
 x 5
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 5
@@ -1022,122 +1022,122 @@ x 5
 y 5
 end
 arch woodfloor
-unique 1
 x 5
 y 5
+unique 1
 end
 arch dungeon_magic
 x 5
 y 6
 end
 arch woodfloor
-unique 1
 x 5
 y 6
+unique 1
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch woodfloor
-unique 1
 x 5
 y 7
+unique 1
 end
 arch dungeon_magic
 x 5
 y 8
 end
 arch woodfloor
-unique 1
 x 5
 y 8
+unique 1
 end
 arch dungeon_magic
 x 5
 y 9
 end
 arch woodfloor
-unique 1
 x 5
 y 9
+unique 1
 end
 arch dungeon_magic
 x 5
 y 10
 end
 arch woodfloor
-unique 1
 x 5
 y 10
+unique 1
 end
 arch dungeon_magic
 x 5
 y 11
 end
 arch woodfloor
-unique 1
 x 5
 y 11
+unique 1
 end
 arch dungeon_magic
 x 5
 y 12
 end
 arch woodfloor
-unique 1
 x 5
 y 12
+unique 1
 end
 arch dungeon_magic
 x 5
 y 13
 end
 arch woodfloor
-unique 1
 x 5
 y 13
+unique 1
 end
 arch dungeon_magic
 x 5
 y 14
 end
 arch woodfloor
-unique 1
 x 5
 y 14
+unique 1
 end
 arch dungeon_magic
 x 5
 y 15
 end
 arch woodfloor
-unique 1
 x 5
 y 15
+unique 1
 end
 arch dungeon_magic
 x 5
 y 16
 end
 arch woodfloor
-unique 1
 x 5
 y 16
+unique 1
 end
 arch dungeon_magic
 x 5
 y 17
 end
 arch woodfloor
-unique 1
 x 5
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 5
 y 18
+unique 1
 end
 arch stwall_3_3
 x 5
@@ -1174,9 +1174,9 @@ end
 arch teleporter
 hp 4
 sp 5
-connected 7
-speed 0.0
 x 6
+speed 0.0
+connected 7
 end
 arch light_guard
 x 6
@@ -1194,9 +1194,9 @@ x 6
 y 4
 end
 arch woodfloor
-unique 1
 x 6
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 6
@@ -1207,122 +1207,122 @@ x 6
 y 5
 end
 arch woodfloor
-unique 1
 x 6
 y 5
+unique 1
 end
 arch dungeon_magic
 x 6
 y 6
 end
 arch woodfloor
-unique 1
 x 6
 y 6
+unique 1
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch woodfloor
-unique 1
 x 6
 y 7
+unique 1
 end
 arch dungeon_magic
 x 6
 y 8
 end
 arch woodfloor
-unique 1
 x 6
 y 8
+unique 1
 end
 arch dungeon_magic
 x 6
 y 9
 end
 arch woodfloor
-unique 1
 x 6
 y 9
+unique 1
 end
 arch dungeon_magic
 x 6
 y 10
 end
 arch woodfloor
-unique 1
 x 6
 y 10
+unique 1
 end
 arch dungeon_magic
 x 6
 y 11
 end
 arch woodfloor
-unique 1
 x 6
 y 11
+unique 1
 end
 arch dungeon_magic
 x 6
 y 12
 end
 arch woodfloor
-unique 1
 x 6
 y 12
+unique 1
 end
 arch dungeon_magic
 x 6
 y 13
 end
 arch woodfloor
-unique 1
 x 6
 y 13
+unique 1
 end
 arch dungeon_magic
 x 6
 y 14
 end
 arch woodfloor
-unique 1
 x 6
 y 14
+unique 1
 end
 arch dungeon_magic
 x 6
 y 15
 end
 arch woodfloor
-unique 1
 x 6
 y 15
+unique 1
 end
 arch dungeon_magic
 x 6
 y 16
 end
 arch woodfloor
-unique 1
 x 6
 y 16
+unique 1
 end
 arch dungeon_magic
 x 6
 y 17
 end
 arch woodfloor
-unique 1
 x 6
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 6
@@ -1368,9 +1368,9 @@ x 7
 y 4
 end
 arch woodfloor
-unique 1
 x 7
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 7
@@ -1381,9 +1381,9 @@ x 7
 y 5
 end
 arch woodfloor
-unique 1
 x 7
 y 5
+unique 1
 end
 arch fireplace
 x 7
@@ -1394,59 +1394,59 @@ x 7
 y 6
 end
 arch woodfloor
-unique 1
 x 7
 y 6
+unique 1
 end
 arch dungeon_magic
 x 7
 y 7
 end
 arch woodfloor
-unique 1
 x 7
 y 7
+unique 1
 end
 arch dungeon_magic
 x 7
 y 8
 end
 arch woodfloor
-unique 1
 x 7
 y 8
+unique 1
 end
 arch dungeon_magic
 x 7
 y 9
 end
 arch woodfloor
-unique 1
 x 7
 y 9
+unique 1
 end
 arch dungeon_magic
 x 7
 y 10
 end
 arch woodfloor
-unique 1
 x 7
 y 10
+unique 1
 end
 arch dungeon_magic
 x 7
 y 11
 end
 arch woodfloor
-unique 1
 x 7
 y 11
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 12
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1457,50 +1457,50 @@ x 7
 y 13
 end
 arch woodfloor
-unique 1
 x 7
 y 13
+unique 1
 end
 arch dungeon_magic
 x 7
 y 14
 end
 arch woodfloor
-unique 1
 x 7
 y 14
+unique 1
 end
 arch dungeon_magic
 x 7
 y 15
 end
 arch woodfloor
-unique 1
 x 7
 y 15
+unique 1
 end
 arch dungeon_magic
 x 7
 y 16
 end
 arch woodfloor
-unique 1
 x 7
 y 16
+unique 1
 end
 arch dungeon_magic
 x 7
 y 17
 end
 arch woodfloor
-unique 1
 x 7
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 7
@@ -1546,9 +1546,9 @@ x 8
 y 4
 end
 arch woodfloor
-unique 1
 x 8
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 8
@@ -1559,90 +1559,90 @@ x 8
 y 5
 end
 arch woodfloor
-unique 1
 x 8
 y 5
+unique 1
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch woodfloor
-unique 1
 x 8
 y 6
+unique 1
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch woodfloor
-unique 1
 x 8
 y 7
+unique 1
 end
 arch dungeon_magic
 x 8
 y 8
 end
 arch woodfloor
-unique 1
 x 8
 y 8
+unique 1
 end
 arch dungeon_magic
 x 8
 y 9
 end
 arch woodfloor
-unique 1
 x 8
 y 9
+unique 1
 end
 arch dungeon_magic
 x 8
 y 10
 end
 arch woodfloor
-unique 1
 x 8
 y 10
+unique 1
 end
 arch dungeon_magic
 x 8
 y 11
 end
 arch woodfloor
-unique 1
 x 8
 y 11
+unique 1
 end
 arch dungeon_magic
 x 8
 y 12
 end
 arch woodfloor
-unique 1
 x 8
 y 12
+unique 1
 end
 arch dungeon_magic
 x 8
 y 13
 end
 arch woodfloor
-unique 1
 x 8
 y 13
+unique 1
 end
 arch dungeon_magic
 x 8
 y 14
 end
 arch woodfloor
-unique 1
 x 8
 y 14
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1650,30 +1650,30 @@ y 15
 end
 arch creator
 other_arch woodfloor
-connected 40
 x 8
 y 15
+connected 40
 end
 arch goldfloor
 name drop  X for door guard
+slaying gem
 msg
 Dig. Dig. Dig.
 endmsg
-slaying gem
 food 1
-connected 6
-unique 1
 x 8
 y 15
+connected 6
+unique 1
 end
 arch dungeon_magic
 x 8
 y 16
 end
 arch woodfloor
-unique 1
 x 8
 y 16
+unique 1
 end
 arch stwall_1_4
 x 8
@@ -1684,14 +1684,14 @@ x 8
 y 17
 end
 arch woodfloor
-unique 1
 x 8
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 8
 y 18
+unique 1
 end
 arch stwall_1_3
 x 8
@@ -1707,9 +1707,9 @@ y 19
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 8
 y 19
+connected 1
 end
 arch dungeon_magic
 x 8
@@ -1732,8 +1732,8 @@ y 21
 end
 arch creator
 other_arch woodfloor
-connected 40
 x 9
+connected 40
 end
 arch dungeon_magic
 x 9
@@ -1748,9 +1748,9 @@ x 9
 y 4
 end
 arch woodfloor
-unique 1
 x 9
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 9
@@ -1761,108 +1761,108 @@ x 9
 y 5
 end
 arch woodfloor
-unique 1
 x 9
 y 5
+unique 1
 end
 arch dungeon_magic
 x 9
 y 6
 end
 arch woodfloor
-unique 1
 x 9
 y 6
+unique 1
 end
 arch dungeon_magic
 x 9
 y 7
 end
 arch woodfloor
-unique 1
 x 9
 y 7
+unique 1
 end
 arch dungeon_magic
 x 9
 y 8
 end
 arch woodfloor
-unique 1
 x 9
 y 8
+unique 1
 end
 arch dungeon_magic
 x 9
 y 9
 end
 arch woodfloor
-unique 1
 x 9
 y 9
+unique 1
 end
 arch dungeon_magic
 x 9
 y 10
 end
 arch woodfloor
-unique 1
 x 9
 y 10
+unique 1
 end
 arch dungeon_magic
 x 9
 y 11
 end
 arch woodfloor
-unique 1
 x 9
 y 11
+unique 1
 end
 arch dungeon_magic
 x 9
 y 12
 end
 arch woodfloor
-unique 1
 x 9
 y 12
+unique 1
 end
 arch dungeon_magic
 x 9
 y 13
 end
 arch woodfloor
-unique 1
 x 9
 y 13
+unique 1
 end
 arch dungeon_magic
 x 9
 y 14
 end
 arch woodfloor
-unique 1
 x 9
 y 14
+unique 1
 end
 arch dungeon_magic
 x 9
 y 15
 end
 arch woodfloor
-unique 1
 x 9
 y 15
+unique 1
 end
 arch dungeon_magic
 x 9
 y 16
 end
 arch woodfloor
-unique 1
 x 9
 y 16
+unique 1
 end
 arch stwall_2_1_2
 x 9
@@ -1873,29 +1873,29 @@ x 9
 y 17
 end
 arch woodfloor
-unique 1
 x 9
 y 17
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 9
 y 17
+connected 1
 end
 arch dungeon_magic
 x 9
 y 18
 end
 arch woodfloor
-unique 1
 x 9
 y 18
+unique 1
 end
 arch igate_closed_1
-connected 1
 x 9
 y 18
+connected 1
 end
 arch dungeon_magic
 x 9
@@ -1907,9 +1907,9 @@ y 19
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 9
 y 19
+connected 1
 end
 arch dungeon_magic
 x 9
@@ -1943,9 +1943,9 @@ x 10
 y 4
 end
 arch woodfloor
-unique 1
 x 10
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 10
@@ -1956,108 +1956,108 @@ x 10
 y 5
 end
 arch woodfloor
-unique 1
 x 10
 y 5
+unique 1
 end
 arch dungeon_magic
 x 10
 y 6
 end
 arch woodfloor
-unique 1
 x 10
 y 6
+unique 1
 end
 arch dungeon_magic
 x 10
 y 7
 end
 arch woodfloor
-unique 1
 x 10
 y 7
+unique 1
 end
 arch dungeon_magic
 x 10
 y 8
 end
 arch woodfloor
-unique 1
 x 10
 y 8
+unique 1
 end
 arch dungeon_magic
 x 10
 y 9
 end
 arch woodfloor
-unique 1
 x 10
 y 9
+unique 1
 end
 arch dungeon_magic
 x 10
 y 10
 end
 arch woodfloor
-unique 1
 x 10
 y 10
+unique 1
 end
 arch dungeon_magic
 x 10
 y 11
 end
 arch woodfloor
-unique 1
 x 10
 y 11
+unique 1
 end
 arch dungeon_magic
 x 10
 y 12
 end
 arch woodfloor
-unique 1
 x 10
 y 12
+unique 1
 end
 arch dungeon_magic
 x 10
 y 13
 end
 arch woodfloor
-unique 1
 x 10
 y 13
+unique 1
 end
 arch dungeon_magic
 x 10
 y 14
 end
 arch woodfloor
-unique 1
 x 10
 y 14
+unique 1
 end
 arch dungeon_magic
 x 10
 y 15
 end
 arch woodfloor
-unique 1
 x 10
 y 15
+unique 1
 end
 arch dungeon_magic
 x 10
 y 16
 end
 arch woodfloor
-unique 1
 x 10
 y 16
+unique 1
 end
 arch stwall_2_2_3
 x 10
@@ -2068,18 +2068,18 @@ x 10
 y 17
 end
 arch woodfloor
-unique 1
 x 10
 y 17
+unique 1
 end
 arch stwall_2_1_1
 x 10
 y 17
 end
 arch woodfloor
-unique 1
 x 10
 y 18
+unique 1
 end
 arch stwall_3_2
 x 10
@@ -2122,9 +2122,9 @@ x 11
 y 3
 end
 arch woodfloor
-unique 1
 x 11
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 11
@@ -2135,122 +2135,122 @@ x 11
 y 5
 end
 arch woodfloor
-unique 1
 x 11
 y 5
+unique 1
 end
 arch dungeon_magic
 x 11
 y 6
 end
 arch woodfloor
-unique 1
 x 11
 y 6
+unique 1
 end
 arch dungeon_magic
 x 11
 y 7
 end
 arch woodfloor
-unique 1
 x 11
 y 7
+unique 1
 end
 arch dungeon_magic
 x 11
 y 8
 end
 arch woodfloor
-unique 1
 x 11
 y 8
+unique 1
 end
 arch dungeon_magic
 x 11
 y 9
 end
 arch woodfloor
-unique 1
 x 11
 y 9
+unique 1
 end
 arch dungeon_magic
 x 11
 y 10
 end
 arch woodfloor
-unique 1
 x 11
 y 10
+unique 1
 end
 arch dungeon_magic
 x 11
 y 11
 end
 arch woodfloor
-unique 1
 x 11
 y 11
+unique 1
 end
 arch dungeon_magic
 x 11
 y 12
 end
 arch woodfloor
-unique 1
 x 11
 y 12
+unique 1
 end
 arch dungeon_magic
 x 11
 y 13
 end
 arch woodfloor
-unique 1
 x 11
 y 13
+unique 1
 end
 arch dungeon_magic
 x 11
 y 14
 end
 arch woodfloor
-unique 1
 x 11
 y 14
+unique 1
 end
 arch dungeon_magic
 x 11
 y 15
 end
 arch woodfloor
-unique 1
 x 11
 y 15
+unique 1
 end
 arch dungeon_magic
 x 11
 y 16
 end
 arch woodfloor
-unique 1
 x 11
 y 16
+unique 1
 end
 arch dungeon_magic
 x 11
 y 17
 end
 arch woodfloor
-unique 1
 x 11
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 11
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 11
@@ -2289,9 +2289,9 @@ x 12
 y 3
 end
 arch woodfloor
-unique 1
 x 12
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 12
@@ -2302,27 +2302,27 @@ x 12
 y 5
 end
 arch woodfloor
-unique 1
 x 12
 y 5
+unique 1
 end
 arch dungeon_magic
 x 12
 y 6
 end
 arch woodfloor
-unique 1
 x 12
 y 6
+unique 1
 end
 arch dungeon_magic
 x 12
 y 7
 end
 arch woodfloor
-unique 1
 x 12
 y 7
+unique 1
 end
 arch stwall_2_2_2
 x 12
@@ -2333,9 +2333,9 @@ x 12
 y 8
 end
 arch woodfloor
-unique 1
 x 12
 y 8
+unique 1
 end
 arch stwall_2_1_1
 x 12
@@ -2346,9 +2346,9 @@ x 12
 y 9
 end
 arch woodfloor
-unique 1
 x 12
 y 9
+unique 1
 end
 arch stwall_1_2
 x 12
@@ -2359,63 +2359,63 @@ x 12
 y 10
 end
 arch woodfloor
-unique 1
 x 12
 y 10
+unique 1
 end
 arch dungeon_magic
 x 12
 y 11
 end
 arch woodfloor
-unique 1
 x 12
 y 11
+unique 1
 end
 arch dungeon_magic
 x 12
 y 12
 end
 arch woodfloor
-unique 1
 x 12
 y 12
+unique 1
 end
 arch dungeon_magic
 x 12
 y 13
 end
 arch woodfloor
-unique 1
 x 12
 y 13
+unique 1
 end
 arch dungeon_magic
 x 12
 y 14
 end
 arch woodfloor
-unique 1
 x 12
 y 14
+unique 1
 end
 arch dungeon_magic
 x 12
 y 15
 end
 arch woodfloor
-unique 1
 x 12
 y 15
+unique 1
 end
 arch dungeon_magic
 x 12
 y 16
 end
 arch woodfloor
-unique 1
 x 12
 y 16
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -2423,23 +2423,23 @@ y 17
 end
 arch creator
 other_arch woodfloor
-connected 10
 x 12
 y 17
+connected 10
 end
 arch goldfloor
 name drop X for second floor
 slaying gem
 food 1
-connected 10
-unique 1
 x 12
 y 17
+connected 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 12
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 12
@@ -2482,9 +2482,9 @@ x 13
 y 3
 end
 arch woodfloor
-unique 1
 x 13
 y 4
+unique 1
 end
 arch stwall_2_1_2
 x 13
@@ -2495,9 +2495,9 @@ x 13
 y 5
 end
 arch woodfloor
-unique 1
 x 13
 y 5
+unique 1
 end
 arch bed_save
 x 13
@@ -2508,18 +2508,18 @@ x 13
 y 6
 end
 arch woodfloor
-unique 1
 x 13
 y 6
+unique 1
 end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor
-unique 1
 x 13
 y 7
+unique 1
 end
 arch stwall_2_1_2
 x 13
@@ -2530,75 +2530,75 @@ x 13
 y 8
 end
 arch woodfloor
-unique 1
 x 13
 y 8
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 2
 x 13
 y 8
+connected 2
 end
 arch dungeon_magic
 x 13
 y 9
 end
 arch woodfloor
-unique 1
 x 13
 y 9
+unique 1
 end
 arch dungeon_magic
 x 13
 y 10
 end
 arch woodfloor
-unique 1
 x 13
 y 10
+unique 1
 end
 arch dungeon_magic
 x 13
 y 11
 end
 arch woodfloor
-unique 1
 x 13
 y 11
+unique 1
 end
 arch dungeon_magic
 x 13
 y 12
 end
 arch woodfloor
-unique 1
 x 13
 y 12
+unique 1
 end
 arch dungeon_magic
 x 13
 y 13
 end
 arch woodfloor
-unique 1
 x 13
 y 13
+unique 1
 end
 arch dungeon_magic
 x 13
 y 14
 end
 arch woodfloor
-unique 1
 x 13
 y 14
+unique 1
 end
 arch creator
 other_arch woodfloor
-connected 40
 x 13
 y 15
+connected 40
 end
 arch dungeon_magic
 x 13
@@ -2606,24 +2606,24 @@ y 15
 end
 arch goldfloor
 name drop  Well shovel for secret tunnel to basement
+slaying Well shovel
 msg
 Dig. Dig. Dig.
 endmsg
-slaying Well shovel
 food 1
-connected 8
-unique 1
 x 13
 y 15
+connected 8
+unique 1
 end
 arch dungeon_magic
 x 13
 y 16
 end
 arch woodfloor
-unique 1
 x 13
 y 16
+unique 1
 end
 arch stwall_1_4
 x 13
@@ -2634,14 +2634,14 @@ x 13
 y 17
 end
 arch woodfloor
-unique 1
 x 13
 y 17
+unique 1
 end
 arch woodfloor
-unique 1
 x 13
 y 18
+unique 1
 end
 arch stwall_2_1_2
 x 13
@@ -2684,41 +2684,41 @@ x 14
 y 3
 end
 arch woodfloor
-unique 1
 x 14
 y 4
+unique 1
 end
 arch hedge_1_4
-move_block all
 x 14
 y 4
+move_block all
 end
 arch stwall_2_2_3
 x 14
 y 4
 end
 arch woodfloor
-unique 1
 x 14
 y 5
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 5
 end
 arch woodfloor
-unique 1
 x 14
 y 6
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 6
 end
 arch woodfloor
-unique 1
 x 14
 y 7
+unique 1
 end
 arch stwall_2_2_4
 x 14
@@ -2729,100 +2729,100 @@ x 14
 y 8
 end
 arch woodfloor
-unique 1
 x 14
 y 8
+unique 1
 end
 arch igate_closed_2
-connected 2
 x 14
 y 8
+connected 2
 end
 arch woodfloor
-unique 1
 x 14
 y 9
+unique 1
 end
 arch stwall_1_1
 x 14
 y 9
 end
 arch woodfloor
+x 14
+y 10
 unique 1
+end
+arch stwall_2_1_1
 x 14
 y 10
 end
-arch stwall_2_1_1
-x 14
-y 10
-end
 arch woodfloor
-unique 1
 x 14
 y 11
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 11
 end
 arch woodfloor
+x 14
+y 12
 unique 1
+end
+arch stwall_2_1_1
 x 14
 y 12
 end
-arch stwall_2_1_1
-x 14
-y 12
-end
 arch woodfloor
-unique 1
 x 14
 y 13
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 13
 end
 arch woodfloor
-unique 1
 x 14
 y 14
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 14
 end
 arch woodfloor
-unique 1
 x 14
 y 15
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 15
 end
 arch woodfloor
-unique 1
 x 14
 y 16
+unique 1
 end
 arch stwall_3_4
 x 14
 y 16
 end
 arch woodfloor
-unique 1
 x 14
 y 17
+unique 1
 end
 arch stwall_2_1_1
 x 14
 y 17
 end
 arch woodfloor
-unique 1
 x 14
 y 18
+unique 1
 end
 arch hedge_1_4
 x 14
@@ -2877,9 +2877,9 @@ x 15
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 15
 y 4
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -2907,9 +2907,9 @@ y 7
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 2
 x 15
 y 7
+connected 2
 end
 arch dungeon_magic
 x 15
@@ -2921,9 +2921,9 @@ y 8
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 2
 x 15
 y 8
+connected 2
 end
 arch dungeon_magic
 x 15
@@ -3006,9 +3006,9 @@ x 15
 y 18
 end
 arch hedge_2_2_3
-move_block all
 x 15
 y 18
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3019,9 +3019,9 @@ x 15
 y 19
 end
 arch hedge_2_1_1
-move_block all
 x 15
 y 19
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3032,9 +3032,9 @@ x 15
 y 20
 end
 arch hedge_2_2_1
-move_block all
 x 15
 y 20
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3061,9 +3061,9 @@ x 16
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 16
 y 4
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -3094,9 +3094,9 @@ x 16
 y 8
 end
 arch flagstone
-unique 1
 x 16
 y 8
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -3195,9 +3195,9 @@ x 16
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 16
 y 20
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -3224,9 +3224,9 @@ x 17
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 17
 y 4
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -3257,9 +3257,9 @@ x 17
 y 8
 end
 arch flagstone
-unique 1
 x 17
 y 8
+unique 1
 end
 arch dungeon_magic
 x 17
@@ -3358,9 +3358,9 @@ x 17
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 17
 y 20
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -3387,9 +3387,9 @@ x 18
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 18
 y 4
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -3424,9 +3424,9 @@ x 18
 y 8
 end
 arch flagstone
-unique 1
 x 18
 y 8
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -3553,9 +3553,9 @@ x 18
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 18
 y 20
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -3582,9 +3582,9 @@ x 19
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 19
 y 4
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3615,9 +3615,9 @@ x 19
 y 8
 end
 arch flagstone
-unique 1
 x 19
 y 8
+unique 1
 end
 arch dungeon_magic
 x 19
@@ -3744,9 +3744,9 @@ x 19
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 19
 y 20
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3773,9 +3773,9 @@ x 20
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 20
 y 4
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -3810,9 +3810,9 @@ x 20
 y 8
 end
 arch flagstone
-unique 1
 x 20
 y 8
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -3939,9 +3939,9 @@ x 20
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 20
 y 20
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -3968,9 +3968,9 @@ x 21
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 21
 y 4
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4001,9 +4001,9 @@ x 21
 y 8
 end
 arch flagstone
-unique 1
 x 21
 y 8
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -4126,9 +4126,9 @@ x 21
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 21
 y 20
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -4155,9 +4155,9 @@ x 22
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 22
 y 4
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -4192,9 +4192,9 @@ x 22
 y 8
 end
 arch flagstone
-unique 1
 x 22
 y 8
+unique 1
 end
 arch dungeon_magic
 x 22
@@ -4321,9 +4321,9 @@ x 22
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 22
 y 20
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -4350,9 +4350,9 @@ x 23
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 23
 y 4
+move_block all
 end
 arch dungeon_magic
 x 23
@@ -4367,54 +4367,54 @@ x 23
 y 6
 end
 arch flagstone
-unique 1
 x 23
 y 6
+unique 1
 end
 arch dungeon_magic
 x 23
 y 7
 end
 arch flagstone
-unique 1
 x 23
 y 7
+unique 1
 end
 arch dungeon_magic
 x 23
 y 8
 end
 arch flagstone
-unique 1
 x 23
 y 8
+unique 1
 end
 arch dungeon_magic
 x 23
 y 9
 end
 arch flagstone
-unique 1
 x 23
 y 9
+unique 1
 end
 arch dungeon_magic
 x 23
 y 10
 end
 arch flagstone
-unique 1
 x 23
 y 10
+unique 1
 end
 arch dungeon_magic
 x 23
 y 11
 end
 arch flagstone
-unique 1
 x 23
 y 11
+unique 1
 end
 arch dungeon_magic
 x 23
@@ -4505,9 +4505,9 @@ x 23
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 23
 y 20
+move_block all
 end
 arch dungeon_magic
 x 23
@@ -4534,9 +4534,9 @@ x 24
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 24
 y 4
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -4551,54 +4551,54 @@ x 24
 y 6
 end
 arch flagstone
-unique 1
 x 24
 y 6
+unique 1
 end
 arch dungeon_magic
 x 24
 y 7
 end
 arch flagstone
-unique 1
 x 24
 y 7
+unique 1
 end
 arch dungeon_magic
 x 24
 y 8
 end
 arch flagstone
-unique 1
 x 24
 y 8
+unique 1
 end
 arch dungeon_magic
 x 24
 y 9
 end
 arch flagstone
-unique 1
 x 24
 y 9
+unique 1
 end
 arch dungeon_magic
 x 24
 y 10
 end
 arch flagstone
-unique 1
 x 24
 y 10
+unique 1
 end
 arch dungeon_magic
 x 24
 y 11
 end
 arch flagstone
-unique 1
 x 24
 y 11
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -4673,9 +4673,9 @@ x 24
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 24
 y 20
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -4702,9 +4702,9 @@ x 25
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 25
 y 4
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4719,54 +4719,54 @@ x 25
 y 6
 end
 arch flagstone
-unique 1
 x 25
 y 6
+unique 1
 end
 arch dungeon_magic
 x 25
 y 7
 end
 arch flagstone
-unique 1
 x 25
 y 7
+unique 1
 end
 arch dungeon_magic
 x 25
 y 8
 end
 arch flagstone
-unique 1
 x 25
 y 8
+unique 1
 end
 arch dungeon_magic
 x 25
 y 9
 end
 arch flagstone
-unique 1
 x 25
 y 9
+unique 1
 end
 arch dungeon_magic
 x 25
 y 10
 end
 arch flagstone
-unique 1
 x 25
 y 10
+unique 1
 end
 arch dungeon_magic
 x 25
 y 11
 end
 arch flagstone
-unique 1
 x 25
 y 11
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -4825,27 +4825,27 @@ x 25
 y 16
 end
 arch flagstone
-unique 1
 x 25
 y 16
+unique 1
 end
 arch dungeon_magic
 x 25
 y 17
 end
 arch flagstone
-unique 1
 x 25
 y 17
+unique 1
 end
 arch dungeon_magic
 x 25
 y 18
 end
 arch flagstone
-unique 1
 x 25
 y 18
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -4864,9 +4864,9 @@ x 25
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 25
 y 20
+move_block all
 end
 arch dungeon_magic
 x 25
@@ -4893,9 +4893,9 @@ x 26
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 26
 y 4
+move_block all
 end
 arch dungeon_magic
 x 26
@@ -4910,96 +4910,96 @@ x 26
 y 6
 end
 arch flagstone
-unique 1
 x 26
 y 6
+unique 1
 end
 arch dungeon_magic
 x 26
 y 7
 end
 arch flagstone
-unique 1
 x 26
 y 7
+unique 1
 end
 arch dungeon_magic
 x 26
 y 8
 end
 arch flagstone
-unique 1
 x 26
 y 8
+unique 1
 end
 arch dungeon_magic
 x 26
 y 9
 end
 arch flagstone
-unique 1
 x 26
 y 9
+unique 1
 end
 arch dungeon_magic
 x 26
 y 10
 end
 arch flagstone
-unique 1
 x 26
 y 10
+unique 1
 end
 arch dungeon_magic
 x 26
 y 11
 end
 arch flagstone
-unique 1
 x 26
 y 11
+unique 1
 end
 arch dungeon_magic
 x 26
 y 12
 end
 arch flagstone
-unique 1
 x 26
 y 12
+unique 1
 end
 arch dungeon_magic
 x 26
 y 13
 end
 arch flagstone
-unique 1
 x 26
 y 13
+unique 1
 end
 arch dungeon_magic
 x 26
 y 14
 end
 arch flagstone
-unique 1
 x 26
 y 14
+unique 1
 end
 arch dungeon_magic
 x 26
 y 15
 end
 arch flagstone
-unique 1
 x 26
 y 15
+unique 1
 end
 arch creator
 other_arch flagstone
-connected 40
 x 26
 y 16
+connected 40
 end
 arch dungeon_magic
 x 26
@@ -5007,33 +5007,33 @@ y 16
 end
 arch goldfloor
 name drop  Well shovel for secret tunnel to basement
+slaying Well shovel
 msg
 Dig. Dig. Dig.
 endmsg
-slaying Well shovel
 food 1
-connected 8
-unique 1
 x 26
 y 16
+connected 8
+unique 1
 end
 arch dungeon_magic
 x 26
 y 17
 end
 arch flagstone
-unique 1
 x 26
 y 17
+unique 1
 end
 arch dungeon_magic
 x 26
 y 18
 end
 arch flagstone
-unique 1
 x 26
 y 18
+unique 1
 end
 arch dungeon_magic
 x 26
@@ -5052,9 +5052,9 @@ x 26
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 26
 y 20
+move_block all
 end
 arch dungeon_magic
 x 26
@@ -5081,9 +5081,9 @@ x 27
 y 4
 end
 arch hedge_2_1_2
-move_block all
 x 27
 y 4
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5098,54 +5098,54 @@ x 27
 y 6
 end
 arch flagstone
-unique 1
 x 27
 y 6
+unique 1
 end
 arch dungeon_magic
 x 27
 y 7
 end
 arch flagstone
-unique 1
 x 27
 y 7
+unique 1
 end
 arch dungeon_magic
 x 27
 y 8
 end
 arch flagstone
-unique 1
 x 27
 y 8
+unique 1
 end
 arch dungeon_magic
 x 27
 y 9
 end
 arch flagstone
-unique 1
 x 27
 y 9
+unique 1
 end
 arch dungeon_magic
 x 27
 y 10
 end
 arch flagstone
-unique 1
 x 27
 y 10
+unique 1
 end
 arch dungeon_magic
 x 27
 y 11
 end
 arch flagstone
-unique 1
 x 27
 y 11
+unique 1
 end
 arch dungeon_magic
 x 27
@@ -5204,27 +5204,27 @@ x 27
 y 16
 end
 arch flagstone
-unique 1
 x 27
 y 16
+unique 1
 end
 arch dungeon_magic
 x 27
 y 17
 end
 arch flagstone
-unique 1
 x 27
 y 17
+unique 1
 end
 arch dungeon_magic
 x 27
 y 18
 end
 arch flagstone
-unique 1
 x 27
 y 18
+unique 1
 end
 arch dungeon_magic
 x 27
@@ -5243,9 +5243,9 @@ x 27
 y 20
 end
 arch hedge_2_1_2
-move_block all
 x 27
 y 20
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -5272,9 +5272,9 @@ x 28
 y 4
 end
 arch hedge_2_2_3
-move_block all
 x 28
 y 4
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5285,9 +5285,9 @@ x 28
 y 5
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 5
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5298,9 +5298,9 @@ x 28
 y 6
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 6
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5311,9 +5311,9 @@ x 28
 y 7
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 7
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5324,9 +5324,9 @@ x 28
 y 8
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 8
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5337,9 +5337,9 @@ x 28
 y 9
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 9
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5350,9 +5350,9 @@ x 28
 y 10
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 10
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5363,9 +5363,9 @@ x 28
 y 11
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 11
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5376,9 +5376,9 @@ x 28
 y 12
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 12
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5389,9 +5389,9 @@ x 28
 y 13
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 13
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5402,9 +5402,9 @@ x 28
 y 14
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 14
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5415,9 +5415,9 @@ x 28
 y 15
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 15
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5428,9 +5428,9 @@ x 28
 y 16
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 16
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5441,9 +5441,9 @@ x 28
 y 17
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 17
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5454,9 +5454,9 @@ x 28
 y 18
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 18
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5467,9 +5467,9 @@ x 28
 y 19
 end
 arch hedge_2_1_1
-move_block all
 x 28
 y 19
+move_block all
 end
 arch dungeon_magic
 x 28
@@ -5480,9 +5480,9 @@ x 28
 y 20
 end
 arch hedge_2_2_4
-move_block all
 x 28
 y 20
+move_block all
 end
 arch dungeon_magic
 x 28

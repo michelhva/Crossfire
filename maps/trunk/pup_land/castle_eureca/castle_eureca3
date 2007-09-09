@@ -1,14 +1,14 @@
 arch map
-region pupland
 name castle_eureca3
+difficulty 5
+region pupland
+width 21
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar  7 21:11:23 1996
 endmsg
-x 21
-y 21
-level 5
 end
 arch dungeon_floor
 end
@@ -1222,8 +1222,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 8
-no_pick 1
 move_block all
+no_pick 1
 end
 arch flagstone
 x 9
@@ -1237,8 +1237,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 10
-no_pick 1
 move_block all
+no_pick 1
 end
 arch flagstone
 x 9
@@ -1441,8 +1441,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 8
-no_pick 1
 move_block all
+no_pick 1
 end
 arch flagstone
 x 11
@@ -1456,8 +1456,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 10
-no_pick 1
 move_block all
+no_pick 1
 end
 arch flagstone
 x 11
@@ -2108,8 +2108,8 @@ name pla-model
 x 15
 y 19
 weight 10
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch angel
 x 15
@@ -2239,8 +2239,8 @@ name pla-model
 x 16
 y 19
 weight 10
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch angel
 x 16
@@ -2378,8 +2378,8 @@ name pla-model
 x 17
 y 19
 weight 10
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch angel
 x 17
@@ -2522,8 +2522,8 @@ name pla-model
 x 18
 y 19
 weight 10
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch angel
 x 18
@@ -2659,8 +2659,8 @@ name pla-model
 x 19
 y 19
 weight 10
-no_pick 0
 move_block 0
+no_pick 0
 end
 arch angel
 x 19

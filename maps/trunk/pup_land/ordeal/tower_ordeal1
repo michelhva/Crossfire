@@ -1,12 +1,13 @@
 arch map
-region pupland
 name test2
+region pupland
+width 23
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jun 29 02:41:58 1997
 endmsg
-x 23
 end
 arch afloor_right
 end

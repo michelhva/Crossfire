@@ -1,13 +1,13 @@
 arch map
-region pupland
 name eureca_road1
+region pupland
+width 31
+height 31
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr  2 17:46:55 1996
 endmsg
-x 31
-y 31
 end
 arch blocked
 end
@@ -201,6 +201,10 @@ arch afloor_right
 x 1
 y 12
 end
+arch big_dragon
+x 1
+y 12
+end
 arch afloor_right
 x 1
 y 13
@@ -214,6 +218,10 @@ x 1
 y 15
 end
 arch afloor_right
+x 1
+y 16
+end
+arch big_dragon
 x 1
 y 16
 end
@@ -698,6 +706,10 @@ arch afloor_right
 x 4
 y 24
 end
+arch big_dragon
+x 4
+y 24
+end
 arch afloor_right
 x 4
 y 25
@@ -754,6 +766,10 @@ x 5
 y 3
 end
 arch afloor_right
+x 5
+y 4
+end
+arch big_dragon
 x 5
 y 4
 end
@@ -1148,6 +1164,10 @@ arch afloor_right
 x 7
 y 13
 end
+arch chinese_dragon
+x 7
+y 13
+end
 arch afloor_right
 x 7
 y 14
@@ -1156,11 +1176,19 @@ arch afloor_right
 x 7
 y 15
 end
+arch chinese_dragon
+x 7
+y 15
+end
 arch afloor_right
 x 7
 y 16
 end
 arch afloor_right
+x 7
+y 17
+end
+arch chinese_dragon
 x 7
 y 17
 end
@@ -1303,6 +1331,10 @@ arch afloor_right
 x 8
 y 11
 end
+arch chinese_dragon
+x 8
+y 11
+end
 arch afloor_right
 x 8
 y 12
@@ -1332,6 +1364,10 @@ x 8
 y 18
 end
 arch afloor_right
+x 8
+y 19
+end
+arch chinese_dragon
 x 8
 y 19
 end
@@ -1456,6 +1492,10 @@ arch afloor_right
 x 9
 y 9
 end
+arch chinese_dragon
+x 9
+y 9
+end
 arch afloor_right
 x 9
 y 10
@@ -1567,6 +1607,10 @@ x 9
 y 26
 end
 arch afloor_right
+x 9
+y 27
+end
+arch big_dragon
 x 9
 y 27
 end
@@ -1722,6 +1766,10 @@ arch afloor_right
 x 10
 y 21
 end
+arch chinese_dragon
+x 10
+y 21
+end
 arch afloor_right
 x 10
 y 22
@@ -1782,6 +1830,10 @@ arch afloor_right
 x 11
 y 1
 end
+arch big_dragon
+x 11
+y 1
+end
 arch afloor_right
 x 11
 y 2
@@ -1823,6 +1875,10 @@ speed 0.500000
 connected 2
 end
 arch afloor_right
+x 11
+y 8
+end
+arch chinese_dragon
 x 11
 y 8
 end
@@ -2067,6 +2123,10 @@ x 12
 y 21
 end
 arch afloor_right
+x 12
+y 22
+end
+arch chinese_dragon
 x 12
 y 22
 end
@@ -2451,6 +2511,10 @@ y 21
 connected 10
 end
 arch afloor_right
+x 14
+y 22
+end
+arch chinese_dragon
 x 14
 y 22
 end
@@ -2701,6 +2765,10 @@ arch afloor_right
 x 15
 y 27
 end
+arch big_dragon
+x 15
+y 27
+end
 arch afloor_right
 x 15
 y 28
@@ -2893,6 +2961,10 @@ arch afloor_right
 x 16
 y 22
 end
+arch chinese_dragon
+x 16
+y 22
+end
 arch afloor_right
 x 16
 y 23
@@ -2945,6 +3017,10 @@ arch afloor_right
 x 17
 y 1
 end
+arch big_dragon
+x 17
+y 1
+end
 arch afloor_right
 x 17
 y 2
@@ -2972,6 +3048,10 @@ speed 0.500000
 connected 2
 end
 arch afloor_right
+x 17
+y 7
+end
+arch chinese_dragon
 x 17
 y 7
 end
@@ -3209,6 +3289,10 @@ arch afloor_right
 x 18
 y 21
 end
+arch chinese_dragon
+x 18
+y 21
+end
 arch afloor_right
 x 18
 y 22
@@ -3310,6 +3394,10 @@ speed 0.500000
 connected 2
 end
 arch afloor_right
+x 19
+y 8
+end
+arch chinese_dragon
 x 19
 y 8
 end
@@ -3459,6 +3547,10 @@ arch afloor_right
 x 20
 y 2
 end
+arch big_dragon
+x 20
+y 2
+end
 arch afloor_right
 x 20
 y 3
@@ -3570,6 +3662,10 @@ y 19
 connected 10
 end
 arch afloor_right
+x 20
+y 20
+end
+arch chinese_dragon
 x 20
 y 20
 end
@@ -3686,6 +3782,10 @@ arch afloor_right
 x 21
 y 10
 end
+arch chinese_dragon
+x 21
+y 10
+end
 arch afloor_right
 x 21
 y 11
@@ -3745,6 +3845,10 @@ y 17
 connected 10
 end
 arch afloor_right
+x 21
+y 18
+end
+arch chinese_dragon
 x 21
 y 18
 end
@@ -3885,6 +3989,10 @@ arch afloor_right
 x 22
 y 12
 end
+arch chinese_dragon
+x 22
+y 12
+end
 arch afloor_right
 x 22
 y 13
@@ -3893,11 +4001,19 @@ arch afloor_right
 x 22
 y 14
 end
+arch chinese_dragon
+x 22
+y 14
+end
 arch afloor_right
 x 22
 y 15
 end
 arch afloor_right
+x 22
+y 16
+end
+arch chinese_dragon
 x 22
 y 16
 end
@@ -3944,6 +4060,10 @@ x 22
 y 24
 end
 arch afloor_right
+x 22
+y 25
+end
+arch big_dragon
 x 22
 y 25
 end
@@ -4447,6 +4567,10 @@ arch afloor_right
 x 25
 y 23
 end
+arch big_dragon
+x 25
+y 23
+end
 arch afloor_right
 x 25
 y 24
@@ -4535,6 +4659,10 @@ arch afloor_right
 x 26
 y 9
 end
+arch big_dragon
+x 26
+y 9
+end
 arch afloor_right
 x 26
 y 10
@@ -4722,6 +4850,10 @@ arch afloor_right
 x 27
 y 17
 end
+arch big_dragon
+x 27
+y 17
+end
 arch afloor_right
 x 27
 y 18
@@ -5254,136 +5386,4 @@ end
 arch blocked
 x 30
 y 30
-end
-arch big_dragon
-x 1
-y 12
-end
-arch big_dragon
-x 1
-y 16
-end
-arch big_dragon
-x 4
-y 24
-end
-arch big_dragon
-x 5
-y 4
-end
-arch chinese_dragon
-x 7
-y 13
-end
-arch chinese_dragon
-x 7
-y 15
-end
-arch chinese_dragon
-x 7
-y 17
-end
-arch chinese_dragon
-x 8
-y 11
-end
-arch chinese_dragon
-x 8
-y 19
-end
-arch chinese_dragon
-x 9
-y 9
-end
-arch big_dragon
-x 9
-y 27
-end
-arch chinese_dragon
-x 10
-y 21
-end
-arch big_dragon
-x 11
-y 1
-end
-arch chinese_dragon
-x 11
-y 8
-end
-arch chinese_dragon
-x 12
-y 22
-end
-arch chinese_dragon
-x 14
-y 22
-end
-arch big_dragon
-x 15
-y 27
-end
-arch chinese_dragon
-x 16
-y 22
-end
-arch big_dragon
-x 17
-y 1
-end
-arch chinese_dragon
-x 17
-y 7
-end
-arch chinese_dragon
-x 18
-y 21
-end
-arch chinese_dragon
-x 19
-y 8
-end
-arch big_dragon
-x 20
-y 2
-end
-arch chinese_dragon
-x 20
-y 20
-end
-arch chinese_dragon
-x 21
-y 10
-end
-arch chinese_dragon
-x 21
-y 18
-end
-arch chinese_dragon
-x 22
-y 12
-end
-arch chinese_dragon
-x 22
-y 14
-end
-arch chinese_dragon
-x 22
-y 16
-end
-arch big_dragon
-x 22
-y 25
-end
-arch big_dragon
-x 25
-y 23
-end
-arch big_dragon
-x 26
-y 9
-end
-arch big_dragon
-x 27
-y 17
 end

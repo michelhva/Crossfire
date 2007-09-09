@@ -210,13 +210,13 @@ y 10
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch dungeon_magic
 x 1
@@ -264,13 +264,13 @@ y 14
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch dungeon_magic
 x 1
@@ -629,13 +629,13 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 4
@@ -714,13 +714,13 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 4
@@ -884,13 +884,13 @@ y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch dun2
 x 6
@@ -1139,10 +1139,10 @@ ac -40
 x 8
 y 2
 level 19
+resist_physical 90
 unaggressive 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 90
 end
 arch flagstone
 x 8
@@ -1190,13 +1190,13 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 8
@@ -1264,13 +1264,13 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 8
@@ -1567,13 +1567,13 @@ y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch dun2
 x 11
@@ -1763,13 +1763,13 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 12
@@ -1843,13 +1843,13 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 13
@@ -2180,13 +2180,13 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 1
 move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-resist_physical 1
 end
 arch flagstone
 x 15

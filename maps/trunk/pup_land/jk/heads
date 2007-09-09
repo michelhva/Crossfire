@@ -1,13 +1,13 @@
 arch map
-region pupland
 name heads
+region pupland
+width 23
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 08:08:24 1996
 endmsg
-x 23
-y 27
 end
 arch medium_stones
 end
@@ -317,6 +317,10 @@ arch medium_stones
 x 2
 y 5
 end
+arch dread
+x 2
+y 5
+end
 arch medium_stones
 x 2
 y 6
@@ -338,6 +342,10 @@ x 2
 y 10
 end
 arch medium_stones
+x 2
+y 11
+end
+arch mabu
 x 2
 y 11
 end
@@ -640,6 +648,10 @@ arch medium_stones
 x 4
 y 9
 end
+arch mabu
+x 4
+y 9
+end
 arch dungeon_floor
 x 4
 y 10
@@ -649,6 +661,10 @@ x 4
 y 11
 end
 arch dungeon_floor
+x 4
+y 12
+end
+arch mabu
 x 4
 y 12
 end
@@ -884,6 +900,10 @@ arch dungeon_floor
 x 6
 y 8
 end
+arch mabu
+x 6
+y 8
+end
 arch dungeon_floor
 x 6
 y 9
@@ -1019,6 +1039,10 @@ arch dungeon_floor
 x 7
 y 11
 end
+arch mabu
+x 7
+y 11
+end
 arch dungeon_floor
 x 7
 y 12
@@ -1110,6 +1134,10 @@ x 8
 y 6
 end
 arch dungeon_floor
+x 8
+y 7
+end
+arch mabu
 x 8
 y 7
 end
@@ -1350,6 +1378,10 @@ x 10
 y 8
 end
 arch dungeon_floor
+x 10
+y 9
+end
+arch mabu
 x 10
 y 9
 end
@@ -2606,6 +2638,21 @@ sp 3
 x 17
 y 14
 end
+arch big_dragon
+name Dragon Head
+Con 10
+hp 10000
+x 17
+y 14
+speed 0.800000
+speed_left -0.650000
+attack_movement 4
+carrying 100
+arch key2
+name head's key
+slaying 9head
+end
+end
 arch dungeon_floor
 x 17
 y 15
@@ -3332,51 +3379,4 @@ end
 arch blocked
 x 22
 y 26
-end
-arch dread
-x 2
-y 5
-end
-arch mabu
-x 2
-y 11
-end
-arch mabu
-x 4
-y 9
-end
-arch mabu
-x 4
-y 12
-end
-arch mabu
-x 6
-y 8
-end
-arch mabu
-x 7
-y 11
-end
-arch mabu
-x 8
-y 7
-end
-arch mabu
-x 10
-y 9
-end
-arch big_dragon
-name Dragon Head
-Con 10
-hp 10000
-x 17
-y 14
-speed 0.800000
-speed_left -0.650000
-attack_movement 4
-carrying 100
-arch key2
-name head's key
-slaying 9head
-end
 end

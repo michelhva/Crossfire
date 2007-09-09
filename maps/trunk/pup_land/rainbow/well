@@ -1,13 +1,13 @@
 arch map
-region pupland
 name well
+region pupland
+width 7
+height 7
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Aug 13 18:23:06 1996
 endmsg
-x 7
-y 7
 end
 arch blocked
 end

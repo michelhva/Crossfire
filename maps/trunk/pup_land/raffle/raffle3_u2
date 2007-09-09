@@ -1,17 +1,17 @@
 arch map
-region pupland
 name raffle_u1
+swap_time 5
+reset_timeout 3600
+difficulty 7
+region pupland
+darkness 3
+width 37
+height 41
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 24 21:58:23 1997
 endmsg
-x 37
-y 41
-level 7
-value 5
-weight 3600
-invisible 3
 end
 arch blocked
 end
@@ -513,6 +513,27 @@ end
 arch small_stones
 x 2
 y 11
+end
+arch big_dragon
+name Mega Dragon
+Con 100
+Wis 1
+Pow 15
+hp 20000
+maxhp 10000
+sp 200
+maxsp 200
+exp 1000000
+dam 500
+wc -99
+ac -66
+x 2
+y 11
+level 50
+attacktype 1
+resist_slow -100
+resist_paralyze -100
+resist_fear -100
 end
 arch dungeon_magic
 x 2
@@ -2622,6 +2643,19 @@ arch small_stones
 x 8
 y 35
 end
+arch big_wiz
+name Arch Wizard
+Pow 24
+hp 8000
+maxhp 8000
+maxsp 300
+exp 800000
+ac -30
+x 8
+y 35
+speed_left -32.099998
+level 50
+end
 arch dungeon_magic
 x 8
 y 36
@@ -2854,6 +2888,10 @@ x 9
 y 24
 end
 arch small_stones
+x 9
+y 24
+end
+arch big_wiz
 x 9
 y 24
 end
@@ -3467,6 +3505,10 @@ arch small_stones
 x 11
 y 5
 end
+arch big_dragon
+x 11
+y 5
+end
 arch dungeon_magic
 x 11
 y 6
@@ -3546,6 +3588,27 @@ end
 arch small_stones
 x 11
 y 15
+end
+arch big_dragon
+name Mega Dragon
+Con 100
+Wis 1
+Pow 15
+hp 20000
+maxhp 10000
+sp 200
+maxsp 200
+exp 1000000
+dam 500
+wc -99
+ac -66
+x 11
+y 15
+level 50
+attacktype 1
+resist_slow -100
+resist_paralyze -100
+resist_fear -100
 end
 arch dungeon_magic
 x 11
@@ -8261,6 +8324,10 @@ arch small_stones
 x 25
 y 14
 end
+arch dread
+x 25
+y 14
+end
 arch dungeon_magic
 x 25
 y 15
@@ -10376,6 +10443,11 @@ x 30
 y 35
 attacktype 1
 end
+arch big_demon
+x 30
+y 35
+speed_left -7.900000
+end
 arch dungeon_magic
 x 30
 y 36
@@ -10981,6 +11053,10 @@ arch small_stones
 x 32
 y 18
 end
+arch dread
+x 32
+y 18
+end
 arch dungeon_magic
 x 32
 y 19
@@ -11576,6 +11652,19 @@ end
 arch pstone_1
 x 34
 y 7
+end
+arch dread
+name Dreadful Dread
+hp 7000
+maxhp 5000
+exp 400000
+dam 200
+wc -50
+ac -40
+x 34
+y 7
+level 35
+attacktype 3
 end
 arch pstone_1
 x 34
@@ -12451,93 +12540,4 @@ end
 arch blocked
 x 36
 y 40
-end
-arch big_dragon
-name Mega Dragon
-Con 100
-Wis 1
-Pow 15
-hp 20000
-maxhp 10000
-sp 200
-maxsp 200
-exp 1000000
-dam 500
-wc -99
-ac -66
-x 2
-y 11
-level 50
-attacktype 1
-resist_slow -100
-resist_paralyze -100
-resist_fear -100
-end
-arch big_wiz
-name Arch Wizard
-Pow 24
-hp 8000
-maxhp 8000
-maxsp 300
-exp 800000
-ac -30
-x 8
-y 35
-speed_left -32.099998
-level 50
-end
-arch big_wiz
-x 9
-y 24
-end
-arch big_dragon
-x 11
-y 5
-end
-arch big_dragon
-name Mega Dragon
-Con 100
-Wis 1
-Pow 15
-hp 20000
-maxhp 10000
-sp 200
-maxsp 200
-exp 1000000
-dam 500
-wc -99
-ac -66
-x 11
-y 15
-level 50
-attacktype 1
-resist_slow -100
-resist_paralyze -100
-resist_fear -100
-end
-arch dread
-x 25
-y 14
-end
-arch big_demon
-x 30
-y 35
-speed_left -7.900000
-end
-arch dread
-x 32
-y 18
-end
-arch dread
-name Dreadful Dread
-hp 7000
-maxhp 5000
-exp 400000
-dam 200
-wc -50
-ac -40
-x 34
-y 7
-level 35
-attacktype 3
 end

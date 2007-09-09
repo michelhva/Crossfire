@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name cave
+difficulty 5
+region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed May 29 23:13:05 1996
 endmsg
-x 32
-y 32
-level 5
 end
 arch blocked
 end
@@ -2318,6 +2318,10 @@ arch dungeon_floor
 x 12
 y 16
 end
+arch golem_necro
+x 12
+y 16
+end
 arch dungeon_floor
 x 12
 y 17
@@ -2327,6 +2331,10 @@ x 12
 y 18
 end
 arch dungeon_floor
+x 12
+y 19
+end
+arch golem_necro
 x 12
 y 19
 end
@@ -2556,6 +2564,10 @@ arch dungeon_floor
 x 13
 y 25
 end
+arch golem_necro
+x 13
+y 25
+end
 arch dungeon_floor
 x 13
 y 26
@@ -2671,6 +2683,10 @@ arch dungeon_floor
 x 14
 y 16
 end
+arch golem_necro
+x 14
+y 16
+end
 arch dungeon_floor
 x 14
 y 17
@@ -2680,6 +2696,10 @@ x 14
 y 18
 end
 arch dungeon_floor
+x 14
+y 19
+end
+arch golem_necro
 x 14
 y 19
 end
@@ -2908,6 +2928,10 @@ speed_left -4.100000
 connected 1
 end
 arch dungeon_floor
+x 15
+y 25
+end
+arch golem_necro
 x 15
 y 25
 end
@@ -3047,6 +3071,10 @@ arch dungeon_floor
 x 16
 y 16
 end
+arch golem_necro
+x 16
+y 16
+end
 arch dungeon_floor
 x 16
 y 17
@@ -3056,6 +3084,10 @@ x 16
 y 18
 end
 arch dungeon_floor
+x 16
+y 19
+end
+arch golem_necro
 x 16
 y 19
 end
@@ -3114,6 +3146,10 @@ x 16
 y 27
 end
 arch dungeon_floor
+x 16
+y 28
+end
+arch golem_necro
 x 16
 y 28
 end
@@ -3287,6 +3323,10 @@ arch dungeon_floor
 x 17
 y 25
 end
+arch golem_necro
+x 17
+y 25
+end
 arch dungeon_floor
 x 17
 y 26
@@ -3411,6 +3451,10 @@ arch dungeon_floor
 x 18
 y 16
 end
+arch golem_necro
+x 18
+y 16
+end
 arch dungeon_floor
 x 18
 y 17
@@ -3420,6 +3464,10 @@ x 18
 y 18
 end
 arch dungeon_floor
+x 18
+y 19
+end
+arch golem_necro
 x 18
 y 19
 end
@@ -3478,6 +3526,10 @@ x 18
 y 27
 end
 arch dungeon_floor
+x 18
+y 28
+end
+arch golem_necro
 x 18
 y 28
 end
@@ -3811,6 +3863,10 @@ arch dungeon_floor
 x 20
 y 16
 end
+arch golem_necro
+x 20
+y 16
+end
 arch dungeon_floor
 x 20
 y 17
@@ -3820,6 +3876,10 @@ x 20
 y 18
 end
 arch dungeon_floor
+x 20
+y 19
+end
+arch golem_necro
 x 20
 y 19
 end
@@ -3895,6 +3955,10 @@ speed_left -4.100000
 connected 1
 end
 arch dungeon_floor
+x 20
+y 28
+end
+arch golem_necro
 x 20
 y 28
 end
@@ -4213,6 +4277,10 @@ arch dungeon_floor
 x 22
 y 16
 end
+arch golem_necro
+x 22
+y 16
+end
 arch dungeon_floor
 x 22
 y 17
@@ -4222,6 +4290,10 @@ x 22
 y 18
 end
 arch dungeon_floor
+x 22
+y 19
+end
+arch golem_necro
 x 22
 y 19
 end
@@ -4308,6 +4380,10 @@ speed_left -4.100000
 connected 1
 end
 arch dungeon_floor
+x 22
+y 28
+end
+arch golem_necro
 x 22
 y 28
 end
@@ -4634,6 +4710,10 @@ arch dungeon_floor
 x 24
 y 16
 end
+arch golem_necro
+x 24
+y 16
+end
 arch dungeon_floor
 x 24
 y 17
@@ -4643,6 +4723,10 @@ x 24
 y 18
 end
 arch dungeon_floor
+x 24
+y 19
+end
+arch golem_necro
 x 24
 y 19
 end
@@ -4696,6 +4780,10 @@ arch dungeon_floor
 x 24
 y 25
 end
+arch golem_necro
+x 24
+y 25
+end
 arch dungeon_floor
 x 24
 y 26
@@ -4705,6 +4793,10 @@ x 24
 y 27
 end
 arch dungeon_floor
+x 24
+y 28
+end
+arch golem_necro
 x 24
 y 28
 end
@@ -5018,6 +5110,10 @@ arch dungeon_floor
 x 26
 y 16
 end
+arch golem_necro
+x 26
+y 16
+end
 arch dungeon_floor
 x 26
 y 17
@@ -5027,6 +5123,10 @@ x 26
 y 18
 end
 arch dungeon_floor
+x 26
+y 19
+end
+arch golem_necro
 x 26
 y 19
 end
@@ -5080,6 +5180,10 @@ arch dungeon_floor
 x 26
 y 25
 end
+arch golem_necro
+x 26
+y 25
+end
 arch dungeon_floor
 x 26
 y 26
@@ -5089,6 +5193,10 @@ x 26
 y 27
 end
 arch dungeon_floor
+x 26
+y 28
+end
+arch golem_necro
 x 26
 y 28
 end
@@ -5385,6 +5493,10 @@ arch dungeon_floor
 x 28
 y 16
 end
+arch golem_necro
+x 28
+y 16
+end
 arch dungeon_floor
 x 28
 y 17
@@ -5394,6 +5506,10 @@ x 28
 y 18
 end
 arch dungeon_floor
+x 28
+y 19
+end
+arch golem_necro
 x 28
 y 19
 end
@@ -5444,6 +5560,10 @@ speed_left -4.100000
 connected 1
 end
 arch dungeon_floor
+x 28
+y 25
+end
+arch golem_necro
 x 28
 y 25
 end
@@ -6113,124 +6233,4 @@ end
 arch blocked
 x 31
 y 31
-end
-arch golem_necro
-x 12
-y 16
-end
-arch golem_necro
-x 12
-y 19
-end
-arch golem_necro
-x 13
-y 25
-end
-arch golem_necro
-x 14
-y 16
-end
-arch golem_necro
-x 14
-y 19
-end
-arch golem_necro
-x 15
-y 25
-end
-arch golem_necro
-x 16
-y 16
-end
-arch golem_necro
-x 16
-y 19
-end
-arch golem_necro
-x 16
-y 28
-end
-arch golem_necro
-x 17
-y 25
-end
-arch golem_necro
-x 18
-y 16
-end
-arch golem_necro
-x 18
-y 19
-end
-arch golem_necro
-x 18
-y 28
-end
-arch golem_necro
-x 20
-y 16
-end
-arch golem_necro
-x 20
-y 19
-end
-arch golem_necro
-x 20
-y 28
-end
-arch golem_necro
-x 22
-y 16
-end
-arch golem_necro
-x 22
-y 19
-end
-arch golem_necro
-x 22
-y 28
-end
-arch golem_necro
-x 24
-y 16
-end
-arch golem_necro
-x 24
-y 19
-end
-arch golem_necro
-x 24
-y 25
-end
-arch golem_necro
-x 24
-y 28
-end
-arch golem_necro
-x 26
-y 16
-end
-arch golem_necro
-x 26
-y 19
-end
-arch golem_necro
-x 26
-y 25
-end
-arch golem_necro
-x 26
-y 28
-end
-arch golem_necro
-x 28
-y 16
-end
-arch golem_necro
-x 28
-y 19
-end
-arch golem_necro
-x 28
-y 25
 end

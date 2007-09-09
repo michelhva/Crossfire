@@ -1,12 +1,15 @@
 arch map
+name <unnamed>
+swap_time 5
+difficulty 20
 region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jul 13 00:05:41 1997
 endmsg
-level 20
-value 5
 end
 arch woodfloor
 end
@@ -439,11 +442,19 @@ arch woodfloor
 x 4
 y 3
 end
+arch big_dragon
+x 4
+y 3
+end
 arch woodfloor
 x 4
 y 4
 end
 arch woodfloor
+x 4
+y 5
+end
+arch big_dragon
 x 4
 y 5
 end
@@ -460,6 +471,10 @@ x 4
 y 8
 end
 arch woodfloor
+x 4
+y 9
+end
+arch big_dragon
 x 4
 y 9
 end
@@ -705,6 +720,10 @@ arch woodfloor
 x 7
 y 8
 end
+arch big_dragon
+x 7
+y 8
+end
 arch woodfloor
 x 7
 y 9
@@ -713,11 +732,19 @@ arch woodfloor
 x 7
 y 10
 end
+arch big_dragon
+x 7
+y 10
+end
 arch woodfloor
 x 7
 y 11
 end
 arch woodfloor
+x 7
+y 12
+end
+arch big_dragon
 x 7
 y 12
 end
@@ -939,11 +966,19 @@ arch woodfloor
 x 10
 y 2
 end
+arch big_dragon
+x 10
+y 2
+end
 arch woodfloor
 x 10
 y 3
 end
 arch woodfloor
+x 10
+y 4
+end
+arch big_dragon
 x 10
 y 4
 end
@@ -963,6 +998,10 @@ arch woodfloor
 x 10
 y 7
 end
+arch big_dragon
+x 10
+y 7
+end
 arch woodfloor
 x 10
 y 8
@@ -976,6 +1015,10 @@ x 10
 y 10
 end
 arch woodfloor
+x 10
+y 11
+end
+arch big_dragon
 x 10
 y 11
 end
@@ -1525,44 +1568,4 @@ end
 arch dwall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 4
-y 3
-end
-arch big_dragon
-x 4
-y 5
-end
-arch big_dragon
-x 4
-y 9
-end
-arch big_dragon
-x 7
-y 8
-end
-arch big_dragon
-x 7
-y 10
-end
-arch big_dragon
-x 7
-y 12
-end
-arch big_dragon
-x 10
-y 2
-end
-arch big_dragon
-x 10
-y 4
-end
-arch big_dragon
-x 10
-y 7
-end
-arch big_dragon
-x 10
-y 11
 end

@@ -1,15 +1,15 @@
 arch map
-region nurnberg
 name pshop
+region nurnberg
+shopitems potion:100;*:-100
+shopmax 20000
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb 13 01:00:57 1996
 endmsg
-x 25
-y 25
-shopitems potion:100;*:-100
-shopmax 20000
 end
 arch grass
 end
@@ -1790,8 +1790,8 @@ hp 100
 x 13
 y 7
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_floor

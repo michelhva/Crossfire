@@ -1,11 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 17
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jul 16 09:19:30 1996
 endmsg
-x 17
 end
 arch blocked
 end
@@ -1412,8 +1414,8 @@ face thief.131
 hp 100
 x 16
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch mover_5

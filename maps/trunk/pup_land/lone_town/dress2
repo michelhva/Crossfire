@@ -1,12 +1,14 @@
 arch map
-region lonetown
 name dress2
+difficulty 15
+region lonetown
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 27 01:51:24 1996
 endmsg
-level 15
 end
 arch marble
 end
@@ -166,8 +168,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -233,8 +235,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -385,8 +387,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -433,8 +435,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -507,8 +509,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -579,8 +581,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -633,8 +635,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -698,8 +700,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -874,8 +876,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1131,8 +1133,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1159,8 +1161,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1515,8 +1517,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1564,8 +1566,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1604,8 +1606,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1813,8 +1815,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1
@@ -1845,8 +1847,8 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
-monster 1
 move_type walk
+monster 1
 can_cast_spell 1
 can_use_scroll 1
 can_use_rod 1

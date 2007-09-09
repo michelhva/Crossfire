@@ -1,13 +1,14 @@
 arch map
+name <unnamed>
+difficulty 5
 region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun  5 17:16:58 1996
 endmsg
-x 32
-y 32
-level 5
 end
 arch afloor_right
 end
@@ -5063,14 +5064,14 @@ exp 1000
 dam 127
 wc -128
 ac -128
-resist_physical 127
 x 22
 y 24
 speed 0.250000
 level 100
 attacktype 1
-run_away 0
+resist_physical 127
 unaggressive 1
+run_away 0
 can_use_armour 0
 can_use_weapon 0
 end
@@ -5087,14 +5088,14 @@ exp 1000
 dam 127
 wc -128
 ac -128
-resist_physical 127
 x 22
 y 25
 speed 0.250000
 level 100
 attacktype 1
-run_away 0
+resist_physical 127
 unaggressive 1
+run_away 0
 can_use_armour 0
 can_use_weapon 0
 end
@@ -5111,15 +5112,15 @@ exp 1000
 dam 127
 wc -128
 ac -128
-resist_physical 127
 x 22
 y 26
 speed 0.800000
 level 100
 attacktype 1
+resist_physical 127
 carrying 100
-run_away 0
 unaggressive 1
+run_away 0
 can_use_armour 0
 can_use_weapon 0
 arch key2

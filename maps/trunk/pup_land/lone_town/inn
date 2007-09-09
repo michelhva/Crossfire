@@ -1,15 +1,15 @@
 arch map
-region lonetown
 name inn
+region lonetown
+width 20
+height 9
+enter_x 9
+enter_y 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 25 18:52:26 1996
 endmsg
-hp 9
-sp 8
-x 20
-y 9
 end
 arch flagstone
 end
@@ -149,8 +149,8 @@ exp 0
 ac 0
 x 2
 y 3
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch cobblestones
@@ -167,8 +167,8 @@ exp 0
 ac 0
 x 2
 y 5
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch flagstone
@@ -393,8 +393,8 @@ exp 0
 ac 0
 x 6
 y 3
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch cobblestones
@@ -411,8 +411,8 @@ exp 0
 ac 0
 x 6
 y 5
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch flagstone
@@ -632,8 +632,8 @@ exp 0
 ac 0
 x 10
 y 3
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch cobblestones
@@ -774,8 +774,8 @@ exp 0
 ac 0
 x 12
 y 5
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch flagstone
@@ -898,8 +898,8 @@ exp 0
 ac 0
 x 14
 y 4
-alive 0
 move_block 0
+alive 0
 pass_thru 0
 end
 arch flagstone
@@ -948,8 +948,8 @@ arch uw_shield
 name Shield of Ornament
 x 15
 y 1
-no_pick 1
 move_block all
+no_pick 1
 end
 arch woodfloor
 x 15

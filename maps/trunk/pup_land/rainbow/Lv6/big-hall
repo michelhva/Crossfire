@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 21
+height 26
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Aug  8 09:54:41 1996
 endmsg
-x 21
-y 26
 end
 arch flagstone
 end
@@ -239,6 +240,10 @@ arch flagstone
 x 1
 y 11
 end
+arch big_dragon
+x 1
+y 11
+end
 arch flagstone
 x 1
 y 12
@@ -360,6 +365,14 @@ end
 arch flagstone
 x 2
 y 4
+end
+arch big_dragon
+x 2
+y 4
+carrying 100
+arch key2
+slaying big
+end
 end
 arch flagstone
 x 2
@@ -568,6 +581,14 @@ arch flagstone
 x 3
 y 15
 end
+arch big_dragon
+x 3
+y 15
+carrying 100
+arch key2
+slaying big
+end
+end
 arch flagstone
 x 3
 y 16
@@ -663,6 +684,10 @@ x 4
 y 7
 end
 arch flagstone
+x 4
+y 8
+end
+arch titan
 x 4
 y 8
 end
@@ -1092,6 +1117,10 @@ arch flagstone
 x 7
 y 3
 end
+arch titan
+x 7
+y 3
+end
 arch flagstone
 x 7
 y 4
@@ -1295,6 +1324,10 @@ x 8
 y 15
 end
 arch flagstone
+x 8
+y 16
+end
+arch titan
 x 8
 y 16
 end
@@ -1533,6 +1566,10 @@ x 10
 y 1
 end
 arch flagstone
+x 10
+y 2
+end
+arch big_dragon
 x 10
 y 2
 end
@@ -2087,6 +2124,10 @@ arch flagstone
 x 13
 y 15
 end
+arch big_dragon
+x 13
+y 15
+end
 arch flagstone
 x 13
 y 16
@@ -2150,6 +2191,10 @@ x 14
 y 1
 end
 arch flagstone
+x 14
+y 2
+end
+arch titan
 x 14
 y 2
 end
@@ -2344,6 +2389,10 @@ x 15
 y 10
 end
 arch flagstone
+x 15
+y 11
+end
+arch titan
 x 15
 y 11
 end
@@ -2603,6 +2652,14 @@ arch flagstone
 x 17
 y 3
 end
+arch big_dragon
+x 17
+y 3
+carrying 100
+arch key2
+slaying big
+end
+end
 arch flagstone
 x 17
 y 4
@@ -2662,6 +2719,14 @@ end
 arch flagstone
 x 17
 y 14
+end
+arch big_dragon
+x 17
+y 14
+carrying 100
+arch key2
+slaying big
+end
 end
 arch flagstone
 x 17
@@ -2779,6 +2844,10 @@ x 18
 y 8
 end
 arch flagstone
+x 18
+y 9
+end
+arch titan
 x 18
 y 9
 end
@@ -3240,72 +3309,4 @@ end
 arch dwall_2_2_4
 x 20
 y 25
-end
-arch big_dragon
-x 1
-y 11
-end
-arch big_dragon
-x 2
-y 4
-carrying 100
-arch key2
-slaying big
-end
-end
-arch big_dragon
-x 3
-y 15
-carrying 100
-arch key2
-slaying big
-end
-end
-arch titan
-x 4
-y 8
-end
-arch titan
-x 7
-y 3
-end
-arch titan
-x 8
-y 16
-end
-arch big_dragon
-x 10
-y 2
-end
-arch big_dragon
-x 13
-y 15
-end
-arch titan
-x 14
-y 2
-end
-arch titan
-x 15
-y 11
-end
-arch big_dragon
-x 17
-y 3
-carrying 100
-arch key2
-slaying big
-end
-end
-arch big_dragon
-x 17
-y 14
-carrying 100
-arch key2
-slaying big
-end
-end
-arch titan
-x 18
-y 9
 end
