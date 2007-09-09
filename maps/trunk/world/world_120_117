@@ -10152,6 +10152,14 @@ arch mountain
 x 41
 y 7
 end
+arch tower_a
+name Skud Tower
+slaying /quests/skud/entrance
+hp 4
+sp 19
+x 41
+y 7
+end
 arch mountain
 x 41
 y 8
@@ -12339,12 +12347,4 @@ arch mountain4
 x 49
 y 49
 elevation 13713
-end
-arch tower_a
-name Skud Tower
-slaying /quests/skud/entrance
-hp 4
-sp 19
-x 41
-y 7
 end

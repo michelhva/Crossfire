@@ -11107,6 +11107,14 @@ x 44
 y 33
 elevation 4772
 end
+arch inn
+slaying /inn_and_outpost/hermes_inn
+hp 8
+sp 13
+x 44
+y 33
+elevation 4772
+end
 arch hills
 x 44
 y 34
@@ -12439,12 +12447,4 @@ arch hills
 x 49
 y 49
 elevation 4676
-end
-arch inn
-slaying /inn_and_outpost/hermes_inn
-hp 8
-sp 13
-x 44
-y 33
-elevation 4772
 end
