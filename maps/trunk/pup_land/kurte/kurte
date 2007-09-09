@@ -1,13 +1,13 @@
 arch map
-region pupland
 name kurte
+region pupland
+width 23
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr  3 13:46:36 1996
 endmsg
-x 23
-y 25
 end
 arch blocked
 end
@@ -269,8 +269,8 @@ hp 100
 x 2
 y 10
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch flagstone
@@ -1129,6 +1129,7 @@ end
 arch raas
 name Kurte
 msg
+
 endmsg
 Con 100
 hp 10000
@@ -1363,6 +1364,11 @@ arch flagstone
 x 10
 y 12
 end
+arch pentagram_111
+x 10
+y 12
+type 0
+end
 arch flagstone
 x 10
 y 13
@@ -1470,6 +1476,62 @@ end
 arch flagstone
 x 11
 y 4
+end
+arch unicorn
+name Kurte
+msg
+@match Family|family
+I can look all over this country...
+So... I saw that the hideout of
+Eureca's family has been discovered by
+the monsters...
+@match Solve|solve|[Aa]nswer
+I didn't know anything about Ghothwolte.
+So I did some research. Read the
+scrolls above. I found out that
+Ghothwolte is immune to everything.
+Nothing can harm it. So I told Eureca,
+ "There is only one way to defeat it.
+  Travel to the Past, and kill Ghothwolte
+  before it is getting invulnerable!"
+@match [Tt]rouble|[Ss]tart
+One night, Eureca's castle was attacked
+by monsters. Eureca defended his castle
+bravely, but Ghothwolte, the leader of
+the attackers army was incredible strong.
+At last he gave up fighting Ghothwolte.
+He magaged to escape with his family
+and servant. He hid his Family in a
+secret room in the castle. Then he
+and his servant, Cordish, came here
+to ask me how they could solve their
+disaster.
+@match [Ss]aving [Ee]ureca
+At first, I'll tell you how all of this
+trouble started...
+@match Yes|yes
+Find and save Eureca...
+I count on you!
+@match Cordish|cordish
+He is one of Eureca's servants.
+He looked scared and coward...
+@match Past|past
+Eureca and his servant went to the
+past... and they didn't return yet...
+They must have gotten into trouble
+again... I am very concerned...
+Would you go to the past and save them?
+@match *
+Hello, adventurer...
+I ask you again,
+ "what is your motive in comming here?"
+endmsg
+Con 100
+hp 20000
+x 11
+y 4
+friendly 1
+unaggressive 0
 end
 arch flagstone
 x 11
@@ -2760,6 +2822,17 @@ arch flagstone
 x 20
 y 10
 end
+arch titan
+name Kurte
+Con 100
+hp 20000
+maxhp 20000
+x 20
+y 10
+friendly 1
+can_use_armour 0
+can_use_weapon 0
+end
 arch flagstone
 x 20
 y 11
@@ -3053,76 +3126,4 @@ end
 arch blocked
 x 22
 y 24
-end
-arch pentagram_111
-x 10
-y 12
-type 0
-end
-arch unicorn
-name Kurte
-msg
-@match Family|family
-I can look all over this country...
-So... I saw that the hideout of
-Eureca's family has been discovered by
-the monsters...
-@match Solve|solve|[Aa]nswer
-I didn't know anything about Ghothwolte.
-So I did some research. Read the
-scrolls above. I found out that
-Ghothwolte is immune to everything.
-Nothing can harm it. So I told Eureca,
- "There is only one way to defeat it.
-  Travel to the Past, and kill Ghothwolte
-  before it is getting invulnerable!"
-@match [Tt]rouble|[Ss]tart
-One night, Eureca's castle was attacked
-by monsters. Eureca defended his castle
-bravely, but Ghothwolte, the leader of
-the attackers army was incredible strong.
-At last he gave up fighting Ghothwolte.
-He magaged to escape with his family
-and servant. He hid his Family in a
-secret room in the castle. Then he
-and his servant, Cordish, came here
-to ask me how they could solve their
-disaster.
-@match [Ss]aving [Ee]ureca
-At first, I'll tell you how all of this
-trouble started...
-@match Yes|yes
-Find and save Eureca...
-I count on you!
-@match Cordish|cordish
-He is one of Eureca's servants.
-He looked scared and coward...
-@match Past|past
-Eureca and his servant went to the
-past... and they didn't return yet...
-They must have gotten into trouble
-again... I am very concerned...
-Would you go to the past and save them?
-@match *
-Hello, adventurer...
-I ask you again,
- "what is your motive in comming here?"
-endmsg
-Con 100
-hp 20000
-x 11
-y 4
-friendly 1
-unaggressive 0
-end
-arch titan
-name Kurte
-Con 100
-hp 20000
-maxhp 20000
-x 20
-y 10
-friendly 1
-can_use_armour 0
-can_use_weapon 0
 end

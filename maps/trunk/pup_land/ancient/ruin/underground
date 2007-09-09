@@ -1,15 +1,15 @@
 arch map
-region ancientpupland
 name underground
+difficulty 5
+region ancientpupland
+darkness 3
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  8 02:14:36 1996
 endmsg
-x 20
-y 20
-level 5
-invisible 3
 end
 arch dungeon_floor
 end
@@ -1315,8 +1315,8 @@ hp 1000
 x 9
 y 7
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_floor

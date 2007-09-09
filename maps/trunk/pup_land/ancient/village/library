@@ -1,13 +1,13 @@
 arch map
-region ancientpupland
 name library
+region ancientpupland
+width 15
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  3 23:39:01 2000
 endmsg
-x 15
-y 14
 end
 arch dungeon_magic
 end
@@ -1002,11 +1002,11 @@ friendly 1
 unaggressive 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_armour 0
 can_use_weapon 0
 can_use_skill 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_magic
 x 6

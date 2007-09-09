@@ -1,16 +1,16 @@
 arch map
-region lonetown
 name townA_ud1
+difficulty 5
+region lonetown
+width 22
+height 27
+enter_x 7
+enter_y 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 31 17:05:02 1996
 endmsg
-hp 7
-sp 8
-x 22
-y 27
-level 5
 end
 arch blocked
 end
@@ -270,6 +270,10 @@ x 1
 y 18
 end
 arch random_treasure
+x 1
+y 18
+end
+arch troll
 x 1
 y 18
 end
@@ -3363,8 +3367,4 @@ end
 arch blocked
 x 21
 y 26
-end
-arch troll
-x 1
-y 18
 end

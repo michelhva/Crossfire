@@ -1,13 +1,13 @@
 arch map
-region pupland
 name n-gate
+region pupland
+width 7
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Aug  4 10:08:01 1996
 endmsg
-x 7
-y 17
 end
 arch flagstone
 end

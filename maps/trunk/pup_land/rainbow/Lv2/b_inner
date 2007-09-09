@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 10
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 14 21:28:09 1996
 endmsg
-x 10
-y 10
 end
 arch blocked
 name darkness

@@ -1,6 +1,8 @@
 arch map
-region pupland
 name cave2
+region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -663,6 +665,14 @@ arch pstone_2
 x 8
 y 6
 end
+arch tower_a
+name Shining tower
+slaying st1
+hp 8
+sp 15
+x 8
+y 6
+end
 arch pstone_2
 x 8
 y 7
@@ -1288,12 +1298,4 @@ end
 arch blocked
 x 15
 y 15
-end
-arch tower_a
-name Shining tower
-slaying st1
-hp 8
-sp 15
-x 8
-y 6
 end

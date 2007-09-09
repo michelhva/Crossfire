@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name wind2
+region nurnberg
+width 24
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb 27 03:37:30 1996
 endmsg
-x 24
-y 21
 end
 arch invis_exit
 slaying ../city

@@ -1,15 +1,17 @@
 arch map
-region pupland
 name tower_ordealB1
+difficulty 5
+region pupland
+darkness 1
+width 16
+height 16
+enter_x 4
+enter_y 11
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 22:00:11 1996
 endmsg
-hp 4
-sp 11
-level 5
-invisible 1
 end
 arch cobblestones2
 end

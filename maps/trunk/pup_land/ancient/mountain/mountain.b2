@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name mountain
+difficulty 6
+region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 28 22:48:38 1996
 endmsg
-x 32
-y 32
-level 6
 end
 arch mountain2
 move_block all

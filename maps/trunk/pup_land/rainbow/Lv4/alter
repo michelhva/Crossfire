@@ -1,5 +1,8 @@
 arch map
+name <unnamed>
 region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -1759,8 +1762,8 @@ hp 100
 x 14
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch pstone_1

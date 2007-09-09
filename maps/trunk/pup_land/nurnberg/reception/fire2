@@ -1,13 +1,14 @@
 arch map
-region nurnberg
 name fire2
+difficulty 2
+region nurnberg
+width 20
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb 18 01:03:23 1996
 endmsg
-x 20
-level 2
 end
 arch woodfloor
 end
@@ -145,6 +146,10 @@ arch woodfloor
 x 1
 y 5
 end
+arch dragon
+x 1
+y 5
+end
 arch woodfloor
 x 1
 y 6
@@ -178,6 +183,10 @@ x 1
 y 12
 end
 arch woodfloor
+x 1
+y 13
+end
+arch dragon
 x 1
 y 13
 end
@@ -244,6 +253,10 @@ x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch dragon
 x 2
 y 10
 end
@@ -2034,16 +2047,4 @@ end
 arch blocked
 x 19
 y 15
-end
-arch dragon
-x 1
-y 5
-end
-arch dragon
-x 1
-y 13
-end
-arch dragon
-x 2
-y 10
 end

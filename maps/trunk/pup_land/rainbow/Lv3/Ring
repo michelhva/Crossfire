@@ -1,12 +1,13 @@
 arch map
-region pupland
 name Ring
+region pupland
+width 12
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jun 27 09:44:45 1996
 endmsg
-x 12
 end
 arch pstone_4
 end
@@ -257,6 +258,18 @@ end
 arch pstone_4
 x 2
 y 12
+end
+arch big_dragon
+name Gea-Ga-Ring
+x 2
+y 12
+level 23
+carrying 100
+arch key2
+name key of Gea-Ga-Ring
+slaying Gea-Ga-Ring
+invisible 1
+end
 end
 arch pstone_4
 x 2
@@ -1206,16 +1219,4 @@ end
 arch cave20
 x 11
 y 15
-end
-arch big_dragon
-name Gea-Ga-Ring
-x 2
-y 12
-level 23
-carrying 100
-arch key2
-name key of Gea-Ga-Ring
-slaying Gea-Ga-Ring
-invisible 1
-end
 end

@@ -1,12 +1,13 @@
 arch map
-region pupland
 name castle_eureca7
+region pupland
+width 16
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar 12 17:33:40 1996
 endmsg
-y 18
 end
 arch blocked
 end
@@ -158,6 +159,10 @@ x 1
 y 6
 end
 arch flagstone
+x 1
+y 7
+end
+arch big_elec
 x 1
 y 7
 end
@@ -398,6 +403,10 @@ arch flagstone
 x 3
 y 7
 end
+arch big_elec
+x 3
+y 7
+end
 arch flagstone
 x 3
 y 8
@@ -591,6 +600,10 @@ arch flagstone
 x 5
 y 4
 end
+arch big_elec
+x 5
+y 4
+end
 arch flagstone
 x 5
 y 5
@@ -604,6 +617,10 @@ x 5
 y 7
 end
 arch flagstone
+x 5
+y 8
+end
+arch big_elec
 x 5
 y 8
 end
@@ -628,6 +645,10 @@ x 5
 y 12
 end
 arch flagstone
+x 5
+y 13
+end
+arch titan
 x 5
 y 13
 end
@@ -782,6 +803,10 @@ x 7
 y 6
 end
 arch flagstone
+x 7
+y 7
+end
+arch big_elec
 x 7
 y 7
 end
@@ -925,6 +950,10 @@ x 8
 y 12
 end
 arch flagstone
+x 8
+y 13
+end
+arch titan
 x 8
 y 13
 end
@@ -1235,6 +1264,10 @@ arch flagstone
 x 11
 y 6
 end
+arch titan
+x 11
+y 6
+end
 arch flagstone
 x 11
 y 7
@@ -1247,6 +1280,10 @@ arch flagstone
 x 11
 y 9
 end
+arch titan
+x 11
+y 9
+end
 arch flagstone
 x 11
 y 10
@@ -1256,6 +1293,10 @@ x 11
 y 11
 end
 arch flagstone
+x 11
+y 12
+end
+arch titan
 x 11
 y 12
 end
@@ -1780,44 +1821,4 @@ end
 arch wall_2_2_4
 x 15
 y 17
-end
-arch big_elec
-x 1
-y 7
-end
-arch big_elec
-x 3
-y 7
-end
-arch big_elec
-x 5
-y 4
-end
-arch big_elec
-x 5
-y 8
-end
-arch titan
-x 5
-y 13
-end
-arch big_elec
-x 7
-y 7
-end
-arch titan
-x 8
-y 13
-end
-arch titan
-x 11
-y 6
-end
-arch titan
-x 11
-y 9
-end
-arch titan
-x 11
-y 12
 end

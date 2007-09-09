@@ -1,16 +1,16 @@
 arch map
-region lonetown
 name townA_ud2
+difficulty 10
+region lonetown
+width 25
+height 26
+enter_x 11
+enter_y 12
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 31 17:22:31 1996
 endmsg
-hp 11
-sp 12
-x 25
-y 26
-level 10
 end
 arch bwall_2_2_2
 end
@@ -239,6 +239,10 @@ x 2
 y 1
 end
 arch pstone_1
+x 2
+y 2
+end
+arch titan
 x 2
 y 2
 end
@@ -712,6 +716,10 @@ x 5
 y 20
 end
 arch pstone_1
+x 5
+y 21
+end
+arch chinese_dragon
 x 5
 y 21
 end
@@ -2119,6 +2127,10 @@ arch pstone_1
 x 16
 y 17
 end
+arch big_elec
+x 16
+y 17
+end
 arch pstone_1
 x 16
 y 18
@@ -2251,6 +2263,10 @@ x 17
 y 20
 end
 arch pstone_1
+x 17
+y 21
+end
+arch big_elec
 x 17
 y 21
 end
@@ -2397,6 +2413,10 @@ x 19
 y 1
 end
 arch random_treasure
+x 19
+y 1
+end
+arch big_dragon
 x 19
 y 1
 end
@@ -3094,24 +3114,4 @@ end
 arch bwall_0
 x 24
 y 25
-end
-arch titan
-x 2
-y 2
-end
-arch chinese_dragon
-x 5
-y 21
-end
-arch big_elec
-x 16
-y 17
-end
-arch big_elec
-x 17
-y 21
-end
-arch big_dragon
-x 19
-y 1
 end

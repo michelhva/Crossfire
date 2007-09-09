@@ -1,13 +1,13 @@
 arch map
-region pupland
 name b_pass
+region pupland
+width 15
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 15:33:04 1996
 endmsg
-x 15
-y 14
 end
 arch blocked
 end

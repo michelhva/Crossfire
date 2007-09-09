@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name electricity4
+region nurnberg
+width 27
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb 18 03:31:13 1996
 endmsg
-x 27
-y 27
 end
 arch dungeon_floor
 end

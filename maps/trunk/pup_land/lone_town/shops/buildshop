@@ -1,16 +1,16 @@
 arch map
 name buildshop
 region lonetown
-msg
-Creator: Gene Alexander
-Date:    12/23/2005
-endmsg
+shopitems building material:95;item builder:95;*:-100
+shopgreed 1.00000
 width 40
 height 26
 enter_x 19
 enter_y 20
-shopitems building material:95;item builder:95;*:-100
-shopgreed 1.0
+msg
+Creator: Gene Alexander
+Date:    12/23/2005
+endmsg
 end
 arch cobblestones
 end
@@ -2335,11 +2335,11 @@ All items not requiring any special handling are built simply by marking the app
 Note that, to avoid any issue, those items can not be picked up.
 Note also that you can build an item on another.
 endmsg
+x 18
+y 18
 material 0
 no_pick 1
 identified 1
-x 18
-y 18
 end
 arch cobblestones
 x 18
@@ -2365,11 +2365,11 @@ Also, it is possible to make buttons, levers, and pedestals underneath gates, ho
 * then build the button underneath it
 This is useful for making a gate avoid crushing people underneath it. Also, you can use this same technique with inverted gates in order to make a square that pushes objects placed on it off of it.
 endmsg
+x 18
+y 19
 material 0
 no_pick 1
 identified 1
-x 18
-y 19
 end
 arch cobblestones
 x 18
@@ -2383,11 +2383,11 @@ Building a floor lets you remove walls. This is the only way to remove them.
 You can change an existing floor by building another on top. Same goes for walls.
 All created floors are magic, and will preserve items you put on them.
 endmsg
+x 18
+y 20
 material 0
 no_pick 1
 identified 1
-x 18
-y 20
 end
 arch cobblestones
 x 18
@@ -2406,11 +2406,11 @@ To build an item:
 * fire the builder in the desired direction
 Of course, the material is used when you build, so you need to buy quite a few.
 endmsg
+x 18
+y 21
 material 0
 no_pick 1
 identified 1
-x 18
-y 21
 end
 arch cobblestones
 x 18
@@ -2562,9 +2562,9 @@ x 19
 y 22
 end
 arch door_2
-move_block 0
 x 19
 y 22
+move_block 0
 end
 arch dungeon_magic
 x 19
@@ -2705,9 +2705,9 @@ x 20
 y 22
 end
 arch door_2
-move_block 0
 x 20
 y 22
+move_block 0
 end
 arch dungeon_magic
 x 20
@@ -2830,11 +2830,11 @@ For the listening books, the message must be in this format:
 Click.
 Which will make it activate upon the somebody within two squares saying "blah", and will additionally say "Click." upon activation.
 endmsg
+x 21
+y 18
 material 0
 no_pick 1
 identified 1
-x 21
-y 18
 end
 arch cobblestones
 x 21
@@ -2847,11 +2847,11 @@ To build on a spot, all items on this spot must be 'buildable'.
 Buildable items will display 'this is a buildable item' when examined.
 There are several exceptions though. In all cases you can build on marking runes as they are used for making gates and buttons work together. Also you can build signs and talking books on of books and or scrolls, because they are needed for specifying the message. Also, buttons, levers and pedestals can be build underneath gates. Don't worry, you should have some clear messages on why you can't build.
 endmsg
+x 21
+y 19
 material 0
 no_pick 1
 identified 1
-x 21
-y 19
 end
 arch cobblestones
 x 21
@@ -2865,11 +2865,11 @@ Simply apply it, and fire in the desired direction. It will remove the first bui
 Warning: a destroyer will remove items starting from the lowest order on the spot. Basically, this means the first removed item will be a pedestal (underground), then items on floor.
 Note that the destroyer will not remove walls or floors.
 endmsg
+x 21
+y 20
 material 0
 no_pick 1
 identified 1
-x 21
-y 20
 end
 arch cobblestones
 x 21

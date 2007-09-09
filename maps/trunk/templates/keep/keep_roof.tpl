@@ -1,14 +1,14 @@
 arch map
 name Keep roof
+width 20
+height 20
+enter_x 10
+enter_y 8
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/3/2002
 endmsg
-width 20
-height 20
-enter_x 10
-enter_y 8
 outdoor 1
 end
 arch grass
@@ -143,11 +143,11 @@ x 1
 y 1
 end
 arch bird
-unaggressive 1
-sleep 0
-attack_movement 0
 x 1
 y 1
+attack_movement 0
+unaggressive 1
+sleep 0
 end
 arch grass
 x 1
@@ -219,9 +219,9 @@ y 18
 end
 arch check_inv
 slaying Deed Lot 1
-connected 1
 x 1
 y 18
+connected 1
 end
 arch grass
 x 1
@@ -311,18 +311,18 @@ y 18
 end
 arch check_inv
 slaying Deed Lot 1
-connected 1
 x 2
 y 18
+connected 1
 end
 arch cobblestones2
 x 2
 y 19
 end
 arch ggate_closed
-connected 1
 x 2
 y 19
+connected 1
 end
 arch grass
 x 3
@@ -339,18 +339,18 @@ x 3
 y 2
 end
 arch biglake_2_2_2
-move_block 0
 x 3
 y 2
+move_block 0
 end
 arch grass
 x 3
 y 3
 end
 arch biglake_2_2_1
-move_block 0
 x 3
 y 3
+move_block 0
 end
 arch grass
 x 3
@@ -431,19 +431,19 @@ x 4
 y 1
 end
 arch biglake_2_2_2
-move_block 0
 x 4
 y 1
+move_block 0
 end
 arch biglake_4
-move_block 0
 x 4
 y 2
+move_block 0
 end
 arch biglake_3_1
-move_block 0
 x 4
 y 3
+move_block 0
 end
 arch grass
 x 4
@@ -560,14 +560,14 @@ x 5
 y 1
 end
 arch biglake_3_3
-move_block 0
 x 5
 y 1
+move_block 0
 end
 arch biglake_4
-move_block 0
 x 5
 y 2
+move_block 0
 end
 arch biglake_3_1
 x 5
@@ -590,54 +590,54 @@ x 5
 y 6
 end
 arch cwall_2_2_2
-blocksview 0
 x 5
 y 6
+blocksview 0
 end
 arch flagstone
 x 5
 y 7
 end
 arch cwall_2_1_1
-blocksview 0
 x 5
 y 7
+blocksview 0
 end
 arch flagstone
 x 5
 y 8
 end
 arch cwall_2_1_1
-blocksview 0
 x 5
 y 8
+blocksview 0
 end
 arch flagstone
 x 5
 y 9
 end
 arch cwall_2_1_1
-blocksview 0
 x 5
 y 9
+blocksview 0
 end
 arch flagstone
 x 5
 y 10
 end
 arch cwall_2_1_1
-blocksview 0
 x 5
 y 10
+blocksview 0
 end
 arch flagstone
 x 5
 y 11
 end
 arch cwall_2_2_1
-blocksview 0
 x 5
 y 11
+blocksview 0
 end
 arch grass
 x 5
@@ -694,14 +694,14 @@ x 6
 y 1
 end
 arch biglake_4
-move_block 0
 x 6
 y 2
+move_block 0
 end
 arch biglake_3_1
-move_block 0
 x 6
 y 3
+move_block 0
 end
 arch grass
 x 6
@@ -720,38 +720,38 @@ x 6
 y 6
 end
 arch cwall_2_1_2
-blocksview 0
 x 6
 y 6
+blocksview 0
 end
 arch flagstone
-unique 1
 x 6
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 6
 y 10
+unique 1
 end
 arch flagstone
 x 6
 y 11
 end
 arch cwall_2_1_2
-blocksview 0
 x 6
 y 11
+blocksview 0
 end
 arch grass
 x 6
@@ -808,14 +808,14 @@ x 7
 y 1
 end
 arch biglake_2_2_3
-move_block 0
 x 7
 y 1
+move_block 0
 end
 arch biglake_4
-move_block 0
 x 7
 y 2
+move_block 0
 end
 arch biglake_3_1
 x 7
@@ -838,43 +838,43 @@ x 7
 y 6
 end
 arch cwall_2_1_2
-blocksview 0
 x 7
 y 6
+blocksview 0
 end
 arch flagstone
-unique 1
 x 7
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 7
 y 10
+unique 1
 end
 arch flagstone
 x 7
 y 11
 end
 arch cwall_2_1_2
-blocksview 0
 x 7
 y 11
+blocksview 0
 end
 arch cwall_1_1
-blocksview 0
 x 7
 y 11
+blocksview 0
 end
 arch grass
 x 7
@@ -955,52 +955,52 @@ x 8
 y 6
 end
 arch cwall_2_1_2
-blocksview 0
 x 8
 y 6
+blocksview 0
 end
 arch flagstone
-unique 1
 x 8
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 8
 y 10
+unique 1
 end
 arch flagstone
 x 8
 y 11
 end
 arch cwall_2_1_2
-blocksview 0
 x 8
 y 11
+blocksview 0
 end
 arch guard_house_4
-blocksview 0
 x 8
 y 11
+blocksview 0
 end
 arch cobblestones2
 x 8
 y 12
 end
 arch guard_house_3
-blocksview 0
 x 8
 y 12
+blocksview 0
 end
 arch cobblestones2
 x 8
@@ -1077,43 +1077,43 @@ x 9
 y 6
 end
 arch cwall_2_1_2
-blocksview 0
 x 9
 y 6
+blocksview 0
 end
 arch flagstone
-unique 1
 x 9
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 9
 y 10
+unique 1
 end
 arch flagstone
 x 9
 y 11
 end
 arch cwall_2_1_2
-blocksview 0
 x 9
 y 11
+blocksview 0
 end
 arch cwall_1_1
-blocksview 0
 x 9
 y 11
+blocksview 0
 end
 arch grass
 x 9
@@ -1194,14 +1194,14 @@ x 10
 y 6
 end
 arch cwall_2_1_2
-blocksview 0
 x 10
 y 6
+blocksview 0
 end
 arch flagstone
-unique 1
 x 10
 y 7
+unique 1
 end
 arch flagstone
 x 10
@@ -1215,23 +1215,23 @@ x 10
 y 8
 end
 arch flagstone
-unique 1
 x 10
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 10
 y 10
+unique 1
 end
 arch flagstone
 x 10
 y 11
 end
 arch cwall_2_1_2
-blocksview 0
 x 10
 y 11
+blocksview 0
 end
 arch grass
 x 10
@@ -1308,54 +1308,54 @@ x 11
 y 5
 end
 arch hedge_1_4
-blocksview 0
 x 11
 y 6
+blocksview 0
 end
 arch flagstone
 x 11
 y 6
 end
 arch cwall_2_2_3
-blocksview 0
 x 11
 y 6
+blocksview 0
 end
 arch flagstone
 x 11
 y 7
 end
 arch cwall_2_1_1
-blocksview 0
 x 11
 y 7
+blocksview 0
 end
 arch flagstone
 x 11
 y 8
 end
 arch cwall_2_1_1
-blocksview 0
 x 11
 y 8
+blocksview 0
 end
 arch flagstone
 x 11
 y 9
 end
 arch cwall_2_1_1
-blocksview 0
 x 11
 y 9
+blocksview 0
 end
 arch flagstone
 x 11
 y 10
 end
 arch cwall_2_1_1
-blocksview 0
 x 11
 y 10
+blocksview 0
 end
 arch hedge_1_1
 x 11
@@ -1366,18 +1366,18 @@ x 11
 y 11
 end
 arch cwall_2_2_4
-blocksview 0
 x 11
 y 11
+blocksview 0
 end
 arch grass
 x 11
 y 12
 end
 arch hedge_2_2_1
-blocksview 0
 x 11
 y 12
+blocksview 0
 end
 arch grass
 x 11
@@ -1438,10 +1438,10 @@ x 12
 y 6
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 12
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 12
@@ -1472,10 +1472,10 @@ x 12
 y 12
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 12
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 12
@@ -1536,10 +1536,10 @@ x 13
 y 6
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 13
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 13
@@ -1578,10 +1578,10 @@ x 13
 y 12
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 13
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 13
@@ -1646,10 +1646,10 @@ x 14
 y 6
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 14
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 14
@@ -1692,10 +1692,10 @@ x 14
 y 12
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 14
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 14
@@ -1760,10 +1760,10 @@ x 15
 y 6
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 15
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 15
@@ -1806,10 +1806,10 @@ x 15
 y 12
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 15
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 15
@@ -1874,10 +1874,10 @@ x 16
 y 6
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 16
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 16
@@ -1924,10 +1924,10 @@ x 16
 y 12
 end
 arch hedge_2_1_2
-blocksview 0
-move_block all
 x 16
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 16
@@ -1988,70 +1988,70 @@ x 17
 y 6
 end
 arch hedge_2_2_3
-blocksview 0
-move_block all
 x 17
 y 6
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 7
 end
 arch hedge_2_1_1
-blocksview 0
-move_block all
 x 17
 y 7
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 8
 end
 arch hedge_2_1_1
-blocksview 0
-move_block all
 x 17
 y 8
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 9
 end
 arch hedge_2_1_1
-blocksview 0
-move_block all
 x 17
 y 9
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 10
 end
 arch hedge_2_1_1
-blocksview 0
-move_block all
 x 17
 y 10
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 11
 end
 arch hedge_2_1_1
-blocksview 0
-move_block all
 x 17
 y 11
+move_block all
+blocksview 0
 end
 arch grass
 x 17
 y 12
 end
 arch hedge_2_2_4
-blocksview 0
-move_block all
 x 17
 y 12
+move_block all
+blocksview 0
 end
 arch grass
 x 17

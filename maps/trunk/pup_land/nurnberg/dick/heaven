@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name hell
+difficulty 15
+region nurnberg
+width 28
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 21:25:23 1996
 endmsg
-x 28
-y 32
-level 15
 end
 arch dungeon_floor
 end
@@ -3270,6 +3270,14 @@ end
 arch dungeon_magic
 x 11
 y 20
+end
+arch titan
+x 11
+y 20
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_magic
 x 11
@@ -8048,12 +8056,4 @@ end
 arch wwall_2_2_4
 x 27
 y 31
-end
-arch titan
-x 11
-y 20
-carrying 100
-arch key2
-slaying 1
-end
 end

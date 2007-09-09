@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name path
+region ancientpupland
+darkness 3
+width 35
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec  8 18:15:10 1996
 endmsg
-x 35
-y 30
-invisible 3
 end
 arch blocked
 end

@@ -1,22 +1,22 @@
 arch map
 name keep_grounds2
+width 30
+height 30
+enter_x 9
+enter_y 28
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/3/2002
 endmsg
-width 30
-height 30
-enter_x 9
-enter_y 28
 outdoor 1
 end
 arch dungeon_magic
 end
 arch goldfloor
 name drop 100000 diamonds for Basement
-face button_sma.111
 slaying gem
+face button_sma.111
 food 100000
 connected 6
 unique 1
@@ -27,9 +27,9 @@ end
 arch teleporter
 hp 10
 sp 7
-connected 5
-speed 0.0
 y 17
+speed 0.0
+connected 5
 end
 arch man
 name gardener
@@ -42,6 +42,7 @@ Well, I never...hmmph
 Hmmm, looks like that hedge needs a good trim...
 endmsg
 Wis 5
+y 17
 attack_movement 38
 resist_physical 100
 resist_magic 100
@@ -56,9 +57,8 @@ resist_poison 100
 resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
-y 17
+resist_holyword 100
 end
 arch swall_1_4
 y 18
@@ -66,16 +66,16 @@ end
 arch teleporter
 hp 12
 sp 21
-connected 6
-speed 0.0
 y 25
+speed 0.0
+connected 6
 end
 arch teleporter
 hp 12
 sp 22
-connected 6
-speed 0.0
 y 26
+speed 0.0
+connected 6
 end
 arch teleporter
 y 28
@@ -98,18 +98,18 @@ end
 arch teleporter
 hp 13
 sp 21
-connected 6
-speed 0.0
 x 1
 y 25
+speed 0.0
+connected 6
 end
 arch teleporter
 hp 12
 sp 22
-connected 6
-speed 0.0
 x 1
 y 26
+speed 0.0
+connected 6
 end
 arch blocked
 x 2
@@ -579,9 +579,9 @@ x 3
 y 23
 end
 arch woods
-blocksview 1
 x 3
 y 23
+blocksview 1
 end
 arch grass
 x 3
@@ -604,9 +604,9 @@ x 3
 y 27
 end
 arch woods
-blocksview 1
 x 3
 y 27
+blocksview 1
 end
 arch grass
 x 3
@@ -747,9 +747,9 @@ x 4
 y 27
 end
 arch woods
-blocksview 1
 x 4
 y 27
+blocksview 1
 end
 arch grass
 x 4
@@ -1059,8 +1059,8 @@ arch grass
 x 7
 end
 arch hedge_2_1_2
-move_block all
 x 7
+move_block all
 end
 arch grass
 x 7
@@ -1259,9 +1259,9 @@ x 7
 y 29
 end
 arch hedge_2_1_2
-move_block all
 x 7
 y 29
+move_block all
 end
 arch grass
 x 8
@@ -1363,14 +1363,14 @@ y 21
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 8
 y 21
+connected 1
 end
 arch button_lever
-connected 1
 x 8
 y 21
+connected 1
 end
 arch grass
 x 8
@@ -1536,18 +1536,18 @@ y 21
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 9
 y 21
+connected 1
 end
 arch cobblestones2
 x 9
 y 22
 end
 arch ggate_closed
-connected 1
 x 9
 y 22
+connected 1
 end
 arch cobblestones2
 x 9
@@ -1555,9 +1555,9 @@ y 23
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 9
 y 23
+connected 1
 end
 arch cobblestones2
 x 9
@@ -1588,12 +1588,12 @@ x 9
 y 29
 end
 arch exit
-invisible 1
 slaying mainexit
 hp x
 sp x
 x 9
 y 29
+invisible 1
 end
 arch grass
 x 10
@@ -2354,9 +2354,9 @@ x 14
 y 14
 end
 arch cwall_2_1_2
-blocksview 0
 x 14
 y 14
+blocksview 0
 end
 arch cwall_1_1
 x 14
@@ -2517,9 +2517,9 @@ x 15
 y 14
 end
 arch cwall_2_1_2
-blocksview 0
 x 15
 y 14
+blocksview 0
 end
 arch guard_house_4
 x 15
@@ -2688,9 +2688,9 @@ x 16
 y 14
 end
 arch cwall_2_1_2
-blocksview 0
 x 16
 y 14
+blocksview 0
 end
 arch cwall_1_1
 x 16
@@ -3008,36 +3008,36 @@ x 18
 y 10
 end
 arch cwall_2_1_1
-blocksview 0
 x 18
 y 10
+blocksview 0
 end
 arch flagstone
 x 18
 y 11
 end
 arch cwall_2_1_1
-blocksview 0
 x 18
 y 11
+blocksview 0
 end
 arch flagstone
 x 18
 y 12
 end
 arch cwall_2_1_1
-blocksview 0
 x 18
 y 12
+blocksview 0
 end
 arch flagstone
 x 18
 y 13
 end
 arch cwall_2_1_1
-blocksview 0
 x 18
 y 13
+blocksview 0
 end
 arch hedge_1_1
 x 18
@@ -3116,18 +3116,18 @@ x 18
 y 26
 end
 arch woods
-blocksview 1
 x 18
 y 26
+blocksview 1
 end
 arch grass
 x 18
 y 27
 end
 arch woods
-blocksview 1
 x 18
 y 27
+blocksview 1
 end
 arch grass
 x 18
@@ -3470,9 +3470,9 @@ x 20
 y 26
 end
 arch woods
-blocksview 1
 x 20
 y 26
+blocksview 1
 end
 arch grass
 x 20
@@ -3684,9 +3684,9 @@ y 4
 end
 arch creator
 other_arch grass
-connected 8
 x 22
 y 4
+connected 8
 end
 arch grass
 x 22
@@ -3694,13 +3694,13 @@ y 4
 end
 arch goldfloor
 name drop X  for Monster 3
-face button_sma.111
 slaying gem
+face button_sma.111
 food 1
-connected 8
-unique 1
 x 22
 y 4
+connected 8
+unique 1
 end
 arch grass
 x 22
@@ -3878,9 +3878,9 @@ y 4
 end
 arch creator
 other_arch grass
-connected 7
 x 23
 y 4
+connected 7
 end
 arch grass
 x 23
@@ -3888,13 +3888,13 @@ y 4
 end
 arch goldfloor
 name drop X for Monster 2
-face button_sma.111
 slaying gem
+face button_sma.111
 food 1
-connected 7
-unique 1
 x 23
 y 4
+connected 7
+unique 1
 end
 arch grass
 x 23
@@ -4048,8 +4048,8 @@ arch grass
 x 24
 end
 arch hedge_2_1_2
-move_block all
 x 24
+move_block all
 end
 arch grass
 x 24
@@ -4077,9 +4077,9 @@ y 4
 end
 arch creator
 other_arch grass
-connected 6
 x 24
 y 4
+connected 6
 end
 arch grass
 x 24
@@ -4087,13 +4087,13 @@ y 4
 end
 arch goldfloor
 name drop X for Monster 1
-face button_sma.111
 slaying gem
+face button_sma.111
 food 1
-connected 6
-unique 1
 x 24
 y 4
+connected 6
+unique 1
 end
 arch grass
 x 24
@@ -4228,27 +4228,27 @@ x 24
 y 26
 end
 arch woods
-blocksview 1
 x 24
 y 26
+blocksview 1
 end
 arch grass
 x 24
 y 27
 end
 arch woods
-blocksview 1
 x 24
 y 27
+blocksview 1
 end
 arch grass
 x 24
 y 28
 end
 arch woods
-blocksview 1
 x 24
 y 28
+blocksview 1
 end
 arch grass
 x 24
@@ -4262,8 +4262,8 @@ arch grass
 x 25
 end
 arch hedge_2_1_2
+x 25
 move_block all
-x 25
 end
 arch grass
 x 25
@@ -4291,9 +4291,9 @@ y 4
 end
 arch creator
 other_arch grass
-connected 5
 x 25
 y 4
+connected 5
 end
 arch grass
 x 25
@@ -4301,13 +4301,13 @@ y 4
 end
 arch goldfloor
 name drop X for gardener
-face button_sma.111
 slaying gem
+face button_sma.111
 food 1
-connected 5
-unique 1
 x 25
 y 4
+connected 5
+unique 1
 end
 arch grass
 x 25
@@ -4446,9 +4446,9 @@ x 25
 y 27
 end
 arch woods
-blocksview 1
 x 25
 y 27
+blocksview 1
 end
 arch grass
 x 25
@@ -4466,8 +4466,8 @@ arch grass
 x 26
 end
 arch hedge_2_1_2
-move_block all
 x 26
+move_block all
 end
 arch grass
 x 26
@@ -4685,26 +4685,26 @@ arch grass
 x 27
 end
 arch hedge_2_1_2
+x 27
 move_block all
-x 27
 end
 arch grass
 x 27
 y 1
 end
 arch woods
-blocksview 1
 x 27
 y 1
+blocksview 1
 end
 arch grass
 x 27
 y 2
 end
 arch woods
-blocksview 1
 x 27
 y 2
+blocksview 1
 end
 arch grass
 x 27
@@ -4811,9 +4811,9 @@ x 27
 y 27
 end
 arch woods
-blocksview 1
 x 27
 y 27
+blocksview 1
 end
 arch grass
 x 27
@@ -4831,8 +4831,8 @@ arch grass
 x 28
 end
 arch hedge_2_1_2
-move_block all
 x 28
+move_block all
 end
 arch hole
 name escape tunnel
@@ -4847,10 +4847,10 @@ x 28
 y 2
 end
 arch woods_3
-blocksview 1
-is_floor 1
 x 28
 y 2
+blocksview 1
+is_floor 1
 end
 arch grass
 x 28
@@ -4861,9 +4861,9 @@ x 28
 y 4
 end
 arch woods
-blocksview 1
 x 28
 y 4
+blocksview 1
 end
 arch grass
 x 28
@@ -4954,18 +4954,18 @@ x 28
 y 26
 end
 arch woods
-blocksview 1
 x 28
 y 26
+blocksview 1
 end
 arch grass
 x 28
 y 27
 end
 arch woods
-blocksview 1
 x 28
 y 27
+blocksview 1
 end
 arch grass
 x 28
@@ -4983,44 +4983,44 @@ arch brush
 x 29
 end
 arch hedge_2_2_3
-move_block all
 x 29
+move_block all
 end
 arch grass
 x 29
 y 1
 end
 arch hedge_2_1_1
-move_block all
 x 29
 y 1
+move_block all
 end
 arch grass
 x 29
 y 2
 end
 arch hedge_2_1_1
-move_block all
 x 29
 y 2
+move_block all
 end
 arch grass
 x 29
 y 3
 end
 arch hedge_2_1_1
-move_block all
 x 29
 y 3
+move_block all
 end
 arch grass
 x 29
 y 4
 end
 arch hedge_2_1_1
-move_block all
 x 29
 y 4
+move_block all
 end
 arch grass
 x 29
@@ -5139,9 +5139,9 @@ x 29
 y 19
 end
 arch hedge_2_1_1
-move_block all
 x 29
 y 19
+move_block all
 end
 arch grass
 x 29

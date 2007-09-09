@@ -1,13 +1,14 @@
 arch map
-region ancientpupland
 name shop
+reset_timeout 1800
+region ancientpupland
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 21 22:41:27 1996
 endmsg
-x 25
-weight 1800
 end
 arch grass
 end

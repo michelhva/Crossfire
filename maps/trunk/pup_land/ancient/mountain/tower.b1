@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name Tower
+difficulty 5
+region ancientpupland
+width 22
+height 9
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  1 20:56:12 1996
 endmsg
-x 22
-y 9
-level 5
 end
 arch blocked
 end
@@ -760,6 +760,10 @@ arch pstone_2
 x 11
 y 1
 end
+arch golem_necro
+x 11
+y 1
+end
 arch unholy_ground
 x 11
 y 2
@@ -789,6 +793,10 @@ x 11
 y 5
 end
 arch pstone_2
+x 11
+y 5
+end
+arch golem_necro
 x 11
 y 5
 end
@@ -1686,12 +1694,4 @@ end
 arch pstone_2
 x 21
 y 8
-end
-arch golem_necro
-x 11
-y 1
-end
-arch golem_necro
-x 11
-y 5
 end

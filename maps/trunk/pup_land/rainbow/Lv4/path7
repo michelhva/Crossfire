@@ -1,13 +1,13 @@
 arch map
-region pupland
 name path7
+region pupland
+width 21
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jul  5 21:00:29 1996
 endmsg
-x 21
-y 20
 end
 arch blocked
 y 2
@@ -593,8 +593,8 @@ hp 100
 x 4
 y 19
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch pstone_1

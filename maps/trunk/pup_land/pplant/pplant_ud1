@@ -1,14 +1,14 @@
 arch map
-region pupland
 name pplant_ud1
+difficulty 5
+region pupland
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb  6 01:05:44 1996
 endmsg
-width 25
-height 16
-difficulty 5
 end
 arch blocked
 end
@@ -321,9 +321,9 @@ x 3
 y 7
 end
 arch gnoll
-unaggressive 1
 x 3
 y 7
+unaggressive 1
 end
 arch dungeon_floor
 x 3
@@ -1774,9 +1774,9 @@ x 19
 y 8
 end
 arch mine_3_2
-move_block 0
 x 19
 y 8
+move_block 0
 end
 arch dungeon_floor
 x 19
@@ -1856,9 +1856,9 @@ x 20
 y 8
 end
 arch blocked
-move_block 0
 x 20
 y 8
+move_block 0
 end
 arch dungeon_floor
 x 20

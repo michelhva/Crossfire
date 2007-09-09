@@ -1,13 +1,13 @@
 arch map
 name exit
 region pupland
+width 43
+height 11
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 16:32:16 1996
 endmsg
-width 43
-height 11
 end
 arch dungeon_floor
 end
@@ -307,43 +307,43 @@ x 5
 y 2
 end
 arch mover_3
+x 5
+y 3
 speed 0.500000
 speed_left -1.330000
 level 1
 attacktype 1
-x 5
-y 3
 end
 arch sea
-move_block 0
 x 5
 y 3
+move_block 0
 end
 arch mover_3
+x 5
+y 4
 speed 0.500000
 speed_left -1.270000
 level 1
 attacktype 1
-x 5
-y 4
 end
 arch sea
-move_block 0
 x 5
 y 4
+move_block 0
 end
 arch mover_3
+x 5
+y 5
 speed 0.500000
 speed_left -1.330000
 level 1
 attacktype 1
-x 5
-y 5
 end
 arch sea
-move_block 0
 x 5
 y 5
+move_block 0
 end
 arch grassdark
 name grass
@@ -390,43 +390,43 @@ x 6
 y 2
 end
 arch mover_5
+x 6
+y 3
 speed 0.500000
 speed_left -1.100000
 level 1
 attacktype 1
-x 6
-y 3
 end
 arch sea
-move_block 0
 x 6
 y 3
+move_block 0
 end
 arch mover_3
+x 6
+y 4
 speed 0.500000
 speed_left -1.330000
 level 1
 attacktype 1
-x 6
-y 4
 end
 arch sea
-move_block 0
 x 6
 y 4
+move_block 0
 end
 arch mover_1
+x 6
+y 5
 speed 0.500000
 speed_left -0.290000
 level 1
 attacktype 1
-x 6
-y 5
 end
 arch sea
-move_block 0
 x 6
 y 5
+move_block 0
 end
 arch grassdark
 name grass
@@ -474,47 +474,47 @@ y 2
 end
 arch mover_3
 face director.141
-attacktype 1
-speed 0.5
-sp 4
-level 1
-speed_left -1.330000
 animation mover_4
+sp 4
 x 7
 y 3
+speed 0.5
+speed_left -1.330000
+level 1
+attacktype 1
 end
 arch sea
-move_block 0
 x 7
 y 3
+move_block 0
 end
 arch mover_3
+x 7
+y 4
 level 1
 attacktype 1
-x 7
-y 4
 end
 arch sea
-speed 0.500000
-move_block 0
 x 7
 y 4
+speed 0.500000
+move_block 0
 end
 arch mover_3
 face director.121
-attacktype 1
-speed 0.5
-sp 2
-level 1
-speed_left -1.330000
 animation mover_2
+sp 2
 x 7
 y 5
+speed 0.5
+speed_left -1.330000
+level 1
+attacktype 1
 end
 arch sea
-move_block 0
 x 7
 y 5
+move_block 0
 end
 arch grassdark
 name grass
@@ -571,15 +571,15 @@ x 8
 y 3
 end
 arch mover_3
+x 8
+y 4
 level 1
 attacktype 1
-x 8
-y 4
 end
 arch sea
-move_block 0
 x 8
 y 4
+move_block 0
 end
 arch grassdark
 name grass
@@ -643,17 +643,17 @@ x 9
 y 3
 end
 arch mover_3
+x 9
+y 4
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 9
-y 4
 end
 arch sea
-move_block 0
 x 9
 y 4
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -708,17 +708,17 @@ x 10
 y 3
 end
 arch mover_3
+x 10
+y 4
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 10
-y 4
 end
 arch sea
-move_block 0
 x 10
 y 4
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -769,17 +769,17 @@ x 11
 y 3
 end
 arch mover_3
+x 11
+y 4
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 11
-y 4
 end
 arch sea
-move_block 0
 x 11
 y 4
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -838,17 +838,17 @@ x 12
 y 3
 end
 arch mover_3
+x 12
+y 4
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 12
-y 4
 end
 arch sea
-move_block 0
 x 12
 y 4
+move_block 0
 end
 arch grassdark
 name grass
@@ -900,48 +900,48 @@ x 13
 y 3
 end
 arch goblin
-attack_movement 7
 x 13
 y 3
+attack_movement 7
 end
 arch mover_5
+x 13
+y 4
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 13
-y 4
 end
 arch sea
-move_block 0
 x 13
 y 4
+move_block 0
 end
 arch mover_5
+x 13
+y 5
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 13
-y 5
 end
 arch sea
-move_block 0
 x 13
 y 5
+move_block 0
 end
 arch mover_3
+x 13
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 13
-y 6
 end
 arch sea
-move_block 0
 x 13
 y 6
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -996,30 +996,30 @@ x 14
 y 5
 end
 arch mover_5
+x 14
+y 6
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 14
-y 6
 end
 arch sea
-move_block 0
 x 14
 y 6
+move_block 0
 end
 arch mover_3
+x 14
+y 7
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 14
-y 7
 end
 arch sea
-move_block 0
 x 14
 y 7
+move_block 0
 end
 arch dungeon_floor
 x 14
@@ -1057,9 +1057,9 @@ x 15
 y 3
 end
 arch goblin
-attack_movement 7
 x 15
 y 3
+attack_movement 7
 end
 arch dungeon_floor
 x 15
@@ -1075,17 +1075,17 @@ x 15
 y 6
 end
 arch mover_3
+x 15
+y 7
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 15
-y 7
 end
 arch sea
-move_block 0
 x 15
 y 7
+move_block 0
 end
 arch dungeon_floor
 x 15
@@ -1130,61 +1130,61 @@ x 16
 y 3
 end
 arch goblin
+x 16
+y 3
 attack_movement 7
-x 16
-y 3
 end
 arch mover_3
+x 16
+y 4
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
+end
+arch sea
 x 16
 y 4
-end
-arch sea
 move_block 0
-x 16
-y 4
 end
 arch mover_1
-speed 1.000000
-speed_left -1.860000
-level 1
-attacktype 1
 x 16
 y 5
+speed 1.000000
+speed_left -1.860000
+level 1
+attacktype 1
 end
 arch sea
-move_block 0
 x 16
 y 5
+move_block 0
 end
 arch mover_1
+x 16
+y 6
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 16
-y 6
 end
 arch sea
-move_block 0
 x 16
 y 6
+move_block 0
 end
 arch mover_1
+x 16
+y 7
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 16
-y 7
 end
 arch sea
-move_block 0
 x 16
 y 7
+move_block 0
 end
 arch dungeon_floor
 x 16
@@ -1214,43 +1214,43 @@ x 17
 y 1
 end
 arch mover_3
+x 17
+y 2
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 17
-y 2
 end
 arch sea
-move_block 0
 x 17
 y 2
+move_block 0
 end
 arch mover_1
+x 17
+y 3
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 17
-y 3
 end
 arch sea
-move_block 0
 x 17
 y 3
+move_block 0
 end
 arch mover_1
+x 17
+y 4
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 17
-y 4
 end
 arch sea
-move_block 0
 x 17
 y 4
+move_block 0
 end
 arch dungeon_floor
 x 17
@@ -1289,30 +1289,30 @@ arch dun2
 x 18
 end
 arch mover_3
+x 18
+y 1
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 18
-y 1
 end
 arch sea
-move_block 0
 x 18
 y 1
+move_block 0
 end
 arch mover_1
+x 18
+y 2
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 18
-y 2
 end
 arch sea
-move_block 0
 x 18
 y 2
+move_block 0
 end
 arch grassdark
 name grass
@@ -1324,9 +1324,9 @@ x 18
 y 4
 end
 arch goblin
-attack_movement 7
 x 18
 y 4
+attack_movement 7
 end
 arch hills_rocky
 x 18
@@ -1337,9 +1337,9 @@ x 18
 y 6
 end
 arch goblin
-attack_movement 7
 x 18
 y 6
+attack_movement 7
 end
 arch dungeon_floor
 x 18
@@ -1368,17 +1368,17 @@ arch dun2
 x 19
 end
 arch mover_3
+x 19
+y 1
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 19
-y 1
 end
 arch sea
-move_block 0
 x 19
 y 1
+move_block 0
 end
 arch grassdark
 name grass
@@ -1392,9 +1392,9 @@ y 3
 end
 arch jungle_1
 name scrub
-blocksview 0
 x 19
 y 3
+blocksview 0
 end
 arch grassdark
 name grass
@@ -1403,9 +1403,9 @@ y 4
 end
 arch jungle_1
 name scrub
-blocksview 0
 x 19
 y 4
+blocksview 0
 end
 arch grassdark
 name grass
@@ -1414,14 +1414,14 @@ y 5
 end
 arch jungle_1
 name scrub
-blocksview 0
 x 19
 y 5
+blocksview 0
 end
 arch goblin
-attack_movement 7
 x 19
 y 5
+attack_movement 7
 end
 arch hills_rocky
 x 19
@@ -1454,30 +1454,30 @@ arch dun2
 x 20
 end
 arch mover_5
+x 20
+y 1
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 20
-y 1
 end
 arch sea
-move_block 0
 x 20
 y 1
+move_block 0
 end
 arch mover_3
+x 20
+y 2
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 20
-y 2
 end
 arch sea
-move_block 0
 x 20
 y 2
+move_block 0
 end
 arch grassdark
 name grass
@@ -1491,14 +1491,14 @@ y 4
 end
 arch jungle_1
 name scrub
-blocksview 0
 x 20
 y 4
+blocksview 0
 end
 arch goblin
-attack_movement 7
 x 20
 y 4
+attack_movement 7
 end
 arch grassdark
 name grass
@@ -1510,9 +1510,9 @@ x 20
 y 6
 end
 arch goblin
-attack_movement 7
 x 20
 y 6
+attack_movement 7
 end
 arch hills_rocky
 x 20
@@ -1549,56 +1549,56 @@ x 21
 y 1
 end
 arch mover_5
-speed 1.000000
-speed_left -0.780000
-level 1
-attacktype 1
 x 21
 y 2
+speed 1.000000
+speed_left -0.780000
+level 1
+attacktype 1
 end
 arch sea
-move_block 0
 x 21
 y 2
+move_block 0
 end
 arch mover_5
+x 21
+y 3
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 21
-y 3
 end
 arch sea
-move_block 0
 x 21
 y 3
+move_block 0
 end
 arch mover_5
+x 21
+y 4
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 21
-y 4
 end
 arch sea
-move_block 0
 x 21
 y 4
+move_block 0
 end
 arch mover_3
+x 21
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 21
-y 5
 end
 arch sea
-move_block 0
 x 21
 y 5
+move_block 0
 end
 arch grassdark
 name grass
@@ -1610,9 +1610,9 @@ x 21
 y 7
 end
 arch goblin
-attack_movement 7
 x 21
 y 7
+attack_movement 7
 end
 arch dungeon_floor
 x 21
@@ -1647,9 +1647,9 @@ x 22
 y 2
 end
 arch goblin
-attack_movement 7
 x 22
 y 2
+attack_movement 7
 end
 arch grassdark
 name grass
@@ -1662,35 +1662,35 @@ x 22
 y 4
 end
 arch goblin
-attack_movement 7
 x 22
 y 4
+attack_movement 7
 end
 arch mover_5
+x 22
+y 5
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 22
-y 5
 end
 arch sea
-move_block 0
 x 22
 y 5
+move_block 0
 end
 arch mover_3
+x 22
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 22
-y 6
 end
 arch sea
-move_block 0
 x 22
 y 6
+move_block 0
 end
 arch grassdark
 name grass
@@ -1698,9 +1698,9 @@ x 22
 y 7
 end
 arch goblin
-attack_movement 7
 x 22
 y 7
+attack_movement 7
 end
 arch dungeon_floor
 x 22
@@ -1738,9 +1738,9 @@ x 23
 y 3
 end
 arch goblin
-attack_movement 7
 x 23
 y 3
+attack_movement 7
 end
 arch hills_rocky
 x 23
@@ -1752,22 +1752,22 @@ x 23
 y 5
 end
 arch goblin
-attack_movement 7
 x 23
 y 5
+attack_movement 7
 end
 arch mover_3
+x 23
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 23
-y 6
 end
 arch sea
-move_block 0
 x 23
 y 6
+move_block 0
 end
 arch hills_rocky
 x 23
@@ -1816,40 +1816,40 @@ x 24
 y 4
 end
 arch goblin
-attack_movement 7
 x 24
 y 4
+attack_movement 7
 end
 arch hills_rocky
 x 24
 y 5
 end
 arch goblin
-attack_movement 7
 x 24
 y 5
+attack_movement 7
 end
 arch mover_3
+x 24
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 24
-y 6
 end
 arch sea
-move_block 0
 x 24
 y 6
+move_block 0
 end
 arch dungeon_floor
 x 24
 y 7
 end
 arch goblin
-attack_movement 7
 x 24
 y 7
+attack_movement 7
 end
 arch dungeon_floor
 x 24
@@ -1891,22 +1891,22 @@ x 25
 y 5
 end
 arch goblin
-attack_movement 7
 x 25
 y 5
+attack_movement 7
 end
 arch mover_3
+x 25
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 25
-y 6
 end
 arch sea
-move_block 0
 x 25
 y 6
+move_block 0
 end
 arch hills_rocky
 x 25
@@ -1956,26 +1956,26 @@ x 26
 y 5
 end
 arch mover_3
+x 26
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 26
-y 6
 end
 arch sea
-move_block 0
 x 26
 y 6
+move_block 0
 end
 arch hills_rocky
 x 26
 y 7
 end
 arch goblin
+x 26
+y 7
 attack_movement 7
-x 26
-y 7
 end
 arch hills_rocky
 x 26
@@ -2021,17 +2021,17 @@ x 27
 y 5
 end
 arch mover_3
+x 27
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 27
-y 6
 end
 arch sea
-move_block 0
 x 27
 y 6
+move_block 0
 end
 arch grassdark
 name grass
@@ -2080,17 +2080,17 @@ x 28
 y 5
 end
 arch mover_3
+x 28
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 28
-y 6
 end
 arch sea
-move_block 0
 x 28
 y 6
+move_block 0
 end
 arch grassdark
 name grass
@@ -2141,17 +2141,17 @@ x 29
 y 5
 end
 arch mover_3
+x 29
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 29
-y 6
 end
 arch sea
-move_block 0
 x 29
 y 6
+move_block 0
 end
 arch grassdark
 name grass
@@ -2198,17 +2198,17 @@ x 30
 y 5
 end
 arch mover_3
+x 30
+y 6
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 30
-y 6
 end
 arch sea
-move_block 0
 x 30
 y 6
+move_block 0
 end
 arch sea
 x 30
@@ -2256,30 +2256,30 @@ x 31
 y 5
 end
 arch mover_5
+x 31
+y 6
 speed 1.000000
 speed_left -0.780000
 level 1
 attacktype 1
-x 31
-y 6
 end
 arch sea
-move_block 0
 x 31
 y 6
+move_block 0
 end
 arch mover_3
+x 31
+y 7
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 31
-y 7
 end
 arch sea
-move_block 0
 x 31
 y 7
+move_block 0
 end
 arch grassdark
 name grass
@@ -2328,17 +2328,17 @@ x 32
 y 6
 end
 arch mover_3
+x 32
+y 7
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 32
-y 7
 end
 arch sea
-move_block 0
 x 32
 y 7
+move_block 0
 end
 arch sea
 x 32
@@ -2377,43 +2377,43 @@ x 33
 y 4
 end
 arch mover_3
+x 33
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 33
-y 5
 end
 arch sea
-move_block 0
 x 33
 y 5
+move_block 0
 end
 arch mover_1
+x 33
+y 6
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 33
-y 6
 end
 arch sea
-move_block 0
 x 33
 y 6
+move_block 0
 end
 arch mover_1
+x 33
+y 7
 speed 1.000000
 speed_left -1.860000
 level 1
 attacktype 1
-x 33
-y 7
 end
 arch sea
-move_block 0
 x 33
 y 7
+move_block 0
 end
 arch sea
 x 33
@@ -2452,17 +2452,17 @@ x 34
 y 4
 end
 arch mover_3
+x 34
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 34
-y 5
 end
 arch sea
-move_block 0
 x 34
 y 5
+move_block 0
 end
 arch sea
 x 34
@@ -2508,17 +2508,17 @@ x 35
 y 4
 end
 arch mover_3
+x 35
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 35
-y 5
 end
 arch sea
-move_block 0
 x 35
 y 5
+move_block 0
 end
 arch sea
 x 35
@@ -2563,17 +2563,17 @@ x 36
 y 4
 end
 arch mover_3
+x 36
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 36
-y 5
 end
 arch sea
-move_block 0
 x 36
 y 5
+move_block 0
 end
 arch sea
 x 36
@@ -2617,17 +2617,17 @@ x 37
 y 4
 end
 arch mover_3
+x 37
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 37
-y 5
 end
 arch sea
-move_block 0
 x 37
 y 5
+move_block 0
 end
 arch sea
 x 37
@@ -2669,17 +2669,17 @@ x 38
 y 4
 end
 arch mover_3
+x 38
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 38
-y 5
 end
 arch sea
-move_block 0
 x 38
 y 5
+move_block 0
 end
 arch sea
 x 38
@@ -2721,17 +2721,17 @@ x 39
 y 4
 end
 arch mover_3
+x 39
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 39
-y 5
 end
 arch sea
-move_block 0
 x 39
 y 5
+move_block 0
 end
 arch sea
 x 39
@@ -2773,17 +2773,17 @@ x 40
 y 4
 end
 arch mover_3
+x 40
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 40
-y 5
 end
 arch sea
-move_block 0
 x 40
 y 5
+move_block 0
 end
 arch sea
 x 40
@@ -2825,17 +2825,17 @@ x 41
 y 4
 end
 arch mover_3
+x 41
+y 5
 speed 1.000000
 speed_left -1.230000
 level 1
 attacktype 1
-x 41
-y 5
 end
 arch sea
-move_block 0
 x 41
 y 5
+move_block 0
 end
 arch sea
 x 41
@@ -2877,14 +2877,14 @@ x 42
 y 4
 end
 arch invis_exit
-face sea.111
 slaying islands
+face sea.111
 hp 24
 sp 18
-invisible 0
-is_floor 1
 x 42
 y 5
+invisible 0
+is_floor 1
 end
 arch sea
 x 42

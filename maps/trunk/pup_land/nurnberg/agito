@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name agito
+region nurnberg
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 22:02:17 1996
 endmsg
-x 20
-y 20
 end
 arch dirtfloor
 end
@@ -168,8 +168,8 @@ hp 100
 x 1
 y 4
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dirtfloor
@@ -537,8 +537,8 @@ hp 100
 x 4
 y 7
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dirtfloor
@@ -1193,8 +1193,8 @@ hp 100
 x 10
 y 6
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dirtfloor
@@ -1421,8 +1421,8 @@ hp 100
 x 12
 y 6
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dirtfloor
@@ -1509,8 +1509,8 @@ hp 100
 x 12
 y 17
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_floor
@@ -1725,8 +1725,8 @@ hp 100
 x 14
 y 12
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch dungeon_floor

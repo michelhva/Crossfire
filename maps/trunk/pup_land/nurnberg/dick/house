@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name house
+region nurnberg
+width 27
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb  9 23:49:57 1996
 endmsg
-x 27
-y 21
 end
 arch grass
 end
@@ -551,8 +551,8 @@ hp 100
 x 4
 y 10
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor

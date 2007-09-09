@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name gemshop
+region lonetown
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 14 02:11:49 1996
 endmsg
-x 20
-y 20
 end
 arch grass
 end

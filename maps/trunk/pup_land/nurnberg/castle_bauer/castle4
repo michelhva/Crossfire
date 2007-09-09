@@ -1,12 +1,13 @@
 arch map
-region nurnberg
 name castle4
+region nurnberg
+width 24
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar  5 00:58:43 1996
 endmsg
-x 24
 end
 arch blocked
 end
@@ -113,8 +114,8 @@ arch uw_sword
 name sword
 x 1
 y 4
-no_pick 1
 move_block all
+no_pick 1
 end
 arch cobblestones2
 x 1
@@ -124,8 +125,8 @@ arch uw_sword
 name sword
 x 1
 y 5
-no_pick 1
 move_block all
+no_pick 1
 end
 arch cobblestones2
 x 1
@@ -135,8 +136,8 @@ arch uw_sword
 name sword
 x 1
 y 6
-no_pick 1
 move_block all
+no_pick 1
 end
 arch magic_mouth
 msg
@@ -166,8 +167,8 @@ arch uw_shield
 name shield
 x 1
 y 8
-no_pick 1
 move_block all
+no_pick 1
 end
 arch cobblestones2
 x 1
@@ -177,8 +178,8 @@ arch uw_shield
 name shield
 x 1
 y 9
-no_pick 1
 move_block all
+no_pick 1
 end
 arch cobblestones2
 x 1
@@ -188,8 +189,8 @@ arch uw_shield
 name shield
 x 1
 y 10
-no_pick 1
 move_block all
+no_pick 1
 end
 arch cobblestones2
 x 1

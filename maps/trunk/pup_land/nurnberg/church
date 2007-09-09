@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name church
+region nurnberg
+width 10
+height 12
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 22:07:39 1996
 endmsg
-x 10
-y 12
 end
 arch pstone_1
 end
@@ -69,8 +69,8 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 y 10
+invisible 1
 end
 arch cobblestones
 y 10
@@ -79,8 +79,8 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 y 11
+invisible 1
 end
 arch cobblestones
 y 11
@@ -139,9 +139,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 1
 y 10
+invisible 1
 end
 arch cobblestones
 x 1
@@ -151,9 +151,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 1
 y 11
+invisible 1
 end
 arch cobblestones
 x 1
@@ -213,9 +213,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 2
 y 10
+invisible 1
 end
 arch cobblestones
 x 2
@@ -225,9 +225,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 2
 y 11
+invisible 1
 end
 arch cobblestones
 x 2
@@ -283,9 +283,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 3
 y 10
+invisible 1
 end
 arch cobblestones
 x 3
@@ -295,9 +295,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 3
 y 11
+invisible 1
 end
 arch cobblestones
 x 3
@@ -321,24 +321,24 @@ Our church is very poor.
 Please give us some money.
 endmsg
 hp 180
-friendly 1
-unaggressive 0
 x 4
 y 1
+friendly 1
+unaggressive 0
 end
 arch pstone_1
 x 4
 y 2
 end
 arch altar
+slaying platinacoin
 msg
 Oh..May God bless you.
 endmsg
-slaying platinacoin
 food 1000
-connected 1
 x 4
 y 2
+connected 1
 end
 arch pstone_1
 x 4
@@ -365,9 +365,9 @@ x 4
 y 8
 end
 arch door_look_1
-move_block 0
 x 4
 y 8
+move_block 0
 end
 arch cobblestones
 x 4
@@ -377,9 +377,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 4
 y 10
+invisible 1
 end
 arch cobblestones
 x 4
@@ -389,9 +389,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 4
 y 11
+invisible 1
 end
 arch cobblestones
 x 4
@@ -447,9 +447,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 5
 y 10
+invisible 1
 end
 arch cobblestones
 x 5
@@ -459,9 +459,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 5
 y 11
+invisible 1
 end
 arch cobblestones
 x 5
@@ -517,9 +517,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 6
 y 10
+invisible 1
 end
 arch cobblestones
 x 6
@@ -529,9 +529,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 6
 y 11
+invisible 1
 end
 arch cobblestones
 x 6
@@ -591,9 +591,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 7
 y 10
+invisible 1
 end
 arch cobblestones
 x 7
@@ -603,9 +603,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 7
 y 11
+invisible 1
 end
 arch cobblestones
 x 7
@@ -686,9 +686,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 8
 y 10
+invisible 1
 end
 arch cobblestones
 x 8
@@ -698,9 +698,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 8
 y 11
+invisible 1
 end
 arch cobblestones
 x 8
@@ -749,9 +749,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 9
 y 10
+invisible 1
 end
 arch cobblestones
 x 9
@@ -761,9 +761,9 @@ arch exit
 slaying city
 hp 13
 sp 22
-invisible 1
 x 9
 y 11
+invisible 1
 end
 arch cobblestones
 x 9

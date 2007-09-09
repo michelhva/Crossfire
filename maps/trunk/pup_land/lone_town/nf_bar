@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name nf_bar
+region lonetown
+width 26
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 10 05:55:01 1996
 endmsg
-x 26
-y 20
 end
 arch cobblestones
 end
@@ -148,8 +148,8 @@ hp 100
 x 1
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
@@ -1449,8 +1449,8 @@ hp 100
 x 13
 y 16
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
@@ -2311,8 +2311,8 @@ hp 100
 x 21
 y 17
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
@@ -2333,8 +2333,8 @@ hp 100
 x 21
 y 18
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch awall_2_1_2
@@ -2642,8 +2642,8 @@ hp 100
 x 23
 y 17
 type 0
-monster 1
 move_type walk
+monster 1
 friendly 1
 end
 arch woodfloor
