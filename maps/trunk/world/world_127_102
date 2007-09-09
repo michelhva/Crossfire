@@ -3772,6 +3772,10 @@ x 15
 y 1
 elevation 988
 end
+arch building1_east
+x 15
+y 1
+end
 arch brush
 x 15
 y 2
@@ -5138,6 +5142,9 @@ end
 arch grass
 x 20
 elevation 95
+end
+arch building2_east
+x 20
 end
 arch brush
 x 20
@@ -6550,6 +6557,10 @@ arch grass
 x 25
 y 1
 elevation 83
+end
+arch building1_east
+x 25
+y 1
 end
 arch grass
 x 25
@@ -13128,15 +13139,4 @@ arch deep_sea
 x 49
 y 49
 elevation -5838
-end
-arch building1_east
-x 15
-y 1
-end
-arch building2_east
-x 20
-end
-arch building1_east
-x 25
-y 1
 end

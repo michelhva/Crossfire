@@ -5082,6 +5082,14 @@ arch sea
 x 19
 y 25
 end
+arch tower_a
+name Three Sisters Tower
+slaying /sisters/entrance
+hp 19
+sp 1
+x 19
+y 25
+end
 arch hills
 x 19
 y 26
@@ -12755,12 +12763,4 @@ arch mountain
 x 49
 y 49
 elevation 5859
-end
-arch tower_a
-name Three Sisters Tower
-slaying /sisters/entrance
-hp 19
-sp 1
-x 19
-y 25
 end

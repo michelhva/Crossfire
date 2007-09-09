@@ -5082,6 +5082,12 @@ arch pstone_1
 x 20
 y 27
 end
+arch fort
+name Fortress
+x 20
+y 27
+blocksview 1
+end
 arch pstone_1
 x 20
 y 28
@@ -6538,6 +6544,13 @@ x 26
 y 15
 end
 arch sea1
+x 26
+y 16
+end
+arch rowboat
+slaying /world/world_101_114
+hp 16
+sp 45
 x 26
 y 16
 end
@@ -12336,17 +12349,4 @@ arch sea
 x 49
 y 49
 elevation -3818
-end
-arch fort
-name Fortress
-x 20
-y 27
-blocksview 1
-end
-arch rowboat
-slaying /world/world_101_114
-hp 16
-sp 45
-x 26
-y 16
 end

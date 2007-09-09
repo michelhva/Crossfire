@@ -2368,6 +2368,14 @@ x 9
 y 33
 elevation 989
 end
+arch castle_a
+name Castle of Aaaarg
+slaying /dungeons/castle_aaaarg
+hp 15
+sp 13
+x 9
+y 33
+end
 arch grass
 x 9
 y 34
@@ -12415,12 +12423,4 @@ arch woods_2
 x 49
 y 49
 elevation 2838
-end
-arch castle_a
-name Castle of Aaaarg
-slaying /dungeons/castle_aaaarg
-hp 15
-sp 13
-x 9
-y 33
 end

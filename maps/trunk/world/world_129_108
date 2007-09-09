@@ -1630,6 +1630,17 @@ arch grass
 x 6
 y 30
 end
+arch guild
+name Mansion
+slaying /wolfsburg/volcano/vvmansion
+msg
+This place is crawling with monster
+endmsg
+hp 16
+sp 1
+x 6
+y 30
+end
 arch grass
 x 6
 y 31
@@ -2101,6 +2112,14 @@ x 8
 y 24
 end
 arch permanent_lava
+x 8
+y 25
+end
+arch volcano_high
+name Heap Big Fiery Mountain
+slaying /wolfsburg/volcano/volcano
+hp 1
+sp 1
 x 8
 y 25
 end
@@ -12457,23 +12476,4 @@ arch deep_sea
 x 49
 y 49
 elevation -23698
-end
-arch guild
-name Mansion
-slaying /wolfsburg/volcano/vvmansion
-msg
-This place is crawling with monster
-endmsg
-hp 16
-sp 1
-x 6
-y 30
-end
-arch volcano_high
-name Heap Big Fiery Mountain
-slaying /wolfsburg/volcano/volcano
-hp 1
-sp 1
-x 8
-y 25
 end
