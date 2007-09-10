@@ -1,8 +1,8 @@
 arch map
-region brest
 name underground
 reset_timeout 7200
 difficulty 12
+region brest
 width 48
 height 66
 enter_x 1
@@ -15839,7 +15839,7 @@ y 26
 end
 arch sign
 msg
-You kill all the monster, 
+You kill all the monster,
 and lost your money...
 Don't forget that experience is
 the biggest treasure!

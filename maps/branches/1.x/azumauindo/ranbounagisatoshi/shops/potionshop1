@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 region azumauindo
 shopitems potion:20;ring:15;amulet:10;gem:0;*:-100
+shopgreed 1.20000
 shopmin 400
 shopmax 2000000
 shoprace human
-shopgreed 1.2
 width 32
 height 32
 enter_x 1

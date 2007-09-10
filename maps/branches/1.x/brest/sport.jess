@@ -1,13 +1,13 @@
 arch map
-region brest
 name sport
+region brest
+width 40
+height 40
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 01:13:46 1994
 endmsg
-x 40
-y 40
 end
 arch pit_open
 hp 20
@@ -1642,6 +1642,10 @@ arch woodfloor
 x 8
 y 9
 end
+arch big_dragon
+x 8
+y 9
+end
 arch woodfloor
 x 8
 y 10
@@ -1654,6 +1658,10 @@ arch woodfloor
 x 8
 y 12
 end
+arch big_dragon
+x 8
+y 12
+end
 arch woodfloor
 x 8
 y 13
@@ -1663,6 +1671,10 @@ x 8
 y 14
 end
 arch woodfloor
+x 8
+y 15
+end
+arch big_dragon
 x 8
 y 15
 end
@@ -2509,6 +2521,10 @@ arch woodfloor
 x 12
 y 9
 end
+arch big_dragon
+x 12
+y 9
+end
 arch woodfloor
 x 12
 y 10
@@ -2521,6 +2537,10 @@ arch woodfloor
 x 12
 y 12
 end
+arch big_dragon
+x 12
+y 12
+end
 arch woodfloor
 x 12
 y 13
@@ -2530,6 +2550,10 @@ x 12
 y 14
 end
 arch woodfloor
+x 12
+y 15
+end
+arch big_dragon
 x 12
 y 15
 end
@@ -3281,6 +3305,10 @@ arch woodfloor
 x 16
 y 9
 end
+arch chinese_dragon
+x 16
+y 9
+end
 arch woodfloor
 x 16
 y 10
@@ -3293,6 +3321,10 @@ arch woodfloor
 x 16
 y 12
 end
+arch chinese_dragon
+x 16
+y 12
+end
 arch woodfloor
 x 16
 y 13
@@ -3302,6 +3334,10 @@ x 16
 y 14
 end
 arch woodfloor
+x 16
+y 15
+end
+arch chinese_dragon
 x 16
 y 15
 end
@@ -3852,6 +3888,10 @@ arch woodfloor
 x 19
 y 9
 end
+arch chinese_dragon
+x 19
+y 9
+end
 arch woodfloor
 x 19
 y 10
@@ -3864,6 +3904,10 @@ arch woodfloor
 x 19
 y 12
 end
+arch chinese_dragon
+x 19
+y 12
+end
 arch woodfloor
 x 19
 y 13
@@ -3873,6 +3917,10 @@ x 19
 y 14
 end
 arch woodfloor
+x 19
+y 15
+end
+arch chinese_dragon
 x 19
 y 15
 end
@@ -4447,11 +4495,19 @@ arch woodfloor
 x 22
 y 9
 end
+arch behemoth
+x 22
+y 9
+end
 arch woodfloor
 x 22
 y 10
 end
 arch woodfloor
+x 22
+y 11
+end
+arch behemoth
 x 22
 y 11
 end
@@ -4463,11 +4519,19 @@ arch woodfloor
 x 22
 y 13
 end
+arch behemoth
+x 22
+y 13
+end
 arch woodfloor
 x 22
 y 14
 end
 arch woodfloor
+x 22
+y 15
+end
+arch behemoth
 x 22
 y 15
 end
@@ -4809,11 +4873,19 @@ arch woodfloor
 x 24
 y 9
 end
+arch behemoth
+x 24
+y 9
+end
 arch woodfloor
 x 24
 y 10
 end
 arch woodfloor
+x 24
+y 11
+end
+arch behemoth
 x 24
 y 11
 end
@@ -4825,11 +4897,19 @@ arch woodfloor
 x 24
 y 13
 end
+arch behemoth
+x 24
+y 13
+end
 arch woodfloor
 x 24
 y 14
 end
 arch woodfloor
+x 24
+y 15
+end
+arch behemoth
 x 24
 y 15
 end
@@ -5183,11 +5263,19 @@ arch woodfloor
 x 26
 y 12
 end
+arch troll
+x 26
+y 12
+end
 arch woodfloor
 x 26
 y 13
 end
 arch woodfloor
+x 26
+y 14
+end
+arch troll
 x 26
 y 14
 end
@@ -5357,6 +5445,10 @@ x 27
 y 8
 end
 arch woodfloor
+x 27
+y 9
+end
+arch big_wiz
 x 27
 y 9
 end
@@ -5919,6 +6011,10 @@ arch woodfloor
 x 30
 y 9
 end
+arch big_wiz
+x 30
+y 9
+end
 arch woodfloor
 x 30
 y 10
@@ -5940,6 +6036,10 @@ x 30
 y 14
 end
 arch woodfloor
+x 30
+y 15
+end
+arch titan
 x 30
 y 15
 end
@@ -8192,104 +8292,4 @@ end
 arch wall_2_2_4
 x 39
 y 39
-end
-arch big_dragon
-x 8
-y 9
-end
-arch big_dragon
-x 8
-y 12
-end
-arch big_dragon
-x 8
-y 15
-end
-arch big_dragon
-x 12
-y 9
-end
-arch big_dragon
-x 12
-y 12
-end
-arch big_dragon
-x 12
-y 15
-end
-arch chinese_dragon
-x 16
-y 9
-end
-arch chinese_dragon
-x 16
-y 12
-end
-arch chinese_dragon
-x 16
-y 15
-end
-arch chinese_dragon
-x 19
-y 9
-end
-arch chinese_dragon
-x 19
-y 12
-end
-arch chinese_dragon
-x 19
-y 15
-end
-arch behemoth
-x 22
-y 9
-end
-arch behemoth
-x 22
-y 11
-end
-arch behemoth
-x 22
-y 13
-end
-arch behemoth
-x 22
-y 15
-end
-arch behemoth
-x 24
-y 9
-end
-arch behemoth
-x 24
-y 11
-end
-arch behemoth
-x 24
-y 13
-end
-arch behemoth
-x 24
-y 15
-end
-arch troll
-x 26
-y 12
-end
-arch troll
-x 26
-y 14
-end
-arch big_wiz
-x 27
-y 9
-end
-arch big_wiz
-x 30
-y 9
-end
-arch titan
-x 30
-y 15
 end
