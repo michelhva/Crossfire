@@ -1,13 +1,13 @@
 arch map
-region brest
 name ludo2
+region brest
+width 42
+height 42
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 31 18:21:26 1994
 endmsg
-x 42
-y 42
 end
 arch woodfloor
 end
@@ -509,11 +509,19 @@ arch woodfloor
 x 1
 y 30
 end
+arch giant
+x 1
+y 30
+end
 arch woodfloor
 x 1
 y 31
 end
 arch woodfloor
+x 1
+y 32
+end
+arch giant
 x 1
 y 32
 end
@@ -525,11 +533,19 @@ arch woodfloor
 x 1
 y 34
 end
+arch giant
+x 1
+y 34
+end
 arch woodfloor
 x 1
 y 35
 end
 arch woodfloor
+x 1
+y 36
+end
+arch giant
 x 1
 y 36
 end
@@ -811,11 +827,19 @@ arch woodfloor
 x 2
 y 30
 end
+arch giant
+x 2
+y 30
+end
 arch woodfloor
 x 2
 y 31
 end
 arch woodfloor
+x 2
+y 32
+end
+arch giant
 x 2
 y 32
 end
@@ -827,11 +851,19 @@ arch woodfloor
 x 2
 y 34
 end
+arch giant
+x 2
+y 34
+end
 arch woodfloor
 x 2
 y 35
 end
 arch woodfloor
+x 2
+y 36
+end
+arch giant
 x 2
 y 36
 end
@@ -1113,7 +1145,15 @@ arch woodfloor
 x 3
 y 30
 end
+arch dragon
+x 3
+y 30
+end
 arch woodfloor
+x 3
+y 31
+end
+arch dragon
 x 3
 y 31
 end
@@ -1121,7 +1161,15 @@ arch woodfloor
 x 3
 y 32
 end
+arch dragon
+x 3
+y 32
+end
 arch woodfloor
+x 3
+y 33
+end
+arch dragon
 x 3
 y 33
 end
@@ -1129,7 +1177,15 @@ arch woodfloor
 x 3
 y 34
 end
+arch dragon
+x 3
+y 34
+end
 arch woodfloor
+x 3
+y 35
+end
+arch dragon
 x 3
 y 35
 end
@@ -1137,7 +1193,15 @@ arch woodfloor
 x 3
 y 36
 end
+arch dragon
+x 3
+y 36
+end
 arch woodfloor
+x 3
+y 37
+end
+arch dragon
 x 3
 y 37
 end
@@ -1718,7 +1782,15 @@ arch woodfloor
 x 5
 y 30
 end
+arch dragon
+x 5
+y 30
+end
 arch woodfloor
+x 5
+y 31
+end
+arch dragon
 x 5
 y 31
 end
@@ -1726,7 +1798,15 @@ arch woodfloor
 x 5
 y 32
 end
+arch dragon
+x 5
+y 32
+end
 arch woodfloor
+x 5
+y 33
+end
+arch dragon
 x 5
 y 33
 end
@@ -1734,7 +1814,15 @@ arch woodfloor
 x 5
 y 34
 end
+arch dragon
+x 5
+y 34
+end
 arch woodfloor
+x 5
+y 35
+end
+arch dragon
 x 5
 y 35
 end
@@ -1742,7 +1830,15 @@ arch woodfloor
 x 5
 y 36
 end
+arch dragon
+x 5
+y 36
+end
 arch woodfloor
+x 5
+y 37
+end
+arch dragon
 x 5
 y 37
 end
@@ -1941,7 +2037,15 @@ arch woodfloor
 x 6
 y 20
 end
+arch dragon
+x 6
+y 20
+end
 arch woodfloor
+x 6
+y 21
+end
+arch dragon
 x 6
 y 21
 end
@@ -1949,7 +2053,15 @@ arch woodfloor
 x 6
 y 22
 end
+arch dragon
+x 6
+y 22
+end
 arch woodfloor
+x 6
+y 23
+end
+arch dragon
 x 6
 y 23
 end
@@ -1957,7 +2069,15 @@ arch woodfloor
 x 6
 y 24
 end
+arch dragon
+x 6
+y 24
+end
 arch woodfloor
+x 6
+y 25
+end
+arch dragon
 x 6
 y 25
 end
@@ -1965,7 +2085,15 @@ arch woodfloor
 x 6
 y 26
 end
+arch dragon
+x 6
+y 26
+end
 arch woodfloor
+x 6
+y 27
+end
+arch dragon
 x 6
 y 27
 end
@@ -2266,7 +2394,15 @@ arch woodfloor
 x 7
 y 30
 end
+arch dragon
+x 7
+y 30
+end
 arch woodfloor
+x 7
+y 31
+end
+arch dragon
 x 7
 y 31
 end
@@ -2274,7 +2410,15 @@ arch woodfloor
 x 7
 y 32
 end
+arch dragon
+x 7
+y 32
+end
 arch woodfloor
+x 7
+y 33
+end
+arch dragon
 x 7
 y 33
 end
@@ -2282,7 +2426,15 @@ arch woodfloor
 x 7
 y 34
 end
+arch dragon
+x 7
+y 34
+end
 arch woodfloor
+x 7
+y 35
+end
+arch dragon
 x 7
 y 35
 end
@@ -2290,7 +2442,15 @@ arch woodfloor
 x 7
 y 36
 end
+arch dragon
+x 7
+y 36
+end
 arch woodfloor
+x 7
+y 37
+end
+arch dragon
 x 7
 y 37
 end
@@ -2516,6 +2676,10 @@ arch woodfloor
 x 8
 y 27
 end
+arch dragon
+x 8
+y 27
+end
 arch woodfloor
 x 8
 y 28
@@ -2806,7 +2970,15 @@ arch woodfloor
 x 9
 y 30
 end
+arch dragon
+x 9
+y 30
+end
 arch woodfloor
+x 9
+y 31
+end
+arch dragon
 x 9
 y 31
 end
@@ -2814,7 +2986,15 @@ arch woodfloor
 x 9
 y 32
 end
+arch dragon
+x 9
+y 32
+end
 arch woodfloor
+x 9
+y 33
+end
+arch dragon
 x 9
 y 33
 end
@@ -2822,7 +3002,15 @@ arch woodfloor
 x 9
 y 34
 end
+arch dragon
+x 9
+y 34
+end
 arch woodfloor
+x 9
+y 35
+end
+arch dragon
 x 9
 y 35
 end
@@ -2830,7 +3018,15 @@ arch woodfloor
 x 9
 y 36
 end
+arch dragon
+x 9
+y 36
+end
 arch woodfloor
+x 9
+y 37
+end
+arch dragon
 x 9
 y 37
 end
@@ -2900,6 +3096,11 @@ arch woodfloor
 x 10
 y 4
 end
+arch big_wiz
+name father of ludo
+x 10
+y 4
+end
 arch woodfloor
 x 10
 y 5
@@ -2953,6 +3154,11 @@ x 10
 y 12
 end
 arch woodfloor
+x 10
+y 13
+end
+arch big_wiz
+name sister of ludo
 x 10
 y 13
 end
@@ -3025,6 +3231,10 @@ x 10
 y 26
 end
 arch woodfloor
+x 10
+y 27
+end
+arch dragon
 x 10
 y 27
 end
@@ -3162,6 +3372,11 @@ arch woodfloor
 x 11
 y 8
 end
+arch big_wiz
+name mother of ludo
+x 11
+y 8
+end
 arch woodfloor
 x 11
 y 9
@@ -3278,7 +3493,15 @@ arch woodfloor
 x 11
 y 30
 end
+arch dragon
+x 11
+y 30
+end
 arch woodfloor
+x 11
+y 31
+end
+arch dragon
 x 11
 y 31
 end
@@ -3286,7 +3509,15 @@ arch woodfloor
 x 11
 y 32
 end
+arch dragon
+x 11
+y 32
+end
 arch woodfloor
+x 11
+y 33
+end
+arch dragon
 x 11
 y 33
 end
@@ -3294,7 +3525,15 @@ arch woodfloor
 x 11
 y 34
 end
+arch dragon
+x 11
+y 34
+end
 arch woodfloor
+x 11
+y 35
+end
+arch dragon
 x 11
 y 35
 end
@@ -3302,7 +3541,15 @@ arch woodfloor
 x 11
 y 36
 end
+arch dragon
+x 11
+y 36
+end
 arch woodfloor
+x 11
+y 37
+end
+arch dragon
 x 11
 y 37
 end
@@ -3488,6 +3735,10 @@ arch woodfloor
 x 12
 y 27
 end
+arch dragon
+x 12
+y 27
+end
 arch woodfloor
 x 12
 y 28
@@ -3715,6 +3966,10 @@ x 13
 y 19
 end
 arch woodfloor
+x 13
+y 20
+end
+arch big_dragon
 x 13
 y 20
 end
@@ -4045,6 +4300,10 @@ x 14
 y 26
 end
 arch woodfloor
+x 14
+y 27
+end
+arch dragon
 x 14
 y 27
 end
@@ -4199,6 +4458,11 @@ x 15
 y 4
 end
 arch woodfloor
+x 15
+y 5
+end
+arch big_wiz
+name brother of ludo
 x 15
 y 5
 end
@@ -5662,6 +5926,10 @@ arch woodfloor
 x 19
 y 30
 end
+arch big_dragon
+x 19
+y 30
+end
 arch woodfloor
 x 19
 y 31
@@ -5674,6 +5942,10 @@ arch woodfloor
 x 19
 y 33
 end
+arch big_dragon
+x 19
+y 33
+end
 arch woodfloor
 x 19
 y 34
@@ -5683,6 +5955,10 @@ x 19
 y 35
 end
 arch woodfloor
+x 19
+y 36
+end
+arch big_dragon
 x 19
 y 36
 end
@@ -6606,6 +6882,10 @@ arch woodfloor
 x 23
 y 1
 end
+arch cobra
+x 23
+y 1
+end
 arch woodfloor
 x 23
 y 2
@@ -6763,6 +7043,10 @@ x 23
 y 21
 end
 arch woodfloor
+x 23
+y 22
+end
+arch dragon
 x 23
 y 22
 end
@@ -6826,6 +7110,10 @@ arch woodfloor
 x 23
 y 30
 end
+arch big_dragon
+x 23
+y 30
+end
 arch woodfloor
 x 23
 y 31
@@ -6838,6 +7126,10 @@ arch woodfloor
 x 23
 y 33
 end
+arch big_dragon
+x 23
+y 33
+end
 arch woodfloor
 x 23
 y 34
@@ -6847,6 +7139,10 @@ x 23
 y 35
 end
 arch woodfloor
+x 23
+y 36
+end
+arch big_dragon
 x 23
 y 36
 end
@@ -6881,6 +7177,10 @@ arch wall_2_1_2
 x 24
 end
 arch woodfloor
+x 24
+y 1
+end
+arch cobra
 x 24
 y 1
 end
@@ -7157,6 +7457,10 @@ arch woodfloor
 x 25
 y 1
 end
+arch cobra
+x 25
+y 1
+end
 arch woodfloor
 x 25
 y 2
@@ -7317,6 +7621,10 @@ arch woodfloor
 x 25
 y 22
 end
+arch dragon
+x 25
+y 22
+end
 arch woodfloor
 x 25
 y 23
@@ -7342,6 +7650,10 @@ x 25
 y 26
 end
 arch woodfloor
+x 25
+y 27
+end
+arch dread
 x 25
 y 27
 end
@@ -7420,6 +7732,10 @@ arch wall_2_1_2
 x 26
 end
 arch woodfloor
+x 26
+y 1
+end
+arch cobra
 x 26
 y 1
 end
@@ -7729,6 +8045,10 @@ arch woodfloor
 x 27
 y 1
 end
+arch cobra
+x 27
+y 1
+end
 arch woodfloor
 x 27
 y 2
@@ -7889,6 +8209,10 @@ arch woodfloor
 x 27
 y 22
 end
+arch dragon
+x 27
+y 22
+end
 arch woodfloor
 x 27
 y 23
@@ -7925,7 +8249,15 @@ arch woodfloor
 x 27
 y 27
 end
+arch dragon
+x 27
+y 27
+end
 arch woodfloor
+x 27
+y 28
+end
+arch dragon
 x 27
 y 28
 end
@@ -7996,6 +8328,10 @@ arch wall_2_1_2
 x 28
 end
 arch woodfloor
+x 28
+y 1
+end
+arch cobra
 x 28
 y 1
 end
@@ -8171,7 +8507,15 @@ arch woodfloor
 x 28
 y 24
 end
+arch dragon
+x 28
+y 24
+end
 arch woodfloor
+x 28
+y 25
+end
+arch dragon
 x 28
 y 25
 end
@@ -8258,6 +8602,10 @@ arch wall_2_1_2
 x 29
 end
 arch woodfloor
+x 29
+y 1
+end
+arch cobra
 x 29
 y 1
 end
@@ -8421,6 +8769,10 @@ arch woodfloor
 x 29
 y 22
 end
+arch dragon
+x 29
+y 22
+end
 arch woodfloor
 x 29
 y 23
@@ -8449,7 +8801,15 @@ arch woodfloor
 x 29
 y 27
 end
+arch dragon
+x 29
+y 27
+end
 arch woodfloor
+x 29
+y 28
+end
+arch dragon
 x 29
 y 28
 end
@@ -8559,6 +8919,10 @@ arch woodfloor
 x 30
 y 1
 end
+arch cobra
+x 30
+y 1
+end
 arch woodfloor
 x 30
 y 2
@@ -8731,7 +9095,15 @@ arch woodfloor
 x 30
 y 24
 end
+arch dragon
+x 30
+y 24
+end
 arch woodfloor
+x 30
+y 25
+end
+arch dragon
 x 30
 y 25
 end
@@ -8822,6 +9194,10 @@ arch wall_2_1_2
 x 31
 end
 arch woodfloor
+x 31
+y 1
+end
+arch cobra
 x 31
 y 1
 end
@@ -8985,6 +9361,10 @@ arch woodfloor
 x 31
 y 22
 end
+arch dragon
+x 31
+y 22
+end
 arch woodfloor
 x 31
 y 23
@@ -9013,6 +9393,10 @@ arch woodfloor
 x 31
 y 27
 end
+arch chinese_dragon
+x 31
+y 27
+end
 arch woodfloor
 x 31
 y 28
@@ -9029,6 +9413,10 @@ arch woodfloor
 x 31
 y 30
 end
+arch big_dragon
+x 31
+y 30
+end
 arch woodfloor
 x 31
 y 31
@@ -9041,6 +9429,10 @@ arch woodfloor
 x 31
 y 33
 end
+arch big_dragon
+x 31
+y 33
+end
 arch woodfloor
 x 31
 y 34
@@ -9050,6 +9442,10 @@ x 31
 y 35
 end
 arch woodfloor
+x 31
+y 36
+end
+arch big_dragon
 x 31
 y 36
 end
@@ -9088,6 +9484,10 @@ arch wall_2_1_2
 x 32
 end
 arch woodfloor
+x 32
+y 1
+end
+arch cobra
 x 32
 y 1
 end
@@ -9263,7 +9663,15 @@ arch woodfloor
 x 32
 y 24
 end
+arch dragon
+x 32
+y 24
+end
 arch woodfloor
+x 32
+y 25
+end
+arch dragon
 x 32
 y 25
 end
@@ -9350,6 +9758,10 @@ arch wall_2_1_2
 x 33
 end
 arch woodfloor
+x 33
+y 1
+end
+arch cobra
 x 33
 y 1
 end
@@ -9518,6 +9930,10 @@ arch woodfloor
 x 33
 y 22
 end
+arch dragon
+x 33
+y 22
+end
 arch woodfloor
 x 33
 y 23
@@ -9543,6 +9959,10 @@ x 33
 y 26
 end
 arch woodfloor
+x 33
+y 27
+end
+arch dread
 x 33
 y 27
 end
@@ -9621,6 +10041,10 @@ arch wall_2_1_2
 x 34
 end
 arch woodfloor
+x 34
+y 1
+end
+arch cobra
 x 34
 y 1
 end
@@ -9903,6 +10327,10 @@ arch woodfloor
 x 35
 y 1
 end
+arch cobra
+x 35
+y 1
+end
 arch woodfloor
 x 35
 y 2
@@ -10131,6 +10559,10 @@ arch woodfloor
 x 35
 y 30
 end
+arch big_dragon
+x 35
+y 30
+end
 arch woodfloor
 x 35
 y 31
@@ -10143,6 +10575,10 @@ arch woodfloor
 x 35
 y 33
 end
+arch big_dragon
+x 35
+y 33
+end
 arch woodfloor
 x 35
 y 34
@@ -10152,6 +10588,10 @@ x 35
 y 35
 end
 arch woodfloor
+x 35
+y 36
+end
+arch big_dragon
 x 35
 y 36
 end
@@ -10190,6 +10630,10 @@ arch wall_2_1_2
 x 36
 end
 arch woodfloor
+x 36
+y 1
+end
+arch cobra
 x 36
 y 1
 end
@@ -10354,6 +10798,10 @@ arch woodfloor
 x 36
 y 22
 end
+arch behemoth
+x 36
+y 22
+end
 arch woodfloor
 x 36
 y 23
@@ -10362,11 +10810,19 @@ arch woodfloor
 x 36
 y 24
 end
+arch behemoth
+x 36
+y 24
+end
 arch woodfloor
 x 36
 y 25
 end
 arch woodfloor
+x 36
+y 26
+end
+arch behemoth
 x 36
 y 26
 end
@@ -10449,6 +10905,10 @@ arch wall_2_1_2
 x 37
 end
 arch woodfloor
+x 37
+y 1
+end
+arch cobra
 x 37
 y 1
 end
@@ -10721,6 +11181,10 @@ arch wall_2_1_2
 x 38
 end
 arch woodfloor
+x 38
+y 1
+end
+arch cobra
 x 38
 y 1
 end
@@ -11877,468 +12341,4 @@ end
 arch wall_2_2_4
 x 41
 y 41
-end
-arch giant
-x 1
-y 30
-end
-arch giant
-x 1
-y 32
-end
-arch giant
-x 1
-y 34
-end
-arch giant
-x 1
-y 36
-end
-arch giant
-x 2
-y 30
-end
-arch giant
-x 2
-y 32
-end
-arch giant
-x 2
-y 34
-end
-arch giant
-x 2
-y 36
-end
-arch dragon
-x 3
-y 30
-end
-arch dragon
-x 3
-y 31
-end
-arch dragon
-x 3
-y 32
-end
-arch dragon
-x 3
-y 33
-end
-arch dragon
-x 3
-y 34
-end
-arch dragon
-x 3
-y 35
-end
-arch dragon
-x 3
-y 36
-end
-arch dragon
-x 3
-y 37
-end
-arch dragon
-x 5
-y 30
-end
-arch dragon
-x 5
-y 31
-end
-arch dragon
-x 5
-y 32
-end
-arch dragon
-x 5
-y 33
-end
-arch dragon
-x 5
-y 34
-end
-arch dragon
-x 5
-y 35
-end
-arch dragon
-x 5
-y 36
-end
-arch dragon
-x 5
-y 37
-end
-arch dragon
-x 6
-y 20
-end
-arch dragon
-x 6
-y 21
-end
-arch dragon
-x 6
-y 22
-end
-arch dragon
-x 6
-y 23
-end
-arch dragon
-x 6
-y 24
-end
-arch dragon
-x 6
-y 25
-end
-arch dragon
-x 6
-y 26
-end
-arch dragon
-x 6
-y 27
-end
-arch dragon
-x 7
-y 30
-end
-arch dragon
-x 7
-y 31
-end
-arch dragon
-x 7
-y 32
-end
-arch dragon
-x 7
-y 33
-end
-arch dragon
-x 7
-y 34
-end
-arch dragon
-x 7
-y 35
-end
-arch dragon
-x 7
-y 36
-end
-arch dragon
-x 7
-y 37
-end
-arch dragon
-x 8
-y 27
-end
-arch dragon
-x 9
-y 30
-end
-arch dragon
-x 9
-y 31
-end
-arch dragon
-x 9
-y 32
-end
-arch dragon
-x 9
-y 33
-end
-arch dragon
-x 9
-y 34
-end
-arch dragon
-x 9
-y 35
-end
-arch dragon
-x 9
-y 36
-end
-arch dragon
-x 9
-y 37
-end
-arch big_wiz
-name father of ludo
-x 10
-y 4
-end
-arch big_wiz
-name sister of ludo
-x 10
-y 13
-end
-arch dragon
-x 10
-y 27
-end
-arch big_wiz
-name mother of ludo
-x 11
-y 8
-end
-arch dragon
-x 11
-y 30
-end
-arch dragon
-x 11
-y 31
-end
-arch dragon
-x 11
-y 32
-end
-arch dragon
-x 11
-y 33
-end
-arch dragon
-x 11
-y 34
-end
-arch dragon
-x 11
-y 35
-end
-arch dragon
-x 11
-y 36
-end
-arch dragon
-x 11
-y 37
-end
-arch dragon
-x 12
-y 27
-end
-arch big_dragon
-x 13
-y 20
-end
-arch dragon
-x 14
-y 27
-end
-arch big_wiz
-name brother of ludo
-x 15
-y 5
-end
-arch big_dragon
-x 19
-y 30
-end
-arch big_dragon
-x 19
-y 33
-end
-arch big_dragon
-x 19
-y 36
-end
-arch cobra
-x 23
-y 1
-end
-arch dragon
-x 23
-y 22
-end
-arch big_dragon
-x 23
-y 30
-end
-arch big_dragon
-x 23
-y 33
-end
-arch big_dragon
-x 23
-y 36
-end
-arch cobra
-x 24
-y 1
-end
-arch cobra
-x 25
-y 1
-end
-arch dragon
-x 25
-y 22
-end
-arch dread
-x 25
-y 27
-end
-arch cobra
-x 26
-y 1
-end
-arch cobra
-x 27
-y 1
-end
-arch dragon
-x 27
-y 22
-end
-arch dragon
-x 27
-y 27
-end
-arch dragon
-x 27
-y 28
-end
-arch cobra
-x 28
-y 1
-end
-arch dragon
-x 28
-y 24
-end
-arch dragon
-x 28
-y 25
-end
-arch cobra
-x 29
-y 1
-end
-arch dragon
-x 29
-y 22
-end
-arch dragon
-x 29
-y 27
-end
-arch dragon
-x 29
-y 28
-end
-arch cobra
-x 30
-y 1
-end
-arch dragon
-x 30
-y 24
-end
-arch dragon
-x 30
-y 25
-end
-arch cobra
-x 31
-y 1
-end
-arch dragon
-x 31
-y 22
-end
-arch chinese_dragon
-x 31
-y 27
-end
-arch big_dragon
-x 31
-y 30
-end
-arch big_dragon
-x 31
-y 33
-end
-arch big_dragon
-x 31
-y 36
-end
-arch cobra
-x 32
-y 1
-end
-arch dragon
-x 32
-y 24
-end
-arch dragon
-x 32
-y 25
-end
-arch cobra
-x 33
-y 1
-end
-arch dragon
-x 33
-y 22
-end
-arch dread
-x 33
-y 27
-end
-arch cobra
-x 34
-y 1
-end
-arch cobra
-x 35
-y 1
-end
-arch big_dragon
-x 35
-y 30
-end
-arch big_dragon
-x 35
-y 33
-end
-arch big_dragon
-x 35
-y 36
-end
-arch cobra
-x 36
-y 1
-end
-arch behemoth
-x 36
-y 22
-end
-arch behemoth
-x 36
-y 24
-end
-arch behemoth
-x 36
-y 26
-end
-arch cobra
-x 37
-y 1
-end
-arch cobra
-x 38
-y 1
 end

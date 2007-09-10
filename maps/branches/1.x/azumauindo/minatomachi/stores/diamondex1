@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 reset_timeout 1
-region azumauindo
 difficulty 1
+region azumauindo
 width 32
 height 32
 enter_x 1
@@ -2905,12 +2906,12 @@ end
 arch man
 name Accountant
 name_pl Accountant
-arch event_say 
-slaying /python/IPO/banksay.py
-title Python
-end
 x 9
 y 7
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch light4
 x 9
@@ -3036,9 +3037,9 @@ arch sign
 name First World Bank Diamond Exchange
 name_pl First World Bank Diamond Exchange
 msg
-Welcome the Minatomachi branch of the 
+Welcome the Minatomachi branch of the
 First World Bank Diamond Exchange.
-Here First World Bank 2000 Diamond 
+Here First World Bank 2000 Diamond
 Notes can be redeemed or purchased.
 Also accounts are accessable through
 our Bank of Skud affiliate accountant.

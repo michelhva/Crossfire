@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 reset_timeout 7200
+difficulty 1
 region azumauindo
 shopitems weapon:20;weapon improver:10;bow:0;arrow:0;*:-98
+shopgreed 1.20000
 shopmin 100
 shopmax 100000
 shoprace human
-shopgreed 1.2
-difficulty 1
 width 16
 height 16
 enter_x 1

@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 reset_timeout 7200
-region azumauindo
 difficulty 1
+region azumauindo
 width 64
 height 64
 enter_x 1
@@ -411,19 +412,19 @@ x 2
 y 18
 end
 arch mailbox
-arch event_close
-slaying /python/IPO/send.py
-title Python
-end
-arch event_apply
-slaying /python/IPO/receive.py
-title Python
-end
 x 2
 y 18
 material 0
 weight 0
 no_pick 1
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 end
 arch woodfloor
 x 2
@@ -583,19 +584,19 @@ x 3
 y 18
 end
 arch mailbox
-arch event_close 
-slaying /python/IPO/send.py
-title Python
-end
-arch event_apply 
-slaying /python/IPO/receive.py
-title Python
-end
 x 3
 y 18
 material 0
 weight 0
 no_pick 1
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 end
 arch woodfloor
 x 3
@@ -661,12 +662,12 @@ end
 arch guildmaster
 name postmaster
 name_pl postmaster
-arch event_say 
-slaying /python/IPO/say.py
-title Python
-end
 x 4
 y 3
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
 end
 arch dungeon_magic
 x 4
@@ -741,19 +742,19 @@ x 4
 y 18
 end
 arch mailbox
-arch event_close 
-slaying /python/IPO/send.py
-title Python
-end
-arch event_apply 
-slaying /python/IPO/receive.py
-title Python
-end
 x 4
 y 18
 material 0
 weight 0
 no_pick 1
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 end
 arch woodfloor
 x 4
@@ -913,19 +914,19 @@ x 5
 y 18
 end
 arch mailbox
-arch event_close 
-slaying /python/IPO/send.py
-title Python
-end
-arch event_apply 
-slaying /python/IPO/receive.py
-title Python
-end
 x 5
 y 18
 material 0
 weight 0
 no_pick 1
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
 end
 arch woodfloor
 x 5

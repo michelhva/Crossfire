@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 reset_timeout 7200
-region azumauindo
 difficulty 1
+region azumauindo
 width 64
 height 64
 enter_x 1
@@ -11621,14 +11622,14 @@ arch ruby
 x 22
 y 36
 end
+arch dungeon_magic
+x 22
+y 36
+end
 arch medium_demon
 x 22
 y 36
 end
-arch dungeon_magic
-x 22
-y 36
-end
 arch light2
 x 22
 y 37
@@ -11658,6 +11659,10 @@ x 22
 y 38
 end
 arch ruby
+x 22
+y 38
+end
+arch dungeon_magic
 x 22
 y 38
 end
@@ -11665,10 +11670,6 @@ arch dread
 x 22
 y 38
 end
-arch dungeon_magic
-x 22
-y 38
-end
 arch light2
 x 22
 y 39
@@ -11698,6 +11699,10 @@ x 22
 y 40
 end
 arch ruby
+x 22
+y 40
+end
+arch dungeon_magic
 x 22
 y 40
 end
@@ -11705,10 +11710,6 @@ arch medium_demon
 x 22
 y 40
 end
-arch dungeon_magic
-x 22
-y 40
-end
 arch light2
 x 22
 y 41
@@ -11738,14 +11739,14 @@ x 22
 y 42
 end
 arch ruby
+x 22
+y 42
+end
+arch dungeon_magic
 x 22
 y 42
 end
 arch dread
-x 22
-y 42
-end
-arch dungeon_magic
 x 22
 y 42
 end
@@ -18211,7 +18212,6 @@ hp 24000
 maxhp 24000
 maxsp 300
 exp 5000000
-
 dam 55
 x 31
 y 37
@@ -25389,14 +25389,14 @@ arch ruby
 x 42
 y 35
 end
+arch dungeon_magic
+x 42
+y 35
+end
 arch medium_demon
 x 42
 y 35
 end
-arch dungeon_magic
-x 42
-y 35
-end
 arch light2
 x 42
 y 36
@@ -25426,6 +25426,10 @@ x 42
 y 37
 end
 arch ruby
+x 42
+y 37
+end
+arch dungeon_magic
 x 42
 y 37
 end
@@ -25433,10 +25437,6 @@ arch dread
 x 42
 y 37
 end
-arch dungeon_magic
-x 42
-y 37
-end
 arch light2
 x 42
 y 38
@@ -25466,6 +25466,10 @@ x 42
 y 39
 end
 arch ruby
+x 42
+y 39
+end
+arch dungeon_magic
 x 42
 y 39
 end
@@ -25473,10 +25477,6 @@ arch medium_demon
 x 42
 y 39
 end
-arch dungeon_magic
-x 42
-y 39
-end
 arch light2
 x 42
 y 40
@@ -25506,6 +25506,10 @@ x 42
 y 41
 end
 arch ruby
+x 42
+y 41
+end
+arch dungeon_magic
 x 42
 y 41
 end
@@ -25513,10 +25517,6 @@ arch dread
 x 42
 y 41
 end
-arch dungeon_magic
-x 42
-y 41
-end
 arch light2
 x 42
 y 42
@@ -25546,14 +25546,14 @@ x 42
 y 43
 end
 arch ruby
+x 42
+y 43
+end
+arch dungeon_magic
 x 42
 y 43
 end
 arch medium_demon
-x 42
-y 43
-end
-arch dungeon_magic
 x 42
 y 43
 end
