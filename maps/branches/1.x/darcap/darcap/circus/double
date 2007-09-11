@@ -1,13 +1,13 @@
 arch map
-region darcapcircus
 name double
+region darcapcircus
+width 36
+height 32
 msg
 Creator: Cater&Wade&Fouras
 Email: john_cater@yahoo.com
 Date: Fri Jan 29 14:46:23 1999
 endmsg
-x 36
-y 32
 end
 arch pstone_1
 end
@@ -1273,6 +1273,14 @@ arch pstone_1
 x 7
 y 23
 end
+arch big_wiz
+x 7
+y 23
+carrying 120000
+arch goldcoin
+nrof 8000
+end
+end
 arch pstone_1
 x 7
 y 24
@@ -2502,6 +2510,15 @@ arch pstone_1
 x 14
 y 26
 end
+arch gaelotroll
+x 14
+y 26
+carrying 60000
+randomitems none
+arch goldcoin
+nrof 4000
+end
+end
 arch pstone_1
 x 14
 y 27
@@ -2711,6 +2728,14 @@ arch pstone_1
 x 16
 y 7
 end
+arch Greater_Demon
+x 16
+y 7
+carrying 480000
+arch goldcoin
+nrof 32000
+end
+end
 arch pstone_1
 x 16
 y 8
@@ -2755,6 +2780,14 @@ end
 arch pstone_1
 x 16
 y 17
+end
+arch Balrog
+x 16
+y 17
+carrying 240000
+arch goldcoin
+nrof 16000
+end
 end
 arch pstone_1
 x 16
@@ -4608,6 +4641,14 @@ arch pstone_1
 x 27
 y 14
 end
+arch giant
+x 27
+y 14
+carrying 3750
+arch goldcoin
+nrof 250
+end
+end
 arch pstone_1
 x 27
 y 15
@@ -4664,6 +4705,14 @@ end
 arch pstone_1
 x 27
 y 26
+end
+arch baslic
+x 27
+y 26
+carrying 15000
+arch goldcoin
+nrof 1000
+end
 end
 arch pstone_1
 x 27
@@ -6123,53 +6172,4 @@ end
 arch tree4
 x 35
 y 31
-end
-arch big_wiz
-x 7
-y 23
-carrying 120000
-arch goldcoin
-nrof 8000
-end
-end
-arch gaelotroll
-x 14
-y 26
-carrying 60000
-randomitems none
-arch goldcoin
-nrof 4000
-end
-end
-arch Greater_Demon
-x 16
-y 7
-carrying 480000
-arch goldcoin
-nrof 32000
-end
-end
-arch Balrog
-x 16
-y 17
-carrying 240000
-arch goldcoin
-nrof 16000
-end
-end
-arch giant
-x 27
-y 14
-carrying 3750
-arch goldcoin
-nrof 250
-end
-end
-arch baslic
-x 27
-y 26
-carrying 15000
-arch goldcoin
-nrof 1000
-end
 end

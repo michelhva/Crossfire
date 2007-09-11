@@ -1,14 +1,14 @@
 arch map
-region stoneville
 name intwell
+region stoneville
+width 30
+height 30
+enter_y 21
 msg
 Creator: Viola Krings
 Email: 
 Date: Tue Jun 17 21:21:45 METDST 1997
 endmsg
-sp 21
-x 30
-y 30
 end
 arch dirtfloor
 end
@@ -534,6 +534,10 @@ arch dirtfloor
 x 2
 y 27
 end
+arch giant
+x 2
+y 27
+end
 arch dirtfloor
 x 2
 y 28
@@ -982,6 +986,10 @@ arch dirtfloor
 x 5
 y 27
 end
+arch giant
+x 5
+y 27
+end
 arch dirtfloor
 x 5
 y 28
@@ -1109,6 +1117,10 @@ x 6
 y 20
 end
 arch dirtfloor
+x 6
+y 21
+end
+arch giant
 x 6
 y 21
 end
@@ -1250,11 +1262,19 @@ arch dirtfloor
 x 7
 y 16
 end
+arch cobra
+x 7
+y 16
+end
 arch dirtfloor
 x 7
 y 17
 end
 arch dirtfloor
+x 7
+y 18
+end
+arch cobra
 x 7
 y 18
 end
@@ -1299,6 +1319,10 @@ x 7
 y 26
 end
 arch dirtfloor
+x 7
+y 27
+end
+arch giant
 x 7
 y 27
 end
@@ -1442,6 +1466,10 @@ x 8
 y 20
 end
 arch dirtfloor
+x 8
+y 21
+end
+arch giant
 x 8
 y 21
 end
@@ -2080,11 +2108,21 @@ arch dirtfloor
 x 12
 y 3
 end
+arch dragon
+name guardian wyvern
+x 12
+y 3
+end
 arch dirtfloor
 x 12
 y 4
 end
 arch dirtfloor
+x 12
+y 5
+end
+arch dragon
+name guardian wyvern
 x 12
 y 5
 end
@@ -2235,6 +2273,11 @@ arch dirtfloor
 x 13
 y 1
 end
+arch dragon
+name guardian wyvern
+x 13
+y 1
+end
 arch dirtfloor
 x 13
 y 2
@@ -2244,6 +2287,11 @@ x 13
 y 3
 end
 arch dirtfloor
+x 13
+y 4
+end
+arch dragon
+name guardian wyvern
 x 13
 y 4
 end
@@ -2795,6 +2843,10 @@ arch dirtfloor
 x 16
 y 3
 end
+arch chinese_dragon
+x 16
+y 3
+end
 arch dirtfloor
 x 16
 y 4
@@ -3051,11 +3103,19 @@ arch dirtfloor
 x 17
 y 16
 end
+arch cobra
+x 17
+y 16
+end
 arch dirtfloor
 x 17
 y 17
 end
 arch dirtfloor
+x 17
+y 18
+end
+arch cobra
 x 17
 y 18
 end
@@ -3471,6 +3531,10 @@ arch dirtfloor
 x 19
 y 23
 end
+arch troll
+x 19
+y 23
+end
 arch dirtfloor
 x 19
 y 24
@@ -3484,6 +3548,10 @@ x 19
 y 25
 end
 arch dirtfloor
+x 19
+y 26
+end
+arch troll
 x 19
 y 26
 end
@@ -4836,6 +4904,10 @@ arch dirtfloor
 x 26
 y 22
 end
+arch big_dragon
+x 26
+y 22
+end
 arch dirtfloor
 x 26
 y 23
@@ -4845,6 +4917,10 @@ x 26
 y 24
 end
 arch dirtfloor
+x 26
+y 25
+end
+arch big_dragon
 x 26
 y 25
 end
@@ -5478,80 +5554,4 @@ end
 arch wwall_2_2_4
 x 29
 y 29
-end
-arch giant
-x 2
-y 27
-end
-arch giant
-x 5
-y 27
-end
-arch giant
-x 6
-y 21
-end
-arch cobra
-x 7
-y 16
-end
-arch cobra
-x 7
-y 18
-end
-arch giant
-x 7
-y 27
-end
-arch giant
-x 8
-y 21
-end
-arch dragon
-name guardian wyvern
-x 12
-y 3
-end
-arch dragon
-name guardian wyvern
-x 12
-y 5
-end
-arch dragon
-name guardian wyvern
-x 13
-y 1
-end
-arch dragon
-name guardian wyvern
-x 13
-y 4
-end
-arch chinese_dragon
-x 16
-y 3
-end
-arch cobra
-x 17
-y 16
-end
-arch cobra
-x 17
-y 18
-end
-arch troll
-x 19
-y 23
-end
-arch troll
-x 19
-y 26
-end
-arch big_dragon
-x 26
-y 22
-end
-arch big_dragon
-x 26
-y 25
 end

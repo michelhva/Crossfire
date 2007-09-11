@@ -1,9 +1,6 @@
 arch map
-region darcap
 name <untitled>
-msg
-
-endmsg
+region darcap
 width 60
 height 25
 end
@@ -527,6 +524,10 @@ x 5
 y 5
 end
 arch small_stones
+x 5
+y 6
+end
+arch giant
 x 5
 y 6
 end
@@ -2389,6 +2390,10 @@ arch random_treasure
 x 21
 y 10
 end
+arch dragon
+x 21
+y 10
+end
 arch small_stones
 x 21
 y 11
@@ -3285,6 +3290,10 @@ arch chest
 x 26
 y 11
 end
+arch giant
+x 26
+y 11
+end
 arch small_stones
 x 26
 y 12
@@ -3914,6 +3923,10 @@ arch small_stones
 x 31
 y 8
 end
+arch dragon
+x 31
+y 8
+end
 arch bwall_0
 x 31
 y 9
@@ -4003,9 +4016,9 @@ y 3
 end
 arch gnome
 name Dwarf
-speed_left -1.300000
 x 32
 y 3
+speed_left -1.300000
 end
 arch medium_stones
 x 32
@@ -4917,10 +4930,10 @@ x 39
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 2
 x 39
 y 20
+speed 0.500000
+connected 2
 end
 arch bwall_0
 x 39
@@ -5030,9 +5043,9 @@ x 40
 y 20
 end
 arch button_small
-connected 2
 x 40
 y 20
+connected 2
 end
 arch small_stones
 x 40
@@ -5351,11 +5364,11 @@ x 43
 y 20
 end
 arch block_door_open
+x 43
+y 20
 speed 0.500000
 value 1
 connected 2
-x 43
-y 20
 end
 arch bwall_2_2_2
 x 43
@@ -5453,10 +5466,10 @@ x 44
 y 19
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 44
 y 20
+speed 0.500000
+connected 1
 end
 arch bwall_2_2_3
 x 44
@@ -5558,9 +5571,9 @@ x 45
 y 19
 end
 arch button_small
-connected 1
 x 45
 y 20
+connected 1
 end
 arch small_stones
 x 45
@@ -6553,9 +6566,9 @@ x 55
 y 7
 end
 arch random_treasure
-nrof 6
 x 55
 y 7
+nrof 6
 end
 arch bwall_0
 x 55
@@ -7028,20 +7041,4 @@ end
 arch bwall_2_2_4
 x 59
 y 24
-end
-arch giant
-x 5
-y 6
-end
-arch dragon
-x 21
-y 10
-end
-arch giant
-x 26
-y 11
-end
-arch dragon
-x 31
-y 8
 end

@@ -1,14 +1,14 @@
 arch map
-region darcap
 name tower4
+difficulty 7
+region darcap
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 22 13:23:26 1998
 endmsg
-x 32
-y 32
-level 7
 end
 arch bwall_2_2_2
 end

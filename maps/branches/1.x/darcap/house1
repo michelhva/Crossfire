@@ -1,14 +1,14 @@
 arch map
-region darcap
 name tollhouse93
+region darcap
+width 20
+height 20
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 19 04:00:23 1994
 endmsg
-width 20
-height 20
-enter_y 1
 end
 arch woodfloor2
 end

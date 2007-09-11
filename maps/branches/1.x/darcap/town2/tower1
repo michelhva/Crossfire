@@ -1,15 +1,15 @@
 arch map
-region darcap
 name tower1
+region darcap
+width 16
+height 16
+enter_x 13
+enter_y 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Dec 21 18:01:07 1998
 endmsg
-width 16
-height 16
-enter_x 13
-enter_y 6
 end
 arch grass
 end
@@ -1044,23 +1044,23 @@ msg
 @match De Hum Ra Blah
 Click.
 endmsg
-connected 1
 x 11
 y 6
+connected 1
 end
 arch igate_closed_2
-connected 1
 x 11
 y 6
+connected 1
 end
 arch cobblestones
 x 11
 y 7
 end
 arch igate_closed_2
-connected 1
 x 11
 y 7
+connected 1
 end
 arch cobblestones2
 x 11
@@ -1319,24 +1319,24 @@ x 15
 y 5
 end
 arch exit
-invisible 1
 slaying /world/world_116_104
 hp 13
 sp 23
 x 15
 y 6
+invisible 1
 end
 arch cobblestones
 x 15
 y 6
 end
 arch exit
-invisible 1
 slaying /world/world_116_104
 hp 13
 sp 23
 x 15
 y 7
+invisible 1
 end
 arch cobblestones
 x 15

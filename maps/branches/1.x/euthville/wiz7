@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 20
+height 18
 msg
 Creator: 
 Email: 
 Date: Tue Nov  9 17:23:48 1993
 endmsg
-x 20
-y 18
 end
 arch dungeon_floor
 end
@@ -1330,6 +1331,10 @@ arch dungeon_floor
 x 15
 y 12
 end
+arch big_dragon
+x 15
+y 12
+end
 arch dungeon_floor
 x 15
 y 13
@@ -1821,8 +1826,4 @@ end
 arch awall_2_2_4
 x 19
 y 17
-end
-arch big_dragon
-x 15
-y 12
 end

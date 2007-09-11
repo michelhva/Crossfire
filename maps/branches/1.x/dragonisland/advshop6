@@ -1,14 +1,16 @@
 arch map
-region stoneville
 name advshop5
+region stoneville
+shopitems inorganic:30;amulet:30;scroll:30;potion:10;ring:10;book:10;spellbook:10;*:-25
+shopmin 3000
+shopmax 40000
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jul 23 15:02:59 1997
 endmsg
-shopitems inorganic:30;amulet:30;scroll:30;potion:10;ring:10;book:10;spellbook:10;*:-25
-shopmax 40000
-shopmin 3000
 end
 arch woodfloor
 end

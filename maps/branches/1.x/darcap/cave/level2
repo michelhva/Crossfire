@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region darcap
-x 30
-y 30
+width 30
+height 30
 end
 arch bwall_2_2_2
 end
@@ -4008,6 +4009,11 @@ arch medium_stones
 x 23
 y 14
 end
+arch dragon
+name Meet Blaster
+x 23
+y 14
+end
 arch medium_stones
 x 23
 y 15
@@ -4996,9 +5002,4 @@ end
 arch bwall_2_2_4
 x 29
 y 29
-end
-arch dragon
-name Meet Blaster
-x 23
-y 14
 end

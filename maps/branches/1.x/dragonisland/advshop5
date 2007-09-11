@@ -1,13 +1,16 @@
 arch map
+name <unnamed>
 region stoneville
+shopitems book:61;spellbook:71;amulet:31;ring:41;*:-49
+shopmin 2500
+shopmax 35000
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jul 23 15:02:59 1997
 endmsg
-shopitems book:61;spellbook:71;amulet:31;ring:41;*:-49
-shopmax 35000
-shopmin 2500
 end
 arch woodfloor
 end
@@ -460,6 +463,11 @@ arch woodfloor
 x 5
 y 3
 end
+arch big_wiz
+name Narwel
+x 5
+y 3
+end
 arch woodfloor
 x 5
 y 4
@@ -760,6 +768,11 @@ x 9
 y 2
 end
 arch woodfloor
+x 9
+y 3
+end
+arch big_wiz
+name Garwel
 x 9
 y 3
 end
@@ -1337,14 +1350,4 @@ end
 arch wall_2_2_4
 x 15
 y 15
-end
-arch big_wiz
-name Narwel
-x 5
-y 3
-end
-arch big_wiz
-name Garwel
-x 9
-y 3
 end

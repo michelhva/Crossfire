@@ -1,14 +1,14 @@
 arch map
 name ground
 region darcap
-msg
-Creator: CF Java Map Editor
-Date:    1/10/2002
-endmsg
 width 25
 height 25
 enter_x 12
 enter_y 23
+msg
+Creator: CF Java Map Editor
+Date:    1/10/2002
+endmsg
 end
 arch grass
 end
@@ -965,153 +965,153 @@ x 5
 y 1
 end
 arch woodfloor
-unique 1
 x 5
 y 2
+unique 1
 end
 arch flagstone_2_2_2
 x 5
 y 2
 end
 arch woodfloor
+x 5
+y 3
 unique 1
+end
+arch flagstone_2_1_1
 x 5
 y 3
 end
-arch flagstone_2_1_1
-x 5
-y 3
-end
 arch woodfloor
-unique 1
 x 5
 y 4
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 4
 end
 arch woodfloor
-unique 1
 x 5
 y 5
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 5
 end
 arch woodfloor
-unique 1
 x 5
 y 6
+unique 1
 end
 arch flagstone_3_2
 x 5
 y 6
 end
 arch woodfloor
+x 5
+y 7
 unique 1
+end
+arch flagstone_2_1_1
 x 5
 y 7
 end
-arch flagstone_2_1_1
-x 5
-y 7
-end
 arch woodfloor
-unique 1
 x 5
 y 8
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 8
 end
 arch woodfloor
+x 5
+y 9
 unique 1
+end
+arch flagstone_2_1_1
 x 5
 y 9
 end
-arch flagstone_2_1_1
-x 5
-y 9
-end
 arch woodfloor
-unique 1
 x 5
 y 10
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 10
 end
 arch woodfloor
-unique 1
 x 5
 y 11
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 11
 end
 arch woodfloor
-unique 1
 x 5
 y 12
+unique 1
 end
 arch flagstone_3_2
 x 5
 y 12
 end
 arch woodfloor
+x 5
+y 13
 unique 1
+end
+arch flagstone_2_1_1
 x 5
 y 13
 end
-arch flagstone_2_1_1
-x 5
-y 13
-end
 arch woodfloor
-unique 1
 x 5
 y 14
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 14
 end
 arch woodfloor
+x 5
+y 15
 unique 1
+end
+arch flagstone_2_1_1
 x 5
 y 15
 end
-arch flagstone_2_1_1
-x 5
-y 15
-end
 arch woodfloor
-unique 1
 x 5
 y 16
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 16
 end
 arch woodfloor
-unique 1
 x 5
 y 17
+unique 1
 end
 arch flagstone_2_1_1
 x 5
 y 17
 end
 arch woodfloor
-unique 1
 x 5
 y 18
+unique 1
 end
 arch flagstone_2_2_1
 x 5
@@ -1180,114 +1180,114 @@ x 6
 y 1
 end
 arch woodfloor
-unique 1
 x 6
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 6
 y 2
 end
 arch woodfloor
+x 6
+y 3
 unique 1
+end
+arch dungeon_magic
 x 6
 y 3
 end
-arch dungeon_magic
-x 6
-y 3
-end
 arch woodfloor
-unique 1
 x 6
 y 4
+unique 1
 end
 arch dungeon_magic
 x 6
 y 4
 end
 arch woodfloor
-unique 1
 x 6
 y 5
+unique 1
 end
 arch dungeon_magic
 x 6
 y 5
 end
 arch woodfloor
-unique 1
 x 6
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 6
 y 6
 end
 arch woodfloor
-unique 1
 x 6
 y 7
+unique 1
 end
 arch bed_save
 x 6
 y 7
 end
 arch woodfloor
-unique 1
 x 6
 y 8
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 9
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 6
 y 11
+unique 1
 end
 arch bed_save
 x 6
 y 11
 end
 arch woodfloor
-unique 1
 x 6
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 6
 y 12
 end
 arch woodfloor
-unique 1
 x 6
 y 13
+unique 1
 end
 arch dungeon_magic
 x 6
 y 13
 end
 arch woodfloor
-unique 1
 x 6
 y 14
+unique 1
 end
 arch dungeon_magic
 x 6
 y 14
 end
 arch woodfloor
-unique 1
 x 6
 y 15
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -1297,28 +1297,28 @@ arch goldfloor
 name drop 3 speed boots for a portal to Darcap
 slaying speedboots
 food 3
-unique 1
+x 6
+y 16
 connected 25
-x 6
-y 16
+unique 1
 end
 arch dungeon_magic
 x 6
 y 16
 end
 arch woodfloor
-unique 1
 x 6
 y 17
+unique 1
 end
 arch dungeon_magic
 x 6
 y 17
 end
 arch woodfloor
-unique 1
 x 6
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 6
@@ -1387,91 +1387,91 @@ x 7
 y 1
 end
 arch woodfloor
-unique 1
 x 7
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 7
 y 2
 end
 arch woodfloor
+x 7
+y 3
 unique 1
+end
+arch dungeon_magic
 x 7
 y 3
 end
-arch dungeon_magic
-x 7
-y 3
-end
 arch woodfloor
-unique 1
 x 7
 y 4
+unique 1
 end
 arch dungeon_magic
 x 7
 y 4
 end
 arch woodfloor
-unique 1
 x 7
 y 5
+unique 1
 end
 arch dungeon_magic
 x 7
 y 5
 end
 arch woodfloor
-unique 1
 x 7
 y 6
+unique 1
 end
 arch flagstone_1_3
 x 7
 y 6
 end
 arch woodfloor
-unique 1
 x 7
 y 7
+unique 1
 end
 arch bed_save
 x 7
 y 7
 end
 arch woodfloor
-unique 1
 x 7
 y 8
+unique 1
 end
 arch goldfloor
 name drop a Firestar named Fearless for the Big Chest
 slaying firestar
 food 1
-connected 29
-unique 1
 x 7
 y 9
+connected 29
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 7
 y 11
+unique 1
 end
 arch bed_save
 x 7
 y 11
 end
 arch woodfloor
-unique 1
 x 7
 y 12
+unique 1
 end
 arch flagstone_1_3
 x 7
@@ -1481,10 +1481,10 @@ arch goldfloor
 name drop an Unholy Bow for a portal to Ancient Pupland
 slaying magic_bow
 food 1
-connected 28
-unique 1
 x 7
 y 13
+connected 28
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1498,10 +1498,10 @@ arch goldfloor
 name drop a shootingstar for a portal to Nurnberg
 slaying shootingstar
 food 1
-connected 27
-unique 1
 x 7
 y 14
+connected 27
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1515,10 +1515,10 @@ arch goldfloor
 name drop 5 tissue paper for a portal to the Pupland Terminal
 slaying bolt_silk
 food 5
-connected 26
-unique 1
 x 7
 y 15
+connected 26
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1528,28 +1528,28 @@ arch goldfloor
 name drop 2 dragon mail for a portal to Navar
 slaying dragon_mail
 food 2
-unique 1
+x 7
+y 16
 connected 24
-x 7
-y 16
+unique 1
 end
 arch dungeon_magic
 x 7
 y 16
 end
 arch woodfloor
-unique 1
 x 7
 y 17
+unique 1
 end
 arch dungeon_magic
 x 7
 y 17
 end
 arch woodfloor
-unique 1
 x 7
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 7
@@ -1618,9 +1618,9 @@ x 8
 y 1
 end
 arch woodfloor
-unique 1
 x 8
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 8
@@ -1628,154 +1628,154 @@ y 2
 end
 arch creator
 other_arch altar_devourers
-connected 10
 x 8
 y 3
+connected 10
 end
 arch goldfloor
 name drop 3 Frostbrands for an altar to Devourers
 slaying frostbrand
 food 3
-connected 10
-unique 1
 x 8
 y 3
+connected 10
+unique 1
 end
 arch magic_banned
 x 8
 y 3
 end
 arch woodfloor
-unique 1
 x 8
 y 4
+unique 1
 end
 arch dungeon_magic
 x 8
 y 4
 end
 arch pedestal_trigger
-connected 60
 x 8
 y 5
+connected 60
 end
 arch woodfloor
-unique 1
 x 8
 y 5
+unique 1
 end
 arch dungeon_magic
 x 8
 y 5
 end
 arch pedestal_trigger
-connected 60
 x 8
 y 6
+connected 60
 end
 arch woodfloor
-unique 1
 x 8
 y 6
+unique 1
 end
 arch grate_closed_1
-connected 60
 x 8
 y 6
+connected 60
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch pedestal_trigger
-connected 60
 x 8
 y 7
+connected 60
 end
 arch woodfloor
-unique 1
 x 8
 y 7
+unique 1
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch woodfloor
-unique 1
 x 8
 y 8
+unique 1
 end
 arch woodfloor
-unique 1
 x 8
 y 9
+unique 1
 end
 arch woodfloor
-unique 1
 x 8
 y 10
+unique 1
 end
 arch pedestal_trigger
-connected 62
 x 8
 y 11
+connected 62
 end
 arch woodfloor
-unique 1
 x 8
 y 11
+unique 1
 end
 arch dungeon_magic
 x 8
 y 11
 end
 arch pedestal_trigger
-connected 62
 x 8
 y 12
+connected 62
 end
 arch woodfloor
-unique 1
 x 8
 y 12
+unique 1
 end
 arch grate_closed_1
-connected 62
 x 8
 y 12
+connected 62
 end
 arch dungeon_magic
 x 8
 y 12
 end
 arch pedestal_trigger
+x 8
+y 13
 connected 62
-x 8
-y 13
 end
 arch woodfloor
-unique 1
 x 8
 y 13
+unique 1
 end
 arch dungeon_magic
 x 8
 y 13
 end
 arch woodfloor
-unique 1
 x 8
 y 14
+unique 1
 end
 arch dungeon_magic
 x 8
 y 14
 end
 arch woodfloor
-unique 1
 x 8
 y 15
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -1785,28 +1785,28 @@ arch goldfloor
 name drop 5000 pearls for a portal to Santo Dominion
 slaying pearl
 food 5000
+x 8
+y 16
 connected 23
 unique 1
-x 8
-y 16
 end
 arch dungeon_magic
 x 8
 y 16
 end
 arch woodfloor
-unique 1
 x 8
 y 17
+unique 1
 end
 arch dungeon_magic
 x 8
 y 17
 end
 arch woodfloor
-unique 1
 x 8
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 8
@@ -1875,9 +1875,9 @@ x 9
 y 1
 end
 arch woodfloor
-unique 1
 x 9
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 9
@@ -1885,114 +1885,114 @@ y 2
 end
 arch creator
 other_arch altar_ruggilli
-connected 11
 x 9
 y 3
+connected 11
 end
 arch goldfloor
 name drop 3 Firebrands for an altar of Ruggilli
 slaying firebrand
 food 3
-connected 11
-unique 1
 x 9
 y 3
+connected 11
+unique 1
 end
 arch magic_banned
 x 9
 y 3
 end
 arch woodfloor
-unique 1
 x 9
 y 4
+unique 1
 end
 arch dungeon_magic
 x 9
 y 4
 end
 arch woodfloor
-unique 1
 x 9
 y 5
+unique 1
 end
 arch dungeon_magic
 x 9
 y 5
 end
 arch woodfloor
-unique 1
 x 9
 y 6
+unique 1
 end
 arch flagstone_1_4
 x 9
 y 6
 end
 arch woodfloor
-unique 1
 x 9
 y 7
+unique 1
 end
 arch bed_save
 x 9
 y 7
 end
 arch woodfloor
-unique 1
 x 9
 y 8
+unique 1
 end
 arch woodfloor
-unique 1
 x 9
 y 9
+unique 1
 end
 arch woodfloor
-unique 1
 x 9
 y 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 9
 y 11
+unique 1
 end
 arch bed_save
 x 9
 y 11
 end
 arch woodfloor
-unique 1
 x 9
 y 12
+unique 1
 end
 arch flagstone_1_4
 x 9
 y 12
 end
 arch woodfloor
-unique 1
 x 9
 y 13
+unique 1
 end
 arch dungeon_magic
 x 9
 y 13
 end
 arch woodfloor
-unique 1
 x 9
 y 14
+unique 1
 end
 arch dungeon_magic
 x 9
 y 14
 end
 arch woodfloor
-unique 1
 x 9
 y 15
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -2002,28 +2002,28 @@ arch goldfloor
 name drop 1000 diamonds for a portal to Brest
 slaying gem
 food 1000
+x 9
+y 16
 connected 22
 unique 1
-x 9
-y 16
 end
 arch dungeon_magic
 x 9
 y 16
 end
 arch woodfloor
-unique 1
 x 9
 y 17
+unique 1
 end
 arch dungeon_magic
 x 9
 y 17
 end
 arch woodfloor
-unique 1
 x 9
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 9
@@ -2092,9 +2092,9 @@ x 10
 y 1
 end
 arch woodfloor
-unique 1
 x 10
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 10
@@ -2102,114 +2102,114 @@ y 2
 end
 arch creator
 other_arch altar_valriel
-connected 12
 x 10
 y 3
+connected 12
 end
 arch goldfloor
 name drop 3 Demonbanes for an altar to Valriel
 slaying demonbane
 food 3
-connected 12
-unique 1
 x 10
 y 3
+connected 12
+unique 1
 end
 arch magic_banned
 x 10
 y 3
 end
 arch woodfloor
-unique 1
 x 10
 y 4
+unique 1
 end
 arch dungeon_magic
 x 10
 y 4
 end
 arch woodfloor
-unique 1
 x 10
 y 5
+unique 1
 end
 arch dungeon_magic
 x 10
 y 5
 end
 arch woodfloor
-unique 1
 x 10
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 10
 y 6
 end
 arch woodfloor
-unique 1
 x 10
 y 7
+unique 1
 end
 arch bed_save
 x 10
 y 7
 end
 arch woodfloor
-unique 1
 x 10
 y 8
+unique 1
 end
 arch woodfloor
-unique 1
 x 10
 y 9
+unique 1
 end
 arch woodfloor
-unique 1
 x 10
 y 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 10
 y 11
+unique 1
 end
 arch bed_save
 x 10
 y 11
 end
 arch woodfloor
-unique 1
 x 10
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 10
 y 12
 end
 arch woodfloor
-unique 1
 x 10
 y 13
+unique 1
 end
 arch dungeon_magic
 x 10
 y 13
 end
 arch woodfloor
-unique 1
 x 10
 y 14
+unique 1
 end
 arch dungeon_magic
 x 10
 y 14
 end
 arch woodfloor
-unique 1
 x 10
 y 15
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2219,28 +2219,28 @@ arch goldfloor
 name drop 5000 Platinum for a portal to Scorn
 slaying platinacoin
 food 5000
+x 10
+y 16
 connected 21
 unique 1
-x 10
-y 16
 end
 arch dungeon_magic
 x 10
 y 16
 end
 arch woodfloor
-unique 1
 x 10
 y 17
+unique 1
 end
 arch dungeon_magic
 x 10
 y 17
 end
 arch woodfloor
-unique 1
 x 10
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 10
@@ -2309,9 +2309,9 @@ x 11
 y 1
 end
 arch woodfloor
-unique 1
 x 11
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 11
@@ -2319,150 +2319,150 @@ y 2
 end
 arch creator
 other_arch altar_sorig
-connected 13
 x 11
 y 3
+connected 13
 end
 arch goldfloor
 name drop 3 mjoellnirs for an altar of Sorig
 slaying mjoellnir
 food 3
-connected 13
-unique 1
 x 11
 y 3
+connected 13
+unique 1
 end
 arch magic_banned
 x 11
 y 3
 end
 arch woodfloor
-unique 1
 x 11
 y 4
+unique 1
 end
 arch dungeon_magic
 x 11
 y 4
 end
 arch woodfloor
-unique 1
 x 11
 y 5
+unique 1
 end
 arch dungeon_magic
 x 11
 y 5
 end
 arch woodfloor
-unique 1
 x 11
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 11
 y 6
 end
 arch woodfloor
-unique 1
 x 11
 y 7
+unique 1
 end
 arch bed_save
 x 11
 y 7
 end
 arch woodfloor
-unique 1
 x 11
 y 8
+unique 1
 end
 arch pedestal_trigger
-connected 61
 x 11
 y 9
+connected 61
 end
 arch woodfloor
-unique 1
 x 11
 y 9
+unique 1
 end
 arch dungeon_magic
 x 11
 y 9
 end
 arch woodfloor
-unique 1
 x 11
 y 10
+unique 1
 end
 arch woodfloor
-unique 1
 x 11
 y 11
+unique 1
 end
 arch bed_save
 x 11
 y 11
 end
 arch woodfloor
-unique 1
 x 11
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 11
 y 12
 end
 arch woodfloor
+x 11
+y 13
 unique 1
+end
+arch dungeon_magic
 x 11
 y 13
 end
-arch dungeon_magic
-x 11
-y 13
-end
 arch woodfloor
-unique 1
 x 11
 y 14
+unique 1
 end
 arch dungeon_magic
 x 11
 y 14
 end
 arch woodfloor
+x 11
+y 15
 unique 1
+end
+arch dungeon_magic
 x 11
 y 15
 end
-arch dungeon_magic
-x 11
-y 15
-end
 arch woodfloor
-unique 1
 x 11
 y 16
+unique 1
 end
 arch dungeon_magic
 x 11
 y 16
 end
 arch woodfloor
-unique 1
 x 11
 y 17
+unique 1
 end
 arch dungeon_magic
 x 11
 y 17
 end
 arch woodfloor
-unique 1
 x 11
 y 18
+unique 1
 end
 arch flagstone_1_3
 x 11
@@ -2531,9 +2531,9 @@ x 12
 y 1
 end
 arch woodfloor
-unique 1
 x 12
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 12
@@ -2541,136 +2541,136 @@ y 2
 end
 arch creator
 other_arch altar_lythander
-connected 14
 x 12
 y 3
+connected 14
 end
 arch goldfloor
 name drop 3 Elven Bows for an altar of Lythander
 slaying elven_bow
 food 3
-connected 14
-unique 1
 x 12
 y 3
+connected 14
+unique 1
 end
 arch magic_banned
 x 12
 y 3
 end
 arch woodfloor
-unique 1
 x 12
 y 4
+unique 1
 end
 arch dungeon_magic
 x 12
 y 4
 end
 arch woodfloor
-unique 1
 x 12
 y 5
+unique 1
 end
 arch dungeon_magic
 x 12
 y 5
 end
 arch woodfloor
-unique 1
 x 12
 y 6
+unique 1
 end
 arch flagstone_3_3
 x 12
 y 6
 end
 arch woodfloor
-unique 1
 x 12
 y 7
+unique 1
 end
 arch flagstone_2_1_1
 x 12
 y 7
 end
 arch woodfloor
-unique 1
 x 12
 y 8
+unique 1
 end
 arch flagstone_1_2
 x 12
 y 8
 end
 arch pedestal_trigger
-connected 61
 x 12
 y 9
+connected 61
 end
 arch woodfloor
-unique 1
 x 12
 y 9
+unique 1
 end
 arch grate_closed_2
-connected 61
 x 12
 y 9
+connected 61
 end
 arch dungeon_magic
 x 12
 y 9
 end
 arch woodfloor
-unique 1
 x 12
 y 10
+unique 1
 end
 arch flagstone_1_1
 x 12
 y 10
 end
 arch woodfloor
-unique 1
 x 12
 y 11
+unique 1
 end
 arch flagstone_2_1_1
 x 12
 y 11
 end
 arch woodfloor
-unique 1
 x 12
 y 12
+unique 1
 end
 arch flagstone_3_1
 x 12
 y 12
 end
 arch woodfloor
-unique 1
 x 12
 y 13
+unique 1
 end
 arch dungeon_magic
 x 12
 y 13
 end
 arch woodfloor
-unique 1
 x 12
 y 14
+unique 1
 end
 arch dungeon_magic
 x 12
 y 14
 end
 arch woodfloor
-unique 1
 x 12
 y 15
+unique 1
 end
 arch book_clasp
 name Owners Guide
@@ -2689,44 +2689,44 @@ x 12
 y 15
 end
 arch woodfloor
-unique 1
 x 12
 y 16
+unique 1
 end
 arch dungeon_magic
 x 12
 y 16
 end
 arch woodfloor
-unique 1
 x 12
 y 17
+unique 1
 end
 arch check_inv
 slaying smoking_cauldron
+x 12
+y 17
 connected 51
-x 12
-y 17
 end
 arch dungeon_magic
 x 12
 y 17
 end
 arch woodfloor
-unique 1
 x 12
 y 18
+unique 1
 end
 arch check_inv
 slaying smoking_cauldron
-no_pass 1
 x 12
 y 18
+no_pass 1
 end
 arch igate_closed_1
-connected 51
 x 12
 y 18
+connected 51
 end
 arch grass
 x 12
@@ -2734,9 +2734,9 @@ y 19
 end
 arch check_inv
 slaying smoking_cauldron
-connected 51
 x 12
 y 19
+connected 51
 end
 arch dungeon_magic
 x 12
@@ -2808,9 +2808,9 @@ x 13
 y 1
 end
 arch woodfloor
-unique 1
 x 13
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 13
@@ -2818,45 +2818,45 @@ y 2
 end
 arch creator
 other_arch altar_gaea
-connected 15
 x 13
 y 3
+connected 15
 end
 arch goldfloor
 name drop 5 healing potions for an altar of Gaea
 slaying potion_heal
 food 5
-connected 15
-unique 1
 x 13
 y 3
+connected 15
+unique 1
 end
 arch magic_banned
 x 13
 y 3
 end
 arch woodfloor
-unique 1
 x 13
 y 4
+unique 1
 end
 arch dungeon_magic
 x 13
 y 4
 end
 arch woodfloor
-unique 1
 x 13
 y 5
+unique 1
 end
 arch dungeon_magic
 x 13
 y 5
 end
 arch woodfloor
-unique 1
 x 13
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 13
@@ -2870,113 +2870,113 @@ arch altar
 name drop 500 diamonds for a new key.
 slaying gem
 food 500
-connected 20
 x 13
 y 7
+connected 20
 end
 arch dungeon_magic
 x 13
 y 7
 end
 arch woodfloor
-unique 1
 x 13
 y 8
+unique 1
 end
 arch dungeon_magic
 x 13
 y 8
 end
 arch pedestal_trigger
+x 13
+y 9
 connected 61
-x 13
-y 9
 end
 arch woodfloor
-unique 1
 x 13
 y 9
+unique 1
 end
 arch dungeon_magic
 x 13
 y 9
 end
 arch woodfloor
+x 13
+y 10
 unique 1
+end
+arch dungeon_magic
 x 13
 y 10
 end
-arch dungeon_magic
-x 13
-y 10
-end
 arch woodfloor
-unique 1
 x 13
 y 11
+unique 1
 end
 arch dungeon_magic
 x 13
 y 11
 end
 arch woodfloor
-unique 1
 x 13
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 13
 y 12
 end
 arch woodfloor
+x 13
+y 13
 unique 1
+end
+arch dungeon_magic
 x 13
 y 13
 end
-arch dungeon_magic
-x 13
-y 13
-end
 arch woodfloor
-unique 1
 x 13
 y 14
+unique 1
 end
 arch dungeon_magic
 x 13
 y 14
 end
 arch woodfloor
+x 13
+y 15
 unique 1
+end
+arch dungeon_magic
 x 13
 y 15
 end
-arch dungeon_magic
-x 13
-y 15
-end
 arch woodfloor
-unique 1
 x 13
 y 16
+unique 1
 end
 arch dungeon_magic
 x 13
 y 16
 end
 arch woodfloor
-unique 1
 x 13
 y 17
+unique 1
 end
 arch dungeon_magic
 x 13
 y 17
 end
 arch woodfloor
-unique 1
 x 13
 y 18
+unique 1
 end
 arch flagstone_1_4
 x 13
@@ -3045,9 +3045,9 @@ x 14
 y 1
 end
 arch woodfloor
-unique 1
 x 14
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 14
@@ -3055,153 +3055,153 @@ y 2
 end
 arch creator
 other_arch altar_mostrai
-connected 16
 x 14
 y 3
+connected 16
 end
 arch goldfloor
 name drop 3 Bonecrushers for an altar of Mostrai
 slaying bonecrusher
 food 3
-connected 16
-unique 1
 x 14
 y 3
+connected 16
+unique 1
 end
 arch magic_banned
 x 14
 y 3
 end
 arch woodfloor
-unique 1
 x 14
 y 4
+unique 1
 end
 arch dungeon_magic
 x 14
 y 4
 end
 arch woodfloor
-unique 1
 x 14
 y 5
+unique 1
 end
 arch dungeon_magic
 x 14
 y 5
 end
 arch woodfloor
-unique 1
 x 14
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 14
 y 6
 end
 arch woodfloor
+x 14
+y 7
 unique 1
+end
+arch dungeon_magic
 x 14
 y 7
 end
-arch dungeon_magic
-x 14
-y 7
-end
 arch woodfloor
-unique 1
 x 14
 y 8
+unique 1
 end
 arch dungeon_magic
 x 14
 y 8
 end
 arch woodfloor
+x 14
+y 9
 unique 1
+end
+arch dungeon_magic
 x 14
 y 9
 end
-arch dungeon_magic
-x 14
-y 9
-end
 arch woodfloor
-unique 1
 x 14
 y 10
+unique 1
 end
 arch dungeon_magic
 x 14
 y 10
 end
 arch woodfloor
-unique 1
 x 14
 y 11
+unique 1
 end
 arch dungeon_magic
 x 14
 y 11
 end
 arch woodfloor
-unique 1
 x 14
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 14
 y 12
 end
 arch woodfloor
+x 14
+y 13
 unique 1
+end
+arch dungeon_magic
 x 14
 y 13
 end
-arch dungeon_magic
-x 14
-y 13
-end
 arch woodfloor
-unique 1
 x 14
 y 14
+unique 1
 end
 arch dungeon_magic
 x 14
 y 14
 end
 arch woodfloor
+x 14
+y 15
 unique 1
+end
+arch dungeon_magic
 x 14
 y 15
 end
-arch dungeon_magic
-x 14
-y 15
-end
 arch woodfloor
-unique 1
 x 14
 y 16
+unique 1
 end
 arch dungeon_magic
 x 14
 y 16
 end
 arch woodfloor
-unique 1
 x 14
 y 17
+unique 1
 end
 arch dungeon_magic
 x 14
 y 17
 end
 arch woodfloor
-unique 1
 x 14
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 14
@@ -3270,9 +3270,9 @@ x 15
 y 1
 end
 arch woodfloor
-unique 1
 x 15
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 15
@@ -3280,152 +3280,152 @@ y 2
 end
 arch creator
 other_arch altar_gnarg
-connected 17
 x 15
 y 3
+connected 17
 end
 arch goldfloor
 name drop 10 pixie wings for an altar of Gnarg
 slaying pix_wing
-connected 17
-unique 1
 x 15
 y 3
+connected 17
+unique 1
 end
 arch magic_banned
 x 15
 y 3
 end
 arch woodfloor
-unique 1
 x 15
 y 4
+unique 1
 end
 arch dungeon_magic
 x 15
 y 4
 end
 arch woodfloor
-unique 1
 x 15
 y 5
+unique 1
 end
 arch dungeon_magic
 x 15
 y 5
 end
 arch woodfloor
-unique 1
 x 15
 y 6
+unique 1
 end
 arch flagstone_1_3
 x 15
 y 6
 end
 arch woodfloor
+x 15
+y 7
 unique 1
+end
+arch dungeon_magic
 x 15
 y 7
 end
-arch dungeon_magic
-x 15
-y 7
-end
 arch woodfloor
-unique 1
 x 15
 y 8
+unique 1
 end
 arch dungeon_magic
 x 15
 y 8
 end
 arch woodfloor
+x 15
+y 9
 unique 1
+end
+arch dungeon_magic
 x 15
 y 9
 end
-arch dungeon_magic
-x 15
-y 9
-end
 arch woodfloor
-unique 1
 x 15
 y 10
+unique 1
 end
 arch dungeon_magic
 x 15
 y 10
 end
 arch woodfloor
-unique 1
 x 15
 y 11
+unique 1
 end
 arch dungeon_magic
 x 15
 y 11
 end
 arch woodfloor
-unique 1
 x 15
 y 12
+unique 1
 end
 arch flagstone_1_3
 x 15
 y 12
 end
 arch woodfloor
+x 15
+y 13
 unique 1
+end
+arch dungeon_magic
 x 15
 y 13
 end
-arch dungeon_magic
-x 15
-y 13
-end
 arch woodfloor
-unique 1
 x 15
 y 14
+unique 1
 end
 arch dungeon_magic
 x 15
 y 14
 end
 arch woodfloor
+x 15
+y 15
 unique 1
+end
+arch dungeon_magic
 x 15
 y 15
 end
-arch dungeon_magic
-x 15
-y 15
-end
 arch woodfloor
-unique 1
 x 15
 y 16
+unique 1
 end
 arch dungeon_magic
 x 15
 y 16
 end
 arch woodfloor
-unique 1
 x 15
 y 17
+unique 1
 end
 arch dungeon_magic
 x 15
 y 17
 end
 arch woodfloor
-unique 1
 x 15
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 15
@@ -3494,9 +3494,9 @@ x 16
 y 1
 end
 arch woodfloor
-unique 1
 x 16
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 16
@@ -3504,117 +3504,117 @@ y 2
 end
 arch creator
 other_arch altar_gorokh
-connected 18
 x 16
 y 3
+connected 18
 end
 arch goldfloor
 name drop 5 potions of cold resistance for an altar of Gorokh
 slaying potion_fire
 food 5
-unique 1
-connected 18
 x 16
 y 3
+connected 18
+unique 1
 end
 arch magic_banned
 x 16
 y 3
 end
 arch woodfloor
+x 16
+y 4
 unique 1
+end
+arch dungeon_magic
 x 16
 y 4
 end
-arch dungeon_magic
-x 16
-y 4
-end
 arch woodfloor
-unique 1
 x 16
 y 5
+unique 1
 end
 arch dungeon_magic
 x 16
 y 5
 end
 arch woodfloor
+x 16
+y 6
 unique 1
+end
+arch dungeon_magic
 x 16
 y 6
 end
-arch dungeon_magic
-x 16
-y 6
-end
 arch woodfloor
-unique 1
 x 16
 y 7
+unique 1
 end
 arch dungeon_magic
 x 16
 y 7
 end
 arch woodfloor
+x 16
+y 8
 unique 1
+end
+arch dungeon_magic
 x 16
 y 8
 end
-arch dungeon_magic
-x 16
-y 8
-end
 arch woodfloor
-unique 1
 x 16
 y 9
+unique 1
 end
 arch dungeon_magic
 x 16
 y 9
 end
 arch woodfloor
+x 16
+y 10
 unique 1
+end
+arch dungeon_magic
 x 16
 y 10
 end
-arch dungeon_magic
-x 16
-y 10
-end
 arch woodfloor
-unique 1
 x 16
 y 11
+unique 1
 end
 arch dungeon_magic
 x 16
 y 11
 end
 arch woodfloor
-unique 1
 x 16
 y 12
+unique 1
 end
 arch dungeon_magic
 x 16
 y 12
 end
 arch woodfloor
-unique 1
 x 16
 y 13
+unique 1
 end
 arch dungeon_magic
 x 16
 y 13
 end
 arch woodfloor
-unique 1
 x 16
 y 14
+unique 1
 end
 arch dungeon_magic
 x 16
@@ -3622,50 +3622,50 @@ y 14
 end
 arch creator
 other_arch woodfloor
-connected 40
 x 16
 y 15
+connected 40
 end
 arch woodfloor
-unique 1
 x 16
 y 15
+unique 1
 end
 arch detector
 name You must capture a spectre and force it to build your upper floor
-face goldfloor.111
 slaying Spectre
+face goldfloor.111
+x 16
+y 15
 connected 40
 is_animated 0
-x 16
-y 15
 end
 arch dungeon_magic
 x 16
 y 15
 end
 arch woodfloor
-unique 1
 x 16
 y 16
+unique 1
 end
 arch dungeon_magic
 x 16
 y 16
 end
 arch woodfloor
-unique 1
 x 16
 y 17
+unique 1
 end
 arch dungeon_magic
 x 16
 y 17
 end
 arch woodfloor
-unique 1
 x 16
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 16
@@ -3734,153 +3734,153 @@ x 17
 y 1
 end
 arch woodfloor
-unique 1
 x 17
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 17
 y 2
 end
 arch woodfloor
+x 17
+y 3
 unique 1
+end
+arch dungeon_magic
 x 17
 y 3
 end
-arch dungeon_magic
-x 17
-y 3
-end
 arch woodfloor
-unique 1
 x 17
 y 4
+unique 1
 end
 arch dungeon_magic
 x 17
 y 4
 end
 arch woodfloor
-unique 1
 x 17
 y 5
+unique 1
 end
 arch dungeon_magic
 x 17
 y 5
 end
 arch woodfloor
-unique 1
 x 17
 y 6
+unique 1
 end
 arch flagstone_1_4
 x 17
 y 6
 end
 arch woodfloor
+x 17
+y 7
 unique 1
+end
+arch dungeon_magic
 x 17
 y 7
 end
-arch dungeon_magic
-x 17
-y 7
-end
 arch woodfloor
-unique 1
 x 17
 y 8
+unique 1
 end
 arch dungeon_magic
 x 17
 y 8
 end
 arch woodfloor
+x 17
+y 9
 unique 1
+end
+arch dungeon_magic
 x 17
 y 9
 end
-arch dungeon_magic
-x 17
-y 9
-end
 arch woodfloor
-unique 1
 x 17
 y 10
+unique 1
 end
 arch dungeon_magic
 x 17
 y 10
 end
 arch woodfloor
-unique 1
 x 17
 y 11
+unique 1
 end
 arch dungeon_magic
 x 17
 y 11
 end
 arch woodfloor
-unique 1
 x 17
 y 12
+unique 1
 end
 arch flagstone_1_4
 x 17
 y 12
 end
 arch woodfloor
+x 17
+y 13
 unique 1
+end
+arch dungeon_magic
 x 17
 y 13
 end
-arch dungeon_magic
-x 17
-y 13
-end
 arch woodfloor
-unique 1
 x 17
 y 14
+unique 1
 end
 arch dungeon_magic
 x 17
 y 14
 end
 arch woodfloor
+x 17
+y 15
 unique 1
+end
+arch dungeon_magic
 x 17
 y 15
 end
-arch dungeon_magic
-x 17
-y 15
-end
 arch woodfloor
-unique 1
 x 17
 y 16
+unique 1
 end
 arch dungeon_magic
 x 17
 y 16
 end
 arch woodfloor
-unique 1
 x 17
 y 17
+unique 1
 end
 arch dungeon_magic
 x 17
 y 17
 end
 arch woodfloor
-unique 1
 x 17
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 17
@@ -3949,54 +3949,54 @@ x 18
 y 1
 end
 arch woodfloor
-unique 1
 x 18
 y 2
+unique 1
 end
 arch flagstone_2_1_2
 x 18
 y 2
 end
 arch woodfloor
+x 18
+y 3
 unique 1
+end
+arch dungeon_magic
 x 18
 y 3
 end
-arch dungeon_magic
-x 18
-y 3
-end
 arch woodfloor
-unique 1
 x 18
 y 4
+unique 1
 end
 arch dungeon_magic
 x 18
 y 4
 end
 arch woodfloor
-unique 1
 x 18
 y 5
+unique 1
 end
 arch dungeon_magic
 x 18
 y 5
 end
 arch woodfloor
-unique 1
 x 18
 y 6
+unique 1
 end
 arch flagstone_2_1_2
 x 18
 y 6
 end
 arch woodfloor
-unique 1
 x 18
 y 7
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -4004,18 +4004,18 @@ y 7
 end
 arch creator
 other_arch silver_converter
-connected 30
 x 18
 y 8
+connected 30
 end
 arch goldfloor
 name drop 1000 platinum for a silver to gold converter
 slaying platinacoin
 food 1000
-unique 1
-connected 30
 x 18
 y 8
+connected 30
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -4023,18 +4023,18 @@ y 8
 end
 arch creator
 other_arch gold_converter
-connected 31
 x 18
 y 9
+connected 31
 end
 arch goldfloor
 name drop 1000 platinum for a gold to platinum converter
 slaying platinacoin
 food 1000
-connected 31
-unique 1
 x 18
 y 9
+connected 31
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -4042,90 +4042,90 @@ y 9
 end
 arch creator
 other_arch platinum_converter
-connected 32
 x 18
 y 10
+connected 32
 end
 arch goldfloor
 name drop 1000 platinum coins for a platinum to gold converter
 slaying platinacoin
 food 1000
+x 18
+y 10
 connected 32
 unique 1
-x 18
-y 10
 end
 arch dungeon_magic
 x 18
 y 10
 end
 arch woodfloor
-unique 1
 x 18
 y 11
+unique 1
 end
 arch dungeon_magic
 x 18
 y 11
 end
 arch woodfloor
-unique 1
 x 18
 y 12
+unique 1
 end
 arch flagstone_2_1_2
 x 18
 y 12
 end
 arch woodfloor
+x 18
+y 13
 unique 1
+end
+arch dungeon_magic
 x 18
 y 13
 end
-arch dungeon_magic
-x 18
-y 13
-end
 arch woodfloor
-unique 1
 x 18
 y 14
+unique 1
 end
 arch dungeon_magic
 x 18
 y 14
 end
 arch woodfloor
+x 18
+y 15
 unique 1
+end
+arch dungeon_magic
 x 18
 y 15
 end
-arch dungeon_magic
-x 18
-y 15
-end
 arch woodfloor
-unique 1
 x 18
 y 16
+unique 1
 end
 arch dungeon_magic
 x 18
 y 16
 end
 arch woodfloor
-unique 1
 x 18
 y 17
+unique 1
 end
 arch dungeon_magic
 x 18
 y 17
 end
 arch woodfloor
-unique 1
 x 18
 y 18
+unique 1
 end
 arch flagstone_2_1_2
 x 18
@@ -4194,153 +4194,153 @@ x 19
 y 1
 end
 arch woodfloor
-unique 1
 x 19
 y 2
+unique 1
 end
 arch flagstone_2_2_3
 x 19
 y 2
 end
 arch woodfloor
+x 19
+y 3
 unique 1
+end
+arch flagstone_2_1_1
 x 19
 y 3
 end
-arch flagstone_2_1_1
-x 19
-y 3
-end
 arch woodfloor
-unique 1
 x 19
 y 4
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 4
 end
 arch woodfloor
-unique 1
 x 19
 y 5
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 5
 end
 arch woodfloor
-unique 1
 x 19
 y 6
+unique 1
 end
 arch flagstone_3_4
 x 19
 y 6
 end
 arch woodfloor
+x 19
+y 7
 unique 1
+end
+arch flagstone_2_1_1
 x 19
 y 7
 end
-arch flagstone_2_1_1
-x 19
-y 7
-end
 arch woodfloor
-unique 1
 x 19
 y 8
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 8
 end
 arch woodfloor
+x 19
+y 9
 unique 1
+end
+arch flagstone_2_1_1
 x 19
 y 9
 end
-arch flagstone_2_1_1
-x 19
-y 9
-end
 arch woodfloor
-unique 1
 x 19
 y 10
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 10
 end
 arch woodfloor
-unique 1
 x 19
 y 11
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 11
 end
 arch woodfloor
-unique 1
 x 19
 y 12
+unique 1
 end
 arch flagstone_3_4
 x 19
 y 12
 end
 arch woodfloor
+x 19
+y 13
 unique 1
+end
+arch flagstone_2_1_1
 x 19
 y 13
 end
-arch flagstone_2_1_1
-x 19
-y 13
-end
 arch woodfloor
-unique 1
 x 19
 y 14
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 14
 end
 arch woodfloor
+x 19
+y 15
 unique 1
+end
+arch flagstone_2_1_1
 x 19
 y 15
 end
-arch flagstone_2_1_1
-x 19
-y 15
-end
 arch woodfloor
-unique 1
 x 19
 y 16
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 16
 end
 arch woodfloor
-unique 1
 x 19
 y 17
+unique 1
 end
 arch flagstone_2_1_1
 x 19
 y 17
 end
 arch woodfloor
-unique 1
 x 19
 y 18
+unique 1
 end
 arch flagstone_2_2_4
 x 19
@@ -5091,17 +5091,17 @@ arch grass
 x 24
 end
 arch teleporter
-speed 0
-connected 20
 hp 14
 sp 7
 x 24
+speed 0
+connected 20
 end
 arch key2
 name Smoking Cauldron Key
 slaying smoking_cauldron
-no_steal 1
 x 24
+no_steal 1
 end
 arch grass
 x 24
@@ -5109,12 +5109,12 @@ y 1
 end
 arch teleporter
 name scorn portal
-connected 21
 hp 10
 sp 17
-speed 0
 x 24
 y 1
+speed 0
+connected 21
 end
 arch perm_magic_portal
 name Scorn
@@ -5130,12 +5130,12 @@ y 2
 end
 arch teleporter
 name brest portal
-speed 0
-connected 22
 hp 9
 sp 17
 x 24
 y 2
+speed 0
+connected 22
 end
 arch perm_magic_portal
 name Brest
@@ -5150,12 +5150,12 @@ x 24
 y 3
 end
 arch teleporter
-speed 0
-connected 23
 hp 8
 sp 17
 x 24
 y 3
+speed 0
+connected 23
 end
 arch perm_magic_portal
 name Santo Dominion
@@ -5171,12 +5171,12 @@ y 4
 end
 arch teleporter
 name navar portal
-speed 0
-connected 24
 hp 7
 sp 17
 x 24
 y 4
+speed 0
+connected 24
 end
 arch perm_magic_portal
 name Navar
@@ -5192,12 +5192,12 @@ y 5
 end
 arch teleporter
 name darcap portal
-speed 0
-connected 25
 hp 6
 sp 17
 x 24
 y 5
+speed 0
+connected 25
 end
 arch perm_magic_portal
 name Darcap
@@ -5212,12 +5212,12 @@ x 24
 y 6
 end
 arch teleporter
-speed 0
-connected 26
 hp 6
 sp 15
 x 24
 y 6
+speed 0
+connected 26
 end
 arch perm_magic_portal
 name Pupland Terminal
@@ -5231,12 +5231,12 @@ y 7
 end
 arch teleporter
 name nurnberg portal
-speed 0
-connected 27
 hp 6
 sp 14
 x 24
 y 7
+speed 0
+connected 27
 end
 arch perm_magic_portal
 name Nurnberg
@@ -5250,12 +5250,12 @@ y 8
 end
 arch teleporter
 name ancient pupland portal
-speed 0
-connected 28
 hp 6
 sp 13
 x 24
 y 8
+speed 0
+connected 28
 end
 arch perm_magic_portal
 name Ancient Pupland
@@ -5278,9 +5278,9 @@ x 24
 y 10
 end
 arch grate_open_1
-connected 28
 x 24
 y 10
+connected 28
 end
 arch boulder
 x 24
@@ -5291,62 +5291,62 @@ x 24
 y 11
 end
 arch button_plate
-connected 50
 x 24
 y 11
+connected 50
 end
 arch grass
 x 24
 y 12
 end
 arch teleporter
-speed 0
 hp 6
 sp 13
-connected 50
 x 24
 y 12
+speed 0
+connected 50
 end
 arch check_inv
 slaying scholar of kurte
-no_pass 1
 x 24
 y 12
+no_pass 1
 end
 arch grass
 x 24
 y 13
 end
 arch teleporter
-speed 0
 hp 6
 sp 9
-connected 29
 x 24
 y 13
+speed 0
+connected 29
 end
 arch perm_magic_portal
 name Big Chest
-face chest_1.111
 slaying bigchest
-unique 1
-is_animated 0
+face chest_1.111
 hp 1
 sp 1
 x 24
 y 13
+is_animated 0
+unique 1
 end
 arch grass
 x 24
 y 14
 end
 arch teleporter
-speed 0
 hp 16
 sp 15
-connected 40
 x 24
 y 14
+speed 0
+connected 40
 end
 arch stair2_up
 slaying upper

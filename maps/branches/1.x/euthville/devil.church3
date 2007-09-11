@@ -1,12 +1,12 @@
 arch map
 name Jesus wept even deeper
+width 25
+height 25
 msg
 Creator: 
 Email: 
 Date: Wed Nov 24 16:15:43 1993
 endmsg
-x 25
-y 25
 end
 arch flagstone
 end
@@ -794,6 +794,15 @@ end
 arch flagstone
 x 6
 y 8
+end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 6
+y 8
+attacktype 129
+can_cast_spell 1
 end
 arch flagstone
 x 6
@@ -2087,6 +2096,15 @@ arch flagstone
 x 16
 y 22
 end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 16
+y 22
+attacktype 129
+can_cast_spell 1
+end
 arch flagstone
 x 16
 y 23
@@ -2136,6 +2154,15 @@ end
 arch flagstone
 x 17
 y 7
+end
+arch troll
+name Plague Trolls
+sp 25
+dam 7
+x 17
+y 7
+attacktype 129
+can_cast_spell 1
 end
 arch flagstone
 x 17
@@ -3142,31 +3169,4 @@ end
 arch bwall_2_2_4
 x 24
 y 24
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 6
-y 8
-attacktype 129
-can_cast_spell 1
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 16
-y 22
-attacktype 129
-can_cast_spell 1
-end
-arch troll
-name Plague Trolls
-sp 25
-dam 7
-x 17
-y 7
-attacktype 129
-can_cast_spell 1
 end

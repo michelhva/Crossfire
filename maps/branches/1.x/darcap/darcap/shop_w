@@ -1,16 +1,18 @@
 arch map
-region darcap
 name shop_w
+fixed_resettime 1
+region darcap
+shopitems weapon:80;bow:40;*:-50
+shopmax 8000
+width 16
+height 16
+enter_x 13
+enter_y 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 00:50:45 1994
 endmsg
-hp 13
-sp 14
-stand_still 1
-shopitems weapon:80;bow:40;*:-50
-shopmax 8000
 end
 arch shop_empty
 end

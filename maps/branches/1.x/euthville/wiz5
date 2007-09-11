@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 20
+height 18
 msg
 Creator: 
 Email: 
 Date: Fri Oct 22 13:33:10 1993
 endmsg
-x 20
-y 18
 end
 arch cobblestones2
 end
@@ -502,6 +503,14 @@ end
 arch cobblestones2
 x 5
 y 10
+end
+arch behemoth
+x 5
+y 10
+carrying 100
+arch key2
+slaying vampdoor
+end
 end
 arch cobblestones2
 x 5
@@ -1886,12 +1895,4 @@ hp 19
 sp 17
 x 19
 y 17
-end
-arch behemoth
-x 5
-y 10
-carrying 100
-arch key2
-slaying vampdoor
-end
 end

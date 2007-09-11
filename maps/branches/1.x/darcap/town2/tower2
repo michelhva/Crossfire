@@ -1,15 +1,15 @@
 arch map
-region darcap
 name tower2
+region darcap
+width 32
+height 32
+enter_x 27
+enter_y 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Dec 21 17:57:27 1998
 endmsg
-hp 27
-sp 13
-x 32
-y 32
 end
 arch dirtfloor
 y 15
@@ -513,6 +513,10 @@ arch random_shield
 x 4
 y 21
 end
+arch giant
+x 4
+y 21
+end
 arch dirtfloor
 x 4
 y 22
@@ -602,6 +606,10 @@ x 5
 y 11
 end
 arch random_shield
+x 5
+y 11
+end
+arch giant
 x 5
 y 11
 end
@@ -877,6 +885,19 @@ arch dirtfloor
 x 6
 y 26
 end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 6
+y 26
+speed -0.150000
+level 14
+end
 arch dirtfloor
 x 6
 y 27
@@ -962,6 +983,10 @@ x 7
 y 11
 end
 arch dirtfloor
+x 7
+y 12
+end
+arch cobra
 x 7
 y 12
 end
@@ -1226,6 +1251,19 @@ end
 arch dirtfloor
 x 8
 y 26
+end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 8
+y 26
+speed -0.150000
+level 14
 end
 arch dirtfloor
 x 8
@@ -1548,6 +1586,19 @@ end
 arch dirtfloor
 x 10
 y 26
+end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 10
+y 26
+speed -0.150000
+level 14
 end
 arch dirtfloor
 x 10
@@ -1871,6 +1922,19 @@ arch dungeon_magic
 x 12
 y 26
 end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 12
+y 26
+speed -0.150000
+level 14
+end
 arch dirtfloor
 x 12
 y 27
@@ -1886,6 +1950,19 @@ end
 arch dungeon_magic
 x 12
 y 28
+end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 12
+y 28
+speed -0.150000
+level 14
 end
 arch dirtfloor
 x 12
@@ -2053,6 +2130,19 @@ sp 1
 x 13
 y 26
 end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 13
+y 26
+speed -0.150000
+level 14
+end
 arch dirtfloor
 x 13
 y 27
@@ -2068,6 +2158,19 @@ end
 arch dungeon_magic
 x 13
 y 28
+end
+arch giant
+name Buffed Giant
+hp 500
+maxhp 500
+exp 2500
+dam 40
+wc -2
+ac -4
+x 13
+y 28
+speed -0.150000
+level 14
 end
 arch dirtfloor
 x 13
@@ -3153,6 +3256,10 @@ arch dirtfloor
 x 21
 y 7
 end
+arch cobra
+x 21
+y 7
+end
 arch dirtfloor
 x 21
 y 8
@@ -3170,6 +3277,10 @@ x 21
 y 11
 end
 arch random_shield
+x 21
+y 11
+end
+arch giant
 x 21
 y 11
 end
@@ -3777,6 +3888,10 @@ arch random_shield
 x 24
 y 21
 end
+arch giant
+x 24
+y 21
+end
 arch dirtfloor
 x 24
 y 22
@@ -4114,6 +4229,10 @@ x 26
 y 20
 end
 arch dirtfloor
+x 26
+y 21
+end
+arch cobra
 x 26
 y 21
 end
@@ -5022,123 +5141,4 @@ end
 arch mine12
 x 31
 y 30
-end
-arch giant
-x 4
-y 21
-end
-arch giant
-x 5
-y 11
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 6
-y 26
-speed -0.150000
-level 14
-end
-arch cobra
-x 7
-y 12
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 8
-y 26
-speed -0.150000
-level 14
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 10
-y 26
-speed -0.150000
-level 14
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 12
-y 26
-speed -0.150000
-level 14
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 12
-y 28
-speed -0.150000
-level 14
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 13
-y 26
-speed -0.150000
-level 14
-end
-arch giant
-name Buffed Giant
-hp 500
-maxhp 500
-exp 2500
-dam 40
-wc -2
-ac -4
-x 13
-y 28
-speed -0.150000
-level 14
-end
-arch cobra
-x 21
-y 7
-end
-arch giant
-x 21
-y 11
-end
-arch giant
-x 24
-y 21
-end
-arch cobra
-x 26
-y 21
 end

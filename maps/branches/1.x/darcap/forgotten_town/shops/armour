@@ -1,17 +1,17 @@
 arch map
 name Armourshop
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/19/2005
-endmsg
+shopitems armour:60;shield:60;helmet:50;cloak:50;boots:50;gloves:50;bracers:50;girdle:50;*:-80
+shopmin 500
+shopmax 80000
 width 15
 height 15
 enter_x 13
 enter_y 13
-shopitems armour:60;shield:60;helmet:50;cloak:50;boots:50;gloves:50;bracers:50;girdle:50;*:-80
-shopmin 500
-shopmax 80000
+msg
+Creator: Knut Ahlers
+Date:    7/19/2005
+endmsg
 end
 arch dungeon_magic
 end

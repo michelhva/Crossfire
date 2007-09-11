@@ -1,15 +1,15 @@
 arch map
 name <untitled>
+reset_timeout 7200
+difficulty 1
+width 12
+height 12
+enter_x 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 17 22:37:01 1994
 endmsg
-width 12
-height 12
-enter_x 6
-reset_timeout 7200
-difficulty 1
 end
 arch cobblestones
 end

@@ -1,6 +1,8 @@
 arch map
-region stoneville
 name apartment2
+region stoneville
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -1057,7 +1059,7 @@ msg
 @match Hello|Hallo|Hi
 Hello there! To the left is a private
 apartment, to your right is a room you
-may enter if you pay a fee. 
+may enter if you pay a fee.
 @match apartment
 This apartment is very comfortable,
 trust me! And it's got a cauldron, too!

@@ -1,16 +1,16 @@
 arch map
-region darcapcircus
 name throwing gallery
+swap_time 10
+reset_timeout 10
+fixed_resettime 1
+region darcapcircus
+width 30
+height 27
 msg
 Creator: Bernd Edler
 Email: edler@heydernet.de
 Date: Tue Apr  2 19:30:45 2002
 endmsg
-width 30
-height 27
-reset_timeout 10
-swap_time 10
-fixed_resettime 1
 end
 arch dungeon_magic
 end
@@ -29,39 +29,23 @@ y 1
 end
 arch vampire
 name vampire target
+race wurfbude
 msg
 blah
 endmsg
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-dam 0
-wc 0
+Con 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-Con 0
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-can_see_in_dark 0
-can_use_weapon 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-unaggressive 1
-sleep 0
-Wis 0
-can_apply 0
-will_apply 0
-pick_up 0
-run_away 0
+exp 0
+dam 0
+wc 0
+y 1
+speed 0.0
+level 0
 resist_magic 100
 resist_fire 100
 resist_electricity 100
@@ -70,15 +54,30 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+pick_up 0
+will_apply 0
+undead 0
+unaggressive 1
+run_away 0
+can_cast_spell 0
+can_use_scroll 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+sleep 0
 stand_still 1
-y 1
+can_use_rod 0
+can_see_in_dark 0
+can_use_wand 0
 arch scroll
 name wurfbtoken2
 value 0
@@ -129,8 +128,8 @@ name linecrossing
 msg
 Don't step beyond the line!
 endmsg
-connected 4
 y 6
+connected 4
 end
 arch dungeon_magic
 y 6
@@ -146,8 +145,8 @@ name vampire hit
 msg
 Good. You smashed the vampire.
 endmsg
-connected 32
 y 7
+connected 32
 end
 arch dungeon_magic
 y 7
@@ -286,9 +285,9 @@ name zombie hit
 msg
 O.K. ,zombie has been hit.
 endmsg
-connected 31
 x 1
 y 6
+connected 31
 end
 arch dungeon_magic
 x 1
@@ -307,9 +306,9 @@ name demilich hit
 msg
 Congratulations, the demilich is our hardest target.
 endmsg
-connected 33
 x 1
 y 7
+connected 33
 end
 arch dungeon_magic
 x 1
@@ -440,26 +439,21 @@ y 3
 end
 arch zombie
 name zombie target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
+Wis 0
 hp 5
 maxhp 5
+exp 0
+dam 0
 ac 10
-can_see_in_dark 0
-unaggressive 1
-sleep 0
-Wis 0
+x 2
+y 3
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -470,16 +464,21 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+carrying 300
+randomitems none
+no_pick 0
+undead 0
+unaggressive 1
+sleep 0
 stand_still 1
-x 2
-y 3
+can_see_in_dark 0
 arch scroll
 name wurfbtoken1
 value 0
@@ -628,9 +627,9 @@ msg
 Nobody shall carry missiles of
 the throwing gallery in or out
 endmsg
-connected 2
 x 2
 y 19
+connected 2
 end
 arch dungeon_magic
 x 2
@@ -699,43 +698,43 @@ x 3
 end
 arch demilich
 name demilich target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
-wc 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-ac -10
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-see_invisible 0
-Wis 0
-can_apply 0
+exp 0
+dam 0
+wc 0
+ac -10
+x 3
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_slow 0
 resist_paralyze 0
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+no_pick 0
+see_invisible 0
+undead 0
+can_cast_spell 0
 stand_still 1
-x 3
+can_apply 0
 arch scroll
 name wurfbtoken3
 value 0
@@ -782,47 +781,47 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 3
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 3
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 3
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 3
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 3
@@ -1145,118 +1144,118 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 4
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 4
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 4
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 4
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 4
 y 4
 end
 arch pedestal
+x 4
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 4
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 4
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 4
 y 4
+connected 4
 end
 arch dungeon_magic
 x 4
 y 5
 end
 arch pedestal
+x 4
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 4
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 4
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 4
 y 6
 end
 arch pedestal
+x 4
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 4
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 4
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 4
 y 7
 end
 arch pedestal
+x 4
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 4
-y 7
 end
 arch woodfloor
 x 4
@@ -1360,33 +1359,33 @@ y 19
 end
 arch check_inv
 slaying wurfbude
+x 4
+y 19
 connected 2
 move_on fly_low
 move_off 0
-x 4
-y 19
 end
 arch check_inv
 slaying wurfbude
+x 4
+y 19
 last_sp 0
 connected 11
 move_on fly_low
 move_off 0
-x 4
-y 19
 end
 arch teleporter
 name exit here
+slaying wurfbude
 msg
 Please visit us again.
 endmsg
-slaying wurfbude
 hp 4
 sp 24
-connected 11
-speed 0.0
 x 4
 y 19
+speed 0.0
+connected 11
 end
 arch dungeon_magic
 x 4
@@ -1505,118 +1504,118 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 5
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 5
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 5
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 5
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 5
 y 4
 end
 arch pedestal
+x 5
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 5
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 5
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 5
 y 4
+connected 4
 end
 arch dungeon_magic
 x 5
 y 5
 end
 arch pedestal
+x 5
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 5
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 5
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 5
 y 6
 end
 arch pedestal
+x 5
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 5
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 5
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch pedestal
+x 5
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 5
-y 7
 end
 arch woodfloor
 x 5
@@ -1670,22 +1669,22 @@ retrieve your stuff when you pay the
 next coin. But I can't fetch weapons that stick
 IN a target.
 endmsg
-dam 20
-wc 3
 hp 100
 maxhp 100
+dam 20
+wc 3
 ac 0
-can_use_weapon 0
-can_use_bow 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-can_use_skill 0
-stand_still 1
 x 5
 y 10
+can_use_scroll 0
+can_use_bow 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+stand_still 1
+can_use_skill 0
+can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_magic
 x 5
@@ -1697,15 +1696,15 @@ y 11
 end
 arch altar_trigger
 name 3 throws - 1 platin coin
+slaying money
 msg
 Here you are.
 endmsg
-slaying money
 food 50
-last_sp 1
-connected 123
 x 5
 y 11
+last_sp 1
+connected 123
 end
 arch dungeon_magic
 x 5
@@ -1808,9 +1807,9 @@ x 5
 y 23
 end
 arch swall_2_1_2
+x 5
+y 23
 no_pick 1
-x 5
-y 23
 end
 arch dungeon_magic
 x 5
@@ -1889,88 +1888,88 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 6
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 6
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 6
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 6
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch demilich
 name demilich target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
-wc 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-ac -10
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-see_invisible 0
-Wis 0
-can_apply 0
+exp 0
+dam 0
+wc 0
+ac -10
+x 6
+y 3
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_slow 0
 resist_paralyze 0
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+no_pick 0
+see_invisible 0
+undead 0
+can_cast_spell 0
 stand_still 1
-x 6
-y 3
+can_apply 0
 arch scroll
 name wurfbtoken3
 value 0
@@ -1982,71 +1981,71 @@ x 6
 y 4
 end
 arch pedestal
+x 6
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 6
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 6
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 6
 y 4
+connected 4
 end
 arch dungeon_magic
 x 6
 y 5
 end
 arch pedestal
+x 6
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 6
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 6
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 6
 y 6
 end
 arch pedestal
+x 6
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 6
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 6
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch pedestal
+x 6
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 6
-y 7
 end
 arch woodfloor
 x 6
@@ -2157,9 +2156,9 @@ x 6
 y 20
 end
 arch swall_2_1_2
-no_pick 1
 x 6
 y 20
+no_pick 1
 end
 arch dungeon_magic
 x 6
@@ -2186,9 +2185,9 @@ x 6
 y 23
 end
 arch swall_2_1_2
-no_pick 1
 x 6
 y 23
+no_pick 1
 end
 arch dungeon_magic
 x 6
@@ -2229,26 +2228,20 @@ x 7
 end
 arch zombie
 name zombie target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
+Wis 0
 hp 5
 maxhp 5
+exp 0
+dam 0
 ac 10
-can_see_in_dark 0
-unaggressive 1
-sleep 0
-Wis 0
+x 7
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -2259,15 +2252,21 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+carrying 300
+randomitems none
+no_pick 0
+undead 0
+unaggressive 1
+sleep 0
 stand_still 1
-x 7
+can_see_in_dark 0
 arch scroll
 name wurfbtoken1
 value 0
@@ -2314,118 +2313,118 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 7
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 7
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 7
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 7
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 7
 y 4
 end
 arch pedestal
+x 7
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 7
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 7
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 7
 y 4
+connected 4
 end
 arch dungeon_magic
 x 7
 y 5
 end
 arch pedestal
+x 7
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 7
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 7
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 7
 y 6
 end
 arch pedestal
+x 7
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 7
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 7
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 7
 y 7
 end
 arch pedestal
+x 7
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 7
-y 7
 end
 arch woodfloor
 x 7
@@ -2505,9 +2504,9 @@ y 16
 end
 arch trigger
 name pull for bonbons
-connected 141
 x 7
 y 16
+connected 141
 end
 arch dungeon_magic
 x 7
@@ -2519,17 +2518,17 @@ y 17
 end
 arch orcchop
 name cheap bonbons (exhibit)
-face pearl.111
 msg
 Just hit any one target and you have
 already won this.
 endmsg
+face pearl.111
 food 1
-weight 20
-need_an 0
-no_pick 1
 x 7
 y 17
+weight 20
+no_pick 1
+need_an 0
 end
 arch dungeon_magic
 x 7
@@ -2671,118 +2670,118 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 8
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 8
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 8
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 8
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 8
 y 4
 end
 arch pedestal
+x 8
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 8
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 8
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 8
 y 4
+connected 4
 end
 arch dungeon_magic
 x 8
 y 5
 end
 arch pedestal
+x 8
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 8
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 8
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch pedestal
+x 8
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 8
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 8
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch pedestal
+x 8
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 8
-y 7
 end
 arch woodfloor
 x 8
@@ -2862,9 +2861,9 @@ y 16
 end
 arch trigger
 name pull for rose
-connected 142
 x 8
 y 16
+connected 142
 end
 arch dungeon_magic
 x 8
@@ -2876,20 +2875,20 @@ y 17
 end
 arch silvercoin
 name cloth rose (exhibit)
-face rose_red.111
+race none
+slaying wurfb2
 msg
 At least two different targets have to
 be hit to win one of these.
 endmsg
-slaying wurfb2
+face rose_red.111
+x 8
+y 17
 material 128
+value 10
 weight 53
 no_pick 1
 identified 1
-race none
-value 10
-x 8
-y 17
 end
 arch dungeon_magic
 x 8
@@ -2924,10 +2923,10 @@ x 8
 y 21
 end
 arch pedestal
-invisible 1
-connected 3
 x 8
 y 21
+invisible 1
+connected 3
 end
 arch woodfloor
 x 8
@@ -2937,10 +2936,10 @@ arch teleporter
 name enter here
 hp 8
 sp 19
-connected 3
-speed 0.0
 x 8
 y 21
+speed 0.0
+connected 3
 end
 arch dungeon_magic
 x 8
@@ -3049,118 +3048,118 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 9
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 9
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 9
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 9
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch dungeon_magic
 x 9
 y 4
 end
 arch pedestal
+x 9
+y 4
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 9
-y 4
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 9
 y 4
+slow_move 20.000000
 end
 arch grate_open_1
-connected 4
 x 9
 y 4
+connected 4
 end
 arch dungeon_magic
 x 9
 y 5
 end
 arch pedestal
+x 9
+y 5
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 9
-y 5
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 9
 y 5
+slow_move 20.000000
 end
 arch dungeon_magic
 x 9
 y 6
 end
 arch pedestal
+x 9
+y 6
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 9
-y 6
 end
 arch woodfloor
 exp 20000
-slow_move 20.000000
 x 9
 y 6
+slow_move 20.000000
 end
 arch dungeon_magic
 x 9
 y 7
 end
 arch pedestal
+x 9
+y 7
 invisible 1
 connected 4
 move_on walk fly_low
 move_off walk fly_low
-x 9
-y 7
 end
 arch woodfloor
 x 9
@@ -3253,9 +3252,9 @@ y 16
 end
 arch trigger
 name pull for teddy
-connected 143
 x 9
 y 16
+connected 143
 end
 arch dungeon_magic
 x 9
@@ -3267,20 +3266,20 @@ y 17
 end
 arch goldcoin
 name Teddy (exhibit)
-face elem_earth.112
+race none
+slaying wurfb3
 msg
 All 3 different targets must be hit to
 win one of these.
 endmsg
-slaying wurfb3
+face elem_earth.112
+x 9
+y 17
 material 128
+value 50
 weight 380
 no_pick 1
 identified 1
-race none
-value 50
-x 9
-y 17
 end
 arch dungeon_magic
 x 9
@@ -3328,7 +3327,6 @@ y 22
 end
 arch sage
 name Assistant
-face man.151
 msg
 @match yes|Yes|YES
 Then you only have to hit each different
@@ -3336,23 +3334,24 @@ target with just one try.
 @match *
 Would you like to win a teddy?
 endmsg
-randomitems none
-level 1
-speed 0.0
-dam 20
-wc 0
-hp 100
-maxhp 100
-ac 0
-can_cast_spell 0
-sp 0
-maxsp 0
+face man.151
 Pow 0
 Int 0
-can_use_skill 0
-friendly 1
+hp 100
+maxhp 100
+sp 0
+maxsp 0
+dam 20
+wc 0
+ac 0
 x 9
 y 22
+speed 0.0
+level 1
+randomitems none
+friendly 1
+can_cast_spell 0
+can_use_skill 0
 end
 arch dungeon_magic
 x 9
@@ -3376,33 +3375,33 @@ y 24
 end
 arch check_inv
 slaying wurfbude
+x 9
+y 24
 connected 2
 move_on walk fly_low
 move_off fly_low
-x 9
-y 24
 end
 arch check_inv
 slaying wurfbude
+x 9
+y 24
 last_sp 0
 connected 1
 move_on walk fly_low
 move_off walk fly_low
-x 9
-y 24
 end
 arch teleporter
 name enter here
+slaying wurfbude
 msg
 Welcome to Rumzap's Throwing Gallery
 endmsg
-slaying wurfbude
 hp 8
 sp 22
-connected 1
-speed 0.0
 x 9
 y 24
+speed 0.0
+connected 1
 end
 arch dungeon_magic
 x 9
@@ -3480,83 +3479,68 @@ y 3
 end
 arch altar_trigger
 name demilich token altartrig
-invisible 1
 slaying wurfbtoken3
-food 1
-connected 33
 exp 1
-last_sp 1
+food 1
 x 10
 y 3
+invisible 1
+last_sp 1
+connected 33
 end
 arch altar_trigger
 name vampire token altartrig
-invisible 1
 slaying wurfbtoken2
-food 1
-connected 32
 exp 1
-last_sp 1
+food 1
 x 10
 y 3
+invisible 1
+last_sp 1
+connected 32
 end
 arch altar_trigger
 name zombie token altartrig
-invisible 1
 slaying wurfbtoken1
-food 1
-connected 31
 exp 1
-last_sp 1
+food 1
 x 10
 y 3
+invisible 1
+last_sp 1
+connected 31
 end
 arch altar_trigger
 name altartrig take socks
-invisible 1
 slaying taped socks
-food 1
-connected 100
 exp 1
-last_sp 1
+food 1
 x 10
 y 3
+invisible 1
+last_sp 1
+connected 100
 end
 arch vampire
 name vampire target
+race wurfbude
 msg
 blah
 endmsg
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-dam 0
-wc 0
+Con 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-Con 0
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-can_see_in_dark 0
-can_use_weapon 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-unaggressive 1
-sleep 0
-Wis 0
-can_apply 0
-will_apply 0
-pick_up 0
-run_away 0
+exp 0
+dam 0
+wc 0
+x 10
+y 3
+speed 0.0
+level 0
 resist_magic 100
 resist_fire 100
 resist_electricity 100
@@ -3565,16 +3549,30 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+pick_up 0
+will_apply 0
+undead 0
+unaggressive 1
+run_away 0
+can_cast_spell 0
+can_use_scroll 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+sleep 0
 stand_still 1
-x 10
-y 3
+can_use_rod 0
+can_see_in_dark 0
+can_use_wand 0
 arch scroll
 name wurfbtoken2
 value 0
@@ -3864,39 +3862,23 @@ x 11
 end
 arch vampire
 name vampire target
+race wurfbude
 msg
 blah
 endmsg
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-dam 0
-wc 0
+Con 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-Con 0
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-can_see_in_dark 0
-can_use_weapon 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-unaggressive 1
-sleep 0
-Wis 0
-can_apply 0
-will_apply 0
-pick_up 0
-run_away 0
+exp 0
+dam 0
+wc 0
+x 11
+speed 0.0
+level 0
 resist_magic 100
 resist_fire 100
 resist_electricity 100
@@ -3905,15 +3887,30 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+pick_up 0
+will_apply 0
+undead 0
+unaggressive 1
+run_away 0
+can_cast_spell 0
+can_use_scroll 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+sleep 0
 stand_still 1
-x 11
+can_use_rod 0
+can_see_in_dark 0
+can_use_wand 0
 arch scroll
 name wurfbtoken2
 value 0
@@ -4102,10 +4099,10 @@ arch magic_mouth
 msg
 Pets have to stay outside.
 endmsg
-connected 3
 food 1
 x 11
 y 20
+connected 3
 end
 arch dungeon_magic
 x 11
@@ -4135,10 +4132,10 @@ arch magic_mouth
 msg
 Welcome to Rumzap's Throwing Gallery.
 endmsg
-connected 1
 food 1
 x 11
 y 23
+connected 1
 end
 arch dungeon_magic
 x 11
@@ -4164,10 +4161,10 @@ arch magic_mouth
 msg
 Please visit us again.
 endmsg
-connected 11
-move_on 0
 x 11
 y 25
+connected 11
+move_on 0
 end
 arch dungeon_magic
 x 11
@@ -4366,9 +4363,9 @@ x 13
 y 3
 end
 arch woodfloor
-blocksview 1
 x 13
 y 3
+blocksview 1
 end
 arch mover_3
 x 13
@@ -4441,44 +4438,44 @@ y 1
 end
 arch demilich
 name demilich target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
-wc 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-ac -10
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-see_invisible 0
-Wis 0
-can_apply 0
+exp 0
+dam 0
+wc 0
+ac -10
+x 14
+y 1
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_slow 0
 resist_paralyze 0
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+no_pick 0
+see_invisible 0
+undead 0
+can_cast_spell 0
 stand_still 1
-x 14
-y 1
+can_apply 0
 arch scroll
 name wurfbtoken3
 value 0
@@ -4502,9 +4499,9 @@ x 14
 y 3
 end
 arch woodfloor
-blocksview 1
 x 14
 y 3
+blocksview 1
 end
 arch mover_1
 x 14
@@ -4512,26 +4509,21 @@ y 3
 end
 arch zombie
 name zombie target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
+Wis 0
 hp 5
 maxhp 5
+exp 0
+dam 0
 ac 10
-can_see_in_dark 0
-unaggressive 1
-sleep 0
-Wis 0
+x 14
+y 3
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -4542,16 +4534,21 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+carrying 300
+randomitems none
+no_pick 0
+undead 0
+unaggressive 1
+sleep 0
 stand_still 1
-x 14
-y 3
+can_see_in_dark 0
 arch scroll
 name wurfbtoken1
 value 0
@@ -4599,10 +4596,10 @@ x 14
 y 10
 end
 arch grate_closed_2
-speed 0.500000
-connected 221
 x 14
 y 11
+speed 0.500000
+connected 221
 end
 arch swall_2_1_2
 x 14
@@ -4619,14 +4616,14 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 14
+y 13
 speed 0.000000
 level 0
 attacktype 0
 resist_physical 100
 resist_poison 0
 stand_still 1
-x 14
-y 13
 end
 arch swall_2_1_2
 x 14
@@ -4708,10 +4705,10 @@ end
 arch teleporter
 hp 4
 sp 11
-speed 0.000000
-connected 123
 x 15
 y 8
+speed 0.000000
+connected 123
 end
 arch swall_2_1_2
 x 15
@@ -4722,18 +4719,18 @@ x 15
 y 10
 end
 arch button_plate
-weight 200000
-connected 221
 x 15
 y 11
+weight 200000
+connected 221
 end
 arch teleporter
 hp 7
 sp 15
-speed 0.000000
-connected 222
 x 15
 y 11
+speed 0.000000
+connected 222
 end
 arch swall_2_1_2
 x 15
@@ -4744,10 +4741,10 @@ x 15
 y 13
 end
 arch grate_closed_2
-speed 0.500000
-connected 221
 x 15
 y 13
+speed 0.500000
+connected 221
 end
 arch swall_2_1_2
 x 15
@@ -4787,26 +4784,26 @@ end
 arch teleporter
 hp 4
 sp 11
-speed 0.000000
-connected 123
 x 16
 y 8
+speed 0.000000
+connected 123
 end
 arch chair
 name taped socks
-face pouch.111
-type 0
-nrof 3
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
-is_thrown 1
+face pouch.111
+dam 1
 x 16
 y 8
+nrof 3
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
+is_thrown 1
+identified 1
 end
 arch swall_2_1_2
 x 16
@@ -4817,18 +4814,18 @@ x 16
 y 10
 end
 arch button_plate
-weight 200000
-connected 221
 x 16
 y 11
+weight 200000
+connected 221
 end
 arch teleporter
 hp 8
 sp 15
-speed 0.000000
-connected 222
 x 16
 y 11
+speed 0.000000
+connected 222
 end
 arch swall_2_1_2
 x 16
@@ -4844,26 +4841,21 @@ y 14
 end
 arch zombie
 name zombie target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
+Wis 0
 hp 5
 maxhp 5
+exp 0
+dam 0
 ac 10
-can_see_in_dark 0
-unaggressive 1
-sleep 0
-Wis 0
+x 17
+y 1
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -4874,16 +4866,21 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+carrying 300
+randomitems none
+no_pick 0
+undead 0
+unaggressive 1
+sleep 0
 stand_still 1
-x 17
-y 1
+can_see_in_dark 0
 arch scroll
 name wurfbtoken1
 value 0
@@ -4897,10 +4894,10 @@ end
 arch teleporter
 hp 4
 sp 11
-speed 0.000000
-connected 123
 x 17
 y 8
+speed 0.000000
+connected 123
 end
 arch swall_2_1_2
 x 17
@@ -4911,18 +4908,18 @@ x 17
 y 10
 end
 arch button_plate
-weight 200000
-connected 221
 x 17
 y 11
+weight 200000
+connected 221
 end
 arch teleporter
 hp 9
 sp 15
-speed 0.000000
-connected 222
 x 17
 y 11
+speed 0.000000
+connected 222
 end
 arch swall_2_1_2
 x 17
@@ -4933,11 +4930,11 @@ x 17
 y 13
 end
 arch grate_open_2
+x 17
+y 13
 speed 0.500000
 value 1
 connected 221
-x 17
-y 13
 end
 arch swall_2_1_2
 x 17
@@ -4945,39 +4942,24 @@ y 14
 end
 arch vampire
 name vampire target
+race wurfbude
 msg
 blah
 endmsg
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-dam 0
-wc 0
+Con 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-Con 0
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-can_see_in_dark 0
-can_use_weapon 0
-can_use_armour 0
-can_use_ring 0
-can_use_wand 0
-can_use_rod 0
-can_use_scroll 0
-unaggressive 1
-sleep 0
-Wis 0
-can_apply 0
-will_apply 0
-pick_up 0
-run_away 0
+exp 0
+dam 0
+wc 0
+x 18
+y 1
+speed 0.0
+level 0
 resist_magic 100
 resist_fire 100
 resist_electricity 100
@@ -4986,16 +4968,30 @@ resist_drain 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_poison 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+pick_up 0
+will_apply 0
+undead 0
+unaggressive 1
+run_away 0
+can_cast_spell 0
+can_use_scroll 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+sleep 0
 stand_still 1
-x 18
-y 1
+can_use_rod 0
+can_see_in_dark 0
+can_use_wand 0
 arch scroll
 name wurfbtoken2
 value 0
@@ -5027,18 +5023,18 @@ x 18
 y 12
 end
 arch button_plate
-weight 1
-connected 222
 x 18
 y 13
+weight 1
+connected 222
 end
 arch teleporter
 hp 13
 sp 13
-speed 0.000000
-connected 222
 x 18
 y 13
+speed 0.000000
+connected 222
 end
 arch swall_2_1_2
 x 18
@@ -5046,44 +5042,44 @@ y 14
 end
 arch demilich
 name demilich target
+race wurfbude
 msg
 blah
 endmsg
-no_pick 0
-level 0
-race wurfbude
-exp 0
-randomitems none
-speed 0.0
-undead 0
-carrying 300
-attacktype 0
-dam 0
-wc 0
+Wis 0
+Pow 0
 hp 5
 maxhp 5
-ac -10
-can_cast_spell 0
 sp 0
 maxsp 0
-Pow 0
-see_invisible 0
-Wis 0
-can_apply 0
+exp 0
+dam 0
+wc 0
+ac -10
+x 19
+y 1
+speed 0.0
+level 0
+attacktype 0
 resist_physical 100
 resist_weaponmagic -100
 resist_ghosthit 100
 resist_slow 0
 resist_paralyze 0
-resist_deplete 100
 resist_turn_undead 100
+resist_deplete 100
 resist_death 100
 resist_chaos 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+carrying 300
+randomitems none
+no_pick 0
+see_invisible 0
+undead 0
+can_cast_spell 0
 stand_still 1
-x 19
-y 1
+can_apply 0
 arch scroll
 name wurfbtoken3
 value 0
@@ -5136,13 +5132,13 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 22
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1810
 stand_still 1
-x 22
 arch orcchop
 name cheap bonbons
 face pearl.111
@@ -5163,19 +5159,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1770
-stand_still 1
 x 22
 y 1
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1770
+stand_still 1
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5189,19 +5185,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1770
-stand_still 1
 x 22
 y 2
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1770
+stand_still 1
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5215,19 +5211,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1770
-stand_still 1
 x 22
 y 3
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1770
+stand_still 1
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5241,19 +5237,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1770
-stand_still 1
 x 22
 y 4
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1770
+stand_still 1
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5267,19 +5263,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1770
-stand_still 1
 x 22
 y 5
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1770
+stand_still 1
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5293,19 +5289,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 22
+y 6
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1770
 stand_still 1
-x 22
-y 6
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch mover_5
@@ -5319,28 +5315,28 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 22
+y 7
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1770
 stand_still 1
-x 22
-y 7
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch teleporter
 hp 14
 sp 11
-speed 0.000000
-connected 151
 x 22
 y 8
+speed 0.000000
+connected 151
 end
 arch snake_golem
 name carry-bonbon
@@ -5349,19 +5345,19 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 22
+y 8
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1770
 stand_still 1
-x 22
-y 8
 arch orcchop
 name cheap bonbons
 face pearl.111
-weight 30
 food 1
+weight 30
 end
 end
 arch swall_1_4
@@ -5377,27 +5373,27 @@ x 22
 y 18
 end
 arch button_small
+x 22
+y 19
 connected 151
-x 22
-y 19
 end
 arch grate_closed_2
+x 22
+y 19
 connected 111
-x 22
-y 19
 end
 arch grate_closed_2
-connected 141
 x 22
 y 19
+connected 141
 end
 arch teleporter
 hp 23
 sp 21
-speed 0.000000
-connected 151
 x 22
 y 19
+speed 0.000000
+connected 151
 end
 arch swall_2_1_2
 x 22
@@ -5414,22 +5410,22 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1328
-stand_still 1
 x 23
 y 5
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1328
+stand_still 1
 arch rock2
 name cloth rose
-face rose_red.111
-weight 53
-value 10
-material 128
-identified 1
 slaying wurfb2
+face rose_red.111
+material 128
+value 10
+weight 53
+identified 1
 end
 end
 arch mover_5
@@ -5443,22 +5439,22 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 23
+y 6
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1328
 stand_still 1
-x 23
-y 6
 arch rock2
 name cloth rose
-face rose_red.111
-weight 53
-value 10
-material 128
-identified 1
 slaying wurfb2
+face rose_red.111
+material 128
+value 10
+weight 53
+identified 1
 end
 end
 arch mover_5
@@ -5472,31 +5468,31 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 23
+y 7
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1328
 stand_still 1
-x 23
-y 7
 arch rock2
 name cloth rose
-face rose_red.111
-weight 53
-value 10
-material 128
-identified 1
 slaying wurfb2
+face rose_red.111
+material 128
+value 10
+weight 53
+identified 1
 end
 end
 arch teleporter
 hp 15
 sp 11
-speed 0.000000
-connected 152
 x 23
 y 8
+speed 0.000000
+connected 152
 end
 arch snake_golem
 name carry-rose
@@ -5505,22 +5501,22 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 23
+y 8
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1328
 stand_still 1
-x 23
-y 8
 arch rock2
 name cloth rose
-face rose_red.111
-weight 53
-value 10
-material 128
-identified 1
 slaying wurfb2
+face rose_red.111
+material 128
+value 10
+weight 53
+identified 1
 end
 end
 arch swall_2_1_2
@@ -5532,48 +5528,48 @@ x 23
 y 17
 end
 arch button_small
+x 23
+y 18
 connected 152
-x 23
-y 18
 end
 arch grate_closed_1
+x 23
+y 18
 connected 112
-x 23
-y 18
 end
 arch grate_closed_1
-connected 142
 x 23
 y 18
+connected 142
 end
 arch teleporter
 hp 23
 sp 21
-speed 0.000000
-connected 152
 x 23
 y 18
+speed 0.000000
+connected 152
 end
 arch grate_open_1
+x 23
+y 19
 speed 0.500000
 value 1
 connected 143
-x 23
-y 19
 end
 arch grate_open_1
+x 23
+y 19
 speed 0.500000
 value 1
 connected 142
-x 23
-y 19
 end
 arch grate_open_1
+x 23
+y 19
 speed 0.500000
 value 1
 connected 141
-x 23
-y 19
 end
 arch swall_2_1_2
 x 23
@@ -5582,15 +5578,15 @@ end
 arch teleporter
 hp 23
 sp 19
+x 23
+y 21
 speed 0.000000
 connected 123
-x 23
-y 21
 end
 arch boulder
-weight 10
 x 23
 y 21
+weight 10
 end
 arch mover_5
 x 24
@@ -5603,22 +5599,22 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 24
+y 6
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 2330
 stand_still 1
-x 24
-y 6
 arch rock2
 name Teddy
-face elem_earth.112
-weight 380
-value 50
-material 128
-identified 1
 slaying wurfb3
+face elem_earth.112
+material 128
+value 50
+weight 380
+identified 1
 end
 end
 arch mover_5
@@ -5632,31 +5628,31 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 24
+y 7
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 2330
 stand_still 1
-x 24
-y 7
 arch rock2
 name Teddy
-face elem_earth.112
-weight 380
-value 50
-material 128
-identified 1
 slaying wurfb3
+face elem_earth.112
+material 128
+value 50
+weight 380
+identified 1
 end
 end
 arch teleporter
 hp 16
 sp 11
-speed 0.000000
-connected 153
 x 24
 y 8
+speed 0.000000
+connected 153
 end
 arch snake_golem
 name carry-teddy
@@ -5665,22 +5661,22 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 24
+y 8
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 2330
 stand_still 1
-x 24
-y 8
 arch rock2
 name Teddy
-face elem_earth.112
-weight 380
-value 50
-material 128
-identified 1
 slaying wurfb3
+face elem_earth.112
+material 128
+value 50
+weight 380
+identified 1
 end
 end
 arch swall_1_3
@@ -5696,27 +5692,27 @@ x 24
 y 18
 end
 arch button_small
+x 24
+y 19
 connected 153
-x 24
-y 19
 end
 arch grate_closed_2
+x 24
+y 19
 connected 113
-x 24
-y 19
 end
 arch grate_closed_2
-connected 143
 x 24
 y 19
+connected 143
 end
 arch teleporter
 hp 23
 sp 21
-speed 0.000000
-connected 153
 x 24
 y 19
+speed 0.000000
+connected 153
 end
 arch swall_2_1_2
 x 24
@@ -5725,9 +5721,9 @@ end
 arch teleporter
 hp 25
 sp 1
-connected 123
-speed 0.0
 x 25
+speed 0.0
+connected 123
 end
 arch snake_golem
 name tokenmover
@@ -5736,50 +5732,50 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 25
 speed 0.000000
 level 0
 attacktype 0
 resist_physical 100
 resist_poison 0
 stand_still 1
-x 25
 end
 arch mover_5
-attacktype 1
 x 25
 y 1
+attacktype 1
 end
 arch mover_5
+x 25
+y 2
 attacktype 1
-x 25
-y 2
 end
 arch gateTrg1
+maxhp 5
 dam 0
+x 25
+y 2
 connected 31
-maxhp 5
-x 25
-y 2
 end
 arch gateTrg1
-dam 0
-connected 100
 maxhp 5
+dam 0
 x 25
 y 2
+connected 100
 end
 arch button_plate
-connected 331
-weight 10000
 x 25
 y 3
+weight 10000
+connected 331
 end
 arch teleporter
 hp 25
-connected 331
-speed 0.0
 x 25
 y 3
+speed 0.0
+connected 331
 end
 arch swall_2_2_3
 x 25
@@ -5796,9 +5792,9 @@ end
 arch teleporter
 hp 26
 sp 1
-connected 123
-speed 0.0
 x 26
+speed 0.0
+connected 123
 end
 arch snake_golem
 name tokenmover
@@ -5807,111 +5803,111 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 26
 speed 0.000000
 level 0
 attacktype 0
 resist_physical 100
 resist_poison 0
 stand_still 1
-x 26
 end
 arch mover_5
-attacktype 1
 x 26
 y 1
+attacktype 1
 end
 arch mover_5
+x 26
+y 2
 attacktype 1
-x 26
-y 2
 end
 arch gateTrg1
+maxhp 5
 dam 0
+x 26
+y 2
 connected 32
-maxhp 5
-x 26
-y 2
 end
 arch gateTrg1
-dam 0
-connected 100
 maxhp 5
+dam 0
 x 26
 y 2
+connected 100
 end
 arch button_plate
-connected 332
-weight 10000
 x 26
 y 3
+weight 10000
+connected 332
 end
 arch teleporter
 hp 26
-connected 332
-speed 0.0
 x 26
 y 3
+speed 0.0
+connected 332
 end
 arch button_small
 name got 3
-weight 4200
-connected 113
 x 26
 y 4
+weight 4200
+connected 113
 end
 arch button_small
 name got 2
-weight 1800
-connected 112
 x 26
 y 4
+weight 1800
+connected 112
 end
 arch button_small
 name got 1
-weight 600
-connected 111
 x 26
 y 4
+weight 600
+connected 111
 end
 arch creator
 name create for demilich
 other_arch scroll
-connected 333
-lifesave 1
 x 26
 y 4
+connected 333
+lifesave 1
 end
 arch creator
 name create for vampire
 other_arch scroll
-connected 332
-lifesave 1
 x 26
 y 4
+connected 332
+lifesave 1
 end
 arch creator
 name create for zombie
 other_arch scroll
-connected 331
-lifesave 1
 x 26
 y 4
+connected 331
+lifesave 1
 end
 arch teleporter
 name scroll remover
 hp 28
 sp 3
-speed 0.000000
-connected 123
 x 26
 y 4
+speed 0.000000
+connected 123
 end
 arch teleporter
 hp 27
 sp 1
-connected 123
-speed 0.0
 x 27
+speed 0.0
+connected 123
 end
 arch snake_golem
 name tokenmover
@@ -5920,57 +5916,57 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 27
 speed 0.000000
 level 0
 attacktype 0
 resist_physical 100
 resist_poison 0
 stand_still 1
-x 27
 end
 arch mover_5
-attacktype 1
 x 27
 y 1
+attacktype 1
 end
 arch mover_5
+x 27
+y 2
 attacktype 1
-x 27
-y 2
 end
 arch gateTrg1
+maxhp 5
 dam 0
+x 27
+y 2
 connected 33
-maxhp 5
-x 27
-y 2
 end
 arch gateTrg1
-dam 0
-connected 100
 maxhp 5
+dam 0
 x 27
 y 2
+connected 100
 end
 arch button_plate
-connected 333
-weight 10000
 x 27
 y 3
+weight 10000
+connected 333
 end
 arch teleporter
 hp 27
-connected 333
-speed 0.0
 x 27
 y 3
+speed 0.0
+connected 333
 end
 arch permanent_lava
 name deadly lava
 dam 999
-attacktype 1048581
 x 28
 y 3
+attacktype 1048581
 end
 arch mover_5
 x 29
@@ -5982,25 +5978,25 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 29
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1000
 stand_still 1
-x 29
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6014,26 +6010,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1000
-stand_still 1
 x 29
 y 1
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1000
+stand_still 1
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6047,26 +6043,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1000
-stand_still 1
 x 29
 y 2
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1000
+stand_still 1
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6080,26 +6076,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1000
-stand_still 1
 x 29
 y 3
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1000
+stand_still 1
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6113,26 +6109,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1000
-stand_still 1
 x 29
 y 4
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1000
+stand_still 1
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6146,26 +6142,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
-speed 0.000000
-level 0
-attacktype 0
-resist_poison 0
-carrying 1000
-stand_still 1
 x 29
 y 5
+speed 0.000000
+level 0
+attacktype 0
+resist_poison 0
+carrying 1000
+stand_still 1
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6179,26 +6175,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 29
+y 6
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1000
 stand_still 1
-x 29
-y 6
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch mover_5
@@ -6212,35 +6208,35 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 29
+y 7
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1000
 stand_still 1
-x 29
-y 7
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch teleporter
 hp 14
 sp 7
-speed 0.000000
-connected 100
 x 29
 y 8
+speed 0.000000
+connected 100
 end
 arch snake_golem
 name carry-socks
@@ -6249,26 +6245,26 @@ maxhp 1
 exp 0
 dam 0
 wc 0
+x 29
+y 8
 speed 0.000000
 level 0
 attacktype 0
 resist_poison 0
 carrying 1000
 stand_still 1
-x 29
-y 8
 arch chair
 name taped socks
-face pouch.111
-type 0
-weight 1000
-value 0
-material 128
-identified 1
-attacktype 256
-dam 1
 slaying wurfbude
+face pouch.111
+dam 1
+type 0
+attacktype 256
+material 128
+value 0
+weight 1000
 is_thrown 1
+identified 1
 end
 end
 arch swall_1_4

@@ -1,15 +1,15 @@
 arch map
 name monkey_temple
+difficulty 7
+width 25
+height 25
+enter_x 1
+enter_y 11
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/10/2003
 endmsg
-width 25
-height 25
-enter_x 1
-enter_y 11
-difficulty 7
 outdoor 1
 end
 arch grass
@@ -772,9 +772,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 5
 y 4
+can_see_in_dark 1
 end
 arch flagstone
 x 5
@@ -796,10 +796,10 @@ arch trap_rocks
 msg
 You set off some falling rocks!
 endmsg
-level 3
 dam 30
 x 5
 y 6
+level 3
 end
 arch deep_swamp
 x 5
@@ -1254,9 +1254,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 8
 y 8
+can_see_in_dark 1
 end
 arch deep_swamp
 x 8
@@ -1581,12 +1581,12 @@ arch trap
 msg
 You hear a strange click.
 endmsg
-level 7
 Cha 40
 dam 0
-connected 15
 x 10
 y 12
+level 7
+connected 15
 end
 arch flagstone
 x 10
@@ -1610,15 +1610,15 @@ y 16
 end
 arch lbulletwall_1
 name dart launcher
-invisible 1
-blocksview 0
 dam 203
-level 5
-connected 15
-speed 0.0
-no_pass 0
 x 10
 y 16
+speed 0.0
+level 5
+invisible 1
+connected 15
+no_pass 0
+blocksview 0
 arch spell_missile_swarm
 end
 end
@@ -1843,9 +1843,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 12
 y 1
+can_see_in_dark 1
 end
 arch flagstone
 x 12
@@ -2156,9 +2156,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 14
 y 4
+can_see_in_dark 1
 end
 arch deep_swamp
 x 14
@@ -2477,9 +2477,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 16
 y 6
+can_see_in_dark 1
 end
 arch deep_swamp
 x 16
@@ -2524,9 +2524,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 16
 y 14
+can_see_in_dark 1
 end
 arch flagstone
 x 16
@@ -2803,12 +2803,12 @@ arch trap
 msg
 You hear a hissing noise.
 endmsg
-level 7
 Cha 40
 dam 0
-connected 16
 x 18
 y 9
+level 7
+connected 16
 end
 arch flagstone
 x 18
@@ -2973,10 +2973,10 @@ arch magic_mouth
 msg
 This wall looks like it might be on some sort of rail...
 endmsg
-move_on walk
 food 1
 x 19
 y 14
+move_on walk
 end
 arch flagstone
 x 19
@@ -2992,11 +2992,11 @@ y 15
 end
 arch lbulletwall_1
 name poision spitter
-invisible 1
-connected 16
-speed 0.0
 x 19
 y 15
+speed 0.0
+invisible 1
+connected 16
 arch spell_poison_cloud
 level 5
 end
@@ -3113,39 +3113,39 @@ x 20
 y 12
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 20
 y 12
+connected 20
+no_magic 1
 end
 arch magic_ear
 msg
 @match ook ook
 The wall slides into the floor.
 endmsg
-connected 20
 x 20
 y 12
+connected 20
 end
 arch flagstone
 x 20
 y 13
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 20
 y 13
+connected 20
+no_magic 1
 end
 arch flagstone
 x 20
 y 14
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 20
 y 14
+connected 20
+no_magic 1
 end
 arch flagstone
 x 20
@@ -3192,10 +3192,10 @@ x 20
 y 21
 end
 arch rune_create_bomb
-level 6
 dam 40
 x 20
 y 21
+level 6
 end
 arch bones3
 x 20
@@ -3231,8 +3231,8 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 21
+can_see_in_dark 1
 end
 arch flagstone
 x 21
@@ -3265,9 +3265,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 21
 y 5
+can_see_in_dark 1
 end
 arch flagstone
 x 21
@@ -3304,19 +3304,19 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 21
 y 11
+can_see_in_dark 1
 end
 arch flagstone
 x 21
 y 12
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 21
 y 12
+connected 20
+no_magic 1
 end
 arch flagstone
 x 21
@@ -3437,20 +3437,20 @@ x 22
 y 8
 end
 arch trap
-level 3
 dam 5
-connected 10
 x 22
 y 8
+level 3
+connected 10
 end
 arch teleporter
-invisible 1
 hp 11
 sp 21
-connected 10
-speed 0.0
 x 22
 y 8
+speed 0.0
+invisible 1
+connected 10
 end
 arch flagstone
 x 22
@@ -3463,9 +3463,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 22
 y 9
+can_see_in_dark 1
 end
 arch flagstone
 x 22
@@ -3475,10 +3475,10 @@ arch magic_mouth
 msg
 The base of the wall is suspiciously clean from swamp grime.
 endmsg
-move_on walk
 food 1
 x 22
 y 11
+move_on walk
 end
 arch flagstone
 x 22
@@ -3489,10 +3489,10 @@ x 22
 y 12
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 22
 y 12
+connected 20
+no_magic 1
 end
 arch flagstone
 x 22
@@ -3685,10 +3685,10 @@ x 23
 y 15
 end
 arch block_door_closed
-connected 20
-no_magic 1
 x 23
 y 15
+connected 20
+no_magic 1
 end
 arch flagstone
 x 23
@@ -3808,9 +3808,9 @@ Ook ook
 endmsg
 exp 800
 dam 12
-can_see_in_dark 1
 x 24
 y 10
+can_see_in_dark 1
 end
 arch brush
 x 24
