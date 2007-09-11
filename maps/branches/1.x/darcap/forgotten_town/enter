@@ -1,14 +1,14 @@
 arch map
 name Entryquest
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/17/2005
-endmsg
 width 20
 height 20
 enter_x 3
 enter_y 1
+msg
+Creator: Knut Ahlers
+Date:    7/17/2005
+endmsg
 end
 arch woodfloor
 end
@@ -168,13 +168,20 @@ y 4
 end
 arch generate_dragon
 exp 50
-speed 0.08
 x 1
 y 4
+speed 0.08
 end
 arch woodfloor
 x 1
 y 5
+end
+arch dragonman
+x 1
+y 5
+arch key2
+slaying dun_dea_en_1
+end
 end
 arch woodfloor
 x 1
@@ -193,14 +200,14 @@ msg
 You feel that your god will not be able
 to help you if you step through this door.
 endmsg
-connected 421
 x 1
 y 8
+connected 421
 end
 arch button_small
-connected 421
 x 1
 y 8
+connected 421
 end
 arch woodfloor
 x 1
@@ -313,9 +320,9 @@ arch sign_w
 msg
 Exit to Darcap
 endmsg
-move_on walk fly_low
 x 2
 y 1
+move_on walk fly_low
 end
 arch woodfloor
 x 2
@@ -531,6 +538,10 @@ arch woodfloor
 x 3
 y 13
 end
+arch dread
+x 3
+y 13
+end
 arch unholy_ground
 x 3
 y 14
@@ -552,6 +563,10 @@ x 3
 y 16
 end
 arch woodfloor
+x 3
+y 16
+end
+arch dread
 x 3
 y 16
 end
@@ -591,9 +606,9 @@ x 4
 end
 arch check_inv
 slaying ftap
+x 4
 connected 159
 no_pass 1
-x 4
 end
 arch magic_mouth
 msg
@@ -601,22 +616,22 @@ A tiny voice says to you:
 Hello adventurer. Since you have the TownPass
 you may take the shortcut into the town.
 endmsg
+x 4
 connected 159
 move_on 0
-x 4
 end
 arch woodfloor
 x 4
 end
 arch grate_closed_1
-connected 159
 x 4
+connected 159
 end
 arch check_inv
 slaying ftap
-connected 159
 x 4
 y 1
+connected 159
 end
 arch woodfloor
 x 4
@@ -627,9 +642,9 @@ msg
 Entry to the forgotten City
 Only higher level players!
 endmsg
-move_on walk fly_low
 x 4
 y 1
+move_on walk fly_low
 end
 arch woodfloor
 x 4
@@ -792,11 +807,19 @@ arch woodfloor
 x 5
 y 5
 end
+arch big_dragon
+x 5
+y 5
+end
 arch woodfloor
 x 5
 y 6
 end
 arch woodfloor
+x 5
+y 7
+end
+arch big_dragon
 x 5
 y 7
 end
@@ -982,6 +1005,10 @@ arch woodfloor
 x 6
 y 13
 end
+arch dread
+x 6
+y 13
+end
 arch unholy_ground
 x 6
 y 14
@@ -1005,6 +1032,13 @@ end
 arch woodfloor
 x 6
 y 16
+end
+arch dread
+x 6
+y 16
+arch key2
+slaying dun_dea_en_4
+end
 end
 arch unholy_ground
 x 6
@@ -1045,9 +1079,9 @@ x 7
 y 1
 end
 arch mover_5
-attacktype 1
 x 7
 y 1
+attacktype 1
 end
 arch woodfloor
 x 7
@@ -1184,9 +1218,9 @@ x 8
 y 1
 end
 arch mover_5
-attacktype 1
 x 8
 y 1
+attacktype 1
 end
 arch woodfloor
 x 8
@@ -1605,6 +1639,13 @@ arch woodfloor
 x 10
 y 17
 end
+arch dragon_exit
+slaying city
+hp 2
+sp 2
+x 10
+y 17
+end
 arch woodfloor
 x 10
 y 18
@@ -1902,10 +1943,10 @@ x 12
 y 18
 end
 arch button_small
-invisible 1
-connected 1
 x 12
 y 18
+invisible 1
+connected 1
 end
 arch woodfloor
 x 12
@@ -2070,19 +2111,19 @@ x 13
 y 17
 end
 arch button_small
-invisible 1
-connected 1
 x 13
 y 18
+invisible 1
+connected 1
 end
 arch woodfloor
 x 13
 y 18
 end
 arch grate_closed_2
-connected 1
 x 13
 y 18
+connected 1
 end
 arch woodfloor
 x 13
@@ -2151,9 +2192,9 @@ x 14
 y 6
 end
 arch vampire
-resist_physical 50
 x 14
 y 6
+resist_physical 50
 end
 arch unholy_ground
 x 14
@@ -2164,9 +2205,9 @@ x 14
 y 7
 end
 arch vampire
-resist_physical 50
 x 14
 y 7
+resist_physical 50
 end
 arch unholy_ground
 x 14
@@ -2213,9 +2254,9 @@ arch sign
 msg
 Be VERY careful!
 endmsg
-move_on walk fly_low
 x 14
 y 12
+move_on walk fly_low
 end
 arch woodfloor
 x 14
@@ -2258,10 +2299,10 @@ x 14
 y 17
 end
 arch button_small
-invisible 1
-connected 1
 x 14
 y 18
+invisible 1
+connected 1
 end
 arch woodfloor
 x 14
@@ -2334,9 +2375,9 @@ x 15
 y 6
 end
 arch vampire
-resist_physical 50
 x 15
 y 6
+resist_physical 50
 end
 arch unholy_ground
 x 15
@@ -2347,9 +2388,9 @@ x 15
 y 7
 end
 arch vampire
-resist_physical 50
 x 15
 y 7
+resist_physical 50
 end
 arch unholy_ground
 x 15
@@ -2937,9 +2978,9 @@ name Exit to Darcap
 slaying /world/world_116_102
 hp 28
 sp 30
-move_on 0
 x 18
 y 18
+move_on 0
 end
 arch woodfloor
 x 18
@@ -3106,45 +3147,4 @@ end
 arch awall_2_2_4
 x 19
 y 19
-end
-arch dragonman
-x 1
-y 5
-arch key2
-slaying dun_dea_en_1
-end
-end
-arch dread
-x 3
-y 13
-end
-arch dread
-x 3
-y 16
-end
-arch big_dragon
-x 5
-y 5
-end
-arch big_dragon
-x 5
-y 7
-end
-arch dread
-x 6
-y 13
-end
-arch dread
-x 6
-y 16
-arch key2
-slaying dun_dea_en_4
-end
-end
-arch dragon_exit
-slaying city
-hp 2
-sp 2
-x 10
-y 17
 end

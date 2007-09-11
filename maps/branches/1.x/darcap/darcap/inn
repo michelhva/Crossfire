@@ -1,15 +1,15 @@
 arch map
 name inn
 region darcap
+width 33
+height 22
+enter_x 5
+enter_y 8
 msg
 Creator: Cater/Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 15 13:04:54 1999
 endmsg
-width 33
-height 22
-enter_x 5
-enter_y 8
 end
 arch sea
 end
@@ -462,9 +462,9 @@ arch exit
 slaying /world/world_116_102
 hp 32
 sp 44
-invisible 1
 x 4
 y 5
+invisible 1
 end
 arch sea
 x 4
@@ -478,9 +478,9 @@ arch exit
 slaying /world/world_116_102
 hp 32
 sp 44
-invisible 1
 x 4
 y 6
+invisible 1
 end
 arch cobblestones2
 x 4
@@ -490,9 +490,9 @@ arch exit
 slaying /world/world_116_102
 hp 32
 sp 44
-invisible 1
 x 4
 y 7
+invisible 1
 end
 arch cobblestones2
 x 4
@@ -513,9 +513,9 @@ arch exit
 slaying /world/world_116_102
 hp 32
 sp 44
-invisible 1
 x 4
 y 9
+invisible 1
 end
 arch cobblestones2
 x 4
@@ -525,9 +525,9 @@ arch exit
 slaying /world/world_116_102
 hp 32
 sp 44
-invisible 1
 x 4
 y 10
+invisible 1
 end
 arch cobblestones2
 x 4
@@ -694,9 +694,9 @@ msg
 @match *
 Welcome.  I have many empty rooms tonight
 endmsg
-monster 0
 x 5
 y 12
+monster 0
 end
 arch woodfloor
 x 5
@@ -715,10 +715,10 @@ x 5
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 5
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 5
@@ -1059,10 +1059,10 @@ x 8
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 8
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 8
@@ -1081,10 +1081,10 @@ x 8
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 8
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 8
@@ -1321,10 +1321,10 @@ x 10
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 10
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 10
@@ -1482,10 +1482,10 @@ x 11
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 11
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 11
@@ -1714,10 +1714,10 @@ x 13
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 13
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 13
@@ -1875,10 +1875,10 @@ x 14
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 14
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -2003,9 +2003,9 @@ I'm too busy to help you.
 My friend Rufus might help - he's in
 here somewhere ...
 endmsg
-monster 0
 x 15
 y 13
+monster 0
 end
 arch woodfloor
 x 15
@@ -2119,10 +2119,10 @@ x 16
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 16
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 16
@@ -2272,10 +2272,10 @@ x 17
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 17
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 17
@@ -2647,10 +2647,10 @@ x 20
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 20
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 20
@@ -2669,10 +2669,10 @@ x 20
 y 15
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 20
 y 15
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 20
@@ -2929,16 +2929,16 @@ msg
 @match open
 Sssshhhh.
 endmsg
+x 22
+y 14
 connected 1
 move_off walk
-x 22
-y 14
 end
 arch gate_closed_2
-speed 0.500000
-connected 1
 x 22
 y 14
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 22
@@ -3077,10 +3077,10 @@ y 14
 end
 arch button_small
 name invisible button
-invisible 1
-connected 1
 x 23
 y 14
+invisible 1
+connected 1
 end
 arch woodfloor
 x 23
@@ -3199,10 +3199,10 @@ x 24
 y 11
 end
 arch door_look_1
-no_pass 0
-blocksview 1
 x 24
 y 11
+no_pass 0
+blocksview 1
 end
 arch woodfloor
 x 24
@@ -3448,9 +3448,9 @@ closed room here ...
 I can help you with the elemental
 quest...
 endmsg
-monster 0
 x 26
 y 10
+monster 0
 end
 arch woodfloor
 x 26

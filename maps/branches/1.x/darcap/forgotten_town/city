@@ -286,6 +286,13 @@ arch blackmarble
 x 1
 y 1
 end
+arch dragon_exit
+slaying enter
+hp 11
+sp 18
+x 1
+y 1
+end
 arch blackmarble
 x 1
 y 2
@@ -1087,6 +1094,14 @@ arch grass
 x 3
 y 27
 end
+arch castle_a
+name Quest #1
+slaying quests/ft_quest_1
+hp 1
+sp 18
+x 3
+y 27
+end
 arch grass
 x 3
 y 28
@@ -1116,6 +1131,10 @@ x 3
 y 32
 end
 arch grass
+x 3
+y 33
+end
+arch castle_a
 x 3
 y 33
 end
@@ -1385,6 +1404,10 @@ arch grass
 x 4
 y 30
 end
+arch house_up
+x 4
+y 30
+end
 arch grass
 x 4
 y 31
@@ -1414,6 +1437,10 @@ x 4
 y 35
 end
 arch grass
+x 4
+y 36
+end
+arch house_up
 x 4
 y 36
 end
@@ -1641,6 +1668,14 @@ arch grass
 x 5
 y 27
 end
+arch castle_a
+name Quest #2
+slaying quests/ft_quest_2
+hp 1
+sp 1
+x 5
+y 27
+end
 arch grass
 x 5
 y 28
@@ -1670,6 +1705,10 @@ x 5
 y 32
 end
 arch grass
+x 5
+y 33
+end
+arch castle_a
 x 5
 y 33
 end
@@ -1920,6 +1959,10 @@ arch grass
 x 6
 y 30
 end
+arch house_up
+x 6
+y 30
+end
 arch grass
 x 6
 y 31
@@ -1949,6 +1992,10 @@ x 6
 y 35
 end
 arch grass
+x 6
+y 36
+end
+arch house_up
 x 6
 y 36
 end
@@ -2147,6 +2194,10 @@ arch grass
 x 7
 y 27
 end
+arch castle_a
+x 7
+y 27
+end
 arch grass
 x 7
 y 28
@@ -2176,6 +2227,10 @@ x 7
 y 32
 end
 arch grass
+x 7
+y 33
+end
+arch castle_a
 x 7
 y 33
 end
@@ -2399,6 +2454,10 @@ arch grass
 x 8
 y 30
 end
+arch house_up
+x 8
+y 30
+end
 arch grass
 x 8
 y 31
@@ -2428,6 +2487,10 @@ x 8
 y 35
 end
 arch grass
+x 8
+y 36
+end
+arch house_up
 x 8
 y 36
 end
@@ -2646,6 +2709,10 @@ arch grass
 x 9
 y 27
 end
+arch castle_a
+x 9
+y 27
+end
 arch grass
 x 9
 y 28
@@ -2675,6 +2742,10 @@ x 9
 y 32
 end
 arch grass
+x 9
+y 33
+end
+arch castle_a
 x 9
 y 33
 end
@@ -2729,6 +2800,14 @@ x 10
 y 1
 end
 arch marble
+x 10
+y 2
+end
+arch store_alchemy
+name potionshop
+slaying shops/potion
+hp 13
+sp 13
 x 10
 y 2
 end
@@ -2897,6 +2976,10 @@ arch grass
 x 10
 y 30
 end
+arch house_up
+x 10
+y 30
+end
 arch grass
 x 10
 y 31
@@ -2926,6 +3009,10 @@ x 10
 y 35
 end
 arch grass
+x 10
+y 36
+end
+arch house_up
 x 10
 y 36
 end
@@ -3116,6 +3203,10 @@ arch grass
 x 11
 y 27
 end
+arch castle_a
+x 11
+y 27
+end
 arch grass
 x 11
 y 28
@@ -3145,6 +3236,10 @@ x 11
 y 32
 end
 arch grass
+x 11
+y 33
+end
+arch castle_a
 x 11
 y 33
 end
@@ -3367,6 +3462,10 @@ arch grass
 x 12
 y 30
 end
+arch house_up
+x 12
+y 30
+end
 arch grass
 x 12
 y 31
@@ -3396,6 +3495,10 @@ x 12
 y 35
 end
 arch grass
+x 12
+y 36
+end
+arch house_up
 x 12
 y 36
 end
@@ -3434,6 +3537,14 @@ x 13
 y 1
 end
 arch marble
+x 13
+y 2
+end
+arch store_armour
+name armourshop
+slaying shops/armour
+hp 13
+sp 13
 x 13
 y 2
 end
@@ -4123,6 +4234,14 @@ arch marble
 x 16
 y 2
 end
+arch store_general
+name generalshop
+slaying shops/general
+hp 13
+sp 13
+x 16
+y 2
+end
 arch marble
 x 16
 y 3
@@ -4236,6 +4355,10 @@ arch grass
 x 16
 y 27
 end
+arch castle_a
+x 16
+y 27
+end
 arch grass
 x 16
 y 28
@@ -4249,6 +4372,10 @@ x 16
 y 29
 end
 arch grass
+x 16
+y 30
+end
+arch house_up
 x 16
 y 30
 end
@@ -4268,6 +4395,10 @@ arch grass
 x 16
 y 33
 end
+arch castle_a
+x 16
+y 33
+end
 arch grass
 x 16
 y 34
@@ -4281,6 +4412,10 @@ x 16
 y 35
 end
 arch grass
+x 16
+y 36
+end
+arch house_up
 x 16
 y 36
 end
@@ -4706,6 +4841,10 @@ arch grass
 x 18
 y 27
 end
+arch castle_a
+x 18
+y 27
+end
 arch grass
 x 18
 y 28
@@ -4719,6 +4858,10 @@ x 18
 y 29
 end
 arch grass
+x 18
+y 30
+end
+arch house_up
 x 18
 y 30
 end
@@ -4738,6 +4881,10 @@ arch grass
 x 18
 y 33
 end
+arch castle_a
+x 18
+y 33
+end
 arch grass
 x 18
 y 34
@@ -4751,6 +4898,10 @@ x 18
 y 35
 end
 arch grass
+x 18
+y 36
+end
+arch house_up
 x 18
 y 36
 end
@@ -4789,6 +4940,13 @@ x 19
 y 1
 end
 arch marble
+x 19
+y 2
+end
+arch store_magic
+slaying shops/magic
+hp 13
+sp 13
 x 19
 y 2
 end
@@ -5176,6 +5334,10 @@ arch grass
 x 20
 y 27
 end
+arch castle_a
+x 20
+y 27
+end
 arch grass
 x 20
 y 28
@@ -5189,6 +5351,10 @@ x 20
 y 29
 end
 arch grass
+x 20
+y 30
+end
+arch house_up
 x 20
 y 30
 end
@@ -5208,6 +5374,10 @@ arch grass
 x 20
 y 33
 end
+arch castle_a
+x 20
+y 33
+end
 arch grass
 x 20
 y 34
@@ -5221,6 +5391,10 @@ x 20
 y 35
 end
 arch grass
+x 20
+y 36
+end
+arch house_up
 x 20
 y 36
 end
@@ -5497,6 +5671,14 @@ arch marble
 x 22
 y 2
 end
+arch store_weapons
+name Weapon Shop
+slaying shops/weapon
+hp 7
+sp 14
+x 22
+y 2
+end
 arch marble
 x 22
 y 3
@@ -5606,6 +5788,10 @@ arch grass
 x 22
 y 27
 end
+arch castle_a
+x 22
+y 27
+end
 arch grass
 x 22
 y 28
@@ -5619,6 +5805,10 @@ x 22
 y 29
 end
 arch grass
+x 22
+y 30
+end
+arch house_up
 x 22
 y 30
 end
@@ -5638,6 +5828,10 @@ arch grass
 x 22
 y 33
 end
+arch castle_a
+x 22
+y 33
+end
 arch grass
 x 22
 y 34
@@ -5651,6 +5845,10 @@ x 22
 y 35
 end
 arch grass
+x 22
+y 36
+end
+arch house_up
 x 22
 y 36
 end
@@ -5966,6 +6164,13 @@ arch cobblestones2
 x 24
 y 12
 end
+arch inn
+slaying inn
+hp 9
+sp 14
+x 24
+y 12
+end
 arch marble
 x 24
 y 13
@@ -5983,6 +6188,10 @@ x 24
 y 16
 end
 arch marble
+x 24
+y 17
+end
+arch cathedral
 x 24
 y 17
 end
@@ -6035,6 +6244,10 @@ arch grass
 x 24
 y 27
 end
+arch castle_a
+x 24
+y 27
+end
 arch grass
 x 24
 y 28
@@ -6048,6 +6261,10 @@ x 24
 y 29
 end
 arch grass
+x 24
+y 30
+end
+arch house_up
 x 24
 y 30
 end
@@ -6067,6 +6284,10 @@ arch grass
 x 24
 y 33
 end
+arch castle_a
+x 24
+y 33
+end
 arch grass
 x 24
 y 34
@@ -6080,6 +6301,10 @@ x 24
 y 35
 end
 arch grass
+x 24
+y 36
+end
+arch house_up
 x 24
 y 36
 end
@@ -6118,6 +6343,14 @@ x 25
 y 1
 end
 arch marble
+x 25
+y 2
+end
+arch dark_palace
+name Palace of forgotten Town
+slaying palace
+hp 9
+sp 19
 x 25
 y 2
 end
@@ -7351,237 +7584,4 @@ end
 arch flagstone_2_2_4
 x 29
 y 40
-end
-arch dragon_exit
-slaying enter
-hp 11
-sp 18
-x 1
-y 1
-end
-arch castle_a
-name Quest #1
-slaying quests/ft_quest_1
-hp 1
-sp 18
-x 3
-y 27
-end
-arch castle_a
-x 3
-y 33
-end
-arch house_up
-x 4
-y 30
-end
-arch house_up
-x 4
-y 36
-end
-arch castle_a
-name Quest #2
-slaying quests/ft_quest_2
-hp 1
-sp 1
-x 5
-y 27
-end
-arch castle_a
-x 5
-y 33
-end
-arch house_up
-x 6
-y 30
-end
-arch house_up
-x 6
-y 36
-end
-arch castle_a
-x 7
-y 27
-end
-arch castle_a
-x 7
-y 33
-end
-arch house_up
-x 8
-y 30
-end
-arch house_up
-x 8
-y 36
-end
-arch castle_a
-x 9
-y 27
-end
-arch castle_a
-x 9
-y 33
-end
-arch store_alchemy
-name potionshop
-slaying shops/potion
-hp 13
-sp 13
-x 10
-y 2
-end
-arch house_up
-x 10
-y 30
-end
-arch house_up
-x 10
-y 36
-end
-arch castle_a
-x 11
-y 27
-end
-arch castle_a
-x 11
-y 33
-end
-arch house_up
-x 12
-y 30
-end
-arch house_up
-x 12
-y 36
-end
-arch store_armour
-name armourshop
-slaying shops/armour
-hp 13
-sp 13
-x 13
-y 2
-end
-arch store_general
-name generalshop
-slaying shops/general
-hp 13
-sp 13
-x 16
-y 2
-end
-arch castle_a
-x 16
-y 27
-end
-arch house_up
-x 16
-y 30
-end
-arch castle_a
-x 16
-y 33
-end
-arch house_up
-x 16
-y 36
-end
-arch castle_a
-x 18
-y 27
-end
-arch house_up
-x 18
-y 30
-end
-arch castle_a
-x 18
-y 33
-end
-arch house_up
-x 18
-y 36
-end
-arch store_magic
-slaying shops/magic
-hp 13
-sp 13
-x 19
-y 2
-end
-arch castle_a
-x 20
-y 27
-end
-arch house_up
-x 20
-y 30
-end
-arch castle_a
-x 20
-y 33
-end
-arch house_up
-x 20
-y 36
-end
-arch store_weapons
-name Weapon Shop
-slaying shops/weapon
-hp 7
-sp 14
-x 22
-y 2
-end
-arch castle_a
-x 22
-y 27
-end
-arch house_up
-x 22
-y 30
-end
-arch castle_a
-x 22
-y 33
-end
-arch house_up
-x 22
-y 36
-end
-arch inn
-slaying inn
-hp 9
-sp 14
-x 24
-y 12
-end
-arch cathedral
-x 24
-y 17
-end
-arch castle_a
-x 24
-y 27
-end
-arch house_up
-x 24
-y 30
-end
-arch castle_a
-x 24
-y 33
-end
-arch house_up
-x 24
-y 36
-end
-arch dark_palace
-name Palace of forgotten Town
-slaying palace
-hp 9
-sp 19
-x 25
-y 2
 end

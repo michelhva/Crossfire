@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region stoneville
+width 32
+height 32
 msg
 Creator: Viola Krings
 Email: 
 Date: Tue Jul 15 10:58:35 1997
 endmsg
-x 32
-y 32
 end
 arch woodfloor
 end
@@ -475,6 +476,10 @@ x 2
 y 11
 end
 arch woodfloor
+x 2
+y 12
+end
+arch dread
 x 2
 y 12
 end
@@ -4379,6 +4384,10 @@ arch random_wealth
 x 22
 y 1
 end
+arch shadowtiger
+x 22
+y 1
+end
 arch woodfloor
 x 22
 y 2
@@ -4412,6 +4421,11 @@ x 22
 y 5
 end
 arch woodfloor
+x 22
+y 6
+end
+arch big_wiz
+name Barsh, the wizard
 x 22
 y 6
 end
@@ -4473,6 +4487,10 @@ x 22
 y 17
 end
 arch woodfloor
+x 22
+y 18
+end
+arch behemoth
 x 22
 y 18
 end
@@ -4625,6 +4643,10 @@ arch woodfloor
 x 23
 y 11
 end
+arch DK
+x 23
+y 11
+end
 arch woodfloor
 x 23
 y 12
@@ -4686,6 +4708,10 @@ y 20
 level 20
 end
 arch woodfloor
+x 23
+y 21
+end
+arch Cwyvern
 x 23
 y 21
 end
@@ -4981,6 +5007,10 @@ arch woodfloor
 x 25
 y 5
 end
+arch Balrog
+x 25
+y 5
+end
 arch woodfloor
 x 25
 y 6
@@ -5046,6 +5076,10 @@ x 25
 y 16
 end
 arch woodfloor
+x 25
+y 17
+end
+arch dread
 x 25
 y 17
 end
@@ -5373,6 +5407,10 @@ x 27
 y 10
 end
 arch woodfloor
+x 27
+y 11
+end
+arch titan
 x 27
 y 11
 end
@@ -5805,6 +5843,10 @@ arch woodfloor
 x 29
 y 16
 end
+arch gaelotroll
+x 29
+y 16
+end
 arch woodfloor
 x 29
 y 17
@@ -6012,6 +6054,11 @@ x 30
 y 18
 end
 arch woodfloor
+x 30
+y 19
+end
+arch dragonman
+name Sharkharash
 x 30
 y 19
 end
@@ -6352,50 +6399,4 @@ end
 arch wall_2_2_4
 x 31
 y 31
-end
-arch dread
-x 2
-y 12
-end
-arch shadowtiger
-x 22
-y 1
-end
-arch big_wiz
-name Barsh, the wizard
-x 22
-y 6
-end
-arch behemoth
-x 22
-y 18
-end
-arch DK
-x 23
-y 11
-end
-arch Cwyvern
-x 23
-y 21
-end
-arch Balrog
-x 25
-y 5
-end
-arch dread
-x 25
-y 17
-end
-arch titan
-x 27
-y 11
-end
-arch gaelotroll
-x 29
-y 16
-end
-arch dragonman
-name Sharkharash
-x 30
-y 19
 end

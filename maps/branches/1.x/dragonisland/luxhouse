@@ -1,11 +1,12 @@
 arch map
-region stoneville
 name brxzlhouse
+region stoneville
+width 16
+height 16
+enter_x 7
 msg
 Creator: Bernhard
 endmsg
-hp 7
-sp 0
 end
 arch afloor_left
 unique 1

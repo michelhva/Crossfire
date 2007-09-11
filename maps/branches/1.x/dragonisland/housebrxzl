@@ -1,13 +1,13 @@
 arch map
-region stoneville
 name housebrxzl
+region stoneville
+width 61
+height 44
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jul 10 12:19:49 1997
 endmsg
-x 61
-y 44
 end
 arch grass
 end
@@ -72,13 +72,9 @@ arch grass
 y 20
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch grass
@@ -228,14 +224,10 @@ x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
@@ -475,14 +467,10 @@ x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 22
 end
@@ -738,14 +726,10 @@ x 3
 y 20
 end
 arch blocked
-msg
-endmsg
 x 3
 y 21
 end
 arch blocked
-msg
-endmsg
 x 3
 y 22
 end
@@ -981,14 +965,10 @@ x 4
 y 20
 end
 arch blocked
-msg
-endmsg
 x 4
 y 21
 end
 arch blocked
-msg
-endmsg
 x 4
 y 22
 end
@@ -1260,14 +1240,10 @@ x 5
 y 20
 end
 arch blocked
-msg
-endmsg
 x 5
 y 21
 end
 arch blocked
-msg
-endmsg
 x 5
 y 22
 end
@@ -1507,14 +1483,10 @@ x 6
 y 20
 end
 arch blocked
-msg
-endmsg
 x 6
 y 21
 end
 arch blocked
-msg
-endmsg
 x 6
 y 22
 end
@@ -1745,14 +1717,10 @@ x 7
 y 20
 end
 arch blocked
-msg
-endmsg
 x 7
 y 21
 end
 arch blocked
-msg
-endmsg
 x 7
 y 22
 end
@@ -2033,14 +2001,10 @@ x 8
 y 20
 end
 arch blocked
-msg
-endmsg
 x 8
 y 21
 end
 arch blocked
-msg
-endmsg
 x 8
 y 22
 end
@@ -2322,14 +2286,10 @@ x 9
 y 20
 end
 arch blocked
-msg
-endmsg
 x 9
 y 21
 end
 arch blocked
-msg
-endmsg
 x 9
 y 22
 end
@@ -2621,14 +2581,10 @@ x 10
 y 20
 end
 arch blocked
-msg
-endmsg
 x 10
 y 21
 end
 arch blocked
-msg
-endmsg
 x 10
 y 22
 end
@@ -2912,14 +2868,10 @@ x 11
 y 20
 end
 arch blocked
-msg
-endmsg
 x 11
 y 21
 end
 arch blocked
-msg
-endmsg
 x 11
 y 22
 end
@@ -3195,14 +3147,10 @@ x 12
 y 20
 end
 arch blocked
-msg
-endmsg
 x 12
 y 21
 end
 arch blocked
-msg
-endmsg
 x 12
 y 22
 end
@@ -3474,14 +3422,10 @@ x 13
 y 20
 end
 arch blocked
-msg
-endmsg
 x 13
 y 21
 end
 arch blocked
-msg
-endmsg
 x 13
 y 22
 end
@@ -3738,14 +3682,10 @@ x 14
 y 20
 end
 arch blocked
-msg
-endmsg
 x 14
 y 21
 end
 arch blocked
-msg
-endmsg
 x 14
 y 22
 end
@@ -4008,14 +3948,10 @@ x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 15
 y 21
 end
 arch blocked
-msg
-endmsg
 x 15
 y 22
 end
@@ -4284,14 +4220,10 @@ x 16
 y 20
 end
 arch blocked
-msg
-endmsg
 x 16
 y 21
 end
 arch blocked
-msg
-endmsg
 x 16
 y 22
 end
@@ -4523,14 +4455,10 @@ x 17
 y 20
 end
 arch blocked
-msg
-endmsg
 x 17
 y 21
 end
 arch blocked
-msg
-endmsg
 x 17
 y 22
 end
@@ -4786,14 +4714,10 @@ x 18
 y 20
 end
 arch blocked
-msg
-endmsg
 x 18
 y 21
 end
 arch blocked
-msg
-endmsg
 x 18
 y 22
 end
@@ -5033,14 +4957,10 @@ x 19
 y 20
 end
 arch blocked
-msg
-endmsg
 x 19
 y 21
 end
 arch blocked
-msg
-endmsg
 x 19
 y 22
 end
@@ -5212,14 +5132,10 @@ x 20
 y 20
 end
 arch blocked
-msg
-endmsg
 x 20
 y 21
 end
 arch blocked
-msg
-endmsg
 x 20
 y 22
 end
@@ -5308,528 +5224,352 @@ x 20
 y 43
 end
 arch blocked
-msg
-endmsg
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
 arch blocked
-msg
-endmsg
 x 21
 y 2
 end
 arch blocked
-msg
-endmsg
 x 21
 y 3
 end
 arch blocked
-msg
-endmsg
 x 21
 y 4
 end
 arch blocked
-msg
-endmsg
 x 21
 y 5
 end
 arch blocked
-msg
-endmsg
 x 21
 y 6
 end
 arch blocked
-msg
-endmsg
 x 21
 y 7
 end
 arch blocked
-msg
-endmsg
 x 21
 y 8
 end
 arch blocked
-msg
-endmsg
 x 21
 y 9
 end
 arch blocked
-msg
-endmsg
 x 21
 y 10
 end
 arch blocked
-msg
-endmsg
 x 21
 y 11
 end
 arch blocked
-msg
-endmsg
 x 21
 y 12
 end
 arch blocked
-msg
-endmsg
 x 21
 y 13
 end
 arch blocked
-msg
-endmsg
 x 21
 y 14
 end
 arch blocked
-msg
-endmsg
 x 21
 y 15
 end
 arch blocked
-msg
-endmsg
 x 21
 y 16
 end
 arch blocked
-msg
-endmsg
 x 21
 y 17
 end
 arch blocked
-msg
-endmsg
 x 21
 y 18
 end
 arch blocked
-msg
-endmsg
 x 21
 y 19
 end
 arch blocked
-msg
-endmsg
 x 21
 y 20
 end
 arch blocked
-msg
-endmsg
 x 21
 y 21
 end
 arch blocked
-msg
-endmsg
 x 21
 y 22
 end
 arch blocked
-msg
-endmsg
 x 21
 y 23
 end
 arch blocked
-msg
-endmsg
 x 21
 y 24
 end
 arch blocked
-msg
-endmsg
 x 21
 y 25
 end
 arch blocked
-msg
-endmsg
 x 21
 y 26
 end
 arch blocked
-msg
-endmsg
 x 21
 y 27
 end
 arch blocked
-msg
-endmsg
 x 21
 y 28
 end
 arch blocked
-msg
-endmsg
 x 21
 y 29
 end
 arch blocked
-msg
-endmsg
 x 21
 y 30
 end
 arch blocked
-msg
-endmsg
 x 21
 y 31
 end
 arch blocked
-msg
-endmsg
 x 21
 y 32
 end
 arch blocked
-msg
-endmsg
 x 21
 y 33
 end
 arch blocked
-msg
-endmsg
 x 21
 y 34
 end
 arch blocked
-msg
-endmsg
 x 21
 y 35
 end
 arch blocked
-msg
-endmsg
 x 21
 y 36
 end
 arch blocked
-msg
-endmsg
 x 21
 y 37
 end
 arch blocked
-msg
-endmsg
 x 21
 y 38
 end
 arch blocked
-msg
-endmsg
 x 21
 y 39
 end
 arch blocked
-msg
-endmsg
 x 21
 y 40
 end
 arch blocked
-msg
-endmsg
 x 21
 y 41
 end
 arch blocked
-msg
-endmsg
 x 21
 y 42
 end
 arch blocked
-msg
-endmsg
 x 21
 y 43
 end
 arch blocked
-msg
-endmsg
 x 22
 end
 arch blocked
-msg
-endmsg
 x 22
 y 1
 end
 arch blocked
-msg
-endmsg
 x 22
 y 2
 end
 arch blocked
-msg
-endmsg
 x 22
 y 3
 end
 arch blocked
-msg
-endmsg
 x 22
 y 4
 end
 arch blocked
-msg
-endmsg
 x 22
 y 5
 end
 arch blocked
-msg
-endmsg
 x 22
 y 6
 end
 arch blocked
-msg
-endmsg
 x 22
 y 7
 end
 arch blocked
-msg
-endmsg
 x 22
 y 8
 end
 arch blocked
-msg
-endmsg
 x 22
 y 9
 end
 arch blocked
-msg
-endmsg
 x 22
 y 10
 end
 arch blocked
-msg
-endmsg
 x 22
 y 11
 end
 arch blocked
-msg
-endmsg
 x 22
 y 12
 end
 arch blocked
-msg
-endmsg
 x 22
 y 13
 end
 arch blocked
-msg
-endmsg
 x 22
 y 14
 end
 arch blocked
-msg
-endmsg
 x 22
 y 15
 end
 arch blocked
-msg
-endmsg
 x 22
 y 16
 end
 arch blocked
-msg
-endmsg
 x 22
 y 17
 end
 arch blocked
-msg
-endmsg
 x 22
 y 18
 end
 arch blocked
-msg
-endmsg
 x 22
 y 19
 end
 arch blocked
-msg
-endmsg
 x 22
 y 20
 end
 arch blocked
-msg
-endmsg
 x 22
 y 21
 end
 arch blocked
-msg
-endmsg
 x 22
 y 22
 end
 arch blocked
-msg
-endmsg
 x 22
 y 23
 end
 arch blocked
-msg
-endmsg
 x 22
 y 24
 end
 arch blocked
-msg
-endmsg
 x 22
 y 25
 end
 arch blocked
-msg
-endmsg
 x 22
 y 26
 end
 arch blocked
-msg
-endmsg
 x 22
 y 27
 end
 arch blocked
-msg
-endmsg
 x 22
 y 28
 end
 arch blocked
-msg
-endmsg
 x 22
 y 29
 end
 arch blocked
-msg
-endmsg
 x 22
 y 30
 end
 arch blocked
-msg
-endmsg
 x 22
 y 31
 end
 arch blocked
-msg
-endmsg
 x 22
 y 32
 end
 arch blocked
-msg
-endmsg
 x 22
 y 33
 end
 arch blocked
-msg
-endmsg
 x 22
 y 34
 end
 arch blocked
-msg
-endmsg
 x 22
 y 35
 end
 arch blocked
-msg
-endmsg
 x 22
 y 36
 end
 arch blocked
-msg
-endmsg
 x 22
 y 37
 end
 arch blocked
-msg
-endmsg
 x 22
 y 38
 end
 arch blocked
-msg
-endmsg
 x 22
 y 39
 end
 arch blocked
-msg
-endmsg
 x 22
 y 40
 end
 arch blocked
-msg
-endmsg
 x 22
 y 41
 end
 arch blocked
-msg
-endmsg
 x 22
 y 42
 end
 arch blocked
-msg
-endmsg
 x 22
 y 43
 end
@@ -5882,8 +5622,6 @@ y 5
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
@@ -5893,8 +5631,6 @@ y 6
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 6
 end
@@ -5904,8 +5640,6 @@ y 7
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 7
 end
@@ -5915,8 +5649,6 @@ y 8
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 8
 end
@@ -5926,8 +5658,6 @@ y 9
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 9
 end
@@ -5937,8 +5667,6 @@ y 10
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 10
 end
@@ -5948,8 +5676,6 @@ y 11
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 11
 end
@@ -5959,8 +5685,6 @@ y 12
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 12
 end
@@ -5970,8 +5694,6 @@ y 13
 unique 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 13
 end
@@ -6039,14 +5761,10 @@ x 23
 y 20
 end
 arch blocked
-msg
-endmsg
 x 23
 y 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 22
 end
@@ -6290,14 +6008,10 @@ x 24
 y 20
 end
 arch blocked
-msg
-endmsg
 x 24
 y 21
 end
 arch blocked
-msg
-endmsg
 x 24
 y 22
 end
@@ -6509,14 +6223,10 @@ x 25
 y 20
 end
 arch blocked
-msg
-endmsg
 x 25
 y 21
 end
 arch blocked
-msg
-endmsg
 x 25
 y 22
 end
@@ -6820,14 +6530,10 @@ x 26
 y 20
 end
 arch blocked
-msg
-endmsg
 x 26
 y 21
 end
 arch blocked
-msg
-endmsg
 x 26
 y 22
 end
@@ -7079,14 +6785,10 @@ x 27
 y 20
 end
 arch blocked
-msg
-endmsg
 x 27
 y 21
 end
 arch blocked
-msg
-endmsg
 x 27
 y 22
 end
@@ -7365,14 +7067,10 @@ x 28
 y 20
 end
 arch blocked
-msg
-endmsg
 x 28
 y 21
 end
 arch blocked
-msg
-endmsg
 x 28
 y 22
 end
@@ -7626,14 +7324,10 @@ x 29
 y 20
 end
 arch blocked
-msg
-endmsg
 x 29
 y 21
 end
 arch blocked
-msg
-endmsg
 x 29
 y 22
 end
@@ -7899,14 +7593,10 @@ x 30
 y 20
 end
 arch blocked
-msg
-endmsg
 x 30
 y 21
 end
 arch blocked
-msg
-endmsg
 x 30
 y 22
 end
@@ -8182,14 +7872,10 @@ x 31
 y 20
 end
 arch blocked
-msg
-endmsg
 x 31
 y 21
 end
 arch blocked
-msg
-endmsg
 x 31
 y 22
 end
@@ -8453,14 +8139,10 @@ x 32
 y 20
 end
 arch blocked
-msg
-endmsg
 x 32
 y 21
 end
 arch blocked
-msg
-endmsg
 x 32
 y 22
 end
@@ -8698,14 +8380,10 @@ x 33
 y 20
 end
 arch blocked
-msg
-endmsg
 x 33
 y 21
 end
 arch blocked
-msg
-endmsg
 x 33
 y 22
 end
@@ -8964,14 +8642,10 @@ x 34
 y 20
 end
 arch blocked
-msg
-endmsg
 x 34
 y 21
 end
 arch blocked
-msg
-endmsg
 x 34
 y 22
 end
@@ -9209,14 +8883,10 @@ x 35
 y 20
 end
 arch blocked
-msg
-endmsg
 x 35
 y 21
 end
 arch blocked
-msg
-endmsg
 x 35
 y 22
 end
@@ -9483,14 +9153,10 @@ x 36
 y 20
 end
 arch blocked
-msg
-endmsg
 x 36
 y 21
 end
 arch blocked
-msg
-endmsg
 x 36
 y 22
 end
@@ -9814,14 +9480,10 @@ x 37
 y 20
 end
 arch blocked
-msg
-endmsg
 x 37
 y 21
 end
 arch blocked
-msg
-endmsg
 x 37
 y 22
 end
@@ -9940,139 +9602,93 @@ x 37
 y 43
 end
 arch blocked
-msg
-endmsg
 x 38
 end
 arch blocked
-msg
-endmsg
 x 38
 y 1
 end
 arch blocked
-msg
-endmsg
 x 38
 y 2
 end
 arch blocked
-msg
-endmsg
 x 38
 y 3
 end
 arch blocked
-msg
-endmsg
 x 38
 y 4
 end
 arch blocked
-msg
-endmsg
 x 38
 y 5
 end
 arch blocked
-msg
-endmsg
 x 38
 y 6
 end
 arch blocked
-msg
-endmsg
 x 38
 y 7
 end
 arch blocked
-msg
-endmsg
 x 38
 y 8
 end
 arch blocked
-msg
-endmsg
 x 38
 y 9
 end
 arch blocked
-msg
-endmsg
 x 38
 y 10
 end
 arch blocked
-msg
-endmsg
 x 38
 y 11
 end
 arch blocked
-msg
-endmsg
 x 38
 y 12
 end
 arch blocked
-msg
-endmsg
 x 38
 y 13
 end
 arch blocked
-msg
-endmsg
 x 38
 y 14
 end
 arch blocked
-msg
-endmsg
 x 38
 y 15
 end
 arch blocked
-msg
-endmsg
 x 38
 y 16
 end
 arch blocked
-msg
-endmsg
 x 38
 y 17
 end
 arch blocked
-msg
-endmsg
 x 38
 y 18
 end
 arch blocked
-msg
-endmsg
 x 38
 y 19
 end
 arch blocked
-msg
-endmsg
 x 38
 y 20
 end
 arch blocked
-msg
-endmsg
 x 38
 y 21
 end
 arch blocked
-msg
-endmsg
 x 38
 y 22
 end
@@ -10191,139 +9807,93 @@ x 38
 y 43
 end
 arch blocked
-msg
-endmsg
 x 39
 end
 arch blocked
-msg
-endmsg
 x 39
 y 1
 end
 arch blocked
-msg
-endmsg
 x 39
 y 2
 end
 arch blocked
-msg
-endmsg
 x 39
 y 3
 end
 arch blocked
-msg
-endmsg
 x 39
 y 4
 end
 arch blocked
-msg
-endmsg
 x 39
 y 5
 end
 arch blocked
-msg
-endmsg
 x 39
 y 6
 end
 arch blocked
-msg
-endmsg
 x 39
 y 7
 end
 arch blocked
-msg
-endmsg
 x 39
 y 8
 end
 arch blocked
-msg
-endmsg
 x 39
 y 9
 end
 arch blocked
-msg
-endmsg
 x 39
 y 10
 end
 arch blocked
-msg
-endmsg
 x 39
 y 11
 end
 arch blocked
-msg
-endmsg
 x 39
 y 12
 end
 arch blocked
-msg
-endmsg
 x 39
 y 13
 end
 arch blocked
-msg
-endmsg
 x 39
 y 14
 end
 arch blocked
-msg
-endmsg
 x 39
 y 15
 end
 arch blocked
-msg
-endmsg
 x 39
 y 16
 end
 arch blocked
-msg
-endmsg
 x 39
 y 17
 end
 arch blocked
-msg
-endmsg
 x 39
 y 18
 end
 arch blocked
-msg
-endmsg
 x 39
 y 19
 end
 arch blocked
-msg
-endmsg
 x 39
 y 20
 end
 arch blocked
-msg
-endmsg
 x 39
 y 21
 end
 arch blocked
-msg
-endmsg
 x 39
 y 22
 end
@@ -10543,14 +10113,10 @@ x 40
 y 20
 end
 arch blocked
-msg
-endmsg
 x 40
 y 21
 end
 arch blocked
-msg
-endmsg
 x 40
 y 22
 end
@@ -10738,14 +10304,10 @@ x 41
 y 20
 end
 arch blocked
-msg
-endmsg
 x 41
 y 21
 end
 arch blocked
-msg
-endmsg
 x 41
 y 22
 end
@@ -11053,14 +10615,10 @@ x 42
 y 20
 end
 arch blocked
-msg
-endmsg
 x 42
 y 21
 end
 arch blocked
-msg
-endmsg
 x 42
 y 22
 end
@@ -11248,14 +10806,10 @@ x 43
 y 20
 end
 arch blocked
-msg
-endmsg
 x 43
 y 21
 end
 arch blocked
-msg
-endmsg
 x 43
 y 22
 end
@@ -11475,140 +11029,94 @@ x 44
 y 20
 end
 arch blocked
-msg
-endmsg
 x 44
 y 21
 end
 arch blocked
-msg
-endmsg
 x 44
 y 22
 end
 arch blocked
-msg
-endmsg
 x 44
 y 23
 end
 arch blocked
-msg
-endmsg
 x 44
 y 24
 end
 arch blocked
-msg
-endmsg
 x 44
 y 25
 end
 arch blocked
-msg
-endmsg
 x 44
 y 26
 end
 arch blocked
-msg
-endmsg
 x 44
 y 27
 end
 arch blocked
-msg
-endmsg
 x 44
 y 28
 end
 arch blocked
-msg
-endmsg
 x 44
 y 29
 end
 arch blocked
-msg
-endmsg
 x 44
 y 30
 end
 arch blocked
-msg
-endmsg
 x 44
 y 31
 end
 arch blocked
-msg
-endmsg
 x 44
 y 32
 end
 arch blocked
-msg
-endmsg
 x 44
 y 33
 end
 arch blocked
-msg
-endmsg
 x 44
 y 34
 end
 arch blocked
-msg
-endmsg
 x 44
 y 35
 end
 arch blocked
-msg
-endmsg
 x 44
 y 36
 end
 arch blocked
-msg
-endmsg
 x 44
 y 37
 end
 arch blocked
-msg
-endmsg
 x 44
 y 38
 end
 arch blocked
-msg
-endmsg
 x 44
 y 39
 end
 arch blocked
-msg
-endmsg
 x 44
 y 40
 end
 arch blocked
-msg
-endmsg
 x 44
 y 41
 end
 arch blocked
-msg
-endmsg
 x 44
 y 42
 end
 arch blocked
-msg
-endmsg
 x 44
 y 43
 end
@@ -11738,140 +11246,94 @@ x 45
 y 20
 end
 arch blocked
-msg
-endmsg
 x 45
 y 21
 end
 arch blocked
-msg
-endmsg
 x 45
 y 22
 end
 arch blocked
-msg
-endmsg
 x 45
 y 23
 end
 arch blocked
-msg
-endmsg
 x 45
 y 24
 end
 arch blocked
-msg
-endmsg
 x 45
 y 25
 end
 arch blocked
-msg
-endmsg
 x 45
 y 26
 end
 arch blocked
-msg
-endmsg
 x 45
 y 27
 end
 arch blocked
-msg
-endmsg
 x 45
 y 28
 end
 arch blocked
-msg
-endmsg
 x 45
 y 29
 end
 arch blocked
-msg
-endmsg
 x 45
 y 30
 end
 arch blocked
-msg
-endmsg
 x 45
 y 31
 end
 arch blocked
-msg
-endmsg
 x 45
 y 32
 end
 arch blocked
-msg
-endmsg
 x 45
 y 33
 end
 arch blocked
-msg
-endmsg
 x 45
 y 34
 end
 arch blocked
-msg
-endmsg
 x 45
 y 35
 end
 arch blocked
-msg
-endmsg
 x 45
 y 36
 end
 arch blocked
-msg
-endmsg
 x 45
 y 37
 end
 arch blocked
-msg
-endmsg
 x 45
 y 38
 end
 arch blocked
-msg
-endmsg
 x 45
 y 39
 end
 arch blocked
-msg
-endmsg
 x 45
 y 40
 end
 arch blocked
-msg
-endmsg
 x 45
 y 41
 end
 arch blocked
-msg
-endmsg
 x 45
 y 42
 end
 arch blocked
-msg
-endmsg
 x 45
 y 43
 end
@@ -11994,14 +11456,10 @@ x 46
 y 20
 end
 arch blocked
-msg
-endmsg
 x 46
 y 21
 end
 arch blocked
-msg
-endmsg
 x 46
 y 22
 end
@@ -12122,14 +11580,10 @@ x 47
 y 20
 end
 arch blocked
-msg
-endmsg
 x 47
 y 21
 end
 arch blocked
-msg
-endmsg
 x 47
 y 22
 end
@@ -12279,14 +11733,10 @@ x 48
 y 20
 end
 arch blocked
-msg
-endmsg
 x 48
 y 21
 end
 arch blocked
-msg
-endmsg
 x 48
 y 22
 end
@@ -12416,14 +11866,10 @@ x 49
 y 20
 end
 arch blocked
-msg
-endmsg
 x 49
 y 21
 end
 arch blocked
-msg
-endmsg
 x 49
 y 22
 end
@@ -12574,14 +12020,10 @@ x 50
 y 20
 end
 arch blocked
-msg
-endmsg
 x 50
 y 21
 end
 arch blocked
-msg
-endmsg
 x 50
 y 22
 end
@@ -12711,14 +12153,10 @@ x 51
 y 20
 end
 arch blocked
-msg
-endmsg
 x 51
 y 21
 end
 arch blocked
-msg
-endmsg
 x 51
 y 22
 end
@@ -12868,14 +12306,10 @@ x 52
 y 20
 end
 arch blocked
-msg
-endmsg
 x 52
 y 21
 end
 arch blocked
-msg
-endmsg
 x 52
 y 22
 end
@@ -12996,14 +12430,10 @@ x 53
 y 20
 end
 arch blocked
-msg
-endmsg
 x 53
 y 21
 end
 arch blocked
-msg
-endmsg
 x 53
 y 22
 end
@@ -13126,14 +12556,10 @@ x 54
 y 20
 end
 arch blocked
-msg
-endmsg
 x 54
 y 21
 end
 arch blocked
-msg
-endmsg
 x 54
 y 22
 end
@@ -13277,14 +12703,10 @@ x 55
 y 20
 end
 arch blocked
-msg
-endmsg
 x 55
 y 21
 end
 arch blocked
-msg
-endmsg
 x 55
 y 22
 end
@@ -13420,14 +12842,10 @@ x 56
 y 20
 end
 arch blocked
-msg
-endmsg
 x 56
 y 21
 end
 arch blocked
-msg
-endmsg
 x 56
 y 22
 end
@@ -13531,14 +12949,10 @@ x 57
 y 20
 end
 arch blocked
-msg
-endmsg
 x 57
 y 21
 end
 arch blocked
-msg
-endmsg
 x 57
 y 22
 end
@@ -13694,14 +13108,10 @@ x 58
 y 20
 end
 arch blocked
-msg
-endmsg
 x 58
 y 21
 end
 arch blocked
-msg
-endmsg
 x 58
 y 22
 end
@@ -13789,14 +13199,10 @@ x 59
 y 20
 end
 arch blocked
-msg
-endmsg
 x 59
 y 21
 end
 arch blocked
-msg
-endmsg
 x 59
 y 22
 end
@@ -13884,14 +13290,10 @@ x 60
 y 20
 end
 arch blocked
-msg
-endmsg
 x 60
 y 21
 end
 arch blocked
-msg
-endmsg
 x 60
 y 22
 end

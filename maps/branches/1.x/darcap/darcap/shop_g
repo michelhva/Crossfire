@@ -1,8 +1,11 @@
 arch map
+name <unnamed>
+fixed_resettime 1
 region darcap
-stand_still 1
 shopitems food:100;flesh:50;*:-80
 shopmax 8000
+width 16
+height 16
 end
 arch woodfloor
 end
@@ -305,7 +308,7 @@ msg
 @match Hello|hello
 Hello. Would you like to buy some fish?
 @match Order|order|tower|Tower
-To open the Tower, you must uses each part 
+To open the Tower, you must uses each part
   in order of the sage's names.  Good Luck.
 @match sage|Sage
 I don't know.  Go ask them!

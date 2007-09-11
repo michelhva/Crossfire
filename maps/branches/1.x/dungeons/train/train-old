@@ -1,14 +1,14 @@
 arch map
 name Training Center
+reset_timeout 1800
 region scorn
+width 10
+height 20
 msg
 Creator: Preston Crow
 Date:    6/19/2003
 cvs #2
 endmsg
-width 10
-height 20
-reset_timeout 1800
 end
 arch flagstone
 end
@@ -148,6 +148,7 @@ x 1
 y 4
 end
 arch stair_down
+slaying /!
 msg
 layoutstyle onion
 symmetry 0
@@ -164,7 +165,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 1
 y 4
 end
@@ -196,6 +196,7 @@ x 1
 y 8
 end
 arch stair_down
+slaying /!
 msg
 layoutstyle onion
 symmetry 0
@@ -212,7 +213,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 1
 y 8
 end
@@ -358,9 +358,9 @@ x 2
 y 4
 end
 arch grate_closed_2
-connected 3
 x 2
 y 4
+connected 3
 end
 arch flagstone
 x 2
@@ -409,9 +409,9 @@ x 2
 y 8
 end
 arch grate_closed_2
-connected 1
 x 2
 y 8
+connected 1
 end
 arch flagstone
 x 2
@@ -538,15 +538,15 @@ x 3
 y 4
 end
 arch altar
+slaying dragon scale
 msg
 Beware!
 Your first step may be into the mouth of a dragon!
 endmsg
-slaying dragon scale
 food 1
-connected 3
 x 3
 y 4
+connected 3
 end
 arch flagstone
 x 3
@@ -586,15 +586,15 @@ x 3
 y 8
 end
 arch altar
+slaying bonecrusher
 msg
 Beware!
 Titans will be the least of your worries!
 endmsg
-slaying bonecrusher
 food 1
-connected 1
 x 3
 y 8
+connected 1
 end
 arch flagstone
 x 3
@@ -893,15 +893,15 @@ x 6
 y 4
 end
 arch altar
+slaying Firebrand
 msg
 Prepare for fire and brimstone...
 or there will be wailing and nashing of teeth!
 endmsg
-slaying Firebrand
 food 1
-connected 4
 x 6
 y 4
+connected 4
 end
 arch flagstone
 x 6
@@ -941,15 +941,15 @@ x 6
 y 8
 end
 arch altar
+slaying lich dust
 msg
 Beware!
 You will soon be undead yourself!
 endmsg
-slaying lich dust
 food 1
-connected 2
 x 6
 y 8
+connected 2
 end
 arch flagstone
 x 6
@@ -1057,9 +1057,9 @@ x 7
 y 4
 end
 arch grate_closed_2
-connected 4
 x 7
 y 4
+connected 4
 end
 arch flagstone
 x 7
@@ -1108,9 +1108,9 @@ x 7
 y 8
 end
 arch grate_closed_2
-connected 2
 x 7
 y 8
+connected 2
 end
 arch flagstone
 x 7
@@ -1229,6 +1229,7 @@ x 8
 y 4
 end
 arch stair_down_4
+slaying /!
 msg
 layoutstyle onion
 symmetry 0
@@ -1245,7 +1246,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 8
 y 4
 end
@@ -1277,6 +1277,7 @@ x 8
 y 8
 end
 arch stair_down_4
+slaying /!
 msg
 layoutstyle onion
 symmetry 0
@@ -1293,7 +1294,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 8
 y 8
 end

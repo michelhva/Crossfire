@@ -1,17 +1,17 @@
 arch map
 name Weapon Shop
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/18/2005
-endmsg
+shopitems weapon:75;bow:35;*:-40
+shopmin 500
+shopmax 80000
 width 15
 height 15
 enter_x 7
 enter_y 14
-shopitems weapon:75;bow:35;*:-40
-shopmax 80000
-shopmin 500
+msg
+Creator: Knut Ahlers
+Date:    7/18/2005
+endmsg
 end
 arch dungeon_magic
 end
@@ -522,14 +522,14 @@ x 3
 y 12
 end
 arch stonefloor2
-no_pass 1
 x 3
 y 13
+no_pass 1
 end
 arch chair_2.4
-no_pick 1
 x 3
 y 13
+no_pick 1
 end
 arch dungeon_magic
 x 3
@@ -635,18 +635,18 @@ x 4
 y 13
 end
 arch table_4
-no_pick 1
 x 4
 y 13
+no_pick 1
 end
 arch letter
 msg
 I'll be back later. Gone with the dog.
 endmsg
-no_pick 1
-level 1
 x 4
 y 13
+level 1
+no_pick 1
 end
 arch dungeon_magic
 x 4

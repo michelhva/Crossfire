@@ -1,6 +1,8 @@
 arch map
-region stoneville
 name house5
+region stoneville
+width 16
+height 16
 msg
 Creator: Viola Krings
 Email: 
@@ -389,6 +391,10 @@ x 3
 y 9
 end
 arch dungeon_floor
+x 3
+y 10
+end
+arch giant
 x 3
 y 10
 end
@@ -1813,8 +1819,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-x 3
-y 10
 end

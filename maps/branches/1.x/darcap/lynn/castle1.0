@@ -1,14 +1,14 @@
 arch map
-region darcap
 name castle1
+region darcap
+darkness 1
+width 20
+height 19
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Sun Jan 17 20:29:10 1999
 endmsg
-x 20
-y 19
-invisible 1
 end
 arch dungeon_floor
 end

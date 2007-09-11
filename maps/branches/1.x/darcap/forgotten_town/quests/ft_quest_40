@@ -1,14 +1,14 @@
 arch map
 name Quest #40
+width 36
+height 19
+enter_x 32
+enter_y 12
 msg
 Creator: K. Ahlers
 Date:    8/2/2006
 Email: info@knutshome.de
 endmsg
-width 36
-height 19
-enter_x 32
-enter_y 12
 end
 arch dirtfloor
 end
@@ -957,6 +957,46 @@ arch dirtfloor
 x 7
 y 5
 end
+arch cyclops
+name Archie
+msg
+@match *
+You will DIE!
+endmsg
+Wis 50
+Int 50
+hp 16000
+maxhp 16000
+exp 2500
+dam 60
+x 7
+y 5
+level 70
+resist_physical 25
+resist_confusion 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_poison 50
+resist_turn_undead 50
+resist_fear 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 100
+pick_up 64
+reflect_missile 1
+can_use_armour 1
+can_use_ring 1
+sleep 0
+can_see_in_dark 1
+arch key2
+name FT-Questkey #40
+slaying ft-q40-open
+end
+arch random_weapon
+no_pick 1
+end
+end
 arch magic_banned
 x 7
 y 6
@@ -1535,9 +1575,9 @@ y 1
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 11
 y 1
+connected 101
 end
 arch dirtfloor
 x 11
@@ -1549,9 +1589,9 @@ y 2
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 11
 y 2
+connected 101
 end
 arch dirtfloor
 x 11
@@ -1711,10 +1751,10 @@ x 12
 y 1
 end
 arch spikes_closed
-invisible 1
-connected 101
 x 12
 y 1
+invisible 1
+connected 101
 end
 arch magic_banned
 x 12
@@ -1722,9 +1762,9 @@ y 2
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 12
 y 2
+connected 101
 end
 arch dirtfloor
 x 12
@@ -2419,6 +2459,74 @@ arch dirtfloor
 x 18
 y 3
 end
+arch big_wiz
+name Grimsu
+Con 56
+Wis 50
+Pow 50
+Int 50
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 1000
+x 18
+y 3
+attack_movement 0
+level 60
+attacktype 129
+resist_physical 100
+resist_magic 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_poison 75
+resist_slow 50
+resist_paralyze 75
+resist_turn_undead 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+path_attuned 1048575
+reflect_spell 1
+can_use_bow 1
+sleep 0
+can_use_skill 1
+can_see_in_dark 1
+arch key2
+name FT-Questkey #40
+slaying ft-q40-open
+end
+arch rod_heavy
+hp 200
+maxhp 200
+sp 17
+level 100
+startequip 1
+arch speedball
+startequip 1
+end
+end
+arch rod_heavy
+hp 200
+maxhp 200
+sp 90
+level 100
+startequip 1
+end
+arch rod_heavy
+hp 200
+maxhp 200
+sp 199
+level 100
+startequip 1
+end
+end
 arch dirtfloor
 x 18
 y 4
@@ -2905,9 +3013,9 @@ y 1
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 24
 y 1
+connected 101
 end
 arch dirtfloor
 x 24
@@ -2919,9 +3027,9 @@ y 2
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 24
 y 2
+connected 101
 end
 arch dirtfloor
 x 24
@@ -3017,10 +3125,10 @@ x 25
 y 1
 end
 arch spikes_closed
-invisible 1
-connected 101
 x 25
 y 1
+invisible 1
+connected 101
 end
 arch magic_banned
 x 25
@@ -3028,9 +3136,9 @@ y 2
 end
 arch check_floor
 slaying ft-q40-open
-connected 101
 x 25
 y 2
+connected 101
 end
 arch dirtfloor
 x 25
@@ -3577,9 +3685,9 @@ y 9
 end
 arch perm_magic_portal
 name Warrior Entrance
+slaying ft_quest_40
 hp 3
 sp 17
-slaying ft_quest_40
 x 30
 y 9
 end
@@ -3790,19 +3898,19 @@ is due a spell which was spoken for 350 years
 resistant against all physical forces.
 
 Now adventurer, finish your work and decide
-yourself for one side but be warned: If you 
+yourself for one side but be warned: If you
 enter the teleporter there is no way back! You
 must succeed!"
 endmsg
-connected 1
 food 1
 x 32
 y 11
+connected 1
 end
 arch button_small
-connected 1
 x 32
 y 11
+connected 1
 end
 arch flagstone
 x 32
@@ -3944,9 +4052,9 @@ x 34
 y 1
 end
 arch stair_3_down
+slaying ft_quest_40
 hp 25
 sp 1
-slaying ft_quest_40
 x 34
 y 1
 end
@@ -3992,9 +4100,9 @@ y 9
 end
 arch perm_magic_portal
 name Wizards Entrance
+slaying ft_quest_40
 hp 16
 sp 17
-slaying ft_quest_40
 x 34
 y 9
 end
@@ -4151,112 +4259,4 @@ end
 arch blocked
 x 35
 y 18
-end
-arch cyclops
-name Archie
-msg
-@match *
-You will DIE!
-endmsg
-level 70
-exp 2500
-dam 60
-hp 16000
-maxhp 16000
-reflect_missile 1
-Int 50
-can_see_in_dark 1
-can_use_armour 1
-can_use_ring 1
-sleep 0
-pick_up 64
-Wis 50
-resist_physical 25
-resist_confusion 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_poison 50
-resist_fear 50
-resist_deplete 50
-resist_turn_undead 50
-resist_death 50
-resist_chaos 50
-resist_blind 100
-x 7
-y 5
-arch key2
-name FT-Questkey #40
-slaying ft-q40-open
-end
-arch random_weapon
-no_pick 1
-end
-end
-arch big_wiz
-name Grimsu
-level 60
-exp 1000
-attacktype 129
-hp 10000
-maxhp 10000
-Con 56
-reflect_spell 1
-sp 500
-maxsp 500
-Pow 50
-path_attuned 1048575
-Int 50
-can_see_in_dark 1
-can_use_bow 1
-can_use_skill 1
-sleep 0
-Wis 50
-attack_movement 0
-resist_physical 100
-resist_magic 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_poison 75
-resist_slow 50
-resist_paralyze 75
-resist_deplete 50
-resist_turn_undead 50
-resist_death 50
-resist_chaos 50
-x 18
-y 3
-arch key2
-name FT-Questkey #40
-slaying ft-q40-open
-end
-arch rod_heavy
-sp 17
-level 100
-hp 200
-maxhp 200
-startequip 1
-arch speedball
-startequip 1
-end
-end
-arch rod_heavy
-sp 90
-level 100
-hp 200
-maxhp 200
-startequip 1
-end
-arch rod_heavy
-sp 199
-level 100
-hp 200
-maxhp 200
-startequip 1
-end
 end
