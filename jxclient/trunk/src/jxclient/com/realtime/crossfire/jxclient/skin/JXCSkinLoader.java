@@ -898,7 +898,16 @@ public abstract class JXCSkinLoader implements JXCSkin
     private BufferedImage getPicture(final String name) throws IOException
     {
         final String filename = "pictures/"+name+".png";
-        final BufferedImage picture = ImageIO.read(getInputStream(filename));
+        final BufferedImage picture;
+        final InputStream inputStream = getInputStream(filename);
+        try
+        {
+                picture = ImageIO.read(inputStream);
+        }
+        finally
+        {
+                inputStream.close();
+        }
         if (picture == null)
         {
             throw new IOException("picture '"+getURI(filename)+"' does not exist");
