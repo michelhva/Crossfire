@@ -539,14 +539,14 @@ public class CfMap
             return false;
         }
 
-        px = div(x-patchX, CfMapPatch.SIZE)-minPx;
-        py = div(y-patchY, CfMapPatch.SIZE)-minPy;
+        px = ((x-patchX)>>CfMapPatch.SIZE_LOG)-minPx;
+        py = ((y-patchY)>>CfMapPatch.SIZE_LOG)-minPy;
         assert px >= 0;
         assert py >= 0;
         assert px <= maxPx-minPx;
         assert py <= maxPy-minPy;
-        ox = mod(x-patchX, CfMapPatch.SIZE);
-        oy = mod(y-patchY, CfMapPatch.SIZE);
+        ox = (x-patchX)&(CfMapPatch.SIZE-1);
+        oy = (y-patchY)&(CfMapPatch.SIZE-1);
         assert ox >= 0;
         assert oy >= 0;
         assert ox < CfMapPatch.SIZE;
@@ -596,8 +596,8 @@ public class CfMap
             // current map is undefined ==> start with 1x1 map
             minX = maxX = x;
             minY = maxY = y;
-            minPx = maxPx = div(x-patchX, CfMapPatch.SIZE);
-            minPy = maxPy = div(y-patchY, CfMapPatch.SIZE);
+            minPx = maxPx = (x-patchX)>>CfMapPatch.SIZE_LOG;
+            minPy = maxPy = (y-patchY)>>CfMapPatch.SIZE_LOG;
             patch = new CfMapPatch[1][1];
             patch[0][0] = null;
         }
@@ -631,7 +631,7 @@ public class CfMap
         if (dx < 0)
         {
             final int newMinX = minX+dx;
-            final int newMinPx = div(newMinX-patchX, CfMapPatch.SIZE);
+            final int newMinPx = (newMinX-patchX)>>CfMapPatch.SIZE_LOG;
             final int diffPw = minPx-newMinPx;
             if (diffPw == 0)
             {
@@ -677,7 +677,7 @@ public class CfMap
         else if (dx > 0)
         {
             final int newMaxX = maxX+dx;
-            final int newMaxPx = div(newMaxX-patchX, CfMapPatch.SIZE);
+            final int newMaxPx = (newMaxX-patchX)>>CfMapPatch.SIZE_LOG;
             final int diffPw = newMaxPx-maxPx;
             if (diffPw == 0)
             {
@@ -724,7 +724,7 @@ public class CfMap
         if (dy < 0)
         {
             final int newMinY = minY+dy;
-            final int newMinPy = div(newMinY-patchY, CfMapPatch.SIZE);
+            final int newMinPy = (newMinY-patchY)>>CfMapPatch.SIZE_LOG;
             final int diffPh = minPy-newMinPy;
             if (diffPh == 0)
             {
@@ -772,7 +772,7 @@ public class CfMap
         else if (dy > 0)
         {
             final int newMaxY = maxY+dy;
-            final int newMaxPy = div(newMaxY-patchY, CfMapPatch.SIZE);
+            final int newMaxPy = (newMaxY-patchY)>>CfMapPatch.SIZE_LOG;
             final int diffPh = newMaxPy-maxPy;
             if (diffPh == 0)
             {
@@ -830,44 +830,6 @@ public class CfMap
     private static int size(final int min, final int max)
     {
         return max-min+1;
-    }
-
-    /**
-     * Calculate <code>x/y</code> but always round towards negative infinitiy.
-     *
-     * @param x The numerator.
-     *
-     * @param y the denominator.
-     */
-    private static int div(final int x, final int y)
-    {
-        if (y <= 0) throw new IllegalArgumentException();
-
-        if (x >= 0)
-        {
-            return x/y;
-        }
-
-        return -((-x+y-1)/y);
-    }
-
-    /**
-     * Calculate <code>x%y</code> but alway round towards negative infinity.
-     *
-     * @param x The numerator.
-     *
-     * @param y the denominator.
-     */
-    private static int mod(final int x, final int y)
-    {
-        if (y <= 0) throw new IllegalArgumentException();
-
-        if (x >= 0)
-        {
-            return x%y;
-        }
-
-        return x-div(x, y)*y;
     }
 
     /**
