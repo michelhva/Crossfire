@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name cave
+difficulty 5
+region ancientpupland
+width 22
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 30 01:29:27 1996
 endmsg
-x 22
-y 32
-level 5
 end
 arch medium_stones
 y 2
@@ -71,8 +71,8 @@ arch pit_closed
 hp 5
 sp 23
 y 18
-protected 100
 connected 100
+protected 100
 end
 arch stair_up
 slaying cave.b3
@@ -497,9 +497,9 @@ end
 arch button_lever
 x 4
 y 5
-protected 100
 invisible 1
 connected 100
+protected 100
 end
 arch medium_stones
 x 4
@@ -693,6 +693,11 @@ arch large_stones
 x 5
 y 9
 end
+arch gaelotroll
+name large zombie
+x 5
+y 9
+end
 arch large_stones
 x 5
 y 10
@@ -798,9 +803,9 @@ hp 16
 sp 5
 x 6
 y 4
-protected 100
 invisible 1
 connected 100
+protected 100
 end
 arch medium_stones
 x 6
@@ -811,9 +816,9 @@ hp 16
 sp 5
 x 6
 y 5
-protected 100
 invisible 1
 connected 100
+protected 100
 end
 arch medium_stones
 x 6
@@ -824,9 +829,9 @@ hp 16
 sp 5
 x 6
 y 6
-protected 100
 invisible 1
 connected 100
+protected 100
 end
 arch medium_stones
 x 6
@@ -857,6 +862,11 @@ x 6
 y 11
 end
 arch large_stones
+x 6
+y 12
+end
+arch gaelotroll
+name large zombie
 x 6
 y 12
 end
@@ -976,6 +986,11 @@ arch large_stones
 x 7
 y 9
 end
+arch gaelotroll
+name large zombie
+x 7
+y 9
+end
 arch large_stones
 x 7
 y 10
@@ -1116,6 +1131,11 @@ arch large_stones
 x 8
 y 12
 end
+arch gaelotroll
+name large zombie
+x 8
+y 12
+end
 arch large_stones
 x 8
 y 13
@@ -1125,6 +1145,11 @@ x 8
 y 14
 end
 arch large_stones
+x 8
+y 15
+end
+arch gaelotroll
+name large zombie
 x 8
 y 15
 end
@@ -1236,6 +1261,11 @@ arch large_stones
 x 9
 y 9
 end
+arch gaelotroll
+name large zombie
+x 9
+y 9
+end
 arch large_stones
 x 9
 y 10
@@ -1307,9 +1337,9 @@ end
 arch button_lever
 x 9
 y 23
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch large_stones
 x 9
@@ -1401,6 +1431,11 @@ arch large_stones
 x 10
 y 12
 end
+arch gaelotroll
+name large zombie
+x 10
+y 12
+end
 arch large_stones
 x 10
 y 13
@@ -1410,6 +1445,11 @@ x 10
 y 14
 end
 arch large_stones
+x 10
+y 15
+end
+arch gaelotroll
+name large zombie
 x 10
 y 15
 end
@@ -1462,8 +1502,8 @@ x 10
 y 23
 speed 0.500000
 speed_left -4.100000
-protected 1
 connected 1
+protected 1
 end
 arch large_stones
 x 10
@@ -1534,6 +1574,11 @@ x 11
 y 8
 end
 arch large_stones
+x 11
+y 9
+end
+arch gaelotroll
+name large zombie
 x 11
 y 9
 end
@@ -1693,6 +1738,11 @@ arch large_stones
 x 12
 y 12
 end
+arch gaelotroll
+name large zombie
+x 12
+y 12
+end
 arch large_stones
 x 12
 y 13
@@ -1702,6 +1752,11 @@ x 12
 y 14
 end
 arch large_stones
+x 12
+y 15
+end
+arch gaelotroll
+name large zombie
 x 12
 y 15
 end
@@ -1806,6 +1861,11 @@ x 13
 y 8
 end
 arch large_stones
+x 13
+y 9
+end
+arch gaelotroll
+name large zombie
 x 13
 y 9
 end
@@ -1953,6 +2013,11 @@ arch large_stones
 x 14
 y 12
 end
+arch gaelotroll
+name large zombie
+x 14
+y 12
+end
 arch large_stones
 x 14
 y 13
@@ -1962,6 +2027,11 @@ x 14
 y 14
 end
 arch large_stones
+x 14
+y 15
+end
+arch gaelotroll
+name large zombie
 x 14
 y 15
 end
@@ -2076,6 +2146,11 @@ arch large_stones
 x 15
 y 9
 end
+arch gaelotroll
+name large zombie
+x 15
+y 9
+end
 arch large_stones
 x 15
 y 10
@@ -2216,6 +2291,11 @@ arch large_stones
 x 16
 y 12
 end
+arch gaelotroll
+name large zombie
+x 16
+y 12
+end
 arch large_stones
 x 16
 y 13
@@ -2225,6 +2305,11 @@ x 16
 y 14
 end
 arch large_stones
+x 16
+y 15
+end
+arch gaelotroll
+name large zombie
 x 16
 y 15
 end
@@ -2335,6 +2420,11 @@ x 17
 y 8
 end
 arch large_stones
+x 17
+y 9
+end
+arch gaelotroll
+name large zombie
 x 17
 y 9
 end
@@ -2489,6 +2579,11 @@ arch large_stones
 x 18
 y 12
 end
+arch gaelotroll
+name large zombie
+x 18
+y 12
+end
 arch large_stones
 x 18
 y 13
@@ -2498,6 +2593,11 @@ x 18
 y 14
 end
 arch large_stones
+x 18
+y 15
+end
+arch gaelotroll
+name large zombie
 x 18
 y 15
 end
@@ -2956,104 +3056,4 @@ end
 arch rough_wall_2_2_4
 x 21
 y 20
-end
-arch gaelotroll
-name large zombie
-x 5
-y 9
-end
-arch gaelotroll
-name large zombie
-x 6
-y 12
-end
-arch gaelotroll
-name large zombie
-x 7
-y 9
-end
-arch gaelotroll
-name large zombie
-x 8
-y 12
-end
-arch gaelotroll
-name large zombie
-x 8
-y 15
-end
-arch gaelotroll
-name large zombie
-x 9
-y 9
-end
-arch gaelotroll
-name large zombie
-x 10
-y 12
-end
-arch gaelotroll
-name large zombie
-x 10
-y 15
-end
-arch gaelotroll
-name large zombie
-x 11
-y 9
-end
-arch gaelotroll
-name large zombie
-x 12
-y 12
-end
-arch gaelotroll
-name large zombie
-x 12
-y 15
-end
-arch gaelotroll
-name large zombie
-x 13
-y 9
-end
-arch gaelotroll
-name large zombie
-x 14
-y 12
-end
-arch gaelotroll
-name large zombie
-x 14
-y 15
-end
-arch gaelotroll
-name large zombie
-x 15
-y 9
-end
-arch gaelotroll
-name large zombie
-x 16
-y 12
-end
-arch gaelotroll
-name large zombie
-x 16
-y 15
-end
-arch gaelotroll
-name large zombie
-x 17
-y 9
-end
-arch gaelotroll
-name large zombie
-x 18
-y 12
-end
-arch gaelotroll
-name large zombie
-x 18
-y 15
 end

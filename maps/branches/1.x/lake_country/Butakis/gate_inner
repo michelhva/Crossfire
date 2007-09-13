@@ -1,12 +1,13 @@
 arch map
-region lakecountry
 name gate_inner
+region lakecountry
+width 16
+height 17
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Tue Mar 28 13:48:24 1995
 endmsg
-y 17
 end
 arch marble
 end
@@ -947,7 +948,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to 
+"Okay, you are granted permission to
 enter the inner city." the High Royal
 Guard says.
 endmsg
@@ -1133,7 +1134,7 @@ end
 arch magic_ear
 msg
 @match worsh|church|library|god|hearing
-"Okay, you are granted permission to 
+"Okay, you are granted permission to
 enter the inner city." the High Royal
 Guard says.
 endmsg

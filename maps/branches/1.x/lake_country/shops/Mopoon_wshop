@@ -1,24 +1,29 @@
 arch map
-region lakecountry
 name Mopoon_wshop
+difficulty 25
+region lakecountry
 shopitems weapons:65;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
 shopmin 10
 shopmax 100000
+width 24
+height 24
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Sun Mar 19 06:18:46 1995
 endmsg
-difficulty 25
-x 24
-y 24
 end
 arch dungeon_floor
+end
+arch chinese_dragon
 end
 arch dungeon_floor
 y 1
 end
 arch dungeon_floor
+y 2
+end
+arch big_dragon
 y 2
 end
 arch dungeon_floor
@@ -348,6 +353,10 @@ arch dungeon_floor
 x 2
 y 20
 end
+arch big_dragon
+x 2
+y 20
+end
 arch dungeon_floor
 x 2
 y 21
@@ -562,7 +571,7 @@ druid's name!"
 back some sad memories. How I wish to
 see him again, my old Zykie."
 @match Thanks|thanks|thank|thanx|Thank
-  "You are welcome. Give me some of 
+  "You are welcome. Give me some of
 your rare discoveries next time."
 @match spirit|forest|druid
   "Someone said the wind in the forest
@@ -583,7 +592,7 @@ and my sword also, that they confused
 my name with the sword's. I was named
 Dragonslayer by my father who tried all
 his life to avenge for the deaths of
-his village."  
+his village."
 @match Dragonbane|dragonbane
   "What do you want of my Dragonbane?"
 @match Power|Mail|dragonmail|mail
@@ -596,7 +605,7 @@ in the dragon caves in the forest
 not far away from west of Navar."
 @match Dragon|dragon|dragons
   "Ah, now you say the right word.
-There are three kinds of dragons, at 
+There are three kinds of dragons, at
 least while I was out genociding them.
 Fire dragon is the biggest. Ice dragon
 is the smallest and weakest. But the
@@ -618,20 +627,20 @@ vulnerable to cold."
 much as cold dragons. "
 @match ice|Ice|chinese|Chinese
   "Ice dragons are vulnerable to fire.
-This advice worth a lot. But we are 
-friends, arn't we?" 
+This advice worth a lot. But we are
+friends, arn't we?"
 @match break|chat
   "Okay, I will take a break now and
 tell you something about the cave.
   The cave was originally Wist, the
 mad wizard's. But he seemed to have
 left long time ago. So I worked to
-enlarge it and made it magnificent 
+enlarge it and made it magnificent
 as it is now. I know there is a secret
 path in this cave."
 @match secret|path
-  "Yes, a secret path that was what's 
-left of the wizard's days. I don't 
+  "Yes, a secret path that was what's
+left of the wizard's days. I don't
 like that place. So I never went in.
 But I know the word to trigger a
 portal to open to there."
@@ -645,7 +654,7 @@ bring it into the shop."
 @match *
   "Choose some other topics, or I will
 go on make another dragon mail and you
-can enjoy the dragons. If you want a 
+can enjoy the dragons. If you want a
 chat come when I am taking a break."
 endmsg
 x 4
@@ -801,7 +810,7 @@ arch magic_ear
 msg
 @match Kashu
 The whole dungeon starts to shake as
-you invokes some old mechanism of the 
+you invokes some old mechanism of the
 place..
 endmsg
 x 5
@@ -1372,8 +1381,6 @@ x 8
 y 16
 end
 arch blocked
-msg
-endmsg
 x 8
 y 17
 end
@@ -1512,8 +1519,6 @@ x 9
 y 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 18
 end
@@ -1645,8 +1650,6 @@ x 10
 y 18
 end
 arch blocked
-msg
-endmsg
 x 10
 y 19
 end
@@ -2015,8 +2018,6 @@ x 13
 y 18
 end
 arch blocked
-msg
-endmsg
 x 13
 y 19
 end
@@ -2136,8 +2137,6 @@ x 14
 y 18
 end
 arch blocked
-msg
-endmsg
 x 14
 y 19
 end
@@ -2753,7 +2752,7 @@ y 13
 end
 arch magic_mouth
 msg
-  Drop 25 small diamonds at the altar 
+  Drop 25 small diamonds at the altar
 to mock the nasty; and get an inspi-
 rition of how to deal with electric
 dragon.
@@ -3113,8 +3112,6 @@ x 20
 y 5
 end
 arch blocked
-msg
-endmsg
 x 20
 y 6
 end
@@ -3234,8 +3231,6 @@ speed 0.000000
 connected 10
 end
 arch blocked
-msg
-endmsg
 x 20
 y 14
 end
@@ -3270,6 +3265,12 @@ end
 arch dungeon_floor
 x 20
 y 18
+end
+arch big_elec
+dam 0
+x 20
+y 18
+unaggressive 1
 end
 arch dungeon_floor
 x 20
@@ -3452,7 +3453,7 @@ arch magic_mouth
 msg
 That's how you deal with electric
 dragons. Run around and avoid the
-electricity whenever the shoot it. 
+electricity whenever the shoot it.
 Now get out of here. I'd love to keep
 my pet alive for now."
 endmsg
@@ -3566,6 +3567,10 @@ arch dungeon_floor
 x 22
 y 8
 end
+arch big_elec
+x 22
+y 8
+end
 arch dungeon_floor
 x 22
 y 9
@@ -3612,8 +3617,6 @@ x 22
 y 13
 end
 arch blocked
-msg
-endmsg
 x 22
 y 14
 end
@@ -3745,7 +3748,7 @@ y 3
 end
 arch magic_mouth
 msg
-  Thanks for visiting dragon slaying 
+  Thanks for visiting dragon slaying
 guild.
 endmsg
 x 23
@@ -3927,23 +3930,4 @@ end
 arch cave22
 x 23
 y 23
-end
-arch chinese_dragon
-end
-arch big_dragon
-y 2
-end
-arch big_dragon
-x 2
-y 20
-end
-arch big_elec
-dam 0
-x 20
-y 18
-unaggressive 1
-end
-arch big_elec
-x 22
-y 8
 end

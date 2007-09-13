@@ -1,15 +1,15 @@
 arch map
-region pupland
 name hole1
+difficulty 7
+region pupland
+darkness 3
+width 30
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 27 21:06:35 1997
 endmsg
-x 30
-y 32
-level 7
-invisible 3
 end
 arch pstone_2
 end
@@ -1739,6 +1739,19 @@ end
 arch flagstone
 x 7
 y 15
+end
+arch giant
+x 7
+y 15
+carrying 3159
+unaggressive 1
+arch key2
+name Light Boulder
+slaying barbarian_useless
+face boulder.111
+value 1
+weight 3159
+end
 end
 arch flagstone
 x 7
@@ -6679,17 +6692,4 @@ end
 arch blocked
 x 29
 y 20
-end
-arch giant
-x 7
-y 15
-carrying 3159
-unaggressive 1
-arch key2
-name Light Boulder
-slaying barbarian_useless
-face boulder.111
-value 1
-weight 3159
-end
 end

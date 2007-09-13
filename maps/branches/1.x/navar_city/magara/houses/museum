@@ -1,13 +1,13 @@
 arch map
-region navar
 name museum
+region navar
+width 8
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 23:22:00 1994
 endmsg
-x 8
-y 20
 end
 arch flagstone
 name floor

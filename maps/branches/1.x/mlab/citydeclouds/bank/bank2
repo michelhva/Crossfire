@@ -1,16 +1,16 @@
 arch map
 name <untitled>
+reset_timeout 7200
+difficulty 1
+width 20
+height 30
+enter_x 1
+enter_y 1
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Wed Aug  4 17:03:08 2004
 endmsg
-width 20
-height 30
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 end
 arch dungeon_magic
 end
@@ -674,14 +674,14 @@ x 2
 y 4
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 2
+y 4
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 2
-y 4
 end
 arch dungeon_magic
 x 2
@@ -738,14 +738,14 @@ x 2
 y 7
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 2
+y 7
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 2
-y 7
 end
 arch dungeon_magic
 x 2
@@ -758,14 +758,14 @@ x 2
 y 8
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 2
+y 8
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 2
-y 8
 end
 arch largenugget
 x 2
@@ -818,9 +818,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 12
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -829,9 +829,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 13
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -840,9 +840,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 14
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -851,9 +851,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 15
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -874,9 +874,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 17
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -885,9 +885,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 18
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -896,9 +896,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 19
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -907,9 +907,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 20
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -930,9 +930,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 22
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -941,9 +941,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 23
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -952,9 +952,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 24
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -963,9 +963,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 2
 y 25
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1059,14 +1059,14 @@ x 3
 y 4
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 3
+y 4
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 3
-y 4
 end
 arch largenugget
 x 3
@@ -1109,14 +1109,14 @@ x 3
 y 6
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 3
+y 6
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 3
-y 6
 end
 arch dungeon_magic
 x 3
@@ -1197,9 +1197,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 12
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1208,9 +1208,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 13
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1219,15 +1219,15 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 14
+unique 1
 end
 arch check_inv
 slaying cdcfbstrrm3
-connected 103
 x 3
 y 14
+connected 103
 end
 arch dungeon_magic
 x 3
@@ -1236,9 +1236,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 15
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1259,9 +1259,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 17
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1270,9 +1270,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 18
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1281,15 +1281,15 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 19
+unique 1
 end
 arch check_inv
 slaying cdcfbstrrm2
-connected 102
 x 3
 y 19
+connected 102
 end
 arch dungeon_magic
 x 3
@@ -1298,9 +1298,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 20
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1321,9 +1321,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 22
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1332,15 +1332,15 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 23
+unique 1
 end
 arch check_inv
 slaying cdcfbstrrm1
-connected 101
 x 3
 y 23
+connected 101
 end
 arch dungeon_magic
 x 3
@@ -1349,9 +1349,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 24
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1360,9 +1360,9 @@ end
 arch cobblestones2
 name strong room floor
 name_pl strong room floor
-unique 1
 x 3
 y 25
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1604,16 +1604,16 @@ x 4
 y 14
 end
 arch igate_closed_2
-speed 0.500000
-connected 103
 x 4
 y 14
+speed 0.500000
+connected 103
 end
 arch check_inv
 slaying cdcfbstrrm3
-connected 103
 x 4
 y 14
+connected 103
 end
 arch dungeon_magic
 x 4
@@ -1672,16 +1672,16 @@ x 4
 y 19
 end
 arch igate_closed_2
-speed 0.500000
-connected 102
 x 4
 y 19
+speed 0.500000
+connected 102
 end
 arch check_inv
 slaying cdcfbstrrm2
-connected 102
 x 4
 y 19
+connected 102
 end
 arch dungeon_magic
 x 4
@@ -1728,16 +1728,16 @@ x 4
 y 23
 end
 arch igate_closed_2
-speed 0.500000
-connected 101
 x 4
 y 23
+speed 0.500000
+connected 101
 end
 arch check_inv
 slaying cdcfbstrrm1
-connected 101
 x 4
 y 23
+connected 101
 end
 arch dungeon_magic
 x 4
@@ -1819,28 +1819,28 @@ x 5
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 5
+y 2
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 5
-y 2
 end
 arch largenugget
 x 5
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 5
+y 2
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 5
-y 2
 end
 arch dungeon_magic
 x 5
@@ -1947,14 +1947,14 @@ x 5
 y 8
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 5
+y 8
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 5
-y 8
 end
 arch largenugget
 x 5
@@ -2030,9 +2030,9 @@ y 14
 end
 arch check_inv
 slaying cdcfbstrrm3
-connected 103
 x 5
 y 14
+connected 103
 end
 arch dungeon_magic
 x 5
@@ -2076,9 +2076,9 @@ y 19
 end
 arch check_inv
 slaying cdcfbstrrm2
-connected 102
 x 5
 y 19
+connected 102
 end
 arch dungeon_magic
 x 5
@@ -2114,9 +2114,9 @@ y 23
 end
 arch check_inv
 slaying cdcfbstrrm1
-connected 101
 x 5
 y 23
+connected 101
 end
 arch dungeon_magic
 x 5
@@ -2313,35 +2313,35 @@ x 6
 y 11
 end
 arch flagstone
-unique 1
 x 6
 y 11
+unique 1
 end
 arch key2
 name vault access key (A1)
+name_pl vault access key (A1)
+slaying cdcvaulta1key
 msg
 This is the key to gain access to
 your vault and acquire the combination.
 endmsg
-name_pl vault access key (A1)
-slaying cdcvaulta1key
-unique 1
 x 6
 y 11
+unique 1
 end
 arch key2
 name vault hall key (A1)
-face key_brown.111
+name_pl vault hall key (A1)
+slaying cdcvaulthall1k
 msg
 Your vault is vault A1 in the
 CityDeClouds branch of the
 First World Bank.
 endmsg
-name_pl vault hall key (A1)
-slaying cdcvaulthall1k
-unique 1
+face key_brown.111
 x 6
 y 11
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -2352,10 +2352,10 @@ x 6
 y 12
 end
 arch grate_closed_1
-speed 0.500000
-connected 2001
 x 6
 y 12
+speed 0.500000
+connected 2001
 end
 arch dungeon_magic
 x 6
@@ -2370,9 +2370,9 @@ name drop 200 diamonds for vault A1
 name_pl drop 200 diamonds for vault A1
 slaying gem
 food 200
-connected 2001
 x 6
 y 13
+connected 2001
 end
 arch dungeon_magic
 x 6
@@ -2562,14 +2562,14 @@ x 7
 y 5
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 7
+y 5
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 7
-y 5
 end
 arch largenugget
 x 7
@@ -2963,35 +2963,35 @@ x 8
 y 11
 end
 arch flagstone
-unique 1
 x 8
 y 11
+unique 1
 end
 arch key2
 name vault access key (B2)
+name_pl vault access key (A1)
+slaying cdcvaultb2key
 msg
 This is the key to gain access to
 your vault and acquire the combination.
 endmsg
-name_pl vault access key (A1)
-slaying cdcvaultb2key
-unique 1
 x 8
 y 11
+unique 1
 end
 arch key2
 name vault hall key (B2)
-face key_brown.111
+name_pl vault hall key (A1)
+slaying cdcvaulthall1k
 msg
 Your vault is vault B2 in the
 CityDeClouds branch of the
 First World Bank.
 endmsg
-name_pl vault hall key (A1)
-slaying cdcvaulthall1k
-unique 1
+face key_brown.111
 x 8
 y 11
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -3002,10 +3002,10 @@ x 8
 y 12
 end
 arch grate_closed_1
-speed 0.500000
-connected 2002
 x 8
 y 12
+speed 0.500000
+connected 2002
 end
 arch dungeon_magic
 x 8
@@ -3020,9 +3020,9 @@ name drop 200 diamonds for vault B2
 name_pl drop 200 diamonds for vault A1
 slaying gem
 food 200
-connected 2002
 x 8
 y 13
+connected 2002
 end
 arch dungeon_magic
 x 8
@@ -3066,13 +3066,13 @@ y 17
 end
 arch courier
 name Bank of Skud Representative
+name_pl Bank of Skud Representative
+x 8
+y 17
 arch event_say
 title Python
 slaying /python/IPO/banksay.py
 end
-name_pl Bank of Skud Representative
-x 8
-y 17
 end
 arch dungeon_magic
 x 8
@@ -3416,6 +3416,7 @@ y 19
 end
 arch sign_w
 name Partnership Accounts
+name_pl Partnership Accounts
 msg
 Partnership Accounts
 The First World Bank has partnered
@@ -3428,7 +3429,6 @@ permission from their husband, the
 husband will have full access to the
 account.
 endmsg
-name_pl Partnership Accounts
 x 9
 y 19
 end
@@ -3611,9 +3611,9 @@ end
 arch grate_closed_2
 name depository door
 name_pl depository door
-speed 0.500000
 x 10
 y 7
+speed 0.500000
 end
 arch dungeon_magic
 x 10
@@ -3656,35 +3656,35 @@ x 10
 y 11
 end
 arch flagstone
-unique 1
 x 10
 y 11
+unique 1
 end
 arch key2
 name vault access key (C3)
+name_pl vault access key (A1)
+slaying cdcvaultc3key
 msg
 This is the key to gain access to
 your vault and acquire the combination.
 endmsg
-name_pl vault access key (A1)
-slaying cdcvaultc3key
-unique 1
 x 10
 y 11
+unique 1
 end
 arch key2
 name vault hall key (C3)
-face key_brown.111
+name_pl vault hall key (A1)
+slaying cdcvaulthall1k
 msg
 Your vault is vault C3 in the
 CityDeClouds branch of the
 First World Bank.
 endmsg
-name_pl vault hall key (A1)
-slaying cdcvaulthall1k
-unique 1
+face key_brown.111
 x 10
 y 11
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -3695,10 +3695,10 @@ x 10
 y 12
 end
 arch grate_closed_1
-speed 0.500000
-connected 2003
 x 10
 y 12
+speed 0.500000
+connected 2003
 end
 arch dungeon_magic
 x 10
@@ -3713,9 +3713,9 @@ name drop 200 diamonds for vault C3
 name_pl drop 200 diamonds for vault A1
 slaying gem
 food 200
-connected 2003
 x 10
 y 13
+connected 2003
 end
 arch dungeon_magic
 x 10
@@ -3928,14 +3928,14 @@ x 11
 y 3
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 11
+y 3
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 11
-y 3
 end
 arch dungeon_magic
 x 11
@@ -4246,14 +4246,14 @@ x 12
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 12
+y 2
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 12
-y 2
 end
 arch largenugget
 x 12
@@ -4324,28 +4324,28 @@ x 12
 y 6
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 12
+y 6
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 12
-y 6
 end
 arch largenugget
 x 12
 y 6
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 12
+y 6
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 12
-y 6
 end
 arch dungeon_magic
 x 12
@@ -4416,35 +4416,35 @@ x 12
 y 11
 end
 arch flagstone
-unique 1
 x 12
 y 11
+unique 1
 end
 arch key2
 name vault access key (D4)
+name_pl vault access key (A1)
+slaying cdcvaultd4key
 msg
 This is the key to gain access to
 your vault and acquire the combination.
 endmsg
-name_pl vault access key (A1)
-slaying cdcvaultd4key
-unique 1
 x 12
 y 11
+unique 1
 end
 arch key2
 name vault hall key (D4)
-face key_brown.111
+name_pl vault hall key (A1)
+slaying cdcvaulthall1k
 msg
 Your vault is vault D4 in the
 CityDeClouds branch of the
 First World Bank.
 endmsg
-name_pl vault hall key (A1)
-slaying cdcvaulthall1k
-unique 1
+face key_brown.111
 x 12
 y 11
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -4455,10 +4455,10 @@ x 12
 y 12
 end
 arch grate_closed_1
-speed 0.500000
-connected 2004
 x 12
 y 12
+speed 0.500000
+connected 2004
 end
 arch dungeon_magic
 x 12
@@ -4473,9 +4473,9 @@ name drop 200 diamonds for vault D4
 name_pl drop 200 diamonds for vault A1
 slaying gem
 food 200
-connected 2004
 x 12
 y 13
+connected 2004
 end
 arch dungeon_magic
 x 12
@@ -4894,11 +4894,11 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 18
+unique 1
 end
 arch shop_mat
 x 13
@@ -4910,21 +4910,21 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 19
+unique 1
 end
 arch key2
 name strong room 3 key
 name_pl strong room 3 key
 slaying cdcfbstrrm3
+x 13
+y 19
 value 700
 unpaid 1
 unique 1
-x 13
-y 19
 end
 arch dungeon_magic
 x 13
@@ -4932,21 +4932,21 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 20
+unique 1
 end
 arch key2
 name strong room 2 key
 name_pl strong room 2 key
 slaying cdcfbstrrm2
+x 13
+y 20
 value 700
 unpaid 1
 unique 1
-x 13
-y 20
 end
 arch dungeon_magic
 x 13
@@ -4954,21 +4954,21 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 21
+unique 1
 end
 arch key2
 name strong room 1 key
 name_pl strong room 1 key
 slaying cdcfbstrrm1
+x 13
+y 21
 value 700
 unpaid 1
 unique 1
-x 13
-y 21
 end
 arch dungeon_magic
 x 13
@@ -4976,21 +4976,21 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 22
+unique 1
 end
 arch key2
 name safe deposit box 12 key
 name_pl safe deposit box 12 key
 slaying cdcfbdepbox12
+x 13
+y 22
 value 110
 unpaid 1
 unique 1
-x 13
-y 22
 end
 arch dungeon_magic
 x 13
@@ -4998,21 +4998,21 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 23
+unique 1
 end
 arch key2
 name safe deposit box 11 key
 name_pl safe deposit box 11 key
 slaying cdcfbdepbox11
+x 13
+y 23
 value 110
 unpaid 1
 unique 1
-x 13
-y 23
 end
 arch dungeon_magic
 x 13
@@ -5020,21 +5020,21 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 24
+unique 1
 end
 arch key2
 name safe deposit box 10 key
 name_pl safe deposit box 10 key
 slaying cdcfbdepbox10
+x 13
+y 24
 value 110
 unpaid 1
 unique 1
-x 13
-y 24
 end
 arch dungeon_magic
 x 13
@@ -5042,21 +5042,21 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 13
 y 25
+unique 1
 end
 arch key2
 name safe deposit box 9 key
 name_pl safe deposit box 9 key
 slaying cdcfbdepbox9
+x 13
+y 25
 value 110
 unpaid 1
 unique 1
-x 13
-y 25
 end
 arch dungeon_magic
 x 13
@@ -5172,14 +5172,14 @@ x 14
 y 5
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 14
+y 5
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 14
-y 5
 end
 arch largenugget
 x 14
@@ -5252,14 +5252,14 @@ x 14
 y 8
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 14
+y 8
 speed 0.000000
 value 40000
 weight 65
 is_animated 0
-x 14
-y 8
 end
 arch largenugget
 x 14
@@ -5298,35 +5298,35 @@ x 14
 y 11
 end
 arch flagstone
+x 14
+y 11
 unique 1
-x 14
-y 11
 end
 arch key2
 name vault access key (E5)
+name_pl vault access key (A1)
+slaying cdcvaulte5key
 msg
 This is the key to gain access to
 your vault and acquire the combination.
 endmsg
-name_pl vault access key (A1)
-slaying cdcvaulte5key
-unique 1
 x 14
 y 11
+unique 1
 end
 arch key2
 name vault hall key (E5)
-face key_brown.111
+name_pl vault hall key (A1)
+slaying cdcvaulthall1k
 msg
 Your vault is vault E5 in the
 CityDeClouds branch of the
 First World Bank.
 endmsg
-name_pl vault hall key (A1)
-slaying cdcvaulthall1k
-unique 1
+face key_brown.111
 x 14
 y 11
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5337,10 +5337,10 @@ x 14
 y 12
 end
 arch grate_closed_1
-speed 0.500000
-connected 2005
 x 14
 y 12
+speed 0.500000
+connected 2005
 end
 arch dungeon_magic
 x 14
@@ -5355,9 +5355,9 @@ name drop 200 diamonds for vault E5
 name_pl drop 200 diamonds for vault A1
 slaying gem
 food 200
-connected 2005
 x 14
 y 13
+connected 2005
 end
 arch dungeon_magic
 x 14
@@ -5405,21 +5405,21 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 18
+unique 1
 end
 arch key2
 name safe deposit box 1 key
 name_pl safe deposit box 1 key
 slaying cdcfbdepbox1
+x 14
+y 18
 value 110
 unpaid 1
 unique 1
-x 14
-y 18
 end
 arch dungeon_magic
 x 14
@@ -5427,21 +5427,21 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 19
+unique 1
 end
 arch key2
 name safe deposit box 2 key
 name_pl safe deposit box 2 key
 slaying cdcfbdepbox2
+x 14
+y 19
 value 110
 unpaid 1
 unique 1
-x 14
-y 19
 end
 arch dungeon_magic
 x 14
@@ -5449,21 +5449,21 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 20
+unique 1
 end
 arch key2
 name safe deposit box 3 key
 name_pl safe deposit box 3 key
 slaying cdcfbdepbox3
+x 14
+y 20
 value 110
 unpaid 1
 unique 1
-x 14
-y 20
 end
 arch dungeon_magic
 x 14
@@ -5471,21 +5471,21 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 21
+unique 1
 end
 arch key2
 name safe deposit box 4 key
 name_pl safe deposit box 4 key
 slaying cdcfbdepbox4
+x 14
+y 21
 value 110
 unpaid 1
 unique 1
-x 14
-y 21
 end
 arch dungeon_magic
 x 14
@@ -5493,21 +5493,21 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 22
+unique 1
 end
 arch key2
 name safe deposit box 5 key
 name_pl safe deposit box 5 key
 slaying cdcfbdepbox5
+x 14
+y 22
 value 110
 unpaid 1
 unique 1
-x 14
-y 22
 end
 arch dungeon_magic
 x 14
@@ -5515,21 +5515,21 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 23
+unique 1
 end
 arch key2
 name safe deposit box 6 key
 name_pl safe deposit box 6 key
 slaying cdcfbdepbox6
+x 14
+y 23
 value 110
 unpaid 1
 unique 1
-x 14
-y 23
 end
 arch dungeon_magic
 x 14
@@ -5537,21 +5537,21 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 24
+unique 1
 end
 arch key2
 name safe deposit box 7 key
 name_pl safe deposit box 7 key
 slaying cdcfbdepbox7
+x 14
+y 24
 value 110
 unpaid 1
 unique 1
-x 14
-y 24
 end
 arch dungeon_magic
 x 14
@@ -5559,21 +5559,21 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 14
 y 25
+unique 1
 end
 arch key2
 name safe deposit box 8 key
 name_pl safe deposit box 8 key
 slaying cdcfbdepbox8
+x 14
+y 25
 value 110
 unpaid 1
 unique 1
-x 14
-y 25
 end
 arch dungeon_magic
 x 14

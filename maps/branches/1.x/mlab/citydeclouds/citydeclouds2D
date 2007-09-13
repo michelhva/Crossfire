@@ -1,17 +1,17 @@
 arch map
 name citydeclouds
+reset_timeout 7200
+difficulty 1
 region dream
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Wed Aug 28 11:11:32 2002
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 tile_path_2 citydeclouds2G
 tile_path_3 citydeclouds2E
@@ -19,8 +19,8 @@ tile_path_4 citydeclouds2A
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 18
 end
 arch cwall_3_3
@@ -28,8 +28,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 19
 end
 arch cwall_3_1
@@ -220,8 +220,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 18
 end
@@ -231,8 +231,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 19
 end
@@ -446,8 +446,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 18
 end
@@ -457,8 +457,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 19
 end
@@ -716,8 +716,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 18
 end
@@ -727,8 +727,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 19
 end
@@ -930,8 +930,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 18
 end
@@ -941,8 +941,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 19
 end
@@ -1200,8 +1200,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 18
 end
@@ -1211,8 +1211,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 19
 end
@@ -1438,8 +1438,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 18
 end
@@ -1449,8 +1449,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 19
 end
@@ -1465,9 +1465,9 @@ end
 arch ytree_2
 name stout tree
 name_pl stout tree
-no_pass 1
 x 6
 y 20
+no_pass 1
 end
 arch farmland
 x 6
@@ -1707,8 +1707,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 18
 end
@@ -1718,8 +1718,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 19
 end
@@ -1929,8 +1929,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 18
 end
@@ -1940,8 +1940,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 19
 end
@@ -2199,8 +2199,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 18
 end
@@ -2210,8 +2210,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 19
 end
@@ -2258,9 +2258,9 @@ end
 arch ytree_2
 name stout tree
 name_pl stout tree
-no_pass 1
 x 9
 y 28
+no_pass 1
 end
 arch grass
 x 9
@@ -2277,9 +2277,9 @@ end
 arch tree3
 name stout tree
 name_pl stout tree
+x 9
+y 31
 no_pass 1
-x 9
-y 31
 end
 arch grass
 x 9
@@ -2419,8 +2419,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 18
 end
@@ -2430,8 +2430,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 19
 end
@@ -2693,8 +2693,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 18
 end
@@ -2704,8 +2704,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 19
 end
@@ -2915,8 +2915,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 18
 end
@@ -2926,8 +2926,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 19
 end
@@ -3189,8 +3189,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 18
 end
@@ -3200,8 +3200,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 19
 end
@@ -3423,8 +3423,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 18
 end
@@ -3434,8 +3434,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 19
 end
@@ -3689,8 +3689,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 18
 end
@@ -3700,8 +3700,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 19
 end
@@ -3923,8 +3923,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 18
 end
@@ -3934,8 +3934,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 19
 end
@@ -4201,8 +4201,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 18
 end
@@ -4212,8 +4212,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 19
 end
@@ -4435,8 +4435,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 18
 end
@@ -4446,8 +4446,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 19
 end
@@ -4709,8 +4709,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 18
 end
@@ -4720,8 +4720,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 19
 end
@@ -4736,9 +4736,9 @@ end
 arch ytree_2
 name stout tree
 name_pl stout tree
-no_pass 1
 x 19
 y 20
+no_pass 1
 end
 arch farmland
 x 19
@@ -4954,8 +4954,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 18
 end
@@ -4965,8 +4965,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 19
 end
@@ -5236,8 +5236,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 18
 end
@@ -5247,8 +5247,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 19
 end
@@ -5466,8 +5466,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 18
 end
@@ -5477,8 +5477,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 19
 end
@@ -5521,9 +5521,9 @@ end
 arch tree3
 name stout tree
 name_pl stout tree
-no_pass 1
 x 22
 y 27
+no_pass 1
 end
 arch grass
 x 22
@@ -5715,8 +5715,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 18
 end
@@ -5726,8 +5726,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 19
 end
@@ -5985,8 +5985,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 18
 end
@@ -5996,8 +5996,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 19
 end
@@ -6243,8 +6243,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 18
 end
@@ -6254,8 +6254,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 19
 end
@@ -6489,8 +6489,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 18
 end
@@ -6500,8 +6500,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 19
 end
@@ -6775,8 +6775,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 18
 end
@@ -6786,8 +6786,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 19
 end
@@ -7024,275 +7024,275 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 28
 no_pass 0
 blocksview 0
-x 28
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 1
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 1
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 1
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 2
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 2
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 3
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 3
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 3
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 4
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 4
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 5
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 5
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 5
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 6
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 6
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 28
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 28
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 28
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 28
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 28
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 18
 end
@@ -7302,8 +7302,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 19
 end
@@ -7638,172 +7638,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 29
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 29
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 29
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 29
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 29
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 29
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 29
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 29
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 29
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 29
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 29
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 29
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 29
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 29
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 18
 end
@@ -7813,8 +7813,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 19
 end
@@ -8107,172 +8107,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 30
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 30
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 30
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 30
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 30
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 30
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 30
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 30
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 30
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 30
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 30
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 30
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 30
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 30
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 18
 end
@@ -8282,8 +8282,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 19
 end
@@ -8529,172 +8529,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 31
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 31
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 31
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 31
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 31
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 31
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 31
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 31
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 31
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 31
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 31
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 31
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 31
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 18
 end
@@ -8704,8 +8704,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 19
 end
@@ -8998,172 +8998,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 32
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 32
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 32
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 32
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 32
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 32
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 32
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 32
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 32
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 32
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 32
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 32
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 32
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 18
 end
@@ -9173,8 +9173,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 19
 end
@@ -9404,172 +9404,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 33
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 33
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 33
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 33
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 33
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 33
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 33
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 33
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 33
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 33
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 33
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 33
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 33
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 18
 end
@@ -9579,8 +9579,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 19
 end
@@ -9801,172 +9801,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 34
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 34
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 34
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 34
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 34
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 34
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 34
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 34
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 34
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 34
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 34
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 34
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 34
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 18
 end
@@ -9976,8 +9976,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 19
 end
@@ -10074,9 +10074,9 @@ x 34
 y 32
 end
 arch door_2
-no_pass 0
 x 34
 y 32
+no_pass 0
 end
 arch dirtfloor
 x 34
@@ -10208,172 +10208,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 35
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 35
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 35
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 35
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 35
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 35
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 35
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 35
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 35
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 35
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 35
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 35
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 35
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 18
 end
@@ -10383,8 +10383,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 19
 end
@@ -10638,172 +10638,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 36
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 36
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 36
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 36
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 36
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 36
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 36
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 36
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 36
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 36
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 36
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 36
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 36
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 18
 end
@@ -10813,8 +10813,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 19
 end
@@ -10911,9 +10911,9 @@ x 36
 y 37
 end
 arch pedestal_trigger
-connected 5154
 x 36
 y 38
+connected 5154
 end
 arch flagstone
 x 36
@@ -10924,14 +10924,14 @@ x 36
 y 39
 end
 arch mdoor_closed_1
-connected 5154
 x 36
 y 39
+connected 5154
 end
 arch pedestal_trigger
-connected 5154
 x 36
 y 40
+connected 5154
 end
 arch grass
 x 36
@@ -11031,172 +11031,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 37
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 37
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 37
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 37
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 37
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 37
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 37
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 37
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 37
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 37
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 37
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 37
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 37
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 18
 end
@@ -11206,8 +11206,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 19
 end
@@ -11473,172 +11473,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 38
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 38
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 38
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 38
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 38
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 38
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 38
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 38
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 38
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 38
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 38
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 38
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 38
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 18
 end
@@ -11648,8 +11648,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 19
 end
@@ -11659,8 +11659,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 20
 end
@@ -11670,8 +11670,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 21
 end
@@ -11681,8 +11681,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 22
 end
@@ -11692,8 +11692,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 23
 end
@@ -11703,8 +11703,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 24
 end
@@ -11714,8 +11714,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 25
 end
@@ -11725,8 +11725,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 26
 end
@@ -11736,8 +11736,8 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 27
 end
@@ -11747,8 +11747,8 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 28
 end
@@ -11758,8 +11758,8 @@ y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 29
 end
@@ -11769,8 +11769,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 30
 end
@@ -11780,8 +11780,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 31
 end
@@ -11791,8 +11791,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 32
 end
@@ -11802,8 +11802,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 33
 end
@@ -11813,8 +11813,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 34
 end
@@ -11824,8 +11824,8 @@ y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 35
 end
@@ -11835,8 +11835,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 36
 end
@@ -11846,8 +11846,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 37
 end
@@ -11857,8 +11857,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 38
 end
@@ -11868,8 +11868,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 39
 end
@@ -11879,8 +11879,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 40
 end
@@ -11890,8 +11890,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 41
 end
@@ -11901,8 +11901,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 42
 end
@@ -11912,8 +11912,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 43
 end
@@ -11923,8 +11923,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 44
 end
@@ -12017,172 +12017,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 39
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 39
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 39
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 39
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 39
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 39
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 39
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 39
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 39
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 39
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 39
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 39
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 39
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 39
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 18
 end
@@ -12192,8 +12192,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 19
 end
@@ -12395,8 +12395,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 44
 end
@@ -12474,172 +12474,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 40
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 40
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 40
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 40
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 40
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 40
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 40
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 40
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 40
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 40
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 40
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 40
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 40
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 18
 end
@@ -12649,8 +12649,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 19
 end
@@ -12683,9 +12683,9 @@ x 40
 y 22
 end
 arch chest_2
-carrying 47000
 x 40
 y 22
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12708,9 +12708,9 @@ x 40
 y 25
 end
 arch chest_2
-carrying 47000
 x 40
 y 25
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12733,9 +12733,9 @@ x 40
 y 28
 end
 arch chest_2
-carrying 47000
 x 40
 y 28
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12758,9 +12758,9 @@ x 40
 y 31
 end
 arch chest_2
-carrying 47000
 x 40
 y 31
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12783,9 +12783,9 @@ x 40
 y 34
 end
 arch chest_2
-carrying 47000
 x 40
 y 34
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12808,9 +12808,9 @@ x 40
 y 37
 end
 arch chest_2
-carrying 47000
 x 40
 y 37
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12833,9 +12833,9 @@ x 40
 y 40
 end
 arch chest_2
-carrying 47000
 x 40
 y 40
+carrying 47000
 end
 arch dungeon_floor
 x 40
@@ -12863,8 +12863,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 44
 end
@@ -12953,172 +12953,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 41
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 41
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 41
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 41
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 41
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 41
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 41
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 41
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 41
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 41
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 41
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 41
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 41
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 18
 end
@@ -13128,8 +13128,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 19
 end
@@ -13234,9 +13234,9 @@ x 41
 y 42
 end
 arch chest_2
-carrying 47000
 x 41
 y 42
+carrying 47000
 end
 arch dungeon_floor
 x 41
@@ -13248,8 +13248,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 44
 end
@@ -13315,172 +13315,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 42
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 42
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 42
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 42
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 42
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 42
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 42
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 42
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 42
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 42
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 42
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 42
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 42
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 18
 end
@@ -13490,8 +13490,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 19
 end
@@ -13560,9 +13560,9 @@ x 42
 y 31
 end
 arch chest_2
-carrying 47000
 x 42
 y 31
+carrying 47000
 end
 arch dungeon_floor
 x 42
@@ -13585,9 +13585,9 @@ x 42
 y 34
 end
 arch chest_2
-carrying 47000
 x 42
 y 34
+carrying 47000
 end
 arch dungeon_floor
 x 42
@@ -13610,9 +13610,9 @@ x 42
 y 37
 end
 arch chest_2
-carrying 47000
 x 42
 y 37
+carrying 47000
 end
 arch dungeon_floor
 x 42
@@ -13635,18 +13635,18 @@ x 42
 y 40
 end
 arch chest_2
-carrying 47000
 x 42
 y 40
+carrying 47000
 end
 arch dungeon_floor
 x 42
 y 41
 end
 arch chest_2
-carrying 47000
 x 42
 y 41
+carrying 47000
 end
 arch dungeon_floor
 x 42
@@ -13670,8 +13670,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 44
 end
@@ -13745,172 +13745,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 43
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 43
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 43
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 43
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 43
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 43
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 43
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 43
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 43
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 43
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 43
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 43
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 43
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 18
 end
@@ -13920,8 +13920,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 19
 end
@@ -13954,9 +13954,9 @@ x 43
 y 22
 end
 arch chest_2
-carrying 47000
 x 43
 y 22
+carrying 47000
 end
 arch dungeon_floor
 x 43
@@ -14124,8 +14124,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 44
 end
@@ -14191,172 +14191,172 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 44
+y 7
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 44
 y 7
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 44
-y 7
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 8
 end
 arch blocked
 name nothing
 name_pl nothing
+x 44
+y 9
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 44
 y 9
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 44
-y 9
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 10
 end
 arch blocked
 name nothing
 name_pl nothing
+x 44
+y 11
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 44
 y 11
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 44
-y 11
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 12
 end
 arch blocked
 name nothing
 name_pl nothing
+x 44
+y 13
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 44
 y 13
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 44
-y 13
-end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 14
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 15
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 16
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 44
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 18
 end
@@ -14366,8 +14366,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 19
 end
@@ -14525,8 +14525,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 39
 end
@@ -14536,8 +14536,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 40
 end
@@ -14547,8 +14547,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 41
 end
@@ -14558,8 +14558,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 42
 end
@@ -14569,8 +14569,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 43
 end
@@ -14580,8 +14580,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 44
 end
@@ -14681,8 +14681,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 7
 end
@@ -14696,8 +14696,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 8
 end
@@ -14715,8 +14715,8 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 9
 end
@@ -14730,8 +14730,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 10
 end
@@ -14749,8 +14749,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 11
 end
@@ -14764,8 +14764,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 12
 end
@@ -14783,8 +14783,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 13
 end
@@ -14798,8 +14798,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 14
 end
@@ -14817,8 +14817,8 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 15
 end
@@ -14832,8 +14832,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 16
 end
@@ -14851,8 +14851,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 17
 end
@@ -14866,8 +14866,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 18
 end
@@ -14877,8 +14877,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 19
 end
@@ -14888,8 +14888,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 20
 end
@@ -14899,8 +14899,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 21
 end
@@ -14910,8 +14910,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 22
 end
@@ -14921,8 +14921,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 23
 end
@@ -14996,89 +14996,89 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 39
 end
 arch grate_closed_1
-connected 77777
 x 45
 y 39
+connected 77777
 end
 arch button_small
+x 45
+y 40
 weight 1000
 connected 77777
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 45
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 45
-y 40
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 45
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 49
 end
@@ -15114,9 +15114,9 @@ x 46
 y 5
 end
 arch lesser_dwarven_guard
-unaggressive 1
 x 46
 y 5
+unaggressive 1
 end
 arch dungeon_floor
 x 46
@@ -15132,78 +15132,78 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 17
 end
@@ -15213,8 +15213,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 18
 end
@@ -15224,8 +15224,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 19
 end
@@ -15235,8 +15235,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 20
 end
@@ -15246,8 +15246,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 21
 end
@@ -15257,8 +15257,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 22
 end
@@ -15268,8 +15268,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 23
 end
@@ -15387,8 +15387,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 39
 end
@@ -15398,8 +15398,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 40
 end
@@ -15409,64 +15409,64 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 49
 end
@@ -15531,78 +15531,78 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 17
 end
@@ -15612,8 +15612,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 18
 end
@@ -15623,8 +15623,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 19
 end
@@ -15634,8 +15634,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 20
 end
@@ -15769,8 +15769,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 39
 end
@@ -15780,8 +15780,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 40
 end
@@ -15791,15 +15791,15 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 42
 end
@@ -15817,8 +15817,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 43
 end
@@ -15832,8 +15832,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 44
 end
@@ -15851,8 +15851,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 45
 end
@@ -15866,8 +15866,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 46
 end
@@ -15885,22 +15885,22 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 49
 end
@@ -15961,121 +15961,121 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 18
 end
 arch button_small
+x 48
+y 19
 weight 1000
 connected 88888
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 48
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 48
-y 19
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 48
 y 20
 end
 arch grate_closed_1
-connected 88888
 x 48
 y 20
+connected 88888
 end
 arch dungeon_floor
 x 48
 y 21
 end
 arch button_handle
-connected 88888
 x 48
 y 21
+connected 88888
 end
 arch dungeon_floor
 x 48
@@ -16142,9 +16142,9 @@ x 48
 y 34
 end
 arch button_handle
-connected 77777
 x 48
 y 34
+connected 77777
 end
 arch dungeon_floor
 x 48
@@ -16172,40 +16172,40 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 39
 end
 arch grate_closed_1
-connected 77777
 x 48
 y 39
+connected 77777
 end
 arch button_small
+x 48
+y 40
 weight 1000
 connected 77777
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 48
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 48
-y 40
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 48
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 42
 end
@@ -16220,52 +16220,52 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 48
 y 43
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 48
 y 43
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 48
 y 44
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 48
 y 44
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 48
 y 45
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 48
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 46
 end
@@ -16279,22 +16279,22 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 49
 end
@@ -16357,99 +16357,99 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 20
 end
@@ -16570,8 +16570,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 39
 end
@@ -16581,8 +16581,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 40
 end
@@ -16592,15 +16592,15 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 42
 end
@@ -16619,52 +16619,52 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 49
 y 43
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 49
 y 43
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 49
 y 44
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 49
 y 44
 end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 49
 y 45
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 49
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 46
 end
@@ -16682,22 +16682,22 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 49
 end

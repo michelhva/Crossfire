@@ -1,11 +1,11 @@
 arch map
 name bank3
+width 20
+height 30
 msg
 Creator: CF Java Map Editor
 Date:    5/28/2005
 endmsg
-width 20
-height 30
 end
 arch dungeon_magic
 end
@@ -263,10 +263,10 @@ arch key2
 name Master Key: Deposit Room 1 FWB - CDC Branch
 name_pl Master Key: Deposit Room 1 FWB - CDC Branch
 slaying mkcdcfwbdr1
+y 28
 value 550
 unpaid 1
 unique 1
-y 28
 end
 arch dungeon_magic
 x 1
@@ -764,9 +764,9 @@ arch key2
 name Deposit Room 3 FWB - CDC Branch
 name_pl Deposit Room 3 FWB - CDC Branch
 slaying cdcfwbdr3
-value 500
 x 2
 y 12
+value 500
 end
 arch dungeon_magic
 x 2
@@ -777,10 +777,10 @@ x 2
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 113
 x 2
 y 13
+speed 0.500000
+connected 113
 end
 arch dungeon_magic
 x 2
@@ -789,9 +789,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 14
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -800,9 +800,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 15
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -828,9 +828,9 @@ arch key2
 name Deposit Room 2 FWB - CDC Branch
 name_pl Deposit Room 2 FWB - CDC Branch
 slaying cdcfwbdr2
-value 500
 x 2
 y 17
+value 500
 end
 arch dungeon_magic
 x 2
@@ -841,10 +841,10 @@ x 2
 y 18
 end
 arch grate_closed_1
-speed 0.500000
-connected 112
 x 2
 y 18
+speed 0.500000
+connected 112
 end
 arch dungeon_magic
 x 2
@@ -853,9 +853,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 19
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -864,9 +864,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 20
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -892,9 +892,9 @@ arch key2
 name Deposit Room 1 FWB - CDC Branch
 name_pl Deposit Room 1 FWB - CDC Branch
 slaying cdcfwbdr1
-value 500
 x 2
 y 22
+value 500
 end
 arch dungeon_magic
 x 2
@@ -905,10 +905,10 @@ x 2
 y 23
 end
 arch grate_closed_1
-speed 0.500000
-connected 111
 x 2
 y 23
+speed 0.500000
+connected 111
 end
 arch dungeon_magic
 x 2
@@ -917,9 +917,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 24
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -928,9 +928,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 2
 y 25
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1116,15 +1116,15 @@ x 3
 y 12
 end
 arch button_lever
-connected 113
 x 3
 y 12
+connected 113
 end
 arch check_inv
 slaying mkcdcfwbdr3
-connected 1103
 x 3
 y 12
+connected 1103
 end
 arch dungeon_magic
 x 3
@@ -1145,9 +1145,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 14
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1156,9 +1156,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 15
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1181,15 +1181,15 @@ x 3
 y 17
 end
 arch button_lever
-connected 112
 x 3
 y 17
+connected 112
 end
 arch check_inv
 slaying mkcdcfwbdr2
-connected 1102
 x 3
 y 17
+connected 1102
 end
 arch dungeon_magic
 x 3
@@ -1210,9 +1210,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 19
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1221,9 +1221,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 20
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1246,15 +1246,15 @@ x 3
 y 22
 end
 arch button_lever
-connected 111
 x 3
 y 22
+connected 111
 end
 arch check_inv
 slaying mkcdcfwbdr1
-connected 1101
 x 3
 y 22
+connected 1101
 end
 arch dungeon_magic
 x 3
@@ -1275,9 +1275,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 24
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1286,9 +1286,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 3
 y 25
+unique 1
 end
 arch dungeon_magic
 x 3
@@ -1312,9 +1312,9 @@ y 27
 end
 arch check_inv
 slaying mkcdcfwbdr1
-connected 1101
 x 3
 y 28
+connected 1101
 end
 arch dungeon_magic
 x 4
@@ -1480,10 +1480,10 @@ x 4
 y 12
 end
 arch igate_closed_2
-speed 0.500000
-connected 1103
 x 4
 y 12
+speed 0.500000
+connected 1103
 end
 arch dungeon_magic
 x 4
@@ -1543,10 +1543,10 @@ x 4
 y 17
 end
 arch igate_closed_2
-speed 0.500000
-connected 1102
 x 4
 y 17
+speed 0.500000
+connected 1102
 end
 arch dungeon_magic
 x 4
@@ -1606,10 +1606,10 @@ x 4
 y 22
 end
 arch igate_closed_2
-speed 0.500000
-connected 1101
 x 4
 y 22
+speed 0.500000
+connected 1101
 end
 arch dungeon_magic
 x 4
@@ -1829,9 +1829,9 @@ y 12
 end
 arch check_inv
 slaying mkcdcfwbdr3
-connected 1103
 x 5
 y 12
+connected 1103
 end
 arch dungeon_magic
 x 5
@@ -1875,9 +1875,9 @@ y 17
 end
 arch check_inv
 slaying mkcdcfwbdr2
-connected 1102
 x 5
 y 17
+connected 1102
 end
 arch dungeon_magic
 x 5
@@ -1921,9 +1921,9 @@ y 22
 end
 arch check_inv
 slaying mkcdcfwbdr1
-connected 1101
 x 5
 y 22
+connected 1101
 end
 arch dungeon_magic
 x 5
@@ -1971,9 +1971,9 @@ y 27
 end
 arch check_inv
 slaying mkcdcfwbdr1
-connected 1101
 x 5
 y 28
+connected 1101
 end
 arch dungeon_magic
 x 6
@@ -2368,15 +2368,15 @@ x 7
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 7
+y 2
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 7
-y 2
 end
 arch dungeon_magic
 x 7
@@ -2389,15 +2389,15 @@ x 7
 y 3
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 7
+y 3
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 7
-y 3
 end
 arch dungeon_magic
 x 7
@@ -2501,21 +2501,21 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 7
 y 11
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 1 FWB - CDC Branch
 name_pl Master Key: Deposit Room 1 FWB - CDC Branch
 slaying mkcdcfwbdr1
+x 7
+y 11
 value 550
 unpaid 1
 unique 1
-x 7
-y 11
 end
 arch dungeon_magic
 x 7
@@ -2523,21 +2523,21 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 7
 y 12
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 2 FWB - CDC Branch
 name_pl Master Key: Deposit Room 2 FWB - CDC Branch
 slaying mkcdcfwbdr2
+x 7
+y 12
 value 550
 unpaid 1
 unique 1
-x 7
-y 12
 end
 arch dungeon_magic
 x 7
@@ -2545,21 +2545,21 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 7
 y 13
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 3 FWB - CDC Branch
 name_pl Master Key: Deposit Room 3 FWB - CDC Branch
 slaying mkcdcfwbdr3
+x 7
+y 13
 value 550
 unpaid 1
 unique 1
-x 7
-y 13
 end
 arch dungeon_magic
 x 7
@@ -2585,9 +2585,9 @@ arch key2
 name Deposit Room 5 FWB - CDC Branch
 name_pl Deposit Room 5 FWB - CDC Branch
 slaying windeproom5fwb
-value 500
 x 7
 y 15
+value 500
 end
 arch dungeon_magic
 x 7
@@ -2598,9 +2598,9 @@ x 7
 y 16
 end
 arch grate_closed_1
-speed 0.500000
 x 7
 y 16
+speed 0.500000
 end
 arch dungeon_magic
 x 7
@@ -2682,9 +2682,9 @@ arch key2
 name Deposit Room 4 FWB - CDC Branch
 name_pl Deposit Room 4 FWB - CDC Branch
 slaying cdcfwbdr4
-value 500
 x 7
 y 20
+value 500
 end
 arch dungeon_magic
 x 7
@@ -2695,10 +2695,10 @@ x 7
 y 21
 end
 arch grate_closed_1
-speed 0.500000
-connected 114
 x 7
 y 21
+speed 0.500000
+connected 114
 end
 arch dungeon_magic
 x 7
@@ -2707,9 +2707,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 7
 y 22
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -2718,9 +2718,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 7
 y 23
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -2794,15 +2794,15 @@ x 8
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 8
+y 2
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 8
-y 2
 end
 arch dungeon_magic
 x 8
@@ -2815,15 +2815,15 @@ x 8
 y 3
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 8
+y 3
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 8
-y 3
 end
 arch dungeon_magic
 x 8
@@ -2922,21 +2922,21 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 8
 y 11
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 7 FWB - CDC Branch
 name_pl Master Key: Deposit Room 7 FWB - CDC Branch
 slaying mkcdcfwbdr7
+x 8
+y 11
 value 550
 unpaid 1
 unique 1
-x 8
-y 11
 end
 arch dungeon_magic
 x 8
@@ -2944,21 +2944,21 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 8
 y 12
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 6 FWB - CDC Branch
 name_pl Master Key: Deposit Room 6 FWB - CDC Branch
 slaying mkcdcfwbdr6
+x 8
+y 12
 value 550
 unpaid 1
 unique 1
-x 8
-y 12
 end
 arch dungeon_magic
 x 8
@@ -2966,21 +2966,21 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 8
 y 13
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 4 FWB - CDC Branch
 name_pl Master Key: Deposit Room 4 FWB - CDC Branch
 slaying mkcdcfwbdr4
+x 8
+y 13
 value 550
 unpaid 1
 unique 1
-x 8
-y 13
 end
 arch dungeon_magic
 x 8
@@ -3027,9 +3027,9 @@ x 8
 y 17
 end
 arch platinacoin
-nrof 10000
 x 8
 y 17
+nrof 10000
 end
 arch random_potion
 x 8
@@ -3044,9 +3044,9 @@ x 8
 y 18
 end
 arch gem
-nrof 100
 x 8
 y 18
+nrof 100
 end
 arch random_potion
 x 8
@@ -3073,15 +3073,15 @@ x 8
 y 20
 end
 arch button_lever
-connected 114
 x 8
 y 20
+connected 114
 end
 arch check_inv
 slaying mkcdcfwbdr4
-connected 1104
 x 8
 y 20
+connected 1104
 end
 arch dungeon_magic
 x 8
@@ -3102,9 +3102,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 8
 y 22
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -3113,9 +3113,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 8
 y 23
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -3189,15 +3189,15 @@ x 9
 y 2
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 9
+y 2
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 9
-y 2
 end
 arch dungeon_magic
 x 9
@@ -3210,15 +3210,15 @@ x 9
 y 3
 end
 arch gem
-face pretty_crystal.111
 title of exceptional beauty
+face pretty_crystal.111
+x 9
+y 3
 speed 0.000000
 nrof 50
 value 40000
 weight 65
 is_animated 0
-x 9
-y 3
 end
 arch dungeon_magic
 x 9
@@ -3309,11 +3309,11 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 9
 y 11
+unique 1
 end
 arch shop_mat
 x 9
@@ -3325,11 +3325,11 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 9
 y 12
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -3337,21 +3337,21 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-unique 1
+face shop_empty.111
 x 9
 y 13
+unique 1
 end
 arch key2
 name Master Key: Deposit Room 8 FWB - CDC Branch
 name_pl Master Key: Deposit Room 8 FWB - CDC Branch
 slaying mkcdcfwbdr8
+x 9
+y 13
 value 550
 unpaid 1
 unique 1
-x 9
-y 13
 end
 arch dungeon_magic
 x 9
@@ -3378,9 +3378,9 @@ x 9
 y 15
 end
 arch igate_closed_2
-speed 0.500000
 x 9
 y 15
+speed 0.500000
 end
 arch dungeon_magic
 x 9
@@ -3440,10 +3440,10 @@ x 9
 y 20
 end
 arch igate_closed_2
-speed 0.500000
-connected 1104
 x 9
 y 20
+speed 0.500000
+connected 1104
 end
 arch dungeon_magic
 x 9
@@ -3646,9 +3646,9 @@ end
 arch grate_closed_2
 name depository door
 name_pl depository door
-speed 0.500000
 x 10
 y 8
+speed 0.500000
 end
 arch dungeon_magic
 x 10
@@ -3776,9 +3776,9 @@ y 20
 end
 arch check_inv
 slaying mkcdcfwbdr4
-connected 1104
 x 10
 y 20
+connected 1104
 end
 arch dungeon_magic
 x 10
@@ -3872,9 +3872,9 @@ x 11
 y 2
 end
 arch pearl
-nrof 1200
 x 11
 y 2
+nrof 1200
 end
 arch dungeon_magic
 x 11
@@ -3887,9 +3887,9 @@ x 11
 y 3
 end
 arch gem
-nrof 200
 x 11
 y 3
+nrof 200
 end
 arch dungeon_magic
 x 11
@@ -3902,9 +3902,9 @@ x 11
 y 4
 end
 arch gem
-nrof 200
 x 11
 y 4
+nrof 200
 end
 arch dungeon_magic
 x 11
@@ -3917,20 +3917,20 @@ x 11
 y 5
 end
 arch emerald
-nrof 500
-no_pick 1
 x 11
 y 5
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 11
+y 5
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 11
-y 5
 end
 arch dungeon_magic
 x 11
@@ -3943,20 +3943,20 @@ x 11
 y 6
 end
 arch emerald
-nrof 500
-no_pick 1
 x 11
 y 6
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 11
+y 6
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 11
-y 6
 end
 arch dungeon_magic
 x 11
@@ -4028,9 +4028,9 @@ y 12
 end
 arch check_inv
 slaying mkcdcfwbdr8
-connected 1108
 x 11
 y 12
+connected 1108
 end
 arch dungeon_magic
 x 11
@@ -4081,9 +4081,9 @@ y 17
 end
 arch check_inv
 slaying mkcdcfwbdr7
-connected 1107
 x 11
 y 17
+connected 1107
 end
 arch dungeon_magic
 x 11
@@ -4127,9 +4127,9 @@ y 22
 end
 arch check_inv
 slaying mkcdcfwbdr6
-connected 1106
 x 11
 y 22
+connected 1106
 end
 arch dungeon_magic
 x 11
@@ -4214,9 +4214,9 @@ x 12
 y 2
 end
 arch pearl
-nrof 1200
 x 12
 y 2
+nrof 1200
 end
 arch dungeon_magic
 x 12
@@ -4229,9 +4229,9 @@ x 12
 y 3
 end
 arch gem
-nrof 200
 x 12
 y 3
+nrof 200
 end
 arch dungeon_magic
 x 12
@@ -4244,9 +4244,9 @@ x 12
 y 4
 end
 arch gem
-nrof 200
 x 12
 y 4
+nrof 200
 end
 arch dungeon_magic
 x 12
@@ -4259,20 +4259,20 @@ x 12
 y 5
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 5
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 12
+y 5
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 12
-y 5
 end
 arch dungeon_magic
 x 12
@@ -4285,20 +4285,20 @@ x 12
 y 6
 end
 arch emerald
-nrof 500
-no_pick 1
 x 12
 y 6
+nrof 500
+no_pick 1
 end
 arch emerald
-face pretty_emerald.111
 title of great value
+face pretty_emerald.111
+x 12
+y 6
 nrof 30
 value 1600
 weight 55
 is_animated 0
-x 12
-y 6
 end
 arch dungeon_magic
 x 12
@@ -4369,10 +4369,10 @@ x 12
 y 12
 end
 arch igate_closed_2
-speed 0.500000
-connected 1108
 x 12
 y 12
+speed 0.500000
+connected 1108
 end
 arch dungeon_magic
 x 12
@@ -4432,10 +4432,10 @@ x 12
 y 17
 end
 arch igate_closed_2
-speed 0.500000
-connected 1107
 x 12
 y 17
+speed 0.500000
+connected 1107
 end
 arch dungeon_magic
 x 12
@@ -4495,10 +4495,10 @@ x 12
 y 22
 end
 arch igate_closed_2
-speed 0.500000
-connected 1106
 x 12
 y 22
+speed 0.500000
+connected 1106
 end
 arch dungeon_magic
 x 12
@@ -4589,9 +4589,9 @@ x 13
 y 2
 end
 arch pearl
-nrof 1200
 x 13
 y 2
+nrof 1200
 end
 arch dungeon_magic
 x 13
@@ -4604,9 +4604,9 @@ x 13
 y 3
 end
 arch ruby
-nrof 500
 x 13
 y 3
+nrof 500
 end
 arch dungeon_magic
 x 13
@@ -4619,9 +4619,9 @@ x 13
 y 4
 end
 arch ruby
-nrof 500
 x 13
 y 4
+nrof 500
 end
 arch dungeon_magic
 x 13
@@ -4634,9 +4634,9 @@ x 13
 y 5
 end
 arch sapphire
-nrof 500
 x 13
 y 5
+nrof 500
 end
 arch dungeon_magic
 x 13
@@ -4649,9 +4649,9 @@ x 13
 y 6
 end
 arch sapphire
-nrof 500
 x 13
 y 6
+nrof 500
 end
 arch dungeon_magic
 x 13
@@ -4683,20 +4683,20 @@ y 8
 end
 arch key2
 name FWB 2000 Diamond Note
-face card.111
+name_pl FWB 2000 Diamond Notes
+slaying fwb_2000_dia_note_1
 msg
 FWB 2000 Diamond Note
 Redeemable for 2000 diamonds at any
 First World Bank diamond exchange
 endmsg
-name_pl FWB 2000 Diamond Notes
-slaying fwb_2000_dia_note_1
+face card.111
+x 13
+y 8
 nrof 1000
 material 1
 value 1
 weight 2
-x 13
-y 8
 end
 arch dungeon_magic
 x 13
@@ -4743,15 +4743,15 @@ x 13
 y 12
 end
 arch button_lever
-connected 118
 x 13
 y 12
+connected 118
 end
 arch check_inv
 slaying mkcdcfwbdr8
-connected 1108
 x 13
 y 12
+connected 1108
 end
 arch dungeon_magic
 x 13
@@ -4772,9 +4772,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 14
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4783,9 +4783,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 15
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4808,15 +4808,15 @@ x 13
 y 17
 end
 arch button_lever
-connected 117
 x 13
 y 17
+connected 117
 end
 arch check_inv
 slaying mkcdcfwbdr7
-connected 1107
 x 13
 y 17
+connected 1107
 end
 arch dungeon_magic
 x 13
@@ -4837,9 +4837,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 19
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4848,9 +4848,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 20
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4873,15 +4873,15 @@ x 13
 y 22
 end
 arch button_lever
-connected 116
 x 13
 y 22
+connected 116
 end
 arch check_inv
 slaying mkcdcfwbdr6
-connected 1106
 x 13
 y 22
+connected 1106
 end
 arch dungeon_magic
 x 13
@@ -4902,9 +4902,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 24
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4913,9 +4913,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 13
 y 25
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4969,9 +4969,9 @@ x 14
 y 2
 end
 arch pearl
-nrof 1200
 x 14
 y 2
+nrof 1200
 end
 arch dungeon_magic
 x 14
@@ -4984,9 +4984,9 @@ x 14
 y 3
 end
 arch ruby
-nrof 500
 x 14
 y 3
+nrof 500
 end
 arch dungeon_magic
 x 14
@@ -4999,9 +4999,9 @@ x 14
 y 4
 end
 arch ruby
-nrof 500
 x 14
 y 4
+nrof 500
 end
 arch dungeon_magic
 x 14
@@ -5014,9 +5014,9 @@ x 14
 y 5
 end
 arch sapphire
-nrof 500
 x 14
 y 5
+nrof 500
 end
 arch dungeon_magic
 x 14
@@ -5029,9 +5029,9 @@ x 14
 y 6
 end
 arch sapphire
-nrof 500
 x 14
 y 6
+nrof 500
 end
 arch dungeon_magic
 x 14
@@ -5062,9 +5062,9 @@ x 14
 y 8
 end
 arch imperial
-nrof 1000000
 x 14
 y 8
+nrof 1000000
 end
 arch dungeon_magic
 x 14
@@ -5114,9 +5114,9 @@ arch key2
 name Deposit Room 8 FWB - CDC Branch
 name_pl Deposit Room 8 FWB - CDC Branch
 slaying cdcfwbdr8
-value 500
 x 14
 y 12
+value 500
 end
 arch dungeon_magic
 x 14
@@ -5127,10 +5127,10 @@ x 14
 y 13
 end
 arch grate_closed_1
-speed 0.500000
-connected 118
 x 14
 y 13
+speed 0.500000
+connected 118
 end
 arch dungeon_magic
 x 14
@@ -5139,9 +5139,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 14
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5150,9 +5150,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 15
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5178,9 +5178,9 @@ arch key2
 name Deposit Room 7 FWB - CDC Branch
 name_pl Deposit Room 7 FWB - CDC Branch
 slaying cdcfwbdr7
-value 500
 x 14
 y 17
+value 500
 end
 arch dungeon_magic
 x 14
@@ -5191,10 +5191,10 @@ x 14
 y 18
 end
 arch grate_closed_1
-speed 0.500000
-connected 117
 x 14
 y 18
+speed 0.500000
+connected 117
 end
 arch dungeon_magic
 x 14
@@ -5203,9 +5203,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 19
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5214,9 +5214,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 20
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5242,9 +5242,9 @@ arch key2
 name Deposit Room 6 FWB - CDC Branch
 name_pl Deposit Room 6 FWB - CDC Branch
 slaying cdcfwbdr6
-value 500
 x 14
 y 22
+value 500
 end
 arch dungeon_magic
 x 14
@@ -5255,10 +5255,10 @@ x 14
 y 23
 end
 arch grate_closed_1
-speed 0.500000
-connected 116
 x 14
 y 23
+speed 0.500000
+connected 116
 end
 arch dungeon_magic
 x 14
@@ -5267,9 +5267,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 24
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -5278,9 +5278,9 @@ end
 arch cobblestones2
 name deposit room floor
 name_pl deposit room floor
-unique 1
 x 14
 y 25
+unique 1
 end
 arch dungeon_magic
 x 14

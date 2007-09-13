@@ -1,14 +1,14 @@
 arch map
-region lonetown
 name dress3
+difficulty 16
+region lonetown
+width 15
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 27 04:38:51 1996
 endmsg
-x 15
-y 32
-level 16
 end
 arch blocked
 end
@@ -1766,8 +1766,8 @@ arch igate_closed_2
 x 6
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 6
@@ -1781,8 +1781,8 @@ arch igate_closed_2
 x 6
 y 28
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 6
@@ -2149,8 +2149,8 @@ arch igate_closed_1
 x 7
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2171,8 +2171,8 @@ end
 arch button_lever
 x 7
 y 28
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2186,9 +2186,9 @@ arch igate_open_1
 x 7
 y 29
 speed 0.500000
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 7
@@ -2494,8 +2494,8 @@ arch igate_closed_2
 x 8
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 8
@@ -2509,8 +2509,8 @@ arch igate_closed_2
 x 8
 y 28
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch unholy_ground
 x 8

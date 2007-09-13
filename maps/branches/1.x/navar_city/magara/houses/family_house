@@ -1,13 +1,13 @@
 arch map
-region navar
 name family_house
+region navar
+width 31
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Mar 31 10:14:12 2001
 endmsg
-x 31
-y 25
 end
 arch gwall_2_2_2
 end
@@ -1188,6 +1188,10 @@ arch dungeon_floor
 x 7
 y 21
 end
+arch dragon
+x 7
+y 21
+end
 arch dungeon_floor
 x 7
 y 22
@@ -1196,6 +1200,10 @@ arch dungeon_floor
 x 7
 y 23
 end
+arch dragon
+x 7
+y 23
+end
 arch gwall_2_1_2
 x 7
 y 24
@@ -1625,11 +1633,19 @@ arch dungeon_floor
 x 10
 y 21
 end
+arch dragon
+x 10
+y 21
+end
 arch dungeon_floor
 x 10
 y 22
 end
 arch dungeon_floor
+x 10
+y 23
+end
+arch dragon
 x 10
 y 23
 end
@@ -2038,6 +2054,10 @@ arch dungeon_floor
 x 13
 y 21
 end
+arch giant
+x 13
+y 21
+end
 arch dungeon_floor
 x 13
 y 22
@@ -2193,6 +2213,10 @@ arch dungeon_floor
 x 14
 y 21
 end
+arch giant
+x 14
+y 21
+end
 arch dungeon_floor
 x 14
 y 22
@@ -2340,6 +2364,10 @@ arch food
 x 15
 y 21
 end
+arch giant
+x 15
+y 21
+end
 arch dungeon_floor
 x 15
 y 22
@@ -2495,6 +2523,10 @@ arch chair_1.1
 x 16
 y 21
 end
+arch giant
+x 16
+y 21
+end
 arch dungeon_floor
 x 16
 y 22
@@ -2646,6 +2678,10 @@ arch table
 x 17
 y 21
 end
+arch giant
+x 17
+y 21
+end
 arch dungeon_floor
 x 17
 y 22
@@ -3071,6 +3107,10 @@ arch chair_1.1
 x 20
 y 22
 end
+arch troll
+x 20
+y 22
+end
 arch dungeon_floor
 x 20
 y 23
@@ -3365,6 +3405,10 @@ arch dungeon_floor
 x 22
 y 22
 end
+arch troll
+x 22
+y 22
+end
 arch dungeon_floor
 x 22
 y 23
@@ -3889,6 +3933,10 @@ arch dungeon_floor
 x 26
 y 21
 end
+arch chinese_dragon
+x 26
+y 21
+end
 arch dungeon_floor
 x 26
 y 22
@@ -4188,6 +4236,10 @@ x 28
 y 21
 end
 arch dungeon_floor
+x 28
+y 22
+end
+arch chinese_dragon
 x 28
 y 22
 end
@@ -4469,161 +4521,4 @@ end
 arch gwall_2_2_4
 x 30
 y 24
-end
-arch dragon
-x 7
-y 21
-end
-More
-arch dragon_2
-x 8
-y 21
-end
-arch dragon
-x 7
-y 23
-end
-More
-arch dragon_2
-x 8
-y 23
-end
-arch dragon
-x 10
-y 21
-end
-More
-arch dragon_2
-x 11
-y 21
-end
-arch dragon
-x 10
-y 23
-end
-More
-arch dragon_2
-x 11
-y 23
-end
-arch giant
-x 13
-y 21
-end
-More
-arch giant_2
-x 13
-y 22
-end
-arch giant
-x 14
-y 21
-end
-More
-arch giant_2
-x 14
-y 22
-end
-arch giant
-x 15
-y 21
-end
-More
-arch giant_2
-x 15
-y 22
-end
-arch giant
-x 16
-y 21
-end
-More
-arch giant_2
-x 16
-y 22
-end
-arch giant
-x 17
-y 21
-end
-More
-arch giant_2
-x 17
-y 22
-end
-arch troll
-x 20
-y 22
-end
-More
-arch troll_2
-x 21
-y 22
-end
-More
-arch troll_3
-x 20
-y 23
-end
-More
-arch troll_4
-x 21
-y 23
-end
-arch troll
-x 22
-y 22
-end
-More
-arch troll_2
-x 23
-y 22
-end
-More
-arch troll_3
-x 22
-y 23
-end
-More
-arch troll_4
-x 23
-y 23
-end
-arch chinese_dragon
-x 26
-y 21
-end
-More
-arch chinese_dragon_2
-x 27
-y 21
-end
-More
-arch chinese_dragon_3
-x 26
-y 22
-end
-More
-arch chinese_dragon_4
-x 27
-y 22
-end
-arch chinese_dragon
-x 28
-y 22
-end
-More
-arch chinese_dragon_2
-x 29
-y 22
-end
-More
-arch chinese_dragon_3
-x 28
-y 23
-end
-More
-arch chinese_dragon_4
-x 29
-y 23
 end

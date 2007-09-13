@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name mountain
+difficulty 5
+region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 28 22:06:47 1996
 endmsg
-x 32
-y 32
-level 5
 end
 arch mountain2
 no_pass 1
@@ -1530,6 +1530,10 @@ x 10
 y 9
 end
 arch grass
+x 10
+y 10
+end
+arch ent
 x 10
 y 10
 end
@@ -3506,6 +3510,13 @@ arch large_stones
 x 21
 y 13
 end
+arch city_tower
+slaying tower.1
+hp 10
+sp 20
+x 21
+y 13
+end
 arch large_stones
 x 21
 y 14
@@ -5366,15 +5377,4 @@ arch sea
 x 31
 y 31
 no_pass 0
-end
-arch ent
-x 10
-y 10
-end
-arch city_tower
-slaying tower.1
-hp 10
-sp 20
-x 21
-y 13
 end

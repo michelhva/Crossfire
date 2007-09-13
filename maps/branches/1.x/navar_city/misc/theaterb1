@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 region navar
@@ -14,77 +15,47 @@ Date: Tue Aug  3 23:32:57 2004
 endmsg
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch minor_djinn
@@ -92,83 +63,51 @@ y 15
 resist_fire 100
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch blocked
-msg
-endmsg
 y 27
 end
 arch blocked
-msg
-endmsg
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch marble
@@ -204,8 +143,6 @@ x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
@@ -214,128 +151,86 @@ x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
 arch blocked
-msg
-endmsg
 x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 25
 end
@@ -380,14 +275,10 @@ x 1
 y 30
 end
 arch blocked
-msg
-endmsg
 x 1
 y 31
 end
 arch blocked
-msg
-endmsg
 x 2
 end
 arch marble
@@ -431,122 +322,82 @@ x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 8
 end
 arch blocked
-msg
-endmsg
 x 2
 y 9
 end
 arch blocked
-msg
-endmsg
 x 2
 y 10
 end
 arch blocked
-msg
-endmsg
 x 2
 y 11
 end
 arch blocked
-msg
-endmsg
 x 2
 y 12
 end
 arch blocked
-msg
-endmsg
 x 2
 y 13
 end
 arch blocked
-msg
-endmsg
 x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
 arch blocked
-msg
-endmsg
 x 2
 y 16
 end
 arch blocked
-msg
-endmsg
 x 2
 y 17
 end
 arch blocked
-msg
-endmsg
 x 2
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 22
 end
 arch blocked
-msg
-endmsg
 x 2
 y 23
 end
 arch blocked
-msg
-endmsg
 x 2
 y 24
 end
 arch blocked
-msg
-endmsg
 x 2
 y 25
 end
@@ -586,14 +437,10 @@ x 2
 y 30
 end
 arch blocked
-msg
-endmsg
 x 2
 y 31
 end
 arch blocked
-msg
-endmsg
 x 3
 end
 arch marble
@@ -813,14 +660,10 @@ x 3
 y 30
 end
 arch blocked
-msg
-endmsg
 x 3
 y 31
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch marble
@@ -978,14 +821,10 @@ x 4
 y 30
 end
 arch blocked
-msg
-endmsg
 x 4
 y 31
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch marble
@@ -1160,25 +999,17 @@ x 5
 y 30
 end
 arch blocked
-msg
-endmsg
 x 5
 y 31
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 2
 end
@@ -1335,37 +1166,25 @@ x 6
 y 28
 end
 arch blocked
-msg
-endmsg
 x 6
 y 29
 end
 arch blocked
-msg
-endmsg
 x 6
 y 30
 end
 arch blocked
-msg
-endmsg
 x 6
 y 31
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 2
 end
@@ -1529,8 +1348,6 @@ arch marble
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch marble
@@ -1538,8 +1355,6 @@ x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -1548,8 +1363,6 @@ x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 2
 end
@@ -2006,14 +1819,14 @@ arch permanent_lava
 x 10
 y 6
 end
+arch dungeon_magic
+x 10
+y 6
+end
 arch minor_djinn
 x 10
 y 6
 resist_fire 100
-end
-arch dungeon_magic
-x 10
-y 6
 end
 arch permanent_lava
 x 10
@@ -2315,14 +2128,14 @@ arch permanent_lava
 x 11
 y 22
 end
+arch dungeon_magic
+x 11
+y 22
+end
 arch minor_djinn
 x 11
 y 22
 resist_fire 100
-end
-arch dungeon_magic
-x 11
-y 22
 end
 arch permanent_lava
 x 11
@@ -3287,14 +3100,14 @@ arch permanent_lava
 x 16
 y 24
 end
+arch dungeon_magic
+x 16
+y 24
+end
 arch minor_djinn
 x 16
 y 24
 resist_fire 100
-end
-arch dungeon_magic
-x 16
-y 24
 end
 arch permanent_lava
 x 16
@@ -4050,14 +3863,14 @@ arch permanent_lava
 x 20
 y 20
 end
+arch dungeon_magic
+x 20
+y 20
+end
 arch minor_djinn
 x 20
 y 20
 resist_fire 100
-end
-arch dungeon_magic
-x 20
-y 20
 end
 arch permanent_lava
 x 20
@@ -4702,8 +4515,6 @@ arch marble
 x 24
 end
 arch blocked
-msg
-endmsg
 x 24
 end
 arch marble
@@ -4888,13 +4699,9 @@ x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
@@ -5086,8 +4893,6 @@ x 25
 y 31
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch marble
@@ -5275,14 +5080,10 @@ x 26
 y 30
 end
 arch blocked
-msg
-endmsg
 x 26
 y 31
 end
 arch blocked
-msg
-endmsg
 x 27
 end
 arch marble
@@ -5451,14 +5252,10 @@ x 27
 y 30
 end
 arch blocked
-msg
-endmsg
 x 27
 y 31
 end
 arch blocked
-msg
-endmsg
 x 28
 end
 arch marble
@@ -5594,8 +5391,6 @@ x 28
 y 18
 end
 arch blocked
-msg
-endmsg
 x 28
 y 18
 end
@@ -5604,8 +5399,6 @@ x 28
 y 19
 end
 arch blocked
-msg
-endmsg
 x 28
 y 19
 end
@@ -5690,14 +5483,10 @@ x 28
 y 30
 end
 arch blocked
-msg
-endmsg
 x 28
 y 31
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch marble
@@ -5729,122 +5518,82 @@ x 29
 y 5
 end
 arch blocked
-msg
-endmsg
 x 29
 y 6
 end
 arch blocked
-msg
-endmsg
 x 29
 y 7
 end
 arch blocked
-msg
-endmsg
 x 29
 y 8
 end
 arch blocked
-msg
-endmsg
 x 29
 y 9
 end
 arch blocked
-msg
-endmsg
 x 29
 y 10
 end
 arch blocked
-msg
-endmsg
 x 29
 y 11
 end
 arch blocked
-msg
-endmsg
 x 29
 y 12
 end
 arch blocked
-msg
-endmsg
 x 29
 y 13
 end
 arch blocked
-msg
-endmsg
 x 29
 y 14
 end
 arch blocked
-msg
-endmsg
 x 29
 y 15
 end
 arch blocked
-msg
-endmsg
 x 29
 y 16
 end
 arch blocked
-msg
-endmsg
 x 29
 y 17
 end
 arch blocked
-msg
-endmsg
 x 29
 y 18
 end
 arch blocked
-msg
-endmsg
 x 29
 y 19
 end
 arch blocked
-msg
-endmsg
 x 29
 y 20
 end
 arch blocked
-msg
-endmsg
 x 29
 y 21
 end
 arch blocked
-msg
-endmsg
 x 29
 y 22
 end
 arch blocked
-msg
-endmsg
 x 29
 y 23
 end
 arch blocked
-msg
-endmsg
 x 29
 y 24
 end
 arch blocked
-msg
-endmsg
 x 29
 y 25
 end
@@ -5882,14 +5631,10 @@ x 29
 y 30
 end
 arch blocked
-msg
-endmsg
 x 29
 y 31
 end
 arch blocked
-msg
-endmsg
 x 30
 end
 arch marble
@@ -5933,122 +5678,82 @@ x 30
 y 5
 end
 arch blocked
-msg
-endmsg
 x 30
 y 6
 end
 arch blocked
-msg
-endmsg
 x 30
 y 7
 end
 arch blocked
-msg
-endmsg
 x 30
 y 8
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
 arch blocked
-msg
-endmsg
 x 30
 y 10
 end
 arch blocked
-msg
-endmsg
 x 30
 y 11
 end
 arch blocked
-msg
-endmsg
 x 30
 y 12
 end
 arch blocked
-msg
-endmsg
 x 30
 y 13
 end
 arch blocked
-msg
-endmsg
 x 30
 y 14
 end
 arch blocked
-msg
-endmsg
 x 30
 y 15
 end
 arch blocked
-msg
-endmsg
 x 30
 y 16
 end
 arch blocked
-msg
-endmsg
 x 30
 y 17
 end
 arch blocked
-msg
-endmsg
 x 30
 y 18
 end
 arch blocked
-msg
-endmsg
 x 30
 y 19
 end
 arch blocked
-msg
-endmsg
 x 30
 y 20
 end
 arch blocked
-msg
-endmsg
 x 30
 y 21
 end
 arch blocked
-msg
-endmsg
 x 30
 y 22
 end
 arch blocked
-msg
-endmsg
 x 30
 y 23
 end
 arch blocked
-msg
-endmsg
 x 30
 y 24
 end
 arch blocked
-msg
-endmsg
 x 30
 y 25
 end
@@ -6093,199 +5798,133 @@ x 30
 y 30
 end
 arch blocked
-msg
-endmsg
 x 30
 y 31
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch blocked
-msg
-endmsg
 x 31
 y 1
 end
 arch blocked
-msg
-endmsg
 x 31
 y 2
 end
 arch blocked
-msg
-endmsg
 x 31
 y 3
 end
 arch blocked
-msg
-endmsg
 x 31
 y 4
 end
 arch blocked
-msg
-endmsg
 x 31
 y 5
 end
 arch blocked
-msg
-endmsg
 x 31
 y 6
 end
 arch blocked
-msg
-endmsg
 x 31
 y 7
 end
 arch blocked
-msg
-endmsg
 x 31
 y 8
 end
 arch blocked
-msg
-endmsg
 x 31
 y 9
 end
 arch blocked
-msg
-endmsg
 x 31
 y 10
 end
 arch blocked
-msg
-endmsg
 x 31
 y 11
 end
 arch blocked
-msg
-endmsg
 x 31
 y 12
 end
 arch blocked
-msg
-endmsg
 x 31
 y 13
 end
 arch blocked
-msg
-endmsg
 x 31
 y 14
 end
 arch blocked
-msg
-endmsg
 x 31
 y 15
 end
 arch blocked
-msg
-endmsg
 x 31
 y 16
 end
 arch blocked
-msg
-endmsg
 x 31
 y 17
 end
 arch blocked
-msg
-endmsg
 x 31
 y 18
 end
 arch blocked
-msg
-endmsg
 x 31
 y 19
 end
 arch blocked
-msg
-endmsg
 x 31
 y 20
 end
 arch blocked
-msg
-endmsg
 x 31
 y 21
 end
 arch blocked
-msg
-endmsg
 x 31
 y 22
 end
 arch blocked
-msg
-endmsg
 x 31
 y 23
 end
 arch blocked
-msg
-endmsg
 x 31
 y 24
 end
 arch blocked
-msg
-endmsg
 x 31
 y 25
 end
 arch blocked
-msg
-endmsg
 x 31
 y 26
 end
 arch blocked
-msg
-endmsg
 x 31
 y 27
 end
 arch blocked
-msg
-endmsg
 x 31
 y 28
 end
 arch blocked
-msg
-endmsg
 x 31
 y 29
 end
 arch blocked
-msg
-endmsg
 x 31
 y 30
 end
 arch blocked
-msg
-endmsg
 x 31
 y 31
 end

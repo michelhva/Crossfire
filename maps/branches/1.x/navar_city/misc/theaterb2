@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 region navar
@@ -16,15 +17,11 @@ end
 arch marble
 end
 arch blocked
-msg
-endmsg
 end
 arch marble
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch marble
@@ -199,24 +196,18 @@ arch marble
 y 30
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch marble
 y 31
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch marble
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch marble
@@ -396,8 +387,6 @@ x 1
 y 31
 end
 arch blocked
-msg
-endmsg
 x 1
 y 31
 end
@@ -6057,8 +6046,6 @@ arch marble
 x 30
 end
 arch blocked
-msg
-endmsg
 x 30
 end
 arch marble
@@ -6232,8 +6219,6 @@ x 30
 y 31
 end
 arch blocked
-msg
-endmsg
 x 30
 y 31
 end
@@ -6241,8 +6226,6 @@ arch marble
 x 31
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch marble
@@ -6250,8 +6233,6 @@ x 31
 y 1
 end
 arch blocked
-msg
-endmsg
 x 31
 y 1
 end
@@ -6484,8 +6465,6 @@ x 31
 y 30
 end
 arch blocked
-msg
-endmsg
 x 31
 y 30
 end
@@ -6494,8 +6473,6 @@ x 31
 y 31
 end
 arch blocked
-msg
-endmsg
 x 31
 y 31
 end

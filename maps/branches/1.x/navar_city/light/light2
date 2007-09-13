@@ -1,14 +1,14 @@
 arch map
-region navar
 name light2
+region navar
+darkness 5
+width 20
+height 20
 msg
 Creator:
 Email:
 Date: Fri Nov 12 11:08:02 1993
 endmsg
-width 20
-height 20
-darkness 5
 end
 arch cobblestones2
 end
@@ -194,9 +194,9 @@ x 1
 y 13
 end
 arch pirate
-carrying 3000
 x 1
 y 13
+carrying 3000
 arch torch_1
 end
 end
@@ -413,9 +413,9 @@ x 3
 y 13
 end
 arch pirate
-carrying 3000
 x 3
 y 13
+carrying 3000
 arch torch_1
 end
 end
@@ -428,9 +428,9 @@ x 3
 y 15
 end
 arch pirate
-carrying 3000
 x 3
 y 15
+carrying 3000
 arch torch_1
 end
 end
@@ -439,9 +439,9 @@ x 3
 y 16
 end
 arch pirate
-carrying 3000
 x 3
 y 16
+carrying 3000
 arch torch_1
 end
 end
@@ -528,9 +528,9 @@ x 4
 y 11
 end
 arch pirate
-carrying 3000
 x 4
 y 11
+carrying 3000
 arch torch_1
 end
 end
@@ -621,9 +621,9 @@ x 5
 y 9
 end
 arch pirate
-carrying 3000
 x 5
 y 9
+carrying 3000
 arch torch_1
 end
 end
@@ -656,9 +656,9 @@ x 5
 y 15
 end
 arch pirate
-carrying 3000
 x 5
 y 15
+carrying 3000
 arch torch_1
 end
 end
@@ -1507,9 +1507,9 @@ x 12
 y 18
 end
 arch pirate
-carrying 3000
 x 12
 y 18
+carrying 3000
 arch torch_1
 end
 end
@@ -1604,9 +1604,9 @@ x 13
 y 15
 end
 arch northman
-carrying 3000
 x 13
 y 15
+carrying 3000
 arch torch_1
 end
 end
@@ -1627,9 +1627,9 @@ x 13
 y 17
 end
 arch pirate
-carrying 3000
 x 13
 y 17
+carrying 3000
 arch torch_1
 end
 end
@@ -1688,9 +1688,9 @@ x 14
 y 6
 end
 arch northman
-carrying 3000
 x 14
 y 6
+carrying 3000
 arch torch_1
 end
 end
@@ -1707,9 +1707,9 @@ x 14
 y 8
 end
 arch northman
-carrying 3000
 x 14
 y 8
+carrying 3000
 arch torch_1
 end
 end
@@ -1828,9 +1828,9 @@ x 15
 y 11
 end
 arch northman
-carrying 3000
 x 15
 y 11
+carrying 3000
 arch torch_1
 end
 end
@@ -1941,9 +1941,9 @@ x 16
 y 13
 end
 arch northman
-carrying 3000
 x 16
 y 13
+carrying 3000
 arch torch_1
 end
 end
@@ -2018,9 +2018,9 @@ x 17
 y 6
 end
 arch northman
-carrying 3000
 x 17
 y 6
+carrying 3000
 arch torch_1
 end
 end
@@ -2037,9 +2037,9 @@ x 17
 y 8
 end
 arch northman
-carrying 3000
 x 17
 y 8
+carrying 3000
 arch torch_1
 end
 end
@@ -2056,9 +2056,9 @@ x 17
 y 11
 end
 arch northman
-carrying 3000
 x 17
 y 11
+carrying 3000
 arch torch_1
 end
 end
@@ -2104,10 +2104,10 @@ maxhp 60
 sp 70
 maxsp 70
 exp 50
-see_invisible 1
-unaggressive 0
 x 17
 y 17
+see_invisible 1
+unaggressive 0
 arch abil_slow
 end
 arch spell_magic_bullet
@@ -2156,9 +2156,9 @@ x 18
 y 3
 end
 arch northman
-carrying 3000
 x 18
 y 3
+carrying 3000
 arch torch_1
 end
 end
@@ -2175,9 +2175,9 @@ x 18
 y 5
 end
 arch northman
-carrying 3000
 x 18
 y 5
+carrying 3000
 arch torch_1
 end
 end

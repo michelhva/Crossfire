@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name <untitled>
+region lakecountry
+width 16
+height 16
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Tue Mar 28 19:01:08 1995
 endmsg
-width 16
-height 16
 end
 arch woodfloor
 end
@@ -346,9 +346,9 @@ x 3
 y 7
 end
 arch door_look_2
-no_pass 0
 x 3
 y 7
+no_pass 0
 end
 arch woodfloor
 x 3
@@ -425,9 +425,9 @@ x 4
 y 3
 end
 arch door_look_1
-no_pass 0
 x 4
 y 3
+no_pass 0
 end
 arch woodfloor
 x 4
@@ -458,9 +458,9 @@ x 4
 y 10
 end
 arch door_look_1
-no_pass 0
 x 4
 y 10
+no_pass 0
 end
 arch woodfloor
 x 4
@@ -550,19 +550,19 @@ y 8
 end
 arch human
 name The axeman
-type 0
 Con 5
 hp 50
 maxhp 50
 dam 13
 wc 5
-armour 30
+x 5
+y 8
 level 5
+type 0
 randomitems none
 monster 1
 unaggressive 1
-x 5
-y 8
+armour 30
 end
 arch woodfloor
 x 5
@@ -691,13 +691,13 @@ Those sitting near the main door.
 Shh.. I am trying to hear what they
 are talking
 endmsg
-type 0
 hp 10
+x 6
+y 6
+type 0
 randomitems none
 monster 1
 unaggressive 1
-x 6
-y 6
 end
 arch woodfloor
 x 6
@@ -708,7 +708,6 @@ x 6
 y 7
 end
 arch ninja
-type 0
 Con 3
 hp 45
 maxhp 45
@@ -716,11 +715,12 @@ exp 100
 dam 8
 wc -3
 ac 4
-speed 0.600000
-monster 1
-unaggressive 1
 x 6
 y 7
+speed 0.600000
+type 0
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -740,7 +740,6 @@ y 9
 end
 arch wizard
 name Blacktooth the wizard
-type 0
 Pow 10
 hp 50
 maxhp 100
@@ -750,14 +749,15 @@ exp 10
 dam 5
 wc 15
 ac 2
+x 6
+y 9
 speed 0.600000
 level 10
-protected 7
+type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-x 6
-y 9
+protected 7
 end
 arch woodfloor
 x 6
@@ -864,9 +864,9 @@ x 7
 y 10
 end
 arch door_look_1
-no_pass 0
 x 7
 y 10
+no_pass 0
 end
 arch woodfloor
 x 7
@@ -897,9 +897,9 @@ x 7
 y 15
 end
 arch door_look_1
-no_pass 0
 x 7
 y 15
+no_pass 0
 end
 arch woodfloor
 x 8
@@ -924,9 +924,9 @@ x 8
 y 3
 end
 arch door_look_1
-no_pass 0
 x 8
 y 3
+no_pass 0
 end
 arch woodfloor
 x 8
@@ -961,9 +961,9 @@ x 8
 y 10
 end
 arch door_look_1
-no_pass 0
 x 8
 y 10
+no_pass 0
 end
 arch woodfloor
 x 8
@@ -994,9 +994,9 @@ x 8
 y 15
 end
 arch door_look_1
-no_pass 0
 x 8
 y 15
+no_pass 0
 end
 arch woodfloor
 x 9
@@ -1046,7 +1046,6 @@ y 6
 end
 arch viking
 name Svenhard the viking
-type 0
 Str 20
 Con 5
 Int 10
@@ -1054,12 +1053,13 @@ hp 130
 exp 150
 dam 15
 wc 1
-speed 0.400000
-level 6
-monster 1
-unaggressive 1
 x 9
 y 6
+speed 0.400000
+level 6
+type 0
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -1206,18 +1206,18 @@ x 10
 y 12
 end
 arch door_look_2
-no_pass 0
 x 10
 y 12
+no_pass 0
 end
 arch woodfloor
 x 10
 y 13
 end
 arch door_look_2
-no_pass 0
 x 10
 y 13
+no_pass 0
 end
 arch woodfloor
 x 10
@@ -1254,9 +1254,9 @@ x 11
 y 3
 end
 arch door_look_1
-no_pass 0
 x 11
 y 3
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -1379,9 +1379,9 @@ x 12
 y 7
 end
 arch door_look_2
-no_pass 0
 x 12
 y 7
+no_pass 0
 end
 arch woodfloor
 x 12
@@ -1499,7 +1499,6 @@ Hope you have better eyesight than that other chump - hahaha.
 @match *
 Get out of here! This is my room
 endmsg
-type 0
 Dex 25
 Con 10
 Pow 3
@@ -1508,13 +1507,14 @@ hp 100
 maxhp 200
 dam 10
 ac -5
+x 13
+y 9
 speed 0.800000
 level 10
+type 0
 monster 1
 unaggressive 1
 can_use_skill 1
-x 13
-y 9
 end
 arch woodfloor
 x 13
@@ -1529,36 +1529,36 @@ x 13
 y 11
 end
 arch table_3
-no_pass 1
 x 13
 y 11
+no_pass 1
 end
 arch woodfloor
 x 13
 y 12
 end
 arch table_3
-no_pass 1
 x 13
 y 12
+no_pass 1
 end
 arch woodfloor
 x 13
 y 13
 end
 arch table_3
-no_pass 1
 x 13
 y 13
+no_pass 1
 end
 arch woodfloor
 x 13
 y 14
 end
 arch table_3
-no_pass 1
 x 13
 y 14
+no_pass 1
 end
 arch woodfloor
 x 13

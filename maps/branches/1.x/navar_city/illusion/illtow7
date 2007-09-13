@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region navar
+width 19
+height 19
 msg
 Creator: 
 Email: 
 Date: Mon Nov 15 22:11:21 1993
 endmsg
-x 19
-y 19
 end
 arch pstone_3
 end
@@ -340,8 +341,8 @@ ac -5
 x 3
 y 9
 level 15
-immune 4
 carrying 2300
+immune 4
 arch spell_sm_lightning
 end
 arch wand

@@ -1,6 +1,8 @@
 arch map
-region portjoseph
 name goblin fortress
+region portjoseph
+width 16
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
@@ -278,7 +280,7 @@ arch locked_door2
 name gold inlayed door
 slaying lgold
 msg
-This door has a wide keyhole. 
+This door has a wide keyhole.
 endmsg
 x 2
 y 11
@@ -427,7 +429,7 @@ dirt hole gang.
 Yeah, yeah, the dirt hole gang
 hangs out in the dirt hole
 outside the fort.  No one likes
-them.  They stole the silver key!  
+them.  They stole the silver key!
 @match *
 Please don't kill me! Please, I'll tell
 you everything I know!

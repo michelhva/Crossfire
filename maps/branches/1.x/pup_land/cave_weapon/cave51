@@ -1,13 +1,13 @@
 arch map
-region pupland
 name cave5
+region pupland
+width 18
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 07:18:34 1996
 endmsg
-x 18
-y 27
 end
 arch blocked
 y 3
@@ -1455,10 +1455,10 @@ y 3
 speed 1.200000
 attack_movement 3
 level 50
-vulnerable 16
 carrying 12000
-run_away 0
 unaggressive 1
+run_away 0
+vulnerable 16
 arch sting
 name Kobold Dagger
 dam 6

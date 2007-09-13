@@ -1,16 +1,16 @@
 arch map
 name <untitled>
+reset_timeout 7200
+difficulty 1
+width 51
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
 endmsg
-width 51
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 end
 arch dungeon_magic
@@ -921,6 +921,10 @@ arch flagstone
 x 2
 y 2
 end
+arch dragonman
+x 2
+y 2
+end
 arch flagstone
 x 2
 y 3
@@ -958,6 +962,10 @@ x 2
 y 10
 end
 arch dungeon_magic
+x 2
+y 10
+end
+arch big_elec
 x 2
 y 10
 end
@@ -1089,11 +1097,19 @@ arch flagstone
 x 2
 y 29
 end
+arch chinese_dragon
+x 2
+y 29
+end
 arch flagstone
 x 2
 y 30
 end
 arch flagstone
+x 2
+y 31
+end
+arch chinese_dragon
 x 2
 y 31
 end
@@ -1125,6 +1141,10 @@ arch flagstone
 x 2
 y 38
 end
+arch chinese_dragon
+x 2
+y 38
+end
 arch flagstone
 x 2
 y 39
@@ -1134,6 +1154,10 @@ x 2
 y 40
 end
 arch flagstone
+x 2
+y 41
+end
+arch chinese_dragon
 x 2
 y 41
 end
@@ -1210,6 +1234,10 @@ arch flagstone
 x 3
 y 5
 end
+arch big_dragon
+x 3
+y 5
+end
 arch flagstone
 x 3
 y 6
@@ -1219,6 +1247,10 @@ x 3
 y 7
 end
 arch flagstone
+x 3
+y 8
+end
+arch chinese_dragon
 x 3
 y 8
 end
@@ -1278,6 +1310,10 @@ arch dungeon_magic
 x 3
 y 15
 end
+arch shadowtiger
+x 3
+y 15
+end
 arch flagstone
 x 3
 y 16
@@ -1307,6 +1343,10 @@ x 3
 y 20
 end
 arch dungeon_magic
+x 3
+y 20
+end
+arch shadowtiger
 x 3
 y 20
 end
@@ -1343,6 +1383,10 @@ x 3
 y 25
 end
 arch dungeon_magic
+x 3
+y 25
+end
+arch shadowtiger
 x 3
 y 25
 end
@@ -1386,6 +1430,10 @@ arch flagstone
 x 3
 y 33
 end
+arch chinese_dragon
+x 3
+y 33
+end
 arch flagstone
 x 3
 y 34
@@ -1395,6 +1443,10 @@ x 3
 y 35
 end
 arch flagstone
+x 3
+y 36
+end
+arch chinese_dragon
 x 3
 y 36
 end
@@ -1531,6 +1583,10 @@ arch flagstone
 x 4
 y 2
 end
+arch dragonman
+x 4
+y 2
+end
 arch flagstone
 x 4
 y 3
@@ -1707,6 +1763,10 @@ arch flagstone
 x 4
 y 31
 end
+arch chinese_dragon
+x 4
+y 31
+end
 arch flagstone
 x 4
 y 32
@@ -1744,6 +1804,10 @@ x 4
 y 40
 end
 arch flagstone
+x 4
+y 41
+end
+arch chinese_dragon
 x 4
 y 41
 end
@@ -1879,6 +1943,10 @@ arch dungeon_magic
 x 5
 y 10
 end
+arch chinese_dragon
+x 5
+y 10
+end
 arch flagstone
 x 5
 y 11
@@ -1928,6 +1996,10 @@ x 5
 y 16
 end
 arch flagstone
+x 5
+y 17
+end
+arch dragon
 x 5
 y 17
 end
@@ -2008,6 +2080,10 @@ x 5
 y 28
 end
 arch flagstone
+x 5
+y 29
+end
+arch chinese_dragon
 x 5
 y 29
 end
@@ -2148,11 +2224,19 @@ arch flagstone
 x 6
 y 2
 end
+arch dragonman
+x 6
+y 2
+end
 arch flagstone
 x 6
 y 3
 end
 arch flagstone
+x 6
+y 4
+end
+arch big_elec
 x 6
 y 4
 end
@@ -2165,6 +2249,10 @@ x 6
 y 6
 end
 arch flagstone
+x 6
+y 7
+end
+arch big_elec
 x 6
 y 7
 end
@@ -2260,6 +2348,10 @@ arch dungeon_magic
 x 6
 y 21
 end
+arch dragon
+x 6
+y 21
+end
 arch flagstone
 x 6
 y 22
@@ -2296,6 +2388,10 @@ arch flagstone
 x 6
 y 27
 end
+arch dragon
+x 6
+y 27
+end
 arch flagstone
 x 6
 y 28
@@ -2316,6 +2412,10 @@ arch flagstone
 x 6
 y 31
 end
+arch chinese_dragon
+x 6
+y 31
+end
 arch flagstone
 x 6
 y 32
@@ -2325,6 +2425,10 @@ x 6
 y 33
 end
 arch flagstone
+x 6
+y 34
+end
+arch chinese_dragon
 x 6
 y 34
 end
@@ -2340,6 +2444,10 @@ arch flagstone
 x 6
 y 37
 end
+arch chinese_dragon
+x 6
+y 37
+end
 arch flagstone
 x 6
 y 38
@@ -2349,6 +2457,10 @@ x 6
 y 39
 end
 arch flagstone
+x 6
+y 40
+end
+arch chinese_dragon
 x 6
 y 40
 end
@@ -2625,6 +2737,10 @@ arch flagstone
 x 7
 y 29
 end
+arch chinese_dragon
+x 7
+y 29
+end
 arch flagstone
 x 7
 y 30
@@ -2762,6 +2878,10 @@ arch flagstone
 x 8
 y 2
 end
+arch dragonman
+x 8
+y 2
+end
 arch flagstone
 x 8
 y 3
@@ -2774,11 +2894,19 @@ arch flagstone
 x 8
 y 5
 end
+arch chinese_dragon
+x 8
+y 5
+end
 arch flagstone
 x 8
 y 6
 end
 arch flagstone
+x 8
+y 7
+end
+arch chinese_dragon
 x 8
 y 7
 end
@@ -2791,6 +2919,10 @@ x 8
 y 9
 end
 arch flagstone
+x 8
+y 10
+end
+arch chinese_dragon
 x 8
 y 10
 end
@@ -2827,6 +2959,10 @@ x 8
 y 15
 end
 arch dungeon_magic
+x 8
+y 15
+end
+arch shadowtiger
 x 8
 y 15
 end
@@ -2867,6 +3003,10 @@ x 8
 y 20
 end
 arch dungeon_magic
+x 8
+y 20
+end
+arch shadowtiger
 x 8
 y 20
 end
@@ -2950,6 +3090,10 @@ arch flagstone
 x 8
 y 32
 end
+arch chinese_dragon
+x 8
+y 32
+end
 arch flagstone
 x 8
 y 33
@@ -2959,6 +3103,10 @@ x 8
 y 34
 end
 arch flagstone
+x 8
+y 35
+end
+arch chinese_dragon
 x 8
 y 35
 end
@@ -3223,6 +3371,10 @@ arch dungeon_magic
 x 9
 y 26
 end
+arch shadowtiger
+x 9
+y 26
+end
 arch flagstone
 x 9
 y 27
@@ -3236,6 +3388,10 @@ x 9
 y 28
 end
 arch flagstone
+x 9
+y 29
+end
+arch chinese_dragon
 x 9
 y 29
 end
@@ -3275,6 +3431,10 @@ arch flagstone
 x 9
 y 38
 end
+arch chinese_dragon
+x 9
+y 38
+end
 arch flagstone
 x 9
 y 39
@@ -3284,6 +3444,10 @@ x 9
 y 40
 end
 arch flagstone
+x 9
+y 41
+end
+arch chinese_dragon
 x 9
 y 41
 end
@@ -3388,6 +3552,10 @@ arch flagstone
 x 10
 y 2
 end
+arch dragonman
+x 10
+y 2
+end
 arch flagstone
 x 10
 y 3
@@ -3417,6 +3585,10 @@ x 10
 y 9
 end
 arch flagstone
+x 10
+y 10
+end
+arch big_elec
 x 10
 y 10
 end
@@ -3556,6 +3728,10 @@ arch flagstone
 x 10
 y 33
 end
+arch chinese_dragon
+x 10
+y 33
+end
 arch flagstone
 x 10
 y 34
@@ -3701,6 +3877,10 @@ arch flagstone
 x 11
 y 5
 end
+arch big_elec
+x 11
+y 5
+end
 arch flagstone
 x 11
 y 6
@@ -3710,6 +3890,10 @@ x 11
 y 7
 end
 arch flagstone
+x 11
+y 8
+end
+arch chinese_dragon
 x 11
 y 8
 end
@@ -3793,6 +3977,10 @@ arch dungeon_magic
 x 11
 y 21
 end
+arch dragon
+x 11
+y 21
+end
 arch flagstone
 x 11
 y 22
@@ -3841,11 +4029,19 @@ arch flagstone
 x 11
 y 29
 end
+arch chinese_dragon
+x 11
+y 29
+end
 arch flagstone
 x 11
 y 30
 end
 arch flagstone
+x 11
+y 31
+end
+arch chinese_dragon
 x 11
 y 31
 end
@@ -3865,6 +4061,10 @@ arch flagstone
 x 11
 y 35
 end
+arch chinese_dragon
+x 11
+y 35
+end
 arch flagstone
 x 11
 y 36
@@ -3874,6 +4074,10 @@ x 11
 y 37
 end
 arch flagstone
+x 11
+y 38
+end
+arch chinese_dragon
 x 11
 y 38
 end
@@ -3990,6 +4194,10 @@ arch flagstone
 x 12
 y 2
 end
+arch dragonman
+x 12
+y 2
+end
 arch flagstone
 x 12
 y 3
@@ -4055,6 +4263,10 @@ x 12
 y 16
 end
 arch dungeon_magic
+x 12
+y 16
+end
+arch dragon
 x 12
 y 16
 end
@@ -4126,6 +4338,10 @@ arch dungeon_magic
 x 12
 y 26
 end
+arch dragon
+x 12
+y 26
+end
 arch flagstone
 x 12
 y 27
@@ -4187,6 +4403,10 @@ x 12
 y 40
 end
 arch flagstone
+x 12
+y 41
+end
+arch chinese_dragon
 x 12
 y 41
 end
@@ -4323,6 +4543,10 @@ arch flagstone
 x 13
 y 7
 end
+arch big_elec
+x 13
+y 7
+end
 arch flagstone
 x 13
 y 8
@@ -4332,6 +4556,10 @@ x 13
 y 9
 end
 arch flagstone
+x 13
+y 10
+end
+arch big_elec
 x 13
 y 10
 end
@@ -4455,11 +4683,19 @@ arch flagstone
 x 13
 y 29
 end
+arch chinese_dragon
+x 13
+y 29
+end
 arch flagstone
 x 13
 y 30
 end
 arch flagstone
+x 13
+y 31
+end
+arch chinese_dragon
 x 13
 y 31
 end
@@ -4471,11 +4707,19 @@ arch flagstone
 x 13
 y 33
 end
+arch chinese_dragon
+x 13
+y 33
+end
 arch flagstone
 x 13
 y 34
 end
 arch flagstone
+x 13
+y 35
+end
+arch chinese_dragon
 x 13
 y 35
 end
@@ -4487,11 +4731,19 @@ arch flagstone
 x 13
 y 37
 end
+arch chinese_dragon
+x 13
+y 37
+end
 arch flagstone
 x 13
 y 38
 end
 arch flagstone
+x 13
+y 39
+end
+arch chinese_dragon
 x 13
 y 39
 end
@@ -4556,6 +4808,10 @@ arch flagstone
 x 14
 y 2
 end
+arch dragonman
+x 14
+y 2
+end
 arch flagstone
 x 14
 y 3
@@ -4565,6 +4821,10 @@ x 14
 y 4
 end
 arch flagstone
+x 14
+y 5
+end
+arch chinese_dragon
 x 14
 y 5
 end
@@ -4845,11 +5105,19 @@ arch flagstone
 x 15
 y 8
 end
+arch chinese_dragon
+x 15
+y 8
+end
 arch flagstone
 x 15
 y 9
 end
 arch flagstone
+x 15
+y 10
+end
+arch big_dragon
 x 15
 y 10
 end
@@ -5214,11 +5482,19 @@ arch flagstone
 x 16
 y 2
 end
+arch dragonman
+x 16
+y 2
+end
 arch flagstone
 x 16
 y 3
 end
 arch flagstone
+x 16
+y 4
+end
+arch chinese_dragon
 x 16
 y 4
 end
@@ -5258,6 +5534,10 @@ arch flagstone
 x 16
 y 13
 end
+arch dragonman
+x 16
+y 13
+end
 arch flagstone
 x 16
 y 14
@@ -5271,6 +5551,10 @@ x 16
 y 15
 end
 arch flagstone
+x 16
+y 16
+end
+arch dread
 x 16
 y 16
 end
@@ -5338,6 +5622,10 @@ arch flagstone
 x 16
 y 26
 end
+arch dread
+x 16
+y 26
+end
 arch flagstone
 x 16
 y 27
@@ -5451,6 +5739,10 @@ x 16
 y 41
 end
 arch dungeon_magic
+x 16
+y 41
+end
+arch medium_demon
 x 16
 y 41
 end
@@ -5531,6 +5823,10 @@ arch flagstone
 x 17
 y 7
 end
+arch chinese_dragon
+x 17
+y 7
+end
 arch flagstone
 x 17
 y 8
@@ -5584,6 +5880,10 @@ x 17
 y 18
 end
 arch flagstone
+x 17
+y 19
+end
+arch dread
 x 17
 y 19
 end
@@ -5647,6 +5947,10 @@ arch flagstone
 x 17
 y 32
 end
+arch demon_lord
+x 17
+y 32
+end
 arch flagstone
 x 17
 y 33
@@ -5692,6 +5996,10 @@ x 17
 y 39
 end
 arch dungeon_magic
+x 17
+y 39
+end
+arch medium_demon
 x 17
 y 39
 end
@@ -5776,6 +6084,10 @@ arch flagstone
 x 18
 y 2
 end
+arch dragonman
+x 18
+y 2
+end
 arch flagstone
 x 18
 y 3
@@ -5785,6 +6097,10 @@ x 18
 y 4
 end
 arch flagstone
+x 18
+y 5
+end
+arch big_dragon
 x 18
 y 5
 end
@@ -5808,6 +6124,10 @@ arch flagstone
 x 18
 y 10
 end
+arch chinese_dragon
+x 18
+y 10
+end
 arch flagstone
 x 18
 y 11
@@ -5817,6 +6137,10 @@ x 18
 y 12
 end
 arch flagstone
+x 18
+y 13
+end
+arch dragonman
 x 18
 y 13
 end
@@ -5841,6 +6165,10 @@ x 18
 y 17
 end
 arch dungeon_magic
+x 18
+y 17
+end
+arch skree
 x 18
 y 17
 end
@@ -5873,6 +6201,10 @@ x 18
 y 23
 end
 arch flagstone
+x 18
+y 24
+end
+arch dread
 x 18
 y 24
 end
@@ -6245,6 +6577,10 @@ arch flagstone
 x 19
 y 41
 end
+arch medium_demon
+x 19
+y 41
+end
 arch flagstone
 x 19
 y 42
@@ -6306,6 +6642,10 @@ arch flagstone
 x 20
 y 2
 end
+arch dragonman
+x 20
+y 2
+end
 arch flagstone
 x 20
 y 3
@@ -6326,6 +6666,10 @@ arch flagstone
 x 20
 y 7
 end
+arch chinese_dragon
+x 20
+y 7
+end
 arch flagstone
 x 20
 y 8
@@ -6338,6 +6682,10 @@ arch flagstone
 x 20
 y 10
 end
+arch big_elec
+x 20
+y 10
+end
 arch flagstone
 x 20
 y 11
@@ -6347,6 +6695,10 @@ x 20
 y 12
 end
 arch flagstone
+x 20
+y 13
+end
+arch dragonman
 x 20
 y 13
 end
@@ -6386,6 +6738,10 @@ arch flagstone
 x 20
 y 20
 end
+arch dread
+x 20
+y 20
+end
 arch flagstone
 x 20
 y 21
@@ -6422,6 +6778,10 @@ arch dungeon_magic
 x 20
 y 26
 end
+arch dread
+x 20
+y 26
+end
 arch flagstone
 x 20
 y 27
@@ -6451,6 +6811,10 @@ x 20
 y 30
 end
 arch flagstone
+x 20
+y 31
+end
+arch medium_demon
 x 20
 y 31
 end
@@ -6639,6 +7003,10 @@ arch flagstone
 x 21
 y 17
 end
+arch dread
+x 21
+y 17
+end
 arch flagstone
 x 21
 y 18
@@ -6672,6 +7040,10 @@ x 21
 y 23
 end
 arch flagstone
+x 21
+y 24
+end
+arch skree
 x 21
 y 24
 end
@@ -6732,6 +7104,10 @@ x 21
 y 34
 end
 arch flagstone
+x 21
+y 35
+end
+arch Greater_Demon
 x 21
 y 35
 end
@@ -6828,6 +7204,10 @@ arch flagstone
 x 22
 y 2
 end
+arch dragonman
+x 22
+y 2
+end
 arch flagstone
 x 22
 y 3
@@ -6840,6 +7220,10 @@ arch flagstone
 x 22
 y 5
 end
+arch dragonman
+x 22
+y 5
+end
 arch flagstone
 x 22
 y 6
@@ -6849,6 +7233,10 @@ x 22
 y 7
 end
 arch flagstone
+x 22
+y 8
+end
+arch dragonman
 x 22
 y 8
 end
@@ -6865,6 +7253,10 @@ x 22
 y 11
 end
 arch flagstone
+x 22
+y 12
+end
+arch dragonman
 x 22
 y 12
 end
@@ -6961,6 +7353,10 @@ x 22
 y 29
 end
 arch flagstone
+x 22
+y 30
+end
+arch jessyb
 x 22
 y 30
 end
@@ -7213,6 +7609,10 @@ arch flagstone
 x 23
 y 19
 end
+arch dread
+x 23
+y 19
+end
 arch flagstone
 x 23
 y 20
@@ -7514,6 +7914,10 @@ arch flagstone
 x 24
 y 16
 end
+arch dread
+x 24
+y 16
+end
 arch flagstone
 x 24
 y 17
@@ -7542,11 +7946,19 @@ arch flagstone
 x 24
 y 23
 end
+arch dread
+x 24
+y 23
+end
 arch flagstone
 x 24
 y 24
 end
 arch flagstone
+x 24
+y 25
+end
+arch dread
 x 24
 y 25
 end
@@ -9002,6 +9414,10 @@ arch dungeon_magic
 x 28
 y 18
 end
+arch skree
+x 28
+y 18
+end
 arch flagstone
 x 28
 y 19
@@ -9110,6 +9526,10 @@ arch flagstone
 x 28
 y 32
 end
+arch medium_demon
+x 28
+y 32
+end
 arch flagstone
 x 28
 y 33
@@ -9147,6 +9567,10 @@ x 28
 y 37
 end
 arch flagstone
+x 28
+y 38
+end
+arch medium_demon
 x 28
 y 38
 end
@@ -9455,6 +9879,10 @@ arch flagstone
 x 29
 y 20
 end
+arch dread
+x 29
+y 20
+end
 arch flagstone
 x 29
 y 21
@@ -9475,11 +9903,19 @@ arch flagstone
 x 29
 y 23
 end
+arch troll
+x 29
+y 23
+end
 arch flagstone
 x 29
 y 24
 end
 arch flagstone
+x 29
+y 25
+end
+arch gaelotroll
 x 29
 y 25
 end
@@ -10197,6 +10633,10 @@ arch flagstone
 x 31
 y 16
 end
+arch dread
+x 31
+y 16
+end
 arch flagstone
 x 31
 y 17
@@ -10226,6 +10666,10 @@ x 31
 y 22
 end
 arch flagstone
+x 31
+y 23
+end
+arch troll
 x 31
 y 23
 end
@@ -10310,6 +10754,10 @@ x 31
 y 36
 end
 arch dungeon_magic
+x 31
+y 36
+end
+arch demon_lord
 x 31
 y 36
 end
@@ -10623,6 +11071,10 @@ x 32
 y 25
 end
 arch dungeon_magic
+x 32
+y 25
+end
+arch gaelotroll
 x 32
 y 25
 end
@@ -10975,6 +11427,10 @@ arch flagstone
 x 33
 y 20
 end
+arch skree
+x 33
+y 20
+end
 arch flagstone
 x 33
 y 21
@@ -10988,6 +11444,10 @@ x 33
 y 22
 end
 arch flagstone
+x 33
+y 23
+end
+arch troll
 x 33
 y 23
 end
@@ -11745,6 +12205,10 @@ arch flagstone
 x 35
 y 19
 end
+arch dread
+x 35
+y 19
+end
 arch flagstone
 x 35
 y 20
@@ -11770,6 +12234,10 @@ x 35
 y 24
 end
 arch dungeon_magic
+x 35
+y 24
+end
+arch gaelotroll
 x 35
 y 24
 end
@@ -11806,6 +12274,10 @@ x 35
 y 30
 end
 arch flagstone
+x 35
+y 31
+end
+arch Greater_Demon
 x 35
 y 31
 end
@@ -12218,6 +12690,10 @@ arch dungeon_magic
 x 36
 y 38
 end
+arch Balrog
+x 36
+y 38
+end
 arch flagstone
 x 36
 y 39
@@ -12376,9 +12852,9 @@ x 37
 y 7
 end
 arch pedestal_trigger
-connected 101
 x 37
 y 8
+connected 101
 end
 arch flagstone
 x 37
@@ -12485,6 +12961,10 @@ x 37
 y 15
 end
 arch flagstone
+x 37
+y 16
+end
+arch skree
 x 37
 y 16
 end
@@ -12770,10 +13250,10 @@ x 38
 y 8
 end
 arch grate_closed_2
-speed 0.500000
-connected 101
 x 38
 y 8
+speed 0.500000
+connected 101
 end
 arch dungeon_magic
 x 38
@@ -12940,6 +13420,10 @@ x 38
 y 25
 end
 arch dungeon_magic
+x 38
+y 25
+end
+arch gaelotroll
 x 38
 y 25
 end
@@ -14230,6 +14714,10 @@ arch flagstone
 x 42
 y 17
 end
+arch titan
+x 42
+y 17
+end
 arch flagstone
 x 42
 y 18
@@ -14239,6 +14727,10 @@ x 42
 y 19
 end
 arch flagstone
+x 42
+y 20
+end
+arch titan
 x 42
 y 20
 end
@@ -14727,6 +15219,10 @@ arch dungeon_magic
 x 43
 y 24
 end
+arch titan
+x 43
+y 24
+end
 arch flagstone
 x 43
 y 25
@@ -15035,6 +15531,10 @@ arch flagstone
 x 44
 y 27
 end
+arch titan
+x 44
+y 27
+end
 arch flagstone
 x 44
 y 28
@@ -15096,6 +15596,10 @@ x 45
 y 17
 end
 arch dungeon_magic
+x 45
+y 17
+end
+arch titan
 x 45
 y 17
 end
@@ -15383,6 +15887,10 @@ arch dungeon_magic
 x 47
 y 20
 end
+arch titan
+x 47
+y 20
+end
 arch flagstone
 x 47
 y 21
@@ -15396,6 +15904,10 @@ x 47
 y 23
 end
 arch flagstone
+x 47
+y 24
+end
+arch titan
 x 47
 y 24
 end
@@ -15475,6 +15987,10 @@ arch flagstone
 x 48
 y 17
 end
+arch titan
+x 48
+y 17
+end
 arch flagstone
 x 48
 y 18
@@ -15520,6 +16036,10 @@ x 48
 y 26
 end
 arch flagstone
+x 48
+y 27
+end
+arch titan
 x 48
 y 27
 end
@@ -15846,524 +16366,4 @@ end
 arch dwall_3_1
 x 50
 y 30
-end
-arch dragonman
-x 2
-y 2
-end
-arch big_elec
-x 2
-y 10
-end
-arch chinese_dragon
-x 2
-y 29
-end
-arch chinese_dragon
-x 2
-y 31
-end
-arch chinese_dragon
-x 2
-y 38
-end
-arch chinese_dragon
-x 2
-y 41
-end
-arch big_dragon
-x 3
-y 5
-end
-arch chinese_dragon
-x 3
-y 8
-end
-arch shadowtiger
-x 3
-y 15
-end
-arch shadowtiger
-x 3
-y 20
-end
-arch shadowtiger
-x 3
-y 25
-end
-arch chinese_dragon
-x 3
-y 33
-end
-arch chinese_dragon
-x 3
-y 36
-end
-arch dragonman
-x 4
-y 2
-end
-arch chinese_dragon
-x 4
-y 31
-end
-arch chinese_dragon
-x 4
-y 41
-end
-arch chinese_dragon
-x 5
-y 10
-end
-arch dragon
-x 5
-y 17
-end
-arch chinese_dragon
-x 5
-y 29
-end
-arch dragonman
-x 6
-y 2
-end
-arch big_elec
-x 6
-y 4
-end
-arch big_elec
-x 6
-y 7
-end
-arch dragon
-x 6
-y 21
-end
-arch dragon
-x 6
-y 27
-end
-arch chinese_dragon
-x 6
-y 31
-end
-arch chinese_dragon
-x 6
-y 34
-end
-arch chinese_dragon
-x 6
-y 37
-end
-arch chinese_dragon
-x 6
-y 40
-end
-arch chinese_dragon
-x 7
-y 29
-end
-arch dragonman
-x 8
-y 2
-end
-arch chinese_dragon
-x 8
-y 5
-end
-arch chinese_dragon
-x 8
-y 7
-end
-arch chinese_dragon
-x 8
-y 10
-end
-arch shadowtiger
-x 8
-y 15
-end
-arch shadowtiger
-x 8
-y 20
-end
-arch chinese_dragon
-x 8
-y 32
-end
-arch chinese_dragon
-x 8
-y 35
-end
-arch shadowtiger
-x 9
-y 26
-end
-arch chinese_dragon
-x 9
-y 29
-end
-arch chinese_dragon
-x 9
-y 38
-end
-arch chinese_dragon
-x 9
-y 41
-end
-arch dragonman
-x 10
-y 2
-end
-arch big_elec
-x 10
-y 10
-end
-arch chinese_dragon
-x 10
-y 33
-end
-arch big_elec
-x 11
-y 5
-end
-arch chinese_dragon
-x 11
-y 8
-end
-arch dragon
-x 11
-y 21
-end
-arch chinese_dragon
-x 11
-y 29
-end
-arch chinese_dragon
-x 11
-y 31
-end
-arch chinese_dragon
-x 11
-y 35
-end
-arch chinese_dragon
-x 11
-y 38
-end
-arch dragonman
-x 12
-y 2
-end
-arch dragon
-x 12
-y 16
-end
-arch dragon
-x 12
-y 26
-end
-arch chinese_dragon
-x 12
-y 41
-end
-arch big_elec
-x 13
-y 7
-end
-arch big_elec
-x 13
-y 10
-end
-arch chinese_dragon
-x 13
-y 29
-end
-arch chinese_dragon
-x 13
-y 31
-end
-arch chinese_dragon
-x 13
-y 33
-end
-arch chinese_dragon
-x 13
-y 35
-end
-arch chinese_dragon
-x 13
-y 37
-end
-arch chinese_dragon
-x 13
-y 39
-end
-arch dragonman
-x 14
-y 2
-end
-arch chinese_dragon
-x 14
-y 5
-end
-arch chinese_dragon
-x 15
-y 8
-end
-arch big_dragon
-x 15
-y 10
-end
-arch dragonman
-x 16
-y 2
-end
-arch chinese_dragon
-x 16
-y 4
-end
-arch dragonman
-x 16
-y 13
-end
-arch dread
-x 16
-y 16
-end
-arch dread
-x 16
-y 26
-end
-arch medium_demon
-x 16
-y 41
-end
-arch chinese_dragon
-x 17
-y 7
-end
-arch dread
-x 17
-y 19
-end
-arch demon_lord
-x 17
-y 32
-end
-arch medium_demon
-x 17
-y 39
-end
-arch dragonman
-x 18
-y 2
-end
-arch big_dragon
-x 18
-y 5
-end
-arch chinese_dragon
-x 18
-y 10
-end
-arch dragonman
-x 18
-y 13
-end
-arch skree
-x 18
-y 17
-end
-arch dread
-x 18
-y 24
-end
-arch medium_demon
-x 19
-y 41
-end
-arch dragonman
-x 20
-y 2
-end
-arch chinese_dragon
-x 20
-y 7
-end
-arch big_elec
-x 20
-y 10
-end
-arch dragonman
-x 20
-y 13
-end
-arch dread
-x 20
-y 20
-end
-arch dread
-x 20
-y 26
-end
-arch medium_demon
-x 20
-y 31
-end
-arch dread
-x 21
-y 17
-end
-arch skree
-x 21
-y 24
-end
-arch Greater_Demon
-x 21
-y 35
-end
-arch dragonman
-x 22
-y 2
-end
-arch dragonman
-x 22
-y 5
-end
-arch dragonman
-x 22
-y 8
-end
-arch dragonman
-x 22
-y 12
-end
-arch jessyb
-x 22
-y 30
-end
-arch dread
-x 23
-y 19
-end
-arch dread
-x 24
-y 16
-end
-arch dread
-x 24
-y 23
-end
-arch dread
-x 24
-y 25
-end
-arch skree
-x 28
-y 18
-end
-arch medium_demon
-x 28
-y 32
-end
-arch medium_demon
-x 28
-y 38
-end
-arch dread
-x 29
-y 20
-end
-arch troll
-x 29
-y 23
-end
-arch gaelotroll
-x 29
-y 25
-end
-arch dread
-x 31
-y 16
-end
-arch troll
-x 31
-y 23
-end
-arch demon_lord
-x 31
-y 36
-end
-arch gaelotroll
-x 32
-y 25
-end
-arch skree
-x 33
-y 20
-end
-arch troll
-x 33
-y 23
-end
-arch dread
-x 35
-y 19
-end
-arch gaelotroll
-x 35
-y 24
-end
-arch Greater_Demon
-x 35
-y 31
-end
-arch Balrog
-x 36
-y 38
-end
-arch skree
-x 37
-y 16
-end
-arch gaelotroll
-x 38
-y 25
-end
-arch titan
-x 42
-y 17
-end
-arch titan
-x 42
-y 20
-end
-arch titan
-x 43
-y 24
-end
-arch titan
-x 44
-y 27
-end
-arch titan
-x 45
-y 17
-end
-arch titan
-x 47
-y 20
-end
-arch titan
-x 47
-y 24
-end
-arch titan
-x 48
-y 17
-end
-arch titan
-x 48
-y 27
 end

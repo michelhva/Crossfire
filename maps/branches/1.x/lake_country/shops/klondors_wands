@@ -1,15 +1,17 @@
 arch map
-region lakecountry
 name klondors_wands
+difficulty 25
+region lakecountry
 shopitems gem:20;wand:100;rod:30;horn:20;*:-60
 shopmin 10
 shopmax 100000
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 23 01:53:30 1995
 endmsg
-difficulty 25
 end
 arch shop_empty
 end

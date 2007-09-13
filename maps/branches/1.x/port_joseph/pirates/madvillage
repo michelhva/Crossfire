@@ -1,6 +1,8 @@
 arch map
-region portjoseph
 name Ship wreck village
+region portjoseph
+width 16
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
@@ -1060,7 +1062,7 @@ and I believe the other is across
 the river.
 @match shipwreck
 We were not the first to shipwreck
-here.  There is an old galleon 
+here.  There is an old galleon
 but its crew protect it from the grave.
 @match temple
 Ah, the statue used to point northeast

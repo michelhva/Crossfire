@@ -128,6 +128,14 @@ arch grass
 x 1
 y 5
 end
+arch store_general
+name Bobo's shop
+slaying shop
+hp 6
+sp 12
+x 1
+y 5
+end
 arch grass
 x 1
 y 6
@@ -1029,6 +1037,10 @@ arch grass
 x 12
 y 10
 end
+arch barrack_long
+x 12
+y 10
+end
 arch grass
 x 12
 y 11
@@ -1244,16 +1256,4 @@ end
 arch sea
 x 14
 y 14
-end
-arch store_general
-name Bobo's shop
-slaying shop
-hp 6
-sp 12
-x 1
-y 5
-end
-arch barrack_long
-x 12
-y 10
 end

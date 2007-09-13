@@ -1,13 +1,14 @@
 arch map
-region portjoseph
 name Moogly Bill's Grave
+region portjoseph
+darkness 5
+width 27
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Tue May 31 23:52:27 1994
 endmsg
-x 27
-invisible 5
 end
 arch dungeon_floor
 end
@@ -1771,7 +1772,7 @@ arch note
 msg
  . . . take the . . . three sto es
 place upon    t re  al ars . . .
-th.n the g t   will open . 
+th.n the g t   will open .
 endmsg
 x 18
 y 10

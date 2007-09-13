@@ -1,14 +1,14 @@
 arch map
-region portjoseph
 name ship wreck
+region portjoseph
+darkness 3
+width 24
+height 13
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Tue Jun  7 19:54:36 1994
 endmsg
-x 24
-y 13
-invisible 3
 end
 arch woodfloor
 end

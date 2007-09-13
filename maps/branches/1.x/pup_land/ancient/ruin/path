@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name path
+region ancientpupland
+darkness 3
+width 35
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec  8 18:15:10 1996
 endmsg
-x 35
-y 30
-invisible 3
 end
 arch blocked
 end
@@ -4715,7 +4715,7 @@ arch magic_mouth
 msg
 You can feel the presence of powerful
 earth-spirits. It might be dangerous
-to jump down this hole... 
+to jump down this hole...
 endmsg
 x 22
 y 13
@@ -4823,13 +4823,13 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
+can_apply 1
 arch skill_throwing
 end
 arch t_boulder
@@ -4877,13 +4877,13 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
+can_apply 1
 arch t_boulder
 nrof 10
 weight 10000
@@ -5542,13 +5542,13 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
+can_apply 1
 arch t_boulder
 nrof 10
 weight 10000
@@ -5596,13 +5596,13 @@ resist_godpower 60
 carrying 100000
 weight 1000000
 will_apply 1
-can_apply 1
 see_invisible 1
 can_cast_spell 1
 can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
+can_apply 1
 arch t_boulder
 nrof 10
 weight 10000

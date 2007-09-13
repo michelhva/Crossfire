@@ -1,15 +1,15 @@
 arch map
 name templelyth
 region navar
+width 15
+height 16
+enter_x 6
+enter_y 13
 msg
 Creator: Avion
 Date: Nov 2003
 Note: Altar to level 120 20050525
 endmsg
-width 15
-height 16
-enter_x 6
-enter_y 13
 end
 arch grass
 end
@@ -512,9 +512,9 @@ x 5
 y 10
 end
 arch fountain
-speed_left -1.600000
 x 5
 y 10
+speed_left -1.600000
 end
 arch grass
 x 5
@@ -525,9 +525,9 @@ x 5
 y 12
 end
 arch fountain
-speed_left -1.600000
 x 5
 y 12
+speed_left -1.600000
 end
 arch grass
 x 5
@@ -578,11 +578,11 @@ Lythander is the elven god of luck.
 @match *
 Welcome to the temple of Lythander.
 endmsg
-level 7
 exp 0
-stand_still 1
 x 6
 y 4
+level 7
+stand_still 1
 end
 arch flagstone
 x 6
@@ -654,9 +654,9 @@ x 7
 y 3
 end
 arch altar_lythander
-level 120
 x 7
 y 3
+level 120
 end
 arch flagstone
 x 7
@@ -845,9 +845,9 @@ x 9
 y 10
 end
 arch fountain
-speed_left -1.600000
 x 9
 y 10
+speed_left -1.600000
 end
 arch grass
 x 9
@@ -858,9 +858,9 @@ x 9
 y 12
 end
 arch fountain
-speed_left -1.600000
 x 9
 y 12
+speed_left -1.600000
 end
 arch grass
 x 9

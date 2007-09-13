@@ -1,16 +1,16 @@
 arch map
-region navar
 name Condemmed Market
+difficulty 2
+region navar
+width 60
+height 12
+enter_x 1
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    10/9/2003
 endmsg
-width 60
-height 12
-enter_x 1
-enter_y 1
-difficulty 2
 outdoor 1
 end
 arch invis_exit
@@ -1390,9 +1390,9 @@ y 8
 end
 arch check_floor
 hp 1
-no_pass 1
 x 18
 y 8
+no_pass 1
 end
 arch cobblestones
 x 18
@@ -2334,19 +2334,19 @@ y 2
 end
 arch creator
 other_arch gate_closed_2
+x 32
+y 3
 connected 5
+end
+arch cobblestones
 x 32
 y 3
 end
-arch cobblestones
-x 32
-y 3
-end
 arch creator
 other_arch gate_closed_2
-connected 5
 x 32
 y 4
+connected 5
 end
 arch cobblestones
 x 32
@@ -2354,19 +2354,19 @@ y 4
 end
 arch creator
 other_arch gate_closed_2
+x 32
+y 5
 connected 5
+end
+arch cobblestones
 x 32
 y 5
 end
-arch cobblestones
-x 32
-y 5
-end
 arch creator
 other_arch gate_closed_2
-connected 5
 x 32
 y 6
+connected 5
 end
 arch cobblestones
 x 32
@@ -2374,9 +2374,9 @@ y 6
 end
 arch creator
 other_arch gate_closed_2
-connected 5
 x 32
 y 7
+connected 5
 end
 arch cobblestones
 x 32
@@ -2384,9 +2384,9 @@ y 7
 end
 arch creator
 other_arch gate_closed_2
-connected 5
 x 32
 y 8
+connected 5
 end
 arch cobblestones
 x 32
@@ -2745,16 +2745,16 @@ Now you've done it!
 No going back now...
 endmsg
 dam 0
-attacktype 0
-connected 5
 x 37
 y 8
+attacktype 0
+connected 5
 end
 arch check_floor
 hp 1
-no_pass 1
 x 37
 y 8
+no_pass 1
 end
 arch cobblestones
 x 37
@@ -2979,19 +2979,19 @@ y 8
 end
 arch check_inv
 slaying marketkey
-connected 6
-last_heal 1
 x 40
 y 8
+last_heal 1
+connected 6
 end
 arch cobblestones
 x 40
 y 9
 end
 arch mdoor_closed_1
-connected 6
 x 40
 y 9
+connected 6
 end
 arch cobblestones2
 x 40

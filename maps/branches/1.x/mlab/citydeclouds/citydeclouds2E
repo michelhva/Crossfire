@@ -1,17 +1,17 @@
 arch map
 name citydeclouds
+reset_timeout 7200
+difficulty 1
 region dream
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Wed Aug 28 11:11:32 2002
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 tile_path_1 citydeclouds2D
 tile_path_2 citydeclouds2H
@@ -312,14 +312,14 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 48
 end
 arch dungeon_floor
@@ -776,15 +776,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 48
 end
@@ -1110,131 +1110,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 2
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -1248,15 +1248,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 48
 end
@@ -1550,131 +1550,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 3
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -1688,15 +1688,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 48
 end
@@ -2022,11 +2022,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 4
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -2170,11 +2170,11 @@ y 44
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 4
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -2188,15 +2188,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 48
 end
@@ -2486,131 +2486,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 5
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -2624,15 +2624,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 48
 end
@@ -2922,131 +2922,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 6
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -3060,15 +3060,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 48
 end
@@ -3362,11 +3362,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 7
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -3510,11 +3510,11 @@ y 44
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 7
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -3528,15 +3528,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 48
 end
@@ -3862,131 +3862,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 8
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4000,15 +4000,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 48
 end
@@ -4262,131 +4262,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 9
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4400,15 +4400,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 48
 end
@@ -4734,11 +4734,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4752,19 +4752,19 @@ y 31
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 33
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4778,19 +4778,19 @@ y 34
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 36
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4804,19 +4804,19 @@ y 37
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 39
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4830,19 +4830,19 @@ y 40
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 10
 y 42
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -4886,15 +4886,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 48
 end
@@ -5168,11 +5168,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5186,19 +5186,19 @@ y 31
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 33
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5212,19 +5212,19 @@ y 34
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 36
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5238,19 +5238,19 @@ y 37
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 39
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5264,19 +5264,19 @@ y 40
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 11
 y 42
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5316,15 +5316,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 48
 end
@@ -5642,11 +5642,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5660,19 +5660,19 @@ y 31
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 33
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5686,19 +5686,19 @@ y 34
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 36
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5712,19 +5712,19 @@ y 37
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 39
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5738,11 +5738,11 @@ y 40
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 12
 y 41
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -5791,21 +5791,21 @@ x 12
 y 46
 end
 arch door_2
-no_pass 0
 x 12
 y 46
+no_pass 0
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 48
 end
@@ -6098,11 +6098,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6116,19 +6116,19 @@ y 31
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 33
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6142,19 +6142,19 @@ y 34
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 36
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6168,19 +6168,19 @@ y 37
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 39
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6194,19 +6194,19 @@ y 40
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 13
 y 42
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6253,24 +6253,24 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 47
 end
 arch sign
 name Greg's Pawn
+name_pl Greg's Pawn
 msg
 Pawn shop
 endmsg
-name_pl Greg's Pawn
 x 13
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 48
 end
@@ -6584,11 +6584,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6602,19 +6602,19 @@ y 31
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 33
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6628,19 +6628,19 @@ y 34
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 36
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6654,19 +6654,19 @@ y 37
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 39
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6680,19 +6680,19 @@ y 40
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 14
 y 42
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -6736,15 +6736,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 48
 end
@@ -7034,131 +7034,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 15
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -7172,15 +7172,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 48
 end
@@ -7506,131 +7506,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 16
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -7644,15 +7644,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 48
 end
@@ -7950,11 +7950,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 17
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -8098,11 +8098,11 @@ y 44
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 17
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -8116,15 +8116,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 48
 end
@@ -8438,131 +8438,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 18
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -8576,15 +8576,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 48
 end
@@ -8838,131 +8838,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 19
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -8976,15 +8976,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 48
 end
@@ -9274,11 +9274,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 20
 y 30
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -9422,11 +9422,11 @@ y 44
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 20
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -9440,15 +9440,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 48
 end
@@ -9457,9 +9457,9 @@ x 20
 y 49
 end
 arch door_2
-no_pass 0
 x 20
 y 49
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -9703,131 +9703,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 21
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -9841,15 +9841,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 48
 end
@@ -10175,131 +10175,131 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 30
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 22
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -10313,15 +10313,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 48
 end
@@ -10615,11 +10615,11 @@ y 29
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 30
+unique 1
 end
 arch stair_up_1
 slaying cdccotgf1
@@ -10630,123 +10630,123 @@ y 30
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 31
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 32
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 33
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 34
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 35
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 36
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 37
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 38
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 39
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 40
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 41
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 42
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 43
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 44
+unique 1
 end
 arch shop_empty
 name perm tiles
-face stfloor.111
 name_pl perm tiles
-unique 1
+face stfloor.111
 x 23
 y 45
+unique 1
 end
 arch stonefloor2
 name stonefloor
@@ -10760,15 +10760,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 48
 end
@@ -11252,15 +11252,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 48
 end
@@ -11688,8 +11688,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 47
 end
@@ -11699,8 +11699,8 @@ y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 48
 end
@@ -12030,9 +12030,9 @@ x 26
 y 39
 end
 arch pedestal_trigger
-connected 5153
 x 26
 y 40
+connected 5153
 end
 arch flagstone
 x 26
@@ -12043,14 +12043,14 @@ x 26
 y 41
 end
 arch mdoor_closed_2
-connected 5153
 x 26
 y 41
+connected 5153
 end
 arch pedestal_trigger
-connected 5153
 x 26
 y 42
+connected 5153
 end
 arch dungeon_floor
 x 26
@@ -12065,9 +12065,9 @@ x 26
 y 44
 end
 arch pedestal_trigger
-connected 5152
 x 26
 y 45
+connected 5152
 end
 arch dungeon_floor
 x 26
@@ -12078,26 +12078,26 @@ x 26
 y 46
 end
 arch mdoor_closed_2
-connected 5152
 x 26
 y 46
+connected 5152
 end
 arch pedestal_trigger
+x 26
+y 47
 connected 5152
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 26
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 26
-y 47
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 26
 y 48
 end
@@ -12429,11 +12429,11 @@ y 31
 end
 arch sign
 name CityDeClouds Spire
+name_pl CityDeClouds Spire
 msg
 CityDeClouds Spire
 The place of first cloud formation.
 endmsg
-name_pl CityDeClouds Spire
 x 27
 y 31
 end
@@ -12531,8 +12531,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 47
 end
@@ -12542,8 +12542,8 @@ y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 48
 end
@@ -12975,15 +12975,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 48
 end
@@ -13486,15 +13486,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 48
 end
@@ -14005,15 +14005,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 48
 end
@@ -14107,9 +14107,9 @@ x 31
 y 10
 end
 arch dwall_3_4
-no_pass 0
 x 31
 y 10
+no_pass 0
 end
 arch dungeon_magic
 x 31
@@ -14127,9 +14127,9 @@ x 31
 y 11
 end
 arch dwall_3_4
-no_pass 0
 x 31
 y 11
+no_pass 0
 end
 arch dungeon_magic
 x 31
@@ -14147,9 +14147,9 @@ x 31
 y 12
 end
 arch dwall_3_4
-no_pass 0
 x 31
 y 12
+no_pass 0
 end
 arch dungeon_magic
 x 31
@@ -14409,15 +14409,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 48
 end
@@ -14478,8 +14478,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 10
 end
@@ -14489,8 +14489,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 11
 end
@@ -14500,8 +14500,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 12
 end
@@ -14811,15 +14811,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 48
 end
@@ -14880,8 +14880,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 10
 end
@@ -14891,8 +14891,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 11
 end
@@ -14902,8 +14902,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 12
 end
@@ -15149,15 +15149,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 48
 end
@@ -15221,8 +15221,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 10
 end
@@ -15232,8 +15232,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 11
 end
@@ -15243,8 +15243,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 12
 end
@@ -15458,15 +15458,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 48
 end
@@ -15775,15 +15775,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 48
 end
@@ -16091,15 +16091,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 48
 end
@@ -16383,15 +16383,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 48
 end
@@ -16735,15 +16735,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 48
 end
@@ -17071,15 +17071,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 48
 end
@@ -17096,78 +17096,78 @@ x 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 11
 end
@@ -17195,11 +17195,11 @@ arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
 sp 163
+x 40
+y 13
 value 1500
 unpaid 1
 identified 1
-x 40
-y 13
 arch spell_cure_blindness
 end
 end
@@ -17215,11 +17215,11 @@ arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
 sp 163
+x 40
+y 14
 value 1500
 unpaid 1
 identified 1
-x 40
-y 14
 arch spell_cure_blindness
 end
 end
@@ -17449,15 +17449,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 48
 end
@@ -17474,78 +17474,78 @@ x 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 11
 end
@@ -17574,12 +17574,12 @@ name staff of healing
 name_pl staff of healing
 sp 34
 food 20
+x 41
+y 13
 value 10400
 randomitems none
 unpaid 1
 identified 1
-x 41
-y 13
 arch spell_major_healing
 end
 end
@@ -17595,12 +17595,12 @@ arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
 sp 171
+x 41
+y 14
 level 20
 value 3000
 unpaid 1
 identified 1
-x 41
-y 14
 arch spell_cure_disease
 end
 end
@@ -17673,9 +17673,9 @@ x 41
 y 26
 end
 arch door_look_1
-no_pass 0
 x 41
 y 26
+no_pass 0
 end
 arch woodfloor
 x 41
@@ -17847,15 +17847,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 48
 end
@@ -17872,22 +17872,22 @@ x 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 3
 end
@@ -17897,57 +17897,57 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 11
 end
@@ -17975,12 +17975,12 @@ arch balm_generic
 name balm of major healing
 name_pl balm of major healing
 sp 34
+x 42
+y 13
 nrof 5
 value 1000
 unpaid 1
 identified 1
-x 42
-y 13
 arch spell_major_healing
 end
 end
@@ -17996,12 +17996,12 @@ arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
 sp 171
+x 42
+y 14
 level 20
 value 3000
 unpaid 1
 identified 1
-x 42
-y 14
 arch spell_cure_disease
 end
 end
@@ -18043,10 +18043,10 @@ y 20
 end
 arch sign_e
 name J&J Building Supplies Upstairs
+name_pl J&J Building Supplies Upstairs
 msg
 J&J Building Supplies Upstairs
 endmsg
-name_pl J&J Building Supplies Upstairs
 x 42
 y 20
 end
@@ -18256,15 +18256,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 48
 end
@@ -18281,78 +18281,78 @@ x 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 11
 end
@@ -18396,12 +18396,12 @@ arch balm_generic
 name balm of major healing
 name_pl balm of major healing
 sp 34
+x 43
+y 14
 nrof 5
 value 1000
 unpaid 1
 identified 1
-x 43
-y 14
 arch spell_major_healing
 end
 end
@@ -18618,15 +18618,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 48
 end
@@ -18643,93 +18643,93 @@ x 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 11
 end
 arch conjurer
 name healer
+name_pl priest of healing
 msg
 @match *
 Please enter my small healing booth
 I have good balms for many common
 ills.
 endmsg
-name_pl priest of healing
-friendly 1
 x 44
 y 11
+friendly 1
 end
 arch dungeon_magic
 x 44
@@ -18812,18 +18812,18 @@ x 44
 y 20
 end
 arch door_look_2
-no_pass 0
 x 44
 y 20
+no_pass 0
 end
 arch woodfloor
 x 44
 y 21
 end
 arch door_look_2
-no_pass 0
 x 44
 y 21
+no_pass 0
 end
 arch woodfloor
 x 44
@@ -19035,15 +19035,15 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 48
 end
@@ -19057,8 +19057,8 @@ y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 end
 arch lamppost
@@ -19066,85 +19066,85 @@ x 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 12
 end
@@ -19154,43 +19154,43 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 18
 end
@@ -19200,8 +19200,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 19
 end
@@ -19211,22 +19211,22 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 22
 end
@@ -19236,8 +19236,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 23
 end
@@ -19247,8 +19247,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 24
 end
@@ -19258,8 +19258,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 25
 end
@@ -19269,15 +19269,15 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 27
 end
@@ -19287,29 +19287,29 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 31
 end
@@ -19319,8 +19319,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 32
 end
@@ -19330,15 +19330,15 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 34
 end
@@ -19348,22 +19348,22 @@ y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 37
 end
@@ -19376,8 +19376,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 38
 end
@@ -19387,8 +19387,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 39
 end
@@ -19401,50 +19401,50 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 46
 end
@@ -19454,154 +19454,154 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 18
 end
@@ -19611,8 +19611,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 19
 end
@@ -19622,85 +19622,85 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 31
 end
@@ -19710,8 +19710,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 32
 end
@@ -19721,29 +19721,29 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 36
 end
@@ -19753,38 +19753,38 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 37
 end
 arch sign_w
 name CDC Cloud Real Estate INC. Upstairs
+name_pl CDC Cloud Real Estate INC. Upstairs
 msg
 CDC Cloud Real Estate INC. Upstairs
 endmsg
-name_pl CDC Cloud Real Estate INC. Upstairs
 x 46
 y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 40
 end
@@ -19794,112 +19794,112 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 6
 end
@@ -19912,685 +19912,685 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 4
 end
@@ -20603,15 +20603,15 @@ y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 6
 end
@@ -20621,15 +20621,15 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 8
 end
@@ -20642,288 +20642,288 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 49
 end

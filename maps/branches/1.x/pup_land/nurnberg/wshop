@@ -1,16 +1,16 @@
 arch map
-region nurnberg
 name wshop
+difficulty 31
+region nurnberg
+shopitems weapon:95;bow:20;*:-80
+shopmax 20000
+width 20
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb  9 04:09:28 1996
 endmsg
-x 20
-y 25
-level 31
-shopitems weapon:95;bow:20;*:-80
-shopmax 20000
 end
 arch grass
 end

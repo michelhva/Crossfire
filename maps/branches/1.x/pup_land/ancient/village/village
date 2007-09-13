@@ -1,13 +1,13 @@
 arch map
-region ancientpupland
 name village
+region ancientpupland
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri May 17 21:10:10 1996
 endmsg
-width 30
-height 30
 end
 arch pstone_2
 end

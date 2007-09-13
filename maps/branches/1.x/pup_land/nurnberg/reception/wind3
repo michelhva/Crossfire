@@ -1,12 +1,13 @@
 arch map
-region nurnberg
 name wind3
+region nurnberg
+width 19
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb 27 08:03:23 1996
 endmsg
-x 19
 end
 arch dungeon_magic
 end
@@ -1372,8 +1373,8 @@ ac -50
 x 6
 y 14
 carrying 300
-alive 1
 move_type 1
+alive 1
 arch key2
 name Tower Key
 slaying 1010542567

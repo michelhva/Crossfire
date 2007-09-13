@@ -1,12 +1,12 @@
 arch map
-region portjoseph
 name Tomasso's house
+region portjoseph
+width 25
+height 20
 msg
 Creator: CF Java Map Editor
 Date:    7/21/2003
 endmsg
-width 25
-height 20
 end
 arch sea
 end
@@ -282,9 +282,9 @@ x 2
 y 9
 end
 arch ytree_2
-blocksview 1
 x 2
 y 9
+blocksview 1
 end
 arch pstone_1
 x 2
@@ -311,9 +311,9 @@ x 2
 y 15
 end
 arch ytree_2
-blocksview 1
 x 2
 y 15
+blocksview 1
 end
 arch grass
 x 2
@@ -358,14 +358,18 @@ arch pstone_1
 x 3
 y 6
 end
+arch rowboat
+x 3
+y 6
+end
 arch pstone_1
 x 3
 y 7
 end
 arch ytree_2
-blocksview 1
 x 3
 y 7
+blocksview 1
 end
 arch pstone_1
 x 3
@@ -447,9 +451,9 @@ x 4
 y 7
 end
 arch ytree_2
-blocksview 1
 x 4
 y 7
+blocksview 1
 end
 arch beach
 x 4
@@ -531,9 +535,9 @@ x 5
 y 7
 end
 arch ytree_2
-blocksview 1
 x 5
 y 7
+blocksview 1
 end
 arch pstone_1
 x 5
@@ -560,9 +564,9 @@ x 5
 y 11
 end
 arch door_look_2
-no_pass 0
 x 5
 y 11
+no_pass 0
 end
 arch woodfloor2
 x 5
@@ -886,9 +890,9 @@ x 8
 y 13
 end
 arch door_look_1
-no_pass 0
 x 8
 y 13
+no_pass 0
 end
 arch woodfloor2
 x 8
@@ -1121,9 +1125,9 @@ x 10
 y 17
 end
 arch door_look_2
-no_pass 0
 x 10
 y 17
+no_pass 0
 end
 arch woodfloor2
 x 10
@@ -1218,10 +1222,10 @@ msg
 @match *
 Arrrrf Arrrrf
 endmsg
-unaggressive 1
 Wis 8
 x 11
 y 14
+unaggressive 1
 end
 arch woodfloor2
 x 11
@@ -1831,9 +1835,9 @@ x 17
 y 19
 end
 arch door_2
-no_pass 0
 x 17
 y 19
+no_pass 0
 end
 arch sea
 x 18
@@ -2271,9 +2275,9 @@ x 22
 y 10
 end
 arch ytree_2
+x 22
+y 10
 blocksview 1
-x 22
-y 10
 end
 arch pstone_1
 x 22
@@ -2566,8 +2570,4 @@ end
 arch brush
 x 24
 y 19
-end
-arch rowboat
-x 3
-y 6
 end

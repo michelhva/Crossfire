@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 region navar
@@ -17,47 +18,35 @@ end
 arch marble
 end
 arch blocked
-msg
-endmsg
 end
 arch marble
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch marble
 y 2
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch marble
 y 3
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch marble
 y 4
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch marble
 y 5
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch marble
@@ -76,160 +65,120 @@ arch marble
 y 7
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch marble
 y 8
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch marble
 y 9
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch marble
 y 10
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch marble
 y 11
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch marble
 y 12
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch marble
 y 13
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch marble
 y 14
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch marble
 y 15
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch marble
 y 16
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch marble
 y 17
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch marble
 y 18
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch marble
 y 19
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch marble
 y 20
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch marble
 y 21
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch marble
 y 22
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch marble
 y 23
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch marble
 y 24
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch marble
 y 25
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch marble
 y 26
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch marble
@@ -254,24 +203,18 @@ arch marble
 y 30
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch marble
 y 31
 end
 arch blocked
-msg
-endmsg
 y 31
 end
 arch marble
 y 32
 end
 arch blocked
-msg
-endmsg
 y 32
 end
 arch marble
@@ -320,56 +263,42 @@ arch marble
 y 40
 end
 arch blocked
-msg
-endmsg
 y 40
 end
 arch marble
 y 41
 end
 arch blocked
-msg
-endmsg
 y 41
 end
 arch marble
 y 42
 end
 arch blocked
-msg
-endmsg
 y 42
 end
 arch marble
 y 43
 end
 arch blocked
-msg
-endmsg
 y 43
 end
 arch marble
 y 44
 end
 arch blocked
-msg
-endmsg
 y 44
 end
 arch marble
 y 45
 end
 arch blocked
-msg
-endmsg
 y 45
 end
 arch marble
 y 46
 end
 arch blocked
-msg
-endmsg
 y 46
 end
 arch marble
@@ -418,104 +347,78 @@ arch marble
 y 54
 end
 arch blocked
-msg
-endmsg
 y 54
 end
 arch marble
 y 55
 end
 arch blocked
-msg
-endmsg
 y 55
 end
 arch marble
 y 56
 end
 arch blocked
-msg
-endmsg
 y 56
 end
 arch marble
 y 57
 end
 arch blocked
-msg
-endmsg
 y 57
 end
 arch marble
 y 58
 end
 arch blocked
-msg
-endmsg
 y 58
 end
 arch marble
 y 59
 end
 arch blocked
-msg
-endmsg
 y 59
 end
 arch marble
 y 60
 end
 arch blocked
-msg
-endmsg
 y 60
 end
 arch marble
 y 61
 end
 arch blocked
-msg
-endmsg
 y 61
 end
 arch marble
 y 62
 end
 arch blocked
-msg
-endmsg
 y 62
 end
 arch marble
 y 63
 end
 arch blocked
-msg
-endmsg
 y 63
 end
 arch marble
 y 64
 end
 arch blocked
-msg
-endmsg
 y 64
 end
 arch marble
 y 65
 end
 arch blocked
-msg
-endmsg
 y 65
 end
 arch marble
 y 66
 end
 arch blocked
-msg
-endmsg
 y 66
 end
 arch marble
@@ -576,48 +479,36 @@ arch oil_sea
 y 75
 end
 arch blocked
-msg
-endmsg
 y 75
 end
 arch oil_sea
 y 76
 end
 arch blocked
-msg
-endmsg
 y 76
 end
 arch oil_sea
 y 77
 end
 arch blocked
-msg
-endmsg
 y 77
 end
 arch oil_sea
 y 78
 end
 arch blocked
-msg
-endmsg
 y 78
 end
 arch oil_sea
 y 79
 end
 arch blocked
-msg
-endmsg
 y 79
 end
 arch oil_sea
 y 80
 end
 arch blocked
-msg
-endmsg
 y 80
 end
 arch oil_sea
@@ -666,24 +557,18 @@ arch oil_sea
 y 88
 end
 arch blocked
-msg
-endmsg
 y 88
 end
 arch oil_sea
 y 89
 end
 arch blocked
-msg
-endmsg
 y 89
 end
 arch oil_sea
 y 90
 end
 arch blocked
-msg
-endmsg
 y 90
 end
 arch oil_sea
@@ -732,168 +617,126 @@ arch oil_sea
 y 98
 end
 arch blocked
-msg
-endmsg
 y 98
 end
 arch oil_sea
 y 99
 end
 arch blocked
-msg
-endmsg
 y 99
 end
 arch oil_sea
 y 100
 end
 arch blocked
-msg
-endmsg
 y 100
 end
 arch oil_sea
 y 101
 end
 arch blocked
-msg
-endmsg
 y 101
 end
 arch oil_sea
 y 102
 end
 arch blocked
-msg
-endmsg
 y 102
 end
 arch oil_sea
 y 103
 end
 arch blocked
-msg
-endmsg
 y 103
 end
 arch oil_sea
 y 104
 end
 arch blocked
-msg
-endmsg
 y 104
 end
 arch oil_sea
 y 105
 end
 arch blocked
-msg
-endmsg
 y 105
 end
 arch oil_sea
 y 106
 end
 arch blocked
-msg
-endmsg
 y 106
 end
 arch oil_sea
 y 107
 end
 arch blocked
-msg
-endmsg
 y 107
 end
 arch oil_sea
 y 108
 end
 arch blocked
-msg
-endmsg
 y 108
 end
 arch oil_sea
 y 109
 end
 arch blocked
-msg
-endmsg
 y 109
 end
 arch oil_sea
 y 110
 end
 arch blocked
-msg
-endmsg
 y 110
 end
 arch oil_sea
 y 111
 end
 arch blocked
-msg
-endmsg
 y 111
 end
 arch oil_sea
 y 112
 end
 arch blocked
-msg
-endmsg
 y 112
 end
 arch oil_sea
 y 113
 end
 arch blocked
-msg
-endmsg
 y 113
 end
 arch oil_sea
 y 114
 end
 arch blocked
-msg
-endmsg
 y 114
 end
 arch oil_sea
 y 115
 end
 arch blocked
-msg
-endmsg
 y 115
 end
 arch oil_sea
 y 116
 end
 arch blocked
-msg
-endmsg
 y 116
 end
 arch oil_sea
 y 117
 end
 arch blocked
-msg
-endmsg
 y 117
 end
 arch marble
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch marble
@@ -901,8 +744,6 @@ x 1
 y 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
@@ -922,8 +763,6 @@ x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
@@ -947,8 +786,6 @@ x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
@@ -957,8 +794,6 @@ x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
@@ -967,8 +802,6 @@ x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
@@ -977,8 +810,6 @@ x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -987,8 +818,6 @@ x 1
 y 9
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -997,8 +826,6 @@ x 1
 y 10
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
@@ -1007,8 +834,6 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 11
 end
@@ -1017,8 +842,6 @@ x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
@@ -1027,8 +850,6 @@ x 1
 y 13
 end
 arch blocked
-msg
-endmsg
 x 1
 y 13
 end
@@ -1037,8 +858,6 @@ x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 14
 end
@@ -1047,8 +866,6 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
@@ -1057,8 +874,6 @@ x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
@@ -1067,8 +882,6 @@ x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
@@ -1077,8 +890,6 @@ x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 18
 end
@@ -1087,8 +898,6 @@ x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
@@ -1097,8 +906,6 @@ x 1
 y 20
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
@@ -1107,8 +914,6 @@ x 1
 y 21
 end
 arch blocked
-msg
-endmsg
 x 1
 y 21
 end
@@ -1117,8 +922,6 @@ x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 22
 end
@@ -1127,8 +930,6 @@ x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
@@ -1137,8 +938,6 @@ x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
@@ -1243,8 +1042,6 @@ x 1
 y 40
 end
 arch blocked
-msg
-endmsg
 x 1
 y 40
 end
@@ -1253,8 +1050,6 @@ x 1
 y 41
 end
 arch blocked
-msg
-endmsg
 x 1
 y 41
 end
@@ -1295,8 +1090,6 @@ x 1
 y 46
 end
 arch blocked
-msg
-endmsg
 x 1
 y 46
 end
@@ -1365,8 +1158,6 @@ x 1
 y 57
 end
 arch blocked
-msg
-endmsg
 x 1
 y 57
 end
@@ -1375,8 +1166,6 @@ x 1
 y 58
 end
 arch blocked
-msg
-endmsg
 x 1
 y 58
 end
@@ -1385,8 +1174,6 @@ x 1
 y 59
 end
 arch blocked
-msg
-endmsg
 x 1
 y 59
 end
@@ -1395,8 +1182,6 @@ x 1
 y 60
 end
 arch blocked
-msg
-endmsg
 x 1
 y 60
 end
@@ -1405,8 +1190,6 @@ x 1
 y 61
 end
 arch blocked
-msg
-endmsg
 x 1
 y 61
 end
@@ -1415,8 +1198,6 @@ x 1
 y 62
 end
 arch blocked
-msg
-endmsg
 x 1
 y 62
 end
@@ -1425,8 +1206,6 @@ x 1
 y 63
 end
 arch blocked
-msg
-endmsg
 x 1
 y 63
 end
@@ -1679,8 +1458,6 @@ x 1
 y 101
 end
 arch blocked
-msg
-endmsg
 x 1
 y 101
 end
@@ -1689,8 +1466,6 @@ x 1
 y 102
 end
 arch blocked
-msg
-endmsg
 x 1
 y 102
 end
@@ -1699,8 +1474,6 @@ x 1
 y 103
 end
 arch blocked
-msg
-endmsg
 x 1
 y 103
 end
@@ -1709,8 +1482,6 @@ x 1
 y 104
 end
 arch blocked
-msg
-endmsg
 x 1
 y 104
 end
@@ -1719,8 +1490,6 @@ x 1
 y 105
 end
 arch blocked
-msg
-endmsg
 x 1
 y 105
 end
@@ -1729,8 +1498,6 @@ x 1
 y 106
 end
 arch blocked
-msg
-endmsg
 x 1
 y 106
 end
@@ -1739,8 +1506,6 @@ x 1
 y 107
 end
 arch blocked
-msg
-endmsg
 x 1
 y 107
 end
@@ -1749,8 +1514,6 @@ x 1
 y 108
 end
 arch blocked
-msg
-endmsg
 x 1
 y 108
 end
@@ -1759,8 +1522,6 @@ x 1
 y 109
 end
 arch blocked
-msg
-endmsg
 x 1
 y 109
 end
@@ -1769,8 +1530,6 @@ x 1
 y 110
 end
 arch blocked
-msg
-endmsg
 x 1
 y 110
 end
@@ -1779,8 +1538,6 @@ x 1
 y 111
 end
 arch blocked
-msg
-endmsg
 x 1
 y 111
 end
@@ -1789,8 +1546,6 @@ x 1
 y 112
 end
 arch blocked
-msg
-endmsg
 x 1
 y 112
 end
@@ -1799,8 +1554,6 @@ x 1
 y 113
 end
 arch blocked
-msg
-endmsg
 x 1
 y 113
 end
@@ -1809,8 +1562,6 @@ x 1
 y 114
 end
 arch blocked
-msg
-endmsg
 x 1
 y 114
 end
@@ -1819,8 +1570,6 @@ x 1
 y 115
 end
 arch blocked
-msg
-endmsg
 x 1
 y 115
 end
@@ -1829,8 +1578,6 @@ x 1
 y 116
 end
 arch blocked
-msg
-endmsg
 x 1
 y 116
 end
@@ -1839,8 +1586,6 @@ x 1
 y 117
 end
 arch blocked
-msg
-endmsg
 x 1
 y 117
 end
@@ -1848,8 +1593,6 @@ arch marble
 x 2
 end
 arch blocked
-msg
-endmsg
 x 2
 end
 arch marble
@@ -1857,8 +1600,6 @@ x 2
 y 1
 end
 arch blocked
-msg
-endmsg
 x 2
 y 1
 end
@@ -1877,8 +1618,6 @@ x 2
 y 3
 end
 arch blocked
-msg
-endmsg
 x 2
 y 3
 end
@@ -1887,8 +1626,6 @@ x 2
 y 4
 end
 arch blocked
-msg
-endmsg
 x 2
 y 4
 end
@@ -1897,8 +1634,6 @@ x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 5
 end
@@ -1907,8 +1642,6 @@ x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 6
 end
@@ -1917,8 +1650,6 @@ x 2
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
@@ -1927,8 +1658,6 @@ x 2
 y 8
 end
 arch blocked
-msg
-endmsg
 x 2
 y 8
 end
@@ -1937,8 +1666,6 @@ x 2
 y 9
 end
 arch blocked
-msg
-endmsg
 x 2
 y 9
 end
@@ -1947,8 +1674,6 @@ x 2
 y 10
 end
 arch blocked
-msg
-endmsg
 x 2
 y 10
 end
@@ -1957,8 +1682,6 @@ x 2
 y 11
 end
 arch blocked
-msg
-endmsg
 x 2
 y 11
 end
@@ -1967,8 +1690,6 @@ x 2
 y 12
 end
 arch blocked
-msg
-endmsg
 x 2
 y 12
 end
@@ -1977,8 +1698,6 @@ x 2
 y 13
 end
 arch blocked
-msg
-endmsg
 x 2
 y 13
 end
@@ -1987,8 +1706,6 @@ x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 14
 end
@@ -1997,8 +1714,6 @@ x 2
 y 15
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
@@ -2007,8 +1722,6 @@ x 2
 y 16
 end
 arch blocked
-msg
-endmsg
 x 2
 y 16
 end
@@ -2017,8 +1730,6 @@ x 2
 y 17
 end
 arch blocked
-msg
-endmsg
 x 2
 y 17
 end
@@ -2027,8 +1738,6 @@ x 2
 y 18
 end
 arch blocked
-msg
-endmsg
 x 2
 y 18
 end
@@ -2037,8 +1746,6 @@ x 2
 y 19
 end
 arch blocked
-msg
-endmsg
 x 2
 y 19
 end
@@ -2047,8 +1754,6 @@ x 2
 y 20
 end
 arch blocked
-msg
-endmsg
 x 2
 y 20
 end
@@ -2057,8 +1762,6 @@ x 2
 y 21
 end
 arch blocked
-msg
-endmsg
 x 2
 y 21
 end
@@ -2067,8 +1770,6 @@ x 2
 y 22
 end
 arch blocked
-msg
-endmsg
 x 2
 y 22
 end
@@ -2289,8 +1990,6 @@ x 2
 y 59
 end
 arch blocked
-msg
-endmsg
 x 2
 y 59
 end
@@ -2299,8 +1998,6 @@ x 2
 y 60
 end
 arch blocked
-msg
-endmsg
 x 2
 y 60
 end
@@ -2557,8 +2254,6 @@ x 2
 y 107
 end
 arch blocked
-msg
-endmsg
 x 2
 y 107
 end
@@ -2567,8 +2262,6 @@ x 2
 y 108
 end
 arch blocked
-msg
-endmsg
 x 2
 y 108
 end
@@ -2577,8 +2270,6 @@ x 2
 y 109
 end
 arch blocked
-msg
-endmsg
 x 2
 y 109
 end
@@ -2587,8 +2278,6 @@ x 2
 y 110
 end
 arch blocked
-msg
-endmsg
 x 2
 y 110
 end
@@ -2597,8 +2286,6 @@ x 2
 y 111
 end
 arch blocked
-msg
-endmsg
 x 2
 y 111
 end
@@ -2607,8 +2294,6 @@ x 2
 y 112
 end
 arch blocked
-msg
-endmsg
 x 2
 y 112
 end
@@ -2617,8 +2302,6 @@ x 2
 y 113
 end
 arch blocked
-msg
-endmsg
 x 2
 y 113
 end
@@ -2627,8 +2310,6 @@ x 2
 y 114
 end
 arch blocked
-msg
-endmsg
 x 2
 y 114
 end
@@ -2637,8 +2318,6 @@ x 2
 y 115
 end
 arch blocked
-msg
-endmsg
 x 2
 y 115
 end
@@ -2647,8 +2326,6 @@ x 2
 y 116
 end
 arch blocked
-msg
-endmsg
 x 2
 y 116
 end
@@ -2657,8 +2334,6 @@ x 2
 y 117
 end
 arch blocked
-msg
-endmsg
 x 2
 y 117
 end
@@ -2666,8 +2341,6 @@ arch marble
 x 3
 end
 arch blocked
-msg
-endmsg
 x 3
 end
 arch marble
@@ -2675,8 +2348,6 @@ x 3
 y 1
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
@@ -2685,8 +2356,6 @@ x 3
 y 2
 end
 arch blocked
-msg
-endmsg
 x 3
 y 2
 end
@@ -2695,8 +2364,6 @@ x 3
 y 3
 end
 arch blocked
-msg
-endmsg
 x 3
 y 3
 end
@@ -2705,8 +2372,6 @@ x 3
 y 4
 end
 arch blocked
-msg
-endmsg
 x 3
 y 4
 end
@@ -2715,8 +2380,6 @@ x 3
 y 5
 end
 arch blocked
-msg
-endmsg
 x 3
 y 5
 end
@@ -2725,8 +2388,6 @@ x 3
 y 6
 end
 arch blocked
-msg
-endmsg
 x 3
 y 6
 end
@@ -2735,8 +2396,6 @@ x 3
 y 7
 end
 arch blocked
-msg
-endmsg
 x 3
 y 7
 end
@@ -2745,8 +2404,6 @@ x 3
 y 8
 end
 arch blocked
-msg
-endmsg
 x 3
 y 8
 end
@@ -2755,8 +2412,6 @@ x 3
 y 9
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
@@ -2765,8 +2420,6 @@ x 3
 y 10
 end
 arch blocked
-msg
-endmsg
 x 3
 y 10
 end
@@ -2775,8 +2428,6 @@ x 3
 y 11
 end
 arch blocked
-msg
-endmsg
 x 3
 y 11
 end
@@ -2785,8 +2436,6 @@ x 3
 y 12
 end
 arch blocked
-msg
-endmsg
 x 3
 y 12
 end
@@ -2795,8 +2444,6 @@ x 3
 y 13
 end
 arch blocked
-msg
-endmsg
 x 3
 y 13
 end
@@ -2805,8 +2452,6 @@ x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 14
 end
@@ -2815,8 +2460,6 @@ x 3
 y 15
 end
 arch blocked
-msg
-endmsg
 x 3
 y 15
 end
@@ -2825,8 +2468,6 @@ x 3
 y 16
 end
 arch blocked
-msg
-endmsg
 x 3
 y 16
 end
@@ -2835,14 +2476,10 @@ x 3
 y 17
 end
 arch blocked
-msg
-endmsg
 x 3
 y 17
 end
 arch blocked
-msg
-endmsg
 x 3
 y 18
 end
@@ -2851,8 +2488,6 @@ x 3
 y 19
 end
 arch blocked
-msg
-endmsg
 x 3
 y 19
 end
@@ -2861,8 +2496,6 @@ x 3
 y 20
 end
 arch blocked
-msg
-endmsg
 x 3
 y 20
 end
@@ -2871,8 +2504,6 @@ x 3
 y 21
 end
 arch blocked
-msg
-endmsg
 x 3
 y 21
 end
@@ -3329,8 +2960,6 @@ x 3
 y 110
 end
 arch blocked
-msg
-endmsg
 x 3
 y 110
 end
@@ -3339,8 +2968,6 @@ x 3
 y 111
 end
 arch blocked
-msg
-endmsg
 x 3
 y 111
 end
@@ -3349,8 +2976,6 @@ x 3
 y 112
 end
 arch blocked
-msg
-endmsg
 x 3
 y 112
 end
@@ -3359,8 +2984,6 @@ x 3
 y 113
 end
 arch blocked
-msg
-endmsg
 x 3
 y 113
 end
@@ -3369,8 +2992,6 @@ x 3
 y 114
 end
 arch blocked
-msg
-endmsg
 x 3
 y 114
 end
@@ -3379,8 +3000,6 @@ x 3
 y 115
 end
 arch blocked
-msg
-endmsg
 x 3
 y 115
 end
@@ -3389,8 +3008,6 @@ x 3
 y 116
 end
 arch blocked
-msg
-endmsg
 x 3
 y 116
 end
@@ -3399,8 +3016,6 @@ x 3
 y 117
 end
 arch blocked
-msg
-endmsg
 x 3
 y 117
 end
@@ -3408,8 +3023,6 @@ arch marble
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch marble
@@ -3417,8 +3030,6 @@ x 4
 y 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
@@ -3427,8 +3038,6 @@ x 4
 y 2
 end
 arch blocked
-msg
-endmsg
 x 4
 y 2
 end
@@ -3437,8 +3046,6 @@ x 4
 y 3
 end
 arch blocked
-msg
-endmsg
 x 4
 y 3
 end
@@ -3447,8 +3054,6 @@ x 4
 y 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 4
 end
@@ -3457,8 +3062,6 @@ x 4
 y 5
 end
 arch blocked
-msg
-endmsg
 x 4
 y 5
 end
@@ -3467,8 +3070,6 @@ x 4
 y 6
 end
 arch blocked
-msg
-endmsg
 x 4
 y 6
 end
@@ -3477,8 +3078,6 @@ x 4
 y 7
 end
 arch blocked
-msg
-endmsg
 x 4
 y 7
 end
@@ -3487,8 +3086,6 @@ x 4
 y 8
 end
 arch blocked
-msg
-endmsg
 x 4
 y 8
 end
@@ -3497,8 +3094,6 @@ x 4
 y 9
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
@@ -3507,8 +3102,6 @@ x 4
 y 10
 end
 arch blocked
-msg
-endmsg
 x 4
 y 10
 end
@@ -3517,8 +3110,6 @@ x 4
 y 11
 end
 arch blocked
-msg
-endmsg
 x 4
 y 11
 end
@@ -3527,8 +3118,6 @@ x 4
 y 12
 end
 arch blocked
-msg
-endmsg
 x 4
 y 12
 end
@@ -3537,8 +3126,6 @@ x 4
 y 13
 end
 arch blocked
-msg
-endmsg
 x 4
 y 13
 end
@@ -3547,8 +3134,6 @@ x 4
 y 14
 end
 arch blocked
-msg
-endmsg
 x 4
 y 14
 end
@@ -3557,8 +3142,6 @@ x 4
 y 15
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
@@ -3567,8 +3150,6 @@ x 4
 y 16
 end
 arch blocked
-msg
-endmsg
 x 4
 y 16
 end
@@ -3577,8 +3158,6 @@ x 4
 y 17
 end
 arch blocked
-msg
-endmsg
 x 4
 y 17
 end
@@ -3587,8 +3166,6 @@ x 4
 y 18
 end
 arch blocked
-msg
-endmsg
 x 4
 y 18
 end
@@ -3597,8 +3174,6 @@ x 4
 y 19
 end
 arch blocked
-msg
-endmsg
 x 4
 y 19
 end
@@ -3607,8 +3182,6 @@ x 4
 y 20
 end
 arch blocked
-msg
-endmsg
 x 4
 y 20
 end
@@ -3617,8 +3190,6 @@ x 4
 y 21
 end
 arch blocked
-msg
-endmsg
 x 4
 y 21
 end
@@ -4111,8 +3682,6 @@ x 4
 y 114
 end
 arch blocked
-msg
-endmsg
 x 4
 y 114
 end
@@ -4121,8 +3690,6 @@ x 4
 y 115
 end
 arch blocked
-msg
-endmsg
 x 4
 y 115
 end
@@ -4131,8 +3698,6 @@ x 4
 y 116
 end
 arch blocked
-msg
-endmsg
 x 4
 y 116
 end
@@ -4141,8 +3706,6 @@ x 4
 y 117
 end
 arch blocked
-msg
-endmsg
 x 4
 y 117
 end
@@ -4150,8 +3713,6 @@ arch marble
 x 5
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch marble
@@ -4159,8 +3720,6 @@ x 5
 y 1
 end
 arch blocked
-msg
-endmsg
 x 5
 y 1
 end
@@ -4169,8 +3728,6 @@ x 5
 y 2
 end
 arch blocked
-msg
-endmsg
 x 5
 y 2
 end
@@ -4179,8 +3736,6 @@ x 5
 y 3
 end
 arch blocked
-msg
-endmsg
 x 5
 y 3
 end
@@ -4189,8 +3744,6 @@ x 5
 y 4
 end
 arch blocked
-msg
-endmsg
 x 5
 y 4
 end
@@ -4199,8 +3752,6 @@ x 5
 y 5
 end
 arch blocked
-msg
-endmsg
 x 5
 y 5
 end
@@ -4209,8 +3760,6 @@ x 5
 y 6
 end
 arch blocked
-msg
-endmsg
 x 5
 y 6
 end
@@ -4219,8 +3768,6 @@ x 5
 y 7
 end
 arch blocked
-msg
-endmsg
 x 5
 y 7
 end
@@ -4229,8 +3776,6 @@ x 5
 y 8
 end
 arch blocked
-msg
-endmsg
 x 5
 y 8
 end
@@ -4239,8 +3784,6 @@ x 5
 y 9
 end
 arch blocked
-msg
-endmsg
 x 5
 y 9
 end
@@ -4249,8 +3792,6 @@ x 5
 y 10
 end
 arch blocked
-msg
-endmsg
 x 5
 y 10
 end
@@ -4259,8 +3800,6 @@ x 5
 y 11
 end
 arch blocked
-msg
-endmsg
 x 5
 y 11
 end
@@ -4269,8 +3808,6 @@ x 5
 y 12
 end
 arch blocked
-msg
-endmsg
 x 5
 y 12
 end
@@ -4279,8 +3816,6 @@ x 5
 y 13
 end
 arch blocked
-msg
-endmsg
 x 5
 y 13
 end
@@ -4289,8 +3824,6 @@ x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 5
 y 14
 end
@@ -4299,8 +3832,6 @@ x 5
 y 15
 end
 arch blocked
-msg
-endmsg
 x 5
 y 15
 end
@@ -4309,8 +3840,6 @@ x 5
 y 16
 end
 arch blocked
-msg
-endmsg
 x 5
 y 16
 end
@@ -4319,8 +3848,6 @@ x 5
 y 17
 end
 arch blocked
-msg
-endmsg
 x 5
 y 17
 end
@@ -4329,8 +3856,6 @@ x 5
 y 18
 end
 arch blocked
-msg
-endmsg
 x 5
 y 18
 end
@@ -4339,8 +3864,6 @@ x 5
 y 19
 end
 arch blocked
-msg
-endmsg
 x 5
 y 19
 end
@@ -4349,8 +3872,6 @@ x 5
 y 20
 end
 arch blocked
-msg
-endmsg
 x 5
 y 20
 end
@@ -4359,8 +3880,6 @@ x 5
 y 21
 end
 arch blocked
-msg
-endmsg
 x 5
 y 21
 end
@@ -4820,8 +4339,6 @@ arch marble
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch marble
@@ -4829,8 +4346,6 @@ x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
@@ -4839,8 +4354,6 @@ x 6
 y 2
 end
 arch blocked
-msg
-endmsg
 x 6
 y 2
 end
@@ -4849,8 +4362,6 @@ x 6
 y 3
 end
 arch blocked
-msg
-endmsg
 x 6
 y 3
 end
@@ -4859,8 +4370,6 @@ x 6
 y 4
 end
 arch blocked
-msg
-endmsg
 x 6
 y 4
 end
@@ -4869,8 +4378,6 @@ x 6
 y 5
 end
 arch blocked
-msg
-endmsg
 x 6
 y 5
 end
@@ -4879,8 +4386,6 @@ x 6
 y 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 6
 end
@@ -4889,8 +4394,6 @@ x 6
 y 7
 end
 arch blocked
-msg
-endmsg
 x 6
 y 7
 end
@@ -4899,8 +4402,6 @@ x 6
 y 8
 end
 arch blocked
-msg
-endmsg
 x 6
 y 8
 end
@@ -4909,8 +4410,6 @@ x 6
 y 9
 end
 arch blocked
-msg
-endmsg
 x 6
 y 9
 end
@@ -4919,8 +4418,6 @@ x 6
 y 10
 end
 arch blocked
-msg
-endmsg
 x 6
 y 10
 end
@@ -4929,8 +4426,6 @@ x 6
 y 11
 end
 arch blocked
-msg
-endmsg
 x 6
 y 11
 end
@@ -4939,8 +4434,6 @@ x 6
 y 12
 end
 arch blocked
-msg
-endmsg
 x 6
 y 12
 end
@@ -4949,8 +4442,6 @@ x 6
 y 13
 end
 arch blocked
-msg
-endmsg
 x 6
 y 13
 end
@@ -4959,8 +4450,6 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
@@ -4969,8 +4458,6 @@ x 6
 y 15
 end
 arch blocked
-msg
-endmsg
 x 6
 y 15
 end
@@ -4979,8 +4466,6 @@ x 6
 y 16
 end
 arch blocked
-msg
-endmsg
 x 6
 y 16
 end
@@ -4989,8 +4474,6 @@ x 6
 y 17
 end
 arch blocked
-msg
-endmsg
 x 6
 y 17
 end
@@ -4999,8 +4482,6 @@ x 6
 y 18
 end
 arch blocked
-msg
-endmsg
 x 6
 y 18
 end
@@ -5480,8 +4961,6 @@ arch marble
 x 7
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch marble
@@ -5489,8 +4968,6 @@ x 7
 y 1
 end
 arch blocked
-msg
-endmsg
 x 7
 y 1
 end
@@ -5499,8 +4976,6 @@ x 7
 y 2
 end
 arch blocked
-msg
-endmsg
 x 7
 y 2
 end
@@ -5509,8 +4984,6 @@ x 7
 y 3
 end
 arch blocked
-msg
-endmsg
 x 7
 y 3
 end
@@ -5519,8 +4992,6 @@ x 7
 y 4
 end
 arch blocked
-msg
-endmsg
 x 7
 y 4
 end
@@ -5529,8 +5000,6 @@ x 7
 y 5
 end
 arch blocked
-msg
-endmsg
 x 7
 y 5
 end
@@ -5539,8 +5008,6 @@ x 7
 y 6
 end
 arch blocked
-msg
-endmsg
 x 7
 y 6
 end
@@ -5549,8 +5016,6 @@ x 7
 y 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 7
 end
@@ -5559,8 +5024,6 @@ x 7
 y 8
 end
 arch blocked
-msg
-endmsg
 x 7
 y 8
 end
@@ -5569,8 +5032,6 @@ x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
@@ -5579,8 +5040,6 @@ x 7
 y 10
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
@@ -5589,8 +5048,6 @@ x 7
 y 11
 end
 arch blocked
-msg
-endmsg
 x 7
 y 11
 end
@@ -5599,8 +5056,6 @@ x 7
 y 12
 end
 arch blocked
-msg
-endmsg
 x 7
 y 12
 end
@@ -5609,8 +5064,6 @@ x 7
 y 13
 end
 arch blocked
-msg
-endmsg
 x 7
 y 13
 end
@@ -5619,8 +5072,6 @@ x 7
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
@@ -5629,8 +5080,6 @@ x 7
 y 15
 end
 arch blocked
-msg
-endmsg
 x 7
 y 15
 end
@@ -5639,8 +5088,6 @@ x 7
 y 16
 end
 arch blocked
-msg
-endmsg
 x 7
 y 16
 end
@@ -6141,8 +5588,6 @@ x 7
 y 115
 end
 arch blocked
-msg
-endmsg
 x 7
 y 115
 end
@@ -6151,8 +5596,6 @@ x 7
 y 116
 end
 arch blocked
-msg
-endmsg
 x 7
 y 116
 end
@@ -6161,8 +5604,6 @@ x 7
 y 117
 end
 arch blocked
-msg
-endmsg
 x 7
 y 117
 end
@@ -6170,8 +5611,6 @@ arch marble
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch marble
@@ -6179,8 +5618,6 @@ x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -6189,8 +5626,6 @@ x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 2
 end
@@ -6199,8 +5634,6 @@ x 8
 y 3
 end
 arch blocked
-msg
-endmsg
 x 8
 y 3
 end
@@ -6209,8 +5642,6 @@ x 8
 y 4
 end
 arch blocked
-msg
-endmsg
 x 8
 y 4
 end
@@ -6219,8 +5650,6 @@ x 8
 y 5
 end
 arch blocked
-msg
-endmsg
 x 8
 y 5
 end
@@ -6229,8 +5658,6 @@ x 8
 y 6
 end
 arch blocked
-msg
-endmsg
 x 8
 y 6
 end
@@ -6239,8 +5666,6 @@ x 8
 y 7
 end
 arch blocked
-msg
-endmsg
 x 8
 y 7
 end
@@ -6249,8 +5674,6 @@ x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 8
 end
@@ -6259,8 +5682,6 @@ x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
@@ -6269,8 +5690,6 @@ x 8
 y 10
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
@@ -6279,8 +5698,6 @@ x 8
 y 11
 end
 arch blocked
-msg
-endmsg
 x 8
 y 11
 end
@@ -6289,8 +5706,6 @@ x 8
 y 12
 end
 arch blocked
-msg
-endmsg
 x 8
 y 12
 end
@@ -6299,8 +5714,6 @@ x 8
 y 13
 end
 arch blocked
-msg
-endmsg
 x 8
 y 13
 end
@@ -6309,8 +5722,6 @@ x 8
 y 14
 end
 arch blocked
-msg
-endmsg
 x 8
 y 14
 end
@@ -6319,8 +5730,6 @@ x 8
 y 15
 end
 arch blocked
-msg
-endmsg
 x 8
 y 15
 end
@@ -6329,8 +5738,6 @@ x 8
 y 16
 end
 arch blocked
-msg
-endmsg
 x 8
 y 16
 end
@@ -6827,8 +6234,6 @@ x 8
 y 111
 end
 arch blocked
-msg
-endmsg
 x 8
 y 111
 end
@@ -6837,8 +6242,6 @@ x 8
 y 112
 end
 arch blocked
-msg
-endmsg
 x 8
 y 112
 end
@@ -6847,8 +6250,6 @@ x 8
 y 113
 end
 arch blocked
-msg
-endmsg
 x 8
 y 113
 end
@@ -6857,8 +6258,6 @@ x 8
 y 114
 end
 arch blocked
-msg
-endmsg
 x 8
 y 114
 end
@@ -6867,8 +6266,6 @@ x 8
 y 115
 end
 arch blocked
-msg
-endmsg
 x 8
 y 115
 end
@@ -6877,8 +6274,6 @@ x 8
 y 116
 end
 arch blocked
-msg
-endmsg
 x 8
 y 116
 end
@@ -6887,8 +6282,6 @@ x 8
 y 117
 end
 arch blocked
-msg
-endmsg
 x 8
 y 117
 end
@@ -6896,8 +6289,6 @@ arch marble
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch marble
@@ -6905,8 +6296,6 @@ x 9
 y 1
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
@@ -6915,8 +6304,6 @@ x 9
 y 2
 end
 arch blocked
-msg
-endmsg
 x 9
 y 2
 end
@@ -6925,8 +6312,6 @@ x 9
 y 3
 end
 arch blocked
-msg
-endmsg
 x 9
 y 3
 end
@@ -6935,8 +6320,6 @@ x 9
 y 4
 end
 arch blocked
-msg
-endmsg
 x 9
 y 4
 end
@@ -6945,8 +6328,6 @@ x 9
 y 5
 end
 arch blocked
-msg
-endmsg
 x 9
 y 5
 end
@@ -6955,8 +6336,6 @@ x 9
 y 6
 end
 arch blocked
-msg
-endmsg
 x 9
 y 6
 end
@@ -6965,8 +6344,6 @@ x 9
 y 7
 end
 arch blocked
-msg
-endmsg
 x 9
 y 7
 end
@@ -6975,8 +6352,6 @@ x 9
 y 8
 end
 arch blocked
-msg
-endmsg
 x 9
 y 8
 end
@@ -6985,8 +6360,6 @@ x 9
 y 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 9
 end
@@ -6995,8 +6368,6 @@ x 9
 y 10
 end
 arch blocked
-msg
-endmsg
 x 9
 y 10
 end
@@ -7005,8 +6376,6 @@ x 9
 y 11
 end
 arch blocked
-msg
-endmsg
 x 9
 y 11
 end
@@ -7015,8 +6384,6 @@ x 9
 y 12
 end
 arch blocked
-msg
-endmsg
 x 9
 y 12
 end
@@ -7025,8 +6392,6 @@ x 9
 y 13
 end
 arch blocked
-msg
-endmsg
 x 9
 y 13
 end
@@ -7035,8 +6400,6 @@ x 9
 y 14
 end
 arch blocked
-msg
-endmsg
 x 9
 y 14
 end
@@ -7045,8 +6408,6 @@ x 9
 y 15
 end
 arch blocked
-msg
-endmsg
 x 9
 y 15
 end
@@ -7055,8 +6416,6 @@ x 9
 y 16
 end
 arch blocked
-msg
-endmsg
 x 9
 y 16
 end
@@ -7065,8 +6424,6 @@ x 9
 y 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 17
 end
@@ -7527,8 +6884,6 @@ x 9
 y 113
 end
 arch blocked
-msg
-endmsg
 x 9
 y 113
 end
@@ -7537,8 +6892,6 @@ x 9
 y 114
 end
 arch blocked
-msg
-endmsg
 x 9
 y 114
 end
@@ -7547,8 +6900,6 @@ x 9
 y 115
 end
 arch blocked
-msg
-endmsg
 x 9
 y 115
 end
@@ -7557,8 +6908,6 @@ x 9
 y 116
 end
 arch blocked
-msg
-endmsg
 x 9
 y 116
 end
@@ -7567,8 +6916,6 @@ x 9
 y 117
 end
 arch blocked
-msg
-endmsg
 x 9
 y 117
 end
@@ -7576,8 +6923,6 @@ arch marble
 x 10
 end
 arch blocked
-msg
-endmsg
 x 10
 end
 arch marble
@@ -7585,8 +6930,6 @@ x 10
 y 1
 end
 arch blocked
-msg
-endmsg
 x 10
 y 1
 end
@@ -7595,8 +6938,6 @@ x 10
 y 2
 end
 arch blocked
-msg
-endmsg
 x 10
 y 2
 end
@@ -7605,8 +6946,6 @@ x 10
 y 3
 end
 arch blocked
-msg
-endmsg
 x 10
 y 3
 end
@@ -7615,8 +6954,6 @@ x 10
 y 4
 end
 arch blocked
-msg
-endmsg
 x 10
 y 4
 end
@@ -7625,8 +6962,6 @@ x 10
 y 5
 end
 arch blocked
-msg
-endmsg
 x 10
 y 5
 end
@@ -7635,8 +6970,6 @@ x 10
 y 6
 end
 arch blocked
-msg
-endmsg
 x 10
 y 6
 end
@@ -7645,8 +6978,6 @@ x 10
 y 7
 end
 arch blocked
-msg
-endmsg
 x 10
 y 7
 end
@@ -7655,8 +6986,6 @@ x 10
 y 8
 end
 arch blocked
-msg
-endmsg
 x 10
 y 8
 end
@@ -7665,8 +6994,6 @@ x 10
 y 9
 end
 arch blocked
-msg
-endmsg
 x 10
 y 9
 end
@@ -7675,8 +7002,6 @@ x 10
 y 10
 end
 arch blocked
-msg
-endmsg
 x 10
 y 10
 end
@@ -7685,8 +7010,6 @@ x 10
 y 11
 end
 arch blocked
-msg
-endmsg
 x 10
 y 11
 end
@@ -7695,8 +7018,6 @@ x 10
 y 12
 end
 arch blocked
-msg
-endmsg
 x 10
 y 12
 end
@@ -7705,8 +7026,6 @@ x 10
 y 13
 end
 arch blocked
-msg
-endmsg
 x 10
 y 13
 end
@@ -7715,8 +7034,6 @@ x 10
 y 14
 end
 arch blocked
-msg
-endmsg
 x 10
 y 14
 end
@@ -7725,8 +7042,6 @@ x 10
 y 15
 end
 arch blocked
-msg
-endmsg
 x 10
 y 15
 end
@@ -7735,8 +7050,6 @@ x 10
 y 16
 end
 arch blocked
-msg
-endmsg
 x 10
 y 16
 end
@@ -7745,8 +7058,6 @@ x 10
 y 17
 end
 arch blocked
-msg
-endmsg
 x 10
 y 17
 end
@@ -7755,8 +7066,6 @@ x 10
 y 18
 end
 arch blocked
-msg
-endmsg
 x 10
 y 18
 end
@@ -8353,8 +7662,6 @@ x 10
 y 117
 end
 arch blocked
-msg
-endmsg
 x 10
 y 117
 end
@@ -8362,8 +7669,6 @@ arch marble
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch marble
@@ -8371,8 +7676,6 @@ x 11
 y 1
 end
 arch blocked
-msg
-endmsg
 x 11
 y 1
 end
@@ -8381,8 +7684,6 @@ x 11
 y 2
 end
 arch blocked
-msg
-endmsg
 x 11
 y 2
 end
@@ -8391,8 +7692,6 @@ x 11
 y 3
 end
 arch blocked
-msg
-endmsg
 x 11
 y 3
 end
@@ -8401,8 +7700,6 @@ x 11
 y 4
 end
 arch blocked
-msg
-endmsg
 x 11
 y 4
 end
@@ -8411,8 +7708,6 @@ x 11
 y 5
 end
 arch blocked
-msg
-endmsg
 x 11
 y 5
 end
@@ -8421,8 +7716,6 @@ x 11
 y 6
 end
 arch blocked
-msg
-endmsg
 x 11
 y 6
 end
@@ -8431,8 +7724,6 @@ x 11
 y 7
 end
 arch blocked
-msg
-endmsg
 x 11
 y 7
 end
@@ -8441,8 +7732,6 @@ x 11
 y 8
 end
 arch blocked
-msg
-endmsg
 x 11
 y 8
 end
@@ -8451,8 +7740,6 @@ x 11
 y 9
 end
 arch blocked
-msg
-endmsg
 x 11
 y 9
 end
@@ -8461,8 +7748,6 @@ x 11
 y 10
 end
 arch blocked
-msg
-endmsg
 x 11
 y 10
 end
@@ -8471,8 +7756,6 @@ x 11
 y 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 11
 end
@@ -8481,8 +7764,6 @@ x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 y 12
 end
@@ -8491,8 +7772,6 @@ x 11
 y 13
 end
 arch blocked
-msg
-endmsg
 x 11
 y 13
 end
@@ -8501,8 +7780,6 @@ x 11
 y 14
 end
 arch blocked
-msg
-endmsg
 x 11
 y 14
 end
@@ -8511,8 +7788,6 @@ x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 11
 y 15
 end
@@ -8521,8 +7796,6 @@ x 11
 y 16
 end
 arch blocked
-msg
-endmsg
 x 11
 y 16
 end
@@ -8531,8 +7804,6 @@ x 11
 y 17
 end
 arch blocked
-msg
-endmsg
 x 11
 y 17
 end
@@ -8541,8 +7812,6 @@ x 11
 y 18
 end
 arch blocked
-msg
-endmsg
 x 11
 y 18
 end
@@ -8551,8 +7820,6 @@ x 11
 y 19
 end
 arch blocked
-msg
-endmsg
 x 11
 y 19
 end
@@ -8561,8 +7828,6 @@ x 11
 y 20
 end
 arch blocked
-msg
-endmsg
 x 11
 y 20
 end
@@ -8571,8 +7836,6 @@ x 11
 y 21
 end
 arch blocked
-msg
-endmsg
 x 11
 y 21
 end
@@ -8581,8 +7844,6 @@ x 11
 y 22
 end
 arch blocked
-msg
-endmsg
 x 11
 y 22
 end
@@ -9354,8 +8615,6 @@ arch marble
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch marble
@@ -9363,8 +8622,6 @@ x 12
 y 1
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
@@ -9373,8 +8630,6 @@ x 12
 y 2
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
@@ -9383,8 +8638,6 @@ x 12
 y 3
 end
 arch blocked
-msg
-endmsg
 x 12
 y 3
 end
@@ -9393,8 +8646,6 @@ x 12
 y 4
 end
 arch blocked
-msg
-endmsg
 x 12
 y 4
 end
@@ -9403,8 +8654,6 @@ x 12
 y 5
 end
 arch blocked
-msg
-endmsg
 x 12
 y 5
 end
@@ -9413,8 +8662,6 @@ x 12
 y 6
 end
 arch blocked
-msg
-endmsg
 x 12
 y 6
 end
@@ -9423,8 +8670,6 @@ x 12
 y 7
 end
 arch blocked
-msg
-endmsg
 x 12
 y 7
 end
@@ -9433,8 +8678,6 @@ x 12
 y 8
 end
 arch blocked
-msg
-endmsg
 x 12
 y 8
 end
@@ -9443,8 +8686,6 @@ x 12
 y 9
 end
 arch blocked
-msg
-endmsg
 x 12
 y 9
 end
@@ -9453,8 +8694,6 @@ x 12
 y 10
 end
 arch blocked
-msg
-endmsg
 x 12
 y 10
 end
@@ -9463,8 +8702,6 @@ x 12
 y 11
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
@@ -9473,8 +8710,6 @@ x 12
 y 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 12
 end
@@ -9483,8 +8718,6 @@ x 12
 y 13
 end
 arch blocked
-msg
-endmsg
 x 12
 y 13
 end
@@ -9493,8 +8726,6 @@ x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 14
 end
@@ -9503,8 +8734,6 @@ x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
@@ -9513,8 +8742,6 @@ x 12
 y 16
 end
 arch blocked
-msg
-endmsg
 x 12
 y 16
 end
@@ -9523,8 +8750,6 @@ x 12
 y 17
 end
 arch blocked
-msg
-endmsg
 x 12
 y 17
 end
@@ -9533,8 +8758,6 @@ x 12
 y 18
 end
 arch blocked
-msg
-endmsg
 x 12
 y 18
 end
@@ -9543,8 +8766,6 @@ x 12
 y 19
 end
 arch blocked
-msg
-endmsg
 x 12
 y 19
 end
@@ -9553,8 +8774,6 @@ x 12
 y 20
 end
 arch blocked
-msg
-endmsg
 x 12
 y 20
 end
@@ -9563,8 +8782,6 @@ x 12
 y 21
 end
 arch blocked
-msg
-endmsg
 x 12
 y 21
 end
@@ -9573,8 +8790,6 @@ x 12
 y 22
 end
 arch blocked
-msg
-endmsg
 x 12
 y 22
 end
@@ -9583,8 +8798,6 @@ x 12
 y 23
 end
 arch blocked
-msg
-endmsg
 x 12
 y 23
 end
@@ -9593,8 +8806,6 @@ x 12
 y 24
 end
 arch blocked
-msg
-endmsg
 x 12
 y 24
 end
@@ -10210,8 +9421,6 @@ arch marble
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch marble
@@ -10219,8 +9428,6 @@ x 13
 y 1
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
@@ -10229,8 +9436,6 @@ x 13
 y 2
 end
 arch blocked
-msg
-endmsg
 x 13
 y 2
 end
@@ -10239,8 +9444,6 @@ x 13
 y 3
 end
 arch blocked
-msg
-endmsg
 x 13
 y 3
 end
@@ -10249,8 +9452,6 @@ x 13
 y 4
 end
 arch blocked
-msg
-endmsg
 x 13
 y 4
 end
@@ -10259,8 +9460,6 @@ x 13
 y 5
 end
 arch blocked
-msg
-endmsg
 x 13
 y 5
 end
@@ -10269,8 +9468,6 @@ x 13
 y 6
 end
 arch blocked
-msg
-endmsg
 x 13
 y 6
 end
@@ -10279,8 +9476,6 @@ x 13
 y 7
 end
 arch blocked
-msg
-endmsg
 x 13
 y 7
 end
@@ -10289,8 +9484,6 @@ x 13
 y 8
 end
 arch blocked
-msg
-endmsg
 x 13
 y 8
 end
@@ -10299,8 +9492,6 @@ x 13
 y 9
 end
 arch blocked
-msg
-endmsg
 x 13
 y 9
 end
@@ -10309,8 +9500,6 @@ x 13
 y 10
 end
 arch blocked
-msg
-endmsg
 x 13
 y 10
 end
@@ -10319,8 +9508,6 @@ x 13
 y 11
 end
 arch blocked
-msg
-endmsg
 x 13
 y 11
 end
@@ -10329,8 +9516,6 @@ x 13
 y 12
 end
 arch blocked
-msg
-endmsg
 x 13
 y 12
 end
@@ -10339,8 +9524,6 @@ x 13
 y 13
 end
 arch blocked
-msg
-endmsg
 x 13
 y 13
 end
@@ -10349,8 +9532,6 @@ x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 14
 end
@@ -10359,8 +9540,6 @@ x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
@@ -10369,8 +9548,6 @@ x 13
 y 16
 end
 arch blocked
-msg
-endmsg
 x 13
 y 16
 end
@@ -10379,8 +9556,6 @@ x 13
 y 17
 end
 arch blocked
-msg
-endmsg
 x 13
 y 17
 end
@@ -10389,8 +9564,6 @@ x 13
 y 18
 end
 arch blocked
-msg
-endmsg
 x 13
 y 18
 end
@@ -10399,8 +9572,6 @@ x 13
 y 19
 end
 arch blocked
-msg
-endmsg
 x 13
 y 19
 end
@@ -10409,8 +9580,6 @@ x 13
 y 20
 end
 arch blocked
-msg
-endmsg
 x 13
 y 20
 end
@@ -10419,8 +9588,6 @@ x 13
 y 21
 end
 arch blocked
-msg
-endmsg
 x 13
 y 21
 end
@@ -10429,8 +9596,6 @@ x 13
 y 22
 end
 arch blocked
-msg
-endmsg
 x 13
 y 22
 end
@@ -10439,8 +9604,6 @@ x 13
 y 23
 end
 arch blocked
-msg
-endmsg
 x 13
 y 23
 end
@@ -10449,8 +9612,6 @@ x 13
 y 24
 end
 arch blocked
-msg
-endmsg
 x 13
 y 24
 end
@@ -11071,8 +10232,6 @@ x 13
 y 115
 end
 arch blocked
-msg
-endmsg
 x 13
 y 115
 end
@@ -11081,8 +10240,6 @@ x 13
 y 116
 end
 arch blocked
-msg
-endmsg
 x 13
 y 116
 end
@@ -11091,8 +10248,6 @@ x 13
 y 117
 end
 arch blocked
-msg
-endmsg
 x 13
 y 117
 end
@@ -11100,8 +10255,6 @@ arch marble
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch marble
@@ -11109,8 +10262,6 @@ x 14
 y 1
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -11119,8 +10270,6 @@ x 14
 y 2
 end
 arch blocked
-msg
-endmsg
 x 14
 y 2
 end
@@ -11129,8 +10278,6 @@ x 14
 y 3
 end
 arch blocked
-msg
-endmsg
 x 14
 y 3
 end
@@ -11139,8 +10286,6 @@ x 14
 y 4
 end
 arch blocked
-msg
-endmsg
 x 14
 y 4
 end
@@ -11149,8 +10294,6 @@ x 14
 y 5
 end
 arch blocked
-msg
-endmsg
 x 14
 y 5
 end
@@ -11159,8 +10302,6 @@ x 14
 y 6
 end
 arch blocked
-msg
-endmsg
 x 14
 y 6
 end
@@ -11169,8 +10310,6 @@ x 14
 y 7
 end
 arch blocked
-msg
-endmsg
 x 14
 y 7
 end
@@ -11179,8 +10318,6 @@ x 14
 y 8
 end
 arch blocked
-msg
-endmsg
 x 14
 y 8
 end
@@ -11189,8 +10326,6 @@ x 14
 y 9
 end
 arch blocked
-msg
-endmsg
 x 14
 y 9
 end
@@ -11199,8 +10334,6 @@ x 14
 y 10
 end
 arch blocked
-msg
-endmsg
 x 14
 y 10
 end
@@ -11209,8 +10342,6 @@ x 14
 y 11
 end
 arch blocked
-msg
-endmsg
 x 14
 y 11
 end
@@ -11219,8 +10350,6 @@ x 14
 y 12
 end
 arch blocked
-msg
-endmsg
 x 14
 y 12
 end
@@ -11229,8 +10358,6 @@ x 14
 y 13
 end
 arch blocked
-msg
-endmsg
 x 14
 y 13
 end
@@ -11239,8 +10366,6 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 14
 end
@@ -11249,8 +10374,6 @@ x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
@@ -11259,8 +10382,6 @@ x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 14
 y 16
 end
@@ -11269,8 +10390,6 @@ x 14
 y 17
 end
 arch blocked
-msg
-endmsg
 x 14
 y 17
 end
@@ -11279,8 +10398,6 @@ x 14
 y 18
 end
 arch blocked
-msg
-endmsg
 x 14
 y 18
 end
@@ -11289,8 +10406,6 @@ x 14
 y 19
 end
 arch blocked
-msg
-endmsg
 x 14
 y 19
 end
@@ -11299,8 +10414,6 @@ x 14
 y 20
 end
 arch blocked
-msg
-endmsg
 x 14
 y 20
 end
@@ -11309,8 +10422,6 @@ x 14
 y 21
 end
 arch blocked
-msg
-endmsg
 x 14
 y 21
 end
@@ -11319,8 +10430,6 @@ x 14
 y 22
 end
 arch blocked
-msg
-endmsg
 x 14
 y 22
 end
@@ -11329,8 +10438,6 @@ x 14
 y 23
 end
 arch blocked
-msg
-endmsg
 x 14
 y 23
 end
@@ -11339,8 +10446,6 @@ x 14
 y 24
 end
 arch blocked
-msg
-endmsg
 x 14
 y 24
 end
@@ -11967,8 +11072,6 @@ x 14
 y 113
 end
 arch blocked
-msg
-endmsg
 x 14
 y 113
 end
@@ -11977,8 +11080,6 @@ x 14
 y 114
 end
 arch blocked
-msg
-endmsg
 x 14
 y 114
 end
@@ -11987,8 +11088,6 @@ x 14
 y 115
 end
 arch blocked
-msg
-endmsg
 x 14
 y 115
 end
@@ -11997,8 +11096,6 @@ x 14
 y 116
 end
 arch blocked
-msg
-endmsg
 x 14
 y 116
 end
@@ -12007,8 +11104,6 @@ x 14
 y 117
 end
 arch blocked
-msg
-endmsg
 x 14
 y 117
 end
@@ -12016,8 +11111,6 @@ arch marble
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch marble
@@ -12025,8 +11118,6 @@ x 15
 y 1
 end
 arch blocked
-msg
-endmsg
 x 15
 y 1
 end
@@ -12035,8 +11126,6 @@ x 15
 y 2
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
@@ -12045,8 +11134,6 @@ x 15
 y 3
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
@@ -12055,8 +11142,6 @@ x 15
 y 4
 end
 arch blocked
-msg
-endmsg
 x 15
 y 4
 end
@@ -12065,8 +11150,6 @@ x 15
 y 5
 end
 arch blocked
-msg
-endmsg
 x 15
 y 5
 end
@@ -12075,8 +11158,6 @@ x 15
 y 6
 end
 arch blocked
-msg
-endmsg
 x 15
 y 6
 end
@@ -12085,8 +11166,6 @@ x 15
 y 7
 end
 arch blocked
-msg
-endmsg
 x 15
 y 7
 end
@@ -12095,8 +11174,6 @@ x 15
 y 8
 end
 arch blocked
-msg
-endmsg
 x 15
 y 8
 end
@@ -12105,8 +11182,6 @@ x 15
 y 9
 end
 arch blocked
-msg
-endmsg
 x 15
 y 9
 end
@@ -12115,8 +11190,6 @@ x 15
 y 10
 end
 arch blocked
-msg
-endmsg
 x 15
 y 10
 end
@@ -12125,8 +11198,6 @@ x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
@@ -12135,8 +11206,6 @@ x 15
 y 12
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
@@ -12145,8 +11214,6 @@ x 15
 y 13
 end
 arch blocked
-msg
-endmsg
 x 15
 y 13
 end
@@ -12155,8 +11222,6 @@ x 15
 y 14
 end
 arch blocked
-msg
-endmsg
 x 15
 y 14
 end
@@ -12165,8 +11230,6 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 15
 end
@@ -12175,8 +11238,6 @@ x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
@@ -12209,8 +11270,6 @@ x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 15
 y 20
 end
@@ -12219,8 +11278,6 @@ x 15
 y 21
 end
 arch blocked
-msg
-endmsg
 x 15
 y 21
 end
@@ -12229,8 +11286,6 @@ x 15
 y 22
 end
 arch blocked
-msg
-endmsg
 x 15
 y 22
 end
@@ -12239,8 +11294,6 @@ x 15
 y 23
 end
 arch blocked
-msg
-endmsg
 x 15
 y 23
 end
@@ -12249,8 +11302,6 @@ x 15
 y 24
 end
 arch blocked
-msg
-endmsg
 x 15
 y 24
 end
@@ -12259,8 +11310,6 @@ x 15
 y 25
 end
 arch blocked
-msg
-endmsg
 x 15
 y 25
 end
@@ -12877,8 +11926,6 @@ x 15
 y 117
 end
 arch blocked
-msg
-endmsg
 x 15
 y 117
 end
@@ -12886,8 +11933,6 @@ arch marble
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch marble
@@ -12895,8 +11940,6 @@ x 16
 y 1
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -12905,8 +11948,6 @@ x 16
 y 2
 end
 arch blocked
-msg
-endmsg
 x 16
 y 2
 end
@@ -12915,8 +11956,6 @@ x 16
 y 3
 end
 arch blocked
-msg
-endmsg
 x 16
 y 3
 end
@@ -12925,8 +11964,6 @@ x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
@@ -12935,8 +11972,6 @@ x 16
 y 5
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
@@ -12945,8 +11980,6 @@ x 16
 y 6
 end
 arch blocked
-msg
-endmsg
 x 16
 y 6
 end
@@ -12955,8 +11988,6 @@ x 16
 y 7
 end
 arch blocked
-msg
-endmsg
 x 16
 y 7
 end
@@ -12965,8 +11996,6 @@ x 16
 y 8
 end
 arch blocked
-msg
-endmsg
 x 16
 y 8
 end
@@ -12975,8 +12004,6 @@ x 16
 y 9
 end
 arch blocked
-msg
-endmsg
 x 16
 y 9
 end
@@ -12985,8 +12012,6 @@ x 16
 y 10
 end
 arch blocked
-msg
-endmsg
 x 16
 y 10
 end
@@ -12995,8 +12020,6 @@ x 16
 y 11
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
@@ -13005,8 +12028,6 @@ x 16
 y 12
 end
 arch blocked
-msg
-endmsg
 x 16
 y 12
 end
@@ -13015,8 +12036,6 @@ x 16
 y 13
 end
 arch blocked
-msg
-endmsg
 x 16
 y 13
 end
@@ -13025,8 +12044,6 @@ x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 14
 end
@@ -13035,8 +12052,6 @@ x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
@@ -13081,8 +12096,6 @@ x 16
 y 21
 end
 arch blocked
-msg
-endmsg
 x 16
 y 21
 end
@@ -13091,8 +12104,6 @@ x 16
 y 22
 end
 arch blocked
-msg
-endmsg
 x 16
 y 22
 end
@@ -13101,8 +12112,6 @@ x 16
 y 23
 end
 arch blocked
-msg
-endmsg
 x 16
 y 23
 end
@@ -13111,8 +12120,6 @@ x 16
 y 24
 end
 arch blocked
-msg
-endmsg
 x 16
 y 24
 end
@@ -13736,8 +12743,6 @@ arch marble
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 end
 arch marble
@@ -13745,8 +12750,6 @@ x 17
 y 1
 end
 arch blocked
-msg
-endmsg
 x 17
 y 1
 end
@@ -13755,8 +12758,6 @@ x 17
 y 2
 end
 arch blocked
-msg
-endmsg
 x 17
 y 2
 end
@@ -13765,8 +12766,6 @@ x 17
 y 3
 end
 arch blocked
-msg
-endmsg
 x 17
 y 3
 end
@@ -13775,8 +12774,6 @@ x 17
 y 4
 end
 arch blocked
-msg
-endmsg
 x 17
 y 4
 end
@@ -13785,8 +12782,6 @@ x 17
 y 5
 end
 arch blocked
-msg
-endmsg
 x 17
 y 5
 end
@@ -13795,8 +12790,6 @@ x 17
 y 6
 end
 arch blocked
-msg
-endmsg
 x 17
 y 6
 end
@@ -13805,8 +12798,6 @@ x 17
 y 7
 end
 arch blocked
-msg
-endmsg
 x 17
 y 7
 end
@@ -13815,8 +12806,6 @@ x 17
 y 8
 end
 arch blocked
-msg
-endmsg
 x 17
 y 8
 end
@@ -13825,8 +12814,6 @@ x 17
 y 9
 end
 arch blocked
-msg
-endmsg
 x 17
 y 9
 end
@@ -13835,8 +12822,6 @@ x 17
 y 10
 end
 arch blocked
-msg
-endmsg
 x 17
 y 10
 end
@@ -13845,8 +12830,6 @@ x 17
 y 11
 end
 arch blocked
-msg
-endmsg
 x 17
 y 11
 end
@@ -13855,8 +12838,6 @@ x 17
 y 12
 end
 arch blocked
-msg
-endmsg
 x 17
 y 12
 end
@@ -13865,8 +12846,6 @@ x 17
 y 13
 end
 arch blocked
-msg
-endmsg
 x 17
 y 13
 end
@@ -13875,8 +12854,6 @@ x 17
 y 14
 end
 arch blocked
-msg
-endmsg
 x 17
 y 14
 end
@@ -13885,8 +12862,6 @@ x 17
 y 15
 end
 arch blocked
-msg
-endmsg
 x 17
 y 15
 end
@@ -13927,8 +12902,6 @@ x 17
 y 21
 end
 arch blocked
-msg
-endmsg
 x 17
 y 21
 end
@@ -13937,8 +12910,6 @@ x 17
 y 22
 end
 arch blocked
-msg
-endmsg
 x 17
 y 22
 end
@@ -14578,8 +13549,6 @@ arch marble
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch marble
@@ -14587,8 +13556,6 @@ x 18
 y 1
 end
 arch blocked
-msg
-endmsg
 x 18
 y 1
 end
@@ -14597,8 +13564,6 @@ x 18
 y 2
 end
 arch blocked
-msg
-endmsg
 x 18
 y 2
 end
@@ -14607,8 +13572,6 @@ x 18
 y 3
 end
 arch blocked
-msg
-endmsg
 x 18
 y 3
 end
@@ -14617,8 +13580,6 @@ x 18
 y 4
 end
 arch blocked
-msg
-endmsg
 x 18
 y 4
 end
@@ -14627,8 +13588,6 @@ x 18
 y 5
 end
 arch blocked
-msg
-endmsg
 x 18
 y 5
 end
@@ -14637,8 +13596,6 @@ x 18
 y 6
 end
 arch blocked
-msg
-endmsg
 x 18
 y 6
 end
@@ -14647,8 +13604,6 @@ x 18
 y 7
 end
 arch blocked
-msg
-endmsg
 x 18
 y 7
 end
@@ -14657,8 +13612,6 @@ x 18
 y 8
 end
 arch blocked
-msg
-endmsg
 x 18
 y 8
 end
@@ -14667,8 +13620,6 @@ x 18
 y 9
 end
 arch blocked
-msg
-endmsg
 x 18
 y 9
 end
@@ -14677,8 +13628,6 @@ x 18
 y 10
 end
 arch blocked
-msg
-endmsg
 x 18
 y 10
 end
@@ -14687,8 +13636,6 @@ x 18
 y 11
 end
 arch blocked
-msg
-endmsg
 x 18
 y 11
 end
@@ -14697,8 +13644,6 @@ x 18
 y 12
 end
 arch blocked
-msg
-endmsg
 x 18
 y 12
 end
@@ -14707,8 +13652,6 @@ x 18
 y 13
 end
 arch blocked
-msg
-endmsg
 x 18
 y 13
 end
@@ -14717,8 +13660,6 @@ x 18
 y 14
 end
 arch blocked
-msg
-endmsg
 x 18
 y 14
 end
@@ -14727,8 +13668,6 @@ x 18
 y 15
 end
 arch blocked
-msg
-endmsg
 x 18
 y 15
 end
@@ -14785,8 +13724,6 @@ x 18
 y 22
 end
 arch blocked
-msg
-endmsg
 x 18
 y 22
 end
@@ -15437,8 +14374,6 @@ x 18
 y 116
 end
 arch blocked
-msg
-endmsg
 x 18
 y 116
 end
@@ -15447,8 +14382,6 @@ x 18
 y 117
 end
 arch blocked
-msg
-endmsg
 x 18
 y 117
 end
@@ -15456,8 +14389,6 @@ arch marble
 x 19
 end
 arch blocked
-msg
-endmsg
 x 19
 end
 arch marble
@@ -15465,8 +14396,6 @@ x 19
 y 1
 end
 arch blocked
-msg
-endmsg
 x 19
 y 1
 end
@@ -15475,8 +14404,6 @@ x 19
 y 2
 end
 arch blocked
-msg
-endmsg
 x 19
 y 2
 end
@@ -15485,8 +14412,6 @@ x 19
 y 3
 end
 arch blocked
-msg
-endmsg
 x 19
 y 3
 end
@@ -15495,8 +14420,6 @@ x 19
 y 4
 end
 arch blocked
-msg
-endmsg
 x 19
 y 4
 end
@@ -15505,8 +14428,6 @@ x 19
 y 5
 end
 arch blocked
-msg
-endmsg
 x 19
 y 5
 end
@@ -15515,8 +14436,6 @@ x 19
 y 6
 end
 arch blocked
-msg
-endmsg
 x 19
 y 6
 end
@@ -15525,8 +14444,6 @@ x 19
 y 7
 end
 arch blocked
-msg
-endmsg
 x 19
 y 7
 end
@@ -15535,8 +14452,6 @@ x 19
 y 8
 end
 arch blocked
-msg
-endmsg
 x 19
 y 8
 end
@@ -15545,8 +14460,6 @@ x 19
 y 9
 end
 arch blocked
-msg
-endmsg
 x 19
 y 9
 end
@@ -15555,8 +14468,6 @@ x 19
 y 10
 end
 arch blocked
-msg
-endmsg
 x 19
 y 10
 end
@@ -15565,8 +14476,6 @@ x 19
 y 11
 end
 arch blocked
-msg
-endmsg
 x 19
 y 11
 end
@@ -15575,8 +14484,6 @@ x 19
 y 12
 end
 arch blocked
-msg
-endmsg
 x 19
 y 12
 end
@@ -15585,8 +14492,6 @@ x 19
 y 13
 end
 arch blocked
-msg
-endmsg
 x 19
 y 13
 end
@@ -15595,8 +14500,6 @@ x 19
 y 14
 end
 arch blocked
-msg
-endmsg
 x 19
 y 14
 end
@@ -15605,8 +14508,6 @@ x 19
 y 15
 end
 arch blocked
-msg
-endmsg
 x 19
 y 15
 end
@@ -15655,8 +14556,6 @@ x 19
 y 22
 end
 arch blocked
-msg
-endmsg
 x 19
 y 22
 end
@@ -16265,8 +15164,6 @@ x 19
 y 111
 end
 arch blocked
-msg
-endmsg
 x 19
 y 111
 end
@@ -16275,8 +15172,6 @@ x 19
 y 112
 end
 arch blocked
-msg
-endmsg
 x 19
 y 112
 end
@@ -16285,8 +15180,6 @@ x 19
 y 113
 end
 arch blocked
-msg
-endmsg
 x 19
 y 113
 end
@@ -16295,8 +15188,6 @@ x 19
 y 114
 end
 arch blocked
-msg
-endmsg
 x 19
 y 114
 end
@@ -16305,8 +15196,6 @@ x 19
 y 115
 end
 arch blocked
-msg
-endmsg
 x 19
 y 115
 end
@@ -16315,8 +15204,6 @@ x 19
 y 116
 end
 arch blocked
-msg
-endmsg
 x 19
 y 116
 end
@@ -16325,8 +15212,6 @@ x 19
 y 117
 end
 arch blocked
-msg
-endmsg
 x 19
 y 117
 end
@@ -16334,8 +15219,6 @@ arch marble
 x 20
 end
 arch blocked
-msg
-endmsg
 x 20
 end
 arch marble
@@ -16343,8 +15226,6 @@ x 20
 y 1
 end
 arch blocked
-msg
-endmsg
 x 20
 y 1
 end
@@ -16353,8 +15234,6 @@ x 20
 y 2
 end
 arch blocked
-msg
-endmsg
 x 20
 y 2
 end
@@ -16363,8 +15242,6 @@ x 20
 y 3
 end
 arch blocked
-msg
-endmsg
 x 20
 y 3
 end
@@ -16373,8 +15250,6 @@ x 20
 y 4
 end
 arch blocked
-msg
-endmsg
 x 20
 y 4
 end
@@ -16383,8 +15258,6 @@ x 20
 y 5
 end
 arch blocked
-msg
-endmsg
 x 20
 y 5
 end
@@ -16393,8 +15266,6 @@ x 20
 y 6
 end
 arch blocked
-msg
-endmsg
 x 20
 y 6
 end
@@ -16403,8 +15274,6 @@ x 20
 y 7
 end
 arch blocked
-msg
-endmsg
 x 20
 y 7
 end
@@ -16413,8 +15282,6 @@ x 20
 y 8
 end
 arch blocked
-msg
-endmsg
 x 20
 y 8
 end
@@ -16423,8 +15290,6 @@ x 20
 y 9
 end
 arch blocked
-msg
-endmsg
 x 20
 y 9
 end
@@ -16433,8 +15298,6 @@ x 20
 y 10
 end
 arch blocked
-msg
-endmsg
 x 20
 y 10
 end
@@ -16443,8 +15306,6 @@ x 20
 y 11
 end
 arch blocked
-msg
-endmsg
 x 20
 y 11
 end
@@ -16453,8 +15314,6 @@ x 20
 y 12
 end
 arch blocked
-msg
-endmsg
 x 20
 y 12
 end
@@ -16463,8 +15322,6 @@ x 20
 y 13
 end
 arch blocked
-msg
-endmsg
 x 20
 y 13
 end
@@ -16473,8 +15330,6 @@ x 20
 y 14
 end
 arch blocked
-msg
-endmsg
 x 20
 y 14
 end
@@ -16483,8 +15338,6 @@ x 20
 y 15
 end
 arch blocked
-msg
-endmsg
 x 20
 y 15
 end
@@ -17293,8 +16146,6 @@ x 20
 y 113
 end
 arch blocked
-msg
-endmsg
 x 20
 y 113
 end
@@ -17303,8 +16154,6 @@ x 20
 y 114
 end
 arch blocked
-msg
-endmsg
 x 20
 y 114
 end
@@ -17313,8 +16162,6 @@ x 20
 y 115
 end
 arch blocked
-msg
-endmsg
 x 20
 y 115
 end
@@ -17323,8 +16170,6 @@ x 20
 y 116
 end
 arch blocked
-msg
-endmsg
 x 20
 y 116
 end
@@ -17333,8 +16178,6 @@ x 20
 y 117
 end
 arch blocked
-msg
-endmsg
 x 20
 y 117
 end
@@ -17342,8 +16185,6 @@ arch marble
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 end
 arch marble
@@ -17351,8 +16192,6 @@ x 21
 y 1
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
@@ -17361,8 +16200,6 @@ x 21
 y 2
 end
 arch blocked
-msg
-endmsg
 x 21
 y 2
 end
@@ -17371,8 +16208,6 @@ x 21
 y 3
 end
 arch blocked
-msg
-endmsg
 x 21
 y 3
 end
@@ -17381,8 +16216,6 @@ x 21
 y 4
 end
 arch blocked
-msg
-endmsg
 x 21
 y 4
 end
@@ -17391,8 +16224,6 @@ x 21
 y 5
 end
 arch blocked
-msg
-endmsg
 x 21
 y 5
 end
@@ -17401,8 +16232,6 @@ x 21
 y 6
 end
 arch blocked
-msg
-endmsg
 x 21
 y 6
 end
@@ -17411,8 +16240,6 @@ x 21
 y 7
 end
 arch blocked
-msg
-endmsg
 x 21
 y 7
 end
@@ -17421,8 +16248,6 @@ x 21
 y 8
 end
 arch blocked
-msg
-endmsg
 x 21
 y 8
 end
@@ -17431,8 +16256,6 @@ x 21
 y 9
 end
 arch blocked
-msg
-endmsg
 x 21
 y 9
 end
@@ -17441,8 +16264,6 @@ x 21
 y 10
 end
 arch blocked
-msg
-endmsg
 x 21
 y 10
 end
@@ -17451,8 +16272,6 @@ x 21
 y 11
 end
 arch blocked
-msg
-endmsg
 x 21
 y 11
 end
@@ -17461,8 +16280,6 @@ x 21
 y 12
 end
 arch blocked
-msg
-endmsg
 x 21
 y 12
 end
@@ -17471,8 +16288,6 @@ x 21
 y 13
 end
 arch blocked
-msg
-endmsg
 x 21
 y 13
 end
@@ -17481,8 +16296,6 @@ x 21
 y 14
 end
 arch blocked
-msg
-endmsg
 x 21
 y 14
 end
@@ -17491,8 +16304,6 @@ x 21
 y 15
 end
 arch blocked
-msg
-endmsg
 x 21
 y 15
 end
@@ -18092,8 +16903,6 @@ arch marble
 x 22
 end
 arch blocked
-msg
-endmsg
 x 22
 end
 arch marble
@@ -18101,8 +16910,6 @@ x 22
 y 1
 end
 arch blocked
-msg
-endmsg
 x 22
 y 1
 end
@@ -18111,8 +16918,6 @@ x 22
 y 2
 end
 arch blocked
-msg
-endmsg
 x 22
 y 2
 end
@@ -18121,8 +16926,6 @@ x 22
 y 3
 end
 arch blocked
-msg
-endmsg
 x 22
 y 3
 end
@@ -18131,8 +16934,6 @@ x 22
 y 4
 end
 arch blocked
-msg
-endmsg
 x 22
 y 4
 end
@@ -18141,8 +16942,6 @@ x 22
 y 5
 end
 arch blocked
-msg
-endmsg
 x 22
 y 5
 end
@@ -18151,8 +16950,6 @@ x 22
 y 6
 end
 arch blocked
-msg
-endmsg
 x 22
 y 6
 end
@@ -18161,8 +16958,6 @@ x 22
 y 7
 end
 arch blocked
-msg
-endmsg
 x 22
 y 7
 end
@@ -18171,8 +16966,6 @@ x 22
 y 8
 end
 arch blocked
-msg
-endmsg
 x 22
 y 8
 end
@@ -18181,8 +16974,6 @@ x 22
 y 9
 end
 arch blocked
-msg
-endmsg
 x 22
 y 9
 end
@@ -18191,8 +16982,6 @@ x 22
 y 10
 end
 arch blocked
-msg
-endmsg
 x 22
 y 10
 end
@@ -18201,8 +16990,6 @@ x 22
 y 11
 end
 arch blocked
-msg
-endmsg
 x 22
 y 11
 end
@@ -18211,8 +16998,6 @@ x 22
 y 12
 end
 arch blocked
-msg
-endmsg
 x 22
 y 12
 end
@@ -18221,8 +17006,6 @@ x 22
 y 13
 end
 arch blocked
-msg
-endmsg
 x 22
 y 13
 end
@@ -18231,8 +17014,6 @@ x 22
 y 14
 end
 arch blocked
-msg
-endmsg
 x 22
 y 14
 end
@@ -18241,8 +17022,6 @@ x 22
 y 15
 end
 arch blocked
-msg
-endmsg
 x 22
 y 15
 end
@@ -18753,8 +17532,6 @@ arch marble
 x 23
 end
 arch blocked
-msg
-endmsg
 x 23
 end
 arch marble
@@ -18762,8 +17539,6 @@ x 23
 y 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 1
 end
@@ -18772,8 +17547,6 @@ x 23
 y 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 2
 end
@@ -18782,8 +17555,6 @@ x 23
 y 3
 end
 arch blocked
-msg
-endmsg
 x 23
 y 3
 end
@@ -18792,8 +17563,6 @@ x 23
 y 4
 end
 arch blocked
-msg
-endmsg
 x 23
 y 4
 end
@@ -18802,8 +17571,6 @@ x 23
 y 5
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
@@ -18812,8 +17579,6 @@ x 23
 y 6
 end
 arch blocked
-msg
-endmsg
 x 23
 y 6
 end
@@ -18822,8 +17587,6 @@ x 23
 y 7
 end
 arch blocked
-msg
-endmsg
 x 23
 y 7
 end
@@ -18832,8 +17595,6 @@ x 23
 y 8
 end
 arch blocked
-msg
-endmsg
 x 23
 y 8
 end
@@ -18842,8 +17603,6 @@ x 23
 y 9
 end
 arch blocked
-msg
-endmsg
 x 23
 y 9
 end
@@ -18852,8 +17611,6 @@ x 23
 y 10
 end
 arch blocked
-msg
-endmsg
 x 23
 y 10
 end
@@ -18862,8 +17619,6 @@ x 23
 y 11
 end
 arch blocked
-msg
-endmsg
 x 23
 y 11
 end
@@ -18872,8 +17627,6 @@ x 23
 y 12
 end
 arch blocked
-msg
-endmsg
 x 23
 y 12
 end
@@ -18882,8 +17635,6 @@ x 23
 y 13
 end
 arch blocked
-msg
-endmsg
 x 23
 y 13
 end
@@ -18892,8 +17643,6 @@ x 23
 y 14
 end
 arch blocked
-msg
-endmsg
 x 23
 y 14
 end
@@ -18902,8 +17651,6 @@ x 23
 y 15
 end
 arch blocked
-msg
-endmsg
 x 23
 y 15
 end
@@ -18912,8 +17659,6 @@ x 23
 y 16
 end
 arch blocked
-msg
-endmsg
 x 23
 y 16
 end
@@ -19418,8 +18163,6 @@ x 23
 y 116
 end
 arch blocked
-msg
-endmsg
 x 23
 y 116
 end
@@ -19428,8 +18171,6 @@ x 23
 y 117
 end
 arch blocked
-msg
-endmsg
 x 23
 y 117
 end
@@ -19437,8 +18178,6 @@ arch marble
 x 24
 end
 arch blocked
-msg
-endmsg
 x 24
 end
 arch marble
@@ -19446,8 +18185,6 @@ x 24
 y 1
 end
 arch blocked
-msg
-endmsg
 x 24
 y 1
 end
@@ -19456,8 +18193,6 @@ x 24
 y 2
 end
 arch blocked
-msg
-endmsg
 x 24
 y 2
 end
@@ -19466,8 +18201,6 @@ x 24
 y 3
 end
 arch blocked
-msg
-endmsg
 x 24
 y 3
 end
@@ -19476,8 +18209,6 @@ x 24
 y 4
 end
 arch blocked
-msg
-endmsg
 x 24
 y 4
 end
@@ -19486,8 +18217,6 @@ x 24
 y 5
 end
 arch blocked
-msg
-endmsg
 x 24
 y 5
 end
@@ -19496,8 +18225,6 @@ x 24
 y 6
 end
 arch blocked
-msg
-endmsg
 x 24
 y 6
 end
@@ -19506,8 +18233,6 @@ x 24
 y 7
 end
 arch blocked
-msg
-endmsg
 x 24
 y 7
 end
@@ -19516,8 +18241,6 @@ x 24
 y 8
 end
 arch blocked
-msg
-endmsg
 x 24
 y 8
 end
@@ -19526,8 +18249,6 @@ x 24
 y 9
 end
 arch blocked
-msg
-endmsg
 x 24
 y 9
 end
@@ -19536,8 +18257,6 @@ x 24
 y 10
 end
 arch blocked
-msg
-endmsg
 x 24
 y 10
 end
@@ -19546,8 +18265,6 @@ x 24
 y 11
 end
 arch blocked
-msg
-endmsg
 x 24
 y 11
 end
@@ -19556,8 +18273,6 @@ x 24
 y 12
 end
 arch blocked
-msg
-endmsg
 x 24
 y 12
 end
@@ -19566,8 +18281,6 @@ x 24
 y 13
 end
 arch blocked
-msg
-endmsg
 x 24
 y 13
 end
@@ -19576,8 +18289,6 @@ x 24
 y 14
 end
 arch blocked
-msg
-endmsg
 x 24
 y 14
 end
@@ -19586,8 +18297,6 @@ x 24
 y 15
 end
 arch blocked
-msg
-endmsg
 x 24
 y 15
 end
@@ -19596,8 +18305,6 @@ x 24
 y 16
 end
 arch blocked
-msg
-endmsg
 x 24
 y 16
 end
@@ -19606,8 +18313,6 @@ x 24
 y 17
 end
 arch blocked
-msg
-endmsg
 x 24
 y 17
 end
@@ -19616,8 +18321,6 @@ x 24
 y 18
 end
 arch blocked
-msg
-endmsg
 x 24
 y 18
 end
@@ -20078,8 +18781,6 @@ x 24
 y 112
 end
 arch blocked
-msg
-endmsg
 x 24
 y 112
 end
@@ -20088,8 +18789,6 @@ x 24
 y 113
 end
 arch blocked
-msg
-endmsg
 x 24
 y 113
 end
@@ -20098,8 +18797,6 @@ x 24
 y 114
 end
 arch blocked
-msg
-endmsg
 x 24
 y 114
 end
@@ -20108,8 +18805,6 @@ x 24
 y 115
 end
 arch blocked
-msg
-endmsg
 x 24
 y 115
 end
@@ -20118,8 +18813,6 @@ x 24
 y 116
 end
 arch blocked
-msg
-endmsg
 x 24
 y 116
 end
@@ -20128,8 +18821,6 @@ x 24
 y 117
 end
 arch blocked
-msg
-endmsg
 x 24
 y 117
 end
@@ -20137,8 +18828,6 @@ arch marble
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch marble
@@ -20146,8 +18835,6 @@ x 25
 y 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
@@ -20156,8 +18843,6 @@ x 25
 y 2
 end
 arch blocked
-msg
-endmsg
 x 25
 y 2
 end
@@ -20166,8 +18851,6 @@ x 25
 y 3
 end
 arch blocked
-msg
-endmsg
 x 25
 y 3
 end
@@ -20176,8 +18859,6 @@ x 25
 y 4
 end
 arch blocked
-msg
-endmsg
 x 25
 y 4
 end
@@ -20186,8 +18867,6 @@ x 25
 y 5
 end
 arch blocked
-msg
-endmsg
 x 25
 y 5
 end
@@ -20196,8 +18875,6 @@ x 25
 y 6
 end
 arch blocked
-msg
-endmsg
 x 25
 y 6
 end
@@ -20206,8 +18883,6 @@ x 25
 y 7
 end
 arch blocked
-msg
-endmsg
 x 25
 y 7
 end
@@ -20216,8 +18891,6 @@ x 25
 y 8
 end
 arch blocked
-msg
-endmsg
 x 25
 y 8
 end
@@ -20226,8 +18899,6 @@ x 25
 y 9
 end
 arch blocked
-msg
-endmsg
 x 25
 y 9
 end
@@ -20236,8 +18907,6 @@ x 25
 y 10
 end
 arch blocked
-msg
-endmsg
 x 25
 y 10
 end
@@ -20246,8 +18915,6 @@ x 25
 y 11
 end
 arch blocked
-msg
-endmsg
 x 25
 y 11
 end
@@ -20256,8 +18923,6 @@ x 25
 y 12
 end
 arch blocked
-msg
-endmsg
 x 25
 y 12
 end
@@ -20266,8 +18931,6 @@ x 25
 y 13
 end
 arch blocked
-msg
-endmsg
 x 25
 y 13
 end
@@ -20276,8 +18939,6 @@ x 25
 y 14
 end
 arch blocked
-msg
-endmsg
 x 25
 y 14
 end
@@ -20286,8 +18947,6 @@ x 25
 y 15
 end
 arch blocked
-msg
-endmsg
 x 25
 y 15
 end
@@ -20296,8 +18955,6 @@ x 25
 y 16
 end
 arch blocked
-msg
-endmsg
 x 25
 y 16
 end
@@ -20770,8 +19427,6 @@ x 25
 y 113
 end
 arch blocked
-msg
-endmsg
 x 25
 y 113
 end
@@ -20780,8 +19435,6 @@ x 25
 y 114
 end
 arch blocked
-msg
-endmsg
 x 25
 y 114
 end
@@ -20790,8 +19443,6 @@ x 25
 y 115
 end
 arch blocked
-msg
-endmsg
 x 25
 y 115
 end
@@ -20800,8 +19451,6 @@ x 25
 y 116
 end
 arch blocked
-msg
-endmsg
 x 25
 y 116
 end
@@ -20810,8 +19459,6 @@ x 25
 y 117
 end
 arch blocked
-msg
-endmsg
 x 25
 y 117
 end
@@ -20819,8 +19466,6 @@ arch marble
 x 26
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch marble
@@ -20828,8 +19473,6 @@ x 26
 y 1
 end
 arch blocked
-msg
-endmsg
 x 26
 y 1
 end
@@ -20838,8 +19481,6 @@ x 26
 y 2
 end
 arch blocked
-msg
-endmsg
 x 26
 y 2
 end
@@ -20848,8 +19489,6 @@ x 26
 y 3
 end
 arch blocked
-msg
-endmsg
 x 26
 y 3
 end
@@ -20858,8 +19497,6 @@ x 26
 y 4
 end
 arch blocked
-msg
-endmsg
 x 26
 y 4
 end
@@ -20868,8 +19505,6 @@ x 26
 y 5
 end
 arch blocked
-msg
-endmsg
 x 26
 y 5
 end
@@ -20878,8 +19513,6 @@ x 26
 y 6
 end
 arch blocked
-msg
-endmsg
 x 26
 y 6
 end
@@ -20888,8 +19521,6 @@ x 26
 y 7
 end
 arch blocked
-msg
-endmsg
 x 26
 y 7
 end
@@ -20898,8 +19529,6 @@ x 26
 y 8
 end
 arch blocked
-msg
-endmsg
 x 26
 y 8
 end
@@ -20908,8 +19537,6 @@ x 26
 y 9
 end
 arch blocked
-msg
-endmsg
 x 26
 y 9
 end
@@ -20918,8 +19545,6 @@ x 26
 y 10
 end
 arch blocked
-msg
-endmsg
 x 26
 y 10
 end
@@ -20928,8 +19553,6 @@ x 26
 y 11
 end
 arch blocked
-msg
-endmsg
 x 26
 y 11
 end
@@ -20938,8 +19561,6 @@ x 26
 y 12
 end
 arch blocked
-msg
-endmsg
 x 26
 y 12
 end
@@ -20948,8 +19569,6 @@ x 26
 y 13
 end
 arch blocked
-msg
-endmsg
 x 26
 y 13
 end
@@ -20958,8 +19577,6 @@ x 26
 y 14
 end
 arch blocked
-msg
-endmsg
 x 26
 y 14
 end
@@ -20968,8 +19585,6 @@ x 26
 y 15
 end
 arch blocked
-msg
-endmsg
 x 26
 y 15
 end
@@ -21481,8 +20096,6 @@ arch marble
 x 27
 end
 arch blocked
-msg
-endmsg
 x 27
 end
 arch marble
@@ -21490,8 +20103,6 @@ x 27
 y 1
 end
 arch blocked
-msg
-endmsg
 x 27
 y 1
 end
@@ -21500,8 +20111,6 @@ x 27
 y 2
 end
 arch blocked
-msg
-endmsg
 x 27
 y 2
 end
@@ -21510,8 +20119,6 @@ x 27
 y 3
 end
 arch blocked
-msg
-endmsg
 x 27
 y 3
 end
@@ -21520,8 +20127,6 @@ x 27
 y 4
 end
 arch blocked
-msg
-endmsg
 x 27
 y 4
 end
@@ -21530,8 +20135,6 @@ x 27
 y 5
 end
 arch blocked
-msg
-endmsg
 x 27
 y 5
 end
@@ -21540,8 +20143,6 @@ x 27
 y 6
 end
 arch blocked
-msg
-endmsg
 x 27
 y 6
 end
@@ -21550,8 +20151,6 @@ x 27
 y 7
 end
 arch blocked
-msg
-endmsg
 x 27
 y 7
 end
@@ -21560,8 +20159,6 @@ x 27
 y 8
 end
 arch blocked
-msg
-endmsg
 x 27
 y 8
 end
@@ -21570,8 +20167,6 @@ x 27
 y 9
 end
 arch blocked
-msg
-endmsg
 x 27
 y 9
 end
@@ -21580,8 +20175,6 @@ x 27
 y 10
 end
 arch blocked
-msg
-endmsg
 x 27
 y 10
 end
@@ -21590,8 +20183,6 @@ x 27
 y 11
 end
 arch blocked
-msg
-endmsg
 x 27
 y 11
 end
@@ -21600,8 +20191,6 @@ x 27
 y 12
 end
 arch blocked
-msg
-endmsg
 x 27
 y 12
 end
@@ -21610,8 +20199,6 @@ x 27
 y 13
 end
 arch blocked
-msg
-endmsg
 x 27
 y 13
 end
@@ -21620,8 +20207,6 @@ x 27
 y 14
 end
 arch blocked
-msg
-endmsg
 x 27
 y 14
 end
@@ -21630,8 +20215,6 @@ x 27
 y 15
 end
 arch blocked
-msg
-endmsg
 x 27
 y 15
 end
@@ -22131,8 +20714,6 @@ arch marble
 x 28
 end
 arch blocked
-msg
-endmsg
 x 28
 end
 arch marble
@@ -22140,8 +20721,6 @@ x 28
 y 1
 end
 arch blocked
-msg
-endmsg
 x 28
 y 1
 end
@@ -22150,8 +20729,6 @@ x 28
 y 2
 end
 arch blocked
-msg
-endmsg
 x 28
 y 2
 end
@@ -22160,8 +20737,6 @@ x 28
 y 3
 end
 arch blocked
-msg
-endmsg
 x 28
 y 3
 end
@@ -22170,8 +20745,6 @@ x 28
 y 4
 end
 arch blocked
-msg
-endmsg
 x 28
 y 4
 end
@@ -22180,8 +20753,6 @@ x 28
 y 5
 end
 arch blocked
-msg
-endmsg
 x 28
 y 5
 end
@@ -22190,8 +20761,6 @@ x 28
 y 6
 end
 arch blocked
-msg
-endmsg
 x 28
 y 6
 end
@@ -22200,8 +20769,6 @@ x 28
 y 7
 end
 arch blocked
-msg
-endmsg
 x 28
 y 7
 end
@@ -22210,8 +20777,6 @@ x 28
 y 8
 end
 arch blocked
-msg
-endmsg
 x 28
 y 8
 end
@@ -22220,8 +20785,6 @@ x 28
 y 9
 end
 arch blocked
-msg
-endmsg
 x 28
 y 9
 end
@@ -22230,8 +20793,6 @@ x 28
 y 10
 end
 arch blocked
-msg
-endmsg
 x 28
 y 10
 end
@@ -22240,8 +20801,6 @@ x 28
 y 11
 end
 arch blocked
-msg
-endmsg
 x 28
 y 11
 end
@@ -22250,8 +20809,6 @@ x 28
 y 12
 end
 arch blocked
-msg
-endmsg
 x 28
 y 12
 end
@@ -22260,8 +20817,6 @@ x 28
 y 13
 end
 arch blocked
-msg
-endmsg
 x 28
 y 13
 end
@@ -22270,8 +20825,6 @@ x 28
 y 14
 end
 arch blocked
-msg
-endmsg
 x 28
 y 14
 end
@@ -22280,8 +20833,6 @@ x 28
 y 15
 end
 arch blocked
-msg
-endmsg
 x 28
 y 15
 end
@@ -22290,8 +20841,6 @@ x 28
 y 16
 end
 arch blocked
-msg
-endmsg
 x 28
 y 16
 end
@@ -22820,8 +21369,6 @@ x 28
 y 114
 end
 arch blocked
-msg
-endmsg
 x 28
 y 114
 end
@@ -22830,8 +21377,6 @@ x 28
 y 115
 end
 arch blocked
-msg
-endmsg
 x 28
 y 115
 end
@@ -22840,8 +21385,6 @@ x 28
 y 116
 end
 arch blocked
-msg
-endmsg
 x 28
 y 116
 end
@@ -22850,8 +21393,6 @@ x 28
 y 117
 end
 arch blocked
-msg
-endmsg
 x 28
 y 117
 end
@@ -22859,8 +21400,6 @@ arch marble
 x 29
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch marble
@@ -22868,8 +21407,6 @@ x 29
 y 1
 end
 arch blocked
-msg
-endmsg
 x 29
 y 1
 end
@@ -22878,8 +21415,6 @@ x 29
 y 2
 end
 arch blocked
-msg
-endmsg
 x 29
 y 2
 end
@@ -22888,8 +21423,6 @@ x 29
 y 3
 end
 arch blocked
-msg
-endmsg
 x 29
 y 3
 end
@@ -22898,8 +21431,6 @@ x 29
 y 4
 end
 arch blocked
-msg
-endmsg
 x 29
 y 4
 end
@@ -22908,8 +21439,6 @@ x 29
 y 5
 end
 arch blocked
-msg
-endmsg
 x 29
 y 5
 end
@@ -22918,8 +21447,6 @@ x 29
 y 6
 end
 arch blocked
-msg
-endmsg
 x 29
 y 6
 end
@@ -22928,8 +21455,6 @@ x 29
 y 7
 end
 arch blocked
-msg
-endmsg
 x 29
 y 7
 end
@@ -22938,8 +21463,6 @@ x 29
 y 8
 end
 arch blocked
-msg
-endmsg
 x 29
 y 8
 end
@@ -22948,8 +21471,6 @@ x 29
 y 9
 end
 arch blocked
-msg
-endmsg
 x 29
 y 9
 end
@@ -22958,8 +21479,6 @@ x 29
 y 10
 end
 arch blocked
-msg
-endmsg
 x 29
 y 10
 end
@@ -22968,8 +21487,6 @@ x 29
 y 11
 end
 arch blocked
-msg
-endmsg
 x 29
 y 11
 end
@@ -22978,8 +21495,6 @@ x 29
 y 12
 end
 arch blocked
-msg
-endmsg
 x 29
 y 12
 end
@@ -22988,8 +21503,6 @@ x 29
 y 13
 end
 arch blocked
-msg
-endmsg
 x 29
 y 13
 end
@@ -22998,8 +21511,6 @@ x 29
 y 14
 end
 arch blocked
-msg
-endmsg
 x 29
 y 14
 end
@@ -23008,8 +21519,6 @@ x 29
 y 15
 end
 arch blocked
-msg
-endmsg
 x 29
 y 15
 end
@@ -23018,8 +21527,6 @@ x 29
 y 16
 end
 arch blocked
-msg
-endmsg
 x 29
 y 16
 end
@@ -23028,8 +21535,6 @@ x 29
 y 17
 end
 arch blocked
-msg
-endmsg
 x 29
 y 17
 end
@@ -23094,8 +21599,6 @@ x 29
 y 25
 end
 arch blocked
-msg
-endmsg
 x 29
 y 25
 end
@@ -23104,8 +21607,6 @@ x 29
 y 26
 end
 arch blocked
-msg
-endmsg
 x 29
 y 26
 end
@@ -23114,8 +21615,6 @@ x 29
 y 27
 end
 arch blocked
-msg
-endmsg
 x 29
 y 27
 end
@@ -23580,8 +22079,6 @@ x 29
 y 110
 end
 arch blocked
-msg
-endmsg
 x 29
 y 110
 end
@@ -23590,8 +22087,6 @@ x 29
 y 111
 end
 arch blocked
-msg
-endmsg
 x 29
 y 111
 end
@@ -23600,8 +22095,6 @@ x 29
 y 112
 end
 arch blocked
-msg
-endmsg
 x 29
 y 112
 end
@@ -23610,8 +22103,6 @@ x 29
 y 113
 end
 arch blocked
-msg
-endmsg
 x 29
 y 113
 end
@@ -23620,8 +22111,6 @@ x 29
 y 114
 end
 arch blocked
-msg
-endmsg
 x 29
 y 114
 end
@@ -23630,8 +22119,6 @@ x 29
 y 115
 end
 arch blocked
-msg
-endmsg
 x 29
 y 115
 end
@@ -23640,8 +22127,6 @@ x 29
 y 116
 end
 arch blocked
-msg
-endmsg
 x 29
 y 116
 end
@@ -23650,8 +22135,6 @@ x 29
 y 117
 end
 arch blocked
-msg
-endmsg
 x 29
 y 117
 end
@@ -23659,8 +22142,6 @@ arch marble
 x 30
 end
 arch blocked
-msg
-endmsg
 x 30
 end
 arch marble
@@ -23668,8 +22149,6 @@ x 30
 y 1
 end
 arch blocked
-msg
-endmsg
 x 30
 y 1
 end
@@ -23678,8 +22157,6 @@ x 30
 y 2
 end
 arch blocked
-msg
-endmsg
 x 30
 y 2
 end
@@ -23688,8 +22165,6 @@ x 30
 y 3
 end
 arch blocked
-msg
-endmsg
 x 30
 y 3
 end
@@ -23698,8 +22173,6 @@ x 30
 y 4
 end
 arch blocked
-msg
-endmsg
 x 30
 y 4
 end
@@ -23708,8 +22181,6 @@ x 30
 y 5
 end
 arch blocked
-msg
-endmsg
 x 30
 y 5
 end
@@ -23718,8 +22189,6 @@ x 30
 y 6
 end
 arch blocked
-msg
-endmsg
 x 30
 y 6
 end
@@ -23728,8 +22197,6 @@ x 30
 y 7
 end
 arch blocked
-msg
-endmsg
 x 30
 y 7
 end
@@ -23738,8 +22205,6 @@ x 30
 y 8
 end
 arch blocked
-msg
-endmsg
 x 30
 y 8
 end
@@ -23748,8 +22213,6 @@ x 30
 y 9
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
@@ -23758,8 +22221,6 @@ x 30
 y 10
 end
 arch blocked
-msg
-endmsg
 x 30
 y 10
 end
@@ -23768,8 +22229,6 @@ x 30
 y 11
 end
 arch blocked
-msg
-endmsg
 x 30
 y 11
 end
@@ -23778,8 +22237,6 @@ x 30
 y 12
 end
 arch blocked
-msg
-endmsg
 x 30
 y 12
 end
@@ -23788,8 +22245,6 @@ x 30
 y 13
 end
 arch blocked
-msg
-endmsg
 x 30
 y 13
 end
@@ -23798,8 +22253,6 @@ x 30
 y 14
 end
 arch blocked
-msg
-endmsg
 x 30
 y 14
 end
@@ -23808,8 +22261,6 @@ x 30
 y 15
 end
 arch blocked
-msg
-endmsg
 x 30
 y 15
 end
@@ -23818,8 +22269,6 @@ x 30
 y 16
 end
 arch blocked
-msg
-endmsg
 x 30
 y 16
 end
@@ -23828,8 +22277,6 @@ x 30
 y 17
 end
 arch blocked
-msg
-endmsg
 x 30
 y 17
 end
@@ -23838,8 +22285,6 @@ x 30
 y 18
 end
 arch blocked
-msg
-endmsg
 x 30
 y 18
 end
@@ -23848,8 +22293,6 @@ x 30
 y 19
 end
 arch blocked
-msg
-endmsg
 x 30
 y 19
 end
@@ -23858,8 +22301,6 @@ x 30
 y 20
 end
 arch blocked
-msg
-endmsg
 x 30
 y 20
 end
@@ -23892,8 +22333,6 @@ x 30
 y 24
 end
 arch blocked
-msg
-endmsg
 x 30
 y 24
 end
@@ -23902,8 +22341,6 @@ x 30
 y 25
 end
 arch blocked
-msg
-endmsg
 x 30
 y 25
 end
@@ -23912,8 +22349,6 @@ x 30
 y 26
 end
 arch blocked
-msg
-endmsg
 x 30
 y 26
 end
@@ -23922,8 +22357,6 @@ x 30
 y 27
 end
 arch blocked
-msg
-endmsg
 x 30
 y 27
 end
@@ -23932,8 +22365,6 @@ x 30
 y 28
 end
 arch blocked
-msg
-endmsg
 x 30
 y 28
 end
@@ -23942,8 +22373,6 @@ x 30
 y 29
 end
 arch blocked
-msg
-endmsg
 x 30
 y 29
 end
@@ -24060,8 +22489,6 @@ x 30
 y 46
 end
 arch blocked
-msg
-endmsg
 x 30
 y 46
 end
@@ -24070,8 +22497,6 @@ x 30
 y 47
 end
 arch blocked
-msg
-endmsg
 x 30
 y 47
 end
@@ -24080,8 +22505,6 @@ x 30
 y 48
 end
 arch blocked
-msg
-endmsg
 x 30
 y 48
 end
@@ -24090,8 +22513,6 @@ x 30
 y 49
 end
 arch blocked
-msg
-endmsg
 x 30
 y 49
 end
@@ -24100,8 +22521,6 @@ x 30
 y 50
 end
 arch blocked
-msg
-endmsg
 x 30
 y 50
 end
@@ -24230,8 +22649,6 @@ x 30
 y 68
 end
 arch blocked
-msg
-endmsg
 x 30
 y 68
 end
@@ -24244,8 +22661,6 @@ x 30
 y 69
 end
 arch blocked
-msg
-endmsg
 x 30
 y 69
 end
@@ -24258,8 +22673,6 @@ x 30
 y 70
 end
 arch blocked
-msg
-endmsg
 x 30
 y 70
 end
@@ -24268,8 +22681,6 @@ x 30
 y 71
 end
 arch blocked
-msg
-endmsg
 x 30
 y 71
 end
@@ -24305,8 +22716,6 @@ x 30
 y 75
 end
 arch blocked
-msg
-endmsg
 x 30
 y 75
 end
@@ -24315,8 +22724,6 @@ x 30
 y 76
 end
 arch blocked
-msg
-endmsg
 x 30
 y 76
 end
@@ -24513,8 +22920,6 @@ x 30
 y 107
 end
 arch blocked
-msg
-endmsg
 x 30
 y 107
 end
@@ -24523,8 +22928,6 @@ x 30
 y 108
 end
 arch blocked
-msg
-endmsg
 x 30
 y 108
 end
@@ -24533,8 +22936,6 @@ x 30
 y 109
 end
 arch blocked
-msg
-endmsg
 x 30
 y 109
 end
@@ -24543,8 +22944,6 @@ x 30
 y 110
 end
 arch blocked
-msg
-endmsg
 x 30
 y 110
 end
@@ -24553,8 +22952,6 @@ x 30
 y 111
 end
 arch blocked
-msg
-endmsg
 x 30
 y 111
 end
@@ -24563,8 +22960,6 @@ x 30
 y 112
 end
 arch blocked
-msg
-endmsg
 x 30
 y 112
 end
@@ -24573,8 +22968,6 @@ x 30
 y 113
 end
 arch blocked
-msg
-endmsg
 x 30
 y 113
 end
@@ -24583,8 +22976,6 @@ x 30
 y 114
 end
 arch blocked
-msg
-endmsg
 x 30
 y 114
 end
@@ -24593,8 +22984,6 @@ x 30
 y 115
 end
 arch blocked
-msg
-endmsg
 x 30
 y 115
 end
@@ -24603,8 +22992,6 @@ x 30
 y 116
 end
 arch blocked
-msg
-endmsg
 x 30
 y 116
 end
@@ -24613,8 +23000,6 @@ x 30
 y 117
 end
 arch blocked
-msg
-endmsg
 x 30
 y 117
 end
@@ -24622,8 +23007,6 @@ arch marble
 x 31
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch marble
@@ -24631,8 +23014,6 @@ x 31
 y 1
 end
 arch blocked
-msg
-endmsg
 x 31
 y 1
 end
@@ -24641,8 +23022,6 @@ x 31
 y 2
 end
 arch blocked
-msg
-endmsg
 x 31
 y 2
 end
@@ -24651,8 +23030,6 @@ x 31
 y 3
 end
 arch blocked
-msg
-endmsg
 x 31
 y 3
 end
@@ -24661,8 +23038,6 @@ x 31
 y 4
 end
 arch blocked
-msg
-endmsg
 x 31
 y 4
 end
@@ -24671,8 +23046,6 @@ x 31
 y 5
 end
 arch blocked
-msg
-endmsg
 x 31
 y 5
 end
@@ -24681,8 +23054,6 @@ x 31
 y 6
 end
 arch blocked
-msg
-endmsg
 x 31
 y 6
 end
@@ -24691,8 +23062,6 @@ x 31
 y 7
 end
 arch blocked
-msg
-endmsg
 x 31
 y 7
 end
@@ -24701,8 +23070,6 @@ x 31
 y 8
 end
 arch blocked
-msg
-endmsg
 x 31
 y 8
 end
@@ -24711,8 +23078,6 @@ x 31
 y 9
 end
 arch blocked
-msg
-endmsg
 x 31
 y 9
 end
@@ -24721,8 +23086,6 @@ x 31
 y 10
 end
 arch blocked
-msg
-endmsg
 x 31
 y 10
 end
@@ -24731,8 +23094,6 @@ x 31
 y 11
 end
 arch blocked
-msg
-endmsg
 x 31
 y 11
 end
@@ -24741,8 +23102,6 @@ x 31
 y 12
 end
 arch blocked
-msg
-endmsg
 x 31
 y 12
 end
@@ -24751,8 +23110,6 @@ x 31
 y 13
 end
 arch blocked
-msg
-endmsg
 x 31
 y 13
 end
@@ -24761,8 +23118,6 @@ x 31
 y 14
 end
 arch blocked
-msg
-endmsg
 x 31
 y 14
 end
@@ -24771,8 +23126,6 @@ x 31
 y 15
 end
 arch blocked
-msg
-endmsg
 x 31
 y 15
 end
@@ -24781,8 +23134,6 @@ x 31
 y 16
 end
 arch blocked
-msg
-endmsg
 x 31
 y 16
 end
@@ -24791,8 +23142,6 @@ x 31
 y 17
 end
 arch blocked
-msg
-endmsg
 x 31
 y 17
 end
@@ -24801,8 +23150,6 @@ x 31
 y 18
 end
 arch blocked
-msg
-endmsg
 x 31
 y 18
 end
@@ -24811,8 +23158,6 @@ x 31
 y 19
 end
 arch blocked
-msg
-endmsg
 x 31
 y 19
 end
@@ -24821,8 +23166,6 @@ x 31
 y 20
 end
 arch blocked
-msg
-endmsg
 x 31
 y 20
 end
@@ -24831,8 +23174,6 @@ x 31
 y 21
 end
 arch blocked
-msg
-endmsg
 x 31
 y 21
 end
@@ -24841,8 +23182,6 @@ x 31
 y 22
 end
 arch blocked
-msg
-endmsg
 x 31
 y 22
 end
@@ -24851,8 +23190,6 @@ x 31
 y 23
 end
 arch blocked
-msg
-endmsg
 x 31
 y 23
 end
@@ -24861,8 +23198,6 @@ x 31
 y 24
 end
 arch blocked
-msg
-endmsg
 x 31
 y 24
 end
@@ -24871,8 +23206,6 @@ x 31
 y 25
 end
 arch blocked
-msg
-endmsg
 x 31
 y 25
 end
@@ -24881,8 +23214,6 @@ x 31
 y 26
 end
 arch blocked
-msg
-endmsg
 x 31
 y 26
 end
@@ -24891,8 +23222,6 @@ x 31
 y 27
 end
 arch blocked
-msg
-endmsg
 x 31
 y 27
 end
@@ -24901,8 +23230,6 @@ x 31
 y 28
 end
 arch blocked
-msg
-endmsg
 x 31
 y 28
 end
@@ -24911,8 +23238,6 @@ x 31
 y 29
 end
 arch blocked
-msg
-endmsg
 x 31
 y 29
 end
@@ -24921,8 +23246,6 @@ x 31
 y 30
 end
 arch blocked
-msg
-endmsg
 x 31
 y 30
 end
@@ -24931,8 +23254,6 @@ x 31
 y 31
 end
 arch blocked
-msg
-endmsg
 x 31
 y 31
 end
@@ -24941,8 +23262,6 @@ x 31
 y 32
 end
 arch blocked
-msg
-endmsg
 x 31
 y 32
 end
@@ -24951,8 +23270,6 @@ x 31
 y 33
 end
 arch blocked
-msg
-endmsg
 x 31
 y 33
 end
@@ -25025,8 +23342,6 @@ x 31
 y 42
 end
 arch blocked
-msg
-endmsg
 x 31
 y 42
 end
@@ -25035,8 +23350,6 @@ x 31
 y 43
 end
 arch blocked
-msg
-endmsg
 x 31
 y 43
 end
@@ -25045,8 +23358,6 @@ x 31
 y 44
 end
 arch blocked
-msg
-endmsg
 x 31
 y 44
 end
@@ -25055,8 +23366,6 @@ x 31
 y 45
 end
 arch blocked
-msg
-endmsg
 x 31
 y 45
 end
@@ -25065,8 +23374,6 @@ x 31
 y 46
 end
 arch blocked
-msg
-endmsg
 x 31
 y 46
 end
@@ -25075,8 +23382,6 @@ x 31
 y 47
 end
 arch blocked
-msg
-endmsg
 x 31
 y 47
 end
@@ -25085,8 +23390,6 @@ x 31
 y 48
 end
 arch blocked
-msg
-endmsg
 x 31
 y 48
 end
@@ -25095,8 +23398,6 @@ x 31
 y 49
 end
 arch blocked
-msg
-endmsg
 x 31
 y 49
 end
@@ -25105,8 +23406,6 @@ x 31
 y 50
 end
 arch blocked
-msg
-endmsg
 x 31
 y 50
 end
@@ -25115,8 +23414,6 @@ x 31
 y 51
 end
 arch blocked
-msg
-endmsg
 x 31
 y 51
 end
@@ -25125,8 +23422,6 @@ x 31
 y 52
 end
 arch blocked
-msg
-endmsg
 x 31
 y 52
 end
@@ -25135,8 +23430,6 @@ x 31
 y 53
 end
 arch blocked
-msg
-endmsg
 x 31
 y 53
 end
@@ -25145,8 +23438,6 @@ x 31
 y 54
 end
 arch blocked
-msg
-endmsg
 x 31
 y 54
 end
@@ -25155,8 +23446,6 @@ x 31
 y 55
 end
 arch blocked
-msg
-endmsg
 x 31
 y 55
 end
@@ -25213,8 +23502,6 @@ x 31
 y 62
 end
 arch blocked
-msg
-endmsg
 x 31
 y 62
 end
@@ -25223,8 +23510,6 @@ x 31
 y 63
 end
 arch blocked
-msg
-endmsg
 x 31
 y 63
 end
@@ -25233,8 +23518,6 @@ x 31
 y 64
 end
 arch blocked
-msg
-endmsg
 x 31
 y 64
 end
@@ -25243,8 +23526,6 @@ x 31
 y 65
 end
 arch blocked
-msg
-endmsg
 x 31
 y 65
 end
@@ -25253,8 +23534,6 @@ x 31
 y 66
 end
 arch blocked
-msg
-endmsg
 x 31
 y 66
 end
@@ -25263,8 +23542,6 @@ x 31
 y 67
 end
 arch blocked
-msg
-endmsg
 x 31
 y 67
 end
@@ -25273,8 +23550,6 @@ x 31
 y 68
 end
 arch blocked
-msg
-endmsg
 x 31
 y 68
 end
@@ -25287,8 +23562,6 @@ x 31
 y 69
 end
 arch blocked
-msg
-endmsg
 x 31
 y 69
 end
@@ -25301,8 +23574,6 @@ x 31
 y 70
 end
 arch blocked
-msg
-endmsg
 x 31
 y 70
 end
@@ -25311,8 +23582,6 @@ x 31
 y 71
 end
 arch blocked
-msg
-endmsg
 x 31
 y 71
 end
@@ -25345,8 +23614,6 @@ x 31
 y 75
 end
 arch blocked
-msg
-endmsg
 x 31
 y 75
 end
@@ -25355,8 +23622,6 @@ x 31
 y 76
 end
 arch blocked
-msg
-endmsg
 x 31
 y 76
 end
@@ -25365,8 +23630,6 @@ x 31
 y 77
 end
 arch blocked
-msg
-endmsg
 x 31
 y 77
 end
@@ -25375,8 +23638,6 @@ x 31
 y 78
 end
 arch blocked
-msg
-endmsg
 x 31
 y 78
 end
@@ -25385,8 +23646,6 @@ x 31
 y 79
 end
 arch blocked
-msg
-endmsg
 x 31
 y 79
 end
@@ -25395,8 +23654,6 @@ x 31
 y 80
 end
 arch blocked
-msg
-endmsg
 x 31
 y 80
 end
@@ -25405,8 +23662,6 @@ x 31
 y 81
 end
 arch blocked
-msg
-endmsg
 x 31
 y 81
 end
@@ -25415,8 +23670,6 @@ x 31
 y 82
 end
 arch blocked
-msg
-endmsg
 x 31
 y 82
 end
@@ -25425,8 +23678,6 @@ x 31
 y 83
 end
 arch blocked
-msg
-endmsg
 x 31
 y 83
 end
@@ -25435,8 +23686,6 @@ x 31
 y 84
 end
 arch blocked
-msg
-endmsg
 x 31
 y 84
 end
@@ -25565,8 +23814,6 @@ x 31
 y 100
 end
 arch blocked
-msg
-endmsg
 x 31
 y 100
 end
@@ -25575,8 +23822,6 @@ x 31
 y 101
 end
 arch blocked
-msg
-endmsg
 x 31
 y 101
 end
@@ -25585,8 +23830,6 @@ x 31
 y 102
 end
 arch blocked
-msg
-endmsg
 x 31
 y 102
 end
@@ -25595,8 +23838,6 @@ x 31
 y 103
 end
 arch blocked
-msg
-endmsg
 x 31
 y 103
 end
@@ -25605,8 +23846,6 @@ x 31
 y 104
 end
 arch blocked
-msg
-endmsg
 x 31
 y 104
 end
@@ -25615,8 +23854,6 @@ x 31
 y 105
 end
 arch blocked
-msg
-endmsg
 x 31
 y 105
 end
@@ -25625,8 +23862,6 @@ x 31
 y 106
 end
 arch blocked
-msg
-endmsg
 x 31
 y 106
 end
@@ -25635,8 +23870,6 @@ x 31
 y 107
 end
 arch blocked
-msg
-endmsg
 x 31
 y 107
 end
@@ -25645,8 +23878,6 @@ x 31
 y 108
 end
 arch blocked
-msg
-endmsg
 x 31
 y 108
 end
@@ -25655,8 +23886,6 @@ x 31
 y 109
 end
 arch blocked
-msg
-endmsg
 x 31
 y 109
 end
@@ -25665,8 +23894,6 @@ x 31
 y 110
 end
 arch blocked
-msg
-endmsg
 x 31
 y 110
 end
@@ -25675,8 +23902,6 @@ x 31
 y 111
 end
 arch blocked
-msg
-endmsg
 x 31
 y 111
 end
@@ -25685,8 +23910,6 @@ x 31
 y 112
 end
 arch blocked
-msg
-endmsg
 x 31
 y 112
 end
@@ -25695,8 +23918,6 @@ x 31
 y 113
 end
 arch blocked
-msg
-endmsg
 x 31
 y 113
 end
@@ -25705,8 +23926,6 @@ x 31
 y 114
 end
 arch blocked
-msg
-endmsg
 x 31
 y 114
 end
@@ -25715,8 +23934,6 @@ x 31
 y 115
 end
 arch blocked
-msg
-endmsg
 x 31
 y 115
 end
@@ -25725,8 +23942,6 @@ x 31
 y 116
 end
 arch blocked
-msg
-endmsg
 x 31
 y 116
 end
@@ -25735,8 +23950,6 @@ x 31
 y 117
 end
 arch blocked
-msg
-endmsg
 x 31
 y 117
 end

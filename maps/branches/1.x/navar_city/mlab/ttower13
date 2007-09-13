@@ -1,7 +1,8 @@
 arch map
-region navar
+name <unnamed>
 reset_timeout 7200
 difficulty 1
+region navar
 width 18
 height 18
 enter_x 1
@@ -854,7 +855,7 @@ end
 arch magic_mouth
 msg
 Death upon death grew to be the
-knowledge of the tower. 
+knowledge of the tower.
 The student learned.
 The great wizard died. But he was not
 great.

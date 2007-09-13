@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name LC_inn1
+region lakecountry
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Mar 23 00:06:55 1995
 endmsg
-width 15
-height 15
 end
 arch woodfloor
 end
@@ -154,9 +154,9 @@ y 8
 end
 arch altar
 slaying platinacoin
-connected 1
 x 1
 y 8
+connected 1
 end
 arch woodfloor
 x 1
@@ -171,9 +171,9 @@ x 1
 y 9
 end
 arch longtable_1_4
-no_pass 1
 x 1
 y 9
+no_pass 1
 end
 arch woodfloor
 x 1
@@ -188,9 +188,9 @@ x 1
 y 11
 end
 arch longtable_1_4
-no_pass 1
 x 1
 y 11
+no_pass 1
 end
 arch woodfloor
 x 1
@@ -283,9 +283,9 @@ y 8
 end
 arch altar
 slaying platinacoin
-connected 1
 x 2
 y 8
+connected 1
 end
 arch woodfloor
 x 2
@@ -300,9 +300,9 @@ x 2
 y 9
 end
 arch longtable_2_1_2
-no_pass 1
 x 2
 y 9
+no_pass 1
 end
 arch woodfloor
 x 2
@@ -317,9 +317,9 @@ x 2
 y 11
 end
 arch longtable_2_1_2
-no_pass 1
 x 2
 y 11
+no_pass 1
 end
 arch woodfloor
 x 2
@@ -396,9 +396,9 @@ y 8
 end
 arch altar
 slaying platinacoin
-connected 1
 x 3
 y 8
+connected 1
 end
 arch woodfloor
 x 3
@@ -413,27 +413,27 @@ x 3
 y 9
 end
 arch longtable_3_3
-no_pass 1
 x 3
 y 9
+no_pass 1
 end
 arch woodfloor
 x 3
 y 10
 end
 arch longtable_2_1_1
-no_pass 1
 x 3
 y 10
+no_pass 1
 end
 arch woodfloor
 x 3
 y 11
 end
 arch longtable_3_1
-no_pass 1
 x 3
 y 11
+no_pass 1
 end
 arch woodfloor
 x 3
@@ -510,9 +510,9 @@ y 8
 end
 arch altar
 slaying platinacoin
-connected 1
 x 4
 y 8
+connected 1
 end
 arch woodfloor
 x 4
@@ -527,9 +527,9 @@ x 4
 y 9
 end
 arch longtable_1_3
-no_pass 1
 x 4
 y 9
+no_pass 1
 end
 arch woodfloor
 x 4
@@ -545,9 +545,9 @@ x 4
 y 11
 end
 arch longtable_1_3
-no_pass 1
 x 4
 y 11
+no_pass 1
 end
 arch woodfloor
 x 4
@@ -602,10 +602,10 @@ msg
 @match *
 "Sit down by the fire and listen.".
 endmsg
-alive 0
-no_pass 1
 x 5
 y 2
+alive 0
+no_pass 1
 end
 arch woodfloor
 x 5
@@ -647,9 +647,9 @@ x 5
 y 9
 end
 arch block_door_closed
-connected 1
 x 5
 y 9
+connected 1
 end
 arch woodfloor
 x 5
@@ -660,9 +660,9 @@ x 5
 y 11
 end
 arch block_door_closed
-connected 1
 x 5
 y 11
+connected 1
 end
 arch woodfloor
 x 5
@@ -735,24 +735,24 @@ x 6
 y 6
 end
 arch trigger_marker
+slaying LC_inn1_pass
 msg
 You may access the inn facilities for one day.
 endmsg
-slaying LC_inn1_pass
-connected 3
 food 504
 x 6
 y 6
+connected 3
 end
 arch altar
 name drop 100 gold for a room
-type 31
 slaying goldcoin
 food 100
-connected 3
-last_sp 1
 x 6
 y 6
+type 31
+last_sp 1
+connected 3
 end
 arch woodfloor
 x 6
@@ -850,9 +850,9 @@ y 4
 end
 arch check_floor
 slaying LC_inn1_pass
-connected 9
 x 7
 y 4
+connected 9
 end
 arch woodfloor
 x 7
@@ -953,9 +953,9 @@ x 8
 y 4
 end
 arch gate_closed_2
-connected 9
 x 8
 y 4
+connected 9
 end
 arch woodfloor
 x 8
@@ -1084,10 +1084,10 @@ x 9
 y 4
 end
 arch pedestal
-invisible 1
-connected 9
 x 9
 y 4
+invisible 1
+connected 9
 end
 arch woodfloor
 x 9
@@ -1258,9 +1258,9 @@ x 11
 y 4
 end
 arch door_look_2
-no_pass 0
 x 11
 y 4
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -1275,9 +1275,9 @@ x 11
 y 6
 end
 arch door_look_2
-no_pass 0
 x 11
 y 6
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -1324,9 +1324,9 @@ x 11
 y 12
 end
 arch door_look_2
-no_pass 0
 x 11
 y 12
+no_pass 0
 end
 arch woodfloor
 x 11

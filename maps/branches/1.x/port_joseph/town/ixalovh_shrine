@@ -1,15 +1,15 @@
 arch map
-region portjoseph
 name ixalovh shrine
-msg
-Creator: Avion
-Date: Nov 2003
-endmsg
+reset_timeout 3000
+region portjoseph
 width 15
 height 20
 enter_x 4
 enter_y 17
-reset_timeout 3000
+msg
+Creator: Avion
+Date: Nov 2003
+endmsg
 outdoor 1
 end
 arch pstone_1

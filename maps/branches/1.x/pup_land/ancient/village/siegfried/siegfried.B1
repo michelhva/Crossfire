@@ -1,6 +1,8 @@
 arch map
-region ancientpupland
 name siegfried
+region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -336,7 +338,7 @@ end
 arch magic_ear
 msg
 @match boGus
-Rejected. 
+Rejected.
 endmsg
 x 3
 y 10

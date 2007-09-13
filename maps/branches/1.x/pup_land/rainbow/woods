@@ -1,13 +1,13 @@
 arch map
-region pupland
 name woods
+region pupland
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 20:37:23 1996
 endmsg
-x 6
-y 6
 end
 arch invis_exit
 slaying islands

@@ -1,14 +1,14 @@
 arch map
-region lakecountry
 name hut_Galmorus
+region lakecountry
+width 21
+height 24
+enter_x 9
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Fri Mar 24 11:46:19 1995
 endmsg
-width 21
-height 24
-enter_x 9
 end
 arch grass
 end
@@ -243,18 +243,18 @@ x 2
 y 1
 end
 arch locked_door2
+slaying Thievery
 msg
 Show me your proof of guild membership.
 endmsg
-slaying Thievery
 x 2
 y 1
 end
 arch wwall_2_1_1
 name strange wall
-no_pass 0
 x 2
 y 1
+no_pass 0
 end
 arch woodfloor
 x 2
@@ -423,9 +423,9 @@ x 3
 y 2
 end
 arch booze
-nrof 6
 x 3
 y 2
+nrof 6
 end
 arch woodfloor
 x 3
@@ -444,9 +444,9 @@ x 3
 y 5
 end
 arch door_look_1
-no_pass 0
 x 3
 y 5
+no_pass 0
 end
 arch woodfloor
 x 3
@@ -547,9 +547,9 @@ x 4
 y 2
 end
 arch food
-nrof 6
 x 4
 y 2
+nrof 6
 end
 arch woodfloor
 x 4
@@ -620,12 +620,12 @@ I don't know much. Talk to Galmorus if
 you have any questions. If you don't
 mind I'd be alone.
 endmsg
-type 0
 hp 200
-monster 1
-unaggressive 1
 x 4
 y 14
+type 0
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 4
@@ -765,6 +765,13 @@ end
 arch jungle_2
 x 5
 y 18
+end
+arch unicorn
+hp 500
+x 5
+y 18
+speed 0.500000
+speed_left -23.389999
 end
 arch jungle_2
 x 5
@@ -1090,20 +1097,20 @@ x 8
 y 1
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 1
+speed 0.500000
+connected 12
 end
 arch woodfloor
 x 8
 y 2
 end
 arch block_door_closed
-speed 0.500000
-connected 12
 x 8
 y 2
+speed 0.500000
+connected 12
 end
 arch woodfloor
 x 8
@@ -1118,9 +1125,9 @@ x 8
 y 4
 end
 arch door_look_2
-no_pass 0
 x 8
 y 4
+no_pass 0
 end
 arch woodfloor
 x 8
@@ -1277,10 +1284,10 @@ x 9
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 13
 x 9
 y 3
+speed 0.500000
+connected 13
 end
 arch woodfloor
 x 9
@@ -1404,9 +1411,9 @@ name Door bell
 msg
 Ding! Dong
 endmsg
-connected 11
 x 10
 y 1
+connected 11
 end
 arch woodfloor
 x 10
@@ -1417,10 +1424,10 @@ x 10
 y 3
 end
 arch block_door_closed
-speed 0.500000
-connected 13
 x 10
 y 3
+speed 0.500000
+connected 13
 end
 arch woodfloor
 x 10
@@ -1447,18 +1454,18 @@ x 10
 y 6
 end
 arch door_look_2
-no_pass 0
 x 10
 y 6
+no_pass 0
 end
 arch woodfloor
 x 10
 y 7
 end
 arch door_look_2
-no_pass 0
 x 10
 y 7
+no_pass 0
 end
 arch woodfloor
 x 10
@@ -1587,9 +1594,9 @@ x 11
 y 4
 end
 arch door_look_2
-no_pass 0
 x 11
 y 4
+no_pass 0
 end
 arch woodfloor
 x 11
@@ -1788,9 +1795,9 @@ y 15
 end
 arch wwall_2_1_2
 name illusionary wall
-no_pass 0
 x 12
 y 15
+no_pass 0
 end
 arch woods
 x 12
@@ -1859,9 +1866,9 @@ x 13
 y 6
 end
 arch door_look_2
-no_pass 0
 x 13
 y 6
+no_pass 0
 end
 arch woodfloor
 x 13
@@ -1916,9 +1923,9 @@ x 13
 y 13
 end
 arch door_look_2
-no_pass 0
 x 13
 y 13
+no_pass 0
 end
 arch woodfloor
 x 13
@@ -2284,9 +2291,9 @@ x 16
 y 4
 end
 arch door_look_1
-no_pass 0
 x 16
 y 4
+no_pass 0
 end
 arch woodfloor
 x 16
@@ -2369,13 +2376,13 @@ What do you want to ask me?
 I am very busy. There are a few books
 in the room. You may read them quietly
 endmsg
-type 0
 hp 200
+x 16
+y 9
+type 0
 carrying 2120
 monster 1
 unaggressive 1
-x 16
-y 9
 arch eyeglasses
 end
 arch magnifier
@@ -2644,33 +2651,33 @@ x 17
 y 23
 end
 arch woods
+x 18
 no_pass 1
 no_magic 1
-x 18
 end
 arch woods
-no_pass 1
-no_magic 1
 x 18
 y 1
-end
-arch woods
 no_pass 1
 no_magic 1
+end
+arch woods
 x 18
 y 2
-end
-arch woods
 no_pass 1
 no_magic 1
+end
+arch woods
 x 18
 y 3
-end
-arch woods
 no_pass 1
 no_magic 1
+end
+arch woods
 x 18
 y 4
+no_pass 1
+no_magic 1
 end
 arch woods
 x 18
@@ -2756,25 +2763,25 @@ arch blocked
 x 19
 end
 arch button_plate
-connected 12
 x 19
 y 1
+connected 12
 end
 arch spikes_open
+x 19
+y 2
 speed 0.500000
 value 1
 connected 11
-x 19
-y 2
 end
 arch boulder
 x 19
 y 2
 end
 arch button_plate
-connected 13
 x 19
 y 3
+connected 13
 end
 arch blocked
 x 19
@@ -2928,9 +2935,9 @@ x 20
 y 1
 end
 arch button_plate
-connected 12
 x 20
 y 2
+connected 12
 end
 arch blocked
 x 20
@@ -3015,11 +3022,4 @@ end
 arch blocked
 x 20
 y 23
-end
-arch unicorn
-hp 500
-speed 0.500000
-speed_left -23.389999
-x 5
-y 18
 end

@@ -1,12 +1,13 @@
 arch map
-region pupland
 name holes
+region pupland
+width 18
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 14 18:38:17 1996
 endmsg
-x 18
 end
 arch cobblestones2
 end

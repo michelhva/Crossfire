@@ -1,13 +1,13 @@
 arch map
-region pupland
 name castle_eureca9
+region pupland
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Mar 13 23:46:33 1996
 endmsg
-x 15
-y 15
 end
 arch dungeon_floor
 end
@@ -546,12 +546,12 @@ x 5
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 5
@@ -639,7 +639,7 @@ I don't know where to find Kurte,
 Go to the two huts, located north of
 this castle. There are two persons
 inside. They must know it.
-Please say 
+Please say
  "fireflies live on a clear river"
 This is the keyword to meet Kurte...
 @match *
@@ -769,12 +769,12 @@ x 7
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 7
@@ -867,7 +867,7 @@ msg
 @match *
 I'm hungry mum..
 Lauretta says:
-Bernie, you must endure. 
+Bernie, you must endure.
 endmsg
 Con 100
 hp 18000
@@ -981,12 +981,12 @@ x 9
 y 9
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_rod 0
+can_use_wand 0
 end
 arch dungeon_floor
 x 9

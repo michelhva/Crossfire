@@ -1,13 +1,13 @@
 arch map
-region pupland
 name e_hall
+region pupland
+width 25
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 14 14:19:58 1996
 endmsg
-x 25
-y 20
 end
 arch cobblestones2
 end

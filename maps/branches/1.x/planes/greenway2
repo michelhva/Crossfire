@@ -1,13 +1,13 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
+width 50
+height 50
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
 tile_path_1 greenway5
 tile_path_2 greenway3
 tile_path_3 greenway8
@@ -1151,14 +1151,14 @@ y 44
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 5
 y 44
+level 10
 end
 arch evergreens
 x 5
@@ -1205,14 +1205,14 @@ y 5
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 6
 y 5
+level 10
 end
 arch brush
 x 6
@@ -1372,14 +1372,14 @@ y 44
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 6
 y 44
+level 10
 end
 arch evergreens
 x 6
@@ -1422,14 +1422,14 @@ y 4
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 7
 y 4
+level 10
 end
 arch brush
 x 7
@@ -1437,14 +1437,14 @@ y 5
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 7
 y 5
+level 10
 end
 arch evergreens
 x 7
@@ -2539,22 +2539,22 @@ y 26
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 12
 y 26
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -2765,22 +2765,22 @@ y 27
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 13
 y 27
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -2987,22 +2987,22 @@ y 26
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 14
 y 26
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -3014,22 +3014,22 @@ y 27
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 14
 y 27
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4585,10 +4585,10 @@ y 12
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 22
 y 13
+no_magic 1
+damned 1
 end
 arch wraith
 x 22
@@ -4596,10 +4596,10 @@ y 13
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 22
 y 14
+no_magic 1
+damned 1
 end
 arch woods
 x 22
@@ -4619,17 +4619,17 @@ y 18
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 22
 y 19
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 22
 y 20
+no_magic 1
+damned 1
 end
 arch wraith
 x 22
@@ -4808,24 +4808,24 @@ y 13
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 23
 y 14
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 23
 y 15
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 23
 y 16
+no_magic 1
+damned 1
 end
 arch darkforest
 x 23
@@ -4833,17 +4833,17 @@ y 17
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 23
 y 18
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 23
 y 19
+no_magic 1
+damned 1
 end
 arch swamp
 x 23
@@ -5034,10 +5034,10 @@ y 15
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 24
 y 16
+no_magic 1
+damned 1
 end
 arch brush
 x 24
@@ -5045,10 +5045,10 @@ y 17
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 24
 y 18
+no_magic 1
+damned 1
 end
 arch darkforest
 x 24
@@ -5453,10 +5453,10 @@ y 17
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 26
 y 18
+no_magic 1
+damned 1
 end
 arch darkforest
 x 26
@@ -5643,24 +5643,24 @@ y 14
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 27
 y 15
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 27
 y 16
+no_magic 1
+damned 1
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 27
 y 17
+no_magic 1
+damned 1
 end
 arch darkforest
 x 27
@@ -5668,10 +5668,10 @@ y 18
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 27
 y 19
+no_magic 1
+damned 1
 end
 arch deep_swamp
 x 27
@@ -5866,10 +5866,10 @@ y 16
 end
 arch blackrock
 name Waste
-no_magic 1
-damned 1
 x 28
 y 17
+no_magic 1
+damned 1
 end
 arch wraith
 x 28
@@ -9513,6 +9513,10 @@ arch brush
 x 46
 y 21
 end
+arch bear
+x 46
+y 21
+end
 arch brush
 x 46
 y 22
@@ -10225,8 +10229,4 @@ end
 arch evergreens
 x 49
 y 49
-end
-arch bear
-x 46
-y 21
 end

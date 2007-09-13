@@ -1,13 +1,13 @@
 arch map
-region ancientpupland
 name shop
+region ancientpupland
+width 26
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 21 22:41:27 1996
 endmsg
-x 26
-y 10
 end
 arch blocked
 end
@@ -406,13 +406,13 @@ name vendor
 msg
 @match *
 Welcome to my shop. I'll exchange my
-itmes to your nuggets. 
+itmes to your nuggets.
 @match job|business|money
 *sigh* Nobody is buying anything here.
 The people don't have any money. I
 used to sell my stuff in shining
 village - and now it's ruins. Those
-are bad days indeed... 
+are bad days indeed...
 endmsg
 hp 300
 maxhp 300

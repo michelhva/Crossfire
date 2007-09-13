@@ -1,6 +1,7 @@
 arch map
-x 70
-y 70
+name <unnamed>
+width 70
+height 70
 end
 arch cobblestones2
 end
@@ -13052,8 +13053,8 @@ ac 6
 x 65
 y 60
 carrying 117725
-has_ready_wand 1
 has_ready_bow 1
+has_ready_wand 1
 arch wand
 sp 16
 food 3

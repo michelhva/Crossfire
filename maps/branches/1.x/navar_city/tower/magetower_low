@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region navar
+width 26
+height 37
 msg
 Creator: 
 Email: 
 Date: Sun Oct 31 13:29:22 1993
 endmsg
-x 26
-y 37
 end
 arch pstone_3
 end
@@ -3111,6 +3112,10 @@ arch pstone_4
 x 12
 y 34
 end
+arch troll
+x 12
+y 34
+end
 arch pstone_4
 x 12
 y 35
@@ -6180,23 +6185,4 @@ end
 arch awall_2_2_4
 x 25
 y 36
-end
-arch troll
-x 12
-y 34
-end
-More
-arch troll_2
-x 13
-y 34
-end
-More
-arch troll_3
-x 12
-y 35
-end
-More
-arch troll_4
-x 13
-y 35
 end

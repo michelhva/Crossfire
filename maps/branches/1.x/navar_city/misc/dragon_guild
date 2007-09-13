@@ -1,20 +1,20 @@
 arch map
-region navar
 name dragon_guild
-msg
-Creator: CF Java Map Editor
-Date:    2/28/2002
-endmsg
+fixed_resettime 1
+region navar
 shopitems cloak:20;gem:20;scroll:20;wand:21;rod:22;horn:24;ring:26;amulet:22;treasure:16;*:0
+shopgreed 1.00000
 shopmin 1
 shopmax 500000
 shoprace dragon
-shopgreed 1.0
 width 16
 height 16
 enter_x 7
 enter_y 14
-fixed_resettime 1
+msg
+Creator: CF Java Map Editor
+Date:    2/28/2002
+endmsg
 end
 arch flagstone
 end
@@ -200,11 +200,11 @@ y 1
 end
 arch residue
 name ancient fire elemental's residue
-last_eat 2
-unpaid 1
-value 400
 x 2
 y 1
+value 400
+last_eat 2
+unpaid 1
 end
 arch shop_empty
 x 2
@@ -212,11 +212,11 @@ y 2
 end
 arch residue
 name ancient fire elemental's residue
-last_eat 2
-unpaid 1
-value 400
 x 2
 y 2
+value 400
+last_eat 2
+unpaid 1
 end
 arch shop_empty
 x 2
@@ -224,11 +224,11 @@ y 3
 end
 arch residue
 name ancient fire elemental's residue
-last_eat 2
-unpaid 1
-value 400
 x 2
 y 3
+value 400
+last_eat 2
+unpaid 1
 end
 arch shop_empty
 x 2
@@ -236,11 +236,11 @@ y 4
 end
 arch residue
 name ancient fire elemental's residue
-last_eat 2
-unpaid 1
-value 400
 x 2
 y 4
+value 400
+last_eat 2
+unpaid 1
 end
 arch shop_empty
 x 2
@@ -275,15 +275,15 @@ x 2
 y 11
 end
 arch door_look_1
-type 0
-randomitems none
 hp 0
 exp 0
-alive 0
-level 0
-no_pass 0
 x 2
 y 11
+level 0
+type 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch flagstone
 x 2
@@ -321,11 +321,11 @@ y 1
 end
 arch residue
 name ancient cold elemental's residue
-last_eat 4
-unpaid 1
-value 400
 x 3
 y 1
+value 400
+last_eat 4
+unpaid 1
 end
 arch shop_empty
 x 3
@@ -333,11 +333,11 @@ y 2
 end
 arch residue
 name ancient cold elemental's residue
-last_eat 4
-unpaid 1
-value 400
 x 3
 y 2
+value 400
+last_eat 4
+unpaid 1
 end
 arch shop_empty
 x 3
@@ -345,11 +345,11 @@ y 3
 end
 arch residue
 name ancient cold elemental's residue
-last_eat 4
-unpaid 1
-value 400
 x 3
 y 3
+value 400
+last_eat 4
+unpaid 1
 end
 arch shop_empty
 x 3
@@ -357,11 +357,11 @@ y 4
 end
 arch residue
 name ancient cold elemental's residue
-last_eat 4
-unpaid 1
-value 400
 x 3
 y 4
+value 400
+last_eat 4
+unpaid 1
 end
 arch shop_empty
 x 3
@@ -435,11 +435,11 @@ y 1
 end
 arch residue
 name ancient electric elemental's residue
-last_eat 3
-unpaid 1
-value 400
 x 4
 y 1
+value 400
+last_eat 3
+unpaid 1
 end
 arch shop_empty
 x 4
@@ -447,11 +447,11 @@ y 2
 end
 arch residue
 name ancient electric elemental's residue
-last_eat 3
-unpaid 1
-value 400
 x 4
 y 2
+value 400
+last_eat 3
+unpaid 1
 end
 arch shop_empty
 x 4
@@ -459,11 +459,11 @@ y 3
 end
 arch residue
 name ancient electric elemental's residue
-last_eat 3
-unpaid 1
-value 400
 x 4
 y 3
+value 400
+last_eat 3
+unpaid 1
 end
 arch shop_empty
 x 4
@@ -471,11 +471,11 @@ y 4
 end
 arch residue
 name ancient electric elemental's residue
-last_eat 3
-unpaid 1
-value 400
 x 4
 y 4
+value 400
+last_eat 3
+unpaid 1
 end
 arch shop_empty
 x 4
@@ -561,10 +561,10 @@ y 1
 end
 arch residue
 name ancient poison elemental's residue
-last_eat 10
-unpaid 1
 x 5
 y 1
+last_eat 10
+unpaid 1
 end
 arch shop_empty
 x 5
@@ -572,10 +572,10 @@ y 2
 end
 arch residue
 name ancient poison elemental's residue
-last_eat 10
-unpaid 1
 x 5
 y 2
+last_eat 10
+unpaid 1
 end
 arch shop_empty
 x 5
@@ -583,10 +583,10 @@ y 3
 end
 arch residue
 name ancient poison elemental's residue
-last_eat 10
-unpaid 1
 x 5
 y 3
+last_eat 10
+unpaid 1
 end
 arch shop_empty
 x 5
@@ -594,10 +594,10 @@ y 4
 end
 arch residue
 name ancient poison elemental's residue
-last_eat 10
-unpaid 1
 x 5
 y 4
+last_eat 10
+unpaid 1
 end
 arch shop_empty
 x 5
@@ -646,6 +646,8 @@ Only dragons may enter here.
 @match *
 Welcome to the dragon guild.
 endmsg
+x 5
+y 12
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -659,16 +661,14 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-x 5
-y 12
+resist_holyword 100
+resist_blind 100
 end
 arch flagstone
 x 5
@@ -738,9 +738,9 @@ x 6
 y 9
 end
 arch pedestal
-connected 1
 x 6
 y 10
+connected 1
 end
 arch flagstone
 x 6
@@ -756,9 +756,9 @@ y 11
 end
 arch pedestal
 slaying dragon
-connected 1
 x 6
 y 12
+connected 1
 end
 arch flagstone
 x 6
@@ -847,9 +847,9 @@ x 7
 y 9
 end
 arch pedestal
-connected 1
 x 7
 y 10
+connected 1
 end
 arch flagstone
 x 7
@@ -857,24 +857,24 @@ y 10
 end
 arch pedestal
 slaying dragon
-connected 1
 x 7
 y 11
+connected 1
 end
 arch flagstone
 x 7
 y 11
 end
 arch igate_closed_1
-connected 1
 x 7
 y 11
+connected 1
 end
 arch pedestal
 slaying dragon
-connected 1
 x 7
 y 12
+connected 1
 end
 arch flagstone
 x 7
@@ -931,9 +931,9 @@ para elemental residues
 ghost's ectoplasm
 scorpion's stinger
 endmsg
-no_pick 1
 x 8
 y 3
+no_pick 1
 end
 arch flagstone
 x 8
@@ -948,9 +948,9 @@ demon's head
 elemental residues
 wyvern's steak
 endmsg
-no_pick 1
 x 8
 y 4
+no_pick 1
 end
 arch flagstone
 x 8
@@ -963,9 +963,9 @@ Delicious meals for wyverns:
 skull's tongue (mjam!)
 wyvern/dragon steaks
 endmsg
-no_pick 1
 x 8
 y 5
+no_pick 1
 end
 arch flagstone
 x 8
@@ -993,9 +993,9 @@ x 8
 y 9
 end
 arch pedestal
-connected 1
 x 8
 y 10
+connected 1
 end
 arch flagstone
 x 8
@@ -1011,9 +1011,9 @@ y 11
 end
 arch pedestal
 slaying dragon
-connected 1
 x 8
 y 12
+connected 1
 end
 arch flagstone
 x 8
@@ -1154,15 +1154,15 @@ x 10
 y 6
 end
 arch door_look_1
-type 0
-randomitems none
 hp 0
 exp 0
-alive 0
-level 0
-no_pass 0
 x 10
 y 6
+level 0
+type 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch flagstone
 x 10
@@ -1251,15 +1251,15 @@ x 11
 y 6
 end
 arch door_look_1
-type 0
-randomitems none
 hp 0
 exp 0
-alive 0
-level 0
-no_pass 0
 x 11
 y 6
+level 0
+type 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch flagstone
 x 11
@@ -1372,15 +1372,15 @@ x 12
 y 11
 end
 arch door_look_1
-type 0
-randomitems none
 hp 0
 exp 0
-alive 0
-level 0
-no_pass 0
 x 12
 y 11
+level 0
+type 0
+randomitems none
+alive 0
+no_pass 0
 end
 arch flagstone
 x 12

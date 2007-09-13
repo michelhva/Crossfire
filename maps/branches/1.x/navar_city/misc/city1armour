@@ -1,19 +1,20 @@
 arch map
-region navar
 name Olaf's Armor Emporium
+fixed_resettime 1
+difficulty 15
+region navar
+shopitems armour:45;shield:40;helmet:30;bracers:20;boots:15;gloves:6;cloak:10;girdle:50;armour improver:50;treasure:-30;*:-80
+shopgreed 1.10000
+shopmin 20
+shopmax 10000
+shoprace dwarf
+width 19
+height 16
 msg
 Creator: 
 Email: 
 Date: Wed Oct 27 10:35:07 1993
 endmsg
-shopitems armour:45;shield:40;helmet:30;bracers:20;boots:15;gloves:6;cloak:10;girdle:50;armour improver:50;treasure:-30;*:-80
-shopmin 20
-shopmax 10000
-shoprace dwarf
-shopgreed 1.1
-x 19
-difficulty 15
-stand_still 1
 end
 arch flagstone
 name floor
@@ -166,14 +167,13 @@ x 1
 y 4
 pick_up 0
 will_apply 0
-can_apply 0
 can_cast_spell 0
 can_use_scroll 0
-can_use_wand 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
+can_apply 0
 end
 arch shop_empty
 x 1

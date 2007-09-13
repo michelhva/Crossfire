@@ -1,12 +1,15 @@
 arch map
+name <unnamed>
+swap_time 5
+difficulty 20
 region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jul 13 00:13:51 1997
 endmsg
-level 20
-value 5
 end
 arch marble
 end
@@ -375,6 +378,10 @@ arch marble
 x 3
 y 6
 end
+arch big_elec
+x 3
+y 6
+end
 arch marble
 x 3
 y 7
@@ -437,6 +444,10 @@ arch marble
 x 4
 y 3
 end
+arch big_elec
+x 4
+y 3
+end
 arch marble
 x 4
 y 4
@@ -458,6 +469,10 @@ x 4
 y 8
 end
 arch marble
+x 4
+y 9
+end
+arch big_elec
 x 4
 y 9
 end
@@ -523,6 +538,10 @@ arch marble
 x 5
 y 6
 end
+arch big_elec
+x 5
+y 6
+end
 arch marble
 x 5
 y 7
@@ -585,6 +604,10 @@ arch marble
 x 6
 y 3
 end
+arch big_elec
+x 6
+y 3
+end
 arch marble
 x 6
 y 4
@@ -606,6 +629,10 @@ x 6
 y 8
 end
 arch marble
+x 6
+y 9
+end
+arch big_elec
 x 6
 y 9
 end
@@ -707,6 +734,10 @@ arch marble
 x 7
 y 12
 end
+arch big_elec
+x 7
+y 12
+end
 arch marble
 x 7
 y 13
@@ -794,6 +825,10 @@ x 8
 y 8
 end
 arch marble
+x 8
+y 9
+end
+arch big_elec
 x 8
 y 9
 end
@@ -895,6 +930,10 @@ arch marble
 x 9
 y 12
 end
+arch big_elec
+x 9
+y 12
+end
 arch marble
 x 9
 y 13
@@ -933,6 +972,10 @@ arch marble
 x 10
 y 3
 end
+arch big_elec
+x 10
+y 3
+end
 arch marble
 x 10
 y 4
@@ -945,6 +988,10 @@ arch marble
 x 10
 y 6
 end
+arch big_elec
+x 10
+y 6
+end
 arch marble
 x 10
 y 7
@@ -954,6 +1001,10 @@ x 10
 y 8
 end
 arch marble
+x 10
+y 9
+end
+arch big_elec
 x 10
 y 9
 end
@@ -1081,6 +1132,10 @@ arch marble
 x 12
 y 3
 end
+arch big_elec
+x 12
+y 3
+end
 arch marble
 x 12
 y 4
@@ -1093,6 +1148,10 @@ arch marble
 x 12
 y 6
 end
+arch big_elec
+x 12
+y 6
+end
 arch marble
 x 12
 y 7
@@ -1102,6 +1161,10 @@ x 12
 y 8
 end
 arch marble
+x 12
+y 9
+end
+arch big_elec
 x 12
 y 9
 end
@@ -1490,64 +1553,4 @@ end
 arch dwall_2_2_4
 x 15
 y 15
-end
-arch big_elec
-x 3
-y 6
-end
-arch big_elec
-x 4
-y 3
-end
-arch big_elec
-x 4
-y 9
-end
-arch big_elec
-x 5
-y 6
-end
-arch big_elec
-x 6
-y 3
-end
-arch big_elec
-x 6
-y 9
-end
-arch big_elec
-x 7
-y 12
-end
-arch big_elec
-x 8
-y 9
-end
-arch big_elec
-x 9
-y 12
-end
-arch big_elec
-x 10
-y 3
-end
-arch big_elec
-x 10
-y 6
-end
-arch big_elec
-x 10
-y 9
-end
-arch big_elec
-x 12
-y 3
-end
-arch big_elec
-x 12
-y 6
-end
-arch big_elec
-x 12
-y 9
 end

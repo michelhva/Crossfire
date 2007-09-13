@@ -1,17 +1,17 @@
 arch map
-region navar
 name <untitled>
+reset_timeout 7200
+difficulty 1
+region navar
+width 60
+height 41
+enter_x 1
+enter_y 1
 msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Mon Aug 19 11:13:51 2002
 endmsg
-width 60
-height 41
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 end
 arch blocked
 end
@@ -123,9 +123,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 30
 no_pass 0
 blocksview 0
-y 30
 end
 arch invis_exit
 slaying tavern
@@ -136,9 +136,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 31
 no_pass 0
 blocksview 0
-y 31
 end
 arch invis_exit
 slaying tavern
@@ -149,9 +149,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 32
 no_pass 0
 blocksview 0
-y 32
 end
 arch fog
 y 32
@@ -165,9 +165,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 33
 no_pass 0
 blocksview 0
-y 33
 end
 arch invis_exit
 slaying tavern
@@ -178,9 +178,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 y 34
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -191,9 +191,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 35
 no_pass 0
 blocksview 0
-y 35
 end
 arch invis_exit
 slaying tavern
@@ -204,9 +204,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 36
 no_pass 0
 blocksview 0
-y 36
 end
 arch blocked
 y 37
@@ -349,10 +349,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 30
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -364,10 +364,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 31
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -379,10 +379,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 32
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -394,10 +394,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 33
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -409,10 +409,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 34
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -424,10 +424,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 35
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -439,10 +439,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 36
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 1
@@ -1659,9 +1659,9 @@ end
 arch bench_1_4
 name desk
 name_pl desk
-no_pass 1
 x 5
 y 18
+no_pass 1
 end
 arch woodfloor
 x 5
@@ -1687,9 +1687,9 @@ arch goldfloor
 name drop 25 gold coins
 name_pl drop 25 gold coins
 food 25
-connected 6
 x 5
 y 21
+connected 6
 end
 arch woodfloor
 x 5
@@ -1707,9 +1707,9 @@ arch goldfloor
 name drop 25 gold coins
 name_pl drop 25 gold coins
 food 25
-connected 7
 x 5
 y 23
+connected 7
 end
 arch woodfloor
 x 5
@@ -1727,9 +1727,9 @@ arch goldfloor
 name drop 30 gold coins
 name_pl drop 30 gold coins
 food 30
-connected 8
 x 5
 y 25
+connected 8
 end
 arch woodfloor
 x 5
@@ -1745,6 +1745,7 @@ y 27
 end
 arch sign
 name Room 103 Master Suiet
+name_pl Room 103 Master Suiet
 msg
 Accomidations for three including
 ample food and storage. Luxurious
@@ -1753,7 +1754,6 @@ western Scorn to make your stay
 the best it can be. Complementary
 Newspaper included.
 endmsg
-name_pl Room 103 Master Suiet
 x 5
 y 27
 end
@@ -1765,9 +1765,9 @@ arch goldfloor
 name drop 50 gold coins
 name_pl drop 50 gold coins
 food 50
-connected 9
 x 5
 y 28
+connected 9
 end
 arch stonefloor2
 name stonefloor
@@ -1800,10 +1800,10 @@ end
 arch bookshelf
 name heavy bookshelf of holding
 name_pl heavy bookshelf of holding
-no_pick 1
-unique 1
 x 5
 y 30
+no_pick 1
+unique 1
 end
 arch afloor_left
 name floor
@@ -1954,9 +1954,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 6
 no_pass 0
 blocksview 0
-x 6
 end
 arch cwall_1_4
 x 6
@@ -1971,10 +1971,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 6
 y 1
+no_pass 0
+blocksview 0
 end
 arch stonefloor2
 name stonefloor
@@ -2133,9 +2133,9 @@ end
 arch bench_2_2_3
 name desk
 name_pl desk
-no_pass 1
 x 6
 y 18
+no_pass 1
 end
 arch woodfloor
 x 6
@@ -2144,9 +2144,9 @@ end
 arch bench_1_2
 name desk
 name_pl desk
-no_pass 1
 x 6
 y 19
+no_pass 1
 end
 arch woodfloor
 x 6
@@ -2162,10 +2162,10 @@ y 21
 end
 arch sign_w
 name Room 106 - Single
+name_pl Room 106 - Single
 msg
 Room 106 - Single
 endmsg
-name_pl Room 106 - Single
 x 6
 y 21
 end
@@ -2183,10 +2183,10 @@ y 23
 end
 arch sign_w
 name Room 105 - Single
+name_pl Room 105 - Single
 msg
 Room 105 - Single
 endmsg
-name_pl Room 105 - Single
 x 6
 y 23
 end
@@ -2204,10 +2204,10 @@ y 25
 end
 arch sign_w
 name Room 102 - Double
+name_pl Room 102 - Double
 msg
 Room 102 - Double
 endmsg
-name_pl Room 102 - Double
 x 6
 y 25
 end
@@ -2400,9 +2400,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 7
 no_pass 0
 blocksview 0
-x 7
 end
 arch cwall_2_1_2
 x 7
@@ -2417,10 +2417,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 7
 y 1
+no_pass 0
+blocksview 0
 end
 arch fog
 x 7
@@ -2510,9 +2510,9 @@ x 7
 y 13
 end
 arch door_2
-no_pass 0
 x 7
 y 13
+no_pass 0
 end
 arch woodfloor
 x 7
@@ -2605,9 +2605,9 @@ x 7
 y 30
 end
 arch door_1
-no_pass 0
 x 7
 y 30
+no_pass 0
 end
 arch magic_banned
 x 7
@@ -2672,9 +2672,9 @@ x 7
 y 33
 end
 arch door_1
-no_pass 0
 x 7
 y 33
+no_pass 0
 end
 arch magic_banned
 x 7
@@ -2787,9 +2787,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 8
 no_pass 0
 blocksview 0
-x 8
 end
 arch cwall_2_1_2
 x 8
@@ -2804,10 +2804,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 8
 y 1
+no_pass 0
+blocksview 0
 end
 arch dungeon_floor
 x 8
@@ -2893,9 +2893,9 @@ x 8
 y 13
 end
 arch door_2
-no_pass 0
 x 8
 y 13
+no_pass 0
 end
 arch woodfloor
 x 8
@@ -2942,9 +2942,9 @@ x 8
 y 21
 end
 arch igate_closed_2
-connected 6
 x 8
 y 21
+connected 6
 end
 arch woodfloor
 x 8
@@ -2959,9 +2959,9 @@ x 8
 y 23
 end
 arch igate_closed_2
+x 8
+y 23
 connected 7
-x 8
-y 23
 end
 arch woodfloor
 x 8
@@ -2976,9 +2976,9 @@ x 8
 y 25
 end
 arch igate_closed_2
+x 8
+y 25
 connected 8
-x 8
-y 25
 end
 arch woodfloor
 x 8
@@ -2993,9 +2993,9 @@ x 8
 y 27
 end
 arch igate_closed_2
-connected 9
 x 8
 y 27
+connected 9
 end
 arch woodfloor
 x 8
@@ -3096,12 +3096,12 @@ end
 arch statue2
 name marble statue
 name_pl marble statue
+x 8
+y 34
 value 200
 weight 300000
 no_pick 0
 no_pass 0
-x 8
-y 34
 end
 arch magic_banned
 x 8
@@ -3154,9 +3154,9 @@ end
 arch chest_2
 name liquor chest
 name_pl liquor chest
-carrying 23500
 x 8
 y 36
+carrying 23500
 arch wine
 nrof 4
 been_applied 1
@@ -3207,9 +3207,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 9
 no_pass 0
 blocksview 0
-x 9
 end
 arch cwall_1_3
 x 9
@@ -3224,10 +3224,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 9
 y 1
+no_pass 0
+blocksview 0
 end
 arch stonefloor2
 name stonefloor
@@ -3400,9 +3400,9 @@ x 9
 y 20
 end
 arch button_small
+x 9
+y 21
 connected 6
-x 9
-y 21
 end
 arch woodfloor
 x 9
@@ -3417,9 +3417,9 @@ x 9
 y 22
 end
 arch button_small
+x 9
+y 23
 connected 7
-x 9
-y 23
 end
 arch woodfloor
 x 9
@@ -3434,9 +3434,9 @@ x 9
 y 24
 end
 arch button_small
+x 9
+y 25
 connected 8
-x 9
-y 25
 end
 arch woodfloor
 x 9
@@ -3451,9 +3451,9 @@ x 9
 y 26
 end
 arch button_small
-connected 9
 x 9
 y 27
+connected 9
 end
 arch woodfloor
 x 9
@@ -3524,9 +3524,9 @@ x 9
 y 32
 end
 arch door_2
-no_pass 0
 x 9
 y 32
+no_pass 0
 end
 arch magic_banned
 x 9
@@ -3573,9 +3573,9 @@ x 9
 y 34
 end
 arch button_lever
-connected 60
 x 9
 y 34
+connected 60
 end
 arch afloor_left
 name floor
@@ -3928,6 +3928,7 @@ y 30
 end
 arch scroll_2
 name The Imperial Tribune: EXTRA EDITION
+name_pl The Scorn Tribune
 msg
 HEADLINE: EXPLOSION ROCKS TAVERN
 A bomber detonated a high povered
@@ -3984,7 +3985,6 @@ tribute tensions have worsened. The
 question now seems to be how big an
 army must be raised?
 endmsg
-name_pl The Scorn Tribune
 x 10
 y 30
 end
@@ -4041,9 +4041,9 @@ x 10
 y 33
 end
 arch button_small
-connected 21
 x 10
 y 33
+connected 21
 end
 arch woodfloor
 x 10
@@ -4094,9 +4094,9 @@ x 10
 y 36
 end
 arch door_1
-no_pass 0
 x 10
 y 36
+no_pass 0
 end
 arch magic_banned
 x 10
@@ -4117,9 +4117,9 @@ x 10
 y 37
 end
 arch door_1
-no_pass 0
 x 10
 y 37
+no_pass 0
 end
 arch magic_banned
 x 10
@@ -4411,11 +4411,11 @@ end
 arch chest_2
 name chest of holding
 name_pl chest of holding
+x 11
+y 31
 carrying 150000
 no_pick 1
 unique 1
-x 11
-y 31
 end
 arch magic_banned
 x 11
@@ -4458,10 +4458,10 @@ x 11
 y 33
 end
 arch igate_closed_2
-speed 0.500000
-connected 21
 x 11
 y 33
+speed 0.500000
+connected 21
 end
 arch afloor_left
 name floor
@@ -4470,18 +4470,18 @@ x 11
 y 34
 end
 arch igate_open_2
+x 11
+y 34
 speed 0.500000
 value 1
 connected 60
-x 11
-y 34
 end
 arch locked_door2
-face ldoor_white2.111
 slaying 103
-blocksview 1
+face ldoor_white2.111
 x 11
 y 34
+blocksview 1
 end
 arch afloor_left
 name floor
@@ -5124,6 +5124,11 @@ arch woodfloor
 x 13
 y 21
 end
+arch titan
+x 13
+y 21
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 22
@@ -5136,6 +5141,11 @@ arch woodfloor
 x 13
 y 24
 end
+arch titan
+x 13
+y 24
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 25
@@ -5147,6 +5157,11 @@ end
 arch woodfloor
 x 13
 y 27
+end
+arch titan
+x 13
+y 27
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -5193,11 +5208,11 @@ end
 arch chest_2
 name chest of holding
 name_pl chest of holding
+x 13
+y 31
 carrying 150000
 no_pick 1
 unique 1
-x 13
-y 31
 end
 arch magic_banned
 x 13
@@ -5362,10 +5377,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 6
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -5377,10 +5392,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 7
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -5392,10 +5407,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 8
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -5407,10 +5422,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 9
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 14
@@ -5533,11 +5548,11 @@ end
 arch chest_2
 name chest of holding
 name_pl chest of holding
+x 14
+y 31
 carrying 150000
 no_pick 1
 unique 1
-x 14
-y 31
 end
 arch magic_banned
 x 14
@@ -6234,9 +6249,9 @@ y 24
 end
 arch fighter
 hp 200
-unaggressive 0
 x 16
 y 24
+unaggressive 0
 arch random_weapon
 end
 arch random_shield
@@ -6555,9 +6570,9 @@ y 24
 end
 arch fighter
 hp 215
-unaggressive 0
 x 17
 y 24
+unaggressive 0
 arch random_weapon
 end
 arch random_shield
@@ -7108,9 +7123,9 @@ x 19
 y 19
 end
 arch igate_closed_1
-speed 0.500000
 x 19
 y 19
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -7189,9 +7204,9 @@ x 19
 y 31
 end
 arch button_lever
-connected 61
 x 19
 y 31
+connected 61
 end
 arch afloor_left
 name floor
@@ -7341,9 +7356,9 @@ x 20
 y 9
 end
 arch igate_closed_2
-speed 0.500000
 x 20
 y 9
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -7519,17 +7534,17 @@ x 20
 y 32
 end
 arch igate_open_1
+x 20
+y 32
 speed 0.500000
 value 1
 connected 61
-x 20
-y 32
 end
 arch locked_door1
 slaying 102
-blocksview 1
 x 20
 y 32
+blocksview 1
 end
 arch magic_mouth
 msg
@@ -7653,10 +7668,10 @@ y 7
 end
 arch sign_w
 name Reserved
+name_pl Reserved For Freemasons
 msg
 Reserved For Freemasons
 endmsg
-name_pl Reserved For Freemasons
 x 21
 y 7
 end
@@ -7842,9 +7857,9 @@ x 21
 y 30
 end
 arch button_small
-connected 20
 x 21
 y 31
+connected 20
 end
 arch afloor_left
 name floor
@@ -7859,10 +7874,10 @@ x 21
 y 32
 end
 arch igate_closed_1
-speed 0.500000
-connected 20
 x 21
 y 32
+speed 0.500000
+connected 20
 end
 arch woodfloor2
 name woodfloor
@@ -8544,21 +8559,21 @@ x 24
 y 3
 end
 arch brazier
+x 24
+y 3
 value 200
 weight 100000
 no_pick 0
 no_pass 0
-x 24
-y 3
 end
 arch woodfloor
 x 24
 y 4
 end
 arch button_small
-connected 5
 x 24
 y 5
+connected 5
 end
 arch woodfloor
 x 24
@@ -8571,10 +8586,10 @@ x 24
 y 6
 end
 arch stwall_closed_1
-speed 0.500000
-connected 5
 x 24
 y 6
+speed 0.500000
+connected 5
 end
 arch woodfloor2
 name woodfloor
@@ -8923,11 +8938,13 @@ y 7
 end
 arch guard
 name Elite Mikhovian Guard
+name_pl Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Guard
 hp 350
+x 25
+y 7
 carrying 119500
 can_use_scroll 1
 can_use_bow 1
@@ -8935,8 +8952,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-x 25
-y 7
 arch high_boots
 end
 arch high_shield
@@ -10242,14 +10257,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 29
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 29
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -10509,9 +10524,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 30
 y 7
+unique 1
 end
 arch stair_down_4
 slaying tavern
@@ -10817,9 +10832,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 31
 no_pass 0
 blocksview 0
-x 31
 end
 arch invis_exit
 slaying tavern
@@ -10831,10 +10846,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 31
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -10853,9 +10868,9 @@ x 31
 y 3
 end
 arch door_1
-no_pass 0
 x 31
 y 3
+no_pass 0
 end
 arch woodfloor2
 name woodfloor
@@ -10898,9 +10913,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 31
 y 7
+unique 1
 end
 arch dungeon_magic
 x 31
@@ -10913,9 +10928,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 31
 y 8
+can_roll 0
 end
 arch dungeon_magic
 x 31
@@ -10928,9 +10943,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 31
 y 9
+can_roll 0
 end
 arch dungeon_magic
 x 31
@@ -10943,9 +10958,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 31
 y 10
+can_roll 0
 end
 arch dungeon_magic
 x 31
@@ -10958,9 +10973,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 31
 y 11
+can_roll 0
 end
 arch dungeon_magic
 x 31
@@ -11033,14 +11048,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 31
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 31
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -11077,14 +11092,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 31
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 31
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -11223,9 +11238,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 32
 no_pass 0
 blocksview 0
-x 32
 end
 arch invis_exit
 slaying tavern
@@ -11237,10 +11252,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 32
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -11302,16 +11317,16 @@ y 7
 end
 arch check_inv
 slaying tav2strrmfmnyns
-connected 575757
 x 32
 y 7
+connected 575757
 end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 32
 y 7
+unique 1
 end
 arch dungeon_magic
 x 32
@@ -11320,17 +11335,17 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 32
 y 8
+unique 1
 end
 arch grate_closed_1
 name security grate
 name_pl security grate
-speed 0.500000
-connected 575757
 x 32
 y 8
+speed 0.500000
+connected 575757
 end
 arch dungeon_magic
 x 32
@@ -11338,16 +11353,16 @@ y 9
 end
 arch check_inv
 slaying tav2strrmfmnyns
+x 32
+y 9
 connected 575757
-x 32
-y 9
 end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 32
 y 9
+unique 1
 end
 arch dungeon_magic
 x 32
@@ -11356,9 +11371,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 32
 y 10
+unique 1
 end
 arch dungeon_magic
 x 32
@@ -11371,9 +11386,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 32
 y 11
+can_roll 0
 end
 arch dungeon_magic
 x 32
@@ -11386,9 +11401,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 32
 y 12
+can_roll 0
 end
 arch dungeon_magic
 x 32
@@ -11527,9 +11542,9 @@ x 32
 y 28
 end
 arch igate_closed_1
-speed 0.500000
 x 32
 y 28
+speed 0.500000
 end
 arch woodfloor2
 name woodfloor
@@ -11566,9 +11581,9 @@ x 32
 y 33
 end
 arch button_lever
-connected 62
 x 32
 y 33
+connected 62
 end
 arch afloor_left
 name floor
@@ -11619,9 +11634,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 33
 no_pass 0
 blocksview 0
-x 33
 end
 arch invis_exit
 slaying tavern
@@ -11633,10 +11648,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 33
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -11662,8 +11677,8 @@ y 4
 end
 arch bed_save
 name very comfortable chair
-face stolking_2.111
 name_pl very comfortable chair
+face stolking_2.111
 x 33
 y 4
 end
@@ -11706,9 +11721,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 33
 y 7
+can_roll 0
 end
 arch dungeon_magic
 x 33
@@ -11721,9 +11736,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 33
 y 8
+can_roll 0
 end
 arch dungeon_magic
 x 33
@@ -11732,9 +11747,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 33
 y 9
+unique 1
 end
 arch dungeon_magic
 x 33
@@ -11743,9 +11758,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 33
 y 10
+unique 1
 end
 arch dungeon_magic
 x 33
@@ -11754,9 +11769,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 33
 y 11
+unique 1
 end
 arch dungeon_magic
 x 33
@@ -11769,9 +11784,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 33
 y 12
+can_roll 0
 end
 arch dungeon_magic
 x 33
@@ -11784,9 +11799,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 33
 y 13
+can_roll 0
 end
 arch dungeon_magic
 x 33
@@ -11810,11 +11825,13 @@ y 15
 end
 arch guard
 name Elite Mikhovian Guard
+name_pl Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Guard
 hp 350
+x 33
+y 15
 carrying 119500
 can_use_scroll 1
 can_use_bow 1
@@ -11822,8 +11839,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-x 33
-y 15
 arch high_boots
 end
 arch high_shield
@@ -11875,14 +11890,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 33
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 33
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -11919,14 +11934,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 33
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 33
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -12025,17 +12040,17 @@ x 33
 y 32
 end
 arch igate_open_1
+x 33
+y 32
 speed 0.500000
 value 1
 connected 62
-x 33
-y 32
 end
 arch locked_door1
 slaying 105
-blocksview 1
 x 33
 y 32
+blocksview 1
 end
 arch afloor_left
 name floor
@@ -12092,9 +12107,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 34
 no_pass 0
 blocksview 0
-x 34
 end
 arch invis_exit
 slaying tavern
@@ -12106,10 +12121,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 34
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -12176,9 +12191,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 34
 y 7
+can_roll 0
 end
 arch dungeon_magic
 x 34
@@ -12195,9 +12210,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 34
 y 8
+can_roll 0
 end
 arch dungeon_magic
 x 34
@@ -12206,14 +12221,14 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 34
 y 9
+unique 1
 end
 arch button_lever
-connected 57
 x 34
 y 9
+connected 57
 end
 arch dungeon_magic
 x 34
@@ -12222,9 +12237,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 34
 y 10
+unique 1
 end
 arch dungeon_magic
 x 34
@@ -12233,9 +12248,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 34
 y 11
+unique 1
 end
 arch dungeon_magic
 x 34
@@ -12244,9 +12259,9 @@ end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 34
 y 12
+unique 1
 end
 arch dungeon_magic
 x 34
@@ -12259,9 +12274,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 34
 y 13
+can_roll 0
 end
 arch dungeon_magic
 x 34
@@ -12422,15 +12437,15 @@ x 34
 y 32
 end
 arch igate_closed_1
-speed 0.500000
-connected 22
 x 34
 y 32
+speed 0.500000
+connected 22
 end
 arch button_small
-connected 22
 x 34
 y 33
+connected 22
 end
 arch afloor_left
 name floor
@@ -12487,9 +12502,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 35
 no_pass 0
 blocksview 0
-x 35
 end
 arch invis_exit
 slaying tavern
@@ -12501,10 +12516,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 35
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -12573,9 +12588,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 35
 y 8
+can_roll 0
 end
 arch dungeon_magic
 x 35
@@ -12588,9 +12603,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 35
 y 9
+can_roll 0
 end
 arch dungeon_magic
 x 35
@@ -12598,16 +12613,16 @@ y 10
 end
 arch check_inv
 slaying tav2strrmfmnyns
-connected 57
 x 35
 y 10
+connected 57
 end
 arch cobblestones2
 name strongroom floor
 name_pl safe floor
-unique 1
 x 35
 y 10
+unique 1
 end
 arch dungeon_magic
 x 35
@@ -12620,9 +12635,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 35
 y 11
+can_roll 0
 end
 arch dungeon_magic
 x 35
@@ -12635,9 +12650,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 35
 y 12
+can_roll 0
 end
 arch dungeon_magic
 x 35
@@ -12654,9 +12669,9 @@ end
 arch rock
 name concrete
 name_pl concrete
-can_roll 0
 x 35
 y 13
+can_roll 0
 end
 arch dungeon_magic
 x 35
@@ -12713,14 +12728,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 35
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 35
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -12757,14 +12772,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 35
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 35
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -12923,9 +12938,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 36
 no_pass 0
 blocksview 0
-x 36
 end
 arch fog
 x 36
@@ -12940,10 +12955,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 36
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -13034,10 +13049,10 @@ end
 arch igate_closed_2
 name strongroom door
 name_pl strongroom door
-speed 0.500000
-connected 57
 x 36
 y 10
+speed 0.500000
+connected 57
 end
 arch dungeon_magic
 x 36
@@ -13326,9 +13341,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 37
 no_pass 0
 blocksview 0
-x 37
 end
 arch invis_exit
 slaying tavern
@@ -13340,10 +13355,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -13393,11 +13408,11 @@ y 8
 end
 arch altar_none
 name stove
-face altarrugg.111
 name_pl stove
-no_pass 1
+face altarrugg.111
 x 37
 y 8
+no_pass 1
 end
 arch dungeon_magic
 x 37
@@ -13419,9 +13434,9 @@ y 10
 end
 arch check_inv
 slaying tav2strrmfmnyns
-connected 57
 x 37
 y 10
+connected 57
 end
 arch dungeon_floor
 x 37
@@ -13437,11 +13452,13 @@ y 11
 end
 arch guard
 name Elite Mikhovian Guard
+name_pl Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Guard
 hp 350
+x 37
+y 11
 carrying 119500
 can_use_scroll 1
 can_use_bow 1
@@ -13449,8 +13466,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-x 37
-y 11
 arch high_boots
 end
 arch high_shield
@@ -13478,10 +13493,10 @@ end
 arch chest_2
 name chest of holding
 name_pl chest of holding
-no_pick 1
-unique 1
 x 37
 y 12
+no_pick 1
+unique 1
 end
 arch dungeon_magic
 x 37
@@ -13546,14 +13561,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 37
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 37
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -13590,14 +13605,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 37
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 37
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -13665,10 +13680,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 37
 y 28
+no_pass 0
+blocksview 0
 end
 arch stonefloor2
 name stonefloor
@@ -13773,9 +13788,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 38
 no_pass 0
 blocksview 0
-x 38
 end
 arch invis_exit
 slaying tavern
@@ -13787,10 +13802,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -13849,9 +13864,9 @@ end
 arch altar_none
 name grill
 name_pl grill
-no_pass 1
 x 38
 y 8
+no_pass 1
 end
 arch dungeon_magic
 x 38
@@ -13881,8 +13896,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 11
 end
@@ -13891,11 +13906,11 @@ x 38
 y 11
 end
 arch key2
-face key_brown.111
 slaying tav2strrmfmnyns
-unique 1
+face key_brown.111
 x 38
 y 11
+unique 1
 end
 arch dungeon_magic
 x 38
@@ -13903,8 +13918,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 12
 end
@@ -14050,10 +14065,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 38
 y 28
+no_pass 0
+blocksview 0
 end
 arch stonefloor2
 name stonefloor
@@ -14191,9 +14206,9 @@ x 39
 y 6
 end
 arch door_1
-no_pass 0
 x 39
 y 6
+no_pass 0
 end
 arch dungeon_floor
 x 39
@@ -14239,8 +14254,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 11
 end
@@ -14254,8 +14269,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 12
 end
@@ -14301,10 +14316,10 @@ y 17
 end
 arch sign_e
 name Reserved
+name_pl Reserved
 msg
 Reserved For Army Regulars
 endmsg
-name_pl Reserved
 x 39
 y 17
 end
@@ -14331,14 +14346,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 39
+y 19
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 39
-y 19
 arch sword_2
 end
 arch plate_mail
@@ -14375,14 +14390,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 39
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 39
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -14537,9 +14552,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 40
 no_pass 0
 blocksview 0
-x 40
 end
 arch invis_exit
 slaying tavern
@@ -14551,10 +14566,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 40
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -14642,8 +14657,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 11
 end
@@ -14653,8 +14668,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 12
 end
@@ -14705,9 +14720,9 @@ x 40
 y 18
 end
 arch igate_closed_1
-speed 0.500000
 x 40
 y 18
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -14782,17 +14797,17 @@ x 40
 y 28
 end
 arch igate_open_1
+x 40
+y 28
 speed 0.500000
 value 1
 connected 63
-x 40
-y 28
 end
 arch locked_door1
 slaying 106
-blocksview 1
 x 40
 y 28
+blocksview 1
 end
 arch magic_mouth
 msg
@@ -14826,9 +14841,9 @@ x 40
 y 32
 end
 arch igate_closed_1
-speed 0.500000
 x 40
 y 32
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -14885,9 +14900,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 41
 no_pass 0
 blocksview 0
-x 41
 end
 arch invis_exit
 slaying tavern
@@ -14899,10 +14914,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 41
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -14936,9 +14951,9 @@ y 7
 end
 arch check_inv
 slaying keyxvsafe937
-connected 54
 x 41
 y 8
+connected 54
 end
 arch flagstone
 x 41
@@ -14953,19 +14968,19 @@ x 41
 y 9
 end
 arch igate_closed_1
-speed 0.500000
-connected 54
 x 41
 y 9
+speed 0.500000
+connected 54
 end
 arch dungeon_magic
 x 41
 y 10
 end
 arch button_small
-connected 54
 x 41
 y 10
+connected 54
 end
 arch dungeon_floor
 x 41
@@ -14977,8 +14992,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 11
 end
@@ -14988,8 +15003,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 12
 end
@@ -15081,14 +15096,14 @@ end
 arch knight
 name Army Regular
 name_pl Army Regular
+x 41
+y 22
 carrying 134800
 unaggressive 0
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
 can_use_skill 1
-x 41
-y 22
 arch sword_2
 end
 arch plate_mail
@@ -15137,9 +15152,9 @@ x 41
 y 26
 end
 arch button_small
-connected 23
 x 41
 y 27
+connected 23
 end
 arch afloor_left
 name floor
@@ -15154,10 +15169,10 @@ x 41
 y 28
 end
 arch igate_closed_1
-speed 0.500000
-connected 23
 x 41
 y 28
+speed 0.500000
+connected 23
 end
 arch woodfloor2
 name woodfloor
@@ -15249,9 +15264,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 42
 no_pass 0
 blocksview 0
-x 42
 end
 arch invis_exit
 slaying tavern
@@ -15263,10 +15278,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -15345,11 +15360,11 @@ end
 arch bookshelf
 name bookshelf of holding
 name_pl bookshelf of holding
+x 42
+y 10
 material 0
 no_pick 1
 unique 1
-x 42
-y 10
 end
 arch dungeon_magic
 x 42
@@ -15490,9 +15505,9 @@ x 42
 y 26
 end
 arch button_lever
-connected 63
 x 42
 y 26
+connected 63
 end
 arch afloor_left
 name floor
@@ -15602,10 +15617,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 38
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -15617,10 +15632,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 39
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -15632,10 +15647,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 42
 y 40
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -15646,9 +15661,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 43
 no_pass 0
 blocksview 0
-x 43
 end
 arch invis_exit
 slaying tavern
@@ -15660,10 +15675,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -15698,9 +15713,9 @@ x 43
 y 6
 end
 arch button_handle
-connected 5
 x 43
 y 6
+connected 5
 end
 arch stonefloor2
 name stonefloor
@@ -15814,11 +15829,13 @@ y 15
 end
 arch guard
 name Elite Mikhovian Guard
+name_pl Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Guard
 hp 350
+x 43
+y 15
 carrying 119500
 can_use_scroll 1
 can_use_bow 1
@@ -15826,8 +15843,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-x 43
-y 15
 arch high_boots
 end
 arch high_shield
@@ -16064,10 +16079,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 39
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -16079,10 +16094,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 43
 y 40
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -16093,9 +16108,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 44
 no_pass 0
 blocksview 0
-x 44
 end
 arch fog
 x 44
@@ -16110,10 +16125,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 44
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -16138,9 +16153,9 @@ x 44
 y 5
 end
 arch door_2
-no_pass 0
 x 44
 y 5
+no_pass 0
 end
 arch woodfloor2
 name woodfloor
@@ -16433,9 +16448,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 45
 no_pass 0
 blocksview 0
-x 45
 end
 arch invis_exit
 slaying tavern
@@ -16447,10 +16462,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 45
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -16731,9 +16746,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 46
 no_pass 0
 blocksview 0
-x 46
 end
 arch invis_exit
 slaying tavern
@@ -16745,10 +16760,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 46
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -16783,12 +16798,12 @@ end
 arch statue2
 name marble statue
 name_pl marble statue
+x 46
+y 6
 value 200
 weight 300000
 no_pick 0
 no_pass 0
-x 46
-y 6
 end
 arch unholy_ground
 x 46
@@ -16891,9 +16906,9 @@ x 46
 y 14
 end
 arch igate_closed_1
-speed 0.500000
 x 46
 y 14
+speed 0.500000
 end
 arch woodfloor2
 name woodfloor
@@ -17058,9 +17073,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 47
 no_pass 0
 blocksview 0
-x 47
 end
 arch invis_exit
 slaying tavern
@@ -17072,10 +17087,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 47
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -17413,9 +17428,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 48
 no_pass 0
 blocksview 0
-x 48
 end
 arch invis_exit
 slaying tavern
@@ -17427,10 +17442,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 48
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -17741,9 +17756,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 49
 no_pass 0
 blocksview 0
-x 49
 end
 arch invis_exit
 slaying tavern
@@ -17755,10 +17770,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 49
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -17827,10 +17842,10 @@ x 49
 y 8
 end
 arch spikes_closed
-speed 0.500000
-connected 58
 x 49
 y 8
+speed 0.500000
+connected 58
 end
 arch unholy_ground
 x 49
@@ -17971,9 +17986,9 @@ x 49
 y 21
 end
 arch igate_closed_2
-speed 0.500000
 x 49
 y 21
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -18092,9 +18107,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 50
 no_pass 0
 blocksview 0
-x 50
 end
 arch invis_exit
 slaying tavern
@@ -18106,10 +18121,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 50
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -18158,9 +18173,9 @@ x 50
 y 6
 end
 arch button_small
-connected 58
 x 50
 y 7
+connected 58
 end
 arch blackmarble
 x 50
@@ -18179,19 +18194,19 @@ x 50
 y 7
 end
 arch button_small
-connected 5
 x 50
 y 8
+connected 5
 end
 arch marble
 x 50
 y 8
 end
 arch spikes_closed
-speed 0.500000
-connected 58
 x 50
 y 8
+speed 0.500000
+connected 58
 end
 arch unholy_ground
 x 50
@@ -18212,10 +18227,10 @@ x 50
 y 9
 end
 arch stwall_closed_1
-speed 0.500000
-connected 5
 x 50
 y 9
+speed 0.500000
+connected 5
 end
 arch unholy_ground
 x 50
@@ -18231,18 +18246,18 @@ y 9
 end
 arch check_inv
 slaying keyevm40ad34
-connected 58
 x 50
 y 9
+connected 58
 end
 arch magic_ear
 msg
 @match maji
 Click.
 endmsg
-connected 5
 x 50
 y 10
+connected 5
 end
 arch woodfloor2
 name woodfloor
@@ -18432,9 +18447,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 51
 no_pass 0
 blocksview 0
-x 51
 end
 arch invis_exit
 slaying tavern
@@ -18446,10 +18461,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 51
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -18494,9 +18509,9 @@ x 51
 y 6
 end
 arch button_small
-connected 58
 x 51
 y 7
+connected 58
 end
 arch marble
 x 51
@@ -18515,19 +18530,19 @@ x 51
 y 7
 end
 arch button_small
-connected 5
 x 51
 y 8
+connected 5
 end
 arch blackmarble
 x 51
 y 8
 end
 arch spikes_closed
-speed 0.500000
-connected 58
 x 51
 y 8
+speed 0.500000
+connected 58
 end
 arch unholy_ground
 x 51
@@ -18571,11 +18586,13 @@ y 10
 end
 arch guard
 name Elite Mikhovian Guard
+name_pl Elite Mikhovian Guard
 msg
 @match *
 endmsg
-name_pl Elite Mikhovian Guard
 hp 350
+x 51
+y 10
 carrying 119500
 can_use_scroll 1
 can_use_bow 1
@@ -18583,8 +18600,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 can_use_skill 1
-x 51
-y 10
 arch high_boots
 end
 arch high_shield
@@ -18776,9 +18791,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 52
 no_pass 0
 blocksview 0
-x 52
 end
 arch invis_exit
 slaying tavern
@@ -18790,10 +18805,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 52
 y 1
+no_pass 0
+blocksview 0
 end
 arch woodfloor2
 name woodfloor
@@ -18848,9 +18863,9 @@ x 52
 y 6
 end
 arch button_small
-connected 58
 x 52
 y 7
+connected 58
 end
 arch blackmarble
 x 52
@@ -18869,19 +18884,19 @@ x 52
 y 7
 end
 arch button_small
-connected 5
 x 52
 y 8
+connected 5
 end
 arch marble
 x 52
 y 8
 end
 arch spikes_closed
-speed 0.500000
-connected 58
 x 52
 y 8
+speed 0.500000
+connected 58
 end
 arch unholy_ground
 x 52
@@ -18902,10 +18917,10 @@ x 52
 y 9
 end
 arch stwall_closed_1
-speed 0.500000
-connected 5
 x 52
 y 9
+speed 0.500000
+connected 5
 end
 arch unholy_ground
 x 52
@@ -18921,18 +18936,18 @@ y 9
 end
 arch check_inv
 slaying keyevm40ad34
-connected 58
 x 52
 y 9
+connected 58
 end
 arch magic_ear
 msg
 @match maji
 Click.
 endmsg
-connected 5
 x 52
 y 10
+connected 5
 end
 arch woodfloor2
 name woodfloor
@@ -19169,9 +19184,9 @@ x 53
 y 6
 end
 arch door_1
-no_pass 0
 x 53
 y 6
+no_pass 0
 end
 arch unholy_ground
 x 53
@@ -19254,9 +19269,9 @@ x 53
 y 10
 end
 arch igate_closed_2
-speed 0.500000
 x 53
 y 10
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -19341,9 +19356,9 @@ x 53
 y 19
 end
 arch igate_closed_2
-speed 0.500000
 x 53
 y 19
+speed 0.500000
 end
 arch afloor_left
 name floor
@@ -19352,17 +19367,17 @@ x 53
 y 20
 end
 arch igate_open_2
+x 53
+y 20
 speed 0.500000
 value 1
 connected 64
-x 53
-y 20
 end
 arch locked_door2
 slaying 109
-blocksview 1
 x 53
 y 20
+blocksview 1
 end
 arch afloor_left
 name floor
@@ -19550,11 +19565,11 @@ x 54
 y 7
 end
 arch chest_2
+x 54
+y 7
 carrying 30000
 no_pick 1
 unique 1
-x 54
-y 7
 end
 arch dungeon_magic
 x 54
@@ -19575,11 +19590,11 @@ x 54
 y 8
 end
 arch chest_2
+x 54
+y 8
 carrying 30000
 no_pick 1
 unique 1
-x 54
-y 8
 end
 arch dungeon_magic
 x 54
@@ -19680,9 +19695,9 @@ x 54
 y 17
 end
 arch chest
-carrying 75000
 x 54
 y 17
+carrying 75000
 arch corpse1
 name corpse of Sarnach
 name_pl corpse of Sarnach
@@ -19713,9 +19728,9 @@ x 54
 y 21
 end
 arch button_lever
-connected 64
 x 54
 y 21
+connected 64
 end
 arch afloor_left
 name floor
@@ -19907,11 +19922,11 @@ x 55
 y 7
 end
 arch chest_2
+x 55
+y 7
 carrying 30000
 no_pick 1
 unique 1
-x 55
-y 7
 end
 arch dungeon_magic
 x 55
@@ -19932,11 +19947,11 @@ x 55
 y 8
 end
 arch chest_2
+x 55
+y 8
 carrying 30000
 no_pick 1
 unique 1
-x 55
-y 8
 end
 arch dungeon_magic
 x 55
@@ -20356,9 +20371,9 @@ end
 arch card
 name playing card
 name_pl playing card
-value 10
 x 56
 y 18
+value 10
 end
 arch afloor_left
 name floor
@@ -20411,9 +20426,9 @@ end
 arch clock
 name grandfather clock
 name_pl grandfather clock
-value 150
 x 56
 y 24
+value 150
 end
 arch woodfloor2
 name woodfloor
@@ -21152,10 +21167,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 58
 y 39
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -21167,10 +21182,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 58
 y 40
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 59
@@ -21369,10 +21384,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 59
 y 38
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -21384,10 +21399,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 59
 y 39
+no_pass 0
+blocksview 0
 end
 arch invis_exit
 slaying tavern
@@ -21399,23 +21414,8 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 59
 y 40
-end
-arch titan
-unaggressive 1
-x 13
-y 21
-end
-arch titan
-unaggressive 1
-x 13
-y 24
-end
-arch titan
-unaggressive 1
-x 13
-y 27
+no_pass 0
+blocksview 0
 end

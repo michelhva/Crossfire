@@ -1,15 +1,15 @@
 arch map
 name Sorig Temple
 region navar
+width 15
+height 15
+enter_x 7
+enter_y 13
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    11/1/2003
 endmsg
-width 15
-height 15
-enter_x 7
-enter_y 13
 end
 arch grass
 end
@@ -581,9 +581,9 @@ arch invis_exit
 slaying /world/world_121_117
 hp 43
 sp 5
-move_on walk
 x 6
 y 14
+move_on walk
 end
 arch flagstone
 x 6
@@ -621,9 +621,9 @@ x 7
 y 5
 end
 arch altar_sorig
-level 120
 x 7
 y 5
+level 120
 end
 arch dungeon_floor
 x 7
@@ -661,9 +661,9 @@ arch invis_exit
 slaying /world/world_121_117
 hp 43
 sp 5
-move_on walk
 x 7
 y 14
+move_on walk
 end
 arch flagstone
 x 7
@@ -702,9 +702,9 @@ The kingdom of Sorig has no limits.
 @match *
 Fear the wrath of Sorig!
 endmsg
-unaggressive 1
 x 8
 y 4
+unaggressive 1
 end
 arch dungeon_floor
 x 8
@@ -770,9 +770,9 @@ arch invis_exit
 slaying /world/world_121_117
 hp 43
 sp 5
-move_on walk
 x 8
 y 14
+move_on walk
 end
 arch flagstone
 x 8

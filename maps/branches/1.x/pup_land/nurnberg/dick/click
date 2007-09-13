@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name click
+region nurnberg
+width 29
+height 22
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 10 06:23:50 1996
 endmsg
-x 29
-y 22
 end
 arch woodfloor
 end
@@ -625,7 +625,7 @@ arch sign
 name Instruction
 msg
 Set your mouse-cursor on the goblin
-and click, then you'll find 
+and click, then you'll find
  goblin
  pit
  woodfloor
@@ -1214,7 +1214,7 @@ y 5
 end
 arch sign
 msg
-Diorama 
+Diorama
 endmsg
 x 10
 y 5
@@ -2192,7 +2192,7 @@ y 13
 end
 arch sign
 msg
-Don't burn the Proof of scroll 
+Don't burn the Proof of scroll
 endmsg
 x 17
 y 13

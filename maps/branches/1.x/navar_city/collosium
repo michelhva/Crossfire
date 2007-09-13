@@ -1,13 +1,13 @@
 arch map
-region navar
 name collosium
+region navar
+width 36
+height 26
 msg
 Creator: Cater & Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 22 13:01:11 1999
 endmsg
-x 36
-y 26
 end
 arch grassmedium
 end
@@ -1465,6 +1465,14 @@ arch dirtfloor
 x 9
 y 9
 end
+arch titan
+name Titus
+x 9
+y 9
+carrying 3000
+arch bracers_ac
+end
+end
 arch dirtfloor
 x 9
 y 10
@@ -2620,6 +2628,14 @@ end
 arch dirtfloor
 x 18
 y 8
+end
+arch titan
+name Markus
+x 18
+y 8
+carrying 23000
+arch trident
+end
 end
 arch dirtfloor
 x 18
@@ -5257,132 +5273,4 @@ end
 arch grassmedium
 x 35
 y 25
-end
-arch titan
-name Titus
-x 9
-y 9
-carrying 3000
-arch bracers_ac
-end
-end
-More
-arch titan_2
-name Titus
-hp 4000
-x 8
-y 9
-end
-More
-arch titan_3
-name Titus
-hp 4000
-x 8
-y 8
-end
-More
-arch titan_4
-name Titus
-hp 4000
-x 9
-y 8
-end
-More
-arch titan_5
-name Titus
-hp 4000
-x 10
-y 8
-end
-More
-arch titan_6
-name Titus
-hp 4000
-x 10
-y 9
-end
-More
-arch titan_7
-name Titus
-hp 4000
-x 10
-y 10
-end
-More
-arch titan_8
-name Titus
-hp 4000
-x 9
-y 10
-end
-More
-arch titan_9
-name Titus
-hp 4000
-x 8
-y 10
-end
-arch titan
-name Markus
-x 18
-y 8
-carrying 23000
-arch trident
-end
-end
-More
-arch titan_2
-name Markus
-hp 4000
-x 17
-y 8
-end
-More
-arch titan_3
-name Markus
-hp 4000
-x 17
-y 7
-end
-More
-arch titan_4
-name Markus
-hp 4000
-x 18
-y 7
-end
-More
-arch titan_5
-name Markus
-hp 4000
-x 19
-y 7
-end
-More
-arch titan_6
-name Markus
-hp 4000
-x 19
-y 8
-end
-More
-arch titan_7
-name Markus
-hp 4000
-x 19
-y 9
-end
-More
-arch titan_8
-name Markus
-hp 4000
-x 18
-y 9
-end
-More
-arch titan_9
-name Markus
-hp 4000
-x 17
-y 9
 end

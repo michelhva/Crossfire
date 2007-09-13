@@ -1,14 +1,15 @@
 arch map
-region portjoseph
 name General store
+region portjoseph
+shopitems weapon:10;food:15;*:-2
+shopmax 5000
+width 19
+height 16
 msg
 Creator:langley 
 Email:llangley@fermat.dartmouth.edu
 Date: Fri May  6 22:24:40 1994
 endmsg
-x 19
-shopitems weapon:10;food:15;*:-2
-shopmax 5000
 end
 arch shop_empty
 end

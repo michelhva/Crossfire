@@ -1,8 +1,8 @@
 arch map
-region nurnberg
 name water7
 reset_timeout 7200
 difficulty 12
+region nurnberg
 width 19
 height 16
 enter_x 1
@@ -1551,7 +1551,7 @@ end
 arch wds
 msg
 The fearful White Dragon Shield,
-woe betide any who oppose the 
+woe betide any who oppose the
 wielder of this in battle
 endmsg
 ac 3

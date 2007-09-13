@@ -1,12 +1,13 @@
 arch map
-region pupland
 name e_hall
+region pupland
+width 17
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun 10 15:22:19 1996
 endmsg
-x 17
 end
 arch blocked
 end
@@ -649,8 +650,8 @@ y 7
 end
 arch sign
 msg
-We constructed this temple to admire 
-the ancient heroes. 
+We constructed this temple to admire
+the ancient heroes.
 endmsg
 x 7
 y 7
@@ -1073,8 +1074,8 @@ arch pedestal
 name 11
 x 12
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch grassdark
 name grass
@@ -1091,8 +1092,8 @@ arch pedestal
 name 11
 x 12
 y 4
-protected 11
 connected 11
+protected 11
 end
 arch grassdark
 name grass
@@ -1182,8 +1183,8 @@ arch pedestal
 name 11
 x 13
 y 2
-protected 11
 connected 11
+protected 11
 end
 arch grassdark
 name grass
@@ -1200,8 +1201,8 @@ arch pedestal
 name 11
 x 13
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch grassdark
 name grass
@@ -1218,8 +1219,8 @@ arch pedestal
 name 11
 x 13
 y 4
-protected 11
 connected 11
+protected 11
 end
 arch grassdark
 name grass
@@ -1549,24 +1550,24 @@ You feel a draft...
 endmsg
 x 16
 y 12
-protected 10
 connected 10
+protected 10
 end
 arch button_small
 name 10
 x 16
 y 12
-protected 10
 weight 1000
 connected 10
+protected 10
 end
 arch creator
 name 11
 other_arch boulder
 x 16
 y 12
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 16

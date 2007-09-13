@@ -1,32 +1,32 @@
 arch map
 name citydeclouds
+reset_timeout 7200
+difficulty 1
 region dream
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: mikeeusa
 Email: gnu@foo.bar
 Date: Wed Aug 28 11:11:32 2002
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 tile_path_1 citydeclouds2B
 tile_path_2 citydeclouds2F
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 end
 arch cwall_3_2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 1
 end
 arch cwall_3_2
@@ -34,8 +34,8 @@ y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 2
 end
 arch cwall_3_2
@@ -43,8 +43,8 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 3
 end
 arch cwall_3_2
@@ -52,8 +52,8 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 4
 end
 arch cwall_3_2
@@ -61,8 +61,8 @@ y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 5
 end
 arch cwall_3_2
@@ -70,8 +70,8 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 6
 end
 arch cwall_3_2
@@ -79,8 +79,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 7
 end
 arch cwall_3_2
@@ -88,8 +88,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 8
 end
 arch cwall_3_2
@@ -97,8 +97,8 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 9
 end
 arch cwall_3_2
@@ -106,8 +106,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 10
 end
 arch cwall_3_2
@@ -115,8 +115,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 11
 end
 arch cwall_3_2
@@ -124,8 +124,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 12
 end
 arch cwall_3_2
@@ -133,8 +133,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 13
 end
 arch cwall_3_2
@@ -142,8 +142,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 14
 end
 arch cwall_3_2
@@ -151,8 +151,8 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 15
 end
 arch cwall_3_2
@@ -160,8 +160,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 16
 end
 arch cwall_3_2
@@ -169,8 +169,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 17
 end
 arch cwall_3_2
@@ -178,8 +178,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 18
 end
 arch cwall_3_2
@@ -187,8 +187,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 19
 end
 arch cwall_3_2
@@ -196,8 +196,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 20
 end
 arch cwall_3_2
@@ -205,8 +205,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 21
 end
 arch cwall_3_2
@@ -214,8 +214,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 22
 end
 arch cwall_3_2
@@ -223,8 +223,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 23
 end
 arch cwall_3_2
@@ -232,8 +232,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 24
 end
 arch cwall_3_2
@@ -241,8 +241,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 25
 end
 arch cwall_3_2
@@ -250,8 +250,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 26
 end
 arch cwall_3_2
@@ -259,8 +259,8 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 27
 end
 arch cwall_3_2
@@ -268,8 +268,8 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 28
 end
 arch cwall_3_2
@@ -277,8 +277,8 @@ y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 29
 end
 arch cwall_3_2
@@ -286,8 +286,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 30
 end
 arch cwall_3_2
@@ -295,8 +295,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 31
 end
 arch cwall_3_2
@@ -304,8 +304,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 32
 end
 arch cwall_3_2
@@ -313,8 +313,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 33
 end
 arch cwall_3_2
@@ -322,8 +322,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 34
 end
 arch cwall_3_2
@@ -331,8 +331,8 @@ y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 35
 end
 arch cwall_3_2
@@ -340,8 +340,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 36
 end
 arch cwall_3_2
@@ -349,8 +349,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 37
 end
 arch cwall_3_2
@@ -358,8 +358,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 38
 end
 arch cwall_3_2
@@ -367,8 +367,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 39
 end
 arch cwall_3_2
@@ -376,8 +376,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 40
 end
 arch cwall_3_2
@@ -385,8 +385,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 41
 end
 arch cwall_3_2
@@ -394,8 +394,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 42
 end
 arch cwall_3_2
@@ -403,8 +403,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 43
 end
 arch cwall_3_2
@@ -412,8 +412,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 44
 end
 arch cwall_3_2
@@ -421,8 +421,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 45
 end
 arch cwall_3_2
@@ -430,8 +430,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 y 46
 end
 arch cwall_2_2_1
@@ -439,8 +439,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 end
 arch cwall_3_4
@@ -448,8 +448,8 @@ x 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 1
 end
@@ -459,8 +459,8 @@ y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 2
 end
@@ -470,8 +470,8 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 3
 end
@@ -481,8 +481,8 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 4
 end
@@ -492,8 +492,8 @@ y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 5
 end
@@ -503,8 +503,8 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 6
 end
@@ -514,8 +514,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 7
 end
@@ -529,8 +529,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 8
 end
@@ -540,8 +540,8 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 9
 end
@@ -551,8 +551,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 10
 end
@@ -562,8 +562,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 11
 end
@@ -573,8 +573,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 12
 end
@@ -584,8 +584,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 13
 end
@@ -595,8 +595,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 14
 end
@@ -606,8 +606,8 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 15
 end
@@ -617,8 +617,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 16
 end
@@ -628,8 +628,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 17
 end
@@ -639,8 +639,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 18
 end
@@ -650,8 +650,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 19
 end
@@ -661,8 +661,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 20
 end
@@ -672,8 +672,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 21
 end
@@ -683,8 +683,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 22
 end
@@ -694,8 +694,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 23
 end
@@ -705,8 +705,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 24
 end
@@ -716,8 +716,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 25
 end
@@ -727,8 +727,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 26
 end
@@ -738,8 +738,8 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 27
 end
@@ -749,8 +749,8 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 28
 end
@@ -760,8 +760,8 @@ y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 29
 end
@@ -771,8 +771,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 30
 end
@@ -782,8 +782,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 31
 end
@@ -793,8 +793,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 32
 end
@@ -804,8 +804,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 33
 end
@@ -815,8 +815,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 34
 end
@@ -826,8 +826,8 @@ y 34
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 35
 end
@@ -837,8 +837,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 36
 end
@@ -848,8 +848,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 37
 end
@@ -859,8 +859,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 38
 end
@@ -870,8 +870,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 39
 end
@@ -881,8 +881,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 40
 end
@@ -892,8 +892,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 41
 end
@@ -903,8 +903,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 42
 end
@@ -914,8 +914,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 43
 end
@@ -925,8 +925,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 44
 end
@@ -936,8 +936,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 45
 end
@@ -947,8 +947,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 1
 y 46
 end
@@ -1136,8 +1136,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 23
 end
@@ -1147,8 +1147,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 24
 end
@@ -1250,8 +1250,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 45
 end
@@ -1261,8 +1261,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 46
 end
@@ -1469,8 +1469,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 23
 end
@@ -1480,8 +1480,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 24
 end
@@ -1531,8 +1531,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 33
 end
@@ -1542,8 +1542,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 34
 end
@@ -1557,8 +1557,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 36
 end
@@ -1568,8 +1568,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 37
 end
@@ -1639,8 +1639,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 45
 end
@@ -1650,8 +1650,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 3
 y 46
 end
@@ -1871,8 +1871,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 23
 end
@@ -1882,8 +1882,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 24
 end
@@ -1933,8 +1933,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 33
 end
@@ -1944,8 +1944,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 34
 end
@@ -1959,8 +1959,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 36
 end
@@ -1970,8 +1970,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 37
 end
@@ -2009,8 +2009,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 45
 end
@@ -2020,8 +2020,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 4
 y 46
 end
@@ -2238,8 +2238,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 23
 end
@@ -2249,8 +2249,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 24
 end
@@ -2316,8 +2316,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 33
 end
@@ -2327,8 +2327,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 34
 end
@@ -2342,8 +2342,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 36
 end
@@ -2353,8 +2353,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 37
 end
@@ -2424,8 +2424,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 45
 end
@@ -2435,8 +2435,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 46
 end
@@ -2621,8 +2621,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 23
 end
@@ -2632,8 +2632,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 24
 end
@@ -2643,8 +2643,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 25
 end
@@ -2654,8 +2654,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 26
 end
@@ -2665,34 +2665,34 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 27
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 6
 y 27
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 28
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 6
 y 28
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 29
 end
@@ -2702,8 +2702,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 30
 end
@@ -2713,8 +2713,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 31
 end
@@ -2724,8 +2724,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 32
 end
@@ -2735,8 +2735,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 33
 end
@@ -2746,8 +2746,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 34
 end
@@ -2761,8 +2761,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 36
 end
@@ -2772,8 +2772,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 37
 end
@@ -2811,8 +2811,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 45
 end
@@ -2822,8 +2822,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 46
 end
@@ -3015,8 +3015,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 23
 end
@@ -3026,8 +3026,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 24
 end
@@ -3037,8 +3037,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 25
 end
@@ -3048,8 +3048,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 26
 end
@@ -3059,34 +3059,34 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 27
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 7
 y 27
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 28
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 7
 y 28
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 29
 end
@@ -3096,8 +3096,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 30
 end
@@ -3107,8 +3107,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 31
 end
@@ -3118,8 +3118,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 32
 end
@@ -3129,8 +3129,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 33
 end
@@ -3140,8 +3140,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 34
 end
@@ -3155,8 +3155,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 36
 end
@@ -3166,8 +3166,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 37
 end
@@ -3237,8 +3237,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 45
 end
@@ -3248,8 +3248,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 46
 end
@@ -3259,14 +3259,14 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 1
 end
@@ -3288,27 +3288,27 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 5
 end
 arch pedestal_trigger
-connected 6161
 x 8
 y 6
+connected 6161
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 6
 end
@@ -3318,33 +3318,33 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 7
 end
 arch igate_closed_1
-speed 0.500000
-connected 6161
 x 8
 y 7
+speed 0.500000
+connected 6161
 end
 arch pedestal_trigger
+x 8
+y 8
 connected 6161
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 8
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 8
-y 8
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 8
 y 9
 end
@@ -3354,134 +3354,134 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 28
 end
@@ -3525,8 +3525,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 33
 end
@@ -3536,8 +3536,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 34
 end
@@ -3551,8 +3551,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 36
 end
@@ -3562,8 +3562,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 37
 end
@@ -3601,8 +3601,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 45
 end
@@ -3612,8 +3612,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 46
 end
@@ -3623,14 +3623,14 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 1
 end
@@ -3652,27 +3652,27 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 5
 end
 arch pedestal_trigger
-connected 6161
 x 9
 y 6
+connected 6161
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 6
 end
@@ -3682,33 +3682,33 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 7
 end
 arch igate_closed_1
-speed 0.500000
-connected 6161
 x 9
 y 7
+speed 0.500000
+connected 6161
 end
 arch pedestal_trigger
+x 9
+y 8
 connected 6161
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 9
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 9
-y 8
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 9
 y 9
 end
@@ -3718,134 +3718,134 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 28
 end
@@ -3891,8 +3891,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 33
 end
@@ -3902,8 +3902,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 34
 end
@@ -3917,8 +3917,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 36
 end
@@ -3928,8 +3928,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 37
 end
@@ -3999,8 +3999,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 45
 end
@@ -4010,8 +4010,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 46
 end
@@ -4021,8 +4021,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 end
 arch knight
@@ -4246,15 +4246,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 28
 end
@@ -4300,8 +4300,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 33
 end
@@ -4311,8 +4311,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 34
 end
@@ -4326,8 +4326,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 36
 end
@@ -4337,8 +4337,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 37
 end
@@ -4376,8 +4376,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 45
 end
@@ -4387,8 +4387,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 46
 end
@@ -4398,8 +4398,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 end
 arch grass
@@ -4620,15 +4620,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 28
 end
@@ -4666,8 +4666,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 33
 end
@@ -4677,8 +4677,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 34
 end
@@ -4692,8 +4692,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 36
 end
@@ -4703,8 +4703,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 37
 end
@@ -4774,8 +4774,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 45
 end
@@ -4785,8 +4785,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 46
 end
@@ -4796,8 +4796,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 end
 arch knight
@@ -5013,15 +5013,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 28
 end
@@ -5063,8 +5063,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 33
 end
@@ -5074,8 +5074,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 34
 end
@@ -5089,8 +5089,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 36
 end
@@ -5100,8 +5100,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 37
 end
@@ -5139,8 +5139,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 45
 end
@@ -5150,8 +5150,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 12
 y 46
 end
@@ -5161,8 +5161,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 end
 arch grass
@@ -5351,20 +5351,20 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 27
 end
 arch pedestal_trigger
-connected 5156
 x 13
 y 28
+connected 5156
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 28
 end
@@ -5375,14 +5375,14 @@ x 13
 y 29
 end
 arch mdoor_closed_2
-connected 5156
 x 13
 y 29
+connected 5156
 end
 arch pedestal_trigger
-connected 5156
 x 13
 y 30
+connected 5156
 end
 arch stonefloor2
 name stonefloor
@@ -5408,8 +5408,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 33
 end
@@ -5419,8 +5419,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 34
 end
@@ -5434,8 +5434,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 36
 end
@@ -5445,8 +5445,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 37
 end
@@ -5516,8 +5516,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 45
 end
@@ -5527,8 +5527,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 46
 end
@@ -5538,8 +5538,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 end
 arch knight
@@ -5735,15 +5735,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 28
 end
@@ -5793,8 +5793,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 33
 end
@@ -5804,8 +5804,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 34
 end
@@ -5819,8 +5819,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 36
 end
@@ -5830,8 +5830,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 37
 end
@@ -5869,8 +5869,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 45
 end
@@ -5880,8 +5880,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 46
 end
@@ -5891,8 +5891,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 end
 arch grass
@@ -6081,15 +6081,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 28
 end
@@ -6135,8 +6135,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 33
 end
@@ -6146,8 +6146,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 34
 end
@@ -6161,8 +6161,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 36
 end
@@ -6172,8 +6172,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 37
 end
@@ -6243,8 +6243,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 45
 end
@@ -6254,8 +6254,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 46
 end
@@ -6265,8 +6265,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 end
 arch knight
@@ -6454,15 +6454,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 28
 end
@@ -6508,8 +6508,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 33
 end
@@ -6519,8 +6519,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 34
 end
@@ -6534,8 +6534,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 36
 end
@@ -6545,8 +6545,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 37
 end
@@ -6584,8 +6584,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 45
 end
@@ -6595,8 +6595,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 46
 end
@@ -6606,8 +6606,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 end
 arch grass
@@ -6808,15 +6808,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 28
 end
@@ -6862,8 +6862,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 33
 end
@@ -6873,8 +6873,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 34
 end
@@ -6888,8 +6888,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 36
 end
@@ -6899,8 +6899,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 37
 end
@@ -6970,8 +6970,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 45
 end
@@ -6981,8 +6981,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 46
 end
@@ -6992,8 +6992,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 end
 arch knight
@@ -7177,15 +7177,15 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 28
 end
@@ -7229,8 +7229,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 33
 end
@@ -7240,8 +7240,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 34
 end
@@ -7255,8 +7255,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 36
 end
@@ -7266,8 +7266,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 37
 end
@@ -7305,8 +7305,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 45
 end
@@ -7316,8 +7316,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 18
 y 46
 end
@@ -7327,8 +7327,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 end
 arch grass
@@ -7477,8 +7477,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 23
 end
@@ -7488,8 +7488,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 24
 end
@@ -7499,8 +7499,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 25
 end
@@ -7510,8 +7510,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 26
 end
@@ -7521,34 +7521,34 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 27
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 19
 y 27
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 28
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 19
 y 28
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 29
 end
@@ -7558,8 +7558,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 30
 end
@@ -7569,8 +7569,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 31
 end
@@ -7580,8 +7580,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 32
 end
@@ -7591,8 +7591,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 33
 end
@@ -7602,8 +7602,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 34
 end
@@ -7617,8 +7617,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 36
 end
@@ -7628,8 +7628,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 37
 end
@@ -7699,8 +7699,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 45
 end
@@ -7710,8 +7710,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 46
 end
@@ -7721,8 +7721,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 end
 arch knight
@@ -7890,8 +7890,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 23
 end
@@ -7901,8 +7901,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 24
 end
@@ -7912,8 +7912,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 25
 end
@@ -7923,8 +7923,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 26
 end
@@ -7934,34 +7934,34 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 27
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 20
 y 27
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 28
 end
 arch grate_open_2
-speed 0.500000
-value 1
 x 20
 y 28
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 29
 end
@@ -7971,8 +7971,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 30
 end
@@ -7982,8 +7982,8 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 31
 end
@@ -7993,8 +7993,8 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 32
 end
@@ -8004,8 +8004,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 33
 end
@@ -8015,8 +8015,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 34
 end
@@ -8030,8 +8030,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 36
 end
@@ -8041,8 +8041,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 37
 end
@@ -8080,8 +8080,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 45
 end
@@ -8091,8 +8091,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 46
 end
@@ -8102,8 +8102,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 end
 arch grass
@@ -8268,8 +8268,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 23
 end
@@ -8279,8 +8279,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 24
 end
@@ -8362,8 +8362,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 36
 end
@@ -8373,8 +8373,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 37
 end
@@ -8444,8 +8444,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 45
 end
@@ -8455,8 +8455,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 46
 end
@@ -8466,8 +8466,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 end
 arch knight
@@ -8635,8 +8635,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 23
 end
@@ -8646,8 +8646,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 24
 end
@@ -8709,8 +8709,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 33
 end
@@ -8720,8 +8720,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 34
 end
@@ -8735,8 +8735,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 36
 end
@@ -8746,8 +8746,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 37
 end
@@ -8785,8 +8785,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 45
 end
@@ -8796,8 +8796,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 46
 end
@@ -8807,14 +8807,14 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 1
 end
@@ -8836,27 +8836,27 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 5
 end
 arch pedestal_trigger
-connected 6162
 x 23
 y 6
+connected 6162
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 6
 end
@@ -8866,33 +8866,33 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 7
 end
 arch igate_closed_1
-speed 0.500000
-connected 6162
 x 23
 y 7
+speed 0.500000
+connected 6162
 end
 arch pedestal_trigger
+x 23
+y 8
 connected 6162
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 23
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 23
-y 8
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 23
 y 9
 end
@@ -8902,120 +8902,120 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 23
 end
 arch grate_open_1
-speed 0.500000
-value 1
 x 23
 y 23
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 24
 end
 arch grate_open_1
-speed 0.500000
-value 1
 x 23
 y 24
+speed 0.500000
+value 1
 end
 arch dungeon_floor
 x 23
@@ -9055,8 +9055,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 33
 end
@@ -9066,8 +9066,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 34
 end
@@ -9081,8 +9081,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 36
 end
@@ -9092,8 +9092,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 37
 end
@@ -9163,8 +9163,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 45
 end
@@ -9174,8 +9174,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 46
 end
@@ -9185,14 +9185,14 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 1
 end
@@ -9214,27 +9214,27 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 5
 end
 arch pedestal_trigger
-connected 6162
 x 24
 y 6
+connected 6162
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 6
 end
@@ -9244,33 +9244,33 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 7
 end
 arch igate_closed_1
-speed 0.500000
-connected 6162
 x 24
 y 7
+speed 0.500000
+connected 6162
 end
 arch pedestal_trigger
+x 24
+y 8
 connected 6162
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 24
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 24
-y 8
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 24
 y 9
 end
@@ -9280,120 +9280,120 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 23
 end
 arch grate_open_1
-speed 0.500000
-value 1
 x 24
 y 23
+speed 0.500000
+value 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 24
 end
 arch grate_open_1
-speed 0.500000
-value 1
 x 24
 y 24
+speed 0.500000
+value 1
 end
 arch dungeon_floor
 x 24
@@ -9433,8 +9433,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 33
 end
@@ -9444,8 +9444,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 34
 end
@@ -9459,8 +9459,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 36
 end
@@ -9470,8 +9470,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 37
 end
@@ -9509,8 +9509,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 45
 end
@@ -9520,8 +9520,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 46
 end
@@ -9713,8 +9713,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 23
 end
@@ -9724,8 +9724,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 24
 end
@@ -9779,8 +9779,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 33
 end
@@ -9790,8 +9790,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 34
 end
@@ -9805,8 +9805,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 36
 end
@@ -9816,8 +9816,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 37
 end
@@ -9887,8 +9887,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 45
 end
@@ -9898,8 +9898,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 46
 end
@@ -10076,8 +10076,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 23
 end
@@ -10087,8 +10087,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 24
 end
@@ -10134,8 +10134,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 33
 end
@@ -10145,8 +10145,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 34
 end
@@ -10160,8 +10160,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 36
 end
@@ -10171,8 +10171,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 37
 end
@@ -10210,8 +10210,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 45
 end
@@ -10221,8 +10221,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 26
 y 46
 end
@@ -10359,8 +10359,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 23
 end
@@ -10370,8 +10370,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 24
 end
@@ -10421,8 +10421,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 33
 end
@@ -10432,8 +10432,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 34
 end
@@ -10447,8 +10447,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 36
 end
@@ -10458,8 +10458,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 37
 end
@@ -10529,8 +10529,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 45
 end
@@ -10540,8 +10540,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 27
 y 46
 end
@@ -10725,8 +10725,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 23
 end
@@ -10736,8 +10736,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 24
 end
@@ -10783,8 +10783,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 33
 end
@@ -10794,8 +10794,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 34
 end
@@ -10809,8 +10809,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 36
 end
@@ -10820,8 +10820,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 37
 end
@@ -10859,8 +10859,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 45
 end
@@ -10870,8 +10870,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 28
 y 46
 end
@@ -11011,9 +11011,9 @@ end
 arch bad_cauldron
 name heater
 name_pl heater
-no_pick 1
 x 29
 y 21
+no_pick 1
 end
 arch woodfloor
 x 29
@@ -11025,8 +11025,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 23
 end
@@ -11036,8 +11036,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 24
 end
@@ -11095,8 +11095,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 33
 end
@@ -11106,8 +11106,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 34
 end
@@ -11121,8 +11121,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 36
 end
@@ -11132,8 +11132,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 37
 end
@@ -11203,8 +11203,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 45
 end
@@ -11214,8 +11214,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 29
 y 46
 end
@@ -11399,8 +11399,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 23
 end
@@ -11410,8 +11410,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 24
 end
@@ -11468,18 +11468,18 @@ x 30
 y 30
 end
 arch pedestal_trigger
-connected 6167
 x 30
 y 31
+connected 6167
 end
 arch dungeon_floor
 x 30
 y 31
 end
 arch pedestal_trigger
-connected 6167
 x 30
 y 32
+connected 6167
 end
 arch dungeon_floor
 x 30
@@ -11487,8 +11487,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 33
 end
@@ -11498,8 +11498,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 34
 end
@@ -11508,9 +11508,9 @@ x 30
 y 34
 end
 arch pedestal_trigger
-connected 6168
 x 30
 y 35
+connected 6168
 end
 arch dungeon_floor
 x 30
@@ -11558,8 +11558,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 45
 end
@@ -11569,8 +11569,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 30
 y 46
 end
@@ -11580,8 +11580,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 end
 arch cwall_3_2
@@ -11589,8 +11589,8 @@ x 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 1
 end
@@ -11600,8 +11600,8 @@ y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 2
 end
@@ -11611,8 +11611,8 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 3
 end
@@ -11622,8 +11622,8 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 4
 end
@@ -11633,8 +11633,8 @@ y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 5
 end
@@ -11644,8 +11644,8 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 6
 end
@@ -11655,8 +11655,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 7
 end
@@ -11670,8 +11670,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 8
 end
@@ -11681,8 +11681,8 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 9
 end
@@ -11692,8 +11692,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 10
 end
@@ -11703,8 +11703,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 11
 end
@@ -11714,8 +11714,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 12
 end
@@ -11725,8 +11725,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 13
 end
@@ -11736,8 +11736,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 14
 end
@@ -11747,8 +11747,8 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 15
 end
@@ -11758,8 +11758,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 16
 end
@@ -11769,8 +11769,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 17
 end
@@ -11780,8 +11780,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 18
 end
@@ -11791,8 +11791,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 19
 end
@@ -11802,8 +11802,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 20
 end
@@ -11813,8 +11813,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 21
 end
@@ -11824,8 +11824,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 22
 end
@@ -11835,8 +11835,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 23
 end
@@ -11846,8 +11846,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 24
 end
@@ -11857,8 +11857,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 25
 end
@@ -11868,8 +11868,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 26
 end
@@ -11879,8 +11879,8 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 27
 end
@@ -11890,8 +11890,8 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 28
 end
@@ -11901,8 +11901,8 @@ y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 29
 end
@@ -11912,8 +11912,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 30
 end
@@ -11927,16 +11927,16 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 31
 end
 arch spikes_closed
-speed 0.500000
-connected 6167
 x 31
 y 31
+speed 0.500000
+connected 6167
 end
 arch dungeon_magic
 x 31
@@ -11944,21 +11944,21 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 32
 end
 arch spikes_closed
-speed 0.500000
-connected 6167
 x 31
 y 32
+speed 0.500000
+connected 6167
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 33
 end
@@ -11968,8 +11968,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 34
 end
@@ -11983,21 +11983,21 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 35
 end
 arch spikes_closed
-speed 0.500000
-connected 6168
 x 31
 y 35
+speed 0.500000
+connected 6168
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 36
 end
@@ -12007,8 +12007,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 37
 end
@@ -12018,8 +12018,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 38
 end
@@ -12029,8 +12029,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 39
 end
@@ -12040,8 +12040,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 40
 end
@@ -12051,8 +12051,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 41
 end
@@ -12062,8 +12062,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 42
 end
@@ -12073,8 +12073,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 43
 end
@@ -12084,8 +12084,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 44
 end
@@ -12095,8 +12095,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 45
 end
@@ -12106,8 +12106,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 31
 y 46
 end
@@ -12117,8 +12117,8 @@ y 46
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 end
 arch cwall_3_4
@@ -12126,8 +12126,8 @@ x 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 1
 end
@@ -12137,8 +12137,8 @@ y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 2
 end
@@ -12148,8 +12148,8 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 3
 end
@@ -12159,8 +12159,8 @@ y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 4
 end
@@ -12170,8 +12170,8 @@ y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 5
 end
@@ -12181,8 +12181,8 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 6
 end
@@ -12192,8 +12192,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 7
 end
@@ -12203,8 +12203,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 8
 end
@@ -12214,8 +12214,8 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 9
 end
@@ -12225,8 +12225,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 10
 end
@@ -12236,8 +12236,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 11
 end
@@ -12247,8 +12247,8 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 12
 end
@@ -12258,8 +12258,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 13
 end
@@ -12269,8 +12269,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 14
 end
@@ -12280,8 +12280,8 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 15
 end
@@ -12291,8 +12291,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 16
 end
@@ -12302,8 +12302,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 17
 end
@@ -12313,8 +12313,8 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 18
 end
@@ -12324,8 +12324,8 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 19
 end
@@ -12335,8 +12335,8 @@ y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 20
 end
@@ -12346,8 +12346,8 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 21
 end
@@ -12357,8 +12357,8 @@ y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 22
 end
@@ -12368,8 +12368,8 @@ y 22
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 23
 end
@@ -12379,8 +12379,8 @@ y 23
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 24
 end
@@ -12390,8 +12390,8 @@ y 24
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 25
 end
@@ -12401,8 +12401,8 @@ y 25
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 26
 end
@@ -12412,8 +12412,8 @@ y 26
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 27
 end
@@ -12423,8 +12423,8 @@ y 27
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 28
 end
@@ -12434,8 +12434,8 @@ y 28
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 29
 end
@@ -12445,8 +12445,8 @@ y 29
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 30
 end
@@ -12460,16 +12460,16 @@ y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 31
 end
 arch grate_closed_2
-speed 0.500000
-connected 6167
 x 32
 y 31
+speed 0.500000
+connected 6167
 end
 arch cityport_b
 x 32
@@ -12481,16 +12481,16 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 32
 end
 arch grate_closed_2
-speed 0.500000
-connected 6167
 x 32
 y 32
+speed 0.500000
+connected 6167
 end
 arch cityport_b
 x 32
@@ -12498,8 +12498,8 @@ y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 33
 end
@@ -12509,8 +12509,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 34
 end
@@ -12524,16 +12524,16 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 35
 end
 arch grate_closed_2
+x 32
+y 35
 speed 0.500000
 connected 6168
-x 32
-y 35
 end
 arch cityport_b
 x 32
@@ -12541,8 +12541,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 36
 end
@@ -12552,8 +12552,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 37
 end
@@ -12563,8 +12563,8 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 38
 end
@@ -12574,8 +12574,8 @@ y 38
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 39
 end
@@ -12585,8 +12585,8 @@ y 39
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 40
 end
@@ -12596,8 +12596,8 @@ y 40
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 41
 end
@@ -12607,8 +12607,8 @@ y 41
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 42
 end
@@ -12618,8 +12618,8 @@ y 42
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 43
 end
@@ -12629,8 +12629,8 @@ y 43
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 44
 end
@@ -12640,8 +12640,8 @@ y 44
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 45
 end
@@ -12651,8 +12651,8 @@ y 45
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 32
 y 46
 end
@@ -13007,34 +13007,34 @@ y 30
 end
 arch check_inv
 slaying cdcmilkeepps1
-connected 6167
 x 33
 y 31
+connected 6167
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 31
 end
 arch check_inv
 slaying cdcmilkeepps1
+x 33
+y 32
 connected 6167
+end
+arch flagstone
+name floor
+name_pl floor
+face shop_empty.111
 x 33
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
-x 33
-y 32
-end
-arch flagstone
-name floor
 face shop_empty.111
-name_pl floor
 x 33
 y 33
 end
@@ -13044,8 +13044,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 34
 end
@@ -13055,9 +13055,9 @@ y 34
 end
 arch check_inv
 slaying cdcmilkeepps1
-connected 6168
 x 33
 y 35
+connected 6168
 end
 arch dungeon_floor
 x 33
@@ -13065,8 +13065,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 36
 end
@@ -13076,8 +13076,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 33
 y 37
 end
@@ -13098,125 +13098,125 @@ x 33
 y 39
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 33
 y 39
+speed 0.500000
+connected 27
 end
 arch cobblestones
 x 33
 y 40
 end
 arch spikes_closed
+x 33
+y 40
 speed 0.500000
 value 1
 connected 26
-x 33
-y 40
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 33
 y 40
+value 800
+identified 1
 end
 arch cobblestones
 x 33
 y 41
 end
 arch igate_closed_1
-speed 0.500000
-connected 25
 x 33
 y 41
-end
-arch cobblestones
-x 33
-y 42
-end
-arch igate_closed_1
-speed 0.500000
-connected 27
-x 33
-y 42
-end
-arch cobblestones
-x 33
-y 43
-end
-arch spikes_closed
-speed 0.500000
-value 1
-connected 26
-x 33
-y 43
-end
-arch card
-name Area Dragon Port Pass
-msg
-He who holds this card is admitted
-passage by way of air from the east area dragon
-port outside of the CityDeClouds.
-endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
-x 33
-y 43
-end
-arch cobblestones
-x 33
-y 44
-end
-arch igate_closed_1
 speed 0.500000
 connected 25
+end
+arch cobblestones
+x 33
+y 42
+end
+arch igate_closed_1
+x 33
+y 42
+speed 0.500000
+connected 27
+end
+arch cobblestones
+x 33
+y 43
+end
+arch spikes_closed
+x 33
+y 43
+speed 0.500000
+value 1
+connected 26
+end
+arch card
+name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
+msg
+He who holds this card is admitted
+passage by way of air from the east area dragon
+port outside of the CityDeClouds.
+endmsg
+x 33
+y 43
+value 800
+identified 1
+end
+arch cobblestones
 x 33
 y 44
+end
+arch igate_closed_1
+x 33
+y 44
+speed 0.500000
+connected 25
 end
 arch cobblestones
 x 33
 y 45
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 33
 y 45
+speed 0.500000
+connected 27
 end
 arch cobblestones
 x 33
 y 46
 end
 arch spikes_closed
+x 33
+y 46
 speed 0.500000
 value 1
 connected 26
-x 33
-y 46
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 33
 y 46
+value 800
+identified 1
 end
 arch cobblestones
 x 33
@@ -13232,25 +13232,25 @@ y 48
 end
 arch button_small
 face button_sma.112
+x 33
+y 48
 value 1
 weight 2
 connected 26
-x 33
-y 48
 end
 arch button_small
 face button_sma.112
-value 1
-connected 21
 x 33
 y 48
+value 1
+connected 21
 end
 arch spikes_open
+x 33
+y 48
 speed 0.500000
 value 1
 connected 20
-x 33
-y 48
 end
 arch boulder
 x 33
@@ -13261,28 +13261,28 @@ x 33
 y 49
 end
 arch button_small
+x 33
+y 49
 weight 4
 connected 27
-x 33
-y 49
 end
 arch button_small
+x 33
+y 49
 weight 2
 connected 20
-x 33
-y 49
 end
 arch button_small
-connected 22
 x 33
 y 49
+connected 22
 end
 arch spikes_closed
+x 33
+y 49
 speed 0.500000
 value 1
 connected 21
-x 33
-y 49
 end
 arch afloor_left
 name floor
@@ -13385,12 +13385,12 @@ y 13
 end
 arch c_woman
 name receptionist
+name_pl receptionist
 msg
 @match *
 We have many nice rooms.
 Please don't hurt me.
 endmsg
-name_pl receptionist
 x 34
 y 13
 end
@@ -13568,22 +13568,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 33
 end
@@ -13593,8 +13593,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 34
 end
@@ -13608,8 +13608,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 36
 end
@@ -13619,8 +13619,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 34
 y 37
 end
@@ -13633,10 +13633,10 @@ x 34
 y 38
 end
 arch igate_closed_1
-speed 0.500000
-connected 25
 x 34
 y 38
+speed 0.500000
+connected 25
 end
 arch cobblestones
 x 34
@@ -13723,15 +13723,15 @@ x 34
 y 49
 end
 arch button_small
-connected 25
 x 34
 y 49
+connected 25
 end
 arch spikes_closed
-speed 0.500000
-connected 22
 x 34
 y 49
+speed 0.500000
+connected 22
 end
 arch afloor_right
 name floor
@@ -13871,10 +13871,10 @@ x 35
 y 18
 end
 arch spikes_closed
+x 35
+y 18
 speed 0.500000
 connected 520
-x 35
-y 18
 end
 arch dungeon_magic
 x 35
@@ -13897,10 +13897,10 @@ x 35
 y 20
 end
 arch spikes_closed
+x 35
+y 20
 speed 0.500000
 connected 521
-x 35
-y 20
 end
 arch dungeon_magic
 x 35
@@ -13923,10 +13923,10 @@ x 35
 y 22
 end
 arch spikes_closed
-speed 0.500000
-connected 522
 x 35
 y 22
+speed 0.500000
+connected 522
 end
 arch dungeon_magic
 x 35
@@ -13949,10 +13949,10 @@ x 35
 y 24
 end
 arch spikes_closed
-speed 0.500000
-connected 523
 x 35
 y 24
+speed 0.500000
+connected 523
 end
 arch dungeon_magic
 x 35
@@ -13987,9 +13987,9 @@ end
 arch longtable_1_1
 name desk
 name_pl desk
-no_pass 1
 x 35
 y 27
+no_pass 1
 end
 arch light2
 x 35
@@ -14002,9 +14002,9 @@ end
 arch longtable_1_2
 name desk
 name_pl desk
-no_pass 1
 x 35
 y 28
+no_pass 1
 end
 arch dungeon_floor
 x 35
@@ -14020,22 +14020,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 33
 end
@@ -14045,8 +14045,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 34
 end
@@ -14060,8 +14060,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 36
 end
@@ -14071,8 +14071,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 35
 y 37
 end
@@ -14093,125 +14093,125 @@ x 35
 y 39
 end
 arch spikes_closed
+x 35
+y 39
 speed 0.500000
 value 1
 connected 26
-x 35
-y 39
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 35
 y 39
+value 800
+identified 1
 end
 arch cobblestones
 x 35
 y 40
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 35
 y 40
+speed 0.500000
+connected 27
 end
 arch cobblestones
 x 35
 y 41
 end
 arch igate_closed_1
-speed 0.500000
-connected 25
 x 35
 y 41
-end
-arch cobblestones
-x 35
-y 42
-end
-arch spikes_closed
-speed 0.500000
-value 1
-connected 26
-x 35
-y 42
-end
-arch card
-name Area Dragon Port Pass
-msg
-He who holds this card is admitted
-passage by way of air from the east area dragon
-port outside of the CityDeClouds.
-endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
-x 35
-y 42
-end
-arch cobblestones
-x 35
-y 43
-end
-arch igate_closed_1
-speed 0.500000
-connected 27
-x 35
-y 43
-end
-arch cobblestones
-x 35
-y 44
-end
-arch igate_closed_1
 speed 0.500000
 connected 25
+end
+arch cobblestones
+x 35
+y 42
+end
+arch spikes_closed
+x 35
+y 42
+speed 0.500000
+value 1
+connected 26
+end
+arch card
+name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
+msg
+He who holds this card is admitted
+passage by way of air from the east area dragon
+port outside of the CityDeClouds.
+endmsg
+x 35
+y 42
+value 800
+identified 1
+end
+arch cobblestones
+x 35
+y 43
+end
+arch igate_closed_1
+x 35
+y 43
+speed 0.500000
+connected 27
+end
+arch cobblestones
 x 35
 y 44
+end
+arch igate_closed_1
+x 35
+y 44
+speed 0.500000
+connected 25
 end
 arch cobblestones
 x 35
 y 45
 end
 arch spikes_closed
+x 35
+y 45
 speed 0.500000
 value 1
 connected 26
-x 35
-y 45
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 35
 y 45
+value 800
+identified 1
 end
 arch cobblestones
 x 35
 y 46
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 35
 y 46
+speed 0.500000
+connected 27
 end
 arch cobblestones
 x 35
@@ -14358,9 +14358,9 @@ arch goldfloor
 name drop 20 gold coins
 name_pl drop 20 gold coins
 food 20
-connected 520
 x 36
 y 18
+connected 520
 end
 arch afloor_left
 name floor
@@ -14378,9 +14378,9 @@ arch goldfloor
 name drop 20 gold coins
 name_pl drop 20 gold coins
 food 20
-connected 521
 x 36
 y 20
+connected 521
 end
 arch afloor_left
 name floor
@@ -14398,9 +14398,9 @@ arch goldfloor
 name drop 20 gold coins
 name_pl drop 20 gold coins
 food 20
-connected 522
 x 36
 y 22
+connected 522
 end
 arch afloor_left
 name floor
@@ -14418,9 +14418,9 @@ arch goldfloor
 name drop 20 gold coins
 name_pl drop 20 gold coins
 food 20
-connected 523
 x 36
 y 24
+connected 523
 end
 arch woodfloor2
 name woodfloor
@@ -14458,19 +14458,19 @@ y 28
 end
 arch altar_trigger
 name 150pp - Area Dragon Port Pass
-face teleporter.111
+name_pl Area Dragon Port Pass - 150pp
+slaying money
 msg
 Your pass will arrive soon.
 Thankyou for your buisness sir.
 endmsg
-name_pl Area Dragon Port Pass - 150pp
-slaying money
+face teleporter.111
 animation teleporter
 food 7500
-connected 20
-is_animated 1
 x 36
 y 28
+connected 20
+is_animated 1
 end
 arch dungeon_floor
 x 36
@@ -14486,22 +14486,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 33
 end
@@ -14511,8 +14511,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 34
 end
@@ -14526,8 +14526,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 36
 end
@@ -14537,8 +14537,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 36
 y 37
 end
@@ -14627,10 +14627,10 @@ x 36
 y 47
 end
 arch igate_closed_1
-speed 0.500000
-connected 25
 x 36
 y 47
+speed 0.500000
+connected 25
 end
 arch cobblestones
 x 36
@@ -14700,9 +14700,9 @@ x 37
 y 7
 end
 arch button_lever
-connected 512
 x 37
 y 7
+connected 512
 end
 arch woodfloor2
 name woodfloor
@@ -14902,22 +14902,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 33
 end
@@ -14927,8 +14927,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 34
 end
@@ -14942,8 +14942,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 36
 end
@@ -14953,8 +14953,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 37
 y 37
 end
@@ -14977,125 +14977,125 @@ x 37
 y 39
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 37
 y 39
+speed 0.500000
+connected 27
 end
 arch cobblestones2
 x 37
 y 40
 end
 arch spikes_closed
+x 37
+y 40
 speed 0.500000
 value 1
 connected 26
-x 37
-y 40
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 37
 y 40
+value 800
+identified 1
 end
 arch cobblestones2
 x 37
 y 41
 end
 arch igate_closed_1
-speed 0.500000
-connected 25
 x 37
 y 41
-end
-arch cobblestones2
-x 37
-y 42
-end
-arch igate_closed_1
-speed 0.500000
-connected 27
-x 37
-y 42
-end
-arch cobblestones2
-x 37
-y 43
-end
-arch spikes_closed
-speed 0.500000
-value 1
-connected 26
-x 37
-y 43
-end
-arch card
-name Area Dragon Port Pass
-msg
-He who holds this card is admitted
-passage by way of air from the east area dragon
-port outside of the CityDeClouds.
-endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
-x 37
-y 43
-end
-arch cobblestones
-x 37
-y 44
-end
-arch igate_closed_1
 speed 0.500000
 connected 25
+end
+arch cobblestones2
+x 37
+y 42
+end
+arch igate_closed_1
+x 37
+y 42
+speed 0.500000
+connected 27
+end
+arch cobblestones2
+x 37
+y 43
+end
+arch spikes_closed
+x 37
+y 43
+speed 0.500000
+value 1
+connected 26
+end
+arch card
+name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
+msg
+He who holds this card is admitted
+passage by way of air from the east area dragon
+port outside of the CityDeClouds.
+endmsg
+x 37
+y 43
+value 800
+identified 1
+end
+arch cobblestones
 x 37
 y 44
+end
+arch igate_closed_1
+x 37
+y 44
+speed 0.500000
+connected 25
 end
 arch cobblestones
 x 37
 y 45
 end
 arch igate_closed_1
-speed 0.500000
-connected 27
 x 37
 y 45
+speed 0.500000
+connected 27
 end
 arch cobblestones
 x 37
 y 46
 end
 arch spikes_closed
+x 37
+y 46
 speed 0.500000
 value 1
 connected 26
-x 37
-y 46
 end
 arch card
 name Area Dragon Port Pass
+name_pl Area Dragon Port Pass
+slaying area_dragon_pass_cdc
 msg
 He who holds this card is admitted
 passage by way of air from the east area dragon
 port outside of the CityDeClouds.
 endmsg
-name_pl Area Dragon Port Pass
-slaying area_dragon_pass_cdc
-value 800
-identified 1
 x 37
 y 46
+value 800
+identified 1
 end
 arch cobblestones
 x 37
@@ -15183,8 +15183,8 @@ x 38
 y 8
 end
 arch locked_door1
-face ldoor_brown1.111
 slaying cc1
+face ldoor_brown1.111
 x 38
 y 8
 end
@@ -15372,22 +15372,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 33
 end
@@ -15397,8 +15397,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 34
 end
@@ -15412,8 +15412,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 36
 end
@@ -15423,8 +15423,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 38
 y 37
 end
@@ -15453,9 +15453,9 @@ x 38
 y 40
 end
 arch wall_2_1_1
-blocksview 0
 x 38
 y 40
+blocksview 0
 end
 arch woodfloor
 x 38
@@ -15575,10 +15575,10 @@ x 39
 y 8
 end
 arch igate_closed_1
-speed 0.500000
-connected 512
 x 39
 y 8
+speed 0.500000
+connected 512
 end
 arch dungeon_magic
 x 39
@@ -15641,9 +15641,9 @@ x 39
 y 16
 end
 arch button_lever
-connected 511
 x 39
 y 16
+connected 511
 end
 arch afloor_right
 name floor
@@ -15725,6 +15725,7 @@ y 27
 end
 arch quarto
 name The Joys of Travel
+name_pl The Joys of Travel
 msg
 Travel can help your sanity stay
 intact. Getting away from the dull
@@ -15734,7 +15735,6 @@ buisness one must have sound mind and
 travel can help in that aspect of the
 trade.
 endmsg
-name_pl The Joys of Travel
 x 39
 y 27
 end
@@ -15760,22 +15760,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 33
 end
@@ -15785,8 +15785,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 34
 end
@@ -15800,8 +15800,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 36
 end
@@ -15811,8 +15811,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 39
 y 37
 end
@@ -15943,10 +15943,10 @@ x 40
 y 15
 end
 arch igate_closed_1
-speed 0.500000
-connected 511
 x 40
 y 15
+speed 0.500000
+connected 511
 end
 arch dungeon_magic
 x 40
@@ -16062,22 +16062,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 33
 end
@@ -16087,8 +16087,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 34
 end
@@ -16102,8 +16102,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 36
 end
@@ -16113,8 +16113,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 40
 y 37
 end
@@ -16203,9 +16203,9 @@ msg
 A rest is good for the warrior
 spirit! Especially a rich one eheheh!
 endmsg
-unaggressive 1
 x 41
 y 9
+unaggressive 1
 end
 arch woodfloor
 x 41
@@ -16236,8 +16236,8 @@ x 41
 y 15
 end
 arch locked_door1
-face ldoor_brown1.111
 slaying cc3
+face ldoor_brown1.111
 x 41
 y 15
 end
@@ -16359,22 +16359,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 33
 end
@@ -16384,8 +16384,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 34
 end
@@ -16399,8 +16399,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 36
 end
@@ -16410,8 +16410,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 41
 y 37
 end
@@ -16467,9 +16467,9 @@ x 42
 y 7
 end
 arch button_lever
-connected 513
 x 42
 y 7
+connected 513
 end
 arch woodfloor2
 name woodfloor
@@ -16661,22 +16661,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 33
 end
@@ -16686,8 +16686,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 34
 end
@@ -16701,8 +16701,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 36
 end
@@ -16712,8 +16712,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 42
 y 37
 end
@@ -16775,8 +16775,8 @@ x 43
 y 8
 end
 arch locked_door1
-face ldoor_brown1.111
 slaying cc2
+face ldoor_brown1.111
 x 43
 y 8
 end
@@ -16829,9 +16829,9 @@ x 43
 y 16
 end
 arch button_lever
-connected 510
 x 43
 y 16
+connected 510
 end
 arch afloor_left
 name floor
@@ -16933,22 +16933,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 33
 end
@@ -16958,8 +16958,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 34
 end
@@ -16973,8 +16973,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 36
 end
@@ -16984,8 +16984,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 43
 y 37
 end
@@ -17047,10 +17047,10 @@ x 44
 y 8
 end
 arch igate_closed_1
-speed 0.500000
-connected 513
 x 44
 y 8
+speed 0.500000
+connected 513
 end
 arch dungeon_magic
 x 44
@@ -17091,10 +17091,10 @@ x 44
 y 15
 end
 arch igate_closed_1
-speed 0.500000
-connected 510
 x 44
 y 15
+speed 0.500000
+connected 510
 end
 arch dungeon_magic
 x 44
@@ -17210,22 +17210,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 33
 end
@@ -17235,8 +17235,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 34
 end
@@ -17250,8 +17250,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 36
 end
@@ -17261,8 +17261,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 44
 y 37
 end
@@ -17374,8 +17374,8 @@ x 45
 y 15
 end
 arch locked_door1
-face ldoor_brown1.111
 slaying cc4
+face ldoor_brown1.111
 x 45
 y 15
 end
@@ -17489,22 +17489,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 33
 end
@@ -17514,8 +17514,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 34
 end
@@ -17529,8 +17529,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 36
 end
@@ -17540,8 +17540,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 45
 y 37
 end
@@ -17679,9 +17679,9 @@ x 46
 y 11
 end
 arch door_look_2
-no_pass 0
 x 46
 y 11
+no_pass 0
 end
 arch woodfloor2
 name woodfloor
@@ -17690,9 +17690,9 @@ x 46
 y 12
 end
 arch door_look_2
-no_pass 0
 x 46
 y 12
+no_pass 0
 end
 arch woodfloor2
 name woodfloor
@@ -17874,22 +17874,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 33
 end
@@ -17899,8 +17899,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 34
 end
@@ -17914,8 +17914,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 36
 end
@@ -17925,8 +17925,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 46
 y 37
 end
@@ -17936,42 +17936,42 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 5
 end
@@ -17981,130 +17981,130 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 10
 end
 arch sign_w
 name Mist Inn
+name_pl Mist Inn
 msg
 Mist Inn is Open
 Cheap Rates
 endmsg
-name_pl Mist Inn
 x 47
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 22
 end
@@ -18142,22 +18142,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 33
 end
@@ -18167,8 +18167,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 34
 end
@@ -18182,8 +18182,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 36
 end
@@ -18193,8 +18193,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 47
 y 37
 end
@@ -18204,161 +18204,161 @@ y 37
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 1
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 3
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 4
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 19
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 22
 end
@@ -18368,11 +18368,11 @@ y 23
 end
 arch sign_w
 name CDC Area Travels LTD.
+name_pl CDC Area Travels LTD.
 msg
 CDC Area Travels LTD.
 Vacation Planning Firm
 endmsg
-name_pl CDC Area Travels LTD.
 x 48
 y 23
 end
@@ -18422,22 +18422,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 33
 end
@@ -18447,8 +18447,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 34
 end
@@ -18462,8 +18462,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 36
 end
@@ -18473,8 +18473,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 48
 y 37
 end
@@ -18658,15 +18658,15 @@ y 20
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 21
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 22
 end
@@ -18745,22 +18745,22 @@ y 30
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 31
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 32
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 33
 end
@@ -18770,8 +18770,8 @@ y 33
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 34
 end
@@ -18785,8 +18785,8 @@ y 35
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 36
 end
@@ -18796,8 +18796,8 @@ y 36
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 49
 y 37
 end

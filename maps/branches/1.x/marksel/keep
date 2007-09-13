@@ -1,14 +1,14 @@
 arch map
 name dm_keep
+width 15
+height 15
+enter_x 7
+enter_y 14
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 12:25:58 1999
 endmsg
-width 15
-height 15
-enter_x 7
-enter_y 14
 end
 arch flagstone
 end
@@ -675,10 +675,10 @@ y 4
 end
 arch locked_door1
 name Council Chamber
+slaying 1
 msg
 You need the silver key to open this door.
 endmsg
-slaying 1
 x 7
 y 4
 end
@@ -793,13 +793,13 @@ msg
 @match *
 You should not be in here
 endmsg
-type 0
 hp 300
+x 8
+y 3
+type 0
 carrying 2500
 monster 1
 unaggressive 1
-x 8
-y 3
 arch staff
 end
 end
@@ -1252,9 +1252,9 @@ x 12
 y 10
 end
 arch dog
-unaggressive 1
 x 12
 y 10
+unaggressive 1
 end
 arch flagstone
 x 12

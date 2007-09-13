@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name oak_twak1
+region lakecountry
+width 14
+height 14
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Fri Apr 21 15:31:36 1995
 endmsg
-width 14
-height 14
 end
 arch jungle_2
 end
@@ -481,8 +481,8 @@ y 8
 end
 arch stair_down
 name Phase spider's web
-face spider_web.111
 slaying /world/world_109_126
+face spider_web.111
 hp 30
 sp 42
 x 7

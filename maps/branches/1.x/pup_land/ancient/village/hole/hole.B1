@@ -1,15 +1,15 @@
 arch map
-region ancientpupland
 name hole
+difficulty 5
+region ancientpupland
+darkness 1
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun  7 19:19:50 1996
 endmsg
-x 20
-y 20
-level 5
-invisible 1
 end
 arch pstone_1
 end
@@ -1422,8 +1422,8 @@ randomitems none
 friendly 1
 can_use_bow 0
 can_use_armour 0
-random_movement 0
 can_use_skill 0
+random_movement 0
 end
 arch pstone_1
 x 11

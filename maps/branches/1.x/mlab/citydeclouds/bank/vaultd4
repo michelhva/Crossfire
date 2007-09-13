@@ -1,16 +1,16 @@
 arch map
 name Vault D4
+reset_timeout 1
+difficulty 1
+width 40
+height 70
+enter_x 1
+enter_y 1
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Wed Aug  4 02:39:40 2004
 endmsg
-width 40
-height 70
-enter_x 1
-enter_y 1
-reset_timeout 1
-difficulty 1
 end
 arch blocked
 end
@@ -385,17 +385,17 @@ x 1
 y 8
 end
 arch flagstone
-unique 1
 x 1
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 11
 x 1
 y 9
+speed 0.000000
+connected 11
 end
 arch card
 msg
@@ -405,17 +405,17 @@ x 1
 y 9
 end
 arch flagstone
-unique 1
 x 1
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 18
 x 1
 y 10
+speed 0.000000
+connected 18
 end
 arch card
 msg
@@ -425,17 +425,17 @@ x 1
 y 10
 end
 arch flagstone
-unique 1
 x 1
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 17
 x 1
 y 11
+speed 0.000000
+connected 17
 end
 arch card
 msg
@@ -449,17 +449,17 @@ x 1
 y 12
 end
 arch flagstone
-unique 1
 x 1
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 41
 x 1
 y 13
+speed 0.000000
+connected 41
 end
 arch card
 msg
@@ -469,17 +469,17 @@ x 1
 y 13
 end
 arch flagstone
-unique 1
 x 1
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 48
 x 1
 y 14
+speed 0.000000
+connected 48
 end
 arch card
 msg
@@ -489,17 +489,17 @@ x 1
 y 14
 end
 arch flagstone
-unique 1
 x 1
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 47
 x 1
 y 15
+speed 0.000000
+connected 47
 end
 arch card
 msg
@@ -940,17 +940,17 @@ x 2
 y 8
 end
 arch flagstone
-unique 1
 x 2
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 12
 x 2
 y 9
+speed 0.000000
+connected 12
 end
 arch card
 msg
@@ -964,17 +964,17 @@ x 2
 y 10
 end
 arch flagstone
-unique 1
 x 2
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 16
 x 2
 y 11
+speed 0.000000
+connected 16
 end
 arch card
 msg
@@ -988,17 +988,17 @@ x 2
 y 12
 end
 arch flagstone
-unique 1
 x 2
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 42
 x 2
 y 13
+speed 0.000000
+connected 42
 end
 arch card
 msg
@@ -1012,17 +1012,17 @@ x 2
 y 14
 end
 arch flagstone
-unique 1
 x 2
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 46
 x 2
 y 15
+speed 0.000000
+connected 46
 end
 arch card
 msg
@@ -1064,42 +1064,42 @@ x 2
 y 35
 end
 arch cobblestones2
-unique 1
 x 2
 y 35
+unique 1
 end
 arch button_plate
+x 2
+y 35
 connected 11
-x 2
-y 35
 end
 arch dungeon_magic
 x 2
 y 36
 end
 arch cobblestones2
-unique 1
 x 2
 y 36
+unique 1
 end
 arch button_plate
+x 2
+y 36
 connected 18
-x 2
-y 36
 end
 arch dungeon_magic
 x 2
 y 37
 end
 arch cobblestones2
-unique 1
 x 2
 y 37
+unique 1
 end
 arch button_plate
+x 2
+y 37
 connected 17
-x 2
-y 37
 end
 arch dungeon_magic
 x 2
@@ -1118,42 +1118,42 @@ x 2
 y 39
 end
 arch cobblestones2
-unique 1
 x 2
 y 39
+unique 1
 end
 arch button_plate
+x 2
+y 39
 connected 21
-x 2
-y 39
 end
 arch dungeon_magic
 x 2
 y 40
 end
 arch cobblestones2
-unique 1
 x 2
 y 40
+unique 1
 end
 arch button_plate
+x 2
+y 40
 connected 28
-x 2
-y 40
 end
 arch dungeon_magic
 x 2
 y 41
 end
 arch cobblestones2
-unique 1
 x 2
 y 41
+unique 1
 end
 arch button_plate
-connected 27
 x 2
 y 41
+connected 27
 end
 arch dungeon_magic
 x 2
@@ -1172,42 +1172,42 @@ x 2
 y 43
 end
 arch cobblestones2
-unique 1
 x 2
 y 43
+unique 1
 end
 arch button_plate
+x 2
+y 43
 connected 31
-x 2
-y 43
 end
 arch dungeon_magic
 x 2
 y 44
 end
 arch cobblestones2
-unique 1
 x 2
 y 44
+unique 1
 end
 arch button_plate
+x 2
+y 44
 connected 38
-x 2
-y 44
 end
 arch dungeon_magic
 x 2
 y 45
 end
 arch cobblestones2
-unique 1
 x 2
 y 45
+unique 1
 end
 arch button_plate
-connected 37
 x 2
 y 45
+connected 37
 end
 arch dungeon_magic
 x 2
@@ -1440,17 +1440,17 @@ x 3
 y 8
 end
 arch flagstone
-unique 1
 x 3
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 13
 x 3
 y 9
+speed 0.000000
+connected 13
 end
 arch card
 msg
@@ -1460,17 +1460,17 @@ x 3
 y 9
 end
 arch flagstone
-unique 1
 x 3
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 14
 x 3
 y 10
+speed 0.000000
+connected 14
 end
 arch card
 msg
@@ -1480,17 +1480,17 @@ x 3
 y 10
 end
 arch flagstone
-unique 1
 x 3
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 15
 x 3
 y 11
+speed 0.000000
+connected 15
 end
 arch card
 msg
@@ -1504,17 +1504,17 @@ x 3
 y 12
 end
 arch flagstone
-unique 1
 x 3
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 43
 x 3
 y 13
+speed 0.000000
+connected 43
 end
 arch card
 msg
@@ -1524,17 +1524,17 @@ x 3
 y 13
 end
 arch flagstone
-unique 1
 x 3
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 44
 x 3
 y 14
+speed 0.000000
+connected 44
 end
 arch card
 msg
@@ -1544,17 +1544,17 @@ x 3
 y 14
 end
 arch flagstone
-unique 1
 x 3
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 45
 x 3
 y 15
+speed 0.000000
+connected 45
 end
 arch card
 msg
@@ -1596,30 +1596,30 @@ x 3
 y 35
 end
 arch cobblestones2
-unique 1
 x 3
 y 35
+unique 1
 end
 arch button_plate
+x 3
+y 35
 connected 12
-x 3
-y 35
 end
 arch dungeon_magic
 x 3
 y 36
 end
 arch cobblestones2
-unique 1
 x 3
 y 36
+unique 1
 end
 arch spikes_open
+x 3
+y 36
 speed 0.500000
 value 1
 connected 1
-x 3
-y 36
 end
 arch boulder
 x 3
@@ -1630,14 +1630,14 @@ x 3
 y 37
 end
 arch cobblestones2
-unique 1
 x 3
 y 37
+unique 1
 end
 arch button_plate
+x 3
+y 37
 connected 16
-x 3
-y 37
 end
 arch dungeon_magic
 x 3
@@ -1656,30 +1656,30 @@ x 3
 y 39
 end
 arch cobblestones2
-unique 1
 x 3
 y 39
+unique 1
 end
 arch button_plate
+x 3
+y 39
 connected 22
-x 3
-y 39
 end
 arch dungeon_magic
 x 3
 y 40
 end
 arch cobblestones2
-unique 1
 x 3
 y 40
+unique 1
 end
 arch spikes_open
+x 3
+y 40
 speed 0.500000
 value 1
 connected 1
-x 3
-y 40
 end
 arch boulder
 x 3
@@ -1690,14 +1690,14 @@ x 3
 y 41
 end
 arch cobblestones2
-unique 1
 x 3
 y 41
+unique 1
 end
 arch button_plate
-connected 26
 x 3
 y 41
+connected 26
 end
 arch dungeon_magic
 x 3
@@ -1716,30 +1716,30 @@ x 3
 y 43
 end
 arch cobblestones2
-unique 1
 x 3
 y 43
+unique 1
 end
 arch button_plate
-connected 32
 x 3
 y 43
+connected 32
 end
 arch dungeon_magic
 x 3
 y 44
 end
 arch cobblestones2
-unique 1
 x 3
 y 44
+unique 1
 end
 arch spikes_open
+x 3
+y 44
 speed 0.500000
 value 1
 connected 1
-x 3
-y 44
 end
 arch boulder
 x 3
@@ -1750,14 +1750,14 @@ x 3
 y 45
 end
 arch cobblestones2
-unique 1
 x 3
 y 45
+unique 1
 end
 arch button_plate
-connected 36
 x 3
 y 45
+connected 36
 end
 arch dungeon_magic
 x 3
@@ -2047,42 +2047,42 @@ x 4
 y 35
 end
 arch cobblestones2
-unique 1
 x 4
 y 35
+unique 1
 end
 arch button_plate
+x 4
+y 35
 connected 13
-x 4
-y 35
 end
 arch dungeon_magic
 x 4
 y 36
 end
 arch cobblestones2
-unique 1
 x 4
 y 36
+unique 1
 end
 arch button_plate
+x 4
+y 36
 connected 14
-x 4
-y 36
 end
 arch dungeon_magic
 x 4
 y 37
 end
 arch cobblestones2
-unique 1
 x 4
 y 37
+unique 1
 end
 arch button_plate
+x 4
+y 37
 connected 15
-x 4
-y 37
 end
 arch dungeon_magic
 x 4
@@ -2101,42 +2101,42 @@ x 4
 y 39
 end
 arch cobblestones2
-unique 1
 x 4
 y 39
+unique 1
 end
 arch button_plate
+x 4
+y 39
 connected 23
-x 4
-y 39
 end
 arch dungeon_magic
 x 4
 y 40
 end
 arch cobblestones2
-unique 1
 x 4
 y 40
+unique 1
 end
 arch button_plate
+x 4
+y 40
 connected 24
-x 4
-y 40
 end
 arch dungeon_magic
 x 4
 y 41
 end
 arch cobblestones2
-unique 1
 x 4
 y 41
+unique 1
 end
 arch button_plate
-connected 25
 x 4
 y 41
+connected 25
 end
 arch dungeon_magic
 x 4
@@ -2155,42 +2155,42 @@ x 4
 y 43
 end
 arch cobblestones2
-unique 1
 x 4
 y 43
+unique 1
 end
 arch button_plate
+x 4
+y 43
 connected 33
-x 4
-y 43
 end
 arch dungeon_magic
 x 4
 y 44
 end
 arch cobblestones2
-unique 1
 x 4
 y 44
+unique 1
 end
 arch button_plate
+x 4
+y 44
 connected 34
-x 4
-y 44
 end
 arch dungeon_magic
 x 4
 y 45
 end
 arch cobblestones2
-unique 1
 x 4
 y 45
+unique 1
 end
 arch button_plate
-connected 35
 x 4
 y 45
+connected 35
 end
 arch dungeon_magic
 x 4
@@ -2420,17 +2420,17 @@ x 5
 y 8
 end
 arch flagstone
-unique 1
 x 5
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 21
 x 5
 y 9
+speed 0.000000
+connected 21
 end
 arch card
 msg
@@ -2440,17 +2440,17 @@ x 5
 y 9
 end
 arch flagstone
-unique 1
 x 5
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 28
 x 5
 y 10
+speed 0.000000
+connected 28
 end
 arch card
 msg
@@ -2460,17 +2460,17 @@ x 5
 y 10
 end
 arch flagstone
-unique 1
 x 5
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 27
 x 5
 y 11
+speed 0.000000
+connected 27
 end
 arch card
 msg
@@ -2484,17 +2484,17 @@ x 5
 y 12
 end
 arch flagstone
-unique 1
 x 5
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 51
 x 5
 y 13
+speed 0.000000
+connected 51
 end
 arch card
 msg
@@ -2504,17 +2504,17 @@ x 5
 y 13
 end
 arch flagstone
-unique 1
 x 5
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 58
 x 5
 y 14
+speed 0.000000
+connected 58
 end
 arch card
 msg
@@ -2524,17 +2524,17 @@ x 5
 y 14
 end
 arch flagstone
-unique 1
 x 5
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 57
 x 5
 y 15
+speed 0.000000
+connected 57
 end
 arch card
 msg
@@ -2931,17 +2931,17 @@ x 6
 y 8
 end
 arch flagstone
-unique 1
 x 6
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 22
 x 6
 y 9
+speed 0.000000
+connected 22
 end
 arch card
 msg
@@ -2955,17 +2955,17 @@ x 6
 y 10
 end
 arch flagstone
-unique 1
 x 6
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 26
 x 6
 y 11
+speed 0.000000
+connected 26
 end
 arch card
 msg
@@ -2979,17 +2979,17 @@ x 6
 y 12
 end
 arch flagstone
-unique 1
 x 6
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 52
 x 6
 y 13
+speed 0.000000
+connected 52
 end
 arch card
 msg
@@ -3003,17 +3003,17 @@ x 6
 y 14
 end
 arch flagstone
-unique 1
 x 6
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 56
 x 6
 y 15
+speed 0.000000
+connected 56
 end
 arch card
 msg
@@ -3057,9 +3057,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 35
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3068,9 +3068,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 36
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3079,9 +3079,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 37
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3090,9 +3090,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 38
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3101,9 +3101,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 39
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3112,9 +3112,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 40
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3123,9 +3123,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 41
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3134,9 +3134,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 42
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3145,9 +3145,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 43
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3156,9 +3156,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 44
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3167,9 +3167,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 6
 y 45
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3204,11 +3204,11 @@ x 6
 y 48
 end
 arch spikes_open
+x 6
+y 48
 speed 2.000000
 value 1
 connected 99
-x 6
-y 48
 end
 arch dungeon_magic
 x 6
@@ -3243,11 +3243,11 @@ x 6
 y 51
 end
 arch spikes_open
+x 6
+y 51
 speed 2.000000
 value 1
 connected 99
-x 6
-y 51
 end
 arch dungeon_magic
 x 6
@@ -3408,17 +3408,17 @@ x 7
 y 8
 end
 arch flagstone
-unique 1
 x 7
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 23
 x 7
 y 9
+speed 0.000000
+connected 23
 end
 arch card
 msg
@@ -3428,17 +3428,17 @@ x 7
 y 9
 end
 arch flagstone
-unique 1
 x 7
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 24
 x 7
 y 10
+speed 0.000000
+connected 24
 end
 arch card
 msg
@@ -3448,17 +3448,17 @@ x 7
 y 10
 end
 arch flagstone
-unique 1
 x 7
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 25
 x 7
 y 11
+speed 0.000000
+connected 25
 end
 arch card
 msg
@@ -3472,17 +3472,17 @@ x 7
 y 12
 end
 arch flagstone
-unique 1
 x 7
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 53
 x 7
 y 13
+speed 0.000000
+connected 53
 end
 arch card
 msg
@@ -3492,17 +3492,17 @@ x 7
 y 13
 end
 arch flagstone
-unique 1
 x 7
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 54
 x 7
 y 14
+speed 0.000000
+connected 54
 end
 arch card
 msg
@@ -3512,17 +3512,17 @@ x 7
 y 14
 end
 arch flagstone
-unique 1
 x 7
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 55
 x 7
 y 15
+speed 0.000000
+connected 55
 end
 arch card
 msg
@@ -3566,9 +3566,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 35
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3577,9 +3577,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 36
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3588,9 +3588,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 37
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3599,9 +3599,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 38
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3610,9 +3610,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 39
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3621,9 +3621,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 40
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3632,9 +3632,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 41
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3643,9 +3643,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 42
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3654,9 +3654,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 43
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3665,9 +3665,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 44
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3676,9 +3676,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 7
 y 45
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -3713,11 +3713,11 @@ x 7
 y 48
 end
 arch spikes_open
+x 7
+y 48
 speed 2.000000
 value 1
 connected 99
-x 7
-y 48
 end
 arch dungeon_magic
 x 7
@@ -3752,11 +3752,11 @@ x 7
 y 51
 end
 arch spikes_open
+x 7
+y 51
 speed 2.000000
 value 1
 connected 99
-x 7
-y 51
 end
 arch dungeon_magic
 x 7
@@ -3824,72 +3824,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 601
 x 7
 y 58
+connected 601
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 602
 x 7
 y 58
+connected 602
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 603
 x 7
 y 58
+connected 603
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 604
 x 7
 y 58
+connected 604
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 605
 x 7
 y 58
+connected 605
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 606
 x 7
 y 58
+connected 606
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 607
 x 7
 y 58
+connected 607
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 608
 x 7
 y 58
+connected 608
 end
 arch marble
 name 6
@@ -3914,72 +3914,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 501
 x 7
 y 60
+connected 501
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 502
 x 7
 y 60
+connected 502
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 503
 x 7
 y 60
+connected 503
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 504
 x 7
 y 60
+connected 504
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 505
 x 7
 y 60
+connected 505
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 506
 x 7
 y 60
+connected 506
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 507
 x 7
 y 60
+connected 507
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 508
 x 7
 y 60
+connected 508
 end
 arch marble
 name 5
@@ -4126,9 +4126,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 35
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4137,9 +4137,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 36
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4148,9 +4148,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 37
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4159,9 +4159,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 38
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4170,9 +4170,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 39
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4181,9 +4181,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 40
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4192,9 +4192,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 41
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4203,9 +4203,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 42
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4214,9 +4214,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 43
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4225,9 +4225,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 44
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4236,9 +4236,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 8
 y 45
+unique 1
 end
 arch dungeon_magic
 x 8
@@ -4251,17 +4251,17 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 46
+speed 0.500000
+connected 9999
 end
 arch grate_open_1
+x 8
+y 46
 speed 0.500000
 value 1
 connected 1100001
-x 8
-y 46
 end
 arch dungeon_magic
 x 8
@@ -4274,10 +4274,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 47
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 8
@@ -4288,11 +4288,11 @@ x 8
 y 48
 end
 arch spikes_open
+x 8
+y 48
 speed 2.000000
 value 1
 connected 99
-x 8
-y 48
 end
 arch dungeon_magic
 x 8
@@ -4305,10 +4305,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 49
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 8
@@ -4321,10 +4321,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 50
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 8
@@ -4335,11 +4335,11 @@ x 8
 y 51
 end
 arch spikes_open
+x 8
+y 51
 speed 2.000000
 value 1
 connected 99
-x 8
-y 51
 end
 arch dungeon_magic
 x 8
@@ -4352,10 +4352,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 52
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 8
@@ -4368,10 +4368,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 8
 y 53
+speed 0.500000
+connected 9999
 end
 arch cityport_a
 x 8
@@ -4511,17 +4511,17 @@ x 9
 y 8
 end
 arch flagstone
-unique 1
 x 9
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 31
 x 9
 y 9
+speed 0.000000
+connected 31
 end
 arch card
 msg
@@ -4531,17 +4531,17 @@ x 9
 y 9
 end
 arch flagstone
-unique 1
 x 9
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 38
 x 9
 y 10
+speed 0.000000
+connected 38
 end
 arch card
 msg
@@ -4551,17 +4551,17 @@ x 9
 y 10
 end
 arch flagstone
-unique 1
 x 9
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 37
 x 9
 y 11
+speed 0.000000
+connected 37
 end
 arch card
 msg
@@ -4575,17 +4575,17 @@ x 9
 y 12
 end
 arch flagstone
-unique 1
 x 9
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 61
 x 9
 y 13
+speed 0.000000
+connected 61
 end
 arch card
 msg
@@ -4595,17 +4595,17 @@ x 9
 y 13
 end
 arch flagstone
-unique 1
 x 9
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 68
 x 9
 y 14
+speed 0.000000
+connected 68
 end
 arch card
 msg
@@ -4615,17 +4615,17 @@ x 9
 y 14
 end
 arch flagstone
-unique 1
 x 9
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 67
 x 9
 y 15
+speed 0.000000
+connected 67
 end
 arch card
 msg
@@ -4669,9 +4669,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 35
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4680,9 +4680,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 36
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4691,9 +4691,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 37
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4702,9 +4702,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 38
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4713,9 +4713,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 39
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4724,9 +4724,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 40
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4735,9 +4735,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 41
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4746,9 +4746,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 42
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4757,9 +4757,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 43
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4768,9 +4768,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 44
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4779,9 +4779,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 9
 y 45
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4794,17 +4794,17 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 46
+speed 0.500000
+connected 9999
 end
 arch grate_open_1
+x 9
+y 46
 speed 0.500000
 value 1
 connected 1100001
-x 9
-y 46
 end
 arch dungeon_magic
 x 9
@@ -4817,10 +4817,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 47
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 9
@@ -4831,11 +4831,11 @@ x 9
 y 48
 end
 arch spikes_open
+x 9
+y 48
 speed 2.000000
 value 1
 connected 99
-x 9
-y 48
 end
 arch dungeon_magic
 x 9
@@ -4848,10 +4848,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 49
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 9
@@ -4864,10 +4864,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 50
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 9
@@ -4878,11 +4878,11 @@ x 9
 y 51
 end
 arch spikes_open
+x 9
+y 51
 speed 2.000000
 value 1
 connected 99
-x 9
-y 51
 end
 arch dungeon_magic
 x 9
@@ -4895,10 +4895,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 52
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 9
@@ -4911,10 +4911,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 9
 y 53
+speed 0.500000
+connected 9999
 end
 arch cityport_a
 x 9
@@ -4954,72 +4954,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 101
 x 9
 y 57
+connected 101
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 102
 x 9
 y 57
+connected 102
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 103
 x 9
 y 57
+connected 103
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 104
 x 9
 y 57
+connected 104
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 105
 x 9
 y 57
+connected 105
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 106
 x 9
 y 57
+connected 106
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 107
 x 9
 y 57
+connected 107
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 108
 x 9
 y 57
+connected 108
 end
 arch marble
 name 1
@@ -5060,72 +5060,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 401
 x 9
 y 61
+connected 401
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 402
 x 9
 y 61
+connected 402
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 403
 x 9
 y 61
+connected 403
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 404
 x 9
 y 61
+connected 404
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 405
 x 9
 y 61
+connected 405
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 406
 x 9
 y 61
+connected 406
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 407
 x 9
 y 61
+connected 407
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 408
 x 9
 y 61
+connected 408
 end
 arch marble
 name 4
@@ -5202,17 +5202,17 @@ x 10
 y 8
 end
 arch flagstone
-unique 1
 x 10
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 32
 x 10
 y 9
+speed 0.000000
+connected 32
 end
 arch card
 msg
@@ -5226,17 +5226,17 @@ x 10
 y 10
 end
 arch flagstone
-unique 1
 x 10
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 36
 x 10
 y 11
+speed 0.000000
+connected 36
 end
 arch card
 msg
@@ -5250,17 +5250,17 @@ x 10
 y 12
 end
 arch flagstone
-unique 1
 x 10
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 62
 x 10
 y 13
+speed 0.000000
+connected 62
 end
 arch card
 msg
@@ -5274,17 +5274,17 @@ x 10
 y 14
 end
 arch flagstone
-unique 1
 x 10
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 66
 x 10
 y 15
+speed 0.000000
+connected 66
 end
 arch card
 msg
@@ -5328,9 +5328,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 35
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5339,9 +5339,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 36
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5350,9 +5350,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 37
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5361,9 +5361,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 38
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5372,9 +5372,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 39
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5383,9 +5383,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 40
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5394,9 +5394,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 41
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5405,9 +5405,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 42
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5416,9 +5416,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 43
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5427,9 +5427,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 44
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5438,9 +5438,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 10
 y 45
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5453,17 +5453,17 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 46
+speed 0.500000
+connected 9999
 end
 arch grate_open_1
+x 10
+y 46
 speed 0.500000
 value 1
 connected 1100001
-x 10
-y 46
 end
 arch dungeon_magic
 x 10
@@ -5476,10 +5476,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 47
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 10
@@ -5490,11 +5490,11 @@ x 10
 y 48
 end
 arch spikes_open
+x 10
+y 48
 speed 2.000000
 value 1
 connected 99
-x 10
-y 48
 end
 arch dungeon_magic
 x 10
@@ -5507,10 +5507,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 49
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 10
@@ -5523,10 +5523,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 50
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 10
@@ -5537,11 +5537,11 @@ x 10
 y 51
 end
 arch spikes_open
+x 10
+y 51
 speed 2.000000
 value 1
 connected 99
-x 10
-y 51
 end
 arch dungeon_magic
 x 10
@@ -5554,10 +5554,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 52
+speed 0.500000
+connected 9999
 end
 arch dungeon_magic
 x 10
@@ -5570,10 +5570,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 9999
 x 10
 y 53
+speed 0.500000
+connected 9999
 end
 arch cityport_a
 x 10
@@ -5713,17 +5713,17 @@ x 11
 y 8
 end
 arch flagstone
-unique 1
 x 11
 y 9
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 33
 x 11
 y 9
+speed 0.000000
+connected 33
 end
 arch card
 msg
@@ -5733,17 +5733,17 @@ x 11
 y 9
 end
 arch flagstone
-unique 1
 x 11
 y 10
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 34
 x 11
 y 10
+speed 0.000000
+connected 34
 end
 arch card
 msg
@@ -5753,17 +5753,17 @@ x 11
 y 10
 end
 arch flagstone
-unique 1
 x 11
 y 11
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 35
 x 11
 y 11
+speed 0.000000
+connected 35
 end
 arch card
 msg
@@ -5777,17 +5777,17 @@ x 11
 y 12
 end
 arch flagstone
-unique 1
 x 11
 y 13
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 63
 x 11
 y 13
+speed 0.000000
+connected 63
 end
 arch card
 msg
@@ -5797,17 +5797,17 @@ x 11
 y 13
 end
 arch flagstone
-unique 1
 x 11
 y 14
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 64
 x 11
 y 14
+speed 0.000000
+connected 64
 end
 arch card
 msg
@@ -5817,17 +5817,17 @@ x 11
 y 14
 end
 arch flagstone
-unique 1
 x 11
 y 15
+unique 1
 end
 arch teleporter
 hp 13
 sp 1
-speed 0.000000
-connected 65
 x 11
 y 15
+speed 0.000000
+connected 65
 end
 arch card
 msg
@@ -5845,216 +5845,216 @@ name apple
 name_pl apple
 slaying apple
 food 1
+x 11
+y 17
 connected 101
-x 11
-y 17
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
+x 11
+y 17
 connected 102
-x 11
-y 17
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
+x 11
+y 17
 connected 103
-x 11
-y 17
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
+x 11
+y 17
 connected 104
-x 11
-y 17
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
+x 11
+y 17
 connected 105
-x 11
-y 17
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
+x 11
+y 17
 connected 106
-x 11
-y 17
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
+x 11
+y 17
 connected 107
-x 11
-y 17
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
+x 11
+y 17
 connected 108
-x 11
-y 17
 end
 arch altar
 name apple
 name_pl apple
 slaying apple
 food 1
+x 11
+y 18
 connected 801
-x 11
-y 18
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 802
 x 11
 y 18
+connected 802
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 803
 x 11
 y 18
+connected 803
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 804
 x 11
 y 18
+connected 804
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 805
 x 11
 y 18
+connected 805
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 806
 x 11
 y 18
+connected 806
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 807
 x 11
 y 18
+connected 807
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 808
 x 11
 y 18
+connected 808
 end
 arch altar
 name apple
 name_pl apple
 slaying apple
 food 1
-connected 701
 x 11
 y 19
+connected 701
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 702
 x 11
 y 19
+connected 702
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 703
 x 11
 y 19
+connected 703
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 704
 x 11
 y 19
+connected 704
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 705
 x 11
 y 19
+connected 705
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 706
 x 11
 y 19
+connected 706
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 707
 x 11
 y 19
+connected 707
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 708
 x 11
 y 19
+connected 708
 end
 arch dungeon_magic
 x 11
@@ -6087,9 +6087,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 35
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6098,9 +6098,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 36
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6109,9 +6109,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 37
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6120,9 +6120,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 38
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6131,9 +6131,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 39
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6142,9 +6142,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 40
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6153,9 +6153,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 41
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6164,9 +6164,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 42
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6175,9 +6175,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 43
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6186,9 +6186,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 44
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6197,9 +6197,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 11
 y 45
+unique 1
 end
 arch dungeon_magic
 x 11
@@ -6234,11 +6234,11 @@ x 11
 y 48
 end
 arch spikes_open
+x 11
+y 48
 speed 2.000000
 value 1
 connected 99
-x 11
-y 48
 end
 arch dungeon_magic
 x 11
@@ -6273,11 +6273,11 @@ x 11
 y 51
 end
 arch spikes_open
+x 11
+y 51
 speed 2.000000
 value 1
 connected 99
-x 11
-y 51
 end
 arch dungeon_magic
 x 11
@@ -6345,72 +6345,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 201
 x 11
 y 58
+connected 201
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 202
 x 11
 y 58
+connected 202
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 203
 x 11
 y 58
+connected 203
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 204
 x 11
 y 58
+connected 204
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 205
 x 11
 y 58
+connected 205
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 206
 x 11
 y 58
+connected 206
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 207
 x 11
 y 58
+connected 207
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 208
 x 11
 y 58
+connected 208
 end
 arch marble
 name 2
@@ -6435,72 +6435,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 301
 x 11
 y 60
+connected 301
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 302
 x 11
 y 60
+connected 302
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 303
 x 11
 y 60
+connected 303
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 304
 x 11
 y 60
+connected 304
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 305
 x 11
 y 60
+connected 305
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 306
 x 11
 y 60
+connected 306
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 307
 x 11
 y 60
+connected 307
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 308
 x 11
 y 60
+connected 308
 end
 arch marble
 name 3
@@ -6649,144 +6649,144 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 201
 x 12
 y 17
+connected 201
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 202
 x 12
 y 17
+connected 202
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 203
 x 12
 y 17
+connected 203
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 204
 x 12
 y 17
+connected 204
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 205
 x 12
 y 17
+connected 205
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 206
 x 12
 y 17
+connected 206
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 207
 x 12
 y 17
+connected 207
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 208
 x 12
 y 17
+connected 208
 end
 arch altar
 name apple
 name_pl apple
 slaying apple
 food 1
-connected 601
 x 12
 y 19
+connected 601
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 602
 x 12
 y 19
+connected 602
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 603
 x 12
 y 19
+connected 603
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 604
 x 12
 y 19
+connected 604
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 605
 x 12
 y 19
+connected 605
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 606
 x 12
 y 19
+connected 606
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 607
 x 12
 y 19
+connected 607
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 608
 x 12
 y 19
+connected 608
 end
 arch dungeon_magic
 x 12
@@ -6819,9 +6819,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 35
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6830,9 +6830,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 36
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6841,9 +6841,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 37
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6852,9 +6852,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 38
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6863,9 +6863,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 39
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6874,9 +6874,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 40
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6885,9 +6885,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 41
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6896,9 +6896,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 42
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6907,9 +6907,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 43
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6918,9 +6918,9 @@ end
 arch cobblestones2
 name vault floor
 name_pl vault floor
-unique 1
 x 12
 y 44
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -6929,23 +6929,23 @@ end
 arch cobblestones2
 name standard floor
 name_pl standard floor
-unique 1
 x 12
 y 45
+unique 1
 end
 arch button_lever
 name Reset Lock
 name_pl Reset Lock
-connected 98
 x 12
 y 45
+connected 98
 end
 arch button_lever
 name Raise Gate
 name_pl Raise Gate
-connected 1100001
 x 12
 y 45
+connected 1100001
 end
 arch dungeon_magic
 x 12
@@ -6980,11 +6980,11 @@ x 12
 y 48
 end
 arch spikes_open
+x 12
+y 48
 speed 2.000000
 value 1
 connected 99
-x 12
-y 48
 end
 arch dungeon_magic
 x 12
@@ -7019,11 +7019,11 @@ x 12
 y 51
 end
 arch spikes_open
+x 12
+y 51
 speed 2.000000
 value 1
 connected 99
-x 12
-y 51
 end
 arch dungeon_magic
 x 12
@@ -7198,10 +7198,10 @@ x 13
 y 3
 end
 arch spikes_moving
-speed 0.500000
-speed_left -0.860000
 x 13
 y 3
+speed 0.500000
+speed_left -0.860000
 end
 arch boulder
 x 13
@@ -7212,9 +7212,9 @@ x 13
 y 4
 end
 arch button_plate
-connected 1
 x 13
 y 4
+connected 1
 end
 arch blocked
 x 13
@@ -7233,10 +7233,10 @@ x 13
 y 9
 end
 arch spikes_moving
-speed 0.500000
-speed_left -0.860000
 x 13
 y 9
+speed 0.500000
+speed_left -0.860000
 end
 arch boulder
 x 13
@@ -7247,9 +7247,9 @@ x 13
 y 10
 end
 arch button_plate
-connected 98
 x 13
 y 10
+connected 98
 end
 arch blocked
 x 13
@@ -7264,216 +7264,216 @@ name apple
 name_pl apple
 slaying apple
 food 1
+x 13
+y 17
 connected 301
-x 13
-y 17
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
+x 13
+y 17
 connected 302
-x 13
-y 17
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
+x 13
+y 17
 connected 303
-x 13
-y 17
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
+x 13
+y 17
 connected 304
-x 13
-y 17
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
+x 13
+y 17
 connected 305
-x 13
-y 17
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
+x 13
+y 17
 connected 306
-x 13
-y 17
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
+x 13
+y 17
 connected 307
-x 13
-y 17
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
+x 13
+y 17
 connected 308
-x 13
-y 17
 end
 arch altar
 name apple
 name_pl apple
 slaying apple
 food 1
+x 13
+y 18
 connected 401
-x 13
-y 18
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 402
 x 13
 y 18
+connected 402
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 403
 x 13
 y 18
+connected 403
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 404
 x 13
 y 18
+connected 404
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 405
 x 13
 y 18
+connected 405
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 406
 x 13
 y 18
+connected 406
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 407
 x 13
 y 18
+connected 407
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 408
 x 13
 y 18
+connected 408
 end
 arch altar
 name apple
 name_pl apple
 slaying apple
 food 1
-connected 501
 x 13
 y 19
+connected 501
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 502
 x 13
 y 19
+connected 502
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 503
 x 13
 y 19
+connected 503
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 504
 x 13
 y 19
+connected 504
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 505
 x 13
 y 19
+connected 505
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 506
 x 13
 y 19
+connected 506
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 507
 x 13
 y 19
+connected 507
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 508
 x 13
 y 19
+connected 508
 end
 arch dungeon_magic
 x 13
@@ -8007,42 +8007,42 @@ x 14
 y 35
 end
 arch cobblestones2
-unique 1
 x 14
 y 35
+unique 1
 end
 arch button_plate
+x 14
+y 35
 connected 41
-x 14
-y 35
 end
 arch dungeon_magic
 x 14
 y 36
 end
 arch cobblestones2
-unique 1
 x 14
 y 36
+unique 1
 end
 arch button_plate
+x 14
+y 36
 connected 48
-x 14
-y 36
 end
 arch dungeon_magic
 x 14
 y 37
 end
 arch cobblestones2
-unique 1
 x 14
 y 37
+unique 1
 end
 arch button_plate
+x 14
+y 37
 connected 47
-x 14
-y 37
 end
 arch dungeon_magic
 x 14
@@ -8061,42 +8061,42 @@ x 14
 y 39
 end
 arch cobblestones2
-unique 1
 x 14
 y 39
+unique 1
 end
 arch button_plate
+x 14
+y 39
 connected 51
-x 14
-y 39
 end
 arch dungeon_magic
 x 14
 y 40
 end
 arch cobblestones2
-unique 1
 x 14
 y 40
+unique 1
 end
 arch button_plate
+x 14
+y 40
 connected 58
-x 14
-y 40
 end
 arch dungeon_magic
 x 14
 y 41
 end
 arch cobblestones2
-unique 1
 x 14
 y 41
+unique 1
 end
 arch button_plate
-connected 57
 x 14
 y 41
+connected 57
 end
 arch dungeon_magic
 x 14
@@ -8115,42 +8115,42 @@ x 14
 y 43
 end
 arch cobblestones2
-unique 1
 x 14
 y 43
+unique 1
 end
 arch button_plate
+x 14
+y 43
 connected 61
-x 14
-y 43
 end
 arch dungeon_magic
 x 14
 y 44
 end
 arch cobblestones2
-unique 1
 x 14
 y 44
+unique 1
 end
 arch button_plate
+x 14
+y 44
 connected 68
-x 14
-y 44
 end
 arch dungeon_magic
 x 14
 y 45
 end
 arch cobblestones2
-unique 1
 x 14
 y 45
+unique 1
 end
 arch button_plate
-connected 67
 x 14
 y 45
+connected 67
 end
 arch dungeon_magic
 x 14
@@ -8376,87 +8376,87 @@ arch blocked
 x 15
 end
 arch cobblestones2
-unique 1
 x 15
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 1
+connected 99
 end
 arch spikes_open
+x 15
+y 1
 speed 0.500000
 value 1
 connected 11
-x 15
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
 y 2
 end
 arch cobblestones2
-unique 1
 x 15
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 3
+connected 99
 end
 arch spikes_open
+x 15
+y 3
 speed 0.500000
 value 1
 connected 18
-x 15
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
 y 4
 end
 arch cobblestones2
-unique 1
 x 15
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 5
+connected 99
 end
 arch spikes_open
+x 15
+y 5
 speed 0.500000
 value 1
 connected 17
-x 15
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
@@ -8467,87 +8467,87 @@ x 15
 y 7
 end
 arch cobblestones2
-unique 1
 x 15
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 8
+connected 99
 end
 arch spikes_open
+x 15
+y 8
 speed 0.500000
 value 1
 connected 41
-x 15
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
 y 9
 end
 arch cobblestones2
-unique 1
 x 15
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 10
+connected 99
 end
 arch spikes_open
+x 15
+y 10
 speed 0.500000
 value 1
 connected 48
-x 15
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
 y 11
 end
 arch cobblestones2
-unique 1
 x 15
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 15
 y 12
+connected 99
 end
 arch spikes_open
+x 15
+y 12
 speed 0.500000
 value 1
 connected 47
-x 15
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 15
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 15
@@ -8556,9 +8556,9 @@ end
 arch button_lever
 name Reset Lock
 name_pl Reset Lock
-connected 98
 x 15
 y 14
+connected 98
 end
 arch blocked
 x 15
@@ -8571,10 +8571,10 @@ end
 arch teleporter
 hp 15
 sp 1
-speed 0.000000
-connected 101
 x 15
 y 16
+speed 0.000000
+connected 101
 end
 arch boulder
 x 15
@@ -8587,10 +8587,10 @@ end
 arch teleporter
 hp 15
 sp 3
-speed 0.000000
-connected 108
 x 15
 y 17
+speed 0.000000
+connected 108
 end
 arch boulder
 x 15
@@ -8603,10 +8603,10 @@ end
 arch teleporter
 hp 15
 sp 5
-speed 0.000000
-connected 107
 x 15
 y 18
+speed 0.000000
+connected 107
 end
 arch boulder
 x 15
@@ -8627,10 +8627,10 @@ end
 arch teleporter
 hp 15
 sp 8
-speed 0.000000
-connected 401
 x 15
 y 21
+speed 0.000000
+connected 401
 end
 arch boulder
 x 15
@@ -8643,10 +8643,10 @@ end
 arch teleporter
 hp 15
 sp 10
-speed 0.000000
-connected 408
 x 15
 y 22
+speed 0.000000
+connected 408
 end
 arch boulder
 x 15
@@ -8659,10 +8659,10 @@ end
 arch teleporter
 hp 15
 sp 12
-speed 0.000000
-connected 407
 x 15
 y 23
+speed 0.000000
+connected 407
 end
 arch boulder
 x 15
@@ -8729,30 +8729,30 @@ x 15
 y 35
 end
 arch cobblestones2
-unique 1
 x 15
 y 35
+unique 1
 end
 arch button_plate
+x 15
+y 35
 connected 42
-x 15
-y 35
 end
 arch dungeon_magic
 x 15
 y 36
 end
 arch cobblestones2
-unique 1
 x 15
 y 36
+unique 1
 end
 arch spikes_open
+x 15
+y 36
 speed 0.500000
 value 1
 connected 1
-x 15
-y 36
 end
 arch boulder
 x 15
@@ -8763,14 +8763,14 @@ x 15
 y 37
 end
 arch cobblestones2
-unique 1
 x 15
 y 37
+unique 1
 end
 arch button_plate
+x 15
+y 37
 connected 46
-x 15
-y 37
 end
 arch dungeon_magic
 x 15
@@ -8789,30 +8789,30 @@ x 15
 y 39
 end
 arch cobblestones2
-unique 1
 x 15
 y 39
+unique 1
 end
 arch button_plate
+x 15
+y 39
 connected 52
-x 15
-y 39
 end
 arch dungeon_magic
 x 15
 y 40
 end
 arch cobblestones2
-unique 1
 x 15
 y 40
+unique 1
 end
 arch spikes_open
+x 15
+y 40
 speed 0.500000
 value 1
 connected 1
-x 15
-y 40
 end
 arch boulder
 x 15
@@ -8823,14 +8823,14 @@ x 15
 y 41
 end
 arch cobblestones2
-unique 1
 x 15
 y 41
+unique 1
 end
 arch button_plate
-connected 56
 x 15
 y 41
+connected 56
 end
 arch dungeon_magic
 x 15
@@ -8849,30 +8849,30 @@ x 15
 y 43
 end
 arch cobblestones2
-unique 1
 x 15
 y 43
+unique 1
 end
 arch button_plate
-connected 62
 x 15
 y 43
+connected 62
 end
 arch dungeon_magic
 x 15
 y 44
 end
 arch cobblestones2
-unique 1
 x 15
 y 44
+unique 1
 end
 arch spikes_open
+x 15
+y 44
 speed 0.500000
 value 1
 connected 1
-x 15
-y 44
 end
 arch boulder
 x 15
@@ -8883,14 +8883,14 @@ x 15
 y 45
 end
 arch cobblestones2
-unique 1
 x 15
 y 45
+unique 1
 end
 arch button_plate
-connected 66
 x 15
 y 45
+connected 66
 end
 arch dungeon_magic
 x 15
@@ -9124,27 +9124,27 @@ x 16
 y 2
 end
 arch button_small
-connected 100
 x 16
 y 2
+connected 100
 end
 arch flagstone
 x 16
 y 3
 end
 arch button_small
-connected 100
 x 16
 y 3
+connected 100
 end
 arch flagstone
 x 16
 y 4
 end
 arch button_small
-connected 100
 x 16
 y 4
+connected 100
 end
 arch blocked
 x 16
@@ -9167,27 +9167,27 @@ x 16
 y 9
 end
 arch button_small
-connected 400
 x 16
 y 9
+connected 400
 end
 arch flagstone
 x 16
 y 10
 end
 arch button_small
-connected 400
 x 16
 y 10
+connected 400
 end
 arch flagstone
 x 16
 y 11
 end
 arch button_small
-connected 400
 x 16
 y 11
+connected 400
 end
 arch blocked
 x 16
@@ -9200,10 +9200,10 @@ end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 16
 y 14
+speed 0.000000
+connected 98
 end
 arch blocked
 x 16
@@ -9216,10 +9216,10 @@ end
 arch teleporter
 hp 17
 sp 1
-speed 0.000000
-connected 102
 x 16
 y 16
+speed 0.000000
+connected 102
 end
 arch boulder
 x 16
@@ -9236,10 +9236,10 @@ end
 arch teleporter
 hp 17
 sp 5
-speed 0.000000
-connected 106
 x 16
 y 18
+speed 0.000000
+connected 106
 end
 arch boulder
 x 16
@@ -9260,10 +9260,10 @@ end
 arch teleporter
 hp 17
 sp 8
-speed 0.000000
-connected 402
 x 16
 y 21
+speed 0.000000
+connected 402
 end
 arch boulder
 x 16
@@ -9280,10 +9280,10 @@ end
 arch teleporter
 hp 17
 sp 12
-speed 0.000000
-connected 406
 x 16
 y 23
+speed 0.000000
+connected 406
 end
 arch boulder
 x 16
@@ -9350,42 +9350,42 @@ x 16
 y 35
 end
 arch cobblestones2
-unique 1
 x 16
 y 35
+unique 1
 end
 arch button_plate
+x 16
+y 35
 connected 43
-x 16
-y 35
 end
 arch dungeon_magic
 x 16
 y 36
 end
 arch cobblestones2
-unique 1
 x 16
 y 36
+unique 1
 end
 arch button_plate
+x 16
+y 36
 connected 44
-x 16
-y 36
 end
 arch dungeon_magic
 x 16
 y 37
 end
 arch cobblestones2
-unique 1
 x 16
 y 37
+unique 1
 end
 arch button_plate
+x 16
+y 37
 connected 45
-x 16
-y 37
 end
 arch dungeon_magic
 x 16
@@ -9404,42 +9404,42 @@ x 16
 y 39
 end
 arch cobblestones2
-unique 1
 x 16
 y 39
+unique 1
 end
 arch button_plate
+x 16
+y 39
 connected 53
-x 16
-y 39
 end
 arch dungeon_magic
 x 16
 y 40
 end
 arch cobblestones2
-unique 1
 x 16
 y 40
+unique 1
 end
 arch button_plate
+x 16
+y 40
 connected 54
-x 16
-y 40
 end
 arch dungeon_magic
 x 16
 y 41
 end
 arch cobblestones2
-unique 1
 x 16
 y 41
+unique 1
 end
 arch button_plate
-connected 55
 x 16
 y 41
+connected 55
 end
 arch dungeon_magic
 x 16
@@ -9458,42 +9458,42 @@ x 16
 y 43
 end
 arch cobblestones2
-unique 1
 x 16
 y 43
+unique 1
 end
 arch button_plate
+x 16
+y 43
 connected 63
-x 16
-y 43
 end
 arch dungeon_magic
 x 16
 y 44
 end
 arch cobblestones2
-unique 1
 x 16
 y 44
+unique 1
 end
 arch button_plate
+x 16
+y 44
 connected 64
-x 16
-y 44
 end
 arch dungeon_magic
 x 16
 y 45
 end
 arch cobblestones2
-unique 1
 x 16
 y 45
+unique 1
 end
 arch button_plate
-connected 65
 x 16
 y 45
+connected 65
 end
 arch dungeon_magic
 x 16
@@ -9596,9 +9596,9 @@ x 16
 y 54
 end
 arch flagstone
-unique 1
 x 16
 y 54
+unique 1
 end
 arch table_3
 x 16
@@ -9724,38 +9724,38 @@ arch blocked
 x 17
 end
 arch cobblestones2
-unique 1
 x 17
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 17
 y 1
+connected 99
 end
 arch spikes_open
+x 17
+y 1
 speed 0.500000
 value 1
 connected 12
-x 17
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 17
 y 1
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 17
 y 2
 end
 arch button_small
-connected 100
 x 17
 y 2
+connected 100
 end
 arch blocked
 x 17
@@ -9766,34 +9766,34 @@ x 17
 y 4
 end
 arch button_small
-connected 100
 x 17
 y 4
+connected 100
 end
 arch cobblestones2
-unique 1
 x 17
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 17
 y 5
+connected 99
 end
 arch spikes_open
+x 17
+y 5
 speed 0.500000
 value 1
 connected 16
-x 17
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 17
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 17
@@ -9804,38 +9804,38 @@ x 17
 y 7
 end
 arch cobblestones2
-unique 1
 x 17
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 17
 y 8
+connected 99
 end
 arch spikes_open
+x 17
+y 8
 speed 0.500000
 value 1
 connected 42
-x 17
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 17
 y 8
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 17
 y 9
 end
 arch button_small
-connected 400
 x 17
 y 9
+connected 400
 end
 arch blocked
 x 17
@@ -9846,34 +9846,34 @@ x 17
 y 11
 end
 arch button_small
-connected 400
 x 17
 y 11
+connected 400
 end
 arch cobblestones2
-unique 1
 x 17
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 17
 y 12
+connected 99
 end
 arch spikes_open
+x 17
+y 12
 speed 0.500000
 value 1
 connected 46
-x 17
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 17
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 17
@@ -9884,72 +9884,72 @@ name apple
 name_pl apple
 slaying apple
 food 1
-connected 101
 x 17
 y 14
+connected 101
 end
 arch altar
 name cabbage
 name_pl cabbage
 slaying cabbage
 food 1
-connected 102
 x 17
 y 14
+connected 102
 end
 arch altar
 name carrot
 name_pl carrot
 slaying carrot
 food 1
-connected 103
 x 17
 y 14
+connected 103
 end
 arch altar
 name clover
 name_pl clover
 slaying clover
 food 1
-connected 104
 x 17
 y 14
+connected 104
 end
 arch altar
 name onion
 name_pl onion
 slaying onion
 food 1
-connected 105
 x 17
 y 14
+connected 105
 end
 arch altar
 name orange
 name_pl orange
 slaying orange
 food 1
-connected 106
 x 17
 y 14
+connected 106
 end
 arch altar
 name pear
 name_pl pear
 slaying pear
 food 1
-connected 107
 x 17
 y 14
+connected 107
 end
 arch altar
 name water
 name_pl water
 slaying water
 food 1
-connected 108
 x 17
 y 14
+connected 108
 end
 arch blocked
 x 17
@@ -9962,10 +9962,10 @@ end
 arch teleporter
 hp 19
 sp 1
-speed 0.000000
-connected 103
 x 17
 y 16
+speed 0.000000
+connected 103
 end
 arch boulder
 x 17
@@ -9978,10 +9978,10 @@ end
 arch teleporter
 hp 19
 sp 3
-speed 0.000000
-connected 104
 x 17
 y 17
+speed 0.000000
+connected 104
 end
 arch boulder
 x 17
@@ -9994,10 +9994,10 @@ end
 arch teleporter
 hp 19
 sp 5
-speed 0.000000
-connected 105
 x 17
 y 18
+speed 0.000000
+connected 105
 end
 arch boulder
 x 17
@@ -10018,10 +10018,10 @@ end
 arch teleporter
 hp 19
 sp 8
-speed 0.000000
-connected 403
 x 17
 y 21
+speed 0.000000
+connected 403
 end
 arch boulder
 x 17
@@ -10034,10 +10034,10 @@ end
 arch teleporter
 hp 19
 sp 10
-speed 0.000000
-connected 404
 x 17
 y 22
+speed 0.000000
+connected 404
 end
 arch boulder
 x 17
@@ -10050,10 +10050,10 @@ end
 arch teleporter
 hp 19
 sp 12
-speed 0.000000
-connected 405
 x 17
 y 23
+speed 0.000000
+connected 405
 end
 arch boulder
 x 17
@@ -10523,27 +10523,27 @@ x 18
 y 2
 end
 arch button_small
-connected 100
 x 18
 y 2
+connected 100
 end
 arch flagstone
 x 18
 y 3
 end
 arch button_small
-connected 100
 x 18
 y 3
+connected 100
 end
 arch flagstone
 x 18
 y 4
 end
 arch button_small
-connected 100
 x 18
 y 4
+connected 100
 end
 arch blocked
 x 18
@@ -10566,27 +10566,27 @@ x 18
 y 9
 end
 arch button_small
-connected 400
 x 18
 y 9
+connected 400
 end
 arch flagstone
 x 18
 y 10
 end
 arch button_small
-connected 400
 x 18
 y 10
+connected 400
 end
 arch flagstone
 x 18
 y 11
 end
 arch button_small
-connected 400
 x 18
 y 11
+connected 400
 end
 arch blocked
 x 18
@@ -11092,87 +11092,87 @@ arch blocked
 x 19
 end
 arch cobblestones2
-unique 1
 x 19
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 1
+connected 99
 end
 arch spikes_open
+x 19
+y 1
 speed 0.500000
 value 1
 connected 13
-x 19
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
 y 2
 end
 arch cobblestones2
-unique 1
 x 19
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 3
+connected 99
 end
 arch spikes_open
+x 19
+y 3
 speed 0.500000
 value 1
 connected 14
-x 19
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
 y 4
 end
 arch cobblestones2
-unique 1
 x 19
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 5
+connected 99
 end
 arch spikes_open
+x 19
+y 5
 speed 0.500000
 value 1
 connected 15
-x 19
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
@@ -11183,87 +11183,87 @@ x 19
 y 7
 end
 arch cobblestones2
-unique 1
 x 19
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 8
+connected 99
 end
 arch spikes_open
+x 19
+y 8
 speed 0.500000
 value 1
 connected 43
-x 19
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
 y 9
 end
 arch cobblestones2
-unique 1
 x 19
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 10
+connected 99
 end
 arch spikes_open
+x 19
+y 10
 speed 0.500000
 value 1
 connected 44
-x 19
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
 y 11
 end
 arch cobblestones2
-unique 1
 x 19
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 19
 y 12
+connected 99
 end
 arch spikes_open
+x 19
+y 12
 speed 0.500000
 value 1
 connected 45
-x 19
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 19
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 19
@@ -11284,10 +11284,10 @@ end
 arch teleporter
 hp 21
 sp 1
-speed 0.000000
-connected 201
 x 19
 y 16
+speed 0.000000
+connected 201
 end
 arch boulder
 x 19
@@ -11300,10 +11300,10 @@ end
 arch teleporter
 hp 21
 sp 3
-speed 0.000000
-connected 208
 x 19
 y 17
+speed 0.000000
+connected 208
 end
 arch boulder
 x 19
@@ -11316,10 +11316,10 @@ end
 arch teleporter
 hp 21
 sp 5
-speed 0.000000
-connected 207
 x 19
 y 18
+speed 0.000000
+connected 207
 end
 arch boulder
 x 19
@@ -11340,10 +11340,10 @@ end
 arch teleporter
 hp 21
 sp 8
-speed 0.000000
-connected 501
 x 19
 y 21
+speed 0.000000
+connected 501
 end
 arch boulder
 x 19
@@ -11356,10 +11356,10 @@ end
 arch teleporter
 hp 21
 sp 10
-speed 0.000000
-connected 508
 x 19
 y 22
+speed 0.000000
+connected 508
 end
 arch boulder
 x 19
@@ -11372,10 +11372,10 @@ end
 arch teleporter
 hp 21
 sp 12
-speed 0.000000
-connected 507
 x 19
 y 23
+speed 0.000000
+connected 507
 end
 arch boulder
 x 19
@@ -11483,10 +11483,10 @@ end
 arch teleporter
 hp 23
 sp 1
-speed 0.000000
-connected 202
 x 20
 y 16
+speed 0.000000
+connected 202
 end
 arch boulder
 x 20
@@ -11503,10 +11503,10 @@ end
 arch teleporter
 hp 23
 sp 5
-speed 0.000000
-connected 206
 x 20
 y 18
+speed 0.000000
+connected 206
 end
 arch boulder
 x 20
@@ -11527,10 +11527,10 @@ end
 arch teleporter
 hp 23
 sp 8
-speed 0.000000
-connected 502
 x 20
 y 21
+speed 0.000000
+connected 502
 end
 arch boulder
 x 20
@@ -11547,10 +11547,10 @@ end
 arch teleporter
 hp 23
 sp 12
-speed 0.000000
-connected 506
 x 20
 y 23
+speed 0.000000
+connected 506
 end
 arch boulder
 x 20
@@ -11940,87 +11940,87 @@ arch blocked
 x 21
 end
 arch cobblestones2
-unique 1
 x 21
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 1
+connected 99
 end
 arch spikes_open
+x 21
+y 1
 speed 0.500000
 value 1
 connected 21
-x 21
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
 y 2
 end
 arch cobblestones2
-unique 1
 x 21
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 3
+connected 99
 end
 arch spikes_open
+x 21
+y 3
 speed 0.500000
 value 1
 connected 28
-x 21
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
 y 4
 end
 arch cobblestones2
-unique 1
 x 21
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 5
+connected 99
 end
 arch spikes_open
+x 21
+y 5
 speed 0.500000
 value 1
 connected 27
-x 21
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
@@ -12031,87 +12031,87 @@ x 21
 y 7
 end
 arch cobblestones2
-unique 1
 x 21
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 8
+connected 99
 end
 arch spikes_open
+x 21
+y 8
 speed 0.500000
 value 1
 connected 51
-x 21
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
 y 9
 end
 arch cobblestones2
-unique 1
 x 21
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 10
+connected 99
 end
 arch spikes_open
+x 21
+y 10
 speed 0.500000
 value 1
 connected 58
-x 21
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
 y 11
 end
 arch cobblestones2
-unique 1
 x 21
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 21
 y 12
+connected 99
 end
 arch spikes_open
+x 21
+y 12
 speed 0.500000
 value 1
 connected 57
-x 21
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 21
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 21
@@ -12132,10 +12132,10 @@ end
 arch teleporter
 hp 25
 sp 1
-speed 0.000000
-connected 203
 x 21
 y 16
+speed 0.000000
+connected 203
 end
 arch boulder
 x 21
@@ -12148,10 +12148,10 @@ end
 arch teleporter
 hp 25
 sp 3
-speed 0.000000
-connected 204
 x 21
 y 17
+speed 0.000000
+connected 204
 end
 arch boulder
 x 21
@@ -12164,10 +12164,10 @@ end
 arch teleporter
 hp 25
 sp 5
-speed 0.000000
-connected 205
 x 21
 y 18
+speed 0.000000
+connected 205
 end
 arch boulder
 x 21
@@ -12188,10 +12188,10 @@ end
 arch teleporter
 hp 25
 sp 8
-speed 0.000000
-connected 503
 x 21
 y 21
+speed 0.000000
+connected 503
 end
 arch boulder
 x 21
@@ -12204,10 +12204,10 @@ end
 arch teleporter
 hp 25
 sp 10
-speed 0.000000
-connected 504
 x 21
 y 22
+speed 0.000000
+connected 504
 end
 arch boulder
 x 21
@@ -12220,10 +12220,10 @@ end
 arch teleporter
 hp 25
 sp 12
-speed 0.000000
-connected 505
 x 21
 y 23
+speed 0.000000
+connected 505
 end
 arch boulder
 x 21
@@ -12621,27 +12621,27 @@ x 22
 y 2
 end
 arch button_small
-connected 200
 x 22
 y 2
+connected 200
 end
 arch flagstone
 x 22
 y 3
 end
 arch button_small
-connected 200
 x 22
 y 3
+connected 200
 end
 arch flagstone
 x 22
 y 4
 end
 arch button_small
-connected 200
 x 22
 y 4
+connected 200
 end
 arch blocked
 x 22
@@ -12664,27 +12664,27 @@ x 22
 y 9
 end
 arch button_small
-connected 500
 x 22
 y 9
+connected 500
 end
 arch flagstone
 x 22
 y 10
 end
 arch button_small
-connected 500
 x 22
 y 10
+connected 500
 end
 arch flagstone
 x 22
 y 11
 end
 arch button_small
-connected 500
 x 22
 y 11
+connected 500
 end
 arch blocked
 x 22
@@ -13049,38 +13049,38 @@ arch blocked
 x 23
 end
 arch cobblestones2
-unique 1
 x 23
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 23
 y 1
+connected 99
 end
 arch spikes_open
+x 23
+y 1
 speed 0.500000
 value 1
 connected 22
-x 23
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 23
 y 1
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 23
 y 2
 end
 arch button_small
-connected 200
 x 23
 y 2
+connected 200
 end
 arch blocked
 x 23
@@ -13091,34 +13091,34 @@ x 23
 y 4
 end
 arch button_small
-connected 200
 x 23
 y 4
+connected 200
 end
 arch cobblestones2
-unique 1
 x 23
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 23
 y 5
+connected 99
 end
 arch spikes_open
+x 23
+y 5
 speed 0.500000
 value 1
 connected 26
-x 23
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 23
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 23
@@ -13129,38 +13129,38 @@ x 23
 y 7
 end
 arch cobblestones2
-unique 1
 x 23
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 23
 y 8
+connected 99
 end
 arch spikes_open
+x 23
+y 8
 speed 0.500000
 value 1
 connected 52
-x 23
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 23
 y 8
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 23
 y 9
 end
 arch button_small
-connected 500
 x 23
 y 9
+connected 500
 end
 arch blocked
 x 23
@@ -13171,34 +13171,34 @@ x 23
 y 11
 end
 arch button_small
-connected 500
 x 23
 y 11
+connected 500
 end
 arch cobblestones2
-unique 1
 x 23
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 23
 y 12
+connected 99
 end
 arch spikes_open
+x 23
+y 12
 speed 0.500000
 value 1
 connected 56
-x 23
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 23
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 23
@@ -13219,10 +13219,10 @@ end
 arch teleporter
 hp 27
 sp 1
-speed 0.000000
-connected 301
 x 23
 y 16
+speed 0.000000
+connected 301
 end
 arch boulder
 x 23
@@ -13235,10 +13235,10 @@ end
 arch teleporter
 hp 27
 sp 3
-speed 0.000000
-connected 308
 x 23
 y 17
+speed 0.000000
+connected 308
 end
 arch boulder
 x 23
@@ -13251,10 +13251,10 @@ end
 arch teleporter
 hp 27
 sp 5
-speed 0.000000
-connected 307
 x 23
 y 18
+speed 0.000000
+connected 307
 end
 arch boulder
 x 23
@@ -13275,10 +13275,10 @@ end
 arch teleporter
 hp 27
 sp 8
-speed 0.000000
-connected 601
 x 23
 y 21
+speed 0.000000
+connected 601
 end
 arch boulder
 x 23
@@ -13291,10 +13291,10 @@ end
 arch teleporter
 hp 27
 sp 10
-speed 0.000000
-connected 608
 x 23
 y 22
+speed 0.000000
+connected 608
 end
 arch boulder
 x 23
@@ -13307,10 +13307,10 @@ end
 arch teleporter
 hp 27
 sp 12
-speed 0.000000
-connected 607
 x 23
 y 23
+speed 0.000000
+connected 607
 end
 arch boulder
 x 23
@@ -13602,10 +13602,10 @@ y 62
 end
 arch sign_e
 name 1 Rep
+name_pl 1 Rep
 msg
 1 Rep
 endmsg
-name_pl 1 Rep
 x 23
 y 62
 end
@@ -13673,27 +13673,27 @@ x 24
 y 2
 end
 arch button_small
-connected 200
 x 24
 y 2
+connected 200
 end
 arch flagstone
 x 24
 y 3
 end
 arch button_small
-connected 200
 x 24
 y 3
+connected 200
 end
 arch flagstone
 x 24
 y 4
 end
 arch button_small
-connected 200
 x 24
 y 4
+connected 200
 end
 arch blocked
 x 24
@@ -13716,27 +13716,27 @@ x 24
 y 9
 end
 arch button_small
-connected 500
 x 24
 y 9
+connected 500
 end
 arch flagstone
 x 24
 y 10
 end
 arch button_small
-connected 500
 x 24
 y 10
+connected 500
 end
 arch flagstone
 x 24
 y 11
 end
 arch button_small
-connected 500
 x 24
 y 11
+connected 500
 end
 arch blocked
 x 24
@@ -13761,10 +13761,10 @@ end
 arch teleporter
 hp 29
 sp 1
-speed 0.000000
-connected 302
 x 24
 y 16
+speed 0.000000
+connected 302
 end
 arch boulder
 x 24
@@ -13781,10 +13781,10 @@ end
 arch teleporter
 hp 29
 sp 5
-speed 0.000000
-connected 306
 x 24
 y 18
+speed 0.000000
+connected 306
 end
 arch boulder
 x 24
@@ -13805,10 +13805,10 @@ end
 arch teleporter
 hp 29
 sp 8
-speed 0.000000
-connected 602
 x 24
 y 21
+speed 0.000000
+connected 602
 end
 arch boulder
 x 24
@@ -13825,10 +13825,10 @@ end
 arch teleporter
 hp 29
 sp 12
-speed 0.000000
-connected 606
 x 24
 y 23
+speed 0.000000
+connected 606
 end
 arch boulder
 x 24
@@ -14120,10 +14120,10 @@ y 62
 end
 arch sign_e
 name 2 Rep
+name_pl 2 Rep
 msg
 2 Rep
 endmsg
-name_pl 2 Rep
 x 24
 y 62
 end
@@ -14183,87 +14183,87 @@ arch blocked
 x 25
 end
 arch cobblestones2
-unique 1
 x 25
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 1
+connected 99
 end
 arch spikes_open
+x 25
+y 1
 speed 0.500000
 value 1
 connected 23
-x 25
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
 y 2
 end
 arch cobblestones2
-unique 1
 x 25
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 3
+connected 99
 end
 arch spikes_open
+x 25
+y 3
 speed 0.500000
 value 1
 connected 24
-x 25
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
 y 4
 end
 arch cobblestones2
-unique 1
 x 25
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 5
+connected 99
 end
 arch spikes_open
+x 25
+y 5
 speed 0.500000
 value 1
 connected 25
-x 25
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
@@ -14274,87 +14274,87 @@ x 25
 y 7
 end
 arch cobblestones2
-unique 1
 x 25
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 8
+connected 99
 end
 arch spikes_open
+x 25
+y 8
 speed 0.500000
 value 1
 connected 53
-x 25
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
 y 9
 end
 arch cobblestones2
-unique 1
 x 25
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 10
+connected 99
 end
 arch spikes_open
+x 25
+y 10
 speed 0.500000
 value 1
 connected 54
-x 25
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
 y 11
 end
 arch cobblestones2
-unique 1
 x 25
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 25
 y 12
+connected 99
 end
 arch spikes_open
+x 25
+y 12
 speed 0.500000
 value 1
 connected 55
-x 25
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 25
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 25
@@ -14375,10 +14375,10 @@ end
 arch teleporter
 hp 31
 sp 1
-speed 0.000000
-connected 303
 x 25
 y 16
+speed 0.000000
+connected 303
 end
 arch boulder
 x 25
@@ -14391,10 +14391,10 @@ end
 arch teleporter
 hp 31
 sp 3
-speed 0.000000
-connected 304
 x 25
 y 17
+speed 0.000000
+connected 304
 end
 arch boulder
 x 25
@@ -14407,10 +14407,10 @@ end
 arch teleporter
 hp 31
 sp 5
-speed 0.000000
-connected 305
 x 25
 y 18
+speed 0.000000
+connected 305
 end
 arch boulder
 x 25
@@ -14431,10 +14431,10 @@ end
 arch teleporter
 hp 31
 sp 8
-speed 0.000000
-connected 603
 x 25
 y 21
+speed 0.000000
+connected 603
 end
 arch boulder
 x 25
@@ -14447,10 +14447,10 @@ end
 arch teleporter
 hp 31
 sp 10
-speed 0.000000
-connected 604
 x 25
 y 22
+speed 0.000000
+connected 604
 end
 arch boulder
 x 25
@@ -14463,10 +14463,10 @@ end
 arch teleporter
 hp 31
 sp 12
-speed 0.000000
-connected 605
 x 25
 y 23
+speed 0.000000
+connected 605
 end
 arch boulder
 x 25
@@ -14758,10 +14758,10 @@ y 62
 end
 arch sign_e
 name 3 Rep
+name_pl 3 Rep
 msg
 3 Rep
 endmsg
-name_pl 3 Rep
 x 25
 y 62
 end
@@ -15194,10 +15194,10 @@ y 62
 end
 arch sign_e
 name 4 Rep
+name_pl 4 Rep
 msg
 4 Rep
 endmsg
-name_pl 4 Rep
 x 26
 y 62
 end
@@ -15257,87 +15257,87 @@ arch blocked
 x 27
 end
 arch cobblestones2
-unique 1
 x 27
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 1
+connected 99
 end
 arch spikes_open
+x 27
+y 1
 speed 0.500000
 value 1
 connected 31
-x 27
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
 y 2
 end
 arch cobblestones2
-unique 1
 x 27
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 3
+connected 99
 end
 arch spikes_open
+x 27
+y 3
 speed 0.500000
 value 1
 connected 38
-x 27
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
 y 4
 end
 arch cobblestones2
-unique 1
 x 27
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 5
+connected 99
 end
 arch spikes_open
+x 27
+y 5
 speed 0.500000
 value 1
 connected 37
-x 27
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
@@ -15348,87 +15348,87 @@ x 27
 y 7
 end
 arch cobblestones2
-unique 1
 x 27
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 8
+connected 99
 end
 arch spikes_open
+x 27
+y 8
 speed 0.500000
 value 1
 connected 61
-x 27
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
 y 9
 end
 arch cobblestones2
-unique 1
 x 27
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 10
+connected 99
 end
 arch spikes_open
+x 27
+y 10
 speed 0.500000
 value 1
 connected 68
-x 27
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
 y 11
 end
 arch cobblestones2
-unique 1
 x 27
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 27
 y 12
+connected 99
 end
 arch spikes_open
+x 27
+y 12
 speed 0.500000
 value 1
 connected 67
-x 27
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 27
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 27
@@ -15716,10 +15716,10 @@ y 62
 end
 arch sign_e
 name 5 Rep
+name_pl 5 Rep
 msg
 5 Rep
 endmsg
-name_pl 5 Rep
 x 27
 y 62
 end
@@ -15787,27 +15787,27 @@ x 28
 y 2
 end
 arch button_small
-connected 300
 x 28
 y 2
+connected 300
 end
 arch flagstone
 x 28
 y 3
 end
 arch button_small
-connected 300
 x 28
 y 3
+connected 300
 end
 arch flagstone
 x 28
 y 4
 end
 arch button_small
-connected 300
 x 28
 y 4
+connected 300
 end
 arch blocked
 x 28
@@ -15830,27 +15830,27 @@ x 28
 y 9
 end
 arch button_small
-connected 600
 x 28
 y 9
+connected 600
 end
 arch flagstone
 x 28
 y 10
 end
 arch button_small
-connected 600
 x 28
 y 10
+connected 600
 end
 arch flagstone
 x 28
 y 11
 end
 arch button_small
-connected 600
 x 28
 y 11
+connected 600
 end
 arch blocked
 x 28
@@ -16142,10 +16142,10 @@ y 62
 end
 arch sign_e
 name 6 Rep
+name_pl 6 Rep
 msg
 6 Rep
 endmsg
-name_pl 6 Rep
 x 28
 y 62
 end
@@ -16205,38 +16205,38 @@ arch blocked
 x 29
 end
 arch cobblestones2
-unique 1
 x 29
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 29
 y 1
+connected 99
 end
 arch spikes_open
+x 29
+y 1
 speed 0.500000
 value 1
 connected 32
-x 29
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 29
 y 1
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 29
 y 2
 end
 arch button_small
-connected 300
 x 29
 y 2
+connected 300
 end
 arch blocked
 x 29
@@ -16247,34 +16247,34 @@ x 29
 y 4
 end
 arch button_small
-connected 300
 x 29
 y 4
+connected 300
 end
 arch cobblestones2
-unique 1
 x 29
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 29
 y 5
+connected 99
 end
 arch spikes_open
+x 29
+y 5
 speed 0.500000
 value 1
 connected 36
-x 29
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 29
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 29
@@ -16285,38 +16285,38 @@ x 29
 y 7
 end
 arch cobblestones2
-unique 1
 x 29
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 29
 y 8
+connected 99
 end
 arch spikes_open
+x 29
+y 8
 speed 0.500000
 value 1
 connected 62
-x 29
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 29
 y 8
+speed 0.000000
+connected 98
 end
 arch flagstone
 x 29
 y 9
 end
 arch button_small
-connected 600
 x 29
 y 9
+connected 600
 end
 arch blocked
 x 29
@@ -16327,34 +16327,34 @@ x 29
 y 11
 end
 arch button_small
-connected 600
 x 29
 y 11
+connected 600
 end
 arch cobblestones2
-unique 1
 x 29
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 29
 y 12
+connected 99
 end
 arch spikes_open
+x 29
+y 12
 speed 0.500000
 value 1
 connected 66
-x 29
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 29
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 29
@@ -16642,10 +16642,10 @@ y 62
 end
 arch sign_e
 name 7 Rep
+name_pl 7 Rep
 msg
 7 Rep
 endmsg
-name_pl 7 Rep
 x 29
 y 62
 end
@@ -16713,27 +16713,27 @@ x 30
 y 2
 end
 arch button_small
-connected 300
 x 30
 y 2
+connected 300
 end
 arch flagstone
 x 30
 y 3
 end
 arch button_small
-connected 300
 x 30
 y 3
+connected 300
 end
 arch flagstone
 x 30
 y 4
 end
 arch button_small
-connected 300
 x 30
 y 4
+connected 300
 end
 arch blocked
 x 30
@@ -16756,27 +16756,27 @@ x 30
 y 9
 end
 arch button_small
-connected 600
 x 30
 y 9
+connected 600
 end
 arch flagstone
 x 30
 y 10
 end
 arch button_small
-connected 600
 x 30
 y 10
+connected 600
 end
 arch flagstone
 x 30
 y 11
 end
 arch button_small
-connected 600
 x 30
 y 11
+connected 600
 end
 arch blocked
 x 30
@@ -17068,10 +17068,10 @@ y 62
 end
 arch sign_e
 name 8 Rep
+name_pl 8 Rep
 msg
 8 Rep
 endmsg
-name_pl 8 Rep
 x 30
 y 62
 end
@@ -17131,87 +17131,87 @@ arch blocked
 x 31
 end
 arch cobblestones2
-unique 1
 x 31
 y 1
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 1
+connected 99
 end
 arch spikes_open
+x 31
+y 1
 speed 0.500000
 value 1
 connected 33
-x 31
-y 1
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 1
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
 y 2
 end
 arch cobblestones2
-unique 1
 x 31
 y 3
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 3
+connected 99
 end
 arch spikes_open
+x 31
+y 3
 speed 0.500000
 value 1
 connected 34
-x 31
-y 3
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 3
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
 y 4
 end
 arch cobblestones2
-unique 1
 x 31
 y 5
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 5
+connected 99
 end
 arch spikes_open
+x 31
+y 5
 speed 0.500000
 value 1
 connected 35
-x 31
-y 5
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 5
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
@@ -17222,87 +17222,87 @@ x 31
 y 7
 end
 arch cobblestones2
-unique 1
 x 31
 y 8
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 8
+connected 99
 end
 arch spikes_open
+x 31
+y 8
 speed 0.500000
 value 1
 connected 63
-x 31
-y 8
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 8
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
 y 9
 end
 arch cobblestones2
-unique 1
 x 31
 y 10
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 10
+connected 99
 end
 arch spikes_open
+x 31
+y 10
 speed 0.500000
 value 1
 connected 64
-x 31
-y 10
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 10
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
 y 11
 end
 arch cobblestones2
-unique 1
 x 31
 y 12
+unique 1
 end
 arch button_plate
-connected 99
 x 31
 y 12
+connected 99
 end
 arch spikes_open
+x 31
+y 12
 speed 0.500000
 value 1
 connected 65
-x 31
-y 12
 end
 arch teleporter
 hp 13
 sp 7
-speed 0.000000
-connected 98
 x 31
 y 12
+speed 0.000000
+connected 98
 end
 arch blocked
 x 31
@@ -17979,70 +17979,70 @@ x 33
 y 1
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 1
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 2
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 2
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 3
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 3
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 4
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 4
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 5
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 5
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 6
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 6
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 33
 y 7
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 33
 y 7
+speed 2.000000
+connected 99
 end
 arch blocked
 x 33
@@ -18278,6 +18278,7 @@ y 59
 end
 arch sign
 name Notice
+name_pl Notice
 msg
 At the entrance to the vault is a
 circular marble area. Parts of the
@@ -18302,7 +18303,6 @@ number floors, the vault will
 lockdown
 -Mikeeusa-
 endmsg
-name_pl Notice
 x 33
 y 59
 end
@@ -18390,18 +18390,18 @@ x 34
 y 1
 end
 arch grate_open_1
+x 34
+y 1
 speed 0.500000
 value 1
 connected 90001
-x 34
-y 1
 end
 arch spikes_open
+x 34
+y 1
 speed 0.500000
 value 1
 connected 100
-x 34
-y 1
 end
 arch boulder
 x 34
@@ -18412,147 +18412,147 @@ x 34
 y 2
 end
 arch grate_open_1
+x 34
+y 2
 speed 0.500000
 value 1
 connected 90002
-x 34
-y 2
 end
 arch spikes_open
+x 34
+y 2
 speed 0.500000
 value 1
 connected 200
-x 34
-y 2
 end
 arch button_plate
-connected 90001
 x 34
 y 2
+connected 90001
 end
 arch grate_open_1
+x 34
+y 3
 speed 0.500000
 value 1
 connected 90003
-x 34
-y 3
 end
 arch dungeon_floor
 x 34
 y 3
 end
 arch grate_open_1
+x 34
+y 3
 speed 0.500000
 value 1
 connected 90003
-x 34
-y 3
 end
 arch spikes_open
+x 34
+y 3
 speed 0.500000
 value 1
 connected 300
-x 34
-y 3
 end
 arch button_plate
-connected 90002
 x 34
 y 3
+connected 90002
 end
 arch dungeon_floor
 x 34
 y 4
 end
 arch grate_open_1
+x 34
+y 4
 speed 0.500000
 value 1
 connected 90004
-x 34
-y 4
 end
 arch spikes_open
+x 34
+y 4
 speed 0.500000
 value 1
 connected 400
-x 34
-y 4
 end
 arch button_plate
-connected 90003
 x 34
 y 4
+connected 90003
 end
 arch dungeon_floor
 x 34
 y 5
 end
 arch igate_open_1
+x 34
+y 5
 speed 2.000000
 value 1
 connected 99
-x 34
-y 5
 end
 arch grate_open_1
+x 34
+y 5
 speed 0.500000
 value 1
 connected 90005
-x 34
-y 5
 end
 arch spikes_open
+x 34
+y 5
 speed 0.500000
 value 1
 connected 500
-x 34
-y 5
 end
 arch button_plate
-connected 90004
 x 34
 y 5
+connected 90004
 end
 arch dungeon_floor
 x 34
 y 6
 end
 arch igate_open_1
+x 34
+y 6
 speed 2.000000
 value 1
 connected 99
-x 34
-y 6
 end
 arch spikes_open
+x 34
+y 6
 speed 0.500000
 value 1
 connected 600
-x 34
-y 6
 end
 arch button_plate
-connected 90005
 x 34
 y 6
+connected 90005
 end
 arch dungeon_floor
 x 34
 y 7
 end
 arch igate_open_1
+x 34
+y 7
 speed 2.000000
 value 1
 connected 99
-x 34
-y 7
 end
 arch button_plate
 name open
 name_pl open
-connected 9999
 x 34
 y 7
+connected 9999
 end
 arch blocked
 x 34
@@ -18804,9 +18804,9 @@ y 61
 end
 arch platinum_converter
 name convert gold into silver
-face altarnone.111
 slaying goldcoin
 other_arch silvercoin
+face altarnone.111
 sp 10
 x 34
 y 61
@@ -18894,70 +18894,70 @@ x 35
 y 1
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 1
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 2
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 2
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 3
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 3
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 4
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 4
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 5
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 5
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 6
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 6
+speed 2.000000
+connected 99
 end
 arch dungeon_floor
 x 35
 y 7
 end
 arch spikes_closed
-speed 2.000000
-connected 99
 x 35
 y 7
+speed 2.000000
+connected 99
 end
 arch blocked
 x 35
@@ -19571,17 +19571,17 @@ x 36
 y 61
 end
 arch flagstone
-unique 1
 x 36
 y 61
+unique 1
 end
 arch locked_door1
-face ldoor_white1.111
+slaying cdcvaultd4key
 msg
 You need to buy the D4 vault key to open
 this door.
 endmsg
-slaying cdcvaultd4key
+face ldoor_white1.111
 x 36
 y 61
 end
