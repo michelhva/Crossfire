@@ -1,15 +1,15 @@
 arch map
 name TheGreenWay
 region greenway
+width 50
+height 50
+enter_x 31
+enter_y 41
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
-enter_x 31
-enter_y 41
 tile_path_1 greenway9
 tile_path_2 greenway1
 tile_path_3 greenway3
@@ -1839,6 +1839,13 @@ arch woods_3
 x 9
 y 15
 end
+arch ent
+msg
+
+endmsg
+x 9
+y 15
+end
 arch woods_3
 x 9
 y 16
@@ -2740,9 +2747,9 @@ x 13
 y 33
 end
 arch banshee
-can_see_in_dark 1
 x 13
 y 33
+can_see_in_dark 1
 end
 arch darkforest
 x 13
@@ -2816,8 +2823,8 @@ arch tree
 x 14
 end
 arch bird
-unaggressive 1
 x 14
+unaggressive 1
 end
 arch jungle_1
 x 14
@@ -3202,6 +3209,12 @@ arch woods_3
 x 15
 y 46
 end
+arch bear
+x 15
+y 46
+sleep 0
+can_see_in_dark 1
+end
 arch woods_3
 x 15
 y 47
@@ -4221,6 +4234,10 @@ x 21
 y 2
 end
 arch woods_3
+x 21
+y 3
+end
+arch giant
 x 21
 y 3
 end
@@ -4353,18 +4370,18 @@ x 21
 y 34
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
+exp 100
+dam 10
+wc 0
+ac 3
+level 8
+attacktype 3
+weight 1000
 can_use_ring 1
 can_use_rod 1
 arch abil_poison_cloud
@@ -4441,6 +4458,10 @@ x 22
 y 1
 end
 arch woods_3
+x 22
+y 2
+end
+arch giant
 x 22
 y 2
 end
@@ -6157,10 +6178,10 @@ x 30
 y 25
 end
 arch faerie_dragon
-can_see_in_dark 1
-sleep 0
 x 30
 y 25
+sleep 0
+can_see_in_dark 1
 end
 arch woods_3
 x 30
@@ -10102,24 +10123,4 @@ end
 arch woods_3
 x 49
 y 49
-end
-arch ent
-msg
-endmsg
-x 9
-y 15
-end
-arch bear
-can_see_in_dark 1
-sleep 0
-x 15
-y 46
-end
-arch giant
-x 21
-y 3
-end
-arch giant
-x 22
-y 2
 end

@@ -1,6 +1,8 @@
 arch map
-region ancientpupland
 name company
+region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -491,6 +493,10 @@ arch afloor_right
 x 6
 y 3
 end
+arch pentagram_111
+x 6
+y 3
+end
 arch afloor_right
 x 6
 y 4
@@ -578,7 +584,7 @@ arch conjurer
 name telepathist
 msg
 @match Margaret|margaret
-I see Joseph's brother in the fire. 
+I see Joseph's brother in the fire.
 Margaret loves Joseph's brother.
 @match Joseph|joseph
 I see Margaret in the fire.
@@ -1276,8 +1282,4 @@ end
 arch grass
 x 15
 y 15
-end
-arch pentagram_111
-x 6
-y 3
 end

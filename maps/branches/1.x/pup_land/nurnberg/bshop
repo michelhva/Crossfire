@@ -1,16 +1,16 @@
 arch map
-region nurnberg
 name bshop
+difficulty 5
+region nurnberg
+shopitems book:100;spellbook:100;*:-90
+shopmin 50
+width 25
+height 23
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb  9 23:22:20 1996
 endmsg
-x 25
-y 23
-level 5
-shopitems book:100;spellbook:100;*:-90
-shopmin 50
 end
 arch invis_exit
 slaying city

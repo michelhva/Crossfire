@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name <untitled>
+region lakecountry
+width 8
+height 8
 msg
 Creator: Kundi, Xue
 Email:  xkd@soda.berkeley.edu
 Date: Sep 13 01:39:50 1995
 endmsg
-width 8
-height 8
 end
 arch pstone_1
 end
@@ -94,10 +94,10 @@ arch firewall_5
 name wall
 face swall_8.111
 dam 82
-speed 0.030000
-speed_left -2.330000
 x 1
 y 4
+speed 0.030000
+speed_left -2.330000
 end
 arch dungeon_magic
 x 1

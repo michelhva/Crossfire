@@ -1,17 +1,17 @@
 arch map
 name ruggilli2
+difficulty 3
 region navar
+width 30
+height 30
+enter_x 5
+enter_y 7
 msg
 Creator: Avion
 With kudos to DH
 Date:  Dec13 2003
 Note: Altar to level 120 20050525
 endmsg
-width 30
-height 30
-enter_x 5
-enter_y 7
-difficulty 3
 end
 arch blocked
 y 3
@@ -470,9 +470,9 @@ x 2
 y 26
 end
 arch fire_permanent
-glow_radius 3
 x 2
 y 26
+glow_radius 3
 end
 arch pstone_2
 x 2
@@ -505,10 +505,10 @@ end
 arch teleporter
 hp 17
 sp 28
-connected 22
-speed 0.0
 x 3
 y 2
+speed 0.0
+connected 22
 end
 arch gnoll_leader_arc
 x 3
@@ -790,12 +790,12 @@ x 4
 y 12
 end
 arch firewall_3
-invisible 1
-level 5
-connected 16
-speed 0.0
 x 4
 y 12
+speed 0.0
+level 5
+invisible 1
+connected 16
 end
 arch pstone_1
 x 4
@@ -830,12 +830,12 @@ x 4
 y 16
 end
 arch firewall_3
-invisible 1
-level 5
-connected 15
-speed 0.0
 x 4
 y 16
+speed 0.0
+level 5
+invisible 1
+connected 15
 end
 arch dirtfloor
 x 4
@@ -932,10 +932,10 @@ end
 arch teleporter
 hp 11
 sp 27
-connected 21
-speed 0.0
 x 5
 y 2
+speed 0.0
+connected 21
 end
 arch gnoll_leader_arc
 x 5
@@ -990,10 +990,10 @@ x 5
 y 10
 end
 arch altar_ruggilli
-glow_radius 3
-level 120
 x 5
 y 10
+level 120
+glow_radius 3
 end
 arch pstone_1
 x 5
@@ -1013,18 +1013,19 @@ msg
 @match *
 FOR RUGGILLI!
 endmsg
-level 4
-exp 80
-carrying 700
 hp 35
+exp 80
+x 5
+y 13
+level 4
 resist_physical 5
 resist_fire 80
 resist_electricity 10
 resist_fear 50
-x 5
-y 13
+carrying 700
 arch scroll_2
 name Servant's Pass
+slaying rug_pass
 msg
 Possession of this paper is proof that
 "The Servant" has been defeated.
@@ -1032,7 +1033,6 @@ Entrance to Ruggilli's sanctuary is
 hereby permitted,
 signed theservant_
 endmsg
-slaying rug_pass
 end
 end
 arch dirtfloor
@@ -1100,9 +1100,9 @@ x 5
 y 24
 end
 arch fire_permanent
-glow_radius 3
 x 5
 y 24
+glow_radius 3
 end
 arch permanent_lava
 x 5
@@ -1331,10 +1331,10 @@ end
 arch teleporter
 hp 16
 sp 28
-connected 22
-speed 0.0
 x 7
 y 2
+speed 0.0
+connected 22
 end
 arch gnoll_leader_arc
 x 7
@@ -1635,18 +1635,18 @@ x 8
 y 22
 end
 arch fire_permanent
-glow_radius 3
 x 8
 y 22
+glow_radius 3
 end
 arch permanent_lava
 x 8
 y 23
 end
 arch rune_fire
-level 2
 x 8
 y 23
+level 2
 end
 arch dirtfloor
 x 8
@@ -1695,10 +1695,10 @@ end
 arch teleporter
 hp 11
 sp 28
-connected 21
-speed 0.0
 x 9
 y 2
+speed 0.0
+connected 21
 end
 arch gnoll_leader_arc
 x 9
@@ -1753,9 +1753,9 @@ x 9
 y 10
 end
 arch trigger
-connected 99
 x 9
 y 10
+connected 99
 end
 arch pstone_1
 x 9
@@ -1769,9 +1769,9 @@ arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 9
 y 13
+type 0
 end
 arch dirtfloor
 x 9
@@ -1862,9 +1862,9 @@ x 9
 y 28
 end
 arch trigger
-connected 10
 x 9
 y 28
+connected 10
 end
 arch dirtfloor
 x 9
@@ -1946,9 +1946,9 @@ arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 10
 y 13
+type 0
 end
 arch permanent_lava
 x 10
@@ -2035,9 +2035,9 @@ x 10
 y 26
 end
 arch grate_closed_2
-connected 10
 x 10
 y 26
+connected 10
 end
 arch dirtfloor
 x 10
@@ -2070,9 +2070,9 @@ end
 arch teleporter
 hp 13
 sp 25
-connected 20
-speed 0.0
 x 11
+speed 0.0
+connected 20
 end
 arch key2
 name key
@@ -2112,33 +2112,33 @@ x 11
 y 7
 end
 arch gate_closed_1
-connected 99
-no_magic 1
-damned 1
 x 11
 y 7
+connected 99
+no_magic 1
+damned 1
 end
 arch pstone_1
 x 11
 y 8
 end
 arch gate_closed_1
+x 11
+y 8
 connected 99
 no_magic 1
 damned 1
-x 11
-y 8
 end
 arch pstone_1
 x 11
 y 9
 end
 arch gate_closed_1
+x 11
+y 9
 connected 99
 no_magic 1
 damned 1
-x 11
-y 9
 end
 arch pstone_1
 x 11
@@ -2157,51 +2157,51 @@ x 11
 y 12
 end
 arch mover_3
-attacktype 1
 maxsp 1
-level 1
 x 11
 y 12
+level 1
+attacktype 1
 end
 arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 11
 y 13
+type 0
 end
 arch permanent_lava
 x 11
 y 14
 end
 arch fire_permanent
-glow_radius 3
 x 11
 y 14
+glow_radius 3
 end
 arch mover_3
-attacktype 1
 maxsp 1
-level 1
 x 11
 y 14
+level 1
+attacktype 1
 end
 arch permanent_lava
 x 11
 y 15
 end
 arch fire_permanent
+x 11
+y 15
 glow_radius 3
-x 11
-y 15
 end
 arch mover_3
-attacktype 1
 maxsp 1
-level 1
 x 11
 y 15
+level 1
+attacktype 1
 end
 arch permanent_lava
 x 11
@@ -2212,11 +2212,11 @@ x 11
 y 16
 end
 arch mover_3
-attacktype 1
 maxsp 1
-level 1
 x 11
 y 16
+level 1
+attacktype 1
 end
 arch dirtfloor
 x 11
@@ -2259,9 +2259,9 @@ x 11
 y 22
 end
 arch rune_fire
-level 2
 x 11
 y 22
+level 2
 end
 arch pstone_1
 x 11
@@ -2291,9 +2291,9 @@ x 11
 y 26
 end
 arch button_plate
-connected 10
 x 11
 y 26
+connected 10
 end
 arch pstone_2
 x 11
@@ -2339,9 +2339,9 @@ x 12
 y 5
 end
 arch fire_permanent
-glow_radius 3
 x 12
 y 5
+glow_radius 3
 end
 arch pstone_1
 x 12
@@ -2388,9 +2388,9 @@ x 12
 y 11
 end
 arch button_small
-connected 16
 x 12
 y 12
+connected 16
 end
 arch permanent_lava
 x 12
@@ -2400,18 +2400,18 @@ arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 12
 y 13
+type 0
 end
 arch permanent_lava
 x 12
 y 14
 end
 arch rune_fire
-level 2
 x 12
 y 14
+level 2
 end
 arch permanent_lava
 x 12
@@ -2422,9 +2422,9 @@ x 12
 y 15
 end
 arch button_small
-connected 15
 x 12
 y 16
+connected 15
 end
 arch permanent_lava
 x 12
@@ -2463,9 +2463,9 @@ x 12
 y 21
 end
 arch fire_permanent
-glow_radius 3
 x 12
 y 21
+glow_radius 3
 end
 arch permanent_lava
 x 12
@@ -2480,10 +2480,10 @@ msg
 THAT IS NOT THE BEST SACRIFICE!
 TAKE THIS GIFT OF DESTRUCTION!
 endmsg
-connected 21
-move_on 0
 x 12
 y 23
+connected 21
+move_on 0
 end
 arch pstone_1
 x 12
@@ -2501,10 +2501,10 @@ arch altar_trigger
 name 10 Gold Coins
 slaying goldcoin
 food 10
-connected 21
-last_sp 1
 x 12
 y 24
+last_sp 1
+connected 21
 end
 arch pstone_1
 x 12
@@ -2512,10 +2512,10 @@ y 25
 end
 arch creator
 other_arch bomb
-connected 21
-level 3
 x 12
 y 25
+level 3
+connected 21
 end
 arch pstone_2
 x 12
@@ -2616,17 +2616,17 @@ x 13
 y 12
 end
 arch fire_permanent
-glow_radius 3
 x 13
 y 12
+glow_radius 3
 end
 arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 13
 y 13
+type 0
 end
 arch permanent_lava
 x 13
@@ -2641,9 +2641,9 @@ x 13
 y 15
 end
 arch fire_permanent
-glow_radius 3
 x 13
 y 15
+glow_radius 3
 end
 arch permanent_lava
 x 13
@@ -2689,10 +2689,10 @@ arch magic_mouth
 msg
 FOOD IS INDEED THE BEST SACRIFICE.
 endmsg
-connected 20
-move_on 0
 x 13
 y 23
+connected 20
+move_on 0
 end
 arch pstone_1
 x 13
@@ -2709,10 +2709,10 @@ end
 arch altar_trigger
 name 7 Food
 food 7
-connected 20
-last_sp 1
 x 13
 y 24
+last_sp 1
+connected 20
 end
 arch pstone_2
 x 13
@@ -2793,9 +2793,9 @@ x 14
 y 9
 end
 arch pillars
-no_pass 1
 x 14
 y 9
+no_pass 1
 end
 arch permanent_lava
 x 14
@@ -2813,9 +2813,9 @@ arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 14
 y 13
+type 0
 end
 arch dirtfloor
 x 14
@@ -2838,9 +2838,9 @@ x 14
 y 17
 end
 arch fire_permanent
-glow_radius 3
 x 14
 y 17
+glow_radius 3
 end
 arch permanent_lava
 x 14
@@ -2867,9 +2867,9 @@ msg
 THAT IS NOT THE BEST SACRIFICE!
 TAKE THIS GIFT OF DESTRUCTION!
 endmsg
-connected 22
 x 14
 y 23
+connected 22
 end
 arch pstone_1
 x 14
@@ -2887,10 +2887,10 @@ arch altar_trigger
 name 3 rubies
 slaying ruby
 food 3
-connected 22
-last_sp 1
 x 14
 y 24
+last_sp 1
+connected 22
 end
 arch pstone_2
 x 14
@@ -2898,10 +2898,10 @@ y 25
 end
 arch creator
 other_arch bomb
-connected 22
-level 3
 x 14
 y 25
+level 3
+connected 22
 end
 arch pstone_1
 x 14
@@ -2962,9 +2962,9 @@ x 15
 y 6
 end
 arch fire_permanent
-glow_radius 3
 x 15
 y 6
+glow_radius 3
 end
 arch pstone_1
 x 15
@@ -2980,6 +2980,7 @@ y 8
 end
 arch fire_witch
 name Shriea
+title High Priestess
 msg
 @match Path|path
 Prove your self worthy by taking the longest path!
@@ -2988,10 +2989,9 @@ Speak not that name suplicant unless thou are a follower of the true path.
 @match *
 Leave me be, I am contemplating The Path of Destruction.
 endmsg
-title High Priestess
-unaggressive 1
 x 15
 y 8
+unaggressive 1
 end
 arch dirtfloor
 x 15
@@ -3013,9 +3013,9 @@ arch lava
 msg
 The lava does not burn you.
 endmsg
-type 0
 x 15
 y 13
+type 0
 end
 arch dirtfloor
 x 15
@@ -3144,9 +3144,9 @@ x 16
 y 9
 end
 arch pillars
-no_pass 1
 x 16
 y 9
+no_pass 1
 end
 arch dirtfloor
 x 16
@@ -3209,9 +3209,9 @@ x 16
 y 23
 end
 arch fire_permanent
-glow_radius 3
 x 16
 y 23
+glow_radius 3
 end
 arch pstone_2
 x 16
@@ -3264,9 +3264,9 @@ x 17
 y 2
 end
 arch trigger
-connected 5
 x 17
 y 2
+connected 5
 end
 arch pstone_2
 x 17
@@ -3337,9 +3337,9 @@ x 17
 y 16
 end
 arch rune_create_bomb
-level 3
 x 17
 y 16
+level 3
 end
 arch dirtfloor
 x 17
@@ -3410,14 +3410,14 @@ x 17
 y 27
 end
 arch rune_create_bomb
-level 3
 x 17
 y 27
+level 3
 end
 arch door_1
-randomitems none
 x 17
 y 27
+randomitems none
 end
 arch dirtfloor
 x 17
@@ -3462,18 +3462,18 @@ x 18
 y 3
 end
 arch gate_closed_2
-connected 5
 x 18
 y 3
+connected 5
 end
 arch pstone_2
 x 18
 y 4
 end
 arch gate_closed_2
-connected 5
 x 18
 y 4
+connected 5
 end
 arch dirtfloor
 x 18
@@ -3650,9 +3650,9 @@ x 19
 y 2
 end
 arch trigger
-connected 5
 x 19
 y 2
+connected 5
 end
 arch pstone_2
 x 19
@@ -3703,9 +3703,9 @@ x 19
 y 12
 end
 arch fire_permanent
-glow_radius 3
 x 19
 y 12
+glow_radius 3
 end
 arch permanent_lava
 x 19
@@ -3756,9 +3756,9 @@ x 19
 y 22
 end
 arch firewall_1
-invisible 1
 x 19
 y 22
+invisible 1
 end
 arch permanent_lava
 x 19
@@ -3857,9 +3857,9 @@ x 20
 y 11
 end
 arch rune_fire
-level 2
 x 20
 y 11
+level 2
 end
 arch dirtfloor
 x 20
@@ -4043,9 +4043,9 @@ x 21
 y 18
 end
 arch rune_fire
-level 2
 x 21
 y 18
+level 2
 end
 arch dirtfloor
 x 21
@@ -4180,9 +4180,9 @@ x 22
 y 10
 end
 arch fire_permanent
-glow_radius 3
 x 22
 y 10
+glow_radius 3
 end
 arch permanent_lava
 x 22
@@ -4221,9 +4221,9 @@ x 22
 y 19
 end
 arch fire_permanent
-glow_radius 3
 x 22
 y 19
+glow_radius 3
 end
 arch permanent_lava
 x 22
@@ -4344,9 +4344,9 @@ x 23
 y 12
 end
 arch fire_permanent
-glow_radius 3
 x 23
 y 12
+glow_radius 3
 end
 arch permanent_lava
 x 23
@@ -4401,9 +4401,9 @@ x 23
 y 24
 end
 arch fire_permanent
-glow_radius 3
 x 23
 y 24
+glow_radius 3
 end
 arch dirtfloor
 x 23
@@ -4512,9 +4512,9 @@ x 24
 y 16
 end
 arch fire_permanent
-glow_radius 3
 x 24
 y 16
+glow_radius 3
 end
 arch pstone_2
 x 24
@@ -4533,9 +4533,9 @@ x 24
 y 20
 end
 arch fire_permanent
-glow_radius 3
 x 24
 y 20
+glow_radius 3
 end
 arch permanent_lava
 x 24
@@ -4983,9 +4983,9 @@ x 27
 y 8
 end
 arch gate_closed_1
-connected 6
 x 27
 y 8
+connected 6
 end
 arch dirtfloor
 x 27
@@ -5028,9 +5028,9 @@ x 27
 y 17
 end
 arch rune_fire
-level 2
 x 27
 y 17
+level 2
 end
 arch food
 x 27
@@ -5053,9 +5053,9 @@ x 27
 y 21
 end
 arch trigger
-connected 9
 x 27
 y 21
+connected 9
 end
 arch dirtfloor
 x 27
@@ -5070,9 +5070,9 @@ x 27
 y 23
 end
 arch trigger
-connected 9
 x 27
 y 23
+connected 9
 end
 arch dirtfloor
 x 27
@@ -5149,9 +5149,9 @@ x 28
 y 7
 end
 arch trigger
-connected 6
 x 28
 y 7
+connected 6
 end
 arch dirtfloor
 x 28
@@ -5166,9 +5166,9 @@ x 28
 y 9
 end
 arch trigger
-connected 6
 x 28
 y 9
+connected 6
 end
 arch dirtfloor
 x 28
@@ -5227,9 +5227,9 @@ x 28
 y 22
 end
 arch gate_closed_1
-connected 9
 x 28
 y 22
+connected 9
 end
 arch dirtfloor
 x 28

@@ -1,19 +1,20 @@
 arch map
+name <unnamed>
+fixed_resettime 1
+difficulty 15
 region navar
+shopitems weapon:30;skill tool:0;weapon improver:40;treasure:-20;*:-45
+shopgreed 1.00000
+shopmin 20
+shopmax 10000
+shoprace human
+width 21
+height 11
 msg
 Creator: 
 Email: 
 Date: Wed Oct 27 11:40:39 1993
 endmsg
-shopitems weapon:30;skill tool:0;weapon improver:40;treasure:-20;*:-45
-shopmin 20
-shopmax 10000
-shoprace human
-shopgreed 1.0
-x 21
-y 11
-difficulty 15
-stand_still 1
 end
 arch flagstone
 name floor

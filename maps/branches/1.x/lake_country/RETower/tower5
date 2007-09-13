@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name tower5
+region lakecountry
+width 25
+height 25
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Tue Jun 20 07:54:22 1995
 endmsg
-x 25
-y 25
 end
 arch permanent_lava
 end
@@ -2234,7 +2234,7 @@ arch sign
 msg
   You will die without means to protect
 from fire!! Be warned!
-                           
+
 endmsg
 x 12
 y 11
@@ -2498,6 +2498,15 @@ end
 arch permanent_lava
 x 14
 y 4
+end
+arch demon_lord
+hp 5000
+x 14
+y 4
+carrying 100
+arch key2
+slaying tower5
+end
 end
 arch permanent_lava
 x 14
@@ -3397,6 +3406,10 @@ arch permanent_lava
 x 20
 y 4
 end
+arch demon_lord
+x 20
+y 4
+end
 arch permanent_lava
 x 20
 y 5
@@ -4164,17 +4177,4 @@ name firewall
 face fireball.111
 x 24
 y 24
-end
-arch demon_lord
-hp 5000
-x 14
-y 4
-carrying 100
-arch key2
-slaying tower5
-end
-end
-arch demon_lord
-x 20
-y 4
 end

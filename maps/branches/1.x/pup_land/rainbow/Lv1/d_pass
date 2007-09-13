@@ -1,13 +1,13 @@
 arch map
-region pupland
 name d_pass
+region pupland
+width 7
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 20:28:01 1996
 endmsg
-x 7
-y 25
 end
 arch dungeon_floor
 end

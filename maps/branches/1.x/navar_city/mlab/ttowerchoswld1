@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 darkness 3
@@ -24145,11 +24146,11 @@ arch swamp
 x 59
 y 6
 end
-arch byakie
+arch fog
 x 59
 y 6
 end
-arch fog
+arch byakie
 x 59
 y 6
 end

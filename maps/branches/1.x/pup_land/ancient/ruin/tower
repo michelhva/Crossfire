@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name tower
+region ancientpupland
+darkness 3
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Dec  8 18:41:08 1996
 endmsg
-x 32
-y 32
-invisible 3
 end
 arch sea
 end

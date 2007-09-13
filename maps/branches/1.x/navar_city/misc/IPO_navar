@@ -120,7 +120,6 @@ Greetings.  Have a pleasant day.
 We donna tolerate no shenanigans around these parts.
 endmsg
 exp 0
-
 x 1
 y 4
 friendly 1
@@ -154,7 +153,6 @@ x 1
 y 8
 arch event_say
 name Navar board
-name_pl Navar board
 title Python
 slaying /python/IPO/board.py
 end

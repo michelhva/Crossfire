@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name fire5
+difficulty 10
+region nurnberg
+width 21
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb 18 23:36:15 1996
 endmsg
-width 21
-height 16
-difficulty 10
 end
 arch woodfloor
 end
@@ -135,13 +135,13 @@ x 1
 y 6
 end
 arch woodfloor
-type 41
 hp 17
 sp 3
-activate_on_push 1
-connected 10
 x 1
 y 7
+type 41
+connected 10
+activate_on_push 1
 end
 arch cwall_2_1_2
 x 1
@@ -176,10 +176,10 @@ arch firewall_2
 name dragon statue
 face fire_drag.131
 dam 82
-speed 1.000000
-level 60
 x 1
 y 12
+speed 1.000000
+level 60
 end
 arch woodfloor
 x 1
@@ -213,15 +213,15 @@ y 1
 end
 arch altar
 name 8
+slaying torch_1
 msg
 Swoosh! The crater is set on fire.
 endmsg
-slaying torch_1
 food 1
-resist_electricity 30
-connected 8
 x 2
 y 2
+resist_electricity 30
+connected 8
 end
 arch magic_mouth
 msg
@@ -233,10 +233,10 @@ end
 arch creator
 name 4
 other_arch fire_permanent
-resist_fire 30
-connected 4
 x 2
 y 2
+resist_fire 30
+connected 4
 end
 arch woodfloor
 x 2
@@ -244,10 +244,10 @@ y 2
 end
 arch phole_3
 name mysterious crater
-type 0
-move_on 0
 x 2
 y 2
+type 0
+move_on 0
 end
 arch woodfloor
 x 2
@@ -259,17 +259,17 @@ y 4
 end
 arch altar
 name 7
+slaying torch_1
 msg
 Swoosh! The crater is set on fire.
 endmsg
-slaying torch_1
 food 1
+x 2
+y 5
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 2
-y 5
 end
 arch magic_mouth
 msg
@@ -281,11 +281,11 @@ end
 arch creator
 name 3
 other_arch fire_permanent
+x 2
+y 5
 resist_physical 30
 resist_magic 30
 connected 3
-x 2
-y 5
 end
 arch woodfloor
 x 2
@@ -293,23 +293,23 @@ y 5
 end
 arch phole_3
 name mysterious crater
-type 0
-move_on 0
 x 2
 y 5
+type 0
+move_on 0
 end
 arch woodfloor
 x 2
 y 6
 end
 arch woodfloor
-type 41
 hp 18
 sp 3
-activate_on_push 1
-connected 10
 x 2
 y 7
+type 41
+connected 10
+activate_on_push 1
 end
 arch cwall_2_1_2
 x 2
@@ -340,37 +340,37 @@ x 2
 y 12
 end
 arch button_lever
+x 2
+y 12
 resist_magic 30
 resist_fire 30
 resist_cold 30
 connected 22
-x 2
-y 12
 end
 arch woodfloor
 x 2
 y 13
 end
 arch igate_closed_1
+x 2
+y 13
 speed 0.500000
 resist_magic 30
 resist_fire 30
 resist_cold 30
 connected 22
-x 2
-y 13
 end
 arch woodfloor
 x 2
 y 14
 end
 arch button_lever
+x 2
+y 14
 resist_magic 30
 resist_fire 30
 resist_cold 30
 connected 22
-x 2
-y 14
 end
 arch woodfloor
 x 2
@@ -411,13 +411,13 @@ x 3
 y 6
 end
 arch woodfloor
-type 41
 hp 19
 sp 3
-activate_on_push 1
-connected 10
 x 3
 y 7
+type 41
+connected 10
+activate_on_push 1
 end
 arch cwall_2_1_2
 x 3
@@ -452,10 +452,10 @@ arch firewall_8
 name dragon statue
 face fire_drag.171
 dam 82
-speed 1.000000
-level 60
 x 3
 y 12
+speed 1.000000
+level 60
 end
 arch woodfloor
 x 3
@@ -568,14 +568,14 @@ x 4
 y 14
 end
 arch igate_open_2
+x 4
+y 14
 speed 0.500000
 resist_magic 30
 resist_fire 30
 resist_cold 30
 value 1
 connected 22
-x 4
-y 14
 end
 arch woodfloor
 x 4
@@ -634,28 +634,28 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 5
+y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
+end
+arch woodfloor
 x 5
 y 10
 end
-arch woodfloor
-x 5
-y 10
-end
 arch button_plate
 name victory detector
 face button_big.112
+x 5
+y 11
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 5
-y 11
 end
 arch woodfloor
 x 5
@@ -664,13 +664,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 5
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 5
-y 12
 end
 arch woodfloor
 x 5
@@ -679,13 +679,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 5
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 5
-y 13
 end
 arch woodfloor
 x 5
@@ -694,13 +694,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
-resist_physical 30
-resist_fire 30
-resist_cold 30
-weight 3000000
-connected 21
 x 5
 y 14
+resist_physical 30
+resist_fire 30
+resist_cold 30
+weight 3000000
+connected 21
 end
 arch woodfloor
 x 5
@@ -765,13 +765,13 @@ x 6
 y 8
 end
 arch igate_open_2
+x 6
+y 8
 speed 0.500000
 resist_physical 30
 resist_fire 30
 resist_cold 30
 connected 21
-x 6
-y 8
 end
 arch woodfloor
 x 6
@@ -788,13 +788,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 6
+y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 6
-y 10
 end
 arch woodfloor
 x 6
@@ -803,30 +803,35 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 6
+y 11
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 6
-y 11
 end
 arch woodfloor
 x 6
 y 11
 end
+arch big_dragon_ancient
+x 6
+y 11
+weight 3000000
+end
 arch button_plate
 name victory detector
 face button_big.112
+x 6
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 6
-y 12
 end
 arch woodfloor
 x 6
@@ -835,13 +840,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 6
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 6
-y 13
 end
 arch woodfloor
 x 6
@@ -850,13 +855,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
-resist_physical 30
-resist_fire 30
-resist_cold 30
-weight 3000000
-connected 21
 x 6
 y 14
+resist_physical 30
+resist_fire 30
+resist_cold 30
+weight 3000000
+connected 21
 end
 arch woodfloor
 x 6
@@ -932,24 +937,24 @@ x 7
 y 9
 end
 arch igate_open_1
+x 7
+y 9
 speed 0.500000
 resist_physical 30
 resist_fire 30
 resist_cold 30
 connected 21
-x 7
-y 9
 end
 arch button_plate
 name victory detector
 face button_big.112
+x 7
+y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 7
-y 10
 end
 arch woodfloor
 x 7
@@ -958,14 +963,14 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 7
+y 11
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 7
-y 11
 end
 arch woodfloor
 x 7
@@ -974,14 +979,14 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 7
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 7
-y 12
 end
 arch woodfloor
 x 7
@@ -990,13 +995,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 7
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 7
-y 13
 end
 arch woodfloor
 x 7
@@ -1005,13 +1010,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
-resist_physical 30
-resist_fire 30
-resist_cold 30
-weight 3000000
-connected 21
 x 7
 y 14
+resist_physical 30
+resist_fire 30
+resist_cold 30
+weight 3000000
+connected 21
 end
 arch woodfloor
 x 7
@@ -1076,13 +1081,13 @@ x 8
 y 8
 end
 arch igate_open_2
+x 8
+y 8
 speed 0.500000
 resist_physical 30
 resist_fire 30
 resist_cold 30
 connected 21
-x 8
-y 8
 end
 arch woodfloor
 x 8
@@ -1099,13 +1104,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 8
+y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 8
-y 10
 end
 arch woodfloor
 x 8
@@ -1114,14 +1119,14 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 8
+y 11
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 8
-y 11
 end
 arch woodfloor
 x 8
@@ -1130,14 +1135,14 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 8
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 8
-y 12
 end
 arch woodfloor
 x 8
@@ -1146,13 +1151,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 8
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 8
-y 13
 end
 arch woodfloor
 x 8
@@ -1161,13 +1166,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
-resist_physical 30
-resist_fire 30
-resist_cold 30
-weight 3000000
-connected 21
 x 8
 y 14
+resist_physical 30
+resist_fire 30
+resist_cold 30
+weight 3000000
+connected 21
 end
 arch woodfloor
 x 8
@@ -1230,28 +1235,28 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 9
+y 10
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
+end
+arch woodfloor
 x 9
 y 10
 end
-arch woodfloor
-x 9
-y 10
-end
 arch button_plate
 name victory detector
 face button_big.112
+x 9
+y 11
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 9
-y 11
 end
 arch woodfloor
 x 9
@@ -1260,13 +1265,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 9
+y 12
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 9
-y 12
 end
 arch woodfloor
 x 9
@@ -1275,13 +1280,13 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 9
+y 13
 resist_physical 30
 resist_fire 30
 resist_cold 30
 weight 3000000
 connected 21
-x 9
-y 13
 end
 arch woodfloor
 x 9
@@ -1290,14 +1295,14 @@ end
 arch button_plate
 name victory detector
 face button_big.112
+x 9
+y 14
 resist_physical 30
 resist_fire 30
 resist_cold 30
 value 1
 weight 3000000
 connected 21
-x 9
-y 14
 end
 arch woodfloor
 x 9
@@ -1323,16 +1328,16 @@ y 1
 end
 arch altar
 name 6
+slaying torch_1
 msg
 Swoosh! The crater is set on fire.
 endmsg
-slaying torch_1
 food 1
+x 10
+y 2
 resist_magic 30
 resist_fire 30
 connected 6
-x 10
-y 2
 end
 arch magic_mouth
 msg
@@ -1344,10 +1349,10 @@ end
 arch creator
 name 2
 other_arch fire_permanent
-resist_magic 30
-connected 2
 x 10
 y 2
+resist_magic 30
+connected 2
 end
 arch woodfloor
 x 10
@@ -1355,10 +1360,10 @@ y 2
 end
 arch phole_3
 name mysterious crater
-type 0
-move_on 0
 x 10
 y 2
+type 0
+move_on 0
 end
 arch woodfloor
 x 10
@@ -1370,16 +1375,16 @@ y 4
 end
 arch altar
 name 5
+slaying torch_1
 msg
 Swoosh! The crater is set on fire.
 endmsg
-slaying torch_1
 food 1
+x 10
+y 5
 resist_physical 30
 resist_fire 30
 connected 5
-x 10
-y 5
 end
 arch magic_mouth
 msg
@@ -1391,10 +1396,10 @@ end
 arch creator
 name 1
 other_arch fire_permanent
-resist_physical 30
-connected 1
 x 10
 y 5
+resist_physical 30
+connected 1
 end
 arch woodfloor
 x 10
@@ -1402,10 +1407,10 @@ y 5
 end
 arch phole_3
 name mysterious crater
-type 0
-move_on 0
 x 10
 y 5
+type 0
+move_on 0
 end
 arch woodfloor
 x 10
@@ -1526,23 +1531,23 @@ x 11
 y 7
 end
 arch grate_closed_1
+x 11
+y 7
 speed 0.500000
 resist_fire 30
 resist_cold 30
 connected 20
-x 11
-y 7
 end
 arch woodfloor
 x 11
 y 8
 end
 arch button_handle
+x 11
+y 8
 resist_fire 30
 resist_cold 30
 connected 20
-x 11
-y 8
 end
 arch woodfloor
 x 11
@@ -1918,9 +1923,9 @@ x 14
 y 14
 end
 arch chest
-carrying 3500
 x 14
 y 14
+carrying 3500
 arch torch_unlit
 nrof 7
 end
@@ -2124,12 +2129,12 @@ y 15
 end
 arch igate_open_2
 name 9
+x 17
 speed 0.500000
 resist_physical 30
 resist_electricity 30
 value 1
 connected 9
-x 17
 end
 arch food
 x 17
@@ -2155,20 +2160,20 @@ arch teleporter
 name 11
 hp 1
 sp 7
+x 17
+y 4
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-x 17
-y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
-blocksview 0
 x 17
 y 4
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 17
@@ -2176,39 +2181,39 @@ y 5
 end
 arch button_small
 name 3
+x 17
+y 6
 resist_physical 30
 resist_magic 30
 weight 100000
 connected 3
-x 17
-y 6
 end
 arch creator
 name 7
 other_arch boulder
+x 17
+y 6
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 17
-y 6
 end
 arch button_small
 name 1
+x 17
+y 7
 resist_physical 30
 weight 100000
 connected 1
-x 17
-y 7
 end
 arch creator
 name 5
 other_arch boulder
+x 17
+y 7
 resist_physical 30
 resist_fire 30
 connected 5
-x 17
-y 7
 end
 arch blocked
 x 17
@@ -2218,10 +2223,44 @@ arch pit_closed
 name 4
 hp 6
 sp 3
-resist_fire 30
-connected 4
 x 17
 y 9
+resist_fire 30
+connected 4
+end
+arch serpent
+name serpent dragon
+Str 20
+Dex 15
+Con 12
+Wis 20
+Pow 26
+Int 20
+hp 4000
+maxhp 4000
+sp 70
+maxsp 70
+exp 90000
+dam 25
+wc -20
+ac -15
+x 17
+y 9
+level 20
+attacktype 5
+resist_fire 100
+resist_electricity 100
+weight 100000
+randomitems wyvern
+see_invisible 1
+run_away 3
+can_cast_spell 1
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 17
@@ -2231,11 +2270,45 @@ arch pit_closed
 name 3
 hp 6
 sp 3
+x 17
+y 11
 resist_physical 30
 resist_magic 30
 connected 3
+end
+arch serpent
+name serpent dragon
+Str 20
+Dex 15
+Con 12
+Wis 20
+Pow 26
+Int 20
+hp 4000
+maxhp 4000
+sp 70
+maxsp 70
+exp 90000
+dam 25
+wc -20
+ac -15
 x 17
 y 11
+level 20
+attacktype 5
+resist_fire 100
+resist_electricity 100
+weight 100000
+randomitems wyvern
+see_invisible 1
+run_away 3
+can_cast_spell 1
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 17
@@ -2245,10 +2318,44 @@ arch pit_closed
 name 2
 hp 6
 sp 3
-resist_magic 30
-connected 2
 x 17
 y 13
+resist_magic 30
+connected 2
+end
+arch serpent
+name serpent dragon
+Str 20
+Dex 15
+Con 12
+Wis 20
+Pow 26
+Int 20
+hp 4000
+maxhp 4000
+sp 70
+maxsp 70
+exp 90000
+dam 25
+wc -20
+ac -15
+x 17
+y 13
+level 20
+attacktype 5
+resist_fire 100
+resist_electricity 100
+weight 100000
+randomitems wyvern
+see_invisible 1
+run_away 3
+can_cast_spell 1
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 17
@@ -2258,28 +2365,62 @@ arch pit_closed
 name 1
 hp 6
 sp 3
-resist_physical 30
-connected 1
 x 17
 y 15
+resist_physical 30
+connected 1
+end
+arch serpent
+name serpent dragon
+Str 20
+Dex 15
+Con 12
+Wis 20
+Pow 26
+Int 20
+hp 4000
+maxhp 4000
+sp 70
+maxsp 70
+exp 90000
+dam 25
+wc -20
+ac -15
+x 17
+y 15
+level 20
+attacktype 5
+resist_fire 100
+resist_electricity 100
+weight 100000
+randomitems wyvern
+see_invisible 1
+run_away 3
+can_cast_spell 1
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch magic_mouth
 name 10
 msg
 A wall has tumbled down...
 endmsg
+x 18
 resist_magic 30
 resist_electricity 30
 connected 10
-x 18
 end
 arch altar
 name 10
 food 1
+x 18
 resist_magic 30
 resist_electricity 30
 connected 10
-x 18
 end
 arch blocked
 x 18
@@ -2293,20 +2434,20 @@ arch teleporter
 name 11
 hp 2
 sp 7
+x 18
+y 4
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-x 18
-y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
-blocksview 0
 x 18
 y 4
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 18
@@ -2314,36 +2455,36 @@ y 5
 end
 arch button_small
 name 4
+x 18
+y 6
 resist_fire 30
 weight 100000
 connected 4
-x 18
-y 6
 end
 arch creator
 name 8
 other_arch boulder
-resist_electricity 30
-connected 8
 x 18
 y 6
+resist_electricity 30
+connected 8
 end
 arch button_small
 name 2
+x 18
+y 7
 resist_magic 30
 weight 100000
 connected 2
-x 18
-y 7
 end
 arch creator
 name 6
 other_arch boulder
+x 18
+y 7
 resist_magic 30
 resist_fire 30
 connected 6
-x 18
-y 7
 end
 arch blocked
 x 18
@@ -2353,10 +2494,10 @@ arch pit_closed
 name 4
 hp 6
 sp 3
-resist_fire 30
-connected 4
 x 18
 y 9
+resist_fire 30
+connected 4
 end
 arch blocked
 x 18
@@ -2366,11 +2507,11 @@ arch pit_closed
 name 3
 hp 6
 sp 3
+x 18
+y 11
 resist_physical 30
 resist_magic 30
 connected 3
-x 18
-y 11
 end
 arch blocked
 x 18
@@ -2380,10 +2521,10 @@ arch pit_closed
 name 2
 hp 6
 sp 3
-resist_magic 30
-connected 2
 x 18
 y 13
+resist_magic 30
+connected 2
 end
 arch blocked
 x 18
@@ -2393,10 +2534,10 @@ arch pit_closed
 name 1
 hp 6
 sp 3
-resist_physical 30
-connected 1
 x 18
 y 15
+resist_physical 30
+connected 1
 end
 arch blocked
 x 19
@@ -2412,31 +2553,31 @@ end
 arch detector
 name 11
 slaying wall
+x 19
+y 3
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-x 19
-y 3
 end
 arch teleporter
 name 11
 hp 3
 sp 7
+x 19
+y 4
 speed 0.000000
 resist_physical 30
 resist_magic 30
 resist_electricity 30
 connected 11
-x 19
-y 4
 end
 arch cwall_2_1_2
 face cwall_w_1.119
-no_pass 0
-blocksview 0
 x 19
 y 4
+no_pass 0
+blocksview 0
 end
 arch blocked
 x 19
@@ -2451,56 +2592,56 @@ name 9
 msg
 The tower is shaking!
 endmsg
+x 19
+y 7
 resist_physical 30
 resist_electricity 30
 connected 9
-x 19
-y 7
 end
 arch button_small
 name 9
+x 19
+y 7
 resist_physical 30
 resist_electricity 30
 weight 35000
 connected 9
-x 19
-y 7
 end
 arch creator
 name 5
 other_arch small_shield
+x 19
+y 7
 resist_physical 30
 resist_fire 30
 connected 5
-x 19
-y 7
 end
 arch creator
 name 6
 other_arch small_shield
+x 19
+y 7
 resist_magic 30
 resist_fire 30
 connected 6
-x 19
-y 7
 end
 arch creator
 name 7
 other_arch small_shield
+x 19
+y 7
 resist_physical 30
 resist_magic 30
 resist_fire 30
 connected 7
-x 19
-y 7
 end
 arch creator
 name 8
 other_arch small_shield
-resist_electricity 30
-connected 8
 x 19
 y 7
+resist_electricity 30
+connected 8
 end
 arch blocked
 x 19
@@ -2596,145 +2737,4 @@ end
 arch blocked
 x 20
 y 15
-end
-arch big_dragon_ancient
-weight 3000000
-x 6
-y 11
-end
-arch serpent
-name serpent dragon
-Str 20
-Dex 15
-Con 12
-Wis 20
-Pow 26
-Int 20
-hp 4000
-maxhp 4000
-sp 70
-maxsp 70
-exp 90000
-dam 25
-wc -20
-ac -15
-level 20
-attacktype 5
-resist_fire 100
-resist_electricity 100
-weight 100000
-randomitems wyvern
-run_away 3
-see_invisible 1
-can_cast_spell 1
-x 17
-y 9
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch serpent
-name serpent dragon
-Str 20
-Dex 15
-Con 12
-Wis 20
-Pow 26
-Int 20
-hp 4000
-maxhp 4000
-sp 70
-maxsp 70
-exp 90000
-dam 25
-wc -20
-ac -15
-level 20
-attacktype 5
-resist_fire 100
-resist_electricity 100
-weight 100000
-randomitems wyvern
-run_away 3
-see_invisible 1
-can_cast_spell 1
-x 17
-y 11
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch serpent
-name serpent dragon
-Str 20
-Dex 15
-Con 12
-Wis 20
-Pow 26
-Int 20
-hp 4000
-maxhp 4000
-sp 70
-maxsp 70
-exp 90000
-dam 25
-wc -20
-ac -15
-level 20
-attacktype 5
-resist_fire 100
-resist_electricity 100
-weight 100000
-randomitems wyvern
-run_away 3
-see_invisible 1
-can_cast_spell 1
-x 17
-y 13
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch serpent
-name serpent dragon
-Str 20
-Dex 15
-Con 12
-Wis 20
-Pow 26
-Int 20
-hp 4000
-maxhp 4000
-sp 70
-maxsp 70
-exp 90000
-dam 25
-wc -20
-ac -15
-level 20
-attacktype 5
-resist_fire 100
-resist_electricity 100
-weight 100000
-randomitems wyvern
-run_away 3
-see_invisible 1
-can_cast_spell 1
-x 17
-y 15
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
 end

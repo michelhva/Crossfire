@@ -1,16 +1,16 @@
 arch map
 name <untitled>
+reset_timeout 7200
+difficulty 1
+width 50
+height 50
+enter_x 1
+enter_y 1
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
 endmsg
-width 50
-height 50
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
 outdoor 1
 end
 arch dungeon_magic
@@ -993,19 +993,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 8
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 8
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1013,19 +1013,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 9
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 9
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1033,19 +1033,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 10
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 10
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1053,19 +1053,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 11
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 11
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1073,19 +1073,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 12
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 12
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1093,19 +1093,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 13
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 13
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1113,19 +1113,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 14
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 14
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1133,19 +1133,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 15
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
-value 700
-unpaid 1
-unique 1
 x 2
 y 15
+value 700
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -1153,19 +1153,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 16
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
+x 2
+y 16
 value 700
 unpaid 1
 unique 1
-x 2
-y 16
 end
 arch dungeon_magic
 x 2
@@ -1173,19 +1173,19 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 17
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
+x 2
+y 17
 value 700
 unpaid 1
 unique 1
-x 2
-y 17
 end
 arch dungeon_magic
 x 2
@@ -1193,19 +1193,19 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 2
 y 18
 end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
+x 2
+y 18
 value 700
 unpaid 1
 unique 1
-x 2
-y 18
 end
 arch dungeon_magic
 x 2
@@ -2400,19 +2400,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 8
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 8
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2420,19 +2420,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 9
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 9
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2440,19 +2440,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 10
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 10
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2460,19 +2460,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 11
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 11
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2480,19 +2480,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 12
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 12
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2500,19 +2500,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 13
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 13
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2520,19 +2520,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 14
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 14
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2540,19 +2540,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 15
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 5
 y 15
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 5
@@ -2560,19 +2560,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 16
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 5
+y 16
 value 550
 unpaid 1
 unique 1
-x 5
-y 16
 end
 arch dungeon_magic
 x 5
@@ -2580,19 +2580,19 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 17
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 5
+y 17
 value 550
 unpaid 1
 unique 1
-x 5
-y 17
 end
 arch dungeon_magic
 x 5
@@ -2600,19 +2600,19 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 5
 y 18
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 5
+y 18
 value 550
 unpaid 1
 unique 1
-x 5
-y 18
 end
 arch dungeon_magic
 x 5
@@ -2993,19 +2993,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 8
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 8
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3013,19 +3013,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 9
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 9
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3033,19 +3033,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 10
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 10
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3053,19 +3053,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 11
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 11
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3073,19 +3073,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 12
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 12
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3093,19 +3093,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 13
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 13
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3113,19 +3113,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 14
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 14
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3133,19 +3133,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 15
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 6
 y 15
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 6
@@ -3153,19 +3153,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 16
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 6
+y 16
 value 550
 unpaid 1
 unique 1
-x 6
-y 16
 end
 arch dungeon_magic
 x 6
@@ -3173,19 +3173,19 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 17
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 6
+y 17
 value 550
 unpaid 1
 unique 1
-x 6
-y 17
 end
 arch dungeon_magic
 x 6
@@ -3193,19 +3193,19 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 6
 y 18
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 6
+y 18
 value 550
 unpaid 1
 unique 1
-x 6
-y 18
 end
 arch dungeon_magic
 x 6
@@ -3538,19 +3538,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 7
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 7
+y 2
 value 600
 unpaid 1
 unique 1
-x 7
-y 2
 end
 arch dungeon_magic
 x 7
@@ -3931,19 +3931,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 8
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 8
+y 2
 value 600
 unpaid 1
 unique 1
-x 8
-y 2
 end
 arch dungeon_magic
 x 8
@@ -4324,19 +4324,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 9
+y 2
 value 600
 unpaid 1
 unique 1
-x 9
-y 2
 end
 arch dungeon_magic
 x 9
@@ -4384,19 +4384,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 8
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 8
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4404,19 +4404,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 9
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 9
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4424,19 +4424,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 10
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 10
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4444,19 +4444,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 11
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 11
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4464,19 +4464,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 12
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 12
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4484,19 +4484,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 13
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 13
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4504,19 +4504,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 14
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 14
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4524,19 +4524,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 15
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 9
 y 15
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 9
@@ -4544,19 +4544,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 16
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 9
+y 16
 value 550
 unpaid 1
 unique 1
-x 9
-y 16
 end
 arch dungeon_magic
 x 9
@@ -4564,19 +4564,19 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 17
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 9
+y 17
 value 550
 unpaid 1
 unique 1
-x 9
-y 17
 end
 arch dungeon_magic
 x 9
@@ -4584,19 +4584,19 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 9
 y 18
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 9
+y 18
 value 550
 unpaid 1
 unique 1
-x 9
-y 18
 end
 arch dungeon_magic
 x 9
@@ -4929,19 +4929,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 10
+y 2
 value 600
 unpaid 1
 unique 1
-x 10
-y 2
 end
 arch dungeon_magic
 x 10
@@ -4989,19 +4989,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 8
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 8
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5009,19 +5009,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 9
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 9
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5029,19 +5029,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 10
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 10
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5049,19 +5049,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 11
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 11
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5069,19 +5069,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 12
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 12
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5089,19 +5089,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 13
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 13
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5109,19 +5109,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 14
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 14
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5129,19 +5129,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 15
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
-value 550
-unpaid 1
-unique 1
 x 10
 y 15
+value 550
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -5149,19 +5149,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 16
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 10
+y 16
 value 550
 unpaid 1
 unique 1
-x 10
-y 16
 end
 arch dungeon_magic
 x 10
@@ -5169,19 +5169,19 @@ y 17
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 17
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 10
+y 17
 value 550
 unpaid 1
 unique 1
-x 10
-y 17
 end
 arch dungeon_magic
 x 10
@@ -5189,19 +5189,19 @@ y 18
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 10
 y 18
 end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 10
+y 18
 value 550
 unpaid 1
 unique 1
-x 10
-y 18
 end
 arch dungeon_magic
 x 10
@@ -5534,19 +5534,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 11
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 11
+y 2
 value 600
 unpaid 1
 unique 1
-x 11
-y 2
 end
 arch dungeon_magic
 x 11
@@ -6316,19 +6316,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 13
+y 2
 value 600
 unpaid 1
 unique 1
-x 13
-y 2
 end
 arch dungeon_magic
 x 13
@@ -6360,8 +6360,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 6
 end
@@ -6369,12 +6369,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 6
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 6
 end
 arch dungeon_magic
 x 13
@@ -6382,8 +6382,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 7
 end
@@ -6391,12 +6391,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 7
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 7
 end
 arch dungeon_magic
 x 13
@@ -6412,8 +6412,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 9
 end
@@ -6421,12 +6421,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 9
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 9
 end
 arch dungeon_magic
 x 13
@@ -6434,8 +6434,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 10
 end
@@ -6443,12 +6443,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 10
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 10
 end
 arch dungeon_magic
 x 13
@@ -6464,8 +6464,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 12
 end
@@ -6473,12 +6473,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 12
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 12
 end
 arch dungeon_magic
 x 13
@@ -6486,8 +6486,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 13
 end
@@ -6495,12 +6495,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 13
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 13
 end
 arch dungeon_magic
 x 13
@@ -6516,8 +6516,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 15
 end
@@ -6525,12 +6525,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 15
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 15
 end
 arch dungeon_magic
 x 13
@@ -6538,8 +6538,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 13
 y 16
 end
@@ -6547,12 +6547,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 13
+y 16
 material 2
 value 1000
 unpaid 1
 unique 1
-x 13
-y 16
 end
 arch dungeon_magic
 x 13
@@ -6889,19 +6889,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 14
+y 2
 value 600
 unpaid 1
 unique 1
-x 14
-y 2
 end
 arch dungeon_magic
 x 14
@@ -6933,8 +6933,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 6
 end
@@ -6942,12 +6942,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 6
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 6
 end
 arch dungeon_magic
 x 14
@@ -6955,8 +6955,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 7
 end
@@ -6964,12 +6964,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 7
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 7
 end
 arch dungeon_magic
 x 14
@@ -6985,8 +6985,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 9
 end
@@ -6994,12 +6994,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 9
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 9
 end
 arch dungeon_magic
 x 14
@@ -7007,8 +7007,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 10
 end
@@ -7016,12 +7016,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 10
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 10
 end
 arch dungeon_magic
 x 14
@@ -7037,8 +7037,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 12
 end
@@ -7046,12 +7046,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 12
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 12
 end
 arch dungeon_magic
 x 14
@@ -7059,8 +7059,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 13
 end
@@ -7068,12 +7068,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 13
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 13
 end
 arch dungeon_magic
 x 14
@@ -7089,8 +7089,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 15
 end
@@ -7098,12 +7098,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 15
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 15
 end
 arch dungeon_magic
 x 14
@@ -7111,8 +7111,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 14
 y 16
 end
@@ -7120,12 +7120,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 14
+y 16
 material 2
 value 1000
 unpaid 1
 unique 1
-x 14
-y 16
 end
 arch dungeon_magic
 x 14
@@ -7462,19 +7462,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 15
+y 2
 value 600
 unpaid 1
 unique 1
-x 15
-y 2
 end
 arch dungeon_magic
 x 15
@@ -7506,8 +7506,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 6
 end
@@ -7515,12 +7515,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 6
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 6
 end
 arch dungeon_magic
 x 15
@@ -7528,8 +7528,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 7
 end
@@ -7537,12 +7537,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 7
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 7
 end
 arch dungeon_magic
 x 15
@@ -7558,8 +7558,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 9
 end
@@ -7567,12 +7567,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 9
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 9
 end
 arch dungeon_magic
 x 15
@@ -7580,8 +7580,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 10
 end
@@ -7589,12 +7589,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 10
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 10
 end
 arch dungeon_magic
 x 15
@@ -7610,8 +7610,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 12
 end
@@ -7619,12 +7619,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 12
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 12
 end
 arch dungeon_magic
 x 15
@@ -7632,8 +7632,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 13
 end
@@ -7641,12 +7641,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 13
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 13
 end
 arch dungeon_magic
 x 15
@@ -7662,8 +7662,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 15
 end
@@ -7671,12 +7671,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 15
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 15
 end
 arch dungeon_magic
 x 15
@@ -7684,8 +7684,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 15
 y 16
 end
@@ -7693,12 +7693,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 15
+y 16
 material 2
 value 1000
 unpaid 1
 unique 1
-x 15
-y 16
 end
 arch dungeon_magic
 x 15
@@ -8003,19 +8003,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 16
+y 2
 value 600
 unpaid 1
 unique 1
-x 16
-y 2
 end
 arch dungeon_magic
 x 16
@@ -8047,8 +8047,8 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 6
 end
@@ -8056,12 +8056,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 6
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 6
 end
 arch dungeon_magic
 x 16
@@ -8069,8 +8069,8 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 7
 end
@@ -8078,12 +8078,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 7
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 7
 end
 arch dungeon_magic
 x 16
@@ -8099,8 +8099,8 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 9
 end
@@ -8108,12 +8108,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 9
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 9
 end
 arch dungeon_magic
 x 16
@@ -8121,8 +8121,8 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 10
 end
@@ -8130,12 +8130,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 10
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 10
 end
 arch dungeon_magic
 x 16
@@ -8151,8 +8151,8 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 12
 end
@@ -8160,12 +8160,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 12
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 12
 end
 arch dungeon_magic
 x 16
@@ -8173,8 +8173,8 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 13
 end
@@ -8182,12 +8182,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 13
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 13
 end
 arch dungeon_magic
 x 16
@@ -8203,8 +8203,8 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 15
 end
@@ -8212,12 +8212,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 15
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 15
 end
 arch dungeon_magic
 x 16
@@ -8225,8 +8225,8 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 16
 y 16
 end
@@ -8234,12 +8234,12 @@ arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 16
+y 16
 material 2
 value 1000
 unpaid 1
 unique 1
-x 16
-y 16
 end
 arch dungeon_magic
 x 16
@@ -8576,19 +8576,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 17
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 17
+y 2
 value 600
 unpaid 1
 unique 1
-x 17
-y 2
 end
 arch dungeon_magic
 x 17
@@ -9442,19 +9442,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 19
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 19
+y 2
 value 600
 unpaid 1
 unique 1
-x 19
-y 2
 end
 arch dungeon_magic
 x 19
@@ -9891,19 +9891,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 20
+y 2
 value 600
 unpaid 1
 unique 1
-x 20
-y 2
 end
 arch dungeon_magic
 x 20
@@ -9927,19 +9927,19 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 5
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 5
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -9947,19 +9947,19 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 6
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 6
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -9967,19 +9967,19 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 7
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 7
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -9987,19 +9987,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 8
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 8
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -10007,19 +10007,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 9
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 9
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -10027,19 +10027,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 10
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 10
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -10047,19 +10047,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 11
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 20
 y 11
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 20
@@ -10067,19 +10067,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 12
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 20
+y 12
 value 625
 unpaid 1
 unique 1
-x 20
-y 12
 end
 arch dungeon_magic
 x 20
@@ -10087,19 +10087,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 13
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 20
+y 13
 value 625
 unpaid 1
 unique 1
-x 20
-y 13
 end
 arch dungeon_magic
 x 20
@@ -10107,19 +10107,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 14
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 20
+y 14
 value 625
 unpaid 1
 unique 1
-x 20
-y 14
 end
 arch dungeon_magic
 x 20
@@ -10127,19 +10127,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 15
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 20
+y 15
 value 625
 unpaid 1
 unique 1
-x 20
-y 15
 end
 arch dungeon_magic
 x 20
@@ -10147,19 +10147,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 20
 y 16
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 20
+y 16
 value 625
 unpaid 1
 unique 1
-x 20
-y 16
 end
 arch dungeon_magic
 x 20
@@ -10472,19 +10472,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 21
+y 2
 value 600
 unpaid 1
 unique 1
-x 21
-y 2
 end
 arch dungeon_magic
 x 21
@@ -10508,19 +10508,19 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 5
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 5
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10528,19 +10528,19 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 6
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 6
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10548,19 +10548,19 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 7
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 7
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10568,19 +10568,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 8
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 8
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10588,19 +10588,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 9
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 9
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10608,19 +10608,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 10
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 10
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10628,19 +10628,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 11
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 21
 y 11
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 21
@@ -10648,19 +10648,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 12
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 21
+y 12
 value 625
 unpaid 1
 unique 1
-x 21
-y 12
 end
 arch dungeon_magic
 x 21
@@ -10668,19 +10668,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 13
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 21
+y 13
 value 625
 unpaid 1
 unique 1
-x 21
-y 13
 end
 arch dungeon_magic
 x 21
@@ -10688,19 +10688,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 14
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 21
+y 14
 value 625
 unpaid 1
 unique 1
-x 21
-y 14
 end
 arch dungeon_magic
 x 21
@@ -10708,19 +10708,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 15
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 21
+y 15
 value 625
 unpaid 1
 unique 1
-x 21
-y 15
 end
 arch dungeon_magic
 x 21
@@ -10728,19 +10728,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 21
 y 16
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 21
+y 16
 value 625
 unpaid 1
 unique 1
-x 21
-y 16
 end
 arch dungeon_magic
 x 21
@@ -11029,19 +11029,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 22
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 22
+y 2
 value 600
 unpaid 1
 unique 1
-x 22
-y 2
 end
 arch dungeon_magic
 x 22
@@ -11470,19 +11470,19 @@ y 2
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 23
 y 2
 end
 arch bookshelf
 name permanent bookshelf of holding
 name_pl permanent bookshelves of holding
+x 23
+y 2
 value 600
 unpaid 1
 unique 1
-x 23
-y 2
 end
 arch dungeon_magic
 x 23
@@ -11935,19 +11935,19 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 5
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 5
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -11955,19 +11955,19 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 6
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 6
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -11975,19 +11975,19 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 7
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 7
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -11995,19 +11995,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 8
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 8
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -12015,19 +12015,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 9
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 9
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -12035,19 +12035,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 10
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 10
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -12055,19 +12055,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 11
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 24
 y 11
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 24
@@ -12075,19 +12075,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 12
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 24
+y 12
 value 625
 unpaid 1
 unique 1
-x 24
-y 12
 end
 arch dungeon_magic
 x 24
@@ -12095,19 +12095,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 13
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 24
+y 13
 value 625
 unpaid 1
 unique 1
-x 24
-y 13
 end
 arch dungeon_magic
 x 24
@@ -12115,19 +12115,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 14
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 24
+y 14
 value 625
 unpaid 1
 unique 1
-x 24
-y 14
 end
 arch dungeon_magic
 x 24
@@ -12135,19 +12135,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 15
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 24
+y 15
 value 625
 unpaid 1
 unique 1
-x 24
-y 15
 end
 arch dungeon_magic
 x 24
@@ -12155,19 +12155,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 24
 y 16
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 24
+y 16
 value 625
 unpaid 1
 unique 1
-x 24
-y 16
 end
 arch dungeon_magic
 x 24
@@ -12500,19 +12500,19 @@ y 5
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 5
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 5
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12520,19 +12520,19 @@ y 6
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 6
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 6
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12540,19 +12540,19 @@ y 7
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 7
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 7
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12560,19 +12560,19 @@ y 8
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 8
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 8
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12580,19 +12580,19 @@ y 9
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 9
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 9
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12600,19 +12600,19 @@ y 10
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 10
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 10
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12620,19 +12620,19 @@ y 11
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 11
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
-value 625
-unpaid 1
-unique 1
 x 25
 y 11
+value 625
+unpaid 1
+unique 1
 end
 arch dungeon_magic
 x 25
@@ -12640,19 +12640,19 @@ y 12
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 12
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 25
+y 12
 value 625
 unpaid 1
 unique 1
-x 25
-y 12
 end
 arch dungeon_magic
 x 25
@@ -12660,19 +12660,19 @@ y 13
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 13
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 25
+y 13
 value 625
 unpaid 1
 unique 1
-x 25
-y 13
 end
 arch dungeon_magic
 x 25
@@ -12680,19 +12680,19 @@ y 14
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 14
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 25
+y 14
 value 625
 unpaid 1
 unique 1
-x 25
-y 14
 end
 arch dungeon_magic
 x 25
@@ -12700,19 +12700,19 @@ y 15
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 15
 end
 arch dresser2
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 25
+y 15
 value 625
 unpaid 1
 unique 1
-x 25
-y 15
 end
 arch dungeon_magic
 x 25
@@ -12720,19 +12720,19 @@ y 16
 end
 arch flagstone
 name floor
-face shop_empty.111
 name_pl floor
+face shop_empty.111
 x 25
 y 16
 end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 25
+y 16
 value 625
 unpaid 1
 unique 1
-x 25
-y 16
 end
 arch dungeon_magic
 x 25
@@ -19063,12 +19063,12 @@ y 10
 end
 arch courier
 name Jeweler
+name_pl Jeweler
 msg
 @match *
 May I help you in selecting the most
 perfect ring?
 endmsg
-name_pl Jeweler
 x 40
 y 10
 end
@@ -21029,21 +21029,21 @@ end
 arch chest_2
 name permanent chest of holding
 name_pl permanent chests of holding
+x 44
 value 550
 unpaid 1
 unique 1
-x 44
 end
 arch chest_2
 name permanent large metal chest of holding
 name_pl permanent large metal chests of holding
 Str 25
+x 44
+y 2
 material 2
 value 1000
 unpaid 1
 unique 1
-x 44
-y 2
 end
 arch flagstone
 x 44
@@ -21412,10 +21412,10 @@ end
 arch desk
 name permanent desk of holding
 name_pl permanent desks of holding
+x 46
 value 700
 unpaid 1
 unique 1
-x 46
 end
 arch flagstone
 x 46
@@ -21908,10 +21908,10 @@ end
 arch dresser
 name permanent dresser of holding
 name_pl permanent dressers of holding
+x 48
 value 625
 unpaid 1
 unique 1
-x 48
 end
 arch flagstone
 x 48
@@ -21947,11 +21947,11 @@ y 16
 end
 arch altar_none
 name stove
-face altarrugg.111
 name_pl stove
-no_pass 1
+face altarrugg.111
 x 48
 y 16
+no_pass 1
 end
 arch dungeon_magic
 x 48
@@ -21967,11 +21967,11 @@ y 17
 end
 arch altar_none
 name stove
-face altarrugg.111
 name_pl stove
-no_pass 1
+face altarrugg.111
 x 48
 y 17
+no_pass 1
 end
 arch dungeon_magic
 x 48
@@ -21988,9 +21988,9 @@ end
 arch altar_none
 name grill
 name_pl grill
-no_pass 1
 x 48
 y 18
+no_pass 1
 end
 arch dungeon_magic
 x 48
@@ -22007,9 +22007,9 @@ end
 arch altar_none
 name grill
 name_pl grill
-no_pass 1
 x 48
 y 19
+no_pass 1
 end
 arch dungeon_magic
 x 48
@@ -22026,9 +22026,9 @@ end
 arch altar_none
 name grill
 name_pl grill
-no_pass 1
 x 48
 y 20
+no_pass 1
 end
 arch dungeon_magic
 x 48

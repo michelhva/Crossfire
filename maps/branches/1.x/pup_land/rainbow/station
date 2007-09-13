@@ -586,6 +586,14 @@ arch pstone_2
 x 6
 y 2
 end
+arch dragon_exit
+name To terminal
+slaying /pup_land/terminal
+hp 10
+sp 16
+x 6
+y 2
+end
 arch pstone_2
 x 6
 y 3
@@ -1474,12 +1482,4 @@ end
 arch wwall_2_2_4
 x 15
 y 15
-end
-arch dragon_exit
-name To terminal
-slaying /pup_land/terminal
-hp 10
-sp 16
-x 6
-y 2
 end

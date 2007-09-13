@@ -1,30 +1,30 @@
 arch map
-region ancientpupland
 name warden
+region ancientpupland
+width 26
+height 37
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Wed Jun  9 04:01:57 2004
 endmsg
-width 26
-height 37
 end
 arch teleporter
 name 5
 hp 4
 sp 5
 speed 0.000000
-protected 5
 connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
 arch spell_icestorm
 attacktype 16
 end
@@ -33,21 +33,21 @@ arch teleporter
 name 5
 hp 1
 sp 8
-speed 0.000000
-protected 5
-connected 5
 y 1
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 3
+dam 0
+y 1
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 3
-y 1
 arch spell_icestorm
 attacktype 16
 end
@@ -56,21 +56,21 @@ arch teleporter
 name 5
 hp 1
 sp 12
-speed 0.000000
-protected 5
-connected 5
 y 2
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 3
+dam 0
+y 2
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 3
-y 2
 arch spell_icestorm
 attacktype 16
 end
@@ -79,21 +79,21 @@ arch teleporter
 name 5
 hp 4
 sp 15
-speed 0.000000
-protected 5
-connected 5
 y 3
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 1
+dam 0
+y 3
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 1
-y 3
 arch spell_icestorm
 attacktype 16
 end
@@ -339,20 +339,20 @@ arch teleporter
 name 5
 hp 8
 sp 5
-speed 0.000000
-protected 5
-connected 5
 x 1
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+x 1
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-x 1
 arch spell_icestorm
 attacktype 16
 end
@@ -361,23 +361,23 @@ arch teleporter
 name 5
 hp 11
 sp 8
-speed 0.000000
-protected 5
-connected 5
 x 1
 y 1
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 7
+dam 0
 x 1
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_icestorm
 attacktype 16
 end
@@ -386,23 +386,23 @@ arch teleporter
 name 5
 hp 11
 sp 12
-speed 0.000000
-protected 5
-connected 5
 x 1
 y 2
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 7
+dam 0
 x 1
 y 2
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_icestorm
 attacktype 16
 end
@@ -411,23 +411,23 @@ arch teleporter
 name 5
 hp 8
 sp 15
-speed 0.000000
-protected 5
-connected 5
 x 1
 y 3
+speed 0.000000
+connected 5
+protected 5
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 1
+dam 0
 x 1
 y 3
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_icestorm
 attacktype 16
 end
@@ -482,10 +482,10 @@ x 1
 y 8
 end
 arch mover_3
-level 1
-attacktype 1
 x 1
 y 8
+level 1
+attacktype 1
 end
 arch flagstone
 x 1
@@ -498,9 +498,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.131
-no_pass 0
 x 1
 y 8
+no_pass 0
 end
 arch dungeon_magic
 x 1
@@ -543,10 +543,10 @@ x 1
 y 12
 end
 arch mover_3
-level 1
-attacktype 1
 x 1
 y 12
+level 1
+attacktype 1
 end
 arch flagstone
 x 1
@@ -555,9 +555,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.131
-no_pass 0
 x 1
 y 12
+no_pass 0
 end
 arch dungeon_magic
 x 1
@@ -1487,10 +1487,10 @@ x 4
 y 5
 end
 arch mover_5
-level 1
-attacktype 1
 x 4
 y 5
+level 1
+attacktype 1
 end
 arch flagstone
 x 4
@@ -1499,9 +1499,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.151
-no_pass 0
 x 4
 y 5
+no_pass 0
 end
 arch dungeon_magic
 x 4
@@ -1524,11 +1524,11 @@ x 4
 y 8
 end
 arch button_small
-protected 1
+x 4
+y 8
 weight 1000
 connected 1
-x 4
-y 8
+protected 1
 end
 arch flagstone
 x 4
@@ -1536,9 +1536,9 @@ y 8
 end
 arch pentagram
 name soul detector
-type 66
 x 4
 y 8
+type 66
 end
 arch dungeon_magic
 x 4
@@ -1569,11 +1569,11 @@ x 4
 y 12
 end
 arch button_small
-protected 4
-weight 1000
-connected 4
 x 4
 y 12
+weight 1000
+connected 4
+protected 4
 end
 arch flagstone
 x 4
@@ -1581,9 +1581,9 @@ y 12
 end
 arch pentagram
 name soul detector
-type 66
 x 4
 y 12
+type 66
 end
 arch dungeon_magic
 x 4
@@ -1606,10 +1606,10 @@ x 4
 y 15
 end
 arch mover_1
-level 1
-attacktype 1
 x 4
 y 15
+level 1
+attacktype 1
 end
 arch flagstone
 x 4
@@ -1618,9 +1618,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.111
-no_pass 0
 x 4
 y 15
+no_pass 0
 end
 arch dungeon_magic
 x 4
@@ -1675,11 +1675,11 @@ x 4
 y 21
 end
 arch button_small
-protected 31
-weight 1000
-connected 31
 x 4
 y 21
+weight 1000
+connected 31
+protected 31
 end
 arch flagstone
 x 4
@@ -1687,9 +1687,9 @@ y 21
 end
 arch pentagram
 name soul detector
-type 66
 x 4
 y 21
+type 66
 end
 arch dungeon_magic
 x 4
@@ -1720,11 +1720,11 @@ x 4
 y 25
 end
 arch button_small
-protected 34
-weight 1000
-connected 34
 x 4
 y 25
+weight 1000
+connected 34
+protected 34
 end
 arch flagstone
 x 4
@@ -1732,9 +1732,9 @@ y 25
 end
 arch pentagram
 name soul detector
-type 66
 x 4
 y 25
+type 66
 end
 arch dungeon_magic
 x 4
@@ -2263,10 +2263,10 @@ y 5
 end
 arch button_small
 name 50
-protected 50
-connected 50
 x 6
 y 5
+connected 50
+protected 50
 end
 arch flagstone
 x 6
@@ -2313,11 +2313,11 @@ name 6
 msg
 You hear the sound of moving rock.
 endmsg
-protected 6
-connected 6
-move_on 0
 x 6
 y 10
+connected 6
+move_on 0
+protected 6
 end
 arch magic_mouth
 name 5
@@ -2327,11 +2327,11 @@ Suddenly they rise their mechanical
 arms... to unleash an inferno of snow
 and ice!
 endmsg
-protected 5
-connected 5
-move_on 0
 x 6
 y 10
+connected 5
+move_on 0
+protected 5
 end
 arch flagstone
 x 6
@@ -2459,11 +2459,11 @@ name 36
 msg
 You hear the sound of moving rock.
 endmsg
-protected 36
-connected 36
-move_on 0
 x 6
 y 23
+connected 36
+move_on 0
+protected 36
 end
 arch magic_mouth
 name 35
@@ -2472,11 +2472,11 @@ White statues emerge from another
 dimension! They look extremely
 dangerous...
 endmsg
-protected 35
-connected 35
-move_on 0
 x 6
 y 23
+connected 35
+move_on 0
+protected 35
 end
 arch flagstone
 x 6
@@ -2529,11 +2529,11 @@ end
 arch block_door_closed
 name wall
 face cave2.111
-speed 0.500000
-protected 36
-connected 36
 x 6
 y 28
+speed 0.500000
+connected 36
+protected 36
 end
 arch dungeon_magic
 x 6
@@ -2546,11 +2546,11 @@ end
 arch block_door_closed
 name wall
 face cave4.111
-speed 0.500000
-protected 36
-connected 36
 x 6
 y 29
+speed 0.500000
+connected 36
+protected 36
 end
 arch dungeon_magic
 x 6
@@ -2559,12 +2559,12 @@ end
 arch firewall_1
 name anti-magic force
 dam 128
+x 6
+y 30
 speed -0.050000
 level 100
 no_pass 0
 blocksview 0
-x 6
-y 30
 end
 arch flagstone
 x 6
@@ -3043,10 +3043,10 @@ x 8
 y 5
 end
 arch mover_5
-level 1
-attacktype 1
 x 8
 y 5
+level 1
+attacktype 1
 end
 arch flagstone
 x 8
@@ -3055,9 +3055,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.151
-no_pass 0
 x 8
 y 5
+no_pass 0
 end
 arch dungeon_magic
 x 8
@@ -3080,11 +3080,11 @@ x 8
 y 8
 end
 arch button_small
-protected 2
+x 8
+y 8
 weight 1000
 connected 2
-x 8
-y 8
+protected 2
 end
 arch flagstone
 x 8
@@ -3092,9 +3092,9 @@ y 8
 end
 arch pentagram
 name soul detector
-type 66
 x 8
 y 8
+type 66
 end
 arch dungeon_magic
 x 8
@@ -3125,11 +3125,11 @@ x 8
 y 12
 end
 arch button_small
-protected 3
-weight 1000
-connected 3
 x 8
 y 12
+weight 1000
+connected 3
+protected 3
 end
 arch flagstone
 x 8
@@ -3137,9 +3137,9 @@ y 12
 end
 arch pentagram
 name soul detector
-type 66
 x 8
 y 12
+type 66
 end
 arch dungeon_magic
 x 8
@@ -3162,10 +3162,10 @@ x 8
 y 15
 end
 arch mover_1
-level 1
-attacktype 1
 x 8
 y 15
+level 1
+attacktype 1
 end
 arch flagstone
 x 8
@@ -3178,9 +3178,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.111
-no_pass 0
 x 8
 y 15
+no_pass 0
 end
 arch dungeon_magic
 x 8
@@ -3235,11 +3235,11 @@ x 8
 y 21
 end
 arch button_small
-protected 32
-weight 1000
-connected 32
 x 8
 y 21
+weight 1000
+connected 32
+protected 32
 end
 arch flagstone
 x 8
@@ -3247,9 +3247,9 @@ y 21
 end
 arch pentagram
 name soul detector
-type 66
 x 8
 y 21
+type 66
 end
 arch dungeon_magic
 x 8
@@ -3280,11 +3280,11 @@ x 8
 y 25
 end
 arch button_small
-protected 33
-weight 1000
-connected 33
 x 8
 y 25
+weight 1000
+connected 33
+protected 33
 end
 arch flagstone
 x 8
@@ -3292,9 +3292,9 @@ y 25
 end
 arch pentagram
 name soul detector
-type 66
 x 8
 y 25
+type 66
 end
 arch dungeon_magic
 x 8
@@ -3727,21 +3727,21 @@ arch teleporter
 name 15
 hp 14
 sp 8
-speed 0.000000
-protected 15
-connected 15
 x 10
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 3
+dam 0
+x 10
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 3
-x 10
 arch spell_burning_hands
 attacktype 4
 end
@@ -3750,23 +3750,23 @@ arch teleporter
 name 15
 hp 14
 sp 12
-speed 0.000000
-protected 15
-connected 15
 x 10
 y 1
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 3
+dam 0
 x 10
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_burning_hands
 attacktype 4
 end
@@ -4104,20 +4104,20 @@ arch teleporter
 name 15
 hp 17
 sp 5
-speed 0.000000
-protected 15
-connected 15
 x 11
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+x 11
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-x 11
 arch spell_burning_hands
 attacktype 4
 end
@@ -4126,23 +4126,23 @@ arch teleporter
 name 15
 hp 17
 sp 15
-speed 0.000000
-protected 15
-connected 15
 x 11
 y 1
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 1
+dam 0
 x 11
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_burning_hands
 attacktype 4
 end
@@ -4157,26 +4157,26 @@ msg
 You feel uncomfortable... The statues
 seem to be watching you...
 endmsg
-protected 51
-connected 51
 x 11
 y 3
+connected 51
+protected 51
 end
 arch button_small
 name 51
-protected 51
-weight 1000
-connected 51
 x 11
 y 3
+weight 1000
+connected 51
+protected 51
 end
 arch creator
 name 50
 other_arch small_shield
-protected 50
-connected 50
 x 11
 y 3
+connected 50
+protected 50
 end
 arch dungeon_magic
 x 11
@@ -4223,10 +4223,10 @@ x 11
 y 8
 end
 arch mover_7
-level 1
-attacktype 1
 x 11
 y 8
+level 1
+attacktype 1
 end
 arch flagstone
 x 11
@@ -4235,9 +4235,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.171
-no_pass 0
 x 11
 y 8
+no_pass 0
 end
 arch dungeon_magic
 x 11
@@ -4262,11 +4262,11 @@ end
 arch block_door_closed
 name wall
 face cave1.111
-speed 0.500000
-protected 6
-connected 6
 x 11
 y 10
+speed 0.500000
+connected 6
+protected 6
 end
 arch dungeon_magic
 x 11
@@ -4285,10 +4285,10 @@ x 11
 y 12
 end
 arch mover_7
-level 1
-attacktype 1
 x 11
 y 12
+level 1
+attacktype 1
 end
 arch flagstone
 x 11
@@ -4297,9 +4297,9 @@ end
 arch statue
 name fearsome statue
 face wizard_blue.171
-no_pass 0
 x 11
 y 12
+no_pass 0
 end
 arch dungeon_magic
 x 11
@@ -4416,11 +4416,11 @@ end
 arch block_door_closed
 name wall
 face cave1.111
-speed 0.500000
-protected 26
-connected 26
 x 11
 y 23
+speed 0.500000
+connected 26
+protected 26
 end
 arch dungeon_magic
 x 11
@@ -4512,11 +4512,11 @@ y 32
 end
 arch torch_1
 food 0
+x 11
+y 32
 material 0
 no_pick 1
 changing 0
-x 11
-y 32
 end
 arch dungeon_magic
 x 11
@@ -4536,11 +4536,11 @@ y 34
 end
 arch torch_1
 food 0
+x 11
+y 34
 material 0
 no_pick 1
 changing 0
-x 11
-y 34
 end
 arch dungeon_magic
 x 11
@@ -4566,20 +4566,20 @@ arch teleporter
 name 15
 hp 21
 sp 5
-speed 0.000000
-protected 15
-connected 15
 x 12
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+x 12
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-x 12
 arch spell_burning_hands
 attacktype 4
 end
@@ -4588,23 +4588,23 @@ arch teleporter
 name 15
 hp 21
 sp 15
-speed 0.000000
-protected 15
-connected 15
 x 12
 y 1
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 1
+dam 0
 x 12
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_burning_hands
 attacktype 4
 end
@@ -4683,14 +4683,14 @@ y 10
 end
 arch firewall_3
 name anti-magic force
-blocksview 0
 dam 0
-level 110
-speed -0.05
-no_pass 0
-no_pick 1
 x 12
 y 10
+speed -0.05
+level 110
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -4699,11 +4699,11 @@ x 12
 y 10
 end
 arch block_door_closed
-speed 0.500000
-protected 6
-connected 6
 x 12
 y 10
+speed 0.500000
+connected 6
+protected 6
 end
 arch dungeon_magic
 x 12
@@ -4765,50 +4765,50 @@ arch altar
 name 5
 slaying small_shield
 food 1
-protected 5
-connected 5
 x 12
 y 16
+connected 5
+protected 5
 end
 arch button_plate
 name 6
-protected 6
-weight 25000
-connected 6
 x 12
 y 16
+weight 25000
+connected 6
+protected 6
 end
 arch creator
 name 4
 other_arch small_shield
-protected 4
-connected 4
 x 12
 y 16
+connected 4
+protected 4
 end
 arch creator
 name 3
 other_arch small_shield
-protected 3
-connected 3
 x 12
 y 16
+connected 3
+protected 3
 end
 arch creator
 name 2
 other_arch small_shield
-protected 2
-connected 2
 x 12
 y 16
+connected 2
+protected 2
 end
 arch creator
 name 1
 other_arch small_shield
-protected 1
-connected 1
 x 12
 y 16
+connected 1
+protected 1
 end
 arch flagstone
 x 12
@@ -4818,50 +4818,50 @@ arch altar
 name 35
 slaying small_shield
 food 1
-protected 35
-connected 35
 x 12
 y 17
+connected 35
+protected 35
 end
 arch button_plate
 name 36
-protected 36
-weight 25000
-connected 36
 x 12
 y 17
+weight 25000
+connected 36
+protected 36
 end
 arch creator
 name 34
 other_arch small_shield
-protected 34
-connected 34
 x 12
 y 17
+connected 34
+protected 34
 end
 arch creator
 name 33
 other_arch small_shield
-protected 33
-connected 33
 x 12
 y 17
+connected 33
+protected 33
 end
 arch creator
 name 32
 other_arch small_shield
-protected 32
-connected 32
 x 12
 y 17
+connected 32
+protected 32
 end
 arch creator
 name 31
 other_arch small_shield
-protected 31
-connected 31
 x 12
 y 17
+connected 31
+protected 31
 end
 arch dungeon_magic
 x 12
@@ -4921,14 +4921,14 @@ y 23
 end
 arch firewall_3
 name anti-magic force
-blocksview 0
 dam 0
-level 110
-speed -0.05
-no_pass 0
-no_pick 1
 x 12
 y 23
+speed -0.05
+level 110
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -4937,11 +4937,11 @@ x 12
 y 23
 end
 arch block_door_closed
-speed 0.500000
-protected 26
-connected 26
 x 12
 y 23
+speed 0.500000
+connected 26
+protected 26
 end
 arch dungeon_magic
 x 12
@@ -5071,21 +5071,21 @@ arch teleporter
 name 15
 hp 24
 sp 8
-speed 0.000000
-protected 15
-connected 15
 x 13
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 7
+dam 0
+x 13
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 7
-x 13
 arch spell_burning_hands
 attacktype 4
 end
@@ -5094,23 +5094,23 @@ arch teleporter
 name 15
 hp 24
 sp 12
-speed 0.000000
-protected 15
-connected 15
 x 13
 y 1
+speed 0.000000
+connected 15
+protected 15
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 7
+dam 0
 x 13
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_burning_hands
 attacktype 4
 end
@@ -5189,14 +5189,14 @@ y 10
 end
 arch firewall_7
 name anti-magic force
-blocksview 0
 dam 0
-level 110
-speed -0.05
-no_pass 0
-no_pick 1
 x 13
 y 10
+speed -0.05
+level 110
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -5205,11 +5205,11 @@ x 13
 y 10
 end
 arch block_door_closed
-speed 0.500000
-protected 6
-connected 6
 x 13
 y 10
+speed 0.500000
+connected 6
+protected 6
 end
 arch dungeon_magic
 x 13
@@ -5271,50 +5271,50 @@ arch altar
 name 15
 slaying small_shield
 food 1
-protected 15
-connected 15
 x 13
 y 16
+connected 15
+protected 15
 end
 arch button_plate
 name 16
-protected 16
-weight 25000
-connected 16
 x 13
 y 16
+weight 25000
+connected 16
+protected 16
 end
 arch creator
 name 14
 other_arch small_shield
-protected 14
-connected 14
 x 13
 y 16
+connected 14
+protected 14
 end
 arch creator
 name 13
 other_arch small_shield
-protected 13
-connected 13
 x 13
 y 16
+connected 13
+protected 13
 end
 arch creator
 name 12
 other_arch small_shield
-protected 12
-connected 12
 x 13
 y 16
+connected 12
+protected 12
 end
 arch creator
 name 11
 other_arch small_shield
-protected 11
-connected 11
 x 13
 y 16
+connected 11
+protected 11
 end
 arch flagstone
 x 13
@@ -5324,50 +5324,50 @@ arch altar
 name 25
 slaying small_shield
 food 1
-protected 25
-connected 25
 x 13
 y 17
+connected 25
+protected 25
 end
 arch button_plate
 name 26
-protected 26
-weight 25000
-connected 26
 x 13
 y 17
+weight 25000
+connected 26
+protected 26
 end
 arch creator
 name 24
 other_arch small_shield
-protected 24
-connected 24
 x 13
 y 17
+connected 24
+protected 24
 end
 arch creator
 name 23
 other_arch small_shield
-protected 23
-connected 23
 x 13
 y 17
+connected 23
+protected 23
 end
 arch creator
 name 22
 other_arch small_shield
-protected 22
-connected 22
 x 13
 y 17
+connected 22
+protected 22
 end
 arch creator
 name 21
 other_arch small_shield
-protected 21
-connected 21
 x 13
 y 17
+connected 21
+protected 21
 end
 arch dungeon_magic
 x 13
@@ -5427,14 +5427,14 @@ y 23
 end
 arch firewall_7
 name anti-magic force
-blocksview 0
 dam 0
-level 110
-speed -0.05
-no_pass 0
-no_pick 1
 x 13
 y 23
+speed -0.05
+level 110
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -5443,11 +5443,11 @@ x 13
 y 23
 end
 arch block_door_closed
-speed 0.500000
-protected 26
-connected 26
 x 13
 y 23
+speed 0.500000
+connected 26
+protected 26
 end
 arch dungeon_magic
 x 13
@@ -5633,10 +5633,10 @@ x 14
 y 8
 end
 arch mover_3
-level 1
-attacktype 1
 x 14
 y 8
+level 1
+attacktype 1
 end
 arch flagstone
 x 14
@@ -5645,9 +5645,9 @@ end
 arch statue
 name fearsome statue
 face wizard.131
-no_pass 0
 x 14
 y 8
+no_pass 0
 end
 arch dungeon_magic
 x 14
@@ -5672,11 +5672,11 @@ end
 arch block_door_closed
 name wall
 face cave3.111
-speed 0.500000
-protected 6
-connected 6
 x 14
 y 10
+speed 0.500000
+connected 6
+protected 6
 end
 arch dungeon_magic
 x 14
@@ -5695,10 +5695,10 @@ x 14
 y 12
 end
 arch mover_3
-level 1
-attacktype 1
 x 14
 y 12
+level 1
+attacktype 1
 end
 arch flagstone
 x 14
@@ -5707,9 +5707,9 @@ end
 arch statue
 name fearsome statue
 face wizard.131
-no_pass 0
 x 14
 y 12
+no_pass 0
 end
 arch dungeon_magic
 x 14
@@ -5796,10 +5796,10 @@ x 14
 y 21
 end
 arch mover_3
-level 1
-attacktype 1
 x 14
 y 21
+level 1
+attacktype 1
 end
 arch flagstone
 x 14
@@ -5808,9 +5808,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.131
-no_pass 0
 x 14
 y 21
+no_pass 0
 end
 arch dungeon_magic
 x 14
@@ -5835,11 +5835,11 @@ end
 arch block_door_closed
 name wall
 face cave3.111
-speed 0.500000
-protected 26
-connected 26
 x 14
 y 23
+speed 0.500000
+connected 26
+protected 26
 end
 arch dungeon_magic
 x 14
@@ -5858,10 +5858,10 @@ x 14
 y 25
 end
 arch mover_3
-level 1
-attacktype 1
 x 14
 y 25
+level 1
+attacktype 1
 end
 arch flagstone
 x 14
@@ -5870,9 +5870,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.131
-no_pass 0
 x 14
 y 25
+no_pass 0
 end
 arch dungeon_magic
 x 14
@@ -5982,50 +5982,50 @@ arch teleporter
 name 25
 hp 14
 sp 21
-speed 0.000000
-protected 25
-connected 25
 x 15
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 3
+dam 0
+x 15
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 3
-x 15
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch teleporter
 name 25
 hp 14
 sp 25
-speed 0.000000
-protected 25
-connected 25
 x 15
 y 1
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 3
+dam 0
 x 15
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch blocked
@@ -6357,49 +6357,49 @@ arch teleporter
 name 25
 hp 17
 sp 18
-speed 0.000000
-protected 25
-connected 25
 x 16
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+x 16
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-x 16
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch teleporter
 name 25
 hp 17
 sp 28
-speed 0.000000
-protected 25
-connected 25
 x 16
 y 1
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 1
+dam 0
 x 16
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch blocked
@@ -6675,10 +6675,10 @@ x 16
 y 32
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 16
 y 32
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6698,21 +6698,21 @@ endmsg
 Cha 40
 hp 100
 dam 200
+x 16
+y 33
 level 40
 attacktype 4
 move_on walk fly_low
-x 16
-y 33
 end
 arch dungeon_magic
 x 16
 y 34
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 16
 y 34
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6742,49 +6742,49 @@ arch teleporter
 name 25
 hp 21
 sp 18
-speed 0.000000
-protected 25
-connected 25
 x 17
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+dam 0
+x 17
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-x 17
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch teleporter
 name 25
 hp 21
 sp 28
-speed 0.000000
-protected 25
-connected 25
 x 17
 y 1
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 1
+dam 0
 x 17
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch blocked
@@ -6812,10 +6812,10 @@ x 17
 y 5
 end
 arch mover_5
-level 1
-attacktype 1
 x 17
 y 5
+level 1
+attacktype 1
 end
 arch flagstone
 x 17
@@ -6824,9 +6824,9 @@ end
 arch statue
 name fearsome statue
 face wizard.151
-no_pass 0
 x 17
 y 5
+no_pass 0
 end
 arch dungeon_magic
 x 17
@@ -6849,11 +6849,11 @@ x 17
 y 8
 end
 arch button_small
-protected 11
+x 17
+y 8
 weight 1000
 connected 11
-x 17
-y 8
+protected 11
 end
 arch flagstone
 x 17
@@ -6861,9 +6861,9 @@ y 8
 end
 arch pentagram
 name soul detector
-type 66
 x 17
 y 8
+type 66
 end
 arch dungeon_magic
 x 17
@@ -6894,11 +6894,11 @@ x 17
 y 12
 end
 arch button_small
-protected 14
-weight 1000
-connected 14
 x 17
 y 12
+weight 1000
+connected 14
+protected 14
 end
 arch flagstone
 x 17
@@ -6906,9 +6906,9 @@ y 12
 end
 arch pentagram
 name soul detector
-type 66
 x 17
 y 12
+type 66
 end
 arch dungeon_magic
 x 17
@@ -6931,10 +6931,10 @@ x 17
 y 15
 end
 arch mover_1
-level 1
-attacktype 1
 x 17
 y 15
+level 1
+attacktype 1
 end
 arch flagstone
 x 17
@@ -6943,9 +6943,9 @@ end
 arch statue
 name fearsome statue
 face wizard.111
-no_pass 0
 x 17
 y 15
+no_pass 0
 end
 arch dungeon_magic
 x 17
@@ -6976,10 +6976,10 @@ x 17
 y 18
 end
 arch mover_5
-level 1
-attacktype 1
 x 17
 y 18
+level 1
+attacktype 1
 end
 arch flagstone
 x 17
@@ -6988,9 +6988,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.151
-no_pass 0
 x 17
 y 18
+no_pass 0
 end
 arch dungeon_magic
 x 17
@@ -7013,11 +7013,11 @@ x 17
 y 21
 end
 arch button_small
-protected 21
+x 17
+y 21
 weight 1000
 connected 21
-x 17
-y 21
+protected 21
 end
 arch flagstone
 x 17
@@ -7025,9 +7025,9 @@ y 21
 end
 arch pentagram
 name soul detector
-type 66
 x 17
 y 21
+type 66
 end
 arch dungeon_magic
 x 17
@@ -7058,11 +7058,11 @@ x 17
 y 25
 end
 arch button_small
-protected 24
-weight 1000
-connected 24
 x 17
 y 25
+weight 1000
+connected 24
+protected 24
 end
 arch flagstone
 x 17
@@ -7070,9 +7070,9 @@ y 25
 end
 arch pentagram
 name soul detector
-type 66
 x 17
 y 25
+type 66
 end
 arch dungeon_magic
 x 17
@@ -7095,10 +7095,10 @@ x 17
 y 28
 end
 arch mover_1
-level 1
-attacktype 1
 x 17
 y 28
+level 1
+attacktype 1
 end
 arch flagstone
 x 17
@@ -7107,9 +7107,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.111
-no_pass 0
 x 17
 y 28
+no_pass 0
 end
 arch dungeon_magic
 x 17
@@ -7152,10 +7152,10 @@ x 17
 y 32
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 17
 y 32
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -7174,37 +7174,37 @@ endmsg
 Cha 40
 hp 100
 dam 150
+x 17
+y 33
 level 40
 attacktype 256
 move_on walk fly_low
-x 17
-y 33
 end
 arch dungeon_magic
 x 17
 y 34
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 17
 y 34
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 17
 y 35
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 17
 y 35
+move_on 0
+no_pass 1
 end
 arch cave21
 name rock
-blocksview 0
 x 17
 y 35
+blocksview 0
 end
 arch dungeon_magic
 x 17
@@ -7222,50 +7222,50 @@ arch teleporter
 name 25
 hp 24
 sp 21
-speed 0.000000
-protected 25
-connected 25
 x 18
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
+sp 7
+dam 0
+x 18
+speed -0.05
+level 50
 invisible 1
 blocksview 0
-dam 0
-level 50
-speed -0.05
-sp 7
-x 18
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch teleporter
 name 25
 hp 24
 sp 25
-speed 0.000000
-protected 25
-connected 25
 x 18
 y 1
+speed 0.000000
+connected 25
+protected 25
 end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-invisible 1
-blocksview 0
-dam 0
-level 50
-speed -0.05
 sp 7
+dam 0
 x 18
 y 1
+speed -0.05
+level 50
+invisible 1
+blocksview 0
 arch spell_ball_lightning
-duration_modifier 2
 duration 30
+duration_modifier 2
 end
 end
 arch blocked
@@ -7545,10 +7545,10 @@ x 18
 y 32
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 18
 y 32
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7569,21 +7569,21 @@ endmsg
 Cha 40
 hp 100
 dam 500
+x 18
+y 33
 level 40
 attacktype 1048576
 move_on walk fly_low
-x 18
-y 33
 end
 arch dungeon_magic
 x 18
 y 34
 end
 arch permanent_lava
-move_on 0
-no_pass 1
 x 18
 y 34
+move_on 0
+no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7685,11 +7685,11 @@ name 16
 msg
 You hear the sound of moving rock.
 endmsg
-protected 16
-connected 16
-move_on 0
 x 19
 y 10
+connected 16
+move_on 0
+protected 16
 end
 arch magic_mouth
 name 15
@@ -7698,11 +7698,11 @@ Oh my god - the statues are moving!
 Suddenly they rise their mechanical
 arms... to unleash a fiery inferno!
 endmsg
-protected 15
-connected 15
-move_on 0
 x 19
 y 10
+connected 15
+move_on 0
+protected 15
 end
 arch flagstone
 x 19
@@ -7751,11 +7751,11 @@ end
 arch block_door_closed
 name wall
 face cave2.111
-speed 0.500000
-protected 16
-connected 16
 x 19
 y 15
+speed 0.500000
+connected 16
+protected 16
 end
 arch dungeon_magic
 x 19
@@ -7763,14 +7763,14 @@ y 16
 end
 arch firewall_5
 name anti-magic force
-blocksview 0
 dam 0
-level 100
-speed -0.05
-no_pass 0
-no_pick 1
 x 19
 y 16
+speed -0.05
+level 100
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -7780,11 +7780,11 @@ y 16
 end
 arch block_door_closed
 name wall
-speed 0.500000
-protected 16
-connected 16
 x 19
 y 16
+speed 0.500000
+connected 16
+protected 16
 end
 arch dungeon_magic
 x 19
@@ -7792,14 +7792,14 @@ y 17
 end
 arch firewall_1
 name anti-magic force
-blocksview 0
 dam 0
-level 100
-speed -0.05
-no_pass 0
-no_pick 1
 x 19
 y 17
+speed -0.05
+level 100
+no_pick 1
+no_pass 0
+blocksview 0
 arch spell_counterwall
 end
 end
@@ -7809,11 +7809,11 @@ y 17
 end
 arch block_door_closed
 name wall
-speed 0.500000
-protected 16
-connected 16
 x 19
 y 17
+speed 0.500000
+connected 16
+protected 16
 end
 arch dungeon_magic
 x 19
@@ -7826,11 +7826,11 @@ end
 arch block_door_closed
 name wall
 face cave4.111
-speed 0.500000
-protected 16
-connected 16
 x 19
 y 18
+speed 0.500000
+connected 16
+protected 16
 end
 arch dungeon_magic
 x 19
@@ -7873,11 +7873,11 @@ name 26
 msg
 You hear the sound of moving rock.
 endmsg
-protected 26
-connected 26
-move_on 0
 x 19
 y 23
+connected 26
+move_on 0
+protected 26
 end
 arch magic_mouth
 name 25
@@ -7886,11 +7886,11 @@ Oh my god - the statues are moving!
 Suddenly they rise their mechanical
 arms... to unleash a sparkling inferno!
 endmsg
-protected 25
-connected 25
-move_on 0
 x 19
 y 23
+connected 25
+move_on 0
+protected 25
 end
 arch flagstone
 x 19
@@ -8025,19 +8025,19 @@ arch teleporter
 name 35
 hp 1
 sp 21
-speed 0.000000
-protected 35
-connected 35
 x 20
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_3
 name fearsome statue
 face wizard_white.131
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 20
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -8045,21 +8045,21 @@ arch teleporter
 name 35
 hp 1
 sp 25
-speed 0.000000
-protected 35
-connected 35
 x 20
 y 1
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_3
 name fearsome statue
 face wizard_white.131
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 20
 y 1
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -8379,19 +8379,19 @@ arch teleporter
 name 35
 hp 4
 sp 18
-speed 0.000000
-protected 35
-connected 35
 x 21
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_5
 name fearsome statue
 face wizard_white.151
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 21
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -8399,21 +8399,21 @@ arch teleporter
 name 35
 hp 4
 sp 28
-speed 0.000000
-protected 35
-connected 35
 x 21
 y 1
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_1
 name fearsome statue
 face wizard_white.111
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 21
 y 1
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -8442,10 +8442,10 @@ x 21
 y 5
 end
 arch mover_5
-level 1
-attacktype 1
 x 21
 y 5
+level 1
+attacktype 1
 end
 arch flagstone
 x 21
@@ -8454,9 +8454,9 @@ end
 arch statue
 name fearsome statue
 face wizard.151
-no_pass 0
 x 21
 y 5
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -8479,11 +8479,11 @@ x 21
 y 8
 end
 arch button_small
-protected 12
-weight 1000
-connected 12
 x 21
 y 8
+weight 1000
+connected 12
+protected 12
 end
 arch flagstone
 x 21
@@ -8491,9 +8491,9 @@ y 8
 end
 arch pentagram
 name soul detector
-type 66
 x 21
 y 8
+type 66
 end
 arch dungeon_magic
 x 21
@@ -8524,11 +8524,11 @@ x 21
 y 12
 end
 arch button_small
-protected 13
-weight 1000
-connected 13
 x 21
 y 12
+weight 1000
+connected 13
+protected 13
 end
 arch flagstone
 x 21
@@ -8536,9 +8536,9 @@ y 12
 end
 arch pentagram
 name soul detector
-type 66
 x 21
 y 12
+type 66
 end
 arch dungeon_magic
 x 21
@@ -8561,10 +8561,10 @@ x 21
 y 15
 end
 arch mover_1
-level 1
-attacktype 1
 x 21
 y 15
+level 1
+attacktype 1
 end
 arch flagstone
 x 21
@@ -8573,9 +8573,9 @@ end
 arch statue
 name fearsome statue
 face wizard.111
-no_pass 0
 x 21
 y 15
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -8606,10 +8606,10 @@ x 21
 y 18
 end
 arch mover_5
-level 1
-attacktype 1
 x 21
 y 18
+level 1
+attacktype 1
 end
 arch flagstone
 x 21
@@ -8618,9 +8618,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.151
-no_pass 0
 x 21
 y 18
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -8643,11 +8643,11 @@ x 21
 y 21
 end
 arch button_small
-protected 22
+x 21
+y 21
 weight 1000
 connected 22
-x 21
-y 21
+protected 22
 end
 arch flagstone
 x 21
@@ -8655,9 +8655,9 @@ y 21
 end
 arch pentagram
 name soul detector
-type 66
 x 21
 y 21
+type 66
 end
 arch dungeon_magic
 x 21
@@ -8688,11 +8688,11 @@ x 21
 y 25
 end
 arch button_small
-protected 23
-weight 1000
-connected 23
 x 21
 y 25
+weight 1000
+connected 23
+protected 23
 end
 arch flagstone
 x 21
@@ -8700,9 +8700,9 @@ y 25
 end
 arch pentagram
 name soul detector
-type 66
 x 21
 y 25
+type 66
 end
 arch dungeon_magic
 x 21
@@ -8725,10 +8725,10 @@ x 21
 y 28
 end
 arch mover_1
-level 1
-attacktype 1
 x 21
 y 28
+level 1
+attacktype 1
 end
 arch flagstone
 x 21
@@ -8737,9 +8737,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.111
-no_pass 0
 x 21
 y 28
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -8821,19 +8821,19 @@ arch teleporter
 name 35
 hp 8
 sp 18
-speed 0.000000
-protected 35
-connected 35
 x 22
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_5
 name fearsome statue
 face wizard_white.151
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 22
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -8841,21 +8841,21 @@ arch teleporter
 name 35
 hp 8
 sp 28
-speed 0.000000
-protected 35
-connected 35
 x 22
 y 1
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_1
 name fearsome statue
 face wizard_white.111
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 22
 y 1
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -9175,19 +9175,19 @@ arch teleporter
 name 35
 hp 11
 sp 21
-speed 0.000000
-protected 35
-connected 35
 x 23
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_7
 name fearsome statue
 face wizard_white.171
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 23
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -9195,21 +9195,21 @@ arch teleporter
 name 35
 hp 11
 sp 25
-speed 0.000000
-protected 35
-connected 35
 x 23
 y 1
+speed 0.000000
+connected 35
+protected 35
 end
 arch firewall_7
 name fearsome statue
 face wizard_white.171
 dam 0
-level 70
-speed -0.3
-blocksview 0
 x 23
 y 1
+speed -0.3
+level 70
+blocksview 0
 arch spell_cause_critical_wounds
 end
 end
@@ -9604,10 +9604,10 @@ x 24
 y 8
 end
 arch mover_7
-level 1
-attacktype 1
 x 24
 y 8
+level 1
+attacktype 1
 end
 arch flagstone
 x 24
@@ -9616,9 +9616,9 @@ end
 arch statue
 name fearsome statue
 face wizard.171
-no_pass 0
 x 24
 y 8
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -9661,10 +9661,10 @@ x 24
 y 12
 end
 arch mover_7
-level 1
-attacktype 1
 x 24
 y 12
+level 1
+attacktype 1
 end
 arch flagstone
 x 24
@@ -9673,9 +9673,9 @@ end
 arch statue
 name fearsome statue
 face wizard.171
-no_pass 0
 x 24
 y 12
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -9762,10 +9762,10 @@ x 24
 y 21
 end
 arch mover_7
-level 1
-attacktype 1
 x 24
 y 21
+level 1
+attacktype 1
 end
 arch flagstone
 x 24
@@ -9774,9 +9774,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.171
-no_pass 0
 x 24
 y 21
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -9819,10 +9819,10 @@ x 24
 y 25
 end
 arch mover_7
-level 1
-attacktype 1
 x 24
 y 25
+level 1
+attacktype 1
 end
 arch flagstone
 x 24
@@ -9831,9 +9831,9 @@ end
 arch statue
 name fearsome statue
 face wizard_yellow.171
-no_pass 0
 x 24
 y 25
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -9905,11 +9905,11 @@ y 32
 end
 arch torch_1
 food 0
+x 24
+y 32
 material 0
 no_pick 1
 changing 0
-x 24
-y 32
 end
 arch dungeon_magic
 x 24
@@ -9929,11 +9929,11 @@ y 34
 end
 arch torch_1
 food 0
+x 24
+y 34
 material 0
 no_pick 1
 changing 0
-x 24
-y 34
 end
 arch dungeon_magic
 x 24

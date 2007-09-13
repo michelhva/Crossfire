@@ -1,6 +1,11 @@
 arch map
 name Harcanna Wood
+difficulty 20
 region greenway
+width 50
+height 50
+enter_x 34
+enter_y 13
 msg
 Creator: Avion
 CF Java Map Editor
@@ -10,11 +15,6 @@ maplore
 In Harcanna Wood you can find the tower of Sorrow.
 Harcanna Wood is the home of the brothers Verdan and Non.
 endmaplore
-width 50
-height 50
-enter_x 34
-enter_y 13
-difficulty 20
 outdoor 1
 end
 arch darkforest
@@ -1992,9 +1992,9 @@ x 9
 y 7
 end
 arch shallow_sea
-no_pass 0
 x 9
 y 8
+no_pass 0
 end
 arch stonebridge_2_1_1
 x 9
@@ -3051,6 +3051,17 @@ end
 arch grass
 x 13
 y 39
+end
+arch gryphon
+name Non
+Wis 13
+hp 3600
+maxhp 3600
+exp 380000
+x 13
+y 39
+level 22
+sleep 0
 end
 arch grass
 x 13
@@ -7335,6 +7346,29 @@ arch grass
 x 32
 y 30
 end
+arch gryphon
+name Verdan
+Wis 13
+hp 4000
+maxhp 4000
+exp 380000
+x 32
+y 30
+level 22
+sleep 0
+arch sapphire
+name Heart of Verdan
+name_pl Hearts of Verdan
+msg
+This large sapphire has a faint glow.
+endmsg
+face pretty_sapphire.111
+material 256
+value 1850
+weight 500
+glow_radius 1
+end
+end
 arch grass
 x 32
 y 31
@@ -10203,9 +10237,9 @@ x 45
 y 28
 end
 arch shallow_sea
-no_pass 0
 x 45
 y 29
+no_pass 0
 end
 arch stonebridge_2_1_1
 x 45
@@ -11150,38 +11184,4 @@ end
 arch darkforest
 x 49
 y 49
-end
-arch gryphon
-name Non
-level 22
-exp 380000
-hp 3600
-maxhp 3600
-sleep 0
-Wis 13
-x 13
-y 39
-end
-arch gryphon
-name Verdan
-level 22
-exp 380000
-hp 4000
-maxhp 4000
-sleep 0
-Wis 13
-x 32
-y 30
-arch sapphire
-name Heart of Verdan
-face pretty_sapphire.111
-msg
-This large sapphire has a faint glow.
-endmsg
-name_pl Hearts of Verdan
-weight 500
-value 1850
-glow_radius 1
-material 256
-end
 end

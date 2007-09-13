@@ -1,14 +1,14 @@
 arch map
-region portjoseph
 name goblin dungeon
+region portjoseph
+darkness 5
+width 24
+height 24
 msg
 Creator: llangley
 Email: langley@fermat.dartmouth.edu
 Date: Sat Sep  3 16:45:01 1994
 endmsg
-x 24
-y 24
-invisible 5
 end
 arch dungeon_floor
 end
@@ -2000,7 +2000,7 @@ shall be spoke in the north east.
 Cross then to the sourth west where
 you shall speak the third word of
 power.  Then seek the final place
-to speak the final word.  
+to speak the final word.
 endmsg
 food 1
 x 13
@@ -2631,7 +2631,7 @@ end
 arch magic_ear
 msg
 @match ogsnog|Ogsnog
-Clackity clakity crunch. 
+Clackity clakity crunch.
 endmsg
 x 17
 y 10
@@ -3192,6 +3192,11 @@ end
 arch dungeon_floor
 x 20
 y 13
+end
+arch mine_secret_2_1
+x 20
+y 13
+no_pass 0
 end
 arch dungeon_floor
 x 20
@@ -3780,15 +3785,4 @@ end
 arch mine12
 x 23
 y 23
-end
-arch mine_secret_2_1
-x 20
-y 13
-no_pass 0
-end
-More
-arch mine_secret_2_2
-x 20
-y 14
-no_pass 0
 end

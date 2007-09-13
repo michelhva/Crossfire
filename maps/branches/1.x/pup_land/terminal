@@ -1,14 +1,14 @@
 arch map
 name terminal
 region pupland
+width 21
+height 18
+enter_x 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr  5 02:03:21 1996
 endmsg
-width 21
-height 18
-enter_x 10
 end
 arch biglake_center
 name sky
@@ -122,15 +122,23 @@ y 7
 end
 arch biglake_center
 name sky
+x 1
+y 8
 no_pass 0
+end
+arch dragon_exit
+name To Lone Town
+slaying lone_town/town
+hp 21
+sp 11
 x 1
 y 8
 end
 arch biglake_center
 name sky
-no_pass 0
 x 1
 y 9
+no_pass 0
 end
 arch biglake_center
 name sky
@@ -213,9 +221,9 @@ y 7
 end
 arch biglake_center
 name sky
-no_pass 0
 x 2
 y 8
+no_pass 0
 end
 arch cobblestones2
 x 2
@@ -302,9 +310,9 @@ y 7
 end
 arch biglake_center
 name sky
-no_pass 0
 x 3
 y 8
+no_pass 0
 end
 arch cobblestones2
 x 3
@@ -613,9 +621,9 @@ y 11
 end
 arch fog
 name cloud
-blocksview 0
 x 6
 y 11
+blocksview 0
 end
 arch grass
 x 6
@@ -686,9 +694,9 @@ y 5
 end
 arch fog
 name cloud
-blocksview 0
 x 7
 y 5
+blocksview 0
 end
 arch grass
 x 7
@@ -720,9 +728,9 @@ y 12
 end
 arch fog
 name cloud
-blocksview 0
 x 7
 y 12
+blocksview 0
 end
 arch grass
 x 7
@@ -791,6 +799,13 @@ arch cobblestones2
 x 8
 y 7
 end
+arch palace
+slaying hall_of_fame
+hp 6
+sp 26
+x 8
+y 7
+end
 arch cobblestones2
 x 8
 y 8
@@ -845,15 +860,23 @@ x 9
 end
 arch biglake_center
 name sky
+x 9
+y 1
 no_pass 0
+end
+arch dragon_exit
+name To Scorn
+slaying /world/world_104_115
+hp 43
+sp 24
 x 9
 y 1
 end
 arch biglake_center
 name sky
-no_pass 0
 x 9
 y 2
+no_pass 0
 end
 arch cobblestones2
 x 9
@@ -936,15 +959,23 @@ y 14
 end
 arch biglake_center
 name sky
+x 9
+y 15
 no_pass 0
+end
+arch dragon_exit
+name To Red Island
+slaying rainbow/station
+hp 7
+sp 3
 x 9
 y 15
 end
 arch biglake_center
 name sky
-no_pass 0
 x 9
 y 16
+no_pass 0
 end
 arch biglake_center
 name sky
@@ -957,9 +988,9 @@ x 10
 end
 arch biglake_center
 name sky
-no_pass 0
 x 10
 y 1
+no_pass 0
 end
 arch cobblestones2
 x 10
@@ -1032,15 +1063,15 @@ x 11
 end
 arch biglake_center
 name sky
-no_pass 0
 x 11
 y 1
+no_pass 0
 end
 arch biglake_center
 name sky
-no_pass 0
 x 11
 y 2
+no_pass 0
 end
 arch cobblestones2
 x 11
@@ -1113,15 +1144,15 @@ y 14
 end
 arch biglake_center
 name sky
-no_pass 0
 x 11
 y 15
+no_pass 0
 end
 arch biglake_center
 name sky
-no_pass 0
 x 11
 y 16
+no_pass 0
 end
 arch biglake_center
 name sky
@@ -1346,9 +1377,9 @@ y 5
 end
 arch fog
 name cloud
-blocksview 0
 x 14
 y 5
+blocksview 0
 end
 arch grass
 x 14
@@ -1364,10 +1395,10 @@ y 8
 end
 arch check_inv
 slaying regular_army
-last_sp 0
-connected 1002
 x 14
 y 9
+last_sp 0
+connected 1002
 end
 arch magic_mouth
 name No passport message
@@ -1375,27 +1406,27 @@ msg
 You must have a Regular Army Passport to
 enter this gate. Please present your passport.
 endmsg
-connected 1002
-move_on 0
 food 1
 x 14
 y 9
+connected 1002
+move_on 0
 end
 arch check_inv
 slaying regular_army
-connected 1001
 x 14
 y 9
+connected 1001
 end
 arch magic_mouth
 msg
 Ah! Army personnel. Please enter.
 endmsg
-connected 1001
-move_on 0
 food 1
 x 14
 y 9
+connected 1001
+move_on 0
 end
 arch cobblestones2
 x 14
@@ -1419,9 +1450,9 @@ y 12
 end
 arch fog
 name cloud
-blocksview 0
 x 14
 y 12
+blocksview 0
 end
 arch grass
 x 14
@@ -1519,20 +1550,20 @@ x 15
 y 8
 end
 arch button_small
-connected 1001
 x 15
 y 9
+connected 1001
 end
 arch cobblestones2
 x 15
 y 9
 end
 arch grate_closed_2
+x 15
+y 9
 connected 1001
 no_magic 1
 damned 1
-x 15
-y 9
 end
 arch dungeon_magic
 x 15
@@ -1634,18 +1665,18 @@ x 16
 y 7
 end
 arch button_small
-connected 1001
 x 16
 y 8
+connected 1001
 end
 arch cobblestones2
 x 16
 y 8
 end
 arch button_small
+x 16
+y 9
 connected 1001
-x 16
-y 9
 end
 arch cobblestones2
 x 16
@@ -1732,353 +1763,9 @@ y 7
 end
 arch biglake_center
 name sky
+x 17
+y 8
 no_pass 0
-x 17
-y 8
-end
-arch cobblestones2
-x 17
-y 9
-end
-arch biglake_center
-name sky
-x 17
-y 10
-end
-arch biglake_center
-name sky
-x 17
-y 11
-end
-arch biglake_center
-name sky
-x 17
-y 12
-end
-arch biglake_center
-name sky
-x 17
-y 13
-end
-arch biglake_center
-name sky
-x 17
-y 14
-end
-arch biglake_center
-name sky
-x 17
-y 15
-end
-arch biglake_center
-name sky
-x 17
-y 16
-end
-arch biglake_center
-name sky
-x 17
-y 17
-end
-arch biglake_center
-name sky
-x 18
-end
-arch biglake_center
-name sky
-x 18
-y 1
-end
-arch biglake_center
-name sky
-x 18
-y 2
-end
-arch biglake_center
-name sky
-x 18
-y 3
-end
-arch biglake_center
-name sky
-x 18
-y 4
-end
-arch biglake_center
-name sky
-x 18
-y 5
-end
-arch biglake_center
-name sky
-x 18
-y 6
-end
-arch biglake_center
-name sky
-x 18
-y 7
-end
-arch biglake_center
-name sky
-no_pass 0
-x 18
-y 8
-end
-arch cobblestones2
-x 18
-y 9
-end
-arch biglake_center
-name sky
-x 18
-y 10
-end
-arch biglake_center
-name sky
-x 18
-y 11
-end
-arch biglake_center
-name sky
-x 18
-y 12
-end
-arch biglake_center
-name sky
-x 18
-y 13
-end
-arch biglake_center
-name sky
-x 18
-y 14
-end
-arch biglake_center
-name sky
-x 18
-y 15
-end
-arch biglake_center
-name sky
-x 18
-y 16
-end
-arch biglake_center
-name sky
-x 18
-y 17
-end
-arch biglake_center
-name sky
-x 19
-end
-arch biglake_center
-name sky
-x 19
-y 1
-end
-arch biglake_center
-name sky
-x 19
-y 2
-end
-arch biglake_center
-name sky
-x 19
-y 3
-end
-arch biglake_center
-name sky
-x 19
-y 4
-end
-arch biglake_center
-name sky
-x 19
-y 5
-end
-arch biglake_center
-name sky
-x 19
-y 6
-end
-arch biglake_center
-name sky
-x 19
-y 7
-end
-arch biglake_center
-name sky
-no_pass 0
-x 19
-y 8
-end
-arch biglake_center
-name sky
-no_pass 0
-x 19
-y 9
-end
-arch biglake_center
-name sky
-x 19
-y 10
-end
-arch biglake_center
-name sky
-x 19
-y 11
-end
-arch biglake_center
-name sky
-x 19
-y 12
-end
-arch biglake_center
-name sky
-x 19
-y 13
-end
-arch biglake_center
-name sky
-x 19
-y 14
-end
-arch biglake_center
-name sky
-x 19
-y 15
-end
-arch biglake_center
-name sky
-x 19
-y 16
-end
-arch biglake_center
-name sky
-x 19
-y 17
-end
-arch biglake_center
-name sky
-x 20
-end
-arch biglake_center
-name sky
-x 20
-y 1
-end
-arch biglake_center
-name sky
-x 20
-y 2
-end
-arch biglake_center
-name sky
-x 20
-y 3
-end
-arch biglake_center
-name sky
-x 20
-y 4
-end
-arch biglake_center
-name sky
-x 20
-y 5
-end
-arch biglake_center
-name sky
-x 20
-y 6
-end
-arch biglake_center
-name sky
-x 20
-y 7
-end
-arch biglake_center
-name sky
-x 20
-y 8
-end
-arch biglake_center
-name sky
-x 20
-y 9
-end
-arch biglake_center
-name sky
-x 20
-y 10
-end
-arch biglake_center
-name sky
-x 20
-y 11
-end
-arch biglake_center
-name sky
-x 20
-y 12
-end
-arch biglake_center
-name sky
-x 20
-y 13
-end
-arch biglake_center
-name sky
-x 20
-y 14
-end
-arch biglake_center
-name sky
-x 20
-y 15
-end
-arch biglake_center
-name sky
-x 20
-y 16
-end
-arch biglake_center
-name sky
-x 20
-y 17
-end
-arch dragon_exit
-name To Lone Town
-slaying lone_town/town
-hp 21
-sp 11
-x 1
-y 8
-end
-arch palace
-slaying hall_of_fame
-hp 6
-sp 26
-x 8
-y 7
-end
-arch dragon_exit
-name To Scorn
-slaying /world/world_104_115
-hp 43
-sp 24
-x 9
-y 1
-end
-arch dragon_exit
-name To Red Island
-slaying rainbow/station
-hp 7
-sp 3
-x 9
-y 15
 end
 arch dragon_exit
 slaying /pup_land/nurnberg/city
@@ -2086,4 +1773,317 @@ hp 26
 sp 25
 x 17
 y 8
+end
+arch cobblestones2
+x 17
+y 9
+end
+arch biglake_center
+name sky
+x 17
+y 10
+end
+arch biglake_center
+name sky
+x 17
+y 11
+end
+arch biglake_center
+name sky
+x 17
+y 12
+end
+arch biglake_center
+name sky
+x 17
+y 13
+end
+arch biglake_center
+name sky
+x 17
+y 14
+end
+arch biglake_center
+name sky
+x 17
+y 15
+end
+arch biglake_center
+name sky
+x 17
+y 16
+end
+arch biglake_center
+name sky
+x 17
+y 17
+end
+arch biglake_center
+name sky
+x 18
+end
+arch biglake_center
+name sky
+x 18
+y 1
+end
+arch biglake_center
+name sky
+x 18
+y 2
+end
+arch biglake_center
+name sky
+x 18
+y 3
+end
+arch biglake_center
+name sky
+x 18
+y 4
+end
+arch biglake_center
+name sky
+x 18
+y 5
+end
+arch biglake_center
+name sky
+x 18
+y 6
+end
+arch biglake_center
+name sky
+x 18
+y 7
+end
+arch biglake_center
+name sky
+x 18
+y 8
+no_pass 0
+end
+arch cobblestones2
+x 18
+y 9
+end
+arch biglake_center
+name sky
+x 18
+y 10
+end
+arch biglake_center
+name sky
+x 18
+y 11
+end
+arch biglake_center
+name sky
+x 18
+y 12
+end
+arch biglake_center
+name sky
+x 18
+y 13
+end
+arch biglake_center
+name sky
+x 18
+y 14
+end
+arch biglake_center
+name sky
+x 18
+y 15
+end
+arch biglake_center
+name sky
+x 18
+y 16
+end
+arch biglake_center
+name sky
+x 18
+y 17
+end
+arch biglake_center
+name sky
+x 19
+end
+arch biglake_center
+name sky
+x 19
+y 1
+end
+arch biglake_center
+name sky
+x 19
+y 2
+end
+arch biglake_center
+name sky
+x 19
+y 3
+end
+arch biglake_center
+name sky
+x 19
+y 4
+end
+arch biglake_center
+name sky
+x 19
+y 5
+end
+arch biglake_center
+name sky
+x 19
+y 6
+end
+arch biglake_center
+name sky
+x 19
+y 7
+end
+arch biglake_center
+name sky
+x 19
+y 8
+no_pass 0
+end
+arch biglake_center
+name sky
+x 19
+y 9
+no_pass 0
+end
+arch biglake_center
+name sky
+x 19
+y 10
+end
+arch biglake_center
+name sky
+x 19
+y 11
+end
+arch biglake_center
+name sky
+x 19
+y 12
+end
+arch biglake_center
+name sky
+x 19
+y 13
+end
+arch biglake_center
+name sky
+x 19
+y 14
+end
+arch biglake_center
+name sky
+x 19
+y 15
+end
+arch biglake_center
+name sky
+x 19
+y 16
+end
+arch biglake_center
+name sky
+x 19
+y 17
+end
+arch biglake_center
+name sky
+x 20
+end
+arch biglake_center
+name sky
+x 20
+y 1
+end
+arch biglake_center
+name sky
+x 20
+y 2
+end
+arch biglake_center
+name sky
+x 20
+y 3
+end
+arch biglake_center
+name sky
+x 20
+y 4
+end
+arch biglake_center
+name sky
+x 20
+y 5
+end
+arch biglake_center
+name sky
+x 20
+y 6
+end
+arch biglake_center
+name sky
+x 20
+y 7
+end
+arch biglake_center
+name sky
+x 20
+y 8
+end
+arch biglake_center
+name sky
+x 20
+y 9
+end
+arch biglake_center
+name sky
+x 20
+y 10
+end
+arch biglake_center
+name sky
+x 20
+y 11
+end
+arch biglake_center
+name sky
+x 20
+y 12
+end
+arch biglake_center
+name sky
+x 20
+y 13
+end
+arch biglake_center
+name sky
+x 20
+y 14
+end
+arch biglake_center
+name sky
+x 20
+y 15
+end
+arch biglake_center
+name sky
+x 20
+y 16
+end
+arch biglake_center
+name sky
+x 20
+y 17
 end

@@ -1,14 +1,14 @@
 arch map
-region portjoseph
 name Pirate quest
+region portjoseph
+darkness 3
+width 17
+height 17
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Sat Jun 11 16:06:05 1994
 endmsg
-x 17
-y 17
-invisible 3
 end
 arch dirtfloor
 end
@@ -410,7 +410,7 @@ y 7
 end
 arch rune_mark
 msg
-One, Two 
+One, Two
 endmsg
 x 3
 y 7

@@ -1,13 +1,13 @@
 arch map
-region pupland
 name back
+region pupland
+width 13
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Dec  1 14:03:20 1997
 endmsg
-x 13
-y 15
 end
 arch grass_only
 end

@@ -1,13 +1,13 @@
 arch map
 name graveyard
 region ancientpupland
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 21 21:48:06 1996
 endmsg
-width 25
-height 16
 end
 arch pstone_1
 end
@@ -512,9 +512,9 @@ msg
 @match unImog mogAniu
 Click.
 endmsg
-connected 1
 x 6
 y 7
+connected 1
 end
 arch pstone_1
 x 6
@@ -884,12 +884,12 @@ If you get rid of them, I'll give you
 my treasure.
 endmsg
 hp 180
-unaggressive 0
-friendly 1
-will_apply 0
-pick_up 1
 x 10
 y 11
+pick_up 1
+will_apply 0
+friendly 1
+unaggressive 0
 end
 arch pstone_1
 x 10
@@ -1564,100 +1564,100 @@ end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 19
 y 1
+connected 1
 end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 19
 y 2
+connected 1
 end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 19
 y 3
+connected 1
 end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 19
 y 4
+connected 1
 end
 arch pit_open
 hp 6
 sp 7
-connected 1
 x 19
 y 5
+connected 1
 end
 arch pit_open
 hp 6
 sp 7
-connected 1
 x 19
 y 6
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 19
 y 7
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 19
 y 8
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 19
 y 9
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 19
 y 10
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 19
 y 11
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 19
 y 12
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 19
 y 13
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 19
 y 14
+connected 1
 end
 arch generate_zombie
 x 19
@@ -1669,9 +1669,9 @@ end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 20
 y 1
+connected 1
 end
 arch blocked
 x 20
@@ -1724,9 +1724,9 @@ end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 20
 y 14
+connected 1
 end
 arch generate_zombie
 x 20
@@ -1738,9 +1738,9 @@ end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 21
 y 1
+connected 1
 end
 arch blocked
 x 21
@@ -1749,9 +1749,9 @@ end
 arch pit_closed
 hp 9
 sp 10
-connected 1
 x 21
 y 3
+connected 1
 end
 arch dagger_f
 x 21
@@ -1800,9 +1800,9 @@ end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 21
 y 14
+connected 1
 end
 arch generate_zombie
 x 21
@@ -1814,9 +1814,9 @@ end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 22
 y 1
+connected 1
 end
 arch blocked
 x 22
@@ -1869,9 +1869,9 @@ end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 22
 y 14
+connected 1
 end
 arch generate_zombie
 x 22
@@ -1883,100 +1883,100 @@ end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 23
 y 1
+connected 1
 end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 23
 y 2
+connected 1
 end
 arch pit_open
 hp 3
 sp 3
-connected 1
 x 23
 y 3
+connected 1
 end
 arch pit_open
 hp 6
 sp 7
-connected 1
 x 23
 y 4
+connected 1
 end
 arch pit_open
 hp 6
 sp 7
-connected 1
 x 23
 y 5
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 23
 y 6
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 23
 y 7
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 23
 y 8
+connected 1
 end
 arch pit_open
 hp 9
 sp 3
-connected 1
 x 23
 y 9
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 23
 y 10
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 23
 y 11
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 23
 y 12
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 23
 y 13
+connected 1
 end
 arch pit_open
 hp 3
 sp 12
-connected 1
 x 23
 y 14
+connected 1
 end
 arch generate_zombie
 x 23

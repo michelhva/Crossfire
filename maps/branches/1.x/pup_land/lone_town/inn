@@ -1,15 +1,15 @@
 arch map
-region lonetown
 name inn
+region lonetown
+width 20
+height 9
+enter_x 9
+enter_y 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jan 25 18:52:26 1996
 endmsg
-hp 9
-sp 8
-x 20
-y 9
 end
 arch flagstone
 end

@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name cave
+difficulty 5
+region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 30 00:16:20 1996
 endmsg
-x 32
-y 32
-level 5
 end
 arch blocked
 end
@@ -336,6 +336,10 @@ arch dungeon_floor
 x 1
 y 25
 end
+arch golem_necro
+x 1
+y 25
+end
 arch dungeon_floor
 x 1
 y 26
@@ -461,6 +465,10 @@ x 2
 y 18
 end
 arch dungeon_floor
+x 2
+y 19
+end
+arch golem_necro
 x 2
 y 19
 end
@@ -675,6 +683,10 @@ arch dungeon_floor
 x 3
 y 25
 end
+arch golem_necro
+x 3
+y 25
+end
 arch dungeon_floor
 x 3
 y 26
@@ -811,6 +823,10 @@ arch dungeon_floor
 x 4
 y 19
 end
+arch golem_necro
+x 4
+y 19
+end
 arch dungeon_floor
 x 4
 y 20
@@ -1010,6 +1026,10 @@ arch dungeon_floor
 x 5
 y 25
 end
+arch golem_necro
+x 5
+y 25
+end
 arch dungeon_floor
 x 5
 y 26
@@ -1139,6 +1159,10 @@ x 6
 y 18
 end
 arch dungeon_floor
+x 6
+y 19
+end
+arch golem_necro
 x 6
 y 19
 end
@@ -1358,6 +1382,10 @@ arch dungeon_floor
 x 7
 y 25
 end
+arch golem_necro
+x 7
+y 25
+end
 arch dungeon_floor
 x 7
 y 26
@@ -1486,6 +1514,10 @@ x 8
 y 18
 end
 arch dungeon_floor
+x 8
+y 19
+end
+arch golem_necro
 x 8
 y 19
 end
@@ -5237,36 +5269,4 @@ end
 arch rough_wall_2_2_4
 x 31
 y 31
-end
-arch golem_necro
-x 1
-y 25
-end
-arch golem_necro
-x 2
-y 19
-end
-arch golem_necro
-x 3
-y 25
-end
-arch golem_necro
-x 4
-y 19
-end
-arch golem_necro
-x 5
-y 25
-end
-arch golem_necro
-x 6
-y 19
-end
-arch golem_necro
-x 7
-y 25
-end
-arch golem_necro
-x 8
-y 19
 end

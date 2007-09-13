@@ -1,21 +1,17 @@
 arch map
-region pupland
 name st5
+region pupland
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 15:50:17 1996
 endmsg
-x 17
-y 17
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch flagstone
@@ -97,18 +93,12 @@ arch awall_2_2_1
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch flagstone
@@ -221,8 +211,6 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
@@ -1868,8 +1856,6 @@ x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch flagstone
@@ -1984,19 +1970,13 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -2105,14 +2085,10 @@ x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 y 16
 end

@@ -1,15 +1,15 @@
 arch map
 name Grumm's Inn
+width 25
+height 15
+enter_x 7
+enter_y 13
 msg
 Grumm's Inn
 Creator: Todd Mitchell
 CF Java Map Editor
 Date:    10/27/2002
 endmsg
-width 25
-height 15
-enter_x 7
-enter_y 13
 outdoor 1
 end
 arch woodfloor2
@@ -143,10 +143,10 @@ y 3
 end
 arch pearl_converter
 name drop 1500 platinum to buy healing potion
-face cauldron.111
 slaying platinacoin
-food 1500
 other_arch potion_heal
+face cauldron.111
+food 1500
 x 1
 y 3
 end
@@ -240,9 +240,9 @@ x 2
 y 2
 end
 arch longtable_1_4
-no_pass 1
 x 2
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 2
@@ -330,20 +330,20 @@ msg
 I would be happy to assist you.
 You will find my prices quite reasonable.
 endmsg
-unaggressive 0
-friendly 1
-stand_still 1
 x 3
 y 1
+friendly 1
+unaggressive 0
+stand_still 1
 end
 arch woodfloor2
 x 3
 y 2
 end
 arch longtable_2_1_2
-no_pass 1
 x 3
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 3
@@ -391,9 +391,9 @@ stupid bandits.
 Are you buying this round
 endmsg
 hp 35
-unaggressive 1
 x 3
 y 8
+unaggressive 1
 end
 arch woodfloor2
 x 3
@@ -445,9 +445,9 @@ x 4
 y 2
 end
 arch longtable_2_1_2
-no_pass 1
 x 4
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 4
@@ -561,9 +561,9 @@ x 5
 y 2
 end
 arch longtable_2_1_2
-no_pass 1
 x 5
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 5
@@ -598,6 +598,7 @@ y 6
 end
 arch fighter
 name Samar
+title the quick
 msg
 @match hi|hello
 Good day for it eh?
@@ -609,12 +610,11 @@ Good work if you get along with dwarves.
 Funny, they don't let on where they really live.
 They surely don't live in that dingy mine.
 endmsg
-title the quick
-level 6
-unaggressive 0
-friendly 1
 x 5
 y 6
+level 6
+friendly 1
+unaggressive 0
 end
 arch woodfloor2
 x 5
@@ -682,9 +682,9 @@ x 6
 y 2
 end
 arch longtable_1_3
-no_pass 1
 x 6
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 6
@@ -778,9 +778,9 @@ x 7
 y 3
 end
 arch clock
-no_pick 1
 x 7
 y 3
+no_pick 1
 end
 arch woodfloor2
 x 7
@@ -803,9 +803,9 @@ x 7
 y 7
 end
 arch button_small
-connected 1
 x 7
 y 8
+connected 1
 end
 arch woodfloor2
 x 7
@@ -816,14 +816,14 @@ x 7
 y 9
 end
 arch mdoor_closed_1
-connected 1
 x 7
 y 9
+connected 1
 end
 arch button_small
-connected 1
 x 7
 y 10
+connected 1
 end
 arch small_stones
 x 7
@@ -867,18 +867,18 @@ x 8
 y 2
 end
 arch longtable_1_1
-no_pass 1
 x 8
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 8
 y 3
 end
 arch longtable_2_2_1
-no_pass 1
 x 8
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 8
@@ -962,9 +962,9 @@ x 9
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 9
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 9
@@ -1056,9 +1056,9 @@ x 10
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 10
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 10
@@ -1163,20 +1163,20 @@ Greetings I am Grumm, welcome to my inn.
 Rooms and worship facilities for Mostrai are available upstairs for a modest price of 50 gold.
 You get a full 28 hours for that by the way.
 endmsg
-unaggressive 0
-friendly 1
-stand_still 1
 x 11
 y 2
+friendly 1
+unaggressive 0
+stand_still 1
 end
 arch woodfloor2
 x 11
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 11
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 11
@@ -1265,9 +1265,9 @@ x 12
 y 3
 end
 arch longtable_2_1_2
-no_pass 1
 x 12
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 12
@@ -1311,10 +1311,10 @@ He's mad because he lost his pay
 in a game of Orcfingers.
 endmsg
 exp 20
-friendly 1
-stand_still 1
 x 12
 y 8
+friendly 1
+stand_still 1
 end
 arch woodfloor2
 x 12
@@ -1371,18 +1371,18 @@ x 13
 y 2
 end
 arch longtable_1_1
-no_pass 1
 x 13
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 13
 y 3
 end
 arch longtable_2_2_4
-no_pass 1
 x 13
 y 3
+no_pass 1
 end
 arch woodfloor2
 x 13
@@ -1414,10 +1414,10 @@ msg
 @match *
 Bah!
 endmsg
-friendly 1
-stand_still 1
 x 13
 y 7
+friendly 1
+stand_still 1
 end
 arch woodfloor2
 x 13
@@ -1564,9 +1564,9 @@ x 15
 y 2
 end
 arch longtable_1_4
-no_pass 1
 x 15
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 15
@@ -1668,9 +1668,9 @@ x 16
 y 2
 end
 arch longtable_2_1_2
-no_pass 1
 x 16
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 16
@@ -1772,9 +1772,9 @@ x 17
 y 2
 end
 arch longtable_2_1_2
-no_pass 1
 x 17
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 17
@@ -1865,9 +1865,9 @@ y 2
 end
 arch longtable_1_3
 face longtable_A.111
-no_pass 1
 x 18
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 18
@@ -1970,9 +1970,9 @@ x 19
 y 2
 end
 arch longtable_1_3
-no_pass 1
 x 19
 y 2
+no_pass 1
 end
 arch woodfloor2
 x 19
@@ -2078,9 +2078,9 @@ y 3
 end
 arch check_floor
 slaying grumms_inn_pass
-no_pass 1
 x 20
 y 3
+no_pass 1
 end
 arch stair_up_2
 slaying grumms_inn2
@@ -2095,23 +2095,23 @@ y 4
 end
 arch altar
 name drop 50 gold for a room
-type 31
 slaying goldcoin
 food 50
-connected 5
-last_sp 1
 x 20
 y 4
+type 31
+last_sp 1
+connected 5
 end
 arch trigger_marker
+slaying grumms_inn_pass
 msg
 You can use the facilities for one day.
 endmsg
-slaying grumms_inn_pass
-connected 5
 food 504
 x 20
 y 4
+connected 5
 end
 arch woodfloor2
 x 20

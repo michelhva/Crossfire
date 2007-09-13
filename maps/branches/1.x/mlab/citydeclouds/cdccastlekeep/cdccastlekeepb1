@@ -1,17 +1,17 @@
 arch map
 name <untitled>
+reset_timeout 7200
+difficulty 1
+darkness 3
+width 32
+height 32
+enter_x 1
+enter_y 1
 msg
 Creator: Mikeeusa
 Email: gnu@foo.bar
 Date: Tue Aug  3 23:32:57 2004
 endmsg
-width 32
-height 32
-enter_x 1
-enter_y 1
-reset_timeout 7200
-difficulty 1
-darkness 3
 end
 arch dirtfloor
 end
@@ -1081,9 +1081,9 @@ x 5
 y 5
 end
 arch grate_closed_1
-speed 0.500000
 x 5
 y 5
+speed 0.500000
 end
 arch dungeon_magic
 x 5
@@ -1106,9 +1106,9 @@ x 5
 y 7
 end
 arch igateTrg1
-connected 14
 x 5
 y 7
+connected 14
 end
 arch dungeon_magic
 x 5
@@ -1116,10 +1116,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 8
+last_sp 0
+connected 14
 end
 arch stonefloor2
 name stonefloor
@@ -1133,10 +1133,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 5
 y 9
+last_sp 0
+connected 14
 end
 arch stonefloor2
 name stonefloor
@@ -1149,10 +1149,10 @@ x 5
 y 9
 end
 arch loaf
-nrof 32
-value 1
 x 5
 y 9
+nrof 32
+value 1
 end
 arch dungeon_magic
 x 5
@@ -1178,10 +1178,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 5
 y 11
+last_sp 0
+connected 16
 end
 arch stonefloor2
 name stonefloor
@@ -1194,10 +1194,10 @@ x 5
 y 11
 end
 arch loaf
-nrof 12
-value 1
 x 5
 y 11
+nrof 12
+value 1
 end
 arch dungeon_magic
 x 5
@@ -1205,10 +1205,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 5
 y 12
+last_sp 0
+connected 16
 end
 arch stonefloor2
 name stonefloor
@@ -1227,9 +1227,9 @@ x 5
 y 13
 end
 arch igateTrg1
-connected 16
 x 5
 y 13
+connected 16
 end
 arch dungeon_magic
 x 5
@@ -1397,10 +1397,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 8
+last_sp 0
+connected 14
 end
 arch stonefloor2
 name stonefloor
@@ -1414,10 +1414,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 14
 x 6
 y 9
+last_sp 0
+connected 14
 end
 arch stonefloor2
 name stonefloor
@@ -1453,10 +1453,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 6
 y 11
+last_sp 0
+connected 16
 end
 arch stonefloor2
 name stonefloor
@@ -1474,10 +1474,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 16
 x 6
 y 12
+last_sp 0
+connected 16
 end
 arch stonefloor2
 name stonefloor
@@ -1949,10 +1949,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 8
 y 8
+last_sp 0
+connected 12
 end
 arch stonefloor2
 name stonefloor
@@ -1966,10 +1966,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 8
 y 9
+last_sp 0
+connected 12
 end
 arch stonefloor2
 name stonefloor
@@ -2001,10 +2001,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 8
 y 11
+last_sp 0
+connected 13
 end
 arch stonefloor2
 name stonefloor
@@ -2022,10 +2022,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 8
 y 12
+last_sp 0
+connected 13
 end
 arch stonefloor2
 name stonefloor
@@ -2210,9 +2210,9 @@ x 9
 y 7
 end
 arch igateTrg1
-connected 12
 x 9
 y 7
+connected 12
 end
 arch dungeon_magic
 x 9
@@ -2220,10 +2220,10 @@ y 8
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 8
+last_sp 0
+connected 12
 end
 arch stonefloor2
 name stonefloor
@@ -2237,10 +2237,10 @@ y 9
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 12
 x 9
 y 9
+last_sp 0
+connected 12
 end
 arch stonefloor2
 name stonefloor
@@ -2253,10 +2253,10 @@ x 9
 y 9
 end
 arch loaf
-nrof 64
-value 1
 x 9
 y 9
+nrof 64
+value 1
 end
 arch dungeon_magic
 x 9
@@ -2278,10 +2278,10 @@ y 11
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 9
 y 11
+last_sp 0
+connected 13
 end
 arch stonefloor2
 name stonefloor
@@ -2294,10 +2294,10 @@ x 9
 y 11
 end
 arch loaf
-nrof 128
-value 1
 x 9
 y 11
+nrof 128
+value 1
 end
 arch dungeon_magic
 x 9
@@ -2305,10 +2305,10 @@ y 12
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 9
 y 12
+last_sp 0
+connected 13
 end
 arch stonefloor2
 name stonefloor
@@ -2327,9 +2327,9 @@ x 9
 y 13
 end
 arch igateTrg1
-connected 13
 x 9
 y 13
+connected 13
 end
 arch dungeon_magic
 x 9
@@ -3054,9 +3054,9 @@ x 12
 y 10
 end
 arch igate_closed_2
-speed 0.500000
 x 12
 y 10
+speed 0.500000
 end
 arch dungeon_magic
 x 12
@@ -3237,9 +3237,9 @@ x 13
 y 5
 end
 arch grate_closed_1
-speed 0.500000
 x 13
 y 5
+speed 0.500000
 end
 arch dungeon_magic
 x 13
@@ -3327,9 +3327,9 @@ y 14
 end
 arch check_inv
 slaying cdcmilkeepps1
-connected 6166
 x 13
 y 14
+connected 6166
 end
 arch stonefloor2
 name stonefloor
@@ -3348,19 +3348,19 @@ x 13
 y 15
 end
 arch grate_closed_1
-speed 0.500000
-connected 6166
 x 13
 y 15
+speed 0.500000
+connected 6166
 end
 arch dungeon_magic
 x 13
 y 16
 end
 arch pedestal_trigger
-connected 6166
 x 13
 y 16
+connected 6166
 end
 arch stonefloor2
 name stonefloor
@@ -3452,10 +3452,10 @@ y 4
 end
 arch check_inv
 slaying prisoner
-last_sp 0
-connected 13
 x 14
 y 4
+last_sp 0
+connected 13
 end
 arch stonefloor2
 name stonefloor
@@ -3464,10 +3464,10 @@ x 14
 y 4
 end
 arch loaf
-nrof 256
-value 1
 x 14
 y 4
+nrof 256
+value 1
 end
 arch dungeon_magic
 x 14
@@ -3747,10 +3747,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 15
 y 7
+no_pass 0
+blocksview 0
 end
 arch mine17
 x 15

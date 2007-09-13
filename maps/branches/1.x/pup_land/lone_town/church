@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name townA_church
+region lonetown
+width 11
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jan 26 23:40:23 1996
 endmsg
-x 11
-y 20
 end
 arch blocked
 end
@@ -619,8 +619,8 @@ endmsg
 food 100
 x 5
 y 13
-protected 99
 connected 99
+protected 99
 end
 arch woodfloor
 x 5

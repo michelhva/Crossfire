@@ -1,14 +1,14 @@
 arch map
-region portjoseph
 name temple
+region portjoseph
+darkness 1
+width 15
+height 24
 msg
 Creator: Langley
 Email: langley@fermat.dartmouth.edu
 Date: Fri Jun 10 21:14:10 1994
 endmsg
-x 15
-y 24
-invisible 1
 end
 arch jungle_1
 end

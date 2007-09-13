@@ -1,15 +1,15 @@
 arch map
-region navar
 name Iggy's house
+region navar
+width 15
+height 30
+enter_x 2
+enter_y 15
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    1/12/2004
 endmsg
-width 15
-height 30
-enter_x 2
-enter_y 15
 end
 arch woodfloor
 end
@@ -2019,9 +2019,9 @@ y 24
 end
 arch check_floor
 race dress1
-connected 5
 x 11
 y 24
+connected 5
 end
 arch woodfloor
 x 11
@@ -2029,9 +2029,9 @@ y 25
 end
 arch check_floor
 race dress1
-connected 5
 x 11
 y 25
+connected 5
 end
 arch sign
 msg
@@ -2195,18 +2195,18 @@ x 12
 y 24
 end
 arch grate_closed_2
-connected 5
 x 12
 y 24
+connected 5
 end
 arch woodfloor
 x 12
 y 25
 end
 arch grate_closed_2
-connected 5
 x 12
 y 25
+connected 5
 end
 arch woodfloor
 x 12
@@ -2383,9 +2383,9 @@ y 24
 end
 arch check_floor
 race dress1
-connected 5
 x 13
 y 24
+connected 5
 end
 arch stair_up_2
 slaying Iggys_house_upper
@@ -2399,9 +2399,9 @@ x 13
 y 25
 end
 arch button_lever
-connected 5
 x 13
 y 25
+connected 5
 end
 arch woodfloor
 x 13

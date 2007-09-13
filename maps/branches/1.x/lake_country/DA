@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name DA
+region lakecountry
+width 17
+height 17
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Wed Mar 22 06:31:54 1995
 endmsg
-x 17
-y 17
 end
 arch permanent_lava
 end
@@ -885,8 +885,8 @@ name Golden Unicorn Horn
 msg
   A beautiful unicorn horn shines with
 golden light. You feel really soothing
-holding it. 
-  It sure is one of the most powerful 
+holding it.
+  It sure is one of the most powerful
 healing artifact in the realm. It is
 rumored to have been created by a god of
 healing. Hanuk imprisoned the god by
@@ -900,8 +900,8 @@ value 10000000
 end
 arch pyro_book
 value 2400
-identified 1
 randomitems none
+identified 1
 arch spell_meteor_swarm
 end
 end

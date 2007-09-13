@@ -1,13 +1,14 @@
 arch map
-region portjoseph
 name hole on goblin isle
+region portjoseph
+darkness 4
+width 20
+height 16
 msg
 Creator: langley
 Email: langley@fermat.dartmouth.edu
 Date: Fri Jul 22 19:59:36 1994
 endmsg
-x 20
-invisible 4
 end
 arch dungeon_floor
 end
@@ -676,7 +677,7 @@ end
 arch scroll
 msg
 The first word of enchantment
-is  `Arglebargle' 
+is  `Arglebargle'
 endmsg
 x 5
 y 14

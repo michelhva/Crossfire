@@ -1,15 +1,15 @@
 arch map
-region pupland
 name ruin
+region pupland
+width 13
+height 13
+enter_x 7
+enter_y 11
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 16:30:01 1996
 endmsg
-hp 7
-sp 11
-x 13
-y 13
 end
 arch invis_exit
 slaying ../rainbow/islands
@@ -319,9 +319,9 @@ x 3
 y 9
 end
 arch pillars
-no_pass 1
 x 3
 y 9
+no_pass 1
 end
 arch pstone_1
 x 3
@@ -364,6 +364,13 @@ x 4
 y 3
 end
 arch pstone_2
+x 4
+y 4
+end
+arch courthouse
+slaying floor1
+hp 8
+sp 14
 x 4
 y 4
 end
@@ -578,9 +585,9 @@ x 7
 y 3
 end
 arch pillars
-no_pass 1
 x 7
 y 3
+no_pass 1
 end
 arch pstone_2
 x 7
@@ -614,9 +621,9 @@ x 7
 y 9
 end
 arch pillars
-no_pass 1
 x 7
 y 9
+no_pass 1
 end
 arch pstone_1
 x 7
@@ -735,9 +742,9 @@ x 9
 y 5
 end
 arch pillars
-no_pass 1
 x 9
 y 5
+no_pass 1
 end
 arch pstone_2
 x 9
@@ -1060,11 +1067,4 @@ end
 arch pstone_1
 x 12
 y 12
-end
-arch courthouse
-slaying floor1
-hp 8
-sp 14
-x 4
-y 4
 end

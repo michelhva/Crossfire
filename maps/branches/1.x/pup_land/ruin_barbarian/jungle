@@ -1,12 +1,14 @@
 arch map
-region pupland
 name jungle
+difficulty 4
+region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 27 01:32:35 1997
 endmsg
-level 4
 end
 arch jungle_1
 end

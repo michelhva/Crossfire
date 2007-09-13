@@ -1,13 +1,13 @@
 arch map
-region pupland
 name chest
+region pupland
+width 15
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb 20 21:31:00 2001
 endmsg
-x 15
-y 10
 end
 arch unholy_ground
 end
@@ -811,8 +811,8 @@ type 66
 material 0
 value 0
 weight 0
-no_pick 1
 move_on walk fly_low
+no_pick 1
 identified 0
 end
 arch spell_magic_missile

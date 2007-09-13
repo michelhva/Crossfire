@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name masterlev
+region lakecountry
+width 25
+height 25
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Mon Apr 24 18:08:11 1995
 endmsg
-x 25
-y 25
 end
 arch woodfloor
 end
@@ -1317,8 +1317,8 @@ name_pl potions of dragon firebreath
 msg
 =>>
   After quaffing the liquid distilled
-from element of fire, you will 
-uncontrollably breathe forth like a 
+from element of fire, you will
+uncontrollably breathe forth like a
 fire dragon.
 endmsg
 face potiongen.111
@@ -1342,7 +1342,7 @@ name potion of courage
 name_pl potions of courage
 msg
 =>>
-  It hypnotizes you, gives you courage 
+  It hypnotizes you, gives you courage
 and makes you fearless for a short
 period.
 endmsg
@@ -1498,7 +1498,7 @@ name potion of clear mind
 name_pl potions of clear mind
 msg
 =>>
-  It clears your thought and make you 
+  It clears your thought and make you
 impossible to be confused for a short
 period.
 endmsg
@@ -1956,9 +1956,9 @@ yourself!!??
   Hello stranger! So you want to be a
 member of the guild!? Well, since you
 passed the test, I will let you in the
-guild. There are many things that the 
-guild provide you. 
-  Make your contributions on time, 
+guild. There are many things that the
+guild provide you.
+  Make your contributions on time,
 remember! And be a good fellow.
   Okay you may go now.
   You have to search the rooms for the
@@ -2572,8 +2572,8 @@ name blackmarket master
 msg
 @match *
 You have to find out where to get the
-goodies for trading. 
-I have no other helpful information to 
+goodies for trading.
+I have no other helpful information to
 give you.
 endmsg
 x 14
@@ -2843,7 +2843,7 @@ arch locked_door1
 name repelling force field
 slaying Heart_Joey
 msg
-I will trade the Essence of Flame 
+I will trade the Essence of Flame
 for Heart of Joey.
 endmsg
 face enchantment.111
@@ -3237,7 +3237,7 @@ The keys are hidden under the table.
 @match thievery|Thievery
 THe master key of thievery is a symbol
 of the guild, besides being a key. It
-has many uses and open many doors that 
+has many uses and open many doors that
 open guildmembers are allowed.
 @match *
 Hello fellow guild members
@@ -3325,7 +3325,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -3629,7 +3629,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -3845,7 +3845,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111
@@ -4087,7 +4087,7 @@ arch locked_door1
 name repelling force field
 slaying undecided
 msg
-You need to have some special thing to 
+You need to have some special thing to
 trade for the object here!
 endmsg
 face enchantment.111

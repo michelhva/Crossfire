@@ -1,11 +1,11 @@
 arch map
 name cdcfwbank
+width 20
+height 30
 msg
 Creator: CF Java Map Editor
 Date:    5/28/2005
 endmsg
-width 20
-height 30
 end
 arch dungeon_magic
 end
@@ -268,14 +268,14 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 28
 no_pass 0
 blocksview 0
-y 28
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 y 28
 end
 arch dungeon_magic
@@ -284,9 +284,9 @@ end
 arch blocked
 name nothing
 name_pl nothing
+y 29
 no_pass 0
 blocksview 0
-y 29
 end
 arch dungeon_magic
 x 1
@@ -632,15 +632,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 1
 y 28
 end
@@ -651,10 +651,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 1
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 2
@@ -838,25 +838,25 @@ x 2
 y 15
 end
 arch cobblestones2
-unique 1
 x 2
 y 15
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 15
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 15
 end
 arch check_inv
 slaying cdcfbdepbox6
-connected 6
 x 2
 y 15
+connected 6
 end
 arch dungeon_magic
 x 2
@@ -875,25 +875,25 @@ x 2
 y 17
 end
 arch cobblestones2
-unique 1
 x 2
 y 17
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 17
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 17
 end
 arch check_inv
 slaying cdcfbdepbox5
-connected 5
 x 2
 y 17
+connected 5
 end
 arch dungeon_magic
 x 2
@@ -912,25 +912,25 @@ x 2
 y 19
 end
 arch cobblestones2
-unique 1
 x 2
 y 19
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 19
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 19
 end
 arch check_inv
 slaying cdcfbdepbox4
-connected 4
 x 2
 y 19
+connected 4
 end
 arch dungeon_magic
 x 2
@@ -949,25 +949,25 @@ x 2
 y 21
 end
 arch cobblestones2
-unique 1
 x 2
 y 21
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 21
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 21
 end
 arch check_inv
 slaying cdcfbdepbox3
-connected 3
 x 2
 y 21
+connected 3
 end
 arch dungeon_magic
 x 2
@@ -986,25 +986,25 @@ x 2
 y 23
 end
 arch cobblestones2
-unique 1
 x 2
 y 23
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 23
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 23
 end
 arch check_inv
 slaying cdcfbdepbox2
-connected 2
 x 2
 y 23
+connected 2
 end
 arch dungeon_magic
 x 2
@@ -1023,25 +1023,25 @@ x 2
 y 25
 end
 arch cobblestones2
-unique 1
 x 2
 y 25
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 2
+y 25
 material 0
 container 250000
 no_pick 1
 unique 1
-x 2
-y 25
 end
 arch check_inv
 slaying cdcfbdepbox1
-connected 1
 x 2
 y 25
+connected 1
 end
 arch dungeon_magic
 x 2
@@ -1078,15 +1078,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 2
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 2
 y 28
 end
@@ -1097,10 +1097,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 2
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 3
@@ -1296,16 +1296,16 @@ x 3
 y 15
 end
 arch grate_closed_2
-speed 0.500000
-connected 6
 x 3
 y 15
+speed 0.500000
+connected 6
 end
 arch check_inv
 slaying cdcfbdepbox6
-connected 6
 x 3
 y 15
+connected 6
 end
 arch dungeon_magic
 x 3
@@ -1328,16 +1328,16 @@ x 3
 y 17
 end
 arch grate_closed_2
-speed 0.500000
-connected 5
 x 3
 y 17
+speed 0.500000
+connected 5
 end
 arch check_inv
 slaying cdcfbdepbox5
-connected 5
 x 3
 y 17
+connected 5
 end
 arch dungeon_magic
 x 3
@@ -1360,16 +1360,16 @@ x 3
 y 19
 end
 arch grate_closed_2
-speed 0.500000
-connected 4
 x 3
 y 19
+speed 0.500000
+connected 4
 end
 arch check_inv
 slaying cdcfbdepbox4
-connected 4
 x 3
 y 19
+connected 4
 end
 arch dungeon_magic
 x 3
@@ -1392,16 +1392,16 @@ x 3
 y 21
 end
 arch grate_closed_2
-speed 0.500000
-connected 3
 x 3
 y 21
+speed 0.500000
+connected 3
 end
 arch check_inv
 slaying cdcfbdepbox3
-connected 3
 x 3
 y 21
+connected 3
 end
 arch dungeon_magic
 x 3
@@ -1424,16 +1424,16 @@ x 3
 y 23
 end
 arch grate_closed_2
-speed 0.500000
-connected 2
 x 3
 y 23
+speed 0.500000
+connected 2
 end
 arch check_inv
 slaying cdcfbdepbox2
-connected 2
 x 3
 y 23
+connected 2
 end
 arch dungeon_magic
 x 3
@@ -1456,16 +1456,16 @@ x 3
 y 25
 end
 arch grate_closed_2
-speed 0.500000
-connected 1
 x 3
 y 25
+speed 0.500000
+connected 1
 end
 arch check_inv
 slaying cdcfbdepbox1
-connected 1
 x 3
 y 25
+connected 1
 end
 arch dungeon_magic
 x 3
@@ -1502,15 +1502,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 3
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 3
 y 28
 end
@@ -1521,10 +1521,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 3
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 4
@@ -1709,9 +1709,9 @@ y 15
 end
 arch check_inv
 slaying cdcfbdepbox6
-connected 6
 x 4
 y 15
+connected 6
 end
 arch dungeon_magic
 x 4
@@ -1731,9 +1731,9 @@ y 17
 end
 arch check_inv
 slaying cdcfbdepbox5
-connected 5
 x 4
 y 17
+connected 5
 end
 arch dungeon_magic
 x 4
@@ -1753,9 +1753,9 @@ y 19
 end
 arch check_inv
 slaying cdcfbdepbox4
-connected 4
 x 4
 y 19
+connected 4
 end
 arch dungeon_magic
 x 4
@@ -1775,9 +1775,9 @@ y 21
 end
 arch check_inv
 slaying cdcfbdepbox3
-connected 3
 x 4
 y 21
+connected 3
 end
 arch dungeon_magic
 x 4
@@ -1797,9 +1797,9 @@ y 23
 end
 arch check_inv
 slaying cdcfbdepbox2
-connected 2
 x 4
 y 23
+connected 2
 end
 arch dungeon_magic
 x 4
@@ -1819,9 +1819,9 @@ y 25
 end
 arch check_inv
 slaying cdcfbdepbox1
-connected 1
 x 4
 y 25
+connected 1
 end
 arch dungeon_magic
 x 4
@@ -1850,15 +1850,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 4
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 4
 y 28
 end
@@ -1869,10 +1869,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 4
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 5
@@ -2017,11 +2017,11 @@ y 11
 end
 arch man
 name bank clerk
+name_pl bank clerk
 msg
 @match *
 Have you tried our mutual fund?
 endmsg
-name_pl bank clerk
 x 5
 y 11
 end
@@ -2191,15 +2191,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 5
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 5
 y 28
 end
@@ -2210,10 +2210,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 5
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 6
@@ -2532,15 +2532,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 6
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 6
 y 28
 end
@@ -2551,10 +2551,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 6
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 7
@@ -2824,15 +2824,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 7
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 7
 y 28
 end
@@ -2843,10 +2843,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 7
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 8
@@ -2936,9 +2936,9 @@ y 8
 end
 arch check_inv
 slaying cdcvaulthall1k
-connected 1001
 x 8
 y 8
+connected 1001
 end
 arch marble
 x 8
@@ -2955,10 +2955,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 1001
 x 8
 y 9
+speed 0.500000
+connected 1001
 end
 arch dungeon_magic
 x 8
@@ -2971,10 +2971,10 @@ end
 arch igate_closed_1
 name vault door
 name_pl vault door
-speed 0.500000
-connected 1001
 x 8
 y 10
+speed 0.500000
+connected 1001
 end
 arch dungeon_magic
 x 8
@@ -2982,9 +2982,9 @@ y 11
 end
 arch check_inv
 slaying cdcvaulthall1k
-connected 1001
 x 8
 y 11
+connected 1001
 end
 arch flagstone
 x 8
@@ -3087,6 +3087,7 @@ y 22
 end
 arch sign
 name First World Bank
+name_pl First World Bank
 msg
 Welcome to the CityDeClouds branch of
 the international First World Bank.
@@ -3108,7 +3109,6 @@ account. Vaults and deposit
 boxes/rooms and strong rooms will not
 be sold to women.
 endmsg
-name_pl First World Bank
 x 8
 y 22
 end
@@ -3170,15 +3170,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 8
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 8
 y 28
 end
@@ -3189,10 +3189,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 8
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 9
@@ -3472,15 +3472,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 9
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 9
 y 28
 end
@@ -3491,10 +3491,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 9
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 10
@@ -3813,15 +3813,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 10
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 10
 y 28
 end
@@ -3832,10 +3832,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 10
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 11
@@ -3980,12 +3980,12 @@ y 11
 end
 arch man
 name bank clerk
+name_pl bank clerk
 msg
 @match *
 I suggest diversifying into stocks
 and bonds.
 endmsg
-name_pl bank clerk
 x 11
 y 11
 end
@@ -4155,15 +4155,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 11
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 11
 y 28
 end
@@ -4174,10 +4174,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 11
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 12
@@ -4362,9 +4362,9 @@ y 15
 end
 arch check_inv
 slaying cdcfbdepbox7
-connected 7
 x 12
 y 15
+connected 7
 end
 arch dungeon_magic
 x 12
@@ -4384,9 +4384,9 @@ y 17
 end
 arch check_inv
 slaying cdcfbdepbox8
-connected 8
 x 12
 y 17
+connected 8
 end
 arch dungeon_magic
 x 12
@@ -4406,9 +4406,9 @@ y 19
 end
 arch check_inv
 slaying cdcfbdepbox9
-connected 9
 x 12
 y 19
+connected 9
 end
 arch dungeon_magic
 x 12
@@ -4428,9 +4428,9 @@ y 21
 end
 arch check_inv
 slaying cdcfbdepbox10
-connected 10
 x 12
 y 21
+connected 10
 end
 arch dungeon_magic
 x 12
@@ -4450,9 +4450,9 @@ y 23
 end
 arch check_inv
 slaying cdcfbdepbox11
-connected 11
 x 12
 y 23
+connected 11
 end
 arch dungeon_magic
 x 12
@@ -4472,9 +4472,9 @@ y 25
 end
 arch check_inv
 slaying cdcfbdepbox12
-connected 12
 x 12
 y 25
+connected 12
 end
 arch dungeon_magic
 x 12
@@ -4503,15 +4503,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 12
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 12
 y 28
 end
@@ -4522,10 +4522,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 12
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 13
@@ -4721,16 +4721,16 @@ x 13
 y 15
 end
 arch grate_closed_2
-speed 0.500000
-connected 7
 x 13
 y 15
+speed 0.500000
+connected 7
 end
 arch check_inv
 slaying cdcfbdepbox7
-connected 7
 x 13
 y 15
+connected 7
 end
 arch dungeon_magic
 x 13
@@ -4753,16 +4753,16 @@ x 13
 y 17
 end
 arch grate_closed_2
-speed 0.500000
-connected 8
 x 13
 y 17
+speed 0.500000
+connected 8
 end
 arch check_inv
 slaying cdcfbdepbox8
-connected 8
 x 13
 y 17
+connected 8
 end
 arch dungeon_magic
 x 13
@@ -4785,16 +4785,16 @@ x 13
 y 19
 end
 arch grate_closed_2
-speed 0.500000
-connected 9
 x 13
 y 19
+speed 0.500000
+connected 9
 end
 arch check_inv
 slaying cdcfbdepbox9
-connected 9
 x 13
 y 19
+connected 9
 end
 arch dungeon_magic
 x 13
@@ -4817,16 +4817,16 @@ x 13
 y 21
 end
 arch grate_closed_2
-speed 0.500000
-connected 10
 x 13
 y 21
+speed 0.500000
+connected 10
 end
 arch check_inv
 slaying cdcfbdepbox10
-connected 10
 x 13
 y 21
+connected 10
 end
 arch dungeon_magic
 x 13
@@ -4849,16 +4849,16 @@ x 13
 y 23
 end
 arch grate_closed_2
-speed 0.500000
-connected 11
 x 13
 y 23
+speed 0.500000
+connected 11
 end
 arch check_inv
 slaying cdcfbdepbox11
-connected 11
 x 13
 y 23
+connected 11
 end
 arch dungeon_magic
 x 13
@@ -4881,16 +4881,16 @@ x 13
 y 25
 end
 arch grate_closed_2
-speed 0.500000
-connected 1
 x 13
 y 25
+speed 0.500000
+connected 1
 end
 arch check_inv
 slaying cdcfbdepbox12
-connected 12
 x 13
 y 25
+connected 12
 end
 arch dungeon_magic
 x 13
@@ -4927,15 +4927,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 13
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 13
 y 28
 end
@@ -4946,10 +4946,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 13
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 14
@@ -5133,25 +5133,25 @@ x 14
 y 15
 end
 arch cobblestones2
-unique 1
 x 14
 y 15
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 15
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 15
 end
 arch check_inv
 slaying cdcfbdepbox7
-connected 7
 x 14
 y 15
+connected 7
 end
 arch dungeon_magic
 x 14
@@ -5170,25 +5170,25 @@ x 14
 y 17
 end
 arch cobblestones2
-unique 1
 x 14
 y 17
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 17
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 17
 end
 arch check_inv
 slaying cdcfbdepbox8
-connected 8
 x 14
 y 17
+connected 8
 end
 arch dungeon_magic
 x 14
@@ -5207,25 +5207,25 @@ x 14
 y 19
 end
 arch cobblestones2
-unique 1
 x 14
 y 19
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 19
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 19
 end
 arch check_inv
 slaying cdcfbdepbox9
-connected 9
 x 14
 y 19
+connected 9
 end
 arch dungeon_magic
 x 14
@@ -5244,25 +5244,25 @@ x 14
 y 21
 end
 arch cobblestones2
-unique 1
 x 14
 y 21
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 21
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 21
 end
 arch check_inv
 slaying cdcfbdepbox10
-connected 10
 x 14
 y 21
+connected 10
 end
 arch dungeon_magic
 x 14
@@ -5281,25 +5281,25 @@ x 14
 y 23
 end
 arch cobblestones2
-unique 1
 x 14
 y 23
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 23
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 23
 end
 arch check_inv
 slaying cdcfbdepbox11
-connected 11
 x 14
 y 23
+connected 11
 end
 arch dungeon_magic
 x 14
@@ -5318,25 +5318,25 @@ x 14
 y 25
 end
 arch cobblestones2
-unique 1
 x 14
 y 25
+unique 1
 end
 arch chest_2
 name safe deposit box
 name_pl safe deposit box
+x 14
+y 25
 material 0
 container 250000
 no_pick 1
 unique 1
-x 14
-y 25
 end
 arch check_inv
 slaying cdcfbdepbox12
+x 14
+y 25
 connected 12
-x 14
-y 25
 end
 arch dungeon_magic
 x 14
@@ -5373,15 +5373,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 14
 y 28
 end
@@ -5392,10 +5392,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 14
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 15
@@ -5741,15 +5741,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 15
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 15
 y 28
 end
@@ -5760,10 +5760,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 15
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 16
@@ -6113,18 +6113,18 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 16
+y 28
 no_pass 0
 blocksview 0
+end
+arch evergreens
+name cloud
+name_pl cloud
+face fog.111
 x 16
 y 28
 end
-arch evergreens
-name cloud
-face fog.111
-name_pl cloud
-x 16
-y 28
-end
 arch dungeon_magic
 x 16
 y 29
@@ -6132,10 +6132,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 16
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 17
@@ -6143,14 +6143,14 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 17
 no_pass 0
 blocksview 0
-x 17
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 end
 arch dungeon_magic
@@ -6160,15 +6160,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 1
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 1
 end
@@ -6179,15 +6179,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 2
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 2
 end
@@ -6198,15 +6198,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 3
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 3
 end
@@ -6217,15 +6217,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 4
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 4
 end
@@ -6236,15 +6236,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 5
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 5
 end
@@ -6255,15 +6255,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 6
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 6
 end
@@ -6274,15 +6274,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 7
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 7
 end
@@ -6293,15 +6293,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 8
 end
@@ -6312,15 +6312,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 9
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 9
 end
@@ -6331,15 +6331,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 10
 end
@@ -6350,15 +6350,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 11
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 11
 end
@@ -6369,15 +6369,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 12
 end
@@ -6388,15 +6388,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 13
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 13
 end
@@ -6407,15 +6407,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 14
 end
@@ -6426,15 +6426,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 15
 end
@@ -6445,15 +6445,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 16
 end
@@ -6464,15 +6464,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 17
 end
@@ -6483,15 +6483,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 18
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 18
 end
@@ -6502,15 +6502,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 19
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 19
 end
@@ -6521,15 +6521,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 20
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 20
 end
@@ -6540,15 +6540,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 21
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 21
 end
@@ -6559,15 +6559,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 22
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 22
 end
@@ -6578,15 +6578,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 23
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 23
 end
@@ -6597,15 +6597,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 24
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 24
 end
@@ -6616,15 +6616,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 25
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 25
 end
@@ -6635,15 +6635,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 26
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 26
 end
@@ -6654,15 +6654,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 27
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 27
 end
@@ -6673,15 +6673,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 17
 y 28
 end
@@ -6692,10 +6692,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 17
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 18
@@ -6703,14 +6703,14 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 18
 no_pass 0
 blocksview 0
-x 18
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 end
 arch dungeon_magic
@@ -6720,15 +6720,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 1
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 1
 end
@@ -6739,15 +6739,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 2
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 2
 end
@@ -6758,15 +6758,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 3
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 3
 end
@@ -6777,15 +6777,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 4
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 4
 end
@@ -6796,15 +6796,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 5
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 5
 end
@@ -6815,15 +6815,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 6
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 6
 end
@@ -6834,15 +6834,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 7
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 7
 end
@@ -6853,15 +6853,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 8
 end
@@ -6872,15 +6872,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 9
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 9
 end
@@ -6891,15 +6891,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 10
 end
@@ -6910,15 +6910,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 11
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 11
 end
@@ -6929,15 +6929,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 12
 end
@@ -6948,15 +6948,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 13
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 13
 end
@@ -6967,15 +6967,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 14
 end
@@ -6986,15 +6986,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 15
 end
@@ -7005,15 +7005,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 16
 end
@@ -7024,15 +7024,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 17
 end
@@ -7043,15 +7043,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 18
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 18
 end
@@ -7062,15 +7062,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 19
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 19
 end
@@ -7081,15 +7081,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 20
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 20
 end
@@ -7100,15 +7100,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 21
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 21
 end
@@ -7119,15 +7119,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 22
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 22
 end
@@ -7138,15 +7138,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 23
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 23
 end
@@ -7157,15 +7157,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 24
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 24
 end
@@ -7176,15 +7176,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 25
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 25
 end
@@ -7195,15 +7195,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 26
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 26
 end
@@ -7214,15 +7214,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 27
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 27
 end
@@ -7233,15 +7233,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 18
 y 28
 end
@@ -7252,10 +7252,10 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 18
 y 29
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 19
@@ -7263,14 +7263,14 @@ end
 arch blocked
 name nothing
 name_pl nothing
+x 19
 no_pass 0
 blocksview 0
-x 19
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 end
 arch dungeon_magic
@@ -7280,15 +7280,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 1
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 1
 end
@@ -7299,15 +7299,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 2
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 2
 end
@@ -7318,15 +7318,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 3
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 3
 end
@@ -7337,15 +7337,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 4
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 4
 end
@@ -7356,15 +7356,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 5
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 5
 end
@@ -7375,15 +7375,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 6
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 6
 end
@@ -7394,15 +7394,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 7
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 7
 end
@@ -7413,15 +7413,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 8
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 8
 end
@@ -7432,15 +7432,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 9
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 9
 end
@@ -7451,15 +7451,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 10
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 10
 end
@@ -7470,15 +7470,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 11
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 11
 end
@@ -7489,15 +7489,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 12
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 12
 end
@@ -7508,15 +7508,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 13
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 13
 end
@@ -7527,15 +7527,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 14
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 14
 end
@@ -7546,15 +7546,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 15
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 15
 end
@@ -7565,15 +7565,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 16
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 16
 end
@@ -7584,15 +7584,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 17
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 17
 end
@@ -7603,15 +7603,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 18
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 18
 end
@@ -7622,15 +7622,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 19
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 19
 end
@@ -7641,15 +7641,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 20
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 20
 end
@@ -7660,15 +7660,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 21
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 21
 end
@@ -7679,15 +7679,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 22
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 22
 end
@@ -7698,15 +7698,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 23
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 23
 end
@@ -7717,15 +7717,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 24
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 24
 end
@@ -7736,15 +7736,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 25
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 25
 end
@@ -7755,15 +7755,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 26
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 26
 end
@@ -7774,15 +7774,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 27
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 27
 end
@@ -7793,15 +7793,15 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 28
+no_pass 0
+blocksview 0
 end
 arch evergreens
 name cloud
-face fog.111
 name_pl cloud
+face fog.111
 x 19
 y 28
 end
@@ -7812,8 +7812,8 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
-blocksview 0
 x 19
 y 29
+no_pass 0
+blocksview 0
 end

@@ -1,13 +1,13 @@
 arch map
-region ancientpupland
 name village
+region ancientpupland
+width 21
+height 21
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr 30 21:46:36 1996
 endmsg
-x 21
-y 21
 end
 arch invis_exit
 slaying ../world
@@ -994,7 +994,7 @@ y 3
 end
 arch sign
 msg
-We*co*e to S*in*ing Vi**age! 
+We*co*e to S*in*ing Vi**age!
 endmsg
 x 8
 y 3

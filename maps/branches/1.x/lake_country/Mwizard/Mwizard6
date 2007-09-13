@@ -1,13 +1,13 @@
 arch map
 name Mwizard6
 region lakecountry
+width 22
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 05:29:28 1995
 endmsg
-width 22
-height 30
 end
 arch flagstone
 end
@@ -752,6 +752,11 @@ arch flagstone
 x 4
 y 7
 end
+arch demon_lord
+hp 5000
+x 4
+y 7
+end
 arch flagstone
 x 4
 y 8
@@ -953,6 +958,17 @@ end
 arch flagstone
 x 5
 y 19
+end
+arch jessyb
+name Oppie
+hp 10000
+x 5
+y 19
+carrying 100
+arch key2
+name Ying
+slaying ying
+end
 end
 arch flagstone
 x 5
@@ -1360,6 +1376,11 @@ arch flagstone
 x 8
 y 10
 end
+arch demon_lord
+hp 5000
+x 8
+y 10
+end
 arch flagstone
 x 8
 y 11
@@ -1536,9 +1557,9 @@ y 16
 end
 arch button_lever
 name One
-connected 666
 x 9
 y 16
+connected 666
 end
 arch flagstone
 x 9
@@ -1735,10 +1756,10 @@ y 18
 end
 arch grate_closed_1
 name One
-speed 0.500000
-connected 666
 x 10
 y 18
+speed 0.500000
+connected 666
 end
 arch dungeon_magic
 x 10
@@ -1754,10 +1775,10 @@ y 20
 end
 arch grate_closed_1
 name Two
-speed 0.500000
-connected 6662
 x 10
 y 20
+speed 0.500000
+connected 6662
 end
 arch flagstone
 x 10
@@ -1912,9 +1933,9 @@ y 16
 end
 arch button_lever
 name Two
-connected 6662
 x 11
 y 16
+connected 6662
 end
 arch flagstone
 x 11
@@ -2047,6 +2068,11 @@ x 12
 y 6
 end
 arch flagstone
+x 12
+y 7
+end
+arch demon_lord
+hp 5000
 x 12
 y 7
 end
@@ -2260,6 +2286,17 @@ arch flagstone
 x 13
 y 20
 end
+arch jessyb
+name Fonz
+hp 10000
+x 13
+y 20
+carrying 100
+arch key2
+name Yang
+slaying yang
+end
+end
 arch flagstone
 x 13
 y 21
@@ -2808,6 +2845,11 @@ arch flagstone
 x 17
 y 12
 end
+arch demon_lord
+hp 5000
+x 17
+y 12
+end
 arch flagstone
 x 17
 y 13
@@ -2990,9 +3032,9 @@ x 18
 y 18
 end
 arch cwall_3_3
-no_pass 0
 x 18
 y 18
+no_pass 0
 end
 arch flagstone
 x 18
@@ -3423,9 +3465,9 @@ msg
 @match Takisis
 Click.
 endmsg
-connected 99
 x 20
 y 26
+connected 99
 end
 arch flagstone
 x 20
@@ -3435,10 +3477,10 @@ arch teleporter
 slaying MwizardG
 hp 10
 sp 10
-speed 0.000000
-connected 99
 x 20
 y 26
+speed 0.000000
+connected 99
 end
 arch flagstone
 x 20
@@ -3685,46 +3727,4 @@ end
 arch flagstone
 x 21
 y 29
-end
-arch demon_lord
-hp 5000
-x 4
-y 7
-end
-arch jessyb
-name Oppie
-hp 10000
-carrying 100
-x 5
-y 19
-arch key2
-name Ying
-slaying ying
-end
-end
-arch demon_lord
-hp 5000
-x 8
-y 10
-end
-arch demon_lord
-hp 5000
-x 12
-y 7
-end
-arch jessyb
-name Fonz
-hp 10000
-carrying 100
-x 13
-y 20
-arch key2
-name Yang
-slaying yang
-end
-end
-arch demon_lord
-hp 5000
-x 17
-y 12
 end

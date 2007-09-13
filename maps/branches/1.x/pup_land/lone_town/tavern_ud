@@ -1,15 +1,15 @@
 arch map
-region lonetown
 name townA_tavern_ud
+region lonetown
+width 10
+height 10
+enter_x 5
+enter_y 5
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 31 18:00:43 1996
 endmsg
-hp 5
-sp 5
-x 10
-y 10
 end
 arch afloor_right
 end

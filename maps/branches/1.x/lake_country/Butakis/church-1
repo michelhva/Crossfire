@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name church-1
+region lakecountry
+width 20
+height 30
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.csua.berkeley.edu
 Date: Wed Mar 29 20:12:10 1995
 endmsg
-width 20
-height 30
 end
 arch dun10
 end
@@ -106,9 +106,9 @@ x 1
 y 1
 end
 arch button_lever
-connected 1
 x 1
 y 1
+connected 1
 end
 arch woodfloor
 x 1
@@ -119,10 +119,10 @@ x 1
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 1
 y 3
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 1
@@ -176,10 +176,10 @@ x 1
 y 5
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 1
 y 5
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 1
@@ -209,9 +209,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 1
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -344,9 +344,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 1
 y 27
+unaggressive 1
 end
 arch woodfloor
 x 1
@@ -368,9 +368,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 1
 y 28
+unaggressive 1
 end
 arch dun2
 x 1
@@ -399,9 +399,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 2
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -412,30 +412,30 @@ x 2
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 2
 y 3
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 2
 y 4
 end
 arch grate_closed_2
-speed 0.500000
-connected 1
 x 2
 y 4
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 2
 y 5
 end
 arch grate_closed_1
+x 2
+y 5
 speed 0.500000
 connected 1
-x 2
-y 5
 end
 arch woodfloor
 x 2
@@ -465,9 +465,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 2
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 2
@@ -597,9 +597,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 2
 y 28
+unaggressive 1
 end
 arch dun2
 x 2
@@ -628,9 +628,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 3
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -676,9 +676,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 3
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 3
@@ -808,9 +808,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 3
 y 28
+unaggressive 1
 end
 arch dun2
 x 3
@@ -839,9 +839,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 4
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 4
@@ -887,9 +887,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 4
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 4
@@ -1030,9 +1030,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 5
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -1054,9 +1054,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 5
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -1098,9 +1098,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 5
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -1230,9 +1230,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 5
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -1269,9 +1269,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 6
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -1293,9 +1293,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 6
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -1337,9 +1337,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 6
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -1465,9 +1465,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 6
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -1489,9 +1489,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 6
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 6
@@ -1528,9 +1528,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 7
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -1552,9 +1552,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 7
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -1688,9 +1688,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 7
 y 24
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -1712,9 +1712,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 7
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -1736,9 +1736,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 7
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 7
@@ -1775,9 +1775,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 8
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 8
@@ -1799,9 +1799,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 8
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 8
@@ -1911,9 +1911,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 8
 y 24
+unaggressive 1
 end
 arch woodfloor
 x 8
@@ -1935,9 +1935,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 8
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 8
@@ -1978,9 +1978,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 9
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -2002,9 +2002,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 9
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -2114,9 +2114,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 9
 y 24
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -2138,9 +2138,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 9
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 9
@@ -2181,9 +2181,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 10
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 10
@@ -2205,9 +2205,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 10
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 10
@@ -2317,9 +2317,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 10
 y 24
+unaggressive 1
 end
 arch woodfloor
 x 10
@@ -2341,9 +2341,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 10
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 10
@@ -2384,9 +2384,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 11
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 11
@@ -2408,9 +2408,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 11
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 11
@@ -2520,9 +2520,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 11
 y 24
+unaggressive 1
 end
 arch woodfloor
 x 11
@@ -2544,9 +2544,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 11
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 11
@@ -2568,9 +2568,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 11
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 11
@@ -2607,9 +2607,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 12
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 12
@@ -2631,9 +2631,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 12
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 12
@@ -2775,9 +2775,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 12
 y 25
+unaggressive 1
 end
 arch woodfloor
 x 12
@@ -2799,9 +2799,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 12
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 12
@@ -2838,9 +2838,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 13
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -2862,9 +2862,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 13
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -2906,9 +2906,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 13
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -3038,9 +3038,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 13
 y 26
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -3077,9 +3077,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 14
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 14
@@ -3101,9 +3101,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 14
 y 2
+unaggressive 1
 end
 arch woodfloor
 x 14
@@ -3145,9 +3145,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 14
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 14
@@ -3288,9 +3288,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 15
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 15
@@ -3336,9 +3336,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 15
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 15
@@ -3479,9 +3479,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 16
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 16
@@ -3492,40 +3492,40 @@ x 16
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 16
 y 3
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 16
 y 4
 end
 arch grate_closed_2
-speed 0.500000
-connected 2
 x 16
 y 4
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 16
 y 5
 end
 arch grate_closed_2
-speed 0.500000
-connected 2
 x 16
 y 5
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 16
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 16
 y 6
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 16
@@ -3551,9 +3551,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 16
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 16
@@ -3683,9 +3683,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 16
 y 28
+unaggressive 1
 end
 arch dun2
 x 16
@@ -3714,9 +3714,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 17
 y 1
+unaggressive 1
 end
 arch woodfloor
 x 17
@@ -3727,12 +3727,48 @@ x 17
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 17
 y 3
+speed 0.500000
+connected 2
 end
 arch woodfloor
+x 17
+y 4
+end
+arch dragonman
+name dragonman mercenary
+msg
+@match Hello|hello
+What do you want to ask me about?
+Where am i from? what's my business
+here?
+Well, I can tell you the truth as I
+have told the others wormheads, who
+doesn't seem to comprehend the power
+of the force of chaos.
+@match from|where
+I was under the command of chaos lord
+himself. Our lord is going to come soon
+to visit this land. If you don't want
+his wrath upon this fortress. You'd
+better tell lord, Butakis to release me
+and my companions.
+The pet division will be on the way
+soon to visit the fortress.
+@match pet|division
+Pet division is the division of our
+metallic serpents under the command of
+lesser chaos lords in the northeast
+mountains.
+@match purpose|business
+I am here to deliver the notice from
+our lord to lord Butakis; as this is
+his last chance to join us to conquest
+the land cross the sea.
+@match *
+Hmmm . another wormhead
+endmsg
 x 17
 y 4
 end
@@ -3745,10 +3781,10 @@ x 17
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 17
 y 6
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 17
@@ -3774,9 +3810,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 17
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 17
@@ -3906,9 +3942,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 17
 y 28
+unaggressive 1
 end
 arch dun2
 x 17
@@ -3922,9 +3958,9 @@ x 18
 y 1
 end
 arch button_lever
-connected 2
 x 18
 y 1
+connected 2
 end
 arch woodfloor
 x 18
@@ -3935,10 +3971,10 @@ x 18
 y 3
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 18
 y 3
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 18
@@ -3953,10 +3989,10 @@ x 18
 y 6
 end
 arch grate_closed_1
-speed 0.500000
-connected 2
 x 18
 y 6
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 18
@@ -3982,9 +4018,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 18
 y 8
+unaggressive 1
 end
 arch woodfloor
 x 18
@@ -4117,9 +4153,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 18
 y 27
+unaggressive 1
 end
 arch woodfloor
 x 18
@@ -4141,9 +4177,9 @@ force will be upon this place.
 Do whatever you can to protect the
 land and be responsible.
 endmsg
-unaggressive 1
 x 18
 y 28
+unaggressive 1
 end
 arch dun2
 x 18
@@ -4267,40 +4303,4 @@ end
 arch dun7
 x 19
 y 29
-end
-arch dragonman
-name dragonman mercenary
-msg
-@match Hello|hello
-What do you want to ask me about?
-Where am i from? what's my business
-here?
-Well, I can tell you the truth as I
-have told the others wormheads, who
-doesn't seem to comprehend the power
-of the force of chaos.
-@match from|where
-I was under the command of chaos lord
-himself. Our lord is going to come soon
-to visit this land. If you don't want
-his wrath upon this fortress. You'd
-better tell lord, Butakis to release me
-and my companions.
-The pet division will be on the way
-soon to visit the fortress.
-@match pet|division
-Pet division is the division of our
-metallic serpents under the command of
-lesser chaos lords in the northeast
-mountains.
-@match purpose|business
-I am here to deliver the notice from
-our lord to lord Butakis; as this is
-his last chance to join us to conquest
-the land cross the sea.
-@match *
-Hmmm . another wormhead
-endmsg
-x 17
-y 4
 end

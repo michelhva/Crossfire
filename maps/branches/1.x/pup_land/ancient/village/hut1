@@ -1,6 +1,8 @@
 arch map
-region ancientpupland
 name hut1
+region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -351,7 +353,7 @@ It can be dangerous to speak it loud.
 Damn, we are into real big trouble these
 days! The Evil Masters, the Necromancer
 and then this mysterious creature
-called `Gothwolte'...  
+called `Gothwolte'...
 endmsg
 hp 150
 maxhp 150

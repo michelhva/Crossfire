@@ -1,18 +1,18 @@
 arch map
-region lakecountry
 name <untitled>
+region lakecountry
 shopitems *:0
+shopgreed 1.30000
 shopmin 10
 shopmax 100000
 shoprace human
-shopgreed 1.3
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar 27 13:33:10 1995
 endmsg
-width 16
-height 16
 end
 arch woodfloor
 end

@@ -1,14 +1,14 @@
 arch map
-region pupland
 name cave2
+difficulty 10
+region pupland
+width 21
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 00:58:05 1996
 endmsg
-x 21
-y 32
-level 10
 end
 arch dungeon_floor
 end
@@ -701,7 +701,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 4
 y 7
 speed 0.300000
@@ -709,14 +708,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 4
@@ -908,7 +907,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 5
 y 6
 speed 0.300000
@@ -916,14 +914,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 5
@@ -1123,7 +1121,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 6
 y 5
 speed 0.300000
@@ -1131,14 +1128,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 6
@@ -1167,7 +1164,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 6
 y 8
 speed 0.300000
@@ -1175,14 +1171,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 6
@@ -1337,7 +1333,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 7
 y 3
 speed 0.300000
@@ -1345,14 +1340,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 7
@@ -1373,7 +1368,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 7
 y 4
 speed 0.300000
@@ -1381,14 +1375,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 7
@@ -1413,7 +1407,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 7
 y 6
 speed 0.300000
@@ -1421,14 +1414,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 7
@@ -1449,7 +1442,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 7
 y 7
 speed 0.300000
@@ -1457,14 +1449,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 7
@@ -1527,16 +1519,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 7
 y 18
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 7
@@ -1563,16 +1555,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 7
 y 20
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 7
@@ -1679,7 +1671,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 8
 y 5
 speed 0.300000
@@ -1687,14 +1678,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 8
@@ -1723,7 +1714,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 8
 y 8
 speed 0.300000
@@ -1731,14 +1721,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 8
@@ -1813,16 +1803,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 8
 y 22
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 8
@@ -1918,7 +1908,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 9
 y 6
 speed 0.300000
@@ -1926,14 +1915,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 9
@@ -2045,16 +2034,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 9
 y 24
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 9
@@ -2154,7 +2143,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 10
 y 7
 speed 0.300000
@@ -2162,14 +2150,14 @@ level 10
 type 0
 attacktype 7
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 10
@@ -2276,16 +2264,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 10
 y 20
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 10
@@ -2324,16 +2312,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 10
 y 25
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 10
@@ -2427,8 +2415,8 @@ arch ggate_closed
 x 11
 y 6
 speed 0.500000
-protected 5
 connected 5
+protected 5
 end
 arch dungeon_floor
 x 11
@@ -2437,8 +2425,8 @@ end
 arch button_small
 x 11
 y 7
-protected 15
 connected 15
+protected 15
 end
 arch dungeon_floor
 x 11
@@ -2553,16 +2541,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 11
 y 22
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 11
@@ -2597,16 +2585,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 11
 y 26
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 11
@@ -2727,9 +2715,9 @@ arch ggate_closed
 x 12
 y 14
 speed 0.500000
-protected 99
 value 1
 connected 99
+protected 99
 end
 arch dungeon_floor
 x 12
@@ -2771,8 +2759,8 @@ end
 arch button_small
 x 12
 y 17
-protected 81
 connected 81
+protected 81
 end
 arch dungeon_floor
 x 12
@@ -2836,16 +2824,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 12
 y 24
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 12
@@ -2866,8 +2854,8 @@ end
 arch button_small
 x 12
 y 28
-protected 10
 connected 10
+protected 10
 end
 arch dungeon_floor
 x 12
@@ -3081,16 +3069,16 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 13
 y 25
 speed 0.200000
 level 10
 type 0
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 end
 arch dungeon_floor
 x 13
@@ -3258,9 +3246,9 @@ end
 arch button_small
 x 14
 y 21
-protected 70
 invisible 1
 connected 70
+protected 70
 end
 arch magic_mouth
 msg
@@ -3306,8 +3294,8 @@ arch ggate_closed
 x 14
 y 27
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 14
@@ -3372,9 +3360,9 @@ arch grate_open_1
 x 15
 y 4
 speed 1.000000
-protected 15
 value 1
 connected 15
+protected 15
 end
 arch scroll
 x 15
@@ -3419,8 +3407,8 @@ end
 arch button_small
 x 15
 y 5
-protected 5
 connected 5
+protected 5
 end
 arch blocked
 x 15
@@ -3493,7 +3481,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 15
 y 17
 attack_movement 7
@@ -3501,9 +3488,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 15
@@ -3524,7 +3511,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 15
 y 19
 attack_movement 7
@@ -3532,9 +3518,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 15
@@ -3704,7 +3690,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 16
 y 16
 attack_movement 7
@@ -3712,9 +3697,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 16
@@ -3735,7 +3720,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 16
 y 18
 attack_movement 7
@@ -3743,9 +3727,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 16
@@ -3835,9 +3819,9 @@ arch grate_open_1
 x 17
 y 3
 speed 1.000000
-protected 10
 value 1
 connected 10
+protected 10
 end
 arch scroll
 x 17
@@ -3882,8 +3866,8 @@ end
 arch button_small
 x 17
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch blocked
 x 17
@@ -3905,9 +3889,9 @@ arch grate_open_1
 x 17
 y 8
 speed 1.000000
-protected 81
 value 1
 connected 81
+protected 81
 end
 arch boulder
 x 17
@@ -3997,9 +3981,9 @@ arch button_small
 face button_sma.112
 x 17
 y 9
-protected 99
 value 1
 connected 99
+protected 99
 end
 arch scroll
 x 17
@@ -4064,7 +4048,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 17
 y 17
 attack_movement 7
@@ -4072,9 +4055,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 17
@@ -4095,7 +4078,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 17
 y 19
 attack_movement 7
@@ -4103,9 +4085,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 17
@@ -4248,8 +4230,8 @@ arch igate_closed_2
 x 18
 y 10
 speed 2.000000
-protected 80
 connected 80
+protected 80
 end
 arch blocked
 x 18
@@ -4294,7 +4276,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 18
 y 16
 attack_movement 7
@@ -4302,9 +4283,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 18
@@ -4325,7 +4306,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 18
 y 18
 attack_movement 7
@@ -4333,9 +4313,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 18
@@ -4396,8 +4376,8 @@ end
 arch ggate_open
 x 18
 y 27
-protected 7
 connected 7
+protected 7
 end
 arch dungeon_floor
 x 18
@@ -4406,8 +4386,8 @@ end
 arch button_small
 x 18
 y 28
-protected 7
 connected 7
+protected 7
 end
 arch dungeon_floor
 x 18
@@ -4436,8 +4416,8 @@ arch gate_open_1
 x 19
 y 2
 speed 1.000000
-protected 70
 connected 70
+protected 70
 end
 arch boulder
 x 19
@@ -4446,8 +4426,8 @@ end
 arch button_plate
 x 19
 y 3
-protected 80
 connected 80
+protected 80
 end
 arch blocked
 x 19
@@ -4526,7 +4506,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 19
 y 17
 attack_movement 7
@@ -4534,9 +4513,9 @@ level 12
 type 0
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_floor
 x 19

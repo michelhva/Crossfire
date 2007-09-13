@@ -1,21 +1,17 @@
 arch map
-region pupland
 name st3
+region pupland
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 14:37:24 1996
 endmsg
-x 17
-y 17
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch flagstone
@@ -97,18 +93,12 @@ arch awall_2_2_1
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch flagstone
@@ -262,9 +252,9 @@ arch button_small
 face button_sma.112
 x 1
 y 11
-protected 1
 value 1
 connected 1
+protected 1
 end
 arch kog
 x 1
@@ -307,8 +297,6 @@ x 1
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 y 16
 end
@@ -1327,8 +1315,8 @@ end
 arch ggate_open
 x 8
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1453,8 +1441,8 @@ end
 arch button_handle
 x 9
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 9
@@ -2232,8 +2220,6 @@ x 14
 y 16
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch flagstone
@@ -2456,19 +2442,13 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -2577,14 +2557,10 @@ x 16
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 15
 end
 arch blocked
-msg
-endmsg
 x 16
 y 16
 end

@@ -1,16 +1,16 @@
 arch map
-region navar
 name Iggy's house
+region navar
+darkness 3
+width 15
+height 30
+enter_x 13
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    1/12/2004
 endmsg
-width 15
-height 30
-enter_x 13
-enter_y 1
-darkness 3
 end
 arch woodfloor
 end
@@ -859,10 +859,10 @@ x 4
 y 16
 end
 arch giant_bat
-can_see_in_dark 1
-run_away 20
 x 4
 y 16
+run_away 20
+can_see_in_dark 1
 end
 arch woodfloor
 x 4
@@ -1163,19 +1163,19 @@ y 3
 end
 arch creator
 other_arch light4
-connected 5
 x 6
 y 3
+connected 5
 end
 arch dirtfloor
 x 6
 y 4
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 4
+connected 5
+activate_on_release 0
 end
 arch dirtfloor
 x 6
@@ -1186,10 +1186,10 @@ x 6
 y 5
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 5
+connected 5
+activate_on_release 0
 end
 arch woodfloor
 x 6
@@ -1200,10 +1200,10 @@ x 6
 y 6
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 6
+connected 5
+activate_on_release 0
 end
 arch dirtfloor
 x 6
@@ -1215,9 +1215,9 @@ y 7
 end
 arch creator
 other_arch light4
-connected 5
 x 6
 y 7
+connected 5
 end
 arch woodfloor
 x 6
@@ -1309,10 +1309,10 @@ x 6
 y 18
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 18
+connected 5
+activate_on_release 0
 end
 arch dirtfloor
 x 6
@@ -1323,10 +1323,10 @@ x 6
 y 19
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 19
+connected 5
+activate_on_release 0
 end
 arch woodfloor
 x 6
@@ -1338,9 +1338,9 @@ y 20
 end
 arch creator
 other_arch light4
-connected 5
 x 6
 y 20
+connected 5
 end
 arch woodfloor
 x 6
@@ -1359,10 +1359,10 @@ x 6
 y 22
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 22
+connected 5
+activate_on_release 0
 end
 arch woodfloor
 x 6
@@ -1382,9 +1382,9 @@ y 24
 end
 arch creator
 other_arch light4
-connected 5
 x 6
 y 24
+connected 5
 end
 arch dirtfloor
 x 6
@@ -1395,10 +1395,10 @@ x 6
 y 25
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 25
+connected 5
+activate_on_release 0
 end
 arch dirtfloor
 x 6
@@ -1409,10 +1409,10 @@ x 6
 y 26
 end
 arch block_door_closed
-connected 5
-activate_on_release 0
 x 6
 y 26
+connected 5
+activate_on_release 0
 end
 arch woodfloor
 x 6
@@ -1529,11 +1529,11 @@ x 7
 y 21
 end
 arch pedestal
+x 7
+y 21
 invisible 1
 connected 5
 activate_on_release 0
-x 7
-y 21
 end
 arch woodfloor
 x 7
@@ -1618,10 +1618,10 @@ x 8
 y 10
 end
 arch giant_bat
-can_see_in_dark 1
-run_away 20
 x 8
 y 10
+run_away 20
+can_see_in_dark 1
 end
 arch woodfloor
 x 8
@@ -1640,10 +1640,10 @@ x 8
 y 14
 end
 arch giant_bat
-can_see_in_dark 1
-run_away 20
 x 8
 y 14
+run_away 20
+can_see_in_dark 1
 end
 arch woodfloor
 x 8
@@ -1670,11 +1670,11 @@ x 8
 y 20
 end
 arch pedestal
+x 8
+y 20
 invisible 1
 connected 5
 activate_on_release 0
-x 8
-y 20
 end
 arch woodfloor
 x 8
@@ -1799,11 +1799,11 @@ x 9
 y 19
 end
 arch pedestal
+x 9
+y 19
 invisible 1
 connected 5
 activate_on_release 0
-x 9
-y 19
 end
 arch woodfloor
 x 9
@@ -1881,9 +1881,9 @@ y 5
 end
 arch creator
 other_arch light4
-connected 5
 x 10
 y 5
+connected 5
 end
 arch dirtfloor
 x 10
@@ -1927,9 +1927,9 @@ y 15
 end
 arch creator
 other_arch light4
-connected 5
 x 10
 y 15
+connected 5
 end
 arch dirtfloor
 x 10
@@ -1944,11 +1944,11 @@ x 10
 y 18
 end
 arch pedestal
+x 10
+y 18
 invisible 1
 connected 5
 activate_on_release 0
-x 10
-y 18
 end
 arch woodfloor
 x 10
@@ -1968,9 +1968,9 @@ y 22
 end
 arch creator
 other_arch light4
-connected 5
 x 10
 y 22
+connected 5
 end
 arch woodfloor
 x 10
@@ -2091,11 +2091,11 @@ x 11
 y 19
 end
 arch pedestal
+x 11
+y 19
 invisible 1
 connected 5
 activate_on_release 0
-x 11
-y 19
 end
 arch woodfloor
 x 11
@@ -2114,10 +2114,10 @@ x 11
 y 23
 end
 arch giant_bat
-can_see_in_dark 1
-run_away 20
 x 11
 y 23
+run_away 20
+can_see_in_dark 1
 end
 arch woodfloor
 x 11
@@ -2238,11 +2238,11 @@ x 12
 y 20
 end
 arch pedestal
+x 12
+y 20
 invisible 1
 connected 5
 activate_on_release 0
-x 12
-y 20
 end
 arch dirtfloor
 x 12
@@ -2346,10 +2346,10 @@ x 13
 y 12
 end
 arch giant_bat
-can_see_in_dark 1
-run_away 20
 x 13
 y 12
+run_away 20
+can_see_in_dark 1
 end
 arch woodfloor
 x 13
@@ -2380,11 +2380,11 @@ x 13
 y 19
 end
 arch pedestal
+x 13
+y 19
 invisible 1
 connected 5
 activate_on_release 0
-x 13
-y 19
 end
 arch woodfloor
 x 13

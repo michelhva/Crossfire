@@ -1,16 +1,16 @@
 arch map
 name TheGreenWay
 region greenway
+darkness 1
+width 50
+height 50
+enter_x 23
+enter_y 26
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
-enter_x 23
-enter_y 26
-darkness 1
 tile_path_1 greenway1
 tile_path_2 greenway9
 tile_path_3 greenway5
@@ -297,9 +297,9 @@ x 1
 y 32
 end
 arch bird
-unaggressive 1
 x 1
 y 32
+unaggressive 1
 end
 arch brush
 x 1
@@ -1130,6 +1130,10 @@ x 5
 y 38
 end
 arch evergreens
+x 5
+y 39
+end
+arch dragon
 x 5
 y 39
 end
@@ -3140,22 +3144,22 @@ y 34
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 15
 y 34
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -3835,22 +3839,22 @@ y 2
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 19
 y 2
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4462,9 +4466,9 @@ x 22
 y 3
 end
 arch bird
-unaggressive 1
 x 22
 y 3
+unaggressive 1
 end
 arch woods_3
 x 22
@@ -5665,13 +5669,13 @@ x 28
 y 3
 end
 arch elf_man
-level 8
 hp 300
 maxhp 300
 sp 30
 maxsp 60
 x 28
 y 3
+level 8
 arch light_sword
 end
 arch spell_invisible
@@ -5838,15 +5842,15 @@ x 28
 y 42
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 300
 maxhp 300
 sp 60
 maxsp 60
+exp 90
+dam 9
 x 28
 y 42
+level 12
 arch spell_invisible
 end
 arch spell_summon_pet_monster
@@ -6818,6 +6822,10 @@ x 33
 y 33
 end
 arch woods_2
+x 33
+y 34
+end
+arch dragon
 x 33
 y 34
 end
@@ -8604,6 +8612,13 @@ arch woods_2
 x 42
 y 29
 end
+arch ent
+msg
+
+endmsg
+x 42
+y 29
+end
 arch woods_2
 x 42
 y 30
@@ -9243,14 +9258,14 @@ y 36
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 45
 y 36
+level 10
 end
 arch grass
 x 45
@@ -9258,14 +9273,14 @@ y 37
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 45
 y 37
+level 10
 end
 arch darkforest
 x 45
@@ -10114,18 +10129,4 @@ end
 arch darkforest
 x 49
 y 49
-end
-arch dragon
-x 5
-y 39
-end
-arch dragon
-x 33
-y 34
-end
-arch ent
-msg
-endmsg
-x 42
-y 29
 end

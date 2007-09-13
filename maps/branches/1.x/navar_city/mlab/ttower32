@@ -1,7 +1,8 @@
 arch map
-region navar
+name <unnamed>
 reset_timeout 7200
 difficulty 85
+region navar
 width 26
 height 26
 enter_x 1
@@ -2890,6 +2891,10 @@ arch flagstone
 x 11
 y 8
 end
+arch dungeon_magic
+x 11
+y 8
+end
 arch big_wiz
 name The Second Wizard
 name_pl Great Nameless Wizard of Yore
@@ -2900,7 +2905,6 @@ maxhp 30000
 sp 3000
 maxsp 3000
 exp 700000
-
 dam 37
 x 11
 y 8
@@ -2918,15 +2922,13 @@ resist_godpower 90
 resist_holyword 95
 resist_blind 100
 carrying 60500
-run_away 0
 reflect_spell 1
+run_away 0
 no_steal 1
 arch amulet
 name shining amulet of repulsion
 name_pl shining amulet of repulsion
 slaying tttower32amushn
-msg
-endmsg
 resist_acid 10
 material 256
 value 10000
@@ -2962,10 +2964,6 @@ arch giant_bat
 end
 arch giant_bat
 end
-end
-arch dungeon_magic
-x 11
-y 8
 end
 arch flagstone
 x 11

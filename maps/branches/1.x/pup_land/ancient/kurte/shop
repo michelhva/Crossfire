@@ -1,13 +1,14 @@
 arch map
-region ancientpupland
 name shop
+reset_timeout 1800
+region ancientpupland
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 21 22:41:27 1996
 endmsg
-x 25
-weight 1800
 end
 arch grass
 end
@@ -542,8 +543,8 @@ arch igate_closed_1
 x 6
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 6
@@ -658,8 +659,8 @@ arch igate_closed_1
 x 7
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 7
@@ -755,8 +756,8 @@ arch igate_closed_1
 x 8
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 8
@@ -859,8 +860,8 @@ end
 arch button_lever
 x 9
 y 13
-protected 1
 connected 1
+protected 1
 end
 arch grass
 x 9
@@ -932,8 +933,8 @@ end
 arch button_lever
 x 10
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch afloor_right
 x 10
@@ -1396,22 +1397,22 @@ arch button_small
 name 12 - special
 x 17
 y 1
-protected 12
 connected 12
+protected 12
 end
 arch button_small
 name 11
 x 17
 y 2
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11
 x 17
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 17
@@ -1421,22 +1422,22 @@ arch button_small
 name 21
 x 17
 y 5
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 21
 x 17
 y 6
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 21
 x 17
 y 7
-protected 21
 connected 21
+protected 21
 end
 arch blocked
 x 17
@@ -1457,8 +1458,8 @@ sp 5
 x 17
 y 11
 speed 0.000000
-protected 11
 connected 11
+protected 11
 end
 arch diamond_converter
 name 1 large nugget -> a food
@@ -1480,25 +1481,25 @@ arch button_small
 name 31 - put sign
 x 17
 y 14
-protected 31
 weight 20000
 connected 31
+protected 31
 end
 arch creator
 name 21
 other_arch small_shield
 x 17
 y 14
-protected 21
 connected 21
+protected 21
 end
 arch creator
 name 11
 other_arch small_shield
 x 17
 y 14
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 17
@@ -1511,22 +1512,22 @@ arch button_small
 name 11
 x 18
 y 1
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11
 x 18
 y 2
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11
 x 18
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 18
@@ -1536,22 +1537,22 @@ arch button_small
 name 21
 x 18
 y 5
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 21
 x 18
 y 6
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 22 - special
 x 18
 y 7
-protected 22
 connected 22
+protected 22
 end
 arch blocked
 x 18
@@ -1572,8 +1573,8 @@ sp 5
 x 18
 y 11
 speed 0.000000
-protected 12
 connected 12
+protected 12
 end
 arch diamond_converter
 name 1 large nugget -> a food
@@ -1606,22 +1607,22 @@ arch button_small
 name 11
 x 19
 y 1
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11
 x 19
 y 2
-protected 11
 connected 11
+protected 11
 end
 arch button_small
 name 11
 x 19
 y 3
-protected 11
 connected 11
+protected 11
 end
 arch blocked
 x 19
@@ -1631,22 +1632,22 @@ arch button_small
 name 21
 x 19
 y 5
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 21
 x 19
 y 6
-protected 21
 connected 21
+protected 21
 end
 arch button_small
 name 21
 x 19
 y 7
-protected 21
 connected 21
+protected 21
 end
 arch blocked
 x 19
@@ -1667,8 +1668,8 @@ sp 5
 x 19
 y 11
 speed 0.000000
-protected 21
 connected 21
+protected 21
 end
 arch diamond_converter
 name 100 large nuggets -> a potion
@@ -1690,25 +1691,25 @@ arch button_small
 name 32 - put altar
 x 19
 y 14
-protected 32
 weight 20000
 connected 32
+protected 32
 end
 arch creator
 name 22
 other_arch small_shield
 x 19
 y 14
-protected 22
 connected 22
+protected 22
 end
 arch creator
 name 12
 other_arch small_shield
 x 19
 y 14
-protected 12
 connected 12
+protected 12
 end
 arch blocked
 x 19
@@ -1764,8 +1765,8 @@ sp 5
 x 20
 y 11
 speed 0.000000
-protected 22
 connected 22
+protected 22
 end
 arch diamond_converter
 name 500 large nuggets -> a potion
@@ -1795,8 +1796,8 @@ arch pit_closed
 hp 7
 sp 8
 x 21
-protected 71
 connected 71
+protected 71
 end
 arch potionstr
 x 21
@@ -1811,8 +1812,8 @@ hp 7
 sp 8
 x 21
 y 2
-protected 72
 connected 72
+protected 72
 end
 arch rod_heavy
 hp 200
@@ -1881,8 +1882,8 @@ sp 8
 x 21
 y 13
 speed 0.000000
-protected 31
 connected 31
+protected 31
 end
 arch sign
 msg
@@ -1898,8 +1899,8 @@ sp 8
 x 21
 y 14
 speed 0.000000
-protected 32
 connected 32
+protected 32
 end
 arch altar
 name 10000 large nugget -> ???
@@ -1907,8 +1908,8 @@ slaying largenugget
 food 10000
 x 21
 y 14
-protected 100
 connected 100
+protected 100
 end
 arch blocked
 x 21
@@ -1932,20 +1933,20 @@ end
 arch button_small
 x 22
 y 4
-protected 71
 connected 71
+protected 71
 end
 arch button_small
 x 22
 y 5
-protected 72
 connected 72
+protected 72
 end
 arch button_small
 x 22
 y 6
-protected 73
 connected 73
+protected 73
 end
 arch blocked
 x 22
@@ -1995,8 +1996,8 @@ hp 7
 sp 8
 x 23
 y 2
-protected 73
 connected 73
+protected 73
 end
 arch random_artifact
 x 23
@@ -2009,20 +2010,20 @@ end
 arch button_small
 x 23
 y 4
-protected 71
 connected 71
+protected 71
 end
 arch button_small
 x 23
 y 5
-protected 72
 connected 72
+protected 72
 end
 arch button_small
 x 23
 y 6
-protected 73
 connected 73
+protected 73
 end
 arch blocked
 x 23
@@ -2065,8 +2066,8 @@ hp 23
 sp 5
 x 23
 y 14
-protected 100
 connected 100
+protected 100
 end
 arch scroll
 x 23
@@ -2094,20 +2095,20 @@ end
 arch button_small
 x 24
 y 4
-protected 71
 connected 71
+protected 71
 end
 arch button_small
 x 24
 y 5
-protected 72
 connected 72
+protected 72
 end
 arch button_small
 x 24
 y 6
-protected 73
 connected 73
+protected 73
 end
 arch blocked
 x 24

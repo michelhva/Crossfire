@@ -1,16 +1,17 @@
 arch map
-region pupland
 name cave_pass
+difficulty 10
+region pupland
+darkness 1
+width 16
+height 32
+enter_x 5
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 27 23:52:03 1996
 endmsg
-hp 5
-sp 1
-y 32
-level 10
-invisible 1
 end
 arch blocked
 end
@@ -1508,7 +1509,7 @@ y 9
 end
 arch magic_mouth
 msg
-guard room 
+guard room
 endmsg
 x 8
 y 10
@@ -1886,10 +1887,9 @@ can_use_weapon 0
 arch horned_helmet
 name orcish helmet
 ac 2
-armour 3
-protected 1024
 weight 8000
 magic 1
+armour 1024
 end
 end
 arch mine2

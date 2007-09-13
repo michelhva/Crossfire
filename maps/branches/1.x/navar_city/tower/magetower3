@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region navar
+width 41
+height 31
 msg
 Creator: 
 Email: 
 Date: Mon Nov  1 12:36:10 1993
 endmsg
-x 41
-y 31
 end
 arch cobblestones
 end
@@ -7162,6 +7163,10 @@ arch cobblestones
 x 35
 y 20
 end
+arch dragon
+x 35
+y 20
+end
 arch cobblestones
 x 35
 y 21
@@ -8072,13 +8077,4 @@ end
 arch bwall_2_2_4
 x 40
 y 30
-end
-arch dragon
-x 35
-y 20
-end
-More
-arch dragon_2
-x 36
-y 20
 end

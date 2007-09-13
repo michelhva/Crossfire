@@ -1,13 +1,13 @@
 arch map
-region pupland
 name n_gate
+region pupland
+width 7
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 21:00:27 1996
 endmsg
-x 7
-y 13
 end
 arch blocked
 end
@@ -364,8 +364,8 @@ msg
 endmsg
 x 3
 y 2
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 3
@@ -375,8 +375,8 @@ arch spikes_closed
 x 3
 y 2
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch magic_mouth
 msg

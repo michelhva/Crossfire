@@ -1,14 +1,14 @@
 arch map
-region greenway
 name TheGreenWay
+region greenway
+darkness 2
+width 50
+height 50
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/24/2004
 endmsg
-width 50
-height 50
-darkness 2
 tile_path_1 greenway5
 tile_path_2 greenway4
 tile_path_3 greenway6
@@ -1250,22 +1250,22 @@ y 19
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 6
 y 19
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -1560,14 +1560,14 @@ y 41
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 7
 y 41
+level 10
 end
 arch woods_2
 x 7
@@ -1770,14 +1770,14 @@ y 41
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 8
 y 41
+level 10
 end
 arch woods_2
 x 8
@@ -1785,14 +1785,14 @@ y 42
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 8
 y 42
+level 10
 end
 arch darkforest
 x 8
@@ -1999,14 +1999,14 @@ y 42
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 x 9
 y 42
+level 10
 end
 arch darkforest
 x 9
@@ -2052,9 +2052,9 @@ x 10
 y 3
 end
 arch beholder
-can_see_in_dark 1
 x 10
 y 3
+can_see_in_dark 1
 end
 arch woods_2
 x 10
@@ -2256,9 +2256,9 @@ x 11
 y 2
 end
 arch beholder
+x 11
+y 2
 can_see_in_dark 1
-x 11
-y 2
 end
 arch woods
 x 11
@@ -2905,6 +2905,11 @@ arch grass
 x 14
 y 13
 end
+arch unicorn
+x 14
+y 13
+sleep 0
+end
 arch brush
 x 14
 y 14
@@ -3201,6 +3206,10 @@ x 15
 y 36
 end
 arch woods_2
+x 15
+y 37
+end
+arch troll
 x 15
 y 37
 end
@@ -4057,22 +4066,22 @@ y 47
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 19
 y 47
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4095,22 +4104,22 @@ y 1
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 20
 y 1
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4321,22 +4330,22 @@ y 1
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 21
 y 1
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4348,22 +4357,22 @@ y 2
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 21
 y 2
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -4534,6 +4543,10 @@ x 21
 y 43
 end
 arch woods
+x 21
+y 44
+end
+arch troll
 x 21
 y 44
 end
@@ -4920,6 +4933,10 @@ x 23
 y 40
 end
 arch woods_2
+x 23
+y 41
+end
+arch troll
 x 23
 y 41
 end
@@ -5870,6 +5887,11 @@ arch grass
 x 28
 y 26
 end
+arch giant
+x 28
+y 26
+can_see_in_dark 1
+end
 arch grass
 x 28
 y 27
@@ -6428,6 +6450,10 @@ x 31
 y 15
 end
 arch tree
+x 31
+y 16
+end
+arch behemoth
 x 31
 y 16
 end
@@ -7149,9 +7175,9 @@ x 34
 y 45
 end
 arch dark_elf
-can_see_in_dark 1
 x 34
 y 45
+can_see_in_dark 1
 end
 arch woods_2
 x 34
@@ -7357,9 +7383,9 @@ x 35
 y 45
 end
 arch dark_elf
-can_see_in_dark 1
 x 35
 y 45
+can_see_in_dark 1
 end
 arch woods_2
 x 35
@@ -7660,16 +7686,16 @@ x 37
 y 20
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 300
 maxhp 300
 sp 60
 maxsp 60
-can_see_in_dark 1
+exp 90
+dam 9
 x 37
 y 20
+level 12
+can_see_in_dark 1
 arch spell_invisible
 end
 arch spell_summon_pet_monster
@@ -8153,22 +8179,22 @@ y 38
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 39
 y 38
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -9027,22 +9053,22 @@ y 1
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 44
 y 1
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -10258,30 +10284,4 @@ end
 arch woods
 x 49
 y 49
-end
-arch unicorn
-sleep 0
-x 14
-y 13
-end
-arch troll
-x 15
-y 37
-end
-arch troll
-x 21
-y 44
-end
-arch troll
-x 23
-y 41
-end
-arch giant
-can_see_in_dark 1
-x 28
-y 26
-end
-arch behemoth
-x 31
-y 16
 end

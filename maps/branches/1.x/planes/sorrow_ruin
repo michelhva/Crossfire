@@ -1,15 +1,15 @@
 arch map
-region greenway
 name Sorrow
+difficulty 15
+region greenway
+darkness 3
+width 20
+height 40
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/25/2004
 endmsg
-width 20
-height 40
-difficulty 15
-darkness 3
 end
 arch exit
 slaying harcanna_wood
@@ -115,8 +115,8 @@ arch pstone_2
 y 17
 end
 arch rubble
-blocksview 1
 y 17
+blocksview 1
 end
 arch exit
 slaying harcanna_wood
@@ -263,9 +263,9 @@ x 1
 y 12
 end
 arch rubble
-blocksview 1
 x 1
 y 12
+blocksview 1
 end
 arch cobblestones2
 x 1
@@ -280,13 +280,13 @@ x 1
 y 14
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 1
+y 14
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 1
-y 14
 end
 arch cobblestones2
 x 1
@@ -471,13 +471,13 @@ x 2
 y 1
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 2
+y 1
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 2
-y 1
 end
 arch pstone_2
 x 2
@@ -686,9 +686,9 @@ x 3
 y 2
 end
 arch rubble
-blocksview 1
 x 3
 y 2
+blocksview 1
 end
 arch pstone_2
 x 3
@@ -1258,13 +1258,13 @@ x 5
 y 15
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 5
+y 15
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 5
-y 15
 end
 arch cobblestones2
 x 5
@@ -1599,13 +1599,13 @@ x 6
 y 30
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 6
+y 30
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 6
-y 30
 end
 arch cobblestones2
 x 6
@@ -2842,13 +2842,13 @@ x 11
 y 27
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 11
+y 27
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 11
-y 27
 end
 arch cobblestones2
 x 11
@@ -2917,8 +2917,8 @@ y 35
 arch quarterstaff
 name Staff of Bezmodin
 name_pl Staves of Bezmodin
-value 200
 material 256
+value 200
 magic 2
 end
 end
@@ -3249,22 +3249,22 @@ x 13
 y 9
 end
 arch grate_closed_2
+x 13
+y 9
 connected 1
 no_magic 1
 damned 1
-x 13
-y 9
 end
 arch cobblestones2
 x 13
 y 10
 end
 arch grate_closed_2
+x 13
+y 10
 connected 1
 no_magic 1
 damned 1
-x 13
-y 10
 end
 arch cobblestones2
 x 13
@@ -3504,15 +3504,15 @@ y 11
 end
 arch altar_trigger
 name Place the Staff here to open the way
+slaying Staff of Bezmodin
 msg
 The ancient gates slowly creak open.
 endmsg
-slaying Staff of Bezmodin
 food 1
-connected 1
-last_sp 1
 x 14
 y 11
+last_sp 1
+connected 1
 end
 arch cobblestones2
 x 14
@@ -3645,13 +3645,13 @@ x 14
 y 36
 end
 arch generate_ghost
-face bones5.111
 other_arch ghast
+face bones5.111
+x 14
+y 36
 resist_physical 90
 resist_fire 50
 resist_electricity 50
-x 14
-y 36
 end
 arch cobblestones2
 x 14

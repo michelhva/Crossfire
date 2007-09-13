@@ -1,12 +1,14 @@
 arch map
-region ancientpupland
 name siegfried
+difficulty 5
+region ancientpupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun  3 22:21:44 1996
 endmsg
-level 5
 end
 arch blocked
 end

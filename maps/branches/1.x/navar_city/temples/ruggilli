@@ -1,15 +1,15 @@
 arch map
 name ruggilli1
+reset_timeout 3000
 region navar
-msg
-Creator: Avion
-Date: Nov 2003
-endmsg
 width 16
 height 16
 enter_x 4
 enter_y 13
-reset_timeout 3000
+msg
+Creator: Avion
+Date: Nov 2003
+endmsg
 end
 arch flagstone
 end
@@ -158,10 +158,10 @@ msg
 ....We...are...Watchhhing...You...
 endmsg
 hp 4000
-unaggressive 1
-sleep 1
 x 1
 y 11
+unaggressive 1
+sleep 1
 end
 arch flagstone
 x 1
@@ -244,10 +244,10 @@ The eternal flame of Ruggilli will
 prevail
 endmsg
 hp 80
-unaggressive 0
-friendly 1
 x 2
 y 7
+friendly 1
+unaggressive 0
 end
 arch flagstone
 x 2
@@ -467,10 +467,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-unaggressive 1
-sleep 1
 x 5
 y 2
+unaggressive 1
+sleep 1
 end
 arch flagstone
 x 5
@@ -650,9 +650,9 @@ y 4
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 7
 y 5
+connected 10
 end
 arch flagstone
 x 7
@@ -668,9 +668,9 @@ y 6
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 7
 y 7
+connected 10
 end
 arch flagstone
 x 7
@@ -743,15 +743,15 @@ x 8
 y 4
 end
 arch altar_ruggilli
-level 120
 x 8
 y 4
+level 120
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 8
 y 5
+connected 10
 end
 arch flagstone
 x 8
@@ -759,18 +759,18 @@ y 5
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 8
 y 6
+connected 10
 end
 arch flagstone
 x 8
 y 6
 end
 arch gate_closed_1
-connected 10
 x 8
 y 6
+connected 10
 end
 arch magic_mouth
 msg
@@ -778,10 +778,10 @@ Proceed down those stairs and defeat
 The Servant. Ruggilli will then permit
 entrance
 endmsg
-connected 33
-move_on 0
 x 8
 y 7
+connected 33
+move_on 0
 end
 arch flagstone
 x 8
@@ -789,16 +789,16 @@ y 7
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 8
 y 7
+connected 10
 end
 arch check_floor
 slaying rug_pass
-last_sp 0
-connected 33
 x 8
 y 7
+last_sp 0
+connected 33
 end
 arch flagstone
 x 8
@@ -872,9 +872,9 @@ y 4
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 9
 y 5
+connected 10
 end
 arch flagstone
 x 9
@@ -890,9 +890,9 @@ y 6
 end
 arch check_inv
 slaying rug_pass
-connected 10
 x 9
 y 7
+connected 10
 end
 arch flagstone
 x 9
@@ -1049,10 +1049,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-unaggressive 1
-sleep 1
 x 11
 y 2
+unaggressive 1
+sleep 1
 end
 arch flagstone
 x 11
@@ -1145,10 +1145,10 @@ msg
 ....We...are...Watchhhing...You...
 endmsg
 hp 4000
-unaggressive 1
-sleep 1
 x 12
 y 5
+unaggressive 1
+sleep 1
 end
 arch flagstone
 x 12
@@ -1181,10 +1181,10 @@ rath....
 .This...Place...
 endmsg
 hp 4000
-unaggressive 1
-sleep 1
 x 12
 y 10
+unaggressive 1
+sleep 1
 end
 arch flagstone
 x 12

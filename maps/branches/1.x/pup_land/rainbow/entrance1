@@ -1,12 +1,13 @@
 arch map
-region pupland
 name entrance1
+region pupland
+width 16
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jun  8 06:15:42 1996
 endmsg
-y 20
 end
 arch dungeon_floor
 end
@@ -1175,8 +1176,8 @@ arch spikes_closed
 x 10
 y 3
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch magic_ear
 msg
@@ -1185,8 +1186,8 @@ Click.
 endmsg
 x 10
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch magic_mouth
 msg

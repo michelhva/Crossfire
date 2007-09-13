@@ -1,12 +1,12 @@
 arch map
-region pupland
 name pplant_ud3
+region pupland
+width 11
+height 15
 msg
 Creator: CF Java Map Editor
 Date:    2/5/2002
 endmsg
-width 11
-height 15
 end
 arch blocked
 end
@@ -113,10 +113,10 @@ x 1
 y 5
 end
 arch lightningwall
-level 10
-speed -1.0000
 x 1
 y 5
+speed -1.0000
+level 10
 end
 arch dungeon_floor
 x 1
@@ -159,10 +159,10 @@ x 1
 y 13
 end
 arch lightningwall
-level 10
-speed -1.0000
 x 1
 y 13
+speed -1.0000
+level 10
 end
 arch dungeon_floor
 x 1
@@ -310,22 +310,18 @@ x 3
 y 7
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 3
 y 8
+connected 1
 end
 arch dungeon_floor
 x 3
 y 8
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 3
 y 9
+connected 1
 end
 arch dungeon_floor
 x 3
@@ -410,11 +406,9 @@ x 4
 y 8
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 4
 y 9
+connected 1
 end
 arch dungeon_floor
 x 4
@@ -433,11 +427,9 @@ x 4
 y 12
 end
 arch pedestal
-msg
-endmsg
-connected 2
 x 4
 y 13
+connected 2
 end
 arch dungeon_floor
 x 4
@@ -445,9 +437,9 @@ y 13
 end
 arch skull_tooth
 name skull's tooth
-no_pick 1
 x 4
 y 13
+no_pick 1
 end
 arch dungeon_floor
 x 4
@@ -492,9 +484,9 @@ x 5
 y 4
 end
 arch mover_5
-attacktype 1
 x 5
 y 4
+attacktype 1
 end
 arch dungeon_floor
 x 5
@@ -521,18 +513,16 @@ msg
 You feel watched by a
 pair of burning eyes.
 endmsg
-connected 1
-move_on 0
 food 1
 x 5
 y 9
+connected 1
+move_on 0
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 5
 y 9
+connected 1
 end
 arch dungeon_floor
 x 5
@@ -605,11 +595,9 @@ x 6
 y 8
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 9
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -702,22 +690,18 @@ x 7
 y 7
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 7
 y 8
+connected 1
 end
 arch dungeon_floor
 x 7
 y 8
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 7
 y 9
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -837,21 +821,21 @@ end
 arch teleporter
 hp 5
 sp 2
-connected 2
-speed 0
 x 9
+speed 0
+connected 2
 end
 arch generate_bat
 name dark tree
 hp 300
 maxhp 300
-reflect_missile 1
-reflect_spell 1
+x 9
+speed 0.05
 resist_physical 50
 resist_fire 50
 resist_electricity 50
-speed 0.05
-x 9
+reflect_missile 1
+reflect_spell 1
 end
 arch blocked
 x 9
@@ -862,37 +846,35 @@ msg
 You here a noise behind you.
 There - You've been trapped!
 endmsg
-connected 2
-move_on 0
 food 1
 x 9
 y 2
+connected 2
+move_on 0
 end
 arch teleporter
-msg
-endmsg
 hp 5
 sp 6
-connected 2
-speed 0
 x 9
 y 2
+speed 0
+connected 2
 end
 arch skull
-move_type walk
 hp 400
 maxhp 400
-run_away 1
 x 9
 y 2
+move_type walk
+run_away 1
 arch spiked_shield
 name bonespike shield
+dam 5
+resist_physical 5
 resist_drain 100
 resist_ghosthit 30
-resist_physical 5
 value 1000
 magic 1
-dam 5
 end
 end
 arch blocked
@@ -912,10 +894,10 @@ x 9
 y 5
 end
 arch lightningwall
-level 10
-speed -1.0000
 x 9
 y 5
+speed -1.0000
+level 10
 end
 arch dungeon_floor
 x 9
@@ -958,10 +940,10 @@ x 9
 y 13
 end
 arch lightningwall
-level 10
-speed -1.0000
 x 9
 y 13
+speed -1.0000
+level 10
 end
 arch dungeon_floor
 x 9
