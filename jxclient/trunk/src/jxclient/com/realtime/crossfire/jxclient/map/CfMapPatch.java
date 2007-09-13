@@ -29,9 +29,14 @@ import com.realtime.crossfire.jxclient.faces.Face;
 public class CfMapPatch
 {
     /**
-     * Size of patchs in x- and y-direction.
+     * Log2 of {@link #SIZE}.
      */
-    public static int SIZE = 25;
+    public static final int SIZE_LOG = 5;
+
+    /**
+     * Size of patches in x- and y-direction.
+     */
+    public static final int SIZE = 1<<SIZE_LOG;
 
     /**
      * The array of {@link CfMapSquare}s. Elements are never <code>null</code>.
