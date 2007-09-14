@@ -1,15 +1,15 @@
 arch map
-region scorn
 name garden
+region scorn
+width 61
+height 59
+enter_x 31
+enter_y 29
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 00:13:15 1994
 endmsg
-width 61
-height 59
-enter_x 31
-enter_y 29
 end
 arch grass
 end
@@ -1017,9 +1017,9 @@ x 2
 y 56
 end
 arch button_handle
-connected 3
 x 2
 y 56
+connected 3
 end
 arch earthwall
 x 2
@@ -1289,9 +1289,9 @@ x 3
 y 35
 end
 arch button_handle
-connected 96
 x 3
 y 35
+connected 96
 end
 arch generate_skeleton
 x 3
@@ -2177,45 +2177,45 @@ x 5
 y 37
 end
 arch grate_closed_2
-connected 1
 x 5
 y 37
+connected 1
 end
 arch small_stones
 x 5
 y 38
 end
 arch grate_closed_2
-connected 1
 x 5
 y 38
+connected 1
 end
 arch small_stones
 x 5
 y 39
 end
 arch grate_closed_2
-connected 1
 x 5
 y 39
+connected 1
 end
 arch small_stones
 x 5
 y 40
 end
 arch grate_closed_2
-connected 1
 x 5
 y 40
+connected 1
 end
 arch small_stones
 x 5
 y 41
 end
 arch grate_closed_2
-connected 1
 x 5
 y 41
+connected 1
 end
 arch small_stones
 x 5
@@ -2521,9 +2521,9 @@ x 6
 y 36
 end
 arch grate_closed_1
-connected 96
 x 6
 y 36
+connected 96
 end
 arch small_stones
 x 6
@@ -2563,9 +2563,9 @@ x 6
 y 42
 end
 arch grate_closed_1
-connected 1
 x 6
 y 42
+connected 1
 end
 arch small_stones
 x 6
@@ -2988,9 +2988,9 @@ x 7
 y 36
 end
 arch grate_closed_1
-connected 96
 x 7
 y 36
+connected 96
 end
 arch small_stones
 x 7
@@ -3031,9 +3031,9 @@ x 7
 y 42
 end
 arch grate_closed_1
-connected 1
 x 7
 y 42
+connected 1
 end
 arch small_stones
 x 7
@@ -3347,9 +3347,9 @@ x 8
 y 36
 end
 arch grate_closed_1
-connected 96
 x 8
 y 36
+connected 96
 end
 arch small_stones
 x 8
@@ -3365,9 +3365,9 @@ y 39
 end
 arch button_handle
 name Careful...
-connected 4
 x 8
 y 39
+connected 4
 end
 arch guard
 name Syvsovern
@@ -3387,9 +3387,9 @@ x 8
 y 42
 end
 arch grate_closed_1
-connected 1
 x 8
 y 42
+connected 1
 end
 arch small_stones
 x 8
@@ -3685,9 +3685,9 @@ x 9
 y 36
 end
 arch grate_closed_1
-connected 96
 x 9
 y 36
+connected 96
 end
 arch small_stones
 x 9
@@ -3735,9 +3735,9 @@ x 9
 y 42
 end
 arch grate_closed_1
-connected 1
 x 9
 y 42
+connected 1
 end
 arch small_stones
 x 9
@@ -3816,24 +3816,24 @@ x 9
 y 54
 end
 arch block_door_closed
-connected 3
 x 9
 y 55
+connected 3
 end
 arch block_door_closed
-connected 3
 x 9
 y 56
+connected 3
 end
 arch block_door_closed
-connected 3
 x 9
 y 57
+connected 3
 end
 arch block_door_closed
-connected 3
 x 9
 y 58
+connected 3
 end
 arch grass
 x 10
@@ -4048,8 +4048,6 @@ name Skallebank
 x 10
 y 32
 arch balm_generic
-msg
-endmsg
 title of traveling
 sp 25
 end
@@ -4079,9 +4077,9 @@ x 10
 y 36
 end
 arch grate_closed_1
-connected 96
 x 10
 y 36
+connected 96
 end
 arch small_stones
 x 10
@@ -4125,9 +4123,9 @@ x 10
 y 42
 end
 arch grate_closed_1
-connected 1
 x 10
 y 42
+connected 1
 end
 arch small_stones
 x 10
@@ -4210,9 +4208,9 @@ x 10
 y 54
 end
 arch block_door_closed
-connected 3
 x 10
 y 55
+connected 3
 end
 arch small_stones
 x 10
@@ -4228,9 +4226,9 @@ x 10
 y 57
 end
 arch block_door_closed
-connected 3
 x 10
 y 58
+connected 3
 end
 arch grass
 x 11
@@ -4449,9 +4447,9 @@ x 11
 y 36
 end
 arch grate_closed_1
-connected 96
 x 11
 y 36
+connected 96
 end
 arch small_stones
 x 11
@@ -4488,9 +4486,9 @@ x 11
 y 42
 end
 arch grate_closed_1
-connected 1
 x 11
 y 42
+connected 1
 end
 arch small_stones
 x 11
@@ -4581,9 +4579,9 @@ x 11
 y 54
 end
 arch block_door_closed
-connected 3
 x 11
 y 55
+connected 3
 end
 arch small_stones
 x 11
@@ -4594,9 +4592,9 @@ x 11
 y 57
 end
 arch block_door_closed
-connected 3
 x 11
 y 58
+connected 3
 end
 arch grass
 x 12
@@ -4704,9 +4702,9 @@ y 19
 end
 arch wraith
 name Waiter
-speed_left -1.060000
 x 12
 y 19
+speed_left -1.060000
 end
 arch grass
 x 12
@@ -4801,9 +4799,9 @@ x 12
 y 36
 end
 arch grate_closed_1
-connected 96
 x 12
 y 36
+connected 96
 end
 arch small_stones
 x 12
@@ -4839,9 +4837,9 @@ x 12
 y 42
 end
 arch grate_closed_1
-connected 1
 x 12
 y 42
+connected 1
 end
 arch small_stones
 x 12
@@ -4924,9 +4922,9 @@ x 12
 y 54
 end
 arch block_door_closed
-connected 3
 x 12
 y 55
+connected 3
 end
 arch small_stones
 x 12
@@ -4942,9 +4940,9 @@ x 12
 y 57
 end
 arch block_door_closed
-connected 3
 x 12
 y 58
+connected 3
 end
 arch grass
 x 13
@@ -5127,9 +5125,9 @@ x 13
 y 33
 end
 arch teleporter
-speed_left -0.700000
 x 13
 y 33
+speed_left -0.700000
 end
 arch small_stones
 x 13
@@ -5156,45 +5154,45 @@ x 13
 y 37
 end
 arch grate_closed_2
-connected 96
 x 13
 y 37
+connected 96
 end
 arch small_stones
 x 13
 y 38
 end
 arch grate_closed_2
-connected 96
 x 13
 y 38
+connected 96
 end
 arch small_stones
 x 13
 y 39
 end
 arch grate_closed_2
-connected 96
 x 13
 y 39
+connected 96
 end
 arch small_stones
 x 13
 y 40
 end
 arch grate_closed_2
-connected 96
 x 13
 y 40
+connected 96
 end
 arch small_stones
 x 13
 y 41
 end
 arch grate_closed_2
-connected 96
 x 13
 y 41
+connected 96
 end
 arch small_stones
 x 13
@@ -5293,9 +5291,9 @@ x 13
 y 54
 end
 arch block_door_closed
-connected 3
 x 13
 y 55
+connected 3
 end
 arch small_stones
 x 13
@@ -5306,9 +5304,9 @@ x 13
 y 57
 end
 arch block_door_closed
-connected 3
 x 13
 y 58
+connected 3
 end
 arch grass
 x 14
@@ -5699,9 +5697,9 @@ x 14
 y 54
 end
 arch block_door_closed
-connected 3
 x 14
 y 55
+connected 3
 end
 arch small_stones
 x 14
@@ -5717,9 +5715,9 @@ x 14
 y 57
 end
 arch block_door_closed
-connected 3
 x 14
 y 58
+connected 3
 end
 arch grass
 x 15
@@ -5921,9 +5919,9 @@ x 15
 y 43
 end
 arch button_handle
-connected 1
 x 15
 y 43
+connected 1
 end
 arch devil
 name Grimmy
@@ -6011,9 +6009,9 @@ x 15
 y 54
 end
 arch block_door_closed
-connected 3
 x 15
 y 55
+connected 3
 end
 arch small_stones
 x 15
@@ -6024,9 +6022,9 @@ x 15
 y 57
 end
 arch block_door_closed
-connected 3
 x 15
 y 58
+connected 3
 end
 arch grass
 x 16
@@ -6396,9 +6394,9 @@ x 16
 y 54
 end
 arch block_door_closed
-connected 3
 x 16
 y 55
+connected 3
 end
 arch small_stones
 x 16
@@ -6414,9 +6412,9 @@ x 16
 y 57
 end
 arch block_door_closed
-connected 3
 x 16
 y 58
+connected 3
 end
 arch grass
 x 17
@@ -6646,9 +6644,9 @@ x 17
 y 33
 end
 arch teleporter
-speed_left -0.700000
 x 17
 y 33
+speed_left -0.700000
 end
 arch grass
 x 17
@@ -6695,9 +6693,9 @@ x 17
 y 44
 end
 arch generate_devil
-speed_left -0.101800
 x 17
 y 44
+speed_left -0.101800
 end
 arch grass
 x 17
@@ -6768,9 +6766,9 @@ x 17
 y 54
 end
 arch block_door_closed
-connected 3
 x 17
 y 55
+connected 3
 end
 arch small_stones
 x 17
@@ -6781,9 +6779,9 @@ x 17
 y 57
 end
 arch block_door_closed
-connected 3
 x 17
 y 58
+connected 3
 end
 arch grass
 x 18
@@ -7118,24 +7116,24 @@ x 18
 y 54
 end
 arch block_door_closed
-connected 3
 x 18
 y 55
+connected 3
 end
 arch block_door_closed
-connected 3
 x 18
 y 56
+connected 3
 end
 arch block_door_closed
-connected 3
 x 18
 y 57
+connected 3
 end
 arch block_door_closed
-connected 3
 x 18
 y 58
+connected 3
 end
 arch grass
 x 19
@@ -8772,9 +8770,9 @@ y 21
 end
 arch man
 name Nissen
-speed_left -1.000000
 x 23
 y 21
+speed_left -1.000000
 end
 arch small_stones
 x 23
@@ -10736,9 +10734,9 @@ x 28
 y 44
 end
 arch block_door_closed
-connected 86
 x 28
 y 45
+connected 86
 end
 arch grass
 x 28
@@ -11068,9 +11066,9 @@ x 29
 y 44
 end
 arch block_door_closed
-connected 86
 x 29
 y 45
+connected 86
 end
 arch grass
 x 29
@@ -11290,9 +11288,9 @@ y 20
 end
 arch wraith
 name Jiff
-speed_left -1.060000
 x 30
 y 20
+speed_left -1.060000
 end
 arch grass
 x 30
@@ -11428,9 +11426,9 @@ x 30
 y 44
 end
 arch block_door_closed
-connected 86
 x 30
 y 45
+connected 86
 end
 arch grass
 x 30
@@ -11749,9 +11747,9 @@ x 31
 y 44
 end
 arch block_door_closed
-connected 86
 x 31
 y 45
+connected 86
 end
 arch grass
 x 31
@@ -12419,15 +12417,15 @@ y 44
 end
 arch button_handle
 name Garden Access
-connected 86
 x 33
 y 44
+connected 86
 end
 arch guard
 name Syvsovern
-speed_left -0.280000
 x 33
 y 44
+speed_left -0.280000
 end
 arch small_stones
 x 33
@@ -14198,9 +14196,9 @@ y 27
 end
 arch button_handle
 name Gate opner
-connected 42
 x 38
 y 27
+connected 42
 end
 arch small_stones
 x 38
@@ -15337,9 +15335,9 @@ y 28
 end
 arch block_door_closed
 name Gate
-connected 42
 x 41
 y 28
+connected 42
 end
 arch small_stones
 x 41
@@ -15347,9 +15345,9 @@ y 29
 end
 arch block_door_closed
 name Gate
-connected 42
 x 41
 y 29
+connected 42
 end
 arch small_stones
 x 41
@@ -15357,9 +15355,9 @@ y 30
 end
 arch block_door_closed
 name Gate
-connected 42
 x 41
 y 30
+connected 42
 end
 arch small_stones
 x 41
@@ -15731,9 +15729,9 @@ y 28
 end
 arch button_handle
 name Gate opner
-connected 42
 x 42
 y 28
+connected 42
 end
 arch small_stones
 x 42
@@ -15779,9 +15777,9 @@ y 34
 end
 arch kobold
 name ta
-speed_left -1.700000
 x 42
 y 34
+speed_left -1.700000
 end
 arch small_stones
 x 42
@@ -16118,9 +16116,9 @@ y 32
 end
 arch kobold
 name er
-speed_left -1.700000
 x 43
 y 32
+speed_left -1.700000
 end
 arch medium_stones
 x 43
@@ -16132,9 +16130,9 @@ y 33
 end
 arch kobold
 name moerkredde
-speed_left -1.700000
 x 43
 y 33
+speed_left -1.700000
 end
 arch medium_stones
 x 43
@@ -16146,9 +16144,9 @@ y 34
 end
 arch kobold
 name livet
-speed_left -1.700000
 x 43
 y 34
+speed_left -1.700000
 end
 arch small_stones
 x 43
@@ -16514,9 +16512,9 @@ y 32
 end
 arch kobold
 name en
-speed_left -1.700000
 x 44
 y 32
+speed_left -1.700000
 end
 arch medium_stones
 x 44
@@ -16528,9 +16526,9 @@ y 33
 end
 arch kobold
 name kobolder
-speed_left -1.700000
 x 44
 y 33
+speed_left -1.700000
 end
 arch medium_stones
 x 44
@@ -16542,9 +16540,9 @@ y 34
 end
 arch kobold
 name av
-speed_left -1.700000
 x 44
 y 34
+speed_left -1.700000
 end
 arch small_stones
 x 44
@@ -18000,6 +17998,11 @@ arch random_treasure
 x 48
 y 19
 end
+arch giant
+name Knerten
+x 48
+y 19
+end
 arch grass
 x 48
 y 20
@@ -18357,6 +18360,11 @@ arch random_wealth
 x 49
 y 17
 end
+arch troll
+name Lillebror
+x 49
+y 17
+end
 arch grass
 x 49
 y 18
@@ -18595,9 +18603,9 @@ x 49
 y 53
 end
 arch teleporter
-speed_left -0.700000
 x 49
 y 53
+speed_left -0.700000
 end
 arch grass
 x 49
@@ -19120,9 +19128,9 @@ y 19
 end
 arch wraith
 name Barrow wright
-speed_left -1.060000
 x 51
 y 19
+speed_left -1.060000
 end
 arch grass
 x 51
@@ -20097,9 +20105,9 @@ x 54
 y 17
 end
 arch teleporter
-speed_left -0.700000
 x 54
 y 17
+speed_left -0.700000
 end
 arch grass
 x 54
@@ -20307,9 +20315,9 @@ x 54
 y 51
 end
 arch teleporter
-speed_left -0.700000
 x 54
 y 51
+speed_left -0.700000
 end
 arch small_stones
 x 54
@@ -20650,6 +20658,11 @@ x 55
 y 49
 end
 arch random_treasure
+x 55
+y 49
+end
+arch behemoth
+name Nurket
 x 55
 y 49
 end
@@ -21373,9 +21386,9 @@ end
 arch grimreaper
 name Grimmy
 maxhp 0
-level 5
 x 57
 y 40
+level 5
 end
 arch grass
 x 57
@@ -21927,9 +21940,9 @@ x 59
 y 14
 end
 arch teleporter
-speed_left -0.800000
 x 59
 y 14
+speed_left -0.800000
 end
 arch dungeon_magic
 x 59
@@ -22465,19 +22478,4 @@ end
 arch grass
 x 60
 y 58
-end
-arch giant
-name Knerten
-x 48
-y 19
-end
-arch troll
-name Lillebror
-x 49
-y 17
-end
-arch behemoth
-name Nurket
-x 55
-y 49
 end

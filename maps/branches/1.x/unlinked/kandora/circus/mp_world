@@ -1,14 +1,14 @@
 arch map
 name c
+width 40
+height 40
+enter_x 39
+enter_y 39
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Mon Jan 18 07:57:11 1999
 endmsg
-hp 39
-sp 39
-x 40
-y 40
 end
 arch desert
 end
@@ -708,8 +708,8 @@ msg
 @match arrest
 Stop this silliness
 @match *
-okay, okay.  Let's break it up.  You! 
-You're under arrest. 
+okay, okay.  Let's break it up.  You!
+You're under arrest.
 endmsg
 hp 280
 x 3
@@ -1956,7 +1956,7 @@ matrix?
 @match *
 Answer me these questions three, ere
 the other side ye see. What is your
-name? 
+name?
 endmsg
 hp 400
 x 9
@@ -4584,7 +4584,7 @@ end
 arch crone
 msg
 @match shrubbery
-Guards!  Help!  I'm being accosted! 
+Guards!  Help!  I'm being accosted!
 Oh how times have turned dark that a
 king would rob a poor beggar woman
 @match *
@@ -4810,7 +4810,7 @@ arch grass
 x 23
 y 35
 end
-arch farmland 
+arch farmland
 x 23
 y 35
 end
@@ -5202,6 +5202,12 @@ arch grassmedium
 x 25
 y 22
 end
+arch cathedral
+name A house of God
+slaying mp_church
+x 25
+y 22
+end
 arch grassmedium
 x 25
 y 23
@@ -5259,7 +5265,7 @@ arch grass
 x 25
 y 31
 end
-arch farmland 
+arch farmland
 x 25
 y 31
 end
@@ -5267,7 +5273,7 @@ arch grass
 x 25
 y 32
 end
-arch farmland 
+arch farmland
 x 25
 y 32
 end
@@ -5509,7 +5515,7 @@ arch grass
 x 26
 y 31
 end
-arch farmland 
+arch farmland
 x 26
 y 31
 end
@@ -5771,7 +5777,7 @@ arch grass
 x 27
 y 35
 end
-arch farmland 
+arch farmland
 x 27
 y 35
 end
@@ -7977,6 +7983,12 @@ arch grass
 x 37
 y 7
 end
+arch store_general
+name pet shop
+slaying petshop
+x 37
+y 7
+end
 arch grass
 x 37
 y 8
@@ -8566,16 +8578,4 @@ hp 13
 sp 1
 x 39
 y 39
-end
-arch cathedral
-name A house of God
-slaying mp_church
-x 25
-y 22
-end
-arch store_general
-name pet shop
-slaying petshop
-x 37
-y 7
 end

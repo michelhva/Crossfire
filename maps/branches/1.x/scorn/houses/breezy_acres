@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Breezy Acres
+difficulty 2
+region scorn
+width 25
+height 25
+enter_x 11
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 25
-height 25
-enter_x 11
-enter_y 1
-difficulty 2
 outdoor 1
 end
 arch grass
@@ -209,13 +209,13 @@ x 1
 y 3
 end
 arch firewall_3
-invisible 1
 dam 0
-level 3
-connected 10
-speed 0.0
 x 1
 y 3
+speed 0.0
+level 3
+invisible 1
+connected 10
 arch spell_poison_cloud
 level 5
 end
@@ -454,9 +454,9 @@ x 2
 y 6
 end
 arch fireplace
-glow_radius 1
 x 2
 y 6
+glow_radius 1
 end
 arch woodfloor
 x 2
@@ -480,6 +480,7 @@ y 9
 end
 arch book_clasp
 name White's Study
+title of ancient cult religions
 msg
 Read now of the superstitious animal cults
 which were commonly worshiped before
@@ -493,7 +494,6 @@ worship of these creatures.
 Nations now mostly fallen and forgotten.
 - B.Z.White
 endmsg
-title of ancient cult religions
 x 2
 y 9
 end
@@ -647,9 +647,9 @@ y 9
 end
 arch creator
 other_arch dog
-connected 11
 x 3
 y 9
+connected 11
 end
 arch woodfloor
 x 3
@@ -941,19 +941,19 @@ x 5
 y 5
 end
 arch door_2
+x 5
+y 5
 randomitems none
-x 5
-y 5
 end
 arch grate_open_1
+x 5
+y 5
 connected 10
-x 5
-y 5
 end
 arch grate_open_1
-connected 11
 x 5
 y 5
+connected 11
 end
 arch woodfloor
 x 5
@@ -965,11 +965,11 @@ WARNING!
 Intruder!
 Intruder!
 endmsg
-level 5
 dam 0
-connected 11
 x 5
 y 6
+level 5
+connected 11
 end
 arch woodfloor
 x 5
@@ -1219,9 +1219,9 @@ She's a loony,
 we don't have a
 basement.
 endmsg
-randomitems jail
 x 6
 y 20
+randomitems jail
 end
 arch woodfloor
 x 6
@@ -1270,17 +1270,17 @@ x 7
 y 2
 end
 arch chest
-type 122
 x 7
 y 2
+type 122
 arch claypipe
 name Mr. White's pipe
+slaying white_pipe
 msg
 A truly superior pipe.
 endmsg
 type 21
 value 150
-slaying white_pipe
 end
 arch lantern2_unlit
 end
@@ -1294,10 +1294,10 @@ Intruder!
 Breep!
 endmsg
 dam 0
-connected 10
-level 4
 x 7
 y 2
+level 4
+connected 10
 end
 arch woodfloor
 x 7
@@ -1333,9 +1333,9 @@ y 9
 end
 arch creator
 other_arch dog
-connected 10
 x 7
 y 9
+connected 10
 end
 arch woodfloor
 x 7
@@ -1693,11 +1693,11 @@ x 9
 y 8
 end
 arch locked_door2
-face ldoor_white2.111
+slaying BZA_whitedoor
 msg
 This home is protected by an InfernalSecure home security system.
 endmsg
-slaying BZA_whitedoor
+face ldoor_white2.111
 x 9
 y 8
 end
@@ -2835,10 +2835,10 @@ x 16
 y 21
 end
 arch rune_create_bomb
-level 2
 dam 50
 x 16
 y 21
+level 2
 end
 arch woodfloor
 x 16

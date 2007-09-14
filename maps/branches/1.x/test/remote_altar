@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 8
+height 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed May 24 14:19:49 2000
 endmsg
-x 8
-y 8
 end
 arch boulder
 x 4
@@ -46,12 +47,12 @@ connected 1
 end
 arch altar
 slaying boulder
+msg
+The boulder disappears in a puff of smoke!
+endmsg
 sp 102
 food 1
 x 7
 y 3
 level 1
-msg
-The boulder disappears in a puff of smoke!
-endmsg
 end

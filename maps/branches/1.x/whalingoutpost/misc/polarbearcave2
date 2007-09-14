@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 width 64
@@ -13,38 +14,26 @@ endmsg
 outdoor 1
 end
 arch blocked
-msg
-endmsg
 x 9
 y 39
 end
 arch blocked
-msg
-endmsg
 x 9
 y 40
 end
 arch blocked
-msg
-endmsg
 x 9
 y 41
 end
 arch blocked
-msg
-endmsg
 x 9
 y 42
 end
 arch blocked
-msg
-endmsg
 x 10
 y 38
 end
 arch blocked
-msg
-endmsg
 x 10
 y 39
 end
@@ -77,20 +66,14 @@ x 10
 y 41
 end
 arch blocked
-msg
-endmsg
 x 10
 y 42
 end
 arch blocked
-msg
-endmsg
 x 10
 y 43
 end
 arch blocked
-msg
-endmsg
 x 11
 y 38
 end
@@ -151,26 +134,18 @@ x 11
 y 42
 end
 arch blocked
-msg
-endmsg
 x 11
 y 43
 end
 arch blocked
-msg
-endmsg
 x 11
 y 44
 end
 arch blocked
-msg
-endmsg
 x 12
 y 37
 end
 arch blocked
-msg
-endmsg
 x 12
 y 38
 end
@@ -237,32 +212,22 @@ x 12
 y 43
 end
 arch blocked
-msg
-endmsg
 x 12
 y 44
 end
 arch blocked
-msg
-endmsg
 x 12
 y 45
 end
 arch blocked
-msg
-endmsg
 x 12
 y 46
 end
 arch blocked
-msg
-endmsg
 x 13
 y 36
 end
 arch blocked
-msg
-endmsg
 x 13
 y 37
 end
@@ -361,26 +326,18 @@ x 13
 y 45
 end
 arch blocked
-msg
-endmsg
 x 13
 y 46
 end
 arch blocked
-msg
-endmsg
 x 13
 y 47
 end
 arch blocked
-msg
-endmsg
 x 13
 y 48
 end
 arch blocked
-msg
-endmsg
 x 14
 y 36
 end
@@ -497,20 +454,14 @@ x 14
 y 47
 end
 arch blocked
-msg
-endmsg
 x 14
 y 48
 end
 arch blocked
-msg
-endmsg
 x 14
 y 49
 end
 arch blocked
-msg
-endmsg
 x 15
 y 36
 end
@@ -623,38 +574,26 @@ x 15
 y 48
 end
 arch blocked
-msg
-endmsg
 x 15
 y 49
 end
 arch blocked
-msg
-endmsg
 x 15
 y 50
 end
 arch blocked
-msg
-endmsg
 x 15
 y 51
 end
 arch blocked
-msg
-endmsg
 x 15
 y 52
 end
 arch blocked
-msg
-endmsg
 x 16
 y 35
 end
 arch blocked
-msg
-endmsg
 x 16
 y 36
 end
@@ -787,38 +726,26 @@ x 16
 y 51
 end
 arch blocked
-msg
-endmsg
 x 16
 y 52
 end
 arch blocked
-msg
-endmsg
 x 16
 y 53
 end
 arch blocked
-msg
-endmsg
 x 16
 y 54
 end
 arch blocked
-msg
-endmsg
 x 16
 y 55
 end
 arch blocked
-msg
-endmsg
 x 16
 y 56
 end
 arch blocked
-msg
-endmsg
 x 17
 y 35
 end
@@ -973,20 +900,14 @@ x 17
 y 55
 end
 arch blocked
-msg
-endmsg
 x 17
 y 56
 end
 arch blocked
-msg
-endmsg
 x 17
 y 57
 end
 arch blocked
-msg
-endmsg
 x 18
 y 35
 end
@@ -1012,7 +933,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 18
 y 38
@@ -1136,26 +1056,18 @@ x 18
 y 56
 end
 arch blocked
-msg
-endmsg
 x 18
 y 57
 end
 arch blocked
-msg
-endmsg
 x 18
 y 58
 end
 arch blocked
-msg
-endmsg
 x 18
 y 59
 end
 arch blocked
-msg
-endmsg
 x 19
 y 35
 end
@@ -1318,32 +1230,22 @@ x 19
 y 58
 end
 arch blocked
-msg
-endmsg
 x 19
 y 59
 end
 arch blocked
-msg
-endmsg
 x 19
 y 60
 end
 arch blocked
-msg
-endmsg
 x 19
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 34
 end
 arch blocked
-msg
-endmsg
 x 20
 y 35
 end
@@ -1536,26 +1438,18 @@ x 20
 y 60
 end
 arch blocked
-msg
-endmsg
 x 20
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 62
 end
 arch blocked
-msg
-endmsg
 x 21
 y 33
 end
 arch blocked
-msg
-endmsg
 x 21
 y 34
 end
@@ -1740,20 +1634,14 @@ x 21
 y 61
 end
 arch blocked
-msg
-endmsg
 x 21
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 32
 end
 arch blocked
-msg
-endmsg
 x 22
 y 33
 end
@@ -1791,7 +1679,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 22
 y 38
@@ -1939,20 +1826,14 @@ x 22
 y 61
 end
 arch blocked
-msg
-endmsg
 x 22
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 32
 end
@@ -2157,14 +2038,10 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
@@ -2190,7 +2067,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 24
 y 35
@@ -2229,7 +2105,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 24
 y 41
@@ -2374,14 +2249,10 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 30
 end
 arch blocked
-msg
-endmsg
 x 25
 y 31
 end
@@ -2573,8 +2444,6 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 26
 y 30
 end
@@ -2612,7 +2481,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 26
 y 34
@@ -2643,7 +2511,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 26
 y 38
@@ -2806,14 +2673,10 @@ x 26
 y 63
 end
 arch blocked
-msg
-endmsg
 x 27
 y 29
 end
 arch blocked
-msg
-endmsg
 x 27
 y 30
 end
@@ -3044,8 +2907,6 @@ x 27
 y 63
 end
 arch blocked
-msg
-endmsg
 x 28
 y 29
 end
@@ -3098,8 +2959,6 @@ x 28
 y 35
 end
 arch blocked
-msg
-endmsg
 x 28
 y 36
 end
@@ -3137,7 +2996,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 28
 y 41
@@ -3277,8 +3135,6 @@ x 28
 y 61
 end
 arch blocked
-msg
-endmsg
 x 28
 y 61
 end
@@ -3287,20 +3143,14 @@ x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 62
 end
 arch blocked
-msg
-endmsg
 x 28
 y 63
 end
 arch blocked
-msg
-endmsg
 x 29
 y 29
 end
@@ -3353,14 +3203,10 @@ x 29
 y 35
 end
 arch blocked
-msg
-endmsg
 x 29
 y 36
 end
 arch blocked
-msg
-endmsg
 x 29
 y 37
 end
@@ -3402,7 +3248,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 29
 y 44
@@ -3528,14 +3373,10 @@ x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 29
 y 61
 end
 arch blocked
-msg
-endmsg
 x 30
 y 29
 end
@@ -3588,14 +3429,10 @@ x 30
 y 35
 end
 arch blocked
-msg
-endmsg
 x 30
 y 36
 end
 arch blocked
-msg
-endmsg
 x 30
 y 37
 end
@@ -3758,20 +3595,14 @@ x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 60
 end
 arch blocked
-msg
-endmsg
 x 30
 y 61
 end
 arch blocked
-msg
-endmsg
 x 31
 y 29
 end
@@ -3832,14 +3663,10 @@ x 31
 y 36
 end
 arch blocked
-msg
-endmsg
 x 31
 y 37
 end
 arch blocked
-msg
-endmsg
 x 31
 y 38
 end
@@ -3968,8 +3795,6 @@ x 31
 y 58
 end
 arch blocked
-msg
-endmsg
 x 31
 y 58
 end
@@ -3978,20 +3803,14 @@ x 31
 y 59
 end
 arch blocked
-msg
-endmsg
 x 31
 y 59
 end
 arch blocked
-msg
-endmsg
 x 31
 y 60
 end
 arch blocked
-msg
-endmsg
 x 32
 y 29
 end
@@ -4060,14 +3879,10 @@ x 32
 y 37
 end
 arch blocked
-msg
-endmsg
 x 32
 y 38
 end
 arch blocked
-msg
-endmsg
 x 32
 y 39
 end
@@ -4109,7 +3924,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 32
 y 44
@@ -4201,14 +4015,10 @@ x 32
 y 57
 end
 arch blocked
-msg
-endmsg
 x 32
 y 58
 end
 arch blocked
-msg
-endmsg
 x 33
 y 29
 end
@@ -4277,26 +4087,18 @@ x 33
 y 37
 end
 arch blocked
-msg
-endmsg
 x 33
 y 38
 end
 arch blocked
-msg
-endmsg
 x 33
 y 39
 end
 arch blocked
-msg
-endmsg
 x 33
 y 40
 end
 arch blocked
-msg
-endmsg
 x 33
 y 41
 end
@@ -4395,20 +4197,14 @@ x 33
 y 56
 end
 arch blocked
-msg
-endmsg
 x 33
 y 57
 end
 arch blocked
-msg
-endmsg
 x 33
 y 58
 end
 arch blocked
-msg
-endmsg
 x 34
 y 29
 end
@@ -4485,26 +4281,18 @@ x 34
 y 38
 end
 arch blocked
-msg
-endmsg
 x 34
 y 39
 end
 arch blocked
-msg
-endmsg
 x 34
 y 40
 end
 arch blocked
-msg
-endmsg
 x 34
 y 41
 end
 arch blocked
-msg
-endmsg
 x 34
 y 42
 end
@@ -4534,7 +4322,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 34
 y 46
@@ -4616,26 +4403,18 @@ x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 56
 end
 arch blocked
-msg
-endmsg
 x 34
 y 57
 end
 arch blocked
-msg
-endmsg
 x 35
 y 29
 end
 arch blocked
-msg
-endmsg
 x 35
 y 30
 end
@@ -4712,14 +4491,10 @@ x 35
 y 39
 end
 arch blocked
-msg
-endmsg
 x 35
 y 40
 end
 arch blocked
-msg
-endmsg
 x 35
 y 41
 end
@@ -4822,20 +4597,14 @@ x 35
 y 55
 end
 arch blocked
-msg
-endmsg
 x 35
 y 55
 end
 arch blocked
-msg
-endmsg
 x 35
 y 56
 end
 arch blocked
-msg
-endmsg
 x 36
 y 30
 end
@@ -4949,7 +4718,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 36
 y 44
@@ -5013,38 +4781,26 @@ x 36
 y 51
 end
 arch blocked
-msg
-endmsg
 x 36
 y 52
 end
 arch blocked
-msg
-endmsg
 x 36
 y 53
 end
 arch blocked
-msg
-endmsg
 x 36
 y 54
 end
 arch blocked
-msg
-endmsg
 x 36
 y 55
 end
 arch blocked
-msg
-endmsg
 x 37
 y 30
 end
 arch blocked
-msg
-endmsg
 x 37
 y 31
 end
@@ -5179,32 +4935,22 @@ x 37
 y 50
 end
 arch blocked
-msg
-endmsg
 x 37
 y 51
 end
 arch blocked
-msg
-endmsg
 x 37
 y 52
 end
 arch blocked
-msg
-endmsg
 x 38
 y 31
 end
 arch blocked
-msg
-endmsg
 x 38
 y 32
 end
 arch blocked
-msg
-endmsg
 x 38
 y 33
 end
@@ -5278,7 +5024,6 @@ name_pl aggressive polar bear
 hp 1250
 maxhp 1600
 exp 5600
-
 dam 38
 x 38
 y 42
@@ -5328,8 +5073,6 @@ x 38
 y 49
 end
 arch blocked
-msg
-endmsg
 x 38
 y 49
 end
@@ -5338,26 +5081,18 @@ x 38
 y 50
 end
 arch blocked
-msg
-endmsg
 x 38
 y 50
 end
 arch blocked
-msg
-endmsg
 x 38
 y 51
 end
 arch blocked
-msg
-endmsg
 x 39
 y 33
 end
 arch blocked
-msg
-endmsg
 x 39
 y 34
 end
@@ -5438,44 +5173,30 @@ x 39
 y 46
 end
 arch blocked
-msg
-endmsg
 x 39
 y 47
 end
 arch blocked
-msg
-endmsg
 x 39
 y 48
 end
 arch blocked
-msg
-endmsg
 x 39
 y 49
 end
 arch blocked
-msg
-endmsg
 x 40
 y 34
 end
 arch blocked
-msg
-endmsg
 x 40
 y 35
 end
 arch blocked
-msg
-endmsg
 x 40
 y 36
 end
 arch blocked
-msg
-endmsg
 x 40
 y 37
 end
@@ -5536,38 +5257,26 @@ x 40
 y 45
 end
 arch blocked
-msg
-endmsg
 x 40
 y 46
 end
 arch blocked
-msg
-endmsg
 x 40
 y 47
 end
 arch blocked
-msg
-endmsg
 x 41
 y 37
 end
 arch blocked
-msg
-endmsg
 x 41
 y 38
 end
 arch blocked
-msg
-endmsg
 x 41
 y 39
 end
 arch blocked
-msg
-endmsg
 x 41
 y 40
 end
@@ -5604,50 +5313,34 @@ x 41
 y 44
 end
 arch blocked
-msg
-endmsg
 x 41
 y 45
 end
 arch blocked
-msg
-endmsg
 x 41
 y 46
 end
 arch blocked
-msg
-endmsg
 x 42
 y 40
 end
 arch blocked
-msg
-endmsg
 x 42
 y 41
 end
 arch blocked
-msg
-endmsg
 x 42
 y 42
 end
 arch blocked
-msg
-endmsg
 x 42
 y 43
 end
 arch blocked
-msg
-endmsg
 x 42
 y 44
 end
 arch blocked
-msg
-endmsg
 x 42
 y 45
 end

@@ -1,8 +1,12 @@
 arch map
-region scorn
+name <unnamed>
 reset_timeout 7200
 fixed_resettime 1
 difficulty 1
+region scorn
+shopitems gem:80;amulet:40;ring:40
+shopmax 2000
+shoprace human
 width 16
 height 16
 enter_x 1
@@ -12,9 +16,6 @@ Creator:
 Email: 
 Date: Fri Oct 15 13:53:15 1993
 endmsg
-shopitems gem:80;amulet:40;ring:40
-shopmax 2000
-shoprace human
 end
 arch shop_empty
 end

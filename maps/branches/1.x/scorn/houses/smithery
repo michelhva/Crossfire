@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Metal Smith's Workshop
-msg
-Creator: CF Java Map Editor
-Date:    12/28/2002
-endmsg
+reset_timeout 7200
+difficulty 1
+region scorn
 width 9
 height 13
 enter_x 4
 enter_y 11
-reset_timeout 7200
-difficulty 1
+msg
+Creator: CF Java Map Editor
+Date:    12/28/2002
+endmsg
 end
 arch woodfloor
 end
@@ -174,21 +174,21 @@ x 2
 y 1
 end
 arch table_3
-no_pick 1
 x 2
 y 1
+no_pick 1
 end
 arch quarto
-face book_red.111
+title Titans
 msg
 To make gauntlets of the Titans, you will
 need gauntlets, the heart of a giant, and a
 bottle of philosophical oil.
 endmsg
-title Titans
-no_pick 1
+face book_red.111
 x 2
 y 1
+no_pick 1
 end
 arch woodfloor
 x 2
@@ -318,9 +318,9 @@ x 3
 y 1
 end
 arch chair_3.1
-no_pick 1
 x 3
 y 1
+no_pick 1
 end
 arch woodfloor
 x 3
@@ -339,24 +339,24 @@ x 3
 y 3
 end
 arch lava
-type 0
 x 3
 y 4
+type 0
 end
 arch lava
-type 0
 x 3
 y 5
+type 0
 end
 arch lava
-type 0
 x 3
 y 6
+type 0
 end
 arch lava
-type 0
 x 3
 y 7
+type 0
 end
 arch stonefloor2
 x 3
@@ -425,9 +425,9 @@ x 4
 y 3
 end
 arch lava
-type 0
 x 4
 y 4
+type 0
 end
 arch greater_dwarven_guard
 msg
@@ -442,6 +442,8 @@ Go read the books or I'll pound you!
 endmsg
 exp 1
 dam 50
+x 4
+y 4
 speed 2.000000
 level 2
 resist_magic 100
@@ -457,8 +459,6 @@ reflect_spell 1
 can_cast_spell 0
 stand_still 1
 can_see_in_dark 1
-x 4
-y 4
 end
 arch ahole_left
 x 4
@@ -477,21 +477,21 @@ x 4
 y 7
 end
 arch pedestal
-invisible 1
-connected 11
 x 4
 y 7
+invisible 1
+connected 11
 end
 arch stonefloor2
 x 4
 y 8
 end
 arch ggate_closed
+x 4
+y 8
 connected 11
 no_magic 1
 damned 1
-x 4
-y 8
 end
 arch woodfloor
 x 4
@@ -499,32 +499,32 @@ y 9
 end
 arch check_floor
 slaying smith_house1
-connected 11
 x 4
 y 9
+connected 11
 end
 arch woodfloor
 x 4
 y 10
 end
 arch trigger_marker
+slaying smith_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying smith_house1
-connected 10
-speed 1.0
 food 504
 x 4
 y 10
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 4
 y 10
+connected 10
 end
 arch woodfloor
 x 4
@@ -535,8 +535,8 @@ x 4
 y 12
 end
 arch oakdoor
-face odoor_2.111
 slaying /world/world_105_115
+face odoor_2.111
 hp 10
 sp 39
 x 4
@@ -553,9 +553,9 @@ x 5
 y 1
 end
 arch chair_3.1
-no_pick 1
 x 5
 y 1
+no_pick 1
 end
 arch woodfloor
 x 5
@@ -574,24 +574,24 @@ x 5
 y 3
 end
 arch lava
-type 0
 x 5
 y 4
+type 0
 end
 arch lava
-type 0
 x 5
 y 5
+type 0
 end
 arch lava
-type 0
 x 5
 y 6
+type 0
 end
 arch lava
-type 0
 x 5
 y 7
+type 0
 end
 arch stonefloor2
 x 5
@@ -640,20 +640,20 @@ x 6
 y 1
 end
 arch table_3
-no_pick 1
 x 6
 y 1
+no_pick 1
 end
 arch quarto
-face book_red.111
+title Steel
 msg
 Combine a pair of shoes or boots with
 3 crystals of mithril to create steel.
 endmsg
-title Steel
-no_pick 1
+face book_red.111
 x 6
 y 1
+no_pick 1
 end
 arch woodfloor
 x 6

@@ -1,12 +1,10 @@
 arch map
+name <unnamed>
 region wolfsburg
-msg
-
-endmsg
-hp 1
-sp 1
-x 25
-y 25
+width 25
+height 25
+enter_x 1
+enter_y 1
 end
 arch large_stones
 end
@@ -1451,7 +1449,15 @@ arch large_stones
 x 11
 y 12
 end
+arch active_volcano
+x 11
+y 12
+end
 arch large_stones
+x 11
+y 13
+end
+arch active_volcano
 x 11
 y 13
 end
@@ -1695,7 +1701,15 @@ arch large_stones
 x 13
 y 12
 end
+arch active_volcano
+x 13
+y 12
+end
 arch large_stones
+x 13
+y 13
+end
+arch active_volcano
 x 13
 y 13
 end
@@ -3173,20 +3187,4 @@ end
 arch rough_wall_2_2_4
 x 24
 y 24
-end
-arch active_volcano
-x 11
-y 12
-end
-arch active_volcano
-x 11
-y 13
-end
-arch active_volcano
-x 13
-y 12
-end
-arch active_volcano
-x 13
-y 13
 end

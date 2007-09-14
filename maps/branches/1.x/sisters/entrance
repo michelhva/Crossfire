@@ -1,13 +1,13 @@
 arch map
 name entrance
+darkness 3
+width 32
+height 32
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Sun Dec 18 09:39:14 1994
 endmsg
-width 32
-height 32
-darkness 3
 end
 arch sea
 end
@@ -671,6 +671,13 @@ arch hills
 x 5
 y 14
 end
+arch city_tower
+slaying /sisters/tower1
+hp 7
+sp 15
+x 5
+y 14
+end
 arch pstone_2
 x 5
 y 15
@@ -696,9 +703,9 @@ x 5
 y 20
 end
 arch generate_giant
-speed_left -0.118000
 x 5
 y 20
+speed_left -0.118000
 end
 arch medium_stones
 x 5
@@ -772,9 +779,9 @@ x 6
 y 5
 end
 arch generate_giant
-speed_left -0.118000
 x 6
 y 5
+speed_left -0.118000
 end
 arch medium_stones
 x 6
@@ -892,9 +899,9 @@ x 7
 y 1
 end
 arch generate_goblin
-speed_left -0.180000
 x 7
 y 1
+speed_left -0.180000
 end
 arch mountain4
 x 7
@@ -973,9 +980,9 @@ x 7
 y 19
 end
 arch generate_giant
+x 7
+y 19
 speed_left -0.118000
-x 7
-y 19
 end
 arch medium_stones
 x 7
@@ -1022,9 +1029,9 @@ x 7
 y 30
 end
 arch generate_dragon
-speed_left -0.106400
 x 7
 y 30
+speed_left -0.106400
 end
 arch mountain4
 x 7
@@ -1046,9 +1053,9 @@ x 8
 y 3
 end
 arch generate_goblin
-speed_left -0.180000
 x 8
 y 3
+speed_left -0.180000
 end
 arch mountain4
 x 8
@@ -1194,9 +1201,9 @@ x 9
 y 6
 end
 arch generate_goblin
-speed_left -0.180000
 x 9
 y 6
+speed_left -0.180000
 end
 arch mountain4
 x 9
@@ -1275,9 +1282,9 @@ x 9
 y 24
 end
 arch generate_dragon
-speed_left -0.106400
 x 9
 y 24
+speed_left -0.106400
 end
 arch medium_stones
 x 9
@@ -1620,6 +1627,15 @@ arch medium_stones
 x 12
 y 14
 end
+arch troll
+name Sugrax the hill troll
+hp 5000
+exp 30000
+x 12
+y 14
+see_invisible 1
+immune 2
+end
 arch medium_stones
 x 12
 y 15
@@ -1718,6 +1734,54 @@ end
 arch medium_stones
 x 13
 y 7
+end
+arch troll
+name Cryax the sad hill troll
+msg
+@match sorrow|Sorrow|hi|Hi|hello
+Beware little one. These hills contain
+powerful evil magic. Know that my
+two older brothers lie further in and that
+the curse that has been laid upon
+us has affected them more strongly.
+@match curse|Curse
+Yes, long ago we were elven princes.
+For our love of the 3 sisters we each
+were cursed by jealous gods. We are
+to stand guard here for eternity. I alone
+repent my fate, for both my brothers
+are quite mad and are beyond reason.
+@match sister|Sister
+They were the 3 most beautiful creatures
+to walk the earth once. Together they
+had great magical powers of weaving-
+for they are the daughters of Aniu, god
+of making. As they are half-goddesses each,
+no curse of any god may transmute them,
+but instead they have been mutilated.
+They live now in sorrow in the tower my
+brothers protect.
+@match tower|Tower|guard|Guard
+We guard the tower of the sisters
+which lies within a maze of deadly
+creatures and false paths. The ultimate
+true path is hidden. Be careful if you
+choose to seek the tower!
+@match password|Password
+Ah.. the entrance into the inner tower
+is protected by a password. I used to
+know it when I was young but its been
+so many years that I have forgotten it.
+@match *
+Go away from here and leave me to
+my sorrow.
+endmsg
+hp 4000
+exp 12000
+x 13
+y 7
+unaggressive 1
+immune 2
 end
 arch medium_stones
 x 13
@@ -1931,9 +1995,9 @@ x 14
 y 28
 end
 arch generate_giant
-speed_left -0.118000
 x 14
 y 28
+speed_left -0.118000
 end
 arch mountain2
 x 14
@@ -2071,9 +2135,9 @@ x 15
 y 30
 end
 arch generate_giant
-speed_left -0.118000
 x 15
 y 30
+speed_left -0.118000
 end
 arch mountain4
 x 15
@@ -2135,9 +2199,9 @@ x 16
 y 13
 end
 arch generate_ogre
-speed_left -0.112000
 x 16
 y 13
+speed_left -0.112000
 end
 arch medium_stones
 x 16
@@ -2152,9 +2216,9 @@ x 16
 y 16
 end
 arch generate_ogre
-speed_left -0.112000
 x 16
 y 16
+speed_left -0.112000
 end
 arch mountain4
 x 16
@@ -2264,9 +2328,9 @@ x 17
 y 11
 end
 arch generate_ogre
-speed_left -0.112000
 x 17
 y 11
+speed_left -0.112000
 end
 arch medium_stones
 x 17
@@ -2325,9 +2389,9 @@ x 17
 y 24
 end
 arch generate_giant
-speed_left -0.118000
 x 17
 y 24
+speed_left -0.118000
 end
 arch medium_stones
 x 17
@@ -2338,9 +2402,9 @@ x 17
 y 26
 end
 arch generate_giant
-speed_left -0.118000
 x 17
 y 26
+speed_left -0.118000
 end
 arch mountain4
 x 17
@@ -2351,9 +2415,9 @@ x 17
 y 28
 end
 arch generate_giant
-speed_left -0.118000
 x 17
 y 28
+speed_left -0.118000
 end
 arch medium_stones
 x 17
@@ -2393,9 +2457,9 @@ Flee now striplings! Know that you
 have reached the mazes of chaos wherein
 eternal night rules! Hahahahahahaha!
 endmsg
-speed_left -3.100000
 x 18
 y 4
+speed_left -3.100000
 end
 arch medium_stones
 x 18
@@ -2410,18 +2474,18 @@ x 18
 y 7
 end
 arch generate_goblin
-speed_left -0.260000
 x 18
 y 7
+speed_left -0.260000
 end
 arch medium_stones
 x 18
 y 8
 end
 arch generate_goblin
-speed_left -0.180000
 x 18
 y 8
+speed_left -0.180000
 end
 arch mountain2
 x 18
@@ -2468,9 +2532,9 @@ x 18
 y 18
 end
 arch generate_ogre
-speed_left -0.112000
 x 18
 y 18
+speed_left -0.112000
 end
 arch medium_stones
 x 18
@@ -2567,9 +2631,9 @@ x 19
 y 7
 end
 arch generate_goblin
-speed_left -0.260000
 x 19
 y 7
+speed_left -0.260000
 end
 arch medium_stones
 x 19
@@ -2640,9 +2704,9 @@ x 19
 y 24
 end
 arch generate_giant
-speed_left -0.118000
 x 19
 y 24
+speed_left -0.118000
 end
 arch hills_rocky
 x 19
@@ -2653,9 +2717,9 @@ x 19
 y 26
 end
 arch generate_giant
-speed_left -0.118000
 x 19
 y 26
+speed_left -0.118000
 end
 arch medium_stones
 x 19
@@ -2733,9 +2797,9 @@ x 20
 y 12
 end
 arch generate_ogre
-speed_left -0.112000
 x 20
 y 12
+speed_left -0.112000
 end
 arch medium_stones
 x 20
@@ -2849,9 +2913,9 @@ x 21
 y 7
 end
 arch generate_gnoll
-speed_left -0.116000
 x 21
 y 7
+speed_left -0.116000
 end
 arch medium_stones
 x 21
@@ -3219,9 +3283,9 @@ x 24
 y 1
 end
 arch generate_ogre
-speed_left -0.124000
 x 24
 y 1
+speed_left -0.124000
 end
 arch mountain4
 x 24
@@ -3332,9 +3396,9 @@ x 24
 y 28
 end
 arch generate_dragon
+x 24
+y 28
 speed_left -0.106400
-x 24
-y 28
 end
 arch medium_stones
 x 24
@@ -3491,9 +3555,9 @@ x 26
 y 1
 end
 arch generate_goblin
+x 26
+y 1
 speed_left -0.260000
-x 26
-y 1
 end
 arch mountain4
 x 26
@@ -3504,9 +3568,9 @@ x 26
 y 3
 end
 arch generate_gnoll
-speed_left -0.116000
 x 26
 y 3
+speed_left -0.116000
 end
 arch medium_stones
 x 26
@@ -3585,9 +3649,9 @@ x 26
 y 21
 end
 arch generate_ogre
-speed_left -0.112000
 x 26
 y 21
+speed_left -0.112000
 end
 arch medium_stones
 x 26
@@ -3649,9 +3713,9 @@ x 27
 y 4
 end
 arch generate_gnoll
-speed_left -0.116000
 x 27
 y 4
+speed_left -0.116000
 end
 arch medium_stones
 x 27
@@ -3694,9 +3758,9 @@ x 27
 y 14
 end
 arch generate_gnoll
-speed_left -0.116000
 x 27
 y 14
+speed_left -0.116000
 end
 arch medium_stones
 x 27
@@ -3719,9 +3783,9 @@ x 27
 y 19
 end
 arch generate_giant
+x 27
+y 19
 speed_left -0.136000
-x 27
-y 19
 end
 arch mountain4
 x 27
@@ -3906,9 +3970,9 @@ x 29
 y 1
 end
 arch generate_goblin
-speed_left -0.180000
 x 29
 y 1
+speed_left -0.180000
 end
 arch hills_rocky
 x 29
@@ -3935,9 +3999,9 @@ x 29
 y 7
 end
 arch generate_ogre
-speed_left -0.112000
 x 29
 y 7
+speed_left -0.112000
 end
 arch mountain4
 x 29
@@ -3956,18 +4020,18 @@ x 29
 y 11
 end
 arch generate_ogre
-speed_left -0.112000
 x 29
 y 11
+speed_left -0.112000
 end
 arch medium_stones
 x 29
 y 12
 end
 arch generate_ogre
-speed_left -0.112000
 x 29
 y 12
+speed_left -0.112000
 end
 arch mountain4
 x 29
@@ -4057,9 +4121,9 @@ x 30
 y 2
 end
 arch generate_ogre
-speed_left -0.112000
 x 30
 y 2
+speed_left -0.112000
 end
 arch medium_stones
 x 30
@@ -4070,9 +4134,9 @@ x 30
 y 4
 end
 arch generate_goblin
-speed_left -0.180000
 x 30
 y 4
+speed_left -0.180000
 end
 arch medium_stones
 x 30
@@ -4083,9 +4147,9 @@ x 30
 y 6
 end
 arch generate_ogre
-speed_left -0.112000
 x 30
 y 6
+speed_left -0.112000
 end
 arch mountain2
 x 30
@@ -4100,9 +4164,9 @@ x 30
 y 9
 end
 arch generate_ogre
+x 30
+y 9
 speed_left -0.124000
-x 30
-y 9
 end
 arch medium_stones
 x 30
@@ -4193,9 +4257,9 @@ x 30
 y 29
 end
 arch generate_giant
-speed_left -0.118000
 x 30
 y 29
+speed_left -0.118000
 end
 arch mountain2
 x 30
@@ -4331,68 +4395,4 @@ end
 arch mountain4
 x 31
 y 31
-end
-arch city_tower
-slaying /sisters/tower1
-hp 7
-sp 15
-x 5
-y 14
-end
-arch troll
-name Sugrax the hill troll
-hp 5000
-exp 30000
-immune 2
-see_invisible 1
-x 12
-y 14
-end
-arch troll
-name Cryax the sad hill troll
-msg
-@match sorrow|Sorrow|hi|Hi|hello
-Beware little one. These hills contain
-powerful evil magic. Know that my
-two older brothers lie further in and that
-the curse that has been laid upon
-us has affected them more strongly.
-@match curse|Curse
-Yes, long ago we were elven princes.
-For our love of the 3 sisters we each
-were cursed by jealous gods. We are
-to stand guard here for eternity. I alone
-repent my fate, for both my brothers
-are quite mad and are beyond reason.
-@match sister|Sister
-They were the 3 most beautiful creatures
-to walk the earth once. Together they
-had great magical powers of weaving-
-for they are the daughters of Aniu, god
-of making. As they are half-goddesses each,
-no curse of any god may transmute them,
-but instead they have been mutilated.
-They live now in sorrow in the tower my
-brothers protect.
-@match tower|Tower|guard|Guard
-We guard the tower of the sisters
-which lies within a maze of deadly
-creatures and false paths. The ultimate
-true path is hidden. Be careful if you
-choose to seek the tower!
-@match password|Password
-Ah.. the entrance into the inner tower
-is protected by a password. I used to
-know it when I was young but its been
-so many years that I have forgotten it.
-@match *
-Go away from here and leave me to
-my sorrow.
-endmsg
-hp 4000
-exp 12000
-immune 2
-unaggressive 1
-x 13
-y 7
 end

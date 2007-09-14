@@ -1,13 +1,13 @@
 arch map
-region scornoldcity
 name oldcity12
+region scornoldcity
+width 40
+height 40
 msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Tue Oct  5 10:14:08 1993
 endmsg
-width 40
-height 40
 tile_path_1 oldcity13
 tile_path_2 oldcity10
 tile_path_3 oldcity9
@@ -461,9 +461,9 @@ x 1
 y 27
 end
 arch generate_gnoll
-speed_left -0.300000
 x 1
 y 27
+speed_left -0.300000
 end
 arch medium_stones
 x 1
@@ -1332,9 +1332,9 @@ x 4
 y 22
 end
 arch generate_ant
-speed_left -0.730000
 x 4
 y 22
+speed_left -0.730000
 end
 arch pstone_1
 x 4
@@ -1546,11 +1546,11 @@ was trapped in a landslide and buried
 alive. I've been here ever since
 endmsg
 exp 1000
+x 5
+y 10
 speed_left -3.700000
 slow_move 1.000000
 unaggressive 1
-x 5
-y 10
 end
 arch medium_stones
 x 5
@@ -3058,9 +3058,9 @@ x 10
 y 35
 end
 arch generate_gnoll
-speed_left -0.300000
 x 10
 y 35
+speed_left -0.300000
 end
 arch medium_stones
 x 10
@@ -3651,10 +3651,10 @@ x 13
 y 9
 end
 arch gate_closed_2
-speed 0.500000
-connected 1
 x 13
 y 9
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 13
@@ -5122,9 +5122,9 @@ x 20
 y 3
 end
 arch button_plate
-connected 1
 x 20
 y 3
+connected 1
 end
 arch pstone_1
 x 20
@@ -6350,10 +6350,10 @@ end
 arch altar
 slaying the_crown
 food 1
-invisible 1
-connected 2
 x 25
 y 10
+invisible 1
+connected 2
 end
 arch flagstone
 x 25
@@ -6567,27 +6567,27 @@ x 26
 y 5
 end
 arch igate_closed_1
-connected 3
 x 26
 y 5
+connected 3
 end
 arch cobblestones2
 x 26
 y 6
 end
 arch igate_closed_1
-connected 2
 x 26
 y 6
+connected 2
 end
 arch dungeon_floor
 x 26
 y 7
 end
 arch igate_closed_1
-connected 4
 x 26
 y 7
+connected 4
 end
 arch dungeon_floor
 name skull floor
@@ -6616,10 +6616,10 @@ end
 arch altar
 slaying Special Dagger
 food 1
-invisible 1
-connected 3
 x 26
 y 12
+invisible 1
+connected 3
 end
 arch flagstone
 x 26
@@ -6635,9 +6635,9 @@ x 26
 y 14
 end
 arch spikes_moving
-connected 3
 x 26
 y 14
+connected 3
 end
 arch dungeon_floor
 name skull floor
@@ -6853,10 +6853,10 @@ end
 arch altar
 slaying the_cup
 food 1
-invisible 1
-connected 4
 x 27
 y 10
+invisible 1
+connected 4
 end
 arch flagstone
 x 27
@@ -9292,9 +9292,9 @@ x 37
 y 6
 end
 arch generate_gnoll
-speed_left -0.300000
 x 37
 y 6
+speed_left -0.300000
 end
 arch pstone_2
 x 37
@@ -9685,9 +9685,9 @@ x 39
 y 6
 end
 arch generate_gnoll
-speed_left -0.300000
 x 39
 y 6
+speed_left -0.300000
 end
 arch medium_stones
 x 39

@@ -1,10 +1,8 @@
 arch map
-region wolfsburg
 name piratechurch
-msg
-endmsg
-x 11
-y 17
+region wolfsburg
+width 11
+height 17
 end
 arch woodfloor
 end
@@ -121,7 +119,7 @@ name highlander
 msg
 @match *
 This is Holy Ground.  You cannot defile
-it with combat! 
+it with combat!
 endmsg
 hp 100
 x 1

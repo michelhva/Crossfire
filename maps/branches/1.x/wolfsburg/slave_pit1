@@ -1,11 +1,10 @@
 arch map
+name <unnamed>
 region wolfsburg
-msg
-endmsg
-hp 1
-sp 1
-x 40
-y 40
+width 40
+height 40
+enter_x 1
+enter_y 1
 end
 arch dirtfloor
 end
@@ -7508,6 +7507,13 @@ arch dirtfloor
 x 32
 y 37
 end
+arch cobra
+hp 125
+maxhp 125
+exp 250
+x 32
+y 37
+end
 arch dirtfloor
 x 32
 y 38
@@ -9005,11 +9011,4 @@ end
 arch dun12
 x 39
 y 39
-end
-arch cobra
-hp 125
-maxhp 125
-exp 250
-x 32
-y 37
 end

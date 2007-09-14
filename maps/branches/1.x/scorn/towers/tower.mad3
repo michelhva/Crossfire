@@ -1,7 +1,10 @@
 arch map
+name <unnamed>
 region scorn
-hp 11
-sp 10
+width 16
+height 16
+enter_x 11
+enter_y 10
 end
 arch grass
 end
@@ -399,7 +402,7 @@ arch card
 name Gate Pass
 slaying gate_pass
 msg
-The holder of this card is allowed free 
+The holder of this card is allowed free
 access into and out of the City of Scorn
 to the rest of the continent without
 further charges and penalties. The City

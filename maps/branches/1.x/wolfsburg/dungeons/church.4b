@@ -1,13 +1,13 @@
 arch map
-region wolfsburg
 name church
+region wolfsburg
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Nov 15 01:30:57 1994
 endmsg
-x 30
-y 30
 end
 arch dungeon_floor
 end
@@ -1202,6 +1202,30 @@ y 15
 value 1
 connected 1
 end
+arch giant
+name Strom The Wise
+msg
+@match hi|hello
+Greetings travellers. What knowledge do
+you seek ?
+@match danger
+There are many dangers. The deeper you
+travel the worse it becomes. Don't
+wander into the caverns, they are full
+of hungry mouths.
+@match Veloria|veloria
+Beware their pet dragon. Although they
+are all dead, their pet is not. Just
+because they are dead, do not assume
+they are no longer here...
+@match bonesway
+The bonesway is the graveyard
+endmsg
+x 6
+y 15
+unaggressive 1
+sleep 0
+end
 arch dungeon_magic
 x 6
 y 16
@@ -2092,6 +2116,10 @@ arch dungeon_floor
 x 10
 y 15
 end
+arch giant
+x 10
+y 15
+end
 arch dungeon_floor
 x 10
 y 16
@@ -2276,6 +2304,10 @@ arch dungeon_floor
 x 11
 y 14
 end
+arch giant
+x 11
+y 14
+end
 arch dungeon_floor
 x 11
 y 15
@@ -2285,6 +2317,10 @@ x 11
 y 16
 end
 arch dungeon_floor
+x 11
+y 17
+end
+arch giant
 x 11
 y 17
 end
@@ -2608,11 +2644,19 @@ arch dungeon_floor
 x 13
 y 12
 end
+arch giant
+x 13
+y 12
+end
 arch dungeon_floor
 x 13
 y 13
 end
 arch dungeon_floor
+x 13
+y 14
+end
+arch giant
 x 13
 y 14
 end
@@ -2624,11 +2668,19 @@ arch dungeon_floor
 x 13
 y 16
 end
+arch giant
+x 13
+y 16
+end
 arch dungeon_floor
 x 13
 y 17
 end
 arch dungeon_floor
+x 13
+y 18
+end
+arch giant
 x 13
 y 18
 end
@@ -6015,56 +6067,4 @@ end
 arch dun2
 x 29
 y 29
-end
-arch giant
-name Strom The Wise
-msg
-@match hi|hello
-Greetings travellers. What knowledge do
-you seek ?
-@match danger
-There are many dangers. The deeper you
-travel the worse it becomes. Don't
-wander into the caverns, they are full
-of hungry mouths.
-@match Veloria|veloria
-Beware their pet dragon. Although they
-are all dead, their pet is not. Just
-because they are dead, do not assume
-they are no longer here...
-@match bonesway
-The bonesway is the graveyard
-endmsg
-x 6
-y 15
-unaggressive 1
-sleep 0
-end
-arch giant
-x 10
-y 15
-end
-arch giant
-x 11
-y 14
-end
-arch giant
-x 11
-y 17
-end
-arch giant
-x 13
-y 12
-end
-arch giant
-x 13
-y 14
-end
-arch giant
-x 13
-y 16
-end
-arch giant
-x 13
-y 18
 end

@@ -1,14 +1,15 @@
 arch map
+name <unnamed>
 region scorn
+width 40
+height 47
+enter_x 39
+enter_y 6
 msg
 Creator: skud the great 
 Email: tvangod@ecst.csuchico.edu 
 Date: Thu Oct  7 14:46:02 1993
 endmsg
-hp 39
-sp 6
-x 40
-y 47
 end
 arch bwall_2_2_2
 end
@@ -10948,7 +10949,7 @@ end
 arch sign
 msg
 The Arena!
-Friday Night Line UP 
+Friday Night Line UP
 See The Pirates take on the Vikes
 Game starts at 6:00 pm
 Hope to see you there

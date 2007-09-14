@@ -1,16 +1,16 @@
 arch map
-region scorn
 name <untitled>
+reset_timeout 1800
+region scorn
+width 30
+height 30
+enter_x 15
+enter_y 28
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:40:50 1993
 endmsg
-width 30
-height 30
-enter_x 15
-enter_y 28
-reset_timeout 1800
 end
 arch woodfloor
 end
@@ -249,9 +249,9 @@ x 1
 y 7
 end
 arch button_plate
-connected 10
 x 1
 y 7
+connected 10
 end
 arch woodfloor
 x 1
@@ -812,9 +812,9 @@ x 4
 y 1
 end
 arch grate_closed_2
-connected 8
 x 4
 y 1
+connected 8
 end
 arch woodfloor
 x 4
@@ -837,9 +837,9 @@ x 4
 y 4
 end
 arch grate_closed_2
-connected 9
 x 4
 y 4
+connected 9
 end
 arch woodfloor
 x 4
@@ -1206,9 +1206,9 @@ x 6
 y 1
 end
 arch arrow
-nrof 12
 x 6
 y 1
+nrof 12
 end
 arch woodfloor
 x 6
@@ -1233,12 +1233,12 @@ end
 arch wand
 sp 2
 food 2
+x 6
+y 4
 level 1
 value 1
 state 1
 identified 1
-x 6
-y 4
 end
 arch woodfloor
 x 6
@@ -1594,9 +1594,9 @@ y 1
 end
 arch button_handle
 name Release bow targets
-connected 8
 x 8
 y 1
+connected 8
 end
 arch woodfloor
 x 8
@@ -1619,9 +1619,9 @@ x 8
 y 4
 end
 arch button_handle
-connected 9
 x 8
 y 4
+connected 9
 end
 arch woodfloor
 x 8
@@ -2037,10 +2037,10 @@ x 10
 y 8
 end
 arch igate_closed_2
-speed 0.500000
-connected 10
 x 10
 y 8
+speed 0.500000
+connected 10
 end
 arch woodfloor
 x 10
@@ -2253,9 +2253,9 @@ x 11
 y 9
 end
 arch button_plate
-connected 10
 x 11
 y 9
+connected 10
 end
 arch woodfloor
 x 11
@@ -3331,9 +3331,9 @@ x 18
 y 9
 end
 arch button_handle
-connected 7
 x 18
 y 9
+connected 7
 end
 arch woodfloor
 x 18
@@ -3348,9 +3348,9 @@ x 18
 y 12
 end
 arch button_small
-connected 6
 x 18
 y 12
+connected 6
 end
 arch woodfloor
 x 18
@@ -3377,9 +3377,9 @@ x 18
 y 17
 end
 arch button_handle
-connected 5
 x 18
 y 17
+connected 5
 end
 arch woodfloor
 x 18
@@ -3394,9 +3394,9 @@ x 18
 y 20
 end
 arch button_lever
-connected 4
 x 18
 y 20
+connected 4
 end
 arch woodfloor
 x 18
@@ -3412,9 +3412,9 @@ y 23
 end
 arch button_handle
 name A is the letter ...
-connected 3
 x 18
 y 23
+connected 3
 end
 arch woodfloor
 x 18
@@ -3430,9 +3430,9 @@ y 26
 end
 arch button_handle
 name Type an A to apply
-connected 2
 x 18
 y 26
+connected 2
 end
 arch woodfloor
 x 18
@@ -3444,9 +3444,9 @@ y 28
 end
 arch button_handle
 name Type an A to open
-connected 1
 x 18
 y 28
+connected 1
 end
 arch woodfloor
 x 18
@@ -3531,18 +3531,18 @@ x 19
 y 7
 end
 arch block_door_closed
-connected 7
 x 19
 y 7
+connected 7
 end
 arch woodfloor
 x 19
 y 8
 end
 arch block_door_closed
-connected 7
 x 19
 y 8
+connected 7
 end
 arch woodfloor
 x 19
@@ -3557,9 +3557,9 @@ x 19
 y 10
 end
 arch door_1
-randomitems none
 x 19
 y 10
+randomitems none
 end
 arch woodfloor
 x 19
@@ -3574,10 +3574,10 @@ x 19
 y 12
 end
 arch igate_closed_2
-speed 0.500000
-connected 6
 x 19
 y 12
+speed 0.500000
+connected 6
 end
 arch woodfloor
 x 19
@@ -3592,9 +3592,9 @@ x 19
 y 14
 end
 arch door_look_2
-randomitems none
 x 19
 y 14
+randomitems none
 end
 arch woodfloor
 x 19
@@ -3609,9 +3609,9 @@ x 19
 y 16
 end
 arch grate_closed_2
+x 19
+y 16
 connected 5
-x 19
-y 16
 end
 arch woodfloor
 x 19
@@ -3634,9 +3634,9 @@ x 19
 y 19
 end
 arch grate_closed_2
+x 19
+y 19
 connected 4
-x 19
-y 19
 end
 arch woodfloor
 x 19
@@ -3659,9 +3659,9 @@ x 19
 y 22
 end
 arch grate_closed_2
+x 19
+y 22
 connected 3
-x 19
-y 22
 end
 arch woodfloor
 x 19
@@ -3684,9 +3684,9 @@ x 19
 y 25
 end
 arch grate_closed_2
-connected 2
 x 19
 y 25
+connected 2
 end
 arch woodfloor
 x 19
@@ -3701,9 +3701,9 @@ x 19
 y 27
 end
 arch grate_closed_2
-connected 1
 x 19
 y 27
+connected 1
 end
 arch woodfloor
 x 19
@@ -3820,9 +3820,9 @@ x 20
 y 12
 end
 arch button_small
-connected 6
 x 20
 y 12
+connected 6
 end
 arch woodfloor
 x 20

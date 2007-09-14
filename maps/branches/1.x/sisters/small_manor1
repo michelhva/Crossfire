@@ -1,12 +1,12 @@
 arch map
 name small_manor1
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 22:38:59 1994
 endmsg
-width 16
-height 16
 end
 arch grass
 end
@@ -316,36 +316,36 @@ x 3
 y 2
 end
 arch onion
-nrof 5
 x 3
 y 2
+nrof 5
 end
 arch woodfloor
 x 3
 y 3
 end
 arch potato
-nrof 10
 x 3
 y 3
+nrof 10
 end
 arch woodfloor
 x 3
 y 4
 end
 arch booze
-nrof 5
 x 3
 y 4
+nrof 5
 end
 arch woodfloor
 x 3
 y 5
 end
 arch booze
-nrof 5
 x 3
 y 5
+nrof 5
 end
 arch flagstone
 x 3
@@ -390,9 +390,9 @@ end
 arch gnoll
 name gnoll man-at-arms
 hp 12
-carrying 70500
 x 3
 y 11
+carrying 70500
 arch ring_mail2
 end
 arch sword_4
@@ -462,9 +462,9 @@ x 4
 y 5
 end
 arch cabbage
-nrof 7
 x 4
 y 5
+nrof 7
 end
 arch flagstone
 x 4
@@ -588,9 +588,9 @@ x 5
 y 4
 end
 arch door_look_2
-blocksview 1
 x 5
 y 4
+blocksview 1
 end
 arch flagstone
 x 5
@@ -643,9 +643,9 @@ end
 arch gnoll
 name gnoll man-at-arms
 hp 12
-carrying 70500
 x 5
 y 11
+carrying 70500
 arch ring_mail2
 end
 arch sword_4
@@ -706,12 +706,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 6
+y 3
 carrying 93000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 6
-y 3
 arch low_boots
 end
 arch helmet
@@ -757,9 +757,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 6
 y 8
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -774,9 +774,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 6
 y 9
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -791,9 +791,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 6
 y 10
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -851,12 +851,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 7
+y 2
 carrying 93000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 7
-y 2
 arch low_boots
 end
 arch helmet
@@ -876,9 +876,9 @@ y 4
 end
 arch gnoll
 name Fergandi the cook
-carrying 70000
 x 7
 y 4
+carrying 70000
 arch leather_armour
 end
 arch bighorned_helmet
@@ -909,9 +909,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 49000
 x 7
 y 7
+carrying 49000
 arch axe
 end
 arch ring_mail2
@@ -926,9 +926,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 7
 y 8
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -943,9 +943,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 7
 y 9
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -960,9 +960,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 29000
 x 7
 y 10
+carrying 29000
 arch axe
 end
 arch leather_armour
@@ -1036,9 +1036,9 @@ name assistant cook
 hp 10
 exp 50
 wc 14
-carrying 214000
 x 8
 y 4
+carrying 214000
 end
 arch woodfloor
 x 8
@@ -1053,9 +1053,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 58500
 x 8
 y 6
+carrying 58500
 arch ring_mail2
 end
 arch bow
@@ -1073,9 +1073,9 @@ name goblin man-at-arms
 hp 10
 exp 50
 wc 14
-carrying 58500
 x 8
 y 7
+carrying 58500
 arch ring_mail2
 end
 arch bow
@@ -1091,12 +1091,12 @@ end
 arch gnoll
 name gnoll man-at-arms
 exp 40
+x 8
+y 8
 carrying 93000
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
-x 8
-y 8
 arch low_boots
 end
 arch helmet
@@ -1190,11 +1190,11 @@ sp 30
 maxsp 10
 exp 50
 wc 14
+x 9
+y 4
 level 3
 carrying 10000
 can_cast_spell 1
-x 9
-y 4
 arch robe
 name fetish hung robe
 end
@@ -1435,9 +1435,9 @@ x 11
 y 5
 end
 arch door_look_2
-blocksview 1
 x 11
 y 5
+blocksview 1
 end
 arch flagstone
 x 11
@@ -1536,9 +1536,9 @@ x 12
 y 5
 end
 arch loaf
-nrof 5
 x 12
 y 5
+nrof 5
 end
 arch flagstone
 x 12

@@ -1,14 +1,14 @@
 arch map
-region scorn
 name house
+swap_time 3600
+region scorn
+width 48
+height 48
 msg
 Creator: Bjoern Helfesrieder
 Email: helfesri@igd.fhg.de
 Date: Fri Jan  5 22:43:54 1996
 endmsg
-x 48
-y 48
-value 3600
 end
 arch dungeon_floor
 end
@@ -1700,6 +1700,10 @@ x 5
 y 25
 end
 arch dungeon_floor
+x 5
+y 26
+end
+arch giant
 x 5
 y 26
 end
@@ -5117,7 +5121,7 @@ y 23
 end
 arch magic_mouth
 msg
-There are some smaller cracks in the 
+There are some smaller cracks in the
 walls here.
 
 endmsg
@@ -6825,7 +6829,7 @@ y 8
 end
 arch magic_mouth
 msg
-You notice a writing on the wall: 
+You notice a writing on the wall:
 "Teleporter Experiment: Might only work
 one-way!!!"
 endmsg
@@ -6838,7 +6842,7 @@ y 9
 end
 arch magic_mouth
 msg
-You notice a writing on the wall: 
+You notice a writing on the wall:
 "Teleporter Experiment: Might only work
 one-way!!!"
 endmsg
@@ -10093,11 +10097,21 @@ arch dungeon_floor
 x 32
 y 19
 end
+arch dragon
+name old experiment
+x 32
+y 19
+end
 arch dungeon_floor
 x 32
 y 20
 end
 arch random_wealth
+x 32
+y 20
+end
+arch dragon
+name old experiment
 x 32
 y 20
 end
@@ -11404,8 +11418,8 @@ y 34
 end
 arch magic_mouth
 msg
-A sign: "Danger! Unsuccessful 
-experiment!" 
+A sign: "Danger! Unsuccessful
+experiment!"
 endmsg
 x 36
 y 35
@@ -12793,6 +12807,11 @@ arch dungeon_floor
 x 41
 y 34
 end
+arch baslic
+name unsuccessful experiment
+x 41
+y 34
+end
 arch dungeon_floor
 x 41
 y 35
@@ -13649,9 +13668,6 @@ y 39
 end
 arch dark_elf
 name angry adventurer
-msg
-
-endmsg
 hp 100
 x 44
 y 39
@@ -14412,23 +14428,4 @@ end
 arch dungeon_floor
 x 47
 y 47
-end
-arch giant
-x 5
-y 26
-end
-arch dragon
-name old experiment
-x 32
-y 19
-end
-arch dragon
-name old experiment
-x 32
-y 20
-end
-arch baslic
-name unsuccessful experiment
-x 41
-y 34
 end

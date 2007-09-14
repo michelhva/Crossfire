@@ -1,14 +1,14 @@
 arch map
 name sailor town
+width 15
+height 15
+enter_x 7
+enter_y 14
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 12:25:58 1999
 endmsg
-hp 7
-sp 14
-x 15
-y 15
 end
 arch grass
 end
@@ -216,6 +216,10 @@ x 2
 y 6
 end
 arch grass
+x 2
+y 7
+end
+arch house_up
 x 2
 y 7
 end
@@ -795,11 +799,22 @@ arch small_stones
 x 9
 y 1
 end
+arch l_shop1
+x 9
+y 1
+end
 arch pstone_2
 x 9
 y 2
 end
 arch pstone_2
+x 9
+y 3
+end
+arch slum1
+slaying ship_home
+hp 1
+sp 10
 x 9
 y 3
 end
@@ -847,6 +862,10 @@ arch grass
 x 9
 y 11
 end
+arch house_long
+x 9
+y 11
+end
 arch grass
 x 9
 y 12
@@ -879,6 +898,10 @@ x 10
 y 2
 end
 arch small_stones
+x 10
+y 3
+end
+arch slum2
 x 10
 y 3
 end
@@ -977,6 +1000,10 @@ x 11
 y 2
 end
 arch small_stones
+x 11
+y 3
+end
+arch slum3
 x 11
 y 3
 end
@@ -1274,31 +1301,4 @@ end
 arch small_stones
 x 14
 y 14
-end
-arch house_up
-x 2
-y 7
-end
-arch l_shop1
-x 9
-y 1
-end
-arch slum1
-slaying ship_home
-hp 1
-sp 10
-x 9
-y 3
-end
-arch house_long
-x 9
-y 11
-end
-arch slum2
-x 10
-y 3
-end
-arch slum3
-x 11
-y 3
 end

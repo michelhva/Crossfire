@@ -1,16 +1,16 @@
 arch map
-region scorn
 name jail_upper
+reset_timeout 7200
+difficulty 6
+region scorn
+width 17
+height 15
+enter_y 7
 msg
 Creator: Casper and Salathar
 Email: salathar@hotmail.com
 Date: Tue Nov  9 21:35:38 GMT 2004
 endmsg
-width 17
-height 15
-enter_y 7
-reset_timeout 7200
-difficulty 6
 end
 arch dungeon_magic
 end
@@ -324,18 +324,18 @@ x 2
 y 5
 end
 arch grate_closed_1
-connected 10
 x 2
 y 5
+connected 10
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 12
 x 2
 y 5
+connected 12
 end
 arch dungeon_magic
 x 2
@@ -343,9 +343,9 @@ y 6
 end
 arch check_inv
 slaying jailkey
-connected 12
 x 2
 y 6
+connected 12
 end
 arch flagstone
 x 2
@@ -361,9 +361,9 @@ y 8
 end
 arch check_inv
 slaying jailkey
-connected 42
 x 2
 y 8
+connected 42
 end
 arch flagstone
 x 2
@@ -378,18 +378,18 @@ x 2
 y 9
 end
 arch grate_closed_1
-connected 40
 x 2
 y 9
+connected 40
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 42
 x 2
 y 9
+connected 42
 end
 arch dungeon_magic
 x 2
@@ -915,18 +915,18 @@ x 6
 y 5
 end
 arch grate_closed_1
-connected 20
 x 6
 y 5
+connected 20
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 22
 x 6
 y 5
+connected 22
 end
 arch dungeon_magic
 x 6
@@ -934,9 +934,9 @@ y 6
 end
 arch check_inv
 slaying jailkey
-connected 22
 x 6
 y 6
+connected 22
 end
 arch flagstone
 x 6
@@ -952,9 +952,9 @@ y 8
 end
 arch check_inv
 slaying jailkey
-connected 52
 x 6
 y 8
+connected 52
 end
 arch flagstone
 x 6
@@ -969,18 +969,18 @@ x 6
 y 9
 end
 arch grate_closed_1
-connected 50
 x 6
 y 9
+connected 50
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 52
 x 6
 y 9
+connected 52
 end
 arch dungeon_magic
 x 6
@@ -1499,18 +1499,18 @@ x 10
 y 5
 end
 arch grate_closed_1
-connected 30
 x 10
 y 5
+connected 30
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 32
 x 10
 y 5
+connected 32
 end
 arch dungeon_magic
 x 10
@@ -1518,9 +1518,9 @@ y 6
 end
 arch check_inv
 slaying jailkey
-connected 32
 x 10
 y 6
+connected 32
 end
 arch flagstone
 x 10
@@ -1536,9 +1536,9 @@ y 8
 end
 arch check_inv
 slaying jailkey
-connected 62
 x 10
 y 8
+connected 62
 end
 arch flagstone
 x 10
@@ -1553,18 +1553,18 @@ x 10
 y 9
 end
 arch grate_closed_1
-connected 60
 x 10
 y 9
+connected 60
 end
 arch magic_ear
 msg
 @match I understand
 The door opens.
 endmsg
-connected 62
 x 10
 y 9
+connected 62
 end
 arch dungeon_magic
 x 10
@@ -2088,19 +2088,19 @@ x 14
 y 1
 end
 arch button_small
-connected 10
 x 14
 y 1
+connected 10
 end
 arch gateTrg1
-connected 12
 x 14
 y 1
+connected 12
 end
 arch flagstone
-no_pass 1
 x 14
 y 2
+no_pass 1
 end
 arch flagstone
 x 14
@@ -2111,19 +2111,19 @@ x 14
 y 3
 end
 arch button_small
-connected 20
 x 14
 y 3
+connected 20
 end
 arch gateTrg1
-connected 22
 x 14
 y 3
+connected 22
 end
 arch flagstone
-no_pass 1
 x 14
 y 4
+no_pass 1
 end
 arch flagstone
 x 14
@@ -2134,19 +2134,19 @@ x 14
 y 5
 end
 arch button_small
-connected 30
 x 14
 y 5
+connected 30
 end
 arch gateTrg1
-connected 32
 x 14
 y 5
+connected 32
 end
 arch flagstone
-no_pass 1
 x 14
 y 6
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -2161,9 +2161,9 @@ x 14
 y 7
 end
 arch flagstone
-no_pass 1
 x 14
 y 7
+no_pass 1
 end
 arch sign
 name Instructions
@@ -2177,9 +2177,9 @@ x 14
 y 7
 end
 arch flagstone
-no_pass 1
 x 14
 y 8
+no_pass 1
 end
 arch dungeon_magic
 x 14
@@ -2198,19 +2198,19 @@ x 14
 y 9
 end
 arch button_small
-connected 40
 x 14
 y 9
+connected 40
 end
 arch gateTrg1
-connected 42
 x 14
 y 9
+connected 42
 end
 arch flagstone
-no_pass 1
 x 14
 y 10
+no_pass 1
 end
 arch flagstone
 x 14
@@ -2221,19 +2221,19 @@ x 14
 y 11
 end
 arch button_small
-connected 50
 x 14
 y 11
+connected 50
 end
 arch gateTrg1
-connected 52
 x 14
 y 11
+connected 52
 end
 arch flagstone
-no_pass 1
 x 14
 y 12
+no_pass 1
 end
 arch flagstone
 x 14
@@ -2244,14 +2244,14 @@ x 14
 y 13
 end
 arch button_small
-connected 60
 x 14
 y 13
+connected 60
 end
 arch gateTrg1
-connected 62
 x 14
 y 13
+connected 62
 end
 arch dungeon_magic
 x 14
@@ -2284,25 +2284,25 @@ y 1
 end
 arch button_small
 face button_sma.112
+x 15
+y 1
 value 1
 connected 15
-x 15
-y 1
 end
 arch spikes_open
-speed 0.500000
-connected 15
 x 15
 y 1
+speed 0.500000
+connected 15
 end
 arch boulder
 x 15
 y 1
 end
 arch flagstone
-no_pass 1
 x 15
 y 2
+no_pass 1
 end
 arch flagstone
 x 15
@@ -2314,25 +2314,25 @@ y 3
 end
 arch button_small
 face button_sma.112
+x 15
+y 3
 value 1
 connected 25
-x 15
-y 3
 end
 arch spikes_open
-speed 0.500000
-connected 25
 x 15
 y 3
+speed 0.500000
+connected 25
 end
 arch boulder
 x 15
 y 3
 end
 arch flagstone
-no_pass 1
 x 15
 y 4
+no_pass 1
 end
 arch flagstone
 x 15
@@ -2344,25 +2344,25 @@ y 5
 end
 arch button_small
 face button_sma.112
+x 15
+y 5
 value 1
 connected 35
-x 15
-y 5
 end
 arch spikes_open
-speed 0.500000
-connected 35
 x 15
 y 5
+speed 0.500000
+connected 35
 end
 arch boulder
 x 15
 y 5
 end
 arch flagstone
-no_pass 1
 x 15
 y 6
+no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -2377,9 +2377,9 @@ x 15
 y 7
 end
 arch flagstone
-no_pass 1
 x 15
 y 7
+no_pass 1
 end
 arch key2
 name Warden's Key
@@ -2388,9 +2388,9 @@ x 15
 y 7
 end
 arch flagstone
-no_pass 1
 x 15
 y 8
+no_pass 1
 end
 arch dungeon_magic
 x 15
@@ -2410,25 +2410,25 @@ y 9
 end
 arch button_small
 face button_sma.112
+x 15
+y 9
 value 1
 connected 45
-x 15
-y 9
 end
 arch spikes_open
-speed 0.500000
-connected 45
 x 15
 y 9
+speed 0.500000
+connected 45
 end
 arch boulder
 x 15
 y 9
 end
 arch flagstone
-no_pass 1
 x 15
 y 10
+no_pass 1
 end
 arch flagstone
 x 15
@@ -2440,25 +2440,25 @@ y 11
 end
 arch button_small
 face button_sma.112
+x 15
+y 11
 value 1
 connected 55
-x 15
-y 11
 end
 arch spikes_open
-speed 0.500000
-connected 55
 x 15
 y 11
+speed 0.500000
+connected 55
 end
 arch boulder
 x 15
 y 11
 end
 arch flagstone
-no_pass 1
 x 15
 y 12
+no_pass 1
 end
 arch flagstone
 x 15
@@ -2470,16 +2470,16 @@ y 13
 end
 arch button_small
 face button_sma.112
+x 15
+y 13
 value 1
 connected 65
-x 15
-y 13
 end
 arch spikes_open
-speed 0.500000
-connected 65
 x 15
 y 13
+speed 0.500000
+connected 65
 end
 arch boulder
 x 15

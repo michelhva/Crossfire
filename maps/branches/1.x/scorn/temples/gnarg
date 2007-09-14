@@ -1,13 +1,13 @@
 arch map
 name gnarg
 region scorn
+width 12
+height 12
 msg
 Creator: John Cater
 Email: john_cater@yahoo.com
 Date: Tue May  2 11:45:23 2000
 endmsg
-width 12
-height 12
 end
 arch dirtfloor
 end
@@ -190,6 +190,12 @@ end
 arch dirtfloor
 x 2
 y 5
+end
+arch giant
+x 2
+y 5
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 2
@@ -374,19 +380,19 @@ y 3
 end
 arch small_troll
 name Troll Priest
-unaggressive 1
-stand_still 1
 x 5
 y 3
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 5
 y 4
 end
 arch altar_gnarg
-level 120
 x 5
 y 4
+level 120
 end
 arch dirtfloor
 x 5
@@ -451,19 +457,19 @@ y 3
 end
 arch small_troll
 name Troll Priest
-unaggressive 1
-stand_still 1
 x 6
 y 3
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 6
 y 4
 end
 arch altar_gnarg
-level 120
 x 6
 y 4
+level 120
 end
 arch dirtfloor
 x 6
@@ -664,6 +670,12 @@ end
 arch dirtfloor
 x 9
 y 5
+end
+arch giant
+x 9
+y 5
+unaggressive 1
+stand_still 1
 end
 arch dirtfloor
 x 9
@@ -868,16 +880,4 @@ end
 arch dun12
 x 11
 y 11
-end
-arch giant
-unaggressive 1
-stand_still 1
-x 2
-y 5
-end
-arch giant
-unaggressive 1
-stand_still 1
-x 9
-y 5
 end

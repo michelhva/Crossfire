@@ -1,13 +1,13 @@
 arch map
-region scorn
 name beginners2
+region scorn
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jun 19 16:21:03 1997
 endmsg
-width 16
-height 16
 end
 arch woodfloor
 end
@@ -1209,9 +1209,9 @@ x 11
 y 7
 end
 arch button_lever
-connected 1
 x 11
 y 7
+connected 1
 end
 arch woodfloor
 x 11
@@ -1226,9 +1226,9 @@ x 11
 y 9
 end
 arch button_lever
-connected 1
 x 11
 y 9
+connected 1
 end
 arch woodfloor
 x 11
@@ -1301,9 +1301,9 @@ x 12
 y 8
 end
 arch spikes_closed
-connected 1
 x 12
 y 8
+connected 1
 end
 arch woodfloor
 x 12
@@ -1376,9 +1376,9 @@ x 13
 y 8
 end
 arch spikes_closed
-connected 1
 x 13
 y 8
+connected 1
 end
 arch woodfloor
 x 13

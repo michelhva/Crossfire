@@ -1,11 +1,11 @@
 arch map
 name twregister
+width 17
+height 14
 msg
 Creator: josh@woosworld.net
 Date:    3/21/2005
 endmsg
-width 17
-height 14
 end
 arch wasteland
 end
@@ -72,11 +72,11 @@ y 1
 end
 arch fire_witch
 name Elite Guard
+x 1
+y 1
 monster 0
 unaggressive 1
 stand_still 1
-x 1
-y 1
 end
 arch dungeon_magic
 x 1
@@ -103,10 +103,10 @@ x 1
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 1
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 1
@@ -137,20 +137,20 @@ x 1
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 1
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 1
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 1
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 1
@@ -170,20 +170,20 @@ x 1
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 1
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 1
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 1
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 1
@@ -218,11 +218,11 @@ y 2
 end
 arch fire_witch
 name Elite Guard
+x 2
+y 2
 monster 0
 unaggressive 1
 stand_still 1
-x 2
-y 2
 end
 arch dungeon_magic
 x 2
@@ -241,10 +241,10 @@ x 2
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 2
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 2
@@ -275,10 +275,10 @@ x 2
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 2
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 2
@@ -324,10 +324,10 @@ x 2
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 2
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 2
@@ -362,11 +362,11 @@ y 2
 end
 arch fire_witch
 name Elite Guard
+x 3
+y 2
 monster 0
 unaggressive 1
 stand_still 1
-x 3
-y 2
 end
 arch dungeon_magic
 x 3
@@ -385,10 +385,10 @@ x 3
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
@@ -404,9 +404,9 @@ msg
 @match *
 Stand back.  Guards only.
 endmsg
-move_on 0
 x 3
 y 6
+move_on 0
 end
 arch dirtfloor
 x 3
@@ -415,9 +415,9 @@ end
 arch dun0
 name Guard
 face witch_fire.111
-blocksview 0
 x 3
 y 6
+blocksview 0
 end
 arch dungeon_magic
 x 3
@@ -436,10 +436,10 @@ x 3
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
@@ -489,10 +489,10 @@ x 3
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
@@ -515,11 +515,11 @@ y 1
 end
 arch fire_witch
 name Elite Guard
+x 4
+y 1
 monster 0
 unaggressive 1
 stand_still 1
-x 4
-y 1
 end
 arch dungeon_magic
 x 4
@@ -546,10 +546,10 @@ x 4
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 4
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 4
@@ -580,10 +580,10 @@ x 4
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 4
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 4
@@ -629,10 +629,10 @@ x 4
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 4
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 4
@@ -642,50 +642,50 @@ arch wasteland
 x 5
 end
 arch permanent_lava
+x 5
+y 1
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 5
 y 1
 end
-arch dungeon_magic
-x 5
-y 1
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 2
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
@@ -702,9 +702,9 @@ end
 arch dun0
 name Guard
 face witch_fire.111
-blocksview 0
 x 5
 y 6
+blocksview 0
 end
 arch dungeon_magic
 x 5
@@ -723,50 +723,50 @@ x 5
 y 8
 end
 arch permanent_lava
+x 5
+y 9
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 5
 y 9
 end
-arch dungeon_magic
-x 5
-y 9
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
@@ -887,9 +887,9 @@ The Sphere draws it's power from the rubies.
 @match ruby|Ruby|rubies|Rubies
 Rubies are very valuable to our society.
 endmsg
-move_on 0
 x 6
 y 11
+move_on 0
 end
 arch dirtfloor
 x 6
@@ -898,9 +898,9 @@ end
 arch dun0
 name Frosty
 face witch_fire.111
-blocksview 0
 x 6
 y 11
+blocksview 0
 end
 arch dungeon_magic
 x 6
@@ -1361,40 +1361,40 @@ arch wasteland
 x 11
 end
 arch permanent_lava
+x 11
+y 1
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 11
 y 1
 end
-arch dungeon_magic
-x 11
-y 1
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 11
 y 2
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 11
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 11
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 11
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 11
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 11
@@ -1472,10 +1472,10 @@ arch wasteland
 x 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 12
 y 1
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 12
@@ -1490,10 +1490,10 @@ x 12
 y 2
 end
 arch marker
+slaying team1
 msg
 Welcome to Team 1!
 endmsg
-slaying team1
 food 500000
 x 12
 y 2
@@ -1502,15 +1502,15 @@ arch teleporter
 slaying teamwar
 hp 4
 sp 8
-speed 0.2
 x 12
 y 2
+speed 0.2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 12
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 12
@@ -1526,25 +1526,25 @@ y 4
 end
 arch altar_trigger
 name Team 1 - 250 Rubies
+slaying ruby
 msg
 Lets get ready to rumble!!
 endmsg
-slaying ruby
-food 250
-connected 4
 exp 1
+food 250
 x 12
 y 4
+connected 4
 end
 arch teleporter
-invisible 1
 hp 12
 sp 2
-connected 4
-speed 0.0
-activate_on_release 0
 x 12
 y 4
+speed 0.0
+invisible 1
+connected 4
+activate_on_release 0
 end
 arch dungeon_magic
 x 12
@@ -1607,9 +1607,9 @@ end
 arch dun0
 name Tourist Guide
 face witch_fire.111
-blocksview 0
 x 12
 y 10
+blocksview 0
 end
 arch dungeon_magic
 x 12
@@ -1621,25 +1621,25 @@ y 11
 end
 arch altar_trigger
 name 1 ruby
+slaying ruby
 msg
 Ok, go take your seat!
 endmsg
-slaying ruby
-food 1
-connected 21
 exp 1
+food 1
 x 12
 y 11
+connected 21
 end
 arch teleporter
-invisible 1
 hp 14
 sp 11
-connected 21
-speed 0.0
-activate_on_release 0
 x 12
 y 11
+speed 0.0
+invisible 1
+connected 21
+activate_on_release 0
 end
 arch dungeon_magic
 x 12
@@ -1657,30 +1657,30 @@ arch wasteland
 x 13
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 1
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 1
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 2
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
@@ -1697,9 +1697,9 @@ end
 arch dun0
 name Arena Master
 face witch_fire.111
-blocksview 0
 x 13
 y 4
+blocksview 0
 end
 arch dungeon_magic
 x 13
@@ -1714,9 +1714,9 @@ Team 1 should enter on the left, and Team 2 on the right!
 Oh, we have been having some trouble powering the teleporters...
 You will probably need some more rubies to power them.  I think 250 should do it for your team for awhile..
 endmsg
+x 13
+y 5
 move_on 0
-x 13
-y 5
 end
 arch dirtfloor
 x 13
@@ -1755,30 +1755,30 @@ x 13
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
@@ -1792,10 +1792,10 @@ arch wasteland
 x 14
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 1
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
@@ -1810,10 +1810,10 @@ x 14
 y 2
 end
 arch marker
+slaying team2
 msg
 Welcome to Team 2!
 endmsg
-slaying team2
 food 500000
 x 14
 y 2
@@ -1822,15 +1822,15 @@ arch teleporter
 slaying teamwar
 hp 34
 sp 8
-speed 0.2
 x 14
 y 2
+speed 0.2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
@@ -1846,25 +1846,25 @@ y 4
 end
 arch altar_trigger
 name Team 2 - 250 Rubies
+slaying ruby
 msg
 Lets get ready to rumble!!
 endmsg
-slaying ruby
-food 250
-connected 5
 exp 1
+food 250
 x 14
 y 4
+connected 5
 end
 arch teleporter
-invisible 1
 hp 14
 sp 2
-connected 5
-speed 0.0
-activate_on_release 0
 x 14
 y 4
+speed 0.0
+invisible 1
+connected 5
+activate_on_release 0
 end
 arch dungeon_magic
 x 14
@@ -1907,10 +1907,10 @@ x 14
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
@@ -1926,23 +1926,23 @@ y 11
 end
 arch marker
 slaying tw_spectator
-connected 21
 food 2500
 x 14
 y 11
+connected 21
 end
 arch teleporter
 hp 14
 sp 9
-speed 0.2
 x 14
 y 11
+speed 0.2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
@@ -1956,40 +1956,40 @@ arch wasteland
 x 15
 end
 arch permanent_lava
+x 15
+y 1
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 15
 y 1
 end
-arch dungeon_magic
-x 15
-y 1
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 2
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
@@ -2036,30 +2036,30 @@ x 15
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15

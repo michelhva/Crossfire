@@ -1,14 +1,13 @@
 arch map
 name dd_chaos
+width 6
+height 6
+enter_x 5
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Jan 27 18:57:19 1999
 endmsg
-hp 5
-sp 0
-x 6
-y 6
 end
 arch permanent_lava
 end

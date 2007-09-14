@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 darkness 3
@@ -13,44 +14,30 @@ Date: Tue Aug  3 23:32:57 2004
 endmsg
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 2
 end
 arch blocked
-msg
-endmsg
 x 2
 y 3
 end
@@ -79,26 +66,18 @@ x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 8
 end
 arch blocked
-msg
-endmsg
 x 3
 y 1
 end
 arch blocked
-msg
-endmsg
 x 3
 y 2
 end
@@ -139,25 +118,17 @@ x 3
 y 7
 end
 arch blocked
-msg
-endmsg
 x 3
 y 8
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
@@ -206,32 +177,22 @@ x 4
 y 8
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
 arch blocked
-msg
-endmsg
 x 4
 y 10
 end
 arch blocked
-msg
-endmsg
 x 4
 y 11
 end
 arch blocked
-msg
-endmsg
 x 4
 y 12
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch dirtfloor
@@ -314,26 +275,18 @@ x 5
 y 11
 end
 arch blocked
-msg
-endmsg
 x 5
 y 12
 end
 arch blocked
-msg
-endmsg
 x 5
 y 13
 end
 arch blocked
-msg
-endmsg
 x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch dirtfloor
@@ -425,14 +378,10 @@ x 6
 y 13
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch dirtfloor
@@ -528,20 +477,14 @@ x 7
 y 13
 end
 arch blocked
-msg
-endmsg
 x 7
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 y 15
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch dirtfloor
@@ -645,19 +588,13 @@ x 8
 y 14
 end
 arch blocked
-msg
-endmsg
 x 8
 y 15
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
@@ -698,8 +635,6 @@ x 9
 y 7
 end
 arch blocked
-msg
-endmsg
 x 9
 y 8
 end
@@ -756,14 +691,10 @@ x 9
 y 14
 end
 arch blocked
-msg
-endmsg
 x 9
 y 15
 end
 arch blocked
-msg
-endmsg
 x 10
 y 1
 end
@@ -808,8 +739,6 @@ x 10
 y 6
 end
 arch blocked
-msg
-endmsg
 x 10
 y 7
 end
@@ -874,20 +803,14 @@ x 10
 y 14
 end
 arch blocked
-msg
-endmsg
 x 10
 y 15
 end
 arch blocked
-msg
-endmsg
 x 11
 y 1
 end
 arch blocked
-msg
-endmsg
 x 11
 y 2
 end
@@ -1000,14 +923,10 @@ x 11
 y 14
 end
 arch blocked
-msg
-endmsg
 x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
@@ -1120,14 +1039,10 @@ x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 y 2
 end
@@ -1220,20 +1135,14 @@ x 13
 y 13
 end
 arch blocked
-msg
-endmsg
 x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 2
 end
@@ -1326,20 +1235,14 @@ x 14
 y 13
 end
 arch blocked
-msg
-endmsg
 x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
@@ -1408,44 +1311,30 @@ x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
 arch blocked
-msg
-endmsg
 x 15
 y 13
 end
 arch blocked
-msg
-endmsg
 x 15
 y 14
 end
 arch blocked
-msg
-endmsg
 x 16
 y 3
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
 arch blocked
-msg
-endmsg
 x 16
 y 6
 end
@@ -1482,50 +1371,34 @@ x 16
 y 10
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
 arch blocked
-msg
-endmsg
 x 16
 y 12
 end
 arch blocked
-msg
-endmsg
 x 17
 y 6
 end
 arch blocked
-msg
-endmsg
 x 17
 y 7
 end
 arch blocked
-msg
-endmsg
 x 17
 y 8
 end
 arch blocked
-msg
-endmsg
 x 17
 y 9
 end
 arch blocked
-msg
-endmsg
 x 17
 y 10
 end
 arch blocked
-msg
-endmsg
 x 17
 y 11
 end

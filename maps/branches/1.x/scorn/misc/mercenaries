@@ -1,6 +1,8 @@
 arch map
-region scorn
 name mercenaries
+region scorn
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -823,10 +825,10 @@ y 12
 end
 arch sign
 msg
-Welcome to the mercenaries agency. 
-Look through our selection, and get 
+Welcome to the mercenaries agency.
+Look through our selection, and get
 the bodyguard of your choice. And
-remember,  when the going gets tough, 
+remember,  when the going gets tough,
 the tough get money!
 endmsg
 x 7

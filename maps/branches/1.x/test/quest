@@ -1,13 +1,13 @@
 arch map
 name quest
-msg
-Creator: CF Java Map Editor
-Date:    7/14/2005
-endmsg
 width 20
 height 20
 enter_x 2
 enter_y 2
+msg
+Creator: CF Java Map Editor
+Date:    7/14/2005
+endmsg
 end
 arch cobblestones2
 end
@@ -16,16 +16,16 @@ name dwarf
 face dwarf_p.111
 hp 100
 maxhp 100
-pick_up 0
 randomitems standard
+pick_up 0
 arch quest_override
+name_pl dummy
 msg
 @match 1
 First sentence
 @match 2
 Second sentence
 endmsg
-name_pl dummy
 hp 7
 end
 end
@@ -111,17 +111,15 @@ endmsg
 x 2
 y 5
 arch quest_override
+name_pl dummy
 msg
 @match quest
 Great, now i can help you.
 endmsg
 hp 2
-name_pl dummy
 arch quest_end_quest
-lore
-You finished the quest.
-endlore
 name_pl dummy
+You finished the quest.
 end
 end
 end
@@ -296,17 +294,15 @@ end
 arch c_sage
 x 8
 arch quest_override
+name_pl dummy
 msg
 @match quest
 Quest started.
 endmsg
 hp 1
-name_pl dummy
 arch quest_start_task
-lore
-See other.
-endlore
 name_pl dummy
+See other.
 end
 end
 end

@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Cornerbrook
+difficulty 2
+region scorn
+width 25
+height 25
+enter_x 11
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    4/27/2003
 endmsg
-width 25
-height 25
-enter_x 11
-enter_y 1
-difficulty 2
 outdoor 1
 end
 arch grass
@@ -438,20 +438,20 @@ y 11
 end
 arch phole_3
 name hole
+slaying cornerbrook_under
 msg
 Icky, there is a bitter smell in here.
 endmsg
-slaying cornerbrook_under
 hp 1
 sp 1
-move_on 0
 x 2
 y 11
+move_on 0
 end
 arch evergreen
-blocksview 1
 x 2
 y 12
+blocksview 1
 end
 arch woodfloor
 x 2
@@ -582,11 +582,11 @@ slums around here
 @match *
 I told the landlord about the bugs, but he's a tightwad.
 endmsg
+x 3
+y 6
 randomitems jail
 monster 0
 stand_still 1
-x 3
-y 6
 end
 arch woodfloor
 x 3
@@ -753,16 +753,16 @@ x 4
 y 10
 end
 arch evergreen
-blocksview 1
-no_pass 1
 x 4
 y 11
+no_pass 1
+blocksview 1
 end
 arch evergreen
-blocksview 1
-no_pass 1
 x 4
 y 12
+no_pass 1
+blocksview 1
 end
 arch woodfloor
 x 4
@@ -1037,11 +1037,11 @@ msg
 @match *
 Gods! I can't seem to find anything to eat around here!
 endmsg
+x 6
+y 7
 randomitems jail
 monster 0
 stand_still 1
-x 6
-y 7
 end
 arch woodfloor
 x 6
@@ -2723,11 +2723,11 @@ wise cracks about it.
 I never should have married her.
 I should have stayed at sea.
 endmsg
+x 17
+y 8
 randomitems jail
 monster 0
 stand_still 1
-x 17
-y 8
 end
 arch woodfloor
 x 17
@@ -2766,9 +2766,9 @@ x 17
 y 14
 end
 arch stove
-type 0
 x 17
 y 14
+type 0
 end
 arch woodfloor
 x 17
@@ -2810,9 +2810,9 @@ He lost his earhorn too...
 My father lost his walking stick,
 if you find it please bring it back to him.
 endmsg
-randomitems jail
 x 17
 y 20
+randomitems jail
 end
 arch woodfloor
 x 17
@@ -2881,9 +2881,9 @@ x 18
 y 5
 end
 arch door_1
-no_pass 0
 x 18
 y 5
+no_pass 0
 end
 arch light3
 x 18
@@ -2919,9 +2919,9 @@ y 9
 end
 arch creator
 other_arch mover_5
-connected 3
 x 18
 y 10
+connected 3
 end
 arch woodfloor
 x 18
@@ -3064,11 +3064,11 @@ Said he found a treasure map.
 @match *
 Never marry an old pirate..
 endmsg
+x 19
+y 3
 randomitems jail
 monster 0
 unaggressive 1
-x 19
-y 3
 end
 arch woodfloor
 x 19
@@ -3209,9 +3209,9 @@ x 20
 y 3
 end
 arch stove
-is_cauldron 0
 x 20
 y 3
+is_cauldron 0
 end
 arch woodfloor
 x 20
@@ -3373,9 +3373,9 @@ y 8
 end
 arch creator
 other_arch mover_7
-connected 3
 x 21
 y 9
+connected 3
 end
 arch woodfloor
 x 21
@@ -3383,10 +3383,8 @@ y 9
 end
 arch sheep
 name Chancy
-randomitems jail
-monster 0
-unaggressive 1
-sleep 1
+x 21
+y 9
 attack_movement 0
 resist_physical 100
 resist_magic 100
@@ -3396,8 +3394,10 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
-x 21
-y 9
+randomitems jail
+monster 0
+unaggressive 1
+sleep 1
 end
 arch woodfloor
 x 21
@@ -3453,17 +3453,17 @@ y 18
 end
 arch check_inv
 slaying Gramp's walking stick
-connected 5
-last_heal 1
 x 21
 y 18
+last_heal 1
+connected 5
 end
 arch check_inv
 slaying Gramp's earhorn
-connected 6
-last_heal 1
 x 21
 y 18
+last_heal 1
+connected 6
 end
 arch woodfloor
 x 21
@@ -3471,17 +3471,17 @@ y 19
 end
 arch check_inv
 slaying Gramp's walking stick
-connected 5
-last_heal 1
 x 21
 y 19
+last_heal 1
+connected 5
 end
 arch check_inv
 slaying Gramp's earhorn
-connected 6
-last_heal 1
 x 21
 y 19
+last_heal 1
+connected 6
 end
 arch woodfloor
 x 21
@@ -3583,9 +3583,9 @@ msg
 Bah!  Baaah!
 (I think he wants you to follow him...)
 endmsg
-connected 3
 x 22
 y 9
+connected 3
 end
 arch woodfloor
 x 22
@@ -3660,13 +3660,13 @@ Don't mumble - out with it now...
 @match *
 Hunn?  Speak up there!
 endmsg
-randomitems jail
-level 2
-can_cast_spell 0
-monster 0
-stand_still 1
 x 22
 y 18
+level 2
+randomitems jail
+monster 0
+can_cast_spell 0
+stand_still 1
 end
 arch magic_mouth
 msg
@@ -3674,11 +3674,11 @@ You found my staff, thanks.
 Heres a little something for you.
 Don't spend it all on sweets now.
 endmsg
-connected 5
-move_on 0
 food 1
 x 22
 y 19
+connected 5
+move_on 0
 end
 arch magic_mouth
 msg
@@ -3689,11 +3689,11 @@ Now I can hear again.
 at me all day.  Maybe I better hide
 it again...
 endmsg
-connected 6
-move_on 0
 food 1
 x 22
 y 19
+connected 6
+move_on 0
 end
 arch woodfloor
 x 22
@@ -3731,10 +3731,10 @@ x 23
 end
 arch detector
 slaying Chancy
-connected 6
-speed 1.0
 x 23
 y 1
+speed 1.0
+connected 6
 end
 arch brush
 x 23
@@ -4068,40 +4068,39 @@ end
 arch teleporter
 hp 20
 sp 18
-connected 6
-speed 0.0
 x 24
 y 22
+speed 0.0
+connected 6
 end
 arch gem
-nrof 3
 x 24
 y 22
+nrof 3
 end
 arch teleporter
 hp 20
 sp 18
-connected 5
-speed 0.0
 x 24
 y 23
+speed 0.0
+connected 5
 end
 arch gem
-nrof 2
 x 24
 y 23
+nrof 2
 end
 arch teleporter
 hp 22
 sp 1
-connected 6
-speed 0.0
 x 24
 y 24
+speed 0.0
+connected 6
 end
 arch key2
 name Mark's key
-name_pl
 slaying marks_key
 x 24
 y 24

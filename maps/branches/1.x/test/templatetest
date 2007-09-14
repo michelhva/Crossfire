@@ -1,13 +1,13 @@
 arch map
 name templatetest
-msg
-Creator: CF Java Map Editor
-Date:    10/16/2005
-endmsg
 width 10
 height 24
 enter_x 5
 enter_y 11
+msg
+Creator: CF Java Map Editor
+Date:    10/16/2005
+endmsg
 end
 arch moat_2_2_2
 end
@@ -208,6 +208,7 @@ x 2
 y 2
 end
 arch stair_down
+slaying /@!%ntree/main
 msg
 layoutstyle onion
 symmetry 0
@@ -220,7 +221,6 @@ wallstyle wooden
 floorstyle stones2
 exitstyle sstair
 endmsg
-slaying /@!%ntree/main
 x 2
 y 2
 end
@@ -776,6 +776,7 @@ y 2
 end
 arch stair_down
 name stairs going down (xystuff)
+slaying /@!%ntree/x%x/y%y/templatetest
 msg
 layoutstyle onion
 symmetry 0
@@ -788,7 +789,6 @@ wallstyle wooden
 floorstyle stones2
 exitstyle sstair
 endmsg
-slaying /@!%ntree/x%x/y%y/templatetest
 x 7
 y 2
 end
@@ -806,6 +806,7 @@ y 4
 end
 arch stair_down
 name stairs going down (xystuff)
+slaying /@!%ntree/x%x/y%y/templatetest
 msg
 layoutstyle onion
 symmetry 0
@@ -818,7 +819,6 @@ wallstyle wooden
 floorstyle stones2
 exitstyle sstair
 endmsg
-slaying /@!%ntree/x%x/y%y/templatetest
 x 7
 y 4
 end
@@ -836,6 +836,7 @@ y 6
 end
 arch stair_down
 name stairs going down (xystuff)
+slaying /@!%ntree/x%x/y%y/templatetest
 msg
 layoutstyle onion
 symmetry 0
@@ -848,7 +849,6 @@ wallstyle wooden
 floorstyle stones2
 exitstyle sstair
 endmsg
-slaying /@!%ntree/x%x/y%y/templatetest
 x 7
 y 6
 end

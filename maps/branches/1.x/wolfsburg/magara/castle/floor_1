@@ -1,13 +1,13 @@
 arch map
-region wolfsburg
 name floor_1
+region wolfsburg
+width 49
+height 40
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 12 03:36:56 1994
 endmsg
-x 49
-y 40
 end
 arch flagstone
 end
@@ -459,7 +459,7 @@ This is a new version of the Castle
 of Magara. The outlook has been
 improved and some valuable treasure
 has been put in to make it more
-attractive. =)  
+attractive. =)
 endmsg
 x 2
 y 1
@@ -1685,6 +1685,10 @@ arch flagstone
 x 6
 y 27
 end
+arch troll
+x 6
+y 27
+end
 arch flagstone
 x 6
 y 28
@@ -1718,6 +1722,10 @@ x 6
 y 34
 end
 arch flagstone
+x 6
+y 35
+end
+arch dragon
 x 6
 y 35
 end
@@ -2369,6 +2377,10 @@ arch flagstone
 x 9
 y 30
 end
+arch troll
+x 9
+y 30
+end
 arch flagstone
 x 9
 y 31
@@ -2394,6 +2406,10 @@ x 9
 y 35
 end
 arch flagstone
+x 9
+y 36
+end
+arch dragon
 x 9
 y 36
 end
@@ -4806,6 +4822,10 @@ arch flagstone
 x 19
 y 36
 end
+arch dread
+x 19
+y 36
+end
 arch flagstone
 x 19
 y 37
@@ -5805,6 +5825,10 @@ arch flagstone
 x 24
 y 4
 end
+arch giant
+x 24
+y 4
+end
 arch flagstone
 x 24
 y 5
@@ -6220,6 +6244,10 @@ x 25
 y 35
 end
 arch flagstone
+x 25
+y 36
+end
+arch chinese_dragon
 x 25
 y 36
 end
@@ -6814,6 +6842,10 @@ x 28
 y 34
 end
 arch flagstone
+x 28
+y 35
+end
+arch chinese_dragon
 x 28
 y 35
 end
@@ -11938,36 +11970,4 @@ end
 arch cwall_2_2_4
 x 48
 y 39
-end
-arch troll
-x 6
-y 27
-end
-arch dragon
-x 6
-y 35
-end
-arch troll
-x 9
-y 30
-end
-arch dragon
-x 9
-y 36
-end
-arch dread
-x 19
-y 36
-end
-arch giant
-x 24
-y 4
-end
-arch chinese_dragon
-x 25
-y 36
-end
-arch chinese_dragon
-x 28
-y 35
 end

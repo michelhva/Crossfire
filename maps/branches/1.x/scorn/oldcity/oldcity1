@@ -1,15 +1,15 @@
 arch map
-region scornoldcity
 name <untitled>
+region scornoldcity
+width 20
+height 20
+enter_x 18
+enter_y 11
 msg
 Creator:
 Email:
 Date: Sat Oct 16 19:49:24 1993
 endmsg
-width 20
-height 20
-enter_x 18
-enter_y 11
 tile_path_1 oldcity10
 tile_path_3 oldcity2
 tile_path_4 oldcity9
@@ -80,8 +80,8 @@ y 11
 end
 arch sea
 name stream
-speed_left -0.900000
 y 11
+speed_left -0.900000
 end
 arch sea
 y 12
@@ -193,9 +193,9 @@ y 10
 end
 arch sea
 name stream
-speed_left -0.900000
 x 1
 y 10
+speed_left -0.900000
 end
 arch sea
 name stream
@@ -1458,10 +1458,10 @@ endmsg
 hp 20
 maxhp 20
 exp 150
-level 3
-unaggressive 1
 x 13
 y 5
+level 3
+unaggressive 1
 end
 arch dungeon_floor
 x 13

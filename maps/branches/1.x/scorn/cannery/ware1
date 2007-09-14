@@ -1,15 +1,15 @@
 arch map
-region scorn
 name Cannery
+region scorn
+width 40
+height 40
+enter_x 19
+enter_y 39
 msg
 Creator: 
 Email: 
 Date: Fri Oct 15 12:43:59 1993
 endmsg
-hp 19
-sp 39
-x 40
-y 40
 end
 arch cobblestones2
 end
@@ -1427,6 +1427,10 @@ x 6
 y 15
 end
 arch cobblestones2
+x 6
+y 16
+end
+arch troll
 x 6
 y 16
 end
@@ -6041,6 +6045,10 @@ arch cobblestones2
 x 28
 y 3
 end
+arch dragon
+x 28
+y 3
+end
 arch cobblestones2
 x 28
 y 4
@@ -6640,6 +6648,10 @@ x 31
 y 2
 end
 arch cobblestones2
+x 31
+y 3
+end
+arch dragon
 x 31
 y 3
 end
@@ -7544,6 +7556,10 @@ x 35
 y 11
 end
 arch cobblestones2
+x 35
+y 12
+end
+arch giant
 x 35
 y 12
 end
@@ -8670,20 +8686,4 @@ end
 arch wall_2_2_4
 x 39
 y 39
-end
-arch troll
-x 6
-y 16
-end
-arch dragon
-x 28
-y 3
-end
-arch dragon
-x 31
-y 3
-end
-arch giant
-x 35
-y 12
 end

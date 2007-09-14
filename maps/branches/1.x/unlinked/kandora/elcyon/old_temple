@@ -1,12 +1,13 @@
 arch map
 name Forgotten Temple
+width 16
+height 16
+enter_x 15
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Feb  3 18:14:20 1999
 endmsg
-hp 15
-sp 0
 end
 arch jungle_2
 end
@@ -580,6 +581,14 @@ x 7
 y 5
 end
 arch grass
+x 7
+y 6
+end
+arch courthouse
+name ancient temple
+slaying temple
+hp 1
+sp 16
 x 7
 y 6
 end
@@ -1274,12 +1283,4 @@ end
 arch jungle_2
 x 15
 y 15
-end
-arch courthouse
-name ancient temple
-slaying temple
-hp 1
-sp 16
-x 7
-y 6
 end

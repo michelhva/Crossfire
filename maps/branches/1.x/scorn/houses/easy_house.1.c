@@ -1,13 +1,13 @@
 arch map
 name Easy House Basement
 region scorn
+darkness 3
+width 16
+height 16
 msg
 Creator: Bort
 Date:    5/26/2006
 endmsg
-width 16
-height 16
-darkness 3
 end
 arch cobblestones2
 end
@@ -220,9 +220,9 @@ x 2
 y 2
 end
 arch mouse
-generator 0
 x 2
 y 2
+generator 0
 end
 arch cobblestones2
 x 2
@@ -700,9 +700,9 @@ y 9
 end
 arch fog
 name smoke
-is_floor 0
 x 6
 y 9
+is_floor 0
 end
 arch cobblestones2
 x 6
@@ -827,15 +827,15 @@ y 13
 end
 arch orc_leader_arc
 name orc champion Slupb
-level 4
-exp 45
-wc 16
 hp 20
 maxhp 20
-can_see_in_dark 1
-resist_fire 50
+exp 45
+wc 16
 x 7
 y 13
+level 4
+resist_fire 50
+can_see_in_dark 1
 arch random_wealth
 end
 arch random_food
@@ -913,9 +913,9 @@ y 8
 end
 arch fog
 name smoke
-is_floor 0
 x 8
 y 8
+is_floor 0
 end
 arch cobblestones2
 x 8
@@ -939,12 +939,12 @@ y 13
 end
 arch orc_leader_arc
 name orc shaman Sluu
-can_cast_spell 1
 sp 6
 maxsp 6
-run_away 75
 x 8
 y 13
+run_away 75
+can_cast_spell 1
 arch skill_pyromancy
 end
 arch pyro_book
@@ -986,9 +986,9 @@ y 2
 end
 arch fog
 name smoke
-is_floor 0
 x 9
 y 2
+is_floor 0
 end
 arch cobblestones2
 x 9
@@ -1003,9 +1003,9 @@ x 9
 y 5
 end
 arch mouse
-generator 0
 x 9
 y 5
+generator 0
 end
 arch cobblestones2
 x 9

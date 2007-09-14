@@ -1,14 +1,14 @@
 arch map
-region scorn
 name medieval_kitchen
-msg
-Creator: CF Java Map Editor
-Date:    12/29/2002
-endmsg
+region scorn
 width 9
 height 12
 enter_x 4
 enter_y 11
+msg
+Creator: CF Java Map Editor
+Date:    12/29/2002
+endmsg
 end
 arch woodfloor
 end
@@ -99,11 +99,11 @@ y 1
 end
 arch cheeseburger
 name Garbled's Cheeseburger, Plain
-no_pick 1
-startequip 1
 x 1
 y 1
 map_layer item
+no_pick 1
+startequip 1
 end
 arch woodfloor
 x 1
@@ -114,19 +114,19 @@ x 1
 y 2
 end
 arch cabbage
-no_pick 1
 food 30
-startequip 1
 x 1
 y 2
 map_layer item
+no_pick 1
+startequip 1
 end
 arch carrot
-no_pick 1
-startequip 1
 x 1
 y 2
 map_layer item
+no_pick 1
+startequip 1
 end
 arch woodfloor
 x 1
@@ -171,10 +171,10 @@ x 1
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 1
 y 7
+no_magic 1
+damned 1
 end
 arch chair_1.4
 x 1
@@ -187,30 +187,30 @@ Look at you...covered in mud and monster blood...
 You think that is supposed to turn a girl on?
 Go away before I call the guards!
 endmsg
-level 1
 exp 1
-can_cast_spell 0
-monster 0
-friendly 1
-stand_still 1
 x 1
 y 7
+level 1
+monster 0
+friendly 1
+can_cast_spell 0
+stand_still 1
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 1
 y 8
+no_magic 1
+damned 1
 end
 arch chair_1.4
 x 1
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 1
 y 9
+no_magic 1
+damned 1
 end
 arch chair_1.4
 x 1
@@ -223,16 +223,16 @@ You adventures... always making a mess of our town.
 Go find adventure elsewhere!
 endmsg
 exp 1
-monster 0
-friendly 1
 x 1
 y 9
+monster 0
+friendly 1
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 1
 y 10
+no_magic 1
+damned 1
 end
 arch chair_1.4
 x 1
@@ -240,24 +240,24 @@ y 10
 end
 arch guildmaster
 name thief
-face thief.151
 msg
 @match *
 Never sit with your back to the door...
 at least in this town.
 endmsg
-randomitems none
-level 1
-exp 1
+face thief.151
 hp 100
 maxhp 100
-one_hit 1
+exp 1
+x 1
+y 10
+level 1
+randomitems none
+pick_up 0
 monster 0
 friendly 1
 stand_still 1
-pick_up 0
-x 1
-y 10
+one_hit 1
 end
 arch woodfloor2
 x 1
@@ -282,10 +282,10 @@ x 2
 y 1
 end
 arch pear
-no_pick 1
 x 2
 y 1
 map_layer item
+no_pick 1
 end
 arch woodfloor
 x 2
@@ -316,48 +316,48 @@ x 2
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 2
 y 7
+no_magic 1
+damned 1
 end
 arch table_2
 x 2
 y 7
 end
 arch w_glass
-value 1
-no_pick 1
-startequip 1
 x 2
 y 7
+value 1
 map_layer item
+no_pick 1
+startequip 1
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 2
 y 8
+no_magic 1
+damned 1
 end
 arch table_2
 x 2
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 2
 y 9
+no_magic 1
+damned 1
 end
 arch table_2
 x 2
 y 9
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 2
 y 10
+no_magic 1
+damned 1
 end
 arch table_2
 x 2
@@ -382,22 +382,22 @@ x 3
 y 1
 end
 arch rock
-no_pass 0
-can_roll 0
 x 3
 y 1
+no_pass 0
+can_roll 0
 end
 arch book_clasp
+title of Gourmet
 msg
 A mushroom which provides a bit more
 for the refined tastes, can be made with
 7 mushrooms, and water of the wise.
 endmsg
-title of Gourmet
-no_pick 1
-identified 1
 x 3
 y 1
+no_pick 1
+identified 1
 end
 arch flagstone
 x 3
@@ -448,10 +448,10 @@ x 3
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 3
 y 7
+no_magic 1
+damned 1
 end
 arch chair_1.2
 x 3
@@ -462,40 +462,40 @@ msg
 @match *
 I wish Garbled hadn't eaten all the cheeseburgers!
 endmsg
-randomitems none
-level 1
 exp 1
+x 3
+y 7
+level 1
+randomitems none
 monster 0
 friendly 1
 stand_still 1
-x 3
-y 7
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 3
 y 8
+no_magic 1
+damned 1
 end
 arch chair_1.2
 x 3
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 3
 y 9
+no_magic 1
+damned 1
 end
 arch chair_1.2
 x 3
 y 9
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 3
 y 10
+no_magic 1
+damned 1
 end
 arch chair_1.2
 x 3
@@ -540,86 +540,86 @@ x 4
 y 4
 end
 arch pedestal
-invisible 1
-connected 11
 x 4
 y 4
+invisible 1
+connected 11
 end
 arch flagstone
 x 4
 y 5
 end
 arch ggate_closed
-damned 1
-no_magic 1
-connected 11
 x 4
 y 5
-end
-arch dirtfloor
+connected 11
 no_magic 1
 damned 1
+end
+arch dirtfloor
 x 4
 y 6
+no_magic 1
+damned 1
 end
 arch check_inv
 slaying kitchen_house1
-connected 11
 x 4
 y 6
+connected 11
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 4
 y 7
+no_magic 1
+damned 1
 end
 arch trigger_marker
+slaying kitchen_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying kitchen_house1
-connected 10
-speed 1.0
 food 504
 x 4
 y 7
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 4
 y 7
+connected 10
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 4
 y 8
-end
-arch dirtfloor
 no_magic 1
 damned 1
+end
+arch dirtfloor
 x 4
 y 9
+no_magic 1
+damned 1
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 4
 y 10
-end
-arch woodfloor2
 no_magic 1
 damned 1
+end
+arch woodfloor2
 x 4
 y 11
+no_magic 1
+damned 1
 end
 arch oakdoor
-face odoor_2.111
 slaying /world/world_105_115
+face odoor_2.111
 hp 14
 sp 39
 x 4
@@ -636,23 +636,22 @@ x 5
 y 1
 end
 arch rock
-no_pass 0
-can_roll 0
-can_roll 0
 x 5
 y 1
+no_pass 0
+can_roll 0
 end
 arch book_clasp
+title of Aelingas
 msg
 The fabled waybread of Aelingas requires
 7 of the elven wafers, and a draught of
 hero's drink.
 endmsg
-title of Aelingas
-no_pick 1
-identified 1
 x 5
 y 1
+no_pick 1
+identified 1
 end
 arch flagstone
 x 5
@@ -703,30 +702,30 @@ x 5
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 5
 y 7
+no_magic 1
+damned 1
 end
 arch table
 x 5
 y 7
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 5
 y 8
+no_magic 1
+damned 1
 end
 arch chair_1.3
 x 5
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 5
 y 9
+no_magic 1
+damned 1
 end
 arch chair_1.1
 x 5
@@ -738,26 +737,26 @@ msg
 Better...better get a bucket!
 endmsg
 exp 1
+x 5
+y 9
 monster 0
 friendly 1
 stand_still 1
-x 5
-y 9
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 5
 y 10
+no_magic 1
+damned 1
 end
 arch table
 x 5
 y 10
 end
 arch roast_bird
-no_pick 1
 x 5
 y 10
+no_pick 1
 end
 arch woodfloor2
 x 5
@@ -786,12 +785,12 @@ x 6
 y 1
 end
 arch wine
-value 1
-no_pick 1
-startequip 1
 x 6
 y 1
+value 1
 map_layer item
+no_pick 1
+startequip 1
 end
 arch woodfloor
 x 6
@@ -822,30 +821,30 @@ x 6
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 6
 y 7
+no_magic 1
+damned 1
 end
 arch table
 x 6
 y 7
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 6
 y 8
+no_magic 1
+damned 1
 end
 arch chair_1.3
 x 6
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 6
 y 9
+no_magic 1
+damned 1
 end
 arch chair_1.1
 x 6
@@ -865,28 +864,28 @@ if you have woodlore that is.
 My this coffee is strong...
 endmsg
 exp 1
-monster 0
-friendly 1
-stand_still 1
 x 6
 y 9
 map_layer item
+monster 0
+friendly 1
+stand_still 1
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 6
 y 10
+no_magic 1
+damned 1
 end
 arch table
 x 6
 y 10
 end
 arch coffee
-no_pick 1
 x 6
 y 10
 map_layer item
+no_pick 1
 end
 arch woodfloor2
 x 6
@@ -913,10 +912,10 @@ end
 arch bag_popcorn
 name Yarro's Bag of Unbuttered Popcorn
 name_pl Bags of Unbuttered Popcorn
-no_pick 1
 x 7
 y 1
 map_layer item
+no_pick 1
 end
 arch woodfloor
 x 7
@@ -928,20 +927,20 @@ y 2
 end
 arch dragon_steak
 name aging steak
-value 1
-no_pick 1
 food 0
-startequip 1
 x 7
 y 2
+value 1
 map_layer item
+no_pick 1
+startequip 1
 end
 arch orcchop
-no_pick 1
-startequip 1
 x 7
 y 2
 map_layer item
+no_pick 1
+startequip 1
 end
 arch woodfloor
 x 7
@@ -980,30 +979,30 @@ x 7
 y 6
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 7
 y 7
+no_magic 1
+damned 1
 end
 arch table
 x 7
 y 7
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 7
 y 8
+no_magic 1
+damned 1
 end
 arch chair_1.3
 x 7
 y 8
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 7
 y 9
+no_magic 1
+damned 1
 end
 arch chair_1.1
 x 7
@@ -1011,29 +1010,29 @@ y 9
 end
 arch guildmaster
 name monk
-face monk.151
 msg
 @match *
 <In a whisper>  I wish he would just shutup...
 Oh my, I musn't think like that what would Gaea do?
 endmsg
-randomitems none
-level 1
-exp 1
+face monk.151
 hp 100
 maxhp 100
+exp 1
+x 7
+y 9
+level 1
+randomitems none
+pick_up 0
 monster 0
 friendly 1
 stand_still 1
-pick_up 0
-x 7
-y 9
 end
 arch dirtfloor
-no_magic 1
-damned 1
 x 7
 y 10
+no_magic 1
+damned 1
 end
 arch table
 x 7

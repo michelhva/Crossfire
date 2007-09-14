@@ -1,16 +1,16 @@
 arch map
-region scorn
 name tower
+reset_timeout 1800
+region scorn
+width 32
+height 32
+enter_x 16
+enter_y 29
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:58:03 1993
 endmsg
-width 32
-height 32
-enter_x 16
-enter_y 29
-reset_timeout 1800
 end
 arch grass
 end
@@ -54,21 +54,21 @@ arch grass
 y 13
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 y 14
+invisible 1
 end
 arch cobblestones2
 y 14
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 y 15
+invisible 1
 end
 arch cobblestones2
 y 15
@@ -479,18 +479,18 @@ x 3
 y 14
 end
 arch door_look_2
-randomitems none
 x 3
 y 14
+randomitems none
 end
 arch cobblestones2
 x 3
 y 15
 end
 arch door_look_2
-randomitems none
 x 3
 y 15
+randomitems none
 end
 arch woodfloor
 x 3
@@ -2178,9 +2178,9 @@ x 10
 y 22
 end
 arch door_look_1
-randomitems none
 x 10
 y 22
+randomitems none
 end
 arch woodfloor
 x 10
@@ -2410,9 +2410,9 @@ x 11
 y 22
 end
 arch door_look_1
-randomitems none
 x 11
 y 22
+randomitems none
 end
 arch woodfloor
 x 11
@@ -3181,11 +3181,11 @@ x 14
 y 31
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 15
+invisible 1
 end
 arch cobblestones2
 x 15
@@ -3203,9 +3203,9 @@ x 15
 y 3
 end
 arch door_look_1
-randomitems none
 x 15
 y 3
+randomitems none
 end
 arch woodfloor
 x 15
@@ -3424,11 +3424,11 @@ x 15
 y 31
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 16
+invisible 1
 end
 arch cobblestones2
 x 16
@@ -3446,9 +3446,9 @@ x 16
 y 3
 end
 arch door_look_1
-randomitems none
 x 16
 y 3
+randomitems none
 end
 arch woodfloor
 x 16
@@ -3659,9 +3659,9 @@ x 16
 y 28
 end
 arch door_look_1
-randomitems none
 x 16
 y 28
+randomitems none
 end
 arch cobblestones2
 x 16
@@ -3672,12 +3672,12 @@ x 16
 y 30
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 16
 y 31
+invisible 1
 end
 arch cobblestones2
 x 16
@@ -3771,9 +3771,9 @@ x 17
 y 12
 end
 arch door_look_1
-randomitems none
 x 17
 y 12
+randomitems none
 end
 arch woodfloor
 x 17
@@ -3904,9 +3904,9 @@ x 17
 y 28
 end
 arch door_look_1
-randomitems none
 x 17
 y 28
+randomitems none
 end
 arch cobblestones2
 x 17
@@ -3917,12 +3917,12 @@ x 17
 y 30
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 17
 y 31
+invisible 1
 end
 arch cobblestones2
 x 17
@@ -4016,9 +4016,9 @@ x 18
 y 12
 end
 arch door_look_1
-randomitems none
 x 18
 y 12
+randomitems none
 end
 arch woodfloor
 x 18
@@ -5128,9 +5128,9 @@ x 23
 y 6
 end
 arch door_look_1
-randomitems none
 x 23
 y 6
+randomitems none
 end
 arch woodfloor
 x 23
@@ -5360,9 +5360,9 @@ x 24
 y 6
 end
 arch door_look_1
-randomitems none
 x 24
 y 6
+randomitems none
 end
 arch woodfloor
 x 24
@@ -6369,18 +6369,18 @@ x 28
 y 14
 end
 arch door_look_2
-randomitems none
 x 28
 y 14
+randomitems none
 end
 arch cobblestones2
 x 28
 y 15
 end
 arch door_look_2
-randomitems none
 x 28
 y 15
+randomitems none
 end
 arch woodfloor
 x 28
@@ -6808,24 +6808,24 @@ x 31
 y 13
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 31
 y 14
+invisible 1
 end
 arch cobblestones2
 x 31
 y 14
 end
 arch exit
-invisible 1
 slaying /world/world_105_116
 hp 12
 sp 6
 x 31
 y 15
+invisible 1
 end
 arch cobblestones2
 x 31

@@ -1,9 +1,6 @@
 arch map
-region scornoldcity
 name <untitled>
-msg
-
-endmsg
+region scornoldcity
 width 40
 height 40
 enter_x 14
@@ -371,6 +368,10 @@ arch pstone_1
 x 1
 y 17
 end
+arch dragon
+x 1
+y 17
+end
 arch pstone_1
 x 1
 y 18
@@ -589,11 +590,11 @@ end
 arch chalice
 name Special Cup
 slaying the_cup
+x 2
+y 3
 speed_left -0.500000
 nrof 1
 identified 1
-x 2
-y 3
 end
 arch medium_stones
 x 2
@@ -1708,9 +1709,9 @@ x 6
 y 35
 end
 arch spider
-speed_left -8.900001
 x 6
 y 35
+speed_left -8.900001
 end
 arch medium_stones
 x 6
@@ -1935,9 +1936,9 @@ x 7
 y 35
 end
 arch spider
-speed_left -8.900001
 x 7
 y 35
+speed_left -8.900001
 end
 arch medium_stones
 x 7
@@ -2014,27 +2015,27 @@ x 8
 y 6
 end
 arch scorpion
-speed_left -1.200000
 x 8
 y 6
+speed_left -1.200000
 end
 arch medium_stones
 x 8
 y 7
 end
 arch scorpion
-speed_left -1.200000
 x 8
 y 7
+speed_left -1.200000
 end
 arch medium_stones
 x 8
 y 8
 end
 arch scorpion
-speed_left -1.200000
 x 8
 y 8
+speed_left -1.200000
 end
 arch pstone_2
 x 8
@@ -2177,18 +2178,18 @@ x 8
 y 35
 end
 arch spider
-speed_left -8.900001
 x 8
 y 35
+speed_left -8.900001
 end
 arch large_stones
 x 8
 y 36
 end
 arch spider
-speed_left -8.900001
 x 8
 y 36
+speed_left -8.900001
 end
 arch large_stones
 x 8
@@ -2257,45 +2258,45 @@ x 9
 y 5
 end
 arch scorpion
-speed_left -1.200000
 x 9
 y 5
+speed_left -1.200000
 end
 arch medium_stones
 x 9
 y 6
 end
 arch scorpion
-speed_left -1.200000
 x 9
 y 6
+speed_left -1.200000
 end
 arch medium_stones
 x 9
 y 7
 end
 arch scorpion
-speed_left -1.200000
 x 9
 y 7
+speed_left -1.200000
 end
 arch medium_stones
 x 9
 y 8
 end
 arch scorpion
-speed_left -1.200000
 x 9
 y 8
+speed_left -1.200000
 end
 arch medium_stones
 x 9
 y 9
 end
 arch scorpion
-speed_left -1.200000
 x 9
 y 9
+speed_left -1.200000
 end
 arch pstone_2
 x 9
@@ -2438,18 +2439,18 @@ x 9
 y 36
 end
 arch spider
-speed_left -8.900001
 x 9
 y 36
+speed_left -8.900001
 end
 arch large_stones
 x 9
 y 37
 end
 arch spider
-speed_left -8.900001
 x 9
 y 37
+speed_left -8.900001
 end
 arch large_stones
 x 9
@@ -2510,9 +2511,9 @@ x 10
 y 7
 end
 arch scorpion
-speed_left -1.200000
 x 10
 y 7
+speed_left -1.200000
 end
 arch medium_stones
 x 10
@@ -2523,9 +2524,9 @@ x 10
 y 9
 end
 arch scorpion
-speed_left -1.200000
 x 10
 y 9
+speed_left -1.200000
 end
 arch medium_stones
 x 10
@@ -2743,9 +2744,9 @@ x 11
 y 9
 end
 arch scorpion
-speed_left -1.200000
 x 11
 y 9
+speed_left -1.200000
 end
 arch medium_stones
 x 11
@@ -4873,18 +4874,18 @@ x 21
 y 15
 end
 arch generate_kobold
-speed_left -0.180000
 x 21
 y 15
+speed_left -0.180000
 end
 arch medium_stones
 x 21
 y 16
 end
 arch generate_kobold
-speed_left -0.180000
 x 21
 y 16
+speed_left -0.180000
 end
 arch small_stones
 x 21
@@ -6017,54 +6018,54 @@ x 26
 y 21
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 21
+speed_left -0.500000
 end
 arch pstone_4
 x 26
 y 22
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 22
+speed_left -0.500000
 end
 arch pstone_4
 x 26
 y 23
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 23
+speed_left -0.500000
 end
 arch pstone_4
 x 26
 y 24
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 24
+speed_left -0.500000
 end
 arch pstone_4
 x 26
 y 25
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 25
+speed_left -0.500000
 end
 arch pstone_4
 x 26
 y 26
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 26
+speed_left -0.500000
 end
 arch pstone_2
 x 26
@@ -6087,9 +6088,9 @@ x 26
 y 28
 end
 arch gnoll
-speed_left -0.500000
 x 26
 y 28
+speed_left -0.500000
 end
 arch pstone_2
 x 26
@@ -6278,18 +6279,18 @@ x 27
 y 23
 end
 arch gnoll
-speed_left -0.500000
 x 27
 y 23
+speed_left -0.500000
 end
 arch pstone_4
 x 27
 y 24
 end
 arch gnoll
-speed_left -0.500000
 x 27
 y 24
+speed_left -0.500000
 end
 arch pstone_2
 x 27
@@ -6312,9 +6313,9 @@ x 27
 y 27
 end
 arch gnoll
-speed_left -0.500000
 x 27
 y 27
+speed_left -0.500000
 end
 arch pstone_2
 x 27
@@ -6507,36 +6508,36 @@ x 28
 y 23
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 23
+speed_left -0.500000
 end
 arch pstone_4
 x 28
 y 24
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 24
+speed_left -0.500000
 end
 arch pstone_4
 x 28
 y 25
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 25
+speed_left -0.500000
 end
 arch pstone_4
 x 28
 y 26
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 26
+speed_left -0.500000
 end
 arch pstone_2
 x 28
@@ -7023,9 +7024,9 @@ x 30
 y 38
 end
 arch generate_kobold
-speed_left -0.180000
 x 30
 y 38
+speed_left -0.180000
 end
 arch pstone_4
 x 30
@@ -7202,9 +7203,9 @@ x 31
 y 38
 end
 arch generate_kobold
-speed_left -0.180000
 x 31
 y 38
+speed_left -0.180000
 end
 arch pstone_4
 x 31
@@ -7955,18 +7956,18 @@ x 35
 y 18
 end
 arch kobold
-speed_left -0.900000
 x 35
 y 18
+speed_left -0.900000
 end
 arch pstone_4
 x 35
 y 19
 end
 arch kobold
-speed_left -0.900000
 x 35
 y 19
+speed_left -0.900000
 end
 arch pstone_4
 x 35
@@ -7977,9 +7978,9 @@ x 35
 y 21
 end
 arch kobold
-speed_left -0.900000
 x 35
 y 21
+speed_left -0.900000
 end
 arch pstone_2
 x 35
@@ -8168,9 +8169,9 @@ x 36
 y 16
 end
 arch kobold
-speed_left -0.900000
 x 36
 y 16
+speed_left -0.900000
 end
 arch pstone_2
 x 36
@@ -8193,9 +8194,9 @@ x 36
 y 19
 end
 arch kobold
-speed_left -0.900000
 x 36
 y 19
+speed_left -0.900000
 end
 arch pstone_2
 x 36
@@ -8428,18 +8429,18 @@ x 37
 y 20
 end
 arch kobold
-speed_left -0.900000
 x 37
 y 20
+speed_left -0.900000
 end
 arch pstone_4
 x 37
 y 21
 end
 arch kobold
-speed_left -0.900000
 x 37
 y 21
+speed_left -0.900000
 end
 arch pstone_2
 x 37
@@ -9092,8 +9093,4 @@ end
 arch boulder
 x 39
 y 39
-end
-arch dragon
-x 1
-y 17
 end

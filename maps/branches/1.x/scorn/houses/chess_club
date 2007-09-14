@@ -1,13 +1,13 @@
 arch map
-region scorn
 name chess_club
+region scorn
+width 39
+height 22
 msg
 Creator: Andreas Vogl
 Email: red.blaze@gmx.net
 Date: Sat Nov 11 19:22:26 2000
 endmsg
-x 39
-y 22
 end
 arch exit
 slaying /world/world_105_115
@@ -2979,8 +2979,8 @@ end
 arch button_handle
 x 14
 y 12
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 14
@@ -3009,8 +3009,8 @@ end
 arch button_handle
 x 14
 y 15
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 14
@@ -3229,8 +3229,8 @@ arch grate_closed_2
 x 15
 y 13
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 15
@@ -3244,8 +3244,8 @@ arch grate_closed_2
 x 15
 y 14
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 15
@@ -3489,8 +3489,8 @@ endmsg
 food 100
 x 16
 y 13
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 16
@@ -3508,8 +3508,8 @@ endmsg
 food 100
 x 16
 y 14
-protected 2
 connected 2
+protected 2
 end
 arch dungeon_magic
 x 16
@@ -3788,8 +3788,8 @@ end
 arch pedestal
 x 18
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 18
@@ -3814,8 +3814,8 @@ end
 arch pedestal
 x 18
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 18
@@ -4005,8 +4005,8 @@ end
 arch pedestal
 x 19
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 19
@@ -4023,8 +4023,8 @@ end
 arch igateTrg1
 x 19
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 19
@@ -4033,8 +4033,8 @@ end
 arch pedestal
 x 19
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 19
@@ -4217,8 +4217,8 @@ end
 arch pedestal
 x 20
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 20
@@ -4243,8 +4243,8 @@ end
 arch pedestal
 x 20
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch woodfloor
 x 20
@@ -4731,8 +4731,8 @@ endmsg
 food 100
 x 22
 y 13
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 22
@@ -4750,8 +4750,8 @@ endmsg
 food 100
 x 22
 y 14
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 22
@@ -4954,8 +4954,8 @@ arch grate_closed_2
 x 23
 y 13
 speed 0.500000
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 23
@@ -4969,8 +4969,8 @@ arch grate_closed_2
 x 23
 y 14
 speed 0.500000
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 23
@@ -5180,8 +5180,8 @@ end
 arch button_handle
 x 24
 y 12
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 24
@@ -5210,8 +5210,8 @@ end
 arch button_handle
 x 24
 y 15
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 24

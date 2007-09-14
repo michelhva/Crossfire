@@ -1,11 +1,11 @@
 arch map
 name teamwar
+width 39
+height 26
 msg
 Creator: josh@woosworld.net
 Date:    3/19/2005
 endmsg
-width 39
-height 26
 end
 arch dungeon_magic
 end
@@ -651,140 +651,140 @@ x 3
 y 4
 end
 arch permanent_lava
+x 3
+y 5
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 5
 end
-arch dungeon_magic
-x 3
-y 5
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 6
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 6
 end
 arch permanent_lava
+x 3
+y 7
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 7
 end
-arch dungeon_magic
-x 3
-y 7
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 8
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 8
 end
 arch permanent_lava
+x 3
+y 9
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 9
 end
-arch dungeon_magic
-x 3
-y 9
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 10
 end
 arch permanent_lava
+x 3
+y 11
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 11
 end
-arch dungeon_magic
-x 3
-y 11
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 12
 end
 arch permanent_lava
+x 3
+y 13
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 13
 end
-arch dungeon_magic
-x 3
-y 13
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 14
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 14
 end
 arch permanent_lava
+x 3
+y 15
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 3
 y 15
 end
-arch dungeon_magic
-x 3
-y 15
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 16
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 16
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 17
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 3
 y 18
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 3
@@ -876,37 +876,37 @@ x 4
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 4
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 4
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 6
 end
 arch dun0
 name Repairman
 face witch_fire.111
-blocksview 0
 x 4
 y 6
+blocksview 0
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 7
 end
@@ -915,116 +915,116 @@ x 4
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 14
 end
 arch button_lever
 name Pull To Leave
-connected 2
 x 4
 y 14
+connected 2
 end
 arch dungeon_magic
 x 4
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 15
 end
 arch gate_closed_1
-connected 2
 x 4
 y 15
+connected 2
 end
 arch dungeon_magic
 x 4
 y 15
 end
 arch mover_5
-attacktype 1
-level 1
 x 4
 y 15
+level 1
+attacktype 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 16
 end
 arch mover_5
-attacktype 1
-level 1
 x 4
 y 16
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 4
@@ -1036,23 +1036,22 @@ msg
 Coward!
 You have been removed from team1!
 endmsg
-slaying
 x 4
 y 16
 end
 arch button_trigger
+x 4
+y 16
 invisible 1
 connected 2
 move_off 0
-x 4
-y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 4
 y 17
 end
@@ -1061,10 +1060,10 @@ x 4
 y 17
 end
 arch mover_5
-attacktype 1
-level 1
 x 4
 y 17
+level 1
+attacktype 1
 end
 arch teleporter
 hp 4
@@ -1073,10 +1072,10 @@ x 4
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 4
 y 18
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 4
@@ -1168,35 +1167,35 @@ x 5
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 6
 end
 arch altar_trigger
 name 250 Rubies
+slaying ruby
 msg
 Lets get ready to rumble!!
 endmsg
-slaying ruby
-food 250
-connected 10
 exp 1800
+food 250
 x 5
 y 6
+connected 10
 end
 arch magic_mouth
 name magicmouth
@@ -1209,47 +1208,47 @@ x 5
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 11
 end
@@ -1262,29 +1261,29 @@ x 5
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 5
 y 14
 end
@@ -1293,46 +1292,46 @@ x 5
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 15
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 16
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 16
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 17
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 5
 y 18
-end
-arch permanent_lava
 no_pass 1
 cursed 1
+end
+arch permanent_lava
 x 5
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 5
@@ -1400,30 +1399,30 @@ x 6
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 6
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 6
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 6
@@ -1434,153 +1433,153 @@ x 6
 y 6
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 6
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 7
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 8
 end
 arch grate_closed_2
-connected 10
 x 6
 y 8
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 9
 end
 arch grate_closed_2
-connected 10
 x 6
 y 9
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 10
 end
 arch grate_closed_2
-connected 10
 x 6
 y 10
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 11
 end
 arch grate_closed_2
-connected 10
 x 6
 y 11
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 12
 end
 arch grate_closed_2
-connected 10
 x 6
 y 12
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 13
 end
 arch grate_closed_2
-connected 10
 x 6
 y 13
+connected 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 14
 end
 arch grate_closed_2
-connected 10
 x 6
 y 14
+connected 10
 end
 arch dungeon_magic
 x 6
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 15
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 6
 y 18
 end
@@ -1589,10 +1588,10 @@ x 6
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 6
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 6
@@ -1660,39 +1659,39 @@ x 7
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 7
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 6
 end
@@ -1701,183 +1700,183 @@ x 7
 y 7
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 7
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 7
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 8
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 9
 end
 arch pedestal
-invisible 1
-connected 20
 x 7
 y 9
+invisible 1
+connected 20
 end
 arch teleporter
 hp 9
 sp 9
-connected 20
 x 7
 y 9
+connected 20
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 10
 end
 arch pedestal
-invisible 1
-connected 21
 x 7
 y 10
+invisible 1
+connected 21
 end
 arch teleporter
 hp 12
 sp 10
-connected 21
 x 7
 y 10
+connected 21
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 11
 end
 arch pedestal
-invisible 1
-connected 22
 x 7
 y 11
+invisible 1
+connected 22
 end
 arch teleporter
 hp 16
 sp 11
-connected 22
 x 7
 y 11
+connected 22
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 12
 end
 arch pedestal
-invisible 1
-connected 23
 x 7
 y 12
+invisible 1
+connected 23
 end
 arch teleporter
 hp 12
 sp 12
-connected 23
 x 7
 y 12
+connected 23
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 13
 end
 arch pedestal
-invisible 1
-connected 24
 x 7
 y 13
+invisible 1
+connected 24
 end
 arch teleporter
 hp 9
 sp 13
+x 7
+y 13
 connected 24
-x 7
-y 13
 end
 arch dungeon_magic
 x 7
 y 14
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 14
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 7
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 15
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 7
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 7
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 7
@@ -1945,48 +1944,48 @@ x 8
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 7
 end
@@ -1995,112 +1994,112 @@ x 8
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 8
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 13
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
 y 14
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 14
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 8
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 8
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 8
@@ -2168,155 +2167,155 @@ x 9
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 9
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 9
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 9
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 9
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 9
@@ -2384,10 +2383,10 @@ x 10
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 10
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 10
@@ -2402,101 +2401,101 @@ x 10
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 10
 y 16
 end
@@ -2509,10 +2508,10 @@ x 10
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 10
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 10
@@ -2592,10 +2591,10 @@ x 11
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 11
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 11
@@ -2606,119 +2605,119 @@ x 11
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 11
 y 17
 end
@@ -2727,10 +2726,10 @@ x 11
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 11
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 11
@@ -2806,165 +2805,165 @@ x 12
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 12
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 12
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 12
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 12
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 12
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 12
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 12
@@ -3032,174 +3031,174 @@ x 13
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 13
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 13
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 13
@@ -3271,173 +3270,173 @@ x 14
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 19
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 14
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 14
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 14
@@ -3505,173 +3504,173 @@ x 15
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 19
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 15
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 15
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 15
@@ -3739,175 +3738,175 @@ x 16
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 16
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 16
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 16
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 16
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 16
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 16
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 16
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 16
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 16
@@ -3983,171 +3982,171 @@ x 17
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 8
 end
 arch permanent_lava
+x 17
+y 9
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 17
 y 9
 end
-arch dungeon_magic
-x 17
-y 9
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 17
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 17
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 17
@@ -4225,61 +4224,61 @@ end
 arch dun0
 name Guard
 face witch_fire.111
-blocksview 0
 x 18
 y 3
+blocksview 0
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 8
 end
 arch permanent_lava
+x 18
+y 9
 no_pass 1
 cursed 1
-x 18
-y 9
 end
 arch dungeon_magic
 x 18
@@ -4294,9 +4293,9 @@ x 18
 y 10
 end
 arch chair_3.1
-no_pick 1
 x 18
 y 10
+no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -4307,9 +4306,9 @@ x 18
 y 11
 end
 arch chair_3.1
-no_pick 1
 x 18
 y 11
+no_pick 1
 end
 arch dungeon_magic
 x 18
@@ -4320,106 +4319,106 @@ x 18
 y 12
 end
 arch chair_3.1
-no_pick 1
 x 18
 y 12
+no_pick 1
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 18
 y 17
 end
 arch button_lever
-connected 1
 x 18
 y 17
+connected 1
 end
 arch permanent_lava
+x 18
+y 18
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 18
 y 18
 end
-arch dungeon_magic
-x 18
-y 18
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
 y 21
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 18
 y 22
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 18
@@ -4497,9 +4496,9 @@ y 3
 end
 arch check_floor
 slaying tw_spectator
-no_pass 1
 x 19
 y 3
+no_pass 1
 end
 arch teleporter
 hp 19
@@ -4508,56 +4507,56 @@ x 19
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 19
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 19
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 19
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 19
@@ -4572,9 +4571,9 @@ x 19
 y 10
 end
 arch chair_3.1
-no_pick 1
 x 19
 y 10
+no_pick 1
 end
 arch dungeon_magic
 x 19
@@ -4599,53 +4598,53 @@ x 19
 y 12
 end
 arch chair_3.1
-no_pick 1
 x 19
 y 12
+no_pick 1
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 19
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 19
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 17
 end
@@ -4657,11 +4656,11 @@ x 19
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 18
 end
@@ -4670,43 +4669,43 @@ x 19
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 19
 end
 arch gate_closed_1
-connected 1
 x 19
 y 19
+connected 1
 end
 arch mover_5
-attacktype 1
-level 1
 x 19
 y 19
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 19
 y 19
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 20
 end
 arch mover_5
-attacktype 1
-level 1
 x 19
 y 20
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 19
@@ -4725,23 +4724,22 @@ name team1
 msg
 Congratulations!
 endmsg
-slaying
 x 19
 y 20
 end
 arch button_trigger
+x 19
+y 20
 invisible 1
 connected 1
 move_off 0
-x 19
-y 20
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 19
 y 21
 end
@@ -4750,10 +4748,10 @@ x 19
 y 21
 end
 arch mover_5
-attacktype 1
-level 1
 x 19
 y 21
+level 1
+attacktype 1
 end
 arch teleporter
 hp 19
@@ -4762,10 +4760,10 @@ x 19
 y 21
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 19
 y 22
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 19
@@ -4848,61 +4846,61 @@ end
 arch dun0
 name Guard
 face witch_fire.111
-blocksview 0
 x 20
 y 3
+blocksview 0
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 8
 end
 arch permanent_lava
+x 20
+y 9
 no_pass 1
 cursed 1
-x 20
-y 9
 end
 arch dungeon_magic
 x 20
@@ -4917,9 +4915,9 @@ x 20
 y 10
 end
 arch chair_3.1
-no_pick 1
 x 20
 y 10
+no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -4930,9 +4928,9 @@ x 20
 y 11
 end
 arch chair_3.1
-no_pick 1
 x 20
 y 11
+no_pick 1
 end
 arch dungeon_magic
 x 20
@@ -4943,106 +4941,106 @@ x 20
 y 12
 end
 arch chair_3.1
-no_pick 1
 x 20
 y 12
+no_pick 1
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 20
 y 17
 end
 arch button_lever
+x 20
+y 17
 connected 1
-x 20
-y 17
 end
 arch permanent_lava
+x 20
+y 18
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 20
 y 18
 end
-arch dungeon_magic
-x 20
-y 18
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
 y 21
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 20
 y 22
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 20
@@ -5110,171 +5108,171 @@ x 21
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 8
 end
 arch permanent_lava
+x 21
+y 9
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 21
 y 9
 end
-arch dungeon_magic
-x 21
-y 9
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 21
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 21
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 21
@@ -5342,175 +5340,175 @@ x 22
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 22
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 22
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 22
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 22
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 22
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 22
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 22
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 22
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 22
@@ -5578,173 +5576,173 @@ x 23
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 23
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 23
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 19
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 23
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 23
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 23
@@ -5812,173 +5810,173 @@ x 24
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 24
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 24
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 19
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 24
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 24
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 24
@@ -6046,174 +6044,174 @@ x 25
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 25
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 25
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 18
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 25
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 25
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 25
 y 20
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 25
 y 21
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 25
@@ -6285,165 +6283,165 @@ x 26
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 26
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 26
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 26
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 26
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 26
 y 19
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 26
 y 20
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 26
@@ -6511,10 +6509,10 @@ x 27
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 27
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 27
@@ -6525,119 +6523,119 @@ x 27
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 27
 y 17
 end
@@ -6646,10 +6644,10 @@ x 27
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 27
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 27
@@ -6725,10 +6723,10 @@ x 28
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 28
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 28
@@ -6743,101 +6741,101 @@ x 28
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 28
 y 16
 end
@@ -6850,10 +6848,10 @@ x 28
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 28
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 28
@@ -6929,155 +6927,155 @@ x 29
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 29
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 29
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 29
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 29
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 29
@@ -7157,48 +7155,48 @@ x 30
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 6
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 7
 end
@@ -7207,112 +7205,112 @@ x 30
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 8
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 9
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 9
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 10
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 11
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 11
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 12
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 13
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 13
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
 y 14
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 14
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 15
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 30
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 30
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 30
@@ -7380,39 +7378,39 @@ x 31
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 31
 y 3
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 4
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 6
 end
@@ -7421,184 +7419,184 @@ x 31
 y 7
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 7
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 31
 y 8
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 8
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 9
 end
 arch pedestal
-invisible 1
-connected 25
 x 31
 y 9
+invisible 1
+connected 25
 end
 arch teleporter
 hp 29
 sp 9
-connected 25
-speed 0.0
 x 31
 y 9
+speed 0.0
+connected 25
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 10
 end
 arch pedestal
-invisible 1
-connected 26
 x 31
 y 10
+invisible 1
+connected 26
 end
 arch teleporter
 hp 26
 sp 10
-connected 26
 x 31
 y 10
+connected 26
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 11
 end
 arch pedestal
-invisible 1
-connected 27
 x 31
 y 11
+invisible 1
+connected 27
 end
 arch teleporter
 hp 22
 sp 11
-connected 27
 x 31
 y 11
+connected 27
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 12
 end
 arch pedestal
-invisible 1
-connected 28
 x 31
 y 12
+invisible 1
+connected 28
 end
 arch teleporter
 hp 26
 sp 12
-connected 28
 x 31
 y 12
+connected 28
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 13
 end
 arch pedestal
-invisible 1
-connected 29
 x 31
 y 13
+invisible 1
+connected 29
 end
 arch teleporter
 hp 29
 sp 13
-connected 29
 x 31
 y 13
+connected 29
 end
 arch dungeon_magic
 x 31
 y 14
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 14
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 31
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 15
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 31
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 31
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 31
@@ -7666,30 +7664,30 @@ x 32
 y 2
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 3
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 32
 y 3
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 4
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 32
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 32
@@ -7700,153 +7698,153 @@ x 32
 y 6
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 6
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 32
 y 7
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 7
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 8
 end
 arch grate_closed_2
-connected 11
 x 32
 y 8
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 9
 end
 arch grate_closed_2
-connected 11
 x 32
 y 9
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 10
 end
 arch grate_closed_2
-connected 11
 x 32
 y 10
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 11
 end
 arch grate_closed_2
-connected 11
 x 32
 y 11
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 12
 end
 arch grate_closed_2
-connected 11
 x 32
 y 12
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 13
 end
 arch grate_closed_2
-connected 11
 x 32
 y 13
+connected 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 14
 end
 arch grate_closed_2
-connected 11
 x 32
 y 14
+connected 11
 end
 arch dungeon_magic
 x 32
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 15
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 17
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 32
 y 18
 end
@@ -7855,10 +7853,10 @@ x 32
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 32
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 32
@@ -7942,35 +7940,35 @@ x 33
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 33
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 33
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 6
 end
 arch altar_trigger
 name 250 Rubies
+slaying ruby
 msg
 Lets get ready to rumble!!
 endmsg
-slaying ruby
-food 250
-connected 11
 exp 1800
+food 250
 x 33
 y 6
+connected 11
 end
 arch magic_mouth
 name magicmouth
@@ -7983,47 +7981,47 @@ x 33
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 11
 end
@@ -8036,29 +8034,29 @@ x 33
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 14
 end
@@ -8067,17 +8065,17 @@ x 33
 y 15
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 33
 y 15
+no_pass 1
+cursed 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 33
 y 16
 end
@@ -8086,36 +8084,36 @@ x 33
 y 16
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 33
 y 16
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 33
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 33
 y 17
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 33
 y 18
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 33
 y 18
-end
-arch permanent_lava
 no_pass 1
 cursed 1
+end
+arch permanent_lava
 x 33
 y 19
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 33
@@ -8199,37 +8197,37 @@ x 34
 y 4
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 34
 y 5
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 34
 y 5
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 6
 end
 arch dun0
 name Repairman
 face witch_fire.111
-blocksview 0
 x 34
 y 6
+blocksview 0
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 7
 end
@@ -8238,116 +8236,116 @@ x 34
 y 7
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 8
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 9
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 10
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 11
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 12
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 13
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 14
 end
 arch button_lever
 name Pull To Leave
-connected 3
 x 34
 y 14
+connected 3
 end
 arch dungeon_magic
 x 34
 y 14
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 15
 end
 arch gate_closed_1
-connected 3
 x 34
 y 15
+connected 3
 end
 arch dungeon_magic
 x 34
 y 15
 end
 arch mover_5
-attacktype 1
-level 1
 x 34
 y 15
+level 1
+attacktype 1
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 16
 end
 arch mover_5
-attacktype 1
-level 1
 x 34
 y 16
+level 1
+attacktype 1
 end
 arch dungeon_magic
 x 34
@@ -8359,23 +8357,22 @@ msg
 Coward!
 You have been removed from team2!
 endmsg
-slaying
 x 34
 y 16
 end
 arch button_trigger
+x 34
+y 16
 invisible 1
 connected 3
 move_off 0
-x 34
-y 16
 end
 arch battleground
-hp 4
-sp 11
-maxhp 34
-maxsp 11
 slaying team2
+hp 4
+maxhp 34
+sp 11
+maxsp 11
 x 34
 y 17
 end
@@ -8384,10 +8381,10 @@ x 34
 y 17
 end
 arch mover_5
-attacktype 1
-level 1
 x 34
 y 17
+level 1
+attacktype 1
 end
 arch teleporter
 hp 34
@@ -8396,10 +8393,10 @@ x 34
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 34
 y 18
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 34
@@ -8491,140 +8488,140 @@ x 35
 y 4
 end
 arch permanent_lava
+x 35
+y 5
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 5
 end
-arch dungeon_magic
-x 35
-y 5
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 6
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 6
 end
 arch permanent_lava
+x 35
+y 7
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 7
 end
-arch dungeon_magic
-x 35
-y 7
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 8
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 8
 end
 arch permanent_lava
+x 35
+y 9
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 9
 end
-arch dungeon_magic
-x 35
-y 9
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 10
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 10
 end
 arch permanent_lava
+x 35
+y 11
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 11
 end
-arch dungeon_magic
-x 35
-y 11
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 12
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 12
 end
 arch permanent_lava
+x 35
+y 13
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 13
 end
-arch dungeon_magic
-x 35
-y 13
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 14
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 14
 end
 arch permanent_lava
+x 35
+y 15
 no_pass 1
 cursed 1
+end
+arch dungeon_magic
 x 35
 y 15
 end
-arch dungeon_magic
-x 35
-y 15
-end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 16
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 16
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 17
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
 y 17
 end
 arch permanent_lava
-no_pass 1
-cursed 1
 x 35
 y 18
+no_pass 1
+cursed 1
 end
 arch dungeon_magic
 x 35
