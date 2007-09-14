@@ -1,18 +1,18 @@
 arch map
-region scorn
 name Scorn General store
+fixed_resettime 1
+region scorn
+shopitems *:0
+shopmax 2000
+width 16
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator:
 Email:
 Date: Sat Oct 16 19:42:32 1993
 endmsg
-width 16
-height 16
-enter_x 1
-enter_y 1
-fixed_resettime 1
-shopitems *:0
-shopmax 2000
 end
 arch shop_empty
 end

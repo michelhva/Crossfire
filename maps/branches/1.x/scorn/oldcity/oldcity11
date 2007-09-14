@@ -1,13 +1,13 @@
 arch map
-region scornoldcity
 name <untitled>
+region scornoldcity
+width 20
+height 40
 msg
 Creator: skud the great
 Email: tvangod@ecst.csuchico.edu
 Date: Tue Oct  5 12:38:27 1993
 endmsg
-width 20
-height 40
 tile_path_1 oldcity14
 tile_path_3 oldcity10
 tile_path_4 oldcity13
@@ -266,9 +266,9 @@ x 1
 y 2
 end
 arch generate_kobold
-speed_left -0.220000
 x 1
 y 2
+speed_left -0.220000
 end
 arch medium_stones
 x 1
@@ -299,9 +299,9 @@ x 1
 y 9
 end
 arch generate_kobold
-speed_left -0.220000
 x 1
 y 9
+speed_left -0.220000
 end
 arch medium_stones
 x 1
@@ -506,9 +506,9 @@ x 2
 y 1
 end
 arch ogre
-speed_left -0.580000
 x 2
 y 1
+speed_left -0.580000
 end
 arch pstone_2
 x 2
@@ -1216,10 +1216,10 @@ y 31
 end
 arch locked_door1
 name Temple Door
+slaying temple
 msg
 Locked
 endmsg
-slaying temple
 x 4
 y 31
 end
@@ -1317,9 +1317,9 @@ x 5
 y 3
 end
 arch orc
-speed_left -1.000000
 x 5
 y 3
+speed_left -1.000000
 end
 arch medium_stones
 x 5
@@ -1578,9 +1578,9 @@ x 6
 y 3
 end
 arch orc
-speed_left -1.000000
 x 6
 y 3
+speed_left -1.000000
 end
 arch medium_stones
 x 6
@@ -1807,9 +1807,9 @@ x 7
 y 3
 end
 arch orc
-speed_left -1.000000
 x 7
 y 3
+speed_left -1.000000
 end
 arch pstone_2
 x 7
@@ -1852,9 +1852,9 @@ x 7
 y 10
 end
 arch generate_kobold
-speed_left -0.220000
 x 7
 y 10
+speed_left -0.220000
 end
 arch grass
 x 7
@@ -2928,9 +2928,9 @@ x 12
 y 3
 end
 arch ant
-speed_left -0.160000
 x 12
 y 3
+speed_left -0.160000
 end
 arch pstone_2
 x 12
@@ -3199,9 +3199,9 @@ x 13
 y 6
 end
 arch ant
-speed_left -0.160000
 x 13
 y 6
+speed_left -0.160000
 end
 arch pstone_2
 x 13
@@ -3244,18 +3244,18 @@ x 13
 y 12
 end
 arch goblin
-speed_left -0.700000
 x 13
 y 12
+speed_left -0.700000
 end
 arch medium_stones
 x 13
 y 13
 end
 arch goblin
-speed_left -0.700000
 x 13
 y 13
+speed_left -0.700000
 end
 arch large_stones
 x 13
@@ -3424,9 +3424,9 @@ x 14
 y 2
 end
 arch gnoll
-speed_left -0.500000
 x 14
 y 2
+speed_left -0.500000
 end
 arch medium_stones
 x 14
@@ -3441,9 +3441,9 @@ x 14
 y 4
 end
 arch ant
-speed_left -0.160000
 x 14
 y 4
+speed_left -0.160000
 end
 arch pstone_2
 x 14
@@ -3466,18 +3466,18 @@ x 14
 y 7
 end
 arch ant
-speed_left -0.160000
 x 14
 y 7
+speed_left -0.160000
 end
 arch medium_stones
 x 14
 y 8
 end
 arch ant
-speed_left -0.160000
 x 14
 y 8
+speed_left -0.160000
 end
 arch large_stones
 x 14
@@ -3500,18 +3500,18 @@ x 14
 y 12
 end
 arch goblin
-speed_left -0.700000
 x 14
 y 12
+speed_left -0.700000
 end
 arch medium_stones
 x 14
 y 13
 end
 arch goblin
-speed_left -0.700000
 x 14
 y 13
+speed_left -0.700000
 end
 arch large_stones
 x 14
@@ -3652,9 +3652,9 @@ x 15
 y 4
 end
 arch ant
-speed_left -0.160000
 x 15
 y 4
+speed_left -0.160000
 end
 arch pstone_2
 x 15
@@ -3685,9 +3685,9 @@ x 15
 y 8
 end
 arch ant
-speed_left -0.160000
 x 15
 y 8
+speed_left -0.160000
 end
 arch large_stones
 x 15
@@ -3864,9 +3864,9 @@ x 16
 y 4
 end
 arch ant
-speed_left -0.160000
 x 16
 y 4
+speed_left -0.160000
 end
 arch pstone_2
 x 16

@@ -1,13 +1,13 @@
 arch map
-region scornoldcity
 name oldcity3
+region scornoldcity
+width 20
+height 40
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun May  3 20:59:47 1998
 endmsg
-width 20
-height 40
 tile_path_1 oldcity2
 tile_path_2 end
 tile_path_4 oldcity6
@@ -621,6 +621,17 @@ arch cobblestones
 x 3
 y 18
 end
+arch dragon
+name Thalik Norois
+msg
+@match name|Name
+Thalik Norois
+@match *
+Die fools.
+endmsg
+x 3
+y 18
+end
 arch cobblestones
 x 3
 y 19
@@ -1158,9 +1169,9 @@ I like to watch them burn.
 @match *
 Fire!!! Burn!!!!! BURN!!!
 endmsg
-unaggressive 1
 x 5
 y 35
+unaggressive 1
 end
 arch medium_stones
 x 5
@@ -1608,18 +1619,18 @@ x 7
 y 34
 end
 arch scorpion
-speed_left -0.800000
 x 7
 y 34
+speed_left -0.800000
 end
 arch medium_stones
 x 7
 y 35
 end
 arch scorpion
-speed_left -0.800000
 x 7
 y 35
+speed_left -0.800000
 end
 arch medium_stones
 x 7
@@ -1833,9 +1844,9 @@ x 8
 y 34
 end
 arch scorpion
-speed_left -0.800000
 x 8
 y 34
+speed_left -0.800000
 end
 arch large_stones
 x 8
@@ -2025,10 +2036,10 @@ x 9
 y 26
 end
 arch grate_closed_2
-speed 0.500000
-connected 2
 x 9
 y 26
+speed 0.500000
+connected 2
 end
 arch pstone_2
 x 9
@@ -2071,9 +2082,9 @@ x 9
 y 34
 end
 arch scorpion
-speed_left -0.800000
 x 9
 y 34
+speed_left -0.800000
 end
 arch large_stones
 x 9
@@ -2240,9 +2251,9 @@ x 10
 y 24
 end
 arch button_lever
-connected 2
 x 10
 y 24
+connected 2
 end
 arch grass_only
 x 10
@@ -2515,9 +2526,9 @@ x 11
 y 33
 end
 arch scorpion
-speed_left -0.800000
 x 11
 y 33
+speed_left -0.800000
 end
 arch large_stones
 x 11
@@ -2699,10 +2710,10 @@ x 12
 y 22
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 12
 y 22
+speed 0.500000
+connected 1
 end
 arch grass
 x 12
@@ -2931,9 +2942,9 @@ x 13
 y 21
 end
 arch button_lever
-connected 1
 x 13
 y 21
+connected 1
 end
 arch cobblestones
 x 13
@@ -2984,9 +2995,9 @@ x 13
 y 32
 end
 arch scorpion
-speed_left -0.800000
 x 13
 y 32
+speed_left -0.800000
 end
 arch medium_stones
 x 13
@@ -3859,9 +3870,9 @@ You may not pass
 endmsg
 hp 200
 maxhp 200
-unaggressive 1
 x 17
 y 26
+unaggressive 1
 end
 arch sea
 name stream
@@ -4115,9 +4126,9 @@ x 18
 y 31
 end
 arch scorpion
-speed_left -1.500000
 x 18
 y 31
+speed_left -1.500000
 end
 arch large_stones
 x 18
@@ -4419,15 +4430,4 @@ end
 arch rock
 x 19
 y 39
-end
-arch dragon
-name Thalik Norois
-msg
-@match name|Name
-Thalik Norois
-@match *
-Die fools.
-endmsg
-x 3
-y 18
 end

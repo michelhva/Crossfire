@@ -1,7 +1,8 @@
 arch map
-region scorn
+name <unnamed>
 reset_timeout 7200
 difficulty 6
+region scorn
 width 16
 height 16
 enter_x 7
@@ -1251,11 +1252,11 @@ arch dungeon_floor
 x 12
 y 3
 end
-arch giant
+arch random_reading
 x 12
 y 3
 end
-arch random_reading
+arch giant
 x 12
 y 3
 end

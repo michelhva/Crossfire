@@ -1,13 +1,13 @@
 arch map
 name shrine0_west
+darkness 5
+width 29
+height 24
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Tue Jan  3 04:21:58 1995
 endmsg
-width 29
-height 24
-darkness 5
 end
 arch blocked
 y 6
@@ -1987,18 +1987,18 @@ x 15
 y 13
 end
 arch door_look_2
-blocksview 1
 x 15
 y 13
+blocksview 1
 end
 arch marble
 x 15
 y 14
 end
 arch door_look_2
-blocksview 1
 x 15
 y 14
+blocksview 1
 end
 arch cobblestones2
 x 15
@@ -2079,10 +2079,10 @@ x 16
 y 5
 end
 arch chest_2
-carrying 200
-no_pick 1
 x 16
 y 5
+carrying 200
+no_pick 1
 arch key2
 slaying sdoor3
 end

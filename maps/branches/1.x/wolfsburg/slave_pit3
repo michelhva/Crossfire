@@ -1,11 +1,10 @@
 arch map
+name <unnamed>
 region wolfsburg
-msg
-endmsg
-hp 1
-sp 1
-x 30
-y 25
+width 30
+height 25
+enter_x 1
+enter_y 1
 end
 arch dungeon_floor
 end
@@ -2925,6 +2924,11 @@ arch dungeon_floor
 x 19
 y 15
 end
+arch cobra
+hp 100
+x 19
+y 15
+end
 arch dungeon_floor
 x 19
 y 16
@@ -4449,9 +4453,4 @@ end
 arch mine12
 x 29
 y 24
-end
-arch cobra
-hp 100
-x 19
-y 15
 end

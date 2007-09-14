@@ -1,14 +1,14 @@
 arch map
-region scorn
 name stronghold
-msg
-Creator: Morten Hanshaugen
-Email: meh@ifi.uio.no, meh@usit.uio.no
-endmsg
+region scorn
 width 40
 height 32
 enter_x 35
 enter_y 28
+msg
+Creator: Morten Hanshaugen
+Email: meh@ifi.uio.no, meh@usit.uio.no
+endmsg
 end
 arch woodfloor
 end
@@ -299,9 +299,9 @@ x 1
 y 18
 end
 arch button_handle
-connected 7
 x 1
 y 18
+connected 7
 end
 arch woodfloor
 x 1
@@ -316,9 +316,9 @@ x 1
 y 20
 end
 arch button_handle
-connected 7
 x 1
 y 20
+connected 7
 end
 arch woodfloor
 x 1
@@ -499,9 +499,9 @@ x 2
 y 19
 end
 arch igate_closed_1
-connected 7
 x 2
 y 19
+connected 7
 end
 arch woodfloor
 x 2
@@ -638,10 +638,10 @@ x 3
 y 11
 end
 arch igate_closed_1
-speed 0.500000
-connected 1
 x 3
 y 11
+speed 0.500000
+connected 1
 end
 arch woodfloor
 x 3
@@ -656,9 +656,9 @@ x 3
 y 14
 end
 arch button_handle
-connected 1
 x 3
 y 14
+connected 1
 end
 arch woodfloor
 x 3
@@ -713,9 +713,9 @@ x 3
 y 23
 end
 arch button_handle
-connected 7
 x 3
 y 23
+connected 7
 end
 arch woodfloor
 x 3
@@ -840,9 +840,9 @@ x 4
 y 10
 end
 arch button_handle
-connected 1
 x 4
 y 10
+connected 1
 end
 arch woodfloor
 x 4
@@ -1466,9 +1466,9 @@ x 7
 y 17
 end
 arch button_small
-connected 8
 x 7
 y 17
+connected 8
 end
 arch woodfloor
 x 7
@@ -1605,10 +1605,10 @@ x 8
 y 10
 end
 arch grate_closed_2
-speed 0.500000
-connected 96
 x 8
 y 10
+speed 0.500000
+connected 96
 end
 arch woodfloor
 x 8
@@ -1651,10 +1651,10 @@ x 8
 y 17
 end
 arch grate_closed_2
-speed 0.500000
-connected 8
 x 8
 y 17
+speed 0.500000
+connected 8
 end
 arch woodfloor
 x 8
@@ -1763,9 +1763,9 @@ x 9
 y 1
 end
 arch button_plate
-connected 3
 x 9
 y 1
+connected 3
 end
 arch woodfloor
 x 9
@@ -1820,9 +1820,9 @@ x 9
 y 10
 end
 arch button_small
-connected 96
 x 9
 y 10
+connected 96
 end
 arch woodfloor
 x 9
@@ -1869,9 +1869,9 @@ x 9
 y 17
 end
 arch button_small
-connected 8
 x 9
 y 17
+connected 8
 end
 arch woodfloor
 x 9
@@ -1910,10 +1910,10 @@ x 9
 y 24
 end
 arch grate_closed_1
-speed 0.500000
-connected 6
 x 9
 y 24
+speed 0.500000
+connected 6
 end
 arch woodfloor
 x 9
@@ -2010,19 +2010,19 @@ x 10
 y 11
 end
 arch igate_closed_1
-speed 0.500000
-connected 2
 x 10
 y 11
+speed 0.500000
+connected 2
 end
 arch woodfloor
 x 10
 y 12
 end
 arch button_small
-connected 2
 x 10
 y 12
+connected 2
 end
 arch woodfloor
 x 10
@@ -2085,9 +2085,9 @@ x 10
 y 23
 end
 arch button_plate
-connected 6
 x 10
 y 23
+connected 6
 end
 arch woodfloor
 x 10
@@ -2102,9 +2102,9 @@ x 10
 y 25
 end
 arch button_small
-connected 6
 x 10
 y 25
+connected 6
 end
 arch woodfloor
 x 10
@@ -2545,10 +2545,10 @@ x 13
 y 2
 end
 arch grate_closed_2
-speed 0.500000
-connected 3
 x 13
 y 2
+speed 0.500000
+connected 3
 end
 arch woodfloor
 x 13
@@ -3457,9 +3457,9 @@ x 17
 y 10
 end
 arch button_small
-connected 4
 x 17
 y 10
+connected 4
 end
 arch woodfloor
 x 17
@@ -3474,9 +3474,9 @@ x 17
 y 12
 end
 arch button_small
-connected 4
 x 17
 y 12
+connected 4
 end
 arch woodfloor
 x 17
@@ -3555,6 +3555,10 @@ x 17
 y 24
 end
 arch woodfloor
+x 17
+y 25
+end
+arch dragon
 x 17
 y 25
 end
@@ -3737,10 +3741,10 @@ x 18
 y 24
 end
 arch ogre
-can_apply 0
-will_apply 0
 x 18
 y 24
+will_apply 0
+can_apply 0
 end
 arch woodfloor
 x 18
@@ -3833,10 +3837,10 @@ x 19
 y 11
 end
 arch igate_closed_1
-speed 0.500000
-connected 4
 x 19
 y 11
+speed 0.500000
+connected 4
 end
 arch woodfloor
 x 19
@@ -3869,10 +3873,10 @@ x 19
 y 15
 end
 arch igate_closed_1
-speed 0.500000
-connected 5
 x 19
 y 15
+speed 0.500000
+connected 5
 end
 arch woodfloor
 x 19
@@ -4275,12 +4279,12 @@ x 21
 y 22
 end
 arch chair_3.1
-type 0
-no_pick 1
-resist_fire 100
-resist_electricity 100
 x 21
 y 22
+type 0
+resist_fire 100
+resist_electricity 100
+no_pick 1
 end
 arch skull
 x 21
@@ -4299,12 +4303,10 @@ x 21
 y 24
 end
 arch chest_2
-msg
-endmsg
-no_pick 1
-material 0
 x 21
 y 24
+material 0
+no_pick 1
 arch potion_restoration
 end
 arch random_talisman
@@ -4439,9 +4441,9 @@ x 22
 y 14
 end
 arch button_small
-connected 5
 x 22
 y 14
+connected 5
 end
 arch woodfloor
 x 22
@@ -4492,6 +4494,10 @@ x 22
 y 23
 end
 arch woodfloor
+x 22
+y 24
+end
+arch dragon
 x 22
 y 24
 end
@@ -5017,9 +5023,9 @@ x 25
 y 16
 end
 arch button_plate
-connected 5
 x 25
 y 16
+connected 5
 end
 arch woodfloor
 x 25
@@ -5547,9 +5553,9 @@ x 28
 y 3
 end
 arch button_handle
-connected 42
 x 28
 y 3
+connected 42
 end
 arch woodfloor
 x 28
@@ -5746,9 +5752,9 @@ x 29
 y 2
 end
 arch gate_closed_2
-connected 42
 x 29
 y 2
+connected 42
 end
 arch woodfloor
 x 29
@@ -6620,9 +6626,9 @@ arch exit
 slaying /world/world_105_115
 hp 16
 sp 43
-speed_left -0.600000
 x 34
 y 28
+speed_left -0.600000
 end
 arch woods_2
 x 34
@@ -7279,12 +7285,4 @@ end
 arch woods
 x 39
 y 31
-end
-arch dragon
-x 17
-y 25
-end
-arch dragon
-x 22
-y 24
 end

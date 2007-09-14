@@ -1,14 +1,15 @@
 arch map
-region scorn
 name HospitalityRoom
+swap_time 100
+reset_timeout 720
+region scorn
+width 35
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 16 15:29:28 2000
 endmsg
-x 35
-value 100
-weight 720
 end
 arch woodfloor2
 end
@@ -455,7 +456,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Knight's club. 
+Knight's club.
 endmsg
 x 3
 y 6
@@ -480,7 +481,7 @@ y 8
 end
 arch magic_mouth
 msg
-Baronet's club. 
+Baronet's club.
 endmsg
 x 3
 y 9
@@ -1293,7 +1294,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Baron's club. 
+Baron's club.
 endmsg
 x 9
 y 6
@@ -1318,7 +1319,7 @@ y 8
 end
 arch magic_mouth
 msg
-Marquis's club. 
+Marquis's club.
 endmsg
 x 9
 y 9
@@ -2137,7 +2138,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Earl's dining hall. 
+Earl's dining hall.
 endmsg
 x 15
 y 6
@@ -2162,7 +2163,7 @@ y 8
 end
 arch magic_mouth
 msg
-Count's dining hall. 
+Count's dining hall.
 endmsg
 x 15
 y 9
@@ -3111,7 +3112,7 @@ blocksview 0
 end
 arch magic_mouth
 msg
-Duke's dining hall. 
+Duke's dining hall.
 endmsg
 x 22
 y 6
@@ -3136,7 +3137,7 @@ y 8
 end
 arch magic_mouth
 msg
-Archduke's dining hall. 
+Archduke's dining hall.
 endmsg
 x 22
 y 9
@@ -3543,7 +3544,7 @@ y 6
 end
 arch magic_mouth
 msg
-Royal dining hall. 
+Royal dining hall.
 endmsg
 x 25
 y 7
@@ -3560,7 +3561,7 @@ connected 80
 end
 arch magic_mouth
 msg
-Royal dining hall. 
+Royal dining hall.
 endmsg
 x 25
 y 8
@@ -3871,7 +3872,7 @@ arch magic_mouth
 msg
 Welcome, Your Highness.
 We have prepared a feast in your
-honor.  
+honor.
 endmsg
 x 27
 y 7
@@ -3890,7 +3891,7 @@ arch magic_mouth
 msg
 Welcome, Your Highness.
 We have prepared a feast in your
-honor.  
+honor.
 endmsg
 x 27
 y 8

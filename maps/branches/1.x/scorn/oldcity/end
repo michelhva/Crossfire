@@ -1,13 +1,13 @@
 arch map
-region scornoldcity
 name end
+region scornoldcity
+width 29
+height 40
 msg
 Creator:
 Email:
 Date: Tue Oct 19 23:24:28 1993
 endmsg
-width 29
-height 40
 tile_path_4 oldcity3
 end
 arch dungeon_magic
@@ -1935,9 +1935,9 @@ x 7
 y 1
 end
 arch button_handle
-connected 5
 x 7
 y 1
+connected 5
 end
 arch cobblestones2
 x 7
@@ -2100,30 +2100,30 @@ x 7
 y 25
 end
 arch igate_closed_2
-speed 0.500000
-connected 5
 x 7
 y 25
+speed 0.500000
+connected 5
 end
 arch pstone_1
 x 7
 y 26
 end
 arch igate_closed_2
-speed 0.500000
-connected 5
 x 7
 y 26
+speed 0.500000
+connected 5
 end
 arch pstone_1
 x 7
 y 27
 end
 arch igate_closed_2
-speed 0.500000
-connected 5
 x 7
 y 27
+speed 0.500000
+connected 5
 end
 arch pstone_1
 x 7

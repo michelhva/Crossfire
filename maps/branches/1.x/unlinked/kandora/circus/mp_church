@@ -1,11 +1,13 @@
 arch map
 name mp_church
+width 16
+height 16
+enter_x 8
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Mon Jan 18 17:25:50 1999
 endmsg
-hp 8
 end
 arch dungeon_floor
 end

@@ -1,14 +1,15 @@
 arch map
+name <unnamed>
 region scorn
+width 40
+height 40
+enter_x 1
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct  5 13:24:30 1993
 endmsg
-hp 1
-sp 1
-x 40
-y 40
 end
 arch pstone_1
 end
@@ -2636,12 +2637,12 @@ whippersnapper.
 Sorry? Sorry?  There's no excuse for your
 kind...
 @match kind
-I was one of your kind once... a long time 
+I was one of your kind once... a long time
 ago.
 @match long time ago
 In a land far far away.
 @match far far
-You're starting to sound like the movies now, 
+You're starting to sound like the movies now,
 get outta here you punk!
 endmsg
 x 11

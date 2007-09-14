@@ -1,17 +1,17 @@
 arch map
-region scorn
 name cityhall
+reset_timeout 7200
+difficulty 1
+region scorn
+width 34
+height 32
+enter_x 13
+enter_y 25
 msg
 Creator:
 Email:
 Date: Fri Oct 15 13:42:48 1993
 endmsg
-width 34
-height 32
-enter_x 13
-enter_y 25
-reset_timeout 7200
-difficulty 1
 end
 arch woods_2
 end
@@ -440,9 +440,9 @@ x 2
 y 7
 end
 arch food
-nrof 10
 x 2
 y 7
+nrof 10
 end
 arch dungeon_magic
 x 2
@@ -2594,17 +2594,17 @@ y 1
 end
 arch sign
 name Petitions for the DMs
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Petitions board
-end
 msg
 I am a talking board, designed for leaving messages for the DM.
 If you don't know what to say, say help.
 endmsg
 x 12
 y 1
+arch event_say
+name Petitions board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch dungeon_magic
 x 12
@@ -2667,9 +2667,9 @@ x 12
 y 9
 end
 arch pedestal
-connected 96
 x 12
 y 9
+connected 96
 end
 arch dungeon_floor
 x 12
@@ -2684,9 +2684,9 @@ x 12
 y 10
 end
 arch pedestal
-connected 96
 x 12
 y 11
+connected 96
 end
 arch cobblestones2
 x 12
@@ -2856,33 +2856,33 @@ x 13
 y 9
 end
 arch pedestal
-connected 96
 x 13
 y 9
+connected 96
 end
 arch dungeon_floor
 x 13
 y 9
 end
 arch pedestal
-connected 96
 x 13
 y 10
+connected 96
 end
 arch dungeon_floor
 x 13
 y 10
 end
 arch igate_closed_1
-speed 0.500000
-connected 96
 x 13
 y 10
+speed 0.500000
+connected 96
 end
 arch pedestal
-connected 96
 x 13
 y 11
+connected 96
 end
 arch cobblestones2
 x 13
@@ -3050,33 +3050,33 @@ x 14
 y 9
 end
 arch pedestal
-connected 96
 x 14
 y 9
+connected 96
 end
 arch dungeon_floor
 x 14
 y 9
 end
 arch pedestal
-connected 96
 x 14
 y 10
+connected 96
 end
 arch dungeon_floor
 x 14
 y 10
 end
 arch igate_closed_1
-speed 0.500000
-connected 96
 x 14
 y 10
+speed 0.500000
+connected 96
 end
 arch pedestal
-connected 96
 x 14
 y 11
+connected 96
 end
 arch cobblestones2
 x 14
@@ -3244,9 +3244,9 @@ x 15
 y 9
 end
 arch pedestal
-connected 96
 x 15
 y 9
+connected 96
 end
 arch dungeon_floor
 x 15
@@ -3261,9 +3261,9 @@ x 15
 y 10
 end
 arch pedestal
-connected 96
 x 15
 y 11
+connected 96
 end
 arch cobblestones2
 x 15
@@ -5303,9 +5303,9 @@ arch altar
 msg
 You feel watched.
 endmsg
-connected 1
 x 24
 y 21
+connected 1
 end
 arch grass
 x 24
@@ -5481,9 +5481,9 @@ x 25
 y 20
 end
 arch hedge_2_2_2
-no_pass 1
 x 25
 y 20
+no_pass 1
 end
 arch brush
 x 25
@@ -5491,19 +5491,19 @@ y 21
 end
 arch gate_closed_2
 face hedge_5.111
-speed 0.500000
-connected 1
 x 25
 y 21
+speed 0.500000
+connected 1
 end
 arch brush
 x 25
 y 22
 end
 arch hedge_2_2_1
-no_pass 1
 x 25
 y 22
+no_pass 1
 end
 arch grass
 x 25
@@ -5694,9 +5694,9 @@ x 26
 y 20
 end
 arch hedge_2_1_2
-no_pass 1
 x 26
 y 20
+no_pass 1
 end
 arch magic_mouth
 msg
@@ -5718,9 +5718,9 @@ x 26
 y 22
 end
 arch hedge_2_1_2
-no_pass 1
 x 26
 y 22
+no_pass 1
 end
 arch grass
 x 26
@@ -5918,27 +5918,27 @@ x 27
 y 20
 end
 arch hedge_2_2_3
-no_pass 1
 x 27
 y 20
+no_pass 1
 end
 arch brush
 x 27
 y 21
 end
 arch hedge_2_1_1
-no_pass 1
 x 27
 y 21
+no_pass 1
 end
 arch brush
 x 27
 y 22
 end
 arch hedge_2_2_4
-no_pass 1
 x 27
 y 22
+no_pass 1
 end
 arch swall_1_1_half
 x 27

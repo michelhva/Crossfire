@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Imperial Post Office
+region scorn
+width 10
+height 10
+enter_x 5
+enter_y 8
 msg
 Creator: Commander Gros
 Email: yann.chachkoff@mailandnews.com
 Date: Wed Sep  5 22:09:24 2001
 Following a Lord MiDS idea
 endmsg
-width 10
-height 10
-enter_x 5
-enter_y 8
 end
 arch marble
 end
@@ -117,6 +117,11 @@ x 1
 y 4
 end
 arch mailbox
+x 1
+y 4
+material 0
+weight 0
+no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
@@ -125,11 +130,6 @@ arch event_apply
 title Python
 slaying /python/IPO/receive.py
 end
-material 0
-weight 0
-no_pick 1
-x 1
-y 4
 end
 arch marble
 x 1
@@ -153,12 +153,12 @@ msg
 @match *
 G'day to you.
 endmsg
-randomitems jail
-level 20
 exp 0
-sleep 0
 x 1
 y 8
+level 20
+randomitems jail
+sleep 0
 end
 arch marble
 x 1
@@ -188,15 +188,15 @@ y 2
 end
 arch c_woman
 name Colette
-arch event_say
-title Python
-slaying /python/IPO/say.py
-end
 msg
 @match * I'm on a break.
 endmsg
 x 2
 y 2
+arch event_say
+title Python
+slaying /python/IPO/say.py
+end
 end
 arch marble
 x 2
@@ -204,9 +204,9 @@ y 3
 end
 arch table
 name II
-no_pass 1
 x 2
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 2
@@ -346,17 +346,17 @@ y 7
 end
 arch sign
 name Scorn Message Board
-arch event_say
-title Python
-slaying /python/IPO/board.py
-name Scorn board
-end
 msg
 I am a talking board, please say something to me.
 If you don't know what to say, try help.
 endmsg
 x 4
 y 7
+arch event_say
+name Scorn board
+title Python
+slaying /python/IPO/board.py
+end
 end
 arch marble
 x 4
@@ -534,9 +534,9 @@ y 3
 end
 arch table
 name I
-no_pass 1
 x 7
 y 3
+no_pass 1
 end
 arch dungeon_magic
 x 7

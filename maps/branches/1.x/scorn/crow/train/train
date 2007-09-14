@@ -1,17 +1,17 @@
 arch map
 name Training Center
+reset_timeout 1800
+difficulty 1
 region scorn
-msg
-Creator: Preston Crow
-Date:    6/19/2003
-endmsg
+darkness 3
 width 10
 height 20
 enter_x 4
 enter_y 17
-reset_timeout 1800
-difficulty 1
-darkness 3
+msg
+Creator: Preston Crow
+Date:    6/19/2003
+endmsg
 end
 arch flagstone
 end
@@ -384,10 +384,10 @@ arch magic_mouth
 msg
 HEY! Who goes there?
 endmsg
-connected 1
 food 1
 x 3
 y 9
+connected 1
 end
 arch flagstone
 x 3
@@ -504,10 +504,10 @@ arch magic_mouth
 msg
 I heard something! Check it out!
 endmsg
-connected 1
 food 1
 x 4
 y 9
+connected 1
 end
 arch flagstone
 x 4
@@ -615,10 +615,10 @@ arch magic_mouth
 msg
 You! What are you doing?
 endmsg
-connected 1
 food 1
 x 5
 y 9
+connected 1
 end
 arch flagstone
 x 5
@@ -734,10 +734,10 @@ arch magic_mouth
 msg
 Quiet! Someone is in here!
 endmsg
-connected 1
 food 1
 x 6
 y 9
+connected 1
 end
 arch flagstone
 x 6
@@ -815,10 +815,10 @@ x 7
 y 2
 end
 arch furious_floor
-connected 1
-speed 0
 x 7
 y 3
+speed 0
+connected 1
 end
 arch flagstone
 x 7
@@ -826,26 +826,26 @@ y 3
 end
 arch sailor
 name Pirate
-unaggressive 0
-sleep 1
 Wis 4
 x 7
 y 3
+unaggressive 0
+sleep 1
 end
 arch flagstone
 x 7
 y 4
 end
 arch campfire
-glow_radius 5
 x 7
 y 4
+glow_radius 5
 end
 arch furious_floor
-connected 1
-speed 0
 x 7
 y 5
+speed 0
+connected 1
 end
 arch flagstone
 x 7
@@ -853,11 +853,11 @@ y 5
 end
 arch sailor
 name Pirate
-unaggressive 0
-sleep 1
 Wis 4
 x 7
 y 5
+unaggressive 0
+sleep 1
 end
 arch flagstone
 x 7
@@ -955,10 +955,10 @@ x 8
 y 2
 end
 arch furious_floor
-connected 1
-speed 0
 x 8
 y 3
+speed 0
+connected 1
 end
 arch flagstone
 x 8
@@ -966,17 +966,17 @@ y 3
 end
 arch sailor
 name Pirate
-unaggressive 0
-sleep 1
 Wis 4
 x 8
 y 3
+unaggressive 0
+sleep 1
 end
 arch furious_floor
-connected 1
-speed 0
 x 8
 y 4
+speed 0
+connected 1
 end
 arch flagstone
 x 8
@@ -984,22 +984,23 @@ y 4
 end
 arch pirate_lass
 name Sweet Little Girl
-level 24
+Con 25
+Wis 5
+hp 500
+maxhp 500
 exp 600
 dam 24
 wc -1
-hp 500
-maxhp 500
 ac -1
-Con 25
-sleep 1
-Wis 5
-resist_physical 10
-resist_magic 10
 x 8
 y 4
+level 24
+resist_physical 10
+resist_magic 10
+sleep 1
 arch note
 name crumpled note
+name_pl crumpled notes
 msg
 Gentlemen,
 The Training Center areas have been purchased
@@ -1017,17 +1018,16 @@ Sincerely,
 Loan Office
 Bank of Skud
 endmsg
-name_pl crumpled notes
 level 3
 end
 arch random_potion
 end
 end
 arch furious_floor
-connected 1
-speed 0
 x 8
 y 5
+speed 0
+connected 1
 end
 arch flagstone
 x 8
@@ -1035,11 +1035,11 @@ y 5
 end
 arch sailor
 name Pirate
-unaggressive 0
-sleep 1
 Wis 4
 x 8
 y 5
+unaggressive 0
+sleep 1
 end
 arch flagstone
 x 8

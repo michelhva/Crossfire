@@ -1,13 +1,14 @@
 arch map
+name <unnamed>
+reset_timeout 200
 region scorn
+width 10
+height 10
 msg
 Creator: Raphael Quinet
 Email: quinet@gamers.org
 Date: Sun Jan 24 21:14:52 1999
 endmsg
-x 10
-y 10
-weight 200
 end
 arch dungeon_floor
 end

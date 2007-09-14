@@ -1,12 +1,12 @@
 arch map
 name granary
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 28 22:06:01 1994
 endmsg
-width 16
-height 16
 end
 arch farmland
 end
@@ -194,9 +194,9 @@ y 3
 end
 arch sack
 name a burlap sack
-carrying 560
 x 2
 y 3
+carrying 560
 arch carrot
 nrof 7
 end
@@ -913,9 +913,9 @@ end
 arch generate_kobold
 name dog kennel
 other_arch dog
-level 4
 x 10
 y 2
+level 4
 end
 arch pstone_1
 x 10
@@ -983,9 +983,9 @@ y 12
 end
 arch sack
 name a potato sack
-carrying 9600
 x 10
 y 12
+carrying 9600
 arch potato
 nrof 3
 end
@@ -1075,9 +1075,9 @@ y 10
 end
 arch sack
 name a potato sack
-carrying 31200
 x 11
 y 10
+carrying 31200
 arch potato
 nrof 3
 end
@@ -1096,9 +1096,9 @@ y 12
 end
 arch sack
 name a potato sack
-carrying 31200
 x 11
 y 12
+carrying 31200
 arch potato
 nrof 3
 end

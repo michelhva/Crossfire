@@ -1,12 +1,10 @@
 arch map
-region wolfsburg
 name ttb2
-msg
-endmsg
-hp 44
-sp 18
-x 53
-y 38
+region wolfsburg
+width 53
+height 38
+enter_x 44
+enter_y 18
 end
 arch grass
 end

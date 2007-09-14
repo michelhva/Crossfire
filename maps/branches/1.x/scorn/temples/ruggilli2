@@ -1,16 +1,16 @@
 arch map
 name ruggilli2
 region scorn
+width 16
+height 16
+enter_x 5
+enter_y 7
 msg
 Creator: dnh
 Email: dnh@hawthorn.csse.monash.edu.au
 Date: Wed Jan  3 01:46:49 2001
 Altar to level 120 20050527
 endmsg
-width 16
-height 16
-enter_x 5
-enter_y 7
 end
 arch blocked
 end
@@ -622,9 +622,9 @@ x 5
 y 10
 end
 arch altar_ruggilli
-level 120
 x 5
 y 10
+level 120
 end
 arch pstone_1
 x 5
@@ -645,11 +645,12 @@ msg
 FOR RUGGILLI!
 endmsg
 hp 35
-carrying 700
 x 5
 y 13
+carrying 700
 arch scroll_2
 name Servant's Pass
+slaying rug_pass
 msg
 Possession of this paper is proof that
 "The Servant" has been defeated.
@@ -657,7 +658,6 @@ Entrance to Ruggilli's sanctuary is
 hereby permitted,
 signed theservant_
 endmsg
-slaying rug_pass
 nrof 2
 end
 end
@@ -812,9 +812,9 @@ x 7
 y 2
 end
 arch button_handle
-connected 2
 x 7
 y 2
+connected 2
 end
 arch pstone_1
 x 7
@@ -948,10 +948,10 @@ x 8
 y 4
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 8
 y 4
+speed 0.500000
+connected 1
 end
 arch pstone_1
 x 8
@@ -1069,10 +1069,10 @@ x 9
 y 4
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 9
 y 4
+speed 0.500000
+connected 1
 end
 arch pstone_1
 x 9
@@ -1091,9 +1091,9 @@ x 9
 y 8
 end
 arch gateTrg1
-connected 3
 x 9
 y 8
+connected 3
 end
 arch pstone_1
 x 9
@@ -1117,10 +1117,10 @@ y 11
 end
 arch locked_door1
 name Servant's Room
+slaying ruggilli.test
 msg
 The Guard holds the key
 endmsg
-slaying ruggilli.test
 x 9
 y 11
 end
@@ -1190,10 +1190,10 @@ x 10
 y 4
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 10
 y 4
+speed 0.500000
+connected 1
 end
 arch pstone_1
 x 10
@@ -1204,9 +1204,9 @@ x 10
 y 6
 end
 arch button_handle
-connected 1
 x 10
 y 6
+connected 1
 end
 arch pstone_1
 x 10
@@ -1217,9 +1217,9 @@ x 10
 y 8
 end
 arch gateTrg1
-connected 3
 x 10
 y 8
+connected 3
 end
 arch pstone_1
 x 10
@@ -1240,9 +1240,9 @@ msg
 You'll haf ta figh' me ta ge' in
 endmsg
 hp 15
-carrying 100
 x 10
 y 10
+carrying 100
 arch key2
 name Rusted Key
 slaying ruggilli.test
@@ -1278,9 +1278,9 @@ x 10
 y 14
 end
 arch trigger
-connected 3
 x 10
 y 14
+connected 3
 end
 arch pstone_1
 x 10
@@ -1326,10 +1326,10 @@ x 11
 y 4
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 11
 y 4
+speed 0.500000
+connected 1
 end
 arch pstone_1
 x 11
@@ -1348,9 +1348,9 @@ x 11
 y 8
 end
 arch gateTrg1
-connected 3
 x 11
 y 8
+connected 3
 end
 arch pstone_1
 x 11
@@ -1456,18 +1456,18 @@ x 12
 y 5
 end
 arch gate_closed_2
-connected 2
 x 12
 y 5
+connected 2
 end
 arch pstone_1
 x 12
 y 6
 end
 arch gate_closed_2
-connected 2
 x 12
 y 6
+connected 2
 end
 arch pstone_1
 x 12
@@ -1676,9 +1676,9 @@ x 14
 y 3
 end
 arch button_handle
-connected 3
 x 14
 y 3
+connected 3
 end
 arch pstone_1
 x 14

@@ -1,14 +1,14 @@
 arch map
-region wolfsburg
 name <untitled>
+region wolfsburg
+width 30
+height 29
+enter_y 1
 msg
 Creator:
 Email:
 Date: Mon Nov  1 13:18:19 1993
 endmsg
-width 30
-height 29
-enter_y 1
 end
 arch cave24
 end
@@ -4505,6 +4505,13 @@ arch pstone_1
 x 28
 y 19
 end
+arch rowboat
+slaying /world/world_128_109
+hp 16
+sp 21
+x 28
+y 19
+end
 arch pstone_1
 x 28
 y 20
@@ -4675,11 +4682,4 @@ end
 arch blocked
 x 29
 y 28
-end
-arch rowboat
-slaying /world/world_128_109
-hp 16
-sp 21
-x 28
-y 19
 end

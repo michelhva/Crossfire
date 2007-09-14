@@ -1,15 +1,15 @@
 arch map
-region wolfsburg
 name snakepit
+region wolfsburg
+width 15
+height 15
+enter_x 13
+enter_y 1
 msg
 Creator: 
 Email: 
 Date: Wed Oct 13 12:33:52 1993
 endmsg
-hp 13
-sp 1
-x 15
-y 15
 end
 arch medium_stones
 end
@@ -137,6 +137,10 @@ arch large_stones
 x 1
 y 5
 end
+arch cobra
+x 1
+y 5
+end
 arch medium_stones
 x 1
 y 6
@@ -235,6 +239,10 @@ arch medium_stones
 x 2
 y 8
 end
+arch cobra
+x 2
+y 8
+end
 arch medium_stones
 x 2
 y 9
@@ -248,6 +256,10 @@ x 2
 y 11
 end
 arch medium_stones
+x 2
+y 12
+end
+arch cobra
 x 2
 y 12
 end
@@ -575,6 +587,10 @@ arch medium_stones
 x 6
 y 10
 end
+arch cobra
+x 6
+y 10
+end
 arch medium_stones
 x 6
 y 11
@@ -630,6 +646,10 @@ x 7
 y 5
 end
 arch medium_stones
+x 7
+y 6
+end
+arch cobra
 x 7
 y 6
 end
@@ -977,6 +997,10 @@ arch medium_stones
 x 11
 y 9
 end
+arch cobra
+x 11
+y 9
+end
 arch medium_stones
 x 11
 y 10
@@ -1289,28 +1313,4 @@ end
 arch cave22
 x 14
 y 14
-end
-arch cobra
-x 1
-y 5
-end
-arch cobra
-x 2
-y 8
-end
-arch cobra
-x 2
-y 12
-end
-arch cobra
-x 6
-y 10
-end
-arch cobra
-x 7
-y 6
-end
-arch cobra
-x 11
-y 9
 end

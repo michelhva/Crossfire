@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 1
 darkness 3
@@ -15,8 +16,6 @@ end
 arch istone
 end
 arch blocked
-msg
-endmsg
 end
 arch istone
 y 1
@@ -52,8 +51,6 @@ arch snow5
 y 5
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch istone
@@ -63,112 +60,84 @@ arch snow4
 y 6
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch snow
 y 7
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch snow
 y 8
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch snow
 y 9
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch snow
 y 10
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch snow
 y 11
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch snow
 y 12
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch snow
 y 13
 end
 arch blocked
-msg
-endmsg
 y 13
 end
 arch snow
 y 14
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch snow
 y 15
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch snow
 y 16
 end
 arch blocked
-msg
-endmsg
 y 16
 end
 arch snow
 y 17
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch snow
 y 18
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch snow
 y 19
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch istone
@@ -178,8 +147,6 @@ arch snow4
 y 20
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch istone
@@ -294,8 +261,6 @@ arch snow4
 y 35
 end
 arch blocked
-msg
-endmsg
 y 35
 end
 arch istone
@@ -305,8 +270,6 @@ arch snow5
 y 36
 end
 arch blocked
-msg
-endmsg
 y 36
 end
 arch istone
@@ -316,144 +279,108 @@ arch snow5
 y 37
 end
 arch blocked
-msg
-endmsg
 y 37
 end
 arch istone
 y 38
 end
 arch blocked
-msg
-endmsg
 y 38
 end
 arch istone
 y 39
 end
 arch blocked
-msg
-endmsg
 y 39
 end
 arch istone
 y 40
 end
 arch blocked
-msg
-endmsg
 y 40
 end
 arch istone
 y 41
 end
 arch blocked
-msg
-endmsg
 y 41
 end
 arch istone
 y 42
 end
 arch blocked
-msg
-endmsg
 y 42
 end
 arch istone
 y 43
 end
 arch blocked
-msg
-endmsg
 y 43
 end
 arch istone
 y 44
 end
 arch blocked
-msg
-endmsg
 y 44
 end
 arch istone
 y 45
 end
 arch blocked
-msg
-endmsg
 y 45
 end
 arch istone
 y 46
 end
 arch blocked
-msg
-endmsg
 y 46
 end
 arch istone
 y 47
 end
 arch blocked
-msg
-endmsg
 y 47
 end
 arch istone
 y 48
 end
 arch blocked
-msg
-endmsg
 y 48
 end
 arch istone
 y 49
 end
 arch blocked
-msg
-endmsg
 y 49
 end
 arch istone
 y 50
 end
 arch blocked
-msg
-endmsg
 y 50
 end
 arch istone
 y 51
 end
 arch blocked
-msg
-endmsg
 y 51
 end
 arch istone
 y 52
 end
 arch blocked
-msg
-endmsg
 y 52
 end
 arch istone
 y 53
 end
 arch blocked
-msg
-endmsg
 y 53
 end
 arch istone
 y 54
 end
 arch blocked
-msg
-endmsg
 y 54
 end
 arch istone
@@ -463,8 +390,6 @@ arch snow5
 y 55
 end
 arch blocked
-msg
-endmsg
 y 55
 end
 arch istone
@@ -474,8 +399,6 @@ arch snow5
 y 56
 end
 arch blocked
-msg
-endmsg
 y 56
 end
 arch istone
@@ -485,56 +408,42 @@ arch snow4
 y 57
 end
 arch blocked
-msg
-endmsg
 y 57
 end
 arch snow
 y 58
 end
 arch blocked
-msg
-endmsg
 y 58
 end
 arch snow
 y 59
 end
 arch blocked
-msg
-endmsg
 y 59
 end
 arch snow
 y 60
 end
 arch blocked
-msg
-endmsg
 y 60
 end
 arch snow
 y 61
 end
 arch blocked
-msg
-endmsg
 y 61
 end
 arch snow
 y 62
 end
 arch blocked
-msg
-endmsg
 y 62
 end
 arch snow
 y 63
 end
 arch blocked
-msg
-endmsg
 y 63
 end
 arch istone
@@ -616,8 +525,6 @@ x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -626,8 +533,6 @@ x 1
 y 9
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
@@ -636,8 +541,6 @@ x 1
 y 10
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
@@ -646,8 +549,6 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 11
 end
@@ -656,8 +557,6 @@ x 1
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
@@ -780,7 +679,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 1
@@ -953,8 +851,6 @@ x 1
 y 45
 end
 arch blocked
-msg
-endmsg
 x 1
 y 45
 end
@@ -963,8 +859,6 @@ x 1
 y 46
 end
 arch blocked
-msg
-endmsg
 x 1
 y 46
 end
@@ -973,8 +867,6 @@ x 1
 y 47
 end
 arch blocked
-msg
-endmsg
 x 1
 y 47
 end
@@ -983,8 +875,6 @@ x 1
 y 48
 end
 arch blocked
-msg
-endmsg
 x 1
 y 48
 end
@@ -993,8 +883,6 @@ x 1
 y 49
 end
 arch blocked
-msg
-endmsg
 x 1
 y 49
 end
@@ -1003,8 +891,6 @@ x 1
 y 50
 end
 arch blocked
-msg
-endmsg
 x 1
 y 50
 end
@@ -1013,8 +899,6 @@ x 1
 y 51
 end
 arch blocked
-msg
-endmsg
 x 1
 y 51
 end
@@ -1023,8 +907,6 @@ x 1
 y 52
 end
 arch blocked
-msg
-endmsg
 x 1
 y 52
 end
@@ -1033,8 +915,6 @@ x 1
 y 53
 end
 arch blocked
-msg
-endmsg
 x 1
 y 53
 end
@@ -1047,8 +927,6 @@ x 1
 y 54
 end
 arch blocked
-msg
-endmsg
 x 1
 y 54
 end
@@ -1057,8 +935,6 @@ x 1
 y 55
 end
 arch blocked
-msg
-endmsg
 x 1
 y 55
 end
@@ -1071,8 +947,6 @@ x 1
 y 56
 end
 arch blocked
-msg
-endmsg
 x 1
 y 56
 end
@@ -1085,8 +959,6 @@ x 1
 y 57
 end
 arch blocked
-msg
-endmsg
 x 1
 y 57
 end
@@ -1095,8 +967,6 @@ x 1
 y 58
 end
 arch blocked
-msg
-endmsg
 x 1
 y 58
 end
@@ -1105,8 +975,6 @@ x 1
 y 59
 end
 arch blocked
-msg
-endmsg
 x 1
 y 59
 end
@@ -1115,8 +983,6 @@ x 1
 y 60
 end
 arch blocked
-msg
-endmsg
 x 1
 y 60
 end
@@ -1125,8 +991,6 @@ x 1
 y 61
 end
 arch blocked
-msg
-endmsg
 x 1
 y 61
 end
@@ -1135,8 +999,6 @@ x 1
 y 62
 end
 arch blocked
-msg
-endmsg
 x 1
 y 62
 end
@@ -1145,8 +1007,6 @@ x 1
 y 63
 end
 arch blocked
-msg
-endmsg
 x 1
 y 63
 end
@@ -1176,7 +1036,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 2
@@ -1243,7 +1102,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 2
@@ -1323,8 +1181,6 @@ x 2
 y 9
 end
 arch blocked
-msg
-endmsg
 x 2
 y 9
 end
@@ -1333,8 +1189,6 @@ x 2
 y 10
 end
 arch blocked
-msg
-endmsg
 x 2
 y 10
 end
@@ -1343,8 +1197,6 @@ x 2
 y 11
 end
 arch blocked
-msg
-endmsg
 x 2
 y 11
 end
@@ -1419,7 +1271,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 2
@@ -1486,7 +1337,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 2
@@ -1513,7 +1363,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 2
@@ -1573,7 +1422,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 2
@@ -1640,7 +1488,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 2
@@ -1707,7 +1554,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 2
@@ -1807,8 +1653,6 @@ x 2
 y 50
 end
 arch blocked
-msg
-endmsg
 x 2
 y 50
 end
@@ -1817,8 +1661,6 @@ x 2
 y 51
 end
 arch blocked
-msg
-endmsg
 x 2
 y 51
 end
@@ -1831,8 +1673,6 @@ x 2
 y 52
 end
 arch blocked
-msg
-endmsg
 x 2
 y 52
 end
@@ -1841,8 +1681,6 @@ x 2
 y 53
 end
 arch blocked
-msg
-endmsg
 x 2
 y 53
 end
@@ -1851,8 +1689,6 @@ x 2
 y 54
 end
 arch blocked
-msg
-endmsg
 x 2
 y 54
 end
@@ -1865,8 +1701,6 @@ x 2
 y 55
 end
 arch blocked
-msg
-endmsg
 x 2
 y 55
 end
@@ -1879,8 +1713,6 @@ x 2
 y 56
 end
 arch blocked
-msg
-endmsg
 x 2
 y 56
 end
@@ -1893,8 +1725,6 @@ x 2
 y 57
 end
 arch blocked
-msg
-endmsg
 x 2
 y 57
 end
@@ -1903,8 +1733,6 @@ x 2
 y 58
 end
 arch blocked
-msg
-endmsg
 x 2
 y 58
 end
@@ -1913,8 +1741,6 @@ x 2
 y 59
 end
 arch blocked
-msg
-endmsg
 x 2
 y 59
 end
@@ -1923,8 +1749,6 @@ x 2
 y 60
 end
 arch blocked
-msg
-endmsg
 x 2
 y 60
 end
@@ -1933,8 +1757,6 @@ x 2
 y 61
 end
 arch blocked
-msg
-endmsg
 x 2
 y 61
 end
@@ -1943,8 +1765,6 @@ x 2
 y 62
 end
 arch blocked
-msg
-endmsg
 x 2
 y 62
 end
@@ -1953,8 +1773,6 @@ x 2
 y 63
 end
 arch blocked
-msg
-endmsg
 x 2
 y 63
 end
@@ -2007,7 +1825,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 3
@@ -2036,8 +1853,6 @@ x 3
 y 9
 end
 arch blocked
-msg
-endmsg
 x 3
 y 9
 end
@@ -2046,8 +1861,6 @@ x 3
 y 10
 end
 arch blocked
-msg
-endmsg
 x 3
 y 10
 end
@@ -2056,8 +1869,6 @@ x 3
 y 11
 end
 arch blocked
-msg
-endmsg
 x 3
 y 11
 end
@@ -2162,7 +1973,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 3
@@ -2306,7 +2116,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 3
@@ -2373,7 +2182,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 3
@@ -2473,8 +2281,6 @@ x 3
 y 54
 end
 arch blocked
-msg
-endmsg
 x 3
 y 54
 end
@@ -2487,8 +2293,6 @@ x 3
 y 55
 end
 arch blocked
-msg
-endmsg
 x 3
 y 55
 end
@@ -2501,8 +2305,6 @@ x 3
 y 56
 end
 arch blocked
-msg
-endmsg
 x 3
 y 56
 end
@@ -2515,8 +2317,6 @@ x 3
 y 57
 end
 arch blocked
-msg
-endmsg
 x 3
 y 57
 end
@@ -2525,8 +2325,6 @@ x 3
 y 58
 end
 arch blocked
-msg
-endmsg
 x 3
 y 58
 end
@@ -2535,8 +2333,6 @@ x 3
 y 59
 end
 arch blocked
-msg
-endmsg
 x 3
 y 59
 end
@@ -2545,8 +2341,6 @@ x 3
 y 60
 end
 arch blocked
-msg
-endmsg
 x 3
 y 60
 end
@@ -2555,8 +2349,6 @@ x 3
 y 61
 end
 arch blocked
-msg
-endmsg
 x 3
 y 61
 end
@@ -2565,8 +2357,6 @@ x 3
 y 62
 end
 arch blocked
-msg
-endmsg
 x 3
 y 62
 end
@@ -2575,8 +2365,6 @@ x 3
 y 63
 end
 arch blocked
-msg
-endmsg
 x 3
 y 63
 end
@@ -2609,7 +2397,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 4
@@ -2701,8 +2488,6 @@ x 4
 y 9
 end
 arch blocked
-msg
-endmsg
 x 4
 y 9
 end
@@ -2711,8 +2496,6 @@ x 4
 y 10
 end
 arch blocked
-msg
-endmsg
 x 4
 y 10
 end
@@ -2869,7 +2652,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 4
@@ -2937,7 +2719,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 4
@@ -3052,7 +2833,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 4
@@ -3140,8 +2920,6 @@ x 4
 y 55
 end
 arch blocked
-msg
-endmsg
 x 4
 y 55
 end
@@ -3154,8 +2932,6 @@ x 4
 y 56
 end
 arch blocked
-msg
-endmsg
 x 4
 y 56
 end
@@ -3164,8 +2940,6 @@ x 4
 y 57
 end
 arch blocked
-msg
-endmsg
 x 4
 y 57
 end
@@ -3174,8 +2948,6 @@ x 4
 y 58
 end
 arch blocked
-msg
-endmsg
 x 4
 y 58
 end
@@ -3184,8 +2956,6 @@ x 4
 y 59
 end
 arch blocked
-msg
-endmsg
 x 4
 y 59
 end
@@ -3194,8 +2964,6 @@ x 4
 y 60
 end
 arch blocked
-msg
-endmsg
 x 4
 y 60
 end
@@ -3204,8 +2972,6 @@ x 4
 y 61
 end
 arch blocked
-msg
-endmsg
 x 4
 y 61
 end
@@ -3214,8 +2980,6 @@ x 4
 y 62
 end
 arch blocked
-msg
-endmsg
 x 4
 y 62
 end
@@ -3224,8 +2988,6 @@ x 4
 y 63
 end
 arch blocked
-msg
-endmsg
 x 4
 y 63
 end
@@ -3273,7 +3035,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 5
@@ -3400,7 +3161,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 5
@@ -3431,7 +3191,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 5
@@ -3466,7 +3225,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 5
@@ -3570,7 +3328,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 5
@@ -3637,7 +3394,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 5
@@ -3704,7 +3460,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 5
@@ -3787,7 +3542,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 5
@@ -3875,8 +3629,6 @@ x 5
 y 56
 end
 arch blocked
-msg
-endmsg
 x 5
 y 56
 end
@@ -3885,8 +3637,6 @@ x 5
 y 57
 end
 arch blocked
-msg
-endmsg
 x 5
 y 57
 end
@@ -3895,8 +3645,6 @@ x 5
 y 58
 end
 arch blocked
-msg
-endmsg
 x 5
 y 58
 end
@@ -3905,8 +3653,6 @@ x 5
 y 59
 end
 arch blocked
-msg
-endmsg
 x 5
 y 59
 end
@@ -3915,8 +3661,6 @@ x 5
 y 60
 end
 arch blocked
-msg
-endmsg
 x 5
 y 60
 end
@@ -3925,8 +3669,6 @@ x 5
 y 61
 end
 arch blocked
-msg
-endmsg
 x 5
 y 61
 end
@@ -3935,8 +3677,6 @@ x 5
 y 62
 end
 arch blocked
-msg
-endmsg
 x 5
 y 62
 end
@@ -3945,8 +3685,6 @@ x 5
 y 63
 end
 arch blocked
-msg
-endmsg
 x 5
 y 63
 end
@@ -3998,7 +3736,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 6
@@ -4025,7 +3762,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 6
@@ -4249,7 +3985,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 6
@@ -4332,7 +4067,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 6
@@ -4400,8 +4134,6 @@ x 6
 y 56
 end
 arch blocked
-msg
-endmsg
 x 6
 y 56
 end
@@ -4410,8 +4142,6 @@ x 6
 y 57
 end
 arch blocked
-msg
-endmsg
 x 6
 y 57
 end
@@ -4420,8 +4150,6 @@ x 6
 y 58
 end
 arch blocked
-msg
-endmsg
 x 6
 y 58
 end
@@ -4430,8 +4158,6 @@ x 6
 y 59
 end
 arch blocked
-msg
-endmsg
 x 6
 y 59
 end
@@ -4440,8 +4166,6 @@ x 6
 y 60
 end
 arch blocked
-msg
-endmsg
 x 6
 y 60
 end
@@ -4450,8 +4174,6 @@ x 6
 y 61
 end
 arch blocked
-msg
-endmsg
 x 6
 y 61
 end
@@ -4460,8 +4182,6 @@ x 6
 y 62
 end
 arch blocked
-msg
-endmsg
 x 6
 y 62
 end
@@ -4470,8 +4190,6 @@ x 6
 y 63
 end
 arch blocked
-msg
-endmsg
 x 6
 y 63
 end
@@ -4492,7 +4210,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4519,7 +4236,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4598,7 +4314,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4657,7 +4372,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4704,7 +4418,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4803,7 +4516,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 7
@@ -4908,8 +4620,6 @@ x 7
 y 56
 end
 arch blocked
-msg
-endmsg
 x 7
 y 56
 end
@@ -4918,8 +4628,6 @@ x 7
 y 57
 end
 arch blocked
-msg
-endmsg
 x 7
 y 57
 end
@@ -4928,8 +4636,6 @@ x 7
 y 58
 end
 arch blocked
-msg
-endmsg
 x 7
 y 58
 end
@@ -4938,8 +4644,6 @@ x 7
 y 59
 end
 arch blocked
-msg
-endmsg
 x 7
 y 59
 end
@@ -4948,8 +4652,6 @@ x 7
 y 60
 end
 arch blocked
-msg
-endmsg
 x 7
 y 60
 end
@@ -4958,8 +4660,6 @@ x 7
 y 61
 end
 arch blocked
-msg
-endmsg
 x 7
 y 61
 end
@@ -4968,8 +4668,6 @@ x 7
 y 62
 end
 arch blocked
-msg
-endmsg
 x 7
 y 62
 end
@@ -4978,8 +4676,6 @@ x 7
 y 63
 end
 arch blocked
-msg
-endmsg
 x 7
 y 63
 end
@@ -5020,7 +4716,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 8
@@ -5047,7 +4742,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 8
@@ -5112,8 +4806,6 @@ x 8
 y 21
 end
 arch blocked
-msg
-endmsg
 x 8
 y 21
 end
@@ -5122,8 +4814,6 @@ x 8
 y 22
 end
 arch blocked
-msg
-endmsg
 x 8
 y 22
 end
@@ -5162,7 +4852,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 8
@@ -5213,7 +4902,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 8
@@ -5238,8 +4926,6 @@ x 8
 y 39
 end
 arch blocked
-msg
-endmsg
 x 8
 y 39
 end
@@ -5248,8 +4934,6 @@ x 8
 y 40
 end
 arch blocked
-msg
-endmsg
 x 8
 y 40
 end
@@ -5262,8 +4946,6 @@ x 8
 y 41
 end
 arch blocked
-msg
-endmsg
 x 8
 y 41
 end
@@ -5322,7 +5004,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 8
@@ -5411,8 +5092,6 @@ x 8
 y 56
 end
 arch blocked
-msg
-endmsg
 x 8
 y 56
 end
@@ -5421,8 +5100,6 @@ x 8
 y 57
 end
 arch blocked
-msg
-endmsg
 x 8
 y 57
 end
@@ -5431,8 +5108,6 @@ x 8
 y 58
 end
 arch blocked
-msg
-endmsg
 x 8
 y 58
 end
@@ -5441,8 +5116,6 @@ x 8
 y 59
 end
 arch blocked
-msg
-endmsg
 x 8
 y 59
 end
@@ -5451,8 +5124,6 @@ x 8
 y 60
 end
 arch blocked
-msg
-endmsg
 x 8
 y 60
 end
@@ -5461,8 +5132,6 @@ x 8
 y 61
 end
 arch blocked
-msg
-endmsg
 x 8
 y 61
 end
@@ -5471,8 +5140,6 @@ x 8
 y 62
 end
 arch blocked
-msg
-endmsg
 x 8
 y 62
 end
@@ -5481,8 +5148,6 @@ x 8
 y 63
 end
 arch blocked
-msg
-endmsg
 x 8
 y 63
 end
@@ -5519,7 +5184,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 9
@@ -5562,7 +5226,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 9
@@ -5623,8 +5286,6 @@ x 9
 y 21
 end
 arch blocked
-msg
-endmsg
 x 9
 y 21
 end
@@ -5633,8 +5294,6 @@ x 9
 y 22
 end
 arch blocked
-msg
-endmsg
 x 9
 y 22
 end
@@ -5735,8 +5394,6 @@ x 9
 y 39
 end
 arch blocked
-msg
-endmsg
 x 9
 y 39
 end
@@ -5745,8 +5402,6 @@ x 9
 y 40
 end
 arch blocked
-msg
-endmsg
 x 9
 y 40
 end
@@ -5755,8 +5410,6 @@ x 9
 y 41
 end
 arch blocked
-msg
-endmsg
 x 9
 y 41
 end
@@ -5765,8 +5418,6 @@ x 9
 y 42
 end
 arch blocked
-msg
-endmsg
 x 9
 y 42
 end
@@ -5825,7 +5476,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 9
@@ -5860,7 +5510,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 9
@@ -5905,8 +5554,6 @@ x 9
 y 58
 end
 arch blocked
-msg
-endmsg
 x 9
 y 58
 end
@@ -5915,8 +5562,6 @@ x 9
 y 59
 end
 arch blocked
-msg
-endmsg
 x 9
 y 59
 end
@@ -5925,8 +5570,6 @@ x 9
 y 60
 end
 arch blocked
-msg
-endmsg
 x 9
 y 60
 end
@@ -5935,8 +5578,6 @@ x 9
 y 61
 end
 arch blocked
-msg
-endmsg
 x 9
 y 61
 end
@@ -5945,8 +5586,6 @@ x 9
 y 62
 end
 arch blocked
-msg
-endmsg
 x 9
 y 62
 end
@@ -5955,8 +5594,6 @@ x 9
 y 63
 end
 arch blocked
-msg
-endmsg
 x 9
 y 63
 end
@@ -5964,8 +5601,6 @@ arch snow
 x 10
 end
 arch blocked
-msg
-endmsg
 x 10
 end
 arch snow
@@ -5987,7 +5622,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 10
@@ -6022,7 +5656,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 10
@@ -6065,7 +5698,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 10
@@ -6092,7 +5724,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 10
@@ -6117,8 +5748,6 @@ x 10
 y 20
 end
 arch blocked
-msg
-endmsg
 x 10
 y 20
 end
@@ -6217,7 +5846,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 10
@@ -6266,8 +5894,6 @@ x 10
 y 39
 end
 arch blocked
-msg
-endmsg
 x 10
 y 39
 end
@@ -6276,8 +5902,6 @@ x 10
 y 40
 end
 arch blocked
-msg
-endmsg
 x 10
 y 40
 end
@@ -6286,8 +5910,6 @@ x 10
 y 41
 end
 arch blocked
-msg
-endmsg
 x 10
 y 41
 end
@@ -6296,8 +5918,6 @@ x 10
 y 42
 end
 arch blocked
-msg
-endmsg
 x 10
 y 42
 end
@@ -6382,8 +6002,6 @@ x 10
 y 59
 end
 arch blocked
-msg
-endmsg
 x 10
 y 59
 end
@@ -6392,8 +6010,6 @@ x 10
 y 60
 end
 arch blocked
-msg
-endmsg
 x 10
 y 60
 end
@@ -6402,8 +6018,6 @@ x 10
 y 61
 end
 arch blocked
-msg
-endmsg
 x 10
 y 61
 end
@@ -6412,8 +6026,6 @@ x 10
 y 62
 end
 arch blocked
-msg
-endmsg
 x 10
 y 62
 end
@@ -6422,8 +6034,6 @@ x 10
 y 63
 end
 arch blocked
-msg
-endmsg
 x 10
 y 63
 end
@@ -6431,8 +6041,6 @@ arch snow
 x 11
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch snow
@@ -6486,7 +6094,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 11
@@ -6673,7 +6280,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 11
@@ -6714,8 +6320,6 @@ x 11
 y 39
 end
 arch blocked
-msg
-endmsg
 x 11
 y 39
 end
@@ -6724,8 +6328,6 @@ x 11
 y 40
 end
 arch blocked
-msg
-endmsg
 x 11
 y 40
 end
@@ -6734,8 +6336,6 @@ x 11
 y 41
 end
 arch blocked
-msg
-endmsg
 x 11
 y 41
 end
@@ -6744,8 +6344,6 @@ x 11
 y 42
 end
 arch blocked
-msg
-endmsg
 x 11
 y 42
 end
@@ -6780,7 +6378,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 11
@@ -6849,8 +6446,6 @@ x 11
 y 59
 end
 arch blocked
-msg
-endmsg
 x 11
 y 59
 end
@@ -6859,8 +6454,6 @@ x 11
 y 60
 end
 arch blocked
-msg
-endmsg
 x 11
 y 60
 end
@@ -6869,8 +6462,6 @@ x 11
 y 61
 end
 arch blocked
-msg
-endmsg
 x 11
 y 61
 end
@@ -6879,8 +6470,6 @@ x 11
 y 62
 end
 arch blocked
-msg
-endmsg
 x 11
 y 62
 end
@@ -6889,8 +6478,6 @@ x 11
 y 63
 end
 arch blocked
-msg
-endmsg
 x 11
 y 63
 end
@@ -6898,8 +6485,6 @@ arch snow
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch snow
@@ -6921,7 +6506,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -6944,7 +6528,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -6979,7 +6562,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7018,7 +6600,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7221,7 +6802,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7260,7 +6840,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7317,8 +6896,6 @@ x 12
 y 38
 end
 arch blocked
-msg
-endmsg
 x 12
 y 38
 end
@@ -7327,8 +6904,6 @@ x 12
 y 39
 end
 arch blocked
-msg
-endmsg
 x 12
 y 39
 end
@@ -7337,8 +6912,6 @@ x 12
 y 40
 end
 arch blocked
-msg
-endmsg
 x 12
 y 40
 end
@@ -7347,8 +6920,6 @@ x 12
 y 41
 end
 arch blocked
-msg
-endmsg
 x 12
 y 41
 end
@@ -7357,8 +6928,6 @@ x 12
 y 42
 end
 arch blocked
-msg
-endmsg
 x 12
 y 42
 end
@@ -7409,7 +6978,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7440,7 +7008,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 12
@@ -7469,8 +7036,6 @@ x 12
 y 59
 end
 arch blocked
-msg
-endmsg
 x 12
 y 59
 end
@@ -7479,8 +7044,6 @@ x 12
 y 60
 end
 arch blocked
-msg
-endmsg
 x 12
 y 60
 end
@@ -7489,8 +7052,6 @@ x 12
 y 61
 end
 arch blocked
-msg
-endmsg
 x 12
 y 61
 end
@@ -7499,8 +7060,6 @@ x 12
 y 62
 end
 arch blocked
-msg
-endmsg
 x 12
 y 62
 end
@@ -7509,8 +7068,6 @@ x 12
 y 63
 end
 arch blocked
-msg
-endmsg
 x 12
 y 63
 end
@@ -7518,8 +7075,6 @@ arch snow
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch snow
@@ -7557,7 +7112,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 13
@@ -7600,7 +7154,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 13
@@ -7833,8 +7386,6 @@ x 13
 y 38
 end
 arch blocked
-msg
-endmsg
 x 13
 y 38
 end
@@ -7843,8 +7394,6 @@ x 13
 y 39
 end
 arch blocked
-msg
-endmsg
 x 13
 y 39
 end
@@ -7853,8 +7402,6 @@ x 13
 y 40
 end
 arch blocked
-msg
-endmsg
 x 13
 y 40
 end
@@ -7863,8 +7410,6 @@ x 13
 y 41
 end
 arch blocked
-msg
-endmsg
 x 13
 y 41
 end
@@ -7873,8 +7418,6 @@ x 13
 y 42
 end
 arch blocked
-msg
-endmsg
 x 13
 y 42
 end
@@ -7897,7 +7440,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 13
@@ -7928,7 +7470,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 13
@@ -7985,8 +7526,6 @@ x 13
 y 59
 end
 arch blocked
-msg
-endmsg
 x 13
 y 59
 end
@@ -7995,8 +7534,6 @@ x 13
 y 60
 end
 arch blocked
-msg
-endmsg
 x 13
 y 60
 end
@@ -8005,8 +7542,6 @@ x 13
 y 61
 end
 arch blocked
-msg
-endmsg
 x 13
 y 61
 end
@@ -8015,8 +7550,6 @@ x 13
 y 62
 end
 arch blocked
-msg
-endmsg
 x 13
 y 62
 end
@@ -8025,8 +7558,6 @@ x 13
 y 63
 end
 arch blocked
-msg
-endmsg
 x 13
 y 63
 end
@@ -8034,8 +7565,6 @@ arch snow
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch snow
@@ -8089,7 +7618,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 14
@@ -8152,7 +7680,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 14
@@ -8185,8 +7712,6 @@ x 14
 y 20
 end
 arch blocked
-msg
-endmsg
 x 14
 y 20
 end
@@ -8305,7 +7830,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 14
@@ -8334,8 +7858,6 @@ x 14
 y 38
 end
 arch blocked
-msg
-endmsg
 x 14
 y 38
 end
@@ -8344,8 +7866,6 @@ x 14
 y 39
 end
 arch blocked
-msg
-endmsg
 x 14
 y 39
 end
@@ -8354,8 +7874,6 @@ x 14
 y 40
 end
 arch blocked
-msg
-endmsg
 x 14
 y 40
 end
@@ -8364,8 +7882,6 @@ x 14
 y 41
 end
 arch blocked
-msg
-endmsg
 x 14
 y 41
 end
@@ -8462,8 +7978,6 @@ x 14
 y 59
 end
 arch blocked
-msg
-endmsg
 x 14
 y 59
 end
@@ -8472,8 +7986,6 @@ x 14
 y 60
 end
 arch blocked
-msg
-endmsg
 x 14
 y 60
 end
@@ -8482,8 +7994,6 @@ x 14
 y 61
 end
 arch blocked
-msg
-endmsg
 x 14
 y 61
 end
@@ -8492,8 +8002,6 @@ x 14
 y 62
 end
 arch blocked
-msg
-endmsg
 x 14
 y 62
 end
@@ -8502,8 +8010,6 @@ x 14
 y 63
 end
 arch blocked
-msg
-endmsg
 x 14
 y 63
 end
@@ -8511,8 +8017,6 @@ arch snow
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch snow
@@ -8538,7 +8042,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 15
@@ -8659,8 +8162,6 @@ x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 15
 y 20
 end
@@ -8669,8 +8170,6 @@ x 15
 y 21
 end
 arch blocked
-msg
-endmsg
 x 15
 y 21
 end
@@ -8679,8 +8178,6 @@ x 15
 y 22
 end
 arch blocked
-msg
-endmsg
 x 15
 y 22
 end
@@ -8689,8 +8186,6 @@ x 15
 y 23
 end
 arch blocked
-msg
-endmsg
 x 15
 y 23
 end
@@ -8741,7 +8236,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 15
@@ -8780,7 +8274,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 15
@@ -8817,8 +8310,6 @@ x 15
 y 38
 end
 arch blocked
-msg
-endmsg
 x 15
 y 38
 end
@@ -8827,8 +8318,6 @@ x 15
 y 39
 end
 arch blocked
-msg
-endmsg
 x 15
 y 39
 end
@@ -8837,8 +8326,6 @@ x 15
 y 40
 end
 arch blocked
-msg
-endmsg
 x 15
 y 40
 end
@@ -8847,8 +8334,6 @@ x 15
 y 41
 end
 arch blocked
-msg
-endmsg
 x 15
 y 41
 end
@@ -8911,7 +8396,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 15
@@ -8956,8 +8440,6 @@ x 15
 y 60
 end
 arch blocked
-msg
-endmsg
 x 15
 y 60
 end
@@ -8966,8 +8448,6 @@ x 15
 y 61
 end
 arch blocked
-msg
-endmsg
 x 15
 y 61
 end
@@ -8976,8 +8456,6 @@ x 15
 y 62
 end
 arch blocked
-msg
-endmsg
 x 15
 y 62
 end
@@ -8986,8 +8464,6 @@ x 15
 y 63
 end
 arch blocked
-msg
-endmsg
 x 15
 y 63
 end
@@ -8995,8 +8471,6 @@ arch snow
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch snow
@@ -9030,7 +8504,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 16
@@ -9082,7 +8555,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 16
@@ -9198,8 +8670,6 @@ x 16
 y 19
 end
 arch blocked
-msg
-endmsg
 x 16
 y 19
 end
@@ -9208,8 +8678,6 @@ x 16
 y 20
 end
 arch blocked
-msg
-endmsg
 x 16
 y 20
 end
@@ -9218,8 +8686,6 @@ x 16
 y 21
 end
 arch blocked
-msg
-endmsg
 x 16
 y 21
 end
@@ -9228,8 +8694,6 @@ x 16
 y 22
 end
 arch blocked
-msg
-endmsg
 x 16
 y 22
 end
@@ -9238,8 +8702,6 @@ x 16
 y 23
 end
 arch blocked
-msg
-endmsg
 x 16
 y 23
 end
@@ -9290,7 +8752,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 16
@@ -9355,8 +8816,6 @@ x 16
 y 40
 end
 arch blocked
-msg
-endmsg
 x 16
 y 40
 end
@@ -9365,8 +8824,6 @@ x 16
 y 41
 end
 arch blocked
-msg
-endmsg
 x 16
 y 41
 end
@@ -9393,7 +8850,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 16
@@ -9468,7 +8924,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 16
@@ -9493,8 +8948,6 @@ x 16
 y 60
 end
 arch blocked
-msg
-endmsg
 x 16
 y 60
 end
@@ -9503,8 +8956,6 @@ x 16
 y 61
 end
 arch blocked
-msg
-endmsg
 x 16
 y 61
 end
@@ -9513,8 +8964,6 @@ x 16
 y 62
 end
 arch blocked
-msg
-endmsg
 x 16
 y 62
 end
@@ -9523,8 +8972,6 @@ x 16
 y 63
 end
 arch blocked
-msg
-endmsg
 x 16
 y 63
 end
@@ -9532,8 +8979,6 @@ arch snow
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 end
 arch snow
@@ -9592,7 +9037,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 17
@@ -9668,8 +9112,6 @@ x 17
 y 12
 end
 arch blocked
-msg
-endmsg
 x 17
 y 12
 end
@@ -9700,7 +9142,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 17
@@ -9741,8 +9182,6 @@ x 17
 y 19
 end
 arch blocked
-msg
-endmsg
 x 17
 y 19
 end
@@ -9751,8 +9190,6 @@ x 17
 y 20
 end
 arch blocked
-msg
-endmsg
 x 17
 y 20
 end
@@ -9761,8 +9198,6 @@ x 17
 y 21
 end
 arch blocked
-msg
-endmsg
 x 17
 y 21
 end
@@ -9771,8 +9206,6 @@ x 17
 y 22
 end
 arch blocked
-msg
-endmsg
 x 17
 y 22
 end
@@ -9781,8 +9214,6 @@ x 17
 y 23
 end
 arch blocked
-msg
-endmsg
 x 17
 y 23
 end
@@ -9863,8 +9294,6 @@ x 17
 y 40
 end
 arch blocked
-msg
-endmsg
 x 17
 y 40
 end
@@ -9873,8 +9302,6 @@ x 17
 y 41
 end
 arch blocked
-msg
-endmsg
 x 17
 y 41
 end
@@ -9921,7 +9348,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 17
@@ -9952,7 +9378,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 17
@@ -9997,8 +9422,6 @@ x 17
 y 60
 end
 arch blocked
-msg
-endmsg
 x 17
 y 60
 end
@@ -10007,8 +9430,6 @@ x 17
 y 61
 end
 arch blocked
-msg
-endmsg
 x 17
 y 61
 end
@@ -10017,8 +9438,6 @@ x 17
 y 62
 end
 arch blocked
-msg
-endmsg
 x 17
 y 62
 end
@@ -10027,8 +9446,6 @@ x 17
 y 63
 end
 arch blocked
-msg
-endmsg
 x 17
 y 63
 end
@@ -10036,8 +9453,6 @@ arch snow
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch snow
@@ -10129,8 +9544,6 @@ x 18
 y 12
 end
 arch blocked
-msg
-endmsg
 x 18
 y 12
 end
@@ -10179,8 +9592,6 @@ x 18
 y 19
 end
 arch blocked
-msg
-endmsg
 x 18
 y 19
 end
@@ -10189,8 +9600,6 @@ x 18
 y 20
 end
 arch blocked
-msg
-endmsg
 x 18
 y 20
 end
@@ -10199,8 +9608,6 @@ x 18
 y 21
 end
 arch blocked
-msg
-endmsg
 x 18
 y 21
 end
@@ -10209,8 +9616,6 @@ x 18
 y 22
 end
 arch blocked
-msg
-endmsg
 x 18
 y 22
 end
@@ -10219,8 +9624,6 @@ x 18
 y 23
 end
 arch blocked
-msg
-endmsg
 x 18
 y 23
 end
@@ -10243,7 +9646,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10286,7 +9688,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10313,7 +9714,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10336,7 +9736,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10407,7 +9806,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10458,7 +9856,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 18
@@ -10491,8 +9888,6 @@ x 18
 y 60
 end
 arch blocked
-msg
-endmsg
 x 18
 y 60
 end
@@ -10501,8 +9896,6 @@ x 18
 y 61
 end
 arch blocked
-msg
-endmsg
 x 18
 y 61
 end
@@ -10511,8 +9904,6 @@ x 18
 y 62
 end
 arch blocked
-msg
-endmsg
 x 18
 y 62
 end
@@ -10525,8 +9916,6 @@ x 18
 y 63
 end
 arch blocked
-msg
-endmsg
 x 18
 y 63
 end
@@ -10534,8 +9923,6 @@ arch snow
 x 19
 end
 arch blocked
-msg
-endmsg
 x 19
 end
 arch snow
@@ -10557,7 +9944,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 19
@@ -10617,7 +10003,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 19
@@ -10677,8 +10062,6 @@ x 19
 y 11
 end
 arch blocked
-msg
-endmsg
 x 19
 y 11
 end
@@ -10687,8 +10070,6 @@ x 19
 y 12
 end
 arch blocked
-msg
-endmsg
 x 19
 y 12
 end
@@ -10727,7 +10108,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 19
@@ -10756,8 +10136,6 @@ x 19
 y 19
 end
 arch blocked
-msg
-endmsg
 x 19
 y 19
 end
@@ -10766,8 +10144,6 @@ x 19
 y 20
 end
 arch blocked
-msg
-endmsg
 x 19
 y 20
 end
@@ -10776,8 +10152,6 @@ x 19
 y 21
 end
 arch blocked
-msg
-endmsg
 x 19
 y 21
 end
@@ -10786,8 +10160,6 @@ x 19
 y 22
 end
 arch blocked
-msg
-endmsg
 x 19
 y 22
 end
@@ -10796,8 +10168,6 @@ x 19
 y 23
 end
 arch blocked
-msg
-endmsg
 x 19
 y 23
 end
@@ -10904,7 +10274,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 19
@@ -10993,8 +10362,6 @@ x 19
 y 60
 end
 arch blocked
-msg
-endmsg
 x 19
 y 60
 end
@@ -11007,8 +10374,6 @@ x 19
 y 61
 end
 arch blocked
-msg
-endmsg
 x 19
 y 61
 end
@@ -11021,8 +10386,6 @@ x 19
 y 62
 end
 arch blocked
-msg
-endmsg
 x 19
 y 62
 end
@@ -11035,8 +10398,6 @@ x 19
 y 63
 end
 arch blocked
-msg
-endmsg
 x 19
 y 63
 end
@@ -11044,8 +10405,6 @@ arch snow
 x 20
 end
 arch blocked
-msg
-endmsg
 x 20
 end
 arch snow
@@ -11096,7 +10455,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 20
@@ -11180,8 +10538,6 @@ x 20
 y 11
 end
 arch blocked
-msg
-endmsg
 x 20
 y 11
 end
@@ -11194,8 +10550,6 @@ x 20
 y 12
 end
 arch blocked
-msg
-endmsg
 x 20
 y 12
 end
@@ -11276,8 +10630,6 @@ x 20
 y 22
 end
 arch blocked
-msg
-endmsg
 x 20
 y 22
 end
@@ -11286,8 +10638,6 @@ x 20
 y 23
 end
 arch blocked
-msg
-endmsg
 x 20
 y 23
 end
@@ -11326,7 +10676,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 20
@@ -11394,7 +10743,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 20
@@ -11512,7 +10860,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 20
@@ -11543,7 +10890,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 20
@@ -11576,8 +10922,6 @@ x 20
 y 60
 end
 arch blocked
-msg
-endmsg
 x 20
 y 60
 end
@@ -11590,8 +10934,6 @@ x 20
 y 61
 end
 arch blocked
-msg
-endmsg
 x 20
 y 61
 end
@@ -11604,8 +10946,6 @@ x 20
 y 62
 end
 arch blocked
-msg
-endmsg
 x 20
 y 62
 end
@@ -11618,8 +10958,6 @@ x 20
 y 63
 end
 arch blocked
-msg
-endmsg
 x 20
 y 63
 end
@@ -11627,8 +10965,6 @@ arch snow
 x 21
 end
 arch blocked
-msg
-endmsg
 x 21
 end
 arch snow
@@ -11716,8 +11052,6 @@ x 21
 y 11
 end
 arch blocked
-msg
-endmsg
 x 21
 y 11
 end
@@ -11730,8 +11064,6 @@ x 21
 y 12
 end
 arch blocked
-msg
-endmsg
 x 21
 y 12
 end
@@ -11744,8 +11076,6 @@ x 21
 y 13
 end
 arch blocked
-msg
-endmsg
 x 21
 y 13
 end
@@ -11788,7 +11118,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 21
@@ -11875,7 +11204,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 21
@@ -11902,7 +11230,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 21
@@ -11970,7 +11297,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 21
@@ -12048,7 +11374,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 21
@@ -12075,7 +11400,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 21
@@ -12136,8 +11460,6 @@ x 21
 y 60
 end
 arch blocked
-msg
-endmsg
 x 21
 y 60
 end
@@ -12150,8 +11472,6 @@ x 21
 y 61
 end
 arch blocked
-msg
-endmsg
 x 21
 y 61
 end
@@ -12164,8 +11484,6 @@ x 21
 y 62
 end
 arch blocked
-msg
-endmsg
 x 21
 y 62
 end
@@ -12174,8 +11492,6 @@ x 21
 y 63
 end
 arch blocked
-msg
-endmsg
 x 21
 y 63
 end
@@ -12183,8 +11499,6 @@ arch snow
 x 22
 end
 arch blocked
-msg
-endmsg
 x 22
 end
 arch snow
@@ -12192,8 +11506,6 @@ x 22
 y 1
 end
 arch blocked
-msg
-endmsg
 x 22
 y 1
 end
@@ -12216,7 +11528,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 22
@@ -12263,7 +11574,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 22
@@ -12300,8 +11610,6 @@ x 22
 y 11
 end
 arch blocked
-msg
-endmsg
 x 22
 y 11
 end
@@ -12310,8 +11618,6 @@ x 22
 y 12
 end
 arch blocked
-msg
-endmsg
 x 22
 y 12
 end
@@ -12320,8 +11626,6 @@ x 22
 y 13
 end
 arch blocked
-msg
-endmsg
 x 22
 y 13
 end
@@ -12388,7 +11692,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 22
@@ -12472,7 +11775,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 22
@@ -12563,7 +11865,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 22
@@ -12665,7 +11966,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 22
@@ -12706,8 +12006,6 @@ x 22
 y 60
 end
 arch blocked
-msg
-endmsg
 x 22
 y 60
 end
@@ -12720,8 +12018,6 @@ x 22
 y 61
 end
 arch blocked
-msg
-endmsg
 x 22
 y 61
 end
@@ -12730,8 +12026,6 @@ x 22
 y 62
 end
 arch blocked
-msg
-endmsg
 x 22
 y 62
 end
@@ -12740,8 +12034,6 @@ x 22
 y 63
 end
 arch blocked
-msg
-endmsg
 x 22
 y 63
 end
@@ -12749,8 +12041,6 @@ arch snow
 x 23
 end
 arch blocked
-msg
-endmsg
 x 23
 end
 arch snow
@@ -12758,8 +12048,6 @@ x 23
 y 1
 end
 arch blocked
-msg
-endmsg
 x 23
 y 1
 end
@@ -12794,7 +12082,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 23
@@ -12827,8 +12114,6 @@ x 23
 y 11
 end
 arch blocked
-msg
-endmsg
 x 23
 y 11
 end
@@ -12837,8 +12122,6 @@ x 23
 y 12
 end
 arch blocked
-msg
-endmsg
 x 23
 y 12
 end
@@ -12847,8 +12130,6 @@ x 23
 y 13
 end
 arch blocked
-msg
-endmsg
 x 23
 y 13
 end
@@ -12871,7 +12152,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 23
@@ -12922,7 +12202,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 23
@@ -13034,7 +12313,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 23
@@ -13144,7 +12422,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 23
@@ -13201,8 +12478,6 @@ x 23
 y 60
 end
 arch blocked
-msg
-endmsg
 x 23
 y 60
 end
@@ -13215,8 +12490,6 @@ x 23
 y 61
 end
 arch blocked
-msg
-endmsg
 x 23
 y 61
 end
@@ -13225,8 +12498,6 @@ x 23
 y 62
 end
 arch blocked
-msg
-endmsg
 x 23
 y 62
 end
@@ -13235,8 +12506,6 @@ x 23
 y 63
 end
 arch blocked
-msg
-endmsg
 x 23
 y 63
 end
@@ -13244,8 +12513,6 @@ arch snow
 x 24
 end
 arch blocked
-msg
-endmsg
 x 24
 end
 arch snow
@@ -13253,8 +12520,6 @@ x 24
 y 1
 end
 arch blocked
-msg
-endmsg
 x 24
 y 1
 end
@@ -13315,8 +12580,6 @@ x 24
 y 12
 end
 arch blocked
-msg
-endmsg
 x 24
 y 12
 end
@@ -13325,8 +12588,6 @@ x 24
 y 13
 end
 arch blocked
-msg
-endmsg
 x 24
 y 13
 end
@@ -13486,7 +12747,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 24
@@ -13553,7 +12813,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 24
@@ -13652,7 +12911,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 24
@@ -13710,7 +12968,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 24
@@ -13777,7 +13034,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 24
@@ -13822,8 +13078,6 @@ x 24
 y 61
 end
 arch blocked
-msg
-endmsg
 x 24
 y 61
 end
@@ -13832,8 +13086,6 @@ x 24
 y 62
 end
 arch blocked
-msg
-endmsg
 x 24
 y 62
 end
@@ -13842,8 +13094,6 @@ x 24
 y 63
 end
 arch blocked
-msg
-endmsg
 x 24
 y 63
 end
@@ -13851,8 +13101,6 @@ arch snow
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch snow
@@ -13860,8 +13108,6 @@ x 25
 y 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
@@ -13892,7 +13138,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -13919,7 +13164,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -13948,8 +13192,6 @@ x 25
 y 12
 end
 arch blocked
-msg
-endmsg
 x 25
 y 12
 end
@@ -13958,8 +13200,6 @@ x 25
 y 13
 end
 arch blocked
-msg
-endmsg
 x 25
 y 13
 end
@@ -13990,7 +13230,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -14025,7 +13264,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -14088,7 +13326,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -14129,8 +13366,6 @@ x 25
 y 32
 end
 arch blocked
-msg
-endmsg
 x 25
 y 32
 end
@@ -14139,8 +13374,6 @@ x 25
 y 33
 end
 arch blocked
-msg
-endmsg
 x 25
 y 33
 end
@@ -14149,8 +13382,6 @@ x 25
 y 34
 end
 arch blocked
-msg
-endmsg
 x 25
 y 34
 end
@@ -14222,7 +13453,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 25
@@ -14316,7 +13546,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -14359,7 +13588,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 25
@@ -14428,8 +13656,6 @@ x 25
 y 63
 end
 arch blocked
-msg
-endmsg
 x 25
 y 63
 end
@@ -14437,8 +13663,6 @@ arch snow
 x 26
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch snow
@@ -14446,8 +13670,6 @@ x 26
 y 1
 end
 arch blocked
-msg
-endmsg
 x 26
 y 1
 end
@@ -14504,8 +13726,6 @@ x 26
 y 12
 end
 arch blocked
-msg
-endmsg
 x 26
 y 12
 end
@@ -14514,8 +13734,6 @@ x 26
 y 13
 end
 arch blocked
-msg
-endmsg
 x 26
 y 13
 end
@@ -14599,7 +13817,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 26
@@ -14683,8 +13900,6 @@ x 26
 y 30
 end
 arch blocked
-msg
-endmsg
 x 26
 y 30
 end
@@ -14717,8 +13932,6 @@ x 26
 y 34
 end
 arch blocked
-msg
-endmsg
 x 26
 y 34
 end
@@ -14806,7 +14019,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 26
@@ -14973,8 +14185,6 @@ arch snow
 x 27
 end
 arch blocked
-msg
-endmsg
 x 27
 end
 arch snow
@@ -14982,8 +14192,6 @@ x 27
 y 1
 end
 arch blocked
-msg
-endmsg
 x 27
 y 1
 end
@@ -15026,7 +14234,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 27
@@ -15055,8 +14262,6 @@ x 27
 y 12
 end
 arch blocked
-msg
-endmsg
 x 27
 y 12
 end
@@ -15065,8 +14270,6 @@ x 27
 y 13
 end
 arch blocked
-msg
-endmsg
 x 27
 y 13
 end
@@ -15318,7 +14521,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 27
@@ -15444,7 +14646,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 27
@@ -15475,7 +14676,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 27
@@ -15519,7 +14719,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 27
@@ -15660,7 +14859,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 27
@@ -15785,8 +14983,6 @@ arch snow
 x 28
 end
 arch blocked
-msg
-endmsg
 x 28
 end
 arch snow
@@ -15794,8 +14990,6 @@ x 28
 y 1
 end
 arch blocked
-msg
-endmsg
 x 28
 y 1
 end
@@ -15818,7 +15012,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 28
@@ -15841,7 +15034,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 28
@@ -15920,7 +15112,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 28
@@ -15964,7 +15155,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 28
@@ -16031,7 +15221,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 28
@@ -16279,8 +15468,6 @@ x 28
 y 36
 end
 arch blocked
-msg
-endmsg
 x 28
 y 36
 end
@@ -16369,8 +15556,6 @@ x 28
 y 47
 end
 arch blocked
-msg
-endmsg
 x 28
 y 47
 end
@@ -16379,8 +15564,6 @@ x 28
 y 48
 end
 arch blocked
-msg
-endmsg
 x 28
 y 48
 end
@@ -16503,8 +15686,6 @@ arch snow4
 x 29
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch istone
@@ -16516,8 +15697,6 @@ x 29
 y 1
 end
 arch blocked
-msg
-endmsg
 x 29
 y 1
 end
@@ -16677,7 +15856,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 29
@@ -16905,8 +16083,6 @@ x 29
 y 36
 end
 arch blocked
-msg
-endmsg
 x 29
 y 36
 end
@@ -16933,7 +16109,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 29
@@ -16956,7 +16131,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 29
@@ -16985,8 +16159,6 @@ x 29
 y 45
 end
 arch blocked
-msg
-endmsg
 x 29
 y 45
 end
@@ -16995,8 +16167,6 @@ x 29
 y 46
 end
 arch blocked
-msg
-endmsg
 x 29
 y 46
 end
@@ -17005,8 +16175,6 @@ x 29
 y 47
 end
 arch blocked
-msg
-endmsg
 x 29
 y 47
 end
@@ -17015,8 +16183,6 @@ x 29
 y 48
 end
 arch blocked
-msg
-endmsg
 x 29
 y 48
 end
@@ -17047,7 +16213,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 29
@@ -17123,7 +16288,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 29
@@ -17259,8 +16423,6 @@ arch snow5
 x 30
 end
 arch blocked
-msg
-endmsg
 x 30
 end
 arch istone
@@ -17272,8 +16434,6 @@ x 30
 y 1
 end
 arch blocked
-msg
-endmsg
 x 30
 y 1
 end
@@ -17344,7 +16504,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 30
@@ -17408,7 +16567,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 30
@@ -17475,7 +16633,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 30
@@ -17731,8 +16888,6 @@ x 30
 y 45
 end
 arch blocked
-msg
-endmsg
 x 30
 y 45
 end
@@ -17741,8 +16896,6 @@ x 30
 y 46
 end
 arch blocked
-msg
-endmsg
 x 30
 y 46
 end
@@ -17751,8 +16904,6 @@ x 30
 y 47
 end
 arch blocked
-msg
-endmsg
 x 30
 y 47
 end
@@ -17761,8 +16912,6 @@ x 30
 y 48
 end
 arch blocked
-msg
-endmsg
 x 30
 y 48
 end
@@ -17805,7 +16954,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 30
@@ -17849,7 +16997,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 30
@@ -18014,8 +17161,6 @@ arch istone
 x 31
 end
 arch blocked
-msg
-endmsg
 x 31
 end
 arch istone
@@ -18027,8 +17172,6 @@ x 31
 y 1
 end
 arch blocked
-msg
-endmsg
 x 31
 y 1
 end
@@ -18041,8 +17184,6 @@ x 31
 y 2
 end
 arch blocked
-msg
-endmsg
 x 31
 y 2
 end
@@ -18077,7 +17218,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 31
@@ -18104,7 +17244,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 31
@@ -18151,7 +17290,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 31
@@ -18227,7 +17365,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 31
@@ -18355,8 +17492,6 @@ x 31
 y 34
 end
 arch blocked
-msg
-endmsg
 x 31
 y 34
 end
@@ -18365,8 +17500,6 @@ x 31
 y 35
 end
 arch blocked
-msg
-endmsg
 x 31
 y 35
 end
@@ -18389,7 +17522,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 31
@@ -18430,8 +17562,6 @@ x 31
 y 44
 end
 arch blocked
-msg
-endmsg
 x 31
 y 44
 end
@@ -18440,8 +17570,6 @@ x 31
 y 45
 end
 arch blocked
-msg
-endmsg
 x 31
 y 45
 end
@@ -18450,8 +17578,6 @@ x 31
 y 46
 end
 arch blocked
-msg
-endmsg
 x 31
 y 46
 end
@@ -18460,8 +17586,6 @@ x 31
 y 47
 end
 arch blocked
-msg
-endmsg
 x 31
 y 47
 end
@@ -18470,8 +17594,6 @@ x 31
 y 48
 end
 arch blocked
-msg
-endmsg
 x 31
 y 48
 end
@@ -18563,7 +17685,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 31
@@ -18692,7 +17813,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 31
@@ -18820,8 +17940,6 @@ arch snow5
 x 32
 end
 arch blocked
-msg
-endmsg
 x 32
 end
 arch istone
@@ -18829,8 +17947,6 @@ x 32
 y 1
 end
 arch blocked
-msg
-endmsg
 x 32
 y 1
 end
@@ -18843,8 +17959,6 @@ x 32
 y 2
 end
 arch blocked
-msg
-endmsg
 x 32
 y 2
 end
@@ -18960,7 +18074,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 32
@@ -19027,7 +18140,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 32
@@ -19129,7 +18241,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 32
@@ -19158,8 +18269,6 @@ x 32
 y 31
 end
 arch blocked
-msg
-endmsg
 x 32
 y 31
 end
@@ -19168,8 +18277,6 @@ x 32
 y 32
 end
 arch blocked
-msg
-endmsg
 x 32
 y 32
 end
@@ -19250,8 +18357,6 @@ x 32
 y 44
 end
 arch blocked
-msg
-endmsg
 x 32
 y 44
 end
@@ -19260,8 +18365,6 @@ x 32
 y 45
 end
 arch blocked
-msg
-endmsg
 x 32
 y 45
 end
@@ -19270,8 +18373,6 @@ x 32
 y 46
 end
 arch blocked
-msg
-endmsg
 x 32
 y 46
 end
@@ -19280,8 +18381,6 @@ x 32
 y 47
 end
 arch blocked
-msg
-endmsg
 x 32
 y 47
 end
@@ -19290,8 +18389,6 @@ x 32
 y 48
 end
 arch blocked
-msg
-endmsg
 x 32
 y 48
 end
@@ -19300,8 +18397,6 @@ x 32
 y 49
 end
 arch blocked
-msg
-endmsg
 x 32
 y 49
 end
@@ -19328,7 +18423,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 32
@@ -19359,7 +18453,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 32
@@ -19439,8 +18532,6 @@ arch istone
 x 33
 end
 arch blocked
-msg
-endmsg
 x 33
 end
 arch istone
@@ -19448,8 +18539,6 @@ x 33
 y 1
 end
 arch blocked
-msg
-endmsg
 x 33
 y 1
 end
@@ -19458,8 +18547,6 @@ x 33
 y 2
 end
 arch blocked
-msg
-endmsg
 x 33
 y 2
 end
@@ -19498,7 +18585,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 33
@@ -19630,7 +18716,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 33
@@ -19760,7 +18845,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 33
@@ -19787,7 +18871,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 33
@@ -19816,8 +18899,6 @@ x 33
 y 43
 end
 arch blocked
-msg
-endmsg
 x 33
 y 43
 end
@@ -19826,8 +18907,6 @@ x 33
 y 44
 end
 arch blocked
-msg
-endmsg
 x 33
 y 44
 end
@@ -19860,8 +18939,6 @@ x 33
 y 48
 end
 arch blocked
-msg
-endmsg
 x 33
 y 48
 end
@@ -19870,8 +18947,6 @@ x 33
 y 49
 end
 arch blocked
-msg
-endmsg
 x 33
 y 49
 end
@@ -19931,7 +19006,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 33
@@ -20076,7 +19150,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 33
@@ -20197,8 +19270,6 @@ arch istone
 x 34
 end
 arch blocked
-msg
-endmsg
 x 34
 end
 arch istone
@@ -20206,8 +19277,6 @@ x 34
 y 1
 end
 arch blocked
-msg
-endmsg
 x 34
 y 1
 end
@@ -20220,8 +19289,6 @@ x 34
 y 2
 end
 arch blocked
-msg
-endmsg
 x 34
 y 2
 end
@@ -20268,7 +19335,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 34
@@ -20295,7 +19361,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 34
@@ -20322,7 +19387,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 34
@@ -20402,7 +19466,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 34
@@ -20488,7 +19551,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 34
@@ -20527,7 +19589,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 34
@@ -20588,8 +19649,6 @@ x 34
 y 43
 end
 arch blocked
-msg
-endmsg
 x 34
 y 43
 end
@@ -20666,8 +19725,6 @@ x 34
 y 49
 end
 arch blocked
-msg
-endmsg
 x 34
 y 49
 end
@@ -20779,8 +19836,6 @@ arch istone
 x 35
 end
 arch blocked
-msg
-endmsg
 x 35
 end
 arch istone
@@ -20827,7 +19882,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 35
@@ -20925,7 +19979,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 35
@@ -21044,7 +20097,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 35
@@ -21079,7 +20131,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 35
@@ -21128,8 +20179,6 @@ x 35
 y 43
 end
 arch blocked
-msg
-endmsg
 x 35
 y 43
 end
@@ -21250,8 +20299,6 @@ x 35
 y 49
 end
 arch blocked
-msg
-endmsg
 x 35
 y 49
 end
@@ -21278,7 +20325,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 35
@@ -21338,7 +20384,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 35
@@ -21505,7 +20550,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 36
@@ -21651,7 +20695,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 36
@@ -21762,7 +20805,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 36
@@ -21809,7 +20851,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 36
@@ -21838,8 +20879,6 @@ x 36
 y 43
 end
 arch blocked
-msg
-endmsg
 x 36
 y 43
 end
@@ -21956,8 +20995,6 @@ x 36
 y 49
 end
 arch blocked
-msg
-endmsg
 x 36
 y 49
 end
@@ -22000,7 +21037,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 36
@@ -22056,7 +21092,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 36
@@ -22245,7 +21280,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 37
@@ -22270,8 +21304,6 @@ x 37
 y 9
 end
 arch blocked
-msg
-endmsg
 x 37
 y 9
 end
@@ -22392,8 +21424,6 @@ x 37
 y 26
 end
 arch blocked
-msg
-endmsg
 x 37
 y 26
 end
@@ -22464,7 +21494,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 37
@@ -22613,8 +21642,6 @@ x 37
 y 49
 end
 arch blocked
-msg
-endmsg
 x 37
 y 49
 end
@@ -22732,7 +21759,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 38
@@ -22828,8 +21854,6 @@ x 38
 y 9
 end
 arch blocked
-msg
-endmsg
 x 38
 y 9
 end
@@ -22838,8 +21862,6 @@ x 38
 y 10
 end
 arch blocked
-msg
-endmsg
 x 38
 y 10
 end
@@ -22848,8 +21870,6 @@ x 38
 y 11
 end
 arch blocked
-msg
-endmsg
 x 38
 y 11
 end
@@ -22876,7 +21896,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 38
@@ -22941,8 +21960,6 @@ x 38
 y 24
 end
 arch blocked
-msg
-endmsg
 x 38
 y 24
 end
@@ -22951,8 +21968,6 @@ x 38
 y 25
 end
 arch blocked
-msg
-endmsg
 x 38
 y 25
 end
@@ -22961,8 +21976,6 @@ x 38
 y 26
 end
 arch blocked
-msg
-endmsg
 x 38
 y 26
 end
@@ -22971,8 +21984,6 @@ x 38
 y 27
 end
 arch blocked
-msg
-endmsg
 x 38
 y 27
 end
@@ -22981,8 +21992,6 @@ x 38
 y 28
 end
 arch blocked
-msg
-endmsg
 x 38
 y 28
 end
@@ -23025,7 +22034,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 38
@@ -23176,7 +22184,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 38
@@ -23288,7 +22295,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 39
@@ -23315,7 +22321,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 39
@@ -23344,8 +22349,6 @@ x 39
 y 9
 end
 arch blocked
-msg
-endmsg
 x 39
 y 9
 end
@@ -23354,8 +22357,6 @@ x 39
 y 10
 end
 arch blocked
-msg
-endmsg
 x 39
 y 10
 end
@@ -23364,8 +22365,6 @@ x 39
 y 11
 end
 arch blocked
-msg
-endmsg
 x 39
 y 11
 end
@@ -23422,8 +22421,6 @@ x 39
 y 22
 end
 arch blocked
-msg
-endmsg
 x 39
 y 22
 end
@@ -23432,8 +22429,6 @@ x 39
 y 23
 end
 arch blocked
-msg
-endmsg
 x 39
 y 23
 end
@@ -23442,8 +22437,6 @@ x 39
 y 24
 end
 arch blocked
-msg
-endmsg
 x 39
 y 24
 end
@@ -23452,8 +22445,6 @@ x 39
 y 25
 end
 arch blocked
-msg
-endmsg
 x 39
 y 25
 end
@@ -23462,8 +22453,6 @@ x 39
 y 26
 end
 arch blocked
-msg
-endmsg
 x 39
 y 26
 end
@@ -23472,8 +22461,6 @@ x 39
 y 27
 end
 arch blocked
-msg
-endmsg
 x 39
 y 27
 end
@@ -23482,8 +22469,6 @@ x 39
 y 28
 end
 arch blocked
-msg
-endmsg
 x 39
 y 28
 end
@@ -23510,7 +22495,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 39
@@ -23609,7 +22593,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 39
@@ -23638,8 +22621,6 @@ x 39
 y 44
 end
 arch blocked
-msg
-endmsg
 x 39
 y 44
 end
@@ -23714,7 +22695,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 39
@@ -23832,8 +22812,6 @@ x 40
 y 9
 end
 arch blocked
-msg
-endmsg
 x 40
 y 9
 end
@@ -23842,8 +22820,6 @@ x 40
 y 10
 end
 arch blocked
-msg
-endmsg
 x 40
 y 10
 end
@@ -23852,8 +22828,6 @@ x 40
 y 11
 end
 arch blocked
-msg
-endmsg
 x 40
 y 11
 end
@@ -23896,7 +22870,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 40
@@ -23933,8 +22906,6 @@ x 40
 y 22
 end
 arch blocked
-msg
-endmsg
 x 40
 y 22
 end
@@ -23943,8 +22914,6 @@ x 40
 y 23
 end
 arch blocked
-msg
-endmsg
 x 40
 y 23
 end
@@ -23953,8 +22922,6 @@ x 40
 y 24
 end
 arch blocked
-msg
-endmsg
 x 40
 y 24
 end
@@ -23963,8 +22930,6 @@ x 40
 y 25
 end
 arch blocked
-msg
-endmsg
 x 40
 y 25
 end
@@ -23973,8 +22938,6 @@ x 40
 y 26
 end
 arch blocked
-msg
-endmsg
 x 40
 y 26
 end
@@ -23983,8 +22946,6 @@ x 40
 y 27
 end
 arch blocked
-msg
-endmsg
 x 40
 y 27
 end
@@ -23993,8 +22954,6 @@ x 40
 y 28
 end
 arch blocked
-msg
-endmsg
 x 40
 y 28
 end
@@ -24062,7 +23021,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 40
@@ -24129,7 +23087,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 40
@@ -24233,8 +23190,6 @@ x 40
 y 45
 end
 arch blocked
-msg
-endmsg
 x 40
 y 45
 end
@@ -24243,8 +23198,6 @@ x 40
 y 46
 end
 arch blocked
-msg
-endmsg
 x 40
 y 46
 end
@@ -24311,7 +23264,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 40
@@ -24398,8 +23350,6 @@ x 41
 y 8
 end
 arch blocked
-msg
-endmsg
 x 41
 y 8
 end
@@ -24408,8 +23358,6 @@ x 41
 y 9
 end
 arch blocked
-msg
-endmsg
 x 41
 y 9
 end
@@ -24418,8 +23366,6 @@ x 41
 y 10
 end
 arch blocked
-msg
-endmsg
 x 41
 y 10
 end
@@ -24428,8 +23374,6 @@ x 41
 y 11
 end
 arch blocked
-msg
-endmsg
 x 41
 y 11
 end
@@ -24438,8 +23382,6 @@ x 41
 y 12
 end
 arch blocked
-msg
-endmsg
 x 41
 y 12
 end
@@ -24496,8 +23438,6 @@ x 41
 y 21
 end
 arch blocked
-msg
-endmsg
 x 41
 y 21
 end
@@ -24506,8 +23446,6 @@ x 41
 y 22
 end
 arch blocked
-msg
-endmsg
 x 41
 y 22
 end
@@ -24516,8 +23454,6 @@ x 41
 y 23
 end
 arch blocked
-msg
-endmsg
 x 41
 y 23
 end
@@ -24526,8 +23462,6 @@ x 41
 y 24
 end
 arch blocked
-msg
-endmsg
 x 41
 y 24
 end
@@ -24536,8 +23470,6 @@ x 41
 y 25
 end
 arch blocked
-msg
-endmsg
 x 41
 y 25
 end
@@ -24546,8 +23478,6 @@ x 41
 y 26
 end
 arch blocked
-msg
-endmsg
 x 41
 y 26
 end
@@ -24556,8 +23486,6 @@ x 41
 y 27
 end
 arch blocked
-msg
-endmsg
 x 41
 y 27
 end
@@ -24566,8 +23494,6 @@ x 41
 y 28
 end
 arch blocked
-msg
-endmsg
 x 41
 y 28
 end
@@ -24671,7 +23597,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 41
@@ -24797,7 +23722,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 41
@@ -24878,8 +23802,6 @@ x 41
 y 63
 end
 arch blocked
-msg
-endmsg
 x 41
 y 63
 end
@@ -24900,7 +23822,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -24945,8 +23866,6 @@ x 42
 y 8
 end
 arch blocked
-msg
-endmsg
 x 42
 y 8
 end
@@ -24959,8 +23878,6 @@ x 42
 y 9
 end
 arch blocked
-msg
-endmsg
 x 42
 y 9
 end
@@ -24973,8 +23890,6 @@ x 42
 y 10
 end
 arch blocked
-msg
-endmsg
 x 42
 y 10
 end
@@ -24983,8 +23898,6 @@ x 42
 y 11
 end
 arch blocked
-msg
-endmsg
 x 42
 y 11
 end
@@ -24993,8 +23906,6 @@ x 42
 y 12
 end
 arch blocked
-msg
-endmsg
 x 42
 y 12
 end
@@ -25003,8 +23914,6 @@ x 42
 y 13
 end
 arch blocked
-msg
-endmsg
 x 42
 y 13
 end
@@ -25049,8 +23958,6 @@ x 42
 y 21
 end
 arch blocked
-msg
-endmsg
 x 42
 y 21
 end
@@ -25059,8 +23966,6 @@ x 42
 y 22
 end
 arch blocked
-msg
-endmsg
 x 42
 y 22
 end
@@ -25069,8 +23974,6 @@ x 42
 y 23
 end
 arch blocked
-msg
-endmsg
 x 42
 y 23
 end
@@ -25079,8 +23982,6 @@ x 42
 y 24
 end
 arch blocked
-msg
-endmsg
 x 42
 y 24
 end
@@ -25089,8 +23990,6 @@ x 42
 y 25
 end
 arch blocked
-msg
-endmsg
 x 42
 y 25
 end
@@ -25099,8 +23998,6 @@ x 42
 y 26
 end
 arch blocked
-msg
-endmsg
 x 42
 y 26
 end
@@ -25109,8 +24006,6 @@ x 42
 y 27
 end
 arch blocked
-msg
-endmsg
 x 42
 y 27
 end
@@ -25119,8 +24014,6 @@ x 42
 y 28
 end
 arch blocked
-msg
-endmsg
 x 42
 y 28
 end
@@ -25176,7 +24069,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 42
@@ -25259,7 +24151,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 42
@@ -25353,7 +24244,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -25380,7 +24270,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -25407,7 +24296,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -25446,7 +24334,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -25473,7 +24360,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 42
@@ -25522,8 +24408,6 @@ x 42
 y 63
 end
 arch blocked
-msg
-endmsg
 x 42
 y 63
 end
@@ -25556,7 +24440,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 43
@@ -25589,8 +24472,6 @@ x 43
 y 8
 end
 arch blocked
-msg
-endmsg
 x 43
 y 8
 end
@@ -25603,8 +24484,6 @@ x 43
 y 9
 end
 arch blocked
-msg
-endmsg
 x 43
 y 9
 end
@@ -25617,8 +24496,6 @@ x 43
 y 10
 end
 arch blocked
-msg
-endmsg
 x 43
 y 10
 end
@@ -25631,8 +24508,6 @@ x 43
 y 11
 end
 arch blocked
-msg
-endmsg
 x 43
 y 11
 end
@@ -25641,8 +24516,6 @@ x 43
 y 12
 end
 arch blocked
-msg
-endmsg
 x 43
 y 12
 end
@@ -25651,8 +24524,6 @@ x 43
 y 13
 end
 arch blocked
-msg
-endmsg
 x 43
 y 13
 end
@@ -25675,7 +24546,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 43
@@ -25702,7 +24572,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 43
@@ -25735,8 +24604,6 @@ x 43
 y 22
 end
 arch blocked
-msg
-endmsg
 x 43
 y 22
 end
@@ -25745,8 +24612,6 @@ x 43
 y 23
 end
 arch blocked
-msg
-endmsg
 x 43
 y 23
 end
@@ -25755,8 +24620,6 @@ x 43
 y 24
 end
 arch blocked
-msg
-endmsg
 x 43
 y 24
 end
@@ -25765,8 +24628,6 @@ x 43
 y 25
 end
 arch blocked
-msg
-endmsg
 x 43
 y 25
 end
@@ -25775,8 +24636,6 @@ x 43
 y 26
 end
 arch blocked
-msg
-endmsg
 x 43
 y 26
 end
@@ -25785,8 +24644,6 @@ x 43
 y 27
 end
 arch blocked
-msg
-endmsg
 x 43
 y 27
 end
@@ -25795,8 +24652,6 @@ x 43
 y 28
 end
 arch blocked
-msg
-endmsg
 x 43
 y 28
 end
@@ -25864,7 +24719,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 43
@@ -26052,8 +24906,6 @@ x 43
 y 62
 end
 arch blocked
-msg
-endmsg
 x 43
 y 62
 end
@@ -26062,8 +24914,6 @@ x 43
 y 63
 end
 arch blocked
-msg
-endmsg
 x 43
 y 63
 end
@@ -26092,7 +24942,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 44
@@ -26153,8 +25002,6 @@ x 44
 y 9
 end
 arch blocked
-msg
-endmsg
 x 44
 y 9
 end
@@ -26167,8 +25014,6 @@ x 44
 y 10
 end
 arch blocked
-msg
-endmsg
 x 44
 y 10
 end
@@ -26181,8 +25026,6 @@ x 44
 y 11
 end
 arch blocked
-msg
-endmsg
 x 44
 y 11
 end
@@ -26195,8 +25038,6 @@ x 44
 y 12
 end
 arch blocked
-msg
-endmsg
 x 44
 y 12
 end
@@ -26205,8 +25046,6 @@ x 44
 y 13
 end
 arch blocked
-msg
-endmsg
 x 44
 y 13
 end
@@ -26255,8 +25094,6 @@ x 44
 y 22
 end
 arch blocked
-msg
-endmsg
 x 44
 y 22
 end
@@ -26265,8 +25102,6 @@ x 44
 y 23
 end
 arch blocked
-msg
-endmsg
 x 44
 y 23
 end
@@ -26275,8 +25110,6 @@ x 44
 y 24
 end
 arch blocked
-msg
-endmsg
 x 44
 y 24
 end
@@ -26285,8 +25118,6 @@ x 44
 y 25
 end
 arch blocked
-msg
-endmsg
 x 44
 y 25
 end
@@ -26366,7 +25197,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 44
@@ -26457,7 +25287,6 @@ hp 12000
 maxhp 12000
 maxsp 300
 exp 300000
-
 dam 70
 ac -12
 x 44
@@ -26527,7 +25356,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 44
@@ -26586,7 +25414,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 44
@@ -26637,7 +25464,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 44
@@ -26662,8 +25488,6 @@ x 44
 y 61
 end
 arch blocked
-msg
-endmsg
 x 44
 y 61
 end
@@ -26672,8 +25496,6 @@ x 44
 y 62
 end
 arch blocked
-msg
-endmsg
 x 44
 y 62
 end
@@ -26682,8 +25504,6 @@ x 44
 y 63
 end
 arch blocked
-msg
-endmsg
 x 44
 y 63
 end
@@ -26691,8 +25511,6 @@ arch snow
 x 45
 end
 arch blocked
-msg
-endmsg
 x 45
 end
 arch snow
@@ -26784,8 +25602,6 @@ x 45
 y 11
 end
 arch blocked
-msg
-endmsg
 x 45
 y 11
 end
@@ -27044,7 +25860,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 45
@@ -27117,8 +25932,6 @@ x 45
 y 61
 end
 arch blocked
-msg
-endmsg
 x 45
 y 61
 end
@@ -27127,8 +25940,6 @@ x 45
 y 62
 end
 arch blocked
-msg
-endmsg
 x 45
 y 62
 end
@@ -27137,8 +25948,6 @@ x 45
 y 63
 end
 arch blocked
-msg
-endmsg
 x 45
 y 63
 end
@@ -27146,8 +25955,6 @@ arch snow
 x 46
 end
 arch blocked
-msg
-endmsg
 x 46
 end
 arch snow
@@ -27169,7 +25976,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27200,7 +26006,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27236,7 +26041,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 46
@@ -27412,7 +26216,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27475,7 +26278,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27502,7 +26304,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27529,7 +26330,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27664,7 +26464,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27727,7 +26526,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27762,7 +26560,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 46
@@ -27799,8 +26596,6 @@ x 46
 y 61
 end
 arch blocked
-msg
-endmsg
 x 46
 y 61
 end
@@ -27809,8 +26604,6 @@ x 46
 y 62
 end
 arch blocked
-msg
-endmsg
 x 46
 y 62
 end
@@ -27819,8 +26612,6 @@ x 46
 y 63
 end
 arch blocked
-msg
-endmsg
 x 46
 y 63
 end
@@ -27828,8 +26619,6 @@ arch snow
 x 47
 end
 arch blocked
-msg
-endmsg
 x 47
 end
 arch snow
@@ -27939,7 +26728,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 47
@@ -27982,7 +26770,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 47
@@ -28119,8 +26906,6 @@ x 47
 y 36
 end
 arch blocked
-msg
-endmsg
 x 47
 y 36
 end
@@ -28133,8 +26918,6 @@ x 47
 y 37
 end
 arch blocked
-msg
-endmsg
 x 47
 y 37
 end
@@ -28147,8 +26930,6 @@ x 47
 y 38
 end
 arch blocked
-msg
-endmsg
 x 47
 y 38
 end
@@ -28236,7 +27017,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 47
@@ -28396,7 +27176,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 47
@@ -28421,8 +27200,6 @@ x 47
 y 61
 end
 arch blocked
-msg
-endmsg
 x 47
 y 61
 end
@@ -28431,8 +27208,6 @@ x 47
 y 62
 end
 arch blocked
-msg
-endmsg
 x 47
 y 62
 end
@@ -28441,8 +27216,6 @@ x 47
 y 63
 end
 arch blocked
-msg
-endmsg
 x 47
 y 63
 end
@@ -28450,8 +27223,6 @@ arch snow
 x 48
 end
 arch blocked
-msg
-endmsg
 x 48
 end
 arch snow
@@ -28473,7 +27244,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 48
@@ -28521,7 +27291,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 48
@@ -28654,7 +27423,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 48
@@ -28783,7 +27551,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 48
@@ -28923,7 +27690,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 48
@@ -29040,8 +27806,6 @@ x 48
 y 34
 end
 arch blocked
-msg
-endmsg
 x 48
 y 34
 end
@@ -29054,8 +27818,6 @@ x 48
 y 35
 end
 arch blocked
-msg
-endmsg
 x 48
 y 35
 end
@@ -29068,8 +27830,6 @@ x 48
 y 36
 end
 arch blocked
-msg
-endmsg
 x 48
 y 36
 end
@@ -29082,8 +27842,6 @@ x 48
 y 37
 end
 arch blocked
-msg
-endmsg
 x 48
 y 37
 end
@@ -29096,8 +27854,6 @@ x 48
 y 38
 end
 arch blocked
-msg
-endmsg
 x 48
 y 38
 end
@@ -29156,7 +27912,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 48
@@ -29261,8 +28016,6 @@ x 48
 y 61
 end
 arch blocked
-msg
-endmsg
 x 48
 y 61
 end
@@ -29271,8 +28024,6 @@ x 48
 y 62
 end
 arch blocked
-msg
-endmsg
 x 48
 y 62
 end
@@ -29281,8 +28032,6 @@ x 48
 y 63
 end
 arch blocked
-msg
-endmsg
 x 48
 y 63
 end
@@ -29290,8 +28039,6 @@ arch snow
 x 49
 end
 arch blocked
-msg
-endmsg
 x 49
 end
 arch snow
@@ -29401,7 +28148,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 49
@@ -29512,7 +28258,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 49
@@ -29553,8 +28298,6 @@ x 49
 y 33
 end
 arch blocked
-msg
-endmsg
 x 49
 y 33
 end
@@ -29563,8 +28306,6 @@ x 49
 y 34
 end
 arch blocked
-msg
-endmsg
 x 49
 y 34
 end
@@ -29573,8 +28314,6 @@ x 49
 y 35
 end
 arch blocked
-msg
-endmsg
 x 49
 y 35
 end
@@ -29583,8 +28322,6 @@ x 49
 y 36
 end
 arch blocked
-msg
-endmsg
 x 49
 y 36
 end
@@ -29593,8 +28330,6 @@ x 49
 y 37
 end
 arch blocked
-msg
-endmsg
 x 49
 y 37
 end
@@ -29603,8 +28338,6 @@ x 49
 y 38
 end
 arch blocked
-msg
-endmsg
 x 49
 y 38
 end
@@ -29613,8 +28346,6 @@ x 49
 y 39
 end
 arch blocked
-msg
-endmsg
 x 49
 y 39
 end
@@ -29623,8 +28354,6 @@ x 49
 y 40
 end
 arch blocked
-msg
-endmsg
 x 49
 y 40
 end
@@ -29633,8 +28362,6 @@ x 49
 y 41
 end
 arch blocked
-msg
-endmsg
 x 49
 y 41
 end
@@ -29702,7 +28429,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 49
@@ -29843,7 +28569,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 49
@@ -29971,7 +28696,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 49
@@ -30008,8 +28732,6 @@ x 49
 y 61
 end
 arch blocked
-msg
-endmsg
 x 49
 y 61
 end
@@ -30018,8 +28740,6 @@ x 49
 y 62
 end
 arch blocked
-msg
-endmsg
 x 49
 y 62
 end
@@ -30028,8 +28748,6 @@ x 49
 y 63
 end
 arch blocked
-msg
-endmsg
 x 49
 y 63
 end
@@ -30037,8 +28755,6 @@ arch snow
 x 50
 end
 arch blocked
-msg
-endmsg
 x 50
 end
 arch snow
@@ -30101,7 +28817,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 50
@@ -30315,8 +29030,6 @@ x 50
 y 22
 end
 arch blocked
-msg
-endmsg
 x 50
 y 22
 end
@@ -30325,8 +29038,6 @@ x 50
 y 23
 end
 arch blocked
-msg
-endmsg
 x 50
 y 23
 end
@@ -30335,8 +29046,6 @@ x 50
 y 24
 end
 arch blocked
-msg
-endmsg
 x 50
 y 24
 end
@@ -30345,8 +29054,6 @@ x 50
 y 25
 end
 arch blocked
-msg
-endmsg
 x 50
 y 25
 end
@@ -30381,7 +29088,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 50
@@ -30406,8 +29112,6 @@ x 50
 y 33
 end
 arch blocked
-msg
-endmsg
 x 50
 y 33
 end
@@ -30416,8 +29120,6 @@ x 50
 y 34
 end
 arch blocked
-msg
-endmsg
 x 50
 y 34
 end
@@ -30426,8 +29128,6 @@ x 50
 y 35
 end
 arch blocked
-msg
-endmsg
 x 50
 y 35
 end
@@ -30436,8 +29136,6 @@ x 50
 y 36
 end
 arch blocked
-msg
-endmsg
 x 50
 y 36
 end
@@ -30446,8 +29144,6 @@ x 50
 y 37
 end
 arch blocked
-msg
-endmsg
 x 50
 y 37
 end
@@ -30456,8 +29152,6 @@ x 50
 y 38
 end
 arch blocked
-msg
-endmsg
 x 50
 y 38
 end
@@ -30466,8 +29160,6 @@ x 50
 y 39
 end
 arch blocked
-msg
-endmsg
 x 50
 y 39
 end
@@ -30476,8 +29168,6 @@ x 50
 y 40
 end
 arch blocked
-msg
-endmsg
 x 50
 y 40
 end
@@ -30486,8 +29176,6 @@ x 50
 y 41
 end
 arch blocked
-msg
-endmsg
 x 50
 y 41
 end
@@ -30510,7 +29198,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 50
@@ -30647,8 +29334,6 @@ x 50
 y 60
 end
 arch blocked
-msg
-endmsg
 x 50
 y 60
 end
@@ -30657,8 +29342,6 @@ x 50
 y 61
 end
 arch blocked
-msg
-endmsg
 x 50
 y 61
 end
@@ -30667,8 +29350,6 @@ x 50
 y 62
 end
 arch blocked
-msg
-endmsg
 x 50
 y 62
 end
@@ -30677,8 +29358,6 @@ x 50
 y 63
 end
 arch blocked
-msg
-endmsg
 x 50
 y 63
 end
@@ -30686,8 +29365,6 @@ arch snow
 x 51
 end
 arch blocked
-msg
-endmsg
 x 51
 end
 arch snow
@@ -30738,7 +29415,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 51
@@ -30944,8 +29620,6 @@ x 51
 y 18
 end
 arch blocked
-msg
-endmsg
 x 51
 y 18
 end
@@ -30954,8 +29628,6 @@ x 51
 y 19
 end
 arch blocked
-msg
-endmsg
 x 51
 y 19
 end
@@ -30964,8 +29636,6 @@ x 51
 y 20
 end
 arch blocked
-msg
-endmsg
 x 51
 y 20
 end
@@ -30974,8 +29644,6 @@ x 51
 y 21
 end
 arch blocked
-msg
-endmsg
 x 51
 y 21
 end
@@ -30984,8 +29652,6 @@ x 51
 y 22
 end
 arch blocked
-msg
-endmsg
 x 51
 y 22
 end
@@ -30994,8 +29660,6 @@ x 51
 y 23
 end
 arch blocked
-msg
-endmsg
 x 51
 y 23
 end
@@ -31004,8 +29668,6 @@ x 51
 y 24
 end
 arch blocked
-msg
-endmsg
 x 51
 y 24
 end
@@ -31014,8 +29676,6 @@ x 51
 y 25
 end
 arch blocked
-msg
-endmsg
 x 51
 y 25
 end
@@ -31064,8 +29724,6 @@ x 51
 y 33
 end
 arch blocked
-msg
-endmsg
 x 51
 y 33
 end
@@ -31074,8 +29732,6 @@ x 51
 y 34
 end
 arch blocked
-msg
-endmsg
 x 51
 y 34
 end
@@ -31084,8 +29740,6 @@ x 51
 y 35
 end
 arch blocked
-msg
-endmsg
 x 51
 y 35
 end
@@ -31094,8 +29748,6 @@ x 51
 y 36
 end
 arch blocked
-msg
-endmsg
 x 51
 y 36
 end
@@ -31104,8 +29756,6 @@ x 51
 y 37
 end
 arch blocked
-msg
-endmsg
 x 51
 y 37
 end
@@ -31114,8 +29764,6 @@ x 51
 y 38
 end
 arch blocked
-msg
-endmsg
 x 51
 y 38
 end
@@ -31199,7 +29847,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 51
@@ -31328,7 +29975,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 51
@@ -31510,8 +30156,6 @@ x 51
 y 60
 end
 arch blocked
-msg
-endmsg
 x 51
 y 60
 end
@@ -31520,8 +30164,6 @@ x 51
 y 61
 end
 arch blocked
-msg
-endmsg
 x 51
 y 61
 end
@@ -31530,8 +30172,6 @@ x 51
 y 62
 end
 arch blocked
-msg
-endmsg
 x 51
 y 62
 end
@@ -31540,8 +30180,6 @@ x 51
 y 63
 end
 arch blocked
-msg
-endmsg
 x 51
 y 63
 end
@@ -31552,8 +30190,6 @@ arch snow4
 x 52
 end
 arch blocked
-msg
-endmsg
 x 52
 end
 arch istone
@@ -31565,8 +30201,6 @@ x 52
 y 1
 end
 arch blocked
-msg
-endmsg
 x 52
 y 1
 end
@@ -31634,7 +30268,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 52
@@ -31778,7 +30411,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 52
@@ -31815,8 +30447,6 @@ x 52
 y 16
 end
 arch blocked
-msg
-endmsg
 x 52
 y 16
 end
@@ -31825,8 +30455,6 @@ x 52
 y 17
 end
 arch blocked
-msg
-endmsg
 x 52
 y 17
 end
@@ -31835,8 +30463,6 @@ x 52
 y 18
 end
 arch blocked
-msg
-endmsg
 x 52
 y 18
 end
@@ -31845,8 +30471,6 @@ x 52
 y 19
 end
 arch blocked
-msg
-endmsg
 x 52
 y 19
 end
@@ -31855,8 +30479,6 @@ x 52
 y 20
 end
 arch blocked
-msg
-endmsg
 x 52
 y 20
 end
@@ -31865,8 +30487,6 @@ x 52
 y 21
 end
 arch blocked
-msg
-endmsg
 x 52
 y 21
 end
@@ -31875,8 +30495,6 @@ x 52
 y 22
 end
 arch blocked
-msg
-endmsg
 x 52
 y 22
 end
@@ -31885,8 +30503,6 @@ x 52
 y 23
 end
 arch blocked
-msg
-endmsg
 x 52
 y 23
 end
@@ -31895,8 +30511,6 @@ x 52
 y 24
 end
 arch blocked
-msg
-endmsg
 x 52
 y 24
 end
@@ -31905,8 +30519,6 @@ x 52
 y 25
 end
 arch blocked
-msg
-endmsg
 x 52
 y 25
 end
@@ -31915,8 +30527,6 @@ x 52
 y 26
 end
 arch blocked
-msg
-endmsg
 x 52
 y 26
 end
@@ -31969,8 +30579,6 @@ x 52
 y 34
 end
 arch blocked
-msg
-endmsg
 x 52
 y 34
 end
@@ -31979,8 +30587,6 @@ x 52
 y 35
 end
 arch blocked
-msg
-endmsg
 x 52
 y 35
 end
@@ -32039,7 +30645,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 52
@@ -32123,7 +30728,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 52
@@ -32260,7 +30864,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 52
@@ -32402,8 +31005,6 @@ x 52
 y 60
 end
 arch blocked
-msg
-endmsg
 x 52
 y 60
 end
@@ -32412,8 +31013,6 @@ x 52
 y 61
 end
 arch blocked
-msg
-endmsg
 x 52
 y 61
 end
@@ -32422,8 +31021,6 @@ x 52
 y 62
 end
 arch blocked
-msg
-endmsg
 x 52
 y 62
 end
@@ -32432,8 +31029,6 @@ x 52
 y 63
 end
 arch blocked
-msg
-endmsg
 x 52
 y 63
 end
@@ -32444,8 +31039,6 @@ arch snow5
 x 53
 end
 arch blocked
-msg
-endmsg
 x 53
 end
 arch istone
@@ -32457,8 +31050,6 @@ x 53
 y 1
 end
 arch blocked
-msg
-endmsg
 x 53
 y 1
 end
@@ -32502,7 +31093,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 53
@@ -32680,8 +31270,6 @@ x 53
 y 15
 end
 arch blocked
-msg
-endmsg
 x 53
 y 15
 end
@@ -32690,8 +31278,6 @@ x 53
 y 16
 end
 arch blocked
-msg
-endmsg
 x 53
 y 16
 end
@@ -32700,8 +31286,6 @@ x 53
 y 17
 end
 arch blocked
-msg
-endmsg
 x 53
 y 17
 end
@@ -32710,8 +31294,6 @@ x 53
 y 18
 end
 arch blocked
-msg
-endmsg
 x 53
 y 18
 end
@@ -32720,8 +31302,6 @@ x 53
 y 19
 end
 arch blocked
-msg
-endmsg
 x 53
 y 19
 end
@@ -32730,8 +31310,6 @@ x 53
 y 20
 end
 arch blocked
-msg
-endmsg
 x 53
 y 20
 end
@@ -32740,8 +31318,6 @@ x 53
 y 21
 end
 arch blocked
-msg
-endmsg
 x 53
 y 21
 end
@@ -32750,8 +31326,6 @@ x 53
 y 22
 end
 arch blocked
-msg
-endmsg
 x 53
 y 22
 end
@@ -32760,8 +31334,6 @@ x 53
 y 23
 end
 arch blocked
-msg
-endmsg
 x 53
 y 23
 end
@@ -32770,8 +31342,6 @@ x 53
 y 24
 end
 arch blocked
-msg
-endmsg
 x 53
 y 24
 end
@@ -32780,8 +31350,6 @@ x 53
 y 25
 end
 arch blocked
-msg
-endmsg
 x 53
 y 25
 end
@@ -32790,8 +31358,6 @@ x 53
 y 26
 end
 arch blocked
-msg
-endmsg
 x 53
 y 26
 end
@@ -32814,7 +31380,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 53
@@ -32893,7 +31458,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 53
@@ -32953,7 +31517,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 53
@@ -33175,8 +31738,6 @@ x 53
 y 60
 end
 arch blocked
-msg
-endmsg
 x 53
 y 60
 end
@@ -33185,8 +31746,6 @@ x 53
 y 61
 end
 arch blocked
-msg
-endmsg
 x 53
 y 61
 end
@@ -33195,8 +31754,6 @@ x 53
 y 62
 end
 arch blocked
-msg
-endmsg
 x 53
 y 62
 end
@@ -33205,8 +31762,6 @@ x 53
 y 63
 end
 arch blocked
-msg
-endmsg
 x 53
 y 63
 end
@@ -33217,8 +31772,6 @@ arch snow5
 x 54
 end
 arch blocked
-msg
-endmsg
 x 54
 end
 arch istone
@@ -33226,8 +31779,6 @@ x 54
 y 1
 end
 arch blocked
-msg
-endmsg
 x 54
 y 1
 end
@@ -33302,7 +31853,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 54
@@ -33343,8 +31893,6 @@ x 54
 y 15
 end
 arch blocked
-msg
-endmsg
 x 54
 y 15
 end
@@ -33353,8 +31901,6 @@ x 54
 y 16
 end
 arch blocked
-msg
-endmsg
 x 54
 y 16
 end
@@ -33363,8 +31909,6 @@ x 54
 y 17
 end
 arch blocked
-msg
-endmsg
 x 54
 y 17
 end
@@ -33373,8 +31917,6 @@ x 54
 y 18
 end
 arch blocked
-msg
-endmsg
 x 54
 y 18
 end
@@ -33383,8 +31925,6 @@ x 54
 y 19
 end
 arch blocked
-msg
-endmsg
 x 54
 y 19
 end
@@ -33393,8 +31933,6 @@ x 54
 y 20
 end
 arch blocked
-msg
-endmsg
 x 54
 y 20
 end
@@ -33403,8 +31941,6 @@ x 54
 y 21
 end
 arch blocked
-msg
-endmsg
 x 54
 y 21
 end
@@ -33413,8 +31949,6 @@ x 54
 y 22
 end
 arch blocked
-msg
-endmsg
 x 54
 y 22
 end
@@ -33423,8 +31957,6 @@ x 54
 y 23
 end
 arch blocked
-msg
-endmsg
 x 54
 y 23
 end
@@ -33433,8 +31965,6 @@ x 54
 y 24
 end
 arch blocked
-msg
-endmsg
 x 54
 y 24
 end
@@ -33443,8 +31973,6 @@ x 54
 y 25
 end
 arch blocked
-msg
-endmsg
 x 54
 y 25
 end
@@ -33453,8 +31981,6 @@ x 54
 y 26
 end
 arch blocked
-msg
-endmsg
 x 54
 y 26
 end
@@ -33489,7 +32015,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 54
@@ -33532,7 +32057,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 54
@@ -33583,7 +32107,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 54
@@ -33639,7 +32162,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 54
@@ -33776,7 +32298,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 54
@@ -33946,8 +32467,6 @@ x 54
 y 59
 end
 arch blocked
-msg
-endmsg
 x 54
 y 59
 end
@@ -33956,8 +32475,6 @@ x 54
 y 60
 end
 arch blocked
-msg
-endmsg
 x 54
 y 60
 end
@@ -33966,8 +32483,6 @@ x 54
 y 61
 end
 arch blocked
-msg
-endmsg
 x 54
 y 61
 end
@@ -33976,8 +32491,6 @@ x 54
 y 62
 end
 arch blocked
-msg
-endmsg
 x 54
 y 62
 end
@@ -33986,8 +32499,6 @@ x 54
 y 63
 end
 arch blocked
-msg
-endmsg
 x 54
 y 63
 end
@@ -33995,8 +32506,6 @@ arch istone
 x 55
 end
 arch blocked
-msg
-endmsg
 x 55
 end
 arch istone
@@ -34004,8 +32513,6 @@ x 55
 y 1
 end
 arch blocked
-msg
-endmsg
 x 55
 y 1
 end
@@ -34053,7 +32560,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 55
@@ -34239,8 +32745,6 @@ x 55
 y 17
 end
 arch blocked
-msg
-endmsg
 x 55
 y 17
 end
@@ -34249,8 +32753,6 @@ x 55
 y 18
 end
 arch blocked
-msg
-endmsg
 x 55
 y 18
 end
@@ -34259,8 +32761,6 @@ x 55
 y 19
 end
 arch blocked
-msg
-endmsg
 x 55
 y 19
 end
@@ -34269,8 +32769,6 @@ x 55
 y 20
 end
 arch blocked
-msg
-endmsg
 x 55
 y 20
 end
@@ -34279,8 +32777,6 @@ x 55
 y 21
 end
 arch blocked
-msg
-endmsg
 x 55
 y 21
 end
@@ -34289,8 +32785,6 @@ x 55
 y 22
 end
 arch blocked
-msg
-endmsg
 x 55
 y 22
 end
@@ -34299,8 +32793,6 @@ x 55
 y 23
 end
 arch blocked
-msg
-endmsg
 x 55
 y 23
 end
@@ -34309,8 +32801,6 @@ x 55
 y 24
 end
 arch blocked
-msg
-endmsg
 x 55
 y 24
 end
@@ -34373,7 +32863,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 55
@@ -34428,7 +32917,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 55
@@ -34484,7 +32972,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 55
@@ -34670,8 +33157,6 @@ x 55
 y 56
 end
 arch blocked
-msg
-endmsg
 x 55
 y 56
 end
@@ -34684,8 +33169,6 @@ x 55
 y 57
 end
 arch blocked
-msg
-endmsg
 x 55
 y 57
 end
@@ -34698,8 +33181,6 @@ x 55
 y 58
 end
 arch blocked
-msg
-endmsg
 x 55
 y 58
 end
@@ -34708,8 +33189,6 @@ x 55
 y 59
 end
 arch blocked
-msg
-endmsg
 x 55
 y 59
 end
@@ -34718,8 +33197,6 @@ x 55
 y 60
 end
 arch blocked
-msg
-endmsg
 x 55
 y 60
 end
@@ -34728,8 +33205,6 @@ x 55
 y 61
 end
 arch blocked
-msg
-endmsg
 x 55
 y 61
 end
@@ -34738,8 +33213,6 @@ x 55
 y 62
 end
 arch blocked
-msg
-endmsg
 x 55
 y 62
 end
@@ -34748,8 +33221,6 @@ x 55
 y 63
 end
 arch blocked
-msg
-endmsg
 x 55
 y 63
 end
@@ -34757,8 +33228,6 @@ arch istone
 x 56
 end
 arch blocked
-msg
-endmsg
 x 56
 end
 arch istone
@@ -34766,8 +33235,6 @@ x 56
 y 1
 end
 arch blocked
-msg
-endmsg
 x 56
 y 1
 end
@@ -34826,7 +33293,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 56
@@ -34857,7 +33323,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 56
@@ -34880,7 +33345,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 56
@@ -34949,8 +33413,6 @@ x 56
 y 20
 end
 arch blocked
-msg
-endmsg
 x 56
 y 20
 end
@@ -34959,8 +33421,6 @@ x 56
 y 21
 end
 arch blocked
-msg
-endmsg
 x 56
 y 21
 end
@@ -34969,8 +33429,6 @@ x 56
 y 22
 end
 arch blocked
-msg
-endmsg
 x 56
 y 22
 end
@@ -34979,8 +33437,6 @@ x 56
 y 23
 end
 arch blocked
-msg
-endmsg
 x 56
 y 23
 end
@@ -35027,7 +33483,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 56
@@ -35106,7 +33561,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 56
@@ -35207,8 +33661,6 @@ x 56
 y 55
 end
 arch blocked
-msg
-endmsg
 x 56
 y 55
 end
@@ -35221,8 +33673,6 @@ x 56
 y 56
 end
 arch blocked
-msg
-endmsg
 x 56
 y 56
 end
@@ -35235,8 +33685,6 @@ x 56
 y 57
 end
 arch blocked
-msg
-endmsg
 x 56
 y 57
 end
@@ -35249,8 +33697,6 @@ x 56
 y 58
 end
 arch blocked
-msg
-endmsg
 x 56
 y 58
 end
@@ -35259,8 +33705,6 @@ x 56
 y 59
 end
 arch blocked
-msg
-endmsg
 x 56
 y 59
 end
@@ -35269,8 +33713,6 @@ x 56
 y 60
 end
 arch blocked
-msg
-endmsg
 x 56
 y 60
 end
@@ -35279,8 +33721,6 @@ x 56
 y 61
 end
 arch blocked
-msg
-endmsg
 x 56
 y 61
 end
@@ -35289,8 +33729,6 @@ x 56
 y 62
 end
 arch blocked
-msg
-endmsg
 x 56
 y 62
 end
@@ -35299,8 +33737,6 @@ x 56
 y 63
 end
 arch blocked
-msg
-endmsg
 x 56
 y 63
 end
@@ -35311,8 +33747,6 @@ arch snow5
 x 57
 end
 arch blocked
-msg
-endmsg
 x 57
 end
 arch istone
@@ -35324,8 +33758,6 @@ x 57
 y 1
 end
 arch blocked
-msg
-endmsg
 x 57
 y 1
 end
@@ -35338,8 +33770,6 @@ x 57
 y 2
 end
 arch blocked
-msg
-endmsg
 x 57
 y 2
 end
@@ -35378,7 +33808,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 57
@@ -35413,7 +33842,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 57
@@ -35457,7 +33885,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 57
@@ -35661,7 +34088,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 57
@@ -35728,7 +34154,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 57
@@ -35849,8 +34274,6 @@ x 57
 y 54
 end
 arch blocked
-msg
-endmsg
 x 57
 y 54
 end
@@ -35863,8 +34286,6 @@ x 57
 y 55
 end
 arch blocked
-msg
-endmsg
 x 57
 y 55
 end
@@ -35877,8 +34298,6 @@ x 57
 y 56
 end
 arch blocked
-msg
-endmsg
 x 57
 y 56
 end
@@ -35887,8 +34306,6 @@ x 57
 y 57
 end
 arch blocked
-msg
-endmsg
 x 57
 y 57
 end
@@ -35897,8 +34314,6 @@ x 57
 y 58
 end
 arch blocked
-msg
-endmsg
 x 57
 y 58
 end
@@ -35907,8 +34322,6 @@ x 57
 y 59
 end
 arch blocked
-msg
-endmsg
 x 57
 y 59
 end
@@ -35917,8 +34330,6 @@ x 57
 y 60
 end
 arch blocked
-msg
-endmsg
 x 57
 y 60
 end
@@ -35927,8 +34338,6 @@ x 57
 y 61
 end
 arch blocked
-msg
-endmsg
 x 57
 y 61
 end
@@ -35937,8 +34346,6 @@ x 57
 y 62
 end
 arch blocked
-msg
-endmsg
 x 57
 y 62
 end
@@ -35947,8 +34354,6 @@ x 57
 y 63
 end
 arch blocked
-msg
-endmsg
 x 57
 y 63
 end
@@ -35959,8 +34364,6 @@ arch snow4
 x 58
 end
 arch blocked
-msg
-endmsg
 x 58
 end
 arch istone
@@ -35972,8 +34375,6 @@ x 58
 y 1
 end
 arch blocked
-msg
-endmsg
 x 58
 y 1
 end
@@ -35986,8 +34387,6 @@ x 58
 y 2
 end
 arch blocked
-msg
-endmsg
 x 58
 y 2
 end
@@ -36099,7 +34498,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 58
@@ -36228,7 +34626,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 58
@@ -36365,7 +34762,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 58
@@ -36513,7 +34909,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 58
@@ -36564,7 +34959,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 58
@@ -36637,8 +35031,6 @@ x 58
 y 51
 end
 arch blocked
-msg
-endmsg
 x 58
 y 51
 end
@@ -36651,8 +35043,6 @@ x 58
 y 52
 end
 arch blocked
-msg
-endmsg
 x 58
 y 52
 end
@@ -36665,8 +35055,6 @@ x 58
 y 53
 end
 arch blocked
-msg
-endmsg
 x 58
 y 53
 end
@@ -36679,8 +35067,6 @@ x 58
 y 54
 end
 arch blocked
-msg
-endmsg
 x 58
 y 54
 end
@@ -36693,8 +35079,6 @@ x 58
 y 55
 end
 arch blocked
-msg
-endmsg
 x 58
 y 55
 end
@@ -36703,8 +35087,6 @@ x 58
 y 56
 end
 arch blocked
-msg
-endmsg
 x 58
 y 56
 end
@@ -36713,8 +35095,6 @@ x 58
 y 57
 end
 arch blocked
-msg
-endmsg
 x 58
 y 57
 end
@@ -36723,8 +35103,6 @@ x 58
 y 58
 end
 arch blocked
-msg
-endmsg
 x 58
 y 58
 end
@@ -36733,8 +35111,6 @@ x 58
 y 59
 end
 arch blocked
-msg
-endmsg
 x 58
 y 59
 end
@@ -36743,8 +35119,6 @@ x 58
 y 60
 end
 arch blocked
-msg
-endmsg
 x 58
 y 60
 end
@@ -36753,8 +35127,6 @@ x 58
 y 61
 end
 arch blocked
-msg
-endmsg
 x 58
 y 61
 end
@@ -36763,8 +35135,6 @@ x 58
 y 62
 end
 arch blocked
-msg
-endmsg
 x 58
 y 62
 end
@@ -36773,8 +35143,6 @@ x 58
 y 63
 end
 arch blocked
-msg
-endmsg
 x 58
 y 63
 end
@@ -36785,8 +35153,6 @@ arch snow4
 x 59
 end
 arch blocked
-msg
-endmsg
 x 59
 end
 arch snow
@@ -36794,8 +35160,6 @@ x 59
 y 1
 end
 arch blocked
-msg
-endmsg
 x 59
 y 1
 end
@@ -36804,8 +35168,6 @@ x 59
 y 2
 end
 arch blocked
-msg
-endmsg
 x 59
 y 2
 end
@@ -36848,7 +35210,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 59
@@ -36875,7 +35236,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 59
@@ -36911,7 +35271,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 59
@@ -37147,7 +35506,6 @@ hp 4000
 maxhp 4000
 maxsp 60
 exp 100000
-
 dam 30
 ac -12
 x 59
@@ -37264,8 +35622,6 @@ x 59
 y 49
 end
 arch blocked
-msg
-endmsg
 x 59
 y 49
 end
@@ -37274,8 +35630,6 @@ x 59
 y 50
 end
 arch blocked
-msg
-endmsg
 x 59
 y 50
 end
@@ -37284,8 +35638,6 @@ x 59
 y 51
 end
 arch blocked
-msg
-endmsg
 x 59
 y 51
 end
@@ -37294,8 +35646,6 @@ x 59
 y 52
 end
 arch blocked
-msg
-endmsg
 x 59
 y 52
 end
@@ -37304,8 +35654,6 @@ x 59
 y 53
 end
 arch blocked
-msg
-endmsg
 x 59
 y 53
 end
@@ -37314,8 +35662,6 @@ x 59
 y 54
 end
 arch blocked
-msg
-endmsg
 x 59
 y 54
 end
@@ -37324,8 +35670,6 @@ x 59
 y 55
 end
 arch blocked
-msg
-endmsg
 x 59
 y 55
 end
@@ -37334,8 +35678,6 @@ x 59
 y 56
 end
 arch blocked
-msg
-endmsg
 x 59
 y 56
 end
@@ -37344,8 +35686,6 @@ x 59
 y 57
 end
 arch blocked
-msg
-endmsg
 x 59
 y 57
 end
@@ -37354,8 +35694,6 @@ x 59
 y 58
 end
 arch blocked
-msg
-endmsg
 x 59
 y 58
 end
@@ -37364,8 +35702,6 @@ x 59
 y 59
 end
 arch blocked
-msg
-endmsg
 x 59
 y 59
 end
@@ -37374,8 +35710,6 @@ x 59
 y 60
 end
 arch blocked
-msg
-endmsg
 x 59
 y 60
 end
@@ -37384,8 +35718,6 @@ x 59
 y 61
 end
 arch blocked
-msg
-endmsg
 x 59
 y 61
 end
@@ -37394,8 +35726,6 @@ x 59
 y 62
 end
 arch blocked
-msg
-endmsg
 x 59
 y 62
 end
@@ -37404,8 +35734,6 @@ x 59
 y 63
 end
 arch blocked
-msg
-endmsg
 x 59
 y 63
 end
@@ -37413,8 +35741,6 @@ arch snow
 x 60
 end
 arch blocked
-msg
-endmsg
 x 60
 end
 arch snow
@@ -37422,8 +35748,6 @@ x 60
 y 1
 end
 arch blocked
-msg
-endmsg
 x 60
 y 1
 end
@@ -37432,8 +35756,6 @@ x 60
 y 2
 end
 arch blocked
-msg
-endmsg
 x 60
 y 2
 end
@@ -37442,8 +35764,6 @@ x 60
 y 3
 end
 arch blocked
-msg
-endmsg
 x 60
 y 3
 end
@@ -37531,7 +35851,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 60
@@ -37732,7 +36051,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 60
@@ -37942,8 +36260,6 @@ x 60
 y 44
 end
 arch blocked
-msg
-endmsg
 x 60
 y 44
 end
@@ -37952,8 +36268,6 @@ x 60
 y 45
 end
 arch blocked
-msg
-endmsg
 x 60
 y 45
 end
@@ -37962,8 +36276,6 @@ x 60
 y 46
 end
 arch blocked
-msg
-endmsg
 x 60
 y 46
 end
@@ -37972,8 +36284,6 @@ x 60
 y 47
 end
 arch blocked
-msg
-endmsg
 x 60
 y 47
 end
@@ -37982,8 +36292,6 @@ x 60
 y 48
 end
 arch blocked
-msg
-endmsg
 x 60
 y 48
 end
@@ -37992,8 +36300,6 @@ x 60
 y 49
 end
 arch blocked
-msg
-endmsg
 x 60
 y 49
 end
@@ -38002,8 +36308,6 @@ x 60
 y 50
 end
 arch blocked
-msg
-endmsg
 x 60
 y 50
 end
@@ -38012,8 +36316,6 @@ x 60
 y 51
 end
 arch blocked
-msg
-endmsg
 x 60
 y 51
 end
@@ -38022,8 +36324,6 @@ x 60
 y 52
 end
 arch blocked
-msg
-endmsg
 x 60
 y 52
 end
@@ -38032,8 +36332,6 @@ x 60
 y 53
 end
 arch blocked
-msg
-endmsg
 x 60
 y 53
 end
@@ -38042,8 +36340,6 @@ x 60
 y 54
 end
 arch blocked
-msg
-endmsg
 x 60
 y 54
 end
@@ -38052,8 +36348,6 @@ x 60
 y 55
 end
 arch blocked
-msg
-endmsg
 x 60
 y 55
 end
@@ -38062,8 +36356,6 @@ x 60
 y 56
 end
 arch blocked
-msg
-endmsg
 x 60
 y 56
 end
@@ -38072,8 +36364,6 @@ x 60
 y 57
 end
 arch blocked
-msg
-endmsg
 x 60
 y 57
 end
@@ -38082,8 +36372,6 @@ x 60
 y 58
 end
 arch blocked
-msg
-endmsg
 x 60
 y 58
 end
@@ -38092,8 +36380,6 @@ x 60
 y 59
 end
 arch blocked
-msg
-endmsg
 x 60
 y 59
 end
@@ -38102,8 +36388,6 @@ x 60
 y 60
 end
 arch blocked
-msg
-endmsg
 x 60
 y 60
 end
@@ -38112,8 +36396,6 @@ x 60
 y 61
 end
 arch blocked
-msg
-endmsg
 x 60
 y 61
 end
@@ -38122,8 +36404,6 @@ x 60
 y 62
 end
 arch blocked
-msg
-endmsg
 x 60
 y 62
 end
@@ -38132,8 +36412,6 @@ x 60
 y 63
 end
 arch blocked
-msg
-endmsg
 x 60
 y 63
 end
@@ -38141,8 +36419,6 @@ arch snow
 x 61
 end
 arch blocked
-msg
-endmsg
 x 61
 end
 arch snow
@@ -38150,8 +36426,6 @@ x 61
 y 1
 end
 arch blocked
-msg
-endmsg
 x 61
 y 1
 end
@@ -38160,8 +36434,6 @@ x 61
 y 2
 end
 arch blocked
-msg
-endmsg
 x 61
 y 2
 end
@@ -38170,8 +36442,6 @@ x 61
 y 3
 end
 arch blocked
-msg
-endmsg
 x 61
 y 3
 end
@@ -38180,8 +36450,6 @@ x 61
 y 4
 end
 arch blocked
-msg
-endmsg
 x 61
 y 4
 end
@@ -38320,7 +36588,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 61
@@ -38476,7 +36743,6 @@ hp 32000
 maxhp 32000
 maxsp 400
 exp 900000
-
 dam 100
 ac -12
 x 61
@@ -38690,8 +36956,6 @@ x 61
 y 37
 end
 arch blocked
-msg
-endmsg
 x 61
 y 37
 end
@@ -38700,8 +36964,6 @@ x 61
 y 38
 end
 arch blocked
-msg
-endmsg
 x 61
 y 38
 end
@@ -38710,8 +36972,6 @@ x 61
 y 39
 end
 arch blocked
-msg
-endmsg
 x 61
 y 39
 end
@@ -38720,8 +36980,6 @@ x 61
 y 40
 end
 arch blocked
-msg
-endmsg
 x 61
 y 40
 end
@@ -38730,8 +36988,6 @@ x 61
 y 41
 end
 arch blocked
-msg
-endmsg
 x 61
 y 41
 end
@@ -38740,8 +36996,6 @@ x 61
 y 42
 end
 arch blocked
-msg
-endmsg
 x 61
 y 42
 end
@@ -38750,8 +37004,6 @@ x 61
 y 43
 end
 arch blocked
-msg
-endmsg
 x 61
 y 43
 end
@@ -38760,8 +37012,6 @@ x 61
 y 44
 end
 arch blocked
-msg
-endmsg
 x 61
 y 44
 end
@@ -38770,8 +37020,6 @@ x 61
 y 45
 end
 arch blocked
-msg
-endmsg
 x 61
 y 45
 end
@@ -38780,8 +37028,6 @@ x 61
 y 46
 end
 arch blocked
-msg
-endmsg
 x 61
 y 46
 end
@@ -38790,8 +37036,6 @@ x 61
 y 47
 end
 arch blocked
-msg
-endmsg
 x 61
 y 47
 end
@@ -38800,8 +37044,6 @@ x 61
 y 48
 end
 arch blocked
-msg
-endmsg
 x 61
 y 48
 end
@@ -38810,8 +37052,6 @@ x 61
 y 49
 end
 arch blocked
-msg
-endmsg
 x 61
 y 49
 end
@@ -38820,8 +37060,6 @@ x 61
 y 50
 end
 arch blocked
-msg
-endmsg
 x 61
 y 50
 end
@@ -38830,8 +37068,6 @@ x 61
 y 51
 end
 arch blocked
-msg
-endmsg
 x 61
 y 51
 end
@@ -38840,8 +37076,6 @@ x 61
 y 52
 end
 arch blocked
-msg
-endmsg
 x 61
 y 52
 end
@@ -38850,8 +37084,6 @@ x 61
 y 53
 end
 arch blocked
-msg
-endmsg
 x 61
 y 53
 end
@@ -38860,8 +37092,6 @@ x 61
 y 54
 end
 arch blocked
-msg
-endmsg
 x 61
 y 54
 end
@@ -38870,8 +37100,6 @@ x 61
 y 55
 end
 arch blocked
-msg
-endmsg
 x 61
 y 55
 end
@@ -38880,8 +37108,6 @@ x 61
 y 56
 end
 arch blocked
-msg
-endmsg
 x 61
 y 56
 end
@@ -38890,8 +37116,6 @@ x 61
 y 57
 end
 arch blocked
-msg
-endmsg
 x 61
 y 57
 end
@@ -38900,8 +37124,6 @@ x 61
 y 58
 end
 arch blocked
-msg
-endmsg
 x 61
 y 58
 end
@@ -38910,8 +37132,6 @@ x 61
 y 59
 end
 arch blocked
-msg
-endmsg
 x 61
 y 59
 end
@@ -38920,8 +37140,6 @@ x 61
 y 60
 end
 arch blocked
-msg
-endmsg
 x 61
 y 60
 end
@@ -38930,8 +37148,6 @@ x 61
 y 61
 end
 arch blocked
-msg
-endmsg
 x 61
 y 61
 end
@@ -38940,8 +37156,6 @@ x 61
 y 62
 end
 arch blocked
-msg
-endmsg
 x 61
 y 62
 end
@@ -38950,8 +37164,6 @@ x 61
 y 63
 end
 arch blocked
-msg
-endmsg
 x 61
 y 63
 end
@@ -38959,8 +37171,6 @@ arch snow
 x 62
 end
 arch blocked
-msg
-endmsg
 x 62
 end
 arch snow
@@ -38968,8 +37178,6 @@ x 62
 y 1
 end
 arch blocked
-msg
-endmsg
 x 62
 y 1
 end
@@ -38978,8 +37186,6 @@ x 62
 y 2
 end
 arch blocked
-msg
-endmsg
 x 62
 y 2
 end
@@ -38988,8 +37194,6 @@ x 62
 y 3
 end
 arch blocked
-msg
-endmsg
 x 62
 y 3
 end
@@ -38998,8 +37202,6 @@ x 62
 y 4
 end
 arch blocked
-msg
-endmsg
 x 62
 y 4
 end
@@ -39008,8 +37210,6 @@ x 62
 y 5
 end
 arch blocked
-msg
-endmsg
 x 62
 y 5
 end
@@ -39018,8 +37218,6 @@ x 62
 y 6
 end
 arch blocked
-msg
-endmsg
 x 62
 y 6
 end
@@ -39028,8 +37226,6 @@ x 62
 y 7
 end
 arch blocked
-msg
-endmsg
 x 62
 y 7
 end
@@ -39038,8 +37234,6 @@ x 62
 y 8
 end
 arch blocked
-msg
-endmsg
 x 62
 y 8
 end
@@ -39298,8 +37492,6 @@ x 62
 y 31
 end
 arch blocked
-msg
-endmsg
 x 62
 y 31
 end
@@ -39308,8 +37500,6 @@ x 62
 y 32
 end
 arch blocked
-msg
-endmsg
 x 62
 y 32
 end
@@ -39318,8 +37508,6 @@ x 62
 y 33
 end
 arch blocked
-msg
-endmsg
 x 62
 y 33
 end
@@ -39328,8 +37516,6 @@ x 62
 y 34
 end
 arch blocked
-msg
-endmsg
 x 62
 y 34
 end
@@ -39338,8 +37524,6 @@ x 62
 y 35
 end
 arch blocked
-msg
-endmsg
 x 62
 y 35
 end
@@ -39348,8 +37532,6 @@ x 62
 y 36
 end
 arch blocked
-msg
-endmsg
 x 62
 y 36
 end
@@ -39358,8 +37540,6 @@ x 62
 y 37
 end
 arch blocked
-msg
-endmsg
 x 62
 y 37
 end
@@ -39368,8 +37548,6 @@ x 62
 y 38
 end
 arch blocked
-msg
-endmsg
 x 62
 y 38
 end
@@ -39378,8 +37556,6 @@ x 62
 y 39
 end
 arch blocked
-msg
-endmsg
 x 62
 y 39
 end
@@ -39388,8 +37564,6 @@ x 62
 y 40
 end
 arch blocked
-msg
-endmsg
 x 62
 y 40
 end
@@ -39398,8 +37572,6 @@ x 62
 y 41
 end
 arch blocked
-msg
-endmsg
 x 62
 y 41
 end
@@ -39408,8 +37580,6 @@ x 62
 y 42
 end
 arch blocked
-msg
-endmsg
 x 62
 y 42
 end
@@ -39418,8 +37588,6 @@ x 62
 y 43
 end
 arch blocked
-msg
-endmsg
 x 62
 y 43
 end
@@ -39428,8 +37596,6 @@ x 62
 y 44
 end
 arch blocked
-msg
-endmsg
 x 62
 y 44
 end
@@ -39438,8 +37604,6 @@ x 62
 y 45
 end
 arch blocked
-msg
-endmsg
 x 62
 y 45
 end
@@ -39448,8 +37612,6 @@ x 62
 y 46
 end
 arch blocked
-msg
-endmsg
 x 62
 y 46
 end
@@ -39458,8 +37620,6 @@ x 62
 y 47
 end
 arch blocked
-msg
-endmsg
 x 62
 y 47
 end
@@ -39468,8 +37628,6 @@ x 62
 y 48
 end
 arch blocked
-msg
-endmsg
 x 62
 y 48
 end
@@ -39478,8 +37636,6 @@ x 62
 y 49
 end
 arch blocked
-msg
-endmsg
 x 62
 y 49
 end
@@ -39488,8 +37644,6 @@ x 62
 y 50
 end
 arch blocked
-msg
-endmsg
 x 62
 y 50
 end
@@ -39498,8 +37652,6 @@ x 62
 y 51
 end
 arch blocked
-msg
-endmsg
 x 62
 y 51
 end
@@ -39508,8 +37660,6 @@ x 62
 y 52
 end
 arch blocked
-msg
-endmsg
 x 62
 y 52
 end
@@ -39518,8 +37668,6 @@ x 62
 y 53
 end
 arch blocked
-msg
-endmsg
 x 62
 y 53
 end
@@ -39528,8 +37676,6 @@ x 62
 y 54
 end
 arch blocked
-msg
-endmsg
 x 62
 y 54
 end
@@ -39538,8 +37684,6 @@ x 62
 y 55
 end
 arch blocked
-msg
-endmsg
 x 62
 y 55
 end
@@ -39548,8 +37692,6 @@ x 62
 y 56
 end
 arch blocked
-msg
-endmsg
 x 62
 y 56
 end
@@ -39558,8 +37700,6 @@ x 62
 y 57
 end
 arch blocked
-msg
-endmsg
 x 62
 y 57
 end
@@ -39568,8 +37708,6 @@ x 62
 y 58
 end
 arch blocked
-msg
-endmsg
 x 62
 y 58
 end
@@ -39578,8 +37716,6 @@ x 62
 y 59
 end
 arch blocked
-msg
-endmsg
 x 62
 y 59
 end
@@ -39588,8 +37724,6 @@ x 62
 y 60
 end
 arch blocked
-msg
-endmsg
 x 62
 y 60
 end
@@ -39598,8 +37732,6 @@ x 62
 y 61
 end
 arch blocked
-msg
-endmsg
 x 62
 y 61
 end
@@ -39608,8 +37740,6 @@ x 62
 y 62
 end
 arch blocked
-msg
-endmsg
 x 62
 y 62
 end
@@ -39618,8 +37748,6 @@ x 62
 y 63
 end
 arch blocked
-msg
-endmsg
 x 62
 y 63
 end
@@ -39627,8 +37755,6 @@ arch snow
 x 63
 end
 arch blocked
-msg
-endmsg
 x 63
 end
 arch snow
@@ -39636,8 +37762,6 @@ x 63
 y 1
 end
 arch blocked
-msg
-endmsg
 x 63
 y 1
 end
@@ -39646,8 +37770,6 @@ x 63
 y 2
 end
 arch blocked
-msg
-endmsg
 x 63
 y 2
 end
@@ -39656,8 +37778,6 @@ x 63
 y 3
 end
 arch blocked
-msg
-endmsg
 x 63
 y 3
 end
@@ -39666,8 +37786,6 @@ x 63
 y 4
 end
 arch blocked
-msg
-endmsg
 x 63
 y 4
 end
@@ -39676,8 +37794,6 @@ x 63
 y 5
 end
 arch blocked
-msg
-endmsg
 x 63
 y 5
 end
@@ -39686,8 +37802,6 @@ x 63
 y 6
 end
 arch blocked
-msg
-endmsg
 x 63
 y 6
 end
@@ -39696,8 +37810,6 @@ x 63
 y 7
 end
 arch blocked
-msg
-endmsg
 x 63
 y 7
 end
@@ -39706,8 +37818,6 @@ x 63
 y 8
 end
 arch blocked
-msg
-endmsg
 x 63
 y 8
 end
@@ -39716,8 +37826,6 @@ x 63
 y 9
 end
 arch blocked
-msg
-endmsg
 x 63
 y 9
 end
@@ -39726,8 +37834,6 @@ x 63
 y 10
 end
 arch blocked
-msg
-endmsg
 x 63
 y 10
 end
@@ -39736,8 +37842,6 @@ x 63
 y 11
 end
 arch blocked
-msg
-endmsg
 x 63
 y 11
 end
@@ -39750,8 +37854,6 @@ x 63
 y 12
 end
 arch blocked
-msg
-endmsg
 x 63
 y 12
 end
@@ -39764,8 +37866,6 @@ x 63
 y 13
 end
 arch blocked
-msg
-endmsg
 x 63
 y 13
 end
@@ -39778,8 +37878,6 @@ x 63
 y 14
 end
 arch blocked
-msg
-endmsg
 x 63
 y 14
 end
@@ -39900,8 +37998,6 @@ x 63
 y 27
 end
 arch blocked
-msg
-endmsg
 x 63
 y 27
 end
@@ -39914,8 +38010,6 @@ x 63
 y 28
 end
 arch blocked
-msg
-endmsg
 x 63
 y 28
 end
@@ -39928,8 +38022,6 @@ x 63
 y 29
 end
 arch blocked
-msg
-endmsg
 x 63
 y 29
 end
@@ -39938,8 +38030,6 @@ x 63
 y 30
 end
 arch blocked
-msg
-endmsg
 x 63
 y 30
 end
@@ -39948,8 +38038,6 @@ x 63
 y 31
 end
 arch blocked
-msg
-endmsg
 x 63
 y 31
 end
@@ -39958,8 +38046,6 @@ x 63
 y 32
 end
 arch blocked
-msg
-endmsg
 x 63
 y 32
 end
@@ -39968,8 +38054,6 @@ x 63
 y 33
 end
 arch blocked
-msg
-endmsg
 x 63
 y 33
 end
@@ -39978,8 +38062,6 @@ x 63
 y 34
 end
 arch blocked
-msg
-endmsg
 x 63
 y 34
 end
@@ -39988,8 +38070,6 @@ x 63
 y 35
 end
 arch blocked
-msg
-endmsg
 x 63
 y 35
 end
@@ -39998,8 +38078,6 @@ x 63
 y 36
 end
 arch blocked
-msg
-endmsg
 x 63
 y 36
 end
@@ -40008,8 +38086,6 @@ x 63
 y 37
 end
 arch blocked
-msg
-endmsg
 x 63
 y 37
 end
@@ -40018,8 +38094,6 @@ x 63
 y 38
 end
 arch blocked
-msg
-endmsg
 x 63
 y 38
 end
@@ -40028,8 +38102,6 @@ x 63
 y 39
 end
 arch blocked
-msg
-endmsg
 x 63
 y 39
 end
@@ -40038,8 +38110,6 @@ x 63
 y 40
 end
 arch blocked
-msg
-endmsg
 x 63
 y 40
 end
@@ -40048,8 +38118,6 @@ x 63
 y 41
 end
 arch blocked
-msg
-endmsg
 x 63
 y 41
 end
@@ -40058,8 +38126,6 @@ x 63
 y 42
 end
 arch blocked
-msg
-endmsg
 x 63
 y 42
 end
@@ -40068,8 +38134,6 @@ x 63
 y 43
 end
 arch blocked
-msg
-endmsg
 x 63
 y 43
 end
@@ -40078,8 +38142,6 @@ x 63
 y 44
 end
 arch blocked
-msg
-endmsg
 x 63
 y 44
 end
@@ -40088,8 +38150,6 @@ x 63
 y 45
 end
 arch blocked
-msg
-endmsg
 x 63
 y 45
 end
@@ -40098,8 +38158,6 @@ x 63
 y 46
 end
 arch blocked
-msg
-endmsg
 x 63
 y 46
 end
@@ -40108,8 +38166,6 @@ x 63
 y 47
 end
 arch blocked
-msg
-endmsg
 x 63
 y 47
 end
@@ -40118,8 +38174,6 @@ x 63
 y 48
 end
 arch blocked
-msg
-endmsg
 x 63
 y 48
 end
@@ -40128,8 +38182,6 @@ x 63
 y 49
 end
 arch blocked
-msg
-endmsg
 x 63
 y 49
 end
@@ -40138,8 +38190,6 @@ x 63
 y 50
 end
 arch blocked
-msg
-endmsg
 x 63
 y 50
 end
@@ -40148,8 +38198,6 @@ x 63
 y 51
 end
 arch blocked
-msg
-endmsg
 x 63
 y 51
 end
@@ -40158,8 +38206,6 @@ x 63
 y 52
 end
 arch blocked
-msg
-endmsg
 x 63
 y 52
 end
@@ -40168,8 +38214,6 @@ x 63
 y 53
 end
 arch blocked
-msg
-endmsg
 x 63
 y 53
 end
@@ -40178,8 +38222,6 @@ x 63
 y 54
 end
 arch blocked
-msg
-endmsg
 x 63
 y 54
 end
@@ -40188,8 +38230,6 @@ x 63
 y 55
 end
 arch blocked
-msg
-endmsg
 x 63
 y 55
 end
@@ -40198,8 +38238,6 @@ x 63
 y 56
 end
 arch blocked
-msg
-endmsg
 x 63
 y 56
 end
@@ -40208,8 +38246,6 @@ x 63
 y 57
 end
 arch blocked
-msg
-endmsg
 x 63
 y 57
 end
@@ -40218,8 +38254,6 @@ x 63
 y 58
 end
 arch blocked
-msg
-endmsg
 x 63
 y 58
 end
@@ -40228,8 +38262,6 @@ x 63
 y 59
 end
 arch blocked
-msg
-endmsg
 x 63
 y 59
 end
@@ -40238,8 +38270,6 @@ x 63
 y 60
 end
 arch blocked
-msg
-endmsg
 x 63
 y 60
 end
@@ -40248,8 +38278,6 @@ x 63
 y 61
 end
 arch blocked
-msg
-endmsg
 x 63
 y 61
 end
@@ -40258,8 +38286,6 @@ x 63
 y 62
 end
 arch blocked
-msg
-endmsg
 x 63
 y 62
 end
@@ -40268,8 +38294,6 @@ x 63
 y 63
 end
 arch blocked
-msg
-endmsg
 x 63
 y 63
 end

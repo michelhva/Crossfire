@@ -1,14 +1,13 @@
 arch map
 name witch house
+width 10
+height 14
+enter_x 15
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Feb  3 18:14:20 1999
 endmsg
-hp 15
-sp 0
-x 10
-y 14
 end
 arch wwall_2_2_2
 end

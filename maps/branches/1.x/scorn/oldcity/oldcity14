@@ -1,9 +1,6 @@
 arch map
-region scornoldcity
 name <untitled>
-msg
-
-endmsg
+region scornoldcity
 width 20
 height 40
 enter_x 9
@@ -441,9 +438,9 @@ x 1
 y 31
 end
 arch generate_goblin
-speed_left -0.140000
 x 1
 y 31
+speed_left -0.140000
 end
 arch medium_stones
 x 1
@@ -680,9 +677,9 @@ x 2
 y 31
 end
 arch generate_goblin
-speed_left -0.140000
 x 2
 y 31
+speed_left -0.140000
 end
 arch medium_stones
 x 2
@@ -747,9 +744,9 @@ x 3
 y 1
 end
 arch orc
-speed_left -0.700000
 x 3
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 3
@@ -1002,9 +999,9 @@ x 4
 y 1
 end
 arch orc
-speed_left -0.700000
 x 4
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 4
@@ -1261,27 +1258,27 @@ x 5
 y 1
 end
 arch orc
-speed_left -0.700000
 x 5
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 5
 y 2
 end
 arch orc
-speed_left -0.700000
 x 5
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 5
 y 3
 end
 arch orc
-speed_left -0.700000
 x 5
 y 3
+speed_left -0.700000
 end
 arch large_stones
 x 5
@@ -1510,36 +1507,36 @@ x 6
 y 1
 end
 arch orc
-speed_left -0.700000
 x 6
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 6
 y 2
 end
 arch orc
-speed_left -0.700000
 x 6
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 6
 y 3
 end
 arch orc
-speed_left -0.700000
 x 6
 y 3
+speed_left -0.700000
 end
 arch large_stones
 x 6
 y 4
 end
 arch orc
-speed_left -0.700000
 x 6
 y 4
+speed_left -0.700000
 end
 arch large_stones
 x 6
@@ -1954,9 +1951,9 @@ x 8
 y 2
 end
 arch orc
-speed_left -0.700000
 x 8
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 8
@@ -1971,27 +1968,27 @@ x 8
 y 4
 end
 arch orc
-speed_left -0.700000
 x 8
 y 4
+speed_left -0.700000
 end
 arch large_stones
 x 8
 y 5
 end
 arch orc
-speed_left -0.700000
 x 8
 y 5
+speed_left -0.700000
 end
 arch large_stones
 x 8
 y 6
 end
 arch orc
-speed_left -0.700000
 x 8
 y 6
+speed_left -0.700000
 end
 arch large_stones
 x 8
@@ -2180,45 +2177,45 @@ x 9
 y 4
 end
 arch orc
-speed_left -0.700000
 x 9
 y 4
+speed_left -0.700000
 end
 arch large_stones
 x 9
 y 5
 end
 arch orc
-speed_left -0.700000
 x 9
 y 5
+speed_left -0.700000
 end
 arch large_stones
 x 9
 y 6
 end
 arch orc
-speed_left -0.700000
 x 9
 y 6
+speed_left -0.700000
 end
 arch large_stones
 x 9
 y 7
 end
 arch orc
-speed_left -0.700000
 x 9
 y 7
+speed_left -0.700000
 end
 arch large_stones
 x 9
 y 8
 end
 arch orc
-speed_left -0.700000
 x 9
 y 8
+speed_left -0.700000
 end
 arch pstone_3
 x 9
@@ -2423,9 +2420,9 @@ x 10
 y 4
 end
 arch orc
-speed_left -0.700000
 x 10
 y 4
+speed_left -0.700000
 end
 arch large_stones
 x 10
@@ -2647,9 +2644,9 @@ x 11
 y 2
 end
 arch orc
-speed_left -0.700000
 x 11
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 11
@@ -2774,6 +2771,15 @@ end
 arch pstone_1
 x 11
 y 20
+end
+arch behemoth
+name sad creature
+hp 200
+maxhp 200
+x 11
+y 20
+speed 0.100000
+speed_left -0.240000
 end
 arch pstone_1
 x 11
@@ -2902,18 +2908,18 @@ x 12
 y 1
 end
 arch orc
-speed_left -0.700000
 x 12
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 12
 y 2
 end
 arch orc
-speed_left -0.700000
 x 12
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 12
@@ -3124,18 +3130,18 @@ x 12
 y 32
 end
 arch generate_goblin
-speed_left -0.140000
 x 12
 y 32
+speed_left -0.140000
 end
 arch medium_stones
 x 12
 y 33
 end
 arch generate_goblin
-speed_left -0.140000
 x 12
 y 33
+speed_left -0.140000
 end
 arch medium_stones
 x 12
@@ -3450,9 +3456,9 @@ x 14
 y 1
 end
 arch orc
-speed_left -0.700000
 x 14
 y 1
+speed_left -0.700000
 end
 arch large_stones
 x 14
@@ -3717,9 +3723,9 @@ x 15
 y 2
 end
 arch orc
-speed_left -0.700000
 x 15
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 15
@@ -3742,27 +3748,27 @@ x 15
 y 5
 end
 arch gnoll
-speed_left -0.500000
 x 15
 y 5
+speed_left -0.500000
 end
 arch large_stones
 x 15
 y 6
 end
 arch gnoll
-speed_left -0.500000
 x 15
 y 6
+speed_left -0.500000
 end
 arch large_stones
 x 15
 y 7
 end
 arch gnoll
-speed_left -0.500000
 x 15
 y 7
+speed_left -0.500000
 end
 arch pstone_1
 x 15
@@ -4007,9 +4013,9 @@ x 16
 y 2
 end
 arch orc
-speed_left -0.700000
 x 16
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 16
@@ -4032,9 +4038,9 @@ x 16
 y 5
 end
 arch gnoll
-speed_left -0.500000
 x 16
 y 5
+speed_left -0.500000
 end
 arch pstone_1
 x 16
@@ -4153,9 +4159,9 @@ x 16
 y 20
 end
 arch kobold
-speed_left -0.500000
 x 16
 y 20
+speed_left -0.500000
 end
 arch small_stones
 x 16
@@ -4270,9 +4276,9 @@ x 16
 y 38
 end
 arch goblin
-speed_left -0.300000
 x 16
 y 38
+speed_left -0.300000
 end
 arch medium_stones
 x 16
@@ -4297,18 +4303,18 @@ x 17
 y 2
 end
 arch orc
-speed_left -0.700000
 x 17
 y 2
+speed_left -0.700000
 end
 arch large_stones
 x 17
 y 3
 end
 arch orc
-speed_left -0.700000
 x 17
 y 3
+speed_left -0.700000
 end
 arch large_stones
 x 17
@@ -4327,9 +4333,9 @@ x 17
 y 6
 end
 arch gnoll
-speed_left -0.500000
 x 17
 y 6
+speed_left -0.500000
 end
 arch pstone_1
 x 17
@@ -4432,9 +4438,9 @@ x 17
 y 19
 end
 arch kobold
-speed_left -0.500000
 x 17
 y 19
+speed_left -0.500000
 end
 arch small_stones
 x 17
@@ -4703,27 +4709,27 @@ x 18
 y 19
 end
 arch kobold
-speed_left -0.500000
 x 18
 y 19
+speed_left -0.500000
 end
 arch medium_stones
 x 18
 y 20
 end
 arch kobold
-speed_left -0.500000
 x 18
 y 20
+speed_left -0.500000
 end
 arch medium_stones
 x 18
 y 21
 end
 arch kobold
-speed_left -0.500000
 x 18
 y 21
+speed_left -0.500000
 end
 arch small_stones
 x 18
@@ -5154,13 +5160,4 @@ end
 arch rock
 x 19
 y 39
-end
-arch behemoth
-name sad creature
-hp 200
-maxhp 200
-speed 0.100000
-speed_left -0.240000
-x 11
-y 20
 end

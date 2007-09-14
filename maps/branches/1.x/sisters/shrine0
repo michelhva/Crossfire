@@ -1,13 +1,13 @@
 arch map
 name shrine0
+darkness 4
+width 36
+height 55
 msg
 Creator: bt
 Email: thomas@Nomad.astro.psu.edu
 Date: Tue Dec 20 12:00:40 1994
 endmsg
-width 36
-height 55
-darkness 4
 end
 arch blocked
 y 20
@@ -165,14 +165,14 @@ x 3
 y 22
 end
 arch marble
-no_pass 1
 x 3
 y 23
+no_pass 1
 end
 arch marble
-no_pass 1
 x 3
 y 24
+no_pass 1
 end
 arch marble
 x 3
@@ -557,36 +557,36 @@ name viper generator
 other_arch cobra
 x 10
 end
+arch cobra
+x 10
+y 6
+end
 arch snake
 x 10
 y 8
 end
 arch igate_closed_1
-connected 20
 x 10
 y 9
+connected 20
 end
 arch igate_open_1
-connected 10
 x 10
 y 10
+connected 10
 end
 arch teleporter
 hp 16
 sp 19
-speed 1.000000
 x 10
 y 11
+speed 1.000000
 end
 arch blocked
-msg
-endmsg
 x 10
 y 12
 end
 arch blocked
-msg
-endmsg
 x 10
 y 19
 end
@@ -647,8 +647,6 @@ x 10
 y 27
 end
 arch blocked
-msg
-endmsg
 x 10
 y 28
 end
@@ -657,54 +655,48 @@ name viper generator
 other_arch cobra
 x 11
 end
+arch cobra
+x 11
+y 6
+end
 arch snake
 x 11
 y 8
 end
 arch igate_closed_1
-connected 20
 x 11
 y 9
+connected 20
 end
 arch igate_open_1
-connected 10
 x 11
 y 10
+connected 10
 end
 arch teleporter
 hp 16
 sp 21
-speed 1.000000
 x 11
 y 11
+speed 1.000000
 end
 arch blocked
-msg
-endmsg
 x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 y 16
 end
 arch blocked
-msg
-endmsg
 x 11
 y 17
 end
 arch blocked
-msg
-endmsg
 x 11
 y 18
 end
 arch blocked
-msg
-endmsg
 x 11
 y 19
 end
@@ -767,14 +759,10 @@ x 11
 y 27
 end
 arch blocked
-msg
-endmsg
 x 11
 y 28
 end
 arch blocked
-msg
-endmsg
 x 11
 y 29
 end
@@ -783,103 +771,69 @@ x 11
 y 30
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
 arch blocked
-msg
-endmsg
 x 12
 y 3
 end
 arch blocked
-msg
-endmsg
 x 12
 y 4
 end
 arch blocked
-msg
-endmsg
 x 12
 y 5
 end
 arch blocked
-msg
-endmsg
 x 12
 y 6
 end
 arch blocked
-msg
-endmsg
 x 12
 y 7
 end
 arch blocked
-msg
-endmsg
 x 12
 y 8
 end
 arch blocked
-msg
-endmsg
 x 12
 y 9
 end
 arch blocked
-msg
-endmsg
 x 12
 y 10
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
 arch blocked
-msg
-endmsg
 x 12
 y 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 13
 end
 arch blocked
-msg
-endmsg
 x 12
 y 14
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 y 16
 end
@@ -984,26 +938,18 @@ x 12
 y 30
 end
 arch blocked
-msg
-endmsg
 x 13
 y 9
 end
 arch blocked
-msg
-endmsg
 x 13
 y 10
 end
 arch blocked
-msg
-endmsg
 x 13
 y 11
 end
 arch blocked
-msg
-endmsg
 x 13
 y 12
 end
@@ -1126,62 +1072,42 @@ x 13
 y 30
 end
 arch blocked
-msg
-endmsg
 x 13
 y 39
 end
 arch blocked
-msg
-endmsg
 x 13
 y 40
 end
 arch blocked
-msg
-endmsg
 x 13
 y 41
 end
 arch blocked
-msg
-endmsg
 x 13
 y 42
 end
 arch blocked
-msg
-endmsg
 x 13
 y 43
 end
 arch blocked
-msg
-endmsg
 x 13
 y 45
 end
 arch blocked
-msg
-endmsg
 x 13
 y 46
 end
 arch blocked
-msg
-endmsg
 x 13
 y 47
 end
 arch blocked
-msg
-endmsg
 x 13
 y 48
 end
 arch blocked
-msg
-endmsg
 x 13
 y 49
 end
@@ -1194,26 +1120,18 @@ x 13
 y 51
 end
 arch blocked
-msg
-endmsg
 x 14
 y 6
 end
 arch blocked
-msg
-endmsg
 x 14
 y 7
 end
 arch blocked
-msg
-endmsg
 x 14
 y 8
 end
 arch blocked
-msg
-endmsg
 x 14
 y 9
 end
@@ -1395,20 +1313,14 @@ x 14
 y 42
 end
 arch blocked
-msg
-endmsg
 x 14
 y 43
 end
 arch blocked
-msg
-endmsg
 x 14
 y 44
 end
 arch blocked
-msg
-endmsg
 x 14
 y 45
 end
@@ -1453,26 +1365,18 @@ x 14
 y 50
 end
 arch blocked
-msg
-endmsg
 x 14
 y 51
 end
 arch blocked
-msg
-endmsg
 x 14
 y 52
 end
 arch blocked
-msg
-endmsg
 x 14
 y 53
 end
 arch blocked
-msg
-endmsg
 x 14
 y 54
 end
@@ -1496,8 +1400,6 @@ x 15
 y 4
 end
 arch blocked
-msg
-endmsg
 x 15
 y 5
 end
@@ -1712,20 +1614,14 @@ x 15
 y 29
 end
 arch blocked
-msg
-endmsg
 x 15
 y 30
 end
 arch blocked
-msg
-endmsg
 x 15
 y 31
 end
 arch blocked
-msg
-endmsg
 x 15
 y 32
 end
@@ -1858,43 +1754,29 @@ x 15
 y 53
 end
 arch blocked
-msg
-endmsg
 x 15
 y 54
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
 arch blocked
-msg
-endmsg
 x 16
 y 2
 end
 arch blocked
-msg
-endmsg
 x 16
 y 3
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
@@ -1937,10 +1819,10 @@ x 16
 y 10
 end
 arch igate_closed_1
-speed 0.500000
-connected 20
 x 16
 y 10
+speed 0.500000
+connected 20
 end
 arch marble
 x 16
@@ -1958,9 +1840,9 @@ arch serp_priest
 name Chief Serpentman Priest
 hp 1000
 exp 7000
-carrying 11500
 x 16
 y 13
+carrying 11500
 arch potion_restoration
 name flask of blood
 end
@@ -2257,9 +2139,9 @@ x 16
 y 48
 end
 arch igate_open_1
-connected 10
 x 16
 y 48
+connected 10
 end
 arch large_stones
 x 16
@@ -2298,8 +2180,6 @@ x 16
 y 53
 end
 arch blocked
-msg
-endmsg
 x 16
 y 54
 end
@@ -2315,38 +2195,38 @@ y 1
 end
 arch blocked
 name path of night
-no_pass 0
-is_floor 1
 x 17
 y 1
+no_pass 0
+is_floor 1
 end
 arch blocked
 name path of night
-no_pass 0
-is_floor 1
 x 17
 y 2
+no_pass 0
+is_floor 1
 end
 arch blocked
 name path of night
-no_pass 0
-is_floor 1
 x 17
 y 3
+no_pass 0
+is_floor 1
 end
 arch blocked
 name path of night
-no_pass 0
-is_floor 1
 x 17
 y 4
+no_pass 0
+is_floor 1
 end
 arch blocked
 name path of night
-no_pass 0
-is_floor 1
 x 17
 y 5
+no_pass 0
+is_floor 1
 end
 arch cobblestones2
 x 17
@@ -2354,9 +2234,9 @@ y 6
 end
 arch awall_2_1_2
 name rune marked wall
-no_pass 0
 x 17
 y 6
+no_pass 0
 end
 arch magic_mouth
 msg
@@ -2397,9 +2277,9 @@ arch altar
 name blood stained altar
 slaying potion_restoration
 food 1
-connected 20
 x 17
 y 12
+connected 20
 end
 arch magic_mouth
 msg
@@ -2408,10 +2288,10 @@ worship here! The Snake god
 becomes very angry! Snakes
 pour from the pits!
 endmsg
-connected 20
-move_on 0
 x 17
 y 13
+connected 20
+move_on 0
 end
 arch marble
 x 17
@@ -2422,9 +2302,9 @@ x 17
 y 14
 end
 arch serp_priest
-carrying 10000
 x 17
 y 14
+carrying 10000
 arch robe2
 name Human skin robe
 Cha -5
@@ -2474,15 +2354,15 @@ x 17
 y 18
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 41
-type 66
 x 17
 y 18
+type 66
 end
 arch light4
 x 17
@@ -2493,75 +2373,75 @@ x 17
 y 19
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 42
-type 66
 x 17
 y 19
+type 66
 end
 arch cobblestones2
 x 17
 y 20
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 43
-type 66
 x 17
 y 20
+type 66
 end
 arch cobblestones2
 x 17
 y 21
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 44
-type 66
 x 17
 y 21
+type 66
 end
 arch cobblestones2
 x 17
 y 22
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 45
-type 66
 x 17
 y 22
+type 66
 end
 arch cobblestones2
 x 17
 y 23
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 16
 sp 46
-type 66
 x 17
 y 23
+type 66
 end
 arch marble
 x 17
@@ -2639,9 +2519,9 @@ x 17
 y 34
 end
 arch marble
-no_pass 1
 x 17
 y 35
+no_pass 1
 end
 arch marble
 x 17
@@ -2668,6 +2548,10 @@ x 17
 y 40
 end
 arch medium_stones
+x 17
+y 41
+end
+arch cobra
 x 17
 y 41
 end
@@ -2712,9 +2596,9 @@ x 17
 y 48
 end
 arch igate_open_1
-connected 10
 x 17
 y 48
+connected 10
 end
 arch large_stones
 x 17
@@ -2753,43 +2637,29 @@ x 17
 y 53
 end
 arch blocked
-msg
-endmsg
 x 17
 y 54
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 y 1
 end
 arch blocked
-msg
-endmsg
 x 18
 y 2
 end
 arch blocked
-msg
-endmsg
 x 18
 y 3
 end
 arch blocked
-msg
-endmsg
 x 18
 y 4
 end
 arch blocked
-msg
-endmsg
 x 18
 y 5
 end
@@ -2833,9 +2703,9 @@ arch altar
 name blood stained altar
 slaying potion_restoration
 food 1
-connected 20
 x 18
 y 12
+connected 20
 end
 arch marble
 x 18
@@ -2850,9 +2720,9 @@ x 18
 y 14
 end
 arch serp_priest
-carrying 10000
 x 18
 y 14
+carrying 10000
 arch robe2
 name Human skin robe
 Cha -5
@@ -2902,90 +2772,90 @@ x 18
 y 18
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 41
-type 66
 x 18
 y 18
+type 66
 end
 arch cobblestones2
 x 18
 y 19
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 42
-type 66
 x 18
 y 19
+type 66
 end
 arch cobblestones2
 x 18
 y 20
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 43
-type 66
 x 18
 y 20
+type 66
 end
 arch cobblestones2
 x 18
 y 21
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 44
-type 66
 x 18
 y 21
+type 66
 end
 arch cobblestones2
 x 18
 y 22
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 45
-type 66
 x 18
 y 22
+type 66
 end
 arch cobblestones2
 x 18
 y 23
 end
 arch pit_open
+slaying /sisters/shrine0
 msg
 You fall into a snake pit!
 endmsg
-slaying /sisters/shrine0
 hp 17
 sp 46
-type 66
 x 18
 y 23
+type 66
 end
 arch marble
 x 18
@@ -3067,9 +2937,9 @@ x 18
 y 34
 end
 arch marble
-no_pass 1
 x 18
 y 35
+no_pass 1
 end
 arch marble
 x 18
@@ -3168,14 +3038,10 @@ x 18
 y 52
 end
 arch blocked
-msg
-endmsg
 x 18
 y 53
 end
 arch blocked
-msg
-endmsg
 x 18
 y 54
 end
@@ -3199,8 +3065,6 @@ x 19
 y 4
 end
 arch blocked
-msg
-endmsg
 x 19
 y 5
 end
@@ -3242,10 +3106,10 @@ x 19
 y 10
 end
 arch igate_closed_1
-speed 0.500000
-connected 20
 x 19
 y 10
+speed 0.500000
+connected 20
 end
 arch marble
 x 19
@@ -3534,9 +3398,9 @@ y 44
 end
 arch button_lever
 name gilded lever
-connected 10
 x 19
 y 44
+connected 10
 end
 arch cobblestones2
 x 19
@@ -3579,20 +3443,14 @@ x 19
 y 49
 end
 arch blocked
-msg
-endmsg
 x 19
 y 50
 end
 arch blocked
-msg
-endmsg
 x 19
 y 51
 end
 arch blocked
-msg
-endmsg
 x 19
 y 52
 end
@@ -3601,8 +3459,6 @@ x 19
 y 53
 end
 arch blocked
-msg
-endmsg
 x 20
 y 5
 end
@@ -3817,20 +3673,14 @@ x 20
 y 29
 end
 arch blocked
-msg
-endmsg
 x 20
 y 30
 end
 arch blocked
-msg
-endmsg
 x 20
 y 31
 end
 arch blocked
-msg
-endmsg
 x 20
 y 32
 end
@@ -3863,20 +3713,14 @@ x 20
 y 39
 end
 arch blocked
-msg
-endmsg
 x 20
 y 40
 end
 arch blocked
-msg
-endmsg
 x 20
 y 41
 end
 arch blocked
-msg
-endmsg
 x 20
 y 42
 end
@@ -3905,26 +3749,18 @@ x 20
 y 45
 end
 arch blocked
-msg
-endmsg
 x 20
 y 46
 end
 arch blocked
-msg
-endmsg
 x 20
 y 47
 end
 arch blocked
-msg
-endmsg
 x 20
 y 48
 end
 arch blocked
-msg
-endmsg
 x 20
 y 49
 end
@@ -3933,26 +3769,18 @@ x 20
 y 50
 end
 arch blocked
-msg
-endmsg
 x 21
 y 6
 end
 arch blocked
-msg
-endmsg
 x 21
 y 7
 end
 arch blocked
-msg
-endmsg
 x 21
 y 8
 end
 arch blocked
-msg
-endmsg
 x 21
 y 9
 end
@@ -4102,8 +3930,6 @@ x 21
 y 29
 end
 arch blocked
-msg
-endmsg
 x 21
 y 30
 end
@@ -4112,20 +3938,14 @@ x 21
 y 42
 end
 arch blocked
-msg
-endmsg
 x 21
 y 43
 end
 arch blocked
-msg
-endmsg
 x 21
 y 44
 end
 arch blocked
-msg
-endmsg
 x 21
 y 45
 end
@@ -4134,26 +3954,18 @@ x 21
 y 46
 end
 arch blocked
-msg
-endmsg
 x 22
 y 9
 end
 arch blocked
-msg
-endmsg
 x 22
 y 10
 end
 arch blocked
-msg
-endmsg
 x 22
 y 11
 end
 arch blocked
-msg
-endmsg
 x 22
 y 12
 end
@@ -4272,14 +4084,10 @@ x 22
 y 29
 end
 arch blocked
-msg
-endmsg
 x 22
 y 30
 end
 arch blocked
-msg
-endmsg
 x 23
 end
 arch blocked
@@ -4299,74 +4107,50 @@ x 23
 y 4
 end
 arch blocked
-msg
-endmsg
 x 23
 y 5
 end
 arch blocked
-msg
-endmsg
 x 23
 y 6
 end
 arch blocked
-msg
-endmsg
 x 23
 y 7
 end
 arch blocked
-msg
-endmsg
 x 23
 y 8
 end
 arch blocked
-msg
-endmsg
 x 23
 y 9
 end
 arch blocked
-msg
-endmsg
 x 23
 y 10
 end
 arch blocked
-msg
-endmsg
 x 23
 y 11
 end
 arch blocked
-msg
-endmsg
 x 23
 y 12
 end
 arch blocked
-msg
-endmsg
 x 23
 y 13
 end
 arch blocked
-msg
-endmsg
 x 23
 y 14
 end
 arch blocked
-msg
-endmsg
 x 23
 y 15
 end
 arch blocked
-msg
-endmsg
 x 23
 y 16
 end
@@ -4467,8 +4251,6 @@ x 23
 y 29
 end
 arch blocked
-msg
-endmsg
 x 23
 y 30
 end
@@ -4477,30 +4259,32 @@ name viper generator
 other_arch cobra
 x 24
 end
+arch cobra
+x 24
+y 6
+end
 arch snake
 x 24
 y 8
 end
 arch igate_closed_1
-connected 20
 x 24
 y 9
+connected 20
 end
 arch igate_open_1
-connected 10
 x 24
 y 10
+connected 10
 end
 arch teleporter
 hp 19
 sp 19
-speed 1.000000
 x 24
 y 11
+speed 1.000000
 end
 arch blocked
-msg
-endmsg
 x 24
 y 12
 end
@@ -4579,14 +4363,10 @@ x 24
 y 27
 end
 arch blocked
-msg
-endmsg
 x 24
 y 28
 end
 arch blocked
-msg
-endmsg
 x 24
 y 29
 end
@@ -4623,50 +4403,34 @@ x 24
 y 37
 end
 arch blocked
-msg
-endmsg
 x 24
 y 38
 end
 arch blocked
-msg
-endmsg
 x 24
 y 39
 end
 arch blocked
-msg
-endmsg
 x 24
 y 40
 end
 arch blocked
-msg
-endmsg
 x 24
 y 41
 end
 arch blocked
-msg
-endmsg
 x 24
 y 42
 end
 arch blocked
-msg
-endmsg
 x 24
 y 43
 end
 arch blocked
-msg
-endmsg
 x 24
 y 44
 end
 arch blocked
-msg
-endmsg
 x 24
 y 45
 end
@@ -4679,30 +4443,32 @@ name viper generator
 other_arch cobra
 x 25
 end
+arch cobra
+x 25
+y 6
+end
 arch snake
 x 25
 y 8
 end
 arch igate_closed_1
-connected 20
 x 25
 y 9
+connected 20
 end
 arch igate_open_1
-connected 10
 x 25
 y 10
+connected 10
 end
 arch teleporter
 hp 19
 sp 21
-speed 1.000000
 x 25
 y 11
+speed 1.000000
 end
 arch blocked
-msg
-endmsg
 x 25
 y 12
 end
@@ -4767,8 +4533,6 @@ x 25
 y 27
 end
 arch blocked
-msg
-endmsg
 x 25
 y 28
 end
@@ -4779,23 +4543,27 @@ end
 arch teleporter
 hp 17
 sp 24
-speed 1.000000
 x 25
 y 31
+speed 1.000000
 end
 arch igate_open_1
-connected 10
 x 25
 y 32
+connected 10
 end
 arch igate_closed_1
-connected 20
 x 25
 y 33
+connected 20
 end
 arch snake
 x 25
 y 34
+end
+arch cobra
+x 25
+y 35
 end
 arch generate_kobold
 name viper generator
@@ -4804,37 +4572,37 @@ x 25
 y 37
 end
 arch blocked
-msg
-endmsg
 x 25
 y 38
 end
 arch blocked
-msg
-endmsg
 x 25
 y 38
 end
 arch teleporter
 hp 17
 sp 49
-speed 1.000000
 x 25
 y 39
+speed 1.000000
 end
 arch igate_open_1
-connected 10
 x 25
 y 40
+connected 10
 end
 arch igate_closed_1
-connected 20
 x 25
 y 41
+connected 20
 end
 arch snake
 x 25
 y 42
+end
+arch cobra
+x 25
+y 43
 end
 arch generate_kobold
 name viper generator
@@ -4952,56 +4720,60 @@ end
 arch teleporter
 hp 18
 sp 24
-speed 1.000000
 x 26
 y 31
+speed 1.000000
 end
 arch igate_open_1
-connected 10
 x 26
 y 32
+connected 10
 end
 arch igate_closed_1
-connected 20
 x 26
 y 33
+connected 20
 end
 arch snake
 x 26
 y 34
 end
+arch cobra
+x 26
+y 35
+end
 arch blocked
-msg
-endmsg
 x 26
 y 38
 end
 arch blocked
-msg
-endmsg
 x 26
 y 38
 end
 arch teleporter
 hp 16
 sp 49
-speed 1.000000
 x 26
 y 39
+speed 1.000000
 end
 arch igate_open_1
-connected 10
 x 26
 y 40
+connected 10
 end
 arch igate_closed_1
-connected 20
 x 26
 y 41
+connected 20
 end
 arch snake
 x 26
 y 42
+end
+arch cobra
+x 26
+y 43
 end
 arch generate_kobold
 name viper generator
@@ -5361,14 +5133,14 @@ x 32
 y 22
 end
 arch marble
-no_pass 1
 x 32
 y 23
+no_pass 1
 end
 arch marble
-no_pass 1
 x 32
 y 24
+no_pass 1
 end
 arch marble
 x 32
@@ -5536,40 +5308,4 @@ end
 arch blocked
 x 35
 y 27
-end
-arch cobra
-x 10
-y 6
-end
-arch cobra
-x 11
-y 6
-end
-arch cobra
-x 17
-y 41
-end
-arch cobra
-x 24
-y 6
-end
-arch cobra
-x 25
-y 6
-end
-arch cobra
-x 25
-y 35
-end
-arch cobra
-x 25
-y 43
-end
-arch cobra
-x 26
-y 35
-end
-arch cobra
-x 26
-y 43
 end

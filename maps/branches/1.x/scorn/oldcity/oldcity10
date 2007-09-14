@@ -1,9 +1,6 @@
 arch map
-region scornoldcity
 name <untitled>
-msg
-
-endmsg
+region scornoldcity
 width 20
 height 40
 tile_path_1 oldcity11
@@ -305,10 +302,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 1
 y 8
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -320,10 +317,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 1
 y 9
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -359,10 +356,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 1
 y 13
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -374,10 +371,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 1
 y 14
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 1
@@ -611,10 +608,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 2
 y 8
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 2
@@ -626,10 +623,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 2
 y 9
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 2
@@ -673,10 +670,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 2
 y 14
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 2
@@ -707,9 +704,9 @@ x 2
 y 18
 end
 arch scorpion
-speed_left -0.700000
 x 2
 y 18
+speed_left -0.700000
 end
 arch woodfloor
 x 2
@@ -720,9 +717,9 @@ x 2
 y 19
 end
 arch scorpion
-speed_left -0.700000
 x 2
 y 19
+speed_left -0.700000
 end
 arch woodfloor
 x 2
@@ -789,9 +786,9 @@ x 2
 y 27
 end
 arch orc
-speed_left -1.000000
 x 2
 y 27
+speed_left -1.000000
 end
 arch dungeon_floor
 x 2
@@ -921,10 +918,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 3
 y 8
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 3
@@ -936,10 +933,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 3
 y 9
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 3
@@ -959,10 +956,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 3
 y 11
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 3
@@ -994,10 +991,10 @@ hp 60
 maxhp 60
 exp 75
 wc 8
-level 3
-unaggressive 0
 x 3
 y 15
+level 3
+unaggressive 0
 end
 arch dungeon_floor
 x 3
@@ -2646,18 +2643,18 @@ x 10
 y 25
 end
 arch dog
-speed_left -0.700000
 x 10
 y 25
+speed_left -0.700000
 end
 arch grass
 x 10
 y 26
 end
 arch dog
-speed_left -0.700000
 x 10
 y 26
+speed_left -0.700000
 end
 arch grass
 x 10
@@ -2903,36 +2900,36 @@ x 11
 y 25
 end
 arch dog
-speed_left -0.700000
 x 11
 y 25
+speed_left -0.700000
 end
 arch grass
 x 11
 y 26
 end
 arch dog
-speed_left -0.700000
 x 11
 y 26
+speed_left -0.700000
 end
 arch grass
 x 11
 y 27
 end
 arch dog
-speed_left -0.700000
 x 11
 y 27
+speed_left -0.700000
 end
 arch grass
 x 11
 y 28
 end
 arch dog
-speed_left -0.700000
 x 11
 y 28
+speed_left -0.700000
 end
 arch grass
 x 11
@@ -3167,36 +3164,36 @@ x 12
 y 25
 end
 arch dog
-speed_left -0.700000
 x 12
 y 25
+speed_left -0.700000
 end
 arch grass
 x 12
 y 26
 end
 arch dog
-speed_left -0.700000
 x 12
 y 26
+speed_left -0.700000
 end
 arch grass
 x 12
 y 27
 end
 arch dog
-speed_left -0.700000
 x 12
 y 27
+speed_left -0.700000
 end
 arch grass
 x 12
 y 28
 end
 arch dog
-speed_left -0.700000
 x 12
 y 28
+speed_left -0.700000
 end
 arch sea
 name stream
@@ -3439,18 +3436,18 @@ x 13
 y 25
 end
 arch dog
-speed_left -0.700000
 x 13
 y 25
+speed_left -0.700000
 end
 arch grass
 x 13
 y 26
 end
 arch dog
-speed_left -0.700000
 x 13
 y 26
+speed_left -0.700000
 end
 arch grass
 x 13
@@ -3590,27 +3587,27 @@ x 14
 y 17
 end
 arch goblin
-speed_left -0.700000
 x 14
 y 17
+speed_left -0.700000
 end
 arch large_stones
 x 14
 y 18
 end
 arch goblin
-speed_left -0.700000
 x 14
 y 18
+speed_left -0.700000
 end
 arch large_stones
 x 14
 y 19
 end
 arch goblin
-speed_left -0.700000
 x 14
 y 19
+speed_left -0.700000
 end
 arch pstone_1
 x 14
@@ -3657,27 +3654,27 @@ x 14
 y 25
 end
 arch dog
-speed_left -0.700000
 x 14
 y 25
+speed_left -0.700000
 end
 arch grass
 x 14
 y 26
 end
 arch dog
-speed_left -0.700000
 x 14
 y 26
+speed_left -0.700000
 end
 arch grass
 x 14
 y 27
 end
 arch dog
-speed_left -0.700000
 x 14
 y 27
+speed_left -0.700000
 end
 arch sea
 name stream
@@ -3954,9 +3951,9 @@ x 15
 y 36
 end
 arch ant
-speed_left -0.160000
 x 15
 y 36
+speed_left -0.160000
 end
 arch large_stones
 x 15

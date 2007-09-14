@@ -1,15 +1,15 @@
 arch map
-region scornoldcity
 name oldcity2
+region scornoldcity
+width 20
+height 40
+enter_x 7
+enter_y 1
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan  3 10:28:29 1999
 endmsg
-width 20
-height 40
-enter_x 7
-enter_y 1
 tile_path_1 oldcity1
 tile_path_3 oldcity3
 tile_path_4 oldcity54
@@ -111,8 +111,8 @@ arch cobblestones2
 y 20
 end
 arch gnoll
-speed_left -1.100000
 y 20
+speed_left -1.100000
 end
 arch pstone_1
 y 21
@@ -311,27 +311,27 @@ x 1
 y 18
 end
 arch gnoll
-speed_left -1.100000
 x 1
 y 18
+speed_left -1.100000
 end
 arch large_stones
 x 1
 y 19
 end
 arch gnoll
-speed_left -1.100000
 x 1
 y 19
+speed_left -1.100000
 end
 arch large_stones
 x 1
 y 20
 end
 arch gnoll
-speed_left -1.100000
 x 1
 y 20
+speed_left -1.100000
 end
 arch large_stones
 x 1
@@ -566,9 +566,9 @@ x 2
 y 18
 end
 arch gnoll
-speed_left -1.100000
 x 2
 y 18
+speed_left -1.100000
 end
 arch large_stones
 x 2
@@ -579,9 +579,9 @@ x 2
 y 20
 end
 arch gnoll
-speed_left -1.100000
 x 2
 y 20
+speed_left -1.100000
 end
 arch pstone_1
 x 2
@@ -1272,10 +1272,10 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-speed_left -1.100000
-unaggressive 1
 x 5
 y 31
+speed_left -1.100000
+unaggressive 1
 end
 arch pstone_2
 x 5
@@ -1314,6 +1314,13 @@ x 5
 y 35
 end
 arch cobblestones2
+x 5
+y 36
+end
+arch cobra
+hp 300
+maxhp 300
+dam 10
 x 5
 y 36
 end
@@ -1510,10 +1517,10 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-speed_left -1.100000
-unaggressive 1
 x 6
 y 31
+speed_left -1.100000
+unaggressive 1
 end
 arch pstone_2
 x 6
@@ -1524,9 +1531,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-unaggressive 1
 x 6
 y 32
+unaggressive 1
 end
 arch pstone_2
 x 6
@@ -1705,9 +1712,9 @@ y 29
 end
 arch sea
 name stream
-speed_left -1.700000
 x 7
 y 29
+speed_left -1.700000
 end
 arch sea
 name stream
@@ -1731,9 +1738,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-unaggressive 1
 x 7
 y 33
+unaggressive 1
 end
 arch cobblestones2
 x 7
@@ -1953,9 +1960,9 @@ name Goblin Guard
 hp 70
 maxhp 70
 dam 15
-unaggressive 1
 x 8
 y 33
+unaggressive 1
 end
 arch cobblestones2
 x 8
@@ -2777,9 +2784,9 @@ x 12
 y 16
 end
 arch ant
-speed_left -0.200000
 x 12
 y 16
+speed_left -0.200000
 end
 arch pstone_1
 x 12
@@ -2790,9 +2797,9 @@ x 12
 y 18
 end
 arch ant
-speed_left -0.200000
 x 12
 y 18
+speed_left -0.200000
 end
 arch sea
 name stream
@@ -2993,9 +3000,9 @@ x 13
 y 14
 end
 arch ant
-speed_left -0.200000
 x 13
 y 14
+speed_left -0.200000
 end
 arch cobblestones
 x 13
@@ -3010,27 +3017,27 @@ x 13
 y 16
 end
 arch ant
-speed_left -0.200000
 x 13
 y 16
+speed_left -0.200000
 end
 arch large_stones
 x 13
 y 17
 end
 arch ant
-speed_left -0.200000
 x 13
 y 17
+speed_left -0.200000
 end
 arch large_stones
 x 13
 y 18
 end
 arch ant
-speed_left -0.200000
 x 13
 y 18
+speed_left -0.200000
 end
 arch large_stones
 x 13
@@ -3244,45 +3251,45 @@ x 14
 y 14
 end
 arch ant
-speed_left -0.200000
 x 14
 y 14
+speed_left -0.200000
 end
 arch large_stones
 x 14
 y 15
 end
 arch ant
-speed_left -0.200000
 x 14
 y 15
+speed_left -0.200000
 end
 arch large_stones
 x 14
 y 16
 end
 arch ant
-speed_left -0.200000
 x 14
 y 16
+speed_left -0.200000
 end
 arch large_stones
 x 14
 y 17
 end
 arch ant
-speed_left -0.200000
 x 14
 y 17
+speed_left -0.200000
 end
 arch large_stones
 x 14
 y 18
 end
 arch ant
-speed_left -0.200000
 x 14
 y 18
+speed_left -0.200000
 end
 arch large_stones
 x 14
@@ -3315,9 +3322,9 @@ x 14
 y 24
 end
 arch generate_kobold
-speed_left -0.300000
 x 14
 y 24
+speed_left -0.300000
 end
 arch pstone_3
 x 14
@@ -3494,27 +3501,27 @@ x 15
 y 14
 end
 arch ant
-speed_left -0.200000
 x 15
 y 14
+speed_left -0.200000
 end
 arch large_stones
 x 15
 y 15
 end
 arch ant
-speed_left -0.200000
 x 15
 y 15
+speed_left -0.200000
 end
 arch large_stones
 x 15
 y 16
 end
 arch ant
-speed_left -0.200000
 x 15
 y 16
+speed_left -0.200000
 end
 arch pstone_3
 x 15
@@ -3529,9 +3536,9 @@ x 15
 y 18
 end
 arch ant
-speed_left -0.200000
 x 15
 y 18
+speed_left -0.200000
 end
 arch pstone_3
 x 15
@@ -3780,9 +3787,9 @@ x 16
 y 18
 end
 arch ant
-speed_left -0.160000
 x 16
 y 18
+speed_left -0.160000
 end
 arch pstone_3
 x 16
@@ -4145,9 +4152,9 @@ x 17
 y 33
 end
 arch generate_kobold
-speed_left -0.300000
 x 17
 y 33
+speed_left -0.300000
 end
 arch large_stones
 x 17
@@ -4739,11 +4746,4 @@ end
 arch large_stones
 x 19
 y 39
-end
-arch cobra
-hp 300
-maxhp 300
-dam 10
-x 5
-y 36
 end

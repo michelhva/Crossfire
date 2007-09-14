@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
+difficulty 10
+width 8
+height 8
 msg
 Creator: bt
 Email: thomas@nomad.astro.psu.edu
 Date: Tue Dec 27 17:47:25 1994
 endmsg
-x 8
-y 8
-level 10
 end
 arch woodfloor
 end
@@ -49,8 +50,6 @@ arch wwall_2_2_1
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch woodfloor
@@ -110,8 +109,6 @@ x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
@@ -179,8 +176,6 @@ x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
@@ -248,8 +243,6 @@ x 3
 y 6
 end
 arch blocked
-msg
-endmsg
 x 3
 y 7
 end
@@ -317,8 +310,6 @@ x 4
 y 6
 end
 arch blocked
-msg
-endmsg
 x 4
 y 7
 end
@@ -386,8 +377,6 @@ x 5
 y 6
 end
 arch blocked
-msg
-endmsg
 x 5
 y 7
 end
@@ -451,8 +440,6 @@ x 6
 y 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 7
 end
@@ -511,8 +498,6 @@ x 7
 y 6
 end
 arch blocked
-msg
-endmsg
 x 7
 y 7
 end

@@ -1,9 +1,6 @@
 arch map
-region scornoldcity
 name <untitled>
-msg
-
-endmsg
+region scornoldcity
 width 40
 height 40
 tile_path_2 oldcity7
@@ -995,9 +992,9 @@ x 3
 y 19
 end
 arch ant
-speed_left -0.150000
 x 3
 y 19
+speed_left -0.150000
 end
 arch pstone_1
 x 3
@@ -1146,9 +1143,9 @@ x 4
 y 1
 end
 arch spider
-speed_left -2.100000
 x 4
 y 1
+speed_left -2.100000
 end
 arch medium_stones
 x 4
@@ -1557,9 +1554,9 @@ x 5
 y 16
 end
 arch ant
-speed_left -0.150000
 x 5
 y 16
+speed_left -0.150000
 end
 arch medium_stones
 x 5
@@ -1681,10 +1678,10 @@ arch dagger
 name Special Dagger
 face dagger_r.111
 dam 9
-value 400
-identified 1
 x 5
 y 34
+value 400
+identified 1
 end
 arch boulder
 x 5
@@ -2151,9 +2148,9 @@ x 7
 y 16
 end
 arch ant
-speed_left -0.200000
 x 7
 y 16
+speed_left -0.200000
 end
 arch pstone_1
 x 7
@@ -2418,9 +2415,9 @@ x 8
 y 14
 end
 arch ant
-speed_left -0.200000
 x 8
 y 14
+speed_left -0.200000
 end
 arch pstone_1
 x 8
@@ -2825,9 +2822,9 @@ x 9
 y 38
 end
 arch spider
-speed_left -2.100000
 x 9
 y 38
+speed_left -2.100000
 end
 arch mine2
 x 9
@@ -4647,9 +4644,9 @@ x 17
 y 19
 end
 arch ogre
-speed_left -0.900000
 x 17
 y 19
+speed_left -0.900000
 end
 arch large_stones
 x 17
@@ -4810,9 +4807,9 @@ x 18
 y 6
 end
 arch goblin
-speed_left -1.100000
 x 18
 y 6
+speed_left -1.100000
 end
 arch cobblestones
 x 18
@@ -4835,9 +4832,9 @@ x 18
 y 9
 end
 arch gnoll
-speed_left -1.100000
 x 18
 y 9
+speed_left -1.100000
 end
 arch large_stones
 x 18
@@ -4888,18 +4885,18 @@ x 18
 y 19
 end
 arch orc
-speed_left -1.600000
 x 18
 y 19
+speed_left -1.600000
 end
 arch large_stones
 x 18
 y 20
 end
 arch orc
-speed_left -1.600000
 x 18
 y 20
+speed_left -1.600000
 end
 arch dungeon_floor
 x 18
@@ -5052,18 +5049,18 @@ x 19
 y 5
 end
 arch goblin
-speed_left -1.100000
 x 19
 y 5
+speed_left -1.100000
 end
 arch large_stones
 x 19
 y 6
 end
 arch gnoll
-speed_left -1.100000
 x 19
 y 6
+speed_left -1.100000
 end
 arch cobblestones
 x 19
@@ -5162,9 +5159,9 @@ x 19
 y 21
 end
 arch orc
-speed_left -1.600000
 x 19
 y 21
+speed_left -1.600000
 end
 arch pstone_1
 x 19
@@ -5329,18 +5326,18 @@ x 20
 y 5
 end
 arch goblin
-speed_left -1.100000
 x 20
 y 5
+speed_left -1.100000
 end
 arch large_stones
 x 20
 y 6
 end
 arch gnoll
-speed_left -1.100000
 x 20
 y 6
+speed_left -1.100000
 end
 arch cobblestones
 x 20
@@ -5363,20 +5360,20 @@ x 20
 y 9
 end
 arch gnoll
-speed_left -1.100000
 x 20
 y 9
+speed_left -1.100000
 end
 arch large_stones
 x 20
 y 10
 end
 arch locked_door1
-face ldoor_blue1.111
+slaying scroll
 msg
 The door does not budge.
 endmsg
-slaying scroll
+face ldoor_blue1.111
 x 20
 y 10
 end
@@ -5429,18 +5426,18 @@ x 20
 y 19
 end
 arch elf_1
-speed_left -2.600000
 x 20
 y 19
+speed_left -2.600000
 end
 arch large_stones
 x 20
 y 20
 end
 arch orc
-speed_left -1.600000
 x 20
 y 20
+speed_left -1.600000
 end
 arch dungeon_floor
 x 20
@@ -5653,9 +5650,9 @@ x 21
 y 19
 end
 arch orc
-speed_left -1.600000
 x 21
 y 19
+speed_left -1.600000
 end
 arch pstone_1
 x 21
@@ -5670,9 +5667,9 @@ x 21
 y 21
 end
 arch elf_1
-speed_left -2.600000
 x 21
 y 21
+speed_left -2.600000
 end
 arch pstone_1
 x 21
@@ -5873,9 +5870,9 @@ x 22
 y 21
 end
 arch elf_1
-speed_left -2.600000
 x 22
 y 21
+speed_left -2.600000
 end
 arch pstone_1
 x 22
@@ -6612,18 +6609,18 @@ x 25
 y 34
 end
 arch madman
-speed_left -0.700000
 x 25
 y 34
+speed_left -0.700000
 end
 arch medium_stones
 x 25
 y 35
 end
 arch madman
-speed_left -0.700000
 x 25
 y 35
+speed_left -0.700000
 end
 arch medium_stones
 x 25
@@ -6852,9 +6849,9 @@ x 26
 y 33
 end
 arch madman
-speed_left -0.700000
 x 26
 y 33
+speed_left -0.700000
 end
 arch medium_stones
 x 26
@@ -8082,9 +8079,9 @@ x 32
 y 8
 end
 arch guard
-speed_left -0.700000
 x 32
 y 8
+speed_left -0.700000
 end
 arch large_stones
 x 32
@@ -8444,9 +8441,9 @@ x 33
 y 33
 end
 arch small_troll
-speed_left -0.700000
 x 33
 y 33
+speed_left -0.700000
 end
 arch cobblestones2
 x 33
@@ -8691,9 +8688,9 @@ x 34
 y 34
 end
 arch small_troll
-speed_left -0.700000
 x 34
 y 34
+speed_left -0.700000
 end
 arch medium_stones
 x 34
@@ -9306,8 +9303,8 @@ x 37
 y 34
 end
 arch key2
-face key_blue.111
 slaying scroll
+face key_blue.111
 x 37
 y 34
 end

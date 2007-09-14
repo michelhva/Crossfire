@@ -1,18 +1,18 @@
 arch map
 name Scorn Sale shop
 region scorn
+shopitems *:10
+shopmax 1500
+width 21
+height 20
+enter_x 9
+enter_y 16
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
 Date:    7/1/2004
 endmsg
-width 21
-height 20
-enter_x 9
-enter_y 16
 outdoor 1
-shopitems *:10
-shopmax 1500
 end
 arch grass
 end
@@ -234,9 +234,9 @@ x 2
 y 1
 end
 arch dwall_0
-glow_radius 4
 x 2
 y 1
+glow_radius 4
 end
 arch shop_empty
 x 2
@@ -244,10 +244,10 @@ y 2
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 2
 y 2
+glow_radius 2
+no_pass 1
 end
 arch shop_empty
 x 2
@@ -303,19 +303,19 @@ y 15
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 2
 y 15
+glow_radius 2
+no_pass 1
 end
 arch shop_empty
 x 2
 y 16
 end
 arch dwall_0
-glow_radius 4
 x 2
 y 16
+glow_radius 4
 end
 arch woodfloor
 x 2
@@ -350,10 +350,10 @@ y 1
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 3
 y 1
+glow_radius 2
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -472,10 +472,10 @@ y 16
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 3
 y 16
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 3
@@ -620,9 +620,9 @@ x 5
 y 4
 end
 arch firepot
-glow_radius 4
 x 5
 y 4
+glow_radius 4
 end
 arch shop_empty
 x 5
@@ -753,13 +753,13 @@ y 5
 end
 arch locked_door2
 name Employees Only
+slaying Oorgh key
 msg
 You need the Oorgh key to open this door.
 endmsg
-blocksview 1
-slaying Oorgh key
 x 6
 y 5
+blocksview 1
 end
 arch woodfloor
 x 6
@@ -767,13 +767,13 @@ y 6
 end
 arch locked_door2
 name Employees Only
+slaying Oorgh key
 msg
 You need the Oorgh key to open this door.
 endmsg
-blocksview 1
-slaying Oorgh key
 x 6
 y 6
+blocksview 1
 end
 arch woodfloor
 x 6
@@ -796,9 +796,9 @@ x 6
 y 9
 end
 arch firepot
-glow_radius 4
 x 6
 y 9
+glow_radius 4
 end
 arch shop_empty
 x 6
@@ -877,10 +877,10 @@ y 4
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 7
 y 4
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 7
@@ -932,9 +932,9 @@ x 7
 y 13
 end
 arch firepot
-glow_radius 4
 x 7
 y 13
+glow_radius 4
 end
 arch shop_empty
 x 7
@@ -992,9 +992,9 @@ y 4
 end
 arch bench_1_4
 name Service Counter
-no_pass 1
 x 8
 y 4
+no_pass 1
 end
 arch woodfloor
 x 8
@@ -1010,10 +1010,10 @@ y 7
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 8
 y 7
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 8
@@ -1133,9 +1133,9 @@ y 4
 end
 arch bench_2_1_2
 name Service Counter
-no_pass 1
 x 9
 y 4
+no_pass 1
 end
 arch woodfloor
 x 9
@@ -1236,9 +1236,9 @@ y 17
 end
 arch palm
 name House Plant
-glow_radius 2
 x 9
 y 17
+glow_radius 2
 end
 arch woodfloor
 x 9
@@ -1298,9 +1298,9 @@ y 4
 end
 arch bench_2_1_2
 name Service Counter
-no_pass 1
 x 10
 y 4
+no_pass 1
 end
 arch woodfloor
 x 10
@@ -1309,6 +1309,40 @@ end
 arch woodfloor
 x 10
 y 6
+end
+arch titan
+name busy store manager
+msg
+@match *
+If you don't leave me alone I will kill you!
+endmsg
+x 10
+y 6
+resist_physical 95
+resist_magic 100
+resist_fire 75
+resist_cold 75
+resist_confusion 75
+resist_acid 75
+resist_drain 75
+resist_weaponmagic 100
+resist_ghosthit 75
+resist_poison 75
+resist_slow 75
+resist_paralyze 75
+resist_turn_undead 75
+resist_deplete 75
+resist_death 75
+resist_chaos 75
+resist_godpower 75
+resist_holyword 75
+resist_blind 75
+friendly 1
+hitback 1
+unaggressive 1
+reflect_missile 1
+sleep 0
+stand_still 1
 end
 arch woodfloor
 x 10
@@ -1399,10 +1433,10 @@ x 10
 y 17
 end
 arch oakdoor
+slaying /world/world_105_115
 msg
 Thanks for your business!
 endmsg
-slaying /world/world_105_115
 hp 1
 sp 32
 x 10
@@ -1448,9 +1482,9 @@ y 4
 end
 arch bench_2_1_2
 name Service Counter
-no_pass 1
 x 11
 y 4
+no_pass 1
 end
 arch woodfloor
 x 11
@@ -1551,9 +1585,9 @@ y 17
 end
 arch palm
 name House Plant
-glow_radius 2
 x 11
 y 17
+glow_radius 2
 end
 arch woodfloor
 x 11
@@ -1595,9 +1629,9 @@ y 4
 end
 arch bench_1_3
 name Service Counter
-no_pass 1
 x 12
 y 4
+no_pass 1
 end
 arch woodfloor
 x 12
@@ -1613,10 +1647,10 @@ y 7
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 12
 y 7
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 12
@@ -1653,9 +1687,9 @@ items for which you wish to be paid.
 -=<>=-
 The Management
 endmsg
-move_on walk fly_low
 x 12
 y 11
+move_on walk fly_low
 end
 arch dungeon_magic
 x 12
@@ -1746,10 +1780,10 @@ y 4
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 13
 y 4
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 13
@@ -1801,9 +1835,9 @@ x 13
 y 13
 end
 arch firepot
-glow_radius 4
 x 13
 y 13
+glow_radius 4
 end
 arch shop_empty
 x 13
@@ -1889,13 +1923,13 @@ y 5
 end
 arch locked_door2
 name Employees Only
+slaying Oorgh key
 msg
 You need the Oorgh key to open this door.
 endmsg
-blocksview 1
-slaying Oorgh key
 x 14
 y 5
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -1903,13 +1937,13 @@ y 6
 end
 arch locked_door2
 name Employees Only
+slaying Oorgh key
 msg
 You need the Oorgh key to open this door.
 endmsg
-blocksview 1
-slaying Oorgh key
 x 14
 y 6
+blocksview 1
 end
 arch woodfloor
 x 14
@@ -1932,9 +1966,9 @@ x 14
 y 9
 end
 arch firepot
-glow_radius 4
 x 14
 y 9
+glow_radius 4
 end
 arch shop_empty
 x 14
@@ -2016,9 +2050,9 @@ x 15
 y 4
 end
 arch firepot
-glow_radius 4
 x 15
 y 4
+glow_radius 4
 end
 arch shop_empty
 x 15
@@ -2201,10 +2235,10 @@ y 1
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 17
 y 1
+glow_radius 2
+no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -2323,10 +2357,10 @@ y 16
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 17
 y 16
+glow_radius 2
+no_pass 1
 end
 arch woodfloor
 x 17
@@ -2355,9 +2389,9 @@ x 18
 y 1
 end
 arch dwall_0
-glow_radius 4
 x 18
 y 1
+glow_radius 4
 end
 arch shop_empty
 x 18
@@ -2365,10 +2399,10 @@ y 2
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 18
 y 2
+glow_radius 2
+no_pass 1
 end
 arch shop_empty
 x 18
@@ -2424,19 +2458,19 @@ y 15
 end
 arch palm
 name House Plant
-glow_radius 2
-no_pass 1
 x 18
 y 15
+glow_radius 2
+no_pass 1
 end
 arch shop_empty
 x 18
 y 16
 end
 arch dwall_0
-glow_radius 4
 x 18
 y 16
+glow_radius 4
 end
 arch woodfloor
 x 18
@@ -2687,38 +2721,4 @@ end
 arch cobblestones2
 x 20
 y 19
-end
-arch titan
-name busy store manager
-msg
-@match *
-If you don't leave me alone I will kill you!
-endmsg
-reflect_missile 1
-hitback 1
-unaggressive 1
-friendly 1
-stand_still 1
-sleep 0
-resist_physical 95
-resist_magic 100
-resist_fire 75
-resist_cold 75
-resist_confusion 75
-resist_acid 75
-resist_drain 75
-resist_weaponmagic 100
-resist_ghosthit 75
-resist_poison 75
-resist_slow 75
-resist_paralyze 75
-resist_deplete 75
-resist_turn_undead 75
-resist_death 75
-resist_chaos 75
-resist_blind 75
-resist_holyword 75
-resist_godpower 75
-x 10
-y 6
 end

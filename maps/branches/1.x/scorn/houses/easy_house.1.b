@@ -1,13 +1,13 @@
 arch map
 name Easy House Top
 region scorn
+darkness 2
+width 16
+height 16
 msg
 Creator: Bort
 Date:    5/26/2006
 endmsg
-width 16
-height 16
-darkness 2
 end
 arch woodfloor2
 end
@@ -511,14 +511,14 @@ msg
 @match *
 Ogarth kil yu now!
 endmsg
-level 6
-exp 100
-wc 10
 hp 25
 maxhp 25
+exp 100
+wc 10
 ac 15
 x 5
 y 6
+level 6
 arch random_wealth
 end
 arch random_shield

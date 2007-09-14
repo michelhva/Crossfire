@@ -1,14 +1,13 @@
 arch map
 name temple
+width 30
+height 30
+enter_x 15
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Feb  3 18:14:20 1999
 endmsg
-hp 15
-sp 0
-x 30
-y 30
 end
 arch grass
 end
@@ -1021,6 +1020,13 @@ arch magic_banned
 x 5
 y 9
 end
+arch behemoth
+name Guardian of the West
+hp 8000
+x 5
+y 9
+unaggressive 1
+end
 arch grass
 x 5
 y 10
@@ -1352,6 +1358,13 @@ arch magic_banned
 x 6
 y 20
 end
+arch behemoth
+name Guardian of the South
+hp 8000
+x 6
+y 20
+unaggressive 1
+end
 arch grass
 x 6
 y 21
@@ -1968,6 +1981,25 @@ end
 arch magic_banned
 x 9
 y 15
+end
+arch behemoth
+name Guardian of the North
+msg
+@match guardians
+We protect the temple.
+@match temple
+For the giver of life... Gaea
+@match Gaea|gaea
+Pray to her and she will reveal her
+great mysteries.
+@match *
+We are the guardians.
+Do not stray beyond the pillars.
+endmsg
+hp 8000
+x 9
+y 15
+unaggressive 1
 end
 arch flagstone
 x 9
@@ -4318,6 +4350,10 @@ arch magic_banned
 x 19
 y 6
 end
+arch shadowtiger
+x 19
+y 6
+end
 arch grass
 x 19
 y 7
@@ -5741,6 +5777,30 @@ arch magic_banned
 x 24
 y 26
 end
+arch sphinx
+name Wise sphinx
+msg
+@match ent|Ent
+You know much of nature. The ents are
+one of the last strongholds of reason
+and understanding with nature.
+@match nature
+They meet even now to discuss the fate
+of the forests. Some consider mankind
+the enemy. You may want to Persuade
+them otherwise.
+@match Persuade|persuade
+The password to enter the sacred grove
+is "unicorn".
+@match *
+What has wisdom as deep as the roots
+of an ancient tree; the strength of
+the oaks; the grace of a willow; and
+yet is not truly a tree?
+endmsg
+x 24
+y 26
+end
 arch grass
 x 24
 y 27
@@ -5891,6 +5951,13 @@ end
 arch magic_banned
 x 25
 y 17
+end
+arch behemoth
+name Guardian of the East
+hp 8000
+x 25
+y 17
+unaggressive 1
 end
 arch grass
 x 25
@@ -6755,72 +6822,4 @@ end
 arch grass
 x 29
 y 29
-end
-arch behemoth
-name Guardian of the West
-hp 8000
-x 5
-y 9
-unaggressive 1
-end
-arch behemoth
-name Guardian of the South
-hp 8000
-x 6
-y 20
-unaggressive 1
-end
-arch behemoth
-name Guardian of the North
-msg
-@match guardians
-We protect the temple.
-@match temple
-For the giver of life... Gaea
-@match Gaea|gaea
-Pray to her and she will reveal her
-great mysteries.
-@match *
-We are the guardians.
-Do not stray beyond the pillars.
-endmsg
-hp 8000
-x 9
-y 15
-unaggressive 1
-end
-arch shadowtiger
-x 19
-y 6
-end
-arch sphinx
-name Wise sphinx
-msg
-@match ent|Ent
-You know much of nature. The ents are
-one of the last strongholds of reason
-and understanding with nature.
-@match nature
-They meet even now to discuss the fate
-of the forests. Some consider mankind
-the enemy. You may want to Persuade
-them otherwise.
-@match Persuade|persuade
-The password to enter the sacred grove
-is "unicorn".
-@match *
-What has wisdom as deep as the roots
-of an ancient tree; the strength of
-the oaks; the grace of a willow; and
-yet is not truly a tree?
-endmsg
-x 24
-y 26
-end
-arch behemoth
-name Guardian of the East
-hp 8000
-x 25
-y 17
-unaggressive 1
 end

@@ -1,13 +1,13 @@
 arch map
 name Easy House
 region scorn
+darkness 3
+width 20
+height 20
 msg
 Creator: Bort
 Date:    5/26/2006
 endmsg
-width 20
-height 20
-darkness 3
 end
 arch grass
 end
@@ -775,9 +775,9 @@ x 6
 y 9
 end
 arch door_look_1
-material 16
 x 6
 y 9
+material 16
 end
 arch woodfloor2
 x 6
@@ -1187,9 +1187,9 @@ x 9
 y 10
 end
 arch fireplace
-glow_radius 4
 x 9
 y 10
+glow_radius 4
 end
 arch woodfloor2
 x 9
@@ -1241,13 +1241,13 @@ y 18
 end
 arch chest_2
 name mat
-face mat.111
 name_pl mats
-weight 150
-no_pick 1
-container 10
+face mat.111
 x 9
 y 18
+weight 150
+container 10
+no_pick 1
 arch key
 end
 end
@@ -1314,9 +1314,9 @@ y 6
 end
 arch brain
 name rotting brain
-value 1
 x 10
 y 6
+value 1
 end
 arch woodfloor2
 x 10
@@ -1345,9 +1345,9 @@ x 10
 y 10
 end
 arch fireplace
-glow_radius 4
 x 10
 y 10
+glow_radius 4
 end
 arch woodfloor2
 x 10
@@ -1386,10 +1386,10 @@ x 10
 y 18
 end
 arch mat
-nrof 0
-no_pick 1
 x 10
 y 18
+nrof 0
+no_pick 1
 end
 arch invis_exit
 slaying /world/world_105_116
@@ -1540,9 +1540,9 @@ y 18
 end
 arch mailbox
 name Mr. & Mrs. G's
-no_pick 1
 x 11
 y 18
+no_pick 1
 arch letter
 msg
 This house is infested with orcs and goblins.
@@ -1737,9 +1737,9 @@ x 13
 y 9
 end
 arch door_look_1
-material 16
 x 13
 y 9
+material 16
 end
 arch woodfloor2
 x 13

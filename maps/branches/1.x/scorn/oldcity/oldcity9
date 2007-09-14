@@ -1,9 +1,6 @@
 arch map
-region scornoldcity
 name <untitled>
-msg
-
-endmsg
+region scornoldcity
 width 40
 height 20
 tile_path_1 oldcity12
@@ -636,9 +633,9 @@ x 5
 y 7
 end
 arch dog
-speed_left -0.500000
 x 5
 y 7
+speed_left -0.500000
 end
 arch pstone_4
 x 5
@@ -653,9 +650,9 @@ x 5
 y 9
 end
 arch dog
-speed_left -0.500000
 x 5
 y 9
+speed_left -0.500000
 end
 arch medium_stones
 x 5
@@ -764,9 +761,9 @@ x 6
 y 7
 end
 arch dog
-speed_left -0.500000
 x 6
 y 7
+speed_left -0.500000
 end
 arch pstone_4
 x 6
@@ -1103,18 +1100,18 @@ x 9
 y 5
 end
 arch dog
-speed_left -0.500000
 x 9
 y 5
+speed_left -0.500000
 end
 arch pstone_4
 x 9
 y 6
 end
 arch dog
-speed_left -0.500000
 x 9
 y 6
+speed_left -0.500000
 end
 arch pstone_4
 x 9
@@ -2175,9 +2172,9 @@ x 18
 y 7
 end
 arch scorpion
-speed_left -0.500000
 x 18
 y 7
+speed_left -0.500000
 end
 arch medium_stones
 x 18
@@ -3033,9 +3030,9 @@ x 26
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 26
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 26
@@ -3141,18 +3138,18 @@ x 27
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 27
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 27
 y 6
 end
 arch gnoll
-speed_left -0.500000
 x 27
 y 6
+speed_left -0.500000
 end
 arch large_stones
 x 27
@@ -3175,18 +3172,18 @@ x 27
 y 10
 end
 arch scorpion
-speed_left -0.500000
 x 27
 y 10
+speed_left -0.500000
 end
 arch large_stones
 x 27
 y 11
 end
 arch scorpion
-speed_left -0.500000
 x 27
 y 11
+speed_left -0.500000
 end
 arch large_stones
 x 27
@@ -3244,27 +3241,27 @@ x 28
 y 4
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 4
+speed_left -0.500000
 end
 arch pstone_4
 x 28
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 28
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 28
 y 6
 end
 arch gnoll
-speed_left -0.500000
 x 28
 y 6
+speed_left -0.500000
 end
 arch large_stones
 x 28
@@ -3382,18 +3379,18 @@ x 29
 y 4
 end
 arch gnoll
-speed_left -0.500000
 x 29
 y 4
+speed_left -0.500000
 end
 arch pstone_4
 x 29
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 29
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 29
@@ -3428,9 +3425,9 @@ x 29
 y 10
 end
 arch scorpion
-speed_left -0.500000
 x 29
 y 10
+speed_left -0.500000
 end
 arch large_stones
 x 29
@@ -3441,9 +3438,9 @@ x 29
 y 11
 end
 arch scorpion
-speed_left -0.500000
 x 29
 y 11
+speed_left -0.500000
 end
 arch large_stones
 x 29
@@ -3505,18 +3502,18 @@ x 30
 y 4
 end
 arch gnoll
-speed_left -0.500000
 x 30
 y 4
+speed_left -0.500000
 end
 arch pstone_4
 x 30
 y 5
 end
 arch gnoll
-speed_left -0.300000
 x 30
 y 5
+speed_left -0.300000
 end
 arch large_stones
 x 30
@@ -3618,9 +3615,9 @@ x 31
 y 4
 end
 arch gnoll
-speed_left -0.500000
 x 31
 y 4
+speed_left -0.500000
 end
 arch large_stones
 x 31
@@ -3832,9 +3829,9 @@ x 33
 y 8
 end
 arch generate_bee
-speed_left -0.180000
 x 33
 y 8
+speed_left -0.180000
 end
 arch large_stones
 x 33

@@ -1,12 +1,13 @@
 arch map
-region scorn
 name porter_house
+region scorn
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 23:09:52 1994
 endmsg
-x 25
 end
 arch dirtfloor
 end

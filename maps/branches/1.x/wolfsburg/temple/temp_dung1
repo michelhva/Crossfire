@@ -1,12 +1,10 @@
 arch map
+name <unnamed>
 region wolfsburg
-msg
-
-endmsg
-hp 1
-sp 1
-x 46
-y 37
+width 46
+height 37
+enter_x 1
+enter_y 1
 end
 arch small_stones
 end
@@ -9664,6 +9662,27 @@ arch small_stones
 x 43
 y 15
 end
+arch sphinx
+msg
+@match yes|Yes|riddle|Riddle
+     Sometimes brass or gold,
+     for each a hole and a ring,
+     turning, ever turning,
+     waiting for an opening.
+  What is it?
+@match Key|key
+You have guessed correctly.
+The first object you seek is in the
+Volcano.  The first word you seek is
+TIMELESSNESS
+@match Name|name
+I am the Sphinx
+@match *
+Have you come for a riddle?
+endmsg
+x 43
+y 15
+end
 arch small_stones
 x 43
 y 16
@@ -9770,6 +9789,29 @@ x 43
 y 30
 end
 arch small_stones
+x 43
+y 31
+end
+arch ent
+msg
+@match hi|hello|Hi|Hello
+Hello, Sapling
+@match name|Name
+I am Arborius the King of the Ents
+@match king|King|ents|Ents
+I rule the Ents, the living trees.
+We live in a forrest which is on a
+distant island.
+@match island|Island
+There is a longboat in Wolfsburg that
+goes there regularly.
+@match autumn|Autumn
+The second object is in my forest
+kingdom.  The second word is TWILIGHT
+@match *
+Be careful of my roots, sapling.
+
+endmsg
 x 43
 y 31
 end
@@ -10289,48 +10331,4 @@ end
 arch rough_wall_2_2_4
 x 45
 y 36
-end
-arch sphinx
-msg
-@match yes|Yes|riddle|Riddle
-     Sometimes brass or gold,
-     for each a hole and a ring,
-     turning, ever turning,
-     waiting for an opening.
-  What is it?
-@match Key|key
-You have guessed correctly.
-The first object you seek is in the
-Volcano.  The first word you seek is
-TIMELESSNESS
-@match Name|name
-I am the Sphinx
-@match *
-Have you come for a riddle?
-endmsg
-x 43
-y 15
-end
-arch ent
-msg
-@match hi|hello|Hi|Hello
-Hello, Sapling
-@match name|Name
-I am Arborius the King of the Ents
-@match king|King|ents|Ents
-I rule the Ents, the living trees.
-We live in a forrest which is on a
-distant island.
-@match island|Island
-There is a longboat in Wolfsburg that
-goes there regularly.
-@match autumn|Autumn
-The second object is in my forest
-kingdom.  The second word is TWILIGHT
-@match *
-Be careful of my roots, sapling.
-
-endmsg
-x 43
-y 31
 end
