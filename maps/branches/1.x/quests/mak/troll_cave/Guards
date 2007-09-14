@@ -1,17 +1,23 @@
 arch map
 name Guards
+difficulty 7
+width 14
+height 12
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Wed Apr 12 22:38:04 2000
 endmsg
-width 14
-height 12
-difficulty 7
 outdoor 1
 end
 arch mountain
 end
+arch mountain_2
+y 1
+end
+arch mountain_2
+y 3
+end
 arch large_stones
 y 5
 end
@@ -76,6 +82,13 @@ end
 arch pstone_2
 x 1
 y 11
+end
+arch mountain_2
+x 2
+end
+arch mountain_2
+x 2
+y 2
 end
 arch large_stones
 x 2
@@ -157,6 +170,14 @@ y 11
 end
 arch mountain
 x 4
+end
+arch mountain_2
+x 4
+y 1
+end
+arch mountain_2
+x 4
+y 3
 end
 arch large_stones
 x 4
@@ -210,9 +231,9 @@ y 7
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 5
 y 7
+unaggressive 1
 end
 arch small_stones
 x 5
@@ -236,6 +257,13 @@ end
 arch pstone_2
 x 5
 y 11
+end
+arch mountain_2
+x 6
+end
+arch mountain_2
+x 6
+y 2
 end
 arch large_stones
 x 6
@@ -258,18 +286,18 @@ y 6
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 6
 y 6
+unaggressive 1
 end
 arch small_stones
 x 6
 y 7
 end
 arch campfire
-glow_radius 4
 x 6
 y 7
+glow_radius 4
 end
 arch small_stones
 x 6
@@ -277,9 +305,9 @@ y 8
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 6
 y 8
+unaggressive 1
 end
 arch small_stones
 x 6
@@ -318,9 +346,9 @@ y 7
 end
 arch small_troll
 name troll guard
-unaggressive 1
 x 7
 y 7
+unaggressive 1
 end
 arch small_stones
 x 7
@@ -347,6 +375,14 @@ y 11
 end
 arch mountain
 x 8
+end
+arch mountain_2
+x 8
+y 1
+end
+arch mountain_2
+x 8
+y 3
 end
 arch large_stones
 x 8
@@ -421,6 +457,13 @@ arch small_stones
 x 9
 y 11
 end
+arch mountain_2
+x 10
+end
+arch mountain_2
+x 10
+y 2
+end
 arch large_stones
 x 10
 y 4
@@ -502,6 +545,14 @@ end
 arch mountain
 x 12
 end
+arch mountain_2
+x 12
+y 1
+end
+arch mountain_2
+x 12
+y 3
+end
 arch large_stones
 x 12
 y 5
@@ -574,55 +625,4 @@ end
 arch small_stones
 x 13
 y 11
-end
-arch mountain_2
-y 1
-end
-arch mountain_2
-y 3
-end
-arch mountain_2
-x 2
-end
-arch mountain_2
-x 2
-y 2
-end
-arch mountain_2
-x 4
-y 1
-end
-arch mountain_2
-x 4
-y 3
-end
-arch mountain_2
-x 6
-end
-arch mountain_2
-x 6
-y 2
-end
-arch mountain_2
-x 8
-y 1
-end
-arch mountain_2
-x 8
-y 3
-end
-arch mountain_2
-x 10
-end
-arch mountain_2
-x 10
-y 2
-end
-arch mountain_2
-x 12
-y 1
-end
-arch mountain_2
-x 12
-y 3
 end

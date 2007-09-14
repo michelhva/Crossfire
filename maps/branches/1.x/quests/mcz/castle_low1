@@ -1,11 +1,12 @@
 arch map
 name Dungeon or Ra-Gar
+width 16
+height 30
 msg
 Creator: 
 Email: 
 Date: Tue Oct 19 14:08:48 1993
 endmsg
-y 30
 end
 arch small_stones
 end
@@ -369,6 +370,10 @@ arch small_stones
 x 1
 y 25
 end
+arch dragon
+x 1
+y 25
+end
 arch small_stones
 x 1
 y 26
@@ -547,6 +552,10 @@ speed 0.500000
 connected 100
 end
 arch small_stones
+x 2
+y 24
+end
+arch dragon
 x 2
 y 24
 end
@@ -1119,6 +1128,10 @@ arch small_stones
 x 5
 y 27
 end
+arch dragon
+x 5
+y 27
+end
 arch small_stones
 x 5
 y 28
@@ -1641,6 +1654,10 @@ arch small_stones
 x 8
 y 25
 end
+arch dragon
+x 8
+y 25
+end
 arch small_stones
 x 8
 y 26
@@ -1828,6 +1845,10 @@ x 9
 y 25
 end
 arch small_stones
+x 9
+y 26
+end
+arch big_dragon
 x 9
 y 26
 end
@@ -3086,24 +3107,4 @@ end
 arch rough_wall_2_2_4
 x 15
 y 29
-end
-arch dragon
-x 1
-y 25
-end
-arch dragon
-x 2
-y 24
-end
-arch dragon
-x 5
-y 27
-end
-arch dragon
-x 8
-y 25
-end
-arch big_dragon
-x 9
-y 26
 end

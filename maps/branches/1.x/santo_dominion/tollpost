@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region santodominion
-x 24
-y 22
+width 24
+height 22
 end
 arch dirtfloor
 end
@@ -836,8 +837,8 @@ end
 arch button_lever
 x 6
 y 13
-protected 3
 connected 3
+protected 3
 end
 arch dirtfloor
 x 6
@@ -960,8 +961,8 @@ end
 arch grate_closed_2
 x 7
 y 10
-protected 3
 connected 3
+protected 3
 end
 arch dirtfloor
 x 7
@@ -970,8 +971,8 @@ end
 arch grate_closed_2
 x 7
 y 11
-protected 3
 connected 3
+protected 3
 end
 arch dirtfloor
 x 7
@@ -1094,8 +1095,8 @@ end
 arch button_lever
 x 8
 y 6
-protected 2
 connected 2
+protected 2
 end
 arch dirtfloor
 x 8
@@ -1112,8 +1113,8 @@ end
 arch button_lever
 x 8
 y 8
-protected 2
 connected 2
+protected 2
 end
 arch generate_ogre
 x 8
@@ -1158,8 +1159,8 @@ end
 arch button_lever
 x 8
 y 13
-protected 3
 connected 3
+protected 3
 end
 arch ogre
 x 8
@@ -1396,8 +1397,8 @@ end
 arch grate_closed_1
 x 10
 y 7
-protected 2
 connected 2
+protected 2
 end
 arch dirtfloor
 x 10
@@ -1454,8 +1455,8 @@ end
 arch grate_closed_1
 x 10
 y 14
-protected 96
 connected 96
+protected 96
 end
 arch dirtfloor
 x 10
@@ -1533,8 +1534,8 @@ end
 arch grate_closed_1
 x 11
 y 7
-protected 2
 connected 2
+protected 2
 end
 arch dirtfloor
 x 11
@@ -1599,8 +1600,8 @@ end
 arch grate_closed_1
 x 11
 y 14
-protected 96
 connected 96
+protected 96
 end
 arch dirtfloor
 x 11
@@ -1836,8 +1837,8 @@ end
 arch button_lever
 x 13
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch generate_ogre
 x 13
@@ -1882,8 +1883,8 @@ end
 arch button_lever
 x 13
 y 13
-protected 96
 connected 96
+protected 96
 end
 arch ogre
 x 13
@@ -1904,8 +1905,8 @@ end
 arch button_lever
 x 13
 y 15
-protected 96
 connected 96
+protected 96
 end
 arch dirtfloor
 x 13
@@ -2008,8 +2009,8 @@ end
 arch grate_closed_2
 x 14
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch dirtfloor
 x 14
@@ -2018,8 +2019,8 @@ end
 arch grate_closed_2
 x 14
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch dirtfloor
 x 14
@@ -2150,8 +2151,8 @@ end
 arch button_lever
 x 15
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch dirtfloor
 x 15
@@ -3141,8 +3142,8 @@ arch button_small
 name 20 - luck
 x 23
 y 3
-protected 20
 connected 20
+protected 20
 end
 arch blocked
 x 23
@@ -3154,8 +3155,8 @@ hp 23
 sp 8
 x 23
 y 5
-protected 20
 connected 20
+protected 20
 end
 arch ogre
 name ogre with heaps of gold
@@ -3179,8 +3180,8 @@ hp 6
 sp 3
 x 23
 y 7
-protected 20
 connected 20
+protected 20
 end
 arch pit_closed
 name 20
@@ -3188,8 +3189,8 @@ hp 18
 sp 13
 x 23
 y 8
-protected 20
 connected 20
+protected 20
 end
 arch pit_closed
 name 20
@@ -3197,8 +3198,8 @@ hp 3
 sp 17
 x 23
 y 9
-protected 20
 connected 20
+protected 20
 end
 arch blocked
 x 23

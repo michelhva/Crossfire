@@ -1,12 +1,12 @@
 arch map
 name fired lair
+width 29
+height 31
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Thu Apr 13 15:48:22 2000
 endmsg
-x 29
-y 31
 end
 arch blocked
 end
@@ -967,6 +967,10 @@ x 5
 y 7
 end
 arch pstone_2
+x 5
+y 8
+end
+arch big_dragon
 x 5
 y 8
 end
@@ -1360,6 +1364,10 @@ arch pstone_2
 x 7
 y 24
 end
+arch big_dragon
+x 7
+y 24
+end
 arch pstone_2
 x 7
 y 25
@@ -2032,6 +2040,10 @@ x 12
 y 5
 end
 arch pstone_2
+x 12
+y 6
+end
+arch big_dragon
 x 12
 y 6
 end
@@ -2607,6 +2619,10 @@ arch pstone_2
 x 15
 y 23
 end
+arch big_dragon
+x 15
+y 23
+end
 arch pstone_2
 x 15
 y 24
@@ -2985,6 +3001,10 @@ x 18
 y 10
 end
 arch pstone_2
+x 18
+y 11
+end
+arch big_dragon
 x 18
 y 11
 end
@@ -3567,6 +3587,26 @@ end
 arch pstone_2
 x 22
 y 6
+end
+arch big_dragon
+name elderly red dragon
+Con 20
+Wis 25
+Pow 35
+hp 5500
+maxhp 5500
+sp 80
+maxsp 80
+exp 150000
+wc -26
+ac -14
+x 22
+y 6
+level 22
+carrying 100
+arch key2
+slaying firedkey
+end
 end
 arch pstone_2
 x 22
@@ -4008,6 +4048,10 @@ x 24
 y 26
 end
 arch pstone_2
+x 24
+y 27
+end
+arch big_dragon
 x 24
 y 27
 end
@@ -4859,48 +4903,4 @@ end
 arch blocked
 x 28
 y 30
-end
-arch big_dragon
-x 5
-y 8
-end
-arch big_dragon
-x 7
-y 24
-end
-arch big_dragon
-x 12
-y 6
-end
-arch big_dragon
-x 15
-y 23
-end
-arch big_dragon
-x 18
-y 11
-end
-arch big_dragon
-name elderly red dragon
-Con 20
-Wis 25
-Pow 35
-hp 5500
-maxhp 5500
-sp 80
-maxsp 80
-exp 150000
-wc -26
-ac -14
-x 22
-y 6
-level 22
-carrying 100
-arch key2
-slaying firedkey
-end
-end
-arch big_dragon
-x 24
-y 27
 end

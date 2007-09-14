@@ -1,4 +1,7 @@
 arch map
+name <unnamed>
+width 16
+height 16
 msg
 Creator: peter mardahl
 Email: peterm@soda.berkeley.edu
@@ -144,7 +147,7 @@ master, but he's a monster.  There
 is worse than being a traitor
 @match traitor|Traitor|betray
 Yes, I betrayed my master.  Who wouldnt
-if they knew his evil scheme? 
+if they knew his evil scheme?
 @match scheme|Scheme
 He tries to make himself immortal,
 but he's lost his soul in his
@@ -1118,6 +1121,11 @@ arch dungeon_floor
 x 10
 y 4
 end
+arch giant
+name Master Torturer
+x 10
+y 4
+end
 arch dungeon_floor
 x 10
 y 5
@@ -1746,9 +1754,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-name Master Torturer
-x 10
-y 4
 end

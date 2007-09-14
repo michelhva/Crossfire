@@ -1,70 +1,47 @@
 arch map
 name DragonQuest--Ice Hatchery
+darkness 5
+width 16
+height 31
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 23:44:33 1994
 endmsg
-y 31
-invisible 5
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch blocked
-msg
-endmsg
 y 9
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch pstone_2
@@ -98,53 +75,33 @@ arch cave23
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 y 18
 end
 arch blocked
-msg
-endmsg
 y 19
 end
 arch blocked
-msg
-endmsg
 y 20
 end
 arch blocked
-msg
-endmsg
 y 21
 end
 arch blocked
-msg
-endmsg
 y 22
 end
 arch blocked
-msg
-endmsg
 y 23
 end
 arch blocked
-msg
-endmsg
 y 24
 end
 arch blocked
-msg
-endmsg
 y 25
 end
 arch blocked
-msg
-endmsg
 y 26
 end
 arch pstone_2
@@ -160,13 +117,9 @@ arch cave23
 y 28
 end
 arch blocked
-msg
-endmsg
 y 29
 end
 arch blocked
-msg
-endmsg
 y 30
 end
 arch pstone_2
@@ -176,20 +129,14 @@ arch cave17
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 1
 end
 arch blocked
-msg
-endmsg
 x 1
 y 2
 end
 arch blocked
-msg
-endmsg
 x 1
 y 3
 end
@@ -210,32 +157,22 @@ x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
 arch blocked
-msg
-endmsg
 x 1
 y 9
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
@@ -297,14 +234,10 @@ x 1
 y 18
 end
 arch blocked
-msg
-endmsg
 x 1
 y 19
 end
 arch blocked
-msg
-endmsg
 x 1
 y 20
 end
@@ -325,20 +258,14 @@ x 1
 y 22
 end
 arch blocked
-msg
-endmsg
 x 1
 y 23
 end
 arch blocked
-msg
-endmsg
 x 1
 y 24
 end
 arch blocked
-msg
-endmsg
 x 1
 y 25
 end
@@ -371,8 +298,6 @@ x 1
 y 29
 end
 arch blocked
-msg
-endmsg
 x 1
 y 30
 end
@@ -391,8 +316,6 @@ x 2
 y 1
 end
 arch blocked
-msg
-endmsg
 x 2
 y 2
 end
@@ -482,11 +405,10 @@ y 15
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 2
 y 15
 speed 0.004000
+immune 4
 end
 arch pstone_2
 x 2
@@ -585,8 +507,6 @@ x 2
 y 29
 end
 arch blocked
-msg
-endmsg
 x 2
 y 30
 end
@@ -745,8 +665,7 @@ arch generate_dragon
 other_arch chinese_dragon
 x 3
 y 22
-immune 16
-vulnerable 4
+immune 4
 end
 arch pstone_2
 x 3
@@ -807,8 +726,6 @@ x 3
 y 29
 end
 arch blocked
-msg
-endmsg
 x 3
 y 30
 end
@@ -974,8 +891,6 @@ x 4
 y 29
 end
 arch blocked
-msg
-endmsg
 x 4
 y 30
 end
@@ -1069,6 +984,10 @@ arch pstone_2
 x 5
 y 17
 end
+arch chinese_dragon
+x 5
+y 17
+end
 arch pstone_2
 x 5
 y 18
@@ -1098,6 +1017,10 @@ arch pstone_2
 x 5
 y 23
 end
+arch chinese_dragon
+x 5
+y 23
+end
 arch pstone_2
 x 5
 y 24
@@ -1116,11 +1039,10 @@ y 27
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 5
 y 27
 speed 0.004000
+immune 4
 end
 arch pstone_1
 x 5
@@ -1135,14 +1057,10 @@ x 5
 y 29
 end
 arch blocked
-msg
-endmsg
 x 5
 y 29
 end
 arch blocked
-msg
-endmsg
 x 5
 y 30
 end
@@ -1312,8 +1230,6 @@ x 6
 y 29
 end
 arch blocked
-msg
-endmsg
 x 6
 y 30
 end
@@ -1445,11 +1361,10 @@ y 20
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 7
 y 20
 speed 0.004000
+immune 4
 end
 arch pstone_2
 x 7
@@ -1501,8 +1416,6 @@ x 7
 y 29
 end
 arch blocked
-msg
-endmsg
 x 7
 y 30
 end
@@ -1510,8 +1423,6 @@ arch pstone_2
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch pstone_2
@@ -1519,8 +1430,6 @@ x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
@@ -1537,26 +1446,18 @@ x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 3
 end
 arch blocked
-msg
-endmsg
 x 8
 y 4
 end
 arch blocked
-msg
-endmsg
 x 8
 y 5
 end
 arch blocked
-msg
-endmsg
 x 8
 y 6
 end
@@ -1577,14 +1478,10 @@ x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
 arch blocked
-msg
-endmsg
 x 8
 y 10
 end
@@ -1695,73 +1592,49 @@ x 8
 y 29
 end
 arch blocked
-msg
-endmsg
 x 8
 y 30
 end
 arch blocked
-msg
-endmsg
 x 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 1
 end
 arch blocked
-msg
-endmsg
 x 9
 y 2
 end
 arch blocked
-msg
-endmsg
 x 9
 y 3
 end
 arch blocked
-msg
-endmsg
 x 9
 y 4
 end
 arch blocked
-msg
-endmsg
 x 9
 y 5
 end
 arch blocked
-msg
-endmsg
 x 9
 y 6
 end
 arch blocked
-msg
-endmsg
 x 9
 y 7
 end
 arch blocked
-msg
-endmsg
 x 9
 y 8
 end
 arch blocked
-msg
-endmsg
 x 9
 y 9
 end
 arch blocked
-msg
-endmsg
 x 9
 y 10
 end
@@ -1789,8 +1662,7 @@ arch generate_dragon
 other_arch chinese_dragon
 x 9
 y 13
-immune 16
-vulnerable 4
+immune 4
 end
 arch pstone_2
 x 9
@@ -1871,26 +1743,18 @@ x 9
 y 29
 end
 arch blocked
-msg
-endmsg
 x 9
 y 30
 end
 arch blocked
-msg
-endmsg
 x 10
 y 9
 end
 arch blocked
-msg
-endmsg
 x 10
 y 10
 end
 arch blocked
-msg
-endmsg
 x 10
 y 11
 end
@@ -1998,14 +1862,10 @@ x 10
 y 30
 end
 arch blocked
-msg
-endmsg
 x 11
 y 10
 end
 arch blocked
-msg
-endmsg
 x 11
 y 11
 end
@@ -2079,6 +1939,10 @@ arch pstone_2
 x 11
 y 23
 end
+arch chinese_dragon
+x 11
+y 23
+end
 arch pstone_2
 x 11
 y 24
@@ -2112,8 +1976,6 @@ x 11
 y 30
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
@@ -2156,11 +2018,10 @@ y 17
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 12
 y 17
 speed 0.004000
+immune 4
 end
 arch pstone_2
 x 12
@@ -2215,14 +2076,10 @@ x 12
 y 29
 end
 arch blocked
-msg
-endmsg
 x 12
 y 30
 end
 arch blocked
-msg
-endmsg
 x 13
 y 11
 end
@@ -2299,8 +2156,7 @@ arch generate_dragon
 other_arch chinese_dragon
 x 13
 y 23
-immune 16
-vulnerable 4
+immune 4
 end
 arch pstone_2
 x 13
@@ -2312,11 +2168,10 @@ y 25
 end
 arch generate_dragon
 other_arch cold_dragon
-immune 16
-vulnerable 4
 x 13
 y 25
 speed 0.004000
+immune 4
 end
 arch pstone_2
 x 13
@@ -2343,26 +2198,18 @@ x 13
 y 28
 end
 arch blocked
-msg
-endmsg
 x 13
 y 29
 end
 arch blocked
-msg
-endmsg
 x 13
 y 30
 end
 arch blocked
-msg
-endmsg
 x 14
 y 11
 end
 arch blocked
-msg
-endmsg
 x 14
 y 12
 end
@@ -2479,44 +2326,30 @@ x 14
 y 26
 end
 arch blocked
-msg
-endmsg
 x 14
 y 27
 end
 arch blocked
-msg
-endmsg
 x 14
 y 28
 end
 arch blocked
-msg
-endmsg
 x 14
 y 29
 end
 arch blocked
-msg
-endmsg
 x 14
 y 30
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
 arch blocked
-msg
-endmsg
 x 15
 y 13
 end
@@ -2553,32 +2386,22 @@ x 15
 y 17
 end
 arch blocked
-msg
-endmsg
 x 15
 y 18
 end
 arch blocked
-msg
-endmsg
 x 15
 y 19
 end
 arch blocked
-msg
-endmsg
 x 15
 y 20
 end
 arch blocked
-msg
-endmsg
 x 15
 y 21
 end
 arch blocked
-msg
-endmsg
 x 15
 y 22
 end
@@ -2599,50 +2422,26 @@ x 15
 y 24
 end
 arch blocked
-msg
-endmsg
 x 15
 y 25
 end
 arch blocked
-msg
-endmsg
 x 15
 y 26
 end
 arch blocked
-msg
-endmsg
 x 15
 y 27
 end
 arch blocked
-msg
-endmsg
 x 15
 y 28
 end
 arch blocked
-msg
-endmsg
 x 15
 y 29
 end
 arch blocked
-msg
-endmsg
 x 15
 y 30
-end
-arch chinese_dragon
-x 5
-y 17
-end
-arch chinese_dragon
-x 5
-y 23
-end
-arch chinese_dragon
-x 11
-y 23
 end

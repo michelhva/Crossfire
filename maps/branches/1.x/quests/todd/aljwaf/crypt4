@@ -1,11 +1,11 @@
 arch map
 name crypt4
+width 10
+height 20
 msg
 Creator: CF Java Map Editor
 Date:    6/30/2002
 endmsg
-width 10
-height 20
 end
 arch dirtfloor
 end
@@ -674,9 +674,9 @@ x 6
 y 4
 end
 arch bwall_2_1_2
-no_pass 0
 x 6
 y 4
+no_pass 0
 end
 arch dirtfloor
 x 6
@@ -765,9 +765,9 @@ x 7
 y 4
 end
 arch bwall_2_1_2
-no_pass 0
 x 7
 y 4
+no_pass 0
 end
 arch dirtfloor
 x 7
@@ -795,6 +795,7 @@ y 10
 end
 arch madman
 name Olie
+title the deranged
 msg
 @match hello|Hello
 Who are you?  Come to get my mushrooms eh?
@@ -807,13 +808,12 @@ I am so the King, Guards - arrest them!
 @match *
 Keep out of my mushrooms!
 endmsg
-title the deranged
 dam 1
-can_see_in_dark 1
-unaggressive 1
-sleep 0
 x 7
 y 10
+unaggressive 1
+sleep 0
+can_see_in_dark 1
 end
 arch dirtfloor
 x 7
@@ -948,6 +948,7 @@ x 8
 y 17
 end
 arch book_clasp
+title The history of Narcopin
 msg
 Once there stood upon the desert, a city called Narcopin, ruled by a dynasty of kings, wise and powerful.
 In time the monarchs grew less wise but more powerful.
@@ -959,10 +960,9 @@ His reign ended when he was stricken with an unknown wasting disease and died ho
 Some said the illness came from his evil dealings, they were quickly impaled for treason.
 Narcopin was razed to the ground by the surrounding kingdoms within six months of his death.
 endmsg
-title The history of Narcopin
-level 1
 x 8
 y 17
+level 1
 end
 arch dirtfloor
 x 8

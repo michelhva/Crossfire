@@ -1,15 +1,15 @@
 arch map
+name <unnamed>
 region santodominion
+shopitems *:0
+shopmin 2000
+width 11
+height 14
+enter_x 5
 msg
 Creator: Andreas Vogl
 email: red.blaze@gmx.net
 endmsg
-hp 5
-sp 0
-x 11
-y 14
-shopitems *:0
-shopmin 2000
 end
 arch blocked
 end
@@ -117,9 +117,9 @@ sp 1
 x 1
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -133,9 +133,9 @@ sp 1
 x 1
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -149,9 +149,9 @@ sp 1
 x 1
 y 7
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -165,9 +165,9 @@ sp 1
 x 1
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -181,9 +181,9 @@ sp 1
 x 1
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -197,9 +197,9 @@ sp 1
 x 1
 y 10
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -213,9 +213,9 @@ sp 1
 x 1
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 1
@@ -229,9 +229,9 @@ sp 1
 x 1
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 1
@@ -310,9 +310,9 @@ sp 1
 x 2
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -326,9 +326,9 @@ sp 1
 x 2
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -342,9 +342,9 @@ sp 1
 x 2
 y 7
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -358,9 +358,9 @@ sp 1
 x 2
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -374,9 +374,9 @@ sp 1
 x 2
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -390,9 +390,9 @@ sp 1
 x 2
 y 10
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -406,9 +406,9 @@ sp 1
 x 2
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 2
@@ -422,9 +422,9 @@ sp 1
 x 2
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 2
@@ -478,8 +478,8 @@ arch button_handle
 name clean shop
 x 3
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_magic
 x 3
@@ -505,9 +505,9 @@ sp 1
 x 3
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 3
@@ -521,9 +521,9 @@ sp 1
 x 3
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 3
@@ -545,9 +545,9 @@ sp 1
 x 3
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 3
@@ -561,9 +561,9 @@ sp 1
 x 3
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 3
@@ -585,9 +585,9 @@ sp 1
 x 3
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 3
@@ -601,9 +601,9 @@ sp 1
 x 3
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -682,9 +682,9 @@ sp 1
 x 4
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 4
@@ -698,9 +698,9 @@ sp 1
 x 4
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 4
@@ -722,9 +722,9 @@ sp 1
 x 4
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 4
@@ -738,9 +738,9 @@ sp 1
 x 4
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 4
@@ -762,9 +762,9 @@ sp 1
 x 4
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 4
@@ -778,9 +778,9 @@ sp 1
 x 4
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 4
@@ -862,9 +862,9 @@ sp 1
 x 5
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 5
@@ -886,9 +886,9 @@ sp 1
 x 5
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 5
@@ -902,9 +902,9 @@ sp 1
 x 5
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 5
@@ -926,9 +926,9 @@ sp 1
 x 5
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 5
@@ -942,9 +942,9 @@ sp 1
 x 5
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1011,9 +1011,9 @@ sp 1
 x 6
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 6
@@ -1027,9 +1027,9 @@ sp 1
 x 6
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 6
@@ -1051,9 +1051,9 @@ sp 1
 x 6
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 6
@@ -1067,9 +1067,9 @@ sp 1
 x 6
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 6
@@ -1091,9 +1091,9 @@ sp 1
 x 6
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 6
@@ -1107,9 +1107,9 @@ sp 1
 x 6
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 6
@@ -1176,9 +1176,9 @@ sp 1
 x 7
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 7
@@ -1192,9 +1192,9 @@ sp 1
 x 7
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 7
@@ -1216,9 +1216,9 @@ sp 1
 x 7
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 7
@@ -1232,9 +1232,9 @@ sp 1
 x 7
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 7
@@ -1256,9 +1256,9 @@ sp 1
 x 7
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 7
@@ -1272,9 +1272,9 @@ sp 1
 x 7
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 7
@@ -1353,9 +1353,9 @@ sp 1
 x 8
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1369,9 +1369,9 @@ sp 1
 x 8
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1385,9 +1385,9 @@ sp 1
 x 8
 y 7
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1401,9 +1401,9 @@ sp 1
 x 8
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1417,9 +1417,9 @@ sp 1
 x 8
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1433,9 +1433,9 @@ sp 1
 x 8
 y 10
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1449,9 +1449,9 @@ sp 1
 x 8
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 8
@@ -1465,9 +1465,9 @@ sp 1
 x 8
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1512,9 +1512,9 @@ sp 1
 x 9
 y 5
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1528,9 +1528,9 @@ sp 1
 x 9
 y 6
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1544,9 +1544,9 @@ sp 1
 x 9
 y 7
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1560,9 +1560,9 @@ sp 1
 x 9
 y 8
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1576,9 +1576,9 @@ sp 1
 x 9
 y 9
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1592,9 +1592,9 @@ sp 1
 x 9
 y 10
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1608,9 +1608,9 @@ sp 1
 x 9
 y 11
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch shop_empty
 x 9
@@ -1624,9 +1624,9 @@ sp 1
 x 9
 y 12
 speed 0.000000
-protected 1
 invisible 1
 connected 1
+protected 1
 end
 arch flagstone
 x 9

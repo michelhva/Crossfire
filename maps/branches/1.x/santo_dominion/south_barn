@@ -1,9 +1,10 @@
 arch map
+name <unnamed>
 region santodominion
-hp 1
-sp 1
-x 40
-y 40
+width 40
+height 40
+enter_x 1
+enter_y 1
 end
 arch dirtfloor
 end
@@ -1116,6 +1117,10 @@ arch dirtfloor
 x 5
 y 1
 end
+arch chinese_dragon
+x 5
+y 1
+end
 arch dirtfloor
 x 5
 y 2
@@ -1576,6 +1581,10 @@ arch dirtfloor
 x 7
 y 1
 end
+arch chinese_dragon
+x 7
+y 1
+end
 arch dirtfloor
 x 7
 y 2
@@ -1997,6 +2006,10 @@ x 9
 y 2
 end
 arch dirtfloor
+x 9
+y 3
+end
+arch chinese_dragon
 x 9
 y 3
 end
@@ -4131,6 +4144,10 @@ arch dirtfloor
 x 18
 y 17
 end
+arch chinese_dragon
+x 18
+y 17
+end
 arch dirtfloor
 x 18
 y 18
@@ -4232,6 +4249,10 @@ x 18
 y 33
 end
 arch dirtfloor
+x 18
+y 34
+end
+arch troll
 x 18
 y 34
 end
@@ -5377,6 +5398,10 @@ arch dirtfloor
 x 23
 y 36
 end
+arch troll
+x 23
+y 36
+end
 arch dirtfloor
 x 23
 y 37
@@ -6246,6 +6271,10 @@ x 27
 y 35
 end
 arch dirtfloor
+x 27
+y 36
+end
+arch troll
 x 27
 y 36
 end
@@ -7466,6 +7495,10 @@ arch dirtfloor
 x 33
 y 6
 end
+arch chinese_dragon
+x 33
+y 6
+end
 arch dirtfloor
 x 33
 y 7
@@ -8205,6 +8238,10 @@ x 36
 y 18
 end
 arch dirtfloor
+x 36
+y 19
+end
+arch chinese_dragon
 x 36
 y 19
 end
@@ -9141,40 +9178,4 @@ end
 arch awall_2_2_4
 x 39
 y 39
-end
-arch chinese_dragon
-x 5
-y 1
-end
-arch chinese_dragon
-x 7
-y 1
-end
-arch chinese_dragon
-x 9
-y 3
-end
-arch chinese_dragon
-x 18
-y 17
-end
-arch troll
-x 18
-y 34
-end
-arch troll
-x 23
-y 36
-end
-arch troll
-x 27
-y 36
-end
-arch chinese_dragon
-x 33
-y 6
-end
-arch chinese_dragon
-x 36
-y 19
 end

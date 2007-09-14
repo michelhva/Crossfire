@@ -1,12 +1,12 @@
 arch map
 name GroundLevel
+width 20
+height 20
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Sat Apr 30 20:50:08 1994
 endmsg
-x 20
-y 20
 end
 arch cobblestones
 end
@@ -1650,7 +1650,7 @@ y 13
 end
 arch magic_mouth
 msg
-Apprentice Practical Lab 
+Apprentice Practical Lab
 endmsg
 x 10
 y 14
