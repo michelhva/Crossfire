@@ -1,21 +1,21 @@
 arch map
 name Temple
+darkness 3
+width 34
+height 34
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jan 14 20:52:48 1994
 endmsg
-width 34
-height 34
-darkness 3
 end
 arch medium_stones
 end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
 no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 1
@@ -23,9 +23,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 1
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 2
@@ -33,9 +33,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 2
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 3
@@ -43,9 +43,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 3
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 4
@@ -53,9 +53,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 5
@@ -63,9 +63,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 6
@@ -73,9 +73,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 7
@@ -83,9 +83,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 8
@@ -93,9 +93,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 8
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 9
@@ -103,9 +103,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 10
@@ -113,9 +113,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 11
@@ -123,9 +123,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 12
@@ -133,9 +133,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 13
@@ -143,9 +143,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 14
@@ -153,9 +153,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 15
@@ -163,9 +163,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 16
@@ -173,9 +173,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 17
@@ -183,9 +183,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 18
@@ -193,9 +193,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 19
@@ -203,9 +203,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 20
@@ -213,9 +213,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 21
@@ -223,9 +223,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 22
@@ -233,9 +233,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 23
@@ -243,9 +243,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 24
@@ -253,9 +253,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 25
@@ -263,9 +263,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 26
@@ -273,9 +273,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 27
@@ -283,9 +283,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 28
@@ -293,9 +293,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 29
@@ -303,9 +303,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 30
@@ -313,9 +313,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 30
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 31
@@ -323,9 +323,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 31
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 32
@@ -333,9 +333,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 32
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 y 33
@@ -343,9 +343,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 1
@@ -353,26 +353,26 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 1
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 1
 y 1
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 1
 y 1
 end
@@ -547,19 +547,19 @@ end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 1
 y 28
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 1
 y 28
 end
@@ -570,10 +570,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 1
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 1
@@ -588,9 +588,9 @@ x 1
 y 32
 end
 arch generate_ghost
-speed_left -0.220000
 x 1
 y 32
+speed_left -0.220000
 end
 arch medium_stones
 x 1
@@ -599,10 +599,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 1
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 2
@@ -610,9 +610,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 2
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 2
@@ -635,6 +635,10 @@ x 2
 y 5
 end
 arch medium_stones
+x 2
+y 6
+end
+arch ent
 x 2
 y 6
 end
@@ -675,9 +679,9 @@ x 2
 y 13
 end
 arch mover_7
-attacktype 1
 x 2
 y 13
+attacktype 1
 end
 arch medium_stones
 x 2
@@ -692,18 +696,18 @@ x 2
 y 15
 end
 arch generate_skeleton
+x 2
+y 15
 speed_left -0.172000
-x 2
-y 15
 end
 arch medium_stones
 x 2
 y 16
 end
 arch wraith
-speed_left -2.020000
 x 2
 y 16
+speed_left -2.020000
 end
 arch medium_stones
 x 2
@@ -745,6 +749,10 @@ arch medium_stones
 x 2
 y 24
 end
+arch ent
+x 2
+y 24
+end
 arch medium_stones
 x 2
 y 25
@@ -772,10 +780,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 2
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 2
@@ -820,10 +828,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 2
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 3
@@ -831,9 +839,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 3
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 3
@@ -844,11 +852,15 @@ x 3
 y 2
 end
 arch wraith
-speed_left -2.020000
 x 3
 y 2
+speed_left -2.020000
 end
 arch medium_stones
+x 3
+y 3
+end
+arch ent
 x 3
 y 3
 end
@@ -1015,10 +1027,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 3
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 3
@@ -1063,10 +1075,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 3
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1074,9 +1086,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1107,9 +1119,9 @@ x 4
 y 7
 end
 arch wraith
-speed_left -2.020000
 x 4
 y 7
+speed_left -2.020000
 end
 arch medium_stones
 x 4
@@ -1122,10 +1134,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1134,10 +1146,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1146,10 +1158,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1158,10 +1170,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1170,10 +1182,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1182,10 +1194,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1194,10 +1206,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1206,10 +1218,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1218,10 +1230,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1230,10 +1242,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1242,10 +1254,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 4
@@ -1254,27 +1266,27 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 20
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 4
 y 21
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 4
 y 21
 end
@@ -1307,9 +1319,9 @@ x 4
 y 28
 end
 arch spider_gen
-speed_left -0.220000
 x 4
 y 28
+speed_left -0.220000
 end
 arch medium_stones
 x 4
@@ -1358,10 +1370,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 4
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 5
@@ -1369,9 +1381,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 5
@@ -1398,18 +1410,18 @@ x 5
 y 6
 end
 arch mover_7
-attacktype 1
 x 5
 y 7
+attacktype 1
 end
 arch medium_stones
 x 5
 y 7
 end
 arch mover_7
-attacktype 1
 x 5
 y 8
+attacktype 1
 end
 arch medium_stones
 x 5
@@ -1422,27 +1434,27 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
 y 9
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 5
 y 10
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 5
 y 10
 end
@@ -1489,10 +1501,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 5
@@ -1501,10 +1513,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 5
@@ -1513,10 +1525,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 5
@@ -1589,10 +1601,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 5
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1600,9 +1612,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1617,9 +1629,9 @@ x 6
 y 3
 end
 arch spider_gen
-speed_left -0.220000
 x 6
 y 3
+speed_left -0.220000
 end
 arch medium_stones
 x 6
@@ -1640,10 +1652,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1658,9 +1670,9 @@ end
 arch tree5
 name hedge
 face fernsdense.111
-blocksview 1
 x 6
 y 8
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1669,10 +1681,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1687,6 +1699,10 @@ x 6
 y 12
 end
 arch medium_stones
+x 6
+y 13
+end
+arch ent
 x 6
 y 13
 end
@@ -1719,9 +1735,9 @@ x 6
 y 18
 end
 arch wraith
-speed_left -2.020000
 x 6
 y 18
+speed_left -2.020000
 end
 arch medium_stones
 x 6
@@ -1742,10 +1758,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1754,10 +1770,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1766,10 +1782,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1778,10 +1794,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1790,10 +1806,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1802,10 +1818,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1814,10 +1830,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1826,10 +1842,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 6
@@ -1874,10 +1890,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 6
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1885,9 +1901,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1912,10 +1928,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1924,10 +1940,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1936,10 +1952,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1948,10 +1964,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1960,10 +1976,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 8
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -1972,10 +1988,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -2029,6 +2045,10 @@ arch medium_stones
 x 7
 y 20
 end
+arch ent
+x 7
+y 20
+end
 arch medium_stones
 x 7
 y 21
@@ -2038,18 +2058,18 @@ x 7
 y 22
 end
 arch wraith
-speed_left -2.020000
 x 7
 y 22
+speed_left -2.020000
 end
 arch medium_stones
 x 7
 y 23
 end
 arch wraith
-speed_left -2.020000
 x 7
 y 23
+speed_left -2.020000
 end
 arch medium_stones
 x 7
@@ -2082,10 +2102,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 7
@@ -2120,9 +2140,9 @@ x 7
 y 32
 end
 arch wraith
-speed_left -2.020000
 x 7
 y 32
+speed_left -2.020000
 end
 arch deathtree
 x 7
@@ -2135,10 +2155,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 7
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 8
@@ -2146,9 +2166,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 8
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 8
@@ -2169,10 +2189,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 8
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 8
@@ -2295,11 +2315,15 @@ x 8
 y 25
 end
 arch generate_skeleton
-speed_left -0.172000
 x 8
 y 25
+speed_left -0.172000
 end
 arch medium_stones
+x 8
+y 26
+end
+arch ent
 x 8
 y 26
 end
@@ -2318,10 +2342,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 8
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 8
@@ -2366,10 +2390,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 8
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2377,9 +2401,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2400,10 +2424,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2476,10 +2500,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2488,10 +2512,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2500,10 +2524,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2512,10 +2536,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2524,10 +2548,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2536,10 +2560,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2548,10 +2572,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2604,10 +2628,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 9
@@ -2618,9 +2642,9 @@ x 9
 y 31
 end
 arch wraith
-speed_left -2.020000
 x 9
 y 31
+speed_left -2.020000
 end
 arch medium_stones
 x 9
@@ -2633,10 +2657,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 9
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2644,9 +2668,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2683,10 +2707,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2755,10 +2779,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2767,10 +2791,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2793,9 +2817,9 @@ x 10
 y 18
 end
 arch generate_bat
-speed_left -0.280000
 x 10
 y 18
+speed_left -0.280000
 end
 arch medium_stones
 x 10
@@ -2804,10 +2828,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2840,10 +2864,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2852,10 +2876,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2864,10 +2888,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2876,10 +2900,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 10
@@ -2900,10 +2924,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 10
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -2911,9 +2935,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -2950,10 +2974,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3014,10 +3038,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3026,10 +3050,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3038,10 +3062,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3052,15 +3076,19 @@ x 11
 y 14
 end
 arch wraith
-speed_left -2.020000
 x 11
 y 14
+speed_left -2.020000
 end
 arch medium_stones
 x 11
 y 15
 end
 arch medium_stones
+x 11
+y 16
+end
+arch ent
 x 11
 y 16
 end
@@ -3079,10 +3107,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3115,10 +3143,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3127,10 +3155,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 11
@@ -3163,10 +3191,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 11
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3174,9 +3202,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3184,9 +3212,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3215,10 +3243,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3275,10 +3303,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3287,10 +3315,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3309,9 +3337,9 @@ x 12
 y 14
 end
 arch generate_skeleton
+x 12
+y 14
 speed_left -0.172000
-x 12
-y 14
 end
 arch medium_stones
 x 12
@@ -3330,9 +3358,9 @@ x 12
 y 18
 end
 arch spider_gen
-speed_left -0.220000
 x 12
 y 18
+speed_left -0.220000
 end
 arch medium_stones
 x 12
@@ -3341,10 +3369,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3377,10 +3405,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3417,10 +3445,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 12
@@ -3429,10 +3457,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 12
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3440,9 +3468,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3487,10 +3515,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3547,10 +3575,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3607,27 +3635,27 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 19
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 13
 y 20
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 13
 y 20
 end
@@ -3650,10 +3678,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3662,10 +3690,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 13
@@ -3694,19 +3722,19 @@ end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 13
 y 32
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 13
 y 32
 end
@@ -3717,10 +3745,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 13
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3728,9 +3756,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3755,10 +3783,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3767,10 +3795,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3779,10 +3807,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3791,10 +3819,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3811,10 +3839,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3871,10 +3899,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3885,9 +3913,9 @@ x 14
 y 16
 end
 arch wraith
-speed_left -2.020000
 x 14
 y 16
+speed_left -2.020000
 end
 arch medium_stones
 x 14
@@ -3896,10 +3924,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3908,10 +3936,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3920,10 +3948,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3932,10 +3960,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3944,10 +3972,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -3956,27 +3984,27 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 22
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 14
 y 23
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 14
 y 23
 end
@@ -3987,10 +4015,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -4025,9 +4053,9 @@ x 14
 y 27
 end
 arch wraith
-speed_left -2.020000
 x 14
 y 27
+speed_left -2.020000
 end
 arch deathtree
 x 14
@@ -4052,10 +4080,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -4064,10 +4092,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 30
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -4076,10 +4104,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 31
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -4088,10 +4116,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 32
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 14
@@ -4100,10 +4128,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 14
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4111,9 +4139,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4158,10 +4186,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4210,10 +4238,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4274,12 +4302,25 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
+x 15
+y 15
+end
+arch courthouse
+name Temple
+slaying OuterTemple
+msg
+Just your luck. You have to come
+busting in just when a religious
+ceremony is occurring.
+endmsg
+hp 7
+sp 29
 x 15
 y 15
 end
@@ -4294,10 +4335,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4334,10 +4375,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 15
@@ -4378,27 +4419,27 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 29
+no_pass 1
+blocksview 1
 end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 15
 y 30
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 15
 y 30
 end
@@ -4417,10 +4458,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 15
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4428,9 +4469,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4459,10 +4500,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4511,10 +4552,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4575,10 +4616,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4595,10 +4636,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4609,9 +4650,9 @@ x 16
 y 19
 end
 arch spider_gen
-speed_left -0.220000
 x 16
 y 19
+speed_left -0.220000
 end
 arch medium_stones
 x 16
@@ -4636,10 +4677,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4684,10 +4725,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 16
@@ -4708,10 +4749,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 16
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4719,9 +4760,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4758,10 +4799,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4806,10 +4847,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4866,10 +4907,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4878,10 +4919,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4890,10 +4931,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4902,10 +4943,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4938,10 +4979,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -4982,10 +5023,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 17
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 17
@@ -5016,9 +5057,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 18
@@ -5051,10 +5092,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 18
@@ -5095,10 +5136,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 18
@@ -5148,6 +5189,10 @@ arch medium_stones
 x 18
 y 21
 end
+arch ent
+x 18
+y 21
+end
 arch medium_stones
 x 18
 y 22
@@ -5163,10 +5208,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 18
@@ -5207,10 +5252,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 18
@@ -5251,10 +5296,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 18
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5262,9 +5307,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5309,10 +5354,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5353,10 +5398,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5433,10 +5478,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5497,10 +5542,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 19
@@ -5521,10 +5566,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 19
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
@@ -5532,9 +5577,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
@@ -5555,19 +5600,19 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
 y 5
 end
 arch wraith
-speed_left -2.020000
 x 20
 y 5
+speed_left -2.020000
 end
 arch medium_stones
 x 20
@@ -5608,10 +5653,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
@@ -5630,9 +5675,9 @@ x 20
 y 13
 end
 arch generate_ghost
-speed_left -0.220000
 x 20
 y 13
+speed_left -0.220000
 end
 arch medium_stones
 x 20
@@ -5681,10 +5726,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
@@ -5713,10 +5758,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 20
@@ -5753,10 +5798,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 20
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5764,9 +5809,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5787,10 +5832,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5839,16 +5884,20 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
 y 10
 end
 arch medium_stones
+x 21
+y 11
+end
+arch ent
 x 21
 y 11
 end
@@ -5865,9 +5914,9 @@ x 21
 y 14
 end
 arch wraith
-speed_left -2.020000
 x 21
 y 14
+speed_left -2.020000
 end
 arch medium_stones
 x 21
@@ -5908,10 +5957,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5920,10 +5969,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5948,10 +5997,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 21
@@ -5988,10 +6037,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 21
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -5999,9 +6048,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6042,16 +6091,20 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
 y 5
 end
 arch medium_stones
+x 22
+y 6
+end
+arch ent
 x 22
 y 6
 end
@@ -6070,10 +6123,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6102,10 +6155,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6114,10 +6167,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6126,10 +6179,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6138,10 +6191,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6150,10 +6203,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6162,10 +6215,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6174,10 +6227,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6186,10 +6239,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6198,10 +6251,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6220,9 +6273,9 @@ x 22
 y 27
 end
 arch wraith
-speed_left -2.020000
 x 22
 y 27
+speed_left -2.020000
 end
 arch medium_stones
 x 22
@@ -6235,10 +6288,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 22
@@ -6271,10 +6324,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 22
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6282,9 +6335,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6321,10 +6374,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6349,10 +6402,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6361,10 +6414,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6373,10 +6426,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6385,10 +6438,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6397,10 +6450,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6409,10 +6462,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6421,10 +6474,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6457,10 +6510,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6509,10 +6562,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 23
@@ -6541,10 +6594,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 23
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 24
@@ -6552,9 +6605,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 24
@@ -6591,10 +6644,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 24
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 24
@@ -6700,6 +6753,10 @@ arch medium_stones
 x 24
 y 18
 end
+arch ent
+x 24
+y 18
+end
 arch medium_stones
 x 24
 y 19
@@ -6715,10 +6772,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 24
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 24
@@ -6756,6 +6813,10 @@ arch medium_stones
 x 24
 y 26
 end
+arch ent
+x 24
+y 26
+end
 arch medium_stones
 x 24
 y 27
@@ -6771,10 +6832,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 24
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 24
@@ -6805,9 +6866,9 @@ x 24
 y 32
 end
 arch generate_skeleton
-speed_left -0.172000
 x 24
 y 32
+speed_left -0.172000
 end
 arch medium_stones
 x 24
@@ -6816,10 +6877,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 24
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
@@ -6827,9 +6888,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
@@ -6870,10 +6931,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
@@ -6882,10 +6943,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
@@ -7018,19 +7079,19 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
 y 24
 end
 arch generate_ghost
-speed_left -0.220000
 x 25
 y 24
+speed_left -0.220000
 end
 arch medium_stones
 x 25
@@ -7055,10 +7116,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 25
@@ -7091,10 +7152,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 25
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7102,9 +7163,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7133,10 +7194,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7145,10 +7206,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7253,10 +7314,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7285,10 +7346,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7297,10 +7358,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 26
@@ -7337,10 +7398,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 26
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7348,9 +7409,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7383,10 +7444,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7395,10 +7456,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7409,9 +7470,9 @@ x 27
 y 9
 end
 arch generate_zombie
-speed_left -0.220000
 x 27
 y 9
+speed_left -0.220000
 end
 arch medium_stones
 x 27
@@ -7500,10 +7561,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7512,10 +7573,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7524,10 +7585,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7536,10 +7597,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7548,10 +7609,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7560,10 +7621,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7572,10 +7633,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7586,6 +7647,10 @@ x 27
 y 25
 end
 arch medium_stones
+x 27
+y 26
+end
+arch ent
 x 27
 y 26
 end
@@ -7604,10 +7669,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 27
@@ -7644,10 +7709,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 27
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7655,9 +7720,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7665,15 +7730,19 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
 y 1
 end
 arch medium_stones
+x 28
+y 2
+end
+arch ent
 x 28
 y 2
 end
@@ -7700,10 +7769,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7712,10 +7781,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 8
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7724,10 +7793,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7736,10 +7805,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7748,10 +7817,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7804,10 +7873,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7852,10 +7921,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7864,10 +7933,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7876,10 +7945,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7900,10 +7969,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7944,10 +8013,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 28
@@ -7956,10 +8025,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 28
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -7967,9 +8036,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8014,19 +8083,19 @@ end
 arch thorns
 name stones
 face mediumston.111
-level 5
-lifesave 1
 dam 5
 x 29
 y 10
+level 5
+lifesave 1
 end
 arch tree6
 name bramble
-face thorns.111
 msg
 This bush is full of vicious
 thorns. Ouch!
 endmsg
+face thorns.111
 x 29
 y 10
 end
@@ -8037,10 +8106,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8049,10 +8118,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8061,10 +8130,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8085,10 +8154,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8097,10 +8166,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8109,10 +8178,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8177,10 +8246,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8189,10 +8258,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8201,10 +8270,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8213,10 +8282,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8225,10 +8294,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 29
@@ -8243,9 +8312,9 @@ x 29
 y 31
 end
 arch wraith
-speed_left -2.020000
 x 29
 y 31
+speed_left -2.020000
 end
 arch medium_stones
 x 29
@@ -8262,10 +8331,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 29
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8273,9 +8342,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8286,6 +8355,10 @@ x 30
 y 2
 end
 arch medium_stones
+x 30
+y 3
+end
+arch ent
 x 30
 y 3
 end
@@ -8328,10 +8401,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8340,10 +8413,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8352,10 +8425,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8364,10 +8437,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8376,10 +8449,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 30
@@ -8426,6 +8499,10 @@ x 30
 y 21
 end
 arch medium_stones
+x 30
+y 22
+end
+arch ent
 x 30
 y 22
 end
@@ -8528,10 +8605,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 30
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 31
@@ -8539,9 +8616,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 31
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 31
@@ -8568,6 +8645,10 @@ x 31
 y 6
 end
 arch medium_stones
+x 31
+y 7
+end
+arch ent
 x 31
 y 7
 end
@@ -8663,6 +8744,10 @@ arch medium_stones
 x 31
 y 18
 end
+arch ent
+x 31
+y 18
+end
 arch medium_stones
 x 31
 y 19
@@ -8752,9 +8837,9 @@ x 31
 y 31
 end
 arch wraith
-speed_left -2.020000
 x 31
 y 31
+speed_left -2.020000
 end
 arch medium_stones
 x 31
@@ -8767,10 +8852,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 31
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 32
@@ -8778,18 +8863,18 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 32
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 32
 y 1
 end
 arch generate_ghost
-speed_left -0.220000
 x 32
 y 1
+speed_left -0.220000
 end
 arch medium_stones
 x 32
@@ -9040,9 +9125,9 @@ x 32
 y 32
 end
 arch generate_ghost
+x 32
+y 32
 speed_left -0.220000
-x 32
-y 32
 end
 arch medium_stones
 x 32
@@ -9051,10 +9136,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 32
 y 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9062,9 +9147,9 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9073,10 +9158,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 1
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9085,10 +9170,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 2
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9097,10 +9182,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 3
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9109,10 +9194,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 4
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9121,10 +9206,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 5
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9133,10 +9218,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 6
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9145,10 +9230,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 7
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9157,10 +9242,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 8
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9169,10 +9254,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 9
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9181,10 +9266,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 10
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9193,10 +9278,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 11
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9205,10 +9290,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 12
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9217,10 +9302,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 13
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9229,10 +9314,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 14
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9241,10 +9326,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 15
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9253,10 +9338,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 16
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9265,10 +9350,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 17
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9277,10 +9362,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 18
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9289,10 +9374,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 19
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9301,10 +9386,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 20
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9313,10 +9398,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 21
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9325,10 +9410,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 22
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9337,10 +9422,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 23
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9349,10 +9434,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 24
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9361,10 +9446,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 25
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9373,10 +9458,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 26
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9385,10 +9470,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 27
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9397,10 +9482,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 28
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9409,10 +9494,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 29
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9421,10 +9506,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 30
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9433,10 +9518,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 31
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9445,10 +9530,10 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 32
+no_pass 1
+blocksview 1
 end
 arch medium_stones
 x 33
@@ -9457,93 +9542,8 @@ end
 arch tree5
 name dense hedge
 face fernsdense.111
-blocksview 1
-no_pass 1
 x 33
 y 33
-end
-arch ent
-x 2
-y 6
-end
-arch ent
-x 2
-y 24
-end
-arch ent
-x 3
-y 3
-end
-arch ent
-x 6
-y 13
-end
-arch ent
-x 7
-y 20
-end
-arch ent
-x 8
-y 26
-end
-arch ent
-x 11
-y 16
-end
-arch courthouse
-name Temple
-msg
-Just your luck. You have to come
-busting in just when a religious
-ceremony is occurring.
-endmsg
-slaying OuterTemple
-hp 7
-sp 29
-x 15
-y 15
-end
-arch ent
-x 18
-y 21
-end
-arch ent
-x 21
-y 11
-end
-arch ent
-x 22
-y 6
-end
-arch ent
-x 24
-y 18
-end
-arch ent
-x 24
-y 26
-end
-arch ent
-x 27
-y 26
-end
-arch ent
-x 28
-y 2
-end
-arch ent
-x 30
-y 3
-end
-arch ent
-x 30
-y 22
-end
-arch ent
-x 31
-y 7
-end
-arch ent
-x 31
-y 18
+no_pass 1
+blocksview 1
 end

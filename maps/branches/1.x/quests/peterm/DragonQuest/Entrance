@@ -1,12 +1,12 @@
 arch map
 name DragonQuest Entrance
+width 27
+height 16
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 16:41:17 1994
 endmsg
-width 27
-height 16
 end
 arch pstone_1
 end
@@ -359,6 +359,10 @@ arch pstone_1
 x 3
 y 4
 end
+arch dragon
+x 3
+y 4
+end
 arch pstone_1
 x 3
 y 5
@@ -388,6 +392,10 @@ x 3
 y 9
 end
 arch pstone_1
+x 3
+y 10
+end
+arch dragon
 x 3
 y 10
 end
@@ -477,6 +485,10 @@ arch pstone_1
 x 4
 y 8
 end
+arch dragon
+x 4
+y 8
+end
 arch pstone_1
 x 4
 y 9
@@ -555,6 +567,10 @@ arch pstone_1
 x 5
 y 5
 end
+arch dragon
+x 5
+y 5
+end
 arch pstone_1
 x 5
 y 6
@@ -630,6 +646,10 @@ x 6
 y 1
 end
 arch pstone_1
+x 6
+y 2
+end
+arch dragon
 x 6
 y 2
 end
@@ -743,11 +763,19 @@ arch pstone_1
 x 7
 y 7
 end
+arch dragon
+x 7
+y 7
+end
 arch pstone_1
 x 7
 y 8
 end
 arch pstone_1
+x 7
+y 9
+end
+arch dragon
 x 7
 y 9
 end
@@ -764,6 +792,10 @@ x 7
 y 12
 end
 arch pstone_1
+x 7
+y 13
+end
+arch dragon
 x 7
 y 13
 end
@@ -833,6 +865,10 @@ arch pstone_1
 x 8
 y 10
 end
+arch dragon
+x 8
+y 10
+end
 arch pstone_1
 x 8
 y 11
@@ -875,11 +911,19 @@ arch pstone_1
 x 9
 y 3
 end
+arch dragon
+x 9
+y 3
+end
 arch pstone_1
 x 9
 y 4
 end
 arch pstone_1
+x 9
+y 5
+end
+arch dragon
 x 9
 y 5
 end
@@ -908,6 +952,10 @@ x 9
 y 11
 end
 arch pstone_1
+x 9
+y 12
+end
+arch dragon
 x 9
 y 12
 end
@@ -1055,6 +1103,10 @@ arch pstone_1
 x 11
 y 7
 end
+arch dragon
+x 11
+y 7
+end
 arch pstone_1
 x 11
 y 8
@@ -1068,6 +1120,10 @@ x 11
 y 9
 end
 arch pstone_1
+x 11
+y 10
+end
+arch dragon
 x 11
 y 10
 end
@@ -1165,6 +1221,10 @@ arch pstone_1
 x 12
 y 13
 end
+arch dragon
+x 12
+y 13
+end
 arch pstone_1
 x 12
 y 14
@@ -1210,6 +1270,10 @@ x 13
 y 2
 end
 arch pstone_1
+x 13
+y 2
+end
+arch dragon
 x 13
 y 2
 end
@@ -1330,6 +1394,10 @@ arch cave4
 x 14
 end
 arch pstone_1
+x 14
+y 1
+end
+arch dragon
 x 14
 y 1
 end
@@ -1979,24 +2047,24 @@ arch cave4
 x 23
 end
 arch pstone_2
-no_pass 1
 x 23
 y 1
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 2
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 3
+no_pass 1
 end
 arch pstone_2
-no_pass 1
 x 23
 y 4
+no_pass 1
 end
 arch pstone_2
 x 23
@@ -2131,72 +2199,4 @@ end
 arch blocked
 x 26
 y 6
-end
-arch dragon
-x 3
-y 4
-end
-arch dragon
-x 3
-y 10
-end
-arch dragon
-x 4
-y 8
-end
-arch dragon
-x 5
-y 5
-end
-arch dragon
-x 6
-y 2
-end
-arch dragon
-x 7
-y 7
-end
-arch dragon
-x 7
-y 9
-end
-arch dragon
-x 7
-y 13
-end
-arch dragon
-x 8
-y 10
-end
-arch dragon
-x 9
-y 3
-end
-arch dragon
-x 9
-y 5
-end
-arch dragon
-x 9
-y 12
-end
-arch dragon
-x 11
-y 7
-end
-arch dragon
-x 11
-y 10
-end
-arch dragon
-x 12
-y 13
-end
-arch dragon
-x 13
-y 2
-end
-arch dragon
-x 14
-y 1
 end

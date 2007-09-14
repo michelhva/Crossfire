@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region santodominion
-x 30
-y 40
+width 30
+height 40
 end
 arch afloor_left
 name floor
@@ -2759,6 +2760,10 @@ name floor
 x 9
 y 17
 end
+arch dread
+x 9
+y 17
+end
 arch afloor_left
 name floor
 x 9
@@ -3336,8 +3341,16 @@ name floor
 x 11
 y 26
 end
+arch dragon
+x 11
+y 26
+end
 arch afloor_left
 name floor
+x 11
+y 27
+end
+arch dragon
 x 11
 y 27
 end
@@ -3629,6 +3642,10 @@ y 35
 end
 arch afloor_left
 name floor
+x 12
+y 36
+end
+arch giant
 x 12
 y 36
 end
@@ -4123,6 +4140,10 @@ name floor
 x 14
 y 35
 end
+arch giant
+x 14
+y 35
+end
 arch afloor_left
 name floor
 x 14
@@ -4523,6 +4544,10 @@ name floor
 x 16
 y 24
 end
+arch dread
+x 16
+y 24
+end
 arch afloor_left
 name floor
 x 16
@@ -4540,6 +4565,10 @@ y 27
 end
 arch afloor_left
 name floor
+x 16
+y 28
+end
+arch dread
 x 16
 y 28
 end
@@ -6044,6 +6073,10 @@ name floor
 x 22
 y 25
 end
+arch big_dragon
+x 22
+y 25
+end
 arch afloor_left
 name floor
 x 22
@@ -6095,6 +6128,10 @@ y 34
 end
 arch afloor_left
 name floor
+x 22
+y 35
+end
+arch chinese_dragon
 x 22
 y 35
 end
@@ -6270,6 +6307,10 @@ y 19
 end
 arch afloor_left
 name floor
+x 23
+y 20
+end
+arch titan
 x 23
 y 20
 end
@@ -6608,6 +6649,10 @@ y 31
 end
 arch afloor_left
 name floor
+x 24
+y 32
+end
+arch chinese_dragon
 x 24
 y 32
 end
@@ -8171,48 +8216,4 @@ end
 arch bwall_2_2_4
 x 29
 y 39
-end
-arch dread
-x 9
-y 17
-end
-arch dragon
-x 11
-y 26
-end
-arch dragon
-x 11
-y 27
-end
-arch giant
-x 12
-y 36
-end
-arch giant
-x 14
-y 35
-end
-arch dread
-x 16
-y 24
-end
-arch dread
-x 16
-y 28
-end
-arch big_dragon
-x 22
-y 25
-end
-arch chinese_dragon
-x 22
-y 35
-end
-arch titan
-x 23
-y 20
-end
-arch chinese_dragon
-x 24
-y 32
 end

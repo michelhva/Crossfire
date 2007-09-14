@@ -1,5 +1,7 @@
 arch map
 name Bogustest
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -29,10 +31,10 @@ ac -8
 y 2
 speed 0.200000
 level 13
-immune 2
 carrying 100
 undead 1
 stand_still 1
+immune 2
 arch ability_paralyze
 end
 arch ability_fear
@@ -64,16 +66,16 @@ ac -15
 y 4
 speed -0.700000
 level 20
-immune 282665
 attacktype 262145
 carrying 13000
 see_invisible 1
+immune 282665
 arch falchion
 name wicked sabre
 dam 25
 attacktype 262145
-vulnerable 256
 last_sp 4
+vulnerable 256
 end
 end
 arch sailor
@@ -92,23 +94,22 @@ ac -15
 y 7
 speed -0.800000
 level 20
-immune 20512
-protected 1
 attacktype 256
 carrying 20000
 see_invisible 1
 unaggressive 0
 can_use_skill 0
+immune 1
 arch katana_1
 name sleek katana
 slaying unnatural
 dam 15
 nrof 2
 attacktype 256
-vulnerable 128
 weight 10000
 magic 4
 last_sp 0
+vulnerable 128
 end
 end
 arch a_priest
@@ -134,10 +135,10 @@ x 1
 y 2
 speed 0.400000
 level 10
-immune 20496
 see_invisible 1
 undead 1
 stand_still 1
+immune 20496
 arch ability_coldspell
 end
 arch ability_cold
@@ -162,8 +163,8 @@ x 1
 y 4
 speed -0.400000
 level 13
-immune 282662
 see_invisible 1
+immune 282662
 arch ability_hellfire
 end
 arch ability_dragon
@@ -188,10 +189,9 @@ y 7
 speed -0.400000
 attack_movement 7
 level 20
-immune 20512
-protected 2
 see_invisible 1
 unaggressive 0
+immune 2
 arch ability_heal
 end
 arch ability_petsummoning
@@ -297,9 +297,9 @@ x 2
 y 4
 speed -0.400000
 level 22
-immune 283684
 see_invisible 1
 can_cast_spell 1
+immune 283684
 arch ability_paralyze
 end
 arch ability_firespell
@@ -329,9 +329,8 @@ x 2
 y 7
 speed -0.400000
 level 22
-immune 20528
-protected 2
 see_invisible 1
+immune 2
 arch ability_mass_confusion
 end
 arch ability_cold
@@ -387,7 +386,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-INFIDEL! 
+INFIDEL!
 Gorokh will punish you for your blasfem
 endmsg
 Con 15
@@ -448,16 +447,14 @@ exp 150000
 dam 50
 wc -15
 ac -10
-armour 50
 x 5
 y 4
 speed -0.350000
 level 25
-immune 282658
-protected 1
 see_invisible 1
 can_cast_spell 1
 stand_still 0
+armour 1
 arch ability_fear
 end
 arch ability_paralyze
@@ -477,9 +474,7 @@ x 5
 y 7
 speed -0.400000
 level 25
-immune 152254
-protected 1
-vulnerable 64
+immune 64
 end
 arch c_priest
 name High Priest of Chaos
@@ -499,8 +494,8 @@ wc -15
 ac -13
 x 6
 level 25
-immune 262150
 stand_still 1
+immune 262150
 arch ability_pool_chaos
 end
 arch ability_slow
@@ -535,9 +530,9 @@ x 6
 y 2
 speed -0.400000
 level 13
-immune 262150
 see_invisible 1
 stand_still 1
+immune 262150
 arch ability_hellfire
 end
 arch ability_dragon
@@ -561,8 +556,8 @@ x 6
 y 4
 speed -0.400000
 level 31
-immune 21600
 see_invisible 1
+immune 21600
 arch ability_fear
 end
 arch ability_poison
@@ -583,13 +578,12 @@ exp 250000
 dam 25
 wc -20
 ac -15
-armour 30
 x 6
 y 7
 speed -0.600000
 level 31
-immune 20514
 attacktype 2
+armour 20514
 arch ability_speedball
 end
 arch ability_missile
@@ -618,10 +612,10 @@ x 7
 y 4
 speed -0.400000
 level 40
-immune 283680
 attacktype 283648
 see_invisible 1
 can_cast_spell 1
+immune 283680
 arch ability_fear
 end
 arch ability_fear
@@ -646,10 +640,9 @@ x 7
 y 7
 speed -0.400000
 level 40
-immune 20512
-protected 30
 see_invisible 1
 unaggressive 0
+immune 30
 arch ability_slow
 end
 arch ability_paralyze
@@ -672,6 +665,89 @@ x 7
 y 11
 value 30000
 end
+arch byakie
+name cave byakie
+Str 90
+Dex 65
+Con 90
+Wis 20
+Pow 75
+Int 30
+hp 10000
+maxhp 8000
+sp 200
+maxsp 200
+exp 700000
+dam 60
+wc -50
+ac -40
+x 8
+y 4
+speed -0.700000
+level 50
+carrying 25000
+immune 283683
+arch gem
+nrof 500
+end
+arch ability_cold
+end
+arch ability_dragon
+end
+arch ability_slow
+end
+end
+arch djinn
+Str 75
+Dex 60
+Con 90
+Wis 30
+Pow 127
+Int 75
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 750000
+dam 40
+wc -45
+ac -60
+x 8
+y 6
+speed 0.900000
+level 75
+carrying 650
+immune 153215
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 10
+value 40000
+weight 65
+is_animated 0
+end
+arch ability_cold
+end
+arch ability_fire
+end
+arch ability_fear
+end
+arch ability_heal
+end
+arch ability_lightning
+end
+arch ability_paralyze
+end
+arch ability_poison
+end
+arch ability_mass_confusion
+end
+arch ability_paralyze
+end
+arch ability_speedball
+end
+end
 arch turban
 name shimmering turban
 title of the heavens
@@ -685,13 +761,13 @@ Int 2
 hp 1
 sp 1
 ac 2
-armour 5
 x 9
 y 12
 value 1000000
 last_heal 0
 glow_radius 2
 identified 1
+armour 5
 end
 arch key2
 name a sharpedged key
@@ -711,20 +787,17 @@ maxsp 500
 exp 1000000
 dam 80
 ac -40
-armour 50
 x 10
 y 4
 speed -0.600000
 attack_movement 0
 level 99
-immune 393728
-protected 21679
 attacktype 262657
-vulnerable 0
 carrying 4250
 see_invisible 1
 unaggressive 0
 can_cast_spell 1
+armour 0
 arch ability_slow
 end
 arch ability_speedball
@@ -774,13 +847,11 @@ y 7
 speed -0.500000
 attack_movement 0
 level 99
-immune 151557
-protected 3504
 attacktype 257
-vulnerable 2
 carrying 3254
 see_invisible 1
 can_cast_spell 1
+immune 2
 arch ability_bullet
 end
 arch ability_fire
@@ -811,12 +882,12 @@ slaying human
 dam 65
 x 10
 y 12
-protected 262144
 attacktype 256
 material 256
 magic 5
 last_sp 2
 identified 1
+protected 262144
 end
 arch liteangel
 name Lorkas the fallen
@@ -840,11 +911,10 @@ speed 1.000000
 speed_left -0.860000
 attack_movement 8
 level 127
-immune 1529461
-protected 394
 attacktype 22817
 carrying 100
 reflect_spell 1
+immune 394
 arch key2
 name a white shimmering key
 slaying Lorkas treasure key
@@ -869,88 +939,5 @@ end
 arch ability_dragon
 end
 arch ability_cold
-end
-end
-arch byakie
-name cave byakie
-Str 90
-Dex 65
-Con 90
-Wis 20
-Pow 75
-Int 30
-hp 10000
-maxhp 8000
-sp 200
-maxsp 200
-exp 700000
-dam 60
-wc -50
-ac -40
-x 8
-y 4
-speed -0.700000
-level 50
-immune 283683
-carrying 25000
-arch gem
-nrof 500
-end
-arch ability_cold
-end
-arch ability_dragon
-end
-arch ability_slow
-end
-end
-arch djinn
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 8
-y 6
-speed 0.900000
-level 75
-immune 153215
-carrying 650
-arch gem
-title of exceptional beauty
-face pretty_crystal.111
-speed 0.000000
-nrof 10
-value 40000
-weight 65
-is_animated 0
-end
-arch ability_cold
-end
-arch ability_fire
-end
-arch ability_fear
-end
-arch ability_heal
-end
-arch ability_lightning
-end
-arch ability_paralyze
-end
-arch ability_poison
-end
-arch ability_mass_confusion
-end
-arch ability_paralyze
-end
-arch ability_speedball
 end
 end

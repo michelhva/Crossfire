@@ -1,9 +1,10 @@
 arch map
+name <unnamed>
 region santodominion
-hp 1
-sp 17
-x 30
-y 30
+width 30
+height 30
+enter_x 1
+enter_y 17
 end
 arch stonefloor2
 name stonefloor
@@ -190,12 +191,20 @@ arch stonefloor2
 name stonefloor
 y 26
 end
+arch troll
+name lizard
+y 26
+end
 arch stonefloor2
 name stonefloor
 y 27
 end
 arch stonefloor2
 name stonefloor
+y 28
+end
+arch troll
+name lizard
 y 28
 end
 arch stonefloor2
@@ -854,6 +863,10 @@ x 3
 y 28
 end
 arch random_treasure
+x 3
+y 28
+end
+arch dread
 x 3
 y 28
 end
@@ -4495,6 +4508,10 @@ arch booze
 x 19
 y 17
 end
+arch dread
+x 19
+y 17
+end
 arch stonefloor2
 name stonefloor
 x 19
@@ -4510,6 +4527,10 @@ x 19
 y 19
 end
 arch chest
+x 19
+y 19
+end
+arch dread
 x 19
 y 19
 end
@@ -4968,6 +4989,10 @@ arch booze
 x 21
 y 17
 end
+arch dread
+x 21
+y 17
+end
 arch stonefloor2
 name stonefloor
 x 21
@@ -5192,6 +5217,10 @@ arch random_treasure
 x 22
 y 15
 end
+arch dread
+x 22
+y 15
+end
 arch stonefloor2
 name stonefloor
 x 22
@@ -5300,6 +5329,10 @@ x 22
 y 28
 end
 arch random_wealth
+x 22
+y 28
+end
+arch dread
 x 22
 y 28
 end
@@ -6015,6 +6048,10 @@ x 25
 y 25
 end
 arch booze
+x 25
+y 25
+end
+arch dread
 x 25
 y 25
 end
@@ -6735,6 +6772,10 @@ arch random_wealth
 x 28
 y 22
 end
+arch dread
+x 28
+y 22
+end
 arch stonefloor2
 name stonefloor
 x 28
@@ -7072,44 +7113,4 @@ end
 arch booze
 x 29
 y 29
-end
-arch troll
-name lizard
-y 26
-end
-arch troll
-name lizard
-y 28
-end
-arch dread
-x 3
-y 28
-end
-arch dread
-x 19
-y 17
-end
-arch dread
-x 19
-y 19
-end
-arch dread
-x 21
-y 17
-end
-arch dread
-x 22
-y 15
-end
-arch dread
-x 22
-y 28
-end
-arch dread
-x 25
-y 25
-end
-arch dread
-x 28
-y 22
 end

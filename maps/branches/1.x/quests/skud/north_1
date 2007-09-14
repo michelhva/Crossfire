@@ -1,13 +1,14 @@
 arch map
+name <unnamed>
+width 30
+height 40
+enter_x 15
+enter_y 38
 msg
 Creator: 
 Email: 
 Date: Tue Nov 16 14:07:01 1993
 endmsg
-hp 15
-sp 38
-x 30
-y 40
 end
 arch marble
 name ice
@@ -1129,8 +1130,8 @@ wc -3
 x 4
 y 22
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 4
@@ -1146,8 +1147,8 @@ wc -3
 x 4
 y 23
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 4
@@ -1163,8 +1164,8 @@ wc -3
 x 4
 y 24
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 4
@@ -1180,8 +1181,8 @@ wc -3
 x 4
 y 25
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 4
@@ -1197,8 +1198,8 @@ wc -3
 x 4
 y 26
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 4
@@ -1433,8 +1434,8 @@ wc -3
 x 5
 y 22
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 5
@@ -1450,8 +1451,8 @@ wc -3
 x 5
 y 23
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 5
@@ -1467,8 +1468,8 @@ wc -3
 x 5
 y 24
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 5
@@ -1484,8 +1485,8 @@ wc -3
 x 5
 y 25
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 5
@@ -1737,8 +1738,8 @@ wc -3
 x 6
 y 23
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 6
@@ -1754,8 +1755,8 @@ wc -3
 x 6
 y 24
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 6
@@ -1771,8 +1772,8 @@ wc -3
 x 6
 y 25
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 6
@@ -2013,8 +2014,8 @@ wc -3
 x 7
 y 22
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 7
@@ -2030,8 +2031,8 @@ wc -3
 x 7
 y 23
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 7
@@ -2288,8 +2289,8 @@ wc -3
 x 8
 y 22
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 8
@@ -2305,8 +2306,8 @@ wc -3
 x 8
 y 23
 speed 0.300000
-immune 16
 attacktype 16385
+immune 16
 end
 arch marble
 x 8
@@ -2364,7 +2365,7 @@ for Thee to come.
 I am Guat' hdolamar puny mortal, what
 does thoust want? To feel my claws
 deep in your throat would give me
-great pleasure. 
+great pleasure.
 endmsg
 hp 6000
 maxhp 6000
@@ -2374,9 +2375,9 @@ wc -14
 x 8
 y 27
 speed 0.600000
-immune 29
 carrying 100
 unaggressive 1
+immune 29
 arch key2
 name Very hot key
 slaying hell
@@ -3580,7 +3581,7 @@ arch locked_door2
 slaying blackdoor
 msg
 This door has some sort of strange
-symbol on it. 
+symbol on it.
 endmsg
 x 12
 y 29
@@ -3593,7 +3594,7 @@ arch locked_door2
 slaying blackdoor
 msg
 This door has some sort of strange
-symbol on it. 
+symbol on it.
 endmsg
 x 12
 y 30
@@ -5637,6 +5638,10 @@ arch marble
 x 19
 y 6
 end
+arch behemoth
+x 19
+y 6
+end
 arch marble
 x 19
 y 7
@@ -6204,7 +6209,7 @@ x 21
 y 11
 end
 arch book_read
-name How to summon 
+name How to summon
 msg
 Summoning greater monsters is an
 artform. If done correctly, creatures
@@ -8600,8 +8605,4 @@ name ice
 face icestorm.111
 x 29
 y 39
-end
-arch behemoth
-x 19
-y 6
 end

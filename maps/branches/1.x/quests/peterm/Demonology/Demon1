@@ -1,12 +1,12 @@
 arch map
 name Demon1
+width 15
+height 15
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Mon May 30 13:08:53 1994
 endmsg
-x 15
-y 15
 end
 arch woodfloor
 end
@@ -1284,7 +1284,7 @@ though.  But elementals hate the sound
 of their own name, it strikes fear
 into them.  So if you can get the name
 of the elementals, you may be able to
-force them to tell you what you want. 
+force them to tell you what you want.
 @match thank you|Thank you
 Why you're welcome!  It's really rare
 to find adventurers these days who
@@ -2046,7 +2046,7 @@ x 13
 end
 arch rune_summon_devil
 msg
-A portal opens up, and screaming hordes 
+A portal opens up, and screaming hordes
 pour through!
 endmsg
 maxhp 20
@@ -2118,7 +2118,7 @@ y 12
 end
 arch rune_summon_devil
 msg
-A portal opens up, and screaming hordes 
+A portal opens up, and screaming hordes
 pour through!
 endmsg
 maxhp 20

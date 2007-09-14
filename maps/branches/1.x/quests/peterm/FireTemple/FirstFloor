@@ -1,12 +1,12 @@
 arch map
 name FirstFloor
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Apr 17 16:30:30 1997
 endmsg
-x 30
-y 30
 end
 arch cobblestones2
 end
@@ -328,6 +328,11 @@ end
 arch cobblestones2
 x 1
 y 20
+end
+arch pentagram_111
+x 1
+y 20
+no_pass 1
 end
 arch cobblestones2
 x 1
@@ -1591,6 +1596,11 @@ arch cobblestones2
 x 7
 y 1
 end
+arch pentagram_111
+x 7
+y 1
+no_pass 1
+end
 arch cobblestones2
 x 7
 y 2
@@ -2387,6 +2397,11 @@ end
 arch cobblestones2
 x 10
 y 20
+end
+arch pentagram_111
+x 10
+y 20
+no_pass 1
 end
 arch cobblestones2
 x 10
@@ -3570,6 +3585,11 @@ arch cobblestones2
 x 16
 y 2
 end
+arch big_demon
+name Principal Investigator
+x 16
+y 2
+end
 arch cobblestones2
 x 16
 y 3
@@ -3835,6 +3855,11 @@ end
 arch cobblestones2
 x 17
 y 14
+end
+arch pentagram_111
+x 17
+y 14
+no_pass 1
 end
 arch cobblestones2
 x 17
@@ -4325,6 +4350,12 @@ end
 arch phil_phosphorus
 x 20
 y 1
+end
+arch pentagram_111
+x 20
+y 1
+no_pass 1
+is_floor 1
 end
 arch cobblestones2
 x 20
@@ -5829,6 +5860,11 @@ arch cobblestones2
 x 26
 y 1
 end
+arch pentagram_111
+x 26
+y 1
+no_pass 1
+end
 arch cobblestones2
 x 26
 y 2
@@ -6832,40 +6868,4 @@ end
 arch mine12
 x 29
 y 29
-end
-arch pentagram_111
-x 1
-y 20
-no_pass 1
-end
-arch pentagram_111
-x 7
-y 1
-no_pass 1
-end
-arch pentagram_111
-x 10
-y 20
-no_pass 1
-end
-arch big_demon
-name Principal Investigator
-x 16
-y 2
-end
-arch pentagram_111
-x 17
-y 14
-no_pass 1
-end
-arch pentagram_111
-x 20
-y 1
-no_pass 1
-is_floor 1
-end
-arch pentagram_111
-x 26
-y 1
-no_pass 1
 end

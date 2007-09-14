@@ -3029,14 +3029,14 @@ resist_holyword 90
 carrying 100
 weight 150000
 randomitems rich
-run_away 0
 will_apply 0
-can_apply 0
+run_away 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 sleep 1
 can_use_skill 0
+can_apply 0
 arch spell_regenerate_spellpoints
 end
 arch abil_icestorm

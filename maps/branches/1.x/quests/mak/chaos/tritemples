@@ -1,13 +1,13 @@
 arch map
 name temples
+swap_time 5300
+width 54
+height 25
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Sun Apr  9 23:46:05 2000
 endmsg
-x 54
-y 25
-value 5300
 end
 arch blocked
 end
@@ -2508,8 +2508,8 @@ end
 arch sign_w
 name Devourers
 msg
-Devourers the Soul eaters 
- Harbringers of Death 
+Devourers the Soul eaters
+ Harbringers of Death
  Nameless Lords of the Tomb
 endmsg
 x 13
@@ -6115,7 +6115,7 @@ arch holy_priest
 name Priest
 msg
 @match *
-INFIDEL! 
+INFIDEL!
 Gorokh will punish you for your blasfem
 endmsg
 Con 15

@@ -1,13 +1,13 @@
 arch map
 name GemTunnel
+darkness 5
+width 8
+height 40
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Fri Jan 14 11:50:20 1994
 endmsg
-width 8
-height 40
-darkness 5
 end
 arch bwall_2_2_2
 end
@@ -57,46 +57,46 @@ arch cobblestones
 y 8
 end
 arch firewall_3
-level 2
 y 8
-end
-arch cobblestones
-y 9
-end
-arch firewall_3
-y 9
-end
-arch cobblestones
-y 10
-end
-arch lightningwall_2
-y 10
-end
-arch cobblestones
-y 11
-end
-arch lightningwall_3
-y 11
-end
-arch cobblestones
-y 12
-end
-arch lightningwall_4
-y 12
-end
-arch cobblestones
-y 13
-end
-arch firewall_2
-y 13
-end
-arch cobblestones
-y 14
-end
-arch firewall_3
 level 2
+end
+arch cobblestones
+y 9
+end
+arch firewall_3
+y 9
+end
+arch cobblestones
+y 10
+end
+arch lightningwall_2
+y 10
+end
+arch cobblestones
+y 11
+end
+arch lightningwall_3
+y 11
+end
+arch cobblestones
+y 12
+end
+arch lightningwall_4
+y 12
+end
+arch cobblestones
+y 13
+end
+arch firewall_2
+y 13
+end
+arch cobblestones
 y 14
 end
+arch firewall_3
+y 14
+level 2
+end
 arch cobblestones
 y 15
 end
@@ -131,8 +131,8 @@ arch cobblestones
 y 20
 end
 arch firewall_3
-level 4
 y 20
+level 4
 end
 arch cobblestones
 y 21
@@ -186,8 +186,8 @@ arch cobblestones
 y 29
 end
 arch lightningwall_3
-level 3
 y 29
+level 3
 end
 arch cobblestones
 y 30
@@ -199,15 +199,15 @@ arch cobblestones
 y 31
 end
 arch firewall_2
-level 4
 y 31
+level 4
 end
 arch cobblestones
 y 32
 end
 arch firewall_3
-level 3
 y 32
+level 3
 end
 arch cobblestones
 y 33
@@ -225,8 +225,8 @@ arch cobblestones
 y 35
 end
 arch lightningwall_3
-level 3
 y 35
+level 3
 end
 arch cobblestones
 y 36
@@ -265,40 +265,40 @@ x 1
 y 2
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 2
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 3
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 3
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 4
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 4
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 5
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 5
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -313,50 +313,50 @@ x 1
 y 7
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 7
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 8
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 8
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 9
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 9
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 10
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 10
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 11
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 11
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -371,50 +371,50 @@ x 1
 y 13
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 13
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 14
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 14
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 15
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 15
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 16
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 16
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 17
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 17
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -429,50 +429,50 @@ x 1
 y 19
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 19
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 20
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 20
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 21
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 21
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 22
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 22
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 23
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 23
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -487,30 +487,30 @@ x 1
 y 25
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 25
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 26
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 26
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 27
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 27
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -525,50 +525,50 @@ x 1
 y 29
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 29
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 30
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 30
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 31
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 31
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 32
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 32
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 33
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 33
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -583,20 +583,20 @@ x 1
 y 35
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 35
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
 y 36
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 1
 y 36
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 1
@@ -637,10 +637,10 @@ x 2
 y 2
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 2
 y 2
+speed 0.500000
+connected 7
 end
 arch unholy_ground
 x 2
@@ -655,9 +655,9 @@ x 2
 y 4
 end
 arch rune_create_bomb
-level 5
 x 2
 y 4
+level 5
 end
 arch cobblestones
 x 2
@@ -672,10 +672,10 @@ x 2
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 2
 y 6
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 2
@@ -706,9 +706,9 @@ x 2
 y 10
 end
 arch rune_ball_lightning
-level 4
 x 2
 y 10
+level 4
 end
 arch cobblestones
 x 2
@@ -747,9 +747,9 @@ x 2
 y 15
 end
 arch rune_large_fireball
-level 3
 x 2
 y 15
+level 3
 end
 arch cobblestones
 x 2
@@ -868,9 +868,9 @@ x 2
 y 32
 end
 arch rune_large_fireball
-level 4
 x 2
 y 32
+level 4
 end
 arch cobblestones
 x 2
@@ -901,10 +901,10 @@ x 2
 y 36
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 2
 y 36
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 2
@@ -946,9 +946,9 @@ y 1
 end
 arch button_small
 face button_sma.112
-connected 7
 x 3
 y 1
+connected 7
 end
 arch magic_mouth
 msg
@@ -968,10 +968,10 @@ end
 arch power_crystal
 sp 300
 maxsp 500
-value 100000
-weight 3
 x 3
 y 1
+value 100000
+weight 3
 end
 arch unholy_ground
 x 3
@@ -1014,19 +1014,19 @@ x 3
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 3
 y 6
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 3
 y 7
 end
 arch rune_create_bomb
-level 4
 x 3
 y 7
+level 4
 end
 arch cobblestones
 x 3
@@ -1041,18 +1041,18 @@ x 3
 y 9
 end
 arch rune_ball_lightning
-level 2
 x 3
 y 9
+level 2
 end
 arch cobblestones
 x 3
 y 10
 end
 arch rune_ball_lightning
-level 3
 x 3
 y 10
+level 3
 end
 arch cobblestones
 x 3
@@ -1063,9 +1063,9 @@ x 3
 y 12
 end
 arch rune_ball_lightning
-level 4
 x 3
 y 12
+level 4
 end
 arch cobblestones
 x 3
@@ -1220,19 +1220,19 @@ x 3
 y 35
 end
 arch rune_shock
-level 3
 x 3
 y 35
+level 3
 end
 arch cobblestones
 x 3
 y 36
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 3
 y 36
+speed 0.500000
+connected 7
 end
 arch magic_mouth
 msg
@@ -1330,9 +1330,9 @@ x 4
 y 5
 end
 arch rune_create_bomb
-level 3
 x 4
 y 5
+level 3
 end
 arch cobblestones
 x 4
@@ -1343,10 +1343,10 @@ x 4
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 4
 y 6
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 4
@@ -1401,9 +1401,9 @@ x 4
 y 15
 end
 arch rune_large_fireball
-level 5
 x 4
 y 15
+level 5
 end
 arch cobblestones
 x 4
@@ -1418,9 +1418,9 @@ x 4
 y 17
 end
 arch rune_large_fireball
+x 4
+y 17
 level 4
-x 4
-y 17
 end
 arch cobblestones
 x 4
@@ -1531,9 +1531,9 @@ x 4
 y 34
 end
 arch rune_shock
-level 2
 x 4
 y 34
+level 2
 end
 arch cobblestones
 x 4
@@ -1544,10 +1544,10 @@ x 4
 y 36
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 4
 y 36
+speed 0.500000
+connected 7
 end
 arch magic_mouth
 msg
@@ -1613,10 +1613,10 @@ x 5
 y 2
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 5
 y 2
+speed 0.500000
+connected 7
 end
 arch unholy_ground
 x 5
@@ -1627,9 +1627,9 @@ x 5
 y 3
 end
 arch rune_create_bomb
-level 4
 x 5
 y 3
+level 4
 end
 arch cobblestones
 x 5
@@ -1656,10 +1656,10 @@ x 5
 y 6
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 5
 y 6
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 5
@@ -1690,9 +1690,9 @@ x 5
 y 11
 end
 arch rune_ball_lightning
-level 5
 x 5
 y 11
+level 5
 end
 arch cobblestones
 x 5
@@ -1715,9 +1715,9 @@ x 5
 y 14
 end
 arch rune_large_fireball
-level 4
 x 5
 y 14
+level 4
 end
 arch cobblestones
 x 5
@@ -1848,9 +1848,9 @@ x 5
 y 31
 end
 arch rune_large_fireball
-level 3
 x 5
 y 31
+level 3
 end
 arch cobblestones
 x 5
@@ -1881,10 +1881,10 @@ x 5
 y 36
 end
 arch block_door_closed
-speed 0.500000
-connected 7
 x 5
 y 36
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 5
@@ -1929,259 +1929,259 @@ x 6
 y 2
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 2
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 3
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 3
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 4
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 4
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 5
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 5
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 6
 end
 arch block_door_open
-speed 0.500000
 x 6
 y 6
+speed 0.500000
 end
 arch cobblestones
 x 6
 y 7
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 7
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 8
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 8
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 9
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 9
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 10
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 10
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 11
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 11
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 12
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 12
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 13
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 13
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 14
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 14
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 15
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 15
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 16
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 16
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 17
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 17
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 18
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 18
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 19
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 19
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 20
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 20
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 21
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 21
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 22
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 22
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 23
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 23
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 24
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 24
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 25
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 25
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 26
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 26
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 27
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 27
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
@@ -2196,50 +2196,50 @@ x 6
 y 29
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 29
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 30
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 30
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 31
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 31
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 32
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 32
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 33
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 33
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
@@ -2254,20 +2254,20 @@ x 6
 y 35
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 35
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
 y 36
 end
 arch block_door_open
-speed 0.500000
-connected 7
 x 6
 y 36
+speed 0.500000
+connected 7
 end
 arch cobblestones
 x 6
@@ -2360,207 +2360,207 @@ x 7
 y 9
 end
 arch firewall_7
-level 2
 x 7
 y 9
-end
-arch cobblestones
-x 7
-y 10
-end
-arch lightningwall_8
-x 7
-y 10
-end
-arch cobblestones
-x 7
-y 11
-end
-arch lightningwall_7
-x 7
-y 11
-end
-arch cobblestones
-x 7
-y 12
-end
-arch lightningwall_6
-x 7
-y 12
-end
-arch cobblestones
-x 7
-y 13
-end
-arch firewall_8
-level 3
-x 7
-y 13
-end
-arch cobblestones
-x 7
-y 14
-end
-arch firewall_7
-x 7
-y 14
-end
-arch cobblestones
-x 7
-y 15
-end
-arch firewall_6
-x 7
-y 15
-end
-arch cobblestones
-x 7
-y 16
-end
-arch lightningwall_8
-x 7
-y 16
-end
-arch cobblestones
-x 7
-y 17
-end
-arch lightningwall_7
-level 5
-x 7
-y 17
-end
-arch cobblestones
-x 7
-y 18
-end
-arch lightningwall_6
-x 7
-y 18
-end
-arch cobblestones
-x 7
-y 19
-end
-arch firewall_8
-x 7
-y 19
-end
-arch cobblestones
-x 7
-y 20
-end
-arch firewall_7
-x 7
-y 20
-end
-arch cobblestones
-x 7
-y 21
-end
-arch firewall_6
-level 3
-x 7
-y 21
-end
-arch cobblestones
-x 7
-y 22
-end
-arch lightningwall_8
-x 7
-y 22
-end
-arch cobblestones
-x 7
-y 23
-end
-arch lightningwall_7
-x 7
-y 23
-end
-arch cobblestones
-x 7
-y 24
-end
-arch lightningwall_6
-x 7
-y 24
-end
-arch cobblestones
-x 7
-y 25
-end
-arch firewall_8
-x 7
-y 25
-end
-arch cobblestones
-x 7
-y 26
-end
-arch firewall_7
-x 7
-y 26
-end
-arch cobblestones
-x 7
-y 27
-end
-arch firewall_6
-level 4
-x 7
-y 27
-end
-arch cobblestones
-x 7
-y 28
-end
-arch lightningwall_8
-x 7
-y 28
-end
-arch cobblestones
-x 7
-y 29
-end
-arch lightningwall_7
-x 7
-y 29
-end
-arch cobblestones
-x 7
-y 30
-end
-arch lightningwall_6
-x 7
-y 30
-end
-arch cobblestones
-x 7
-y 31
-end
-arch firewall_8
-x 7
-y 31
-end
-arch cobblestones
-x 7
-y 32
-end
-arch firewall_7
-level 3
-x 7
-y 32
-end
-arch cobblestones
-x 7
-y 33
-end
-arch firewall_6
 level 2
+end
+arch cobblestones
+x 7
+y 10
+end
+arch lightningwall_8
+x 7
+y 10
+end
+arch cobblestones
+x 7
+y 11
+end
+arch lightningwall_7
+x 7
+y 11
+end
+arch cobblestones
+x 7
+y 12
+end
+arch lightningwall_6
+x 7
+y 12
+end
+arch cobblestones
+x 7
+y 13
+end
+arch firewall_8
+x 7
+y 13
+level 3
+end
+arch cobblestones
+x 7
+y 14
+end
+arch firewall_7
+x 7
+y 14
+end
+arch cobblestones
+x 7
+y 15
+end
+arch firewall_6
+x 7
+y 15
+end
+arch cobblestones
+x 7
+y 16
+end
+arch lightningwall_8
+x 7
+y 16
+end
+arch cobblestones
+x 7
+y 17
+end
+arch lightningwall_7
+x 7
+y 17
+level 5
+end
+arch cobblestones
+x 7
+y 18
+end
+arch lightningwall_6
+x 7
+y 18
+end
+arch cobblestones
+x 7
+y 19
+end
+arch firewall_8
+x 7
+y 19
+end
+arch cobblestones
+x 7
+y 20
+end
+arch firewall_7
+x 7
+y 20
+end
+arch cobblestones
+x 7
+y 21
+end
+arch firewall_6
+x 7
+y 21
+level 3
+end
+arch cobblestones
+x 7
+y 22
+end
+arch lightningwall_8
+x 7
+y 22
+end
+arch cobblestones
+x 7
+y 23
+end
+arch lightningwall_7
+x 7
+y 23
+end
+arch cobblestones
+x 7
+y 24
+end
+arch lightningwall_6
+x 7
+y 24
+end
+arch cobblestones
+x 7
+y 25
+end
+arch firewall_8
+x 7
+y 25
+end
+arch cobblestones
+x 7
+y 26
+end
+arch firewall_7
+x 7
+y 26
+end
+arch cobblestones
+x 7
+y 27
+end
+arch firewall_6
+x 7
+y 27
+level 4
+end
+arch cobblestones
+x 7
+y 28
+end
+arch lightningwall_8
+x 7
+y 28
+end
+arch cobblestones
+x 7
+y 29
+end
+arch lightningwall_7
+x 7
+y 29
+end
+arch cobblestones
+x 7
+y 30
+end
+arch lightningwall_6
+x 7
+y 30
+end
+arch cobblestones
+x 7
+y 31
+end
+arch firewall_8
+x 7
+y 31
+end
+arch cobblestones
+x 7
+y 32
+end
+arch firewall_7
+x 7
+y 32
+level 3
+end
+arch cobblestones
 x 7
 y 33
+end
+arch firewall_6
+x 7
+y 33
+level 2
 end
 arch cobblestones
 x 7
@@ -2575,18 +2575,18 @@ x 7
 y 35
 end
 arch lightningwall_7
-level 4
 x 7
 y 35
+level 4
 end
 arch cobblestones
 x 7
 y 36
 end
 arch lightningwall_8
-level 5
 x 7
 y 36
+level 5
 end
 arch cobblestones
 x 7

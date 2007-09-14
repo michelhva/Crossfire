@@ -1,13 +1,13 @@
 arch map
 name HotMines
+difficulty 10
+width 30
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr 15 22:39:46 1997
 endmsg
-x 30
-y 30
-level 10
 end
 arch permanent_lava
 end
@@ -1273,6 +1273,10 @@ x 6
 y 11
 end
 arch permanent_lava
+x 6
+y 12
+end
+arch big_demon
 x 6
 y 12
 end
@@ -6103,8 +6107,4 @@ end
 arch bwall_2_2_4
 x 29
 y 29
-end
-arch big_demon
-x 6
-y 12
 end

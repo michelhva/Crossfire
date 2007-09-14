@@ -1,24 +1,24 @@
 arch map
 name crypt5
+difficulty 5
+darkness 3
+width 20
+height 10
+enter_x 8
+enter_y 3
 msg
 Todd Mitchell
 Creator: CF Java Map Editor
 Date:    7/1/2002
 endmsg
-width 20
-height 10
-enter_x 8
-enter_y 3
-difficulty 5
-darkness 3
 end
 arch cobblestones2
 end
 arch teleporter
 hp 7
 sp 2
-connected 1
 speed 0.0
+connected 1
 end
 arch ghost
 end
@@ -31,9 +31,9 @@ end
 arch teleporter
 hp 15
 sp 8
-connected 2
-speed 0.0
 y 2
+speed 0.0
+connected 2
 end
 arch skeleton
 y 2
@@ -47,9 +47,9 @@ end
 arch teleporter
 hp 15
 sp 3
-connected 3
-speed 0.0
 y 4
+speed 0.0
+connected 3
 end
 arch skeleton
 y 4
@@ -63,9 +63,9 @@ end
 arch teleporter
 hp 8
 sp 7
-connected 4
-speed 0.0
 y 6
+speed 0.0
+connected 4
 end
 arch skeleton
 y 6
@@ -79,9 +79,9 @@ end
 arch teleporter
 hp 11
 sp 4
-connected 5
-speed 0.0
 y 8
+speed 0.0
+connected 5
 end
 arch skeleton
 y 8
@@ -291,9 +291,9 @@ arch bwall_2_1_2
 x 5
 end
 arch button_small
+x 5
+y 1
 connected 4
-x 5
-y 1
 end
 arch dirtfloor
 x 5
@@ -304,9 +304,9 @@ x 5
 y 2
 end
 arch button_small
-connected 1
 x 5
 y 3
+connected 1
 end
 arch dirtfloor
 x 5
@@ -329,9 +329,9 @@ x 5
 y 7
 end
 arch button_small
-connected 1
 x 5
 y 8
+connected 1
 end
 arch dirtfloor
 x 5
@@ -368,9 +368,9 @@ x 6
 y 4
 end
 arch button_small
+x 6
+y 5
 connected 3
-x 6
-y 5
 end
 arch dirtfloor
 x 6
@@ -381,9 +381,9 @@ x 6
 y 6
 end
 arch button_small
-connected 5
 x 6
 y 7
+connected 5
 end
 arch dirtfloor
 x 6
@@ -458,9 +458,9 @@ x 8
 y 1
 end
 arch button_small
-connected 1
 x 8
 y 2
+connected 1
 end
 arch dirtfloor
 x 8
@@ -486,9 +486,9 @@ x 8
 y 5
 end
 arch button_small
-connected 1
 x 8
 y 6
+connected 1
 end
 arch dirtfloor
 x 8
@@ -521,9 +521,9 @@ x 9
 y 1
 end
 arch button_small
-connected 5
 x 9
 y 2
+connected 5
 end
 arch dirtfloor
 x 9
@@ -539,16 +539,16 @@ y 4
 end
 arch sign
 msg
-Warning: This area is off limits 
+Warning: This area is off limits
 to non-military personnel.
 endmsg
 x 9
 y 4
 end
 arch button_small
+x 9
+y 5
 connected 4
-x 9
-y 5
 end
 arch dirtfloor
 x 9
@@ -559,9 +559,9 @@ x 9
 y 6
 end
 arch button_small
+x 9
+y 7
 connected 2
-x 9
-y 7
 end
 arch dirtfloor
 x 9
@@ -614,9 +614,9 @@ x 10
 y 7
 end
 arch button_small
-connected 1
 x 10
 y 8
+connected 1
 end
 arch dirtfloor
 x 10
@@ -637,9 +637,9 @@ arch bwall_2_1_2
 x 11
 end
 arch button_small
-connected 1
 x 11
 y 1
+connected 1
 end
 arch dirtfloor
 x 11
@@ -658,9 +658,9 @@ x 11
 y 4
 end
 arch button_small
+x 11
+y 5
 connected 5
-x 11
-y 5
 end
 arch dirtfloor
 x 11
@@ -671,9 +671,9 @@ x 11
 y 6
 end
 arch button_small
-connected 4
 x 11
 y 7
+connected 4
 end
 arch dirtfloor
 x 11
@@ -702,9 +702,9 @@ x 12
 y 1
 end
 arch button_small
-connected 2
 x 12
 y 2
+connected 2
 end
 arch dirtfloor
 x 12
@@ -749,9 +749,9 @@ arch bwall_2_1_2
 x 13
 end
 arch button_small
-connected 4
 x 13
 y 1
+connected 4
 end
 arch dirtfloor
 x 13
@@ -766,9 +766,9 @@ x 13
 y 3
 end
 arch button_small
+x 13
+y 4
 connected 1
-x 13
-y 4
 end
 arch dirtfloor
 x 13
@@ -779,9 +779,9 @@ x 13
 y 5
 end
 arch button_small
+x 13
+y 6
 connected 5
-x 13
-y 6
 end
 arch dirtfloor
 x 13
@@ -792,9 +792,9 @@ x 13
 y 7
 end
 arch button_small
-connected 2
 x 13
 y 8
+connected 2
 end
 arch dirtfloor
 x 13
@@ -865,9 +865,9 @@ x 15
 y 1
 end
 arch button_small
+x 15
+y 2
 connected 3
-x 15
-y 2
 end
 arch dirtfloor
 x 15
@@ -878,18 +878,18 @@ x 15
 y 3
 end
 arch button_small
-connected 2
 x 15
 y 4
+connected 2
 end
 arch dirtfloor
 x 15
 y 4
 end
 arch button_small
-connected 4
 x 15
 y 5
+connected 4
 end
 arch dirtfloor
 x 15
@@ -900,9 +900,9 @@ x 15
 y 6
 end
 arch button_small
+x 15
+y 7
 connected 1
-x 15
-y 7
 end
 arch dirtfloor
 x 15
@@ -927,9 +927,9 @@ arch bwall_2_1_2
 x 16
 end
 arch button_small
+x 16
+y 1
 connected 5
-x 16
-y 1
 end
 arch dirtfloor
 x 16
@@ -982,9 +982,9 @@ x 17
 y 1
 end
 arch button_small
-connected 4
 x 17
 y 2
+connected 4
 end
 arch dirtfloor
 x 17
@@ -995,9 +995,9 @@ x 17
 y 3
 end
 arch button_small
-connected 3
 x 17
 y 4
+connected 3
 end
 arch dirtfloor
 x 17
@@ -1012,9 +1012,9 @@ x 17
 y 6
 end
 arch button_small
-connected 3
 x 17
 y 7
+connected 3
 end
 arch dirtfloor
 x 17
@@ -1078,9 +1078,9 @@ x 18
 y 7
 end
 arch button_small
-connected 2
 x 18
 y 8
+connected 2
 end
 arch dirtfloor
 x 18

@@ -1,14 +1,14 @@
 arch map
 name DragonQuest
+width 41
+height 41
+enter_x 2
+enter_y 2
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 16:41:17 1994
 endmsg
-width 41
-height 41
-enter_x 2
-enter_y 2
 end
 arch blocked
 end
@@ -888,6 +888,10 @@ arch pstone_2
 x 3
 y 20
 end
+arch big_elec
+x 3
+y 20
+end
 arch pstone_2
 x 3
 y 21
@@ -1583,6 +1587,10 @@ arch pstone_2
 x 6
 y 23
 end
+arch big_elec
+x 6
+y 23
+end
 arch pstone_2
 x 6
 y 24
@@ -2080,6 +2088,10 @@ x 8
 y 27
 end
 arch pstone_2
+x 8
+y 28
+end
+arch big_elec
 x 8
 y 28
 end
@@ -2757,6 +2769,14 @@ arch pstone_2
 x 11
 y 32
 end
+arch big_elec
+x 11
+y 32
+carrying 100
+arch key2
+slaying SecondDoor
+end
+end
 arch pstone_2
 x 11
 y 33
@@ -3331,6 +3351,7 @@ y 16
 end
 arch spear
 name Ruggilli's Whisker
+slaying dragon
 msg
 You see Ruggilli's whisker.
 It is said that to help his priests
@@ -3341,7 +3362,6 @@ weapon.
 Not many may use this weapon without
 being devoured by it.
 endmsg
-slaying dragon
 Str 8
 Dex 8
 Con 8
@@ -3355,6 +3375,8 @@ dam 100
 luck 5
 wc 8
 ac 8
+x 14
+y 16
 nrof 0
 level 127
 attacktype 1179904
@@ -3372,8 +3394,6 @@ reflect_missile 1
 reflect_spell 1
 xrays 1
 lifesave 1
-x 14
-y 16
 end
 arch pstone_2
 x 14
@@ -4772,6 +4792,10 @@ arch pstone_2
 x 20
 y 9
 end
+arch chinese_dragon
+x 20
+y 9
+end
 arch pstone_2
 x 20
 y 10
@@ -5478,6 +5502,10 @@ x 23
 y 25
 end
 arch pstone_2
+x 23
+y 26
+end
+arch big_dragon
 x 23
 y 26
 end
@@ -6867,6 +6895,10 @@ arch pstone_2
 x 30
 y 9
 end
+arch chinese_dragon
+x 30
+y 9
+end
 arch pstone_2
 x 30
 y 10
@@ -7193,6 +7225,14 @@ end
 arch pstone_1
 x 31
 y 18
+end
+arch bone_drake
+x 31
+y 18
+carrying 100
+arch key2
+slaying LastDoor
+end
 end
 arch pstone_1
 x 31
@@ -8004,6 +8044,15 @@ arch pstone_1
 x 34
 y 35
 end
+arch dragonman
+Pow 4
+x 34
+y 35
+carrying 100
+arch key2
+slaying FourthDoor
+end
+end
 arch pstone_1
 x 34
 y 36
@@ -8381,6 +8430,10 @@ x 36
 y 23
 end
 arch pstone_1
+x 36
+y 24
+end
+arch dragonman
 x 36
 y 24
 end
@@ -9461,57 +9514,4 @@ end
 arch blocked
 x 40
 y 40
-end
-arch big_elec
-x 3
-y 20
-end
-arch big_elec
-x 6
-y 23
-end
-arch big_elec
-x 8
-y 28
-end
-arch big_elec
-carrying 100
-x 11
-y 32
-arch key2
-slaying SecondDoor
-end
-end
-arch chinese_dragon
-x 20
-y 9
-end
-arch big_dragon
-x 23
-y 26
-end
-arch chinese_dragon
-x 30
-y 9
-end
-arch bone_drake
-carrying 100
-x 31
-y 18
-arch key2
-slaying LastDoor
-end
-end
-arch dragonman
-Pow 4
-carrying 100
-x 34
-y 35
-arch key2
-slaying FourthDoor
-end
-end
-arch dragonman
-x 36
-y 24
 end

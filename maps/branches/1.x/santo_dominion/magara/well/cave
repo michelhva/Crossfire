@@ -1,13 +1,13 @@
 arch map
-region santodominion
 name cave
+region santodominion
+darkness 2
+width 38
+height 38
 msg
 Creator: Andreas Vogl
 Date:    8/23/2002
 endmsg
-width 38
-height 38
-darkness 2
 end
 arch blocked
 end
@@ -1419,38 +1419,38 @@ y 8
 end
 arch creator
 other_arch fire_elemental
-connected 10
 hp 3
-level 8
 x 5
 y 9
+level 8
+connected 10
 end
 arch magic_mouth
 name 10
 msg
 The flames have attracted a fire elemental!
 endmsg
-connected 10
-move_on 0
 food 3
 x 5
 y 9
+connected 10
+move_on 0
 end
 arch detector
 name 10
 slaying fireball
-connected 10
-speed 1.0
 x 5
 y 9
+speed 1.0
+connected 10
 end
 arch detector
 name 10
 slaying fire
-connected 10
-speed 1.0
 x 5
 y 9
+speed 1.0
+connected 10
 end
 arch pstone_1
 x 5
@@ -5085,38 +5085,38 @@ y 8
 end
 arch creator
 other_arch fire_elemental
-connected 11
 hp 3
-level 8
 x 18
 y 9
+level 8
+connected 11
 end
 arch magic_mouth
 name 11
 msg
 The flames have attracted a fire elemental!
 endmsg
-connected 11
-move_on 0
 food 3
 x 18
 y 9
+connected 11
+move_on 0
 end
 arch detector
 name 11
 slaying fireball
-connected 11
-speed 1.0
 x 18
 y 9
+speed 1.0
+connected 11
 end
 arch detector
 name 11
 slaying fire
-connected 11
-speed 1.0
 x 18
 y 9
+speed 1.0
+connected 11
 end
 arch pstone_1
 x 18
@@ -5842,38 +5842,38 @@ y 31
 end
 arch creator
 other_arch fire_elemental
-connected 13
 hp 3
-level 8
 x 20
 y 32
+level 8
+connected 13
 end
 arch magic_mouth
 name 13
 msg
 The flames have attracted a fire elemental!
 endmsg
-connected 13
-move_on 0
 food 3
 x 20
 y 32
+connected 13
+move_on 0
 end
 arch detector
 name 13
 slaying fireball
-connected 13
-speed 1.0
 x 20
 y 32
+speed 1.0
+connected 13
 end
 arch detector
 name 13
 slaying fire
-connected 13
-speed 1.0
 x 20
 y 32
+speed 1.0
+connected 13
 end
 arch pstone_1
 x 20
@@ -6099,6 +6099,24 @@ end
 arch pstone_1
 x 21
 y 25
+end
+arch giant
+name huge hill giant
+hp 500
+maxhp 500
+x 21
+y 25
+resist_physical 50
+arch random_potion
+end
+arch random_wealth
+hp 3
+end
+arch bracers_ac
+title of minor insulation
+resist_electricity 15
+value 2000
+end
 end
 arch pstone_1
 x 21
@@ -8066,23 +8084,23 @@ x 28
 y 31
 end
 arch mover_7
-attacktype 1
 x 28
 y 32
+attacktype 1
 end
 arch pstone_1
-type 41
 hp 35
 sp 36
-activate_on_push 1
-connected 2
 x 28
 y 32
+type 41
+connected 2
+activate_on_push 1
 end
 arch rock
-blocksview 1
 x 28
 y 32
+blocksview 1
 end
 arch pstone_1
 x 28
@@ -8344,9 +8362,9 @@ x 29
 y 32
 end
 arch mover_7
-attacktype 1
 x 29
 y 32
+attacktype 1
 end
 arch pstone_1
 x 29
@@ -9233,38 +9251,38 @@ y 12
 end
 arch creator
 other_arch fire_elemental
-connected 12
 hp 3
-level 8
 x 33
 y 13
+level 8
+connected 12
 end
 arch magic_mouth
 name 12
 msg
 The flames have attracted a fire elemental!
 endmsg
-connected 12
-move_on 0
 food 3
 x 33
 y 13
+connected 12
+move_on 0
 end
 arch detector
 name 12
 slaying fireball
-connected 12
-speed 1.0
 x 33
 y 13
+speed 1.0
+connected 12
 end
 arch detector
 name 12
 slaying fire
-connected 12
-speed 1.0
 x 33
 y 13
+speed 1.0
+connected 12
 end
 arch pstone_1
 x 33
@@ -9408,17 +9426,17 @@ y 36
 end
 arch button_small
 name 2
-weight 1000
-connected 2
 x 33
 y 36
+weight 1000
+connected 2
 end
 arch creator
 name 1
 other_arch ten_kilo
-connected 1
 x 33
 y 36
+connected 1
 end
 arch blocked
 x 33
@@ -9614,9 +9632,9 @@ x 34
 y 27
 end
 arch pedestal
-connected 1
 x 34
 y 28
+connected 1
 end
 arch pstone_2
 name footprints
@@ -9624,23 +9642,23 @@ x 34
 y 28
 end
 arch pedestal
-connected 1
 x 34
 y 29
+connected 1
 end
 arch pstone_1
 x 34
 y 29
 end
 arch stwall_closed_1
-connected 1
 x 34
 y 29
+connected 1
 end
 arch pedestal
-connected 1
 x 34
 y 30
+connected 1
 end
 arch flagstone
 x 34
@@ -10426,22 +10444,4 @@ end
 arch blocked
 x 37
 y 37
-end
-arch giant
-name huge hill giant
-hp 500
-maxhp 500
-resist_physical 50
-x 21
-y 25
-arch random_potion
-end
-arch random_wealth
-hp 3
-end
-arch bracers_ac
-title of minor insulation
-value 2000
-resist_electricity 15
-end
 end

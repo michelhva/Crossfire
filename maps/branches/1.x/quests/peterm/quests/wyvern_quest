@@ -455,10 +455,70 @@ face mediumston.111
 x 1
 y 25
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 25
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 1
 y 26
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 26
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -525,6 +585,36 @@ arch medium_stones
 face mediumston.111
 x 1
 y 35
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 1
+y 35
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -623,6 +713,26 @@ arch medium_stones
 face mediumston.111
 x 2
 y 16
+end
+arch dragon
+face wyvern.171
+x 2
+y 16
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+face dragon_wing.111
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -874,6 +984,36 @@ face mediumston.111
 x 3
 y 11
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 3
+y 11
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 3
@@ -938,6 +1078,15 @@ arch medium_stones
 face mediumston.111
 x 3
 y 22
+end
+arch dragon
+face wyvern.171
+x 3
+y 22
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -1997,6 +2146,36 @@ face mediumston.111
 x 7
 y 18
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 7
+y 18
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 7
@@ -2051,6 +2230,26 @@ arch medium_stones
 face mediumston.111
 x 7
 y 29
+end
+arch dragon
+face wyvern.171
+x 7
+y 29
+carrying 37500
+arch dragon_wing
+name wyvern's wing
+face dragon_wing.111
+food 5
+resist_cold -100
+resist_confusion -100
+value 400
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -2229,6 +2428,26 @@ face mediumston.111
 x 8
 y 17
 end
+arch dragon
+face wyvern.171
+x 8
+y 17
+carrying 7500
+arch dragon_steak
+name wyvern's steak
+face drag_steak.111
+food 405
+resist_cold -100
+resist_confusion -100
+value 40
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 8
@@ -2266,6 +2485,29 @@ arch medium_stones
 face mediumston.111
 x 8
 y 22
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 8
+y 22
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -2538,6 +2780,25 @@ face mediumston.111
 x 9
 y 32
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 9
+y 32
+speed -0.035000
+level 4
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 9
@@ -2641,6 +2902,36 @@ face mediumston.111
 x 10
 y 13
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 13
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 10
@@ -2655,6 +2946,36 @@ arch medium_stones
 face mediumston.111
 x 10
 y 16
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 16
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -2718,6 +3039,29 @@ arch medium_stones
 face mediumston.111
 x 10
 y 24
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 10
+y 24
+speed -0.035000
+level 4
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -2955,6 +3299,19 @@ face mediumston.111
 x 11
 y 25
 end
+arch dragon
+face wyvern.171
+x 11
+y 25
+carrying 1
+arch dragonclaw
+face dragon_claw.111
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 11
@@ -3047,6 +3404,36 @@ arch medium_stones
 face mediumston.111
 x 12
 y 5
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 12
+y 5
+speed -0.035000
+level 4
+carrying 37500
+arch dragon_wing
+name medium wyvern's wing
+face dragon_wing.111
+food 3
+resist_cold -100
+resist_confusion -100
+value 200
+weight 37500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -3341,6 +3728,36 @@ face mediumston.111
 x 13
 y 3
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 13
+y 3
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 13
@@ -3390,6 +3807,36 @@ arch medium_stones
 face mediumston.111
 x 13
 y 12
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 13
+y 12
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -4131,6 +4578,36 @@ face mediumston.111
 x 16
 y 22
 end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 16
+y 22
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
+end
 arch medium_stones
 face mediumston.111
 x 16
@@ -4165,6 +4642,18 @@ arch medium_stones
 face mediumston.111
 x 16
 y 29
+end
+arch dragon
+name Slithselest
+face wyvern.171
+x 16
+y 29
+carrying 25
+arch dragon_wing
+name Slithselest's wing
+face dragon_wing.111
+material 0
+end
 end
 arch medium_stones
 face mediumston.111
@@ -4313,6 +4802,36 @@ arch medium_stones
 face mediumston.111
 x 17
 y 16
+end
+arch dragon
+name medium wyvern
+face wyvern.171
+Con 1
+Pow 1
+hp 200
+exp 2000
+dam 12
+wc 8
+ac 8
+x 17
+y 16
+speed -0.035000
+level 4
+carrying 7500
+arch dragon_steak
+name medium wyvern's steak
+face drag_steak.111
+food 403
+resist_cold -100
+resist_confusion -100
+value 20
+weight 7500
+no_steal 1
+end
+arch abil_burning_hands
+end
+arch abil_fear
+end
 end
 arch medium_stones
 face mediumston.111
@@ -5209,523 +5728,4 @@ arch dun_2_2_4
 face dun_8.111
 x 20
 y 36
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 1
-y 25
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 1
-y 26
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 1
-y 35
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-face wyvern.171
-x 2
-y 16
-carrying 37500
-arch dragon_wing
-name wyvern's wing
-face dragon_wing.111
-food 5
-resist_cold -100
-resist_confusion -100
-value 400
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 3
-y 11
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-face wyvern.171
-x 3
-y 22
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 7
-y 18
-speed -0.035000
-level 4
-carrying 37500
-arch dragon_wing
-name medium wyvern's wing
-face dragon_wing.111
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-face wyvern.171
-x 7
-y 29
-carrying 37500
-arch dragon_wing
-name wyvern's wing
-face dragon_wing.111
-food 5
-resist_cold -100
-resist_confusion -100
-value 400
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-face wyvern.171
-x 8
-y 17
-carrying 7500
-arch dragon_steak
-name wyvern's steak
-face drag_steak.111
-food 405
-resist_cold -100
-resist_confusion -100
-value 40
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 8
-y 22
-speed -0.035000
-level 4
-carrying 1
-arch dragonclaw
-face dragon_claw.111
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 9
-y 32
-speed -0.035000
-level 4
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 10
-y 13
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 10
-y 16
-speed -0.035000
-level 4
-carrying 37500
-arch dragon_wing
-name medium wyvern's wing
-face dragon_wing.111
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 10
-y 24
-speed -0.035000
-level 4
-carrying 1
-arch dragonclaw
-face dragon_claw.111
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-face wyvern.171
-x 11
-y 25
-carrying 1
-arch dragonclaw
-face dragon_claw.111
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 12
-y 5
-speed -0.035000
-level 4
-carrying 37500
-arch dragon_wing
-name medium wyvern's wing
-face dragon_wing.111
-food 3
-resist_cold -100
-resist_confusion -100
-value 200
-weight 37500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 13
-y 3
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 13
-y 12
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 16
-y 22
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
-end
-arch dragon
-name Slithselest
-face wyvern.171
-x 16
-y 29
-carrying 25
-arch dragon_wing
-name Slithselest's wing
-face dragon_wing.111
-material 0
-end
-end
-arch dragon
-name medium wyvern
-face wyvern.171
-Con 1
-Pow 1
-hp 200
-exp 2000
-dam 12
-wc 8
-ac 8
-x 17
-y 16
-speed -0.035000
-level 4
-carrying 7500
-arch dragon_steak
-name medium wyvern's steak
-face drag_steak.111
-food 403
-resist_cold -100
-resist_confusion -100
-value 20
-weight 7500
-no_steal 1
-end
-arch abil_burning_hands
-end
-arch abil_fear
-end
 end

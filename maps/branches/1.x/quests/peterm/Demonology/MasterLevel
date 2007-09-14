@@ -1,12 +1,12 @@
 arch map
 name GroundLevel
+width 20
+height 20
 msg
 Creator: peterm
 Email: peterm@soda.berkeley.edu
 Date: Sat Apr 30 20:50:08 1994
 endmsg
-x 20
-y 20
 end
 arch woodfloor
 end
@@ -1697,7 +1697,7 @@ end
 arch magic_mouth
 msg
 Stairs up to the School of Advanced
-Demon Summoning 
+Demon Summoning
 endmsg
 x 10
 y 9

@@ -1,13 +1,13 @@
 arch map
-region santodominion
 name floor_1
+region santodominion
+width 30
+height 40
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Oct 12 00:40:38 1994
 endmsg
-x 30
-y 40
 end
 arch dungeon_floor
 end

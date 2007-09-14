@@ -1,14 +1,14 @@
 arch map
 name Castle Ra-Gar, level of Fire
+width 9
+height 16
+enter_x 7
+enter_y 14
 msg
 Creator:
 Email:
 Date: Tue Oct 19 16:34:33 1993
 endmsg
-width 9
-height 16
-enter_x 7
-enter_y 14
 end
 arch pstone_3
 face rstone_3.111
@@ -137,9 +137,9 @@ x 1
 y 1
 end
 arch devil
-carrying 100
 x 1
 y 1
+carrying 100
 arch key2
 name Fire Key
 slaying set_individual_value fire

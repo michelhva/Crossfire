@@ -1,12 +1,12 @@
 arch map
 name unnatural moshpot
+width 32
+height 26
 msg
 Creator: Magnus Kronhamn
 Email: mak@solace.mh.se
 Date: Thu Apr 13 15:48:22 2000
 endmsg
-x 32
-y 26
 end
 arch cobblestones
 end
@@ -280,6 +280,10 @@ arch cobblestones
 x 1
 y 19
 end
+arch dread
+x 1
+y 19
+end
 arch cobblestones
 x 1
 y 20
@@ -518,6 +522,10 @@ x 3
 y 9
 end
 arch cobblestones
+x 3
+y 10
+end
+arch dread
 x 3
 y 10
 end
@@ -918,6 +926,10 @@ x 5
 y 22
 end
 arch cobblestones
+x 5
+y 23
+end
+arch dread
 x 5
 y 23
 end
@@ -1506,6 +1518,10 @@ arch cobblestones
 x 9
 y 12
 end
+arch dread
+x 9
+y 12
+end
 arch cobblestones
 x 9
 y 13
@@ -2077,6 +2093,10 @@ x 13
 y 12
 end
 arch cobblestones
+x 13
+y 13
+end
+arch dread
 x 13
 y 13
 end
@@ -3091,6 +3111,10 @@ arch cobblestones
 x 20
 y 4
 end
+arch baslic
+x 20
+y 4
+end
 arch cobblestones
 x 20
 y 5
@@ -3959,6 +3983,10 @@ arch cobblestones
 x 26
 y 6
 end
+arch baslic
+x 26
+y 6
+end
 arch cobblestones
 x 26
 y 7
@@ -4812,32 +4840,4 @@ end
 arch bwall_2_2_4
 x 31
 y 25
-end
-arch dread
-x 1
-y 19
-end
-arch dread
-x 3
-y 10
-end
-arch dread
-x 5
-y 23
-end
-arch dread
-x 9
-y 12
-end
-arch dread
-x 13
-y 13
-end
-arch baslic
-x 20
-y 4
-end
-arch baslic
-x 26
-y 6
 end

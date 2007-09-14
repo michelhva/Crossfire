@@ -134,6 +134,10 @@ arch dungeon_magic
 x 1
 y 1
 end
+arch pentagram_111
+x 1
+y 1
+end
 arch woodfloor
 x 1
 y 2
@@ -171,6 +175,16 @@ arch woodfloor
 x 1
 y 6
 end
+arch pentagram_111
+hp 9
+sp 20
+x 1
+y 6
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 1
 y 7
@@ -204,6 +218,10 @@ arch dungeon_magic
 x 1
 y 11
 end
+arch pentagram_111
+x 1
+y 11
+end
 arch woodfloor
 x 1
 y 12
@@ -232,9 +250,26 @@ arch dwall_2_1_2
 x 1
 y 17
 end
+arch pentagram_111
+hp 2
+sp 2
+x 1
+y 18
+resist_magic 30
+connected 2
+end
 arch dwall_2_1_2
 x 1
 y 21
+end
+arch pentagram_111
+hp 2
+sp 12
+x 1
+y 22
+resist_physical 30
+resist_fire 30
+connected 5
 end
 arch woodfloor
 x 2
@@ -363,7 +398,7 @@ I'll tell you what you want to
 know, do you want to know my part
 of the Word?
 @match yes
-My part of the word is 'rumleden' 
+My part of the word is 'rumleden'
 endmsg
 x 2
 y 19
@@ -384,7 +419,7 @@ owwwwwwwwwwwwwwwwwww.........
 I only know part of the word.
 You're going to have to get the rest
 of it out of the other three Masters.
-My part is 'Hleafna'. 
+My part is 'Hleafna'.
 endmsg
 x 2
 y 23
@@ -801,9 +836,26 @@ arch dwall_2_1_2
 x 5
 y 17
 end
+arch pentagram_111
+hp 12
+sp 2
+x 5
+y 18
+resist_physical 30
+resist_magic 30
+connected 3
+end
 arch dwall_2_1_2
 x 5
 y 21
+end
+arch pentagram_111
+hp 12
+sp 12
+x 5
+y 22
+resist_fire 30
+connected 4
 end
 arch woodfloor
 x 6
@@ -814,6 +866,16 @@ end
 arch woodfloor
 x 6
 y 1
+end
+arch pentagram_111
+hp 11
+sp 18
+x 6
+y 1
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
 end
 arch woodfloor
 x 6
@@ -858,7 +920,7 @@ arch magic_mouth
 msg
 You get the feeling that this
 teleporter requires you to say
-something in order to activate. 
+something in order to activate.
 endmsg
 x 6
 y 7
@@ -939,6 +1001,16 @@ arch woodfloor
 x 6
 y 11
 end
+arch pentagram_111
+hp 11
+sp 22
+x 6
+y 11
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 6
 y 12
@@ -968,24 +1040,24 @@ Guardians!
 yes, two visible, and two invisible.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
-summoned by means of those portals. 
+summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
 @match word|Word|password|teleport
 The teleporters lead to the levels
-above.  Each of the Masters had a 
+above.  Each of the Masters had a
 syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
+speak the word in succession.
+Actually, they whispered it:  they
+didn't trust each other enough to
 share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
 @match Portal
-Yes, you can summon the dead 
+Yes, you can summon the dead
 with those portals if you know
-their names.  Getting them to 
+their names.  Getting them to
 cooperate is quite another matter.
 endmsg
 x 6
@@ -1147,7 +1219,7 @@ arch magic_mouth
 msg
 You get the feeling that this
 teleporter requires you to say
-something. 
+something.
 endmsg
 x 7
 y 8
@@ -1298,24 +1370,24 @@ Guardians!
 yes, two visible, and two invisibile.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
-summoned by means of those portals. 
+summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
 @match word|Word|password|teleport
 The teleporters lead to the levels
-above.  Each of the Masters had a 
+above.  Each of the Masters had a
 syllable of the Word.  They had to
-speak the word in succession.  
-Actually, they whispered it:  they 
-didn't trust each other enough to 
+speak the word in succession.
+Actually, they whispered it:  they
+didn't trust each other enough to
 share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
 @match Portal
-Yes, you can summon the dead 
+Yes, you can summon the dead
 with those portals if you know
-their names.  Getting them to 
+their names.  Getting them to
 cooperate is quite another matter.
 endmsg
 x 8
@@ -1820,6 +1892,10 @@ arch dungeon_magic
 x 11
 y 1
 end
+arch pentagram_111
+x 11
+y 1
+end
 arch woodfloor
 x 11
 y 2
@@ -1857,6 +1933,16 @@ arch woodfloor
 x 11
 y 6
 end
+arch pentagram_111
+hp 13
+sp 20
+x 11
+y 6
+resist_physical 30
+invisible 1
+connected 1
+activate_on_push 0
+end
 arch woodfloor
 x 11
 y 7
@@ -1887,6 +1973,10 @@ x 11
 y 11
 end
 arch dungeon_magic
+x 11
+y 11
+end
+arch pentagram_111
 x 11
 y 11
 end
@@ -2390,94 +2480,4 @@ end
 arch dwall_2_2_4
 x 14
 y 21
-end
-arch pentagram_111
-x 1
-y 1
-end
-arch pentagram_111
-hp 9
-sp 20
-x 1
-y 6
-resist_physical 30
-invisible 1
-connected 1
-activate_on_push 0
-end
-arch pentagram_111
-x 1
-y 11
-end
-arch pentagram_111
-hp 2
-sp 2
-x 1
-y 18
-resist_magic 30
-connected 2
-end
-arch pentagram_111
-hp 2
-sp 12
-x 1
-y 22
-resist_physical 30
-resist_fire 30
-connected 5
-end
-arch pentagram_111
-hp 12
-sp 2
-x 5
-y 18
-resist_physical 30
-resist_magic 30
-connected 3
-end
-arch pentagram_111
-hp 12
-sp 12
-x 5
-y 22
-resist_fire 30
-connected 4
-end
-arch pentagram_111
-hp 11
-sp 18
-x 6
-y 1
-resist_physical 30
-invisible 1
-connected 1
-activate_on_push 0
-end
-arch pentagram_111
-hp 11
-sp 22
-x 6
-y 11
-resist_physical 30
-invisible 1
-connected 1
-activate_on_push 0
-end
-arch pentagram_111
-x 11
-y 1
-end
-arch pentagram_111
-hp 13
-sp 20
-x 11
-y 6
-resist_physical 30
-invisible 1
-connected 1
-activate_on_push 0
-end
-arch pentagram_111
-x 11
-y 11
 end

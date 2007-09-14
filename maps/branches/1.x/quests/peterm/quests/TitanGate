@@ -1,12 +1,12 @@
 arch map
 name TitanGate
+width 14
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jun 12 22:15:06 2000
 endmsg
-width 14
-height 16
 end
 arch dungeon_floor
 end
@@ -418,6 +418,20 @@ arch dungeon_floor
 x 5
 y 5
 end
+arch giant
+msg
+@match thirsty
+It's so hot today!  And we can't leave
+our posts.  Say, if you brought some
+booze for me and dropped it at my
+feet, I'd be mighty obliged.  I am
+VERY thirsty!  Yes, if you bring
+enough, I'll let you in!
+endmsg
+x 5
+y 5
+unaggressive 1
+end
 arch dungeon_floor
 x 5
 y 6
@@ -496,10 +510,10 @@ x 6
 y 3
 end
 arch igate_open_1
-speed 0.500000
-value 1
 x 6
 y 3
+speed 0.500000
+value 1
 end
 arch magic_mouth
 msg
@@ -529,19 +543,19 @@ y 6
 end
 arch altar
 slaying booze
-connected 1
 x 6
 y 6
+connected 1
 end
 arch dungeon_floor
 x 6
 y 7
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 6
 y 7
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -568,6 +582,7 @@ x 6
 y 13
 end
 arch stair_up_3
+slaying /!
 msg
 layoutstyle onion
 symmetry 4
@@ -585,7 +600,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 6
 y 13
 end
@@ -631,10 +645,10 @@ x 7
 y 3
 end
 arch igate_open_1
-speed 0.500000
-value 1
 x 7
 y 3
+speed 0.500000
+value 1
 end
 arch magic_mouth
 msg
@@ -667,10 +681,10 @@ x 7
 y 7
 end
 arch gate_closed_1
-speed 0.500000
-connected 1
 x 7
 y 7
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -734,6 +748,15 @@ end
 arch dungeon_floor
 x 8
 y 5
+end
+arch giant
+msg
+@match *
+NONE SHALL PASS!
+endmsg
+x 8
+y 5
+unaggressive 1
 end
 arch dungeon_floor
 x 8
@@ -1193,27 +1216,4 @@ end
 arch dungeon_floor
 x 13
 y 15
-end
-arch giant
-msg
-@match thirsty
-It's so hot today!  And we can't leave
-our posts.  Say, if you brought some
-booze for me and dropped it at my
-feet, I'd be mighty obliged.  I am
-VERY thirsty!  Yes, if you bring
-enough, I'll let you in!
-endmsg
-unaggressive 1
-x 5
-y 5
-end
-arch giant
-msg
-@match *
-NONE SHALL PASS!
-endmsg
-unaggressive 1
-x 8
-y 5
 end

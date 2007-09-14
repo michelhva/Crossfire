@@ -1,5 +1,8 @@
 arch map
+name <unnamed>
 region santodominion
+width 16
+height 16
 end
 arch woodfloor
 end
@@ -196,6 +199,11 @@ x 1
 y 12
 end
 arch woodfloor
+x 1
+y 13
+end
+arch behemoth
+name Rasta Fari
 x 1
 y 13
 end
@@ -1566,9 +1574,4 @@ end
 arch wall_2_2_4
 x 15
 y 15
-end
-arch behemoth
-name Rasta Fari
-x 1
-y 13
 end

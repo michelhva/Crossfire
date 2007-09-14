@@ -1,16 +1,18 @@
 arch map
-region santodominion
 name armour
+fixed_resettime 1
+difficulty 10
+region santodominion
+shopitems armour:60;shield:60;helmet:50;cloak:50;boots:50;gloves:50;bracers:60;girdle:60;*:-60
+width 16
+height 16
+enter_x 1
+enter_y 12
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Oct 11 23:57:52 1994
 endmsg
-difficulty 10
-hp 1
-sp 12
-stand_still 1
-shopitems armour:60;shield:60;helmet:50;cloak:50;boots:50;gloves:50;bracers:60;girdle:60;*:-60
 end
 arch flagstone
 end

@@ -1,5 +1,7 @@
 arch map
 name maze
+width 40
+height 40
 msg
 You have entered a rather dark area.
 You can here the clanking of metal
@@ -8,8 +10,6 @@ the many passages in this maze. A
 Maze in which, a wrong turn could
 be fatal.
 endmsg
-x 40
-y 40
 end
 arch marble
 end
@@ -1908,6 +1908,10 @@ x 7
 y 31
 end
 arch dungeon_magic
+x 7
+y 31
+end
+arch dragonman
 x 7
 y 31
 end
@@ -9806,8 +9810,4 @@ end
 arch awall_2_2_4
 x 39
 y 39
-end
-arch dragonman
-x 7
-y 31
 end

@@ -1,17 +1,17 @@
 arch map
-region santodominion
 name rings
+fixed_resettime 1
+difficulty 12
+region santodominion
+shopitems ring:100;amulet:0;*:-100
+shopmin 3000
+width 28
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu May 12 01:23:20 1994
 endmsg
-x 28
-y 10
-difficulty 12
-stand_still 1
-shopitems ring:100;amulet:0;*:-100
-shopmin 3000
 end
 arch marble
 end
@@ -212,8 +212,8 @@ slaying platinacoin
 food 100
 x 3
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 3
@@ -272,8 +272,8 @@ end
 arch igateTrg2
 x 4
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 4
@@ -282,8 +282,8 @@ end
 arch igateTrg2
 x 4
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 4
@@ -342,8 +342,8 @@ end
 arch pedestal
 x 5
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 5
@@ -352,8 +352,8 @@ end
 arch pedestal
 x 5
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 5

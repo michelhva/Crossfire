@@ -1,16 +1,14 @@
 arch map
 name LavaChamber
+width 35
+height 37
 msg
 Creator: Peter Mardahl
 Email: peterm@soda.csua.berkeley.edu
 Date: Tue Oct  8 22:16:35 1996
 endmsg
-x 35
-y 37
 end
 arch blocked
-msg
-endmsg
 y 10
 end
 arch cobblestones2
@@ -50,13 +48,9 @@ arch mine4
 y 16
 end
 arch blocked
-msg
-endmsg
 y 17
 end
 arch blocked
-msg
-endmsg
 x 1
 y 10
 end
@@ -121,14 +115,10 @@ x 1
 y 16
 end
 arch blocked
-msg
-endmsg
 x 1
 y 17
 end
 arch blocked
-msg
-endmsg
 x 2
 y 10
 end
@@ -165,14 +155,10 @@ x 2
 y 16
 end
 arch blocked
-msg
-endmsg
 x 2
 y 17
 end
 arch blocked
-msg
-endmsg
 x 3
 y 10
 end
@@ -217,43 +203,29 @@ x 3
 y 16
 end
 arch blocked
-msg
-endmsg
 x 3
 y 17
 end
 arch blocked
-msg
-endmsg
 x 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 1
 end
 arch blocked
-msg
-endmsg
 x 4
 y 2
 end
 arch blocked
-msg
-endmsg
 x 4
 y 3
 end
 arch blocked
-msg
-endmsg
 x 4
 y 4
 end
 arch blocked
-msg
-endmsg
 x 4
 y 10
 end
@@ -298,19 +270,22 @@ x 4
 y 16
 end
 arch blocked
-msg
-endmsg
 x 4
 y 17
 end
 arch blocked
-msg
-endmsg
 x 5
 end
 arch imp
 x 5
 y 1
+end
+arch pentagram_111
+hp 10
+sp 6
+x 5
+y 1
+connected 13
 end
 arch imp
 x 5
@@ -321,14 +296,10 @@ x 5
 y 3
 end
 arch blocked
-msg
-endmsg
 x 5
 y 4
 end
 arch blocked
-msg
-endmsg
 x 5
 y 10
 end
@@ -369,20 +340,14 @@ x 5
 y 17
 end
 arch blocked
-msg
-endmsg
 x 5
 y 18
 end
 arch blocked
-msg
-endmsg
 x 5
 y 19
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch imp
@@ -398,44 +363,30 @@ x 6
 y 3
 end
 arch blocked
-msg
-endmsg
 x 6
 y 4
 end
 arch blocked
-msg
-endmsg
 x 6
 y 5
 end
 arch blocked
-msg
-endmsg
 x 6
 y 6
 end
 arch blocked
-msg
-endmsg
 x 6
 y 7
 end
 arch blocked
-msg
-endmsg
 x 6
 y 8
 end
 arch blocked
-msg
-endmsg
 x 6
 y 9
 end
 arch blocked
-msg
-endmsg
 x 6
 y 10
 end
@@ -484,20 +435,14 @@ x 6
 y 17
 end
 arch blocked
-msg
-endmsg
 x 6
 y 18
 end
 arch blocked
-msg
-endmsg
 x 6
 y 19
 end
 arch blocked
-msg
-endmsg
 x 7
 end
 arch imp
@@ -513,14 +458,10 @@ x 7
 y 3
 end
 arch blocked
-msg
-endmsg
 x 7
 y 4
 end
 arch blocked
-msg
-endmsg
 x 7
 y 5
 end
@@ -533,20 +474,14 @@ x 7
 y 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 8
 end
 arch blocked
-msg
-endmsg
 x 7
 y 9
 end
 arch blocked
-msg
-endmsg
 x 7
 y 10
 end
@@ -587,49 +522,33 @@ x 7
 y 16
 end
 arch blocked
-msg
-endmsg
 x 7
 y 17
 end
 arch blocked
-msg
-endmsg
 x 7
 y 18
 end
 arch blocked
-msg
-endmsg
 x 7
 y 19
 end
 arch blocked
-msg
-endmsg
 x 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 1
 end
 arch blocked
-msg
-endmsg
 x 8
 y 2
 end
 arch blocked
-msg
-endmsg
 x 8
 y 3
 end
 arch blocked
-msg
-endmsg
 x 8
 y 4
 end
@@ -666,8 +585,6 @@ x 8
 y 8
 end
 arch blocked
-msg
-endmsg
 x 8
 y 9
 end
@@ -708,62 +625,42 @@ x 8
 y 16
 end
 arch blocked
-msg
-endmsg
 x 8
 y 17
 end
 arch blocked
-msg
-endmsg
 x 8
 y 18
 end
 arch blocked
-msg
-endmsg
 x 8
 y 19
 end
 arch blocked
-msg
-endmsg
 x 8
 y 20
 end
 arch blocked
-msg
-endmsg
 x 8
 y 25
 end
 arch blocked
-msg
-endmsg
 x 8
 y 26
 end
 arch blocked
-msg
-endmsg
 x 8
 y 27
 end
 arch blocked
-msg
-endmsg
 x 8
 y 28
 end
 arch blocked
-msg
-endmsg
 x 8
 y 29
 end
 arch blocked
-msg
-endmsg
 x 9
 y 3
 end
@@ -852,50 +749,43 @@ x 9
 y 16
 end
 arch blocked
-msg
-endmsg
 x 9
 y 17
 end
 arch blocked
-msg
-endmsg
 x 9
 y 18
 end
 arch blocked
-msg
-endmsg
 x 9
 y 19
 end
 arch blocked
-msg
-endmsg
 x 9
 y 20
 end
 arch blocked
-msg
-endmsg
 x 9
 y 21
 end
 arch blocked
-msg
-endmsg
 x 9
 y 22
 end
 arch blocked
-msg
-endmsg
 x 9
 y 25
 end
 arch imp
 x 9
 y 26
+end
+arch pentagram_111
+hp 12
+sp 17
+x 9
+y 26
+connected 14
 end
 arch imp
 x 9
@@ -906,14 +796,10 @@ x 9
 y 28
 end
 arch blocked
-msg
-endmsg
 x 9
 y 29
 end
 arch blocked
-msg
-endmsg
 x 10
 y 3
 end
@@ -934,6 +820,10 @@ x 10
 y 5
 end
 arch pstone_2
+x 10
+y 6
+end
+arch pentagram_111
 x 10
 y 6
 end
@@ -1014,32 +904,22 @@ x 10
 y 19
 end
 arch blocked
-msg
-endmsg
 x 10
 y 20
 end
 arch blocked
-msg
-endmsg
 x 10
 y 21
 end
 arch blocked
-msg
-endmsg
 x 10
 y 22
 end
 arch blocked
-msg
-endmsg
 x 10
 y 23
 end
 arch blocked
-msg
-endmsg
 x 10
 y 25
 end
@@ -1056,14 +936,10 @@ x 10
 y 28
 end
 arch blocked
-msg
-endmsg
 x 10
 y 29
 end
 arch blocked
-msg
-endmsg
 x 11
 y 3
 end
@@ -1182,26 +1058,18 @@ x 11
 y 22
 end
 arch blocked
-msg
-endmsg
 x 11
 y 22
 end
 arch blocked
-msg
-endmsg
 x 11
 y 23
 end
 arch blocked
-msg
-endmsg
 x 11
 y 24
 end
 arch blocked
-msg
-endmsg
 x 11
 y 25
 end
@@ -1218,20 +1086,14 @@ x 11
 y 28
 end
 arch blocked
-msg
-endmsg
 x 11
 y 29
 end
 arch blocked
-msg
-endmsg
 x 12
 y 2
 end
 arch blocked
-msg
-endmsg
 x 12
 y 3
 end
@@ -1309,6 +1171,10 @@ arch pstone_2
 x 12
 y 17
 end
+arch pentagram_111
+x 12
+y 17
+end
 arch pstone_2
 x 12
 y 18
@@ -1346,32 +1212,22 @@ x 12
 y 22
 end
 arch blocked
-msg
-endmsg
 x 12
 y 23
 end
 arch blocked
-msg
-endmsg
 x 12
 y 24
 end
 arch blocked
-msg
-endmsg
 x 12
 y 25
 end
 arch blocked
-msg
-endmsg
 x 12
 y 26
 end
 arch blocked
-msg
-endmsg
 x 12
 y 27
 end
@@ -1380,8 +1236,6 @@ x 12
 y 28
 end
 arch blocked
-msg
-endmsg
 x 12
 y 28
 end
@@ -1390,8 +1244,6 @@ x 12
 y 29
 end
 arch blocked
-msg
-endmsg
 x 12
 y 29
 end
@@ -1400,8 +1252,6 @@ x 12
 y 30
 end
 arch blocked
-msg
-endmsg
 x 12
 y 30
 end
@@ -1410,8 +1260,6 @@ x 12
 y 31
 end
 arch blocked
-msg
-endmsg
 x 12
 y 31
 end
@@ -1420,8 +1268,6 @@ x 12
 y 32
 end
 arch blocked
-msg
-endmsg
 x 12
 y 32
 end
@@ -1430,8 +1276,6 @@ x 12
 y 33
 end
 arch blocked
-msg
-endmsg
 x 12
 y 33
 end
@@ -1440,20 +1284,14 @@ x 12
 y 34
 end
 arch blocked
-msg
-endmsg
 x 12
 y 34
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
 arch blocked
-msg
-endmsg
 x 13
 y 2
 end
@@ -1599,32 +1437,22 @@ x 13
 y 22
 end
 arch blocked
-msg
-endmsg
 x 13
 y 23
 end
 arch blocked
-msg
-endmsg
 x 13
 y 24
 end
 arch blocked
-msg
-endmsg
 x 13
 y 25
 end
 arch blocked
-msg
-endmsg
 x 13
 y 26
 end
 arch blocked
-msg
-endmsg
 x 13
 y 27
 end
@@ -1633,8 +1461,6 @@ x 13
 y 28
 end
 arch blocked
-msg
-endmsg
 x 13
 y 28
 end
@@ -1643,8 +1469,6 @@ x 13
 y 29
 end
 arch blocked
-msg
-endmsg
 x 13
 y 29
 end
@@ -1653,8 +1477,6 @@ x 13
 y 30
 end
 arch blocked
-msg
-endmsg
 x 13
 y 30
 end
@@ -1663,8 +1485,6 @@ x 13
 y 31
 end
 arch blocked
-msg
-endmsg
 x 13
 y 31
 end
@@ -1673,8 +1493,6 @@ x 13
 y 32
 end
 arch blocked
-msg
-endmsg
 x 13
 y 32
 end
@@ -1683,8 +1501,6 @@ x 13
 y 33
 end
 arch blocked
-msg
-endmsg
 x 13
 y 33
 end
@@ -1693,19 +1509,13 @@ x 13
 y 34
 end
 arch blocked
-msg
-endmsg
 x 13
 y 34
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -1842,38 +1652,26 @@ x 14
 y 22
 end
 arch blocked
-msg
-endmsg
 x 14
 y 22
 end
 arch blocked
-msg
-endmsg
 x 14
 y 23
 end
 arch blocked
-msg
-endmsg
 x 14
 y 24
 end
 arch blocked
-msg
-endmsg
 x 14
 y 25
 end
 arch blocked
-msg
-endmsg
 x 14
 y 26
 end
 arch blocked
-msg
-endmsg
 x 14
 y 27
 end
@@ -1882,8 +1680,6 @@ x 14
 y 28
 end
 arch blocked
-msg
-endmsg
 x 14
 y 28
 end
@@ -1892,8 +1688,6 @@ x 14
 y 29
 end
 arch blocked
-msg
-endmsg
 x 14
 y 29
 end
@@ -1902,8 +1696,6 @@ x 14
 y 30
 end
 arch blocked
-msg
-endmsg
 x 14
 y 30
 end
@@ -1912,8 +1704,6 @@ x 14
 y 31
 end
 arch blocked
-msg
-endmsg
 x 14
 y 31
 end
@@ -1922,8 +1712,6 @@ x 14
 y 32
 end
 arch blocked
-msg
-endmsg
 x 14
 y 32
 end
@@ -1932,8 +1720,6 @@ x 14
 y 33
 end
 arch blocked
-msg
-endmsg
 x 14
 y 33
 end
@@ -1942,19 +1728,13 @@ x 14
 y 34
 end
 arch blocked
-msg
-endmsg
 x 14
 y 34
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 1
 end
@@ -2023,6 +1803,10 @@ x 15
 y 11
 end
 arch permanent_lava
+x 15
+y 11
+end
+arch active_volcano
 x 15
 y 11
 end
@@ -2107,20 +1891,14 @@ x 15
 y 22
 end
 arch blocked
-msg
-endmsg
 x 15
 y 23
 end
 arch blocked
-msg
-endmsg
 x 15
 y 24
 end
 arch blocked
-msg
-endmsg
 x 15
 y 25
 end
@@ -2185,8 +1963,6 @@ x 15
 y 34
 end
 arch blocked
-msg
-endmsg
 x 15
 y 34
 end
@@ -2195,8 +1971,6 @@ x 15
 y 35
 end
 arch blocked
-msg
-endmsg
 x 15
 y 35
 end
@@ -2205,19 +1979,13 @@ x 15
 y 36
 end
 arch blocked
-msg
-endmsg
 x 15
 y 36
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch blocked
-msg
-endmsg
 x 16
 y 1
 end
@@ -2230,6 +1998,10 @@ x 16
 y 2
 end
 arch pstone_2
+x 16
+y 3
+end
+arch pentagram_111
 x 16
 y 3
 end
@@ -2386,8 +2158,6 @@ x 16
 y 23
 end
 arch blocked
-msg
-endmsg
 x 16
 y 24
 end
@@ -2488,19 +2258,13 @@ x 16
 y 36
 end
 arch blocked
-msg
-endmsg
 x 16
 y 36
 end
 arch blocked
-msg
-endmsg
 x 17
 end
 arch blocked
-msg
-endmsg
 x 17
 y 1
 end
@@ -2553,6 +2317,10 @@ x 17
 y 9
 end
 arch permanent_lava
+x 17
+y 9
+end
+arch active_volcano
 x 17
 y 9
 end
@@ -2615,6 +2383,10 @@ x 17
 y 13
 end
 arch permanent_lava
+x 17
+y 13
+end
+arch active_volcano
 x 17
 y 13
 end
@@ -2814,13 +2586,9 @@ x 17
 y 36
 end
 arch blocked
-msg
-endmsg
 x 18
 end
 arch blocked
-msg
-endmsg
 x 18
 y 1
 end
@@ -3127,13 +2895,9 @@ x 18
 y 36
 end
 arch blocked
-msg
-endmsg
 x 19
 end
 arch blocked
-msg
-endmsg
 x 19
 y 1
 end
@@ -3210,6 +2974,10 @@ x 19
 y 11
 end
 arch flagstone
+x 19
+y 11
+end
+arch active_volcano
 x 19
 y 11
 end
@@ -3413,19 +3181,13 @@ x 19
 y 36
 end
 arch blocked
-msg
-endmsg
 x 20
 end
 arch blocked
-msg
-endmsg
 x 20
 y 1
 end
 arch blocked
-msg
-endmsg
 x 20
 y 2
 end
@@ -3703,20 +3465,14 @@ x 20
 y 36
 end
 arch blocked
-msg
-endmsg
 x 21
 y 1
 end
 arch blocked
-msg
-endmsg
 x 21
 y 2
 end
 arch blocked
-msg
-endmsg
 x 21
 y 3
 end
@@ -4001,14 +3757,10 @@ x 21
 y 36
 end
 arch blocked
-msg
-endmsg
 x 22
 y 2
 end
 arch blocked
-msg
-endmsg
 x 22
 y 3
 end
@@ -4161,20 +3913,14 @@ x 22
 y 24
 end
 arch blocked
-msg
-endmsg
 x 22
 y 25
 end
 arch blocked
-msg
-endmsg
 x 22
 y 26
 end
 arch blocked
-msg
-endmsg
 x 22
 y 27
 end
@@ -4183,8 +3929,6 @@ x 22
 y 28
 end
 arch blocked
-msg
-endmsg
 x 22
 y 28
 end
@@ -4193,8 +3937,6 @@ x 22
 y 29
 end
 arch blocked
-msg
-endmsg
 x 22
 y 29
 end
@@ -4203,8 +3945,6 @@ x 22
 y 30
 end
 arch blocked
-msg
-endmsg
 x 22
 y 30
 end
@@ -4261,14 +4001,10 @@ x 22
 y 36
 end
 arch blocked
-msg
-endmsg
 x 23
 y 2
 end
 arch blocked
-msg
-endmsg
 x 23
 y 3
 end
@@ -4289,6 +4025,10 @@ x 23
 y 5
 end
 arch pstone_2
+x 23
+y 6
+end
+arch pentagram_111
 x 23
 y 6
 end
@@ -4362,6 +4102,10 @@ arch pstone_2
 x 23
 y 17
 end
+arch pentagram_111
+x 23
+y 17
+end
 arch pstone_2
 x 23
 y 18
@@ -4387,38 +4131,26 @@ x 23
 y 21
 end
 arch blocked
-msg
-endmsg
 x 23
 y 22
 end
 arch blocked
-msg
-endmsg
 x 23
 y 23
 end
 arch blocked
-msg
-endmsg
 x 23
 y 24
 end
 arch blocked
-msg
-endmsg
 x 23
 y 25
 end
 arch blocked
-msg
-endmsg
 x 23
 y 26
 end
 arch blocked
-msg
-endmsg
 x 23
 y 27
 end
@@ -4427,8 +4159,6 @@ x 23
 y 28
 end
 arch blocked
-msg
-endmsg
 x 23
 y 28
 end
@@ -4437,8 +4167,6 @@ x 23
 y 29
 end
 arch blocked
-msg
-endmsg
 x 23
 y 29
 end
@@ -4447,8 +4175,6 @@ x 23
 y 30
 end
 arch blocked
-msg
-endmsg
 x 23
 y 30
 end
@@ -4457,8 +4183,6 @@ x 23
 y 31
 end
 arch blocked
-msg
-endmsg
 x 23
 y 31
 end
@@ -4511,8 +4235,6 @@ x 23
 y 36
 end
 arch blocked
-msg
-endmsg
 x 24
 y 3
 end
@@ -4619,32 +4341,22 @@ x 24
 y 22
 end
 arch blocked
-msg
-endmsg
 x 24
 y 23
 end
 arch blocked
-msg
-endmsg
 x 24
 y 24
 end
 arch blocked
-msg
-endmsg
 x 24
 y 25
 end
 arch blocked
-msg
-endmsg
 x 24
 y 26
 end
 arch blocked
-msg
-endmsg
 x 24
 y 27
 end
@@ -4653,8 +4365,6 @@ x 24
 y 28
 end
 arch blocked
-msg
-endmsg
 x 24
 y 28
 end
@@ -4663,8 +4373,6 @@ x 24
 y 29
 end
 arch blocked
-msg
-endmsg
 x 24
 y 29
 end
@@ -4673,8 +4381,6 @@ x 24
 y 30
 end
 arch blocked
-msg
-endmsg
 x 24
 y 30
 end
@@ -4683,8 +4389,6 @@ x 24
 y 31
 end
 arch blocked
-msg
-endmsg
 x 24
 y 31
 end
@@ -4693,8 +4397,6 @@ x 24
 y 32
 end
 arch blocked
-msg
-endmsg
 x 24
 y 32
 end
@@ -4727,31 +4429,21 @@ x 24
 y 36
 end
 arch blocked
-msg
-endmsg
 x 24
 y 36
 end
 arch blocked
-msg
-endmsg
 x 25
 end
 arch blocked
-msg
-endmsg
 x 25
 y 1
 end
 arch blocked
-msg
-endmsg
 x 25
 y 2
 end
 arch blocked
-msg
-endmsg
 x 25
 y 3
 end
@@ -4877,14 +4569,19 @@ x 25
 y 23
 end
 arch blocked
-msg
-endmsg
 x 25
 y 24
 end
 arch imp
 x 25
 y 25
+end
+arch pentagram_111
+hp 23
+sp 17
+x 25
+y 25
+connected 10
 end
 arch imp
 x 25
@@ -4899,8 +4596,6 @@ x 25
 y 28
 end
 arch blocked
-msg
-endmsg
 x 25
 y 28
 end
@@ -4909,8 +4604,6 @@ x 25
 y 29
 end
 arch blocked
-msg
-endmsg
 x 25
 y 29
 end
@@ -4919,8 +4612,6 @@ x 25
 y 30
 end
 arch blocked
-msg
-endmsg
 x 25
 y 30
 end
@@ -4929,8 +4620,6 @@ x 25
 y 31
 end
 arch blocked
-msg
-endmsg
 x 25
 y 31
 end
@@ -4939,8 +4628,6 @@ x 25
 y 32
 end
 arch blocked
-msg
-endmsg
 x 25
 y 32
 end
@@ -4949,8 +4636,6 @@ x 25
 y 33
 end
 arch blocked
-msg
-endmsg
 x 25
 y 33
 end
@@ -4959,8 +4644,6 @@ x 25
 y 34
 end
 arch blocked
-msg
-endmsg
 x 25
 y 34
 end
@@ -4969,8 +4652,6 @@ x 25
 y 35
 end
 arch blocked
-msg
-endmsg
 x 25
 y 35
 end
@@ -4979,19 +4660,22 @@ x 25
 y 36
 end
 arch blocked
-msg
-endmsg
 x 25
 y 36
 end
 arch blocked
-msg
-endmsg
 x 26
 end
 arch imp
 x 26
 y 1
+end
+arch pentagram_111
+hp 16
+sp 3
+x 26
+y 1
+connected 12
 end
 arch imp
 x 26
@@ -5002,8 +4686,6 @@ x 26
 y 3
 end
 arch blocked
-msg
-endmsg
 x 26
 y 4
 end
@@ -5145,8 +4827,6 @@ x 26
 y 23
 end
 arch blocked
-msg
-endmsg
 x 26
 y 24
 end
@@ -5163,20 +4843,14 @@ x 26
 y 27
 end
 arch blocked
-msg
-endmsg
 x 26
 y 28
 end
 arch blocked
-msg
-endmsg
 x 26
 y 29
 end
 arch blocked
-msg
-endmsg
 x 27
 end
 arch imp
@@ -5192,20 +4866,14 @@ x 27
 y 3
 end
 arch blocked
-msg
-endmsg
 x 27
 y 4
 end
 arch blocked
-msg
-endmsg
 x 27
 y 5
 end
 arch blocked
-msg
-endmsg
 x 27
 y 6
 end
@@ -5226,14 +4894,10 @@ x 27
 y 8
 end
 arch blocked
-msg
-endmsg
 x 27
 y 9
 end
 arch blocked
-msg
-endmsg
 x 27
 y 10
 end
@@ -5346,14 +5010,10 @@ x 27
 y 22
 end
 arch blocked
-msg
-endmsg
 x 27
 y 23
 end
 arch blocked
-msg
-endmsg
 x 27
 y 24
 end
@@ -5370,20 +5030,14 @@ x 27
 y 27
 end
 arch blocked
-msg
-endmsg
 x 27
 y 28
 end
 arch blocked
-msg
-endmsg
 x 27
 y 29
 end
 arch blocked
-msg
-endmsg
 x 28
 end
 arch imp
@@ -5399,44 +5053,30 @@ x 28
 y 3
 end
 arch blocked
-msg
-endmsg
 x 28
 y 4
 end
 arch blocked
-msg
-endmsg
 x 28
 y 5
 end
 arch blocked
-msg
-endmsg
 x 28
 y 6
 end
 arch blocked
-msg
-endmsg
 x 28
 y 7
 end
 arch blocked
-msg
-endmsg
 x 28
 y 8
 end
 arch blocked
-msg
-endmsg
 x 28
 y 9
 end
 arch blocked
-msg
-endmsg
 x 28
 y 11
 end
@@ -5481,109 +5121,82 @@ x 28
 y 17
 end
 arch blocked
-msg
-endmsg
 x 28
 y 18
 end
 arch blocked
-msg
-endmsg
 x 28
 y 19
 end
 arch blocked
-msg
-endmsg
 x 28
 y 20
 end
 arch blocked
-msg
-endmsg
 x 28
 y 21
 end
 arch blocked
-msg
-endmsg
 x 28
 y 22
 end
 arch blocked
-msg
-endmsg
 x 28
 y 23
 end
 arch blocked
-msg
-endmsg
 x 28
 y 24
 end
 arch blocked
-msg
-endmsg
 x 28
 y 25
 end
 arch blocked
-msg
-endmsg
 x 28
 y 26
 end
 arch blocked
-msg
-endmsg
 x 28
 y 27
 end
 arch blocked
-msg
-endmsg
 x 28
 y 28
 end
 arch blocked
-msg
-endmsg
 x 29
 end
 arch blocked
-msg
-endmsg
 x 29
 y 1
 end
 arch blocked
-msg
-endmsg
 x 29
 y 2
 end
 arch blocked
-msg
-endmsg
 x 29
 y 3
 end
 arch blocked
-msg
-endmsg
 x 29
 y 4
 end
 arch blocked
-msg
-endmsg
 x 29
 y 5
 end
 arch imp
 x 29
 y 6
+end
+arch pentagram_111
+hp 23
+sp 6
+x 29
+y 6
+connected 11
 end
 arch imp
 x 29
@@ -5594,14 +5207,10 @@ x 29
 y 8
 end
 arch blocked
-msg
-endmsg
 x 29
 y 9
 end
 arch blocked
-msg
-endmsg
 x 29
 y 11
 end
@@ -5660,26 +5269,18 @@ x 29
 y 17
 end
 arch blocked
-msg
-endmsg
 x 29
 y 18
 end
 arch blocked
-msg
-endmsg
 x 29
 y 27
 end
 arch blocked
-msg
-endmsg
 x 29
 y 28
 end
 arch blocked
-msg
-endmsg
 x 30
 y 5
 end
@@ -5696,8 +5297,6 @@ x 30
 y 8
 end
 arch blocked
-msg
-endmsg
 x 30
 y 9
 end
@@ -5706,8 +5305,6 @@ x 30
 y 10
 end
 arch blocked
-msg
-endmsg
 x 30
 y 10
 end
@@ -5716,8 +5313,6 @@ x 30
 y 11
 end
 arch blocked
-msg
-endmsg
 x 30
 y 11
 end
@@ -5772,14 +5367,10 @@ x 30
 y 17
 end
 arch blocked
-msg
-endmsg
 x 30
 y 17
 end
 arch blocked
-msg
-endmsg
 x 31
 y 5
 end
@@ -5796,8 +5387,6 @@ x 31
 y 8
 end
 arch blocked
-msg
-endmsg
 x 31
 y 9
 end
@@ -5806,8 +5395,6 @@ x 31
 y 10
 end
 arch blocked
-msg
-endmsg
 x 31
 y 10
 end
@@ -5816,8 +5403,6 @@ x 31
 y 11
 end
 arch blocked
-msg
-endmsg
 x 31
 y 11
 end
@@ -5826,8 +5411,6 @@ x 31
 y 12
 end
 arch blocked
-msg
-endmsg
 x 31
 y 12
 end
@@ -5860,38 +5443,26 @@ x 31
 y 17
 end
 arch blocked
-msg
-endmsg
 x 31
 y 17
 end
 arch blocked
-msg
-endmsg
 x 32
 y 5
 end
 arch blocked
-msg
-endmsg
 x 32
 y 6
 end
 arch blocked
-msg
-endmsg
 x 32
 y 7
 end
 arch blocked
-msg
-endmsg
 x 32
 y 8
 end
 arch blocked
-msg
-endmsg
 x 32
 y 9
 end
@@ -5900,8 +5471,6 @@ x 32
 y 10
 end
 arch blocked
-msg
-endmsg
 x 32
 y 10
 end
@@ -6046,79 +5615,6 @@ x 34
 y 17
 end
 arch blocked
-msg
-endmsg
 x 34
 y 17
-end
-arch pentagram_111
-hp 10
-sp 6
-x 5
-y 1
-connected 13
-end
-arch pentagram_111
-hp 12
-sp 17
-x 9
-y 26
-connected 14
-end
-arch pentagram_111
-x 10
-y 6
-end
-arch pentagram_111
-x 12
-y 17
-end
-arch active_volcano
-x 15
-y 11
-end
-arch pentagram_111
-x 16
-y 3
-end
-arch active_volcano
-x 17
-y 9
-end
-arch active_volcano
-x 17
-y 13
-end
-arch active_volcano
-x 19
-y 11
-end
-arch pentagram_111
-x 23
-y 6
-end
-arch pentagram_111
-x 23
-y 17
-end
-arch pentagram_111
-hp 23
-sp 17
-x 25
-y 25
-connected 10
-end
-arch pentagram_111
-hp 16
-sp 3
-x 26
-y 1
-connected 12
-end
-arch pentagram_111
-hp 23
-sp 6
-x 29
-y 6
-connected 11
 end

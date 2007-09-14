@@ -1,55 +1,38 @@
 arch map
 name DragonQuest ElectricLord
+darkness 5
+width 41
+height 16
 msg
 Creator: peterm
 Email: peterm@soda.csua.berkeley.edu
 Date: Fri Aug 19 16:41:17 1994
 endmsg
-x 41
-invisible 5
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch blocked
-msg
-endmsg
 y 4
 end
 arch blocked
-msg
-endmsg
 y 5
 end
 arch blocked
-msg
-endmsg
 y 6
 end
 arch blocked
-msg
-endmsg
 y 7
 end
 arch blocked
-msg
-endmsg
 y 8
 end
 arch pstone_2
@@ -101,18 +84,12 @@ arch cave23
 y 13
 end
 arch blocked
-msg
-endmsg
 y 14
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch pstone_2
@@ -140,32 +117,22 @@ x 1
 y 3
 end
 arch blocked
-msg
-endmsg
 x 1
 y 4
 end
 arch blocked
-msg
-endmsg
 x 1
 y 5
 end
 arch blocked
-msg
-endmsg
 x 1
 y 6
 end
 arch blocked
-msg
-endmsg
 x 1
 y 7
 end
 arch blocked
-msg
-endmsg
 x 1
 y 8
 end
@@ -194,9 +161,9 @@ x 1
 y 12
 end
 arch evoker_book
-value 1800
 x 1
 y 12
+value 1800
 randomitems none
 arch spell_ball_lightning
 end
@@ -218,8 +185,6 @@ x 1
 y 14
 end
 arch blocked
-msg
-endmsg
 x 1
 y 15
 end
@@ -258,26 +223,18 @@ x 2
 y 4
 end
 arch blocked
-msg
-endmsg
 x 2
 y 5
 end
 arch blocked
-msg
-endmsg
 x 2
 y 6
 end
 arch blocked
-msg
-endmsg
 x 2
 y 7
 end
 arch blocked
-msg
-endmsg
 x 2
 y 8
 end
@@ -326,8 +283,6 @@ x 2
 y 14
 end
 arch blocked
-msg
-endmsg
 x 2
 y 15
 end
@@ -366,20 +321,14 @@ x 3
 y 5
 end
 arch blocked
-msg
-endmsg
 x 3
 y 6
 end
 arch blocked
-msg
-endmsg
 x 3
 y 7
 end
 arch blocked
-msg
-endmsg
 x 3
 y 8
 end
@@ -424,14 +373,10 @@ x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 14
 end
 arch blocked
-msg
-endmsg
 x 3
 y 15
 end
@@ -470,20 +415,14 @@ x 4
 y 5
 end
 arch blocked
-msg
-endmsg
 x 4
 y 6
 end
 arch blocked
-msg
-endmsg
 x 4
 y 7
 end
 arch blocked
-msg
-endmsg
 x 4
 y 8
 end
@@ -532,8 +471,6 @@ x 4
 y 14
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
@@ -576,14 +513,10 @@ x 5
 y 6
 end
 arch blocked
-msg
-endmsg
 x 5
 y 7
 end
 arch blocked
-msg
-endmsg
 x 5
 y 8
 end
@@ -636,8 +569,6 @@ x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 5
 y 15
 end
@@ -688,8 +619,6 @@ x 6
 y 7
 end
 arch blocked
-msg
-endmsg
 x 6
 y 8
 end
@@ -742,8 +671,6 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 y 15
 end
@@ -794,8 +721,6 @@ x 7
 y 7
 end
 arch blocked
-msg
-endmsg
 x 7
 y 8
 end
@@ -844,8 +769,6 @@ x 7
 y 14
 end
 arch blocked
-msg
-endmsg
 x 7
 y 15
 end
@@ -892,8 +815,6 @@ x 8
 y 7
 end
 arch blocked
-msg
-endmsg
 x 8
 y 8
 end
@@ -992,8 +913,6 @@ x 9
 y 7
 end
 arch blocked
-msg
-endmsg
 x 9
 y 8
 end
@@ -1066,6 +985,74 @@ end
 arch pstone_2
 x 10
 y 2
+end
+arch dragonman
+name Blue Dragonlord
+Int 5
+hp 7000
+maxhp 7000
+maxsp 50
+exp 200000
+dam 40
+wc -12
+ac -15
+x 10
+y 2
+level 30
+resist_magic 30
+carrying 17100
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch mjoellnir
+name Thunderfist
+Con 1
+dam 22
+attacktype 264
+resist_electricity 45
+resist_cold -20
+path_attuned 8
+material 0
+value 250000
+weight 17000
+magic 5
+end
+arch key2
+slaying ElectricLordKey
+end
 end
 arch pstone_2
 x 10
@@ -1325,8 +1312,6 @@ x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch pstone_2
@@ -1418,19 +1403,13 @@ x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -1507,8 +1486,6 @@ x 14
 y 10
 end
 arch blocked
-msg
-endmsg
 x 14
 y 11
 end
@@ -1533,20 +1510,14 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch pstone_2
@@ -1622,8 +1593,6 @@ x 15
 y 11
 end
 arch blocked
-msg
-endmsg
 x 15
 y 12
 end
@@ -1644,8 +1613,6 @@ x 15
 y 14
 end
 arch blocked
-msg
-endmsg
 x 15
 y 15
 end
@@ -1792,6 +1759,18 @@ end
 arch pstone_2
 x 17
 y 7
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 17
+y 7
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 17
@@ -2011,6 +1990,18 @@ arch pstone_2
 x 20
 y 2
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 20
+y 2
+speed -0.500000
+level 25
+end
 arch pstone_2
 x 20
 y 3
@@ -2142,8 +2133,6 @@ x 21
 y 14
 end
 arch blocked
-msg
-endmsg
 x 21
 y 15
 end
@@ -2222,8 +2211,6 @@ x 22
 y 14
 end
 arch blocked
-msg
-endmsg
 x 22
 y 15
 end
@@ -2268,6 +2255,18 @@ end
 arch pstone_2
 x 23
 y 8
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 23
+y 8
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 23
@@ -2532,8 +2531,6 @@ x 26
 y 15
 end
 arch blocked
-msg
-endmsg
 x 26
 y 15
 end
@@ -2562,6 +2559,18 @@ end
 arch pstone_2
 x 27
 y 4
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 27
+y 4
+speed -0.500000
+level 25
 end
 arch pstone_2
 x 27
@@ -2604,14 +2613,10 @@ x 27
 y 13
 end
 arch blocked
-msg
-endmsg
 x 27
 y 14
 end
 arch blocked
-msg
-endmsg
 x 27
 y 15
 end
@@ -2657,6 +2662,18 @@ arch pstone_2
 x 28
 y 8
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 28
+y 8
+speed -0.500000
+level 25
+end
 arch pstone_2
 x 28
 y 9
@@ -2686,14 +2703,10 @@ x 28
 y 13
 end
 arch blocked
-msg
-endmsg
 x 28
 y 14
 end
 arch blocked
-msg
-endmsg
 x 28
 y 15
 end
@@ -2768,14 +2781,10 @@ x 29
 y 13
 end
 arch blocked
-msg
-endmsg
 x 29
 y 14
 end
 arch blocked
-msg
-endmsg
 x 29
 y 15
 end
@@ -2842,20 +2851,14 @@ x 30
 y 12
 end
 arch blocked
-msg
-endmsg
 x 30
 y 13
 end
 arch blocked
-msg
-endmsg
 x 30
 y 14
 end
 arch blocked
-msg
-endmsg
 x 30
 y 15
 end
@@ -2926,14 +2929,10 @@ x 31
 y 13
 end
 arch blocked
-msg
-endmsg
 x 31
 y 14
 end
 arch blocked
-msg
-endmsg
 x 31
 y 15
 end
@@ -3008,14 +3007,10 @@ x 32
 y 13
 end
 arch blocked
-msg
-endmsg
 x 32
 y 14
 end
 arch blocked
-msg
-endmsg
 x 32
 y 15
 end
@@ -3098,14 +3093,10 @@ x 33
 y 13
 end
 arch blocked
-msg
-endmsg
 x 33
 y 14
 end
 arch blocked
-msg
-endmsg
 x 33
 y 15
 end
@@ -3188,14 +3179,10 @@ x 34
 y 13
 end
 arch blocked
-msg
-endmsg
 x 34
 y 14
 end
 arch blocked
-msg
-endmsg
 x 34
 y 15
 end
@@ -3286,8 +3273,6 @@ x 35
 y 14
 end
 arch blocked
-msg
-endmsg
 x 35
 y 15
 end
@@ -3384,8 +3369,6 @@ x 36
 y 14
 end
 arch blocked
-msg
-endmsg
 x 36
 y 15
 end
@@ -3470,20 +3453,14 @@ x 37
 y 13
 end
 arch blocked
-msg
-endmsg
 x 37
 y 14
 end
 arch blocked
-msg
-endmsg
 x 37
 y 15
 end
 arch blocked
-msg
-endmsg
 x 38
 end
 arch cave19
@@ -3575,31 +3552,21 @@ x 38
 y 13
 end
 arch blocked
-msg
-endmsg
 x 38
 y 14
 end
 arch blocked
-msg
-endmsg
 x 38
 y 15
 end
 arch blocked
-msg
-endmsg
 x 39
 end
 arch blocked
-msg
-endmsg
 x 39
 y 1
 end
 arch blocked
-msg
-endmsg
 x 39
 y 2
 end
@@ -3684,79 +3651,53 @@ x 39
 y 12
 end
 arch blocked
-msg
-endmsg
 x 39
 y 13
 end
 arch blocked
-msg
-endmsg
 x 39
 y 14
 end
 arch blocked
-msg
-endmsg
 x 39
 y 15
 end
 arch blocked
-msg
-endmsg
 x 40
 end
 arch blocked
-msg
-endmsg
 x 40
 y 1
 end
 arch blocked
-msg
-endmsg
 x 40
 y 2
 end
 arch blocked
-msg
-endmsg
 x 40
 y 3
 end
 arch blocked
-msg
-endmsg
 x 40
 y 4
 end
 arch blocked
-msg
-endmsg
 x 40
 y 5
 end
 arch blocked
-msg
-endmsg
 x 40
 y 6
 end
 arch blocked
-msg
-endmsg
 x 40
 y 7
 end
 arch blocked
-msg
-endmsg
 x 40
 y 8
 end
 arch blocked
-msg
-endmsg
 x 40
 y 9
 end
@@ -3777,154 +3718,18 @@ x 40
 y 11
 end
 arch blocked
-msg
-endmsg
 x 40
 y 12
 end
 arch blocked
-msg
-endmsg
 x 40
 y 13
 end
 arch blocked
-msg
-endmsg
 x 40
 y 14
 end
 arch blocked
-msg
-endmsg
 x 40
 y 15
-end
-arch dragonman
-name Blue Dragonlord
-Int 5
-hp 7000
-maxhp 7000
-maxsp 50
-exp 200000
-dam 40
-wc -12
-ac -15
-x 10
-y 2
-level 30
-resist_magic 30
-carrying 17100
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch mjoellnir
-name Thunderfist
-Con 1
-dam 22
-attacktype 264
-resist_electricity 45
-resist_cold -20
-path_attuned 8
-material 0
-value 250000
-weight 17000
-magic 5
-end
-arch key2
-slaying ElectricLordKey
-end
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 17
-y 7
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 20
-y 2
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 8
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 27
-y 4
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 28
-y 8
-speed -0.500000
-level 25
 end
