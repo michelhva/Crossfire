@@ -4934,6 +4934,11 @@ x 19
 y 25
 elevation 0
 end
+arch fort
+name The Manor
+x 19
+y 25
+end
 arch grass
 x 19
 y 26
@@ -4943,6 +4948,11 @@ arch grass
 x 19
 y 27
 elevation 0
+end
+arch rl_house1
+name town house
+x 19
+y 27
 end
 arch grass
 x 19
@@ -5026,6 +5036,14 @@ x 19
 y 37
 elevation 0
 end
+arch store_weapons
+name Spike's Weapons
+slaying /darcap/darcap/shop_w
+hp 14
+sp 14
+x 19
+y 37
+end
 arch cobblestones2
 x 19
 y 38
@@ -5040,6 +5058,14 @@ arch grass
 x 19
 y 40
 elevation 0
+end
+arch guild_northwest
+name Guild of the Poisoned Dagger
+slaying /darcap/darcap/guilds/poisoned_dagger/ground
+hp 12
+sp 23
+x 19
+y 40
 end
 arch grass
 x 19
@@ -5059,6 +5085,14 @@ arch grass_only
 x 19
 y 43
 elevation 0
+end
+arch store_magic_northwest
+name Mirkland's Magic
+slaying /darcap/darcap/shop_m
+hp 14
+sp 2
+x 19
+y 43
 end
 arch grass_only
 x 19
@@ -5510,6 +5544,14 @@ x 21
 y 25
 elevation 0
 end
+arch guild_northwest
+name Poisoned Dagger's storage room
+slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
+hp 1
+sp 10
+x 21
+y 25
+end
 arch grass
 x 21
 y 26
@@ -5519,6 +5561,10 @@ arch grass
 x 21
 y 27
 elevation 0
+end
+arch t_house1
+x 21
+y 27
 end
 arch grass
 x 21
@@ -5546,6 +5592,14 @@ arch cobblestones2
 x 21
 y 31
 elevation 0
+end
+arch church
+name St Andreas the Ravenous
+slaying /darcap/darcap/church
+hp 17
+sp 1
+x 21
+y 31
 end
 arch cobblestones2
 x 21
@@ -5889,6 +5943,14 @@ x 22
 y 40
 elevation 0
 end
+arch courthouse
+name Courthouse
+slaying /darcap/darcap/quest
+hp 17
+sp 7
+x 22
+y 40
+end
 arch cobblestones2
 x 22
 y 41
@@ -6079,6 +6141,13 @@ x 23
 y 25
 elevation 0
 end
+arch store_general
+slaying /darcap/darcap/gshop
+hp 15
+sp 6
+x 23
+y 25
+end
 arch grass
 x 23
 y 26
@@ -6088,6 +6157,10 @@ arch grass
 x 23
 y 27
 elevation 0
+end
+arch t_house2
+x 23
+y 27
 end
 arch grass
 x 23
@@ -6710,6 +6783,14 @@ x 25
 y 37
 elevation 0
 end
+arch store_armour
+name Smith's Armors
+slaying /darcap/darcap/shop_a
+hp 1
+sp 14
+x 25
+y 37
+end
 arch cobblestones2
 x 25
 y 38
@@ -6748,6 +6829,14 @@ arch cobblestones2
 x 25
 y 43
 elevation 0
+end
+arch store_general
+name Bob's Fish & Chips
+slaying /darcap/darcap/shop_g
+hp 2
+sp 1
+x 25
+y 43
 end
 arch cobblestones2
 x 25
@@ -6939,6 +7028,10 @@ x 26
 y 27
 elevation 0
 end
+arch hovels2
+x 26
+y 27
+end
 arch grass
 x 26
 y 28
@@ -6989,6 +7082,10 @@ arch cobblestones2
 x 26
 y 34
 elevation 0
+end
+arch house_up
+x 26
+y 34
 end
 arch cobblestones2
 x 26
@@ -7501,6 +7598,13 @@ x 28
 y 25
 elevation 0
 end
+arch store_alchemy
+slaying /darcap/darcap/potionshop
+hp 14
+sp 14
+x 28
+y 25
+end
 arch grass
 x 28
 y 26
@@ -7510,6 +7614,14 @@ arch grass
 x 28
 y 27
 elevation 0
+end
+arch guild_northwest
+name Smoking Cauldron's storage room
+slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
+hp 1
+sp 10
+x 28
+y 27
 end
 arch grass_only
 x 28
@@ -7525,6 +7637,14 @@ arch grass
 x 28
 y 30
 elevation 0
+end
+arch castle_a_northwest
+name forgotten city
+slaying /darcap/forgotten_town/enter
+hp 3
+sp 1
+x 28
+y 30
 end
 arch grass
 x 28
@@ -7563,6 +7683,14 @@ arch light2
 x 28
 y 35
 end
+arch inn
+name Cameron's Tavern
+slaying /darcap/darcap/tavern
+hp 19
+sp 13
+x 28
+y 35
+end
 arch cobblestones2
 x 28
 y 36
@@ -7583,6 +7711,11 @@ x 28
 y 39
 elevation 0
 end
+arch barn2_northwest
+name ware house
+x 28
+y 39
+end
 arch cobblestones2
 x 28
 y 40
@@ -7592,6 +7725,14 @@ arch cobblestones2
 x 28
 y 41
 elevation 0
+end
+arch barn2_northwest
+name Pirate Warehouse
+slaying /darcap/darcap/pirates.1
+hp 10
+sp 36
+x 28
+y 41
 end
 arch cobblestones2
 x 28
@@ -8372,6 +8513,14 @@ x 31
 y 25
 elevation 0
 end
+arch guild_northwest
+name Guild of the Smoking Cauldron
+slaying /darcap/darcap/guilds/smoking_cauldron/ground
+hp 12
+sp 23
+x 31
+y 25
+end
 arch grass
 x 31
 y 26
@@ -8381,6 +8530,14 @@ arch grass_only
 x 31
 y 27
 elevation 0
+end
+arch guild_northwest
+name Maze House
+slaying /darcap/darcap/maze
+hp 85
+sp 29
+x 31
+y 27
 end
 arch grass_only
 x 31
@@ -8397,10 +8554,19 @@ x 31
 y 30
 elevation 0
 end
+arch farmhouse
+name red house
+x 31
+y 30
+end
 arch grass_only
 x 31
 y 31
 elevation 0
+end
+arch house_largish
+x 31
+y 31
 end
 arch cobblestones2
 x 31
@@ -8693,6 +8859,11 @@ x 32
 y 33
 elevation 0
 end
+arch city_tower_northwest
+name Lighthouse
+x 32
+y 33
+end
 arch cobblestones2
 x 32
 y 34
@@ -8712,6 +8883,14 @@ x 32
 y 36
 elevation 0
 move_block all
+end
+arch big_galleon
+name To Navar City
+slaying /world/world_122_116
+hp 21
+sp 43
+x 32
+y 36
 end
 arch sea1
 x 32
@@ -8738,6 +8917,10 @@ y 40
 elevation 0
 move_block all
 end
+arch big_galleon
+x 32
+y 40
+end
 arch sea1
 x 32
 y 41
@@ -8761,6 +8944,14 @@ arch cobblestones2
 x 32
 y 44
 elevation 0
+end
+arch inn
+name Waterfront Inn
+slaying /darcap/darcap/inn
+hp 5
+sp 8
+x 32
+y 44
 end
 arch brush
 x 32
@@ -13207,195 +13398,4 @@ arch sea
 x 49
 y 49
 elevation -773
-end
-arch fort
-name The Manor
-x 19
-y 25
-end
-arch rl_house1
-name town house
-x 19
-y 27
-end
-arch store_weapons
-name Spike's Weapons
-slaying /darcap/darcap/shop_w
-hp 14
-sp 14
-x 19
-y 37
-end
-arch guild_northwest
-name Guild of the Poisoned Dagger
-slaying /darcap/darcap/guilds/poisoned_dagger/ground
-hp 12
-sp 23
-x 19
-y 40
-end
-arch store_magic_northwest
-name Mirkland's Magic
-slaying /darcap/darcap/shop_m
-hp 14
-sp 2
-x 19
-y 43
-end
-arch guild_northwest
-name Poisoned Dagger's storage room
-slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
-hp 1
-sp 10
-x 21
-y 25
-end
-arch t_house1
-x 21
-y 27
-end
-arch church
-name St Andreas the Ravenous
-slaying /darcap/darcap/church
-hp 17
-sp 1
-x 21
-y 31
-end
-arch courthouse
-name Courthouse
-slaying /darcap/darcap/quest
-hp 17
-sp 7
-x 22
-y 40
-end
-arch store_general
-slaying /darcap/darcap/gshop
-hp 15
-sp 6
-x 23
-y 25
-end
-arch t_house2
-x 23
-y 27
-end
-arch store_armour
-name Smith's Armors
-slaying /darcap/darcap/shop_a
-hp 1
-sp 14
-x 25
-y 37
-end
-arch store_general
-name Bob's Fish & Chips
-slaying /darcap/darcap/shop_g
-hp 2
-sp 1
-x 25
-y 43
-end
-arch hovels2
-x 26
-y 27
-end
-arch house_up
-x 26
-y 34
-end
-arch store_alchemy
-slaying /darcap/darcap/potionshop
-hp 14
-sp 14
-x 28
-y 25
-end
-arch guild_northwest
-name Smoking Cauldron's storage room
-slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
-hp 1
-sp 10
-x 28
-y 27
-end
-arch castle_a_northwest
-name forgotten city
-slaying /darcap/forgotten_town/enter
-hp 3
-sp 1
-x 28
-y 30
-end
-arch inn
-name Cameron's Tavern
-slaying /darcap/darcap/tavern
-hp 19
-sp 13
-x 28
-y 35
-end
-arch barn2_northwest
-name ware house
-x 28
-y 39
-end
-arch barn2_northwest
-name Pirate Warehouse
-slaying /darcap/darcap/pirates.1
-hp 10
-sp 36
-x 28
-y 41
-end
-arch guild_northwest
-name Guild of the Smoking Cauldron
-slaying /darcap/darcap/guilds/smoking_cauldron/ground
-hp 12
-sp 23
-x 31
-y 25
-end
-arch guild_northwest
-name Maze House
-slaying /darcap/darcap/maze
-hp 85
-sp 29
-x 31
-y 27
-end
-arch farmhouse
-name red house
-x 31
-y 30
-end
-arch house_largish
-x 31
-y 31
-end
-arch city_tower_northwest
-name Lighthouse
-x 32
-y 33
-end
-arch big_galleon
-name To Navar City
-slaying /world/world_122_116
-hp 21
-sp 43
-x 32
-y 36
-end
-arch big_galleon
-x 32
-y 40
-end
-arch inn
-name Waterfront Inn
-slaying /darcap/darcap/inn
-hp 5
-sp 8
-x 32
-y 44
 end
