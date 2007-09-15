@@ -1677,6 +1677,14 @@ x 5
 y 8
 elevation 9534
 end
+arch hovels2
+name Riverside Manor
+slaying /scorn/houses/riverside_manor
+hp 11
+sp 1
+x 5
+y 8
+end
 arch dungeon_magic
 x 5
 y 9
@@ -2275,6 +2283,15 @@ x 7
 y 1
 elevation 11305
 end
+arch inn
+name Wanderer Inn
+name_pl Wanderer Inn
+slaying /scorn/taverns/inn
+hp 8
+sp 15
+x 7
+y 1
+end
 arch dungeon_magic
 x 7
 y 2
@@ -2630,6 +2647,15 @@ arch grass
 x 8
 y 4
 elevation 10990
+end
+arch farmhouse
+name Patch's House
+name_pl Patch's House
+slaying /scorn/houses/house2
+hp 10
+sp 1
+x 8
+y 4
 end
 arch dungeon_magic
 x 8
@@ -3544,6 +3570,14 @@ x 11
 y 1
 elevation 5799
 end
+arch store_general
+name General Store
+slaying /scorn/shops/generalshop
+hp 13
+sp 13
+x 11
+y 1
+end
 arch dungeon_magic
 x 11
 y 2
@@ -3888,6 +3922,14 @@ arch brush
 x 12
 y 5
 elevation 2552
+end
+arch city_tower
+name Newbie Tower
+slaying /scorn/towers/tower
+hp 16
+sp 30
+x 12
+y 5
 end
 arch dungeon_magic
 x 12
@@ -10671,6 +10713,11 @@ x 38
 y 24
 elevation 1318
 end
+arch barn2
+name cider house
+x 38
+y 24
+end
 arch grass
 x 38
 y 25
@@ -11536,6 +11583,11 @@ arch grass
 x 41
 y 24
 elevation 1262
+end
+arch house_largish
+name Witherspoon Manor
+x 41
+y 24
 end
 arch grass
 x 41
@@ -13710,56 +13762,4 @@ end
 arch wasteland
 x 49
 y 49
-end
-arch hovels2
-name Riverside Manor
-slaying /scorn/houses/riverside_manor
-hp 11
-sp 1
-x 5
-y 8
-end
-arch inn
-name Wanderer Inn
-name_pl Wanderer Inn
-slaying /scorn/taverns/inn
-hp 8
-sp 15
-x 7
-y 1
-end
-arch farmhouse
-name Patch's House
-name_pl Patch's House
-slaying /scorn/houses/house2
-hp 10
-sp 1
-x 8
-y 4
-end
-arch store_general
-name General Store
-slaying /scorn/shops/generalshop
-hp 13
-sp 13
-x 11
-y 1
-end
-arch city_tower
-name Newbie Tower
-slaying /scorn/towers/tower
-hp 16
-sp 30
-x 12
-y 5
-end
-arch barn2
-name cider house
-x 38
-y 24
-end
-arch house_largish
-name Witherspoon Manor
-x 41
-y 24
 end

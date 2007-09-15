@@ -743,6 +743,13 @@ arch sea
 x 3
 y 42
 end
+arch darkhold
+slaying /santo_dominion/lord_byron/main
+hp 25
+sp 59
+x 3
+y 42
+end
 arch grass
 x 3
 y 43
@@ -9964,11 +9971,4 @@ end
 arch mountain2
 x 49
 y 49
-end
-arch darkhold
-slaying /santo_dominion/lord_byron/main
-hp 25
-sp 59
-x 3
-y 42
 end
