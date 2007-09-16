@@ -1,12 +1,13 @@
 arch map
 name denray
+width 16
+height 16
+enter_x 15
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Wed Feb  3 18:14:20 1999
 endmsg
-hp 15
-sp 0
 end
 arch cobblestones2
 end
@@ -168,6 +169,11 @@ arch dungeon_magic
 x 1
 y 7
 end
+arch keep
+slaying dd_keep
+x 1
+y 7
+end
 arch cobblestones2
 x 1
 y 8
@@ -286,6 +292,10 @@ arch cobblestones2
 x 2
 y 10
 end
+arch rl_house1
+x 2
+y 10
+end
 arch cobblestones2
 x 2
 y 11
@@ -341,6 +351,14 @@ x 3
 y 3
 end
 arch cobblestones2
+x 3
+y 4
+end
+arch house_largish
+name nice house
+slaying dd_baron
+hp 4
+sp 4
 x 3
 y 4
 end
@@ -463,6 +481,11 @@ arch cobblestones2
 x 4
 y 13
 end
+arch store_weapons
+slaying dd_shop
+x 4
+y 13
+end
 arch cobblestones2
 x 4
 y 14
@@ -502,6 +525,11 @@ x 5
 y 3
 end
 arch cobblestones2
+x 5
+y 4
+end
+arch church
+slaying dd_church
 x 5
 y 4
 end
@@ -571,6 +599,10 @@ arch dungeon_magic
 x 6
 y 1
 end
+arch prison
+x 6
+y 1
+end
 arch cobblestones2
 x 6
 y 2
@@ -595,6 +627,14 @@ arch cobblestones2
 x 6
 y 7
 end
+arch courthouse
+name royal court
+slaying dd_court
+hp 6
+sp 12
+x 6
+y 7
+end
 arch cobblestones2
 x 6
 y 8
@@ -616,6 +656,11 @@ x 6
 y 12
 end
 arch cobblestones2
+x 6
+y 13
+end
+arch guild
+slaying dd_alchemy
 x 6
 y 13
 end
@@ -750,6 +795,11 @@ x 8
 y 4
 end
 arch cobblestones2
+x 8
+y 5
+end
+arch inn
+slaying dd_inn
 x 8
 y 5
 end
@@ -985,6 +1035,10 @@ arch cobblestones2
 x 10
 y 11
 end
+arch barn
+x 10
+y 11
+end
 arch cobblestones2
 x 10
 y 12
@@ -1041,6 +1095,10 @@ x 11
 y 4
 end
 arch dungeon_magic
+x 11
+y 4
+end
+arch barrack_long
 x 11
 y 4
 end
@@ -1263,6 +1321,10 @@ arch dungeon_magic
 x 12
 y 12
 end
+arch barrack_long
+x 12
+y 12
+end
 arch cobblestones2
 x 12
 y 13
@@ -1297,6 +1359,10 @@ arch dungeon_magic
 x 13
 y 1
 end
+arch tower_a
+x 13
+y 1
+end
 arch cobblestones2
 x 13
 y 2
@@ -1310,6 +1376,10 @@ x 13
 y 3
 end
 arch dungeon_magic
+x 13
+y 3
+end
+arch barrack_up
 x 13
 y 3
 end
@@ -1399,6 +1469,10 @@ x 13
 y 13
 end
 arch dungeon_magic
+x 13
+y 13
+end
+arch tower_a
 x 13
 y 13
 end
@@ -1703,77 +1777,4 @@ hp 1
 sp 19
 x 15
 y 15
-end
-arch keep
-slaying dd_keep
-x 1
-y 7
-end
-arch rl_house1
-x 2
-y 10
-end
-arch house_largish
-name nice house
-slaying dd_baron
-hp 4
-sp 4
-x 3
-y 4
-end
-arch store_weapons
-slaying dd_shop
-x 4
-y 13
-end
-arch church
-slaying dd_church
-x 5
-y 4
-end
-arch prison
-x 6
-y 1
-end
-arch courthouse
-name royal court
-slaying dd_court
-hp 6
-sp 12
-x 6
-y 7
-end
-arch guild
-slaying dd_alchemy
-x 6
-y 13
-end
-arch inn
-slaying dd_inn
-x 8
-y 5
-end
-arch barn
-x 10
-y 11
-end
-arch barrack_long
-x 11
-y 4
-end
-arch barrack_long
-x 12
-y 12
-end
-arch tower_a
-x 13
-y 1
-end
-arch barrack_up
-x 13
-y 3
-end
-arch tower_a
-x 13
-y 13
 end

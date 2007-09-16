@@ -1,13 +1,14 @@
 arch map
+name <unnamed>
+width 7
+height 7
+enter_x 3
+enter_y 3
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 19:53:07 1999
 endmsg
-hp 3
-sp 3
-x 7
-y 7
 end
 arch woodfloor2
 end
@@ -199,8 +200,8 @@ x 4
 y 2
 type 0
 carrying 46510
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 arch key
 end

@@ -1,13 +1,14 @@
 arch map
 name City by the Sea
+width 22
+height 16
+enter_x 1
+enter_y 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu May  6 13:09:57 1999
 endmsg
-hp 1
-sp 1
-x 22
 end
 arch grass
 end
@@ -20,6 +21,10 @@ arch cannon_1
 y 1
 end
 arch cobblestones2
+y 2
+end
+arch stronghold
+name Ministry of Arms
 y 2
 end
 arch cobblestones2
@@ -55,6 +60,9 @@ end
 arch grass
 y 10
 end
+arch university
+y 10
+end
 arch grass
 y 11
 end
@@ -170,6 +178,14 @@ x 2
 y 5
 end
 arch cobblestones
+x 2
+y 6
+end
+arch guild
+name merchants guild
+slaying merchant
+hp 5
+sp 10
 x 2
 y 6
 end
@@ -383,6 +399,12 @@ arch cobblestones
 x 5
 y 3
 end
+arch palace
+slaying palace
+sp 10
+x 5
+y 3
+end
 arch cobblestones
 x 5
 y 4
@@ -486,6 +508,12 @@ x 6
 y 6
 end
 arch cobblestones
+x 6
+y 7
+end
+arch rl_house1
+name Dwarven Embassy
+slaying dwarf
 x 6
 y 7
 end
@@ -957,6 +985,10 @@ arch grass
 x 11
 y 11
 end
+arch house_up
+x 11
+y 11
+end
 arch grass
 x 11
 y 12
@@ -1003,6 +1035,10 @@ arch cobblestones2
 x 12
 y 3
 end
+arch cathedral
+x 12
+y 3
+end
 arch cobblestones2
 x 12
 y 4
@@ -1023,7 +1059,17 @@ arch grass
 x 12
 y 8
 end
+arch barrack_long
+x 12
+y 8
+end
 arch grass
+x 12
+y 9
+end
+arch barrack_up
+name inn by the plaza
+slaying plaza
 x 12
 y 9
 end
@@ -1741,6 +1787,10 @@ arch grass
 x 19
 y 8
 end
+arch house_largish
+x 19
+y 8
+end
 arch grass
 x 19
 y 9
@@ -1766,6 +1816,10 @@ x 19
 y 11
 end
 arch grass
+x 19
+y 12
+end
+arch church
 x 19
 y 12
 end
@@ -2024,57 +2078,4 @@ end
 arch cwall_2_2_4
 x 21
 y 15
-end
-arch stronghold
-name Ministry of Arms
-y 2
-end
-arch university
-y 10
-end
-arch guild
-name merchants guild
-slaying merchant
-hp 5
-sp 10
-x 2
-y 6
-end
-arch palace
-slaying palace
-sp 10
-x 5
-y 3
-end
-arch rl_house1
-name Dwarven Embassy
-slaying dwarf
-x 6
-y 7
-end
-arch house_up
-x 11
-y 11
-end
-arch cathedral
-x 12
-y 3
-end
-arch barrack_long
-x 12
-y 8
-end
-arch barrack_up
-name inn by the plaza
-slaying plaza
-x 12
-y 9
-end
-arch house_largish
-x 19
-y 8
-end
-arch church
-x 19
-y 12
 end

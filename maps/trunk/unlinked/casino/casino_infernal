@@ -1,11 +1,11 @@
 arch map
 name Casino Rama
+width 20
+height 17
 msg
 Creator: CF Java Map Editor
 Date:    1/18/2003
 endmsg
-width 20
-height 17
 end
 arch dungeon_magic
 end
@@ -232,16 +232,16 @@ y 8
 end
 arch slotmachine3
 name #7
+title Slot
 msg
 Drop a platinum coin to play.
 endmsg
-title Slot
+x 1
+y 8
 arch event_apply
 title Python
 slaying /python/casino/platinumslots.py
 end
-x 1
-y 8
 end
 arch dungeon_magic
 x 1
@@ -261,16 +261,16 @@ y 10
 end
 arch slotmachine3
 name #4
+title Slot
 msg
 Drop a gold coin to play.
 endmsg
+x 1
+y 10
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-title Slot
-x 1
-y 10
 end
 arch dungeon_magic
 x 1
@@ -290,16 +290,16 @@ y 12
 end
 arch slotmachine3
 name #1
+title Slot
 msg
 Drop a silver coin to play.
 endmsg
-title Slot
+x 1
+y 12
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-x 1
-y 12
 end
 arch dungeon_magic
 x 1
@@ -418,16 +418,16 @@ y 8
 end
 arch slotmachine2
 name #8
+title Slot
 msg
 Drop a platinum coin to play.
 endmsg
-title Slot
+x 2
+y 8
 arch event_apply
 title Python
 slaying /python/casino/platinumslots.py
 end
-x 2
-y 8
 end
 arch dungeon_magic
 x 2
@@ -447,16 +447,16 @@ y 10
 end
 arch slotmachine2
 name #5
+title Slot
 msg
 Drop a gold coin to play.
 endmsg
-title Slot
+x 2
+y 10
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-x 2
-y 10
 end
 arch dungeon_magic
 x 2
@@ -476,16 +476,16 @@ y 12
 end
 arch slotmachine2
 name #2
+title Slot
 msg
 Drop a silver coin to play.
 endmsg
-title Slot
+x 2
+y 12
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-x 2
-y 12
 end
 arch dungeon_magic
 x 2
@@ -604,16 +604,16 @@ y 8
 end
 arch slotmachine1
 name #9
+title Slot
 msg
 Drop a platinum coin to play.
 endmsg
-title Slot
+x 3
+y 8
 arch event_apply
 title Python
 slaying /python/casino/platinumslots.py
 end
-x 3
-y 8
 end
 arch dungeon_magic
 x 3
@@ -633,16 +633,16 @@ y 10
 end
 arch slotmachine1
 name #6
+title Slot
 msg
 Drop a gold coin to play.
 endmsg
-title Slot
+x 3
+y 10
 arch event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
-x 3
-y 10
 end
 arch dungeon_magic
 x 3
@@ -662,16 +662,16 @@ y 12
 end
 arch slotmachine1
 name #3
+title Slot
 msg
 Drop a silver coin to play.
 endmsg
-title Slot
+x 3
+y 12
 arch event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
-x 3
-y 12
 end
 arch dungeon_magic
 x 3
@@ -1048,9 +1048,9 @@ x 6
 y 1
 end
 arch slevel_2_2_2
-move_block all
 x 6
 y 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1061,9 +1061,9 @@ x 6
 y 2
 end
 arch slevel_3_2
-move_block all
 x 6
 y 2
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1074,9 +1074,9 @@ x 6
 y 3
 end
 arch slevel_2_2_1
-move_block all
 x 6
 y 3
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1232,9 +1232,9 @@ x 7
 y 3
 end
 arch slevel_3_1
-move_block all
 x 7
 y 3
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -1372,6 +1372,14 @@ arch slevel_3_3
 x 8
 y 1
 end
+arch troll
+name Benny
+exp 0
+x 8
+y 1
+unaggressive 1
+sleep 0
+end
 arch dungeon_magic
 x 8
 y 2
@@ -1393,9 +1401,9 @@ x 8
 y 3
 end
 arch slevel_3_1
-move_block all
 x 8
 y 3
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -1547,9 +1555,9 @@ x 9
 y 3
 end
 arch slevel_3_1
-move_block all
 x 9
 y 3
+move_block all
 end
 arch dungeon_magic
 x 9
@@ -1705,9 +1713,9 @@ x 10
 y 3
 end
 arch slevel_3_1
-move_block all
 x 10
 y 3
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -1835,9 +1843,9 @@ x 11
 y 1
 end
 arch slevel_2_2_3
-move_block all
 x 11
 y 1
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -1848,9 +1856,9 @@ x 11
 y 2
 end
 arch slevel_3_4
-move_block all
 x 11
 y 2
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -1861,9 +1869,9 @@ x 11
 y 3
 end
 arch slevel_2_2_4
-move_block all
 x 11
 y 3
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -2759,12 +2767,4 @@ end
 arch awall_2_2_4
 x 16
 y 16
-end
-arch troll
-name Benny
-exp 0
-unaggressive 1
-sleep 0
-x 8
-y 1
 end
