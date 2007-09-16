@@ -1,8 +1,5 @@
 arch map
 name world_107_128
-msg
-
-endmsg
 width 50
 height 50
 outdoor 1
@@ -4925,12 +4922,11 @@ x 20
 y 19
 end
 arch sea
-elevation -549
-no_pass 0
 x 20
 y 20
 elevation -549
 move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 20
@@ -5249,12 +5245,11 @@ x 21
 y 19
 end
 arch sea
-elevation -339
-no_pass 0
 x 21
 y 20
 elevation -339
 move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 21
@@ -7428,11 +7423,11 @@ x 29
 y 4
 end
 arch shallow_sea
-no_pass 0
 x 29
 y 5
 elevation -9
 move_block 0
+no_pass 0
 end
 arch shallow_sea
 x 29

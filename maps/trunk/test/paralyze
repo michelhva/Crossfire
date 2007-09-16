@@ -1,4 +1,7 @@
 arch map
+name <unnamed>
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -36,6 +39,11 @@ end
 arch bwall_2_1_2
 x 3
 y 2
+end
+arch chinese_dragon
+hp 10
+x 3
+y 4
 end
 arch bwall_2_1_2
 x 3
@@ -80,27 +88,4 @@ end
 arch bwall_2_2_4
 x 6
 y 6
-end
-arch chinese_dragon
-hp 10
-x 3
-y 4
-end
-More
-arch chinese_dragon_2
-hp 10
-x 4
-y 4
-end
-More
-arch chinese_dragon_3
-hp 10
-x 3
-y 5
-end
-More
-arch chinese_dragon_4
-hp 10
-x 4
-y 5
 end

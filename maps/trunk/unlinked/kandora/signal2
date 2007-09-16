@@ -1,4 +1,5 @@
 arch map
+name <unnamed>
 reset_timeout 7200
 difficulty 5
 width 12
@@ -107,8 +108,8 @@ arch barbarian
 x 1
 y 3
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -221,8 +222,8 @@ arch barbarian
 x 2
 y 7
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -309,8 +310,8 @@ arch thief
 x 3
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -465,8 +466,8 @@ arch thief
 x 5
 y 3
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_right
@@ -779,8 +780,8 @@ arch barbarian
 x 8
 y 7
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_left
@@ -853,8 +854,8 @@ arch thief
 x 9
 y 5
 type 0
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch afloor_left
