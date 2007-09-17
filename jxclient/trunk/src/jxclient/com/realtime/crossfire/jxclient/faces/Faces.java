@@ -118,6 +118,7 @@ public class Faces
             return face;
         }
 
+        System.err.println("Warning: creating face object for unknown face "+index);
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
