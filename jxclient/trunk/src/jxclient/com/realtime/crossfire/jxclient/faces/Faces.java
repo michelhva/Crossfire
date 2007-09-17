@@ -196,16 +196,16 @@ public class Faces
     // TODO: handle checksum
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
-        final ImageIcon im = fileCache.load(pixname+".x2.png");
-        final ImageIcon oim = fileCache.load(pixname+".x1.png");
-        if (im == null || oim == null)
+        final ImageIcon imageIcon = fileCache.load(pixname+".x2.png");
+        final ImageIcon originalImageIcon = fileCache.load(pixname+".x1.png");
+        if (imageIcon == null || originalImageIcon == null)
         {
             askface(pixnum);
             faceCache.addFace(new Face(pixnum, pixname, unknownImageIcon, originalUnknownImageIcon));
         }
         else
         {
-            faceCache.addFace(new Face(pixnum, pixname, im, oim));
+            faceCache.addFace(new Face(pixnum, pixname, imageIcon, originalImageIcon));
         }
     }
 
