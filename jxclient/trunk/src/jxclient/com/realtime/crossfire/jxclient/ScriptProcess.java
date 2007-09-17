@@ -159,14 +159,17 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (parms.equals("stat xp"))
         {
-            String str = st.getStat(Stats.CS_STAT_LEVEL)+","+st.getExperience();
+            final StringBuilder sb = new StringBuilder();
+            sb.append(st.getStat(Stats.CS_STAT_LEVEL));
+            sb.append(',').append(st.getExperience());
             for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++)
             {
                 try
                 {
                     if (Stats.getSkill(i) != null)
                     {
-                        str = str+","+Stats.getSkill(i).getLevel()+","+Stats.getSkill(i).getExperience();
+                        sb.append(',').append(Stats.getSkill(i).getLevel());
+                        sb.append(',').append(Stats.getSkill(i).getExperience());
                     }
                 }
                 catch (Exception e)
@@ -174,18 +177,20 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
                     i = 201;
                 }
             }
-            commandSent(str);
+            commandSent(sb.toString());
         }
         else if (parms.equals("stat resists"))
         {
-            String str = "";
+            final StringBuilder sb = new StringBuilder();
             for (int i = Stats.CS_STAT_RESIST_START; i <= Stats.CS_STAT_RESIST_END; i++)
             {
-                str = str+st.getStat(i);
+                sb.append(st.getStat(i));
                 if (i < Stats.CS_STAT_RESIST_END)
-                    str += ",";
+                {
+                    sb.append(',');
+                }
             }
-            commandSent(str);
+            commandSent(sb.toString());
         }
         else if (parms.equals("weight"))
         {
@@ -194,16 +199,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (parms.equals("flags"))
         {
-            String str;
-            if (mywindow.checkFire())
-                str = "1,";
-            else
-                str = "0,";
-            if (mywindow.checkRun())
-                str += "1";
-            else
-                str += "0";
-            commandSent(str);
+            commandSent((mywindow.checkFire() ? "1" : "0")+","+(mywindow.checkRun() ? "1" : "0"));
         }
         else if (parms.equals("items inv"))
         {
