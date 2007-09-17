@@ -57,7 +57,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
             InputStreamReader isr = new InputStreamReader(in);
             BufferedReader br = new BufferedReader(isr);
-            String line = null;
+            String line;
             while ((line = br.readLine())!= null)
             {
                 runScriptCommand(line);
@@ -194,7 +194,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (parms.equals("flags"))
         {
-            String str = "";
+            String str;
             if (mywindow.checkFire())
                 str = "1,";
             else
