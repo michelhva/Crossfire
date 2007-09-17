@@ -69,28 +69,6 @@ public class Gui
     }
 
     /**
-     * Return the number of {@link GUIElement}s of this gui.
-     *
-     * @return The number gui elements.
-     */
-    public int size()
-    {
-        return elements.size();
-    }
-
-    /**
-     * Return one {@link GUIElement} of this gui.
-     *
-     * @param index The gui element index.
-     *
-     * @return The gui element.
-     */
-    public GUIElement get(final int index)
-    {
-        return elements.get(index);
-    }
-
-    /**
      * Repaint the gui and clear the changed flags of all repainted elements.
      *
      * @param g The <code>Graphics</code> to paint into.
