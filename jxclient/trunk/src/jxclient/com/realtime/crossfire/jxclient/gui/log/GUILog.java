@@ -197,7 +197,7 @@ public class GUILog extends GUIElement implements GUIScrollable
      * @param fontArcane The font to use for <code>Segment.Font.ARCANE</code>
      * text.
      */
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane) throws IOException
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground = picture;

@@ -104,7 +104,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
         }
     };
 
-    public GUIItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft) throws IOException
+    public GUIItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mypicbackground = picture;

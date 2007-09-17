@@ -56,7 +56,7 @@ public class GUIButton extends GUIElement
 
     private Color myfontcolor = new Color(255, 255, 255);
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd) throws IOException
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         if (picup == null) throw new IllegalArgumentException();
@@ -73,7 +73,7 @@ public class GUIButton extends GUIElement
         render();
     }
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd) throws IOException
+    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         if (picup == null) throw new IllegalArgumentException();

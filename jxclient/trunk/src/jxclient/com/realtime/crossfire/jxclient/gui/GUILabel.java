@@ -75,7 +75,7 @@ public class GUILabel extends GUIElement
      */
     private boolean autoResize = false;
 
-    private void commonInit(final BufferedImage picture) throws IOException
+    private void commonInit(final BufferedImage picture)
     {
         mybackground = picture == null ? null : new ImageIcon(picture);
         createBuffer();

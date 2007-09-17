@@ -102,7 +102,7 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh) throws IOException
+    public GUIMagicMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         createBuffer();
