@@ -165,10 +165,6 @@ public class Spell
             throw new IllegalArgumentException("resource '"+filename+"' does not exist");
         }
         myspellpic = new ImageIcon(url);
-        if (myspellpic == null)
-        {
-            throw new IllegalArgumentException("resource '"+filename+"' does not exist");
-        }
         myface = null;
         mytag = 0;
         myname = spellname;
