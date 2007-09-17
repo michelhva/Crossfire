@@ -43,11 +43,6 @@ public final class KeyBindings
 {
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
-    public int size()
-    {
-        return keybindings.size();
-    }
-
     /**
      * Add a key binding for a key code/modifiers pair.
      *
