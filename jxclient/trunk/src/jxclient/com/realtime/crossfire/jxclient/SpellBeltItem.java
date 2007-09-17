@@ -74,10 +74,7 @@ public class SpellBeltItem
 
     public String toString()
     {
-        String sp = "none";
-        if (myspell != null)
-            sp = myspell.getName();
-        String ssp = "Spellbelt - Spell is "+sp+" Status:"+mystatus;
-        return ssp;
+        final String sp = myspell != null ? myspell.getName() : "none";
+        return "Spellbelt - Spell is "+sp+" Status:"+mystatus;
     }
 }
