@@ -72,7 +72,7 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        faceCache.addFace(new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE))));
+        faceCache.addFace(new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE))));
         originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
         {
