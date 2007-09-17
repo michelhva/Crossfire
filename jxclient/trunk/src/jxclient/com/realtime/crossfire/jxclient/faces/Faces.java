@@ -111,7 +111,7 @@ public class Faces
     }
 
     // TODO: implement faceset
-    public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen) throws IOException
+    public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen)
     {
         askfaceManager.faceReceived(pixnum);
 
@@ -169,7 +169,7 @@ public class Faces
 
     // TODO: implement faceset
     // TODO: handle checksum
-    public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
+    public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname)
     {
         final ImageIcon imageIcon = fileCache.load(pixname+".x2.png");
         final ImageIcon originalImageIcon = fileCache.load(pixname+".x1.png");

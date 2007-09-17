@@ -36,7 +36,7 @@ import java.io.IOException;
  */
 public class GUIPicture extends GUIElement
 {
-    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture) throws IOException
+    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();

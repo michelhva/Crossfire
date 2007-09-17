@@ -54,7 +54,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     private int myindex;
 
-    public GUIMetaElement(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage pic_tcp, BufferedImage pic_udp, Font nf, GUIText txt, GUILabel comment, int meta_id) throws IOException
+    public GUIMetaElement(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage pic_tcp, BufferedImage pic_udp, Font nf, GUIText txt, GUILabel comment, int meta_id)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mypicture_tcp = pic_tcp;

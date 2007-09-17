@@ -116,7 +116,7 @@ public class GUIGauge extends GUIElement
         }
     };
 
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix) throws IOException
+    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         pictureFull = picture_full;

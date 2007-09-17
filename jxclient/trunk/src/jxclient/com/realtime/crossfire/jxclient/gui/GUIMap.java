@@ -236,7 +236,7 @@ public class GUIMap extends GUIElement
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
-    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big) throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         use_big_images = big;
