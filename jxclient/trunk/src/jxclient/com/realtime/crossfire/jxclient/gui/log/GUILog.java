@@ -232,8 +232,7 @@ public class GUILog extends GUIElement implements GUIScrollable
                 {
                     final Line line = it.previous();
                     topIndex--;
-                    final int height = calculateHeight(line);
-                    y -= height;
+                    y -= calculateHeight(line);
                     drawLine(g, y, line);
                 }
                 canScrollUp = y < 0 || it.hasPrevious();

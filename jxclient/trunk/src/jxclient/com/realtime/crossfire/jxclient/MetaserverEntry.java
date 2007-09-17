@@ -51,8 +51,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     public String toString()
     {
-        String str = "IP:"+myip+" Host:"+myhost+" Version:"+myversion+" Players:"+mynrplayers+" Ping:"+myping+" Comment:"+mycomment;
-        return str;
+        return "IP:"+myip+" Host:"+myhost+" Version:"+myversion+" Players:"+mynrplayers+" Ping:"+myping+" Comment:"+mycomment;
     }
 
     public String getIP()
