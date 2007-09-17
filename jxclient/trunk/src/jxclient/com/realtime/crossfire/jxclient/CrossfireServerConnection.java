@@ -26,6 +26,7 @@ import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
@@ -1148,7 +1149,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    void cmd_item(DataInputStream dis) throws IOException
+    void cmd_item(DataInputStream dis)
     {
         // XXX: "item" command not yet implemented
     }
@@ -1341,7 +1342,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param options The option/value pairs.
      * @since 1.0
      */
-    void cmd_setup(final List<String> options) throws IOException
+    void cmd_setup(final List<String> options)
     {
         for (int i = 0; i+1 < options.size(); i += 2)
         {
@@ -1439,7 +1440,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    void cmd_mapextended(DataInputStream dis) throws IOException
+    void cmd_mapextended(DataInputStream dis)
     {
         // XXX: "MapExtended" command not yet implemented
     }
@@ -1760,7 +1761,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @throws IOException will never be thrown
      */
-    private void putDecimal(final int value) throws IOException
+    private void putDecimal(final int value) throws UnsupportedEncodingException
     {
         if (value == 0)
         {
