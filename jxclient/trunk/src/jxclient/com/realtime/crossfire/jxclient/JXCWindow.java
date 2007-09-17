@@ -228,7 +228,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void terminateScript(final ScriptProcess sp)
     {
-        myserver.removeScriptMonitor((CrossfireScriptMonitorListener)sp);
+        myserver.removeScriptMonitor(sp);
     }
 
     public void runScript(final String cmdline)
