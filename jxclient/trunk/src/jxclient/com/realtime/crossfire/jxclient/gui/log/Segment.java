@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * One segment of a {@link Line} which should be displayed without changing

@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import java.util.List;
 
 /**
  *

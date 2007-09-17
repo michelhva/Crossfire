@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Spell;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
@@ -36,7 +35,6 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
-import java.io.IOException;
 
 /**
  *

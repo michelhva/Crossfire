@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.LocationListener;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.List;
 
 public class GUIItemFloor extends GUIItemItem

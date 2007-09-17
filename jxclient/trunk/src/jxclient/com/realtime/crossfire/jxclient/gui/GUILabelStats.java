@@ -26,8 +26,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 /**
  * A {@link GUILabel} that displays a value of the last received "stats"

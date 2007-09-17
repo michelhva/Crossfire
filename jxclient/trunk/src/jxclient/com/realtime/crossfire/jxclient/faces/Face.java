@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
-import java.io.IOException;
 import java.lang.ref.SoftReference;
 import javax.swing.ImageIcon;
 

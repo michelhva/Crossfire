@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.SpellListener;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 
 /**
  * A {@link GUILabel} that displays the currently selected spell.

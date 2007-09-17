@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

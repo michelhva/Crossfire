@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.Spell;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
 import java.util.List;
 
 public class GUIItemSpelllist extends GUIItem

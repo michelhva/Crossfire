@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
-import java.io.IOException;
 
 /**
  * A {@link GUILabel} that displays the last received "query" command.
