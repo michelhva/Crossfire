@@ -834,6 +834,17 @@ arch dungeon_floor
 x 5
 y 12
 end
+arch giant
+name Gromm, Big Giant Shaman
+hp 550
+exp 2000
+x 5
+y 12
+arch spell_sm_lightning
+end
+arch spell_summon_pet_monster
+end
+end
 arch dungeon_floor
 x 5
 y 13
@@ -968,6 +979,10 @@ arch dungeon_floor
 x 6
 y 12
 end
+arch giant
+x 6
+y 12
+end
 arch dungeon_floor
 x 6
 y 13
@@ -1220,6 +1235,10 @@ arch dungeon_floor
 x 8
 y 12
 end
+arch giant
+x 8
+y 12
+end
 arch dungeon_floor
 x 8
 y 13
@@ -1247,6 +1266,14 @@ end
 arch dungeon_floor
 x 8
 y 18
+end
+arch dread
+name Groopa
+x 8
+y 18
+carrying 200
+arch improve_con
+end
 end
 arch dungeon_floor
 x 8
@@ -1495,6 +1522,10 @@ x 10
 y 11
 end
 arch dungeon_floor
+x 10
+y 12
+end
+arch giant
 x 10
 y 12
 end
@@ -1731,6 +1762,10 @@ x 12
 y 11
 end
 arch dungeon_floor
+x 12
+y 12
+end
+arch giant
 x 12
 y 12
 end
@@ -2642,6 +2677,10 @@ arch dungeon_floor
 x 19
 y 4
 end
+arch troll
+x 19
+y 4
+end
 arch dungeon_floor
 x 19
 y 5
@@ -2894,6 +2933,10 @@ x 21
 y 1
 end
 arch dungeon_floor
+x 21
+y 2
+end
+arch troll
 x 21
 y 2
 end
@@ -3512,47 +3555,4 @@ end
 arch rough_wall_2_2_4
 x 24
 y 24
-end
-arch giant
-name Gromm, Big Giant Shaman
-hp 550
-exp 2000
-x 5
-y 12
-arch spell_sm_lightning
-end
-arch spell_summon_pet_monster
-end
-end
-arch giant
-x 6
-y 12
-end
-arch giant
-x 8
-y 12
-end
-arch dread
-name Groopa
-x 8
-y 18
-carrying 200
-arch improve_con
-end
-end
-arch giant
-x 10
-y 12
-end
-arch giant
-x 12
-y 12
-end
-arch troll
-x 19
-y 4
-end
-arch troll
-x 21
-y 2
 end

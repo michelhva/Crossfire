@@ -505,6 +505,14 @@ arch cobblestones2
 x 5
 y 10
 end
+arch behemoth
+x 5
+y 10
+carrying 100
+arch key2
+slaying vampdoor
+end
+end
 arch cobblestones2
 x 5
 y 11
@@ -1888,12 +1896,4 @@ hp 19
 sp 17
 x 19
 y 17
-end
-arch behemoth
-x 5
-y 10
-carrying 100
-arch key2
-slaying vampdoor
-end
 end

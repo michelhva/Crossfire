@@ -778,6 +778,11 @@ arch grassdark
 x 4
 y 5
 end
+arch ent
+x 4
+y 5
+stand_still 1
+end
 arch grassdark
 x 4
 y 6
@@ -895,6 +900,10 @@ x 4
 y 20
 end
 arch grassdark
+x 4
+y 21
+end
+arch ent
 x 4
 y 21
 end
@@ -3316,6 +3325,11 @@ arch grassdark
 x 20
 y 5
 end
+arch ent
+x 20
+y 5
+stand_still 1
+end
 arch grassdark
 x 20
 y 6
@@ -3381,6 +3395,10 @@ x 20
 y 20
 end
 arch grassdark
+x 20
+y 21
+end
+arch ent
 x 20
 y 21
 end
@@ -4393,22 +4411,4 @@ end
 arch cobblestones2
 x 25
 y 29
-end
-arch ent
-x 4
-y 5
-stand_still 1
-end
-arch ent
-x 4
-y 21
-end
-arch ent
-x 20
-y 5
-stand_still 1
-end
-arch ent
-x 20
-y 21
 end

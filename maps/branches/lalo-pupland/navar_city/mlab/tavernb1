@@ -21891,6 +21891,10 @@ arch dungeon_floor
 x 69
 y 31
 end
+arch dread
+x 69
+y 31
+end
 arch dungeon_floor
 x 69
 y 32
@@ -22061,6 +22065,10 @@ arch dungeon_floor
 x 70
 y 16
 end
+arch dragon
+x 70
+y 16
+end
 arch dungeon_floor
 x 70
 y 17
@@ -22144,11 +22152,23 @@ arch dungeon_floor
 x 70
 y 27
 end
+arch dragon
+x 70
+y 27
+end
 arch dungeon_floor
 x 70
 y 28
 end
+arch dragon
+x 70
+y 28
+end
 arch dungeon_floor
+x 70
+y 29
+end
+arch dragon
 x 70
 y 29
 end
@@ -22423,6 +22443,10 @@ arch dungeon_floor
 x 71
 y 33
 end
+arch dragon
+x 71
+y 33
+end
 arch dungeon_floor
 x 71
 y 34
@@ -22630,6 +22654,10 @@ arch dungeon_floor
 x 72
 y 25
 end
+arch dragon
+x 72
+y 25
+end
 arch dungeon_floor
 x 72
 y 26
@@ -22651,6 +22679,10 @@ x 72
 y 30
 end
 arch dungeon_floor
+x 72
+y 31
+end
+arch dragon
 x 72
 y 31
 end
@@ -22798,11 +22830,19 @@ arch dungeon_floor
 x 73
 y 16
 end
+arch dragon
+x 73
+y 16
+end
 arch dungeon_floor
 x 73
 y 17
 end
 arch dungeon_floor
+x 73
+y 18
+end
+arch dragon
 x 73
 y 18
 end
@@ -22830,6 +22870,10 @@ arch dungeon_floor
 x 73
 y 23
 end
+arch dragon
+x 73
+y 23
+end
 arch dungeon_floor
 x 73
 y 24
@@ -22842,6 +22886,10 @@ arch dungeon_floor
 x 73
 y 26
 end
+arch dragon
+x 73
+y 26
+end
 arch dungeon_floor
 x 73
 y 27
@@ -22851,6 +22899,10 @@ x 73
 y 28
 end
 arch dungeon_floor
+x 73
+y 29
+end
+arch dragon
 x 73
 y 29
 end
@@ -23062,11 +23114,19 @@ arch dungeon_floor
 x 74
 y 28
 end
+arch dragon
+x 74
+y 28
+end
 arch dungeon_floor
 x 74
 y 29
 end
 arch dungeon_floor
+x 74
+y 30
+end
+arch dread
 x 74
 y 30
 end
@@ -23079,6 +23139,10 @@ x 74
 y 32
 end
 arch dungeon_floor
+x 74
+y 33
+end
+arch dragon
 x 74
 y 33
 end
@@ -23278,6 +23342,10 @@ arch dungeon_floor
 x 75
 y 25
 end
+arch dragon
+x 75
+y 25
+end
 arch dungeon_floor
 x 75
 y 26
@@ -23446,6 +23514,10 @@ arch dungeon_floor
 x 76
 y 15
 end
+arch serpent
+x 76
+y 15
+end
 arch dungeon_floor
 x 76
 y 16
@@ -23454,11 +23526,19 @@ arch dungeon_floor
 x 76
 y 17
 end
+arch serpent
+x 76
+y 17
+end
 arch dungeon_floor
 x 76
 y 18
 end
 arch dungeon_floor
+x 76
+y 19
+end
+arch serpent
 x 76
 y 19
 end
@@ -23482,11 +23562,19 @@ arch dungeon_floor
 x 76
 y 22
 end
+arch dragon
+x 76
+y 22
+end
 arch dungeon_floor
 x 76
 y 23
 end
 arch dungeon_floor
+x 76
+y 24
+end
+arch dragon
 x 76
 y 24
 end
@@ -23502,11 +23590,19 @@ arch dungeon_floor
 x 76
 y 27
 end
+arch dragon
+x 76
+y 27
+end
 arch dungeon_floor
 x 76
 y 28
 end
 arch dungeon_floor
+x 76
+y 29
+end
+arch dragon
 x 76
 y 29
 end
@@ -23674,6 +23770,10 @@ arch dungeon_floor
 x 77
 y 16
 end
+arch serpent
+x 77
+y 16
+end
 arch dungeon_floor
 x 77
 y 17
@@ -23682,11 +23782,19 @@ arch dungeon_floor
 x 77
 y 18
 end
+arch serpent
+x 77
+y 18
+end
 arch dungeon_floor
 x 77
 y 19
 end
 arch dungeon_floor
+x 77
+y 20
+end
+arch serpent
 x 77
 y 20
 end
@@ -23763,6 +23871,10 @@ x 77
 y 32
 end
 arch random_treasure
+x 77
+y 32
+end
+arch Cwyvern
 x 77
 y 32
 end
@@ -25910,6 +26022,10 @@ arch dungeon_floor
 x 87
 y 14
 end
+arch cobra
+x 87
+y 14
+end
 arch dungeon_floor
 x 87
 y 15
@@ -25923,6 +26039,10 @@ x 87
 y 16
 end
 arch dungeon_floor
+x 87
+y 17
+end
+arch cobra
 x 87
 y 17
 end
@@ -26301,6 +26421,10 @@ arch dungeon_floor
 x 89
 y 15
 end
+arch cobra
+x 89
+y 15
+end
 arch dungeon_floor
 x 89
 y 16
@@ -26310,6 +26434,10 @@ x 89
 y 17
 end
 arch dungeon_floor
+x 89
+y 18
+end
+arch cobra
 x 89
 y 18
 end
@@ -26689,6 +26817,10 @@ arch dungeon_floor
 x 91
 y 14
 end
+arch cobra
+x 91
+y 14
+end
 arch dungeon_floor
 x 91
 y 15
@@ -26705,11 +26837,19 @@ arch dungeon_floor
 x 91
 y 17
 end
+arch cobra
+x 91
+y 17
+end
 arch dungeon_floor
 x 91
 y 18
 end
 arch dungeon_floor
+x 91
+y 19
+end
+arch cobra
 x 91
 y 19
 end
@@ -27192,144 +27332,4 @@ end
 arch blocked
 x 93
 y 35
-end
-arch dread
-x 69
-y 31
-end
-arch dragon
-x 70
-y 16
-end
-arch dragon
-x 70
-y 27
-end
-arch dragon
-x 70
-y 28
-end
-arch dragon
-x 70
-y 29
-end
-arch dragon
-x 71
-y 33
-end
-arch dragon
-x 72
-y 25
-end
-arch dragon
-x 72
-y 31
-end
-arch dragon
-x 73
-y 16
-end
-arch dragon
-x 73
-y 18
-end
-arch dragon
-x 73
-y 23
-end
-arch dragon
-x 73
-y 26
-end
-arch dragon
-x 73
-y 29
-end
-arch dragon
-x 74
-y 28
-end
-arch dread
-x 74
-y 30
-end
-arch dragon
-x 74
-y 33
-end
-arch dragon
-x 75
-y 25
-end
-arch serpent
-x 76
-y 15
-end
-arch serpent
-x 76
-y 17
-end
-arch serpent
-x 76
-y 19
-end
-arch dragon
-x 76
-y 22
-end
-arch dragon
-x 76
-y 24
-end
-arch dragon
-x 76
-y 27
-end
-arch dragon
-x 76
-y 29
-end
-arch serpent
-x 77
-y 16
-end
-arch serpent
-x 77
-y 18
-end
-arch serpent
-x 77
-y 20
-end
-arch Cwyvern
-x 77
-y 32
-end
-arch cobra
-x 87
-y 14
-end
-arch cobra
-x 87
-y 17
-end
-arch cobra
-x 89
-y 15
-end
-arch cobra
-x 89
-y 18
-end
-arch cobra
-x 91
-y 14
-end
-arch cobra
-x 91
-y 17
-end
-arch cobra
-x 91
-y 19
 end

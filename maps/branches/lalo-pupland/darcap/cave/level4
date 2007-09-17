@@ -2528,6 +2528,10 @@ arch small_stones
 x 16
 y 45
 end
+arch chinese_dragon
+x 16
+y 45
+end
 arch small_stones
 x 16
 y 46
@@ -4296,6 +4300,10 @@ arch dungeon_floor
 x 28
 y 8
 end
+arch behemoth
+x 28
+y 8
+end
 arch dungeon_floor
 x 28
 y 9
@@ -4825,6 +4833,10 @@ x 31
 y 21
 end
 arch dungeon_floor
+x 31
+y 22
+end
+arch big_dragon
 x 31
 y 22
 end
@@ -8224,6 +8236,10 @@ arch dungeon_floor
 x 53
 y 21
 end
+arch dragon
+x 53
+y 21
+end
 arch dungeon_floor
 x 53
 y 22
@@ -10363,6 +10379,10 @@ arch small_stones
 x 67
 y 29
 end
+arch giant
+x 67
+y 29
+end
 arch small_stones
 x 67
 y 30
@@ -10510,24 +10530,4 @@ end
 arch bwall_2_2_4
 x 69
 y 32
-end
-arch chinese_dragon
-x 16
-y 45
-end
-arch behemoth
-x 28
-y 8
-end
-arch big_dragon
-x 31
-y 22
-end
-arch dragon
-x 53
-y 21
-end
-arch giant
-x 67
-y 29
 end

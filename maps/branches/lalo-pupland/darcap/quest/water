@@ -966,6 +966,12 @@ y 20
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 3
+y 20
+speed -0.500000
+end
 arch sea
 exp 1000
 x 3
@@ -1227,6 +1233,12 @@ y 19
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 4
+y 19
+speed -0.500000
+end
 arch sea
 exp 1000
 x 4
@@ -1473,6 +1485,12 @@ x 5
 y 18
 no_pass 0
 slow_move 1.000000
+end
+arch cobra
+name giant water cobra
+x 5
+y 18
+speed -0.500000
 end
 arch sea
 exp 1000
@@ -2620,6 +2638,12 @@ y 6
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 10
+y 6
+speed -0.500000
+end
 arch sea
 exp 1000
 x 10
@@ -2864,6 +2888,12 @@ y 6
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 11
+y 6
+speed -0.500000
+end
 arch sea
 exp 1000
 x 11
@@ -2914,6 +2944,12 @@ x 11
 y 13
 no_pass 0
 slow_move 1.000000
+end
+arch cobra
+name giant water cobra
+x 11
+y 13
+speed -0.500000
 end
 arch sea
 exp 1000
@@ -3158,6 +3194,12 @@ y 11
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 12
+y 11
+speed -0.500000
+end
 arch sea
 exp 1000
 x 12
@@ -3395,6 +3437,12 @@ x 13
 y 11
 no_pass 0
 slow_move 1.000000
+end
+arch cobra
+name giant water cobra
+x 13
+y 11
+speed -0.500000
 end
 arch sea
 exp 1000
@@ -6219,6 +6267,12 @@ y 17
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 24
+y 17
+speed -0.500000
+end
 arch sea
 exp 1000
 x 24
@@ -6445,6 +6499,12 @@ y 17
 no_pass 0
 slow_move 1.000000
 end
+arch cobra
+name giant water cobra
+x 25
+y 17
+speed -0.500000
+end
 arch sea
 exp 1000
 x 25
@@ -6659,6 +6719,12 @@ x 26
 y 16
 no_pass 0
 slow_move 1.000000
+end
+arch cobra
+name giant water cobra
+x 26
+y 16
+speed -0.500000
 end
 arch sea
 exp 1000
@@ -8037,70 +8103,4 @@ end
 arch awall_2_2_4
 x 31
 y 31
-end
-arch cobra
-name giant water cobra
-x 3
-y 20
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 4
-y 19
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 5
-y 18
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 10
-y 6
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 11
-y 6
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 11
-y 13
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 12
-y 11
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 13
-y 11
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 24
-y 17
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 25
-y 17
-speed -0.500000
-end
-arch cobra
-name giant water cobra
-x 26
-y 16
-speed -0.500000
 end

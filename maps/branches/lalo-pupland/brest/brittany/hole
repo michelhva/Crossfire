@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region brest
-x 50
-y 50
+width 50
+height 50
 end
 arch dirtfloor
 end
@@ -2201,6 +2202,10 @@ arch dirtfloor
 x 5
 y 23
 end
+arch big_elec
+x 5
+y 23
+end
 arch dirtfloor
 x 5
 y 24
@@ -3219,6 +3224,10 @@ arch dirtfloor
 x 8
 y 5
 end
+arch big_elec
+x 8
+y 5
+end
 arch dirtfloor
 x 8
 y 6
@@ -4461,6 +4470,10 @@ arch dirtfloor
 x 11
 y 15
 end
+arch big_elec
+x 11
+y 15
+end
 arch dirtfloor
 x 11
 y 16
@@ -4522,6 +4535,10 @@ x 11
 y 23
 end
 arch dirtfloor
+x 11
+y 24
+end
+arch big_elec
 x 11
 y 24
 end
@@ -8465,6 +8482,10 @@ arch dirtfloor
 x 21
 y 3
 end
+arch big_elec
+x 21
+y 3
+end
 arch dirtfloor
 x 21
 y 4
@@ -8514,6 +8535,10 @@ x 21
 y 10
 end
 arch dirtfloor
+x 21
+y 11
+end
+arch big_elec
 x 21
 y 11
 end
@@ -8996,6 +9021,10 @@ x 22
 y 25
 end
 arch dirtfloor
+x 22
+y 26
+end
+arch big_elec
 x 22
 y 26
 end
@@ -10578,6 +10607,10 @@ arch dirtfloor
 x 27
 y 4
 end
+arch demon_lord
+x 27
+y 4
+end
 arch dirtfloor
 x 27
 y 5
@@ -10607,6 +10640,10 @@ x 27
 y 11
 end
 arch dirtfloor
+x 27
+y 12
+end
+arch demon_lord
 x 27
 y 12
 end
@@ -10865,6 +10902,10 @@ arch dirtfloor
 x 28
 y 26
 end
+arch demon_lord
+x 28
+y 26
+end
 arch dirtfloor
 x 28
 y 27
@@ -10897,6 +10938,10 @@ arch dirtfloor
 x 28
 y 34
 end
+arch demon_lord
+x 28
+y 34
+end
 arch dirtfloor
 x 28
 y 35
@@ -10926,6 +10971,10 @@ x 28
 y 41
 end
 arch dirtfloor
+x 28
+y 42
+end
+arch demon_lord
 x 28
 y 42
 end
@@ -11195,11 +11244,19 @@ arch dirtfloor
 x 30
 y 9
 end
+arch big_dragon
+x 30
+y 9
+end
 arch dirtfloor
 x 30
 y 10
 end
 arch dirtfloor
+x 30
+y 11
+end
+arch chinese_dragon
 x 30
 y 11
 end
@@ -11358,11 +11415,18 @@ end
 arch dirtfloor
 x 31
 end
+arch big_dragon
+x 31
+end
 arch dirtfloor
 x 31
 y 1
 end
 arch dirtfloor
+x 31
+y 2
+end
+arch big_wiz
 x 31
 y 2
 end
@@ -11375,6 +11439,10 @@ x 31
 y 4
 end
 arch dirtfloor
+x 31
+y 5
+end
+arch big_dragon
 x 31
 y 5
 end
@@ -11410,6 +11478,10 @@ arch dirtfloor
 x 31
 y 13
 end
+arch big_wiz
+x 31
+y 13
+end
 arch dirtfloor
 x 31
 y 14
@@ -11422,11 +11494,19 @@ arch dirtfloor
 x 31
 y 16
 end
+arch chinese_dragon
+x 31
+y 16
+end
 arch dirtfloor
 x 31
 y 17
 end
 arch dirtfloor
+x 31
+y 18
+end
+arch chinese_dragon
 x 31
 y 18
 end
@@ -11438,11 +11518,19 @@ arch dirtfloor
 x 31
 y 20
 end
+arch chinese_dragon
+x 31
+y 20
+end
 arch dirtfloor
 x 31
 y 21
 end
 arch dirtfloor
+x 31
+y 22
+end
+arch big_wiz
 x 31
 y 22
 end
@@ -11462,11 +11550,19 @@ arch dirtfloor
 x 31
 y 26
 end
+arch chinese_dragon
+x 31
+y 26
+end
 arch dirtfloor
 x 31
 y 27
 end
 arch dirtfloor
+x 31
+y 28
+end
+arch chinese_dragon
 x 31
 y 28
 end
@@ -11502,11 +11598,19 @@ arch dirtfloor
 x 31
 y 36
 end
+arch chinese_dragon
+x 31
+y 36
+end
 arch dirtfloor
 x 31
 y 37
 end
 arch dirtfloor
+x 31
+y 38
+end
+arch chinese_dragon
 x 31
 y 38
 end
@@ -11585,6 +11689,10 @@ arch dirtfloor
 x 32
 y 7
 end
+arch big_dragon
+x 32
+y 7
+end
 arch dirtfloor
 x 32
 y 8
@@ -11677,6 +11785,10 @@ arch dirtfloor
 x 32
 y 30
 end
+arch chinese_dragon
+x 32
+y 30
+end
 arch dirtfloor
 x 32
 y 31
@@ -11686,6 +11798,10 @@ x 32
 y 32
 end
 arch dirtfloor
+x 32
+y 33
+end
+arch chinese_dragon
 x 32
 y 33
 end
@@ -11721,11 +11837,19 @@ arch dirtfloor
 x 32
 y 41
 end
+arch chinese_dragon
+x 32
+y 41
+end
 arch dirtfloor
 x 32
 y 42
 end
 arch dirtfloor
+x 32
+y 43
+end
+arch chinese_dragon
 x 32
 y 43
 end
@@ -11737,11 +11861,19 @@ arch dirtfloor
 x 32
 y 45
 end
+arch chinese_dragon
+x 32
+y 45
+end
 arch dirtfloor
 x 32
 y 46
 end
 arch dirtfloor
+x 32
+y 47
+end
+arch chinese_dragon
 x 32
 y 47
 end
@@ -11792,11 +11924,19 @@ arch dirtfloor
 x 33
 y 9
 end
+arch chinese_dragon
+x 33
+y 9
+end
 arch dirtfloor
 x 33
 y 10
 end
 arch dirtfloor
+x 33
+y 11
+end
+arch big_dragon
 x 33
 y 11
 end
@@ -11900,6 +12040,10 @@ arch dirtfloor
 x 33
 y 36
 end
+arch chinese_dragon
+x 33
+y 36
+end
 arch dirtfloor
 x 33
 y 37
@@ -11909,6 +12053,10 @@ x 33
 y 38
 end
 arch dirtfloor
+x 33
+y 39
+end
+arch chinese_dragon
 x 33
 y 39
 end
@@ -12015,6 +12163,10 @@ arch dirtfloor
 x 34
 y 15
 end
+arch big_dragon
+x 34
+y 15
+end
 arch dirtfloor
 x 34
 y 16
@@ -12023,11 +12175,19 @@ arch dirtfloor
 x 34
 y 17
 end
+arch big_dragon
+x 34
+y 17
+end
 arch dirtfloor
 x 34
 y 18
 end
 arch dirtfloor
+x 34
+y 19
+end
+arch big_dragon
 x 34
 y 19
 end
@@ -12060,6 +12220,10 @@ x 34
 y 26
 end
 arch dirtfloor
+x 34
+y 27
+end
+arch big_dragon
 x 34
 y 27
 end
@@ -12158,6 +12322,10 @@ arch dirtfloor
 x 35
 y 1
 end
+arch titan
+x 35
+y 1
+end
 arch dirtfloor
 x 35
 y 2
@@ -12171,6 +12339,10 @@ x 35
 y 4
 end
 arch dirtfloor
+x 35
+y 5
+end
+arch titan
 x 35
 y 5
 end
@@ -12242,11 +12414,19 @@ arch dirtfloor
 x 35
 y 22
 end
+arch big_dragon
+x 35
+y 22
+end
 arch dirtfloor
 x 35
 y 23
 end
 arch dirtfloor
+x 35
+y 24
+end
+arch big_dragon
 x 35
 y 24
 end
@@ -12270,6 +12450,10 @@ arch dirtfloor
 x 35
 y 29
 end
+arch big_dragon
+x 35
+y 29
+end
 arch dirtfloor
 x 35
 y 30
@@ -12278,11 +12462,19 @@ arch dirtfloor
 x 35
 y 31
 end
+arch big_dragon
+x 35
+y 31
+end
 arch dirtfloor
 x 35
 y 32
 end
 arch dirtfloor
+x 35
+y 33
+end
+arch big_dragon
 x 35
 y 33
 end
@@ -12326,6 +12518,10 @@ arch dirtfloor
 x 35
 y 43
 end
+arch big_dragon
+x 35
+y 43
+end
 arch dirtfloor
 x 35
 y 44
@@ -12343,6 +12539,10 @@ x 35
 y 47
 end
 arch dirtfloor
+x 35
+y 48
+end
+arch big_dragon
 x 35
 y 48
 end
@@ -12497,6 +12697,10 @@ arch dirtfloor
 x 36
 y 36
 end
+arch big_dragon
+x 36
+y 36
+end
 arch dirtfloor
 x 36
 y 37
@@ -12509,11 +12713,19 @@ arch dirtfloor
 x 36
 y 39
 end
+arch big_dragon
+x 36
+y 39
+end
 arch dirtfloor
 x 36
 y 40
 end
 arch dirtfloor
+x 36
+y 41
+end
+arch big_dragon
 x 36
 y 41
 end
@@ -12534,6 +12746,10 @@ x 36
 y 45
 end
 arch dirtfloor
+x 36
+y 46
+end
+arch big_dragon
 x 36
 y 46
 end
@@ -12597,6 +12813,10 @@ x 37
 y 11
 end
 arch dirtfloor
+x 37
+y 12
+end
+arch titan
 x 37
 y 12
 end
@@ -12755,6 +12975,10 @@ arch dirtfloor
 x 38
 y 1
 end
+arch titan
+x 38
+y 1
+end
 arch dirtfloor
 x 38
 y 2
@@ -12771,6 +12995,10 @@ arch dirtfloor
 x 38
 y 5
 end
+arch titan
+x 38
+y 5
+end
 arch dirtfloor
 x 38
 y 6
@@ -12780,6 +13008,10 @@ x 38
 y 7
 end
 arch dirtfloor
+x 38
+y 8
+end
+arch titan
 x 38
 y 8
 end
@@ -12811,6 +13043,10 @@ arch dirtfloor
 x 38
 y 15
 end
+arch titan
+x 38
+y 15
+end
 arch dirtfloor
 x 38
 y 16
@@ -12820,6 +13056,10 @@ x 38
 y 17
 end
 arch dirtfloor
+x 38
+y 18
+end
+arch titan
 x 38
 y 18
 end
@@ -13030,6 +13270,10 @@ arch dirtfloor
 x 39
 y 20
 end
+arch chinese_dragon
+x 39
+y 20
+end
 arch dirtfloor
 x 39
 y 21
@@ -13046,6 +13290,10 @@ arch dirtfloor
 x 39
 y 24
 end
+arch titan
+x 39
+y 24
+end
 arch dirtfloor
 x 39
 y 25
@@ -13058,6 +13306,10 @@ arch dirtfloor
 x 39
 y 27
 end
+arch titan
+x 39
+y 27
+end
 arch dirtfloor
 x 39
 y 28
@@ -13067,6 +13319,10 @@ x 39
 y 29
 end
 arch dirtfloor
+x 39
+y 30
+end
+arch titan
 x 39
 y 30
 end
@@ -13083,6 +13339,10 @@ x 39
 y 33
 end
 arch dirtfloor
+x 39
+y 34
+end
+arch titan
 x 39
 y 34
 end
@@ -13122,6 +13382,10 @@ arch dirtfloor
 x 39
 y 43
 end
+arch big_dragon
+x 39
+y 43
+end
 arch dirtfloor
 x 39
 y 44
@@ -13149,11 +13413,18 @@ end
 arch dirtfloor
 x 40
 end
+arch giant
+x 40
+end
 arch dirtfloor
 x 40
 y 1
 end
 arch dirtfloor
+x 40
+y 2
+end
+arch giant
 x 40
 y 2
 end
@@ -13193,6 +13464,10 @@ arch dirtfloor
 x 40
 y 11
 end
+arch titan
+x 40
+y 11
+end
 arch dirtfloor
 x 40
 y 12
@@ -13205,6 +13480,10 @@ arch dirtfloor
 x 40
 y 14
 end
+arch giant
+x 40
+y 14
+end
 arch dirtfloor
 x 40
 y 15
@@ -13213,11 +13492,19 @@ arch dirtfloor
 x 40
 y 16
 end
+arch giant
+x 40
+y 16
+end
 arch dirtfloor
 x 40
 y 17
 end
 arch dirtfloor
+x 40
+y 18
+end
+arch giant
 x 40
 y 18
 end
@@ -13309,6 +13596,10 @@ arch dirtfloor
 x 40
 y 40
 end
+arch titan
+x 40
+y 40
+end
 arch dirtfloor
 x 40
 y 41
@@ -13337,6 +13628,10 @@ arch dirtfloor
 x 40
 y 47
 end
+arch titan
+x 40
+y 47
+end
 arch dirtfloor
 x 40
 y 48
@@ -13346,6 +13641,9 @@ x 40
 y 49
 end
 arch dirtfloor
+x 41
+end
+arch giant
 x 41
 end
 arch dirtfloor
@@ -13360,11 +13658,19 @@ arch dirtfloor
 x 41
 y 3
 end
+arch giant
+x 41
+y 3
+end
 arch dirtfloor
 x 41
 y 4
 end
 arch dirtfloor
+x 41
+y 5
+end
+arch giant
 x 41
 y 5
 end
@@ -13377,6 +13683,10 @@ x 41
 y 7
 end
 arch dirtfloor
+x 41
+y 8
+end
+arch giant
 x 41
 y 8
 end
@@ -13404,11 +13714,19 @@ arch dirtfloor
 x 41
 y 14
 end
+arch giant
+x 41
+y 14
+end
 arch dirtfloor
 x 41
 y 15
 end
 arch dirtfloor
+x 41
+y 16
+end
+arch giant
 x 41
 y 16
 end
@@ -13420,6 +13738,10 @@ arch dirtfloor
 x 41
 y 18
 end
+arch giant
+x 41
+y 18
+end
 arch dirtfloor
 x 41
 y 19
@@ -13428,11 +13750,19 @@ arch dirtfloor
 x 41
 y 20
 end
+arch giant
+x 41
+y 20
+end
 arch dirtfloor
 x 41
 y 21
 end
 arch dirtfloor
+x 41
+y 22
+end
+arch giant
 x 41
 y 22
 end
@@ -13547,11 +13877,18 @@ end
 arch dirtfloor
 x 42
 end
+arch giant
+x 42
+end
 arch dirtfloor
 x 42
 y 1
 end
 arch dirtfloor
+x 42
+y 2
+end
+arch giant
 x 42
 y 2
 end
@@ -13563,11 +13900,19 @@ arch dirtfloor
 x 42
 y 4
 end
+arch giant
+x 42
+y 4
+end
 arch dirtfloor
 x 42
 y 5
 end
 arch dirtfloor
+x 42
+y 6
+end
+arch giant
 x 42
 y 6
 end
@@ -13583,6 +13928,10 @@ arch dirtfloor
 x 42
 y 9
 end
+arch giant
+x 42
+y 9
+end
 arch dirtfloor
 x 42
 y 10
@@ -13595,11 +13944,19 @@ arch dirtfloor
 x 42
 y 12
 end
+arch giant
+x 42
+y 12
+end
 arch dirtfloor
 x 42
 y 13
 end
 arch dirtfloor
+x 42
+y 14
+end
+arch giant
 x 42
 y 14
 end
@@ -13611,11 +13968,19 @@ arch dirtfloor
 x 42
 y 16
 end
+arch giant
+x 42
+y 16
+end
 arch dirtfloor
 x 42
 y 17
 end
 arch dirtfloor
+x 42
+y 18
+end
+arch giant
 x 42
 y 18
 end
@@ -13627,11 +13992,19 @@ arch dirtfloor
 x 42
 y 20
 end
+arch giant
+x 42
+y 20
+end
 arch dirtfloor
 x 42
 y 21
 end
 arch dirtfloor
+x 42
+y 22
+end
+arch giant
 x 42
 y 22
 end
@@ -13643,11 +14016,19 @@ arch dirtfloor
 x 42
 y 24
 end
+arch giant
+x 42
+y 24
+end
 arch dirtfloor
 x 42
 y 25
 end
 arch dirtfloor
+x 42
+y 26
+end
+arch behemoth
 x 42
 y 26
 end
@@ -13659,11 +14040,19 @@ arch dirtfloor
 x 42
 y 28
 end
+arch behemoth
+x 42
+y 28
+end
 arch dirtfloor
 x 42
 y 29
 end
 arch dirtfloor
+x 42
+y 30
+end
+arch behemoth
 x 42
 y 30
 end
@@ -13675,11 +14064,19 @@ arch dirtfloor
 x 42
 y 32
 end
+arch behemoth
+x 42
+y 32
+end
 arch dirtfloor
 x 42
 y 33
 end
 arch dirtfloor
+x 42
+y 34
+end
+arch behemoth
 x 42
 y 34
 end
@@ -13746,11 +14143,18 @@ end
 arch dirtfloor
 x 43
 end
+arch giant
+x 43
+end
 arch dirtfloor
 x 43
 y 1
 end
 arch dirtfloor
+x 43
+y 2
+end
+arch giant
 x 43
 y 2
 end
@@ -13763,6 +14167,10 @@ x 43
 y 4
 end
 arch dirtfloor
+x 43
+y 5
+end
+arch giant
 x 43
 y 5
 end
@@ -13782,11 +14190,19 @@ arch dirtfloor
 x 43
 y 8
 end
+arch giant
+x 43
+y 8
+end
 arch dirtfloor
 x 43
 y 9
 end
 arch dirtfloor
+x 43
+y 10
+end
+arch giant
 x 43
 y 10
 end
@@ -13798,11 +14214,19 @@ arch dirtfloor
 x 43
 y 12
 end
+arch giant
+x 43
+y 12
+end
 arch dirtfloor
 x 43
 y 13
 end
 arch dirtfloor
+x 43
+y 14
+end
+arch giant
 x 43
 y 14
 end
@@ -13814,11 +14238,19 @@ arch dirtfloor
 x 43
 y 16
 end
+arch giant
+x 43
+y 16
+end
 arch dirtfloor
 x 43
 y 17
 end
 arch dirtfloor
+x 43
+y 18
+end
+arch giant
 x 43
 y 18
 end
@@ -13830,6 +14262,10 @@ arch dirtfloor
 x 43
 y 20
 end
+arch giant
+x 43
+y 20
+end
 arch dirtfloor
 x 43
 y 21
@@ -13838,11 +14274,19 @@ arch dirtfloor
 x 43
 y 22
 end
+arch giant
+x 43
+y 22
+end
 arch dirtfloor
 x 43
 y 23
 end
 arch dirtfloor
+x 43
+y 24
+end
+arch giant
 x 43
 y 24
 end
@@ -13898,6 +14342,10 @@ arch dirtfloor
 x 43
 y 37
 end
+arch behemoth
+x 43
+y 37
+end
 arch dirtfloor
 x 43
 y 38
@@ -13910,11 +14358,19 @@ arch dirtfloor
 x 43
 y 40
 end
+arch behemoth
+x 43
+y 40
+end
 arch dirtfloor
 x 43
 y 41
 end
 arch dirtfloor
+x 43
+y 42
+end
+arch behemoth
 x 43
 y 42
 end
@@ -13930,11 +14386,19 @@ arch dirtfloor
 x 43
 y 45
 end
+arch behemoth
+x 43
+y 45
+end
 arch dirtfloor
 x 43
 y 46
 end
 arch dirtfloor
+x 43
+y 47
+end
+arch behemoth
 x 43
 y 47
 end
@@ -13949,11 +14413,18 @@ end
 arch dirtfloor
 x 44
 end
+arch dread
+x 44
+end
 arch dirtfloor
 x 44
 y 1
 end
 arch dirtfloor
+x 44
+y 2
+end
+arch dread
 x 44
 y 2
 end
@@ -13966,6 +14437,10 @@ x 44
 y 4
 end
 arch dirtfloor
+x 44
+y 5
+end
+arch dread
 x 44
 y 5
 end
@@ -13993,11 +14468,19 @@ arch dirtfloor
 x 44
 y 9
 end
+arch giant
+x 44
+y 9
+end
 arch dirtfloor
 x 44
 y 10
 end
 arch dirtfloor
+x 44
+y 11
+end
+arch giant
 x 44
 y 11
 end
@@ -14017,11 +14500,19 @@ arch dirtfloor
 x 44
 y 14
 end
+arch giant
+x 44
+y 14
+end
 arch dirtfloor
 x 44
 y 15
 end
 arch dirtfloor
+x 44
+y 16
+end
+arch giant
 x 44
 y 16
 end
@@ -14033,11 +14524,19 @@ arch dirtfloor
 x 44
 y 18
 end
+arch giant
+x 44
+y 18
+end
 arch dirtfloor
 x 44
 y 19
 end
 arch dirtfloor
+x 44
+y 20
+end
+arch giant
 x 44
 y 20
 end
@@ -14049,11 +14548,19 @@ arch dirtfloor
 x 44
 y 22
 end
+arch giant
+x 44
+y 22
+end
 arch dirtfloor
 x 44
 y 23
 end
 arch dirtfloor
+x 44
+y 24
+end
+arch giant
 x 44
 y 24
 end
@@ -14603,6 +15110,9 @@ end
 arch dirtfloor
 x 46
 end
+arch dread
+x 46
+end
 arch dirtfloor
 x 46
 y 1
@@ -14620,6 +15130,10 @@ x 46
 y 4
 end
 arch dirtfloor
+x 46
+y 5
+end
+arch dread
 x 46
 y 5
 end
@@ -14988,6 +15502,10 @@ x 47
 y 1
 end
 arch dirtfloor
+x 47
+y 2
+end
+arch dread
 x 47
 y 2
 end
@@ -15389,6 +15907,10 @@ arch dirtfloor
 x 48
 y 5
 end
+arch dread
+x 48
+y 5
+end
 arch dirtfloor
 x 48
 y 6
@@ -15442,8 +15964,8 @@ arch magic_mouth
 msg
 This is the private Zoo
 of Jessy. If you want to
-enter, you must "ask" 
-Jessy to give you the 
+enter, you must "ask"
+Jessy to give you the
 key......
 endmsg
 x 48
@@ -16139,525 +16661,4 @@ end
 arch black_pudding
 x 49
 y 49
-end
-arch big_elec
-x 5
-y 23
-end
-arch big_elec
-x 8
-y 5
-end
-arch big_elec
-x 11
-y 15
-end
-arch big_elec
-x 11
-y 24
-end
-arch big_elec
-x 21
-y 3
-end
-arch big_elec
-x 21
-y 11
-end
-arch big_elec
-x 22
-y 26
-end
-arch demon_lord
-x 27
-y 4
-end
-arch demon_lord
-x 27
-y 12
-end
-arch demon_lord
-x 28
-y 26
-end
-arch demon_lord
-x 28
-y 34
-end
-arch demon_lord
-x 28
-y 42
-end
-arch big_dragon
-x 30
-y 9
-end
-arch chinese_dragon
-x 30
-y 11
-end
-arch big_dragon
-x 31
-end
-arch big_wiz
-x 31
-y 2
-end
-arch big_dragon
-x 31
-y 5
-end
-arch big_wiz
-x 31
-y 13
-end
-arch chinese_dragon
-x 31
-y 16
-end
-arch chinese_dragon
-x 31
-y 18
-end
-arch chinese_dragon
-x 31
-y 20
-end
-arch big_wiz
-x 31
-y 22
-end
-arch chinese_dragon
-x 31
-y 26
-end
-arch chinese_dragon
-x 31
-y 28
-end
-arch chinese_dragon
-x 31
-y 36
-end
-arch chinese_dragon
-x 31
-y 38
-end
-arch big_dragon
-x 32
-y 7
-end
-arch chinese_dragon
-x 32
-y 30
-end
-arch chinese_dragon
-x 32
-y 33
-end
-arch chinese_dragon
-x 32
-y 41
-end
-arch chinese_dragon
-x 32
-y 43
-end
-arch chinese_dragon
-x 32
-y 45
-end
-arch chinese_dragon
-x 32
-y 47
-end
-arch chinese_dragon
-x 33
-y 9
-end
-arch big_dragon
-x 33
-y 11
-end
-arch chinese_dragon
-x 33
-y 36
-end
-arch chinese_dragon
-x 33
-y 39
-end
-arch big_dragon
-x 34
-y 15
-end
-arch big_dragon
-x 34
-y 17
-end
-arch big_dragon
-x 34
-y 19
-end
-arch big_dragon
-x 34
-y 27
-end
-arch titan
-x 35
-y 1
-end
-arch titan
-x 35
-y 5
-end
-arch big_dragon
-x 35
-y 22
-end
-arch big_dragon
-x 35
-y 24
-end
-arch big_dragon
-x 35
-y 29
-end
-arch big_dragon
-x 35
-y 31
-end
-arch big_dragon
-x 35
-y 33
-end
-arch big_dragon
-x 35
-y 43
-end
-arch big_dragon
-x 35
-y 48
-end
-arch big_dragon
-x 36
-y 36
-end
-arch big_dragon
-x 36
-y 39
-end
-arch big_dragon
-x 36
-y 41
-end
-arch big_dragon
-x 36
-y 46
-end
-arch titan
-x 37
-y 12
-end
-arch titan
-x 38
-y 1
-end
-arch titan
-x 38
-y 5
-end
-arch titan
-x 38
-y 8
-end
-arch titan
-x 38
-y 15
-end
-arch titan
-x 38
-y 18
-end
-arch chinese_dragon
-x 39
-y 20
-end
-arch titan
-x 39
-y 24
-end
-arch titan
-x 39
-y 27
-end
-arch titan
-x 39
-y 30
-end
-arch titan
-x 39
-y 34
-end
-arch big_dragon
-x 39
-y 43
-end
-arch giant
-x 40
-end
-arch giant
-x 40
-y 2
-end
-arch titan
-x 40
-y 11
-end
-arch giant
-x 40
-y 14
-end
-arch giant
-x 40
-y 16
-end
-arch giant
-x 40
-y 18
-end
-arch titan
-x 40
-y 40
-end
-arch titan
-x 40
-y 47
-end
-arch giant
-x 41
-end
-arch giant
-x 41
-y 3
-end
-arch giant
-x 41
-y 5
-end
-arch giant
-x 41
-y 8
-end
-arch giant
-x 41
-y 14
-end
-arch giant
-x 41
-y 16
-end
-arch giant
-x 41
-y 18
-end
-arch giant
-x 41
-y 20
-end
-arch giant
-x 41
-y 22
-end
-arch giant
-x 42
-end
-arch giant
-x 42
-y 2
-end
-arch giant
-x 42
-y 4
-end
-arch giant
-x 42
-y 6
-end
-arch giant
-x 42
-y 9
-end
-arch giant
-x 42
-y 12
-end
-arch giant
-x 42
-y 14
-end
-arch giant
-x 42
-y 16
-end
-arch giant
-x 42
-y 18
-end
-arch giant
-x 42
-y 20
-end
-arch giant
-x 42
-y 22
-end
-arch giant
-x 42
-y 24
-end
-arch behemoth
-x 42
-y 26
-end
-arch behemoth
-x 42
-y 28
-end
-arch behemoth
-x 42
-y 30
-end
-arch behemoth
-x 42
-y 32
-end
-arch behemoth
-x 42
-y 34
-end
-arch giant
-x 43
-end
-arch giant
-x 43
-y 2
-end
-arch giant
-x 43
-y 5
-end
-arch giant
-x 43
-y 8
-end
-arch giant
-x 43
-y 10
-end
-arch giant
-x 43
-y 12
-end
-arch giant
-x 43
-y 14
-end
-arch giant
-x 43
-y 16
-end
-arch giant
-x 43
-y 18
-end
-arch giant
-x 43
-y 20
-end
-arch giant
-x 43
-y 22
-end
-arch giant
-x 43
-y 24
-end
-arch behemoth
-x 43
-y 37
-end
-arch behemoth
-x 43
-y 40
-end
-arch behemoth
-x 43
-y 42
-end
-arch behemoth
-x 43
-y 45
-end
-arch behemoth
-x 43
-y 47
-end
-arch dread
-x 44
-end
-arch dread
-x 44
-y 2
-end
-arch dread
-x 44
-y 5
-end
-arch giant
-x 44
-y 9
-end
-arch giant
-x 44
-y 11
-end
-arch giant
-x 44
-y 14
-end
-arch giant
-x 44
-y 16
-end
-arch giant
-x 44
-y 18
-end
-arch giant
-x 44
-y 20
-end
-arch giant
-x 44
-y 22
-end
-arch giant
-x 44
-y 24
-end
-arch dread
-x 46
-end
-arch dread
-x 46
-y 5
-end
-arch dread
-x 47
-y 2
-end
-arch dread
-x 48
-y 5
 end

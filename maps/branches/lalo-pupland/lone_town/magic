@@ -1,13 +1,13 @@
 arch map
-region lonetown
 name magic
+region lonetown
+width 20
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Nov 26 17:06:57 1997
 endmsg
-x 20
-y 25
 end
 arch blocked
 end
@@ -344,7 +344,7 @@ arch conjurer
 name Magician
 msg
 @match *
-The magic show is over.  Please wait for your server to reset this map. 
+The magic show is over.  Please wait for your server to reset this map.
 endmsg
 hp 400
 exp 1
@@ -2358,8 +2358,8 @@ endmsg
 x 11
 y 21
 level 20
-no_pick 1
 map_layer item
+no_pick 1
 end
 arch dungeon_floor
 x 11

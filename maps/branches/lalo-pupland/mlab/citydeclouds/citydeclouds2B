@@ -1569,11 +1569,19 @@ arch random_gem
 x 3
 y 16
 end
+arch dread
+x 3
+y 16
+end
 arch dirtfloor
 x 3
 y 17
 end
 arch dirtfloor
+x 3
+y 18
+end
+arch dread
 x 3
 y 18
 end
@@ -1586,6 +1594,10 @@ x 3
 y 19
 end
 arch dirtfloor
+x 3
+y 20
+end
+arch dread
 x 3
 y 20
 end
@@ -2300,6 +2312,10 @@ arch dirtfloor
 x 5
 y 16
 end
+arch dread
+x 5
+y 16
+end
 arch dirtfloor
 x 5
 y 17
@@ -2308,11 +2324,19 @@ arch dirtfloor
 x 5
 y 18
 end
+arch dread
+x 5
+y 18
+end
 arch dirtfloor
 x 5
 y 19
 end
 arch dirtfloor
+x 5
+y 20
+end
+arch dread
 x 5
 y 20
 end
@@ -21077,28 +21101,4 @@ end
 arch wwall_2_2_2
 x 49
 y 49
-end
-arch dread
-x 3
-y 16
-end
-arch dread
-x 3
-y 18
-end
-arch dread
-x 3
-y 20
-end
-arch dread
-x 5
-y 16
-end
-arch dread
-x 5
-y 18
-end
-arch dread
-x 5
-y 20
 end

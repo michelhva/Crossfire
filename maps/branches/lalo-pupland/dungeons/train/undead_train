@@ -1,546 +1,546 @@
 arch map
 name humanoid_train
 region wilderness
+width 21
+height 21
+enter_x 10
+enter_y 17
 msg
 Creator: Gene Alexander
 Editor: CF Java Map Editor
 Date:    5/30/2005
 endmsg
-width 21
-height 21
-enter_x 10
-enter_y 17
 outdoor 1
 end
 arch woods_3
 elevation 1200
 end
 arch woods_3
-elevation 1200
 y 1
+elevation 1200
 end
 arch woods_3
-elevation 1125
 y 2
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 3
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 4
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 5
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 6
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 7
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 8
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 9
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 10
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 11
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 12
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 13
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 14
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 15
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 16
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 17
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 18
+elevation 1125
 end
 arch woods_3
-elevation 1125
 y 19
-end
-arch woods_3
 elevation 1125
+end
+arch woods_3
 y 20
+elevation 1125
 end
 arch woods_3
-elevation 1200
 x 1
+elevation 1200
 end
 arch woods_3
-elevation 1200
 x 1
 y 1
+elevation 1200
 end
 arch woods_3
-elevation 1125
 x 1
 y 2
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 3
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 4
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 5
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 6
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 7
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 8
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 9
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 10
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 11
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 12
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 13
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 14
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 15
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 16
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 17
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 18
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 19
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 1
 y 20
+elevation 1125
 end
 arch woods_3
-elevation 1200
 x 2
+elevation 1200
 end
 arch woods_3
-elevation 1200
 x 2
 y 1
-end
-arch invis_exit
-msg
-An unseen force moves you across the world.
-You feel as though you have moved quite a
-distance.
-endmsg
-slaying /world/world_109_125
-hp 24
-sp 45
-x 2
-y 2
-end
-arch woods_3
 elevation 1200
+end
+arch invis_exit
+slaying /world/world_109_125
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 24
+sp 45
 x 2
 y 2
 end
+arch woods_3
+x 2
+y 2
+elevation 1200
+end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 3
 end
 arch woods_3
-elevation 1125
 x 2
 y 3
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 4
 end
 arch woods_3
-elevation 1125
 x 2
 y 4
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 5
 end
 arch woods_3
-elevation 1125
 x 2
 y 5
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 6
 end
 arch woods_3
-elevation 1125
 x 2
 y 6
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 7
 end
 arch woods_3
-elevation 1125
 x 2
 y 7
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 8
 end
 arch woods_3
-elevation 1125
 x 2
 y 8
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 9
 end
 arch woods_3
-elevation 1125
 x 2
 y 9
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 10
 end
 arch woods_3
-elevation 1125
 x 2
 y 10
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 11
 end
 arch woods_3
-elevation 1125
 x 2
 y 11
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 12
 end
 arch woods_3
-elevation 1125
 x 2
 y 12
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 13
 end
 arch woods_3
-elevation 1125
 x 2
 y 13
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 14
 end
 arch woods_3
-elevation 1125
 x 2
 y 14
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 15
 end
 arch woods_3
-elevation 1125
 x 2
 y 15
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 16
 end
 arch woods_3
-elevation 1125
 x 2
 y 16
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 17
 end
 arch woods_3
-elevation 1125
 x 2
 y 17
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 2
 y 18
 end
 arch woods_2
-elevation 1540
 x 2
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 2
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 2
 y 20
+elevation 1540
 end
 arch woods_3
-elevation 1200
 x 3
+elevation 1200
 end
 arch woods_3
-elevation 1200
 x 3
 y 1
+elevation 1200
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 3
 y 2
 end
 arch woods_3
-elevation 1200
 x 3
 y 2
+elevation 1200
 end
 arch dungeon_magic
 x 3
 y 3
 end
 arch hills
-elevation 1785
 x 3
 y 3
+elevation 1785
 end
 arch grimreaper
 x 3
@@ -551,242 +551,242 @@ x 3
 y 4
 end
 arch hills
-elevation 1785
 x 3
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 5
 end
 arch hills
-elevation 1785
 x 3
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 6
 end
 arch hills
-elevation 1785
 x 3
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 7
 end
 arch hills
-elevation 1785
 x 3
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 8
 end
 arch hills
-elevation 1785
 x 3
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 9
 end
 arch hills
-elevation 1785
 x 3
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 10
 end
 arch hills
-elevation 1785
 x 3
 y 10
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 11
 end
 arch hills
-elevation 1785
 x 3
 y 11
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 12
 end
 arch hills
-elevation 1785
 x 3
 y 12
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 13
 end
 arch hills
-elevation 1785
 x 3
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 14
 end
 arch hills
-elevation 1785
 x 3
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 15
 end
 arch hills
-elevation 1785
 x 3
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 16
 end
 arch hills
-elevation 1785
 x 3
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 3
 y 17
 end
 arch hills
-elevation 1785
 x 3
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 3
 y 18
 end
 arch woods_2
-elevation 1540
 x 3
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 3
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 3
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 4
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 4
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 4
 y 2
 end
 arch evergreens
-elevation 1373
 x 4
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 4
 y 3
 end
 arch hills
-elevation 1785
 x 4
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 4
 end
 arch hills
-elevation 1785
 x 4
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 5
 end
 arch hills
-elevation 1785
 x 4
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 6
 end
 arch hills
-elevation 1785
 x 4
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 7
 end
 arch hills
-elevation 1785
 x 4
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 8
 end
 arch hills
-elevation 1785
 x 4
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 9
 end
 arch hills
-elevation 1785
 x 4
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 4
@@ -817,167 +817,167 @@ x 4
 y 13
 end
 arch hills
-elevation 1785
 x 4
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 14
 end
 arch hills
-elevation 1785
 x 4
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 15
 end
 arch hills
-elevation 1785
 x 4
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 16
 end
 arch hills
-elevation 1785
 x 4
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 4
 y 17
 end
 arch hills
-elevation 1785
 x 4
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 4
 y 18
 end
 arch woods_2
-elevation 1540
 x 4
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 4
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 4
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 5
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 5
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 5
 y 2
 end
 arch evergreens
-elevation 1373
 x 5
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 5
 y 3
 end
 arch hills
-elevation 1785
 x 5
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 4
 end
 arch hills
-elevation 1785
 x 5
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 5
 end
 arch hills
-elevation 1785
 x 5
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 6
 end
 arch hills
-elevation 1785
 x 5
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch hills
-elevation 1785
 x 5
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 8
 end
 arch hills
-elevation 1785
 x 5
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 9
 end
 arch hills
-elevation 1785
 x 5
 y 9
+elevation 1785
 end
 arch statue
 face grimreaper.111
-elevation 1785
 x 5
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 5
@@ -992,15 +992,15 @@ x 5
 y 11
 end
 arch hills
-elevation 1785
 x 5
 y 11
+elevation 1785
 end
 arch statue
 face lich.111
-elevation 1785
 x 5
 y 11
+elevation 1785
 end
 arch dungeon_magic
 x 5
@@ -1015,161 +1015,161 @@ x 5
 y 13
 end
 arch hills
-elevation 1785
 x 5
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 14
 end
 arch hills
-elevation 1785
 x 5
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 15
 end
 arch hills
-elevation 1785
 x 5
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 16
 end
 arch hills
-elevation 1785
 x 5
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 5
 y 17
 end
 arch hills
-elevation 1785
 x 5
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 5
 y 18
 end
 arch woods_2
-elevation 1540
 x 5
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 5
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 5
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 6
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 6
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 6
 y 2
 end
 arch evergreens
-elevation 1373
 x 6
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 6
 y 3
 end
 arch hills
-elevation 1785
 x 6
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 4
 end
 arch hills
-elevation 1785
 x 6
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 5
 end
 arch hills
-elevation 1785
 x 6
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 6
 end
 arch hills
-elevation 1785
 x 6
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch hills
-elevation 1785
 x 6
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 8
 end
 arch hills
-elevation 1785
 x 6
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 9
 end
 arch hills
-elevation 1785
 x 6
 y 9
+elevation 1785
 end
 arch swall_1_4_half
 x 6
@@ -1188,9 +1188,9 @@ x 6
 y 11
 end
 arch hills
-elevation 1785
 x 6
 y 11
+elevation 1785
 end
 arch swall_1_4_half
 x 6
@@ -1217,98 +1217,98 @@ x 6
 y 14
 end
 arch hills
-elevation 1785
 x 6
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 15
 end
 arch hills
-elevation 1785
 x 6
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 16
 end
 arch hills
-elevation 1785
 x 6
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 6
 y 17
 end
 arch hills
-elevation 1785
 x 6
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 6
 y 18
 end
 arch woods_2
-elevation 1540
 x 6
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 6
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 6
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 7
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 7
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 7
 y 2
 end
 arch evergreens
-elevation 1373
 x 7
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 7
 y 3
 end
 arch hills
-elevation 1785
 x 7
 y 3
+elevation 1785
 end
 arch grimreaper
 x 7
@@ -1319,54 +1319,54 @@ x 7
 y 4
 end
 arch hills
-elevation 1785
 x 7
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 5
 end
 arch hills
-elevation 1785
 x 7
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 6
 end
 arch hills
-elevation 1785
 x 7
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 7
 end
 arch hills
-elevation 1785
 x 7
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 8
 end
 arch hills
-elevation 1785
 x 7
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 9
 end
 arch hills
-elevation 1785
 x 7
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 7
@@ -1377,23 +1377,23 @@ x 7
 y 10
 end
 arch hills
-elevation 1785
 x 7
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 1
 x 7
 y 10
+connected 1
 end
 arch dungeon_magic
 x 7
 y 11
 end
 arch hills
-elevation 1785
 x 7
 y 11
+elevation 1785
 end
 arch swall_2_1_2
 x 7
@@ -1428,143 +1428,143 @@ x 7
 y 15
 end
 arch hills
-elevation 1785
 x 7
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 16
 end
 arch hills
-elevation 1785
 x 7
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 7
 y 17
 end
 arch hills
-elevation 1785
 x 7
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 7
 y 18
 end
 arch woods_2
-elevation 1540
 x 7
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 7
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 7
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 8
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 8
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 8
 y 2
 end
 arch evergreens
-elevation 1373
 x 8
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 8
 y 3
 end
 arch hills
-elevation 1785
 x 8
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 4
 end
 arch hills
-elevation 1785
 x 8
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 5
 end
 arch hills
-elevation 1785
 x 8
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch hills
-elevation 1785
 x 8
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch hills
-elevation 1785
 x 8
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 8
 end
 arch hills
-elevation 1785
 x 8
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 9
 end
 arch hills
-elevation 1785
 x 8
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 8
@@ -1575,23 +1575,23 @@ x 8
 y 10
 end
 arch hills
-elevation 1785
 x 8
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 2
 x 8
 y 10
+connected 2
 end
 arch dungeon_magic
 x 8
 y 11
 end
 arch hills
-elevation 1785
 x 8
 y 11
+elevation 1785
 end
 arch swall_3_3
 x 8
@@ -1602,9 +1602,9 @@ x 8
 y 12
 end
 arch hills
-elevation 1785
 x 8
 y 12
+elevation 1785
 end
 arch swall_2_1_1
 x 8
@@ -1615,9 +1615,9 @@ x 8
 y 13
 end
 arch hills
-elevation 1785
 x 8
 y 13
+elevation 1785
 end
 arch swall_1_2
 x 8
@@ -1644,80 +1644,80 @@ x 8
 y 16
 end
 arch hills
-elevation 1785
 x 8
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 8
 y 17
 end
 arch hills
-elevation 1785
 x 8
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 8
 y 18
 end
 arch woods_2
-elevation 1540
 x 8
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 8
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 8
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 9
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 9
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 9
 y 2
 end
 arch evergreens
-elevation 1373
 x 9
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 9
 y 3
 end
 arch hills
-elevation 1785
 x 9
 y 3
+elevation 1785
 end
 arch nazgul
 x 9
@@ -1728,54 +1728,54 @@ x 9
 y 4
 end
 arch hills
-elevation 1785
 x 9
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 9
 y 5
 end
 arch hills
-elevation 1785
 x 9
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 9
 y 6
 end
 arch hills
-elevation 1785
 x 9
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 9
 y 7
 end
 arch hills
-elevation 1785
 x 9
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 9
 y 8
 end
 arch hills
-elevation 1785
 x 9
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 9
 y 9
 end
 arch hills
-elevation 1785
 x 9
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 9
@@ -1786,23 +1786,23 @@ x 9
 y 10
 end
 arch hills
-elevation 1785
 x 9
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 3
 x 9
 y 10
+connected 3
 end
 arch dungeon_magic
 x 9
 y 11
 end
 arch hills
-elevation 1785
 x 9
 y 11
+elevation 1785
 end
 arch swall_2_1_2
 x 9
@@ -1813,34 +1813,34 @@ x 9
 y 12
 end
 arch hills
-elevation 1785
 x 9
 y 12
+elevation 1785
 end
 arch cwall_0
 name lich dust
 face pix_dust.111
-blocksview 0
-no_pass 0
 x 9
 y 12
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 9
 y 13
 end
 arch hills
-elevation 1785
 x 9
 y 13
+elevation 1785
 end
 arch altar
 name Drop lich dust
 slaying lich dust
 food 1
-connected 1
 x 9
 y 13
+connected 1
 end
 arch light2
 x 9
@@ -1875,71 +1875,71 @@ x 9
 y 17
 end
 arch hills
-elevation 1785
 x 9
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 9
 y 18
 end
 arch woods_2
-elevation 1540
 x 9
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 9
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 9
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 10
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 10
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 10
 y 2
 end
 arch evergreens
-elevation 1373
 x 10
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 10
 y 3
 end
 arch hills
-elevation 1785
 x 10
 y 3
+elevation 1785
 end
 arch nazgul
 x 10
@@ -1950,54 +1950,54 @@ x 10
 y 4
 end
 arch hills
-elevation 1785
 x 10
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 10
 y 5
 end
 arch hills
-elevation 1785
 x 10
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 10
 y 6
 end
 arch hills
-elevation 1785
 x 10
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 10
 y 7
 end
 arch hills
-elevation 1785
 x 10
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 10
 y 8
 end
 arch hills
-elevation 1785
 x 10
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 10
 y 9
 end
 arch hills
-elevation 1785
 x 10
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 10
@@ -2008,11 +2008,12 @@ x 10
 y 10
 end
 arch hills
-elevation 1785
 x 10
 y 10
+elevation 1785
 end
 arch stair_down_4
+slaying /!
 msg
 layoutstyle onion
 symmetry 0
@@ -2029,7 +2030,6 @@ orientation 2
 expand2x 1
 treasureoptions 1
 endmsg
-slaying /!
 x 10
 y 10
 end
@@ -2042,9 +2042,9 @@ x 10
 y 11
 end
 arch hills
-elevation 1785
 x 10
 y 11
+elevation 1785
 end
 arch swall_2_1_2
 x 10
@@ -2055,34 +2055,34 @@ x 10
 y 12
 end
 arch hills
-elevation 1785
 x 10
 y 12
+elevation 1785
 end
 arch cwall_0
 name Spectre's ectoplasm
 face ectoplasm.111
-blocksview 0
-no_pass 0
 x 10
 y 12
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 10
 y 13
 end
 arch hills
-elevation 1785
 x 10
 y 13
+elevation 1785
 end
 arch altar
 name Drop Spectre's ectoplasm
 slaying Spectre's ectoplasm
 food 1
-connected 2
 x 10
 y 13
+connected 2
 end
 arch dungeon_magic
 x 10
@@ -2097,9 +2097,9 @@ x 10
 y 15
 end
 arch footpath_4
-elevation 1785
 x 10
 y 15
+elevation 1785
 end
 arch sign
 msg
@@ -2113,11 +2113,11 @@ Cowards need not enter. Cowardly
 running about may get one ejected
 from entering this training center.
 endmsg
-walk_on 1
-fly_on 1
-elevation 1785
 x 10
 y 15
+elevation 1785
+walk_on 1
+fly_on 1
 end
 arch dungeon_magic
 x 10
@@ -2136,12 +2136,12 @@ x 10
 y 17
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 10
@@ -2156,44 +2156,44 @@ x 10
 y 19
 end
 arch woods_2
-elevation 1540
 x 10
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 11
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 11
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 11
 y 2
 end
 arch evergreens
-elevation 1373
 x 11
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 11
 y 3
 end
 arch hills
-elevation 1785
 x 11
 y 3
+elevation 1785
 end
 arch nazgul
 x 11
@@ -2204,54 +2204,54 @@ x 11
 y 4
 end
 arch hills
-elevation 1785
 x 11
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 11
 y 5
 end
 arch hills
-elevation 1785
 x 11
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 11
 y 6
 end
 arch hills
-elevation 1785
 x 11
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 11
 y 7
 end
 arch hills
-elevation 1785
 x 11
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 11
 y 8
 end
 arch hills
-elevation 1785
 x 11
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 11
 y 9
 end
 arch hills
-elevation 1785
 x 11
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 11
@@ -2262,23 +2262,23 @@ x 11
 y 10
 end
 arch hills
-elevation 1785
 x 11
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 3
 x 11
 y 10
+connected 3
 end
 arch dungeon_magic
 x 11
 y 11
 end
 arch hills
-elevation 1785
 x 11
 y 11
+elevation 1785
 end
 arch swall_2_1_2
 x 11
@@ -2289,34 +2289,34 @@ x 11
 y 12
 end
 arch hills
-elevation 1785
 x 11
 y 12
+elevation 1785
 end
 arch cwall_0
 name Skull's tooth
 face tooth.111
-blocksview 0
-no_pass 0
 x 11
 y 12
+no_pass 0
+blocksview 0
 end
 arch dungeon_magic
 x 11
 y 13
 end
 arch hills
-elevation 1785
 x 11
 y 13
+elevation 1785
 end
 arch altar
 name Drop Skull's tooth
 slaying skull's tooth
 food 1
-connected 3
 x 11
 y 13
+connected 3
 end
 arch light2
 x 11
@@ -2351,26 +2351,26 @@ x 11
 y 17
 end
 arch hills
-elevation 1785
 x 11
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 11
 y 18
 end
 arch woods_2
-elevation 1540
 x 11
 y 18
+elevation 1540
 end
 arch footpath_2_2_3
 x 11
@@ -2381,93 +2381,93 @@ x 11
 y 20
 end
 arch evergreens
-elevation 1373
 x 12
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 12
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 12
 y 2
 end
 arch evergreens
-elevation 1373
 x 12
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 12
 y 3
 end
 arch hills
-elevation 1785
 x 12
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 4
 end
 arch hills
-elevation 1785
 x 12
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 5
 end
 arch hills
-elevation 1785
 x 12
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 6
 end
 arch hills
-elevation 1785
 x 12
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 7
 end
 arch hills
-elevation 1785
 x 12
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 8
 end
 arch hills
-elevation 1785
 x 12
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 9
 end
 arch hills
-elevation 1785
 x 12
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 12
@@ -2478,23 +2478,23 @@ x 12
 y 10
 end
 arch hills
-elevation 1785
 x 12
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 2
 x 12
 y 10
+connected 2
 end
 arch dungeon_magic
 x 12
 y 11
 end
 arch hills
-elevation 1785
 x 12
 y 11
+elevation 1785
 end
 arch swall_3_3
 x 12
@@ -2505,9 +2505,9 @@ x 12
 y 12
 end
 arch hills
-elevation 1785
 x 12
 y 12
+elevation 1785
 end
 arch swall_2_1_1
 x 12
@@ -2518,9 +2518,9 @@ x 12
 y 13
 end
 arch hills
-elevation 1785
 x 12
 y 13
+elevation 1785
 end
 arch swall_1_2
 x 12
@@ -2547,80 +2547,80 @@ x 12
 y 16
 end
 arch hills
-elevation 1785
 x 12
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 12
 y 17
 end
 arch hills
-elevation 1785
 x 12
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 12
 y 18
 end
 arch woods_2
-elevation 1540
 x 12
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 12
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 12
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 13
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 13
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 13
 y 2
 end
 arch evergreens
-elevation 1373
 x 13
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 13
 y 3
 end
 arch hills
-elevation 1785
 x 13
 y 3
+elevation 1785
 end
 arch grimreaper
 x 13
@@ -2631,54 +2631,54 @@ x 13
 y 4
 end
 arch hills
-elevation 1785
 x 13
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 5
 end
 arch hills
-elevation 1785
 x 13
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 6
 end
 arch hills
-elevation 1785
 x 13
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 7
 end
 arch hills
-elevation 1785
 x 13
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 8
 end
 arch hills
-elevation 1785
 x 13
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 9
 end
 arch hills
-elevation 1785
 x 13
 y 9
+elevation 1785
 end
 arch swall_2_1_2
 x 13
@@ -2689,23 +2689,23 @@ x 13
 y 10
 end
 arch hills
-elevation 1785
 x 13
 y 10
+elevation 1785
 end
 arch grate_closed_2
-connected 1
 x 13
 y 10
+connected 1
 end
 arch dungeon_magic
 x 13
 y 11
 end
 arch hills
-elevation 1785
 x 13
 y 11
+elevation 1785
 end
 arch swall_2_1_2
 x 13
@@ -2716,18 +2716,18 @@ x 13
 y 12
 end
 arch hills
-elevation 1785
 x 13
 y 12
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 13
 end
 arch hills
-elevation 1785
 x 13
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 13
@@ -2742,143 +2742,143 @@ x 13
 y 15
 end
 arch hills
-elevation 1785
 x 13
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 16
 end
 arch hills
-elevation 1785
 x 13
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 13
 y 17
 end
 arch hills
-elevation 1785
 x 13
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 13
 y 18
 end
 arch woods_2
-elevation 1540
 x 13
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 13
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 13
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 14
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 14
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 14
 y 2
 end
 arch evergreens
-elevation 1373
 x 14
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 14
 y 3
 end
 arch hills
-elevation 1785
 x 14
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 4
 end
 arch hills
-elevation 1785
 x 14
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 5
 end
 arch hills
-elevation 1785
 x 14
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 6
 end
 arch hills
-elevation 1785
 x 14
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 7
 end
 arch hills
-elevation 1785
 x 14
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 8
 end
 arch hills
-elevation 1785
 x 14
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 9
 end
 arch hills
-elevation 1785
 x 14
 y 9
+elevation 1785
 end
 arch swall_1_3_half
 x 14
@@ -2897,9 +2897,9 @@ x 14
 y 11
 end
 arch hills
-elevation 1785
 x 14
 y 11
+elevation 1785
 end
 arch swall_1_3_half
 x 14
@@ -2934,149 +2934,149 @@ x 14
 y 15
 end
 arch hills
-elevation 1785
 x 14
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 16
 end
 arch hills
-elevation 1785
 x 14
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 14
 y 17
 end
 arch hills
-elevation 1785
 x 14
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 14
 y 18
 end
 arch woods_2
-elevation 1540
 x 14
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 14
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 14
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 15
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 15
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 15
 y 2
 end
 arch evergreens
-elevation 1373
 x 15
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 15
 y 3
 end
 arch hills
-elevation 1785
 x 15
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 4
 end
 arch hills
-elevation 1785
 x 15
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 5
 end
 arch hills
-elevation 1785
 x 15
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 6
 end
 arch hills
-elevation 1785
 x 15
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 7
 end
 arch hills
-elevation 1785
 x 15
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 8
 end
 arch hills
-elevation 1785
 x 15
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 9
 end
 arch hills
-elevation 1785
 x 15
 y 9
+elevation 1785
 end
 arch statue
 face spectre.111
-elevation 1785
 x 15
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 15
@@ -3091,15 +3091,15 @@ x 15
 y 11
 end
 arch hills
-elevation 1785
 x 15
 y 11
+elevation 1785
 end
 arch statue
 face demilich.111
-elevation 1785
 x 15
 y 11
+elevation 1785
 end
 arch dungeon_magic
 x 15
@@ -3114,161 +3114,161 @@ x 15
 y 13
 end
 arch hills
-elevation 1785
 x 15
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 14
 end
 arch hills
-elevation 1785
 x 15
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 15
 end
 arch hills
-elevation 1785
 x 15
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 16
 end
 arch hills
-elevation 1785
 x 15
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 15
 y 17
 end
 arch hills
-elevation 1785
 x 15
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 15
 y 18
 end
 arch woods_2
-elevation 1540
 x 15
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 15
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 15
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 16
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 16
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 16
 y 2
 end
 arch evergreens
-elevation 1373
 x 16
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 16
 y 3
 end
 arch hills
-elevation 1785
 x 16
 y 3
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 4
 end
 arch hills
-elevation 1785
 x 16
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 5
 end
 arch hills
-elevation 1785
 x 16
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 6
 end
 arch hills
-elevation 1785
 x 16
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 7
 end
 arch hills
-elevation 1785
 x 16
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 8
 end
 arch hills
-elevation 1785
 x 16
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 9
 end
 arch hills
-elevation 1785
 x 16
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 16
@@ -3299,107 +3299,107 @@ x 16
 y 13
 end
 arch hills
-elevation 1785
 x 16
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 14
 end
 arch hills
-elevation 1785
 x 16
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 15
 end
 arch hills
-elevation 1785
 x 16
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 16
 end
 arch hills
-elevation 1785
 x 16
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 16
 y 17
 end
 arch hills
-elevation 1785
 x 16
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 16
 y 18
 end
 arch woods_2
-elevation 1540
 x 16
 y 18
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 16
 y 19
+elevation 1540
 end
 arch woods_2
-elevation 1540
 x 16
 y 20
+elevation 1540
 end
 arch evergreens
-elevation 1373
 x 17
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 17
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 17
 y 2
 end
 arch evergreens
-elevation 1373
 x 17
 y 2
+elevation 1373
 end
 arch dungeon_magic
 x 17
 y 3
 end
 arch hills
-elevation 1785
 x 17
 y 3
+elevation 1785
 end
 arch grimreaper
 x 17
@@ -3410,667 +3410,667 @@ x 17
 y 4
 end
 arch hills
-elevation 1785
 x 17
 y 4
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 5
 end
 arch hills
-elevation 1785
 x 17
 y 5
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 6
 end
 arch hills
-elevation 1785
 x 17
 y 6
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 7
 end
 arch hills
-elevation 1785
 x 17
 y 7
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 8
 end
 arch hills
-elevation 1785
 x 17
 y 8
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 9
 end
 arch hills
-elevation 1785
 x 17
 y 9
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 10
 end
 arch hills
-elevation 1785
 x 17
 y 10
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 11
 end
 arch hills
-elevation 1785
 x 17
 y 11
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 12
 end
 arch hills
-elevation 1785
 x 17
 y 12
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 13
 end
 arch hills
-elevation 1785
 x 17
 y 13
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 14
 end
 arch hills
-elevation 1785
 x 17
 y 14
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 15
 end
 arch hills
-elevation 1785
 x 17
 y 15
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 16
 end
 arch hills
-elevation 1785
 x 17
 y 16
+elevation 1785
 end
 arch dungeon_magic
 x 17
 y 17
 end
 arch hills
-elevation 1785
 x 17
 y 17
+elevation 1785
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 17
 y 18
 end
 arch evergreens
-elevation 1373
 x 17
 y 18
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 17
 y 19
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 17
 y 20
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 18
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 18
 y 1
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 2
 end
 arch evergreens
-elevation 1373
 x 18
 y 2
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 3
 end
 arch woods_3
-elevation 1125
 x 18
 y 3
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 4
 end
 arch woods_3
-elevation 1125
 x 18
 y 4
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 5
 end
 arch woods_3
-elevation 1125
 x 18
 y 5
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 6
 end
 arch woods_3
-elevation 1125
 x 18
 y 6
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 7
 end
 arch woods_3
-elevation 1125
 x 18
 y 7
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 8
 end
 arch woods_3
-elevation 1125
 x 18
 y 8
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 9
 end
 arch woods_3
-elevation 1125
 x 18
 y 9
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 10
 end
 arch woods_3
-elevation 1125
 x 18
 y 10
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 11
 end
 arch woods_3
-elevation 1125
 x 18
 y 11
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 12
 end
 arch woods_3
-elevation 1125
 x 18
 y 12
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 13
 end
 arch woods_3
-elevation 1125
 x 18
 y 13
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 14
 end
 arch woods_3
-elevation 1125
 x 18
 y 14
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 15
 end
 arch woods_3
-elevation 1125
 x 18
 y 15
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 16
 end
 arch woods_3
-elevation 1125
 x 18
 y 16
+elevation 1125
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 17
 end
 arch evergreens
-elevation 1373
 x 18
 y 17
+elevation 1373
 end
 arch invis_exit
+slaying /world/world_109_125
 msg
 An unseen force moves you across the world.
 You feel as though you have moved quite a
 distance.
 endmsg
-slaying /world/world_109_125
 hp 24
 sp 45
 x 18
 y 18
 end
 arch evergreens
-elevation 1373
 x 18
 y 18
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 18
 y 19
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 18
 y 20
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 19
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 19
 y 1
+elevation 1373
 end
 arch woods_3
-elevation 1125
 x 19
 y 2
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 3
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 4
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 5
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 6
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 7
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 8
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 9
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 10
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 11
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 12
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 13
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 14
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 15
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 19
 y 16
+elevation 1125
 end
 arch evergreens
-elevation 1373
 x 19
 y 17
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 19
 y 18
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 19
 y 19
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 19
 y 20
+elevation 1373
 end
 arch woods_3
-elevation 1125
 x 20
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 1
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 2
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 3
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 4
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 5
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 6
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 7
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 8
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 9
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 10
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 11
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 12
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 13
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 14
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 15
+elevation 1125
 end
 arch woods_3
-elevation 1125
 x 20
 y 16
+elevation 1125
 end
 arch evergreens
-elevation 1373
 x 20
 y 17
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 20
 y 18
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 20
 y 19
+elevation 1373
 end
 arch evergreens
-elevation 1373
 x 20
 y 20
+elevation 1373
 end

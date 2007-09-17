@@ -1462,6 +1462,10 @@ arch pstone_2
 x 2
 y 37
 end
+arch giantrat
+x 2
+y 37
+end
 arch unholy_ground
 x 2
 y 38
@@ -2228,6 +2232,10 @@ x 3
 y 49
 end
 arch pstone_2
+x 3
+y 49
+end
+arch cobra
 x 3
 y 49
 end
@@ -2576,6 +2584,10 @@ arch pstone_2
 x 4
 y 21
 end
+arch giantrat
+x 4
+y 21
+end
 arch unholy_ground
 x 4
 y 22
@@ -2729,6 +2741,10 @@ x 4
 y 36
 end
 arch pstone_2
+x 4
+y 36
+end
+arch giantrat
 x 4
 y 36
 end
@@ -2897,6 +2913,10 @@ x 4
 y 51
 end
 arch pstone_2
+x 4
+y 51
+end
+arch fire_serpent
 x 4
 y 51
 end
@@ -3060,6 +3080,10 @@ arch pstone_2
 x 5
 y 2
 end
+arch shadowtiger
+x 5
+y 2
+end
 arch unholy_ground
 x 5
 y 3
@@ -3492,6 +3516,10 @@ arch pstone_2
 x 5
 y 48
 end
+arch fire_serpent
+x 5
+y 48
+end
 arch unholy_ground
 x 5
 y 49
@@ -3809,6 +3837,10 @@ arch pstone_2
 x 6
 y 16
 end
+arch giantrat
+x 6
+y 16
+end
 arch unholy_ground
 x 6
 y 17
@@ -3942,6 +3974,10 @@ x 6
 y 33
 end
 arch pstone_2
+x 6
+y 33
+end
+arch giantrat
 x 6
 y 33
 end
@@ -4106,6 +4142,15 @@ x 6
 y 49
 end
 arch pstone_2
+x 6
+y 49
+end
+arch djinn
+hp 12000
+maxhp 12000
+sp 600
+maxsp 600
+dam 45
 x 6
 y 49
 end
@@ -4443,6 +4488,10 @@ arch pstone_2
 x 7
 y 20
 end
+arch giantrat
+x 7
+y 20
+end
 arch unholy_ground
 x 7
 y 21
@@ -4512,6 +4561,10 @@ x 7
 y 29
 end
 arch pstone_2
+x 7
+y 29
+end
+arch giantrat
 x 7
 y 29
 end
@@ -4743,6 +4796,10 @@ arch pstone_2
 x 7
 y 52
 end
+arch cobra
+x 7
+y 52
+end
 arch unholy_ground
 x 7
 y 53
@@ -5069,6 +5126,10 @@ arch pstone_2
 x 8
 y 25
 end
+arch giantrat
+x 8
+y 25
+end
 arch unholy_ground
 x 8
 y 26
@@ -5278,6 +5339,10 @@ x 8
 y 47
 end
 arch pstone_2
+x 8
+y 47
+end
+arch cobra
 x 8
 y 47
 end
@@ -5559,6 +5624,10 @@ arch pstone_2
 x 9
 y 11
 end
+arch fire_serpent
+x 9
+y 11
+end
 arch unholy_ground
 x 9
 y 12
@@ -5756,6 +5825,10 @@ x 9
 y 32
 end
 arch pstone_2
+x 9
+y 32
+end
+arch giantrat
 x 9
 y 32
 end
@@ -5927,6 +6000,10 @@ arch pstone_2
 x 9
 y 49
 end
+arch fire_serpent
+x 9
+y 49
+end
 arch unholy_ground
 x 9
 y 50
@@ -5960,6 +6037,10 @@ x 9
 y 52
 end
 arch pstone_2
+x 9
+y 52
+end
+arch fire_serpent
 x 9
 y 52
 end
@@ -6999,6 +7080,10 @@ arch pstone_2
 x 11
 y 31
 end
+arch giantrat
+x 11
+y 31
+end
 arch unholy_ground
 x 11
 y 32
@@ -7036,6 +7121,10 @@ x 11
 y 36
 end
 arch pstone_2
+x 11
+y 36
+end
+arch giantrat
 x 11
 y 36
 end
@@ -7207,6 +7296,10 @@ arch pstone_2
 x 11
 y 50
 end
+arch cobra
+x 11
+y 50
+end
 arch unholy_ground
 x 11
 y 51
@@ -7995,6 +8088,10 @@ arch pstone_2
 x 13
 y 9
 end
+arch serpent
+x 13
+y 9
+end
 arch unholy_ground
 x 13
 y 10
@@ -8284,6 +8381,10 @@ x 13
 y 44
 end
 arch pstone_2
+x 13
+y 44
+end
+arch giantrat
 x 13
 y 44
 end
@@ -8801,6 +8902,10 @@ arch pstone_2
 x 14
 y 35
 end
+arch giantrat
+x 14
+y 35
+end
 arch unholy_ground
 x 14
 y 36
@@ -8886,6 +8991,10 @@ x 14
 y 46
 end
 arch pstone_2
+x 14
+y 46
+end
+arch giantrat
 x 14
 y 46
 end
@@ -9432,6 +9541,10 @@ x 15
 y 39
 end
 arch pstone_2
+x 15
+y 39
+end
+arch giantrat
 x 15
 y 39
 end
@@ -10934,6 +11047,10 @@ x 18
 y 8
 end
 arch pstone_2
+x 18
+y 8
+end
+arch shadowtiger
 x 18
 y 8
 end
@@ -12608,6 +12725,10 @@ x 21
 y 8
 end
 arch pstone_2
+x 21
+y 8
+end
+arch fire_serpent
 x 21
 y 8
 end
@@ -13741,6 +13862,10 @@ arch pstone_2
 x 23
 y 9
 end
+arch shadowtiger
+x 23
+y 9
+end
 arch unholy_ground
 x 23
 y 10
@@ -15495,6 +15620,10 @@ arch pstone_2
 x 26
 y 9
 end
+arch serpent
+x 26
+y 9
+end
 arch unholy_ground
 x 26
 y 10
@@ -16297,6 +16426,10 @@ arch pstone_2
 x 27
 y 33
 end
+arch serpent
+x 27
+y 33
+end
 arch unholy_ground
 x 27
 y 34
@@ -16647,6 +16780,10 @@ arch pstone_2
 x 28
 y 10
 end
+arch shadowtiger
+x 28
+y 10
+end
 arch unholy_ground
 x 28
 y 11
@@ -16816,6 +16953,10 @@ x 28
 y 29
 end
 arch pstone_2
+x 28
+y 29
+end
+arch shadowtiger
 x 28
 y 29
 end
@@ -17457,11 +17598,19 @@ arch pstone_2
 x 29
 y 37
 end
+arch fire_serpent
+x 29
+y 37
+end
 arch unholy_ground
 x 29
 y 38
 end
 arch pstone_2
+x 29
+y 38
+end
+arch shadowtiger
 x 29
 y 38
 end
@@ -17947,6 +18096,10 @@ arch pstone_2
 x 30
 y 26
 end
+arch fire_serpent
+x 30
+y 26
+end
 arch unholy_ground
 x 30
 y 27
@@ -18393,11 +18546,19 @@ arch pstone_2
 x 31
 y 12
 end
+arch serpent
+x 31
+y 12
+end
 arch unholy_ground
 x 31
 y 13
 end
 arch pstone_2
+x 31
+y 13
+end
+arch shadowtiger
 x 31
 y 13
 end
@@ -18454,6 +18615,10 @@ x 31
 y 20
 end
 arch pstone_2
+x 31
+y 20
+end
+arch shadowtiger
 x 31
 y 20
 end
@@ -18991,6 +19156,10 @@ arch pstone_2
 x 32
 y 17
 end
+arch serpent
+x 32
+y 17
+end
 arch unholy_ground
 x 32
 y 18
@@ -19741,6 +19910,10 @@ arch pstone_2
 x 33
 y 36
 end
+arch serpent
+x 33
+y 36
+end
 arch unholy_ground
 x 33
 y 37
@@ -20087,6 +20260,10 @@ arch pstone_2
 x 34
 y 11
 end
+arch fire_serpent
+x 34
+y 11
+end
 arch unholy_ground
 x 34
 y 12
@@ -20124,6 +20301,10 @@ x 34
 y 16
 end
 arch pstone_2
+x 34
+y 16
+end
+arch fire_serpent
 x 34
 y 16
 end
@@ -21231,6 +21412,10 @@ arch pstone_2
 x 36
 y 12
 end
+arch shadowtiger
+x 36
+y 12
+end
 arch unholy_ground
 x 36
 y 13
@@ -21260,6 +21445,10 @@ x 36
 y 16
 end
 arch pstone_2
+x 36
+y 16
+end
+arch shadowtiger
 x 36
 y 16
 end
@@ -21400,6 +21589,10 @@ x 36
 y 32
 end
 arch pstone_2
+x 36
+y 32
+end
+arch fire_serpent
 x 36
 y 32
 end
@@ -21993,6 +22186,10 @@ arch pstone_2
 x 37
 y 34
 end
+arch shadowtiger
+x 37
+y 34
+end
 arch unholy_ground
 x 37
 y 35
@@ -22384,6 +22581,10 @@ x 38
 y 14
 end
 arch pstone_2
+x 38
+y 14
+end
+arch serpent
 x 38
 y 14
 end
@@ -22929,6 +23130,10 @@ arch pstone_2
 x 39
 y 11
 end
+arch fire_serpent
+x 39
+y 11
+end
 arch unholy_ground
 x 39
 y 12
@@ -22974,6 +23179,10 @@ x 39
 y 17
 end
 arch pstone_2
+x 39
+y 17
+end
+arch fire_serpent
 x 39
 y 17
 end
@@ -23503,6 +23712,10 @@ arch pstone_2
 x 40
 y 14
 end
+arch shadowtiger
+x 40
+y 14
+end
 arch unholy_ground
 x 40
 y 15
@@ -23668,6 +23881,10 @@ x 40
 y 32
 end
 arch pstone_2
+x 40
+y 32
+end
+arch serpent
 x 40
 y 32
 end
@@ -24061,6 +24278,10 @@ arch pstone_2
 x 41
 y 10
 end
+arch shadowtiger
+x 41
+y 10
+end
 arch unholy_ground
 x 41
 y 11
@@ -24656,6 +24877,10 @@ x 42
 y 13
 end
 arch pstone_2
+x 42
+y 13
+end
+arch fire_serpent
 x 42
 y 13
 end
@@ -24799,6 +25024,10 @@ arch pstone_2
 x 42
 y 28
 end
+arch fire_serpent
+x 42
+y 28
+end
 arch unholy_ground
 x 42
 y 29
@@ -25214,6 +25443,10 @@ x 43
 y 9
 end
 arch pstone_2
+x 43
+y 9
+end
+arch serpent
 x 43
 y 9
 end
@@ -25346,6 +25579,10 @@ x 43
 y 24
 end
 arch pstone_2
+x 43
+y 24
+end
+arch fire_serpent
 x 43
 y 24
 end
@@ -27052,6 +27289,10 @@ x 46
 y 24
 end
 arch pstone_2
+x 46
+y 24
+end
+arch fire_serpent
 x 46
 y 24
 end
@@ -37665,245 +37906,4 @@ end
 arch mountain
 x 63
 y 63
-end
-arch giantrat
-x 2
-y 37
-end
-arch cobra
-x 3
-y 49
-end
-arch giantrat
-x 4
-y 21
-end
-arch giantrat
-x 4
-y 36
-end
-arch fire_serpent
-x 4
-y 51
-end
-arch shadowtiger
-x 5
-y 2
-end
-arch fire_serpent
-x 5
-y 48
-end
-arch giantrat
-x 6
-y 16
-end
-arch giantrat
-x 6
-y 33
-end
-arch djinn
-hp 12000
-maxhp 12000
-sp 600
-maxsp 600
-dam 45
-x 6
-y 49
-end
-arch giantrat
-x 7
-y 20
-end
-arch giantrat
-x 7
-y 29
-end
-arch cobra
-x 7
-y 52
-end
-arch giantrat
-x 8
-y 25
-end
-arch cobra
-x 8
-y 47
-end
-arch fire_serpent
-x 9
-y 11
-end
-arch giantrat
-x 9
-y 32
-end
-arch fire_serpent
-x 9
-y 49
-end
-arch fire_serpent
-x 9
-y 52
-end
-arch giantrat
-x 11
-y 31
-end
-arch giantrat
-x 11
-y 36
-end
-arch cobra
-x 11
-y 50
-end
-arch serpent
-x 13
-y 9
-end
-arch giantrat
-x 13
-y 44
-end
-arch giantrat
-x 14
-y 35
-end
-arch giantrat
-x 14
-y 46
-end
-arch giantrat
-x 15
-y 39
-end
-arch shadowtiger
-x 18
-y 8
-end
-arch fire_serpent
-x 21
-y 8
-end
-arch shadowtiger
-x 23
-y 9
-end
-arch serpent
-x 26
-y 9
-end
-arch serpent
-x 27
-y 33
-end
-arch shadowtiger
-x 28
-y 10
-end
-arch shadowtiger
-x 28
-y 29
-end
-arch fire_serpent
-x 29
-y 37
-end
-arch shadowtiger
-x 29
-y 38
-end
-arch fire_serpent
-x 30
-y 26
-end
-arch serpent
-x 31
-y 12
-end
-arch shadowtiger
-x 31
-y 13
-end
-arch shadowtiger
-x 31
-y 20
-end
-arch serpent
-x 32
-y 17
-end
-arch serpent
-x 33
-y 36
-end
-arch fire_serpent
-x 34
-y 11
-end
-arch fire_serpent
-x 34
-y 16
-end
-arch shadowtiger
-x 36
-y 12
-end
-arch shadowtiger
-x 36
-y 16
-end
-arch fire_serpent
-x 36
-y 32
-end
-arch shadowtiger
-x 37
-y 34
-end
-arch serpent
-x 38
-y 14
-end
-arch fire_serpent
-x 39
-y 11
-end
-arch fire_serpent
-x 39
-y 17
-end
-arch shadowtiger
-x 40
-y 14
-end
-arch serpent
-x 40
-y 32
-end
-arch shadowtiger
-x 41
-y 10
-end
-arch fire_serpent
-x 42
-y 13
-end
-arch fire_serpent
-x 42
-y 28
-end
-arch serpent
-x 43
-y 9
-end
-arch fire_serpent
-x 43
-y 24
-end
-arch fire_serpent
-x 46
-y 24
 end

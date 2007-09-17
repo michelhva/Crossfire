@@ -2358,6 +2358,10 @@ arch woodfloor
 x 16
 y 17
 end
+arch giant
+x 16
+y 17
+end
 arch woodfloor
 x 16
 y 18
@@ -2497,6 +2501,10 @@ x 17
 y 16
 end
 arch woodfloor
+x 17
+y 17
+end
+arch giant
 x 17
 y 17
 end
@@ -2642,6 +2650,10 @@ arch woodfloor
 x 18
 y 17
 end
+arch giant
+x 18
+y 17
+end
 arch woodfloor
 x 18
 y 18
@@ -2782,6 +2794,10 @@ x 19
 y 16
 end
 arch woodfloor
+x 19
+y 17
+end
+arch giant
 x 19
 y 17
 end
@@ -2971,20 +2987,4 @@ end
 arch bwall_2_2_4
 x 20
 y 20
-end
-arch giant
-x 16
-y 17
-end
-arch giant
-x 17
-y 17
-end
-arch giant
-x 18
-y 17
-end
-arch giant
-x 19
-y 17
 end

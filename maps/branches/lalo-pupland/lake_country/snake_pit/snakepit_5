@@ -449,9 +449,52 @@ arch large_stones
 x 4
 y 3
 end
+arch dragon
+name wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 3000
+sp 300
+maxsp 300
+exp 200000
+dam 30
+x 4
+y 3
+speed 0.800000
+speed_left -1.840000
+level 30
+attacktype 29
+carrying 25000
+move_type fly_low
+immune 8
+arch abil_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch gem
+nrof 500
+end
+end
 arch large_stones
 x 4
 y 4
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 4
+y 4
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 4
@@ -492,6 +535,18 @@ end
 arch large_stones
 x 4
 y 12
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 4
+y 12
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 4
@@ -645,6 +700,18 @@ arch large_stones
 x 6
 y 4
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 6
+y 4
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 6
 y 5
@@ -673,6 +740,20 @@ arch large_stones
 x 6
 y 9
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 6
+y 9
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 6
 y 10
@@ -685,6 +766,20 @@ arch large_stones
 x 6
 y 12
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 6
+y 12
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 6
 y 13
@@ -696,6 +791,20 @@ end
 arch large_stones
 x 6
 y 15
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 6
+y 15
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 6
@@ -730,6 +839,18 @@ end
 arch large_stones
 x 7
 y 2
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 7
+y 2
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 7
@@ -771,6 +892,20 @@ arch large_stones
 x 7
 y 10
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 7
+y 10
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 7
 y 11
@@ -783,6 +918,20 @@ arch large_stones
 x 7
 y 13
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 7
+y 13
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 7
 y 14
@@ -794,6 +943,20 @@ end
 arch large_stones
 x 7
 y 16
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 7
+y 16
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 7
@@ -820,6 +983,18 @@ end
 arch large_stones
 x 8
 y 1
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 8
+y 1
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 8
@@ -837,6 +1012,18 @@ arch large_stones
 x 8
 y 4
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 8
+y 4
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 8
 y 5
@@ -974,6 +1161,37 @@ end
 arch large_stones
 x 9
 y 13
+end
+arch dragon
+name wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 3000
+sp 300
+maxsp 300
+exp 200000
+dam 30
+x 9
+y 13
+speed 0.500000
+speed_left -1.840000
+level 30
+attacktype 29
+carrying 25000
+move_type fly_low
+immune 8
+arch abil_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch gem
+nrof 500
+end
 end
 arch large_stones
 x 9
@@ -1507,6 +1725,20 @@ arch large_stones
 x 15
 y 3
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 15
+y 3
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 15
 y 4
@@ -1596,6 +1828,20 @@ end
 arch large_stones
 x 16
 y 4
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 16
+y 4
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 16
@@ -1751,6 +1997,22 @@ arch large_stones
 x 17
 y 15
 end
+arch cobra
+name A huge sleek black metallic serpent
+hp 1000
+exp 55000
+dam 30
+x 17
+y 15
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 17
 y 16
@@ -1841,6 +2103,22 @@ arch large_stones
 x 18
 y 15
 end
+arch cobra
+name A huge sleek black metallic serpent
+hp 1000
+exp 55000
+dam 30
+x 18
+y 15
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 18
 y 16
@@ -1903,6 +2181,18 @@ arch large_stones
 x 19
 y 9
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 19
+y 9
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 19
 y 10
@@ -1964,6 +2254,15 @@ end
 arch large_stones
 x 20
 y 3
+end
+arch big_dragon
+name A trapped dragon
+hp 5500
+exp 150000
+x 20
+y 3
+speed 0.600000
+speed_left -9.349999
 end
 arch large_stones
 x 20
@@ -2222,6 +2521,18 @@ end
 arch large_stones
 x 23
 y 2
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 23
+y 2
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 23
@@ -2785,6 +3096,20 @@ arch large_stones
 x 28
 y 1
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 28
+y 1
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 28
 y 2
@@ -2796,6 +3121,20 @@ end
 arch large_stones
 x 28
 y 4
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 28
+y 4
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 28
@@ -2812,6 +3151,20 @@ end
 arch large_stones
 x 28
 y 8
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 28
+y 8
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 28
@@ -2887,6 +3240,20 @@ arch large_stones
 x 29
 y 2
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 29
+y 2
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 29
 y 3
@@ -2898,6 +3265,20 @@ end
 arch large_stones
 x 29
 y 5
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 29
+y 5
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 29
@@ -2914,6 +3295,20 @@ end
 arch large_stones
 x 29
 y 9
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 29
+y 9
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 29
@@ -2959,6 +3354,24 @@ arch large_stones
 x 29
 y 17
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 29
+y 17
+speed 1.000000
+speed_left -28.420000
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+arch spell_paralyze
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 29
 y 18
@@ -3053,6 +3466,24 @@ arch large_stones
 x 30
 y 17
 end
+arch cobra
+name A lightning speed metallic serpent
+hp 1000
+exp 65000
+dam 30
+x 30
+y 17
+speed 1.000000
+speed_left -28.420000
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+arch spell_paralyze
+end
+arch spell_mass_confusion
+end
+end
 arch large_stones
 x 30
 y 18
@@ -3165,6 +3596,18 @@ arch large_stones
 x 32
 y 1
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 32
+y 1
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 32
 y 2
@@ -3201,6 +3644,18 @@ arch large_stones
 x 32
 y 9
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 32
+y 9
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 32
 y 10
@@ -3220,6 +3675,20 @@ end
 arch large_stones
 x 32
 y 14
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 32
+y 14
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 32
@@ -3267,6 +3736,18 @@ arch large_stones
 x 33
 y 4
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 33
+y 4
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 33
 y 5
@@ -3311,6 +3792,20 @@ arch large_stones
 x 33
 y 15
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 33
+y 15
+speed 0.700000
+speed_left -21.819998
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 33
 y 16
@@ -3344,6 +3839,18 @@ end
 arch large_stones
 x 34
 y 2
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 34
+y 2
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 34
@@ -3451,6 +3958,18 @@ arch large_stones
 x 35
 y 4
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 35
+y 4
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 35
 y 5
@@ -3466,6 +3985,18 @@ end
 arch large_stones
 x 35
 y 8
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 35
+y 8
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 35
@@ -3544,6 +4075,18 @@ end
 arch large_stones
 x 36
 y 6
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 36
+y 6
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 36
@@ -3644,6 +4187,18 @@ arch large_stones
 x 37
 y 8
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 37
+y 8
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 37
 y 9
@@ -3651,6 +4206,18 @@ end
 arch large_stones
 x 37
 y 10
+end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 37
+y 10
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 37
@@ -3764,6 +4331,18 @@ arch large_stones
 x 38
 y 10
 end
+arch cobra
+name black metallic serpent
+hp 500
+exp 10000
+dam 30
+x 38
+y 10
+attacktype 82945
+immune 12
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 38
 y 11
@@ -3938,583 +4517,4 @@ end
 arch blocked
 x 39
 y 19
-end
-arch dragon
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 4
-y 3
-speed 0.800000
-speed_left -1.840000
-level 30
-attacktype 29
-carrying 25000
-move_type fly_low
-immune 8
-arch abil_icestorm
-end
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch gem
-nrof 500
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 4
-y 4
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 4
-y 12
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 6
-y 4
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 9
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 12
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 15
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 7
-y 2
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 10
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 13
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 7
-y 16
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 8
-y 1
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 8
-y 4
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch dragon
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 9
-y 13
-speed 0.500000
-speed_left -1.840000
-level 30
-attacktype 29
-carrying 25000
-move_type fly_low
-immune 8
-arch abil_icestorm
-end
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch gem
-nrof 500
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 15
-y 3
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 16
-y 4
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name A huge sleek black metallic serpent
-hp 1000
-exp 55000
-dam 30
-x 17
-y 15
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-end
-arch cobra
-name A huge sleek black metallic serpent
-hp 1000
-exp 55000
-dam 30
-x 18
-y 15
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-arch spell_mass_confusion
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 19
-y 9
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch big_dragon
-name A trapped dragon
-hp 5500
-exp 150000
-x 20
-y 3
-speed 0.600000
-speed_left -9.349999
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 23
-y 2
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 1
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 4
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 8
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 2
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 5
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 9
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 29
-y 17
-speed 1.000000
-speed_left -28.420000
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch spell_mass_confusion
-end
-end
-arch cobra
-name A lightning speed metallic serpent
-hp 1000
-exp 65000
-dam 30
-x 30
-y 17
-speed 1.000000
-speed_left -28.420000
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch spell_mass_confusion
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 32
-y 1
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 32
-y 9
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 32
-y 14
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 33
-y 4
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 33
-y 15
-speed 0.700000
-speed_left -21.819998
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 34
-y 2
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 35
-y 4
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 35
-y 8
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 36
-y 6
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 37
-y 8
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 37
-y 10
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
-end
-arch cobra
-name black metallic serpent
-hp 500
-exp 10000
-dam 30
-x 38
-y 10
-attacktype 82945
-immune 12
-arch abil_poison_cloud
-end
 end

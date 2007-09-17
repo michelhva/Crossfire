@@ -1,13 +1,14 @@
 arch map
-region lonetown
 name townA_gshop_ud
+difficulty 10
+region lonetown
+width 17
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 31 19:12:31 1996
 endmsg
-x 17
-level 10
 end
 arch blocked
 end
@@ -1517,10 +1518,10 @@ maxhp 100
 ac 30
 x 14
 y 11
-immune 254
 alive 1
 no_pass 0
 tear_down 1
+immune 254
 end
 arch dungeon_floor
 x 14

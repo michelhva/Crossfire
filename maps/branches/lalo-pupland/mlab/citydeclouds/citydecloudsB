@@ -10091,6 +10091,12 @@ x 20
 y 4
 no_pass 1
 end
+arch big_elec
+hp -30536
+x 20
+y 4
+unaggressive 1
+end
 arch blocked
 name nothing
 name_pl nothing
@@ -13779,6 +13785,12 @@ arch slevel_2_2_2
 x 29
 y 4
 no_pass 1
+end
+arch big_elec
+hp -30536
+x 29
+y 4
+unaggressive 1
 end
 arch blocked
 name nothing
@@ -24190,16 +24202,4 @@ name_pl cloud
 face fog.111
 x 49
 y 49
-end
-arch big_elec
-hp -30536
-x 20
-y 4
-unaggressive 1
-end
-arch big_elec
-hp -30536
-x 29
-y 4
-unaggressive 1
 end

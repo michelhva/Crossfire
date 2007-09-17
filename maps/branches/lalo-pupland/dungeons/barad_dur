@@ -3979,6 +3979,13 @@ arch woodfloor
 x 9
 y 26
 end
+arch giant
+x 9
+y 26
+carrying 9000
+arch club
+end
+end
 arch woodfloor
 x 9
 y 27
@@ -4967,6 +4974,13 @@ arch woodfloor
 x 11
 y 54
 end
+arch troll
+x 11
+y 54
+carrying 9000
+arch club
+end
+end
 arch woodfloor
 x 11
 y 55
@@ -5180,6 +5194,10 @@ x 12
 y 24
 end
 arch woodfloor
+x 12
+y 25
+end
+arch dragon
 x 12
 y 25
 end
@@ -6356,6 +6374,10 @@ arch woodfloor
 x 15
 y 26
 end
+arch dragon
+x 15
+y 26
+end
 arch woodfloor
 x 15
 y 27
@@ -6761,6 +6783,10 @@ x 16
 y 27
 end
 arch woodfloor
+x 16
+y 28
+end
+arch dragon
 x 16
 y 28
 end
@@ -7632,6 +7658,10 @@ arch woodfloor
 x 18
 y 46
 end
+arch dragon
+x 18
+y 46
+end
 arch woodfloor
 x 18
 y 47
@@ -7648,11 +7678,19 @@ arch woodfloor
 x 18
 y 50
 end
+arch dragon
+x 18
+y 50
+end
 arch woodfloor
 x 18
 y 51
 end
 arch woodfloor
+x 18
+y 52
+end
+arch dragon
 x 18
 y 52
 end
@@ -8045,6 +8083,10 @@ x 19
 y 47
 end
 arch woodfloor
+x 19
+y 48
+end
+arch dragon
 x 19
 y 48
 end
@@ -9350,46 +9392,4 @@ end
 arch bwall_2_2_4
 x 22
 y 59
-end
-arch giant
-x 9
-y 26
-carrying 9000
-arch club
-end
-end
-arch troll
-x 11
-y 54
-carrying 9000
-arch club
-end
-end
-arch dragon
-x 12
-y 25
-end
-arch dragon
-x 15
-y 26
-end
-arch dragon
-x 16
-y 28
-end
-arch dragon
-x 18
-y 46
-end
-arch dragon
-x 18
-y 50
-end
-arch dragon
-x 18
-y 52
-end
-arch dragon
-x 19
-y 48
 end

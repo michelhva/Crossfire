@@ -1,12 +1,14 @@
 arch map
-region lonetown
 name dress1
+difficulty 10
+region lonetown
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Jan 27 01:48:44 1996
 endmsg
-level 10
 end
 arch woodfloor
 end

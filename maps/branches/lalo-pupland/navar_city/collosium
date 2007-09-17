@@ -1466,6 +1466,14 @@ arch dirtfloor
 x 9
 y 9
 end
+arch titan
+name Titus
+x 9
+y 9
+carrying 3000
+arch bracers_ac
+end
+end
 arch dirtfloor
 x 9
 y 10
@@ -2624,6 +2632,14 @@ end
 arch dirtfloor
 x 18
 y 8
+end
+arch titan
+name Markus
+x 18
+y 8
+carrying 23000
+arch trident
+end
 end
 arch dirtfloor
 x 18
@@ -5264,20 +5280,4 @@ end
 arch grassmedium
 x 35
 y 25
-end
-arch titan
-name Titus
-x 9
-y 9
-carrying 3000
-arch bracers_ac
-end
-end
-arch titan
-name Markus
-x 18
-y 8
-carrying 23000
-arch trident
-end
 end

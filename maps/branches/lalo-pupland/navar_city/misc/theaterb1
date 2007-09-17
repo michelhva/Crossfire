@@ -58,6 +58,10 @@ end
 arch blocked
 y 14
 end
+arch minor_djinn
+y 15
+resist_fire 100
+end
 arch blocked
 y 17
 end
@@ -682,6 +686,11 @@ arch permanent_lava
 x 4
 y 4
 end
+arch minor_djinn
+x 4
+y 4
+resist_fire 100
+end
 arch permanent_lava
 x 4
 y 5
@@ -721,6 +730,11 @@ end
 arch permanent_lava
 x 4
 y 13
+end
+arch minor_djinn
+x 4
+y 13
+resist_fire 100
 end
 arch permanent_lava
 x 4
@@ -865,6 +879,11 @@ arch permanent_lava
 x 5
 y 9
 end
+arch minor_djinn
+x 5
+y 9
+resist_fire 100
+end
 arch permanent_lava
 x 5
 y 10
@@ -909,6 +928,11 @@ arch permanent_lava
 x 5
 y 19
 end
+arch minor_djinn
+x 5
+y 19
+resist_fire 100
+end
 arch permanent_lava
 x 5
 y 20
@@ -928,6 +952,11 @@ end
 arch permanent_lava
 x 5
 y 23
+end
+arch minor_djinn
+x 5
+y 23
+resist_fire 100
 end
 arch permanent_lava
 x 5
@@ -1667,6 +1696,11 @@ arch permanent_lava
 x 9
 y 19
 end
+arch minor_djinn
+x 9
+y 19
+resist_fire 100
+end
 arch permanent_lava
 x 9
 y 20
@@ -1698,6 +1732,11 @@ end
 arch permanent_lava
 x 9
 y 25
+end
+arch minor_djinn
+x 9
+y 25
+resist_fire 100
 end
 arch permanent_lava
 x 9
@@ -1784,6 +1823,11 @@ arch dungeon_magic
 x 10
 y 6
 end
+arch minor_djinn
+x 10
+y 6
+resist_fire 100
+end
 arch permanent_lava
 x 10
 y 7
@@ -1835,6 +1879,11 @@ end
 arch permanent_lava
 x 10
 y 15
+end
+arch minor_djinn
+x 10
+y 15
+resist_fire 100
 end
 arch permanent_lava
 x 10
@@ -2002,6 +2051,11 @@ arch permanent_lava
 x 11
 y 10
 end
+arch minor_djinn
+x 11
+y 10
+resist_fire 100
+end
 arch permanent_lava
 x 11
 y 11
@@ -2077,6 +2131,11 @@ end
 arch dungeon_magic
 x 11
 y 22
+end
+arch minor_djinn
+x 11
+y 22
+resist_fire 100
 end
 arch permanent_lava
 x 11
@@ -2580,6 +2639,11 @@ arch permanent_lava
 x 14
 y 9
 end
+arch minor_djinn
+x 14
+y 9
+resist_fire 100
+end
 arch permanent_lava
 x 14
 y 10
@@ -2730,6 +2794,11 @@ arch permanent_lava
 x 15
 y 4
 end
+arch minor_djinn
+x 15
+y 4
+resist_fire 100
+end
 arch permanent_lava
 x 15
 y 5
@@ -2817,6 +2886,11 @@ end
 arch permanent_lava
 x 15
 y 20
+end
+arch minor_djinn
+x 15
+y 20
+resist_fire 100
 end
 arch permanent_lava
 x 15
@@ -2952,6 +3026,11 @@ arch permanent_lava
 x 16
 y 12
 end
+arch minor_djinn
+x 16
+y 12
+resist_fire 100
+end
 arch permanent_lava
 x 16
 y 13
@@ -2979,6 +3058,11 @@ end
 arch permanent_lava
 x 16
 y 17
+end
+arch minor_djinn
+x 16
+y 17
+resist_fire 100
 end
 arch permanent_lava
 x 16
@@ -3019,6 +3103,11 @@ end
 arch dungeon_magic
 x 16
 y 24
+end
+arch minor_djinn
+x 16
+y 24
+resist_fire 100
 end
 arch permanent_lava
 x 16
@@ -3696,6 +3785,11 @@ arch permanent_lava
 x 20
 y 7
 end
+arch minor_djinn
+x 20
+y 7
+resist_fire 100
+end
 arch permanent_lava
 x 20
 y 8
@@ -3732,6 +3826,11 @@ arch permanent_lava
 x 20
 y 14
 end
+arch minor_djinn
+x 20
+y 14
+resist_fire 100
+end
 arch permanent_lava
 x 20
 y 15
@@ -3767,6 +3866,11 @@ end
 arch dungeon_magic
 x 20
 y 20
+end
+arch minor_djinn
+x 20
+y 20
+resist_fire 100
 end
 arch permanent_lava
 x 20
@@ -3878,6 +3982,11 @@ arch permanent_lava
 x 21
 y 10
 end
+arch minor_djinn
+x 21
+y 10
+resist_fire 100
+end
 arch permanent_lava
 x 21
 y 11
@@ -4439,6 +4548,11 @@ end
 arch permanent_lava
 x 24
 y 5
+end
+arch minor_djinn
+x 24
+y 5
+resist_fire 100
 end
 arch permanent_lava
 x 24
@@ -4655,6 +4769,11 @@ arch permanent_lava
 x 25
 y 11
 end
+arch minor_djinn
+x 25
+y 11
+resist_fire 100
+end
 arch permanent_lava
 x 25
 y 12
@@ -4715,6 +4834,11 @@ arch permanent_lava
 x 25
 y 21
 end
+arch minor_djinn
+x 25
+y 21
+resist_fire 100
+end
 arch permanent_lava
 x 25
 y 22
@@ -4730,6 +4854,11 @@ end
 arch permanent_lava
 x 25
 y 25
+end
+arch minor_djinn
+x 25
+y 25
+resist_fire 100
 end
 arch permanent_lava
 x 25
@@ -4976,6 +5105,11 @@ end
 arch permanent_lava
 x 27
 y 4
+end
+arch minor_djinn
+x 27
+y 4
+resist_fire 100
 end
 arch permanent_lava
 x 27
@@ -5479,6 +5613,11 @@ arch permanent_lava
 x 29
 y 28
 end
+arch minor_djinn
+x 29
+y 28
+resist_fire 100
+end
 arch permanent_lava
 x 29
 y 29
@@ -5788,143 +5927,4 @@ end
 arch blocked
 x 31
 y 31
-end
-arch minor_djinn
-y 15
-resist_fire 100
-end
-arch minor_djinn
-x 4
-y 4
-resist_fire 100
-end
-arch minor_djinn
-x 4
-y 13
-resist_fire 100
-end
-arch minor_djinn
-x 5
-y 9
-resist_fire 100
-end
-arch minor_djinn
-x 5
-y 19
-resist_fire 100
-end
-arch minor_djinn
-x 5
-y 23
-resist_fire 100
-end
-arch minor_djinn
-x 9
-y 19
-resist_fire 100
-end
-arch minor_djinn
-x 9
-y 25
-resist_fire 100
-end
-arch minor_djinn
-x 10
-y 6
-resist_fire 100
-end
-arch minor_djinn
-x 10
-y 15
-resist_fire 100
-end
-arch minor_djinn
-x 11
-y 10
-resist_fire 100
-end
-arch minor_djinn
-x 11
-y 22
-resist_fire 100
-end
-arch minor_djinn
-x 14
-y 9
-resist_fire 100
-end
-arch minor_djinn
-x 15
-y 4
-resist_fire 100
-end
-arch minor_djinn
-x 15
-y 20
-resist_fire 100
-end
-arch minor_djinn
-x 16
-y 12
-resist_fire 100
-end
-arch minor_djinn
-x 16
-y 17
-resist_fire 100
-end
-arch minor_djinn
-x 16
-y 24
-resist_fire 100
-end
-arch minor_djinn
-x 20
-y 7
-resist_fire 100
-end
-arch minor_djinn
-x 20
-y 14
-resist_fire 100
-end
-arch minor_djinn
-x 20
-y 20
-resist_fire 100
-end
-arch minor_djinn
-x 21
-y 10
-resist_fire 100
-end
-arch minor_djinn
-x 24
-y 5
-resist_fire 100
-end
-arch minor_djinn
-x 25
-y 11
-resist_fire 100
-end
-arch minor_djinn
-x 25
-y 21
-resist_fire 100
-end
-arch minor_djinn
-x 25
-y 25
-resist_fire 100
-end
-arch minor_djinn
-x 27
-y 4
-resist_fire 100
-end
-arch minor_djinn
-x 29
-y 28
-resist_fire 100
 end

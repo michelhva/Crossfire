@@ -767,6 +767,13 @@ arch jungle_2
 x 5
 y 18
 end
+arch unicorn
+hp 500
+x 5
+y 18
+speed 0.500000
+speed_left -23.389999
+end
 arch jungle_2
 x 5
 y 19
@@ -3016,11 +3023,4 @@ end
 arch blocked
 x 20
 y 23
-end
-arch unicorn
-hp 500
-x 5
-y 18
-speed 0.500000
-speed_left -23.389999
 end

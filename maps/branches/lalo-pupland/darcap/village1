@@ -6137,11 +6137,19 @@ arch small_stones
 x 24
 y 19
 end
+arch giant
+x 24
+y 19
+end
 arch small_stones
 x 24
 y 20
 end
 arch small_stones
+x 24
+y 21
+end
+arch giant
 x 24
 y 21
 end
@@ -6896,6 +6904,10 @@ x 27
 y 20
 end
 arch small_stones
+x 27
+y 21
+end
+arch giant
 x 27
 y 21
 end
@@ -7732,6 +7744,16 @@ end
 arch small_stones
 x 30
 y 20
+end
+arch giant
+name Giant Leader
+hp 500
+x 30
+y 20
+carrying 5000
+arch true_lead
+name Chaos Chunk No.1
+end
 end
 arch small_stones
 x 30
@@ -9071,6 +9093,10 @@ arch small_stones
 x 35
 y 20
 end
+arch giant
+x 35
+y 20
+end
 arch small_stones
 x 35
 y 21
@@ -9250,6 +9276,10 @@ x 36
 y 13
 end
 arch small_stones
+x 36
+y 14
+end
+arch giant
 x 36
 y 14
 end
@@ -10511,6 +10541,10 @@ arch small_stones
 x 41
 y 13
 end
+arch giant
+x 41
+y 13
+end
 arch small_stones
 x 41
 y 14
@@ -10624,6 +10658,10 @@ x 41
 y 34
 end
 arch farmland
+x 41
+y 35
+end
+arch slug
 x 41
 y 35
 end
@@ -11213,6 +11251,10 @@ arch small_stones
 x 44
 y 11
 end
+arch giant
+x 44
+y 11
+end
 arch small_stones
 x 44
 y 12
@@ -11611,6 +11653,10 @@ arch small_stones
 x 45
 y 35
 end
+arch giant
+x 45
+y 35
+end
 arch small_stones
 x 45
 y 36
@@ -11620,6 +11666,10 @@ x 45
 y 37
 end
 arch small_stones
+x 45
+y 38
+end
+arch giant
 x 45
 y 38
 end
@@ -11636,6 +11686,10 @@ x 45
 y 41
 end
 arch small_stones
+x 45
+y 42
+end
+arch giant
 x 45
 y 42
 end
@@ -12349,58 +12403,4 @@ end
 arch bwall_0
 x 47
 y 46
-end
-arch giant
-x 24
-y 19
-end
-arch giant
-x 24
-y 21
-end
-arch giant
-x 27
-y 21
-end
-arch giant
-name Giant Leader
-hp 500
-x 30
-y 20
-carrying 5000
-arch true_lead
-name Chaos Chunk No.1
-end
-end
-arch giant
-x 35
-y 20
-end
-arch giant
-x 36
-y 14
-end
-arch giant
-x 41
-y 13
-end
-arch slug
-x 41
-y 35
-end
-arch giant
-x 44
-y 11
-end
-arch giant
-x 45
-y 35
-end
-arch giant
-x 45
-y 38
-end
-arch giant
-x 45
-y 42
 end

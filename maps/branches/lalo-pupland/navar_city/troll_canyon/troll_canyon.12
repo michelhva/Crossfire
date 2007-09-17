@@ -402,6 +402,21 @@ arch pstone_2
 x 4
 y 15
 end
+arch troll
+name Fierce Troll
+hp 2000
+maxhp 2000
+exp 16000
+dam 30
+wc -6
+x 4
+y 15
+level 24
+attacktype 1025
+resist_acid 50
+resist_poison 75
+resist_fear 95
+end
 arch pstone_2
 x 4
 y 16
@@ -633,6 +648,21 @@ arch pstone_1
 x 7
 y 15
 end
+arch troll
+name Fierce Troll
+hp 2000
+maxhp 2000
+exp 16000
+dam 30
+wc -6
+x 7
+y 15
+level 24
+attacktype 1025
+resist_acid 50
+resist_poison 75
+resist_fear 95
+end
 arch pstone_1
 x 7
 y 16
@@ -853,6 +883,21 @@ arch pstone_2
 x 10
 y 15
 end
+arch troll
+name Fierce Troll
+hp 2000
+maxhp 2000
+exp 16000
+dam 30
+wc -6
+x 10
+y 15
+level 24
+attacktype 1025
+resist_acid 50
+resist_poison 75
+resist_fear 95
+end
 arch pstone_2
 x 10
 y 16
@@ -1004,6 +1049,21 @@ end
 arch pstone_2
 x 13
 y 13
+end
+arch troll
+name Fierce Troll
+hp 2000
+maxhp 2000
+exp 16000
+dam 30
+wc -6
+x 13
+y 13
+level 24
+attacktype 1025
+resist_acid 50
+resist_poison 75
+resist_fear 95
 end
 arch pstone_2
 x 13
@@ -1280,64 +1340,4 @@ end
 arch cave23
 x 19
 y 11
-end
-arch troll
-name Fierce Troll
-hp 2000
-maxhp 2000
-exp 16000
-dam 30
-wc -6
-x 4
-y 15
-level 24
-attacktype 1025
-resist_acid 50
-resist_poison 75
-resist_fear 95
-end
-arch troll
-name Fierce Troll
-hp 2000
-maxhp 2000
-exp 16000
-dam 30
-wc -6
-x 7
-y 15
-level 24
-attacktype 1025
-resist_acid 50
-resist_poison 75
-resist_fear 95
-end
-arch troll
-name Fierce Troll
-hp 2000
-maxhp 2000
-exp 16000
-dam 30
-wc -6
-x 10
-y 15
-level 24
-attacktype 1025
-resist_acid 50
-resist_poison 75
-resist_fear 95
-end
-arch troll
-name Fierce Troll
-hp 2000
-maxhp 2000
-exp 16000
-dam 30
-wc -6
-x 13
-y 13
-level 24
-attacktype 1025
-resist_acid 50
-resist_poison 75
-resist_fear 95
 end

@@ -302,6 +302,40 @@ arch dungeon_floor
 x 1
 y 10
 end
+arch dragon
+name big wyvern of choas
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 30
+x 1
+y 10
+speed 0.800000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 100000
+move_type fly_low
+arch ability_dragon
+end
+arch ability_mass_confusion
+end
+arch ability_lightning
+end
+arch gem
+nrof 2000
+end
+arch ability_cold
+end
+end
 arch dungeon_floor
 x 1
 y 11
@@ -369,6 +403,40 @@ end
 arch dungeon_floor
 x 1
 y 24
+end
+arch dragon
+name big wyvern of choas
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 30
+x 1
+y 24
+speed 0.800000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 100000
+move_type fly_low
+arch ability_dragon
+end
+arch ability_mass_confusion
+end
+arch ability_lightning
+end
+arch gem
+nrof 2000
+end
+arch ability_cold
+end
 end
 arch dungeon_floor
 x 1
@@ -491,6 +559,10 @@ arch dungeon_floor
 x 2
 y 15
 end
+arch titan
+x 2
+y 15
+end
 arch dungeon_floor
 x 2
 y 16
@@ -508,6 +580,10 @@ x 2
 y 18
 end
 arch dungeon_floor
+x 2
+y 19
+end
+arch titan
 x 2
 y 19
 end
@@ -1473,6 +1549,10 @@ arch dungeon_floor
 x 7
 y 29
 end
+arch titan
+x 7
+y 29
+end
 arch dungeon_floor
 x 7
 y 30
@@ -1518,6 +1598,18 @@ end
 arch pstone_2
 x 8
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 8
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 8
@@ -2161,6 +2253,21 @@ arch dungeon_floor
 x 11
 y 27
 end
+arch jessyb
+name Grunter
+hp 16000
+dam 60
+x 11
+y 27
+speed 1.000000
+level 80
+carrying 100
+arch key2
+name Heart of Joey
+slaying Heart_Joey
+face pyro_gen.111
+end
+end
 arch dungeon_floor
 x 11
 y 28
@@ -2214,6 +2321,18 @@ end
 arch pstone_2
 x 12
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 12
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 12
@@ -3028,6 +3147,18 @@ arch pstone_2
 x 16
 y 5
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 16
+y 5
+speed -0.500000
+level 25
+end
 arch dungeon_floor
 x 16
 y 6
@@ -3365,6 +3496,10 @@ arch dungeon_floor
 x 17
 y 28
 end
+arch big_wiz
+x 17
+y 28
+end
 arch dungeon_floor
 x 17
 y 29
@@ -3586,6 +3721,18 @@ end
 arch pstone_2
 x 19
 y 5
+end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 19
+y 5
+speed -0.500000
+level 25
 end
 arch dungeon_floor
 x 19
@@ -4271,6 +4418,18 @@ arch pstone_2
 x 23
 y 5
 end
+arch big_elec
+name Ancient Blue Dragon
+hp 7000
+maxhp 7000
+exp 140000
+dam 40
+ac -15
+x 23
+y 5
+speed -0.500000
+level 25
+end
 arch dungeon_floor
 x 23
 y 6
@@ -4384,6 +4543,10 @@ x 23
 y 27
 end
 arch dungeon_floor
+x 23
+y 28
+end
+arch big_wiz
 x 23
 y 28
 end
@@ -5149,6 +5312,10 @@ arch dungeon_floor
 x 27
 y 24
 end
+arch g_worm
+x 27
+y 24
+end
 arch dungeon_floor
 x 27
 y 25
@@ -5372,6 +5539,10 @@ x 28
 y 21
 end
 arch dungeon_floor
+x 28
+y 22
+end
+arch g_worm
 x 28
 y 22
 end
@@ -6211,175 +6382,4 @@ end
 arch mine12
 x 31
 y 31
-end
-arch dragon
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 1
-y 10
-speed 0.800000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 100000
-move_type fly_low
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
-arch gem
-nrof 2000
-end
-arch ability_cold
-end
-end
-arch dragon
-name big wyvern of choas
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 30
-x 1
-y 24
-speed 0.800000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 100000
-move_type fly_low
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
-arch gem
-nrof 2000
-end
-arch ability_cold
-end
-end
-arch titan
-x 2
-y 15
-end
-arch titan
-x 2
-y 19
-end
-arch titan
-x 7
-y 29
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 8
-y 5
-speed -0.500000
-level 25
-end
-arch jessyb
-name Grunter
-hp 16000
-dam 60
-x 11
-y 27
-speed 1.000000
-level 80
-carrying 100
-arch key2
-name Heart of Joey
-slaying Heart_Joey
-face pyro_gen.111
-end
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 12
-y 5
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 16
-y 5
-speed -0.500000
-level 25
-end
-arch big_wiz
-x 17
-y 28
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 19
-y 5
-speed -0.500000
-level 25
-end
-arch big_elec
-name Ancient Blue Dragon
-hp 7000
-maxhp 7000
-exp 140000
-dam 40
-ac -15
-x 23
-y 5
-speed -0.500000
-level 25
-end
-arch big_wiz
-x 23
-y 28
-end
-arch g_worm
-x 27
-y 24
-end
-arch g_worm
-x 28
-y 22
 end
