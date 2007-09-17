@@ -120,10 +120,8 @@ public class GUILabelStats extends GUILabel
      * @param color The color to use.
      *
      * @param stat The stat to display.
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final int stat) throws IOException
+    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final int stat)
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
         this.stat = stat;
