@@ -25,8 +25,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashSet;
-import java.util.Set;
 import javax.swing.ImageIcon;
 
 /**
@@ -43,11 +41,6 @@ public class Faces
      */
     public static final int SQUARE_SIZE = 64;
 
-    /**
-     * The maximum number of concurrently sent "askface" commands.
-     */
-    public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
-
     private static final FileCache fileCache = new FileCache(new File("cache"));
 
     /**
@@ -56,49 +49,29 @@ public class Faces
     private static final FaceCache faceCache = new FaceCache();
 
     /**
-     * The image icon to display for unknown or invalid faces. It is never
-     * <code>null</code>.
+     * The empty face.
      */
-    private static final ImageIcon originalUnknownImageIcon;
+    private static final ImageIcon originalEmptyImageIcon;
 
     /**
-     * The scaled version of {@link #unknownImageIcon}. It is never
-     * <code>null</code>.
+     * The scaled version of an empty face.
      */
-    private static final ImageIcon unknownImageIcon;
+    private static final ImageIcon emptyImageIcon;
 
     static
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        faceCache.addFace(new Face(0, "empty", new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE)), new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE))));
-        originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
-        if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
-        {
-            System.err.println("cannot find unknown.png");
-            System.exit(0);
-            throw new AssertionError();
-        }
-        unknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
+        emptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
+        originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
+        faceCache.addFace(new Face(0, "empty", emptyImageIcon, originalEmptyImageIcon));
     }
 
     /**
-     * Face numbers for which "askface" commands have been sent without having
-     * received a response from the server.
+     * The askface manager to use.
      */
-    private static final Set<Integer> pendingAskfaces = new HashSet<Integer>();
-
-    /**
-     * Face numbers for which an "askface" command should be sent. It includes
-     * all elements of {@link #pendingAskfaces}.
-     */
-    private static final Set<Integer> pendingFaces = new HashSet<Integer>();
-
-    /**
-     * The callback functions to use.
-     */
-    private static FacesCallback facesCallback;
+    private static AskfaceManager askfaceManager;
 
     /**
      * Set the callback functions to use.
@@ -107,7 +80,17 @@ public class Faces
      */
     public static void setFacesCallback(final FacesCallback facesCallback)
     {
-        Faces.facesCallback = facesCallback;
+        askfaceManager = new AskfaceManager(facesCallback);
+
+        final ImageIcon originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
+        if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
+        {
+            System.err.println("cannot find unknown.png");
+            System.exit(0);
+            throw new AssertionError();
+        }
+        final ImageIcon unknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
+        Face.init(unknownImageIcon, originalUnknownImageIcon, askfaceManager, fileCache);
     }
 
     public static Face getFace(final int index)
@@ -122,7 +105,7 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        final Face newFace = new Face(index, "face#"+index, unknownImageIcon, originalUnknownImageIcon);
+        final Face newFace = new Face(index, "face#"+index, null, null);
         faceCache.addFace(newFace);
         return newFace;
     }
@@ -130,14 +113,7 @@ public class Faces
     // TODO: implement faceset
     public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen) throws IOException
     {
-        if (!pendingAskfaces.remove(pixnum))
-        {
-            System.err.println("received unexpected image for "+pixnum);
-        }
-        else if (!pendingFaces.remove(pixnum))
-        {
-            assert false;
-        }
+        askfaceManager.faceReceived(pixnum);
 
         final byte[] data = new byte[pixlen];
         System.arraycopy(packet, start, data, 0, pixlen);
@@ -148,8 +124,8 @@ public class Faces
             {
                 System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
                 final Face f = faceCache.getFace(pixnum);
-                f.setImageIcon(unknownImageIcon);
-                f.setOriginalImageIcon(originalUnknownImageIcon);
+                f.setImageIcon(null);
+                f.setOriginalImageIcon(null);
             }
             else
             {
@@ -164,7 +140,6 @@ public class Faces
         {
             System.out.println("Unable to get face:"+pixnum);
         }
-        sendAskface();
         return pixnum;
     }
 
@@ -198,55 +173,16 @@ public class Faces
     {
         final ImageIcon imageIcon = fileCache.load(pixname+".x2.png");
         final ImageIcon originalImageIcon = fileCache.load(pixname+".x1.png");
-        if (imageIcon == null || originalImageIcon == null)
-        {
-            askface(pixnum);
-            faceCache.addFace(new Face(pixnum, pixname, unknownImageIcon, originalUnknownImageIcon));
-        }
-        else
-        {
-            faceCache.addFace(new Face(pixnum, pixname, imageIcon, originalImageIcon));
-        }
+        faceCache.addFace(new Face(pixnum, pixname, imageIcon, originalImageIcon));
     }
 
     /**
      * Ask the server to send image info.
      *
      * @param face the face to query
-     *
-     * @throws IOException if the command cannot be sent
      */
-    public static void askface(final int face) throws IOException
+    public static void askface(final int face)
     {
-        assert face > 0;
-
-        if (!pendingFaces.add(face))
-        {
-            return;
-        }
-
-        sendAskface();
-    }
-
-    /**
-     * Send some pending "askface" commands.
-     *
-     * @throws IOException if the command cannot be sent
-     */
-    private static void sendAskface() throws IOException
-    {
-        for (final int face : pendingFaces)
-        {
-            if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS)
-            {
-                break;
-            }
-
-            if (!pendingAskfaces.contains(face))
-            {
-                facesCallback.sendAskface(face);
-                pendingAskfaces.add(face);
-            }
-        }
+        askfaceManager.queryFace(face);
     }
 }
