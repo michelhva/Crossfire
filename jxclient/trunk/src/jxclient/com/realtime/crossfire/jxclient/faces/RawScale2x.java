@@ -105,15 +105,15 @@ public class RawScale2x
      */
     private void process(int x, int y)
     {
-        int A = getSourcePixel(x-1, y-1);
+//        int A = getSourcePixel(x-1, y-1);
         int B = getSourcePixel(x, y-1);
-        int C = getSourcePixel(x+1, y-1);
+//        int C = getSourcePixel(x+1, y-1);
         int D = getSourcePixel(x-1, y);
         int E = getSourcePixel(x, y);
         int F = getSourcePixel(x+1, y);
-        int G = getSourcePixel(x-1, y+1);
+//        int G = getSourcePixel(x-1, y+1);
         int H = getSourcePixel(x, y+1);
-        int I = getSourcePixel(x+1, y+1);
+//        int I = getSourcePixel(x+1, y+1);
         int E0 = E;
         int E1 = E;
         int E2 = E;

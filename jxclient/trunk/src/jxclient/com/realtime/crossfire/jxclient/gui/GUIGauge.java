@@ -138,8 +138,8 @@ public class GUIGauge extends GUIElement
             return;
         }
 
-        int fw = 0;
-        int fh = 0;
+        int fw;
+        int fh;
         int fx = 0;
         int fy = 0;
 

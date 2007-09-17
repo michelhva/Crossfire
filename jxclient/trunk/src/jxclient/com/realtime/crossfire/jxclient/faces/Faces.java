@@ -102,9 +102,6 @@ public class Faces
         }
 
         System.err.println("Warning: creating face object for unknown face "+index);
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         final Face newFace = new Face(index, "face#"+index, null, null);
         faceCache.addFace(newFace);
         return newFace;
