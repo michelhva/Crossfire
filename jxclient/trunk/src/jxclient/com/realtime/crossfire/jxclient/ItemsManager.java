@@ -104,7 +104,7 @@ public class ItemsManager
         final List<CfItem> result = items.get(location);
         if (result == null)
         {
-            return Collections.<CfItem>emptyList();
+            return Collections.emptyList();
         }
 
         return new ArrayList<CfItem>(result);
