@@ -90,8 +90,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private long framecount = 0;
 
-    private long starttime = 0;
-
     private int mycurrentgui = GUI_START;
 
     private int mydialogstatus = DLG_NONE;
@@ -445,7 +443,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         framecount = 0;
         keyBindings.loadKeyBindings("keybindings.txt", this);
         loadSpellBelt("spellbelt.data");
-        starttime = System.nanoTime();
     }
 
     public void endRendering()
