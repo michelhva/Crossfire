@@ -27,17 +27,17 @@ package com.realtime.crossfire.jxclient;
  */
 public class MetaserverEntry implements Comparable<MetaserverEntry>
 {
-    private String myip;
+    private final String myip;
 
-    private String myhost;
+    private final String myhost;
 
-    private String mycomment;
+    private final String mycomment;
 
-    private String myversion;
+    private final String myversion;
 
-    private int mynrplayers;
+    private final int mynrplayers;
 
-    private int myping;
+    private final int myping;
 
     public MetaserverEntry(String ip, String host, String comment, String version, int nrplayers, int ping)
     {

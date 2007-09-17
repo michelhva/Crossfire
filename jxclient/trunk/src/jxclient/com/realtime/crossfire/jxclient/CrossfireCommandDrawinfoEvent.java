@@ -32,9 +32,9 @@ public class CrossfireCommandDrawinfoEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private String mytext;
+    private final String mytext;
 
-    private int mytype;
+    private final int mytype;
 
     public CrossfireCommandDrawinfoEvent(Object src, String msg, int type)
     {

@@ -101,7 +101,7 @@ public class CfMap
      * Multi-face objects with bottom-right parts outside the viewable map area
      * but with at least one part inside the viewable area.
      */
-    private Map<Point, CfMultiSquare> outOfMapMultiFaces = new HashMap<Point, CfMultiSquare>();
+    private final Map<Point, CfMultiSquare> outOfMapMultiFaces = new HashMap<Point, CfMultiSquare>();
 
     /**
      * Create a new (empty) map.

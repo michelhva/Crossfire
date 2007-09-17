@@ -36,9 +36,9 @@ import java.util.List;
  */
 public class Metaserver
 {
-    private static String metaserver_name = "crossfire.real-time.com";
+    private static final String metaserver_name = "crossfire.real-time.com";
 
-    private static int metaserver_port = 13326;
+    private static final int metaserver_port = 13326;
 
     private static final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 

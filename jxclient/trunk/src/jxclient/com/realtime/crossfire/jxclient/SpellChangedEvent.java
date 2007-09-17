@@ -32,7 +32,7 @@ public class SpellChangedEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private Spell myspell;
+    private final Spell myspell;
 
     public SpellChangedEvent(Object src, Spell sp)
     {

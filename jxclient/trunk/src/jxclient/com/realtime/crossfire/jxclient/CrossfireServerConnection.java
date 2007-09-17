@@ -59,11 +59,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public static final int MAP_HEIGHT = 13;
 
-    private List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
+    private final List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
 
-    private List<CrossfireDrawextinfoListener> mylisteners_drawextinfo = new ArrayList<CrossfireDrawextinfoListener>();
+    private final List<CrossfireDrawextinfoListener> mylisteners_drawextinfo = new ArrayList<CrossfireDrawextinfoListener>();
 
-    private List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
+    private final List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.

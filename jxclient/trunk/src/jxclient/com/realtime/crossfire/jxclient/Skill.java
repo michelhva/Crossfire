@@ -27,9 +27,9 @@ package com.realtime.crossfire.jxclient;
  */
 public class Skill
 {
-    private int myindex;
+    private final int myindex;
 
-    private String myname;
+    private final String myname;
 
     private long myexperience = 0;
 
