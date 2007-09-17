@@ -193,6 +193,7 @@ public class Faces
     }
 
     // TODO: implement faceset
+    // TODO: handle checksum
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname) throws IOException
     {
         final ImageIcon im = fileCache.load(pixname+".x2.png");
