@@ -53,7 +53,6 @@ public class GUICommandList
      */
     public GUICommandList(final String commands, final JXCWindow jxcWindow)
     {
-        final String[] cmds = commands.split(";");
         for (final String command : commands.trim().split(" *; *"))
         {
             this.commands.add(new GUICommand(null, GUICommand.Command.GUI_SEND_COMMAND, new GUICommand.SendCommandParameter(jxcWindow, command)));
