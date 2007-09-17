@@ -24,7 +24,6 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.io.File;
-import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**

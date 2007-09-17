@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.GUICommandList;
-import com.realtime.crossfire.jxclient.JXCWindow;
 
 /**
  * Manage the state for the key binding dialog.

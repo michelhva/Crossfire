@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import java.io.DataInputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
