@@ -66,7 +66,6 @@ public final class KeyBindings
             if (ok.equals(keyBinding))
             {
                 elected = ok;
-                continue;
             }
         }
         if (elected != null)
@@ -92,7 +91,6 @@ public final class KeyBindings
             if (ok.equals(keyBinding))
             {
                 elected = ok;
-                continue;
             }
         }
         if (elected != null)
