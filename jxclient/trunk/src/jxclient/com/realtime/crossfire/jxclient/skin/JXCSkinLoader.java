@@ -360,7 +360,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            elements.lookup(args[1]).setIgnore();
+                            elements.lookup(name).setIgnore();
                         }
                         else if (args[0].equals("item"))
                         {
