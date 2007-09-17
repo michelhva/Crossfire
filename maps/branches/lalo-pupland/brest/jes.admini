@@ -4091,6 +4091,11 @@ arch woodfloor
 x 24
 y 25
 end
+arch chinese_dragon
+name Fred
+x 24
+y 25
+end
 arch woodfloor
 x 24
 y 26
@@ -4473,6 +4478,10 @@ x 27
 y 5
 end
 arch woodfloor
+x 27
+y 6
+end
+arch dread
 x 27
 y 6
 end
@@ -4880,6 +4889,11 @@ x 29
 y 23
 end
 arch woodfloor
+x 29
+y 24
+end
+arch gaelotroll
+name Bacal
 x 29
 y 24
 end
@@ -5455,6 +5469,10 @@ arch woodfloor
 x 33
 y 8
 end
+arch big_dragon
+x 33
+y 8
+end
 arch woodfloor
 x 33
 y 9
@@ -5655,6 +5673,10 @@ x 34
 y 16
 end
 arch woodfloor
+x 34
+y 17
+end
+arch behemoth
 x 34
 y 17
 end
@@ -6564,26 +6586,4 @@ end
 arch grass
 x 39
 y 29
-end
-arch chinese_dragon
-name Fred
-x 24
-y 25
-end
-arch dread
-x 27
-y 6
-end
-arch gaelotroll
-name Bacal
-x 29
-y 24
-end
-arch big_dragon
-x 33
-y 8
-end
-arch behemoth
-x 34
-y 17
 end

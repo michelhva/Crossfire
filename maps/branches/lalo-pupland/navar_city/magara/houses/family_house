@@ -1189,6 +1189,10 @@ arch dungeon_floor
 x 7
 y 21
 end
+arch dragon
+x 7
+y 21
+end
 arch dungeon_floor
 x 7
 y 22
@@ -1197,6 +1201,10 @@ arch dungeon_floor
 x 7
 y 23
 end
+arch dragon
+x 7
+y 23
+end
 arch gwall_2_1_2
 x 7
 y 24
@@ -1626,11 +1634,19 @@ arch dungeon_floor
 x 10
 y 21
 end
+arch dragon
+x 10
+y 21
+end
 arch dungeon_floor
 x 10
 y 22
 end
 arch dungeon_floor
+x 10
+y 23
+end
+arch dragon
 x 10
 y 23
 end
@@ -2039,6 +2055,10 @@ arch dungeon_floor
 x 13
 y 21
 end
+arch giant
+x 13
+y 21
+end
 arch dungeon_floor
 x 13
 y 22
@@ -2194,6 +2214,10 @@ arch dungeon_floor
 x 14
 y 21
 end
+arch giant
+x 14
+y 21
+end
 arch dungeon_floor
 x 14
 y 22
@@ -2341,6 +2365,10 @@ arch food
 x 15
 y 21
 end
+arch giant
+x 15
+y 21
+end
 arch dungeon_floor
 x 15
 y 22
@@ -2496,6 +2524,10 @@ arch chair_1.1
 x 16
 y 21
 end
+arch giant
+x 16
+y 21
+end
 arch dungeon_floor
 x 16
 y 22
@@ -2647,6 +2679,10 @@ arch table
 x 17
 y 21
 end
+arch giant
+x 17
+y 21
+end
 arch dungeon_floor
 x 17
 y 22
@@ -3072,6 +3108,10 @@ arch chair_1.1
 x 20
 y 22
 end
+arch troll
+x 20
+y 22
+end
 arch dungeon_floor
 x 20
 y 23
@@ -3366,6 +3406,10 @@ arch dungeon_floor
 x 22
 y 22
 end
+arch troll
+x 22
+y 22
+end
 arch dungeon_floor
 x 22
 y 23
@@ -3890,6 +3934,10 @@ arch dungeon_floor
 x 26
 y 21
 end
+arch chinese_dragon
+x 26
+y 21
+end
 arch dungeon_floor
 x 26
 y 22
@@ -4189,6 +4237,10 @@ x 28
 y 21
 end
 arch dungeon_floor
+x 28
+y 22
+end
+arch chinese_dragon
 x 28
 y 22
 end
@@ -4470,56 +4522,4 @@ end
 arch gwall_2_2_4
 x 30
 y 24
-end
-arch dragon
-x 7
-y 21
-end
-arch dragon
-x 7
-y 23
-end
-arch dragon
-x 10
-y 21
-end
-arch dragon
-x 10
-y 23
-end
-arch giant
-x 13
-y 21
-end
-arch giant
-x 14
-y 21
-end
-arch giant
-x 15
-y 21
-end
-arch giant
-x 16
-y 21
-end
-arch giant
-x 17
-y 21
-end
-arch troll
-x 20
-y 22
-end
-arch troll
-x 22
-y 22
-end
-arch chinese_dragon
-x 26
-y 21
-end
-arch chinese_dragon
-x 28
-y 22
 end

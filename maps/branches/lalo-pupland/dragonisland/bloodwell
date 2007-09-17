@@ -118,6 +118,10 @@ arch random_artifact
 x 1
 y 1
 end
+arch big_dragon
+x 1
+y 1
+end
 arch dungeon_floor
 x 1
 y 2
@@ -812,6 +816,10 @@ x 6
 y 8
 end
 arch dungeon_floor
+x 6
+y 8
+end
+arch pentagram_111
 x 6
 y 8
 end
@@ -2219,12 +2227,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch big_dragon
-x 1
-y 1
-end
-arch pentagram_111
-x 6
-y 8
 end

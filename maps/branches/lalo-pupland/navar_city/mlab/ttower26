@@ -2480,6 +2480,10 @@ name_pl woodfloor
 x 12
 y 4
 end
+arch dread
+x 12
+y 4
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2585,6 +2589,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 20
+end
+arch dread
 x 12
 y 20
 end
@@ -5032,12 +5040,4 @@ end
 arch blocked
 x 25
 y 25
-end
-arch dread
-x 12
-y 4
-end
-arch dread
-x 12
-y 20
 end

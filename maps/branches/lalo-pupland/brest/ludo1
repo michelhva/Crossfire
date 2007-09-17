@@ -1550,6 +1550,11 @@ arch woodfloor
 x 9
 y 8
 end
+arch demon_lord
+name Ludo the mighty
+x 9
+y 8
+end
 arch woodfloor
 x 9
 y 9
@@ -1899,6 +1904,10 @@ x 11
 y 18
 end
 arch woodfloor
+x 11
+y 19
+end
+arch giant
 x 11
 y 19
 end
@@ -2068,6 +2077,10 @@ arch woodfloor
 x 12
 y 19
 end
+arch giant
+x 12
+y 19
+end
 arch woodfloor
 x 12
 y 20
@@ -2186,11 +2199,19 @@ arch woodfloor
 x 13
 y 13
 end
+arch cobra
+x 13
+y 13
+end
 arch woodfloor
 x 13
 y 14
 end
 arch woodfloor
+x 13
+y 15
+end
+arch cobra
 x 13
 y 15
 end
@@ -2215,6 +2236,10 @@ x 13
 y 18
 end
 arch woodfloor
+x 13
+y 19
+end
+arch giant
 x 13
 y 19
 end
@@ -2336,11 +2361,19 @@ arch woodfloor
 x 14
 y 13
 end
+arch cobra
+x 14
+y 13
+end
 arch woodfloor
 x 14
 y 14
 end
 arch woodfloor
+x 14
+y 15
+end
+arch cobra
 x 14
 y 15
 end
@@ -2368,6 +2401,10 @@ arch woodfloor
 x 14
 y 19
 end
+arch giant
+x 14
+y 19
+end
 arch woodfloor
 x 14
 y 20
@@ -2486,7 +2523,15 @@ arch woodfloor
 x 15
 y 13
 end
+arch dragon
+x 15
+y 13
+end
 arch woodfloor
+x 15
+y 14
+end
+arch dragon
 x 15
 y 14
 end
@@ -2494,7 +2539,15 @@ arch woodfloor
 x 15
 y 15
 end
+arch dragon
+x 15
+y 15
+end
 arch woodfloor
+x 15
+y 16
+end
+arch dragon
 x 15
 y 16
 end
@@ -2515,6 +2568,10 @@ x 15
 y 18
 end
 arch woodfloor
+x 15
+y 19
+end
+arch giant
 x 15
 y 19
 end
@@ -2668,6 +2725,10 @@ arch woodfloor
 x 16
 y 19
 end
+arch giant
+x 16
+y 19
+end
 arch woodfloor
 x 16
 y 20
@@ -2786,7 +2847,15 @@ arch woodfloor
 x 17
 y 13
 end
+arch dragon
+x 17
+y 13
+end
 arch woodfloor
+x 17
+y 14
+end
+arch dragon
 x 17
 y 14
 end
@@ -2794,7 +2863,15 @@ arch woodfloor
 x 17
 y 15
 end
+arch dragon
+x 17
+y 15
+end
 arch woodfloor
+x 17
+y 16
+end
+arch dragon
 x 17
 y 16
 end
@@ -2815,6 +2892,10 @@ x 17
 y 18
 end
 arch woodfloor
+x 17
+y 19
+end
+arch troll
 x 17
 y 19
 end
@@ -3086,11 +3167,23 @@ arch woodfloor
 x 19
 y 13
 end
+arch dragon
+x 19
+y 13
+end
 arch woodfloor
 x 19
 y 14
 end
+arch dragon
+x 19
+y 14
+end
 arch woodfloor
+x 19
+y 15
+end
+arch dragon
 x 19
 y 15
 end
@@ -3119,6 +3212,10 @@ x 19
 y 18
 end
 arch woodfloor
+x 19
+y 19
+end
+arch troll
 x 19
 y 19
 end
@@ -3442,6 +3539,10 @@ x 21
 y 18
 end
 arch woodfloor
+x 21
+y 19
+end
+arch troll
 x 21
 y 19
 end
@@ -4299,6 +4400,10 @@ arch woodfloor
 x 26
 y 19
 end
+arch behemoth
+x 26
+y 19
+end
 arch woodfloor
 x 26
 y 20
@@ -4403,6 +4508,10 @@ x 27
 y 11
 end
 arch woodfloor
+x 27
+y 12
+end
+arch dragon
 x 27
 y 12
 end
@@ -4614,6 +4723,10 @@ x 28
 y 18
 end
 arch woodfloor
+x 28
+y 19
+end
+arch behemoth
 x 28
 y 19
 end
@@ -4887,6 +5000,10 @@ arch woodfloor
 x 30
 y 12
 end
+arch dragon
+x 30
+y 12
+end
 arch woodfloor
 x 30
 y 13
@@ -5103,6 +5220,10 @@ x 31
 y 18
 end
 arch woodfloor
+x 31
+y 19
+end
+arch chinese_dragon
 x 31
 y 19
 end
@@ -5432,6 +5553,10 @@ arch woodfloor
 x 33
 y 19
 end
+arch chinese_dragon
+x 33
+y 19
+end
 arch woodfloor
 x 33
 y 20
@@ -5708,6 +5833,10 @@ arch woodfloor
 x 35
 y 12
 end
+arch dragon
+x 35
+y 12
+end
 arch woodfloor
 x 35
 y 13
@@ -5757,6 +5886,10 @@ x 35
 y 18
 end
 arch woodfloor
+x 35
+y 19
+end
+arch chinese_dragon
 x 35
 y 19
 end
@@ -6032,6 +6165,10 @@ arch woodfloor
 x 37
 y 12
 end
+arch dragon
+x 37
+y 12
+end
 arch woodfloor
 x 37
 y 13
@@ -6052,6 +6189,10 @@ arch woodfloor
 x 37
 y 15
 end
+arch dread
+x 37
+y 15
+end
 arch woodfloor
 x 37
 y 16
@@ -6060,11 +6201,19 @@ arch woodfloor
 x 37
 y 17
 end
+arch dread
+x 37
+y 17
+end
 arch woodfloor
 x 37
 y 18
 end
 arch woodfloor
+x 37
+y 19
+end
+arch chinese_dragon
 x 37
 y 19
 end
@@ -6747,153 +6896,4 @@ end
 arch wall_2_2_4
 x 41
 y 21
-end
-arch demon_lord
-name Ludo the mighty
-x 9
-y 8
-end
-arch giant
-x 11
-y 19
-end
-arch giant
-x 12
-y 19
-end
-arch cobra
-x 13
-y 13
-end
-arch cobra
-x 13
-y 15
-end
-arch giant
-x 13
-y 19
-end
-arch cobra
-x 14
-y 13
-end
-arch cobra
-x 14
-y 15
-end
-arch giant
-x 14
-y 19
-end
-arch dragon
-x 15
-y 13
-end
-arch dragon
-x 15
-y 14
-end
-arch dragon
-x 15
-y 15
-end
-arch dragon
-x 15
-y 16
-end
-arch giant
-x 15
-y 19
-end
-arch giant
-x 16
-y 19
-end
-arch dragon
-x 17
-y 13
-end
-arch dragon
-x 17
-y 14
-end
-arch dragon
-x 17
-y 15
-end
-arch dragon
-x 17
-y 16
-end
-arch troll
-x 17
-y 19
-end
-arch dragon
-x 19
-y 13
-end
-arch dragon
-x 19
-y 14
-end
-arch dragon
-x 19
-y 15
-end
-arch troll
-x 19
-y 19
-end
-arch troll
-x 21
-y 19
-end
-arch behemoth
-x 26
-y 19
-end
-arch dragon
-x 27
-y 12
-end
-arch behemoth
-x 28
-y 19
-end
-arch dragon
-x 30
-y 12
-end
-arch chinese_dragon
-x 31
-y 19
-end
-arch chinese_dragon
-x 33
-y 19
-end
-arch dragon
-x 35
-y 12
-end
-arch chinese_dragon
-x 35
-y 19
-end
-arch dragon
-x 37
-y 12
-end
-arch dread
-x 37
-y 15
-end
-arch dread
-x 37
-y 17
-end
-arch chinese_dragon
-x 37
-y 19
 end

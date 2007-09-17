@@ -1,13 +1,13 @@
 arch map
 name tavern
 region lonetown
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jan 22 16:33:26 1997
 endmsg
-width 25
-height 25
 end
 arch afloor_left
 end
@@ -177,11 +177,11 @@ y 2
 end
 arch bench_1_4
 name bar
+x 1
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 1
-y 2
 end
 arch afloor_left
 x 1
@@ -241,10 +241,10 @@ town.
 Don't Rob anything!
 endmsg
 hp 700
-friendly 1
-unaggressive 0
 x 1
 y 9
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 1
@@ -304,7 +304,6 @@ y 21
 end
 arch wizard
 name Trainee
-face wizard.131
 msg
 @match no|No
 You should see it.
@@ -326,12 +325,13 @@ answer, say honestly "I don't know".
 @match *
 Have you ever seen the Magic Show?
 endmsg
-type 0
+face wizard.131
 hp 100
-monster 1
-friendly 1
 x 1
 y 21
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 1
@@ -369,11 +369,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 2
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 2
-y 2
 end
 arch afloor_left
 x 2
@@ -409,10 +409,10 @@ y 8
 end
 arch dwarf
 hp 700
-friendly 1
-unaggressive 0
 x 2
 y 8
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 2
@@ -497,12 +497,12 @@ end
 arch wizard
 name Trainee
 face wizard.111
-type 0
 hp 100
-monster 1
-friendly 1
 x 2
 y 22
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 2
@@ -544,11 +544,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 3
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 3
-y 2
 end
 arch afloor_left
 x 3
@@ -678,11 +678,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 4
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 4
-y 2
 end
 arch afloor_left
 x 4
@@ -693,7 +693,6 @@ x 4
 y 3
 end
 arch thief
-face thief.111
 msg
 @match No|no|Castle|castle
 There are two ways into the castle.
@@ -707,12 +706,13 @@ into the castle.
 Have you ever been to the Castle of
 Eureca?
 endmsg
-type 0
+face thief.111
 hp 100
-monster 1
-friendly 1
 x 4
 y 3
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 4
@@ -822,11 +822,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 5
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 5
-y 2
 end
 arch afloor_left
 x 5
@@ -944,11 +944,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 6
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 6
-y 2
 end
 arch afloor_left
 x 6
@@ -1074,11 +1074,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 7
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 7
-y 2
 end
 arch afloor_left
 x 7
@@ -1212,11 +1212,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 8
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 8
-y 2
 end
 arch afloor_left
 x 8
@@ -1282,12 +1282,12 @@ return...
 @match *
 Do you know the Castle of Eureca?
 endmsg
-type 0
 hp 100
-monster 1
-friendly 1
 x 8
 y 11
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 8
@@ -1352,12 +1352,12 @@ You had not better going there.
 Have you ever been to shops
 in Lone Town?
 endmsg
-type 0
 hp 100
-monster 1
-friendly 1
 x 8
 y 22
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 8
@@ -1399,11 +1399,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 9
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 9
-y 2
 end
 arch afloor_left
 x 9
@@ -1482,12 +1482,12 @@ enter... :-(
 @match *
 Do you know Tower of Ordeal yet?
 endmsg
-type 0
 hp 100
-monster 1
-friendly 1
 x 9
 y 17
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 9
@@ -1565,11 +1565,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 10
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 10
-y 2
 end
 arch afloor_left
 x 10
@@ -1687,11 +1687,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 11
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 11
-y 2
 end
 arch afloor_left
 x 11
@@ -1816,11 +1816,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 12
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 12
-y 2
 end
 arch afloor_left
 x 12
@@ -1941,11 +1941,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 13
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 13
-y 2
 end
 arch afloor_left
 x 13
@@ -1967,9 +1967,9 @@ He lives in his Tower.
 Pupuly is in his second childhood.
 endmsg
 hp 500
-friendly 1
 x 13
 y 3
+friendly 1
 end
 arch afloor_left
 x 13
@@ -2031,9 +2031,9 @@ Poppy knows something new. Bow wow!
 endmsg
 Con 50
 hp 1000
-friendly 1
 x 13
 y 15
+friendly 1
 end
 arch afloor_left
 x 13
@@ -2065,16 +2065,16 @@ y 22
 end
 arch man
 name waiter
-face man.171
 msg
 @match *
 Welcome
 endmsg
+face man.171
 hp 180
-friendly 1
-unaggressive 0
 x 13
 y 22
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 13
@@ -2108,11 +2108,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 14
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 14
-y 2
 end
 arch afloor_left
 x 14
@@ -2164,7 +2164,6 @@ y 10
 end
 arch viking
 name Frederick
-face viking.111
 msg
 @match heinrich|Heinrich
 We live in sourth-eastern part of
@@ -2181,13 +2180,14 @@ go and talk to Heinrich.
 @match *
 Are you an adventurer?
 endmsg
-type 0
+face viking.111
 hp 200
+x 14
+y 10
+type 0
 randomitems none
 monster 1
 friendly 1
-x 14
-y 10
 end
 arch afloor_left
 x 14
@@ -2277,11 +2277,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 15
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 15
-y 2
 end
 arch afloor_left
 x 15
@@ -2427,11 +2427,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 16
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 16
-y 2
 end
 arch afloor_left
 x 16
@@ -2511,7 +2511,6 @@ y 19
 end
 arch swashbuckler
 name Canvasser
-face swashbuckl.131
 msg
 @match yes|Yes
 Great, go to the guild of freedom,
@@ -2524,12 +2523,13 @@ aren't you? - I'LL KILL YOU!!
 @match *
 I'm a member of Liberation army.
 endmsg
-type 0
+face swashbuckl.131
 hp 100
-monster 1
-friendly 1
 x 16
 y 19
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 16
@@ -2583,11 +2583,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 17
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 17
-y 2
 end
 arch afloor_left
 x 17
@@ -2717,11 +2717,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 18
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 18
-y 2
 end
 arch afloor_left
 x 18
@@ -2843,11 +2843,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 19
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 19
-y 2
 end
 arch afloor_left
 x 19
@@ -2969,11 +2969,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 20
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 20
-y 2
 end
 arch afloor_left
 x 20
@@ -3030,10 +3030,10 @@ Hello stranger! Do you buy a booze for me?
 @match no|No|nope
 Then go away!
 @match yes|Yes
-Thank you. Did you ever heared of Maveric 
+Thank you. Did you ever heared of Maveric
 the founder of the Forgotten Town? Until he
 died there was everything better in the Town.
-As he died only adventurers discovered the 
+As he died only adventurers discovered the
 entrance to the town hidden under the earth.
 @match where
 When you wants to see it travel to Darcap.
@@ -3129,11 +3129,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 21
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 21
-y 2
 end
 arch afloor_left
 x 21
@@ -3267,11 +3267,11 @@ y 2
 end
 arch bench_2_1_2
 name bar
+x 22
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 22
-y 2
 end
 arch afloor_left
 x 22
@@ -3322,10 +3322,10 @@ My research Notes were stolen by
 Thieves!
 endmsg
 hp 280
-friendly 1
-unaggressive 0
 x 22
 y 6
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 22
@@ -3333,13 +3333,13 @@ y 7
 end
 arch create_dragon_mail
 name table
-face table_4.111
+slaying naz_report
 msg
 Thank you very much.
 I'll give you my paraphernalia
 endmsg
-slaying naz_report
 other_arch magnifier
+face table_4.111
 sp 1
 food 1
 x 22
@@ -3438,10 +3438,10 @@ Do you know why we fight agaist
 the Regular Army?
 endmsg
 hp 500
-friendly 1
-unaggressive 0
 x 22
 y 21
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 22
@@ -3487,11 +3487,11 @@ y 2
 end
 arch bench_1_3
 name bar
+x 23
+y 2
 no_pass 1
 no_magic 1
 damned 1
-x 23
-y 2
 end
 arch afloor_left
 x 23
@@ -3580,12 +3580,12 @@ Don't forget that...
 @match *
 Be quiet!
 endmsg
-type 0
 hp 100
-monster 1
-friendly 1
 x 23
 y 17
+type 0
+monster 1
+friendly 1
 end
 arch afloor_left
 x 23
@@ -3616,10 +3616,10 @@ x 23
 y 22
 end
 arch medium_guard
-friendly 1
-unaggressive 0
 x 23
 y 22
+friendly 1
+unaggressive 0
 end
 arch afloor_left
 x 23

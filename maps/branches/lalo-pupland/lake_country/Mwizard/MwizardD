@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region lakecountry
+width 20
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 26 01:32:03 1995
 endmsg
-x 20
-y 20
 end
 arch blocked
 end
@@ -367,6 +368,10 @@ arch pstone_2
 x 3
 y 10
 end
+arch big_dragon
+x 3
+y 10
+end
 arch pstone_2
 x 3
 y 11
@@ -536,6 +541,10 @@ x 5
 y 5
 end
 arch pstone_2
+x 5
+y 6
+end
+arch big_dragon
 x 5
 y 6
 end
@@ -932,6 +941,10 @@ arch pstone_2
 x 9
 y 10
 end
+arch big_dragon
+x 9
+y 10
+end
 arch pstone_2
 x 9
 y 11
@@ -1181,8 +1194,6 @@ x 11
 y 16
 end
 arch blocked
-msg
-endmsg
 x 11
 y 17
 end
@@ -1191,8 +1202,6 @@ x 11
 y 18
 end
 arch blocked
-msg
-endmsg
 x 11
 y 18
 end
@@ -2076,16 +2085,4 @@ end
 arch blocked
 x 19
 y 19
-end
-arch big_dragon
-x 3
-y 10
-end
-arch big_dragon
-x 5
-y 6
-end
-arch big_dragon
-x 9
-y 10
 end

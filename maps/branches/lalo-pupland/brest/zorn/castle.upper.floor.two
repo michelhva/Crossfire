@@ -7820,6 +7820,47 @@ arch cobblestones2
 x 20
 y 24
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the NW Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 20
+y 24
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name NW Tower
+slaying castle.upper.floor.two
+hp 9
+sp 9
+end
+end
 arch cobblestones2
 x 20
 y 25
@@ -7851,6 +7892,47 @@ end
 arch cobblestones2
 x 20
 y 32
+end
+arch gryphon
+name Zorn Canary
+title Guardian of the SW Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 20
+y 32
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name SW Tower
+slaying castle.upper.floor.two
+hp 9
+sp 49
+end
 end
 arch cobblestones2
 x 20
@@ -11349,6 +11431,46 @@ arch stonefloor2
 x 28
 y 23
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the Top Floor
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 28
+y 23
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch dragonclaw
+name canary claw
+name_pl canary claws
+material 0
+end
+end
 arch stonefloor2
 x 28
 y 24
@@ -14460,6 +14582,47 @@ arch cobblestones2
 x 36
 y 24
 end
+arch gryphon
+name Zorn Canary
+title Guardian of the NE Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 36
+y 24
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name NE Tower
+slaying castle.upper.floor.two
+hp 49
+sp 9
+end
+end
 arch cobblestones2
 x 36
 y 25
@@ -14491,6 +14654,47 @@ end
 arch cobblestones2
 x 36
 y 32
+end
+arch gryphon
+name Zorn Canary
+title Guardian of the SE Tower room
+Int 10
+hp 15000
+sp 500
+maxsp 500
+exp 3500000
+dam 49
+wc -50
+ac -40
+x 36
+y 32
+level 109
+attacktype 384
+resist_physical 50
+resist_fire 50
+resist_electricity 50
+resist_cold 50
+resist_confusion 50
+resist_acid 50
+resist_drain 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_slow 50
+resist_deplete 50
+resist_death 50
+resist_chaos 50
+resist_blind 50
+will_apply 4
+see_invisible 1
+can_use_skill 1
+arch skill_clawing
+end
+arch perm_magic_portal
+name SE Tower
+slaying castle.upper.floor.two
+hp 49
+sp 49
+end
 end
 arch cobblestones2
 x 36
@@ -23696,208 +23900,4 @@ end
 arch brush
 x 58
 y 58
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the NW Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 20
-y 24
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name NW Tower
-slaying castle.upper.floor.two
-hp 9
-sp 9
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the SW Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 20
-y 32
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name SW Tower
-slaying castle.upper.floor.two
-hp 9
-sp 49
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the Top Floor
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 28
-y 23
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch dragonclaw
-name canary claw
-name_pl canary claws
-material 0
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the NE Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 36
-y 24
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name NE Tower
-slaying castle.upper.floor.two
-hp 49
-sp 9
-end
-end
-arch gryphon
-name Zorn Canary
-title Guardian of the SE Tower room
-Int 10
-hp 15000
-sp 500
-maxsp 500
-exp 3500000
-dam 49
-wc -50
-ac -40
-x 36
-y 32
-level 109
-attacktype 384
-resist_physical 50
-resist_fire 50
-resist_electricity 50
-resist_cold 50
-resist_confusion 50
-resist_acid 50
-resist_drain 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_slow 50
-resist_deplete 50
-resist_death 50
-resist_chaos 50
-resist_blind 50
-will_apply 4
-see_invisible 1
-can_use_skill 1
-arch skill_clawing
-end
-arch perm_magic_portal
-name SE Tower
-slaying castle.upper.floor.two
-hp 49
-sp 49
-end
 end

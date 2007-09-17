@@ -610,6 +610,10 @@ arch grass
 x 2
 y 14
 end
+arch guild
+x 2
+y 14
+end
 arch grass
 x 2
 y 15
@@ -671,6 +675,10 @@ x 2
 y 28
 end
 arch grass
+x 2
+y 29
+end
+arch barrack_up
 x 2
 y 29
 end
@@ -736,6 +744,10 @@ arch grass
 x 3
 y 2
 end
+arch barrack_up
+x 3
+y 2
+end
 arch grass
 x 3
 y 3
@@ -778,6 +790,10 @@ arch grass
 x 3
 y 9
 end
+arch house_up
+x 3
+y 9
+end
 arch grass
 x 3
 y 10
@@ -787,6 +803,14 @@ x 3
 y 11
 end
 arch grass
+x 3
+y 12
+end
+arch store_general
+name General Shop
+slaying B_gshop
+hp 1
+sp 1
 x 3
 y 12
 end
@@ -866,6 +890,10 @@ arch grass
 x 3
 y 29
 end
+arch barrack_up
+x 3
+y 29
+end
 arch grass
 x 3
 y 30
@@ -921,6 +949,10 @@ x 4
 y 1
 end
 arch grass
+x 4
+y 2
+end
+arch barrack_up
 x 4
 y 2
 end
@@ -1078,6 +1110,10 @@ arch grass
 x 4
 y 29
 end
+arch barrack_up
+x 4
+y 29
+end
 arch grass
 x 4
 y 30
@@ -1137,6 +1173,10 @@ x 5
 y 1
 end
 arch grass
+x 5
+y 2
+end
+arch barrack_up
 x 5
 y 2
 end
@@ -1293,6 +1333,10 @@ x 5
 y 28
 end
 arch grass
+x 5
+y 29
+end
+arch barrack_up
 x 5
 y 29
 end
@@ -1490,6 +1534,14 @@ arch grass
 x 6
 y 22
 end
+arch church
+name Royal Church
+slaying church0
+hp 9
+sp 28
+x 6
+y 22
+end
 arch grass
 x 6
 y 23
@@ -1503,6 +1555,14 @@ x 6
 y 24
 end
 arch grass
+x 6
+y 25
+end
+arch courthouse
+name Royal Library
+slaying Rlib1
+hp 2
+sp 8
 x 6
 y 25
 end
@@ -1523,6 +1583,10 @@ x 6
 y 28
 end
 arch grass
+x 6
+y 29
+end
+arch barrack_up
 x 6
 y 29
 end
@@ -1617,6 +1681,10 @@ x 7
 y 7
 end
 arch grass
+x 7
+y 8
+end
+arch house_up
 x 7
 y 8
 end
@@ -2475,6 +2543,14 @@ arch dungeon_floor
 x 10
 y 30
 end
+arch city_tower
+name Towers of Luck
+slaying luck1
+hp 3
+sp 16
+x 10
+y 30
+end
 arch dungeon_floor
 x 10
 y 31
@@ -2649,11 +2725,27 @@ arch dungeon_floor
 x 11
 y 29
 end
+arch city_tower
+name Towers of Luck
+slaying luck1
+hp 3
+sp 5
+x 11
+y 29
+end
 arch dungeon_floor
 x 11
 y 30
 end
 arch dungeon_floor
+x 11
+y 31
+end
+arch city_tower
+name Towers of Luck
+slaying luck1
+hp 19
+sp 15
 x 11
 y 31
 end
@@ -2847,6 +2939,14 @@ arch dungeon_floor
 x 12
 y 30
 end
+arch city_tower
+name Towers of Luck
+slaying luck1
+hp 17
+sp 5
+x 12
+y 30
+end
 arch dungeon_floor
 x 12
 y 31
@@ -2910,6 +3010,14 @@ x 13
 y 5
 end
 arch grass
+x 13
+y 6
+end
+arch store_weapons
+name Weapon Shop
+slaying B_wshop
+hp 1
+sp 8
 x 13
 y 6
 end
@@ -3135,6 +3243,10 @@ arch grass
 x 14
 y 2
 end
+arch barrack_up
+x 14
+y 2
+end
 arch grass
 x 14
 y 3
@@ -3357,6 +3469,10 @@ arch grass
 x 15
 y 2
 end
+arch barrack_up
+x 15
+y 2
+end
 arch grass
 x 15
 y 3
@@ -3422,6 +3538,14 @@ x 15
 y 14
 end
 arch grass
+x 15
+y 15
+end
+arch barn
+name Arena
+slaying arena
+hp 1
+sp 20
 x 15
 y 15
 end
@@ -3583,6 +3707,10 @@ arch grass
 x 16
 y 2
 end
+arch barrack_up
+x 16
+y 2
+end
 arch grass
 x 16
 y 3
@@ -3612,6 +3740,10 @@ x 16
 y 7
 end
 arch grass
+x 16
+y 8
+end
+arch house_up
 x 16
 y 8
 end
@@ -3901,6 +4033,10 @@ arch grass
 x 17
 y 17
 end
+arch barrack_long
+x 17
+y 17
+end
 arch grass
 x 17
 y 18
@@ -3937,6 +4073,10 @@ arch grass
 x 17
 y 23
 end
+arch palace
+x 17
+y 23
+end
 arch grass
 x 17
 y 24
@@ -3966,6 +4106,10 @@ x 17
 y 28
 end
 arch grass
+x 17
+y 29
+end
+arch barrack_up
 x 17
 y 29
 end
@@ -4178,6 +4322,10 @@ arch grass
 x 18
 y 29
 end
+arch barrack_up
+x 18
+y 29
+end
 arch grass
 x 18
 y 30
@@ -4283,6 +4431,14 @@ arch grass
 x 19
 y 8
 end
+arch inn
+name Inn, White Pigeon
+slaying inn
+hp 8
+sp 14
+x 19
+y 8
+end
 arch cobblestones2
 x 19
 y 9
@@ -4296,6 +4452,10 @@ x 19
 y 10
 end
 arch grass
+x 19
+y 11
+end
+arch house_up
 x 19
 y 11
 end
@@ -4403,6 +4563,10 @@ arch grass
 x 19
 y 29
 end
+arch barrack_up
+x 19
+y 29
+end
 arch grass
 x 19
 y 30
@@ -4462,6 +4626,13 @@ x 20
 y 1
 end
 arch dungeon_floor
+x 20
+y 2
+end
+arch prison
+slaying prison0
+hp 12
+sp 20
 x 20
 y 2
 end
@@ -4545,6 +4716,10 @@ arch grass
 x 20
 y 15
 end
+arch barn
+x 20
+y 15
+end
 arch grass
 x 20
 y 16
@@ -4618,6 +4793,10 @@ x 20
 y 28
 end
 arch grass
+x 20
+y 29
+end
+arch barrack_up
 x 20
 y 29
 end
@@ -4834,6 +5013,10 @@ x 21
 y 28
 end
 arch grass
+x 21
+y 29
+end
+arch barrack_up
 x 21
 y 29
 end
@@ -5448,187 +5631,4 @@ end
 arch cwall_2_2_4
 x 23
 y 35
-end
-arch guild
-x 2
-y 14
-end
-arch barrack_up
-x 2
-y 29
-end
-arch barrack_up
-x 3
-y 2
-end
-arch house_up
-x 3
-y 9
-end
-arch store_general
-name General Shop
-slaying B_gshop
-hp 1
-sp 1
-x 3
-y 12
-end
-arch barrack_up
-x 3
-y 29
-end
-arch barrack_up
-x 4
-y 2
-end
-arch barrack_up
-x 4
-y 29
-end
-arch barrack_up
-x 5
-y 2
-end
-arch barrack_up
-x 5
-y 29
-end
-arch church
-name Royal Church
-slaying church0
-hp 9
-sp 28
-x 6
-y 22
-end
-arch courthouse
-name Royal Library
-slaying Rlib1
-hp 2
-sp 8
-x 6
-y 25
-end
-arch barrack_up
-x 6
-y 29
-end
-arch house_up
-x 7
-y 8
-end
-arch city_tower
-name Towers of Luck
-slaying luck1
-hp 3
-sp 16
-x 10
-y 30
-end
-arch city_tower
-name Towers of Luck
-slaying luck1
-hp 3
-sp 5
-x 11
-y 29
-end
-arch city_tower
-name Towers of Luck
-slaying luck1
-hp 19
-sp 15
-x 11
-y 31
-end
-arch city_tower
-name Towers of Luck
-slaying luck1
-hp 17
-sp 5
-x 12
-y 30
-end
-arch store_weapons
-name Weapon Shop
-slaying B_wshop
-hp 1
-sp 8
-x 13
-y 6
-end
-arch barrack_up
-x 14
-y 2
-end
-arch barrack_up
-x 15
-y 2
-end
-arch barn
-name Arena
-slaying arena
-hp 1
-sp 20
-x 15
-y 15
-end
-arch barrack_up
-x 16
-y 2
-end
-arch house_up
-x 16
-y 8
-end
-arch barrack_long
-x 17
-y 17
-end
-arch palace
-x 17
-y 23
-end
-arch barrack_up
-x 17
-y 29
-end
-arch barrack_up
-x 18
-y 29
-end
-arch inn
-name Inn, White Pigeon
-slaying inn
-hp 8
-sp 14
-x 19
-y 8
-end
-arch house_up
-x 19
-y 11
-end
-arch barrack_up
-x 19
-y 29
-end
-arch prison
-slaying prison0
-hp 12
-sp 20
-x 20
-y 2
-end
-arch barn
-x 20
-y 15
-end
-arch barrack_up
-x 20
-y 29
-end
-arch barrack_up
-x 21
-y 29
 end

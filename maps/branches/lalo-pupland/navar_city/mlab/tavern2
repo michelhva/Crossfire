@@ -5124,6 +5124,11 @@ arch woodfloor
 x 13
 y 21
 end
+arch titan
+x 13
+y 21
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 22
@@ -5136,6 +5141,11 @@ arch woodfloor
 x 13
 y 24
 end
+arch titan
+x 13
+y 24
+unaggressive 1
+end
 arch woodfloor
 x 13
 y 25
@@ -5147,6 +5157,11 @@ end
 arch woodfloor
 x 13
 y 27
+end
+arch titan
+x 13
+y 27
+unaggressive 1
 end
 arch woodfloor
 x 13
@@ -21403,19 +21418,4 @@ x 59
 y 40
 no_pass 0
 blocksview 0
-end
-arch titan
-x 13
-y 21
-unaggressive 1
-end
-arch titan
-x 13
-y 24
-unaggressive 1
-end
-arch titan
-x 13
-y 27
-unaggressive 1
 end

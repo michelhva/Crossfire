@@ -2102,6 +2102,23 @@ arch woodfloor2
 x 9
 y 9
 end
+arch chinese_dragon
+name Library Master
+msg
+@match *
+SILENCE!
+endmsg
+x 9
+y 9
+randomitems none
+monster 0
+friendly 1
+unaggressive 1
+can_cast_spell 0
+sleep 0
+can_see_in_dark 1
+random_movement 1
+end
 arch magic_banned
 x 9
 y 10
@@ -6812,21 +6829,4 @@ end
 arch wwall_2_2_4
 x 41
 y 19
-end
-arch chinese_dragon
-name Library Master
-msg
-@match *
-SILENCE!
-endmsg
-x 9
-y 9
-randomitems none
-monster 0
-friendly 1
-unaggressive 1
-can_cast_spell 0
-sleep 0
-can_see_in_dark 1
-random_movement 1
 end

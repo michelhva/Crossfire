@@ -2197,6 +2197,10 @@ arch dungeon_floor
 x 11
 y 18
 end
+arch giant
+x 11
+y 18
+end
 arch dungeon_floor
 x 11
 y 19
@@ -2210,6 +2214,10 @@ x 11
 y 20
 end
 arch dungeon_floor
+x 11
+y 21
+end
+arch giant
 x 11
 y 21
 end
@@ -2390,11 +2398,19 @@ arch dungeon_floor
 x 12
 y 19
 end
+arch giant
+x 12
+y 19
+end
 arch dungeon_floor
 x 12
 y 20
 end
 arch dungeon_floor
+x 12
+y 21
+end
+arch giant
 x 12
 y 21
 end
@@ -2556,6 +2572,10 @@ arch dungeon_floor
 x 13
 y 18
 end
+arch giant
+x 13
+y 18
+end
 arch dungeon_floor
 x 13
 y 19
@@ -2564,11 +2584,19 @@ arch dungeon_floor
 x 13
 y 20
 end
+arch giant
+x 13
+y 20
+end
 arch dungeon_floor
 x 13
 y 21
 end
 arch dungeon_floor
+x 13
+y 22
+end
+arch giant
 x 13
 y 22
 end
@@ -2733,6 +2761,10 @@ x 14
 y 18
 end
 arch dungeon_floor
+x 14
+y 19
+end
+arch giant
 x 14
 y 19
 end
@@ -3361,6 +3393,10 @@ arch dungeon_floor
 x 18
 y 3
 end
+arch dragon
+x 18
+y 3
+end
 arch dungeon_floor
 x 18
 y 4
@@ -3482,6 +3518,10 @@ arch dungeon_floor
 x 18
 y 17
 end
+arch dragon
+x 18
+y 17
+end
 arch dungeon_floor
 x 18
 y 18
@@ -3503,6 +3543,10 @@ x 18
 y 21
 end
 arch dungeon_floor
+x 18
+y 22
+end
+arch dragon
 x 18
 y 22
 end
@@ -3561,6 +3605,10 @@ x 19
 y 6
 end
 arch dungeon_floor
+x 19
+y 7
+end
+arch dragon
 x 19
 y 7
 end
@@ -3670,7 +3718,15 @@ arch dungeon_floor
 x 19
 y 19
 end
+arch dragon
+x 19
+y 19
+end
 arch dungeon_floor
+x 19
+y 20
+end
+arch dragon
 x 19
 y 20
 end
@@ -3841,6 +3897,10 @@ arch dungeon_floor
 x 20
 y 17
 end
+arch dragon
+x 20
+y 17
+end
 arch dungeon_floor
 x 20
 y 18
@@ -3860,6 +3920,17 @@ end
 arch dungeon_floor
 x 20
 y 22
+end
+arch dragon
+name key-holding wyvern
+hp 1300
+exp 2000
+x 20
+y 22
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_floor
 x 20
@@ -3898,6 +3969,17 @@ end
 arch dungeon_floor
 x 21
 y 5
+end
+arch giant
+name key-holding hill giant
+hp 1050
+exp 3000
+x 21
+y 5
+carrying 100
+arch key2
+slaying 3
+end
 end
 arch dungeon_floor
 x 21
@@ -4788,86 +4870,4 @@ end
 arch dwall_2_2_4
 x 24
 y 24
-end
-arch giant
-x 11
-y 18
-end
-arch giant
-x 11
-y 21
-end
-arch giant
-x 12
-y 19
-end
-arch giant
-x 12
-y 21
-end
-arch giant
-x 13
-y 18
-end
-arch giant
-x 13
-y 20
-end
-arch giant
-x 13
-y 22
-end
-arch giant
-x 14
-y 19
-end
-arch dragon
-x 18
-y 3
-end
-arch dragon
-x 18
-y 17
-end
-arch dragon
-x 18
-y 22
-end
-arch dragon
-x 19
-y 7
-end
-arch dragon
-x 19
-y 19
-end
-arch dragon
-x 19
-y 20
-end
-arch dragon
-x 20
-y 17
-end
-arch dragon
-name key-holding wyvern
-hp 1300
-exp 2000
-x 20
-y 22
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch giant
-name key-holding hill giant
-hp 1050
-exp 3000
-x 21
-y 5
-carrying 100
-arch key2
-slaying 3
-end
 end

@@ -444,6 +444,10 @@ name_pl woodfloor
 x 5
 y 38
 end
+arch jessyb
+x 5
+y 38
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -555,6 +559,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 5
+y 53
+end
+arch jessyb
 x 5
 y 53
 end
@@ -671,6 +679,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 46
+end
+arch Balrog
 x 6
 y 46
 end
@@ -805,6 +817,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 7
+y 42
+end
+arch byakie
 x 7
 y 42
 end
@@ -1073,6 +1089,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 8
+y 57
+end
+arch byakie
 x 8
 y 57
 end
@@ -1616,6 +1636,10 @@ name_pl woodfloor
 x 11
 y 54
 end
+arch byakie
+x 11
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1747,6 +1771,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 48
+end
+arch titan
 x 12
 y 48
 end
@@ -2043,6 +2071,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 14
+y 38
+end
+arch byakie
 x 14
 y 38
 end
@@ -2358,6 +2390,10 @@ name_pl woodfloor
 x 15
 y 57
 end
+arch byakie
+x 15
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2399,6 +2435,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 16
+y 38
+end
+arch Balrog
 x 16
 y 38
 end
@@ -2448,6 +2488,10 @@ name_pl woodfloor
 x 16
 y 45
 end
+arch titan
+x 16
+y 45
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2466,6 +2510,10 @@ name_pl woodfloor
 x 16
 y 48
 end
+arch byakie
+x 16
+y 48
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2481,6 +2529,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 16
+y 51
+end
+arch titan
 x 16
 y 51
 end
@@ -2818,6 +2870,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 18
+y 54
+end
+arch titan
 x 18
 y 54
 end
@@ -3103,6 +3159,10 @@ name_pl woodfloor
 x 20
 y 45
 end
+arch byakie
+x 20
+y 45
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3288,6 +3348,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 21
+y 48
+end
+arch titan
 x 21
 y 48
 end
@@ -3637,6 +3701,10 @@ name_pl woodfloor
 x 23
 y 41
 end
+arch byakie
+x 23
+y 41
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3699,6 +3767,10 @@ name_pl woodfloor
 x 23
 y 50
 end
+arch titan
+x 23
+y 50
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3742,6 +3814,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 23
+y 57
+end
+arch byakie
 x 23
 y 57
 end
@@ -3954,6 +4030,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 25
+y 39
+end
+arch jessyb
 x 25
 y 39
 end
@@ -4282,6 +4362,10 @@ name_pl woodfloor
 x 26
 y 55
 end
+arch jessyb
+x 26
+y 55
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4403,6 +4487,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 27
+y 48
+end
+arch Balrog
 x 27
 y 48
 end
@@ -4670,6 +4758,10 @@ name_pl woodfloor
 x 29
 y 38
 end
+arch byakie
+x 29
+y 38
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4751,6 +4843,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 29
+y 52
+end
+arch byakie
 x 29
 y 52
 end
@@ -5773,100 +5869,4 @@ end
 arch flagstone
 x 63
 y 11
-end
-arch jessyb
-x 5
-y 38
-end
-arch jessyb
-x 5
-y 53
-end
-arch Balrog
-x 6
-y 46
-end
-arch byakie
-x 7
-y 42
-end
-arch byakie
-x 8
-y 57
-end
-arch byakie
-x 11
-y 54
-end
-arch titan
-x 12
-y 48
-end
-arch byakie
-x 14
-y 38
-end
-arch byakie
-x 15
-y 57
-end
-arch Balrog
-x 16
-y 38
-end
-arch titan
-x 16
-y 45
-end
-arch byakie
-x 16
-y 48
-end
-arch titan
-x 16
-y 51
-end
-arch titan
-x 18
-y 54
-end
-arch byakie
-x 20
-y 45
-end
-arch titan
-x 21
-y 48
-end
-arch byakie
-x 23
-y 41
-end
-arch titan
-x 23
-y 50
-end
-arch byakie
-x 23
-y 57
-end
-arch jessyb
-x 25
-y 39
-end
-arch jessyb
-x 26
-y 55
-end
-arch Balrog
-x 27
-y 48
-end
-arch byakie
-x 29
-y 38
-end
-arch byakie
-x 29
-y 52
 end

@@ -14,6 +14,43 @@ Email: xkd@soda.berkeley.edu
 Date: Sun Jun  4 17:33:01 1995
 endmsg
 end
+arch pentagram_111
+hp 17
+sp 7
+connected 31
+end
+arch dragon
+name big wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 6000
+sp 300
+maxsp 300
+exp 400000
+dam 40
+speed 0.700000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 35000
+move_type fly_low
+arch abil_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch gem
+nrof 700
+end
+end
 arch blocked
 y 3
 end
@@ -275,6 +312,24 @@ x 1
 y 30
 connected 2
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 30
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch pit_closed
 hp 12
 sp 32
@@ -293,6 +348,24 @@ x 1
 y 33
 connected 2
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 33
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch pit_closed
 hp 11
 sp 32
@@ -310,6 +383,24 @@ sp 32
 x 1
 y 36
 connected 2
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 1
+y 36
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch pit_closed
 hp 10
@@ -595,6 +686,45 @@ end
 arch large_stones
 x 3
 y 11
+end
+arch big_dragon
+name chaos dragon
+Wis 30
+Int 18
+hp 6500
+sp 100
+maxsp 300
+exp 300000
+x 3
+y 11
+speed 0.400000
+speed_left -1.710000
+level 30
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
+carrying 35000
+move_type fly_low
+arch gem
+nrof 600
+end
+arch sorcerer_book
+name stones
+face largestone.111
+randomitems none
+no_pick 1
+arch spell_color_spray
+end
+end
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_mass_confusion
+end
 end
 arch large_stones
 x 3
@@ -5805,6 +5935,24 @@ x 23
 y 30
 connected 2
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 30
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch pit_closed
 hp 15
 sp 32
@@ -5823,6 +5971,24 @@ x 23
 y 33
 connected 2
 end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 33
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+end
 arch pit_closed
 hp 14
 sp 32
@@ -5840,6 +6006,24 @@ sp 32
 x 23
 y 36
 connected 2
+end
+arch dragonman
+name dragonman mercenary
+Wis 30
+hp 5500
+sp 1000
+dam 30
+x 23
+y 36
+speed 0.450000
+speed_left -15.299997
+level 20
+arch abil_fear
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
 end
 arch pit_closed
 hp 13
@@ -6034,188 +6218,4 @@ end
 arch blocked
 x 24
 y 40
-end
-arch pentagram_111
-hp 17
-sp 7
-connected 31
-end
-arch dragon
-name big wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 6000
-sp 300
-maxsp 300
-exp 400000
-dam 40
-speed 0.700000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 35000
-move_type fly_low
-arch abil_icestorm
-end
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch gem
-nrof 700
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 30
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 33
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 1
-y 36
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch big_dragon
-name chaos dragon
-Wis 30
-Int 18
-hp 6500
-sp 100
-maxsp 300
-exp 300000
-x 3
-y 11
-speed 0.400000
-speed_left -1.710000
-level 30
-resist_physical 100
-resist_magic 100
-resist_fire 30
-resist_electricity 30
-resist_cold 30
-resist_paralyze 100
-carrying 35000
-move_type fly_low
-arch gem
-nrof 600
-end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_mass_confusion
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 30
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 33
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-end
-arch dragonman
-name dragonman mercenary
-Wis 30
-hp 5500
-sp 1000
-dam 30
-x 23
-y 36
-speed 0.450000
-speed_left -15.299997
-level 20
-arch abil_fear
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
 end

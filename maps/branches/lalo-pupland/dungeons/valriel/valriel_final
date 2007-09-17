@@ -4308,6 +4308,22 @@ arch blackmarble
 x 12
 y 12
 end
+arch destroying_angel
+name High Retributioner
+Con 20
+Int 15
+hp 14000
+maxhp 14000
+exp 1500000
+dam 60
+wc -40
+ac -10
+x 12
+y 12
+speed 0.4
+level 120
+randomitems high_angel
+end
 arch marble
 x 12
 y 13
@@ -4440,6 +4456,22 @@ arch blackmarble
 x 12
 y 44
 end
+arch destroying_angel
+name High Retributioner
+Con 20
+Int 15
+hp 14000
+maxhp 14000
+exp 1500000
+dam 60
+wc -40
+ac -10
+x 12
+y 44
+speed 0.4
+level 120
+randomitems high_angel
+end
 arch marble
 x 12
 y 45
@@ -8924,6 +8956,148 @@ end
 arch marble
 x 28
 y 25
+end
+arch ArchAngel
+name Ascended Vicar of Valriel
+race Divine
+Con 75
+Wis 25
+hp 26000
+sp 1000
+maxsp 500
+exp 5000000
+ac -40
+x 28
+y 25
+speed 0.7
+level 120
+attacktype 5263625
+resist_physical 100
+resist_fire 85
+resist_cold 100
+resist_acid 75
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_slow 50
+resist_turn_undead 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 50
+resist_holyword 100
+path_attuned 8
+randomitems prayer_book_high
+run_away 20
+arch skill_two_handed_weapon
+end
+arch skill_missile_weapon
+end
+arch skill_praying
+end
+arch skill_evocation
+end
+arch skill_sorcery
+end
+arch spell_paralyze
+end
+arch spell_ball_lightning
+end
+arch spell_mana_blast
+end
+arch spell_manabolt
+end
+arch spell_sunspear
+end
+arch holy_avenger
+name Glowing Holy Avenger
+name_pl Glowing Holy Avengers
+title of Valriel
+slaying demon
+msg
+The glowing, holy sword granted to ascended followers of Valriel
+endmsg
+Str 2
+Wis 3
+dam 25
+attacktype 4194568
+resist_magic 35
+resist_electricity 35
+resist_blind 35
+weight 15000
+last_sp 3
+glow_radius 5
+item_power 30
+applied 1
+reflect_spell 1
+end
+arch high_boots_w_l
+title of Valriel
+resist_magic 10
+material 0
+value 140000
+glow_radius 3
+applied 1
+end
+arch plate_mail
+title of Valriel
+Wis 2
+resist_physical 60
+resist_magic 20
+material 0
+value 100000
+weight 20000
+last_sp 0
+glow_radius 3
+applied 1
+end
+arch gloves_w_l
+title of Valriel
+material 0
+value 142000
+glow_radius 3
+applied 1
+end
+arch girdle_strcon
+name girdle of Valriel
+name_pl girdles of Valriel
+title of the Crusade
+msg
+A glowing girdle that grants the wearer
+some benefits compliments of Valriel
+endmsg
+Str 3
+Dex 3
+Con 3
+Wis 5
+Cha 2
+grace 3
+ac 2
+material 0
+value 750000
+glow_radius 5
+applied 1
+damned 1
+end
+arch key2
+name Valriel's Treasure Key
+name_pl Valriel's Treasure Keys
+slaying valriels_treasure_key
+msg
+A glowing key given to the guardian of Valriel's Treasure
+endmsg
+glow_radius 5
+end
+arch ladder_down
+name ladder back to Scorn
+slaying /scorn/temples/valriel
+msg
+You feel relieved to have survived your
+trek to the entrance to Valriel's kingdom.
+endmsg
+hp 9
+sp 8
+glow_radius 8
+end
 end
 arch blackmarble
 x 28
@@ -13850,5014 +14024,6 @@ arch marble
 x 45
 y 12
 end
-arch blackmarble
-x 45
-y 13
-end
-arch marble
-x 45
-y 14
-end
-arch blackmarble
-x 45
-y 15
-end
-arch marble
-x 45
-y 16
-end
-arch blackmarble
-x 45
-y 17
-end
-arch marble
-x 45
-y 18
-end
-arch blackmarble
-x 45
-y 19
-end
-arch marble
-x 45
-y 20
-end
-arch blackmarble
-x 45
-y 21
-end
-arch marble
-x 45
-y 22
-end
-arch blackmarble
-x 45
-y 23
-end
-arch fog
-name glowing essence of Valriel
-x 45
-y 23
-glow_radius 3
-is_floor 1
-end
-arch marble
-x 45
-y 24
-end
-arch blackmarble
-x 45
-y 25
-end
-arch marble
-x 45
-y 26
-end
-arch blackmarble
-x 45
-y 27
-end
-arch marble
-x 45
-y 28
-end
-arch blackmarble
-x 45
-y 29
-end
-arch dwall_0
-x 45
-y 29
-end
-arch marble
-x 45
-y 30
-end
-arch blackmarble
-x 45
-y 31
-end
-arch marble
-x 45
-y 32
-end
-arch blackmarble
-x 45
-y 33
-end
-arch marble
-x 45
-y 34
-end
-arch blackmarble
-x 45
-y 35
-end
-arch marble
-x 45
-y 36
-end
-arch blackmarble
-x 45
-y 37
-end
-arch marble
-x 45
-y 38
-end
-arch blackmarble
-x 45
-y 39
-end
-arch marble
-x 45
-y 40
-end
-arch blackmarble
-x 45
-y 41
-end
-arch marble
-x 45
-y 42
-end
-arch blackmarble
-x 45
-y 43
-end
-arch marble
-x 45
-y 44
-end
-arch blackmarble
-x 45
-y 45
-end
-arch marble
-x 45
-y 46
-end
-arch blackmarble
-x 45
-y 47
-end
-arch marble
-x 45
-y 48
-end
-arch blackmarble
-x 45
-y 49
-end
-arch marble
-x 45
-y 50
-end
-arch blocked
-name Void
-x 45
-y 51
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 45
-y 51
-end
-arch blocked
-name Void
-x 45
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 45
-y 58
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 45
-y 58
-end
-arch blocked
-name Void
-x 46
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 7
-blocksview 0
-end
-arch blackmarble
-x 46
-y 8
-end
-arch marble
-x 46
-y 9
-end
-arch blackmarble
-x 46
-y 10
-end
-arch marble
-x 46
-y 11
-end
-arch blackmarble
-x 46
-y 12
-end
-arch marble
-x 46
-y 13
-end
-arch blackmarble
-x 46
-y 14
-end
-arch marble
-x 46
-y 15
-end
-arch blackmarble
-x 46
-y 16
-end
-arch marble
-x 46
-y 17
-end
-arch blackmarble
-x 46
-y 18
-end
-arch marble
-x 46
-y 19
-end
-arch blackmarble
-x 46
-y 20
-end
-arch marble
-x 46
-y 21
-end
-arch blackmarble
-x 46
-y 22
-end
-arch marble
-x 46
-y 23
-end
-arch blackmarble
-x 46
-y 24
-end
-arch marble
-x 46
-y 25
-end
-arch blackmarble
-x 46
-y 26
-end
-arch marble
-x 46
-y 27
-end
-arch blackmarble
-x 46
-y 28
-end
-arch marble
-x 46
-y 29
-end
-arch dwall_0
-x 46
-y 29
-end
-arch blackmarble
-x 46
-y 30
-end
-arch marble
-x 46
-y 31
-end
-arch blackmarble
-x 46
-y 32
-end
-arch marble
-x 46
-y 33
-end
-arch blackmarble
-x 46
-y 34
-end
-arch marble
-x 46
-y 35
-end
-arch blackmarble
-x 46
-y 36
-end
-arch marble
-x 46
-y 37
-end
-arch blackmarble
-x 46
-y 38
-end
-arch marble
-x 46
-y 39
-end
-arch blackmarble
-x 46
-y 40
-end
-arch marble
-x 46
-y 41
-end
-arch blackmarble
-x 46
-y 42
-end
-arch marble
-x 46
-y 43
-end
-arch blackmarble
-x 46
-y 44
-end
-arch marble
-x 46
-y 45
-end
-arch blackmarble
-x 46
-y 46
-end
-arch marble
-x 46
-y 47
-end
-arch blackmarble
-x 46
-y 48
-end
-arch marble
-x 46
-y 49
-end
-arch blackmarble
-x 46
-y 50
-end
-arch blocked
-name Void
-x 46
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 46
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 3
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 47
-y 3
-end
-arch blocked
-name Void
-x 47
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 7
-blocksview 0
-end
-arch marble
-x 47
-y 8
-end
-arch blackmarble
-x 47
-y 9
-end
-arch marble
-x 47
-y 10
-end
-arch blackmarble
-x 47
-y 11
-end
-arch dwall_0
-x 47
-y 11
-end
-arch marble
-x 47
-y 12
-end
-arch blackmarble
-x 47
-y 13
-end
-arch marble
-x 47
-y 14
-end
-arch blackmarble
-x 47
-y 15
-end
-arch marble
-x 47
-y 16
-end
-arch blackmarble
-x 47
-y 17
-end
-arch marble
-x 47
-y 18
-end
-arch blackmarble
-x 47
-y 19
-end
-arch marble
-x 47
-y 20
-end
-arch blackmarble
-x 47
-y 21
-end
-arch marble
-x 47
-y 22
-end
-arch blackmarble
-x 47
-y 23
-end
-arch marble
-x 47
-y 24
-end
-arch blackmarble
-x 47
-y 25
-end
-arch marble
-x 47
-y 26
-end
-arch blackmarble
-x 47
-y 27
-end
-arch fog
-name glowing essence of Valriel
-x 47
-y 27
-glow_radius 3
-is_floor 1
-end
-arch marble
-x 47
-y 28
-end
-arch blackmarble
-x 47
-y 29
-end
-arch dwall_0
-x 47
-y 29
-end
-arch marble
-x 47
-y 30
-end
-arch blackmarble
-x 47
-y 31
-end
-arch marble
-x 47
-y 32
-end
-arch blackmarble
-x 47
-y 33
-end
-arch marble
-x 47
-y 34
-end
-arch blackmarble
-x 47
-y 35
-end
-arch marble
-x 47
-y 36
-end
-arch blackmarble
-x 47
-y 37
-end
-arch marble
-x 47
-y 38
-end
-arch blackmarble
-x 47
-y 39
-end
-arch marble
-x 47
-y 40
-end
-arch blackmarble
-x 47
-y 41
-end
-arch marble
-x 47
-y 42
-end
-arch blackmarble
-x 47
-y 43
-end
-arch fog
-name glowing essence of Valriel
-x 47
-y 43
-glow_radius 3
-is_floor 1
-end
-arch marble
-x 47
-y 44
-end
-arch blackmarble
-x 47
-y 45
-end
-arch marble
-x 47
-y 46
-end
-arch blackmarble
-x 47
-y 47
-end
-arch dwall_0
-x 47
-y 47
-end
-arch marble
-x 47
-y 48
-end
-arch blackmarble
-x 47
-y 49
-end
-arch marble
-x 47
-y 50
-end
-arch blocked
-name Void
-x 47
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 54
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 47
-y 54
-end
-arch blocked
-name Void
-x 47
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 47
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 7
-blocksview 0
-end
-arch blackmarble
-x 48
-y 8
-end
-arch marble
-x 48
-y 9
-end
-arch blackmarble
-x 48
-y 10
-end
-arch marble
-x 48
-y 11
-end
-arch blackmarble
-x 48
-y 12
-end
-arch marble
-x 48
-y 13
-end
-arch blackmarble
-x 48
-y 14
-end
-arch fog
-name glowing essence of Valriel
-x 48
-y 14
-glow_radius 3
-is_floor 1
-end
-arch marble
-x 48
-y 15
-end
-arch blackmarble
-x 48
-y 16
-end
-arch marble
-x 48
-y 17
-end
-arch blackmarble
-x 48
-y 18
-end
-arch marble
-x 48
-y 19
-end
-arch blackmarble
-x 48
-y 20
-end
-arch marble
-x 48
-y 21
-end
-arch blackmarble
-x 48
-y 22
-end
-arch marble
-x 48
-y 23
-end
-arch blackmarble
-x 48
-y 24
-end
-arch marble
-x 48
-y 25
-end
-arch blackmarble
-x 48
-y 26
-end
-arch marble
-x 48
-y 27
-end
-arch blackmarble
-x 48
-y 28
-end
-arch marble
-x 48
-y 29
-end
-arch blackmarble
-x 48
-y 30
-end
-arch marble
-x 48
-y 31
-end
-arch blackmarble
-x 48
-y 32
-end
-arch fog
-name glowing essence of Valriel
-x 48
-y 32
-glow_radius 3
-is_floor 1
-end
-arch marble
-x 48
-y 33
-end
-arch blackmarble
-x 48
-y 34
-end
-arch marble
-x 48
-y 35
-end
-arch blackmarble
-x 48
-y 36
-end
-arch marble
-x 48
-y 37
-end
-arch blackmarble
-x 48
-y 38
-end
-arch marble
-x 48
-y 39
-end
-arch blackmarble
-x 48
-y 40
-end
-arch marble
-x 48
-y 41
-end
-arch blackmarble
-x 48
-y 42
-end
-arch marble
-x 48
-y 43
-end
-arch blackmarble
-x 48
-y 44
-end
-arch marble
-x 48
-y 45
-end
-arch blackmarble
-x 48
-y 46
-end
-arch marble
-x 48
-y 47
-end
-arch blackmarble
-x 48
-y 48
-end
-arch marble
-x 48
-y 49
-end
-arch blackmarble
-x 48
-y 50
-end
-arch blocked
-name Void
-x 48
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 55
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 48
-y 55
-end
-arch blocked
-name Void
-x 48
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 48
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 6
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 49
-y 6
-end
-arch blocked
-name Void
-x 49
-y 7
-blocksview 0
-end
-arch marble
-x 49
-y 8
-end
-arch blackmarble
-x 49
-y 9
-end
-arch marble
-x 49
-y 10
-end
-arch blackmarble
-x 49
-y 11
-end
-arch marble
-x 49
-y 12
-end
-arch blackmarble
-x 49
-y 13
-end
-arch marble
-x 49
-y 14
-end
-arch blackmarble
-x 49
-y 15
-end
-arch marble
-x 49
-y 16
-end
-arch blackmarble
-x 49
-y 17
-end
-arch marble
-x 49
-y 18
-end
-arch blackmarble
-x 49
-y 19
-end
-arch marble
-x 49
-y 20
-end
-arch blackmarble
-x 49
-y 21
-end
-arch marble
-x 49
-y 22
-end
-arch blackmarble
-x 49
-y 23
-end
-arch marble
-x 49
-y 24
-end
-arch blackmarble
-x 49
-y 25
-end
-arch marble
-x 49
-y 26
-end
-arch blackmarble
-x 49
-y 27
-end
-arch marble
-x 49
-y 28
-end
-arch blackmarble
-x 49
-y 29
-end
-arch marble
-x 49
-y 30
-end
-arch blackmarble
-x 49
-y 31
-end
-arch marble
-x 49
-y 32
-end
-arch blackmarble
-x 49
-y 33
-end
-arch marble
-x 49
-y 34
-end
-arch blackmarble
-x 49
-y 35
-end
-arch marble
-x 49
-y 36
-end
-arch blackmarble
-x 49
-y 37
-end
-arch marble
-x 49
-y 38
-end
-arch blackmarble
-x 49
-y 39
-end
-arch marble
-x 49
-y 40
-end
-arch blackmarble
-x 49
-y 41
-end
-arch marble
-x 49
-y 42
-end
-arch blackmarble
-x 49
-y 43
-end
-arch marble
-x 49
-y 44
-end
-arch blackmarble
-x 49
-y 45
-end
-arch marble
-x 49
-y 46
-end
-arch blackmarble
-x 49
-y 47
-end
-arch marble
-x 49
-y 48
-end
-arch blackmarble
-x 49
-y 49
-end
-arch marble
-x 49
-y 50
-end
-arch blocked
-name Void
-x 49
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 49
-y 57
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 49
-y 57
-end
-arch blocked
-name Void
-x 49
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 7
-blocksview 0
-end
-arch blackmarble
-x 50
-y 8
-end
-arch marble
-x 50
-y 9
-end
-arch blackmarble
-x 50
-y 10
-end
-arch marble
-x 50
-y 11
-end
-arch blackmarble
-x 50
-y 12
-end
-arch marble
-x 50
-y 13
-end
-arch blackmarble
-x 50
-y 14
-end
-arch marble
-x 50
-y 15
-end
-arch blackmarble
-x 50
-y 16
-end
-arch marble
-x 50
-y 17
-end
-arch blackmarble
-x 50
-y 18
-end
-arch marble
-x 50
-y 19
-end
-arch blackmarble
-x 50
-y 20
-end
-arch marble
-x 50
-y 21
-end
-arch blackmarble
-x 50
-y 22
-end
-arch marble
-x 50
-y 23
-end
-arch blackmarble
-x 50
-y 24
-end
-arch marble
-x 50
-y 25
-end
-arch blackmarble
-x 50
-y 26
-end
-arch marble
-x 50
-y 27
-end
-arch blackmarble
-x 50
-y 28
-end
-arch marble
-x 50
-y 29
-end
-arch blackmarble
-x 50
-y 30
-end
-arch marble
-x 50
-y 31
-end
-arch blackmarble
-x 50
-y 32
-end
-arch marble
-x 50
-y 33
-end
-arch blackmarble
-x 50
-y 34
-end
-arch marble
-x 50
-y 35
-end
-arch blackmarble
-x 50
-y 36
-end
-arch marble
-x 50
-y 37
-end
-arch blackmarble
-x 50
-y 38
-end
-arch marble
-x 50
-y 39
-end
-arch blackmarble
-x 50
-y 40
-end
-arch marble
-x 50
-y 41
-end
-arch blackmarble
-x 50
-y 42
-end
-arch marble
-x 50
-y 43
-end
-arch blackmarble
-x 50
-y 44
-end
-arch marble
-x 50
-y 45
-end
-arch blackmarble
-x 50
-y 46
-end
-arch marble
-x 50
-y 47
-end
-arch blackmarble
-x 50
-y 48
-end
-arch marble
-x 50
-y 49
-end
-arch blackmarble
-x 50
-y 50
-end
-arch blocked
-name Void
-x 50
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 50
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 3
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 51
-y 3
-end
-arch blocked
-name Void
-x 51
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 42
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 51
-y 42
-end
-arch blocked
-name Void
-x 51
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 49
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 51
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 1
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 1
-end
-arch blocked
-name Void
-x 52
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 8
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 8
-end
-arch blocked
-name Void
-x 52
-y 9
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 9
-end
-arch blocked
-name Void
-x 52
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 14
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 14
-end
-arch blocked
-name Void
-x 52
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 22
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 22
-end
-arch blocked
-name Void
-x 52
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 30
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 30
-end
-arch blocked
-name Void
-x 52
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 38
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 38
-end
-arch blocked
-name Void
-x 52
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 46
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 46
-end
-arch blocked
-name Void
-x 52
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 49
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 49
-end
-arch blocked
-name Void
-x 52
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 52
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 52
-end
-arch blocked
-name Void
-x 52
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 54
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 54
-end
-arch blocked
-name Void
-x 52
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 52
-y 58
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 52
-y 58
-end
-arch blocked
-name Void
-x 53
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 7
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 53
-y 7
-end
-arch blocked
-name Void
-x 53
-y 8
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 53
-y 8
-end
-arch blocked
-name Void
-x 53
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 49
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 53
-y 49
-end
-arch blocked
-name Void
-x 53
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 53
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 11
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 11
-end
-arch blocked
-name Void
-x 54
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 15
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 15
-end
-arch blocked
-name Void
-x 54
-y 16
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 16
-end
-arch blocked
-name Void
-x 54
-y 17
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 17
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 17
-end
-arch blocked
-name Void
-x 54
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 19
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 19
-end
-arch blocked
-name Void
-x 54
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 27
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 27
-end
-arch blocked
-name Void
-x 54
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 35
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 35
-end
-arch blocked
-name Void
-x 54
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 40
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 40
-end
-arch blocked
-name Void
-x 54
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 43
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 43
-end
-arch blocked
-name Void
-x 54
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 49
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 54
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 54
-y 54
-end
-arch blocked
-name Void
-x 54
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 54
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 3
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 55
-y 3
-end
-arch blocked
-name Void
-x 55
-y 4
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 55
-y 4
-end
-arch blocked
-name Void
-x 55
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 17
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 55
-y 17
-end
-arch blocked
-name Void
-x 55
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 41
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 55
-y 41
-end
-arch blocked
-name Void
-x 55
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 46
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 55
-y 46
-end
-arch blocked
-name Void
-x 55
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 49
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 55
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 4
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 4
-end
-arch blocked
-name Void
-x 56
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 23
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 23
-end
-arch blocked
-name Void
-x 56
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 31
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 31
-end
-arch blocked
-name Void
-x 56
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 39
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 39
-end
-arch blocked
-name Void
-x 56
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 47
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 47
-end
-arch blocked
-name Void
-x 56
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 49
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 50
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 50
-end
-arch blocked
-name Void
-x 56
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 56
-y 57
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 56
-y 57
-end
-arch blocked
-name Void
-x 56
-y 58
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 6
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 57
-y 6
-end
-arch blocked
-name Void
-x 57
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 11
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 15
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 57
-y 15
-end
-arch blocked
-name Void
-x 57
-y 16
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 57
-y 16
-end
-arch blocked
-name Void
-x 57
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 19
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 27
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 35
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 43
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 48
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 49
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 54
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 57
-y 57
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 57
-y 57
-end
-arch blocked
-name Void
-x 57
-y 58
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 57
-y 58
-end
-arch blocked
-name Void
-x 58
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 1
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 2
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 3
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 4
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 5
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 6
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 7
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 8
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 9
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 10
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 11
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 11
-end
-arch blocked
-name Void
-x 58
-y 12
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 13
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 14
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 15
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 16
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 17
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 18
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 19
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 19
-end
-arch blocked
-name Void
-x 58
-y 20
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 21
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 22
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 23
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 24
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 25
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 26
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 27
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 27
-end
-arch blocked
-name Void
-x 58
-y 28
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 29
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 30
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 31
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 32
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 33
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 34
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 35
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 35
-end
-arch blocked
-name Void
-x 58
-y 36
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 37
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 38
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 39
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 40
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 41
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 42
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 43
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 43
-end
-arch blocked
-name Void
-x 58
-y 44
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 45
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 46
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 47
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 48
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 48
-end
-arch blocked
-name Void
-x 58
-y 49
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 49
-end
-arch blocked
-name Void
-x 58
-y 50
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 51
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 52
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 53
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 54
-blocksview 0
-end
-arch firepot
-name Stars
-face sunspear.111
-animation sunspear
-x 58
-y 54
-end
-arch blocked
-name Void
-x 58
-y 55
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 56
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 57
-blocksview 0
-end
-arch blocked
-name Void
-x 58
-y 58
-blocksview 0
-end
-arch destroying_angel
-name High Retributioner
-Con 20
-Int 15
-hp 14000
-maxhp 14000
-exp 1500000
-dam 60
-wc -40
-ac -10
-x 12
-y 12
-speed 0.4
-level 120
-randomitems high_angel
-end
-arch destroying_angel
-name High Retributioner
-Con 20
-Int 15
-hp 14000
-maxhp 14000
-exp 1500000
-dam 60
-wc -40
-ac -10
-x 12
-y 44
-speed 0.4
-level 120
-randomitems high_angel
-end
-arch ArchAngel
-name Ascended Vicar of Valriel
-race Divine
-Con 75
-Wis 25
-hp 26000
-sp 1000
-maxsp 500
-exp 5000000
-ac -40
-x 28
-y 25
-speed 0.7
-level 120
-attacktype 5263625
-resist_physical 100
-resist_fire 85
-resist_cold 100
-resist_acid 75
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_slow 50
-resist_turn_undead 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 50
-resist_holyword 100
-path_attuned 8
-randomitems prayer_book_high
-run_away 20
-arch skill_two_handed_weapon
-end
-arch skill_missile_weapon
-end
-arch skill_praying
-end
-arch skill_evocation
-end
-arch skill_sorcery
-end
-arch spell_paralyze
-end
-arch spell_ball_lightning
-end
-arch spell_mana_blast
-end
-arch spell_manabolt
-end
-arch spell_sunspear
-end
-arch holy_avenger
-name Glowing Holy Avenger
-name_pl Glowing Holy Avengers
-title of Valriel
-slaying demon
-msg
-The glowing, holy sword granted to ascended followers of Valriel
-endmsg
-Str 2
-Wis 3
-dam 25
-attacktype 4194568
-resist_magic 35
-resist_electricity 35
-resist_blind 35
-weight 15000
-last_sp 3
-glow_radius 5
-item_power 30
-applied 1
-reflect_spell 1
-end
-arch high_boots_w_l
-title of Valriel
-resist_magic 10
-material 0
-value 140000
-glow_radius 3
-applied 1
-end
-arch plate_mail
-title of Valriel
-Wis 2
-resist_physical 60
-resist_magic 20
-material 0
-value 100000
-weight 20000
-last_sp 0
-glow_radius 3
-applied 1
-end
-arch gloves_w_l
-title of Valriel
-material 0
-value 142000
-glow_radius 3
-applied 1
-end
-arch girdle_strcon
-name girdle of Valriel
-name_pl girdles of Valriel
-title of the Crusade
-msg
-A glowing girdle that grants the wearer
-some benefits compliments of Valriel
-endmsg
-Str 3
-Dex 3
-Con 3
-Wis 5
-Cha 2
-grace 3
-ac 2
-material 0
-value 750000
-glow_radius 5
-applied 1
-damned 1
-end
-arch key2
-name Valriel's Treasure Key
-name_pl Valriel's Treasure Keys
-slaying valriels_treasure_key
-msg
-A glowing key given to the guardian of Valriel's Treasure
-endmsg
-glow_radius 5
-end
-arch ladder_down
-name ladder back to Scorn
-slaying /scorn/temples/valriel
-msg
-You feel relieved to have survived your
-trek to the entrance to Valriel's kingdom.
-endmsg
-hp 9
-sp 8
-glow_radius 8
-end
-end
 arch destroying_angel
 name High Retributioner
 Con 20
@@ -18874,6 +14040,145 @@ speed 0.4
 level 120
 randomitems high_angel
 end
+arch blackmarble
+x 45
+y 13
+end
+arch marble
+x 45
+y 14
+end
+arch blackmarble
+x 45
+y 15
+end
+arch marble
+x 45
+y 16
+end
+arch blackmarble
+x 45
+y 17
+end
+arch marble
+x 45
+y 18
+end
+arch blackmarble
+x 45
+y 19
+end
+arch marble
+x 45
+y 20
+end
+arch blackmarble
+x 45
+y 21
+end
+arch marble
+x 45
+y 22
+end
+arch blackmarble
+x 45
+y 23
+end
+arch fog
+name glowing essence of Valriel
+x 45
+y 23
+glow_radius 3
+is_floor 1
+end
+arch marble
+x 45
+y 24
+end
+arch blackmarble
+x 45
+y 25
+end
+arch marble
+x 45
+y 26
+end
+arch blackmarble
+x 45
+y 27
+end
+arch marble
+x 45
+y 28
+end
+arch blackmarble
+x 45
+y 29
+end
+arch dwall_0
+x 45
+y 29
+end
+arch marble
+x 45
+y 30
+end
+arch blackmarble
+x 45
+y 31
+end
+arch marble
+x 45
+y 32
+end
+arch blackmarble
+x 45
+y 33
+end
+arch marble
+x 45
+y 34
+end
+arch blackmarble
+x 45
+y 35
+end
+arch marble
+x 45
+y 36
+end
+arch blackmarble
+x 45
+y 37
+end
+arch marble
+x 45
+y 38
+end
+arch blackmarble
+x 45
+y 39
+end
+arch marble
+x 45
+y 40
+end
+arch blackmarble
+x 45
+y 41
+end
+arch marble
+x 45
+y 42
+end
+arch blackmarble
+x 45
+y 43
+end
+arch marble
+x 45
+y 44
+end
 arch destroying_angel
 name High Retributioner
 Con 20
@@ -18889,4 +14194,4699 @@ y 44
 speed 0.4
 level 120
 randomitems high_angel
+end
+arch blackmarble
+x 45
+y 45
+end
+arch marble
+x 45
+y 46
+end
+arch blackmarble
+x 45
+y 47
+end
+arch marble
+x 45
+y 48
+end
+arch blackmarble
+x 45
+y 49
+end
+arch marble
+x 45
+y 50
+end
+arch blocked
+name Void
+x 45
+y 51
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 45
+y 51
+end
+arch blocked
+name Void
+x 45
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 45
+y 58
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 45
+y 58
+end
+arch blocked
+name Void
+x 46
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 7
+blocksview 0
+end
+arch blackmarble
+x 46
+y 8
+end
+arch marble
+x 46
+y 9
+end
+arch blackmarble
+x 46
+y 10
+end
+arch marble
+x 46
+y 11
+end
+arch blackmarble
+x 46
+y 12
+end
+arch marble
+x 46
+y 13
+end
+arch blackmarble
+x 46
+y 14
+end
+arch marble
+x 46
+y 15
+end
+arch blackmarble
+x 46
+y 16
+end
+arch marble
+x 46
+y 17
+end
+arch blackmarble
+x 46
+y 18
+end
+arch marble
+x 46
+y 19
+end
+arch blackmarble
+x 46
+y 20
+end
+arch marble
+x 46
+y 21
+end
+arch blackmarble
+x 46
+y 22
+end
+arch marble
+x 46
+y 23
+end
+arch blackmarble
+x 46
+y 24
+end
+arch marble
+x 46
+y 25
+end
+arch blackmarble
+x 46
+y 26
+end
+arch marble
+x 46
+y 27
+end
+arch blackmarble
+x 46
+y 28
+end
+arch marble
+x 46
+y 29
+end
+arch dwall_0
+x 46
+y 29
+end
+arch blackmarble
+x 46
+y 30
+end
+arch marble
+x 46
+y 31
+end
+arch blackmarble
+x 46
+y 32
+end
+arch marble
+x 46
+y 33
+end
+arch blackmarble
+x 46
+y 34
+end
+arch marble
+x 46
+y 35
+end
+arch blackmarble
+x 46
+y 36
+end
+arch marble
+x 46
+y 37
+end
+arch blackmarble
+x 46
+y 38
+end
+arch marble
+x 46
+y 39
+end
+arch blackmarble
+x 46
+y 40
+end
+arch marble
+x 46
+y 41
+end
+arch blackmarble
+x 46
+y 42
+end
+arch marble
+x 46
+y 43
+end
+arch blackmarble
+x 46
+y 44
+end
+arch marble
+x 46
+y 45
+end
+arch blackmarble
+x 46
+y 46
+end
+arch marble
+x 46
+y 47
+end
+arch blackmarble
+x 46
+y 48
+end
+arch marble
+x 46
+y 49
+end
+arch blackmarble
+x 46
+y 50
+end
+arch blocked
+name Void
+x 46
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 46
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 3
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 47
+y 3
+end
+arch blocked
+name Void
+x 47
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 7
+blocksview 0
+end
+arch marble
+x 47
+y 8
+end
+arch blackmarble
+x 47
+y 9
+end
+arch marble
+x 47
+y 10
+end
+arch blackmarble
+x 47
+y 11
+end
+arch dwall_0
+x 47
+y 11
+end
+arch marble
+x 47
+y 12
+end
+arch blackmarble
+x 47
+y 13
+end
+arch marble
+x 47
+y 14
+end
+arch blackmarble
+x 47
+y 15
+end
+arch marble
+x 47
+y 16
+end
+arch blackmarble
+x 47
+y 17
+end
+arch marble
+x 47
+y 18
+end
+arch blackmarble
+x 47
+y 19
+end
+arch marble
+x 47
+y 20
+end
+arch blackmarble
+x 47
+y 21
+end
+arch marble
+x 47
+y 22
+end
+arch blackmarble
+x 47
+y 23
+end
+arch marble
+x 47
+y 24
+end
+arch blackmarble
+x 47
+y 25
+end
+arch marble
+x 47
+y 26
+end
+arch blackmarble
+x 47
+y 27
+end
+arch fog
+name glowing essence of Valriel
+x 47
+y 27
+glow_radius 3
+is_floor 1
+end
+arch marble
+x 47
+y 28
+end
+arch blackmarble
+x 47
+y 29
+end
+arch dwall_0
+x 47
+y 29
+end
+arch marble
+x 47
+y 30
+end
+arch blackmarble
+x 47
+y 31
+end
+arch marble
+x 47
+y 32
+end
+arch blackmarble
+x 47
+y 33
+end
+arch marble
+x 47
+y 34
+end
+arch blackmarble
+x 47
+y 35
+end
+arch marble
+x 47
+y 36
+end
+arch blackmarble
+x 47
+y 37
+end
+arch marble
+x 47
+y 38
+end
+arch blackmarble
+x 47
+y 39
+end
+arch marble
+x 47
+y 40
+end
+arch blackmarble
+x 47
+y 41
+end
+arch marble
+x 47
+y 42
+end
+arch blackmarble
+x 47
+y 43
+end
+arch fog
+name glowing essence of Valriel
+x 47
+y 43
+glow_radius 3
+is_floor 1
+end
+arch marble
+x 47
+y 44
+end
+arch blackmarble
+x 47
+y 45
+end
+arch marble
+x 47
+y 46
+end
+arch blackmarble
+x 47
+y 47
+end
+arch dwall_0
+x 47
+y 47
+end
+arch marble
+x 47
+y 48
+end
+arch blackmarble
+x 47
+y 49
+end
+arch marble
+x 47
+y 50
+end
+arch blocked
+name Void
+x 47
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 54
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 47
+y 54
+end
+arch blocked
+name Void
+x 47
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 47
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 7
+blocksview 0
+end
+arch blackmarble
+x 48
+y 8
+end
+arch marble
+x 48
+y 9
+end
+arch blackmarble
+x 48
+y 10
+end
+arch marble
+x 48
+y 11
+end
+arch blackmarble
+x 48
+y 12
+end
+arch marble
+x 48
+y 13
+end
+arch blackmarble
+x 48
+y 14
+end
+arch fog
+name glowing essence of Valriel
+x 48
+y 14
+glow_radius 3
+is_floor 1
+end
+arch marble
+x 48
+y 15
+end
+arch blackmarble
+x 48
+y 16
+end
+arch marble
+x 48
+y 17
+end
+arch blackmarble
+x 48
+y 18
+end
+arch marble
+x 48
+y 19
+end
+arch blackmarble
+x 48
+y 20
+end
+arch marble
+x 48
+y 21
+end
+arch blackmarble
+x 48
+y 22
+end
+arch marble
+x 48
+y 23
+end
+arch blackmarble
+x 48
+y 24
+end
+arch marble
+x 48
+y 25
+end
+arch blackmarble
+x 48
+y 26
+end
+arch marble
+x 48
+y 27
+end
+arch blackmarble
+x 48
+y 28
+end
+arch marble
+x 48
+y 29
+end
+arch blackmarble
+x 48
+y 30
+end
+arch marble
+x 48
+y 31
+end
+arch blackmarble
+x 48
+y 32
+end
+arch fog
+name glowing essence of Valriel
+x 48
+y 32
+glow_radius 3
+is_floor 1
+end
+arch marble
+x 48
+y 33
+end
+arch blackmarble
+x 48
+y 34
+end
+arch marble
+x 48
+y 35
+end
+arch blackmarble
+x 48
+y 36
+end
+arch marble
+x 48
+y 37
+end
+arch blackmarble
+x 48
+y 38
+end
+arch marble
+x 48
+y 39
+end
+arch blackmarble
+x 48
+y 40
+end
+arch marble
+x 48
+y 41
+end
+arch blackmarble
+x 48
+y 42
+end
+arch marble
+x 48
+y 43
+end
+arch blackmarble
+x 48
+y 44
+end
+arch marble
+x 48
+y 45
+end
+arch blackmarble
+x 48
+y 46
+end
+arch marble
+x 48
+y 47
+end
+arch blackmarble
+x 48
+y 48
+end
+arch marble
+x 48
+y 49
+end
+arch blackmarble
+x 48
+y 50
+end
+arch blocked
+name Void
+x 48
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 55
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 48
+y 55
+end
+arch blocked
+name Void
+x 48
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 48
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 6
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 49
+y 6
+end
+arch blocked
+name Void
+x 49
+y 7
+blocksview 0
+end
+arch marble
+x 49
+y 8
+end
+arch blackmarble
+x 49
+y 9
+end
+arch marble
+x 49
+y 10
+end
+arch blackmarble
+x 49
+y 11
+end
+arch marble
+x 49
+y 12
+end
+arch blackmarble
+x 49
+y 13
+end
+arch marble
+x 49
+y 14
+end
+arch blackmarble
+x 49
+y 15
+end
+arch marble
+x 49
+y 16
+end
+arch blackmarble
+x 49
+y 17
+end
+arch marble
+x 49
+y 18
+end
+arch blackmarble
+x 49
+y 19
+end
+arch marble
+x 49
+y 20
+end
+arch blackmarble
+x 49
+y 21
+end
+arch marble
+x 49
+y 22
+end
+arch blackmarble
+x 49
+y 23
+end
+arch marble
+x 49
+y 24
+end
+arch blackmarble
+x 49
+y 25
+end
+arch marble
+x 49
+y 26
+end
+arch blackmarble
+x 49
+y 27
+end
+arch marble
+x 49
+y 28
+end
+arch blackmarble
+x 49
+y 29
+end
+arch marble
+x 49
+y 30
+end
+arch blackmarble
+x 49
+y 31
+end
+arch marble
+x 49
+y 32
+end
+arch blackmarble
+x 49
+y 33
+end
+arch marble
+x 49
+y 34
+end
+arch blackmarble
+x 49
+y 35
+end
+arch marble
+x 49
+y 36
+end
+arch blackmarble
+x 49
+y 37
+end
+arch marble
+x 49
+y 38
+end
+arch blackmarble
+x 49
+y 39
+end
+arch marble
+x 49
+y 40
+end
+arch blackmarble
+x 49
+y 41
+end
+arch marble
+x 49
+y 42
+end
+arch blackmarble
+x 49
+y 43
+end
+arch marble
+x 49
+y 44
+end
+arch blackmarble
+x 49
+y 45
+end
+arch marble
+x 49
+y 46
+end
+arch blackmarble
+x 49
+y 47
+end
+arch marble
+x 49
+y 48
+end
+arch blackmarble
+x 49
+y 49
+end
+arch marble
+x 49
+y 50
+end
+arch blocked
+name Void
+x 49
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 49
+y 57
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 49
+y 57
+end
+arch blocked
+name Void
+x 49
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 7
+blocksview 0
+end
+arch blackmarble
+x 50
+y 8
+end
+arch marble
+x 50
+y 9
+end
+arch blackmarble
+x 50
+y 10
+end
+arch marble
+x 50
+y 11
+end
+arch blackmarble
+x 50
+y 12
+end
+arch marble
+x 50
+y 13
+end
+arch blackmarble
+x 50
+y 14
+end
+arch marble
+x 50
+y 15
+end
+arch blackmarble
+x 50
+y 16
+end
+arch marble
+x 50
+y 17
+end
+arch blackmarble
+x 50
+y 18
+end
+arch marble
+x 50
+y 19
+end
+arch blackmarble
+x 50
+y 20
+end
+arch marble
+x 50
+y 21
+end
+arch blackmarble
+x 50
+y 22
+end
+arch marble
+x 50
+y 23
+end
+arch blackmarble
+x 50
+y 24
+end
+arch marble
+x 50
+y 25
+end
+arch blackmarble
+x 50
+y 26
+end
+arch marble
+x 50
+y 27
+end
+arch blackmarble
+x 50
+y 28
+end
+arch marble
+x 50
+y 29
+end
+arch blackmarble
+x 50
+y 30
+end
+arch marble
+x 50
+y 31
+end
+arch blackmarble
+x 50
+y 32
+end
+arch marble
+x 50
+y 33
+end
+arch blackmarble
+x 50
+y 34
+end
+arch marble
+x 50
+y 35
+end
+arch blackmarble
+x 50
+y 36
+end
+arch marble
+x 50
+y 37
+end
+arch blackmarble
+x 50
+y 38
+end
+arch marble
+x 50
+y 39
+end
+arch blackmarble
+x 50
+y 40
+end
+arch marble
+x 50
+y 41
+end
+arch blackmarble
+x 50
+y 42
+end
+arch marble
+x 50
+y 43
+end
+arch blackmarble
+x 50
+y 44
+end
+arch marble
+x 50
+y 45
+end
+arch blackmarble
+x 50
+y 46
+end
+arch marble
+x 50
+y 47
+end
+arch blackmarble
+x 50
+y 48
+end
+arch marble
+x 50
+y 49
+end
+arch blackmarble
+x 50
+y 50
+end
+arch blocked
+name Void
+x 50
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 50
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 3
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 51
+y 3
+end
+arch blocked
+name Void
+x 51
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 42
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 51
+y 42
+end
+arch blocked
+name Void
+x 51
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 49
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 51
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 1
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 1
+end
+arch blocked
+name Void
+x 52
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 8
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 8
+end
+arch blocked
+name Void
+x 52
+y 9
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 9
+end
+arch blocked
+name Void
+x 52
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 14
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 14
+end
+arch blocked
+name Void
+x 52
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 22
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 22
+end
+arch blocked
+name Void
+x 52
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 30
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 30
+end
+arch blocked
+name Void
+x 52
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 38
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 38
+end
+arch blocked
+name Void
+x 52
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 46
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 46
+end
+arch blocked
+name Void
+x 52
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 49
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 49
+end
+arch blocked
+name Void
+x 52
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 52
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 52
+end
+arch blocked
+name Void
+x 52
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 54
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 54
+end
+arch blocked
+name Void
+x 52
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 52
+y 58
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 52
+y 58
+end
+arch blocked
+name Void
+x 53
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 7
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 53
+y 7
+end
+arch blocked
+name Void
+x 53
+y 8
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 53
+y 8
+end
+arch blocked
+name Void
+x 53
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 49
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 53
+y 49
+end
+arch blocked
+name Void
+x 53
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 53
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 11
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 11
+end
+arch blocked
+name Void
+x 54
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 15
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 15
+end
+arch blocked
+name Void
+x 54
+y 16
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 16
+end
+arch blocked
+name Void
+x 54
+y 17
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 17
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 17
+end
+arch blocked
+name Void
+x 54
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 19
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 19
+end
+arch blocked
+name Void
+x 54
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 27
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 27
+end
+arch blocked
+name Void
+x 54
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 35
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 35
+end
+arch blocked
+name Void
+x 54
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 40
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 40
+end
+arch blocked
+name Void
+x 54
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 43
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 43
+end
+arch blocked
+name Void
+x 54
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 49
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 54
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 54
+y 54
+end
+arch blocked
+name Void
+x 54
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 54
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 3
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 55
+y 3
+end
+arch blocked
+name Void
+x 55
+y 4
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 55
+y 4
+end
+arch blocked
+name Void
+x 55
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 17
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 55
+y 17
+end
+arch blocked
+name Void
+x 55
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 41
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 55
+y 41
+end
+arch blocked
+name Void
+x 55
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 46
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 55
+y 46
+end
+arch blocked
+name Void
+x 55
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 49
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 55
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 4
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 4
+end
+arch blocked
+name Void
+x 56
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 23
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 23
+end
+arch blocked
+name Void
+x 56
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 31
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 31
+end
+arch blocked
+name Void
+x 56
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 39
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 39
+end
+arch blocked
+name Void
+x 56
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 47
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 47
+end
+arch blocked
+name Void
+x 56
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 49
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 50
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 50
+end
+arch blocked
+name Void
+x 56
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 56
+y 57
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 56
+y 57
+end
+arch blocked
+name Void
+x 56
+y 58
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 6
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 57
+y 6
+end
+arch blocked
+name Void
+x 57
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 11
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 15
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 57
+y 15
+end
+arch blocked
+name Void
+x 57
+y 16
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 57
+y 16
+end
+arch blocked
+name Void
+x 57
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 19
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 27
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 35
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 43
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 48
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 49
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 54
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 57
+y 57
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 57
+y 57
+end
+arch blocked
+name Void
+x 57
+y 58
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 57
+y 58
+end
+arch blocked
+name Void
+x 58
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 1
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 2
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 3
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 4
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 5
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 6
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 7
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 8
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 9
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 10
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 11
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 11
+end
+arch blocked
+name Void
+x 58
+y 12
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 13
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 14
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 15
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 16
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 17
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 18
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 19
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 19
+end
+arch blocked
+name Void
+x 58
+y 20
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 21
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 22
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 23
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 24
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 25
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 26
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 27
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 27
+end
+arch blocked
+name Void
+x 58
+y 28
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 29
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 30
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 31
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 32
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 33
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 34
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 35
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 35
+end
+arch blocked
+name Void
+x 58
+y 36
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 37
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 38
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 39
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 40
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 41
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 42
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 43
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 43
+end
+arch blocked
+name Void
+x 58
+y 44
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 45
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 46
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 47
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 48
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 48
+end
+arch blocked
+name Void
+x 58
+y 49
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 49
+end
+arch blocked
+name Void
+x 58
+y 50
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 51
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 52
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 53
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 54
+blocksview 0
+end
+arch firepot
+name Stars
+face sunspear.111
+animation sunspear
+x 58
+y 54
+end
+arch blocked
+name Void
+x 58
+y 55
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 56
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 57
+blocksview 0
+end
+arch blocked
+name Void
+x 58
+y 58
+blocksview 0
 end

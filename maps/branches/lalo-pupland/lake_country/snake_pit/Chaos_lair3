@@ -805,6 +805,14 @@ arch small_stones
 x 2
 y 6
 end
+arch pentagram_111
+hp 14
+sp 14
+x 2
+y 6
+invisible 1
+connected 2
+end
 arch small_stones
 x 2
 y 7
@@ -4368,12 +4376,4 @@ end
 arch large_stones
 x 15
 y 40
-end
-arch pentagram_111
-hp 14
-sp 14
-x 2
-y 6
-invisible 1
-connected 2
 end

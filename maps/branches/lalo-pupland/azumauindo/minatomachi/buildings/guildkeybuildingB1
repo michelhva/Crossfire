@@ -606,6 +606,10 @@ arch dirtfloor
 x 6
 y 14
 end
+arch Balrog
+x 6
+y 14
+end
 arch dirtfloor
 x 6
 y 15
@@ -1562,6 +1566,10 @@ arch dirtfloor
 x 11
 y 10
 end
+arch jessyb
+x 11
+y 10
+end
 arch dirtfloor
 x 11
 y 11
@@ -1829,6 +1837,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 12
+y 23
+end
+arch jessyb
 x 12
 y 23
 end
@@ -2897,6 +2909,10 @@ name_pl stonefloor
 x 19
 y 7
 end
+arch jessyb
+x 19
+y 7
+end
 arch dirtfloor
 x 19
 y 8
@@ -2960,6 +2976,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 19
+y 16
+end
+arch Balrog
 x 19
 y 16
 end
@@ -4055,6 +4075,10 @@ arch dirtfloor
 x 25
 y 12
 end
+arch Balrog
+x 25
+y 12
+end
 arch dirtfloor
 x 25
 y 13
@@ -4419,6 +4443,10 @@ arch dirtfloor
 x 27
 y 19
 end
+arch Balrog
+x 27
+y 19
+end
 arch dirtfloor
 x 27
 y 20
@@ -4631,6 +4659,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 29
+y 7
+end
+arch jessyb
 x 29
 y 7
 end
@@ -5597,36 +5629,4 @@ end
 arch blocked
 x 35
 y 26
-end
-arch Balrog
-x 6
-y 14
-end
-arch jessyb
-x 11
-y 10
-end
-arch jessyb
-x 12
-y 23
-end
-arch jessyb
-x 19
-y 7
-end
-arch Balrog
-x 19
-y 16
-end
-arch Balrog
-x 25
-y 12
-end
-arch Balrog
-x 27
-y 19
-end
-arch jessyb
-x 29
-y 7
 end

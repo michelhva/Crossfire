@@ -1603,6 +1603,13 @@ arch unholy_ground
 x 9
 y 10
 end
+arch dread
+msg
+Grrrrrrr
+endmsg
+x 9
+y 10
+end
 arch flagstone
 x 9
 y 11
@@ -1656,6 +1663,11 @@ x 9
 y 17
 end
 arch unholy_ground
+x 9
+y 17
+end
+arch dread
+name Dreaded Monster
 x 9
 y 17
 end
@@ -5450,6 +5462,11 @@ arch unholy_ground
 x 31
 y 9
 end
+arch dread
+name Dreadful Monster
+x 31
+y 9
+end
 arch flagstone
 x 31
 y 10
@@ -5471,6 +5488,11 @@ x 31
 y 12
 end
 arch unholy_ground
+x 31
+y 12
+end
+arch behemoth
+name belladonna monster
 x 31
 y 12
 end
@@ -6039,26 +6061,4 @@ end
 arch awall_2_2_4
 x 34
 y 19
-end
-arch dread
-msg
-Grrrrrrr
-endmsg
-x 9
-y 10
-end
-arch dread
-name Dreaded Monster
-x 9
-y 17
-end
-arch dread
-name Dreadful Monster
-x 31
-y 9
-end
-arch behemoth
-name belladonna monster
-x 31
-y 12
 end

@@ -972,6 +972,23 @@ arch large_stones
 x 4
 y 28
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 4
+y 28
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 4
 y 29
@@ -1129,6 +1146,23 @@ end
 arch large_stones
 x 5
 y 20
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 5
+y 20
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 5
@@ -1335,6 +1369,23 @@ arch large_stones
 x 6
 y 20
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 6
+y 20
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 6
 y 21
@@ -1374,6 +1425,23 @@ end
 arch large_stones
 x 6
 y 27
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 6
+y 27
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 6
@@ -1797,6 +1865,23 @@ arch large_stones
 x 8
 y 28
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 8
+y 28
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 8
 y 29
@@ -1958,6 +2043,23 @@ arch large_stones
 x 9
 y 14
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 9
+y 14
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 9
 y 15
@@ -2033,6 +2135,23 @@ end
 arch large_stones
 x 9
 y 29
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 9
+y 29
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 9
@@ -2167,6 +2286,23 @@ end
 arch large_stones
 x 10
 y 14
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 10
+y 14
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 10
@@ -2434,6 +2570,23 @@ arch large_stones
 x 11
 y 23
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 11
+y 23
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 11
 y 24
@@ -2623,6 +2776,23 @@ end
 arch large_stones
 x 12
 y 24
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 12
+y 24
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 12
@@ -3742,6 +3912,14 @@ arch large_stones
 x 17
 y 27
 end
+arch big_dragon
+name a trapped and hurt dragon
+hp 1500
+x 17
+y 27
+speed 0.100000
+speed_left -6.870000
+end
 arch large_stones
 x 17
 y 28
@@ -3912,6 +4090,23 @@ end
 arch large_stones
 x 18
 y 19
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 18
+y 19
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 18
@@ -4116,6 +4311,23 @@ arch large_stones
 x 19
 y 19
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 19
+y 19
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 19
 y 20
@@ -4127,6 +4339,40 @@ end
 arch large_stones
 x 19
 y 22
+end
+arch dragon
+name wyvern of chaos
+Con 30
+Wis 30
+Int 12
+hp 3000
+sp 300
+maxsp 300
+exp 200000
+dam 30
+x 19
+y 22
+speed 0.500000
+speed_left -1.840000
+level 30
+attacktype 29
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
+carrying 25000
+move_type fly_low
+arch abil_icestorm
+end
+arch spell_dragonbreath
+end
+arch spell_mass_confusion
+end
+arch spell_sm_lightning
+end
+arch gem
+nrof 500
+end
 end
 arch large_stones
 x 19
@@ -4214,6 +4460,38 @@ end
 arch large_stones
 x 20
 y 2
+end
+arch cobra
+name A magnificent metallic serpent
+msg
+@match *
+Sss.. sssssssssssssssssss
+endmsg
+Wis 30
+Int 14
+hp 3000
+sp 200
+maxsp 100
+exp 65000
+dam 30
+x 20
+y 2
+speed 1.000000
+speed_left -50.419998
+level 30
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+unaggressive 1
+can_cast_spell 1
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+arch spell_paralyze
+end
+arch spell_mass_confusion
+end
 end
 arch large_stones
 x 20
@@ -4917,6 +5195,23 @@ arch large_stones
 x 23
 y 17
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 23
+y 17
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 23
 y 18
@@ -4940,6 +5235,23 @@ end
 arch large_stones
 x 23
 y 23
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 23
+y 23
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 23
@@ -5112,6 +5424,23 @@ arch large_stones
 x 24
 y 18
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 24
+y 18
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 24
 y 19
@@ -5135,6 +5464,23 @@ end
 arch large_stones
 x 24
 y 24
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 24
+y 24
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 24
@@ -5299,6 +5645,23 @@ arch large_stones
 x 25
 y 20
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 25
+y 20
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 25
 y 21
@@ -5334,6 +5697,23 @@ end
 arch large_stones
 x 25
 y 29
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 25
+y 29
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 25
@@ -5450,6 +5830,23 @@ arch large_stones
 x 26
 y 15
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 26
+y 15
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 26
 y 16
@@ -5469,6 +5866,23 @@ end
 arch large_stones
 x 26
 y 20
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 26
+y 20
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 26
@@ -5509,6 +5923,23 @@ end
 arch large_stones
 x 26
 y 30
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 26
+y 30
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 26
@@ -5617,6 +6048,23 @@ arch large_stones
 x 27
 y 15
 end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 27
+y 15
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
+end
 arch large_stones
 x 27
 y 16
@@ -5664,6 +6112,23 @@ end
 arch large_stones
 x 27
 y 27
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 27
+y 27
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 27
@@ -5831,6 +6296,23 @@ end
 arch large_stones
 x 28
 y 27
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 28
+y 27
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 28
@@ -6025,6 +6507,23 @@ end
 arch large_stones
 x 29
 y 22
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 29
+y 22
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 29
@@ -6244,6 +6743,23 @@ end
 arch large_stones
 x 30
 y 23
+end
+arch cobra
+name One sleek black metallic serpent
+hp 500
+exp 25000
+dam 30
+x 30
+y 23
+speed 0.700000
+speed_left -37.220001
+attacktype 82945
+resist_fire 30
+resist_electricity 30
+resist_poison 100
+can_see_in_dark 1
+arch abil_poison_cloud
+end
 end
 arch large_stones
 x 30
@@ -7398,520 +7914,4 @@ end
 arch blocked
 x 35
 y 35
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 4
-y 28
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 5
-y 20
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 20
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 6
-y 27
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 8
-y 28
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 9
-y 14
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 9
-y 29
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 10
-y 14
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 11
-y 23
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 12
-y 24
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch big_dragon
-name a trapped and hurt dragon
-hp 1500
-x 17
-y 27
-speed 0.100000
-speed_left -6.870000
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 18
-y 19
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 19
-y 19
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch dragon
-name wyvern of chaos
-Con 30
-Wis 30
-Int 12
-hp 3000
-sp 300
-maxsp 300
-exp 200000
-dam 30
-x 19
-y 22
-speed 0.500000
-speed_left -1.840000
-level 30
-attacktype 29
-resist_physical 100
-resist_electricity 30
-resist_cold 100
-resist_paralyze 100
-carrying 25000
-move_type fly_low
-arch abil_icestorm
-end
-arch spell_dragonbreath
-end
-arch spell_mass_confusion
-end
-arch spell_sm_lightning
-end
-arch gem
-nrof 500
-end
-end
-arch cobra
-name A magnificent metallic serpent
-msg
-@match *
-Sss.. sssssssssssssssssss
-endmsg
-Wis 30
-Int 14
-hp 3000
-sp 200
-maxsp 100
-exp 65000
-dam 30
-x 20
-y 2
-speed 1.000000
-speed_left -50.419998
-level 30
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-unaggressive 1
-can_cast_spell 1
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch spell_mass_confusion
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 23
-y 17
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 23
-y 23
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 24
-y 18
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 24
-y 24
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 25
-y 20
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 25
-y 29
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 26
-y 15
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 26
-y 20
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 26
-y 30
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 27
-y 15
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 27
-y 27
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 28
-y 27
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 29
-y 22
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
-end
-arch cobra
-name One sleek black metallic serpent
-hp 500
-exp 25000
-dam 30
-x 30
-y 23
-speed 0.700000
-speed_left -37.220001
-attacktype 82945
-resist_fire 30
-resist_electricity 30
-resist_poison 100
-can_see_in_dark 1
-arch abil_poison_cloud
-end
 end

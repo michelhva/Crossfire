@@ -217,6 +217,11 @@ arch grass
 x 1
 y 14
 end
+arch giant
+name guardian giant
+x 1
+y 14
+end
 arch grass
 x 1
 y 15
@@ -343,6 +348,11 @@ arch grass
 x 2
 y 14
 end
+arch giant
+name guardian giant
+x 2
+y 14
+end
 arch grass
 x 2
 y 15
@@ -450,6 +460,11 @@ x 3
 y 14
 end
 arch grass
+x 3
+y 15
+end
+arch giant
+name guardian giant
 x 3
 y 15
 end
@@ -2535,19 +2550,4 @@ end
 arch grass
 x 19
 y 17
-end
-arch giant
-name guardian giant
-x 1
-y 14
-end
-arch giant
-name guardian giant
-x 2
-y 14
-end
-arch giant
-name guardian giant
-x 3
-y 15
 end

@@ -7640,6 +7640,10 @@ name stonefloor
 x 67
 y 9
 end
+arch giant
+x 67
+y 9
+end
 arch stonefloor2
 name stonefloor
 x 67
@@ -8957,8 +8961,4 @@ end
 arch bwall_2_2_4
 x 79
 y 16
-end
-arch giant
-x 67
-y 9
 end

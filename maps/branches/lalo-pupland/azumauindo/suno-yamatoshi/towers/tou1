@@ -710,6 +710,10 @@ arch flagstone
 x 5
 y 8
 end
+arch dread
+x 5
+y 8
+end
 arch flagstone
 x 5
 y 9
@@ -812,6 +816,10 @@ x 6
 y 4
 end
 arch flagstone
+x 6
+y 5
+end
+arch dread
 x 6
 y 5
 end
@@ -1035,6 +1043,10 @@ arch flagstone
 x 8
 y 6
 end
+arch dread
+x 8
+y 6
+end
 arch flagstone
 x 8
 y 7
@@ -1048,6 +1060,10 @@ x 8
 y 9
 end
 arch flagstone
+x 8
+y 10
+end
+arch dread
 x 8
 y 10
 end
@@ -1255,6 +1271,10 @@ arch flagstone
 x 10
 y 5
 end
+arch dread
+x 10
+y 5
+end
 arch flagstone
 x 10
 y 6
@@ -1264,6 +1284,10 @@ x 10
 y 7
 end
 arch flagstone
+x 10
+y 8
+end
+arch dread
 x 10
 y 8
 end
@@ -2212,28 +2236,4 @@ end
 arch blocked
 x 18
 y 18
-end
-arch dread
-x 5
-y 8
-end
-arch dread
-x 6
-y 5
-end
-arch dread
-x 8
-y 6
-end
-arch dread
-x 8
-y 10
-end
-arch dread
-x 10
-y 5
-end
-arch dread
-x 10
-y 8
 end

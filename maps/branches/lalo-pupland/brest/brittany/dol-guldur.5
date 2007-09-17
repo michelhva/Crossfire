@@ -1,13 +1,13 @@
 arch map
 name <untitled>
 region brest
+width 32
+height 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Jun  2 02:29:14 1994
 endmsg
-width 32
-height 19
 end
 arch dungeon_floor
 end
@@ -384,11 +384,11 @@ x 2
 y 14
 end
 arch spikes_open
+x 2
+y 14
 speed 0.500000
 value 1
 connected 2
-x 2
-y 14
 end
 arch boulder
 x 2
@@ -435,11 +435,19 @@ arch dungeon_floor
 x 3
 y 1
 end
+arch chinese_dragon
+x 3
+y 1
+end
 arch dungeon_floor
 x 3
 y 2
 end
 arch dungeon_floor
+x 3
+y 3
+end
+arch dread
 x 3
 y 3
 end
@@ -455,6 +463,10 @@ arch dungeon_floor
 x 3
 y 6
 end
+arch behemoth
+x 3
+y 6
+end
 arch dungeon_floor
 x 3
 y 7
@@ -464,6 +476,10 @@ x 3
 y 8
 end
 arch dungeon_floor
+x 3
+y 9
+end
+arch dread
 x 3
 y 9
 end
@@ -492,9 +508,9 @@ x 3
 y 14
 end
 arch button_plate
-connected 1
 x 3
 y 14
+connected 1
 end
 arch dungeon_floor
 x 3
@@ -781,6 +797,10 @@ arch dungeon_floor
 x 6
 y 1
 end
+arch dread
+x 6
+y 1
+end
 arch dungeon_floor
 x 6
 y 2
@@ -822,9 +842,9 @@ x 6
 y 7
 end
 arch button_small
-connected 2
 x 6
 y 7
+connected 2
 end
 arch dungeon_floor
 x 6
@@ -1074,6 +1094,10 @@ arch dungeon_floor
 x 8
 y 3
 end
+arch behemoth
+x 8
+y 3
+end
 arch dungeon_floor
 x 8
 y 4
@@ -1086,11 +1110,19 @@ arch dungeon_floor
 x 8
 y 6
 end
+arch dread
+x 8
+y 6
+end
 arch dungeon_floor
 x 8
 y 7
 end
 arch dungeon_floor
+x 8
+y 8
+end
+arch behemoth
 x 8
 y 8
 end
@@ -1531,40 +1563,40 @@ x 11
 y 9
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 11
 y 9
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 11
 y 10
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 11
 y 10
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 11
 y 11
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 11
 y 11
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 11
 y 12
 end
 arch block_door_closed
-speed 0.500000
-connected 1
 x 11
 y 12
+speed 0.500000
+connected 1
 end
 arch dungeon_floor
 x 11
@@ -1672,11 +1704,19 @@ arch dungeon_floor
 x 12
 y 9
 end
+arch big_dragon
+x 12
+y 9
+end
 arch dungeon_floor
 x 12
 y 10
 end
 arch dungeon_floor
+x 12
+y 11
+end
+arch big_dragon
 x 12
 y 11
 end
@@ -1751,6 +1791,10 @@ x 13
 y 1
 end
 arch pstone_2
+x 13
+y 2
+end
+arch gaelotroll
 x 13
 y 2
 end
@@ -1994,6 +2038,10 @@ arch pstone_2
 x 15
 y 5
 end
+arch titan
+x 15
+y 5
+end
 arch pstone_2
 x 15
 y 6
@@ -2015,6 +2063,10 @@ x 15
 y 8
 end
 arch dungeon_floor
+x 15
+y 9
+end
+arch big_dragon
 x 15
 y 9
 end
@@ -2117,6 +2169,10 @@ x 16
 y 10
 end
 arch dungeon_floor
+x 16
+y 11
+end
+arch chinese_dragon
 x 16
 y 11
 end
@@ -2942,6 +2998,10 @@ arch dungeon_floor
 x 23
 y 5
 end
+arch troll
+x 23
+y 5
+end
 arch dungeon_floor
 x 23
 y 6
@@ -3048,6 +3108,10 @@ arch dungeon_floor
 x 24
 y 8
 end
+arch troll
+x 24
+y 8
+end
 arch dungeon_floor
 x 24
 y 9
@@ -3248,6 +3312,10 @@ arch dungeon_floor
 x 26
 y 5
 end
+arch troll
+x 26
+y 5
+end
 arch dungeon_floor
 x 26
 y 6
@@ -4017,72 +4085,4 @@ end
 arch bwall_0
 x 31
 y 18
-end
-arch chinese_dragon
-x 3
-y 1
-end
-arch dread
-x 3
-y 3
-end
-arch behemoth
-x 3
-y 6
-end
-arch dread
-x 3
-y 9
-end
-arch dread
-x 6
-y 1
-end
-arch behemoth
-x 8
-y 3
-end
-arch dread
-x 8
-y 6
-end
-arch behemoth
-x 8
-y 8
-end
-arch big_dragon
-x 12
-y 9
-end
-arch big_dragon
-x 12
-y 11
-end
-arch gaelotroll
-x 13
-y 2
-end
-arch titan
-x 15
-y 5
-end
-arch big_dragon
-x 15
-y 9
-end
-arch chinese_dragon
-x 16
-y 11
-end
-arch troll
-x 23
-y 5
-end
-arch troll
-x 24
-y 8
-end
-arch troll
-x 26
-y 5
 end

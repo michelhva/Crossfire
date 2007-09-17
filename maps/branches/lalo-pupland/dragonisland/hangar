@@ -1108,6 +1108,18 @@ arch cobblestones2
 x 3
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /world/world_101_114
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 16
+sp 39
+x 3
+y 8
+end
 arch magic_banned
 x 3
 y 9
@@ -1161,6 +1173,18 @@ x 3
 y 14
 end
 arch cobblestones2
+x 3
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /rainbow_islands/station
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 7
+sp 3
 x 3
 y 14
 end
@@ -1217,6 +1241,18 @@ x 3
 y 20
 end
 arch cobblestones2
+x 3
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_128_109
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 35
+sp 13
 x 3
 y 20
 end
@@ -1273,6 +1309,18 @@ x 3
 y 26
 end
 arch cobblestones2
+x 3
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_107_123
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 32
+sp 30
 x 3
 y 26
 end
@@ -4068,6 +4116,18 @@ arch cobblestones2
 x 12
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /world/world_121_116
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 37
+sp 46
+x 12
+y 8
+end
 arch magic_banned
 x 12
 y 9
@@ -4121,6 +4181,18 @@ x 12
 y 14
 end
 arch cobblestones2
+x 12
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_116_102
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 29
+sp 37
 x 12
 y 14
 end
@@ -4177,6 +4249,15 @@ x 12
 y 20
 end
 arch cobblestones2
+x 12
+y 20
+end
+arch dragon_exit
+name dragon express
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
 x 12
 y 20
 end
@@ -4233,6 +4314,15 @@ x 12
 y 26
 end
 arch cobblestones2
+x 12
+y 26
+end
+arch dragon_exit
+name dragon express
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
 x 12
 y 26
 end
@@ -5766,6 +5856,18 @@ arch cobblestones2
 x 17
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /lone_town/town
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 22
+sp 11
+x 17
+y 8
+end
 arch magic_banned
 x 17
 y 9
@@ -5819,6 +5921,18 @@ x 17
 y 14
 end
 arch cobblestones2
+x 17
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_105_115
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 5
+sp 37
 x 17
 y 14
 end
@@ -5875,6 +5989,18 @@ x 17
 y 20
 end
 arch cobblestones2
+x 17
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /world/world_109_126
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 16
+sp 20
 x 17
 y 20
 end
@@ -5931,6 +6057,18 @@ x 17
 y 26
 end
 arch cobblestones2
+x 17
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 34
+sp 8
 x 17
 y 26
 end
@@ -8715,6 +8853,18 @@ arch cobblestones2
 x 26
 y 8
 end
+arch dragon_exit
+name dragon express
+slaying /world/world_102_108
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 17
+sp 12
+x 26
+y 8
+end
 arch magic_banned
 x 26
 y 9
@@ -8768,6 +8918,18 @@ x 26
 y 14
 end
 arch cobblestones2
+x 26
+y 14
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 34
+sp 8
 x 26
 y 14
 end
@@ -8824,6 +8986,18 @@ x 26
 y 20
 end
 arch cobblestones2
+x 26
+y 20
+end
+arch dragon_exit
+name dragon express
+slaying /nurnberg/city
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 25
+sp 15
 x 26
 y 20
 end
@@ -8880,6 +9054,18 @@ x 26
 y 26
 end
 arch cobblestones2
+x 26
+y 26
+end
+arch dragon_exit
+name dragon express
+slaying hangar
+msg
+Please hurry up or we will be moving
+without you.
+endmsg
+hp 34
+sp 8
 x 26
 y 26
 end
@@ -10999,190 +11185,4 @@ end
 arch blocked
 x 34
 y 15
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_101_114
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 16
-sp 39
-x 3
-y 8
-end
-arch dragon_exit
-name dragon express
-slaying /rainbow_islands/station
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 7
-sp 3
-x 3
-y 14
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_128_109
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 35
-sp 13
-x 3
-y 20
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_107_123
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 32
-sp 30
-x 3
-y 26
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_121_116
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 37
-sp 46
-x 12
-y 8
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_116_102
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 29
-sp 37
-x 12
-y 14
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-x 12
-y 20
-end
-arch dragon_exit
-name dragon express
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-x 12
-y 26
-end
-arch dragon_exit
-name dragon express
-slaying /lone_town/town
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 22
-sp 11
-x 17
-y 8
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_105_115
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 5
-sp 37
-x 17
-y 14
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_109_126
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 16
-sp 20
-x 17
-y 20
-end
-arch dragon_exit
-name dragon express
-slaying hangar
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 34
-sp 8
-x 17
-y 26
-end
-arch dragon_exit
-name dragon express
-slaying /world/world_102_108
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 17
-sp 12
-x 26
-y 8
-end
-arch dragon_exit
-name dragon express
-slaying hangar
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 34
-sp 8
-x 26
-y 14
-end
-arch dragon_exit
-name dragon express
-slaying /nurnberg/city
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 25
-sp 15
-x 26
-y 20
-end
-arch dragon_exit
-name dragon express
-slaying hangar
-msg
-Please hurry up or we will be moving
-without you.
-endmsg
-hp 34
-sp 8
-x 26
-y 26
 end

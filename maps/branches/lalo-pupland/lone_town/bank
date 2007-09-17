@@ -1,15 +1,15 @@
 arch map
-region lonetown
 name townA_bank
+region lonetown
+width 19
+height 20
+enter_x 9
+enter_y 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 19:41:27 1996
 endmsg
-hp 9
-sp 19
-x 19
-y 20
 end
 arch afloor_right
 end

@@ -2209,7 +2209,15 @@ arch cobblestones2
 x 11
 y 12
 end
+arch dragon
+x 11
+y 12
+end
 arch cobblestones2
+x 11
+y 13
+end
+arch dragon
 x 11
 y 13
 end
@@ -2221,6 +2229,10 @@ arch button_lever
 x 11
 y 14
 connected 3
+end
+arch dragon
+x 11
+y 14
 end
 arch cobblestones2
 x 11
@@ -2271,11 +2283,19 @@ x 11
 y 20
 connected 4
 end
+arch giant
+x 11
+y 20
+end
 arch cobblestones2
 x 11
 y 21
 end
 arch cobblestones2
+x 11
+y 22
+end
+arch giant
 x 11
 y 22
 end
@@ -2490,11 +2510,19 @@ arch cobblestones2
 x 12
 y 20
 end
+arch giant
+x 12
+y 20
+end
 arch cobblestones2
 x 12
 y 21
 end
 arch cobblestones2
+x 12
+y 22
+end
+arch giant
 x 12
 y 22
 end
@@ -2650,11 +2678,23 @@ arch cobblestones2
 x 13
 y 12
 end
+arch dragon
+x 13
+y 12
+end
 arch cobblestones2
 x 13
 y 13
 end
+arch dragon
+x 13
+y 13
+end
 arch cobblestones2
+x 13
+y 14
+end
+arch dragon
 x 13
 y 14
 end
@@ -2697,11 +2737,19 @@ arch cobblestones2
 x 13
 y 20
 end
+arch giant
+x 13
+y 20
+end
 arch cobblestones2
 x 13
 y 21
 end
 arch cobblestones2
+x 13
+y 22
+end
+arch giant
 x 13
 y 22
 end
@@ -2900,11 +2948,19 @@ arch cobblestones2
 x 14
 y 20
 end
+arch giant
+x 14
+y 20
+end
 arch cobblestones2
 x 14
 y 21
 end
 arch cobblestones2
+x 14
+y 22
+end
+arch giant
 x 14
 y 22
 end
@@ -3036,11 +3092,23 @@ arch cobblestones2
 x 15
 y 12
 end
+arch dragon
+x 15
+y 12
+end
 arch cobblestones2
 x 15
 y 13
 end
+arch dragon
+x 15
+y 13
+end
 arch cobblestones2
+x 15
+y 14
+end
+arch dragon
 x 15
 y 14
 end
@@ -3076,11 +3144,19 @@ arch cobblestones2
 x 15
 y 20
 end
+arch giant
+x 15
+y 20
+end
 arch cobblestones2
 x 15
 y 21
 end
 arch cobblestones2
+x 15
+y 22
+end
+arch giant
 x 15
 y 22
 end
@@ -5498,6 +5574,10 @@ x 26
 y 16
 end
 arch cobblestones2
+x 26
+y 17
+end
+arch titan
 x 26
 y 17
 end
@@ -15649,84 +15729,4 @@ end
 arch blocked
 x 71
 y 34
-end
-arch dragon
-x 11
-y 12
-end
-arch dragon
-x 11
-y 13
-end
-arch dragon
-x 11
-y 14
-end
-arch giant
-x 11
-y 20
-end
-arch giant
-x 11
-y 22
-end
-arch giant
-x 12
-y 20
-end
-arch giant
-x 12
-y 22
-end
-arch dragon
-x 13
-y 12
-end
-arch dragon
-x 13
-y 13
-end
-arch dragon
-x 13
-y 14
-end
-arch giant
-x 13
-y 20
-end
-arch giant
-x 13
-y 22
-end
-arch giant
-x 14
-y 20
-end
-arch giant
-x 14
-y 22
-end
-arch dragon
-x 15
-y 12
-end
-arch dragon
-x 15
-y 13
-end
-arch dragon
-x 15
-y 14
-end
-arch giant
-x 15
-y 20
-end
-arch giant
-x 15
-y 22
-end
-arch titan
-x 26
-y 17
 end

@@ -1,13 +1,13 @@
 arch map
-region lakecountry
 name Jacobs House
+region lakecountry
+width 20
+height 18
 msg
 Creator: Kundi, Xue
 Email: xkd@soda.berkeley.edu
 Date: Wed May  3 22:04:51 1995
 endmsg
-width 20
-height 18
 end
 arch woodfloor
 end
@@ -232,6 +232,17 @@ arch grass
 x 1
 y 14
 end
+arch dragon
+name guardian wyvern
+Wis 30
+sp 50
+maxsp 50
+x 1
+y 14
+level 13
+arch ability_fear
+end
+end
 arch grass
 x 1
 y 15
@@ -346,6 +357,17 @@ arch grass
 x 2
 y 16
 end
+arch dragon
+name guardian wyvern
+Wis 30
+sp 50
+maxsp 50
+x 2
+y 16
+level 13
+arch ability_fear
+end
+end
 arch grass
 x 2
 y 17
@@ -547,22 +569,22 @@ x 4
 y 14
 end
 arch grate_closed_2
+x 4
+y 14
 speed 0.500000
 speed_left -2.100000
 connected 3
-x 4
-y 14
 end
 arch grass
 x 4
 y 15
 end
 arch grate_closed_2
+x 4
+y 15
 speed 0.500000
 speed_left -2.100000
 connected 3
-x 4
-y 15
 end
 arch grass
 x 4
@@ -654,14 +676,14 @@ You find the right person.
 The entrance to ebony tiger guild is
 under the clock in the bed room.
 endmsg
-type 0
 hp 100
 dam 10
-level 10
-monster 1
-unaggressive 1
 x 5
 y 11
+level 10
+type 0
+monster 1
+unaggressive 1
 end
 arch woodfloor
 x 5
@@ -710,20 +732,20 @@ x 6
 y 1
 end
 arch igate_closed_2
-speed 0.500000
-connected 11
 x 6
 y 1
+speed 0.500000
+connected 11
 end
 arch woodfloor
 x 6
 y 2
 end
 arch igate_closed_2
-speed 0.500000
-connected 11
 x 6
 y 2
+speed 0.500000
+connected 11
 end
 arch woodfloor
 x 6
@@ -762,10 +784,10 @@ x 6
 y 7
 end
 arch igate_closed_2
-speed 0.500000
-connected 12
 x 6
 y 7
+speed 0.500000
+connected 12
 end
 arch woodfloor
 x 6
@@ -837,11 +859,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 7
+y 1
 speed 0.000000
 invisible 1
 connected 20
-x 7
-y 1
 end
 arch woodfloor
 x 7
@@ -851,11 +873,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 7
+y 2
 speed 0.000000
 invisible 1
 connected 20
-x 7
-y 2
 end
 arch woodfloor
 x 7
@@ -873,11 +895,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 7
 y 5
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 7
@@ -887,11 +909,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 7
+y 6
 speed 0.000000
 invisible 1
 connected 20
-x 7
-y 6
 end
 arch woodfloor
 x 7
@@ -901,21 +923,21 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 7
+y 7
 speed 0.000000
 invisible 1
 connected 20
-x 7
-y 7
 end
 arch woodfloor
 x 7
 y 8
 end
 arch igate_closed_1
-speed 0.500000
-connected 13
 x 7
 y 8
+speed 0.500000
+connected 13
 end
 arch woodfloor
 x 7
@@ -1011,11 +1033,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 8
 y 4
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 8
@@ -1025,11 +1047,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 8
 y 5
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 8
@@ -1039,11 +1061,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 8
+y 6
 speed 0.000000
 invisible 1
 connected 20
-x 8
-y 6
 end
 arch woodfloor
 x 8
@@ -1053,21 +1075,21 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 8
+y 7
 speed 0.000000
 invisible 1
 connected 20
-x 8
-y 7
 end
 arch woodfloor
 x 8
 y 8
 end
 arch igate_closed_1
+x 8
+y 8
 speed 0.500000
 connected 13
-x 8
-y 8
 end
 arch woodfloor
 x 8
@@ -1171,11 +1193,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 9
+y 6
 speed 0.000000
 invisible 1
 connected 20
-x 9
-y 6
 end
 arch woodfloor
 x 9
@@ -1185,11 +1207,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 9
+y 7
 speed 0.000000
 invisible 1
 connected 20
-x 9
-y 7
 end
 arch woodfloor
 x 9
@@ -1297,11 +1319,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 10
+y 6
 speed 0.000000
 invisible 1
 connected 20
-x 10
-y 6
 end
 arch woodfloor
 x 10
@@ -1311,11 +1333,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 10
+y 7
 speed 0.000000
 invisible 1
 connected 20
-x 10
-y 7
 end
 arch woodfloor
 x 10
@@ -1440,11 +1462,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 11
 y 6
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 11
@@ -1454,11 +1476,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 11
 y 7
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 11
@@ -1468,11 +1490,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 11
+y 8
 speed 0.000000
 invisible 1
 connected 20
-x 11
-y 8
 end
 arch woodfloor
 x 11
@@ -1482,11 +1504,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 11
+y 9
 speed 0.000000
 invisible 1
 connected 20
-x 11
-y 9
 end
 arch woodfloor
 x 11
@@ -1494,10 +1516,10 @@ y 10
 end
 arch igate_closed_1
 name door
-speed 0.500000
-connected 31
 x 11
 y 10
+speed 0.500000
+connected 31
 end
 arch woodfloor
 x 11
@@ -1507,11 +1529,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 11
+y 11
 speed 0.000000
 invisible 1
 connected 20
-x 11
-y 11
 end
 arch woodfloor
 x 11
@@ -1523,10 +1545,10 @@ y 13
 end
 arch igate_closed_1
 name left door
-speed 0.500000
-connected 1
 x 11
 y 13
+speed 0.500000
+connected 1
 end
 arch cobblestones2
 x 11
@@ -1581,11 +1603,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 12
 y 4
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 12
@@ -1595,11 +1617,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 12
 y 5
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 12
@@ -1609,11 +1631,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 12
 y 6
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 12
@@ -1623,11 +1645,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
-speed 0.000000
-invisible 1
-connected 20
 x 12
 y 7
+speed 0.000000
+invisible 1
+connected 20
 end
 arch woodfloor
 x 12
@@ -1637,11 +1659,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 12
+y 8
 speed 0.000000
 invisible 1
 connected 20
-x 12
-y 8
 end
 arch woodfloor
 x 12
@@ -1651,11 +1673,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 12
+y 9
 speed 0.000000
 invisible 1
 connected 20
-x 12
-y 9
 end
 arch woodfloor
 x 12
@@ -1663,10 +1685,10 @@ y 10
 end
 arch igate_closed_1
 name door
-speed 0.500000
-connected 31
 x 12
 y 10
+speed 0.500000
+connected 31
 end
 arch woodfloor
 x 12
@@ -1676,11 +1698,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 12
+y 11
 speed 0.000000
 invisible 1
 connected 20
-x 12
-y 11
 end
 arch woodfloor
 x 12
@@ -1692,10 +1714,10 @@ y 13
 end
 arch igate_closed_1
 name right door
-speed 0.500000
-connected 1
 x 12
 y 13
+speed 0.500000
+connected 1
 end
 arch cobblestones2
 x 12
@@ -1758,11 +1780,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 13
+y 5
 speed 0.000000
 invisible 1
 connected 20
-x 13
-y 5
 end
 arch woodfloor
 x 13
@@ -1804,11 +1826,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 13
+y 12
 speed 0.000000
 invisible 1
 connected 20
-x 13
-y 12
 end
 arch woodfloor
 x 13
@@ -1865,10 +1887,10 @@ x 14
 y 4
 end
 arch igate_closed_1
-speed 0.500000
-connected 14
 x 14
 y 4
+speed 0.500000
+connected 14
 end
 arch woodfloor
 x 14
@@ -1878,11 +1900,11 @@ arch teleporter
 slaying ../arena
 hp 10
 sp 19
+x 14
+y 5
 speed 0.000000
 invisible 1
 connected 20
-x 14
-y 5
 end
 arch woodfloor
 x 14
@@ -2078,9 +2100,9 @@ x 15
 y 14
 end
 arch door_look_2
-no_pass 0
 x 15
 y 14
+no_pass 0
 end
 arch woodfloor
 x 15
@@ -2221,8 +2243,8 @@ x 17
 end
 arch button_plate
 name 11
-connected 11
 x 17
+connected 11
 end
 arch woodfloor
 x 17
@@ -2230,9 +2252,9 @@ y 1
 end
 arch button_plate
 name 14
-connected 14
 x 17
 y 1
+connected 14
 end
 arch woodfloor
 x 17
@@ -2240,9 +2262,9 @@ y 2
 end
 arch button_plate
 name 16
-connected 16
 x 17
 y 2
+connected 16
 end
 arch woodfloor
 x 17
@@ -2298,9 +2320,9 @@ y 10
 end
 arch button_plate
 name 3(guardian door)
-connected 3
 x 17
 y 10
+connected 3
 end
 arch woodfloor
 x 17
@@ -2308,9 +2330,9 @@ y 11
 end
 arch button_plate
 name 2(inner door trigger)
-connected 2
 x 17
 y 11
+connected 2
 end
 arch woodfloor
 x 17
@@ -2363,8 +2385,8 @@ x 18
 end
 arch button_plate
 name 12
-connected 12
 x 18
+connected 12
 end
 arch woodfloor
 x 18
@@ -2372,11 +2394,11 @@ y 1
 end
 arch spikes_open
 name 2(inner doors trigger)
+x 18
+y 1
 speed 0.500000
 value 1
 connected 2
-x 18
-y 1
 end
 arch boulder
 x 18
@@ -2388,9 +2410,9 @@ y 2
 end
 arch button_plate
 name 18
-connected 18
 x 18
 y 2
+connected 18
 end
 arch woodfloor
 x 18
@@ -2398,10 +2420,10 @@ y 3
 end
 arch block_door_closed
 name 18
-speed 0.500000
-connected 18
 x 18
 y 3
+speed 0.500000
+connected 18
 end
 arch woodfloor
 x 18
@@ -2429,9 +2451,9 @@ y 8
 end
 arch button_plate
 name 31
-connected 31
 x 18
 y 8
+connected 31
 end
 arch woodfloor
 x 18
@@ -2455,11 +2477,11 @@ y 11
 end
 arch spikes_open
 name 1
+x 18
+y 11
 speed 0.500000
 value 1
 connected 1
-x 18
-y 11
 end
 arch boulder
 x 18
@@ -2486,9 +2508,9 @@ x 18
 y 14
 end
 arch button_lever
-connected 1
 x 18
 y 14
+connected 1
 end
 arch woodfloor
 x 18
@@ -2515,8 +2537,8 @@ x 19
 end
 arch button_plate
 name 13
-connected 13
 x 19
+connected 13
 end
 arch woodfloor
 x 19
@@ -2524,9 +2546,9 @@ y 1
 end
 arch button_plate
 name 15
-connected 15
 x 19
 y 1
+connected 15
 end
 arch woodfloor
 x 19
@@ -2534,9 +2556,9 @@ y 2
 end
 arch button_plate
 name 18
-connected 18
 x 19
 y 2
+connected 18
 end
 arch woodfloor
 x 19
@@ -2544,9 +2566,9 @@ y 3
 end
 arch button_small
 name 20
-connected 20
 x 19
 y 3
+connected 20
 end
 arch woodfloor
 x 19
@@ -2570,11 +2592,11 @@ y 7
 end
 arch spikes_open
 name 2
+x 19
+y 7
 speed 0.500000
 value 1
 connected 2
-x 19
-y 7
 end
 arch boulder
 x 19
@@ -2586,9 +2608,9 @@ y 8
 end
 arch button_plate
 name 31
-connected 31
 x 19
 y 8
+connected 31
 end
 arch woodfloor
 x 19
@@ -2653,26 +2675,4 @@ end
 arch grass
 x 19
 y 17
-end
-arch dragon
-name guardian wyvern
-Wis 30
-sp 50
-maxsp 50
-level 13
-x 1
-y 14
-arch ability_fear
-end
-end
-arch dragon
-name guardian wyvern
-Wis 30
-sp 50
-maxsp 50
-level 13
-x 2
-y 16
-arch ability_fear
-end
 end

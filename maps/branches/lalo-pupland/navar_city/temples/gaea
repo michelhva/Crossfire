@@ -2839,6 +2839,10 @@ arch grass
 x 12
 y 37
 end
+arch bear
+x 12
+y 37
+end
 arch grass
 x 12
 y 38
@@ -7713,6 +7717,10 @@ arch grass
 x 36
 y 37
 end
+arch ent
+x 36
+y 37
+end
 arch grass
 x 36
 y 38
@@ -8249,12 +8257,4 @@ arch woods
 x 39
 y 39
 blocksview 1
-end
-arch bear
-x 12
-y 37
-end
-arch ent
-x 36
-y 37
 end

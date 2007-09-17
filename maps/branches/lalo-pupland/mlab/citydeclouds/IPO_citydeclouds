@@ -5220,6 +5220,15 @@ name_pl woodfloor
 x 18
 y 13
 end
+arch dragon_exit
+name express mail dragon
+name_pl express mail dragon
+msg
+@match * grr
+endmsg
+x 18
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11544,13 +11553,4 @@ end
 arch cwall_3_4
 x 42
 y 39
-end
-arch dragon_exit
-name express mail dragon
-name_pl express mail dragon
-msg
-@match * grr
-endmsg
-x 18
-y 13
 end

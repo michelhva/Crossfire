@@ -4148,6 +4148,10 @@ arch small_stones
 x 17
 y 30
 end
+arch big_elec
+x 17
+y 30
+end
 arch small_stones
 x 17
 y 31
@@ -4878,6 +4882,10 @@ x 20
 y 31
 end
 arch small_stones
+x 20
+y 32
+end
+arch big_elec
 x 20
 y 32
 end
@@ -15818,12 +15826,4 @@ end
 arch cave22
 x 59
 y 39
-end
-arch big_elec
-x 17
-y 30
-end
-arch big_elec
-x 20
-y 32
 end

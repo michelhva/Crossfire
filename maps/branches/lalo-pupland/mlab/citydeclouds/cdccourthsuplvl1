@@ -2236,6 +2236,10 @@ speed 0.000000
 invisible 1
 connected 5
 end
+arch pentagram_111
+x 7
+y 6
+end
 arch dungeon_magic
 x 7
 y 7
@@ -8864,8 +8868,4 @@ end
 arch cwall_4
 x 31
 y 27
-end
-arch pentagram_111
-x 7
-y 6
 end

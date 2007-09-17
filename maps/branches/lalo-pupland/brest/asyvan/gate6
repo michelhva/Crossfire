@@ -263,6 +263,10 @@ arch dirtfloor
 x 1
 y 16
 end
+arch troll
+x 1
+y 16
+end
 arch dirtfloor
 x 1
 y 17
@@ -1391,6 +1395,10 @@ arch dirtfloor
 x 9
 y 10
 end
+arch giant
+x 9
+y 10
+end
 arch dirtfloor
 x 9
 y 11
@@ -1408,6 +1416,10 @@ x 9
 y 13
 end
 arch dirtfloor
+x 9
+y 14
+end
+arch chinese_dragon
 x 9
 y 14
 end
@@ -1489,6 +1501,10 @@ arch dirtfloor
 x 10
 y 5
 end
+arch baslic
+x 10
+y 5
+end
 arch dirtfloor
 x 10
 y 6
@@ -1514,6 +1530,10 @@ x 10
 y 9
 end
 arch dirtfloor
+x 10
+y 10
+end
+arch giant
 x 10
 y 10
 end
@@ -2560,6 +2580,10 @@ arch dirtfloor
 x 17
 y 9
 end
+arch big_elec
+x 17
+y 9
+end
 arch dirtfloor
 x 17
 y 10
@@ -2652,6 +2676,10 @@ x 18
 y 2
 end
 arch dirtfloor
+x 18
+y 3
+end
+arch giant
 x 18
 y 3
 end
@@ -2783,6 +2811,10 @@ x 19
 y 2
 end
 arch dirtfloor
+x 19
+y 3
+end
+arch giant
 x 19
 y 3
 end
@@ -3071,36 +3103,4 @@ end
 arch timberwall_2_2_4
 x 20
 y 20
-end
-arch troll
-x 1
-y 16
-end
-arch giant
-x 9
-y 10
-end
-arch chinese_dragon
-x 9
-y 14
-end
-arch baslic
-x 10
-y 5
-end
-arch giant
-x 10
-y 10
-end
-arch big_elec
-x 17
-y 9
-end
-arch giant
-x 18
-y 3
-end
-arch giant
-x 19
-y 3
 end

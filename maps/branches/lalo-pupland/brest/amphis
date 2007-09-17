@@ -716,6 +716,11 @@ arch dungeon_floor
 x 5
 y 4
 end
+arch titan
+name Yves Maddrummer
+x 5
+y 4
+end
 arch dungeon_floor
 x 5
 y 5
@@ -2076,6 +2081,11 @@ arch dungeon_floor
 x 9
 y 41
 end
+arch chinese_dragon
+name Olivier  Keyboard
+x 9
+y 41
+end
 arch dungeon_floor
 x 9
 y 42
@@ -2085,6 +2095,11 @@ x 9
 y 43
 end
 arch dungeon_floor
+x 9
+y 44
+end
+arch big_elec
+name Michel  Bass
 x 9
 y 44
 end
@@ -3164,6 +3179,11 @@ x 12
 y 46
 end
 arch dungeon_floor
+x 12
+y 47
+end
+arch big_dragon
+name Jose  Lyrics
 x 12
 y 47
 end
@@ -4656,6 +4676,11 @@ x 16
 y 40
 end
 arch dungeon_floor
+x 16
+y 41
+end
+arch demon_lord
+name Fred  Lyrics
 x 16
 y 41
 end
@@ -6287,6 +6312,11 @@ arch dungeon_floor
 x 20
 y 47
 end
+arch titan
+name Helene  Drums
+x 20
+y 47
+end
 arch dungeon_floor
 x 20
 y 48
@@ -7000,6 +7030,11 @@ x 22
 y 41
 end
 arch dungeon_floor
+x 22
+y 42
+end
+arch big_wiz
+name Francois  Guitar
 x 22
 y 42
 end
@@ -11781,6 +11816,10 @@ arch woodfloor
 x 50
 y 14
 end
+arch behemoth
+x 50
+y 14
+end
 arch woodfloor
 x 50
 y 15
@@ -16316,43 +16355,4 @@ end
 arch redcwall_2_2_4
 x 79
 y 38
-end
-arch titan
-name Yves Maddrummer
-x 5
-y 4
-end
-arch chinese_dragon
-name Olivier  Keyboard
-x 9
-y 41
-end
-arch big_elec
-name Michel  Bass
-x 9
-y 44
-end
-arch big_dragon
-name Jose  Lyrics
-x 12
-y 47
-end
-arch demon_lord
-name Fred  Lyrics
-x 16
-y 41
-end
-arch titan
-name Helene  Drums
-x 20
-y 47
-end
-arch big_wiz
-name Francois  Guitar
-x 22
-y 42
-end
-arch behemoth
-x 50
-y 14
 end

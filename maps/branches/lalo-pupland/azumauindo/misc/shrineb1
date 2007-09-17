@@ -616,6 +616,10 @@ arch pstone_2
 x 3
 y 48
 end
+arch Balrog
+x 3
+y 48
+end
 arch pstone_2
 x 3
 y 49
@@ -3916,6 +3920,10 @@ arch pstone_2
 x 15
 y 36
 end
+arch jessyb
+x 15
+y 36
+end
 arch pstone_2
 x 15
 y 37
@@ -5800,6 +5808,10 @@ arch pstone_2
 x 20
 y 23
 end
+arch medium_demon
+x 20
+y 23
+end
 arch pstone_2
 x 20
 y 24
@@ -6864,6 +6876,10 @@ arch pstone_2
 x 23
 y 23
 end
+arch jessyb
+x 23
+y 23
+end
 arch pstone_2
 x 23
 y 24
@@ -7061,6 +7077,10 @@ x 23
 y 115
 end
 arch pstone_2
+x 23
+y 116
+end
+arch Balrog
 x 23
 y 116
 end
@@ -8198,24 +8218,4 @@ end
 arch blocked
 x 30
 y 122
-end
-arch Balrog
-x 3
-y 48
-end
-arch jessyb
-x 15
-y 36
-end
-arch medium_demon
-x 20
-y 23
-end
-arch jessyb
-x 23
-y 23
-end
-arch Balrog
-x 23
-y 116
 end

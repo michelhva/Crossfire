@@ -37150,6 +37150,10 @@ arch cobblestones2
 x 69
 y 20
 end
+arch dragon
+x 69
+y 20
+end
 arch cobblestones2
 x 69
 y 21
@@ -37234,11 +37238,23 @@ arch cobblestones2
 x 69
 y 31
 end
+arch dragon
+x 69
+y 31
+end
 arch cobblestones2
 x 69
 y 32
 end
+arch dragon
+x 69
+y 32
+end
 arch cobblestones2
+x 69
+y 33
+end
+arch dragon
 x 69
 y 33
 end
@@ -37654,6 +37670,10 @@ x 70
 y 21
 end
 arch cobblestones2
+x 70
+y 22
+end
+arch dragon
 x 70
 y 22
 end
@@ -39772,6 +39792,10 @@ arch cobblestones2
 x 74
 y 25
 end
+arch cobra
+x 74
+y 25
+end
 arch cobblestones2
 x 74
 y 26
@@ -40308,6 +40332,10 @@ x 75
 y 21
 end
 arch cobblestones2
+x 75
+y 22
+end
+arch serpent
 x 75
 y 22
 end
@@ -41550,6 +41578,10 @@ x 77
 y 21
 end
 arch cobblestones2
+x 77
+y 22
+end
+arch cobra
 x 77
 y 22
 end
@@ -47322,6 +47354,10 @@ end
 arch random_treasure
 end
 end
+arch dragon
+x 86
+y 28
+end
 arch cobblestones2
 x 86
 y 29
@@ -47335,6 +47371,10 @@ arch random_treasure
 end
 arch random_treasure
 end
+end
+arch dragon
+x 86
+y 29
 end
 arch cobblestones2
 x 86
@@ -52027,44 +52067,4 @@ end
 arch grass
 x 94
 y 79
-end
-arch dragon
-x 69
-y 20
-end
-arch dragon
-x 69
-y 31
-end
-arch dragon
-x 69
-y 32
-end
-arch dragon
-x 69
-y 33
-end
-arch dragon
-x 70
-y 22
-end
-arch cobra
-x 74
-y 25
-end
-arch serpent
-x 75
-y 22
-end
-arch cobra
-x 77
-y 22
-end
-arch dragon
-x 86
-y 28
-end
-arch dragon
-x 86
-y 29
 end

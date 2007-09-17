@@ -1,14 +1,14 @@
 arch map
 name Palace of forgotten Town
 region Forgotten Town
-msg
-Creator: Knut Ahlers
-Date:    7/19/2005
-endmsg
 width 30
 height 20
 enter_x 9
 enter_y 19
+msg
+Creator: Knut Ahlers
+Date:    7/19/2005
+endmsg
 end
 arch dungeon_magic
 end
@@ -927,28 +927,20 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 116
-speed 3.0
-attacktype 8388607
-wc 20
+animation NONE
+Con 1500
+Pow 100
 hp 32000
 maxhp 32000
-ac -20
-Con 1500
-hitback 1
 sp 2500
 maxsp 2500
-Pow 100
-path_attuned 924025
-can_see_in_dark 1
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
+wc 20
+ac -20
+x 6
+y 1
+speed 3.0
+level 116
+attacktype 8388607
 resist_physical 100
 resist_fire 100
 resist_electricity 100
@@ -961,18 +953,25 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-animation NONE
-immune -1
-x 6
-y 1
+resist_holyword 100
+resist_blind 100
+path_attuned 924025
+hitback 1
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand -1
 arch random_scroll
 hp 100
 end
@@ -1170,28 +1169,20 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 116
-speed 3.0
-attacktype 8388607
-wc 20
+animation NONE
+Con 1500
+Pow 100
 hp 32000
 maxhp 32000
-ac -20
-Con 1500
-hitback 1
 sp 2500
 maxsp 2500
-Pow 100
-path_attuned 924025
-can_see_in_dark 1
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
+wc 20
+ac -20
+x 7
+y 1
+speed 3.0
+level 116
+attacktype 8388607
 resist_physical 100
 resist_fire 100
 resist_electricity 100
@@ -1204,18 +1195,25 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-animation NONE
-immune -1
-x 7
-y 1
+resist_holyword 100
+resist_blind 100
+path_attuned 924025
+hitback 1
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand -1
 arch random_scroll
 hp 100
 end
@@ -1439,10 +1437,8 @@ Did you notice the large number of guards?
 They do protect me, so do not even consider
 attacking me. They surely will kill you.
 endmsg
-reflect_missile 1
-can_cast_spell 0
-friendly 1
-stand_still 1
+x 8
+y 1
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1456,17 +1452,19 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+friendly 1
+reflect_missile 1
+can_cast_spell 0
+stand_still 1
 immune -1
-x 8
-y 1
 end
 arch marble
 x 8
@@ -1606,10 +1604,8 @@ x 9
 y 1
 end
 arch princess
-reflect_missile 1
-can_cast_spell 0
-friendly 1
-stand_still 1
+x 9
+y 1
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -1623,17 +1619,19 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
+resist_holyword 100
+resist_blind 100
+friendly 1
+reflect_missile 1
+can_cast_spell 0
+stand_still 1
 immune -1
-x 9
-y 1
 end
 arch marble
 x 9
@@ -1766,28 +1764,20 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 116
-speed 3.0
-attacktype 8388607
-wc 20
+animation NONE
+Con 1500
+Pow 100
 hp 32000
 maxhp 32000
-ac -20
-Con 1500
-hitback 1
 sp 2500
 maxsp 2500
-Pow 100
-path_attuned 924025
-can_see_in_dark 1
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
+wc 20
+ac -20
+x 10
+y 1
+speed 3.0
+level 116
+attacktype 8388607
 resist_physical 100
 resist_fire 100
 resist_electricity 100
@@ -1800,18 +1790,25 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-animation NONE
-immune -1
-x 10
-y 1
+resist_holyword 100
+resist_blind 100
+path_attuned 924025
+hitback 1
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand -1
 arch random_scroll
 hp 100
 end
@@ -2009,28 +2006,20 @@ end
 arch knight
 name Guard of the ancient mages
 face wizard.151
-level 116
-speed 3.0
-attacktype 8388607
-wc 20
+animation NONE
+Con 1500
+Pow 100
 hp 32000
 maxhp 32000
-ac -20
-Con 1500
-hitback 1
 sp 2500
 maxsp 2500
-Pow 100
-path_attuned 924025
-can_see_in_dark 1
-can_use_weapon 1
-can_use_bow 1
-can_use_armour 1
-can_use_ring 1
-can_use_wand 1
-can_use_rod 1
-can_use_scroll 1
-can_use_skill 1
+wc 20
+ac -20
+x 11
+y 1
+speed 3.0
+level 116
+attacktype 8388607
 resist_physical 100
 resist_fire 100
 resist_electricity 100
@@ -2043,18 +2032,25 @@ resist_ghosthit 100
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
+resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
-resist_turn_undead 100
 resist_death 100
 resist_chaos 100
-resist_blind 100
-resist_holyword 100
 resist_godpower 100
-animation NONE
-immune -1
-x 11
-y 1
+resist_holyword 100
+resist_blind 100
+path_attuned 924025
+hitback 1
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand -1
 arch random_scroll
 hp 100
 end
@@ -3058,9 +3054,9 @@ x 18
 y 2
 end
 arch grate_closed_1
-connected 221
 x 18
 y 2
+connected 221
 end
 arch marble
 x 18
@@ -3070,9 +3066,9 @@ arch altar
 name drop 30000 diamonds for FT-Access Pass
 slaying diamond
 food 30000
-connected 221
 x 18
 y 3
+connected 221
 end
 arch marble
 x 18
@@ -3084,10 +3080,10 @@ Here you can get the FT-Access Pass.
 With this Pass you don't need to pass
 the test at the beginning twice.
 endmsg
-walk_on 1
-fly_on 1
 x 18
 y 4
+walk_on 1
+fly_on 1
 end
 arch marble
 x 18
@@ -3492,19 +3488,19 @@ arch stonefloor2
 x 22
 end
 arch pit_closed
-connected 221
 hp 18
 sp 1
 x 22
 y 1
+connected 221
 end
 arch card
 name FT-Access Pass
-type 0
-identified 1
 slaying ftap
 x 22
 y 1
+type 0
+identified 1
 end
 arch woodfloor
 x 22
@@ -3647,6 +3643,17 @@ arch woodfloor
 x 24
 y 10
 end
+arch titan
+name Jipsy
+hp 6000
+maxhp 6000
+sp 30
+maxsp 90
+exp 100
+x 24
+y 10
+sleep 0
+end
 arch woodfloor
 x 24
 y 11
@@ -3758,6 +3765,17 @@ end
 arch woodfloor
 x 27
 y 8
+end
+arch titan
+name Jerry
+hp 6000
+maxhp 6000
+sp 30
+maxsp 90
+exp 100
+x 27
+y 8
+sleep 0
 end
 arch woodfloor
 x 27
@@ -3889,26 +3907,4 @@ end
 arch stwall_2_2_4
 x 29
 y 12
-end
-arch titan
-name Jipsy
-exp 100
-hp 6000
-maxhp 6000
-sp 30
-maxsp 90
-sleep 0
-x 24
-y 10
-end
-arch titan
-name Jerry
-exp 100
-hp 6000
-maxhp 6000
-sp 30
-maxsp 90
-sleep 0
-x 27
-y 8
 end

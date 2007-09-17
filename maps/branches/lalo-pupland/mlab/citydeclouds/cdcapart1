@@ -6844,6 +6844,10 @@ arch blackmarble
 x 11
 y 47
 end
+arch pentagram_111
+x 11
+y 47
+end
 arch altar_trigger
 name demon
 name_pl demon
@@ -7107,6 +7111,10 @@ x 11
 y 56
 end
 arch blackmarble
+x 11
+y 57
+end
+arch pentagram_111
 x 11
 y 57
 end
@@ -7581,6 +7589,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 12
+y 25
+end
+arch chinese_dragon
 x 12
 y 25
 end
@@ -8437,6 +8449,10 @@ name_pl woodfloor
 x 13
 y 23
 end
+arch dragon
+x 13
+y 23
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -8485,6 +8501,10 @@ name_pl woodfloor
 x 13
 y 29
 end
+arch dragon
+x 13
+y 29
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -8494,6 +8514,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 31
+end
+arch chinese_dragon
 x 13
 y 31
 end
@@ -8526,6 +8550,10 @@ x 13
 y 35
 end
 arch random_treasure
+x 13
+y 35
+end
+arch big_elec
 x 13
 y 35
 end
@@ -9852,6 +9880,10 @@ name_pl woodfloor
 x 15
 y 24
 end
+arch big_elec
+x 15
+y 24
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -9873,6 +9905,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 15
+y 28
+end
+arch big_dragon
 x 15
 y 28
 end
@@ -9987,6 +10023,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 15
+y 43
+end
+arch dragon
 x 15
 y 43
 end
@@ -10484,6 +10524,10 @@ name_pl woodfloor
 x 16
 y 35
 end
+arch dragon
+x 16
+y 35
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -10975,6 +11019,10 @@ name_pl woodfloor
 x 17
 y 32
 end
+arch dragon
+x 17
+y 32
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11013,6 +11061,10 @@ name_pl woodfloor
 x 17
 y 37
 end
+arch big_dragon
+x 17
+y 37
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -11042,6 +11094,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 17
+y 41
+end
+arch chinese_dragon
 x 17
 y 41
 end
@@ -11470,6 +11526,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 18
+y 28
+end
+arch Cwyvern
 x 18
 y 28
 end
@@ -11958,6 +12018,10 @@ name_pl woodfloor
 x 19
 y 24
 end
+arch big_elec
+x 19
+y 24
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -12033,6 +12097,15 @@ name woodfloor
 name_pl woodfloor
 x 19
 y 34
+end
+arch chinese_dragon
+name ancient chinese dragon
+name_pl ancient chinese dragon
+hp 5000
+maxhp 5000
+x 19
+y 34
+level 100
 end
 arch woodfloor2
 name woodfloor
@@ -13030,6 +13103,10 @@ name_pl woodfloor
 x 21
 y 33
 end
+arch dragon
+x 21
+y 33
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13083,6 +13160,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 21
+y 39
+end
+arch big_elec
 x 21
 y 39
 end
@@ -13517,6 +13598,10 @@ name_pl woodfloor
 x 22
 y 30
 end
+arch big_dragon
+x 22
+y 30
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -13598,6 +13683,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 22
+y 42
+end
+arch chinese_dragon
 x 22
 y 42
 end
@@ -14007,6 +14096,10 @@ name_pl woodfloor
 x 23
 y 27
 end
+arch chinese_dragon
+x 23
+y 27
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -14093,6 +14186,10 @@ arch random_wealth
 x 23
 y 38
 end
+arch Cwyvern
+x 23
+y 38
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -14162,6 +14259,10 @@ x 23
 y 46
 end
 arch blackmarble
+x 23
+y 47
+end
+arch pentagram_111
 x 23
 y 47
 end
@@ -14407,6 +14508,10 @@ x 23
 y 56
 end
 arch blackmarble
+x 23
+y 57
+end
+arch pentagram_111
 x 23
 y 57
 end
@@ -14985,6 +15090,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 24
+y 34
+end
+arch big_elec
 x 24
 y 34
 end
@@ -16885,6 +16994,10 @@ name_pl woodfloor
 x 26
 y 28
 end
+arch dragon
+x 26
+y 28
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16953,6 +17066,10 @@ name_pl woodfloor
 x 26
 y 38
 end
+arch chinese_dragon
+x 26
+y 38
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16978,6 +17095,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 26
+y 42
+end
+arch dragon
 x 26
 y 42
 end
@@ -17630,6 +17751,10 @@ name_pl woodfloor
 x 27
 y 24
 end
+arch dragon
+x 27
+y 24
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -17681,6 +17806,10 @@ x 27
 y 31
 end
 arch random_wealth
+x 27
+y 31
+end
+arch chinese_dragon
 x 27
 y 31
 end
@@ -18385,6 +18514,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 28
+y 29
+end
+arch Cwyvern
 x 28
 y 29
 end
@@ -19190,6 +19323,10 @@ name_pl woodfloor
 x 29
 y 35
 end
+arch big_dragon
+x 29
+y 35
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -19247,6 +19384,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 29
+y 43
+end
+arch chinese_dragon
 x 29
 y 43
 end
@@ -19810,6 +19951,10 @@ name_pl woodfloor
 x 30
 y 25
 end
+arch chinese_dragon
+x 30
+y 25
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -19825,6 +19970,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 30
+y 28
+end
+arch big_elec
 x 30
 y 28
 end
@@ -20615,6 +20764,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 31
+y 39
+end
+arch big_elec
 x 31
 y 39
 end
@@ -28588,157 +28741,4 @@ end
 arch cwall_3_4
 x 43
 y 63
-end
-arch pentagram_111
-x 11
-y 47
-end
-arch pentagram_111
-x 11
-y 57
-end
-arch chinese_dragon
-x 12
-y 25
-end
-arch dragon
-x 13
-y 23
-end
-arch dragon
-x 13
-y 29
-end
-arch chinese_dragon
-x 13
-y 31
-end
-arch big_elec
-x 13
-y 35
-end
-arch big_elec
-x 15
-y 24
-end
-arch big_dragon
-x 15
-y 28
-end
-arch dragon
-x 15
-y 43
-end
-arch dragon
-x 16
-y 35
-end
-arch dragon
-x 17
-y 32
-end
-arch big_dragon
-x 17
-y 37
-end
-arch chinese_dragon
-x 17
-y 41
-end
-arch Cwyvern
-x 18
-y 28
-end
-arch big_elec
-x 19
-y 24
-end
-arch chinese_dragon
-name ancient chinese dragon
-name_pl ancient chinese dragon
-hp 5000
-maxhp 5000
-x 19
-y 34
-level 100
-end
-arch dragon
-x 21
-y 33
-end
-arch big_elec
-x 21
-y 39
-end
-arch big_dragon
-x 22
-y 30
-end
-arch chinese_dragon
-x 22
-y 42
-end
-arch chinese_dragon
-x 23
-y 27
-end
-arch Cwyvern
-x 23
-y 38
-end
-arch pentagram_111
-x 23
-y 47
-end
-arch pentagram_111
-x 23
-y 57
-end
-arch big_elec
-x 24
-y 34
-end
-arch dragon
-x 26
-y 28
-end
-arch chinese_dragon
-x 26
-y 38
-end
-arch dragon
-x 26
-y 42
-end
-arch dragon
-x 27
-y 24
-end
-arch chinese_dragon
-x 27
-y 31
-end
-arch Cwyvern
-x 28
-y 29
-end
-arch big_dragon
-x 29
-y 35
-end
-arch chinese_dragon
-x 29
-y 43
-end
-arch chinese_dragon
-x 30
-y 25
-end
-arch big_elec
-x 30
-y 28
-end
-arch big_elec
-x 31
-y 39
 end
