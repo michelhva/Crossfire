@@ -545,7 +545,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @return the packet id
      *
-     * @see #sendNcom(int, int)
+     * @see #sendNcom(int, String)
      */
     public int sendNcom(final String command)
     {
@@ -561,7 +561,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @return the packet id
      *
-     * @see #sendNcom(int)
+     * @see #sendNcom(String)
      */
     public int sendNcom(final int repeat, final String command)
     {

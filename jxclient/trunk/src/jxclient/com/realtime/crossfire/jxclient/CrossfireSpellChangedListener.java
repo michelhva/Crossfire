@@ -24,27 +24,30 @@ public interface CrossfireSpellChangedListener
     /**
      * A new spell was added.
      *
-     * @param The added spell.
+     * @param spell The added spell.
      *
-     * @param The current index of <code>spell</code> in the spells manager.
+     * @param index The current index of <code>spell</code> in the spells
+     * manager.
      */
     void spellAdded(Spell spell, int index);
 
     /**
      * A spell was removed.
      *
-     * @param The removed spell.
+     * @param spell The removed spell.
      *
-     * @param The former index of <code>spell</code> in the spells manager.
+     * @param index The former index of <code>spell</code> in the spells
+     * manager.
      */
     void spellRemoved(Spell spell, int index);
 
     /**
      * A spell was modified.
      *
-     * @param The modified spell.
+     * @param spell The modified spell.
      *
-     * @param The current index of <code>spell</code> in the spells manager.
+     * @param index The current index of <code>spell</code> in the spells
+     * manager.
      */
     void spellModified(Spell spell, int index);
 }

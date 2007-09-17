@@ -33,6 +33,8 @@ public class FaceCache
 
     /**
      * Add a new face to the cache.
+     *
+     * @param face The face to add.
      */
     public void addFace(final Face face)
     {

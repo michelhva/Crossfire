@@ -78,7 +78,7 @@ public final class KeyBindings
     /**
      * Add a key binding for a key character.
      *
-     * @param keyCode The key character for the key binding.
+     * @param keyChar The key character for the key binding.
      *
      * @param cmdlist The commands to associate to the key binding.
      */

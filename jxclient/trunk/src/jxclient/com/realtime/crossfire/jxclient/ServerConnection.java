@@ -95,7 +95,10 @@ public abstract class ServerConnection extends Thread
     /**
      * Reads the next available packet sent by the Crossfire server on the
      * network.
-     * @since 1.0
+     *
+     * @throws IOException If an I/O error occurs.
+     *
+     * @throws UnknownCommandException If the command cannot be parsed.
      */
     public synchronized void readPacket() throws IOException, UnknownCommandException
     {
@@ -111,7 +114,7 @@ public abstract class ServerConnection extends Thread
      * bytes but only actual payload data
      * @param length the length of <code>packet</code>; if the array is larger,
      * excess data is ignored
-     * @since 1.0
+     * @throws IOException If an I/O error occurs.
      */
     protected void writePacket(final byte[] packet, final int length) throws IOException
     {
@@ -167,7 +170,7 @@ public abstract class ServerConnection extends Thread
     /**
      * Sets the current status of the client to the given value. See the various
      * STATUS_ constants.
-     * @param nstatus The new status value.
+     * @param status The new status value.
      * @since 1.0
      */
     public void setStatus(final int status)
@@ -195,7 +198,8 @@ public abstract class ServerConnection extends Thread
      * This is the main command handler, in which the command received is
      * decoded, and the appropriate method called.
      * @param packet The packet payload data.
-     * @since 1.0
+     * @throws IOException If an I/O error occurs.
+     * @throws UnknownCommandException if the command cannot be parsed.
      */
     protected abstract void command(final byte[] packet) throws IOException, UnknownCommandException;
 

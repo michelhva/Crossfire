@@ -188,8 +188,7 @@ public class GUIText extends GUIElement implements KeyListener
     }
 
     /**
-     * Enable or disable hidden text in the first input field of {@link
-     * #currentDialog}.
+     * Enable or disable hidden text.
      *
      * @param hideInput If set, hide input; else show input.
      */

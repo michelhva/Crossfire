@@ -120,7 +120,7 @@ public class TooltipManager
 
     /**
      * Add or update the tooltip (text and location) for the {@link
-     * activeGuiElement}.
+     * #activeGuiElement}.
      */
     private void addTooltip()
     {

@@ -43,7 +43,7 @@ public class ImageScale2x
     /**
      * Create a new scaler that will scale the passed image
      *
-     * @param srcImage The image to be scaled
+     * @param srcImageIcon The image to be scaled
      */
     public ImageScale2x(final ImageIcon srcImageIcon)
     {

@@ -147,6 +147,8 @@ public class GUISpellLabel extends GUILabel
      * @param font The font to use.
      *
      * @param type The display type.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public GUISpellLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Type type) throws IOException
     {

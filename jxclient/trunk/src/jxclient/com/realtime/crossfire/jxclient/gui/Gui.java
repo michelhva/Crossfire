@@ -43,7 +43,7 @@ public class Gui
     private GUILabel tooltip = null;
 
     /**
-     * Remove all {@link GUIElements} from this gui.
+     * Remove all {@link GUIElement}s from this gui.
      */
     public void clear()
     {
@@ -95,7 +95,7 @@ public class Gui
      *
      * @param g The <code>Graphics</code> to paint into.
      *
-     * @param jxWindow The window to deliver change events to.
+     * @param jxcWindow The window to deliver change events to.
      */
     public void redraw(final Graphics g, final JXCWindow jxcWindow)
     {

@@ -10,7 +10,7 @@ import java.util.Set;
  * Implements a queue to process "askface" commands. Faces to query are added
  * with {@link #queryFace(int)}. When the image is available the client code
  * will be notified though the callback function {@link
- * FacesCallback#sendAskFace(int)}.
+ * FacesCallback#sendAskface(int)}.
  *
  * <p>The askface manager does not send more than {@link
  * #CONCURRENT_ASKFACE_COMMANDS} concurrent "askface" commands to the server.

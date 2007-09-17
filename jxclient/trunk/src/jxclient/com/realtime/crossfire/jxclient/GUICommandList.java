@@ -31,7 +31,7 @@ import java.util.List;
 public class GUICommandList
 {
     /**
-     * The list of {@link GUICommands} in execution order.
+     * The list of {@link GUICommand}s in execution order.
      */
     private final List<GUICommand> commands = new ArrayList<GUICommand>();
 
@@ -71,7 +71,7 @@ public class GUICommandList
     }
 
     /**
-     * Execute the command list by calling {@link GUICommand.execute()} for
+     * Execute the command list by calling {@link GUICommand#execute()} for
      * each command in order.
      */
     public void execute()

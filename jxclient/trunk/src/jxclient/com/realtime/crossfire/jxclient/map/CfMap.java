@@ -826,6 +826,8 @@ public class CfMap
      * @param min The minimum coordinate.
      *
      * @param max The maximum coordinate.
+     *
+     * @return The number of patches.
      */
     private static int size(final int min, final int max)
     {
