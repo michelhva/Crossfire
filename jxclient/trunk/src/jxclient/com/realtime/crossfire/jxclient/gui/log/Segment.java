@@ -60,7 +60,7 @@ public class Segment
          * The font used by the [strange] tag.
          */
         STRANGE
-    };
+    }
 
     /**
      * The text to display.

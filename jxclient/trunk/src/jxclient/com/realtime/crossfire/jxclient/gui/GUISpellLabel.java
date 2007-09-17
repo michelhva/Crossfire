@@ -64,7 +64,7 @@ public class GUISpellLabel extends GUILabel
          * Display the spell description.
          */
         SPELL_DESCRIPTION,
-    };
+    }
 
     /**
      * The spell type to display.
