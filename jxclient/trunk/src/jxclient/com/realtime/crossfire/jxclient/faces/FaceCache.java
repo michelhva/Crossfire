@@ -29,7 +29,7 @@ public class FaceCache
     /**
      * The cached faces. Empty slots are set to <code>null</code>.
      */
-    private Face[] faces = new Face[65536];
+    private final Face[] faces = new Face[65536];
 
     /**
      * Add a new face to the cache.

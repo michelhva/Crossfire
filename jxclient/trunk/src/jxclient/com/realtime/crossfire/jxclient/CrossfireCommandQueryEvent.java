@@ -41,9 +41,9 @@ public class CrossfireCommandQueryEvent extends EventObject
     /** Query type: hide input being entered. */
     public static final int HIDEINPUT = 4;
 
-    private String myquery;
+    private final String myquery;
 
-    private int myquerytype;
+    private final int myquerytype;
 
     public CrossfireCommandQueryEvent(Object src, String msg, int type)
     {

@@ -46,11 +46,11 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     private BufferedImage mypicture_udp = null;
 
-    private Font myfont;
+    private final Font myfont;
 
-    private GUIText mytext;
+    private final GUIText mytext;
 
-    private GUILabel mylabel;
+    private final GUILabel mylabel;
 
     private int myindex;
 

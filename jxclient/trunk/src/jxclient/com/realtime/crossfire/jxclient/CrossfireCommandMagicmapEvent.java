@@ -32,11 +32,11 @@ public class CrossfireCommandMagicmapEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private int mywidth, myheight;
+    private final int mywidth, myheight;
 
-    private int mypx, mypy;
+    private final int mypx, mypy;
 
-    private byte[] mydata;
+    private final byte[] mydata;
 
     public CrossfireCommandMagicmapEvent(Object src, int w, int h, int px, int py, byte[] d)
     {

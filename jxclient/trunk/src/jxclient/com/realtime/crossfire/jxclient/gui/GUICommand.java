@@ -30,11 +30,11 @@ import com.realtime.crossfire.jxclient.SpellBeltItem;
  */
 public class GUICommand
 {
-    private GUIElement mytarget;
+    private final GUIElement mytarget;
 
-    private Command myorder;
+    private final Command myorder;
 
-    private Object myparams; //Often a String, but not always - see QUIT or CONNECT
+    private final Object myparams; //Often a String, but not always - see QUIT or CONNECT
 
     public enum Command
     {

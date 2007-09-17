@@ -27,16 +27,16 @@ package com.realtime.crossfire.jxclient.faces;
 public class RawScale2x
 {
     /** The src image data */
-    private int[] srcImage;
+    private final int[] srcImage;
 
     /** The dest image data */
-    private int[] dstImage;
+    private final int[] dstImage;
 
     /** The width of the source image */
-    private int width;
+    private final int width;
 
     /** The height of the source image */
-    private int height;
+    private final int height;
 
     /**
      * Create a new scaler based on some raw data. Right now it doesn't

@@ -41,11 +41,11 @@ import java.io.IOException;
  */
 public class GUIText extends GUIElement implements KeyListener
 {
-    private BufferedImage mybackground_active;
+    private final BufferedImage mybackground_active;
 
-    private BufferedImage mybackground_inactive;
+    private final BufferedImage mybackground_inactive;
 
-    protected Font myfont;
+    protected final Font myfont;
 
     protected String mytext;
 

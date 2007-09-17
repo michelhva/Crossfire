@@ -433,7 +433,7 @@ public class Stats
      * The table of all known skills.
      * @since 1.0
      */
-    protected static Skill[] myskills = new Skill[CS_NUM_SKILLS];
+    protected static final Skill[] myskills = new Skill[CS_NUM_SKILLS];
 
     /**
      * The total number of resistances.
@@ -441,7 +441,7 @@ public class Stats
      */
     public static final int RESIST_TYPES = 18;
 
-    private int[] mystats = new int[512];
+    private final int[] mystats = new int[512];
 
     private long myexp = 0;
 
@@ -465,7 +465,7 @@ public class Stats
      * Maps stat names to stat index values. Only stats useful in skin files
      * are included.
      */
-    private static Map<String, Integer> statTable = new HashMap<String, Integer>();
+    private static final Map<String, Integer> statTable = new HashMap<String, Integer>();
     static
     {
         statTable.put("AC", CS_STAT_AC);

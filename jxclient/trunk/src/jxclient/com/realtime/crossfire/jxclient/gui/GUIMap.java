@@ -72,7 +72,7 @@ public class GUIMap extends GUIElement
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
      * color. Not yet allocated entries are set to <code>null</code>.
      */
-    private Color[] darknessColors = new Color[256];
+    private final Color[] darknessColors = new Color[256];
 
     /**
      * The {@link CrossfireMapListener} registered to receive map updates.

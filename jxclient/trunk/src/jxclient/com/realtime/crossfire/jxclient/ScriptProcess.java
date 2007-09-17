@@ -29,9 +29,9 @@ import java.io.UnsupportedEncodingException;
 
 public class ScriptProcess extends Thread implements CrossfireScriptMonitorListener
 {
-    private String mycmd;
+    private final String mycmd;
 
-    private JXCWindow mywindow;
+    private final JXCWindow mywindow;
 
     private InputStream in;
 
