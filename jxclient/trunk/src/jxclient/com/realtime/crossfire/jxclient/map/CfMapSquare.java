@@ -96,10 +96,10 @@ public class CfMapSquare
      *
      * @param map The <code>CfMap</code> instance this square belongs to.
      *
-     * @param x0 The absolute map x-coordinate of the top left corner of this
+     * @param x The absolute map x-coordinate of the top left corner of this
      * patch.
      *
-     * @param y0 The absolute map y-coordinate of the top left corner of this
+     * @param y The absolute map y-coordinate of the top left corner of this
      * patch.
      */
     public CfMapSquare(final CfMap map, final int x, final int y)

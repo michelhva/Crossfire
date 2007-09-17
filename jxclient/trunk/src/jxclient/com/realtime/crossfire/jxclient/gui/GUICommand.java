@@ -192,7 +192,7 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link #GUI_SEND_COMMAND} command.
+     * A parameter object for the {@link Command#GUI_SEND_COMMAND} command.
      */
     public static class SendCommandParameter
     {
@@ -227,7 +227,7 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link #GUI_SPELLBELT} command.
+     * A parameter object for the {@link Command#GUI_SPELLBELT} command.
      */
     public static class SpellBeltParameter
     {

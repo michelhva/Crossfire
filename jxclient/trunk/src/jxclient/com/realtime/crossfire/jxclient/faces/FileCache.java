@@ -67,8 +67,6 @@ public class FileCache
      * @param name The image name to save.
      *
      * @param imageIcon The image icon to store.
-     *
-     * @throws IOException If the image cannot be written to the cache.
      */
     public void save(final String name, final ImageIcon imageIcon)
     {
@@ -81,8 +79,6 @@ public class FileCache
      * @param outputFile the file to save to
      *
      * @param imageIcon the image to save
-     *
-     * @throws IOException if the image cannot be saved
      */
     public static void saveImageIcon(final File outputFile, final ImageIcon imageIcon)
     {

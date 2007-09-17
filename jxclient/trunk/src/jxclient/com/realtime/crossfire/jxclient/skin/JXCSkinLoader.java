@@ -196,7 +196,9 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
-     * @throws IOException if the file cannot be loaded
+     * @return The Gui representing the skin file.
+     *
+     * @throws JXCSkinException if the file cannot be loaded
      */
     private Gui load(final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window) throws JXCSkinException
     {
@@ -853,7 +855,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @return The font.
      *
-     * @throws JXCSkinException if the font cannot be loaded.
+     * @throws IOException if the font cannot be loaded.
      */
     private Font getFont(final String name) throws IOException
     {

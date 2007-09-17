@@ -1160,6 +1160,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param packet The packet contents.
      *
      * @param pos The start of the payload data to process.
+     *
+     * @throws UnknownCommandException If the command cannot be parsed.
      */
     private void cmd_map2(final byte[] packet, int pos) throws UnknownCommandException
     {
@@ -1271,7 +1273,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param csval The client version.
      * @param scval The server version.
      * @param vinfo The version information string.
-     * @since 1.0
+     * @throws IOException If an I/O error occurs.
      */
     private void cmd_version(final int csval, final int scval, final String vinfo) throws IOException
     {
@@ -1300,7 +1302,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param packet The packet payload data.
      * @param pos The starting offset into <code>packet</code> where the
      * parameters of <code>infoType</code>'s parameter start.
-     * @since 1.0
+     * @throws IOException If an I/O error occurs.
      */
     void cmd_replyinfo(final String infoType, final byte[] packet, final int pos) throws IOException
     {
@@ -1479,6 +1481,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Send an "addme" command to the server.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendAddme() throws IOException
     {
@@ -1489,6 +1493,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send an "apply" command to the server.
      *
      * @param tag the item to apply
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendApply(final int tag) throws IOException
     {
@@ -1521,6 +1527,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send an "examine" command to the server.
      *
      * @param tag the item to examine
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendExamine(final int tag) throws IOException
     {
@@ -1539,6 +1547,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param val whether to lock the item
      *
      * @param tag the item to lock
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendLock(final boolean val, final int tag) throws IOException
     {
@@ -1558,6 +1568,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dx The x-coordinate in tiles, relative to the player.
      *
      * @param dy The y-coordinate in tiles, relative to the player.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendLookat(final int dx, final int dy) throws IOException
     {
@@ -1574,6 +1586,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Send a "mapredraw" command to the server.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendMapredraw() throws IOException
     {
@@ -1584,6 +1598,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "mark" command to the server.
      *
      * @param tag the item to mark
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendMark(final int tag) throws IOException
     {
@@ -1604,6 +1620,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param tag the item to move
      *
      * @param nrof the number of items to move
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendMove(final int to, final int tag, final int nrof) throws IOException
     {
@@ -1628,6 +1646,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param command the command
      *
      * @return the packet id
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public int sendNcom(final int repeat, final String command) throws IOException
     {
@@ -1649,6 +1669,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "reply" command to the server.
      *
      * @param text the text to reply
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendReply(final String text) throws IOException
     {
@@ -1665,6 +1687,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "requestinfo" command to the server.
      *
      * @param infoType the info type to request
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendRequestinfo(final String infoType) throws IOException
     {
@@ -1680,7 +1704,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /**
      * Send a "setup" command to the server.
      *
-     * @param options... the option/value pairs to send
+     * @param options the option/value pairs to send
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendSetup(final String... options) throws IOException
     {
@@ -1707,7 +1733,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /**
      * Send a "toggleextendedtext" command to the server.
      *
-     * @param types... the types to request
+     * @param types the types to request
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendToggleextendedtext(final int... types) throws IOException
     {
@@ -1737,6 +1765,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param scval the server version number
      *
      * @param vinfo the client identification string
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public void sendVersion(final int csval, final int scval, final String vinfo) throws IOException
     {
@@ -1759,7 +1789,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param value the value to append
      *
-     * @throws IOException will never be thrown
+     * @throws UnsupportedEncodingException will never be thrown
      */
     private void putDecimal(final int value) throws UnsupportedEncodingException
     {

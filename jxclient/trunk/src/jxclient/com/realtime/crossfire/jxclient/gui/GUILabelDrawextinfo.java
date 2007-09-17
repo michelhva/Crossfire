@@ -64,6 +64,8 @@ public class GUILabelDrawextinfo extends GUILabel
      * @param font The font to use.
      *
      * @param color The color to use.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public GUILabelDrawextinfo(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color) throws IOException
     {

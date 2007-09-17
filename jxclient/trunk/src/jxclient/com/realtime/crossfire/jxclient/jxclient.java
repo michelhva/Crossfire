@@ -35,7 +35,7 @@ public class jxclient
 {
     /**
      * The program entry point.
-     * @since 1.0
+     * @param args The command line arguments.
      */
     public static void main(final String args[])
     {
@@ -48,7 +48,7 @@ public class jxclient
     /**
      * The constructor of the class. This is where the main window is created.
      * Initialization of a JXCWindow is the only task performed here.
-     * @since 1.0
+     * @param args The command line arguments.
      */
     public jxclient(final String args[])
     {

@@ -204,7 +204,21 @@ public class GUIMap extends GUIElement
     /**
      * Create a new instance.
      *
+     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     *
+     * @param nn The name of this element.
+     *
+     * @param nx The x-coordinate for drawing this element to screen.
+     *
+     * @param ny The y-coordinate for drawing this element to screen.
+     *
+     * @param nw The width for drawing this element to screen.
+     *
+     * @param nh The height for drawing this element to screen.
+     *
      * @param tileSize The size of one tile in pixels.
+     *
+     * @throws IOException If an I/O error occurs.
      */
     public GUIMap(final JXCWindow jxcWindow, final String nn, final int tileSize, final int nx, final int ny, final int nw, final int nh) throws IOException
     {
@@ -294,7 +308,7 @@ public class GUIMap extends GUIElement
 
     /**
      * Redraw one square if it has been changed. If it is unchanged ({@link
-     * CfMapSquare#isDirty()} is unset), nothing is drawn.
+     * CfMapSquare#dirty} is unset), nothing is drawn.
      *
      * @param g The graphics to draw into.
      *
@@ -332,7 +346,9 @@ public class GUIMap extends GUIElement
      *
      * @param g The graphics to draw into.
      *
-     * @param square The square to redraw.
+     * @param x The x coordinate of the square to redraw.
+     *
+     * @param y The y coordinate of the square to redraw.
      *
      * @param layer The layer to redraw.
      */

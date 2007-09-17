@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient;
  * An UnknownCommandException is generated whenever an unknown message packet is
  * received from the server.
  *
- * @see com.realtime.crossfire.jxclient.CrossfireServerConnection#command(String cmd, DataInputStream dis)
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0

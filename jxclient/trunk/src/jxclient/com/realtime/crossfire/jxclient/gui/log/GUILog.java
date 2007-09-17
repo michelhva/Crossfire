@@ -70,24 +70,24 @@ public class GUILog extends GUIElement implements GUIScrollable
     private final BufferedImage mybackground;
 
     /**
-     * The font to use for {@link Segment.Font.PRINT}, {@link
-     * Segment.Font.HAND}, and {@link Segment.Font.STANGE} text.
+     * The font to use for {@link Segment.Font#PRINT}, {@link
+     * Segment.Font#HAND}, and {@link Segment.Font#STRANGE} text.
      */
     private final Font fontPrint;
 
     /**
-     * The font to use for {@link Segment.Font.FIXED} text.
+     * The font to use for {@link Segment.Font#FIXED} text.
      */
     private final Font fontFixed;
 
     /**
-     * The font to use for {@link Segment.Font.FIXED} text which has bold
+     * The font to use for {@link Segment.Font#FIXED} text which has bold
      * enabled.
      */
     private final Font fontFixedBold;
 
     /**
-     * The font to use for {@link Segment.Font.ARCANE} text.
+     * The font to use for {@link Segment.Font#ARCANE} text.
      */
     private final Font fontArcane;
 
@@ -317,7 +317,7 @@ public class GUILog extends GUIElement implements GUIScrollable
     }
 
     /**
-     * Update the cached attributes of some {@link Segments} of a {@link Line}.
+     * Update the cached attributes of some {@link Segment}s of a {@link Line}.
      *
      * @param line The line to process.
      *
@@ -402,6 +402,8 @@ public class GUILog extends GUIElement implements GUIScrollable
 
     /**
      * Convert a Crossfire color index to a {@link Color} instance.
+     *
+     * @param color The color index to look up.
      *
      * @return The color, or <code>null</code> to use the default color.
      */

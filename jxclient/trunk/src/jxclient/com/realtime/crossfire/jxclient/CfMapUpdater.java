@@ -57,7 +57,7 @@ public class CfMapUpdater
 
     /**
      * Collects the changed map squares between calls to {@link
-     * #processMapBegin()} and {@link #processMapEnd()}.
+     * #processMapBegin()} and {@link #processMapEnd(boolean)}.
      */
     private static final List<CfMapSquare> squares = new LinkedList<CfMapSquare>();
 
@@ -191,6 +191,8 @@ public class CfMapUpdater
      * @param layer The layer to update.
      *
      * @param animation The animation to set.
+     *
+     * @param type The animation type.
      */
     public static void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
     {
@@ -230,7 +232,7 @@ public class CfMapUpdater
      *
      * @param y The y-coordinate of the square.
      *
-     * @param face The darkness value to set.
+     * @param darkness The darkness value to set.
      */
     public static void processMapDarkness(final int x, final int y, final int darkness)
     {
