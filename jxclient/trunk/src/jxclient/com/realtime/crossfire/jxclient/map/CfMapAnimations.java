@@ -335,8 +335,8 @@ public class CfMapAnimations
         /**
          * Set the tick number. This function does not update the displayed
          * face.
-	 *
-	 * @param tickno The current tick number.
+         *
+         * @param tickno The current tick number.
          */
         public void setTickno(final int tickno)
         {
