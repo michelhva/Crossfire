@@ -1,3 +1,8 @@
+2007-09-17  Andreas Kirschbaum
+
+	* Fix out of memory errors due to face cache. Now unused faces are
+	purged from the in-memory cache.
+
 2007-09-13  Andreas Kirschbaum
 
 	* Accelerate map processing code.

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import java.io.IOException;
+import java.lang.ref.SoftReference;
 import javax.swing.ImageIcon;
 
 /**
@@ -33,14 +34,37 @@ import javax.swing.ImageIcon;
 public class Face
 {
     /**
-     * The image scaled to be used in map view.
+     * The image icon to display for unknown or invalid faces. It is never
+     * <code>null</code>.
      */
-    private ImageIcon imageIcon;
+    private static ImageIcon originalUnknownImageIcon = null;
 
     /**
-     * The original (unscaled) image.
+     * The scaled version of {@link #unknownImageIcon}. It is never
+     * <code>null</code>.
      */
-    private ImageIcon originalImageIcon;
+    private static ImageIcon unknownImageIcon = null;
+
+    /**
+     * The askface manager to query unknown images.
+     */
+    private static AskfaceManager askfaceManager = null;
+
+    /**
+     * The file cache used for loading images from disk.
+     */
+    private static FileCache fileCache = null;
+
+    /**
+     * The image scaled to be used in map view; may be <code>null</code> if
+     * unknown.
+     */
+    private SoftReference<ImageIcon> imageIcon;
+
+    /**
+     * The original (unscaled) image; may be <code>null</code> if unknown.
+     */
+    private SoftReference<ImageIcon> originalImageIcon;
 
     /**
      * The face id as sent by the server.
@@ -53,26 +77,46 @@ public class Face
     private String name;
 
     /**
+     * Initialize the module.
+     *
+     * @param unknownImageIcon The face to return if an image is unknown.
+     *
+     * @param originalUnknownImageIcon The face to return if an original image
+     * is unknown.
+     *
+     * @param askfaceManager The askface manager to query unknown images.
+     *
+     * @param fileCache The file cache used for loading image files from disk.
+     */
+    static void init(final ImageIcon unknownImageIcon, final ImageIcon originalUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCache)
+    {
+        Face.unknownImageIcon = unknownImageIcon;
+        Face.originalUnknownImageIcon = originalUnknownImageIcon;
+        Face.askfaceManager = askfaceManager;
+        Face.fileCache = fileCache;
+    }
+
+    /**
      * Create a new face.
      *
      * @param id The unique face id.
      *
      * @param name The face name.
      *
-     * @param imageIcon The image to use for map view.
+     * @param imageIcon The image to use for map view; may be <code>null</code>
+     * if unknown.
      *
-     * @param originalImageIcon The unscaled image as sent by the server.
+     * @param originalImageIcon The unscaled image as sent by the server; may
+     * be <code>null</code> if unknown.
      */
     public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
     {
         if (name == null) throw new IllegalArgumentException();
-        if (imageIcon == null) throw new IllegalArgumentException();
-        if (originalImageIcon == null) throw new IllegalArgumentException();
 
         this.id = id;
         this.name = name;
-        this.imageIcon = imageIcon;
-        this.originalImageIcon = originalImageIcon;
+        this.imageIcon = imageIcon == null ? null : new SoftReference<ImageIcon>(imageIcon);
+        this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
     }
 
     /**
@@ -82,9 +126,7 @@ public class Face
      */
     public void setImageIcon(final ImageIcon imageIcon)
     {
-        if (imageIcon == null) throw new IllegalArgumentException();
-
-        this.imageIcon = imageIcon;
+        this.imageIcon = imageIcon == null ? null : new SoftReference<ImageIcon>(imageIcon);
     }
 
     /**
@@ -94,9 +136,7 @@ public class Face
      */
     public void setOriginalImageIcon(final ImageIcon originalImageIcon)
     {
-        if (originalImageIcon == null) throw new IllegalArgumentException();
-
-        this.originalImageIcon = originalImageIcon;
+        this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
     }
 
     /**
@@ -144,7 +184,18 @@ public class Face
      */
     public ImageIcon getImageIcon()
     {
-        return imageIcon;
+        if (imageIcon != null)
+        {
+            final ImageIcon result = imageIcon.get();
+            if (result != null)
+            {
+                return result;
+            }
+
+            imageIcon = null;
+        }
+
+        return loadImageIcon();
     }
 
     /**
@@ -154,7 +205,18 @@ public class Face
      */
     public ImageIcon getOriginalImageIcon()
     {
-        return originalImageIcon;
+        if (originalImageIcon != null)
+        {
+            final ImageIcon result = originalImageIcon.get();
+            if (result != null)
+            {
+                return result;
+            }
+
+            originalImageIcon = null;
+        }
+
+        return loadOriginalImageIcon();
     }
 
     /**
@@ -171,5 +233,44 @@ public class Face
     public String toString()
     {
         return name;
+    }
+
+    /**
+     * Load {@link #imageIcon} from the backing storage. If loading fails,
+     * return {@link #unknownImageIcon} and request the image from the server.
+     *
+     * @return The image.
+     */
+    private ImageIcon loadImageIcon()
+    {
+        final ImageIcon imageIcon = fileCache.load(name+".x2.png");
+        if (imageIcon != null)
+        {
+            this.imageIcon = new SoftReference<ImageIcon>(imageIcon);
+            return imageIcon;
+        }
+
+        askfaceManager.queryFace(id);
+        return unknownImageIcon;
+    }
+
+    /**
+     * Load {@link #originalImageIcon} from the backing storage. If loading
+     * fails, return {@link #originalUnknownImageIcon} and request the image
+     * from the server.
+     *
+     * @return The original image.
+     */
+    private ImageIcon loadOriginalImageIcon()
+    {
+        final ImageIcon originalImageIcon = fileCache.load(name+".x1.png");
+        if (originalImageIcon != null)
+        {
+            this.originalImageIcon = new SoftReference<ImageIcon>(originalImageIcon);
+            return originalImageIcon;
+        }
+
+        askfaceManager.queryFace(id);
+        return originalUnknownImageIcon;
     }
 }
