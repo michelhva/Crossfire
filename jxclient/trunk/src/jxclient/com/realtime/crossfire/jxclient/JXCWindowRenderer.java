@@ -38,8 +38,6 @@ public class JXCWindowRenderer
 
     private BufferStrategy bufferStrategy;
 
-    private boolean isfullscreen = false;
-
     private DisplayMode oldDisplayMode=null;
 
     private DisplayMode displayMode = null;
@@ -95,7 +93,6 @@ public class JXCWindowRenderer
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        isfullscreen = gd.isFullScreenSupported();
         if (!fullScreen || !gd.isFullScreenSupported())
         {
             if (fullScreen)
