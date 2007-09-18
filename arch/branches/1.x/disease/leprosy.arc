@@ -36,4 +36,5 @@ face skin.111
 type 72
 food 5
 weight 7
+nrof 1
 end
