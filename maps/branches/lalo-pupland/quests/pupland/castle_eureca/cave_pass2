@@ -1,17 +1,17 @@
 arch map
-region pupland
 name cave_pass2
+difficulty 15
+region pupland
+darkness 2
+width 20
+height 40
+enter_x 9
+enter_y 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 00:13:44 1996
 endmsg
-hp 9
-sp 10
-x 20
-y 40
-level 15
-invisible 2
 end
 arch blocked
 end
@@ -696,6 +696,10 @@ arch flagstone
 x 2
 y 22
 end
+arch big_dragon
+x 2
+y 22
+end
 arch flagstone
 x 2
 y 23
@@ -720,11 +724,19 @@ arch flagstone
 x 2
 y 28
 end
+arch chinese_dragon
+x 2
+y 28
+end
 arch flagstone
 x 2
 y 29
 end
 arch flagstone
+x 2
+y 30
+end
+arch big_dragon
 x 2
 y 30
 end
@@ -744,6 +756,10 @@ arch unholy_ground
 x 2
 y 33
 end
+arch chinese_dragon
+x 2
+y 33
+end
 arch flagstone
 x 2
 y 34
@@ -753,6 +769,10 @@ x 2
 y 35
 end
 arch flagstone
+x 2
+y 36
+end
+arch big_dragon
 x 2
 y 36
 end
@@ -867,6 +887,11 @@ arch dungeon_floor
 x 3
 y 13
 end
+arch big_elec
+x 3
+y 13
+immune 421744
+end
 arch dungeon_floor
 x 3
 y 14
@@ -924,6 +949,10 @@ x 3
 y 24
 end
 arch flagstone
+x 3
+y 25
+end
+arch big_wiz
 x 3
 y 25
 end
@@ -1405,6 +1434,10 @@ arch flagstone
 x 5
 y 33
 end
+arch big_wiz
+x 5
+y 33
+end
 arch flagstone
 x 5
 y 34
@@ -1418,6 +1451,10 @@ x 5
 y 35
 end
 arch flagstone
+x 5
+y 36
+end
+arch chinese_dragon
 x 5
 y 36
 end
@@ -1546,6 +1583,11 @@ arch dungeon_floor
 x 6
 y 14
 end
+arch big_elec
+x 6
+y 14
+immune 421744
+end
 arch dungeon_floor
 x 6
 y 15
@@ -1578,6 +1620,10 @@ arch flagstone
 x 6
 y 22
 end
+arch big_dragon
+x 6
+y 22
+end
 arch flagstone
 x 6
 y 23
@@ -1602,6 +1648,10 @@ arch flagstone
 x 6
 y 28
 end
+arch chinese_dragon
+x 6
+y 28
+end
 arch flagstone
 x 6
 y 29
@@ -1611,6 +1661,10 @@ x 6
 y 30
 end
 arch flagstone
+x 6
+y 31
+end
+arch chinese_dragon
 x 6
 y 31
 end
@@ -2037,6 +2091,10 @@ arch flagstone
 x 8
 y 25
 end
+arch titan
+x 8
+y 25
+end
 arch flagstone
 x 8
 y 26
@@ -2062,6 +2120,10 @@ x 8
 y 30
 end
 arch flagstone
+x 8
+y 31
+end
+arch chinese_dragon
 x 8
 y 31
 end
@@ -2330,6 +2392,10 @@ arch flagstone
 x 9
 y 34
 end
+arch titan
+x 9
+y 34
+end
 arch flagstone
 x 9
 y 35
@@ -2339,6 +2405,10 @@ x 9
 y 36
 end
 arch unholy_ground
+x 9
+y 36
+end
+arch chinese_dragon
 x 9
 y 36
 end
@@ -2499,6 +2569,10 @@ arch flagstone
 x 10
 y 22
 end
+arch chinese_dragon
+x 10
+y 22
+end
 arch flagstone
 x 10
 y 23
@@ -2532,6 +2606,10 @@ x 10
 y 30
 end
 arch flagstone
+x 10
+y 31
+end
+arch chinese_dragon
 x 10
 y 31
 end
@@ -2750,6 +2828,10 @@ arch flagstone
 x 11
 y 25
 end
+arch big_wiz
+x 11
+y 25
+end
 arch flagstone
 x 11
 y 26
@@ -2787,6 +2869,10 @@ x 11
 y 32
 end
 arch flagstone
+x 11
+y 33
+end
+arch chinese_dragon
 x 11
 y 33
 end
@@ -2973,6 +3059,10 @@ arch unholy_ground
 x 12
 y 22
 end
+arch big_dragon
+x 12
+y 22
+end
 arch flagstone
 x 12
 y 23
@@ -3013,6 +3103,10 @@ arch flagstone
 x 12
 y 31
 end
+arch chinese_dragon
+x 12
+y 31
+end
 arch flagstone
 x 12
 y 32
@@ -3030,6 +3124,10 @@ x 12
 y 35
 end
 arch flagstone
+x 12
+y 36
+end
+arch big_dragon
 x 12
 y 36
 end
@@ -3245,6 +3343,10 @@ arch flagstone
 x 13
 y 28
 end
+arch chinese_dragon
+x 13
+y 28
+end
 arch flagstone
 x 13
 y 29
@@ -3266,6 +3368,10 @@ x 13
 y 32
 end
 arch flagstone
+x 13
+y 33
+end
+arch big_wiz
 x 13
 y 33
 end
@@ -3743,6 +3849,10 @@ arch dungeon_magic
 x 15
 y 25
 end
+arch big_dragon
+x 15
+y 25
+end
 arch flagstone
 x 15
 y 26
@@ -3764,6 +3874,10 @@ x 15
 y 29
 end
 arch flagstone
+x 15
+y 30
+end
+arch big_dragon
 x 15
 y 30
 end
@@ -4736,118 +4850,4 @@ end
 arch blocked
 x 19
 y 39
-end
-arch big_dragon
-x 2
-y 22
-end
-arch chinese_dragon
-x 2
-y 28
-end
-arch big_dragon
-x 2
-y 30
-end
-arch chinese_dragon
-x 2
-y 33
-end
-arch big_dragon
-x 2
-y 36
-end
-arch big_elec
-x 3
-y 13
-immune 421744
-end
-arch big_wiz
-x 3
-y 25
-end
-arch big_wiz
-x 5
-y 33
-end
-arch chinese_dragon
-x 5
-y 36
-end
-arch big_elec
-x 6
-y 14
-immune 421744
-end
-arch big_dragon
-x 6
-y 22
-end
-arch chinese_dragon
-x 6
-y 28
-end
-arch chinese_dragon
-x 6
-y 31
-end
-arch titan
-x 8
-y 25
-end
-arch chinese_dragon
-x 8
-y 31
-end
-arch titan
-x 9
-y 34
-end
-arch chinese_dragon
-x 9
-y 36
-end
-arch chinese_dragon
-x 10
-y 22
-end
-arch chinese_dragon
-x 10
-y 31
-end
-arch big_wiz
-x 11
-y 25
-end
-arch chinese_dragon
-x 11
-y 33
-end
-arch big_dragon
-x 12
-y 22
-end
-arch chinese_dragon
-x 12
-y 31
-end
-arch big_dragon
-x 12
-y 36
-end
-arch chinese_dragon
-x 13
-y 28
-end
-arch big_wiz
-x 13
-y 33
-end
-arch big_dragon
-x 15
-y 25
-end
-arch big_dragon
-x 15
-y 30
 end

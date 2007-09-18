@@ -192,6 +192,12 @@ arch dirtfloor
 x 2
 y 5
 end
+arch giant
+x 2
+y 5
+unaggressive 1
+stand_still 1
+end
 arch dirtfloor
 x 2
 y 6
@@ -666,6 +672,12 @@ arch dirtfloor
 x 9
 y 5
 end
+arch giant
+x 9
+y 5
+unaggressive 1
+stand_still 1
+end
 arch dirtfloor
 x 9
 y 6
@@ -869,16 +881,4 @@ end
 arch dun12
 x 11
 y 11
-end
-arch giant
-x 2
-y 5
-unaggressive 1
-stand_still 1
-end
-arch giant
-x 9
-y 5
-unaggressive 1
-stand_still 1
 end

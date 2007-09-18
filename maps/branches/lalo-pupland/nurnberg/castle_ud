@@ -1,12 +1,13 @@
 arch map
-region nurnberg
 name castle_ud
+region nurnberg
+width 25
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar  4 04:26:56 1996
 endmsg
-x 25
 end
 arch blocked
 end
@@ -284,7 +285,7 @@ end
 arch prisoner
 msg
 @match Eureca|eureca
-No, he is not here... 
+No, he is not here...
 @match *
 Who are you? How did you manage
 to enter this place?
@@ -344,8 +345,8 @@ end
 arch button_lever
 x 3
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch elf
 name Chief
@@ -683,8 +684,8 @@ arch grate_closed_2
 x 7
 y 4
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 7
@@ -750,8 +751,8 @@ arch grate_closed_2
 x 7
 y 13
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 7
@@ -1078,8 +1079,8 @@ arch grate_closed_2
 x 10
 y 5
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 10
@@ -1132,10 +1133,10 @@ ac 30
 x 10
 y 11
 speed 0.500000
-immune 254
 alive 1
 no_pass 0
 tear_down 1
+immune 254
 end
 arch dungeon_floor
 x 10

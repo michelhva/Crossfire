@@ -1,13 +1,13 @@
 arch map
-region pupland
 name orc_f
+region pupland
+width 25
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 11 22:38:29 1996
 endmsg
-x 25
-y 17
 end
 arch dungeon_floor
 end
@@ -1957,8 +1957,8 @@ end
 arch button_plate
 x 18
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 18
@@ -2129,8 +2129,8 @@ arch igate_closed_1
 x 20
 y 5
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 20

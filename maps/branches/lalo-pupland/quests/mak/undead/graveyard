@@ -857,6 +857,14 @@ arch brush
 x 8
 y 6
 end
+arch courthouse
+name mausoleum
+slaying mausoleum
+hp 10
+sp 19
+x 8
+y 6
+end
 arch brush
 x 8
 y 7
@@ -1801,12 +1809,4 @@ end
 arch swall_2_2_4
 x 17
 y 16
-end
-arch courthouse
-name mausoleum
-slaying mausoleum
-hp 10
-sp 19
-x 8
-y 6
 end

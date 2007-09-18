@@ -2282,6 +2282,40 @@ arch flagstone
 x 14
 y 11
 end
+arch mabu
+name naked woman
+msg
+@match yes|clothes|dress
+Oh thank you. Please give them to me.
+@match no
+Oh you are just as mean as the prison
+guards.
+@match guard|guards
+They won't give me any clothes either.
+And I hear the post across the
+corridor has become a most prized job
+by the guards!
+@match streaking|arrested|naked
+I had to run from my home in the middle
+of the night, as band of orc's crashed
+though the bedroom door!
+@match home|where|address|name
+I'm Alfalfa, and I live, or used to
+live at, Number 32, River Road.
+Oh please get rid of those horrible
+Orc's and I'll give you a Merchants
+Gate Pass.
+@match gate|pass|merchant
+Just go to the farthest corner from the
+door and dig into the wall and you will
+find it.
+@match *
+I was arrested for streaking.
+Do you have any spare clothes?
+endmsg
+x 14
+y 11
+end
 arch flagstone
 x 14
 y 12
@@ -3363,38 +3397,4 @@ end
 arch cobblestones2
 x 20
 y 24
-end
-arch mabu
-name naked woman
-msg
-@match yes|clothes|dress
-Oh thank you. Please give them to me.
-@match no
-Oh you are just as mean as the prison
-guards.
-@match guard|guards
-They won't give me any clothes either.
-And I hear the post across the
-corridor has become a most prized job
-by the guards!
-@match streaking|arrested|naked
-I had to run from my home in the middle
-of the night, as band of orc's crashed
-though the bedroom door!
-@match home|where|address|name
-I'm Alfalfa, and I live, or used to
-live at, Number 32, River Road.
-Oh please get rid of those horrible
-Orc's and I'll give you a Merchants
-Gate Pass.
-@match gate|pass|merchant
-Just go to the farthest corner from the
-door and dig into the wall and you will
-find it.
-@match *
-I was arrested for streaking.
-Do you have any spare clothes?
-endmsg
-x 14
-y 11
 end

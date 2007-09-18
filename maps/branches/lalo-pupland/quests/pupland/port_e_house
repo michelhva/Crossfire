@@ -526,6 +526,13 @@ x 6
 y 6
 no_pass 0
 end
+arch longship
+slaying port_w
+hp 23
+sp 13
+x 6
+y 6
+end
 arch pstone_1
 x 6
 y 7
@@ -575,9 +582,9 @@ maxhp 180
 x 6
 y 13
 speed_left -1.750000
+pick_up 0
 friendly 1
 unaggressive 0
-pick_up 0
 end
 arch woodfloor
 x 6
@@ -803,9 +810,9 @@ maxhp 180
 x 8
 y 11
 speed_left -1.750000
+pick_up 0
 friendly 1
 unaggressive 0
-pick_up 0
 end
 arch woodfloor
 x 8
@@ -1334,11 +1341,4 @@ end
 arch cobblestones2
 x 14
 y 15
-end
-arch longship
-slaying port_w
-hp 23
-sp 13
-x 6
-y 6
 end

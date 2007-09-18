@@ -1,12 +1,14 @@
 arch map
-region nurnberg
 name guild_ud
+fixed_resettime 1
+region nurnberg
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar  4 03:47:37 1996
 endmsg
-stand_still 1
 end
 arch blocked
 end
@@ -496,8 +498,8 @@ face blake_A.111
 hp 15
 x 4
 y 10
-protected 2
 connected 2
+protected 2
 end
 arch pstone_1
 x 4
@@ -517,8 +519,8 @@ arch button_lever
 name outlet
 x 4
 y 12
-protected 2
 connected 2
+protected 2
 end
 arch table_4
 x 4
@@ -990,8 +992,8 @@ arch grate_closed_2
 x 8
 y 13
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 8
@@ -1163,8 +1165,8 @@ arch grate_closed_1
 x 10
 y 11
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 10
@@ -1405,8 +1407,8 @@ arch grate_closed_2
 x 12
 y 13
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 12
@@ -1656,8 +1658,8 @@ end
 arch button_handle
 x 14
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 14

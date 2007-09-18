@@ -1,12 +1,13 @@
 arch map
-region pupland
 name castle_eureca8
+region pupland
+width 18
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Mar 13 22:28:33 1996
 endmsg
-x 18
 end
 arch dungeon_magic
 end
@@ -183,6 +184,10 @@ x 1
 y 10
 end
 arch flagstone
+x 1
+y 11
+end
+arch big_elec
 x 1
 y 11
 end
@@ -400,8 +405,8 @@ end
 arch trigger
 x 3
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -410,8 +415,8 @@ end
 arch gateTrg1
 x 3
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -420,8 +425,8 @@ end
 arch trigger
 x 3
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 3
@@ -436,6 +441,10 @@ x 3
 y 10
 end
 arch flagstone
+x 3
+y 11
+end
+arch big_elec
 x 3
 y 11
 end
@@ -742,6 +751,10 @@ x 6
 y 2
 end
 arch flagstone
+x 6
+y 3
+end
+arch big_elec
 x 6
 y 3
 end
@@ -1340,8 +1353,8 @@ arch trigger
 name trigger for director
 x 10
 y 5
-protected 2
 connected 2
+protected 2
 end
 arch flagstone
 x 10
@@ -1394,8 +1407,8 @@ end
 arch ggate_open
 x 10
 y 10
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_magic
 x 10
@@ -1523,10 +1536,10 @@ x 11
 y 7
 speed 0.100000
 speed_left -3.990000
-protected 1
 state 2
 connected 1
 is_animated 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1692,9 +1705,9 @@ sp 1
 maxsp 2
 x 12
 y 7
-protected 2
 state 1
 connected 2
+protected 2
 end
 arch flagstone
 x 12
@@ -1703,8 +1716,8 @@ end
 arch button_small
 x 12
 y 8
-protected 3
 connected 3
+protected 3
 end
 arch flagstone
 x 12
@@ -1878,8 +1891,8 @@ end
 arch button_small
 x 13
 y 11
-protected 5
 connected 5
+protected 5
 end
 arch dungeon_magic
 x 13
@@ -2308,8 +2321,8 @@ arch button_small
 name 100
 x 17
 y 1
-protected 100
 connected 100
+protected 100
 end
 arch teleporter
 name move booze on button 5 at startup
@@ -2332,8 +2345,8 @@ name 100 : move boulder to south at startup
 x 17
 y 4
 speed 0.500000
-protected 100
 connected 100
+protected 100
 end
 arch boulder
 x 17
@@ -2344,15 +2357,15 @@ name 5
 x 17
 y 5
 speed 0.500000
-protected 5
 connected 5
+protected 5
 end
 arch button_plate
 name 6 : pushed if booze are removed from bt5
 x 17
 y 6
-protected 6
 connected 6
+protected 6
 end
 arch blocked
 x 17
@@ -2365,8 +2378,8 @@ sp 7
 x 17
 y 8
 speed 0.000000
-protected 6
 connected 6
+protected 6
 end
 arch boulder
 x 17
@@ -2389,6 +2402,7 @@ y 11
 end
 arch raas
 msg
+
 endmsg
 x 17
 y 11
@@ -2405,8 +2419,8 @@ An alarm sounds
 endmsg
 x 17
 y 13
-protected 1
 connected 1
+protected 1
 end
 arch blocked
 x 17
@@ -2415,16 +2429,4 @@ end
 arch blocked
 x 17
 y 15
-end
-arch big_elec
-x 1
-y 11
-end
-arch big_elec
-x 3
-y 11
-end
-arch big_elec
-x 6
-y 3
 end

@@ -1,17 +1,17 @@
 arch map
-region nurnberg
 name washop
+difficulty 50
+region nurnberg
+shopitems rod:95;wand:100;*:-100
+shopmin 250
+shopmax 50000
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Feb 23 01:42:46 1996
 endmsg
-x 25
-y 25
-level 50
-shopitems rod:95;wand:100;*:-100
-shopmax 50000
-shopmin 250
 end
 arch evergreens
 end

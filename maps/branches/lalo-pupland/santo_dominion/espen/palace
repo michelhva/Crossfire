@@ -174,11 +174,19 @@ arch woodfloor
 x 1
 y 2
 end
+arch dragon
+x 1
+y 2
+end
 arch dungeon_magic
 x 1
 y 3
 end
 arch woodfloor
+x 1
+y 3
+end
+arch dragon
 x 1
 y 3
 end
@@ -187,6 +195,10 @@ x 1
 y 4
 end
 arch woodfloor
+x 1
+y 4
+end
+arch dragon
 x 1
 y 4
 end
@@ -195,6 +207,10 @@ x 1
 y 5
 end
 arch woodfloor
+x 1
+y 5
+end
+arch dragon
 x 1
 y 5
 end
@@ -203,6 +219,10 @@ x 1
 y 6
 end
 arch woodfloor
+x 1
+y 6
+end
+arch dragon
 x 1
 y 6
 end
@@ -223,6 +243,10 @@ x 1
 y 8
 end
 arch woodfloor
+x 1
+y 9
+end
+arch giant
 x 1
 y 9
 end
@@ -282,6 +306,10 @@ arch woodfloor
 x 1
 y 20
 end
+arch behemoth
+x 1
+y 20
+end
 arch woodfloor
 x 1
 y 21
@@ -306,6 +334,10 @@ arch woodfloor
 x 1
 y 24
 end
+arch dread
+x 1
+y 24
+end
 arch dungeon_magic
 x 1
 y 25
@@ -327,6 +359,10 @@ x 1
 y 27
 end
 arch woodfloor
+x 1
+y 27
+end
+arch behemoth
 x 1
 y 27
 end
@@ -429,11 +465,19 @@ arch woodfloor
 x 2
 y 8
 end
+arch giant
+x 2
+y 8
+end
 arch woodfloor
 x 2
 y 9
 end
 arch woodfloor
+x 2
+y 10
+end
+arch giant
 x 2
 y 10
 end
@@ -580,11 +624,23 @@ arch woodfloor
 x 3
 y 2
 end
+arch dragon
+x 3
+y 2
+end
 arch woodfloor
 x 3
 y 3
 end
+arch dragon
+x 3
+y 3
+end
 arch woodfloor
+x 3
+y 4
+end
+arch dragon
 x 3
 y 4
 end
@@ -1098,6 +1154,10 @@ x 5
 y 1
 end
 arch woodfloor
+x 5
+y 2
+end
+arch dragon
 x 5
 y 2
 end
@@ -8481,64 +8541,4 @@ end
 arch bwall_2_2_4
 x 31
 y 31
-end
-arch dragon
-x 1
-y 2
-end
-arch dragon
-x 1
-y 3
-end
-arch dragon
-x 1
-y 4
-end
-arch dragon
-x 1
-y 5
-end
-arch dragon
-x 1
-y 6
-end
-arch giant
-x 1
-y 9
-end
-arch behemoth
-x 1
-y 20
-end
-arch dread
-x 1
-y 24
-end
-arch behemoth
-x 1
-y 27
-end
-arch giant
-x 2
-y 8
-end
-arch giant
-x 2
-y 10
-end
-arch dragon
-x 3
-y 2
-end
-arch dragon
-x 3
-y 3
-end
-arch dragon
-x 3
-y 4
-end
-arch dragon
-x 5
-y 2
 end

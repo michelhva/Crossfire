@@ -639,6 +639,10 @@ arch medium_stones
 x 2
 y 6
 end
+arch ent
+x 2
+y 6
+end
 arch medium_stones
 x 2
 y 7
@@ -746,6 +750,10 @@ arch medium_stones
 x 2
 y 24
 end
+arch ent
+x 2
+y 24
+end
 arch medium_stones
 x 2
 y 25
@@ -850,6 +858,10 @@ y 2
 speed_left -2.020000
 end
 arch medium_stones
+x 3
+y 3
+end
+arch ent
 x 3
 y 3
 end
@@ -1691,6 +1703,10 @@ arch medium_stones
 x 6
 y 13
 end
+arch ent
+x 6
+y 13
+end
 arch medium_stones
 x 6
 y 14
@@ -2027,6 +2043,10 @@ x 7
 y 19
 end
 arch medium_stones
+x 7
+y 20
+end
+arch ent
 x 7
 y 20
 end
@@ -2301,6 +2321,10 @@ y 25
 speed_left -0.172000
 end
 arch medium_stones
+x 8
+y 26
+end
+arch ent
 x 8
 y 26
 end
@@ -3062,6 +3086,10 @@ x 11
 y 15
 end
 arch medium_stones
+x 11
+y 16
+end
+arch ent
 x 11
 y 16
 end
@@ -4281,6 +4309,19 @@ no_pass 1
 blocksview 1
 end
 arch medium_stones
+x 15
+y 15
+end
+arch courthouse
+name Temple
+slaying OuterTemple
+msg
+Just your luck. You have to come
+busting in just when a religious
+ceremony is occurring.
+endmsg
+hp 7
+sp 29
 x 15
 y 15
 end
@@ -5149,6 +5190,10 @@ arch medium_stones
 x 18
 y 21
 end
+arch ent
+x 18
+y 21
+end
 arch medium_stones
 x 18
 y 22
@@ -5853,6 +5898,10 @@ arch medium_stones
 x 21
 y 11
 end
+arch ent
+x 21
+y 11
+end
 arch medium_stones
 x 21
 y 12
@@ -6053,6 +6102,10 @@ x 22
 y 5
 end
 arch medium_stones
+x 22
+y 6
+end
+arch ent
 x 22
 y 6
 end
@@ -6701,6 +6754,10 @@ arch medium_stones
 x 24
 y 18
 end
+arch ent
+x 24
+y 18
+end
 arch medium_stones
 x 24
 y 19
@@ -6754,6 +6811,10 @@ x 24
 y 25
 end
 arch medium_stones
+x 24
+y 26
+end
+arch ent
 x 24
 y 26
 end
@@ -7590,6 +7651,10 @@ arch medium_stones
 x 27
 y 26
 end
+arch ent
+x 27
+y 26
+end
 arch medium_stones
 x 27
 y 27
@@ -7675,6 +7740,10 @@ x 28
 y 1
 end
 arch medium_stones
+x 28
+y 2
+end
+arch ent
 x 28
 y 2
 end
@@ -8290,6 +8359,10 @@ arch medium_stones
 x 30
 y 3
 end
+arch ent
+x 30
+y 3
+end
 arch medium_stones
 x 30
 y 4
@@ -8427,6 +8500,10 @@ x 30
 y 21
 end
 arch medium_stones
+x 30
+y 22
+end
+arch ent
 x 30
 y 22
 end
@@ -8572,6 +8649,10 @@ arch medium_stones
 x 31
 y 7
 end
+arch ent
+x 31
+y 7
+end
 arch medium_stones
 x 31
 y 8
@@ -8661,6 +8742,10 @@ x 31
 y 17
 end
 arch medium_stones
+x 31
+y 18
+end
+arch ent
 x 31
 y 18
 end
@@ -9462,89 +9547,4 @@ x 33
 y 33
 no_pass 1
 blocksview 1
-end
-arch ent
-x 2
-y 6
-end
-arch ent
-x 2
-y 24
-end
-arch ent
-x 3
-y 3
-end
-arch ent
-x 6
-y 13
-end
-arch ent
-x 7
-y 20
-end
-arch ent
-x 8
-y 26
-end
-arch ent
-x 11
-y 16
-end
-arch courthouse
-name Temple
-slaying OuterTemple
-msg
-Just your luck. You have to come
-busting in just when a religious
-ceremony is occurring.
-endmsg
-hp 7
-sp 29
-x 15
-y 15
-end
-arch ent
-x 18
-y 21
-end
-arch ent
-x 21
-y 11
-end
-arch ent
-x 22
-y 6
-end
-arch ent
-x 24
-y 18
-end
-arch ent
-x 24
-y 26
-end
-arch ent
-x 27
-y 26
-end
-arch ent
-x 28
-y 2
-end
-arch ent
-x 30
-y 3
-end
-arch ent
-x 30
-y 22
-end
-arch ent
-x 31
-y 7
-end
-arch ent
-x 31
-y 18
 end

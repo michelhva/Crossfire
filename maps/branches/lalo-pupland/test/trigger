@@ -1,19 +1,19 @@
 arch map
 name trigger
+width 10
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed May 24 17:19:50 2000
 endmsg
-x 10
-y 10
 end
 arch spikes_open
-type 83
 other_arch platinacoin
-level 10
 x 7
 y 2
+level 10
+type 83
 connected 1
 end
 arch spikes_open

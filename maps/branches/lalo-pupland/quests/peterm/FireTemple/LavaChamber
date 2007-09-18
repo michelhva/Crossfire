@@ -281,6 +281,13 @@ arch imp
 x 5
 y 1
 end
+arch pentagram_111
+hp 10
+sp 6
+x 5
+y 1
+connected 13
+end
 arch imp
 x 5
 y 2
@@ -774,6 +781,13 @@ arch imp
 x 9
 y 26
 end
+arch pentagram_111
+hp 12
+sp 17
+x 9
+y 26
+connected 14
+end
 arch imp
 x 9
 y 27
@@ -807,6 +821,10 @@ x 10
 y 5
 end
 arch pstone_2
+x 10
+y 6
+end
+arch pentagram_111
 x 10
 y 6
 end
@@ -1151,6 +1169,10 @@ x 12
 y 16
 end
 arch pstone_2
+x 12
+y 17
+end
+arch pentagram_111
 x 12
 y 17
 end
@@ -1785,6 +1807,10 @@ arch permanent_lava
 x 15
 y 11
 end
+arch active_volcano
+x 15
+y 11
+end
 arch pstone_2
 x 15
 y 12
@@ -1973,6 +1999,10 @@ x 16
 y 2
 end
 arch pstone_2
+x 16
+y 3
+end
+arch pentagram_111
 x 16
 y 3
 end
@@ -2291,6 +2321,10 @@ arch permanent_lava
 x 17
 y 9
 end
+arch active_volcano
+x 17
+y 9
+end
 arch magic_mouth
 msg
 A blast of hot air comes up the
@@ -2350,6 +2384,10 @@ x 17
 y 13
 end
 arch permanent_lava
+x 17
+y 13
+end
+arch active_volcano
 x 17
 y 13
 end
@@ -2940,6 +2978,10 @@ arch flagstone
 x 19
 y 11
 end
+arch active_volcano
+x 19
+y 11
+end
 arch pstone_2
 x 19
 y 12
@@ -3987,6 +4029,10 @@ arch pstone_2
 x 23
 y 6
 end
+arch pentagram_111
+x 23
+y 6
+end
 arch pstone_2
 x 23
 y 7
@@ -4054,6 +4100,10 @@ x 23
 y 16
 end
 arch pstone_2
+x 23
+y 17
+end
+arch pentagram_111
 x 23
 y 17
 end
@@ -4527,6 +4577,13 @@ arch imp
 x 25
 y 25
 end
+arch pentagram_111
+hp 23
+sp 17
+x 25
+y 25
+connected 10
+end
 arch imp
 x 25
 y 26
@@ -4613,6 +4670,13 @@ end
 arch imp
 x 26
 y 1
+end
+arch pentagram_111
+hp 16
+sp 3
+x 26
+y 1
+connected 12
 end
 arch imp
 x 26
@@ -5128,6 +5192,13 @@ arch imp
 x 29
 y 6
 end
+arch pentagram_111
+hp 23
+sp 6
+x 29
+y 6
+connected 11
+end
 arch imp
 x 29
 y 7
@@ -5547,75 +5618,4 @@ end
 arch blocked
 x 34
 y 17
-end
-arch pentagram_111
-hp 10
-sp 6
-x 5
-y 1
-connected 13
-end
-arch pentagram_111
-hp 12
-sp 17
-x 9
-y 26
-connected 14
-end
-arch pentagram_111
-x 10
-y 6
-end
-arch pentagram_111
-x 12
-y 17
-end
-arch active_volcano
-x 15
-y 11
-end
-arch pentagram_111
-x 16
-y 3
-end
-arch active_volcano
-x 17
-y 9
-end
-arch active_volcano
-x 17
-y 13
-end
-arch active_volcano
-x 19
-y 11
-end
-arch pentagram_111
-x 23
-y 6
-end
-arch pentagram_111
-x 23
-y 17
-end
-arch pentagram_111
-hp 23
-sp 17
-x 25
-y 25
-connected 10
-end
-arch pentagram_111
-hp 16
-sp 3
-x 26
-y 1
-connected 12
-end
-arch pentagram_111
-hp 23
-sp 6
-x 29
-y 6
-connected 11
 end

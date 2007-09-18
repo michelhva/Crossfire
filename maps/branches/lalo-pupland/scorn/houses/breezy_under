@@ -1,17 +1,17 @@
 arch map
-region scorn
 name Under Breezy Acres
+difficulty 2
+region scorn
+darkness 3
+width 30
+height 30
+enter_x 14
+enter_y 8
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/11/2003
 endmsg
-width 30
-height 30
-enter_x 14
-enter_y 8
-difficulty 2
-darkness 3
 end
 arch dungeon_floor
 end
@@ -1439,9 +1439,9 @@ x 8
 y 25
 end
 arch button_plate
-connected 1
 x 8
 y 25
+connected 1
 end
 arch dungeon_floor
 x 8
@@ -1870,9 +1870,9 @@ x 11
 y 22
 end
 arch button_plate
-connected 2
 x 11
 y 22
+connected 2
 end
 arch dungeon_floor
 x 11
@@ -2167,36 +2167,36 @@ x 13
 y 21
 end
 arch igate_closed_2
-connected 2
 x 13
 y 21
+connected 2
 end
 arch dungeon_floor
 x 13
 y 22
 end
 arch igate_closed_2
-connected 2
 x 13
 y 22
+connected 2
 end
 arch dungeon_floor
 x 13
 y 23
 end
 arch igate_closed_2
-connected 2
 x 13
 y 23
+connected 2
 end
 arch dungeon_floor
 x 13
 y 24
 end
 arch igate_closed_2
-connected 2
 x 13
 y 24
+connected 2
 end
 arch dungeon_floor
 x 13
@@ -2558,9 +2558,9 @@ x 15
 y 18
 end
 arch grate_closed_2
-connected 1
 x 15
 y 18
+connected 1
 end
 arch dungeon_floor
 x 15
@@ -2631,9 +2631,9 @@ x 15
 y 27
 end
 arch grate_closed_2
-connected 1
 x 15
 y 27
+connected 1
 end
 arch dungeon_floor
 x 15
@@ -2742,9 +2742,9 @@ x 16
 y 11
 end
 arch button_lever
-connected 25
 x 16
 y 11
+connected 25
 end
 arch dungeon_floor
 x 16
@@ -2759,9 +2759,9 @@ x 16
 y 13
 end
 arch button_lever
-connected 25
 x 16
 y 13
+connected 25
 end
 arch dungeon_floor
 x 16
@@ -2792,9 +2792,9 @@ x 16
 y 19
 end
 arch button_plate
-connected 4
 x 16
 y 19
+connected 4
 end
 arch dungeon_floor
 x 16
@@ -2849,9 +2849,9 @@ x 16
 y 26
 end
 arch button_plate
-connected 5
 x 16
 y 26
+connected 5
 end
 arch dungeon_floor
 x 16
@@ -2936,9 +2936,9 @@ x 17
 y 12
 end
 arch grate_closed_1
-connected 25
 x 17
 y 12
+connected 25
 end
 arch dungeon_floor
 x 17
@@ -3016,11 +3016,11 @@ arch magic_mouth
 msg
 You hear a gate open.
 endmsg
+x 17
+y 26
 connected 5
 walk_on 0
 fly_on 0
-x 17
-y 26
 end
 arch dungeon_floor
 x 17
@@ -3113,9 +3113,9 @@ x 18
 y 12
 end
 arch grate_closed_1
-connected 25
 x 18
 y 12
+connected 25
 end
 arch dungeon_floor
 x 18
@@ -3220,9 +3220,9 @@ x 19
 y 1
 end
 arch goblin_chief_arc
-will_apply 3
 x 19
 y 1
+will_apply 3
 end
 arch dungeon_floor
 x 19
@@ -3293,9 +3293,9 @@ x 19
 y 14
 end
 arch button_small
-connected 7
 x 19
 y 14
+connected 7
 end
 arch dungeon_floor
 x 19
@@ -3412,9 +3412,9 @@ x 20
 y 4
 end
 arch goblin_chief_arc
-will_apply 3
 x 20
 y 4
+will_apply 3
 end
 arch dungeon_floor
 x 20
@@ -3473,9 +3473,9 @@ x 20
 y 14
 end
 arch igate_closed_2
-connected 7
 x 20
 y 14
+connected 7
 end
 arch dungeon_floor
 x 20
@@ -3538,18 +3538,18 @@ x 20
 y 22
 end
 arch igate_closed_2
-connected 5
 x 20
 y 22
+connected 5
 end
 arch dungeon_floor
 x 20
 y 23
 end
 arch igate_closed_2
-connected 5
 x 20
 y 23
+connected 5
 end
 arch dungeon_floor
 x 20
@@ -3618,9 +3618,9 @@ x 21
 y 3
 end
 arch goblin_chief_arc
-will_apply 3
 x 21
 y 3
+will_apply 3
 end
 arch dungeon_floor
 x 21
@@ -3675,18 +3675,18 @@ x 21
 y 14
 end
 arch button_small
-connected 7
 x 21
 y 14
+connected 7
 end
 arch dungeon_floor
 x 21
 y 15
 end
 arch gate_closed_1
-connected 20
 x 21
 y 15
+connected 20
 end
 arch dungeon_floor
 x 21
@@ -3694,10 +3694,10 @@ y 16
 end
 arch trigger
 name handle
+x 21
+y 16
 type 93
 connected 22
-x 21
-y 16
 end
 arch dungeon_floor
 x 21
@@ -3705,10 +3705,10 @@ y 17
 end
 arch trigger
 name handle
+x 21
+y 17
 type 93
 connected 14
-x 21
-y 17
 end
 arch dungeon_floor
 x 21
@@ -3716,20 +3716,20 @@ y 18
 end
 arch trigger
 name handle
+x 21
+y 18
 type 93
 connected 10
-x 21
-y 18
 end
 arch dungeon_floor
 x 21
 y 19
 end
 arch trigger
+x 21
+y 19
 type 93
 connected 12
-x 21
-y 19
 end
 arch dungeon_floor
 x 21
@@ -3737,10 +3737,10 @@ y 20
 end
 arch trigger
 name handle
+x 21
+y 20
 type 93
 connected 11
-x 21
-y 20
 end
 arch dungeon_floor
 x 21
@@ -3748,10 +3748,10 @@ y 21
 end
 arch trigger
 name handle
-type 93
-connected 13
 x 21
 y 21
+type 93
+connected 13
 end
 arch dungeon_floor
 x 21
@@ -3766,9 +3766,9 @@ x 21
 y 24
 end
 arch button_handle
-connected 8
 x 21
 y 24
+connected 8
 end
 arch dungeon_floor
 x 21
@@ -3849,9 +3849,9 @@ x 22
 y 10
 end
 arch goblin_chief_arc
-will_apply 3
 x 22
 y 10
+will_apply 3
 end
 arch dungeon_floor
 x 22
@@ -3878,9 +3878,9 @@ x 22
 y 15
 end
 arch gate_closed_1
-connected 20
 x 22
 y 15
+connected 20
 end
 arch dungeon_floor
 x 22
@@ -3937,10 +3937,10 @@ end
 arch teleporter
 hp 2
 sp 27
-connected 4
-speed 0.0
 x 22
 y 28
+speed 0.0
+connected 4
 end
 arch generate_goblin
 x 22
@@ -4029,9 +4029,9 @@ x 23
 y 15
 end
 arch gate_closed_1
-connected 20
 x 23
 y 15
+connected 20
 end
 arch dungeon_floor
 x 23
@@ -4176,9 +4176,9 @@ x 24
 y 15
 end
 arch gate_closed_1
-connected 20
 x 24
 y 15
+connected 20
 end
 arch dungeon_floor
 x 24
@@ -4208,11 +4208,11 @@ arch magic_mouth
 msg
 Click!
 endmsg
+x 24
+y 22
 connected 15
 walk_on 0
 fly_on 0
-x 24
-y 22
 end
 arch dungeon_floor
 x 24
@@ -4223,10 +4223,10 @@ x 24
 y 23
 end
 arch gate_closed_1
-connected 22
-no_magic 1
 x 24
 y 23
+connected 22
+no_magic 1
 end
 arch dungeon_floor
 x 24
@@ -4238,10 +4238,10 @@ y 25
 end
 arch lightningwall_1
 dam 6
-connected 8
-speed 0.0
 x 24
 y 25
+speed 0.0
+connected 8
 end
 arch dungeon_floor
 x 24
@@ -4258,10 +4258,10 @@ end
 arch teleporter
 hp 26
 sp 16
-connected 10
-speed 0.0
 x 24
 y 28
+speed 0.0
+connected 10
 end
 arch director_7
 x 24
@@ -4270,10 +4270,10 @@ end
 arch teleporter
 hp 21
 sp 16
-connected 13
-speed 0.0
 x 24
 y 29
+speed 0.0
+connected 13
 end
 arch director_4
 x 24
@@ -4290,9 +4290,9 @@ x 25
 y 1
 end
 arch goblin_chief_arc
-will_apply 3
 x 25
 y 1
+will_apply 3
 end
 arch dungeon_floor
 x 25
@@ -4371,9 +4371,9 @@ x 25
 y 15
 end
 arch gate_closed_1
-connected 20
 x 25
 y 15
+connected 20
 end
 arch dungeon_floor
 x 25
@@ -4403,11 +4403,11 @@ arch magic_mouth
 msg
 Click!
 endmsg
+x 25
+y 22
 connected 18
 walk_on 0
 fly_on 0
-x 25
-y 22
 end
 arch dungeon_floor
 x 25
@@ -4418,9 +4418,9 @@ x 25
 y 23
 end
 arch gate_open_1
-connected 22
 x 25
 y 23
+connected 22
 end
 arch dungeon_floor
 x 25
@@ -4432,10 +4432,10 @@ y 25
 end
 arch lightningwall_1
 dam 6
-connected 8
-speed 0.0
 x 25
 y 25
+speed 0.0
+connected 8
 end
 arch dungeon_floor
 x 25
@@ -4452,10 +4452,10 @@ end
 arch teleporter
 hp 24
 sp 18
-connected 11
-speed 0.0
 x 25
 y 28
+speed 0.0
+connected 11
 end
 arch director_3
 x 25
@@ -4464,10 +4464,10 @@ end
 arch teleporter
 hp 22
 sp 22
-connected 16
-speed 0.0
 x 25
 y 29
+speed 0.0
+connected 16
 end
 arch director_3
 x 25
@@ -4560,9 +4560,9 @@ x 26
 y 15
 end
 arch gate_closed_1
-connected 20
 x 26
 y 15
+connected 20
 end
 arch dungeon_floor
 x 26
@@ -4589,11 +4589,11 @@ x 26
 y 21
 end
 arch magic_mouth
+x 26
+y 22
 connected 17
 walk_on 0
 fly_on 0
-x 26
-y 22
 end
 arch dungeon_floor
 x 26
@@ -4604,10 +4604,10 @@ x 26
 y 23
 end
 arch gate_closed_1
-connected 22
-no_magic 1
 x 26
 y 23
+connected 22
+no_magic 1
 end
 arch dungeon_floor
 x 26
@@ -4619,10 +4619,10 @@ y 25
 end
 arch lightningwall_1
 dam 6
-connected 8
-speed 0.0
 x 26
 y 25
+speed 0.0
+connected 8
 end
 arch dungeon_floor
 x 26
@@ -4639,10 +4639,10 @@ end
 arch teleporter
 hp 25
 sp 19
-connected 12
-speed 0.0
 x 26
 y 28
+speed 0.0
+connected 12
 end
 arch director_6
 x 26
@@ -4651,10 +4651,10 @@ end
 arch teleporter
 hp 25
 sp 21
-connected 14
-speed 0.0
 x 26
 y 29
+speed 0.0
+connected 14
 end
 arch boulder
 x 26
@@ -4743,9 +4743,9 @@ x 27
 y 15
 end
 arch gate_closed_1
-connected 20
 x 27
 y 15
+connected 20
 end
 arch dungeon_floor
 x 27
@@ -4911,9 +4911,9 @@ x 28
 y 15
 end
 arch gate_closed_1
-connected 20
 x 28
 y 15
+connected 20
 end
 arch dungeon_floor
 x 28
@@ -4921,9 +4921,9 @@ y 16
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 16
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4931,9 +4931,9 @@ y 17
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 17
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4941,17 +4941,17 @@ y 18
 end
 arch detector
 slaying lightning
+x 28
+y 18
+speed 1.0
+invisible 1
 connected 16
-speed 1.0
-invisible 1
-x 28
-y 18
 end
 arch statue
 face statue_knight.111
-no_pass 0
 x 28
 y 18
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4959,9 +4959,9 @@ y 19
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 19
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4969,9 +4969,9 @@ y 20
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 20
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4979,9 +4979,9 @@ y 21
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 21
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -4989,17 +4989,17 @@ y 22
 end
 arch detector
 slaying lightning
+x 28
+y 22
+speed 1.0
+invisible 1
 connected 18
-speed 1.0
-invisible 1
-x 28
-y 22
 end
 arch statue
 face statue_knight.111
-no_pass 0
 x 28
 y 22
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -5007,17 +5007,17 @@ y 23
 end
 arch detector
 slaying lightning
-connected 15
-speed 1.0
-invisible 1
 x 28
 y 23
+speed 1.0
+invisible 1
+connected 15
 end
 arch statue
 face statue_knight.111
-no_pass 0
 x 28
 y 23
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -5025,9 +5025,9 @@ y 24
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 24
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -5035,9 +5035,9 @@ y 25
 end
 arch statue
 face statue_gargoyle.111
-no_pass 0
 x 28
 y 25
+no_pass 0
 end
 arch dungeon_floor
 x 28
@@ -5270,26 +5270,26 @@ x 29
 y 26
 end
 arch spikes_open
-connected 15
 x 29
 y 27
+connected 15
 end
 arch spikes_open
-connected 18
 x 29
 y 27
+connected 18
 end
 arch boulder
 x 29
 y 27
 end
 arch spikes_open
-connected 18
 x 29
 y 28
+connected 18
 end
 arch button_small
-connected 20
 x 29
 y 29
+connected 20
 end

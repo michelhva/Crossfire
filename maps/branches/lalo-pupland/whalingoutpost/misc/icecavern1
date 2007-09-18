@@ -2497,6 +2497,10 @@ arch istone
 x 2
 y 78
 end
+arch polarbear
+x 2
+y 78
+end
 arch istone
 x 2
 y 79
@@ -3636,6 +3640,10 @@ x 3
 y 83
 end
 arch istone
+x 3
+y 84
+end
+arch polarbear
 x 3
 y 84
 end
@@ -8460,6 +8468,10 @@ x 8
 y 6
 end
 arch snow
+x 8
+y 7
+end
+arch polarbear
 x 8
 y 7
 end
@@ -54236,6 +54248,10 @@ arch snow
 x 45
 y 103
 end
+arch polarbear
+x 45
+y 103
+end
 arch snow
 x 45
 y 104
@@ -56585,6 +56601,10 @@ x 47
 y 101
 end
 arch snow
+x 47
+y 102
+end
+arch polarbear
 x 47
 y 102
 end
@@ -59858,6 +59878,10 @@ x 50
 y 103
 end
 arch snow
+x 50
+y 104
+end
+arch polarbear
 x 50
 y 104
 end
@@ -71368,6 +71392,10 @@ arch snow
 x 60
 y 74
 end
+arch polarbear
+x 60
+y 74
+end
 arch snow
 x 60
 y 75
@@ -73292,6 +73320,10 @@ arch snow
 x 62
 y 7
 end
+arch polarbear
+x 62
+y 7
+end
 arch snow
 x 62
 y 8
@@ -73863,6 +73895,10 @@ x 62
 y 72
 end
 arch mountain2_rivlets
+x 62
+y 72
+end
+arch polarbear
 x 62
 y 72
 end
@@ -74611,6 +74647,10 @@ x 63
 y 19
 end
 arch snow
+x 63
+y 20
+end
+arch polarbear
 x 63
 y 20
 end
@@ -75170,6 +75210,10 @@ x 63
 y 74
 end
 arch snow
+x 63
+y 75
+end
+arch polarbear
 x 63
 y 75
 end
@@ -78701,6 +78745,10 @@ arch snow
 x 66
 y 12
 end
+arch polarbear
+x 66
+y 12
+end
 arch snow
 x 66
 y 13
@@ -80194,6 +80242,10 @@ x 67
 y 18
 end
 arch snow
+x 67
+y 19
+end
+arch polarbear
 x 67
 y 19
 end
@@ -87209,6 +87261,10 @@ arch snow
 x 72
 y 11
 end
+arch polarbear
+x 72
+y 11
+end
 arch snow
 x 72
 y 12
@@ -89917,6 +89973,10 @@ arch snow
 x 74
 y 5
 end
+arch polarbear
+x 74
+y 5
+end
 arch snow
 x 74
 y 6
@@ -91297,6 +91357,10 @@ arch snow
 x 75
 y 8
 end
+arch polarbear
+x 75
+y 8
+end
 arch snow
 x 75
 y 9
@@ -91482,6 +91546,10 @@ x 75
 y 22
 end
 arch snow
+x 75
+y 23
+end
+arch polarbear
 x 75
 y 23
 end
@@ -95515,6 +95583,10 @@ arch snow
 x 78
 y 20
 end
+arch polarbear
+x 78
+y 20
+end
 arch snow
 x 78
 y 21
@@ -96839,6 +96911,10 @@ arch snow
 x 79
 y 22
 end
+arch polarbear
+x 79
+y 22
+end
 arch snow
 x 79
 y 23
@@ -98048,6 +98124,10 @@ x 80
 y 14
 end
 arch snow
+x 80
+y 15
+end
+arch polarbear
 x 80
 y 15
 end
@@ -100363,6 +100443,10 @@ arch snow
 x 82
 y 18
 end
+arch polarbear
+x 82
+y 18
+end
 arch snow
 x 82
 y 19
@@ -128129,6 +128213,10 @@ arch snow
 x 111
 y 91
 end
+arch polarbear
+x 111
+y 91
+end
 arch snow
 x 111
 y 92
@@ -129413,6 +129501,10 @@ arch snow
 x 113
 y 93
 end
+arch polarbear
+x 113
+y 93
+end
 arch snow
 x 113
 y 94
@@ -130008,6 +130100,10 @@ x 114
 y 89
 end
 arch snow
+x 114
+y 90
+end
+arch polarbear
 x 114
 y 90
 end
@@ -131175,6 +131271,10 @@ arch mountain2_rivlets
 x 116
 y 91
 end
+arch polarbear
+x 116
+y 91
+end
 arch snow
 x 116
 y 92
@@ -134081,6 +134181,20 @@ arch istone
 x 122
 y 115
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 122
+y 115
+speed -0.300000
+level 20
+end
 arch istone
 x 122
 y 116
@@ -134209,6 +134323,10 @@ arch snow4
 x 122
 y 133
 end
+arch chinese_dragon
+x 122
+y 133
+end
 arch istone
 x 122
 y 134
@@ -134230,6 +134348,10 @@ x 122
 y 136
 end
 arch snow5
+x 122
+y 136
+end
+arch chinese_dragon
 x 122
 y 136
 end
@@ -134380,6 +134502,20 @@ end
 arch istone
 x 123
 y 109
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 123
+y 109
+speed -0.300000
+level 20
 end
 arch istone
 x 123
@@ -134709,6 +134845,20 @@ arch istone
 x 124
 y 112
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 124
+y 112
+speed -0.300000
+level 20
+end
 arch istone
 x 124
 y 113
@@ -134736,6 +134886,20 @@ end
 arch istone
 x 124
 y 119
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 124
+y 119
+speed -0.300000
+level 20
 end
 arch istone
 x 124
@@ -134834,6 +134998,10 @@ x 124
 y 133
 end
 arch istone
+x 124
+y 134
+end
+arch chinese_dragon
 x 124
 y 134
 end
@@ -134973,6 +135141,20 @@ arch random_wealth
 x 125
 y 106
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 125
+y 106
+speed -0.300000
+level 20
+end
 arch istone
 x 125
 y 107
@@ -134984,6 +135166,20 @@ end
 arch istone
 x 125
 y 109
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 125
+y 109
+speed -0.300000
+level 20
 end
 arch istone
 x 125
@@ -135446,6 +135642,10 @@ x 126
 y 134
 end
 arch istone
+x 126
+y 135
+end
+arch chinese_dragon
 x 126
 y 135
 end
@@ -135713,6 +135913,20 @@ arch istone
 x 127
 y 121
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 127
+y 121
+speed -0.300000
+level 20
+end
 arch istone
 x 127
 y 122
@@ -135774,6 +135988,10 @@ x 127
 y 130
 end
 arch istone
+x 127
+y 131
+end
+arch chinese_dragon
 x 127
 y 131
 end
@@ -135895,6 +136113,25 @@ end
 arch random_treasure
 x 128
 y 101
+end
+arch chinese_dragon
+name Legendary dragon
+name_pl Ancient dragon
+msg
+@match *
+*rumble*
+endmsg
+Wis 24
+hp 12000
+maxhp 12000
+maxsp 300
+exp 300000
+dam 70
+ac -12
+x 128
+y 101
+speed -0.300000
+level 90
 end
 arch istone
 x 128
@@ -136144,6 +136381,10 @@ x 128
 y 136
 end
 arch istone
+x 128
+y 137
+end
+arch chinese_dragon
 x 128
 y 137
 end
@@ -136809,6 +137050,10 @@ arch istone
 x 130
 y 129
 end
+arch chinese_dragon
+x 130
+y 129
+end
 arch istone
 x 130
 y 130
@@ -136821,6 +137066,10 @@ arch istone
 x 130
 y 132
 end
+arch chinese_dragon
+x 130
+y 132
+end
 arch istone
 x 130
 y 133
@@ -136830,6 +137079,10 @@ x 130
 y 134
 end
 arch istone
+x 130
+y 135
+end
+arch chinese_dragon
 x 130
 y 135
 end
@@ -137093,6 +137346,20 @@ arch istone
 x 131
 y 121
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 131
+y 121
+speed -0.300000
+level 20
+end
 arch istone
 x 131
 y 122
@@ -137104,6 +137371,20 @@ end
 arch istone
 x 131
 y 124
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 131
+y 124
+speed -0.300000
+level 20
 end
 arch istone
 x 131
@@ -137417,6 +137698,10 @@ arch istone
 x 132
 y 126
 end
+arch chinese_dragon
+x 132
+y 126
+end
 arch istone
 x 132
 y 127
@@ -137442,6 +137727,10 @@ x 132
 y 132
 end
 arch istone
+x 132
+y 133
+end
+arch chinese_dragon
 x 132
 y 133
 end
@@ -137729,6 +138018,10 @@ arch istone
 x 133
 y 129
 end
+arch chinese_dragon
+x 133
+y 129
+end
 arch istone
 x 133
 y 130
@@ -137880,6 +138173,20 @@ end
 arch istone
 x 134
 y 106
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 134
+y 106
+speed -0.300000
+level 20
 end
 arch istone
 x 134
@@ -137997,6 +138304,20 @@ arch istone
 x 134
 y 123
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 134
+y 123
+speed -0.300000
+level 20
+end
 arch istone
 x 134
 y 124
@@ -138033,6 +138354,10 @@ arch istone
 x 134
 y 132
 end
+arch chinese_dragon
+x 134
+y 132
+end
 arch istone
 x 134
 y 133
@@ -138042,6 +138367,10 @@ x 134
 y 134
 end
 arch istone
+x 134
+y 135
+end
+arch chinese_dragon
 x 134
 y 135
 end
@@ -138185,6 +138514,20 @@ arch istone
 x 135
 y 109
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 135
+y 109
+speed -0.300000
+level 20
+end
 arch istone
 x 135
 y 110
@@ -138256,6 +138599,20 @@ end
 arch istone
 x 135
 y 120
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 135
+y 120
+speed -0.300000
+level 20
 end
 arch istone
 x 135
@@ -138501,6 +138858,20 @@ arch istone
 x 136
 y 114
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 136
+y 114
+speed -0.300000
+level 20
+end
 arch istone
 x 136
 y 115
@@ -138512,6 +138883,20 @@ end
 arch istone
 x 136
 y 117
+end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 136
+y 117
+speed -0.300000
+level 20
 end
 arch istone
 x 136
@@ -138777,6 +139162,20 @@ arch istone
 x 137
 y 111
 end
+arch chinese_dragon
+name Ancient dragon
+name_pl Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 137
+y 111
+speed -0.300000
+level 20
+end
 arch istone
 x 137
 y 112
@@ -139664,403 +140063,4 @@ end
 arch blocked
 x 139
 y 139
-end
-arch polarbear
-x 2
-y 78
-end
-arch polarbear
-x 3
-y 84
-end
-arch polarbear
-x 8
-y 7
-end
-arch polarbear
-x 45
-y 103
-end
-arch polarbear
-x 47
-y 102
-end
-arch polarbear
-x 50
-y 104
-end
-arch polarbear
-x 60
-y 74
-end
-arch polarbear
-x 62
-y 7
-end
-arch polarbear
-x 62
-y 72
-end
-arch polarbear
-x 63
-y 20
-end
-arch polarbear
-x 63
-y 75
-end
-arch polarbear
-x 66
-y 12
-end
-arch polarbear
-x 67
-y 19
-end
-arch polarbear
-x 72
-y 11
-end
-arch polarbear
-x 74
-y 5
-end
-arch polarbear
-x 75
-y 8
-end
-arch polarbear
-x 75
-y 23
-end
-arch polarbear
-x 78
-y 20
-end
-arch polarbear
-x 79
-y 22
-end
-arch polarbear
-x 80
-y 15
-end
-arch polarbear
-x 82
-y 18
-end
-arch polarbear
-x 111
-y 91
-end
-arch polarbear
-x 113
-y 93
-end
-arch polarbear
-x 114
-y 90
-end
-arch polarbear
-x 116
-y 91
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 122
-y 115
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 122
-y 133
-end
-arch chinese_dragon
-x 122
-y 136
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 123
-y 109
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 124
-y 112
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 124
-y 119
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 124
-y 134
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 125
-y 106
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 125
-y 109
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 126
-y 135
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 127
-y 121
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 127
-y 131
-end
-arch chinese_dragon
-name Legendary dragon
-name_pl Ancient dragon
-msg
-@match *
-*rumble*
-endmsg
-Wis 24
-hp 12000
-maxhp 12000
-maxsp 300
-exp 300000
-dam 70
-ac -12
-x 128
-y 101
-speed -0.300000
-level 90
-end
-arch chinese_dragon
-x 128
-y 137
-end
-arch chinese_dragon
-x 130
-y 129
-end
-arch chinese_dragon
-x 130
-y 132
-end
-arch chinese_dragon
-x 130
-y 135
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 131
-y 121
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 131
-y 124
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 132
-y 126
-end
-arch chinese_dragon
-x 132
-y 133
-end
-arch chinese_dragon
-x 133
-y 129
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 134
-y 106
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 134
-y 123
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-x 134
-y 132
-end
-arch chinese_dragon
-x 134
-y 135
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 135
-y 109
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 135
-y 120
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 136
-y 114
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 136
-y 117
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-name_pl Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 137
-y 111
-speed -0.300000
-level 20
 end

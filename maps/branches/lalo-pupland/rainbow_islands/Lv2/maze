@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 11
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 14 15:29:59 1996
 endmsg
-x 11
-y 15
 end
 arch cobblestones2
 end
@@ -819,7 +820,7 @@ arch locked_door1
 slaying kum
 msg
 This is my door. Never enter!
-                            
+
                         Kum
 endmsg
 x 5

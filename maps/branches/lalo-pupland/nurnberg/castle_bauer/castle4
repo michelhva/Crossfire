@@ -1,12 +1,13 @@
 arch map
-region nurnberg
 name castle4
+region nurnberg
+width 24
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Mar  5 00:58:43 1996
 endmsg
-x 24
 end
 arch blocked
 end

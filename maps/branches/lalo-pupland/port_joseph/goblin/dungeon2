@@ -127,6 +127,11 @@ arch dungeon_floor
 x 1
 y 4
 end
+arch mine_secret_1_1
+x 1
+y 4
+no_pass 0
+end
 arch dungeon_floor
 x 1
 y 5
@@ -2172,6 +2177,11 @@ arch dungeon_floor
 x 19
 y 4
 end
+arch mine_secret_1_1
+x 19
+y 4
+connected 27
+end
 arch dungeon_floor
 x 19
 y 5
@@ -3480,14 +3490,4 @@ end
 arch mine12
 x 31
 y 15
-end
-arch mine_secret_1_1
-x 1
-y 4
-no_pass 0
-end
-arch mine_secret_1_1
-x 19
-y 4
-connected 27
 end

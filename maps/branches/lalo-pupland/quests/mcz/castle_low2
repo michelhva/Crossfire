@@ -214,6 +214,10 @@ arch large_stones
 x 1
 y 6
 end
+arch giant
+x 1
+y 6
+end
 arch large_stones
 x 1
 y 7
@@ -1032,6 +1036,10 @@ arch large_stones
 x 6
 y 8
 end
+arch giant
+x 6
+y 8
+end
 arch large_stones
 x 6
 y 9
@@ -1152,6 +1160,10 @@ x 7
 y 1
 end
 arch large_stones
+x 7
+y 2
+end
+arch giant
 x 7
 y 2
 end
@@ -1635,6 +1647,10 @@ x 10
 y 5
 end
 arch large_stones
+x 10
+y 6
+end
+arch giant
 x 10
 y 6
 end
@@ -5007,20 +5023,4 @@ end
 arch rough_wall_2_2_4
 x 29
 y 27
-end
-arch giant
-x 1
-y 6
-end
-arch giant
-x 6
-y 8
-end
-arch giant
-x 7
-y 2
-end
-arch giant
-x 10
-y 6
 end

@@ -2698,6 +2698,10 @@ arch dirtfloor
 x 9
 y 15
 end
+arch dread
+x 9
+y 15
+end
 arch dirtfloor
 x 9
 y 16
@@ -3073,6 +3077,10 @@ x 10
 y 23
 end
 arch dirtfloor
+x 10
+y 23
+end
+arch gaelotroll
 x 10
 y 23
 end
@@ -3550,6 +3558,10 @@ x 12
 y 9
 end
 arch dirtfloor
+x 12
+y 10
+end
+arch troll
 x 12
 y 10
 end
@@ -5453,6 +5465,10 @@ arch dirtfloor
 x 18
 y 20
 end
+arch dragonman
+x 18
+y 20
+end
 arch dirtfloor
 x 18
 y 21
@@ -5470,6 +5486,10 @@ x 18
 y 23
 end
 arch dirtfloor
+x 18
+y 23
+end
+arch big_elec
 x 18
 y 23
 end
@@ -5758,6 +5778,10 @@ resist_acid 30
 connected 96
 end
 arch dirtfloor
+x 19
+y 20
+end
+arch dragonman
 x 19
 y 20
 end
@@ -7566,6 +7590,10 @@ arch dirtfloor
 x 25
 y 17
 end
+arch big_dragon
+x 25
+y 17
+end
 arch dirtfloor
 x 25
 y 18
@@ -7603,6 +7631,10 @@ x 25
 y 22
 end
 arch dirtfloor
+x 25
+y 23
+end
+arch giant
 x 25
 y 23
 end
@@ -7804,6 +7836,10 @@ arch dirtfloor
 x 26
 y 10
 end
+arch dragon
+x 26
+y 10
+end
 arch dirtfloor
 x 26
 y 11
@@ -7825,6 +7861,10 @@ x 26
 y 13
 end
 arch dirtfloor
+x 26
+y 14
+end
+arch titan
 x 26
 y 14
 end
@@ -7857,6 +7897,10 @@ x 26
 y 19
 end
 arch dirtfloor
+x 26
+y 20
+end
+arch chinese_dragon
 x 26
 y 20
 end
@@ -7897,6 +7941,10 @@ x 26
 y 26
 end
 arch dirtfloor
+x 26
+y 27
+end
+arch behemoth
 x 26
 y 27
 end
@@ -8132,6 +8180,10 @@ x 27
 y 22
 end
 arch dirtfloor
+x 27
+y 23
+end
+arch giant
 x 27
 y 23
 end
@@ -11773,6 +11825,10 @@ arch dirtfloor
 x 39
 y 22
 end
+arch cobra
+x 39
+y 22
+end
 arch dirtfloor
 x 39
 y 23
@@ -12064,6 +12120,10 @@ x 40
 y 21
 end
 arch dirtfloor
+x 40
+y 22
+end
+arch cobra
 x 40
 y 22
 end
@@ -13972,64 +14032,4 @@ end
 arch bwall_0
 x 47
 y 39
-end
-arch dread
-x 9
-y 15
-end
-arch gaelotroll
-x 10
-y 23
-end
-arch troll
-x 12
-y 10
-end
-arch dragonman
-x 18
-y 20
-end
-arch big_elec
-x 18
-y 23
-end
-arch dragonman
-x 19
-y 20
-end
-arch big_dragon
-x 25
-y 17
-end
-arch giant
-x 25
-y 23
-end
-arch dragon
-x 26
-y 10
-end
-arch titan
-x 26
-y 14
-end
-arch chinese_dragon
-x 26
-y 20
-end
-arch behemoth
-x 26
-y 27
-end
-arch giant
-x 27
-y 23
-end
-arch cobra
-x 39
-y 22
-end
-arch cobra
-x 40
-y 22
 end

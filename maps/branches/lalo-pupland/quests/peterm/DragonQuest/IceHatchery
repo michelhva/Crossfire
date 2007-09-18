@@ -985,6 +985,10 @@ arch pstone_2
 x 5
 y 17
 end
+arch chinese_dragon
+x 5
+y 17
+end
 arch pstone_2
 x 5
 y 18
@@ -1011,6 +1015,10 @@ x 5
 y 22
 end
 arch pstone_2
+x 5
+y 23
+end
+arch chinese_dragon
 x 5
 y 23
 end
@@ -1932,6 +1940,10 @@ arch pstone_2
 x 11
 y 23
 end
+arch chinese_dragon
+x 11
+y 23
+end
 arch pstone_2
 x 11
 y 24
@@ -2433,16 +2445,4 @@ end
 arch blocked
 x 15
 y 30
-end
-arch chinese_dragon
-x 5
-y 17
-end
-arch chinese_dragon
-x 5
-y 23
-end
-arch chinese_dragon
-x 11
-y 23
 end

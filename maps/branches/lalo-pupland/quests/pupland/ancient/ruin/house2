@@ -1,12 +1,13 @@
 arch map
-region ancientpupland
 name house2
+region ancientpupland
+width 19
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May  7 06:04:51 1996
 endmsg
-x 19
 end
 arch pstone_1
 end
@@ -336,7 +337,7 @@ arch table
 msg
    There are crumbles of bread on this
    tabel. Just like if someone ate at
-   this table recently.  
+   this table recently.
 endmsg
 x 3
 y 12

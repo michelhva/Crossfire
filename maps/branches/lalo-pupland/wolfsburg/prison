@@ -531,6 +531,15 @@ arch dungeon_floor
 x 4
 y 5
 end
+arch unicorn
+name Curt's Unicorn
+msg
+@match *
+I must kill Curt.
+endmsg
+x 4
+y 5
+end
 arch dungeon_floor
 x 4
 y 6
@@ -3939,13 +3948,4 @@ end
 arch mine12
 x 29
 y 24
-end
-arch unicorn
-name Curt's Unicorn
-msg
-@match *
-I must kill Curt.
-endmsg
-x 4
-y 5
 end

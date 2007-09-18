@@ -18095,6 +18095,11 @@ arch random_treasure
 x 48
 y 19
 end
+arch giant
+name Knerten
+x 48
+y 19
+end
 arch grass
 x 48
 y 20
@@ -18449,6 +18454,11 @@ x 49
 y 17
 end
 arch random_wealth
+x 49
+y 17
+end
+arch troll
+name Lillebror
 x 49
 y 17
 end
@@ -20748,6 +20758,11 @@ arch random_treasure
 x 55
 y 49
 end
+arch behemoth
+name Nurket
+x 55
+y 49
+end
 arch grass
 x 55
 y 50
@@ -22576,19 +22591,4 @@ end
 arch grass
 x 60
 y 58
-end
-arch giant
-name Knerten
-x 48
-y 19
-end
-arch troll
-name Lillebror
-x 49
-y 17
-end
-arch behemoth
-name Nurket
-x 55
-y 49
 end

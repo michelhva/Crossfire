@@ -1,14 +1,14 @@
 arch map
-region pupland
 name pplant_ud2
+difficulty 5
+region pupland
+width 20
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb  6 01:15:33 1996
 endmsg
-width 20
-height 16
-difficulty 5
 end
 arch blocked
 end
@@ -546,50 +546,44 @@ x 6
 y 1
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 2
+connected 1
 end
 arch cobblestones
 x 6
 y 2
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 3
+connected 1
 end
 arch cobblestones
 x 6
 y 3
 end
 arch ggate_closed
-connected 1
 x 6
 y 3
+connected 1
 end
 arch magic_mouth
 msg
 The cave chief appears to be a
 gnome of the tougher kind!
 endmsg
-connected 1
-walk_on 0
-fly_on 0
 food 1
 x 6
 y 4
+connected 1
+walk_on 0
+fly_on 0
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 6
 y 4
+connected 1
 end
 arch pstone_1
 x 6
@@ -668,13 +662,13 @@ y 2
 end
 arch gnome
 name cave chief
-type 0
-carrying 100
-unaggressive 1
-level 6
 exp 2000
 x 7
 y 2
+level 6
+type 0
+carrying 100
+unaggressive 1
 arch key2
 name gnome key
 slaying 958473
@@ -683,8 +677,6 @@ arch random_wealth
 hp 2
 end
 arch random_gem
-msg
-endmsg
 hp 2
 end
 end
@@ -705,9 +697,9 @@ x 7
 y 5
 end
 arch sea
-no_pass 0
 x 7
 y 6
+no_pass 0
 end
 arch pier_2_1_2
 x 7
@@ -805,9 +797,9 @@ x 8
 y 5
 end
 arch sea
-no_pass 0
 x 8
 y 6
+no_pass 0
 end
 arch pier_2_1_2
 x 8
@@ -869,11 +861,9 @@ arch mine_2_1_2
 x 9
 end
 arch pedestal
-msg
-endmsg
-connected 1
 x 9
 y 1
+connected 1
 end
 arch pstone_1
 x 9
@@ -908,9 +898,9 @@ x 9
 y 5
 end
 arch sea
-no_pass 0
 x 9
 y 6
+no_pass 0
 end
 arch pier_1_3
 x 9
@@ -1073,9 +1063,14 @@ x 11
 y 6
 end
 arch sea
-no_pass 0
 x 11
 y 7
+no_pass 0
+end
+arch rowboat
+x 11
+y 7
+type 0
 end
 arch sea
 x 11
@@ -1149,22 +1144,22 @@ x 12
 y 6
 end
 arch sea
-no_pass 0
 x 12
 y 7
+no_pass 0
 end
 arch snake
 name water snake
-level 7
-generator 0
-attacktype 1025
-wc -5
 hp 30
 maxhp 30
-resist_acid 80
-resist_poison 100
+wc -5
 x 12
 y 7
+level 7
+attacktype 1025
+resist_acid 80
+resist_poison 100
+generator 0
 end
 arch sea
 x 12
@@ -1841,9 +1836,4 @@ end
 arch cave1
 x 19
 y 15
-end
-arch rowboat
-type 0
-x 11
-y 7
 end

@@ -1,14 +1,14 @@
 arch map
 name Bungalo Main Floor
+width 20
+height 22
+enter_x 6
+enter_y 20
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    9/18/2002
 endmsg
-width 20
-height 22
-enter_x 6
-enter_y 20
 outdoor 1
 end
 arch dungeon_magic
@@ -23,8 +23,8 @@ arch dungeon_magic
 y 4
 end
 arch woodfloor2
-unique 1
 y 4
+unique 1
 end
 arch wwall_2_2_2
 y 4
@@ -33,18 +33,18 @@ arch dungeon_magic
 y 5
 end
 arch woodfloor2
+y 5
 unique 1
+end
+arch wwall_2_1_1
 y 5
 end
-arch wwall_2_1_1
-y 5
-end
 arch dungeon_magic
 y 6
 end
 arch woodfloor2
-unique 1
 y 6
+unique 1
 end
 arch wwall_2_1_1
 y 6
@@ -53,15 +53,15 @@ arch dungeon_magic
 y 7
 end
 arch woodfloor2
-unique 1
 y 7
+unique 1
 end
 arch wwall_2_1_1
 y 7
 end
 arch woodfloor2
-unique 1
 y 8
+unique 1
 end
 arch wwall_2_1_1
 y 8
@@ -70,8 +70,8 @@ arch dungeon_magic
 y 9
 end
 arch woodfloor2
-unique 1
 y 9
+unique 1
 end
 arch wwall_3_2
 y 9
@@ -80,8 +80,8 @@ arch dungeon_magic
 y 10
 end
 arch woodfloor2
-unique 1
 y 10
+unique 1
 end
 arch wwall_3_2
 y 10
@@ -90,8 +90,8 @@ arch dungeon_magic
 y 11
 end
 arch woodfloor2
-unique 1
 y 11
+unique 1
 end
 arch wwall_3_2
 y 11
@@ -100,8 +100,8 @@ arch dungeon_magic
 y 12
 end
 arch woodfloor2
-unique 1
 y 12
+unique 1
 end
 arch wwall_3_2
 y 12
@@ -110,8 +110,8 @@ arch dungeon_magic
 y 13
 end
 arch woodfloor2
-unique 1
 y 13
+unique 1
 end
 arch wwall_3_2
 y 13
@@ -120,8 +120,8 @@ arch dungeon_magic
 y 14
 end
 arch woodfloor2
-unique 1
 y 14
+unique 1
 end
 arch wwall_3_2
 y 14
@@ -130,8 +130,8 @@ arch dungeon_magic
 y 15
 end
 arch woodfloor2
-unique 1
 y 15
+unique 1
 end
 arch wwall_2_1_1
 y 15
@@ -140,8 +140,8 @@ arch dungeon_magic
 y 15
 end
 arch woodfloor2
-unique 1
 y 15
+unique 1
 end
 arch wwall_2_1_1
 y 15
@@ -150,8 +150,8 @@ arch dungeon_magic
 y 16
 end
 arch woodfloor2
-unique 1
 y 16
+unique 1
 end
 arch wwall_2_1_1
 y 16
@@ -160,8 +160,8 @@ arch dungeon_magic
 y 17
 end
 arch woodfloor2
-unique 1
 y 17
+unique 1
 end
 arch wwall_2_1_1
 y 17
@@ -170,8 +170,8 @@ arch dungeon_magic
 y 18
 end
 arch woodfloor2
-unique 1
 y 18
+unique 1
 end
 arch wwall_2_2_1
 y 18
@@ -194,9 +194,9 @@ x 1
 y 4
 end
 arch woodfloor2
-unique 1
 x 1
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 1
@@ -207,15 +207,15 @@ x 1
 y 5
 end
 arch woodfloor2
-unique 1
 x 1
 y 5
+unique 1
 end
 arch creator
 other_arch woodfloor2
-connected 10
 x 1
 y 6
+connected 10
 end
 arch dungeon_magic
 x 1
@@ -223,114 +223,114 @@ y 6
 end
 arch goldfloor
 name drop 10000 diamonds for basement
+slaying gem
 msg
 Dig. Dig. Dig.
 endmsg
-slaying gem
 food 10000
-connected 10
-unique 1
 x 1
 y 6
+connected 10
+unique 1
 end
 arch dungeon_magic
 x 1
 y 7
 end
 arch woodfloor2
-unique 1
 x 1
 y 7
+unique 1
 end
 arch dungeon_magic
 x 1
 y 8
 end
 arch woodfloor2
-unique 1
 x 1
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 1
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 1
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 1
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 1
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 1
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 1
 y 14
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 1
 y 15
+unique 1
+is_buildable 1
 end
 arch dungeon_magic
 x 1
 y 16
 end
 arch woodfloor2
-unique 1
 x 1
 y 16
+unique 1
 end
 arch light4
 x 1
@@ -341,18 +341,18 @@ x 1
 y 17
 end
 arch woodfloor2
-unique 1
 x 1
 y 17
+unique 1
 end
 arch dungeon_magic
 x 1
 y 18
 end
 arch woodfloor2
-unique 1
 x 1
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 1
@@ -379,9 +379,9 @@ x 2
 y 4
 end
 arch woodfloor2
-unique 1
 x 2
 y 4
+unique 1
 end
 arch wwall_3_3
 x 2
@@ -392,9 +392,9 @@ x 2
 y 5
 end
 arch woodfloor2
-unique 1
 x 2
 y 5
+unique 1
 end
 arch swall_1_1
 x 2
@@ -409,9 +409,9 @@ x 2
 y 6
 end
 arch woodfloor2
-unique 1
 x 2
 y 6
+unique 1
 end
 arch swall_2_1_1
 x 2
@@ -422,9 +422,9 @@ x 2
 y 7
 end
 arch woodfloor2
-unique 1
 x 2
 y 7
+unique 1
 end
 arch swall_2_2_1
 x 2
@@ -435,96 +435,96 @@ x 2
 y 8
 end
 arch woodfloor2
-unique 1
 x 2
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 2
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 2
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 2
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 2
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 2
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 2
 y 14
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 2
 y 15
+unique 1
+is_buildable 1
 end
 arch dungeon_magic
 x 2
 y 16
 end
 arch woodfloor2
-unique 1
 x 2
 y 16
+unique 1
 end
 arch creator
 other_arch woodfloor2
-connected 20
 x 2
 y 17
+connected 20
 end
 arch dungeon_magic
 x 2
@@ -534,19 +534,19 @@ arch goldfloor
 name drop 10000 diamonds for second floor
 slaying gem
 food 10000
-connected 20
-unique 1
 x 2
 y 17
+connected 20
+unique 1
 end
 arch dungeon_magic
 x 2
 y 18
 end
 arch woodfloor2
-unique 1
 x 2
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 2
@@ -567,9 +567,9 @@ end
 arch teleporter
 hp 1
 sp 5
-connected 10
-speed 0.0
 x 3
+speed 0.0
+connected 10
 end
 arch stair_3_down
 slaying bungalo_b
@@ -586,9 +586,9 @@ x 3
 y 4
 end
 arch woodfloor2
-unique 1
 x 3
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 3
@@ -599,18 +599,18 @@ x 3
 y 5
 end
 arch woodfloor2
-unique 1
 x 3
 y 5
+unique 1
 end
 arch dungeon_magic
 x 3
 y 6
 end
 arch woodfloor2
-unique 1
 x 3
 y 6
+unique 1
 end
 arch light4
 x 3
@@ -621,9 +621,9 @@ x 3
 y 7
 end
 arch woodfloor2
-unique 1
 x 3
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 3
@@ -634,108 +634,108 @@ x 3
 y 8
 end
 arch woodfloor2
-unique 1
 x 3
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 3
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 3
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 3
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 3
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 3
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 3
 y 14
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 3
 y 15
+unique 1
+is_buildable 1
 end
 arch dungeon_magic
 x 3
 y 16
 end
 arch woodfloor2
-unique 1
 x 3
 y 16
+unique 1
 end
 arch dungeon_magic
 x 3
 y 17
 end
 arch woodfloor2
-unique 1
 x 3
 y 17
+unique 1
 end
 arch dungeon_magic
 x 3
 y 18
 end
 arch woodfloor2
-unique 1
 x 3
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 3
@@ -756,9 +756,9 @@ end
 arch teleporter
 hp 1
 sp 17
-connected 20
-speed 0.0
 x 4
+speed 0.0
+connected 20
 end
 arch stair_up_4
 slaying bungalo2
@@ -775,9 +775,9 @@ x 4
 y 4
 end
 arch woodfloor2
-unique 1
 x 4
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 4
@@ -788,27 +788,27 @@ x 4
 y 5
 end
 arch woodfloor2
-unique 1
 x 4
 y 5
+unique 1
 end
 arch dungeon_magic
 x 4
 y 6
 end
 arch woodfloor2
-unique 1
 x 4
 y 6
+unique 1
 end
 arch dungeon_magic
 x 4
 y 7
 end
 arch woodfloor2
-unique 1
 x 4
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 4
@@ -819,128 +819,128 @@ x 4
 y 8
 end
 arch woodfloor2
-unique 1
 x 4
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 4
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 4
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 4
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 4
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 4
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 4
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 4
 y 14
+is_buildable 1
 end
 arch dungeon_magic
 x 4
 y 15
 end
 arch woodfloor2
-unique 1
 x 4
 y 15
+unique 1
 end
 arch woodfloor2
+x 4
+y 15
 unique 1
 is_buildable 1
-x 4
-y 15
 end
 arch dungeon_magic
 x 4
 y 16
 end
 arch woodfloor2
-unique 1
 x 4
 y 16
+unique 1
 end
 arch dungeon_magic
 x 4
 y 17
 end
 arch woodfloor2
-unique 1
 x 4
 y 17
+unique 1
 end
 arch trigger
-connected 1
 x 4
 y 17
+connected 1
 end
 arch check_inv
 slaying OWNER_MARKER
-no_pass 1
 x 4
 y 17
+no_pass 1
 end
 arch dungeon_magic
 x 4
 y 18
 end
 arch woodfloor2
-unique 1
 x 4
 y 18
+unique 1
 end
 arch wwall_win2
 x 4
@@ -951,6 +951,8 @@ x 4
 y 19
 end
 arch mailbox
+x 4
+y 19
 arch event_close
 title Python
 slaying /scorn/ImperialPost/send.py
@@ -959,8 +961,6 @@ arch event_apply
 title Python
 slaying /scorn/ImperialPost/receive.py
 end
-x 4
-y 19
 end
 arch grass
 x 4
@@ -977,9 +977,9 @@ end
 arch teleporter
 hp 17
 sp 11
-connected 30
-speed 0.0
 x 5
+speed 0.0
+connected 30
 end
 arch fountain
 x 5
@@ -993,9 +993,9 @@ x 5
 y 4
 end
 arch woodfloor2
-unique 1
 x 5
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 5
@@ -1006,27 +1006,27 @@ x 5
 y 5
 end
 arch woodfloor2
-unique 1
 x 5
 y 5
+unique 1
 end
 arch dungeon_magic
 x 5
 y 6
 end
 arch woodfloor2
-unique 1
 x 5
 y 6
+unique 1
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch woodfloor2
-unique 1
 x 5
 y 7
+unique 1
 end
 arch swall_1_3
 x 5
@@ -1037,93 +1037,93 @@ x 5
 y 8
 end
 arch woodfloor2
-unique 1
 x 5
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 5
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 5
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 5
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 5
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 5
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 5
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 5
 y 14
+is_buildable 1
 end
 arch dungeon_magic
 x 5
 y 15
 end
 arch woodfloor2
-unique 1
 x 5
 y 15
+unique 1
 end
 arch dungeon_magic
 x 5
 y 16
 end
 arch woodfloor2
-unique 1
 x 5
 y 16
+unique 1
 end
 arch wwall_1_1
 x 5
@@ -1134,9 +1134,9 @@ x 5
 y 17
 end
 arch woodfloor2
-unique 1
 x 5
 y 17
+unique 1
 end
 arch wwall_win1
 x 5
@@ -1147,9 +1147,9 @@ x 5
 y 18
 end
 arch woodfloor2
-unique 1
 x 5
 y 18
+unique 1
 end
 arch wwall_2_2_4
 x 5
@@ -1164,9 +1164,9 @@ x 5
 y 19
 end
 arch wwall_0
-blocksview 0
 x 5
 y 19
+blocksview 0
 end
 arch grass
 x 5
@@ -1196,9 +1196,9 @@ x 6
 y 4
 end
 arch woodfloor2
-unique 1
 x 6
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 6
@@ -1209,169 +1209,169 @@ x 6
 y 5
 end
 arch woodfloor2
-unique 1
 x 6
 y 5
+unique 1
 end
 arch dungeon_magic
 x 6
 y 6
 end
 arch woodfloor2
-unique 1
 x 6
 y 6
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 2
 x 6
 y 6
+connected 2
 end
 arch dungeon_magic
 x 6
 y 7
 end
 arch woodfloor2
-unique 1
 x 6
 y 7
+unique 1
 end
 arch ggate_closed
 name gate
+x 6
+y 7
 connected 2
 no_magic 1
 damned 1
-x 6
-y 7
 end
 arch dungeon_magic
 x 6
 y 8
 end
 arch woodfloor2
-unique 1
 x 6
 y 8
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 2
 x 6
 y 8
+connected 2
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_3_3
-is_buildable 1
 x 6
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 6
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 6
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 6
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_4
-is_buildable 1
 x 6
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 6
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_3_1
-is_buildable 1
 x 6
 y 14
+is_buildable 1
 end
 arch dungeon_magic
 x 6
 y 15
 end
 arch woodfloor2
-unique 1
 x 6
 y 15
+unique 1
 end
 arch dungeon_magic
 x 6
 y 16
 end
 arch woodfloor2
-unique 1
 x 6
 y 16
+unique 1
 end
 arch dungeon_magic
 x 6
 y 17
 end
 arch woodfloor2
-unique 1
 x 6
 y 17
+unique 1
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 6
 y 17
+connected 1
 end
 arch dungeon_magic
 x 6
 y 18
 end
 arch woodfloor2
-unique 1
 x 6
 y 18
+unique 1
 end
 arch mdoor_closed_1
-connected 1
 x 6
 y 18
+connected 1
 end
 arch dungeon_magic
 x 6
@@ -1383,9 +1383,9 @@ y 19
 end
 arch check_inv
 slaying OWNER_MARKER
-connected 1
 x 6
 y 19
+connected 1
 end
 arch grass
 x 6
@@ -1409,9 +1409,9 @@ end
 arch teleporter
 hp 17
 sp 11
-connected 30
-speed 0.0
 x 7
+speed 0.0
+connected 30
 end
 arch stove
 x 7
@@ -1425,9 +1425,9 @@ x 7
 y 4
 end
 arch woodfloor2
-unique 1
 x 7
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 7
@@ -1438,27 +1438,27 @@ x 7
 y 5
 end
 arch woodfloor2
-unique 1
 x 7
 y 5
+unique 1
 end
 arch dungeon_magic
 x 7
 y 6
 end
 arch woodfloor2
-unique 1
 x 7
 y 6
+unique 1
 end
 arch dungeon_magic
 x 7
 y 7
 end
 arch woodfloor2
-unique 1
 x 7
 y 7
+unique 1
 end
 arch swall_1_4
 x 7
@@ -1469,93 +1469,93 @@ x 7
 y 8
 end
 arch woodfloor2
-unique 1
 x 7
 y 8
+unique 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 9
+unique 1
+is_buildable 1
 end
 arch wwall_2_2_3
-is_buildable 1
 x 7
 y 9
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 10
+unique 1
+is_buildable 1
 end
 arch wwall_3_4
-is_buildable 1
 x 7
 y 10
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 11
+unique 1
+is_buildable 1
 end
 arch wwall_3_4
-is_buildable 1
 x 7
 y 11
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 12
+unique 1
+is_buildable 1
 end
 arch wwall_3_4
-is_buildable 1
 x 7
 y 12
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 13
+unique 1
+is_buildable 1
 end
 arch wwall_3_4
-is_buildable 1
 x 7
 y 13
+is_buildable 1
 end
 arch woodfloor2
-unique 1
-is_buildable 1
 x 7
 y 14
+unique 1
+is_buildable 1
 end
 arch wwall_2_2_4
-is_buildable 1
 x 7
 y 14
+is_buildable 1
 end
 arch dungeon_magic
 x 7
 y 15
 end
 arch woodfloor2
-unique 1
 x 7
 y 15
+unique 1
 end
 arch dungeon_magic
 x 7
 y 16
 end
 arch woodfloor2
-unique 1
 x 7
 y 16
+unique 1
 end
 arch wwall_1_1
 x 7
@@ -1566,9 +1566,9 @@ x 7
 y 17
 end
 arch woodfloor2
-unique 1
 x 7
 y 17
+unique 1
 end
 arch wwall_2_1_1
 x 7
@@ -1579,9 +1579,9 @@ x 7
 y 18
 end
 arch woodfloor2
-unique 1
 x 7
 y 18
+unique 1
 end
 arch wwall_2_2_1
 x 7
@@ -1596,9 +1596,9 @@ x 7
 y 19
 end
 arch wwall_0
-blocksview 0
 x 7
 y 19
+blocksview 0
 end
 arch grass
 x 7
@@ -1622,9 +1622,9 @@ end
 arch teleporter
 hp 17
 sp 11
-connected 30
-speed 0.0
 x 8
+speed 0.0
+connected 30
 end
 arch workbench
 x 8
@@ -1638,9 +1638,9 @@ x 8
 y 4
 end
 arch woodfloor2
-unique 1
 x 8
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 8
@@ -1651,27 +1651,27 @@ x 8
 y 5
 end
 arch woodfloor2
-unique 1
 x 8
 y 5
+unique 1
 end
 arch dungeon_magic
 x 8
 y 6
 end
 arch woodfloor2
-unique 1
 x 8
 y 6
+unique 1
 end
 arch dungeon_magic
 x 8
 y 7
 end
 arch woodfloor2
-unique 1
 x 8
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 8
@@ -1682,45 +1682,45 @@ x 8
 y 8
 end
 arch woodfloor2
-unique 1
 x 8
 y 8
+unique 1
 end
 arch dungeon_magic
 x 8
 y 9
 end
 arch woodfloor2
-unique 1
 x 8
 y 9
+unique 1
 end
 arch dungeon_magic
 x 8
 y 10
 end
 arch woodfloor2
-unique 1
 x 8
 y 10
+unique 1
 end
 arch dungeon_magic
 x 8
 y 11
 end
 arch woodfloor2
-unique 1
 x 8
 y 11
+unique 1
 end
 arch dungeon_magic
 x 8
 y 12
 end
 arch woodfloor2
-unique 1
 x 8
 y 12
+unique 1
 end
 arch light4
 x 8
@@ -1731,54 +1731,54 @@ x 8
 y 13
 end
 arch woodfloor2
-unique 1
 x 8
 y 13
+unique 1
 end
 arch dungeon_magic
 x 8
 y 14
 end
 arch woodfloor2
-unique 1
 x 8
 y 14
+unique 1
 end
 arch dungeon_magic
 x 8
 y 15
 end
 arch woodfloor2
-unique 1
 x 8
 y 15
+unique 1
 end
 arch dungeon_magic
 x 8
 y 16
 end
 arch woodfloor2
-unique 1
 x 8
 y 16
+unique 1
 end
 arch dungeon_magic
 x 8
 y 17
 end
 arch woodfloor2
-unique 1
 x 8
 y 17
+unique 1
 end
 arch dungeon_magic
 x 8
 y 18
 end
 arch woodfloor2
-unique 1
 x 8
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 8
@@ -1813,9 +1813,9 @@ x 9
 y 4
 end
 arch woodfloor2
-unique 1
 x 9
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 9
@@ -1826,18 +1826,18 @@ x 9
 y 5
 end
 arch woodfloor2
-unique 1
 x 9
 y 5
+unique 1
 end
 arch dungeon_magic
 x 9
 y 6
 end
 arch woodfloor2
-unique 1
 x 9
 y 6
+unique 1
 end
 arch light4
 x 9
@@ -1848,9 +1848,9 @@ x 9
 y 7
 end
 arch woodfloor2
-unique 1
 x 9
 y 7
+unique 1
 end
 arch swall_2_1_2
 x 9
@@ -1861,99 +1861,99 @@ x 9
 y 8
 end
 arch woodfloor2
-unique 1
 x 9
 y 8
+unique 1
 end
 arch dungeon_magic
 x 9
 y 9
 end
 arch woodfloor2
-unique 1
 x 9
 y 9
+unique 1
 end
 arch dungeon_magic
 x 9
 y 10
 end
 arch woodfloor2
-unique 1
 x 9
 y 10
+unique 1
 end
 arch dungeon_magic
 x 9
 y 11
 end
 arch woodfloor2
-unique 1
 x 9
 y 11
+unique 1
 end
 arch dungeon_magic
 x 9
 y 12
 end
 arch woodfloor2
-unique 1
 x 9
 y 12
+unique 1
 end
 arch dungeon_magic
 x 9
 y 13
 end
 arch woodfloor2
-unique 1
 x 9
 y 13
+unique 1
 end
 arch dungeon_magic
 x 9
 y 14
 end
 arch woodfloor2
-unique 1
 x 9
 y 14
+unique 1
 end
 arch dungeon_magic
 x 9
 y 15
 end
 arch woodfloor2
-unique 1
 x 9
 y 15
+unique 1
 end
 arch dungeon_magic
 x 9
 y 16
 end
 arch woodfloor2
-unique 1
 x 9
 y 16
+unique 1
 end
 arch dungeon_magic
 x 9
 y 17
 end
 arch woodfloor2
-unique 1
 x 9
 y 17
+unique 1
 end
 arch dungeon_magic
 x 9
 y 18
 end
 arch woodfloor2
-unique 1
 x 9
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 9
@@ -1980,9 +1980,9 @@ x 10
 y 4
 end
 arch woodfloor2
-unique 1
 x 10
 y 4
+unique 1
 end
 arch wwall_2_1_2
 x 10
@@ -1993,27 +1993,27 @@ x 10
 y 5
 end
 arch woodfloor2
-unique 1
 x 10
 y 5
+unique 1
 end
 arch dungeon_magic
 x 10
 y 6
 end
 arch woodfloor2
-unique 1
 x 10
 y 6
+unique 1
 end
 arch dungeon_magic
 x 10
 y 7
 end
 arch woodfloor2
-unique 1
 x 10
 y 7
+unique 1
 end
 arch swall_1_3
 x 10
@@ -2028,33 +2028,33 @@ x 10
 y 8
 end
 arch woodfloor2
-unique 1
 x 10
 y 8
+unique 1
 end
 arch dungeon_magic
 x 10
 y 9
 end
 arch woodfloor2
-unique 1
 x 10
 y 9
+unique 1
 end
 arch dungeon_magic
 x 10
 y 10
 end
 arch woodfloor2
-unique 1
 x 10
 y 10
+unique 1
 end
 arch creator
 other_arch woodfloor2
-connected 10
 x 10
 y 11
+connected 10
 end
 arch dungeon_magic
 x 10
@@ -2062,33 +2062,33 @@ y 11
 end
 arch goldfloor
 name drop x for a fountain
+slaying gems
 msg
 Gurgle gurgle.
 endmsg
-slaying gems
 food 10000
-connected 30
-unique 1
 x 10
 y 11
+connected 30
+unique 1
 end
 arch dungeon_magic
 x 10
 y 12
 end
 arch woodfloor2
-unique 1
 x 10
 y 12
+unique 1
 end
 arch dungeon_magic
 x 10
 y 13
 end
 arch woodfloor2
-unique 1
 x 10
 y 13
+unique 1
 end
 arch wwall_2_2_2
 x 10
@@ -2099,9 +2099,9 @@ x 10
 y 14
 end
 arch woodfloor2
-unique 1
 x 10
 y 14
+unique 1
 end
 arch wwall_2_1_1
 x 10
@@ -2112,9 +2112,9 @@ x 10
 y 15
 end
 arch woodfloor2
-unique 1
 x 10
 y 15
+unique 1
 end
 arch wwall_2_1_1
 x 10
@@ -2125,9 +2125,9 @@ x 10
 y 16
 end
 arch woodfloor2
-unique 1
 x 10
 y 16
+unique 1
 end
 arch wwall_1_2
 x 10
@@ -2138,24 +2138,24 @@ x 10
 y 17
 end
 arch woodfloor2
-unique 1
 x 10
 y 17
+unique 1
 end
 arch door_look_2
-blocksview 1
-no_pass 0
 x 10
 y 17
+no_pass 0
+blocksview 1
 end
 arch dungeon_magic
 x 10
 y 18
 end
 arch woodfloor2
-unique 1
 x 10
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 10
@@ -2182,9 +2182,9 @@ x 11
 y 4
 end
 arch woodfloor2
-unique 1
 x 11
 y 4
+unique 1
 end
 arch wwall_2_2_3
 x 11
@@ -2195,9 +2195,9 @@ x 11
 y 5
 end
 arch woodfloor2
-unique 1
 x 11
 y 5
+unique 1
 end
 arch wwall_2_1_1
 x 11
@@ -2208,9 +2208,9 @@ x 11
 y 6
 end
 arch woodfloor2
-unique 1
 x 11
 y 6
+unique 1
 end
 arch wwall_2_1_1
 x 11
@@ -2221,9 +2221,9 @@ x 11
 y 7
 end
 arch woodfloor2
-unique 1
 x 11
 y 7
+unique 1
 end
 arch wwall_3_4
 x 11
@@ -2234,9 +2234,9 @@ x 11
 y 8
 end
 arch woodfloor2
-unique 1
 x 11
 y 8
+unique 1
 end
 arch wwall_1_2
 x 11
@@ -2247,23 +2247,23 @@ x 11
 y 9
 end
 arch woodfloor2
-unique 1
 x 11
 y 9
+unique 1
 end
 arch door_1
-no_pass 0
 x 11
 y 9
+no_pass 0
 end
 arch dungeon_magic
 x 11
 y 10
 end
 arch woodfloor2
-unique 1
 x 11
 y 10
+unique 1
 end
 arch wwall_1_1
 x 11
@@ -2274,9 +2274,9 @@ x 11
 y 11
 end
 arch woodfloor2
-unique 1
 x 11
 y 11
+unique 1
 end
 arch wwall_win1
 x 11
@@ -2287,9 +2287,9 @@ x 11
 y 12
 end
 arch woodfloor2
-unique 1
 x 11
 y 12
+unique 1
 end
 arch wwall_2_1_1
 x 11
@@ -2300,9 +2300,9 @@ x 11
 y 13
 end
 arch woodfloor2
-unique 1
 x 11
 y 13
+unique 1
 end
 arch wwall_3_1
 x 11
@@ -2313,45 +2313,45 @@ x 11
 y 14
 end
 arch woodfloor2
-unique 1
 x 11
 y 14
+unique 1
 end
 arch dungeon_magic
 x 11
 y 15
 end
 arch woodfloor2
-unique 1
 x 11
 y 15
+unique 1
 end
 arch dungeon_magic
 x 11
 y 16
 end
 arch woodfloor2
-unique 1
 x 11
 y 16
+unique 1
 end
 arch dungeon_magic
 x 11
 y 17
 end
 arch woodfloor2
-unique 1
 x 11
 y 17
+unique 1
 end
 arch dungeon_magic
 x 11
 y 18
 end
 arch woodfloor2
-unique 1
 x 11
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 11
@@ -2386,34 +2386,34 @@ x 12
 y 4
 end
 arch flagstone
-unique 1
 x 12
 y 5
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 12
 y 10
+unique 1
 end
 arch grass
 x 12
@@ -2428,9 +2428,9 @@ x 12
 y 13
 end
 arch woodfloor2
-unique 1
 x 12
 y 13
+unique 1
 end
 arch wwall_2_1_2
 x 12
@@ -2441,18 +2441,18 @@ x 12
 y 14
 end
 arch woodfloor2
-unique 1
 x 12
 y 14
+unique 1
 end
 arch dungeon_magic
 x 12
 y 15
 end
 arch woodfloor2
-unique 1
 x 12
 y 15
+unique 1
 end
 arch light3
 x 12
@@ -2463,27 +2463,27 @@ x 12
 y 16
 end
 arch woodfloor2
-unique 1
 x 12
 y 16
+unique 1
 end
 arch dungeon_magic
 x 12
 y 17
 end
 arch woodfloor2
-unique 1
 x 12
 y 17
+unique 1
 end
 arch dungeon_magic
 x 12
 y 18
 end
 arch woodfloor2
-unique 1
 x 12
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 12
@@ -2518,34 +2518,34 @@ x 13
 y 4
 end
 arch flagstone
-unique 1
 x 13
 y 5
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 13
 y 10
+unique 1
 end
 arch grass
 x 13
@@ -2560,9 +2560,9 @@ x 13
 y 13
 end
 arch woodfloor2
-unique 1
 x 13
 y 13
+unique 1
 end
 arch wwall_2_1_2
 x 13
@@ -2573,9 +2573,9 @@ x 13
 y 14
 end
 arch woodfloor2
-unique 1
 x 13
 y 14
+unique 1
 end
 arch bed_save
 x 13
@@ -2586,36 +2586,36 @@ x 13
 y 15
 end
 arch woodfloor2
-unique 1
 x 13
 y 15
+unique 1
 end
 arch dungeon_magic
 x 13
 y 16
 end
 arch woodfloor2
-unique 1
 x 13
 y 16
+unique 1
 end
 arch dungeon_magic
 x 13
 y 17
 end
 arch woodfloor2
-unique 1
 x 13
 y 17
+unique 1
 end
 arch dungeon_magic
 x 13
 y 18
 end
 arch woodfloor2
-unique 1
 x 13
 y 18
+unique 1
 end
 arch wwall_2_1_2
 x 13
@@ -2650,42 +2650,42 @@ x 14
 y 4
 end
 arch flagstone
-unique 1
 x 14
 y 5
+unique 1
 end
 arch well
 x 14
 y 5
 end
 arch flagstone
-unique 1
 x 14
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 14
 y 7
+unique 1
 end
 arch light4
 x 14
 y 7
 end
 arch flagstone
-unique 1
 x 14
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 14
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 14
 y 10
+unique 1
 end
 arch grass
 x 14
@@ -2700,9 +2700,9 @@ x 14
 y 13
 end
 arch woodfloor2
-unique 1
 x 14
 y 13
+unique 1
 end
 arch wwall_2_2_3
 x 14
@@ -2713,9 +2713,9 @@ x 14
 y 14
 end
 arch woodfloor2
-unique 1
 x 14
 y 14
+unique 1
 end
 arch wwall_2_1_1
 x 14
@@ -2726,9 +2726,9 @@ x 14
 y 15
 end
 arch woodfloor2
-unique 1
 x 14
 y 15
+unique 1
 end
 arch wwall_win1
 x 14
@@ -2739,9 +2739,9 @@ x 14
 y 16
 end
 arch woodfloor2
-unique 1
 x 14
 y 16
+unique 1
 end
 arch wwall_2_1_1
 x 14
@@ -2752,9 +2752,9 @@ x 14
 y 17
 end
 arch woodfloor2
-unique 1
 x 14
 y 17
+unique 1
 end
 arch wwall_2_1_1
 x 14
@@ -2769,9 +2769,9 @@ x 14
 y 18
 end
 arch woodfloor2
-unique 1
 x 14
 y 18
+unique 1
 end
 arch wwall_2_2_4
 x 14
@@ -2806,34 +2806,34 @@ x 15
 y 4
 end
 arch flagstone
-unique 1
 x 15
 y 5
+unique 1
 end
 arch flagstone
-unique 1
 x 15
 y 6
+unique 1
 end
 arch flagstone
-unique 1
 x 15
 y 7
+unique 1
 end
 arch flagstone
-unique 1
 x 15
 y 8
+unique 1
 end
 arch flagstone
-unique 1
 x 15
 y 9
+unique 1
 end
 arch flagstone
-unique 1
 x 15
 y 10
+unique 1
 end
 arch grass
 x 15
@@ -3028,9 +3028,9 @@ x 17
 y 10
 end
 arch flagstone
-unique 1
 x 17
 y 11
+unique 1
 end
 arch grass
 x 17
@@ -3053,19 +3053,19 @@ x 17
 y 16
 end
 arch tree5
-blocksview 1
-no_pass 1
 x 17
 y 16
+no_pass 1
+blocksview 1
 end
 arch grass
 x 17
 y 17
 end
 arch tree5
-blocksview 1
 x 17
 y 17
+blocksview 1
 end
 arch blocked
 x 17
@@ -3160,10 +3160,10 @@ x 18
 y 16
 end
 arch tree5
-blocksview 1
-no_pass 1
 x 18
 y 16
+no_pass 1
+blocksview 1
 end
 arch hole
 slaying mainexit

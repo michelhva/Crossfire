@@ -1,16 +1,16 @@
 arch map
-region pupland
 name castle_eurecaB1
+difficulty 10
+region pupland
+width 21
+height 21
+enter_x 10
+enter_y 8
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 29 22:34:57 1996
 endmsg
-hp 10
-sp 8
-x 21
-y 21
-level 10
 end
 arch blocked
 end

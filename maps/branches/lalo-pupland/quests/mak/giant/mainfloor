@@ -361,6 +361,10 @@ arch cobblestones
 x 2
 y 5
 end
+arch giant
+x 2
+y 5
+end
 arch cobblestones
 x 2
 y 6
@@ -474,6 +478,10 @@ arch wall_2_1_2
 x 3
 end
 arch cobblestones
+x 3
+y 1
+end
+arch giant
 x 3
 y 1
 end
@@ -663,6 +671,10 @@ arch cobblestones
 x 4
 y 10
 end
+arch giant
+x 4
+y 10
+end
 arch cobblestones
 x 4
 y 11
@@ -676,6 +688,10 @@ x 4
 y 13
 end
 arch cobblestones
+x 4
+y 14
+end
+arch giant
 x 4
 y 14
 end
@@ -763,6 +779,10 @@ arch cobblestones
 x 5
 y 3
 end
+arch giant
+x 5
+y 3
+end
 arch cobblestones
 x 5
 y 4
@@ -842,6 +862,18 @@ end
 arch cobblestones
 x 5
 y 21
+end
+arch cyclops
+Wis 3
+hp 6000
+exp 200000
+x 5
+y 21
+carrying 100
+arch key2
+name a huge key
+slaying mcyc1
+end
 end
 arch cobblestones
 x 5
@@ -941,6 +973,10 @@ arch cobblestones
 x 6
 y 12
 end
+arch giant
+x 6
+y 12
+end
 arch cobblestones
 x 6
 y 13
@@ -1069,6 +1105,10 @@ arch cobblestones
 x 7
 y 9
 end
+arch giant
+x 7
+y 9
+end
 arch cobblestones
 x 7
 y 10
@@ -1086,6 +1126,10 @@ x 7
 y 13
 end
 arch cobblestones
+x 7
+y 14
+end
+arch giant
 x 7
 y 14
 end
@@ -1871,6 +1915,10 @@ arch cobblestones
 x 12
 y 20
 end
+arch giant
+x 12
+y 20
+end
 arch cobblestones
 x 12
 y 21
@@ -1884,6 +1932,10 @@ x 12
 y 23
 end
 arch cobblestones
+x 12
+y 24
+end
+arch giant
 x 12
 y 24
 end
@@ -1974,6 +2026,10 @@ x 13
 y 14
 end
 arch cobblestones
+x 13
+y 15
+end
+arch giant
 x 13
 y 15
 end
@@ -2120,6 +2176,10 @@ x 14
 y 19
 end
 arch cobblestones
+x 14
+y 20
+end
+arch giant
 x 14
 y 20
 end
@@ -2212,6 +2272,10 @@ arch cobblestones
 x 15
 y 11
 end
+arch giant
+x 15
+y 11
+end
 arch cobblestones
 x 15
 y 12
@@ -2264,6 +2328,10 @@ arch cobblestones
 x 15
 y 23
 end
+arch giant
+x 15
+y 23
+end
 arch cobblestones
 x 15
 y 24
@@ -2488,6 +2556,10 @@ arch cobblestones
 x 17
 y 15
 end
+arch giant
+x 17
+y 15
+end
 arch cobblestones
 x 17
 y 16
@@ -2505,6 +2577,10 @@ x 17
 y 18
 end
 arch cobblestones
+x 17
+y 19
+end
+arch giant
 x 17
 y 19
 end
@@ -2647,6 +2723,10 @@ x 18
 y 23
 end
 arch cobblestones
+x 18
+y 24
+end
+arch giant
 x 18
 y 24
 end
@@ -2938,6 +3018,10 @@ arch cobblestones
 x 20
 y 20
 end
+arch giant
+x 20
+y 20
+end
 arch cobblestones
 x 20
 y 21
@@ -3170,6 +3254,10 @@ arch cobblestones
 x 22
 y 13
 end
+arch giant
+x 22
+y 13
+end
 arch cobblestones
 x 22
 y 14
@@ -3288,6 +3376,10 @@ arch cobblestones
 x 23
 y 10
 end
+arch giant
+x 23
+y 10
+end
 arch cobblestones
 x 23
 y 11
@@ -3305,6 +3397,10 @@ x 23
 y 14
 end
 arch cobblestones
+x 23
+y 15
+end
+arch giant
 x 23
 y 15
 end
@@ -3588,6 +3684,10 @@ arch cobblestones
 x 25
 y 12
 end
+arch giant
+x 25
+y 12
+end
 arch cobblestones
 x 25
 y 13
@@ -3747,6 +3847,10 @@ x 26
 y 19
 end
 arch cobblestones
+x 26
+y 20
+end
+arch giant
 x 26
 y 20
 end
@@ -3792,6 +3896,10 @@ arch wall_2_1_2
 x 27
 end
 arch cobblestones
+x 27
+y 1
+end
+arch giant
 x 27
 y 1
 end
@@ -3934,6 +4042,10 @@ arch cobblestones
 x 28
 y 5
 end
+arch giant
+x 28
+y 5
+end
 arch cobblestones
 x 28
 y 6
@@ -3958,6 +4070,10 @@ arch cobblestones
 x 28
 y 10
 end
+arch giant
+x 28
+y 10
+end
 arch cobblestones
 x 28
 y 11
@@ -3978,6 +4094,10 @@ arch cobblestones
 x 28
 y 15
 end
+arch giant
+x 28
+y 15
+end
 arch cobblestones
 x 28
 y 16
@@ -3995,6 +4115,10 @@ x 28
 y 18
 end
 arch cobblestones
+x 28
+y 19
+end
+arch giant
 x 28
 y 19
 end
@@ -4133,6 +4257,10 @@ x 29
 y 22
 end
 arch cobblestones
+x 29
+y 23
+end
+arch giant
 x 29
 y 23
 end
@@ -4487,132 +4615,4 @@ end
 arch wall_2_2_4
 x 31
 y 26
-end
-arch giant
-x 2
-y 5
-end
-arch giant
-x 3
-y 1
-end
-arch giant
-x 4
-y 10
-end
-arch giant
-x 4
-y 14
-end
-arch giant
-x 5
-y 3
-end
-arch cyclops
-Wis 3
-hp 6000
-exp 200000
-x 5
-y 21
-carrying 100
-arch key2
-name a huge key
-slaying mcyc1
-end
-end
-arch giant
-x 6
-y 12
-end
-arch giant
-x 7
-y 9
-end
-arch giant
-x 7
-y 14
-end
-arch giant
-x 12
-y 20
-end
-arch giant
-x 12
-y 24
-end
-arch giant
-x 13
-y 15
-end
-arch giant
-x 14
-y 20
-end
-arch giant
-x 15
-y 11
-end
-arch giant
-x 15
-y 23
-end
-arch giant
-x 17
-y 15
-end
-arch giant
-x 17
-y 19
-end
-arch giant
-x 18
-y 24
-end
-arch giant
-x 20
-y 20
-end
-arch giant
-x 22
-y 13
-end
-arch giant
-x 23
-y 10
-end
-arch giant
-x 23
-y 15
-end
-arch giant
-x 25
-y 12
-end
-arch giant
-x 26
-y 20
-end
-arch giant
-x 27
-y 1
-end
-arch giant
-x 28
-y 5
-end
-arch giant
-x 28
-y 10
-end
-arch giant
-x 28
-y 15
-end
-arch giant
-x 28
-y 19
-end
-arch giant
-x 29
-y 23
 end

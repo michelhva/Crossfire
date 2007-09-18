@@ -292,6 +292,11 @@ arch pstone_1
 x 2
 y 3
 end
+arch behemoth
+x 2
+y 3
+can_see_in_dark 1
+end
 arch pstone_1
 x 2
 y 4
@@ -1112,6 +1117,10 @@ x 7
 y 16
 end
 arch glue
+x 7
+y 16
+end
+arch dread
 x 7
 y 16
 end
@@ -2196,6 +2205,10 @@ arch pstone_1
 x 15
 y 8
 end
+arch troll
+x 15
+y 8
+end
 arch pstone_1
 x 15
 y 9
@@ -2233,6 +2246,10 @@ x 15
 y 15
 end
 arch glue
+x 15
+y 15
+end
+arch chinese_dragon
 x 15
 y 15
 end
@@ -2403,6 +2420,10 @@ x 16
 y 19
 end
 arch glue
+x 16
+y 19
+end
+arch chinese_dragon
 x 16
 y 19
 end
@@ -3392,25 +3413,4 @@ end
 arch blocked
 x 23
 y 23
-end
-arch behemoth
-x 2
-y 3
-can_see_in_dark 1
-end
-arch dread
-x 7
-y 16
-end
-arch troll
-x 15
-y 8
-end
-arch chinese_dragon
-x 15
-y 15
-end
-arch chinese_dragon
-x 16
-y 19
 end

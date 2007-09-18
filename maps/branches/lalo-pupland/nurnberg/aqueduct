@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name aqueduct
+region nurnberg
+width 48
+height 48
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Mar  4 02:32:46 1996
 endmsg
-x 48
-y 48
 end
 arch dungeon_floor
 end

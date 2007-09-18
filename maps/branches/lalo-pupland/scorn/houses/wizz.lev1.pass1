@@ -1,12 +1,14 @@
 arch map
-region scorn
 name wizz
+swap_time 3600
+region scorn
+width 16
+height 16
 msg
 Creator: Bjoern Helfesrieder
 Email: helfesri@igd.fhg.de
 Date: Sat Jan  6 20:34:29 1996
 endmsg
-value 3600
 end
 arch dungeon_floor
 end
@@ -1078,6 +1080,15 @@ arch dungeon_floor
 x 10
 y 4
 end
+arch giant
+x 10
+y 4
+carrying 100
+arch key2
+name Yarid's key
+slaying 66
+end
+end
 arch dungeon_floor
 x 10
 y 5
@@ -1616,13 +1627,4 @@ end
 arch dungeon_floor
 x 15
 y 15
-end
-arch giant
-x 10
-y 4
-carrying 100
-arch key2
-name Yarid's key
-slaying 66
-end
 end

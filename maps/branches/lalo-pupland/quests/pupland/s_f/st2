@@ -1,13 +1,13 @@
 arch map
-region pupland
 name st2
+region pupland
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Feb 10 04:45:48 1996
 endmsg
-x 17
-y 17
 end
 arch blocked
 end
@@ -1238,8 +1238,8 @@ end
 arch grate_closed_2
 x 5
 y 1
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1248,8 +1248,8 @@ end
 arch grate_closed_2
 x 5
 y 2
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1258,8 +1258,8 @@ end
 arch grate_closed_2
 x 5
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1268,8 +1268,8 @@ end
 arch grate_closed_2
 x 5
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1278,8 +1278,8 @@ end
 arch grate_closed_2
 x 5
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1288,8 +1288,8 @@ end
 arch grate_closed_2
 x 5
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1298,8 +1298,8 @@ end
 arch grate_closed_2
 x 5
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1308,8 +1308,8 @@ end
 arch grate_closed_2
 x 5
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1318,8 +1318,8 @@ end
 arch grate_closed_2
 x 5
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1328,8 +1328,8 @@ end
 arch grate_closed_2
 x 5
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1338,8 +1338,8 @@ end
 arch grate_closed_2
 x 5
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1348,8 +1348,8 @@ end
 arch grate_closed_2
 x 5
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1358,8 +1358,8 @@ end
 arch grate_closed_2
 x 5
 y 13
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1368,8 +1368,8 @@ end
 arch grate_closed_2
 x 5
 y 14
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1378,8 +1378,8 @@ end
 arch grate_closed_2
 x 5
 y 15
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 5
@@ -1557,8 +1557,8 @@ end
 arch button_handle
 x 8
 y 1
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 8
@@ -1799,8 +1799,8 @@ end
 arch grate_closed_2
 x 11
 y 1
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1809,8 +1809,8 @@ end
 arch grate_closed_2
 x 11
 y 2
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1819,8 +1819,8 @@ end
 arch grate_closed_2
 x 11
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1829,8 +1829,8 @@ end
 arch grate_closed_2
 x 11
 y 4
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1839,8 +1839,8 @@ end
 arch grate_closed_2
 x 11
 y 5
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1849,8 +1849,8 @@ end
 arch grate_closed_2
 x 11
 y 6
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1859,8 +1859,8 @@ end
 arch grate_closed_2
 x 11
 y 7
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1869,8 +1869,8 @@ end
 arch grate_closed_2
 x 11
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1879,8 +1879,8 @@ end
 arch grate_closed_2
 x 11
 y 9
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1889,8 +1889,8 @@ end
 arch grate_closed_2
 x 11
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1899,8 +1899,8 @@ end
 arch grate_closed_2
 x 11
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1909,8 +1909,8 @@ end
 arch grate_closed_2
 x 11
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1919,8 +1919,8 @@ end
 arch grate_closed_2
 x 11
 y 13
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1929,8 +1929,8 @@ end
 arch grate_closed_2
 x 11
 y 14
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11
@@ -1939,8 +1939,8 @@ end
 arch grate_closed_2
 x 11
 y 15
-protected 1
 connected 1
+protected 1
 end
 arch flagstone
 x 11

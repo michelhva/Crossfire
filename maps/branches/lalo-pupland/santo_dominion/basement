@@ -278,6 +278,11 @@ name floor
 x 2
 y 6
 end
+arch giant
+name Rudolf
+x 2
+y 6
+end
 arch afloor_right
 name floor
 x 2
@@ -1856,9 +1861,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-name Rudolf
-x 2
-y 6
 end

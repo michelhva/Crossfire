@@ -1,14 +1,14 @@
 arch map
-region pupland
 name pplant3
+difficulty 7
+region pupland
+width 23
+height 23
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb  4 21:37:57 1996
 endmsg
-x 23
-y 23
-level 7
 end
 arch dungeon_floor
 end

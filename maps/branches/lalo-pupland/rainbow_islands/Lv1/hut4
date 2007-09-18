@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 7
+height 7
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jun 12 21:43:05 1996
 endmsg
-x 7
-y 7
 end
 arch dungeon_magic
 end
@@ -220,9 +221,9 @@ msg
 @match *
 I know about the legend:
 When the four heroes killed the evil
-lord, seven angels helped them. 
+lord, seven angels helped them.
 Each angel gave the heroes holy
-power to break the magic barrier field. 
+power to break the magic barrier field.
 The third angel looked like a little
 girl all the others looked like young
 men.

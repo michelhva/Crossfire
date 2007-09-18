@@ -1,13 +1,13 @@
 arch map
-region pupland
 name cave5
+region pupland
+width 18
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 07:18:34 1996
 endmsg
-x 18
-y 27
 end
 arch blocked
 end
@@ -323,8 +323,8 @@ Click.
 endmsg
 x 2
 y 4
-protected 105
 connected 105
+protected 105
 end
 arch flagstone
 x 2
@@ -370,9 +370,9 @@ arch grate_open_1
 x 2
 y 5
 speed 0.500000
-protected 105
 value 1
 connected 105
+protected 105
 end
 arch dungeon_magic
 x 2
@@ -445,8 +445,8 @@ end
 arch button_small
 x 2
 y 14
-protected 93
 connected 93
+protected 93
 end
 arch flagstone
 x 2
@@ -641,8 +641,8 @@ arch grate_closed_2
 x 3
 y 14
 speed 0.500000
-protected 93
 connected 93
+protected 93
 end
 arch flagstone
 x 3
@@ -783,8 +783,8 @@ arch grate_closed_2
 x 4
 y 9
 speed 0.500000
-protected 105
 connected 105
+protected 105
 end
 arch dungeon_magic
 x 4
@@ -841,8 +841,8 @@ end
 arch button_small
 x 4
 y 14
-protected 93
 connected 93
+protected 93
 end
 arch flagstone
 x 4
@@ -1034,9 +1034,9 @@ hp 3
 sp 22
 x 5
 y 14
-protected 199
 invisible 1
 connected 199
+protected 199
 end
 arch flagstone
 x 5
@@ -1216,8 +1216,8 @@ arch button_lever
 name Don't pull me.
 x 6
 y 14
-protected 199
 connected 199
+protected 199
 end
 arch flagstone
 x 6
@@ -1372,6 +1372,22 @@ arch pstone_1
 x 7
 y 11
 end
+arch titan
+Str 20
+hp 50
+maxhp 50
+exp 1000
+dam 1
+wc 20
+x 7
+y 11
+carrying 15
+randomitems none
+friendly 1
+arch head
+name titan's head
+end
+end
 arch dungeon_magic
 x 7
 y 12
@@ -1403,8 +1419,8 @@ end
 arch gate_closed_2
 x 7
 y 14
-protected 32
 connected 32
+protected 32
 end
 arch flagstone
 x 7
@@ -1715,8 +1731,8 @@ arch ggate_closed
 x 9
 y 4
 speed 0.500000
-protected 11
 connected 11
+protected 11
 end
 arch dungeon_magic
 x 9
@@ -1778,6 +1794,14 @@ arch pstone_1
 x 9
 y 11
 end
+arch giant
+hp 50
+maxhp 50
+dam 1
+x 9
+y 11
+friendly 1
+end
 arch dungeon_magic
 x 9
 y 12
@@ -1809,8 +1833,8 @@ end
 arch button_lever
 x 9
 y 14
-protected 92
 connected 92
+protected 92
 end
 arch flagstone
 x 9
@@ -1970,6 +1994,18 @@ arch pstone_1
 x 10
 y 10
 end
+arch gaelotroll
+Str 30
+hp 50
+maxhp 50
+exp 10
+dam 1
+wc 20
+x 10
+y 10
+friendly 1
+run_away 0
+end
 arch dungeon_magic
 x 10
 y 11
@@ -2009,8 +2045,8 @@ end
 arch gate_closed_2
 x 10
 y 14
-protected 91
 connected 91
+protected 91
 end
 arch flagstone
 x 10
@@ -2189,10 +2225,10 @@ LOOK! That kobold seems very strong!!!!
 endmsg
 x 11
 y 14
-protected 11
 connected 11
 walk_on 0
 fly_on 0
+protected 11
 end
 arch flagstone
 x 11
@@ -2201,8 +2237,8 @@ end
 arch button_lever
 x 11
 y 14
-protected 91
 connected 91
+protected 91
 end
 arch flagstone
 x 11
@@ -2562,8 +2598,8 @@ end
 arch gate_closed_2
 x 13
 y 14
-protected 90
 connected 90
+protected 90
 end
 arch flagstone
 x 13
@@ -2731,8 +2767,8 @@ end
 arch button_lever
 x 14
 y 14
-protected 90
 connected 90
+protected 90
 end
 arch flagstone
 x 14
@@ -2953,17 +2989,17 @@ arch button_small
 name 11 - open kobold gate
 x 16
 y 1
-protected 11
 weight 1000
 connected 11
+protected 11
 end
 arch creator
 name 91
 other_arch boulder
 x 16
 y 1
-protected 91
 connected 91
+protected 91
 end
 arch blocked
 x 16
@@ -2978,9 +3014,9 @@ name 92
 x 16
 y 4
 speed 0.500000
-protected 92
 value 1
 connected 92
+protected 92
 end
 arch boulder
 x 16
@@ -3002,9 +3038,9 @@ arch button_small
 name 32
 x 16
 y 5
-protected 32
 weight 1000000
 connected 32
+protected 32
 end
 arch blocked
 x 16
@@ -3216,40 +3252,4 @@ end
 arch blocked
 x 17
 y 26
-end
-arch titan
-Str 20
-hp 50
-maxhp 50
-exp 1000
-dam 1
-wc 20
-x 7
-y 11
-carrying 15
-randomitems none
-friendly 1
-arch head
-name titan's head
-end
-end
-arch giant
-hp 50
-maxhp 50
-dam 1
-x 9
-y 11
-friendly 1
-end
-arch gaelotroll
-Str 30
-hp 50
-maxhp 50
-exp 10
-dam 1
-wc 20
-x 10
-y 10
-run_away 0
-friendly 1
 end

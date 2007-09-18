@@ -1,15 +1,15 @@
 arch map
-region ancientpupland
 name hole2
+swap_time 10
+difficulty 8
+region ancientpupland
+width 32
+height 42
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 27 20:40:37 1997
 endmsg
-x 32
-y 42
-level 8
-value 10
 end
 arch mine8
 end
@@ -689,6 +689,10 @@ arch flagstone
 x 2
 y 3
 end
+arch golem_necro
+x 2
+y 3
+end
 arch flagstone
 x 2
 y 4
@@ -698,6 +702,10 @@ x 2
 y 5
 end
 arch flagstone
+x 2
+y 6
+end
+arch golem_necro
 x 2
 y 6
 end
@@ -1446,6 +1454,20 @@ arch flagstone
 x 4
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 4
+y 1
+level 50
+end
 arch flagstone
 x 4
 y 2
@@ -1458,11 +1480,20 @@ arch flagstone
 x 4
 y 4
 end
+arch big_dragon
+x 4
+y 4
+level 50
+end
 arch flagstone
 x 4
 y 5
 end
 arch flagstone
+x 4
+y 6
+end
+arch troll
 x 4
 y 6
 end
@@ -2210,6 +2241,20 @@ arch flagstone
 x 6
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 6
+y 1
+level 50
+end
 arch flagstone
 x 6
 y 2
@@ -2227,6 +2272,10 @@ x 6
 y 5
 end
 arch flagstone
+x 6
+y 6
+end
+arch troll
 x 6
 y 6
 end
@@ -2609,6 +2658,11 @@ arch flagstone
 x 7
 y 4
 end
+arch big_dragon
+x 7
+y 4
+level 50
+end
 arch flagstone
 x 7
 y 5
@@ -2982,6 +3036,20 @@ arch flagstone
 x 8
 y 1
 end
+arch big_elec
+Con 45
+hp 22000
+maxhp 22000
+sp 700
+maxsp 700
+exp 140000
+dam 50
+wc -70
+ac -80
+x 8
+y 1
+level 50
+end
 arch flagstone
 x 8
 y 2
@@ -2999,6 +3067,10 @@ x 8
 y 5
 end
 arch flagstone
+x 8
+y 6
+end
+arch giant
 x 8
 y 6
 end
@@ -10966,7 +11038,7 @@ end
 arch magic_mouth
 msg
 The cristal ball are fixed at the
-Mysterious Altar. 
+Mysterious Altar.
 So you cannot get it.
 
 endmsg
@@ -12960,76 +13032,4 @@ end
 arch blocked
 x 31
 y 10
-end
-arch golem_necro
-x 2
-y 3
-end
-arch golem_necro
-x 2
-y 6
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 4
-y 1
-level 50
-end
-arch big_dragon
-x 4
-y 4
-level 50
-end
-arch troll
-x 4
-y 6
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 6
-y 1
-level 50
-end
-arch troll
-x 6
-y 6
-end
-arch big_dragon
-x 7
-y 4
-level 50
-end
-arch big_elec
-Con 45
-hp 22000
-maxhp 22000
-sp 700
-maxsp 700
-exp 140000
-dam 50
-wc -70
-ac -80
-x 8
-y 1
-level 50
-end
-arch giant
-x 8
-y 6
 end

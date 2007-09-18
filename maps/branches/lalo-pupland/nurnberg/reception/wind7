@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name wind7
+region nurnberg
+width 26
+height 26
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb 28 20:02:30 1996
 endmsg
-x 26
-y 26
 end
 arch grass
 end
@@ -786,9 +786,9 @@ y 10
 end
 arch cobblestones2
 face swall_A.111
-is_floor 0
 x 4
 y 10
+is_floor 0
 end
 arch invis_exit
 slaying water4
@@ -807,9 +807,9 @@ y 11
 end
 arch cobblestones2
 face grate_2.118
-is_floor 0
 x 4
 y 11
+is_floor 0
 end
 arch invis_exit
 slaying water4
@@ -824,9 +824,9 @@ y 12
 end
 arch cobblestones2
 face swall_A.111
-is_floor 0
 x 4
 y 12
+is_floor 0
 end
 arch invis_exit
 slaying reception
@@ -896,9 +896,9 @@ y 18
 end
 arch grass
 face dwall_A.111
-is_floor 0
 x 4
 y 18
+is_floor 0
 end
 arch invis_exit
 slaying reception
@@ -1049,23 +1049,23 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 5
 y 12
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
+x 5
+y 12
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 5
-y 12
+immune 254
 end
 arch dungeon_magic
 x 5
@@ -1077,9 +1077,9 @@ y 13
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 13
+level 1
 end
 arch dungeon_magic
 x 5
@@ -1091,24 +1091,24 @@ y 14
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 14
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
+x 5
+y 14
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 5
-y 14
+immune 254
 end
 arch dungeon_magic
 x 5
@@ -1120,9 +1120,9 @@ y 15
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 15
+level 1
 end
 arch dungeon_magic
 x 5
@@ -1134,9 +1134,9 @@ y 16
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 16
+level 1
 end
 arch dungeon_magic
 x 5
@@ -1148,24 +1148,24 @@ y 17
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 17
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
+x 5
+y 17
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 5
-y 17
+immune 254
 end
 arch dungeon_magic
 x 5
@@ -1177,9 +1177,9 @@ y 18
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 18
+level 1
 end
 arch dungeon_magic
 x 5
@@ -1191,9 +1191,9 @@ y 19
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 19
+level 1
 end
 arch dungeon_magic
 x 5
@@ -1205,23 +1205,23 @@ y 20
 end
 arch mover_1
 maxhp 1
-level 1
 x 5
 y 20
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
+x 5
+y 20
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 5
-y 20
+immune 254
 end
 arch invis_exit
 slaying reception
@@ -1350,9 +1350,9 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 6
 y 12
+level 1
 end
 arch flagstone
 x 6
@@ -1392,9 +1392,9 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 6
 y 20
+level 1
 end
 arch invis_exit
 slaying reception
@@ -1499,9 +1499,9 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 7
 y 12
+level 1
 end
 arch flagstone
 x 7
@@ -1553,24 +1553,24 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 7
 y 20
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
+x 7
+y 20
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 7
-y 20
+immune 254
 end
 arch invis_exit
 slaying reception
@@ -1585,9 +1585,9 @@ y 21
 end
 arch grass
 face dwall_5.111
-is_floor 0
 x 7
 y 21
+is_floor 0
 end
 arch dungeon_magic
 x 7
@@ -1729,24 +1729,24 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 8
 y 12
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
+x 8
+y 12
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 8
-y 12
+immune 254
 end
 arch flagstone
 x 8
@@ -1801,9 +1801,9 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 8
 y 20
+level 1
 end
 arch invis_exit
 slaying reception
@@ -1916,9 +1916,9 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 9
 y 12
+level 1
 end
 arch flagstone
 x 9
@@ -1970,9 +1970,9 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 9
 y 20
+level 1
 end
 arch invis_exit
 slaying reception
@@ -2108,9 +2108,9 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 10
 y 12
+level 1
 end
 arch flagstone
 x 10
@@ -2150,24 +2150,24 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 10
 y 20
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
+x 10
+y 20
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 10
-y 20
+immune 254
 end
 arch invis_exit
 slaying reception
@@ -2280,24 +2280,24 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 11
 y 12
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
+x 11
+y 12
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 11
-y 12
+immune 254
 end
 arch flagstone
 x 11
@@ -2337,9 +2337,9 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 11
 y 20
+level 1
 end
 arch invis_exit
 slaying reception
@@ -2452,9 +2452,9 @@ y 12
 end
 arch mover_3
 maxhp 1
-level 1
 x 12
 y 12
+level 1
 end
 arch flagstone
 x 12
@@ -2494,9 +2494,9 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 12
 y 20
+level 1
 end
 arch invis_exit
 slaying reception
@@ -2633,23 +2633,23 @@ y 12
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 12
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
+x 13
+y 12
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 13
-y 12
+immune 254
 end
 arch flagstone
 x 13
@@ -2657,9 +2657,9 @@ y 13
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 13
+level 1
 end
 arch flagstone
 x 13
@@ -2667,9 +2667,9 @@ y 14
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 14
+level 1
 end
 arch flagstone
 x 13
@@ -2677,24 +2677,24 @@ y 15
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 15
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 82
 ac 30
+x 13
+y 15
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 13
-y 15
+immune 254
 end
 arch flagstone
 x 13
@@ -2702,9 +2702,9 @@ y 16
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 16
+level 1
 end
 arch flagstone
 x 13
@@ -2712,9 +2712,9 @@ y 17
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 17
+level 1
 end
 arch flagstone
 x 13
@@ -2722,24 +2722,24 @@ y 18
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 18
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 dam 83
 ac 30
+x 13
+y 18
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 13
-y 18
+immune 254
 end
 arch flagstone
 x 13
@@ -2747,9 +2747,9 @@ y 19
 end
 arch mover_5
 maxhp 1
-level 1
 x 13
 y 19
+level 1
 end
 arch dungeon_magic
 x 13
@@ -2761,23 +2761,23 @@ y 20
 end
 arch mover_7
 maxhp 1
-level 1
 x 13
 y 20
+level 1
 end
 arch lightningwall
 hp 24
 maxhp 24
 ac 30
+x 13
+y 20
 level 20
-immune 254
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-x 13
-y 20
+immune 254
 end
 arch invis_exit
 slaying reception
@@ -3062,11 +3062,11 @@ x 15
 y 7
 end
 arch locked_door2
+slaying 7775237749
 msg
 You need the special key to open this door.
 You'll find the key on the third floor!
 endmsg
-slaying 7775237749
 x 15
 y 7
 end
@@ -3167,9 +3167,9 @@ y 21
 end
 arch cobblestones2
 face swall_5.111
-is_floor 0
 x 15
 y 21
+is_floor 0
 end
 arch dungeon_magic
 x 15
@@ -3350,9 +3350,9 @@ y 21
 end
 arch cobblestones2
 face grate_1.118
-is_floor 0
 x 16
 y 21
+is_floor 0
 end
 arch dungeon_magic
 x 16
@@ -3521,9 +3521,9 @@ y 21
 end
 arch cobblestones2
 face swall_5.111
-is_floor 0
 x 17
 y 21
+is_floor 0
 end
 arch dungeon_magic
 x 17
@@ -3616,10 +3616,10 @@ x 18
 y 10
 end
 arch grate_closed_1
-speed 0.500000
-connected 1
 x 18
 y 10
+speed 0.500000
+connected 1
 end
 arch flagstone
 x 18
@@ -3762,9 +3762,9 @@ x 19
 y 9
 end
 arch button_lever
-connected 1
 x 19
 y 9
+connected 1
 end
 arch flagstone
 x 19

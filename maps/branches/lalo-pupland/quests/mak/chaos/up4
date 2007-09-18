@@ -3294,6 +3294,63 @@ arch flagstone
 x 15
 y 18
 end
+arch djinn
+Str 75
+Dex 60
+Con 90
+Wis 30
+Pow 127
+Int 75
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 750000
+dam 40
+wc -45
+ac -60
+x 15
+y 18
+speed 0.900000
+level 75
+resist_confusion 100
+resist_paralyze 100
+resist_death 100
+carrying 750
+arch spell_small_speedball
+end
+arch spell_paralyze
+end
+arch spell_mass_confusion
+end
+arch abil_poison_cloud
+end
+arch spell_paralyze
+end
+arch spell_sm_lightning
+end
+arch spell_heal
+end
+arch abil_fear
+end
+arch abil_burning_hands
+end
+arch spell_icestorm
+end
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 10
+value 40000
+weight 65
+is_animated 0
+end
+arch key2
+name a semi-ethereal key
+slaying djinn1
+end
+end
 arch flagstone
 x 15
 y 19
@@ -5691,6 +5748,63 @@ arch flagstone
 x 27
 y 18
 end
+arch djinn
+Str 75
+Dex 60
+Con 90
+Wis 30
+Pow 127
+Int 75
+hp 10000
+maxhp 10000
+sp 500
+maxsp 500
+exp 750000
+dam 40
+wc -45
+ac -60
+x 27
+y 18
+speed 0.900000
+level 75
+resist_confusion 100
+resist_paralyze 100
+resist_death 100
+carrying 750
+arch spell_small_speedball
+end
+arch spell_paralyze
+end
+arch spell_mass_confusion
+end
+arch abil_poison_cloud
+end
+arch spell_paralyze
+end
+arch spell_sm_lightning
+end
+arch spell_heal
+end
+arch abil_fear
+end
+arch abil_burning_hands
+end
+arch spell_icestorm
+end
+arch gem
+title of exceptional beauty
+face pretty_crystal.111
+speed 0.000000
+nrof 10
+value 40000
+weight 65
+is_animated 0
+end
+arch key2
+name a semi-ethereal key
+slaying djinn2
+end
+end
 arch flagstone
 x 27
 y 19
@@ -6471,118 +6585,4 @@ end
 arch dwall_2_2_4
 x 31
 y 29
-end
-arch djinn
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 15
-y 18
-speed 0.900000
-level 75
-resist_confusion 100
-resist_paralyze 100
-resist_death 100
-carrying 750
-arch spell_small_speedball
-end
-arch spell_paralyze
-end
-arch spell_mass_confusion
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch spell_sm_lightning
-end
-arch spell_heal
-end
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_icestorm
-end
-arch gem
-title of exceptional beauty
-face pretty_crystal.111
-speed 0.000000
-nrof 10
-value 40000
-weight 65
-is_animated 0
-end
-arch key2
-name a semi-ethereal key
-slaying djinn1
-end
-end
-arch djinn
-Str 75
-Dex 60
-Con 90
-Wis 30
-Pow 127
-Int 75
-hp 10000
-maxhp 10000
-sp 500
-maxsp 500
-exp 750000
-dam 40
-wc -45
-ac -60
-x 27
-y 18
-speed 0.900000
-level 75
-resist_confusion 100
-resist_paralyze 100
-resist_death 100
-carrying 750
-arch spell_small_speedball
-end
-arch spell_paralyze
-end
-arch spell_mass_confusion
-end
-arch abil_poison_cloud
-end
-arch spell_paralyze
-end
-arch spell_sm_lightning
-end
-arch spell_heal
-end
-arch abil_fear
-end
-arch abil_burning_hands
-end
-arch spell_icestorm
-end
-arch gem
-title of exceptional beauty
-face pretty_crystal.111
-speed 0.000000
-nrof 10
-value 40000
-weight 65
-is_animated 0
-end
-arch key2
-name a semi-ethereal key
-slaying djinn2
-end
 end

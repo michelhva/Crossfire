@@ -1,13 +1,13 @@
 arch map
-region pupland
 name prison
+region pupland
+width 15
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 11 18:01:19 1996
 endmsg
-x 15
-y 10
 end
 arch dungeon_floor
 end

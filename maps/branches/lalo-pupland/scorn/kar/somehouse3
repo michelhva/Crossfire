@@ -547,6 +547,38 @@ arch dirtfloor
 x 5
 y 9
 end
+arch giant
+name Mork
+msg
+@match [Hh]ello
+Geesh, kill all my friends, that's not very nice.
+Where did you learn your manners?
+@match friends
+They were just my pals.
+@match pals
+I'm tired of talking to you, you racist...
+GO AWAY!
+@match [Gg]ork
+You know Gork?  You friend of Gork?
+@match [Yy]es
+I bet Gork send you to get key.  Did he?
+@match [Ss]end
+Ok, I give you key.  Here, it in corner.
+@match *
+Leave me alone... <grumble>
+endmsg
+hp 1250
+maxhp 1250
+exp 1
+dam 50
+wc -20
+ac -20
+x 5
+y 9
+speed 1.0
+friendly 1
+stand_still 1
+end
 arch dirtfloor
 x 5
 y 10
@@ -1510,36 +1542,4 @@ end
 arch timberwall_2_2_4
 x 14
 y 14
-end
-arch giant
-name Mork
-msg
-@match [Hh]ello
-Geesh, kill all my friends, that's not very nice.
-Where did you learn your manners?
-@match friends
-They were just my pals.
-@match pals
-I'm tired of talking to you, you racist...
-GO AWAY!
-@match [Gg]ork
-You know Gork?  You friend of Gork?
-@match [Yy]es
-I bet Gork send you to get key.  Did he?
-@match [Ss]end
-Ok, I give you key.  Here, it in corner.
-@match *
-Leave me alone... <grumble>
-endmsg
-hp 1250
-maxhp 1250
-exp 1
-dam 50
-wc -20
-ac -20
-x 5
-y 9
-speed 1.0
-friendly 1
-stand_still 1
 end

@@ -2791,6 +2791,10 @@ arch small_stones
 x 13
 y 27
 end
+arch dread
+x 13
+y 27
+end
 arch small_stones
 x 13
 y 28
@@ -3461,6 +3465,10 @@ arch small_stones
 x 16
 y 27
 end
+arch dread
+x 16
+y 27
+end
 arch small_stones
 x 16
 y 28
@@ -3528,6 +3536,10 @@ x 17
 y 7
 end
 arch small_stones
+x 17
+y 8
+end
+arch chinese_dragon
 x 17
 y 8
 end
@@ -4108,6 +4120,10 @@ x 19
 y 26
 end
 arch small_stones
+x 19
+y 27
+end
+arch dread
 x 19
 y 27
 end
@@ -4729,6 +4745,10 @@ arch small_stones
 x 22
 y 27
 end
+arch dread
+x 22
+y 27
+end
 arch small_stones
 x 22
 y 28
@@ -5049,11 +5069,19 @@ arch small_stones
 x 24
 y 11
 end
+arch giant
+x 24
+y 11
+end
 arch small_stones
 x 24
 y 12
 end
 arch small_stones
+x 24
+y 13
+end
+arch giant
 x 24
 y 13
 end
@@ -5073,6 +5101,10 @@ arch random_treasure
 x 24
 y 15
 end
+arch giant
+x 24
+y 15
+end
 arch small_stones
 x 24
 y 16
@@ -5085,6 +5117,10 @@ arch small_stones
 x 24
 y 17
 end
+arch giant
+x 24
+y 17
+end
 arch small_stones
 x 24
 y 18
@@ -5093,11 +5129,19 @@ arch small_stones
 x 24
 y 19
 end
+arch giant
+x 24
+y 19
+end
 arch small_stones
 x 24
 y 20
 end
 arch small_stones
+x 24
+y 21
+end
+arch giant
 x 24
 y 21
 end
@@ -5223,11 +5267,19 @@ arch small_stones
 x 25
 y 11
 end
+arch giant
+x 25
+y 11
+end
 arch small_stones
 x 25
 y 12
 end
 arch small_stones
+x 25
+y 13
+end
+arch giant
 x 25
 y 13
 end
@@ -5239,11 +5291,19 @@ arch small_stones
 x 25
 y 15
 end
+arch giant
+x 25
+y 15
+end
 arch small_stones
 x 25
 y 16
 end
 arch small_stones
+x 25
+y 17
+end
+arch giant
 x 25
 y 17
 end
@@ -5255,11 +5315,19 @@ arch small_stones
 x 25
 y 19
 end
+arch giant
+x 25
+y 19
+end
 arch small_stones
 x 25
 y 20
 end
 arch small_stones
+x 25
+y 21
+end
+arch giant
 x 25
 y 21
 end
@@ -5385,11 +5453,19 @@ arch small_stones
 x 26
 y 11
 end
+arch giant
+x 26
+y 11
+end
 arch small_stones
 x 26
 y 12
 end
 arch small_stones
+x 26
+y 13
+end
+arch giant
 x 26
 y 13
 end
@@ -5401,11 +5477,19 @@ arch small_stones
 x 26
 y 15
 end
+arch giant
+x 26
+y 15
+end
 arch small_stones
 x 26
 y 16
 end
 arch small_stones
+x 26
+y 17
+end
+arch giant
 x 26
 y 17
 end
@@ -5417,11 +5501,19 @@ arch small_stones
 x 26
 y 19
 end
+arch giant
+x 26
+y 19
+end
 arch small_stones
 x 26
 y 20
 end
 arch small_stones
+x 26
+y 21
+end
+arch giant
 x 26
 y 21
 end
@@ -5547,11 +5639,19 @@ arch small_stones
 x 27
 y 11
 end
+arch giant
+x 27
+y 11
+end
 arch small_stones
 x 27
 y 12
 end
 arch small_stones
+x 27
+y 13
+end
+arch giant
 x 27
 y 13
 end
@@ -5563,11 +5663,19 @@ arch small_stones
 x 27
 y 15
 end
+arch giant
+x 27
+y 15
+end
 arch small_stones
 x 27
 y 16
 end
 arch small_stones
+x 27
+y 17
+end
+arch giant
 x 27
 y 17
 end
@@ -5579,11 +5687,19 @@ arch small_stones
 x 27
 y 19
 end
+arch giant
+x 27
+y 19
+end
 arch small_stones
 x 27
 y 20
 end
 arch small_stones
+x 27
+y 21
+end
+arch giant
 x 27
 y 21
 end
@@ -5716,11 +5832,19 @@ arch small_stones
 x 28
 y 11
 end
+arch giant
+x 28
+y 11
+end
 arch small_stones
 x 28
 y 12
 end
 arch small_stones
+x 28
+y 13
+end
+arch giant
 x 28
 y 13
 end
@@ -5732,11 +5856,19 @@ arch small_stones
 x 28
 y 15
 end
+arch giant
+x 28
+y 15
+end
 arch small_stones
 x 28
 y 16
 end
 arch small_stones
+x 28
+y 17
+end
+arch giant
 x 28
 y 17
 end
@@ -5748,11 +5880,19 @@ arch small_stones
 x 28
 y 19
 end
+arch giant
+x 28
+y 19
+end
 arch small_stones
 x 28
 y 20
 end
 arch small_stones
+x 28
+y 21
+end
+arch giant
 x 28
 y 21
 end
@@ -6057,144 +6197,4 @@ end
 arch cave22
 x 29
 y 29
-end
-arch dread
-x 13
-y 27
-end
-arch dread
-x 16
-y 27
-end
-arch chinese_dragon
-x 17
-y 8
-end
-arch dread
-x 19
-y 27
-end
-arch dread
-x 22
-y 27
-end
-arch giant
-x 24
-y 11
-end
-arch giant
-x 24
-y 13
-end
-arch giant
-x 24
-y 15
-end
-arch giant
-x 24
-y 17
-end
-arch giant
-x 24
-y 19
-end
-arch giant
-x 24
-y 21
-end
-arch giant
-x 25
-y 11
-end
-arch giant
-x 25
-y 13
-end
-arch giant
-x 25
-y 15
-end
-arch giant
-x 25
-y 17
-end
-arch giant
-x 25
-y 19
-end
-arch giant
-x 25
-y 21
-end
-arch giant
-x 26
-y 11
-end
-arch giant
-x 26
-y 13
-end
-arch giant
-x 26
-y 15
-end
-arch giant
-x 26
-y 17
-end
-arch giant
-x 26
-y 19
-end
-arch giant
-x 26
-y 21
-end
-arch giant
-x 27
-y 11
-end
-arch giant
-x 27
-y 13
-end
-arch giant
-x 27
-y 15
-end
-arch giant
-x 27
-y 17
-end
-arch giant
-x 27
-y 19
-end
-arch giant
-x 27
-y 21
-end
-arch giant
-x 28
-y 11
-end
-arch giant
-x 28
-y 13
-end
-arch giant
-x 28
-y 15
-end
-arch giant
-x 28
-y 17
-end
-arch giant
-x 28
-y 19
-end
-arch giant
-x 28
-y 21
 end

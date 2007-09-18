@@ -1,14 +1,14 @@
 arch map
-region pupland
 name pplant2
+difficulty 6
+region pupland
+width 23
+height 23
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Feb  4 21:37:57 1996
 endmsg
-width 23
-height 23
-difficulty 6
 end
 arch dungeon_floor
 end
@@ -172,9 +172,9 @@ x 1
 y 7
 end
 arch firewall_3
-level 100
 x 1
 y 8
+level 100
 end
 arch firewall_3
 x 1
@@ -216,10 +216,10 @@ arch skeleton
 name floor chief
 Con 4
 hp 55
-carrying 100
-unaggressive 1
 x 1
 y 15
+carrying 100
+unaggressive 1
 arch key2
 name skeleton key
 slaying 435676
@@ -280,72 +280,72 @@ x 2
 y 2
 end
 arch grate_closed_2
-connected 1
 x 2
 y 2
+connected 1
 end
 arch dungeon_floor
 x 2
 y 3
 end
 arch grate_closed_2
-connected 1
 x 2
 y 3
+connected 1
 end
 arch dungeon_floor
 x 2
 y 4
 end
 arch grate_closed_2
-connected 1
 x 2
 y 4
+connected 1
 end
 arch dungeon_floor
 x 2
 y 5
 end
 arch grate_closed_2
-connected 1
 x 2
 y 5
+connected 1
 end
 arch dungeon_floor
 x 2
 y 6
 end
 arch grate_closed_2
-connected 1
 x 2
 y 6
+connected 1
 end
 arch dungeon_floor
 x 2
 y 7
 end
 arch grate_closed_2
-connected 1
 x 2
 y 7
+connected 1
 end
 arch dungeon_floor
 x 2
 y 8
 end
 arch grate_closed_2
-connected 1
 x 2
 y 8
+connected 1
 end
 arch dungeon_floor
 x 2
 y 9
 end
 arch grate_closed_1
-connected 1
 x 2
 y 9
+connected 1
 end
 arch firewall_1
 x 2
@@ -437,9 +437,9 @@ x 3
 y 2
 end
 arch grate_closed_1
-connected 1
 x 3
 y 2
+connected 1
 end
 arch dungeon_floor
 x 3
@@ -474,9 +474,9 @@ x 3
 y 9
 end
 arch grate_closed_1
-connected 1
 x 3
 y 9
+connected 1
 end
 arch firewall_1
 x 3
@@ -557,9 +557,9 @@ x 4
 y 2
 end
 arch grate_closed_1
-connected 1
 x 4
 y 2
+connected 1
 end
 arch dungeon_floor
 x 4
@@ -602,9 +602,9 @@ x 4
 y 9
 end
 arch grate_closed_1
-connected 1
 x 4
 y 9
+connected 1
 end
 arch firewall_1
 x 4
@@ -721,9 +721,9 @@ x 5
 y 2
 end
 arch grate_closed_1
-connected 1
 x 5
 y 2
+connected 1
 end
 arch dungeon_floor
 x 5
@@ -758,9 +758,9 @@ x 5
 y 9
 end
 arch grate_closed_1
-connected 1
 x 5
 y 9
+connected 1
 end
 arch firewall_1
 x 5
@@ -885,9 +885,9 @@ x 6
 y 2
 end
 arch grate_closed_1
-connected 1
 x 6
 y 2
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -930,9 +930,9 @@ x 6
 y 9
 end
 arch grate_closed_1
-connected 1
 x 6
 y 9
+connected 1
 end
 arch firewall_1
 x 6
@@ -1051,9 +1051,9 @@ x 7
 y 2
 end
 arch grate_closed_1
-connected 1
 x 7
 y 2
+connected 1
 end
 arch dungeon_floor
 x 7
@@ -1092,9 +1092,9 @@ x 7
 y 9
 end
 arch grate_closed_1
-connected 1
 x 7
 y 9
+connected 1
 end
 arch firewall_1
 x 7
@@ -1215,9 +1215,9 @@ x 8
 y 2
 end
 arch grate_closed_1
-connected 1
 x 8
 y 2
+connected 1
 end
 arch dungeon_floor
 x 8
@@ -1264,9 +1264,9 @@ x 8
 y 9
 end
 arch grate_closed_1
-connected 1
 x 8
 y 9
+connected 1
 end
 arch firewall_1
 x 8
@@ -1375,9 +1375,9 @@ x 9
 y 2
 end
 arch grate_closed_1
-connected 1
 x 9
 y 2
+connected 1
 end
 arch dungeon_floor
 x 9
@@ -1416,9 +1416,9 @@ x 9
 y 9
 end
 arch grate_closed_1
-connected 1
 x 9
 y 9
+connected 1
 end
 arch firewall_1
 x 9
@@ -1521,9 +1521,9 @@ x 10
 y 2
 end
 arch grate_closed_1
-connected 1
 x 10
 y 2
+connected 1
 end
 arch dungeon_floor
 x 10
@@ -1566,9 +1566,9 @@ x 10
 y 9
 end
 arch grate_closed_1
-connected 1
 x 10
 y 9
+connected 1
 end
 arch firewall_1
 x 10
@@ -1715,9 +1715,9 @@ x 11
 y 4
 end
 arch grate_open_2
-connected 1
 x 11
 y 4
+connected 1
 end
 arch dungeon_floor
 x 11
@@ -1748,9 +1748,9 @@ x 11
 y 8
 end
 arch grate_closed_2
-connected 1
 x 11
 y 8
+connected 1
 end
 arch dungeon_floor
 x 11
@@ -1895,9 +1895,9 @@ x 12
 y 5
 end
 arch button_lever
-connected 1
 x 12
 y 5
+connected 1
 end
 arch cobblestones2
 x 12
@@ -3397,9 +3397,9 @@ x 21
 y 6
 end
 arch clock
-blocksview 1
 x 21
 y 6
+blocksview 1
 end
 arch cobblestones2
 x 21

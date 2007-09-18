@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 13
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jun 14 20:18:57 1996
 endmsg
-x 13
-y 14
 end
 arch blocked
 end
@@ -562,6 +563,19 @@ end
 arch cobblestones2
 x 6
 y 8
+end
+arch dread
+x 6
+y 8
+carrying 200
+arch key2
+name dread key
+slaying dread
+end
+arch key2
+name BlackMind key
+slaying black
+end
 end
 arch cobblestones2
 x 6
@@ -1144,17 +1158,4 @@ end
 arch blocked
 x 12
 y 13
-end
-arch dread
-x 6
-y 8
-carrying 200
-arch key2
-name dread key
-slaying dread
-end
-arch key2
-name BlackMind key
-slaying black
-end
 end

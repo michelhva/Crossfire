@@ -1,13 +1,14 @@
 arch map
 name Ruins
+width 32
+height 16
+enter_x 6
+enter_y 1
 msg
 Creator: Chris Jeske
 Email:
 Date: Fri Nov  1 15:58:41 1996
 endmsg
-hp 6
-sp 1
-x 32
 end
 arch grass
 end
@@ -1246,6 +1247,12 @@ arch small_stones
 x 14
 y 13
 end
+arch tower_a
+hp 2
+sp 2
+x 14
+y 13
+end
 arch grass
 x 14
 y 14
@@ -2293,6 +2300,14 @@ speed 0.000000
 invisible 1
 connected 3
 end
+arch fort
+name Kinsfield Distributors
+slaying Ruins
+hp 19
+sp 7
+x 30
+y 1
+end
 arch teleporter
 name invisible teleporter
 hp 9
@@ -2378,18 +2393,4 @@ end
 arch wall_2_2_4
 x 31
 y 15
-end
-arch tower_a
-hp 2
-sp 2
-x 14
-y 13
-end
-arch fort
-name Kinsfield Distributors
-slaying Ruins
-hp 19
-sp 7
-x 30
-y 1
 end

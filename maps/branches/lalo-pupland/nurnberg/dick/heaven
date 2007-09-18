@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name hell
+difficulty 15
+region nurnberg
+width 28
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 21:25:23 1996
 endmsg
-x 28
-y 32
-level 15
 end
 arch dungeon_floor
 end
@@ -1820,7 +1820,7 @@ end
 arch sign
 msg
 Room of Comet:
- Password to escape from the room is 
+ Password to escape from the room is
  "kasdjuFkuGngauG"
  (a success rate of 5/9)
 endmsg
@@ -3271,6 +3271,14 @@ arch dungeon_magic
 x 11
 y 20
 end
+arch titan
+x 11
+y 20
+carrying 100
+arch key2
+slaying 1
+end
+end
 arch dungeon_magic
 x 11
 y 21
@@ -4478,7 +4486,7 @@ y 24
 end
 arch magic_mouth
 msg
-Treasure Room 
+Treasure Room
 endmsg
 x 15
 y 24
@@ -4501,7 +4509,7 @@ arch locked_door1
 slaying treasure_heaven
 msg
 You need the Treasure Key to open this
-door. 
+door.
 endmsg
 x 15
 y 25
@@ -5299,7 +5307,7 @@ So, you'd better to go back.
 
 Data:
 --- Dave ----
-level: 100 
+level: 100
 Str  : 100
 Dex  : 100
 Con  : 100
@@ -5309,7 +5317,7 @@ Int  : 100
 hp   : 30000
 exp  : 1000
 wc   : -100
-ac   : -100 
+ac   : -100
 endmsg
 x 18
 y 7
@@ -7017,7 +7025,7 @@ end
 arch magic_mouth
 msg
 hahaha,
-go to heaven! 
+go to heaven!
 endmsg
 x 24
 y 16
@@ -8048,12 +8056,4 @@ end
 arch wwall_2_2_4
 x 27
 y 31
-end
-arch titan
-x 11
-y 20
-carrying 100
-arch key2
-slaying 1
-end
 end

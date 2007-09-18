@@ -1,13 +1,13 @@
 arch map
-region pupland
 name terminal
+region pupland
+width 21
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr  5 02:03:21 1996
 endmsg
-x 21
-y 18
 end
 arch biglake_center
 name sky

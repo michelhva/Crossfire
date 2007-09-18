@@ -1,15 +1,15 @@
 arch map
 name Fortress
+difficulty 50
+width 32
+height 32
+enter_x 16
+enter_y 30
 msg
 Creator: Chris Jeske
 Email: 
 Date: Tue Sep 24 11:40:19 1996
 endmsg
-hp 16
-sp 30
-x 32
-y 32
-level 50
 end
 arch cwall_2_2_2
 end
@@ -121,13 +121,29 @@ arch cwall_2_1_2
 x 1
 y 14
 end
+arch chinese_dragon
+x 1
+y 16
+end
 arch door_look_1
 x 1
 y 20
 end
+arch big_elec
+x 1
+y 22
+end
+arch big_elec
+x 1
+y 25
+end
 arch door_look_1
 x 1
 y 28
+end
+arch big_dragon
+x 1
+y 29
 end
 arch cwall_2_1_2
 x 1
@@ -143,6 +159,10 @@ end
 arch cwall_1_2
 x 2
 y 3
+end
+arch titan
+x 2
+y 5
 end
 arch cwall_2_1_2
 x 2
@@ -174,6 +194,10 @@ end
 arch cwall_2_1_2
 x 3
 y 8
+end
+arch big_wiz
+x 3
+y 10
 end
 arch cwall_2_1_2
 x 3
@@ -234,6 +258,14 @@ arch cwall_2_1_2
 x 4
 y 14
 end
+arch chinese_dragon
+x 4
+y 16
+end
+arch chinese_dragon
+x 4
+y 18
+end
 arch cwall_2_1_2
 x 4
 y 20
@@ -269,6 +301,10 @@ end
 arch cwall_2_1_2
 x 4
 y 28
+end
+arch big_dragon
+x 4
+y 29
 end
 arch cwall_2_1_2
 x 4
@@ -340,6 +376,10 @@ arch cwall_2_1_2
 x 6
 y 2
 end
+arch titan
+x 6
+y 4
+end
 arch cwall_2_1_2
 x 6
 y 8
@@ -407,9 +447,17 @@ arch cwall_2_1_2
 x 7
 y 8
 end
+arch dread
+x 7
+y 9
+end
 arch door_look_1
 x 7
 y 14
+end
+arch chinese_dragon
+x 7
+y 17
 end
 arch cwall_2_1_2
 x 7
@@ -446,6 +494,10 @@ end
 arch cwall_2_1_2
 x 7
 y 28
+end
+arch big_dragon
+x 7
+y 29
 end
 arch cwall_2_1_2
 x 7
@@ -1343,6 +1395,45 @@ x 15
 y 23
 connected 1
 end
+arch big_dragon
+name Guardian Dragon
+msg
+@match altar|trigger
+<mumble> <sigh>
+@match King|king|Grey|grey
+You better get the king's permission
+first, and then I will let you in!
+Unfortunately, the king is inside...
+<chortle>
+@match rincess
+Princess? mmm.... princess...
+I collect princess scalps, did you
+know?
+@match scalp|hair
+Bring me all the hair of a princess,
+and I will let you in!
+@match in|open|enter
+Ha! NONE MAY ENTER! Didn't you read
+the sign? <snort>
+@match *
+Watch it, moron! You are trying my
+patience...<rumble>
+endmsg
+x 15
+y 24
+carrying 3000
+unaggressive 1
+arch wig
+name brown hair
+nrof 4
+end
+arch wig
+name blond hair
+end
+arch wig
+name black hair
+end
+end
 arch marble
 x 15
 y 26
@@ -1417,8 +1508,8 @@ endmsg
 hp 5000
 x 16
 y 3
-level 30
 speed 0.500000
+level 30
 arch ability_summon_air
 end
 arch skill_karate
@@ -3205,95 +3296,4 @@ end
 arch cwall_2_2_4
 x 31
 y 31
-end
-arch chinese_dragon
-x 1
-y 16
-end
-arch big_elec
-x 1
-y 22
-end
-arch big_elec
-x 1
-y 25
-end
-arch big_dragon
-x 1
-y 29
-end
-arch titan
-x 2
-y 5
-end
-arch big_wiz
-x 3
-y 10
-end
-arch chinese_dragon
-x 4
-y 16
-end
-arch chinese_dragon
-x 4
-y 18
-end
-arch big_dragon
-x 4
-y 29
-end
-arch titan
-x 6
-y 4
-end
-arch dread
-x 7
-y 9
-end
-arch chinese_dragon
-x 7
-y 17
-end
-arch big_dragon
-x 7
-y 29
-end
-arch big_dragon
-name Guardian Dragon
-msg
-@match altar|trigger
-<mumble> <sigh>
-@match King|king|Grey|grey
-You better get the king's permission
-first, and then I will let you in!
-Unfortunately, the king is inside...
-<chortle>
-@match rincess
-Princess? mmm.... princess...
-I collect princess scalps, did you
-know?
-@match scalp|hair
-Bring me all the hair of a princess,
-and I will let you in!
-@match in|open|enter
-Ha! NONE MAY ENTER! Didn't you read
-the sign? <snort>
-@match *
-Watch it, moron! You are trying my
-patience...<rumble>
-endmsg
-x 15
-y 24
-carrying 3000
-unaggressive 1
-arch wig
-name brown hair
-nrof 4
-end
-arch wig
-name blond hair
-end
-arch wig
-name black hair
-end
 end

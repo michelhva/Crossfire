@@ -261,6 +261,15 @@ arch random_gem
 x 1
 y 1
 end
+arch big_demon
+name Principal Investigator
+x 1
+y 1
+carrying 100
+arch key2
+slaying microlab
+end
+end
 arch cobblestones
 x 1
 y 2
@@ -314,6 +323,11 @@ x 1
 y 10
 end
 arch random_gem
+x 1
+y 10
+end
+arch big_demon
+name Principal Investigator
 x 1
 y 10
 end
@@ -596,6 +610,11 @@ arch cobblestones
 x 2
 y 5
 end
+arch big_demon
+name Principal Investigator
+x 2
+y 5
+end
 arch cobblestones
 x 2
 y 6
@@ -656,6 +675,10 @@ arch cobblestones
 x 2
 y 15
 end
+arch medium_demon
+x 2
+y 15
+end
 arch cobblestones
 x 2
 y 16
@@ -684,6 +707,11 @@ arch cobblestones
 x 2
 y 20
 end
+arch big_demon
+name Principal Investigator
+x 2
+y 20
+end
 arch cobblestones
 x 2
 y 21
@@ -697,6 +725,11 @@ x 2
 y 23
 end
 arch cobblestones
+x 2
+y 24
+end
+arch big_demon
+name Principal Investigator
 x 2
 y 24
 end
@@ -1044,6 +1077,11 @@ arch cobblestones
 x 4
 y 14
 end
+arch big_demon
+name Principal Investigator
+x 4
+y 14
+end
 arch cobblestones
 x 4
 y 15
@@ -1186,6 +1224,11 @@ arch cobblestones
 x 5
 y 5
 end
+arch big_demon
+name Principal Investigator
+x 5
+y 5
+end
 arch cobblestones
 x 5
 y 6
@@ -1215,6 +1258,10 @@ x 5
 y 11
 end
 arch cobblestones
+x 5
+y 12
+end
+arch medium_demon
 x 5
 y 12
 end
@@ -1259,6 +1306,11 @@ x 5
 y 20
 end
 arch cobblestones
+x 5
+y 21
+end
+arch big_demon
+name Principal Investigator
 x 5
 y 21
 end
@@ -1395,6 +1447,10 @@ x 6
 y 1
 end
 arch cobblestones
+x 6
+y 2
+end
+arch medium_demon
 x 6
 y 2
 end
@@ -2754,6 +2810,10 @@ arch cobblestones
 x 11
 y 2
 end
+arch medium_demon
+x 11
+y 2
+end
 arch cobblestones
 x 11
 y 3
@@ -3352,6 +3412,10 @@ x 13
 y 1
 end
 arch cobblestones
+x 13
+y 2
+end
+arch medium_demon
 x 13
 y 2
 end
@@ -5180,6 +5244,10 @@ arch cobblestones
 x 19
 y 2
 end
+arch medium_demon
+x 19
+y 2
+end
 arch cobblestones
 x 19
 y 3
@@ -6333,6 +6401,11 @@ arch cobblestones
 x 22
 y 34
 end
+arch Balrog
+name Department Vice-Chair
+x 22
+y 34
+end
 arch cobblestones
 x 22
 y 35
@@ -7270,6 +7343,10 @@ x 26
 y 1
 end
 arch cobblestones
+x 26
+y 2
+end
+arch medium_demon
 x 26
 y 2
 end
@@ -9365,6 +9442,11 @@ arch cobblestones
 x 33
 y 16
 end
+arch big_demon
+name Principal Investigator
+x 33
+y 16
+end
 arch cobblestones
 x 33
 y 17
@@ -9398,6 +9480,11 @@ x 33
 y 22
 end
 arch cobblestones
+x 33
+y 23
+end
+arch big_demon
+name Principal Investigator
 x 33
 y 23
 end
@@ -9445,6 +9532,18 @@ arch cobblestones
 x 33
 y 32
 end
+arch demon_lord
+x 33
+y 32
+resist_magic 30
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_weaponmagic 30
+resist_turn_undead 30
+resist_fear 30
+resist_godpower 30
+end
 arch cobblestones
 x 33
 y 33
@@ -9484,6 +9583,11 @@ arch mine2
 x 34
 end
 arch cobblestones
+x 34
+y 1
+end
+arch big_demon
+name Principal Investigator
 x 34
 y 1
 end
@@ -9536,6 +9640,11 @@ x 34
 y 9
 end
 arch cobblestones
+x 34
+y 10
+end
+arch big_demon
+name Principal Investigator
 x 34
 y 10
 end
@@ -10197,6 +10306,10 @@ arch cobblestones
 x 37
 y 17
 end
+arch medium_demon
+x 37
+y 17
+end
 arch cobblestones
 x 37
 y 18
@@ -10226,6 +10339,10 @@ x 37
 y 22
 end
 arch cobblestones
+x 37
+y 23
+end
+arch medium_demon
 x 37
 y 23
 end
@@ -10920,121 +11037,4 @@ end
 arch mine12
 x 39
 y 39
-end
-arch big_demon
-name Principal Investigator
-x 1
-y 1
-carrying 100
-arch key2
-slaying microlab
-end
-end
-arch big_demon
-name Principal Investigator
-x 1
-y 10
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 5
-end
-arch medium_demon
-x 2
-y 15
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 20
-end
-arch big_demon
-name Principal Investigator
-x 2
-y 24
-end
-arch big_demon
-name Principal Investigator
-x 4
-y 14
-end
-arch big_demon
-name Principal Investigator
-x 5
-y 5
-end
-arch medium_demon
-x 5
-y 12
-end
-arch big_demon
-name Principal Investigator
-x 5
-y 21
-end
-arch medium_demon
-x 6
-y 2
-end
-arch medium_demon
-x 11
-y 2
-end
-arch medium_demon
-x 13
-y 2
-end
-arch medium_demon
-x 19
-y 2
-end
-arch Balrog
-name Department Vice-Chair
-x 22
-y 34
-end
-arch medium_demon
-x 26
-y 2
-end
-arch big_demon
-name Principal Investigator
-x 33
-y 16
-end
-arch big_demon
-name Principal Investigator
-x 33
-y 23
-end
-arch demon_lord
-x 33
-y 32
-resist_magic 30
-resist_electricity 30
-resist_confusion 30
-resist_acid 30
-resist_weaponmagic 30
-resist_turn_undead 30
-resist_fear 30
-resist_godpower 30
-end
-arch big_demon
-name Principal Investigator
-x 34
-y 1
-end
-arch big_demon
-name Principal Investigator
-x 34
-y 10
-end
-arch medium_demon
-x 37
-y 17
-end
-arch medium_demon
-x 37
-y 23
 end

@@ -3559,6 +3559,10 @@ arch woodfloor
 x 17
 y 25
 end
+arch dragon
+x 17
+y 25
+end
 arch woodfloor
 x 17
 y 26
@@ -4491,6 +4495,10 @@ x 22
 y 23
 end
 arch woodfloor
+x 22
+y 24
+end
+arch dragon
 x 22
 y 24
 end
@@ -7278,12 +7286,4 @@ end
 arch woods
 x 39
 y 31
-end
-arch dragon
-x 17
-y 25
-end
-arch dragon
-x 22
-y 24
 end

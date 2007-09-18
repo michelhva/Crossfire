@@ -1,11 +1,13 @@
 arch map
 name c
+width 16
+height 16
+enter_x 7
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Fri Jan 15 08:46:56 1999
 endmsg
-hp 7
 end
 arch afloor_right
 end
@@ -166,7 +168,7 @@ msg
 better get a bucket..
 @match *
 Put the whole lot in a bucket with me
-eggs on top! 
+eggs on top!
 endmsg
 x 1
 y 7

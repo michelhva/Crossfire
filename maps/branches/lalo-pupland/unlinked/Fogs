@@ -1,12 +1,12 @@
 arch map
 name Fogs
+width 13
+height 13
 msg
 This map was 'pup_land/jk/Fogs'.  Best I can tell, nothing lead to it,
 and the exit it contained did not lead anyplace.
 MSW 2002-09-11
 endmsg
-x 13
-y 13
 end
 arch grass
 end
@@ -689,6 +689,10 @@ arch grass
 x 9
 y 2
 end
+arch volcano_high
+x 9
+y 2
+end
 arch grass
 x 9
 y 3
@@ -972,8 +976,4 @@ end
 arch grass
 x 12
 y 12
-end
-arch volcano_high
-x 9
-y 2
 end

@@ -1,12 +1,12 @@
 arch map
 name kandora
+width 40
+height 28
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Tue Jan 26 18:06:47 1999
 endmsg
-width 40
-height 28
 end
 arch woods
 end
@@ -69,6 +69,11 @@ arch grassdark
 y 16
 end
 arch grassdark
+y 17
+end
+arch fort
+name Dun Denray
+slaying denray
 y 17
 end
 arch grassmedium
@@ -699,6 +704,10 @@ arch hills_rocky
 x 5
 y 2
 end
+arch mountain_2
+x 5
+y 3
+end
 arch mountain4
 x 5
 y 5
@@ -950,9 +959,9 @@ x 7
 y 4
 end
 arch mountain4
-no_pass 0
 x 7
 y 5
+no_pass 0
 end
 arch magic_ear
 msg
@@ -961,17 +970,17 @@ A dwarf pops up from behind a rock,
 blindfolds you, and begins leading
 down into a hidden valley....
 endmsg
-connected 22
 x 7
 y 5
+connected 22
 end
 arch teleporter
 slaying cave/mithril
 sp 15
-invisible 1
-connected 22
 x 7
 y 5
+invisible 1
+connected 22
 end
 arch hills_rocky
 x 7
@@ -2303,6 +2312,11 @@ end
 arch brush
 x 17
 y 11
+end
+arch castle_a
+x 17
+y 11
+speed_left -0.518000
 end
 arch brush
 x 17
@@ -4500,6 +4514,10 @@ arch grass
 x 33
 y 20
 end
+arch city_tower
+x 33
+y 20
+end
 arch dunes
 x 33
 y 21
@@ -4620,6 +4638,12 @@ x 34
 y 14
 end
 arch grass
+x 34
+y 15
+end
+arch hovels2
+slaying ship_city
+sp 8
 x 34
 y 15
 end
@@ -5074,264 +5098,240 @@ end
 arch small_stones
 x 38
 end
-arch small_stones
-x 38
-y 1
-end
-arch biglake_nw
-x 38
-y 1
-end
-arch biglake_n
-x 38
-y 2
-end
-arch biglake_n
-x 38
-y 3
-end
-arch biglake_n
-x 38
-y 4
-end
-arch biglake_e
-x 38
-y 5
-end
-arch biglake_e
-x 38
-y 6
-end
-arch biglake_e
-x 38
-y 7
-end
-arch biglake_e
-x 38
-y 8
-end
-arch biglake_e
-x 38
-y 9
-end
-arch biglake_e
-x 38
-y 10
-end
-arch biglake_e
-x 38
-y 11
-end
-arch biglake_e
-x 38
-y 12
-end
-arch biglake_e
-x 38
-y 13
-end
-arch biglake_sn
-x 38
-y 14
-end
-arch biglake_sn
-x 38
-y 15
-end
-arch fog
-x 38
-y 15
-end
-arch biglake_sn
-x 38
-y 16
-end
-arch biglake_sn
-x 38
-y 17
-end
-arch biglake_sn
-x 38
-y 18
-end
-arch biglake_sn
-x 38
-y 19
-end
-arch biglake_sn
-x 38
-y 20
-end
-arch biglake_sn
-x 38
-y 21
-end
-arch biglake_sn
-x 38
-y 22
-end
-arch biglake_sn
-x 38
-y 23
-end
-arch biglake_sn
-x 38
-y 24
-end
-arch biglake_sn
-x 38
-y 25
-end
-arch biglake_sn
-x 38
-y 26
-end
-arch biglake_sn
-x 38
-y 27
-end
-arch small_stones
-x 39
-end
-arch biglake_nw
-x 39
-end
-arch biglake_n
-x 39
-y 1
-end
-arch biglake_n
-x 39
-y 2
-end
-arch biglake_n
-x 39
-y 3
-end
-arch biglake_n
-x 39
-y 4
-end
-arch biglake_e
-x 39
-y 5
-end
-arch fog
-x 39
-y 5
-end
-arch biglake_e
-x 39
-y 6
-end
-arch biglake_e
-x 39
-y 7
-end
-arch biglake_e
-x 39
-y 8
-end
-arch biglake_e
-x 39
-y 9
-end
-arch biglake_e
-x 39
-y 10
-end
-arch biglake_e
-x 39
-y 11
-end
-arch biglake_e
-x 39
-y 12
-end
-arch biglake_e
-x 39
-y 13
-end
-arch biglake_sn
-x 39
-y 14
-end
-arch biglake_sn
-x 39
-y 15
-end
-arch biglake_sn
-x 39
-y 16
-end
-arch biglake_sn
-x 39
-y 17
-end
-arch biglake_sn
-x 39
-y 18
-end
-arch biglake_sn
-x 39
-y 19
-end
-arch biglake_sn
-x 39
-y 20
-end
-arch biglake_sn
-x 39
-y 21
-end
-arch biglake_sn
-x 39
-y 22
-end
-arch biglake_sn
-x 39
-y 23
-end
-arch biglake_sn
-x 39
-y 24
-end
-arch biglake_sn
-x 39
-y 25
-end
-arch biglake_sn
-x 39
-y 26
-end
-arch biglake_sn
-x 39
-y 27
-end
-arch fort
-name Dun Denray
-slaying denray
-y 17
-end
-arch mountain_2
-x 5
-y 3
-end
-arch castle_a
-speed_left -0.518000
-x 17
-y 11
-end
-arch city_tower
-x 33
-y 20
-end
-arch hovels2
-slaying ship_city
-sp 8
-x 34
-y 15
-end
 arch s_tower2
 x 38
+end
+arch small_stones
+x 38
+y 1
+end
+arch biglake_nw
+x 38
+y 1
+end
+arch biglake_n
+x 38
+y 2
+end
+arch biglake_n
+x 38
+y 3
+end
+arch biglake_n
+x 38
+y 4
+end
+arch biglake_e
+x 38
+y 5
+end
+arch biglake_e
+x 38
+y 6
+end
+arch biglake_e
+x 38
+y 7
+end
+arch biglake_e
+x 38
+y 8
+end
+arch biglake_e
+x 38
+y 9
+end
+arch biglake_e
+x 38
+y 10
+end
+arch biglake_e
+x 38
+y 11
+end
+arch biglake_e
+x 38
+y 12
+end
+arch biglake_e
+x 38
+y 13
+end
+arch biglake_sn
+x 38
+y 14
+end
+arch biglake_sn
+x 38
+y 15
+end
+arch fog
+x 38
+y 15
+end
+arch biglake_sn
+x 38
+y 16
+end
+arch biglake_sn
+x 38
+y 17
+end
+arch biglake_sn
+x 38
+y 18
+end
+arch biglake_sn
+x 38
+y 19
+end
+arch biglake_sn
+x 38
+y 20
+end
+arch biglake_sn
+x 38
+y 21
+end
+arch biglake_sn
+x 38
+y 22
+end
+arch biglake_sn
+x 38
+y 23
+end
+arch biglake_sn
+x 38
+y 24
+end
+arch biglake_sn
+x 38
+y 25
+end
+arch biglake_sn
+x 38
+y 26
+end
+arch biglake_sn
+x 38
+y 27
+end
+arch small_stones
+x 39
+end
+arch biglake_nw
+x 39
+end
+arch biglake_n
+x 39
+y 1
+end
+arch biglake_n
+x 39
+y 2
+end
+arch biglake_n
+x 39
+y 3
+end
+arch biglake_n
+x 39
+y 4
+end
+arch biglake_e
+x 39
+y 5
+end
+arch fog
+x 39
+y 5
+end
+arch biglake_e
+x 39
+y 6
+end
+arch biglake_e
+x 39
+y 7
+end
+arch biglake_e
+x 39
+y 8
+end
+arch biglake_e
+x 39
+y 9
+end
+arch biglake_e
+x 39
+y 10
+end
+arch biglake_e
+x 39
+y 11
+end
+arch biglake_e
+x 39
+y 12
+end
+arch biglake_e
+x 39
+y 13
+end
+arch biglake_sn
+x 39
+y 14
+end
+arch biglake_sn
+x 39
+y 15
+end
+arch biglake_sn
+x 39
+y 16
+end
+arch biglake_sn
+x 39
+y 17
+end
+arch biglake_sn
+x 39
+y 18
+end
+arch biglake_sn
+x 39
+y 19
+end
+arch biglake_sn
+x 39
+y 20
+end
+arch biglake_sn
+x 39
+y 21
+end
+arch biglake_sn
+x 39
+y 22
+end
+arch biglake_sn
+x 39
+y 23
+end
+arch biglake_sn
+x 39
+y 24
+end
+arch biglake_sn
+x 39
+y 25
+end
+arch biglake_sn
+x 39
+y 26
+end
+arch biglake_sn
+x 39
+y 27
 end

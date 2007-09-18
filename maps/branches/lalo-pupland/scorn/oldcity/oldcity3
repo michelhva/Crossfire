@@ -622,6 +622,17 @@ arch cobblestones
 x 3
 y 18
 end
+arch dragon
+name Thalik Norois
+msg
+@match name|Name
+Thalik Norois
+@match *
+Die fools.
+endmsg
+x 3
+y 18
+end
 arch cobblestones
 x 3
 y 19
@@ -4420,15 +4431,4 @@ end
 arch rock
 x 19
 y 39
-end
-arch dragon
-name Thalik Norois
-msg
-@match name|Name
-Thalik Norois
-@match *
-Die fools.
-endmsg
-x 3
-y 18
 end

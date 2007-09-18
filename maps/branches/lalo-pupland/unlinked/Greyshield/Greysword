@@ -1,14 +1,15 @@
 arch map
 name Greysword
+darkness 1
+width 18
+height 16
+enter_x 8
+enter_y 7
 msg
 Creator: Chris Jeske
 Email: 
 Date: Thu Nov 14 09:05:40 1996
 endmsg
-hp 8
-sp 7
-x 18
-invisible 1
 end
 arch cave_7
 end
@@ -2438,10 +2439,10 @@ Wis 1
 Cha -2
 x 17
 y 8
-protected 2
 attacktype 257
 material 256
 magic 5
+protected 2
 end
 arch teleporter
 name teleporter1

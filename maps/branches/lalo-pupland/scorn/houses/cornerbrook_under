@@ -1,17 +1,17 @@
 arch map
-region scorn
 name Under Cornerbrook
+difficulty 3
+region scorn
+darkness 3
+width 20
+height 20
+enter_x 1
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/4/2003
 endmsg
-width 20
-height 20
-enter_x 1
-enter_y 1
-difficulty 3
-darkness 3
 end
 arch dirtfloor
 end
@@ -146,9 +146,9 @@ name hole
 slaying cornerbrook
 hp 2
 sp 11
-walk_on 0
 x 1
 y 1
+walk_on 0
 end
 arch light2
 x 1
@@ -2119,6 +2119,16 @@ arch dirtfloor
 x 17
 y 1
 end
+arch breeder_ant
+other_arch guard_ant
+Con 0
+hp 500
+maxhp 500
+exp 300
+x 17
+y 1
+level 3
+end
 arch dirtfloor
 x 17
 y 2
@@ -2531,14 +2541,4 @@ end
 arch roughwall_2_2_4
 x 19
 y 19
-end
-arch breeder_ant
-level 3
-exp 300
-other_arch guard_ant
-hp 500
-maxhp 500
-Con 0
-x 17
-y 1
 end

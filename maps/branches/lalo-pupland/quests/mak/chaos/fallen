@@ -2987,6 +2987,76 @@ arch pstone_3
 x 15
 y 12
 end
+arch destroying_angel
+name Lorkas the fallen
+Str 50
+Dex 99
+Con 99
+Pow 125
+Int 99
+hp 30000
+maxhp 30000
+sp 1000
+maxsp 1000
+exp 5000000
+wc -70
+ac -80
+x 15
+y 12
+speed 1.000000
+speed_left -0.860000
+attack_movement 8
+level 125
+attacktype 22817
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 70
+resist_cold 100
+resist_confusion 100
+resist_acid 60
+resist_drain 30
+resist_weaponmagic 50
+resist_ghosthit 100
+resist_poison 100
+resist_paralyze 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 95
+resist_holyword 90
+carrying 100
+weight 150000
+randomitems rich
+will_apply 0
+run_away 0
+can_use_armour 0
+can_use_weapon 0
+can_use_ring 0
+sleep 1
+can_use_skill 0
+can_apply 0
+arch spell_regenerate_spellpoints
+end
+arch abil_icestorm
+end
+arch spell_dragonbreath
+maxsp 0
+end
+arch spell_major_healing
+end
+arch spell_bullet_storm
+end
+arch spell_paralyze
+end
+arch abil_poison_cloud
+end
+arch key2
+name a white shimmering key
+slaying Lorkas treasure key
+end
+end
 arch small_stones
 x 15
 y 13
@@ -6210,74 +6280,4 @@ end
 arch blocked
 x 31
 y 32
-end
-arch destroying_angel
-name Lorkas the fallen
-Str 50
-Dex 99
-Con 99
-Pow 125
-Int 99
-hp 30000
-maxhp 30000
-sp 1000
-maxsp 1000
-exp 5000000
-wc -70
-ac -80
-x 15
-y 12
-speed 1.000000
-speed_left -0.860000
-attack_movement 8
-level 125
-attacktype 22817
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 70
-resist_cold 100
-resist_confusion 100
-resist_acid 60
-resist_drain 30
-resist_weaponmagic 50
-resist_ghosthit 100
-resist_poison 100
-resist_paralyze 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_godpower 95
-resist_holyword 90
-carrying 100
-weight 150000
-randomitems rich
-will_apply 0
-run_away 0
-can_use_armour 0
-can_use_weapon 0
-can_use_ring 0
-sleep 1
-can_use_skill 0
-can_apply 0
-arch spell_regenerate_spellpoints
-end
-arch abil_icestorm
-end
-arch spell_dragonbreath
-maxsp 0
-end
-arch spell_major_healing
-end
-arch spell_bullet_storm
-end
-arch spell_paralyze
-end
-arch abil_poison_cloud
-end
-arch key2
-name a white shimmering key
-slaying Lorkas treasure key
-end
 end
