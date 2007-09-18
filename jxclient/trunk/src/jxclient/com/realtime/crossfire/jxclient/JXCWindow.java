@@ -72,20 +72,20 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     /** TODO: Remove when more options are implemented in the start screen gui. */
     private static final boolean DISABLE_START_GUI = true;
 
-    public final static int GUI_START      = 0;
-    public final static int GUI_METASERVER = 1;
-    public final static int GUI_MAIN       = 2;
+    public static final int GUI_START      = 0;
+    public static final int GUI_METASERVER = 1;
+    public static final int GUI_MAIN       = 2;
 
-    public final static int DLG_NONE       = 0;
-    public final static int DLG_BOOK       = 1;
-    public final static int DLG_QUERY      = 2;
-    public final static int DLG_KEYBIND    = 3;
-    public final static int DLG_CARD       = 4;
-    public final static int DLG_PAPER      = 5;
-    public final static int DLG_SIGN       = 6;
-    public final static int DLG_MONUMENT   = 7;
-    public final static int DLG_SCRIPTED_DIALOG = 8;
-    public final static int DLG_MOTD       = 9;
+    public static final int DLG_NONE       = 0;
+    public static final int DLG_BOOK       = 1;
+    public static final int DLG_QUERY      = 2;
+    public static final int DLG_KEYBIND    = 3;
+    public static final int DLG_CARD       = 4;
+    public static final int DLG_PAPER      = 5;
+    public static final int DLG_SIGN       = 6;
+    public static final int DLG_MONUMENT   = 7;
+    public static final int DLG_SCRIPTED_DIALOG = 8;
+    public static final int DLG_MOTD       = 9;
 
     private long framecount = 0;
 
@@ -125,10 +125,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
-    public final static int KEY_SHIFT_SHIFT = 0;
-    public final static int KEY_SHIFT_CTRL = 1;
-    public final static int KEY_SHIFT_ALT = 2;
-    public final static int KEY_SHIFT_ALTGR = 3;
+    public static final int KEY_SHIFT_SHIFT = 0;
+    public static final int KEY_SHIFT_CTRL = 1;
+    public static final int KEY_SHIFT_ALT = 2;
+    public static final int KEY_SHIFT_ALTGR = 3;
 
     private boolean is_run_active = false;
 
