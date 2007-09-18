@@ -35,13 +35,13 @@ public class AskfaceManager
      * Face numbers for which "askface" commands have been sent without having
      * received a response from the server.
      */
-    private static final Set<Integer> pendingAskfaces = new HashSet<Integer>();
+    private final Set<Integer> pendingAskfaces = new HashSet<Integer>();
 
     /**
      * Face numbers for which an "askface" command should be sent. It includes
      * all elements of {@link #pendingAskfaces}.
      */
-    private static final Set<Integer> pendingFaces = new HashSet<Integer>();
+    private final Set<Integer> pendingFaces = new HashSet<Integer>();
 
     /**
      * Create a new instance.
