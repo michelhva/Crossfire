@@ -191,18 +191,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
     {
         /** {@inheritDoc} */
-        public void commandPlayerReceived(final CrossfireCommandPlayerEvent evt)
+        public void playerAdded(final CfPlayer player)
         {
-            final ItemsManager itemsManager = (ItemsManager)evt.getSource();
-            final CfPlayer player = itemsManager.getPlayer();
-            if (player == null)
-            {
-                setTitle(TITLE_PREFIX+" - "+hostname);
-            }
-            else
-            {
-                setTitle(TITLE_PREFIX+" - "+hostname+" - "+player.getName());
-            }
+            setTitle(TITLE_PREFIX+" - "+hostname+" - "+player.getName());
+        }
+
+        /** {@inheritDoc} */
+        public void playerRemoved(final CfPlayer player)
+        {
+            setTitle(TITLE_PREFIX+" - "+hostname);
         }
     };
 
@@ -529,9 +526,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver = new CrossfireServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
         myserver.addCrossfireQueryListener(this);
+        setTitle(TITLE_PREFIX+" - "+hostname);
         ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
         initGUI(GUI_MAIN);
-        setTitle(TITLE_PREFIX+" - "+hostname);
         myserver.connect();
         Faces.setFacesCallback(myserver);
     }

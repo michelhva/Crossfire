@@ -908,7 +908,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
-                    final Stats stats = CfPlayer.getStats();
+                    final Stats stats = ItemsList.getItemsManager().getStats();
                     while (pos < packet.length)
                     {
                         final int stat = packet[pos++]&0xFF;
@@ -1012,8 +1012,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             break;
                         }
                     }
+                    stats.setStatsProcessed();
                     if (pos > packet.length) break;
-                    CfPlayer.setStatsProcessed();
                     return;
                 }
                 break;
@@ -1458,16 +1458,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public List<CfItem> getItems(int location)
     {
         return ItemsList.getItemsManager().getItems(location);
-    }
-
-    /**
-     * Returns the current player.
-     * @return The current player, as a CfPlayer object.
-     * @since 1.0
-     */
-    public CfPlayer getPlayer()
-    {
-        return ItemsList.getItemsManager().getPlayer();
     }
 
     public void drawInfo(String msg, int col)

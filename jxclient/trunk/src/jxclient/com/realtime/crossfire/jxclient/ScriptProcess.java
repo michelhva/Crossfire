@@ -123,7 +123,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     {
         String parms = cmdline.substring(8);
         System.out.println(" - Request :"+parms);
-        Stats st = mywindow.getCrossfireServerConnection().getPlayer().getStats();
+        final Stats st = ItemsList.getItemsManager().getStats();
 
         if (parms.equals("range"))
         {

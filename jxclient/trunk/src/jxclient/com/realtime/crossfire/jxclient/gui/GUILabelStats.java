@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CfPlayer;
 import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
@@ -123,6 +123,6 @@ public class GUILabelStats extends GUILabel
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
         this.stat = stat;
-        CfPlayer.addCrossfireStatsListener(crossfireStatsListener);
+        ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
     }
 }

@@ -19,7 +19,9 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -441,6 +443,8 @@ public class Stats
      */
     public static final int RESIST_TYPES = 18;
 
+    private final List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
+
     private final int[] mystats = new int[512];
 
     private long myexp = 0;
@@ -681,5 +685,24 @@ public class Stats
         }
 
         return statTable.get(name);
+    }
+
+    public void addCrossfireStatsListener(final CrossfireStatsListener listener)
+    {
+        mylisteners_stats.add(listener);
+    }
+
+    public void removeCrossfireStatsListener(final CrossfireStatsListener listener)
+    {
+        mylisteners_stats.remove(listener);
+    }
+
+    public void setStatsProcessed()
+    {
+        final CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), this);
+        for (final CrossfireStatsListener listener : mylisteners_stats)
+        {
+            listener.commandStatsReceived(evt);
+        }
     }
 }

@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -31,36 +29,8 @@ import java.util.List;
  */
 public class CfPlayer extends CfItem
 {
-    private static final List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
-
-    private static final Stats mystats = new Stats();
-
     public CfPlayer(final int tag, final int weight, final Face face, final String name)
     {
         super(0, tag, 0, weight, face, name, name, 1);
-    }
-
-    public static Stats getStats()
-    {
-        return mystats;
-    }
-
-    public static void addCrossfireStatsListener(final CrossfireStatsListener listener)
-    {
-        mylisteners_stats.add(listener);
-    }
-
-    public static void removeCrossfireStatsListener(final CrossfireStatsListener listener)
-    {
-        mylisteners_stats.remove(listener);
-    }
-
-    public static void setStatsProcessed()
-    {
-        final CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), mystats);
-        for (final CrossfireStatsListener listener : mylisteners_stats)
-        {
-            listener.commandStatsReceived(evt);
-        }
     }
 }

@@ -87,6 +87,11 @@ public class ItemsManager
     private CfPlayer player = null;
 
     /**
+     * The stats information.
+     */
+    private final Stats stats = new Stats();
+
+    /**
      * The location to show in the floor view.
      */
     private int currentFloor = 0;
@@ -335,17 +340,19 @@ public class ItemsManager
         if (this.player != null)
         {
             addModified(modifiedInventories, items.get(this.player.getTag()));
+            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            {
+                listener.playerRemoved(this.player);
+            }
         }
         this.player = player;
         if (this.player != null)
         {
             addModified(modifiedInventories, items.get(this.player.getTag()));
-        }
-
-        final CrossfireCommandPlayerEvent evt = new CrossfireCommandPlayerEvent(this);
-        for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
-        {
-            listener.commandPlayerReceived(evt);
+            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            {
+                listener.playerAdded(this.player);
+            }
         }
     }
 
@@ -357,6 +364,16 @@ public class ItemsManager
     public synchronized CfPlayer getPlayer()
     {
         return player;
+    }
+
+    /**
+     * Return the stats object for this client.
+     *
+     * @return The stats object.
+     */
+    public Stats getStats()
+    {
+        return stats;
     }
 
     /**
