@@ -7430,6 +7430,14 @@ x 28
 y 36
 elevation 4602
 end
+arch barn
+name dragon hangar - Navar
+slaying /navar_city/dragon_hangar/hangar
+hp 15
+sp 1
+x 28
+y 36
+end
 arch steppe
 x 28
 y 37
@@ -9455,6 +9463,10 @@ arch grass
 x 36
 y 1
 end
+arch barrack_long
+x 36
+y 1
+end
 arch dungeon_magic
 x 36
 y 2
@@ -9472,6 +9484,15 @@ x 36
 y 3
 end
 arch fog
+x 36
+y 3
+end
+arch wizard_tower
+name very tall tower
+name_pl very tall tower
+slaying /navar_city/mlab/tavern
+hp 1
+sp 20
 x 36
 y 3
 end
@@ -9525,6 +9546,13 @@ x 36
 y 7
 end
 arch cobblestones2
+x 36
+y 7
+end
+arch prison
+name Prison
+slaying /navar_city/city1prison
+sp 2
 x 36
 y 7
 end
@@ -10587,6 +10615,12 @@ end
 arch grass
 x 39
 end
+arch house_up
+slaying /navar_city/city1houses2
+hp 28
+sp 8
+x 39
+end
 arch dungeon_magic
 x 39
 y 1
@@ -10600,6 +10634,13 @@ x 39
 y 2
 end
 arch grass
+x 39
+y 2
+end
+arch house_long
+slaying /navar_city/city1houses2
+hp 10
+sp 12
 x 39
 y 2
 end
@@ -10648,6 +10689,14 @@ x 39
 y 7
 end
 arch grass
+x 39
+y 7
+end
+arch slum1
+name Rock Gardens
+slaying /navar_city/slums/rockgardens
+hp 1
+sp 2
 x 39
 y 7
 end
@@ -11006,6 +11055,14 @@ x 40
 y 7
 end
 arch grass
+x 40
+y 7
+end
+arch slum3
+name Rockgardens
+slaying /navar_city/slums/rockgardens
+hp 21
+sp 2
 x 40
 y 7
 end
@@ -11385,6 +11442,15 @@ arch grass
 x 41
 y 12
 end
+arch guild_west
+name Dreaming Sage's Storage Room
+name_pl Dreaming Sage's Storage Room
+slaying /navar_city/dreaming_sage/storage_room
+hp 1
+sp 10
+x 41
+y 12
+end
 arch dungeon_magic
 x 41
 y 13
@@ -11638,6 +11704,15 @@ arch grass
 x 42
 y 4
 end
+arch temple1
+name temple of Sorig
+name_pl temple of Sorig
+slaying /navar_city/temples/sorig
+hp 7
+sp 13
+x 42
+y 4
+end
 arch dungeon_magic
 x 42
 y 5
@@ -11659,6 +11734,10 @@ x 42
 y 7
 end
 arch grass
+x 42
+y 7
+end
+arch slum1
 x 42
 y 7
 end
@@ -11991,6 +12070,10 @@ arch grass
 x 43
 y 7
 end
+arch slum2
+x 43
+y 7
+end
 arch dungeon_magic
 x 43
 y 8
@@ -12297,6 +12380,10 @@ x 44
 y 7
 end
 arch grass
+x 44
+y 7
+end
+arch slum3
 x 44
 y 7
 end
@@ -12969,6 +13056,10 @@ arch grass
 x 46
 y 4
 end
+arch house_up
+x 46
+y 4
+end
 arch dungeon_magic
 x 46
 y 5
@@ -12990,6 +13081,15 @@ x 46
 y 7
 end
 arch grass_only
+x 46
+y 7
+end
+arch house_up
+name Iggy's house
+name_pl Iggy's house
+slaying /navar_city/slums/Iggys_house
+hp 1
+sp 15
 x 46
 y 7
 end
@@ -13028,6 +13128,16 @@ end
 arch cobblestones2
 x 46
 y 11
+end
+arch cathedral
+name Mostrai Cathedral
+name_pl Mostrai cathedral
+slaying /navar_city/city1church1
+hp 8
+sp 25
+x 46
+y 11
+no_pass 0
 end
 arch dungeon_magic
 x 46
@@ -13571,6 +13681,14 @@ x 48
 end
 arch grass
 x 48
+end
+arch rl_house_west
+name Private apartments
+slaying /navar_city/apartments/apartment
+hp 10
+sp 13
+x 48
+unique 1
 end
 arch dungeon_magic
 x 48
@@ -14223,122 +14341,4 @@ arch mountain
 x 49
 y 49
 elevation 7573
-end
-arch barn
-name dragon hangar - Navar
-slaying /navar_city/dragon_hangar/hangar
-hp 15
-sp 1
-x 28
-y 36
-end
-arch barrack_long
-x 36
-y 1
-end
-arch wizard_tower
-name very tall tower
-name_pl very tall tower
-slaying /navar_city/mlab/tavern
-hp 1
-sp 20
-x 36
-y 3
-end
-arch prison
-name Prison
-slaying /navar_city/city1prison
-sp 2
-x 36
-y 7
-end
-arch house_up
-slaying /navar_city/city1houses2
-hp 28
-sp 8
-x 39
-end
-arch house_long
-slaying /navar_city/city1houses2
-hp 10
-sp 12
-x 39
-y 2
-end
-arch slum1
-name Rock Gardens
-slaying /navar_city/slums/rockgardens
-hp 1
-sp 2
-x 39
-y 7
-end
-arch slum3
-name Rockgardens
-slaying /navar_city/slums/rockgardens
-hp 21
-sp 2
-x 40
-y 7
-end
-arch guild_west
-name Dreaming Sage's Storage Room
-name_pl Dreaming Sage's Storage Room
-slaying /navar_city/dreaming_sage/storage_room
-hp 1
-sp 10
-x 41
-y 12
-end
-arch temple1
-name temple of Sorig
-name_pl temple of Sorig
-slaying /navar_city/temples/sorig
-hp 7
-sp 13
-x 42
-y 4
-end
-arch slum1
-x 42
-y 7
-end
-arch slum2
-x 43
-y 7
-end
-arch slum3
-x 44
-y 7
-end
-arch house_up
-x 46
-y 4
-end
-arch house_up
-name Iggy's house
-name_pl Iggy's house
-slaying /navar_city/slums/Iggys_house
-hp 1
-sp 15
-x 46
-y 7
-end
-arch cathedral
-name Mostrai Cathedral
-name_pl Mostrai cathedral
-slaying /navar_city/city1church1
-hp 8
-sp 25
-x 46
-y 11
-no_pass 0
-end
-arch rl_house_west
-name Private apartments
-slaying /navar_city/apartments/apartment
-hp 10
-sp 13
-x 48
-unique 1
 end

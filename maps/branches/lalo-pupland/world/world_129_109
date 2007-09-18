@@ -1551,6 +1551,14 @@ arch pstone_1
 x 6
 y 29
 end
+arch rowboat
+name Simple Rowboat
+slaying /world/world_127_109
+hp 16
+sp 7
+x 6
+y 29
+end
 arch jungle_1
 x 6
 y 30
@@ -1693,6 +1701,11 @@ y 8
 elevation -291
 end
 arch sea1
+x 7
+y 9
+end
+arch big_galleon
+slaying /wolfsburg/dungeons/ship
 x 7
 y 9
 end
@@ -6204,6 +6217,14 @@ y 39
 elevation -276
 end
 arch pstone_1
+x 24
+y 40
+end
+arch rowboat
+name boat
+slaying /world/world_127_109
+hp 12
+sp 14
 x 24
 y 40
 end
@@ -12474,25 +12495,4 @@ arch deep_sea
 x 49
 y 49
 elevation -14315
-end
-arch rowboat
-name Simple Rowboat
-slaying /world/world_127_109
-hp 16
-sp 7
-x 6
-y 29
-end
-arch big_galleon
-slaying /wolfsburg/dungeons/ship
-x 7
-y 9
-end
-arch rowboat
-name boat
-slaying /world/world_127_109
-hp 12
-sp 14
-x 24
-y 40
 end

@@ -1405,6 +1405,13 @@ arch medium_stones
 x 5
 y 38
 end
+arch volcano_high
+slaying /darcap/quest/fire
+hp 20
+sp 34
+x 5
+y 38
+end
 arch medium_stones
 x 5
 y 39
@@ -12384,11 +12391,4 @@ arch steppe
 x 49
 y 49
 elevation 3436
-end
-arch volcano_high
-slaying /darcap/quest/fire
-hp 20
-sp 34
-x 5
-y 38
 end

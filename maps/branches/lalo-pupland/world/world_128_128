@@ -2972,6 +2972,10 @@ x 11
 y 47
 elevation 3812
 end
+arch polarbear
+x 11
+y 47
+end
 arch flagstone
 face snow.111
 x 11
@@ -5009,6 +5013,14 @@ x 19
 y 39
 elevation -4891
 end
+arch s_citytower
+name Frozen Lighthouse
+slaying /whalingoutpost/lighthouse1
+hp 8
+sp 15
+x 19
+y 39
+end
 arch light3
 x 19
 y 40
@@ -5037,6 +5049,19 @@ arch sea
 x 19
 y 44
 elevation -3105
+end
+arch s_ship
+name Icebreaker
+name_pl Sturdy Ship
+slaying world_127_125
+msg
+North and north the ship travels. The
+chill of the air lessens slightly.
+endmsg
+hp 16
+sp 37
+x 19
+y 44
 end
 arch sea
 x 19
@@ -10363,6 +10388,10 @@ x 40
 y 44
 elevation 3812
 end
+arch polarbear
+x 40
+y 44
+end
 arch flagstone
 face snow.111
 x 40
@@ -12174,6 +12203,10 @@ x 47
 y 42
 elevation 3812
 end
+arch polarbear
+x 47
+y 42
+end
 arch flagstone
 face snow.111
 x 47
@@ -12719,37 +12752,4 @@ arch deep_sea
 x 49
 y 49
 elevation -14099
-end
-arch polarbear
-x 11
-y 47
-end
-arch s_citytower
-name Frozen Lighthouse
-slaying /whalingoutpost/lighthouse1
-hp 8
-sp 15
-x 19
-y 39
-end
-arch s_ship
-name Icebreaker
-name_pl Sturdy Ship
-slaying world_127_125
-msg
-North and north the ship travels. The
-chill of the air lessens slightly.
-endmsg
-hp 16
-sp 37
-x 19
-y 44
-end
-arch polarbear
-x 40
-y 44
-end
-arch polarbear
-x 47
-y 42
 end

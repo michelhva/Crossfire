@@ -3233,11 +3233,23 @@ arch dungeon_floor
 x 13
 y 1
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 13
+y 1
+end
 arch dungeon_floor
 x 13
 y 2
 end
 arch dungeon_floor
+x 13
+y 3
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 13
 y 3
 end
@@ -3249,11 +3261,23 @@ arch dungeon_floor
 x 13
 y 5
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 13
+y 5
+end
 arch dungeon_floor
 x 13
 y 6
 end
 arch dungeon_floor
+x 13
+y 7
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 13
 y 7
 end
@@ -3265,6 +3289,12 @@ arch dungeon_floor
 x 13
 y 9
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 13
+y 9
+end
 arch dungeon_floor
 x 13
 y 10
@@ -3273,11 +3303,23 @@ arch dungeon_floor
 x 13
 y 11
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 13
+y 11
+end
 arch dungeon_floor
 x 13
 y 12
 end
 arch dungeon_floor
+x 13
+y 13
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 13
 y 13
 end
@@ -3536,6 +3578,13 @@ arch sea1
 x 14
 y 21
 end
+arch rowboat
+slaying /wolfsburg/dungeons/piratedung
+hp 28
+sp 19
+x 14
+y 21
+end
 arch sea
 x 14
 y 22
@@ -3555,6 +3604,14 @@ end
 arch sea1
 x 14
 y 26
+end
+arch rowboat
+slaying world_128_109
+hp 17
+sp 40
+x 14
+y 26
+walk_on 1
 end
 arch sea
 x 14
@@ -3676,6 +3733,14 @@ arch cwall_2_1_2
 x 15
 end
 arch dungeon_floor
+x 15
+y 1
+end
+arch barn
+name warehouse
+slaying /wolfsburg/ware1
+hp 1
+sp 1
 x 15
 y 1
 end
@@ -4160,11 +4225,23 @@ arch dungeon_floor
 x 17
 y 1
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 17
+y 1
+end
 arch dungeon_floor
 x 17
 y 2
 end
 arch dungeon_floor
+x 17
+y 3
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 17
 y 3
 end
@@ -4184,11 +4261,23 @@ arch dungeon_floor
 x 17
 y 7
 end
+arch barn
+name warehouse
+name_pl warehouse
+x 17
+y 7
+end
 arch dungeon_floor
 x 17
 y 8
 end
 arch dungeon_floor
+x 17
+y 9
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 17
 y 9
 end
@@ -4200,11 +4289,22 @@ arch dungeon_floor
 x 17
 y 11
 end
+arch barn
+name warehouse
+x 17
+y 11
+end
 arch dungeon_floor
 x 17
 y 12
 end
 arch dungeon_floor
+x 17
+y 13
+end
+arch barn
+name warehouse
+name_pl warehouse
 x 17
 y 13
 end
@@ -4245,6 +4345,10 @@ x 17
 y 22
 end
 arch sea1
+x 17
+y 23
+end
+arch rowboat
 x 17
 y 23
 end
@@ -4318,6 +4422,14 @@ x 17
 y 38
 elevation 1603
 end
+arch temple1
+name Temple of Ixalovh
+slaying /wolfsburg/temple/ixalovh
+hp 2
+sp 6
+x 17
+y 38
+end
 arch grass
 x 17
 y 39
@@ -4328,6 +4440,13 @@ x 17
 y 40
 elevation -33
 no_pass 0
+end
+arch rowboat
+slaying world_128_109
+hp 15
+sp 26
+x 17
+y 40
 end
 arch sea
 x 17
@@ -4647,6 +4766,15 @@ arch dungeon_floor
 x 19
 y 7
 end
+arch city_tower
+name Old Tower
+name_pl Old Tower
+slaying /wolfsburg/magara/tower1/entrance
+hp 4
+sp 12
+x 19
+y 7
+end
 arch dungeon_floor
 x 19
 y 8
@@ -4656,6 +4784,10 @@ x 19
 y 9
 end
 arch dungeon_floor
+x 19
+y 10
+end
+arch barrack_up
 x 19
 y 10
 end
@@ -4886,6 +5018,10 @@ arch dungeon_floor
 x 20
 y 7
 end
+arch barrack_up
+x 20
+y 7
+end
 arch dungeon_floor
 x 20
 y 8
@@ -4895,6 +5031,10 @@ x 20
 y 9
 end
 arch dungeon_floor
+x 20
+y 10
+end
+arch barrack_up
 x 20
 y 10
 end
@@ -5145,6 +5285,14 @@ arch dungeon_floor
 x 21
 y 13
 end
+arch church
+name The Eternal Reward
+slaying /wolfsburg/etern_rew
+hp 7
+sp 23
+x 21
+y 13
+end
 arch dungeon_floor
 x 21
 y 14
@@ -5357,6 +5505,10 @@ arch dungeon_floor
 x 22
 y 7
 end
+arch barrack_up
+x 22
+y 7
+end
 arch dungeon_floor
 x 22
 y 8
@@ -5366,6 +5518,14 @@ x 22
 y 9
 end
 arch dungeon_floor
+x 22
+y 10
+end
+arch castle_a
+name Castle of Magara
+slaying /wolfsburg/magara/castle/floor_1
+hp 1
+sp 1
 x 22
 y 10
 end
@@ -5405,6 +5565,10 @@ arch sea1
 x 22
 y 19
 end
+arch longship
+x 22
+y 19
+end
 arch sea1
 x 22
 y 20
@@ -5414,6 +5578,10 @@ x 22
 y 20
 end
 arch sea1
+x 22
+y 21
+end
+arch longship
 x 22
 y 21
 end
@@ -5434,6 +5602,10 @@ x 22
 y 24
 end
 arch sea1
+x 22
+y 25
+end
+arch longship
 x 22
 y 25
 end
@@ -5602,6 +5774,10 @@ x 23
 y 6
 end
 arch dungeon_floor
+x 23
+y 7
+end
+arch barrack_up
 x 23
 y 7
 end
@@ -6078,6 +6254,12 @@ arch dungeon_floor
 x 25
 y 1
 end
+arch keep
+name west gatehouse
+name_pl west gatehouse
+x 25
+y 1
+end
 arch dungeon_floor
 x 25
 y 2
@@ -6106,6 +6288,15 @@ arch dungeon_floor
 x 25
 y 7
 end
+arch guild
+name Damned Heretics's Storage Room
+name_pl Damned Heretics's Storage Room
+slaying /wolfsburg/guilds/damned_heretics/storage_room
+hp 1
+sp 10
+x 25
+y 7
+end
 arch dungeon_floor
 x 25
 y 8
@@ -6115,6 +6306,10 @@ x 25
 y 9
 end
 arch dungeon_floor
+x 25
+y 10
+end
+arch barrack_up
 x 25
 y 10
 end
@@ -6170,6 +6365,10 @@ arch sea1
 x 25
 y 22
 end
+arch longship
+x 25
+y 22
+end
 arch sea1
 x 25
 y 23
@@ -6179,6 +6378,10 @@ x 25
 y 23
 end
 arch sea1
+x 25
+y 24
+end
+arch longship
 x 25
 y 24
 end
@@ -6350,6 +6553,14 @@ x 26
 y 9
 end
 arch dungeon_floor
+x 26
+y 10
+end
+arch tower_a
+name High Tower
+slaying /wolfsburg/eeur/tower1.1
+hp 20
+sp 19
 x 26
 y 10
 end
@@ -6605,6 +6816,14 @@ x 27
 y 13
 end
 arch dungeon_floor
+x 27
+y 14
+end
+arch guild
+name Guild of the Damned Heretics
+slaying /wolfsburg/guilds/damned_heretics/ground
+hp 12
+sp 23
 x 27
 y 14
 end
@@ -7000,6 +7219,12 @@ arch dungeon_floor
 x 29
 y 1
 end
+arch keep
+name east gatehouse
+name_pl east gatehouse
+x 29
+y 1
+end
 arch dungeon_floor
 x 29
 y 2
@@ -7025,6 +7250,13 @@ x 29
 y 6
 end
 arch dungeon_floor
+x 29
+y 7
+end
+arch guild
+name One-Eyed Mike's Department Store
+slaying /wolfsburg/dept_store_weapon
+sp 1
 x 29
 y 7
 end
@@ -8031,6 +8263,15 @@ arch sea1
 x 33
 y 18
 end
+arch big_galleon
+name Island Tours
+name_pl Island Tours
+slaying /world/world_129_107
+hp 22
+sp 18
+x 33
+y 18
+end
 arch sea1
 x 33
 y 19
@@ -8048,6 +8289,15 @@ x 33
 y 22
 end
 arch sea1
+x 33
+y 23
+end
+arch big_galleon
+name Island Tours
+name_pl Island Tours
+slaying /world/world_128_107
+hp 19
+sp 23
 x 33
 y 23
 end
@@ -8440,6 +8690,14 @@ arch cobblestones2
 x 35
 y 1
 end
+arch prison
+name Wolfsburg Prison
+slaying /wolfsburg/prison
+hp 13
+sp 1
+x 35
+y 1
+end
 arch cobblestones2
 x 35
 y 2
@@ -8766,6 +9024,14 @@ arch dungeon_floor
 x 36
 y 8
 end
+arch inn
+name The Red Light District
+slaying /wolfsburg/whorehouse
+hp 1
+sp 1
+x 36
+y 8
+end
 arch dungeon_floor
 x 36
 y 9
@@ -8775,6 +9041,15 @@ x 36
 y 10
 end
 arch dungeon_floor
+x 36
+y 11
+end
+arch inn
+name The Bloody Cutlass
+name_pl The Bloody Cutlass
+slaying /wolfsburg/inns
+hp 1
+sp 1
 x 36
 y 11
 end
@@ -8811,6 +9086,15 @@ x 36
 y 19
 end
 arch sea1
+x 36
+y 20
+end
+arch big_galleon
+name Island Tours
+name_pl Island Tours
+slaying /world/world_127_109
+hp 21
+sp 11
 x 36
 y 20
 end
@@ -9428,6 +9712,10 @@ arch dungeon_floor
 x 39
 y 1
 end
+arch barrack_up
+x 39
+y 1
+end
 arch dungeon_floor
 x 39
 y 2
@@ -9465,6 +9753,15 @@ x 39
 y 10
 end
 arch dungeon_floor
+x 39
+y 11
+end
+arch inn
+name Dolphin's Delight
+name_pl Dolphin's Delight
+slaying /wolfsburg/inns
+hp 16
+sp 1
 x 39
 y 11
 end
@@ -9640,6 +9937,10 @@ arch cwall_2_1_2
 x 40
 end
 arch dungeon_floor
+x 40
+y 1
+end
+arch barrack_up
 x 40
 y 1
 end
@@ -10127,6 +10428,14 @@ arch pstone_1
 x 42
 y 2
 end
+arch church
+name Run-down Church
+slaying /wolfsburg/piratechurch
+hp 5
+sp 14
+x 42
+y 2
+end
 arch pstone_1
 x 42
 y 3
@@ -10211,6 +10520,10 @@ arch sea1
 x 42
 y 19
 end
+arch big_galleon
+x 42
+y 19
+end
 arch sea1
 x 42
 y 20
@@ -10228,6 +10541,15 @@ x 42
 y 23
 end
 arch sea1
+x 42
+y 24
+end
+arch big_galleon
+name to Navar
+name_pl to Navar
+slaying /world/world_122_116
+hp 21
+sp 47
 x 42
 y 24
 end
@@ -10384,6 +10706,14 @@ x 43
 y 7
 end
 arch grass_only
+x 43
+y 8
+end
+arch city_tower
+name Twin Towers
+slaying /wolfsburg/tt/tta1
+hp 1
+sp 18
 x 43
 y 8
 end
@@ -10611,6 +10941,11 @@ x 44
 y 7
 end
 arch grass_only
+x 44
+y 8
+end
+arch city_tower
+name Twin Towers
 x 44
 y 8
 end
@@ -12064,339 +12399,4 @@ arch sea
 x 49
 y 49
 elevation -2096
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 1
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 3
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 5
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 7
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 9
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 11
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 13
-y 13
-end
-arch rowboat
-slaying /wolfsburg/dungeons/piratedung
-hp 28
-sp 19
-x 14
-y 21
-end
-arch rowboat
-slaying world_128_109
-hp 17
-sp 40
-x 14
-y 26
-walk_on 1
-end
-arch barn
-name warehouse
-slaying /wolfsburg/ware1
-hp 1
-sp 1
-x 15
-y 1
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 17
-y 1
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 17
-y 3
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 17
-y 7
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 17
-y 9
-end
-arch barn
-name warehouse
-x 17
-y 11
-end
-arch barn
-name warehouse
-name_pl warehouse
-x 17
-y 13
-end
-arch rowboat
-x 17
-y 23
-end
-arch temple1
-name Temple of Ixalovh
-slaying /wolfsburg/temple/ixalovh
-hp 2
-sp 6
-x 17
-y 38
-end
-arch rowboat
-slaying world_128_109
-hp 15
-sp 26
-x 17
-y 40
-end
-arch city_tower
-name Old Tower
-name_pl Old Tower
-slaying /wolfsburg/magara/tower1/entrance
-hp 4
-sp 12
-x 19
-y 7
-end
-arch barrack_up
-x 19
-y 10
-end
-arch barrack_up
-x 20
-y 7
-end
-arch barrack_up
-x 20
-y 10
-end
-arch church
-name The Eternal Reward
-slaying /wolfsburg/etern_rew
-hp 7
-sp 23
-x 21
-y 13
-end
-arch barrack_up
-x 22
-y 7
-end
-arch castle_a
-name Castle of Magara
-slaying /wolfsburg/magara/castle/floor_1
-hp 1
-sp 1
-x 22
-y 10
-end
-arch longship
-x 22
-y 19
-end
-arch longship
-x 22
-y 21
-end
-arch longship
-x 22
-y 25
-end
-arch barrack_up
-x 23
-y 7
-end
-arch keep
-name west gatehouse
-name_pl west gatehouse
-x 25
-y 1
-end
-arch guild
-name Damned Heretics's Storage Room
-name_pl Damned Heretics's Storage Room
-slaying /wolfsburg/guilds/damned_heretics/storage_room
-hp 1
-sp 10
-x 25
-y 7
-end
-arch barrack_up
-x 25
-y 10
-end
-arch longship
-x 25
-y 22
-end
-arch longship
-x 25
-y 24
-end
-arch tower_a
-name High Tower
-slaying /wolfsburg/eeur/tower1.1
-hp 20
-sp 19
-x 26
-y 10
-end
-arch guild
-name Guild of the Damned Heretics
-slaying /wolfsburg/guilds/damned_heretics/ground
-hp 12
-sp 23
-x 27
-y 14
-end
-arch keep
-name east gatehouse
-name_pl east gatehouse
-x 29
-y 1
-end
-arch guild
-name One-Eyed Mike's Department Store
-slaying /wolfsburg/dept_store_weapon
-sp 1
-x 29
-y 7
-end
-arch big_galleon
-name Island Tours
-name_pl Island Tours
-slaying /world/world_129_107
-hp 22
-sp 18
-x 33
-y 18
-end
-arch big_galleon
-name Island Tours
-name_pl Island Tours
-slaying /world/world_128_107
-hp 19
-sp 23
-x 33
-y 23
-end
-arch prison
-name Wolfsburg Prison
-slaying /wolfsburg/prison
-hp 13
-sp 1
-x 35
-y 1
-end
-arch inn
-name The Red Light District
-slaying /wolfsburg/whorehouse
-hp 1
-sp 1
-x 36
-y 8
-end
-arch inn
-name The Bloody Cutlass
-name_pl The Bloody Cutlass
-slaying /wolfsburg/inns
-hp 1
-sp 1
-x 36
-y 11
-end
-arch big_galleon
-name Island Tours
-name_pl Island Tours
-slaying /world/world_127_109
-hp 21
-sp 11
-x 36
-y 20
-end
-arch barrack_up
-x 39
-y 1
-end
-arch inn
-name Dolphin's Delight
-name_pl Dolphin's Delight
-slaying /wolfsburg/inns
-hp 16
-sp 1
-x 39
-y 11
-end
-arch barrack_up
-x 40
-y 1
-end
-arch church
-name Run-down Church
-slaying /wolfsburg/piratechurch
-hp 5
-sp 14
-x 42
-y 2
-end
-arch big_galleon
-x 42
-y 19
-end
-arch big_galleon
-name to Navar
-name_pl to Navar
-slaying /world/world_122_116
-hp 21
-sp 47
-x 42
-y 24
-end
-arch city_tower
-name Twin Towers
-slaying /wolfsburg/tt/tta1
-hp 1
-sp 18
-x 43
-y 8
-end
-arch city_tower
-name Twin Towers
-x 44
-y 8
 end
