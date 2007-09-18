@@ -4487,6 +4487,10 @@ x 17
 y 36
 elevation -327
 end
+arch rowboat
+x 17
+y 36
+end
 arch sea
 x 17
 y 37
@@ -4820,6 +4824,10 @@ arch sea
 x 18
 y 38
 elevation -1141
+end
+arch s_ship
+x 18
+y 38
 end
 arch sea
 x 18
@@ -12683,12 +12691,4 @@ arch shallow_sea
 x 49
 y 49
 elevation -89
-end
-arch rowboat
-x 17
-y 36
-end
-arch s_ship
-x 18
-y 38
 end

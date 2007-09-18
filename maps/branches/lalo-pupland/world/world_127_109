@@ -2772,6 +2772,14 @@ x 11
 y 14
 elevation -5
 end
+arch rowboat
+name Boat to Treasure Island
+slaying /world/world_129_109
+hp 24
+sp 40
+x 11
+y 14
+end
 arch shallow_sea
 x 11
 y 15
@@ -3733,6 +3741,14 @@ x 15
 y 7
 elevation -10
 end
+arch rowboat
+name Boat to Jungle
+slaying /world/world_129_109
+hp 6
+sp 29
+x 15
+y 7
+end
 arch desert
 x 15
 y 8
@@ -4530,6 +4546,14 @@ x 18
 y 17
 elevation 632
 end
+arch rowboat
+name Connor's rowboat
+slaying /world/world_127_109
+hp 46
+sp 43
+x 18
+y 17
+end
 arch shallow_sea
 x 18
 y 18
@@ -5243,6 +5267,14 @@ y 10
 elevation -323
 end
 arch desert
+x 21
+y 11
+end
+arch rowboat
+name Boat to Wolfsburg
+slaying /world/world_128_109
+hp 35
+sp 21
 x 21
 y 11
 end
@@ -11638,6 +11670,13 @@ x 46
 y 43
 elevation -1
 end
+arch rowboat
+slaying /world/world_127_109
+hp 18
+sp 17
+x 46
+y 43
+end
 arch sea
 x 46
 y 44
@@ -12422,43 +12461,4 @@ arch sea
 x 49
 y 49
 elevation -3348
-end
-arch rowboat
-name Boat to Treasure Island
-slaying /world/world_129_109
-hp 24
-sp 40
-x 11
-y 14
-end
-arch rowboat
-name Boat to Jungle
-slaying /world/world_129_109
-hp 6
-sp 29
-x 15
-y 7
-end
-arch rowboat
-name Connor's rowboat
-slaying /world/world_127_109
-hp 46
-sp 43
-x 18
-y 17
-end
-arch rowboat
-name Boat to Wolfsburg
-slaying /world/world_128_109
-hp 35
-sp 21
-x 21
-y 11
-end
-arch rowboat
-slaying /world/world_127_109
-hp 18
-sp 17
-x 46
-y 43
 end

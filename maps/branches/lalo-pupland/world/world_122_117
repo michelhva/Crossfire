@@ -56,6 +56,13 @@ end
 arch grass
 y 4
 end
+arch church
+name Church of Valriel
+slaying /navar_city/temples/valriel
+hp 9
+sp 27
+y 4
+end
 arch dungeon_magic
 y 5
 end
@@ -309,6 +316,15 @@ x 1
 y 1
 end
 arch grass
+x 1
+y 1
+end
+arch house_up
+name House of Gossip
+name_pl House of Gossip
+slaying /navar_city/city1houses3
+hp 28
+sp 8
 x 1
 y 1
 end
@@ -780,6 +796,14 @@ arch grass
 x 2
 y 14
 end
+arch guild_west
+name Navar Dragon Guild
+slaying /navar_city/misc/dragon_guild
+hp 7
+sp 14
+x 2
+y 14
+end
 arch dungeon_magic
 x 2
 y 15
@@ -977,6 +1001,13 @@ arch dungeon_magic
 x 3
 end
 arch grass
+x 3
+end
+arch a_civic
+name High Court Building
+slaying /navar_city/city1court
+hp 10
+sp 15
 x 3
 end
 arch dungeon_magic
@@ -1697,6 +1728,14 @@ arch grass
 x 5
 y 4
 end
+arch guild_west
+name Central Library
+slaying /navar_city/misc/library
+hp 9
+sp 15
+x 5
+y 4
+end
 arch dungeon_magic
 x 5
 y 5
@@ -1710,6 +1749,14 @@ x 5
 y 6
 end
 arch grass
+x 5
+y 6
+end
+arch l_shop1
+name Museum of Arms
+slaying /navar_city/magara/houses/museum
+hp 4
+sp 18
 x 5
 y 6
 end
@@ -1780,6 +1827,14 @@ x 5
 y 13
 end
 arch brush
+x 5
+y 13
+end
+arch guild_west
+name Guild of the Dreaming Sage
+slaying /navar_city/dreaming_sage/ground
+hp 12
+sp 23
 x 5
 y 13
 end
@@ -3735,6 +3790,15 @@ arch grass
 x 11
 y 7
 end
+arch house_larg_west
+name Gunther's Smithy
+name_pl Gunther's Smithy
+slaying /navar_city/misc/city1smith
+hp 8
+sp 8
+x 11
+y 7
+end
 arch dungeon_magic
 x 11
 y 8
@@ -3974,6 +4038,13 @@ end
 arch grass
 x 12
 end
+arch inn
+name The Frolicing Mermaid
+slaying /navar_city/misc/city1mermaid
+hp 11
+sp 12
+x 12
+end
 arch dungeon_magic
 x 12
 y 1
@@ -3987,6 +4058,15 @@ x 12
 y 2
 end
 arch grass
+x 12
+y 2
+end
+arch farmhouse
+name Traveller's Wayhouse
+name_pl Traveller's Wayhouse
+slaying /navar_city/city1houses3
+hp 28
+sp 22
 x 12
 y 2
 end
@@ -4062,6 +4142,15 @@ arch grass
 x 12
 y 9
 end
+arch bank_west
+name Bank of Skud, Navar Branch
+name_pl Bank of Skud, Navar Branch
+slaying /navar_city/misc/city1bank
+hp 7
+sp 14
+x 12
+y 9
+end
 arch dungeon_magic
 x 12
 y 10
@@ -4075,6 +4164,14 @@ x 12
 y 11
 end
 arch grass
+x 12
+y 11
+end
+arch store_general_west
+name Eddie's Store by the Wall
+slaying /navar_city/misc/city1gen
+hp 1
+sp 1
 x 12
 y 11
 end
@@ -4099,6 +4196,14 @@ x 12
 y 14
 end
 arch grass
+x 12
+y 14
+end
+arch farmhouse
+name A Large house
+slaying /navar_city/magara/houses/large_house
+hp 1
+sp 1
 x 12
 y 14
 end
@@ -5126,6 +5231,14 @@ x 15
 y 31
 elevation 4298
 end
+arch barn2
+name The Old Warehouse
+slaying /navar_city/smugglers_cove/sc_warehouse
+hp 7
+sp 18
+x 15
+y 31
+end
 arch steppe
 x 15
 y 32
@@ -5228,6 +5341,15 @@ arch cobblestones2
 x 16
 y 1
 end
+arch store_armour
+name Olaf's Armor Emporium
+name_pl Olaf's Armor Emporium
+slaying /navar_city/misc/city1armour
+hp 1
+sp 1
+x 16
+y 1
+end
 arch dungeon_magic
 x 16
 y 2
@@ -5293,6 +5415,14 @@ arch cobblestones2
 x 16
 y 7
 end
+arch store_weapons
+name Red's Weapons Bazzar
+slaying /navar_city/misc/city1weapon
+hp 1
+sp 1
+x 16
+y 7
+end
 arch dungeon_magic
 x 16
 y 8
@@ -5318,6 +5448,14 @@ x 16
 y 10
 end
 arch grass
+x 16
+y 10
+end
+arch store_magic_west
+name Wizzo's Magic Shop
+slaying /navar_city/misc/city1magic
+hp 1
+sp 1
 x 16
 y 10
 end
@@ -5585,6 +5723,14 @@ x 17
 y 4
 end
 arch grass
+x 17
+y 4
+end
+arch house_larg_west
+name Ye ol' Home Depote
+slaying /navar_city/misc/buildshop
+hp 6
+sp 10
 x 17
 y 4
 end
@@ -5867,6 +6013,14 @@ arch cobblestones2
 x 18
 y 1
 end
+arch city_tower_west
+name Lighthouse
+slaying /navar_city/light/light1
+hp 1
+sp 11
+x 18
+y 1
+end
 arch dungeon_magic
 x 18
 y 2
@@ -5976,6 +6130,13 @@ x 18
 y 14
 end
 arch grassdark
+x 18
+y 14
+end
+arch s_tower1
+name Spiral Tower
+slaying /navar_city/tower/magetower1
+sp 8
 x 18
 y 14
 end
@@ -6965,6 +7126,11 @@ y 3
 elevation -124
 end
 arch sea
+x 22
+y 4
+end
+arch big_galleon
+name Smugglers Boat
 x 22
 y 4
 end
@@ -13736,170 +13902,4 @@ arch hills_rocky
 x 49
 y 49
 elevation 4739
-end
-arch church
-name Church of Valriel
-slaying /navar_city/temples/valriel
-hp 9
-sp 27
-y 4
-end
-arch house_up
-name House of Gossip
-name_pl House of Gossip
-slaying /navar_city/city1houses3
-hp 28
-sp 8
-x 1
-y 1
-end
-arch guild_west
-name Navar Dragon Guild
-slaying /navar_city/misc/dragon_guild
-hp 7
-sp 14
-x 2
-y 14
-end
-arch a_civic
-name High Court Building
-slaying /navar_city/city1court
-hp 10
-sp 15
-x 3
-end
-arch guild_west
-name Central Library
-slaying /navar_city/misc/library
-hp 9
-sp 15
-x 5
-y 4
-end
-arch l_shop1
-name Museum of Arms
-slaying /navar_city/magara/houses/museum
-hp 4
-sp 18
-x 5
-y 6
-end
-arch guild_west
-name Guild of the Dreaming Sage
-slaying /navar_city/dreaming_sage/ground
-hp 12
-sp 23
-x 5
-y 13
-end
-arch house_larg_west
-name Gunther's Smithy
-name_pl Gunther's Smithy
-slaying /navar_city/misc/city1smith
-hp 8
-sp 8
-x 11
-y 7
-end
-arch inn
-name The Frolicing Mermaid
-slaying /navar_city/misc/city1mermaid
-hp 11
-sp 12
-x 12
-end
-arch farmhouse
-name Traveller's Wayhouse
-name_pl Traveller's Wayhouse
-slaying /navar_city/city1houses3
-hp 28
-sp 22
-x 12
-y 2
-end
-arch bank_west
-name Bank of Skud, Navar Branch
-name_pl Bank of Skud, Navar Branch
-slaying /navar_city/misc/city1bank
-hp 7
-sp 14
-x 12
-y 9
-end
-arch store_general_west
-name Eddie's Store by the Wall
-slaying /navar_city/misc/city1gen
-hp 1
-sp 1
-x 12
-y 11
-end
-arch farmhouse
-name A Large house
-slaying /navar_city/magara/houses/large_house
-hp 1
-sp 1
-x 12
-y 14
-end
-arch barn2
-name The Old Warehouse
-slaying /navar_city/smugglers_cove/sc_warehouse
-hp 7
-sp 18
-x 15
-y 31
-end
-arch store_armour
-name Olaf's Armor Emporium
-name_pl Olaf's Armor Emporium
-slaying /navar_city/misc/city1armour
-hp 1
-sp 1
-x 16
-y 1
-end
-arch store_weapons
-name Red's Weapons Bazzar
-slaying /navar_city/misc/city1weapon
-hp 1
-sp 1
-x 16
-y 7
-end
-arch store_magic_west
-name Wizzo's Magic Shop
-slaying /navar_city/misc/city1magic
-hp 1
-sp 1
-x 16
-y 10
-end
-arch house_larg_west
-name Ye ol' Home Depote
-slaying /navar_city/misc/buildshop
-hp 6
-sp 10
-x 17
-y 4
-end
-arch city_tower_west
-name Lighthouse
-slaying /navar_city/light/light1
-hp 1
-sp 11
-x 18
-y 1
-end
-arch s_tower1
-name Spiral Tower
-slaying /navar_city/tower/magetower1
-sp 8
-x 18
-y 14
-end
-arch big_galleon
-name Smugglers Boat
-x 22
-y 4
 end
