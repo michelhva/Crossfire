@@ -46,26 +46,29 @@ public abstract class ServerConnection extends Thread
 
     private final int port;
 
-    /**
-     * Represents the unconnected status of the client, which is the first to
-     * happen during a normal gaming session.
-     * @since 1.0
-     */
-    public static final int STATUS_UNCONNECTED = 0;
+    public enum Status
+    {
+        /**
+         * Represents the unconnected status of the client, which is the first to
+         * happen during a normal gaming session.
+         * @since 1.0
+         */
+        UNCONNECTED,
 
-    /**
-     * Represents the status of the client that is used during play.
-     * @since 1.0
-     */
-    public static final int STATUS_PLAYING = 1;
+        /**
+         * Represents the status of the client that is used during play.
+         * @since 1.0
+         */
+        PLAYING,
 
-    /**
-     * Represents the status of the client that is displaying a Query dialog.
-     * @since 1.0
-     */
-    public static final int STATUS_QUERY = 2;
+        /**
+         * Represents the status of the client that is displaying a Query dialog.
+         * @since 1.0
+         */
+        QUERY;
+    }
 
-    private int status = STATUS_UNCONNECTED;
+    private Status status = Status.UNCONNECTED;
 
     private final String statusSem = "mystatus_sem";
 
@@ -76,7 +79,7 @@ public abstract class ServerConnection extends Thread
      */
     public void run()
     {
-        setStatus(STATUS_PLAYING);
+        setStatus(Status.PLAYING);
         try
         {
             for (;;)
@@ -86,7 +89,7 @@ public abstract class ServerConnection extends Thread
         }
         catch (final Exception e)
         {
-            setStatus(STATUS_UNCONNECTED);
+            setStatus(Status.UNCONNECTED);
             e.printStackTrace();
             System.exit(0);
         }
@@ -173,7 +176,7 @@ public abstract class ServerConnection extends Thread
      * @param status The new status value.
      * @since 1.0
      */
-    public void setStatus(final int status)
+    public void setStatus(final Status status)
     {
         synchronized(statusSem)
         {
@@ -186,7 +189,7 @@ public abstract class ServerConnection extends Thread
      * @since 1.0
      * @return A value representing the current status.
      */
-    public int getStatus()
+    public Status getStatus()
     {
         synchronized(statusSem)
         {
