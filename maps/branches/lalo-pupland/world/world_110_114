@@ -7711,6 +7711,14 @@ x 28
 y 20
 elevation 3409
 end
+arch stronghold
+name Castle Ra-Gar
+slaying /quests/mcz/castle1
+hp 9
+sp 25
+x 28
+y 20
+end
 arch hills
 x 28
 y 21
@@ -13084,12 +13092,4 @@ arch mountain
 x 49
 y 49
 elevation 6085
-end
-arch stronghold
-name Castle Ra-Gar
-slaying /quests/mcz/castle1
-hp 9
-sp 25
-x 28
-y 20
 end
