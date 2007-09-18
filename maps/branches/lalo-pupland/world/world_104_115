@@ -10988,6 +10988,12 @@ arch cobblestones2
 x 41
 y 28
 end
+arch barn
+name dragon hangar
+name_pl dragon hangar
+x 41
+y 28
+end
 arch dungeon_magic
 x 41
 y 29
@@ -11016,6 +11022,15 @@ arch brush
 x 41
 y 31
 end
+arch store_magic
+name Magic Shop
+name_pl Magic Shop
+slaying /scorn/shops/magicshop
+hp 14
+sp 14
+x 41
+y 31
+end
 arch dungeon_magic
 x 41
 y 32
@@ -11037,6 +11052,13 @@ x 41
 y 34
 end
 arch cobblestones2
+x 41
+y 34
+end
+arch city_tower
+name Friendly Giant's Tower
+slaying /scorn/kar/somehouse
+hp 14
 x 41
 y 34
 end
@@ -11147,6 +11169,13 @@ x 41
 y 44
 end
 arch grass
+x 41
+y 44
+end
+arch stronghold
+slaying /scorn/misc/castle
+hp 11
+sp 20
 x 41
 y 44
 end
@@ -11325,6 +11354,15 @@ x 42
 y 23
 end
 arch cobblestones2
+x 42
+y 23
+end
+arch dragon_exit
+name to Pupland Terminal
+name_pl to Pupland Terminal
+slaying /quests/pupland/terminal
+hp 10
+sp 2
 x 42
 y 23
 end
@@ -11687,6 +11725,10 @@ arch sea1
 x 43
 y 19
 end
+arch longship
+x 43
+y 19
+end
 arch dungeon_magic
 x 43
 y 20
@@ -11763,6 +11805,12 @@ arch cobblestones2
 x 43
 y 28
 end
+arch barn
+name dragon hangar
+name_pl dragon hangar
+x 43
+y 28
+end
 arch dungeon_magic
 x 43
 y 29
@@ -11819,6 +11867,15 @@ arch grass
 x 43
 y 34
 end
+arch guild
+name West Scorn Trademarket
+name_pl West Scorn Trademarket
+slaying /mlab/mlabscrntrd1
+hp 1
+sp 10
+x 43
+y 34
+end
 arch dungeon_magic
 x 43
 y 35
@@ -11864,6 +11921,15 @@ x 43
 y 39
 end
 arch brush
+x 43
+y 39
+end
+arch church
+name Church of Valriel
+name_pl Church of Valriel
+slaying /scorn/temples/valriel
+hp 9
+sp 28
 x 43
 y 39
 end
@@ -12161,6 +12227,15 @@ arch brush
 x 44
 y 31
 end
+arch store_weapons
+name Weapon Shop
+name_pl Weapon shop
+slaying /scorn/shops/weaponshop
+hp 1
+sp 14
+x 44
+y 31
+end
 arch dungeon_magic
 x 44
 y 32
@@ -12198,6 +12273,15 @@ x 44
 y 36
 end
 arch grass
+x 44
+y 36
+end
+arch store_alchemy
+name Alchemy Shop
+name_pl Alchemy Shop
+slaying /scorn/shops/potionshop
+hp 14
+sp 14
 x 44
 y 36
 end
@@ -12625,6 +12709,15 @@ arch brush
 x 45
 y 39
 end
+arch t_house2
+name Temple of Gaea
+name_pl Temple of Gaea
+slaying /scorn/temples/gaea
+hp 12
+sp 18
+x 45
+y 39
+end
 arch dungeon_magic
 x 45
 y 40
@@ -12997,11 +13090,29 @@ arch grass
 x 46
 y 34
 end
+arch barrack_long
+name Barracks
+name_pl Barracks
+slaying /scorn/houses/barracks
+hp 24
+sp 4
+x 46
+y 34
+end
 arch dungeon_magic
 x 46
 y 35
 end
 arch grass
+x 46
+y 35
+end
+arch barrack_long
+name Mess Hall
+name_pl Mess Hall
+slaying /scorn/houses/messhall
+hp 24
+sp 4
 x 46
 y 35
 end
@@ -13010,6 +13121,14 @@ x 46
 y 36
 end
 arch grass
+x 46
+y 36
+end
+arch barrack_up
+name Mercenaries Agency
+slaying /scorn/misc/mercenaries
+hp 6
+sp 15
 x 46
 y 36
 end
@@ -13231,6 +13350,10 @@ arch sea
 x 47
 y 19
 end
+arch s_ship
+x 47
+y 19
+end
 arch dungeon_magic
 x 47
 y 20
@@ -13335,6 +13458,15 @@ arch brush
 x 47
 y 31
 end
+arch store_armour
+name Armour Shop
+name_pl Armour Shop
+slaying /scorn/shops/armourshop
+hp 14
+sp 1
+x 47
+y 31
+end
 arch dungeon_magic
 x 47
 y 32
@@ -13372,6 +13504,14 @@ x 47
 y 36
 end
 arch grass
+x 47
+y 36
+end
+arch store_weapons
+name Scorn's Best Bows
+slaying /scorn/shops/bowshop
+hp 14
+sp 14
 x 47
 y 36
 end
@@ -13640,6 +13780,15 @@ arch cobblestones2
 x 48
 y 24
 end
+arch barn
+name Training Center
+name_pl Training Center
+slaying /scorn/crow/train/train
+hp 4
+sp 17
+x 48
+y 24
+end
 arch dungeon_magic
 x 48
 y 25
@@ -13671,6 +13820,12 @@ end
 arch cobblestones2
 x 48
 y 28
+end
+arch barn
+name unused warehouse
+x 48
+y 28
+elevation 73
 end
 arch dungeon_magic
 x 48
@@ -13769,6 +13924,15 @@ x 48
 y 39
 end
 arch brush
+x 48
+y 39
+end
+arch temple1
+name Temple of Sorig
+name_pl Temple of Sorig
+slaying /scorn/temples/sorig
+hp 8
+sp 15
 x 48
 y 39
 end
@@ -14074,6 +14238,15 @@ arch brush
 x 49
 y 31
 end
+arch barrack_up
+name Food Shop Warehouse
+name_pl Food Shop
+slaying /scorn/shops/foodshop
+hp 2
+sp 14
+x 49
+y 31
+end
 arch dungeon_magic
 x 49
 y 32
@@ -14255,177 +14428,4 @@ end
 arch cwall_2_1_2
 x 49
 y 49
-end
-arch barn
-name dragon hangar
-name_pl dragon hangar
-x 41
-y 28
-end
-arch store_magic
-name Magic Shop
-name_pl Magic Shop
-slaying /scorn/shops/magicshop
-hp 14
-sp 14
-x 41
-y 31
-end
-arch city_tower
-name Friendly Giant's Tower
-slaying /scorn/kar/somehouse
-hp 14
-x 41
-y 34
-end
-arch stronghold
-slaying /scorn/misc/castle
-hp 11
-sp 20
-x 41
-y 44
-end
-arch dragon_exit
-name to Pupland Terminal
-name_pl to Pupland Terminal
-slaying /quests/pupland/terminal
-hp 10
-sp 2
-x 42
-y 23
-end
-arch longship
-x 43
-y 19
-end
-arch barn
-name dragon hangar
-name_pl dragon hangar
-x 43
-y 28
-end
-arch guild
-name West Scorn Trademarket
-name_pl West Scorn Trademarket
-slaying /mlab/mlabscrntrd1
-hp 1
-sp 10
-x 43
-y 34
-end
-arch church
-name Church of Valriel
-name_pl Church of Valriel
-slaying /scorn/temples/valriel
-hp 9
-sp 28
-x 43
-y 39
-end
-arch store_weapons
-name Weapon Shop
-name_pl Weapon shop
-slaying /scorn/shops/weaponshop
-hp 1
-sp 14
-x 44
-y 31
-end
-arch store_alchemy
-name Alchemy Shop
-name_pl Alchemy Shop
-slaying /scorn/shops/potionshop
-hp 14
-sp 14
-x 44
-y 36
-end
-arch t_house2
-name Temple of Gaea
-name_pl Temple of Gaea
-slaying /scorn/temples/gaea
-hp 12
-sp 18
-x 45
-y 39
-end
-arch barrack_long
-name Barracks
-name_pl Barracks
-slaying /scorn/houses/barracks
-hp 24
-sp 4
-x 46
-y 34
-end
-arch barrack_long
-name Mess Hall
-name_pl Mess Hall
-slaying /scorn/houses/messhall
-hp 24
-sp 4
-x 46
-y 35
-end
-arch barrack_up
-name Mercenaries Agency
-slaying /scorn/misc/mercenaries
-hp 6
-sp 15
-x 46
-y 36
-end
-arch s_ship
-x 47
-y 19
-end
-arch store_armour
-name Armour Shop
-name_pl Armour Shop
-slaying /scorn/shops/armourshop
-hp 14
-sp 1
-x 47
-y 31
-end
-arch store_weapons
-name Scorn's Best Bows
-slaying /scorn/shops/bowshop
-hp 14
-sp 14
-x 47
-y 36
-end
-arch barn
-name Training Center
-name_pl Training Center
-slaying /scorn/crow/train/train
-hp 4
-sp 17
-x 48
-y 24
-end
-arch barn
-name unused warehouse
-x 48
-y 28
-elevation 73
-end
-arch temple1
-name Temple of Sorig
-name_pl Temple of Sorig
-slaying /scorn/temples/sorig
-hp 8
-sp 15
-x 48
-y 39
-end
-arch barrack_up
-name Food Shop Warehouse
-name_pl Food Shop
-slaying /scorn/shops/foodshop
-hp 2
-sp 14
-x 49
-y 31
 end

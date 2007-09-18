@@ -206,6 +206,14 @@ arch brush
 y 31
 elevation 4274
 end
+arch guild
+name Scorn Sale Shop
+name_pl Scorn Sale Shop
+slaying /scorn/shops/scorn.sale1
+hp 10
+sp 16
+y 31
+end
 arch dungeon_magic
 y 32
 end
@@ -249,6 +257,14 @@ end
 arch grass
 y 36
 elevation 11542
+end
+arch courthouse
+name City Hall
+name_pl City Hall
+slaying /scorn/misc/cityhall
+hp 13
+sp 26
+y 36
 end
 arch dungeon_magic
 y 37
@@ -544,6 +560,11 @@ x 1
 y 27
 elevation 9
 end
+arch house_up
+x 1
+y 27
+elevation 9
+end
 arch dungeon_magic
 x 1
 y 28
@@ -631,6 +652,15 @@ x 1
 y 35
 end
 arch grass
+x 1
+y 35
+end
+arch house_long
+name Resir's house
+name_pl Resir's house
+slaying /scorn/houses/resir
+hp 24
+sp 4
 x 1
 y 35
 end
@@ -1011,6 +1041,11 @@ x 2
 y 28
 elevation 337
 end
+arch barrack_up
+x 2
+y 28
+elevation 337
+end
 arch dungeon_magic
 x 2
 y 29
@@ -1379,6 +1414,10 @@ arch sea
 x 3
 y 21
 elevation -133
+end
+arch big_galleon
+x 3
+y 21
 end
 arch dungeon_magic
 x 3
@@ -2628,6 +2667,13 @@ y 10
 elevation -84
 no_pass 0
 end
+arch fishboat
+slaying world_105_115
+hp 11
+sp 20
+x 6
+y 10
+end
 arch sea
 x 6
 y 11
@@ -2762,6 +2808,15 @@ x 6
 y 25
 elevation -17
 end
+arch barn
+name Pirates' Arena
+name_pl Pirates' Arena
+slaying /scorn/misc/port_arena
+hp 38
+sp 6
+x 6
+y 25
+end
 arch dungeon_magic
 x 6
 y 26
@@ -2788,6 +2843,10 @@ arch cobblestones2
 x 6
 y 28
 elevation 20
+end
+arch house_up
+x 6
+y 28
 end
 arch dungeon_magic
 x 6
@@ -2819,6 +2878,15 @@ arch brush
 x 6
 y 31
 elevation 4536
+end
+arch store_general
+name Gem Shop
+name_pl Gem Shop
+slaying /scorn/shops/gemshop
+hp 1
+sp 14
+x 6
+y 31
 end
 arch dungeon_magic
 x 6
@@ -3000,6 +3068,15 @@ arch grass
 x 6
 y 48
 elevation 10859
+end
+arch church
+name Undead Church
+name_pl Undead Church
+slaying /scorn/misc/church
+hp 10
+sp 15
+x 6
+y 48
 end
 arch dungeon_magic
 x 6
@@ -3375,6 +3452,15 @@ x 7
 y 45
 elevation 10499
 end
+arch farmhouse
+name Smith's House
+name_pl Smith's House
+slaying /scorn/houses/house1
+hp 10
+sp 14
+x 7
+y 45
+end
 arch dungeon_magic
 x 7
 y 46
@@ -3518,6 +3604,17 @@ x 8
 y 19
 elevation -2256
 end
+arch big_galleon
+name sailing big galleon
+x 8
+y 19
+speed 0.5
+type 2
+container 10000000
+move_type boat
+move_allow walk
+passenger_limit 4
+end
 arch dungeon_magic
 x 8
 y 20
@@ -3535,6 +3632,15 @@ arch sea
 x 8
 y 21
 elevation -406
+end
+arch s_ship
+name to Stoneville
+name_pl to Stoneville
+slaying /world/world_102_127
+hp 43
+sp 13
+x 8
+y 21
 end
 arch dungeon_magic
 x 8
@@ -4017,6 +4123,15 @@ x 9
 y 25
 elevation -48
 end
+arch barn
+name Animal Quarantine
+name_pl Animal Quarantine
+slaying /scorn/cannery/ware1
+hp 19
+sp 36
+x 9
+y 25
+end
 arch dungeon_magic
 x 9
 y 26
@@ -4043,6 +4158,15 @@ arch cobblestones2
 x 9
 y 28
 elevation -9
+end
+arch guild
+name Acme Inc. Building Shop
+name_pl Acme Inc. Building Shop
+slaying /scorn/shops/buildshop
+hp 17
+sp 17
+x 9
+y 28
 end
 arch dungeon_magic
 x 9
@@ -4074,6 +4198,15 @@ arch grass
 x 9
 y 31
 elevation 2125
+end
+arch guild
+name Bank of Skud
+name_pl Bank of Skud
+slaying /scorn/shops/bank
+hp 7
+sp 14
+x 9
+y 31
 end
 arch dungeon_magic
 x 9
@@ -4222,6 +4355,14 @@ arch grass
 x 9
 y 43
 elevation 9490
+end
+arch city_tower
+name Mad Mage's Tower
+slaying /scorn/towers/tower.mad
+hp 7
+sp 13
+x 9
+y 43
 end
 arch dungeon_magic
 x 9
@@ -4527,6 +4668,15 @@ x 10
 y 34
 elevation 2009
 end
+arch barrack_long
+name Apartment Building
+name_pl Apartment Building
+slaying /scorn/taverns/apartments
+hp 13
+sp 3
+x 10
+y 34
+end
 arch dungeon_magic
 x 10
 y 35
@@ -4809,6 +4959,19 @@ x 11
 y 19
 elevation -890
 end
+arch fishboat
+name to shrine
+name_pl to shrine
+slaying world_105_115
+msg
+A nice day for a sail.
+endmsg
+hp 5
+sp 10
+x 11
+y 19
+passenger_limit 2
+end
 arch dungeon_magic
 x 11
 y 20
@@ -4941,6 +5104,15 @@ x 11
 y 31
 elevation 141
 end
+arch church
+name House of Healing
+name_pl House of Healing
+slaying /scorn/misc/HouseofHealing
+hp 10
+sp 33
+x 11
+y 31
+end
 arch dungeon_magic
 x 11
 y 32
@@ -5049,6 +5221,12 @@ arch grass
 x 11
 y 40
 elevation 11883
+end
+arch barrack_long
+name large house
+name_pl large house
+x 11
+y 40
 end
 arch dungeon_magic
 x 11
@@ -5161,6 +5339,15 @@ arch grass
 x 11
 y 48
 elevation 7066
+end
+arch zoo_1
+name The Zoo
+name_pl The Zoo
+slaying /scorn/misc/zoo
+hp 1
+sp 16
+x 11
+y 48
 end
 arch dungeon_magic
 x 11
@@ -5336,6 +5523,15 @@ x 12
 y 25
 elevation -412
 end
+arch barn
+name Mailed Fist's storage room
+name_pl Mailed Fist's storage room
+slaying /scorn/guilds/mailed_fist/storage_room
+hp 1
+sp 10
+x 12
+y 25
+end
 arch dungeon_magic
 x 12
 y 26
@@ -5362,6 +5558,15 @@ arch cobblestones2
 x 12
 y 28
 elevation -141
+end
+arch inn
+name Port Inn
+name_pl Port Inn
+slaying /scorn/taverns/inn2
+hp 4
+sp 2
+x 12
+y 28
 end
 arch dungeon_magic
 x 12
@@ -5424,6 +5629,15 @@ arch grass
 x 12
 y 34
 elevation 4731
+end
+arch t_house1
+name Central Library
+name_pl Central Library
+slaying /scorn/misc/library
+hp 9
+sp 15
+x 12
+y 34
 end
 arch dungeon_magic
 x 12
@@ -5685,6 +5899,10 @@ x 13
 y 20
 elevation -2256
 end
+arch big_galleon
+x 13
+y 20
+end
 arch dungeon_magic
 x 13
 y 21
@@ -5790,6 +6008,14 @@ arch grass
 x 13
 y 31
 elevation 1393
+end
+arch store_magic
+name House of Power
+slaying /scorn/misc/PowerHouse
+hp 10
+sp 33
+x 13
+y 31
 end
 arch dungeon_magic
 x 13
@@ -6133,6 +6359,13 @@ arch sea
 x 14
 y 23
 elevation -2256
+end
+arch tower_a
+name Lighthouse
+name_pl Lighthouse
+x 14
+y 23
+glow_radius 4
 end
 arch dungeon_magic
 x 14
@@ -6606,6 +6839,10 @@ x 15
 y 29
 elevation -108
 end
+arch house_long
+x 15
+y 29
+end
 arch dungeon_magic
 x 15
 y 30
@@ -6663,6 +6900,15 @@ arch grass
 x 15
 y 34
 elevation 4816
+end
+arch fort
+name dragon guild
+name_pl dragon guild
+slaying /scorn/misc/dragon_guild
+hp 7
+sp 15
+x 15
+y 34
 end
 arch dungeon_magic
 x 15
@@ -6726,6 +6972,12 @@ arch grass
 x 15
 y 40
 elevation 6093
+end
+arch barrack_long
+name large house
+name_pl large house
+x 15
+y 40
 end
 arch dungeon_magic
 x 15
@@ -6976,6 +7228,12 @@ x 16
 y 22
 elevation -832
 end
+arch big_galleon
+name old galleon
+name_pl old galleon
+x 16
+y 22
+end
 arch dungeon_magic
 x 16
 y 23
@@ -7076,6 +7334,14 @@ arch grass
 x 16
 y 31
 elevation -1
+end
+arch guild
+name Guild of the Mailed Fist
+slaying /scorn/guilds/mailed_fist/ground
+hp 12
+sp 23
+x 16
+y 31
 end
 arch dungeon_magic
 x 16
@@ -7232,6 +7498,15 @@ arch brush
 x 16
 y 45
 elevation 5401
+end
+arch collesium
+name the ARENA
+name_pl the ARENA
+slaying /scorn/misc/battle_arena/entrance
+hp 11
+sp 24
+x 16
+y 45
 end
 arch dungeon_magic
 x 16
@@ -7876,6 +8151,15 @@ x 18
 y 26
 elevation -2256
 end
+arch big_galleon
+name to Port Joseph
+name_pl to Port Joseph
+slaying /world/world_101_114
+hp 16
+sp 43
+x 18
+y 26
+end
 arch dungeon_magic
 x 18
 y 27
@@ -8017,6 +8301,14 @@ arch grass
 x 18
 y 40
 elevation 8223
+end
+arch house_long
+name Old Mansion
+name_pl Old Mansion
+slaying /scorn/mansion/entrance
+hp 14
+x 18
+y 40
 end
 arch dungeon_magic
 x 18
@@ -8346,6 +8638,15 @@ x 19
 y 31
 elevation 129
 end
+arch prison
+name Prison
+name_pl Prison
+slaying /scorn/anthony/prison
+hp 9
+sp 23
+x 19
+y 31
+end
 arch dungeon_magic
 x 19
 y 32
@@ -8372,6 +8673,15 @@ arch cobblestones2
 x 19
 y 34
 elevation 3490
+end
+arch l_shop1
+name Goth's Tavern
+name_pl Goth's Tavern
+slaying /scorn/taverns/goths
+hp 18
+sp 32
+x 19
+y 34
 end
 arch dungeon_magic
 x 19
@@ -9971,6 +10281,14 @@ x 23
 y 41
 elevation 1773
 end
+arch farmhouse
+slaying /scorn/houses/farmhouse
+hp 11
+sp 9
+x 23
+y 41
+elevation 7844
+end
 arch farmland
 x 23
 y 42
@@ -10722,6 +11040,11 @@ x 26
 y 43
 elevation 1343
 end
+arch barn2
+x 26
+y 43
+elevation 5093
+end
 arch brush
 x 26
 y 44
@@ -10895,6 +11218,10 @@ arch mountain
 x 27
 y 28
 elevation 7037
+end
+arch mountain_2
+x 27
+y 29
 end
 arch mountain
 x 27
@@ -16341,331 +16668,4 @@ arch mountain
 x 49
 y 49
 elevation 5588
-end
-arch guild
-name Scorn Sale Shop
-name_pl Scorn Sale Shop
-slaying /scorn/shops/scorn.sale1
-hp 10
-sp 16
-y 31
-end
-arch courthouse
-name City Hall
-name_pl City Hall
-slaying /scorn/misc/cityhall
-hp 13
-sp 26
-y 36
-end
-arch house_up
-x 1
-y 27
-elevation 9
-end
-arch house_long
-name Resir's house
-name_pl Resir's house
-slaying /scorn/houses/resir
-hp 24
-sp 4
-x 1
-y 35
-end
-arch barrack_up
-x 2
-y 28
-elevation 337
-end
-arch big_galleon
-x 3
-y 21
-end
-arch fishboat
-slaying world_105_115
-hp 11
-sp 20
-x 6
-y 10
-end
-arch barn
-name Pirates' Arena
-name_pl Pirates' Arena
-slaying /scorn/misc/port_arena
-hp 38
-sp 6
-x 6
-y 25
-end
-arch house_up
-x 6
-y 28
-end
-arch store_general
-name Gem Shop
-name_pl Gem Shop
-slaying /scorn/shops/gemshop
-hp 1
-sp 14
-x 6
-y 31
-end
-arch church
-name Undead Church
-name_pl Undead Church
-slaying /scorn/misc/church
-hp 10
-sp 15
-x 6
-y 48
-end
-arch farmhouse
-name Smith's House
-name_pl Smith's House
-slaying /scorn/houses/house1
-hp 10
-sp 14
-x 7
-y 45
-end
-arch big_galleon
-name sailing big galleon
-x 8
-y 19
-speed 0.5
-type 2
-container 10000000
-move_type boat
-move_allow walk
-passenger_limit 4
-end
-arch s_ship
-name to Stoneville
-name_pl to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 13
-x 8
-y 21
-end
-arch barn
-name Animal Quarantine
-name_pl Animal Quarantine
-slaying /scorn/cannery/ware1
-hp 19
-sp 36
-x 9
-y 25
-end
-arch guild
-name Acme Inc. Building Shop
-name_pl Acme Inc. Building Shop
-slaying /scorn/shops/buildshop
-hp 17
-sp 17
-x 9
-y 28
-end
-arch guild
-name Bank of Skud
-name_pl Bank of Skud
-slaying /scorn/shops/bank
-hp 7
-sp 14
-x 9
-y 31
-end
-arch city_tower
-name Mad Mage's Tower
-slaying /scorn/towers/tower.mad
-hp 7
-sp 13
-x 9
-y 43
-end
-arch barrack_long
-name Apartment Building
-name_pl Apartment Building
-slaying /scorn/taverns/apartments
-hp 13
-sp 3
-x 10
-y 34
-end
-arch fishboat
-name to shrine
-name_pl to shrine
-slaying world_105_115
-msg
-A nice day for a sail.
-endmsg
-hp 5
-sp 10
-x 11
-y 19
-passenger_limit 2
-end
-arch church
-name House of Healing
-name_pl House of Healing
-slaying /scorn/misc/HouseofHealing
-hp 10
-sp 33
-x 11
-y 31
-end
-arch barrack_long
-name large house
-name_pl large house
-x 11
-y 40
-end
-arch zoo_1
-name The Zoo
-name_pl The Zoo
-slaying /scorn/misc/zoo
-hp 1
-sp 16
-x 11
-y 48
-end
-arch barn
-name Mailed Fist's storage room
-name_pl Mailed Fist's storage room
-slaying /scorn/guilds/mailed_fist/storage_room
-hp 1
-sp 10
-x 12
-y 25
-end
-arch inn
-name Port Inn
-name_pl Port Inn
-slaying /scorn/taverns/inn2
-hp 4
-sp 2
-x 12
-y 28
-end
-arch t_house1
-name Central Library
-name_pl Central Library
-slaying /scorn/misc/library
-hp 9
-sp 15
-x 12
-y 34
-end
-arch big_galleon
-x 13
-y 20
-end
-arch store_magic
-name House of Power
-slaying /scorn/misc/PowerHouse
-hp 10
-sp 33
-x 13
-y 31
-end
-arch tower_a
-name Lighthouse
-name_pl Lighthouse
-x 14
-y 23
-glow_radius 4
-end
-arch house_long
-x 15
-y 29
-end
-arch fort
-name dragon guild
-name_pl dragon guild
-slaying /scorn/misc/dragon_guild
-hp 7
-sp 15
-x 15
-y 34
-end
-arch barrack_long
-name large house
-name_pl large house
-x 15
-y 40
-end
-arch big_galleon
-name old galleon
-name_pl old galleon
-x 16
-y 22
-end
-arch guild
-name Guild of the Mailed Fist
-slaying /scorn/guilds/mailed_fist/ground
-hp 12
-sp 23
-x 16
-y 31
-end
-arch collesium
-name the ARENA
-name_pl the ARENA
-slaying /scorn/misc/battle_arena/entrance
-hp 11
-sp 24
-x 16
-y 45
-end
-arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
-slaying /world/world_101_114
-hp 16
-sp 43
-x 18
-y 26
-end
-arch house_long
-name Old Mansion
-name_pl Old Mansion
-slaying /scorn/mansion/entrance
-hp 14
-x 18
-y 40
-end
-arch prison
-name Prison
-name_pl Prison
-slaying /scorn/anthony/prison
-hp 9
-sp 23
-x 19
-y 31
-end
-arch l_shop1
-name Goth's Tavern
-name_pl Goth's Tavern
-slaying /scorn/taverns/goths
-hp 18
-sp 32
-x 19
-y 34
-end
-arch farmhouse
-slaying /scorn/houses/farmhouse
-hp 11
-sp 9
-x 23
-y 41
-elevation 7844
-end
-arch barn2
-x 26
-y 43
-elevation 5093
-end
-arch mountain_2
-x 27
-y 29
 end

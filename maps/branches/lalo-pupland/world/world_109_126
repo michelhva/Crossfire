@@ -3389,6 +3389,10 @@ arch jungle_2
 x 13
 y 33
 end
+arch mountain_2
+x 13
+y 34
+end
 arch jungle_2
 x 13
 y 36
@@ -4056,6 +4060,14 @@ x 15
 y 39
 end
 arch grass
+x 15
+y 40
+end
+arch castle_a
+name Sunset Castle
+slaying /lake_country/Sunset_Lake/gatehouse
+hp 1
+sp 8
 x 15
 y 40
 end
@@ -5068,6 +5080,15 @@ x 19
 y 22
 end
 arch river_sw-ne_l
+x 19
+y 22
+end
+arch city_tower
+name Butakis' Elite Training Tower
+name_pl Butakis' Elite Training Tower
+slaying /lake_country/RETower/tower0
+hp 8
+sp 15
 x 19
 y 22
 end
@@ -6124,6 +6145,10 @@ arch mountain
 x 23
 y 16
 end
+arch mountain_2
+x 23
+y 17
+end
 arch fog
 x 23
 y 18
@@ -6639,6 +6664,10 @@ arch wasteland
 x 25
 y 18
 end
+arch mountain_2
+x 25
+y 19
+end
 arch fog
 x 25
 y 20
@@ -7114,6 +7143,10 @@ arch wasteland
 x 27
 y 16
 end
+arch mountain_2
+x 27
+y 17
+end
 arch magic_mouth
 name warning1
 name_pl warning1
@@ -7407,6 +7440,10 @@ endmsg
 x 28
 y 18
 end
+arch mountain_2
+x 28
+y 18
+end
 arch mountain
 x 28
 y 20
@@ -7669,6 +7706,10 @@ y 18
 level 1
 attacktype 1
 end
+arch mountain_2
+x 29
+y 20
+end
 arch jungle_2
 x 29
 y 22
@@ -7882,6 +7923,10 @@ arch mountain
 x 30
 y 14
 end
+arch mountain_2
+x 30
+y 14
+end
 arch mountain
 x 30
 y 15
@@ -7897,6 +7942,10 @@ end
 arch hut
 x 30
 y 17
+end
+arch mountain_2
+x 30
+y 18
 end
 arch jungle_2
 x 30
@@ -8163,6 +8212,10 @@ end
 arch wasteland
 x 31
 y 19
+end
+arch mountain_2
+x 31
+y 20
 end
 arch jungle_2
 x 31
@@ -8628,6 +8681,10 @@ arch mountain2
 x 33
 y 13
 end
+arch mountain_2
+x 33
+y 13
+end
 arch mountain2
 x 33
 y 14
@@ -8655,6 +8712,10 @@ end
 arch mountain
 x 33
 y 20
+end
+arch mountain_2
+x 33
+y 21
 end
 arch mountain
 x 33
@@ -8909,9 +8970,21 @@ arch wasteland
 x 34
 y 16
 end
+arch mountain_2
+x 34
+y 17
+end
 arch mountain
 x 34
 y 19
+end
+arch mountain_2
+x 34
+y 20
+end
+arch mountain_2
+x 34
+y 22
 end
 arch wasteland
 x 34
@@ -9684,6 +9757,15 @@ arch lake
 x 37
 y 40
 end
+arch wizard_tower
+name wizard tower
+name_pl wizard tower
+slaying /lake_country/Mwizard/Mwizard0
+hp 12
+sp 1
+x 37
+y 40
+end
 arch swamp
 x 37
 y 41
@@ -9778,6 +9860,10 @@ end
 arch mountain2
 x 38
 y 11
+end
+arch mountain_2
+x 38
+y 12
 end
 arch mountain2
 x 38
@@ -10019,6 +10105,15 @@ x 39
 y 17
 end
 arch mountain
+x 39
+y 18
+end
+arch wizard_tower
+name wizard tower
+name_pl wizard tower
+slaying /lake_country/Mwizard/Mwizard0
+hp 12
+sp 1
 x 39
 y 18
 end
@@ -12555,99 +12650,4 @@ arch hills
 x 49
 y 49
 elevation 3822
-end
-arch mountain_2
-x 13
-y 34
-end
-arch castle_a
-name Sunset Castle
-slaying /lake_country/Sunset_Lake/gatehouse
-hp 1
-sp 8
-x 15
-y 40
-end
-arch city_tower
-name Butakis' Elite Training Tower
-name_pl Butakis' Elite Training Tower
-slaying /lake_country/RETower/tower0
-hp 8
-sp 15
-x 19
-y 22
-end
-arch mountain_2
-x 23
-y 17
-end
-arch mountain_2
-x 25
-y 19
-end
-arch mountain_2
-x 27
-y 17
-end
-arch mountain_2
-x 28
-y 18
-end
-arch mountain_2
-x 29
-y 20
-end
-arch mountain_2
-x 30
-y 14
-end
-arch mountain_2
-x 30
-y 18
-end
-arch mountain_2
-x 31
-y 20
-end
-arch mountain_2
-x 33
-y 13
-end
-arch mountain_2
-x 33
-y 21
-end
-arch mountain_2
-x 34
-y 17
-end
-arch mountain_2
-x 34
-y 20
-end
-arch mountain_2
-x 34
-y 22
-end
-arch wizard_tower
-name wizard tower
-name_pl wizard tower
-slaying /lake_country/Mwizard/Mwizard0
-hp 12
-sp 1
-x 37
-y 40
-end
-arch mountain_2
-x 38
-y 12
-end
-arch wizard_tower
-name wizard tower
-name_pl wizard tower
-slaying /lake_country/Mwizard/Mwizard0
-hp 12
-sp 1
-x 39
-y 18
 end

@@ -9315,6 +9315,14 @@ x 37
 y 28
 elevation 1494
 end
+arch city_tower
+name Warriors' Tower
+slaying /quests/mak/MainFloor
+hp 15
+sp 48
+x 37
+y 28
+end
 arch brush
 x 37
 y 29
@@ -12407,12 +12415,4 @@ arch hills_rocky
 x 49
 y 49
 elevation 3009
-end
-arch city_tower
-name Warriors' Tower
-slaying /quests/mak/MainFloor
-hp 15
-sp 48
-x 37
-y 28
 end

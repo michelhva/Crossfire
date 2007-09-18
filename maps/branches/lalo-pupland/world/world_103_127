@@ -767,6 +767,13 @@ arch cobblestones2
 x 3
 y 9
 end
+arch barn
+name dragon hangar
+slaying /dragonisland/hangar
+hp 15
+x 3
+y 9
+end
 arch cobblestones2
 x 3
 y 10
@@ -2071,6 +2078,14 @@ x 8
 y 14
 end
 arch grass
+x 8
+y 15
+end
+arch guild
+name Adventurers Guild
+slaying /dragonisland/advguild
+hp 15
+sp 31
 x 8
 y 15
 end
@@ -3514,6 +3529,11 @@ x 14
 y 10
 end
 arch grass
+x 14
+y 10
+end
+arch tower_a
+name Tall Tower
 x 14
 y 10
 end
@@ -12080,24 +12100,4 @@ arch deep_sea
 x 49
 y 49
 elevation -10744
-end
-arch barn
-name dragon hangar
-slaying /dragonisland/hangar
-hp 15
-x 3
-y 9
-end
-arch guild
-name Adventurers Guild
-slaying /dragonisland/advguild
-hp 15
-sp 31
-x 8
-y 15
-end
-arch tower_a
-name Tall Tower
-x 14
-y 10
 end
