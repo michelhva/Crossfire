@@ -815,7 +815,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
                     final String text = new String(packet, pos, packet.length-pos, "UTF-8");
 
-                    setStatus(STATUS_QUERY);
+                    setStatus(Status.QUERY);
                     final CrossfireCommandQueryEvent evt = new CrossfireCommandQueryEvent(this, text, flags);
                     for (final CrossfireQueryListener listener : mylisteners_query)
                     {

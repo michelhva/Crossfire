@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.ServerConnection;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Font;
@@ -63,7 +63,7 @@ public class GUICommandText extends GUIText implements KeyListener
         case KeyEvent.VK_ENTER:
             switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
             {
-            case CrossfireServerConnection.STATUS_PLAYING:
+            case PLAYING:
                 if (mytext.startsWith("bind "))
                 {
                     String cmdl = mytext.substring(5);
@@ -86,8 +86,8 @@ public class GUICommandText extends GUIText implements KeyListener
                 setActive(false);
                 break;
 
-            case CrossfireServerConnection.STATUS_QUERY:
-                ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(CrossfireServerConnection.STATUS_PLAYING);
+            case QUERY:
+                ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
                 try
                 {
                     ((JXCWindow)e.getSource()).getCrossfireServerConnection().sendReply(mytext);
