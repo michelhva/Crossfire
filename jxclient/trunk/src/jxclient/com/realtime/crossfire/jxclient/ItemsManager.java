@@ -39,7 +39,7 @@ public class ItemsManager
     /**
      * Maps location to list of items.
      */
-    private static final Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
+    private final Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
 
     /**
      * Maps item tags to items. The map contains all items currently known to
