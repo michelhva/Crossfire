@@ -22,12 +22,23 @@ package com.realtime.crossfire.jxclient;
 import java.util.EventListener;
 
 /**
+ * Interface for listeners for changes of the current player object.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public interface CrossfirePlayerListener extends EventListener
 {
-    public void commandPlayerReceived(CrossfireCommandPlayerEvent evt);
+    /**
+     * A player object has been added.
+     *
+     * @param player The added player object.
+     */
+    void playerAdded(CfPlayer player);
+
+    /**
+     * A player object has been removed.
+     *
+     * @param player The removed player object.
+     */
+    void playerRemoved(CfPlayer player);
 }
