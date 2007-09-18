@@ -1,14 +1,13 @@
 arch map
 name cave
+width 20
+height 14
+enter_x 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 18:58:12 1999
 endmsg
-hp 1
-sp 0
-x 20
-y 14
 end
 arch jungle_2
 end
@@ -215,6 +214,10 @@ x 2
 y 2
 end
 arch dungeon_magic
+x 2
+y 2
+end
+arch gaelotroll
 x 2
 y 2
 end
@@ -802,6 +805,44 @@ arch unholy_ground
 x 8
 y 5
 end
+arch golem_necro
+name Ironman
+x 8
+y 5
+carrying 273000
+arch dragon_mail
+end
+arch DShieldms
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_talisman
+end
+arch staff
+end
+arch rod_heavy
+end
+arch rod_heavy
+end
+arch bonecrusher
+end
+arch high_boots
+end
+arch bracers_ac
+end
+arch full_helmet
+end
+end
 arch jungle_2
 x 8
 y 6
@@ -1029,6 +1070,11 @@ end
 arch jungle_2
 x 12
 y 7
+end
+arch Greater_Demon
+x 12
+y 7
+speed_left -1.600000
 end
 arch jungle_2
 x 12
@@ -1497,51 +1543,4 @@ The demons are trapped here forever.
 endmsg
 x 19
 y 13
-end
-arch gaelotroll
-x 2
-y 2
-end
-arch golem_necro
-name Ironman
-x 8
-y 5
-carrying 273000
-arch dragon_mail
-end
-arch DShieldms
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_talisman
-end
-arch staff
-end
-arch rod_heavy
-end
-arch rod_heavy
-end
-arch bonecrusher
-end
-arch high_boots
-end
-arch bracers_ac
-end
-arch full_helmet
-end
-end
-arch Greater_Demon
-x 12
-y 7
-speed_left -1.600000
 end

@@ -1,14 +1,14 @@
 arch map
-region scorn
 name Tannery
-msg
-Creator: CF Java Map Editor
-Date:    12/29/2002
-endmsg
+region scorn
 width 13
 height 11
 enter_x 5
 enter_y 10
+msg
+Creator: CF Java Map Editor
+Date:    12/29/2002
+endmsg
 end
 arch dirtfloor
 end
@@ -107,104 +107,104 @@ x 1
 y 3
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch serp_skin
-no_pick 1
-identified 1
 x 1
 y 3
+no_pick 1
+identified 1
 end
 arch dirtfloor
 x 1
 y 4
 end
 arch ggate_closed
-damned 1
-no_magic 1
 x 1
 y 4
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 1
@@ -338,22 +338,22 @@ x 3
 y 1
 end
 arch rock
-no_pass 0
-can_roll 0
 x 3
 y 1
+no_pass 0
+can_roll 0
 end
 arch quarto
+title Marksmanship
 msg
 Gloves of Marksmanship can be made with
 gloves, 5 arrows of accuracy, and a bottle
 of mineral oil.
 endmsg
-title Marksmanship
-no_pick 1
-identified 1
 x 3
 y 1
+no_pick 1
+identified 1
 end
 arch dirtfloor
 x 3
@@ -428,10 +428,10 @@ x 3
 y 9
 end
 arch flagstone
-no_magic 1
-damned 1
 x 3
 y 10
+no_magic 1
+damned 1
 end
 arch wall_2_1_2
 x 3
@@ -452,25 +452,25 @@ x 4
 y 1
 end
 arch table_3
-no_pick 1
 x 4
 y 1
+no_pick 1
 end
 arch saw
-no_pick 1
 x 4
 y 1
+no_pick 1
 end
 arch flagstone
 x 4
 y 2
 end
 arch oilskin
+x 4
+y 2
 no_pick 1
 identified 1
 startequip 1
-x 4
-y 2
 end
 arch flagstone
 x 4
@@ -501,36 +501,36 @@ x 4
 y 6
 end
 arch flagstone
-no_magic 1
-damned 1
 x 4
 y 7
+no_magic 1
+damned 1
 end
 arch fireplace
 x 4
 y 7
 end
 arch flagstone
-no_magic 1
-damned 1
 x 4
 y 8
-end
-arch flagstone
 no_magic 1
 damned 1
+end
+arch flagstone
 x 4
 y 9
+no_magic 1
+damned 1
 end
 arch brazier
 x 4
 y 9
 end
 arch flagstone
-no_magic 1
-damned 1
 x 4
 y 10
+no_magic 1
+damned 1
 end
 arch wall_1_3
 x 4
@@ -547,14 +547,14 @@ x 5
 y 1
 end
 arch table_3
-no_pick 1
 x 5
 y 1
+no_pick 1
 end
 arch dead_neko
-no_pick 1
 x 5
 y 1
+no_pick 1
 end
 arch flagstone
 x 5
@@ -569,11 +569,11 @@ Neko scarves are the latest rage at court.
 If you don't want to be an apprentice, then read the books!
 endmsg
 exp 1
+x 5
+y 2
 monster 0
 friendly 1
 stand_still 1
-x 5
-y 2
 end
 arch flagstone
 x 5
@@ -592,76 +592,76 @@ x 5
 y 5
 end
 arch pedestal
-invisible 1
-connected 11
 x 5
 y 5
+invisible 1
+connected 11
 end
 arch flagstone
 x 5
 y 6
 end
 arch gate_closed_1
+x 5
+y 6
 connected 11
 no_magic 1
 damned 1
-x 5
-y 6
 end
 arch flagstone
-no_magic 1
-damned 1
 x 5
 y 7
+no_magic 1
+damned 1
 end
 arch check_floor
 slaying tanner_house1
-connected 11
 x 5
 y 7
+connected 11
 end
 arch flagstone
-no_magic 1
-damned 1
 x 5
 y 8
+no_magic 1
+damned 1
 end
 arch trigger_marker
+slaying tanner_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying tanner_house1
-connected 10
-speed 1.0
 food 504
 x 5
 y 8
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 5
 y 8
+connected 10
 end
 arch flagstone
-no_magic 1
-damned 1
 x 5
 y 9
-end
-arch flagstone
 no_magic 1
 damned 1
+end
+arch flagstone
 x 5
 y 10
+no_magic 1
+damned 1
 end
 arch oakdoor
+slaying /world/world_105_115
 face odoor_2.111
 hp 11
 sp 39
-slaying /world/world_105_115
 x 5
 y 10
 end
@@ -676,14 +676,14 @@ x 6
 y 1
 end
 arch table_3
-no_pick 1
 x 6
 y 1
+no_pick 1
 end
 arch dagger
-no_pick 1
 x 6
 y 1
+no_pick 1
 end
 arch flagstone
 x 6
@@ -718,10 +718,10 @@ x 6
 y 6
 end
 arch flagstone
-no_magic 1
-damned 1
 x 6
 y 7
+no_magic 1
+damned 1
 end
 arch fireplace
 x 6
@@ -732,20 +732,20 @@ x 6
 y 8
 end
 arch flagstone
-no_magic 1
-damned 1
 x 6
 y 9
+no_magic 1
+damned 1
 end
 arch brazier
 x 6
 y 9
 end
 arch flagstone
-no_magic 1
-damned 1
 x 6
 y 10
+no_magic 1
+damned 1
 end
 arch wall_1_4
 x 6
@@ -762,22 +762,22 @@ x 7
 y 1
 end
 arch rock
-no_pass 0
-can_roll 0
 x 7
 y 1
+no_pass 0
+can_roll 0
 end
 arch quarto
+title Minor Protection
 msg
 A cloak of minor protection can be
 manufactured by adding a balm of
 aethereality to a cloak.
 endmsg
-title Minor Protection
-no_pick 1
-identified 1
 x 7
 y 1
+no_pick 1
+identified 1
 end
 arch dirtfloor
 x 7
@@ -852,10 +852,10 @@ x 7
 y 9
 end
 arch flagstone
-no_magic 1
-damned 1
 x 7
 y 10
+no_magic 1
+damned 1
 end
 arch wall_2_1_2
 x 7
@@ -930,8 +930,8 @@ arch platinum_converter
 name Buy Cloaks (4pp)
 name_pl Buy Cloaks (4pp)
 other_arch cloak
-food 4
 sp 1
+food 4
 x 8
 y 7
 end
@@ -943,8 +943,8 @@ arch platinum_converter
 name Buy Gloves (2pp)
 name_pl Buy Gloves (2pp)
 other_arch gloves
-food 2
 sp 1
+food 2
 x 8
 y 8
 end
@@ -975,18 +975,18 @@ x 9
 y 1
 end
 arch neko
-sleep 0
 x 9
 y 1
+sleep 0
 end
 arch dirtfloor
 x 9
 y 2
 end
 arch neko
-sleep 0
 x 9
 y 2
+sleep 0
 end
 arch dirtfloor
 x 9
@@ -1005,10 +1005,10 @@ x 9
 y 4
 end
 arch ggate_closed
-damned 1
-no_magic 1
 x 9
 y 4
+no_magic 1
+damned 1
 end
 arch dirtfloor
 x 9

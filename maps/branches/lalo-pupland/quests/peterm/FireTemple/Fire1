@@ -904,6 +904,15 @@ arch pstone_1
 x 3
 y 29
 end
+arch dragon
+Wis 1
+x 3
+y 29
+carrying 100
+arch key2
+slaying firedoor2
+end
+end
 arch pstone_1
 x 3
 y 30
@@ -3322,6 +3331,10 @@ x 15
 y 12
 end
 arch pstone_1
+x 15
+y 13
+end
+arch pentagram_111
 x 15
 y 13
 end
@@ -6886,17 +6899,4 @@ end
 arch dun7
 x 31
 y 31
-end
-arch dragon
-Wis 1
-x 3
-y 29
-carrying 100
-arch key2
-slaying firedoor2
-end
-end
-arch pentagram_111
-x 15
-y 13
 end

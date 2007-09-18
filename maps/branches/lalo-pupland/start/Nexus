@@ -1959,6 +1959,10 @@ y 11
 no_magic 1
 damned 1
 end
+arch pentagram_111
+x 11
+y 11
+end
 arch tile_white_floor
 x 11
 y 12
@@ -4343,8 +4347,4 @@ name Void
 x 24
 y 24
 blocksview 0
-end
-arch pentagram_111
-x 11
-y 11
 end

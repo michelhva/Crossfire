@@ -651,6 +651,85 @@ arch random_wealth
 x 3
 y 21
 end
+arch dragonman
+name Ice Dragonmaster
+Int 7
+hp 5500
+maxhp 5500
+maxsp 70
+exp 200000
+dam 20
+x 3
+y 21
+level 25
+attacktype 17
+resist_magic 30
+resist_fire -100
+resist_cold 100
+carrying 15100
+arch frostbrand
+name Winterblade
+Con 2
+sp 1
+dam 21
+attacktype 272
+resist_fire 35
+resist_electricity -50
+resist_cold 40
+path_attuned 4
+material 0
+value 250000
+weight 15000
+magic 5
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch abil_icestorm
+end
+arch key2
+slaying IceDragonKey
+end
+end
 arch pstone_2
 x 3
 y 22
@@ -742,6 +821,19 @@ arch pstone_2
 x 4
 y 4
 end
+arch chinese_dragon
+name Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 4
+y 4
+speed -0.300000
+level 20
+end
 arch pstone_2
 x 4
 y 5
@@ -785,6 +877,19 @@ end
 arch pstone_2
 x 4
 y 15
+end
+arch chinese_dragon
+name Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 4
+y 15
+speed -0.300000
+level 20
 end
 arch pstone_2
 x 4
@@ -1766,6 +1871,19 @@ arch pstone_2
 x 10
 y 10
 end
+arch chinese_dragon
+name Ancient dragon
+hp 4000
+maxhp 4000
+maxsp 60
+exp 100000
+dam 30
+ac -12
+x 10
+y 10
+speed -0.300000
+level 20
+end
 arch pstone_2
 x 10
 y 11
@@ -2646,122 +2764,4 @@ end
 arch blocked
 x 15
 y 29
-end
-arch dragonman
-name Ice Dragonmaster
-Int 7
-hp 5500
-maxhp 5500
-maxsp 70
-exp 200000
-dam 20
-x 3
-y 21
-level 25
-attacktype 17
-resist_magic 30
-resist_fire -100
-resist_cold 100
-carrying 15100
-arch frostbrand
-name Winterblade
-Con 2
-sp 1
-dam 21
-attacktype 272
-resist_fire 35
-resist_electricity -50
-resist_cold 40
-path_attuned 4
-material 0
-value 250000
-weight 15000
-magic 5
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch abil_icestorm
-end
-arch key2
-slaying IceDragonKey
-end
-end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 4
-y 4
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 4
-y 15
-speed -0.300000
-level 20
-end
-arch chinese_dragon
-name Ancient dragon
-hp 4000
-maxhp 4000
-maxsp 60
-exp 100000
-dam 30
-ac -12
-x 10
-y 10
-speed -0.300000
-level 20
 end

@@ -1131,6 +1131,11 @@ arch dungeon_floor
 x 10
 y 4
 end
+arch giant
+name Master Torturer
+x 10
+y 4
+end
 arch dungeon_floor
 x 10
 y 5
@@ -1759,9 +1764,4 @@ end
 arch awall_2_2_4
 x 15
 y 15
-end
-arch giant
-name Master Torturer
-x 10
-y 4
 end

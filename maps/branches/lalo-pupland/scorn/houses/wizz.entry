@@ -1,14 +1,16 @@
 arch map
-region scorn
 name wizz
+swap_time 3600
+region scorn
+width 16
+height 16
+enter_x 14
+enter_y 7
 msg
 Creator: Bjoern Helfesrieder
 Email: helfesri@igd.fhg.de
 Date: Sat Jan  6 13:59:55 1996
 endmsg
-hp 14
-sp 7
-value 3600
 end
 arch dungeon_floor
 end
@@ -1315,8 +1317,6 @@ x 11
 y 12
 end
 arch pedestal
-msg
-endmsg
 x 11
 y 12
 invisible 1

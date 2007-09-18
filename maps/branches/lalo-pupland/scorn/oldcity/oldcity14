@@ -2773,6 +2773,15 @@ arch pstone_1
 x 11
 y 20
 end
+arch behemoth
+name sad creature
+hp 200
+maxhp 200
+x 11
+y 20
+speed 0.100000
+speed_left -0.240000
+end
 arch pstone_1
 x 11
 y 21
@@ -5152,13 +5161,4 @@ end
 arch rock
 x 19
 y 39
-end
-arch behemoth
-name sad creature
-hp 200
-maxhp 200
-x 11
-y 20
-speed 0.100000
-speed_left -0.240000
 end

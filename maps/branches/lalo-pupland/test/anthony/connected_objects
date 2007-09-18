@@ -1,14 +1,14 @@
 arch map
 name gate_tests
+width 12
+height 14
+enter_x 12
+enter_y 8
 msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 21 16:48:56 1998
 endmsg
-hp 12
-sp 8
-x 12
-y 14
 end
 arch sign_e
 name Boulders
@@ -64,24 +64,24 @@ Magic Mouths...
 These handle/trigger/button are each
 connected to a seperate magic mouth to
 check how `connected mouths' work.
-Particularly to try and avoid having 
+Particularly to try and avoid having
 the mouth repeat itself.
 --
 Results...
  * The mouth is triggered whenever
    1/ Player steps on magic mouth
    2/ On any connected event weather
-      that is a on, off or a trigger 
+      that is a on, off or a trigger
    3/ A player `applys' a button!
    4/ A player walks on any button
       weather or not the button itself
       activates! This includes plate
       buttons!
  * Result 2 means a button in a cascade
-   will always trigger a mouth at least 
+   will always trigger a mouth at least
    twice! Once when `token' rolls on
    and again when it rolls off. It will
-   remain so unless we can get a 
+   remain so unless we can get a
    ``trigger button'' (or alturnative).
  * A mouth can be heard ANYWHERE on the
    map when triggered (via connection?)
@@ -335,7 +335,7 @@ Boulder Bounce...
 This shows that if you have a button
 under a boulder in say a cascade, and
 the boulder can't `roll' then it will
-bounce on and off the button. 
+bounce on and off the button.
 --
 We can see this in this case as a magic
 mouth will ``mouth off'' everytime
@@ -553,7 +553,7 @@ arch sign_w
 name Trigger Gates
 msg
 Trigger Gates...
-* On event (any event, including 
+* On event (any event, including
   handle/button off) will open the
   gate and start (or restart) a timer.
 * Gate automatically closes when no

@@ -1,14 +1,14 @@
 arch map
-region pupland
 name cave4
+difficulty 12
+region pupland
+width 19
+height 19
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  8 05:22:23 1996
 endmsg
-x 19
-y 19
-level 12
 end
 arch flagstone
 end
@@ -209,7 +209,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 9
 attack_movement 7
@@ -218,9 +217,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_magic
 x 1
@@ -263,7 +262,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 13
 attack_movement 7
@@ -272,9 +270,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dungeon_magic
 x 1
@@ -309,7 +307,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 1
 y 16
 attack_movement 7
@@ -318,9 +315,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 1
@@ -503,7 +500,7 @@ y 1
 end
 arch sign
 msg
-Lab: Weapon Research Group. 
+Lab: Weapon Research Group.
 endmsg
 x 3
 y 1
@@ -634,7 +631,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 3
 y 17
 attack_movement 7
@@ -643,9 +639,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 3
@@ -677,7 +673,7 @@ arch locked_door2
 slaying 908978
 msg
 You need the labo. key to open this
-door. 
+door.
 endmsg
 x 4
 y 2
@@ -715,7 +711,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 5
 attack_movement 7
@@ -724,9 +719,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dun2
 x 4
@@ -749,7 +744,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 4
 y 7
 attack_movement 7
@@ -758,9 +752,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 4
@@ -801,7 +795,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 4
 y 12
 level 10
@@ -809,14 +802,14 @@ type 0
 attacktype 7
 carrying 12000
 randomitems none
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 arch bow
 name enhanced bow
 Str 1
@@ -1119,7 +1112,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 6
 y 17
 attack_movement 7
@@ -1128,9 +1120,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 6
@@ -1289,7 +1281,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 5
 attack_movement 7
@@ -1298,9 +1289,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch dun2
 x 8
@@ -1323,7 +1314,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 8
 y 7
 attack_movement 7
@@ -1332,9 +1322,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 8
@@ -1426,7 +1416,6 @@ exp 800
 dam 30
 wc 0
 ac -1
-armour 25
 x 9
 y 2
 speed 0.050000
@@ -1434,14 +1423,14 @@ level 10
 type 0
 attacktype 7
 carrying 6000
-run_away 15
 monster 1
+run_away 15
 can_cast_spell 1
 can_use_scroll 1
-can_use_wand 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 arch axe_2
 name enhanced axe
 Str 2
@@ -1508,7 +1497,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 9
 y 10
 attack_movement 7
@@ -1517,9 +1505,9 @@ type 0
 carrying 9000
 monster 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 arch quarterstaff
 name enhanced staff
 Con -20
@@ -1572,7 +1560,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 9
 y 17
 attack_movement 7
@@ -1581,9 +1568,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 9
@@ -1848,7 +1835,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 12
 y 5
 attack_movement 7
@@ -1857,9 +1843,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 12
@@ -1886,7 +1872,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 12
 y 7
 attack_movement 7
@@ -1895,9 +1880,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 12
@@ -1948,17 +1933,17 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 12
 y 14
 speed 1.000000
 level 10
 type 0
 carrying 5000
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 arch nunchacu_1
 name enhanced nunchacu
 Dex 2
@@ -1995,7 +1980,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 12
 y 17
 attack_movement 7
@@ -2004,9 +1988,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 12
@@ -2143,8 +2127,8 @@ end
 arch magic_mouth
 msg
 You hear some voice,
-  "Enhanced Axe raises your Str, 
-   but it drains your Dex..." 
+  "Enhanced Axe raises your Str,
+   but it drains your Dex..."
 endmsg
 x 14
 y 2
@@ -2390,7 +2374,6 @@ maxsp 200
 exp 1000
 dam 20
 ac -2
-armour 28
 x 15
 y 17
 attack_movement 7
@@ -2399,9 +2382,9 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-can_use_wand 1
 can_use_armour 0
 can_use_weapon 0
+armour 1
 end
 arch flagstone
 x 15
@@ -2458,17 +2441,17 @@ exp 800
 dam 32
 wc -1
 ac -1
-armour 25
 x 16
 y 6
 speed 0.050000
 level 10
 type 0
 carrying 300000
-run_away 15
 monster 1
+run_away 15
 can_use_armour 0
 can_use_weapon 0
+armour 25
 arch hammer_2
 name enhanced hammer
 dam 50

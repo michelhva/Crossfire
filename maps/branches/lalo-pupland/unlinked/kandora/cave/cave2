@@ -1,14 +1,13 @@
 arch map
 name cave
+width 20
+height 14
+enter_x 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 18:58:12 1999
 endmsg
-hp 1
-sp 0
-x 20
-y 14
 end
 arch permanent_lava
 end
@@ -127,6 +126,28 @@ end
 arch permanent_lava
 x 1
 y 5
+end
+arch big_demon
+name Mr. Ugly
+x 1
+y 5
+carrying 25000
+arch firebrand
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch bracers_ac
+end
 end
 arch permanent_lava
 x 1
@@ -520,6 +541,10 @@ arch permanent_lava
 x 6
 y 3
 end
+arch dragonman
+x 6
+y 3
+end
 arch permanent_lava
 x 6
 y 4
@@ -657,6 +682,37 @@ end
 arch unholy_ground
 x 8
 y 9
+end
+arch EDK
+x 8
+y 9
+carrying 131500
+arch random_spells
+end
+arch random_spells
+end
+arch random_spells
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_scroll
+end
+arch random_talisman
+end
+arch deathbringer
+end
+arch rod_heavy
+end
+arch rod_heavy
+end
+arch DShields
+end
+arch dragon_mail
+end
+arch girdle_dam
+end
 end
 arch unholy_ground
 x 8
@@ -988,6 +1044,10 @@ arch dungeon_magic
 x 14
 y 6
 end
+arch big_elec
+x 14
+y 6
+end
 arch dungeon_magic
 x 14
 y 7
@@ -1149,6 +1209,10 @@ arch dungeon_magic
 x 17
 y 4
 end
+arch big_elec
+x 17
+y 4
+end
 arch dungeon_magic
 x 17
 y 5
@@ -1302,69 +1366,4 @@ end
 arch swall_2_2_4
 x 19
 y 13
-end
-arch big_demon
-name Mr. Ugly
-x 1
-y 5
-carrying 25000
-arch firebrand
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch bracers_ac
-end
-end
-arch dragonman
-x 6
-y 3
-end
-arch EDK
-x 8
-y 9
-carrying 131500
-arch random_spells
-end
-arch random_spells
-end
-arch random_spells
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_scroll
-end
-arch random_talisman
-end
-arch deathbringer
-end
-arch rod_heavy
-end
-arch rod_heavy
-end
-arch DShields
-end
-arch dragon_mail
-end
-arch girdle_dam
-end
-end
-arch big_elec
-x 14
-y 6
-end
-arch big_elec
-x 17
-y 4
 end

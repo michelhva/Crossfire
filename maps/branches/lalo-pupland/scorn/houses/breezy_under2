@@ -1,17 +1,17 @@
 arch map
-region scorn
 name Under Breezy Acres
+difficulty 3
+region scorn
+darkness 3
+width 30
+height 30
+enter_x 1
+enter_y 1
 msg
 Creator: Avion
 CF Java Map Editor
 Date:    5/11/2003
 endmsg
-width 30
-height 30
-enter_x 1
-enter_y 1
-difficulty 3
-darkness 3
 end
 arch dungeon_floor
 end
@@ -218,9 +218,9 @@ arch magic_mouth
 msg
 Smells like goblins...
 endmsg
-connected 10
 x 1
 y 2
+connected 10
 end
 arch dungeon_floor
 x 1
@@ -404,9 +404,9 @@ arch magic_mouth
 msg
 Aaaaoooooooo!
 endmsg
-connected 10
 x 2
 y 1
+connected 10
 end
 arch dungeon_floor
 x 2
@@ -416,9 +416,9 @@ arch magic_mouth
 msg
 You hear echos of orc laughter.
 endmsg
-connected 10
 x 2
 y 2
+connected 10
 end
 arch dungeon_floor
 x 2
@@ -705,9 +705,9 @@ x 4
 y 2
 end
 arch trigger
-connected 1
 x 4
 y 2
+connected 1
 end
 arch dungeon_floor
 x 4
@@ -856,18 +856,18 @@ x 5
 y 3
 end
 arch grate_closed_2
-connected 1
 x 5
 y 3
+connected 1
 end
 arch dungeon_floor
 x 5
 y 4
 end
 arch grate_closed_2
-connected 1
 x 5
 y 4
+connected 1
 end
 arch dungeon_floor
 x 5
@@ -1008,9 +1008,9 @@ x 6
 y 2
 end
 arch trigger
-connected 1
 x 6
 y 2
+connected 1
 end
 arch dungeon_floor
 x 6
@@ -1457,18 +1457,18 @@ x 8
 y 24
 end
 arch trigger
-connected 20
 x 8
 y 24
+connected 20
 end
 arch dungeon_floor
 x 8
 y 25
 end
 arch gnoll
-sleep 0
 x 8
 y 25
+sleep 0
 end
 arch dungeon_floor
 x 8
@@ -1609,9 +1609,9 @@ x 9
 y 19
 end
 arch igate_closed_2
-connected 20
 x 9
 y 19
+connected 20
 end
 arch dungeon_floor
 x 9
@@ -1634,9 +1634,9 @@ x 9
 y 22
 end
 arch igate_closed_2
-connected 20
 x 9
 y 22
+connected 20
 end
 arch dungeon_floor
 x 9
@@ -1659,9 +1659,9 @@ x 9
 y 25
 end
 arch igate_closed_2
-connected 20
 x 9
 y 25
+connected 20
 end
 arch dungeon_floor
 x 9
@@ -1916,9 +1916,9 @@ x 11
 y 16
 end
 arch igate_closed_1
-connected 25
 x 11
 y 16
+connected 25
 end
 arch dungeon_floor
 x 11
@@ -1941,14 +1941,14 @@ x 11
 y 21
 end
 arch firewall
-invisible 1
-blocksview 0
 dam 7
-level 3
-connected 27
-speed 0.0
 x 11
 y 21
+speed 0.0
+level 3
+invisible 1
+connected 27
+blocksview 0
 end
 arch dungeon_floor
 x 11
@@ -2081,9 +2081,9 @@ x 12
 y 16
 end
 arch igate_closed_1
-connected 25
 x 12
 y 16
+connected 25
 end
 arch dungeon_floor
 x 12
@@ -2130,9 +2130,9 @@ x 12
 y 27
 end
 arch igate_closed_1
-connected 15
 x 12
 y 27
+connected 15
 end
 arch dungeon_floor
 x 12
@@ -2229,9 +2229,9 @@ x 13
 y 16
 end
 arch igate_closed_1
-connected 25
 x 13
 y 16
+connected 25
 end
 arch dungeon_floor
 x 13
@@ -2249,11 +2249,11 @@ arch magic_mouth
 msg
 SHREEEEEEIIIIIIKKKKKKKK!
 endmsg
+x 13
+y 20
 connected 31
 walk_on 0
 fly_on 0
-x 13
-y 20
 end
 arch dungeon_floor
 x 13
@@ -2264,30 +2264,30 @@ x 13
 y 21
 end
 arch trigger
+x 13
+y 21
 type 93
 connected 31
-x 13
-y 21
 end
 arch dungeon_floor
 x 13
 y 22
 end
 arch trigger
+x 13
+y 22
 type 93
 connected 26
-x 13
-y 22
 end
 arch dungeon_floor
 x 13
 y 23
 end
 arch trigger
-type 93
-connected 27
 x 13
 y 23
+type 93
+connected 27
 end
 arch dungeon_floor
 x 13
@@ -2356,9 +2356,9 @@ x 14
 y 4
 end
 arch pedestal
-connected 2
 x 14
 y 4
+connected 2
 end
 arch generate_orc
 x 14
@@ -2417,9 +2417,9 @@ x 14
 y 15
 end
 arch trigger
-connected 25
 x 14
 y 15
+connected 25
 end
 arch dungeon_floor
 x 14
@@ -2450,30 +2450,30 @@ x 14
 y 21
 end
 arch trigger
-type 93
-connected 32
 x 14
 y 21
+type 93
+connected 32
 end
 arch dungeon_floor
 x 14
 y 22
 end
 arch trigger
+x 14
+y 22
 type 93
 connected 15
-x 14
-y 22
 end
 arch dungeon_floor
 x 14
 y 23
 end
 arch trigger
-type 93
-connected 30
 x 14
 y 23
+type 93
+connected 30
 end
 arch dungeon_floor
 x 14
@@ -2530,9 +2530,9 @@ x 15
 y 2
 end
 arch grate_closed_2
-connected 3
 x 15
 y 2
+connected 3
 end
 arch dungeon_floor
 x 15
@@ -2555,9 +2555,9 @@ x 15
 y 5
 end
 arch grate_closed_2
-connected 3
 x 15
 y 5
+connected 3
 end
 arch dungeon_floor
 x 15
@@ -2680,30 +2680,30 @@ x 15
 y 21
 end
 arch trigger
-type 93
-connected 33
 x 15
 y 21
+type 93
+connected 33
 end
 arch dungeon_floor
 x 15
 y 22
 end
 arch trigger
+x 15
+y 22
 type 93
 connected 25
-x 15
-y 22
 end
 arch dungeon_floor
 x 15
 y 23
 end
 arch trigger
-type 93
-connected 20
 x 15
 y 23
+type 93
+connected 20
 end
 arch dungeon_floor
 x 15
@@ -2714,14 +2714,14 @@ x 15
 y 25
 end
 arch firewall
-invisible 1
-blocksview 0
 dam 7
-level 3
-connected 27
-speed 0.0
 x 15
 y 25
+speed 0.0
+level 3
+invisible 1
+connected 27
+blocksview 0
 end
 arch dungeon_floor
 x 15
@@ -2758,9 +2758,9 @@ x 16
 y 1
 end
 arch trigger
-connected 3
 x 16
 y 1
+connected 3
 end
 arch dungeon_floor
 x 16
@@ -2827,10 +2827,10 @@ x 16
 y 13
 end
 arch trigger
-type 93
-connected 5
 x 16
 y 13
+type 93
+connected 5
 end
 arch dungeon_floor
 x 16
@@ -2880,6 +2880,10 @@ arch dungeon_floor
 x 16
 y 19
 end
+arch mine_secret_1_1
+x 16
+y 19
+end
 arch dungeon_floor
 x 16
 y 20
@@ -2913,9 +2917,9 @@ x 16
 y 27
 end
 arch igate_closed_1
-connected 15
 x 16
 y 27
+connected 15
 end
 arch dungeon_floor
 x 16
@@ -3195,9 +3199,9 @@ x 18
 y 16
 end
 arch grate_closed_1
-connected 7
 x 18
 y 16
+connected 7
 end
 arch magic_mouth
 msg
@@ -3208,9 +3212,9 @@ x 18
 y 17
 end
 arch button_small
-connected 15
 x 18
 y 17
+connected 15
 end
 arch dungeon_floor
 x 18
@@ -3224,9 +3228,9 @@ arch note
 msg
 I believe this cell is haunted...
 endmsg
-level 1
 x 18
 y 18
+level 1
 end
 arch dungeon_floor
 x 18
@@ -3257,9 +3261,9 @@ x 18
 y 22
 end
 arch igate_closed_2
-connected 15
 x 18
 y 22
+connected 15
 end
 arch dungeon_floor
 x 18
@@ -3282,9 +3286,9 @@ x 18
 y 25
 end
 arch igate_closed_2
-connected 15
 x 18
 y 25
+connected 15
 end
 arch dungeon_floor
 x 18
@@ -3441,9 +3445,9 @@ x 19
 y 20
 end
 arch trigger
-connected 15
 x 19
 y 20
+connected 15
 end
 arch dungeon_floor
 x 19
@@ -3564,10 +3568,10 @@ x 20
 y 12
 end
 arch button_small
-invisible 1
-connected 15
 x 20
 y 12
+invisible 1
+connected 15
 end
 arch dungeon_floor
 x 20
@@ -3784,10 +3788,10 @@ x 21
 y 14
 end
 arch button_small
-invisible 1
-connected 15
 x 21
 y 14
+invisible 1
+connected 15
 end
 arch dungeon_floor
 x 21
@@ -3972,9 +3976,9 @@ x 22
 y 17
 end
 arch trigger
-connected 5
 x 22
 y 17
+connected 5
 end
 arch goblin
 x 22
@@ -4035,23 +4039,23 @@ end
 arch teleporter
 hp 9
 sp 6
-connected 2
-speed 0.0
 x 22
 y 28
+speed 0.0
+connected 2
 end
 arch button_small
-connected 3
 x 22
 y 28
+connected 3
 end
 arch teleporter
 hp 13
 sp 24
-connected 30
-speed 0.0
 x 22
 y 29
+speed 0.0
+connected 30
 end
 arch random_treasure
 x 22
@@ -4306,9 +4310,9 @@ x 24
 y 16
 end
 arch grate_closed_1
-connected 5
 x 24
 y 16
+connected 5
 end
 arch dungeon_floor
 x 24
@@ -4385,10 +4389,10 @@ end
 arch teleporter
 hp 14
 sp 8
-connected 33
-speed 0.0
 x 24
 y 29
+speed 0.0
+connected 33
 end
 arch generate_bat
 x 24
@@ -4563,10 +4567,10 @@ end
 arch teleporter
 hp 8
 sp 27
-connected 33
-speed 0.0
 x 25
 y 29
+speed 0.0
+connected 33
 end
 arch generate_bat
 x 25
@@ -4895,17 +4899,17 @@ end
 arch teleporter
 hp 14
 sp 18
-connected 32
-speed 0.0
 x 27
 y 29
+speed 0.0
+connected 32
 end
 arch ghost
 name Ned
 exp 50
-sleep 0
 x 27
 y 29
+sleep 0
 end
 arch dungeon_floor
 x 28
@@ -4999,10 +5003,10 @@ x 28
 y 13
 end
 arch trigger
-type 93
-connected 7
 x 28
 y 13
+type 93
+connected 7
 end
 arch dungeon_floor
 x 28
@@ -5325,16 +5329,12 @@ end
 arch teleporter
 hp 13
 sp 18
-connected 26
-speed 0.0
 x 29
 y 29
+speed 0.0
+connected 26
 end
 arch snake
 x 29
 y 29
-end
-arch mine_secret_1_1
-x 16
-y 19
 end

@@ -1,12 +1,13 @@
 arch map
+name <unnamed>
 region pupland
+width 15
+height 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Jul 12 09:12:29 1996
 endmsg
-x 15
-y 15
 end
 arch blocked
 end
@@ -1109,7 +1110,7 @@ y 4
 carrying 150
 arch note
 msg
-The Great Thief - M.F. 
+The Great Thief - M.F.
 endmsg
 end
 arch note

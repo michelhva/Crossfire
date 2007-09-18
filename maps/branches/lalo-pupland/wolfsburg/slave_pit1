@@ -7508,6 +7508,13 @@ arch dirtfloor
 x 32
 y 37
 end
+arch cobra
+hp 125
+maxhp 125
+exp 250
+x 32
+y 37
+end
 arch dirtfloor
 x 32
 y 38
@@ -9005,11 +9012,4 @@ end
 arch dun12
 x 39
 y 39
-end
-arch cobra
-hp 125
-maxhp 125
-exp 250
-x 32
-y 37
 end

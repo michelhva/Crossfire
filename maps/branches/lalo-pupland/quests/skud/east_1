@@ -2644,6 +2644,12 @@ arch marble
 x 13
 y 13
 end
+arch cobra
+hp 400
+maxhp 400
+x 13
+y 13
+end
 arch marble
 x 13
 y 14
@@ -2800,6 +2806,12 @@ arch marble
 x 14
 y 13
 end
+arch cobra
+hp 400
+maxhp 400
+x 14
+y 13
+end
 arch marble
 x 14
 y 14
@@ -2935,6 +2947,12 @@ x 15
 y 12
 end
 arch marble
+x 15
+y 13
+end
+arch cobra
+hp 400
+maxhp 400
 x 15
 y 13
 end
@@ -4424,6 +4442,10 @@ arch marble
 x 23
 y 6
 end
+arch dragon
+x 23
+y 6
+end
 arch marble
 x 23
 y 7
@@ -4654,7 +4676,15 @@ arch marble
 x 24
 y 7
 end
+arch dragon
+x 24
+y 7
+end
 arch marble
+x 24
+y 8
+end
+arch dragon
 x 24
 y 8
 end
@@ -7688,34 +7718,4 @@ end
 arch mountain2
 x 39
 y 29
-end
-arch cobra
-hp 400
-maxhp 400
-x 13
-y 13
-end
-arch cobra
-hp 400
-maxhp 400
-x 14
-y 13
-end
-arch cobra
-hp 400
-maxhp 400
-x 15
-y 13
-end
-arch dragon
-x 23
-y 6
-end
-arch dragon
-x 24
-y 7
-end
-arch dragon
-x 24
-y 8
 end

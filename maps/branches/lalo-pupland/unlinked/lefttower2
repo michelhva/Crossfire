@@ -1,5 +1,7 @@
 arch map
 name lefttower2
+width 16
+height 16
 msg
 This map's old name is kundi_area/quest/lefttower2
 Nothing linked to it, and the exits it have doesn't exist.
@@ -229,13 +231,13 @@ x 2
 y 7
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 2
 y 7
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 2
@@ -246,13 +248,13 @@ x 2
 y 9
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 2
 y 9
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 2
@@ -263,13 +265,13 @@ x 2
 y 11
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 2
 y 11
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 2
@@ -280,13 +282,13 @@ x 2
 y 13
 end
 arch fighter
-unaggressive 0
 name mercenary lieutenant
 hp 350
 exp 3500
 x 2
 y 13
 speed 0.450000
+unaggressive 0
 end
 arch afloor_right
 x 2
@@ -372,13 +374,13 @@ x 3
 y 13
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 3
 y 13
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 3
@@ -543,7 +545,6 @@ x 5
 y 2
 end
 arch fighter
-unaggressive 0
 name mercenary captain
 hp 500
 exp 6000
@@ -551,6 +552,7 @@ x 5
 y 2
 speed 0.500000
 carrying 100
+unaggressive 0
 arch key2
 slaying armour_weapon
 end
@@ -640,13 +642,13 @@ x 5
 y 13
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 5
 y 13
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 5
@@ -892,13 +894,13 @@ x 7
 y 13
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 7
 y 13
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 7
@@ -1142,13 +1144,13 @@ x 9
 y 13
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 9
 y 13
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 9
@@ -1198,13 +1200,13 @@ x 10
 y 7
 end
 arch fighter
-unaggressive 0
 name mercenary lieutenant
 hp 350
 exp 3500
 x 10
 y 7
 speed 0.450000
+unaggressive 0
 end
 arch afloor_right
 x 10
@@ -1233,13 +1235,13 @@ x 10
 y 10
 end
 arch fighter
-unaggressive 0
 name mercenary lieutenant
 hp 350
 exp 3500
 x 10
 y 10
 speed 0.450000
+unaggressive 0
 end
 arch afloor_right
 x 10
@@ -1285,13 +1287,13 @@ x 11
 y 2
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 11
 y 2
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 11
@@ -1338,13 +1340,13 @@ x 11
 y 13
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 11
 y 13
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 11
@@ -1449,13 +1451,13 @@ x 13
 y 2
 end
 arch fighter
-unaggressive 0
 name mercenary lieutenant
 hp 350
 exp 3500
 x 13
 y 2
 speed 0.450000
+unaggressive 0
 end
 arch afloor_right
 x 13
@@ -1466,13 +1468,13 @@ x 13
 y 4
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 13
 y 4
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 13
@@ -1483,13 +1485,13 @@ x 13
 y 6
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 13
 y 6
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 13
@@ -1500,13 +1502,13 @@ x 13
 y 8
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 13
 y 8
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 13
@@ -1517,13 +1519,13 @@ x 13
 y 10
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 13
 y 10
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 13
@@ -1534,26 +1536,26 @@ x 13
 y 12
 end
 arch fighter
-unaggressive 0
 name skilled mercenary
 hp 250
 exp 2500
 x 13
 y 12
 speed 0.400000
+unaggressive 0
 end
 arch afloor_right
 x 13
 y 13
 end
 arch fighter
-unaggressive 0
 name mercenary lieutenant
 hp 350
 exp 3500
 x 13
 y 13
 speed 0.450000
+unaggressive 0
 end
 arch afloor_right
 x 13

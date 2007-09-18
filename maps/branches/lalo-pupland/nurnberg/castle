@@ -1,13 +1,13 @@
 arch map
-region nurnberg
 name castle
+region nurnberg
+width 24
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Mar  2 03:13:53 1996
 endmsg
-x 24
-y 17
 end
 arch cobblestones2
 end
@@ -1425,8 +1425,8 @@ end
 arch pedestal_trigger
 x 11
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch afloor_right
 x 11
@@ -1439,14 +1439,14 @@ end
 arch igateTrg1
 x 11
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch pedestal_trigger
 x 11
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 11
@@ -1549,7 +1549,7 @@ Watch your mouth, punk!
 Yes, I'm the mayor of Nurnberg.
 Do you like my city?
 @match *
-I'm Bauer, the mayor of this city. 
+I'm Bauer, the mayor of this city.
 endmsg
 hp 180
 x 12
@@ -1589,8 +1589,8 @@ end
 arch pedestal_trigger
 x 12
 y 10
-protected 1
 connected 1
+protected 1
 end
 arch afloor_right
 x 12
@@ -1603,14 +1603,14 @@ end
 arch igateTrg1
 x 12
 y 11
-protected 1
 connected 1
+protected 1
 end
 arch pedestal_trigger
 x 12
 y 12
-protected 1
 connected 1
+protected 1
 end
 arch cobblestones2
 x 12

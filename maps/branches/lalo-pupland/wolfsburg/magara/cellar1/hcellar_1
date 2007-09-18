@@ -1,7 +1,8 @@
 arch map
+name <unnamed>
 region wolfsburg
-x 20
-y 25
+width 20
+height 25
 end
 arch small_stones
 end
@@ -1434,6 +1435,10 @@ arch small_stones
 x 10
 y 2
 end
+arch giant
+x 10
+y 2
+end
 arch small_stones
 x 10
 y 3
@@ -2753,8 +2758,4 @@ end
 arch cave22
 x 19
 y 24
-end
-arch giant
-x 10
-y 2
 end

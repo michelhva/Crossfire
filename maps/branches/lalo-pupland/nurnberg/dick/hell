@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name hell
+difficulty 15
+region nurnberg
+width 28
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 21:25:23 1996
 endmsg
-x 28
-y 32
-level 15
 end
 arch dungeon_floor
 end
@@ -1194,6 +1194,14 @@ arch dungeon_magic
 x 4
 y 5
 end
+arch big_elec
+x 4
+y 5
+carrying 100
+arch key2
+slaying 1
+end
+end
 arch dungeon_magic
 x 4
 y 6
@@ -1293,6 +1301,14 @@ end
 arch dungeon_magic
 x 4
 y 19
+end
+arch gaelotroll
+x 4
+y 19
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_magic
 x 4
@@ -1804,7 +1820,7 @@ end
 arch sign
 msg
 Room of Comet:
- Password to escape from the room is 
+ Password to escape from the room is
  "kasdjuFkuGngauG"
 
 endmsg
@@ -1990,6 +2006,14 @@ end
 arch dungeon_magic
 x 7
 y 5
+end
+arch baslic
+x 7
+y 5
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_magic
 x 7
@@ -3076,6 +3100,17 @@ arch dungeon_magic
 x 10
 y 23
 end
+arch big_dragon
+x 10
+y 23
+carrying 200
+arch key2
+slaying 1
+end
+arch key2
+slaying 1
+end
+end
 arch dungeon_magic
 x 10
 y 24
@@ -3183,6 +3218,14 @@ end
 arch afloor_right
 x 11
 y 5
+end
+arch chinese_dragon
+x 11
+y 5
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_magic
 x 11
@@ -3299,6 +3342,14 @@ end
 arch dungeon_magic
 x 11
 y 20
+end
+arch titan
+x 11
+y 20
+carrying 100
+arch key2
+slaying 1
+end
 end
 arch dungeon_magic
 x 11
@@ -4510,7 +4561,7 @@ y 24
 end
 arch magic_mouth
 msg
-Treasure Room 
+Treasure Room
 endmsg
 x 15
 y 24
@@ -4533,7 +4584,7 @@ arch locked_door1
 slaying treasure_death
 msg
 You need the Treasure Key to open this
-door. 
+door.
 endmsg
 x 15
 y 25
@@ -5348,7 +5399,7 @@ Be careful to the mover.
 
 Data:
 --- Dave ----
-level: 100 
+level: 100
 Str  : 100
 Dex  : 100
 Con  : 100
@@ -5358,7 +5409,7 @@ Int  : 100
 hp   : 30000
 exp  : 1000
 wc   : -100
-ac   : -100 
+ac   : -100
 endmsg
 x 18
 y 7
@@ -7870,55 +7921,4 @@ end
 arch wwall_2_2_4
 x 27
 y 31
-end
-arch big_elec
-x 4
-y 5
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch gaelotroll
-x 4
-y 19
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch baslic
-x 7
-y 5
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch big_dragon
-x 10
-y 23
-carrying 200
-arch key2
-slaying 1
-end
-arch key2
-slaying 1
-end
-end
-arch chinese_dragon
-x 11
-y 5
-carrying 100
-arch key2
-slaying 1
-end
-end
-arch titan
-x 11
-y 20
-carrying 100
-arch key2
-slaying 1
-end
 end

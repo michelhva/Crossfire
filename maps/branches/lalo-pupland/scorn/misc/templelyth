@@ -1,14 +1,14 @@
 arch map
 name templelyth
 region scorn
+width 15
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 16 07:14:29 1997
 Altar to level 120 20050527 (cvstry3)
 endmsg
-width 15
-height 16
 end
 arch grass
 end
@@ -429,9 +429,9 @@ x 4
 y 7
 end
 arch bookshelf
-carrying 300
 x 4
 y 7
+carrying 300
 arch scroll
 msg
 Lythander is the guide of elves, giving
@@ -562,9 +562,9 @@ x 5
 y 10
 end
 arch fountain
-speed_left -1.600000
 x 5
 y 10
+speed_left -1.600000
 end
 arch grass
 x 5
@@ -575,9 +575,9 @@ x 5
 y 12
 end
 arch fountain
-speed_left -1.600000
 x 5
 y 12
+speed_left -1.600000
 end
 arch grass
 x 5
@@ -699,9 +699,9 @@ x 7
 y 3
 end
 arch altar_lythander
-level 120
 x 7
 y 3
+level 120
 end
 arch cobblestones2
 x 7
@@ -920,9 +920,9 @@ x 9
 y 10
 end
 arch fountain
-speed_left -1.600000
 x 9
 y 10
+speed_left -1.600000
 end
 arch grass
 x 9
@@ -933,9 +933,9 @@ x 9
 y 12
 end
 arch fountain
-speed_left -1.600000
 x 9
 y 12
+speed_left -1.600000
 end
 arch grass
 x 9

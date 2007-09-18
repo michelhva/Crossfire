@@ -1,12 +1,12 @@
 arch map
 name c
+width 15
+height 13
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Fri Jan 15 08:46:56 1999
 endmsg
-x 15
-y 13
 end
 arch goldfloor
 end
@@ -73,9 +73,9 @@ arch sign
 name happy sign
 msg
 You should be at least 15th level to
-complete the quest.  Newbies can look, 
+complete the quest.  Newbies can look,
 but heed Tim's warning!  Note: any
-persons resembling  real or ficticious 
+persons resembling  real or ficticious
 people is purely coincidental...
 endmsg
 x 1
@@ -632,7 +632,7 @@ arch diploma
 name happy diploma
 msg
 Congratutions! You are now a chartered
-accountant. 
+accountant.
 endmsg
 x 7
 y 4
@@ -882,7 +882,7 @@ name Polly the Parrot
 msg
 @match *
 Oh, I'm just resting.  Know where I
-can find a talking slug? 
+can find a talking slug?
 endmsg
 x 9
 y 8

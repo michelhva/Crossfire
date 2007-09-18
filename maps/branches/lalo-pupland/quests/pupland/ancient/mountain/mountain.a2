@@ -1,13 +1,14 @@
 arch map
+name <unnamed>
+difficulty 5
 region ancientpupland
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 28 21:23:21 1996
 endmsg
-x 32
-y 32
-level 5
 end
 arch mountain2
 no_pass 1

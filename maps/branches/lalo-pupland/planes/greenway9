@@ -2905,6 +2905,11 @@ arch grass
 x 14
 y 13
 end
+arch unicorn
+x 14
+y 13
+sleep 0
+end
 arch brush
 x 14
 y 14
@@ -3204,6 +3209,10 @@ arch woods_2
 x 15
 y 37
 end
+arch troll
+x 15
+y 37
+end
 arch woods_2
 x 15
 y 38
@@ -4537,6 +4546,10 @@ arch woods
 x 21
 y 44
 end
+arch troll
+x 21
+y 44
+end
 arch tree
 x 21
 y 45
@@ -4920,6 +4933,10 @@ x 23
 y 40
 end
 arch woods_2
+x 23
+y 41
+end
+arch troll
 x 23
 y 41
 end
@@ -5870,6 +5887,11 @@ arch grass
 x 28
 y 26
 end
+arch giant
+x 28
+y 26
+can_see_in_dark 1
+end
 arch grass
 x 28
 y 27
@@ -6428,6 +6450,10 @@ x 31
 y 15
 end
 arch tree
+x 31
+y 16
+end
+arch behemoth
 x 31
 y 16
 end
@@ -10258,30 +10284,4 @@ end
 arch woods
 x 49
 y 49
-end
-arch unicorn
-x 14
-y 13
-sleep 0
-end
-arch troll
-x 15
-y 37
-end
-arch troll
-x 21
-y 44
-end
-arch troll
-x 23
-y 41
-end
-arch giant
-x 28
-y 26
-can_see_in_dark 1
-end
-arch behemoth
-x 31
-y 16
 end

@@ -2897,6 +2897,10 @@ arch woodfloor
 x 14
 y 8
 end
+arch dragon
+x 14
+y 8
+end
 arch woodfloor
 x 14
 y 9
@@ -3068,6 +3072,10 @@ x 15
 y 1
 end
 arch woodfloor
+x 15
+y 2
+end
+arch troll
 x 15
 y 2
 end
@@ -3496,6 +3504,10 @@ x 17
 y 10
 end
 arch woodfloor
+x 17
+y 11
+end
+arch dragon
 x 17
 y 11
 end
@@ -6061,16 +6073,4 @@ end
 arch cwall_2_2_4
 x 29
 y 29
-end
-arch dragon
-x 14
-y 8
-end
-arch troll
-x 15
-y 2
-end
-arch dragon
-x 17
-y 11
 end

@@ -1,5 +1,8 @@
 arch map
+name <unnamed>
 region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -9,31 +12,23 @@ end
 arch permanent_lava
 end
 arch blocked
-msg
-endmsg
 end
 arch permanent_lava
 y 1
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch permanent_lava
 y 2
 end
 arch blocked
-msg
-endmsg
 y 2
 end
 arch permanent_lava
 y 3
 end
 arch blocked
-msg
-endmsg
 y 3
 end
 arch permanent_lava
@@ -106,16 +101,12 @@ arch permanent_lava
 y 15
 end
 arch blocked
-msg
-endmsg
 y 15
 end
 arch permanent_lava
 x 1
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch permanent_lava
@@ -242,8 +233,6 @@ arch permanent_lava
 x 2
 end
 arch blocked
-msg
-endmsg
 x 2
 end
 arch permanent_lava
@@ -554,8 +543,6 @@ x 4
 y 15
 end
 arch blocked
-msg
-endmsg
 x 4
 y 15
 end
@@ -678,8 +665,6 @@ x 5
 y 14
 end
 arch blocked
-msg
-endmsg
 x 5
 y 14
 end
@@ -688,8 +673,6 @@ x 5
 y 15
 end
 arch blocked
-msg
-endmsg
 x 5
 y 15
 end
@@ -697,8 +680,6 @@ arch permanent_lava
 x 6
 end
 arch blocked
-msg
-endmsg
 x 6
 end
 arch permanent_lava
@@ -706,8 +687,6 @@ x 6
 y 1
 end
 arch blocked
-msg
-endmsg
 x 6
 y 1
 end
@@ -816,8 +795,6 @@ x 6
 y 14
 end
 arch blocked
-msg
-endmsg
 x 6
 y 14
 end
@@ -826,8 +803,6 @@ x 6
 y 15
 end
 arch blocked
-msg
-endmsg
 x 6
 y 15
 end
@@ -922,8 +897,6 @@ x 7
 y 15
 end
 arch blocked
-msg
-endmsg
 x 7
 y 15
 end
@@ -1014,8 +987,6 @@ x 8
 y 15
 end
 arch blocked
-msg
-endmsg
 x 8
 y 15
 end
@@ -1098,8 +1069,6 @@ x 9
 y 15
 end
 arch blocked
-msg
-endmsg
 x 9
 y 15
 end
@@ -1195,8 +1164,6 @@ x 10
 y 15
 end
 arch blocked
-msg
-endmsg
 x 10
 y 15
 end
@@ -1262,7 +1229,7 @@ four DRAGONS have the keys.
 
 @match *
 ...help me. I captured by Rufto the
-wizard. 
+wizard.
 
 
 
@@ -1327,8 +1294,6 @@ x 11
 y 15
 end
 arch blocked
-msg
-endmsg
 x 11
 y 15
 end
@@ -1336,8 +1301,6 @@ arch permanent_lava
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch permanent_lava
@@ -1345,8 +1308,6 @@ x 12
 y 1
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
@@ -1443,8 +1404,6 @@ x 12
 y 15
 end
 arch blocked
-msg
-endmsg
 x 12
 y 15
 end
@@ -1452,8 +1411,6 @@ arch permanent_lava
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch permanent_lava
@@ -1461,8 +1418,6 @@ x 13
 y 1
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
@@ -1471,8 +1426,6 @@ x 13
 y 2
 end
 arch blocked
-msg
-endmsg
 x 13
 y 2
 end
@@ -1549,8 +1502,6 @@ x 13
 y 14
 end
 arch blocked
-msg
-endmsg
 x 13
 y 14
 end
@@ -1559,8 +1510,6 @@ x 13
 y 15
 end
 arch blocked
-msg
-endmsg
 x 13
 y 15
 end
@@ -1568,8 +1517,6 @@ arch permanent_lava
 x 14
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch permanent_lava
@@ -1577,8 +1524,6 @@ x 14
 y 1
 end
 arch blocked
-msg
-endmsg
 x 14
 y 1
 end
@@ -1587,8 +1532,6 @@ x 14
 y 2
 end
 arch blocked
-msg
-endmsg
 x 14
 y 2
 end
@@ -1597,8 +1540,6 @@ x 14
 y 3
 end
 arch blocked
-msg
-endmsg
 x 14
 y 3
 end
@@ -1667,8 +1608,6 @@ x 14
 y 13
 end
 arch blocked
-msg
-endmsg
 x 14
 y 13
 end
@@ -1677,8 +1616,6 @@ x 14
 y 14
 end
 arch blocked
-msg
-endmsg
 x 14
 y 14
 end
@@ -1687,8 +1624,6 @@ x 14
 y 15
 end
 arch blocked
-msg
-endmsg
 x 14
 y 15
 end
@@ -1696,8 +1631,6 @@ arch permanent_lava
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch permanent_lava
@@ -1705,8 +1638,6 @@ x 15
 y 1
 end
 arch blocked
-msg
-endmsg
 x 15
 y 1
 end
@@ -1715,8 +1646,6 @@ x 15
 y 2
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
@@ -1725,8 +1654,6 @@ x 15
 y 3
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
@@ -1735,8 +1662,6 @@ x 15
 y 4
 end
 arch blocked
-msg
-endmsg
 x 15
 y 4
 end
@@ -1809,8 +1734,6 @@ x 15
 y 13
 end
 arch blocked
-msg
-endmsg
 x 15
 y 13
 end
@@ -1819,8 +1742,6 @@ x 15
 y 14
 end
 arch blocked
-msg
-endmsg
 x 15
 y 14
 end
@@ -1829,8 +1750,6 @@ x 15
 y 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 15
 end

@@ -3274,6 +3274,12 @@ arch woods_2
 x 16
 y 23
 end
+arch gryphon
+x 16
+y 23
+sleep 0
+can_see_in_dark 1
+end
 arch woods_2
 x 16
 y 24
@@ -8936,6 +8942,10 @@ x 44
 y 27
 end
 arch woods_2
+x 44
+y 28
+end
+arch troll
 x 44
 y 28
 end
@@ -10030,14 +10040,4 @@ end
 arch woods
 x 49
 y 49
-end
-arch gryphon
-x 16
-y 23
-sleep 0
-can_see_in_dark 1
-end
-arch troll
-x 44
-y 28
 end

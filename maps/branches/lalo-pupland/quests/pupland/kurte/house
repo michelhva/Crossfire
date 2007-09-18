@@ -1,13 +1,13 @@
 arch map
-region pupland
 name house
+region pupland
+width 17
+height 17
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Apr  2 17:07:53 1996
 endmsg
-x 17
-y 17
 end
 arch blocked
 end
@@ -747,6 +747,11 @@ end
 arch afloor_right
 x 7
 y 7
+end
+arch pentagram_111
+x 7
+y 7
+type 0
 end
 arch afloor_right
 x 7
@@ -1744,9 +1749,4 @@ end
 arch blocked
 x 16
 y 16
-end
-arch pentagram_111
-x 7
-y 7
-type 0
 end

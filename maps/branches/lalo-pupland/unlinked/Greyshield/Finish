@@ -1,14 +1,15 @@
 arch map
 name Finish
+darkness 4
+width 24
+height 16
+enter_x 7
+enter_y 7
 msg
 Creator: Chris Jeske
 Email:
 Date: Sat Oct 26 16:06:45 1996
 endmsg
-hp 7
-sp 7
-x 24
-invisible 4
 end
 arch flagstone_2_2_2
 end
@@ -2031,10 +2032,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 19
 y 11
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2048,10 +2049,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 20
 y 10
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2087,8 +2088,6 @@ Cha -3
 ac 8
 x 20
 y 11
-immune 5216
-protected 31
 material 256
 value 1000
 weight 5000
@@ -2097,6 +2096,7 @@ glow_radius 5
 identified 1
 reflect_missile 1
 reflect_spell 1
+immune 31
 end
 arch teleporter
 hp 7
@@ -2109,10 +2109,10 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 20
 y 12
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end
 arch teleporter
@@ -2126,9 +2126,9 @@ end
 arch statue
 name Grey Angel
 face archangel.118
+animation GreyAngel
 x 21
 y 11
 speed -0.500000
-animation GreyAngel
 is_animated 1
 end

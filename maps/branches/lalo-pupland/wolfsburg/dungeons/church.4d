@@ -1,13 +1,13 @@
 arch map
-region wolfsburg
 name church
+region wolfsburg
+width 63
+height 33
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Nov 15 01:48:37 1994
 endmsg
-x 63
-y 33
 end
 arch blocked
 y 17

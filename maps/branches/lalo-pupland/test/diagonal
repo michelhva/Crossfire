@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 32
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Sep 28 18:32:47 1996
 endmsg
-x 32
-y 32
 end
 arch bwall_2_2_2
 end
@@ -649,9 +650,6 @@ y 16
 connected 6
 end
 arch block_door_closed
-msg
-
-endmsg
 x 13
 y 24
 speed 0.500000

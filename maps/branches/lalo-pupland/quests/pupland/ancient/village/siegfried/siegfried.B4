@@ -1,14 +1,14 @@
 arch map
-region ancientpupland
 name siegfried.B4
+difficulty 5
+region ancientpupland
+width 32
+height 38
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun  4 18:57:17 1996
 endmsg
-width 32
-height 38
-difficulty 5
 end
 arch blocked
 end
@@ -101,10 +101,10 @@ x 1
 y 5
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 1
 y 5
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 1
@@ -206,9 +206,9 @@ x 2
 y 5
 end
 arch wall_2_1_1
-no_pass 0
 x 2
 y 5
+no_pass 0
 end
 arch afloor_right
 x 2
@@ -716,11 +716,11 @@ x 5
 y 14
 end
 arch igate_closed_1
-speed 0.500000
-protected 1
-connected 1
 x 5
 y 14
+speed 0.500000
+connected 1
+protected 1
 end
 arch afloor_right
 x 5
@@ -776,10 +776,10 @@ x 5
 y 24
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 5
 y 24
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 5
@@ -957,9 +957,9 @@ x 6
 y 24
 end
 arch wall_2_1_1
-no_pass 0
 x 6
 y 24
+no_pass 0
 end
 arch afloor_right
 x 6
@@ -1461,18 +1461,18 @@ x 9
 y 1
 end
 arch blocked
-no_pass 0
 x 9
 y 1
+no_pass 0
 end
 arch afloor_right
 x 9
 y 2
 end
 arch wall_2_1_2
-no_pass 0
 x 9
 y 2
+no_pass 0
 end
 arch afloor_right
 x 9
@@ -1607,11 +1607,11 @@ x 9
 y 33
 end
 arch igate_closed_1
-speed 0.500000
-protected 2
-connected 2
 x 9
 y 33
+speed 0.500000
+connected 2
+protected 2
 end
 arch afloor_right
 x 9
@@ -1680,9 +1680,9 @@ x 10
 y 8
 end
 arch wall_2_1_2
-no_pass 0
 x 10
 y 8
+no_pass 0
 end
 arch magic_ear
 msg
@@ -1693,34 +1693,34 @@ x 10
 y 9
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 10
 y 9
-end
-arch blocked
 no_pass 0
 is_floor 1
+end
+arch blocked
 x 10
 y 10
-end
-arch blocked
 no_pass 0
 is_floor 1
+end
+arch blocked
 x 10
 y 11
-end
-arch pedestal
-protected 110
-connected 110
-x 10
-y 12
-end
-arch blocked
 no_pass 0
 is_floor 1
+end
+arch pedestal
 x 10
 y 12
+connected 110
+protected 110
+end
+arch blocked
+x 10
+y 12
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 10
@@ -1900,10 +1900,10 @@ end
 arch igate_closed_2
 name wall
 face wall_5.111
-speed 0.500000
-connected 110
 x 11
 y 12
+speed 0.500000
+connected 110
 end
 arch flagstone
 x 11
@@ -2421,38 +2421,38 @@ end
 arch igate_closed_1
 name wall
 face wall_A.111
-speed 0.500000
-connected 330
 x 13
 y 18
+speed 0.500000
+connected 330
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 13
 y 19
-end
-arch pedestal
-protected 330
-invisible 1
-connected 330
-x 13
-y 20
-end
-arch blocked
 no_pass 0
 is_floor 1
+end
+arch pedestal
 x 13
 y 20
+invisible 1
+connected 330
+protected 330
+end
+arch blocked
+x 13
+y 20
+no_pass 0
+is_floor 1
 end
 arch afloor_right
 x 13
 y 21
 end
 arch wall_2_1_2
-no_pass 0
 x 13
 y 21
+no_pass 0
 end
 arch afloor_right
 x 13
@@ -2674,9 +2674,9 @@ x 14
 y 27
 end
 arch wall_2_1_2
-no_pass 0
 x 14
 y 27
+no_pass 0
 end
 arch invis_exit
 slaying siegfried.B5
@@ -2685,10 +2685,10 @@ x 14
 y 28
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 14
 y 28
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 14
@@ -2920,20 +2920,20 @@ end
 arch pit_closed
 hp 5
 sp 16
+x 16
 speed 0.500000
 value 1
 connected 999
-x 16
 end
 arch button_lever
-protected 1
+x 16
 connected 1
-x 16
+protected 1
 end
 arch button_lever
-protected 10
-connected 10
 x 16
+connected 10
+protected 10
 end
 arch button_lever
 x 16
@@ -2941,23 +2941,23 @@ end
 arch pit_closed
 hp 9
 sp 35
+x 16
+y 1
 speed 0.500000
 value 1
 connected 999
-x 16
-y 1
 end
 arch button_lever
-protected 2
+x 16
+y 1
 connected 2
-x 16
-y 1
+protected 2
 end
 arch button_lever
-protected 20
-connected 20
 x 16
 y 1
+connected 20
+protected 20
 end
 arch button_lever
 x 16
@@ -2966,23 +2966,23 @@ end
 arch pit_closed
 hp 23
 sp 25
+x 16
+y 2
 speed 0.500000
 value 1
 connected 999
-x 16
-y 2
 end
 arch button_lever
-protected 3
+x 16
+y 2
 connected 3
-x 16
-y 2
+protected 3
 end
 arch button_lever
-protected 30
-connected 30
 x 16
 y 2
+connected 30
+protected 30
 end
 arch button_lever
 x 16
@@ -2995,9 +2995,9 @@ end
 arch pit_closed
 hp 6
 sp 16
-connected 10
 x 16
 y 4
+connected 10
 end
 arch lightningwall_6
 Con 100
@@ -3006,19 +3006,19 @@ maxhp 5000
 sp 0
 dam 88
 ac -30
+x 16
+y 4
 speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
-x 16
-y 4
 end
 arch pit_closed
 hp 9
 sp 35
-connected 20
 x 16
 y 5
+connected 20
 end
 arch lightningwall_6
 Con 100
@@ -3027,19 +3027,19 @@ maxhp 5000
 sp 0
 dam 88
 ac -30
+x 16
+y 5
 speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
-x 16
-y 5
 end
 arch pit_closed
 hp 23
 sp 25
-connected 30
 x 16
 y 6
+connected 30
 end
 arch lightningwall_6
 Con 100
@@ -3048,12 +3048,12 @@ maxhp 5000
 sp 0
 dam 88
 ac -30
+x 16
+y 6
 speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
-x 16
-y 6
 end
 arch blocked
 x 16
@@ -3256,9 +3256,9 @@ end
 arch pit_closed
 hp 6
 sp 16
-connected 10
 x 17
 y 4
+connected 10
 end
 arch firewall_2
 Con 100
@@ -3267,19 +3267,19 @@ maxhp 5000
 sp 0
 dam 58
 ac -30
+x 17
+y 4
 speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
-x 17
-y 4
 end
 arch pit_closed
 hp 9
 sp 35
-connected 20
 x 17
 y 5
+connected 20
 end
 arch firewall_2
 Con 100
@@ -3288,19 +3288,19 @@ maxhp 5000
 sp 0
 dam 58
 ac -30
+x 17
+y 5
 speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
-x 17
-y 5
 end
 arch pit_closed
 hp 23
 sp 25
-connected 30
 x 17
 y 6
+connected 30
 end
 arch firewall_2
 Con 100
@@ -3309,12 +3309,12 @@ maxhp 5000
 sp 0
 dam 58
 ac -30
+x 17
+y 6
 speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
-x 17
-y 6
 end
 arch blocked
 x 17
@@ -3363,10 +3363,10 @@ end
 arch igate_closed_2
 name wall
 face wall_5.111
-speed 0.500000
-connected 220
 x 17
 y 14
+speed 0.500000
+connected 220
 end
 arch flagstone
 x 17
@@ -3540,9 +3540,9 @@ end
 arch pit_closed
 hp 6
 sp 16
-connected 10
 x 18
 y 4
+connected 10
 end
 arch lbulletwall_5
 name bombbomb wall
@@ -3553,18 +3553,18 @@ maxhp 5000
 sp 0
 dam 8
 ac -30
+x 18
+y 4
 speed -0.100000
 level 50
 alive 1
-x 18
-y 4
 end
 arch pit_closed
 hp 9
 sp 35
-connected 20
 x 18
 y 5
+connected 20
 end
 arch lbulletwall_5
 name bombbomb wall
@@ -3575,18 +3575,18 @@ maxhp 5000
 sp 0
 dam 8
 ac -30
+x 18
+y 5
 speed -0.100000
 level 50
 alive 1
-x 18
-y 5
 end
 arch pit_closed
 hp 23
 sp 25
-connected 30
 x 18
 y 6
+connected 30
 end
 arch lbulletwall_5
 name bombbomb wall
@@ -3597,11 +3597,11 @@ maxhp 5000
 sp 0
 dam 8
 ac -30
+x 18
+y 6
 speed -0.100000
 level 50
 alive 1
-x 18
-y 6
 end
 arch blocked
 x 18
@@ -3632,10 +3632,10 @@ x 18
 y 13
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 18
 y 14
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 18
@@ -3797,17 +3797,17 @@ x 19
 y 13
 end
 arch pedestal
-protected 220
+x 19
+y 14
 invisible 1
 connected 220
-x 19
-y 14
+protected 220
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 19
 y 14
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 19
@@ -3969,9 +3969,9 @@ x 20
 y 14
 end
 arch wall_2_1_1
-no_pass 0
 x 20
 y 14
+no_pass 0
 end
 arch afloor_right
 x 20
@@ -4491,11 +4491,11 @@ x 23
 y 23
 end
 arch igate_closed_1
-speed 0.500000
-protected 3
-connected 3
 x 23
 y 23
+speed 0.500000
+connected 3
+protected 3
 end
 arch afloor_right
 x 23
@@ -4696,10 +4696,10 @@ y 3
 end
 arch button_small
 face button_sma.112
-value 1
-connected 999
 x 25
 y 4
+value 1
+connected 999
 end
 arch scroll
 x 25
@@ -4998,19 +4998,19 @@ x 27
 y 10
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 27
 y 10
+no_pass 0
+is_floor 1
 end
 arch afloor_right
 x 27
 y 11
 end
 arch wall_2_1_2
-no_pass 0
 x 27
 y 11
+no_pass 0
 end
 arch afloor_right
 x 27
@@ -5137,9 +5137,9 @@ x 28
 y 17
 end
 arch wall_2_1_2
-no_pass 0
 x 28
 y 17
+no_pass 0
 end
 arch invis_exit
 slaying siegfried.B5
@@ -5148,10 +5148,10 @@ x 28
 y 18
 end
 arch blocked
-no_pass 0
-is_floor 1
 x 28
 y 18
+no_pass 0
+is_floor 1
 end
 arch blocked
 x 28

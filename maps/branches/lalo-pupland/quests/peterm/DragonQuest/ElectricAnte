@@ -452,6 +452,10 @@ arch pstone_2
 x 3
 y 12
 end
+arch big_elec
+x 3
+y 12
+end
 arch pstone_2
 x 3
 y 13
@@ -638,6 +642,10 @@ arch pstone_2
 x 5
 y 7
 end
+arch big_elec
+x 5
+y 7
+end
 arch pstone_2
 x 5
 y 8
@@ -671,6 +679,10 @@ x 5
 y 14
 end
 arch pstone_2
+x 5
+y 15
+end
+arch big_elec
 x 5
 y 15
 end
@@ -853,6 +865,10 @@ x 7
 y 9
 end
 arch pstone_2
+x 7
+y 10
+end
+arch big_elec
 x 7
 y 10
 end
@@ -1304,6 +1320,10 @@ arch pstone_2
 x 11
 y 14
 end
+arch big_elec
+x 11
+y 14
+end
 arch pstone_2
 x 11
 y 15
@@ -1482,6 +1502,10 @@ x 13
 y 7
 end
 arch pstone_2
+x 13
+y 8
+end
+arch big_elec
 x 13
 y 8
 end
@@ -1763,6 +1787,10 @@ arch pstone_2
 x 16
 y 4
 end
+arch big_elec
+x 16
+y 4
+end
 arch pstone_2
 x 16
 y 5
@@ -1792,6 +1820,10 @@ x 16
 y 11
 end
 arch pstone_2
+x 16
+y 12
+end
+arch big_elec
 x 16
 y 12
 end
@@ -2486,36 +2518,4 @@ end
 arch blocked
 x 21
 y 21
-end
-arch big_elec
-x 3
-y 12
-end
-arch big_elec
-x 5
-y 7
-end
-arch big_elec
-x 5
-y 15
-end
-arch big_elec
-x 7
-y 10
-end
-arch big_elec
-x 11
-y 14
-end
-arch big_elec
-x 13
-y 8
-end
-arch big_elec
-x 16
-y 4
-end
-arch big_elec
-x 16
-y 12
 end

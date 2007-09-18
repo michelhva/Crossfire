@@ -4189,6 +4189,13 @@ arch dungeon_floor
 x 17
 y 8
 end
+arch store_magic
+slaying cd.store.753
+hp 9
+sp 12
+x 17
+y 8
+end
 arch dungeon_floor
 x 17
 y 9
@@ -6026,6 +6033,13 @@ x 25
 y 7
 end
 arch dungeon_floor
+x 25
+y 8
+end
+arch inn
+slaying cd.inn.752
+hp 7
+sp 15
 x 25
 y 8
 end
@@ -12073,18 +12087,4 @@ end
 arch grass
 x 49
 y 49
-end
-arch store_magic
-slaying cd.store.753
-hp 9
-sp 12
-x 17
-y 8
-end
-arch inn
-slaying cd.inn.752
-hp 7
-sp 15
-x 25
-y 8
 end

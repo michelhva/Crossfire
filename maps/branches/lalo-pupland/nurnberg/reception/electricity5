@@ -1,13 +1,14 @@
 arch map
-region nurnberg
 name electricity5
+difficulty 10
+region nurnberg
+width 16
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Feb 20 01:38:25 1996
 endmsg
-y 27
-level 10
 end
 arch flagstone
 end
@@ -1882,9 +1883,35 @@ arch marble
 x 8
 y 19
 end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 8
+y 19
+immune 16396
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch marble
 x 8
 y 20
+end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 8
+y 20
+immune 16396
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 8
@@ -2736,9 +2763,35 @@ arch marble
 x 12
 y 19
 end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 12
+y 19
+immune 16396
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+end
 arch marble
 x 12
 y 20
+end
+arch dragon
+name Electric Wyvern
+maxsp 100
+x 12
+y 20
+immune 16396
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
+arch spell_sm_lightning
+end
 end
 arch marble
 x 12
@@ -3336,56 +3389,4 @@ end
 arch grass
 x 15
 y 26
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 8
-y 19
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 8
-y 20
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 12
-y 19
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-end
-arch dragon
-name Electric Wyvern
-maxsp 100
-x 12
-y 20
-immune 16396
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
-arch spell_sm_lightning
-end
 end

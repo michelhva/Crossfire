@@ -1839,6 +1839,13 @@ arch woods_3
 x 9
 y 15
 end
+arch ent
+msg
+
+endmsg
+x 9
+y 15
+end
 arch woods_3
 x 9
 y 16
@@ -3202,6 +3209,12 @@ arch woods_3
 x 15
 y 46
 end
+arch bear
+x 15
+y 46
+sleep 0
+can_see_in_dark 1
+end
 arch woods_3
 x 15
 y 47
@@ -4221,6 +4234,10 @@ x 21
 y 2
 end
 arch woods_3
+x 21
+y 3
+end
+arch giant
 x 21
 y 3
 end
@@ -4441,6 +4458,10 @@ x 22
 y 1
 end
 arch woods_3
+x 22
+y 2
+end
+arch giant
 x 22
 y 2
 end
@@ -10102,25 +10123,4 @@ end
 arch woods_3
 x 49
 y 49
-end
-arch ent
-msg
-
-endmsg
-x 9
-y 15
-end
-arch bear
-x 15
-y 46
-sleep 0
-can_see_in_dark 1
-end
-arch giant
-x 21
-y 3
-end
-arch giant
-x 22
-y 2
 end

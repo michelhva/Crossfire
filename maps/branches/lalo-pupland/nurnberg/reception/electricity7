@@ -1,6 +1,8 @@
 arch map
-region nurnberg
 name electricity7
+region nurnberg
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -127,6 +129,10 @@ arch marble
 x 1
 y 4
 end
+arch big_elec
+x 1
+y 4
+end
 arch marble
 x 1
 y 5
@@ -178,8 +184,8 @@ end
 arch button_lever
 x 1
 y 14
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 1
@@ -301,6 +307,10 @@ x 3
 y 3
 end
 arch marble
+x 3
+y 4
+end
+arch big_elec
 x 3
 y 4
 end
@@ -442,8 +452,8 @@ arch grate_closed_2
 x 4
 y 12
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch marble
 x 4
@@ -500,6 +510,10 @@ x 5
 y 3
 end
 arch marble
+x 5
+y 4
+end
+arch big_elec
 x 5
 y 4
 end
@@ -641,9 +655,9 @@ arch grate_open_2
 x 6
 y 12
 speed 0.500000
-protected 10
 value 1
 connected 10
+protected 10
 end
 arch marble
 x 6
@@ -695,6 +709,10 @@ arch marble
 x 7
 y 4
 end
+arch big_elec
+x 7
+y 4
+end
 arch marble
 x 7
 y 5
@@ -734,8 +752,8 @@ end
 arch button_lever
 x 7
 y 13
-protected 10
 connected 10
+protected 10
 end
 arch marble
 x 7
@@ -846,6 +864,10 @@ x 9
 y 3
 end
 arch marble
+x 9
+y 4
+end
+arch big_elec
 x 9
 y 4
 end
@@ -1213,6 +1235,10 @@ arch marble
 x 12
 y 12
 end
+arch big_elec
+x 12
+y 12
+end
 arch marble
 x 12
 y 13
@@ -1319,8 +1345,8 @@ arch grate_closed_1
 x 13
 y 11
 speed 0.500000
-protected 2
 connected 2
+protected 2
 end
 arch marble
 x 13
@@ -1438,8 +1464,8 @@ end
 arch button_lever
 x 14
 y 10
-protected 2
 connected 2
+protected 2
 end
 arch marble
 x 14
@@ -1598,28 +1624,4 @@ end
 arch cwall_2_2_4
 x 15
 y 15
-end
-arch big_elec
-x 1
-y 4
-end
-arch big_elec
-x 3
-y 4
-end
-arch big_elec
-x 5
-y 4
-end
-arch big_elec
-x 7
-y 4
-end
-arch big_elec
-x 9
-y 4
-end
-arch big_elec
-x 12
-y 12
 end

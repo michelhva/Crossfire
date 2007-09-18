@@ -4586,6 +4586,10 @@ arch small_stones
 x 43
 y 15
 end
+arch dragon
+x 43
+y 15
+end
 arch small_stones
 x 43
 y 16
@@ -4673,6 +4677,10 @@ x 44
 y 15
 end
 arch small_stones
+x 44
+y 16
+end
+arch dragon
 x 44
 y 16
 end
@@ -5711,6 +5719,10 @@ arch small_stones
 x 55
 y 15
 end
+arch dragon
+x 55
+y 15
+end
 arch small_stones
 x 55
 y 16
@@ -5787,6 +5799,10 @@ x 56
 y 15
 end
 arch small_stones
+x 56
+y 16
+end
+arch dragon
 x 56
 y 16
 end
@@ -6749,6 +6765,10 @@ arch small_stones
 x 65
 y 14
 end
+arch giant
+x 65
+y 14
+end
 arch small_stones
 x 65
 y 15
@@ -7204,24 +7224,4 @@ end
 arch cave22
 x 69
 y 18
-end
-arch dragon
-x 43
-y 15
-end
-arch dragon
-x 44
-y 16
-end
-arch dragon
-x 55
-y 15
-end
-arch dragon
-x 56
-y 16
-end
-arch giant
-x 65
-y 14
 end

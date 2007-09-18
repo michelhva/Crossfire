@@ -1,13 +1,15 @@
 arch map
-region pupland
 name floor1
+region pupland
+width 16
+height 16
+enter_x 8
+enter_y 15
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb  7 19:10:01 1996
 endmsg
-hp 8
-sp 15
 end
 arch cobblestones2
 end
@@ -671,8 +673,8 @@ end
 arch altar
 x 7
 y 1
-protected 96
 connected 96
+protected 96
 end
 arch flagstone
 x 7
@@ -762,8 +764,8 @@ end
 arch altar
 x 8
 y 1
-protected 96
 connected 96
+protected 96
 end
 arch flagstone
 x 8

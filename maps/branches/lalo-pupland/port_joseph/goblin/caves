@@ -1721,6 +1721,27 @@ arch small_stones
 x 11
 y 16
 end
+arch chinese_dragon
+name Nyerival
+msg
+@match treasure
+Content yourself with your shiny
+rocks.
+@match temple|dragon king
+Heh, heh, you seek aid upon
+your quest.  Well my pretty insect,
+Know this:  You must speak the fifth
+verse at the table of gold, and
+leave its body there as well.
+@match *
+>Yawn<  Yes little creature? Why
+do you disturb me?
+endmsg
+hp 1200
+x 11
+y 16
+unaggressive 1
+end
 arch small_stones
 x 11
 y 17
@@ -2434,25 +2455,4 @@ end
 arch cave22
 x 15
 y 23
-end
-arch chinese_dragon
-name Nyerival
-msg
-@match treasure
-Content yourself with your shiny
-rocks.
-@match temple|dragon king
-Heh, heh, you seek aid upon
-your quest.  Well my pretty insect,
-Know this:  You must speak the fifth
-verse at the table of gold, and
-leave its body there as well.
-@match *
->Yawn<  Yes little creature? Why
-do you disturb me?
-endmsg
-hp 1200
-x 11
-y 16
-unaggressive 1
 end

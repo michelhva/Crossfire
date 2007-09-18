@@ -409,6 +409,10 @@ arch dungeon_floor
 x 1
 y 36
 end
+arch chinese_dragon
+x 1
+y 36
+end
 arch dungeon_floor
 x 1
 y 37
@@ -1024,6 +1028,10 @@ x 4
 y 36
 end
 arch dungeon_floor
+x 4
+y 37
+end
+arch chinese_dragon
 x 4
 y 37
 end
@@ -2368,11 +2376,23 @@ arch dungeon_floor
 x 10
 y 36
 end
+arch dragon
+x 10
+y 36
+end
 arch dungeon_floor
 x 10
 y 37
 end
+arch dragon
+x 10
+y 37
+end
 arch dungeon_floor
+x 10
+y 38
+end
+arch dragon
 x 10
 y 38
 end
@@ -3622,6 +3642,10 @@ arch dungeon_floor
 x 16
 y 36
 end
+arch giant
+x 16
+y 36
+end
 arch dungeon_floor
 x 16
 y 37
@@ -4023,6 +4047,10 @@ x 18
 y 36
 end
 arch dungeon_floor
+x 18
+y 37
+end
+arch giant
 x 18
 y 37
 end
@@ -9009,32 +9037,4 @@ end
 arch bwall_2_2_4
 x 39
 y 39
-end
-arch chinese_dragon
-x 1
-y 36
-end
-arch chinese_dragon
-x 4
-y 37
-end
-arch dragon
-x 10
-y 36
-end
-arch dragon
-x 10
-y 37
-end
-arch dragon
-x 10
-y 38
-end
-arch giant
-x 16
-y 36
-end
-arch giant
-x 18
-y 37
 end

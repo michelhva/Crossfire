@@ -897,6 +897,10 @@ arch pstone_2
 x 5
 y 9
 end
+arch big_elec
+x 5
+y 9
+end
 arch pstone_2
 x 5
 y 10
@@ -1401,6 +1405,10 @@ x 8
 y 8
 end
 arch pstone_2
+x 8
+y 9
+end
+arch big_elec
 x 8
 y 9
 end
@@ -2666,12 +2674,4 @@ end
 arch blocked
 x 15
 y 29
-end
-arch big_elec
-x 5
-y 9
-end
-arch big_elec
-x 8
-y 9
 end

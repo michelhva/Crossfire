@@ -1,17 +1,17 @@
 arch map
-region nurnberg
 name jshop
+difficulty 5
+region nurnberg
+shopitems gem:100;ring:0;amulet:0;*:-100
+shopmin 25
+shopmax 40000
+width 25
+height 25
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 20:32:26 1996
 endmsg
-x 25
-y 25
-level 5
-shopitems gem:100;ring:0;amulet:0;*:-100
-shopmin 25
-shopmax 40000
 end
 arch grass
 end

@@ -4122,6 +4122,10 @@ arch dungeon_floor
 x 28
 y 32
 end
+arch big_elec
+x 28
+y 32
+end
 arch dungeon_floor
 x 28
 y 33
@@ -4642,6 +4646,10 @@ x 31
 y 26
 end
 arch dungeon_floor
+x 31
+y 27
+end
+arch big_elec
 x 31
 y 27
 end
@@ -5010,6 +5018,10 @@ arch dungeon_floor
 x 33
 y 30
 end
+arch big_elec
+x 33
+y 30
+end
 arch dungeon_floor
 x 33
 y 31
@@ -5027,6 +5039,10 @@ x 33
 y 33
 end
 arch dungeon_floor
+x 33
+y 34
+end
+arch big_elec
 x 33
 y 34
 end
@@ -5144,6 +5160,10 @@ x 34
 y 26
 end
 arch dungeon_floor
+x 34
+y 27
+end
+arch big_elec
 x 34
 y 27
 end
@@ -5305,6 +5325,10 @@ x 35
 y 31
 end
 arch dungeon_floor
+x 35
+y 32
+end
+arch big_elec
 x 35
 y 32
 end
@@ -5977,28 +6001,4 @@ end
 arch blocked
 x 39
 y 39
-end
-arch big_elec
-x 28
-y 32
-end
-arch big_elec
-x 31
-y 27
-end
-arch big_elec
-x 33
-y 30
-end
-arch big_elec
-x 33
-y 34
-end
-arch big_elec
-x 34
-y 27
-end
-arch big_elec
-x 35
-y 32
 end

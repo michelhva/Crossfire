@@ -623,6 +623,10 @@ arch pstone_1
 x 3
 y 1
 end
+arch big_demon
+x 3
+y 1
+end
 arch pstone_1
 x 3
 y 2
@@ -720,6 +724,23 @@ end
 arch pstone_1
 x 3
 y 15
+end
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
+x 3
+y 15
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 3
@@ -969,11 +990,23 @@ arch pstone_1
 x 4
 y 21
 end
+arch dragon
+x 4
+y 21
+end
 arch pstone_1
 x 4
 y 22
 end
+arch dragon
+x 4
+y 22
+end
 arch pstone_1
+x 4
+y 23
+end
+arch dragon
 x 4
 y 23
 end
@@ -1270,6 +1303,10 @@ x 6
 y 1
 end
 arch pstone_1
+x 6
+y 2
+end
+arch big_demon
 x 6
 y 2
 end
@@ -2103,6 +2140,23 @@ arch pstone_1
 x 9
 y 15
 end
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
+x 9
+y 15
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
+end
 arch pstone_1
 x 9
 y 16
@@ -2218,6 +2272,10 @@ x 10
 y 1
 end
 arch pstone_1
+x 10
+y 2
+end
+arch big_demon
 x 10
 y 2
 end
@@ -3435,6 +3493,10 @@ arch pstone_1
 x 15
 y 2
 end
+arch big_demon
+x 15
+y 2
+end
 arch pstone_1
 x 15
 y 3
@@ -4223,6 +4285,23 @@ arch pstone_1
 x 18
 y 15
 end
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
+x 18
+y 15
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
+end
 arch pstone_1
 x 18
 y 16
@@ -4361,6 +4440,10 @@ x 19
 y 1
 end
 arch pstone_1
+x 19
+y 2
+end
+arch big_demon
 x 19
 y 2
 end
@@ -5391,6 +5474,10 @@ arch pstone_1
 x 23
 y 2
 end
+arch big_dragon
+x 23
+y 2
+end
 arch pstone_1
 x 23
 y 3
@@ -5949,6 +6036,23 @@ end
 arch pstone_1
 x 25
 y 15
+end
+arch dragonman
+name lesser dragonman
+Con 5
+Wis 3
+Pow 4
+hp 1000
+maxhp 1000
+exp 8000
+wc 0
+ac 0
+x 25
+y 15
+speed -0.200000
+level 6
+resist_magic 30
+randomitems wyvern
 end
 arch pstone_1
 x 25
@@ -7532,108 +7636,4 @@ end
 arch dun7
 x 31
 y 31
-end
-arch big_demon
-x 3
-y 1
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 3
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch dragon
-x 4
-y 21
-end
-arch dragon
-x 4
-y 22
-end
-arch dragon
-x 4
-y 23
-end
-arch big_demon
-x 6
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 9
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch big_demon
-x 10
-y 2
-end
-arch big_demon
-x 15
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 18
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
-end
-arch big_demon
-x 19
-y 2
-end
-arch big_dragon
-x 23
-y 2
-end
-arch dragonman
-name lesser dragonman
-Con 5
-Wis 3
-Pow 4
-hp 1000
-maxhp 1000
-exp 8000
-wc 0
-ac 0
-x 25
-y 15
-speed -0.200000
-level 6
-resist_magic 30
-randomitems wyvern
 end

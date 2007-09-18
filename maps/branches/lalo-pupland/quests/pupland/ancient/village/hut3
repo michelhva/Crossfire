@@ -1,12 +1,13 @@
 arch map
-region ancientpupland
 name hut3
+region ancientpupland
+width 19
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May 18 00:23:55 1996
 endmsg
-x 19
 end
 arch pstone_1
 end
@@ -223,8 +224,8 @@ Click.
 endmsg
 x 3
 y 3
-protected 1
 connected 1
+protected 1
 end
 arch pstone_1
 x 3
@@ -1353,8 +1354,8 @@ arch pit_closed
 hp 3
 sp 2
 x 18
-protected 1
 connected 1
+protected 1
 end
 arch zombie
 name Jacob

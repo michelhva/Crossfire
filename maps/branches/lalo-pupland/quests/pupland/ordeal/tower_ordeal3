@@ -1,14 +1,16 @@
 arch map
-region pupland
 name tower_ordeal3
+difficulty 15
+region pupland
+width 16
+height 16
+enter_x 6
+enter_y 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Jan 28 22:44:38 1996
 endmsg
-hp 6
-sp 10
-level 15
 end
 arch woodfloor
 end

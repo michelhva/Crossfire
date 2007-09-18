@@ -1619,6 +1619,10 @@ arch cobblestones2
 x 6
 y 11
 end
+arch giant
+x 6
+y 11
+end
 arch cobblestones2
 x 6
 y 12
@@ -1640,6 +1644,10 @@ x 6
 y 15
 end
 arch cobblestones2
+x 6
+y 16
+end
+arch giant
 x 6
 y 16
 end
@@ -1806,6 +1814,10 @@ arch cobblestones2
 x 7
 y 12
 end
+arch giant
+x 7
+y 12
+end
 arch cobblestones2
 x 7
 y 13
@@ -1835,6 +1847,10 @@ x 7
 y 19
 end
 arch cobblestones2
+x 7
+y 20
+end
+arch giant
 x 7
 y 20
 end
@@ -2293,6 +2309,10 @@ arch cobblestones2
 x 9
 y 14
 end
+arch troll
+x 9
+y 14
+end
 arch cobblestones2
 x 9
 y 15
@@ -2302,6 +2322,10 @@ x 9
 y 16
 end
 arch cobblestones2
+x 9
+y 17
+end
+arch troll
 x 9
 y 17
 end
@@ -2326,6 +2350,10 @@ x 9
 y 21
 end
 arch cobblestones2
+x 9
+y 22
+end
+arch troll
 x 9
 y 22
 end
@@ -2472,6 +2500,11 @@ arch cobblestones2
 x 10
 y 9
 end
+arch troll
+x 10
+y 9
+unaggressive 1
+end
 arch cobblestones2
 x 10
 y 10
@@ -2543,6 +2576,10 @@ x 10
 y 25
 end
 arch cobblestones2
+x 10
+y 26
+end
+arch giant
 x 10
 y 26
 end
@@ -2805,6 +2842,10 @@ arch cobblestones2
 x 11
 y 26
 end
+arch giant
+x 11
+y 26
+end
 arch cobblestones2
 x 11
 y 27
@@ -2908,6 +2949,10 @@ arch cobblestones2
 x 12
 y 6
 end
+arch giant
+x 12
+y 6
+end
 arch cobblestones2
 x 12
 y 7
@@ -2957,6 +3002,10 @@ x 12
 y 14
 end
 arch cobblestones2
+x 12
+y 15
+end
+arch behemoth
 x 12
 y 15
 end
@@ -3006,6 +3055,10 @@ arch cobblestones2
 x 12
 y 23
 end
+arch troll
+x 12
+y 23
+end
 arch cobblestones2
 x 12
 y 24
@@ -3604,6 +3657,10 @@ arch cobblestones2
 x 15
 y 6
 end
+arch giant
+x 15
+y 6
+end
 arch cobblestones2
 x 15
 y 7
@@ -3622,6 +3679,10 @@ arch cobblestones2
 x 15
 y 9
 end
+arch troll
+x 15
+y 9
+end
 arch cobblestones2
 x 15
 y 10
@@ -3637,6 +3698,10 @@ x 15
 y 11
 end
 arch cobblestones2
+x 15
+y 12
+end
+arch behemoth
 x 15
 y 12
 end
@@ -3948,6 +4013,10 @@ arch cobblestones2
 x 16
 y 20
 end
+arch behemoth
+x 16
+y 20
+end
 arch cobblestones2
 x 16
 y 21
@@ -3963,6 +4032,10 @@ x 16
 y 22
 end
 arch cobblestones2
+x 16
+y 23
+end
+arch troll
 x 16
 y 23
 end
@@ -4226,6 +4299,10 @@ arch cobblestones2
 x 17
 y 26
 end
+arch giant
+x 17
+y 26
+end
 arch cobblestones2
 x 17
 y 27
@@ -4603,6 +4680,10 @@ x 19
 y 8
 end
 arch cobblestones2
+x 19
+y 9
+end
+arch troll
 x 19
 y 9
 end
@@ -4888,6 +4969,10 @@ x 20
 y 15
 end
 arch cobblestones2
+x 20
+y 16
+end
+arch behemoth
 x 20
 y 16
 end
@@ -4929,6 +5014,10 @@ arch cobblestones2
 x 20
 y 23
 end
+arch troll
+x 20
+y 23
+end
 arch cobblestones2
 x 20
 y 24
@@ -5273,6 +5362,10 @@ x 22
 y 5
 end
 arch cobblestones2
+x 22
+y 6
+end
+arch giant
 x 22
 y 6
 end
@@ -5561,6 +5654,10 @@ arch cobblestones2
 x 23
 y 10
 end
+arch troll
+x 23
+y 10
+end
 arch cobblestones2
 x 23
 y 11
@@ -5585,11 +5682,19 @@ arch cobblestones2
 x 23
 y 15
 end
+arch troll
+x 23
+y 15
+end
 arch cobblestones2
 x 23
 y 16
 end
 arch cobblestones2
+x 23
+y 17
+end
+arch troll
 x 23
 y 17
 end
@@ -5606,6 +5711,10 @@ x 23
 y 20
 end
 arch cobblestones2
+x 23
+y 21
+end
+arch troll
 x 23
 y 21
 end
@@ -5636,6 +5745,10 @@ x 23
 y 25
 end
 arch cobblestones2
+x 23
+y 26
+end
+arch giant
 x 23
 y 26
 end
@@ -6255,6 +6368,10 @@ arch cobblestones2
 x 26
 y 13
 end
+arch giant
+x 26
+y 13
+end
 arch cobblestones2
 x 26
 y 14
@@ -6272,6 +6389,10 @@ x 26
 y 17
 end
 arch cobblestones2
+x 26
+y 18
+end
+arch giant
 x 26
 y 18
 end
@@ -6426,6 +6547,10 @@ arch cobblestones2
 x 27
 y 9
 end
+arch giant
+x 27
+y 9
+end
 arch cobblestones2
 x 27
 y 10
@@ -6443,6 +6568,10 @@ x 27
 y 13
 end
 arch cobblestones2
+x 27
+y 14
+end
+arch giant
 x 27
 y 14
 end
@@ -6471,6 +6600,10 @@ x 27
 y 20
 end
 arch cobblestones2
+x 27
+y 21
+end
+arch giant
 x 27
 y 21
 end
@@ -8108,137 +8241,4 @@ x 33
 y 33
 no_magic 1
 damned 1
-end
-arch giant
-x 6
-y 11
-end
-arch giant
-x 6
-y 16
-end
-arch giant
-x 7
-y 12
-end
-arch giant
-x 7
-y 20
-end
-arch troll
-x 9
-y 14
-end
-arch troll
-x 9
-y 17
-end
-arch troll
-x 9
-y 22
-end
-arch troll
-x 10
-y 9
-unaggressive 1
-end
-arch giant
-x 10
-y 26
-end
-arch giant
-x 11
-y 26
-end
-arch giant
-x 12
-y 6
-end
-arch behemoth
-x 12
-y 15
-end
-arch troll
-x 12
-y 23
-end
-arch giant
-x 15
-y 6
-end
-arch troll
-x 15
-y 9
-end
-arch behemoth
-x 15
-y 12
-end
-arch behemoth
-x 16
-y 20
-end
-arch troll
-x 16
-y 23
-end
-arch giant
-x 17
-y 26
-end
-arch troll
-x 19
-y 9
-end
-arch behemoth
-x 20
-y 16
-end
-arch troll
-x 20
-y 23
-end
-arch giant
-x 22
-y 6
-end
-arch troll
-x 23
-y 10
-end
-arch troll
-x 23
-y 15
-end
-arch troll
-x 23
-y 17
-end
-arch troll
-x 23
-y 21
-end
-arch giant
-x 23
-y 26
-end
-arch giant
-x 26
-y 13
-end
-arch giant
-x 26
-y 18
-end
-arch giant
-x 27
-y 9
-end
-arch giant
-x 27
-y 14
-end
-arch giant
-x 27
-y 21
 end

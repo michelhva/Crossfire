@@ -1,15 +1,15 @@
 arch map
-region scorn
 name maze1
+region scorn
+width 26
+height 26
+enter_x 1
+enter_y 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sun Nov 13 18:51:16 1994
 endmsg
-hp 1
-sp 18
-x 26
-y 26
 end
 arch woodfloor
 end

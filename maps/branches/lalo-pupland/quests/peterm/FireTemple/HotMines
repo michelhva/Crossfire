@@ -1276,6 +1276,10 @@ arch permanent_lava
 x 6
 y 12
 end
+arch big_demon
+x 6
+y 12
+end
 arch permanent_lava
 x 6
 y 13
@@ -6103,8 +6107,4 @@ end
 arch bwall_2_2_4
 x 29
 y 29
-end
-arch big_demon
-x 6
-y 12
 end

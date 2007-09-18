@@ -1,14 +1,14 @@
 arch map
 name Elements
+width 32
+height 32
+enter_x 15
+enter_y 30
 msg
 Creator: Chris Jeske
 Email:
 Date: Fri Dec  6 11:29:55 1996
 endmsg
-hp 15
-sp 30
-x 32
-y 32
 end
 arch bwall_2_2_2
 end
@@ -790,8 +790,8 @@ maxsp 900
 x 8
 y 19
 level 20
-run_away 50
 changing 1
+run_away 50
 can_cast_spell 1
 arch ability_summon_air
 end
@@ -803,6 +803,10 @@ end
 arch bwall_2_1_2
 x 8
 y 20
+end
+arch big_dragon
+x 8
+y 23
 end
 arch bwall_1_3
 x 8
@@ -1303,6 +1307,10 @@ end
 arch afloor_left
 name magical carving
 face demon_lord.E11
+x 15
+y 24
+end
+arch demon_lord
 x 15
 y 24
 end
@@ -1812,6 +1820,10 @@ end
 arch bwall_1_3
 x 21
 y 22
+end
+arch big_dragon
+x 21
+y 23
 end
 arch bwall_2_1_2
 x 21
@@ -2705,16 +2717,4 @@ end
 arch bwall_2_2_4
 x 31
 y 31
-end
-arch big_dragon
-x 8
-y 23
-end
-arch demon_lord
-x 15
-y 24
-end
-arch big_dragon
-x 21
-y 23
 end

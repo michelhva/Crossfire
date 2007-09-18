@@ -1,16 +1,16 @@
 arch map
 name Chamber
+difficulty 80
+darkness 3
+width 32
+height 24
+enter_x 11
+enter_y 11
 msg
 Creator: Chris Jeske
 Email:
 Date: Fri Oct 25 15:25:50 1996
 endmsg
-hp 11
-sp 11
-x 32
-y 24
-level 80
-invisible 3
 end
 arch dun10
 end
@@ -4149,6 +4149,16 @@ y 2
 speed 0.000000
 connected 3
 end
+arch jessyb
+name Carlos
+x 25
+y 2
+carrying 100
+arch key2
+name Carlos' key
+slaying Carlos
+end
+end
 arch swall_1_4
 x 25
 y 6
@@ -4161,6 +4171,16 @@ x 25
 y 7
 speed 0.000000
 connected 3
+end
+arch jessyb
+name Pedro
+x 25
+y 7
+carrying 100
+arch key2
+name Pedro's key
+slaying Pedro
+end
 end
 arch swall_1_4
 x 25
@@ -4175,6 +4195,16 @@ y 12
 speed 0.000000
 connected 4
 end
+arch jessyb
+name Carlos
+x 25
+y 12
+carrying 100
+arch key2
+name Carlos' key
+slaying Carlos
+end
+end
 arch swall_1_4
 x 25
 y 16
@@ -4187,6 +4217,16 @@ x 25
 y 17
 speed 0.000000
 connected 4
+end
+arch jessyb
+name Pedro
+x 25
+y 17
+carrying 100
+arch key2
+name Pedro's key
+slaying Pedro
+end
 end
 arch swall_1_4
 x 25
@@ -4376,6 +4416,16 @@ y 2
 speed 0.000000
 connected 5
 end
+arch EDK
+name Juan
+x 30
+y 2
+carrying 100
+arch key2
+name Juan's key
+slaying Juan
+end
+end
 arch swall_2_1_2
 x 30
 y 5
@@ -4388,6 +4438,16 @@ x 30
 y 6
 speed 0.000000
 connected 5
+end
+arch EDK
+name Amal
+x 30
+y 6
+carrying 100
+arch key2
+name Amal's key
+slaying Amal
+end
 end
 arch swall_2_1_2
 x 30
@@ -4402,6 +4462,16 @@ y 10
 speed 0.000000
 connected 6
 end
+arch EDK
+name Juan
+x 30
+y 10
+carrying 100
+arch key2
+name Juan's key
+slaying Juan
+end
+end
 arch swall_2_1_2
 x 30
 y 13
@@ -4414,6 +4484,16 @@ x 30
 y 14
 speed 0.000000
 connected 6
+end
+arch EDK
+name Amal
+x 30
+y 14
+carrying 100
+arch key2
+name Amal's key
+slaying Amal
+end
 end
 arch swall_2_1_2
 x 30
@@ -4443,84 +4523,4 @@ end
 arch swall_1_3
 x 31
 y 17
-end
-arch jessyb
-name Carlos
-x 25
-y 2
-carrying 100
-arch key2
-name Carlos' key
-slaying Carlos
-end
-end
-arch jessyb
-name Pedro
-x 25
-y 7
-carrying 100
-arch key2
-name Pedro's key
-slaying Pedro
-end
-end
-arch jessyb
-name Carlos
-x 25
-y 12
-carrying 100
-arch key2
-name Carlos' key
-slaying Carlos
-end
-end
-arch jessyb
-name Pedro
-x 25
-y 17
-carrying 100
-arch key2
-name Pedro's key
-slaying Pedro
-end
-end
-arch EDK
-name Juan
-x 30
-y 2
-carrying 100
-arch key2
-name Juan's key
-slaying Juan
-end
-end
-arch EDK
-name Amal
-x 30
-y 6
-carrying 100
-arch key2
-name Amal's key
-slaying Amal
-end
-end
-arch EDK
-name Juan
-x 30
-y 10
-carrying 100
-arch key2
-name Juan's key
-slaying Juan
-end
-end
-arch EDK
-name Amal
-x 30
-y 14
-carrying 100
-arch key2
-name Amal's key
-slaying Amal
-end
 end

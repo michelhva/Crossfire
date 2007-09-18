@@ -1,13 +1,13 @@
 arch map
-region wolfsburg
 name cellar_1
+region wolfsburg
+width 35
+height 35
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Oct 15 00:20:59 1994
 endmsg
-x 35
-y 35
 end
 arch small_stones
 end
@@ -500,6 +500,10 @@ arch small_stones
 x 2
 y 4
 end
+arch chinese_dragon
+x 2
+y 4
+end
 arch small_stones
 x 2
 y 5
@@ -948,6 +952,10 @@ arch small_stones
 x 4
 y 7
 end
+arch chinese_dragon
+x 4
+y 7
+end
 arch small_stones
 x 4
 y 8
@@ -1306,6 +1314,10 @@ arch small_stones
 x 5
 y 32
 end
+arch big_dragon
+x 5
+y 32
+end
 arch small_stones
 x 5
 y 33
@@ -1453,6 +1465,10 @@ x 6
 y 18
 end
 arch chest
+x 6
+y 18
+end
+arch dragon
 x 6
 y 18
 end
@@ -2211,6 +2227,10 @@ arch small_stones
 x 9
 y 32
 end
+arch big_dragon
+x 9
+y 32
+end
 arch small_stones
 x 9
 y 33
@@ -2608,6 +2628,10 @@ x 11
 y 23
 end
 arch chest
+x 11
+y 23
+end
+arch dragon
 x 11
 y 23
 end
@@ -3092,6 +3116,10 @@ arch small_stones
 x 13
 y 32
 end
+arch big_dragon
+x 13
+y 32
+end
 arch small_stones
 x 13
 y 33
@@ -3151,6 +3179,10 @@ x 14
 y 7
 end
 arch small_stones
+x 14
+y 8
+end
+arch giant
 x 14
 y 8
 end
@@ -4949,6 +4981,10 @@ arch small_stones
 x 21
 y 19
 end
+arch dread
+x 21
+y 19
+end
 arch small_stones
 x 21
 y 20
@@ -4965,6 +5001,10 @@ arch small_stones
 x 21
 y 23
 end
+arch dread
+x 21
+y 23
+end
 arch small_stones
 x 21
 y 24
@@ -4978,6 +5018,10 @@ x 21
 y 26
 end
 arch small_stones
+x 21
+y 27
+end
+arch dread
 x 21
 y 27
 end
@@ -5625,6 +5669,10 @@ arch small_stones
 x 25
 y 2
 end
+arch troll
+x 25
+y 2
+end
 arch small_stones
 x 25
 y 3
@@ -5770,6 +5818,10 @@ x 25
 y 28
 end
 arch small_stones
+x 25
+y 29
+end
+arch chinese_dragon
 x 25
 y 29
 end
@@ -5936,6 +5988,10 @@ x 26
 y 22
 end
 arch small_stones
+x 26
+y 23
+end
+arch demon_lord
 x 26
 y 23
 end
@@ -6347,6 +6403,10 @@ arch small_stones
 x 28
 y 29
 end
+arch chinese_dragon
+x 28
+y 29
+end
 arch small_stones
 x 28
 y 30
@@ -6715,6 +6775,10 @@ arch small_stones
 x 30
 y 23
 end
+arch demon_lord
+x 30
+y 23
+end
 arch small_stones
 x 30
 y 24
@@ -6954,6 +7018,10 @@ x 31
 y 28
 end
 arch small_stones
+x 31
+y 29
+end
+arch chinese_dragon
 x 31
 y 29
 end
@@ -7710,72 +7778,4 @@ end
 arch cave20
 x 34
 y 34
-end
-arch chinese_dragon
-x 2
-y 4
-end
-arch chinese_dragon
-x 4
-y 7
-end
-arch big_dragon
-x 5
-y 32
-end
-arch dragon
-x 6
-y 18
-end
-arch big_dragon
-x 9
-y 32
-end
-arch dragon
-x 11
-y 23
-end
-arch big_dragon
-x 13
-y 32
-end
-arch giant
-x 14
-y 8
-end
-arch dread
-x 21
-y 19
-end
-arch dread
-x 21
-y 23
-end
-arch dread
-x 21
-y 27
-end
-arch troll
-x 25
-y 2
-end
-arch chinese_dragon
-x 25
-y 29
-end
-arch demon_lord
-x 26
-y 23
-end
-arch chinese_dragon
-x 28
-y 29
-end
-arch demon_lord
-x 30
-y 23
-end
-arch chinese_dragon
-x 31
-y 29
 end

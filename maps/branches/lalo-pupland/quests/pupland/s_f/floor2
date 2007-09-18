@@ -1,6 +1,8 @@
 arch map
-region pupland
 name floor2
+region pupland
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -1796,10 +1798,10 @@ people
 endmsg
 Int 1
 ac 1
-armour 4
 material 64
 value 320000
 weight 33000
+armour 4
 end
 arch poison
 end

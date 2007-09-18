@@ -1,14 +1,14 @@
 arch map
 name roller_cades
+difficulty 5
+width 30
+height 11
+enter_y 4
 msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 21 21:13:36 1998
 endmsg
-sp 4
-x 30
-y 11
-level 5
 end
 arch dwall_2_2_2
 end
@@ -102,8 +102,6 @@ arch dwall_2_1_2
 x 2
 end
 arch spikes_open
-msg
-endmsg
 x 2
 y 1
 connected 10
@@ -503,7 +501,7 @@ name Roller 3
 msg
 Roller 3...
 A cycle of 3 is set up using 2 buttons
-under each position to ensure one way 
+under each position to ensure one way
 movement of the object. In this case a
 very light weight `Passport'. Just to
 show boulers are NOT needed.
@@ -516,7 +514,7 @@ means that the boulder rolls in a weird
 fasion.
 -
 However the spikes stay up that little
-extra amount of time and when active 
+extra amount of time and when active
 will be up more often than not (2/3 of
 the time). As such boulder below will
 roll around its enclosure, but is not
@@ -1053,11 +1051,11 @@ longer cycle, indeed a 6 position loop
 does work properly. OR somehow change
 the timing of the spikes to get them to
 reset just that little bit faster.
--- 
+--
 Compare the vast area this device needs
 to actually go its job, to the
 `inverted' form next. The surounding
-fences needed to form the channel is 
+fences needed to form the channel is
 just enormous and wastful.
 endmsg
 x 17
@@ -1449,7 +1447,7 @@ msg
 Hard Way...
 This is a totally self contained roller
 cade, each spot has a button underneath
-to activate that and only that spikes. 
+to activate that and only that spikes.
 --
 This means that you need a connected
 button/skipe set for every position

@@ -419,6 +419,20 @@ arch dungeon_floor
 x 5
 y 5
 end
+arch giant
+msg
+@match thirsty
+It's so hot today!  And we can't leave
+our posts.  Say, if you brought some
+booze for me and dropped it at my
+feet, I'd be mighty obliged.  I am
+VERY thirsty!  Yes, if you bring
+enough, I'll let you in!
+endmsg
+x 5
+y 5
+unaggressive 1
+end
 arch dungeon_floor
 x 5
 y 6
@@ -735,6 +749,15 @@ end
 arch dungeon_floor
 x 8
 y 5
+end
+arch giant
+msg
+@match *
+NONE SHALL PASS!
+endmsg
+x 8
+y 5
+unaggressive 1
 end
 arch dungeon_floor
 x 8
@@ -1194,27 +1217,4 @@ end
 arch dungeon_floor
 x 13
 y 15
-end
-arch giant
-msg
-@match thirsty
-It's so hot today!  And we can't leave
-our posts.  Say, if you brought some
-booze for me and dropped it at my
-feet, I'd be mighty obliged.  I am
-VERY thirsty!  Yes, if you bring
-enough, I'll let you in!
-endmsg
-x 5
-y 5
-unaggressive 1
-end
-arch giant
-msg
-@match *
-NONE SHALL PASS!
-endmsg
-x 8
-y 5
-unaggressive 1
 end

@@ -1,14 +1,13 @@
 arch map
 name cave
+width 20
+height 14
+enter_x 1
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Thu Jan 28 18:58:12 1999
 endmsg
-hp 1
-sp 0
-x 20
-y 14
 end
 arch dungeon_floor
 end
@@ -195,6 +194,10 @@ arch dungeon_magic
 x 1
 y 11
 end
+arch Cwyvern
+x 1
+y 11
+end
 arch dungeon_floor
 x 1
 y 12
@@ -238,6 +241,10 @@ x 2
 y 3
 end
 arch dungeon_magic
+x 2
+y 3
+end
+arch slug
 x 2
 y 3
 end
@@ -599,6 +606,10 @@ arch dungeon_magic
 x 5
 y 6
 end
+arch Cwyvern
+x 5
+y 6
+end
 arch dungeon_floor
 x 5
 y 7
@@ -628,6 +639,10 @@ x 5
 y 10
 end
 arch dungeon_magic
+x 5
+y 10
+end
+arch byakie
 x 5
 y 10
 end
@@ -670,6 +685,10 @@ x 6
 y 1
 end
 arch dungeon_magic
+x 6
+y 1
+end
+arch byakie
 x 6
 y 1
 end
@@ -1771,6 +1790,10 @@ arch blackmarble
 x 16
 y 5
 end
+arch big_wiz
+x 16
+y 5
+end
 arch blackmarble
 x 16
 y 6
@@ -2080,28 +2103,4 @@ end
 arch firewall_7
 x 19
 y 13
-end
-arch Cwyvern
-x 1
-y 11
-end
-arch slug
-x 2
-y 3
-end
-arch Cwyvern
-x 5
-y 6
-end
-arch byakie
-x 5
-y 10
-end
-arch byakie
-x 6
-y 1
-end
-arch big_wiz
-x 16
-y 5
 end

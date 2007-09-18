@@ -6104,6 +6104,24 @@ arch pstone_1
 x 21
 y 25
 end
+arch giant
+name huge hill giant
+hp 500
+maxhp 500
+x 21
+y 25
+resist_physical 50
+arch random_potion
+end
+arch random_wealth
+hp 3
+end
+arch bracers_ac
+title of minor insulation
+resist_electricity 15
+value 2000
+end
+end
 arch pstone_1
 x 21
 y 26
@@ -10431,22 +10449,4 @@ end
 arch blocked
 x 37
 y 37
-end
-arch giant
-name huge hill giant
-hp 500
-maxhp 500
-x 21
-y 25
-resist_physical 50
-arch random_potion
-end
-arch random_wealth
-hp 3
-end
-arch bracers_ac
-title of minor insulation
-resist_electricity 15
-value 2000
-end
 end

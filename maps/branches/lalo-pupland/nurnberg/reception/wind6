@@ -1,12 +1,13 @@
 arch map
-region nurnberg
 name wind6
+region nurnberg
+width 24
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Feb 28 18:34:57 1996
 endmsg
-x 24
 end
 arch flagstone
 end
@@ -112,6 +113,22 @@ arch flagstone
 x 1
 y 1
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 1
+y 1
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 1
 y 2
@@ -197,6 +214,22 @@ end
 arch flagstone
 x 2
 y 4
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 2
+y 4
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
 end
 arch flagstone
 x 2
@@ -609,6 +642,22 @@ arch flagstone
 x 5
 y 3
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 5
+y 3
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
+end
 arch flagstone
 x 5
 y 4
@@ -933,6 +982,22 @@ arch flagstone
 x 7
 y 11
 end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 7
+y 11
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
+end
 arch flagstone
 x 7
 y 12
@@ -1108,6 +1173,22 @@ end
 arch flagstone
 x 9
 y 2
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 9
+y 2
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch abil_icestorm
+end
+arch spell_hellfire
+end
 end
 arch flagstone
 x 9
@@ -1444,6 +1525,22 @@ end
 arch flagstone
 x 11
 y 11
+end
+arch behemoth
+name Behemoth
+Pow 100
+maxsp 300
+x 11
+y 11
+attack_movement 7
+can_cast_spell 1
+immune 16392
+arch spell_sm_lightning
+end
+arch spell_hellfire
+end
+arch abil_icestorm
+end
 end
 arch flagstone
 x 11
@@ -2532,100 +2629,4 @@ end
 arch blocked
 x 23
 y 12
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 1
-y 1
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 2
-y 4
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 5
-y 3
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 7
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 9
-y 2
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch abil_icestorm
-end
-arch spell_hellfire
-end
-end
-arch behemoth
-name Behemoth
-Pow 100
-maxsp 300
-x 11
-y 11
-attack_movement 7
-immune 16392
-can_cast_spell 1
-arch spell_sm_lightning
-end
-arch spell_hellfire
-end
-arch abil_icestorm
-end
 end

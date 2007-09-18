@@ -4050,6 +4050,13 @@ arch woods
 x 19
 y 44
 end
+arch ent
+msg
+
+endmsg
+x 19
+y 44
+end
 arch woods
 x 19
 y 45
@@ -7736,6 +7743,10 @@ arch grass
 x 38
 y 4
 end
+arch troll
+x 38
+y 4
+end
 arch brush
 x 38
 y 5
@@ -10206,15 +10217,4 @@ end
 arch tree
 x 49
 y 49
-end
-arch ent
-msg
-
-endmsg
-x 19
-y 44
-end
-arch troll
-x 38
-y 4
 end

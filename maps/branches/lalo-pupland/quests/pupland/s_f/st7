@@ -1,21 +1,17 @@
 arch map
-region pupland
 name st7
+region pupland
+width 17
+height 13
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Feb 12 18:16:09 1996
 endmsg
-x 17
-y 13
 end
 arch blocked
-msg
-endmsg
 end
 arch blocked
-msg
-endmsg
 y 1
 end
 arch flagstone
@@ -73,18 +69,12 @@ arch awall_2_2_1
 y 10
 end
 arch blocked
-msg
-endmsg
 y 11
 end
 arch blocked
-msg
-endmsg
 y 12
 end
 arch blocked
-msg
-endmsg
 x 1
 end
 arch flagstone
@@ -165,8 +155,6 @@ x 1
 y 11
 end
 arch blocked
-msg
-endmsg
 x 1
 y 12
 end
@@ -442,8 +430,8 @@ face statue.111
 x 5
 y 5
 weight 1000000
-can_roll 1
 move_type 1
+can_roll 1
 end
 arch button_plate
 x 5
@@ -516,9 +504,9 @@ end
 arch axe_3
 name golden axe
 face axe_3_golden.111
-materialname gold
 x 6
 y 1
+materialname gold
 value 10000000
 end
 arch flagstone
@@ -705,9 +693,9 @@ face statue.111
 x 7
 y 7
 weight 2000000
+move_type 1
 no_pass 1
 can_roll 1
-move_type 1
 end
 arch flagstone
 x 7
@@ -958,8 +946,6 @@ x 10
 y 12
 end
 arch blocked
-msg
-endmsg
 x 11
 end
 arch flagstone
@@ -1005,12 +991,11 @@ end
 arch leather_armour
 name Yoroi of Banzai
 ac 4
-armour 10
 x 11
 y 6
-immune 131072
 value 100000
 weight 5000
+armour 131072
 end
 arch flagstone
 x 11
@@ -1046,19 +1031,13 @@ x 11
 y 11
 end
 arch blocked
-msg
-endmsg
 x 11
 y 12
 end
 arch blocked
-msg
-endmsg
 x 12
 end
 arch blocked
-msg
-endmsg
 x 12
 y 1
 end
@@ -1135,85 +1114,57 @@ x 12
 y 10
 end
 arch blocked
-msg
-endmsg
 x 12
 y 11
 end
 arch blocked
-msg
-endmsg
 x 12
 y 12
 end
 arch blocked
-msg
-endmsg
 x 13
 end
 arch blocked
-msg
-endmsg
 x 13
 y 1
 end
 arch blocked
-msg
-endmsg
 x 13
 y 2
 end
 arch blocked
-msg
-endmsg
 x 13
 y 3
 end
 arch blocked
-msg
-endmsg
 x 13
 y 4
 end
 arch blocked
-msg
-endmsg
 x 13
 y 5
 end
 arch blocked
-msg
-endmsg
 x 13
 y 6
 end
 arch blocked
-msg
-endmsg
 x 13
 y 7
 end
 arch blocked
-msg
-endmsg
 x 13
 y 8
 end
 arch blocked
-msg
-endmsg
 x 13
 y 9
 end
 arch blocked
-msg
-endmsg
 x 13
 y 10
 end
 arch blocked
-msg
-endmsg
 x 13
 y 11
 end
@@ -1225,8 +1176,6 @@ y 12
 connected 24
 end
 arch blocked
-msg
-endmsg
 x 14
 end
 arch gate_open_1
@@ -1253,14 +1202,10 @@ y 3
 connected 21
 end
 arch blocked
-msg
-endmsg
 x 14
 y 4
 end
 arch blocked
-msg
-endmsg
 x 14
 y 5
 end
@@ -1276,103 +1221,69 @@ x 14
 y 6
 end
 arch blocked
-msg
-endmsg
 x 14
 y 7
 end
 arch blocked
-msg
-endmsg
 x 14
 y 8
 end
 arch blocked
-msg
-endmsg
 x 14
 y 9
 end
 arch blocked
-msg
-endmsg
 x 14
 y 11
 end
 arch blocked
-msg
-endmsg
 x 14
 y 12
 end
 arch blocked
-msg
-endmsg
 x 15
 end
 arch blocked
-msg
-endmsg
 x 15
 y 1
 end
 arch blocked
-msg
-endmsg
 x 15
 y 2
 end
 arch blocked
-msg
-endmsg
 x 15
 y 3
 end
 arch blocked
-msg
-endmsg
 x 15
 y 4
 end
 arch blocked
-msg
-endmsg
 x 15
 y 5
 end
 arch blocked
-msg
-endmsg
 x 15
 y 6
 end
 arch blocked
-msg
-endmsg
 x 15
 y 7
 end
 arch blocked
-msg
-endmsg
 x 15
 y 8
 end
 arch blocked
-msg
-endmsg
 x 15
 y 9
 end
 arch blocked
-msg
-endmsg
 x 15
 y 10
 end
 arch blocked
-msg
-endmsg
 x 15
 y 11
 end
@@ -1384,8 +1295,6 @@ y 12
 connected 23
 end
 arch blocked
-msg
-endmsg
 x 16
 end
 arch gate_open_1
@@ -1412,14 +1321,10 @@ y 3
 connected 12
 end
 arch blocked
-msg
-endmsg
 x 16
 y 4
 end
 arch blocked
-msg
-endmsg
 x 16
 y 5
 end
@@ -1435,8 +1340,6 @@ x 16
 y 6
 end
 arch blocked
-msg
-endmsg
 x 16
 y 7
 end
@@ -1455,8 +1358,6 @@ x 16
 y 8
 end
 arch blocked
-msg
-endmsg
 x 16
 y 9
 end
@@ -1468,14 +1369,10 @@ y 10
 connected 22
 end
 arch blocked
-msg
-endmsg
 x 16
 y 11
 end
 arch blocked
-msg
-endmsg
 x 16
 y 12
 end

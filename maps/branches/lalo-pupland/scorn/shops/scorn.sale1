@@ -1310,6 +1310,40 @@ arch woodfloor
 x 10
 y 6
 end
+arch titan
+name busy store manager
+msg
+@match *
+If you don't leave me alone I will kill you!
+endmsg
+x 10
+y 6
+resist_physical 95
+resist_magic 100
+resist_fire 75
+resist_cold 75
+resist_confusion 75
+resist_acid 75
+resist_drain 75
+resist_weaponmagic 100
+resist_ghosthit 75
+resist_poison 75
+resist_slow 75
+resist_paralyze 75
+resist_turn_undead 75
+resist_deplete 75
+resist_death 75
+resist_chaos 75
+resist_godpower 75
+resist_holyword 75
+resist_blind 75
+friendly 1
+hitback 1
+unaggressive 1
+reflect_missile 1
+sleep 0
+stand_still 1
+end
 arch woodfloor
 x 10
 y 7
@@ -2688,38 +2722,4 @@ end
 arch cobblestones2
 x 20
 y 19
-end
-arch titan
-name busy store manager
-msg
-@match *
-If you don't leave me alone I will kill you!
-endmsg
-x 10
-y 6
-resist_physical 95
-resist_magic 100
-resist_fire 75
-resist_cold 75
-resist_confusion 75
-resist_acid 75
-resist_drain 75
-resist_weaponmagic 100
-resist_ghosthit 75
-resist_poison 75
-resist_slow 75
-resist_paralyze 75
-resist_turn_undead 75
-resist_deplete 75
-resist_death 75
-resist_chaos 75
-resist_godpower 75
-resist_holyword 75
-resist_blind 75
-friendly 1
-hitback 1
-unaggressive 1
-reflect_missile 1
-sleep 0
-stand_still 1
 end

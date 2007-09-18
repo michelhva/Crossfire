@@ -1,14 +1,14 @@
 arch map
 name gate_tests
+width 12
+height 14
+enter_x 12
+enter_y 8
 msg
 Creator: Anthony Thyssen
 Email: anthony@cit.gu.edu.au
 Date: Mon Dec 21 16:48:56 1998
 endmsg
-hp 12
-sp 8
-x 12
-y 14
 end
 arch dwall_2_2_2
 end
@@ -240,7 +240,7 @@ Objects falling in a trapdoor only
 appear somewhere nearby the requested
 spot, however the destination can be
 constrained with walls, and could be
-a hidden teleport (see below) for 
+a hidden teleport (see below) for
 an exact 'port to the final location.
 ---
 WARNING: This is broken in v95.1
@@ -327,7 +327,7 @@ teleport resets the spikes after it is
 started.
 --
 Other Notes on teleports
-* Default speed teleport speed is .1 
+* Default speed teleport speed is .1
 * ALl objects and people can be 'ported
 * Teleports can also 'port spell effects.
 * Teleports are exact (unlike trapdoors)
@@ -463,13 +463,13 @@ arch sign_e
 name Very Slow Flip Flop
 msg
 This is a very very very slow flip flop
-created using trigger gates. 
+created using trigger gates.
 --
 Also as a trigger gate `timeout' is
-restarted when the connected button 
+restarted when the connected button
 depresses, the trigger gate work to
 their FULL time period AND ensures
-asymmetric behaviour. 
+asymmetric behaviour.
 --
 Because trigger gates are normally
 up by default the flip flop also

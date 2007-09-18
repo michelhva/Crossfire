@@ -1039,6 +1039,14 @@ arch sea1
 x 15
 y 2
 end
+arch rowboat
+name boat to shore
+slaying /world/world_129_109
+hp 5
+sp 10
+x 15
+y 2
+end
 arch woodfloor
 x 15
 y 3
@@ -1702,12 +1710,4 @@ end
 arch sea
 x 24
 y 15
-end
-arch rowboat
-name boat to shore
-slaying /world/world_129_109
-hp 5
-sp 10
-x 15
-y 2
 end

@@ -1,13 +1,13 @@
 arch map
-region pupland
 name hall_of_fame
+region pupland
+width 13
+height 28
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Jul  2 01:56:06 1997
 endmsg
-x 13
-y 28
 end
 arch blocked
 end
@@ -833,7 +833,7 @@ arch monument
 msg
 The greatest Heroes of Pupland:
 ------------------------------
-   
+
    Allarounder, the Murderer
    BugMaster, the Dorobou
    POL, the Ninja Master

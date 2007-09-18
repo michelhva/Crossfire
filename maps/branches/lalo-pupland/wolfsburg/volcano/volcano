@@ -1450,7 +1450,15 @@ arch large_stones
 x 11
 y 12
 end
+arch active_volcano
+x 11
+y 12
+end
 arch large_stones
+x 11
+y 13
+end
+arch active_volcano
 x 11
 y 13
 end
@@ -1694,7 +1702,15 @@ arch large_stones
 x 13
 y 12
 end
+arch active_volcano
+x 13
+y 12
+end
 arch large_stones
+x 13
+y 13
+end
+arch active_volcano
 x 13
 y 13
 end
@@ -3172,20 +3188,4 @@ end
 arch rough_wall_2_2_4
 x 24
 y 24
-end
-arch active_volcano
-x 11
-y 12
-end
-arch active_volcano
-x 11
-y 13
-end
-arch active_volcano
-x 13
-y 12
-end
-arch active_volcano
-x 13
-y 13
 end

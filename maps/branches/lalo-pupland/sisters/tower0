@@ -346,6 +346,24 @@ arch flagstone
 x 3
 y 7
 end
+arch troll
+name Gygax the hideous troll
+Str 80
+hp 8000
+exp 100000
+dam 70
+wc -10
+ac -5
+x 3
+y 7
+level 20
+carrying 12
+see_invisible 1
+vulnerable 0
+arch heart
+name Gygax's heart
+end
+end
 arch flagstone
 x 3
 y 8
@@ -1834,22 +1852,4 @@ end
 arch blocked
 x 15
 y 15
-end
-arch troll
-name Gygax the hideous troll
-Str 80
-hp 8000
-exp 100000
-dam 70
-wc -10
-ac -5
-x 3
-y 7
-level 20
-carrying 12
-see_invisible 1
-vulnerable 0
-arch heart
-name Gygax's heart
-end
 end

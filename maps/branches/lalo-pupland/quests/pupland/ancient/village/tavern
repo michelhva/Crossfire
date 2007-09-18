@@ -1,12 +1,13 @@
 arch map
-region ancientpupland
 name tavern
+region ancientpupland
+width 16
+height 18
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue May 21 22:59:59 1996
 endmsg
-y 18
 end
 arch woodfloor
 end
@@ -304,7 +305,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -348,7 +349,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -450,7 +451,7 @@ msg
 Look at those fools. They believe in
 Siegfried, their `hero'. They are so
 scared, they would believe in anything
-as long as it makes them feel better! 
+as long as it makes them feel better!
 endmsg
 hp 180
 maxhp 180
@@ -612,7 +613,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -638,7 +639,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -794,7 +795,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -816,7 +817,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -838,7 +839,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -860,7 +861,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1004,7 +1005,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1026,7 +1027,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1112,7 +1113,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1223,13 +1224,13 @@ msg
 Psst! You know my old name, don't you?
 I want to have a talk with you.
 There is a switch in the tree of my
-house. 
+house.
 @match [Yy]ou killed [Jj]acob
 Hahaha!
 I love such kind of joke.
 BTW, I wanna invite you to dinner.
 There is a switch in the tree of my
-house. 
+house.
 I'll be waiting for you :)
 @match no|No
 You refuse to fetch my beer? Don't
@@ -1269,7 +1270,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1291,7 +1292,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1313,7 +1314,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1335,7 +1336,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1361,7 +1362,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1489,7 +1490,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1511,7 +1512,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1533,7 +1534,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1555,7 +1556,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1747,7 +1748,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -1781,7 +1782,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -1979,7 +1980,7 @@ end
 arch thief
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face thief.111
 hp 100
@@ -2005,7 +2006,7 @@ end
 arch barbarian
 msg
 @match *
-Siegfried, banzai! 
+Siegfried, banzai!
 endmsg
 face barbarian.111
 hp 100
@@ -2738,7 +2739,7 @@ name barkeeper
 msg
 @match *
 Siegfried is so brave. We don't have to
-be scared anymore.  
+be scared anymore.
 endmsg
 face man.171
 hp 180

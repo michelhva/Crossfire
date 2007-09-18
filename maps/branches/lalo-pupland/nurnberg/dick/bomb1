@@ -1,14 +1,14 @@
 arch map
-region nurnberg
 name bomb1
+difficulty 7
+region nurnberg
+width 35
+height 32
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Dec 25 16:45:41 1996
 endmsg
-x 35
-y 32
-level 7
 end
 arch blocked
 y 6
@@ -148,8 +148,8 @@ hp 2
 sp 29
 y 29
 speed 0.000000
-protected 10
 connected 10
+protected 10
 end
 arch scroll
 name scroll2
@@ -178,8 +178,8 @@ end
 arch button_lever
 x 1
 y 8
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 1
@@ -260,8 +260,8 @@ end
 arch button_lever
 x 1
 y 25
-protected 10
 connected 10
+protected 10
 end
 arch dungeon_floor
 x 1
@@ -273,8 +273,8 @@ sp 17
 x 1
 y 26
 speed 0.000000
-protected 10
 connected 10
+protected 10
 end
 arch dungeon_floor
 x 1
@@ -309,6 +309,10 @@ x 2
 y 7
 end
 arch dungeon_floor
+x 2
+y 8
+end
+arch big_wiz
 x 2
 y 8
 end
@@ -353,6 +357,10 @@ x 2
 y 18
 end
 arch dungeon_floor
+x 2
+y 19
+end
+arch titan
 x 2
 y 19
 end
@@ -420,9 +428,9 @@ arch button_plate
 name 11
 x 2
 y 29
-protected 11
 weight 600
 connected 11
+protected 11
 end
 arch blocked
 x 2
@@ -480,6 +488,10 @@ x 3
 y 11
 end
 arch dungeon_floor
+x 3
+y 12
+end
+arch big_elec
 x 3
 y 12
 end
@@ -665,6 +677,10 @@ arch dungeon_floor
 x 4
 y 16
 end
+arch titan
+x 4
+y 16
+end
 arch dungeon_floor
 x 4
 y 17
@@ -729,8 +745,8 @@ arch button_plate
 name 15
 x 4
 y 29
-protected 15
 connected 15
+protected 15
 end
 arch blocked
 x 4
@@ -752,8 +768,8 @@ sp 9
 x 5
 y 1
 speed 0.000000
-protected 510
 connected 510
+protected 510
 end
 arch dungeon_floor
 x 5
@@ -803,6 +819,10 @@ arch dungeon_floor
 x 5
 y 8
 end
+arch big_wiz
+x 5
+y 8
+end
 arch dungeon_floor
 x 5
 y 9
@@ -847,6 +867,10 @@ arch dungeon_floor
 x 5
 y 19
 end
+arch gaelotroll
+x 5
+y 19
+end
 arch dungeon_floor
 x 5
 y 20
@@ -880,7 +904,7 @@ msg
 Bombs Transfer System(in trouble):
 1. Put bombs on the teleporter
 2. Pull the lever.
-Don't enter the teleporter. 
+Don't enter the teleporter.
 endmsg
 x 5
 y 24
@@ -910,9 +934,9 @@ name 14
 x 5
 y 29
 speed 0.500000
-protected 14
 value 1
 connected 14
+protected 14
 end
 arch boulder
 x 5
@@ -992,6 +1016,10 @@ arch dungeon_floor
 x 6
 y 12
 end
+arch big_elec
+x 6
+y 12
+end
 arch dungeon_floor
 x 6
 y 13
@@ -1072,8 +1100,8 @@ arch button_plate
 name 14
 x 6
 y 29
-protected 14
 connected 14
+protected 14
 end
 arch blocked
 x 6
@@ -1100,8 +1128,8 @@ end
 arch button_lever
 x 7
 y 1
-protected 510
 connected 510
+protected 510
 end
 arch dungeon_floor
 x 7
@@ -1184,6 +1212,10 @@ x 7
 y 18
 end
 arch dungeon_floor
+x 7
+y 19
+end
+arch gaelotroll
 x 7
 y 19
 end
@@ -1269,9 +1301,9 @@ name 13
 x 7
 y 29
 speed 0.500000
-protected 13
 value 1
 connected 13
+protected 13
 end
 arch boulder
 x 7
@@ -1312,7 +1344,7 @@ msg
 Bombs Transfer System:
 1. Put bombs on the teleporter.
 2. Pull the lever.
-Don't enter the teleporter! 
+Don't enter the teleporter!
 endmsg
 x 8
 y 4
@@ -1541,8 +1573,8 @@ arch button_plate
 name 13
 x 8
 y 29
-protected 13
 connected 13
+protected 13
 end
 arch blocked
 x 8
@@ -1618,6 +1650,10 @@ arch dungeon_floor
 x 9
 y 13
 end
+arch big_elec
+x 9
+y 13
+end
 arch dungeon_floor
 x 9
 y 14
@@ -1662,6 +1698,10 @@ x 9
 y 18
 end
 arch dungeon_floor
+x 9
+y 19
+end
+arch gaelotroll
 x 9
 y 19
 end
@@ -1726,9 +1766,9 @@ name 12
 x 9
 y 29
 speed 0.500000
-protected 12
 value 1
 connected 12
+protected 12
 end
 arch boulder
 x 9
@@ -1804,6 +1844,10 @@ arch dungeon_floor
 x 10
 y 7
 end
+arch big_elec
+x 10
+y 7
+end
 arch dungeon_floor
 x 10
 y 8
@@ -1813,6 +1857,10 @@ x 10
 y 9
 end
 arch dungeon_floor
+x 10
+y 10
+end
+arch big_elec
 x 10
 y 10
 end
@@ -1894,8 +1942,8 @@ arch gate_closed_1
 x 10
 y 18
 speed 0.500000
-protected 1
 connected 1
+protected 1
 end
 arch dungeon_floor
 x 10
@@ -1961,8 +2009,8 @@ arch button_plate
 name 12
 x 10
 y 29
-protected 12
 connected 12
+protected 12
 end
 arch blocked
 x 10
@@ -2039,6 +2087,10 @@ x 11
 y 12
 end
 arch dungeon_floor
+x 11
+y 13
+end
+arch big_wiz
 x 11
 y 13
 end
@@ -2155,9 +2207,9 @@ name 11
 x 11
 y 29
 speed 0.500000
-protected 11
 value 1
 connected 11
+protected 11
 end
 arch boulder
 x 11
@@ -2206,6 +2258,10 @@ arch dungeon_floor
 x 12
 y 6
 end
+arch big_elec
+x 12
+y 6
+end
 arch dungeon_floor
 x 12
 y 7
@@ -2223,6 +2279,10 @@ x 12
 y 9
 end
 arch dungeon_floor
+x 12
+y 10
+end
+arch big_elec
 x 12
 y 10
 end
@@ -2531,6 +2591,10 @@ arch dungeon_floor
 x 14
 y 6
 end
+arch big_elec
+x 14
+y 6
+end
 arch dungeon_floor
 x 14
 y 7
@@ -2560,6 +2624,10 @@ x 14
 y 12
 end
 arch dungeon_floor
+x 14
+y 13
+end
+arch big_wiz
 x 14
 y 13
 end
@@ -2692,6 +2760,10 @@ x 15
 y 10
 end
 arch dungeon_floor
+x 15
+y 11
+end
+arch titan
 x 15
 y 11
 end
@@ -2824,8 +2896,8 @@ hp 4
 sp 24
 x 15
 y 30
-protected 11
 connected 11
+protected 11
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -2947,7 +3019,7 @@ arch sign
 name Instruction
 msg
 Bomb is very powerful in this game.
-1. Move to on the marking rune and 
+1. Move to on the marking rune and
    invoke create earth wall to
    the north.
 2. Pull the lever to open the gate.
@@ -2965,8 +3037,8 @@ end
 arch button_lever
 x 16
 y 21
-protected 500
 connected 500
+protected 500
 end
 arch dungeon_floor
 x 16
@@ -3009,8 +3081,8 @@ hp 12
 sp 20
 x 16
 y 30
-protected 14
 connected 14
+protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3062,6 +3134,10 @@ x 17
 y 7
 end
 arch dungeon_floor
+x 17
+y 8
+end
+arch titan
 x 17
 y 8
 end
@@ -3238,8 +3314,8 @@ hp 10
 sp 26
 x 17
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3314,6 +3390,10 @@ arch dungeon_floor
 x 18
 y 13
 end
+arch titan
+x 18
+y 13
+end
 arch dungeon_floor
 x 18
 y 14
@@ -3341,6 +3421,11 @@ end
 arch dungeon_floor
 x 18
 y 18
+end
+arch big_dragon
+x 18
+y 18
+see_invisible 0
 end
 arch dungeon_floor
 x 18
@@ -3451,8 +3536,8 @@ hp 12
 sp 26
 x 18
 y 30
-protected 14
 connected 14
+protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3591,8 +3676,8 @@ arch grate_closed_1
 x 19
 y 20
 speed 0.500000
-protected 500
 connected 500
+protected 500
 end
 arch dungeon_floor
 x 19
@@ -3646,8 +3731,8 @@ hp 12
 sp 24
 x 19
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3769,8 +3854,8 @@ end
 arch button_lever
 x 20
 y 19
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_floor
 x 20
@@ -3853,8 +3938,8 @@ hp 9
 sp 26
 x 20
 y 30
-protected 14
 connected 14
+protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3893,6 +3978,10 @@ arch dungeon_floor
 x 21
 y 6
 end
+arch demon_lord
+x 21
+y 6
+end
 arch dungeon_floor
 x 21
 y 7
@@ -3921,6 +4010,10 @@ arch dungeon_floor
 x 21
 y 12
 end
+arch baslic
+x 21
+y 12
+end
 arch dungeon_floor
 x 21
 y 13
@@ -3930,6 +4023,10 @@ x 21
 y 14
 end
 arch dungeon_floor
+x 21
+y 15
+end
+arch big_dragon
 x 21
 y 15
 end
@@ -3953,8 +4050,8 @@ arch gate_closed_2
 x 21
 y 18
 speed 0.500000
-protected 3
 connected 3
+protected 3
 end
 arch dungeon_floor
 x 21
@@ -4021,8 +4118,8 @@ hp 12
 sp 19
 x 21
 y 30
-protected 12
 connected 12
+protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4164,6 +4261,10 @@ arch dungeon_floor
 x 22
 y 24
 end
+arch chinese_dragon
+x 22
+y 24
+end
 arch dungeon_floor
 x 22
 y 25
@@ -4193,8 +4294,8 @@ hp 4
 sp 24
 x 22
 y 30
-protected 15
 connected 15
+protected 15
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4350,8 +4451,8 @@ hp 14
 sp 10
 x 23
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4450,6 +4551,10 @@ arch dungeon_floor
 x 24
 y 12
 end
+arch baslic
+x 24
+y 12
+end
 arch dungeon_floor
 x 24
 y 13
@@ -4539,8 +4644,8 @@ hp 4
 sp 25
 x 24
 y 28
-protected 15
 connected 15
+protected 15
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4632,6 +4737,10 @@ x 25
 y 14
 end
 arch dungeon_floor
+x 25
+y 15
+end
+arch big_dragon
 x 25
 y 15
 end
@@ -4728,8 +4837,8 @@ hp 11
 sp 7
 x 25
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4981,6 +5090,10 @@ arch dungeon_floor
 x 27
 y 12
 end
+arch baslic
+x 27
+y 12
+end
 arch dungeon_floor
 x 27
 y 13
@@ -5082,8 +5195,8 @@ hp 17
 sp 7
 x 27
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -5170,6 +5283,10 @@ arch dungeon_floor
 x 28
 y 15
 end
+arch big_dragon
+x 28
+y 15
+end
 arch dungeon_floor
 x 28
 y 16
@@ -5243,8 +5360,8 @@ hp 11
 sp 13
 x 28
 y 30
-protected 13
 connected 13
+protected 13
 end
 arch blocked
 x 28
@@ -5386,6 +5503,10 @@ arch dungeon_floor
 x 29
 y 22
 end
+arch titan
+x 29
+y 22
+end
 arch dungeon_floor
 x 29
 y 23
@@ -5415,8 +5536,8 @@ hp 17
 sp 13
 x 29
 y 28
-protected 13
 connected 13
+protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -5584,20 +5705,20 @@ end
 arch button_small
 x 31
 y 1
-protected 1192
 connected 1192
+protected 1192
 end
 arch button_small
 x 31
 y 2
-protected 1192
 connected 1192
+protected 1192
 end
 arch button_small
 x 31
 y 3
-protected 1192
 connected 1192
+protected 1192
 end
 arch blocked
 x 31
@@ -5786,15 +5907,15 @@ end
 arch button_small
 x 32
 y 1
-protected 1193
 connected 1193
+protected 1193
 end
 arch spikes_open
 x 32
 y 2
 speed 0.500000
-protected 500
 connected 500
+protected 500
 end
 arch boulder
 x 32
@@ -5803,8 +5924,8 @@ end
 arch button_small
 x 32
 y 3
-protected 1192
 connected 1192
+protected 1192
 end
 arch blocked
 x 32
@@ -5905,20 +6026,20 @@ end
 arch button_small
 x 33
 y 1
-protected 1192
 connected 1192
+protected 1192
 end
 arch button_small
 x 33
 y 2
-protected 1192
 connected 1192
+protected 1192
 end
 arch button_small
 x 33
 y 3
-protected 1192
 connected 1192
+protected 1192
 end
 arch blocked
 x 33
@@ -5929,9 +6050,9 @@ name 625
 x 33
 y 6
 speed 0.500000
-protected 625
 value 1
 connected 625
+protected 625
 end
 arch scroll
 x 33
@@ -5943,8 +6064,8 @@ sp 9
 x 33
 y 7
 speed 0.000000
-protected 510
 connected 510
+protected 510
 end
 arch blocked
 x 33
@@ -5954,8 +6075,8 @@ arch button_small
 name 1199
 x 33
 y 9
-protected 1199
 connected 1199
+protected 1199
 end
 arch blocked
 x 33
@@ -5968,8 +6089,8 @@ sp 1
 x 33
 y 11
 speed 0.000000
-protected 1193
 connected 1193
+protected 1193
 end
 arch teleporter
 name magic_mouth
@@ -5979,9 +6100,9 @@ sp 9
 x 33
 y 11
 speed 0.000000
-protected 510
 invisible 1
 connected 510
+protected 510
 end
 arch teleporter
 name 1192
@@ -5990,8 +6111,8 @@ sp 1
 x 33
 y 12
 speed 0.000000
-protected 1192
 connected 1192
+protected 1192
 end
 arch teleporter
 name magic_mouth
@@ -6001,9 +6122,9 @@ sp 9
 x 33
 y 12
 speed 0.000000
-protected 1199
 invisible 1
 connected 1199
+protected 1199
 end
 arch blocked
 x 33
@@ -6012,9 +6133,9 @@ end
 arch button_small
 x 33
 y 14
-protected 625
 weight 1200
 connected 625
+protected 625
 end
 arch blocked
 x 33
@@ -6026,8 +6147,8 @@ sp 14
 x 33
 y 16
 speed 0.000000
-protected 510
 connected 510
+protected 510
 end
 arch scroll
 name scroll4
@@ -6084,125 +6205,4 @@ end
 arch blocked
 x 34
 y 15
-end
-arch big_wiz
-x 2
-y 8
-end
-arch titan
-x 2
-y 19
-end
-arch big_elec
-x 3
-y 12
-end
-arch titan
-x 4
-y 16
-end
-arch big_wiz
-x 5
-y 8
-end
-arch gaelotroll
-x 5
-y 19
-end
-arch big_elec
-x 6
-y 12
-end
-arch gaelotroll
-x 7
-y 19
-end
-arch big_elec
-x 9
-y 13
-end
-arch gaelotroll
-x 9
-y 19
-end
-arch big_elec
-x 10
-y 7
-end
-arch big_elec
-x 10
-y 10
-end
-arch big_wiz
-x 11
-y 13
-end
-arch big_elec
-x 12
-y 6
-end
-arch big_elec
-x 12
-y 10
-end
-arch big_elec
-x 14
-y 6
-end
-arch big_wiz
-x 14
-y 13
-end
-arch titan
-x 15
-y 11
-end
-arch titan
-x 17
-y 8
-end
-arch titan
-x 18
-y 13
-end
-arch big_dragon
-x 18
-y 18
-see_invisible 0
-end
-arch demon_lord
-x 21
-y 6
-end
-arch baslic
-x 21
-y 12
-end
-arch big_dragon
-x 21
-y 15
-end
-arch chinese_dragon
-x 22
-y 24
-end
-arch baslic
-x 24
-y 12
-end
-arch big_dragon
-x 25
-y 15
-end
-arch baslic
-x 27
-y 12
-end
-arch big_dragon
-x 28
-y 15
-end
-arch titan
-x 29
-y 22
 end

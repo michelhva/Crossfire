@@ -1,16 +1,16 @@
 arch map
-region scorn
 name Wizards Workshop
-msg
-Creator: CF Java Map Editor
-Date:    12/28/2002
-endmsg
+reset_timeout 7200
+difficulty 1
+region scorn
 width 9
 height 14
 enter_x 4
 enter_y 13
-reset_timeout 7200
-difficulty 1
+msg
+Creator: CF Java Map Editor
+Date:    12/28/2002
+endmsg
 end
 arch blackmarble
 name Fractured Obsidian
@@ -157,15 +157,15 @@ x 1
 y 2
 end
 arch quarto
+title Fire
 msg
 A horn of fire can be manufactured
 with a unicorn horn and three
 dusts of ignition.
 endmsg
-title Fire
-no_pick 1
 x 1
 y 2
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -174,9 +174,9 @@ x 1
 y 3
 end
 arch emerald
-no_pick 1
 x 1
 y 3
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -305,9 +305,9 @@ x 2
 y 2
 end
 arch awall_0
-blocksview 0
 x 2
 y 2
+blocksview 0
 end
 arch blackmarble
 name Fractured Obsidian
@@ -316,9 +316,9 @@ x 2
 y 3
 end
 arch emerald
-no_pick 1
 x 2
 y 3
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -327,9 +327,9 @@ x 2
 y 4
 end
 arch emerald
-no_pick 1
 x 2
 y 4
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -366,10 +366,10 @@ x 2
 y 7
 end
 arch bones2
-type 71
-no_pick 1
 x 2
 y 7
+type 71
+no_pick 1
 end
 arch snow2
 name Ice Illusion
@@ -416,9 +416,9 @@ x 3
 y 1
 end
 arch sapphire
-no_pick 1
 x 3
 y 1
+no_pick 1
 end
 arch yellow_0
 x 3
@@ -445,9 +445,9 @@ x 3
 y 4
 end
 arch emerald
-no_pick 1
 x 3
 y 4
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -537,10 +537,10 @@ y 1
 end
 arch lava
 name Lava Illusion
-type 71
 name_pl Lava Illusion
 x 4
 y 1
+type 71
 end
 arch thaumaturg_desk
 x 4
@@ -559,39 +559,39 @@ x 4
 y 3
 end
 arch ruby
-no_pick 1
 x 4
 y 3
+no_pick 1
 end
 arch yellow_0
 x 4
 y 4
 end
 arch ruby
-no_pick 1
 x 4
 y 4
+no_pick 1
 end
 arch yellow_0
 x 4
 y 5
 end
 arch pedestal
-invisible 1
-connected 11
 x 4
 y 5
+invisible 1
+connected 11
 end
 arch yellow_0
 x 4
 y 6
 end
 arch grate_closed_1
+x 4
+y 6
 connected 11
 no_magic 1
 damned 1
-x 4
-y 6
 end
 arch yellow_0
 x 4
@@ -599,32 +599,32 @@ y 7
 end
 arch check_floor
 slaying tham_house1
-connected 11
 x 4
 y 7
+connected 11
 end
 arch yellow_0
 x 4
 y 8
 end
 arch trigger_marker
+slaying tham_house1
 msg
 You have one day's use of these facilities.
 endmsg
-slaying tham_house1
-connected 10
-speed 1.0
 food 504
 x 4
 y 8
+speed 1.0
+connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
 slaying platinacoin
 food 200
-connected 10
 x 4
 y 8
+connected 10
 end
 arch yellow_0
 x 4
@@ -651,18 +651,18 @@ x 4
 y 12
 end
 arch bones2
-type 71
-no_pick 1
 x 4
 y 12
+type 71
+no_pick 1
 end
 arch yellow_0
 x 4
 y 13
 end
 arch oakdoor
-face odoor_2.111
 slaying /world/world_105_115
+face odoor_2.111
 hp 11
 sp 43
 x 4
@@ -679,9 +679,9 @@ x 5
 y 1
 end
 arch sapphire
-no_pick 1
 x 5
 y 1
+no_pick 1
 end
 arch yellow_0
 x 5
@@ -708,9 +708,9 @@ x 5
 y 4
 end
 arch emerald
-no_pick 1
 x 5
 y 4
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -811,9 +811,9 @@ x 6
 y 2
 end
 arch awall_0
-blocksview 0
 x 6
 y 2
+blocksview 0
 end
 arch blackmarble
 name Fractured Obsidian
@@ -822,9 +822,9 @@ x 6
 y 3
 end
 arch emerald
-no_pick 1
 x 6
 y 3
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -833,9 +833,9 @@ x 6
 y 4
 end
 arch emerald
-no_pick 1
 x 6
 y 4
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -872,10 +872,10 @@ x 6
 y 7
 end
 arch bones2
-type 71
-no_pick 1
 x 6
 y 7
+type 71
+no_pick 1
 end
 arch snow2
 name Ice Illusion
@@ -940,16 +940,16 @@ x 7
 y 2
 end
 arch quarto
+title Frost
 msg
 A talisman of Frost can be made
 with a talisman, a ring of ice,
 and the heart of a chinese
 dragon.
 endmsg
-no_pick 1
-title Frost
 x 7
 y 2
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian
@@ -958,9 +958,9 @@ x 7
 y 3
 end
 arch emerald
-no_pick 1
 x 7
 y 3
+no_pick 1
 end
 arch blackmarble
 name Fractured Obsidian

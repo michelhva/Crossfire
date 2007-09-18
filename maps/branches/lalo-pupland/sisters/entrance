@@ -672,6 +672,13 @@ arch hills
 x 5
 y 14
 end
+arch city_tower
+slaying /sisters/tower1
+hp 7
+sp 15
+x 5
+y 14
+end
 arch pstone_2
 x 5
 y 15
@@ -1621,6 +1628,15 @@ arch medium_stones
 x 12
 y 14
 end
+arch troll
+name Sugrax the hill troll
+hp 5000
+exp 30000
+x 12
+y 14
+see_invisible 1
+immune 2
+end
 arch medium_stones
 x 12
 y 15
@@ -1719,6 +1735,54 @@ end
 arch medium_stones
 x 13
 y 7
+end
+arch troll
+name Cryax the sad hill troll
+msg
+@match sorrow|Sorrow|hi|Hi|hello
+Beware little one. These hills contain
+powerful evil magic. Know that my
+two older brothers lie further in and that
+the curse that has been laid upon
+us has affected them more strongly.
+@match curse|Curse
+Yes, long ago we were elven princes.
+For our love of the 3 sisters we each
+were cursed by jealous gods. We are
+to stand guard here for eternity. I alone
+repent my fate, for both my brothers
+are quite mad and are beyond reason.
+@match sister|Sister
+They were the 3 most beautiful creatures
+to walk the earth once. Together they
+had great magical powers of weaving-
+for they are the daughters of Aniu, god
+of making. As they are half-goddesses each,
+no curse of any god may transmute them,
+but instead they have been mutilated.
+They live now in sorrow in the tower my
+brothers protect.
+@match tower|Tower|guard|Guard
+We guard the tower of the sisters
+which lies within a maze of deadly
+creatures and false paths. The ultimate
+true path is hidden. Be careful if you
+choose to seek the tower!
+@match password|Password
+Ah.. the entrance into the inner tower
+is protected by a password. I used to
+know it when I was young but its been
+so many years that I have forgotten it.
+@match *
+Go away from here and leave me to
+my sorrow.
+endmsg
+hp 4000
+exp 12000
+x 13
+y 7
+unaggressive 1
+immune 2
 end
 arch medium_stones
 x 13
@@ -4332,68 +4396,4 @@ end
 arch mountain4
 x 31
 y 31
-end
-arch city_tower
-slaying /sisters/tower1
-hp 7
-sp 15
-x 5
-y 14
-end
-arch troll
-name Sugrax the hill troll
-hp 5000
-exp 30000
-x 12
-y 14
-see_invisible 1
-immune 2
-end
-arch troll
-name Cryax the sad hill troll
-msg
-@match sorrow|Sorrow|hi|Hi|hello
-Beware little one. These hills contain
-powerful evil magic. Know that my
-two older brothers lie further in and that
-the curse that has been laid upon
-us has affected them more strongly.
-@match curse|Curse
-Yes, long ago we were elven princes.
-For our love of the 3 sisters we each
-were cursed by jealous gods. We are
-to stand guard here for eternity. I alone
-repent my fate, for both my brothers
-are quite mad and are beyond reason.
-@match sister|Sister
-They were the 3 most beautiful creatures
-to walk the earth once. Together they
-had great magical powers of weaving-
-for they are the daughters of Aniu, god
-of making. As they are half-goddesses each,
-no curse of any god may transmute them,
-but instead they have been mutilated.
-They live now in sorrow in the tower my
-brothers protect.
-@match tower|Tower|guard|Guard
-We guard the tower of the sisters
-which lies within a maze of deadly
-creatures and false paths. The ultimate
-true path is hidden. Be careful if you
-choose to seek the tower!
-@match password|Password
-Ah.. the entrance into the inner tower
-is protected by a password. I used to
-know it when I was young but its been
-so many years that I have forgotten it.
-@match *
-Go away from here and leave me to
-my sorrow.
-endmsg
-hp 4000
-exp 12000
-x 13
-y 7
-unaggressive 1
-immune 2
 end

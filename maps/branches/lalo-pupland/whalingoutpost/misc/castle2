@@ -623,6 +623,10 @@ arch snow4
 x 4
 y 54
 end
+arch chinese_dragon
+x 4
+y 54
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -899,6 +903,10 @@ name_pl woodfloor
 x 5
 y 57
 end
+arch chinese_dragon
+x 5
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1074,6 +1082,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 6
+y 49
+end
+arch chinese_dragon
 x 6
 y 49
 end
@@ -2169,6 +2181,10 @@ name_pl woodfloor
 x 8
 y 53
 end
+arch chinese_dragon
+x 8
+y 53
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2754,6 +2770,10 @@ arch snow4
 x 9
 y 59
 end
+arch chinese_dragon
+x 9
+y 59
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3846,6 +3866,10 @@ name_pl woodfloor
 x 11
 y 49
 end
+arch chinese_dragon
+x 11
+y 49
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4289,6 +4313,10 @@ name_pl woodfloor
 x 12
 y 57
 end
+arch chinese_dragon
+x 12
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4475,6 +4503,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 13
+y 53
+end
+arch chinese_dragon
 x 13
 y 53
 end
@@ -6580,6 +6612,10 @@ arch snow5
 x 27
 y 27
 end
+arch big_elec
+x 27
+y 27
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -6657,6 +6693,10 @@ x 27
 y 34
 end
 arch snow5
+x 27
+y 34
+end
+arch big_elec
 x 27
 y 34
 end
@@ -6891,6 +6931,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 28
+y 31
+end
+arch big_elec
 x 28
 y 31
 end
@@ -7705,6 +7749,10 @@ name_pl woodfloor
 x 31
 y 28
 end
+arch behemoth
+x 31
+y 28
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -7743,6 +7791,10 @@ x 31
 y 33
 end
 arch flagstone
+x 31
+y 34
+end
+arch big_elec
 x 31
 y 34
 end
@@ -8742,6 +8794,10 @@ name_pl woodfloor
 x 34
 y 30
 end
+arch shadowtiger
+x 34
+y 30
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -8765,6 +8821,10 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
+x 34
+y 34
+end
+arch big_elec
 x 34
 y 34
 end
@@ -12768,6 +12828,10 @@ name_pl woodfloor
 x 50
 y 57
 end
+arch chinese_dragon
+x 50
+y 57
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -14320,6 +14384,10 @@ arch snow5
 x 53
 y 59
 end
+arch chinese_dragon
+x 53
+y 59
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -15512,6 +15580,10 @@ arch snow5
 x 55
 y 58
 end
+arch chinese_dragon
+x 55
+y 58
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16359,6 +16431,10 @@ name_pl woodfloor
 x 58
 y 51
 end
+arch chinese_dragon
+x 58
+y 51
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -16616,6 +16692,10 @@ x 59
 y 54
 end
 arch snow4
+x 59
+y 54
+end
+arch chinese_dragon
 x 59
 y 54
 end
@@ -17112,84 +17192,4 @@ end
 arch fog
 x 63
 y 60
-end
-arch chinese_dragon
-x 4
-y 54
-end
-arch chinese_dragon
-x 5
-y 57
-end
-arch chinese_dragon
-x 6
-y 49
-end
-arch chinese_dragon
-x 8
-y 53
-end
-arch chinese_dragon
-x 9
-y 59
-end
-arch chinese_dragon
-x 11
-y 49
-end
-arch chinese_dragon
-x 12
-y 57
-end
-arch chinese_dragon
-x 13
-y 53
-end
-arch big_elec
-x 27
-y 27
-end
-arch big_elec
-x 27
-y 34
-end
-arch big_elec
-x 28
-y 31
-end
-arch behemoth
-x 31
-y 28
-end
-arch big_elec
-x 31
-y 34
-end
-arch shadowtiger
-x 34
-y 30
-end
-arch big_elec
-x 34
-y 34
-end
-arch chinese_dragon
-x 50
-y 57
-end
-arch chinese_dragon
-x 53
-y 59
-end
-arch chinese_dragon
-x 55
-y 58
-end
-arch chinese_dragon
-x 58
-y 51
-end
-arch chinese_dragon
-x 59
-y 54
 end
