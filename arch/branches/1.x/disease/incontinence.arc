@@ -27,4 +27,5 @@ type 72
 face residue.111
 food 1
 weight 20
+nrof 1
 end
