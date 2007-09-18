@@ -44,7 +44,7 @@ import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Stats;
+import com.realtime.crossfire.jxclient.StatsParser;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -797,7 +797,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return Stats.parseStat(name);
+            return StatsParser.parseStat(name);
         }
         catch (final IllegalArgumentException ex)
         {
