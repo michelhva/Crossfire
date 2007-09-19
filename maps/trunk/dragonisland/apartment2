@@ -230,8 +230,7 @@ msg
 @match Hello|Hallo|Hi
 Hello! Nice to see you!
 @match hurt
-Most people just want to kill me on
-sight, sniff!
+Most people just want to kill me on sight, sniff!
 @match *
 Don't hurt me, please
 endmsg
@@ -739,9 +738,7 @@ y 12
 end
 arch sign
 msg
-This is a house with a private
-appartment and a room for foreign
-travellers.
+This is a house with a private apartment and a room for foreign travelers.
 endmsg
 x 6
 y 12
@@ -1058,12 +1055,10 @@ arch guildmaster
 name housekeeper
 msg
 @match Hello|Hallo|Hi
-Hello there! To the left is a private
-apartment, to your right is a room you
-may enter if you pay a fee.
+Hello there! To the left is a private apartment, to your right is a room you may enter if you pay a fee.
 @match apartment
-This apartment is very comfortable,
-trust me! And it's got a cauldron, too!
+This apartment is very comfortable, trust me!
+And it's got a cauldron, too!
 endmsg
 x 9
 y 7
@@ -1361,8 +1356,7 @@ arch charwoman
 name Nanny, the cleaning woman
 msg
 @match *
-Get out of my way, I have cleaning to
-do!
+Get out of my way, I have cleaning to do!
 endmsg
 x 12
 y 6
