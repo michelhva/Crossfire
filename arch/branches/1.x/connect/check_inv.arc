@@ -7,7 +7,7 @@ no_pick 1
 editable 48
 move_on walk
 move_off walk
-slaying setme
+slaying set_individual_value
 last_sp 1
 magicmap black
 end
