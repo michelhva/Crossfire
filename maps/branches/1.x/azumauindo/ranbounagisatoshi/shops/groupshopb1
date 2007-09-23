@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Gurupu Mise
 reset_timeout 2000
 difficulty 1
 region azumauindo
@@ -8960,6 +8960,10 @@ arch ewall_2_2_1
 x 26
 y 6
 end
+arch swall_1_1_half
+x 26
+y 6
+end
 arch dungeon_magic
 x 26
 y 7
@@ -8968,7 +8972,7 @@ arch woodfloor
 x 26
 y 7
 end
-arch swall_1_1
+arch swall_2_1_1
 x 26
 y 7
 end
@@ -9172,7 +9176,7 @@ arch woodfloor
 x 26
 y 24
 end
-arch swall_1_2
+arch swall_2_1_1
 x 26
 y 24
 end
@@ -9181,6 +9185,10 @@ x 26
 y 25
 end
 arch woodfloor
+x 26
+y 25
+end
+arch swall_1_2_half
 x 26
 y 25
 end
