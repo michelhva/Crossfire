@@ -2,6 +2,13 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Fix for bug 1800702  - gdk_draw_drawable: assertion `src != NULL' failed.
+gtk/gx11.c:  Call sdl_gen_map() or gtk_draw_map() based on displaymode in use.
+gtk-v2/src/main.c: Call draw_map() instead of gtk_draw_map().  draw_map()
+  will figure out what function (sdl, opengl, gtk) to call do actually
+  draw the map.
+MSW 2007-09-25
+
 gtk/text.c: Remove call to void_callback() for MSG_TYPE_MONUMENT - if there
   is no code to handle it, no reason to set the callback.  Fixes bug 1759860 -
   gravestone messages go to stdout and not client window.
