@@ -13248,7 +13248,7 @@ arch bench_1_1
 name railing
 x 31
 y 51
-move_allow 1
+move_block 1
 end
 arch sea
 name moat
@@ -13263,7 +13263,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 52
-move_allow 1
+move_block 1
 end
 arch sea
 name moat
@@ -13278,7 +13278,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 53
-move_allow 1
+move_block 1
 end
 arch sea
 name moat
@@ -13293,7 +13293,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 54
-move_allow 1
+move_block 1
 end
 arch dungeon_magic
 x 31
@@ -13311,7 +13311,7 @@ arch bench_1_2
 name railing
 x 31
 y 55
-move_allow 1
+move_block 1
 end
 arch brush
 x 31
@@ -13706,7 +13706,7 @@ speed 0.0
 level 300
 invisible 1
 connected 12000
-move_allow 0
+move_block 0
 blocksview 0
 arch spell_earth_to_dust
 end
@@ -15201,7 +15201,7 @@ x 36
 y 17
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15222,7 +15222,7 @@ x 36
 y 19
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15423,7 +15423,7 @@ x 36
 y 39
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15444,7 +15444,7 @@ x 36
 y 41
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -16695,7 +16695,7 @@ x 39
 y 12
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16763,7 +16763,7 @@ x 39
 y 22
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -16836,7 +16836,7 @@ x 39
 y 36
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16904,7 +16904,7 @@ x 39
 y 46
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -17744,7 +17744,7 @@ x 41
 y 22
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -17817,7 +17817,7 @@ x 41
 y 36
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -18712,7 +18712,7 @@ x 44
 y 9
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -18957,7 +18957,7 @@ x 44
 y 49
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -19685,7 +19685,7 @@ x 46
 y 9
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19746,7 +19746,7 @@ x 46
 y 19
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19843,7 +19843,7 @@ x 46
 y 39
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19904,7 +19904,7 @@ x 46
 y 49
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -20990,7 +20990,7 @@ x 49
 y 12
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21011,7 +21011,7 @@ x 49
 y 14
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21148,7 +21148,7 @@ x 49
 y 44
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21169,7 +21169,7 @@ x 49
 y 46
 material 0
 glow_radius 4
-move_allow 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -23189,7 +23189,7 @@ name Security light
 x 55
 y 7
 glow_radius 5
-move_allow 1
+move_block 1
 end
 arch dungeon_magic
 x 55
