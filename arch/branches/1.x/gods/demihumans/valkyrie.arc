@@ -9,8 +9,8 @@ animation knight
 race human,troll
 monster 1
 alive 1
-# godpower, physical
-attacktype 1048577
+# weaponmagic, physical
+attacktype 257
 Str 30
 Con 30
 Dex 30
