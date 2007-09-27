@@ -36,6 +36,8 @@ def do_help():
 	whoami.Say(' - attacktype')
 	whoami.Say(' - players')
 	whoami.Say(' - checkinv')
+	whoami.Say(' - face')
+	whoami.Say(' - anim')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -348,6 +350,34 @@ def do_checkinv():
 	else:
 		whoami.Say('Can\'t find %s in your inventory.'%what)
 
+def do_face():
+	obj = whoami.Map.ObjectAt(4, 4)
+	if len(topic) == 1:
+		whoami.Say('Face is %d'%obj.Face)
+		return
+	
+	face = Crossfire.FindFace(topic[1])
+	if face == 0:
+		whoami.Say('Invalid face')
+		return
+	whoami.Say('changing to %s'%topic[1])
+	obj.Face = topic[1]
+	whoami.Say('Face changed')
+
+def do_anim():
+	obj = whoami.Map.ObjectAt(4, 4).Above
+	if len(topic) == 1:
+		whoami.Say('Animation is %d'%obj.Anim)
+		return
+	
+	anim = Crossfire.FindAnimation(topic[1])
+	if anim == 0:
+		whoami.Say('Invalid animation')
+		return
+	
+	obj.Anim = (topic[1])
+	whoami.Say('Anim changed')
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -411,5 +441,9 @@ elif topic[0] == 'players':
 	do_players()
 elif topic[0] == 'checkinv':
 	do_checkinv()
+elif topic[0] == 'anim':
+	do_anim()
+elif topic[0] == 'face':
+	do_face()
 else:
 	do_help()
