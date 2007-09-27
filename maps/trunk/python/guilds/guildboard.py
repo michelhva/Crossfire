@@ -19,3 +19,4 @@ for guild in guildlist:
 standings.sort(mycmp)
 for item in standings:
     activator.Write('%s - %s - %s' %(item[1],item[0],item[2]))
+

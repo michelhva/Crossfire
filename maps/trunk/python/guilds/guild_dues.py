@@ -21,9 +21,21 @@ import CFGuilds
 import CFItemBroker
 import random
 import string
-
+x=6
+y=7
+x1=31
+x2=32
+x3=33
+x4=34
+x5=35
+y1=9
+y2=10
+y3=11
+y4=12
+y5=13
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
+mymap = activator.Map
 whoami=Crossfire.WhoAmI()
 
 remarklist = ['Excellent','Thank You','Thank You','Thank You', 'Thank You', 'Great', 'OK', 'Wonderful', 'Swell', 'Dude', 'Big Spender']
@@ -35,7 +47,7 @@ text = string.split(Crossfire.WhatIsMessage())
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
-    cointype = "imperial" #What type of token are we using for guild dues?
+    cointype = "jadecoin" #What type of token are we using for guild dues?
     object = activator.CheckInventory(cointype)
 
     if text[0] == 'help' or text[0] == 'yes':

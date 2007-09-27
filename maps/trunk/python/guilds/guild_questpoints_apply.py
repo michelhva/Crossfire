@@ -19,3 +19,4 @@ if points:
 else:
     print 'Error, no points specified in %s on map %s' %(whoami,mapname)
 
+
