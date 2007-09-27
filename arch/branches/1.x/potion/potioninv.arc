@@ -1,5 +1,5 @@
-Object potion_invulnerability
-name potion of invulnerability
+Object potion_shielding
+name potion of shielding
 nrof 1
 face potioninv.111
 color_fg orange
@@ -10,7 +10,7 @@ weight 2000
 value 10000
 resist_physical 90
 editable 2048
-name_pl potions of invulnerability
+name_pl potions of shielding
 on_use_yield potion_empty
 client_type 651
 end
