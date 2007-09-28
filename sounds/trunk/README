@@ -1,9 +1,24 @@
 These are sounds for Crossfire sound server.
+
 These are original crossfire sounds converted to raw-linear unsigned format.
 Also their volume is normalized, for better effects.
-To use them - install cfsndserv somhere in your PATH, compile client
-with -DNEW_SOUND, change the "sounds" file, so it contains proper paths
-and install it to your ~/.crossfire
+
+To use them, install cfsndserv somewhere in your PATH, compile the client with
+-DNEW_SOUND, change the "sounds" file, so it contains proper paths and install
+it to your ~/.crossfire.
 
 Greets,
       Jacek Konieczny <jajcus@zeus.polsl.gliwice.pl>
+
+UPDATED NOTES:
+
+1) -DNEW_SOUND is not a valid build option and is no longer needed.
+
+2) See the sounds.dist source file under SVN client/sound-src.  make
+   produces sounds from sounds.dist.  If a player wants to change sounds
+   played, this sounds file is copied to ~/.crossfire and adjusted to
+   associate different sound files with various events.
+
+3) The .raw sound files are installed under the client data directory
+   ${prefix}/share/crossfire-client/sounds.
+
