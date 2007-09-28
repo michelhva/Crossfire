@@ -1,6 +1,6 @@
 Object halfling_player
 name halfling
-randomitems halfling_player
+randomitems halfling_player_items
 face halfling.151
 msg
 Halflings are another sub-race of humankind,
