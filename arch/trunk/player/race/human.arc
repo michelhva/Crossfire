@@ -1,7 +1,7 @@
 Object human_player
 name human
 race human
-randomitems human_player
+randomitems human_player_items
 face human.151
 msg
 Humans are the generalists of the races.
