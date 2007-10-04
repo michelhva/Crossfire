@@ -1,6 +1,9 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+gtk/text.c: Add missing write_media() calls in handling of admin messages.
+   Results in news and rules not being displayed.  Fixes bug 1657000
+MSW 2007-10-03
 
 Fix for bug 1800702  - gdk_draw_drawable: assertion `src != NULL' failed.
 gtk/gx11.c:  Call sdl_gen_map() or gtk_draw_map() based on displaymode in use.
