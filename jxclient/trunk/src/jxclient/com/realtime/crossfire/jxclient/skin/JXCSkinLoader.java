@@ -41,6 +41,7 @@ import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
+import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
@@ -523,7 +524,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontFixed = fonts.lookup(args[8]);
                             final Font fontFixedBold = fonts.lookup(args[9]);
                             final Font fontArcane = fonts.lookup(args[10]);
-                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fontPrint, fontFixed, fontFixedBold, fontArcane);
+                            final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
+                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fonts);
                             elements.insert(name, element);
                         }
                         else if (args[0].equals("magicmap"))
