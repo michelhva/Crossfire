@@ -67,26 +67,9 @@ public class GUILog extends GUIElement implements GUIScrollable
     private final BufferedImage mybackground;
 
     /**
-     * The font to use for {@link Segment.FontID#PRINT}, {@link
-     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
+     * The {@link Fonts} instance for looking up fonts.
      */
-    private final Font fontPrint;
-
-    /**
-     * The font to use for {@link Segment.FontID#FIXED} text.
-     */
-    private final Font fontFixed;
-
-    /**
-     * The font to use for {@link Segment.FontID#FIXED} text which has bold
-     * enabled.
-     */
-    private final Font fontFixedBold;
-
-    /**
-     * The font to use for {@link Segment.FontID#ARCANE} text.
-     */
-    private final Font fontArcane;
+    private final Fonts fonts;
 
     /**
      * The {@link FontRenderContext} associated to {@link #buffer}.
@@ -181,27 +164,13 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param picture The background image; may be <code>null</code> if unused.
      *
-     * @param fontPrint The font to use for <code>Segment.FontID.PRINT</code>,
-     * <code>Segment.FontID.HAND</code>, and <code>Segment.FontID.STANGE</code>
-     * text.
-     *
-     * @param fontFixed The font to use for <code>Segment.FontID.FIXED</code>
-     * text.
-     *
-     * @param fontFixedBold The font to use for
-     * <code>Segment.Font.FIXEDID</code> text which has bold enabled.
-     *
-     * @param fontArcane The font to use for <code>Segment.FontID.ARCANE</code>
-     * text.
+     * @param Fonts The <code>Fonts</code> instance for looking up fonts.
      */
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane)
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground = picture;
-        this.fontPrint = fontPrint;
-        this.fontFixed = fontFixed;
-        this.fontFixedBold = fontFixedBold;
-        this.fontArcane = fontArcane;
+        this.fonts = fonts;
         createBuffer();
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
@@ -283,7 +252,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         {
             final Segment segment = line.getSegment(i);
             final String text = segment.getText();
-            final Font font = findFont(segment);
+            final Font font = segment.getFont(fonts);
             final Rectangle2D rect = font.getStringBounds(text, context);
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > getWidth())
@@ -334,7 +303,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         {
             final Segment segment = line.getSegment(i);
             final String text = segment.getText();
-            final Font font = findFont(segment);
+            final Font font = segment.getFont(fonts);
             final LineMetrics lineMetrics = font.getLineMetrics(text, context);
             segment.setHeight(maxY-minY);
             segment.setY(y-minY);
@@ -357,7 +326,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         {
             final Color color = segment.getColor();
             g.setColor(color == null || color == Color.BLACK ? Color.WHITE : color);
-            final Font font = findFont(segment);
+            final Font font = segment.getFont(fonts);
             g.setFont(font);
             g.drawString(segment.getText(), segment.getX(), y+segment.getY());
             if (segment.isUnderline())
@@ -365,36 +334,6 @@ public class GUILog extends GUIElement implements GUIScrollable
                 g.drawLine(segment.getX(), y+segment.getY()+segment.getUnderlineOffset(), segment.getX()+segment.getWidth()-1, y+segment.getY()+segment.getUnderlineOffset());
             }
         }
-    }
-
-    /**
-     * Return the {@link Font} to use for a given {@link Segment}.
-     *
-     * @param segment The segment.
-     *
-     * @return The font.
-     */
-    private Font findFont(final Segment segment)
-    {
-        switch (segment.getFontID())
-        {
-        case PRINT:
-            return fontPrint;
-
-        case FIXED:
-            return segment.isBold() ? fontFixedBold : fontFixed;
-
-        case ARCANE:
-            return fontArcane;
-
-        case HAND:
-            return fontPrint;
-
-        case STRANGE:
-            return fontPrint;
-        }
-
-        throw new AssertionError();
     }
 
     /**

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
+import java.awt.Font;
 
 /**
  * One segment of a {@link Line} which should be displayed without changing
@@ -307,5 +308,35 @@ public class Segment
     public void setUnderlineOffset(final int underlineOffset)
     {
         this.underlineOffset = underlineOffset;
+    }
+
+    /**
+     * Return the {@link Font} to use for a given {@link Segment}.
+     *
+     * @param fonts The <code>Fonts</code> instance to use.
+     *
+     * @return The font.
+     */
+    public Font getFont(final Fonts fonts)
+    {
+        switch (font)
+        {
+        case PRINT:
+            return fonts.getFontPrint();
+
+        case FIXED:
+            return bold ? fonts.getFontFixedBold() : fonts.getFontFixed();
+
+        case ARCANE:
+            return fonts.getFontArcane();
+
+        case HAND:
+            return fonts.getFontPrint();
+
+        case STRANGE:
+            return fonts.getFontPrint();
+        }
+
+        throw new AssertionError();
     }
 }
