@@ -67,24 +67,24 @@ public class GUILog extends GUIElement implements GUIScrollable
     private final BufferedImage mybackground;
 
     /**
-     * The font to use for {@link Segment.Font#PRINT}, {@link
-     * Segment.Font#HAND}, and {@link Segment.Font#STRANGE} text.
+     * The font to use for {@link Segment.FontID#PRINT}, {@link
+     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
      */
     private final Font fontPrint;
 
     /**
-     * The font to use for {@link Segment.Font#FIXED} text.
+     * The font to use for {@link Segment.FontID#FIXED} text.
      */
     private final Font fontFixed;
 
     /**
-     * The font to use for {@link Segment.Font#FIXED} text which has bold
+     * The font to use for {@link Segment.FontID#FIXED} text which has bold
      * enabled.
      */
     private final Font fontFixedBold;
 
     /**
-     * The font to use for {@link Segment.Font#ARCANE} text.
+     * The font to use for {@link Segment.FontID#ARCANE} text.
      */
     private final Font fontArcane;
 
@@ -181,17 +181,17 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param picture The background image; may be <code>null</code> if unused.
      *
-     * @param fontPrint The font to use for <code>Segment.Font.PRINT</code>,
-     * <code>Segment.Font.HAND</code>, and <code>Segment.Font.STANGE</code>
+     * @param fontPrint The font to use for <code>Segment.FontID.PRINT</code>,
+     * <code>Segment.FontID.HAND</code>, and <code>Segment.FontID.STANGE</code>
      * text.
      *
-     * @param fontFixed The font to use for <code>Segment.Font.FIXED</code>
+     * @param fontFixed The font to use for <code>Segment.FontID.FIXED</code>
      * text.
      *
-     * @param fontFixedBold The font to use for <code>Segment.Font.FIXED</code>
-     * text which has bold enabled.
+     * @param fontFixedBold The font to use for
+     * <code>Segment.Font.FIXEDID</code> text which has bold enabled.
      *
-     * @param fontArcane The font to use for <code>Segment.Font.ARCANE</code>
+     * @param fontArcane The font to use for <code>Segment.FontID.ARCANE</code>
      * text.
      */
     public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane)
@@ -376,7 +376,7 @@ public class GUILog extends GUIElement implements GUIScrollable
      */
     private Font findFont(final Segment segment)
     {
-        switch (segment.getFont())
+        switch (segment.getFontID())
         {
         case PRINT:
             return fontPrint;

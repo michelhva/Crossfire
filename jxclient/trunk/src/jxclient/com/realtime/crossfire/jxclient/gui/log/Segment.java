@@ -32,7 +32,7 @@ public class Segment
     /**
      * Available font types.
      */
-    public enum Font
+    public enum FontID
     {
         /**
          * The default font.
@@ -83,7 +83,7 @@ public class Segment
     /**
      * The font to use.
      */
-    private final Font font;
+    private final FontID font;
 
     /**
      * The color to use. <code>null</code> means "default color".
@@ -134,7 +134,7 @@ public class Segment
      *
      * @param color The color to use; <code>null</code> means "default color".
      */
-    public Segment(final String text, final boolean bold, final boolean italic, final boolean underline, final Font font, final Color color)
+    public Segment(final String text, final boolean bold, final boolean italic, final boolean underline, final FontID font, final Color color)
     {
         this.text = text;
         this.bold = bold;
@@ -189,7 +189,7 @@ public class Segment
      *
      * @return The font to use.
      */
-    public Font getFont()
+    public FontID getFontID()
     {
         return font;
     }

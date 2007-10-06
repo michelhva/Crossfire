@@ -35,14 +35,14 @@ public class Parser
     /**
      * Maps font tag name to font instance.
      */
-    private static final Map<String, Segment.Font> fonts = new HashMap<String, Segment.Font>();
+    private static final Map<String, Segment.FontID> fonts = new HashMap<String, Segment.FontID>();
     static
     {
-        fonts.put("print", Segment.Font.PRINT);
-        fonts.put("fixed", Segment.Font.FIXED);
-        fonts.put("arcane", Segment.Font.ARCANE);
-        fonts.put("hand", Segment.Font.HAND);
-        fonts.put("strange", Segment.Font.STRANGE);
+        fonts.put("print", Segment.FontID.PRINT);
+        fonts.put("fixed", Segment.FontID.FIXED);
+        fonts.put("arcane", Segment.FontID.ARCANE);
+        fonts.put("hand", Segment.FontID.HAND);
+        fonts.put("strange", Segment.FontID.STRANGE);
     }
 
     /**
@@ -86,7 +86,7 @@ public class Parser
     /**
      * The font to use.
      */
-    private Segment.Font font = Segment.Font.PRINT;
+    private Segment.FontID font = Segment.FontID.PRINT;
 
     /**
      * The color to use. <code>null</code> means default color.
@@ -209,7 +209,7 @@ public class Parser
         bold = false;
         italic = false;
         underline = false;
-        font = Segment.Font.PRINT;
+        font = Segment.FontID.PRINT;
         color = defaultColor;
     }
 
@@ -301,7 +301,7 @@ public class Parser
             if (prevSegment.isBold() == bold
             && prevSegment.isItalic() == italic
             && prevSegment.isUnderline() == underline
-            && prevSegment.getFont() == font
+            && prevSegment.getFontID() == font
             && prevSegment.getColor() == color)
             {
                 newText = prevSegment.getText()+text;
