@@ -1,3 +1,22 @@
+"""Altar of Valkyrie
+Followers of Valkyrie don't get any praying spells, because Valkyrie hates magic.
+Instead, they gain experience by combat bravery; and the way they prove that is
+by bringing the flesh of dead enemies as a sacrifice in Her altar.
+
+Of course, the script only activates for followers of Valkyrie, and only runs for
+sacrifices of type FLESH.
+
+Then, it can handle each in two ways:
+
+- Ideally, all items will have Exp stored.  In this case, you'll get 1/5 of that
+  Exp, with a bonus if it's a head or heart.
+
+- Otherwise, we'll use the Level and resistances to estimate how hard it was to
+  kill the monster.  In fact, I'm not at all certain the algorithm used to
+  estimate is reasonable at all for higher levels...  but then again, I'm not
+  sure it's still necessary either, so feel free to remove it :-)
+"""
+
 import Crossfire, Crossfire_Type as t
 
 def accept(description):
@@ -18,7 +37,10 @@ if praying and praying.Title == 'Valkyrie':
             part_factor = 1
 
             if obj.Level < praying.Level / 2:
-                pl.Write('Valkyrie scorns your pathetic sacrifice!')
+                if obj.Exp:
+                    pl.Write('Valkyrie grudgingly accepts your pathetic sacrifice!')
+                else:
+                    pl.Write('Valkyrie scorns your pathetic sacrifice!')
             elif obj.Level < praying.Level:
                 accept('poor')
                 level_factor = 0.5
