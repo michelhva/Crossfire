@@ -4,7 +4,7 @@ player/class/Wizardry/sorcerer_class.arc
   - Add body_head -1 to Sorceror's Hat.
 Kevin R. Bulgrien 2007-10-05
 
-Renamed "potion of invulnerability" to "potion of shielding." Hopefully this 
+Renamed "potion of invulnerability" to "potion of shielding." Hopefully this
 will remove player confusion as to why one takes damage from all attack types
 (except physical) when drinking this potion.
 RJT 2007-09-26
@@ -65,9 +65,9 @@ inconsistent definitions.
 Andreas Kirschbaum 2004-09-14
 
 
-Many many changes since last entry due to new server code and 
-maintenance efforts.  Highlights - large image support allows 
-for images larger than 32x32 - many images consolidated for easier 
+Many many changes since last entry due to new server code and
+maintenance efforts.  Highlights - large image support allows
+for images larger than 32x32 - many images consolidated for easier
 maintenance (ongoing).  Spell and skill code changes heavily
 modified spells and skill arches (more arch based now).
 four point animation added to most player race and classes, smoothing
@@ -125,7 +125,7 @@ so it will animate (animation already in place, just was not being
 used.)
 
 PeterM:  Totally reorganized player/*, splitting it into races and
-classes.  Classes are themselves split into four main subtypes.  
+classes.  Classes are themselves split into four main subtypes.
 New images from dnh were also added, as well as new classes/races.
 See http://langmuir.eecs.berkeley.edu/~peterm/Race.html and
     http://langmuir.eecs.berkeley.edu/~peterm/Class.html
