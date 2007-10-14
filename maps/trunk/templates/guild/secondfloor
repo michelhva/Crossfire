@@ -7,6 +7,8 @@ enter_y 11
 msg
 Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch dungeon_magic
@@ -358,20 +360,45 @@ unique 1
 end
 arch dungeon_magic
 x 1
-y 12
+y 11
 end
 arch creator
 other_arch woodfloor
 x 1
-y 12
+y 11
 connected 10
 end
+arch woodfloor
+x 1
+y 11
+unique 1
+end
 arch goldfloor
-name drop x for Jewelers room
-food 1
+name drop 15 diamonds of exceptional beauty for Jewelers room
+slaying diamond of exceptional beauty
+food 15
+x 1
+y 11
+connected 10
+end
+arch dungeon_magic
 x 1
 y 12
-connected 10
+end
+arch woodfloor
+x 1
+y 12
+unique 1
+end
+arch trigger_marker
+slaying guild_jewel11
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
+x 1
+y 12
+connected 11
 end
 arch dungeon_magic
 x 1
@@ -382,15 +409,9 @@ x 1
 y 13
 unique 1
 end
-arch trigger_marker
-slaying guild_jewel11
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
+arch cwall_0
 x 1
 y 13
-connected 11
 end
 arch dungeon_magic
 x 1
@@ -617,6 +638,12 @@ x 2
 y 12
 unique 1
 end
+arch check_floor
+slaying Jewe_Token
+x 2
+y 12
+connected 898
+end
 arch dungeon_magic
 x 2
 y 13
@@ -626,6 +653,17 @@ x 2
 y 13
 unique 1
 end
+arch check_floor
+race Jewelry Pass
+x 2
+y 13
+connected 898
+end
+arch grate_closed_1
+x 2
+y 13
+connected 898
+end
 arch dungeon_magic
 x 2
 y 14
@@ -634,6 +672,12 @@ arch woodfloor
 x 2
 y 14
 unique 1
+end
+arch pedestal
+x 2
+y 14
+invisible 1
+connected 898
 end
 arch check_floor
 slaying guild_jewel11
@@ -745,11 +789,10 @@ sp 7
 dam 121
 x 3
 y 2
-speed 0
+speed 0.0
 level 107
 invisible 1
 connected 2
-move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -867,6 +910,10 @@ arch woodfloor
 x 3
 y 13
 unique 1
+end
+arch cwall_0
+x 3
+y 13
 end
 arch dungeon_magic
 x 3
@@ -1966,7 +2013,7 @@ no_magic 1
 damned 1
 end
 arch invis_exit
-slaying guild_thaum
+slaying guildthaum
 hp 6
 sp 3
 x 8
@@ -2196,16 +2243,22 @@ arch dungeon_magic
 x 9
 y 17
 end
-arch woodfloor
-x 9
-y 17
-unique 1
-end
 arch check_floor
 slaying guild_thaum21
 x 9
 y 17
 connected 22
+end
+arch woodfloor
+x 9
+y 17
+unique 1
+end
+arch pedestal
+x 9
+y 17
+invisible 1
+connected 899
 end
 arch dungeon_magic
 x 9
@@ -2271,10 +2324,10 @@ x 10
 y 2
 unique 1
 end
-arch pedestal
+arch check_floor
+slaying GC_Token
 x 10
 y 2
-invisible 1
 connected 82
 end
 arch dungeon_magic
@@ -2423,11 +2476,38 @@ unique 1
 end
 arch dungeon_magic
 x 10
+y 16
+end
+arch woodfloor
+x 10
+y 16
+unique 1
+end
+arch cwall_0
+x 10
+y 16
+end
+arch dungeon_magic
+x 10
 y 17
 end
 arch woodfloor
 x 10
 y 17
+unique 1
+end
+arch igate_closed_2
+x 10
+y 17
+connected 899
+end
+arch dungeon_magic
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 18
 unique 1
 end
 arch dungeon_magic
@@ -2439,15 +2519,9 @@ x 10
 y 18
 unique 1
 end
-arch trigger_marker
-slaying guild_thaum21
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
+arch cwall_0
 x 10
 y 18
-connected 21
 end
 arch dungeon_magic
 x 10
@@ -2475,6 +2549,11 @@ end
 arch dungeon_magic
 x 11
 y 1
+end
+arch woodfloor
+x 11
+y 1
+unique 1
 end
 arch creator
 other_arch woodfloor
@@ -2483,8 +2562,9 @@ y 1
 connected 40
 end
 arch goldfloor
-name drop x for Glowing Crystal room
-food 1
+name drop 100 jade coins for Glowing Crystal Room
+slaying jadecoin
+food 100
 x 11
 y 1
 connected 40
@@ -2644,22 +2724,39 @@ x 11
 y 17
 unique 1
 end
+arch check_floor
+slaying Thau_Token
+x 11
+y 17
+connected 899
+end
 arch dungeon_magic
 x 11
 y 18
 end
-arch creator
-other_arch woodfloor
+arch woodfloor
 x 11
 y 18
-connected 20
+unique 1
 end
-arch goldfloor
-name drop x for Thaumaturgy room
-food 1
+arch dungeon_magic
 x 11
 y 18
-connected 20
+end
+arch woodfloor
+x 11
+y 18
+unique 1
+end
+arch trigger_marker
+slaying guild_thaum21
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
+x 11
+y 18
+connected 21
 end
 arch dungeon_magic
 x 11
@@ -2873,6 +2970,29 @@ x 12
 y 18
 unique 1
 end
+arch dungeon_magic
+x 12
+y 18
+end
+arch woodfloor
+x 12
+y 18
+unique 1
+end
+arch creator
+other_arch woodfloor
+x 12
+y 18
+connected 20
+end
+arch goldfloor
+name drop 30,000 rubies for Thaumaturgy room
+slaying ruby
+food 30000
+x 12
+y 18
+connected 20
+end
 arch woodfloor
 x 12
 y 19
@@ -2955,6 +3075,10 @@ x 13
 y 6
 unique 1
 end
+arch cwall_0
+x 13
+y 6
+end
 arch dungeon_magic
 x 13
 y 7
@@ -2963,6 +3087,20 @@ arch woodfloor
 x 13
 y 7
 unique 1
+end
+arch creator
+other_arch woodfloor
+x 13
+y 7
+connected 30
+end
+arch goldfloor
+name drop 30,000 diamonds for Alchemy room
+slaying diamond
+food 30000
+x 13
+y 7
+connected 30
 end
 arch dungeon_magic
 x 13
@@ -3129,7 +3267,7 @@ y 4
 connected 32
 end
 arch invis_exit
-slaying guild_alchemy
+slaying guildalchem
 hp 3
 sp 7
 x 14
@@ -3143,6 +3281,12 @@ arch woodfloor
 x 14
 y 5
 unique 1
+end
+arch pedestal
+x 14
+y 5
+invisible 1
+connected 897
 end
 arch check_floor
 slaying guild_alchemy31
@@ -3159,6 +3303,17 @@ x 14
 y 6
 unique 1
 end
+arch check_floor
+race Alchemy Pass
+x 14
+y 6
+connected 897
+end
+arch grate_closed_1
+x 14
+y 6
+connected 897
+end
 arch dungeon_magic
 x 14
 y 7
@@ -3167,6 +3322,12 @@ arch woodfloor
 x 14
 y 7
 unique 1
+end
+arch check_floor
+slaying Alch_Token
+x 14
+y 7
+connected 897
 end
 arch dungeon_magic
 x 14
@@ -3274,6 +3435,10 @@ x 14
 y 17
 unique 1
 end
+arch dwall_1_1
+x 14
+y 17
+end
 arch dungeon_magic
 x 14
 y 18
@@ -3283,16 +3448,20 @@ x 14
 y 18
 unique 1
 end
-arch woodfloor
+arch dwall_2_1_1
 x 14
-y 19
-unique 1
+y 18
 end
 arch dungeon_magic
 x 14
 y 19
 end
-arch dwall_2_1_2
+arch woodfloor
+x 14
+y 19
+unique 1
+end
+arch dwall_3_1
 x 14
 y 19
 end
@@ -3360,6 +3529,19 @@ x 15
 y 6
 unique 1
 end
+arch cwall_0
+x 15
+y 6
+end
+arch dungeon_magic
+x 15
+y 7
+end
+arch woodfloor
+x 15
+y 7
+unique 1
+end
 arch trigger_marker
 slaying guild_alchemy31
 msg
@@ -3367,25 +3549,8 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 15
-y 6
+y 7
 connected 31
-end
-arch dungeon_magic
-x 15
-y 7
-end
-arch creator
-other_arch woodfloor
-x 15
-y 7
-connected 30
-end
-arch goldfloor
-name drop x for Alchemy room
-food 1
-x 15
-y 7
-connected 30
 end
 arch dungeon_magic
 x 15
@@ -3412,6 +3577,11 @@ end
 arch dungeon_magic
 x 15
 y 10
+end
+arch woodfloor
+x 15
+y 10
+unique 1
 end
 arch creator
 other_arch woodfloor
@@ -3432,19 +3602,9 @@ arch dungeon_magic
 x 15
 y 11
 end
-arch creator
-other_arch woodfloor
+arch woodfloor
 x 15
 y 11
-connected 7
-end
-arch goldfloor
-name drop 20 amulets of Lifesaving for a portal to ?
-slaying amulet_lifesave
-food 20
-x 15
-y 11
-connected 7
 unique 1
 end
 arch dungeon_magic
@@ -3496,6 +3656,12 @@ x 15
 y 16
 unique 1
 end
+arch check_floor
+slaying GuildMaster
+x 15
+y 16
+connected 918
+end
 arch dungeon_magic
 x 15
 y 17
@@ -3505,6 +3671,17 @@ x 15
 y 17
 unique 1
 end
+arch check_floor
+slaying GuildMaster
+x 15
+y 17
+connected 918
+end
+arch grate_closed_1
+x 15
+y 17
+connected 918
+end
 arch dungeon_magic
 x 15
 y 18
@@ -3513,6 +3690,21 @@ arch woodfloor
 x 15
 y 18
 unique 1
+end
+arch check_floor
+slaying GuildMaster
+x 15
+y 18
+connected 918
+end
+arch button_lever
+name Guild Dues
+msg
+Pull to pay out dues and fees.
+endmsg
+x 15
+y 18
+connected 999
 end
 arch woodfloor
 x 15
@@ -3963,6 +4155,8 @@ hp 0
 sp 0
 x 18
 y 7
+walk_on 0
+fly_on 0
 end
 arch woodfloor
 x 18
@@ -3989,6 +4183,8 @@ hp 0
 sp 0
 x 18
 y 9
+walk_on 0
+fly_on 0
 end
 arch blocked
 x 18
@@ -3996,16 +4192,16 @@ y 10
 end
 arch teleporter
 hp 1
-sp 13
+sp 12
 x 18
 y 11
 speed 0.0
 connected 10
 end
 arch altar_trigger
-name Drop 50 platinum to enter Jewelers Room
+name Drop 100 platinum to enter Jewelers Room
 slaying platinacoin
-food 50
+food 200
 x 18
 y 11
 connected 11
@@ -4019,9 +4215,9 @@ speed 0.0
 connected 30
 end
 arch altar_trigger
-name Drop 50 platinum to enter Alchemy Room
+name Drop 100 platinum to enter Alchemy Room
 slaying platinacoin
-food 50
+food 200
 x 18
 y 12
 connected 31
@@ -4039,6 +4235,42 @@ y 13
 type 17
 invisible 1
 connected 81
+end
+arch creator
+other_arch jadecoin
+x 18
+y 14
+connected 41
+lifesave 1
+end
+arch creator
+other_arch jadecoin
+x 18
+y 14
+connected 31
+lifesave 1
+end
+arch creator
+other_arch jadecoin
+x 18
+y 14
+connected 21
+lifesave 1
+end
+arch creator
+other_arch jadecoin
+x 18
+y 14
+connected 11
+lifesave 1
+end
+arch teleporter
+hp 15
+sp 18
+x 18
+y 14
+speed 0.0
+connected 999
 end
 arch blocked
 x 19
@@ -4085,16 +4317,16 @@ y 10
 end
 arch teleporter
 hp 10
-sp 18
+sp 19
 x 19
 y 11
 speed 0.0
 connected 20
 end
 arch altar_trigger
-name Drop 50 platinum to enter Thaumaturgy Room
+name Drop 100 platinum to enter Thaumaturgy Room
 slaying platinacoin
-food 50
+food 200
 x 19
 y 11
 connected 21
@@ -4108,9 +4340,9 @@ speed 0.0
 connected 40
 end
 arch altar_trigger
-name Drop 50 platinum to enter Glowing Crystal Room
+name Drop 100 platinum to enter Glowing Crystal Room
 slaying platinacoin
-food 50
+food 200
 x 19
 y 12
 connected 41
