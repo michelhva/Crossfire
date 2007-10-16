@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Emono Mise
 reset_timeout 7200
 difficulty 1
 region azumauindo
@@ -1236,6 +1236,10 @@ arch swall_2_2_4
 x 6
 y 15
 end
+arch swall_1_2_half
+x 6
+y 15
+end
 arch ewall_1_3
 x 6
 y 15
@@ -1768,6 +1772,10 @@ x 9
 y 15
 end
 arch swall_2_2_1
+x 9
+y 15
+end
+arch swall_1_2_half
 x 9
 y 15
 end
