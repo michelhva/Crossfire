@@ -1,5 +1,5 @@
 arch map
-name castle.mainfloor
+name Zorn Castle Mainfloor
 region brest
 width 59
 height 59
@@ -696,17 +696,13 @@ arch brush
 x 3
 y 2
 end
-arch brush
-x 3
-y 3
-end
 arch dungeon_magic
 x 3
 y 3
 end
 arch brush
 x 3
-y 4
+y 3
 end
 arch dungeon_magic
 x 3
@@ -714,7 +710,7 @@ y 4
 end
 arch brush
 x 3
-y 5
+y 4
 end
 arch dungeon_magic
 x 3
@@ -722,11 +718,19 @@ y 5
 end
 arch brush
 x 3
-y 6
+y 5
 end
 arch dungeon_magic
 x 3
 y 6
+end
+arch brush
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch brush
 x 3
@@ -741,7 +745,7 @@ move_block all
 end
 arch dungeon_magic
 x 3
-y 7
+y 8
 end
 arch brush
 x 3
@@ -749,7 +753,7 @@ y 8
 end
 arch dungeon_magic
 x 3
-y 8
+y 9
 end
 arch brush
 x 3
@@ -757,7 +761,7 @@ y 9
 end
 arch dungeon_magic
 x 3
-y 9
+y 10
 end
 arch brush
 x 3
@@ -765,7 +769,7 @@ y 10
 end
 arch dungeon_magic
 x 3
-y 10
+y 11
 end
 arch brush
 x 3
@@ -773,7 +777,7 @@ y 11
 end
 arch dungeon_magic
 x 3
-y 11
+y 12
 end
 arch brush
 x 3
@@ -781,7 +785,7 @@ y 12
 end
 arch dungeon_magic
 x 3
-y 12
+y 13
 end
 arch brush
 x 3
@@ -789,7 +793,7 @@ y 13
 end
 arch dungeon_magic
 x 3
-y 13
+y 14
 end
 arch brush
 x 3
@@ -797,7 +801,7 @@ y 14
 end
 arch dungeon_magic
 x 3
-y 14
+y 15
 end
 arch brush
 x 3
@@ -805,7 +809,7 @@ y 15
 end
 arch dungeon_magic
 x 3
-y 15
+y 16
 end
 arch brush
 x 3
@@ -813,7 +817,7 @@ y 16
 end
 arch dungeon_magic
 x 3
-y 16
+y 17
 end
 arch brush
 x 3
@@ -821,7 +825,7 @@ y 17
 end
 arch dungeon_magic
 x 3
-y 17
+y 18
 end
 arch brush
 x 3
@@ -829,7 +833,7 @@ y 18
 end
 arch dungeon_magic
 x 3
-y 18
+y 19
 end
 arch brush
 x 3
@@ -837,7 +841,7 @@ y 19
 end
 arch dungeon_magic
 x 3
-y 19
+y 20
 end
 arch brush
 x 3
@@ -845,7 +849,7 @@ y 20
 end
 arch dungeon_magic
 x 3
-y 20
+y 21
 end
 arch brush
 x 3
@@ -853,7 +857,7 @@ y 21
 end
 arch dungeon_magic
 x 3
-y 21
+y 22
 end
 arch brush
 x 3
@@ -861,7 +865,7 @@ y 22
 end
 arch dungeon_magic
 x 3
-y 22
+y 23
 end
 arch brush
 x 3
@@ -869,7 +873,7 @@ y 23
 end
 arch dungeon_magic
 x 3
-y 23
+y 24
 end
 arch brush
 x 3
@@ -877,7 +881,7 @@ y 24
 end
 arch dungeon_magic
 x 3
-y 24
+y 25
 end
 arch brush
 x 3
@@ -885,7 +889,7 @@ y 25
 end
 arch dungeon_magic
 x 3
-y 25
+y 26
 end
 arch brush
 x 3
@@ -893,7 +897,7 @@ y 26
 end
 arch dungeon_magic
 x 3
-y 26
+y 27
 end
 arch brush
 x 3
@@ -901,7 +905,7 @@ y 27
 end
 arch dungeon_magic
 x 3
-y 27
+y 28
 end
 arch brush
 x 3
@@ -909,7 +913,7 @@ y 28
 end
 arch dungeon_magic
 x 3
-y 28
+y 29
 end
 arch brush
 x 3
@@ -917,7 +921,7 @@ y 29
 end
 arch dungeon_magic
 x 3
-y 29
+y 30
 end
 arch brush
 x 3
@@ -925,7 +929,7 @@ y 30
 end
 arch dungeon_magic
 x 3
-y 30
+y 31
 end
 arch brush
 x 3
@@ -933,7 +937,7 @@ y 31
 end
 arch dungeon_magic
 x 3
-y 31
+y 32
 end
 arch brush
 x 3
@@ -941,7 +945,7 @@ y 32
 end
 arch dungeon_magic
 x 3
-y 32
+y 33
 end
 arch brush
 x 3
@@ -949,7 +953,7 @@ y 33
 end
 arch dungeon_magic
 x 3
-y 33
+y 34
 end
 arch brush
 x 3
@@ -957,7 +961,7 @@ y 34
 end
 arch dungeon_magic
 x 3
-y 34
+y 35
 end
 arch brush
 x 3
@@ -965,7 +969,7 @@ y 35
 end
 arch dungeon_magic
 x 3
-y 35
+y 36
 end
 arch brush
 x 3
@@ -973,7 +977,7 @@ y 36
 end
 arch dungeon_magic
 x 3
-y 36
+y 37
 end
 arch brush
 x 3
@@ -981,7 +985,7 @@ y 37
 end
 arch dungeon_magic
 x 3
-y 37
+y 38
 end
 arch brush
 x 3
@@ -989,7 +993,7 @@ y 38
 end
 arch dungeon_magic
 x 3
-y 38
+y 39
 end
 arch brush
 x 3
@@ -997,7 +1001,7 @@ y 39
 end
 arch dungeon_magic
 x 3
-y 39
+y 40
 end
 arch brush
 x 3
@@ -1005,7 +1009,7 @@ y 40
 end
 arch dungeon_magic
 x 3
-y 40
+y 41
 end
 arch brush
 x 3
@@ -1013,7 +1017,7 @@ y 41
 end
 arch dungeon_magic
 x 3
-y 41
+y 42
 end
 arch brush
 x 3
@@ -1021,7 +1025,7 @@ y 42
 end
 arch dungeon_magic
 x 3
-y 42
+y 43
 end
 arch brush
 x 3
@@ -1029,7 +1033,7 @@ y 43
 end
 arch dungeon_magic
 x 3
-y 43
+y 44
 end
 arch brush
 x 3
@@ -1037,7 +1041,7 @@ y 44
 end
 arch dungeon_magic
 x 3
-y 44
+y 45
 end
 arch brush
 x 3
@@ -1045,7 +1049,7 @@ y 45
 end
 arch dungeon_magic
 x 3
-y 45
+y 46
 end
 arch brush
 x 3
@@ -1053,7 +1057,7 @@ y 46
 end
 arch dungeon_magic
 x 3
-y 46
+y 47
 end
 arch brush
 x 3
@@ -1061,7 +1065,7 @@ y 47
 end
 arch dungeon_magic
 x 3
-y 47
+y 48
 end
 arch brush
 x 3
@@ -1069,7 +1073,7 @@ y 48
 end
 arch dungeon_magic
 x 3
-y 48
+y 49
 end
 arch brush
 x 3
@@ -1077,7 +1081,7 @@ y 49
 end
 arch dungeon_magic
 x 3
-y 49
+y 50
 end
 arch brush
 x 3
@@ -1085,7 +1089,7 @@ y 50
 end
 arch dungeon_magic
 x 3
-y 50
+y 51
 end
 arch brush
 x 3
@@ -1093,7 +1097,7 @@ y 51
 end
 arch dungeon_magic
 x 3
-y 51
+y 52
 end
 arch brush
 x 3
@@ -1101,7 +1105,7 @@ y 52
 end
 arch dungeon_magic
 x 3
-y 52
+y 53
 end
 arch brush
 x 3
@@ -1109,21 +1113,17 @@ y 53
 end
 arch dungeon_magic
 x 3
-y 53
+y 54
 end
 arch brush
 x 3
 y 54
 end
 arch dungeon_magic
-x 3
-y 54
-end
-arch brush
 x 3
 y 55
 end
-arch dungeon_magic
+arch brush
 x 3
 y 55
 end
@@ -1160,11 +1160,11 @@ arch brush
 x 4
 y 2
 end
-arch brush
+arch dungeon_magic
 x 4
 y 3
 end
-arch dungeon_magic
+arch brush
 x 4
 y 3
 end
@@ -1423,11 +1423,11 @@ name moat
 x 4
 y 54
 end
-arch brush
+arch dungeon_magic
 x 4
 y 55
 end
-arch dungeon_magic
+arch brush
 x 4
 y 55
 end
@@ -1464,11 +1464,11 @@ arch brush
 x 5
 y 2
 end
-arch brush
+arch dungeon_magic
 x 5
 y 3
 end
-arch dungeon_magic
+arch brush
 x 5
 y 3
 end
@@ -1727,11 +1727,11 @@ name moat
 x 5
 y 54
 end
-arch brush
+arch dungeon_magic
 x 5
 y 55
 end
-arch dungeon_magic
+arch brush
 x 5
 y 55
 end
@@ -1768,11 +1768,11 @@ arch brush
 x 6
 y 2
 end
-arch brush
+arch dungeon_magic
 x 6
 y 3
 end
-arch dungeon_magic
+arch brush
 x 6
 y 3
 end
@@ -2031,11 +2031,11 @@ name moat
 x 6
 y 54
 end
-arch brush
+arch dungeon_magic
 x 6
 y 55
 end
-arch dungeon_magic
+arch brush
 x 6
 y 55
 end
@@ -2072,11 +2072,11 @@ arch brush
 x 7
 y 2
 end
-arch brush
+arch dungeon_magic
 x 7
 y 3
 end
-arch dungeon_magic
+arch brush
 x 7
 y 3
 end
@@ -2485,11 +2485,11 @@ name moat
 x 7
 y 54
 end
-arch brush
+arch dungeon_magic
 x 7
 y 55
 end
-arch dungeon_magic
+arch brush
 x 7
 y 55
 end
@@ -2526,11 +2526,11 @@ arch brush
 x 8
 y 2
 end
-arch brush
+arch dungeon_magic
 x 8
 y 3
 end
-arch dungeon_magic
+arch brush
 x 8
 y 3
 end
@@ -2582,13 +2582,9 @@ arch cwall_1_2
 x 8
 y 10
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 11
-end
-arch swall_1_1
-x 8
-y 11
+y 10
 end
 arch dungeon_magic
 x 8
@@ -2596,17 +2592,29 @@ y 11
 end
 arch cobblestones2
 x 8
-y 12
+y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 12
+y 11
 end
 arch dungeon_magic
 x 8
 y 12
 end
 arch cobblestones2
+x 8
+y 12
+end
+arch swall_2_1_1
+x 8
+y 12
+end
+arch cobblestones2
+x 8
+y 13
+end
+arch swall_1_2_half
 x 8
 y 13
 end
@@ -2654,13 +2662,9 @@ arch cwall_1_2
 x 8
 y 18
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 19
-end
-arch swall_1_1
-x 8
-y 19
+y 18
 end
 arch dungeon_magic
 x 8
@@ -2668,17 +2672,29 @@ y 19
 end
 arch cobblestones2
 x 8
-y 20
+y 19
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 20
+y 19
 end
 arch dungeon_magic
 x 8
 y 20
 end
 arch cobblestones2
+x 8
+y 20
+end
+arch swall_2_1_1
+x 8
+y 20
+end
+arch cobblestones2
+x 8
+y 21
+end
+arch swall_1_2_half
 x 8
 y 21
 end
@@ -2726,13 +2742,9 @@ arch cwall_1_2
 x 8
 y 26
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 27
-end
-arch swall_1_1
-x 8
-y 27
+y 26
 end
 arch dungeon_magic
 x 8
@@ -2740,17 +2752,29 @@ y 27
 end
 arch cobblestones2
 x 8
-y 28
+y 27
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 28
+y 27
 end
 arch dungeon_magic
 x 8
 y 28
 end
 arch cobblestones2
+x 8
+y 28
+end
+arch swall_2_1_1
+x 8
+y 28
+end
+arch cobblestones2
+x 8
+y 29
+end
+arch swall_1_2_half
 x 8
 y 29
 end
@@ -2778,17 +2802,13 @@ arch cobblestones2
 x 8
 y 32
 end
-arch cwall_2_2_1
+arch cwall_1_2
 x 8
 y 32
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 33
-end
-arch swall_1_1
-x 8
-y 33
+y 32
 end
 arch dungeon_magic
 x 8
@@ -2796,13 +2816,21 @@ y 33
 end
 arch cobblestones2
 x 8
-y 34
+y 33
 end
-arch swall_1_2
+arch swall_2_1_1
+x 8
+y 33
+end
+arch dungeon_magic
 x 8
 y 34
 end
-arch dungeon_magic
+arch cobblestones2
+x 8
+y 34
+end
+arch swall_2_1_1
 x 8
 y 34
 end
@@ -2810,7 +2838,11 @@ arch cobblestones2
 x 8
 y 35
 end
-arch cwall_2_2_2
+arch swall_1_2_half
+x 8
+y 35
+end
+arch cwall_1_1
 x 8
 y 35
 end
@@ -2854,13 +2886,9 @@ arch cwall_1_2
 x 8
 y 40
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 41
-end
-arch swall_1_1
-x 8
-y 41
+y 40
 end
 arch dungeon_magic
 x 8
@@ -2868,17 +2896,29 @@ y 41
 end
 arch cobblestones2
 x 8
-y 42
+y 41
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 42
+y 41
 end
 arch dungeon_magic
 x 8
 y 42
 end
 arch cobblestones2
+x 8
+y 42
+end
+arch swall_2_1_1
+x 8
+y 42
+end
+arch cobblestones2
+x 8
+y 43
+end
+arch swall_1_2_half
 x 8
 y 43
 end
@@ -2966,11 +3006,11 @@ name moat
 x 8
 y 54
 end
-arch brush
+arch dungeon_magic
 x 8
 y 55
 end
-arch dungeon_magic
+arch brush
 x 8
 y 55
 end
@@ -3007,11 +3047,11 @@ arch brush
 x 9
 y 2
 end
-arch brush
+arch dungeon_magic
 x 9
 y 3
 end
-arch dungeon_magic
+arch brush
 x 9
 y 3
 end
@@ -3818,6 +3858,10 @@ arch cobblestones2
 x 9
 y 50
 end
+arch swall_1_4_half
+x 9
+y 50
+end
 arch cwall_1_3
 x 9
 y 50
@@ -3841,11 +3885,11 @@ name moat
 x 9
 y 54
 end
-arch brush
+arch dungeon_magic
 x 9
 y 55
 end
-arch dungeon_magic
+arch brush
 x 9
 y 55
 end
@@ -3882,11 +3926,11 @@ arch brush
 x 10
 y 2
 end
-arch brush
+arch dungeon_magic
 x 10
 y 3
 end
-arch dungeon_magic
+arch brush
 x 10
 y 3
 end
@@ -4680,16 +4724,15 @@ arch cobblestones2
 x 10
 y 49
 end
+arch dungeon_magic
+x 10
+y 50
+end
 arch cobblestones2
 x 10
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 10
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 10
 y 50
 end
@@ -4712,11 +4755,11 @@ name moat
 x 10
 y 54
 end
-arch brush
+arch dungeon_magic
 x 10
 y 55
 end
-arch dungeon_magic
+arch brush
 x 10
 y 55
 end
@@ -4753,11 +4796,11 @@ arch brush
 x 11
 y 2
 end
-arch brush
+arch dungeon_magic
 x 11
 y 3
 end
-arch dungeon_magic
+arch brush
 x 11
 y 3
 end
@@ -5038,6 +5081,10 @@ arch cobblestones2
 x 11
 y 50
 end
+arch swall_1_3_half
+x 11
+y 50
+end
 arch cwall_1_4
 x 11
 y 50
@@ -5061,11 +5108,11 @@ name moat
 x 11
 y 54
 end
-arch brush
+arch dungeon_magic
 x 11
 y 55
 end
-arch dungeon_magic
+arch brush
 x 11
 y 55
 end
@@ -5102,11 +5149,11 @@ arch brush
 x 12
 y 2
 end
-arch brush
+arch dungeon_magic
 x 12
 y 3
 end
-arch dungeon_magic
+arch brush
 x 12
 y 3
 end
@@ -5498,11 +5545,11 @@ name moat
 x 12
 y 54
 end
-arch brush
+arch dungeon_magic
 x 12
 y 55
 end
-arch dungeon_magic
+arch brush
 x 12
 y 55
 end
@@ -5539,11 +5586,11 @@ arch brush
 x 13
 y 2
 end
-arch brush
+arch dungeon_magic
 x 13
 y 3
 end
-arch dungeon_magic
+arch brush
 x 13
 y 3
 end
@@ -5572,6 +5619,10 @@ x 13
 y 7
 end
 arch cobblestones2
+x 13
+y 8
+end
+arch swall_1_4_half
 x 13
 y 8
 end
@@ -5967,11 +6018,11 @@ name moat
 x 13
 y 54
 end
-arch brush
+arch dungeon_magic
 x 13
 y 55
 end
-arch dungeon_magic
+arch brush
 x 13
 y 55
 end
@@ -6008,11 +6059,11 @@ arch brush
 x 14
 y 2
 end
-arch brush
+arch dungeon_magic
 x 14
 y 3
 end
-arch dungeon_magic
+arch brush
 x 14
 y 3
 end
@@ -6035,15 +6086,15 @@ arch brush
 x 14
 y 7
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch cobblestones2
 x 14
 y 8
 end
-arch swall_1_4
-x 14
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 14
 y 8
 end
@@ -6569,6 +6620,10 @@ arch cobblestones2
 x 14
 y 50
 end
+arch swall_1_4_half
+x 14
+y 50
+end
 arch cwall_1_3
 x 14
 y 50
@@ -6592,11 +6647,11 @@ name moat
 x 14
 y 54
 end
-arch brush
+arch dungeon_magic
 x 14
 y 55
 end
-arch dungeon_magic
+arch brush
 x 14
 y 55
 end
@@ -6633,11 +6688,11 @@ arch brush
 x 15
 y 2
 end
-arch brush
+arch dungeon_magic
 x 15
 y 3
 end
-arch dungeon_magic
+arch brush
 x 15
 y 3
 end
@@ -6660,15 +6715,15 @@ arch brush
 x 15
 y 7
 end
+arch dungeon_magic
+x 15
+y 8
+end
 arch cobblestones2
 x 15
 y 8
 end
 arch swall_2_1_2
-x 15
-y 8
-end
-arch dungeon_magic
 x 15
 y 8
 end
@@ -6868,16 +6923,15 @@ arch cobblestones2
 x 15
 y 49
 end
+arch dungeon_magic
+x 15
+y 50
+end
 arch cobblestones2
 x 15
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 15
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 15
 y 50
 end
@@ -6900,11 +6954,11 @@ name moat
 x 15
 y 54
 end
-arch brush
+arch dungeon_magic
 x 15
 y 55
 end
-arch dungeon_magic
+arch brush
 x 15
 y 55
 end
@@ -6941,11 +6995,11 @@ arch brush
 x 16
 y 2
 end
-arch brush
+arch dungeon_magic
 x 16
 y 3
 end
-arch dungeon_magic
+arch brush
 x 16
 y 3
 end
@@ -6968,15 +7022,15 @@ arch brush
 x 16
 y 7
 end
+arch dungeon_magic
+x 16
+y 8
+end
 arch cobblestones2
 x 16
 y 8
 end
-arch swall_1_3
-x 16
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 16
 y 8
 end
@@ -7377,6 +7431,10 @@ arch cobblestones2
 x 16
 y 50
 end
+arch swall_1_3_half
+x 16
+y 50
+end
 arch cwall_1_4
 x 16
 y 50
@@ -7400,11 +7458,11 @@ name moat
 x 16
 y 54
 end
-arch brush
+arch dungeon_magic
 x 16
 y 55
 end
-arch dungeon_magic
+arch brush
 x 16
 y 55
 end
@@ -7441,11 +7499,11 @@ arch brush
 x 17
 y 2
 end
-arch brush
+arch dungeon_magic
 x 17
 y 3
 end
-arch dungeon_magic
+arch brush
 x 17
 y 3
 end
@@ -7474,6 +7532,10 @@ x 17
 y 7
 end
 arch cobblestones2
+x 17
+y 8
+end
+arch swall_1_3_half
 x 17
 y 8
 end
@@ -7881,11 +7943,11 @@ name moat
 x 17
 y 54
 end
-arch brush
+arch dungeon_magic
 x 17
 y 55
 end
-arch dungeon_magic
+arch brush
 x 17
 y 55
 end
@@ -7922,11 +7984,11 @@ arch brush
 x 18
 y 2
 end
-arch brush
+arch dungeon_magic
 x 18
 y 3
 end
-arch dungeon_magic
+arch brush
 x 18
 y 3
 end
@@ -7955,6 +8017,10 @@ x 18
 y 7
 end
 arch cobblestones2
+x 18
+y 8
+end
+arch swall_1_4_half
 x 18
 y 8
 end
@@ -8410,11 +8476,11 @@ name moat
 x 18
 y 54
 end
-arch brush
+arch dungeon_magic
 x 18
 y 55
 end
-arch dungeon_magic
+arch brush
 x 18
 y 55
 end
@@ -8451,11 +8517,11 @@ arch brush
 x 19
 y 2
 end
-arch brush
+arch dungeon_magic
 x 19
 y 3
 end
-arch dungeon_magic
+arch brush
 x 19
 y 3
 end
@@ -8478,15 +8544,15 @@ arch brush
 x 19
 y 7
 end
+arch dungeon_magic
+x 19
+y 8
+end
 arch cobblestones2
 x 19
 y 8
 end
-arch swall_1_4
-x 19
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 19
 y 8
 end
@@ -8687,6 +8753,10 @@ arch cobblestones2
 x 19
 y 50
 end
+arch swall_1_4_half
+x 19
+y 50
+end
 arch cwall_1_3
 x 19
 y 50
@@ -8710,11 +8780,11 @@ name moat
 x 19
 y 54
 end
-arch brush
+arch dungeon_magic
 x 19
 y 55
 end
-arch dungeon_magic
+arch brush
 x 19
 y 55
 end
@@ -8751,11 +8821,11 @@ arch brush
 x 20
 y 2
 end
-arch brush
+arch dungeon_magic
 x 20
 y 3
 end
-arch dungeon_magic
+arch brush
 x 20
 y 3
 end
@@ -8778,15 +8848,15 @@ arch brush
 x 20
 y 7
 end
+arch dungeon_magic
+x 20
+y 8
+end
 arch cobblestones2
 x 20
 y 8
 end
 arch swall_2_1_2
-x 20
-y 8
-end
-arch dungeon_magic
 x 20
 y 8
 end
@@ -9282,16 +9352,15 @@ arch cobblestones2
 x 20
 y 49
 end
+arch dungeon_magic
+x 20
+y 50
+end
 arch cobblestones2
 x 20
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 20
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 20
 y 50
 end
@@ -9314,11 +9383,11 @@ name moat
 x 20
 y 54
 end
-arch brush
+arch dungeon_magic
 x 20
 y 55
 end
-arch dungeon_magic
+arch brush
 x 20
 y 55
 end
@@ -9355,11 +9424,11 @@ arch brush
 x 21
 y 2
 end
-arch brush
+arch dungeon_magic
 x 21
 y 3
 end
-arch dungeon_magic
+arch brush
 x 21
 y 3
 end
@@ -9382,15 +9451,15 @@ arch brush
 x 21
 y 7
 end
+arch dungeon_magic
+x 21
+y 8
+end
 arch cobblestones2
 x 21
 y 8
 end
-arch swall_1_3
-x 21
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 21
 y 8
 end
@@ -10089,6 +10158,10 @@ arch cobblestones2
 x 21
 y 50
 end
+arch swall_1_3_half
+x 21
+y 50
+end
 arch cwall_1_4
 x 21
 y 50
@@ -10112,11 +10185,11 @@ name moat
 x 21
 y 54
 end
-arch brush
+arch dungeon_magic
 x 21
 y 55
 end
-arch dungeon_magic
+arch brush
 x 21
 y 55
 end
@@ -10153,11 +10226,11 @@ arch brush
 x 22
 y 2
 end
-arch brush
+arch dungeon_magic
 x 22
 y 3
 end
-arch dungeon_magic
+arch brush
 x 22
 y 3
 end
@@ -10186,6 +10259,10 @@ x 22
 y 7
 end
 arch cobblestones2
+x 22
+y 8
+end
+arch swall_1_3_half
 x 22
 y 8
 end
@@ -10589,6 +10666,10 @@ arch cwall_2_1_1
 x 22
 y 49
 end
+arch dungeon_magic
+x 22
+y 50
+end
 arch cobblestones2
 x 22
 y 50
@@ -10621,11 +10702,11 @@ name moat
 x 22
 y 54
 end
-arch brush
+arch dungeon_magic
 x 22
 y 55
 end
-arch dungeon_magic
+arch brush
 x 22
 y 55
 end
@@ -10662,11 +10743,11 @@ arch brush
 x 23
 y 2
 end
-arch brush
+arch dungeon_magic
 x 23
 y 3
 end
-arch dungeon_magic
+arch brush
 x 23
 y 3
 end
@@ -11253,6 +11334,10 @@ arch cobblestones2
 x 23
 y 50
 end
+arch swall_1_4_half
+x 23
+y 50
+end
 arch cwall_1_3
 x 23
 y 50
@@ -11281,11 +11366,11 @@ name moat
 x 23
 y 54
 end
-arch brush
+arch dungeon_magic
 x 23
 y 55
 end
-arch dungeon_magic
+arch brush
 x 23
 y 55
 end
@@ -11322,11 +11407,11 @@ arch brush
 x 24
 y 2
 end
-arch brush
+arch dungeon_magic
 x 24
 y 3
 end
-arch dungeon_magic
+arch brush
 x 24
 y 3
 end
@@ -11860,12 +11945,7 @@ arch cobblestones2
 x 24
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 24
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 24
 y 50
 end
@@ -11888,11 +11968,11 @@ name moat
 x 24
 y 54
 end
-arch brush
+arch dungeon_magic
 x 24
 y 55
 end
-arch dungeon_magic
+arch brush
 x 24
 y 55
 end
@@ -11929,11 +12009,11 @@ arch brush
 x 25
 y 2
 end
-arch brush
+arch dungeon_magic
 x 25
 y 3
 end
-arch dungeon_magic
+arch brush
 x 25
 y 3
 end
@@ -12192,6 +12272,10 @@ arch cwall_1_4
 x 25
 y 50
 end
+arch swall_1_3_half
+x 25
+y 50
+end
 arch brush
 x 25
 y 51
@@ -12216,16 +12300,16 @@ name moat
 x 25
 y 54
 end
+arch dungeon_magic
+x 25
+y 55
+end
 arch brush
 x 25
 y 55
 end
 arch tree5
 name ornamental pine
-x 25
-y 55
-end
-arch dungeon_magic
 x 25
 y 55
 end
@@ -12262,11 +12346,11 @@ arch brush
 x 26
 y 2
 end
-arch brush
+arch dungeon_magic
 x 26
 y 3
 end
-arch dungeon_magic
+arch brush
 x 26
 y 3
 end
@@ -12542,13 +12626,9 @@ arch cwall_1_4
 x 26
 y 47
 end
-arch cobblestones2
+arch swall_1_1_half
 x 26
-y 48
-end
-arch swall_1_1
-x 26
-y 48
+y 47
 end
 arch dungeon_magic
 x 26
@@ -12556,17 +12636,29 @@ y 48
 end
 arch cobblestones2
 x 26
-y 49
+y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 26
-y 49
+y 48
 end
 arch dungeon_magic
 x 26
 y 49
 end
 arch cobblestones2
+x 26
+y 49
+end
+arch swall_2_1_1
+x 26
+y 49
+end
+arch cobblestones2
+x 26
+y 50
+end
+arch swall_1_2_half
 x 26
 y 50
 end
@@ -12598,16 +12690,16 @@ name moat
 x 26
 y 54
 end
+arch dungeon_magic
+x 26
+y 55
+end
 arch brush
 x 26
 y 55
 end
 arch tree5
 name ornamental pine
-x 26
-y 55
-end
-arch dungeon_magic
 x 26
 y 55
 end
@@ -12644,11 +12736,11 @@ arch brush
 x 27
 y 2
 end
-arch brush
+arch dungeon_magic
 x 27
 y 3
 end
-arch dungeon_magic
+arch brush
 x 27
 y 3
 end
@@ -12672,6 +12764,10 @@ x 27
 y 7
 end
 arch cobblestones2
+x 27
+y 8
+end
+arch swall_1_4_half
 x 27
 y 8
 end
@@ -13116,6 +13212,10 @@ x 27
 y 54
 move_block all
 end
+arch dungeon_magic
+x 27
+y 55
+end
 arch brush
 x 27
 y 55
@@ -13129,10 +13229,6 @@ name railing
 x 27
 y 55
 move_block all
-end
-arch dungeon_magic
-x 27
-y 55
 end
 arch brush
 x 27
@@ -13167,11 +13263,11 @@ arch brush
 x 28
 y 2
 end
-arch brush
+arch dungeon_magic
 x 28
 y 3
 end
-arch dungeon_magic
+arch brush
 x 28
 y 3
 end
@@ -13194,15 +13290,15 @@ arch brush
 x 28
 y 7
 end
+arch dungeon_magic
+x 28
+y 8
+end
 arch cobblestones2
 x 28
 y 8
 end
-arch swall_1_4
-x 28
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 28
 y 8
 end
@@ -13622,11 +13718,11 @@ arch brush
 x 29
 y 2
 end
-arch brush
+arch dungeon_magic
 x 29
 y 3
 end
-arch dungeon_magic
+arch brush
 x 29
 y 3
 end
@@ -13649,15 +13745,15 @@ arch brush
 x 29
 y 7
 end
+arch dungeon_magic
+x 29
+y 8
+end
 arch cobblestones2
 x 29
 y 8
 end
 arch swall_2_1_2
-x 29
-y 8
-end
-arch dungeon_magic
 x 29
 y 8
 end
@@ -14132,11 +14228,11 @@ arch brush
 x 30
 y 2
 end
-arch brush
+arch dungeon_magic
 x 30
 y 3
 end
-arch dungeon_magic
+arch brush
 x 30
 y 3
 end
@@ -14159,15 +14255,15 @@ arch brush
 x 30
 y 7
 end
+arch dungeon_magic
+x 30
+y 8
+end
 arch cobblestones2
 x 30
 y 8
 end
-arch swall_1_3
-x 30
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 30
 y 8
 end
@@ -14587,11 +14683,11 @@ arch brush
 x 31
 y 2
 end
-arch brush
+arch dungeon_magic
 x 31
 y 3
 end
-arch dungeon_magic
+arch brush
 x 31
 y 3
 end
@@ -14615,6 +14711,10 @@ x 31
 y 7
 end
 arch cobblestones2
+x 31
+y 8
+end
+arch swall_1_3_half
 x 31
 y 8
 end
@@ -15059,6 +15159,10 @@ x 31
 y 54
 move_block all
 end
+arch dungeon_magic
+x 31
+y 55
+end
 arch brush
 x 31
 y 55
@@ -15072,10 +15176,6 @@ name railing
 x 31
 y 55
 move_block all
-end
-arch dungeon_magic
-x 31
-y 55
 end
 arch brush
 x 31
@@ -15110,11 +15210,11 @@ arch brush
 x 32
 y 2
 end
-arch brush
+arch dungeon_magic
 x 32
 y 3
 end
-arch dungeon_magic
+arch brush
 x 32
 y 3
 end
@@ -15390,13 +15490,9 @@ arch cwall_1_3
 x 32
 y 47
 end
-arch cobblestones2
+arch swall_1_1_half
 x 32
-y 48
-end
-arch swall_1_1
-x 32
-y 48
+y 47
 end
 arch dungeon_magic
 x 32
@@ -15404,17 +15500,29 @@ y 48
 end
 arch cobblestones2
 x 32
-y 49
+y 48
 end
-arch swall_1_2
+arch swall_2_1_1
 x 32
-y 49
+y 48
 end
 arch dungeon_magic
 x 32
 y 49
 end
 arch cobblestones2
+x 32
+y 49
+end
+arch swall_2_1_1
+x 32
+y 49
+end
+arch cobblestones2
+x 32
+y 50
+end
+arch swall_1_2_half
 x 32
 y 50
 end
@@ -15446,16 +15554,16 @@ name moat
 x 32
 y 54
 end
+arch dungeon_magic
+x 32
+y 55
+end
 arch brush
 x 32
 y 55
 end
 arch tree5
 name ornamental pine
-x 32
-y 55
-end
-arch dungeon_magic
 x 32
 y 55
 end
@@ -15492,11 +15600,11 @@ arch brush
 x 33
 y 2
 end
-arch brush
+arch dungeon_magic
 x 33
 y 3
 end
-arch dungeon_magic
+arch brush
 x 33
 y 3
 end
@@ -15747,6 +15855,10 @@ arch cobblestones2
 x 33
 y 50
 end
+arch swall_1_4_half
+x 33
+y 50
+end
 arch cwall_1_3
 x 33
 y 50
@@ -15790,16 +15902,16 @@ name moat
 x 33
 y 54
 end
+arch dungeon_magic
+x 33
+y 55
+end
 arch brush
 x 33
 y 55
 end
 arch tree5
 name ornamental pine
-x 33
-y 55
-end
-arch dungeon_magic
 x 33
 y 55
 end
@@ -15836,11 +15948,11 @@ arch brush
 x 34
 y 2
 end
-arch brush
+arch dungeon_magic
 x 34
 y 3
 end
-arch dungeon_magic
+arch brush
 x 34
 y 3
 end
@@ -16370,16 +16482,15 @@ arch greenmarble
 x 34
 y 49
 end
+arch dungeon_magic
+x 34
+y 50
+end
 arch cobblestones2
 x 34
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 34
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 34
 y 50
 end
@@ -16402,11 +16513,11 @@ name moat
 x 34
 y 54
 end
-arch brush
+arch dungeon_magic
 x 34
 y 55
 end
-arch dungeon_magic
+arch brush
 x 34
 y 55
 end
@@ -16443,11 +16554,11 @@ arch brush
 x 35
 y 2
 end
-arch brush
+arch dungeon_magic
 x 35
 y 3
 end
-arch dungeon_magic
+arch brush
 x 35
 y 3
 end
@@ -17034,6 +17145,10 @@ arch cobblestones2
 x 35
 y 50
 end
+arch swall_1_3_half
+x 35
+y 50
+end
 arch cwall_1_4
 x 35
 y 50
@@ -17062,11 +17177,11 @@ name moat
 x 35
 y 54
 end
-arch brush
+arch dungeon_magic
 x 35
 y 55
 end
-arch dungeon_magic
+arch brush
 x 35
 y 55
 end
@@ -17103,11 +17218,11 @@ arch brush
 x 36
 y 2
 end
-arch brush
+arch dungeon_magic
 x 36
 y 3
 end
-arch dungeon_magic
+arch brush
 x 36
 y 3
 end
@@ -17136,6 +17251,10 @@ x 36
 y 7
 end
 arch cobblestones2
+x 36
+y 8
+end
+arch swall_1_4_half
 x 36
 y 8
 end
@@ -17447,6 +17566,10 @@ arch tile_floor
 x 36
 y 38
 end
+arch swall_1_4_half
+x 36
+y 38
+end
 arch cwall_2_1_1
 x 36
 y 38
@@ -17511,6 +17634,10 @@ arch tile_floor
 x 36
 y 46
 end
+arch swall_1_4_half
+x 36
+y 46
+end
 arch cwall_2_1_1
 x 36
 y 46
@@ -17571,11 +17698,11 @@ name moat
 x 36
 y 54
 end
-arch brush
+arch dungeon_magic
 x 36
 y 55
 end
-arch dungeon_magic
+arch brush
 x 36
 y 55
 end
@@ -17612,11 +17739,11 @@ arch brush
 x 37
 y 2
 end
-arch brush
+arch dungeon_magic
 x 37
 y 3
 end
-arch dungeon_magic
+arch brush
 x 37
 y 3
 end
@@ -17639,15 +17766,15 @@ arch brush
 x 37
 y 7
 end
+arch dungeon_magic
+x 37
+y 8
+end
 arch cobblestones2
 x 37
 y 8
 end
-arch swall_1_4
-x 37
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 37
 y 8
 end
@@ -17897,15 +18024,15 @@ arch brazier
 x 37
 y 37
 end
+arch dungeon_magic
+x 37
+y 38
+end
 arch tile_floor
 x 37
 y 38
 end
-arch swall_1_4
-x 37
-y 38
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 37
 y 38
 end
@@ -17965,15 +18092,15 @@ arch battle_axe
 x 37
 y 45
 end
+arch dungeon_magic
+x 37
+y 46
+end
 arch tile_floor
 x 37
 y 46
 end
-arch swall_1_4
-x 37
-y 46
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 37
 y 46
 end
@@ -18046,6 +18173,10 @@ arch cobblestones2
 x 37
 y 50
 end
+arch swall_1_4_half
+x 37
+y 50
+end
 arch cwall_1_3
 x 37
 y 50
@@ -18069,11 +18200,11 @@ name moat
 x 37
 y 54
 end
-arch brush
+arch dungeon_magic
 x 37
 y 55
 end
-arch dungeon_magic
+arch brush
 x 37
 y 55
 end
@@ -18110,11 +18241,11 @@ arch brush
 x 38
 y 2
 end
-arch brush
+arch dungeon_magic
 x 38
 y 3
 end
-arch dungeon_magic
+arch brush
 x 38
 y 3
 end
@@ -18137,15 +18268,15 @@ arch brush
 x 38
 y 7
 end
+arch dungeon_magic
+x 38
+y 8
+end
 arch cobblestones2
 x 38
 y 8
 end
 arch swall_2_1_2
-x 38
-y 8
-end
-arch dungeon_magic
 x 38
 y 8
 end
@@ -18378,6 +18509,10 @@ arch tile_white_floor
 x 38
 y 37
 end
+arch dungeon_magic
+x 38
+y 38
+end
 arch tile_white_floor
 x 38
 y 38
@@ -18388,7 +18523,7 @@ y 38
 end
 arch dungeon_magic
 x 38
-y 38
+y 39
 end
 arch tile_floor
 x 38
@@ -18400,7 +18535,7 @@ y 39
 end
 arch dungeon_magic
 x 38
-y 39
+y 40
 end
 arch tile_floor
 x 38
@@ -18412,7 +18547,7 @@ y 40
 end
 arch dungeon_magic
 x 38
-y 40
+y 41
 end
 arch tile_white_floor
 x 38
@@ -18424,7 +18559,7 @@ y 41
 end
 arch dungeon_magic
 x 38
-y 41
+y 42
 end
 arch tile_white_floor
 x 38
@@ -18433,18 +18568,6 @@ end
 arch swall_2_1_1
 x 38
 y 42
-end
-arch dungeon_magic
-x 38
-y 42
-end
-arch tile_floor
-x 38
-y 43
-end
-arch swall_2_1_1
-x 38
-y 43
 end
 arch dungeon_magic
 x 38
@@ -18452,6 +18575,18 @@ y 43
 end
 arch tile_floor
 x 38
+y 43
+end
+arch swall_2_1_1
+x 38
+y 43
+end
+arch dungeon_magic
+x 38
+y 44
+end
+arch tile_floor
+x 38
 y 44
 end
 arch swall_2_1_1
@@ -18460,7 +18595,7 @@ y 44
 end
 arch dungeon_magic
 x 38
-y 44
+y 45
 end
 arch tile_white_floor
 x 38
@@ -18472,17 +18607,13 @@ y 45
 end
 arch dungeon_magic
 x 38
-y 45
+y 46
 end
 arch tile_white_floor
 x 38
 y 46
 end
 arch swall_2_2_4
-x 38
-y 46
-end
-arch dungeon_magic
 x 38
 y 46
 end
@@ -18498,16 +18629,15 @@ arch cobblestones2
 x 38
 y 49
 end
+arch dungeon_magic
+x 38
+y 50
+end
 arch cobblestones2
 x 38
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 38
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 38
 y 50
 end
@@ -18530,11 +18660,11 @@ name moat
 x 38
 y 54
 end
-arch brush
+arch dungeon_magic
 x 38
 y 55
 end
-arch dungeon_magic
+arch brush
 x 38
 y 55
 end
@@ -18571,11 +18701,11 @@ arch brush
 x 39
 y 2
 end
-arch brush
+arch dungeon_magic
 x 39
 y 3
 end
-arch dungeon_magic
+arch brush
 x 39
 y 3
 end
@@ -18598,15 +18728,15 @@ arch brush
 x 39
 y 7
 end
+arch dungeon_magic
+x 39
+y 8
+end
 arch cobblestones2
 x 39
 y 8
 end
-arch swall_1_3
-x 39
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 39
 y 8
 end
@@ -18978,6 +19108,10 @@ arch cobblestones2
 x 39
 y 50
 end
+arch swall_1_3_half
+x 39
+y 50
+end
 arch cwall_1_4
 x 39
 y 50
@@ -19001,11 +19135,11 @@ name moat
 x 39
 y 54
 end
-arch brush
+arch dungeon_magic
 x 39
 y 55
 end
-arch dungeon_magic
+arch brush
 x 39
 y 55
 end
@@ -19042,11 +19176,11 @@ arch brush
 x 40
 y 2
 end
-arch brush
+arch dungeon_magic
 x 40
 y 3
 end
-arch dungeon_magic
+arch brush
 x 40
 y 3
 end
@@ -19075,6 +19209,10 @@ x 40
 y 7
 end
 arch cobblestones2
+x 40
+y 8
+end
+arch swall_1_3_half
 x 40
 y 8
 end
@@ -19575,11 +19713,11 @@ name moat
 x 40
 y 54
 end
-arch brush
+arch dungeon_magic
 x 40
 y 55
 end
-arch dungeon_magic
+arch brush
 x 40
 y 55
 end
@@ -19616,11 +19754,11 @@ arch brush
 x 41
 y 2
 end
-arch brush
+arch dungeon_magic
 x 41
 y 3
 end
-arch dungeon_magic
+arch brush
 x 41
 y 3
 end
@@ -19649,6 +19787,10 @@ x 41
 y 7
 end
 arch cobblestones2
+x 41
+y 8
+end
+arch swall_1_4_half
 x 41
 y 8
 end
@@ -20070,11 +20212,11 @@ name moat
 x 41
 y 54
 end
-arch brush
+arch dungeon_magic
 x 41
 y 55
 end
-arch dungeon_magic
+arch brush
 x 41
 y 55
 end
@@ -20111,11 +20253,11 @@ arch brush
 x 42
 y 2
 end
-arch brush
+arch dungeon_magic
 x 42
 y 3
 end
-arch dungeon_magic
+arch brush
 x 42
 y 3
 end
@@ -20138,15 +20280,15 @@ arch brush
 x 42
 y 7
 end
+arch dungeon_magic
+x 42
+y 8
+end
 arch cobblestones2
 x 42
 y 8
 end
-arch swall_1_4
-x 42
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 42
 y 8
 end
@@ -20474,6 +20616,10 @@ arch cobblestones2
 x 42
 y 50
 end
+arch swall_1_4_half
+x 42
+y 50
+end
 arch cwall_1_3
 x 42
 y 50
@@ -20497,11 +20643,11 @@ name moat
 x 42
 y 54
 end
-arch brush
+arch dungeon_magic
 x 42
 y 55
 end
-arch dungeon_magic
+arch brush
 x 42
 y 55
 end
@@ -20538,11 +20684,11 @@ arch brush
 x 43
 y 2
 end
-arch brush
+arch dungeon_magic
 x 43
 y 3
 end
-arch dungeon_magic
+arch brush
 x 43
 y 3
 end
@@ -20565,15 +20711,15 @@ arch brush
 x 43
 y 7
 end
+arch dungeon_magic
+x 43
+y 8
+end
 arch cobblestones2
 x 43
 y 8
 end
 arch swall_2_1_2
-x 43
-y 8
-end
-arch dungeon_magic
 x 43
 y 8
 end
@@ -20971,16 +21117,15 @@ arch cobblestones2
 x 43
 y 49
 end
+arch dungeon_magic
+x 43
+y 50
+end
 arch cobblestones2
 x 43
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 43
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 43
 y 50
 end
@@ -21003,11 +21148,11 @@ name moat
 x 43
 y 54
 end
-arch brush
+arch dungeon_magic
 x 43
 y 55
 end
-arch dungeon_magic
+arch brush
 x 43
 y 55
 end
@@ -21044,11 +21189,11 @@ arch brush
 x 44
 y 2
 end
-arch brush
+arch dungeon_magic
 x 44
 y 3
 end
-arch dungeon_magic
+arch brush
 x 44
 y 3
 end
@@ -21071,15 +21216,15 @@ arch brush
 x 44
 y 7
 end
+arch dungeon_magic
+x 44
+y 8
+end
 arch cobblestones2
 x 44
 y 8
 end
-arch swall_1_3
-x 44
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 44
 y 8
 end
@@ -21473,6 +21618,10 @@ arch cobblestones2
 x 44
 y 50
 end
+arch swall_1_3_half
+x 44
+y 50
+end
 arch cwall_1_4
 x 44
 y 50
@@ -21496,11 +21645,11 @@ name moat
 x 44
 y 54
 end
-arch brush
+arch dungeon_magic
 x 44
 y 55
 end
-arch dungeon_magic
+arch brush
 x 44
 y 55
 end
@@ -21537,11 +21686,11 @@ arch brush
 x 45
 y 2
 end
-arch brush
+arch dungeon_magic
 x 45
 y 3
 end
-arch dungeon_magic
+arch brush
 x 45
 y 3
 end
@@ -21570,6 +21719,10 @@ x 45
 y 7
 end
 arch cobblestones2
+x 45
+y 8
+end
+arch swall_1_3_half
 x 45
 y 8
 end
@@ -21975,11 +22128,11 @@ name moat
 x 45
 y 54
 end
-arch brush
+arch dungeon_magic
 x 45
 y 55
 end
-arch dungeon_magic
+arch brush
 x 45
 y 55
 end
@@ -22016,11 +22169,11 @@ arch brush
 x 46
 y 2
 end
-arch brush
+arch dungeon_magic
 x 46
 y 3
 end
-arch dungeon_magic
+arch brush
 x 46
 y 3
 end
@@ -22461,11 +22614,11 @@ name moat
 x 46
 y 54
 end
-arch brush
+arch dungeon_magic
 x 46
 y 55
 end
-arch dungeon_magic
+arch brush
 x 46
 y 55
 end
@@ -22502,11 +22655,11 @@ arch brush
 x 47
 y 2
 end
-arch brush
+arch dungeon_magic
 x 47
 y 3
 end
-arch dungeon_magic
+arch brush
 x 47
 y 3
 end
@@ -22897,6 +23050,10 @@ arch tile_white_floor
 x 47
 y 37
 end
+arch dungeon_magic
+x 47
+y 38
+end
 arch tile_white_floor
 x 47
 y 38
@@ -22907,7 +23064,7 @@ y 38
 end
 arch dungeon_magic
 x 47
-y 38
+y 39
 end
 arch tile_floor
 x 47
@@ -22919,7 +23076,7 @@ y 39
 end
 arch dungeon_magic
 x 47
-y 39
+y 40
 end
 arch tile_floor
 x 47
@@ -22931,7 +23088,7 @@ y 40
 end
 arch dungeon_magic
 x 47
-y 40
+y 41
 end
 arch tile_white_floor
 x 47
@@ -22943,7 +23100,7 @@ y 41
 end
 arch dungeon_magic
 x 47
-y 41
+y 42
 end
 arch tile_white_floor
 x 47
@@ -22952,18 +23109,6 @@ end
 arch swall_2_1_1
 x 47
 y 42
-end
-arch dungeon_magic
-x 47
-y 42
-end
-arch tile_floor
-x 47
-y 43
-end
-arch swall_2_1_1
-x 47
-y 43
 end
 arch dungeon_magic
 x 47
@@ -22971,6 +23116,18 @@ y 43
 end
 arch tile_floor
 x 47
+y 43
+end
+arch swall_2_1_1
+x 47
+y 43
+end
+arch dungeon_magic
+x 47
+y 44
+end
+arch tile_floor
+x 47
 y 44
 end
 arch swall_2_1_1
@@ -22979,7 +23136,7 @@ y 44
 end
 arch dungeon_magic
 x 47
-y 44
+y 45
 end
 arch tile_white_floor
 x 47
@@ -22991,17 +23148,13 @@ y 45
 end
 arch dungeon_magic
 x 47
-y 45
+y 46
 end
 arch tile_white_floor
 x 47
 y 46
 end
 arch swall_2_2_1
-x 47
-y 46
-end
-arch dungeon_magic
 x 47
 y 46
 end
@@ -23023,6 +23176,10 @@ x 47
 y 49
 end
 arch cobblestones2
+x 47
+y 50
+end
+arch swall_1_4_half
 x 47
 y 50
 end
@@ -23049,11 +23206,11 @@ name moat
 x 47
 y 54
 end
-arch brush
+arch dungeon_magic
 x 47
 y 55
 end
-arch dungeon_magic
+arch brush
 x 47
 y 55
 end
@@ -23090,11 +23247,11 @@ arch brush
 x 48
 y 2
 end
-arch brush
+arch dungeon_magic
 x 48
 y 3
 end
-arch dungeon_magic
+arch brush
 x 48
 y 3
 end
@@ -23621,15 +23778,15 @@ arch tile_floor
 x 48
 y 37
 end
+arch dungeon_magic
+x 48
+y 38
+end
 arch tile_floor
 x 48
 y 38
 end
 arch swall_2_1_2
-x 48
-y 38
-end
-arch dungeon_magic
 x 48
 y 38
 end
@@ -23689,15 +23846,15 @@ arch crossbow
 x 48
 y 45
 end
+arch dungeon_magic
+x 48
+y 46
+end
 arch tile_floor
 x 48
 y 46
 end
 arch swall_2_1_2
-x 48
-y 46
-end
-arch dungeon_magic
 x 48
 y 46
 end
@@ -23713,16 +23870,15 @@ arch cobblestones2
 x 48
 y 49
 end
+arch dungeon_magic
+x 48
+y 50
+end
 arch cobblestones2
 x 48
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 48
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 48
 y 50
 end
@@ -23745,11 +23901,11 @@ name moat
 x 48
 y 54
 end
-arch brush
+arch dungeon_magic
 x 48
 y 55
 end
-arch dungeon_magic
+arch brush
 x 48
 y 55
 end
@@ -23786,11 +23942,11 @@ arch brush
 x 49
 y 2
 end
-arch brush
+arch dungeon_magic
 x 49
 y 3
 end
-arch dungeon_magic
+arch brush
 x 49
 y 3
 end
@@ -24034,11 +24190,11 @@ arch cwall_2_1_2
 x 49
 y 32
 end
-arch tile_floor
+arch dungeon_magic
 x 49
 y 33
 end
-arch dungeon_magic
+arch tile_floor
 x 49
 y 33
 end
@@ -24049,11 +24205,11 @@ sp 33
 x 49
 y 33
 end
-arch tile_floor
+arch dungeon_magic
 x 49
 y 34
 end
-arch dungeon_magic
+arch tile_floor
 x 49
 y 34
 end
@@ -24128,15 +24284,15 @@ arch brazier
 x 49
 y 37
 end
+arch dungeon_magic
+x 49
+y 38
+end
 arch tile_floor
 x 49
 y 38
 end
-arch swall_1_3
-x 49
-y 38
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 49
 y 38
 end
@@ -24196,15 +24352,15 @@ arch broadsword
 x 49
 y 45
 end
+arch dungeon_magic
+x 49
+y 46
+end
 arch tile_floor
 x 49
 y 46
 end
-arch swall_1_3
-x 49
-y 46
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 49
 y 46
 end
@@ -24277,6 +24433,10 @@ arch cobblestones2
 x 49
 y 50
 end
+arch swall_1_3_half
+x 49
+y 50
+end
 arch cwall_1_4
 x 49
 y 50
@@ -24300,11 +24460,11 @@ name moat
 x 49
 y 54
 end
-arch brush
+arch dungeon_magic
 x 49
 y 55
 end
-arch dungeon_magic
+arch brush
 x 49
 y 55
 end
@@ -24341,11 +24501,11 @@ arch brush
 x 50
 y 2
 end
-arch brush
+arch dungeon_magic
 x 50
 y 3
 end
-arch dungeon_magic
+arch brush
 x 50
 y 3
 end
@@ -24397,13 +24557,9 @@ arch cwall_1_2
 x 50
 y 10
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 11
-end
-arch swall_1_1
-x 50
-y 11
+y 10
 end
 arch dungeon_magic
 x 50
@@ -24411,17 +24567,29 @@ y 11
 end
 arch cobblestones2
 x 50
-y 12
+y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 12
+y 11
 end
 arch dungeon_magic
 x 50
 y 12
 end
 arch cobblestones2
+x 50
+y 12
+end
+arch swall_2_1_1
+x 50
+y 12
+end
+arch cobblestones2
+x 50
+y 13
+end
+arch swall_1_2_half
 x 50
 y 13
 end
@@ -24469,13 +24637,9 @@ arch cwall_1_2
 x 50
 y 18
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 19
-end
-arch swall_1_1
-x 50
-y 19
+y 18
 end
 arch dungeon_magic
 x 50
@@ -24483,17 +24647,29 @@ y 19
 end
 arch cobblestones2
 x 50
-y 20
+y 19
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 20
+y 19
 end
 arch dungeon_magic
 x 50
 y 20
 end
 arch cobblestones2
+x 50
+y 20
+end
+arch swall_2_1_1
+x 50
+y 20
+end
+arch cobblestones2
+x 50
+y 21
+end
+arch swall_1_2_half
 x 50
 y 21
 end
@@ -24541,13 +24717,9 @@ arch cwall_1_2
 x 50
 y 26
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 27
-end
-arch swall_1_1
-x 50
-y 27
+y 26
 end
 arch dungeon_magic
 x 50
@@ -24555,17 +24727,29 @@ y 27
 end
 arch cobblestones2
 x 50
-y 28
+y 27
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 28
+y 27
 end
 arch dungeon_magic
 x 50
 y 28
 end
 arch cobblestones2
+x 50
+y 28
+end
+arch swall_2_1_1
+x 50
+y 28
+end
+arch cobblestones2
+x 50
+y 29
+end
+arch swall_1_2_half
 x 50
 y 29
 end
@@ -24597,13 +24781,9 @@ arch cwall_2_2_4
 x 50
 y 32
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 33
-end
-arch swall_1_1
-x 50
-y 33
+y 32
 end
 arch dungeon_magic
 x 50
@@ -24611,17 +24791,29 @@ y 33
 end
 arch cobblestones2
 x 50
-y 34
+y 33
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 34
+y 33
 end
 arch dungeon_magic
 x 50
 y 34
 end
 arch cobblestones2
+x 50
+y 34
+end
+arch swall_2_1_1
+x 50
+y 34
+end
+arch cobblestones2
+x 50
+y 35
+end
+arch swall_1_2_half
 x 50
 y 35
 end
@@ -24637,20 +24829,31 @@ arch cwall_1_2
 x 50
 y 36
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 37
-end
-arch swall_0
-face swall_55.111
-x 50
-y 37
+y 36
 end
 arch dungeon_magic
 x 50
 y 37
 end
 arch cobblestones2
+x 50
+y 37
+end
+arch swall_2_1_1
+x 50
+y 37
+end
+arch cobblestones2
+x 50
+y 38
+end
+arch swall_1_2_half
+x 50
+y 38
+end
+arch swall_1_3_half
 x 50
 y 38
 end
@@ -24718,24 +24921,35 @@ arch cobblestones2
 x 50
 y 46
 end
+arch swall_1_3_half
+x 50
+y 46
+end
 arch cwall_1_2
 x 50
 y 46
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 47
-end
-arch swall_0
-face swall_55.111
-x 50
-y 47
+y 46
 end
 arch dungeon_magic
 x 50
 y 47
 end
 arch cobblestones2
+x 50
+y 47
+end
+arch swall_2_1_1
+x 50
+y 47
+end
+arch cobblestones2
+x 50
+y 48
+end
+arch swall_1_2_half
 x 50
 y 48
 end
@@ -24783,11 +24997,11 @@ name moat
 x 50
 y 54
 end
-arch brush
+arch dungeon_magic
 x 50
 y 55
 end
-arch dungeon_magic
+arch brush
 x 50
 y 55
 end
@@ -24824,11 +25038,11 @@ arch brush
 x 51
 y 2
 end
-arch brush
+arch dungeon_magic
 x 51
 y 3
 end
-arch dungeon_magic
+arch brush
 x 51
 y 3
 end
@@ -25222,11 +25436,11 @@ name moat
 x 51
 y 54
 end
-arch brush
+arch dungeon_magic
 x 51
 y 55
 end
-arch dungeon_magic
+arch brush
 x 51
 y 55
 end
@@ -25263,11 +25477,11 @@ arch brush
 x 52
 y 2
 end
-arch brush
+arch dungeon_magic
 x 52
 y 3
 end
-arch dungeon_magic
+arch brush
 x 52
 y 3
 end
@@ -25526,11 +25740,11 @@ name moat
 x 52
 y 54
 end
-arch brush
+arch dungeon_magic
 x 52
 y 55
 end
-arch dungeon_magic
+arch brush
 x 52
 y 55
 end
@@ -25567,11 +25781,11 @@ arch brush
 x 53
 y 2
 end
-arch brush
+arch dungeon_magic
 x 53
 y 3
 end
-arch dungeon_magic
+arch brush
 x 53
 y 3
 end
@@ -25830,11 +26044,11 @@ name moat
 x 53
 y 54
 end
-arch brush
+arch dungeon_magic
 x 53
 y 55
 end
-arch dungeon_magic
+arch brush
 x 53
 y 55
 end
@@ -25871,11 +26085,11 @@ arch brush
 x 54
 y 2
 end
-arch brush
+arch dungeon_magic
 x 54
 y 3
 end
-arch dungeon_magic
+arch brush
 x 54
 y 3
 end
@@ -26134,11 +26348,11 @@ name moat
 x 54
 y 54
 end
-arch brush
+arch dungeon_magic
 x 54
 y 55
 end
-arch dungeon_magic
+arch brush
 x 54
 y 55
 end
@@ -26175,17 +26389,13 @@ arch brush
 x 55
 y 2
 end
-arch brush
-x 55
-y 3
-end
 arch dungeon_magic
 x 55
 y 3
 end
 arch brush
 x 55
-y 4
+y 3
 end
 arch dungeon_magic
 x 55
@@ -26193,7 +26403,7 @@ y 4
 end
 arch brush
 x 55
-y 5
+y 4
 end
 arch dungeon_magic
 x 55
@@ -26201,11 +26411,19 @@ y 5
 end
 arch brush
 x 55
-y 6
+y 5
 end
 arch dungeon_magic
 x 55
 y 6
+end
+arch brush
+x 55
+y 6
+end
+arch dungeon_magic
+x 55
+y 7
 end
 arch brush
 x 55
@@ -26220,7 +26438,7 @@ move_block all
 end
 arch dungeon_magic
 x 55
-y 7
+y 8
 end
 arch brush
 x 55
@@ -26228,7 +26446,7 @@ y 8
 end
 arch dungeon_magic
 x 55
-y 8
+y 9
 end
 arch brush
 x 55
@@ -26236,7 +26454,7 @@ y 9
 end
 arch dungeon_magic
 x 55
-y 9
+y 10
 end
 arch brush
 x 55
@@ -26244,7 +26462,7 @@ y 10
 end
 arch dungeon_magic
 x 55
-y 10
+y 11
 end
 arch brush
 x 55
@@ -26252,7 +26470,7 @@ y 11
 end
 arch dungeon_magic
 x 55
-y 11
+y 12
 end
 arch brush
 x 55
@@ -26260,7 +26478,7 @@ y 12
 end
 arch dungeon_magic
 x 55
-y 12
+y 13
 end
 arch brush
 x 55
@@ -26268,7 +26486,7 @@ y 13
 end
 arch dungeon_magic
 x 55
-y 13
+y 14
 end
 arch brush
 x 55
@@ -26276,7 +26494,7 @@ y 14
 end
 arch dungeon_magic
 x 55
-y 14
+y 15
 end
 arch brush
 x 55
@@ -26284,7 +26502,7 @@ y 15
 end
 arch dungeon_magic
 x 55
-y 15
+y 16
 end
 arch brush
 x 55
@@ -26292,7 +26510,7 @@ y 16
 end
 arch dungeon_magic
 x 55
-y 16
+y 17
 end
 arch brush
 x 55
@@ -26300,7 +26518,7 @@ y 17
 end
 arch dungeon_magic
 x 55
-y 17
+y 18
 end
 arch brush
 x 55
@@ -26308,7 +26526,7 @@ y 18
 end
 arch dungeon_magic
 x 55
-y 18
+y 19
 end
 arch brush
 x 55
@@ -26316,7 +26534,7 @@ y 19
 end
 arch dungeon_magic
 x 55
-y 19
+y 20
 end
 arch brush
 x 55
@@ -26324,7 +26542,7 @@ y 20
 end
 arch dungeon_magic
 x 55
-y 20
+y 21
 end
 arch brush
 x 55
@@ -26332,7 +26550,7 @@ y 21
 end
 arch dungeon_magic
 x 55
-y 21
+y 22
 end
 arch brush
 x 55
@@ -26340,7 +26558,7 @@ y 22
 end
 arch dungeon_magic
 x 55
-y 22
+y 23
 end
 arch brush
 x 55
@@ -26348,7 +26566,7 @@ y 23
 end
 arch dungeon_magic
 x 55
-y 23
+y 24
 end
 arch brush
 x 55
@@ -26356,7 +26574,7 @@ y 24
 end
 arch dungeon_magic
 x 55
-y 24
+y 25
 end
 arch brush
 x 55
@@ -26364,7 +26582,7 @@ y 25
 end
 arch dungeon_magic
 x 55
-y 25
+y 26
 end
 arch brush
 x 55
@@ -26372,7 +26590,7 @@ y 26
 end
 arch dungeon_magic
 x 55
-y 26
+y 27
 end
 arch brush
 x 55
@@ -26380,7 +26598,7 @@ y 27
 end
 arch dungeon_magic
 x 55
-y 27
+y 28
 end
 arch brush
 x 55
@@ -26388,7 +26606,7 @@ y 28
 end
 arch dungeon_magic
 x 55
-y 28
+y 29
 end
 arch brush
 x 55
@@ -26396,7 +26614,7 @@ y 29
 end
 arch dungeon_magic
 x 55
-y 29
+y 30
 end
 arch brush
 x 55
@@ -26404,7 +26622,7 @@ y 30
 end
 arch dungeon_magic
 x 55
-y 30
+y 31
 end
 arch brush
 x 55
@@ -26412,7 +26630,7 @@ y 31
 end
 arch dungeon_magic
 x 55
-y 31
+y 32
 end
 arch brush
 x 55
@@ -26420,7 +26638,7 @@ y 32
 end
 arch dungeon_magic
 x 55
-y 32
+y 33
 end
 arch brush
 x 55
@@ -26428,7 +26646,7 @@ y 33
 end
 arch dungeon_magic
 x 55
-y 33
+y 34
 end
 arch brush
 x 55
@@ -26436,7 +26654,7 @@ y 34
 end
 arch dungeon_magic
 x 55
-y 34
+y 35
 end
 arch brush
 x 55
@@ -26444,7 +26662,7 @@ y 35
 end
 arch dungeon_magic
 x 55
-y 35
+y 36
 end
 arch brush
 x 55
@@ -26452,7 +26670,7 @@ y 36
 end
 arch dungeon_magic
 x 55
-y 36
+y 37
 end
 arch brush
 x 55
@@ -26460,7 +26678,7 @@ y 37
 end
 arch dungeon_magic
 x 55
-y 37
+y 38
 end
 arch brush
 x 55
@@ -26468,7 +26686,7 @@ y 38
 end
 arch dungeon_magic
 x 55
-y 38
+y 39
 end
 arch brush
 x 55
@@ -26476,7 +26694,7 @@ y 39
 end
 arch dungeon_magic
 x 55
-y 39
+y 40
 end
 arch brush
 x 55
@@ -26484,7 +26702,7 @@ y 40
 end
 arch dungeon_magic
 x 55
-y 40
+y 41
 end
 arch brush
 x 55
@@ -26492,7 +26710,7 @@ y 41
 end
 arch dungeon_magic
 x 55
-y 41
+y 42
 end
 arch brush
 x 55
@@ -26500,7 +26718,7 @@ y 42
 end
 arch dungeon_magic
 x 55
-y 42
+y 43
 end
 arch brush
 x 55
@@ -26508,7 +26726,7 @@ y 43
 end
 arch dungeon_magic
 x 55
-y 43
+y 44
 end
 arch brush
 x 55
@@ -26516,7 +26734,7 @@ y 44
 end
 arch dungeon_magic
 x 55
-y 44
+y 45
 end
 arch brush
 x 55
@@ -26524,7 +26742,7 @@ y 45
 end
 arch dungeon_magic
 x 55
-y 45
+y 46
 end
 arch brush
 x 55
@@ -26532,7 +26750,7 @@ y 46
 end
 arch dungeon_magic
 x 55
-y 46
+y 47
 end
 arch brush
 x 55
@@ -26540,7 +26758,7 @@ y 47
 end
 arch dungeon_magic
 x 55
-y 47
+y 48
 end
 arch brush
 x 55
@@ -26548,7 +26766,7 @@ y 48
 end
 arch dungeon_magic
 x 55
-y 48
+y 49
 end
 arch brush
 x 55
@@ -26556,7 +26774,7 @@ y 49
 end
 arch dungeon_magic
 x 55
-y 49
+y 50
 end
 arch brush
 x 55
@@ -26564,7 +26782,7 @@ y 50
 end
 arch dungeon_magic
 x 55
-y 50
+y 51
 end
 arch brush
 x 55
@@ -26572,7 +26790,7 @@ y 51
 end
 arch dungeon_magic
 x 55
-y 51
+y 52
 end
 arch brush
 x 55
@@ -26580,7 +26798,7 @@ y 52
 end
 arch dungeon_magic
 x 55
-y 52
+y 53
 end
 arch brush
 x 55
@@ -26588,21 +26806,17 @@ y 53
 end
 arch dungeon_magic
 x 55
-y 53
+y 54
 end
 arch brush
 x 55
 y 54
 end
 arch dungeon_magic
-x 55
-y 54
-end
-arch brush
 x 55
 y 55
 end
-arch dungeon_magic
+arch brush
 x 55
 y 55
 end
