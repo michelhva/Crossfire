@@ -2880,19 +2880,19 @@ y 17
 connected 2
 move_off walk
 end
+arch magic_mouth
+msg
+Owner Storage Room
+endmsg
+x 12
+y 17
+end
 arch woodfloor
 x 12
 y 17
 unique 1
 end
 arch dungeon_magic
-x 12
-y 17
-end
-arch magic_mouth
-msg
-Owner Storage Room
-endmsg
 x 12
 y 17
 end
