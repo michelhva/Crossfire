@@ -1,5 +1,6 @@
 arch map
-name brxzlhouse
+name Luxory Manor
+difficulty 1
 region stoneville
 width 16
 height 16
@@ -777,15 +778,15 @@ arch cobblestones
 x 7
 y 1
 end
-arch cobblestones
-x 7
-y 2
-end
 arch check_inv
 slaying firsthousekey
 x 7
 y 2
 connected 122
+end
+arch cobblestones
+x 7
+y 2
 end
 arch afloor_left
 x 7
@@ -797,16 +798,16 @@ x 7
 y 3
 connected 122
 end
-arch afloor_left
-x 7
-y 4
-unique 1
-end
 arch check_inv
 slaying firsthousekey
 x 7
 y 4
 connected 122
+end
+arch afloor_left
+x 7
+y 4
+unique 1
 end
 arch afloor_left
 x 7
@@ -896,15 +897,15 @@ arch cobblestones
 x 8
 y 1
 end
-arch cobblestones
-x 8
-y 2
-end
 arch check_inv
 slaying firsthousekey
 x 8
 y 2
 connected 122
+end
+arch cobblestones
+x 8
+y 2
 end
 arch afloor_left
 x 8
@@ -916,16 +917,16 @@ x 8
 y 3
 connected 122
 end
-arch afloor_left
-x 8
-y 4
-unique 1
-end
 arch check_inv
 slaying firsthousekey
 x 8
 y 4
 connected 122
+end
+arch afloor_left
+x 8
+y 4
+unique 1
 end
 arch afloor_left
 x 8
