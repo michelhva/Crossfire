@@ -1,5 +1,6 @@
 arch map
-name village91
+name Village
+difficulty 1
 region darcap
 width 48
 height 47
@@ -572,7 +573,7 @@ arch small_stones
 x 2
 y 5
 end
-arch wall_2_1_2
+arch wall_1_3
 x 2
 y 5
 end
@@ -1056,7 +1057,7 @@ arch small_stones
 x 4
 y 5
 end
-arch door_2
+arch wall_1_4
 x 4
 y 5
 end
@@ -1474,7 +1475,7 @@ arch small_stones
 x 5
 y 41
 end
-arch door_2
+arch wall_1_3
 x 5
 y 41
 end
@@ -1954,7 +1955,7 @@ arch small_stones
 x 7
 y 41
 end
-arch door_2
+arch wall_1_4
 x 7
 y 41
 end
@@ -2584,7 +2585,7 @@ arch small_stones
 x 10
 y 20
 end
-arch wall_2_1_2
+arch wall_1_3
 x 10
 y 20
 end
@@ -3104,7 +3105,7 @@ arch small_stones
 x 12
 y 26
 end
-arch wall_2_1_1
+arch wall_1_2
 x 12
 y 26
 end
@@ -3136,7 +3137,7 @@ arch small_stones
 x 12
 y 30
 end
-arch wall_2_1_1
+arch wall_1_1
 x 12
 y 30
 end
@@ -3608,7 +3609,7 @@ arch small_stones
 x 14
 y 20
 end
-arch wall_2_1_2
+arch wall_1_4
 x 14
 y 20
 end
@@ -3692,7 +3693,7 @@ arch small_stones
 x 14
 y 38
 end
-arch wall_2_1_2
+arch wall_1_3
 x 14
 y 38
 end
@@ -4426,7 +4427,7 @@ arch small_stones
 x 17
 y 38
 end
-arch wall_2_1_2
+arch wall_1_4
 x 17
 y 38
 end
@@ -5484,7 +5485,7 @@ arch small_stones
 x 22
 y 8
 end
-arch door_1
+arch wall_1_2
 x 22
 y 8
 end
@@ -5500,7 +5501,7 @@ arch small_stones
 x 22
 y 10
 end
-arch door_1
+arch wall_1_1
 x 22
 y 10
 end
@@ -5724,7 +5725,7 @@ arch small_stones
 x 22
 y 39
 end
-arch wall_2_1_1
+arch wall_1_2
 x 22
 y 39
 end
@@ -5732,7 +5733,7 @@ arch small_stones
 x 22
 y 40
 end
-arch wall_1_2
+arch door_1
 x 22
 y 40
 end
@@ -5748,7 +5749,7 @@ arch small_stones
 x 22
 y 42
 end
-arch door_1
+arch wall_1_1
 x 22
 y 42
 end
@@ -5802,7 +5803,7 @@ arch small_stones
 x 23
 y 3
 end
-arch door_2
+arch wall_1_3
 x 23
 y 3
 end
@@ -6282,7 +6283,7 @@ arch small_stones
 x 25
 y 3
 end
-arch door_2
+arch wall_1_4
 x 25
 y 3
 end
@@ -6850,7 +6851,7 @@ arch small_stones
 x 27
 y 11
 end
-arch door_2
+arch wall_1_3
 x 27
 y 11
 end
@@ -6958,7 +6959,7 @@ arch small_stones
 x 27
 y 30
 end
-arch wall_2_1_1
+arch wall_1_1
 x 27
 y 30
 end
@@ -7406,7 +7407,7 @@ arch small_stones
 x 29
 y 11
 end
-arch door_2
+arch wall_1_4
 x 29
 y 11
 end
@@ -7628,7 +7629,7 @@ arch small_stones
 x 30
 y 4
 end
-arch door_1
+arch wall_1_2
 x 30
 y 4
 end
@@ -7644,7 +7645,7 @@ arch small_stones
 x 30
 y 6
 end
-arch door_1
+arch wall_1_1
 x 30
 y 6
 end
@@ -9540,7 +9541,7 @@ arch small_stones
 x 37
 y 19
 end
-arch wall_2_1_1
+arch wall_1_2
 x 37
 y 19
 end
@@ -9564,7 +9565,7 @@ arch small_stones
 x 37
 y 22
 end
-arch wall_2_1_1
+arch wall_1_1
 x 37
 y 22
 end
@@ -9612,7 +9613,7 @@ arch small_stones
 x 37
 y 28
 end
-arch wall_2_1_1
+arch wall_1_2
 x 37
 y 28
 end
@@ -9648,7 +9649,7 @@ arch small_stones
 x 37
 y 31
 end
-arch wall_2_1_1
+arch wall_1_1
 x 37
 y 31
 end
