@@ -1,5 +1,6 @@
 arch map
-name Jacks_house
+name Jack's House
+difficulty 1
 region lakecountry
 width 20
 height 18
@@ -724,7 +725,7 @@ arch woodfloor
 x 6
 y 3
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 6
 y 3
 end
@@ -766,7 +767,7 @@ arch woodfloor
 x 6
 y 8
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 6
 y 8
 end
@@ -1161,7 +1162,7 @@ arch woodfloor
 x 9
 y 8
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 9
 y 8
 end
@@ -1719,7 +1720,7 @@ arch woodfloor
 x 13
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 13
 y 13
 end

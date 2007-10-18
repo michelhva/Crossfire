@@ -1,5 +1,6 @@
 arch map
-name Chaos_lair4
+name Chaos Lair
+difficulty 1
 region lakecountry
 darkness 4
 width 20
@@ -151,11 +152,11 @@ end
 arch dragonslayer
 name Dragonbane
 msg
-  Mopoon's Dragonbane. It was forged
+Mopoon's Dragonbane. It was forged
 long long ago. The first master of the
 the sword has been forgotten, together
 with the arcane magic that forged it.
-  The Dragonbane glows with hunger for
+The Dragonbane glows with hunger for
 dragon blood.
 endmsg
 Str 3
@@ -1463,8 +1464,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord.
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 8
 y 19
@@ -1535,7 +1536,7 @@ end
 arch altar
 slaying fragment-of-chaos
 msg
-  You hear sounds of rock moving.
+You hear sounds of rock moving.
 endmsg
 food 1
 x 9
@@ -1641,8 +1642,8 @@ speed_left -12.100000
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord.
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 9
 y 19
@@ -1798,8 +1799,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord.
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 10
 y 19
@@ -1954,8 +1955,8 @@ y 18
 end
 arch magic_mouth
 msg
-  You enter the Lair of the Chaos Lord.
-  Do you see him? If not, you will soon.
+You enter the Lair of the Chaos Lord.
+Do you see him? If not, you will soon.
 endmsg
 x 11
 y 19

@@ -1,5 +1,6 @@
 arch map
-name <untitled>
+name Weapon Shop
+difficulty 1
 region lakecountry
 shopitems weapons:65;potion:0;scroll:0;arrow:20;bow:20;armour:-15;boots:-20;shield:-15;helmet:-20;bracers:-20;girdle:-20;weapon improver:5;*:-50
 shopgreed 1.30000
@@ -1539,7 +1540,7 @@ arch shop_empty
 x 16
 y 7
 end
-arch swall_1_3
+arch swall_2_1_2
 x 16
 y 7
 end
@@ -1559,7 +1560,7 @@ arch shop_empty
 x 16
 y 11
 end
-arch swall_1_3
+arch swall_2_1_2
 x 16
 y 11
 end
@@ -1661,6 +1662,10 @@ arch wall_2_1_1
 x 17
 y 7
 end
+arch swall_1_3_half
+x 17
+y 7
+end
 arch woodfloor
 x 17
 y 8
@@ -1690,6 +1695,10 @@ x 17
 y 11
 end
 arch wall_2_1_1
+x 17
+y 11
+end
+arch swall_1_3_half
 x 17
 y 11
 end

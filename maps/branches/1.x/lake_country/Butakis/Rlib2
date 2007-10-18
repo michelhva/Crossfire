@@ -1,5 +1,6 @@
 arch map
-name Rlib2
+name Royal Library
+difficulty 1
 region lakecountry
 width 16
 height 16
@@ -796,12 +797,12 @@ wizard in the realm. Before he was
 imprisoned in the fortress he lived in
 his tower to the northeast and use the
 cave near the mountain to do research.
-  The tower is deserted and is occupied
+The tower is deserted and is occupied
 by some unknown hosts. Some powerful
 wizards went and never returned. The
 tower has such defense that it's almost
 impossible to access it.
-  As for the cave, it is believed that
+As for the cave, it is believed that
 there is still a teleporter to go to
 the tower. And it was from the cave
 that our lord went to seize the wizard
@@ -1415,7 +1416,7 @@ y 7
 end
 arch sign
 msg
-	Reserved section
+Reserved section
 If there is any questions, please
 direct them to the librarians.
 endmsg
@@ -1428,7 +1429,7 @@ y 8
 end
 arch sign
 msg
-	Reserved section
+Reserved section
 If there is any questions, please
 direct them to the librarians.
 endmsg

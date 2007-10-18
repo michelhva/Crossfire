@@ -1,5 +1,5 @@
 arch map
-name Chaos_lair1
+name Chaos Lair
 reset_timeout 7200
 difficulty 15
 region lakecountry
@@ -3251,7 +3251,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
+A parade of guards and guardians
 appeared to greet. You hope no one
 discovers you.
 endmsg
@@ -3262,7 +3262,7 @@ end
 arch magic_ear
 msg
 @match Kill|KILL|kill
-   A line of guards appeared behide you
+A line of guards appeared behide you
 grinning evilly.
 endmsg
 x 14
@@ -3285,17 +3285,17 @@ arch dragonman
 name dragonman guard
 msg
 @match Open|open|enter|gate|door
-   What's your name? What's your
+What's your name? What's your
 business?
 @match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
+Gatekeeper! OPEN!!.
 @match Kill|KILL|kill
-   Great! We all need some excercises!
+Great! We all need some excercises!
 @match sacrifice
-   Aha, the more fresh flesh the better.
+Aha, the more fresh flesh the better.
 Put the sacrifice away!!
 @match *
-   You'd better leave before I throw
+You'd better leave before I throw
 you out or summon more guards
 endmsg
 Wis 30
@@ -4305,7 +4305,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
 face baby_drag.113
@@ -4726,7 +4726,7 @@ end
 arch magic_ear
 msg
 @match Orcus|Balrog|Asmodeus|Jessy
-   A parade of guards and guardians
+A parade of guards and guardians
 appeared to greet. You hope no one
 discovers you.
 endmsg
@@ -4737,7 +4737,7 @@ end
 arch magic_ear
 msg
 @match Kill|KILL|kill
-   A line of guards appeared behide you
+A line of guards appeared behide you
 grinning evilly.
 endmsg
 x 19
@@ -4760,17 +4760,17 @@ arch dragonman
 name dragonman guard
 msg
 @match Open|open|enter|gate|door
-   What's your name? What's your
+What's your name? What's your
 business?
 @match Orcus|Balrog|Asmodeus|Jessy
-   Gatekeeper! OPEN!!.
+Gatekeeper! OPEN!!.
 @match Kill|KILL|kill
-   Great! We all need some excercises!
+Great! We all need some excercises!
 @match sacrifice
-   Aha, the more fresh flesh the better.
+Aha, the more fresh flesh the better.
 Put the sacrifice away!!
 @match *
-   You'd better leave before I throw
+You'd better leave before I throw
 you out or summon more guards
 endmsg
 Wis 30
@@ -6171,7 +6171,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
 face baby_drag.113
@@ -6562,7 +6562,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
 face baby_drag.113
@@ -6990,7 +6990,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
 face baby_drag.113
@@ -7448,7 +7448,7 @@ arch key2
 name Dragonbadge
 slaying badge_dragon
 msg
-  This flaming red badge is a symbol of
+This flaming red badge is a symbol of
 status and importance.
 endmsg
 face baby_drag.113
