@@ -1,12 +1,351 @@
-2007-09-29 kbulgrien
+2007-10-18 01:04  rjtanner
 
-        * scorn/oldcity/oldcity13
-        Wall piece under floor moved above floor.
+	* dungeons/barad_dur, euthville/wiz3: Merge from trunk - updated
+	  map names (that I missed earlier)
 
-2007-09-18 kbulgrien
+2007-10-18 00:56  rjtanner
 
-        * dragonisland/apartment2:
-        Spelling corrections and line breaks in messages removed.
+	* brest/ludo1, brest/ludo2, brest/nasty_house, brest/pantheon,
+	  brest/sport.jess, brest/underground, brest/underground2,
+	  darcap/darcap/maze, darcap/darcap/potionshop,
+	  darcap/darcap/quest, darcap/darcap/shop_a, darcap/darcap/shop_g,
+	  darcap/darcap/shop_m, darcap/darcap/shop_w, darcap/darcap/tavern,
+	  darcap/darcap/temple, dragonisland/keysale,
+	  dungeons/castle_aaaarg, dungeons/grukks/grukks.1,
+	  dungeons/grukks/grukks.2, dungeons/grukks/grukks.3,
+	  dungeons/grukks/grukks.4, dungeons/hole,
+	  dungeons/hut/ancient_hut, dungeons/hut/kjerring,
+	  dungeons/hut/watertunnel, dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2, dungeons/ruins,
+	  dungeons/trollbridge, dungeons/xyzzy-mines,
+	  euthville/boulder_inferno, euthville/demon_quest,
+	  euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church3, euthville/devil.church4,
+	  euthville/devil.church5, euthville/hallofbones,
+	  euthville/magic.shop, euthville/map.fr.0, euthville/map.fr.1,
+	  euthville/map.fr.2, euthville/map.fr.3, euthville/wiz1,
+	  euthville/wiz2, euthville/wiz4, euthville/wiz5, euthville/wiz6,
+	  euthville/wiz7: Merge from trunk - updated map names, cosmetic
+	  updates with wall merges, floor tile re-arrangements
+
+2007-10-18 00:55  rjtanner
+
+	* regions: Removed empty spaces from within the text, also merged
+	  in an entry from trunk for euthville
+
+2007-10-17 22:39  rjtanner
+
+	* dragonisland/luxhouse, dragonisland/tavern,
+	  dragonisland/thievesden: Merge from trunk - updated map names,
+	  floor tile re-arrangements
+
+2007-10-17 22:06  rjtanner
+
+	* dragonisland/advguild, dragonisland/advguild2,
+	  dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/apartment2, dragonisland/apartment3,
+	  dragonisland/bloodwell, dragonisland/damarishouse0,
+	  dragonisland/damarishouse1, dragonisland/damarishouse2,
+	  dragonisland/dragonmountain0, dragonisland/dragonmountain1,
+	  dragonisland/drowmansion, dragonisland/hangar,
+	  dragonisland/hangar2, dragonisland/hangar3, dragonisland/house1,
+	  dragonisland/house4, dragonisland/house5, dragonisland/house6,
+	  dragonisland/house7, dragonisland/house8, dragonisland/house9,
+	  dragonisland/housebrxzl, dragonisland/intwell: Merge from trunk -
+	  updated map names, floor tile re-arrangements
+
+2007-10-17 20:57  rjtanner
+
+	* darcap/town2/shop_b, darcap/town2/shop_f, darcap/town2/tower1,
+	  darcap/town2/tower2, darcap/town2/tower3, darcap/town2/tower4,
+	  darcap/town2/towers, darcap/undead/undead.1,
+	  darcap/undead/undead.2, darcap/undead/undead.3: Merge from trunk
+	  - updated map names, cosmetic updates with wall merges, floor
+	  tile re-arrangements
+
+2007-10-17 19:55  rjtanner
+
+	* darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, world/world_114_102:
+	  Merge map names from trunk - renamed tower in world maps to
+	  Temple Justice in both trunk and branch
+
+2007-10-17 19:41  rjtanner
+
+	* darcap/quest/fire, darcap/quest/water: Merge from trunk - updated
+	  map names
+
+2007-10-17 19:26  rjtanner
+
+	* darcap/lynn/castle1.0, darcap/lynn/castle1.1,
+	  darcap/lynn/castle1.2, darcap/lynn/castle1.3: Merge from trunk -
+	  updated map names, cosmetic updates with wall merges, removed
+	  duplicate floor tiles
+
+2007-10-17 19:17  rjtanner
+
+	* darcap/forgotten_town/shops/general2: Merge from trunk - removed
+	  empty message field
+
+2007-10-17 05:44  rjtanner
+
+	* lake_country/elven_moon/elvenmoon.9: Tiled maps that share a
+	  common border should be the same width or height, respectively.
+	  Pointed out in crossfire-Bugs-1800719 cult summons crash server
+
+2007-10-17 05:38  rjtanner
+
+	* darcap/darcap/circus/chess, darcap/darcap/circus/double,
+	  darcap/darcap/circus/ghost, darcap/darcap/circus/illusions,
+	  darcap/darcap/circus/movers, darcap/darcap/circus/roller1,
+	  darcap/darcap/circus/roller2, darcap/darcap/circus/roller3,
+	  darcap/darcap/circus/shooting, darcap/darcap/circus/strength,
+	  darcap/darcap/circus/walls, darcap/darcap/circus/wheel,
+	  darcap/darcap/circus/wurfbude, darcap/house1, darcap/village1:
+	  Merge from trunk - updated map names, cosmetic updates with wall
+	  merges
+
+2007-10-17 01:32  rjtanner
+
+	* darcap/castle/castle2.0, darcap/castle/castle2.1,
+	  darcap/castle/castle2.2, darcap/castle/castle2.3,
+	  darcap/cave/level1, darcap/cave/level2, darcap/cave/level3,
+	  darcap/cave/level4, darcap/darcap/apartment,
+	  darcap/darcap/church, darcap/darcap/circus/bigtop,
+	  darcap/darcap/gshop, darcap/darcap/houses, darcap/darcap/inn:
+	  Merge from trunk - updated map names, cosmetic updates with wall
+	  merges, floor tile re-arrangements
+
+2007-10-17 00:31  rjtanner
+
+	* brest/pshops/pshop1/floor1, brest/pshops/pshop10/floor1,
+	  brest/pshops/pshop11/floor1, brest/pshops/pshop12/floor1,
+	  brest/pshops/pshop14/floor1, brest/pshops/pshop15/floor1,
+	  brest/pshops/pshop17/floor1, brest/pshops/pshop18/floor1,
+	  brest/pshops/pshop19/floor1, brest/pshops/pshop20/floor1,
+	  brest/pshops/pshop21/floor1, brest/pshops/pshop22/floor1,
+	  brest/pshops/pshop23/floor1, brest/pshops/pshop24/floor1,
+	  brest/pshops/pshop25/floor1, brest/pshops/pshop26/floor1,
+	  brest/pshops/pshop27/floor1: Merge from trunk - tile order
+	  re-arrangements
+
+2007-10-16 23:30  rjtanner
+
+	* brest/zorn/castle.basement0, brest/zorn/castle.mainfloor,
+	  brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Merge from trunk - updated map
+	  names, cosmetic updates with wall merges, floor tile
+	  re-arrangements
+
+2007-10-16 22:13  rjtanner
+
+	* brest/apartments/brest_town_house, brest/jes.admini,
+	  brest/jes.admini.1: Merge from trunk - updated map names,
+	  rearranged floor tiles
+
+2007-10-16 21:50  rjtanner
+
+	* azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1, azumauindo/misc/cave1,
+	  azumauindo/suno-yamatoshi/gates/gate1,
+	  azumauindo/suno-yamatoshi/gates/gate2,
+	  azumauindo/suno-yamatoshi/gates/gate3,
+	  azumauindo/suno-yamatoshi/nenshou_youso/bigchest,
+	  azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/upper,
+	  azumauindo/suno-yamatoshi/shops/armourshop1,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/bank2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/shops/pawn1,
+	  azumauindo/suno-yamatoshi/shops/weaponshop1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2,
+	  azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5,
+	  azumauindo/zaseki_dzuki_ryoku/ground,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/upper: Merge from trunk - updated
+	  map names, cosmetic updates with wall merges, removed duplicate
+	  floor tiles
+
+2007-10-14 16:26  ryo_saeba
+
+	* scorn/oldcity/oldcity8: Fix for bug #1811179: Hidden dagger is
+	  not hidden. Tweak boulder layer.
+
+2007-10-13 08:05  akirschbaum
+
+	* scorn/houses/house3.bas1: Fix out-of-bounds attribute values of
+	  sharp bones.
+
+2007-10-10 17:35  akirschbaum
+
+	* editor/scripts, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Add editor scripts.
+
+2007-10-09 07:32  akirschbaum
+
+	* editor/pickmaps, editor/pickmaps/NPC, editor/pickmaps/armour,
+	  editor/pickmaps/background, editor/pickmaps/castles,
+	  editor/pickmaps/connected, editor/pickmaps/exit,
+	  editor/pickmaps/food, editor/pickmaps/indoor,
+	  editor/pickmaps/monster, editor/pickmaps/river,
+	  editor/pickmaps/runes, editor/pickmaps/supernatural,
+	  editor/pickmaps/town, editor/pickmaps/treasure,
+	  editor/pickmaps/wall special, editor/pickmaps/weapon: Add
+	  /trunk/editor; Gridarta stores pickmaps in this directory.
+
+2007-10-08 19:05  akirschbaum
+
+	* scorn/crow/train/train: Fix connected objects.
+
+2007-10-08 18:35  lalo
+
+	* python/gods/altar_valkyrie.py: documenting the intent of
+	  Valkyrie's altar
+
+2007-09-30 07:50  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room: Fix broken inventory
+	  checkers that allow unrelated players enter the storage room.
+
+2007-09-29 16:39  kbulgrien
+
+	* ChangeLog, scorn/oldcity/oldcity13: - Wall piece under floor
+	  moved above floor.
+
+2007-09-27 18:24  rjtanner
+
+	* brest/asyvan/palace3, editor/picks/alchemy,
+	  editor/picks/artifacts, lake_country/Mwizard/Mwizard6,
+	  lake_country/Mwizard/MwizardG, marksel/wizard,
+	  navar_city/misc/navarwiz, pup_land/ancient/kurte/shop,
+	  pup_land/nurnberg/alshop, pup_land/nurnberg/dick/bomb1,
+	  pup_land/ordeal/tower_ordeal1, pup_land/raffle/raffle2_u3,
+	  quests/greyshield/Archery, styles/misc/fountains,
+	  unlinked/Greyshield/Archery, unlinked/kandora/dm_wizard: Required
+	  updates for the potion of invulnerability to potion of shielding
+	  name change
+
+2007-09-27 01:35  rjtanner
+
+	* pup_land/begin/adv: Rename potion of invulnerability to potion of
+	  shielding. Hopefully this will remove confusion as to why one
+	  takes damage from all attack types (except physical) when
+	  drinking this potion.
+
+2007-09-26 21:10  rjtanner
+
+	* pup_land/ancient/castle/castle.3: Fix for bug # 1752210 - Slow
+	  Unholy Bow. Adjusted the speed from 0 to 25 (normal bow is speed
+	  50), this can be adjusted again based on feedback.
+
+2007-09-26 21:04  rjtanner
+
+	* scorn/misc/HallOfQuests: Removed un-used message text that said,
+	  no_pass
+
+2007-09-26 20:45  rjtanner
+
+	* pup_land/cave_weapon/cave4: Wording correction so that the magic
+	  mouth message matches the item name a nearby monster is carrying
+	  and also makes it consistent with the other magic mouths and
+	  special weapons
+
+2007-09-23 06:54  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c: Removed
+	  blank lines and apparent error or typo referencing a different
+	  guild
+
+2007-09-23 06:40  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c,
+	  azumauindo/minatomachi/gates/gate1,
+	  azumauindo/minatomachi/gates/gate2,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/bigchest,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/upper,
+	  azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1,
+	  azumauindo/minatomachi/stores/generalstore,
+	  azumauindo/minatomachi/stores/postoffice,
+	  azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2,
+	  azumauindo/misc/entrance1, azumauindo/misc/shrine1,
+	  azumauindo/misc/shrine2, azumauindo/misc/shrine3,
+	  azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/apartments/sapartment,
+	  azumauindo/ranbounagisatoshi/gates/gate1,
+	  azumauindo/ranbounagisatoshi/gates/gate2,
+	  azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  azumauindo/ranbounagisatoshi/shops/potionshop1,
+	  azumauindo/ranbounagisatoshi/shops/tradecenter,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA2,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  azumauindo/suno-yamatoshi/buildings/jadechesthouse1,
+	  azumauindo/suno-yamatoshi/buildings/ninjadojoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2: Merged changes
+	  from trunk that include missing map names and cosmetic changes in
+	  regards to how walls merge together.
+
+2007-09-19 01:15  kbulgrien
+
+	* ChangeLog, dragonisland/apartment2: - Spelling corrections; line
+	  breaks in messages removed.
+
+2007-09-16 02:26  rjtanner
+
+	* ChangeLog: Generated a ChangeLog using svn2cl script
 
 2007-09-16 02:04  rjtanner
 

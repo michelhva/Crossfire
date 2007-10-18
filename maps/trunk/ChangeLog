@@ -1,12 +1,195 @@
-2007-09-29 kbulgrien
+2007-10-18 00:57  rjtanner
 
-        * scorn/oldcity/oldcity13
-        Wall piece under floor moved above floor.
+	* euthville/magic.shop, euthville/wiz1: Map updates to include
+	  missing y coordinate for a couple of floor tiles in Euthville
 
-2007-09-18 kbulgrien
+2007-10-17 19:55  rjtanner
 
-        * dragonisland/apartment2:
-        Spelling corrections and line breaks in messages removed.
+	* world/world_114_102: Merge map names from trunk - renamed tower
+	  in world maps to Temple Justice in both trunk and branch
+
+2007-10-17 05:44  rjtanner
+
+	* lake_country/elven_moon/elvenmoon.9: Tiled maps that share a
+	  common border should be the same width or height, respectively.
+	  Pointed out in crossfire-Bugs-1800719 cult summons crash server
+
+2007-10-14 16:52  ryo_saeba
+
+	* templates/guild/README.txt, templates/guild/basement,
+	  templates/guild/bigchest, templates/guild/guildHQ,
+	  templates/guild/guildalchem, templates/guild/guildbbq,
+	  templates/guild/guildjeweler, templates/guild/guildthaum,
+	  templates/guild/guildtoolshed, templates/guild/hallofjoining,
+	  templates/guild/mainfloor, templates/guild/secondfloor: Patch
+	  #1782975: Python guilds template, courtesy Perko/alestan.
+
+2007-10-14 16:24  ryo_saeba
+
+	* scorn/oldcity/oldcity8: Fix for bug #1811179: Hidden dagger is
+	  not hidden. Tweak boulder layer.
+
+2007-10-13 08:05  akirschbaum
+
+	* scorn/houses/house3.bas1: Fix out-of-bounds attribute values of
+	  sharp bones.
+
+2007-10-10 17:35  akirschbaum
+
+	* editor/scripts, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Add editor scripts.
+
+2007-10-09 07:58  akirschbaum
+
+	* editor/pickmaps/treasure: Whitespace change.
+
+2007-10-09 07:57  akirschbaum
+
+	* editor/pickmaps/NPC, editor/pickmaps/armour,
+	  editor/pickmaps/background, editor/pickmaps/castles,
+	  editor/pickmaps/connected, editor/pickmaps/exit,
+	  editor/pickmaps/food, editor/pickmaps/indoor,
+	  editor/pickmaps/monster, editor/pickmaps/river,
+	  editor/pickmaps/runes, editor/pickmaps/supernatural,
+	  editor/pickmaps/town, editor/pickmaps/treasure,
+	  editor/pickmaps/wall special, editor/pickmaps/weapon: Add
+	  'difficulty 1' to all pickmaps to suppress spurious map
+	  validation errors.
+
+2007-10-09 07:51  akirschbaum
+
+	* editor/picks: Remove obsolete /editor/picks directory.
+
+2007-10-09 07:32  akirschbaum
+
+	* editor/pickmaps, editor/pickmaps/NPC, editor/pickmaps/armour,
+	  editor/pickmaps/background, editor/pickmaps/castles,
+	  editor/pickmaps/connected, editor/pickmaps/exit,
+	  editor/pickmaps/food, editor/pickmaps/indoor,
+	  editor/pickmaps/monster, editor/pickmaps/river,
+	  editor/pickmaps/runes, editor/pickmaps/supernatural,
+	  editor/pickmaps/town, editor/pickmaps/treasure,
+	  editor/pickmaps/wall special, editor/pickmaps/weapon: Add
+	  /trunk/editor; Gridarta stores pickmaps in this directory.
+
+2007-10-08 19:05  akirschbaum
+
+	* scorn/crow/train/train: Fix connected objects.
+
+2007-10-08 18:30  lalo
+
+	* python/gods/altar_valkyrie.py: documenting the intent of
+	  Valkyrie's altar
+
+2007-10-08 17:58  akirschbaum
+
+	* quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/AirStudy,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/Demon1, quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/EarthStudy,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/FireStudy,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/HighTower2,
+	  quests/peterm/Demonology/HighTowerTop,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/Demonology/WaterStudy,
+	  quests/peterm/Demonology/WaterTower1,
+	  quests/peterm/Demonology/WaterTower2: Fix typo.
+
+2007-10-07 21:06  akirschbaum
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis1: Fix typo
+	  (mismatched weight/connection values in button).
+
+2007-09-30 07:50  akirschbaum
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room: Fix broken inventory
+	  checkers that allow unrelated players enter the storage room.
+
+2007-09-29 16:41  kbulgrien
+
+	* ChangeLog, scorn/oldcity/oldcity13: - Wall piece under floor
+	  moved above floor.
+
+2007-09-27 20:57  ryo_saeba
+
+	* test/python, test/python.py: Face and anim function tests.
+
+2007-09-27 04:47  rjtanner
+
+	* brest/asyvan/palace3, editor/picks/alchemy,
+	  editor/picks/artifacts, lake_country/Mwizard/Mwizard6,
+	  lake_country/Mwizard/MwizardG, marksel/wizard,
+	  navar_city/misc/navarwiz, pup_land/ancient/kurte/shop,
+	  pup_land/nurnberg/alshop, pup_land/nurnberg/dick/bomb1,
+	  pup_land/ordeal/tower_ordeal1, pup_land/raffle/raffle2_u3,
+	  python/guilds/guild_dues.py,
+	  python/guilds/guild_questpoints_apply.py,
+	  python/guilds/guildboard.py, python/guilds/guildbuy.py,
+	  python/guilds/guildjoin.py, python/guilds/guildoracle.py,
+	  quests/greyshield/Archery, styles/misc/fountains,
+	  templates/guild/guild_alchemy, unlinked/Greyshield/Archery,
+	  unlinked/kandora/dm_wizard: Update maps to use the new potion
+	  name (invulnerability is now shielding)
+
+2007-09-27 01:35  rjtanner
+
+	* pup_land/begin/adv: Rename potion of invulnerability to potion of
+	  shielding. Hopefully this will remove confusion as to why one
+	  takes damage from all attack types (except physical) when
+	  drinking this potion.
+
+2007-09-26 21:10  rjtanner
+
+	* pup_land/ancient/castle/castle.3: Fix for bug # 1752210 - Slow
+	  Unholy Bow. Adjusted the speed from 0 to 25 (normal bow is speed
+	  50), this can be adjusted again based on feedback.
+
+2007-09-26 20:45  rjtanner
+
+	* pup_land/cave_weapon/cave4: Wording correction so that the magic
+	  mouth message matches the item name a nearby monster is carrying
+	  and also makes it consistent with the other magic mouths and
+	  special weapons
+
+2007-09-26 20:22  rjtanner
+
+	* brest/zorn/castle.upper.floor.two: Additional corrections,
+	  replaced move_allow with move_block
+
+2007-09-26 19:37  rjtanner
+
+	* scorn/misc/HallOfQuests: Fix for bug# 1802171, Obsolete
+	  attributes in 2 maps in trunk. Removed un-used message text that
+	  said, no_pass
+
+2007-09-26 19:32  rjtanner
+
+	* brest/zorn/castle.upper.floor.two: Fix for bug# 1802171, Obsolete
+	  attributes in 2 maps in trunk. Replaced no_pass attributes with
+	  move_allow.
+
+2007-09-19 00:44  kbulgrien
+
+	* ChangeLog, dragonisland/apartment2: - Spelling corrections and
+	  line breaks in messages removed.
+
+2007-09-16 02:45  rjtanner
+
+	* ChangeLog: Regenerated and updated the ChangeLog using svn2cl
 
 2007-09-16 02:04  rjtanner
 
