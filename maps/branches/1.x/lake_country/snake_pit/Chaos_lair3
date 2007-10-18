@@ -287,10 +287,11 @@ y 7
 speed 0.800000
 speed_left -4.700000
 level 60
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5100
 move_type fly_low
-immune 9
 arch pyro_book
 value 1600
 randomitems none
@@ -599,9 +600,9 @@ dam 5
 x 1
 y 17
 attacktype 5
+resist_fire 30
 path_attuned 2
 path_denied 4
-protected 4
 end
 arch small_stones
 x 1
@@ -659,10 +660,11 @@ y 23
 speed 0.600000
 speed_left -11.099999
 level 40
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5000
 move_type fly_low
-immune 9
 arch pyro_book
 value 1600
 randomitems none
@@ -3630,10 +3632,11 @@ y 20
 speed 0.600000
 speed_left -11.099999
 level 40
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5000
 move_type fly_low
-immune 9
 arch pyro_book
 value 1600
 randomitems none
