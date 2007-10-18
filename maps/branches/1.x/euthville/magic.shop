@@ -1,5 +1,5 @@
 arch map
-name <untitled>
+name Euthville Magic Shop
 reset_timeout 7200
 fixed_resettime 1
 difficulty 1
@@ -43,6 +43,9 @@ face shop_empty.111
 y 3
 end
 arch dwall_2_1_1
+y 3
+end
+arch swall_1_4_half
 y 3
 end
 arch flagstone
@@ -178,7 +181,7 @@ face shop_empty.111
 x 1
 y 3
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 3
 end
@@ -439,13 +442,17 @@ end
 arch dwall_2_1_2
 x 4
 end
+arch swall_1_1_half
+x 4
+y 1
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 4
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 4
 y 1
 end
