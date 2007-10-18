@@ -1,5 +1,6 @@
 arch map
-name Sams house
+name Sam's house
+difficulty 1
 region lakecountry
 width 20
 height 18
@@ -91,10 +92,13 @@ end
 arch wwall_2_2_1
 y 13
 end
+arch swall_1_1_half
+y 13
+end
 arch grass
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 y 14
 end
 arch grass
@@ -710,7 +714,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 6
 y 5
 end
@@ -1034,7 +1038,7 @@ type 0
 monster 1
 unaggressive 1
 can_cast_spell 1
-arch ability_coldspell
+arch spell_icestorm
 end
 end
 arch woodfloor
@@ -1131,7 +1135,7 @@ arch woodfloor
 x 9
 y 8
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 9
 y 8
 end
@@ -1293,7 +1297,7 @@ arch woodfloor
 x 10
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 10
 y 13
 end
@@ -1501,7 +1505,7 @@ arch woodfloor
 x 12
 y 3
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 12
 y 3
 end
@@ -1664,7 +1668,7 @@ arch woodfloor
 x 13
 y 10
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 13
 y 10
 end
@@ -1690,7 +1694,7 @@ arch woodfloor
 x 13
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 13
 y 13
 end
@@ -1736,7 +1740,7 @@ arch woodfloor
 x 14
 y 3
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 14
 y 3
 end
@@ -1942,7 +1946,7 @@ end
 arch door_look_2
 x 15
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
@@ -2360,11 +2364,15 @@ arch wwall_2_1_2
 x 18
 y 15
 end
+arch swall_1_1_half
+x 18
+y 15
+end
 arch grass
 x 18
 y 16
 end
-arch swall_1_3
+arch swall_2_2_4
 x 18
 y 16
 end

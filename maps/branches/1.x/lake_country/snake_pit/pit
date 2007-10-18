@@ -1,5 +1,6 @@
 arch map
-name pit
+name Pit
+difficulty 1
 region lakecountry
 darkness 5
 width 6
@@ -114,7 +115,7 @@ y 2
 end
 arch magic_mouth
 msg
-  You climbed a long way down and there
+You climbed a long way down and there
 is still more to go. Do you want to go
 on
 endmsg

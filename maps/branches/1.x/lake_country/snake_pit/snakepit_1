@@ -1,5 +1,6 @@
 arch map
-name snakepit1
+name Snake Pit
+difficulty 1
 region lakecountry
 darkness 5
 width 36
@@ -274,6 +275,10 @@ arch cave24
 x 1
 y 22
 end
+arch small_stones
+x 1
+y 23
+end
 arch cave3
 x 1
 y 23
@@ -468,21 +473,21 @@ end
 arch sphinx
 msg
 @match Chaos|chaos
-  Chaos is the order of the place. Go
+Chaos is the order of the place. Go
 down deeper and follow your ears for
 the roarings. And then you will find
 what you look for.
 @match Death|death|undead|undeads|Undead
-  The place the undeads live. You can
+The place the undeads live. You can
 job them easily there as so many have
 proven. The entrance is a hole at the
 end of a twisted passage deeper below.
 @match *
-  I don't know any riddles right now....GO AWAY!!!
-  Or you can go down explore and find all
+I don't know any riddles right now....GO AWAY!!!
+Or you can go down explore and find all
 the secret of these cryptic and
 unearthly underground caverns.
-  What are you looking for stranger?
+What are you looking for stranger?
 endmsg
 hp 1800
 x 2
@@ -1107,6 +1112,10 @@ arch small_stones
 x 5
 y 25
 end
+arch small_stones
+x 5
+y 26
+end
 arch cave2
 x 5
 y 26
@@ -1154,6 +1163,10 @@ end
 arch generate_ghost
 x 5
 y 33
+end
+arch small_stones
+x 5
+y 34
 end
 arch cave2
 x 5
@@ -1317,6 +1330,10 @@ end
 arch cave24
 x 6
 y 30
+end
+arch small_stones
+x 6
+y 31
 end
 arch cave3
 x 6
@@ -1704,6 +1721,10 @@ end
 arch cave12
 x 8
 y 27
+end
+arch small_stones
+x 8
+y 28
 end
 arch cave3
 x 8
@@ -2124,6 +2145,10 @@ arch small_stones
 x 10
 y 27
 end
+arch small_stones
+x 10
+y 28
+end
 arch cave2
 x 10
 y 28
@@ -2131,6 +2156,10 @@ end
 arch cave24
 x 10
 y 29
+end
+arch small_stones
+x 10
+y 30
 end
 arch cave3
 x 10
@@ -2314,8 +2343,8 @@ y 25
 end
 arch magic_mouth
 msg
-  A male voice asks,
-  "Do you wish to enter?
+A male voice asks,
+"Do you wish to enter?
 endmsg
 x 11
 y 26
@@ -2327,6 +2356,10 @@ end
 arch small_stones
 x 11
 y 27
+end
+arch small_stones
+x 11
+y 28
 end
 arch cave2
 x 11
@@ -2916,6 +2949,10 @@ arch cave12
 x 14
 y 26
 end
+arch small_stones
+x 14
+y 27
+end
 arch cave3
 x 14
 y 27
@@ -3067,6 +3104,10 @@ arch cave10
 x 15
 y 21
 end
+arch small_stones
+x 15
+y 22
+end
 arch cave2
 x 15
 y 22
@@ -3103,6 +3144,10 @@ arch cave12
 x 15
 y 28
 end
+arch small_stones
+x 15
+y 29
+end
 arch cave3
 x 15
 y 29
@@ -3110,6 +3155,10 @@ end
 arch cave23
 x 15
 y 30
+end
+arch small_stones
+x 15
+y 31
 end
 arch cave1
 x 15
@@ -3874,6 +3923,10 @@ arch cave10
 x 19
 y 27
 end
+arch small_stones
+x 19
+y 28
+end
 arch cave2
 x 19
 y 28
@@ -3897,6 +3950,10 @@ end
 arch small_stones
 x 19
 y 32
+end
+arch small_stones
+x 19
+y 33
 end
 arch cave2
 x 19
@@ -4242,6 +4299,10 @@ end
 arch cave9
 x 21
 y 29
+end
+arch small_stones
+x 21
+y 30
 end
 arch cave2
 x 21
@@ -5437,6 +5498,10 @@ arch cave17
 x 27
 y 27
 end
+arch small_stones
+x 27
+y 28
+end
 arch cave24
 x 27
 y 28
@@ -5464,6 +5529,10 @@ end
 arch small_stones
 x 27
 y 33
+end
+arch small_stones
+x 27
+y 34
 end
 arch cave2
 x 27
@@ -5649,6 +5718,10 @@ end
 arch cave2
 x 28
 y 27
+end
+arch small_stones
+x 28
+y 28
 end
 arch cave4
 x 28
@@ -6462,27 +6535,27 @@ carrying 7900
 arch scroll
 msg
 My friend Dusanki,
-  I do not dare to go down to the lair
+I do not dare to go down to the lair
 of chaos; because the masters of chaos
 are fierce and dispise lowly creature
 as me. They would kill me.
-  I do not think it's a good idea for
+I do not think it's a good idea for
 you to pose as Chaos Lord's visiting
 guest to enter his chamber. The Chaos
 Lord would destroy you with disdain.
-  I think you could bring him some
+I think you could bring him some
 sacrifice and see what happens.
-                     Kasnuk
+Kasnuk
 endmsg
 end
 arch scroll
 msg
 Dear Dusanki,
-  As we agreed to each other, as a
+As we agreed to each other, as a
 safety measure, I entrust you to guard
 my Venomtooth. In exchange I will guard
 your diamonds.
-                     Kasnuk
+Kasnuk
 endmsg
 end
 arch key2
@@ -6706,8 +6779,8 @@ connected 12
 end
 arch magic_mouth
 msg
-  A harsh voice asks,
-  "Who's this?"
+A harsh voice asks,
+"Who's this?"
 endmsg
 x 33
 y 23
@@ -6756,9 +6829,17 @@ arch cave15
 x 33
 y 30
 end
+arch small_stones
+x 33
+y 31
+end
 arch cave22
 x 33
 y 31
+end
+arch small_stones
+x 33
+y 32
 end
 arch cave25
 x 33
@@ -6917,9 +6998,9 @@ end
 arch cave10
 msg
 @match Dusanki|Kasnuk
-  "Ah! If you wish to enter please?"
+"Ah! If you wish to enter please?"
 @match *
-  "Be gone, before I call the guardian!
+"Be gone, before I call the guardian!
 endmsg
 x 34
 y 22
@@ -6968,6 +7049,10 @@ arch cave11
 x 34
 y 29
 end
+arch small_stones
+x 34
+y 30
+end
 arch cave22
 x 34
 y 30
@@ -6979,6 +7064,10 @@ end
 arch blocked
 x 34
 y 32
+end
+arch small_stones
+x 34
+y 33
 end
 arch cave25
 x 34

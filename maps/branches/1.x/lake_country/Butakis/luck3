@@ -1,5 +1,6 @@
 arch map
-name luck3
+name Towers of Luck
+difficulty 1
 region lakecountry
 width 32
 height 32
@@ -644,10 +645,10 @@ y 30
 carrying 78300
 arch scroll
 msg
-  Congratulations winner(s)!!!
-  Nothing is better than some cold beer
+Congratulations winner(s)!!!
+Nothing is better than some cold beer
 and good health, right?
-  Later buddy(ies). Come again
+Later buddy(ies). Come again
 endmsg
 end
 arch booze
@@ -3008,9 +3009,9 @@ end
 arch sign
 msg
 Note:
-  We reserve the right to ignore the
-  request for a chance to anyone.
-  -nevermind.
+We reserve the right to ignore the
+request for a chance to anyone.
+-nevermind.
 endmsg
 x 15
 y 19
@@ -5490,10 +5491,10 @@ end
 arch sign_w
 msg
 Rules and warnings:
-  This is an arena. You enter and
+This is an arena. You enter and
 cannot come out until your luck is good
 enough to find an exit.
-  This arena is not for the weak. The
+This arena is not for the weak. The
 winner will gain the symbol of mightiest
 of the realm.
 endmsg
@@ -5507,10 +5508,10 @@ end
 arch sign_w
 msg
 Rules and warnings:
-  This is an arena. You enter and
+This is an arena. You enter and
 cannot come out until your luck is good
 enough to find an exit.
-  This arena is not for the weak. The
+This arena is not for the weak. The
 winner will gain the symbol of mightiest
 of the realm.
 endmsg

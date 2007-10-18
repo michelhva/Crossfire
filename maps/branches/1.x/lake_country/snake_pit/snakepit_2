@@ -1,5 +1,6 @@
 arch map
-name snakepit2
+name Snake Pit
+difficulty 1
 region lakecountry
 darkness 5
 width 36
@@ -375,7 +376,7 @@ x 2
 end
 arch magic_mouth
 msg
-  You can't see the bottom of this
+You can't see the bottom of this
 hole. It's dark and quiet. You may not
 be able to return if you enter
 endmsg
@@ -1933,7 +1934,7 @@ arch key2
 name jade green figurine of a small snake
 slaying jade_snake
 msg
-  It flashes a rhythm attuned to some
+It flashes a rhythm attuned to some
 unknown device
 endmsg
 face snake.111
@@ -1948,10 +1949,10 @@ end
 arch scroll
 msg
 My dear Kasnuk,
-  As our deal goes, please keep
+As our deal goes, please keep
 treasure safe and I will do the same
 with yours.
-                    Dusanki
+Dusanki
 P.S. I would like to know which lord
 from underworld is staying guest of our
 Chaos Lord now? I want to discuss some
@@ -3769,7 +3770,7 @@ connected 11
 end
 arch magic_mouth
 msg
-  A low husky voice ask from behide the
+A low husky voice ask from behide the
 rock, "Who goes there?
 endmsg
 x 17
@@ -6689,9 +6690,9 @@ y 16
 end
 arch magic_mouth
 msg
-  Around the altar, you see scraps and
+Around the altar, you see scraps and
 ashes of burnt-out human corpses.
-  The purple flame enveloping the blood-
+The purple flame enveloping the blood-
 stained altar flares as you step close.
 You feel its unearthly hunger
 endmsg
@@ -7538,11 +7539,11 @@ y 15
 end
 arch magic_mouth
 msg
-  Echoing howling can be heard from
+Echoing howling can be heard from
 below. More terrifying than anyone
 could imagine. An ominous chill creeps
 up your spine.
-  Maybe it's better to leave before
+Maybe it's better to leave before
 meeting your doom. Greed for something
 that you are not even sure of being
 there? Better leave now before it's too
@@ -7565,7 +7566,7 @@ end
 arch magic_mouth
 msg
 An chilly voice speaks,
-  "Congratulations!! for find your way
+"Congratulations!! for find your way
 to doom."
 endmsg
 x 34

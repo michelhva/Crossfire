@@ -1,5 +1,6 @@
 arch map
-name <untitled>
+name Inn, White Pigeon
+difficulty 1
 region lakecountry
 width 16
 height 16
@@ -1175,13 +1176,12 @@ arch swall_2_1_2
 x 10
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 9
 end
-arch firewall
-name fire place
-face fireball.111
+arch campfire
+name fire
 x 10
 y 9
 end
@@ -1286,13 +1286,12 @@ arch swall_2_1_2
 x 11
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 9
 end
-arch firewall
-name fire place
-face fireball.111
+arch campfire
+name fire
 x 11
 y 9
 end

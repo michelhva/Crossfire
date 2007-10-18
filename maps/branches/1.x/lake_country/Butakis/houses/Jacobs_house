@@ -1,5 +1,6 @@
 arch map
-name Jacobs House
+name Jacob's House
+difficulty 1
 region lakecountry
 width 20
 height 18
@@ -2102,7 +2103,7 @@ end
 arch door_look_2
 x 15
 y 14
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
