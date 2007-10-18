@@ -1,3 +1,10 @@
+2007-10-17 kbulgrien
+        * port_joseph/town/church
+        Path made with glue faces was not rendered properly because the arch
+        used was a floor piece.  Change base arch and make no_pick 1.  Also
+        put the glue explicitly on the no_pick map layer to render it below
+        the gate.
+
 2007-10-18 00:57  rjtanner
 
 	* euthville/magic.shop, euthville/wiz1: Map updates to include
