@@ -4,7 +4,7 @@ longname Somewhere out in the Wilderness
 fallback 1
 msg
 Grass, mountains, trees, rivers, and not a soul to be seen for miles around,
-the wilderness is not the most civilized of places, and stories 
+the wilderness is not the most civilized of places, and stories
 that have reached the towns tell of fearsome creatures and labyrinthine
 dungeons far under the surface. Of course, these rumours have never been
 verified, though the few who have tried have taken a long time in doing so....
@@ -20,7 +20,7 @@ end
 region creation
 parent world
 longname The Creation of Time
-msg 
+msg
 Who knows where this place is, but all have seen it. As mysterious as it is,
 its just an other part of life.
 endmsg
@@ -28,7 +28,7 @@ end
 region highway
 parent world
 longname The Imperial Highway
-msg 
+msg
 The Imperial Highway was built long ago, so much so that its origins are
 now long since passed out of recorded history and into the stuff of legends.
 In the years since its construction it has gained the name "The yellow Brick
@@ -63,7 +63,7 @@ region scorncounty
 parent scorn
 msg
 Outside the gates of the city of scorn, the activity of the town can be heard,
-but not seen the cries of the traders, and calls of the sailors belie your 
+but not seen the cries of the traders, and calls of the sailors belie your
 proximity to this bustling town, though to look around you see only the relative
 tranquility of quiet farmland and the sense of peace it evokes.
 endmsg
@@ -92,7 +92,7 @@ You find yourself gasping in wonder at the extensive caverns underneath the city
 here there remains the ruins of old Scorn. A reminder of the great power the city
 once possessed, and a sign of how far it has fallen. As you look around however
 you notice that whilst the previous inhabitants of these ruins are no longer
-present, some new ones seem to have taken their place, and these denizens don't 
+present, some new ones seem to have taken their place, and these denizens don't
 appear to be very welcoming.
 endmsg
 end
@@ -101,10 +101,10 @@ parent world
 longname The Kingdom of Navar
 jail /navar_city/jail/jail 16 1
 msg
-Straddling the corner of the Imperial highway as it turns North near the 
+Straddling the corner of the Imperial highway as it turns North near the
 Eastern border of the known world, and surrounded by dangerous territory,
 Navar is an unlikely site for one of the world's grandest cities.
-Yet there it stands, dominating the skyline for miles around and showing the 
+Yet there it stands, dominating the skyline for miles around and showing the
 same bustling activity expected of any thriving market town.
 endmsg
 end
@@ -119,10 +119,10 @@ region darcap
 parent world
 longname The Sultanate of Darcap
 msg
-Isolated from the rest of the region by an extensive mountain range to the 
-south, and possessing a massive natural harbour, Darcap is a small, but 
-easily defensible town, dominated by a pair of powerful guilds. The town is 
-also noted for its circus, whose reputation draws visitors from all over 
+Isolated from the rest of the region by an extensive mountain range to the
+south, and possessing a massive natural harbour, Darcap is a small, but
+easily defensible town, dominated by a pair of powerful guilds. The town is
+also noted for its circus, whose reputation draws visitors from all over
 the world.
 endmsg
 end
@@ -139,7 +139,7 @@ longname The Port of Wolfsburg
 msg
 Located on an island far away from the coast, Wolfsburg relies entirely on its
 quay to supply the town and as a result has a strong seafaring tradition among
-its populace. 
+its populace.
 endmsg
 end
 region santodominion
@@ -159,7 +159,7 @@ end
 region portjoseph
 parent world
 longname Port Joseph
-msg 
+msg
 Describe Port Joseph
 endmsg
 end
@@ -198,7 +198,7 @@ end
 region firevolcano
 parent world
 msg
-This fiery volcano rose up from the mountains one day.  It is inhabited by a 
+This fiery volcano rose up from the mountains one day.  It is inhabited by a
 strange race of fire creatures who seem friendly, but very competitive.
 endmsg
 end
@@ -266,15 +266,15 @@ longname The Town of St. John's
 msg
 The seat of justice for the Kingdom of Saints and the town closest to the border. This town
 once sent to the capital, St. Bartholomew, vast riches in the green gem. It's mine now lays
-vacant due to an unknown malady. 
+vacant due to an unknown malady.
 endmsg
 end
 region strose
 parent kingdomofsaints
 longname The Town of St. Rose
 msg
-A small town in the Kingdom of Saints dwarfed to the east by the copper mountains. 
-Its main production is livestock. 
+A small town in the Kingdom of Saints dwarfed to the east by the copper mountains.
+Its main production is livestock.
 endmsg
 end
 region stbartholomew
@@ -285,9 +285,19 @@ The town of St. Bartholomew is the capital of the Kingdom of Saints.
 Situated between two mountain ranges rich in iron and copper ore St.
 Bartholomew is well protected and well supplied with minerals useful
 in wartime production. St. Bartholomew boasts a world class
-bank, a well stocked library, and one of the only two power generation 
+bank, a well stocked library, and one of the only two power generation
 plants in existence, as well as the only working centrifuge throughout the
 explored world.
+endmsg
+end
+region euthville
+parent world
+longname Ruins of Euthville
+msg
+The Ruins of Euthville can be found just off the Imperial Highway north of Scorn.
+The riches and accomplishments of this one prosperous city actually lead to it's downfall.
+Now, only terror and hardship remains -- demons and undead run rampant through the broken 
+remains.
 endmsg
 end
 nomore
