@@ -1,6 +1,7 @@
 arch map
-name <unnamed>
+name Bob's Fish & Chips
 fixed_resettime 1
+difficulty 1
 region darcap
 shopitems food:100;flesh:50;*:-80
 shopmax 8000
@@ -309,7 +310,7 @@ msg
 Hello. Would you like to buy some fish?
 @match Order|order|tower|Tower
 To open the Tower, you must uses each part
-  in order of the sage's names.  Good Luck.
+in order of the sage's names.  Good Luck.
 @match sage|Sage
 I don't know.  Go ask them!
 @match name|Name

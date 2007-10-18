@@ -1,5 +1,6 @@
 arch map
-name underground2
+name Underground, Level 2
+difficulty 1
 region brest
 width 60
 height 60
@@ -179,6 +180,10 @@ end
 arch dun2
 x 1
 end
+arch small_stones
+x 1
+y 1
+end
 arch stair_up
 slaying underground
 hp 44
@@ -232,7 +237,7 @@ y 12
 end
 arch sign_e
 msg
-	Let's play Abalone...
+Let's play Abalone...
 Be careful not to leave the board.
 endmsg
 x 1
@@ -20834,7 +20839,7 @@ end
 arch sign
 msg
 Glowing and Cold potions
-  may be very usefull
+may be very usefull
 endmsg
 x 58
 y 14
