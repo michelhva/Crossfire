@@ -1373,16 +1373,16 @@ x 19
 y 3
 connected 10
 end
-arch woodfloor2
-x 19
-y 4
-end
 arch check_inv
 slaying Hermes Key
 x 19
 y 4
 last_heal 1
 connected 10
+end
+arch woodfloor2
+x 19
+y 4
 end
 arch woodfloor2
 x 19
