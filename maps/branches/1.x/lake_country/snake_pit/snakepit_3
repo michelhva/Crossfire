@@ -1396,7 +1396,7 @@ speed 0.700000
 speed_left -17.569998
 level 70
 attacktype 1167
-immune 8
+resist_electricity 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2122,8 +2122,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2161,8 +2162,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2378,8 +2380,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2417,8 +2420,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3388,8 +3392,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3641,8 +3646,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -4352,8 +4358,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -4565,8 +4572,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5433,8 +5441,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5472,8 +5481,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5697,8 +5707,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5736,8 +5747,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion

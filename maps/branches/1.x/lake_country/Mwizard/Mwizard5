@@ -796,8 +796,8 @@ y 6
 speed 1.000000
 speed_left -2.040000
 level 30
+resist_cold 100
 carrying 25000
-immune 28
 arch spell_burning_hands
 end
 arch abil_burning_hands
@@ -1259,7 +1259,7 @@ y 3
 speed 1.000000
 speed_left -0.790000
 level 29
-immune 28
+resist_cold 100
 arch spell_icestorm
 end
 arch abil_icestorm
@@ -1316,7 +1316,7 @@ y 10
 speed 1.000000
 speed_left -0.320000
 level 29
-immune 28
+resist_cold 100
 arch spell_sm_lightning
 end
 end
@@ -1768,7 +1768,7 @@ y 6
 speed 1.000000
 speed_left -0.860000
 level 29
-immune 28
+resist_cold 100
 arch spell_burning_hands
 end
 arch abil_burning_hands

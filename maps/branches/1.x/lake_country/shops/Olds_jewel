@@ -1820,11 +1820,11 @@ arch crown
 name Crown of Fire
 x 12
 y 17
+resist_fire 30
 path_attuned 2
 path_repelled 4
 value 20000
 identified 1
-protected 4
 end
 arch block_door_closed
 name trophy stand
@@ -2016,11 +2016,11 @@ arch crown
 name Crown of Ice
 x 13
 y 17
+resist_cold 30
 path_attuned 4
 path_repelled 2
 value 24000
 identified 1
-protected 16
 end
 arch block_door_closed
 name trophy stand
@@ -2211,10 +2211,12 @@ arch crown
 name Crown of the Elements
 x 14
 y 17
+resist_fire 30
+resist_electricity 30
+resist_cold 30
 path_attuned 8
 value 50000
 identified 1
-protected 28
 end
 arch block_door_closed
 name trophy stand
