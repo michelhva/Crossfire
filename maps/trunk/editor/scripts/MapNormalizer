@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <name>MapNormalizer</name>
+  <code><![CDATA[import java.io.File;
+import java.util.Iterator;
+import net.sf.gridarta.gameobject.GameObject;
+import net.sf.gridarta.map.validation.ErrorCollector;
+import net.sf.gridarta.map.validation.ValidationError;
+
+void normalizeMap(File mapFile, String mapPath) {
+    print(mapPath);
+
+    map = mainControl.getMapManager().openMapFile(mapFile, false);
+    if (map == null) {
+        print("Cannot load map file");
+        return;
+    }
+
+    map.setModified();
+    map.save();
+}
+
+void normalizeDirectory(File mapFile, String mapPath) {
+    File[] files = mapFile.listFiles();
+    for (File file : files) {
+        String name = file.getName();
+        if (!name.equals(".svn") && !name.equals("README")) {
+            normalizeMaps(file, mapPath + "/" + file.getName());
+        }
+    }
+}
+
+void normalizeMaps(File mapFile, String mapPath) {
+    if (mapFile.isDirectory()) {
+        normalizeDirectory(mapFile, mapPath);
+    } else if (mapFile.isFile()) {
+        normalizeMap(mapFile, mapPath);
+    }
+}
+
+if (baseDirectory == null || baseDirectory.length() <= 0) {
+    baseDirectory = "/";
+}
+print("Normalizing maps below " + baseDirectory + "...");
+if (baseDirectory.endsWith("/")) {
+    baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
+}
+
+normalizeMaps(new File(mainControl.getMapDefaultFolder() + baseDirectory), baseDirectory);
+
+print("Done.");]]></code>
+  <mode>
+    <autoboot>false</autoboot>
+    <bash>true</bash>
+    <filter>false</filter>
+  </mode>
+  <parameter>
+    <name>baseDirectory</name>
+    <description>Base Directory</description>
+    <type>java.lang.String</type>
+    <value>/</value>
+  </parameter>
+</script>
+
