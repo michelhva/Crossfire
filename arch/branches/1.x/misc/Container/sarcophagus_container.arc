@@ -20,7 +20,7 @@ end
 Object sarcophagus_container2
 name sarcophagus
 other_arch close_sarcophagus_container
-face sarcophagus.111
+face close_sarcophagus.111
 type 122
 material 0
 materialname stone

@@ -14,7 +14,7 @@ client_type 51
 end
 Object close_schest
 name close the chest
-face schest.111
+face close_schest.111
 type 121
 no_pick 1
 no_drop 1
