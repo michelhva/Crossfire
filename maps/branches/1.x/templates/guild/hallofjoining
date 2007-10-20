@@ -9,6 +9,8 @@ msg
 Creator: Avion
 CF Java Map Editor
 Date:    6/14/2003
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch flagstone
@@ -225,7 +227,7 @@ arch dwall_2_1_2
 name shortcut
 x 1
 y 10
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -2855,7 +2857,7 @@ y 11
 unique 1
 end
 arch teleporter
-slaying guild_HQ
+slaying guild_hq
 hp 1
 sp 12
 x 12
@@ -2882,14 +2884,14 @@ arch flagstone
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 13
+end
 arch stair_up_2
 slaying mainfloor
 hp 11
 sp 26
-x 12
-y 13
-end
-arch dungeon_magic
 x 12
 y 13
 end
@@ -3024,7 +3026,7 @@ y 3
 unique 1
 end
 arch teleporter
-slaying guild_HQ
+slaying guild_hq
 hp 13
 sp 12
 x 13
@@ -3418,6 +3420,10 @@ arch flagstone
 x 14
 y 11
 unique 1
+end
+arch dungeon_magic
+x 14
+y 11
 end
 arch flagstone
 x 14
@@ -4075,10 +4081,6 @@ y 1
 unique 1
 end
 arch dungeon_magic
-x 17
-y 1
-end
-arch stair_down_3
 x 17
 y 1
 end
