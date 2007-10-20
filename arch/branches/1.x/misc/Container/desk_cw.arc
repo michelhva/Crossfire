@@ -17,7 +17,7 @@ client_type 51
 end
 Object close_desk_cw
 name close the desk
-face desk_cw.111
+face close_desk_cw.111
 type 121
 no_pick 1
 no_drop 1
