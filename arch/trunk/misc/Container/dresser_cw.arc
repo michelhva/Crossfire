@@ -14,7 +14,7 @@ client_type 51
 end
 Object close_dresser_cw
 name in the dresser
-face dresser_cw.111
+face close_dresser_cw.111
 type 121
 no_pick 1
 no_drop 1
@@ -37,7 +37,7 @@ client_type 51
 end
 Object close_dresser2_cw
 name in the dresser
-face dresser2_cw.111
+face close_dresser2_cw.111
 type 121
 no_pick 1
 no_drop 1
