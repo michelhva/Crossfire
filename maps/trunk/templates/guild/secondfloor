@@ -340,10 +340,6 @@ x 1
 y 9
 unique 1
 end
-arch dungeon_magic
-x 1
-y 10
-end
 arch woodfloor
 x 1
 y 10
@@ -351,43 +347,23 @@ unique 1
 end
 arch dungeon_magic
 x 1
-y 11
-end
-arch woodfloor
-x 1
-y 11
-unique 1
-end
-arch dungeon_magic
-x 1
-y 11
-end
-arch creator
-other_arch woodfloor
-x 1
-y 11
-connected 10
-end
-arch woodfloor
-x 1
-y 11
-unique 1
+y 10
 end
 arch goldfloor
 name drop 15 diamonds of exceptional beauty for Jewelers room
 slaying diamond of exceptional beauty
 food 15
 x 1
-y 11
+y 10
 connected 10
 end
 arch dungeon_magic
 x 1
-y 12
+y 11
 end
 arch woodfloor
 x 1
-y 12
+y 11
 unique 1
 end
 arch trigger_marker
@@ -397,8 +373,21 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 1
-y 12
+y 11
 connected 11
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 12
+unique 1
+end
+arch cwall_0
+x 1
+y 12
 end
 arch dungeon_magic
 x 1
@@ -629,39 +618,45 @@ x 2
 y 11
 unique 1
 end
-arch dungeon_magic
-x 2
-y 12
-end
-arch woodfloor
-x 2
-y 12
-unique 1
-end
 arch check_floor
 slaying Jewe_Token
 x 2
-y 12
+y 11
 connected 898
 end
 arch dungeon_magic
 x 2
-y 13
+y 12
 end
 arch woodfloor
 x 2
-y 13
+y 12
 unique 1
 end
 arch check_floor
 race Jewelry Pass
 x 2
-y 13
+y 12
 connected 898
 end
 arch grate_closed_1
 x 2
+y 12
+connected 898
+end
+arch dungeon_magic
+x 2
 y 13
+end
+arch woodfloor
+x 2
+y 13
+unique 1
+end
+arch pedestal
+x 2
+y 13
+invisible 1
 connected 898
 end
 arch dungeon_magic
@@ -901,6 +896,10 @@ arch woodfloor
 x 3
 y 12
 unique 1
+end
+arch cwall_0
+x 3
+y 12
 end
 arch dungeon_magic
 x 3
@@ -1403,7 +1402,7 @@ end
 arch pedestal
 x 6
 y 2
-connected 746
+connected 42
 end
 arch woodfloor
 x 6
@@ -2013,7 +2012,7 @@ no_magic 1
 damned 1
 end
 arch invis_exit
-slaying guildthaum
+slaying guild_thaum
 hp 6
 sp 3
 x 8
@@ -2374,16 +2373,10 @@ arch dungeon_magic
 x 10
 y 7
 end
-arch creator
+arch woodfloor
 x 10
 y 7
-end
-arch goldfloor
-slaying Glowing Crystal Token
-food 1
-x 10
-y 7
-connected 80
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2463,15 +2456,6 @@ end
 arch woodfloor
 x 10
 y 15
-unique 1
-end
-arch dungeon_magic
-x 10
-y 16
-end
-arch woodfloor
-x 10
-y 16
 unique 1
 end
 arch dungeon_magic
@@ -2496,9 +2480,10 @@ x 10
 y 17
 unique 1
 end
-arch igate_closed_2
+arch pedestal
 x 10
 y 17
+invisible 1
 connected 899
 end
 arch dungeon_magic
@@ -2510,15 +2495,6 @@ x 10
 y 18
 unique 1
 end
-arch dungeon_magic
-x 10
-y 18
-end
-arch woodfloor
-x 10
-y 18
-unique 1
-end
 arch cwall_0
 x 10
 y 18
@@ -2546,20 +2522,14 @@ end
 arch dwall_2_1_2
 x 11
 end
-arch dungeon_magic
-x 11
-y 1
-end
 arch woodfloor
 x 11
 y 1
 unique 1
 end
-arch creator
-other_arch woodfloor
+arch dungeon_magic
 x 11
 y 1
-connected 40
 end
 arch goldfloor
 name drop 100 jade coins for Glowing Crystal Room
@@ -2717,6 +2687,19 @@ unique 1
 end
 arch dungeon_magic
 x 11
+y 16
+end
+arch woodfloor
+x 11
+y 16
+unique 1
+end
+arch cwall_0
+x 11
+y 16
+end
+arch dungeon_magic
+x 11
 y 17
 end
 arch woodfloor
@@ -2724,8 +2707,7 @@ x 11
 y 17
 unique 1
 end
-arch check_floor
-slaying Thau_Token
+arch igate_closed_2
 x 11
 y 17
 connected 899
@@ -2748,15 +2730,9 @@ x 11
 y 18
 unique 1
 end
-arch trigger_marker
-slaying guild_thaum21
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
+arch cwall_0
 x 11
 y 18
-connected 21
 end
 arch dungeon_magic
 x 11
@@ -2903,7 +2879,7 @@ end
 arch stair_3_down
 slaying mainfloor
 hp 16
-sp 15
+sp 14
 x 12
 y 11
 end
@@ -2961,9 +2937,11 @@ x 12
 y 17
 unique 1
 end
-arch dungeon_magic
+arch check_floor
+slaying Thau_Token
 x 12
-y 18
+y 17
+connected 899
 end
 arch woodfloor
 x 12
@@ -2974,24 +2952,15 @@ arch dungeon_magic
 x 12
 y 18
 end
-arch woodfloor
+arch trigger_marker
+slaying guild_thaum21
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
 x 12
 y 18
-unique 1
-end
-arch creator
-other_arch woodfloor
-x 12
-y 18
-connected 20
-end
-arch goldfloor
-name drop 30,000 rubies for Thaumaturgy room
-slaying ruby
-food 30000
-x 12
-y 18
-connected 20
+connected 21
 end
 arch woodfloor
 x 12
@@ -3079,20 +3048,14 @@ arch cwall_0
 x 13
 y 6
 end
-arch dungeon_magic
-x 13
-y 7
-end
 arch woodfloor
 x 13
 y 7
 unique 1
 end
-arch creator
-other_arch woodfloor
+arch dungeon_magic
 x 13
 y 7
-connected 30
 end
 arch goldfloor
 name drop 30,000 diamonds for Alchemy room
@@ -3200,14 +3163,22 @@ x 13
 y 17
 unique 1
 end
-arch dungeon_magic
-x 13
-y 18
-end
 arch woodfloor
 x 13
 y 18
 unique 1
+end
+arch dungeon_magic
+x 13
+y 18
+end
+arch goldfloor
+name drop 30,000 rubies for Thaumaturgy room
+slaying ruby
+food 30000
+x 13
+y 18
+connected 20
 end
 arch woodfloor
 x 13
@@ -3267,7 +3238,7 @@ y 4
 connected 32
 end
 arch invis_exit
-slaying guildalchem
+slaying guild_alchemy
 hp 3
 sp 7
 x 14
@@ -3533,14 +3504,14 @@ arch cwall_0
 x 15
 y 6
 end
-arch dungeon_magic
-x 15
-y 7
-end
 arch woodfloor
 x 15
 y 7
 unique 1
+end
+arch dungeon_magic
+x 15
+y 7
 end
 arch trigger_marker
 slaying guild_alchemy31
@@ -3574,20 +3545,14 @@ x 15
 y 9
 unique 1
 end
-arch dungeon_magic
-x 15
-y 10
-end
 arch woodfloor
 x 15
 y 10
 unique 1
 end
-arch creator
-other_arch woodfloor
+arch dungeon_magic
 x 15
 y 10
-connected 7
 end
 arch goldfloor
 name drop 20 amulets of Lifesaving for a portal to the Mazes of Menace
@@ -4155,8 +4120,6 @@ hp 0
 sp 0
 x 18
 y 7
-walk_on 0
-fly_on 0
 end
 arch woodfloor
 x 18
@@ -4183,8 +4146,6 @@ hp 0
 sp 0
 x 18
 y 9
-walk_on 0
-fly_on 0
 end
 arch blocked
 x 18
@@ -4201,7 +4162,7 @@ end
 arch altar_trigger
 name Drop 100 platinum to enter Jewelers Room
 slaying platinacoin
-food 200
+food 100
 x 18
 y 11
 connected 11
@@ -4217,7 +4178,7 @@ end
 arch altar_trigger
 name Drop 100 platinum to enter Alchemy Room
 slaying platinacoin
-food 200
+food 100
 x 18
 y 12
 connected 31
@@ -4316,7 +4277,7 @@ x 19
 y 10
 end
 arch teleporter
-hp 10
+hp 11
 sp 19
 x 19
 y 11
@@ -4326,7 +4287,7 @@ end
 arch altar_trigger
 name Drop 100 platinum to enter Thaumaturgy Room
 slaying platinacoin
-food 200
+food 100
 x 19
 y 11
 connected 21
@@ -4342,7 +4303,7 @@ end
 arch altar_trigger
 name Drop 100 platinum to enter Glowing Crystal Room
 slaying platinacoin
-food 200
+food 100
 x 19
 y 12
 connected 41

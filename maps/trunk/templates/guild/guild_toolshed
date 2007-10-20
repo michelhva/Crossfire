@@ -7,7 +7,10 @@ msg
 Creator: Rick Tanner
 Editor: CrossfireEditor
 Date:    3/17/2007
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
+unique 1
 end
 arch grass
 end
@@ -204,22 +207,27 @@ end
 arch flagstone
 x 2
 y 4
+unique 1
 end
-arch light4
+arch firepot
 x 2
 y 4
+glow_radius 4
 end
 arch flagstone
 x 2
 y 5
+unique 1
 end
 arch flagstone
 x 2
 y 6
+unique 1
 end
 arch flagstone
 x 2
 y 7
+unique 1
 end
 arch dungeon_magic
 x 2
@@ -231,8 +239,10 @@ x 2
 y 7
 connected 76
 end
-arch goldfloor
-name drop x for a forge
+arch goldflagstone
+name drop 30,000 rubies for a forge
+slaying ruby
+food 30000
 x 2
 y 7
 connected 130
@@ -275,6 +285,7 @@ end
 arch flagstone
 x 2
 y 10
+unique 1
 end
 arch grate_closed_1
 x 2
@@ -284,6 +295,7 @@ end
 arch flagstone
 x 2
 y 11
+unique 1
 end
 arch pedestal
 x 2
@@ -294,18 +306,17 @@ end
 arch flagstone
 x 2
 y 12
+unique 1
 end
 arch flagstone
 x 2
 y 13
-end
-arch light4
-x 2
-y 13
+unique 1
 end
 arch firepot
 x 2
 y 13
+glow_radius 4
 end
 arch flagstone
 x 2
@@ -345,6 +356,7 @@ end
 arch flagstone
 x 3
 y 4
+unique 1
 end
 arch charwoman
 x 3
@@ -353,6 +365,7 @@ end
 arch flagstone
 x 3
 y 5
+unique 1
 end
 arch flagstone
 x 3
@@ -405,10 +418,12 @@ end
 arch flagstone
 x 3
 y 12
+unique 1
 end
 arch flagstone
 x 3
 y 13
+unique 1
 end
 arch flagstone
 x 3
@@ -448,10 +463,12 @@ end
 arch flagstone
 x 4
 y 4
+unique 1
 end
 arch flagstone
 x 4
 y 5
+unique 1
 end
 arch flagstone
 x 4
@@ -464,14 +481,24 @@ end
 arch flagstone
 x 4
 y 7
+unique 1
 end
-arch light4
+arch altar_trigger
+name New Forge 25,000 Rubies
+slaying ruby
+msg
+Removing your old cauldron. Please wait.
+endmsg
+exp 60
+food 25000
 x 4
 y 7
+connected 8004
 end
 arch flagstone
 x 4
 y 8
+unique 1
 end
 arch charwoman
 x 4
@@ -480,35 +507,36 @@ end
 arch flagstone
 x 4
 y 9
+unique 1
 end
 arch flagstone
 x 4
 y 10
+unique 1
 end
 arch flagstone
 x 4
 y 11
+unique 1
 end
 arch firepot
 x 4
 y 11
+glow_radius 4
 end
 arch flagstone
 x 4
 y 12
+unique 1
 end
 arch flagstone
 x 4
 y 13
+unique 1
 end
 arch longtable_0
 x 4
 y 13
-end
-arch dagger
-x 4
-y 13
-no_pick 1
 end
 arch flagstone
 x 4
@@ -548,10 +576,12 @@ end
 arch flagstone
 x 5
 y 4
+unique 1
 end
 arch flagstone
 x 5
 y 5
+unique 1
 end
 arch flagstone
 x 5
@@ -564,36 +594,30 @@ end
 arch flagstone
 x 5
 y 7
+unique 1
 end
 arch flagstone
 x 5
 y 8
+unique 1
 end
 arch longtable_1_1
 x 5
 y 8
 end
-arch small_shield
-x 5
-y 8
-no_pick 1
-end
 arch flagstone
 x 5
 y 9
+unique 1
 end
 arch longtable_2_1_1
 x 5
 y 9
 end
-arch brdaxe1
-x 5
-y 9
-no_pick 1
-end
 arch flagstone
 x 5
 y 10
+unique 1
 end
 arch longtable_1_2
 x 5
@@ -602,14 +626,17 @@ end
 arch flagstone
 x 5
 y 11
+unique 1
 end
 arch flagstone
 x 5
 y 12
+unique 1
 end
 arch flagstone
 x 5
 y 13
+unique 1
 end
 arch flagstone
 x 5
@@ -649,10 +676,12 @@ end
 arch flagstone
 x 6
 y 4
+unique 1
 end
 arch flagstone
 x 6
 y 5
+unique 1
 end
 arch flagstone
 x 6
@@ -665,34 +694,42 @@ end
 arch flagstone
 x 6
 y 7
+unique 1
 end
 arch firepot
 x 6
 y 7
+glow_radius 4
 end
 arch flagstone
 x 6
 y 8
+unique 1
 end
 arch flagstone
 x 6
 y 9
+unique 1
 end
 arch flagstone
 x 6
 y 10
+unique 1
 end
 arch flagstone
 x 6
 y 11
+unique 1
 end
 arch flagstone
 x 6
 y 12
+unique 1
 end
 arch flagstone
 x 6
 y 13
+unique 1
 end
 arch flagstone
 x 6
@@ -732,10 +769,12 @@ end
 arch flagstone
 x 7
 y 4
+unique 1
 end
 arch flagstone
 x 7
 y 5
+unique 1
 end
 arch flagstone
 x 7
@@ -748,49 +787,39 @@ end
 arch flagstone
 x 7
 y 7
+unique 1
 end
 arch barrel
 x 7
 y 7
 end
-arch hammer_2
-x 7
-y 7
-no_pick 1
-end
 arch flagstone
 x 7
 y 8
+unique 1
 end
 arch flagstone
 x 7
 y 9
+unique 1
 end
 arch longtable_1_1
 x 7
 y 9
 end
-arch lapron
-x 7
-y 9
-no_pick 1
-end
 arch flagstone
 x 7
 y 10
+unique 1
 end
 arch longtable_2_1_1
 x 7
 y 10
 end
-arch cudgel
-x 7
-y 10
-no_pick 1
-end
 arch flagstone
 x 7
 y 11
+unique 1
 end
 arch longtable_1_2
 x 7
@@ -799,14 +828,12 @@ end
 arch flagstone
 x 7
 y 12
+unique 1
 end
 arch flagstone
 x 7
 y 13
-end
-arch light4
-x 7
-y 13
+unique 1
 end
 arch flagstone
 x 7
@@ -846,14 +873,12 @@ end
 arch flagstone
 x 8
 y 4
-end
-arch light4
-x 8
-y 4
+unique 1
 end
 arch flagstone
 x 8
 y 5
+unique 1
 end
 arch flagstone
 x 8
@@ -866,40 +891,42 @@ end
 arch flagstone
 x 8
 y 7
+unique 1
 end
 arch flagstone
 x 8
 y 8
+unique 1
 end
 arch flagstone
 x 8
 y 9
+unique 1
 end
 arch flagstone
 x 8
 y 10
+unique 1
 end
 arch flagstone
 x 8
 y 11
+unique 1
 end
 arch flagstone
 x 8
 y 12
+unique 1
 end
 arch flagstone
 x 8
 y 13
+unique 1
 end
 arch longtable_0
 x 8
 y 13
 end
-arch bracers_ac
-x 8
-y 13
-no_pick 1
-end
 arch flagstone
 x 8
 y 14
@@ -937,11 +964,29 @@ y 3
 end
 arch flagstone
 x 9
+y 3
+end
+arch dwall_3_3
+x 9
+y 3
+end
+arch flagstone
+x 9
+y 4
+unique 1
+end
+arch flagstone
+x 9
+y 4
+end
+arch dwall_1_2
+x 9
 y 4
 end
 arch flagstone
 x 9
 y 5
+unique 1
 end
 arch flagstone
 x 9
@@ -954,6 +999,22 @@ end
 arch flagstone
 x 9
 y 7
+unique 1
+end
+arch duplicator
+other_arch forge
+x 9
+y 7
+connected 8004
+activate_on_release 0
+end
+arch creator
+other_arch forge
+x 9
+y 7
+connected 8004
+lifesave 1
+activate_on_push 0
 end
 arch forge
 x 9
@@ -962,10 +1023,12 @@ end
 arch flagstone
 x 9
 y 8
+unique 1
 end
 arch flagstone
 x 9
 y 9
+unique 1
 end
 arch barrel
 x 9
@@ -974,35 +1037,31 @@ end
 arch flagstone
 x 9
 y 10
-end
-arch light4
-x 9
-y 10
+unique 1
 end
 arch flagstone
 x 9
 y 11
+unique 1
 end
 arch longtable_0
 x 9
 y 11
 end
-arch gauntlets
-x 9
-y 11
-no_pick 1
-end
 arch flagstone
 x 9
 y 12
+unique 1
 end
 arch flagstone
 x 9
 y 13
+unique 1
 end
 arch firepot
 x 9
 y 13
+glow_radius 4
 end
 arch flagstone
 x 9
@@ -1042,10 +1101,28 @@ end
 arch flagstone
 x 10
 y 4
+unique 1
+end
+arch check_floor
+slaying GuildMaster
+x 10
+y 4
+connected 122
+move_block all
+end
+arch button_lever
+name Dues
+msg
+Pull to collect fees for the toolshed.
+endmsg
+x 10
+y 4
+connected 999
 end
 arch flagstone
 x 10
 y 5
+unique 1
 end
 arch flagstone
 x 10
@@ -1148,11 +1225,29 @@ y 3
 end
 arch flagstone
 x 11
+y 3
+end
+arch dwall_3_3
+x 11
+y 3
+end
+arch flagstone
+x 11
+y 4
+unique 1
+end
+arch flagstone
+x 11
+y 4
+end
+arch dwall_1_2
+x 11
 y 4
 end
 arch flagstone
 x 11
 y 5
+unique 1
 end
 arch flagstone
 x 11
@@ -1165,6 +1260,22 @@ end
 arch flagstone
 x 11
 y 7
+unique 1
+end
+arch duplicator
+other_arch workbench
+x 11
+y 7
+connected 8005
+activate_on_release 0
+end
+arch creator
+other_arch workbench
+x 11
+y 7
+connected 8005
+lifesave 1
+activate_on_push 0
 end
 arch workbench
 x 11
@@ -1173,34 +1284,37 @@ end
 arch flagstone
 x 11
 y 8
+unique 1
 end
 arch flagstone
 x 11
 y 9
+unique 1
 end
 arch flagstone
 x 11
 y 10
-end
-arch light4
-x 11
-y 10
+unique 1
 end
 arch flagstone
 x 11
 y 11
+unique 1
 end
 arch flagstone
 x 11
 y 12
+unique 1
 end
 arch flagstone
 x 11
 y 13
+unique 1
 end
 arch firepot
 x 11
 y 13
+glow_radius 4
 end
 arch flagstone
 x 11
@@ -1240,10 +1354,12 @@ end
 arch flagstone
 x 12
 y 4
+unique 1
 end
 arch flagstone
 x 12
 y 5
+unique 1
 end
 arch flagstone
 x 12
@@ -1256,57 +1372,49 @@ end
 arch flagstone
 x 12
 y 7
+unique 1
 end
 arch flagstone
 x 12
 y 8
+unique 1
 end
 arch flagstone
 x 12
 y 9
+unique 1
 end
 arch longtable_1_4
 x 12
 y 9
-end
-arch arrow
-x 12
-y 9
-no_pick 1
 end
 arch flagstone
 x 12
 y 10
+unique 1
 end
 arch flagstone
 x 12
 y 11
+unique 1
 end
 arch longtable_1_4
 x 12
 y 11
 end
-arch arrow
-x 12
-y 11
-no_pick 1
-end
 arch flagstone
 x 12
 y 12
+unique 1
 end
 arch flagstone
 x 12
 y 13
+unique 1
 end
 arch longtable_0
 x 12
 y 13
-end
-arch crossbow
-x 12
-y 13
-no_pick 1
 end
 arch flagstone
 x 12
@@ -1346,14 +1454,17 @@ end
 arch flagstone
 x 13
 y 4
+unique 1
 end
 arch firepot
 x 13
 y 4
+glow_radius 4
 end
 arch flagstone
 x 13
 y 5
+unique 1
 end
 arch flagstone
 x 13
@@ -1366,66 +1477,49 @@ end
 arch flagstone
 x 13
 y 7
+unique 1
 end
 arch longtable_0
 x 13
 y 7
 end
-arch arrow
-x 13
-y 7
-no_pick 1
-end
-arch saw
-x 13
-y 7
-no_pick 1
-end
 arch flagstone
 x 13
 y 8
+unique 1
 end
 arch flagstone
 x 13
 y 9
+unique 1
 end
 arch longtable_1_3
 x 13
 y 9
-end
-arch reflexbow_bone
-x 13
-y 9
-no_pick 1
 end
 arch flagstone
 x 13
 y 10
+unique 1
 end
 arch flagstone
 x 13
 y 11
+unique 1
 end
 arch longtable_1_3
 x 13
 y 11
 end
-arch longbow
-x 13
-y 11
-no_pick 1
-end
 arch flagstone
 x 13
 y 12
+unique 1
 end
 arch flagstone
 x 13
 y 13
-end
-arch light4
-x 13
-y 13
+unique 1
 end
 arch flagstone
 x 13
@@ -1490,10 +1584,12 @@ the cleaning service is very, very thorough!
 endmsg
 x 14
 y 4
+unique 1
 end
 arch flagstone
 x 14
 y 5
+unique 1
 end
 arch flagstone
 x 14
@@ -1506,34 +1602,37 @@ end
 arch flagstone
 x 14
 y 7
-end
-arch firepot
-x 14
-y 7
+unique 1
 end
 arch flagstone
 x 14
 y 8
+unique 1
 end
 arch flagstone
 x 14
 y 9
+unique 1
 end
 arch flagstone
 x 14
 y 10
+unique 1
 end
 arch flagstone
 x 14
 y 11
+unique 1
 end
 arch flagstone
 x 14
 y 12
+unique 1
 end
 arch flagstone
 x 14
 y 13
+unique 1
 end
 arch flagstone
 x 14
@@ -1573,14 +1672,17 @@ end
 arch flagstone
 x 15
 y 4
+unique 1
 end
 arch firepot
 x 15
 y 4
+glow_radius 4
 end
 arch flagstone
 x 15
 y 5
+unique 1
 end
 arch flagstone
 x 15
@@ -1593,6 +1695,7 @@ end
 arch flagstone
 x 15
 y 7
+unique 1
 end
 arch charwoman
 x 15
@@ -1601,36 +1704,37 @@ end
 arch flagstone
 x 15
 y 8
+unique 1
 end
 arch flagstone
 x 15
 y 9
+unique 1
 end
 arch flagstone
 x 15
 y 10
+unique 1
 end
 arch flagstone
 x 15
 y 11
+unique 1
 end
 arch flagstone
 x 15
 y 12
+unique 1
 end
 arch flagstone
 x 15
 y 13
+unique 1
 end
 arch longtable_0
 x 15
 y 13
 end
-arch arrow
-x 15
-y 13
-no_pick 1
-end
 arch flagstone
 x 15
 y 14
@@ -1669,10 +1773,12 @@ end
 arch flagstone
 x 16
 y 4
+unique 1
 end
 arch flagstone
 x 16
 y 5
+unique 1
 end
 arch flagstone
 x 16
@@ -1685,56 +1791,62 @@ end
 arch flagstone
 x 16
 y 7
+unique 1
 end
-arch light4
+arch altar_trigger
+name New Workbench 25,000 Rubies
+slaying ruby
+msg
+Removing your old cauldron. Please wait.
+endmsg
+exp 60
+food 25000
 x 16
 y 7
+connected 8005
 end
 arch flagstone
 x 16
 y 8
+unique 1
 end
 arch longtable_1_1
 x 16
 y 8
 end
-arch compositebow
-x 16
-y 8
-no_pick 1
-end
 arch flagstone
 x 16
 y 9
+unique 1
 end
 arch longtable_1_2
 x 16
 y 9
 end
-arch arrow
-x 16
-y 9
-no_pick 1
-end
 arch flagstone
 x 16
 y 10
+unique 1
 end
 arch flagstone
 x 16
 y 11
+unique 1
 end
 arch firepot
 x 16
 y 11
+glow_radius 4
 end
 arch flagstone
 x 16
 y 12
+unique 1
 end
 arch flagstone
 x 16
 y 13
+unique 1
 end
 arch flagstone
 x 16
@@ -1774,6 +1886,7 @@ end
 arch flagstone
 x 17
 y 4
+unique 1
 end
 arch charwoman
 x 17
@@ -1782,6 +1895,7 @@ end
 arch flagstone
 x 17
 y 5
+unique 1
 end
 arch flagstone
 x 17
@@ -1834,10 +1948,12 @@ end
 arch flagstone
 x 17
 y 12
+unique 1
 end
 arch flagstone
 x 17
 y 13
+unique 1
 end
 arch flagstone
 x 17
@@ -1877,22 +1993,22 @@ end
 arch flagstone
 x 18
 y 4
-end
-arch light4
-x 18
-y 4
+unique 1
 end
 arch flagstone
 x 18
 y 5
+unique 1
 end
 arch flagstone
 x 18
 y 6
+unique 1
 end
 arch flagstone
 x 18
 y 7
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -1904,8 +2020,10 @@ x 18
 y 7
 connected 76
 end
-arch goldfloor
-name drop x for a workbench
+arch goldflagstone
+name drop 30,000 rubies for a workbench
+slaying ruby
+food 30000
 x 18
 y 7
 connected 120
@@ -1948,6 +2066,7 @@ end
 arch flagstone
 x 18
 y 10
+unique 1
 end
 arch grate_closed_1
 x 18
@@ -1967,18 +2086,17 @@ end
 arch flagstone
 x 18
 y 12
+unique 1
 end
 arch flagstone
 x 18
 y 13
-end
-arch light4
-x 18
-y 13
+unique 1
 end
 arch firepot
 x 18
 y 13
+glow_radius 4
 end
 arch flagstone
 x 18
@@ -2582,15 +2700,27 @@ speed 0.0
 connected 120
 end
 arch altar_trigger
-name Drop 50 platinum to access the Workbench
+name Drop 100 platinum to access the Workbench
 slaying platinacoin
-food 50
+food 100
 x 27
+last_sp 1
 connected 121
 end
-arch blocked
+arch creator
+other_arch jadecoin
 x 27
 y 1
+connected 121
+lifesave 1
+end
+arch teleporter
+hp 10
+sp 4
+x 27
+y 1
+speed 0.0
+connected 999
 end
 arch blocked
 x 27
@@ -2605,16 +2735,28 @@ speed 0.0
 connected 130
 end
 arch altar_trigger
-name Drop 50 platinum to enter the Forge
+name Drop 100 platinum to enter the Forge
 slaying platinacoin
-food 50
+food 100
 x 27
 y 2
+last_sp 1
 connected 131
 end
-arch blocked
+arch creator
+other_arch jadecoin
 x 27
 y 3
+connected 131
+lifesave 1
+end
+arch teleporter
+hp 10
+sp 4
+x 27
+y 3
+speed 0.0
+connected 999
 end
 arch blocked
 x 27
