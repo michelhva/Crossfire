@@ -9,6 +9,8 @@ msg
 Creator: Rick Tanner
 Editor: CrossfireEditor
 Date:    3/15/2007
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 outdoor 1
 end
@@ -206,6 +208,12 @@ end
 arch chair_cw_1.4
 x 2
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
 no_pick 1
 end
 arch flagstone
@@ -216,6 +224,12 @@ end
 arch chair_cw_1.4
 x 2
 y 5
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
 no_pick 1
 end
 arch light4
@@ -242,9 +256,17 @@ x 2
 y 8
 unique 1
 end
-arch hedge
+arch altar_trigger
+name New Stove 30000 Rubies
+slaying ruby
+msg
+Removing your old stove. Please wait.
+endmsg
+exp 60
+food 30000
 x 2
 y 8
+connected 9002
 end
 arch flagstone
 x 2
@@ -290,6 +312,14 @@ end
 arch chair_cw_1.1
 x 3
 y 3
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
 no_pick 1
 end
 arch flagstone
@@ -327,6 +357,12 @@ end
 arch chair_cw_1.3
 x 3
 y 7
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
 no_pick 1
 end
 arch flagstone
@@ -383,6 +419,12 @@ end
 arch chair_cw_1.2
 x 4
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
 no_pick 1
 end
 arch flagstone
@@ -393,6 +435,12 @@ end
 arch chair_cw_1.2
 x 4
 y 5
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
 no_pick 1
 end
 arch flagstone
@@ -403,6 +451,14 @@ end
 arch chair_cw_1.2
 x 4
 y 6
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
 no_pick 1
 end
 arch flagstone
@@ -419,24 +475,6 @@ arch table
 x 4
 y 8
 no_pick 1
-end
-arch dragon_steak
-name aging steak
-food 0
-x 4
-y 8
-type 67
-value 1
-map_layer item
-no_pick 1
-startequip 1
-end
-arch orcchop
-x 4
-y 8
-map_layer item
-no_pick 1
-startequip 1
 end
 arch flagstone
 x 4
@@ -528,9 +566,28 @@ x 5
 y 8
 unique 1
 end
+arch duplicator
+other_arch stove
+x 5
+y 8
+connected 9002
+activate_on_release 0
+end
+arch creator
+other_arch stove
+hp 0
+x 5
+y 8
+level 2
+connected 9002
+lifesave 1
+activate_on_push 0
+end
 arch stove
 x 5
 y 8
+magic 3
+identified 1
 end
 arch flagstone
 x 5
@@ -581,6 +638,11 @@ end
 arch chair_cw_1.4
 x 6
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch flagstone
@@ -591,6 +653,12 @@ end
 arch chair_cw_1.4
 x 6
 y 5
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch flagstone
@@ -601,6 +669,12 @@ end
 arch chair_cw_1.4
 x 6
 y 6
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch flagstone
@@ -661,6 +735,11 @@ end
 arch chair_cw_1.1
 x 7
 y 3
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch flagstone
@@ -698,6 +777,12 @@ end
 arch chair_cw_1.3
 x 7
 y 7
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch flagstone
@@ -766,6 +851,11 @@ end
 arch chair_cw_1.2
 x 8
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch flagstone
@@ -776,6 +866,12 @@ end
 arch chair_cw_1.2
 x 8
 y 5
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch light4
@@ -790,6 +886,11 @@ end
 arch chair_cw_1.2
 x 8
 y 6
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch flagstone

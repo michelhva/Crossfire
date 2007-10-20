@@ -411,16 +411,6 @@ arch dungeon_magic
 x 1
 y 24
 end
-arch trigger_marker
-slaying guild_forge121
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
-x 1
-y 24
-connected 130
-end
 arch dungeon_magic
 x 1
 y 25
@@ -662,20 +652,9 @@ arch dungeon_magic
 x 2
 y 24
 end
-arch creator
-other_arch flagstone
+arch goldflagstone
 x 2
 y 24
-connected 76
-end
-arch goldfloor
-name drop 30,000 rubies for a forge
-slaying ruby
-food 30000
-x 2
-y 24
-connected 130
-unique 1
 end
 arch flagstone
 x 2
@@ -1013,7 +992,7 @@ y 3
 unique 1
 end
 arch stair_down_3
-slaying /euthville/guildhq
+slaying guild_hq
 hp 1
 sp 1
 x 4
@@ -2396,7 +2375,7 @@ x 7
 y 23
 end
 arch invis_exit
-slaying guildtoolshed
+slaying guild_toolshed
 hp 14
 sp 4
 x 7
@@ -2684,20 +2663,9 @@ arch dungeon_magic
 x 8
 y 24
 end
-arch creator
-other_arch flagstone
+arch goldflagstone
 x 8
 y 24
-connected 76
-end
-arch goldfloor
-name drop 30,000 rubies for a workbench
-slaying ruby
-food 30000
-x 8
-y 24
-connected 120
-unique 1
 end
 arch flagstone
 x 8
@@ -2968,16 +2936,6 @@ arch dungeon_magic
 x 9
 y 24
 end
-arch trigger_marker
-slaying guild_boyer121
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
-x 9
-y 24
-connected 120
-end
 arch dungeon_magic
 x 9
 y 25
@@ -3005,12 +2963,6 @@ end
 arch flagstone
 x 9
 y 27
-end
-arch pedestal
-x 9
-y 27
-invisible 1
-connected 122
 end
 arch flagstone
 x 9
@@ -3174,7 +3126,7 @@ x 10
 y 16
 end
 arch goldfloor
-name drop 5000 Platinum for a portal to Scorn
+name drop 5000 platinum for a portal to Scorn
 slaying platinacoin
 food 5000
 x 10
@@ -3729,12 +3681,6 @@ x 12
 y 10
 unique 1
 end
-arch creator
-other_arch woodfloor
-x 12
-y 10
-connected 60
-end
 arch dungeon_magic
 x 12
 y 10
@@ -3831,12 +3777,6 @@ end
 arch dungeon_magic
 x 12
 y 19
-end
-arch creator
-other_arch woodfloor
-x 12
-y 19
-connected 77
 end
 arch woodfloor
 x 12
@@ -4458,19 +4398,7 @@ arch dungeon_magic
 x 14
 y 21
 end
-arch grass
-x 14
-y 21
-move_block swim boat
-unique 1
-end
-arch creator
-other_arch grass
-x 14
-y 21
-connected 81
-end
-arch goldfloor
+arch goldgrass
 name drop 25 jade coins  for Kennel
 slaying jadecoin
 food 25
@@ -5047,16 +4975,16 @@ arch dungeon_magic
 x 16
 y 15
 end
+arch woodfloor
+x 16
+y 15
+unique 1
+end
 arch creator
 other_arch woodfloor
 x 16
 y 15
 connected 40
-end
-arch woodfloor
-x 16
-y 15
-unique 1
 end
 arch detector
 name You must capture a spectre and force it to build your secondfloor floor
@@ -5289,10 +5217,6 @@ arch dwall_2_1_2
 x 17
 y 6
 end
-arch dungeon_magic
-x 17
-y 7
-end
 arch woodfloor
 x 17
 y 7
@@ -5300,25 +5224,52 @@ unique 1
 end
 arch dungeon_magic
 x 17
-y 8
+y 7
+end
+arch goldfloor
+name drop 1000 platinum coins for a pearl converter
+slaying platinacoin
+food 1000
+x 17
+y 7
+connected 707
+unique 1
 end
 arch woodfloor
 x 17
 y 8
+unique 1
+end
+arch dungeon_magic
+x 17
+y 8
+end
+arch goldfloor
+name drop 1000 platinum for a silver to gold converter
+slaying platinacoin
+food 1000
+x 17
+y 8
+connected 30
+unique 1
+end
+arch woodfloor
+x 17
+y 9
 unique 1
 end
 arch dungeon_magic
 x 17
 y 9
 end
-arch woodfloor
+arch goldfloor
+name drop 1000 platinum for a gold to platinum converter
+slaying platinacoin
+food 1000
 x 17
 y 9
+connected 31
 unique 1
-end
-arch dungeon_magic
-x 17
-y 10
 end
 arch woodfloor
 x 17
@@ -5327,11 +5278,33 @@ unique 1
 end
 arch dungeon_magic
 x 17
-y 11
+y 10
+end
+arch goldfloor
+name drop 1000 platinum coins for a platinum to gold converter
+slaying platinacoin
+food 1000
+x 17
+y 10
+connected 32
+unique 1
 end
 arch woodfloor
 x 17
 y 11
+unique 1
+end
+arch dungeon_magic
+x 17
+y 11
+end
+arch goldfloor
+name drop 1000 platinum coins for a ruby converter
+slaying platinacoin
+food 1000
+x 17
+y 11
+connected 706
 unique 1
 end
 arch woodfloor
@@ -5347,10 +5320,6 @@ arch light4
 x 17
 y 12
 end
-arch dungeon_magic
-x 17
-y 13
-end
 arch woodfloor
 x 17
 y 13
@@ -5358,25 +5327,52 @@ unique 1
 end
 arch dungeon_magic
 x 17
-y 14
+y 13
+end
+arch goldfloor
+name drop 1000 platinum coins for a platinum to jade converter
+slaying platinacoin
+food 1000
+x 17
+y 13
+connected 701
+unique 1
 end
 arch woodfloor
 x 17
 y 14
+unique 1
+end
+arch dungeon_magic
+x 17
+y 14
+end
+arch goldfloor
+name drop 1000 platinum coins for a jade to platinum
+slaying platinacoin
+food 1000
+x 17
+y 14
+connected 702
+unique 1
+end
+arch woodfloor
+x 17
+y 15
 unique 1
 end
 arch dungeon_magic
 x 17
 y 15
 end
-arch woodfloor
+arch goldfloor
+name drop 1000 platinum coins for a jade to amberium
+slaying platinacoin
+food 1000
 x 17
 y 15
+connected 703
 unique 1
-end
-arch dungeon_magic
-x 17
-y 16
 end
 arch woodfloor
 x 17
@@ -5385,11 +5381,33 @@ unique 1
 end
 arch dungeon_magic
 x 17
-y 17
+y 16
+end
+arch goldfloor
+name drop 1000 platinum coins for an amberium to jade converter
+slaying platinacoin
+food 1000
+x 17
+y 16
+connected 704
+unique 1
 end
 arch woodfloor
 x 17
 y 17
+unique 1
+end
+arch dungeon_magic
+x 17
+y 17
+end
+arch goldfloor
+name drop 1000 platinum coins for a diamond converter
+slaying platinacoin
+food 1000
+x 17
+y 17
+connected 705
 unique 1
 end
 arch dungeon_magic
@@ -5405,12 +5423,6 @@ arch woodfloor
 x 17
 y 19
 unique 1
-end
-arch creator
-other_arch woodfloor
-x 17
-y 19
-connected 123
 end
 arch dungeon_magic
 x 17
@@ -5613,15 +5625,6 @@ x 18
 y 7
 unique 1
 end
-arch goldfloor
-name drop 1000 platinum coins for a pearl converter
-slaying platinacoin
-food 1000
-x 18
-y 7
-connected 707
-unique 1
-end
 arch woodfloor
 x 18
 y 8
@@ -5636,15 +5639,6 @@ end
 arch dungeon_magic
 x 18
 y 8
-end
-arch goldfloor
-name drop 1000 platinum for a silver to gold converter
-slaying platinacoin
-food 1000
-x 18
-y 8
-connected 30
-unique 1
 end
 arch woodfloor
 x 18
@@ -5661,15 +5655,6 @@ arch dungeon_magic
 x 18
 y 9
 end
-arch goldfloor
-name drop 1000 platinum for a gold to platinum converter
-slaying platinacoin
-food 1000
-x 18
-y 9
-connected 31
-unique 1
-end
 arch woodfloor
 x 18
 y 10
@@ -5685,15 +5670,6 @@ arch dungeon_magic
 x 18
 y 10
 end
-arch goldfloor
-name drop 1000 platinum coins for a platinum to gold converter
-slaying platinacoin
-food 1000
-x 18
-y 10
-connected 32
-unique 1
-end
 arch dungeon_magic
 x 18
 y 11
@@ -5701,15 +5677,6 @@ end
 arch woodfloor
 x 18
 y 11
-unique 1
-end
-arch goldfloor
-name drop 1000 platinum coins for a ruby  converter
-slaying platinacoin
-food 1000
-x 18
-y 11
-connected 706
 unique 1
 end
 arch woodfloor
@@ -5730,15 +5697,6 @@ x 18
 y 13
 unique 1
 end
-arch goldfloor
-name drop 1000 platinum coins for a platinum to jade converter
-slaying platinacoin
-food 1000
-x 18
-y 13
-connected 701
-unique 1
-end
 arch dungeon_magic
 x 18
 y 14
@@ -5746,15 +5704,6 @@ end
 arch woodfloor
 x 18
 y 14
-unique 1
-end
-arch goldfloor
-name drop 1000 platinum coins for a jade to platinum
-slaying platinacoin
-food 1000
-x 18
-y 14
-connected 702
 unique 1
 end
 arch dungeon_magic
@@ -5766,15 +5715,6 @@ x 18
 y 15
 unique 1
 end
-arch goldfloor
-name drop 1000 platinum coins for a jade to amberium
-slaying platinacoin
-food 1000
-x 18
-y 15
-connected 703
-unique 1
-end
 arch dungeon_magic
 x 18
 y 16
@@ -5784,15 +5724,6 @@ x 18
 y 16
 unique 1
 end
-arch goldfloor
-name drop 1000 platinum coins for an amberium to jade converter
-slaying platinacoin
-food 1000
-x 18
-y 16
-connected 704
-unique 1
-end
 arch dungeon_magic
 x 18
 y 17
@@ -5800,15 +5731,6 @@ end
 arch woodfloor
 x 18
 y 17
-unique 1
-end
-arch goldfloor
-name drop 1000 platinum coins for a diamond converter
-slaying platinacoin
-food 1000
-x 18
-y 17
-connected 705
 unique 1
 end
 arch dungeon_magic
@@ -7037,7 +6959,7 @@ x 22
 y 22
 connected 779
 end
-arch goldfloor
+arch goldgrass
 name drop 30,000 rubies for stove
 slaying ruby
 food 30000
@@ -9467,6 +9389,8 @@ connected 40
 end
 arch stair2_up
 slaying secondfloor
+hp 12
+sp 11
 x 31
 y 3
 end
@@ -12949,8 +12873,8 @@ speed 0.0
 connected 999
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 13
 x 35
 y 14
 speed 0.0
@@ -12977,8 +12901,8 @@ x 35
 y 17
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 14
 x 35
 y 18
 speed 0.0
@@ -12994,8 +12918,8 @@ x 35
 y 18
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 15
 x 35
 y 19
 speed 0.0
@@ -13006,8 +12930,8 @@ x 35
 y 19
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 16
 x 35
 y 20
 speed 0.0
@@ -13023,8 +12947,8 @@ x 35
 y 20
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 11
 x 35
 y 22
 speed 0.0
@@ -13035,8 +12959,8 @@ x 35
 y 22
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 17
 x 35
 y 23
 speed 0.0
@@ -13047,8 +12971,8 @@ x 35
 y 23
 end
 arch teleporter
-hp 15
-sp 29
+hp 18
+sp 7
 x 35
 y 24
 speed 0.0

@@ -2857,7 +2857,7 @@ y 11
 unique 1
 end
 arch teleporter
-slaying guild_HQ
+slaying guild_hq
 hp 1
 sp 12
 x 12
@@ -2884,14 +2884,14 @@ arch flagstone
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 13
+end
 arch stair_up_2
 slaying mainfloor
 hp 11
 sp 26
-x 12
-y 13
-end
-arch dungeon_magic
 x 12
 y 13
 end
@@ -3026,7 +3026,7 @@ y 3
 unique 1
 end
 arch teleporter
-slaying guild_HQ
+slaying guild_hq
 hp 13
 sp 12
 x 13

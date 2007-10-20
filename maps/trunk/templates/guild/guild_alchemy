@@ -6,6 +6,8 @@ height 10
 msg
 Creator: CF Java Map Editor
 Date:    4/8/2007
+Map finished by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch woodfloor
@@ -80,10 +82,26 @@ end
 arch dwall_2_1_2
 x 1
 end
+arch duplicator
+other_arch cauldron
+x 1
+y 1
+connected 9001
+activate_on_release 0
+end
+arch creator
+other_arch cauldron
+hp 0
+x 1
+y 1
+level 2
+connected 9001
+lifesave 1
+activate_on_push 0
+end
 arch woodfloor
 x 1
 y 1
-unique 1
 end
 arch cauldron
 x 1
@@ -93,10 +111,12 @@ end
 arch woodfloor
 x 1
 y 2
+unique 1
 end
 arch woodfloor
 x 1
 y 3
+unique 1
 end
 arch firepot
 x 1
@@ -105,20 +125,22 @@ end
 arch woodfloor
 x 1
 y 4
+unique 1
 end
 arch table_4
 x 1
 y 4
-no_pick 1
-end
-arch min_oil
-x 1
-y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
 x 1
 y 5
+unique 1
 end
 arch firepot
 x 1
@@ -127,24 +149,32 @@ end
 arch woodfloor
 x 1
 y 6
+unique 1
 end
 arch chair_1.1
 x 1
 y 6
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch woodfloor
 x 1
 y 7
+unique 1
 end
 arch table_3
 x 1
 y 7
-no_pick 1
-end
-arch potion_shielding
-x 1
-y 7
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
@@ -168,6 +198,7 @@ end
 arch woodfloor
 x 2
 y 1
+unique 1
 end
 arch firepot
 x 2
@@ -176,27 +207,38 @@ end
 arch woodfloor
 x 2
 y 2
+unique 1
 end
 arch woodfloor
 x 2
 y 3
+unique 1
 end
 arch woodfloor
 x 2
 y 4
+unique 1
 end
 arch chair_1.2
 x 2
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
 no_pick 1
 end
 arch woodfloor
 x 2
 y 5
+unique 1
 end
 arch woodfloor
 x 2
 y 6
+unique 1
 end
 arch woodfloor
 x 2
@@ -231,6 +273,7 @@ end
 arch woodfloor
 x 3
 y 1
+unique 1
 end
 arch barrel
 x 3
@@ -240,6 +283,7 @@ end
 arch woodfloor
 x 3
 y 2
+unique 1
 end
 arch light3
 x 3
@@ -248,14 +292,17 @@ end
 arch woodfloor
 x 3
 y 3
+unique 1
 end
 arch woodfloor
 x 3
 y 4
+unique 1
 end
 arch woodfloor
 x 3
 y 5
+unique 1
 end
 arch light3
 x 3
@@ -264,6 +311,7 @@ end
 arch woodfloor
 x 3
 y 6
+unique 1
 end
 arch magic_mouth
 msg
@@ -317,6 +365,7 @@ end
 arch woodfloor
 x 4
 y 1
+unique 1
 end
 arch firepot
 x 4
@@ -325,28 +374,42 @@ end
 arch woodfloor
 x 4
 y 2
+unique 1
 end
 arch woodfloor
 x 4
 y 3
+unique 1
 end
 arch chair_1.4
 x 4
 y 3
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
 x 4
 y 4
+unique 1
 end
 arch chair_1.4
 x 4
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
 x 4
 y 5
+unique 1
 end
 arch firepot
 x 4
@@ -355,6 +418,7 @@ end
 arch woodfloor
 x 4
 y 6
+unique 1
 end
 arch woodfloor
 x 4
@@ -389,51 +453,56 @@ end
 arch woodfloor
 x 5
 y 1
+unique 1
 end
 arch table_3
 x 5
 y 1
-end
-arch guide_alchemy
-x 5
-y 1
-no_pick 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 end
 arch woodfloor
 x 5
 y 2
+unique 1
 end
 arch woodfloor
 x 5
 y 3
+unique 1
 end
 arch table_4
 x 5
 y 3
-no_pick 1
-end
-arch fix_mercury
-x 5
-y 3
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
 x 5
 y 4
+unique 1
 end
 arch table_4
 x 5
 y 4
-no_pick 1
-end
-arch true_lead
-x 5
-y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 end
 arch woodfloor
 x 5
 y 5
+unique 1
 end
 arch barrel
 x 5
@@ -443,25 +512,23 @@ end
 arch woodfloor
 x 5
 y 6
-end
-arch chair_1.1
-x 5
-y 6
-no_pick 1
+unique 1
 end
 arch woodfloor
 x 5
 y 7
 end
-arch table_3
+arch altar_trigger
+name New Cauldron 30000 Rubies
+slaying ruby
+msg
+Removing your old cauldron. Please wait.
+endmsg
+exp 60
+food 30000
 x 5
 y 7
-no_pick 1
-end
-arch potion_empty
-x 5
-y 7
-no_pick 1
+connected 9001
 end
 arch woodfloor
 x 5
