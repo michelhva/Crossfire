@@ -8,11 +8,11 @@ no_pick 1
 anim
 elem_air.111
 elem_air.112
-blank.111
+empty.111
 elem_air.111
 elem_air.112
-blank.111
-blank.111
+empty.111
+empty.111
 mina
 move_on walk fly_low
 client_type 25012
