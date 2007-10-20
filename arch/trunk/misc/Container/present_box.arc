@@ -13,7 +13,7 @@ client_type 51
 end
 Object close_present_box_1
 name close the box
-face present_box_1.111
+face close_present_box_1.111
 type 121
 no_pick 1
 no_drop 1
@@ -36,7 +36,7 @@ client_type 51
 end
 Object close_present_box_2
 name close the box
-face present_box_2.111
+face close_present_box_2.111
 type 121
 no_pick 1
 no_drop 1
@@ -59,7 +59,7 @@ client_type 51
 end
 Object close_present_box_3
 name close the box
-face present_box_3.111
+face close_present_box_3.111
 type 121
 no_pick 1
 no_drop 1
@@ -82,7 +82,7 @@ client_type 51
 end
 Object close_present_box_4
 name close the box
-face present_box_4.111
+face close_present_box_4.111
 type 121
 no_pick 1
 no_drop 1
@@ -105,7 +105,7 @@ client_type 51
 end
 Object close_present_box_5
 name close the box
-face present_box_5.111
+face close_present_box_5.111
 type 121
 no_pick 1
 no_drop 1
@@ -128,15 +128,11 @@ client_type 51
 end
 Object close_present_box_6
 name close the box
-face present_box_6.111
+face close_present_box_6.111
 type 121
 no_pick 1
 no_drop 1
 identified 1
 magicmap khaki
 end
-
-
-
-
 
