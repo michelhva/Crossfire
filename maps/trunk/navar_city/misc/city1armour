@@ -347,13 +347,16 @@ end
 arch wall_2_1_2
 x 3
 end
+arch swall_1_1_half
+x 3
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 3
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 3
 y 1
 end
@@ -363,13 +366,17 @@ face shop_empty.111
 x 3
 y 2
 end
-arch swall_1_2
+arch swall_2_1_1
 x 3
 y 2
 end
 arch flagstone
 name floor
 face shop_empty.111
+x 3
+y 3
+end
+arch swall_1_2_half
 x 3
 y 3
 end
