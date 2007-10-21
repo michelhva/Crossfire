@@ -1,6 +1,7 @@
 arch map
-name ruggilli1
+name Temple of Ruggilli
 reset_timeout 3000
+difficulty 1
 region navar
 width 16
 height 16
@@ -783,10 +784,6 @@ y 7
 connected 33
 move_on 0
 end
-arch flagstone
-x 8
-y 7
-end
 arch check_inv
 slaying rug_pass
 x 8
@@ -799,6 +796,10 @@ x 8
 y 7
 last_sp 0
 connected 33
+end
+arch flagstone
+x 8
+y 7
 end
 arch flagstone
 x 8

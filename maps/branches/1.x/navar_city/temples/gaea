@@ -1,5 +1,6 @@
 arch map
-name Gaea Shrine
+name Gaea's shrine
+difficulty 1
 region navar
 width 40
 height 40
@@ -4365,15 +4366,15 @@ endmsg
 x 20
 y 5
 end
-arch brush
-x 20
-y 5
-end
 arch check_floor
 hp 1
 x 20
 y 5
 no_pass 1
+end
+arch brush
+x 20
+y 5
 end
 arch woods
 x 20
