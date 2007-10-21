@@ -1,5 +1,6 @@
 arch map
-name Gorokh Temple
+name Temple of Gorokh
+difficulty 1
 region navar
 width 15
 height 17
@@ -1079,10 +1080,6 @@ end
 arch medium_stones
 x 10
 end
-arch medium_stones
-x 10
-y 1
-end
 arch magic_ear
 msg
 @match ask|Ask
@@ -1092,11 +1089,6 @@ endmsg
 x 10
 y 1
 end
-arch tree6
-x 10
-y 1
-no_pass 1
-end
 arch magic_ear
 msg
 @match wounding|Wounding
@@ -1105,6 +1097,15 @@ endmsg
 x 10
 y 1
 connected 1
+end
+arch medium_stones
+x 10
+y 1
+end
+arch tree6
+x 10
+y 1
+no_pass 1
 end
 arch marble
 x 10
