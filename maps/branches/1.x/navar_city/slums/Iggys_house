@@ -2013,10 +2013,6 @@ arch wall_1_4
 x 11
 y 23
 end
-arch woodfloor
-x 11
-y 24
-end
 arch check_floor
 race dress1
 x 11
@@ -2025,13 +2021,17 @@ connected 5
 end
 arch woodfloor
 x 11
-y 25
+y 24
 end
 arch check_floor
 race dress1
 x 11
 y 25
 connected 5
+end
+arch woodfloor
+x 11
+y 25
 end
 arch sign
 msg
