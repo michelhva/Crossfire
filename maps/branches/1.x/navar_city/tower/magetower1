@@ -1,12 +1,13 @@
 arch map
-name magetower1
+name Spiral Tower
+difficulty 1
 region navar
 darkness 5
 width 26
 height 21
 msg
-Creator: 
-Email: 
+Creator:
+Email:
 Date: Sun Oct 31 13:03:30 1993
 endmsg
 end
@@ -622,7 +623,7 @@ end
 arch magic_mouth
 msg
 A Magic Mouth appears before you:
-   Hear ye this bold adventurer, to
+Hear ye this bold adventurer, to
 enter this tower you must say who my
 master is, what art my master
 practices, and who my master hates the
@@ -781,10 +782,6 @@ arch bwall_3_1
 x 5
 y 7
 end
-arch cobblestones
-x 5
-y 8
-end
 arch magic_ear
 msg
 @match morkov|Morkov
@@ -793,6 +790,10 @@ endmsg
 x 5
 y 8
 connected 1
+end
+arch cobblestones
+x 5
+y 8
 end
 arch cobblestones
 x 5
@@ -2214,10 +2215,6 @@ arch bwall_2_1_2
 x 14
 y 3
 end
-arch cobblestones
-x 14
-y 4
-end
 arch magic_ear
 msg
 @match necromancy|Necromancy
@@ -2226,6 +2223,10 @@ endmsg
 x 14
 y 4
 connected 2
+end
+arch cobblestones
+x 14
+y 4
 end
 arch cobblestones
 x 14
@@ -3759,10 +3760,6 @@ arch cobblestones
 x 24
 y 15
 end
-arch cobblestones
-x 24
-y 16
-end
 arch magic_ear
 msg
 @match Kurte|kurte
@@ -3771,6 +3768,10 @@ endmsg
 x 24
 y 16
 connected 3
+end
+arch cobblestones
+x 24
+y 16
 end
 arch cobblestones
 x 24
