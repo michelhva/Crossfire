@@ -1,12 +1,13 @@
 arch map
-name General store
+name General Store
+difficulty 1
 region portjoseph
 shopitems weapon:10;food:15;*:-2
 shopmax 5000
 width 19
 height 16
 msg
-Creator:langley 
+Creator:langley
 Email:llangley@fermat.dartmouth.edu
 Date: Fri May  6 22:24:40 1994
 endmsg
