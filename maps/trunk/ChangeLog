@@ -1,9 +1,128 @@
-2007-10-17 kbulgrien
-        * port_joseph/town/church
-        Path made with glue faces was not rendered properly because the arch
-        used was a floor piece.  Change base arch and make no_pick 1.  Also
-        put the glue explicitly on the no_pick map layer to render it below
-        the gate.
+2007-10-22 23:25  rjtanner
+
+	* planes/greenway1, planes/greenway2, planes/greenway3,
+	  planes/greenway4, planes/greenway5, planes/greenway6,
+	  planes/greenway7, planes/greenway8, planes/greenway9,
+	  port_joseph/goblin/fort2, port_joseph/pirates/fortvsship,
+	  port_joseph/pirates/madvillage, port_joseph/pirates/mbgrave,
+	  port_joseph/pirates/mbgrave2, port_joseph/pirates/mooglypuzzle,
+	  port_joseph/town/churchcrypt, port_joseph/town/dshark,
+	  port_joseph/town/generalstore, port_joseph/town/portia,
+	  port_joseph/town/portia2, port_joseph/town/tomassos_house,
+	  quests/greyshield/GreyMaster, quests/mak/dragons/chaos,
+	  quests/mak/dragons/elec, quests/mak/dragons/fire,
+	  quests/mak/dragons/ice, quests/mcz/castle1,
+	  quests/mcz/castle_earth, quests/mcz/castle_low1,
+	  quests/mcz/castle_low2, quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest, quests/skud/maze:
+	  Synchronize with updates made to branch - map renames
+
+2007-10-21 06:15  rjtanner
+
+	* navar_city/misc/bowyer, navar_city/misc/city1armour,
+	  navar_city/misc/city1bank: Floor tile stacking arrangment
+	  changes, cosmetic changes with wall merges
+
+2007-10-20 19:50  ryo_saeba
+
+	* sisters/tower3: Use new face for spinning wheel.
+
+2007-10-20 10:14  ryo_saeba
+
+	* templates/guild/guildHQ, templates/guild/guild_HQ,
+	  templates/guild/guildalchem, templates/guild/guildbbq,
+	  templates/guild/guildjeweler, templates/guild/guildthaum,
+	  templates/guild/guildtoolshed: Remove obsolete files.
+
+2007-10-20 10:14  ryo_saeba
+
+	* templates/guild/basement, templates/guild/guild_alchemy,
+	  templates/guild/guild_bbq, templates/guild/guild_hq,
+	  templates/guild/guild_jeweler, templates/guild/guild_thaum,
+	  templates/guild/guild_toolshed, templates/guild/hallofjoining,
+	  templates/guild/mainfloor, templates/guild/secondfloor: Fix
+	  connections, slaying, names, ... This should make the guilds
+	  usable.
+
+2007-10-19 20:22  akirschbaum
+
+	* editor/scripts/MapNormalizer: Add Gridarta script to normalize
+	  map files.
+
+2007-10-19 00:26  rjtanner
+
+	* navar_city/light/light4, navar_city/misc/city1weapon,
+	  navar_city/misc/midane: Synchronize with updates made to branch -
+	  map renames, shoprace human added back to city1weapon
+
+2007-10-19 00:14  rjtanner
+
+	* navar_city/misc/dragon_guild: Synchronize features and changes of
+	  the Navar Dragon Guild between trunk and branch
+
+2007-10-18 23:21  rjtanner
+
+	* marksel/grumms_inn2: Added a default difficulty setting to the
+	  map
+
+2007-10-18 22:36  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Correct partial resistances
+	  mistake - they used to be immune 8 which was immune to lightning,
+	  updated the values from 8% to 100%
+
+2007-10-18 21:33  rjtanner
+
+	* lake_country/snake_pit/Takuse_lair,
+	  lake_country/snake_pit/snakepit_5: Map name corrections
+
+2007-10-18 20:46  rjtanner
+
+	* lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/dragon_hangar/hangar: Map name updates - spelling
+	  corrections
+
+2007-10-18 20:45  rjtanner
+
+	* lake_country/Mwizard/Mwizard0, lake_country/Mwizard/Mwizard1,
+	  lake_country/Mwizard/Mwizard2, lake_country/Mwizard/Mwizard3,
+	  lake_country/Mwizard/Mwizard4, lake_country/Mwizard/Mwizard5,
+	  lake_country/Mwizard/Mwizard6, lake_country/Mwizard/MwizardD,
+	  lake_country/Mwizard/MwizardG, lake_country/Mwizard/MwizardT:
+	  File path mistake on previous commit - missed the files in trunk.
+	  Map name update (from MWizard to Tower of Sorcery) to match the
+	  referenced name in the Magic Mouth just inside the entrance
+	  (Mwizard0)
+
+2007-10-18 20:42  rjtanner
+
+	* world/world_109_126: Map name update (from MWizard to Tower of
+	  Sorcery) to match the referenced name in the Magic Mouth just
+	  inside the entrance (Mwizard0)
+
+2007-10-18 03:30  kbulgrien
+
+	* ChangeLog, port_joseph/town/church: Path made with glue faces was
+	  not rendered properly because the arch used
+	  was a floor piece. Change base arch and make no_pick 1. Also put
+	  the glue
+	  explicitly on the no_pick map layer to render it below the gate.
+
+2007-10-18 01:37  rjtanner
+
+	* ChangeLog: Updated the ChangeLog using svn2cl script
 
 2007-10-18 00:57  rjtanner
 
