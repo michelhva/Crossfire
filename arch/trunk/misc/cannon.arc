@@ -19,7 +19,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_1.111
 color_fg brown
 sp 1
 speed -0.1
@@ -34,7 +34,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_2.111
 color_fg brown
 sp 2
 speed -0.1
@@ -49,7 +49,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_3.111
 color_fg brown
 sp 3
 speed -0.1
@@ -64,7 +64,7 @@ type 62
 level 1
 activate_on_push 1
 activate_on_release 1
-face cannon_0.111
+face cannon_4.111
 color_fg brown
 sp 4
 speed -0.1
@@ -79,7 +79,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_5.111
 color_fg brown
 sp 5
 speed -0.1
@@ -94,7 +94,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_6.111
 color_fg brown
 sp 6
 speed -0.1
@@ -124,7 +124,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 level 1
-face cannon_0.111
+face cannon_8.111
 color_fg brown
 sp 8
 speed -0.1
