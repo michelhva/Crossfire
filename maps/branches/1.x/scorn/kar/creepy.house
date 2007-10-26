@@ -1,5 +1,6 @@
 arch map
-name creepy
+name Haunted House
+difficulty 1
 region scorn
 width 25
 height 25
@@ -748,7 +749,7 @@ end
 arch gravestone
 msg
 Here lies Ender,
-   What a troubled soul.
+What a troubled soul.
 endmsg
 x 5
 y 1
@@ -766,7 +767,7 @@ end
 arch gravestone
 msg
 Here lies LOCKJAW.
-  thank go
+thank go
 endmsg
 x 5
 y 2

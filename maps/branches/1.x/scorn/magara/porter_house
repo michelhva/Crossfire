@@ -1,5 +1,6 @@
 arch map
-name porter_house
+name House of Porters
+difficulty 1
 region scorn
 width 25
 height 16
@@ -250,8 +251,8 @@ name Mailbox
 msg
 17 Stronghold Road
 House of Porters
-       Home of Teleporters Inc.
-   You need to teleport somewhere?
+Home of Teleporters Inc.
+You need to teleport somewhere?
 -- Closed due to monster infestation -
 endmsg
 x 2
@@ -610,7 +611,7 @@ WARNING: This Dungeon consists of
 one way teleporters! You must complete
 dungeon or die! Do not use unless
 you are at least 3rd level.
-    -- Scorn Guild of adventurers
+-- Scorn Guild of adventurers
 endmsg
 x 5
 y 2
