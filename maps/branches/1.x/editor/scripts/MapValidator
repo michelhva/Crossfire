@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
   <name>MapValidator</name>
-  <code><![CDATA[import java.io.File;
+  <code><![CDATA[import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.Iterator;
 import net.sf.gridarta.gameobject.GameObject;
 import net.sf.gridarta.map.validation.ErrorCollector;
 import net.sf.gridarta.map.validation.ValidationError;
 
+void log(String message) {
+    print(message);
+    if (logFile != null) {
+        logFile.write(message);
+        logFile.write('\n');
+    }
+}
+
 void checkMap(File mapFile, String mapPath) {
     map = mainControl.getMapManager().openMapFile(mapFile, false);
     if (map == null) {
-        print(mapPath + ":");
-        print("- cannot load map file");
+        log(mapPath + ":");
+        log("- cannot load map file");
         return;
     }
     ErrorCollector errorCollector;
@@ -30,12 +40,12 @@ void checkMap(File mapFile, String mapPath) {
         ValidationError validationError = it.next();
 
         if (errorLimit > 0 && numberOfErrors >= errorLimit) {
-            print("- <skipping more errors>");
+            log("- <skipping more errors>");
             break;
         }
 
         if (numberOfErrors == 0) {
-            print(mapPath + ":");
+            log(mapPath + ":");
         }
         numberOfErrors++;
 
@@ -54,7 +64,7 @@ void checkMap(File mapFile, String mapPath) {
             sb.append(" [").append(parameter).append(']');
         }
 
-        print(sb);
+        log(sb.toString());
     }
 }
 
@@ -76,17 +86,24 @@ void checkMaps(File mapFile, String mapPath) {
     }
 }
 
-if (baseDirectory == null || baseDirectory.length() <= 0) {
-    baseDirectory = "/";
-}
-print("Checking maps below " + baseDirectory + "...");
-if (baseDirectory.endsWith("/")) {
-    baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
-}
+Writer logFile = logFilename == null ? null : new BufferedWriter(new FileWriter(logFilename));
+try {
+    if (baseDirectory == null || baseDirectory.length() <= 0) {
+        baseDirectory = "/";
+    }
+    log("Checking maps below " + baseDirectory + "...");
+    if (baseDirectory.endsWith("/")) {
+        baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
+    }
 
-checkMaps(new File(mainControl.getMapDefaultFolder() + baseDirectory), baseDirectory);
+    checkMaps(new File(mainControl.getMapDefaultFolder() + baseDirectory), baseDirectory);
 
-print("Done.");]]></code>
+    log("Done.");
+} finally {
+    if (logFile != null) {
+        logFile.close();
+    }
+}]]></code>
   <mode>
     <autoboot>false</autoboot>
     <bash>true</bash>
@@ -105,6 +122,12 @@ print("Done.");]]></code>
     <value>20</value>
     <minimum>0</minimum>
     <maximum>2147483647</maximum>
+  </parameter>
+  <parameter>
+    <name>logFilename</name>
+    <description>Copy errors to this file; empty=no copy to file</description>
+    <type>java.lang.String</type>
+    <value />
   </parameter>
 </script>
 
