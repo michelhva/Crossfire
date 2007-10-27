@@ -1,12 +1,15 @@
 arch map
 name Nexus
 reset_timeout 15
+difficulty 1
 fixed_resettime 1
 difficulty 1
 region creation
 darkness 3
 width 25
 height 25
+enter_x 12
+enter_y 12
 msg
 Creator: Avion
 CF Java Map Editor
