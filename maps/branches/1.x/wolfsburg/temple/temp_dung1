@@ -1,5 +1,6 @@
 arch map
-name <unnamed>
+name Reticent Temple
+difficulty 1
 region wolfsburg
 width 46
 height 37
@@ -9665,11 +9666,11 @@ end
 arch sphinx
 msg
 @match yes|Yes|riddle|Riddle
-     Sometimes brass or gold,
-     for each a hole and a ring,
-     turning, ever turning,
-     waiting for an opening.
-  What is it?
+Sometimes brass or gold,
+for each a hole and a ring,
+turning, ever turning,
+waiting for an opening.
+What is it?
 @match Key|key
 You have guessed correctly.
 The first object you seek is in the
