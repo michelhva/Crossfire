@@ -653,7 +653,7 @@ x 3
 y 20
 end
 arch ruins
-name mudman's place
+name Mudman's Place
 slaying /santo_dominion/mudman/mudman.1
 msg
 Urgh! The swamp is cold and soaking
@@ -2404,6 +2404,7 @@ x 11
 y 18
 end
 arch hut
+name Hut
 slaying /santo_dominion/eeur/hut.1
 hp 7
 sp 20
@@ -2415,7 +2416,7 @@ x 11
 y 19
 end
 arch bungalow
-name undead bungalow
+name Undead Bungalow
 slaying /santo_dominion/houses/house1
 hp 11
 sp 15
@@ -2865,7 +2866,7 @@ x 13
 y 17
 end
 arch tower_tob
-name little house of horrors
+name Little House of Horrors
 slaying /santo_dominion/house_of_hell
 hp 7
 sp 13
@@ -2885,7 +2886,7 @@ x 13
 y 20
 end
 arch hut
-name A nice little hut
+name A Nice Little Hut
 slaying /santo_dominion/magara/hut/floor_1
 hp 1
 sp 1
@@ -3336,7 +3337,7 @@ x 15
 y 16
 end
 arch courthouse
-name A little opara
+name A Little Opara
 slaying /santo_dominion/magara/opera
 hp 1
 sp 12
@@ -4278,6 +4279,7 @@ x 19
 y 18
 end
 arch well
+name Well
 slaying /santo_dominion/magara/well/top
 hp 14
 sp 14
@@ -7836,6 +7838,7 @@ x 35
 y 13
 end
 arch barn
+name North Barn
 slaying /santo_dominion/north_barn
 hp 1
 sp 1
@@ -8516,6 +8519,7 @@ x 38
 y 21
 end
 arch barn
+name South Barn
 slaying /santo_dominion/south_barn
 hp 1
 sp 1

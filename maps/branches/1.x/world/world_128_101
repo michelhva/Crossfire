@@ -43,6 +43,7 @@ y 3
 elevation 3812
 end
 arch s_mountain_cave
+name Akki Yama
 slaying /azumauindo/misc/cave1
 hp 5
 sp 17
@@ -192,6 +193,7 @@ y 18
 elevation 399
 end
 arch store_magic_east
+name Kijutsu Shijou
 slaying /azumauindo/suno-yamatoshi/shops/magicshop1
 hp 8
 sp 13
@@ -505,8 +507,7 @@ y 16
 elevation 105
 end
 arch market2_east
-name itteifuhen apa-to
-name_pl itteifuhen apa-to
+name Itteifuhen Apa-to
 slaying /azumauindo/suno-yamatoshi/apartments/lapartment1
 hp 17
 sp 1
@@ -757,6 +758,7 @@ y 4
 elevation 3812
 end
 arch shrine_east_r
+name Ichidou
 slaying /azumauindo/misc/shrine1
 hp 9
 sp 15
@@ -882,8 +884,7 @@ y 14
 elevation 655
 end
 arch building7_east
-name ichidou dzuki Ruggilli
-name_pl ichidou dzuki Ruggilli
+name Ichidou Dzuki Ruggilli
 slaying /azumauindo/suno-yamatoshi/temples/ruggilli1
 hp 8
 sp 14
@@ -916,8 +917,7 @@ y 17
 elevation 32
 end
 arch building2_east
-name chokinbako
-name_pl chokinbako
+name Chokinbako
 slaying /azumauindo/suno-yamatoshi/shops/bank1
 hp 8
 sp 13
@@ -1253,6 +1253,7 @@ y 9
 elevation 2693
 end
 arch house2_east
+name Sumai
 slaying /azumauindo/suno-yamatoshi/buildings/jadechesthouse1
 hp 11
 sp 17
@@ -1580,6 +1581,7 @@ x 4
 y 5
 end
 arch mountain_cave
+name Akki Yama
 slaying /azumauindo/misc/cave1
 hp 23
 sp 61
@@ -1673,6 +1675,7 @@ y 17
 elevation 220
 end
 arch store_armour_east
+name Kabuto Mise
 slaying /azumauindo/suno-yamatoshi/shops/armourshop1
 hp 8
 sp 14
@@ -1767,8 +1770,7 @@ x 4
 y 27
 end
 arch guard_house_4
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 4
 y 27
 end
@@ -1792,8 +1794,7 @@ x 4
 y 28
 end
 arch guard_house_3
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 4
 y 28
 end
@@ -2087,8 +2088,7 @@ y 22
 elevation 637
 end
 arch building1_east
-name mise
-name_pl mise
+name Ichi Roku Ginkou
 slaying /azumauindo/suno-yamatoshi/shops/pawn1
 hp 8
 sp 14
@@ -2443,8 +2443,6 @@ y 19
 end
 arch guard_house_1
 name goei mezon
-name_pl goei mezon
-slaying goei mezon
 x 6
 y 19
 end
@@ -2841,7 +2839,6 @@ y 19
 end
 arch guard_house_2
 name goei mezon
-name_pl goei mezon
 x 7
 y 19
 end
@@ -6690,6 +6687,7 @@ y 43
 elevation 676
 end
 arch guard_house_4
+name Minatomachi Goei Mezon
 x 19
 y 43
 end
@@ -6710,6 +6708,7 @@ y 44
 elevation 676
 end
 arch guard_house_3
+name Minatomachi Goei Mezon
 x 19
 y 44
 end
@@ -12894,8 +12893,7 @@ y 37
 elevation 76
 end
 arch building1_east
-name mise
-name_pl mise
+name Shijou Mise
 slaying /azumauindo/minatomachi/stores/generalstore
 hp 7
 sp 14
@@ -13134,7 +13132,6 @@ y 20
 end
 arch building9_east
 name Shougyoukumiai dzuki za Zaseki Dzuki Ryoku
-name_pl Shougyoukumiai dzuki za Zaseki Dzuki Ryoku
 x 40
 y 20
 end

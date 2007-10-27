@@ -11057,7 +11057,6 @@ y 34
 end
 arch city_tower
 name Friendly Giant's Tower
-name_pl Friendly Giant's Tower
 slaying /scorn/kar/somehouse
 hp 14
 x 41
@@ -11500,8 +11499,7 @@ x 42
 y 39
 end
 arch minihouse
-name abandoned temple
-name_pl abandoned temple
+name Abandoned Temple
 slaying /scorn/misc/kboldtemp1
 msg
 It looks as if someone took up refuge here...
@@ -13127,8 +13125,7 @@ x 46
 y 36
 end
 arch barrack_up
-name Mercenaries agency
-name_pl Mercenaries agency
+name Mercenaries Agency
 slaying /scorn/misc/mercenaries
 hp 6
 sp 15
@@ -13511,8 +13508,7 @@ x 47
 y 36
 end
 arch store_weapons
-name Bow Shop
-name_pl Bow Shop
+name Scorn's Best Bows
 slaying /scorn/shops/bowshop
 hp 14
 sp 14
@@ -14309,8 +14305,7 @@ y 37
 elevation 1191
 end
 arch s_shop2
-name Imperial Post
-name_pl Imperial Post
+name Imperial Post Office
 slaying /scorn/shops/IPO_scorn
 msg
 Ding!

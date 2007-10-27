@@ -3183,6 +3183,7 @@ x 13
 y 38
 end
 arch store_general
+name General Store
 slaying /port_joseph/town/generalstore
 hp 10
 x 13
@@ -3387,6 +3388,7 @@ x 14
 y 31
 end
 arch church
+name Church of Gabriel
 slaying /port_joseph/town/church
 hp 3
 sp 15
@@ -4688,7 +4690,7 @@ x 19
 y 33
 end
 arch shrine
-name shrine of Ixalovh
+name Ixalovh Shrine
 slaying /port_joseph/town/ixalovh_shrine
 hp 4
 sp 17

@@ -416,6 +416,7 @@ y 39
 elevation 165
 end
 arch house_2
+name Fisherman's Cabin
 slaying /whalingoutpost/houses/infestedhouse1
 hp 9
 sp 1
@@ -662,8 +663,7 @@ y 37
 elevation 233
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 16
 sp 22
@@ -691,6 +691,7 @@ y 41
 elevation 3441
 end
 arch house_long
+name Fisher's Hall
 slaying /whalingoutpost/taverns/fishershall1
 hp 10
 sp 1
@@ -937,8 +938,7 @@ y 39
 elevation 26
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 27
 sp 9
@@ -1180,8 +1180,7 @@ y 36
 elevation 1744
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 16
 sp 9
@@ -1199,6 +1198,7 @@ y 38
 elevation 453
 end
 arch well
+name Fisher's Well
 slaying /whalingoutpost/misc/fisherswell1
 hp 5
 sp 4
@@ -1465,8 +1465,7 @@ y 40
 elevation 3021
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 4
 sp 22
@@ -1713,8 +1712,7 @@ y 38
 elevation 2558
 end
 arch bungalow
-name fisherman's house
-name_pl fisherman's house
+name Fisherman's House
 slaying /whalingoutpost/houses/fishershouse1
 hp 4
 sp 9
@@ -4600,8 +4598,7 @@ y 4
 elevation 6042
 end
 arch barrack_small
-name cave
-name_pl cave
+name Wretched Cave
 slaying /whalingoutpost/misc/trollcave1
 face moun_cave1.111
 hp 8
@@ -5115,8 +5112,7 @@ y 2
 elevation 6584
 end
 arch barrack_small
-name cave
-name_pl cave
+name Foul Cave
 slaying /whalingoutpost/misc/trollcave1
 face moun_cave1.111
 hp 56

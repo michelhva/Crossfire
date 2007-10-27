@@ -2212,8 +2212,7 @@ y 8
 elevation 118
 end
 arch shrine
-name Ixalovh shrine
-name_pl Ixalovh shrine
+name Shrine of Ixalovh
 slaying /scorn/temples/ixalovh
 hp 6
 sp 13
@@ -6011,8 +6010,7 @@ y 31
 elevation 1393
 end
 arch store_magic
-name House of Mana
-name_pl House of Mana
+name House of Power
 slaying /scorn/misc/PowerHouse
 hp 10
 sp 33
@@ -7454,8 +7452,7 @@ y 42
 elevation 6052
 end
 arch tavern
-name House of porters
-name_pl House of porters
+name House of Porters
 slaying /scorn/magara/porter_house
 hp 1
 sp 1
@@ -7860,9 +7857,9 @@ elevation 8451
 end
 arch minihouse
 name Jacob's Lighting Emporium
-name_pl Jacob's Lighting Emporium
 slaying /scorn/shops/light_shop
-sp 13
+hp 1
+sp 12
 x 17
 y 39
 end
@@ -9168,7 +9165,6 @@ elevation 6331
 end
 arch tavern
 name Gork's Grovel
-name_pl Gork's Grovel
 slaying /scorn/kar/gorks1
 hp 10
 sp 17
@@ -11960,6 +11956,7 @@ y 29
 elevation 7701
 end
 arch mountain_cave
+name Gnolls Grotto
 slaying /scorn/dtabb/cave
 hp 30
 sp 1

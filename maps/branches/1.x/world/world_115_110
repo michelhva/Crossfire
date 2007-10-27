@@ -3005,7 +3005,7 @@ x 11
 y 23
 end
 arch ruins
-name The necropolis of Gax
+name The Necropolis of Gax
 slaying /sisters/necro_entrance
 hp 1
 sp 13
@@ -3618,7 +3618,7 @@ x 13
 y 39
 end
 arch s_house1
-name small manor
+name Small Manor
 slaying /sisters/small_manor1
 hp 14
 sp 14
@@ -3872,7 +3872,7 @@ x 14
 y 42
 end
 arch barrack_small
-name small granary
+name Small Granary
 slaying /sisters/granary
 msg
 You hear a vicious dog growling!
@@ -5083,6 +5083,7 @@ x 19
 y 25
 end
 arch tower_a
+name Three Sisters Tower
 slaying /sisters/entrance
 hp 19
 sp 1
@@ -5519,7 +5520,7 @@ x 21
 y 10
 end
 arch shrine
-name evil shrine
+name Evil Shrine
 slaying /sisters/shrine_entrance
 hp 9
 sp 33

@@ -7160,9 +7160,6 @@ elevation 6634
 end
 arch mountain_cave2
 name mine
-slaying /morok_dun/mines1
-hp 18
-sp 27
 x 27
 y 41
 end
@@ -9204,6 +9201,7 @@ y 39
 elevation 2244
 end
 arch city_tower
+name Sages Tower
 slaying /marksel/wizard
 hp 13
 sp 7
@@ -11587,7 +11585,7 @@ y 43
 elevation 3423
 end
 arch shrine
-name church of Valriel
+name Church of Valriel
 slaying /marksel/church
 hp 3
 sp 10
