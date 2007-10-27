@@ -9891,6 +9891,7 @@ y 39
 no_pass 1
 end
 arch collesium
+name Collesium
 slaying /navar_city/collosium
 hp 17
 sp 22
@@ -12841,8 +12842,7 @@ x 45
 y 39
 end
 arch temple1
-name temple of Gorokh
-name_pl temple of Gorokh
+name Temple of Gorokh
 slaying /navar_city/temples/gorokh
 hp 7
 sp 13

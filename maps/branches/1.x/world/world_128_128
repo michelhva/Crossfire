@@ -2934,8 +2934,7 @@ y 42
 elevation 7758
 end
 arch small_temple
-name snow cave
-name_pl snow cave
+name Polar Bear Cave
 slaying /whalingoutpost/misc/polarbearcave1
 face s_moun_cave.111
 hp 25
@@ -4237,8 +4236,7 @@ y 41
 elevation 7758
 end
 arch s_bungalow
-name lightkeeper's house
-name_pl lightkeeper's house
+name Lightkeeper's House
 slaying /whalingoutpost/lightkeepershouse1
 hp 3
 sp 12
@@ -4258,6 +4256,7 @@ y 43
 elevation 3812
 end
 arch well
+name Well
 slaying /whalingoutpost/lightkeepershouseb1
 hp 27
 sp 104
@@ -4793,8 +4792,7 @@ y 47
 elevation 7758
 end
 arch small_temple
-name snow cave
-name_pl snow cave
+name Polar Bear Cavern
 slaying /whalingoutpost/misc/polarbearcave3
 face s_moun_cave.111
 hp 25
@@ -5016,7 +5014,7 @@ y 39
 elevation -4891
 end
 arch s_citytower
-name lighthouse
+name Frozen Lighthouse
 slaying /whalingoutpost/lighthouse1
 hp 8
 sp 15
@@ -9849,8 +9847,7 @@ y 42
 elevation 3812
 end
 arch small_temple
-name hole
-name_pl snow cave
+name Snow Cave
 slaying /whalingoutpost/misc/holeinice1
 face ihole.111
 hp 19
@@ -9877,8 +9874,7 @@ y 45
 elevation 3812
 end
 arch small_temple
-name hole
-name_pl snow cave
+name Snow Cave
 slaying /whalingoutpost/misc/holeinice1
 face ihole.111
 hp 18
@@ -11412,8 +11408,7 @@ y 43
 elevation 7758
 end
 arch small_temple
-name snow cave
-name_pl snow cave
+name Polar Bear Lair
 slaying /whalingoutpost/misc/polarbearcave2
 face s_moun_cave.111
 hp 25

@@ -4429,6 +4429,7 @@ y 40
 elevation 3006
 end
 arch city_tower_east
+name Tou
 slaying /azumauindo/ranbounagisatoshi/towers/tou1
 hp 8
 sp 15
@@ -4837,8 +4838,7 @@ y 46
 elevation 358
 end
 arch house2_east
-name itteifuhen apa-to
-name_pl itteifuhen apa-to
+name Itteifuhen Apa-to
 slaying /azumauindo/ranbounagisatoshi/apartments/sapartment
 hp 6
 sp 12
@@ -5569,8 +5569,7 @@ y 43
 elevation 1663
 end
 arch building10_east
-name mise
-name_pl mise
+name Gurupushoppu
 slaying /azumauindo/ranbounagisatoshi/shops/groupshop
 hp 17
 sp 28
@@ -6274,8 +6273,7 @@ y 45
 elevation 46
 end
 arch house2_east
-name shouhou senta
-name_pl shouhou senta
+name Shouhou Senta
 slaying /azumauindo/ranbounagisatoshi/shops/tradecenter
 hp 7
 sp 15
@@ -6628,8 +6626,7 @@ y 47
 elevation 44
 end
 arch building1_east
-name mise
-name_pl mise
+name Poshon Sutooe
 slaying /azumauindo/ranbounagisatoshi/shops/potionshop1
 hp 16
 sp 26
@@ -13530,8 +13527,7 @@ y 16
 elevation 493
 end
 arch building3_east
-name akuma tatemono
-name_pl akuma tatemono
+name Akuma Tatemono
 slaying /azumauindo/suno-yamatoshi/buildings/tatemonoA1
 hp 32
 sp 56
@@ -14268,8 +14264,7 @@ x 45
 y 14
 end
 arch guard_house_3
-name goei mezon
-name_pl goei mezon
+name Suno-yamatoshi Goei Mezon
 x 45
 y 14
 end
@@ -14614,6 +14609,7 @@ y 14
 blocksview 0
 end
 arch city_tower_east
+name Tou
 slaying /azumauindo/suno-yamatoshi/towers/tou1
 hp 8
 sp 15
@@ -14992,7 +14988,6 @@ elevation 501
 end
 arch building9_east
 name Shougyoukumiai dzuki za Nenshou Youso
-name_pl Shougyoukumiai dzuki za Nenshou Youso
 slaying /azumauindo/suno-yamatoshi/nenshou_youso/ground
 hp 12
 sp 19
@@ -15043,8 +15038,7 @@ y 20
 elevation 846
 end
 arch building1_east
-name ninja dojo
-name_pl ninja dojo
+name Ninja Dojo
 slaying /azumauindo/suno-yamatoshi/buildings/ninjadojoA1
 msg
 Intruder!
@@ -15367,6 +15361,7 @@ y 17
 elevation 358
 end
 arch store_weapons_east
+name Emono Mise
 slaying /azumauindo/suno-yamatoshi/shops/weaponshop1
 hp 8
 sp 14

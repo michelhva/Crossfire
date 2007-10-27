@@ -4065,7 +4065,6 @@ y 40
 end
 arch castle_a
 name Sunset Castle
-name_pl Sunset Castle
 slaying /lake_country/Sunset_Lake/gatehouse
 hp 1
 sp 8
@@ -4535,8 +4534,7 @@ x 17
 y 28
 end
 arch tavern
-name Clem's fine archery
-name_pl Clem's fine archery
+name Clem's Fine Archery
 slaying /lake_country/shops/clems_archery
 hp 7
 sp 4
@@ -4831,8 +4829,7 @@ x 18
 y 29
 end
 arch tavern
-name Klondor's wand shop
-name_pl Klondor's wand shop
+name Klondor's Wand Shop
 slaying /lake_country/shops/klondors_wands
 hp 8
 sp 7
@@ -5040,7 +5037,6 @@ y 18
 end
 arch house_1
 name Small Inn
-name_pl Small Inn
 slaying /lake_country/small_buildings/LC_inn1
 hp 1
 sp 2
@@ -7023,8 +7019,7 @@ x 26
 y 42
 end
 arch hut
-name Galmorus's hut
-name_pl Galmorus's hut
+name Galmorus's Hut
 slaying /lake_country/small_buildings/hut_Galmorus
 hp 9
 x 26
@@ -8481,12 +8476,12 @@ y 22
 elevation 8000
 end
 arch mountain_cave2
+name Mopoon's Weapon Shop
 slaying /lake_country/shops/Mopoon_wshop
 hp 7
 sp 7
 x 32
 y 22
-is_floor 0
 end
 arch jungle_2
 x 32
@@ -9763,8 +9758,7 @@ x 37
 y 40
 end
 arch wizard_tower
-name wizard tower
-name_pl wizard tower
+name Tower of Sorcery
 slaying /lake_country/Mwizard/Mwizard0
 hp 12
 sp 1
@@ -10114,7 +10108,8 @@ x 39
 y 18
 end
 arch wizard_tower
-name Tower of Sorcery
+name wizard tower
+name_pl wizard tower
 slaying /lake_country/Mwizard/Mwizard0
 hp 12
 sp 1

@@ -97,12 +97,6 @@ end
 arch grass
 y 23
 end
-arch house_small
-name house by the well
-slaying /dragonisland/apartment3
-hp 6
-y 23
-end
 arch grass
 y 24
 end
@@ -305,7 +299,7 @@ x 1
 y 21
 end
 arch well
-name bloodwell
+name Bloodwell
 slaying /dragonisland/bloodwell
 hp 14
 sp 14
@@ -320,7 +314,11 @@ arch grass
 x 1
 y 23
 end
-arch tree
+arch house_small
+name House by the Well
+slaying /dragonisland/apartment3
+hp 6
+sp 1
 x 1
 y 23
 end
@@ -808,7 +806,7 @@ x 3
 y 13
 end
 arch house_2
-name key sale house
+name Key Sale House
 slaying /dragonisland/keysale
 hp 7
 sp 15
@@ -1054,7 +1052,7 @@ x 4
 y 13
 end
 arch house_2
-name house with apartment
+name House With Apartment
 slaying /dragonisland/apartment2
 hp 7
 sp 15
@@ -1366,6 +1364,7 @@ x 5
 y 19
 end
 arch minihouse
+name Small House
 slaying /dragonisland/house8
 hp 8
 sp 8
@@ -1610,6 +1609,7 @@ x 6
 y 19
 end
 arch house_2
+name House
 slaying /dragonisland/house9
 hp 1
 sp 4
@@ -1831,7 +1831,7 @@ x 7
 y 13
 end
 arch house_2
-name dark elf house
+name Dark Elf House
 slaying /dragonisland/drowmansion
 msg
 You have a creepy feeling while
@@ -2081,7 +2081,7 @@ x 8
 y 14
 end
 arch house_small
-name Damaris' house
+name Damaris' House
 slaying /dragonisland/damarishouse1
 hp 10
 sp 14
@@ -2113,7 +2113,7 @@ x 8
 y 18
 end
 arch house_2
-name Enter at own risk
+name Enter at Own Risk
 slaying /dragonisland/house5
 hp 14
 sp 7
@@ -3057,7 +3057,7 @@ x 12
 y 11
 end
 arch well
-name well of intelligence
+name Well of Intelligence
 slaying /dragonisland/intwell
 hp 1
 sp 21
@@ -5336,6 +5336,7 @@ x 22
 y 11
 end
 arch mountain_cave
+name Thieves Den
 slaying /dragonisland/thievesden
 hp 1
 sp 3
@@ -5636,7 +5637,7 @@ x 23
 y 30
 end
 arch mountain_cave
-name dragon mountain
+name Dragon Mountain
 slaying /dragonisland/dragonmountain0
 sp 12
 x 23
