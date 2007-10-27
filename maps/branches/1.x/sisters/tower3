@@ -130,9 +130,22 @@ endmsg
 sp -2
 x 1
 y 5
+resist_physical 30
+resist_magic 30
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_confusion 30
+resist_acid 30
+resist_drain 30
+resist_weaponmagic 30
+resist_ghosthit 30
+resist_poison 30
+resist_slow 30
+resist_paralyze 30
+resist_fear 30
 path_denied 32768
 value 30000
-armour 24575
 end
 arch flagstone
 x 1
