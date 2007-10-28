@@ -2,6 +2,7 @@
 <script>
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
+import java.util.Arrays;
 import java.util.Iterator;
 import net.sf.gridarta.gameobject.GameObject;
 import net.sf.gridarta.map.validation.ErrorCollector;
@@ -26,6 +27,7 @@ void normalizeDirectory(File mapFile, String mapPath) {
         print("Cannot read directory " + mapFile);
         return;
     }
+    Arrays.sort(files);
     for (File file : files) {
         String name = file.getName();
         if (!name.equals(".svn") && !name.equals("README")) {
