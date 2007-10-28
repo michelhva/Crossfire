@@ -1,7 +1,8 @@
 arch map
-hp 2
-x 6
-y 28
+name <unnamed>
+width 6
+height 28
+enter_x 2
 end
 arch woodfloor
 end
@@ -50,8 +51,23 @@ end
 arch tavern
 y 16
 end
+arch farmhouse
+y 17
+end
 arch house_1
 y 18
+end
+arch barn
+y 19
+end
+arch store_general
+y 21
+end
+arch store_magic
+y 23
+end
+arch courthouse
+y 25
 end
 arch dungeon_floor
 x 1
@@ -167,9 +183,29 @@ arch hole
 x 2
 y 15
 end
+arch inn
+x 2
+y 16
+end
+arch barrack_long
+x 2
+y 17
+end
 arch bungalow
 x 2
 y 18
+end
+arch guild
+x 2
+y 19
+end
+arch store_weapons
+x 2
+y 21
+end
+arch church
+x 2
+y 23
 end
 arch cobblestones2
 x 3
@@ -277,9 +313,29 @@ arch oakdoor
 x 4
 y 15
 end
+arch house_up
+x 4
+y 16
+end
 arch hut
 x 4
 y 18
+end
+arch prison
+x 4
+y 19
+end
+arch store_armour
+x 4
+y 21
+end
+arch city_tower
+x 4
+y 23
+end
+arch big_galleon
+x 4
+y 25
 end
 arch dungeon_magic
 x 5
@@ -316,77 +372,19 @@ arch weak_wall_6
 x 5
 y 12
 end
-arch castle
-x 5
-y 18
-end
-arch galleon
-x 5
-y 27
-end
-arch farmhouse
-y 17
-end
-arch barn
-y 19
-end
-arch store_general
-y 21
-end
-arch store_magic
-y 23
-end
-arch courthouse
-y 25
-end
-arch palace
-y 27
-end
-arch inn
-x 2
-y 16
-end
-arch barrack_long
-x 2
-y 17
-end
-arch guild
-x 2
-y 19
-end
-arch store_weapons
-x 2
-y 21
-end
-arch church
-x 2
-y 23
-end
-arch house_up
-x 4
-y 16
-end
-arch prison
-x 4
-y 19
-end
-arch store_armour
-x 4
-y 21
-end
-arch city_tower
-x 4
-y 23
-end
-arch big_galleon
-x 4
-y 25
-end
 arch barrack_up
 x 5
 y 16
 end
+arch castle
+x 5
+y 18
+end
 arch tower_a
 x 5
 y 23
+end
+arch galleon
+x 5
+y 27
 end

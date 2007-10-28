@@ -1,12 +1,12 @@
 arch map
 name <untitled>
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 20:52:22 1998
 endmsg
-width 6
-height 6
 end
 arch lokanth
 end
@@ -22,6 +22,9 @@ end
 arch crawling_chaos
 y 4
 end
+arch lamia
+y 5
+end
 arch lokanth
 x 1
 end
@@ -60,71 +63,68 @@ arch crawling_chaos
 x 2
 y 4
 end
-arch lokanth
-x 3
-end
-arch lokanth
-x 3
-y 1
-end
-arch lokanth
-x 3
-y 2
-end
-arch living_chaos
-x 3
-y 3
-end
-arch crawling_chaos
-x 3
-y 4
-end
-arch lokanth
-x 4
-end
-arch lokanth
-x 4
-y 1
-end
-arch lokanth
-x 4
-y 2
-end
-arch living_chaos
-x 4
-y 3
-end
-arch crawling_chaos
-x 4
-y 4
-end
-arch living_chaos
-x 5
-end
-arch living_chaos
-x 5
-y 1
-end
-arch living_chaos
-x 5
-y 2
-end
-arch living_chaos
-x 5
-y 3
-end
-arch living_chaos
-x 5
-y 4
-end
-arch lamia
-y 5
-end
 arch lamia
 x 2
 y 5
 end
+arch lokanth
+x 3
+end
+arch lokanth
+x 3
+y 1
+end
+arch lokanth
+x 3
+y 2
+end
+arch living_chaos
+x 3
+y 3
+end
+arch crawling_chaos
+x 3
+y 4
+end
+arch lokanth
+x 4
+end
+arch lokanth
+x 4
+y 1
+end
+arch lokanth
+x 4
+y 2
+end
+arch living_chaos
+x 4
+y 3
+end
+arch crawling_chaos
+x 4
+y 4
+end
 arch lamia
 x 4
 y 5
+end
+arch living_chaos
+x 5
+end
+arch living_chaos
+x 5
+y 1
+end
+arch living_chaos
+x 5
+y 2
+end
+arch living_chaos
+x 5
+y 3
+end
+arch living_chaos
+x 5
+y 4
 end

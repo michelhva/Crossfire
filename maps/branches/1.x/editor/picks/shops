@@ -1,12 +1,12 @@
 arch map
 name shops
+width 7
+height 9
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr 19 22:18:58 1996
 endmsg
-x 7
-y 9
 end
 arch shop_empty
 end
@@ -104,6 +104,10 @@ arch alchemy_pearl_converter
 x 2
 y 8
 end
+arch create_Pdragon_mail
+x 3
+ù 3
+end
 arch create_serpent_cloak
 x 3
 y 1
@@ -111,10 +115,6 @@ end
 arch create_mithril_ar_ele
 x 3
 y 2
-end
-arch create_Pdragon_mail
-x 3
-ù 3
 end
 arch food_table
 x 3

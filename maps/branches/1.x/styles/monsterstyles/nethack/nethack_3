@@ -1,12 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
-y 6
 end
 arch snake
 name newt
@@ -36,8 +36,8 @@ attacktype 1
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch dog
@@ -160,9 +160,9 @@ attacktype 4128
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 undead 1
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch imp

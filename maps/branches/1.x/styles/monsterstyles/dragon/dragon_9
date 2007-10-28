@@ -1,11 +1,20 @@
 arch map
+name <unnamed>
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 20:52:22 1998
 endmsg
-x 6
-y 6
+end
+arch chinese_dragon
+end
+arch chinese_dragon
+y 2
+end
+arch chinese_dragon
+y 4
 end
 arch generate_dragon
 x 2
@@ -17,6 +26,10 @@ end
 arch generate_dragon
 x 2
 y 2
+end
+arch dragon
+x 2
+y 3
 end
 arch drake
 x 2
@@ -45,34 +58,6 @@ arch drake
 x 3
 y 5
 end
-arch generate_dragon
-x 4
-y 4
-end
-arch generate_dragon
-x 4
-y 5
-end
-arch generate_dragon
-x 5
-y 4
-end
-arch generate_dragon
-x 5
-y 5
-end
-arch chinese_dragon
-end
-arch chinese_dragon
-y 2
-end
-arch chinese_dragon
-y 4
-end
-arch dragon
-x 2
-y 3
-end
 arch dragon
 x 4
 end
@@ -87,4 +72,20 @@ end
 arch dragon
 x 4
 y 3
+end
+arch generate_dragon
+x 4
+y 4
+end
+arch generate_dragon
+x 4
+y 5
+end
+arch generate_dragon
+x 5
+y 4
+end
+arch generate_dragon
+x 5
+y 5
 end

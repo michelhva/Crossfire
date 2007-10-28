@@ -1,12 +1,14 @@
 arch map
 name <untitled>
+width 10
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec  9 20:54:38 2000
 endmsg
-width 10
-height 10
+end
+arch slug
 end
 arch centipede
 y 1
@@ -17,8 +19,14 @@ end
 arch wraith
 y 3
 end
+arch behemoth
+y 4
+end
 arch slime
 y 6
+end
+arch g_worm
+y 7
 end
 arch devil
 y 9
@@ -42,6 +50,9 @@ end
 arch devil
 x 1
 y 9
+end
+arch slug
+x 2
 end
 arch centipede
 x 2
@@ -78,6 +89,10 @@ end
 arch generate_serp_man
 x 2
 y 9
+end
+arch behemoth
+x 3
+y 1
 end
 arch beholder
 x 3
@@ -126,9 +141,16 @@ arch slime
 x 4
 y 6
 end
+arch behemoth
+x 4
+y 7
+end
 arch wraith
 x 4
 y 9
+end
+arch slug
+x 5
 end
 arch centipede
 x 5
@@ -145,6 +167,10 @@ end
 arch snake
 x 5
 y 4
+end
+arch cobra
+x 5
+y 5
 end
 arch acid_pool
 x 5
@@ -185,6 +211,9 @@ end
 arch wraith
 x 6
 y 9
+end
+arch slug
+x 7
 end
 arch centipede
 x 7
@@ -221,6 +250,10 @@ end
 arch wraith
 x 7
 y 9
+end
+arch g_worm
+x 8
+y 1
 end
 arch centipede
 x 8
@@ -241,6 +274,10 @@ end
 arch leech
 x 8
 y 7
+end
+arch giantrat
+x 8
+y 8
 end
 arch centipede
 x 9
@@ -264,41 +301,4 @@ end
 arch raas
 x 9
 y 7
-end
-arch slug
-end
-arch behemoth
-y 4
-end
-arch g_worm
-y 7
-end
-arch slug
-x 2
-end
-arch behemoth
-x 3
-y 1
-end
-arch behemoth
-x 4
-y 7
-end
-arch slug
-x 5
-end
-arch cobra
-x 5
-y 5
-end
-arch slug
-x 7
-end
-arch g_worm
-x 8
-y 1
-end
-arch giantrat
-x 8
-y 8
 end

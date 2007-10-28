@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 10
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Thu Feb  1 18:16:53 2001
 endmsg
-x 10
-y 6
 end
 arch whim
 end
@@ -114,84 +115,6 @@ y 4
 end
 arch liteangel
 x 4
-y 5
-end
-arch mesangel
-x 5
-y 4
-end
-arch mesangel
-x 5
-y 5
-end
-arch mesangel
-x 6
-y 3
-end
-arch mesangel
-x 6
-y 4
-end
-arch mesangel
-x 6
-y 5
-end
-arch mesangel
-x 7
-y 3
-end
-arch mesangel
-x 7
-y 4
-end
-arch mesangel
-x 7
-y 5
-end
-arch mesangel
-x 8
-end
-arch mesangel
-x 8
-y 1
-end
-arch mesangel
-x 8
-y 2
-end
-arch mesangel
-x 8
-y 3
-end
-arch mesangel
-x 8
-y 4
-end
-arch mesangel
-x 8
-y 5
-end
-arch mesangel
-x 9
-end
-arch mesangel
-x 9
-y 1
-end
-arch mesangel
-x 9
-y 2
-end
-arch mesangel
-x 9
-y 3
-end
-arch mesangel
-x 9
-y 4
-end
-arch mesangel
-x 9
 y 5
 end
 arch angel_knight
@@ -200,7 +123,85 @@ end
 arch angel_knight
 x 5
 y 2
+end
+arch mesangel
+x 5
+y 4
+end
+arch mesangel
+x 5
+y 5
 end
 arch destroying_angel
 x 6
+end
+arch mesangel
+x 6
+y 3
+end
+arch mesangel
+x 6
+y 4
+end
+arch mesangel
+x 6
+y 5
+end
+arch mesangel
+x 7
+y 3
+end
+arch mesangel
+x 7
+y 4
+end
+arch mesangel
+x 7
+y 5
+end
+arch mesangel
+x 8
+end
+arch mesangel
+x 8
+y 1
+end
+arch mesangel
+x 8
+y 2
+end
+arch mesangel
+x 8
+y 3
+end
+arch mesangel
+x 8
+y 4
+end
+arch mesangel
+x 8
+y 5
+end
+arch mesangel
+x 9
+end
+arch mesangel
+x 9
+y 1
+end
+arch mesangel
+x 9
+y 2
+end
+arch mesangel
+x 9
+y 3
+end
+arch mesangel
+x 9
+y 4
+end
+arch mesangel
+x 9
+y 5
 end
