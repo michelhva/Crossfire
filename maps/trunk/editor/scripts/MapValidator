@@ -4,6 +4,7 @@
   <code><![CDATA[import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.Arrays;
 import java.util.Iterator;
 import net.sf.gridarta.gameobject.GameObject;
 import net.sf.gridarta.map.validation.ErrorCollector;
@@ -74,6 +75,7 @@ void checkDirectory(File mapFile, String mapPath) {
         log("Cannot read directory " + mapFile);
         return;
     }
+    Arrays.sort(files);
     for (File file : files) {
         String name = file.getName();
         if (!name.equals(".svn") && !name.equals("README")) {
