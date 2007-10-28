@@ -1,14 +1,14 @@
 arch map
 name c
+width 40
+height 40
+enter_x 39
+enter_y 39
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
 Date: Mon Jan 18 07:57:11 1999
 endmsg
-hp 39
-sp 39
-x 40
-y 40
 end
 arch desert
 end
@@ -5202,6 +5202,12 @@ arch grassmedium
 x 25
 y 22
 end
+arch cathedral
+name A house of God
+slaying mp_church
+x 25
+y 22
+end
 arch grassmedium
 x 25
 y 23
@@ -7977,6 +7983,12 @@ arch grass
 x 37
 y 7
 end
+arch store_general
+name pet shop
+slaying petshop
+x 37
+y 7
+end
 arch grass
 x 37
 y 8
@@ -8566,16 +8578,4 @@ hp 13
 sp 1
 x 39
 y 39
-end
-arch cathedral
-name A house of God
-slaying mp_church
-x 25
-y 22
-end
-arch store_general
-name pet shop
-slaying petshop
-x 37
-y 7
 end

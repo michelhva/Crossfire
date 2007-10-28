@@ -1,5 +1,7 @@
 arch map
 name c
+width 16
+height 16
 msg
 Creator: King Zoobus
 Email: gnu@foo.bar
@@ -154,6 +156,21 @@ end
 arch woodfloor2
 x 1
 y 11
+end
+arch slug
+msg
+@match grail
+You may wish to seek the most Holy
+Hangrenade to aid thee in thine quest.
+@match *
+My name is Clarence.  You must be
+Arthur, King of the Brits on a quest
+to seek the holy grail. Did you know
+slugs can talk?
+endmsg
+x 1
+y 11
+unaggressive 1
 end
 arch woodfloor2
 x 1
@@ -864,6 +881,10 @@ arch shop_floor
 x 7
 y 11
 end
+arch serpent
+x 7
+y 11
+end
 arch shop_floor
 x 7
 y 12
@@ -935,6 +956,10 @@ arch shop_floor
 x 8
 y 7
 end
+arch serpent
+x 8
+y 7
+end
 arch shop_empty
 x 8
 y 8
@@ -991,6 +1016,10 @@ arch wall_2_1_2
 x 9
 end
 arch shop_floor
+x 9
+y 1
+end
+arch serpent
 x 9
 y 1
 end
@@ -1236,6 +1265,10 @@ arch shop_floor
 x 11
 y 1
 end
+arch cobra
+x 11
+y 1
+end
 arch shop_floor
 x 11
 y 2
@@ -1432,6 +1465,10 @@ x 12
 y 10
 end
 arch shop_general
+x 12
+y 10
+end
+arch cobra
 x 12
 y 10
 end
@@ -1787,39 +1824,4 @@ end
 arch wall_2_2_4
 x 15
 y 15
-end
-arch slug
-msg
-@match grail
-You may wish to seek the most Holy
-Hangrenade to aid thee in thine quest.
-@match *
-My name is Clarence.  You must be
-Arthur, King of the Brits on a quest
-to seek the holy grail. Did you know
-slugs can talk?
-endmsg
-x 1
-y 11
-unaggressive 1
-end
-arch serpent
-x 7
-y 11
-end
-arch serpent
-x 8
-y 7
-end
-arch serpent
-x 9
-y 1
-end
-arch cobra
-x 11
-y 1
-end
-arch cobra
-x 12
-y 10
 end

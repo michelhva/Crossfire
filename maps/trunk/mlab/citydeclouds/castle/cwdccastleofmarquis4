@@ -2759,6 +2759,18 @@ arch blocked
 x 9
 y 61
 end
+arch skree
+name hynin skree
+name_pl greater skree
+hp 10000
+maxhp 10000
+exp 900000
+dam 85
+x 9
+y 62
+speed -1.500000
+level 110
+end
 arch blocked
 x 10
 end
@@ -3492,6 +3504,17 @@ end
 arch blocked
 x 11
 y 61
+end
+arch skree
+name devi skree
+name_pl greater skree
+hp 8000
+maxhp 8000
+dam 75
+x 11
+y 62
+speed -0.800000
+level 90
 end
 arch blocked
 x 12
@@ -4638,6 +4661,17 @@ end
 arch blocked
 x 13
 y 61
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 13
+y 62
+speed -0.800000
+level 70
 end
 arch blocked
 x 14
@@ -19455,6 +19489,18 @@ name_pl woodfloor
 x 49
 y 10
 end
+arch skree
+name hynin skree
+name_pl greater skree
+hp 10000
+maxhp 10000
+exp 900000
+dam 85
+x 49
+y 10
+speed -1.500000
+level 110
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -19466,6 +19512,18 @@ name woodfloor
 name_pl woodfloor
 x 49
 y 12
+end
+arch skree
+name hynin skree
+name_pl greater skree
+hp 10000
+maxhp 10000
+exp 900000
+dam 85
+x 49
+y 12
+speed -1.500000
+level 110
 end
 arch woodfloor2
 name woodfloor
@@ -20879,6 +20937,17 @@ name_pl woodfloor
 x 51
 y 10
 end
+arch skree
+name devi skree
+name_pl greater skree
+hp 8000
+maxhp 8000
+dam 75
+x 51
+y 10
+speed -0.800000
+level 90
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -20890,6 +20959,17 @@ name woodfloor
 name_pl woodfloor
 x 51
 y 12
+end
+arch skree
+name devi skree
+name_pl greater skree
+hp 8000
+maxhp 8000
+dam 75
+x 51
+y 12
+speed -0.800000
+level 90
 end
 arch woodfloor2
 name woodfloor
@@ -21801,6 +21881,17 @@ name_pl woodfloor
 x 53
 y 10
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 53
+y 10
+speed -0.800000
+level 70
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -21812,6 +21903,17 @@ name woodfloor
 name_pl woodfloor
 x 53
 y 12
+end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 53
+y 12
+speed -0.800000
+level 70
 end
 arch woodfloor2
 name woodfloor
@@ -25130,106 +25232,4 @@ end
 arch blocked
 x 63
 y 63
-end
-arch skree
-name hynin skree
-name_pl greater skree
-hp 10000
-maxhp 10000
-exp 900000
-dam 85
-x 9
-y 62
-speed -1.500000
-level 110
-end
-arch skree
-name devi skree
-name_pl greater skree
-hp 8000
-maxhp 8000
-dam 75
-x 11
-y 62
-speed -0.800000
-level 90
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 13
-y 62
-speed -0.800000
-level 70
-end
-arch skree
-name hynin skree
-name_pl greater skree
-hp 10000
-maxhp 10000
-exp 900000
-dam 85
-x 49
-y 10
-speed -1.500000
-level 110
-end
-arch skree
-name hynin skree
-name_pl greater skree
-hp 10000
-maxhp 10000
-exp 900000
-dam 85
-x 49
-y 12
-speed -1.500000
-level 110
-end
-arch skree
-name devi skree
-name_pl greater skree
-hp 8000
-maxhp 8000
-dam 75
-x 51
-y 10
-speed -0.800000
-level 90
-end
-arch skree
-name devi skree
-name_pl greater skree
-hp 8000
-maxhp 8000
-dam 75
-x 51
-y 12
-speed -0.800000
-level 90
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 53
-y 10
-speed -0.800000
-level 70
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 53
-y 12
-speed -0.800000
-level 70
 end
