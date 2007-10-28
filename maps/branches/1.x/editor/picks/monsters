@@ -1,12 +1,12 @@
 arch map
 name monsters
+width 6
+height 27
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr 15 15:20:44 1994
 endmsg
-width 6
-height 27
 end
 arch kobold
 end
@@ -60,6 +60,12 @@ y 18
 end
 arch beholder
 y 19
+end
+arch behemoth
+y 20
+end
+arch troll
+y 22
 end
 arch generate_kobold
 x 1
@@ -123,6 +129,10 @@ end
 arch generate_beholder
 x 1
 y 19
+end
+arch titan
+x 1
+y 25
 end
 arch madman
 x 2
@@ -195,6 +205,14 @@ arch nightmare
 x 2
 y 19
 end
+arch dread
+x 2
+y 20
+end
+arch big_dragon
+x 2
+y 22
+end
 arch generate_madman
 x 3
 end
@@ -225,6 +243,10 @@ end
 arch spider_gen
 x 3
 y 8
+end
+arch cobra
+x 3
+y 9
 end
 arch c_man
 x 3
@@ -257,6 +279,10 @@ end
 arch demilich
 x 3
 y 19
+end
+arch big_wiz
+x 3
+y 24
 end
 arch vampire
 x 4
@@ -320,6 +346,14 @@ end
 arch acid_sphere
 x 4
 y 17
+end
+arch giant
+x 4
+y 18
+end
+arch dragon
+x 4
+y 20
 end
 arch generate_vampire
 x 5
@@ -387,38 +421,4 @@ end
 arch generate_dragon
 x 5
 y 19
-end
-arch behemoth
-y 20
-end
-arch troll
-y 22
-end
-arch titan
-x 1
-y 25
-end
-arch dread
-x 2
-y 20
-end
-arch big_dragon
-x 2
-y 22
-end
-arch cobra
-x 3
-y 9
-end
-arch big_wiz
-x 3
-y 24
-end
-arch giant
-x 4
-y 18
-end
-arch dragon
-x 4
-y 20
 end

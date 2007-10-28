@@ -1,12 +1,12 @@
 arch map
 name exits
+width 8
+height 10
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Apr 15 14:58:59 1994
 endmsg
-x 8
-y 10
 end
 arch stair2_up
 end
@@ -183,6 +183,10 @@ face key_brown.111
 x 5
 y 5
 end
+arch pentagram_111
+x 5
+y 6
+end
 arch stair_down_3
 x 6
 end
@@ -222,8 +226,4 @@ arch locked_door1
 face ldoor_brown1.111
 x 7
 y 4
-end
-arch pentagram_111
-x 5
-y 6
 end

@@ -1,45 +1,45 @@
 arch map
 name minialch
+width 5
+height 5
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 18 15:47:50 1999
 endmsg
-x 5
-y 5
 end
 arch lbulletwall_8
-speed 0
+dam 166
 x 1
 y 1
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_7
-speed 0
+dam 166
 x 1
 y 2
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_6
-speed 0
+dam 166
 x 1
 y 3
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_1
-speed 0
+dam 166
 x 2
 y 1
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
@@ -50,37 +50,37 @@ y 2
 connected 745
 end
 arch lbulletwall_5
-speed 0
+dam 166
 x 2
 y 3
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_2
-speed 0
+dam 166
 x 3
 y 1
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_3
-speed 0
+dam 166
 x 3
 y 2
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0
 end
 arch lbulletwall_4
-speed 0
+dam 166
 x 3
 y 3
-dam 166
+speed 0
 connected 745
 no_pass 0
 blocksview 0

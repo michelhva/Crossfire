@@ -1,53 +1,59 @@
 arch map
 name <untitled>
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 22 20:37:46 1998
 endmsg
-width 6
-height 20
 end
 arch banshee
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 y 2
+level 10
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 y 3
+level 10
 end
 arch wolf
 name large wolf
-level 10
+Con 3
+Wis 10
 exp 300
 wc -1
 ac -1
-Con 3
-Wis 10
 y 4
+level 10
 end
 arch earth_witch
 y 7
+end
+arch troll
+y 8
 end
 arch generate_pixie
 y 11
 end
 arch generate_pixie
 y 12
+end
+arch troll
+y 14
 end
 arch dire_wolf
 y 18
@@ -69,6 +75,10 @@ end
 arch generate_bird
 x 2
 end
+arch dragon
+x 2
+y 1
+end
 arch dark_elf
 x 2
 y 3
@@ -76,6 +86,10 @@ end
 arch broo
 x 2
 y 6
+end
+arch giant
+x 2
+y 11
 end
 arch elec_dragon
 x 2
@@ -89,24 +103,27 @@ arch cold_dragon
 x 2
 y 19
 end
+arch unicorn
+x 3
+end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 25
 maxsp 25
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 3
 y 2
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch spell_curse
 end
 arch spell_missile_swarm
@@ -124,55 +141,79 @@ arch water_witch
 x 3
 y 5
 end
+arch baslic
+x 3
+y 8
+end
+arch bear
+x 3
+y 14
+end
 arch fungus
 x 4
 y 1
 end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 25
 maxsp 25
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 4
 y 2
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch spell_curse
 end
 arch spell_missile_swarm
 end
 end
+arch serpent
+x 4
+y 3
+end
 arch deathtree
 x 4
 y 6
 end
+arch giant
+x 4
+y 11
+end
+arch bear
+x 4
+y 14
+end
+arch behemoth
+x 4
+y 18
+end
 arch pixie
 name wilds pixie
-weight 1000
-level 8
-exp 100
-attacktype 3
-dam 10
-wc 0
+Con 1
 hp 80
 maxhp 80
-ac 3
-Con 1
 sp 20
 maxsp 20
-can_use_ring 1
-can_use_rod 1
+exp 100
+dam 10
+wc 0
+ac 3
 x 5
 y 2
+level 8
+attacktype 3
+weight 1000
+can_use_ring 1
+can_use_rod 1
 arch abil_poison_cloud
 end
 arch spell_summon_fog
@@ -189,45 +230,4 @@ end
 arch deathtree
 x 5
 y 7
-end
-arch troll
-y 8
-end
-arch troll
-y 14
-end
-arch dragon
-x 2
-y 1
-end
-arch giant
-x 2
-y 11
-end
-arch unicorn
-x 3
-end
-arch baslic
-x 3
-y 8
-end
-arch bear
-x 3
-y 14
-end
-arch serpent
-x 4
-y 3
-end
-arch giant
-x 4
-y 11
-end
-arch bear
-x 4
-y 14
-end
-arch behemoth
-x 4
-y 18
 end
