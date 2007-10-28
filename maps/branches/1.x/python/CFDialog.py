@@ -34,7 +34,7 @@
 # from CFDialog import DialogRule, Dialog
 # Then, you can go to the dialogs themselves. A dialog is made of
 # several rules. Each rule is made of keywords, preconditions,
-# postconditions, and answers.
+# postconditions, answers and pre/postfunction.
 # - Keywords are what the rule will be an answer to. For example, if
 #   you want a rule to be triggered when the player will say "hi",
 #   then "hi" is the keyword to use. You can associate more than a
@@ -59,6 +59,14 @@
 #   - Postconditions are the status changes to apply to the player's
 #   conditions after the rule has been triggered. Their format is similar to
 #   preconditions. A value of "*" means that the condition will not be touched.
+#   - A prefunction is an optional callback function that will be called
+#   when a rule's preconditions are all matched, but before the rule is validated.
+#   The callback can do additional tests, and should return 1 to allow the rule
+#   to be selected, 0 to block the rule. The function arguments are the player and
+#   the actual rule being tested.
+#   - A postfunction is an optional callback that is called when a rule has been applied,
+#   and after the message is said. It can do additional custom .processing. The
+#   function arguments are the player and the actual rule having been used.
 #
 # Once you have defined your rules, you have to assemble them into a dialog.
 # Each dialog involves somebody who triggers it, somebody who answers, and
@@ -112,11 +120,13 @@ import string
 import random
 
 class DialogRule:
-    def __init__(self,keyword,presemaphores, message, postsemaphores):
+    def __init__(self,keyword,presemaphores, message, postsemaphores, prefunction = None, postfunction = None):
         self.__keyword = keyword
         self.__presems = presemaphores
         self.__message = message
         self.__postsems= postsemaphores
+	self.__prefunction = prefunction
+	self.__postfunction = postfunction
     def getKeyword(self):
         return self.__keyword
     def getMessage(self):
@@ -128,6 +138,10 @@ class DialogRule:
         return self.__presems
     def getPostconditions(self):
         return self.__postsems
+    def getPrefunction(self):
+        return self.__prefunction
+    def getPostfunction(self):
+        return self.__postfunction
 
 class Dialog:
     def __init__(self,character,speaker,location):
@@ -161,6 +175,8 @@ class Dialog:
             if status!=condition[1]:
                 if condition[1]!="*":
                     return 0
+        if rule.getPrefunction() <> None:
+                return rule.getPrefunction()(self.__character, rule)
         return 1
 
     def setConditions(self,rule):
@@ -169,6 +185,8 @@ class Dialog:
             val = condition[1]
             if val!="*":
                 self.setStatus(key,val)
+        if rule.getPostfunction() <> None:
+                rule.getPostfunction()(self.__character, rule)
 
     def getStatus(self,key):
         character_status=self.__character.ReadKey("dialog_"+self.__location);
