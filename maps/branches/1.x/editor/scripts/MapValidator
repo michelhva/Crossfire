@@ -92,7 +92,7 @@ void checkMaps(File mapFile, String mapPath) {
     }
 }
 
-Writer logFile = logFilename == null ? null : new BufferedWriter(new FileWriter(logFilename));
+Writer logFile = logFilename.length() <= 0 ? null : new BufferedWriter(new FileWriter(logFilename));
 try {
     if (baseDirectory == null || baseDirectory.length() <= 0) {
         baseDirectory = "/";
