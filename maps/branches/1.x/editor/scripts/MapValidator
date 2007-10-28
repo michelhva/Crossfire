@@ -70,6 +70,10 @@ void checkMap(File mapFile, String mapPath) {
 
 void checkDirectory(File mapFile, String mapPath) {
     File[] files = mapFile.listFiles();
+    if (files == null) {
+        log("Cannot read directory " + mapFile);
+        return;
+    }
     for (File file : files) {
         String name = file.getName();
         if (!name.equals(".svn") && !name.equals("README")) {

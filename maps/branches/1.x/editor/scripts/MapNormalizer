@@ -22,6 +22,10 @@ void normalizeMap(File mapFile, String mapPath) {
 
 void normalizeDirectory(File mapFile, String mapPath) {
     File[] files = mapFile.listFiles();
+    if (files == null) {
+        print("Cannot read directory " + mapFile);
+        return;
+    }
     for (File file : files) {
         String name = file.getName();
         if (!name.equals(".svn") && !name.equals("README")) {
