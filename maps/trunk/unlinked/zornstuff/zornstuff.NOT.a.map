@@ -227,8 +227,8 @@ resist_paralyze 25
 resist_fear 100
 resist_blind 25
 randomitems guard_h
-run_away 5
 pick_up 24
+run_away 5
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -391,8 +391,8 @@ resist_paralyze 30
 resist_fear 100
 resist_blind 30
 carrying 28000
-run_away 5
 pick_up 24
+run_away 5
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
@@ -647,6 +647,198 @@ end
 arch random_reading
 end
 end
+arch baslic
+name Yang
+title unusual basilisk
+hp 12000
+maxhp 12000
+exp 400000
+dam 50
+wc -100
+ac -120
+x 8
+speed -0.5
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 0
+resist_electricity 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 95
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze 50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+randomitems scroll
+unaggressive 1
+can_use_skill 1
+arch skill_clawing
+can_use_skill 1
+end
+arch abil_fear
+level 60
+end
+arch abil_icestorm
+level 60
+end
+arch abil_large_icestorm
+level 60
+end
+arch abil_poison_cloud
+level 60
+end
+arch gem
+nrof 500
+end
+end
+arch baslic
+name Yin
+title unusual basilisk
+hp 12000
+maxhp 12000
+exp 400000
+dam 50
+wc -100
+ac -120
+x 8
+y 2
+speed -0.5
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 0
+resist_electricity 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 95
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze 50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+randomitems dragon_parts
+unaggressive 1
+can_use_skill 1
+arch skill_clawing
+can_use_skill 1
+end
+arch abil_fear
+level 60
+end
+arch abil_icestorm
+level 60
+end
+arch abil_large_icestorm
+level 60
+end
+arch abil_poison_cloud
+level 60
+end
+arch gem
+nrof 500
+end
+end
+arch giantrat
+name Ben
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 8
+y 4
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
+arch giantrat
+name Ratigan
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 8
+y 6
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
 arch merchant
 name Irritable Zorn
 title Scroll Maker
@@ -715,12 +907,12 @@ resist_blind 75
 path_attuned 607
 carrying 53700
 randomitems human_parts
+pick_up 1
 see_invisible 1
 hitback 1
 reflect_missile 1
 reflect_spell 1
 run_away 5
-pick_up 1
 sleep 1
 can_see_in_dark 1
 arch spell_large_icestorm
@@ -818,6 +1010,184 @@ end
 arch skill_two_handed_weapon
 end
 arch skill_one_handed_weapon
+end
+end
+arch unicorn
+name Zorn's pet
+Con 25
+Pow 5
+hp 2000
+maxhp 2000
+sp 250
+maxsp 500
+exp 5000
+dam 50
+wc -50
+ac -50
+x 10
+y 5
+speed 1.0
+level 150
+attacktype 1048849
+path_attuned 1060
+glow_radius 3
+hitback 1
+reflect_missile 1
+reflect_spell 1
+can_use_skill 1
+can_see_in_dark 1
+arch key2
+name Zorn's pet pelt
+name_pl Zorn's pet pelts
+slaying zorn_pet_pelt
+face sheepskin.111
+material 32
+end
+arch abil_large_icestorm
+end
+arch abil_icestorm
+end
+arch abil_fear
+end
+arch abil_slow
+end
+arch abil_frostbolt
+end
+arch spell_major_healing
+end
+arch spell_bullet_swarm
+end
+arch skill_evocation
+end
+arch skill_praying
+end
+arch skill_meditation
+end
+end
+arch cyclops
+name Orville
+title hyper cyclops
+dam 80
+wc -25
+ac -30
+x 11
+speed 0.5
+level 150
+resist_confusion 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_turn_undead 50
+resist_fear 50
+resist_deplete 50
+resist_death 50
+resist_blind 50
+can_see_in_dark 1
+end
+arch giantrat
+name Kinktail
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 11
+y 3
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
+end
+end
+arch cyclops
+name Wilbur
+title hyper cyclops
+dam 80
+wc -25
+ac -30
+x 13
+speed 0.5
+level 150
+resist_confusion 50
+resist_weaponmagic 50
+resist_ghosthit 50
+resist_turn_undead 50
+resist_fear 50
+resist_deplete 50
+resist_death 50
+resist_blind 50
+can_see_in_dark 1
+end
+arch giantrat
+name Horridbreath
+title Awful rat
+Con 50
+hp 6000
+maxhp 6000
+exp 900000
+dam 95
+wc -100
+ac -120
+x 13
+y 3
+speed -0.99
+level 120
+resist_physical 95
+resist_magic 95
+resist_fire 95
+resist_electricity 95
+resist_cold 95
+resist_confusion 95
+resist_acid 95
+resist_drain 95
+resist_weaponmagic 75
+resist_ghosthit 95
+resist_poison 100
+resist_slow 95
+resist_paralyze -50
+resist_turn_undead 95
+resist_deplete 95
+resist_death 95
+resist_chaos 95
+resist_godpower 95
+resist_holyword 95
+resist_blind 95
+randomitems none
+see_invisible 1
+reflect_missile 1
+run_away 10
+can_cast_spell 0
+can_see_in_dark 1
+arch gem
+nrof 750
 end
 end
 arch shadow
@@ -1018,8 +1388,8 @@ resist_holyword 90
 resist_blind 90
 path_attuned 4
 randomitems sorcery_book_high
-see_invisible 1
 pick_up 4
+see_invisible 1
 can_cast_spell 1
 arch dagger
 name Yolanda
@@ -1094,374 +1464,4 @@ value 275000
 item_power 2
 move_type fly_low
 damned 1
-end
-arch baslic
-name Yang
-title unusual basilisk
-hp 12000
-maxhp 12000
-exp 400000
-dam 50
-wc -100
-ac -120
-x 8
-speed -0.5
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 0
-resist_electricity 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 95
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze 50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-randomitems scroll
-unaggressive 1
-can_use_skill 1
-arch skill_clawing
-can_use_skill 1
-end
-arch abil_fear
-level 60
-end
-arch abil_icestorm
-level 60
-end
-arch abil_large_icestorm
-level 60
-end
-arch abil_poison_cloud
-level 60
-end
-arch gem
-nrof 500
-end
-end
-arch baslic
-name Yin
-title unusual basilisk
-hp 12000
-maxhp 12000
-exp 400000
-dam 50
-wc -100
-ac -120
-x 8
-y 2
-speed -0.5
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 0
-resist_electricity 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 95
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze 50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-randomitems dragon_parts
-unaggressive 1
-can_use_skill 1
-arch skill_clawing
-can_use_skill 1
-end
-arch abil_fear
-level 60
-end
-arch abil_icestorm
-level 60
-end
-arch abil_large_icestorm
-level 60
-end
-arch abil_poison_cloud
-level 60
-end
-arch gem
-nrof 500
-end
-end
-arch giantrat
-name Ben
-title Awful rat
-Con 50
-hp 6000
-maxhp 6000
-exp 900000
-dam 95
-wc -100
-ac -120
-x 8
-y 4
-speed -0.99
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 95
-resist_electricity 95
-resist_cold 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 75
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze -50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-resist_blind 95
-randomitems none
-see_invisible 1
-reflect_missile 1
-run_away 10
-can_cast_spell 0
-can_see_in_dark 1
-arch gem
-nrof 750
-end
-end
-arch giantrat
-name Ratigan
-title Awful rat
-Con 50
-hp 6000
-maxhp 6000
-exp 900000
-dam 95
-wc -100
-ac -120
-x 8
-y 6
-speed -0.99
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 95
-resist_electricity 95
-resist_cold 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 75
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze -50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-resist_blind 95
-see_invisible 1
-reflect_missile 1
-run_away 10
-can_cast_spell 0
-can_see_in_dark 1
-arch gem
-nrof 750
-end
-end
-arch unicorn
-name Zorn's pet
-Con 25
-Pow 5
-hp 2000
-maxhp 2000
-sp 250
-maxsp 500
-exp 5000
-dam 50
-wc -50
-ac -50
-x 10
-y 5
-speed 1.0
-level 150
-attacktype 1048849
-path_attuned 1060
-glow_radius 3
-hitback 1
-reflect_missile 1
-reflect_spell 1
-can_use_skill 1
-can_see_in_dark 1
-arch key2
-name Zorn's pet pelt
-name_pl Zorn's pet pelts
-slaying zorn_pet_pelt
-face sheepskin.111
-material 32
-end
-arch abil_large_icestorm
-end
-arch abil_icestorm
-end
-arch abil_fear
-end
-arch abil_slow
-end
-arch abil_frostbolt
-end
-arch spell_major_healing
-end
-arch spell_bullet_swarm
-end
-arch skill_evocation
-end
-arch skill_praying
-end
-arch skill_meditation
-end
-end
-arch cyclops
-name Orville
-title hyper cyclops
-dam 80
-wc -25
-ac -30
-x 11
-speed 0.5
-level 150
-resist_confusion 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_turn_undead 50
-resist_fear 50
-resist_deplete 50
-resist_death 50
-resist_blind 50
-can_see_in_dark 1
-end
-arch giantrat
-name Kinktail
-title Awful rat
-Con 50
-hp 6000
-maxhp 6000
-exp 900000
-dam 95
-wc -100
-ac -120
-x 11
-y 3
-speed -0.99
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 95
-resist_electricity 95
-resist_cold 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 75
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze -50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-resist_blind 95
-randomitems none
-see_invisible 1
-reflect_missile 1
-run_away 10
-can_cast_spell 0
-can_see_in_dark 1
-arch gem
-nrof 750
-end
-end
-arch cyclops
-name Wilbur
-title hyper cyclops
-dam 80
-wc -25
-ac -30
-x 13
-speed 0.5
-level 150
-resist_confusion 50
-resist_weaponmagic 50
-resist_ghosthit 50
-resist_turn_undead 50
-resist_fear 50
-resist_deplete 50
-resist_death 50
-resist_blind 50
-can_see_in_dark 1
-end
-arch giantrat
-name Horridbreath
-title Awful rat
-Con 50
-hp 6000
-maxhp 6000
-exp 900000
-dam 95
-wc -100
-ac -120
-x 13
-y 3
-speed -0.99
-level 120
-resist_physical 95
-resist_magic 95
-resist_fire 95
-resist_electricity 95
-resist_cold 95
-resist_confusion 95
-resist_acid 95
-resist_drain 95
-resist_weaponmagic 75
-resist_ghosthit 95
-resist_poison 100
-resist_slow 95
-resist_paralyze -50
-resist_turn_undead 95
-resist_deplete 95
-resist_death 95
-resist_chaos 95
-resist_godpower 95
-resist_holyword 95
-resist_blind 95
-randomitems none
-see_invisible 1
-reflect_missile 1
-run_away 10
-can_cast_spell 0
-can_see_in_dark 1
-arch gem
-nrof 750
-end
 end

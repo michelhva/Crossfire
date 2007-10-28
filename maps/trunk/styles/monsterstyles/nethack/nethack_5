@@ -1,12 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
-y 20
 end
 arch serp_man
 name Iguana
@@ -61,8 +61,8 @@ attacktype 1
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch wight
@@ -85,6 +85,16 @@ wc 8
 y 10
 generator 0
 end
+arch cobra
+name Black Naga Hatchling
+Wis 1
+hp 50
+exp 300
+dam 15
+y 11
+attacktype 1089
+unaggressive 1
+end
 arch holy_servant
 name rope golem
 hp 125
@@ -95,6 +105,11 @@ y 14
 resist_magic 0
 resist_fire -100
 end
+arch serpent
+name snake
+y 15
+attacktype 1025
+end
 arch zombie
 y 16
 end
@@ -104,6 +119,9 @@ hp 125
 maxhp 25
 exp 300
 y 17
+end
+arch unicorn
+y 18
 end
 arch mouse
 name wererat
@@ -156,8 +174,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch ghast
@@ -181,6 +199,16 @@ name fog cloud
 x 1
 y 10
 end
+arch cobra
+name Golden Naga Hatchling
+Wis 1
+hp 80
+exp 300
+dam 15
+x 1
+y 11
+unaggressive 1
+end
 arch elf
 name Woodland-elf
 Con 0
@@ -192,8 +220,8 @@ y 14
 speed 0.200000
 type 0
 attacktype 4192
-monster 1
 move_type walk
+monster 1
 unaggressive 1
 end
 arch generate_zombie
@@ -258,8 +286,8 @@ y 7
 speed 0.200000
 type 0
 attacktype 4192
-monster 1
 move_type walk
+monster 1
 undead 1
 end
 arch imp
@@ -283,14 +311,36 @@ name yellow light
 x 2
 y 10
 end
+arch cobra
+name Guardian Naga Hatchling
+Wis 1
+hp 150
+exp 300
+dam 15
+x 2
+y 11
+attacktype 1089
+unaggressive 1
+end
 arch bird
 name raven
 x 2
 y 14
 end
+arch serpent
+name water moccasin
+x 2
+y 15
+attacktype 1025
+end
 arch dog
 x 2
 y 16
+end
+arch unicorn
+name grey unicorn
+x 2
+y 17
 end
 arch air_elemental
 name dust vortex
@@ -416,6 +466,14 @@ x 4
 y 5
 generator 0
 end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 6
+attacktype 1029
+end
 arch orc
 name Mordor Orc
 hp 40
@@ -450,9 +508,9 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 undead 1
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -464,6 +522,11 @@ arch panther
 name jaguar
 x 4
 y 16
+end
+arch unicorn
+name black unicorn
+x 4
+y 17
 end
 arch orc
 name orc zombie
@@ -538,67 +601,4 @@ name cat
 hp 3
 x 5
 y 16
-end
-arch cobra
-name Black Naga Hatchling
-Wis 1
-hp 50
-exp 300
-dam 15
-y 11
-attacktype 1089
-unaggressive 1
-end
-arch serpent
-name snake
-y 15
-attacktype 1025
-end
-arch unicorn
-y 18
-end
-arch cobra
-name Golden Naga Hatchling
-Wis 1
-hp 80
-exp 300
-dam 15
-x 1
-y 11
-unaggressive 1
-end
-arch cobra
-name Guardian Naga Hatchling
-Wis 1
-hp 150
-exp 300
-dam 15
-x 2
-y 11
-attacktype 1089
-unaggressive 1
-end
-arch serpent
-name water moccasin
-x 2
-y 15
-attacktype 1025
-end
-arch unicorn
-name grey unicorn
-x 2
-y 17
-end
-arch cobra
-name Red Naga Hatchling
-exp 250
-dam 5
-x 4
-y 6
-attacktype 1029
-end
-arch unicorn
-name black unicorn
-x 4
-y 17
 end

@@ -1,33 +1,33 @@
 arch map
 name <untitled>
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 22 20:37:46 1998
 endmsg
-width 6
-height 20
 end
 arch elf_man
-level 8
 hp 300
 maxhp 300
 sp 15
 maxsp 15
+level 8
 arch spell_invisible
 end
 arch spell_summon_fog
 end
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 300
 maxhp 300
 sp 20
 maxsp 20
+exp 90
+dam 9
 y 1
+level 12
 arch spell_invisible
 end
 arch spell_wall_of_thorns
@@ -36,13 +36,13 @@ arch spell_summon_pet_monster
 end
 end
 arch elf_1
-level 10
-exp 300
 hp 300
 maxhp 300
 sp 15
 maxsp 15
+exp 300
 y 2
+level 10
 arch compositebow
 end
 arch arrow
@@ -56,6 +56,12 @@ y 6
 end
 arch wolf
 y 7
+end
+arch ent
+y 10
+end
+arch ent
+y 12
 end
 arch deathtree
 y 15
@@ -93,16 +99,20 @@ y 2
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 2
 y 4
 arch spell_curse
 end
+end
+arch giant
+x 2
+y 9
 end
 arch deathtree
 x 2
@@ -121,12 +131,12 @@ x 3
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 3
 y 4
 arch spell_curse
@@ -157,33 +167,48 @@ y 1
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 4
 y 2
 arch spell_curse
 end
+end
+arch serpent
+x 4
+y 9
 end
 arch small_troll
 x 4
 y 17
 end
+arch bear
+x 5
+end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 5
 y 2
 arch spell_curse
 end
+end
+arch bear
+x 5
+y 3
+end
+arch bear
+x 5
+y 5
 end
 arch sandy
 x 5
@@ -196,29 +221,4 @@ end
 arch small_troll
 x 5
 y 17
-end
-arch ent
-y 10
-end
-arch ent
-y 12
-end
-arch giant
-x 2
-y 9
-end
-arch serpent
-x 4
-y 9
-end
-arch bear
-x 5
-end
-arch bear
-x 5
-y 3
-end
-arch bear
-x 5
-y 5
 end

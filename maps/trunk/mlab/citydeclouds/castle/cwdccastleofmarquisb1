@@ -2753,6 +2753,10 @@ arch dirtfloor
 x 8
 y 30
 end
+arch troll
+x 8
+y 30
+end
 arch dirtfloor
 x 8
 y 31
@@ -3766,6 +3770,10 @@ arch dirtfloor
 x 11
 y 22
 end
+arch skree
+x 11
+y 22
+end
 arch dirtfloor
 x 11
 y 23
@@ -3783,6 +3791,10 @@ x 11
 y 26
 end
 arch dirtfloor
+x 11
+y 27
+end
+arch troll
 x 11
 y 27
 end
@@ -4273,6 +4285,10 @@ arch steppe
 x 12
 y 52
 end
+arch cobra
+x 12
+y 52
+end
 arch dirtfloor
 x 12
 y 53
@@ -4668,6 +4684,17 @@ arch blocked
 x 13
 y 61
 end
+arch skree
+name greater skree
+name_pl greater skree
+hp 6000
+maxhp 6000
+dam 45
+x 13
+y 62
+speed -0.800000
+level 70
+end
 arch blocked
 x 14
 end
@@ -4831,6 +4858,10 @@ arch dirtfloor
 x 14
 y 23
 end
+arch troll
+x 14
+y 23
+end
 arch dirtfloor
 x 14
 y 24
@@ -4955,6 +4986,10 @@ arch steppe
 x 14
 y 49
 end
+arch cobra
+x 14
+y 49
+end
 arch dirtfloor
 x 14
 y 50
@@ -4976,6 +5011,10 @@ x 14
 y 52
 end
 arch steppe
+x 14
+y 52
+end
+arch cobra
 x 14
 y 52
 end
@@ -5166,6 +5205,10 @@ arch dirtfloor
 x 15
 y 26
 end
+arch troll
+x 15
+y 26
+end
 arch dirtfloor
 x 15
 y 27
@@ -5303,6 +5346,10 @@ x 15
 y 50
 end
 arch steppe
+x 15
+y 50
+end
+arch cobra
 x 15
 y 50
 end
@@ -5704,6 +5751,10 @@ arch steppe
 x 16
 y 47
 end
+arch cobra
+x 16
+y 47
+end
 arch dirtfloor
 x 16
 y 48
@@ -5741,6 +5792,10 @@ x 16
 y 52
 end
 arch steppe
+x 16
+y 52
+end
+arch cobra
 x 16
 y 52
 end
@@ -6106,6 +6161,10 @@ arch steppe
 x 17
 y 48
 end
+arch cobra
+x 17
+y 48
+end
 arch dirtfloor
 x 17
 y 49
@@ -6127,6 +6186,10 @@ x 17
 y 51
 end
 arch steppe
+x 17
+y 51
+end
+arch cobra
 x 17
 y 51
 end
@@ -6502,6 +6565,10 @@ arch steppe
 x 18
 y 49
 end
+arch cobra
+x 18
+y 49
+end
 arch dirtfloor
 x 18
 y 50
@@ -6523,6 +6590,10 @@ x 18
 y 52
 end
 arch steppe
+x 18
+y 52
+end
+arch cobra
 x 18
 y 52
 end
@@ -12490,6 +12561,10 @@ arch dirtfloor
 x 35
 y 48
 end
+arch behemoth
+x 35
+y 48
+end
 arch dirtfloor
 x 35
 y 49
@@ -13046,6 +13121,10 @@ arch dirtfloor
 x 37
 y 22
 end
+arch giant
+x 37
+y 22
+end
 arch dirtfloor
 x 37
 y 23
@@ -13165,6 +13244,10 @@ x 37
 y 45
 end
 arch dirtfloor
+x 37
+y 46
+end
+arch behemoth
 x 37
 y 46
 end
@@ -13740,6 +13823,10 @@ arch dirtfloor
 x 39
 y 24
 end
+arch giant
+x 39
+y 24
+end
 arch dirtfloor
 x 39
 y 25
@@ -13851,6 +13938,10 @@ x 39
 y 47
 end
 arch dirtfloor
+x 39
+y 48
+end
+arch behemoth
 x 39
 y 48
 end
@@ -14933,6 +15024,10 @@ arch dirtfloor
 x 42
 y 46
 end
+arch behemoth
+x 42
+y 46
+end
 arch dirtfloor
 x 42
 y 47
@@ -15165,6 +15260,10 @@ x 43
 y 25
 end
 arch dirtfloor
+x 43
+y 26
+end
+arch giant
 x 43
 y 26
 end
@@ -16185,6 +16284,10 @@ arch dirtfloor
 x 46
 y 14
 end
+arch titan
+x 46
+y 14
+end
 arch dirtfloor
 x 46
 y 15
@@ -17450,6 +17553,10 @@ arch dirtfloor
 x 49
 y 45
 end
+arch dread
+x 49
+y 45
+end
 arch dirtfloor
 x 49
 y 46
@@ -17690,6 +17797,10 @@ x 50
 y 27
 end
 arch dirtfloor
+x 50
+y 28
+end
+arch Cwyvern
 x 50
 y 28
 end
@@ -17988,6 +18099,10 @@ arch dirtfloor
 x 51
 y 16
 end
+arch titan
+x 51
+y 16
+end
 arch dirtfloor
 x 51
 y 17
@@ -18029,6 +18144,10 @@ x 51
 y 23
 end
 arch dirtfloor
+x 51
+y 24
+end
+arch Cwyvern
 x 51
 y 24
 end
@@ -18141,6 +18260,10 @@ x 51
 y 44
 end
 arch dirtfloor
+x 51
+y 45
+end
+arch dread
 x 51
 y 45
 end
@@ -18782,6 +18905,10 @@ arch dirtfloor
 x 53
 y 45
 end
+arch dread
+x 53
+y 45
+end
 arch dirtfloor
 x 53
 y 46
@@ -19034,6 +19161,10 @@ x 54
 y 28
 end
 arch dirtfloor
+x 54
+y 29
+end
+arch Cwyvern
 x 54
 y 29
 end
@@ -19294,6 +19425,10 @@ arch dirtfloor
 x 55
 y 14
 end
+arch titan
+x 55
+y 14
+end
 arch dirtfloor
 x 55
 y 15
@@ -19458,11 +19593,19 @@ arch dirtfloor
 x 55
 y 45
 end
+arch dread
+x 55
+y 45
+end
 arch dirtfloor
 x 55
 y 46
 end
 arch dirtfloor
+x 55
+y 47
+end
+arch dread
 x 55
 y 47
 end
@@ -19474,6 +19617,10 @@ arch dirtfloor
 x 55
 y 49
 end
+arch dread
+x 55
+y 49
+end
 arch dirtfloor
 x 55
 y 50
@@ -19482,11 +19629,19 @@ arch dirtfloor
 x 55
 y 51
 end
+arch dread
+x 55
+y 51
+end
 arch dirtfloor
 x 55
 y 52
 end
 arch dirtfloor
+x 55
+y 53
+end
+arch dread
 x 55
 y 53
 end
@@ -22109,159 +22264,4 @@ end
 arch blocked
 x 63
 y 63
-end
-arch troll
-x 8
-y 30
-end
-arch skree
-x 11
-y 22
-end
-arch troll
-x 11
-y 27
-end
-arch cobra
-x 12
-y 52
-end
-arch skree
-name greater skree
-name_pl greater skree
-hp 6000
-maxhp 6000
-dam 45
-x 13
-y 62
-speed -0.800000
-level 70
-end
-arch troll
-x 14
-y 23
-end
-arch cobra
-x 14
-y 49
-end
-arch cobra
-x 14
-y 52
-end
-arch troll
-x 15
-y 26
-end
-arch cobra
-x 15
-y 50
-end
-arch cobra
-x 16
-y 47
-end
-arch cobra
-x 16
-y 52
-end
-arch cobra
-x 17
-y 48
-end
-arch cobra
-x 17
-y 51
-end
-arch cobra
-x 18
-y 49
-end
-arch cobra
-x 18
-y 52
-end
-arch behemoth
-x 35
-y 48
-end
-arch giant
-x 37
-y 22
-end
-arch behemoth
-x 37
-y 46
-end
-arch giant
-x 39
-y 24
-end
-arch behemoth
-x 39
-y 48
-end
-arch behemoth
-x 42
-y 46
-end
-arch giant
-x 43
-y 26
-end
-arch titan
-x 46
-y 14
-end
-arch dread
-x 49
-y 45
-end
-arch Cwyvern
-x 50
-y 28
-end
-arch titan
-x 51
-y 16
-end
-arch Cwyvern
-x 51
-y 24
-end
-arch dread
-x 51
-y 45
-end
-arch dread
-x 53
-y 45
-end
-arch Cwyvern
-x 54
-y 29
-end
-arch titan
-x 55
-y 14
-end
-arch dread
-x 55
-y 45
-end
-arch dread
-x 55
-y 47
-end
-arch dread
-x 55
-y 49
-end
-arch dread
-x 55
-y 51
-end
-arch dread
-x 55
-y 53
 end

@@ -1,11 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
 end
 arch snake
 name gecko
@@ -22,8 +23,8 @@ attacktype 1
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch dog
@@ -87,8 +88,8 @@ attacktype 1
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch wight
@@ -183,8 +184,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch ghast
@@ -276,8 +277,8 @@ y 11
 speed 0.200000
 type 0
 attacktype 4192
-monster 1
 move_type walk
+monster 1
 undead 1
 end
 arch imp
@@ -314,9 +315,9 @@ attacktype 4128
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 undead 1
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch imp
@@ -448,6 +449,15 @@ x 4
 y 9
 generator 0
 end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 10
+attacktype 1029
+unaggressive 1
+end
 arch orc
 name Mordor Orc
 hp 40
@@ -540,13 +550,4 @@ level 4
 randomitems rich
 can_cast_spell 1
 sleep 0
-end
-arch cobra
-name Red Naga Hatchling
-exp 250
-dam 5
-x 4
-y 10
-attacktype 1029
-unaggressive 1
 end

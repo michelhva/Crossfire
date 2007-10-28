@@ -1,12 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
-y 20
 end
 arch serp_man
 name Lizard
@@ -29,6 +29,22 @@ end
 arch scorpion
 y 3
 end
+arch mabu
+name succubus
+y 5
+attacktype 4097
+resist_electricity 0
+randomitems none
+end
+arch cobra
+name Red Naga
+hp 630
+exp 3000
+dam 15
+y 7
+attacktype 1029
+unaggressive 1
+end
 arch para_lava
 name pyrolisk
 y 9
@@ -47,6 +63,18 @@ exp 1700
 y 11
 level 6
 end
+arch minor_djinn
+name djinni
+Con 4
+Pow 3
+hp 1500
+sp 30
+maxsp 30
+exp 25000
+ac -5
+y 13
+level 9
+end
 arch holy_servant
 name wood golem
 hp 825
@@ -58,6 +86,17 @@ ac -2
 y 15
 resist_magic 0
 resist_fire -25
+end
+arch giant
+name ettin mummy
+hp 1550
+maxhp 1550
+exp 13500
+dam 35
+wc -3
+y 16
+attacktype 33
+undead 1
 end
 arch dog
 name warg
@@ -149,6 +188,20 @@ name energy vortex
 x 1
 y 11
 end
+arch minor_djinn
+name erinys
+Con 4
+Pow 3
+hp 1500
+sp 30
+maxsp 30
+exp 25000
+ac -5
+x 1
+y 13
+level 9
+attacktype 5
+end
 arch holy_servant
 name wood golem
 hp 825
@@ -173,6 +226,10 @@ x 1
 y 16
 level 15
 end
+arch troll
+x 1
+y 17
+end
 arch gnome
 name gnome king
 Con 1
@@ -189,8 +246,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -225,9 +282,38 @@ y 5
 resist_magic 0
 resist_fire -25
 end
+arch cobra
+name cobra
+x 2
+y 6
+end
+arch giant
+name ettin zombie
+hp 550
+maxhp 550
+exp 3500
+dam 35
+x 2
+y 8
+attacktype 33
+undead 1
+end
 arch gargolye
 x 2
 y 10
+end
+arch minor_djinn
+name marilith
+Con 4
+Pow 3
+hp 1500
+sp 30
+maxsp 30
+exp 25000
+ac -5
+x 2
+y 13
+level 9
 end
 arch holy_servant
 name wood golem
@@ -290,6 +376,13 @@ arch sandy
 name chameleon
 x 3
 y 5
+end
+arch cobra
+name python
+hp 600
+x 3
+y 6
+attacktype 1
 end
 arch acid_sphere
 name flaming sphere
@@ -359,6 +452,14 @@ x 3
 y 16
 level 15
 end
+arch troll
+name sasquatch
+hp 2000
+exp 16000
+x 3
+y 17
+resist_fire 0
+end
 arch dwarf
 name dwarf mummy
 hp 325
@@ -380,6 +481,15 @@ arch gnome
 name leprechaun
 x 4
 y 2
+end
+arch giant
+x 4
+y 5
+end
+arch cobra
+name pit viper
+x 4
+y 7
 end
 arch acid_sphere
 name freezing sphere
@@ -465,6 +575,13 @@ x 5
 y 2
 level 6
 end
+arch giant
+name stone giant
+hp 450
+exp 2500
+x 5
+y 5
+end
 arch wraith
 x 5
 y 7
@@ -522,121 +639,4 @@ x 5
 y 15
 resist_magic 0
 resist_fire -25
-end
-arch mabu
-name succubus
-y 5
-attacktype 4097
-resist_electricity 0
-randomitems none
-end
-arch cobra
-name Red Naga
-hp 630
-exp 3000
-dam 15
-y 7
-attacktype 1029
-unaggressive 1
-end
-arch minor_djinn
-name djinni
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-y 13
-level 9
-end
-arch giant
-name ettin mummy
-hp 1550
-maxhp 1550
-exp 13500
-dam 35
-wc -3
-y 16
-attacktype 33
-undead 1
-end
-arch minor_djinn
-name erinys
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 1
-y 13
-level 9
-attacktype 5
-end
-arch troll
-x 1
-y 17
-end
-arch cobra
-name cobra
-x 2
-y 6
-end
-arch giant
-name ettin zombie
-hp 550
-maxhp 550
-exp 3500
-dam 35
-x 2
-y 8
-attacktype 33
-undead 1
-end
-arch minor_djinn
-name marilith
-Con 4
-Pow 3
-hp 1500
-sp 30
-maxsp 30
-exp 25000
-ac -5
-x 2
-y 13
-level 9
-end
-arch cobra
-name python
-hp 600
-x 3
-y 6
-attacktype 1
-end
-arch troll
-name sasquatch
-hp 2000
-exp 16000
-x 3
-y 17
-resist_fire 0
-end
-arch giant
-x 4
-y 5
-end
-arch cobra
-name pit viper
-x 4
-y 7
-end
-arch giant
-name stone giant
-hp 450
-exp 2500
-x 5
-y 5
 end

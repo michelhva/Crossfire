@@ -1,29 +1,29 @@
 arch map
 name garden
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 19 20:36:16 1998
 endmsg
-width 6
-height 6
 end
 arch tree4
-blocksview 1
 move_block all
+blocksview 1
 end
 arch tree3
-blocksview 1
-move_block all
 x 1
+move_block all
+blocksview 1
 end
 arch tree5
-blocksview 1
-move_block all
 x 2
+move_block all
+blocksview 1
 end
 arch fernsdense
-blocksview 1
-move_block all
 x 4
+move_block all
+blocksview 1
 end
