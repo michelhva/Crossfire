@@ -17,7 +17,6 @@ void normalizeMap(File mapFile, String mapPath) {
         return;
     }
 
-    map.setModified();
     map.save();
 }
 
