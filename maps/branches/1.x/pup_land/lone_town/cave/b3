@@ -391,7 +391,6 @@ arch button_handle
 x 1
 y 23
 connected 11
-protected 11
 end
 arch dungeon_floor
 x 1
@@ -457,7 +456,6 @@ arch button_small
 x 1
 y 38
 connected 13
-protected 13
 end
 arch dungeon_floor
 x 1
@@ -609,7 +607,6 @@ arch ggate_closed
 x 2
 y 22
 connected 11
-protected 11
 end
 arch dungeon_floor
 x 2
@@ -763,7 +760,6 @@ sp 16
 x 3
 y 3
 connected 2
-protected 2
 end
 arch dungeon_floor
 x 3
@@ -1165,7 +1161,6 @@ x 4
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 4
@@ -1433,7 +1428,6 @@ x 5
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 5
@@ -1620,7 +1614,6 @@ arch button_lever
 x 6
 y 6
 connected 1
-protected 1
 end
 arch pstone_1
 x 6
@@ -1678,7 +1671,6 @@ arch ggate_closed
 x 6
 y 14
 connected 1234
-protected 1234
 end
 arch dungeon_floor
 x 6
@@ -1688,7 +1680,6 @@ arch button_lever
 x 6
 y 15
 connected 1234
-protected 1234
 end
 arch dungeon_floor
 x 6
@@ -1707,7 +1698,6 @@ x 6
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 6
@@ -1902,7 +1892,6 @@ arch grate_closed_2
 x 7
 y 9
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 7
@@ -1972,7 +1961,6 @@ x 7
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 7
@@ -2185,7 +2173,6 @@ arch grate_closed_2
 x 7
 y 37
 connected 14
-protected 14
 end
 arch dungeon_floor
 x 7
@@ -2342,7 +2329,6 @@ x 8
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 8
@@ -2444,7 +2430,6 @@ x 8
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 8
@@ -2458,7 +2443,6 @@ arch button_small
 x 8
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 8
@@ -2488,7 +2472,6 @@ arch button_lever
 x 8
 y 36
 connected 14
-protected 14
 end
 arch generate_dragon
 other_arch big_dragon_worthless
@@ -2500,7 +2483,7 @@ x 8
 y 36
 speed 0.000500
 level 100
-armour 100
+resist_physical 100
 end
 arch dungeon_floor
 x 8
@@ -2524,7 +2507,7 @@ x 8
 y 38
 speed 0.000500
 level 100
-armour 100
+resist_physical 100
 end
 arch dungeon_floor
 x 8
@@ -2685,7 +2668,6 @@ x 9
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 9
@@ -2787,7 +2769,6 @@ x 9
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 9
@@ -2801,7 +2782,6 @@ arch button_small
 x 9
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 9
@@ -2869,7 +2849,6 @@ arch button_plate
 x 10
 y 2
 connected 2
-protected 2
 end
 arch dungeon_floor
 x 10
@@ -3008,7 +2987,6 @@ x 10
 y 18
 speed 0.500000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 10
@@ -3110,7 +3088,6 @@ x 10
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 10
@@ -3124,7 +3101,6 @@ arch button_small
 x 10
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 10
@@ -3462,7 +3438,6 @@ x 11
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 11
@@ -3476,7 +3451,6 @@ arch button_small
 x 11
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 11
@@ -3652,7 +3626,6 @@ arch button_lever
 x 12
 y 18
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 12
@@ -3731,7 +3704,6 @@ x 12
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 12
@@ -3745,7 +3717,6 @@ arch button_small
 x 12
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 12
@@ -3951,7 +3922,6 @@ x 13
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 13
@@ -3961,7 +3931,6 @@ arch button_small
 x 13
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 13
@@ -4000,7 +3969,6 @@ y 1
 speed 0.500000
 value 1
 connected 13
-protected 13
 end
 arch boulder
 x 14
@@ -4155,7 +4123,6 @@ x 14
 y 32
 speed 0.500000
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 14
@@ -4165,7 +4132,6 @@ arch button_small
 x 14
 y 33
 connected 12
-protected 12
 end
 arch dungeon_floor
 x 14
@@ -4205,7 +4171,6 @@ arch button_plate
 x 15
 y 1
 connected 14
-protected 14
 end
 arch dungeon_floor
 x 15
@@ -4677,7 +4642,6 @@ arch button_lever
 x 16
 y 32
 connected 20
-protected 20
 end
 arch dungeon_floor
 x 16
@@ -4688,7 +4652,6 @@ x 16
 y 33
 speed 0.500000
 connected 20
-protected 20
 end
 arch dungeon_floor
 x 16
@@ -4698,7 +4661,6 @@ arch button_lever
 x 16
 y 34
 connected 20
-protected 20
 end
 arch rune_confusion
 Cha 32

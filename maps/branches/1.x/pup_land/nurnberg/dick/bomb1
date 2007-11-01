@@ -149,7 +149,6 @@ sp 29
 y 29
 speed 0.000000
 connected 10
-protected 10
 end
 arch scroll
 name scroll2
@@ -179,7 +178,6 @@ arch button_lever
 x 1
 y 8
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 1
@@ -261,7 +259,6 @@ arch button_lever
 x 1
 y 25
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 1
@@ -274,7 +271,6 @@ x 1
 y 26
 speed 0.000000
 connected 10
-protected 10
 end
 arch dungeon_floor
 x 1
@@ -430,7 +426,6 @@ x 2
 y 29
 weight 600
 connected 11
-protected 11
 end
 arch blocked
 x 2
@@ -746,7 +741,6 @@ name 15
 x 4
 y 29
 connected 15
-protected 15
 end
 arch blocked
 x 4
@@ -769,7 +763,6 @@ x 5
 y 1
 speed 0.000000
 connected 510
-protected 510
 end
 arch dungeon_floor
 x 5
@@ -936,7 +929,6 @@ y 29
 speed 0.500000
 value 1
 connected 14
-protected 14
 end
 arch boulder
 x 5
@@ -1101,7 +1093,6 @@ name 14
 x 6
 y 29
 connected 14
-protected 14
 end
 arch blocked
 x 6
@@ -1129,7 +1120,6 @@ arch button_lever
 x 7
 y 1
 connected 510
-protected 510
 end
 arch dungeon_floor
 x 7
@@ -1303,7 +1293,6 @@ y 29
 speed 0.500000
 value 1
 connected 13
-protected 13
 end
 arch boulder
 x 7
@@ -1574,7 +1563,6 @@ name 13
 x 8
 y 29
 connected 13
-protected 13
 end
 arch blocked
 x 8
@@ -1768,7 +1756,6 @@ y 29
 speed 0.500000
 value 1
 connected 12
-protected 12
 end
 arch boulder
 x 9
@@ -1943,7 +1930,6 @@ x 10
 y 18
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 10
@@ -2010,7 +1996,6 @@ name 12
 x 10
 y 29
 connected 12
-protected 12
 end
 arch blocked
 x 10
@@ -2209,7 +2194,6 @@ y 29
 speed 0.500000
 value 1
 connected 11
-protected 11
 end
 arch boulder
 x 11
@@ -2897,7 +2881,6 @@ sp 24
 x 15
 y 30
 connected 11
-protected 11
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3038,7 +3021,6 @@ arch button_lever
 x 16
 y 21
 connected 500
-protected 500
 end
 arch dungeon_floor
 x 16
@@ -3082,7 +3064,6 @@ sp 20
 x 16
 y 30
 connected 14
-protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3315,7 +3296,6 @@ sp 26
 x 17
 y 30
 connected 12
-protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3537,7 +3517,6 @@ sp 26
 x 18
 y 30
 connected 14
-protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3677,7 +3656,6 @@ x 19
 y 20
 speed 0.500000
 connected 500
-protected 500
 end
 arch dungeon_floor
 x 19
@@ -3732,7 +3710,6 @@ sp 24
 x 19
 y 30
 connected 12
-protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -3855,7 +3832,6 @@ arch button_lever
 x 20
 y 19
 connected 3
-protected 3
 end
 arch dungeon_floor
 x 20
@@ -3939,7 +3915,6 @@ sp 26
 x 20
 y 30
 connected 14
-protected 14
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4051,7 +4026,6 @@ x 21
 y 18
 speed 0.500000
 connected 3
-protected 3
 end
 arch dungeon_floor
 x 21
@@ -4119,7 +4093,6 @@ sp 19
 x 21
 y 30
 connected 12
-protected 12
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4295,7 +4268,6 @@ sp 24
 x 22
 y 30
 connected 15
-protected 15
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4452,7 +4424,6 @@ sp 10
 x 23
 y 28
 connected 13
-protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4645,7 +4616,6 @@ sp 25
 x 24
 y 28
 connected 15
-protected 15
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -4838,7 +4808,6 @@ sp 7
 x 25
 y 28
 connected 13
-protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -5196,7 +5165,6 @@ sp 7
 x 27
 y 28
 connected 13
-protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -5361,7 +5329,6 @@ sp 13
 x 28
 y 30
 connected 13
-protected 13
 end
 arch blocked
 x 28
@@ -5537,7 +5504,6 @@ sp 13
 x 29
 y 28
 connected 13
-protected 13
 end
 arch lbulletwall_1
 name bombbomb wall
@@ -5706,19 +5672,16 @@ arch button_small
 x 31
 y 1
 connected 1192
-protected 1192
 end
 arch button_small
 x 31
 y 2
 connected 1192
-protected 1192
 end
 arch button_small
 x 31
 y 3
 connected 1192
-protected 1192
 end
 arch blocked
 x 31
@@ -5908,14 +5871,12 @@ arch button_small
 x 32
 y 1
 connected 1193
-protected 1193
 end
 arch spikes_open
 x 32
 y 2
 speed 0.500000
 connected 500
-protected 500
 end
 arch boulder
 x 32
@@ -5925,7 +5886,6 @@ arch button_small
 x 32
 y 3
 connected 1192
-protected 1192
 end
 arch blocked
 x 32
@@ -6027,19 +5987,16 @@ arch button_small
 x 33
 y 1
 connected 1192
-protected 1192
 end
 arch button_small
 x 33
 y 2
 connected 1192
-protected 1192
 end
 arch button_small
 x 33
 y 3
 connected 1192
-protected 1192
 end
 arch blocked
 x 33
@@ -6052,7 +6009,6 @@ y 6
 speed 0.500000
 value 1
 connected 625
-protected 625
 end
 arch scroll
 x 33
@@ -6065,7 +6021,6 @@ x 33
 y 7
 speed 0.000000
 connected 510
-protected 510
 end
 arch blocked
 x 33
@@ -6076,7 +6031,6 @@ name 1199
 x 33
 y 9
 connected 1199
-protected 1199
 end
 arch blocked
 x 33
@@ -6090,7 +6044,6 @@ x 33
 y 11
 speed 0.000000
 connected 1193
-protected 1193
 end
 arch teleporter
 name magic_mouth
@@ -6102,7 +6055,6 @@ y 11
 speed 0.000000
 invisible 1
 connected 510
-protected 510
 end
 arch teleporter
 name 1192
@@ -6112,7 +6064,6 @@ x 33
 y 12
 speed 0.000000
 connected 1192
-protected 1192
 end
 arch teleporter
 name magic_mouth
@@ -6124,7 +6075,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1199
-protected 1199
 end
 arch blocked
 x 33
@@ -6135,7 +6085,6 @@ x 33
 y 14
 weight 1200
 connected 625
-protected 625
 end
 arch blocked
 x 33
@@ -6148,7 +6097,6 @@ x 33
 y 16
 speed 0.000000
 connected 510
-protected 510
 end
 arch scroll
 name scroll4

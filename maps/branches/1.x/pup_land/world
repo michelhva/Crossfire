@@ -5068,7 +5068,6 @@ x 26
 y 31
 weight 4000000
 connected 2
-protected 2
 end
 arch grass
 x 26
@@ -5272,7 +5271,6 @@ y 32
 value 1
 weight 4000000
 connected 1
-protected 1
 end
 arch grass
 x 27
@@ -8254,7 +8252,6 @@ sp 29
 x 44
 y 5
 connected 100
-protected 100
 end
 arch invis_exit
 slaying kurte/jungle
@@ -8274,7 +8271,6 @@ x 44
 y 7
 speed 0.500000
 connected 10
-protected 10
 end
 arch boulder
 x 44
@@ -8286,27 +8282,23 @@ y 8
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch gate_closed_1
 x 44
 y 9
 speed 0.500000
 connected 2
-protected 2
 end
 arch gate_open_1
 x 44
 y 10
 speed 0.500000
 connected 1
-protected 1
 end
 arch button_plate
 x 44
 y 11
 connected 100
-protected 100
 end
 arch blocked
 x 44
@@ -8318,7 +8310,6 @@ x 44
 y 13
 value 1
 connected 10
-protected 10
 end
 arch scroll
 x 44

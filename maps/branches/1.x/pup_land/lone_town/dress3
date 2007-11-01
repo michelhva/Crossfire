@@ -1767,7 +1767,6 @@ x 6
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 6
@@ -1782,7 +1781,6 @@ x 6
 y 28
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 6
@@ -1949,7 +1947,7 @@ arch wizard
 name Magician Leader
 msg
 @match *
-You came here to fight with my?
+You came here to fight with me?
 Haha, you wouldn't dare!
 endmsg
 face wizard_blue.171
@@ -2150,7 +2148,6 @@ x 7
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2172,7 +2169,6 @@ arch button_lever
 x 7
 y 28
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2188,7 +2184,6 @@ y 29
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2495,7 +2490,6 @@ x 8
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 8
@@ -2510,7 +2504,6 @@ x 8
 y 28
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 8

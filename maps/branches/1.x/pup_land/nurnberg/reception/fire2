@@ -527,7 +527,6 @@ x 5
 y 6
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 5
@@ -644,7 +643,6 @@ x 6
 y 5
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 6
@@ -655,7 +653,6 @@ x 6
 y 6
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 6
@@ -666,7 +663,6 @@ x 6
 y 7
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 6
@@ -759,7 +755,6 @@ x 7
 y 5
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 7
@@ -781,7 +776,6 @@ x 7
 y 7
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 7
@@ -878,7 +872,6 @@ x 8
 y 5
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 8
@@ -889,7 +882,6 @@ x 8
 y 6
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 8
@@ -900,7 +892,6 @@ x 8
 y 7
 speed 0.500000
 connected 2
-protected 2
 end
 arch woodfloor
 x 8
@@ -1494,7 +1485,6 @@ name button of fate
 x 14
 y 3
 connected 1
-protected 1
 end
 arch woodfloor
 x 14
@@ -1773,7 +1763,6 @@ x 17
 y 5
 speed 0.500000
 connected 1
-protected 1
 end
 arch boulder
 x 17
@@ -1785,14 +1774,12 @@ y 6
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch igate_open_1
 x 17
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch igate_closed_1
 x 17
@@ -1800,14 +1787,12 @@ y 8
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch igate_open_1
 x 17
 y 9
 speed 0.500000
 connected 1
-protected 1
 end
 arch igate_closed_1
 x 17
@@ -1815,14 +1800,12 @@ y 10
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch igate_open_1
 x 17
 y 11
 speed 0.500000
 connected 1
-protected 1
 end
 arch igate_closed_1
 x 17
@@ -1830,20 +1813,17 @@ y 12
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch igate_open_1
 x 17
 y 13
 speed 0.500000
 connected 1
-protected 1
 end
 arch button_plate
 x 17
 y 14
 connected 3
-protected 3
 end
 arch blocked
 x 17
@@ -1921,7 +1901,6 @@ sp 4
 x 19
 y 1
 connected 3
-protected 3
 end
 arch key2
 name slasher key
@@ -1953,7 +1932,6 @@ x 19
 y 5
 speed 0.500000
 connected 1
-protected 1
 end
 arch boulder
 x 19
@@ -1966,13 +1944,11 @@ endmsg
 x 19
 y 6
 connected 101
-protected 101
 end
 arch button_small
 x 19
 y 6
 connected 101
-protected 101
 end
 arch igate_closed_1
 x 19
@@ -1980,7 +1956,6 @@ y 6
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -1989,20 +1964,17 @@ endmsg
 x 19
 y 7
 connected 102
-protected 102
 end
 arch button_small
 x 19
 y 7
 connected 102
-protected 102
 end
 arch igate_open_1
 x 19
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -2011,13 +1983,11 @@ endmsg
 x 19
 y 8
 connected 103
-protected 103
 end
 arch button_small
 x 19
 y 8
 connected 103
-protected 103
 end
 arch igate_closed_1
 x 19
@@ -2025,7 +1995,6 @@ y 8
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -2034,20 +2003,17 @@ endmsg
 x 19
 y 9
 connected 104
-protected 104
 end
 arch button_small
 x 19
 y 9
 connected 104
-protected 104
 end
 arch igate_open_1
 x 19
 y 9
 speed 0.500000
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -2056,13 +2022,11 @@ endmsg
 x 19
 y 10
 connected 2
-protected 2
 end
 arch button_plate
 x 19
 y 10
 connected 2
-protected 2
 end
 arch blocked
 x 19

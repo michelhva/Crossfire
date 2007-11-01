@@ -1523,7 +1523,6 @@ endmsg
 x 13
 y 2
 connected 100
-protected 100
 end
 arch woodfloor
 name evergreen
@@ -1656,7 +1655,6 @@ x 13
 y 15
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 13
@@ -1954,7 +1952,6 @@ slaying platinacoin
 x 15
 y 14
 connected 10
-protected 10
 end
 arch cobblestones2
 x 15
@@ -2089,7 +2086,6 @@ food 5
 x 16
 y 14
 connected 20
-protected 20
 end
 arch cobblestones2
 x 16
@@ -2206,7 +2202,6 @@ food 1
 x 17
 y 14
 connected 30
-protected 30
 end
 arch cobblestones2
 x 17
@@ -2426,7 +2421,6 @@ x 19
 y 8
 speed 0.500000
 connected 2
-protected 2
 end
 arch cobblestones2
 x 19
@@ -2596,7 +2590,6 @@ x 20
 y 16
 speed 0.500000
 connected 3
-protected 3
 end
 arch woodfloor
 x 20
@@ -4031,7 +4024,6 @@ name 1
 x 33
 y 1
 connected 1
-protected 1
 end
 arch creator
 name 10
@@ -4039,7 +4031,6 @@ other_arch boulder
 x 33
 y 1
 connected 10
-protected 10
 end
 arch blocked
 x 33
@@ -4050,7 +4041,6 @@ name 2
 x 33
 y 3
 connected 2
-protected 2
 end
 arch creator
 name 20
@@ -4058,7 +4048,6 @@ other_arch boulder
 x 33
 y 3
 connected 20
-protected 20
 end
 arch blocked
 x 33
@@ -4069,7 +4058,6 @@ name 3
 x 33
 y 5
 connected 3
-protected 3
 end
 arch creator
 name 30
@@ -4077,7 +4065,6 @@ other_arch boulder
 x 33
 y 5
 connected 30
-protected 30
 end
 arch blocked
 x 33
