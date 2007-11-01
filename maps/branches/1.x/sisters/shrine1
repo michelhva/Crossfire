@@ -1331,10 +1331,10 @@ y 3
 speed -0.300000
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -1440,10 +1440,10 @@ y 16
 speed -0.300000
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -4114,10 +4114,10 @@ y 2
 speed -0.300000
 level 20
 attacktype 16
+resist_magic 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear
@@ -4207,10 +4207,10 @@ y 17
 speed -0.300000
 level 20
 attacktype 16
+resist_fire 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
-immune 2
 arch abil_icestorm
 end
 arch abil_fear

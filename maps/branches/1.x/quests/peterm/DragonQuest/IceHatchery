@@ -409,7 +409,8 @@ other_arch cold_dragon
 x 2
 y 15
 speed 0.004000
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 2
@@ -666,7 +667,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 3
 y 22
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 3
@@ -1043,7 +1045,8 @@ other_arch cold_dragon
 x 5
 y 27
 speed 0.004000
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_1
 x 5
@@ -1365,7 +1368,8 @@ other_arch cold_dragon
 x 7
 y 20
 speed 0.004000
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 7
@@ -1663,7 +1667,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 9
 y 13
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 9
@@ -2022,7 +2027,8 @@ other_arch cold_dragon
 x 12
 y 17
 speed 0.004000
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 12
@@ -2157,7 +2163,8 @@ arch generate_dragon
 other_arch chinese_dragon
 x 13
 y 23
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 13
@@ -2172,7 +2179,8 @@ other_arch cold_dragon
 x 13
 y 25
 speed 0.004000
-immune 4
+resist_fire 0
+resist_cold 100
 end
 arch pstone_2
 x 13
