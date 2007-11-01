@@ -720,7 +720,6 @@ x 5
 y 14
 speed 0.500000
 connected 1
-protected 1
 end
 arch afloor_right
 x 5
@@ -1611,7 +1610,6 @@ x 9
 y 33
 speed 0.500000
 connected 2
-protected 2
 end
 arch afloor_right
 x 9
@@ -1714,7 +1712,6 @@ arch pedestal
 x 10
 y 12
 connected 110
-protected 110
 end
 arch blocked
 x 10
@@ -2437,7 +2434,6 @@ x 13
 y 20
 invisible 1
 connected 330
-protected 330
 end
 arch blocked
 x 13
@@ -2928,12 +2924,10 @@ end
 arch button_lever
 x 16
 connected 1
-protected 1
 end
 arch button_lever
 x 16
 connected 10
-protected 10
 end
 arch button_lever
 x 16
@@ -2951,13 +2945,11 @@ arch button_lever
 x 16
 y 1
 connected 2
-protected 2
 end
 arch button_lever
 x 16
 y 1
 connected 20
-protected 20
 end
 arch button_lever
 x 16
@@ -2976,13 +2968,11 @@ arch button_lever
 x 16
 y 2
 connected 3
-protected 3
 end
 arch button_lever
 x 16
 y 2
 connected 30
-protected 30
 end
 arch button_lever
 x 16
@@ -3801,7 +3791,6 @@ x 19
 y 14
 invisible 1
 connected 220
-protected 220
 end
 arch blocked
 x 19
@@ -4495,7 +4484,6 @@ x 23
 y 23
 speed 0.500000
 connected 3
-protected 3
 end
 arch afloor_right
 x 23

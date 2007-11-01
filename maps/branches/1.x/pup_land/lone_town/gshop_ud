@@ -1518,10 +1518,17 @@ maxhp 100
 ac 30
 x 14
 y 11
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pass 0
 tear_down 1
-immune 254
 end
 arch dungeon_floor
 x 14

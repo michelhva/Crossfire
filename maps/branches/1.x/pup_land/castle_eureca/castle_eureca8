@@ -407,7 +407,6 @@ arch trigger
 x 3
 y 7
 connected 1
-protected 1
 end
 arch flagstone
 x 3
@@ -417,7 +416,6 @@ arch gateTrg1
 x 3
 y 8
 connected 1
-protected 1
 end
 arch flagstone
 x 3
@@ -427,7 +425,6 @@ arch trigger
 x 3
 y 9
 connected 1
-protected 1
 end
 arch flagstone
 x 3
@@ -1355,7 +1352,6 @@ name trigger for director
 x 10
 y 5
 connected 2
-protected 2
 end
 arch flagstone
 x 10
@@ -1409,7 +1405,6 @@ arch ggate_open
 x 10
 y 10
 connected 3
-protected 3
 end
 arch dungeon_magic
 x 10
@@ -1540,7 +1535,6 @@ speed_left -3.990000
 state 2
 connected 1
 is_animated 1
-protected 1
 end
 arch flagstone
 x 11
@@ -1708,7 +1702,6 @@ x 12
 y 7
 state 1
 connected 2
-protected 2
 end
 arch flagstone
 x 12
@@ -1718,7 +1711,6 @@ arch button_small
 x 12
 y 8
 connected 3
-protected 3
 end
 arch flagstone
 x 12
@@ -1893,7 +1885,6 @@ arch button_small
 x 13
 y 11
 connected 5
-protected 5
 end
 arch dungeon_magic
 x 13
@@ -2323,7 +2314,6 @@ name 100
 x 17
 y 1
 connected 100
-protected 100
 end
 arch teleporter
 name move booze on button 5 at startup
@@ -2335,7 +2325,7 @@ end
 arch booze
 x 17
 y 2
-immune 4
+resist_fire 100
 end
 arch blocked
 x 17
@@ -2347,7 +2337,6 @@ x 17
 y 4
 speed 0.500000
 connected 100
-protected 100
 end
 arch boulder
 x 17
@@ -2359,14 +2348,12 @@ x 17
 y 5
 speed 0.500000
 connected 5
-protected 5
 end
 arch button_plate
 name 6 : pushed if booze are removed from bt5
 x 17
 y 6
 connected 6
-protected 6
 end
 arch blocked
 x 17
@@ -2380,7 +2367,6 @@ x 17
 y 8
 speed 0.000000
 connected 6
-protected 6
 end
 arch boulder
 x 17
@@ -2421,7 +2407,6 @@ endmsg
 x 17
 y 13
 connected 1
-protected 1
 end
 arch blocked
 x 17

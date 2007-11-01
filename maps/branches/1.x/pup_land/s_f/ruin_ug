@@ -1170,7 +1170,6 @@ food 1
 x 10
 y 6
 connected 4
-protected 4
 end
 arch pstone_1
 x 10
@@ -1382,7 +1381,6 @@ food 1
 x 12
 y 4
 connected 3
-protected 3
 end
 arch pstone_1
 x 12
@@ -1406,7 +1404,6 @@ food 1
 x 12
 y 6
 connected 5
-protected 5
 end
 arch pstone_1
 x 12
@@ -1430,7 +1427,6 @@ food 1
 x 12
 y 8
 connected 7
-protected 7
 end
 arch pstone_1
 x 12
@@ -1667,7 +1663,6 @@ food 1
 x 14
 y 6
 connected 6
-protected 6
 end
 arch pstone_1
 x 14
@@ -1828,7 +1823,6 @@ arch grate_closed_2
 x 15
 y 10
 connected 2
-protected 2
 end
 arch pstone_3
 x 15
@@ -1954,7 +1948,6 @@ y 1
 speed 0.500000
 value 1
 connected 3
-protected 3
 end
 arch food
 x 17
@@ -1966,7 +1959,6 @@ y 2
 speed 0.500000
 value 1
 connected 4
-protected 4
 end
 arch igate_open_1
 x 17
@@ -1974,7 +1966,6 @@ y 3
 speed 0.500000
 value 1
 connected 5
-protected 5
 end
 arch igate_open_1
 x 17
@@ -1982,7 +1973,6 @@ y 4
 speed 0.500000
 value 1
 connected 6
-protected 6
 end
 arch igate_open_1
 x 17
@@ -1990,13 +1980,11 @@ y 5
 speed 0.500000
 value 1
 connected 7
-protected 7
 end
 arch button_small
 x 17
 y 6
 connected 2
-protected 2
 end
 arch blocked
 x 17
@@ -2030,7 +2018,6 @@ arch button_lever
 x 17
 y 10
 connected 2
-protected 2
 end
 arch pstone_2
 x 17

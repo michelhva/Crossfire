@@ -347,7 +347,6 @@ arch button_lever
 x 3
 y 7
 connected 1
-protected 1
 end
 arch elf
 name Chief
@@ -686,7 +685,6 @@ x 7
 y 4
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 7
@@ -753,7 +751,6 @@ x 7
 y 13
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 7
@@ -1081,7 +1078,6 @@ x 10
 y 5
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 10
@@ -1134,10 +1130,16 @@ ac 30
 x 10
 y 11
 speed 0.500000
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_drain 100
+move_block 0
 alive 1
 no_pass 0
 tear_down 1
-immune 254
 end
 arch dungeon_floor
 x 10

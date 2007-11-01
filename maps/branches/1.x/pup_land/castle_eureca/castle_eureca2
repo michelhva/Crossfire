@@ -348,13 +348,15 @@ name white dragon scale mail
 ac 5
 x 2
 y 1
+resist_physical 45
+resist_fire 100
+resist_cold 100
 value 100000
 weight 5000
 magic -3
 no_pick 1
 identified 0
 cursed 1
-armour 20
 end
 arch dungeon_floor
 x 2
@@ -557,12 +559,12 @@ wc 7
 x 3
 y 1
 level 20
+resist_magic 30
 material 256
 value 15
 weight 50
 magic 4
 no_pick 1
-protected 2
 end
 arch dungeon_floor
 x 3
@@ -702,9 +704,9 @@ arch cloak
 name cloak of magic resistance
 x 4
 y 1
+resist_magic 100
 value 40000
 no_pick 1
-immune 2
 end
 arch dungeon_floor
 x 4
@@ -896,12 +898,13 @@ Str 1
 ac 1
 x 5
 y 1
+resist_physical 13
+resist_fire 30
 value 150
 weight 200
 magic 4
 last_sp 5
 no_pick 1
-armour 4
 end
 arch dungeon_floor
 x 5
@@ -1069,10 +1072,10 @@ name Broadsword of Theodin
 x 6
 y 1
 type 33
+resist_fire 30
 value 80
 magic 2
 no_pick 1
-protected 4
 end
 arch dungeon_floor
 x 6

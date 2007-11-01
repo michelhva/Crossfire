@@ -538,7 +538,6 @@ x 5
 y 13
 weight 1000
 connected 2
-protected 2
 end
 arch creator
 name 1
@@ -546,7 +545,6 @@ other_arch boulder
 x 5
 y 13
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 6
@@ -683,7 +681,6 @@ endmsg
 x 7
 y 6
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 7
@@ -697,7 +694,6 @@ sp 13
 x 7
 y 6
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7

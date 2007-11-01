@@ -136,7 +136,6 @@ arch stwall_closed_1
 x 1
 y 3
 connected 2
-protected 2
 end
 arch woodfloor
 x 1
@@ -150,7 +149,6 @@ food 5000
 x 1
 y 4
 connected 2
-protected 2
 end
 arch woodfloor
 x 1
@@ -224,7 +222,6 @@ endmsg
 x 1
 y 14
 connected 5
-protected 5
 end
 arch button_small
 name 5
@@ -232,7 +229,6 @@ x 1
 y 14
 weight 1000000
 connected 5
-protected 5
 end
 arch creator
 name 4
@@ -240,7 +236,6 @@ other_arch boulder
 x 1
 y 14
 connected 4
-protected 4
 end
 arch blocked
 x 2
@@ -656,14 +651,12 @@ food 1000
 x 6
 y 3
 connected 1
-protected 1
 end
 arch check_inv
 slaying scolar of kurte
 x 6
 y 4
 connected 4
-protected 4
 end
 arch woodfloor
 x 6
@@ -675,7 +668,6 @@ x 6
 y 4
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 6
@@ -741,7 +733,6 @@ arch stwall_closed_1
 x 6
 y 13
 connected 5
-protected 5
 end
 arch blocked
 x 6
@@ -1151,7 +1142,6 @@ arch stwall_closed_1
 x 11
 y 3
 connected 3
-protected 3
 end
 arch woodfloor
 x 11
@@ -1165,7 +1155,6 @@ food 5000
 x 11
 y 4
 connected 3
-protected 3
 end
 arch woodfloor
 x 11

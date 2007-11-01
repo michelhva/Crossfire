@@ -1298,7 +1298,6 @@ slaying regular_army
 x 13
 y 6
 connected 1
-protected 1
 end
 arch cobblestones2
 x 13
@@ -1309,7 +1308,6 @@ slaying regular_army
 x 13
 y 7
 connected 1
-protected 1
 end
 arch cobblestones2
 x 13
@@ -1320,7 +1318,6 @@ slaying regular_army
 x 13
 y 8
 connected 1
-protected 1
 end
 arch cobblestones2
 x 13
@@ -1397,7 +1394,6 @@ endmsg
 x 14
 y 4
 connected 2
-protected 2
 end
 arch cobblestones2
 x 14
@@ -1441,7 +1437,6 @@ x 14
 y 6
 speed 0.500000
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 14
@@ -1456,7 +1451,6 @@ x 14
 y 7
 speed 0.500000
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 14
@@ -1471,7 +1465,6 @@ x 14
 y 8
 speed 0.500000
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 14
@@ -1493,7 +1486,6 @@ endmsg
 x 14
 y 10
 connected 3
-protected 3
 end
 arch cobblestones2
 x 14
@@ -1609,7 +1601,6 @@ slaying regular_army
 x 15
 y 6
 connected 1
-protected 1
 end
 arch cobblestones2
 x 15
@@ -1620,7 +1611,6 @@ slaying regular_army
 x 15
 y 7
 connected 1
-protected 1
 end
 arch cobblestones2
 x 15
@@ -1631,7 +1621,6 @@ slaying regular_army
 x 15
 y 8
 connected 1
-protected 1
 end
 arch cobblestones2
 x 15
@@ -3193,7 +3182,6 @@ x 33
 y 1
 weight 100000
 connected 2
-protected 2
 end
 arch igateTrg1
 name 1 - trigger
@@ -3202,7 +3190,6 @@ wc 0
 x 33
 y 1
 connected 1
-protected 1
 end
 arch igate_open_1
 name 1
@@ -3211,7 +3198,6 @@ y 2
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch t_boulder
 x 33
@@ -3264,7 +3250,6 @@ x 33
 y 13
 weight 1000
 connected 3
-protected 3
 end
 arch block_door_closed
 name 1
@@ -3272,7 +3257,6 @@ x 33
 y 13
 speed 0.500000
 connected 1
-protected 1
 end
 arch block_door_open
 name 1
@@ -3281,7 +3265,6 @@ y 14
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch t_boulder
 x 33

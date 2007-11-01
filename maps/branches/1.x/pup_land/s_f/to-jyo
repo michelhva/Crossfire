@@ -315,9 +315,29 @@ endmsg
 hp 500
 x 3
 y 3
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 friendly 1
 unaggressive 0
-immune 8388607
 end
 arch pstone_1
 x 3
@@ -769,7 +789,6 @@ x 8
 y 8
 speed 0.500000
 connected 6
-protected 6
 end
 arch pstone_1
 x 8
@@ -877,7 +896,6 @@ endmsg
 x 9
 y 8
 connected 6
-protected 6
 end
 arch pstone_1
 x 9
@@ -1498,7 +1516,6 @@ x 18
 y 14
 weight 10000
 connected 2
-protected 2
 end
 arch creator
 name 1
@@ -1506,7 +1523,6 @@ other_arch boulder
 x 18
 y 14
 connected 1
-protected 1
 end
 arch blocked
 x 19
@@ -1602,7 +1618,6 @@ x 19
 y 14
 speed 0.000000
 connected 3
-protected 3
 end
 arch chair_1.1
 x 19
@@ -1726,9 +1741,9 @@ endmsg
 ac 1
 x 21
 y 3
+resist_physical 1
 value 1
 identified 1
-armour 1
 end
 arch flagstone
 x 21
@@ -1795,7 +1810,6 @@ y 14
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch food
 x 21
@@ -1840,9 +1854,9 @@ endmsg
 ac 0
 x 22
 y 3
+resist_physical 0
 value 1
 identified 1
-armour 0
 end
 arch flagstone
 x 22
@@ -1898,7 +1912,6 @@ food 1
 x 22
 y 14
 connected 4
-protected 4
 end
 arch blocked
 x 23
@@ -2069,7 +2082,6 @@ name 3 - chair
 x 24
 y 14
 connected 3
-protected 3
 end
 arch blocked
 x 25
@@ -2233,7 +2245,6 @@ x 26
 y 14
 speed 0.000000
 connected 4
-protected 4
 end
 arch sage
 name To-jyo
@@ -2251,11 +2262,31 @@ sp 0
 maxsp 0
 x 26
 y 14
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 monster 0
 unaggressive 0
 can_cast_spell 0
 can_use_skill 0
-immune 8388607
 end
 arch blocked
 x 27
@@ -2600,7 +2631,6 @@ endmsg
 x 30
 y 7
 connected 1
-protected 1
 end
 arch woodfloor
 x 30

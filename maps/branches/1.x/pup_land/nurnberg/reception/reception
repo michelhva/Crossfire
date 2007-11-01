@@ -1126,7 +1126,6 @@ arch button_lever
 x 5
 y 4
 connected 41
-protected 41
 end
 arch xan
 name Maraial Mosquito
@@ -2332,7 +2331,6 @@ arch ggate_closed
 x 10
 y 21
 connected 10
-protected 10
 end
 arch woodfloor
 x 10
@@ -2674,7 +2672,6 @@ x 12
 y 5
 speed 0.500000
 connected 41
-protected 41
 end
 arch dungeon_floor
 x 12
@@ -2836,7 +2833,6 @@ arch button_lever
 x 12
 y 29
 connected 10
-protected 10
 end
 arch guard_ant
 name fire ant
@@ -3012,7 +3008,6 @@ arch button_small
 x 13
 y 19
 connected 4
-protected 4
 end
 arch woodfloor
 x 13
@@ -3253,7 +3248,6 @@ x 14
 y 19
 speed 0.500000
 connected 4
-protected 4
 end
 arch woodfloor
 x 14
@@ -3420,7 +3414,6 @@ arch button_small
 x 15
 y 13
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 15
@@ -3435,7 +3428,6 @@ x 15
 y 14
 speed 0.500000
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -3448,7 +3440,6 @@ arch button_small
 x 15
 y 15
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 15
@@ -3463,7 +3454,6 @@ x 15
 y 16
 speed 0.500000
 connected 6
-protected 6
 end
 arch cobblestones2
 x 15
@@ -3478,7 +3468,6 @@ x 15
 y 18
 speed 0.500000
 connected 8
-protected 8
 end
 arch magic_mouth
 msg
@@ -3491,7 +3480,6 @@ arch button_small
 x 15
 y 19
 connected 4
-protected 4
 end
 arch woodfloor
 x 15
@@ -4441,7 +4429,6 @@ arch button_small
 x 19
 y 13
 connected 2
-protected 2
 end
 arch flagstone
 x 19
@@ -4456,7 +4443,6 @@ x 19
 y 14
 speed 0.500000
 connected 2
-protected 2
 end
 arch magic_mouth
 msg
@@ -4469,7 +4455,6 @@ arch button_small
 x 19
 y 15
 connected 2
-protected 2
 end
 arch flagstone
 x 19
@@ -4484,7 +4469,6 @@ x 19
 y 16
 speed 0.500000
 connected 7
-protected 7
 end
 arch cobblestones2
 x 19
@@ -4499,7 +4483,6 @@ x 19
 y 18
 speed 0.500000
 connected 9
-protected 9
 end
 arch magic_mouth
 msg
@@ -4512,7 +4495,6 @@ arch button_small
 x 19
 y 19
 connected 3
-protected 3
 end
 arch marble
 x 19
@@ -4732,7 +4714,6 @@ x 20
 y 19
 speed 0.500000
 connected 3
-protected 3
 end
 arch marble
 x 20
@@ -4826,7 +4807,6 @@ x 20
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 20
@@ -4963,7 +4943,6 @@ arch button_small
 x 21
 y 19
 connected 3
-protected 3
 end
 arch marble
 x 21
@@ -5666,7 +5645,6 @@ x 24
 y 29
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5678,7 +5656,6 @@ x 24
 y 30
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5690,7 +5667,6 @@ x 24
 y 31
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5701,7 +5677,6 @@ x 24
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5845,7 +5820,6 @@ arch button_lever
 x 25
 y 23
 connected 20
-protected 20
 end
 arch snake
 name Electric eel
@@ -5862,8 +5836,8 @@ speed 0.500000
 speed_left -2.500000
 level 8
 attacktype 8
+resist_electricity 100
 unaggressive 1
-immune 8
 end
 arch marble
 x 25
@@ -6491,7 +6465,6 @@ x 28
 y 29
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6503,7 +6476,6 @@ x 28
 y 30
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6515,7 +6487,6 @@ x 28
 y 31
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6526,7 +6497,6 @@ x 28
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6615,7 +6585,6 @@ arch button_lever
 x 29
 y 9
 connected 50
-protected 50
 end
 arch stalker
 name Sylph
@@ -7216,7 +7185,6 @@ arch ggate_closed
 x 32
 y 3
 connected 50
-protected 50
 end
 arch flagstone
 x 32
@@ -8179,7 +8147,6 @@ x 37
 y 27
 speed 0.000000
 connected 321
-protected 321
 end
 arch woman
 msg

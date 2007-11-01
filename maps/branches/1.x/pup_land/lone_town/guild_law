@@ -236,12 +236,32 @@ sp 0
 maxsp 0
 x 2
 y 7
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-immune 8388607
 end
 arch afloor_right
 x 2
@@ -371,7 +391,6 @@ x 3
 y 11
 weight 1000
 connected 1
-protected 1
 end
 arch pstone_1
 x 3
@@ -444,7 +463,6 @@ endmsg
 x 4
 y 4
 connected 2
-protected 2
 end
 arch magic_ear
 name 1
@@ -455,7 +473,6 @@ endmsg
 x 4
 y 4
 connected 1
-protected 1
 end
 arch afloor_right
 x 4
@@ -524,7 +541,6 @@ x 4
 y 11
 speed 0.500000
 connected 5
-protected 5
 end
 arch afloor_right
 x 4
@@ -1134,7 +1150,6 @@ y 5
 speed 0.500000
 value 1
 connected 100
-protected 100
 end
 arch afloor_right
 x 11
@@ -1169,7 +1184,6 @@ x 11
 y 10
 speed 0.500000
 connected 100
-protected 100
 end
 arch afloor_right
 x 11
@@ -1237,7 +1251,6 @@ endmsg
 x 12
 y 5
 connected 100
-protected 100
 end
 arch afloor_right
 x 12
@@ -1283,7 +1296,6 @@ endmsg
 x 12
 y 10
 connected 100
-protected 100
 end
 arch afloor_right
 x 12
@@ -1356,7 +1368,6 @@ x 13
 y 5
 speed 0.500000
 connected 100
-protected 100
 end
 arch afloor_right
 x 13
@@ -1392,7 +1403,6 @@ y 10
 speed 0.500000
 value 1
 connected 100
-protected 100
 end
 arch afloor_right
 x 13
@@ -1940,7 +1950,6 @@ sp 7
 x 19
 speed 0.000000
 connected 4
-protected 4
 end
 arch guildmaster
 name James, the guildmaster
@@ -1956,12 +1965,32 @@ endmsg
 sp 0
 maxsp 0
 x 19
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-immune 8388607
 end
 arch blocked
 x 19
@@ -1973,7 +2002,6 @@ x 19
 y 2
 weight 1000
 connected 4
-protected 4
 end
 arch blocked
 x 19
@@ -2022,7 +2050,6 @@ x 19
 y 13
 speed 1.000000
 connected 23
-protected 23
 end
 arch igate_closed_1
 name 22
@@ -2030,14 +2057,12 @@ x 19
 y 14
 speed 0.500000
 connected 22
-protected 22
 end
 arch gateTrg1
 name 2
 x 19
 y 15
 connected 2
-protected 2
 end
 arch lightningwall_1
 x 19
@@ -2144,7 +2169,6 @@ sp 4
 x 21
 speed 0.000000
 connected 4
-protected 4
 end
 arch card
 name Passport
@@ -2170,7 +2194,6 @@ endmsg
 x 21
 y 1
 connected 3
-protected 3
 end
 arch button_small
 name 3 - accept new member
@@ -2178,7 +2201,6 @@ x 21
 y 1
 weight 1000
 connected 3
-protected 3
 end
 arch creator
 name 23
@@ -2186,7 +2208,6 @@ other_arch small_shield
 x 21
 y 1
 connected 23
-protected 23
 end
 arch button_small
 name 5 - open gate
@@ -2194,7 +2215,6 @@ x 21
 y 2
 weight 100000
 connected 5
-protected 5
 end
 arch creator
 name 1
@@ -2202,7 +2222,6 @@ other_arch boulder
 x 21
 y 2
 connected 1
-protected 1
 end
 arch blocked
 x 21
@@ -2317,14 +2336,12 @@ name 22
 x 22
 weight 100000
 connected 22
-protected 22
 end
 arch creator
 name 21
 other_arch boulder
 x 22
 connected 21
-protected 21
 end
 arch blocked
 x 22
@@ -2351,7 +2368,6 @@ name 21
 x 22
 y 5
 connected 21
-protected 21
 end
 arch dungeon_floor
 x 22
@@ -2380,7 +2396,6 @@ x 22
 y 6
 speed 0.500000
 connected 31
-protected 31
 end
 arch dungeon_floor
 x 22
@@ -2402,7 +2417,6 @@ arch button_small
 x 22
 y 8
 connected 30
-protected 30
 end
 arch dungeon_floor
 x 22
@@ -2485,7 +2499,6 @@ arch button_plate
 x 23
 y 1
 connected 31
-protected 31
 end
 arch grate_open_1
 name 30
@@ -2494,7 +2507,6 @@ y 2
 speed 0.500000
 value 1
 connected 30
-protected 30
 end
 arch boulder
 x 23

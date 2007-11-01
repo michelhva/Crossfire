@@ -890,7 +890,14 @@ end
 arch big_elec
 x 3
 y 13
-immune 421744
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 3
@@ -1586,7 +1593,14 @@ end
 arch big_elec
 x 6
 y 14
-immune 421744
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 6

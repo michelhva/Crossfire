@@ -16,7 +16,6 @@ hp 4
 sp 5
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -37,7 +36,6 @@ sp 8
 y 1
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -60,7 +58,6 @@ sp 12
 y 2
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -83,7 +80,6 @@ sp 15
 y 3
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -343,7 +339,6 @@ sp 5
 x 1
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -366,7 +361,6 @@ x 1
 y 1
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -391,7 +385,6 @@ x 1
 y 2
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -416,7 +409,6 @@ x 1
 y 3
 speed 0.000000
 connected 5
-protected 5
 end
 arch firewall_5
 name fearsome statue
@@ -1529,7 +1521,6 @@ x 4
 y 8
 weight 1000
 connected 1
-protected 1
 end
 arch flagstone
 x 4
@@ -1574,7 +1565,6 @@ x 4
 y 12
 weight 1000
 connected 4
-protected 4
 end
 arch flagstone
 x 4
@@ -1680,7 +1670,6 @@ x 4
 y 21
 weight 1000
 connected 31
-protected 31
 end
 arch flagstone
 x 4
@@ -1725,7 +1714,6 @@ x 4
 y 25
 weight 1000
 connected 34
-protected 34
 end
 arch flagstone
 x 4
@@ -2267,7 +2255,6 @@ name 50
 x 6
 y 5
 connected 50
-protected 50
 end
 arch flagstone
 x 6
@@ -2318,7 +2305,6 @@ x 6
 y 10
 connected 6
 move_on 0
-protected 6
 end
 arch magic_mouth
 name 5
@@ -2332,7 +2318,6 @@ x 6
 y 10
 connected 5
 move_on 0
-protected 5
 end
 arch flagstone
 x 6
@@ -2464,7 +2449,6 @@ x 6
 y 23
 connected 36
 move_on 0
-protected 36
 end
 arch magic_mouth
 name 35
@@ -2477,7 +2461,6 @@ x 6
 y 23
 connected 35
 move_on 0
-protected 35
 end
 arch flagstone
 x 6
@@ -2534,7 +2517,6 @@ x 6
 y 28
 speed 0.500000
 connected 36
-protected 36
 end
 arch dungeon_magic
 x 6
@@ -2551,7 +2533,6 @@ x 6
 y 29
 speed 0.500000
 connected 36
-protected 36
 end
 arch dungeon_magic
 x 6
@@ -3085,7 +3066,6 @@ x 8
 y 8
 weight 1000
 connected 2
-protected 2
 end
 arch flagstone
 x 8
@@ -3130,7 +3110,6 @@ x 8
 y 12
 weight 1000
 connected 3
-protected 3
 end
 arch flagstone
 x 8
@@ -3240,7 +3219,6 @@ x 8
 y 21
 weight 1000
 connected 32
-protected 32
 end
 arch flagstone
 x 8
@@ -3285,7 +3263,6 @@ x 8
 y 25
 weight 1000
 connected 33
-protected 33
 end
 arch flagstone
 x 8
@@ -3731,7 +3708,6 @@ sp 8
 x 10
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -3755,7 +3731,6 @@ x 10
 y 1
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -4108,7 +4083,6 @@ sp 5
 x 11
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -4131,7 +4105,6 @@ x 11
 y 1
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -4161,7 +4134,6 @@ endmsg
 x 11
 y 3
 connected 51
-protected 51
 end
 arch button_small
 name 51
@@ -4169,7 +4141,6 @@ x 11
 y 3
 weight 1000
 connected 51
-protected 51
 end
 arch creator
 name 50
@@ -4177,7 +4148,6 @@ other_arch small_shield
 x 11
 y 3
 connected 50
-protected 50
 end
 arch dungeon_magic
 x 11
@@ -4267,7 +4237,6 @@ x 11
 y 10
 speed 0.500000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 11
@@ -4421,7 +4390,6 @@ x 11
 y 23
 speed 0.500000
 connected 26
-protected 26
 end
 arch dungeon_magic
 x 11
@@ -4570,7 +4538,6 @@ sp 5
 x 12
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -4593,7 +4560,6 @@ x 12
 y 1
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -4704,7 +4670,6 @@ x 12
 y 10
 speed 0.500000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 12
@@ -4769,7 +4734,6 @@ food 1
 x 12
 y 16
 connected 5
-protected 5
 end
 arch button_plate
 name 6
@@ -4777,7 +4741,6 @@ x 12
 y 16
 weight 25000
 connected 6
-protected 6
 end
 arch creator
 name 4
@@ -4785,7 +4748,6 @@ other_arch small_shield
 x 12
 y 16
 connected 4
-protected 4
 end
 arch creator
 name 3
@@ -4793,7 +4755,6 @@ other_arch small_shield
 x 12
 y 16
 connected 3
-protected 3
 end
 arch creator
 name 2
@@ -4801,7 +4762,6 @@ other_arch small_shield
 x 12
 y 16
 connected 2
-protected 2
 end
 arch creator
 name 1
@@ -4809,7 +4769,6 @@ other_arch small_shield
 x 12
 y 16
 connected 1
-protected 1
 end
 arch flagstone
 x 12
@@ -4822,7 +4781,6 @@ food 1
 x 12
 y 17
 connected 35
-protected 35
 end
 arch button_plate
 name 36
@@ -4830,7 +4788,6 @@ x 12
 y 17
 weight 25000
 connected 36
-protected 36
 end
 arch creator
 name 34
@@ -4838,7 +4795,6 @@ other_arch small_shield
 x 12
 y 17
 connected 34
-protected 34
 end
 arch creator
 name 33
@@ -4846,7 +4802,6 @@ other_arch small_shield
 x 12
 y 17
 connected 33
-protected 33
 end
 arch creator
 name 32
@@ -4854,7 +4809,6 @@ other_arch small_shield
 x 12
 y 17
 connected 32
-protected 32
 end
 arch creator
 name 31
@@ -4862,7 +4816,6 @@ other_arch small_shield
 x 12
 y 17
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -4942,7 +4895,6 @@ x 12
 y 23
 speed 0.500000
 connected 26
-protected 26
 end
 arch dungeon_magic
 x 12
@@ -5075,7 +5027,6 @@ sp 8
 x 13
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -5099,7 +5050,6 @@ x 13
 y 1
 speed 0.000000
 connected 15
-protected 15
 end
 arch firewall_5
 name fearsome statue
@@ -5210,7 +5160,6 @@ x 13
 y 10
 speed 0.500000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 13
@@ -5275,7 +5224,6 @@ food 1
 x 13
 y 16
 connected 15
-protected 15
 end
 arch button_plate
 name 16
@@ -5283,7 +5231,6 @@ x 13
 y 16
 weight 25000
 connected 16
-protected 16
 end
 arch creator
 name 14
@@ -5291,7 +5238,6 @@ other_arch small_shield
 x 13
 y 16
 connected 14
-protected 14
 end
 arch creator
 name 13
@@ -5299,7 +5245,6 @@ other_arch small_shield
 x 13
 y 16
 connected 13
-protected 13
 end
 arch creator
 name 12
@@ -5307,7 +5252,6 @@ other_arch small_shield
 x 13
 y 16
 connected 12
-protected 12
 end
 arch creator
 name 11
@@ -5315,7 +5259,6 @@ other_arch small_shield
 x 13
 y 16
 connected 11
-protected 11
 end
 arch flagstone
 x 13
@@ -5328,7 +5271,6 @@ food 1
 x 13
 y 17
 connected 25
-protected 25
 end
 arch button_plate
 name 26
@@ -5336,7 +5278,6 @@ x 13
 y 17
 weight 25000
 connected 26
-protected 26
 end
 arch creator
 name 24
@@ -5344,7 +5285,6 @@ other_arch small_shield
 x 13
 y 17
 connected 24
-protected 24
 end
 arch creator
 name 23
@@ -5352,7 +5292,6 @@ other_arch small_shield
 x 13
 y 17
 connected 23
-protected 23
 end
 arch creator
 name 22
@@ -5360,7 +5299,6 @@ other_arch small_shield
 x 13
 y 17
 connected 22
-protected 22
 end
 arch creator
 name 21
@@ -5368,7 +5306,6 @@ other_arch small_shield
 x 13
 y 17
 connected 21
-protected 21
 end
 arch dungeon_magic
 x 13
@@ -5448,7 +5385,6 @@ x 13
 y 23
 speed 0.500000
 connected 26
-protected 26
 end
 arch dungeon_magic
 x 13
@@ -5677,7 +5613,6 @@ x 14
 y 10
 speed 0.500000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 14
@@ -5840,7 +5775,6 @@ x 14
 y 23
 speed 0.500000
 connected 26
-protected 26
 end
 arch dungeon_magic
 x 14
@@ -5986,7 +5920,6 @@ sp 21
 x 15
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6011,7 +5944,6 @@ x 15
 y 1
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6361,7 +6293,6 @@ sp 18
 x 16
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6385,7 +6316,6 @@ x 16
 y 1
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6746,7 +6676,6 @@ sp 18
 x 17
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6770,7 +6699,6 @@ x 17
 y 1
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -6854,7 +6782,6 @@ x 17
 y 8
 weight 1000
 connected 11
-protected 11
 end
 arch flagstone
 x 17
@@ -6899,7 +6826,6 @@ x 17
 y 12
 weight 1000
 connected 14
-protected 14
 end
 arch flagstone
 x 17
@@ -7018,7 +6944,6 @@ x 17
 y 21
 weight 1000
 connected 21
-protected 21
 end
 arch flagstone
 x 17
@@ -7063,7 +6988,6 @@ x 17
 y 25
 weight 1000
 connected 24
-protected 24
 end
 arch flagstone
 x 17
@@ -7226,7 +7150,6 @@ sp 21
 x 18
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -7251,7 +7174,6 @@ x 18
 y 1
 speed 0.000000
 connected 25
-protected 25
 end
 arch firewall_5
 name fearsome statue
@@ -7690,7 +7612,6 @@ x 19
 y 10
 connected 16
 move_on 0
-protected 16
 end
 arch magic_mouth
 name 15
@@ -7703,7 +7624,6 @@ x 19
 y 10
 connected 15
 move_on 0
-protected 15
 end
 arch flagstone
 x 19
@@ -7756,7 +7676,6 @@ x 19
 y 15
 speed 0.500000
 connected 16
-protected 16
 end
 arch dungeon_magic
 x 19
@@ -7785,7 +7704,6 @@ x 19
 y 16
 speed 0.500000
 connected 16
-protected 16
 end
 arch dungeon_magic
 x 19
@@ -7814,7 +7732,6 @@ x 19
 y 17
 speed 0.500000
 connected 16
-protected 16
 end
 arch dungeon_magic
 x 19
@@ -7831,7 +7748,6 @@ x 19
 y 18
 speed 0.500000
 connected 16
-protected 16
 end
 arch dungeon_magic
 x 19
@@ -7878,7 +7794,6 @@ x 19
 y 23
 connected 26
 move_on 0
-protected 26
 end
 arch magic_mouth
 name 25
@@ -7891,7 +7806,6 @@ x 19
 y 23
 connected 25
 move_on 0
-protected 25
 end
 arch flagstone
 x 19
@@ -8029,7 +7943,6 @@ sp 21
 x 20
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_3
 name fearsome statue
@@ -8050,7 +7963,6 @@ x 20
 y 1
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_3
 name fearsome statue
@@ -8383,7 +8295,6 @@ sp 18
 x 21
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_5
 name fearsome statue
@@ -8404,7 +8315,6 @@ x 21
 y 1
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_1
 name fearsome statue
@@ -8484,7 +8394,6 @@ x 21
 y 8
 weight 1000
 connected 12
-protected 12
 end
 arch flagstone
 x 21
@@ -8529,7 +8438,6 @@ x 21
 y 12
 weight 1000
 connected 13
-protected 13
 end
 arch flagstone
 x 21
@@ -8648,7 +8556,6 @@ x 21
 y 21
 weight 1000
 connected 22
-protected 22
 end
 arch flagstone
 x 21
@@ -8693,7 +8600,6 @@ x 21
 y 25
 weight 1000
 connected 23
-protected 23
 end
 arch flagstone
 x 21
@@ -8825,7 +8731,6 @@ sp 18
 x 22
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_5
 name fearsome statue
@@ -8846,7 +8751,6 @@ x 22
 y 1
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_1
 name fearsome statue
@@ -9179,7 +9083,6 @@ sp 21
 x 23
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_7
 name fearsome statue
@@ -9200,7 +9103,6 @@ x 23
 y 1
 speed 0.000000
 connected 35
-protected 35
 end
 arch firewall_7
 name fearsome statue
