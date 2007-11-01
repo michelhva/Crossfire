@@ -240,21 +240,18 @@ name 1
 y 37
 speed 0.500000
 connected 1
-protected 1
 end
 arch igate_closed_1
 name 2
 y 38
 speed 0.500000
 connected 2
-protected 2
 end
 arch detector
 name 3 - open teleporter-gate
 slaying lightning
 y 39
 connected 3
-protected 3
 end
 arch blocked
 y 40
@@ -263,7 +260,6 @@ arch button_small
 name 21 - victory
 y 41
 connected 21
-protected 21
 end
 arch creator
 name 20
@@ -271,14 +267,12 @@ other_arch scroll
 hp 10000
 y 41
 connected 20
-protected 20
 end
 arch igate_closed_1
 name 3
 y 42
 speed 0.500000
 connected 3
-protected 3
 end
 arch lightningwall_1
 y 43
@@ -600,7 +594,6 @@ x 1
 y 37
 speed 0.500000
 connected 4
-protected 4
 end
 arch igate_closed_1
 name 5
@@ -608,7 +601,6 @@ x 1
 y 38
 speed 0.500000
 connected 5
-protected 5
 end
 arch detector
 name 6 - teleport players
@@ -616,7 +608,6 @@ slaying lightning
 x 1
 y 39
 connected 6
-protected 6
 end
 arch blocked
 x 1
@@ -1043,7 +1034,6 @@ x 2
 y 37
 speed 0.500000
 connected 7
-protected 7
 end
 arch igate_closed_1
 name 8
@@ -1051,7 +1041,6 @@ x 2
 y 38
 speed 0.500000
 connected 8
-protected 8
 end
 arch detector
 name 9 - open pits
@@ -1059,7 +1048,6 @@ slaying lightning
 x 2
 y 39
 connected 9
-protected 9
 end
 arch blocked
 x 2
@@ -1903,14 +1891,12 @@ endmsg
 x 4
 y 36
 connected 15
-protected 15
 end
 arch button_small
 name 14
 x 4
 y 36
 connected 14
-protected 14
 end
 arch mover_5
 x 4
@@ -1957,7 +1943,6 @@ x 4
 y 40
 speed 0.500000
 connected 9
-protected 9
 end
 arch mover_5
 x 4
@@ -1981,14 +1966,12 @@ endmsg
 x 4
 y 43
 connected 11
-protected 11
 end
 arch button_small
 name 10
 x 4
 y 43
 connected 10
-protected 10
 end
 arch mover_3
 x 4
@@ -2353,7 +2336,6 @@ name 13
 x 5
 y 36
 connected 13
-protected 13
 end
 arch mover_7
 x 5
@@ -2366,7 +2348,6 @@ name 13
 x 5
 y 37
 connected 13
-protected 13
 end
 arch mover_1
 x 5
@@ -2379,7 +2360,6 @@ name 13
 x 5
 y 38
 connected 13
-protected 13
 end
 arch mover_1
 x 5
@@ -2392,7 +2372,6 @@ name 13
 x 5
 y 39
 connected 13
-protected 13
 end
 arch mover_1
 x 5
@@ -2628,7 +2607,6 @@ name 7
 x 6
 y 17
 connected 7
-protected 7
 end
 arch battleground
 hp 28
@@ -3040,7 +3018,6 @@ x 7
 y 17
 speed 0.500000
 connected 13
-protected 13
 end
 arch stonefloor2
 name wall
@@ -3202,7 +3179,6 @@ slaying scroll
 x 7
 y 36
 connected 11
-protected 11
 end
 arch button_small
 name 12 - four scrolls
@@ -3210,7 +3186,6 @@ x 7
 y 36
 weight 800
 connected 12
-protected 12
 end
 arch creator
 name 10
@@ -3219,14 +3194,12 @@ hp 10000
 x 7
 y 36
 connected 10
-protected 10
 end
 arch igateTrg1
 name 12 - trigger
 x 7
 y 37
 connected 12
-protected 12
 end
 arch lightningwall_1
 x 7
@@ -3535,7 +3508,6 @@ slaying scroll
 x 8
 y 36
 connected 15
-protected 15
 end
 arch button_small
 name 16 - four scrolls
@@ -3543,7 +3515,6 @@ x 8
 y 36
 weight 800
 connected 16
-protected 16
 end
 arch creator
 name 14
@@ -3552,14 +3523,12 @@ hp 10000
 x 8
 y 36
 connected 14
-protected 14
 end
 arch igateTrg1
 name 16 - trigger
 x 8
 y 37
 connected 16
-protected 16
 end
 arch lightningwall_1
 x 8
@@ -5704,7 +5673,6 @@ y 37
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 14
@@ -5720,7 +5688,6 @@ y 38
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 14
@@ -5736,7 +5703,6 @@ y 39
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 14
@@ -6050,7 +6016,6 @@ x 15
 y 37
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 15
@@ -6068,7 +6033,6 @@ x 15
 y 38
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 15
@@ -6086,7 +6050,6 @@ x 15
 y 39
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 15
@@ -6140,7 +6103,6 @@ x 15
 y 43
 speed 0.500000
 connected 3
-protected 3
 end
 arch dungeon_magic
 x 15
@@ -6465,7 +6427,6 @@ x 16
 y 37
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 16
@@ -6483,7 +6444,6 @@ x 16
 y 38
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 16
@@ -6501,7 +6461,6 @@ x 16
 y 39
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 16
@@ -6524,7 +6483,6 @@ name accept
 x 16
 y 41
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 16
@@ -6547,7 +6505,6 @@ name 4
 x 16
 y 43
 connected 4
-protected 4
 end
 arch flagstone
 x 16
@@ -6561,7 +6518,6 @@ x 16
 y 43
 speed 0.000000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 16
@@ -6650,7 +6606,6 @@ x 17
 y 6
 speed 0.500000
 connected 21
-protected 21
 end
 arch battleground
 hp 28
@@ -6794,7 +6749,6 @@ x 17
 y 28
 speed 0.500000
 connected 21
-protected 21
 end
 arch dungeon_magic
 x 17
@@ -7300,7 +7254,6 @@ x 18
 y 37
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 18
@@ -7318,7 +7271,6 @@ x 18
 y 38
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 18
@@ -7336,7 +7288,6 @@ x 18
 y 39
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 18
@@ -7359,7 +7310,6 @@ name accept
 x 18
 y 41
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 18
@@ -7382,7 +7332,6 @@ name 5
 x 18
 y 43
 connected 5
-protected 5
 end
 arch flagstone
 x 18
@@ -7396,7 +7345,6 @@ x 18
 y 43
 speed 0.000000
 connected 6
-protected 6
 end
 arch dungeon_magic
 x 18
@@ -7694,7 +7642,6 @@ x 19
 y 37
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 19
@@ -7712,7 +7659,6 @@ x 19
 y 38
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 19
@@ -7730,7 +7676,6 @@ x 19
 y 39
 invisible 1
 connected 9
-protected 9
 end
 arch dungeon_magic
 x 19
@@ -7784,7 +7729,6 @@ x 19
 y 43
 speed 0.500000
 connected 3
-protected 3
 end
 arch dungeon_magic
 x 19
@@ -8120,7 +8064,6 @@ y 37
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 20
@@ -8136,7 +8079,6 @@ y 38
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 20
@@ -8152,7 +8094,6 @@ y 39
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 20
@@ -10287,7 +10228,6 @@ arch button_lever
 x 26
 y 44
 connected 1
-protected 1
 end
 arch cobblestones2
 x 27
@@ -10458,7 +10398,6 @@ x 27
 y 17
 speed 0.500000
 connected 13
-protected 13
 end
 arch stonefloor2
 name wall
@@ -10694,7 +10633,6 @@ y 44
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch cobblestones2
 x 28
@@ -10892,7 +10830,6 @@ name 8
 x 28
 y 17
 connected 8
-protected 8
 end
 arch battleground
 hp 28
@@ -11125,7 +11062,6 @@ y 37
 speed 0.0
 invisible 1
 connected 20
-protected 20
 end
 arch mover_1
 x 28
@@ -12919,7 +12855,6 @@ y 44
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch cobblestones2
 x 33
@@ -13272,7 +13207,6 @@ arch button_lever
 x 33
 y 44
 connected 2
-protected 2
 end
 arch cobblestones2
 x 34

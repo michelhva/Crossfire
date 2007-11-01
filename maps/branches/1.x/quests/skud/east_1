@@ -4180,7 +4180,7 @@ x 22
 y 3
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 22
@@ -4394,7 +4394,7 @@ x 23
 y 2
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4411,7 +4411,7 @@ x 23
 y 3
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4428,7 +4428,7 @@ x 23
 y 4
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 23
@@ -4616,7 +4616,7 @@ x 24
 y 1
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4633,7 +4633,7 @@ x 24
 y 2
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4650,7 +4650,7 @@ x 24
 y 3
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 24
@@ -4850,7 +4850,7 @@ x 25
 y 1
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 25
@@ -4871,7 +4871,7 @@ x 25
 y 2
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 25
@@ -5317,9 +5317,9 @@ speed 0.300000
 attack_movement 0
 level 10
 attacktype 16385
+resist_fire 100
 run_away 0
 can_cast_spell 1
-immune 4
 arch spell_paralyze
 end
 arch spell_hellfire

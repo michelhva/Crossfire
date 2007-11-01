@@ -524,8 +524,8 @@ exp 100000
 x 5
 y 1
 speed -0.200000
+resist_physical 20
 see_invisible 0
-armour 20
 end
 arch woodfloor
 x 5
@@ -1121,15 +1121,15 @@ hp 6000
 maxhp 6000
 x 9
 y 13
+resist_physical 50
 carrying 30000
-armour 50
 arch mjoellnir
 name Baba Mal the War Hammer
 Str 0
 dam 13
 attacktype 256
+resist_magic 100
 magic 2
-immune 2
 end
 end
 arch woodfloor
@@ -1540,10 +1540,10 @@ name Vardimar the Singing Axe
 slaying djinn
 dam 18
 attacktype 262145
+resist_confusion 30
 weight 28000
 magic 5
 last_sp 10
-protected 32
 end
 end
 arch woodfloor

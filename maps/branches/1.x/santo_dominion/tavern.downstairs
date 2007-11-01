@@ -838,7 +838,6 @@ arch button_handle
 x 4
 y 24
 connected 4
-protected 4
 end
 arch pstone_1
 x 4
@@ -1108,7 +1107,6 @@ arch button_plate
 x 6
 y 4
 connected 5
-protected 5
 end
 arch pstone_1
 x 6
@@ -1230,7 +1228,6 @@ arch grate_closed_1
 x 6
 y 23
 connected 96
-protected 96
 end
 arch pstone_1
 x 6
@@ -1272,7 +1269,6 @@ arch button_handle
 x 6
 y 28
 connected 3
-protected 3
 end
 arch pstone_1
 x 6
@@ -1448,7 +1444,6 @@ arch grate_closed_1
 x 7
 y 23
 connected 96
-protected 96
 end
 arch pstone_1
 x 7
@@ -1556,7 +1551,6 @@ arch gate_closed_1
 x 8
 y 7
 connected 96
-protected 96
 end
 arch pstone_1
 x 8
@@ -1646,7 +1640,6 @@ arch grate_closed_1
 x 8
 y 23
 connected 96
-protected 96
 end
 arch pstone_1
 x 8
@@ -1754,7 +1747,6 @@ arch gate_closed_1
 x 9
 y 7
 connected 96
-protected 96
 end
 arch pstone_1
 x 9
@@ -1840,7 +1832,6 @@ arch grate_closed_1
 x 9
 y 23
 connected 96
-protected 96
 end
 arch pstone_1
 x 9
@@ -2323,7 +2314,6 @@ x 11
 y 29
 speed 0.500000
 connected 2
-protected 2
 end
 arch pstone_1
 x 11
@@ -2387,7 +2377,6 @@ arch button_plate
 x 12
 y 6
 connected 2
-protected 2
 end
 arch pstone_1
 x 12
@@ -2421,7 +2410,6 @@ arch grate_closed_2
 x 12
 y 12
 connected 3
-protected 3
 end
 arch pstone_1
 x 12
@@ -2431,7 +2419,6 @@ arch grate_closed_2
 x 12
 y 13
 connected 3
-protected 3
 end
 arch pstone_1
 x 12
@@ -2588,7 +2575,6 @@ x 13
 y 6
 value 1
 connected 1
-protected 1
 end
 arch poison
 x 13
@@ -3774,7 +3760,6 @@ arch spikes_closed
 x 19
 y 25
 connected 4
-protected 4
 end
 arch pstone_1
 x 19
@@ -4574,7 +4559,6 @@ x 24
 y 3
 speed 0.500000
 connected 1
-protected 1
 end
 arch pstone_1
 x 24
@@ -5631,7 +5615,6 @@ x 29
 y 26
 speed 0.500000
 connected 1
-protected 1
 end
 arch pstone_1
 x 29
@@ -5672,7 +5655,6 @@ name The Cellars
 x 30
 y 1
 connected 96
-protected 96
 end
 arch generate_scorpion
 x 30
