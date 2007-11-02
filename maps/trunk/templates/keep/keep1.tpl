@@ -6,9 +6,7 @@ height 22
 enter_x 7
 enter_y 20
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    9/3/2002
+Created:  2002-03-09 Avion
 endmsg
 end
 arch teleporter
