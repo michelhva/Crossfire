@@ -1,12 +1,12 @@
 arch map
 name <untitled>
+width 16
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 21:20:52 1998
 endmsg
-width 16
-height 20
 end
 arch imp
 end
@@ -18,6 +18,9 @@ y 2
 end
 arch imp
 y 3
+end
+arch Greater_Demon
+y 5
 end
 arch hellhound
 y 12
@@ -28,70 +31,27 @@ end
 arch hellhound
 y 14
 end
-arch raas
-x 1
-end
-arch raas
-x 1
-y 1
-end
-arch raas
-x 1
-y 2
-end
-arch raas
-x 1
-y 3
-end
-arch fiend
-x 1
-y 4
-end
-arch fiend
-x 2
-end
-arch fiend
-x 2
-y 1
-end
-arch fiend
-x 2
-y 2
-end
-arch fiend
-x 2
-y 3
-end
-arch fiend
-x 2
-y 4
-end
-arch generate_devil
-x 3
-end
-arch generate_devil
-x 3
-y 1
-end
-arch devil
-x 4
-end
-arch generate_devil
-x 4
-y 1
-end
-arch devil
-x 5
-end
-arch generate_devil
-x 5
-y 1
-end
-arch Greater_Demon
-y 5
-end
 arch medium_demon
 y 16
+end
+arch raas
+x 1
+end
+arch raas
+x 1
+y 1
+end
+arch raas
+x 1
+y 2
+end
+arch raas
+x 1
+y 3
+end
+arch fiend
+x 1
+y 4
 end
 arch Balrog
 x 1
@@ -101,6 +61,32 @@ arch medium_demon
 x 1
 y 18
 end
+arch fiend
+x 2
+end
+arch fiend
+x 2
+y 1
+end
+arch fiend
+x 2
+y 2
+end
+arch fiend
+x 2
+y 3
+end
+arch fiend
+x 2
+y 4
+end
+arch generate_devil
+x 3
+end
+arch generate_devil
+x 3
+y 1
+end
 arch big_demon
 x 3
 y 2
@@ -108,6 +94,20 @@ end
 arch Balrog
 x 3
 y 16
+end
+arch devil
+x 4
+end
+arch generate_devil
+x 4
+y 1
+end
+arch devil
+x 5
+end
+arch generate_devil
+x 5
+y 1
 end
 arch demon_lord
 x 7

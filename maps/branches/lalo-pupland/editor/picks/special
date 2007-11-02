@@ -1,12 +1,12 @@
 arch map
 name special pickman
+width 12
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Aug  8 17:27:11 1994
 endmsg
-x 12
-y 14
 end
 arch firewall_8
 end
@@ -487,6 +487,10 @@ y 9
 speed 0.500000
 value 1
 end
+arch active_volcano
+x 8
+y 10
+end
 arch check_inv
 x 8
 y 11
@@ -523,6 +527,10 @@ x 9
 y 5
 level 1
 attacktype 1
+end
+arch mine_secret_1_1
+x 9
+y 6
 end
 arch stwall_closed_1
 x 9
@@ -622,6 +630,10 @@ y 5
 level 1
 attacktype 1
 end
+arch mine_secret_2_1
+x 11
+y 6
+end
 arch trigger
 x 11
 y 8
@@ -637,16 +649,4 @@ end
 arch igateTrg2
 x 11
 y 12
-end
-arch active_volcano
-x 8
-y 10
-end
-arch mine_secret_1_1
-x 9
-y 6
-end
-arch mine_secret_2_1
-x 11
-y 6
 end

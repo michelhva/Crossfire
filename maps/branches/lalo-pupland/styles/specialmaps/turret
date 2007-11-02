@@ -1,12 +1,12 @@
 arch map
 name minialch
+width 5
+height 5
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Mon Jan 18 15:47:50 1999
 endmsg
-x 5
-y 5
 end
 arch lightningwall_8
 x 1
@@ -61,7 +61,6 @@ connected 3287
 no_pass 0
 blocksview 0
 end
-speed 0
 arch lightningwall_3
 x 3
 y 2

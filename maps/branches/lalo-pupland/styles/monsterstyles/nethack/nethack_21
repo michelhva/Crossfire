@@ -1,12 +1,38 @@
 arch map
 name nethack_2
+width 13
+height 26
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 13
-y 26
+end
+arch Balrog
+name Hezrou
+end
+arch giant
+name ettin
+hp 2550
+maxhp 2550
+exp 23500
+dam 40
+wc -5
+y 5
+level 11
+attacktype 1
+end
+arch sphinx
+name nalfeshnee
+race demon
+msg
+
+endmsg
+hp 3000
+maxhp 3000
+exp 20000
+y 7
+attacktype 5
 end
 arch baby_dragon
 name baby red dragon
@@ -32,6 +58,21 @@ attacktype 5
 randomitems imp
 can_cast_spell 1
 end
+arch giant
+name Frost Giant
+hp 3500
+maxhp 3500
+exp 23000
+dam 40
+wc -4
+x 1
+y 5
+level 15
+attacktype 17
+resist_fire -30
+resist_cold 100
+undead 1
+end
 arch faerie_dragon
 name baby blue dragon
 hp 400
@@ -50,265 +91,6 @@ end
 arch generate_skeleton
 x 1
 y 10
-end
-arch lich
-x 2
-y 7
-end
-arch black_pudding
-x 3
-y 5
-end
-arch black_pudding
-x 3
-y 6
-end
-arch lich
-x 3
-y 7
-end
-arch ologhi
-exp 100000
-wc -10
-ac -10
-x 3
-y 12
-level 25
-end
-arch gargolye
-name winged gargolye
-hp 900
-maxhp 900
-exp 30000
-x 4
-y 2
-speed 0.300000
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 4
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch generate_vampire
-x 4
-y 5
-end
-arch generate_vampire
-x 4
-y 6
-end
-arch lich
-x 4
-y 7
-end
-arch spectre
-name Vampire Lord
-x 4
-y 10
-end
-arch nazgul
-x 4
-y 12
-end
-arch gargolye
-name winged gargolye
-hp 900
-maxhp 900
-exp 30000
-x 5
-y 2
-speed 0.300000
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 5
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch vampire
-x 5
-y 5
-end
-arch vampire
-x 5
-y 6
-end
-arch lich
-x 5
-y 7
-end
-arch spectre
-name Vampire Lord
-x 5
-y 10
-end
-arch gargolye
-name winged gargolye
-hp 900
-maxhp 900
-exp 30000
-x 6
-y 2
-speed 0.300000
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 6
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch lich
-x 6
-y 7
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 7
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch raas
-name ice devil
-hp 1000
-maxhp 1000
-exp 30000
-dam 30
-x 7
-y 5
-level 15
-attacktype 17
-end
-arch raas
-name ice devil
-hp 1000
-maxhp 1000
-exp 30000
-dam 30
-x 7
-y 6
-level 15
-attacktype 17
-end
-arch lich
-x 7
-y 7
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 8
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch HighAngel
-name Angel
-x 8
-y 12
-end
-arch demilich
-x 8
-y 13
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 9
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch holy_servant
-name flesh golem
-hp 825
-maxhp 25
-exp 3000
-dam 35
-wc -3
-ac -2
-x 10
-y 3
-speed 0.250000
-resist_magic 0
-end
-arch Balrog
-name Hezrou
-end
-arch giant
-name ettin
-hp 2550
-maxhp 2550
-exp 23500
-dam 40
-wc -5
-y 5
-level 11
-attacktype 1
-end
-arch sphinx
-name nalfeshnee
-race demon
-msg
-endmsg
-hp 3000
-maxhp 3000
-exp 20000
-y 7
-attacktype 5
-end
-arch giant
-name Frost Giant
-hp 3500
-maxhp 3500
-exp 23000
-dam 40
-wc -4
-x 1
-y 5
-level 15
-attacktype 17
-resist_fire -30
-resist_cold 100
-undead 1
 end
 arch big_dragon
 name red dragon
@@ -344,6 +126,10 @@ speed 0.200000
 attacktype 65
 unaggressive 1
 end
+arch lich
+x 2
+y 7
+end
 arch byakie
 name Baby Grey Dragon
 race dragon
@@ -355,6 +141,26 @@ y 9
 level 15
 resist_magic 0
 end
+arch black_pudding
+x 3
+y 5
+end
+arch black_pudding
+x 3
+y 6
+end
+arch lich
+x 3
+y 7
+end
+arch ologhi
+exp 100000
+wc -10
+ac -10
+x 3
+y 12
+level 25
+end
 arch skree
 name Bone Devil
 race demon
@@ -364,6 +170,40 @@ level 20
 attacktype 1029
 resist_magic 60
 randomitems none
+end
+arch gargolye
+name winged gargolye
+hp 900
+maxhp 900
+exp 30000
+x 4
+y 2
+speed 0.300000
+end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 4
+y 3
+speed 0.250000
+resist_magic 0
+end
+arch generate_vampire
+x 4
+y 5
+end
+arch generate_vampire
+x 4
+y 6
+end
+arch lich
+x 4
+y 7
 end
 arch Cwyvern
 name Baby Black Dragon
@@ -382,6 +222,15 @@ speed 0.100000
 level 5
 attacktype 65
 randomitems giant_worm
+end
+arch spectre
+name Vampire Lord
+x 4
+y 10
+end
+arch nazgul
+x 4
+y 12
 end
 arch byakie
 name Grey Dragon
@@ -402,6 +251,45 @@ x 4
 y 24
 attacktype 1
 end
+arch gargolye
+name winged gargolye
+hp 900
+maxhp 900
+exp 30000
+x 5
+y 2
+speed 0.300000
+end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 5
+y 3
+speed 0.250000
+resist_magic 0
+end
+arch vampire
+x 5
+y 5
+end
+arch vampire
+x 5
+y 6
+end
+arch lich
+x 5
+y 7
+end
+arch spectre
+name Vampire Lord
+x 5
+y 10
+end
 arch dragonman
 name Fire Giant
 exp 100000
@@ -419,6 +307,32 @@ resist_slow 0
 resist_paralyze 0
 resist_fear 0
 randomitems giant
+end
+arch gargolye
+name winged gargolye
+hp 900
+maxhp 900
+exp 30000
+x 6
+y 2
+speed 0.300000
+end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 6
+y 3
+speed 0.250000
+resist_magic 0
+end
+arch lich
+x 6
+y 7
 end
 arch dragon
 name baby green dragon
@@ -467,6 +381,58 @@ ac -8
 x 7
 attacktype 17
 end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 7
+y 3
+speed 0.250000
+resist_magic 0
+end
+arch raas
+name ice devil
+hp 1000
+maxhp 1000
+exp 30000
+dam 30
+x 7
+y 5
+level 15
+attacktype 17
+end
+arch raas
+name ice devil
+hp 1000
+maxhp 1000
+exp 30000
+dam 30
+x 7
+y 6
+level 15
+attacktype 17
+end
+arch lich
+x 7
+y 7
+end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 8
+y 3
+speed 0.250000
+resist_magic 0
+end
 arch golem_necro
 name clay golem
 Con 15
@@ -492,6 +458,15 @@ speed 0.200000
 level 15
 attacktype 65
 unaggressive 1
+end
+arch HighAngel
+name Angel
+x 8
+y 12
+end
+arch demilich
+x 8
+y 13
 end
 arch Cwyvern
 name Black Dragon
@@ -531,6 +506,19 @@ ac -5
 x 9
 attacktype 1
 end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 9
+y 3
+speed 0.250000
+resist_magic 0
+end
 arch dread
 name disenchanter
 x 9
@@ -544,6 +532,19 @@ arch titan
 name storm giant
 x 9
 y 23
+end
+arch holy_servant
+name flesh golem
+hp 825
+maxhp 25
+exp 3000
+dam 35
+wc -3
+ac -2
+x 10
+y 3
+speed 0.250000
+resist_magic 0
 end
 arch gaelotroll
 name Water Troll

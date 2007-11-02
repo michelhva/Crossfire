@@ -1,12 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
-y 20
 end
 arch holy_servant
 name paper golem
@@ -30,8 +30,8 @@ attacktype 1
 resist_fire 0
 resist_cold 0
 resist_confusion 0
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch wight
@@ -54,6 +54,16 @@ wc 8
 y 5
 generator 0
 end
+arch cobra
+name Black Naga Hatchling
+Wis 1
+hp 50
+exp 300
+dam 15
+y 6
+attacktype 1089
+unaggressive 1
+end
 arch holy_servant
 name rope golem
 hp 125
@@ -64,6 +74,11 @@ y 9
 resist_magic 0
 resist_fire -100
 end
+arch serpent
+name snake
+y 10
+attacktype 1025
+end
 arch zombie
 y 11
 end
@@ -73,6 +88,9 @@ hp 125
 maxhp 25
 exp 300
 y 12
+end
+arch unicorn
+y 13
 end
 arch serp_man
 name Lizard
@@ -121,8 +139,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch ghast
@@ -145,6 +163,16 @@ arch para_air
 name fog cloud
 x 1
 y 5
+end
+arch cobra
+name Golden Naga Hatchling
+Wis 1
+hp 80
+exp 300
+dam 15
+x 1
+y 6
+unaggressive 1
 end
 arch elf
 name Woodland-elf
@@ -251,14 +279,36 @@ name yellow light
 x 2
 y 5
 end
+arch cobra
+name Guardian Naga Hatchling
+Wis 1
+hp 150
+exp 300
+dam 15
+x 2
+y 6
+attacktype 1089
+unaggressive 1
+end
 arch bird
 name raven
 x 2
 y 9
 end
+arch serpent
+name water moccasin
+x 2
+y 10
+attacktype 1025
+end
 arch dog
 x 2
 y 11
+end
+arch unicorn
+name grey unicorn
+x 2
+y 12
 end
 arch air_elemental
 name dust vortex
@@ -282,8 +332,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -405,6 +455,14 @@ name shrieker
 x 4
 generator 0
 end
+arch cobra
+name Red Naga Hatchling
+exp 250
+dam 5
+x 4
+y 1
+attacktype 1029
+end
 arch orc
 name Mordor Orc
 hp 40
@@ -439,9 +497,9 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 undead 1
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -453,6 +511,11 @@ arch panther
 name jaguar
 x 4
 y 11
+end
+arch unicorn
+name black unicorn
+x 4
+y 12
 end
 arch dwarf
 name dwarf mummy
@@ -546,67 +609,4 @@ ac 0
 x 5
 y 17
 level 6
-end
-arch cobra
-name Black Naga Hatchling
-Wis 1
-hp 50
-exp 300
-dam 15
-y 6
-attacktype 1089
-unaggressive 1
-end
-arch serpent
-name snake
-y 10
-attacktype 1025
-end
-arch unicorn
-y 13
-end
-arch cobra
-name Golden Naga Hatchling
-Wis 1
-hp 80
-exp 300
-dam 15
-x 1
-y 6
-unaggressive 1
-end
-arch cobra
-name Guardian Naga Hatchling
-Wis 1
-hp 150
-exp 300
-dam 15
-x 2
-y 6
-attacktype 1089
-unaggressive 1
-end
-arch serpent
-name water moccasin
-x 2
-y 10
-attacktype 1025
-end
-arch unicorn
-name grey unicorn
-x 2
-y 12
-end
-arch cobra
-name Red Naga Hatchling
-exp 250
-dam 5
-x 4
-y 1
-attacktype 1029
-end
-arch unicorn
-name black unicorn
-x 4
-y 12
 end

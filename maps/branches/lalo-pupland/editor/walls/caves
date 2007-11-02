@@ -1,6 +1,8 @@
 arch map
-hp 2
-y 8
+name <unnamed>
+width 16
+height 8
+enter_x 2
 end
 arch mine0
 end
@@ -146,6 +148,10 @@ arch cave_7
 x 6
 y 4
 end
+arch mine_secret_1_1
+x 6
+y 6
+end
 arch mine11
 x 7
 end
@@ -202,6 +208,10 @@ end
 arch cave_10
 x 9
 y 4
+end
+arch mine_secret_2_1
+x 9
+y 6
 end
 arch mine2
 x 10
@@ -316,12 +326,4 @@ end
 arch dun17
 x 15
 y 4
-end
-arch mine_secret_1_1
-x 6
-y 6
-end
-arch mine_secret_2_1
-x 9
-y 6
 end

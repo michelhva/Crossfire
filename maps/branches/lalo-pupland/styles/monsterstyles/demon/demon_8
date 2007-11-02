@@ -1,12 +1,12 @@
 arch map
 name <untitled>
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 21:20:52 1998
 endmsg
-width 6
-height 20
 end
 arch imp
 end
@@ -31,8 +31,18 @@ end
 arch generate_devil
 y 7
 end
+arch big_demon
+y 8
+end
 arch hellhound
 y 12
+end
+arch medium_demon
+x 1
+end
+arch medium_demon
+x 1
+y 2
 end
 arch raas
 x 1
@@ -50,6 +60,10 @@ arch generate_devil
 x 1
 y 7
 end
+arch Balrog
+x 1
+y 12
+end
 arch devil
 x 2
 y 4
@@ -73,10 +87,18 @@ arch generate_devil
 x 3
 y 1
 end
+arch big_demon
+x 3
+y 2
+end
 arch generate_devil
 x 3
 y 6
 end
+arch big_demon
+x 3
+y 8
+end
 arch devil
 x 4
 end
@@ -98,26 +120,4 @@ end
 arch fiend
 x 5
 y 7
-end
-arch big_demon
-y 8
-end
-arch medium_demon
-x 1
-end
-arch medium_demon
-x 1
-y 2
-end
-arch Balrog
-x 1
-y 12
-end
-arch big_demon
-x 3
-y 2
-end
-arch big_demon
-x 3
-y 8
 end
