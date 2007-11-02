@@ -1,12 +1,12 @@
 arch map
 name nethack_2
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat May  5 16:44:39 2001
 endmsg
-x 6
-y 20
 end
 arch holy_servant
 name rope golem
@@ -17,6 +17,11 @@ dam 15
 resist_magic 0
 resist_fire -100
 end
+arch serpent
+name snake
+y 1
+attacktype 1025
+end
 arch zombie
 y 2
 end
@@ -26,6 +31,9 @@ hp 125
 maxhp 25
 exp 300
 y 3
+end
+arch unicorn
+y 4
 end
 arch serp_man
 name Lizard
@@ -48,6 +56,22 @@ resist_fire -100
 end
 arch scorpion
 y 9
+end
+arch mabu
+name succubus
+y 11
+attacktype 4097
+resist_electricity 0
+randomitems none
+end
+arch cobra
+name Red Naga
+hp 630
+exp 3000
+dam 15
+y 13
+attacktype 1029
+unaggressive 1
 end
 arch para_lava
 name pyrolisk
@@ -176,9 +200,20 @@ arch bird
 name raven
 x 2
 end
+arch serpent
+name water moccasin
+x 2
+y 1
+attacktype 1025
+end
 arch dog
 x 2
 y 2
+end
+arch unicorn
+name grey unicorn
+x 2
+y 3
 end
 arch air_elemental
 name dust vortex
@@ -202,8 +237,8 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -237,6 +272,21 @@ x 2
 y 11
 resist_magic 0
 resist_fire -25
+end
+arch cobra
+name cobra
+x 2
+y 12
+end
+arch giant
+name ettin zombie
+hp 550
+exp 3500
+dam 35
+x 2
+y 14
+attacktype 33
+undead 1
 end
 arch gargolye
 x 2
@@ -299,6 +349,13 @@ name chameleon
 x 3
 y 11
 end
+arch cobra
+name python
+hp 600
+x 3
+y 12
+attacktype 1
+end
 arch acid_sphere
 name flaming sphere
 x 3
@@ -333,9 +390,9 @@ resist_fire 0
 resist_cold 0
 resist_confusion 0
 randomitems rich
-run_away 85
 undead 1
 reflect_spell 0
+run_away 85
 can_cast_spell 0
 end
 arch small_troll
@@ -347,6 +404,11 @@ arch panther
 name jaguar
 x 4
 y 2
+end
+arch unicorn
+name black unicorn
+x 4
+y 3
 end
 arch dwarf
 name dwarf mummy
@@ -370,6 +432,15 @@ arch gnome
 name leprechaun
 x 4
 y 8
+end
+arch giant
+x 4
+y 11
+end
+arch cobra
+name pit viper
+x 4
+y 13
 end
 arch acid_sphere
 name freezing sphere
@@ -412,6 +483,13 @@ x 5
 y 8
 level 6
 end
+arch giant
+name stone giant
+hp 450
+exp 2500
+x 5
+y 11
+end
 arch wraith
 x 5
 y 13
@@ -430,82 +508,4 @@ arch black_pudding
 name ochre jelly
 x 5
 y 16
-end
-arch serpent
-name snake
-y 1
-attacktype 1025
-end
-arch unicorn
-y 4
-end
-arch mabu
-name succubus
-y 11
-attacktype 4097
-resist_electricity 0
-randomitems none
-end
-arch cobra
-name Red Naga
-hp 630
-exp 3000
-dam 15
-y 13
-attacktype 1029
-unaggressive 1
-end
-arch serpent
-name water moccasin
-x 2
-y 1
-attacktype 1025
-end
-arch unicorn
-name grey unicorn
-x 2
-y 3
-end
-arch cobra
-name cobra
-x 2
-y 12
-end
-arch giant
-name ettin zombie
-hp 550
-exp 3500
-dam 35
-x 2
-y 14
-attacktype 33
-undead 1
-end
-arch cobra
-name python
-hp 600
-x 3
-y 12
-attacktype 1
-end
-arch unicorn
-name black unicorn
-x 4
-y 3
-end
-arch giant
-x 4
-y 11
-end
-arch cobra
-name pit viper
-x 4
-y 13
-end
-arch giant
-name stone giant
-hp 450
-exp 2500
-x 5
-y 11
 end

@@ -1,14 +1,64 @@
 arch map
 name TownStaff
+width 6
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Wed Apr 16 06:47:23 1997
 endmsg
-x 6
+end
+arch inn
+end
+arch house_long
+y 1
+end
+arch farmhouse
+y 2
+end
+arch barrack_long
+y 3
+end
+arch barn
+y 4
+end
+arch church
+y 6
+end
+arch courthouse
+y 8
+end
+arch store_general
+y 10
+end
+arch store_armour
+y 12
+end
+arch big_galleon
+y 14
 end
 arch minihouse
 x 2
+end
+arch city_tower
+x 2
+y 4
+end
+arch guild
+x 2
+y 6
+end
+arch prison
+x 2
+y 8
+end
+arch store_weapons
+x 2
+y 10
+end
+arch store_magic
+x 2
+y 12
 end
 arch galleon
 x 2
@@ -44,59 +94,6 @@ arch bungalow
 x 4
 y 5
 end
-arch hut
-x 5
-y 5
-end
-arch inn
-end
-arch house_long
-y 1
-end
-arch farmhouse
-y 2
-end
-arch barrack_long
-y 3
-end
-arch barn
-y 4
-end
-arch church
-y 6
-end
-arch courthouse
-y 8
-end
-arch store_general
-y 10
-end
-arch store_armour
-y 12
-end
-arch big_galleon
-y 14
-end
-arch city_tower
-x 2
-y 4
-end
-arch guild
-x 2
-y 6
-end
-arch prison
-x 2
-y 8
-end
-arch store_weapons
-x 2
-y 10
-end
-arch store_magic
-x 2
-y 12
-end
 arch fort
 x 4
 y 6
@@ -108,4 +105,8 @@ end
 arch store_alchemy
 x 4
 y 10
+end
+arch hut
+x 5
+y 5
 end

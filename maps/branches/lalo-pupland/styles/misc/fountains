@@ -1,4 +1,7 @@
 arch map
+name <unnamed>
+width 16
+height 16
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
@@ -48,9 +51,9 @@ y 8
 carrying 45
 arch icor
 name the runs
+race *
 type 158
 invisible 1
-race *
 end
 end
 arch potioncha

@@ -1,59 +1,65 @@
 arch map
 name <untitled>
+width 6
+height 20
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Dec 22 20:37:46 1998
 endmsg
-width 6
-height 20
 end
 arch elf_man
-level 8
 hp 200
 maxhp 200
 sp 15
 maxsp 15
+level 8
 arch spell_invisible
 end
 end
 arch elf_lass
-level 12
-exp 90
-dam 9
 hp 200
 maxhp 200
 sp 20
 maxsp 20
+exp 90
+dam 9
 y 1
+level 12
 arch spell_invisible
 end
 arch spell_summon_pet_monster
 end
 end
 arch elf_1
-level 10
-exp 300
 hp 200
 maxhp 200
+exp 300
 y 2
+level 10
 end
 arch elf_1
-level 10
-exp 300
 hp 200
 maxhp 200
+exp 300
 y 3
+level 10
 end
 arch bird
-unaggressive 1
-sleep 0
 y 5
-end
-arch bird
 unaggressive 1
 sleep 0
+end
+arch bird
 y 6
+unaggressive 1
+sleep 0
+end
+arch bear
+y 9
+end
+arch bear
+y 11
 end
 arch dark_elf
 y 15
@@ -70,16 +76,16 @@ x 1
 y 2
 end
 arch bird
-unaggressive 1
-sleep 0
 x 1
 y 5
-end
-arch bird
 unaggressive 1
 sleep 0
+end
+arch bird
 x 1
 y 6
+unaggressive 1
+sleep 0
 end
 arch dark_elf
 x 1
@@ -142,12 +148,12 @@ y 1
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 4
 y 5
 arch spell_curse
@@ -155,12 +161,12 @@ end
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 4
 y 6
 arch spell_curse
@@ -188,12 +194,12 @@ y 3
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 5
 y 5
 arch spell_magic_missile
@@ -201,12 +207,12 @@ end
 end
 arch pixie
 name burly pixie
+Wis 10
 hp 30
 maxhp 40
-ac 0
 sp 10
 maxsp 10
-Wis 10
+ac 0
 x 5
 y 6
 arch spell_magic_missile
@@ -231,10 +237,4 @@ end
 arch ogre
 x 5
 y 16
-end
-arch bear
-y 9
-end
-arch bear
-y 11
 end

@@ -1,11 +1,12 @@
 arch map
+name <unnamed>
+width 6
+height 6
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Sat Dec 26 21:20:52 1998
 endmsg
-x 6
-y 6
 end
 arch stalker
 end
@@ -26,6 +27,10 @@ y 5
 end
 arch stalker
 x 1
+end
+arch breeder_ant
+x 1
+y 1
 end
 arch generate_bee
 x 1
@@ -77,6 +82,10 @@ arch centipede
 x 3
 y 3
 end
+arch slug
+x 3
+y 4
+end
 arch beehive
 x 3
 y 5
@@ -95,6 +104,10 @@ end
 arch spit_ant
 x 4
 y 2
+end
+arch slug
+x 4
+y 3
 end
 arch beehive
 x 4
@@ -118,16 +131,4 @@ end
 arch generate_stalker
 x 5
 y 5
-end
-arch breeder_ant
-x 1
-y 1
-end
-arch slug
-x 3
-y 4
-end
-arch slug
-x 4
-y 3
 end

@@ -1,123 +1,129 @@
 arch map
 name monsters2
+width 21
+height 30
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Tue Jun 24 11:19:39 1997
 endmsg
-width 21
-height 30
 end
 arch barbarian
-type 0
 hp 100
 maxhp 100
+type 0
 randomitems standard
 monster 1
 unaggressive 1
 end
 arch cleric
-type 0
 hp 100
 maxhp 100
+y 1
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 1
 end
 arch elf
-type 0
 hp 100
 maxhp 100
+y 2
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 2
 end
 arch fireborn
-type 0
 hp 100
 maxhp 100
+y 3
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 3
 end
 arch human
-type 0
 hp 100
 maxhp 100
+y 4
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 4
 end
 arch mage
-type 0
 hp 100
 maxhp 100
+y 5
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 5
 end
 arch ninja
-type 0
 hp 100
 maxhp 100
+y 6
+type 0
 monster 1
 unaggressive 1
-y 6
 end
 arch priest
-type 0
 hp 100
 maxhp 100
+y 7
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 7
 end
 arch swashbuckler
-type 0
 hp 100
 maxhp 100
+y 8
+type 0
 randomitems standard
 monster 1
 unaggressive 1
-y 8
 end
 arch thief
-type 0
 hp 100
 maxhp 100
-monster 1
-unaggressive 1
 y 9
-end
-arch viking
 type 0
 monster 1
 unaggressive 1
+end
+arch viking
 y 10
-end
-arch viking
 type 0
 monster 1
 unaggressive 1
+end
+arch viking
 y 11
+type 0
+monster 1
+unaggressive 1
 end
 arch wizard
+y 12
 type 0
 monster 1
 unaggressive 1
-y 12
 end
 arch conjurer
 y 13
 end
+arch ent
+y 14
+end
 arch imp
 y 17
+end
+arch big_demon
+y 18
 end
 arch dwarf
 x 1
@@ -173,6 +179,10 @@ end
 arch raas
 x 1
 y 17
+end
+arch demon_lord
+x 1
+y 25
 end
 arch warrior_1
 x 2
@@ -308,6 +318,10 @@ arch generate_devil
 x 3
 y 17
 end
+arch Balrog
+x 3
+y 18
+end
 arch man
 x 4
 end
@@ -351,9 +365,17 @@ arch neko
 x 4
 y 10
 end
+arch g_worm
+x 4
+y 11
+end
 arch bone_head
 x 4
 y 16
+end
+arch Greater_Demon
+x 4
+y 22
 end
 arch woman
 x 5
@@ -385,6 +407,10 @@ end
 arch fatwoman
 x 5
 y 7
+end
+arch lamia
+x 5
+y 14
 end
 arch living_chaos
 x 5
@@ -532,9 +558,24 @@ arch avatar
 x 7
 y 19
 end
+arch troll
+x 8
+end
+arch gaelotroll
+x 8
+y 2
+end
 arch generate_giant
 x 8
 y 5
+end
+arch big_wiz
+x 8
+y 10
+end
+arch byakie
+x 8
+y 14
 end
 arch evil_master4
 x 8
@@ -543,6 +584,14 @@ end
 arch mesangel
 x 8
 y 17
+end
+arch giant
+x 9
+y 5
+end
+arch titan
+x 9
+y 8
 end
 arch fire_elemental
 x 9
@@ -559,6 +608,21 @@ end
 arch air_elemental
 x 9
 y 20
+end
+arch minor_djinn
+x 10
+end
+arch djinn
+x 10
+y 2
+end
+arch dragonman
+x 10
+y 4
+end
+arch cyclops
+x 10
+y 14
 end
 arch para_fire
 x 10
@@ -583,6 +647,26 @@ arch elec_dragon
 x 11
 y 1
 end
+arch dragon
+x 11
+y 2
+end
+arch chinese_dragon
+x 11
+y 3
+end
+arch big_dragon
+x 11
+y 5
+end
+arch big_elec
+x 11
+y 7
+end
+arch baslic
+x 11
+y 10
+end
 arch para_lava
 x 11
 y 17
@@ -599,12 +683,32 @@ arch para_lightning
 x 11
 y 20
 end
+arch big_dragon_worthless
+x 11
+y 22
+end
+arch chinese_dragon
+x 11
+y 24
+end
 arch cold_dragon
 x 12
 end
 arch fire_dragon
 x 12
 y 1
+end
+arch Cwyvern
+x 12
+y 12
+end
+arch EDK
+x 12
+y 14
+end
+arch golem_necro
+x 12
+y 17
 end
 arch drake
 x 13
@@ -657,6 +761,18 @@ arch firechest
 x 14
 y 9
 end
+arch DK
+x 14
+y 14
+end
+arch jessyb
+x 14
+y 17
+end
+arch ArchAngel
+x 14
+y 21
+end
 arch ghost
 x 15
 end
@@ -695,6 +811,13 @@ end
 arch centipede_r
 x 15
 y 9
+end
+arch mabu
+x 15
+y 11
+end
+arch breeder_ant
+x 16
 end
 arch ant_egg
 x 16
@@ -739,6 +862,14 @@ end
 arch stalker
 x 16
 y 11
+end
+arch slug
+x 16
+y 12
+end
+arch belzebub
+x 16
+y 14
 end
 arch ant_larvae
 x 17
@@ -787,6 +918,14 @@ end
 arch snake
 x 18
 end
+arch serpent
+x 18
+y 1
+end
+arch cobra
+x 18
+y 2
+end
 arch mouse
 x 18
 y 4
@@ -807,9 +946,29 @@ arch blob
 x 18
 y 8
 end
+arch unicorn
+x 18
+y 9
+end
+arch sphinx
+x 18
+y 10
+end
 arch chicken
 x 18
 y 11
+end
+arch behemoth
+x 18
+y 12
+end
+arch dread
+x 18
+y 14
+end
+arch shadowtiger
+x 18
+y 16
 end
 arch shadowpup
 x 18
@@ -818,6 +977,9 @@ end
 arch mystic_fist
 x 18
 y 19
+end
+arch fire_serpent
+x 19
 end
 arch serp_man
 x 19
@@ -855,6 +1017,10 @@ arch sandy
 x 19
 y 18
 end
+arch polarbear
+x 19
+y 19
+end
 arch dire_wolf
 x 19
 y 21
@@ -891,6 +1057,10 @@ arch mastif
 x 20
 y 18
 end
+arch bear
+x 20
+y 19
+end
 arch wolf
 x 20
 y 21
@@ -914,174 +1084,4 @@ end
 arch chess_rook
 x 20
 y 29
-end
-arch ent
-y 14
-end
-arch big_demon
-y 18
-end
-arch demon_lord
-x 1
-y 25
-end
-arch Balrog
-x 3
-y 18
-end
-arch g_worm
-x 4
-y 11
-end
-arch Greater_Demon
-x 4
-y 22
-end
-arch lamia
-x 5
-y 14
-end
-arch troll
-x 8
-end
-arch gaelotroll
-x 8
-y 2
-end
-arch big_wiz
-x 8
-y 10
-end
-arch byakie
-x 8
-y 14
-end
-arch giant
-x 9
-y 5
-end
-arch titan
-x 9
-y 8
-end
-arch minor_djinn
-x 10
-end
-arch djinn
-x 10
-y 2
-end
-arch dragonman
-x 10
-y 4
-end
-arch cyclops
-x 10
-y 14
-end
-arch dragon
-x 11
-y 2
-end
-arch chinese_dragon
-x 11
-y 3
-end
-arch big_dragon
-x 11
-y 5
-end
-arch big_elec
-x 11
-y 7
-end
-arch baslic
-x 11
-y 10
-end
-arch big_dragon_worthless
-x 11
-y 22
-end
-arch chinese_dragon
-x 11
-y 24
-end
-arch Cwyvern
-x 12
-y 12
-end
-arch EDK
-x 12
-y 14
-end
-arch golem_necro
-x 12
-y 17
-end
-arch DK
-x 14
-y 14
-end
-arch jessyb
-x 14
-y 17
-end
-arch ArchAngel
-x 14
-y 21
-end
-arch mabu
-x 15
-y 11
-end
-arch breeder_ant
-x 16
-end
-arch slug
-x 16
-y 12
-end
-arch belzebub
-x 16
-y 14
-end
-arch serpent
-x 18
-y 1
-end
-arch cobra
-x 18
-y 2
-end
-arch unicorn
-x 18
-y 9
-end
-arch sphinx
-x 18
-y 10
-end
-arch behemoth
-x 18
-y 12
-end
-arch dread
-x 18
-y 14
-end
-arch shadowtiger
-x 18
-y 16
-end
-arch fire_serpent
-x 19
-end
-arch polarbear
-x 19
-y 19
-end
-arch bear
-x 20
-y 19
 end

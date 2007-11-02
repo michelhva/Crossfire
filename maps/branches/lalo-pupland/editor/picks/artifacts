@@ -1,12 +1,12 @@
 arch map
 name artifacts
+width 11
+height 14
 msg
 Creator: Gnat the Gnu
 Email: gnu@foo.bar
 Date: Fri Sep 27 14:41:42 1996
 endmsg
-x 11
-y 14
 end
 arch elvenboots
 end
@@ -268,8 +268,8 @@ x 5
 y 4
 value 2500
 weight 500
-need_an 0
 lifesave 0
+need_an 0
 end
 arch random_artifact
 x 5
