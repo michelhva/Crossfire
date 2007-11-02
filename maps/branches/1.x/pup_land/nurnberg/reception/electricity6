@@ -792,7 +792,8 @@ x 5
 y 10
 attack_movement 7
 can_cast_spell 1
-immune 16392
+resist_electricty 100
+resist_fear 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -816,7 +817,8 @@ x 5
 y 12
 attack_movement 7
 can_cast_spell 1
-immune 16392
+resist_electricty 100
+resist_fear 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1047,7 +1049,8 @@ x 7
 y 10
 attack_movement 7
 can_cast_spell 1
-immune 16392
+resist_electricty 100
+resist_fear 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1071,7 +1074,8 @@ x 7
 y 12
 attack_movement 7
 can_cast_spell 1
-immune 16392
+resist_electricty 100
+resist_fear 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
