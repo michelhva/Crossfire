@@ -5,9 +5,7 @@ region stoneville
 width 32
 height 32
 msg
-Creator: Viola Krings
-Email:
-Date: Tue Jul 15 10:58:35 1997
+Created:  1997-07-15 Viola Krings
 endmsg
 end
 arch woodfloor
@@ -3310,6 +3308,7 @@ x 16
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 16
@@ -3673,6 +3672,7 @@ x 18
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 18
@@ -3839,7 +3839,7 @@ msg
 We hope to provide you with a
 challange with this practicing
 compartment.
-The Guild
+              The Guild
 endmsg
 x 19
 y 19
@@ -4108,6 +4108,7 @@ x 20
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 20
@@ -4543,6 +4544,7 @@ x 22
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 22
@@ -4935,6 +4937,7 @@ maxsp 20
 x 24
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 24
@@ -5317,12 +5320,14 @@ Come to Lythanders altar and pray. Of
 you are accepted, you can call
 yourself lucky.
 endmsg
+face elf.151
 x 26
 y 24
 type 0
 monster 1
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 26
@@ -5712,6 +5717,7 @@ endmsg
 x 28
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 28
@@ -6110,6 +6116,7 @@ endmsg
 x 30
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 30

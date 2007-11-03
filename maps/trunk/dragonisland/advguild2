@@ -3308,6 +3308,7 @@ x 16
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 16
@@ -3671,6 +3672,7 @@ x 18
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 18
@@ -4106,6 +4108,7 @@ x 20
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 20
@@ -4541,6 +4544,7 @@ x 22
 y 24
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 22
@@ -4933,6 +4937,7 @@ maxsp 20
 x 24
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 24
@@ -5315,6 +5320,7 @@ Come to Lythanders altar and pray. Of
 you are accepted, you can call
 yourself lucky.
 endmsg
+face elf.151
 x 26
 y 24
 type 0
@@ -5322,6 +5328,7 @@ move_type walk
 monster 1
 friendly 1
 unaggressive 1
+stand_still 1
 end
 arch woodfloor
 x 26
@@ -5711,6 +5718,7 @@ endmsg
 x 28
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 28
@@ -6109,6 +6117,7 @@ endmsg
 x 30
 y 24
 friendly 1
+stand_still 1
 end
 arch woodfloor
 x 30
