@@ -228,10 +228,6 @@ y 5
 end
 arch wizard
 name Mad wizard
-msg
-@match *
-Die! DIE DIE!!
-endmsg
 Str 10
 Dex 10
 Con 6
@@ -246,35 +242,39 @@ dam 30
 ac -8
 x 1
 y 5
-speed 1.000000
+speed 1.0
 attack_movement 7
 level 50
 type 0
 resist_physical 30
-resist_magic 30
+resist_magic 100
 resist_fire 100
 resist_electricity 100
 resist_cold 100
+resist_confusion 100
+resist_weaponmagic 100
+resist_fear 100
 carrying 5000
 move_type walk
 monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-arch ability_cold
+arch spell_comet
 end
-arch ability_lightning
+arch spell_icestorm
 end
-arch ability_mass_confusion
+arch spell_frostbolt
 end
-arch ability_forced_dance
+arch spell_sm_lightning
 end
-arch ability_fear
+arch spell_fear
 end
-arch book
-sp 26
+arch spell_mass_confusion
 end
-arch ability_dragon
+arch spell_small_speedball
+end
+arch spell_dragonbreath
 end
 end
 arch dungeon_floor
@@ -323,16 +323,18 @@ resist_cold 100
 resist_paralyze 100
 carrying 100000
 move_type walk fly_low
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
 arch gem
 nrof 2000
 end
-arch ability_cold
+arch ability_dragonbreath
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_ball_lightning
 end
 end
 arch dungeon_floor
@@ -425,16 +427,18 @@ resist_cold 100
 resist_paralyze 100
 carrying 100000
 move_type walk fly_low
-arch ability_dragon
-end
-arch ability_mass_confusion
-end
-arch ability_lightning
-end
 arch gem
 nrof 2000
 end
-arch ability_cold
+arch ability_dragonbreath
+end
+arch abil_create_frost_wall
+end
+arch abil_icestorm
+end
+arch abil_large_icestorm
+end
+arch abil_ball_lightning
 end
 end
 arch dungeon_floor

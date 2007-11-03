@@ -1,12 +1,11 @@
 arch map
-name James House
+name James' House
+difficulty 1
 region lakecountry
 width 20
 height 18
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Wed May  3 22:04:51 1995
+Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -222,7 +221,7 @@ maxsp 50
 x 1
 y 14
 level 13
-arch ability_fear
+arch abil_fear
 end
 end
 arch grass
@@ -351,7 +350,7 @@ maxsp 50
 x 2
 y 16
 level 13
-arch ability_fear
+arch abil_fear
 end
 end
 arch grass
@@ -1305,7 +1304,7 @@ town!!! So be sure you mean to visit me when
 you come in.
 It would be nice of you not to bother
 with others' lives.
--James
+                      -James
 endmsg
 x 10
 y 14
