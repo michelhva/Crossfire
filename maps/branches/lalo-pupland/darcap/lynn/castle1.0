@@ -6,9 +6,7 @@ darkness 1
 width 20
 height 19
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Sun Jan 17 20:29:10 1999
+Created:  1999-01-17 Cater & Wade (john_cater@yahoo.com)
 endmsg
 end
 arch dungeon_floor
@@ -2349,10 +2347,6 @@ arch brazier
 x 18
 y 7
 end
-arch unholy_ground
-x 18
-y 8
-end
 arch dungeon_floor
 x 18
 y 8
@@ -2360,10 +2354,7 @@ end
 arch altar_mostrai
 x 18
 y 8
-end
-arch unholy_ground
-x 18
-y 9
+level 120
 end
 arch dungeon_floor
 x 18
@@ -2372,10 +2363,7 @@ end
 arch altar_mostrai
 x 18
 y 9
-end
-arch unholy_ground
-x 18
-y 10
+level 120
 end
 arch dungeon_floor
 x 18
@@ -2384,6 +2372,7 @@ end
 arch altar_mostrai
 x 18
 y 10
+level 120
 end
 arch unholy_ground
 x 18
