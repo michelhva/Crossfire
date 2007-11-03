@@ -7,6 +7,8 @@ difficulty 1
 region darcapcircus
 width 30
 height 27
+enter_x 8
+enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
 endmsg
@@ -234,8 +236,8 @@ x 1
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 1
 y 2
 end
@@ -419,8 +421,8 @@ x 2
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 2
 y 2
 end
@@ -760,8 +762,8 @@ x 3
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 3
 y 2
 end
@@ -1123,8 +1125,8 @@ x 4
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 4
 y 2
 end
@@ -1360,8 +1362,6 @@ slaying wurfbude
 x 4
 y 19
 connected 2
-move_on walk fly_low
-move_off 0
 end
 arch check_inv
 slaying wurfbude
@@ -1369,8 +1369,6 @@ x 4
 y 19
 last_sp 0
 connected 11
-move_on walk fly_low
-move_off 0
 end
 arch teleporter
 name exit here
@@ -1483,8 +1481,8 @@ x 5
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 5
 y 2
 end
@@ -1867,8 +1865,8 @@ x 6
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 6
 y 2
 end
@@ -2291,8 +2289,8 @@ x 7
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 7
 y 2
 end
@@ -2648,8 +2646,8 @@ x 8
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 8
 y 2
 end
@@ -3026,8 +3024,8 @@ x 9
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 9
 y 2
 end
@@ -3457,8 +3455,8 @@ x 10
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 10
 y 2
 end
@@ -3935,8 +3933,8 @@ x 11
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 11
 y 2
 end
@@ -4201,8 +4199,8 @@ x 12
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 12
 y 2
 end
@@ -5025,7 +5023,7 @@ weight 1
 connected 222
 end
 arch teleporter
-hp 13
+hp 14
 sp 13
 x 18
 y 13
@@ -5482,7 +5480,7 @@ identified 1
 end
 end
 arch teleporter
-hp 15
+hp 16
 sp 11
 x 23
 y 8
@@ -5642,7 +5640,7 @@ identified 1
 end
 end
 arch teleporter
-hp 16
+hp 17
 sp 11
 x 24
 y 8
