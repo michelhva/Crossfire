@@ -1,5 +1,6 @@
 arch map
 name Underground tavern
+difficulty 1
 region portjoseph
 darkness 4
 width 10
@@ -193,14 +194,14 @@ arch woodfloor2
 x 2
 y 6
 end
+arch table_2x1
+x 2
+y 6
+end
 arch platter1_bro
 x 2
 y 6
 no_pick 1
-end
-arch table_2x1
-x 2
-y 6
 end
 arch woodfloor2
 x 2
@@ -242,14 +243,14 @@ arch woodfloor2
 x 3
 y 2
 end
+arch table_1x2
+x 3
+y 2
+end
 arch platter1_sil
 x 3
 y 2
 no_pick 1
-end
-arch table_1x2
-x 3
-y 2
 end
 arch woodfloor2
 x 3
