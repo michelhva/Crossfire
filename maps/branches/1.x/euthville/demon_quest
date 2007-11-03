@@ -1141,7 +1141,11 @@ end
 arch imp
 x 5
 y 1
-arch ability_fire
+arch abil_medium_fireball
+end
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
 end
 end
 arch medium_stones
@@ -1580,7 +1584,11 @@ carrying 100
 arch key2
 slaying gateway
 end
-arch ability_fire
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
+end
+arch abil_burning_hands
 end
 end
 arch medium_stones
@@ -3120,7 +3128,11 @@ end
 arch imp
 x 14
 y 16
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_medium_fireball
+end
+arch abil_create_fire_wall
 end
 end
 arch medium_stones
@@ -3705,7 +3717,11 @@ end
 arch imp
 x 17
 y 6
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -5452,7 +5468,11 @@ end
 arch imp
 x 25
 y 12
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -5757,7 +5777,11 @@ carrying 100
 arch key2
 slaying inner_circle
 end
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
@@ -6193,7 +6217,11 @@ end
 arch imp
 x 29
 y 4
-arch ability_fire
+arch abil_burning_hands
+end
+arch abil_create_fire_wall
+end
+arch abil_medium_fireball
 end
 end
 arch medium_stones
