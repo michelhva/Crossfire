@@ -6,6 +6,7 @@ width 32
 height 38
 msg
 Created:  1996-02-04
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2992,7 +2993,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 88
 ac -30
 x 16
 y 4
@@ -3000,6 +3000,8 @@ speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
+arch spell_ball_lightning
+end
 end
 arch pit_closed
 hp 9
@@ -3013,7 +3015,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 88
 ac -30
 x 16
 y 5
@@ -3021,6 +3022,8 @@ speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
+arch spell_ball_lightning
+end
 end
 arch pit_closed
 hp 23
@@ -3034,7 +3037,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 88
 ac -30
 x 16
 y 6
@@ -3042,6 +3044,8 @@ speed 0.250000
 speed_left -2.370000
 level 50
 alive 1
+arch spell_ball_lightning
+end
 end
 arch blocked
 x 16
@@ -3253,7 +3257,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 58
 ac -30
 x 17
 y 4
@@ -3261,6 +3264,8 @@ speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
+arch spell_dragonbreath
+end
 end
 arch pit_closed
 hp 9
@@ -3274,7 +3279,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 58
 ac -30
 x 17
 y 5
@@ -3282,6 +3286,8 @@ speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
+arch spell_dragonbreath
+end
 end
 arch pit_closed
 hp 23
@@ -3295,7 +3301,6 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 58
 ac -30
 x 17
 y 6
@@ -3303,6 +3308,8 @@ speed 0.250000
 speed_left -0.410000
 level 50
 alive 1
+arch spell_dragonbreath
+end
 end
 arch blocked
 x 17
@@ -3539,13 +3546,14 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 8
 ac -30
 x 18
 y 4
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch pit_closed
 hp 9
@@ -3561,13 +3569,14 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 8
 ac -30
 x 18
 y 5
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch pit_closed
 hp 23
@@ -3583,13 +3592,14 @@ Con 100
 hp 5000
 maxhp 5000
 sp 0
-dam 8
 ac -30
 x 18
 y 6
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch blocked
 x 18

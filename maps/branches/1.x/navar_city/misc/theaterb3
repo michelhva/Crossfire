@@ -10,6 +10,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2004-02-03 Mikeeusa
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 tile_path_4 /navar_city/misc/theaterb4
 end
@@ -10825,8 +10826,10 @@ y 85
 carrying 7000
 arch rod_heavy
 name rod of ali
-sp 0
 level 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch detector

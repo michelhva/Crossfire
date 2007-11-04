@@ -4,6 +4,7 @@ width 7
 height 20
 msg
 Created:  2002-08-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch afloor_right
@@ -110,6 +111,8 @@ end
 arch active_volcano
 x 1
 y 16
+arch spell_magic_bullet
+end
 end
 arch snow
 x 1

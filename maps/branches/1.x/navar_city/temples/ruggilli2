@@ -8,7 +8,7 @@ enter_x 5
 enter_y 7
 msg
 Created:  2003-12-13 Avion
-Modified: 2005-05-25
+Modified: 2007-11-04 Andreas Kirschbaum
 With kudos to DH
 endmsg
 end
@@ -795,6 +795,8 @@ speed 0.0
 level 5
 invisible 1
 connected 16
+arch spell_small_fireball
+end
 end
 arch pstone_1
 x 4
@@ -835,6 +837,8 @@ speed 0.0
 level 5
 invisible 1
 connected 15
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 4
@@ -3758,6 +3762,8 @@ arch firewall_1
 x 19
 y 22
 invisible 1
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 19

@@ -10,6 +10,7 @@ enter_y 33
 msg
 Created:  2000-06-08
 Originally in peterm/quests
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch medium_stones
@@ -5205,10 +5206,12 @@ end
 arch full_helmet
 end
 arch scroll_new
-sp 126
 exp 30
 level 10
 value 152
+randomitems none
+arch spell_restoration
+end
 end
 end
 arch medium_stones

@@ -4,6 +4,7 @@ width 30
 height 22
 msg
 Created:  2002-09-03 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch teleporter
@@ -3897,14 +3898,20 @@ end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 26

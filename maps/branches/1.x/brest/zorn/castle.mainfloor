@@ -7,6 +7,7 @@ enter_x 29
 enter_y 3
 msg
 Created:  2005-09-26 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -4321,9 +4322,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -4390,9 +4393,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -11606,9 +11611,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -11675,9 +11682,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -13381,9 +13390,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -13863,9 +13874,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -14346,9 +14359,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -16147,9 +16162,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -16216,9 +16233,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -23639,9 +23658,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -23708,9 +23729,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end

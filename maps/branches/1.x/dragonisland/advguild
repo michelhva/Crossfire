@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  1997-07-10 Viola Krings
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1914,10 +1915,11 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 9
 y 12
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 9
@@ -1930,10 +1932,11 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 9
 y 14
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 9

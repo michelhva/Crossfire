@@ -9,6 +9,7 @@ enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
 Info: Zorn Castle, first upper floor
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -3944,12 +3945,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 11
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch duplicator
 other_arch cauldron
@@ -4001,12 +4003,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 11
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 11
@@ -4213,12 +4216,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 11
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 11
@@ -4284,12 +4288,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 11
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 11
@@ -4483,12 +4488,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 x 12
@@ -4506,12 +4512,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 12
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 x 12
@@ -4536,12 +4543,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 12
@@ -4774,12 +4782,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 12
@@ -4816,12 +4825,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 45
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 12
@@ -4865,12 +4875,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 12
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 12
@@ -5108,12 +5119,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 13
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 13
@@ -5142,12 +5154,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 13
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 13
@@ -5411,12 +5424,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 13
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 13
@@ -5461,12 +5475,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 13
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 13
@@ -23577,12 +23592,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 45
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 msg
@@ -23638,12 +23654,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 45
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 45
@@ -23903,12 +23920,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 45
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 45
@@ -23929,12 +23947,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 45
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch duplicator
 name power crystal
@@ -24178,12 +24197,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 46
@@ -24196,12 +24216,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 12
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 46
@@ -24221,12 +24242,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 46
@@ -24459,12 +24481,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 46
@@ -24477,12 +24500,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 45
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 x 46
@@ -24508,12 +24532,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 46
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 x 46
@@ -24739,12 +24764,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 47
 y 11
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch trap
 msg
@@ -24801,12 +24827,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 47
 y 13
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch stonefloor2
 x 47
@@ -25013,12 +25040,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 47
 y 44
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch cobblestones
 x 47
@@ -25039,12 +25067,13 @@ You set off a trap!
 endmsg
 Cha 200
 hp 5
-sp 8
 dam 50
 x 47
 y 46
 level 50
 attacktype 256
+arch spell_create_bomb
+end
 end
 arch duplicator
 name rod heavy
@@ -25074,13 +25103,15 @@ arch rod_heavy
 name Missile Swarm
 name_pl Missile Swarms
 maxhp 100
-sp 203
 x 47
 y 46
 level 75
 value 70000
 weight 20000
+randomitems none
 startequip 1
+arch spell_missile_swarm
+end
 end
 arch cobblestones2
 x 47

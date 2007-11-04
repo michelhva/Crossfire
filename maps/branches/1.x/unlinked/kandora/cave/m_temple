@@ -5,6 +5,7 @@ height 11
 enter_y 10
 msg
 Created:  1999-01-28 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -284,6 +285,8 @@ end
 arch firewall_1
 x 4
 y 1
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 4
@@ -374,6 +377,8 @@ end
 arch firewall_1
 x 5
 y 1
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 5
@@ -457,12 +462,24 @@ end
 arch chain_mail
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch turban
 end

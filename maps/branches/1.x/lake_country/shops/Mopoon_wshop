@@ -9,6 +9,7 @@ width 24
 height 24
 msg
 Created:  1995-03-19 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -265,6 +266,8 @@ arch firewall_3
 name fire jet
 x 2
 y 6
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 2
@@ -274,6 +277,8 @@ arch firewall_2
 name fire jet
 x 2
 y 7
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 2
@@ -414,6 +419,8 @@ arch firewall_1
 name fire jet
 x 3
 y 7
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 3
@@ -2200,6 +2207,8 @@ end
 arch firewall_3
 x 15
 y 7
+arch spell_small_fireball
+end
 end
 arch cave25
 x 15
@@ -2345,6 +2354,8 @@ end
 arch firewall_4
 x 16
 y 6
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 16
@@ -2361,6 +2372,8 @@ end
 arch firewall_3
 x 16
 y 8
+arch spell_small_fireball
+end
 end
 arch cave25
 x 16
@@ -2511,6 +2524,8 @@ end
 arch firewall_5
 x 17
 y 6
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 17

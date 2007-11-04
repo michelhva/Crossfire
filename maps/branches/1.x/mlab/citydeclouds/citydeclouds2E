@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2D
@@ -17192,7 +17193,6 @@ end
 arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
-sp 163
 x 40
 y 13
 value 1500
@@ -17212,7 +17212,6 @@ end
 arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
-sp 163
 x 40
 y 14
 value 1500
@@ -17570,7 +17569,6 @@ end
 arch staff
 name staff of healing
 name_pl staff of healing
-sp 34
 food 20
 x 41
 y 13
@@ -17592,7 +17590,6 @@ end
 arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
-sp 171
 x 41
 y 14
 level 20
@@ -17972,7 +17969,6 @@ end
 arch balm_generic
 name balm of major healing
 name_pl balm of major healing
-sp 34
 x 42
 y 13
 nrof 5
@@ -17993,7 +17989,6 @@ end
 arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
-sp 171
 x 42
 y 14
 level 20
@@ -18393,7 +18388,6 @@ end
 arch balm_generic
 name balm of major healing
 name_pl balm of major healing
-sp 34
 x 43
 y 14
 nrof 5

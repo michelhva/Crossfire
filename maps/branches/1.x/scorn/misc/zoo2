@@ -6,6 +6,7 @@ width 50
 height 50
 msg
 Created:  2001-02-13
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -7782,6 +7783,8 @@ x 17
 y 32
 invisible 1
 connected 1
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 17
@@ -9087,6 +9090,8 @@ x 20
 y 28
 invisible 1
 connected 2
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 20
@@ -10533,6 +10538,8 @@ x 23
 y 34
 invisible 1
 connected 2
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 23
@@ -11406,6 +11413,8 @@ x 25
 y 28
 invisible 1
 connected 1
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 25

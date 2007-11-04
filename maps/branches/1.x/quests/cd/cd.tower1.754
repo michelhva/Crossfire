@@ -3,6 +3,9 @@ name Fortress Ang
 difficulty 1
 width 70
 height 70
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 end
 arch cobblestones2
 end
@@ -6458,6 +6461,8 @@ end
 arch firewall_3
 x 36
 y 48
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 36
@@ -6806,6 +6811,8 @@ end
 arch bulletwall
 x 39
 y 50
+arch spell_magic_bullet
+end
 end
 arch cobblestones2
 x 39
@@ -6930,6 +6937,8 @@ end
 arch bulletwall_4
 x 40
 y 47
+arch spell_magic_bullet
+end
 end
 arch cobblestones2
 x 40
@@ -8042,6 +8051,8 @@ end
 arch bulletwall_6
 x 46
 y 47
+arch spell_magic_bullet
+end
 end
 arch cobblestones2
 x 46
@@ -8190,6 +8201,8 @@ end
 arch bulletwall
 x 47
 y 50
+arch spell_magic_bullet
+end
 end
 arch cobblestones2
 x 47
@@ -8522,6 +8535,8 @@ end
 arch firewall_7
 x 50
 y 48
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 50
@@ -13057,10 +13072,12 @@ carrying 117725
 has_ready_bow 1
 has_ready_wand 1
 arch wand
-sp 16
 food 3
 value 833
+randomitems none
 applied 1
+arch spell_paralyze
+end
 end
 arch arrow
 nrof 17

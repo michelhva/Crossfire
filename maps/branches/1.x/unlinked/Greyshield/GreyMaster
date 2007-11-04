@@ -5,6 +5,7 @@ width 32
 height 24
 msg
 Created:  1996-11-06 Chris Jeske
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dun10
@@ -3148,10 +3149,11 @@ end
 arch lightningwall_5
 name wall
 face cave_12.111
-dam 43
 x 21
 y 9
 level 10
+arch spell_create_fire_wall
+end
 end
 arch unholy_ground
 x 21
@@ -3186,10 +3188,11 @@ end
 arch lightningwall_1
 name wall
 face cave_12.111
-dam 43
 x 21
 y 12
 level 10
+arch spell_create_fire_wall
+end
 end
 arch unholy_ground
 x 21
@@ -3224,10 +3227,11 @@ end
 arch lightningwall_5
 name wall
 face cave_12.111
-dam 44
 x 21
 y 15
 level 10
+arch spell_create_frost_wall
+end
 end
 arch unholy_ground
 x 21
@@ -3262,10 +3266,11 @@ end
 arch lightningwall_1
 name wall
 face cave_12.111
-dam 44
 x 21
 y 18
 level 10
+arch spell_create_frost_wall
+end
 end
 arch unholy_ground
 x 21
@@ -3421,11 +3426,12 @@ end
 arch lightningwall_5
 name wall
 face dun_A.111
-dam 88
 x 22
 y 12
 speed -0.008000
 level 15
+arch spell_ball_lightning
+end
 end
 arch unholy_ground
 x 22
@@ -3678,10 +3684,11 @@ end
 arch lightningwall_5
 name wall
 face cave_13.111
-dam 43
 x 23
 y 9
 level 10
+arch spell_create_fire_wall
+end
 end
 arch unholy_ground
 x 23
@@ -3716,10 +3723,11 @@ end
 arch lightningwall_1
 name wall
 face cave_13.111
-dam 43
 x 23
 y 12
 level 10
+arch spell_create_fire_wall
+end
 end
 arch unholy_ground
 x 23
@@ -3754,10 +3762,11 @@ end
 arch lightningwall_5
 name wall
 face cave_13.111
-dam 44
 x 23
 y 15
 level 10
+arch spell_create_frost_wall
+end
 end
 arch unholy_ground
 x 23
@@ -3792,10 +3801,11 @@ end
 arch lightningwall_1
 name wall
 face cave_13.111
-dam 44
 x 23
 y 18
 level 10
+arch spell_create_frost_wall
+end
 end
 arch unholy_ground
 x 23

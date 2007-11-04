@@ -8,6 +8,7 @@ enter_x 29
 enter_y 50
 msg
 Created:  2006-06-11 Gene Alexander (poof@eracc.com)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -9103,6 +9104,7 @@ arch rod_heavy
 hp 1000
 maxhp 1000
 level 110
+randomitems none
 applied 1
 startequip 1
 arch spell_sunspear
@@ -9112,6 +9114,7 @@ arch rod_heavy
 hp 1000
 maxhp 1000
 level 55
+randomitems none
 applied 1
 startequip 1
 arch spell_banishment

@@ -6,6 +6,7 @@ width 10
 height 20
 msg
 Created:  2005-03-23 Huhanhi
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -569,10 +570,11 @@ y 9
 end
 arch balm_generic
 title of lesser healing
-sp 32
 x 3
 y 9
 value 100
+arch spell_minor_healing
+end
 end
 arch flagstone
 x 3
@@ -589,10 +591,11 @@ y 10
 end
 arch balm_generic
 title of lesser healing
-sp 32
 x 3
 y 10
 value 100
+arch spell_minor_healing
+end
 end
 arch flagstone
 x 3
@@ -759,10 +762,11 @@ y 9
 end
 arch balm_generic
 title of lesser healing
-sp 32
 x 4
 y 9
 value 100
+arch spell_minor_healing
+end
 end
 arch flagstone
 x 4
@@ -1382,10 +1386,11 @@ y 6
 end
 arch balm_generic
 title of lesser healing
-sp 32
 x 8
 y 6
 value 100
+arch spell_minor_healing
+end
 end
 arch cobblestones2
 x 8

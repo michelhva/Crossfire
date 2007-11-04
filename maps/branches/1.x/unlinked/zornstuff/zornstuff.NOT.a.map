@@ -4,6 +4,7 @@ width 20
 height 20
 msg
 Created:  2006-09-09
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch lamppost
@@ -415,9 +416,11 @@ end
 arch rod_light
 hp 25
 maxhp 25
-sp 21
 level 20
+randomitems none
 applied 1
+arch spell_poison_cloud
+end
 end
 arch skill_one_handed_weapon
 end
@@ -970,20 +973,24 @@ name rod of sunspear
 name_pl rods of sunspear
 hp 500
 maxhp 500
-sp 161
 level 110
 value 3500
+randomitems none
 startequip 1
+arch spell_sunspear
+end
 end
 arch rod_light
 name rod of sanctuary
 name_pl rods of sanctuary
 hp 500
 maxhp 500
-sp 190
 level 110
 value 3500
+randomitems none
 startequip 1
+arch spell_sanctuary
+end
 end
 arch skill_use_magic_item
 can_use_skill 1

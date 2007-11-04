@@ -5,6 +5,7 @@ width 28
 height 33
 msg
 Created:  1994-02-30
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -3240,6 +3241,8 @@ end
 arch lightningwall_5
 x 14
 y 20
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 14
@@ -3304,6 +3307,8 @@ end
 arch lightningwall_1
 x 14
 y 28
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 14
@@ -5664,6 +5669,8 @@ end
 arch firewall_5
 x 25
 y 8
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 25
@@ -5732,6 +5739,8 @@ end
 arch firewall_1
 x 25
 y 19
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 25
@@ -5863,6 +5872,8 @@ end
 arch lightningwall_7
 x 26
 y 9
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 26

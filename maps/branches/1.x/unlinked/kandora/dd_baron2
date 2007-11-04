@@ -5,6 +5,7 @@ height 6
 enter_x 5
 msg
 Created:  1999-01-27 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -187,10 +188,19 @@ x 3
 y 4
 carrying 31800
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch high_boots
 end

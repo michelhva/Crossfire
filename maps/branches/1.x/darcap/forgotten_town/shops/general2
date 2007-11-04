@@ -10,6 +10,7 @@ enter_x 13
 enter_y 1
 msg
 Created:  2005-07-21 Knut Ahlers
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch stonefloor2
@@ -179,6 +180,7 @@ x 1
 y 13
 level 115
 value 7
+randomitems none
 identified 1
 arch spell_destruction
 sp 9000

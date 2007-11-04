@@ -5,6 +5,7 @@ height 14
 enter_x 1
 msg
 Created:  1999-01-28 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -242,6 +243,9 @@ end
 arch wand
 x 2
 y 8
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch madman
 x 2
@@ -788,6 +792,9 @@ x 8
 y 6
 carrying 2300
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch cobblestones2

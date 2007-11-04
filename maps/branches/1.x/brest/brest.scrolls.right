@@ -12,6 +12,7 @@ width 30
 height 40
 msg
 Created:  2005-05-23 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls
@@ -4877,9 +4878,9 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 161
 level 110
 value 3500
+randomitems none
 startequip 1
 arch spell_sunspear
 end
@@ -4887,9 +4888,9 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 190
 level 110
 value 3500
+randomitems none
 startequip 1
 arch spell_sanctuary
 end

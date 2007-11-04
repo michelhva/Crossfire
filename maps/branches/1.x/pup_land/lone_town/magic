@@ -6,6 +6,7 @@ width 20
 height 25
 msg
 Created:  1997-11-26
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -3227,13 +3228,14 @@ arch blocked
 x 17
 end
 arch lightningwall_5
-dam 139
 x 17
 y 1
 speed 0.300000
 speed_left -5.570000
 level 100
 alive 1
+arch spell_steambolt
+end
 end
 arch grate_closed_1
 name 1
@@ -3252,13 +3254,14 @@ x 17
 y 9
 end
 arch lightningwall_5
-dam 139
 x 17
 y 10
 speed 0.300000
 speed_left -5.570000
 level 100
 alive 1
+arch spell_steambolt
+end
 end
 arch grate_closed_1
 name 3

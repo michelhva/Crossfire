@@ -5,6 +5,7 @@ height 32
 enter_y 27
 msg
 Created:  1996-09-16 Chris Jeske
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch medium_stones
@@ -410,6 +411,8 @@ end
 arch lightningwall_5
 x 1
 y 6
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -427,6 +430,8 @@ end
 arch lightningwall_1
 x 1
 y 8
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -459,6 +464,8 @@ end
 arch lightningwall_5
 x 1
 y 12
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -476,6 +483,8 @@ end
 arch lightningwall_1
 x 1
 y 14
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -500,6 +509,8 @@ end
 arch lightningwall_5
 x 1
 y 17
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -517,6 +528,8 @@ end
 arch lightningwall_1
 x 1
 y 19
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -541,6 +554,8 @@ end
 arch lightningwall_5
 x 1
 y 22
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -558,6 +573,8 @@ end
 arch lightningwall_1
 x 1
 y 24
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 1
@@ -2053,6 +2070,8 @@ end
 arch lightningwall_3
 x 6
 y 1
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 6
@@ -2535,6 +2554,8 @@ end
 arch lightningwall_7
 x 8
 y 1
+arch spell_sm_lightning
+end
 end
 arch medium_stones
 x 8

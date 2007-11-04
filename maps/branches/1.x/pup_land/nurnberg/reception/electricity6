@@ -6,6 +6,7 @@ width 19
 height 16
 msg
 Created:  1996-02-20
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -117,10 +118,11 @@ x 1
 y 1
 end
 arch lightningwall_3
-dam 6
 x 1
 y 1
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -1030,10 +1032,11 @@ x 7
 y 9
 end
 arch lightningwall_1
-dam 6
 x 7
 y 9
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 7
@@ -1175,10 +1178,11 @@ x 8
 y 9
 end
 arch lightningwall_1
-dam 6
 x 8
 y 9
 level 40
+arch spell_large_lightning
+end
 end
 arch marble
 x 8

@@ -5,6 +5,7 @@ height 16
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -1404,6 +1405,8 @@ end
 arch firewall_5
 x 13
 y 6
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 13
@@ -1445,6 +1448,8 @@ end
 arch lightningwall_1
 x 13
 y 10
+arch spell_sm_lightning
+end
 end
 arch cobblestones2
 x 13
