@@ -1,5 +1,4 @@
 Object lbulletwall
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -20,13 +19,13 @@ is_animated 0
 speed -0.16
 no_pick 1
 move_block all
-dam 29
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_1
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -34,16 +33,16 @@ activate_on_release 1
 level 1
 face lbull_wall.111
 sp 1
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_2
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -51,16 +50,16 @@ activate_on_release 1
 level 1
 face lbull_wall.121
 sp 2
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_3
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -68,16 +67,16 @@ activate_on_release 1
 level 1
 face lbull_wall.131
 sp 3
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_4
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -85,16 +84,16 @@ activate_on_release 1
 level 1
 face lbull_wall.141
 sp 4
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_5
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -102,16 +101,16 @@ activate_on_release 1
 level 1
 face lbull_wall.151
 sp 5
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_6
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -119,16 +118,16 @@ activate_on_release 1
 level 1
 face lbull_wall.161
 sp 6
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_7
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -136,16 +135,16 @@ activate_on_release 1
 level 1
 face lbull_wall.171
 sp 7
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end
 Object lbulletwall_8
-other_arch spell_lg_magic_bullet
 name large bulletwall
 type 62
 activate_on_push 1
@@ -153,11 +152,12 @@ activate_on_release 1
 level 1
 face lbull_wall.181
 sp 8
-dam 29
 speed -0.04
 no_pick 1
 move_block all
 blocksview 1
 visibility 100
 magicmap yellow
+arch spell_lg_magic_bullet
+end
 end

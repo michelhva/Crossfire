@@ -13,8 +13,9 @@ anim_speed 4
 client_anim_random 1
 color_fg blue
 type 5
-sp 35
 weight 10
 name_pl Gaea's tears
 client_type 650
+arch spell_heal
+end
 end

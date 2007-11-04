@@ -8,8 +8,9 @@ level 1
 material 4
 weight 1000
 value 500
-sp 80
 name_pl potions of heroism
 on_use_yield potion_empty
 client_type 651
+arch spell_heroism
+end
 end
