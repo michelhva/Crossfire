@@ -7,9 +7,7 @@ height 12
 enter_x 6
 enter_y 9
 msg
-Creator: Raphael Quinet
-Email: quinet@gamers.org
-Date: Mon Jan 18 03:20:28 1999
+Created:  1999-01-18 Raphael Quinet (quinet@gamers.org)
 endmsg
 end
 arch woodfloor
@@ -266,6 +264,10 @@ arch cobblestones2
 x 3
 y 6
 end
+arch dungeon_magic
+x 3
+y 7
+end
 arch woodfloor
 x 3
 y 7
@@ -345,6 +347,10 @@ arch cobblestones2
 x 4
 y 6
 end
+arch dungeon_magic
+x 4
+y 7
+end
 arch woodfloor
 x 4
 y 7
@@ -412,6 +418,10 @@ arch cobblestones2
 x 5
 y 6
 end
+arch dungeon_magic
+x 5
+y 7
+end
 arch woodfloor
 x 5
 y 7
@@ -466,6 +476,10 @@ end
 arch cobblestones2
 x 6
 y 6
+end
+arch dungeon_magic
+x 6
+y 7
 end
 arch woodfloor
 x 6
@@ -540,6 +554,10 @@ end
 arch cobblestones2
 x 7
 y 6
+end
+arch dungeon_magic
+x 7
+y 7
 end
 arch woodfloor
 x 7
@@ -635,6 +653,10 @@ arch cobblestones2
 x 8
 y 6
 end
+arch dungeon_magic
+x 8
+y 7
+end
 arch woodfloor
 x 8
 y 7
@@ -701,6 +723,10 @@ end
 arch cobblestones2
 x 9
 y 6
+end
+arch dungeon_magic
+x 9
+y 7
 end
 arch woodfloor
 x 9
