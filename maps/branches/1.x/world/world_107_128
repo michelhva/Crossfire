@@ -1,5 +1,6 @@
 arch map
 name world_107_128
+difficulty 1
 width 50
 height 50
 outdoor 1
@@ -1618,9 +1619,6 @@ y 38
 end
 arch s_ship
 name grey galleon
-slaying Island1
-hp 11
-sp 12
 x 6
 y 38
 end
@@ -1669,9 +1667,6 @@ x 6
 y 48
 end
 arch ruins
-slaying Ruins
-hp 7
-sp 1
 x 6
 y 48
 end
