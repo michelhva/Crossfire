@@ -2057,10 +2057,6 @@ arch woodfloor
 x 11
 y 13
 end
-arch skeleton
-x 11
-y 13
-end
 arch woodfloor
 x 11
 y 14
@@ -2401,15 +2397,11 @@ arch woodfloor
 x 13
 y 13
 end
-arch skeleton
+arch zombie
 x 13
 y 13
 end
 arch woodfloor
-x 13
-y 14
-end
-arch skeleton
 x 13
 y 14
 end
@@ -2421,7 +2413,7 @@ arch woodfloor
 x 13
 y 16
 end
-arch skeleton
+arch zombie
 x 13
 y 16
 end
@@ -2761,15 +2753,11 @@ arch woodfloor
 x 15
 y 14
 end
-arch generate_skeleton
+arch generate_zombie
 x 15
 y 14
 end
 arch woodfloor
-x 15
-y 15
-end
-arch generate_skeleton
 x 15
 y 15
 end

@@ -1,14 +1,13 @@
 arch map
-name maze1
+name Fun House
+difficulty 1
 region scorn
 width 26
 height 26
 enter_x 1
 enter_y 18
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Nov 13 18:51:16 1994
+Created:  1994-02-13
 endmsg
 end
 arch woodfloor
@@ -2058,10 +2057,6 @@ arch woodfloor
 x 11
 y 13
 end
-arch skeleton
-x 11
-y 13
-end
 arch woodfloor
 x 11
 y 14
@@ -2402,15 +2397,11 @@ arch woodfloor
 x 13
 y 13
 end
-arch skeleton
+arch zombie
 x 13
 y 13
 end
 arch woodfloor
-x 13
-y 14
-end
-arch skeleton
 x 13
 y 14
 end
@@ -2422,7 +2413,7 @@ arch woodfloor
 x 13
 y 16
 end
-arch skeleton
+arch zombie
 x 13
 y 16
 end
@@ -2762,15 +2753,11 @@ arch woodfloor
 x 15
 y 14
 end
-arch generate_skeleton
+arch generate_zombie
 x 15
 y 14
 end
 arch woodfloor
-x 15
-y 15
-end
-arch generate_skeleton
 x 15
 y 15
 end
