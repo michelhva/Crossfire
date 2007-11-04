@@ -377,7 +377,7 @@ arch woodfloor
 x 3
 y 6
 end
-arch wwall_2_1_2
+arch wwall_win2
 x 3
 y 6
 end
@@ -503,7 +503,7 @@ arch woodfloor
 x 4
 y 10
 end
-arch wwall_2_1_2
+arch wwall_win2
 x 4
 y 10
 end
@@ -1069,7 +1069,7 @@ arch woodfloor
 x 10
 y 3
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 10
 y 3
 end
@@ -1101,7 +1101,7 @@ arch woodfloor
 x 10
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 10
 y 7
 end
@@ -1249,10 +1249,6 @@ arch woodfloor
 x 11
 y 14
 end
-arch generate_skeleton
-x 11
-y 14
-end
 arch woodfloor
 x 11
 y 15
@@ -1327,6 +1323,13 @@ end
 arch woodfloor
 x 12
 y 14
+end
+arch generate_zombie
+hp 75
+maxhp 75
+x 12
+y 14
+speed 0.0060
 end
 arch woodfloor
 x 12
