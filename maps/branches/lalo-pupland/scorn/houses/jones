@@ -5,9 +5,7 @@ region scorn
 width 20
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb 23 15:28:18 1994
+Created:  1994-02-23
 endmsg
 end
 arch exit
@@ -2453,8 +2451,6 @@ randomitems none
 arch rune_shock
 dam 15
 level 5
-end
-arch trap_spikes2
 end
 arch random_talisman
 end
