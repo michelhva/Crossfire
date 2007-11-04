@@ -6,6 +6,7 @@ width 23
 height 23
 msg
 Created:  1996-02-04
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -127,6 +128,8 @@ end
 arch lightningwall_3
 x 1
 y 1
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -135,6 +138,8 @@ end
 arch lightningwall_2
 x 1
 y 2
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -146,6 +151,8 @@ y 3
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -157,6 +164,8 @@ y 4
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -168,6 +177,8 @@ y 5
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -179,6 +190,8 @@ y 6
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -190,6 +203,8 @@ y 7
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -201,6 +216,8 @@ y 8
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -209,6 +226,8 @@ end
 arch lightningwall_1
 x 1
 y 9
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -217,6 +236,8 @@ end
 arch lightningwall_t
 x 1
 y 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -283,6 +304,8 @@ end
 arch lightningwall_3
 x 2
 y 1
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 2
@@ -395,6 +418,8 @@ end
 arch lightningwall_8
 x 2
 y 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 2
@@ -463,6 +488,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 3
@@ -556,6 +583,8 @@ end
 arch lightningwall_7
 x 3
 y 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 3
@@ -622,6 +651,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 4
@@ -708,6 +739,8 @@ end
 arch lightningwall_7
 x 4
 y 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 4
@@ -789,6 +822,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 5
@@ -871,6 +906,8 @@ end
 arch lightningwall_7
 x 5
 y 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 5
@@ -956,6 +993,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 6
@@ -1039,6 +1078,8 @@ arch lightningwall_1
 x 6
 y 10
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 6
@@ -1137,6 +1178,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 7
@@ -1220,6 +1263,8 @@ arch lightningwall_1
 x 7
 y 10
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 7
@@ -1337,6 +1382,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 8
@@ -1420,6 +1467,8 @@ arch lightningwall_1
 x 8
 y 10
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 8
@@ -1513,6 +1562,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 9
@@ -1596,6 +1647,8 @@ arch lightningwall_1
 x 9
 y 10
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 9
@@ -1689,6 +1742,8 @@ y 1
 speed 0.100000
 speed_left 0.100000
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 10
@@ -1771,6 +1826,8 @@ end
 arch firewall_1
 x 10
 y 10
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 10
@@ -1878,6 +1935,8 @@ arch lightningwall_5
 x 11
 y 1
 level 100
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 11

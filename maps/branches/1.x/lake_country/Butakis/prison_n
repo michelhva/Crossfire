@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-03-29
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -591,9 +592,10 @@ end
 arch firewall_5
 name anti-magic wall
 face dun_1.111
-dam 128
 x 6
 y 8
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 6
@@ -628,9 +630,10 @@ end
 arch firewall_5
 name anti-magic wall
 face dun_1.111
-dam 128
 x 6
 y 12
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 6
@@ -774,9 +777,10 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_1.111
-dam 128
 x 8
 y 2
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -795,9 +799,10 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_4.111
-dam 128
 x 8
 y 4
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -814,9 +819,10 @@ end
 arch firewall_7
 name anti-magic wall
 face dun_5.111
-dam 128
 x 8
 y 6
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8

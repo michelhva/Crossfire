@@ -10,6 +10,7 @@ width 20
 height 20
 msg
 What an odd map.
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -226,6 +227,8 @@ end
 arch firewall
 x 1
 y 17
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 1
@@ -336,6 +339,8 @@ end
 arch firewall
 x 2
 y 17
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 2
@@ -344,6 +349,8 @@ end
 arch firewall
 x 2
 y 18
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 2
@@ -695,6 +702,8 @@ end
 arch firewall
 x 6
 y 1
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 6
@@ -703,6 +712,8 @@ end
 arch firewall
 x 6
 y 2
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 6
@@ -797,6 +808,8 @@ end
 arch firewall
 x 7
 y 1
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 7
@@ -805,6 +818,8 @@ end
 arch firewall
 x 7
 y 2
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 7
@@ -895,6 +910,8 @@ end
 arch firewall
 x 8
 y 1
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 8
@@ -903,6 +920,8 @@ end
 arch firewall
 x 8
 y 2
+arch spell_small_fireball
+end
 end
 arch shop_empty
 x 8
@@ -1050,6 +1069,8 @@ end
 arch firewall
 x 9
 y 10
+arch spell_small_fireball
+end
 end
 arch sea
 x 9
@@ -1182,6 +1203,8 @@ end
 arch firewall
 x 10
 y 10
+arch spell_small_fireball
+end
 end
 arch sea
 x 10
@@ -1961,6 +1984,8 @@ end
 arch lightningwall
 x 18
 y 1
+arch spell_sm_lightning
+end
 end
 arch shop_empty
 x 18

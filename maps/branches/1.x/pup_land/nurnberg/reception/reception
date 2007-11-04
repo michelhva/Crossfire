@@ -6,6 +6,7 @@ width 40
 height 36
 msg
 Created:  1996-02-17
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch evergreens
@@ -442,12 +443,13 @@ x 2
 y 9
 end
 arch firewall_3
-dam 139
 x 2
 y 9
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 2
@@ -506,6 +508,8 @@ end
 arch firewall_4
 x 2
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -515,6 +519,8 @@ arch firewall_3
 x 2
 y 20
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -524,6 +530,8 @@ arch firewall_3
 x 2
 y 21
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -533,6 +541,8 @@ arch firewall_3
 x 2
 y 22
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -542,6 +552,8 @@ arch firewall_3
 x 2
 y 23
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -551,6 +563,8 @@ arch firewall_3
 x 2
 y 24
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -560,6 +574,8 @@ arch firewall_3
 x 2
 y 25
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -569,6 +585,8 @@ arch firewall_3
 x 2
 y 26
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -578,6 +596,8 @@ arch firewall_3
 x 2
 y 27
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -587,6 +607,8 @@ arch firewall_3
 x 2
 y 28
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -596,6 +618,8 @@ arch firewall_3
 x 2
 y 29
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -605,6 +629,8 @@ arch firewall_3
 x 2
 y 30
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -614,6 +640,8 @@ arch firewall_3
 x 2
 y 31
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -623,6 +651,8 @@ arch firewall_2
 x 2
 y 32
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -762,6 +792,8 @@ end
 arch firewall_5
 x 3
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 3
@@ -819,6 +851,8 @@ arch firewall_1
 x 3
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 3
@@ -928,12 +962,13 @@ x 4
 y 13
 end
 arch firewall_3
-dam 139
 x 4
 y 13
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 4
@@ -978,6 +1013,8 @@ end
 arch firewall_5
 x 4
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 4
@@ -1075,6 +1112,8 @@ arch firewall_1
 x 4
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 4
@@ -1222,6 +1261,8 @@ end
 arch firewall_5
 x 5
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 5
@@ -1294,6 +1335,8 @@ arch firewall_1
 x 5
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 5
@@ -1340,12 +1383,13 @@ y 4
 no_pass 0
 end
 arch firewall_5
-dam 139
 x 6
 y 4
 speed 0.050000
 speed_left -1.790000
 level 30
+arch spell_steambolt
+end
 end
 arch biglake_center
 x 6
@@ -1443,6 +1487,8 @@ end
 arch firewall_5
 x 6
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 6
@@ -1529,6 +1575,8 @@ arch firewall_1
 x 6
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 6
@@ -1670,6 +1718,8 @@ end
 arch firewall_5
 x 7
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 7
@@ -1749,6 +1799,8 @@ arch firewall_1
 x 7
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 7
@@ -1850,12 +1902,13 @@ x 8
 y 15
 end
 arch firewall_1
-dam 139
 x 8
 y 15
 speed 0.050000
 speed_left -1.370000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 8
@@ -1884,6 +1937,8 @@ end
 arch firewall_5
 x 8
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -1970,6 +2025,8 @@ arch firewall_1
 x 8
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -2109,6 +2166,8 @@ end
 arch firewall_5
 x 9
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 9
@@ -2181,6 +2240,8 @@ arch firewall_1
 x 9
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 9
@@ -2214,12 +2275,13 @@ x 10
 y 2
 end
 arch firewall_5
-dam 139
 x 10
 y 2
 speed 0.050000
 speed_left -1.790000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 10
@@ -2262,12 +2324,13 @@ x 10
 y 11
 end
 arch firewall_3
-dam 139
 x 10
 y 11
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 10
@@ -2316,6 +2379,8 @@ end
 arch firewall_5
 x 10
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 10
@@ -2396,6 +2461,8 @@ arch firewall_1
 x 10
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 10
@@ -2617,6 +2684,8 @@ arch firewall_1
 x 11
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 11
@@ -2868,6 +2937,8 @@ arch firewall_1
 x 12
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 12
@@ -3111,6 +3182,8 @@ arch firewall_1
 x 13
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 13
@@ -3272,13 +3345,14 @@ y 22
 end
 arch firewall_1
 name anti-magic force
-dam 128
 x 14
 y 23
 speed -0.050000
 level 100
 no_pass 0
 blocksview 0
+arch spell_counterwall
+end
 end
 arch woodfloor
 x 14
@@ -3324,6 +3398,8 @@ arch firewall_1
 x 14
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 14
@@ -3515,6 +3591,8 @@ arch firewall_7
 x 15
 y 23
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3524,6 +3602,8 @@ arch firewall_7
 x 15
 y 24
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3533,6 +3613,8 @@ arch firewall_7
 x 15
 y 25
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3542,6 +3624,8 @@ arch firewall_7
 x 15
 y 26
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3551,6 +3635,8 @@ arch firewall_7
 x 15
 y 27
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3560,6 +3646,8 @@ arch firewall_7
 x 15
 y 28
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3569,6 +3657,8 @@ arch firewall_7
 x 15
 y 29
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3578,6 +3668,8 @@ arch firewall_7
 x 15
 y 30
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3587,6 +3679,8 @@ arch firewall_7
 x 15
 y 31
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3596,6 +3690,8 @@ arch firewall_8
 x 15
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -5864,6 +5960,8 @@ end
 arch lightningwall_4
 x 25
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 25
@@ -6055,6 +6153,8 @@ end
 arch lightningwall_5
 x 26
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 26
@@ -6253,6 +6353,8 @@ end
 arch lightningwall_6
 x 27
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 27

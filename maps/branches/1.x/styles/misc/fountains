@@ -4,39 +4,48 @@ width 16
 height 16
 msg
 Created:  1999-02-19
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch potion_heal
+arch spell_heal
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 1
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 2
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 3
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 4
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 5
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 y 6
+arch spell_small_fireball
+end
 end
 arch trap_needle
 name fountain
@@ -59,117 +68,135 @@ x 1
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 1
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 2
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 3
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 4
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 5
+arch spell_small_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 1
 x 1
 y 6
+arch spell_small_fireball
+end
 end
 arch potioncon
 x 2
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 1
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 2
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 3
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 4
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 5
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 2
 y 6
+arch spell_medium_fireball
+end
 end
 arch potiondex
 x 3
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 1
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 2
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 3
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 4
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 5
+arch spell_medium_fireball
+end
 end
 arch potion_generic
 name fountain
-sp 2
 x 3
 y 6
+arch spell_medium_fireball
+end
 end
 arch potionint
 x 4
@@ -179,10 +206,11 @@ x 5
 end
 arch potion_generic
 name fountain
-sp 90
 x 5
 y 1
 level -30
+arch spell_comet
+end
 end
 arch potion_generic
 x 5
@@ -239,159 +267,187 @@ x 8
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 1
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 2
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 3
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 4
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 5
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 8
 y 6
+arch spell_minor_healing
+end
 end
 arch potion_magic
 x 9
+arch spell_regenerate_spellpoints
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 1
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 2
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 3
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 4
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 5
+arch spell_minor_healing
+end
 end
 arch potion_generic
 name fountain
-sp 32
 x 9
 y 6
+arch spell_minor_healing
+end
 end
 arch potion_heroism
 x 10
+arch spell_heroism
+end
 end
 arch potion_restoration
 x 11
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 1
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 2
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 3
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 4
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 5
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 11
 y 6
+arch spell_cause_light_wounds
+end
 end
 arch potionpow
 x 12
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 1
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 2
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 3
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 4
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 5
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 name fountain
-sp 129
 x 12
 y 6
+arch spell_cause_light_wounds
+end
 end
 arch potion_generic
 x 15

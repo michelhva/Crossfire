@@ -6,6 +6,7 @@ width 23
 height 21
 msg
 Created:  1996-03-07
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -501,6 +502,8 @@ end
 arch lightningwall_4
 x 2
 y 16
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 2
@@ -509,6 +512,8 @@ end
 arch lightningwall_3
 x 2
 y 17
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 2
@@ -517,6 +522,8 @@ end
 arch lightningwall_2
 x 2
 y 18
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 2
@@ -709,6 +716,8 @@ end
 arch lightningwall_5
 x 3
 y 16
+arch spell_sm_lightning
+end
 end
 arch director_3
 x 3
@@ -725,6 +734,8 @@ end
 arch lightningwall_1
 x 3
 y 18
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 3
@@ -914,6 +925,8 @@ end
 arch lightningwall_6
 x 4
 y 16
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 4
@@ -926,6 +939,8 @@ end
 arch lightningwall_8
 x 4
 y 18
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 4
@@ -3149,9 +3164,10 @@ x 16
 y 16
 end
 arch cannon_1
-dam 1
 x 16
 y 16
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 16
@@ -3264,9 +3280,10 @@ x 17
 y 17
 end
 arch cannon_1
-dam 1
 x 17
 y 17
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 17
@@ -3379,9 +3396,10 @@ x 18
 y 18
 end
 arch cannon_1
-dam 1
 x 18
 y 18
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 18
@@ -3485,9 +3503,10 @@ x 19
 y 16
 end
 arch cannon_1
-dam 1
 x 19
 y 16
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 19
@@ -3764,6 +3783,8 @@ y 20
 end
 arch lightningwall_5
 x 22
+arch spell_sm_lightning
+end
 end
 arch grate_closed_1
 x 22

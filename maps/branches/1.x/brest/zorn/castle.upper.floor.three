@@ -9,6 +9,7 @@ enter_y 3
 msg
 Created:  2007-03-06 Gene Alexander
 Info: Zorn Castle, third upper floor
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -4594,24 +4595,32 @@ run_away 0
 arch rod_light
 hp 500
 maxhp 500
-sp 90
 level 110
+randomitems none
 startequip 1
+arch spell_comet
+end
 end
 arch scroll_new
-sp 3
 nrof 10
 level 110
+randomitems none
+arch spell_large_fireball
+end
 end
 arch scroll_new
-sp 6
 nrof 10
 level 110
+randomitems none
+arch spell_large_lightning
+end
 end
 arch scroll_new
-sp 57
 nrof 10
 level 110
+randomitems none
+arch spell_hellfire
+end
 end
 arch key2
 name pyromancy scroll key
@@ -4787,24 +4796,32 @@ path_attuned 64
 arch rod_light
 hp 500
 maxhp 500
-sp 128
 level 110
+randomitems none
+arch spell_counterwall
+end
 end
 arch scroll_new
-sp 91
 nrof 10
 level 110
+randomitems none
+arch spell_mystic_fist
+end
 end
 arch scroll_new
-sp 65
 nrof 10
 level 110
+randomitems none
+arch spell_summon_pet_monster
+end
 end
 arch scroll_new
 other_arch devil
-sp 9
 nrof 10
 level 110
+randomitems none
+arch spell_summon_golem
+end
 end
 arch key2
 name summoning scroll key
@@ -5900,9 +5917,11 @@ run_away 0
 arch rod_light
 hp 500
 maxhp 500
-sp 90
 level 110
+randomitems none
 startequip 1
+arch spell_comet
+end
 end
 arch pyro_book
 end
@@ -6066,8 +6085,10 @@ path_attuned 64
 arch rod_light
 hp 500
 maxhp 500
-sp 123
 level 110
+randomitems none
+arch spell_counterspell
+end
 end
 arch summoner_book
 value 200
@@ -13543,24 +13564,32 @@ run_away 0
 arch rod_light
 hp 500
 maxhp 500
-sp 88
 level 110
+randomitems none
 startequip 1
+arch spell_ball_lightning
+end
 end
 arch scroll_new
-sp 180
 nrof 10
 level 110
+randomitems none
+arch spell_mana_blast
+end
 end
 arch scroll_new
-sp 17
 nrof 10
 level 110
+randomitems none
+arch spell_icestorm
+end
 end
 arch scroll_new
-sp 113
 nrof 10
 level 110
+randomitems none
+arch spell_create_pool_of_chaos
+end
 end
 arch key2
 name evocation scroll key
@@ -13729,19 +13758,25 @@ resist_chaos 65
 path_attuned 16
 run_away 0
 arch scroll_new
-sp 64
 nrof 10
 level 110
+randomitems none
+arch spell_mass_confusion
+end
 end
 arch scroll_new
-sp 23
 nrof 10
 level 110
+randomitems none
+arch spell_destruction
+end
 end
 arch scroll_new
-sp 63
 nrof 10
 level 110
+randomitems none
+arch spell_confusion
+end
 end
 arch key2
 name sorcery scroll key
@@ -13751,9 +13786,11 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 85
 level 110
+randomitems none
 startequip 1
+arch spell_color_spray
+end
 end
 arch stylus
 end
@@ -14834,9 +14871,11 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 88
 level 110
+randomitems none
 startequip 1
+arch spell_ball_lightning
+end
 end
 arch stylus
 end
@@ -15021,9 +15060,11 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 85
 level 110
+randomitems none
 startequip 1
+arch spell_color_spray
+end
 end
 arch stylus
 end

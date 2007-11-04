@@ -6,6 +6,7 @@ enter_x 39
 enter_y 39
 msg
 Created:  1999-01-18 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch desert
@@ -6849,6 +6850,9 @@ speed_left -6.850000
 carrying 79300
 unaggressive 1
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch mithril_chainmail
 end

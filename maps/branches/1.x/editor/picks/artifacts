@@ -4,6 +4,7 @@ width 11
 height 14
 msg
 Created:  1996-09-27
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch elvenboots
@@ -22,6 +23,8 @@ y 4
 end
 arch horn3
 y 5
+arch spell_magic_bullet
+end
 end
 arch talisman
 y 6
@@ -69,6 +72,8 @@ end
 arch horn
 x 1
 y 5
+arch spell_magic_bullet
+end
 end
 arch holy_symbol
 x 1
@@ -120,6 +125,8 @@ end
 arch horn2
 x 2
 y 5
+arch spell_magic_bullet
+end
 end
 arch lockpicks
 x 2
@@ -172,6 +179,8 @@ end
 arch gu_horn
 x 3
 y 5
+arch spell_magic_bullet
+end
 end
 arch stylus
 x 3
@@ -224,6 +233,9 @@ end
 arch rod_heavy
 x 4
 y 6
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch potionwis
 x 4
@@ -276,6 +288,9 @@ end
 arch rod_light
 x 5
 y 6
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch gem
 title of exceptional beauty
@@ -411,6 +426,9 @@ end
 arch wand
 x 8
 y 6
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch potion_fire
 x 8
@@ -450,6 +468,9 @@ end
 arch staff
 x 9
 y 6
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch hugenugget
 x 9

@@ -6,6 +6,7 @@ width 25
 height 30
 msg
 Created:  1994-05-27 langley (langley@fermat.dartmouth.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -450,6 +451,8 @@ arch cannon_3
 x 2
 y 13
 speed -0.030000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_3
 x 2
@@ -1163,6 +1166,8 @@ arch cannon_4
 x 6
 y 4
 speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 6
@@ -1558,6 +1563,8 @@ arch firewall
 face cwall_3.111
 x 8
 y 21
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 8
@@ -1719,6 +1726,8 @@ arch cannon_1
 x 9
 y 19
 speed -0.018000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_2
 x 9
@@ -1850,6 +1859,8 @@ arch cannon_1
 x 10
 y 9
 speed -0.060000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 10
@@ -2123,6 +2134,8 @@ end
 arch cannon_6
 x 12
 y 4
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_1
 x 12
@@ -2180,6 +2193,8 @@ arch cannon_7
 x 12
 y 13
 speed -0.090000
+arch spell_magic_bullet
+end
 end
 arch sea1
 x 12
@@ -2280,6 +2295,8 @@ end
 arch cannon_5
 x 13
 y 4
+arch spell_magic_bullet
+end
 end
 arch cwall_2_1_2
 face cwall_w_1.111
@@ -2334,6 +2351,8 @@ arch cannon_6
 x 13
 y 13
 speed -0.045000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 13
@@ -2434,6 +2453,8 @@ arch cannon_3
 x 14
 y 3
 speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_1_1
 face cwall_w_0.111
@@ -2448,6 +2469,8 @@ arch cannon_4
 x 14
 y 4
 speed -0.080000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 14
@@ -2649,6 +2672,8 @@ arch cannon_5
 x 15
 y 11
 speed -0.025000
+arch spell_magic_bullet
+end
 end
 arch sea1
 x 15
@@ -2698,11 +2723,15 @@ arch cannon_4
 x 15
 y 18
 speed -0.050000
+arch spell_magic_bullet
+end
 end
 arch cannon_3
 x 15
 y 18
 speed -0.030000
+arch spell_magic_bullet
+end
 end
 arch cwall_2_2_4
 x 15
@@ -3003,6 +3032,8 @@ arch cannon_7
 x 17
 y 24
 speed -0.040000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 17
@@ -3083,6 +3114,8 @@ arch cannon_7
 x 18
 y 8
 speed -0.050000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 18
@@ -3330,6 +3363,8 @@ arch cannon_7
 x 20
 y 4
 speed -0.090000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 20
@@ -3399,6 +3434,8 @@ arch cannon_7
 x 20
 y 19
 speed -0.020000
+arch spell_magic_bullet
+end
 end
 arch sea
 x 20

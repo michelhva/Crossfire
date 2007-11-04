@@ -8,6 +8,7 @@ enter_x 26
 enter_y 36
 msg
 Created:  2006-11-07 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -1345,12 +1346,13 @@ y 9
 end
 arch firewall_1
 name incinerator
-dam 3
 x 6
 y 9
 speed 0.0
 level 100
 connected 666
+arch spell_large_fireball
+end
 end
 arch grass
 x 6

@@ -5,6 +5,7 @@ height 16
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -264,8 +265,14 @@ end
 arch high_boots
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch random_bow
 end
@@ -1091,6 +1098,9 @@ end
 arch serp_sword
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch random_scroll
 end
@@ -1189,12 +1199,24 @@ speed_left -2.900000
 carrying 61525
 unaggressive 1
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch leather_armour
 end
@@ -1556,8 +1578,14 @@ y 8
 carrying 4600
 unaggressive 1
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch woods

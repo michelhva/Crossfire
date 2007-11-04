@@ -7,6 +7,7 @@ width 25
 height 16
 msg
 Created:  1996-02-21
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1782,13 +1783,15 @@ end
 arch rod_heavy
 hp 200
 maxhp 200
-sp 126
 x 21
 y 2
 speed -0.500000
 level 30
 value 2000000
+randomitems none
 identified 1
+arch spell_restoration
+end
 end
 arch blocked
 x 21

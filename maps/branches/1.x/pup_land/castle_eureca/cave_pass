@@ -9,6 +9,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  1996-01-27
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2285,6 +2286,8 @@ end
 arch gem
 end
 arch potion_magic
+arch spell_regenerate_spellpoints
+end
 end
 end
 arch flagstone

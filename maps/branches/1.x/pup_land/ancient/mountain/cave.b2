@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  1996-02-30
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2234,6 +2235,8 @@ name wall
 face rough_A.111
 x 12
 y 22
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 12
@@ -2246,9 +2249,10 @@ end
 arch lightningwall_8
 name wall
 face rough_A.111
-dam 20
 x 12
 y 24
+arch spell_fear
+end
 end
 arch dungeon_floor
 x 12

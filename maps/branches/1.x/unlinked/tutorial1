@@ -11,6 +11,7 @@ This map is intended for use as a tutorial for
 complete newbies, to teach them some of the
 basic concepts of Crossfire.  Players should
 enter at x-11, y-1.
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 unique 1
 end
@@ -430,6 +431,8 @@ end
 arch potion_heal
 x 3
 y 10
+arch spell_heal
+end
 end
 arch woodfloor
 x 3
@@ -705,10 +708,12 @@ y 10
 end
 arch scroll_new
 name scroll of detect magic
-sp 76
 x 5
 y 10
 level 1
+randomitems none
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 5
@@ -1153,10 +1158,11 @@ slaying money
 msg
 Drop one silver piece to see if you are carrying any cursed items.
 endmsg
-sp 79
 food 1
 x 9
 y 3
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 9
@@ -1176,10 +1182,11 @@ slaying money
 msg
 Drop one silver piece to see if you are carrying any magic items.
 endmsg
-sp 76
 food 1
 x 9
 y 5
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 9

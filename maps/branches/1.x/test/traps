@@ -10,6 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -5199,6 +5200,8 @@ end
 arch lightningwall_3
 x 16
 y 16
+arch spell_sm_lightning
+end
 end
 arch dungeon_magic
 x 16

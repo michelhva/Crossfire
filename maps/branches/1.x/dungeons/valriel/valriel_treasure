@@ -8,6 +8,7 @@ enter_x 29
 enter_y 45
 msg
 Created:  2006-11-12 Gene Alexander (poof@eracc.com)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -12963,12 +12964,14 @@ msg
 Let there be light ...
 endmsg
 maxhp 500
-sp 160
 x 29
 y 13
 level 100
 value 700000
 glow_radius 5
+randomitems none
+arch spell_daylight
+end
 end
 arch dungeon_magic
 x 29

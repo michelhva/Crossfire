@@ -7,6 +7,7 @@ width 15
 height 24
 msg
 Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch jungle_1
@@ -422,6 +423,8 @@ arch firewall_3
 x 3
 y 3
 speed -0.023000
+arch spell_small_fireball
+end
 end
 arch marble
 x 3
@@ -1510,6 +1513,8 @@ end
 arch firewall_7
 x 11
 y 3
+arch spell_small_fireball
+end
 end
 arch marble
 x 11

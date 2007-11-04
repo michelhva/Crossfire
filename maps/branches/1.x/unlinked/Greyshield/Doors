@@ -5,6 +5,7 @@ height 9
 enter_y 4
 msg
 Created:  1996-11-06 Chris Jeske
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -538,6 +539,8 @@ end
 arch lightningwall_4
 x 8
 y 3
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 8
@@ -550,6 +553,8 @@ end
 arch lightningwall_8
 x 8
 y 5
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 8
@@ -830,6 +835,8 @@ end
 arch lightningwall_4
 x 12
 y 3
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 12
@@ -842,6 +849,8 @@ end
 arch lightningwall_8
 x 12
 y 5
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 12

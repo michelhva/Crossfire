@@ -7,6 +7,7 @@ width 16
 height 13
 msg
 Created:  2005-09-18
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 tile_path_1 dept_store_armour
 tile_path_2 dept_store_misc
@@ -225,9 +226,10 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 3
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 3
@@ -291,9 +293,10 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 4
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 4

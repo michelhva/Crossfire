@@ -6,6 +6,7 @@ width 35
 height 32
 msg
 Created:  1996-12-25
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2883,11 +2884,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 15
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 16
@@ -3066,11 +3068,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 16
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 17
@@ -3298,11 +3301,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 17
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 18
@@ -3395,6 +3399,8 @@ end
 arch potion_magic
 x 18
 y 17
+arch spell_regenerate_spellpoints
+end
 end
 arch dungeon_floor
 x 18
@@ -3519,11 +3525,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 18
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 19
@@ -3636,6 +3643,8 @@ end
 arch potion_magic
 x 19
 y 17
+arch spell_regenerate_spellpoints
+end
 end
 arch dungeon_floor
 x 19
@@ -3712,11 +3721,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 19
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 20
@@ -3917,11 +3927,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 20
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 21
@@ -4095,11 +4106,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 21
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 22
@@ -4270,11 +4282,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 22
 y 31
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 23
@@ -4426,11 +4439,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 23
 y 29
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 23
@@ -4618,11 +4632,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 24
 y 29
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 24
@@ -4810,11 +4825,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 25
 y 29
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 25
@@ -5167,11 +5183,12 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 27
 y 29
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 27
@@ -5506,21 +5523,23 @@ end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
-dam 8
 x 29
 y 29
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch lbulletwall_1
 name bombbomb wall
 other_arch bomb
 sp 7
-dam 8
 x 29
 y 30
 speed -0.100000
 level 70
+arch spell_create_bomb
+end
 end
 arch blocked
 x 29

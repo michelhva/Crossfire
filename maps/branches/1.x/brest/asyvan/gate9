@@ -5,6 +5,7 @@ width 29
 height 29
 msg
 Created:  1994-02-21
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch sea
@@ -846,6 +847,8 @@ end
 arch potion_heal
 x 6
 y 14
+arch spell_heal
+end
 end
 arch dirtfloor
 x 6
@@ -854,6 +857,8 @@ end
 arch potion_magic
 x 6
 y 15
+arch spell_regenerate_spellpoints
+end
 end
 arch dirtfloor
 x 6
@@ -1760,6 +1765,8 @@ end
 arch potion_magic
 x 13
 y 6
+arch spell_regenerate_spellpoints
+end
 end
 arch grass
 x 13
@@ -1891,6 +1898,8 @@ end
 arch potion_heal
 x 14
 y 6
+arch spell_heal
+end
 end
 arch dirtfloor
 x 14
@@ -2874,6 +2883,8 @@ end
 arch potion_magic
 x 21
 y 22
+arch spell_regenerate_spellpoints
+end
 end
 arch mountain
 x 21
@@ -3005,6 +3016,8 @@ end
 arch potion_heal
 x 22
 y 22
+arch spell_heal
+end
 end
 arch mountain
 x 22

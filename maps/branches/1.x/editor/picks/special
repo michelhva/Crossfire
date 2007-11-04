@@ -4,15 +4,22 @@ width 12
 height 14
 msg
 Created:  1994-08-08
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch firewall_8
+arch spell_small_fireball
+end
 end
 arch firewall_7
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall_6
 y 2
+arch spell_small_fireball
+end
 end
 arch director_8
 y 3
@@ -46,20 +53,28 @@ y 11
 end
 arch cannon
 y 12
+arch spell_magic_bullet
+end
 end
 arch angry_floor
 y 13
 end
 arch firewall_1
 x 1
+arch spell_small_fireball
+end
 end
 arch firewall
 x 1
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall_5
 x 1
 y 2
+arch spell_small_fireball
+end
 end
 arch director_1
 x 1
@@ -103,6 +118,8 @@ end
 arch cannon_1
 x 1
 y 12
+arch spell_magic_bullet
+end
 end
 arch calm_floor
 x 1
@@ -110,14 +127,20 @@ y 13
 end
 arch firewall_2
 x 2
+arch spell_small_fireball
+end
 end
 arch firewall_3
 x 2
 y 1
+arch spell_small_fireball
+end
 end
 arch firewall_4
 x 2
 y 2
+arch spell_small_fireball
+end
 end
 arch director_2
 x 2
@@ -161,6 +184,8 @@ end
 arch cannon_2
 x 2
 y 12
+arch spell_magic_bullet
+end
 end
 arch charm_floor
 x 2
@@ -168,14 +193,20 @@ y 13
 end
 arch lightningwall_8
 x 3
+arch spell_sm_lightning
+end
 end
 arch lightningwall_7
 x 3
 y 1
+arch spell_sm_lightning
+end
 end
 arch lightningwall_6
 x 3
 y 2
+arch spell_sm_lightning
+end
 end
 arch spinner_-45
 x 3
@@ -219,6 +250,8 @@ end
 arch cannon_3
 x 3
 y 12
+arch spell_magic_bullet
+end
 end
 arch furious_floor
 x 3
@@ -226,18 +259,26 @@ y 13
 end
 arch lightningwall_1
 x 4
+arch spell_sm_lightning
+end
 end
 arch lightningwall
 x 4
 y 1
+arch spell_sm_lightning
+end
 end
 arch lightningwall_5
 x 4
 y 2
+arch spell_sm_lightning
+end
 end
 arch speedballwall
 x 4
 y 3
+arch spell_large_speedball
+end
 end
 arch spinner_180
 x 4
@@ -273,6 +314,8 @@ end
 arch cannon_4
 x 4
 y 12
+arch spell_magic_bullet
+end
 end
 arch sleep_floor
 x 4
@@ -280,14 +323,20 @@ y 13
 end
 arch lightningwall_2
 x 5
+arch spell_sm_lightning
+end
 end
 arch lightningwall_3
 x 5
 y 1
+arch spell_sm_lightning
+end
 end
 arch lightningwall_4
 x 5
 y 2
+arch spell_sm_lightning
+end
 end
 arch spinner_45
 x 5
@@ -331,6 +380,8 @@ end
 arch cannon_5
 x 5
 y 12
+arch spell_magic_bullet
+end
 end
 arch marker
 x 5
@@ -338,14 +389,20 @@ y 13
 end
 arch lbulletwall_8
 x 6
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_7
 x 6
 y 1
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_6
 x 6
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch mover_8
 x 6
@@ -389,6 +446,8 @@ end
 arch cannon_6
 x 6
 y 12
+arch spell_magic_bullet
+end
 end
 arch player_changer
 x 6
@@ -396,14 +455,20 @@ y 13
 end
 arch lbulletwall_1
 x 7
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall
 x 7
 y 1
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_5
 x 7
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch mover_1
 x 7
@@ -446,17 +511,25 @@ end
 arch cannon_7
 x 7
 y 12
+arch spell_magic_bullet
+end
 end
 arch lbulletwall_2
 x 8
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_3
 x 8
 y 1
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_4
 x 8
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch mover_2
 x 8
@@ -473,6 +546,8 @@ end
 arch lightningwall_t
 x 8
 y 6
+arch spell_sm_lightning
+end
 end
 arch block_door_closed
 x 8
@@ -488,6 +563,8 @@ end
 arch active_volcano
 x 8
 y 10
+arch spell_magic_bullet
+end
 end
 arch check_inv
 x 8
@@ -496,17 +573,25 @@ end
 arch cannon_8
 x 8
 y 12
+arch spell_magic_bullet
+end
 end
 arch bulletwall_8
 x 9
+arch spell_magic_bullet
+end
 end
 arch bulletwall_7
 x 9
 y 1
+arch spell_magic_bullet
+end
 end
 arch bulletwall_6
 x 9
 y 2
+arch spell_magic_bullet
+end
 end
 arch mover_8
 x 9
@@ -548,14 +633,20 @@ y 11
 end
 arch bulletwall_1
 x 10
+arch spell_magic_bullet
+end
 end
 arch bulletwall
 x 10
 y 1
+arch spell_magic_bullet
+end
 end
 arch bulletwall_5
 x 10
 y 2
+arch spell_magic_bullet
+end
 end
 arch mover_1
 x 10
@@ -601,14 +692,20 @@ y 12
 end
 arch bulletwall_2
 x 11
+arch spell_magic_bullet
+end
 end
 arch bulletwall_3
 x 11
 y 1
+arch spell_magic_bullet
+end
 end
 arch bulletwall_4
 x 11
 y 2
+arch spell_magic_bullet
+end
 end
 arch mover_2
 x 11

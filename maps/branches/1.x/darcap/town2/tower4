@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  1998-02-22
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch bwall_2_2_2
@@ -96,6 +97,8 @@ y 28
 end
 arch lightningwall_7
 y 28
+arch spell_sm_lightning
+end
 end
 arch bwall_2_1_1
 y 29
@@ -105,6 +108,8 @@ y 30
 end
 arch lightningwall_7
 y 30
+arch spell_sm_lightning
+end
 end
 arch bwall_2_2_1
 y 31
@@ -5068,6 +5073,8 @@ end
 arch lightningwall_3
 x 31
 y 27
+arch spell_sm_lightning
+end
 end
 arch bwall_2_1_1
 x 31
@@ -5076,6 +5083,8 @@ end
 arch lightningwall_3
 x 31
 y 29
+arch spell_sm_lightning
+end
 end
 arch bwall_2_1_1
 x 31

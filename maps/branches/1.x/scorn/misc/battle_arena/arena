@@ -7,6 +7,7 @@ width 35
 height 45
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -232,6 +233,8 @@ end
 arch lightningwall_5
 y 36
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch igate_closed_1
 name 1
@@ -275,6 +278,8 @@ end
 arch lightningwall_1
 y 43
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch blocked
 y 44
@@ -585,6 +590,8 @@ arch lightningwall_5
 x 1
 y 36
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch igate_closed_1
 name 4
@@ -1025,6 +1032,8 @@ arch lightningwall_5
 x 2
 y 36
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch igate_closed_1
 name 7
@@ -3203,6 +3212,8 @@ arch lightningwall_1
 x 7
 y 38
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 7
@@ -3532,6 +3543,8 @@ arch lightningwall_1
 x 8
 y 38
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 8

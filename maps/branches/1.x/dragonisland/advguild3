@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  1997-07-15 Viola Krings
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -4868,6 +4869,8 @@ end
 arch lightningwall_5
 x 24
 y 19
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 24
@@ -4885,6 +4888,8 @@ end
 arch lbulletwall_3
 x 24
 y 21
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 24
@@ -4893,6 +4898,8 @@ end
 arch lbulletwall_3
 x 24
 y 22
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 24
@@ -5373,8 +5380,10 @@ carrying 3500
 arch rod_light
 hp 40
 maxhp 40
-sp 1
 level 20
+randomitems none
+arch spell_small_fireball
+end
 end
 end
 arch unholy_ground
@@ -5941,6 +5950,8 @@ carrying 26900
 arch apple
 end
 arch potion_heal
+arch spell_heal
+end
 end
 arch stormbringer
 end
@@ -6524,6 +6535,8 @@ end
 arch lightningwall_5
 x 30
 y 19
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 30
@@ -6579,6 +6592,8 @@ end
 arch lbulletwall_7
 x 30
 y 26
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 30

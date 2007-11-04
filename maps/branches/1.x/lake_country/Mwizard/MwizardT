@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1995-04-26
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -737,9 +738,10 @@ title of efreet
 face horn3.111
 hp 100
 maxhp 100
-sp 10
 x 4
 y 10
+arch spell_summon_fire_elemental
+end
 end
 arch flagstone
 x 4
@@ -2796,9 +2798,10 @@ arch horn
 title of fear
 hp 100
 maxhp 100
-sp 20
 x 16
 y 10
+arch spell_fear
+end
 end
 arch flagstone
 x 16

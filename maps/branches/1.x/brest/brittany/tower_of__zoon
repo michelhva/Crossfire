@@ -5,6 +5,7 @@ width 40
 height 40
 msg
 Created:  1994-02-31
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -4695,6 +4696,8 @@ end
 arch firewall_1
 x 17
 y 32
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 17
@@ -5099,6 +5102,8 @@ end
 arch firechest
 x 19
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -5107,6 +5112,8 @@ end
 arch firechest
 x 19
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -5333,6 +5340,8 @@ end
 arch firechest
 x 20
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 20
@@ -5341,6 +5350,8 @@ end
 arch firechest
 x 20
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 20
@@ -5587,6 +5598,8 @@ end
 arch firechest
 x 21
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 21
@@ -5595,6 +5608,8 @@ end
 arch firechest
 x 21
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 21
@@ -5817,6 +5832,8 @@ end
 arch firechest
 x 22
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 22
@@ -5825,6 +5842,8 @@ end
 arch firechest
 x 22
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 22
@@ -6071,6 +6090,8 @@ end
 arch firechest
 x 23
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 23
@@ -6079,6 +6100,8 @@ end
 arch firechest
 x 23
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 23
@@ -6301,6 +6324,8 @@ end
 arch firechest
 x 24
 y 3
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 24
@@ -6309,6 +6334,8 @@ end
 arch firechest
 x 24
 y 4
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 24
@@ -9421,6 +9448,8 @@ end
 arch firewall_7
 x 36
 y 29
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 36
@@ -9429,6 +9458,8 @@ end
 arch firewall_7
 x 36
 y 30
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 36
@@ -9437,6 +9468,8 @@ end
 arch firewall_7
 x 36
 y 31
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 36

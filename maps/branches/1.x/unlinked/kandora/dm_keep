@@ -6,6 +6,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1999-01-28 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -803,6 +804,9 @@ carrying 2500
 monster 1
 unaggressive 1
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch flagstone
