@@ -7,6 +7,7 @@ enter_x 1
 enter_y 11
 msg
 Created:  2003-09-10 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -1608,7 +1609,6 @@ y 16
 end
 arch lbulletwall_1
 name dart launcher
-dam 203
 x 10
 y 16
 speed 0.0

@@ -6,6 +6,7 @@ width 13
 height 15
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -604,10 +605,11 @@ end
 arch firewall_2
 name wall
 face stwall_3.111
-dam 82
 x 5
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 5
@@ -837,10 +839,11 @@ end
 arch firewall_8
 name wall
 face stwall_9.111
-dam 82
 x 7
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 7

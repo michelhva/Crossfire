@@ -5,6 +5,7 @@ width 7
 height 58
 msg
 Created:  2002-08-29
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch acid_sphere
@@ -467,6 +468,8 @@ end
 arch firechest
 x 3
 y 45
+arch spell_magic_bullet
+end
 end
 arch gargolye
 x 3

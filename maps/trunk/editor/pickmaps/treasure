@@ -5,6 +5,7 @@ width 7
 height 20
 msg
 Created:  2002-08-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cleric_book
@@ -78,6 +79,9 @@ end
 arch scroll_new
 x 1
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch amulet_lifesave
 x 1
@@ -108,6 +112,8 @@ end
 arch potion_magic
 x 1
 y 7
+arch spell_regenerate_spellpoints
+end
 end
 arch potion_fire2
 x 1
@@ -163,6 +169,9 @@ end
 arch rod_heavy
 x 2
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch ring
 x 2
@@ -193,6 +202,8 @@ end
 arch potion_heal
 x 2
 y 7
+arch spell_heal
+end
 end
 arch potion_cold
 x 2
@@ -248,6 +259,9 @@ end
 arch rod_light
 x 3
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch ring_nodrain
 x 3
@@ -333,6 +347,9 @@ end
 arch staff
 x 4
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch tooth_charm
 x 4
@@ -353,6 +370,8 @@ end
 arch potion_heroism
 x 4
 y 7
+arch spell_heroism
+end
 end
 arch potion_shielding
 x 4
@@ -400,10 +419,15 @@ y 19
 end
 arch horn2
 x 5
+arch spell_magic_bullet
+end
 end
 arch wand
 x 5
 y 1
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch ring
 face ring.111
@@ -472,10 +496,14 @@ y 19
 end
 arch horn3
 x 6
+arch spell_magic_bullet
+end
 end
 arch horn
 x 6
 y 1
+arch spell_magic_bullet
+end
 end
 arch ring
 face ring.117

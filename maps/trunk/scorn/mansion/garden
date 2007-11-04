@@ -8,6 +8,7 @@ enter_x 31
 enter_y 29
 msg
 Created:  1994-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -4064,7 +4065,8 @@ x 10
 y 32
 arch balm_generic
 title of traveling
-sp 25
+arch spell_word_of_recall
+end
 end
 end
 arch grass

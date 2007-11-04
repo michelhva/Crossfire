@@ -6,6 +6,7 @@ width 40
 height 33
 msg
 Created:  1997-09-02 Viola Krings (krings@informatik)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -229,6 +230,8 @@ end
 arch lbulletwall_3
 x 1
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch small_stones
 x 1
@@ -2369,6 +2372,8 @@ end
 arch firewall_3
 x 12
 y 5
+arch spell_small_fireball
+end
 end
 arch small_stones
 x 12

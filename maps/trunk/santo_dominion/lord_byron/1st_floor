@@ -6,6 +6,9 @@ width 40
 height 40
 enter_x 20
 enter_y 5
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 end
 arch woodfloor
 end
@@ -380,6 +383,8 @@ end
 arch firewall_1
 x 1
 y 18
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 1
@@ -396,6 +401,8 @@ end
 arch firewall_5
 x 1
 y 20
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 1
@@ -2073,6 +2080,8 @@ end
 arch firewall_8
 x 8
 y 8
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -3996,6 +4005,8 @@ end
 arch firewall_7
 x 15
 y 23
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -8290,6 +8301,8 @@ end
 arch firewall_2
 x 31
 y 8
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 31
@@ -9872,6 +9885,8 @@ end
 arch firewall_7
 x 38
 y 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 38
@@ -9976,6 +9991,8 @@ end
 arch firewall_7
 x 38
 y 29
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 38

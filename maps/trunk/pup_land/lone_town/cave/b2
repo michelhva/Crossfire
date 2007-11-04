@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-02-18
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -773,11 +774,13 @@ x 7
 y 7
 end
 arch rod_heavy
-sp 15
 x 7
 y 7
 level 23
+randomitems none
 identified 1
+arch spell_create_earth_wall
+end
 end
 arch dungeon_floor
 x 7

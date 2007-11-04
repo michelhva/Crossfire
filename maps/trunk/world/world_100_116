@@ -3,6 +3,9 @@ name world_100_116
 region portjoseph
 width 50
 height 50
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 outdoor 1
 tile_path_1 world_100_115
 tile_path_2 world_101_116
@@ -7903,6 +7906,8 @@ end
 arch active_volcano
 x 31
 y 21
+arch spell_magic_bullet
+end
 end
 arch food
 x 31

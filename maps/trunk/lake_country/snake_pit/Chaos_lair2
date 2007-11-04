@@ -10,6 +10,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pentagram_111
@@ -449,7 +450,6 @@ face wizard.131
 hp 9000
 maxhp 9000
 exp 100000
-dam 85
 ac -15
 x 2
 y 7
@@ -459,6 +459,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_color_spray
+end
 end
 arch large_stones
 x 2
@@ -1359,7 +1361,6 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
 ac -15
 x 6
 y 15
@@ -1368,6 +1369,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1395,7 +1398,6 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
 ac -15
 x 6
 y 18
@@ -1404,6 +1406,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1431,7 +1435,6 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
 ac -15
 x 6
 y 21
@@ -1440,6 +1443,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -1467,7 +1472,6 @@ face baby_drag.113
 hp 9000
 maxhp 9000
 exp 100000
-dam 58
 ac -15
 x 6
 y 24
@@ -1476,6 +1480,8 @@ speed_left -5.330000
 level 30
 resist_physical 100
 alive 1
+arch spell_dragonbreath
+end
 end
 arch large_stones
 x 6
@@ -4855,7 +4861,6 @@ face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
 ac -15
 x 19
 y 16
@@ -4865,6 +4870,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -4884,7 +4891,6 @@ face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
 ac -15
 x 19
 y 19
@@ -4894,6 +4900,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -4913,7 +4921,6 @@ face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
 ac -15
 x 19
 y 22
@@ -4923,6 +4930,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -4942,7 +4951,6 @@ face grey_drag.172
 hp 9000
 maxhp 9000
 exp 100000
-dam 84
 ac -15
 x 19
 y 25
@@ -4952,6 +4960,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_shockwave
+end
 end
 arch large_stones
 x 19
@@ -5601,7 +5611,6 @@ face wizard.171
 hp 9000
 maxhp 9000
 exp 100000
-dam 85
 ac -15
 x 22
 y 7
@@ -5611,6 +5620,8 @@ level 30
 resist_fire 100
 resist_electricity 100
 alive 1
+arch spell_color_spray
+end
 end
 arch large_stones
 x 22

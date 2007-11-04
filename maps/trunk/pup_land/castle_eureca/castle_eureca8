@@ -6,6 +6,7 @@ width 18
 height 16
 msg
 Created:  1996-02-13
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -1533,6 +1534,8 @@ speed_left -3.990000
 state 2
 connected 1
 is_animated 1
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 11

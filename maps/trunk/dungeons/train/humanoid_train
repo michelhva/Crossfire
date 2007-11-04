@@ -7,6 +7,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2005-05-30 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -3159,6 +3160,8 @@ end
 arch active_volcano
 x 15
 y 5
+arch spell_magic_bullet
+end
 end
 arch dungeon_magic
 x 15

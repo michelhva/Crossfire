@@ -6,6 +6,7 @@ width 48
 height 48
 msg
 Created:  1996-01-05 Bjoern Helfesrieder (helfesri@igd.fhg.de)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -6692,6 +6693,8 @@ end
 arch firewall_1
 x 21
 y 34
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 21
@@ -8458,6 +8461,8 @@ end
 arch lightningwall_1
 x 27
 y 19
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 27
@@ -9883,6 +9888,8 @@ end
 arch potion_magic
 x 31
 y 33
+arch spell_regenerate_spellpoints
+end
 end
 arch dungeon_magic
 x 31

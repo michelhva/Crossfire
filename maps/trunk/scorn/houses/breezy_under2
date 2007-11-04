@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2003-05-11 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1939,7 +1940,6 @@ x 11
 y 21
 end
 arch firewall
-dam 7
 x 11
 y 21
 speed 0.0
@@ -1947,6 +1947,8 @@ level 3
 invisible 1
 connected 27
 blocksview 0
+arch spell_magic_missile
+end
 end
 arch dungeon_floor
 x 11
@@ -2711,7 +2713,6 @@ x 15
 y 25
 end
 arch firewall
-dam 7
 x 15
 y 25
 speed 0.0
@@ -2719,6 +2720,8 @@ level 3
 invisible 1
 connected 27
 blocksview 0
+arch spell_magic_missile
+end
 end
 arch dungeon_floor
 x 15

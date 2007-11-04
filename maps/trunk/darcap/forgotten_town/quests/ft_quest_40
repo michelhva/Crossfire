@@ -7,6 +7,7 @@ enter_y 12
 msg
 Created:  2006-08-02 K. Ahlers
 Email: info@knutshome.de
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -2504,8 +2505,8 @@ end
 arch rod_heavy
 hp 200
 maxhp 200
-sp 17
 level 100
+randomitems none
 startequip 1
 arch speedball
 startequip 1
@@ -2514,16 +2515,20 @@ end
 arch rod_heavy
 hp 200
 maxhp 200
-sp 90
 level 100
+randomitems none
 startequip 1
+arch spell_comet
+end
 end
 arch rod_heavy
 hp 200
 maxhp 200
-sp 199
 level 100
+randomitems none
 startequip 1
+arch spell_vitriol_splash
+end
 end
 end
 arch dirtfloor

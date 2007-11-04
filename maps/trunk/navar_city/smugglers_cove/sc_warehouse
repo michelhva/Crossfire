@@ -9,6 +9,7 @@ enter_x 7
 enter_y 18
 msg
 Created:  2003-04-10 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor2
@@ -1630,7 +1631,6 @@ end
 arch firewall_1
 name poision shooter
 other_arch spell_poison_cloud
-dam 21
 x 12
 y 17
 speed 0.0
@@ -1639,6 +1639,8 @@ invisible 1
 connected 10
 move_block 0
 blocksview 0
+arch spell_poison_cloud
+end
 end
 arch woodfloor2
 x 12

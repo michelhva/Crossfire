@@ -7,6 +7,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2000-06-05
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass_only
@@ -175,11 +176,12 @@ end
 arch potion_generic
 name fountain
 face fountain.111
-sp 1
 x 1
 y 9
 material 256
 no_pick 1
+arch spell_small_fireball
+end
 end
 arch grass_only
 x 1

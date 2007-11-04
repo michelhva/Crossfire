@@ -5,6 +5,7 @@ width 10
 height 10
 msg
 Created:  2007-05-26 Nicolas Weeger
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -205,6 +206,8 @@ x 3
 y 1
 connected 1
 no_damage 1
+arch spell_sm_lightning
+end
 end
 arch marble_blgr
 x 3
@@ -411,11 +414,12 @@ x 6
 y 1
 end
 arch firewall_3
-dam 82
 x 6
 y 1
 connected 1
 no_damage 1
+arch spell_firebolt
+end
 end
 arch marble_blgr
 x 6

@@ -6,6 +6,7 @@ width 24
 height 16
 msg
 Created:  1994-05-26 langley
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -2064,6 +2065,9 @@ y 3
 carrying 2300
 unaggressive 1
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch woodfloor

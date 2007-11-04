@@ -6,6 +6,7 @@ width 63
 height 33
 msg
 Created:  1994-02-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -1297,6 +1298,8 @@ end
 arch firewall_7
 x 11
 y 19
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 11
@@ -1345,6 +1348,8 @@ end
 arch firewall_7
 x 11
 y 30
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 11
@@ -1613,6 +1618,8 @@ end
 arch bulletwall_3
 x 15
 y 19
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 15
@@ -1661,6 +1668,8 @@ end
 arch bulletwall_3
 x 15
 y 30
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 15
@@ -1809,6 +1818,8 @@ end
 arch bulletwall_7
 x 17
 y 19
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 17
@@ -1857,6 +1868,8 @@ end
 arch bulletwall_7
 x 17
 y 30
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 17

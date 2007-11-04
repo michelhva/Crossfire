@@ -6,6 +6,7 @@ width 26
 height 26
 msg
 Created:  1996-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1070,6 +1071,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_sm_lightning
+end
 end
 arch dungeon_magic
 x 5
@@ -1102,7 +1105,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 5
 y 14
@@ -1118,6 +1120,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_frostbolt
+end
 end
 arch dungeon_magic
 x 5
@@ -1164,7 +1168,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 5
 y 17
@@ -1180,6 +1183,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_firebolt
+end
 end
 arch dungeon_magic
 x 5
@@ -1241,6 +1246,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_sm_lightning
+end
 end
 arch invis_exit
 slaying reception
@@ -1579,7 +1586,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 7
 y 20
@@ -1595,6 +1601,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_frostbolt
+end
 end
 arch invis_exit
 slaying reception
@@ -1760,7 +1768,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 8
 y 12
@@ -1776,6 +1783,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_firebolt
+end
 end
 arch flagstone
 x 8
@@ -2186,7 +2195,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 10
 y 20
@@ -2202,6 +2210,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_firebolt
+end
 end
 arch invis_exit
 slaying reception
@@ -2321,7 +2331,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 11
 y 12
@@ -2337,6 +2346,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_frostbolt
+end
 end
 arch flagstone
 x 11
@@ -2694,6 +2705,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 13
@@ -2728,7 +2741,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 13
 y 15
@@ -2744,6 +2756,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_firebolt
+end
 end
 arch flagstone
 x 13
@@ -2778,7 +2792,6 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 13
 y 18
@@ -2794,6 +2807,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_frostbolt
+end
 end
 arch flagstone
 x 13
@@ -2837,6 +2852,8 @@ move_block 0
 alive 1
 tear_down 1
 pass_thru 1
+arch spell_sm_lightning
+end
 end
 arch invis_exit
 slaying reception

@@ -6,6 +6,7 @@ width 16
 height 27
 msg
 Created:  1996-02-20
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -319,10 +320,11 @@ x 1
 y 15
 end
 arch lightningwall_1
-dam 6
 x 1
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -337,10 +339,11 @@ x 1
 y 17
 end
 arch lightningwall_3
-dam 6
 x 1
 y 17
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 1
@@ -544,10 +547,11 @@ x 2
 y 15
 end
 arch lightningwall_1
-dam 6
 x 2
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 2
@@ -1058,10 +1062,11 @@ x 4
 y 20
 end
 arch lightningwall_1
-dam 6
 x 4
 y 20
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 4
@@ -1484,20 +1489,22 @@ x 6
 y 19
 end
 arch lightningwall_3
-dam 6
 x 6
 y 19
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 6
 y 20
 end
 arch lightningwall_3
-dam 6
 x 6
 y 20
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 6
@@ -2297,10 +2304,11 @@ x 10
 y 15
 end
 arch lightningwall_1
-dam 6
 x 10
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 10
@@ -2519,10 +2527,11 @@ x 11
 y 15
 end
 arch lightningwall_1
-dam 6
 x 11
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 11
@@ -2736,10 +2745,11 @@ x 12
 y 15
 end
 arch lightningwall_1
-dam 6
 x 12
 y 15
 level 30
+arch spell_large_lightning
+end
 end
 arch marble
 x 12

@@ -6,6 +6,9 @@ width 45
 height 40
 enter_x 1
 enter_y 1
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 end
 arch woodfloor2
 name woodfloor
@@ -8058,6 +8061,8 @@ end
 arch lbulletwall
 x 23
 y 25
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor2
 name woodfloor
@@ -9061,6 +9066,8 @@ end
 arch speedballwall
 x 26
 y 36
+arch spell_large_speedball
+end
 end
 arch woodfloor2
 name woodfloor
@@ -9376,6 +9383,8 @@ end
 arch speedballwall
 x 27
 y 36
+arch spell_large_speedball
+end
 end
 arch woodfloor2
 name woodfloor
@@ -12101,6 +12110,8 @@ end
 arch lbulletwall
 x 37
 y 35
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor2
 name woodfloor
@@ -12468,6 +12479,8 @@ end
 arch lbulletwall
 x 39
 y 8
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor2
 name woodfloor

@@ -2,6 +2,9 @@ arch map
 name world_106_122
 width 50
 height 50
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 outdoor 1
 tile_path_1 world_106_121
 tile_path_2 world_107_122
@@ -6177,12 +6180,13 @@ end
 arch firewall_4
 name snowstorm
 face brefjell.111
-dam 17
 x 24
 y 34
 speed -0.05
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 24
@@ -6347,12 +6351,13 @@ end
 arch firewall_5
 name snowstorm
 face brefjell.111
-dam 17
 x 25
 y 16
 speed -0.05
 level 3
 invisible 1
+arch spell_icestorm
+end
 end
 arch drifts
 x 25
@@ -7416,12 +7421,13 @@ end
 arch firewall_2
 name snowstorm
 face brefjell.111
-dam 17
 x 29
 y 24
 speed -0.1
 level 10
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 29
@@ -7686,11 +7692,12 @@ end
 arch firewall_6
 name snowstorm
 face brefjell.111
-dam 17
 x 30
 y 29
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch snow
 x 30
@@ -8181,12 +8188,13 @@ end
 arch firewall_1
 name snowstorm
 face brefjell.111
-dam 17
 x 32
 y 34
 speed -0.05
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 32
@@ -8577,12 +8585,13 @@ end
 arch firewall_6
 name snowstorm
 face brefjell.111
-dam 17
 x 34
 y 16
 speed -0.1
 level 5
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 34
@@ -8717,12 +8726,13 @@ end
 arch firewall_1
 name snowstorm
 face brefjell.111
-dam 17
 x 34
 y 40
 speed -0.05
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 34
@@ -9372,11 +9382,12 @@ end
 arch firewall_6
 name snowstorm
 face brefjell.111
-dam 17
 x 37
 y 25
 level 15
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 37
@@ -9920,12 +9931,13 @@ end
 arch firewall_7
 name snowstorm
 face brefjell.111
-dam 17
 x 39
 y 31
 speed -0.07
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 39
@@ -10735,12 +10747,13 @@ end
 arch firewall_6
 name snowstorm
 face brefjell.111
-dam 17
 x 42
 y 36
 speed -0.03
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 42
@@ -11956,12 +11969,13 @@ end
 arch firewall_7
 name snowstorm
 face brefjell.111
-dam 17
 x 47
 y 38
 speed -0.1
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 47

@@ -6,6 +6,7 @@ width 20
 height 20
 msg
 Created:  1997-06-23 Viola Krings
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -745,6 +746,9 @@ end
 arch wand
 x 5
 y 16
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 5
@@ -1633,6 +1637,9 @@ end
 arch wand
 x 12
 y 2
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 12
@@ -1941,6 +1948,9 @@ end
 arch wand
 x 14
 y 15
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 14
@@ -1953,6 +1963,9 @@ end
 arch wand
 x 14
 y 16
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 14
@@ -1965,6 +1978,9 @@ end
 arch wand
 x 14
 y 17
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 14
@@ -1977,6 +1993,9 @@ end
 arch wand
 x 14
 y 18
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 14
@@ -2086,6 +2105,9 @@ end
 arch wand
 x 15
 y 15
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 15
@@ -2114,6 +2136,9 @@ end
 arch wand
 x 15
 y 18
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 15
@@ -2216,6 +2241,9 @@ end
 arch wand
 x 16
 y 15
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 16
@@ -2244,6 +2272,9 @@ end
 arch wand
 x 16
 y 18
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch pixie
 x 16
@@ -2404,6 +2435,9 @@ end
 arch wand
 x 18
 y 2
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 18

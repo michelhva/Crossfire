@@ -6,6 +6,7 @@ width 32
 height 34
 msg
 Created:  1994-12-19 bt (thomas@nomad.astro.psu.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -136,9 +137,10 @@ y 26
 end
 arch firewall_3
 other_arch meteor
-dam 90
 y 27
 speed -0.050000
+arch spell_comet
+end
 end
 arch blocked
 x 1
@@ -5636,8 +5638,9 @@ x 31
 y 26
 end
 arch firewall_7
-dam 90
 x 31
 y 27
 speed -0.050000
+arch spell_comet
+end
 end

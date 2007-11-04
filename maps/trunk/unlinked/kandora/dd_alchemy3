@@ -7,6 +7,7 @@ height 11
 enter_x 5
 msg
 Created:  1999-02-27 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor2
@@ -623,6 +624,8 @@ end
 arch cannon_8
 x 6
 y 9
+arch spell_magic_bullet
+end
 end
 arch woodfloor2
 x 6

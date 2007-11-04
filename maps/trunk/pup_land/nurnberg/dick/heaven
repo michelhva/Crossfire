@@ -6,6 +6,7 @@ width 28
 height 32
 msg
 Created:  1996-02-12
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1749,55 +1750,60 @@ x 6
 y 11
 end
 arch lbulletwall_4
-dam 90
 x 6
 y 11
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 6
 y 12
 end
 arch lbulletwall_4
-dam 90
 x 6
 y 12
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 6
 y 13
 end
 arch lbulletwall_3
-dam 90
 x 6
 y 13
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 6
 y 14
 end
 arch lbulletwall_3
-dam 90
 x 6
 y 14
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 6
 y 15
 end
 arch lbulletwall_2
-dam 90
 x 6
 y 15
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 6
@@ -2058,11 +2064,12 @@ x 7
 y 11
 end
 arch lbulletwall_5
-dam 90
 x 7
 y 11
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 7
@@ -2081,11 +2088,12 @@ x 7
 y 15
 end
 arch lbulletwall_2
-dam 90
 x 7
 y 15
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 7
@@ -2329,11 +2337,12 @@ x 8
 y 11
 end
 arch lbulletwall_5
-dam 90
 x 8
 y 11
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 8
@@ -2361,11 +2370,12 @@ x 8
 y 15
 end
 arch lbulletwall_1
-dam 90
 x 8
 y 15
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 8
@@ -2523,6 +2533,8 @@ end
 arch bulletwall_7
 x 9
 y 1
+arch spell_magic_bullet
+end
 end
 arch dungeon_magic
 x 9
@@ -2603,11 +2615,12 @@ x 9
 y 11
 end
 arch lbulletwall_6
-dam 90
 x 9
 y 11
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 9
@@ -2626,11 +2639,12 @@ x 9
 y 15
 end
 arch lbulletwall_1
-dam 90
 x 9
 y 15
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 9
@@ -2928,55 +2942,60 @@ x 10
 y 11
 end
 arch lbulletwall_6
-dam 90
 x 10
 y 11
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 10
 y 12
 end
 arch lbulletwall_7
-dam 90
 x 10
 y 12
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 10
 y 13
 end
 arch lbulletwall_7
-dam 90
 x 10
 y 13
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 10
 y 14
 end
 arch lbulletwall_8
-dam 90
 x 10
 y 14
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 10
 y 15
 end
 arch lbulletwall_8
-dam 90
 x 10
 y 15
 level 8
 blocksview 0
+arch spell_comet
+end
 end
 arch dungeon_magic
 x 10
@@ -4818,6 +4837,8 @@ end
 arch bulletwall_3
 x 16
 y 24
+arch spell_magic_bullet
+end
 end
 arch dungeon_magic
 x 16

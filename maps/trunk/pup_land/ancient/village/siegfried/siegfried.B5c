@@ -7,6 +7,7 @@ width 16
 height 16
 msg
 Created:  1997-02-13
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -808,12 +809,13 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 5
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 6
@@ -823,12 +825,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 6
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 6
@@ -838,12 +841,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 7
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 6
@@ -853,12 +857,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 8
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 6
@@ -870,12 +875,13 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 9
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 6
@@ -971,13 +977,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 7
 y 5
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 7
@@ -1013,13 +1020,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 7
 y 9
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 7
@@ -1115,13 +1123,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 8
 y 5
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 8
@@ -1157,13 +1166,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 8
 y 9
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 8
@@ -1266,13 +1276,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 9
 y 5
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 9
@@ -1308,13 +1319,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 9
 y 9
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 9
@@ -1410,13 +1422,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 5
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 10
@@ -1426,12 +1439,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 6
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 10
@@ -1441,12 +1455,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 7
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 10
@@ -1456,12 +1471,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 8
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 10
@@ -1473,13 +1489,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 9
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch cobblestones2
 x 10

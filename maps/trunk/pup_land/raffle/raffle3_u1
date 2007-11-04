@@ -8,6 +8,7 @@ width 45
 height 19
 msg
 Created:  1997-02-24
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -465,6 +466,8 @@ x 3
 y 4
 speed 1.500000
 speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch small_stones
 x 3
@@ -547,6 +550,8 @@ x 3
 y 14
 speed 1.500000
 speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch furious_floor
 x 3
@@ -987,10 +992,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_5.111
-dam 128
 x 6
 y 6
 blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 6
@@ -1048,10 +1054,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_5.111
-dam 128
 x 6
 y 12
 blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 6
@@ -2133,10 +2140,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_6.111
-dam 128
 x 12
 y 6
 blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 12
@@ -2206,10 +2214,11 @@ end
 arch firewall_7
 name anti-magic wall
 face swall_3.111
-dam 128
 x 12
 y 12
 blocksview 0
+arch spell_counterwall
+end
 end
 arch small_stones
 x 12
@@ -2306,6 +2315,8 @@ x 13
 y 4
 speed 1.500000
 speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch small_stones
 x 13
@@ -2408,6 +2419,8 @@ x 13
 y 14
 speed 1.500000
 speed_left 0.000000
+arch spell_small_fireball
+end
 end
 arch furious_floor
 x 13

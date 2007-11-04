@@ -10,6 +10,7 @@ width 27
 height 27
 msg
 Created:  1997-02-05 Xtreme
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -352,6 +353,8 @@ end
 arch potion_heroism
 x 2
 y 14
+arch spell_heroism
+end
 end
 arch dungeon_floor
 x 2

@@ -8,6 +8,7 @@ enter_x 39
 enter_y 6
 msg
 Created:  1993-10-07 skud the great (tvangod@ecst.csuchico.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch bwall_2_2_2
@@ -1775,6 +1776,8 @@ end
 arch lbulletwall
 x 6
 y 14
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones2
 x 6
@@ -2385,26 +2388,38 @@ end
 arch lightningwall_1
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch lightningwall_2
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch lightningwall_3
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch lightningwall_4
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch lightningwall_5
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch lightningwall_6
 x 8
 y 29
+arch spell_sm_lightning
+end
 end
 arch cobblestones2
 x 8
@@ -6211,6 +6226,8 @@ end
 arch lbulletwall
 x 20
 y 22
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones2
 x 20
@@ -6605,6 +6622,8 @@ end
 arch firewall
 x 21
 y 31
+arch spell_small_fireball
+end
 end
 arch cobblestones2
 x 21

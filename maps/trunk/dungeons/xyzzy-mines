@@ -8,6 +8,7 @@ enter_x 11
 enter_y 9
 msg
 Created:  1994-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch medium_stones
@@ -60244,6 +60245,8 @@ end
 arch firechest
 x 109
 y 56
+arch spell_magic_bullet
+end
 end
 arch medium_stones
 x 109
@@ -66766,6 +66769,8 @@ end
 arch firechest
 x 120
 y 64
+arch spell_magic_bullet
+end
 end
 arch medium_stones
 x 120

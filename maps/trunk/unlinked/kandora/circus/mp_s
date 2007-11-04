@@ -4,6 +4,7 @@ width 15
 height 13
 msg
 Created:  1999-02-15 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch goldfloor
@@ -574,6 +575,8 @@ x 7
 end
 arch lbulletwall_5
 x 7
+arch spell_lg_magic_bullet
+end
 end
 arch goldfloor
 x 7
@@ -621,6 +624,8 @@ name happy horn
 luck 2
 x 7
 y 3
+arch spell_magic_bullet
+end
 end
 arch goldfloor
 x 7

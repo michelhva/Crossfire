@@ -6,6 +6,7 @@ width 42
 height 22
 msg
 Created:  1994-02-31
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -151,6 +152,8 @@ end
 arch firewall_5
 x 1
 y 1
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 1
@@ -303,6 +306,8 @@ end
 arch speedballwall
 x 1
 y 20
+arch spell_large_speedball
+end
 end
 arch woodfloor
 x 1
@@ -325,6 +330,8 @@ end
 arch firewall_5
 x 2
 y 1
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -477,6 +484,8 @@ end
 arch speedballwall
 x 2
 y 20
+arch spell_large_speedball
+end
 end
 arch woodfloor
 x 2
@@ -499,6 +508,8 @@ end
 arch firewall_5
 x 3
 y 1
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 3
@@ -651,6 +662,8 @@ end
 arch speedballwall
 x 3
 y 20
+arch spell_large_speedball
+end
 end
 arch woodfloor
 x 3
@@ -673,6 +686,8 @@ end
 arch firewall_5
 x 4
 y 1
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 4
@@ -821,6 +836,8 @@ end
 arch speedballwall
 x 4
 y 20
+arch spell_large_speedball
+end
 end
 arch woodfloor
 x 4

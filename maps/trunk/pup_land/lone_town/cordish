@@ -8,6 +8,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1996-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch invis_exit
@@ -246,6 +247,8 @@ name wall
 face wwall_A.111
 x 1
 y 14
+arch spell_small_fireball
+end
 end
 arch grass
 x 1
@@ -356,6 +359,8 @@ name wall
 face wwall_A.111
 x 2
 y 14
+arch spell_small_fireball
+end
 end
 arch grass
 x 2

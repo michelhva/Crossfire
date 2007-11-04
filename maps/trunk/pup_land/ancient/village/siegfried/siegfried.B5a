@@ -7,6 +7,7 @@ width 16
 height 16
 msg
 Created:  1997-02-13
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -124,7 +125,6 @@ arch firewall_4
 Con 100
 hp 5000
 maxhp 5000
-dam 82
 ac -30
 x 1
 y 1
@@ -132,6 +132,8 @@ speed 0.050000
 speed_left -1.160000
 level 50
 alive 1
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 1
@@ -237,7 +239,6 @@ arch firewall_2
 Con 100
 hp 5000
 maxhp 5000
-dam 82
 ac -30
 x 1
 y 14
@@ -245,6 +246,8 @@ speed 0.050000
 speed_left -0.410000
 level 50
 alive 1
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 1
@@ -1311,7 +1314,6 @@ end
 arch firewall_6
 Con 100
 maxhp 5000
-dam 82
 ac -30
 x 14
 y 1
@@ -1319,6 +1321,8 @@ speed 0.050000
 speed_left -2.540000
 level 50
 alive 1
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 14
@@ -1424,7 +1428,6 @@ arch firewall_8
 Con 100
 hp 5000
 maxhp 5000
-dam 82
 ac -30
 x 14
 y 14
@@ -1432,6 +1435,8 @@ speed 0.050000
 speed_left -1.810000
 level 50
 alive 1
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 14

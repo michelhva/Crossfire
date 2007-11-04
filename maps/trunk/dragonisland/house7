@@ -6,6 +6,7 @@ width 35
 height 20
 msg
 Created:  1997-06-28 Viola Krings
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -1464,6 +1465,8 @@ end
 arch potion_improve
 end
 arch potion_heal
+arch spell_heal
+end
 end
 arch potion_restoration
 end
@@ -3238,6 +3241,8 @@ end
 arch firechest
 x 19
 y 4
+arch spell_magic_bullet
+end
 end
 arch flagstone
 x 19
@@ -3822,6 +3827,8 @@ end
 arch lightningwall_3
 x 22
 y 11
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 22

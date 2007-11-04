@@ -8,6 +8,7 @@ enter_x 11
 enter_y 12
 msg
 Created:  2007-03-11 Gene Alexander (poof, Galahad)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woods
@@ -251,7 +252,6 @@ y 2
 end
 arch lbulletwall_4
 name Mana Crystal
-dam 121
 x 2
 y 2
 speed 0
@@ -260,6 +260,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 2
@@ -280,7 +282,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 2
-dam 121
 x 2
 y 4
 speed 0
@@ -289,6 +290,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 2
@@ -336,11 +339,12 @@ y 10
 end
 arch lightningwall_3
 name cancellation
-dam 62
 x 2
 y 10
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch woodfloor2
 x 2
@@ -348,11 +352,12 @@ y 11
 end
 arch lightningwall_3
 name cancellation
-dam 62
 x 2
 y 11
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch woodfloor2
 x 2
@@ -360,11 +365,12 @@ y 12
 end
 arch lightningwall_3
 name cancellation
-dam 62
 x 2
 y 12
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch dungeon_magic
 x 2
@@ -538,7 +544,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 6
-dam 121
 x 4
 y 2
 speed 0
@@ -547,6 +552,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 4
@@ -575,7 +582,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 8
-dam 121
 x 4
 y 4
 speed 0
@@ -584,6 +590,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 4
@@ -932,11 +940,12 @@ y 10
 end
 arch lightningwall_7
 name cancellation
-dam 62
 x 6
 y 10
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch woodfloor2
 x 6
@@ -944,11 +953,12 @@ y 11
 end
 arch lightningwall_7
 name cancellation
-dam 62
 x 6
 y 11
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch woodfloor2
 x 6
@@ -956,11 +966,12 @@ y 12
 end
 arch lightningwall_7
 name cancellation
-dam 62
 x 6
 y 12
 speed 0.04
 level 300
+arch spell_cancellation
+end
 end
 arch dungeon_magic
 x 6
@@ -1380,7 +1391,6 @@ y 2
 end
 arch lbulletwall_4
 name Mana Crystal
-dam 121
 x 10
 y 2
 speed 0
@@ -1389,6 +1399,8 @@ invisible 1
 connected 3
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 10
@@ -1417,7 +1429,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 2
-dam 121
 x 10
 y 4
 speed 0
@@ -1426,6 +1437,8 @@ invisible 1
 connected 3
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 10
@@ -1721,7 +1734,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 6
-dam 121
 x 12
 y 2
 speed 0
@@ -1730,6 +1742,8 @@ invisible 1
 connected 3
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 12
@@ -1750,7 +1764,6 @@ end
 arch lbulletwall_4
 name Mana Crystal
 sp 8
-dam 121
 x 12
 y 4
 speed 0
@@ -1759,6 +1772,8 @@ invisible 1
 connected 3
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor2
 x 12

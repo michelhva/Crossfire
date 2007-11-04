@@ -2,6 +2,9 @@ arch map
 name world_119_115
 width 50
 height 50
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 outdoor 1
 tile_path_1 world_119_114
 tile_path_2 world_120_115
@@ -5098,7 +5101,6 @@ y 26
 elevation 3934
 end
 arch lightningwall
-dam 189
 x 20
 y 26
 speed 0.0
@@ -5107,6 +5109,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch dunes
 x 20
@@ -7205,7 +7209,6 @@ y 38
 elevation 2890
 end
 arch lightningwall
-dam 189
 x 28
 y 38
 speed 0.0
@@ -7214,6 +7217,8 @@ invisible 1
 connected 1
 move_block 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch desert
 x 28
