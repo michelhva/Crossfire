@@ -5,6 +5,7 @@ width 7
 height 18
 msg
 Created:  2002-08-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch altar
@@ -29,21 +30,33 @@ y 8
 end
 arch lbulletwall_8
 y 9
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_7
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_6
 y 11
+arch spell_lg_magic_bullet
+end
 end
 arch firewall_8
 y 12
+arch spell_small_fireball
+end
 end
 arch firewall_7
 y 13
+arch spell_small_fireball
+end
 end
 arch firewall_6
 y 14
+arch spell_small_fireball
+end
 end
 arch mover_8
 y 15
@@ -87,26 +100,38 @@ end
 arch lbulletwall_1
 x 1
 y 9
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall
 x 1
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_5
 x 1
 y 11
+arch spell_lg_magic_bullet
+end
 end
 arch firewall_1
 x 1
 y 12
+arch spell_small_fireball
+end
 end
 arch firewall
 x 1
 y 13
+arch spell_small_fireball
+end
 end
 arch firewall_5
 x 1
 y 14
+arch spell_small_fireball
+end
 end
 arch mover_1
 x 1
@@ -154,26 +179,38 @@ end
 arch lbulletwall_2
 x 2
 y 9
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_3
 x 2
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch lbulletwall_4
 x 2
 y 11
+arch spell_lg_magic_bullet
+end
 end
 arch firewall_2
 x 2
 y 12
+arch spell_small_fireball
+end
 end
 arch firewall_3
 x 2
 y 13
+arch spell_small_fireball
+end
 end
 arch firewall_4
 x 2
 y 14
+arch spell_small_fireball
+end
 end
 arch mover_2
 x 2
@@ -220,14 +257,20 @@ end
 arch lightningwall_8
 x 3
 y 9
+arch spell_sm_lightning
+end
 end
 arch lightningwall_7
 x 3
 y 10
+arch spell_sm_lightning
+end
 end
 arch lightningwall_6
 x 3
 y 11
+arch spell_sm_lightning
+end
 end
 arch director_8
 x 3
@@ -271,14 +314,20 @@ end
 arch lightningwall_1
 x 4
 y 9
+arch spell_sm_lightning
+end
 end
 arch lightningwall
 x 4
 y 10
+arch spell_sm_lightning
+end
 end
 arch lightningwall_5
 x 4
 y 11
+arch spell_sm_lightning
+end
 end
 arch director_1
 x 4
@@ -344,14 +393,20 @@ end
 arch lightningwall_2
 x 5
 y 9
+arch spell_sm_lightning
+end
 end
 arch lightningwall_3
 x 5
 y 10
+arch spell_sm_lightning
+end
 end
 arch lightningwall_4
 x 5
 y 11
+arch spell_sm_lightning
+end
 end
 arch director_2
 x 5
@@ -415,6 +470,8 @@ end
 arch speedballwall
 x 6
 y 9
+arch spell_large_speedball
+end
 end
 arch mover_2
 x 6

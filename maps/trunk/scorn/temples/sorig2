@@ -7,6 +7,7 @@ width 10
 height 10
 msg
 Created:  1999-01-24 Raphael Quinet (quinet@gamers.org)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -127,6 +128,8 @@ end
 arch lightningwall_1
 x 1
 y 8
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -575,6 +578,8 @@ end
 arch lightningwall_1
 x 8
 y 8
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 8

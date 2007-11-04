@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-06-08
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -755,6 +756,8 @@ end
 arch firewall_4
 x 7
 y 11
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 7
@@ -767,6 +770,8 @@ end
 arch firewall_3
 x 7
 y 13
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 7
@@ -975,6 +980,8 @@ end
 arch firewall_5
 x 10
 y 7
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 10
@@ -1228,6 +1235,8 @@ end
 arch firewall_6
 x 13
 y 7
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 13

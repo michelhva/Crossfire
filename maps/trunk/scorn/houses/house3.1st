@@ -8,6 +8,7 @@ enter_x 6
 enter_y 8
 msg
 Created:  2005-03-23 Huhanhi
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -415,9 +416,10 @@ level 15
 end
 arch potion_generic
 title of Cure Poison
-sp 68
 value 600
 identified 1
+arch spell_cure_poison
+end
 end
 arch random_gem
 end

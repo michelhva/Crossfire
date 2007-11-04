@@ -6,6 +6,7 @@ width 16
 height 22
 msg
 Created:  1996-02-07
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch invis_exit
@@ -121,8 +122,9 @@ arch blocked
 y 17
 end
 arch lightningwall_3
-dam 139
 y 18
+arch spell_steambolt
+end
 end
 arch blocked
 y 19

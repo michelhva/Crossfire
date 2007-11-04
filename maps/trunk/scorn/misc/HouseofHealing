@@ -9,6 +9,7 @@ width 21
 height 36
 msg
 Created:  1999-02-02
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1699,11 +1700,12 @@ x 7
 y 6
 end
 arch potion_restoration
-sp 126
 x 7
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 7
@@ -1714,6 +1716,8 @@ x 7
 y 7
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 7
@@ -1724,6 +1728,8 @@ x 7
 y 8
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 7
@@ -1734,6 +1740,8 @@ x 7
 y 9
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 7
@@ -1744,6 +1752,8 @@ x 7
 y 10
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 7
@@ -1751,12 +1761,14 @@ y 11
 end
 arch staff
 name staff of healing
-sp 34
 food 20
 x 7
 y 11
+randomitems none
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 7
@@ -1764,12 +1776,13 @@ y 12
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 7
 y 12
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 7
@@ -1777,12 +1790,13 @@ y 13
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 7
 y 13
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 7
@@ -1790,12 +1804,13 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 7
 y 14
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 7
@@ -1803,12 +1818,13 @@ y 15
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 7
 y 15
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 7
@@ -1816,11 +1832,12 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 7
 y 16
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 7
@@ -1828,11 +1845,12 @@ y 17
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 7
 y 17
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 7
@@ -1978,11 +1996,12 @@ x 8
 y 6
 end
 arch potion_restoration
-sp 126
 x 8
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 8
@@ -2193,11 +2212,12 @@ x 9
 y 6
 end
 arch potion_restoration
-sp 126
 x 9
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 9
@@ -2208,6 +2228,8 @@ x 9
 y 7
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 9
@@ -2218,6 +2240,8 @@ x 9
 y 8
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 9
@@ -2228,6 +2252,8 @@ x 9
 y 9
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 9
@@ -2238,6 +2264,8 @@ x 9
 y 10
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 9
@@ -2245,12 +2273,14 @@ y 11
 end
 arch staff
 name staff of healing
-sp 34
 food 20
 x 9
 y 11
+randomitems none
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 9
@@ -2258,12 +2288,13 @@ y 12
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 9
 y 12
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 9
@@ -2271,12 +2302,13 @@ y 13
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 9
 y 13
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 9
@@ -2284,12 +2316,13 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 9
 y 14
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 9
@@ -2297,12 +2330,13 @@ y 15
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 9
 y 15
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 9
@@ -2310,11 +2344,12 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 9
 y 16
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 9
@@ -2322,11 +2357,12 @@ y 17
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 9
 y 17
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 9
@@ -2467,10 +2503,11 @@ end
 arch altar
 name Cure Poison (drop 50 gold)
 slaying money
-sp 68
 food 500
 x 9
 y 30
+arch spell_cure_poison
+end
 end
 arch woodfloor
 x 9
@@ -2551,11 +2588,12 @@ x 10
 y 6
 end
 arch potion_restoration
-sp 126
 x 10
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 10
@@ -2726,10 +2764,11 @@ end
 arch altar
 name Cure Disease (drop 150 gold)
 slaying money
-sp 171
 food 1500
 x 10
 y 30
+arch spell_cure_disease
+end
 end
 arch woodfloor
 x 10
@@ -2809,11 +2848,12 @@ x 11
 y 6
 end
 arch potion_restoration
-sp 126
 x 11
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 11
@@ -2824,6 +2864,8 @@ x 11
 y 7
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 11
@@ -2834,6 +2876,8 @@ x 11
 y 8
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 11
@@ -2844,6 +2888,8 @@ x 11
 y 9
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 11
@@ -2854,6 +2900,8 @@ x 11
 y 10
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 11
@@ -2861,12 +2909,14 @@ y 11
 end
 arch staff
 name staff of healing
-sp 34
 food 20
 x 11
 y 11
+randomitems none
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 11
@@ -2874,12 +2924,13 @@ y 12
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 11
 y 12
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 11
@@ -2887,12 +2938,13 @@ y 13
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 11
 y 13
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 11
@@ -2900,12 +2952,13 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 11
 y 14
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 11
@@ -2913,12 +2966,13 @@ y 15
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 11
 y 15
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 11
@@ -2926,11 +2980,12 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 11
 y 16
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 11
@@ -2938,11 +2993,12 @@ y 17
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 11
 y 17
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 11
@@ -3052,10 +3108,11 @@ end
 arch altar
 name Restore (drop 200 gold)
 slaying money
-sp 126
 food 2000
 x 11
 y 30
+arch spell_restoration
+end
 end
 arch woodfloor
 x 11
@@ -3140,11 +3197,12 @@ x 12
 y 6
 end
 arch potion_restoration
-sp 126
 x 12
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 12
@@ -3204,11 +3262,12 @@ y 20
 end
 arch potion_generic
 name potion of curing madness
-sp 125
 x 12
 y 20
 unpaid 1
 identified 1
+arch spell_cure_confusion
+end
 end
 arch woodfloor
 x 12
@@ -3363,11 +3422,12 @@ x 13
 y 6
 end
 arch potion_restoration
-sp 126
 x 13
 y 6
 unpaid 1
 identified 1
+arch spell_restoration
+end
 end
 arch shop_empty
 x 13
@@ -3378,6 +3438,8 @@ x 13
 y 7
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 13
@@ -3388,6 +3450,8 @@ x 13
 y 8
 unpaid 1
 identified 1
+arch spell_heal
+end
 end
 arch shop_empty
 x 13
@@ -3398,6 +3462,8 @@ x 13
 y 9
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 13
@@ -3408,6 +3474,8 @@ x 13
 y 10
 unpaid 1
 identified 1
+arch spell_regenerate_spellpoints
+end
 end
 arch shop_empty
 x 13
@@ -3415,12 +3483,14 @@ y 11
 end
 arch staff
 name staff of healing
-sp 34
 food 20
 x 13
 y 11
+randomitems none
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 13
@@ -3428,12 +3498,13 @@ y 12
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 13
 y 12
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 13
@@ -3441,12 +3512,13 @@ y 13
 end
 arch balm_generic
 name balm of major healing
-sp 34
 x 13
 y 13
 nrof 5
 unpaid 1
 identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 13
@@ -3454,12 +3526,13 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 13
 y 14
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 13
@@ -3467,12 +3540,13 @@ y 15
 end
 arch balm_generic
 name balm of curing disease
-sp 171
 x 13
 y 15
 level 20
 unpaid 1
 identified 1
+arch spell_cure_disease
+end
 end
 arch shop_empty
 x 13
@@ -3480,11 +3554,12 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 13
 y 16
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 13
@@ -3492,11 +3567,12 @@ y 17
 end
 arch balm_generic
 name balm of cure vision
-sp 163
 x 13
 y 17
 unpaid 1
 identified 1
+arch spell_cure_blindness
+end
 end
 arch shop_empty
 x 13
@@ -3508,11 +3584,12 @@ y 19
 end
 arch potion_generic
 name potion of curing madness
-sp 125
 x 13
 y 19
 unpaid 1
 identified 1
+arch spell_cure_confusion
+end
 end
 arch shop_empty
 x 13
@@ -3520,11 +3597,12 @@ y 20
 end
 arch potion_generic
 name potion of curing madness
-sp 125
 x 13
 y 20
 unpaid 1
 identified 1
+arch spell_cure_confusion
+end
 end
 arch woodfloor
 x 13

@@ -7,6 +7,7 @@ width 20
 height 20
 msg
 Created:  1996-06-07
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_1
@@ -1629,12 +1630,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 12
 y 16
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch pstone_1
 x 12
@@ -1644,12 +1646,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 12
 y 17
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch pstone_1
 x 12
@@ -1659,12 +1662,13 @@ arch lbulletwall_3
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 12
 y 18
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch pstone_1
 x 12

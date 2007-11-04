@@ -7,6 +7,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2000-02-17
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -4438,10 +4439,12 @@ carrying 200
 arch skill_throwing
 end
 arch scroll_new
-sp 53
 exp 30
 level 9
 value 152
+randomitems none
+arch spell_protection_from_attack
+end
 end
 end
 arch large_stones
@@ -6015,10 +6018,12 @@ end
 arch shield
 end
 arch scroll_new
-sp 70
 exp 29
 level 8
 value 146
+randomitems none
+arch spell_protection_from_cancellation
+end
 end
 end
 arch large_stones
@@ -7368,10 +7373,12 @@ end
 arch small_shield
 end
 arch scroll_new
-sp 8
 exp 24
 level 5
 value 120
+randomitems none
+arch spell_create_bomb
+end
 end
 end
 arch large_stones

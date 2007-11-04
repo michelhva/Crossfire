@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -463,6 +464,8 @@ end
 arch lightningwall_3
 x 2
 y 3
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 2
@@ -475,6 +478,8 @@ end
 arch lightningwall_3
 x 2
 y 5
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 2
@@ -655,6 +660,8 @@ end
 arch lightningwall_5
 x 3
 y 2
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 3
@@ -675,6 +682,8 @@ end
 arch lightningwall_1
 x 3
 y 6
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 3
@@ -1285,6 +1294,8 @@ end
 arch lightningwall_5
 x 6
 y 2
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 6
@@ -1305,6 +1316,8 @@ end
 arch lightningwall_1
 x 6
 y 6
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 6
@@ -1487,6 +1500,8 @@ end
 arch lightningwall_7
 x 7
 y 3
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 7
@@ -1499,6 +1514,8 @@ end
 arch lightningwall_7
 x 7
 y 5
+arch spell_sm_lightning
+end
 end
 arch large_stones
 x 7

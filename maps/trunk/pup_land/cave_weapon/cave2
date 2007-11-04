@@ -6,6 +6,7 @@ width 21
 height 32
 msg
 Created:  1996-02-08
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -3653,6 +3654,8 @@ x 16
 y 6
 speed 0.050000
 speed_left -1.500000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 16
@@ -4228,6 +4231,8 @@ x 18
 y 5
 speed 0.070000
 speed_left -1.500000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 18
@@ -4496,6 +4501,8 @@ x 19
 y 11
 speed 0.090000
 speed_left 0.100000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 19

@@ -6,6 +6,7 @@ width 20
 height 35
 msg
 Created:  1993-11-10
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -3141,6 +3142,8 @@ end
 arch firechest
 x 14
 y 3
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 14

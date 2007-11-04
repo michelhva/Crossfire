@@ -7,6 +7,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -5636,10 +5637,11 @@ end
 arch lightningwall_5
 name wall
 face cwall_A.111
-dam 43
 x 26
 y 12
 level 10
+arch spell_create_fire_wall
+end
 end
 arch marble
 x 26
@@ -6176,10 +6178,11 @@ end
 arch lightningwall_5
 name wall
 face cwall_A.111
-dam 43
 x 28
 y 12
 level 10
+arch spell_create_fire_wall
+end
 end
 arch marble
 x 28
@@ -6671,10 +6674,11 @@ end
 arch lightningwall_5
 name wall
 face cwall_A.111
-dam 43
 x 30
 y 12
 level 10
+arch spell_create_fire_wall
+end
 end
 arch marble
 x 30

@@ -6,6 +6,7 @@ width 18
 height 16
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -998,9 +999,11 @@ can_cast_spell 1
 can_use_wand 1
 arch wand
 name stick of holding
-sp 16
 food 7
 level 20
+randomitems none
+arch spell_paralyze
+end
 end
 arch spell_paralyze
 end
@@ -1185,9 +1188,10 @@ end
 arch firewall_5
 name anti-magic field generator
 face dun_8.111
-dam 128
 x 8
 y 4
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -1209,9 +1213,10 @@ end
 arch firewall_1
 name anti-magic field generator
 face dun_4.111
-dam 128
 x 8
 y 7
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 8
@@ -1581,9 +1586,10 @@ end
 arch firewall_5
 name anti-magic field generator
 face dun_8.111
-dam 128
 x 11
 y 4
+arch spell_counterwall
+end
 end
 arch dungeon_floor
 x 11
@@ -1605,9 +1611,10 @@ end
 arch firewall_1
 name anti-magic field generator
 face dun_8.111
-dam 128
 x 11
 y 7
+arch spell_counterwall
+end
 end
 arch magic_banned
 x 11
@@ -2185,9 +2192,11 @@ can_cast_spell 1
 can_use_wand 1
 arch wand
 name stick of holding
-sp 16
 food 7
 level 20
+randomitems none
+arch spell_paralyze
+end
 end
 arch spell_paralyze
 end
@@ -2420,6 +2429,8 @@ end
 arch lbulletwall_3
 x 16
 speed 1
+arch spell_lg_magic_bullet
+end
 end
 arch dun14
 x 16

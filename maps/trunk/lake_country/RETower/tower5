@@ -6,6 +6,7 @@ width 25
 height 25
 msg
 Created:  1995-06-20 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch permanent_lava
@@ -398,13 +399,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 2
 y 4
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 2
@@ -1364,13 +1366,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 8
 y 2
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 8
@@ -2045,6 +2048,8 @@ arch firewall_3
 face fireball.111
 x 11
 y 9
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 11
@@ -2452,13 +2457,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 13
 y 22
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 13
@@ -2683,9 +2689,10 @@ y 11
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 11
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2693,9 +2700,10 @@ y 12
 end
 arch firewall_4
 face fireball.111
-dam 82
 x 15
 y 12
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2713,9 +2721,10 @@ y 14
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 14
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2733,9 +2742,10 @@ y 16
 end
 arch firewall_3
 face fireball.111
-dam 82
 x 15
 y 16
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -2975,13 +2985,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 17
 y 4
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 17
@@ -3011,6 +3022,8 @@ speed 0.040000
 speed_left -0.880000
 level 30
 alive 0
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 17
@@ -3040,13 +3053,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 17
 y 12
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 17
@@ -3138,13 +3152,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 18
 y 2
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 18
@@ -3168,13 +3183,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 18
 y 6
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 18
@@ -3701,13 +3717,14 @@ face fireball.111
 hp 1500
 maxhp 1500
 exp 60000
-dam 10
 x 22
 y 12
 speed 0.040000
 speed_left -0.620000
 level 30
 alive 0
+arch spell_summon_fire_elemental
+end
 end
 arch permanent_lava
 x 22
@@ -4027,6 +4044,8 @@ arch firewall_7
 face fireball.111
 x 24
 y 9
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 24
@@ -4054,9 +4073,10 @@ y 12
 end
 arch firewall_6
 face fireball.111
-dam 82
 x 24
 y 12
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -4064,9 +4084,10 @@ y 13
 end
 arch firewall_7
 face fireball.111
-dam 82
 x 24
 y 13
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -4086,6 +4107,8 @@ arch firewall_7
 face fireball.111
 x 24
 y 15
+arch spell_small_fireball
+end
 end
 arch permanent_lava
 x 24
@@ -4113,9 +4136,10 @@ y 18
 end
 arch firewall_7
 face fireball.111
-dam 82
 x 24
 y 18
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24

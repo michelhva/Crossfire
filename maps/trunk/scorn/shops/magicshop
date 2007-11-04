@@ -11,6 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch shop_empty
@@ -1434,10 +1435,11 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 16
 y 12
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 16
@@ -1446,10 +1448,11 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 16
 y 13
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 16

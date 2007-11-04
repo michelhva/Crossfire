@@ -5,6 +5,7 @@ width 40
 height 32
 msg
 Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_1
@@ -5513,7 +5514,6 @@ x 38
 y 14
 end
 arch lightningwall_1
-dam 82
 x 38
 y 14
 speed 0.100000
@@ -5523,9 +5523,10 @@ invisible 1
 move_block 0
 no_pick 1
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_8
-dam 82
 x 38
 y 14
 speed -0.100000
@@ -5534,9 +5535,10 @@ invisible 1
 move_block 0
 no_pick 1
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_7
-dam 82
 x 38
 y 14
 speed 0.100000
@@ -5546,9 +5548,10 @@ invisible 1
 move_block 0
 no_pick 1
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_6
-dam 82
 x 38
 y 14
 speed -0.100000
@@ -5557,9 +5560,10 @@ invisible 1
 move_block 0
 no_pick 1
 blocksview 0
+arch spell_firebolt
+end
 end
 arch lightningwall_5
-dam 82
 x 38
 y 14
 speed -0.100000
@@ -5568,6 +5572,8 @@ invisible 1
 move_block 0
 no_pick 1
 blocksview 0
+arch spell_firebolt
+end
 end
 arch altar
 name High Altar of the Fire God
@@ -5578,7 +5584,6 @@ arch rod_heavy
 name Scepter of the Fire God
 hp 600
 maxhp 600
-sp 1
 x 38
 y 14
 speed -1.000000
@@ -5587,6 +5592,9 @@ type 35
 resist_fire 30
 material 256
 value 350000
+randomitems none
+arch spell_small_fireball
+end
 end
 arch girdle_str
 name Girdle of the Fire God

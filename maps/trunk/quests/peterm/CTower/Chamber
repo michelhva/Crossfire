@@ -5,6 +5,7 @@ width 16
 height 16
 msg
 Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -452,6 +453,8 @@ end
 arch potion_magic
 x 10
 y 6
+arch spell_regenerate_spellpoints
+end
 end
 arch woodfloor
 x 10

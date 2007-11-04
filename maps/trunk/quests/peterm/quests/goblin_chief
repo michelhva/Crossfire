@@ -8,6 +8,7 @@ enter_x 14
 enter_y 9
 msg
 Created:  2000-06-05
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_4
@@ -222,6 +223,8 @@ x 1
 y 7
 material 256
 no_pick 1
+arch spell_heroism
+end
 end
 arch pstone_4
 x 1

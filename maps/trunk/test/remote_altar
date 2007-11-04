@@ -4,6 +4,7 @@ width 8
 height 8
 msg
 Created:  2000-02-24
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch boulder
@@ -48,9 +49,10 @@ slaying boulder
 msg
 The boulder disappears in a puff of smoke!
 endmsg
-sp 102
 food 1
 x 7
 y 3
 level 1
+arch spell_immunity_to_magic
+end
 end

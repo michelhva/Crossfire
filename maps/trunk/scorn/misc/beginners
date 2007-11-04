@@ -9,6 +9,7 @@ enter_x 15
 enter_y 28
 msg
 Created:  1993-10-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1230,14 +1231,16 @@ x 6
 y 4
 end
 arch wand
-sp 2
 food 2
 x 6
 y 4
 level 1
 value 1
 state 1
+randomitems none
 identified 1
+arch spell_medium_fireball
+end
 end
 arch woodfloor
 x 6

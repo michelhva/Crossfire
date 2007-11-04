@@ -8,6 +8,7 @@ enter_y 3
 msg
 Coyote: Todd Mitchell
 Created:  2002-03-30
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch desert
@@ -1506,7 +1507,6 @@ x 10
 y 18
 end
 arch lightningwall
-dam 189
 x 10
 y 18
 speed 0.0
@@ -1515,6 +1515,8 @@ invisible 1
 connected 4
 move_block 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch cobblestones
 x 10
@@ -2120,7 +2122,6 @@ x 14
 y 15
 end
 arch lightningwall
-dam 189
 x 14
 y 15
 speed 0.0
@@ -2129,6 +2130,8 @@ invisible 1
 connected 3
 move_block 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch cobblestones
 x 14
@@ -2362,7 +2365,6 @@ y 3
 end
 arch lightningwall
 sp 5
-dam 189
 x 16
 y 3
 speed 0.0
@@ -2371,6 +2373,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch desert
 x 16

@@ -6,6 +6,7 @@ width 19
 height 16
 msg
 Created:  1996-02-07
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_1
@@ -1310,6 +1311,8 @@ end
 arch firewall_5
 x 14
 level 5
+arch spell_small_fireball
+end
 end
 arch pstone_4
 x 14
@@ -1788,6 +1791,8 @@ name blocked
 face blocked.111
 x 18
 y 5
+arch spell_sm_lightning
+end
 end
 arch igateTrg1
 name blocked

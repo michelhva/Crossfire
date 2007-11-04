@@ -7,6 +7,7 @@ width 24
 height 13
 msg
 Created:  1994-06-07 langley (langley@fermat.dartmouth.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -205,6 +206,8 @@ end
 arch cannon_3
 x 2
 y 1
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 2
@@ -221,6 +224,8 @@ end
 arch cannon_3
 x 2
 y 3
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 2
@@ -329,6 +334,8 @@ end
 arch cannon_2
 x 3
 y 10
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 3
@@ -858,6 +865,8 @@ end
 arch cannon_1
 x 10
 y 10
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 10
@@ -1022,6 +1031,8 @@ end
 arch cannon_7
 x 13
 y 4
+arch spell_magic_bullet
+end
 end
 arch mountain
 x 13
@@ -1038,6 +1049,8 @@ end
 arch cannon_7
 x 13
 y 7
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 13
@@ -1054,6 +1067,8 @@ end
 arch cannon_8
 x 13
 y 10
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 13
@@ -1169,6 +1184,8 @@ end
 arch cannon_7
 x 15
 y 2
+arch spell_magic_bullet
+end
 end
 arch sea
 x 15

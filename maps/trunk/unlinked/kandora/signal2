@@ -8,6 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  1999-02-28 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch afloor_right
@@ -246,12 +247,24 @@ x 2
 y 10
 carrying 9200
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 end
 arch afloor_right
@@ -868,6 +881,9 @@ x 9
 y 6
 carrying 14300
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch random_bow
 end

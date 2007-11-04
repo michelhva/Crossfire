@@ -6,6 +6,7 @@ width 34
 height 19
 msg
 Created:  1996-02-21
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -3145,6 +3146,8 @@ end
 arch lightningwall_7
 x 21
 y 17
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 21

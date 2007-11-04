@@ -6,6 +6,7 @@ width 10
 height 20
 msg
 Created:  2005-03-23 Huhanhi
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -226,12 +227,13 @@ y 7
 end
 arch balm_generic
 title of moderate healing
-sp 33
 x 1
 y 7
 nrof 4
 level 10
 value 200
+arch spell_medium_healing
+end
 end
 arch flagstone
 x 1
@@ -357,12 +359,14 @@ y 2
 end
 arch wand
 title of Unique Firebolt
-sp 82
 food 1
 x 2
 y 2
 level 1
+randomitems none
 identified 1
+arch spell_firebolt
+end
 end
 arch flagstone
 x 2
@@ -722,12 +726,14 @@ y 2
 end
 arch wand
 title of Unique Firebolt
-sp 82
 food 1
 x 4
 y 2
 level 1
+randomitems none
 identified 1
+arch spell_firebolt
+end
 end
 arch flagstone
 x 4
@@ -907,12 +913,14 @@ y 3
 end
 arch wand
 title of Unique Firebolt
-sp 82
 food 1
 x 5
 y 3
 level 1
+randomitems none
 identified 1
+arch spell_firebolt
+end
 end
 arch flagstone
 x 5
@@ -1462,10 +1470,12 @@ can_use_scroll 1
 can_use_rod 1
 arch wand
 title of Firebolt of Plenty
-sp 82
 food 50
 level 1
 value 5000
+randomitems none
+arch spell_firebolt
+end
 end
 arch head
 name Angry Pixie's head

@@ -5,6 +5,7 @@ width 32
 height 38
 msg
 Created:  2006-07-15 Bort
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch afloor_left
@@ -444,6 +445,8 @@ arch cannon
 x 1
 y 33
 connected 99999
+arch spell_magic_bullet
+end
 end
 arch afloor_left
 x 1
@@ -1247,12 +1250,13 @@ arch violin
 name Pete's Violin
 hp 10
 maxhp 20
-sp 64
 x 5
 y 11
 level 5
 value 1
 weight 1701
+arch spell_mass_confusion
+end
 end
 arch afloor_left
 x 5
@@ -5493,6 +5497,8 @@ arch cannon_7
 x 20
 y 33
 connected 99999
+arch spell_magic_bullet
+end
 end
 arch afloor_left
 x 20
@@ -7271,9 +7277,11 @@ randomitems pirate
 pick_up 0
 unaggressive 0
 arch wand
-sp 63
 food 5
 level 5
+randomitems none
+arch spell_confusion
+end
 end
 arch spell_confusion
 end
@@ -7633,9 +7641,9 @@ randomitems pirate
 pick_up 0
 unaggressive 0
 arch wand
-sp 63
 food 5
 level 5
+randomitems none
 arch spell_confusion
 end
 arch spell_slow

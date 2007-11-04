@@ -9,6 +9,7 @@ enter_x 14
 enter_y 8
 msg
 Created:  2003-05-11 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -4233,11 +4234,12 @@ x 24
 y 25
 end
 arch lightningwall_1
-dam 6
 x 24
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 24
@@ -4426,11 +4428,12 @@ x 25
 y 25
 end
 arch lightningwall_1
-dam 6
 x 25
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 25
@@ -4612,11 +4615,12 @@ x 26
 y 25
 end
 arch lightningwall_1
-dam 6
 x 26
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 26

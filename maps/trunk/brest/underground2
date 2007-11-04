@@ -6,6 +6,7 @@ width 60
 height 60
 msg
 Created:  1994-02-31
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -4272,6 +4273,8 @@ end
 arch firechest
 x 12
 y 53
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 12
@@ -4671,6 +4674,8 @@ end
 arch firechest
 x 13
 y 52
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 13
@@ -4679,6 +4684,8 @@ end
 arch firechest
 x 13
 y 53
+arch spell_magic_bullet
+end
 end
 arch dungeon_floor
 x 13
@@ -6397,6 +6404,8 @@ end
 arch speedballwall
 x 18
 y 43
+arch spell_large_speedball
+end
 end
 arch dungeon_floor
 x 18
@@ -7007,6 +7016,8 @@ end
 arch lbulletwall_5
 x 20
 y 43
+arch spell_lg_magic_bullet
+end
 end
 arch dungeon_floor
 x 20

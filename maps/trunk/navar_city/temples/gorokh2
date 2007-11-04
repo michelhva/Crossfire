@@ -9,6 +9,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2003-12-14 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch marble
@@ -3347,6 +3348,8 @@ end
 arch lightningwall_5
 x 16
 speed -0.5
+arch spell_sm_lightning
+end
 end
 arch gate_closed_1
 x 16

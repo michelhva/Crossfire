@@ -6,6 +6,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1327,12 +1328,13 @@ uncontrollably breathe forth like a
 fire dragon.
 endmsg
 face potiongen.111
-sp 58
 x 7
 y 20
 value 4000
 unpaid 1
 identified 1
+arch spell_dragonbreath
+end
 end
 arch shop_empty
 x 7
@@ -1483,12 +1485,13 @@ uncontrollably breathe forth like a ice
 dragon.
 endmsg
 face potiongen.111
-sp 59
 x 8
 y 20
 value 4000
 unpaid 1
 identified 1
+arch spell_large_icestorm
+end
 end
 arch shop_empty
 x 8
@@ -1638,12 +1641,13 @@ power to poison the air all around you
 with your bad breath.
 endmsg
 face potiongen.111
-sp 21
 x 9
 y 20
 value 1000
 unpaid 1
 identified 1
+arch spell_poison_cloud
+end
 end
 arch shop_empty
 x 9
@@ -1793,12 +1797,13 @@ senses and let you move and react
 faster...
 endmsg
 face potiongen.111
-sp 86
 x 10
 y 20
 value 6000
 unpaid 1
 identified 1
+arch spell_haste
+end
 end
 arch shop_empty
 x 10
@@ -1816,12 +1821,13 @@ arch potion_heroism
 name potion of invisibility
 name_pl potions of invisibility
 face potiongen.111
-sp 26
 x 10
 y 22
 value 2000
 unpaid 1
 identified 1
+arch spell_invisible
+end
 end
 arch shop_gems
 x 10

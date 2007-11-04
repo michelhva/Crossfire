@@ -11,6 +11,7 @@ enter_x 8
 enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -4397,6 +4398,8 @@ end
 arch bulletwall_3
 x 13
 y 11
+arch spell_magic_bullet
+end
 end
 arch swall_3_2
 x 13
@@ -4999,6 +5002,8 @@ end
 arch bulletwall_7
 x 18
 y 8
+arch spell_magic_bullet
+end
 end
 arch swall_2_1_2
 x 18

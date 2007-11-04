@@ -6,6 +6,7 @@ width 21
 height 21
 msg
 Created:  1996-02-07
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -2350,6 +2351,8 @@ end
 arch firewall_1
 x 14
 y 19
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 14

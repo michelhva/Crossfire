@@ -8,6 +8,7 @@ enter_x 51
 enter_y 6
 msg
 Created:  2006-12-10 Gene Alexander (poof@eracc.com)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -9968,6 +9969,7 @@ arch rod_heavy
 hp 1000
 maxhp 1000
 level 55
+randomitems none
 applied 1
 startequip 1
 arch spell_banishment
@@ -11436,6 +11438,8 @@ arch active_volcano
 x 27
 y 29
 glow_radius 4
+arch spell_magic_bullet
+end
 end
 arch large_stones
 x 27
@@ -12098,6 +12102,8 @@ arch active_volcano
 x 29
 y 27
 glow_radius 4
+arch spell_magic_bullet
+end
 end
 arch large_stones
 x 29
@@ -12119,6 +12125,8 @@ arch active_volcano
 x 29
 y 31
 glow_radius 4
+arch spell_magic_bullet
+end
 end
 arch large_stones
 x 29
@@ -12798,6 +12806,8 @@ arch active_volcano
 x 31
 y 29
 glow_radius 4
+arch spell_magic_bullet
+end
 end
 arch large_stones
 x 31

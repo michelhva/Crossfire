@@ -7,6 +7,7 @@ enter_x 12
 enter_y 11
 msg
 Created:  2002-01-11
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -190,7 +191,6 @@ y 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
-dam 121
 x 1
 y 1
 speed 0
@@ -199,6 +199,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 1
@@ -212,7 +214,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 3
-dam 121
 x 1
 y 2
 speed 0
@@ -221,6 +222,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 1
@@ -234,7 +237,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 2
-dam 121
 x 1
 y 3
 speed 0
@@ -243,6 +245,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 1
@@ -386,7 +390,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 5
-dam 121
 x 2
 y 1
 speed 0
@@ -395,6 +398,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch magic_mouth
 msg
@@ -432,7 +437,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 1
-dam 121
 x 2
 y 3
 speed 0
@@ -441,6 +445,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 2
@@ -584,7 +590,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 6
-dam 121
 x 3
 y 1
 speed 0
@@ -593,6 +598,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 3
@@ -606,7 +613,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 7
-dam 121
 x 3
 y 2
 speed 0
@@ -615,6 +621,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 3
@@ -628,7 +636,6 @@ end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 8
-dam 121
 x 3
 y 3
 speed 0
@@ -637,6 +644,8 @@ invisible 1
 connected 2
 move_block 0
 blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 3

@@ -6,6 +6,7 @@ width 26
 height 37
 msg
 Created:  2004-06-09 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch teleporter
@@ -18,7 +19,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 speed -0.05
 level 50
 invisible 1
@@ -39,7 +39,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 y 1
 speed -0.05
 level 50
@@ -61,7 +60,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 y 2
 speed -0.05
 level 50
@@ -83,7 +81,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 y 3
 speed -0.05
 level 50
@@ -341,7 +338,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 x 1
 speed -0.05
 level 50
@@ -364,7 +360,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 1
 y 1
 speed -0.05
@@ -388,7 +383,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 1
 y 2
 speed -0.05
@@ -412,7 +406,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 x 1
 y 3
 speed -0.05
@@ -2538,13 +2531,14 @@ y 30
 end
 arch firewall_1
 name anti-magic force
-dam 128
 x 6
 y 30
 speed -0.050000
 level 100
 move_block 0
 blocksview 0
+arch spell_counterwall
+end
 end
 arch flagstone
 x 6
@@ -3711,7 +3705,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 x 10
 speed -0.05
 level 50
@@ -3734,7 +3727,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 x 10
 y 1
 speed -0.05
@@ -4085,7 +4077,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 x 11
 speed -0.05
 level 50
@@ -4108,7 +4099,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 x 11
 y 1
 speed -0.05
@@ -4540,7 +4530,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 x 12
 speed -0.05
 level 50
@@ -4563,7 +4552,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 x 12
 y 1
 speed -0.05
@@ -4648,7 +4636,6 @@ y 10
 end
 arch firewall_3
 name anti-magic force
-dam 0
 x 12
 y 10
 speed -0.05
@@ -4873,7 +4860,6 @@ y 23
 end
 arch firewall_3
 name anti-magic force
-dam 0
 x 12
 y 23
 speed -0.05
@@ -5030,7 +5016,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 13
 speed -0.05
 level 50
@@ -5053,7 +5038,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 13
 y 1
 speed -0.05
@@ -5138,7 +5122,6 @@ y 10
 end
 arch firewall_7
 name anti-magic force
-dam 0
 x 13
 y 10
 speed -0.05
@@ -5363,7 +5346,6 @@ y 23
 end
 arch firewall_7
 name anti-magic force
-dam 0
 x 13
 y 23
 speed -0.05
@@ -5923,7 +5905,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 x 15
 speed -0.05
 level 50
@@ -5947,7 +5928,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 3
-dam 0
 x 15
 y 1
 speed -0.05
@@ -6295,7 +6275,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 x 16
 speed -0.05
 level 50
@@ -6319,7 +6298,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 x 16
 y 1
 speed -0.05
@@ -6678,7 +6656,6 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-dam 0
 x 17
 speed -0.05
 level 50
@@ -6702,7 +6679,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 1
-dam 0
 x 17
 y 1
 speed -0.05
@@ -7153,7 +7129,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 18
 speed -0.05
 level 50
@@ -7177,7 +7152,6 @@ arch firewall_5
 name fearsome statue
 face earthwall.111
 sp 7
-dam 0
 x 18
 y 1
 speed -0.05
@@ -7681,7 +7655,6 @@ y 16
 end
 arch firewall_5
 name anti-magic force
-dam 0
 x 19
 y 16
 speed -0.05
@@ -7709,7 +7682,6 @@ y 17
 end
 arch firewall_1
 name anti-magic force
-dam 0
 x 19
 y 17
 speed -0.05
@@ -7945,7 +7917,6 @@ end
 arch firewall_3
 name fearsome statue
 face wizard_white.131
-dam 0
 x 20
 speed -0.3
 level 70
@@ -7965,7 +7936,6 @@ end
 arch firewall_3
 name fearsome statue
 face wizard_white.131
-dam 0
 x 20
 y 1
 speed -0.3
@@ -8297,7 +8267,6 @@ end
 arch firewall_5
 name fearsome statue
 face wizard_white.151
-dam 0
 x 21
 speed -0.3
 level 70
@@ -8317,7 +8286,6 @@ end
 arch firewall_1
 name fearsome statue
 face wizard_white.111
-dam 0
 x 21
 y 1
 speed -0.3
@@ -8733,7 +8701,6 @@ end
 arch firewall_5
 name fearsome statue
 face wizard_white.151
-dam 0
 x 22
 speed -0.3
 level 70
@@ -8753,7 +8720,6 @@ end
 arch firewall_1
 name fearsome statue
 face wizard_white.111
-dam 0
 x 22
 y 1
 speed -0.3
@@ -9085,7 +9051,6 @@ end
 arch firewall_7
 name fearsome statue
 face wizard_white.171
-dam 0
 x 23
 speed -0.3
 level 70
@@ -9105,7 +9070,6 @@ end
 arch firewall_7
 name fearsome statue
 face wizard_white.171
-dam 0
 x 23
 y 1
 speed -0.3

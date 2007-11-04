@@ -5,6 +5,7 @@ height 30
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -4153,6 +4154,9 @@ nrof 40
 been_applied 1
 end
 arch staff
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch u_horn
 end

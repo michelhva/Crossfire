@@ -15,6 +15,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1993-11-02
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -395,7 +396,6 @@ arch altar
 name altar of detect magic (10 gp)
 name_pl altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 3
 y 1
@@ -413,7 +413,6 @@ arch altar
 name altar of detect curse (25 gp)
 name_pl altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 3
 y 2
