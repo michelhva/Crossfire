@@ -8,8 +8,7 @@ height 25
 enter_x 12
 enter_y 23
 msg
-Creator: Motified by MikeeUSA to fit style
-Date:    1/10/2002
+Created:  2002-01-10 MikeeUSA
 endmsg
 end
 arch blocked
@@ -1606,6 +1605,7 @@ arch creator
 other_arch altar_devourers
 x 8
 y 3
+level 120
 connected 10
 end
 arch goldfloor
@@ -1865,6 +1865,7 @@ arch creator
 other_arch altar_ruggilli
 x 9
 y 3
+level 120
 connected 11
 end
 arch goldfloor
@@ -2083,6 +2084,7 @@ arch creator
 other_arch altar_valriel
 x 10
 y 3
+level 120
 connected 12
 end
 arch goldfloor
@@ -2302,6 +2304,7 @@ arch creator
 other_arch altar_sorig
 x 11
 y 3
+level 120
 connected 13
 end
 arch goldfloor
@@ -2524,6 +2527,7 @@ arch creator
 other_arch altar_lythander
 x 12
 y 3
+level 120
 connected 14
 end
 arch goldfloor
@@ -2549,12 +2553,23 @@ arch dungeon_magic
 x 12
 y 4
 end
-arch woodfloor
+arch creator
+other_arch altar_valkyrie
 x 12
 y 5
+level 120
+connected 20
+end
+arch goldfloor
+name drop 5 Holy shields for an altar of Valkyrie
+slaying holy_shield
+food 5
+x 12
+y 5
+connected 20
 unique 1
 end
-arch dungeon_magic
+arch magic_banned
 x 12
 y 5
 end
@@ -2795,6 +2810,7 @@ arch creator
 other_arch altar_gaea
 x 13
 y 3
+level 120
 connected 15
 end
 arch goldfloor
@@ -3033,6 +3049,7 @@ arch creator
 other_arch altar_mostrai
 x 14
 y 3
+level 120
 connected 16
 end
 arch goldfloor
@@ -3259,6 +3276,7 @@ arch creator
 other_arch altar_gnarg
 x 15
 y 3
+level 120
 connected 17
 end
 arch goldfloor
@@ -3483,6 +3501,7 @@ arch creator
 other_arch altar_gorokh
 x 16
 y 3
+level 120
 connected 18
 end
 arch goldfloor
@@ -5253,8 +5272,6 @@ hp 5
 sp 38
 x 24
 y 1
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5278,8 +5295,6 @@ hp 27
 sp 35
 x 24
 y 2
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5301,8 +5316,6 @@ hp 20
 sp 14
 x 24
 y 3
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5326,8 +5339,6 @@ hp 48
 sp 45
 x 24
 y 4
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5351,8 +5362,6 @@ hp 24
 sp 41
 x 24
 y 5
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5372,8 +5381,6 @@ name_pl Pupland Terminal
 slaying /quests/pupland/terminal
 x 24
 y 6
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5395,8 +5402,6 @@ name_pl Nurnberg
 slaying /nurnberg/city
 x 24
 y 7
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5420,8 +5425,6 @@ hp 4
 sp 4
 x 24
 y 8
-walk_on 0
-fly_on 0
 end
 arch grass
 x 24
@@ -5466,7 +5469,7 @@ speed 0.000000
 connected 50
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 24
 y 12
 no_pass 1
@@ -5492,9 +5495,7 @@ hp 0
 sp 0
 x 24
 y 13
-walk_on 0
 is_animated 0
-fly_on 0
 unique 1
 end
 arch grass
