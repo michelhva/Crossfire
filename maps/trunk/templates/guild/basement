@@ -1,5 +1,6 @@
 arch map
 name basement
+difficulty 1
 width 25
 height 25
 msg
@@ -179,6 +180,7 @@ arch creator
 other_arch altar_ruggilli
 x 1
 y 1
+level 120
 connected 11
 end
 arch goldfloor
@@ -207,6 +209,7 @@ arch creator
 other_arch altar_devourers
 x 1
 y 3
+level 120
 connected 10
 end
 arch goldfloor
@@ -682,6 +685,7 @@ arch creator
 other_arch altar_valriel
 x 3
 y 1
+level 120
 connected 12
 end
 arch goldfloor
@@ -1154,6 +1158,7 @@ arch creator
 other_arch altar_sorig
 x 5
 y 1
+level 120
 connected 13
 end
 arch goldfloor
@@ -1621,6 +1626,7 @@ arch creator
 other_arch altar_lythander
 x 7
 y 1
+level 120
 connected 14
 end
 arch goldfloor
@@ -2338,6 +2344,7 @@ arch creator
 other_arch altar_gaea
 x 10
 y 1
+level 120
 connected 15
 end
 arch goldfloor
@@ -2628,7 +2635,7 @@ x 11
 y 4
 unique 1
 end
-arch mine_2_1_2
+arch mine_2_2_3
 x 11
 y 4
 end
@@ -2641,6 +2648,10 @@ x 11
 y 5
 unique 1
 end
+arch mine_2_1_1
+x 11
+y 5
+end
 arch dungeon_magic
 x 11
 y 6
@@ -2649,6 +2660,10 @@ arch woodfloor
 x 11
 y 6
 unique 1
+end
+arch mine_2_2_1
+x 11
+y 6
 end
 arch dungeon_magic
 x 11
@@ -2847,6 +2862,7 @@ arch creator
 other_arch altar_mostrai
 x 12
 y 1
+level 120
 connected 16
 end
 arch goldfloor
@@ -2881,27 +2897,27 @@ x 12
 y 4
 unique 1
 end
+arch dungeon_magic
+x 12
+y 5
+end
+arch woodfloor
+x 12
+y 5
+unique 1
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 6
+unique 1
+end
 arch mine_2_1_2
 x 12
-y 4
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch woodfloor
-x 12
-y 5
-unique 1
-end
-arch dungeon_magic
-x 12
 y 6
-end
-arch woodfloor
-x 12
-y 6
-unique 1
 end
 arch dungeon_magic
 x 12
@@ -3133,27 +3149,27 @@ x 13
 y 4
 unique 1
 end
+arch dungeon_magic
+x 13
+y 5
+end
+arch woodfloor
+x 13
+y 5
+unique 1
+end
+arch dungeon_magic
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 6
+unique 1
+end
 arch mine_2_1_2
 x 13
-y 4
-end
-arch dungeon_magic
-x 13
-y 5
-end
-arch woodfloor
-x 13
-y 5
-unique 1
-end
-arch dungeon_magic
-x 13
 y 6
-end
-arch woodfloor
-x 13
-y 6
-unique 1
 end
 arch dungeon_magic
 x 13
@@ -3352,6 +3368,7 @@ arch creator
 other_arch altar_gnarg
 x 14
 y 1
+level 120
 connected 17
 end
 arch goldfloor
@@ -3386,27 +3403,27 @@ x 14
 y 4
 unique 1
 end
+arch dungeon_magic
+x 14
+y 5
+end
+arch woodfloor
+x 14
+y 5
+unique 1
+end
+arch dungeon_magic
+x 14
+y 6
+end
+arch woodfloor
+x 14
+y 6
+unique 1
+end
 arch mine_2_1_2
 x 14
-y 4
-end
-arch dungeon_magic
-x 14
-y 5
-end
-arch woodfloor
-x 14
-y 5
-unique 1
-end
-arch dungeon_magic
-x 14
 y 6
-end
-arch woodfloor
-x 14
-y 6
-unique 1
 end
 arch dungeon_magic
 x 14
@@ -3638,27 +3655,27 @@ x 15
 y 4
 unique 1
 end
+arch dungeon_magic
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 5
+unique 1
+end
+arch dungeon_magic
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 6
+unique 1
+end
 arch mine_2_1_2
 x 15
-y 4
-end
-arch dungeon_magic
-x 15
-y 5
-end
-arch woodfloor
-x 15
-y 5
-unique 1
-end
-arch dungeon_magic
-x 15
 y 6
-end
-arch woodfloor
-x 15
-y 6
-unique 1
 end
 arch dungeon_magic
 x 15
@@ -3857,6 +3874,7 @@ arch creator
 other_arch altar_gorokh
 x 16
 y 1
+level 120
 connected 18
 end
 arch goldfloor
@@ -3885,6 +3903,7 @@ arch creator
 other_arch altar_ixalovh
 x 16
 y 3
+level 120
 connected 19
 end
 arch goldfloor
@@ -3901,27 +3920,38 @@ x 16
 y 4
 unique 1
 end
+arch magic_banned
+x 16
+y 5
+end
+arch creator
+other_arch altar_valkyrie
+x 16
+y 5
+level 120
+connected 20
+end
+arch goldfloor
+name drop 5 Holy shields for an altar of Valkyrie
+slaying holy_shield
+food 5
+x 16
+y 5
+connected 20
+unique 1
+end
+arch dungeon_magic
+x 16
+y 6
+end
+arch woodfloor
+x 16
+y 6
+unique 1
+end
 arch mine_2_1_2
 x 16
-y 4
-end
-arch dungeon_magic
-x 16
-y 5
-end
-arch woodfloor
-x 16
-y 5
-unique 1
-end
-arch dungeon_magic
-x 16
 y 6
-end
-arch woodfloor
-x 16
-y 6
-unique 1
 end
 arch dungeon_magic
 x 16
@@ -4159,7 +4189,7 @@ arch woodfloor
 x 17
 y 4
 end
-arch mine_3_4
+arch mine_2_1_1
 x 17
 y 4
 end
@@ -4175,7 +4205,7 @@ arch woodfloor
 x 17
 y 6
 end
-arch mine_2_1_1
+arch mine_2_2_3
 x 17
 y 6
 end
