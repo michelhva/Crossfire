@@ -3,8 +3,8 @@ name General Department
 fixed_resettime 1
 difficulty 1
 region wolfsburg
-width 17
-height 13
+width 18
+height 14
 msg
 Created:  2005-09-18
 endmsg
@@ -82,8 +82,14 @@ end
 arch shop_empty
 y 12
 end
-arch awall_3_1
+arch awall_2_1_1
 y 12
+end
+arch shop_empty
+y 13
+end
+arch awall_3_1
+y 13
 end
 arch woodfloor
 x 1
@@ -140,13 +146,17 @@ arch shop_floor
 x 1
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 1
 y 12
 end
+arch shop_empty
+x 1
+y 13
+end
 arch awall_2_1_2
 x 1
-y 12
+y 13
 end
 arch woodfloor
 x 2
@@ -199,13 +209,17 @@ arch shop_floor
 x 2
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 2
 y 12
 end
+arch shop_empty
+x 2
+y 13
+end
 arch awall_2_1_2
 x 2
-y 12
+y 13
 end
 arch woodfloor
 x 3
@@ -258,13 +272,17 @@ arch shop_floor
 x 3
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 3
 y 12
 end
+arch shop_empty
+x 3
+y 13
+end
 arch awall_2_1_2
 x 3
-y 12
+y 13
 end
 arch woodfloor
 x 4
@@ -317,13 +335,17 @@ arch shop_floor
 x 4
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 4
 y 12
 end
+arch shop_empty
+x 4
+y 13
+end
 arch awall_2_1_2
 x 4
-y 12
+y 13
 end
 arch woodfloor
 x 5
@@ -376,13 +398,17 @@ arch shop_floor
 x 5
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 5
 y 12
 end
+arch shop_empty
+x 5
+y 13
+end
 arch awall_2_1_2
 x 5
-y 12
+y 13
 end
 arch woodfloor
 x 6
@@ -435,13 +461,17 @@ arch shop_floor
 x 6
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 6
 y 12
 end
+arch shop_empty
+x 6
+y 13
+end
 arch awall_2_1_2
 x 6
-y 12
+y 13
 end
 arch woodfloor
 x 7
@@ -494,13 +524,17 @@ arch shop_floor
 x 7
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 7
 y 12
 end
+arch shop_empty
+x 7
+y 13
+end
 arch awall_2_1_2
 x 7
-y 12
+y 13
 end
 arch woodfloor
 x 8
@@ -553,13 +587,17 @@ arch shop_floor
 x 8
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 8
 y 12
 end
+arch shop_empty
+x 8
+y 13
+end
 arch awall_2_1_2
 x 8
-y 12
+y 13
 end
 arch woodfloor
 x 9
@@ -612,13 +650,17 @@ arch shop_floor
 x 9
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 9
 y 12
 end
+arch shop_empty
+x 9
+y 13
+end
 arch awall_2_1_2
 x 9
-y 12
+y 13
 end
 arch woodfloor
 x 10
@@ -671,13 +713,17 @@ arch shop_floor
 x 10
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 10
 y 12
 end
+arch shop_empty
+x 10
+y 13
+end
 arch awall_2_1_2
 x 10
-y 12
+y 13
 end
 arch woodfloor
 x 11
@@ -730,13 +776,17 @@ arch shop_floor
 x 11
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 11
 y 12
 end
+arch shop_empty
+x 11
+y 13
+end
 arch awall_2_1_2
 x 11
-y 12
+y 13
 end
 arch woodfloor
 x 12
@@ -789,13 +839,17 @@ arch shop_floor
 x 12
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 12
 y 12
 end
+arch shop_empty
+x 12
+y 13
+end
 arch awall_2_1_2
 x 12
-y 12
+y 13
 end
 arch woodfloor
 x 13
@@ -848,13 +902,17 @@ arch shop_floor
 x 13
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 13
 y 12
 end
+arch shop_empty
+x 13
+y 13
+end
 arch awall_2_1_2
 x 13
-y 12
+y 13
 end
 arch woodfloor
 x 14
@@ -907,183 +965,262 @@ arch shop_floor
 x 14
 y 11
 end
-arch shop_empty
+arch shop_floor
 x 14
 y 12
 end
+arch shop_empty
+x 14
+y 13
+end
 arch awall_2_1_2
 x 14
-y 12
+y 13
 end
 arch woodfloor
 x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch awall_2_1_2
+x 15
+y 1
+end
+arch shop_empty
+x 15
+y 2
+end
+arch shop_empty
+x 15
+y 3
+end
+arch shop_floor
+x 15
+y 4
+end
+arch shop_floor
+x 15
+y 5
+end
+arch shop_floor
+x 15
+y 6
+end
+arch shop_floor
+x 15
+y 7
+end
+arch shop_floor
+x 15
+y 8
+end
+arch shop_floor
+x 15
+y 9
+end
+arch shop_floor
+x 15
+y 10
+end
+arch shop_floor
+x 15
+y 11
+end
+arch shop_floor
+x 15
+y 12
+end
+arch shop_empty
+x 15
+y 13
+end
+arch awall_2_1_2
+x 15
+y 13
+end
+arch woodfloor
+x 16
 end
 arch shop_mat
-x 15
+x 16
 end
 arch woodfloor
-x 15
+x 16
 y 1
 end
 arch awall_2_1_2
-x 15
+x 16
 y 1
 end
 arch shop_empty
-x 15
+x 16
 y 2
 end
 arch shop_mat
-x 15
+x 16
 y 2
 end
 arch shop_empty
-x 15
+x 16
 y 3
 end
 arch menu
-x 15
+x 16
 y 3
 end
 arch shop_empty
-x 15
+x 16
 y 4
 end
 arch shop_empty
-x 15
+x 16
 y 5
 end
 arch shop_empty
-x 15
+x 16
 y 6
 end
 arch shop_empty
-x 15
+x 16
 y 7
 end
 arch shop_empty
-x 15
+x 16
 y 8
 end
 arch shop_empty
-x 15
+x 16
 y 9
 end
 arch shop_empty
-x 15
+x 16
 y 10
 end
 arch shop_empty
-x 15
+x 16
 y 11
 end
 arch shop_empty
-x 15
+x 16
 y 12
+end
+arch shop_empty
+x 16
+y 13
 end
 arch awall_2_1_2
-x 15
-y 12
+x 16
+y 13
 end
 arch woodfloor
-x 16
+x 17
 end
 arch awall_2_1_1
-x 16
+x 17
 end
 arch woodfloor
-x 16
+x 17
 y 1
 end
 arch awall_3_4
-x 16
+x 17
 y 1
 end
 arch shop_empty
-x 16
+x 17
 y 2
 end
 arch awall_2_1_1
-x 16
+x 17
 y 2
 end
 arch shop_empty
-x 16
+x 17
 y 3
 end
 arch awall_2_1_1
-x 16
+x 17
 y 3
 end
 arch shop_empty
-x 16
+x 17
 y 4
 end
 arch awall_2_1_1
-x 16
+x 17
 y 4
 end
 arch shop_empty
-x 16
+x 17
 y 5
 end
 arch awall_2_1_1
-x 16
+x 17
 y 5
 end
 arch shop_empty
-x 16
+x 17
 y 6
 end
 arch awall_2_1_1
-x 16
+x 17
 y 6
 end
 arch shop_empty
-x 16
+x 17
 y 7
 end
 arch awall_2_1_1
-x 16
+x 17
 y 7
 end
 arch shop_empty
-x 16
+x 17
 y 8
 end
 arch awall_2_1_1
-x 16
+x 17
 y 8
 end
 arch shop_empty
-x 16
+x 17
 y 9
 end
 arch awall_2_1_1
-x 16
+x 17
 y 9
 end
 arch shop_empty
-x 16
+x 17
 y 10
 end
 arch awall_2_1_1
-x 16
+x 17
 y 10
 end
 arch shop_empty
-x 16
+x 17
 y 11
 end
 arch awall_2_1_1
-x 16
+x 17
 y 11
 end
 arch shop_empty
-x 16
+x 17
 y 12
+end
+arch awall_2_1_1
+x 17
+y 12
+end
+arch shop_empty
+x 17
+y 13
 end
 arch awall_2_2_4
-x 16
-y 12
+x 17
+y 13
 end
