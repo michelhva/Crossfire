@@ -3,8 +3,8 @@ name Weapons Department
 fixed_resettime 1
 difficulty 1
 region Wolfsburg
-width 17
-height 13
+width 18
+height 14
 msg
 Created:  2005-09-18
 endmsg
@@ -56,309 +56,312 @@ arch woodfloor
 y 12
 end
 arch woodfloor
+y 13
+end
+arch exit
+slaying /world/world_128_109
+hp 30
+sp 8
 x 1
+invisible 1
+end
+arch woodfloor
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch woodfloor
+x 1
+y 10
+end
+arch woodfloor
+x 1
+y 11
+end
+arch woodfloor
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch woodfloor
+x 2
 end
 arch awall_2_2_2
-x 1
+x 2
 end
 arch woodfloor
-x 1
+x 2
 y 1
 end
 arch awall_2_1_1
-x 1
+x 2
 y 1
 end
 arch woodfloor
-x 1
+x 2
 y 2
 end
 arch awall_2_1_1
-x 1
+x 2
 y 2
 end
 arch woodfloor
-x 1
+x 2
 y 3
 end
 arch awall_2_1_1
-x 1
+x 2
 y 3
 end
 arch woodfloor
-x 1
+x 2
 y 4
 end
 arch awall_2_1_1
-x 1
+x 2
 y 4
 end
 arch woodfloor
-x 1
+x 2
 y 5
 end
 arch awall_2_1_1
-x 1
+x 2
 y 5
 end
 arch woodfloor
-x 1
+x 2
 y 6
 end
 arch awall_2_1_1
-x 1
+x 2
 y 6
 end
 arch woodfloor
-x 1
+x 2
 y 7
 end
 arch awall_2_1_1
-x 1
+x 2
 y 7
 end
 arch woodfloor
-x 1
+x 2
 y 8
 end
 arch awall_3_2
-x 1
+x 2
 y 8
 end
 arch woodfloor
-x 1
+x 2
 y 9
 end
 arch awall_2_1_1
-x 1
+x 2
 y 9
 end
 arch woodfloor
-x 1
+x 2
 y 10
 end
 arch awall_1_2
-x 1
+x 2
 y 10
 end
 arch woodfloor
-x 1
+x 2
 y 11
 end
 arch sign_e
 name Hurting Stuff
-x 1
+x 2
 y 11
 end
 arch woodfloor
-x 1
+x 2
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 2
+y 13
+end
+arch shop_empty
+x 3
 end
 arch awall_2_1_2
-x 2
+x 3
 end
 arch shop_weapon
-x 2
+x 3
 y 1
 end
 arch shop_weapon
-x 2
+x 3
 y 2
 end
 arch shop_weapon
-x 2
+x 3
 y 3
 end
 arch shop_weapon
-x 2
+x 3
 y 4
 end
 arch shop_weapon
-x 2
+x 3
 y 5
 end
 arch shop_weapon
-x 2
+x 3
 y 6
 end
 arch shop_empty
-x 2
+x 3
 y 7
 end
 arch woodfloor
-x 2
+x 3
 y 8
 end
 arch awall_2_1_2
-x 2
+x 3
 y 8
 end
 arch woodfloor
-x 2
+x 3
 y 9
 end
 arch woodfloor
-x 2
+x 3
 y 10
 end
 arch woodfloor
-x 2
+x 3
 y 11
 end
 arch woodfloor
-x 2
+x 3
 y 12
 end
 arch awall_1_4
-x 2
+x 3
 y 12
 end
-arch shop_empty
+arch woodfloor
 x 3
+y 13
+end
+arch shop_empty
+x 4
 end
 arch awall_2_1_2
-x 3
+x 4
 end
 arch shop_weapon
-x 3
+x 4
 y 1
 end
 arch shop_weapon
-x 3
+x 4
 y 2
 end
 arch shop_weapon
-x 3
+x 4
 y 3
 end
 arch shop_weapon
-x 3
+x 4
 y 4
 end
 arch shop_weapon
-x 3
+x 4
 y 5
 end
 arch shop_weapon
-x 3
+x 4
 y 6
 end
 arch shop_empty
-x 3
+x 4
 y 7
 end
 arch woodfloor
-x 3
+x 4
 y 8
 end
 arch awall_2_1_2
-x 3
+x 4
 y 8
 end
 arch woodfloor
-x 3
+x 4
 y 9
 end
 arch woodfloor
-x 3
+x 4
 y 10
 end
 arch awall_2_2_2
-x 3
+x 4
 y 10
 end
 arch woodfloor
-x 3
+x 4
 y 11
 end
 arch awall_2_1_1
-x 3
+x 4
 y 11
 end
 arch woodfloor
-x 3
+x 4
 y 12
 end
 arch awall_3_1
-x 3
-y 12
-end
-arch shop_empty
-x 4
-end
-arch awall_2_1_2
-x 4
-end
-arch shop_weapon
-x 4
-y 1
-end
-arch shop_weapon
-x 4
-y 2
-end
-arch shop_weapon
-x 4
-y 3
-end
-arch shop_weapon
-x 4
-y 4
-end
-arch shop_weapon
-x 4
-y 5
-end
-arch shop_weapon
-x 4
-y 6
-end
-arch shop_empty
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 8
-end
-arch awall_2_1_2
-x 4
-y 8
-end
-arch woodfloor
-x 4
-y 9
-end
-arch shop_mat
-x 4
-y 9
-end
-arch woodfloor
-x 4
-y 10
-end
-arch awall_2_1_2
-x 4
-y 10
-end
-arch shop_empty
-x 4
-y 11
-end
-arch shop_mat
-x 4
-y 11
-end
-arch woodfloor
 x 4
 y 12
 end
-arch awall_2_1_2
+arch woodfloor
 x 4
-y 12
+y 13
 end
 arch shop_empty
 x 5
@@ -396,91 +399,111 @@ y 7
 end
 arch woodfloor
 x 5
+y 8
+end
+arch awall_2_1_2
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch shop_mat
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
+end
+arch awall_2_1_2
+x 5
+y 10
+end
+arch shop_empty
+x 5
+y 11
+end
+arch shop_mat
+x 5
+y 11
+end
+arch woodfloor
+x 5
+y 12
+end
+arch awall_2_1_2
+x 5
+y 12
+end
+arch woodfloor
+x 5
+y 13
+end
+arch shop_empty
+x 6
+end
+arch awall_2_1_2
+x 6
+end
+arch shop_weapon
+x 6
+y 1
+end
+arch shop_weapon
+x 6
+y 2
+end
+arch shop_weapon
+x 6
+y 3
+end
+arch shop_weapon
+x 6
+y 4
+end
+arch shop_weapon
+x 6
+y 5
+end
+arch shop_weapon
+x 6
+y 6
+end
+arch shop_empty
+x 6
+y 7
+end
+arch woodfloor
+x 6
 y 8
 end
 arch awall_2_2_3
-x 5
+x 6
 y 8
 end
 arch woodfloor
-x 5
+x 6
 y 9
 end
 arch awall_2_1_1
-x 5
+x 6
 y 9
 end
 arch woodfloor
-x 5
+x 6
 y 10
 end
 arch awall_2_2_4
-x 5
+x 6
 y 10
 end
 arch shop_empty
-x 5
+x 6
 y 11
 end
 arch menu
-x 5
-y 11
-end
-arch woodfloor
-x 5
-y 12
-end
-arch awall_2_1_2
-x 5
-y 12
-end
-arch shop_empty
-x 6
-end
-arch awall_2_1_2
-x 6
-end
-arch shop_weapon
-x 6
-y 1
-end
-arch shop_weapon
-x 6
-y 2
-end
-arch shop_weapon
-x 6
-y 3
-end
-arch shop_weapon
-x 6
-y 4
-end
-arch shop_weapon
-x 6
-y 5
-end
-arch shop_weapon
-x 6
-y 6
-end
-arch shop_empty
-x 6
-y 7
-end
-arch shop_empty
-x 6
-y 8
-end
-arch shop_empty
-x 6
-y 9
-end
-arch shop_empty
-x 6
-y 10
-end
-arch shop_empty
 x 6
 y 11
 end
@@ -491,6 +514,10 @@ end
 arch awall_2_1_2
 x 6
 y 12
+end
+arch woodfloor
+x 6
+y 13
 end
 arch shop_empty
 x 7
@@ -522,23 +549,23 @@ arch shop_weapon
 x 7
 y 6
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 7
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 8
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 9
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 10
 end
-arch shop_weapon
+arch shop_empty
 x 7
 y 11
 end
@@ -549,6 +576,10 @@ end
 arch awall_2_1_2
 x 7
 y 12
+end
+arch woodfloor
+x 7
+y 13
 end
 arch shop_empty
 x 8
@@ -608,6 +639,10 @@ arch awall_2_1_2
 x 8
 y 12
 end
+arch woodfloor
+x 8
+y 13
+end
 arch shop_empty
 x 9
 end
@@ -666,6 +701,10 @@ arch awall_2_1_2
 x 9
 y 12
 end
+arch woodfloor
+x 9
+y 13
+end
 arch shop_empty
 x 10
 end
@@ -724,6 +763,10 @@ arch awall_2_1_2
 x 10
 y 12
 end
+arch woodfloor
+x 10
+y 13
+end
 arch shop_empty
 x 11
 end
@@ -782,6 +825,10 @@ arch awall_2_1_2
 x 11
 y 12
 end
+arch woodfloor
+x 11
+y 13
+end
 arch shop_empty
 x 12
 end
@@ -840,6 +887,10 @@ arch awall_2_1_2
 x 12
 y 12
 end
+arch woodfloor
+x 12
+y 13
+end
 arch shop_empty
 x 13
 end
@@ -898,6 +949,10 @@ arch awall_2_1_2
 x 13
 y 12
 end
+arch woodfloor
+x 13
+y 13
+end
 arch shop_empty
 x 14
 end
@@ -956,6 +1011,10 @@ arch awall_2_1_2
 x 14
 y 12
 end
+arch woodfloor
+x 14
+y 13
+end
 arch shop_empty
 x 15
 end
@@ -1013,106 +1072,180 @@ end
 arch awall_2_1_2
 x 15
 y 12
+end
+arch woodfloor
+x 15
+y 13
 end
 arch shop_empty
 x 16
+end
+arch awall_2_1_2
+x 16
+end
+arch shop_weapon
+x 16
+y 1
+end
+arch shop_weapon
+x 16
+y 2
+end
+arch shop_weapon
+x 16
+y 3
+end
+arch shop_weapon
+x 16
+y 4
+end
+arch shop_weapon
+x 16
+y 5
+end
+arch shop_weapon
+x 16
+y 6
+end
+arch shop_weapon
+x 16
+y 7
+end
+arch shop_weapon
+x 16
+y 8
+end
+arch shop_weapon
+x 16
+y 9
+end
+arch shop_weapon
+x 16
+y 10
+end
+arch shop_weapon
+x 16
+y 11
+end
+arch woodfloor
+x 16
+y 12
+end
+arch awall_2_1_2
+x 16
+y 12
+end
+arch woodfloor
+x 16
+y 13
+end
+arch shop_empty
+x 17
 end
 arch awall_2_2_3
-x 16
+x 17
 end
 arch shop_empty
-x 16
+x 17
 y 1
 end
 arch awall_2_1_1
-x 16
+x 17
 y 1
 end
 arch shop_empty
-x 16
+x 17
 y 2
 end
 arch awall_2_1_1
-x 16
+x 17
 y 2
 end
 arch shop_empty
-x 16
+x 17
 y 3
 end
 arch awall_2_1_1
-x 16
+x 17
 y 3
 end
 arch shop_empty
-x 16
+x 17
 y 4
 end
 arch awall_2_1_1
-x 16
+x 17
 y 4
 end
 arch shop_empty
-x 16
+x 17
 y 5
 end
 arch awall_2_1_1
-x 16
+x 17
 y 5
 end
 arch shop_empty
-x 16
+x 17
 y 6
 end
 arch awall_2_1_1
-x 16
+x 17
 y 6
 end
 arch shop_empty
-x 16
+x 17
 y 7
 end
 arch awall_2_1_1
-x 16
+x 17
 y 7
 end
 arch shop_empty
-x 16
+x 17
 y 8
 end
 arch awall_2_1_1
-x 16
+x 17
 y 8
 end
 arch shop_empty
-x 16
+x 17
 y 9
 end
 arch awall_2_1_1
-x 16
+x 17
 y 9
 end
 arch shop_empty
-x 16
+x 17
 y 10
 end
 arch awall_2_1_1
-x 16
+x 17
 y 10
 end
 arch shop_empty
-x 16
+x 17
 y 11
 end
 arch awall_2_1_1
-x 16
+x 17
 y 11
 end
 arch woodfloor
-x 16
+x 17
 y 12
 end
 arch awall_3_4
-x 16
+x 17
 y 12
+end
+arch woodfloor
+x 17
+y 13
+end
+arch awall_2_1_1
+x 17
+y 13
 end
