@@ -32,7 +32,7 @@ if (guildname):
         names.append(player.Name)
 
     if len(players) == 3:
-        print '%s,%s and %s found guild %s' %(names[0], names[1], names[2], guildname)
+        Crossfire.Log(Crossfire.LogInfo, '%s,%s and %s found guild %s' %(names[0], names[1], names[2], guildname))
 
         CFGuilds.CFGuildHouses().establish(guildname)
         #Masterize them
@@ -50,7 +50,7 @@ if (guildname):
     else:
         message = 'To purchase a guild requires two additional persons to stand on the alcoves above.'
 else:
-    print 'Guild Purchase Error: %s, %s' %(guildname, activatorname)
+    Crossfire.Log(Crossfire.LogError, 'Guild Purchase Error: %s, %s' %(guildname, activatorname))
     message = 'Guild Purchase Error, please notify a DM'
 
 whoami.Say(message)

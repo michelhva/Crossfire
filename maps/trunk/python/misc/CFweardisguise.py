@@ -19,10 +19,10 @@ if option:
     inv = activator.CheckInventory(option) #Remove any previous disguise
     if inv:
         inv.Remove()
-        #print "removing tag"
+        #Crossfire.Log(Crossfire.LogDebug, "removing tag")
 
     if not whoami.Applied: #is the object is being applied
         tag = activator.CreateInvisibleObjectInside(option)
         tag.Name=option
-        #print "adding tag"
+        #Crossfire.Log(Crossfire.LogDebug, "adding tag")
 

@@ -32,13 +32,13 @@ def GuildUpdate():
             guildfile.close()
             guildlisting.pop()
     except:
-        print 'No GuidList file.  Please check %s' %GuildList
+        Crossfire.Log(Crossfire.LogError,'No GuidList file.  Please check %s' %GuildList)
     if (guildlisting):
-        print guildlisting
+        Crossfire.Log(Crossfire.LogDebug, '%s' %guildlisting)
         for guild in guildlisting:
             if not CFGuildHouses().info(guild):
                 if CFGuildHouses().add_guild(guild):
-                    print 'New Guild: %s' %guild
+                    Crossfire.Log(Crossfire.LogInfo,'New Guild: %s' %guild)
 
 def SearchGuilds(player):
     guildlist = CFGuildHouses().list_guilds()
@@ -283,7 +283,7 @@ class CFGuild:
             currentrank = record['Rank']
             if currentrank != 'Initiate':
                 ranknum = self.ranks.index(currentrank)
-                print "ranknum = %d"%ranknum
+                Crossfire.Log(Crossfire.LogDebug,  "ranknum = %d"%ranknum)
                 newrank = ranknum-1
                 record['Rank'] = self.ranks[newrank]
                 self.guildlist.put_record(record)

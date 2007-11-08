@@ -44,7 +44,7 @@ def do_enemy():
 	msg = msg.replace('%e', whoami.Enemy.Name)
 	whoami.Say(msg)
 	said = said + str(whoami.Enemy.Count) + ';'
-	print 'said = ' + said
+	Crossfire.Log(Crossfire.LogDebug, 'said = ' + said)
 	whoami.WriteKey('greet_enemy', said, 1)
 
 

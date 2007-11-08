@@ -58,7 +58,7 @@ class CFBank:
 	def remove_account(self,user):
 		if self.bankdb.has_key(user):
 			del self.bankdb[user]
-			print "%s's bank account removed." %user
+			Crossfire.Log(Crossfire.LogDebug, "%s's bank account removed." %user)
 			self.bankdb.sync()
 			return 1
 		else:

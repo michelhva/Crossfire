@@ -30,7 +30,7 @@ isDM=activator.DungeonMaster
 
 log=CFLog.CFLog()
 guildname=Crossfire.ScriptParameters() # 6 is say event
-print "Activated %s" %guildname
+Crossfire.Log(Crossfire.LogDebug, "Activated %s" %guildname)
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
