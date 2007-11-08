@@ -55,7 +55,7 @@ if total > 0:
 	                msgob.Message=message
 	                msgob.Value=0
 		else:
-			print 'ERROR: unknown mailtype\n'
+			Crossfire.Log(Crossfire.LogError, 'ERROR: unknown mailtype\n')
 
 if total == 1:
 	activator.Write('You got 1 mail.')

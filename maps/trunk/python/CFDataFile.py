@@ -42,7 +42,7 @@ class CFDataFile:
         try:
             file = open(self.filename,'wb')
         except:
-            print "Can't create datafile %s" % self.datafile_name
+            Crossfire.Log(Crossfire.LogError, "Can't create datafile %s" % self.datafile_name)
         else:
             temp = []
             for item in header:
@@ -50,7 +50,7 @@ class CFDataFile:
             contents = '#|%s\n' %(string.join(temp,'|'))
             file.write(contents)
             file.close()
-            print "New datafile created: %s" % self.datafile_name
+            Crossfire.Log(Crossfire.LogInfo, "New datafile created: %s" % self.datafile_name)
 
     def getData(self):
         '''Gets the formatted file as a dictionary

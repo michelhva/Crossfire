@@ -17,6 +17,6 @@ if points:
     else:
         pass
 else:
-    print 'Error, no points specified in %s on map %s' %(whoami,mapname)
+    Crossfire.Log(Crossfire.LogError, 'Error, no points specified in %s on map %s' %(whoami,mapname))
 
 
