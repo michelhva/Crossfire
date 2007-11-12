@@ -5,8 +5,12 @@ region pupland
 width 35
 height 35
 msg
-Created:  1996-02-30
+Created:  1996-05-30
+Updated 2007.11.12 by Gene Alexander
+ - made this an outdoor map
+Modified: 2007-11-12 crossfire
 endmsg
+outdoor 1
 end
 arch woods
 end
@@ -4412,7 +4416,7 @@ end
 arch sea
 x 24
 y 15
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4428,7 +4432,7 @@ end
 arch sea
 x 24
 y 16
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4444,7 +4448,7 @@ end
 arch sea
 x 24
 y 17
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4460,7 +4464,7 @@ end
 arch sea
 x 24
 y 18
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4633,7 +4637,7 @@ end
 arch sea
 x 25
 y 15
-move_block 0
+no_pass 0
 end
 arch mover_5
 x 25
@@ -4644,7 +4648,7 @@ end
 arch sea
 x 25
 y 16
-move_block 0
+no_pass 0
 end
 arch mover_5
 x 25
@@ -4655,7 +4659,7 @@ end
 arch sea
 x 25
 y 17
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 25
@@ -4671,7 +4675,7 @@ end
 arch sea
 x 25
 y 18
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 25
@@ -4850,7 +4854,7 @@ end
 arch sea
 x 26
 y 18
-move_block 0
+no_pass 0
 end
 arch dungeon_magic
 x 26
