@@ -4391,6 +4391,18 @@ arch blocked
 x 13
 y 6
 end
+arch blocked
+x 13
+y 7
+end
+arch blocked
+x 13
+y 8
+end
+arch blocked
+x 13
+y 9
+end
 arch swall_2_2_2
 x 13
 y 10
@@ -4412,6 +4424,10 @@ end
 arch swall_2_2_1
 x 13
 y 14
+end
+arch blocked
+x 13
+y 15
 end
 arch dungeon_magic
 x 14
@@ -4576,13 +4592,25 @@ arch blocked
 x 14
 y 6
 end
+arch dungeon_magic
+x 14
+y 7
+end
 arch swall_2_2_2
 x 14
 y 7
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch swall_2_1_1
 x 14
 y 8
+end
+arch dungeon_magic
+x 14
+y 9
 end
 arch swall_2_2_1
 x 14
@@ -4625,6 +4653,10 @@ end
 arch swall_2_1_2
 x 14
 y 14
+end
+arch blocked
+x 14
+y 15
 end
 arch dungeon_magic
 x 15
@@ -4695,6 +4727,10 @@ arch blocked
 x 15
 y 6
 end
+arch dungeon_magic
+x 15
+y 7
+end
 arch swall_2_1_2
 x 15
 y 7
@@ -4706,6 +4742,10 @@ x 15
 y 8
 speed 0.000000
 connected 123
+end
+arch dungeon_magic
+x 15
+y 9
 end
 arch swall_2_1_2
 x 15
@@ -4748,6 +4788,10 @@ x 15
 y 14
 end
 arch blocked
+x 15
+y 15
+end
+arch blocked
 x 16
 end
 arch blocked
@@ -4773,6 +4817,10 @@ end
 arch blocked
 x 16
 y 6
+end
+arch dungeon_magic
+x 16
+y 7
 end
 arch swall_2_1_2
 x 16
@@ -4801,6 +4849,10 @@ value 0
 weight 1000
 is_thrown 1
 identified 1
+end
+arch dungeon_magic
+x 16
+y 9
 end
 arch swall_2_1_2
 x 16
@@ -4835,6 +4887,13 @@ end
 arch swall_2_1_2
 x 16
 y 14
+end
+arch blocked
+x 16
+y 15
+end
+arch blocked
+x 17
 end
 arch zombie
 name zombie target
@@ -4884,6 +4943,18 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 17
+y 2
+end
+arch blocked
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 7
+end
 arch swall_2_1_2
 x 17
 y 7
@@ -4895,6 +4966,10 @@ x 17
 y 8
 speed 0.000000
 connected 123
+end
+arch dungeon_magic
+x 17
+y 9
 end
 arch swall_2_1_2
 x 17
@@ -4936,6 +5011,13 @@ end
 arch swall_2_1_2
 x 17
 y 14
+end
+arch blocked
+x 17
+y 15
+end
+arch blocked
+x 18
 end
 arch vampire
 name vampire target
@@ -4995,6 +5077,18 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 18
+y 2
+end
+arch blocked
+x 18
+y 6
+end
+arch dungeon_magic
+x 18
+y 7
+end
 arch swall_2_1_2
 x 18
 y 7
@@ -5004,6 +5098,10 @@ x 18
 y 8
 arch spell_magic_bullet
 end
+end
+arch dungeon_magic
+x 18
+y 9
 end
 arch swall_2_1_2
 x 18
@@ -5038,6 +5136,13 @@ end
 arch swall_2_1_2
 x 18
 y 14
+end
+arch blocked
+x 18
+y 15
+end
+arch blocked
+x 19
 end
 arch demilich
 name demilich target
@@ -5084,17 +5189,45 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 19
+y 2
+end
+arch blocked
+x 19
+y 6
+end
+arch dungeon_magic
+x 19
+y 7
+end
 arch swall_2_2_3
 x 19
 y 7
+end
+arch dungeon_magic
+x 19
+y 8
 end
 arch swall_2_1_1
 x 19
 y 8
 end
+arch dungeon_magic
+x 19
+y 9
+end
 arch swall_2_2_4
 x 19
 y 9
+end
+arch blocked
+x 19
+y 10
+end
+arch blocked
+x 19
+y 11
 end
 arch swall_2_2_3
 x 19
@@ -5108,6 +5241,136 @@ arch swall_2_2_4
 x 19
 y 14
 end
+arch blocked
+x 19
+y 15
+end
+arch blocked
+x 20
+end
+arch blocked
+x 20
+y 1
+end
+arch blocked
+x 20
+y 2
+end
+arch blocked
+x 20
+y 6
+end
+arch blocked
+x 20
+y 7
+end
+arch blocked
+x 20
+y 8
+end
+arch blocked
+x 20
+y 9
+end
+arch blocked
+x 20
+y 10
+end
+arch blocked
+x 20
+y 11
+end
+arch blocked
+x 20
+y 12
+end
+arch blocked
+x 20
+y 13
+end
+arch blocked
+x 20
+y 14
+end
+arch blocked
+x 20
+y 15
+end
+arch blocked
+x 20
+y 16
+end
+arch blocked
+x 20
+y 17
+end
+arch blocked
+x 20
+y 18
+end
+arch blocked
+x 20
+y 19
+end
+arch blocked
+x 20
+y 20
+end
+arch blocked
+x 20
+y 21
+end
+arch blocked
+x 21
+end
+arch blocked
+x 21
+y 1
+end
+arch blocked
+x 21
+y 2
+end
+arch blocked
+x 21
+y 3
+end
+arch blocked
+x 21
+y 4
+end
+arch blocked
+x 21
+y 5
+end
+arch blocked
+x 21
+y 6
+end
+arch blocked
+x 21
+y 7
+end
+arch blocked
+x 21
+y 8
+end
+arch blocked
+x 21
+y 9
+end
+arch blocked
+x 21
+y 10
+end
+arch blocked
+x 21
+y 16
+end
+arch blocked
+x 21
+y 17
+end
 arch swall_2_2_2
 x 21
 y 18
@@ -5119,6 +5382,10 @@ end
 arch swall_2_2_1
 x 21
 y 20
+end
+arch blocked
+x 21
+y 21
 end
 arch mover_5
 x 22
@@ -5362,6 +5629,14 @@ arch swall_1_4
 x 22
 y 9
 end
+arch blocked
+x 22
+y 10
+end
+arch blocked
+x 22
+y 16
+end
 arch swall_2_2_2
 x 22
 y 17
@@ -5396,6 +5671,33 @@ end
 arch swall_2_1_2
 x 22
 y 20
+end
+arch blocked
+x 22
+y 21
+end
+arch blocked
+x 22
+y 22
+end
+arch blocked
+x 23
+end
+arch blocked
+x 23
+y 1
+end
+arch blocked
+x 23
+y 2
+end
+arch blocked
+x 23
+y 3
+end
+arch blocked
+x 23
+y 4
 end
 arch mover_5
 x 23
@@ -5521,6 +5823,14 @@ arch swall_2_1_2
 x 23
 y 9
 end
+arch blocked
+x 23
+y 10
+end
+arch blocked
+x 23
+y 16
+end
 arch swall_2_1_2
 x 23
 y 17
@@ -5585,6 +5895,33 @@ arch boulder
 x 23
 y 21
 weight 10
+end
+arch blocked
+x 23
+y 22
+end
+arch blocked
+x 24
+end
+arch blocked
+x 24
+y 1
+end
+arch blocked
+x 24
+y 2
+end
+arch blocked
+x 24
+y 3
+end
+arch blocked
+x 24
+y 4
+end
+arch blocked
+x 24
+y 5
 end
 arch mover_5
 x 24
@@ -5681,6 +6018,14 @@ arch swall_1_3
 x 24
 y 9
 end
+arch blocked
+x 24
+y 10
+end
+arch blocked
+x 24
+y 16
+end
 arch swall_2_2_3
 x 24
 y 17
@@ -5715,6 +6060,14 @@ end
 arch swall_2_1_2
 x 24
 y 20
+end
+arch blocked
+x 24
+y 21
+end
+arch blocked
+x 24
+y 22
 end
 arch teleporter
 hp 25
@@ -5775,6 +6128,42 @@ y 3
 speed 0.0
 connected 331
 end
+arch blocked
+x 25
+y 4
+end
+arch blocked
+x 25
+y 5
+end
+arch blocked
+x 25
+y 6
+end
+arch blocked
+x 25
+y 7
+end
+arch blocked
+x 25
+y 8
+end
+arch blocked
+x 25
+y 9
+end
+arch blocked
+x 25
+y 10
+end
+arch blocked
+x 25
+y 16
+end
+arch blocked
+x 25
+y 17
+end
 arch swall_2_2_3
 x 25
 y 18
@@ -5786,6 +6175,10 @@ end
 arch swall_2_2_4
 x 25
 y 20
+end
+arch blocked
+x 25
+y 21
 end
 arch teleporter
 hp 26
@@ -5900,6 +6293,30 @@ y 4
 speed 0.000000
 connected 123
 end
+arch blocked
+x 26
+y 5
+end
+arch blocked
+x 26
+y 17
+end
+arch blocked
+x 26
+y 18
+end
+arch blocked
+x 26
+y 19
+end
+arch blocked
+x 26
+y 20
+end
+arch blocked
+x 26
+y 21
+end
 arch teleporter
 hp 27
 sp 1
@@ -5959,12 +6376,59 @@ y 3
 speed 0.0
 connected 333
 end
+arch blocked
+x 27
+y 4
+end
+arch blocked
+x 27
+y 5
+end
+arch blocked
+x 28
+end
+arch blocked
+x 28
+y 1
+end
+arch blocked
+x 28
+y 2
+end
 arch permanent_lava
 name deadly lava
 dam 999
 x 28
 y 3
 attacktype 1048581
+end
+arch blocked
+x 28
+y 4
+end
+arch blocked
+x 28
+y 5
+end
+arch blocked
+x 28
+y 6
+end
+arch blocked
+x 28
+y 7
+end
+arch blocked
+x 28
+y 8
+end
+arch blocked
+x 28
+y 9
+end
+arch blocked
+x 28
+y 10
 end
 arch mover_5
 x 29
@@ -6268,4 +6732,8 @@ end
 arch swall_1_4
 x 29
 y 9
+end
+arch blocked
+x 29
+y 10
 end
