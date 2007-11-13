@@ -7,10 +7,11 @@ difficulty 1
 region darcapcircus
 width 30
 height 27
+enter_x 8
+enter_y 24
 msg
-Creator: Bernd Edler
-Email: edler@heydernet.de
-Date: Tue Apr  2 19:30:45 2002
+Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -236,8 +237,8 @@ x 1
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 1
 y 2
 end
@@ -421,8 +422,8 @@ x 2
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 2
 y 2
 end
@@ -763,8 +764,8 @@ x 3
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 3
 y 2
 end
@@ -1126,8 +1127,8 @@ x 4
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 4
 y 2
 end
@@ -1196,8 +1197,8 @@ x 4
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1219,8 +1220,8 @@ x 4
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1237,8 +1238,8 @@ x 4
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1255,8 +1256,8 @@ x 4
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 4
@@ -1363,9 +1364,6 @@ slaying wurfbude
 x 4
 y 19
 connected 2
-walk_off 0
-fly_on 1
-fly_off 0
 end
 arch check_inv
 slaying wurfbude
@@ -1373,9 +1371,6 @@ x 4
 y 19
 last_sp 0
 connected 11
-walk_off 0
-fly_on 1
-fly_off 0
 end
 arch teleporter
 name exit here
@@ -1488,8 +1483,8 @@ x 5
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 5
 y 2
 end
@@ -1558,8 +1553,8 @@ x 5
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1581,8 +1576,8 @@ x 5
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1599,8 +1594,8 @@ x 5
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -1617,8 +1612,8 @@ x 5
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 5
@@ -1872,8 +1867,8 @@ x 6
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 6
 y 2
 end
@@ -1988,8 +1983,8 @@ x 6
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2011,8 +2006,8 @@ x 6
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2029,8 +2024,8 @@ x 6
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2047,8 +2042,8 @@ x 6
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 6
@@ -2297,8 +2292,8 @@ x 7
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 7
 y 2
 end
@@ -2367,8 +2362,8 @@ x 7
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2390,8 +2385,8 @@ x 7
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2408,8 +2403,8 @@ x 7
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2426,8 +2421,8 @@ x 7
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 7
@@ -2654,8 +2649,8 @@ x 8
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 8
 y 2
 end
@@ -2724,8 +2719,8 @@ x 8
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2747,8 +2742,8 @@ x 8
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2765,8 +2760,8 @@ x 8
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -2783,8 +2778,8 @@ x 8
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 8
@@ -3032,8 +3027,8 @@ x 9
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 9
 y 2
 end
@@ -3102,8 +3097,8 @@ x 9
 y 4
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3125,8 +3120,8 @@ x 9
 y 5
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3143,8 +3138,8 @@ x 9
 y 6
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 exp 20000
@@ -3161,8 +3156,8 @@ x 9
 y 7
 invisible 1
 connected 4
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch woodfloor
 x 9
@@ -3381,9 +3376,8 @@ slaying wurfbude
 x 9
 y 24
 connected 2
-walk_off 0
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off fly_low
 end
 arch check_inv
 slaying wurfbude
@@ -3391,8 +3385,8 @@ x 9
 y 24
 last_sp 0
 connected 1
-fly_on 1
-fly_off 1
+move_on walk fly_low
+move_off walk fly_low
 end
 arch teleporter
 name enter here
@@ -3464,8 +3458,8 @@ x 10
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 10
 y 2
 end
@@ -3942,8 +3936,8 @@ x 11
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 11
 y 2
 end
@@ -4168,8 +4162,7 @@ endmsg
 x 11
 y 25
 connected 11
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_magic
 x 11
@@ -4209,8 +4202,8 @@ x 12
 y 2
 end
 arch pit_open
-hp 14
-sp 7
+hp 15
+sp 8
 x 12
 y 2
 end
@@ -4400,6 +4393,18 @@ arch blocked
 x 13
 y 6
 end
+arch blocked
+x 13
+y 7
+end
+arch blocked
+x 13
+y 8
+end
+arch blocked
+x 13
+y 9
+end
 arch swall_2_2_2
 x 13
 y 10
@@ -4407,6 +4412,8 @@ end
 arch bulletwall_3
 x 13
 y 11
+arch spell_magic_bullet
+end
 end
 arch swall_3_2
 x 13
@@ -4419,6 +4426,10 @@ end
 arch swall_2_2_1
 x 13
 y 14
+end
+arch blocked
+x 13
+y 15
 end
 arch dungeon_magic
 x 14
@@ -4584,13 +4595,25 @@ arch blocked
 x 14
 y 6
 end
+arch dungeon_magic
+x 14
+y 7
+end
 arch swall_2_2_2
 x 14
 y 7
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch swall_2_1_1
 x 14
 y 8
+end
+arch dungeon_magic
+x 14
+y 9
 end
 arch swall_2_2_1
 x 14
@@ -4633,6 +4656,10 @@ end
 arch swall_2_1_2
 x 14
 y 14
+end
+arch blocked
+x 14
+y 15
 end
 arch dungeon_magic
 x 15
@@ -4703,6 +4730,10 @@ arch blocked
 x 15
 y 6
 end
+arch dungeon_magic
+x 15
+y 7
+end
 arch swall_2_1_2
 x 15
 y 7
@@ -4714,6 +4745,10 @@ x 15
 y 8
 speed 0.000000
 connected 123
+end
+arch dungeon_magic
+x 15
+y 9
 end
 arch swall_2_1_2
 x 15
@@ -4756,6 +4791,10 @@ x 15
 y 14
 end
 arch blocked
+x 15
+y 15
+end
+arch blocked
 x 16
 end
 arch blocked
@@ -4781,6 +4820,10 @@ end
 arch blocked
 x 16
 y 6
+end
+arch dungeon_magic
+x 16
+y 7
 end
 arch swall_2_1_2
 x 16
@@ -4809,6 +4852,10 @@ value 0
 weight 1000
 is_thrown 1
 identified 1
+end
+arch dungeon_magic
+x 16
+y 9
 end
 arch swall_2_1_2
 x 16
@@ -4843,6 +4890,13 @@ end
 arch swall_2_1_2
 x 16
 y 14
+end
+arch blocked
+x 16
+y 15
+end
+arch blocked
+x 17
 end
 arch zombie
 name zombie target
@@ -4892,6 +4946,18 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 17
+y 2
+end
+arch blocked
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 7
+end
 arch swall_2_1_2
 x 17
 y 7
@@ -4903,6 +4969,10 @@ x 17
 y 8
 speed 0.000000
 connected 123
+end
+arch dungeon_magic
+x 17
+y 9
 end
 arch swall_2_1_2
 x 17
@@ -4944,6 +5014,13 @@ end
 arch swall_2_1_2
 x 17
 y 14
+end
+arch blocked
+x 17
+y 15
+end
+arch blocked
+x 18
 end
 arch vampire
 name vampire target
@@ -5003,6 +5080,18 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 18
+y 2
+end
+arch blocked
+x 18
+y 6
+end
+arch dungeon_magic
+x 18
+y 7
+end
 arch swall_2_1_2
 x 18
 y 7
@@ -5010,6 +5099,12 @@ end
 arch bulletwall_7
 x 18
 y 8
+arch spell_magic_bullet
+end
+end
+arch dungeon_magic
+x 18
+y 9
 end
 arch swall_2_1_2
 x 18
@@ -5034,16 +5129,23 @@ weight 1
 connected 222
 end
 arch teleporter
-hp 13
+hp 14
 sp 13
 x 18
 y 13
-speed 0.000000
+speed 0.0
 connected 222
 end
 arch swall_2_1_2
 x 18
 y 14
+end
+arch blocked
+x 18
+y 15
+end
+arch blocked
+x 19
 end
 arch demilich
 name demilich target
@@ -5091,17 +5193,45 @@ value 0
 invisible 1
 end
 end
+arch blocked
+x 19
+y 2
+end
+arch blocked
+x 19
+y 6
+end
+arch dungeon_magic
+x 19
+y 7
+end
 arch swall_2_2_3
 x 19
 y 7
+end
+arch dungeon_magic
+x 19
+y 8
 end
 arch swall_2_1_1
 x 19
 y 8
 end
+arch dungeon_magic
+x 19
+y 9
+end
 arch swall_2_2_4
 x 19
 y 9
+end
+arch blocked
+x 19
+y 10
+end
+arch blocked
+x 19
+y 11
 end
 arch swall_2_2_3
 x 19
@@ -5115,6 +5245,136 @@ arch swall_2_2_4
 x 19
 y 14
 end
+arch blocked
+x 19
+y 15
+end
+arch blocked
+x 20
+end
+arch blocked
+x 20
+y 1
+end
+arch blocked
+x 20
+y 2
+end
+arch blocked
+x 20
+y 6
+end
+arch blocked
+x 20
+y 7
+end
+arch blocked
+x 20
+y 8
+end
+arch blocked
+x 20
+y 9
+end
+arch blocked
+x 20
+y 10
+end
+arch blocked
+x 20
+y 11
+end
+arch blocked
+x 20
+y 12
+end
+arch blocked
+x 20
+y 13
+end
+arch blocked
+x 20
+y 14
+end
+arch blocked
+x 20
+y 15
+end
+arch blocked
+x 20
+y 16
+end
+arch blocked
+x 20
+y 17
+end
+arch blocked
+x 20
+y 18
+end
+arch blocked
+x 20
+y 19
+end
+arch blocked
+x 20
+y 20
+end
+arch blocked
+x 20
+y 21
+end
+arch blocked
+x 21
+end
+arch blocked
+x 21
+y 1
+end
+arch blocked
+x 21
+y 2
+end
+arch blocked
+x 21
+y 3
+end
+arch blocked
+x 21
+y 4
+end
+arch blocked
+x 21
+y 5
+end
+arch blocked
+x 21
+y 6
+end
+arch blocked
+x 21
+y 7
+end
+arch blocked
+x 21
+y 8
+end
+arch blocked
+x 21
+y 9
+end
+arch blocked
+x 21
+y 10
+end
+arch blocked
+x 21
+y 16
+end
+arch blocked
+x 21
+y 17
+end
 arch swall_2_2_2
 x 21
 y 18
@@ -5126,6 +5386,10 @@ end
 arch swall_2_2_1
 x 21
 y 20
+end
+arch blocked
+x 21
+y 21
 end
 arch mover_5
 x 22
@@ -5369,6 +5633,14 @@ arch swall_1_4
 x 22
 y 9
 end
+arch blocked
+x 22
+y 10
+end
+arch blocked
+x 22
+y 16
+end
 arch swall_2_2_2
 x 22
 y 17
@@ -5404,6 +5676,33 @@ arch swall_2_1_2
 x 22
 y 20
 end
+arch blocked
+x 22
+y 21
+end
+arch blocked
+x 22
+y 22
+end
+arch blocked
+x 23
+end
+arch blocked
+x 23
+y 1
+end
+arch blocked
+x 23
+y 2
+end
+arch blocked
+x 23
+y 3
+end
+arch blocked
+x 23
+y 4
+end
 arch mover_5
 x 23
 y 5
@@ -5492,7 +5791,7 @@ identified 1
 end
 end
 arch teleporter
-hp 15
+hp 16
 sp 11
 x 23
 y 8
@@ -5527,6 +5826,14 @@ end
 arch swall_2_1_2
 x 23
 y 9
+end
+arch blocked
+x 23
+y 10
+end
+arch blocked
+x 23
+y 16
 end
 arch swall_2_1_2
 x 23
@@ -5593,6 +5900,33 @@ x 23
 y 21
 weight 10
 end
+arch blocked
+x 23
+y 22
+end
+arch blocked
+x 24
+end
+arch blocked
+x 24
+y 1
+end
+arch blocked
+x 24
+y 2
+end
+arch blocked
+x 24
+y 3
+end
+arch blocked
+x 24
+y 4
+end
+arch blocked
+x 24
+y 5
+end
 arch mover_5
 x 24
 y 6
@@ -5652,7 +5986,7 @@ identified 1
 end
 end
 arch teleporter
-hp 16
+hp 17
 sp 11
 x 24
 y 8
@@ -5688,6 +6022,14 @@ arch swall_1_3
 x 24
 y 9
 end
+arch blocked
+x 24
+y 10
+end
+arch blocked
+x 24
+y 16
+end
 arch swall_2_2_3
 x 24
 y 17
@@ -5722,6 +6064,14 @@ end
 arch swall_2_1_2
 x 24
 y 20
+end
+arch blocked
+x 24
+y 21
+end
+arch blocked
+x 24
+y 22
 end
 arch teleporter
 hp 25
@@ -5782,6 +6132,42 @@ y 3
 speed 0.0
 connected 331
 end
+arch blocked
+x 25
+y 4
+end
+arch blocked
+x 25
+y 5
+end
+arch blocked
+x 25
+y 6
+end
+arch blocked
+x 25
+y 7
+end
+arch blocked
+x 25
+y 8
+end
+arch blocked
+x 25
+y 9
+end
+arch blocked
+x 25
+y 10
+end
+arch blocked
+x 25
+y 16
+end
+arch blocked
+x 25
+y 17
+end
 arch swall_2_2_3
 x 25
 y 18
@@ -5793,6 +6179,10 @@ end
 arch swall_2_2_4
 x 25
 y 20
+end
+arch blocked
+x 25
+y 21
 end
 arch teleporter
 hp 26
@@ -5907,6 +6297,30 @@ y 4
 speed 0.000000
 connected 123
 end
+arch blocked
+x 26
+y 5
+end
+arch blocked
+x 26
+y 17
+end
+arch blocked
+x 26
+y 18
+end
+arch blocked
+x 26
+y 19
+end
+arch blocked
+x 26
+y 20
+end
+arch blocked
+x 26
+y 21
+end
 arch teleporter
 hp 27
 sp 1
@@ -5966,12 +6380,59 @@ y 3
 speed 0.0
 connected 333
 end
+arch blocked
+x 27
+y 4
+end
+arch blocked
+x 27
+y 5
+end
+arch blocked
+x 28
+end
+arch blocked
+x 28
+y 1
+end
+arch blocked
+x 28
+y 2
+end
 arch permanent_lava
 name deadly lava
 dam 999
 x 28
 y 3
 attacktype 1048581
+end
+arch blocked
+x 28
+y 4
+end
+arch blocked
+x 28
+y 5
+end
+arch blocked
+x 28
+y 6
+end
+arch blocked
+x 28
+y 7
+end
+arch blocked
+x 28
+y 8
+end
+arch blocked
+x 28
+y 9
+end
+arch blocked
+x 28
+y 10
 end
 arch mover_5
 x 29
@@ -6275,4 +6736,8 @@ end
 arch swall_1_4
 x 29
 y 9
+end
+arch blocked
+x 29
+y 10
 end
