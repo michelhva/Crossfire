@@ -8,7 +8,7 @@ enter_x 51
 enter_y 6
 msg
 Created:  2006-12-10 Gene Alexander (poof@eracc.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-11-12 crossfire
 endmsg
 outdoor 1
 end
@@ -312,7 +312,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -1135,13 +1135,14 @@ x 2
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -1150,13 +1151,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -1164,57 +1171,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -1224,9 +1191,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -1236,6 +1247,111 @@ x 2
 y 60
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 2
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch blocked
 name Eternal Darkness
 x 3
@@ -1595,12 +1711,222 @@ x 3
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 3
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 36
 sp 6
 x 3
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 3
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -1962,7 +2288,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -2897,13 +3223,14 @@ x 6
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -2912,13 +3239,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -2926,57 +3259,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -2986,9 +3279,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -2997,6 +3334,111 @@ sp 6
 x 6
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 6
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -3366,12 +3808,222 @@ x 7
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 7
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 40
 sp 6
 x 7
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 7
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -3764,7 +4416,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -4652,13 +5304,14 @@ x 10
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -4667,13 +5320,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -4681,57 +5340,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -4741,9 +5360,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -4752,6 +5415,111 @@ sp 6
 x 10
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 10
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -5131,6 +5899,111 @@ x 11
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 11
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 44
 sp 6
@@ -5138,6 +6011,111 @@ x 11
 y 60
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 11
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch blocked
 name Eternal Darkness
 x 12
@@ -5970,7 +6948,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -6785,13 +7763,14 @@ x 15
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -6800,13 +7779,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -6814,57 +7799,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -6874,9 +7819,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -6886,6 +7875,111 @@ x 15
 y 60
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 15
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch blocked
 name Eternal Darkness
 x 16
@@ -7235,12 +8329,222 @@ x 16
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 16
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 36
 sp 53
 x 16
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 16
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -7590,7 +8894,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -8387,13 +9691,14 @@ x 19
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -8402,13 +9707,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -8416,57 +9727,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -8476,9 +9747,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -8487,6 +9802,111 @@ sp 53
 x 19
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 19
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -8836,12 +10256,222 @@ x 20
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 20
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 40
 sp 53
 x 20
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 20
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -9185,7 +10815,7 @@ y 59
 connected 666
 end
 arch shadowtiger
-name Kitten of Gorokh
+name Cat of Gorokh
 race Divine
 Con 100
 Wis 50
@@ -10154,13 +11784,14 @@ x 23
 y 59
 connected 666
 end
-arch shadowtiger
+arch shadowpup
 name Kitten of Gorokh
 race Divine
 Con 100
 Wis 50
 hp 20000
 maxhp 200000
+exp 600000
 dam 50
 wc -50
 ac -90
@@ -10169,13 +11800,19 @@ y 59
 speed 0.95
 level 200
 attacktype 1119617
+resist_physical 100
+resist_magic 100
 resist_fire 100
 resist_electricity 99
 resist_cold 99
+resist_confusion 100
 resist_acid 99
+resist_drain 100
 resist_weaponmagic 99
 resist_ghosthit 99
-resist_turn_undead 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
 resist_fear 99
 resist_deplete 99
 resist_death 99
@@ -10183,57 +11820,17 @@ resist_chaos 99
 resist_godpower 100
 resist_holyword 100
 resist_blind 99
+path_attuned 393216
+see_invisible 1
 run_away 20
+can_cast_spell 1
 can_use_scroll 1
+sleep 0
 can_use_rod 1
 can_see_in_dark 1
 can_use_wand 1
-arch creeping_frost_immunity
-end
-arch immolation_immunity
-end
 arch immunity
-name anthrax
-level 127
-startequip 1
-end
-arch immunity
-name Black Death
-level 127
-startequip 1
-end
-arch immunity
-name cold
-level 127
-startequip 1
-end
-arch immunity
-name Red Death
-level 127
-startequip 1
-end
-arch immunity
-name flu
-level 127
-startequip 1
-end
-arch immunity
-name insanity
-level 127
-startequip 1
-end
-arch immunity
-name leprosy
-level 127
-startequip 1
-end
-arch immunity
-name pneumonic plague
-level 127
-startequip 1
-end
-arch immunity
-name rabies
+name typhoid
 level 127
 startequip 1
 end
@@ -10243,9 +11840,53 @@ level 127
 startequip 1
 end
 arch immunity
-name typhoid
+name rabies
 level 127
 startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
 end
 end
 arch pit_closed
@@ -10254,6 +11895,111 @@ sp 53
 x 23
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 23
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
@@ -10601,12 +12347,222 @@ x 24
 y 59
 connected 666
 end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 24
+y 59
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
+end
 arch pit_closed
 hp 44
 sp 53
 x 24
 y 60
 connected 666
+end
+arch shadowpup
+name Kitten of Gorokh
+race Divine
+Con 100
+Wis 50
+hp 20000
+maxhp 200000
+exp 600000
+dam 50
+wc -50
+ac -90
+x 24
+y 60
+speed 0.95
+level 200
+attacktype 1119617
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 99
+resist_cold 99
+resist_confusion 100
+resist_acid 99
+resist_drain 100
+resist_weaponmagic 99
+resist_ghosthit 99
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_fear 99
+resist_deplete 99
+resist_death 99
+resist_chaos 99
+resist_godpower 100
+resist_holyword 100
+resist_blind 99
+path_attuned 393216
+see_invisible 1
+run_away 20
+can_cast_spell 1
+can_use_scroll 1
+sleep 0
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch blocked
 name Eternal Darkness
