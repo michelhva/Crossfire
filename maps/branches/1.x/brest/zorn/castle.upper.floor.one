@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
 Info: Zorn Castle, first upper floor
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-11-14 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -6183,8 +6183,8 @@ Hello, dearie, welcome to my home.
 endmsg
 Con 30
 Pow 20
-hp 1000
-maxhp 1000
+hp 10000
+maxhp 10000
 sp 1000
 maxsp 1000
 exp 900000
@@ -6497,8 +6497,8 @@ Prepare to die.
 endmsg
 Con 30
 Pow 50
-hp 2000
-maxhp 2000
+hp 20000
+maxhp 20000
 sp 900
 maxsp 900
 exp 800000
@@ -22729,8 +22729,8 @@ of our castle?
 endmsg
 Con 30
 Pow 50
-hp 1000
-maxhp 1000
+hp 10000
+maxhp 10000
 sp 900
 maxsp 900
 exp 800000
@@ -23051,8 +23051,8 @@ endmsg
 Con 30
 Pow 25
 Int 13
-hp 1000
-maxhp 1000
+hp 10000
+maxhp 10000
 sp 900
 maxsp 900
 exp 800000
