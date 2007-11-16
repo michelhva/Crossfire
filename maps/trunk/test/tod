@@ -1,0 +1,2244 @@
+arch map
+name tod
+darkness 3
+width 20
+height 20
+msg
+Created:  2007-11-11 tchize
+Modified: 2007-11-16 tchize
+endmsg
+end
+arch brush
+end
+arch sign
+msg
+This a test map for "time of day"
+related test map. Apply triggers
+to see how they behave,
+depending on time of day...
+
+Each handle is connected to
+a magic mouth that give
+message on success
+endmsg
+end
+arch brush
+y 1
+end
+arch brush
+y 2
+end
+arch brush
+y 3
+end
+arch brush
+y 4
+end
+arch brush
+y 5
+end
+arch brush
+y 6
+end
+arch brush
+y 7
+end
+arch brush
+y 8
+end
+arch brush
+y 9
+end
+arch brush
+y 10
+end
+arch brush
+y 11
+end
+arch brush
+y 12
+end
+arch brush
+y 13
+end
+arch brush
+y 14
+end
+arch brush
+y 15
+end
+arch brush
+y 16
+end
+arch brush
+y 17
+end
+arch brush
+y 18
+end
+arch brush
+y 19
+end
+arch brush
+x 1
+end
+arch brush
+x 1
+y 1
+end
+arch green-white-c-marble_111
+x 1
+y 2
+end
+arch lamppost
+x 1
+y 2
+end
+arch marble
+x 1
+y 3
+end
+arch marble
+x 1
+y 4
+end
+arch marble
+x 1
+y 5
+end
+arch marble
+x 1
+y 6
+end
+arch marble
+x 1
+y 7
+end
+arch green-white-c-marble_112
+x 1
+y 8
+end
+arch lamppost
+x 1
+y 8
+end
+arch brush
+x 1
+y 9
+end
+arch brush
+x 1
+y 10
+end
+arch brush
+x 1
+y 11
+end
+arch brush
+x 1
+y 12
+end
+arch brush
+x 1
+y 13
+end
+arch brush
+x 1
+y 14
+end
+arch brush
+x 1
+y 15
+end
+arch brush
+x 1
+y 16
+end
+arch brush
+x 1
+y 17
+end
+arch brush
+x 1
+y 18
+end
+arch brush
+x 1
+y 19
+end
+arch brush
+x 2
+end
+arch brush
+x 2
+y 1
+end
+arch sign
+msg
+South are Season related tests
+endmsg
+x 2
+y 1
+end
+arch marble
+x 2
+y 2
+end
+arch brush
+x 2
+y 3
+end
+arch magic_mouth
+msg
+I will only talk during the Season of New Year
+endmsg
+x 2
+y 3
+move_on walk fly_low fly_high
+arch event_trigger
+name The Season of New Year
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 2
+y 4
+end
+arch magic_mouth
+msg
+I will only talk during the Season of Growth
+endmsg
+x 2
+y 4
+move_on walk fly_low fly_high
+arch event_trigger
+name The Season of Growth
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 2
+y 5
+end
+arch magic_mouth
+msg
+I will only talk during the Season of Harvest
+endmsg
+x 2
+y 5
+move_on walk fly_low fly_high
+arch event_trigger
+name The Season of Harvest
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 2
+y 6
+end
+arch magic_mouth
+msg
+I will only talk during the Season of Decay
+endmsg
+x 2
+y 6
+move_on walk fly_low fly_high
+arch event_trigger
+name The Season of Decay
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 2
+y 7
+end
+arch magic_mouth
+msg
+I will only talk during the Season of the Blizzard
+endmsg
+x 2
+y 7
+move_on walk fly_low fly_high
+arch event_trigger
+name The Season of the Blizzard
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch marble
+x 2
+y 8
+end
+arch brush
+x 2
+y 9
+end
+arch brush
+x 2
+y 10
+end
+arch brush
+x 2
+y 11
+end
+arch brush
+x 2
+y 12
+end
+arch brush
+x 2
+y 13
+end
+arch brush
+x 2
+y 14
+end
+arch brush
+x 2
+y 15
+end
+arch brush
+x 2
+y 16
+end
+arch brush
+x 2
+y 17
+end
+arch brush
+x 2
+y 18
+end
+arch brush
+x 2
+y 19
+end
+arch brush
+x 3
+end
+arch brush
+x 3
+y 1
+end
+arch marble
+x 3
+y 2
+end
+arch lamppost
+x 3
+y 2
+end
+arch marble
+x 3
+y 3
+end
+arch marble
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
+end
+arch marble
+x 3
+y 8
+end
+arch lamppost
+x 3
+y 8
+end
+arch marble
+x 3
+y 9
+end
+arch marble
+x 3
+y 10
+end
+arch marble
+x 3
+y 11
+end
+arch marble
+x 3
+y 12
+end
+arch marble
+x 3
+y 13
+end
+arch lamppost
+x 3
+y 13
+end
+arch marble
+x 3
+y 14
+end
+arch marble
+x 3
+y 15
+end
+arch marble
+x 3
+y 16
+end
+arch marble
+x 3
+y 17
+end
+arch lamppost
+x 3
+y 17
+end
+arch marble
+x 3
+y 18
+end
+arch marble
+x 3
+y 19
+end
+arch brush
+x 4
+end
+arch brush
+x 4
+y 1
+end
+arch sign
+msg
+South are Month related tests
+endmsg
+x 4
+y 1
+end
+arch marble
+x 4
+y 2
+end
+arch brush
+x 4
+y 3
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Winter
+endmsg
+x 4
+y 3
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Winter
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 4
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Ice Dragon
+endmsg
+x 4
+y 4
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Ice Dragon
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 5
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Frost Giant
+endmsg
+x 4
+y 5
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Frost Giant
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 6
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Valriel
+endmsg
+x 4
+y 6
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Valriel
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 7
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Lythander
+endmsg
+x 4
+y 7
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Lythander
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 8
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Harvest
+endmsg
+x 4
+y 8
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Harvest
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 9
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Gaea
+endmsg
+x 4
+y 9
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Gaea
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 10
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Futility
+endmsg
+x 4
+y 10
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Futility
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 11
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Dragon
+endmsg
+x 4
+y 11
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Dragon
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 12
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Sun
+endmsg
+x 4
+y 12
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Sun
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 13
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Great Infernus
+endmsg
+x 4
+y 13
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Great Infernus
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 14
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Ruggilli
+endmsg
+x 4
+y 14
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Ruggilli
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 15
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Dark Shades
+endmsg
+x 4
+y 15
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Dark Shades
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 16
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Devourers
+endmsg
+x 4
+y 16
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Devourers
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 17
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Sorig
+endmsg
+x 4
+y 17
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Sorig
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 18
+end
+arch magic_mouth
+msg
+I will only talk during the Month of the Ancient Darkness
+endmsg
+x 4
+y 18
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of the Ancient Darkness
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 4
+y 19
+end
+arch magic_mouth
+msg
+I will only talk during the Month of Gorokh
+endmsg
+x 4
+y 19
+move_on walk fly_low fly_high
+arch event_trigger
+name Month of Gorokh
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 5
+end
+arch brush
+x 5
+y 1
+end
+arch marble
+x 5
+y 2
+end
+arch lamppost
+x 5
+y 2
+end
+arch marble
+x 5
+y 3
+end
+arch marble
+x 5
+y 4
+end
+arch marble
+x 5
+y 5
+end
+arch marble
+x 5
+y 6
+end
+arch marble
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch lamppost
+x 5
+y 8
+end
+arch marble
+x 5
+y 9
+end
+arch marble
+x 5
+y 10
+end
+arch marble
+x 5
+y 11
+end
+arch marble
+x 5
+y 12
+end
+arch marble
+x 5
+y 13
+end
+arch lamppost
+x 5
+y 13
+end
+arch marble
+x 5
+y 14
+end
+arch marble
+x 5
+y 15
+end
+arch marble
+x 5
+y 16
+end
+arch marble
+x 5
+y 17
+end
+arch lamppost
+x 5
+y 17
+end
+arch marble
+x 5
+y 18
+end
+arch marble
+x 5
+y 19
+end
+arch brush
+x 6
+end
+arch brush
+x 6
+y 1
+end
+arch sign
+msg
+South are Day of the week related tests
+endmsg
+x 6
+y 1
+end
+arch marble
+x 6
+y 2
+end
+arch brush
+x 6
+y 3
+end
+arch magic_mouth
+msg
+I will only talk during the Day of the Moon
+endmsg
+x 6
+y 3
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of the Moon
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 4
+end
+arch magic_mouth
+msg
+I will only talk during the Day of the Bull
+endmsg
+x 6
+y 4
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of the Bull
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 5
+end
+arch magic_mouth
+msg
+I will only talk during the Day of the Deception
+endmsg
+x 6
+y 5
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of the Deception
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 6
+end
+arch magic_mouth
+msg
+I will only talk during the Day of Thunder
+endmsg
+x 6
+y 6
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of Thunder
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 7
+end
+arch magic_mouth
+msg
+I will only talk during the Day of Freedom
+endmsg
+x 6
+y 7
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of Freedom
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 8
+end
+arch magic_mouth
+msg
+I will only talk during the Day of the Great Gods
+endmsg
+x 6
+y 8
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of the Great Gods
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 6
+y 9
+end
+arch magic_mouth
+msg
+I will only talk during the Day of the Sun
+endmsg
+x 6
+y 9
+move_on walk fly_low fly_high
+arch event_trigger
+name the Day of the Sun
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch marble
+x 6
+y 10
+end
+arch brush
+x 6
+y 11
+end
+arch brush
+x 6
+y 12
+end
+arch brush
+x 6
+y 13
+end
+arch brush
+x 6
+y 14
+end
+arch brush
+x 6
+y 15
+end
+arch brush
+x 6
+y 16
+end
+arch brush
+x 6
+y 17
+end
+arch brush
+x 6
+y 18
+end
+arch brush
+x 6
+y 19
+end
+arch brush
+x 7
+end
+arch brush
+x 7
+y 1
+end
+arch marble
+x 7
+y 2
+end
+arch lamppost
+x 7
+y 2
+end
+arch marble
+x 7
+y 3
+end
+arch marble
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch marble
+x 7
+y 6
+end
+arch marble
+x 7
+y 7
+end
+arch marble
+x 7
+y 8
+end
+arch lamppost
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch green-white-c-marble_113
+x 7
+y 10
+end
+arch brush
+x 7
+y 11
+end
+arch brush
+x 7
+y 12
+end
+arch brush
+x 7
+y 13
+end
+arch brush
+x 7
+y 14
+end
+arch brush
+x 7
+y 15
+end
+arch brush
+x 7
+y 16
+end
+arch brush
+x 7
+y 17
+end
+arch brush
+x 7
+y 18
+end
+arch brush
+x 7
+y 19
+end
+arch brush
+x 8
+end
+arch brush
+x 8
+y 1
+end
+arch sign
+msg
+South are test that are related
+to the period of the day (Night,
+Dawn, Dusk, etc)
+endmsg
+x 8
+y 1
+end
+arch marble
+x 8
+y 2
+end
+arch brush
+x 8
+y 3
+end
+arch magic_mouth
+msg
+I will only talk during the Night
+endmsg
+x 8
+y 3
+move_on walk fly_low fly_high
+arch event_trigger
+name Night
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 8
+y 4
+end
+arch magic_mouth
+msg
+I will only talk during the Dawn
+endmsg
+x 8
+y 4
+move_on walk fly_low fly_high
+arch event_trigger
+name Dawn
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 8
+y 5
+end
+arch magic_mouth
+msg
+I will only talk during the Morning
+endmsg
+x 8
+y 5
+move_on walk fly_low fly_high
+arch event_trigger
+name Morning
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 8
+y 6
+end
+arch magic_mouth
+msg
+I will only talk during the Noon
+endmsg
+x 8
+y 6
+move_on walk fly_low fly_high
+arch event_trigger
+name Noon
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 8
+y 7
+end
+arch magic_mouth
+msg
+I will only talk during the Evening
+endmsg
+x 8
+y 7
+move_on walk fly_low fly_high
+arch event_trigger
+name Evening
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 8
+y 8
+end
+arch magic_mouth
+msg
+I will only talk during the Dusk
+endmsg
+x 8
+y 8
+move_on walk fly_low fly_high
+arch event_trigger
+name Dusk
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch marble
+x 8
+y 9
+end
+arch brush
+x 8
+y 10
+end
+arch brush
+x 8
+y 11
+end
+arch brush
+x 8
+y 12
+end
+arch brush
+x 8
+y 13
+end
+arch brush
+x 8
+y 14
+end
+arch brush
+x 8
+y 15
+end
+arch brush
+x 8
+y 16
+end
+arch brush
+x 8
+y 17
+end
+arch brush
+x 8
+y 18
+end
+arch brush
+x 8
+y 19
+end
+arch brush
+x 9
+end
+arch brush
+x 9
+y 1
+end
+arch green-white-c-marble_114
+x 9
+y 2
+end
+arch lamppost
+x 9
+y 2
+end
+arch marble
+x 9
+y 3
+end
+arch marble
+x 9
+y 4
+end
+arch marble
+x 9
+y 5
+end
+arch marble
+x 9
+y 6
+end
+arch marble
+x 9
+y 7
+end
+arch marble
+x 9
+y 8
+end
+arch lamppost
+x 9
+y 8
+end
+arch green-white-c-marble_113
+x 9
+y 9
+end
+arch brush
+x 9
+y 10
+end
+arch brush
+x 9
+y 11
+end
+arch brush
+x 9
+y 12
+end
+arch brush
+x 9
+y 13
+end
+arch brush
+x 9
+y 14
+end
+arch brush
+x 9
+y 15
+end
+arch brush
+x 9
+y 16
+end
+arch brush
+x 9
+y 17
+end
+arch brush
+x 9
+y 18
+end
+arch brush
+x 9
+y 19
+end
+arch brush
+x 10
+end
+arch brush
+x 10
+y 1
+end
+arch brush
+x 10
+y 2
+end
+arch brush
+x 10
+y 3
+end
+arch brush
+x 10
+y 4
+end
+arch brush
+x 10
+y 5
+end
+arch brush
+x 10
+y 6
+end
+arch brush
+x 10
+y 7
+end
+arch brush
+x 10
+y 8
+end
+arch brush
+x 10
+y 9
+end
+arch brush
+x 10
+y 10
+end
+arch brush
+x 10
+y 11
+end
+arch brush
+x 10
+y 12
+end
+arch brush
+x 10
+y 13
+end
+arch brush
+x 10
+y 14
+end
+arch brush
+x 10
+y 15
+end
+arch brush
+x 10
+y 16
+end
+arch brush
+x 10
+y 17
+end
+arch brush
+x 10
+y 18
+end
+arch brush
+x 10
+y 19
+end
+arch brush
+x 11
+end
+arch brush
+x 11
+y 1
+end
+arch brush
+x 11
+y 2
+end
+arch light2
+x 11
+y 2
+end
+arch brush
+x 11
+y 3
+end
+arch brush
+x 11
+y 4
+end
+arch brush
+x 11
+y 5
+end
+arch brush
+x 11
+y 6
+end
+arch brush
+x 11
+y 7
+end
+arch brush
+x 11
+y 8
+end
+arch brush
+x 11
+y 9
+end
+arch brush
+x 11
+y 10
+end
+arch brush
+x 11
+y 11
+end
+arch brush
+x 11
+y 12
+end
+arch brush
+x 11
+y 13
+end
+arch brush
+x 11
+y 14
+end
+arch brush
+x 11
+y 15
+end
+arch brush
+x 11
+y 16
+end
+arch brush
+x 11
+y 17
+end
+arch brush
+x 11
+y 18
+end
+arch brush
+x 11
+y 19
+end
+arch brush
+x 12
+end
+arch brush
+x 12
+y 1
+end
+arch brush
+x 12
+y 2
+end
+arch brush
+x 12
+y 3
+end
+arch brush
+x 12
+y 4
+end
+arch light2
+x 12
+y 4
+end
+arch brush
+x 12
+y 5
+end
+arch brush
+x 12
+y 6
+end
+arch brush
+x 12
+y 7
+end
+arch brush
+x 12
+y 8
+end
+arch brush
+x 12
+y 9
+end
+arch brush
+x 12
+y 10
+end
+arch brush
+x 12
+y 11
+end
+arch brush
+x 12
+y 12
+end
+arch brush
+x 12
+y 13
+end
+arch brush
+x 12
+y 14
+end
+arch brush
+x 12
+y 15
+end
+arch brush
+x 12
+y 16
+end
+arch brush
+x 12
+y 17
+end
+arch brush
+x 12
+y 18
+end
+arch brush
+x 12
+y 19
+end
+arch brush
+x 13
+end
+arch light2
+x 13
+end
+arch brush
+x 13
+y 1
+end
+arch brush
+x 13
+y 2
+end
+arch brush
+x 13
+y 3
+end
+arch brush
+x 13
+y 4
+end
+arch brush
+x 13
+y 5
+end
+arch brush
+x 13
+y 6
+end
+arch brush
+x 13
+y 7
+end
+arch brush
+x 13
+y 8
+end
+arch brush
+x 13
+y 9
+end
+arch brush
+x 13
+y 10
+end
+arch brush
+x 13
+y 11
+end
+arch brush
+x 13
+y 12
+end
+arch brush
+x 13
+y 13
+end
+arch brush
+x 13
+y 14
+end
+arch brush
+x 13
+y 15
+end
+arch brush
+x 13
+y 16
+end
+arch brush
+x 13
+y 17
+end
+arch brush
+x 13
+y 18
+end
+arch brush
+x 13
+y 19
+end
+arch brush
+x 14
+end
+arch brush
+x 14
+y 1
+end
+arch brush
+x 14
+y 2
+end
+arch light2
+x 14
+y 2
+end
+arch brush
+x 14
+y 3
+end
+arch brush
+x 14
+y 4
+end
+arch brush
+x 14
+y 5
+end
+arch brush
+x 14
+y 6
+end
+arch brush
+x 14
+y 7
+end
+arch brush
+x 14
+y 8
+end
+arch brush
+x 14
+y 9
+end
+arch brush
+x 14
+y 10
+end
+arch brush
+x 14
+y 11
+end
+arch brush
+x 14
+y 12
+end
+arch brush
+x 14
+y 13
+end
+arch brush
+x 14
+y 14
+end
+arch brush
+x 14
+y 15
+end
+arch brush
+x 14
+y 16
+end
+arch brush
+x 14
+y 17
+end
+arch brush
+x 14
+y 18
+end
+arch brush
+x 14
+y 19
+end
+arch brush
+x 15
+end
+arch brush
+x 15
+y 1
+end
+arch brush
+x 15
+y 2
+end
+arch brush
+x 15
+y 3
+end
+arch brush
+x 15
+y 4
+end
+arch light2
+x 15
+y 4
+end
+arch brush
+x 15
+y 5
+end
+arch brush
+x 15
+y 6
+end
+arch brush
+x 15
+y 7
+end
+arch brush
+x 15
+y 8
+end
+arch brush
+x 15
+y 9
+end
+arch brush
+x 15
+y 10
+end
+arch brush
+x 15
+y 11
+end
+arch brush
+x 15
+y 12
+end
+arch brush
+x 15
+y 13
+end
+arch brush
+x 15
+y 14
+end
+arch brush
+x 15
+y 15
+end
+arch magic_mouth
+msg
+You see the sage activating the doors
+endmsg
+x 15
+y 15
+connected 79
+move_on 0
+end
+arch sage
+msg
+@match *
+I am responsible for opening those gates on the Mrning and close them at Dusk
+endmsg
+x 15
+y 15
+stand_still 1
+no_damage 1
+arch event_time
+name 79,Morning,Noon,Evening
+title Python
+slaying /python/tod/push_one_period.py
+end
+end
+arch brush
+x 15
+y 16
+end
+arch igate_closed_2
+x 15
+y 16
+connected 79
+end
+arch brush
+x 15
+y 17
+end
+arch igate_closed_2
+x 15
+y 17
+connected 79
+end
+arch brush
+x 15
+y 18
+end
+arch igate_closed_2
+x 15
+y 18
+connected 79
+end
+arch brush
+x 15
+y 19
+end
+arch brush
+x 16
+end
+arch light2
+x 16
+end
+arch brush
+x 16
+y 1
+end
+arch brush
+x 16
+y 2
+end
+arch brush
+x 16
+y 3
+end
+arch brush
+x 16
+y 4
+end
+arch brush
+x 16
+y 5
+end
+arch brush
+x 16
+y 6
+end
+arch brush
+x 16
+y 7
+end
+arch brush
+x 16
+y 8
+end
+arch brush
+x 16
+y 9
+end
+arch brush
+x 16
+y 10
+end
+arch brush
+x 16
+y 11
+end
+arch brush
+x 16
+y 12
+end
+arch brush
+x 16
+y 13
+end
+arch brush
+x 16
+y 14
+end
+arch brush
+x 16
+y 15
+end
+arch brush
+x 16
+y 16
+end
+arch light4
+x 16
+y 16
+end
+arch brush
+x 16
+y 17
+end
+arch brush
+x 16
+y 18
+end
+arch light4
+x 16
+y 18
+end
+arch brush
+x 16
+y 19
+end
+arch brush
+x 17
+end
+arch brush
+x 17
+y 1
+end
+arch brush
+x 17
+y 2
+end
+arch light2
+x 17
+y 2
+end
+arch brush
+x 17
+y 3
+end
+arch brush
+x 17
+y 4
+end
+arch brush
+x 17
+y 5
+end
+arch brush
+x 17
+y 6
+end
+arch brush
+x 17
+y 7
+end
+arch brush
+x 17
+y 8
+end
+arch brush
+x 17
+y 9
+end
+arch brush
+x 17
+y 10
+end
+arch brush
+x 17
+y 11
+end
+arch brush
+x 17
+y 12
+end
+arch brush
+x 17
+y 13
+end
+arch brush
+x 17
+y 14
+end
+arch brush
+x 17
+y 15
+end
+arch brush
+x 17
+y 16
+end
+arch light4
+x 17
+y 16
+end
+arch brush
+x 17
+y 17
+end
+arch brush
+x 17
+y 18
+end
+arch light4
+x 17
+y 18
+end
+arch brush
+x 17
+y 19
+end
+arch brush
+x 18
+end
+arch brush
+x 18
+y 1
+end
+arch brush
+x 18
+y 2
+end
+arch brush
+x 18
+y 3
+end
+arch brush
+x 18
+y 4
+end
+arch light2
+x 18
+y 4
+end
+arch brush
+x 18
+y 5
+end
+arch brush
+x 18
+y 6
+end
+arch brush
+x 18
+y 7
+end
+arch brush
+x 18
+y 8
+end
+arch brush
+x 18
+y 9
+end
+arch brush
+x 18
+y 10
+end
+arch brush
+x 18
+y 11
+end
+arch brush
+x 18
+y 12
+end
+arch brush
+x 18
+y 13
+end
+arch brush
+x 18
+y 14
+end
+arch brush
+x 18
+y 15
+end
+arch brush
+x 18
+y 16
+end
+arch brush
+x 18
+y 17
+end
+arch brush
+x 18
+y 18
+end
+arch brush
+x 18
+y 19
+end
+arch magentamarble
+x 19
+end
+arch note
+msg
+This weapon is lazy, it works
+only half the day
+(Morning, Noon abd Evening)
+endmsg
+x 19
+end
+arch light_sword
+name Day sword
+x 19
+arch event_attack
+name Morning,Noon,Evening
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 19
+y 1
+end
+arch magentamarble
+x 19
+y 2
+end
+arch note
+msg
+This weapon is lazy, it works
+only half the day
+(Night,Dawn,Dusk)
+endmsg
+x 19
+y 2
+end
+arch light_sword
+name Night sword
+x 19
+y 2
+arch event_attack
+name Night,Dawn,Dusk
+title Python
+slaying /python/tod/filter_one_period.py
+end
+end
+arch brush
+x 19
+y 3
+end
+arch brush
+x 19
+y 4
+end
+arch brush
+x 19
+y 5
+end
+arch brush
+x 19
+y 6
+end
+arch brush
+x 19
+y 7
+end
+arch brush
+x 19
+y 8
+end
+arch brush
+x 19
+y 9
+end
+arch brush
+x 19
+y 10
+end
+arch brush
+x 19
+y 11
+end
+arch brush
+x 19
+y 12
+end
+arch brush
+x 19
+y 13
+end
+arch brush
+x 19
+y 14
+end
+arch brush
+x 19
+y 15
+end
+arch brush
+x 19
+y 16
+end
+arch brush
+x 19
+y 17
+end
+arch brush
+x 19
+y 18
+end
+arch brush
+x 19
+y 19
+end
