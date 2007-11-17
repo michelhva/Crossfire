@@ -1,4 +1,4 @@
-# moment_only.py
+# filter_all_periods.py
 #
 # Copyright 2007 by David Delbecq
 #
