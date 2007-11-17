@@ -1,11 +1,11 @@
 arch map
 name tod
-darkness 3
+darkness 1
 width 20
 height 20
 msg
 Created:  2007-11-11 tchize
-Modified: 2007-11-16 tchize
+Modified: 2007-11-17 tchize
 endmsg
 end
 arch brush
@@ -1362,7 +1362,7 @@ arch brush
 x 10
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 10
 y 8
 end
@@ -1445,7 +1445,7 @@ arch brush
 x 11
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 11
 y 8
 end
@@ -1528,7 +1528,7 @@ arch brush
 x 12
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 12
 y 8
 end
@@ -1610,7 +1610,7 @@ arch brush
 x 13
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 13
 y 8
 end
@@ -1693,51 +1693,51 @@ arch brush
 x 14
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 14
 y 8
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 9
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 10
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 11
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 12
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 13
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 14
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 15
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 16
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 17
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 18
 end
-arch brush
+arch afloor_blue_left
 x 14
 y 19
 end
@@ -1776,7 +1776,7 @@ arch brush
 x 15
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 15
 y 8
 end
@@ -1788,11 +1788,23 @@ arch brush
 x 15
 y 10
 end
+arch swall_2_2_2
+x 15
+y 10
+end
 arch brush
 x 15
 y 11
 end
+arch swall_2_1_1
+x 15
+y 11
+end
 arch brush
+x 15
+y 12
+end
+arch swall_2_2_1
 x 15
 y 12
 end
@@ -1810,12 +1822,23 @@ y 15
 end
 arch magic_mouth
 msg
-You see the sage activating the doors
+You see the sage opening the doors
 endmsg
 x 15
 y 15
 connected 79
 move_on 0
+activate_on_release 0
+end
+arch magic_mouth
+msg
+You see the sage closing the doors
+endmsg
+x 15
+y 15
+connected 79
+move_on 0
+activate_on_push 0
 end
 arch sage
 msg
@@ -1897,7 +1920,7 @@ arch brush
 x 16
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 16
 y 8
 end
@@ -1905,7 +1928,18 @@ arch brush
 x 16
 y 9
 end
+arch sign
+msg
+This beholder changes to black dragon at Dusk and Night
+endmsg
+x 16
+y 9
+end
 arch brush
+x 16
+y 10
+end
+arch swall_2_1_2
 x 16
 y 10
 end
@@ -1913,7 +1947,25 @@ arch brush
 x 16
 y 11
 end
+arch beholder
+x 16
+y 11
+connected 80
+arch event_trigger
+name Dusk,Night
+title Python
+slaying /python/tod/replace_one_period.py
+subtype 8
+arch black_dragon1
+connected 80
+end
+end
+end
 arch brush
+x 16
+y 12
+end
+arch swall_2_1_2
 x 16
 y 12
 end
@@ -1988,7 +2040,7 @@ arch brush
 x 17
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 17
 y 8
 end
@@ -1996,7 +2048,22 @@ arch brush
 x 17
 y 9
 end
+arch light4
+x 17
+y 9
+end
+arch sign
+msg
+This beholder transforms to blackdragon at dawn and morning
+endmsg
+x 17
+y 9
+end
 arch brush
+x 17
+y 10
+end
+arch swall_2_1_2
 x 17
 y 10
 end
@@ -2004,11 +2071,33 @@ arch brush
 x 17
 y 11
 end
+arch beholder
+x 17
+y 11
+connected 80
+arch event_trigger
+name Dawn,Morning
+title Python
+slaying /python/tod/replace_one_period.py
+subtype 8
+arch black_dragon1
+connected 80
+end
+end
+end
 arch brush
 x 17
 y 12
 end
+arch swall_2_1_2
+x 17
+y 12
+end
 arch brush
+x 17
+y 13
+end
+arch light4
 x 17
 y 13
 end
@@ -2079,7 +2168,7 @@ arch brush
 x 18
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 18
 y 8
 end
@@ -2087,7 +2176,18 @@ arch brush
 x 18
 y 9
 end
+arch sign
+msg
+This beholder transforms to b lack dragon at Noon and evening
+endmsg
+x 18
+y 9
+end
 arch brush
+x 18
+y 10
+end
+arch swall_2_1_2
 x 18
 y 10
 end
@@ -2095,7 +2195,25 @@ arch brush
 x 18
 y 11
 end
+arch beholder
+x 18
+y 11
+connected 80
+arch event_trigger
+name Noon,Evening
+title Python
+slaying /python/tod/replace_one_period.py
+subtype 8
+arch black_dragon1
+connected 80
+end
+end
+end
 arch brush
+x 18
+y 12
+end
+arch swall_2_1_2
 x 18
 y 12
 end
@@ -2194,7 +2312,7 @@ arch brush
 x 19
 y 7
 end
-arch brush
+arch afloor_blue_right
 x 19
 y 8
 end
@@ -2202,7 +2320,18 @@ arch brush
 x 19
 y 9
 end
+arch sign
+msg
+This beholder transforms to black dragon at evening and Dusk
+endmsg
+x 19
+y 9
+end
 arch brush
+x 19
+y 10
+end
+arch swall_1_3
 x 19
 y 10
 end
@@ -2210,7 +2339,25 @@ arch brush
 x 19
 y 11
 end
+arch beholder
+x 19
+y 11
+connected 80
+arch event_trigger
+name Evening,Dusk
+title Python
+slaying /python/tod/replace_one_period.py
+subtype 8
+arch black_dragon1
+connected 80
+end
+end
+end
 arch brush
+x 19
+y 12
+end
+arch swall_1_3
 x 19
 y 12
 end
