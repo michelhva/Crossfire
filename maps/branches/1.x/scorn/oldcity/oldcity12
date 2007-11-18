@@ -1548,7 +1548,8 @@ exp 1000
 x 5
 y 10
 speed_left -3.700000
-slow_move 1.000000
+move_slow walk
+move_slow_penalty 1.000000
 unaggressive 1
 end
 arch medium_stones

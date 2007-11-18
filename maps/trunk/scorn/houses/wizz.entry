@@ -1162,7 +1162,8 @@ exp 1000
 x 10
 y 8
 carrying 6675
-slow_move 1.000000
+move_slow walk
+move_slow_penalty 1.000000
 arch booze
 end
 arch key
