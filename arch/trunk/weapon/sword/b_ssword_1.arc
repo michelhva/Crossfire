@@ -1,4 +1,5 @@
 Object b_ssword_1
+anim_suffix sword
 nrof 1
 last_sp 6
 type 15

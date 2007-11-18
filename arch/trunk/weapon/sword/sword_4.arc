@@ -1,4 +1,5 @@
 Object sword_4
+anim_suffix sword
 nrof 1
 name sword
 last_sp 8
