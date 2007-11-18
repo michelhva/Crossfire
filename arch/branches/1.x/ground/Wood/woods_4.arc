@@ -6,7 +6,8 @@ type 67
 race /terrain/forest
 move_on walk
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 editable 8
 smoothlevel 12

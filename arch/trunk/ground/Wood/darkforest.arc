@@ -5,7 +5,8 @@ type 67
 race /terrain/forest
 move_on walk
 no_pick 1
-slow_move 5
+move_slow walk
+move_slow_penalty 5
 is_wooded 1
 blocksview 1
 is_floor 1

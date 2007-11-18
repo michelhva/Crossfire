@@ -3,7 +3,8 @@ name volcano
 type 66
 face volcano_lo.111
 no_pick 1
-slow_move 15
+move_slow walk
+move_slow_penalty 15
 blocksview 1
 editable 2
 visibility 100
@@ -17,7 +18,8 @@ face volcano_lo.211
 type 66
 no_pick 1
 x 1
-slow_move 15
+move_slow walk
+move_slow_penalty 15
 blocksview 1
 visibility 100
 magicmap brown

@@ -1,7 +1,8 @@
 Object evergreen
 face tree_2.111
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 color_fg green
 is_floor 1

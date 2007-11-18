@@ -6,7 +6,8 @@ move_on walk
 color_fg brown
 no_pick 1
 is_water 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 is_wooded 1
 smoothlevel 9
 smoothface swamp.111 swamp_S.111

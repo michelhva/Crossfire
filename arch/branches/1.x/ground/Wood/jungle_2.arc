@@ -6,7 +6,8 @@ race /terrain/jungle
 move_on walk
 color_fg green
 no_pick 1
-slow_move 5
+move_slow walk
+move_slow_penalty 5
 is_wooded 1
 blocksview 1
 smoothlevel 128

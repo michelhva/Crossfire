@@ -6,7 +6,8 @@ race /terrain/forest
 move_on walk
 color_fg green
 no_pick 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 is_wooded 1
 smoothlevel 125
 smoothface evergreens_1.111 empty_S.111

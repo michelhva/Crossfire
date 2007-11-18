@@ -1,6 +1,7 @@
 Object tree
 face tree_1.111
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 no_pick 1
 color_fg green

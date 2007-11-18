@@ -1,6 +1,7 @@
 Object smallicecube
 name small icecube
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 face smallicecube.111
 color_fg white
 material 68

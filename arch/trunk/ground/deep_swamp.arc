@@ -11,7 +11,8 @@ color_fg green
 no_pick 1
 is_water 1
 move_on walk
-slow_move 5
+move_slow walk
+move_slow_penalty 5
 is_wooded 1
 smoothlevel 8
 smoothface deep_swamp.111 deep_swamp_S.111

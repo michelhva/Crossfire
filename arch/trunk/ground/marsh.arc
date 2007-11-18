@@ -6,7 +6,8 @@ move_on walk
 color_fg green
 no_pick 1
 is_water 1
-slow_move 15
+move_slow walk
+move_slow_penalty 15
 is_wooded 1
 smoothlevel 9
 is_floor 1

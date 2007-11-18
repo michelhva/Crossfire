@@ -7,7 +7,8 @@ glue.111
 glue.112
 mina
 no_pick 1
-slow_move 4
+move_slow walk
+move_slow_penalty 4
 material 32
 visibility 50
 magicmap khaki
