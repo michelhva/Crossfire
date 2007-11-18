@@ -264,8 +264,10 @@ void convertGameObject(GameObject gameObject) {
         }
 
         gameObject.removeAttribute(spellAttribute);
-        if (gameObject.getAttributeString("randomitems").length() > 0) {
+        if (gameObject.getArchetype().getAttributeString("randomitems").length() > 0) {
             gameObject.setAttributeString("randomitems", "none");
+        } else {
+            gameObject.removeAttribute("randomitems");
         }
         break;
     }
