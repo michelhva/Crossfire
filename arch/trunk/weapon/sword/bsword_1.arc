@@ -1,4 +1,5 @@
 Object broadsword
+anim_suffix sword
 nrof 1
 last_sp 8
 type 15

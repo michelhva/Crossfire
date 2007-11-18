@@ -76,3 +76,20 @@ applied 1
 no_drop 1
 speed 0
 end
+Object fenx_player_sword
+anim
+fenx.111
+fenx.112
+fenx.111
+fenx_sword.131
+fenx_sword.132
+fenx_sword.131
+fenx_sword.151
+fenx_sword.152
+fenx_sword.151
+fenx_sword.171
+fenx_sword.172
+fenx_sword.171
+facings 4
+mina
+end
