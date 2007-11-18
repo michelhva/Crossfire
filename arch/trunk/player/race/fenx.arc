@@ -92,7 +92,6 @@ fenx_sword.172
 fenx_sword.171
 facings 4
 mina
-<<<<<<< .mine
 end
 Object fenx_player_spellcasting
 anim
@@ -111,6 +110,3 @@ fenx_spellcasting.151
 facings 4
 mina
 end
-=======
-end
->>>>>>> .r7528
