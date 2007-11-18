@@ -12,7 +12,8 @@ color_fg brown
 no_pick 1
 move_on walk
 is_wooded 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 attacktype 1
 speed 0.2
 dam 3

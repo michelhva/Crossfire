@@ -6,7 +6,8 @@ move_on walk
 is_floor 1
 color_fg green
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 editable 8
 smoothlevel 45
@@ -20,7 +21,8 @@ move_on walk
 is_floor 1
 color_fg green
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 editable 8
 smoothlevel 45

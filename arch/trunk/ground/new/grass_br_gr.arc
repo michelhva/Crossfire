@@ -6,7 +6,8 @@ move_on walk
 is_floor 1
 color_fg green
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 1
 smoothface grass_br_gr.111 empty_S.111
 smoothlevel 38

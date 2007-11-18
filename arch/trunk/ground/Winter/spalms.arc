@@ -6,7 +6,8 @@ race /terrain/forest
 move_on walk
 color_fg green
 no_pick 1
-slow_move 2
+move_slow walk
+move_slow_penalty 2
 is_wooded 1
 end
 
@@ -18,6 +19,7 @@ race /terrain/forest
 move_on walk
 color_fg green
 no_pick 1
-slow_move 2
+move_slow walk
+move_slow_penalty 2
 is_wooded 1
 end

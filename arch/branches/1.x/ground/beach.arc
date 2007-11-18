@@ -5,7 +5,8 @@ race /terrain/desert
 move_on walk
 color_bg yellow
 no_pick 1
-slow_move 1
+move_slow walk
+move_slow_penalty 1
 is_wooded 0
 is_floor 1
 smoothlevel 10

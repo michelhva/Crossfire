@@ -20,7 +20,8 @@ name spider web
 face spider_web.111
 animation spider_web
 no_pick 1
-slow_move 7
+move_slow walk
+move_slow_penalty 7
 material 128
 anim_speed 10
 client_anim_random 1

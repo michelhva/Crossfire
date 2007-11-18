@@ -8,7 +8,8 @@ color_bg white
 color_fg green
 no_pick 1
 is_water 1
-slow_move 20
+move_slow walk
+move_slow_penalty 20
 is_wooded 0
 editable 8
 is_floor 1

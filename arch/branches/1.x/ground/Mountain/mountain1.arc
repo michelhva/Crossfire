@@ -8,7 +8,8 @@ color_fg grey
 no_pick 1
 blocksview 1
 is_hilly 1
-slow_move 5
+move_slow walk
+move_slow_penalty 5
 editable 8
 smoothlevel 100
 is_floor 1

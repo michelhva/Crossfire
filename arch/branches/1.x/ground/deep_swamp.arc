@@ -12,7 +12,8 @@ color_bg grey
 no_pick 1
 is_water 1
 move_on walk
-slow_move 5
+move_slow walk
+move_slow_penalty 5
 is_wooded 1
 editable 8
 smoothlevel 8

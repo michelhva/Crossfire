@@ -5,7 +5,8 @@ move_on walk
 race /terrain/plains
 color_fg green
 no_pick 1
-slow_move 2
+move_slow walk
+move_slow_penalty 2
 is_wooded 1
 editable 8
 is_floor 1
