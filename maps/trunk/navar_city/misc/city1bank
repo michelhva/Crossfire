@@ -458,6 +458,15 @@ arch cobblestones
 x 3
 y 10
 end
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
+x 3
+y 10
+end
 arch cobblestones
 x 3
 y 11
@@ -573,6 +582,15 @@ x 4
 y 10
 end
 arch cobblestones
+x 4
+y 10
+end
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
 x 4
 y 10
 end
