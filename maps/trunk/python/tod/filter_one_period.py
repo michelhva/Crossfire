@@ -17,7 +17,7 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #
-#
+# Uses JSON notation for parameters
 # This script make the event it is attached to (not global!)
 # works only in specific moment of year/day. Periods are separated
 # by comas. See wiki doc list of possible values
@@ -26,20 +26,19 @@
 # arch event_apply
 # title Python
 # slaying /python/tod/filter_one_period.py
-# name The Season of New Year,The Season of the Blizzard,Morning
+# msg
+# {
+# "when":["The Season of New Year","The Season of the Blizzard","Morning"]
+# }
+# endmsg
 # end
 import Crossfire
 import string
-
-now = Crossfire.GetTime()
-parameters = string.split(Crossfire.ScriptParameters(),",")
-current = [Crossfire.GetMonthName(now[1]),Crossfire.GetWeekdayName(now[5]),Crossfire.GetSeasonName(now[7]),Crossfire.GetPeriodofdayName(now[8])]
-#Crossfire.Log(Crossfire.LogDebug , "Seasons to check for are %s" %parameters)
-#Crossfire.Log(Crossfire.LogDebug , "now is %s" %current)
-
-#default: cancel operation (<>0). If non empty intersection, we have a match, set to continur operation (0)
+from CFTimeOfDay import TimeOfDay
+import cjson
+parameters = cjson.decode(Crossfire.WhatIsEvent().Message)
 Crossfire.SetReturnValue(1)
-if (set(parameters) & set(current)):
+if TimeOfDay().matchAny(parameters["when"]):
 	Crossfire.SetReturnValue(0)
 
 

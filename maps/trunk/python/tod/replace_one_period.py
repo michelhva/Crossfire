@@ -17,7 +17,7 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #
-#
+# Uses JSON notation for parameters
 # This script make the object is is attached to swap at
 # given periods of day with a specifc object in the event's inventory
 # To use it, give this event's parameter the name of 
@@ -29,28 +29,26 @@
 # arch event_time
 # title Python
 # slaying /python/tod/replace_one_period.py
-# name Morning,Noon
+# msg
+# {
+# "when":["Noon","Morning"]
+# }
+# endmsg
 # arch beholder
 # end
 # end
 #
-# parameters are separated by comas. Those
-# are the periods of day where the swap is active
 
 
 import Crossfire
 import string
+from CFTimeOfDay import TimeOfDay
+import cjson
 event = Crossfire.WhatIsEvent()
+parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
-
-parameters = string.split(Crossfire.ScriptParameters(),",")
-now = Crossfire.GetTime()
-current = [Crossfire.GetMonthName(now[1]),Crossfire.GetWeekdayName(now[5]),Crossfire.GetSeasonName(now[7]),Crossfire.GetPeriodofdayName(now[8])]
-if (set(parameters) & set(current)):
-    match = True
-else:
-    match = False
-if ( (match and (not alreadymatched)) or (alreadymatched and (not match))):
+match = TimeOfDay().matchAny(parameters["when"])
+if ( match != alreadymatched ):
     Crossfire.Log(Crossfire.LogDebug, "replace_one_period")
     event = Crossfire.WhatIsEvent()
     current = Crossfire.WhoAmI()
@@ -61,11 +59,11 @@ if ( (match and (not alreadymatched)) or (alreadymatched and (not match))):
     while ( (future != None) & (future.Type == Crossfire.Type.EVENT_CONNECTOR)):
         future=future.Below
     if (future):
-        if (future.Below):
-            Crossfire.Log(Crossfire.LogDebug, "future.Below is %s" %future.Below.Name)
-        Crossfire.Log(Crossfire.LogDebug, "current is %s, future is %s, event is %s" %(current.Name, future.Name, event.Name))
+        #if (future.Below):
+            #Crossfire.Log(Crossfire.LogDebug, "future.Below is %s" %future.Below.Name)
+        #Crossfire.Log(Crossfire.LogDebug, "current is %s, future is %s, event is %s" %(current.Name, future.Name, event.Name))
         if (current.Env):
-            Crossfire.Log(Crossfire.LogDebug, "env mode")
+            #Crossfire.Log(Crossfire.LogDebug, "env mode")
             env = current.Env
             future.InsertInto(env)
             event.InsertInto(future)
@@ -75,19 +73,19 @@ if ( (match and (not alreadymatched)) or (alreadymatched and (not match))):
             else:
                 event.Value=1
         elif (current.Map):
-            Crossfire.Log(Crossfire.LogDebug, "Map mode")
+            #Crossfire.Log(Crossfire.LogDebug, "Map mode")
             mymap = current.Map
             x = current.X
             y = current.Y
-            Crossfire.Log(Crossfire.LogDebug, "inserting future %s in map" %future.Name)
+            #Crossfire.Log(Crossfire.LogDebug, "inserting future %s in map" %future.Name)
             mymap.Insert(future,x,y)
-            Crossfire.Log(Crossfire.LogDebug, "inserting event %s in future" %event.Name)
+            #Crossfire.Log(Crossfire.LogDebug, "inserting event %s in future" %event.Name)
             event.InsertInto(future)
-            Crossfire.Log(Crossfire.LogDebug, "inserting current %s in event" %current.Name)
+            #Crossfire.Log(Crossfire.LogDebug, "inserting current %s in event" %current.Name)
             current.InsertInto(event)
             if (alreadymatched):
                 event.Value=0
             else:
                 event.Value=1
-        else:
-            Crossfire.Log(Crossfire.LogDebug, "neither env object nor map found")
+        #else:
+            #Crossfire.Log(Crossfire.LogDebug, "neither env object nor map found")
