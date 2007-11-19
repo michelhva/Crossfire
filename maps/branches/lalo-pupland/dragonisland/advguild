@@ -5,9 +5,8 @@ region stoneville
 width 32
 height 32
 msg
-Creator: Viola Krings
-Email:
-Date: Thu Jul 10 12:10:32 1997
+Created:  1997-07-10 Viola Krings
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -266,6 +265,15 @@ x 1
 y 8
 end
 arch woodfloor
+x 1
+y 9
+end
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
 x 1
 y 9
 end
@@ -1845,7 +1853,7 @@ y 1
 unique 1
 end
 arch key2
-name key to guild apaprtment 2
+name key to guild apartment 2
 slaying guildap2
 x 9
 y 1
@@ -1916,10 +1924,11 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 9
 y 12
+arch spell_detect_magic
+end
 end
 arch woodfloor
 x 9
@@ -1932,10 +1941,11 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 9
 y 14
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 9
@@ -4508,7 +4518,7 @@ arch sign
 name alchemy room
 msg
 In this room you may use the cauldron
-to test your alchemy recepies. Take
+to test your alchemy recipes. Take
 care if entering while someone else is
 experimenting, it might be dangerous
 to your health.
