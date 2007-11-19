@@ -38,24 +38,25 @@
 # arch event_time
 # title Python
 # slaying /python/tod/push_all_periods.py
-# name 69,Morning,The Season of New Year
+# msg
+# {
+# "connected":69
+# "when":["Morning","The Season of New Year"]
+# }
+# endmsg
 # end
 # parameters are separated by comas. First one
 # is connected value to trigger, other ones are
 # one or more periods where state must become "pushed"
 import Crossfire
 import string
+from CFTimeOfDay import TimeOfDay
+import cjson
 event = Crossfire.WhatIsEvent()
+parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
-
-parameters = string.split(Crossfire.ScriptParameters(),",")
-connected = int(parameters.pop(0))
-now = Crossfire.GetTime()
-current = [Crossfire.GetMonthName(now[1]),Crossfire.GetWeekdayName(now[5]),Crossfire.GetSeasonName(now[7]),Crossfire.GetPeriodofdayName(now[8])]
-if (set(parameters) - set(current)):
-    match = False
-else:
-    match=True
+connected = int(parameters["connected"]))
+match = TimeOfDay().matchAll(parameters["when"])
 #pushdown if needed
 if (match & (not alreadymatched)):
     op = event
@@ -73,7 +74,3 @@ if ( (not match) & alreadymatched):
     map.TriggerConnected(connected,0,Crossfire.WhoAmI())
     event.Value=0
 
-#Crossfire.Log(Crossfire.LogDebug , "Seasons to check for are %s" %parameters)
-#Crossfire.Log(Crossfire.LogDebug , "Current seasons are %s" %current)
-#Crossfire.Log(Crossfire.LogDebug , "Current match status is %d but will be %d" %(alreadymatched,match))
-#Crossfire.Log(Crossfire.LogDebug , "Connecte to trigger is %i" %connected)

@@ -18,6 +18,7 @@
 #
 #
 #
+# Uses JSON notation for parameters
 # This script make the event it is attached to (not global!)
 # works only in specific moment of year/day
 # exemple, to make an "apply" work only on 
@@ -26,21 +27,18 @@
 # arch event_apply
 # title Python
 # slaying /python/tod/filter_all_periods.py
-# name the Day of the Moon,The Season of the Blizzard,Morning
+# msg
+# {
+# "when":["Moon","The Season of the Blizzard","Morning"]
+# }
+# endmsg
 # end
 import Crossfire
 import string
-
-now = Crossfire.GetTime()
-parameters = string.split(Crossfire.ScriptParameters(),",")
-current = [Crossfire.GetMonthName(now[1]),Crossfire.GetWeekdayName(now[5]),Crossfire.GetSeasonName(now[7]),Crossfire.GetPeriodofdayName(now[8])]
-#Crossfire.Log(Crossfire.LogDebug , "Seasons to check for are %s" %parameters)
-#Crossfire.Log(Crossfire.LogDebug , "now is %s" %current)
-
+from CFTimeOfDay import TimeOfDay
+import cjson
+parameters = cjson.decode(Crossfire.WhatIsEvent().Message)
 #default: allow operation (0)
-Crossfire.SetReturnValue()
-if (set(parameters) - set(current)):
-#some parameters had no match on 'now' -> refuse operation
+Crossfire.SetReturnValue(0)
+if TimeOfDay().matchAny(parameters["when"]):
 	Crossfire.SetReturnValue(1)
-
-

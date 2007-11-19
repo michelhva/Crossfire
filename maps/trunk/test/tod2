@@ -1,0 +1,1768 @@
+arch map
+name tod2
+width 20
+height 20
+msg
+Created:  2007-11-18 tchize
+Modified: 2007-11-19 tchize
+endmsg
+end
+arch flagstone
+end
+arch flagstone
+y 1
+end
+arch flagstone
+y 2
+end
+arch flagstone
+y 3
+end
+arch flagstone
+y 4
+end
+arch flagstone
+y 5
+end
+arch flagstone
+y 6
+end
+arch flagstone
+y 7
+end
+arch flagstone
+y 8
+end
+arch flagstone
+y 9
+end
+arch flagstone
+y 10
+end
+arch flagstone
+y 11
+end
+arch flagstone
+y 12
+end
+arch flagstone
+y 13
+end
+arch flagstone
+y 14
+end
+arch flagstone
+y 15
+end
+arch flagstone
+y 16
+end
+arch flagstone
+y 17
+end
+arch flagstone
+y 18
+end
+arch flagstone
+y 19
+end
+arch flagstone
+x 1
+end
+arch flagstone
+x 1
+y 1
+end
+arch flagstone
+x 1
+y 2
+end
+arch flagstone
+x 1
+y 3
+end
+arch flagstone
+x 1
+y 4
+end
+arch flagstone
+x 1
+y 5
+end
+arch flagstone
+x 1
+y 6
+end
+arch flagstone
+x 1
+y 7
+end
+arch flagstone
+x 1
+y 8
+end
+arch flagstone
+x 1
+y 9
+end
+arch flagstone
+x 1
+y 10
+end
+arch flagstone
+x 1
+y 11
+end
+arch flagstone
+x 1
+y 12
+end
+arch flagstone
+x 1
+y 13
+end
+arch flagstone
+x 1
+y 14
+end
+arch flagstone
+x 1
+y 15
+end
+arch flagstone
+x 1
+y 16
+end
+arch flagstone
+x 1
+y 17
+end
+arch flagstone
+x 1
+y 18
+end
+arch flagstone
+x 1
+y 19
+end
+arch flagstone
+x 2
+end
+arch flagstone
+x 2
+y 1
+end
+arch flagstone
+x 2
+y 2
+end
+arch flagstone
+x 2
+y 3
+end
+arch flagstone
+x 2
+y 4
+end
+arch flagstone
+x 2
+y 5
+end
+arch flagstone
+x 2
+y 6
+end
+arch flagstone
+x 2
+y 7
+end
+arch flagstone
+x 2
+y 8
+end
+arch flagstone
+x 2
+y 9
+end
+arch flagstone
+x 2
+y 10
+end
+arch flagstone
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch flagstone
+x 2
+y 13
+end
+arch flagstone
+x 2
+y 14
+end
+arch flagstone
+x 2
+y 15
+end
+arch flagstone
+x 2
+y 16
+end
+arch flagstone
+x 2
+y 17
+end
+arch flagstone
+x 2
+y 18
+end
+arch flagstone
+x 2
+y 19
+end
+arch flagstone
+x 3
+end
+arch flagstone
+x 3
+y 1
+end
+arch flagstone
+x 3
+y 2
+end
+arch generate_skeleton
+x 3
+y 2
+end
+arch flagstone
+x 3
+y 3
+end
+arch flagstone
+x 3
+y 4
+end
+arch flagstone
+x 3
+y 5
+end
+arch flagstone
+x 3
+y 6
+end
+arch generate_skeleton
+x 3
+y 6
+end
+arch flagstone
+x 3
+y 7
+end
+arch flagstone
+x 3
+y 8
+end
+arch flagstone
+x 3
+y 9
+end
+arch flagstone
+x 3
+y 10
+end
+arch generate_skeleton
+x 3
+y 10
+end
+arch flagstone
+x 3
+y 11
+end
+arch flagstone
+x 3
+y 12
+end
+arch flagstone
+x 3
+y 13
+end
+arch flagstone
+x 3
+y 14
+end
+arch flagstone
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch flagstone
+x 3
+y 17
+end
+arch flagstone
+x 3
+y 18
+end
+arch flagstone
+x 3
+y 19
+end
+arch flagstone
+x 4
+end
+arch flagstone
+x 4
+y 1
+end
+arch flagstone
+x 4
+y 2
+end
+arch flagstone
+x 4
+y 3
+end
+arch flagstone
+x 4
+y 4
+end
+arch flagstone
+x 4
+y 5
+end
+arch flagstone
+x 4
+y 6
+end
+arch flagstone
+x 4
+y 7
+end
+arch flagstone
+x 4
+y 8
+end
+arch flagstone
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch flagstone
+x 4
+y 13
+end
+arch flagstone
+x 4
+y 14
+end
+arch flagstone
+x 4
+y 15
+end
+arch flagstone
+x 4
+y 16
+end
+arch flagstone
+x 4
+y 17
+end
+arch flagstone
+x 4
+y 18
+end
+arch flagstone
+x 4
+y 19
+end
+arch flagstone
+x 5
+end
+arch flagstone
+x 5
+y 1
+end
+arch flagstone
+x 5
+y 2
+end
+arch flagstone
+x 5
+y 3
+end
+arch flagstone
+x 5
+y 4
+end
+arch generate_skeleton
+x 5
+y 4
+end
+arch flagstone
+x 5
+y 5
+end
+arch flagstone
+x 5
+y 6
+end
+arch flagstone
+x 5
+y 7
+end
+arch flagstone
+x 5
+y 8
+end
+arch generate_skeleton
+x 5
+y 8
+end
+arch flagstone
+x 5
+y 9
+end
+arch flagstone
+x 5
+y 10
+end
+arch flagstone
+x 5
+y 11
+end
+arch flagstone
+x 5
+y 12
+end
+arch generate_skeleton
+x 5
+y 12
+end
+arch flagstone
+x 5
+y 13
+end
+arch flagstone
+x 5
+y 14
+end
+arch flagstone
+x 5
+y 15
+end
+arch flagstone
+x 5
+y 16
+end
+arch flagstone
+x 5
+y 17
+end
+arch flagstone
+x 5
+y 18
+end
+arch flagstone
+x 5
+y 19
+end
+arch flagstone
+x 6
+end
+arch flagstone
+x 6
+y 1
+end
+arch flagstone
+x 6
+y 2
+end
+arch flagstone
+x 6
+y 3
+end
+arch flagstone
+x 6
+y 4
+end
+arch flagstone
+x 6
+y 5
+end
+arch flagstone
+x 6
+y 6
+end
+arch flagstone
+x 6
+y 7
+end
+arch flagstone
+x 6
+y 8
+end
+arch flagstone
+x 6
+y 9
+end
+arch flagstone
+x 6
+y 10
+end
+arch flagstone
+x 6
+y 11
+end
+arch flagstone
+x 6
+y 12
+end
+arch flagstone
+x 6
+y 13
+end
+arch flagstone
+x 6
+y 14
+end
+arch flagstone
+x 6
+y 15
+end
+arch flagstone
+x 6
+y 16
+end
+arch flagstone
+x 6
+y 17
+end
+arch flagstone
+x 6
+y 18
+end
+arch flagstone
+x 6
+y 19
+end
+arch flagstone
+x 7
+end
+arch flagstone
+x 7
+y 1
+end
+arch flagstone
+x 7
+y 2
+end
+arch flagstone
+x 7
+y 3
+end
+arch flagstone
+x 7
+y 4
+end
+arch flagstone
+x 7
+y 5
+end
+arch flagstone
+x 7
+y 6
+end
+arch flagstone
+x 7
+y 7
+end
+arch flagstone
+x 7
+y 8
+end
+arch flagstone
+x 7
+y 9
+end
+arch flagstone
+x 7
+y 10
+end
+arch flagstone
+x 7
+y 11
+end
+arch flagstone
+x 7
+y 12
+end
+arch flagstone
+x 7
+y 13
+end
+arch flagstone
+x 7
+y 14
+end
+arch flagstone
+x 7
+y 15
+end
+arch flagstone
+x 7
+y 16
+end
+arch flagstone
+x 7
+y 17
+end
+arch flagstone
+x 7
+y 18
+end
+arch flagstone
+x 7
+y 19
+end
+arch flagstone
+x 8
+end
+arch flagstone
+x 8
+y 1
+end
+arch flagstone
+x 8
+y 2
+end
+arch flagstone
+x 8
+y 3
+end
+arch flagstone
+x 8
+y 4
+end
+arch flagstone
+x 8
+y 5
+end
+arch flagstone
+x 8
+y 6
+end
+arch flagstone
+x 8
+y 7
+end
+arch flagstone
+x 8
+y 8
+end
+arch flagstone
+x 8
+y 9
+end
+arch skeleton
+x 8
+y 9
+end
+arch flagstone
+x 8
+y 10
+end
+arch flagstone
+x 8
+y 11
+end
+arch flagstone
+x 8
+y 12
+end
+arch flagstone
+x 8
+y 13
+end
+arch flagstone
+x 8
+y 14
+end
+arch flagstone
+x 8
+y 15
+end
+arch flagstone
+x 8
+y 16
+end
+arch flagstone
+x 8
+y 17
+end
+arch flagstone
+x 8
+y 18
+end
+arch flagstone
+x 8
+y 19
+end
+arch flagstone
+x 9
+end
+arch flagstone
+x 9
+y 1
+end
+arch flagstone
+x 9
+y 2
+end
+arch flagstone
+x 9
+y 3
+end
+arch flagstone
+x 9
+y 4
+end
+arch flagstone
+x 9
+y 5
+end
+arch flagstone
+x 9
+y 6
+end
+arch flagstone
+x 9
+y 7
+end
+arch flagstone
+x 9
+y 8
+end
+arch flagstone
+x 9
+y 9
+end
+arch flagstone
+x 9
+y 10
+end
+arch flagstone
+x 9
+y 11
+end
+arch flagstone
+x 9
+y 12
+end
+arch flagstone
+x 9
+y 13
+end
+arch flagstone
+x 9
+y 14
+end
+arch flagstone
+x 9
+y 15
+end
+arch flagstone
+x 9
+y 16
+end
+arch flagstone
+x 9
+y 17
+end
+arch flagstone
+x 9
+y 18
+end
+arch flagstone
+x 9
+y 19
+end
+arch flagstone
+x 10
+end
+arch flagstone
+x 10
+y 1
+end
+arch flagstone
+x 10
+y 2
+end
+arch flagstone
+x 10
+y 3
+end
+arch flagstone
+x 10
+y 4
+end
+arch flagstone
+x 10
+y 5
+end
+arch flagstone
+x 10
+y 6
+end
+arch flagstone
+x 10
+y 7
+end
+arch flagstone
+x 10
+y 8
+end
+arch flagstone
+x 10
+y 9
+end
+arch flagstone
+x 10
+y 10
+end
+arch flagstone
+x 10
+y 11
+end
+arch flagstone
+x 10
+y 12
+end
+arch flagstone
+x 10
+y 13
+end
+arch flagstone
+x 10
+y 14
+end
+arch flagstone
+x 10
+y 15
+end
+arch flagstone
+x 10
+y 16
+end
+arch flagstone
+x 10
+y 17
+end
+arch flagstone
+x 10
+y 18
+end
+arch flagstone
+x 10
+y 19
+end
+arch flagstone
+x 11
+end
+arch flagstone
+x 11
+y 1
+end
+arch flagstone
+x 11
+y 2
+end
+arch flagstone
+x 11
+y 3
+end
+arch flagstone
+x 11
+y 4
+end
+arch skeleton
+x 11
+y 4
+end
+arch flagstone
+x 11
+y 5
+end
+arch flagstone
+x 11
+y 6
+end
+arch flagstone
+x 11
+y 7
+end
+arch flagstone
+x 11
+y 8
+end
+arch flagstone
+x 11
+y 9
+end
+arch flagstone
+x 11
+y 10
+end
+arch flagstone
+x 11
+y 11
+end
+arch flagstone
+x 11
+y 12
+end
+arch flagstone
+x 11
+y 13
+end
+arch flagstone
+x 11
+y 14
+end
+arch flagstone
+x 11
+y 15
+end
+arch flagstone
+x 11
+y 16
+end
+arch flagstone
+x 11
+y 17
+end
+arch flagstone
+x 11
+y 18
+end
+arch flagstone
+x 11
+y 19
+end
+arch flagstone
+x 12
+end
+arch flagstone
+x 12
+y 1
+end
+arch flagstone
+x 12
+y 2
+end
+arch flagstone
+x 12
+y 3
+end
+arch flagstone
+x 12
+y 4
+end
+arch flagstone
+x 12
+y 5
+end
+arch flagstone
+x 12
+y 6
+end
+arch flagstone
+x 12
+y 7
+end
+arch skeleton
+x 12
+y 7
+end
+arch flagstone
+x 12
+y 8
+end
+arch flagstone
+x 12
+y 9
+end
+arch flagstone
+x 12
+y 10
+end
+arch flagstone
+x 12
+y 11
+end
+arch flagstone
+x 12
+y 12
+end
+arch flagstone
+x 12
+y 13
+end
+arch flagstone
+x 12
+y 14
+end
+arch flagstone
+x 12
+y 15
+end
+arch flagstone
+x 12
+y 16
+end
+arch flagstone
+x 12
+y 17
+end
+arch flagstone
+x 12
+y 18
+end
+arch flagstone
+x 12
+y 19
+end
+arch flagstone
+x 13
+end
+arch flagstone
+x 13
+y 1
+end
+arch flagstone
+x 13
+y 2
+end
+arch flagstone
+x 13
+y 3
+end
+arch flagstone
+x 13
+y 4
+end
+arch skeleton
+x 13
+y 4
+end
+arch flagstone
+x 13
+y 5
+end
+arch flagstone
+x 13
+y 6
+end
+arch flagstone
+x 13
+y 7
+end
+arch skeleton
+x 13
+y 7
+end
+arch flagstone
+x 13
+y 8
+end
+arch flagstone
+x 13
+y 9
+end
+arch flagstone
+x 13
+y 10
+end
+arch flagstone
+x 13
+y 11
+end
+arch skeleton
+x 13
+y 11
+end
+arch flagstone
+x 13
+y 12
+end
+arch flagstone
+x 13
+y 13
+end
+arch flagstone
+x 13
+y 14
+end
+arch flagstone
+x 13
+y 15
+end
+arch flagstone
+x 13
+y 16
+end
+arch flagstone
+x 13
+y 17
+end
+arch flagstone
+x 13
+y 18
+end
+arch flagstone
+x 13
+y 19
+end
+arch flagstone
+x 14
+end
+arch flagstone
+x 14
+y 1
+end
+arch flagstone
+x 14
+y 2
+end
+arch flagstone
+x 14
+y 3
+end
+arch flagstone
+x 14
+y 4
+end
+arch flagstone
+x 14
+y 5
+end
+arch flagstone
+x 14
+y 6
+end
+arch flagstone
+x 14
+y 7
+end
+arch flagstone
+x 14
+y 8
+end
+arch flagstone
+x 14
+y 9
+end
+arch flagstone
+x 14
+y 10
+end
+arch flagstone
+x 14
+y 11
+end
+arch flagstone
+x 14
+y 12
+end
+arch flagstone
+x 14
+y 13
+end
+arch flagstone
+x 14
+y 14
+end
+arch flagstone
+x 14
+y 15
+end
+arch flagstone
+x 14
+y 16
+end
+arch flagstone
+x 14
+y 17
+end
+arch flagstone
+x 14
+y 18
+end
+arch flagstone
+x 14
+y 19
+end
+arch flagstone
+x 15
+end
+arch flagstone
+x 15
+y 1
+end
+arch flagstone
+x 15
+y 2
+end
+arch flagstone
+x 15
+y 3
+end
+arch skeleton
+x 15
+y 3
+end
+arch flagstone
+x 15
+y 4
+end
+arch flagstone
+x 15
+y 5
+end
+arch pedestal
+x 15
+y 5
+connected 1
+end
+arch flagstone
+x 15
+y 6
+end
+arch pedestal
+x 15
+y 6
+connected 1
+end
+arch flagstone
+x 15
+y 7
+end
+arch pedestal
+x 15
+y 7
+connected 1
+end
+arch flagstone
+x 15
+y 8
+end
+arch pedestal
+x 15
+y 8
+connected 1
+end
+arch flagstone
+x 15
+y 9
+end
+arch pedestal
+x 15
+y 9
+connected 1
+end
+arch flagstone
+x 15
+y 10
+end
+arch skeleton
+x 15
+y 10
+end
+arch flagstone
+x 15
+y 11
+end
+arch flagstone
+x 15
+y 12
+end
+arch flagstone
+x 15
+y 13
+end
+arch flagstone
+x 15
+y 14
+end
+arch flagstone
+x 15
+y 15
+end
+arch flagstone
+x 15
+y 16
+end
+arch flagstone
+x 15
+y 17
+end
+arch flagstone
+x 15
+y 18
+end
+arch flagstone
+x 15
+y 19
+end
+arch flagstone
+x 16
+end
+arch awall_1_1
+x 16
+end
+arch flagstone
+x 16
+y 1
+end
+arch awall_2_1_1
+x 16
+y 1
+end
+arch flagstone
+x 16
+y 2
+end
+arch awall_2_1_1
+x 16
+y 2
+end
+arch flagstone
+x 16
+y 3
+end
+arch awall_2_1_1
+x 16
+y 3
+end
+arch flagstone
+x 16
+y 4
+end
+arch awall_2_1_1
+x 16
+y 4
+end
+arch flagstone
+x 16
+y 5
+end
+arch awall_2_2_1
+x 16
+y 5
+end
+arch flagstone
+x 16
+y 6
+end
+arch grate_closed_2
+x 16
+y 6
+connected 1
+end
+arch flagstone
+x 16
+y 7
+end
+arch grate_closed_2
+x 16
+y 7
+connected 1
+end
+arch flagstone
+x 16
+y 8
+end
+arch grate_closed_2
+x 16
+y 8
+connected 1
+end
+arch flagstone
+x 16
+y 9
+end
+arch awall_1_4
+x 16
+y 9
+end
+arch flagstone
+x 16
+y 10
+end
+arch flagstone
+x 16
+y 11
+end
+arch flagstone
+x 16
+y 12
+end
+arch flagstone
+x 16
+y 13
+end
+arch flagstone
+x 16
+y 14
+end
+arch flagstone
+x 16
+y 15
+end
+arch flagstone
+x 16
+y 16
+end
+arch flagstone
+x 16
+y 17
+end
+arch flagstone
+x 16
+y 18
+end
+arch flagstone
+x 16
+y 19
+end
+arch flagstone
+x 17
+end
+arch flagstone
+x 17
+y 1
+end
+arch flagstone
+x 17
+y 2
+end
+arch sage
+x 17
+y 2
+arch event_time
+title Python
+slaying /python/tod/replace_in_map_one_period.py
+msg
+{
+    "key" : "skeleton kills"
+    "when" : ["Dawn","Morning","Noon","Evening","Dusk"]
+    "from" : ["skeleton","generator"],
+    "to" : ["bones1","bones2","bones3"]
+}
+endmsg
+end
+end
+arch flagstone
+x 17
+y 3
+end
+arch flagstone
+x 17
+y 4
+end
+arch flagstone
+x 17
+y 5
+end
+arch awall_2_1_2
+x 17
+y 5
+end
+arch flagstone
+x 17
+y 6
+end
+arch pedestal
+x 17
+y 6
+connected 1
+end
+arch flagstone
+x 17
+y 7
+end
+arch pedestal
+x 17
+y 7
+connected 1
+end
+arch flagstone
+x 17
+y 8
+end
+arch pedestal
+x 17
+y 8
+connected 1
+end
+arch flagstone
+x 17
+y 9
+end
+arch awall_2_1_2
+x 17
+y 9
+end
+arch flagstone
+x 17
+y 10
+end
+arch flagstone
+x 17
+y 11
+end
+arch flagstone
+x 17
+y 12
+end
+arch flagstone
+x 17
+y 13
+end
+arch flagstone
+x 17
+y 14
+end
+arch flagstone
+x 17
+y 15
+end
+arch flagstone
+x 17
+y 16
+end
+arch flagstone
+x 17
+y 17
+end
+arch flagstone
+x 17
+y 18
+end
+arch flagstone
+x 17
+y 19
+end
+arch flagstone
+x 18
+end
+arch flagstone
+x 18
+y 1
+end
+arch flagstone
+x 18
+y 2
+end
+arch flagstone
+x 18
+y 3
+end
+arch flagstone
+x 18
+y 4
+end
+arch flagstone
+x 18
+y 5
+end
+arch awall_2_1_2
+x 18
+y 5
+end
+arch flagstone
+x 18
+y 6
+end
+arch sign
+msg
+This map is full of skeletons, generated by
+skeletons generators. When Dawn comes,
+all skeletons are converted to dead skeletons.
+When night falls, deads come back to live.
+
+This demo is not the same as beholder one
+above. This is because here, all map is affected
+while in beholder case, it's was individual behaviour
+endmsg
+x 18
+y 6
+end
+arch flagstone
+x 18
+y 7
+end
+arch flagstone
+x 18
+y 8
+end
+arch flagstone
+x 18
+y 9
+end
+arch awall_2_1_2
+x 18
+y 9
+end
+arch flagstone
+x 18
+y 10
+end
+arch flagstone
+x 18
+y 11
+end
+arch flagstone
+x 18
+y 12
+end
+arch flagstone
+x 18
+y 13
+end
+arch flagstone
+x 18
+y 14
+end
+arch flagstone
+x 18
+y 15
+end
+arch flagstone
+x 18
+y 16
+end
+arch flagstone
+x 18
+y 17
+end
+arch flagstone
+x 18
+y 18
+end
+arch flagstone
+x 18
+y 19
+end
+arch flagstone
+x 19
+end
+arch flagstone
+x 19
+y 1
+end
+arch flagstone
+x 19
+y 2
+end
+arch flagstone
+x 19
+y 3
+end
+arch flagstone
+x 19
+y 4
+end
+arch flagstone
+x 19
+y 5
+end
+arch awall_1_3
+x 19
+y 5
+end
+arch flagstone
+x 19
+y 6
+end
+arch flagstone
+x 19
+y 7
+end
+arch ladder_up
+slaying tod
+hp 19
+sp 7
+x 19
+y 7
+end
+arch flagstone
+x 19
+y 8
+end
+arch flagstone
+x 19
+y 9
+end
+arch awall_1_3
+x 19
+y 9
+end
+arch flagstone
+x 19
+y 10
+end
+arch flagstone
+x 19
+y 11
+end
+arch flagstone
+x 19
+y 12
+end
+arch flagstone
+x 19
+y 13
+end
+arch flagstone
+x 19
+y 14
+end
+arch flagstone
+x 19
+y 15
+end
+arch flagstone
+x 19
+y 16
+end
+arch flagstone
+x 19
+y 17
+end
+arch flagstone
+x 19
+y 18
+end
+arch flagstone
+x 19
+y 19
+end
