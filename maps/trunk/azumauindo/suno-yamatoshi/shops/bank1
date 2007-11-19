@@ -2448,6 +2448,11 @@ x 12
 y 10
 end
 arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
 x 12
 y 10
 end

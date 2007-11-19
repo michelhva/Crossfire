@@ -260,6 +260,15 @@ arch afloor_right
 x 1
 y 14
 end
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
+x 1
+y 14
+end
 arch afloor_right
 x 1
 y 15
