@@ -1469,13 +1469,14 @@ x 17
 y 2
 arch event_time
 title Python
-slaying /python/tod/replace_in_map_one_period.py
+slaying /python/tod/replace_in_map.py
 msg
 {
     "key" : "skeleton kills"
     "when" : ["Dawn","Morning","Noon","Evening","Dusk"]
     "from" : ["skeleton","generator"],
-    "to" : ["bones1","bones2","bones3"]
+    "to" : ["bones1","bones2","bones3"],
+    "match" : "one"
 }
 endmsg
 end
