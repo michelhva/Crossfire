@@ -1,4 +1,4 @@
-# filter_all_periods.py
+# filter.py
 #
 # Copyright 2007 by David Delbecq
 #
@@ -17,19 +17,20 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #
-#
 # Uses JSON notation for parameters
 # This script make the event it is attached to (not global!)
-# works only in specific moment of year/day
-# exemple, to make an "apply" work only on 
-# Morning of each Day of the moon occuring during The Season of the Blizzard:
+# works only in specific moment of year/day. Periods are separated
+# by comas. See wiki doc list of possible values
+# exemple, to make an "apply" work only during Blizzard, new year and every morning:
 # 
 # arch event_apply
 # title Python
-# slaying /python/tod/filter_all_periods.py
+# slaying /python/tod/filter.py
 # msg
 # {
-# "when":["Moon","The Season of the Blizzard","Morning"]
+# "when":["The Season of New Year","The Season of the Blizzard","Morning"],
+# "match" : "one",
+# "inverse": true
 # }
 # endmsg
 # end
@@ -38,7 +39,16 @@ import string
 from CFTimeOfDay import TimeOfDay
 import cjson
 parameters = cjson.decode(Crossfire.WhatIsEvent().Message)
-#default: allow operation (0)
-Crossfire.SetReturnValue(0)
-if TimeOfDay().matchAny(parameters["when"]):
-	Crossfire.SetReturnValue(1)
+inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+Crossfire.SetReturnValue(not inverse)
+if not parameters.has_key("match"):
+    Crossfire.Log(Crossfire.LogError,"Script filter.py didn't get a 'match' parameter. Only got %s" %parameters)
+elif string.lower(parameters["match"]) == "one":
+    if TimeOfDay().matchAny(parameters["when"]):
+        Crossfire.SetReturnValue(inverse)
+elif string.lower(parameters["match"]) == "all":
+    if TimeOfDay().matchAll(parameters["when"]):
+        Crossfire.SetReturnValue(inverse)
+else:
+    Crossfire.Log(Crossfire.LogError,"Script filter.py didn't get a 'match' parameter. Only got %s" %parameters)
+

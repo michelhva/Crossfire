@@ -1,4 +1,4 @@
-# push_one_period.py
+# push.py
 #
 # Copyright 2007 by David Delbecq
 #
@@ -37,11 +37,12 @@
 # 
 # arch event_time
 # title Python
-# slaying /python/tod/push_one_period.py
+# slaying /python/tod/push.py
 # msg
 # {
-# "connected":69
-# "when":["Morning","Noon"]
+# "connected":"69",
+# "when":["Morning","Noon"],
+# "match":"one"
 # }
 # endmsg
 # end
@@ -56,7 +57,17 @@ event = Crossfire.WhatIsEvent()
 parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
 connected = int(parameters["connected"])
-match = TimeOfDay().matchAny(parameters["when"])
+inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+match = False
+if not parameters.has_key("match"):
+    Crossfire.Log(Crossfire.LogError,"Script push_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+elif string.lower(parameters["match"]) == "one":
+    match=TimeOfDay().matchAny(parameters["when"]) != inverse
+elif string.lower(parameters["match"]) == "all":
+    match=TimeOfDay().matchAll(parameters["when"]) != inverse
+else:
+    Crossfire.Log(Crossfire.LogError,"Script push_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+
 #pushdown if need
 if (match & (not alreadymatched)):
     op = event

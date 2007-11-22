@@ -1,4 +1,4 @@
-# push_one_period.py
+# replace.py
 #
 # Copyright 2007 by David Delbecq
 #
@@ -28,17 +28,17 @@
 # 
 # arch event_time
 # title Python
-# slaying /python/tod/replace_one_period.py
+# slaying /python/tod/replace_all_periods.py
 # msg
 # {
-# "when":["Noon","Morning"]
+#     "when":["Morning","The Season of the Blizzard"]
+#     "match":"all"
 # }
 # endmsg
 # arch beholder
 # end
 # end
 #
-
 
 import Crossfire
 import string
@@ -47,9 +47,19 @@ import cjson
 event = Crossfire.WhatIsEvent()
 parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
-match = TimeOfDay().matchAny(parameters["when"])
+inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+match = False
+if not parameters.has_key("match"):
+    Crossfire.Log(Crossfire.LogError,"Script replace_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+elif string.lower(parameters["match"]) == "one":
+    match=TimeOfDay().matchAny(parameters["when"]) != inverse
+elif string.lower(parameters["match"]) == "all":
+    match=TimeOfDay().matchAll(parameters["when"]) != inverse
+else:
+    Crossfire.Log(Crossfire.LogError,"Script replace_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+
 if ( match != alreadymatched ):
-    Crossfire.Log(Crossfire.LogDebug, "replace_one_period")
+    #Crossfire.Log(Crossfire.LogDebug, "replace_all_periods")
     event = Crossfire.WhatIsEvent()
     current = Crossfire.WhoAmI()
     future = event.Inventory

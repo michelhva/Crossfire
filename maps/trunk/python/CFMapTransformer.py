@@ -88,6 +88,7 @@ class CFMapTransformer:
                         force = MakeIdentifier(self.key)
                         force.InsertInto(ob)
                         top.InsertInto(ob)
+                        ob.Pickable=False
                         self.cfmap.Insert(ob,x,y)
                         #handle living stuff by freezing them
                         force.WriteKey("inside_speed","%f" %top.Speed,1)

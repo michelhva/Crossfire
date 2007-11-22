@@ -198,11 +198,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"The Season of New Year"
+  "when":"The Season of New Year",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -219,11 +220,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"The Season of Growth"
+  "when":"The Season of Growth",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -240,11 +242,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"The Season of Harvest"
+  "when":"The Season of Harvest",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -261,11 +264,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"The Season of Decay"
+  "when":"The Season of Decay",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -282,11 +286,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"The Season of the Blizzard"
+  "when":"The Season of the Blizzard",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch marble
@@ -464,11 +469,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Winter"
+  "when":"Month of Winter",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -485,11 +491,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Ice Dragon"
+  "when":"Month of the Ice Dragon",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -506,11 +513,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Frost Giant"
+  "when":"Month of the Frost Giant",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -527,11 +535,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Valriel"
+  "when":"Month of Valriel",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -548,11 +557,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Lythander"
+  "when":"Month of Lythander",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -569,11 +579,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Harvest"
+  "when":"Month of the Harvest",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -590,11 +601,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Gaea"
+  "when":"Month of Gaea",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -611,11 +623,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Futility"
+  "when":"Month of Futility",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -632,11 +645,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Dragon"
+  "when":"Month of the Dragon",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -653,11 +667,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Sun"
+  "when":"Month of the Sun",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -674,11 +689,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Great Infernus"
+  "when":"Month of the Great Infernus",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -695,11 +711,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Ruggilli"
+  "when":"Month of Ruggilli",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -716,11 +733,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Dark Shades"
+  "when":"Month of the Dark Shades",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -737,11 +755,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Devourers"
+  "when":"Month of the Devourers",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -758,11 +777,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Sorig"
+  "when":"Month of Sorig",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -779,11 +799,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of the Ancient Darkness"
+  "when":"Month of the Ancient Darkness",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -800,11 +821,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Month of Gorokh"
+  "when":"Month of Gorokh",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -934,11 +956,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of the Moon"
+  "when":"the Day of the Moon",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -955,11 +978,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of the Bull"
+  "when":"the Day of the Bull",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -976,11 +1000,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of the Deception"
+  "when":"the Day of the Deception",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -997,11 +1022,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of Thunder"
+  "when":"the Day of Thunder",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1018,11 +1044,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of Freedom"
+  "when":"the Day of Freedom",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1039,11 +1066,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of the Great Gods"
+  "when":"the Day of the Great Gods",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1060,11 +1088,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"the Day of the Sun"
+  "when":"the Day of the Sun",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch marble
@@ -1228,11 +1257,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Night"
+  "when":"Night",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1249,11 +1279,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Dawn"
+  "when":"Dawn",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1270,11 +1301,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Morning"
+  "when":"Morning",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1291,11 +1323,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Noon"
+  "when":"Noon",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1312,11 +1345,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Evening"
+  "when":"Evening",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -1333,11 +1367,12 @@ move_on walk fly_low fly_high
 arch event_trigger
 msg
 {
-  "when":"Dusk"
+  "when":"Dusk",
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch marble
@@ -1983,7 +2018,7 @@ end
 arch sage
 msg
 @match *
-I am responsible for opening those gates on the Mrning and close them at Dusk
+I am responsible for opening those gates on the Morning and close them at Dusk
 endmsg
 x 15
 y 15
@@ -1991,11 +2026,12 @@ stand_still 1
 no_damage 1
 arch event_time
 title Python
-slaying /python/tod/push_one_period.py
+slaying /python/tod/push.py
 msg
 {
   "connected":79,
-  "when":["Morning","Noon","Evening"]
+  "when":["Morning","Noon","Evening"],
+  "match":"one"
 }
 endmsg
 end
@@ -2097,10 +2133,11 @@ x 16
 y 11
 arch event_trigger
 title Python
-slaying /python/tod/replace_one_period.py
+slaying /python/tod/replace.py
 msg
 {
-  "when" : ["Dusk","Night"]
+  "when" : ["Dusk","Night"],
+  "match" : "one"
 }
 endmsg
 subtype 8
@@ -2223,10 +2260,11 @@ x 17
 y 11
 arch event_trigger
 title Python
-slaying /python/tod/replace_one_period.py
+slaying /python/tod/replace.py
 msg
 {
-  "when" : ["Dawn","Morning"]
+  "when" : ["Dawn","Morning"],
+  "match" : "one"
 }
 endmsg
 subtype 8
@@ -2349,10 +2387,11 @@ x 18
 y 11
 arch event_trigger
 title Python
-slaying /python/tod/replace_one_period.py
+slaying /python/tod/replace.py
 msg
 {
-  "when" : ["Noon","Evening"]
+  "when" : ["Noon","Evening"],
+  "match" : "one"
 }
 endmsg
 subtype 8
@@ -2413,11 +2452,12 @@ x 19
 arch event_attack
 msg
 {
-  "when":["Morning","Noon","Evening"]
+  "when":["Morning","Noon","Evening"],
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -2444,11 +2484,12 @@ y 2
 arch event_attack
 msg
 {
-  "when":["Night","Dawn","Dusk"]
+  "when":["Night","Dawn","Dusk"],
+  "match":"one"
 }
 endmsg
 title Python
-slaying /python/tod/filter_one_period.py
+slaying /python/tod/filter.py
 end
 end
 arch brush
@@ -2510,10 +2551,11 @@ x 19
 y 11
 arch event_trigger
 title Python
-slaying /python/tod/replace_one_period.py
+slaying /python/tod/replace.py
 msg
 {
-  "when" : ["Dusk","Evening"]
+  "when" : ["Dusk","Evening"],
+  "match" : "one"
 }
 endmsg
 subtype 8

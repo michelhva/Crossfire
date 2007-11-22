@@ -3,6 +3,7 @@ import random
 from CFMapTransformer import CFMapTransformer
 from CFTimeOfDay import TimeOfDay
 import cjson
+import string
 
 
 event = Crossfire.WhatIsEvent()
@@ -10,7 +11,17 @@ alreadymatched = (event.Value!=0)
 parameters = cjson.decode(event.Message)
 current = TimeOfDay()
 #current.log()
-match = current.matchAny(parameters["when"])
+inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+match = False
+if not parameters.has_key("match"):
+    Crossfire.Log(Crossfire.LogError,"Script replace_in_map_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+elif string.lower(parameters["match"]) == "one":
+    match=TimeOfDay().matchAny(parameters["when"]) != inverse
+elif string.lower(parameters["match"]) == "all":
+    match=TimeOfDay().matchAll(parameters["when"]) != inverse
+else:
+    Crossfire.Log(Crossfire.LogError,"Script replace_in_map_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+
 #print "match is %s and alreadymatched is %s" %(match,alreadymatched)
 
 if (match != alreadymatched):
