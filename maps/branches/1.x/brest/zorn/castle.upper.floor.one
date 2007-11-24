@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
 Info: Zorn Castle, first upper floor
-Modified: 2007-11-14 Gene Alexander
+Modified: 2007-11-24 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -3110,6 +3110,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -4693,6 +4755,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -4965,6 +5089,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -5335,6 +5521,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -5585,6 +5833,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -5882,6 +6192,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -6392,6 +6764,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -6853,6 +7287,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -7307,6 +7800,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -7480,6 +8032,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -7674,6 +8288,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -7977,6 +8653,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -8167,6 +8905,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -8497,6 +9297,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -8991,6 +9853,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -9846,6 +10770,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -9943,6 +10929,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -10069,6 +11114,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -10278,6 +11382,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -10587,6 +11753,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -10934,6 +12162,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11030,6 +12320,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11158,6 +12510,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11298,6 +12712,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11394,6 +12870,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11629,6 +13167,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -11775,6 +13375,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -11908,6 +13570,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -12207,6 +13931,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -12419,6 +14205,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -12507,6 +14355,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -12701,6 +14611,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -13270,6 +15242,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13334,6 +15368,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13398,6 +15494,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13470,6 +15628,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13534,6 +15754,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13606,6 +15888,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13670,6 +16014,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13734,6 +16140,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13822,6 +16290,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13886,6 +16416,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -13950,6 +16542,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14022,6 +16676,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14086,6 +16802,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14158,6 +16936,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14222,6 +17062,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14286,6 +17188,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14898,6 +17862,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -14962,6 +17988,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15026,6 +18114,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15098,6 +18248,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15162,6 +18374,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15234,6 +18508,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15298,6 +18634,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15362,6 +18760,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15450,6 +18910,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15514,6 +19036,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15578,6 +19162,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15650,6 +19296,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15714,6 +19422,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15786,6 +19556,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15850,6 +19682,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -15914,6 +19808,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -16151,6 +20107,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -16703,6 +20721,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -16915,6 +20995,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -17003,6 +21145,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -17236,6 +21440,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -17382,6 +21648,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -17515,6 +21843,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch mournblade
 applied 1
@@ -17790,6 +22180,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -17886,6 +22338,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -18014,6 +22528,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -18154,6 +22730,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -18250,6 +22888,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -18566,6 +23266,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -19057,6 +23819,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -19154,6 +23978,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -19280,6 +24163,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -19489,6 +24431,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -20201,6 +25205,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -20642,6 +25708,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -21105,6 +26233,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -21285,6 +26475,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -21519,6 +26771,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -21692,6 +27003,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -21882,6 +27255,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -22111,6 +27546,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -22615,6 +28109,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -23319,6 +28875,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -23835,6 +29453,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -24047,6 +29727,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -24392,6 +30134,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -24614,6 +30418,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
@@ -25805,6 +31671,68 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+title immunity
+end
+arch creeping_frost_immunity
+title immunity
+startequip 1
+end
 end
 arch darkblade
 applied 1
