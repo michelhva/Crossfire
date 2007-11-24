@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2006-11-11 Gene Alexander
 Info: Zorn Castle, second upper floor
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-11-24 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -3102,7 +3102,7 @@ x 9
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3123,7 +3123,7 @@ x 9
 y 14
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3260,7 +3260,7 @@ x 9
 y 44
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3281,7 +3281,7 @@ x 9
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3492,6 +3492,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -3537,6 +3538,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -3755,6 +3815,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -3800,6 +3861,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -4366,7 +4486,7 @@ x 12
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4427,7 +4547,7 @@ x 12
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4524,7 +4644,7 @@ x 12
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4585,7 +4705,7 @@ x 12
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -4797,6 +4917,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -4842,6 +4963,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -5006,6 +5186,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -5051,6 +5232,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -5313,7 +5553,7 @@ x 14
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -5558,7 +5798,7 @@ x 14
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -6457,7 +6697,7 @@ x 17
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -6530,7 +6770,7 @@ x 17
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -6754,6 +6994,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -6799,6 +7040,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -7111,6 +7411,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -7156,6 +7457,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -7366,7 +7726,7 @@ x 19
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -7434,7 +7794,7 @@ x 19
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -7507,7 +7867,7 @@ x 19
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -7575,7 +7935,7 @@ x 19
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -8144,6 +8504,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -8189,6 +8550,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -8469,6 +8889,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -8514,6 +8935,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -8780,6 +9260,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -8913,7 +9452,7 @@ x 22
 y 17
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -8934,7 +9473,7 @@ x 22
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9053,7 +9592,7 @@ x 22
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9074,7 +9613,7 @@ x 22
 y 41
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9172,6 +9711,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -11357,7 +11955,7 @@ arch bench_1_1
 name railing
 x 27
 y 51
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11372,7 +11970,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 52
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11387,7 +11985,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 53
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11402,7 +12000,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 54
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 27
@@ -11420,7 +12018,7 @@ arch bench_1_2
 name railing
 x 27
 y 55
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -11865,7 +12463,7 @@ arch sea
 name moat
 x 28
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 28
@@ -12035,7 +12633,7 @@ endmsg
 face dwall_AA.111
 x 29
 y 14
-no_pass 0
+move_block 0
 end
 arch stonefloor2
 x 29
@@ -12398,7 +12996,7 @@ arch sea
 name moat
 x 29
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 29
@@ -12820,7 +13418,7 @@ arch sea
 name moat
 x 30
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 30
@@ -13250,7 +13848,7 @@ arch bench_1_1
 name railing
 x 31
 y 51
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -13265,7 +13863,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 52
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -13280,7 +13878,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 53
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -13295,7 +13893,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 54
-no_pass 1
+move_block 1
 end
 arch dungeon_magic
 x 31
@@ -13313,7 +13911,7 @@ arch bench_1_2
 name railing
 x 31
 y 55
-no_pass 1
+move_block 1
 end
 arch brush
 x 31
@@ -13708,7 +14306,7 @@ speed 0.0
 level 300
 invisible 1
 connected 12000
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_earth_to_dust
 end
@@ -15071,6 +15669,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -15204,7 +15861,7 @@ x 36
 y 17
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15225,7 +15882,7 @@ x 36
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15426,7 +16083,7 @@ x 36
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15447,7 +16104,7 @@ x 36
 y 41
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -15545,6 +16202,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -15787,6 +16503,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -15832,6 +16549,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -16112,6 +16888,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -16157,6 +16934,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -16699,7 +17535,7 @@ x 39
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16767,7 +17603,7 @@ x 39
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -16840,7 +17676,7 @@ x 39
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16908,7 +17744,7 @@ x 39
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -17067,6 +17903,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -17112,6 +17949,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -17424,6 +18320,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -17469,6 +18366,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -17748,7 +18704,7 @@ x 41
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -17821,7 +18777,7 @@ x 41
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -18716,7 +19672,7 @@ x 44
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -18961,7 +19917,7 @@ x 44
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -19172,6 +20128,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -19217,6 +20174,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -19381,6 +20397,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -19426,6 +20443,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -19689,7 +20765,7 @@ x 46
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19750,7 +20826,7 @@ x 46
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19847,7 +20923,7 @@ x 46
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19908,7 +20984,7 @@ x 46
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -20420,6 +21496,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -20465,6 +21542,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -20683,6 +21819,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -20728,6 +21865,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -20994,7 +22190,7 @@ x 49
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21015,7 +22211,7 @@ x 49
 y 14
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21152,7 +22348,7 @@ x 49
 y 44
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -21173,7 +22369,7 @@ x 49
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -23193,7 +24389,7 @@ name Security light
 x 55
 y 7
 glow_radius 5
-no_pass 1
+move_block 1
 end
 arch dungeon_magic
 x 55

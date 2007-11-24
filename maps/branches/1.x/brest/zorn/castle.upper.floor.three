@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2007-03-06 Gene Alexander
 Info: Zorn Castle, third upper floor
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-11-24 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -2736,7 +2736,7 @@ arch greenmarble
 x 8
 y 27
 end
-arch cwall_1_2
+arch cwall_2_2_1
 x 8
 y 27
 end
@@ -2788,7 +2788,7 @@ arch swall_1_2_half
 x 8
 y 31
 end
-arch cwall_1_1
+arch cwall_2_2_2
 x 8
 y 31
 end
@@ -3250,7 +3250,11 @@ arch brazier
 x 9
 y 26
 end
-arch lightgreenmarble
+arch greenmarble
+x 9
+y 27
+end
+arch cwall_2_1_2
 x 9
 y 27
 end
@@ -3267,6 +3271,10 @@ x 9
 y 30
 end
 arch greenmarble
+x 9
+y 31
+end
+arch cwall_2_1_2
 x 9
 y 31
 end
@@ -3658,7 +3666,18 @@ arch greenmarble
 x 10
 y 27
 end
+arch cwall_2_1_2
+x 10
+y 27
+end
 arch redslate
+x 10
+y 28
+end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 10
+sp 28
 x 10
 y 28
 end
@@ -3666,11 +3685,29 @@ arch redslate
 x 10
 y 29
 end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 10
+sp 29
+x 10
+y 29
+end
 arch redslate
 x 10
 y 30
 end
-arch lightgreenmarble
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 10
+sp 30
+x 10
+y 30
+end
+arch greenmarble
+x 10
+y 31
+end
+arch cwall_2_1_2
 x 10
 y 31
 end
@@ -3974,7 +4011,21 @@ arch greenmarble
 x 11
 y 26
 end
-arch lightgreenmarble
+arch magic_mouth
+name Yolanda
+msg
+The Yolanda's Crystal dissolves.
+endmsg
+x 11
+y 27
+connected 887
+activate_on_release 0
+end
+arch greenmarble
+x 11
+y 27
+end
+arch cwall_1_3
 x 11
 y 27
 end
@@ -3982,15 +4033,43 @@ arch redslate
 x 11
 y 28
 end
+arch gate_closed_2
+x 11
+y 28
+connected 887
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch redslate
 x 11
 y 29
+end
+arch gate_closed_2
+x 11
+y 29
+connected 887
+no_magic 1
+damned 1
+activate_on_release 0
 end
 arch redslate
 x 11
 y 30
 end
+arch gate_closed_2
+x 11
+y 30
+connected 887
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch greenmarble
+x 11
+y 31
+end
+arch cwall_1_3
 x 11
 y 31
 end
@@ -4294,7 +4373,39 @@ arch lightgreenmarble
 x 12
 y 26
 end
+arch magic_mouth
+name Yolanda
+msg
+Drop your Yolanda's Crystal to pass.
+endmsg
+food 1
+x 12
+y 27
+end
+arch altar
+name yolanda
+slaying Yolanda's Crystal
+food 1
+x 12
+y 27
+invisible 1
+connected 887
+activate_on_release 0
+end
 arch greenmarble
+x 12
+y 27
+end
+arch chalice_sil
+name Yolanda
+name_pl yolandas
+race gold and jewels
+x 12
+y 27
+material 0
+no_pick 1
+end
+arch cwall_0
 x 12
 y 27
 end
@@ -15644,7 +15755,39 @@ arch redslate
 x 46
 y 30
 end
+arch magic_mouth
+name Zacharus
+msg
+Drop your Zacharus' Crystal to pass.
+endmsg
+food 1
+x 46
+y 31
+end
+arch altar
+name Zacharus
+slaying Zacharus' Crystal
+food 1
+x 46
+y 31
+invisible 1
+connected 888
+activate_on_release 0
+end
 arch greenmarble
+x 46
+y 31
+end
+arch chalice_sil
+name Zacharus
+name_pl Zacharus'
+race gold and jewels
+x 46
+y 31
+material 0
+no_pick 1
+end
+arch cwall_0
 x 46
 y 31
 end
@@ -15953,19 +16096,61 @@ arch greenmarble
 x 47
 y 27
 end
+arch cwall_1_4
+x 47
+y 27
+end
 arch redslate
 x 47
 y 28
+end
+arch gate_closed_2
+x 47
+y 28
+connected 888
+no_magic 1
+damned 1
+activate_on_release 0
 end
 arch redslate
 x 47
 y 29
 end
+arch gate_closed_2
+x 47
+y 29
+connected 888
+no_magic 1
+damned 1
+activate_on_release 0
+end
 arch redslate
 x 47
 y 30
 end
-arch lightgreenmarble
+arch gate_closed_2
+x 47
+y 30
+connected 888
+no_magic 1
+damned 1
+activate_on_release 0
+end
+arch magic_mouth
+name Zacharus
+msg
+The Zacharus' Crystal dissolves.
+endmsg
+x 47
+y 31
+connected 888
+activate_on_release 0
+end
+arch greenmarble
+x 47
+y 31
+end
+arch cwall_1_4
 x 47
 y 31
 end
@@ -16269,7 +16454,11 @@ arch greenmarble
 x 48
 y 26
 end
-arch lightgreenmarble
+arch greenmarble
+x 48
+y 27
+end
+arch cwall_2_1_2
 x 48
 y 27
 end
@@ -16277,7 +16466,21 @@ arch redslate
 x 48
 y 28
 end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 48
+sp 28
+x 48
+y 28
+end
 arch redslate
+x 48
+y 29
+end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 48
+sp 29
 x 48
 y 29
 end
@@ -16285,7 +16488,18 @@ arch redslate
 x 48
 y 30
 end
+arch stair3_gstone_up
+slaying /brest/zorn/castle.upper.floor.four
+hp 48
+sp 30
+x 48
+y 30
+end
 arch greenmarble
+x 48
+y 31
+end
+arch cwall_2_1_2
 x 48
 y 31
 end
@@ -16677,6 +16891,10 @@ arch greenmarble
 x 49
 y 27
 end
+arch cwall_2_1_2
+x 49
+y 27
+end
 arch redslate
 x 49
 y 28
@@ -16689,7 +16907,11 @@ arch redslate
 x 49
 y 30
 end
-arch lightgreenmarble
+arch greenmarble
+x 49
+y 31
+end
+arch cwall_2_1_2
 x 49
 y 31
 end
@@ -17171,7 +17393,7 @@ arch greenmarble
 x 50
 y 27
 end
-arch cwall_1_2
+arch cwall_2_2_4
 x 50
 y 27
 end
@@ -17223,7 +17445,7 @@ arch swall_1_2_half
 x 50
 y 31
 end
-arch cwall_1_1
+arch cwall_2_2_3
 x 50
 y 31
 end
