@@ -39,21 +39,21 @@ import java.awt.Transparency;
  */
 public class GUIButton extends GUIElement
 {
-    private BufferedImage mypicture_up;
+    private final BufferedImage mypicture_up;
 
-    private BufferedImage mypicture_down;
+    private final BufferedImage mypicture_down;
 
-    private GUICommandList mylist;
+    private final GUICommandList mylist;
 
-    private String mytext = null;
+    private final String mytext;
 
-    private Font myfont = null;
+    private final Font myfont;
 
-    private int mytx = 0;
+    private final int mytx;
 
-    private int myty = 0;
+    private final int myty;
 
-    private Color myfontcolor = new Color(255, 255, 255);
+    private final Color myfontcolor;
 
     public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd)
     {
@@ -69,6 +69,11 @@ public class GUIButton extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(picup.getWidth(), picup.getHeight(), Transparency.TRANSLUCENT);
+        mytext = null;
+        myfont = null;
+        myfontcolor = new Color(255, 255, 255);
+        mytx = 0;
+        myty = 0;
         render();
     }
 
