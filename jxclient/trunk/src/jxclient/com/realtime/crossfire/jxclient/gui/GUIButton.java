@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
-import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -37,13 +36,11 @@ import java.awt.Transparency;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIButton extends GUIElement
+public class GUIButton extends AbstractButton
 {
     private final BufferedImage mypicture_up;
 
     private final BufferedImage mypicture_down;
-
-    private final GUICommandList mylist;
 
     private final String mytext;
 
@@ -57,14 +54,13 @@ public class GUIButton extends GUIElement
 
     public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh, cmd);
         if (picup == null) throw new IllegalArgumentException();
         if (picdown == null) throw new IllegalArgumentException();
         if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
         if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
         mypicture_up = picup;
         mypicture_down = picdown;
-        mylist = cmd;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -79,14 +75,13 @@ public class GUIButton extends GUIElement
 
     public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, nn, nx, ny, nw, nh, cmd);
         if (picup == null) throw new IllegalArgumentException();
         if (picdown == null) throw new IllegalArgumentException();
         if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
         if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
         mypicture_up = picup;
         mypicture_down = picdown;
-        mylist = cmd;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -99,30 +94,10 @@ public class GUIButton extends GUIElement
         render();
     }
 
-    public void mouseReleased(MouseEvent e)
+    /** {@inheritDoc} */
+    public void setActive(final boolean active)
     {
-        int b = e.getButton();
-        switch(b)
-        {
-        case MouseEvent.BUTTON1:
-            mylist.execute();
-            active = false;
-            JXCWindow jxc = (JXCWindow)(e.getSource());
-            jxc.deactivateCurrentElement();
-            render();
-            break;
-
-        case MouseEvent.BUTTON2:
-            break;
-
-        case MouseEvent.BUTTON3:
-            break;
-        }
-    }
-
-    public void mousePressed(MouseEvent e)
-    {
-        active = true;
+        super.setActive(active);
         render();
     }
 
