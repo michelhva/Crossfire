@@ -138,3 +138,12 @@ y 2
 weight 4000000
 magicmap blue
 end
+
+Object big_elec_spellcasting
+anim
+elec_dr_spellcasting.x11
+elec_dr_spellcasting.x12
+elec_dr_spellcasting.x13
+facings 1
+mina
+end
