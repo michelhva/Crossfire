@@ -83,6 +83,18 @@ public abstract class AbstractButton extends GUIElement
     /** {@inheritDoc} */
     public void mousePressed(final MouseEvent e)
     {
-        setActive(true);
+        final int b = e.getButton();
+        switch(b)
+        {
+        case MouseEvent.BUTTON1:
+            setActive(true);
+            break;
+
+        case MouseEvent.BUTTON2:
+            break;
+
+        case MouseEvent.BUTTON3:
+            break;
+        }
     }
 }
