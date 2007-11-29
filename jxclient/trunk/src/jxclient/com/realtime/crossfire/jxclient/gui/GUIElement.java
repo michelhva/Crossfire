@@ -140,9 +140,9 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
-    public void setActive(final boolean act)
+    public void setActive(final boolean active)
     {
-        active = act;
+        this.active = active;
     }
 
     public boolean isActive()
@@ -180,11 +180,11 @@ public abstract class GUIElement implements MouseListener
         return visible;
     }
 
-    public void setVisible(final boolean v)
+    public void setVisible(final boolean visible)
     {
-        if (visible != v)
+        if (this.visible != visible)
         {
-            visible = v;
+            this.visible = visible;
             setChanged();
         }
     }
