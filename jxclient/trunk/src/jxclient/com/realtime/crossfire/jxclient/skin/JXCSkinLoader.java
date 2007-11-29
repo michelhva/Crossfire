@@ -146,12 +146,46 @@ public abstract class JXCSkinLoader implements JXCSkin
 
     private Gui load(final String name, final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
     {
+        final Gui gui = new Gui();
+        elements.clear();
+        commandLists.clear();
+        fonts.clear();
         try
         {
-            final InputStream inputStream = getInputStream(name);
+            load("global.skin", s, p, gui);
+            load(name, s, p, gui);
+        }
+        finally
+        {
+            elements.clear();
+            commandLists.clear();
+            fonts.clear();
+        }
+        return gui;
+    }
+
+    /**
+     * Load a skin file and add the entries to a {@link Gui} instance.
+     *
+     * @param resourceName The name of the skin resource; used to construct
+     * error messages.
+     *
+     * @param server The server connection to monitor.
+     *
+     * @param window The main window.
+     *
+     * @return The Gui representing the skin file.
+     *
+     * @throws JXCSkinException if the file cannot be loaded
+     */
+    private void load(final String resourceName, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    {
+        try
+        {
+            final InputStream inputStream = getInputStream(resourceName);
             try
             {
-                return load(name, inputStream, s, p);
+                load(resourceName, inputStream, server, window, gui);
             }
             finally
             {
@@ -160,7 +194,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final IOException ex)
         {
-            throw new JXCSkinException(getURI(name)+": "+ex.getMessage());
+            throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
         }
     }
 
@@ -185,7 +219,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     protected abstract String getURI(final String name);
 
     /**
-     * Load a skin file and create a {@link Gui} instance.
+     * Load a skin file and add the entries to a {@link Gui} instance.
      *
      * @param resourceName The name of the skin resource; used to construct
      * error messages.
@@ -200,13 +234,8 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private Gui load(final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window) throws JXCSkinException
+    private void load(final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
-        elements.clear();
-        commandLists.clear();
-        fonts.clear();
-
-        final Gui gui = new Gui();
         try
         {
             final InputStreamReader isr = new InputStreamReader(inputStream, "UTF-8");
@@ -661,14 +690,6 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
         }
-        finally
-        {
-            elements.clear();
-            commandLists.clear();
-            fonts.clear();
-        }
-
-        return gui;
     }
 
     /**
