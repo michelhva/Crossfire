@@ -52,7 +52,7 @@ public class GUIButton extends AbstractButton
 
     private final Color myfontcolor;
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, GUICommandList cmd)
+    public GUIButton(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picup, final BufferedImage picdown, final GUICommandList cmd)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, cmd);
         if (picup == null) throw new IllegalArgumentException();
@@ -73,7 +73,7 @@ public class GUIButton extends AbstractButton
         render();
     }
 
-    public GUIButton(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picup, BufferedImage picdown, String txt, Font f, Color mfc, int tx, int ty, GUICommandList cmd)
+    public GUIButton(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picup, final BufferedImage picdown, final String txt, final Font f, final Color mfc, final int tx, final int ty, final GUICommandList cmd)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, cmd);
         if (picup == null) throw new IllegalArgumentException();
@@ -103,7 +103,7 @@ public class GUIButton extends AbstractButton
 
     public void render()
     {
-        Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = mybuffer.createGraphics();
         g.setFont(myfont);
         g.setColor(myfontcolor);
         if (active)
