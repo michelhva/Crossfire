@@ -1,12 +1,9 @@
 
-font font_stats          squealer 13
-font font_cmdline        regular 14
-
 commandlist command_rinv_up
 
 picture background 23+350 38+200 200 100 dialog_background
-label_query message 35+350 60+200 180 32 font_stats WHITE
-command_text command 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline
+label_query message 35+350 60+200 180 32 font_stats13 WHITE
+command_text command 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline14
 picture border_a   0+350   0+200  23  38 dialog_border_A
 picture border_b  23+350   0+200 200  38 dialog_border_B
 picture border_c 223+350   3+200  21  35 dialog_border_C

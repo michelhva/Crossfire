@@ -1,8 +1,6 @@
 
-font font_stats squealer 12
-
 picture background 23+350 38+200 200 100 dialog_background
-label_text message 35+350 60+200 180  32 font_stats WHITE Type the key to (un)bind:
+label_text message 35+350 60+200 180  32 font_stats12 WHITE Type the key to (un)bind:
 picture border_a   0+350   0+200  23  38 dialog_border_A
 picture border_b  23+350   0+200 200  38 dialog_border_B
 picture border_c 223+350   3+200  21  35 dialog_border_C

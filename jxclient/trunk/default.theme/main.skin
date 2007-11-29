@@ -1,15 +1,4 @@
 
-font font_default_small  squealer  8
-font font_types          squealer 12
-font font_stats          squealer 14
-font font_cmdline        regular  11
-font font_default_large  squealer 16
-font font_log_print      regular  11
-font font_log_fixed      cour     10
-font font_log_fixed_bold courbd   10
-font font_log_arcane     squealer 12
-font font_tooltip        squealer 16
-
 tooltip font_tooltip
 
 # Map Group
@@ -256,22 +245,22 @@ set_invisible rspI
 set_invisible rspJ
 
 # SecondaryStats (319, 621)
-label_stat label_sstat_level   0+309  4+621 110 20 font_stats WHITE LEVEL
-label_stat label_sstat_exp     0+309 27+621 110 20 font_stats WHITE EXP
-label_stat label_sstat_range   0+309 49+621 110 20 font_stats WHITE RANGE
-label_stat label_sstat_wc    200+319  4+621  56 20 font_stats WHITE WC
-label_stat label_sstat_ac    200+319 27+621  56 20 font_stats WHITE AC
-label_stat label_sstat_dam   200+319 49+621  56 20 font_stats WHITE DAM
-label_stat label_sstat_speed 200+319 71+621  56 20 font_stats WHITE SPEED
+label_stat label_sstat_level   0+309  4+621 110 20 font_stats14 WHITE LEVEL
+label_stat label_sstat_exp     0+309 27+621 110 20 font_stats14 WHITE EXP
+label_stat label_sstat_range   0+309 49+621 110 20 font_stats14 WHITE RANGE
+label_stat label_sstat_wc    200+319  4+621  56 20 font_stats14 WHITE WC
+label_stat label_sstat_ac    200+319 27+621  56 20 font_stats14 WHITE AC
+label_stat label_sstat_dam   200+319 49+621  56 20 font_stats14 WHITE DAM
+label_stat label_sstat_speed 200+319 71+621  56 20 font_stats14 WHITE SPEED
 
 # Panel (199, 551)
 picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left
 picture panel_back_dragon_right 543+199  0+551  62  64 background_panel_dragon_right
 picture panel_back_bottom         0+199 64+551 626 153 background_panel_bottom
 picture panel_spells 392+199 74+551 224 123 spell_panel
-label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats SPELL_ICON
-label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats SPELL_NAME
-label_spell label_panel_spells_description 450+199 105+551 100 20 font_stats SPELL_DESCRIPTION
+label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats14 SPELL_ICON
+label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats14 SPELL_NAME
+label_spell label_panel_spells_description 450+199 105+551 100 20 font_stats14 SPELL_DESCRIPTION
 
 set_invisible panel_spells
 set_invisible label_panel_spells_icon
@@ -332,7 +321,7 @@ gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_
 
 # LowerBar (72, 732)
 picture lower_bar 0+72 0+732 880 36 lower_bar
-command_text command 127+66 20+732 512+46 29 empty empty font_cmdline
+command_text command 127+66 20+732 512+46 29 empty empty font_cmdline11
 
 commandlist rsp_display
 commandlist_add rsp_display rinv0 HIDE
