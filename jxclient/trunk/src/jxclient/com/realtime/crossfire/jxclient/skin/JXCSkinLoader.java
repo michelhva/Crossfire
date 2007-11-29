@@ -674,7 +674,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                 }
                 catch (final IllegalArgumentException ex)
                 {
+                    final String msg = ex.getMessage();
+                    if (msg != null)
+                    {
+                        throw new IOException("invalid parameter ("+ex.getMessage()+") in line "+lnr.getLineNumber());
+                    }
+                    else
+                    {
                         throw new IOException("invalid parameter in line "+lnr.getLineNumber());
+                    }
                 }
                 finally
                 {
