@@ -156,3 +156,15 @@ y 1
 weight 4000000
 magicmap red
 end
+
+Object big_dragon_spellcasting
+anim
+dragon_spellcasting.x71
+dragon_spellcasting.x72
+dragon_spellcasting.x73
+dragon_spellcasting.x31
+dragon_spellcasting.x32
+dragon_spellcasting.x33
+facings 2
+mina
+end
