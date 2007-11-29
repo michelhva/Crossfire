@@ -140,7 +140,7 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
-    public void setActive(boolean act)
+    public void setActive(final boolean act)
     {
         active = act;
     }
@@ -180,7 +180,7 @@ public abstract class GUIElement implements MouseListener
         return visible;
     }
 
-    public void setVisible(boolean v)
+    public void setVisible(final boolean v)
     {
         if (visible != v)
         {
@@ -212,11 +212,11 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
-    public void mouseClicked(MouseEvent e)
+    public void mouseClicked(final MouseEvent e)
     {
-        int x = e.getX();
-        int y = e.getY();
-        int b = e.getButton();
+        final int x = e.getX();
+        final int y = e.getY();
+        final int b = e.getButton();
         switch(b)
         {
         case MouseEvent.BUTTON1:
@@ -232,24 +232,24 @@ public abstract class GUIElement implements MouseListener
         }
     }
 
-    public void mouseEntered(MouseEvent e)
+    public void mouseEntered(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.setTooltipElement(this);
     }
 
-    public void mouseExited(MouseEvent e)
+    public void mouseExited(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.unsetTooltipElement(this);
     }
 
-    public void mousePressed(MouseEvent e)
+    public void mousePressed(final MouseEvent e)
     {
         active = true;
     }
 
-    public void mouseReleased(MouseEvent e)
+    public void mouseReleased(final MouseEvent e)
     {
         mouseClicked(e);
     }
