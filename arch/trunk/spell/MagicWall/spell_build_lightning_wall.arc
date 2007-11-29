@@ -1,4 +1,5 @@
 Object spell_build_lightning_wall
+anim_suffix spellcasting
 name build lightning wall
 name_pl build lightning wall
 face spell_pyromancy.111

@@ -1,4 +1,5 @@
 Object spell_remove_curse
+anim_suffix spellcasting
 name remove curse
 name_pl remove curse
 face spell_praying.111

@@ -1,4 +1,5 @@
 Object spell_create_earth_wall
+anim_suffix spellcasting
 name create earth wall
 name_pl create earth wall
 face spell_summoner.111

@@ -1,4 +1,5 @@
 Object spell_protection_from_paralysis
+anim_suffix spellcasting
 name protection from paralysis
 name_pl protection from paralysis
 face spell_praying.111

@@ -1,4 +1,5 @@
 Object spell_protection_from_electricity
+anim_suffix spellcasting
 name protection from electricity
 name_pl protection from electricity
 face spell_praying.111

@@ -1,4 +1,5 @@
 Object spell_cause_white_death
+anim_suffix spellcasting
 name cause white death
 name_pl cause white death
 face spell_praying.111

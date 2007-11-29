@@ -1,4 +1,5 @@
 Object spell_poison_fog
+anim_suffix spellcasting
 name poison fog
 name_pl poison fog
 face spell_praying.111

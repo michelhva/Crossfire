@@ -1,4 +1,5 @@
 Object spell_dexterity
+anim_suffix spellcasting
 name dexterity
 name_pl dexterity
 face spell_sorcery.111

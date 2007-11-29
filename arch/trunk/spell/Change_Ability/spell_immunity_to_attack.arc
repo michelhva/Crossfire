@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_attack
+anim_suffix spellcasting
 name immunity to attack
 name_pl immunity to attack
 level 26

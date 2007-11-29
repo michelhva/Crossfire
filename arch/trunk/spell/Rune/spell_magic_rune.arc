@@ -1,4 +1,5 @@
 Object spell_magic_rune
+anim_suffix spellcasting
 name magic rune
 name_pl magic rune
 face generic_rune.111

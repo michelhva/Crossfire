@@ -1,4 +1,5 @@
 Object spell_protection_from_cancellation
+anim_suffix spellcasting
 name protection from cancellation
 name_pl protection from cancellation
 face spell_praying.111

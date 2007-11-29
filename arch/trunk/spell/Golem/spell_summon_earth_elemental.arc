@@ -1,4 +1,5 @@
 Object spell_summon_earth_elemental
+anim_suffix spellcasting
 name summon earth elemental
 name_pl summon earth elemental
 face spell_summoner.111

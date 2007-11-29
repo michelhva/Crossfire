@@ -1,4 +1,5 @@
 Object spell_large_fireball
+anim_suffix spellcasting
 name large fireball
 name_pl large fireball
 face spell_pyromancy.111

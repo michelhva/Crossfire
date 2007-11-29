@@ -1,4 +1,5 @@
 Object spell_sigil
+anim_suffix spellcasting
 name sigil
 name_pl sigil
 type 101

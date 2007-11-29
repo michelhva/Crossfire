@@ -1,4 +1,5 @@
 Object spell_cancellation
+anim_suffix spellcasting
 name cancellation
 name_pl cancellation
 face spell_evocation.111

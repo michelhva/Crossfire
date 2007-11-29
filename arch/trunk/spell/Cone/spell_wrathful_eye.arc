@@ -1,4 +1,5 @@
 Object spell_wrathful_eye
+anim_suffix spellcasting
 name wrathful eye
 name_pl wrathful eye
 face spell_praying.111

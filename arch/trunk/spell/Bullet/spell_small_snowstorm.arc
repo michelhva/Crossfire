@@ -1,4 +1,5 @@
 Object spell_small_snowstorm
+anim_suffix spellcasting
 name small snowstorm
 name_pl small snowstorm
 face spell_evocation.111

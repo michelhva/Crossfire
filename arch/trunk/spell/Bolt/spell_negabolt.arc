@@ -1,4 +1,5 @@
 Object spell_negabolt
+anim_suffix spellcasting
 name negative energy bolt
 name_pl negative energy bolts
 face spell_evocation.111

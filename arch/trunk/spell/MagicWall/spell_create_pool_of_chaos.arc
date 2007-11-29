@@ -1,4 +1,5 @@
 Object spell_create_pool_of_chaos
+anim_suffix spellcasting
 name create pool of chaos
 name_pl create pool of chaos
 face spell_evocation.111

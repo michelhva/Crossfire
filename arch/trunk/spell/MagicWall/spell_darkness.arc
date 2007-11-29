@@ -1,4 +1,5 @@
 Object spell_darkness
+anim_suffix spellcasting
 name darkness
 name_pl darkness
 face spell_praying.111

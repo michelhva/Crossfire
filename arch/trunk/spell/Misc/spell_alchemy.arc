@@ -1,4 +1,5 @@
 Object spell_alchemy
+anim_suffix spellcasting
 name alchemy
 name_pl alchemy
 face spell_summoner.111

@@ -1,4 +1,5 @@
 Object spell_animate_weapon
+anim_suffix spellcasting
 name animate weapon
 name_pl animate weapon
 type 101

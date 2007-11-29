@@ -1,4 +1,5 @@
 Object spell_detect_magic
+anim_suffix spellcasting
 name detect magic
 name_pl detect magic
 face spell_sorcery.111

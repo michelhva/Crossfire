@@ -1,4 +1,5 @@
 Object spell_divine_shock
+anim_suffix spellcasting
 name divine shock
 name_pl divine shock
 face spell_praying.111

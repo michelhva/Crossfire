@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_cold
+anim_suffix spellcasting
 name immunity to cold
 name_pl immunity to cold
 level 6

@@ -1,4 +1,5 @@
 Object abil_frostbolt
+anim_suffix spellcasting
 name frostbolt ability
 name_pl frostbolts ability
 level 3

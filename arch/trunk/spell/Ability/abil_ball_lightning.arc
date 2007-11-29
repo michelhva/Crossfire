@@ -1,4 +1,5 @@
 Object abil_ball_lightning
+anim_suffix spellcasting
 name ball lightning ability
 name_pl ball lightning ability
 type 101

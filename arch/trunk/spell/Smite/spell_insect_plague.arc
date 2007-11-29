@@ -1,4 +1,5 @@
 Object spell_insect_plague
+anim_suffix spellcasting
 name insect plague
 name_pl insect plague
 face spell_praying.111

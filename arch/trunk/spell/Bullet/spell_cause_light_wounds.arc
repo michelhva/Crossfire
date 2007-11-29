@@ -1,4 +1,5 @@
 Object spell_cause_light_wounds
+anim_suffix spellcasting
 name cause light wounds
 name_pl cause light wounds
 face spell_praying.111

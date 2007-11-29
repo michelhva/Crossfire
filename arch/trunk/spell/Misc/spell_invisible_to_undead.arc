@@ -1,4 +1,5 @@
 Object spell_invisible_to_undead
+anim_suffix spellcasting
 name invisible to undead
 name_pl invisible to undead
 face spell_praying.111

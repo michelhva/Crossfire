@@ -1,4 +1,5 @@
 Object spell_paralyze
+anim_suffix spellcasting
 name paralyze
 name_pl paralyze
 face spell_sorcery.111

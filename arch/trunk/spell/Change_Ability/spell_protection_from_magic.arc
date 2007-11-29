@@ -1,4 +1,5 @@
 Object spell_protection_from_magic
+anim_suffix spellcasting
 name protection from magic
 name_pl protection from magic
 face spell_praying.111

@@ -2,6 +2,7 @@
 # so most of the values don't scale - otherwise, this could be too
 # powerful at higher levels.
 Object spell_lesser_summon_golem
+anim_suffix spellcasting
 name summon lesser golem
 name_pl summon lesser golem
 face spell_summoner.111

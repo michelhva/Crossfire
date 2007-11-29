@@ -1,4 +1,5 @@
 Object spell_protection_from_fire
+anim_suffix spellcasting
 name protection from fire
 name_pl protection from fire
 face spell_praying.111

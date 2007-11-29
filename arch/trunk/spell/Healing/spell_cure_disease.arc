@@ -1,4 +1,5 @@
 Object spell_cure_disease
+anim_suffix spellcasting
 name cure disease
 name_pl cure disease
 face spell_praying.111

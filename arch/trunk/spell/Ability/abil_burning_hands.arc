@@ -1,4 +1,5 @@
 Object abil_burning_hands
+anim_suffix spellcasting
 name burning hands ability
 name_pl burning hands ability
 level 1

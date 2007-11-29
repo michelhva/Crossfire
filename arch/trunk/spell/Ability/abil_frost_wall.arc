@@ -1,4 +1,5 @@
 Object abil_create_frost_wall
+anim_suffix spellcasting
 name create frost wall ability
 name_pl create frost wall ability
 level 8

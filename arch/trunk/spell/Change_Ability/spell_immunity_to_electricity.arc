@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_electricity
+anim_suffix spellcasting
 name immunity to electricity
 name_pl immunity to electricity
 level 8

@@ -1,4 +1,5 @@
 Object spell_invisible
+anim_suffix spellcasting
 name invisible
 name_pl invisible
 face spell_sorcery.111

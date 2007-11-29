@@ -1,4 +1,5 @@
 Object spell_hellfire
+anim_suffix spellcasting
 name hellfire
 name_pl hellfire
 face spell_pyromancy.111

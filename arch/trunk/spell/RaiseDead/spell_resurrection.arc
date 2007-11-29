@@ -1,4 +1,5 @@
 Object spell_resurrection
+anim_suffix spellcasting
 name resurrection
 name_pl resurrection
 face spell_praying.111

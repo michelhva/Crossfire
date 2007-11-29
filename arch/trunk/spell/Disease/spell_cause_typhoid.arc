@@ -1,4 +1,5 @@
 Object spell_cause_typhoid
+anim_suffix spellcasting
 name cause typhoid
 name_pl cause typhoid
 face spell_praying.111

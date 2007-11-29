@@ -1,4 +1,5 @@
 Object spell_summon_fog
+anim_suffix spellcasting
 name summon fog
 name_pl summon fog
 face spell_summoner.111

@@ -1,4 +1,5 @@
 Object abil_large_icestorm
+anim_suffix spellcasting
 name large icestorm ability
 name_pl large icestorm ability
 level 12

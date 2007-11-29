@@ -1,4 +1,5 @@
 Object spell_rune_of_fire
+anim_suffix spellcasting
 name rune of fire
 name_pl rune of fire
 face spell_pyromancy.111

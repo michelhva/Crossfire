@@ -1,4 +1,5 @@
 Object spell_dark_vision
+anim_suffix spellcasting
 name dark vision
 name_pl dark vision
 face spell_sorcery.111

@@ -1,4 +1,5 @@
 Object spell_cause_black_death
+anim_suffix spellcasting
 name cause black death
 name_pl cause black death
 type 101

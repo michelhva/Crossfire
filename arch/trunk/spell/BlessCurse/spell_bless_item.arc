@@ -1,4 +1,5 @@
 Object spell_bless_item
+anim_suffix spellcasting
 name bless item
 name_pl bless item
 face spell_praying.111

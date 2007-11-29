@@ -1,4 +1,5 @@
 Object spell_rune_of_magic_drain
+anim_suffix spellcasting
 name rune of magic drain
 name_pl rune of magic drain
 face spell_evocation.111

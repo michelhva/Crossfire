@@ -1,4 +1,5 @@
 Object spell_mana_blast
+anim_suffix spellcasting
 name mana blast
 name_pl mana blast
 face spell_evocation.111

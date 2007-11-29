@@ -1,4 +1,5 @@
 Object spell_charging
+anim_suffix spellcasting
 name charging
 name_pl charging
 level 10

@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_slow
+anim_suffix spellcasting
 name immunity to slow
 name_pl immunity to slow
 level 14

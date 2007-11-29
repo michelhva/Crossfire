@@ -1,4 +1,5 @@
 Object spell_polymorph
+anim_suffix spellcasting
 name polymorph
 name_pl polymorph
 level 6

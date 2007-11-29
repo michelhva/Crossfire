@@ -1,4 +1,5 @@
 Object spell_nightfall
+anim_suffix spellcasting
 name nightfall
 name_pl nightfall
 face spell_praying.111
