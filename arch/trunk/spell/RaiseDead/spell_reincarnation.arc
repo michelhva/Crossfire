@@ -1,4 +1,5 @@
 Object spell_reincarnation
+anim_suffix spellcasting
 name reincarnation
 name_pl reincarnation
 face spell_praying.111

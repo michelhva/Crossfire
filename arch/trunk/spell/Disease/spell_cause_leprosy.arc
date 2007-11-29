@@ -1,4 +1,5 @@
 Object spell_cause_leprosy
+anim_suffix spellcasting
 name cause leprosy
 name_pl cause leprosy
 face spell_praying.111

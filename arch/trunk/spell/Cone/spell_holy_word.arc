@@ -1,4 +1,5 @@
 Object spell_holy_word
+anim_suffix spellcasting
 name holy word
 name_pl holy word
 face spell_praying.111

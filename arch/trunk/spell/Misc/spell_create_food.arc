@@ -1,4 +1,5 @@
 Object spell_create_food
+anim_suffix spellcasting
 name create food
 name_pl create food
 face spell_summoner.111

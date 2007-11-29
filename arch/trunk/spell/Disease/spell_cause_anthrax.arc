@@ -1,4 +1,5 @@
 Object spell_cause_anthrax
+anim_suffix spellcasting
 name cause anthrax
 name_pl cause anthrax
 face spell_praying.111

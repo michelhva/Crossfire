@@ -1,4 +1,5 @@
 Object spell_protection_from_poison
+anim_suffix spellcasting
 name protection from poison
 name_pl protection from poison
 face spell_praying.111

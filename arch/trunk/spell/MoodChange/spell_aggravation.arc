@@ -1,4 +1,5 @@
 Object spell_aggravation
+anim_suffix spellcasting
 name aggravation
 name_pl aggravation
 level 1

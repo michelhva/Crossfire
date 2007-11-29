@@ -1,4 +1,5 @@
 Object spell_frostbolt
+anim_suffix spellcasting
 name frostbolt
 name_pl frostbolts
 face spell_evocation.111

@@ -1,4 +1,5 @@
 Object spell_destruction
+anim_suffix spellcasting
 name destruction
 name_pl destruction
 face spell_sorcery.111

@@ -1,4 +1,5 @@
 Object spell_finger_of_death
+anim_suffix spellcasting
 name finger of death
 name_pl finger of death
 face spell_praying.111

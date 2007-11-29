@@ -1,4 +1,5 @@
 Object spell_perceive_self
+anim_suffix spellcasting
 name perceive self
 name_pl perceive self
 face spell_praying.111

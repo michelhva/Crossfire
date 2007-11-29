@@ -1,4 +1,5 @@
 Object spell_bullet_storm
+anim_suffix spellcasting
 name bullet storm
 name_pl bullet storm
 face spell_evocation.111

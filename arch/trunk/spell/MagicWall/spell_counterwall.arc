@@ -1,4 +1,5 @@
 Object spell_counterwall
+anim_suffix spellcasting
 name counterwall
 name_pl counterwall
 face spell_summoner.111

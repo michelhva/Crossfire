@@ -1,4 +1,5 @@
 Object spell_raise_dead
+anim_suffix spellcasting
 name raise dead
 name_pl raise dead
 face spell_praying.111

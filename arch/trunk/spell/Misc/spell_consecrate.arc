@@ -1,4 +1,5 @@
 Object spell_consecrate
+anim_suffix spellcasting
 name consecrate
 name_pl consecrate
 face spell_praying.111

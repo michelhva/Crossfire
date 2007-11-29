@@ -1,4 +1,5 @@
 Object abil_icestorm
+anim_suffix spellcasting
 name icestorm ability
 name_pl icestorm ability
 level 1

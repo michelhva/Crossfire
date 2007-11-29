@@ -1,4 +1,5 @@
 Object spell_firebolt
+anim_suffix spellcasting
 name firebolt
 name_pl firebolt
 face spell_pyromancy.111

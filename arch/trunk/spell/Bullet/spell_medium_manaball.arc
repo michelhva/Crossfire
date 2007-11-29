@@ -1,4 +1,5 @@
 Object spell_medium_manaball
+anim_suffix spellcasting
 name medium manaball
 name_pl medium manaball
 face spell_evocation.111

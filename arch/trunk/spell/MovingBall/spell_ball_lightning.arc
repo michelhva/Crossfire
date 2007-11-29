@@ -1,4 +1,5 @@
 Object spell_ball_lightning
+anim_suffix spellcasting
 name ball lightning
 name_pl ball lightning
 face spell_evocation.111

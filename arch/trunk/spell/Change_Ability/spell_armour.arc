@@ -1,4 +1,5 @@
 Object spell_armour
+anim_suffix spellcasting
 name armour
 name_pl armour
 face spell_evocation.111

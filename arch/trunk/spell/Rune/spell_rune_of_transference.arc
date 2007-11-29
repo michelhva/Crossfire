@@ -1,4 +1,5 @@
 Object spell_rune_of_transference
+anim_suffix spellcasting
 name rune of transference
 name_pl rune of transference
 face spell_sorcery.111

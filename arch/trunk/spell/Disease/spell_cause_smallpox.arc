@@ -1,4 +1,5 @@
 Object spell_cause_smallpox
+anim_suffix spellcasting
 name cause smallpox
 name_pl cause smallpox
 face spell_praying.111

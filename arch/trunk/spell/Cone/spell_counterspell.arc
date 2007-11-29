@@ -1,4 +1,5 @@
 Object spell_counterspell
+anim_suffix spellcasting
 name counterspell
 name_pl counterspell
 face spell_summoner.111

@@ -1,4 +1,5 @@
 Object spell_cause_rabies
+anim_suffix spellcasting
 name cause rabies
 name_pl cause rabies
 face spell_praying.111

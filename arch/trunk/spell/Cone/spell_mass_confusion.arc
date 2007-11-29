@@ -1,4 +1,5 @@
 Object spell_mass_confusion
+anim_suffix spellcasting
 name mass confusion
 name_pl mass confusion
 face spell_sorcery.111

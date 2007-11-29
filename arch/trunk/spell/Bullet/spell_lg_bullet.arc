@@ -1,4 +1,5 @@
 Object spell_lg_magic_bullet
+anim_suffix spellcasting
 name large bullet
 name_pl large bullet
 face spell_evocation.111

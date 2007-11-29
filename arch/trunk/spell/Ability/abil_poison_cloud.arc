@@ -1,4 +1,5 @@
 Object abil_poison_cloud
+anim_suffix spellcasting
 name poison cloud ability
 name_pl poison cloud ability
 level 2

@@ -1,4 +1,5 @@
 Object spell_large_manaball
+anim_suffix spellcasting
 name large manaball
 name_pl large manaball
 face spell_evocation.111

@@ -1,4 +1,5 @@
 Object spell_build_director
+anim_suffix spellcasting
 name build director
 name_pl build director
 face spell_summoner.111

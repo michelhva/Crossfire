@@ -1,4 +1,5 @@
 Object spell_small_fireball
+anim_suffix spellcasting
 name small fireball
 name_pl small fireball
 face spell_pyromancy.111

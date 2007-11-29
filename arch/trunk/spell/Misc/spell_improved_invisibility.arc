@@ -1,4 +1,5 @@
 Object spell_improved_invisibility
+anim_suffix spellcasting
 name improved invisibility
 name_pl improved invisibility
 face spell_sorcery.111

@@ -1,4 +1,5 @@
 Object spell_conflict
+anim_suffix spellcasting
 name conflict
 name_pl conflict
 face spell_praying.111

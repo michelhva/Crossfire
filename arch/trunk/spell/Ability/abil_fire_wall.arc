@@ -1,4 +1,5 @@
 Object abil_create_fire_wall
+anim_suffix spellcasting
 name create fire wall ability
 name_pl create fire wall ability
 level 6

@@ -1,6 +1,7 @@
 # This is currently only used by runes
 #
 Object spell_summon_devil
+anim_suffix spellcasting
 name summon devil
 name_pl summon devil
 face spell_summoner.111

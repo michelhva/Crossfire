@@ -1,4 +1,5 @@
 Object spell_xray
+anim_suffix spellcasting
 name xray
 name_pl xray
 face spell_sorcery.111

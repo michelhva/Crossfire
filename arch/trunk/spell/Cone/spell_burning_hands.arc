@@ -1,4 +1,5 @@
 Object spell_burning_hands
+anim_suffix spellcasting
 name burning hands
 name_pl burning hands
 face spell_pyromancy.111

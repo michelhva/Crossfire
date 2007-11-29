@@ -1,4 +1,5 @@
 Object spell_meteor_swarm
+anim_suffix spellcasting
 name meteor swarm
 name_pl meteor swarm
 face spell_pyromancy.111

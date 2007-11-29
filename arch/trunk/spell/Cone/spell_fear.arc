@@ -1,4 +1,5 @@
 Object spell_fear
+anim_suffix spellcasting
 name fear
 name_pl fear
 face spell_sorcery.111

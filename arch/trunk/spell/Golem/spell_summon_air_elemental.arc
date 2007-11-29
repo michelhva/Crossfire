@@ -1,4 +1,5 @@
 Object spell_summon_air_elemental
+anim_suffix spellcasting
 name summon air elemental
 name_pl summon air elemental
 face spell_summoner.111

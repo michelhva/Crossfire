@@ -1,4 +1,5 @@
 Object spell_firetrap
+anim_suffix spellcasting
 name firetrap
 name_pl firetrap
 type 101

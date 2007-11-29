@@ -1,4 +1,5 @@
 Object spell_vitriol_splash
+anim_suffix spellcasting
 name vitriol splash
 name_pl vitriol splash
 face spell_praying.111

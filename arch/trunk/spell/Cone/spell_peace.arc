@@ -1,4 +1,5 @@
 Object spell_peace
+anim_suffix spellcasting
 name peace
 name_pl peace
 face spell_praying.111

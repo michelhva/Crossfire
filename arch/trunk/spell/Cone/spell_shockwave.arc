@@ -1,4 +1,5 @@
 Object spell_shockwave
+anim_suffix spellcasting
 name shockwave
 name_pl shockwave
 face spell_evocation.111

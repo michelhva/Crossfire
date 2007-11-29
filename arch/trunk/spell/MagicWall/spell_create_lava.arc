@@ -2,6 +2,7 @@
 # As such, the values it contains may need quite a bit of
 # adjustment if this is ever given to a player.
 Object spell_create_lava
+anim_suffix spellcasting
 name create lava
 name_pl create lava
 level 8

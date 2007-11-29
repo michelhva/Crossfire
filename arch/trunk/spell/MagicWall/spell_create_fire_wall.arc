@@ -1,4 +1,5 @@
 Object spell_create_fire_wall
+anim_suffix spellcasting
 name create fire wall
 name_pl create fire wall
 face spell_pyromancy.111

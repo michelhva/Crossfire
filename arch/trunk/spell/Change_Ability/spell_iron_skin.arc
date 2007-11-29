@@ -1,4 +1,5 @@
 Object spell_iron_skin
+anim_suffix spellcasting
 name iron skin
 name_pl iron skin
 face spell_praying.111

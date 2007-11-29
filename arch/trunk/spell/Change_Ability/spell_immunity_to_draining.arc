@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_draining
+anim_suffix spellcasting
 name immunity to draining
 name_pl immunity to draining
 level 18

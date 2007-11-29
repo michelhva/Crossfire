@@ -1,4 +1,5 @@
 Object spell_cause_flu
+anim_suffix spellcasting
 name cause flu
 name_pl cause flu
 face spell_praying.111

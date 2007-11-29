@@ -1,4 +1,5 @@
 Object spell_banishment
+anim_suffix spellcasting
 name banishment
 name_pl banishment
 face spell_praying.111

@@ -1,4 +1,5 @@
 Object spell_heal
+anim_suffix spellcasting
 name heal
 name_pl heal
 face spell_praying.111

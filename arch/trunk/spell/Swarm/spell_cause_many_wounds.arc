@@ -1,4 +1,5 @@
 Object spell_cause_many_wounds
+anim_suffix spellcasting
 name cause many wounds
 name_pl cause many wounds
 face spell_praying.111

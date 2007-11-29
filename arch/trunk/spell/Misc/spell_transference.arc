@@ -1,4 +1,5 @@
 Object spell_transference
+anim_suffix spellcasting
 name transference
 name_pl transference
 face spell_sorcery.111

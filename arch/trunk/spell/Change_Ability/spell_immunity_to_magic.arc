@@ -1,5 +1,6 @@
 # Obsolete spell - here for backward compatibility
 Object spell_immunity_to_magic
+anim_suffix spellcasting
 name immunity to magic
 name_pl immunity to magic
 level 20

@@ -1,4 +1,5 @@
 Object spell_sanctuary
+anim_suffix spellcasting
 name sanctuary
 name_pl sanctuary
 type 101

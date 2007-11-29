@@ -1,4 +1,5 @@
 Object spell_summon_golem
+anim_suffix spellcasting
 name summon golem
 name_pl summon golem
 face spell_summoner.111

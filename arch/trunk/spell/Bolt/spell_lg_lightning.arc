@@ -1,4 +1,5 @@
 Object spell_large_lightning
+anim_suffix spellcasting
 name large lightning
 name_pl large lightnings
 face spell_pyromancy.111

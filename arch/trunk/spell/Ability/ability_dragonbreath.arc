@@ -1,6 +1,7 @@
 # Basically same as the spell, but does a little less damage.
 #
 Object ability_dragonbreath
+anim_suffix spellcasting
 name dragonbreath ability
 name_pl dragonbreath ability
 level 12

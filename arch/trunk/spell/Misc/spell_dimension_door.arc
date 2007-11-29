@@ -1,4 +1,5 @@
 Object spell_dimension_door
+anim_suffix spellcasting
 name dimension door
 name_pl dimension door
 face spell_sorcery.111

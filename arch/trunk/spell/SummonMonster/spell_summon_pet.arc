@@ -1,4 +1,5 @@
 Object spell_summon_pet_monster
+anim_suffix spellcasting
 name summon pet monster
 name_pl summon pet monster
 face spell_summoner.111
