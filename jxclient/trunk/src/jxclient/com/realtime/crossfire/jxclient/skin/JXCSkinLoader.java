@@ -54,6 +54,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
@@ -86,6 +89,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final JXCSkinCache<GUICommandList> commandLists = new JXCSkinCache<GUICommandList>("command list");
 
     /**
+     * All defined dialogs.
+     */
+    private final JXCSkinCache<Gui> dialogs = new JXCSkinCache<Gui>("dialog");
+
+    /**
      * All defined fonts.
      */
     private final JXCSkinCache<Font> fonts = new JXCSkinCache<Font>("font");
@@ -94,6 +102,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * All defined images.
      */
     private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
+
+    /**
+     * Names of pending skin files.
+     */
+    private final Set<String> dialogsToLoad = new HashSet<String>();
 
     /**
      * Check that the skin exists and can be accessed.
@@ -113,45 +126,137 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
     }
 
-    /** {@inheritDoc} */
-    public Gui getDialogKeyBind(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public void load(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
     {
-        return load("keybind.skin", s, p);
+        dialogs.clear();
+        images.clear();
+        addDialog("keybind");
+        addDialog("query");
+        addDialog("book");
+        addDialog("main");
+        addDialog("meta");
+        addDialog("start");
+        while (!dialogsToLoad.isEmpty())
+        {
+            final Iterator<String> it = dialogsToLoad.iterator();
+            final String name = it.next();
+            it.remove();
+            final Gui gui;
+            try
+            {
+                gui = dialogs.lookup(name);
+            }
+            catch (final IOException ex)
+            {
+                throw new AssertionError();
+            }
+            load(name+".skin", gui, s, p);
+        }
+        images.clear();
+    }
+
+    private Gui addDialog(final String name)
+    {
+        try
+        {
+            return dialogs.lookup(name);
+        }
+        catch (final IOException ex)
+        {
+            final Gui gui = new Gui();
+            try
+            {
+                dialogs.insert(name, gui);
+            }
+            catch (final IOException ex2)
+            {
+                throw new AssertionError();
+            }
+            dialogsToLoad.add(name);
+            return gui;
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogQuery(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public Gui getDialogKeyBind() throws JXCSkinException
     {
-        return load("query.skin", s, p);
+        try
+        {
+            return dialogs.lookup("keybind");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogBook(final CrossfireServerConnection s, final JXCWindow p, int booknr) throws JXCSkinException
+    public Gui getDialogQuery() throws JXCSkinException
     {
-        return load("book.skin", s, p);
+        try
+        {
+            return dialogs.lookup("query");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getMainInterface(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public Gui getDialogBook(int booknr) throws JXCSkinException
     {
-        return load("main.skin", s, p);
+        try
+        {
+            return dialogs.lookup("book");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getMetaInterface(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public Gui getMainInterface() throws JXCSkinException
     {
-        return load("meta.skin", s, p);
+        try
+        {
+            return dialogs.lookup("main");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getStartInterface(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public Gui getMetaInterface() throws JXCSkinException
     {
-        return load("start.skin", s, p);
+        try
+        {
+            return dialogs.lookup("meta");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
     }
 
-    private Gui load(final String name, final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    /** {@inheritDoc} */
+    public Gui getStartInterface() throws JXCSkinException
     {
-        final Gui gui = new Gui();
+        try
+        {
+            return dialogs.lookup("start");
+        }
+        catch (final IOException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
+    }
+
+    private Gui load(final String name, final Gui gui, final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    {
         elements.clear();
         commandLists.clear();
         fonts.clear();
@@ -313,7 +418,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("commandlist_add"))
                         {
-                            if (args.length != 4)
+                            if (args.length < 4)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -328,10 +433,29 @@ public abstract class JXCSkinLoader implements JXCSkin
                             || command == GUICommand.Command.GUI_START
                             || command == GUICommand.Command.QUIT)
                             {
+                                if (args.length != 4)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
                                 params = window;
+                            }
+                            else if (command == GUICommand.Command.DIALOG_CLOSE)
+                            {
+                                if (args.length != 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                params = new GUICommand.DialogCloseParameter(window, addDialog(args[4]));
                             }
                             else
                             {
+                                if (args.length != 4)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
                                 params = "";
                             }
                             commandList.add(new GUICommand(element, command, params));

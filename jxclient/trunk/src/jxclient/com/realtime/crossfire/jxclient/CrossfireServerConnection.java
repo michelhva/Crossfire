@@ -198,9 +198,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private final Animations animations = new Animations();
 
-    public CrossfireServerConnection(String hostname, int port)
+    public CrossfireServerConnection()
     {
-        super(hostname, port);
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
     }
 

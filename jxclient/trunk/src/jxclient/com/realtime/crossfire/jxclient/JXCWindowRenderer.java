@@ -289,4 +289,18 @@ public class JXCWindowRenderer
     {
         return offsetY;
     }
+
+    /**
+     * Close a dialog. Does nothing if the given dialog is not open.
+     *
+     * @param dialog The dialog to close.
+     */
+    public void closeDialog(final Gui dialog)
+    {
+        if (currentDialog == dialog)
+        {
+            currentDialog = null;
+            currentDialogChanged = true;
+        }
+    }
 }

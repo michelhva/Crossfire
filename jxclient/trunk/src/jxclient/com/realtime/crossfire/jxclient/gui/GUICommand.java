@@ -51,6 +51,7 @@ public class GUICommand
         GUI_LEAVE_DIALOG,
         GUI_SEND_COMMAND,
         GUI_SPELLBELT,
+        DIALOG_CLOSE,
     }
 
     public GUICommand(GUIElement element, Command order, Object params)
@@ -96,6 +97,7 @@ public class GUICommand
         case GUI_LEAVE_DIALOG:
         case GUI_SEND_COMMAND:
         case GUI_SPELLBELT:
+        case DIALOG_CLOSE:
             break;
         }
 
@@ -183,6 +185,13 @@ public class GUICommand
                 }
             }
             break;
+
+        case DIALOG_CLOSE:
+            {
+                final DialogCloseParameter param = (DialogCloseParameter)myparams;
+                param.window.closeDialog(param.dialog);
+            }
+            break;
         }
     }
 
@@ -248,6 +257,31 @@ public class GUICommand
         {
             this.window = window;
             this.spellBeltItem = spellBeltItem;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#DIALOG_CLOSE} command.
+     */
+    public static class DialogCloseParameter
+    {
+        /** The window to operate on. */
+        private final JXCWindow window;
+
+        /** The dialog to close. */
+        private final Gui dialog;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window to operate on.
+         *
+         * @param dialog The dialog to close.
+         */
+        public DialogCloseParameter(final JXCWindow window, final Gui dialog)
+        {
+            this.window = window;
+            this.dialog = dialog;
         }
     }
 }
