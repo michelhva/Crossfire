@@ -97,7 +97,7 @@ public class GUICommandText extends GUIText implements KeyListener
                 {
                     ex.printStackTrace();
                 }
-                jxcWindow.setDialogStatus(JXCWindow.DLG_NONE);
+                jxcWindow.closeQueryDialog();
                 mytext = "";
                 setActive(false);
                 break;
