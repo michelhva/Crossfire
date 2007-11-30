@@ -100,3 +100,17 @@ x 1
 y 1
 magicmap green
 end
+
+Object chinese_dragon_spellcasting
+anim
+chinese_dr_spellcasting.x71
+chinese_dr_spellcasting.x72
+chinese_dr_spellcasting.x71
+chinese_dr_spellcasting.x72
+chinese_dr_spellcasting.x31
+chinese_dr_spellcasting.x32
+chinese_dr_spellcasting.x31
+chinese_dr_spellcasting.x32
+facings 2
+mina
+end
