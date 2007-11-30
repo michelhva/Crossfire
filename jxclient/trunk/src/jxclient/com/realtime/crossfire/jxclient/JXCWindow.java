@@ -89,8 +89,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private long framecount = 0;
 
-    private int mydialogstatus = DLG_NONE;
-
     private CrossfireServerConnection myserver = null;
 
     private GUIElement myactive_element = null;
@@ -368,7 +366,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         synchronized(mydialogstatus_sem)
         {
-            mydialogstatus = nv;
             switch (nv)
             {
             case DLG_NONE:
@@ -914,9 +911,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         default:
-            if (mydialogstatus == DLG_KEYBIND)
+            if (keyBindingState != null)
             {
-                assert keyBindingState != null;
                 keyBindingState.keyPressed(e.getKeyCode(), e.getModifiers());
             }
             else if (myactive_element != null)
@@ -961,9 +957,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         default:
-            if (mydialogstatus == DLG_KEYBIND)
+            if (keyBindingState != null)
             {
-                assert keyBindingState != null;
                 if (keyBindingState.keyReleased(keyBindings))
                 {
                     keyBindingState = null;
@@ -976,9 +971,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void keyTyped(final KeyEvent e)
     {
-        if (mydialogstatus == DLG_KEYBIND)
+        if (keyBindingState != null)
         {
-            assert keyBindingState != null;
             keyBindingState.keyTyped(e.getKeyChar());
             resetRepeatCount();
         }
