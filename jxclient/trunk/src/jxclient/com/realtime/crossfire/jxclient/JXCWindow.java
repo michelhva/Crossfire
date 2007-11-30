@@ -362,52 +362,57 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void setDialogStatus(final int nv)
     {
+        final Gui dialog;
         switch (nv)
         {
         case DLG_NONE:
-            jxcWindowRenderer.setCurrentDialog(null);
+            dialog = null;
             break;
 
         case DLG_BOOK:
-            jxcWindowRenderer.setCurrentDialog(mydialog_book);
+            dialog = mydialog_book;
             break;
 
         case DLG_QUERY:
-            jxcWindowRenderer.setCurrentDialog(mydialog_query);
+            dialog = mydialog_query;
             break;
 
         case DLG_KEYBIND:
-            jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+            dialog = mydialog_keybind;
             break;
 
         case DLG_CARD:
-            jxcWindowRenderer.setCurrentDialog(mydialog_card);
+            dialog = mydialog_card;
             break;
 
         case DLG_PAPER:
-            jxcWindowRenderer.setCurrentDialog(mydialog_paper);
+            dialog = mydialog_paper;
             break;
 
         case DLG_SIGN:
-            jxcWindowRenderer.setCurrentDialog(mydialog_sign);
+            dialog = mydialog_sign;
             break;
 
         case DLG_MONUMENT:
-            jxcWindowRenderer.setCurrentDialog(mydialog_monument);
+            dialog = mydialog_monument;
             break;
 
         case DLG_SCRIPTED_DIALOG:
-            jxcWindowRenderer.setCurrentDialog(mydialog_scripted_dialog);
+            dialog = mydialog_scripted_dialog;
             break;
 
         case DLG_MOTD:
-            jxcWindowRenderer.setCurrentDialog(mydialog_motd);
+            dialog = mydialog_motd;
             break;
+
+        default:
+            throw new AssertionError();
         }
 
+        jxcWindowRenderer.setCurrentDialog(dialog);
         if (nv != DLG_NONE)
         {
-            activateFirstTextArea(jxcWindowRenderer.getCurrentDialog());
+            activateFirstTextArea(dialog);
         }
     }
 
