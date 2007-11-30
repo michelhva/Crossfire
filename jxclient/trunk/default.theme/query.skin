@@ -1,6 +1,4 @@
 
-commandlist command_rinv_up
-
 picture background 23+350 38+200 200 100 dialog_background
 label_query message 35+350 60+200 180 32 font_stats13 WHITE
 command_text command 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline14
