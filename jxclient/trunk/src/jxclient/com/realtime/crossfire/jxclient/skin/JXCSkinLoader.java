@@ -1071,11 +1071,11 @@ public abstract class JXCSkinLoader implements JXCSkin
         final InputStream inputStream = getInputStream(filename);
         try
         {
-                picture = ImageIO.read(inputStream);
+            picture = ImageIO.read(inputStream);
         }
         finally
         {
-                inputStream.close();
+            inputStream.close();
         }
         if (picture == null)
         {
