@@ -78,7 +78,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public static final int DLG_NONE       = 0;
     public static final int DLG_BOOK       = 1;
-    public static final int DLG_QUERY      = 2;
     public static final int DLG_KEYBIND    = 3;
     public static final int DLG_CARD       = 4;
     public static final int DLG_PAPER      = 5;
@@ -371,10 +370,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         case DLG_BOOK:
             dialog = mydialog_book;
-            break;
-
-        case DLG_QUERY:
-            dialog = mydialog_query;
             break;
 
         case DLG_KEYBIND:
@@ -1211,7 +1206,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        setDialogStatus(DLG_QUERY);
+        jxcWindowRenderer.setCurrentDialog(mydialog_query);
+        activateFirstTextArea(mydialog_query);
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
