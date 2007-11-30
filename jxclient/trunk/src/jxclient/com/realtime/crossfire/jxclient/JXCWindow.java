@@ -95,8 +95,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final String semaphore_drawing = "semaphore_drawing";
 
-    private final String mydialogstatus_sem = "mydialogstatus_sem";
-
     private Spell mycurrentspell = null;
 
     private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
@@ -364,56 +362,53 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void setDialogStatus(final int nv)
     {
-        synchronized(mydialogstatus_sem)
+        switch (nv)
         {
-            switch (nv)
-            {
-            case DLG_NONE:
-                jxcWindowRenderer.setCurrentDialog(null);
-                break;
+        case DLG_NONE:
+            jxcWindowRenderer.setCurrentDialog(null);
+            break;
 
-            case DLG_BOOK:
-                jxcWindowRenderer.setCurrentDialog(mydialog_book);
-                break;
+        case DLG_BOOK:
+            jxcWindowRenderer.setCurrentDialog(mydialog_book);
+            break;
 
-            case DLG_QUERY:
-                jxcWindowRenderer.setCurrentDialog(mydialog_query);
-                jxcWindowRenderer.setHideInput(false);
-                break;
+        case DLG_QUERY:
+            jxcWindowRenderer.setCurrentDialog(mydialog_query);
+            jxcWindowRenderer.setHideInput(false);
+            break;
 
-            case DLG_KEYBIND:
-                jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
-                break;
+        case DLG_KEYBIND:
+            jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+            break;
 
-            case DLG_CARD:
-                jxcWindowRenderer.setCurrentDialog(mydialog_card);
-                break;
+        case DLG_CARD:
+            jxcWindowRenderer.setCurrentDialog(mydialog_card);
+            break;
 
-            case DLG_PAPER:
-                jxcWindowRenderer.setCurrentDialog(mydialog_paper);
-                break;
+        case DLG_PAPER:
+            jxcWindowRenderer.setCurrentDialog(mydialog_paper);
+            break;
 
-            case DLG_SIGN:
-                jxcWindowRenderer.setCurrentDialog(mydialog_sign);
-                break;
+        case DLG_SIGN:
+            jxcWindowRenderer.setCurrentDialog(mydialog_sign);
+            break;
 
-            case DLG_MONUMENT:
-                jxcWindowRenderer.setCurrentDialog(mydialog_monument);
-                break;
+        case DLG_MONUMENT:
+            jxcWindowRenderer.setCurrentDialog(mydialog_monument);
+            break;
 
-            case DLG_SCRIPTED_DIALOG:
-                jxcWindowRenderer.setCurrentDialog(mydialog_scripted_dialog);
-                break;
+        case DLG_SCRIPTED_DIALOG:
+            jxcWindowRenderer.setCurrentDialog(mydialog_scripted_dialog);
+            break;
 
-            case DLG_MOTD:
-                jxcWindowRenderer.setCurrentDialog(mydialog_motd);
-                break;
-            }
+        case DLG_MOTD:
+            jxcWindowRenderer.setCurrentDialog(mydialog_motd);
+            break;
+        }
 
-            if (nv != DLG_NONE)
-            {
-                activateFirstTextArea(jxcWindowRenderer.getCurrentDialog());
-            }
+        if (nv != DLG_NONE)
+        {
+            activateFirstTextArea(jxcWindowRenderer.getCurrentDialog());
         }
     }
 
