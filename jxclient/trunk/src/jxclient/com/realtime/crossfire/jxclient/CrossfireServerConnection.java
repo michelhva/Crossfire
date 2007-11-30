@@ -971,6 +971,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         case Stats.CS_STAT_POW:
                         case Stats.CS_STAT_GRACE:
                         case Stats.CS_STAT_MAXGRACE:
+                            final int statValue = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            stats.setStat(stat, (statValue&0x8000) != 0 ? statValue-0x10000 : statValue);
+                            break;
+
                         case Stats.CS_STAT_FLAGS:
                             final int value = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             stats.setStat(stat, value);
