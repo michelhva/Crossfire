@@ -20,6 +20,7 @@ public class StatsParser
     static
     {
         statTable.put("AC", Stats.CS_STAT_AC);
+        statTable.put("ARM", Stats.CS_STAT_ARMOUR);
         statTable.put("CHA", Stats.CS_STAT_CHA);
         statTable.put("CON", Stats.CS_STAT_CON);
         statTable.put("DAM", Stats.CS_STAT_DAM);
@@ -56,6 +57,7 @@ public class StatsParser
         statTable.put("TURN_UNDEAD", Stats.CS_STAT_TURN_UNDEAD);
         statTable.put("WC", Stats.CS_STAT_WC);
         statTable.put("WIS", Stats.CS_STAT_WIS);
+        statTable.put("WSPEED", Stats.CS_STAT_WEAP_SP);
     }
 
     /**
