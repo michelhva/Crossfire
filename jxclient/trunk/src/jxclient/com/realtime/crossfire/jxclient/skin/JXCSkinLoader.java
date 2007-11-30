@@ -91,6 +91,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final JXCSkinCache<Font> fonts = new JXCSkinCache<Font>("font");
 
     /**
+     * All defined images.
+     */
+    private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
+
+    /**
      * Check that the skin exists and can be accessed.
      *
      * @throws JXCSkinException if the skin does not exist or cannot be loaded
@@ -929,6 +934,15 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private BufferedImage getPicture(final String name) throws IOException
     {
+        try
+        {
+            return images.lookup(name);
+        }
+        catch (final IOException ex)
+        {
+            // ignore
+        }
+
         final String filename = "pictures/"+name+".png";
         final BufferedImage picture;
         final InputStream inputStream = getInputStream(filename);
@@ -943,6 +957,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         if (picture == null)
         {
             throw new IOException("picture '"+getURI(filename)+"' does not exist");
+        }
+        try
+        {
+            images.insert(name, picture);
+        }
+        catch (final IOException ex)
+        {
+            throw new AssertionError();
         }
         return picture;
     }
