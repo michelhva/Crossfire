@@ -76,8 +76,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int GUI_METASERVER = 1;
     public static final int GUI_MAIN       = 2;
 
-    public static final int DLG_BOOK       = 1;
-
     private long framecount = 0;
 
     private final CrossfireServerConnection myserver = new CrossfireServerConnection();
@@ -345,23 +343,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void setKeyShift(final int keyid, final boolean state)
     {
         key_shift[keyid] = state;
-    }
-
-    public void setDialogStatus(final int nv)
-    {
-        final Gui dialog;
-        switch (nv)
-        {
-        case DLG_BOOK:
-            dialog = mydialog_book;
-            break;
-
-        default:
-            throw new AssertionError();
-        }
-
-        jxcWindowRenderer.setCurrentDialog(dialog);
-        activateFirstTextArea(dialog);
     }
 
     /**
@@ -1129,7 +1110,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch (evt.getType())
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
-            setDialogStatus(DLG_BOOK);
+            jxcWindowRenderer.setCurrentDialog(mydialog_book);
+            activateFirstTextArea(mydialog_book);
             break;
 
         case CrossfireServerConnection.MSG_TYPE_CARD:
