@@ -83,7 +83,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int DLG_SIGN       = 6;
     public static final int DLG_MONUMENT   = 7;
     public static final int DLG_SCRIPTED_DIALOG = 8;
-    public static final int DLG_MOTD       = 9;
 
     private long framecount = 0;
 
@@ -105,7 +104,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private Gui mydialog_sign = new Gui();
     private Gui mydialog_monument = new Gui();
     private Gui mydialog_scripted_dialog = new Gui();
-    private Gui mydialog_motd = new Gui();
 
     private JXCSkin myskin = null;
 
@@ -389,10 +387,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         case DLG_SCRIPTED_DIALOG:
             dialog = mydialog_scripted_dialog;
-            break;
-
-        case DLG_MOTD:
-            dialog = mydialog_motd;
             break;
 
         default:
@@ -1266,7 +1260,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mydialog_sign = myskin.getDialogBook(4);
             mydialog_monument = myskin.getDialogBook(5);
             mydialog_scripted_dialog = myskin.getDialogBook(6);
-            mydialog_motd = myskin.getDialogBook(7);
 
             mydialog_keybind = myskin.getDialogKeyBind();
         }
