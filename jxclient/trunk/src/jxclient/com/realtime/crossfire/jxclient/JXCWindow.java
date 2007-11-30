@@ -89,8 +89,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private long framecount = 0;
 
-    private final int mycurrentgui = GUI_START;
-
     private int mydialogstatus = DLG_NONE;
 
     private CrossfireServerConnection myserver = null;
