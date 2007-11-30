@@ -124,7 +124,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
     public void mouseClicked(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
-        switch(e.getButton())
+        switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
             setActive(true);

@@ -595,7 +595,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return;
         }
 
-        switch(e.getKeyCode())
+        switch (e.getKeyCode())
         {
         case KeyEvent.VK_F1:
             launchSpellFromBelt(0);
@@ -831,7 +831,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return;
         }
 
-        switch(e.getKeyChar())
+        switch (e.getKeyChar())
         {
         case 'a':
             sendNcom("apply");
@@ -1129,7 +1129,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         final int y = e.getY()-jxcWindowRenderer.getOffsetY();
         final int b = e.getButton();
         final GUIElement elected;
-        switch(b)
+        switch (b)
         {
         case MouseEvent.BUTTON1:
         case MouseEvent.BUTTON2:

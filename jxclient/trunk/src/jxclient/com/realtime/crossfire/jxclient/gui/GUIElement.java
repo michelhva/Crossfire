@@ -217,7 +217,7 @@ public abstract class GUIElement implements MouseListener
         final int x = e.getX();
         final int y = e.getY();
         final int b = e.getButton();
-        switch(b)
+        switch (b)
         {
         case MouseEvent.BUTTON1:
             System.out.println("Hit element : "+myname);

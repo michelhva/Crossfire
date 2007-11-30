@@ -540,7 +540,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int index = parseInt(args[12]);
                             final Font font = fonts.lookup(args[13]);
                             final GUIItem element;
-                            if(type.equals("floor"))
+                            if (type.equals("floor"))
                             {
                                 element = new GUIItemFloor(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
@@ -866,7 +866,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 if (!matcher.matches())
                 {
                     final int valueRest = Integer.parseInt(rest);
-                    if(negative)
+                    if (negative)
                     {
                         value -= valueRest;
                     }
@@ -878,7 +878,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 }
 
                 final int valueRest = Integer.parseInt(matcher.group(1));
-                if(negative)
+                if (negative)
                 {
                     value -= valueRest;
                 }

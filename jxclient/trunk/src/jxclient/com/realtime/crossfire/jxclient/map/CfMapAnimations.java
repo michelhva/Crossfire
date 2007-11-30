@@ -378,7 +378,7 @@ public class CfMapAnimations
         public void draw(final Location location, final int oldFaceIndex)
         {
             final int faceIndex = index/speed;
-            if(faceIndex == oldFaceIndex)
+            if (faceIndex == oldFaceIndex)
             {
                 return;
             }
