@@ -77,11 +77,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int GUI_MAIN       = 2;
 
     public static final int DLG_BOOK       = 1;
-    public static final int DLG_CARD       = 4;
-    public static final int DLG_PAPER      = 5;
-    public static final int DLG_SIGN       = 6;
-    public static final int DLG_MONUMENT   = 7;
-    public static final int DLG_SCRIPTED_DIALOG = 8;
 
     private long framecount = 0;
 
@@ -98,11 +93,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private Gui mydialog_query = new Gui();
     private Gui mydialog_book = new Gui();
     private Gui mydialog_keybind = new Gui();
-    private Gui mydialog_card = new Gui();
-    private Gui mydialog_paper = new Gui();
-    private Gui mydialog_sign = new Gui();
-    private Gui mydialog_monument = new Gui();
-    private Gui mydialog_scripted_dialog = new Gui();
 
     private JXCSkin myskin = null;
 
@@ -364,26 +354,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
         case DLG_BOOK:
             dialog = mydialog_book;
-            break;
-
-        case DLG_CARD:
-            dialog = mydialog_card;
-            break;
-
-        case DLG_PAPER:
-            dialog = mydialog_paper;
-            break;
-
-        case DLG_SIGN:
-            dialog = mydialog_sign;
-            break;
-
-        case DLG_MONUMENT:
-            dialog = mydialog_monument;
-            break;
-
-        case DLG_SCRIPTED_DIALOG:
-            dialog = mydialog_scripted_dialog;
             break;
 
         default:
@@ -1252,11 +1222,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             newGui = myskin.getMainInterface();
             mydialog_query = myskin.getDialogQuery();
             mydialog_book = myskin.getDialogBook(1);
-            mydialog_card = myskin.getDialogBook(2);
-            mydialog_paper = myskin.getDialogBook(3);
-            mydialog_sign = myskin.getDialogBook(4);
-            mydialog_monument = myskin.getDialogBook(5);
-            mydialog_scripted_dialog = myskin.getDialogBook(6);
 
             mydialog_keybind = myskin.getDialogKeyBind();
         }
