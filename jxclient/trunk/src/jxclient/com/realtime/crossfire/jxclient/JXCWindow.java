@@ -965,7 +965,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 if (keyBindingState.keyReleased(keyBindings))
                 {
                     keyBindingState = null;
-                    setDialogStatus(DLG_NONE);
+                    jxcWindowRenderer.closeDialog(mydialog_keybind);
                 }
             }
             break;
