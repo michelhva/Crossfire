@@ -35,12 +35,12 @@ import java.awt.image.BufferedImage;
  */
 public class GUICommandText extends GUIText implements KeyListener
 {
-    public GUICommandText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, String txt)
+    public GUICommandText(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picactive, final BufferedImage picinactive, final Font nf, final String txt)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, txt);
     }
 
-    public void keyPressed(KeyEvent e)
+    public void keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -66,7 +66,7 @@ public class GUICommandText extends GUIText implements KeyListener
             case PLAYING:
                 if (mytext.startsWith("bind "))
                 {
-                    String cmdl = mytext.substring(5);
+                    final String cmdl = mytext.substring(5);
                     final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
                     ((JXCWindow)e.getSource()).createKeyBinding(commands);
                 }
@@ -112,7 +112,7 @@ public class GUICommandText extends GUIText implements KeyListener
             break;
 
         default:
-            char chr = e.getKeyChar();
+            final char chr = e.getKeyChar();
             mytext = mytext+chr;
             render();
             break;
