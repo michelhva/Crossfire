@@ -48,7 +48,6 @@ public class GUICommand
         CONNECT,
         GUI_META,
         GUI_START,
-        GUI_LEAVE_DIALOG,
         GUI_SEND_COMMAND,
         GUI_SPELLBELT,
         DIALOG_CLOSE,
@@ -94,7 +93,6 @@ public class GUICommand
         case CONNECT:
         case GUI_META:
         case GUI_START:
-        case GUI_LEAVE_DIALOG:
         case GUI_SEND_COMMAND:
         case GUI_SPELLBELT:
         case DIALOG_CLOSE:
@@ -148,10 +146,6 @@ public class GUICommand
 
         case GUI_START:
             ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_START);
-            break;
-
-        case GUI_LEAVE_DIALOG:
-            ((JXCWindow)myparams).setDialogStatus(JXCWindow.DLG_NONE);
             break;
 
         case GUI_SEND_COMMAND:

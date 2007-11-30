@@ -428,7 +428,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
                             final Object params;
                             if (command == GUICommand.Command.CONNECT
-                            || command == GUICommand.Command.GUI_LEAVE_DIALOG
                             || command == GUICommand.Command.GUI_META
                             || command == GUICommand.Command.GUI_START
                             || command == GUICommand.Command.QUIT)
