@@ -76,7 +76,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int GUI_METASERVER = 1;
     public static final int GUI_MAIN       = 2;
 
-    public static final int DLG_NONE       = 0;
     public static final int DLG_BOOK       = 1;
     public static final int DLG_KEYBIND    = 3;
     public static final int DLG_CARD       = 4;
@@ -364,10 +363,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         final Gui dialog;
         switch (nv)
         {
-        case DLG_NONE:
-            dialog = null;
-            break;
-
         case DLG_BOOK:
             dialog = mydialog_book;
             break;
@@ -405,10 +400,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
 
         jxcWindowRenderer.setCurrentDialog(dialog);
-        if (nv != DLG_NONE)
-        {
-            activateFirstTextArea(dialog);
-        }
+        activateFirstTextArea(dialog);
     }
 
     /**
@@ -419,6 +411,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void closeDialog(final Gui dialog)
     {
         jxcWindowRenderer.closeDialog(dialog);
+    }
+
+    /**
+     * Close the "query" dialog. Does nothing if the dialog is not open.
+     */
+    public void closeQueryDialog()
+    {
+        closeDialog(mydialog_query);
     }
 
     private void activateFirstTextArea(final Gui gui)
