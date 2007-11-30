@@ -371,7 +371,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             faces[i] = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         }
                         if (pos != packet.length) break;
-                        if((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
+                        if ((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
                         animations.addAnimation(num&0x1FFF, flags, faces);
                     }
                     return;

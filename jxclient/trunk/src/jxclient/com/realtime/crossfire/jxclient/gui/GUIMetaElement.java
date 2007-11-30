@@ -104,7 +104,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     public void mouseClicked(MouseEvent e)
     {
         int b = e.getButton();
-        switch(b)
+        switch (b)
         {
         case MouseEvent.BUTTON1:
             active = true;

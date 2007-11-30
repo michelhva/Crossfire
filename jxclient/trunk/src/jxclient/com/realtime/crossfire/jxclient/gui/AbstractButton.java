@@ -63,7 +63,7 @@ public abstract class AbstractButton extends GUIElement
     public void mouseReleased(final MouseEvent e)
     {
         final int b = e.getButton();
-        switch(b)
+        switch (b)
         {
         case MouseEvent.BUTTON1:
             commandList.execute();
@@ -84,7 +84,7 @@ public abstract class AbstractButton extends GUIElement
     public void mousePressed(final MouseEvent e)
     {
         final int b = e.getButton();
-        switch(b)
+        switch (b)
         {
         case MouseEvent.BUTTON1:
             setActive(true);

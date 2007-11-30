@@ -61,7 +61,7 @@ public class GUICommandText extends GUIText implements KeyListener
             break;
 
         case KeyEvent.VK_ENTER:
-            switch(((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
+            switch (((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
             {
             case PLAYING:
                 if (mytext.startsWith("bind "))
