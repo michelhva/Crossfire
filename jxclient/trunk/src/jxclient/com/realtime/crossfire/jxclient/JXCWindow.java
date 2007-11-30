@@ -77,7 +77,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int GUI_MAIN       = 2;
 
     public static final int DLG_BOOK       = 1;
-    public static final int DLG_KEYBIND    = 3;
     public static final int DLG_CARD       = 4;
     public static final int DLG_PAPER      = 5;
     public static final int DLG_SIGN       = 6;
@@ -257,13 +256,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void createKeyBinding(final GUICommandList cmdlist)
     {
         keyBindingState = new KeyBindingState(cmdlist);
-        setDialogStatus(DLG_KEYBIND);
+        jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+        activateFirstTextArea(mydialog_keybind);
     }
 
     public void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
-        setDialogStatus(DLG_KEYBIND);
+        jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+        activateFirstTextArea(mydialog_keybind);
     }
 
     private void loadSpellBelt(final String filename)
@@ -363,10 +364,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
         case DLG_BOOK:
             dialog = mydialog_book;
-            break;
-
-        case DLG_KEYBIND:
-            dialog = mydialog_keybind;
             break;
 
         case DLG_CARD:
