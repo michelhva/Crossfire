@@ -61,42 +61,43 @@ public class GUICommandText extends GUIText implements KeyListener
             break;
 
         case KeyEvent.VK_ENTER:
-            switch (((JXCWindow)e.getSource()).getCrossfireServerConnection().getStatus())
+            final JXCWindow jxcWindow = (JXCWindow)e.getSource();
+            switch (jxcWindow.getCrossfireServerConnection().getStatus())
             {
             case PLAYING:
                 if (mytext.startsWith("bind "))
                 {
                     final String cmdl = mytext.substring(5);
                     final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
-                    ((JXCWindow)e.getSource()).createKeyBinding(commands);
+                    jxcWindow.createKeyBinding(commands);
                 }
                 else if (mytext.startsWith("unbind"))
                 {
-                    ((JXCWindow)e.getSource()).removeKeyBinding();
+                    jxcWindow.removeKeyBinding();
                 }
                 else if (mytext.startsWith("script "))
                 {
-                    ((JXCWindow)e.getSource()).runScript(mytext.substring(7));
+                    jxcWindow.runScript(mytext.substring(7));
                 }
                 else
                 {
-                    ((JXCWindow)e.getSource()).sendNcom(mytext);
+                    jxcWindow.sendNcom(mytext);
                 }
                 mytext = "";
                 setActive(false);
                 break;
 
             case QUERY:
-                ((JXCWindow)e.getSource()).getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
+                jxcWindow.getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
                 try
                 {
-                    ((JXCWindow)e.getSource()).getCrossfireServerConnection().sendReply(mytext);
+                    jxcWindow.getCrossfireServerConnection().sendReply(mytext);
                 }
                 catch (final Exception ex)
                 {
                     ex.printStackTrace();
                 }
-                ((JXCWindow)e.getSource()).setDialogStatus(JXCWindow.DLG_NONE);
+                jxcWindow.setDialogStatus(JXCWindow.DLG_NONE);
                 mytext = "";
                 setActive(false);
                 break;
