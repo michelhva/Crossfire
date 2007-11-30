@@ -31,10 +31,12 @@ import com.realtime.crossfire.jxclient.gui.Gui;
  */
 public interface JXCSkin
 {
-    public Gui getDialogKeyBind(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
-    public Gui getDialogQuery(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
-    public Gui getDialogBook(CrossfireServerConnection s, JXCWindow p, int booknr) throws JXCSkinException;
-    public Gui getMainInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
-    public Gui getMetaInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
-    public Gui getStartInterface(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    void load(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+
+    Gui getDialogKeyBind() throws JXCSkinException;
+    Gui getDialogQuery() throws JXCSkinException;
+    Gui getDialogBook(int booknr) throws JXCSkinException;
+    Gui getMainInterface() throws JXCSkinException;
+    Gui getMetaInterface() throws JXCSkinException;
+    Gui getStartInterface() throws JXCSkinException;
 }

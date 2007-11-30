@@ -89,7 +89,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private long framecount = 0;
 
-    private CrossfireServerConnection myserver = null;
+    private final CrossfireServerConnection myserver = new CrossfireServerConnection();
 
     private GUIElement myactive_element = null;
 
@@ -412,6 +412,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
     }
 
+    /**
+     * Close a dialog. Does nothing if the given dialog is not open.
+     *
+     * @param dialog The dialog to close.
+     */
+    public void closeDialog(final Gui dialog)
+    {
+        jxcWindowRenderer.closeDialog(dialog);
+    }
+
     private void activateFirstTextArea(final Gui gui)
     {
         final GUIElement textArea = gui.getFirstTextArea();
@@ -513,13 +523,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void connect(final String hostname, final int port)
     {
         this.hostname = hostname;
-        myserver = new CrossfireServerConnection(hostname, port);
         myserver.addCrossfireDrawextinfoListener(this);
         myserver.addCrossfireQueryListener(this);
         setTitle(TITLE_PREFIX+" - "+hostname);
         ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
         initGUI(GUI_MAIN);
-        myserver.connect();
+        myserver.connect(hostname, port);
         Faces.setFacesCallback(myserver);
     }
 
@@ -1213,7 +1222,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         Gui newGui;
         try
         {
-            newGui = myskin.getStartInterface(myserver, this);
+            newGui = myskin.getStartInterface();
         }
         catch (final JXCSkinException e)
         {
@@ -1231,7 +1240,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         Gui newGui;
         try
         {
-            newGui = myskin.getMetaInterface(myserver, this);
+            newGui = myskin.getMetaInterface();
         }
         catch (final JXCSkinException e)
         {
@@ -1249,17 +1258,17 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         Gui newGui;
         try
         {
-            newGui = myskin.getMainInterface(myserver, this);
-            mydialog_query = myskin.getDialogQuery(myserver, this);
-            mydialog_book = myskin.getDialogBook(myserver, this, 1);
-            mydialog_card = myskin.getDialogBook(myserver, this, 2);
-            mydialog_paper = myskin.getDialogBook(myserver, this, 3);
-            mydialog_sign = myskin.getDialogBook(myserver, this, 4);
-            mydialog_monument = myskin.getDialogBook(myserver, this, 5);
-            mydialog_scripted_dialog = myskin.getDialogBook(myserver, this, 6);
-            mydialog_motd = myskin.getDialogBook(myserver, this, 7);
+            newGui = myskin.getMainInterface();
+            mydialog_query = myskin.getDialogQuery();
+            mydialog_book = myskin.getDialogBook(1);
+            mydialog_card = myskin.getDialogBook(2);
+            mydialog_paper = myskin.getDialogBook(3);
+            mydialog_sign = myskin.getDialogBook(4);
+            mydialog_monument = myskin.getDialogBook(5);
+            mydialog_scripted_dialog = myskin.getDialogBook(6);
+            mydialog_motd = myskin.getDialogBook(7);
 
-            mydialog_keybind = myskin.getDialogKeyBind(myserver, this);
+            mydialog_keybind = myskin.getDialogKeyBind();
         }
         catch (final JXCSkinException e)
         {
@@ -1415,6 +1424,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 // fallback: built-in resource
                 myskin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
             }
+            myskin.load(myserver, this);
         }
         catch (final JXCSkinException ex)
         {

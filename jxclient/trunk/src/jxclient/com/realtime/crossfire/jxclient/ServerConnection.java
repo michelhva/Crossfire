@@ -42,10 +42,6 @@ public abstract class ServerConnection extends Thread
 
     private final List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
 
-    private final String hostname;
-
-    private final int port;
-
     public enum Status
     {
         /**
@@ -136,26 +132,13 @@ public abstract class ServerConnection extends Thread
     }
 
     /**
-     * Creates a new ServerConnection that will be used to communicate with the
-     * server located at the given hostname:port address.
-     * Note that the connection is not performed by the constructor - you need
-     * to call the connect() method.
-     * @param hostname The hostname (or IP address) of the server.
-     * @param port The TCP port on which the server is listening.
-     * @since 1.0
+     * Attempts to connect the client to a server.
+     *
+     * @param hostname The hostname to connect to.
+     *
+     * @param port The port to connect to.
      */
-    protected ServerConnection(final String hostname, final int port)
-    {
-        this.hostname = hostname;
-        this.port = port;
-    }
-
-    /**
-     * Attempts to connect the client to the server using the previously defined
-     * hostname:port address.
-     * @since 1.0
-     */
-    public void connect()
+    public void connect(final String hostname, final int port)
     {
         try
         {
