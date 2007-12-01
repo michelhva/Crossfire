@@ -346,6 +346,23 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Toggle a dialog.
+     *
+     * @param dialog The dialog to toggle.
+     */
+    public void toggleDialog(final Gui dialog)
+    {
+        if (jxcWindowRenderer.toggleDialog(dialog))
+        {
+            if (dialog == mydialog_query)
+            {
+                jxcWindowRenderer.setHideInput(false);
+            }
+            activateFirstTextArea(dialog);
+        }
+    }
+
+    /**
      * Close a dialog. Does nothing if the given dialog is not open.
      *
      * @param dialog The dialog to close.

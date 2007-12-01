@@ -337,4 +337,24 @@ public class JXCWindowRenderer
             openDialogsChanged = true;
         }
     }
+
+    /**
+     * Toggle a dialog: if the dialog is not shown, show it; else hide it.
+     *
+     * @param dialog The dialog to toggle.
+     *
+     * @return Whether the dialog is shown.
+     */
+    public boolean toggleDialog(final Gui dialog)
+    {
+        openDialogsChanged = true;
+
+        if (openDialogs.remove(dialog))
+        {
+            return false;
+        }
+
+        openDialogs.add(dialog);
+        return true;
+    }
 }
