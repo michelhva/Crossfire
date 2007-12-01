@@ -248,4 +248,22 @@ public class Gui
 
         return false;
     }
+
+    /**
+     * Return the first {@link GUIText} gui element of this gui and make it
+     * active.
+     *
+     * @return The <code>GUIText</code> element, or <code>null</code> if this
+     * gui does not contain any <code>GUIText</code> gui elements.
+     */
+    public GUIText activateFirstTextArea()
+    {
+        final GUIText textArea = getFirstTextArea();
+        if (textArea != null)
+        {
+            textArea.setActive(true);
+            setActiveElement(textArea);
+        }
+        return textArea;
+    }
 }
