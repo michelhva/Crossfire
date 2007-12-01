@@ -72,6 +72,17 @@ public class GUILog extends GUIElement implements GUIScrollable
     private final Fonts fonts;
 
     /**
+     * The default color to use for text message not specifying a color.
+     */
+    private final Color defaultColor;
+
+    /**
+     * The color to replace with {@link #defaultColor}. It should be set to the
+     * background color of the text field.
+     */
+    private final Color ignoreColor;
+
+    /**
      * The {@link FontRenderContext} associated to {@link #buffer}.
      */
     private FontRenderContext context = null;
@@ -165,12 +176,19 @@ public class GUILog extends GUIElement implements GUIScrollable
      * @param picture The background image; may be <code>null</code> if unused.
      *
      * @param Fonts The <code>Fonts</code> instance for looking up fonts.
+     *
+     * @param defaultColor The default color to use for text message not
+     * specifying a color.
+     *
+     * @param The color to replace with <code>defaultColor</code>.
      */
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts)
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts, final Color defaultColor, final Color ignoreColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground = picture;
         this.fonts = fonts;
+        this.defaultColor = defaultColor;
+        this.ignoreColor = ignoreColor;
         createBuffer();
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
@@ -325,7 +343,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         for (final Segment segment : line)
         {
             final Color color = segment.getColor();
-            g.setColor(color == null || color == Color.BLACK ? Color.WHITE : color);
+            g.setColor(color == ignoreColor ? defaultColor : color);
             final Font font = segment.getFont(fonts);
             g.setFont(font);
             g.drawString(segment.getText(), segment.getX(), y+segment.getY());
@@ -341,14 +359,14 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param color The color index to look up.
      *
-     * @return The color, or <code>null</code> to use the default color.
+     * @return The color.
      */
     private Color findColor(final int color)
     {
         switch (color)
         {
         case 0: //black
-            return null;
+            return Color.BLACK;
         case 1: //white
             return Color.WHITE;
         case 2: //navy blue
@@ -374,7 +392,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         case 12: //khaki
             return Color.WHITE;
         default:
-            return null;
+            return defaultColor;
         }
     }
 
