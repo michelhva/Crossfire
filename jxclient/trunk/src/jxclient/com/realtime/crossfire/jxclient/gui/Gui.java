@@ -38,11 +38,6 @@ public class Gui
     private final List<GUIElement> elements = new ArrayList<GUIElement>();
 
     /**
-     * The tooltip to use, or <code>null</code> if no tooltips should be shown.
-     */
-    private GUILabel tooltip = null;
-
-    /**
      * Remove all {@link GUIElement}s from this gui.
      */
     public void clear()
@@ -89,16 +84,6 @@ public class Gui
                 }
             }
         }
-
-        if (tooltip != null && tooltip.isVisible())
-        {
-            final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized(bufferedImage)
-            {
-                g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
-                tooltip.resetChanged();
-            }
-        }
     }
 
     /**
@@ -118,7 +103,7 @@ public class Gui
             }
         }
 
-        return tooltip != null && tooltip.isVisible() && tooltip.hasChanged();
+        return false;
     }
 
     /**
@@ -168,27 +153,5 @@ public class Gui
         }
 
         return elected;
-    }
-
-    /**
-     * Set the tooltip to use, or <code>null</code> if no tooltips should be
-     * shown.
-     *
-     * @param tooltip The tooltip to use, or <code>null</code>.
-     */
-    public void setTooltip(final GUILabel tooltip)
-    {
-        this.tooltip = tooltip;
-    }
-
-    /**
-     * Return the tooltip to use, or <code>null</code> if no tooltips should be
-     * shown.
-     *
-     * @return The tooltip, or <code>null</code>.
-     */
-    public GUILabel getTooltip()
-    {
-        return tooltip;
     }
 }

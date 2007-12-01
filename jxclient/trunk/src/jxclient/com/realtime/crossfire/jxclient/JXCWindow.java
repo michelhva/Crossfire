@@ -1367,13 +1367,24 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Set the tooltip to use, or <code>null</code> if no tooltips should be
+     * shown.
+     *
+     * @param tooltip The tooltip to use, or <code>null</code>.
+     */
+    public void setTooltip(final GUILabel tooltip)
+    {
+        jxcWindowRenderer.setTooltip(tooltip);
+    }
+
+    /**
      * Return the tooltip {@link GUILabel} for this window.
      *
      * @return The tooltip label for this window.
      */
     public GUILabel getTooltip()
     {
-        return jxcWindowRenderer.getCurrentGui().getTooltip();
+        return jxcWindowRenderer.getTooltip();
     }
 
     /**
