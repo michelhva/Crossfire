@@ -1428,12 +1428,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     private GUIText activateCommandInput()
     {
-        final GUIElement textArea = jxcWindowRenderer.getCurrentGui().activateFirstTextArea();
-        if (textArea != null && textArea instanceof GUIText)
-        {
-            return (GUIText)textArea;
-        }
-
-        return null;
+        return jxcWindowRenderer.getCurrentGui().activateFirstTextArea();
     }
 }
