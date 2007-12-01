@@ -832,10 +832,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         case 'm':
             {
-                final GUIElement textArea = activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-                if (textArea != null && textArea instanceof GUIText)
+                final GUIText textArea = activateCommandInput();
+                if (textArea != null)
                 {
-                    ((GUIText)textArea).setText("maps ");
+                    textArea.setText("maps ");
                 }
             }
             break;
@@ -866,15 +866,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         case '/':
         case '\'':
-            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+            activateCommandInput();
             break;
 
         case '"':
             {
-                final GUIElement textArea = activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-                if (textArea != null && textArea instanceof GUIText)
+                final GUIText textArea = activateCommandInput();
+                if (textArea != null)
                 {
-                    ((GUIText)textArea).setText("say ");
+                    textArea.setText("say ");
                 }
             }
             break;
@@ -1428,5 +1428,23 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public int getWindowHeight()
     {
         return windowHeight;
+    }
+
+    /**
+     * Activate the command input text field. If the skin defined more than one
+     * input field, the first matching one is selected.
+     *
+     * @return The command input text field, or <code>null</code> if the skin
+     * has no command input text field defined.
+     */
+    private GUIText activateCommandInput()
+    {
+        final GUIElement textArea = activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+        if (textArea != null && textArea instanceof GUIText)
+        {
+            return (GUIText)textArea;
+        }
+
+        return null;
     }
 }
