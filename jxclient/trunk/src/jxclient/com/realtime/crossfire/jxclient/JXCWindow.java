@@ -271,7 +271,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                         int sp = ois.readInt();
                         int st = ois.readInt();
                         if (sp > -1)
+                        {
                             myspellbelt[i] = new SpellBeltItem(sp, st);
+                        }
                     }
                 }
                 finally
@@ -559,7 +561,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void handleKeyPress(final KeyEvent e)
     {
         if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
+        {
             return;
+        }
 
         final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
         if (keyBinding != null)
@@ -795,7 +799,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private void handleKeyType(final KeyEvent e)
     {
         if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
+        {
             return;
+        }
 
         final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
         if (keyBinding != null)
@@ -903,7 +909,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 {
                     ((KeyListener)myactive_element).keyPressed(e);
                     if (!myactive_element.isActive())
+                    {
                         myactive_element = null;
+                    }
                 }
                 else
                 {
@@ -1123,7 +1131,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void deactivateCurrentElement()
     {
         if (myactive_element != null)
+        {
             myactive_element.setActive(false);
+        }
         myactive_element = null;
     }
 
