@@ -439,6 +439,15 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                                 params = window;
                             }
+                            else if (command == GUICommand.Command.DIALOG_OPEN)
+                            {
+                                if (args.length != 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                params = new GUICommand.DialogOpenParameter(window, addDialog(args[4]));
+                            }
                             else if (command == GUICommand.Command.DIALOG_TOGGLE)
                             {
                                 if (args.length != 5)
