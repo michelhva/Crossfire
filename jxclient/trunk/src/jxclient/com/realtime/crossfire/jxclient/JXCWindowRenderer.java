@@ -28,6 +28,10 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferStrategy;
 import java.awt.Insets;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 /**
  * @author Andreas Kirschbaum
@@ -43,11 +47,15 @@ public class JXCWindowRenderer
     private DisplayMode displayMode = null;
 
     /**
-     * If set, {@link #currentDialog} has changed.
+     * If set, the content of {@link #openDialogs} has changed.
      */
-    private boolean currentDialogChanged = false;
+    private boolean openDialogsChanged = false;
 
-    private Gui currentDialog = null;
+    /**
+     * Currently opened dialogs. The ordering is the painting order: the
+     * topmost dialog is at the end.
+     */
+    private LinkedList<Gui> openDialogs = new LinkedList<Gui>();
 
     /**
      * If set, {@link #currentGui} has changed.
@@ -191,10 +199,10 @@ public class JXCWindowRenderer
 
     private void redrawGUIDialog(final Graphics g)
     {
-        currentDialogChanged = false;
-        if (currentDialog != null)
+        openDialogsChanged = false;
+        for (final Gui dialog : openDialogs)
         {
-            currentDialog.redraw(g, jxcWindow);
+            dialog.redraw(g, jxcWindow);
         }
     }
 
@@ -205,19 +213,38 @@ public class JXCWindowRenderer
     }
 
     /**
-     * Open a dialog. Does nothing if the dialog is shown.
+     * Open a dialog. Raises an already opened dialog.
      *
      * @param dialog The dialog to show.
      */
     public void openDialog(final Gui dialog)
     {
-        currentDialog = dialog;
-        currentDialogChanged = true;
+        if (openDialogs.size() > 0 && openDialogs.getLast() == dialog)
+        {
+            return;
+        }
+
+        openDialogs.remove(dialog);
+        openDialogs.add(dialog);
+        openDialogsChanged = true;
     }
 
-    public Gui getCurrentDialog()
+    /**
+     * Return all open dialogs in reverse painting order; the first element is
+     * the top-most dialog.
+     *
+     * @return The open dialogs; client code must not modify this list.
+     */
+    public Iterable<Gui> getOpenDialogs()
     {
-        return currentDialog;
+        return new Iterable<Gui>()
+        {
+            /** {@inheritDoc} */
+            public Iterator<Gui> iterator()
+            {
+                return openDialogs.descendingIterator();
+            }
+        };
     }
 
     public void setCurrentGui(final Gui gui)
@@ -238,7 +265,7 @@ public class JXCWindowRenderer
      */
     private boolean needRedraw()
     {
-        if (currentDialogChanged)
+        if (openDialogsChanged)
         {
             return true;
         }
@@ -253,25 +280,28 @@ public class JXCWindowRenderer
                 return true;
         }
 
-        if (currentDialog != null && currentDialog.needRedraw())
+        for (final Gui dialog : openDialogs)
         {
-            return true;
+            if (dialog.needRedraw())
+            {
+                return true;
+            }
         }
 
         return false;
     }
 
     /**
-     * Enable or disable hidden text in the first input field of {@link
-     * #currentDialog}.
+     * Enable or disable hidden text in the first input field of the top-most
+     * dialog.
      *
      * @param hideInput If set, hide input; else show input.
      */
     public void setHideInput(final boolean hideInput)
     {
-        if (currentDialog != null)
+        if (openDialogs.size() > 0)
         {
-            currentDialog.getFirstTextArea().setHideInput(hideInput);
+            openDialogs.getLast().getFirstTextArea().setHideInput(hideInput);
         }
     }
 
@@ -302,10 +332,9 @@ public class JXCWindowRenderer
      */
     public void closeDialog(final Gui dialog)
     {
-        if (currentDialog == dialog)
+        if (openDialogs.remove(dialog))
         {
-            currentDialog = null;
-            currentDialogChanged = true;
+            openDialogsChanged = true;
         }
     }
 }

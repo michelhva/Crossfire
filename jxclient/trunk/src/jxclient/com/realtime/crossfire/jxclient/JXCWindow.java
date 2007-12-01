@@ -1045,10 +1045,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         GUIElement elected = null;
 
-        final Gui currentDialog = jxcWindowRenderer.getCurrentDialog();
-        if (currentDialog != null)
+        for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
         {
-            elected = manageMouseEvents(currentDialog, e, ignoreButtons);
+            elected = manageMouseEvents(dialog, e, ignoreButtons);
+            if (elected != null)
+            {
+                break;
+            }
         }
 
         if (elected == null)
