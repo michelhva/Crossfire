@@ -204,7 +204,12 @@ public class JXCWindowRenderer
         g.fillRect(0, 0, jxcWindow.getWindowWidth(), jxcWindow.getWindowHeight());
     }
 
-    public void setCurrentDialog(final Gui dialog)
+    /**
+     * Open a dialog. Does nothing if the dialog is shown.
+     *
+     * @param dialog The dialog to show.
+     */
+    public void openDialog(final Gui dialog)
     {
         currentDialog = dialog;
         currentDialogChanged = true;

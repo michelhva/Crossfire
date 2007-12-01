@@ -244,14 +244,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void createKeyBinding(final GUICommandList cmdlist)
     {
         keyBindingState = new KeyBindingState(cmdlist);
-        jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+        jxcWindowRenderer.openDialog(mydialog_keybind);
         activateFirstTextArea(mydialog_keybind);
     }
 
     public void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
-        jxcWindowRenderer.setCurrentDialog(mydialog_keybind);
+        jxcWindowRenderer.openDialog(mydialog_keybind);
         activateFirstTextArea(mydialog_keybind);
     }
 
@@ -1110,7 +1110,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch (evt.getType())
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
-            jxcWindowRenderer.setCurrentDialog(mydialog_book);
+            jxcWindowRenderer.openDialog(mydialog_book);
             activateFirstTextArea(mydialog_book);
             break;
 
@@ -1149,7 +1149,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        jxcWindowRenderer.setCurrentDialog(mydialog_query);
+        jxcWindowRenderer.openDialog(mydialog_query);
         activateFirstTextArea(mydialog_query);
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
