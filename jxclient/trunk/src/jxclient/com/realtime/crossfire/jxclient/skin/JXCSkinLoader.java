@@ -810,7 +810,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUILabel tooltipLabel = new GUILabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, "");
                             tooltipLabel.setAutoResize(true);
                             tooltipLabel.setBackgroundColor(Color.WHITE);
-                            gui.setTooltip(tooltipLabel);
+                            window.setTooltip(tooltipLabel);
                         }
                         else
                         {

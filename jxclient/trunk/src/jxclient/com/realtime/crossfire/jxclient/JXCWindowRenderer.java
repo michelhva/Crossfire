@@ -20,12 +20,14 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
 import java.awt.Insets;
 import java.util.Collection;
@@ -63,6 +65,11 @@ public class JXCWindowRenderer
     private boolean currentGuiChanged = false;
 
     private Gui currentGui = new Gui();
+
+    /**
+     * The tooltip to use, or <code>null</code> if no tooltips should be shown.
+     */
+    private GUILabel tooltip = null;
 
     /**
      * If set, force a full repaint.
@@ -169,6 +176,7 @@ public class JXCWindowRenderer
                 }
                 redrawGUIBasic(g);
                 redrawGUIDialog(g);
+                redrawTooltip(g);
                 g.dispose();
             }
             while (bufferStrategy.contentsLost());
@@ -203,6 +211,19 @@ public class JXCWindowRenderer
         for (final Gui dialog : openDialogs)
         {
             dialog.redraw(g, jxcWindow);
+        }
+    }
+
+    private void redrawTooltip(final Graphics g)
+    {
+        if (tooltip != null && tooltip.isVisible())
+        {
+            final BufferedImage bufferedImage = tooltip.getBuffer();
+            synchronized(bufferedImage)
+            {
+                g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
+                tooltip.resetChanged();
+            }
         }
     }
 
@@ -288,7 +309,7 @@ public class JXCWindowRenderer
             }
         }
 
-        return false;
+        return tooltip != null && tooltip.isVisible() && tooltip.hasChanged();
     }
 
     /**
@@ -356,5 +377,27 @@ public class JXCWindowRenderer
 
         openDialogs.add(dialog);
         return true;
+    }
+
+    /**
+     * Set the tooltip to use, or <code>null</code> if no tooltips should be
+     * shown.
+     *
+     * @param tooltip The tooltip to use, or <code>null</code>.
+     */
+    public void setTooltip(final GUILabel tooltip)
+    {
+        this.tooltip = tooltip;
+    }
+
+    /**
+     * Return the tooltip to use, or <code>null</code> if no tooltips should be
+     * shown.
+     *
+     * @return The tooltip, or <code>null</code>.
+     */
+    public GUILabel getTooltip()
+    {
+        return tooltip;
     }
 }
