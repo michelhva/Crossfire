@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -36,6 +38,12 @@ public class Gui
      * The list of {@link GUIElement}s comprising this gui.
      */
     private final List<GUIElement> elements = new ArrayList<GUIElement>();
+
+    /**
+     * The gui element which has the focus. Set to <code>null</code> if no such
+     * element exists.
+     */
+    private GUIElement activeElement = null;
 
     /**
      * Remove all {@link GUIElement}s from this gui.
@@ -153,5 +161,91 @@ public class Gui
         }
 
         return elected;
+    }
+
+    /**
+     * Set the gui element owning the focus.
+     *
+     * @param activeElement The gui element, or <code>null</code> if no element
+     * should have the focus.
+     */
+    public void setActiveElement(final GUIElement activeElement)
+    {
+        if (this.activeElement != null)
+        {
+            this.activeElement.setActive(false);
+        }
+
+        this.activeElement = activeElement;
+
+        if (this.activeElement != null)
+        {
+            this.activeElement.setActive(true);
+        }
+    }
+
+    /**
+     * Return the gui element owning the focus.
+     *
+     * @return The gui element owning the focus, or <code>null</code> if no
+     * such element exists.
+     */
+    public GUIElement getActiveElement()
+    {
+        return activeElement;
+    }
+
+    /**
+     * Dispatch a key press {@link KeyEvent}.
+     *
+     * @param e The event to dispatch.
+     *
+     * @return Whether a gui element did handle the event.
+     */
+    public boolean handleKeyPress(final KeyEvent e)
+    {
+        if (activeElement == null)
+        {
+            return false;
+        }
+
+        if (activeElement instanceof KeyListener)
+        {
+            ((KeyListener)activeElement).keyPressed(e);
+            if (!activeElement.isActive())
+            {
+                activeElement = null;
+            }
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Dispatch a key typed {@link KeyEvent}.
+     *
+     * @param e The event to dispatch.
+     *
+     * @return Whether a gui element did handle the event.
+     */
+    public boolean handleKeyTyped(final KeyEvent e)
+    {
+        if (activeElement == null)
+        {
+            return false;
+        }
+
+        if (activeElement instanceof KeyListener)
+        {
+            ((KeyListener)activeElement).keyTyped(e);
+            if (!activeElement.isActive())
+            {
+                activeElement = null;
+            }
+            return true;
+        }
+
+        return false;
     }
 }
