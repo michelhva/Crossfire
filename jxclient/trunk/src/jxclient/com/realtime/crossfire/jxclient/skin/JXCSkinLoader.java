@@ -479,7 +479,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("command_text"))
                         {
-                            if (args.length != 9)
+                            if (args.length != 11)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -492,7 +492,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureActive = getPicture(args[6]);
                             final BufferedImage pictureInactive = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
-                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, pictureActive, pictureInactive, font, ""));
+                            final Color inactiveColor = parseColor(args[9]);
+                            final Color activeColor = parseColor(args[10]);
+                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, pictureActive, pictureInactive, font, inactiveColor, activeColor, ""));
                         }
                         else if (args[0].equals("font"))
                         {
@@ -793,7 +795,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
-                            elements.insert(name, new GUIText(window, name, x, y, w, h, activePicture, inactivePicture, font, ""));
+                            elements.insert(name, new GUIText(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, ""));
                         }
                         else if (args[0].equals("tooltip"))
                         {
@@ -997,6 +999,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         if (name.equals("BLACK")) return Color.BLACK;
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
+        if (name.equals("GRAY")) return Color.GRAY;
         if (name.equals("WHITE")) return Color.WHITE;
         throw new IOException("unknown color name "+name);
     }

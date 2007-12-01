@@ -321,7 +321,7 @@ gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_
 
 # LowerBar (72, 732)
 picture lower_bar 0+72 0+732 880 36 lower_bar
-command_text command 127+66 20+732 512+46 29 empty empty font_cmdline11
+command_text command 127+66 20+732 512+46 29 empty empty font_cmdline11 GRAY WHITE
 
 commandlist rsp_display
 commandlist_add rsp_display rinv0 HIDE

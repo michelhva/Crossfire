@@ -46,6 +46,10 @@ public class GUIText extends GUIElement implements KeyListener
 
     protected final Font myfont;
 
+    private final Color inactiveColor;
+
+    private final Color activeColor;
+
     protected String mytext;
 
     /**
@@ -53,12 +57,14 @@ public class GUIText extends GUIElement implements KeyListener
      */
     private boolean hideInput = false;
 
-    public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, String txt)
+    public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, Color inactiveColor, Color activeColor, String txt)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground_active = picactive;
         mybackground_inactive = picinactive;
         myfont = nf;
+        this.inactiveColor = inactiveColor;
+        this.activeColor = activeColor;
         mytext = txt;
         createBuffer();
         render();
@@ -85,12 +91,12 @@ public class GUIText extends GUIElement implements KeyListener
             if (active)
             {
                 g.drawImage(mybackground_active, 0, 0, null);
-                g.setColor(Color.WHITE);
+                g.setColor(activeColor);
             }
             else
             {
                 g.drawImage(mybackground_inactive, 0, 0, null);
-                g.setColor(Color.GRAY);
+                g.setColor(inactiveColor);
             }
             g.setFont(myfont);
             if (hideInput)
