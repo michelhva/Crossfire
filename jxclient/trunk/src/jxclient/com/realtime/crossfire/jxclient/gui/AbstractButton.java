@@ -68,8 +68,6 @@ public abstract class AbstractButton extends GUIElement
         case MouseEvent.BUTTON1:
             commandList.execute();
             setActive(false);
-            final JXCWindow jxcWindow = (JXCWindow)e.getSource();
-            jxcWindow.deactivateCurrentElement();
             break;
 
         case MouseEvent.BUTTON2:

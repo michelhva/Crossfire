@@ -80,8 +80,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private final CrossfireServerConnection myserver = new CrossfireServerConnection();
 
-    private GUIElement myactive_element = null;
-
     private final String semaphore_drawing = "semaphore_drawing";
 
     private Spell mycurrentspell = null;
@@ -397,15 +395,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         closeDialog(mydialog_query);
     }
 
-    private void activateFirstTextArea(final Gui gui)
+    private GUIElement activateFirstTextArea(final Gui gui)
     {
         final GUIElement textArea = gui.getFirstTextArea();
         if (textArea != null)
         {
-            deactivateCurrentElement();
             textArea.setActive(true);
-            myactive_element = textArea;
+            gui.setActiveElement(textArea);
         }
+        return textArea;
     }
 
     private void initRendering(final boolean fullScreen)
@@ -833,10 +831,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         case 'm':
-            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-            if (myactive_element != null)
             {
-                ((GUIText)myactive_element).setText("maps ");
+                final GUIElement textArea = activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+                if (textArea != null && textArea instanceof GUIText)
+                {
+                    ((GUIText)textArea).setText("maps ");
+                }
             }
             break;
 
@@ -870,10 +870,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         case '"':
-            activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
-            if (myactive_element != null)
             {
-                ((GUIText)myactive_element).setText("say ");
+                final GUIElement textArea = activateFirstTextArea(jxcWindowRenderer.getCurrentGui());
+                if (textArea != null && textArea instanceof GUIText)
+                {
+                    ((GUIText)textArea).setText("say ");
+                }
             }
             break;
 
@@ -898,32 +900,23 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
                 keyBindingState.keyPressed(e.getKeyCode(), e.getModifiers());
             }
-            else if (myactive_element != null)
-            {
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-                {
-                    myactive_element.setActive(false);
-                    myactive_element = null;
-                }
-                else if (myactive_element instanceof KeyListener)
-                {
-                    ((KeyListener)myactive_element).keyPressed(e);
-                    if (!myactive_element.isActive())
-                    {
-                        myactive_element = null;
-                    }
-                }
-                else
-                {
-                    handleKeyPress(e);
-                }
-            }
             else if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
             {
                 endRendering();
             }
             else
             {
+                for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+                {
+                    if (dialog.handleKeyPress(e))
+                    {
+                        return;
+                    }
+                }
+                if (jxcWindowRenderer.getCurrentGui().handleKeyPress(e))
+                {
+                    return;
+                }
                 handleKeyPress(e);
             }
             break;
@@ -961,23 +954,19 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             keyBindingState.keyTyped(e.getKeyChar());
             resetRepeatCount();
         }
-        else if (myactive_element != null)
-        {
-            if (myactive_element instanceof KeyListener)
-            {
-                ((KeyListener)myactive_element).keyTyped(e);
-                if (!myactive_element.isActive())
-                {
-                    myactive_element = null;
-                }
-            }
-            else
-            {
-                handleKeyTyped(e);
-            }
-        }
         else
         {
+            for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+            {
+                if (dialog.handleKeyTyped(e))
+                {
+                    return;
+                }
+            }
+            if (jxcWindowRenderer.getCurrentGui().handleKeyTyped(e))
+            {
+                return;
+            }
             handleKeyTyped(e);
         }
     }
@@ -1043,11 +1032,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             final GUIElement elected = findElement(e, false);
             if (elected != null)
             {
-                deactivateCurrentElement();
                 elected.mousePressed(e);
                 if (elected.isActive())
                 {
-                    myactive_element = elected;
+                    elected.getGui().setActiveElement(elected);
+                }
+                else
+                {
+                    elected.getGui().setActiveElement(null);
                 }
             }
         }
@@ -1060,9 +1052,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             final GUIElement elected = findElement(e, false);
             if (elected != null)
             {
-                if (myactive_element != elected)
+                if (elected.getGui().getActiveElement() != elected)
                 {
-                    deactivateCurrentElement();
+                    elected.getGui().setActiveElement(null);
                 }
                 elected.mouseReleased(e);
             }
@@ -1126,15 +1118,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
         }
         return elected;
-    }
-
-    public void deactivateCurrentElement()
-    {
-        if (myactive_element != null)
-        {
-            myactive_element.setActive(false);
-        }
-        myactive_element = null;
     }
 
     public void mouseDragged(final MouseEvent e)
