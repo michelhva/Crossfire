@@ -894,7 +894,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else if (myactive_element != null)
             {
-                if (e.getKeyCode()==KeyEvent.VK_ESCAPE)
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
                 {
                     myactive_element.setActive(false);
                     myactive_element = null;
@@ -910,7 +910,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     handleKeyPress(e);
                 }
             }
-            else if (e.getKeyCode()==KeyEvent.VK_ESCAPE)
+            else if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
             {
                 endRendering();
             }
