@@ -32,8 +32,9 @@ import java.awt.image.BufferStrategy;
 import java.awt.Insets;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.ListIterator;
 
 /**
  * @author Andreas Kirschbaum
@@ -57,7 +58,7 @@ public class JXCWindowRenderer
      * Currently opened dialogs. The ordering is the painting order: the
      * topmost dialog is at the end.
      */
-    private LinkedList<Gui> openDialogs = new LinkedList<Gui>();
+    private CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
      * If set, {@link #currentGui} has changed.
@@ -240,7 +241,7 @@ public class JXCWindowRenderer
      */
     public void openDialog(final Gui dialog)
     {
-        if (openDialogs.size() > 0 && openDialogs.getLast() == dialog)
+        if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return;
         }
@@ -263,7 +264,32 @@ public class JXCWindowRenderer
             /** {@inheritDoc} */
             public Iterator<Gui> iterator()
             {
-                return openDialogs.descendingIterator();
+                return new Iterator<Gui>()
+                {
+                    /**
+                     * The backing list iterator; it returns the elements in
+                     * reversed order.
+                     */
+                    private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
+
+                    /** {@inheritDoc} */
+                    public boolean hasNext()
+                    {
+                        return it.hasPrevious();
+                    }
+
+                    /** {@inheritDoc} */
+                    public Gui next()
+                    {
+                        return it.previous();
+                    }
+
+                    /** {@inheritDoc} */
+                    public void remove()
+                    {
+                        throw new UnsupportedOperationException();
+                    }
+                };
             }
         };
     }
@@ -322,7 +348,7 @@ public class JXCWindowRenderer
     {
         if (openDialogs.size() > 0)
         {
-            openDialogs.getLast().getFirstTextArea().setHideInput(hideInput);
+            openDialogs.get(openDialogs.size()-1).getFirstTextArea().setHideInput(hideInput);
         }
     }
 
