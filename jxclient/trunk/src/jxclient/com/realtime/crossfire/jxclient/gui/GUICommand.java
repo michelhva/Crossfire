@@ -50,6 +50,7 @@ public class GUICommand
         GUI_START,
         GUI_SEND_COMMAND,
         GUI_SPELLBELT,
+        DIALOG_OPEN,
         DIALOG_TOGGLE,
         DIALOG_CLOSE,
     }
@@ -96,6 +97,7 @@ public class GUICommand
         case GUI_START:
         case GUI_SEND_COMMAND:
         case GUI_SPELLBELT:
+        case DIALOG_OPEN:
         case DIALOG_TOGGLE:
         case DIALOG_CLOSE:
             break;
@@ -182,6 +184,13 @@ public class GUICommand
             }
             break;
 
+        case DIALOG_OPEN:
+            {
+                final DialogOpenParameter param = (DialogOpenParameter)myparams;
+                param.window.openDialog(param.dialog);
+            }
+            break;
+
         case DIALOG_TOGGLE:
             {
                 final DialogToggleParameter param = (DialogToggleParameter)myparams;
@@ -260,6 +269,31 @@ public class GUICommand
         {
             this.window = window;
             this.spellBeltItem = spellBeltItem;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#DIALOG_OPEN} command.
+     */
+    public static class DialogOpenParameter
+    {
+        /** The window to operate on. */
+        private final JXCWindow window;
+
+        /** The dialog to open. */
+        private final Gui dialog;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window to operate on.
+         *
+         * @param dialog The dialog to open.
+         */
+        public DialogOpenParameter(final JXCWindow window, final Gui dialog)
+        {
+            this.window = window;
+            this.dialog = dialog;
         }
     }
 
