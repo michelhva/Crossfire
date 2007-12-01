@@ -796,7 +796,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
     }
 
-    private void handleKeyType(final KeyEvent e)
+    private void handleKeyTyped(final KeyEvent e)
     {
         if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
         {
@@ -973,12 +973,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             else
             {
-                handleKeyType(e);
+                handleKeyTyped(e);
             }
         }
         else
         {
-            handleKeyType(e);
+            handleKeyTyped(e);
         }
     }
 
