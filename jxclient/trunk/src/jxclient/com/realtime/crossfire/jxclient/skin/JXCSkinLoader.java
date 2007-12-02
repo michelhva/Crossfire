@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.CfMagicMap;
+import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
+import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -559,6 +562,36 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 elements.insert(element.getName(), element);
                            }
+                        }
+                        else if (args[0].equals("event"))
+                        {
+                            if (args.length < 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String type = args[1];
+                            if (type.equals("magicmap"))
+                            {
+                                if (args.length != 3)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final GUICommandList commandList = commandLists.lookup(args[2]);
+                                CfMagicMap.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
+                                    {
+                                        /** {@inheritDoc} */
+                                        public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
+                                        {
+                                            commandList.execute();
+                                        }
+                                    });
+                            }
+                            else
+                            {
+                                throw new IOException("undefined event type: "+type);
+                            }
                         }
                         else if (args[0].equals("font"))
                         {
