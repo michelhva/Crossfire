@@ -30,9 +30,16 @@ import java.awt.image.BufferedImage;
 
 public abstract class GUIItemItem extends GUIItem
 {
-    public GUIItemItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft)
+    /**
+     * The color for the "nrof" text.
+     */
+    private final Color nrofColor;
+
+    public GUIItemItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft, final Color nrofColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
+        if (nrofColor == null) throw new IllegalArgumentException();
+        this.nrofColor = nrofColor;
     }
 
     protected void render(final Graphics g)
@@ -63,7 +70,7 @@ public abstract class GUIItemItem extends GUIItem
         if (item.getNrOf() > 0)
         {
             g.setFont(myfont);
-            g.setColor(Color.WHITE);
+            g.setColor(nrofColor);
             g.drawString(String.valueOf(item.getNrOf()), 1, 1+myfont.getSize());
         }
     }
