@@ -46,6 +46,7 @@ commandlist_add command_magicmap_display magicmap SHOW
 commandlist command_magicmap_undisplay
 commandlist_add command_magicmap_undisplay magicmap_content HIDE
 commandlist_add command_magicmap_undisplay magicmap HIDE
+event magicmap command_magicmap_display
 
 button btn_magicmap_hide 0+63 0+3 232 20 magicmap_extended_inactive magicmap_extended_active command_magicmap_undisplay
 button btn_magicmap_show 0+63 0+3 232 20 magicmap_shrinked_inactive magicmap_shrinked_active command_magicmap_display
