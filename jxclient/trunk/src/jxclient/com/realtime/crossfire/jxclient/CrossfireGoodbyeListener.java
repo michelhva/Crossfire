@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireGoodbyeListener
 {
-    public void commandGoodbyeReceived(CrossfireCommandGoodbyeEvent evt);
+    void commandGoodbyeReceived(CrossfireCommandGoodbyeEvent evt);
 }

@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireMagicmapListener
 {
-    public void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
+    void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
 }
