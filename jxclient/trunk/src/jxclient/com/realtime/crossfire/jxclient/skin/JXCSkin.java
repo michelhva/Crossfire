@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import java.util.Iterator;
 
 /**
  *
@@ -29,9 +30,17 @@ import com.realtime.crossfire.jxclient.gui.Gui;
  * @author Lauwenmark
  * @since 1.0
  */
-public interface JXCSkin
+public interface JXCSkin extends Iterable<Gui>
 {
     void load(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+
+    /**
+     * Return all gui instances of this skin. The instances has no defined
+     * order.
+     *
+     * @return An iterator returning all gui instances.
+     */
+    Iterator<Gui> iterator();
 
     Gui getDialogKeyBind() throws JXCSkinException;
     Gui getDialogQuery() throws JXCSkinException;

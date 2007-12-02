@@ -266,4 +266,21 @@ public class Gui
         }
         return textArea;
     }
+
+    /**
+     * Return the first command text field of this gui and make it active.
+     *
+     * @return The comment text field, or <code>null</code> if this gui does
+     * not contain any command text fields.
+     */
+    public GUIText activateCommandInput()
+    {
+        final GUIText textArea = activateFirstTextArea();
+        if (textArea != null && textArea.getName().equals("command"))
+        {
+            return textArea;
+        }
+
+        return null;
+    }
 }
