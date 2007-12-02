@@ -55,10 +55,19 @@ public class GUILabelStats extends GUILabel
             switch (stat)
             {
             case Stats.CS_STAT_SPEED:
+                text = formatFloatStat(s.getFloatStat(stat));
+                break;
+
             case Stats.CS_STAT_WEAP_SP:
-                final int statValue = s.getStat(stat);
-                final int tmp = (statValue*100+Stats.FLOAT_MULTI/2)/Stats.FLOAT_MULTI;
-                text = tmp/100+"."+tmp/10%10+tmp%10;
+                final double weaponSpeed = s.getFloatStat(stat);
+                if (weaponSpeed < 0.001)
+                {
+                    text = "?";
+                }
+                else
+                {
+                    text = formatFloatStat(s.getFloatStat(Stats.CS_STAT_SPEED)/weaponSpeed);
+                }
                 break;
 
             case Stats.CS_STAT_RANGE:
@@ -124,5 +133,18 @@ public class GUILabelStats extends GUILabel
         super(jxcWindow, name, x, y, w, h, null, font, color, "");
         this.stat = stat;
         ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
+    }
+
+    /**
+     * Format a float stat value for display.
+     *
+     * @param value The float stat value.
+     *
+     * @return The formatted value.
+     */
+    private String formatFloatStat(final double value)
+    {
+        final int tmp = (int)(value*100+0.5);
+        return tmp/100+"."+tmp/10%10+tmp%10;
     }
 }

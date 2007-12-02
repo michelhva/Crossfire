@@ -537,6 +537,16 @@ public class Stats
     }
 
     /**
+     * Returns the numerical value of the given statistic.
+     * @param statnr The stat identifier. See the CS_STAT constants.
+     * @return The statistic value.
+     */
+    public double getFloatStat(int statnr)
+    {
+        return (double)mystats[statnr]/Stats.FLOAT_MULTI;
+    }
+
+    /**
      * Sets the given statistic numerical value.
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @param value The value to assign to the chosen statistic.
