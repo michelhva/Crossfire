@@ -38,7 +38,7 @@ import java.awt.Transparency;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIText extends GUIElement implements KeyListener
+public abstract class GUIText extends GUIElement implements KeyListener
 {
     private final BufferedImage mybackground_active;
 
@@ -162,6 +162,7 @@ public class GUIText extends GUIElement implements KeyListener
             break;
 
         case KeyEvent.VK_ENTER:
+            execute((JXCWindow)e.getSource(), mytext.toString());
             setActive(false);
             break;
 
@@ -181,6 +182,15 @@ public class GUIText extends GUIElement implements KeyListener
     {
 
     }
+
+    /**
+     * Will be called to execute the entered command.
+     *
+     * @param jxcWindow The JXCWindow instance.
+     *
+     * @param command The entered command.
+     */
+    protected abstract void execute(final JXCWindow jxcWindow, final String command);
 
     /** {@inheritDoc} */
     protected void createBuffer()
