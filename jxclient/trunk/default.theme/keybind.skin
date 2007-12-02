@@ -1,9 +1,11 @@
 
 dialog dialog         350     200 23+200+21 38+100+16
 label_text message 35+350  60+200 180  32 font_stats12 WHITE Type the key to (un)bind:
+label_text message2 35+350 90+200 180  32 font_stats12 WHITE (ESC to abort)
 
 add dialog_c
 add message
+add message2
 add dialog_nw
 add dialog_n
 add dialog_ne
