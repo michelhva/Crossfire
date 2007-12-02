@@ -605,7 +605,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("item"))
                         {
-                            if (args.length != 14)
+                            if (args.length < 14)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -626,18 +626,40 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
-                                element = new GUIItemFloor(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                if (args.length != 15)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final Color nrofColor = parseColor(args[14]);
+                                element = new GUIItemFloor(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
-                                element = new GUIItemInventory(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                if (args.length != 15)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final Color nrofColor = parseColor(args[14]);
+                                element = new GUIItemInventory(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
                             }
                             else if (type.equals("spellbelt"))
                             {
+                                if (args.length != 14)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
                                 element = new GUIItemSpellbelt(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else if (type.equals("spelllist"))
                             {
+                                if (args.length != 14)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
                                 element = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else

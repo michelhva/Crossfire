@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.LocationListener;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.util.List;
@@ -48,9 +49,9 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft)
+	public GUIItemInventory(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft, Color nrofColor)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
+        super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft, nrofColor);
         setIndex(index);
         render();
     }
