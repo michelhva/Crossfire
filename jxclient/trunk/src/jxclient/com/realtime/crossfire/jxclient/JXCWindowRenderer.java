@@ -246,7 +246,10 @@ public class JXCWindowRenderer
             return;
         }
 
-        openDialogs.remove(dialog);
+        if (!openDialogs.remove(dialog))
+        {
+            dialog.activateFirstTextArea();
+        }
         openDialogs.add(dialog);
         openDialogsChanged = true;
     }

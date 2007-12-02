@@ -243,14 +243,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         keyBindingState = new KeyBindingState(cmdlist);
         jxcWindowRenderer.openDialog(mydialog_keybind);
-        mydialog_keybind.activateFirstTextArea();
     }
 
     public void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
         jxcWindowRenderer.openDialog(mydialog_keybind);
-        mydialog_keybind.activateFirstTextArea();
     }
 
     private void loadSpellBelt(final String filename)
@@ -357,7 +355,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             jxcWindowRenderer.setHideInput(false);
         }
-        dialog.activateFirstTextArea();
     }
 
     /**
@@ -1128,7 +1125,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
             jxcWindowRenderer.openDialog(mydialog_book);
-            mydialog_book.activateFirstTextArea();
             break;
 
         case CrossfireServerConnection.MSG_TYPE_CARD:
@@ -1167,7 +1163,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         jxcWindowRenderer.openDialog(mydialog_query);
-        mydialog_query.activateFirstTextArea();
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
