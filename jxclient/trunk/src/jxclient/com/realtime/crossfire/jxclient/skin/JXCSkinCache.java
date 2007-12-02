@@ -20,7 +20,9 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -100,5 +102,15 @@ public class JXCSkinCache<T>
         }
 
         return t;
+    }
+
+    /**
+     * Return all stored values.
+     *
+     * @return An iterator returning all stored values.
+     */
+    public Iterator<T> iterator()
+    {
+        return Collections.unmodifiableCollection(cache.values()).iterator();
     }
 }

@@ -1418,11 +1418,44 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      * Activate the command input text field. If the skin defined more than one
      * input field, the first matching one is selected.
      *
+     * <p>If neither the main gui nor any visible dialog has an input text
+     * field, invisible guis are checked as well. If one is found, it is made
+     * visible.
+     *
      * @return The command input text field, or <code>null</code> if the skin
      * has no command input text field defined.
      */
     private GUIText activateCommandInput()
     {
-        return jxcWindowRenderer.getCurrentGui().activateFirstTextArea();
+        // check main gui
+        final GUIText textArea1 = jxcWindowRenderer.getCurrentGui().activateCommandInput();
+        if (textArea1 != null)
+        {
+            return textArea1;
+        }
+
+        // check visible dialogs
+        for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+        {
+            final GUIText textArea2 = dialog.activateCommandInput();
+            if (textArea2 != null)
+            {
+                openDialog(dialog); // raise dialog
+                return textArea2;
+            }
+        }
+
+        // check invisible dialogs
+        for (final Gui dialog : myskin)
+        {
+            final GUIText textArea3 = dialog.activateCommandInput();
+            if (textArea3 != null)
+            {
+                openDialog(dialog);
+                return textArea3;
+            }
+        }
+
+        return null;
     }
 }

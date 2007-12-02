@@ -1219,4 +1219,10 @@ public abstract class JXCSkinLoader implements JXCSkin
 
         return (GUILabel)element;
     }
+
+    /** {@inheritDoc} */
+    public Iterator<Gui> iterator()
+    {
+       return dialogs.iterator();
+    }
 }
