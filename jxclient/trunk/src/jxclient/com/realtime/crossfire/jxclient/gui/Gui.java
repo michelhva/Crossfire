@@ -46,6 +46,11 @@ public class Gui
     private GUIElement activeElement = null;
 
     /**
+     * Records whether at least one gui element has changed since last redraw.
+     */
+    private boolean hasChangedElements = false;
+
+    /**
      * Remove all {@link GUIElement}s from this gui.
      */
     public void clear()
@@ -80,6 +85,7 @@ public class Gui
      */
     public void redraw(final Graphics g, final JXCWindow jxcWindow)
     {
+        hasChangedElements = false;
         for (final GUIElement element : elements)
         {
             if (element.isVisible())
@@ -103,15 +109,7 @@ public class Gui
      */
     public boolean needRedraw()
     {
-        for (final GUIElement element : elements)
-        {
-            if (element.isVisible() && element.hasChanged())
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return hasChangedElements;
     }
 
     /**
@@ -282,5 +280,13 @@ public class Gui
         }
 
         return null;
+    }
+
+    /**
+     * Notify that one gui element has changed since last redraw.
+     */
+    public void setChangedElements()
+    {
+        hasChangedElements = true;
     }
 }
