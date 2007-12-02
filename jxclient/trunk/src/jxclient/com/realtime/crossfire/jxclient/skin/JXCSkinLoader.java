@@ -41,6 +41,7 @@ import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
+import com.realtime.crossfire.jxclient.gui.GUITextField;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
@@ -847,7 +848,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("text"))
                         {
-                            if (args.length != 9)
+                            if (args.length != 10)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -860,7 +861,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
-                            elements.insert(name, new GUIText(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, ""));
+                            final GUICommandList commandList = commandLists.lookup(args[9]);
+                            elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
                         }
                         else if (args[0].equals("tooltip"))
                         {

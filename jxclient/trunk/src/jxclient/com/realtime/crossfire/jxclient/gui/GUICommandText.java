@@ -42,62 +42,48 @@ public class GUICommandText extends GUIText implements KeyListener
     }
 
     /** {@inheritDoc} */
-    @Override public void keyPressed(final KeyEvent e)
+    protected void execute(final JXCWindow jxcWindow, final String command)
     {
-        switch (e.getKeyCode())
+        switch (jxcWindow.getCrossfireServerConnection().getStatus())
         {
-        case KeyEvent.VK_ENTER:
-            final JXCWindow jxcWindow = (JXCWindow)e.getSource();
-            switch (jxcWindow.getCrossfireServerConnection().getStatus())
+        case PLAYING:
+            if (command.startsWith("bind "))
             {
-            case PLAYING:
-                if (mytext.startsWith("bind "))
-                {
-                    final String cmdl = mytext.substring(5);
-                    final GUICommandList commands = new GUICommandList(cmdl, (JXCWindow)e.getSource());
-                    jxcWindow.createKeyBinding(commands);
-                }
-                else if (mytext.startsWith("unbind"))
-                {
-                    jxcWindow.removeKeyBinding();
-                }
-                else if (mytext.startsWith("script "))
-                {
-                    jxcWindow.runScript(mytext.substring(7));
-                }
-                else
-                {
-                    jxcWindow.sendNcom(mytext);
-                }
-                mytext = "";
-                setActive(false);
-                break;
-
-            case QUERY:
-                jxcWindow.getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
-                try
-                {
-                    jxcWindow.getCrossfireServerConnection().sendReply(mytext);
-                }
-                catch (final Exception ex)
-                {
-                    ex.printStackTrace();
-                }
-                jxcWindow.closeQueryDialog();
-                mytext = "";
-                setActive(false);
-                break;
-
-            default:
-                mytext = "";
-                setActive(false);
-                break;
+                final String cmdl = command.substring(5);
+                final GUICommandList commands = new GUICommandList(cmdl, jxcWindow);
+                jxcWindow.createKeyBinding(commands);
+            }
+            else if (command.startsWith("unbind"))
+            {
+                jxcWindow.removeKeyBinding();
+            }
+            else if (command.startsWith("script "))
+            {
+                jxcWindow.runScript(command.substring(7));
+            }
+            else
+            {
+                jxcWindow.sendNcom(command);
             }
             break;
 
+        case QUERY:
+            jxcWindow.getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
+            try
+            {
+                jxcWindow.getCrossfireServerConnection().sendReply(command);
+            }
+            catch (final Exception ex)
+            {
+                ex.printStackTrace();
+            }
+            jxcWindow.closeQueryDialog();
+            break;
+
         default:
-            super.keyPressed(e);
             break;
         }
+
+        setText("");
     }
 }
