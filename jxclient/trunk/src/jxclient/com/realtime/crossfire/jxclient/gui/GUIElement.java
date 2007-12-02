@@ -133,6 +133,10 @@ public abstract class GUIElement implements MouseListener
     public void setGui(final Gui gui)
     {
         this.gui = gui;
+        if (visible && gui != null)
+        {
+            gui.setChangedElements();
+        }
     }
 
     public String toString()
@@ -253,7 +257,16 @@ public abstract class GUIElement implements MouseListener
      */
     protected void setChanged()
     {
+        if (changed)
+        {
+            return;
+        }
+
         changed = true;
+        if (visible && gui != null)
+        {
+            gui.setChangedElements();
+        }
     }
 
     /**
