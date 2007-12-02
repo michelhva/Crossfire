@@ -22,6 +22,10 @@ gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_emp
 label_stat label_gp  768+72  12+732 32  32 font_types WHITE GRACE
 label_stat label_sp  844+72  12+732 32  32 font_types WHITE SP
 
+# Map View Gauge
+picture hpbar_back 478 340 68 7 hpbar_frame
+gauge hpbar        479 341 66 5 hpbar_full null hpbar_empty HP WE
+
 # UpperPane (207, 27)
 picture title_back          0+227  0+27 610 56 title
 label_stat label_title     12+227 24+27 584 24 font_default_large WHITE TITLE
@@ -607,6 +611,8 @@ add panel_spells
 add label_panel_spells_icon
 add label_panel_spells_name
 add label_panel_spells_description
+add hpbar_back
+add hpbar
 
 ignore panel_back_dragon_left
 ignore panel_back_dragon_right
