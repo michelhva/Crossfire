@@ -41,26 +41,11 @@ public class GUICommandText extends GUIText implements KeyListener
         super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, inactiveColor, activeColor, txt);
     }
 
-    public void keyPressed(final KeyEvent e)
+    /** {@inheritDoc} */
+    @Override public void keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
-        case KeyEvent.VK_BACK_SPACE:
-            if (mytext.length()>0)
-            {
-                mytext = mytext.substring(0, mytext.length()-1);
-                render();
-            }
-            break;
-
-        case KeyEvent.VK_DELETE:
-            if (mytext.length() > 0)
-            {
-                mytext = "";
-                render();
-            }
-            break;
-
         case KeyEvent.VK_ENTER:
             final JXCWindow jxcWindow = (JXCWindow)e.getSource();
             switch (jxcWindow.getCrossfireServerConnection().getStatus())
@@ -110,13 +95,8 @@ public class GUICommandText extends GUIText implements KeyListener
             }
             break;
 
-        case KeyEvent.VK_SHIFT:
-            break;
-
         default:
-            final char chr = e.getKeyChar();
-            mytext = mytext+chr;
-            render();
+            super.keyPressed(e);
             break;
         }
     }
