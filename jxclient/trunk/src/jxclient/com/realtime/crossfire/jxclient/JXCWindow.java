@@ -882,13 +882,21 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         default:
-            if (keyBindingState != null)
+            if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+            {
+                if (keyBindingState != null)
+                {
+                    keyBindingState = null;
+                    jxcWindowRenderer.closeDialog(mydialog_keybind);
+                }
+                else
+                {
+                    endRendering();
+                }
+            }
+            else if (keyBindingState != null)
             {
                 keyBindingState.keyPressed(e.getKeyCode(), e.getModifiers());
-            }
-            else if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-            {
-                endRendering();
             }
             else
             {
