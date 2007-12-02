@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireStatsListener
 {
-    public void commandStatsReceived(CrossfireCommandStatsEvent evt);
+    void commandStatsReceived(CrossfireCommandStatsEvent evt);
 }

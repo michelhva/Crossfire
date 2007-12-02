@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireDrawinfoListener
 {
-    public void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
+    void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
 }

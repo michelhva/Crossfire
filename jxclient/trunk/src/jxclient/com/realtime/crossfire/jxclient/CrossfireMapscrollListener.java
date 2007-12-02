@@ -27,5 +27,5 @@ package com.realtime.crossfire.jxclient;
  */
 public interface CrossfireMapscrollListener
 {
-    public void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt);
+    void commandMapscrollReceived(CrossfireCommandMapscrollEvent evt);
 }
