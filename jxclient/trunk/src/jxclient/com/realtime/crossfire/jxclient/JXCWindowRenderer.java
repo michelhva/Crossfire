@@ -245,12 +245,15 @@ public class JXCWindowRenderer
      * Open a dialog. Raises an already opened dialog.
      *
      * @param dialog The dialog to show.
+     *
+     * @return Whether the dialog was opened or raised; <code>false</code> if
+     * the dialog already was opened as the topmost dialog.
      */
-    public void openDialog(final Gui dialog)
+    public boolean openDialog(final Gui dialog)
     {
         if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
         {
-            return;
+            return false;
         }
 
         if (!openDialogs.remove(dialog))
@@ -259,6 +262,7 @@ public class JXCWindowRenderer
         }
         openDialogs.add(dialog);
         openDialogsChanged = true;
+	return true;
     }
 
     /**

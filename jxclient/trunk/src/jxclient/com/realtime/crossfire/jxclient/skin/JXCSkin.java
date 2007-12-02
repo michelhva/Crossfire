@@ -42,6 +42,14 @@ public interface JXCSkin extends Iterable<Gui>
      */
     Iterator<Gui> iterator();
 
+    /**
+     * The "really quit?" dialog. It is opened when the user presses ESCAPE.
+     *
+     * @return The dialog, or <code>null</code> if the skin does not define
+     * this dialog.
+     */
+    Gui getDialogQuit();
+
     Gui getDialogKeyBind() throws JXCSkinException;
     Gui getDialogQuery() throws JXCSkinException;
     Gui getDialogBook(int booknr) throws JXCSkinException;

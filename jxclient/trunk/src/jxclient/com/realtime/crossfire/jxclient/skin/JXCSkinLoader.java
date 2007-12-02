@@ -187,6 +187,19 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    public Gui getDialogQuit()
+    {
+        try
+        {
+            return dialogs.lookup("quit");
+        }
+        catch (final IOException ex)
+        {
+            return null;
+        }
+    }
+
+    /** {@inheritDoc} */
     public Gui getDialogKeyBind() throws JXCSkinException
     {
         try

@@ -90,6 +90,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private Gui mydialog_book = new Gui();
     private Gui mydialog_keybind = new Gui();
 
+    /**
+     * The "really quit?" dialog. Set to <code>null</code> if the skin does not
+     * define this dialog.
+     */
+    private Gui dialogQuit = null;
+
     private JXCSkin myskin = null;
 
     private final KeyBindings keyBindings = new KeyBindings();
@@ -889,9 +895,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     keyBindingState = null;
                     jxcWindowRenderer.closeDialog(mydialog_keybind);
                 }
-                else
+                else if (dialogQuit == null)
                 {
                     endRendering();
+                }
+                else if (!jxcWindowRenderer.openDialog(dialogQuit))
+                {
+                    jxcWindowRenderer.closeDialog(dialogQuit);
                 }
             }
             else if (keyBindingState != null)
@@ -1226,6 +1236,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             mydialog_book = myskin.getDialogBook(1);
 
             mydialog_keybind = myskin.getDialogKeyBind();
+            dialogQuit = myskin.getDialogQuit();
         }
         catch (final JXCSkinException e)
         {
