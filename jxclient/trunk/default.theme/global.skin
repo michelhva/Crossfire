@@ -17,3 +17,8 @@ font font_tooltip        squealer 16
 font font_types          squealer 12
 
 def dialog dialog font_stats12 WHITE
+
+commandlist command_resume
+commandlist_add command_resume null DIALOG_CLOSE quit
+commandlist command_disconnect
+commandlist_add command_disconnect null GUI_START
