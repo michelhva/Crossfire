@@ -87,6 +87,11 @@ public class JXCWindowRenderer
      */
     private int offsetY = 0;
 
+    /**
+     * Receords whether full-screen has been activated.
+     */
+    private boolean isFullScreen = false;
+
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
         this.jxcWindow = jxcWindow;
@@ -109,7 +114,8 @@ public class JXCWindowRenderer
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (!fullScreen || !gd.isFullScreenSupported())
+        isFullScreen = fullScreen && gd.isFullScreenSupported();
+        if (!isFullScreen)
         {
             if (fullScreen)
             {
@@ -147,8 +153,9 @@ public class JXCWindowRenderer
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (gd.isFullScreenSupported())
+        if (isFullScreen && gd.isFullScreenSupported())
         {
+            isFullScreen = false;
             gd.setDisplayMode(oldDisplayMode);
             gd.setFullScreenWindow(null);
         }
