@@ -1,7 +1,7 @@
 
 picture background 23+350 38+200 200 100 dialog_background
 label_query message 35+350 60+200 180 32 font_stats13 WHITE
-command_text command 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE
+command_text input 50+350 100+200 132 20 textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE
 picture border_a   0+350   0+200  23  38 dialog_border_A
 picture border_b  23+350   0+200 200  38 dialog_border_B
 picture border_c 223+350   3+200  21  35 dialog_border_C
@@ -21,4 +21,4 @@ add border_e
 add border_f
 add border_g
 add border_h
-add command
+add input
