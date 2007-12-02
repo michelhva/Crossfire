@@ -262,7 +262,7 @@ public class JXCWindowRenderer
         }
         openDialogs.add(dialog);
         openDialogsChanged = true;
-	return true;
+        return true;
     }
 
     /**
