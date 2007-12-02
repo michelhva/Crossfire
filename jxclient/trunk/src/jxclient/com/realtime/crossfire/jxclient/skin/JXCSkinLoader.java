@@ -104,6 +104,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
 
     /**
+     * The dialog factory. Set to <code>null</code> until defined.
+     */
+    private DialogFactory dialogFactory = null;
+
+    /**
      * Names of pending skin files.
      */
     private final Set<String> dialogsToLoad = new HashSet<String>();
@@ -260,6 +265,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         elements.clear();
         commandLists.clear();
         fonts.clear();
+        dialogFactory = null;
         try
         {
             load("global.skin", s, p, gui);
@@ -270,6 +276,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             elements.clear();
             commandLists.clear();
             fonts.clear();
+        dialogFactory = null;
         }
         return gui;
     }
@@ -495,6 +502,62 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             elements.insert(name, new GUICommandText(window, name, x, y, w, h, pictureActive, pictureInactive, font, inactiveColor, activeColor, ""));
+                        }
+                        else if (args[0].equals("def"))
+                        {
+                            if (args.length < 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            if (args[1].equals("dialog"))
+                            {
+                                if (args.length != 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final String frame = args[2];
+                                final BufferedImage frameNW = getPicture(frame+"_nw");
+                                final BufferedImage frameN = getPicture(frame+"_n");
+                                final BufferedImage frameNE = getPicture(frame+"_ne");
+                                final BufferedImage frameW = getPicture(frame+"_w");
+                                final BufferedImage frameC = getPicture(frame+"_c");
+                                final BufferedImage frameE = getPicture(frame+"_e");
+                                final BufferedImage frameSW = getPicture(frame+"_sw");
+                                final BufferedImage frameS = getPicture(frame+"_s");
+                                final BufferedImage frameSE = getPicture(frame+"_se");
+                                final Font titleFont = fonts.lookup(args[3]);
+                                final Color backgroundColor = parseColor(args[4]);
+                                dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, backgroundColor);
+                            }
+                            else
+                            {
+                                throw new IOException("unknown type '"+args[1]+"'");
+                            }
+                        }
+                        else if (args[0].equals("dialog"))
+                        {
+                            if (args.length < 6)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            if (dialogFactory == null)
+                            {
+                                throw new IOException("missing 'def dialog' command");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final String title = parseText(args, 6);
+                            for (final GUIElement element : dialogFactory.newDialog(window, name, x, y, w, h, title))
+                            {
+                                elements.insert(element.getName(), element);
+                           }
                         }
                         else if (args[0].equals("font"))
                         {

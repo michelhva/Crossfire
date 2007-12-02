@@ -1,15 +1,7 @@
 
-picture dialog_c    23+350  38+200 200 100 dialog_c
-label_query message 35+350  60+200 180  32 font_stats13 WHITE
-command_text input  50+350 100+200 132  20 textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE
-picture dialog_nw    0+350   0+200  23  38 dialog_nw
-picture dialog_n    23+350   0+200 200  38 dialog_n
-picture dialog_ne  223+350   3+200  21  35 dialog_ne
-picture dialog_w     0+350  38+200  23 100 dialog_w
-picture dialog_e   223+350  38+200  21 100 dialog_e
-picture dialog_sw    0+350 138+200  23  16 dialog_sw
-picture dialog_s    23+350 138+200 200  12 dialog_s
-picture dialog_se  223+350 138+200  21  16 dialog_se
+dialog dialog          350     200 23+200+21 38+100+16
+label_query message 35+350  60+200    180        32    font_stats13 WHITE
+command_text input  50+350 100+200    132        20    textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE
 
 add dialog_c
 add message
