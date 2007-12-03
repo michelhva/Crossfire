@@ -195,7 +195,7 @@ public class DialogFactory
         result.add(new GUIPicture(jxcWindow, name+"_se", x+w-sizeE, y+h-sizeS, sizeE, sizeS, frameSE));
         if (title.length() > 0)
         {
-            result.add(new GUILabel(jxcWindow, name+"_title", x+sizeW, y+sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, title));
+            result.add(new GUILabel(jxcWindow, name+"_title", x+sizeW, y+sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
         }
         return result;
     }
