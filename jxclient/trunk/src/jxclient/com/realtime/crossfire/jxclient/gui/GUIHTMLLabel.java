@@ -153,7 +153,7 @@ public class GUIHTMLLabel extends AbstractLabel
                 width = Math.max(width, (int)size.getWidth());
                 height += (int)size.getHeight();
             }
-            setSize(width+2*AUTO_BORDER_SIZE, height+2*AUTO_BORDER_SIZE);
+            setSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
         }
         finally
         {
