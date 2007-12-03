@@ -4,6 +4,9 @@ difficulty 1
 region wolfsburg
 width 50
 height 50
+msg
+Modified: 2007-12-02 Gene Alexander
+endmsg
 outdoor 1
 tile_path_1 world_128_108
 tile_path_2 world_129_109
@@ -4303,8 +4306,10 @@ x 17
 y 13
 end
 arch barn
-name warehouse
-name_pl warehouse
+name Acme Homebuilding Inc.
+slaying /wolfsburg/shops/buildshop
+hp 17
+sp 38
 x 17
 y 13
 end
@@ -4439,7 +4444,7 @@ arch shallow_sea
 x 17
 y 40
 elevation -33
-no_pass 0
+move_block 0
 end
 arch rowboat
 slaying world_128_109
@@ -4669,7 +4674,7 @@ arch shallow_sea
 x 18
 y 40
 elevation -8
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
@@ -6005,6 +6010,10 @@ x 24
 y 4
 end
 arch house_2
+name Lursendis's house
+slaying /wolfsburg/lursendis
+hp 8
+sp 4
 x 24
 y 4
 end
@@ -9024,13 +9033,14 @@ arch dungeon_floor
 x 36
 y 8
 end
-arch inn
-name The Red Light District
-slaying /wolfsburg/whorehouse
-hp 1
+arch house_long
+name Apartment
+slaying /wolfsburg/apartments/wolfsburg.apartment
+hp 2
 sp 1
 x 36
 y 8
+unique 1
 end
 arch dungeon_floor
 x 36
