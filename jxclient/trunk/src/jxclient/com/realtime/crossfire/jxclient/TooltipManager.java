@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.GUILabel;
 
 /**
  * Manages the tooltip display.
@@ -126,7 +126,7 @@ public class TooltipManager
     {
         assert activeGuiElement != null;
 
-        final GUILabel tooltip = jxcWindow.getTooltip();
+        final AbstractLabel tooltip = jxcWindow.getTooltip();
         if (tooltip == null)
         {
             return;
@@ -160,7 +160,7 @@ public class TooltipManager
      */
     private void removeTooltip()
     {
-        final GUILabel tooltip = jxcWindow.getTooltip();
+        final AbstractLabel tooltip = jxcWindow.getTooltip();
         if (tooltip != null)
         {
             tooltip.setVisible(false);

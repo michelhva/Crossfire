@@ -23,18 +23,19 @@ import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUICommandText;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIGauge;
+import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.GUIItem;
 import com.realtime.crossfire.jxclient.gui.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
-import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
 import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.GUILabelStats;
@@ -763,7 +764,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8);
-                            elements.insert(name, new GUILabel(window, name, x, y, w, h, null, font, color, text));
+                            elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, text));
                         }
                         else if (args[0].equals("label_picture"))
                         {
@@ -779,7 +780,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
                             final Font font = fonts.lookup(args[7]);
-                            elements.insert(name, new GUILabel(window, name, x, y, w, h, pictureEmpty, font, Color.WHITE, ""));
+                            elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, pictureEmpty, font, Color.WHITE, ""));
                         }
                         else if (args[0].equals("label_stat"))
                         {
@@ -886,7 +887,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureUdp = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
                             final GUIText text = lookupTextElement(args[9]);
-                            final GUILabel label = lookupLabelElement(args[10]);
+                            final AbstractLabel label = lookupLabelElement(args[10]);
                             final int id = parseInt(args[11]);
                             elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id));
                         }
@@ -940,7 +941,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final Font font = fonts.lookup(args[1]);
-                            final GUILabel tooltipLabel = new GUILabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, "");
+                            final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, "");
                             tooltipLabel.setAutoResize(true);
                             tooltipLabel.setBackgroundColor(Color.WHITE);
                             window.setTooltip(tooltipLabel);
@@ -1269,23 +1270,23 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Return a {@link GUILabel} by element name.
+     * Return a {@link AbstractLabel} by element name.
      *
      * @param name The element name.
      *
-     * @return The <code>GUILabel</code> element.
+     * @return The <code>AbstractLabel</code> element.
      *
      * @throws IOException if the element name is undefined
      */
-    private GUILabel lookupLabelElement(final String name) throws IOException
+    private AbstractLabel lookupLabelElement(final String name) throws IOException
     {
         final GUIElement element = elements.lookup(name);
-        if (!(element instanceof GUILabel))
+        if (!(element instanceof AbstractLabel))
         {
             throw new IOException("element "+name+" is not a label");
         }
 
-        return (GUILabel)element;
+        return (AbstractLabel)element;
     }
 
     /** {@inheritDoc} */

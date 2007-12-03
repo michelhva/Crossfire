@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.GUILabel;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
@@ -70,7 +70,7 @@ public class JXCWindowRenderer
     /**
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
-    private GUILabel tooltip = null;
+    private AbstractLabel tooltip = null;
 
     /**
      * If set, force a full repaint.
@@ -425,7 +425,7 @@ public class JXCWindowRenderer
      *
      * @param tooltip The tooltip to use, or <code>null</code>.
      */
-    public void setTooltip(final GUILabel tooltip)
+    public void setTooltip(final AbstractLabel tooltip)
     {
         this.tooltip = tooltip;
     }
@@ -436,7 +436,7 @@ public class JXCWindowRenderer
      *
      * @return The tooltip, or <code>null</code>.
      */
-    public GUILabel getTooltip()
+    public AbstractLabel getTooltip()
     {
         return tooltip;
     }
