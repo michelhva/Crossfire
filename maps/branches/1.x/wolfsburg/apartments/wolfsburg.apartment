@@ -1,0 +1,4943 @@
+arch map
+name Wolfsburg Apartment
+difficulty 1
+region wolfsburg
+width 20
+height 20
+enter_x 1
+msg
+Modified: 2007-12-02 Gene Alexander
+endmsg
+end
+arch woodfloor
+end
+arch wall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch wall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch wall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch wall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch wall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch wall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch wall_2_1_1
+y 10
+end
+arch woodfloor
+y 11
+end
+arch wall_2_1_1
+y 11
+end
+arch woodfloor
+y 12
+end
+arch wall_2_1_1
+y 12
+end
+arch woodfloor
+y 13
+end
+arch wall_2_1_1
+y 13
+end
+arch woodfloor
+y 14
+end
+arch wall_2_1_1
+y 14
+end
+arch woodfloor
+y 15
+end
+arch wall_2_1_1
+y 15
+end
+arch woodfloor
+y 16
+end
+arch wall_2_1_1
+y 16
+end
+arch woodfloor
+y 17
+end
+arch wall_2_1_1
+y 17
+end
+arch woodfloor
+y 18
+end
+arch wall_2_1_1
+y 18
+end
+arch woodfloor
+y 19
+end
+arch wall_2_2_1
+y 19
+end
+arch woodfloor
+x 1
+end
+arch wall_1_3
+x 1
+end
+arch creator
+name creator wwall_4
+x 1
+y 1
+connected 1
+is_buildable 1
+arch wwall_4
+name wall buildable
+is_buildable 1
+end
+end
+arch creator
+name creator woodfloor
+x 1
+y 1
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 1
+y 1
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor wwall_1_1
+other_arch wwall_1_1
+x 1
+y 1
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch wwall_1_1
+x 1
+y 1
+end
+arch creator
+name creator wwall_4
+x 1
+y 2
+connected 1
+is_buildable 1
+arch wwall_4
+name wall buildable
+is_buildable 1
+end
+end
+arch creator
+name creator woodfloor
+x 1
+y 2
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 1
+y 2
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor wwall_2_2_1
+other_arch wwall_2_2_1
+x 1
+y 2
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch wwall_2_2_1
+x 1
+y 2
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 1
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 1
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 1
+y 19
+end
+arch wall_2_1_2
+x 1
+y 19
+end
+arch woodfloor
+x 2
+end
+arch oakdoor
+slaying /world/world_128_109
+hp 37
+sp 8
+x 2
+end
+arch creator
+name creator woodfloor
+x 2
+y 1
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 2
+y 1
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor goldfloor
+other_arch goldfloor
+x 2
+y 1
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 1
+end
+arch goldfloor
+name drop 10 amberium coins
+slaying ambercoin
+x 2
+y 1
+connected 1
+end
+arch creator
+name creator wwall_4
+x 2
+y 2
+connected 1
+is_buildable 1
+arch wwall_4
+name wall buildable
+is_buildable 1
+end
+end
+arch creator
+name creator woodfloor
+x 2
+y 2
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 2
+y 2
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor wwall_2_1_2
+other_arch wwall_2_1_2
+x 2
+y 2
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch wwall_2_1_2
+x 2
+y 2
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 2
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 2
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 2
+y 19
+end
+arch wall_2_1_2
+x 2
+y 19
+end
+arch woodfloor
+x 3
+end
+arch wall_1_4
+x 3
+end
+arch creator
+name creator woodfloor
+x 3
+y 1
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 3
+y 1
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor wwall_1_1
+other_arch wwall_1_1
+x 3
+y 1
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 1
+end
+arch wwall_1_1
+x 3
+y 1
+end
+arch creator
+name creator wwall_4
+x 3
+y 2
+connected 1
+is_buildable 1
+arch wwall_4
+name wall buildable
+is_buildable 1
+end
+end
+arch creator
+name creator woodfloor
+x 3
+y 2
+connected 1
+is_buildable 1
+arch woodfloor
+name woodfloor buildable
+type 71
+is_buildable 1
+end
+end
+arch duplicator
+name destructor woodfloor
+other_arch woodfloor
+x 3
+y 2
+connected 1
+is_buildable 1
+end
+arch duplicator
+name destructor wwall_2_2_4
+other_arch wwall_2_2_4
+x 3
+y 2
+connected 1
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch wwall_2_2_4
+x 3
+y 2
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 3
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 3
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 3
+y 19
+end
+arch wall_2_1_2
+x 3
+y 19
+end
+arch woodfloor
+x 4
+end
+arch wall_2_1_2
+x 4
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 1
+type 71
+is_buildable 1
+end
+arch card
+name Apartment information card
+msg
+Welcome to your Wolfsburg apartment!
+This entire apartment is buildable.
+Use a destructor to remove the walls and begin your renovations.
+endmsg
+x 4
+y 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 4
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 4
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 4
+y 19
+end
+arch wall_2_1_2
+x 4
+y 19
+end
+arch woodfloor
+x 5
+end
+arch wall_2_1_2
+x 5
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 5
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 5
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 5
+y 19
+end
+arch wall_2_1_2
+x 5
+y 19
+end
+arch woodfloor
+x 6
+end
+arch wall_2_1_2
+x 6
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 6
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 6
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 6
+y 19
+end
+arch wall_2_1_2
+x 6
+y 19
+end
+arch woodfloor
+x 7
+end
+arch wall_2_1_2
+x 7
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 7
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 7
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 7
+y 19
+end
+arch wall_2_1_2
+x 7
+y 19
+end
+arch woodfloor
+x 8
+end
+arch wall_2_1_2
+x 8
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 8
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 8
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 8
+y 19
+end
+arch wall_2_1_2
+x 8
+y 19
+end
+arch woodfloor
+x 9
+end
+arch wall_2_1_2
+x 9
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 9
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 9
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 9
+y 19
+end
+arch wall_2_1_2
+x 9
+y 19
+end
+arch woodfloor
+x 10
+end
+arch wall_2_1_2
+x 10
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 10
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 10
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 10
+y 19
+end
+arch wall_2_1_2
+x 10
+y 19
+end
+arch woodfloor
+x 11
+end
+arch wall_2_1_2
+x 11
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 11
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 11
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 11
+y 19
+end
+arch wall_2_1_2
+x 11
+y 19
+end
+arch woodfloor
+x 12
+end
+arch wall_2_1_2
+x 12
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 12
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 12
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 12
+y 19
+end
+arch wall_2_1_2
+x 12
+y 19
+end
+arch woodfloor
+x 13
+end
+arch wall_2_1_2
+x 13
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 13
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 13
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 13
+y 19
+end
+arch wall_2_1_2
+x 13
+y 19
+end
+arch woodfloor
+x 14
+end
+arch wall_2_1_2
+x 14
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 14
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 14
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 14
+y 19
+end
+arch wall_2_1_2
+x 14
+y 19
+end
+arch woodfloor
+x 15
+end
+arch wall_2_1_2
+x 15
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 15
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 15
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 15
+y 19
+end
+arch wall_2_1_2
+x 15
+y 19
+end
+arch woodfloor
+x 16
+end
+arch wall_2_1_2
+x 16
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 16
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 16
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 16
+y 19
+end
+arch wall_2_1_2
+x 16
+y 19
+end
+arch woodfloor
+x 17
+end
+arch wall_2_1_2
+x 17
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 17
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 17
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 17
+y 19
+end
+arch wall_2_1_2
+x 17
+y 19
+end
+arch woodfloor
+x 18
+end
+arch wall_2_1_2
+x 18
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 1
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 1
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 2
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 2
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 3
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 3
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 4
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 4
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 5
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 5
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 6
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 6
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 7
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 7
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 8
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 8
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 9
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 9
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 10
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 10
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 11
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 11
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 12
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 12
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 13
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 13
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 14
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 14
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 15
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 15
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 16
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 16
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 17
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 17
+is_buildable 1
+end
+arch woodfloor
+name woodfloor buildable
+x 18
+y 18
+type 71
+is_buildable 1
+end
+arch wwall_4
+name wall buildable
+x 18
+y 18
+is_buildable 1
+end
+arch woodfloor
+x 18
+y 19
+end
+arch wall_2_1_2
+x 18
+y 19
+end
+arch woodfloor
+x 19
+end
+arch wall_2_2_3
+x 19
+end
+arch woodfloor
+x 19
+y 1
+end
+arch wall_2_1_1
+x 19
+y 1
+end
+arch woodfloor
+x 19
+y 2
+end
+arch wall_2_1_1
+x 19
+y 2
+end
+arch woodfloor
+x 19
+y 3
+end
+arch wall_2_1_1
+x 19
+y 3
+end
+arch woodfloor
+x 19
+y 4
+end
+arch wall_2_1_1
+x 19
+y 4
+end
+arch woodfloor
+x 19
+y 5
+end
+arch wall_2_1_1
+x 19
+y 5
+end
+arch woodfloor
+x 19
+y 6
+end
+arch wall_2_1_1
+x 19
+y 6
+end
+arch woodfloor
+x 19
+y 7
+end
+arch wall_2_1_1
+x 19
+y 7
+end
+arch woodfloor
+x 19
+y 8
+end
+arch wall_2_1_1
+x 19
+y 8
+end
+arch woodfloor
+x 19
+y 9
+end
+arch wall_2_1_1
+x 19
+y 9
+end
+arch woodfloor
+x 19
+y 10
+end
+arch wall_2_1_1
+x 19
+y 10
+end
+arch woodfloor
+x 19
+y 11
+end
+arch wall_2_1_1
+x 19
+y 11
+end
+arch woodfloor
+x 19
+y 12
+end
+arch wall_2_1_1
+x 19
+y 12
+end
+arch woodfloor
+x 19
+y 13
+end
+arch wall_2_1_1
+x 19
+y 13
+end
+arch woodfloor
+x 19
+y 14
+end
+arch wall_2_1_1
+x 19
+y 14
+end
+arch woodfloor
+x 19
+y 15
+end
+arch wall_2_1_1
+x 19
+y 15
+end
+arch woodfloor
+x 19
+y 16
+end
+arch wall_2_1_1
+x 19
+y 16
+end
+arch woodfloor
+x 19
+y 17
+end
+arch wall_2_1_1
+x 19
+y 17
+end
+arch woodfloor
+x 19
+y 18
+end
+arch wall_2_1_1
+x 19
+y 18
+end
+arch woodfloor
+x 19
+y 19
+end
+arch wall_2_2_4
+x 19
+y 19
+end
