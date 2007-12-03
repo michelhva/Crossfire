@@ -42,7 +42,7 @@ import javax.swing.text.html.parser.ParserDelegator;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILabel extends AbstractLabel
+public class GUIHTMLLabel extends AbstractLabel
 {
     /**
      * Size of border around text in auto-resize mode.
@@ -68,7 +68,7 @@ public class GUILabel extends AbstractLabel
         createBuffer();
     }
 
-    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
+    public GUIHTMLLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
     {
         super(jxcWindow, name, x, y, w, h, picture, text);
         myfont = font;

@@ -30,7 +30,7 @@ import java.awt.Font;
  *
  * @author Andreas Kirschbaum
  */
-public class GUILabelDrawextinfo extends GUILabel
+public class GUILabelDrawextinfo extends GUIHTMLLabel
 {
     /**
      * The {@link CrossfireDrawextinfoListener} registered to receive

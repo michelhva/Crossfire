@@ -28,11 +28,11 @@ import java.awt.Font;
 import java.awt.image.BufferedImage;
 
 /**
- * A {@link GUILabel} that displays the currently selected spell.
+ * A {@link GUIHTMLLabel} that displays the currently selected spell.
  *
  * @author Andreas Kirschbaum
  */
-public class GUISpellLabel extends GUILabel
+public class GUISpellLabel extends GUIHTMLLabel
 {
     /**
      * The display type.

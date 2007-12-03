@@ -20,10 +20,10 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -1368,17 +1368,17 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @param tooltip The tooltip to use, or <code>null</code>.
      */
-    public void setTooltip(final GUILabel tooltip)
+    public void setTooltip(final AbstractLabel tooltip)
     {
         jxcWindowRenderer.setTooltip(tooltip);
     }
 
     /**
-     * Return the tooltip {@link GUILabel} for this window.
+     * Return the tooltip {@link AbstractLabel} for this window.
      *
      * @return The tooltip label for this window.
      */
-    public GUILabel getTooltip()
+    public AbstractLabel getTooltip()
     {
         return jxcWindowRenderer.getTooltip();
     }

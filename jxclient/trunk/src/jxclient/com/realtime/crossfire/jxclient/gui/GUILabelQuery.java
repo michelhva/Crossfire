@@ -26,11 +26,11 @@ import java.awt.Color;
 import java.awt.Font;
 
 /**
- * A {@link GUILabel} that displays the last received "query" command.
+ * A {@link GUIHTMLLabel} that displays the last received "query" command.
  *
  * @author Andreas Kirschbaum
  */
-public class GUILabelQuery extends GUILabel
+public class GUILabelQuery extends GUIHTMLLabel
 {
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
