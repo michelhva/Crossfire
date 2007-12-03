@@ -12,7 +12,7 @@ enter_x 17
 enter_y 21
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-12-03 Gene Alexander
 endmsg
 end
 arch grass
@@ -568,10 +568,10 @@ arch woodfloor2
 x 3
 y 10
 end
-arch altar_none
+arch altar_devourers
 x 3
 y 10
-level 10
+level 120
 end
 arch dungeon_magic
 x 3
@@ -728,7 +728,7 @@ arch woodfloor2
 x 4
 y 10
 end
-arch altar_devourers
+arch altar_gaea
 x 4
 y 10
 level 120
@@ -942,7 +942,7 @@ arch woodfloor2
 x 5
 y 10
 end
-arch altar_gaea
+arch altar_gnarg
 x 5
 y 10
 level 120
@@ -1107,7 +1107,7 @@ arch woodfloor2
 x 6
 y 10
 end
-arch altar_gnarg
+arch altar_gorokh
 x 6
 y 10
 level 120
@@ -1287,7 +1287,7 @@ arch woodfloor2
 x 7
 y 10
 end
-arch altar_gorokh
+arch altar_ixalovh
 x 7
 y 10
 level 120
@@ -1452,7 +1452,7 @@ arch woodfloor2
 x 8
 y 10
 end
-arch altar_ixalovh
+arch altar_lythander
 x 8
 y 10
 level 120
@@ -1672,7 +1672,7 @@ arch woodfloor2
 x 9
 y 10
 end
-arch altar_lythander
+arch altar_mostrai
 x 9
 y 10
 level 120
@@ -1845,7 +1845,7 @@ arch woodfloor2
 x 10
 y 10
 end
-arch altar_mostrai
+arch altar_ruggilli
 x 10
 y 10
 level 120
@@ -2126,7 +2126,7 @@ arch woodfloor2
 x 11
 y 10
 end
-arch altar_ruggilli
+arch altar_sorig
 x 11
 y 10
 level 120
@@ -2385,7 +2385,7 @@ arch woodfloor2
 x 12
 y 10
 end
-arch altar_sorig
+arch altar_valkyrie
 x 12
 y 10
 level 120
@@ -2699,6 +2699,11 @@ end
 arch woodfloor2
 x 13
 y 21
+end
+arch altar_none
+x 13
+y 21
+level 1
 end
 arch shop_empty
 x 13
