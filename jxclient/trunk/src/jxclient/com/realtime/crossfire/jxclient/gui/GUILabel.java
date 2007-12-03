@@ -42,7 +42,7 @@ import javax.swing.text.html.parser.ParserDelegator;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILabel extends GUIElement
+public class GUILabel extends AbstractLabel
 {
     /**
      * Size of border around text in auto-resize mode.
@@ -54,39 +54,33 @@ public class GUILabel extends GUIElement
      */
     private static final Pattern patternLineBreak = Pattern.compile("<br>");
 
-    private ImageIcon mybackground = null;
-
     private final Font myfont;
 
-    private String mycaption = null;
-
     private final Color mycolor;
-
-    /**
-     * If set, the opaque background color; if <code>null</code>, the
-     * background is transparent. This field is ignored if {@link
-     * #mybackground} is set.
-     */
-    private Color backgroundColor = null;
 
     /**
      * If set, auto-resize this element to the extent of {@link #mycaption}.
      */
     private boolean autoResize = false;
 
-    private void commonInit(final BufferedImage picture)
+    private void commonInit()
     {
-        mybackground = picture == null ? null : new ImageIcon(picture);
         createBuffer();
     }
 
     public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, picture, text);
         myfont = font;
-        commonInit(picture);
         mycolor = color;
-        setText(text);
+        render();
+    }
+
+    /** {@inheritDoc} */
+    @Override protected void textChanged()
+    {
+        autoResize();
+        render();
     }
 
     /**
@@ -105,63 +99,21 @@ public class GUILabel extends GUIElement
         }
     }
 
-    public void setText(final String ntxt)
-    {
-        if (ntxt == null) throw new IllegalArgumentException();
-        final String tmp = ntxt.replaceAll("\n", "<br>");
-        if (mycaption == null || !mycaption.equals(tmp))
-        {
-            mycaption = tmp;
-            autoResize();
-            render();
-        }
-    }
-
-    /**
-     * Return the label text.
-     *
-     * @return The label text.
-     */
-    public String getText()
-    {
-        return mycaption;
-    }
-
-    /**
-     * Set the background color.
-     *
-     * @param backgroundColor The background color, or <code>null</code> for
-     * transparent background.
-     */
-    public void setBackgroundColor(final Color backgroundColor)
-    {
-        if (this.backgroundColor != backgroundColor)
-        {
-            this.backgroundColor = backgroundColor;
-            createBuffer();
-        }
-    }
-
     protected void render()
     {
+        if (myfont == null)
+        {
+            return;
+        }
+
+        super.render();
         try
         {
             final Graphics2D g = mybuffer.createGraphics();
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
-            if (mybackground != null)
-            {
-                g.drawImage(mybackground.getImage(), x, y, null);
-            }
-            else if (backgroundColor != null)
-            {
-                g.setBackground(backgroundColor);
-                g.clearRect(0, 0, w-1, h-1);
-            }
             g.setFont(myfont);
             g.setColor(mycolor);
 
-            final Reader reader = new StringReader(mycaption);
+            final Reader reader = new StringReader(getText());
             try
             {
                 new ParserDelegator().parse(reader, new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0), false);
@@ -195,7 +147,7 @@ public class GUILabel extends GUIElement
             final FontRenderContext context = g.getFontRenderContext();
             int width = 0;
             int height = 0;
-            for (final String str : patternLineBreak.split(mycaption, -1))
+            for (final String str : patternLineBreak.split(getText(), -1))
             {
                 final Rectangle2D size = myfont.getStringBounds(str, context);
                 width = Math.max(width, (int)size.getWidth());
@@ -207,33 +159,5 @@ public class GUILabel extends GUIElement
         {
             g.dispose();
         }
-    }
-
-    /**
-     * Set the background image.
-     *
-     * @param background The new background image.
-     */
-    protected void setBackground(final ImageIcon background)
-    {
-        mybackground = background;
-        createBuffer();
-        render();
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, backgroundColor == null ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
-        final Graphics2D g = mybuffer.createGraphics();
-        if (mybackground != null)
-        {
-            g.drawImage(mybackground.getImage(), x, y, null);
-        }
-        g.dispose();
-        setChanged();
     }
 }
