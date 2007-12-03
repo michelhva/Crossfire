@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2007-12-02 Gene Alexander
+Modified: 2007-12-03 Gene Alexander
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -3238,7 +3238,6 @@ y 1
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 1
 end
@@ -3252,7 +3251,6 @@ y 3
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 3
 end
@@ -3266,7 +3264,6 @@ y 5
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 5
 end
@@ -3280,7 +3277,6 @@ y 7
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 7
 end
@@ -3294,7 +3290,6 @@ y 9
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 9
 end
@@ -3308,7 +3303,6 @@ y 11
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 11
 end
@@ -3322,7 +3316,6 @@ y 13
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 13
 end
@@ -4230,7 +4223,6 @@ y 1
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 1
 end
@@ -4244,7 +4236,6 @@ y 3
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 3
 end
@@ -4266,7 +4257,6 @@ y 7
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 7
 end
@@ -4280,7 +4270,6 @@ y 9
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 9
 end
@@ -4773,7 +4762,6 @@ y 7
 end
 arch city_tower
 name Old Tower
-name_pl Old Tower
 slaying /wolfsburg/magara/tower1/entrance
 hp 4
 sp 12
@@ -6265,7 +6253,6 @@ y 1
 end
 arch keep
 name west gatehouse
-name_pl west gatehouse
 x 25
 y 1
 end
@@ -6299,7 +6286,6 @@ y 7
 end
 arch guild
 name Damned Heretics's Storage Room
-name_pl Damned Heretics's Storage Room
 slaying /wolfsburg/guilds/damned_heretics/storage_room
 hp 1
 sp 10
@@ -7230,7 +7216,6 @@ y 1
 end
 arch keep
 name east gatehouse
-name_pl east gatehouse
 x 29
 y 1
 end
@@ -7944,6 +7929,10 @@ x 32
 y 2
 end
 arch house_2
+name Ye Olde Transport Shoppe
+slaying /wolfsburg/shops/transport.shoppe
+hp 17
+sp 22
 x 32
 y 2
 end
@@ -9040,6 +9029,7 @@ hp 2
 sp 1
 x 36
 y 8
+glow_radius 2
 unique 1
 end
 arch dungeon_floor
