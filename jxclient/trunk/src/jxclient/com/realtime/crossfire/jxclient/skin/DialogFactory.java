@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
@@ -195,7 +195,7 @@ public class DialogFactory
         result.add(new GUIPicture(jxcWindow, name+"_se", x+w-sizeE, y+h-sizeS, sizeE, sizeS, frameSE));
         if (title.length() > 0)
         {
-            result.add(new GUIHTMLLabel(jxcWindow, name+"_title", x+sizeW, y+sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, title));
+            result.add(new GUILabel(jxcWindow, name+"_title", x+sizeW, y+sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, title));
         }
         return result;
     }
