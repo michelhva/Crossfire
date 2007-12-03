@@ -939,7 +939,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         default:
-            if (keyBindingState != null)
+            if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+            {
+                // ignore
+            }
+            else if (keyBindingState != null)
             {
                 if (keyBindingState.keyReleased(keyBindings))
                 {
@@ -953,6 +957,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     public void keyTyped(final KeyEvent e)
     {
+        if (e.getKeyChar() == 27) // ignore ESC key
+        {
+            return;
+        }
+
         if (keyBindingState != null)
         {
             keyBindingState.keyTyped(e.getKeyChar());
