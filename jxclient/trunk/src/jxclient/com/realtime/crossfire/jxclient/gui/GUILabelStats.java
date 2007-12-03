@@ -28,13 +28,13 @@ import java.awt.Color;
 import java.awt.Font;
 
 /**
- * A {@link GUIHTMLLabel} that displays a value of the last received "stats"
+ * A {@link GUILabel} that displays a value of the last received "stats"
  * command.
  *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUILabelStats extends GUIHTMLLabel
+public class GUILabelStats extends GUILabel
 {
     /**
      * The stat to display.
