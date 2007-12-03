@@ -36,6 +36,7 @@ import com.realtime.crossfire.jxclient.gui.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
+import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
 import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.GUILabelStats;
@@ -784,7 +785,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("label_stat"))
                         {
-                            if (args.length != 9)
+                            if (args.length != 10)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -797,7 +798,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
-                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat);
+                            final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
+                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat, alignment);
                             elements.insert(name, element);
                         }
                         else if (args[0].equals("label_spell"))

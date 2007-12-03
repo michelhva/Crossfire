@@ -45,6 +45,26 @@ public class GUILabel extends AbstractLabel
     private final Color color;
 
     /**
+     * The text alignment.
+     */
+    private final Alignment alignment;
+
+    /**
+     * The text alignment.
+     */
+    public enum Alignment
+    {
+        /** Left-aligned. */
+        LEFT,
+
+        /** Center-aligned. */
+        CENTER,
+
+        /** Right-aligned. */
+        RIGHT,
+    }
+
+    /**
      * Create a new instance.
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
@@ -66,13 +86,16 @@ public class GUILabel extends AbstractLabel
      *
      * @param color The font color.
      *
+     * @param alignment The text alignment.
+     *
      * @param text The label text.
      */
-    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
+    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment, final String text)
     {
         super(jxcWindow, name, x, y, w, h, picture, text);
         this.font = font;
         this.color = color;
+        this.alignment = alignment;
         render();
     }
 
@@ -98,7 +121,21 @@ public class GUILabel extends AbstractLabel
         g.setColor(color);
         final String text = getText();
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
-        g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
+        final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+        switch (alignment)
+        {
+        case LEFT:
+            g.drawString(text, 0, y);
+            break;
+
+        case CENTER:
+            g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
+            break;
+
+        case RIGHT:
+            g.drawString(text, (int)Math.round(w-rect.getWidth()), y);
+            break;
+        }
         g.dispose();
         setChanged();
     }

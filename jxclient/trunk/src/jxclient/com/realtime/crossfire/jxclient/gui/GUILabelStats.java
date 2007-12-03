@@ -127,10 +127,12 @@ public class GUILabelStats extends GUILabel
      * @param color The color to use.
      *
      * @param stat The stat to display.
+     *
+     * @param alignment The text alignment.
      */
-    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final int stat)
+    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final int stat, final GUILabel.Alignment alignment)
     {
-        super(jxcWindow, name, x, y, w, h, null, font, color, "");
+        super(jxcWindow, name, x, y, w, h, null, font, color, alignment, "");
         this.stat = stat;
         ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
     }
