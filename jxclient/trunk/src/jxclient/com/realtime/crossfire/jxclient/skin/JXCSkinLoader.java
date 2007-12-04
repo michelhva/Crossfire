@@ -589,10 +589,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final String title = parseText(args, 6);
-                            for (final GUIElement element : dialogFactory.newDialog(window, name, x, y, w, h, title))
+                            for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
                             {
                                 elements.insert(element.getName(), element);
                             }
+                            gui.setPosition(x, y);
                         }
                         else if (args[0].equals("event"))
                         {

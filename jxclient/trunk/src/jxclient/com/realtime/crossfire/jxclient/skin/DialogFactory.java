@@ -164,10 +164,6 @@ public class DialogFactory
      *
      * @param name The base name of the dialog's gui elements.
      *
-     * @param x The x-coordinate of the dialog.
-     *
-     * @param y The y-coordinate of the dialog.
-     *
      * @param w The width of the dialog, including the frames.
      *
      * @param h The height of the dialog, including the frames.
@@ -176,7 +172,7 @@ public class DialogFactory
      *
      * @return The gui elements comprising the new dialog.
      */
-    public Collection<GUIElement> newDialog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String title)
+    public Collection<GUIElement> newDialog(final JXCWindow jxcWindow, final String name, final int w, final int h, final String title)
     {
         if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height is smaller than heights of N and S");
         if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width is smaller than heights of W and E");
@@ -184,18 +180,18 @@ public class DialogFactory
         if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height is taller than N+C+S");
 
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
-        result.add(new GUIPicture(jxcWindow, name+"_nw", x, y, sizeW, sizeN, frameNW));
-        result.add(new GUIPicture(jxcWindow, name+"_n", x+sizeW, y, w-sizeW-sizeE, sizeN, frameN));
-        result.add(new GUIPicture(jxcWindow, name+"_ne", x+w-sizeE, y, sizeE, sizeN, frameNE));
-        result.add(new GUIPicture(jxcWindow, name+"_w", x, y+sizeN, sizeW, h-sizeN-sizeS, frameW));
-        result.add(new GUIPicture(jxcWindow, name+"_c", x+sizeW, y+sizeN, w-sizeW-sizeE, h-sizeN-sizeS, frameC));
-        result.add(new GUIPicture(jxcWindow, name+"_e", x+w-sizeE, y+sizeN, sizeE, h-sizeN-sizeS, frameE));
-        result.add(new GUIPicture(jxcWindow, name+"_sw", x, y+h-sizeS, sizeW, sizeS, frameSW));
-        result.add(new GUIPicture(jxcWindow, name+"_s", x+sizeW, y+h-sizeS, w-sizeW-sizeE, sizeS, frameS));
-        result.add(new GUIPicture(jxcWindow, name+"_se", x+w-sizeE, y+h-sizeS, sizeE, sizeS, frameSE));
+        result.add(new GUIPicture(jxcWindow, name+"_nw", 0, 0, sizeW, sizeN, frameNW));
+        result.add(new GUIPicture(jxcWindow, name+"_n", sizeW, 0, w-sizeW-sizeE, sizeN, frameN));
+        result.add(new GUIPicture(jxcWindow, name+"_ne", w-sizeE, 0, sizeE, sizeN, frameNE));
+        result.add(new GUIPicture(jxcWindow, name+"_w", 0, sizeN, sizeW, h-sizeN-sizeS, frameW));
+        result.add(new GUIPicture(jxcWindow, name+"_c", sizeW, sizeN, w-sizeW-sizeE, h-sizeN-sizeS, frameC));
+        result.add(new GUIPicture(jxcWindow, name+"_e", w-sizeE, sizeN, sizeE, h-sizeN-sizeS, frameE));
+        result.add(new GUIPicture(jxcWindow, name+"_sw", 0, h-sizeS, sizeW, sizeS, frameSW));
+        result.add(new GUIPicture(jxcWindow, name+"_s", sizeW, h-sizeS, w-sizeW-sizeE, sizeS, frameS));
+        result.add(new GUIPicture(jxcWindow, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE));
         if (title.length() > 0)
         {
-            result.add(new GUILabel(jxcWindow, name+"_title", x+sizeW, y+sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
+            result.add(new GUILabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
         }
         return result;
     }

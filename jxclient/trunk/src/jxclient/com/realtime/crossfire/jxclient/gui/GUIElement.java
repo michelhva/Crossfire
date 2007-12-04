@@ -97,9 +97,11 @@ public abstract class GUIElement implements MouseListener
      *
      * @param name The name of this element.
      *
-     * @param x The x-coordinate for drawing this element to screen.
+     * @param x The x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>.
      *
-     * @param y The y-coordinate for drawing this element to screen.
+     * @param y The y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>.
      *
      * @param w The width for drawing this element to screen.
      *
@@ -161,12 +163,12 @@ public abstract class GUIElement implements MouseListener
 
     public int getX()
     {
-        return x;
+        return gui != null ? gui.getX()+x : x;
     }
 
     public int getY()
     {
-        return y;
+        return gui != null ? gui.getY()+y : y;
     }
 
     public int getWidth()

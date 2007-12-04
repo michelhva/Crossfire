@@ -51,6 +51,16 @@ public class Gui
     private boolean hasChangedElements = false;
 
     /**
+     * The x-offset for drawing gui elements inside this gui.
+     */
+    private int x = 0;
+
+    /**
+     * The y-offset for drawing gui elements inside this gui.
+     */
+    private int y = 0;
+
+    /**
      * Remove all {@link GUIElement}s from this gui.
      */
     public void clear()
@@ -60,6 +70,18 @@ public class Gui
             element.setGui(null);
         }
         elements.clear();
+    }
+
+    public void setPosition(final int x, final int y)
+    {
+        if (this.x == x && this.y == y)
+        {
+            return;
+        }
+
+        this.x = x;
+        this.y = y;
+        hasChangedElements = true;
     }
 
     /**
@@ -309,5 +331,25 @@ public class Gui
     public void setChangedElements()
     {
         hasChangedElements = true;
+    }
+
+    /**
+     * The x-offset for drawing gui elements inside this gui.
+     *
+     * @return The x-offset.
+     */
+    public int getX()
+    {
+        return x;
+    }
+
+    /**
+     * The y-offset for drawing gui elements inside this gui.
+     *
+     * @return The y-offset.
+     */
+    public int getY()
+    {
+        return y;
     }
 }
