@@ -122,7 +122,7 @@ public abstract class AbstractLabel extends GUIElement
             g.clearRect(0, 0, w, h);
             if (backgroundImage != null)
             {
-                g.drawImage(backgroundImage.getImage(), x, y, null);
+                g.drawImage(backgroundImage.getImage(), 0, 0, null);
             }
             else if (backgroundColor != null)
             {
@@ -160,7 +160,7 @@ public abstract class AbstractLabel extends GUIElement
         final Graphics2D g = mybuffer.createGraphics();
         if (backgroundImage != null)
         {
-            g.drawImage(backgroundImage.getImage(), x, y, null);
+            g.drawImage(backgroundImage.getImage(), 0, 0, null);
         }
         g.dispose();
         setChanged();
