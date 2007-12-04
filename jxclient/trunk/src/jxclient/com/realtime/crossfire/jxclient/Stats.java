@@ -26,6 +26,9 @@ import java.util.List;
  * This is the representation of all the statistics of a player, like its speed
  * or its experience.
  *
+ * <p>Constants named <code>C_STAT_xxx</code> are client-sided; constants named
+ * <code>CS_STAT_xxx</code> are stats as sent by the server.
+ *
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
@@ -97,6 +100,12 @@ public class Stats
      * @since 1.0
      */
     public static final int CS_STAT_EXP = 11;
+
+    /**
+     * The Global Experience needed to reach next level stat; the value is in
+     * XP.
+     */
+    public static final int C_STAT_EXP_NEXT_LEVEL = 0x10000;
 
     /**
      * The Global Level stat.

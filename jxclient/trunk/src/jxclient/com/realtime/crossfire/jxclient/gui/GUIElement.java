@@ -349,4 +349,14 @@ public abstract class GUIElement implements MouseListener
     }
 
     protected abstract void createBuffer();
+
+    /**
+     * Return the {@link JXCWindow} this gui element belongs to.
+     *
+     * @return The {@link JXCWindow} this gui element belongs to.
+     */
+    public JXCWindow getJXCWindow()
+    {
+        return jxcWindow;
+    }
 }

@@ -83,7 +83,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private long framecount = 0;
 
-    private final CrossfireServerConnection myserver = new CrossfireServerConnection();
+    /**
+     * The global experience table.
+     */
+    private final ExperienceTable experienceTable = new ExperienceTable();
+
+    private final CrossfireServerConnection myserver = new CrossfireServerConnection(experienceTable);
 
     private final String semaphore_drawing = "semaphore_drawing";
 
@@ -1537,5 +1542,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public boolean isDebugGui()
     {
         return debugGui;
+    }
+
+    /**
+     * Return the global experience table.
+     *
+     * @return The experience table.
+     */
+    public ExperienceTable getExperienceTable()
+    {
+        return experienceTable;
     }
 }
