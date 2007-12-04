@@ -363,6 +363,6 @@ public class GUIGauge extends GUIElement
      */
     private int getPercentsToNextLevel(final Stats stats)
     {
-       return getJXCWindow().getExperienceTable().getPercentsToNextLevel(stats.getStat(Stats.CS_STAT_LEVEL), stats.getExperience());
+        return getJXCWindow().getExperienceTable().getPercentsToNextLevel(stats.getStat(Stats.CS_STAT_LEVEL), stats.getExperience());
     }
 }
