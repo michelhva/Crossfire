@@ -50,8 +50,8 @@ public class ExperienceTable
     public void clear()
     {
         info.clear();
-        minLevel = Integer.MAX_INT;
-        maxLevel = Integer.MIN_INT;
+        minLevel = Integer.MAX_VALUE;
+        maxLevel = Integer.MIN_VALUE;
     }
 
     /**
