@@ -277,7 +277,7 @@ public class GUIMap extends GUIElement
         final Graphics2D g = mybuffer.createGraphics();
         try
         {
-            for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
             {
                 for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
                 {

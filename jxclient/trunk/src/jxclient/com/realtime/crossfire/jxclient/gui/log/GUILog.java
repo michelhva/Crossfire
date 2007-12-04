@@ -204,7 +204,7 @@ public class GUILog extends GUIElement implements GUIScrollable
             g.clearRect(0, 0, w, h);
             if (mybackground != null)
             {
-                g.drawImage(mybackground, x, y, null);
+                g.drawImage(mybackground, 0, 0, null);
             }
 
             if (displayBottom)
@@ -462,7 +462,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         final Graphics2D g = mybuffer.createGraphics();
         if (mybackground != null)
         {
-            g.drawImage(mybackground, x, y, null);
+            g.drawImage(mybackground, 0, 0, null);
         }
         context = g.getFontRenderContext();
         g.dispose();
