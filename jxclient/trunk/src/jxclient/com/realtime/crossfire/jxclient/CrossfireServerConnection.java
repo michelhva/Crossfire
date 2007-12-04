@@ -1307,7 +1307,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * parameters of <code>infoType</code>'s parameter start.
      * @throws IOException If an I/O error occurs.
      */
-    void cmd_replyinfo(final String infoType, final byte[] packet, final int pos) throws IOException
+    private void cmd_replyinfo(final String infoType, final byte[] packet, final int pos) throws IOException
     {
         BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, pos, packet.length-pos)));
         if (infoType.equals("image_info"))
@@ -1347,7 +1347,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param options The option/value pairs.
      * @since 1.0
      */
-    void cmd_setup(final List<String> options)
+    private void cmd_setup(final List<String> options)
     {
         for (int i = 0; i+1 < options.size(); i += 2)
         {
@@ -1445,7 +1445,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    void cmd_mapextended(DataInputStream dis)
+    private void cmd_mapextended(DataInputStream dis)
     {
         // XXX: "MapExtended" command not yet implemented
     }
