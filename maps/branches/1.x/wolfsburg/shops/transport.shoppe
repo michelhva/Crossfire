@@ -12,7 +12,7 @@ enter_x 17
 enter_y 21
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2007-12-03 Gene Alexander
+Modified: 2007-12-04 Gene Alexander
 endmsg
 end
 arch dungeon_floor
@@ -307,12 +307,7 @@ arch woodfloor2
 x 2
 y 13
 end
-arch swall_1_2
-name barred window
-x 2
-y 13
-end
-arch swall_1_4_half
+arch swall_2_2_1
 x 2
 y 13
 end
