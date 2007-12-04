@@ -34,6 +34,11 @@ import java.util.prefs.Preferences;
 public class jxclient
 {
     /**
+     * The default skin name.
+     */
+    public static final String DEFAULT_SKIN = "default";
+
+    /**
      * The program entry point.
      * @param args The command line arguments.
      */
@@ -59,7 +64,7 @@ public class jxclient
             int height = prefs.getInt("height", 768);
             int bpp = prefs.getInt("bpp", -1);
             int freq = prefs.getInt("frequency", 0);
-            String skin = prefs.get("skin", "default");
+            String skin = prefs.get("skin", DEFAULT_SKIN);
             boolean fullScreen = true;
             String server = null;
 
