@@ -199,13 +199,17 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /** The command prefix for the "version" command. */
     private static final byte[] versionPrefix = { 'v', 'e', 'r', 's', 'i', 'o', 'n', ' ', };
 
+    /** The global experience table. */
+    private final ExperienceTable experienceTable;
+
     /**
      * The defined animations.
      */
     private final Animations animations = new Animations();
 
-    public CrossfireServerConnection()
+    public CrossfireServerConnection(final ExperienceTable experienceTable)
     {
+        this.experienceTable = experienceTable;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
     }
 
@@ -1302,6 +1306,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             "mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
         sendRequestinfo("image_info");
         sendRequestinfo("skill_info");
+        sendRequestinfo("exp_table");
         sendToggleextendedtext(1);
     }
 
@@ -1309,20 +1314,21 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Handles the replyinfo server to client command.
      * @param infoType The info_type parameter.
      * @param packet The packet payload data.
-     * @param pos The starting offset into <code>packet</code> where the
+     * @param startPos The starting offset into <code>packet</code> where the
      * parameters of <code>infoType</code>'s parameter start.
      * @throws IOException If an I/O error occurs.
      */
-    private void cmd_replyinfo(final String infoType, final byte[] packet, final int pos) throws IOException
+    private void cmd_replyinfo(final String infoType, final byte[] packet, final int startPos) throws IOException
     {
-        BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, pos, packet.length-pos)));
         if (infoType.equals("image_info"))
         {
-            int nrpics = Integer.parseInt(d.readLine());
+            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, packet.length-startPos)));
+            final int nrpics = Integer.parseInt(d.readLine());
             sendAddme();
         }
         else if (infoType.equals("skill_info"))
         {
+            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, packet.length-startPos)));
             for (;;)
             {
                 final String r = d.readLine();
@@ -1356,6 +1362,23 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 }
 
                 Stats.addSkill(skillId, sk[1]);
+            }
+        }
+        else if (infoType.equals("exp_table"))
+        {
+            experienceTable.clear();
+
+            int pos = startPos;
+            final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+            System.err.println("numLevels="+numLevels);
+            for (int i = 1; i < numLevels; i++)
+            {
+                final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                experienceTable.add(i, exp);
+            }
+            if (pos < packet.length-pos)
+            {
+                System.err.println("Ignoring excess data at end of exp_table");
             }
         }
         else

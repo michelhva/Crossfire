@@ -99,6 +99,10 @@ public class GUILabelStats extends GUILabel
                 text = String.valueOf(s.getExperience());
                 break;
 
+            case Stats.C_STAT_EXP_NEXT_LEVEL:
+                text = String.valueOf(getJXCWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience()));
+                break;
+
             default:
                 text = String.valueOf(s.getStat(stat));
                 break;
