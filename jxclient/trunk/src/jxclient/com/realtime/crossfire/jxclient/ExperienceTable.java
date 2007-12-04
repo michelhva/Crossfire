@@ -135,4 +135,36 @@ public class ExperienceTable
         final long expNextLevel = getExperience(currentLevel+1);
         return Math.max(0, expNextLevel-currentExp);
     }
+
+    /**
+     * Return the experience fraction of the current level in percents. The
+     * value starts at 0% when a new level has been gained; the next level is
+     * at 100%.
+     *
+     * @param currentLevel The current level.
+     *
+     * @param currentExp The current experience.
+     *
+     * @return The experience fraction.
+     */
+    public int getPercentsToNextLevel(final int currentLevel, final long currentExp)
+    {
+        final long expThisLevel = getExperience(currentLevel);
+        final long expNextLevel = getExperience(currentLevel+1);
+        if (expThisLevel >= expNextLevel)
+        {
+            return 0;
+        }
+
+        if (currentExp < expThisLevel)
+        {
+            return 0;
+        }
+        if (currentExp >= expNextLevel)
+        {
+            return 100;
+        }
+
+        return (int)((currentExp-expThisLevel)*100/(expNextLevel-expThisLevel));
+    }
 }
