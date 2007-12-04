@@ -1317,22 +1317,23 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         }
         else if (infoType.equals("skill_info"))
         {
-            String r = "";
-            while (r != null)
+            for (;;)
             {
-                r = d.readLine();
-                if (r != null)
+                final String r = d.readLine();
+                if (r == null)
                 {
-                    String[] sk = r.split(":");
-                    final int skillId = Integer.parseInt(sk[0]);
-                    if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
-                    {
-                        System.err.println("Ignoring skill definition for invalid skill id "+skillId+".");
-                    }
-                    else
-                    {
-                        Stats.addSkill(skillId, sk[1]);
-                    }
+                    break;
+                }
+
+                final String[] sk = r.split(":");
+                final int skillId = Integer.parseInt(sk[0]);
+                if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+                {
+                    System.err.println("Ignoring skill definition for invalid skill id "+skillId+".");
+                }
+                else
+                {
+                    Stats.addSkill(skillId, sk[1]);
                 }
             }
         }
