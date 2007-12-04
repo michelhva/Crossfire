@@ -1321,7 +1321,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             while (r != null)
             {
                 r = d.readLine();
-                if (r!=null)
+                if (r != null)
                 {
                     String[] sk = r.split(":");
                     final int skillId = Integer.parseInt(sk[0]);
