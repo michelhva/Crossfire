@@ -47,6 +47,7 @@ import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.GUITextField;
+import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
@@ -934,6 +935,29 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[8]);
                             final GUICommandList commandList = commandLists.lookup(args[9]);
                             elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
+                        }
+                        else if (args[0].equals("textgauge"))
+                        {
+                            if (args.length < 13)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final BufferedImage picturePositive = getPicture(args[6]);
+                            final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
+                            final BufferedImage pictureEmpty = getPicture(args[8]);
+                            final int stat = parseStat(args[9]);
+                            final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
+                            final String tooltipPrefix = parseText(args, 11);
+                            final Color color = parseColor(args[11]);
+                            final Font font = fonts.lookup(args[12]);
+                            final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+                            elements.insert(name, element);
                         }
                         else if (args[0].equals("tooltip"))
                         {
