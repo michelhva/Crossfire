@@ -264,7 +264,7 @@ public class GUIGauge extends GUIElement
             }
         }
 
-        if (this.fx == fx && this.fy == fy && this.fw == fw && this.fh == fh && this.fPicture == fPicture)
+        if (this.fx == fx && this.fy == fy && this.fw == fw && this.fh == fh && this.fPicture == fPicture && !mustRepaint())
         {
             return;
         }
@@ -285,6 +285,17 @@ public class GUIGauge extends GUIElement
         }
         g.dispose();
         setChanged();
+    }
+
+    /**
+     * May be overridden in sub-classes to force repaints even if the value
+     * didn't change.
+     *
+     * @return Whether the gauge should be repainted.
+     */
+    protected boolean mustRepaint()
+    {
+        return false;
     }
 
     /**
@@ -319,5 +330,15 @@ public class GUIGauge extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
+    }
+
+    /**
+     * Return the displayed value.
+     *
+     * @return The displayed value.
+     */
+    public int getCurValue()
+    {
+        return curValue;
     }
 }
