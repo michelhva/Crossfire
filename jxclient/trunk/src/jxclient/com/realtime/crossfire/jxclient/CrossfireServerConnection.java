@@ -31,6 +31,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Adds encoding/decoding of crossfire protocol packets to a {@link
@@ -59,6 +60,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * The map height in tiles that is negotiated with the server.
      */
     public static final int MAP_HEIGHT = 13;
+
+    /**
+     * Pattern to split a string by ":".
+     */
+    private static final Pattern patternDot = Pattern.compile(":");
 
     private final List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
 
@@ -1325,16 +1331,31 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     break;
                 }
 
-                final String[] sk = r.split(":");
-                final int skillId = Integer.parseInt(sk[0]);
+                final String[] sk = patternDot.split(r, 2);
+                if (sk.length != 2)
+                {
+                    System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                    continue;
+                }
+
+                final int skillId;
+                try
+                {
+                    skillId = Integer.parseInt(sk[0]);
+                }
+                catch (final NumberFormatException ex)
+                {
+                    System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                    continue;
+                }
+
                 if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
                 {
-                    System.err.println("Ignoring skill definition for invalid skill id "+skillId+".");
+                    System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
+                    continue;
                 }
-                else
-                {
-                    Stats.addSkill(skillId, sk[1]);
-                }
+
+                Stats.addSkill(skillId, sk[1]);
             }
         }
         else
