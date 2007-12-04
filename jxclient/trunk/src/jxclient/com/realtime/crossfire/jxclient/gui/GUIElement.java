@@ -41,12 +41,12 @@ public abstract class GUIElement implements MouseListener
     /**
      * The x-coordinate for drawing this element to screen.
      */
-    protected int x;
+    private int x;
 
     /**
      * The y-coordinate for drawing this element to screen.
      */
-    protected int y;
+    private int y;
 
     /**
      * The width for drawing this element to screen.
