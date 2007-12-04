@@ -1,5 +1,8 @@
 2007-12-04  Andreas Kirschbaum
 
+	* Add --debug-gui option to highlight all GUI elements. Useful
+	only for skin development.
+
 	* Fall back to default skin when a custom skin cannot be loaded.
 
 2007-12-02  Andreas Kirschbaum

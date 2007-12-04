@@ -76,6 +76,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public static final int GUI_METASERVER = 1;
     public static final int GUI_MAIN       = 2;
 
+    /**
+     * Whether GUI elements should be highlighted.
+     */
+    private final boolean debugGui;
+
     private long framecount = 0;
 
     private final CrossfireServerConnection myserver = new CrossfireServerConnection();
@@ -186,10 +191,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     /**
      * Create a new instance.
+     *
+     * @param boolean Whether GUI elements should be highlighted.
      */
-    public JXCWindow()
+    public JXCWindow(final boolean debugGui)
     {
         super(TITLE_PREFIX);
+        this.debugGui = debugGui;
         addWindowFocusListener(windowFocusListener);
     }
 
@@ -1367,6 +1375,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         mouseElement = element;
         mouseElement.mouseEntered(e);
+        if (debugGui)
+        {
+            jxcWindowRenderer.repaint();
+        }
     }
 
     /**
@@ -1381,6 +1393,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             mouseElement.mouseExited(e);
             mouseElement = null;
+            if (debugGui)
+            {
+                jxcWindowRenderer.repaint();
+            }
         }
     }
 
@@ -1501,5 +1517,25 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
 
         return null;
+    }
+
+    /**
+     * Return the gui element in which the mouse is.
+     *
+     * @return The gui element in which the mouse is.
+     */
+    public GUIElement getMouseElement()
+    {
+        return mouseElement;
+    }
+
+    /**
+     * Return whether GUI elements should be highlighted.
+     *
+     * @return Whether GUI elements should be highlighted.
+     */
+    public boolean isDebugGui()
+    {
+        return debugGui;
     }
 }

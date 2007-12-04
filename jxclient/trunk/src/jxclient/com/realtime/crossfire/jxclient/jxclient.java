@@ -67,6 +67,7 @@ public class jxclient
             String skin = prefs.get("skin", DEFAULT_SKIN);
             boolean fullScreen = true;
             String server = null;
+            boolean debugGui = false;
 
             // fix changed default skin name
             if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
@@ -115,6 +116,11 @@ public class jxclient
                     server = args[i+1];
                     i++;
                 }
+                else if (args[i].equals("--debug-gui"))
+                {
+                    debugGui = true;
+                    i++;
+                }
                 else
                 {
                     System.out.println("");
@@ -128,6 +134,7 @@ public class jxclient
                     System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                     System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                     System.out.println("                  windows.");
+                    System.out.println(" --debug-gui    : Enable debugging of GUI elements.");
                     System.exit(1);
                 }
             }
@@ -137,7 +144,7 @@ public class jxclient
             prefs.putInt("frequency", freq);
             prefs.put("skin", skin);
 
-            final JXCWindow jxwin = new JXCWindow();
+            final JXCWindow jxwin = new JXCWindow(debugGui);
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
         }
         catch (final Exception e)
