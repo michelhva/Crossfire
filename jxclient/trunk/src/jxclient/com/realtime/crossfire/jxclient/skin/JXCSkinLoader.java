@@ -296,7 +296,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             elements.clear();
             commandLists.clear();
             fonts.clear();
-        dialogFactory = null;
+            dialogFactory = null;
         }
         return gui;
     }
@@ -577,7 +577,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             for (final GUIElement element : dialogFactory.newDialog(window, name, x, y, w, h, title))
                             {
                                 elements.insert(element.getName(), element);
-                           }
+                            }
                         }
                         else if (args[0].equals("event"))
                         {
@@ -1318,6 +1318,6 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public Iterator<Gui> iterator()
     {
-       return dialogs.iterator();
+        return dialogs.iterator();
     }
 }
