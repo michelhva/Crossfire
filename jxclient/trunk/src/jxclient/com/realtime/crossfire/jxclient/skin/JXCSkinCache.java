@@ -21,8 +21,8 @@ package com.realtime.crossfire.jxclient.skin;
 
 import java.io.IOException;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -30,7 +30,7 @@ import java.util.Map;
  *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinCache<T>
+public class JXCSkinCache<T> implements Iterable<T>
 {
     /**
      * The description of this cache used for creating error messages.
@@ -41,7 +41,7 @@ public class JXCSkinCache<T>
      * The cached elements. Maps element name to element. Mapped elements are
      * never <code>null</code>.
      */
-    private final Map<String, T> cache = new HashMap<String, T>();
+    private final Map<String, T> cache = new LinkedHashMap<String, T>();
 
     /**
      * Create a new instance.

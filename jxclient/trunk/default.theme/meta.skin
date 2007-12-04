@@ -41,19 +41,3 @@ button metaconnect 620 600 135 55 button_small_active button_small_pushed comman
 button metacancel  620 670 135 55 button_small_active button_small_pushed command_metacancel  font_metaurl16 DARK_GRAY 42 34 Cancel
 button metaup      270 250  20 25 metaup              metaup              command_metaup
 button metadown    270 470  20 25 metadown            metadown            command_metadown
-
-add background
-add metaurl
-add metaconnect
-add metaup
-add metadown
-add metacomment
-add metaselect1
-add metaselect2
-add metaselect3
-add metaselect4
-add metaselect5
-add metaselect6
-add metaselect7
-add metaselect8
-add metacancel

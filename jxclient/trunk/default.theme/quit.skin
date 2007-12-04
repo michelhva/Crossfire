@@ -4,17 +4,3 @@ label_text message1   350+35  300+60    280 32 font_metaurl16 WHITE Do you reall
 label_text message2   350+35  300+90    280 32 font_metaurl16 WHITE from the server?
 button disconnect     350+30  300+120   135 55 button_small_active button_small_pushed command_disconnect font_metaurl16 DARK_GRAY 32 34 Disconnect
 button resume         350+180 300+120   135 55 button_small_active button_small_pushed command_resume font_metaurl16 DARK_GRAY 42 34 Resume
-
-add dialog_c
-add message1
-add message2
-add dialog_nw
-add dialog_n
-add dialog_ne
-add dialog_w
-add dialog_e
-add dialog_sw
-add dialog_s
-add dialog_se
-add resume
-add disconnect
