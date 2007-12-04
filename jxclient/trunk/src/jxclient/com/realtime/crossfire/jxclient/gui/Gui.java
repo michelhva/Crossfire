@@ -85,6 +85,11 @@ public class Gui
      */
     public void redraw(final Graphics g, final JXCWindow jxcWindow)
     {
+        final boolean debugGui = jxcWindow.isDebugGui();
+
+        final GUIElement mouseElement = debugGui ? jxcWindow.getMouseElement() : null;
+        final long t0 = debugGui ? System.currentTimeMillis() : 0;
+
         hasChangedElements = false;
         for (final GUIElement element : elements)
         {
@@ -95,8 +100,24 @@ public class Gui
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();
+                    if (debugGui)
+                    {
+                        g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
+                        g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
+                    }
                 }
             }
+        }
+
+        if (debugGui)
+        {
+            final long t1 = System.currentTimeMillis();
+            g.setColor(java.awt.Color.YELLOW);
+            if(mouseElement != null)
+            {
+                g.drawString(mouseElement.getName(), 16, 16);
+            }
+            g.drawString((t1-t0)+"ms", 16, 32);
         }
     }
 
