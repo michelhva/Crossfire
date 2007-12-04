@@ -456,7 +456,20 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         addMouseListener(this);
         addMouseMotionListener(this);
         jxcWindowRenderer.init(w, h, b, f);
-        setSkin(skinName);
+        if (!setSkin(skinName))
+        {
+            if (skinName.equals(jxclient.DEFAULT_SKIN))
+            {
+                System.exit(1);
+            }
+
+            System.err.println("trying to load default skin "+jxclient.DEFAULT_SKIN);
+            if (!setSkin(jxclient.DEFAULT_SKIN))
+            {
+                System.exit(1);
+                throw new AssertionError();
+            }
+        }
         try
         {
             initRendering(fullScreen);
@@ -1396,8 +1409,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      * Set the skin to use.
      *
      * @param skinName The skin name to set.
+     *
+     * @return Whether loading was successful.
      */
-    private void setSkin(final String skinName)
+    private boolean setSkin(final String skinName)
     {
         try
         {
@@ -1417,9 +1432,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         catch (final JXCSkinException ex)
         {
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
-            System.exit(1);
-            throw new AssertionError();
+            return false;
         }
+
+        return true;
     }
 
     /**
