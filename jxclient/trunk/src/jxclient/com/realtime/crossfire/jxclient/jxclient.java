@@ -119,7 +119,6 @@ public class jxclient
                 else if (args[i].equals("--debug-gui"))
                 {
                     debugGui = true;
-                    i++;
                 }
                 else
                 {
