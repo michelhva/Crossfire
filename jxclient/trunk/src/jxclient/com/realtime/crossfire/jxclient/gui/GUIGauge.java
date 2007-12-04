@@ -105,6 +105,18 @@ public class GUIGauge extends GUIElement
                 setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
                 break;
 
+            case Stats.C_STAT_EXP_NEXT_LEVEL:
+                setValues(getPercentsToNextLevel(s), 0, 99);
+                break;
+
+            case Stats.C_STAT_EXP_NEXT_LEVEL_0X:
+                setValues(getPercentsToNextLevel(s)%10, 0, 9);
+                break;
+
+            case Stats.C_STAT_EXP_NEXT_LEVEL_X0:
+                setValues(getPercentsToNextLevel(s)/10, 0, 9);
+                break;
+
             default:
                 if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
                 {
@@ -340,5 +352,17 @@ public class GUIGauge extends GUIElement
     public int getCurValue()
     {
         return curValue;
+    }
+
+    /**
+     * Return the experience fraction of the current level.
+     *
+     * @param stats The stats instance to process.
+     *
+     * @return The fraction in percents.
+     */
+    private int getPercentsToNextLevel(final Stats stats)
+    {
+       return getJXCWindow().getExperienceTable().getPercentsToNextLevel(stats.getStat(Stats.CS_STAT_LEVEL), stats.getExperience());
     }
 }

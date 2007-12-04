@@ -27,6 +27,8 @@ public class StatsParser
         statTable.put("DEX", Stats.CS_STAT_DEX);
         statTable.put("EXP", Stats.CS_STAT_EXP64);
         statTable.put("EXP_NEXT_LEVEL", Stats.C_STAT_EXP_NEXT_LEVEL);
+        statTable.put("EXP_NEXT_LEVEL_0X", Stats.C_STAT_EXP_NEXT_LEVEL_0X);
+        statTable.put("EXP_NEXT_LEVEL_X0", Stats.C_STAT_EXP_NEXT_LEVEL_X0);
         statTable.put("FOOD", Stats.CS_STAT_FOOD);
         statTable.put("GRACE", Stats.CS_STAT_GRACE);
         statTable.put("HP", Stats.CS_STAT_HP);
