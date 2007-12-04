@@ -377,6 +377,42 @@ commandlist_add rsp_display panel_spells SHOW
 commandlist_add rsp_display label_panel_spells_icon SHOW
 commandlist_add rsp_display label_panel_spells_name SHOW
 commandlist_add rsp_display label_panel_spells_description SHOW
+commandlist_add rsp_display gr0 HIDE
+commandlist_add rsp_display gr1 HIDE
+commandlist_add rsp_display gr2 HIDE
+commandlist_add rsp_display gr3 HIDE
+commandlist_add rsp_display gr4 HIDE
+commandlist_add rsp_display gr5 HIDE
+commandlist_add rsp_display gr6 HIDE
+commandlist_add rsp_display gr7 HIDE
+commandlist_add rsp_display gr8 HIDE
+commandlist_add rsp_display gr9 HIDE
+commandlist_add rsp_display grA HIDE
+commandlist_add rsp_display grB HIDE
+commandlist_add rsp_display grC HIDE
+commandlist_add rsp_display grD HIDE
+commandlist_add rsp_display grE HIDE
+commandlist_add rsp_display grF HIDE
+commandlist_add rsp_display grG HIDE
+commandlist_add rsp_display grH HIDE
+commandlist_add rsp_display gr0_back HIDE
+commandlist_add rsp_display gr1_back HIDE
+commandlist_add rsp_display gr2_back HIDE
+commandlist_add rsp_display gr3_back HIDE
+commandlist_add rsp_display gr4_back HIDE
+commandlist_add rsp_display gr5_back HIDE
+commandlist_add rsp_display gr6_back HIDE
+commandlist_add rsp_display gr7_back HIDE
+commandlist_add rsp_display gr8_back HIDE
+commandlist_add rsp_display gr9_back HIDE
+commandlist_add rsp_display grA_back HIDE
+commandlist_add rsp_display grB_back HIDE
+commandlist_add rsp_display grC_back HIDE
+commandlist_add rsp_display grD_back HIDE
+commandlist_add rsp_display grE_back HIDE
+commandlist_add rsp_display grF_back HIDE
+commandlist_add rsp_display grG_back HIDE
+commandlist_add rsp_display grH_back HIDE
 
 commandlist rsp_undisplay
 commandlist_add rsp_undisplay rsp0 HIDE
@@ -427,6 +463,42 @@ commandlist_add rsp_undisplay panel_spells HIDE
 commandlist_add rsp_undisplay label_panel_spells_icon HIDE
 commandlist_add rsp_undisplay label_panel_spells_name HIDE
 commandlist_add rsp_undisplay label_panel_spells_description HIDE
+commandlist_add rsp_undisplay gr0 SHOW
+commandlist_add rsp_undisplay gr1 SHOW
+commandlist_add rsp_undisplay gr2 SHOW
+commandlist_add rsp_undisplay gr3 SHOW
+commandlist_add rsp_undisplay gr4 SHOW
+commandlist_add rsp_undisplay gr5 SHOW
+commandlist_add rsp_undisplay gr6 SHOW
+commandlist_add rsp_undisplay gr7 SHOW
+commandlist_add rsp_undisplay gr8 SHOW
+commandlist_add rsp_undisplay gr9 SHOW
+commandlist_add rsp_undisplay grA SHOW
+commandlist_add rsp_undisplay grB SHOW
+commandlist_add rsp_undisplay grC SHOW
+commandlist_add rsp_undisplay grD SHOW
+commandlist_add rsp_undisplay grE SHOW
+commandlist_add rsp_undisplay grF SHOW
+commandlist_add rsp_undisplay grG SHOW
+commandlist_add rsp_undisplay grH SHOW
+commandlist_add rsp_undisplay gr0_back SHOW
+commandlist_add rsp_undisplay gr1_back SHOW
+commandlist_add rsp_undisplay gr2_back SHOW
+commandlist_add rsp_undisplay gr3_back SHOW
+commandlist_add rsp_undisplay gr4_back SHOW
+commandlist_add rsp_undisplay gr5_back SHOW
+commandlist_add rsp_undisplay gr6_back SHOW
+commandlist_add rsp_undisplay gr7_back SHOW
+commandlist_add rsp_undisplay gr8_back SHOW
+commandlist_add rsp_undisplay gr9_back SHOW
+commandlist_add rsp_undisplay grA_back SHOW
+commandlist_add rsp_undisplay grB_back SHOW
+commandlist_add rsp_undisplay grC_back SHOW
+commandlist_add rsp_undisplay grD_back SHOW
+commandlist_add rsp_undisplay grE_back SHOW
+commandlist_add rsp_undisplay grF_back SHOW
+commandlist_add rsp_undisplay grG_back SHOW
+commandlist_add rsp_undisplay grH_back SHOW
 
 button btn_rsp_display 690+72 22+732 25 14 button_chat_inactive button_chat_active rsp_display
 button btn_rsp_undisplay 690+72 22+732 25 14 button_chat_pushed button_chat_active rsp_undisplay
@@ -449,77 +521,12 @@ commandlist_add command_log_upper_down log_upper SCROLLDOWN
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive command_log_upper_down
 
-add playfield
-add sword_back
-add gauge_hp_back
-add gauge_fp_back
-add gauge_hp
-add gauge_fp
-add staff_back
-add gauge_gp_back
-add gauge_sp_back
-add gauge_gp
-add gauge_sp
-add up_back
-add title_back
-add left_back_top
-add left_back_bottom
-add right_back_top
-#add right_back_bottom
-add spellbelt_left_back
-add inv_right_back
-add panel_back_bottom
 add panel_back_dragon_left
 add panel_back_dragon_right
-add gr0_back
-add gr1_back
-add gr2_back
-add gr3_back
-add gr4_back
-add gr5_back
-add gr6_back
-add gr7_back
-add gr8_back
-add gr9_back
-add grA_back
-add grB_back
-add grC_back
-add grD_back
-add grE_back
-add grF_back
-add grG_back
-add grH_back
-add gr0
-add gr1
-add gr2
-add gr3
-add gr4
-add gr5
-add gr6
-add gr7
-add gr8
-add gr9
-add grA
-add grB
-add grC
-add grD
-add grE
-add grF
-add grG
-add grH
-add lower_bar
 add label_hp
 add label_fp
 add label_sp
 add label_gp
-add label_title
-add label_stat_str
-add label_stat_dex
-add label_stat_con
-add label_stat_int
-add label_stat_pow
-add label_stat_wis
-add label_stat_cha
 add label_sstat_level
 add label_sstat_exp
 add label_sstat_wc
@@ -527,92 +534,8 @@ add label_sstat_ac
 add label_sstat_dam
 add label_sstat_speed
 add label_sstat_range
-add command
-add btn_rsp_display
-add btn_rsp_undisplay
-add btn_stats
-add log_upper_back
-add log_upper
-add btn_rinv_up
-add btn_rinv_down
-add btn_rsp_up
-add btn_rsp_down
-add spellbelt0
-add spellbelt1
-add spellbelt2
-add spellbelt3
-add spellbelt4
-add spellbelt5
-add spellbelt6
-add spellbelt7
-add spellbelt8
-add spellbelt9
-add spellbeltA
-add spellbeltB
-add rinv0
-add rinv1
-add rinv2
-add rinv3
-add rinv4
-add rinv5
-add rinv6
-add rinv7
-add rinv8
-add rinv9
-add rinvA
-add rinvB
-add rinvC
-add rinvD
-add rinvE
-add rinvF
-add rinvG
-add rinvH
-add rinvI
-add rinvJ
-add rsp0
-add rsp1
-add rsp2
-add rsp3
-add rsp4
-add rsp5
-add rsp6
-add rsp7
-add rsp8
-add rsp9
-add rspA
-add rspB
-add rspC
-add rspD
-add rspE
-add rspF
-add rspG
-add rspH
-add rspI
-add rspJ
-add floor0
-add floor1
-add floor2
-add floor3
-add floor4
-add floor5
-add floor6
-add floor7
-add floor8
-add floor9
-add floorA
-add log_upper_down
-add log_upper_up
 add btn_magicmap_hide
 add btn_magicmap_show
-add btn_menu
-add magicmap_content
-add magicmap
-add panel_spells
-add label_panel_spells_icon
-add label_panel_spells_name
-add label_panel_spells_description
-add hpbar_back
-add hpbar
 
 ignore panel_back_dragon_left
 ignore panel_back_dragon_right

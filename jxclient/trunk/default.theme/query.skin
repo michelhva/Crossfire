@@ -2,15 +2,3 @@
 dialog dialog          350     200 23+200+21 38+100+16
 label_query message 35+350  60+200    180        32    font_stats13 WHITE
 command_text input  50+350 100+200    132        20    textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE
-
-add dialog_c
-add message
-add dialog_nw
-add dialog_n
-add dialog_ne
-add dialog_w
-add dialog_e
-add dialog_sw
-add dialog_s
-add dialog_se
-add input

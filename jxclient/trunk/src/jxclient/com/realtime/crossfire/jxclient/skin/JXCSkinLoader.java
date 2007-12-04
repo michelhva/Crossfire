@@ -61,8 +61,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -373,6 +377,9 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private void load(final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
+        final List<GUIElement> addedElements = new ArrayList<GUIElement>();
+        boolean addedElementsContainsWildcard = false;
+
         try
         {
             final InputStreamReader isr = new InputStreamReader(inputStream, "UTF-8");
@@ -402,7 +409,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            gui.add(elements.lookup(args[1]));
+                            if (args[1].equals("*"))
+                            {
+                                addedElementsContainsWildcard = true;
+                                addedElements.add(null);
+                            }
+                            else
+                            {
+                                addedElements.add(elements.lookup(args[1]));
+                            }
                         }
                         else if (args[0].equals("button"))
                         {
@@ -1007,6 +1022,48 @@ public abstract class JXCSkinLoader implements JXCSkin
         catch (final IOException ex)
         {
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+        }
+
+        final Map<GUIElement, GUIElement> wildcardElements = new LinkedHashMap<GUIElement, GUIElement>();
+        for (final GUIElement element : elements)
+        {
+            wildcardElements.put(element, element);
+        }
+        for (final GUIElement element : addedElements)
+        {
+            wildcardElements.remove(element);
+        }
+
+        int i = 0;
+        if(addedElementsContainsWildcard)
+        {
+            while (i < addedElements.size())
+            {
+                final GUIElement element = addedElements.get(i);
+                if (element == null)
+                {
+                    break;
+                }
+                gui.add(element);
+                i++;
+            }
+            assert i < addedElements.size();
+            i++;
+        }
+
+        for (final GUIElement element : wildcardElements.keySet())
+        {
+            gui.add(element);
+        }
+
+        while (i < addedElements.size())
+        {
+            final GUIElement element = addedElements.get(i);
+            if (element != null)
+            {
+                gui.add(element);
+            }
+            i++;
         }
     }
 
