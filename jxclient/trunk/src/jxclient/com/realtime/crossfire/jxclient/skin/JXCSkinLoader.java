@@ -591,6 +591,67 @@ public abstract class JXCSkinLoader implements JXCSkin
                                         }
                                     });
                             }
+                            else if (type.equals("skill"))
+                            {
+                                if (args.length != 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final String subtype = args[2];
+                                final Skill skill = Stats.getNamedSkill(args[3].replaceAll("_", " "));
+                                final GUICommandList commandList = commandLists.lookup(args[4]);
+                                if (subtype.equals("add"))
+                                {
+                                    skill.addSkillListener(new SkillListener()
+                                        {
+                                            /** {@inheritDoc} */
+                                            public void addSkill(final Skill skill)
+                                            {
+                                                commandList.execute();
+                                            }
+
+                                            /** {@inheritDoc} */
+                                            public void delSkill(final Skill skill)
+                                            {
+                                                // ignore
+                                            }
+
+                                            /** {@inheritDoc} */
+                                            public void updSkill(final Skill skill)
+                                            {
+                                                // ignore
+                                            }
+                                        });
+                                }
+                                else if (subtype.equals("del"))
+                                {
+                                    skill.addSkillListener(new SkillListener()
+                                        {
+                                            /** {@inheritDoc} */
+                                            public void addSkill(final Skill skill)
+                                            {
+                                                // ignore
+                                            }
+
+                                            /** {@inheritDoc} */
+                                            public void delSkill(final Skill skill)
+                                            {
+                                                commandList.execute();
+                                            }
+
+                                            /** {@inheritDoc} */
+                                            public void updSkill(final Skill skill)
+                                            {
+                                                // ignore
+                                            }
+                                        });
+                                }
+                                else
+                                {
+                                    throw new IOException("undefined event sub-type: "+subtype);
+                                }
+                            }
                             else
                             {
                                 throw new IOException("undefined event type: "+type);
