@@ -1371,7 +1371,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
             int pos = startPos;
             final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-            System.err.println("numLevels="+numLevels);
             for (int i = 1; i < numLevels; i++)
             {
                 final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
