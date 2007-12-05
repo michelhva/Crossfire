@@ -56,4 +56,9 @@ public interface JXCSkin extends Iterable<Gui>
     Gui getMainInterface() throws JXCSkinException;
     Gui getMetaInterface() throws JXCSkinException;
     Gui getStartInterface() throws JXCSkinException;
+
+    /**
+     * Execute the "event init" commands.
+     */
+    void executeInitEvents();
 }

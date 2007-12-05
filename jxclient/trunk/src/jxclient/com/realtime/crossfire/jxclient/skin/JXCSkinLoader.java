@@ -52,6 +52,9 @@ import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.Skill;
+import com.realtime.crossfire.jxclient.SkillListener;
+import com.realtime.crossfire.jxclient.Stats;
 import com.realtime.crossfire.jxclient.StatsParser;
 import java.awt.Color;
 import java.awt.Font;
@@ -123,6 +126,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * Names of pending skin files.
      */
     private final Set<String> dialogsToLoad = new HashSet<String>();
+
+    /**
+     * All "event init" commands in execution order.
+     */
+    private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
     /**
      * Check that the skin exists and can be accessed.
@@ -603,7 +611,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String type = args[1];
-                            if (type.equals("magicmap"))
+                            if (type.equals("init"))
+                            {
+                                if (args.length != 3)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                initEvents.add(commandLists.lookup(args[2]));
+                            }
+                            else if (type.equals("magicmap"))
                             {
                                 if (args.length != 3)
                                 {
@@ -1377,5 +1394,14 @@ public abstract class JXCSkinLoader implements JXCSkin
     public Iterator<Gui> iterator()
     {
         return dialogs.iterator();
+    }
+
+    /** {@inheritDoc} */
+    public void executeInitEvents()
+    {
+        for (final GUICommandList commandList : initEvents)
+        {
+            commandList.execute();
+        }
     }
 }
