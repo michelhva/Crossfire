@@ -172,4 +172,24 @@ public class Skill
             listener.updSkill(this);
         }
     }
+
+    /**
+     * Add a listener to be notified of changes.
+     *
+     * @param listener The listener to add.
+     */
+    public void addSkillListener(final SkillListener listener)
+    {
+        listeners.add(listener);
+    }
+
+    /**
+     * Remove a listener to be notified of changes.
+     *
+     * @param listener The listener to remove.
+     */
+    public void removeSkillListener(final SkillListener listener)
+    {
+        listeners.remove(listener);
+    }
 }
