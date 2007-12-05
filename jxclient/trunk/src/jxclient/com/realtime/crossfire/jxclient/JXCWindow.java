@@ -1456,6 +1456,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return false;
         }
 
+        myskin.executeInitEvents();
         return true;
     }
 
