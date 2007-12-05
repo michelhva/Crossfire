@@ -165,15 +165,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             final Iterator<String> it = dialogsToLoad.iterator();
             final String name = it.next();
             it.remove();
-            final Gui gui;
-            try
-            {
-                gui = dialogs.lookup(name);
-            }
-            catch (final IOException ex)
-            {
-                throw new AssertionError();
-            }
+            final Gui gui = dialogs.lookup(name);
             load(name+".skin", gui, s, p);
         }
         images.clear();
@@ -185,14 +177,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             return dialogs.lookup(name);
         }
-        catch (final IOException ex)
+        catch (final JXCSkinException ex)
         {
             final Gui gui = new Gui();
             try
             {
                 dialogs.insert(name, gui);
             }
-            catch (final IOException ex2)
+            catch (final JXCSkinException ex2)
             {
                 throw new AssertionError();
             }
@@ -208,7 +200,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             return dialogs.lookup("quit");
         }
-        catch (final IOException ex)
+        catch (final JXCSkinException ex)
         {
             return null;
         }
@@ -217,79 +209,37 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public Gui getDialogKeyBind() throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("keybind");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("keybind");
     }
 
     /** {@inheritDoc} */
     public Gui getDialogQuery() throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("query");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("query");
     }
 
     /** {@inheritDoc} */
     public Gui getDialogBook(int booknr) throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("book");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("book");
     }
 
     /** {@inheritDoc} */
     public Gui getMainInterface() throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("main");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("main");
     }
 
     /** {@inheritDoc} */
     public Gui getMetaInterface() throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("meta");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("meta");
     }
 
     /** {@inheritDoc} */
     public Gui getStartInterface() throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup("start");
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(ex.getMessage());
-        }
+        return dialogs.lookup("start");
     }
 
     private Gui load(final String name, final Gui gui, final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
@@ -342,6 +292,10 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
         }
         catch (final IOException ex)
+        {
+            throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+        }
+        catch (final JXCSkinException ex)
         {
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
         }
@@ -1015,6 +969,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                 {
                     throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
                 }
+                catch (final JXCSkinException ex)
+                {
+                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
+                }
                 catch (final IllegalArgumentException ex)
                 {
                     final String msg = ex.getMessage();
@@ -1319,7 +1277,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             return images.lookup(name);
         }
-        catch (final IOException ex)
+        catch (final JXCSkinException ex)
         {
             // ignore
         }
@@ -1343,7 +1301,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             images.insert(name, picture);
         }
-        catch (final IOException ex)
+        catch (final JXCSkinException ex)
         {
             throw new AssertionError();
         }
@@ -1357,14 +1315,14 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @return The <code>GUIText</code> element.
      *
-     * @throws IOException if the element name is undefined
+     * @throws JXCSkinException if the element name is undefined
      */
-    private GUIText lookupTextElement(final String name) throws IOException
+    private GUIText lookupTextElement(final String name) throws JXCSkinException
     {
         final GUIElement element = elements.lookup(name);
         if (!(element instanceof GUIText))
         {
-            throw new IOException("element "+name+" is not a text field");
+            throw new JXCSkinException("element "+name+" is not a text field");
         }
 
         return (GUIText)element;
@@ -1377,14 +1335,14 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @return The <code>AbstractLabel</code> element.
      *
-     * @throws IOException if the element name is undefined
+     * @throws JXCSkinException if the element name is undefined
      */
-    private AbstractLabel lookupLabelElement(final String name) throws IOException
+    private AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
     {
         final GUIElement element = elements.lookup(name);
         if (!(element instanceof AbstractLabel))
         {
-            throw new IOException("element "+name+" is not a label");
+            throw new JXCSkinException("element "+name+" is not a label");
         }
 
         return (AbstractLabel)element;
