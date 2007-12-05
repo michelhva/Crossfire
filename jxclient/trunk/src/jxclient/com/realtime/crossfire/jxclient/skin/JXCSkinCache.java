@@ -19,8 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import java.io.IOException;
 import java.util.Collections;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -69,16 +70,16 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @param t The element to add.
      *
-     * @throws IOException if the element name is not unique
+     * @throws JXCSkinException if the element name is not unique
      */
-    public void insert(final String name, final T t) throws IOException
+    public void insert(final String name, final T t) throws JXCSkinException
     {
         if (name == null) throw new IllegalArgumentException();
         if (t == null) throw new IllegalArgumentException();
 
         if (cache.containsKey(name))
         {
-            throw new IOException("duplicate "+ident+" name: "+name);
+            throw new JXCSkinException("duplicate "+ident+" name: "+name);
         }
 
         cache.put(name, t);
@@ -91,14 +92,14 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @return The element.
      *
-     * @throws IOException if no such element exists
+     * @throws JXCSkinException if no such element exists
      */
-    public T lookup(final String name) throws IOException
+    public T lookup(final String name) throws JXCSkinException
     {
         final T t = cache.get(name);
         if (t == null)
         {
-            throw new IOException("undefined "+ident+" name: "+name);
+            throw new JXCSkinException("undefined "+ident+" name: "+name);
         }
 
         return t;
