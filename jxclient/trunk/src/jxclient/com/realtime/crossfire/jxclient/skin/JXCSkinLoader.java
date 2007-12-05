@@ -1047,9 +1047,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureEmpty = getPicture(args[8]);
                             final int stat = parseStat(args[9]);
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
-                            final String tooltipPrefix = parseText(args, 11);
                             final Color color = parseColor(args[11]);
                             final Font font = fonts.lookup(args[12]);
+                            final String tooltipPrefix = parseText(args, 13);
                             final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
                             elements.insert(name, element);
                         }
