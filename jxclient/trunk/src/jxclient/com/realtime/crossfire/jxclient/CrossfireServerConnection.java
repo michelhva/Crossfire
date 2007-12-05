@@ -804,6 +804,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     pos += nameLength;
                     if (pos != packet.length) break;
                     ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
+                    Stats.reset();
                 }
                 return;
 
@@ -1014,8 +1015,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 }
                                 else
                                 {
-                                    sk.setLevel(level);
-                                    sk.setExperience(experience3);
+                                    sk.set(level, experience3);
                                 }
                             }
                             else
@@ -1328,6 +1328,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         }
         else if (infoType.equals("skill_info"))
         {
+            Stats.clearSkills();
             final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, packet.length-startPos)));
             for (;;)
             {

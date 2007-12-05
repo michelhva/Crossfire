@@ -19,50 +19,157 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
+ * One skill of the character.
  *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class Skill
 {
-    private final int myindex;
+    /**
+     * The listeners to inform of changes.
+     */
+    private final List<SkillListener> listeners = new ArrayList<SkillListener>();
 
-    private final String myname;
+    /**
+     * The skill name.
+     */
+    private final String name;
 
-    private long myexperience = 0;
+    /**
+     * The skill experience.
+     */
+    private long experience = 0;
 
-    private int mylevel = 1;
+    /**
+     * The skill level.
+     */
+    private int level = 0;
 
-    public Skill(int index, String name)
+    /**
+     * Create a new instance.
+     *
+     * @param name The skill name.
+     */
+    public Skill(final String name)
     {
-        myindex = index;
-        myname = name;
+        this.name = name;
     }
 
-    public void setLevel(int nv)
+    /**
+     * Update the skill attributes.
+     *
+     * @param level The new skill level.
+     *
+     * @param experience The new skill experience.
+     */
+    public void set(final int level, final long experience)
     {
-        mylevel = nv;
+        if (this.level == level && this.experience == experience)
+        {
+            return;
+        }
+
+        final boolean oldKnown = isKnown();
+        this.level = level;
+        this.experience = experience;
+        fireEvents(oldKnown);
     }
 
-    public void setExperience(long exp)
-    {
-        myexperience = exp;
-    }
-
+    /**
+     * Return the skill experience.
+     *
+     * @return The skill experience.
+     */
     public long getExperience()
     {
-        return myexperience;
+        return experience;
     }
 
+    /**
+     * Return the skill level.
+     *
+     * @return The skill level.
+     */
     public int getLevel()
     {
-        return mylevel;
+        return level;
     }
 
+    /**
+     * Return whether the skill is known.
+     *
+     * @return Whether the skill is known.
+     */
+    public boolean isKnown()
+    {
+        return experience != 0 || level != 0;
+    }
+
+    /** {@inheritDoc} */
     public String toString()
     {
-        return myname;
+        return name;
+    }
+
+    /**
+     * Notify all listeners about changes.
+     *
+     * @param oldKnown Whether the skill was known before the update.
+     */
+    private void fireEvents(final boolean oldKnown)
+    {
+        final boolean newKnown = isKnown();
+
+        if (!oldKnown)
+        {
+            assert newKnown;
+            fireAddSkill();
+        }
+        else if (!newKnown)
+        {
+            fireDelSkill();
+        }
+        else
+        {
+            fireUpdSkill();
+        }
+    }
+
+    /**
+     * Notify all listeners about a gained skill.
+     */
+    private void fireAddSkill()
+    {
+        for (final SkillListener listener : listeners)
+        {
+            listener.addSkill(this);
+        }
+    }
+
+    /**
+     * Notify all listeners about a lost attribute.
+     */
+    private void fireDelSkill()
+    {
+        for (final SkillListener listener : listeners)
+        {
+            listener.delSkill(this);
+        }
+    }
+
+    /**
+     * Notify all listeners about an updated attribute.
+     */
+    private void fireUpdSkill()
+    {
+        for (final SkillListener listener : listeners)
+        {
+            listener.updSkill(this);
+        }
     }
 }
