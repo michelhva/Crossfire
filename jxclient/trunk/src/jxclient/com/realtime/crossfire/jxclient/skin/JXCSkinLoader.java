@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
+import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.GUITextField;
 import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
@@ -116,6 +117,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * All defined images.
      */
     private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
+
+    /**
+     * The text button factory. Set to <code>null</code> until defined.
+     */
+    private TextButtonFactory textButtonFactory = null;
 
     /**
      * The dialog factory. Set to <code>null</code> until defined.
@@ -247,6 +253,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         elements.clear();
         commandLists.clear();
         fonts.clear();
+        textButtonFactory = null;
         dialogFactory = null;
         try
         {
@@ -258,6 +265,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             elements.clear();
             commandLists.clear();
             fonts.clear();
+            textButtonFactory = null;
             dialogFactory = null;
         }
         return gui;
@@ -527,6 +535,23 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final Font titleFont = fonts.lookup(args[3]);
                                 final Color backgroundColor = parseColor(args[4]);
                                 dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, backgroundColor);
+                            }
+                            else if (args[1].equals("textbutton"))
+                            {
+                                if (args.length != 8)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final String up = args[2];
+                                final String down = args[3];
+                                final Font font = fonts.lookup(args[4]);
+                                final Color color = parseColor(args[5]);
+                                final int textX = parseInt(args[6]);
+                                final int textY = parseInt(args[7]);
+                                final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(getPicture(up+"_w"), getPicture(up+"_c"), getPicture(up+"_e"));
+                                final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(getPicture(down+"_w"), getPicture(down+"_c"), getPicture(down+"_e"));
+                                textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, textX, textY);
                             }
                             else
                             {
@@ -983,6 +1008,27 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[8]);
                             final GUICommandList commandList = commandLists.lookup(args[9]);
                             elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
+                        }
+                        else if (args[0].equals("textbutton"))
+                        {
+                            if (args.length < 7)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            if (textButtonFactory == null)
+                            {
+                                throw new IOException("missing 'def textbutton' command");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final GUICommandList commandList = commandLists.lookup(args[6]);
+                            final String text = parseText(args, 7);
+                            elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, commandList));
                         }
                         else if (args[0].equals("textgauge"))
                         {
