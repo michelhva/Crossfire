@@ -20,7 +20,9 @@
 package com.realtime.crossfire.jxclient;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * This is the representation of all the statistics of a player, like its speed
@@ -29,75 +31,63 @@ import java.util.List;
  * <p>Constants named <code>C_STAT_xxx</code> are client-sided; constants named
  * <code>CS_STAT_xxx</code> are stats as sent by the server.
  *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class Stats
 {
     /**
      * The Hit Points stat.
-     * @since 1.0
      */
     public static final int CS_STAT_HP = 1;
 
     /**
      * The Maximum Hit Points stat.
-     * @since 1.0
      */
     public static final int CS_STAT_MAXHP = 2;
 
     /**
      * The Spell Points stat.
-     * @since 1.0
      */
     public static final int CS_STAT_SP = 3;
 
     /**
      * The Maximum Spell Points stat.
-     * @since 1.0
      */
     public static final int CS_STAT_MAXSP = 4;
 
     /**
      * The Strength Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_STR = 5;
 
     /**
      * The Intelligence Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_INT = 6;
 
     /**
      * The Wisdom Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_WIS = 7;
 
     /**
      * The Dexterity Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_DEX = 8;
 
     /**
      * The Constitution Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_CON = 9;
 
     /**
      * The Charisma Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_CHA = 10;
 
     /**
      * The Global Experience (32bit encoding) stat.
-     * @since 1.0
      */
     public static final int CS_STAT_EXP = 11;
 
@@ -121,97 +111,81 @@ public class Stats
 
     /**
      * The Global Level stat.
-     * @since 1.0
      */
     public static final int CS_STAT_LEVEL = 12;
 
     /**
      * The Weapon Class stat.
-     * @since 1.0
      */
     public static final int CS_STAT_WC = 13;
 
     /**
      * The Armor Class stat.
-     * @since 1.0
      */
     public static final int CS_STAT_AC = 14;
 
     /**
      * The Damage stat.
-     * @since 1.0
      */
     public static final int CS_STAT_DAM = 15;
 
     /**
      * The Armour stat.
-     * @since 1.0
      */
     public static final int CS_STAT_ARMOUR = 16;
 
     /**
      * The Speed stat.
-     * @since 1.0
      */
     public static final int CS_STAT_SPEED = 17;
 
     /**
      * The Food stat.
-     * @since 1.0
      */
     public static final int CS_STAT_FOOD = 18;
 
     /**
      * The Weapon Speed stat.
-     * @since 1.0
      */
     public static final int CS_STAT_WEAP_SP = 19;
 
     /**
      * The Range stat - this is what is currently readied by the player to fire.
-     * @since 1.0
      */
     public static final int CS_STAT_RANGE = 20;
 
     /**
      * The Title stat.
-     * @since 1.0
      */
     public static final int CS_STAT_TITLE = 21;
 
     /**
      * The Power Primary stat.
-     * @since 1.0
      */
     public static final int CS_STAT_POW = 22;
 
     /**
      * The Grace stat.
-     * @since 1.0
      */
     public static final int CS_STAT_GRACE = 23;
 
     /**
      * The Maximum Grace stat.
-     * @since 1.0
      */
     public static final int CS_STAT_MAXGRACE = 24;
 
     /**
      * The various flags used in stats.
-     * @since 1.0
      */
     public static final int CS_STAT_FLAGS = 25;
 
     /**
      * The Weight Limit stat.
-     * @since 1.0
      */
     public static final int CS_STAT_WEIGHT_LIM = 26;
 
     /**
      * The Global Experience (64bit encoding) stat.
-     * @since 1.0
      */
     public static final int CS_STAT_EXP64 = 28;
 
@@ -225,121 +199,101 @@ public class Stats
 
     /**
      * Beginning index of the resistances.
-     * @since 1.0
      */
     public static final int CS_STAT_RESIST_START = 100;
 
     /**
      * End index of the resistances.
-     * @since 1.0
      */
     public static final int CS_STAT_RESIST_END = 117;
 
     /**
      * Resistance to physical attacks.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_PHYS = 100;
 
     /**
      * Resistance to magical attacks.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_MAG = 101;
 
     /**
      * Resistance to fire.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_FIRE = 102;
 
     /**
      * Resistance to electricity.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_ELEC = 103;
 
     /**
      * Resistance to cold.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_COLD = 104;
 
     /**
      * Resistance to confusion.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_CONF = 105;
 
     /**
      * Resistance to acid.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_ACID = 106;
 
     /**
      * Resistance to drain life.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_DRAIN = 107;
 
     /**
      * Resistance to ghost hit.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_GHOSTHIT = 108;
 
     /**
      * Resistance to poison.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_POISON = 109;
 
     /**
      * Resistance to slowness.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_SLOW = 110;
 
     /**
      * Resistance to paralysis.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_PARA = 111;
 
     /**
      * Resistance to turn undead.
-     * @since 1.0
      */
     public static final int CS_STAT_TURN_UNDEAD = 112;
 
     /**
      * Resistance to fear.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_FEAR = 113;
 
     /**
      * Resistance to depletion.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_DEPLETE = 114;
 
     /**
      * Resistance to death.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_DEATH = 115;
 
     /**
      * Resistance to holy word.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_HOLYWORD = 116;
 
     /**
      * Resistance to blindness.
-     * @since 1.0
      */
     public static final int CS_STAT_RES_BLIND = 117;
 
@@ -347,85 +301,71 @@ public class Stats
 
     /**
      * Beginning index of skill experience stats.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_START = 118;
 
     /**
      * End index of skill experience stats.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_END = 129;
 
     /**
      * Agility skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_AGILITY = 118;
 
     /**
      * Agility skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_AGLEVEL = 119;
 
     /**
      * Personal skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PERSONAL = 120;
 
     /**
      * Personal skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PELEVEL = 121;
 
     /**
      * Mental skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_MENTAL = 122;
 
     /**
      * Mental skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_MELEVEL = 123;
 
     /**
      * Physical skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PHYSIQUE = 124;
 
     /**
      * Physical skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_PHLEVEL = 125;
 
     /**
      * Magical skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_MAGIC = 126;
 
     /**
      * Magical skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_MALEVEL = 127;
 
     /**
      * Wisdom skills experience.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_WISDOM = 128;
 
     /**
      * Wisdom skills level.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLEXP_WILEVEL = 129;
 
@@ -433,7 +373,6 @@ public class Stats
      * CS_STAT_SKILLINFO is used as the starting index point.  Skill number->name
      * map is generated dynamically for the client, so a bunch of entries will
      * be used here.
-     * @since 1.0
      */
     public static final int CS_STAT_SKILLINFO = 140;
 
@@ -441,7 +380,6 @@ public class Stats
      * CS_NUM_SKILLS does not match how many skills there really
      * are - instead, it is used as a range of values so that the client
      * can have some idea how many skill categories there may be.
-     * @since 1.0
      */
     public static final int CS_NUM_SKILLS = 50;
 
@@ -451,36 +389,60 @@ public class Stats
     public static final int FLOAT_MULTI = 100000;
 
     /**
-     * The table of all known skills.
-     * @since 1.0
+     * Maps stat number to skill instance. Entries may be <code>null</code> if
+     * the server did not provide a mapping.
      */
-    protected static final Skill[] myskills = new Skill[CS_NUM_SKILLS];
+    private static final Skill[] numberedSkills = new Skill[CS_NUM_SKILLS];
+
+    /**
+     * Maps skill name to skill instance.
+     */
+    private static final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
 
     /**
      * The total number of resistances.
-     * @since 1.0
      */
     public static final int RESIST_TYPES = 18;
 
-    private final List<CrossfireStatsListener> mylisteners_stats = new ArrayList<CrossfireStatsListener>();
+    /**
+     * The listeners to inform of stat changes.
+     */
+    private final List<CrossfireStatsListener> statListeners = new ArrayList<CrossfireStatsListener>();
 
-    private final int[] mystats = new int[512];
+    private final int[] stats = new int[256];
 
-    private long myexp = 0;
+    private long exp = 0;
 
-    private String myrange = "";
+    private String range = "";
 
-    private String mytitle = "";
+    private String title = "";
 
-    private static final int[] skill_level = new int[CS_NUM_SKILLS];
-
-    private static final long[] skill_exp = new long[CS_NUM_SKILLS];
-
-    static
+    /**
+     * Forget about all skill name mappings.
+     */
+    public static void clearSkills()
     {
-        for (int i = 0; i < CS_NUM_SKILLS; i++)
+        for (int i = 0; i < numberedSkills.length; i++)
         {
-            myskills[i] = null;
+            if (numberedSkills[i] != null)
+            {
+                numberedSkills[i].set(0, 0);
+                numberedSkills[i] = null;
+            }
+        }
+    }
+
+    /**
+     * Forget about all skill experience.
+     */
+    public static void reset()
+    {
+        for (int i = 0; i < numberedSkills.length; i++)
+        {
+            if (numberedSkills[i] != null)
+            {
+                numberedSkills[i].set(0, 0);
+            }
         }
     }
 
@@ -488,73 +450,63 @@ public class Stats
      * Adds a new skill to the list of known skills.
      * @param id The numerical identifier for the new skill.
      * @param n The skill name.
-     * @since 1.0
      */
-    public static void addSkill(int id, String n)
+    public static void addSkill(final int id, final String skillName)
     {
-        Skill sk = new Skill(id, n);
-        myskills[id-Stats.CS_STAT_SKILLINFO] = sk;
+        final int index = id-Stats.CS_STAT_SKILLINFO;
+        final Skill oldSkill = numberedSkills[index];
+        final Skill newSkill = getNamedSkill(skillName);
+        if (oldSkill == newSkill)
+        {
+            return;
+        }
+
+        if (oldSkill != null)
+        {
+            oldSkill.set(0, 0);
+        }
+        numberedSkills[index] = newSkill;
+    }
+
+    /**
+     * Return the skill instance for a given skill name.
+     *
+     * @param skillName The skill name to look up.
+     *
+     * @return The skill instance.
+     */
+    public static Skill getNamedSkill(final String skillName)
+    {
+        final Skill oldSkill = namedSkills.get(skillName);
+        if (oldSkill != null)
+        {
+            return oldSkill;
+        }
+
+        final Skill newSkill = new Skill(skillName);
+        namedSkills.put(skillName, newSkill);
+        return newSkill;
     }
 
     /**
      * Returns the given skill as a Skill object.
      * @param id The numerical skill identifier.
-     * @return The Skill object matching the given identifier.
-     * @since 1.0
+     * @return The Skill object matching the given identifier; may be
+     * <code>null</code> for undefined skills.
      */
-    public static Skill getSkill(int id)
+    public static Skill getSkill(final int id)
     {
-        return myskills[id-CS_STAT_SKILLINFO];
-    }
-
-    /**
-     * Returns the level in a given skill.
-     * @param skill The skill identifier.
-     * @return The skill level.
-     * @since 1.0
-     */
-    public int getSkillLevel(int skill)
-    {
-        return skill_level[skill-CS_STAT_SKILLINFO];
-    }
-
-    /**
-     * Returns the amount of experience assigned to a given skill.
-     * @param skill The skill identifier.
-     * @return The skill experience.
-     * @since 1.0
-     */
-    public long getSkillExperience(int skill)
-    {
-        return skill_exp[skill-CS_STAT_SKILLINFO];
-    }
-
-    /**
-     * Sets the level and experience of the given skill.
-     * Note that although the amount of experience and the level are linked to
-     * each other, the client has no way to know the level=f(exp) function the
-     * server uses. Don't forget that the client is mostly a passive interface
-     * for whatever is related to gaming rules.
-     * @param skill The skill identifier.
-     * @param level The level to assign to the skill.
-     * @param exp The amount of experience to assign to the skill.
-     * @since 1.0
-     */
-    public void setSkill(int skill, int level, long exp)
-    {
-        skill_level[skill-CS_STAT_SKILLINFO] = level;
-        skill_exp[skill-CS_STAT_SKILLINFO] = exp;
+        return numberedSkills[id-CS_STAT_SKILLINFO];
     }
 
     /**
      * Returns the numerical value of the given statistic.
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @return The statistic value (or "score").
-     * @since 1.0
      */
-    public int getStat(int statnr)
+    public int getStat(final int statnr)
     {
-        return mystats[statnr];
+        return stats[statnr];
     }
 
     /**
@@ -562,111 +514,93 @@ public class Stats
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @return The statistic value.
      */
-    public double getFloatStat(int statnr)
+    public double getFloatStat(final int statnr)
     {
-        return (double)mystats[statnr]/Stats.FLOAT_MULTI;
+        return (double)stats[statnr]/Stats.FLOAT_MULTI;
     }
 
     /**
      * Sets the given statistic numerical value.
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @param value The value to assign to the chosen statistic.
-     * @since 1.0
      */
-    public void setStat(int statnr, int value)
+    public void setStat(final int statnr, final int value)
     {
-        mystats[statnr] = value;
+        stats[statnr] = value;
     }
 
     /**
      * Returns the current Title.
      * @return A String representation of the Title.
-     * @since 1.0
      */
     public String getTitle()
     {
-        return mytitle;
+        return title;
     }
 
     /**
      * Returns the current content of the Range stat. This is basically the
      * current active skill for the player.
      * @return A String representation of the Range.
-     * @since 1.0
      */
     public String getRange()
     {
-        return myrange;
+        return range;
     }
 
     /**
      * Sets the current Title.
-     * @param nt The new Title content.
-     * @since 1.0
+     * @param tile The new Title content.
      */
-    public void setTitle(String nt)
+    public void setTitle(final String title)
     {
-        mytitle = nt;
+        this.title = title;
     }
 
     /**
      * Sets the current value for the Range - this is basically the currently
      * active skill for the player.
-     * @param nr The new content of Range.
-     * @since 1.0
+     * @param range The new content of Range.
      */
-    public void setRange(String nr)
+    public void setRange(final String range)
     {
-        myrange = nr;
+        this.range = range;
     }
 
     /**
      * Returns the amount of global experience.
      * @return Amount of global experience.
-     * @since 1.0
      */
     public long getExperience()
     {
-        return myexp;
+        return exp;
     }
 
     /**
      * Sets the amount of global experience.
-     * @param ne The new amount of global experience.
+     * @param exp The new amount of global experience.
      */
-    public void setExperience(long ne)
+    public void setExperience(final long exp)
     {
-        myexp = ne;
-    }
-
-    /**
-     * The default constructor for a Stats object.
-     * @since 1.0
-     */
-    public Stats()
-    {
-        for (int i = 0; i < 250; i++)
-        {
-            mystats[i] = 0;
-        }
+        this.exp = exp;
     }
 
     public void addCrossfireStatsListener(final CrossfireStatsListener listener)
     {
-        mylisteners_stats.add(listener);
+        statListeners.add(listener);
     }
 
     public void removeCrossfireStatsListener(final CrossfireStatsListener listener)
     {
-        mylisteners_stats.remove(listener);
+        statListeners.remove(listener);
     }
 
     public void setStatsProcessed()
     {
-        final CrossfireCommandStatsEvent evt = new CrossfireCommandStatsEvent(new Object(), this);
-        for (final CrossfireStatsListener listener : mylisteners_stats)
+        final CrossfireCommandStatsEvent event = new CrossfireCommandStatsEvent(new Object(), this);
+        for (final CrossfireStatsListener listener : statListeners)
         {
-            listener.commandStatsReceived(evt);
+            listener.commandStatsReceived(event);
         }
     }
 }
