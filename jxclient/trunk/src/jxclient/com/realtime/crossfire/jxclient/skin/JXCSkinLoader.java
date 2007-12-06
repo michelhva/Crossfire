@@ -189,7 +189,6 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         finally
         {
-            commandLists.clear();
             fonts.clear();
             textButtonFactory = null;
             dialogFactory = null;
@@ -405,7 +404,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureUp = getPicture(args[6]);
                             final BufferedImage pictureDown = getPicture(args[7]);
-                            final GUICommandList commandList = commandLists.lookup(args[8]);
+                            final GUICommandList commandList = getCommandList(args[8]);
                             if (args.length == 9)
                             {
                                 elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, commandList));
@@ -437,7 +436,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final GUICommandList commandList = commandLists.lookup(args[1]);
+                            final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
                             final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
                             final Object params;
@@ -599,7 +598,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                initEvents.add(commandLists.lookup(args[2]));
+                                initEvents.add(getCommandList(args[2]));
                             }
                             else if (type.equals("magicmap"))
                             {
@@ -608,7 +607,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final GUICommandList commandList = commandLists.lookup(args[2]);
+                                final GUICommandList commandList = getCommandList(args[2]);
                                 CfMagicMap.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
                                     {
                                         /** {@inheritDoc} */
@@ -627,7 +626,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                                 final String subtype = args[2];
                                 final Skill skill = Stats.getNamedSkill(args[3].replaceAll("_", " "));
-                                final GUICommandList commandList = commandLists.lookup(args[4]);
+                                final GUICommandList commandList = getCommandList(args[4]);
                                 if (subtype.equals("add"))
                                 {
                                     skill.addSkillListener(new SkillListener()
@@ -1025,7 +1024,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
-                            final GUICommandList commandList = commandLists.lookup(args[9]);
+                            final GUICommandList commandList = getCommandList(args[9]);
                             elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
@@ -1045,7 +1044,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final GUICommandList commandList = commandLists.lookup(args[6]);
+                            final GUICommandList commandList = getCommandList(args[6]);
                             final String text = parseText(args, 7);
                             elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, commandList));
                         }
@@ -1531,5 +1530,11 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             commandList.execute();
         }
+    }
+
+    /** {@inheritDoc} */
+    public GUICommandList getCommandList(final String name) throws JXCSkinException
+    {
+        return commandLists.lookup(name);
     }
 }

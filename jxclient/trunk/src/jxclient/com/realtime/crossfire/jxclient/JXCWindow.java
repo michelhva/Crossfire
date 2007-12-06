@@ -1648,4 +1648,43 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         return keyBindings;
     }
+
+    /**
+     * Execute a command. The command may be a client- or a server-sided
+     * command.
+     *
+     * @param command The command to execute.
+     */
+    public void executeCommand(final String command)
+    {
+        if (command.startsWith("bind "))
+        {
+            final String cmdl = command.substring(5);
+            final GUICommandList commands = new GUICommandList(cmdl, this);
+            createKeyBinding(commands);
+        }
+        else if (command.startsWith("unbind"))
+        {
+            removeKeyBinding();
+        }
+        else if (command.startsWith("script "))
+        {
+            runScript(command.substring(7));
+        }
+        else if (command.startsWith("exec "))
+        {
+            try
+            {
+                myskin.getCommandList(command.substring(5).trim()).execute();
+            }
+            catch (final JXCSkinException ex)
+            {
+                myserver.drawInfo(ex.getMessage(), 3);
+            }
+        }
+        else
+        {
+            sendNcom(command);
+        }
+    }
 }

@@ -1,5 +1,8 @@
 2007-12-06  Andreas Kirschbaum
 
+	* Implement client-side command 'exec' to execute skin command
+	lists. Allow to execute client-side commands through key bindings.
+
 	* Raise dialogs when clicked.
 
 	* Store settings and caches in ~/.crossfire/jxclient.

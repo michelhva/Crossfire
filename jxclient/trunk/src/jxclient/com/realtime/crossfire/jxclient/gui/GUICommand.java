@@ -48,7 +48,7 @@ public class GUICommand
         CONNECT,
         GUI_META,
         GUI_START,
-        GUI_SEND_COMMAND,
+        GUI_EXECUTE_COMMAND,
         GUI_SPELLBELT,
         DIALOG_OPEN,
         DIALOG_TOGGLE,
@@ -95,7 +95,7 @@ public class GUICommand
         case CONNECT:
         case GUI_META:
         case GUI_START:
-        case GUI_SEND_COMMAND:
+        case GUI_EXECUTE_COMMAND:
         case GUI_SPELLBELT:
         case DIALOG_OPEN:
         case DIALOG_TOGGLE:
@@ -108,7 +108,6 @@ public class GUICommand
 
     public void execute()
     {
-        //System.out.println("Executing command "+myorder+" on "+mytarget.getName());
         switch (myorder)
         {
         case SHOW:
@@ -152,10 +151,10 @@ public class GUICommand
             ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_START);
             break;
 
-        case GUI_SEND_COMMAND:
+        case GUI_EXECUTE_COMMAND:
             {
-                final SendCommandParameter param = (SendCommandParameter)myparams;
-                param.window.sendNcom(param.command);
+                final ExecuteCommandParameter param = (ExecuteCommandParameter)myparams;
+                param.window.executeCommand(param.command);
             }
             break;
 
@@ -213,9 +212,9 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link Command#GUI_SEND_COMMAND} command.
+     * A parameter object for the {@link Command#GUI_EXECUTE_COMMAND} command.
      */
-    public static class SendCommandParameter
+    public static class ExecuteCommandParameter
     {
         /** The window to operate on. */
         private final JXCWindow window;
@@ -230,7 +229,7 @@ public class GUICommand
          *
          * @param command The command to execute.
          */
-        public SendCommandParameter(final JXCWindow window, final String command)
+        public ExecuteCommandParameter(final JXCWindow window, final String command)
         {
             this.window = window;
             this.command = command;
