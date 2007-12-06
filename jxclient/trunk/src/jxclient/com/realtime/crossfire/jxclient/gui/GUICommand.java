@@ -168,7 +168,7 @@ public class GUICommand
                 final JXCWindow jxcw = param.window;
                 final SpellBeltItem myspellbelt = param.spellBeltItem;
 
-                if ((myspellbelt != null) && (myspellbelt.getSpell() != null))
+                if (myspellbelt != null && myspellbelt.getSpell() != null)
                 {
                     int status = myspellbelt.getStatus();
                     try
