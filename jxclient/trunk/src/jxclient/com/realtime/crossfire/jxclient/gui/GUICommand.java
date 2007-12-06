@@ -131,12 +131,16 @@ public class GUICommand
 
         case SCROLLUP:
             if (mytarget instanceof GUIScrollable)
+            {
                 ((GUIScrollable)mytarget).scrollUp();
+            }
             break;
 
         case SCROLLDOWN:
             if (mytarget instanceof GUIScrollable)
+            {
                 ((GUIScrollable)mytarget).scrollDown();
+            }
             break;
 
         case CONNECT:
@@ -170,9 +174,13 @@ public class GUICommand
                     try
                     {
                         if (status == SpellBeltItem.STATUS_CAST)
+                        {
                             jxcw.sendNcom("cast "+myspellbelt.getSpell().getInternalName());
+                        }
                         else
+                        {
                             jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
+                        }
                     }
                     catch (Exception ex)
                     {
