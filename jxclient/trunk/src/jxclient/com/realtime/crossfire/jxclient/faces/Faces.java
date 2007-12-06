@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -41,7 +42,15 @@ public class Faces
      */
     public static final int SQUARE_SIZE = 64;
 
-    private static final FileCache fileCache = new FileCache(new File("cache"));
+    /**
+     * The image cache for original .png files as received from the server.
+     */
+    private static final FileCache fileCacheOrig = new FileCache(Filenames.getImageCacheDir());
+
+    /**
+     * The image cache for x2 sized .png files.
+     */
+    private static final FileCache fileCacheSized = new FileCache(Filenames.getSizedImageCacheDir());
 
     /**
      * The face cache which holds all known faces.
@@ -97,7 +106,7 @@ public class Faces
             throw new AssertionError();
         }
         final ImageIcon unknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
-        Face.init(unknownImageIcon, originalUnknownImageIcon, askfaceManager, fileCache);
+        Face.init(unknownImageIcon, originalUnknownImageIcon, askfaceManager, fileCacheOrig, fileCacheSized);
     }
 
     public static Face getFace(final int index)
@@ -136,8 +145,8 @@ public class Faces
                 final Face f = faceCache.getFace(pixnum);
                 f.setImageIcon(getScaledImageIcon(img));
                 f.setOriginalImageIcon(img);
-                fileCache.save(f.getName()+".x1.png", f.getOriginalImageIcon());
-                fileCache.save(f.getName()+".x2.png", f.getImageIcon());
+                fileCacheOrig.save(f.getName(), f.getOriginalImageIcon());
+                fileCacheSized.save(f.getName(), f.getImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
@@ -175,8 +184,8 @@ public class Faces
     // TODO: handle checksum
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname)
     {
-        final ImageIcon imageIcon = fileCache.load(pixname+".x2.png");
-        final ImageIcon originalImageIcon = fileCache.load(pixname+".x1.png");
+        final ImageIcon imageIcon = fileCacheSized.load(pixname);
+        final ImageIcon originalImageIcon = fileCacheOrig.load(pixname);
         faceCache.addFace(new Face(pixnum, pixname, imageIcon, originalImageIcon));
     }
 

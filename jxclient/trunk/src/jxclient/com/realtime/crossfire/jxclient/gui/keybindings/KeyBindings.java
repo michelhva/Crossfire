@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -127,16 +128,18 @@ public final class KeyBindings
     /**
      * Load the key bindings from the given file.
      *
-     * @param filename The file name to save to.
+     * @param file The file to load from.
      *
      * @param jxcWindow The window to execute the commands in.
+     *
+     * @throws IOException If the file cannot be read.
      */
-    public void loadKeyBindings(final String filename, final JXCWindow jxcWindow)
+    public void loadKeyBindings(final File file, final JXCWindow jxcWindow) throws IOException
     {
         keybindings.clear();
         try
         {
-            final FileInputStream fis = new FileInputStream(filename);
+            final FileInputStream fis = new FileInputStream(file);
             try
             {
                 final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
@@ -158,7 +161,7 @@ public final class KeyBindings
                                 final String[] tmp = line.substring(5).split(" ", 2);
                                 if (tmp.length != 2)
                                 {
-                                    System.err.println(filename+": ignoring invalid binding: "+line);
+                                    System.err.println(file+": ignoring invalid binding: "+line);
                                 }
                                 else
                                 {
@@ -171,7 +174,7 @@ public final class KeyBindings
                                     catch (final NumberFormatException ex)
                                     {
 ex.printStackTrace();
-                                        System.err.println(filename+": ignoring invalid binding: "+line);
+                                        System.err.println(file+": ignoring invalid binding: "+line);
                                     }
                                 }
                             }
@@ -180,7 +183,7 @@ ex.printStackTrace();
                                 final String[] tmp = line.substring(5).split(" ", 3);
                                 if (tmp.length != 3)
                                 {
-                                    System.err.println(filename+": ignoring invalid binding: "+line);
+                                    System.err.println(file+": ignoring invalid binding: "+line);
                                 }
                                 else
                                 {
@@ -193,13 +196,13 @@ ex.printStackTrace();
                                     }
                                     catch (final NumberFormatException ex)
                                     {
-                                        System.err.println(filename+": ignoring invalid binding: "+line);
+                                        System.err.println(file+": ignoring invalid binding: "+line);
                                     }
                                 }
                             }
                             else
                             {
-                                System.err.println(filename+": ignoring invalid binding: "+line);
+                                System.err.println(file+": ignoring invalid binding: "+line);
                             }
                         }
                     }
@@ -225,75 +228,70 @@ ex.printStackTrace();
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot load key bindings file "+filename+": "+ex.getMessage());
             keybindings.clear();
+            throw ex;
         }
     }
 
     /**
      * Save the key bindings to the given file.
      *
-     * @param filename The file name to save to.
+     * @param file The file to save to.
+     *
+     * @throws IOException If the file cannot be written.
      */
-    public void saveKeyBindings(final String filename)
+    public void saveKeyBindings(final File file) throws IOException
     {
+        final FileOutputStream fos = new FileOutputStream(file);
         try
         {
-            final FileOutputStream fos = new FileOutputStream(filename);
+            final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
             try
             {
-                final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+                final BufferedWriter bw = new BufferedWriter(osw);
                 try
                 {
-                    final BufferedWriter bw = new BufferedWriter(osw);
-                    try
+                    for (final KeyBinding keyBinding : keybindings)
                     {
-                        for (final KeyBinding keyBinding : keybindings)
+                        if (keyBinding instanceof KeyCodeKeyBinding)
                         {
-                            if (keyBinding instanceof KeyCodeKeyBinding)
-                            {
-                                final KeyCodeKeyBinding keyCodeKeyBinding = (KeyCodeKeyBinding)keyBinding;
-                                bw.write("code ");
-                                bw.write(Integer.toString(keyCodeKeyBinding.getKeyCode()));
-                                bw.write(' ');
-                                bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
-                                bw.write(' ');
-                                bw.write(keyCodeKeyBinding.getCommandString());
-                                bw.newLine();
-                            }
-                            else if (keyBinding instanceof KeyCharKeyBinding)
-                            {
-                                final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding)keyBinding;
-                                bw.write("char ");
-                                bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
-                                bw.write(' ');
-                                bw.write(keyCharKeyBinding.getCommandString());
-                                bw.newLine();
-                            }
-                            else
-                            {
-                                throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
-                            }
+                            final KeyCodeKeyBinding keyCodeKeyBinding = (KeyCodeKeyBinding)keyBinding;
+                            bw.write("code ");
+                            bw.write(Integer.toString(keyCodeKeyBinding.getKeyCode()));
+                            bw.write(' ');
+                            bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
+                            bw.write(' ');
+                            bw.write(keyCodeKeyBinding.getCommandString());
+                            bw.newLine();
                         }
-                    }
-                    finally
-                    {
-                        bw.close();
+                        else if (keyBinding instanceof KeyCharKeyBinding)
+                        {
+                            final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding)keyBinding;
+                            bw.write("char ");
+                            bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
+                            bw.write(' ');
+                            bw.write(keyCharKeyBinding.getCommandString());
+                            bw.newLine();
+                        }
+                        else
+                        {
+                            throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
+                        }
                     }
                 }
                 finally
                 {
-                    osw.close();
+                    bw.close();
                 }
             }
             finally
             {
-                fos.close();
+                osw.close();
             }
         }
-        catch (final IOException e)
+        finally
         {
-            System.err.println("Cannot write keybindings file "+filename+": "+e.getMessage());
+            fos.close();
         }
     }
 

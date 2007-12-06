@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
+import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
@@ -42,6 +43,7 @@ import java.awt.event.WindowFocusListener;
 import java.awt.Graphics;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -270,11 +272,22 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         jxcWindowRenderer.openDialog(mydialog_keybind);
     }
 
-    private void loadSpellBelt(final String filename)
+    private void loadSpellBelt()
     {
+        final File file;
         try
         {
-            final FileInputStream fis = new FileInputStream(filename);
+            file = Filenames.getSpellbeltDataFile();
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot read spellbelt file: "+ex.getMessage());
+            return;
+        }
+
+        try
+        {
+            final FileInputStream fis = new FileInputStream(file);
             try
             {
                 final ObjectInputStream ois = new ObjectInputStream(fis);
@@ -301,17 +314,33 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 fis.close();
             }
         }
-        catch (final Exception e)
+        catch (final FileNotFoundException ex)
         {
-            e.printStackTrace();
+            return;
+        }
+        catch (final Exception ex)
+        {
+            System.err.println("Cannot read spellbelt file "+file+": "+ex.getMessage());
+            return;
         }
     }
 
-    private void saveSpellBelt(String filename)
+    private void saveSpellBelt()
     {
+        final File file;
         try
         {
-            final FileOutputStream fos = new FileOutputStream(filename);
+            file = Filenames.getSpellbeltDataFile();
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot write spellbelt file: "+ex.getMessage());
+            return;
+        }
+
+        try
+        {
+            final FileOutputStream fos = new FileOutputStream(file);
             try
             {
                 final ObjectOutputStream oos = new ObjectOutputStream(fos);
@@ -341,9 +370,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 fos.close();
             }
         }
-        catch (final Exception e)
+        catch (final Exception ex)
         {
-            e.printStackTrace();
+            System.err.println("Cannot write spellbelt file "+file+": "+ex.getMessage());
+            return;
         }
     }
 
@@ -415,8 +445,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     {
         jxcWindowRenderer.initRendering(fullScreen);
         framecount = 0;
-        keyBindings.loadKeyBindings("keybindings.txt", this);
-        loadSpellBelt("spellbelt.data");
+        loadKeybindings();
+        loadSpellBelt();
     }
 
     public void endRendering()
@@ -425,8 +455,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 //        final long totaltime = endtime-starttime;
 //        System.out.println(framecount+" frames in "+totaltime/1000000+" ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
         jxcWindowRenderer.endRendering();
-        keyBindings.saveKeyBindings("keybindings.txt");
-        saveSpellBelt("spellbelt.data");
+        saveKeybindings();
+        saveSpellBelt();
         System.exit(0);
     }
 
@@ -1553,5 +1583,59 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public ExperienceTable getExperienceTable()
     {
         return experienceTable;
+    }
+
+    /**
+     * Load the keybindings from the backing file.
+     */
+    private void loadKeybindings()
+    {
+        final File file;
+        try
+        {
+            file = Filenames.getKeybindingsFile();
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot read keybindings file: "+ex.getMessage());
+            return;
+        }
+
+        try
+        {
+            keyBindings.loadKeyBindings(file, this);
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot read keybindings file "+file+": "+ex.getMessage());
+            return;
+        }
+    }
+
+    /**
+     * Save the keybindings to the backing file.
+     */
+    private void saveKeybindings()
+    {
+        final File file;
+        try
+        {
+            file = Filenames.getKeybindingsFile();
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot write keybindings file: "+ex.getMessage());
+            return;
+        }
+
+        try
+        {
+            keyBindings.saveKeyBindings(file);
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot write keybindings file "+file+": "+ex.getMessage());
+            return;
+        }
     }
 }

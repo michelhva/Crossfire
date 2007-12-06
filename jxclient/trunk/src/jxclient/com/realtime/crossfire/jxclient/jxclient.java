@@ -19,8 +19,9 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.Settings;
 import java.io.File;
-import java.util.prefs.Preferences;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -59,12 +60,12 @@ public class jxclient
     {
         try
         {
-            final Preferences prefs = Preferences.userRoot();
+            final Settings prefs = new Settings(Filenames.getSettingsFile());
             int width = prefs.getInt("width", 1024);
             int height = prefs.getInt("height", 768);
             int bpp = prefs.getInt("bpp", -1);
             int freq = prefs.getInt("frequency", 0);
-            String skin = prefs.get("skin", DEFAULT_SKIN);
+            String skin = prefs.getString("skin", DEFAULT_SKIN);
             boolean fullScreen = true;
             String server = null;
             boolean debugGui = false;
@@ -75,7 +76,6 @@ public class jxclient
                     skin = "default";
             }
 
-            final boolean mkdir_result = (new File("cache")).mkdirs();
             for (int i = 0; i < args.length; i++)
             {
                 if (args[i].equals("-W") && i+1 < args.length)
@@ -141,7 +141,7 @@ public class jxclient
             prefs.putInt("height", height);
             prefs.putInt("bpp", bpp);
             prefs.putInt("frequency", freq);
-            prefs.put("skin", skin);
+            prefs.putString("skin", skin);
 
             final JXCWindow jxwin = new JXCWindow(debugGui);
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
