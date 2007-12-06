@@ -87,6 +87,8 @@ item spellbelt spellbelt8 0+5+26 368+34+171 32 32 empty spell_cast spell_invoke 
 item spellbelt spellbelt9 0+5+26 414+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked  9 font_default_small
 item spellbelt spellbeltA 0+5+26 460+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked 10 font_default_small
 item spellbelt spellbeltB 0+5+26 506+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked 11 font_default_small
+commandlist command_spellbelt0
+commandlist_add command_spellbelt0 spellbelt0
 
 # RInventory (973, 53)
 picture inv_right_back 8+973 0+53 43 715 inventory

@@ -76,23 +76,33 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
             GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
 
-            if ((myindex < 0) || (myindex>=l.size()))
+            if (myindex < 0 || myindex >= l.size())
+            {
                 return;
+            }
 
             MetaserverEntry mentry = l.get(myindex);
             Graphics2D g = mybuffer.createGraphics();
             g.setFont(myfont);
             if (active)
+            {
                 g.setColor(Color.RED);
+            }
             else
+            {
                 g.setColor(Color.GRAY);
+            }
             g.drawImage(mypicture_tcp, 0, 0, null);
             g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
             g.dispose();
-            if ((mylabel != null) && active)
+            if (mylabel != null && active)
+            {
                 mylabel.setText(mentry.getComment());
-            if ((mytext != null) && active)
+            }
+            if (mytext != null && active)
+            {
                 mytext.setText(mentry.getHost());
+            }
         }
         catch (Exception e)
         {
@@ -123,9 +133,13 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     public void setActive(boolean act)
     {
-        if (active && (!act))
+        if (active && !act)
+        {
             if (mylabel != null)
+            {
                 mylabel.setText("");
+            }
+        }
         active = act;
         render();
     }
@@ -138,8 +152,8 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     public void scrollUp()
     {
-            myindex--;
-            render();
+        myindex--;
+        render();
     }
 
     /** {@inheritDoc} */
