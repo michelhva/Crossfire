@@ -60,8 +60,9 @@ public abstract class AbstractButton extends GUIElement
     }
 
     /** {@inheritDoc} */
-    public void mouseReleased(final MouseEvent e)
+    @Override public void mouseReleased(final MouseEvent e)
     {
+        super.mouseReleased(e);
         final int b = e.getButton();
         switch (b)
         {
@@ -79,8 +80,9 @@ public abstract class AbstractButton extends GUIElement
     }
 
     /** {@inheritDoc} */
-    public void mousePressed(final MouseEvent e)
+    @Override public void mousePressed(final MouseEvent e)
     {
+        super.mousePressed(e);
         final int b = e.getButton();
         switch (b)
         {

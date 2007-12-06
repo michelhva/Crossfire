@@ -115,8 +115,9 @@ public abstract class GUIText extends GUIElement implements KeyListener
     }
 
     /** {@inheritDoc} */
-    public void mouseClicked(MouseEvent e)
+    @Override public void mouseClicked(MouseEvent e)
     {
+        super.mouseClicked(e);
         int b = e.getButton();
         switch (b)
         {

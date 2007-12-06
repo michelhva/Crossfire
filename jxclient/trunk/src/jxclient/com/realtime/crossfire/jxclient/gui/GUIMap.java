@@ -387,8 +387,9 @@ public class GUIMap extends GUIElement
     }
 
     /** {@inheritDoc} */
-    public void mouseClicked(final MouseEvent e)
+    @Override public void mouseClicked(final MouseEvent e)
     {
+        super.mouseClicked(e);
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
