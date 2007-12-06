@@ -114,6 +114,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
         setChanged();
     }
 
+    /** {@inheritDoc} */
     public void mouseClicked(MouseEvent e)
     {
         int b = e.getButton();

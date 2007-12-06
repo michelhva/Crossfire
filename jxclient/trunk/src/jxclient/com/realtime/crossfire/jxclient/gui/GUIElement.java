@@ -218,27 +218,32 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
+    /** {@inheritDoc} */
     public void mouseClicked(final MouseEvent e)
     {
     }
 
+    /** {@inheritDoc} */
     public void mouseEntered(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.setTooltipElement(this);
     }
 
+    /** {@inheritDoc} */
     public void mouseExited(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
         jxcw.unsetTooltipElement(this);
     }
 
+    /** {@inheritDoc} */
     public void mousePressed(final MouseEvent e)
     {
         active = true;
     }
 
+    /** {@inheritDoc} */
     public void mouseReleased(final MouseEvent e)
     {
         mouseClicked(e);

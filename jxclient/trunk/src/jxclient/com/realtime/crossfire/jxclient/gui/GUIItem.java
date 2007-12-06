@@ -121,6 +121,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
 
     public abstract void scrollDown();
 
+    /** {@inheritDoc} */
     public void mouseClicked(final MouseEvent e)
     {
         final JXCWindow jxcw = (JXCWindow)e.getSource();
