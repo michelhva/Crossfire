@@ -32,16 +32,16 @@ public interface GUIScrollable
      *
      * @return Whether scrolling up is possible.
      */
-    public boolean canScrollUp();
+    boolean canScrollUp();
 
-    public void scrollUp();
+    void scrollUp();
 
     /**
      * Return whether scrolling down is possible.
      *
      * @return Whether scrolling down is possible.
      */
-    public boolean canScrollDown();
+    boolean canScrollDown();
 
-    public void scrollDown();
+    void scrollDown();
 }
