@@ -251,6 +251,11 @@ public class JXCWindowRenderer
      */
     public boolean openDialog(final Gui dialog)
     {
+        if (dialog == currentGui)
+        {
+            return false;
+        }
+
         if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return false;
@@ -408,6 +413,11 @@ public class JXCWindowRenderer
      */
     public boolean toggleDialog(final Gui dialog)
     {
+        if (dialog == currentGui)
+        {
+            return true;
+        }
+
         openDialogsChanged = true;
 
         if (openDialogs.remove(dialog))
