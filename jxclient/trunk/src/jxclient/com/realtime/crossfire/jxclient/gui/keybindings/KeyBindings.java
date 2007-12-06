@@ -44,6 +44,11 @@ public final class KeyBindings
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
     /**
+     * The key code map to use. Set to <code>null</code> until first use.
+     */
+    private KeyCodeMap keyCodeMap = null;
+
+    /**
      * Add a key binding for a key code/modifiers pair.
      *
      * @param keyCode The key code for the key binding.
@@ -186,14 +191,19 @@ public final class KeyBindings
                                 }
                                 else
                                 {
+                                    if (keyCodeMap == null)
+                                    {
+                                        keyCodeMap = new KeyCodeMap();
+                                    }
+
                                     try
                                     {
-                                        final int keyCode = Integer.parseInt(tmp[0]);
+                                        final int keyCode = keyCodeMap.getKeyCode(tmp[0]);
                                         final int modifiers = Integer.parseInt(tmp[1]);
                                         final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
                                         addKeyBindingAsKeyCode(keyCode, modifiers, commands);
                                     }
-                                    catch (final NumberFormatException ex)
+                                    catch (final NoSuchKeyCode ex)
                                     {
                                         System.err.println(file+": ignoring invalid binding: "+line);
                                     }
@@ -254,9 +264,14 @@ public final class KeyBindings
                     {
                         if (keyBinding instanceof KeyCodeKeyBinding)
                         {
+                            if (keyCodeMap == null)
+                            {
+                                keyCodeMap = new KeyCodeMap();
+                            }
+
                             final KeyCodeKeyBinding keyCodeKeyBinding = (KeyCodeKeyBinding)keyBinding;
                             bw.write("code ");
-                            bw.write(Integer.toString(keyCodeKeyBinding.getKeyCode()));
+                            bw.write(keyCodeMap.getKeyName(keyCodeKeyBinding.getKeyCode()));
                             bw.write(' ');
                             bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
                             bw.write(' ');
