@@ -221,6 +221,7 @@ public abstract class GUIElement implements MouseListener
     /** {@inheritDoc} */
     public void mouseClicked(final MouseEvent e)
     {
+        jxcWindow.openDialog(gui); // raise window
     }
 
     /** {@inheritDoc} */
