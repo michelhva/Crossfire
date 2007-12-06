@@ -50,9 +50,14 @@ public class Face
     private static AskfaceManager askfaceManager = null;
 
     /**
-     * The file cache used for loading images from disk.
+     * The file cache used for loading orignal images from disk.
      */
-    private static FileCache fileCache = null;
+    private static FileCache fileCacheOrig = null;
+
+    /**
+     * The file cache used for loading sized images from disk.
+     */
+    private static FileCache fileCacheSized = null;
 
     /**
      * The image scaled to be used in map view; may be <code>null</code> if
@@ -85,14 +90,19 @@ public class Face
      *
      * @param askfaceManager The askface manager to query unknown images.
      *
-     * @param fileCache The file cache used for loading image files from disk.
+     * @param fileCacheOrig The file cache used for loading original image
+     * files from disk.
+     *
+     * @param fileCacheSized The file cache used for loading sized image files
+     * from disk.
      */
-    static void init(final ImageIcon unknownImageIcon, final ImageIcon originalUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCache)
+    static void init(final ImageIcon unknownImageIcon, final ImageIcon originalUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOrig, final FileCache fileCacheSized)
     {
         Face.unknownImageIcon = unknownImageIcon;
         Face.originalUnknownImageIcon = originalUnknownImageIcon;
         Face.askfaceManager = askfaceManager;
-        Face.fileCache = fileCache;
+        Face.fileCacheOrig = fileCacheOrig;
+        Face.fileCacheSized = fileCacheSized;
     }
 
     /**
@@ -242,7 +252,7 @@ public class Face
      */
     private ImageIcon loadImageIcon()
     {
-        final ImageIcon imageIcon = fileCache.load(name+".x2.png");
+        final ImageIcon imageIcon = fileCacheSized.load(name);
         if (imageIcon != null)
         {
             this.imageIcon = new SoftReference<ImageIcon>(imageIcon);
@@ -262,7 +272,7 @@ public class Face
      */
     private ImageIcon loadOriginalImageIcon()
     {
-        final ImageIcon originalImageIcon = fileCache.load(name+".x1.png");
+        final ImageIcon originalImageIcon = fileCacheOrig.load(name);
         if (originalImageIcon != null)
         {
             this.originalImageIcon = new SoftReference<ImageIcon>(originalImageIcon);
