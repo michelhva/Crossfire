@@ -51,6 +51,7 @@ import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.GUITextField;
 import com.realtime.crossfire.jxclient.gui.GUITextGauge;
+import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBinding;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
@@ -791,6 +792,22 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("undefined item type: "+type);
                             }
                             elements.insert(name, element);
+                        }
+                        else if (gui == null && args[0].equals("key"))
+                        {
+                            if (args.length < 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            try
+                            {
+                                window.getKeyBindings().parseKeyBinding(line.substring(4).trim(), window);
+                            }
+                            catch (final InvalidKeyBinding ex)
+                            {
+                                throw new IOException("invalid key binding: "+ex.getMessage());
+                            }
                         }
                         else if (gui != null && args[0].equals("label_drawextinfo"))
                         {
