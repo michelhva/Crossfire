@@ -173,7 +173,6 @@ public final class KeyBindings
                                     }
                                     catch (final NumberFormatException ex)
                                     {
-ex.printStackTrace();
                                         System.err.println(file+": ignoring invalid binding: "+line);
                                     }
                                 }
