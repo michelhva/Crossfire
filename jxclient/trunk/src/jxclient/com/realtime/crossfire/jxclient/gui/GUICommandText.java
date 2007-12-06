@@ -47,24 +47,7 @@ public class GUICommandText extends GUIText implements KeyListener
         switch (jxcWindow.getCrossfireServerConnection().getStatus())
         {
         case PLAYING:
-            if (command.startsWith("bind "))
-            {
-                final String cmdl = command.substring(5);
-                final GUICommandList commands = new GUICommandList(cmdl, jxcWindow);
-                jxcWindow.createKeyBinding(commands);
-            }
-            else if (command.startsWith("unbind"))
-            {
-                jxcWindow.removeKeyBinding();
-            }
-            else if (command.startsWith("script "))
-            {
-                jxcWindow.runScript(command.substring(7));
-            }
-            else
-            {
-                jxcWindow.sendNcom(command);
-            }
+            jxcWindow.executeCommand(command);
             break;
 
         case QUERY:

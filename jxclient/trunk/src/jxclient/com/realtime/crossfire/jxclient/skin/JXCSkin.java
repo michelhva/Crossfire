@@ -20,8 +20,9 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.GUICommandList;
+import com.realtime.crossfire.jxclient.JXCWindow;
 import java.util.Iterator;
 
 /**
@@ -61,4 +62,15 @@ public interface JXCSkin extends Iterable<Gui>
      * Execute the "event init" commands.
      */
     void executeInitEvents();
+
+    /**
+     * Return a named command list.
+     *
+     * @param name The name of the command list.
+     *
+     * @return The command list.
+     *
+     * @throws JXCSkinException If the command list does not exist.
+     */
+    GUICommandList getCommandList(String name) throws JXCSkinException;
 }
