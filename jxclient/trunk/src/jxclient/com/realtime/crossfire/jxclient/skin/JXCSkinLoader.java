@@ -23,7 +23,9 @@ import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
@@ -51,6 +53,8 @@ import com.realtime.crossfire.jxclient.gui.GUITextField;
 import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
+import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
+import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Skill;
@@ -709,11 +713,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositive = getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
-                            final int stat = parseStat(args[9]);
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
                             final String tooltipPrefix = parseText(args, 11);
-                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             elements.insert(name, element);
+                            gaugeUpdater.setGauge(element);
                         }
                         else if (args[0].equals("ignore"))
                         {
@@ -1045,13 +1050,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositive = getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
-                            final int stat = parseStat(args[9]);
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
                             final Color color = parseColor(args[11]);
                             final Font font = fonts.lookup(args[12]);
                             final String tooltipPrefix = parseText(args, 13);
-                            final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+                            final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
                             elements.insert(name, element);
+                            gaugeUpdater.setGauge(element);
                         }
                         else if (args[0].equals("tooltip"))
                         {
@@ -1283,6 +1289,36 @@ public abstract class JXCSkinLoader implements JXCSkin
         catch (final IllegalArgumentException ex)
         {
             // ignore
+        }
+
+        throw new IOException("invalid stat name: "+name);
+    }
+
+    /**
+     * Parse a gauge updater value.
+     *
+     * @param name The gauge updater value to parse.
+     *
+     * @param experienceTable The experience table to query.
+     *
+     * @return The gauge updater.
+     *
+     * @throws IOException if the gauge updater value does not exist.
+     */
+    private static GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
+    {
+        try
+        {
+            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name));
+        }
+        catch (final IllegalArgumentException ex)
+        {
+            // ignore
+        }
+
+        if (name.startsWith("SKILL_"))
+        {
+            return new SkillGaugeUpdater(experienceTable, Stats.getNamedSkill(name.substring(6).replaceAll("_", " ")));
         }
 
         throw new IOException("invalid stat name: "+name);
