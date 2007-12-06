@@ -55,7 +55,7 @@ public class GUICommand
         DIALOG_CLOSE,
     }
 
-    public GUICommand(GUIElement element, Command order, Object params)
+    public GUICommand(final GUIElement element, final Command order, final Object params)
     {
         mytarget = element;
         myorder = order;
@@ -182,7 +182,7 @@ public class GUICommand
                             jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
                         }
                     }
-                    catch (Exception ex)
+                    catch (final Exception ex)
                     {
                         ex.printStackTrace();
                         System.exit(0);

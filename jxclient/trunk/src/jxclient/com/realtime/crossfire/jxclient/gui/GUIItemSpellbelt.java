@@ -35,7 +35,7 @@ public class GUIItemSpellbelt extends GUIItem
 
     private int myindex = -1;
 
-    public GUIItemSpellbelt(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft)
+    public GUIItemSpellbelt(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
         setIndex(index);
@@ -69,7 +69,7 @@ public class GUIItemSpellbelt extends GUIItem
         setIndex(myindex+1);
     }
 
-    protected void button1Clicked(JXCWindow jxcw)
+    protected void button1Clicked(final JXCWindow jxcw)
     {
         if (myspellbelt == null || myspellbelt.getSpell() == null)
         {
@@ -88,14 +88,14 @@ public class GUIItemSpellbelt extends GUIItem
                 jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
             }
         }
-        catch (Exception ex)
+        catch (final Exception ex)
         {
             ex.printStackTrace();
             System.exit(0);
         }
     }
 
-    protected void button2Clicked(JXCWindow jxcw)
+    protected void button2Clicked(final JXCWindow jxcw)
     {
         if (myspellbelt == null || myspellbelt.getSpell() == null)
         {
@@ -107,7 +107,7 @@ public class GUIItemSpellbelt extends GUIItem
         render();
     }
 
-    protected void button3Clicked(JXCWindow jxcw)
+    protected void button3Clicked(final JXCWindow jxcw)
     {
         final Spell myspell = jxcw.getCurrentSpell();
         if (myspellbelt == null)
@@ -126,7 +126,7 @@ public class GUIItemSpellbelt extends GUIItem
         render();
     }
 
-    protected void render(Graphics g)
+    protected void render(final Graphics g)
     {
         if (myspellbelt == null || myspellbelt.getSpell() == null)
         {

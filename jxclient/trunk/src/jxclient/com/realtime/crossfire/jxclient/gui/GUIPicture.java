@@ -34,7 +34,7 @@ import java.awt.image.BufferedImage;
  */
 public class GUIPicture extends GUIElement
 {
-    public GUIPicture(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture)
+    public GUIPicture(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
