@@ -24,6 +24,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.io.File;
+import java.net.URL;
 import javax.swing.ImageIcon;
 
 /**
@@ -81,10 +82,17 @@ public class Faces
     {
         askfaceManager = new AskfaceManager(facesCallback);
 
-        final ImageIcon originalUnknownImageIcon = new ImageIcon(Faces.class.getClassLoader().getResource("unknown.png"));
-        if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
+        final URL url = Faces.class.getClassLoader().getResource("resource/unknown.png");
+        if (url == null)
         {
             System.err.println("cannot find unknown.png");
+            System.exit(0);
+            throw new AssertionError();
+        }
+        final ImageIcon originalUnknownImageIcon = new ImageIcon(url);
+        if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
+        {
+            System.err.println("cannot load unknown.png");
             System.exit(0);
             throw new AssertionError();
         }
