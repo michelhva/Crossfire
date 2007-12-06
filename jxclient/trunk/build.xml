@@ -17,8 +17,8 @@
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
             <fileset dir="." includes="resource/spells/*.png"/>
+            <fileset dir="." includes="resource/unknown.png"/>
             <zipfileset src="jxcskin_prelude.jar"/>
-            <fileset dir="cache" includes="unknown.png"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
             </manifest>
