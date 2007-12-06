@@ -101,6 +101,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         setChanged();
     }
 
+    /** {@inheritDoc} */
     public void mouseClicked(MouseEvent e)
     {
         int b = e.getButton();
