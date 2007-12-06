@@ -680,7 +680,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("north f");
             }
             else
+            {
                 sendNcom(0, "north");
+            }
             break;
 
         case KeyEvent.VK_NUMPAD9:
@@ -694,7 +696,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("northeast f");
             }
             else
+            {
                 sendNcom(0, "northeast");
+            }
             break;
 
         case KeyEvent.VK_RIGHT:
@@ -709,7 +713,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("east f");
             }
             else
+            {
                 sendNcom(0, "east");
+            }
             break;
 
         case KeyEvent.VK_NUMPAD3:
@@ -723,7 +729,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("southeast f");
             }
             else
+            {
                 sendNcom(0, "southeast");
+            }
             break;
 
         case KeyEvent.VK_DOWN:
@@ -738,7 +746,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("south f");
             }
             else
+            {
                 sendNcom(0, "south");
+            }
             break;
 
         case KeyEvent.VK_NUMPAD1:
@@ -752,7 +762,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("southwest f");
             }
             else
+            {
                 sendNcom(0, "southwest");
+            }
             break;
 
         case KeyEvent.VK_LEFT:
@@ -767,7 +779,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("west f");
             }
             else
+            {
                 sendNcom(0, "west");
+            }
             break;
 
         case KeyEvent.VK_NUMPAD7:
@@ -781,7 +795,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("northwest f");
             }
             else
+            {
                 sendNcom(0, "northwest");
+            }
             break;
 
         case KeyEvent.VK_NUMPAD5:
@@ -794,7 +810,9 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 sendNcom("stay f");
             }
             else
+            {
                 sendNcom(0, "stay");
+            }
             break;
 
         case KeyEvent.VK_0:
