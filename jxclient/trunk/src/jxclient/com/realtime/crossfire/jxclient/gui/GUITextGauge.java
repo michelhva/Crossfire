@@ -64,8 +64,6 @@ public class GUITextGauge extends GUIGauge
      *
      * @param pictureFull The image for an empty gauge.
      *
-     * @param stat The stat to display.
-     *
      * @param orientation The gauge's orientation.
      *
      * @param tooltipPrefix The prefix for generating a tooltip.
@@ -74,9 +72,9 @@ public class GUITextGauge extends GUIGauge
      *
      * @param font The text font.
      */
-    public GUITextGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final int stat, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
+    public GUITextGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, stat, orientation, tooltipPrefix);
+        super(jxcWindow, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
         if (color == null) throw new IllegalArgumentException();
         if (font == null) throw new IllegalArgumentException();
         this.color = color;
@@ -96,7 +94,7 @@ public class GUITextGauge extends GUIGauge
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setColor(color);
         g.setFont(font);
-        final String text = Integer.toString(getCurValue());
+        final String text = getLabelText();
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
         g.dispose();

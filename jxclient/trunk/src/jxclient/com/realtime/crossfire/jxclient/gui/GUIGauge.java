@@ -19,11 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.CrossfireStatsListener;
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Stats;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -41,13 +37,22 @@ import java.awt.Transparency;
  */
 public class GUIGauge extends GUIElement
 {
-    private final int stat;
-
     private int curValue = 0;
 
     private int maxValue = -1;
 
     private int minValue = 0;
+
+    /**
+     * The label text.
+     */
+    private String labelText = "";
+
+    /**
+     * The tooltip suffix. If is appended to {@link #tooltipPrefix} to form the
+     * tooltip.
+     */
+    private String tooltipText = "";
 
     private int fw = 0;
 
@@ -77,69 +82,17 @@ public class GUIGauge extends GUIElement
         SN,
     }
 
-    /**
-     * The {@link CrossfireStatsListener} registered to be notified about stat
-     * changes.
-     */
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
-    {
-        /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
-        {
-            final Stats s = evt.getStats();
-            switch (stat)
-            {
-            case Stats.CS_STAT_HP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
-                break;
-
-            case Stats.CS_STAT_SP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
-                break;
-
-            case Stats.CS_STAT_FOOD:
-                setValues(s.getStat(stat), 0, 999);
-                break;
-
-            case Stats.CS_STAT_GRACE:
-                setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
-                break;
-
-            case Stats.C_STAT_EXP_NEXT_LEVEL:
-                setValues(getPercentsToNextLevel(s), 0, 99);
-                break;
-
-            case Stats.C_STAT_EXP_NEXT_LEVEL_0X:
-                setValues(getPercentsToNextLevel(s)%10, 0, 9);
-                break;
-
-            case Stats.C_STAT_EXP_NEXT_LEVEL_X0:
-                setValues(getPercentsToNextLevel(s)/10, 0, 9);
-                break;
-
-            default:
-                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
-                {
-                    setValues(s.getStat(stat), -100, 100);
-                }
-                break;
-            }
-        }
-    };
-
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final int stat, final Orientation orientation, final String tooltipPrefix)
+    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final Orientation orientation, final String tooltipPrefix)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         pictureFull = picture_full;
         pictureNegative = picture_negative;
         pictureEmpty = picture_empty;
-        this.stat = stat;
         createBuffer();
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
-        setValues(0, 0, 0);
-        setTooltipText(tooltipPrefix == null ? null : tooltipPrefix+curValue);
-        ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
+        tooltipText = "-";      // make sure the following setValues() does not short-cut
+        setValues(0, 0, 0, "", "");
     }
 
     public void render()
@@ -318,10 +271,14 @@ public class GUIGauge extends GUIElement
      * @param minValue The minium possible value.
      *
      * @param maxValue The maximum possible value.
+     *
+     * @param labelText The label text.
+     *
+     * @param tooltipText The tooltip suffix.
      */
-    private void setValues(final int curValue, final int minValue, final int maxValue)
+    public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        if (this.curValue == curValue && this.minValue == minValue && this.maxValue == maxValue)
+        if (this.curValue == curValue && this.minValue == minValue && this.maxValue == maxValue && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText))
         {
             return;
         }
@@ -329,9 +286,11 @@ public class GUIGauge extends GUIElement
         this.curValue = curValue;
         this.minValue = minValue;
         this.maxValue = maxValue;
+        this.labelText = labelText;
+        this.tooltipText = tooltipText;
         render();
 
-        setTooltipText(tooltipPrefix == null ? null : tooltipPrefix+curValue);
+        setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
 
     /** {@inheritDoc} */
@@ -355,14 +314,12 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Return the experience fraction of the current level.
+     * Return the label text.
      *
-     * @param stats The stats instance to process.
-     *
-     * @return The fraction in percents.
+     * @return The label text.
      */
-    private int getPercentsToNextLevel(final Stats stats)
+    public String getLabelText()
     {
-        return getJXCWindow().getExperienceTable().getPercentsToNextLevel(stats.getStat(Stats.CS_STAT_LEVEL), stats.getExperience());
+        return labelText;
     }
 }
