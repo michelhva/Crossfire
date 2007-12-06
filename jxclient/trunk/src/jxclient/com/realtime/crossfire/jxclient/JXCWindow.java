@@ -1638,4 +1638,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return;
         }
     }
+
+    /**
+     * Return the key bindings instance for this window.
+     *
+     * @return The key bindings.
+     */
+    public KeyBindings getKeyBindings()
+    {
+        return keyBindings;
+    }
 }

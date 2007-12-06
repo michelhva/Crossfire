@@ -141,7 +141,6 @@ public final class KeyBindings
      */
     public void loadKeyBindings(final File file, final JXCWindow jxcWindow) throws IOException
     {
-        keybindings.clear();
         try
         {
             final FileInputStream fis = new FileInputStream(file);
@@ -161,57 +160,13 @@ public final class KeyBindings
                                 break;
                             }
 
-                            if (line.startsWith("char "))
+                            try
                             {
-                                final String[] tmp = line.substring(5).split(" ", 2);
-                                if (tmp.length != 2)
-                                {
-                                    System.err.println(file+": ignoring invalid binding: "+line);
-                                }
-                                else
-                                {
-                                    try
-                                    {
-                                        final char keyChar = (char)Integer.parseInt(tmp[0]);
-                                        final GUICommandList commands = new GUICommandList(tmp[1], jxcWindow);
-                                        addKeyBindingAsKeyChar(keyChar, commands);
-                                    }
-                                    catch (final NumberFormatException ex)
-                                    {
-                                        System.err.println(file+": ignoring invalid binding: "+line);
-                                    }
-                                }
+                                parseKeyBinding(line, jxcWindow);
                             }
-                            else if (line.startsWith("code "))
+                            catch (final InvalidKeyBinding ex)
                             {
-                                final String[] tmp = line.substring(5).split(" ", 3);
-                                if (tmp.length != 3)
-                                {
-                                    System.err.println(file+": ignoring invalid binding: "+line);
-                                }
-                                else
-                                {
-                                    if (keyCodeMap == null)
-                                    {
-                                        keyCodeMap = new KeyCodeMap();
-                                    }
-
-                                    try
-                                    {
-                                        final int keyCode = keyCodeMap.getKeyCode(tmp[0]);
-                                        final int modifiers = Integer.parseInt(tmp[1]);
-                                        final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
-                                        addKeyBindingAsKeyCode(keyCode, modifiers, commands);
-                                    }
-                                    catch (final NoSuchKeyCode ex)
-                                    {
-                                        System.err.println(file+": ignoring invalid binding: "+line);
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                System.err.println(file+": ignoring invalid binding: "+line);
+                                System.err.println("ignoring invalid key binding ("+ex.getMessage()+"): "+line);
                             }
                         }
                     }
@@ -351,5 +306,77 @@ public final class KeyBindings
         }
 
         return null;
+    }
+
+    /**
+     * Parse and add a key binding.
+     *
+     * @param line The key binding to parse.
+     *
+     * @param jxcWindow The window to add the key binding to.
+     *
+     * @throws InvalidKeyBinding If the key binding is invalid.
+     */
+    public void parseKeyBinding(final String line, final JXCWindow jxcWindow) throws InvalidKeyBinding
+    {
+        if (line.startsWith("char "))
+        {
+            final String[] tmp = line.substring(5).split(" ", 2);
+            if (tmp.length != 2)
+            {
+                throw new InvalidKeyBinding("syntax error");
+            }
+
+            try
+            {
+                final char keyChar = (char)Integer.parseInt(tmp[0]);
+                final GUICommandList commands = new GUICommandList(tmp[1], jxcWindow);
+                addKeyBindingAsKeyChar(keyChar, commands);
+            }
+            catch (final NumberFormatException ex)
+            {
+                throw new InvalidKeyBinding("syntax error");
+            }
+        }
+        else if (line.startsWith("code "))
+        {
+            final String[] tmp = line.substring(5).split(" ", 3);
+            if (tmp.length != 3)
+            {
+                throw new InvalidKeyBinding("syntax error");
+            }
+
+            if (keyCodeMap == null)
+            {
+                keyCodeMap = new KeyCodeMap();
+            }
+
+            final int keyCode;
+            try
+            {
+                keyCode = keyCodeMap.getKeyCode(tmp[0]);
+            }
+            catch (final NoSuchKeyCode ex)
+            {
+                throw new InvalidKeyBinding("invalid key code: "+tmp[0]);
+            }
+
+            final int modifiers;
+            try
+            {
+                modifiers = Integer.parseInt(tmp[1]);
+            }
+            catch (final NumberFormatException ex)
+            {
+                throw new InvalidKeyBinding("invalid modifier: "+tmp[1]);
+            }
+
+            final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
+            addKeyBindingAsKeyCode(keyCode, modifiers, commands);
+        }
+        else
+        {
+            throw new InvalidKeyBinding("syntax error");
+        }
     }
 }
