@@ -1339,6 +1339,17 @@ public abstract class JXCSkinLoader implements JXCSkin
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
         if (name.equals("GRAY")) return Color.GRAY;
         if (name.equals("WHITE")) return Color.WHITE;
+        if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-')
+        {
+            try
+            {
+                return new Color(Integer.parseInt(name.substring(1), 16));
+            }
+            catch (final NumberFormatException ex)
+            {
+                ; // ignore
+            }
+        }
         throw new IOException("unknown color name "+name);
     }
 
