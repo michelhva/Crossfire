@@ -170,15 +170,30 @@ public abstract class JXCSkinLoader implements JXCSkin
         addDialog("main");
         addDialog("meta");
         addDialog("start");
-        while (!dialogsToLoad.isEmpty())
+        commandLists.clear();
+        fonts.clear();
+        textButtonFactory = null;
+        dialogFactory = null;
+        try
         {
-            final Iterator<String> it = dialogsToLoad.iterator();
-            final String name = it.next();
-            it.remove();
-            final Gui gui = dialogs.lookup(name);
-            load(name+".skin", gui, s, p);
+            load("global.skin", s, p, null);
+            while (!dialogsToLoad.isEmpty())
+            {
+                final Iterator<String> it = dialogsToLoad.iterator();
+                final String name = it.next();
+                it.remove();
+                final Gui gui = dialogs.lookup(name);
+                load(name+".skin", s, p, gui);
+            }
         }
-        images.clear();
+        finally
+        {
+            commandLists.clear();
+            fonts.clear();
+            textButtonFactory = null;
+            dialogFactory = null;
+            images.clear();
+        }
     }
 
     private Gui addDialog(final String name)
@@ -252,29 +267,6 @@ public abstract class JXCSkinLoader implements JXCSkin
         return dialogs.lookup("start");
     }
 
-    private Gui load(final String name, final Gui gui, final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
-    {
-        elements.clear();
-        commandLists.clear();
-        fonts.clear();
-        textButtonFactory = null;
-        dialogFactory = null;
-        try
-        {
-            load("global.skin", s, p, gui);
-            load(name, s, p, gui);
-        }
-        finally
-        {
-            elements.clear();
-            commandLists.clear();
-            fonts.clear();
-            textButtonFactory = null;
-            dialogFactory = null;
-        }
-        return gui;
-    }
-
     /**
      * Load a skin file and add the entries to a {@link Gui} instance.
      *
@@ -291,6 +283,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private void load(final String resourceName, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
+        elements.clear();
         try
         {
             final InputStream inputStream = getInputStream(resourceName);
@@ -310,6 +303,10 @@ public abstract class JXCSkinLoader implements JXCSkin
         catch (final JXCSkinException ex)
         {
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+        }
+        finally
+        {
+            elements.clear();
         }
     }
 
@@ -376,7 +373,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
 
                         final String[] args = patternTokens.split(line);
-                        if (args[0].equals("add"))
+                        if (gui != null && args[0].equals("add"))
                         {
                             if (args.length != 2)
                             {
@@ -393,7 +390,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 addedElements.add(elements.lookup(args[1]));
                             }
                         }
-                        else if (args[0].equals("button"))
+                        else if (gui != null && args[0].equals("button"))
                         {
                             if (args.length != 9 && args.length < 13)
                             {
@@ -493,7 +490,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             commandList.add(new GUICommand(element, command, params));
                         }
-                        else if (args[0].equals("command_text"))
+                        else if (gui != null && args[0].equals("command_text"))
                         {
                             if (args.length != 11)
                             {
@@ -562,7 +559,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("unknown type '"+args[1]+"'");
                             }
                         }
-                        else if (args[0].equals("dialog"))
+                        else if (gui != null && args[0].equals("dialog"))
                         {
                             if (args.length < 6)
                             {
@@ -698,7 +695,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fontNormal.deriveFont(parseFloat(args[3]));
                             fonts.insert(name, font);
                         }
-                        else if (args[0].equals("gauge"))
+                        else if (gui != null && args[0].equals("gauge"))
                         {
                             if (args.length < 11)
                             {
@@ -720,7 +717,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             elements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
-                        else if (args[0].equals("ignore"))
+                        else if (gui != null && args[0].equals("ignore"))
                         {
                             if (args.length != 2)
                             {
@@ -730,7 +727,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String name = args[1];
                             elements.lookup(name).setIgnore();
                         }
-                        else if (args[0].equals("item"))
+                        else if (gui != null && args[0].equals("item"))
                         {
                             if (args.length < 14)
                             {
@@ -795,7 +792,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("label_drawextinfo"))
+                        else if (gui != null && args[0].equals("label_drawextinfo"))
                         {
                             if (args.length != 8)
                             {
@@ -812,7 +809,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUILabelDrawextinfo element = new GUILabelDrawextinfo(window, name, x, y, w, h, font, color);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("label_query"))
+                        else if (gui != null && args[0].equals("label_query"))
                         {
                             if (args.length != 8)
                             {
@@ -829,7 +826,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("label_text"))
+                        else if (gui != null && args[0].equals("label_text"))
                         {
                             if (args.length < 8)
                             {
@@ -846,7 +843,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String text = parseText(args, 8);
                             elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, text));
                         }
-                        else if (args[0].equals("label_picture"))
+                        else if (gui != null && args[0].equals("label_picture"))
                         {
                             if (args.length != 8)
                             {
@@ -862,7 +859,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[7]);
                             elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, pictureEmpty, font, Color.WHITE, ""));
                         }
-                        else if (args[0].equals("label_stat"))
+                        else if (gui != null && args[0].equals("label_stat"))
                         {
                             if (args.length != 10)
                             {
@@ -881,7 +878,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat, alignment);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("label_spell"))
+                        else if (gui != null && args[0].equals("label_spell"))
                         {
                             if (args.length != 8)
                             {
@@ -898,7 +895,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, font, type);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("log"))
+                        else if (gui != null && args[0].equals("log"))
                         {
                             if (args.length != 13)
                             {
@@ -921,7 +918,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor, ignoreColor);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("magicmap"))
+                        else if (gui != null && args[0].equals("magicmap"))
                         {
                             if (args.length != 6)
                             {
@@ -936,7 +933,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("map"))
+                        else if (gui != null && args[0].equals("map"))
                         {
                             if (args.length != 7)
                             {
@@ -952,7 +949,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
                             elements.insert(name, element);
                         }
-                        else if (args[0].equals("meta_element"))
+                        else if (gui != null && args[0].equals("meta_element"))
                         {
                             if (args.length != 12)
                             {
@@ -972,7 +969,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int id = parseInt(args[11]);
                             elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id));
                         }
-                        else if (args[0].equals("picture"))
+                        else if (gui != null && args[0].equals("picture"))
                         {
                             if (args.length != 7)
                             {
@@ -987,7 +984,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picture = getPicture(args[6]);
                             elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture));
                         }
-                        else if (args[0].equals("set_invisible"))
+                        else if (gui != null && args[0].equals("set_invisible"))
                         {
                             if (args.length != 2)
                             {
@@ -996,7 +993,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             elements.lookup(args[1]).setVisible(false);
                         }
-                        else if (args[0].equals("text"))
+                        else if (gui != null && args[0].equals("text"))
                         {
                             if (args.length != 10)
                             {
@@ -1014,7 +1011,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUICommandList commandList = commandLists.lookup(args[9]);
                             elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
                         }
-                        else if (args[0].equals("textbutton"))
+                        else if (gui != null && args[0].equals("textbutton"))
                         {
                             if (args.length < 7)
                             {
@@ -1035,7 +1032,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String text = parseText(args, 7);
                             elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, commandList));
                         }
-                        else if (args[0].equals("textgauge"))
+                        else if (gui != null && args[0].equals("textgauge"))
                         {
                             if (args.length < 13)
                             {
@@ -1112,6 +1109,8 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
         }
+
+        assert gui != null || !elements.iterator().hasNext();
 
         final Map<GUIElement, GUIElement> wildcardElements = new LinkedHashMap<GUIElement, GUIElement>();
         for (final GUIElement element : elements)
