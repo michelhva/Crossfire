@@ -62,7 +62,7 @@ public class GUIItemFloor extends GUIItemItem
         }
     };
 
-    public GUIItemFloor(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picture, BufferedImage pic_cursed, BufferedImage pic_applied, BufferedImage pic_selector, BufferedImage pic_locked, int index, CrossfireServerConnection msc, Font mft, Color nrofColor)
+    public GUIItemFloor(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft, final Color nrofColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft, nrofColor);
         ItemsList.getItemsManager().addCurrentFloorListener(currentFloorListener);
@@ -97,7 +97,7 @@ public class GUIItemFloor extends GUIItemItem
         setIndex(myindex+1, false);
     }
 
-    protected void button1Clicked(JXCWindow jxcw)
+    protected void button1Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -115,7 +115,7 @@ public class GUIItemFloor extends GUIItemItem
         }
     }
 
-    protected void button3Clicked(JXCWindow jxcw)
+    protected void button3Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)

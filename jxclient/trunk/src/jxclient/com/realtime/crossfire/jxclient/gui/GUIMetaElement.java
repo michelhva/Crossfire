@@ -41,9 +41,9 @@ import java.util.List;
  */
 public class GUIMetaElement extends GUIElement implements GUIScrollable
 {
-    private BufferedImage mypicture_tcp = null;
+    private final BufferedImage mypicture_tcp;
 
-    private BufferedImage mypicture_udp = null;
+    private final BufferedImage mypicture_udp;
 
     private final Font myfont;
 
@@ -53,7 +53,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     private int myindex;
 
-    public GUIMetaElement(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage pic_tcp, BufferedImage pic_udp, Font nf, GUIText txt, AbstractLabel comment, int meta_id)
+    public GUIMetaElement(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage pic_tcp, final BufferedImage pic_udp, final Font nf, final GUIText txt, final AbstractLabel comment, final int meta_id)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mypicture_tcp = pic_tcp;
@@ -71,9 +71,9 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         List<MetaserverEntry> l = Metaserver.query();
         try
         {
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            GraphicsDevice gd = ge.getDefaultScreenDevice();
-            GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice gd = ge.getDefaultScreenDevice();
+            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
             mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
 
             if (myindex < 0 || myindex >= l.size())
@@ -81,8 +81,8 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
                 return;
             }
 
-            MetaserverEntry mentry = l.get(myindex);
-            Graphics2D g = mybuffer.createGraphics();
+            final MetaserverEntry mentry = l.get(myindex);
+            final Graphics2D g = mybuffer.createGraphics();
             g.setFont(myfont);
             if (active)
             {
@@ -104,7 +104,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
                 mytext.setText(mentry.getHost());
             }
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -112,7 +112,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseClicked(MouseEvent e)
+    @Override public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
         int b = e.getButton();
@@ -131,7 +131,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         }
     }
 
-    public void setActive(boolean act)
+    public void setActive(final boolean act)
     {
         if (active && !act)
         {

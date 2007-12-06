@@ -57,7 +57,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
      */
     private boolean hideInput = false;
 
-    public GUIText(final JXCWindow jxcWindow, String nn, int nx, int ny, int nw, int nh, BufferedImage picactive, BufferedImage picinactive, Font nf, Color inactiveColor, Color activeColor, String txt)
+    public GUIText(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picactive, final BufferedImage picinactive, final Font nf, final Color inactiveColor, final Color activeColor, final String txt)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground_active = picactive;
@@ -70,7 +70,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
         render();
     }
 
-    public void setText(String nt)
+    public void setText(final String nt)
     {
         mytext = nt;
         render();
@@ -115,7 +115,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseClicked(MouseEvent e)
+    @Override public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
         int b = e.getButton();
@@ -134,13 +134,13 @@ public abstract class GUIText extends GUIElement implements KeyListener
         }
     }
 
-    public void setActive(boolean act)
+    public void setActive(final boolean act)
     {
         active = act;
         render();
     }
 
-    public void keyPressed(KeyEvent e)
+    public void keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -176,11 +176,11 @@ public abstract class GUIText extends GUIElement implements KeyListener
         }
     }
 
-    public void keyReleased(KeyEvent e)
+    public void keyReleased(final KeyEvent e)
     {
     }
 
-    public void keyTyped(KeyEvent e)
+    public void keyTyped(final KeyEvent e)
     {
 
     }
