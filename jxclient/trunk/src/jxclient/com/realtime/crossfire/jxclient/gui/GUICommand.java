@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.SpellBeltItem;
 
 /**
  *
@@ -49,7 +48,6 @@ public class GUICommand
         GUI_META,
         GUI_START,
         GUI_EXECUTE_COMMAND,
-        GUI_SPELLBELT,
         DIALOG_OPEN,
         DIALOG_TOGGLE,
         DIALOG_CLOSE,
@@ -96,7 +94,6 @@ public class GUICommand
         case GUI_META:
         case GUI_START:
         case GUI_EXECUTE_COMMAND:
-        case GUI_SPELLBELT:
         case DIALOG_OPEN:
         case DIALOG_TOGGLE:
         case DIALOG_CLOSE:
@@ -162,35 +159,6 @@ public class GUICommand
             }
             break;
 
-        case GUI_SPELLBELT:
-            {
-                final SpellBeltParameter param = (SpellBeltParameter)myparams;
-                final JXCWindow jxcw = param.window;
-                final SpellBeltItem myspellbelt = param.spellBeltItem;
-
-                if (myspellbelt != null && myspellbelt.getSpell() != null)
-                {
-                    int status = myspellbelt.getStatus();
-                    try
-                    {
-                        if (status == SpellBeltItem.STATUS_CAST)
-                        {
-                            jxcw.sendNcom("cast "+myspellbelt.getSpell().getInternalName());
-                        }
-                        else
-                        {
-                            jxcw.sendNcom("invoke "+myspellbelt.getSpell().getInternalName());
-                        }
-                    }
-                    catch (final Exception ex)
-                    {
-                        ex.printStackTrace();
-                        System.exit(0);
-                    }
-                }
-            }
-            break;
-
         case DIALOG_OPEN:
             {
                 final DialogOpenParameter param = (DialogOpenParameter)myparams;
@@ -251,31 +219,6 @@ public class GUICommand
         public String getCommand()
         {
             return command;
-        }
-    }
-
-    /**
-     * A parameter object for the {@link Command#GUI_SPELLBELT} command.
-     */
-    public static class SpellBeltParameter
-    {
-        /** The window to operate on. */
-        private final JXCWindow window;
-
-        /** The spell belt item to deliver. */
-        private final SpellBeltItem spellBeltItem;
-
-        /**
-         * Create a new instance.
-         *
-         * @param window The window to operate on.
-         *
-         * @param spellBeltItem The spell belt item to deliver.
-         */
-        public SpellBeltParameter(final JXCWindow window, final SpellBeltItem spellBeltItem)
-        {
-            this.window = window;
-            this.spellBeltItem = spellBeltItem;
         }
     }
 

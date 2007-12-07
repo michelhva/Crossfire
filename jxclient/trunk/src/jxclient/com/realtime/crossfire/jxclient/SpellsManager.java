@@ -396,4 +396,24 @@ public class SpellsManager
             index++;
         }
     }
+
+    /**
+     * Find a spell by name.
+     *
+     * @param name The spell name to find.
+     *
+     * @return The spell, or <code>null</code> if the spell name is undefined.
+     */
+    public Spell getSpell(final String name)
+    {
+        for (final Spell spell : spells)
+        {
+            if (spell.getInternalName().equals(name))
+            {
+                return spell;
+            }
+        }
+
+        return null;
+    }
 }

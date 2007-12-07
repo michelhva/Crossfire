@@ -36,7 +36,7 @@ import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.GUIItem;
 import com.realtime.crossfire.jxclient.gui.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
-import com.realtime.crossfire.jxclient.gui.GUIItemSpellbelt;
+import com.realtime.crossfire.jxclient.gui.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
@@ -768,14 +768,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final Color nrofColor = parseColor(args[14]);
                                 element = new GUIItemInventory(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
                             }
-                            else if (type.equals("spellbelt"))
+                            else if (type.equals("shortcut"))
                             {
                                 if (args.length != 14)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpellbelt(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else if (type.equals("spelllist"))
                             {

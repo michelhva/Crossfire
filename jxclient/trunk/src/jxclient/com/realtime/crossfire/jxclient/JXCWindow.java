@@ -29,6 +29,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
@@ -42,12 +44,8 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.Graphics;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -96,7 +94,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private Spell mycurrentspell = null;
 
-    private static final SpellBeltItem[] myspellbelt = new SpellBeltItem[12];
+    /**
+     * The shortcuts for this window.
+     */
+    private final Shortcuts shortcuts = new Shortcuts(this);
 
     private Gui mydialog_query = new Gui();
     private Gui mydialog_book = new Gui();
@@ -272,47 +273,26 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         jxcWindowRenderer.openDialog(mydialog_keybind);
     }
 
-    private void loadSpellBelt()
+    /**
+     * Load shortcut info from the backing file.
+     */
+    private void loadShortcuts()
     {
+System.err.println("loadShortcuts");
         final File file;
         try
         {
-            file = Filenames.getSpellbeltDataFile();
+            file = Filenames.getShortcutsFile();
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot read spellbelt file: "+ex.getMessage());
+            System.err.println("Cannot read shortcuts file: "+ex.getMessage());
             return;
         }
 
         try
         {
-            final FileInputStream fis = new FileInputStream(file);
-            try
-            {
-                final ObjectInputStream ois = new ObjectInputStream(fis);
-                try
-                {
-                    for (int i = 0; i < 12; i++)
-                    {
-                        myspellbelt[i] = null;
-                        int sp = ois.readInt();
-                        int st = ois.readInt();
-                        if (sp > -1)
-                        {
-                            myspellbelt[i] = new SpellBeltItem(sp, st);
-                        }
-                    }
-                }
-                finally
-                {
-                    ois.close();
-                }
-            }
-            finally
-            {
-                fis.close();
-            }
+            shortcuts.load(file);
         }
         catch (final FileNotFoundException ex)
         {
@@ -320,66 +300,46 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
         catch (final Exception ex)
         {
-            System.err.println("Cannot read spellbelt file "+file+": "+ex.getMessage());
+            System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
             return;
         }
     }
 
-    private void saveSpellBelt()
+    /**
+     * Save all shortcut info to the backing file.
+     */
+    private void saveShortcuts()
     {
         final File file;
         try
         {
-            file = Filenames.getSpellbeltDataFile();
+            file = Filenames.getShortcutsFile();
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot write spellbelt file: "+ex.getMessage());
+            System.err.println("Cannot write shortcuts file: "+ex.getMessage());
             return;
         }
 
         try
         {
-            final FileOutputStream fos = new FileOutputStream(file);
-            try
-            {
-                final ObjectOutputStream oos = new ObjectOutputStream(fos);
-                try
-                {
-                    for (int i = 0; i < 12; i++)
-                    {
-                        if (myspellbelt[i] == null)
-                        {
-                            oos.writeInt(-1);
-                            oos.writeInt(-1);
-                        }
-                        else
-                        {
-                            oos.writeInt(myspellbelt[i].getSpellIndex());
-                            oos.writeInt(myspellbelt[i].getStatus());
-                        }
-                    }
-                }
-                finally
-                {
-                    oos.close();
-                }
-            }
-            finally
-            {
-                fos.close();
-            }
+            shortcuts.save(file);
         }
         catch (final Exception ex)
         {
-            System.err.println("Cannot write spellbelt file "+file+": "+ex.getMessage());
+            System.err.println("Cannot write shortcuts file "+file+": "+ex.getMessage());
             return;
         }
     }
 
-    public static SpellBeltItem[] getSpellBelt()
+    /**
+     * Return the shortcuts of this window.
+     *
+     * @return The shortcuts.
+     */
+    public Shortcuts getShortcuts()
     {
-        return myspellbelt;
+        return shortcuts;
     }
 
     public boolean getKeyShift(final int keyid)
@@ -446,7 +406,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         jxcWindowRenderer.initRendering(fullScreen);
         framecount = 0;
         loadKeybindings();
-        loadSpellBelt();
+        loadShortcuts();
     }
 
     public void endRendering()
@@ -455,8 +415,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 //        final long totaltime = endtime-starttime;
 //        System.out.println(framecount+" frames in "+totaltime/1000000+" ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
         jxcWindowRenderer.endRendering();
+        saveShortcuts();
         saveKeybindings();
-        saveSpellBelt();
         System.exit(0);
     }
 
@@ -600,8 +560,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
     private void launchSpellFromBelt(final int idx)
     {
-        final GUICommand fcmd = new GUICommand(null, GUICommand.Command.GUI_SPELLBELT, new GUICommand.SpellBeltParameter(this, myspellbelt[idx]));
-        fcmd.execute();
+        final Shortcut shortcut = getShortcuts().getShortcut(idx);
+        if (shortcut != null)
+        {
+            shortcut.execute();
+        }
     }
 
     private void handleKeyPress(final KeyEvent e)

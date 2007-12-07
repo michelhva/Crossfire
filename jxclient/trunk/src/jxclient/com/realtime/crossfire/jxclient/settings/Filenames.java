@@ -87,15 +87,15 @@ public class Filenames
     }
 
     /**
-     * Return the spellbelt data file.
+     * Return the shortcuts file.
      *
-     * @return The spellbelt data file.
+     * @return The shortcuts file.
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getSpellbeltDataFile() throws IOException
+    public static File getShortcutsFile() throws IOException
     {
-        return getSettingsFile("spellbelt.data");
+        return getSettingsFile("shortcuts.txt");
     }
 
     /**
