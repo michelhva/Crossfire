@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIText;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
@@ -263,7 +264,7 @@ public class JXCWindowRenderer
 
         if (!openDialogs.remove(dialog))
         {
-            dialog.activateFirstTextArea();
+            dialog.activateFirstTextArea(false);
         }
         openDialogs.add(dialog);
         openDialogsChanged = true;
@@ -367,7 +368,11 @@ public class JXCWindowRenderer
     {
         if (openDialogs.size() > 0)
         {
-            openDialogs.get(openDialogs.size()-1).getFirstTextArea().setHideInput(hideInput);
+            final GUIText textArea = openDialogs.get(openDialogs.size()-1).getFirstTextArea(true);
+            if (textArea != null)
+            {
+                textArea.setHideInput(hideInput);
+            }
         }
     }
 

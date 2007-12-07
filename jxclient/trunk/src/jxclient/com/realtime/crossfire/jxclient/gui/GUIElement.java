@@ -62,6 +62,8 @@ public abstract class GUIElement implements MouseListener
 
     protected boolean visible = true;
 
+    protected boolean isDefault = false;
+
     /**
      * Whether this gui element should be ignored for user interaction.
      */
@@ -193,6 +195,16 @@ public abstract class GUIElement implements MouseListener
             this.visible = visible;
             setChanged();
         }
+    }
+
+    public boolean isDefault()
+    {
+        return isDefault;
+    }
+
+    public void setDefault(final boolean isDefault)
+    {
+        this.isDefault = isDefault;
     }
 
     /**

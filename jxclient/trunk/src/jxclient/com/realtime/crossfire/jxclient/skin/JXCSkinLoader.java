@@ -1001,6 +1001,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picture = getPicture(args[6]);
                             elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture));
                         }
+                        else if (gui != null && args[0].equals("set_default"))
+                        {
+                            if (args.length != 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            elements.lookup(args[1]).setDefault(true);
+                        }
                         else if (gui != null && args[0].equals("set_invisible"))
                         {
                             if (args.length != 2)
