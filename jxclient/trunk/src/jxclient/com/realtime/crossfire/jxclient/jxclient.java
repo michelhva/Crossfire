@@ -73,7 +73,7 @@ public class jxclient
             // fix changed default skin name
             if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
             {
-                    skin = "default";
+                skin = DEFAULT_SKIN;
             }
 
             for (int i = 0; i < args.length; i++)
