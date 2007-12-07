@@ -377,7 +377,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
                 jxcWindowRenderer.setHideInput(false);
             }
-            dialog.activateFirstTextArea();
+            dialog.activateFirstTextArea(false);
         }
     }
 

@@ -158,14 +158,17 @@ public class Gui
     /**
      * Return the first {@link GUIText} gui element of this gui.
      *
+     * @param allowNonDefault If set, consider all text areas; if unset, only
+     * consider "default" text areas.
+     *
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
-    public GUIText getFirstTextArea()
+    public GUIText getFirstTextArea(final boolean allowNonDefault)
     {
         for (final GUIElement element : elements)
         {
-            if ((element instanceof GUIText) && element.isVisible())
+            if ((element instanceof GUIText) && element.isVisible() && (allowNonDefault || element.isDefault()))
             {
                 return (GUIText)element;
             }
@@ -294,12 +297,15 @@ public class Gui
      * Return the first {@link GUIText} gui element of this gui and make it
      * active.
      *
+     * @param allowNonDefault If set, consider all text areas; if unset, only
+     * consider "default" text areas.
+     *
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
-    public GUIText activateFirstTextArea()
+    public GUIText activateFirstTextArea(final boolean allowNonDefault)
     {
-        final GUIText textArea = getFirstTextArea();
+        final GUIText textArea = getFirstTextArea(allowNonDefault);
         if (textArea != null)
         {
             textArea.setActive(true);
@@ -316,7 +322,7 @@ public class Gui
      */
     public GUIText activateCommandInput()
     {
-        final GUIText textArea = activateFirstTextArea();
+        final GUIText textArea = activateFirstTextArea(true);
         if (textArea != null && textArea.getName().equals("command"))
         {
             return textArea;
