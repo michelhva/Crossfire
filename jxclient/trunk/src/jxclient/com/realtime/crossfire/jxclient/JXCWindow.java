@@ -278,7 +278,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     private void loadShortcuts()
     {
-System.err.println("loadShortcuts");
         final File file;
         try
         {
