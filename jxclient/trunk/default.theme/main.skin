@@ -87,6 +87,18 @@ item shortcut shortcut8 0+5+26 368+34+171 32 32 empty spell_cast spell_invoke in
 item shortcut shortcut9 0+5+26 414+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked  9 font_default_small
 item shortcut shortcutA 0+5+26 460+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked 10 font_default_small
 item shortcut shortcutB 0+5+26 506+34+171 32 32 empty spell_cast spell_invoke inventory_selector marker_locked 11 font_default_small
+commandlist_add command_shortcut0 shortcut0 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut1 shortcut1 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut2 shortcut2 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut3 shortcut3 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut4 shortcut4 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut5 shortcut5 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut6 shortcut6 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut7 shortcut7 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut8 shortcut8 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut9 shortcut9 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcutA shortcutA GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcutB shortcutB GUI_EXECUTE_ELEMENT
 
 # RInventory (973, 53)
 picture inv_right_back 8+973 0+53 43 715 inventory
