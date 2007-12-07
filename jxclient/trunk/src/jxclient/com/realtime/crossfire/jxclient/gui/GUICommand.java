@@ -48,6 +48,7 @@ public class GUICommand
         GUI_META,
         GUI_START,
         GUI_EXECUTE_COMMAND,
+        GUI_EXECUTE_ELEMENT,
         DIALOG_OPEN,
         DIALOG_TOGGLE,
         DIALOG_CLOSE,
@@ -94,6 +95,7 @@ public class GUICommand
         case GUI_META:
         case GUI_START:
         case GUI_EXECUTE_COMMAND:
+        case GUI_EXECUTE_ELEMENT:
         case DIALOG_OPEN:
         case DIALOG_TOGGLE:
         case DIALOG_CLOSE:
@@ -156,6 +158,13 @@ public class GUICommand
             {
                 final ExecuteCommandParameter param = (ExecuteCommandParameter)myparams;
                 param.window.executeCommand(param.command);
+            }
+            break;
+
+        case GUI_EXECUTE_ELEMENT:
+            if (mytarget instanceof GUIItem)
+            {
+                ((GUIItem)mytarget).button1Clicked((JXCWindow)myparams);
             }
             break;
 

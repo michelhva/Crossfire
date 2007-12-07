@@ -22,3 +22,28 @@ commandlist command_resume
 commandlist_add command_resume null DIALOG_CLOSE quit
 commandlist command_disconnect
 commandlist_add command_disconnect null GUI_START
+
+commandlist command_shortcut0
+commandlist command_shortcut1
+commandlist command_shortcut2
+commandlist command_shortcut3
+commandlist command_shortcut4
+commandlist command_shortcut5
+commandlist command_shortcut6
+commandlist command_shortcut7
+commandlist command_shortcut8
+commandlist command_shortcut9
+commandlist command_shortcutA
+commandlist command_shortcutB
+key code F1 0 exec command_shortcut0
+key code F2 0 exec command_shortcut1
+key code F3 0 exec command_shortcut2
+key code F4 0 exec command_shortcut3
+key code F5 0 exec command_shortcut4
+key code F6 0 exec command_shortcut5
+key code F7 0 exec command_shortcut6
+key code F8 0 exec command_shortcut7
+key code F9 0 exec command_shortcut8
+key code F10 0 exec command_shortcut9
+key code F11 0 exec command_shortcutA
+key code F12 0 exec command_shortcutB

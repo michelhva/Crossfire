@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.settings.Filenames;
-import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
@@ -557,15 +556,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         return myserver;
     }
 
-    private void launchSpellFromBelt(final int idx)
-    {
-        final Shortcut shortcut = getShortcuts().getShortcut(idx);
-        if (shortcut != null)
-        {
-            shortcut.execute();
-        }
-    }
-
     private void handleKeyPress(final KeyEvent e)
     {
         if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
@@ -582,54 +572,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         switch (e.getKeyCode())
         {
-        case KeyEvent.VK_F1:
-            launchSpellFromBelt(0);
-            break;
-
-        case KeyEvent.VK_F2:
-            launchSpellFromBelt(1);
-            break;
-
-        case KeyEvent.VK_F3:
-            launchSpellFromBelt(2);
-            break;
-
-        case KeyEvent.VK_F4:
-            launchSpellFromBelt(3);
-            break;
-
-        case KeyEvent.VK_F5:
-            launchSpellFromBelt(4);
-            break;
-
-        case KeyEvent.VK_F6:
-            launchSpellFromBelt(5);
-            break;
-
-        case KeyEvent.VK_F7:
-            launchSpellFromBelt(6);
-            break;
-
-        case KeyEvent.VK_F8:
-            launchSpellFromBelt(7);
-            break;
-
-        case KeyEvent.VK_F9:
-            launchSpellFromBelt(8);
-            break;
-
-        case KeyEvent.VK_F10:
-            launchSpellFromBelt(9);
-            break;
-
-        case KeyEvent.VK_F11:
-            launchSpellFromBelt(10);
-            break;
-
-        case KeyEvent.VK_F12:
-            launchSpellFromBelt(11);
-            break;
-
         case KeyEvent.VK_UP:
         case KeyEvent.VK_NUMPAD8:
             if (getKeyShift(KEY_SHIFT_CTRL))
