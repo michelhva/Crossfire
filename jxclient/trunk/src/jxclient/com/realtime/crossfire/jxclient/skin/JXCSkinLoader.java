@@ -802,7 +802,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             try
                             {
-                                window.getKeyBindings().parseKeyBinding(line.substring(4).trim(), window);
+                                window.getKeyBindings().parseKeyBinding(line.substring(4).trim(), window, true);
                             }
                             catch (final InvalidKeyBinding ex)
                             {

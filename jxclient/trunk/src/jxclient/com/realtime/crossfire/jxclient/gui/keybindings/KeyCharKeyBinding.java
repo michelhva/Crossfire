@@ -39,10 +39,13 @@ public final class KeyCharKeyBinding extends KeyBinding
      * @param keyChar The key character to match.
      *
      * @param commands The commands to associate with this binding.
+     *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
      */
-    public KeyCharKeyBinding(final char keyChar, final GUICommandList commands)
+    public KeyCharKeyBinding(final char keyChar, final GUICommandList commands, final boolean isDefault)
     {
-        super(commands);
+        super(commands, isDefault);
         this.keyChar = keyChar;
     }
 

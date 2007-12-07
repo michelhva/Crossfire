@@ -31,14 +31,29 @@ public abstract class KeyBinding
 {
     private final GUICommandList commands;
 
+    /**
+     * Whether the key binding is a "default" binding which should not be
+     * saved.
+     */
+    private final boolean isDefault;
+
     public GUICommandList getCommands()
     {
         return commands;
     }
 
-    protected KeyBinding(final GUICommandList commands)
+    /**
+     * Create a new instance.
+     *
+     * @param commands The commands to execute.
+     *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
+     */
+    protected KeyBinding(final GUICommandList commands, final boolean isDefault)
     {
         this.commands = commands;
+        this.isDefault = isDefault;
     }
 
     /** {@inheritDoc} */
@@ -72,5 +87,16 @@ public abstract class KeyBinding
     public String getCommandString()
     {
         return commands.getCommandString();
+    }
+
+    /**
+     * Return whether the key binding is a "default" binding which should not
+     * be saved.
+     *
+     * @return <code>true</code>=do not save
+     */
+    public boolean isDefault()
+    {
+        return isDefault;
     }
 }
