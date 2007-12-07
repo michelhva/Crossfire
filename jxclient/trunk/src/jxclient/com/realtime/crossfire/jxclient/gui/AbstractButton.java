@@ -67,8 +67,7 @@ public abstract class AbstractButton extends GUIElement
         switch (b)
         {
         case MouseEvent.BUTTON1:
-            commandList.execute();
-            setActive(false);
+            execute();
             break;
 
         case MouseEvent.BUTTON2:
@@ -95,6 +94,22 @@ public abstract class AbstractButton extends GUIElement
 
         case MouseEvent.BUTTON3:
             break;
+        }
+    }
+
+    /**
+     * Execute the command actions.
+     */
+    public void execute()
+    {
+        setActive(true);
+        try
+        {
+            commandList.execute();
+        }
+        finally
+        {
+            setActive(false);
         }
     }
 }

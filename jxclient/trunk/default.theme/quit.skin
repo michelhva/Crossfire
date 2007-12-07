@@ -5,3 +5,5 @@ label_text message1   35  60  280 32 font_metaurl16 WHITE Do you really want to 
 label_text message2   35  90  280 32 font_metaurl16 WHITE from the server?
 button disconnect     30  120 135 55 button_small_active button_small_pushed command_disconnect font_metaurl16 DARK_GRAY 32 34 Disconnect
 button resume         180 120 135 55 button_small_active button_small_pushed command_resume font_metaurl16 DARK_GRAY 42 34 Resume
+
+set_default disconnect

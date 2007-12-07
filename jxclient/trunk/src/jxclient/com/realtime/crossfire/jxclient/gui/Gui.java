@@ -156,19 +156,47 @@ public class Gui
     }
 
     /**
-     * Return the first {@link GUIText} gui element of this gui.
+     * Return the first default gui element of this gui.
      *
-     * @param allowNonDefault If set, consider all text areas; if unset, only
-     * consider "default" text areas.
+     * @return The default gui element, or <code>null</code>.
+     */
+    public GUIElement getDefaultElement()
+    {
+        for (final GUIElement element : elements)
+        {
+            if (element.isVisible() && element.isDefault())
+            {
+                return element;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Activate the first default gui element of this gui.
+     */
+    public void activateDefaultElement()
+    {
+        final GUIElement defaultElement = getDefaultElement();
+        if (defaultElement != null)
+        {
+            defaultElement.setActive(true);
+            setActiveElement(defaultElement);
+        }
+    }
+
+    /**
+     * Return the first {@link GUIText} gui element of this gui.
      *
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
-    public GUIText getFirstTextArea(final boolean allowNonDefault)
+    public GUIText getFirstTextArea()
     {
         for (final GUIElement element : elements)
         {
-            if ((element instanceof GUIText) && element.isVisible() && (allowNonDefault || element.isDefault()))
+            if ((element instanceof GUIText) && element.isVisible())
             {
                 return (GUIText)element;
             }
@@ -248,19 +276,35 @@ public class Gui
      */
     public boolean handleKeyPress(final KeyEvent e)
     {
-        if (activeElement == null)
+        if (activeElement != null)
         {
-            return false;
+            if (activeElement instanceof KeyListener)
+            {
+                ((KeyListener)activeElement).keyPressed(e);
+                if (!activeElement.isActive())
+                {
+                    activeElement = null;
+                }
+                return true;
+            }
+            else if (activeElement instanceof AbstractButton)
+            {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER || e.getKeyCode() == KeyEvent.VK_SPACE)
+                {
+                    ((AbstractButton)activeElement).execute();
+                    return true;
+                }
+            }
         }
 
-        if (activeElement instanceof KeyListener)
+        if (e.getKeyCode() == KeyEvent.VK_ENTER || e.getKeyCode() == KeyEvent.VK_SPACE)
         {
-            ((KeyListener)activeElement).keyPressed(e);
-            if (!activeElement.isActive())
+            final GUIElement defaultElement = getDefaultElement();
+            if (defaultElement != null && defaultElement instanceof AbstractButton)
             {
-                activeElement = null;
+                ((AbstractButton)defaultElement).execute();
+                return true;
             }
-            return true;
         }
 
         return false;
@@ -275,19 +319,17 @@ public class Gui
      */
     public boolean handleKeyTyped(final KeyEvent e)
     {
-        if (activeElement == null)
+        if (activeElement != null)
         {
-            return false;
-        }
-
-        if (activeElement instanceof KeyListener)
-        {
-            ((KeyListener)activeElement).keyTyped(e);
-            if (!activeElement.isActive())
+            if (activeElement instanceof KeyListener)
             {
-                activeElement = null;
+                ((KeyListener)activeElement).keyTyped(e);
+                if (!activeElement.isActive())
+                {
+                    activeElement = null;
+                }
+                return true;
             }
-            return true;
         }
 
         return false;
@@ -297,15 +339,12 @@ public class Gui
      * Return the first {@link GUIText} gui element of this gui and make it
      * active.
      *
-     * @param allowNonDefault If set, consider all text areas; if unset, only
-     * consider "default" text areas.
-     *
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
-    public GUIText activateFirstTextArea(final boolean allowNonDefault)
+    private GUIText activateFirstTextArea()
     {
-        final GUIText textArea = getFirstTextArea(allowNonDefault);
+        final GUIText textArea = getFirstTextArea();
         if (textArea != null)
         {
             textArea.setActive(true);
@@ -322,7 +361,7 @@ public class Gui
      */
     public GUIText activateCommandInput()
     {
-        final GUIText textArea = activateFirstTextArea(true);
+        final GUIText textArea = activateFirstTextArea();
         if (textArea != null && textArea.getName().equals("command"))
         {
             return textArea;
