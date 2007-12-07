@@ -12,3 +12,5 @@ button new     210 300 600 55 button_large_active button_large_pushed command_me
 button load    210 400 600 55 button_large_active button_large_pushed command_meta font_metaurl14 DARK_GRAY 180 34 Load a saved character (not implemented)
 button options 210 500 600 55 button_large_active button_large_pushed command_meta font_metaurl14 DARK_GRAY 230 34 Options (not implemented)
 button quit    210 600 600 55 button_large_active button_large_pushed command_quit font_metaurl14 DARK_GRAY 250 34 Leave Crossfire
+
+set_default meta

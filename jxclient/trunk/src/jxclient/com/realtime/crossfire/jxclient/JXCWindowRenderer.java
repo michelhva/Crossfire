@@ -264,7 +264,7 @@ public class JXCWindowRenderer
 
         if (!openDialogs.remove(dialog))
         {
-            dialog.activateFirstTextArea(false);
+            dialog.activateDefaultElement();
         }
         openDialogs.add(dialog);
         openDialogsChanged = true;
@@ -368,7 +368,7 @@ public class JXCWindowRenderer
     {
         if (openDialogs.size() > 0)
         {
-            final GUIText textArea = openDialogs.get(openDialogs.size()-1).getFirstTextArea(true);
+            final GUIText textArea = openDialogs.get(openDialogs.size()-1).getFirstTextArea();
             if (textArea != null)
             {
                 textArea.setHideInput(hideInput);
@@ -431,6 +431,7 @@ public class JXCWindowRenderer
         }
 
         openDialogs.add(dialog);
+        dialog.activateDefaultElement();
         return true;
     }
 
