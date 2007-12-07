@@ -94,7 +94,8 @@ public class Codec
     {
         assert patternsEncode.length == replacementsEncode.length;
         String tmp = str;
-        for (int i = 0; i < patternsEncode.length; i++) {
+        for (int i = 0; i < patternsEncode.length; i++)
+        {
             tmp = patternsEncode[i].matcher(tmp).replaceAll(replacementsEncode[i]);
         }
         return tmp;
@@ -113,7 +114,8 @@ public class Codec
     {
         assert patternsDecode.length == replacementsDecode.length;
         String tmp = str;
-        for (int i = 0; i < patternsDecode.length; i++) {
+        for (int i = 0; i < patternsDecode.length; i++)
+        {
             tmp = patternsDecode[i].matcher(tmp).replaceAll(replacementsDecode[i]);
         }
         return tmp;

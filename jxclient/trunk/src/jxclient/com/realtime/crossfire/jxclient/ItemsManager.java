@@ -180,7 +180,8 @@ public class ItemsManager
     public synchronized void removeItem(final int tag)
     {
         final CfItem item = myitems.remove(tag);
-        if (item == null) {
+        if (item == null)
+        {
             System.err.println("removeItem: item "+tag+" does not exist");
             return;
         }
@@ -202,10 +203,12 @@ public class ItemsManager
         }
 
         final CfItem deletedItem = myitems.remove(item.getTag());
-        if (deletedItem == null) {
+        if (deletedItem == null)
+        {
             throw new AssertionError("cannot find item "+item.getTag());
         }
-        if (deletedItem != item) {
+        if (deletedItem != item)
+        {
             throw new AssertionError("deleted wrong item "+item.getTag());
         }
 
@@ -226,7 +229,8 @@ public class ItemsManager
             removeItem(oldItem);
         }
 
-        if (myitems.put(item.getTag(), item) != null) {
+        if (myitems.put(item.getTag(), item) != null)
+        {
             throw new AssertionError("duplicate item "+item.getTag());
         }
 
@@ -392,7 +396,8 @@ public class ItemsManager
         this.currentFloor = currentFloor;
         addModified(modifiedFloors, items.get(this.currentFloor));
 
-        for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
+        for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class))
+        {
             listener.currentFloorChanged(this.currentFloor);
         }
     }
@@ -457,7 +462,8 @@ public class ItemsManager
             {
                 final List<CfItem> items = getItems(location);
                 final CfItem item = 0 <= index && index < items.size() ? items.get(index) : null;
-                for (final LocationListener listener : tileListeners.getListeners(LocationListener.class)) {
+                for (final LocationListener listener : tileListeners.getListeners(LocationListener.class))
+                {
                     listener.locationModified(index, item);
                 }
             }
