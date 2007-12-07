@@ -46,10 +46,13 @@ public final class KeyCodeKeyBinding extends KeyBinding
      * @param modifiers The modifiers to match.
      *
      * @param commands The commands to associate with this binding.
+     *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
      */
-    public KeyCodeKeyBinding(final int keyCode, final int modifiers, final GUICommandList commands)
+    public KeyCodeKeyBinding(final int keyCode, final int modifiers, final GUICommandList commands, final boolean isDefault)
     {
-        super(commands);
+        super(commands, isDefault);
         this.keyCode = keyCode;
         this.modifiers = modifiers;
     }

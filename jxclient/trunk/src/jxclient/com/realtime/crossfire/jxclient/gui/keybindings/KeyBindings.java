@@ -56,10 +56,13 @@ public final class KeyBindings
      * @param modifiers The modifiers for the key binding.
      *
      * @param cmdlist The commands to associate to the key binding.
+     *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
      */
-    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist)
+    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist, final boolean isDefault)
     {
-        final KeyBinding keyBinding = new KeyCodeKeyBinding(keyCode, modifiers, cmdlist);
+        final KeyBinding keyBinding = new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault);
         KeyBinding elected = null;
         for (final KeyBinding ok : keybindings)
         {
@@ -81,10 +84,13 @@ public final class KeyBindings
      * @param keyChar The key character for the key binding.
      *
      * @param cmdlist The commands to associate to the key binding.
+     *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
      */
-    public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist)
+    public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist, final boolean isDefault)
     {
-        final KeyBinding keyBinding = new KeyCharKeyBinding(keyChar, cmdlist);
+        final KeyBinding keyBinding = new KeyCharKeyBinding(keyChar, cmdlist, isDefault);
         KeyBinding elected = null;
         for (final KeyBinding ok : keybindings)
         {
@@ -162,7 +168,7 @@ public final class KeyBindings
 
                             try
                             {
-                                parseKeyBinding(line, jxcWindow);
+                                parseKeyBinding(line, jxcWindow, false);
                             }
                             catch (final InvalidKeyBinding ex)
                             {
@@ -217,7 +223,11 @@ public final class KeyBindings
                 {
                     for (final KeyBinding keyBinding : keybindings)
                     {
-                        if (keyBinding instanceof KeyCodeKeyBinding)
+                        if (keyBinding.isDefault())
+                        {
+                            // ignore
+                        }
+                        else if (keyBinding instanceof KeyCodeKeyBinding)
                         {
                             if (keyCodeMap == null)
                             {
@@ -315,9 +325,12 @@ public final class KeyBindings
      *
      * @param jxcWindow The window to add the key binding to.
      *
+     * @param isDefault Whether the key binding is a "default" binding which
+     * should not be saved.
+     *
      * @throws InvalidKeyBinding If the key binding is invalid.
      */
-    public void parseKeyBinding(final String line, final JXCWindow jxcWindow) throws InvalidKeyBinding
+    public void parseKeyBinding(final String line, final JXCWindow jxcWindow, final boolean isDefault) throws InvalidKeyBinding
     {
         if (line.startsWith("char "))
         {
@@ -331,7 +344,7 @@ public final class KeyBindings
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
                 final GUICommandList commands = new GUICommandList(tmp[1], jxcWindow);
-                addKeyBindingAsKeyChar(keyChar, commands);
+                addKeyBindingAsKeyChar(keyChar, commands, isDefault);
             }
             catch (final NumberFormatException ex)
             {
@@ -372,7 +385,7 @@ public final class KeyBindings
             }
 
             final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
-            addKeyBindingAsKeyCode(keyCode, modifiers, commands);
+            addKeyBindingAsKeyCode(keyCode, modifiers, commands, isDefault);
         }
         else
         {

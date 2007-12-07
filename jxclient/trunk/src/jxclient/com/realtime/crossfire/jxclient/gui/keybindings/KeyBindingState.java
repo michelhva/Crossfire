@@ -119,11 +119,11 @@ public class KeyBindingState
         {
             if (type == 0)
             {
-                keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands);
+                keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
             }
             else
             {
-                keyBindings.addKeyBindingAsKeyChar(keyChar, commands);
+                keyBindings.addKeyBindingAsKeyChar(keyChar, commands, false);
             }
         }
         else
