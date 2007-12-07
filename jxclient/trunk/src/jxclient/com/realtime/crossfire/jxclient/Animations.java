@@ -52,7 +52,8 @@ public class Animations
         }
 
         final Animation animation = new Animation(flags, faces);
-        if (animations.put(animationId, animation) != null) {
+        if (animations.put(animationId, animation) != null)
+        {
             System.err.println("Warning: duplicate animation id "+animationId);
         }
     }

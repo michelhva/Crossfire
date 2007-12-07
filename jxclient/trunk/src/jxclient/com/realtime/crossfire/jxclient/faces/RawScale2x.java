@@ -119,7 +119,8 @@ public class RawScale2x
         int E2 = E;
         int E3 = E;
 
-        if (different(B, H) && different(D, F)) {
+        if (different(B, H) && different(D, F))
+        {
             E0 = !different(D, B) ? D : E;
             E1 = !different(B, F) ? F : E;
             E2 = !different(D, H) ? D : E;

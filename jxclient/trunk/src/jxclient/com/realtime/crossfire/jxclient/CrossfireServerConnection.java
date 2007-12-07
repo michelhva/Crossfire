@@ -1224,9 +1224,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     case 0x19:
                         if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
                         final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if ((face&0x8000) == 0) {
+                        if ((face&0x8000) == 0)
+                        {
                             CfMapUpdater.processMapFace(x, y, type-0x10, face);
-                        } else {
+                        }
+                        else
+                        {
                             final Animation animation = animations.get(face&0x1FFF);
                             if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x7FFF));
                             CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3);
