@@ -511,7 +511,8 @@ commandlist_add rsp_display btn_rsp_undisplay SHOW
 button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active command_menu_display
 
 # TextPaneUp (679, 100)
-picture log_upper_back 0+679 0+100 302 204 log1_expanded_inactive
+picture log_upper_back 0+679 0+100 272 204 log1_background
+picture log_upper_back2 288+679 175+100 14 10 log1_background2
 log log_upper 10+679 3+100 250 198 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE BLACK
 commandlist command_log_upper_up
 commandlist_add command_log_upper_up log_upper SCROLLUP
@@ -520,6 +521,24 @@ commandlist_add command_log_upper_down log_upper SCROLLDOWN
 
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive command_log_upper_down
+
+commandlist command_log_open
+commandlist command_log_close
+button log_open 270+681 160+100 16 40 log1_shrinked_inactive log1_shrinked_pushed command_log_open
+button log_close 270+681 160+100 16 40 log1_expanded_inactive log1_expanded_pushed command_log_close
+commandlist_add command_log_open log_upper_back SHOW
+commandlist_add command_log_open log_upper SHOW
+commandlist_add command_log_open log_upper_up SHOW
+commandlist_add command_log_open log_upper_down SHOW
+commandlist_add command_log_open log_open HIDE
+commandlist_add command_log_open log_close SHOW
+commandlist_add command_log_close log_upper_back HIDE
+commandlist_add command_log_close log_upper HIDE
+commandlist_add command_log_close log_upper_up HIDE
+commandlist_add command_log_close log_upper_down HIDE
+commandlist_add command_log_close log_open SHOW
+commandlist_add command_log_close log_close HIDE
+set_invisible log_open
 
 add panel_back_dragon_left
 add panel_back_dragon_right
@@ -545,4 +564,5 @@ ignore staff_back
 ignore right_back_top
 ignore left_back_top
 ignore log_upper_back
+ignore log_upper_back2
 ignore title_back
