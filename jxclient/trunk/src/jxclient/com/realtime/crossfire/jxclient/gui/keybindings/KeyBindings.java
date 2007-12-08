@@ -334,7 +334,7 @@ public final class KeyBindings
     {
         if (line.startsWith("char "))
         {
-            final String[] tmp = line.substring(5).split(" ", 2);
+            final String[] tmp = line.substring(5).split(" +", 2);
             if (tmp.length != 2)
             {
                 throw new InvalidKeyBinding("syntax error");
@@ -353,7 +353,7 @@ public final class KeyBindings
         }
         else if (line.startsWith("code "))
         {
-            final String[] tmp = line.substring(5).split(" ", 3);
+            final String[] tmp = line.substring(5).split(" +", 3);
             if (tmp.length != 3)
             {
                 throw new InvalidKeyBinding("syntax error");
