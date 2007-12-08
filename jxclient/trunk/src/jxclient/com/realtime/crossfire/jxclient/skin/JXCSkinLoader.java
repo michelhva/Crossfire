@@ -1074,8 +1074,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final BufferedImage pictureTcp = getPicture(args[6]);
-                            final BufferedImage pictureUdp = getPicture(args[7]);
+                            final BufferedImage pictureTcp = args[6].equals("null") ? null : getPicture(args[6]);
+                            final BufferedImage pictureUdp = args[7].equals("null") ? null : getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
                             final GUIText text = lookupTextElement(args[9]);
                             final AbstractLabel label = lookupLabelElement(args[10]);
