@@ -25,6 +25,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
+import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -33,52 +34,58 @@ import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public abstract class GUIText extends GUIElement implements KeyListener
 {
-    private final BufferedImage mybackground_active;
+    private final BufferedImage activeImage;
 
-    private final BufferedImage mybackground_inactive;
+    private final BufferedImage inactiveImage;
 
-    protected final Font myfont;
+    protected final Font font;
 
     private final Color inactiveColor;
 
     private final Color activeColor;
 
-    protected String mytext;
+    private final StringBuilder text;
 
     /**
      * If set, hide input; else show input.
      */
     private boolean hideInput = false;
 
-    public GUIText(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picactive, final BufferedImage picinactive, final Font nf, final Color inactiveColor, final Color activeColor, final String txt)
+    /**
+     * The cursor location.
+     */
+    private int cursor;
+
+    public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final String text)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        mybackground_active = picactive;
-        mybackground_inactive = picinactive;
-        myfont = nf;
+        super(jxcWindow, name, x, y, w, h);
+        this.activeImage = activeImage;
+        this.inactiveImage = inactiveImage;
+        this.font = font;
         this.inactiveColor = inactiveColor;
         this.activeColor = activeColor;
-        mytext = txt;
+        this.text = new StringBuilder(text);
+        cursor = this.text.length();
         createBuffer();
         render();
     }
 
-    public void setText(final String nt)
+    public void setText(final String text)
     {
-        mytext = nt;
+        this.text.setLength(0);
+        this.text.append(text);
+        cursor = this.text.length();
         render();
     }
 
     public String getText()
     {
-        return mytext;
+        return text.toString();
     }
 
     protected void render()
@@ -87,28 +94,37 @@ public abstract class GUIText extends GUIElement implements KeyListener
         {
             createBuffer();
 
-            Graphics2D g = mybuffer.createGraphics();
-            if (active)
-            {
-                g.drawImage(mybackground_active, 0, 0, null);
-                g.setColor(activeColor);
-            }
-            else
-            {
-                g.drawImage(mybackground_inactive, 0, 0, null);
-                g.setColor(inactiveColor);
-            }
-            g.setFont(myfont);
+            final Graphics2D g = mybuffer.createGraphics();
+            g.drawImage(active ? activeImage : inactiveImage, 0, 0, null);
+            g.setFont(font);
+            final String tmp;
             if (hideInput)
             {
                 final String template = "********************";
-                final String hiddenText = template.substring(0, Math.min(mytext.length(), template.length()));
-                g.drawString(hiddenText, 4, myfont.getSize()+2);
+                final String hiddenText = template.substring(0, Math.min(text.length(), template.length()));
+                tmp = hiddenText+" ";
             }
             else
             {
-                g.drawString(mytext, 4, myfont.getSize()+2);
+                tmp = text.toString()+" ";
             }
+
+            final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
+            final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+            if (active)
+            {
+                final String tmpPrefix = tmp.substring(0, cursor);
+                final String tmpCursor = tmp.substring(0, cursor+1);
+                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
+                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
+                final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
+                g.setColor(inactiveColor);
+                g.fillRect(cursorX1, 0, cursorX2-cursorX1, h);
+            }
+            g.setColor(active ? activeColor : inactiveColor);
+            g.drawString(tmp, 0, y);
+
             g.dispose();
         }
         setChanged();
@@ -118,7 +134,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
     @Override public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
-        int b = e.getButton();
+        final int b = e.getButton();
         switch (b)
         {
         case MouseEvent.BUTTON1:
@@ -134,9 +150,9 @@ public abstract class GUIText extends GUIElement implements KeyListener
         }
     }
 
-    public void setActive(final boolean act)
+    public void setActive(final boolean active)
     {
-        active = act;
+        this.active = active;
         render();
     }
 
@@ -145,44 +161,63 @@ public abstract class GUIText extends GUIElement implements KeyListener
         switch (e.getKeyCode())
         {
         case KeyEvent.VK_BACK_SPACE:
-            if (mytext.length() > 0)
+            if (cursor > 0)
             {
-                mytext = mytext.substring(0, mytext.length()-1);
+                text.delete(cursor-1, cursor);
+                cursor--;
                 render();
             }
             break;
 
         case KeyEvent.VK_DELETE:
-            if (mytext.length() > 0)
+            if (cursor < text.length())
             {
-                mytext = "";
+                text.delete(cursor, cursor+1);
                 render();
             }
             break;
 
-        case KeyEvent.VK_SHIFT:
-            break;
-
         case KeyEvent.VK_ENTER:
-            execute((JXCWindow)e.getSource(), mytext.toString());
+            execute((JXCWindow)e.getSource(), text.toString());
             setActive(false);
             break;
 
+        case KeyEvent.VK_LEFT:
+            if (cursor > 0)
+            {
+                cursor--;
+                render();
+            }
+            break;
+
+        case KeyEvent.VK_RIGHT:
+            if (cursor <text.length())
+            {
+                cursor++;
+                render();
+            }
+            break;
+
         default:
-            char chr = e.getKeyChar();
-            mytext = mytext+chr;
-            render();
+            final char chr = e.getKeyChar();
+            if (chr != KeyEvent.CHAR_UNDEFINED && chr >= ' ')
+            {
+                text.insert(cursor, chr);
+                cursor++;
+                render();
+            }
             break;
         }
     }
 
+    /** {@inheritDoc} */
     public void keyReleased(final KeyEvent e)
     {
     }
 
+    /** {@inheritDoc} */
     public void keyTyped(final KeyEvent e)
     {
-
     }
 
     /**
