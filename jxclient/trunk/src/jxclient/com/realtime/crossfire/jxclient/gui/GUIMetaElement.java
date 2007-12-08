@@ -51,9 +51,11 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     private final AbstractLabel comment;
 
+    private final String format;
+
     private int index;
 
-    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final BufferedImage udpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index)
+    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final BufferedImage udpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format)
     {
         super(jxcWindow, name, x, y, w, h);
         this.tcpImage = tcpImage;
@@ -62,6 +64,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         this.text = text;
         this.comment = comment;
         this.index = index;
+        this.format = format;
         createBuffer();
         render();
     }
@@ -82,7 +85,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         {
             g.drawImage(tcpImage, 0, 0, null);
         }
-        g.drawString("P:"+metaEntry.getNrPlayers()+" L:"+metaEntry.getPing()+" - "+metaEntry.getHost()+" - "+metaEntry.getComment(), 16, font.getSize()+1);
+        g.drawString(metaEntry.format(format), 16, font.getSize()+1);
         g.dispose();
         if (comment != null && active)
         {

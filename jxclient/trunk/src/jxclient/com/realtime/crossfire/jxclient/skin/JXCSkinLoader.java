@@ -1064,7 +1064,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("meta_element"))
                         {
-                            if (args.length != 12)
+                            if (args.length < 12)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1080,7 +1080,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIText text = lookupTextElement(args[9]);
                             final AbstractLabel label = lookupLabelElement(args[10]);
                             final int id = parseInt(args[11]);
-                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id));
+                            final String format = parseText(args, 12);
+                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id, format));
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
