@@ -58,22 +58,22 @@ public class GUITextButton extends AbstractButton
     /**
      * The font to use.
      */
-    private Font font;
+    private final Font font;
 
     /**
      * The text color.
      */
-    private Color color;
+    private final Color color;
 
     /**
      * The x-offset for the text.
      */
-    private int textX;
+    private final int textX;
 
     /**
      * The y-offset for the text.
      */
-    private int textY;
+    private final int textY;
 
     /**
      * Create a new instance.
