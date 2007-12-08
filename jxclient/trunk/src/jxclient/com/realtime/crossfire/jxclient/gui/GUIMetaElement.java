@@ -92,7 +92,10 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
             {
                 g.setColor(Color.GRAY);
             }
-            g.drawImage(mypicture_tcp, 0, 0, null);
+            if (mypicture_tcp != null)
+            {
+                g.drawImage(mypicture_tcp, 0, 0, null);
+            }
             g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
             g.dispose();
             if (mylabel != null && active)
