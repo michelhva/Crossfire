@@ -1242,6 +1242,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             newGui = null;
         }
         jxcWindowRenderer.setCurrentGui(newGui);
+        newGui.activateDefaultElement();
         tooltipManager.reset();
     }
 
