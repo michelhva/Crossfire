@@ -69,11 +69,6 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     protected void render()
     {
         final List<MetaserverEntry> l = Metaserver.query();
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-
         if (myindex < 0 || myindex >= l.size())
         {
             return;
