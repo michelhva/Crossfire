@@ -117,6 +117,11 @@ public abstract class ServerConnection extends Thread
      */
     protected void writePacket(final byte[] packet, final int length) throws IOException
     {
+        if (socket == null)
+        {
+            throw new IOException("not connected");
+        }
+
         assert length > 0;
         synchronized(socket)
         {
