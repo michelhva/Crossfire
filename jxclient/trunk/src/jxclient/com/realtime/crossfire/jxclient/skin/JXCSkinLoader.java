@@ -546,12 +546,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final BufferedImage pictureActive = getPicture(args[6]);
-                            final BufferedImage pictureInactive = getPicture(args[7]);
+                            final BufferedImage activePicture = getPicture(args[6]);
+                            final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
-                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, pictureActive, pictureInactive, font, inactiveColor, activeColor, ""));
+                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, ""));
                         }
                         else if (args[0].equals("def"))
                         {
