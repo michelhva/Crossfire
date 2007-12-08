@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
+Modified: 2007-12-08 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -2113,7 +2114,7 @@ arch sea
 x 10
 y 11
 end
-arch woodfloor
+arch brush
 x 10
 y 12
 end
@@ -2121,7 +2122,7 @@ arch pier_2_2_3
 x 10
 y 12
 end
-arch woodfloor
+arch brush
 x 10
 y 13
 end
@@ -2129,7 +2130,7 @@ arch pier_2_1_1
 x 10
 y 13
 end
-arch woodfloor
+arch brush
 x 10
 y 14
 end
@@ -2137,7 +2138,7 @@ arch pier_2_1_1
 x 10
 y 14
 end
-arch woodfloor
+arch brush
 x 10
 y 15
 end
@@ -2373,7 +2374,7 @@ arch sea
 x 11
 y 14
 end
-arch woodfloor
+arch cobblestones
 x 11
 y 15
 end
@@ -2584,7 +2585,7 @@ arch dwall_2_2_4
 x 12
 y 6
 end
-arch woodfloor
+arch sea
 x 12
 y 7
 end
@@ -2620,7 +2621,7 @@ arch sea
 x 12
 y 14
 end
-arch woodfloor
+arch cobblestones
 x 12
 y 15
 end
@@ -2807,7 +2808,7 @@ arch pier_2_2_3
 x 13
 y 7
 end
-arch woodfloor
+arch sea
 x 13
 y 8
 end
@@ -2831,7 +2832,7 @@ arch sea
 x 13
 y 12
 end
-arch woodfloor
+arch sea
 x 13
 y 13
 end
@@ -2839,7 +2840,7 @@ arch pier_2_2_2
 x 13
 y 13
 end
-arch woodfloor
+arch sea
 x 13
 y 14
 end
@@ -2847,7 +2848,7 @@ arch pier_2_1_1
 x 13
 y 14
 end
-arch woodfloor
+arch cobblestones
 x 13
 y 15
 end
@@ -3046,7 +3047,7 @@ arch cobblestones
 x 14
 y 7
 end
-arch woodfloor
+arch sea
 x 14
 y 8
 end
@@ -3078,7 +3079,7 @@ arch sea
 x 14
 y 12
 end
-arch woodfloor
+arch grass
 x 14
 y 13
 end
@@ -3281,7 +3282,7 @@ arch cobblestones
 x 15
 y 7
 end
-arch woodfloor
+arch sea
 x 15
 y 8
 end
@@ -3306,7 +3307,7 @@ arch sea
 x 15
 y 12
 end
-arch woodfloor
+arch grass
 x 15
 y 13
 end
@@ -3517,7 +3518,7 @@ arch cobblestones
 x 16
 y 7
 end
-arch woodfloor
+arch sea
 x 16
 y 8
 end
@@ -3525,7 +3526,7 @@ arch pier_2_2_3
 x 16
 y 8
 end
-arch woodfloor
+arch sea
 x 16
 y 9
 end
@@ -3533,7 +3534,7 @@ arch pier_2_1_1
 x 16
 y 9
 end
-arch woodfloor
+arch sea
 x 16
 y 10
 end
@@ -3541,7 +3542,7 @@ arch pier_2_1_1
 x 16
 y 10
 end
-arch woodfloor
+arch sea
 x 16
 y 11
 end
@@ -3549,7 +3550,7 @@ arch pier_2_1_1
 x 16
 y 11
 end
-arch woodfloor
+arch sea
 x 16
 y 12
 end
@@ -3557,7 +3558,7 @@ arch pier_2_1_1
 x 16
 y 12
 end
-arch woodfloor
+arch grass
 x 16
 y 13
 end
