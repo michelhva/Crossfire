@@ -85,7 +85,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         {
             g.drawImage(tcpImage, 0, 0, null);
         }
-        g.drawString(metaEntry.format(format), 16, font.getSize()+1);
+        g.drawString(metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
         g.dispose();
         if (comment != null && active)
         {
