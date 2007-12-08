@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient;
  *
  * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class MetaserverEntry implements Comparable<MetaserverEntry>
 {
@@ -88,5 +88,71 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     public int compareTo(final MetaserverEntry o)
     {
         return myhost.compareTo(o.myhost);
+    }
+
+    /**
+     * Return a formatted string using the given format.
+     *
+     * <p>Supported format strings:
+     * <ul>
+     * <li>%% - a literal % character
+     * <li>%C - comment
+     * <li>%H - host name
+     * <li>%L - ping time
+     * <li>%P - number of players
+     * <li>%V - server version
+     * </ul>
+     *
+     * @param format The format.
+     *
+     * @return The formatted string.
+     */
+    public String format(final String format)
+    {
+        final StringBuilder sb = new StringBuilder();
+        final char[] formatChars = format.toCharArray();
+        for (int i = 0; i < formatChars.length; i++)
+        {
+            if (formatChars[i] != '%' || i+1 >= formatChars.length)
+            {
+                sb.append(formatChars[i]);
+            }
+            else
+            {
+                i++;
+                switch (formatChars[i])
+                {
+                case '%':
+                    sb.append('%');
+                    break;
+
+                case 'C':
+                    sb.append(mycomment);
+                    break;
+
+                case 'H':
+                    sb.append(myhost);
+                    break;
+
+                case 'L':
+                    sb.append(myping);
+                    break;
+
+                case 'P':
+                    sb.append(mynrplayers);
+                    break;
+
+                case 'V':
+                    sb.append(myversion);
+                    break;
+
+                default:
+                    sb.append('%');
+                    sb.append(formatChars[i]);
+                    break;
+                }
+            }
+        }
+        return sb.toString();
     }
 }
