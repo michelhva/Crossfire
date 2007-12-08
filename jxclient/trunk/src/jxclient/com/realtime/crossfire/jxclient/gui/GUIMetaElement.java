@@ -41,56 +41,56 @@ import java.util.List;
  */
 public class GUIMetaElement extends GUIElement implements GUIScrollable
 {
-    private final BufferedImage mypicture_tcp;
+    private final BufferedImage tcpImage;
 
-    private final BufferedImage mypicture_udp;
+    private final BufferedImage udpImage;
 
-    private final Font myfont;
+    private final Font font;
 
-    private final GUIText mytext;
+    private final GUIText text;
 
-    private final AbstractLabel mylabel;
+    private final AbstractLabel comment;
 
-    private int myindex;
+    private int index;
 
-    public GUIMetaElement(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage pic_tcp, final BufferedImage pic_udp, final Font nf, final GUIText txt, final AbstractLabel comment, final int meta_id)
+    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final BufferedImage udpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicture_tcp = pic_tcp;
-        mypicture_udp = pic_udp;
-        myfont = nf;
-        mytext = txt;
-        mylabel = comment;
-        myindex = meta_id;
+        super(jxcWindow, name, x, y, w, h);
+        this.tcpImage = tcpImage;
+        this.udpImage = udpImage;
+        this.font = font;
+        this.text = text;
+        this.comment = comment;
+        this.index = index;
         createBuffer();
         render();
     }
 
     protected void render()
     {
-        final List<MetaserverEntry> l = Metaserver.query();
-        if (myindex < 0 || myindex >= l.size())
+        final List<MetaserverEntry> metaEntries = Metaserver.query();
+        if (index < 0 || index >= metaEntries.size())
         {
             return;
         }
 
-        final MetaserverEntry mentry = l.get(myindex);
+        final MetaserverEntry metaEntry = metaEntries.get(index);
         final Graphics2D g = mybuffer.createGraphics();
-        g.setFont(myfont);
+        g.setFont(font);
         g.setColor(active ? Color.RED : Color.GRAY);
-        if (mypicture_tcp != null)
+        if (tcpImage != null)
         {
-            g.drawImage(mypicture_tcp, 0, 0, null);
+            g.drawImage(tcpImage, 0, 0, null);
         }
-        g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
+        g.drawString("P:"+metaEntry.getNrPlayers()+" L:"+metaEntry.getPing()+" - "+metaEntry.getHost()+" - "+metaEntry.getComment(), 16, font.getSize()+1);
         g.dispose();
-        if (mylabel != null && active)
+        if (comment != null && active)
         {
-            mylabel.setText(mentry.getComment());
+            comment.setText(metaEntry.getComment());
         }
-        if (mytext != null && active)
+        if (text != null && active)
         {
-            mytext.setText(mentry.getHost());
+            text.setText(metaEntry.getHost());
         }
         setChanged();
     }
@@ -115,46 +115,46 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         }
     }
 
-    public void setActive(final boolean act)
+    public void setActive(final boolean active)
     {
-        if (active && !act)
+        if (this.active && !active)
         {
-            if (mylabel != null)
+            if (comment != null)
             {
-                mylabel.setText("");
+                comment.setText("");
             }
         }
-        active = act;
+        this.active = active;
         render();
     }
 
     /** {@inheritDoc} */
     public boolean canScrollUp()
     {
-        return myindex > 0;
+        return index > 0;
     }
 
     public void scrollUp()
     {
-        myindex--;
+        index--;
         render();
     }
 
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        return myindex+1 < Metaserver.query().size();
+        return index+1 < Metaserver.query().size();
     }
 
     public void scrollDown()
     {
-        myindex++;
+        index++;
         render();
     }
 
     public int getIndex()
     {
-        return myindex;
+        return index;
     }
 
     /** {@inheritDoc} */
