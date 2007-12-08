@@ -68,41 +68,34 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
 
     protected void render()
     {
-        List<MetaserverEntry> l = Metaserver.query();
-        try
+        final List<MetaserverEntry> l = Metaserver.query();
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+
+        if (myindex < 0 || myindex >= l.size())
         {
-            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            final GraphicsDevice gd = ge.getDefaultScreenDevice();
-            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-            mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-
-            if (myindex < 0 || myindex >= l.size())
-            {
-                return;
-            }
-
-            final MetaserverEntry mentry = l.get(myindex);
-            final Graphics2D g = mybuffer.createGraphics();
-            g.setFont(myfont);
-            g.setColor(active ? Color.RED : Color.GRAY);
-            if (mypicture_tcp != null)
-            {
-                g.drawImage(mypicture_tcp, 0, 0, null);
-            }
-            g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
-            g.dispose();
-            if (mylabel != null && active)
-            {
-                mylabel.setText(mentry.getComment());
-            }
-            if (mytext != null && active)
-            {
-                mytext.setText(mentry.getHost());
-            }
+            return;
         }
-        catch (final Exception e)
+
+        final MetaserverEntry mentry = l.get(myindex);
+        final Graphics2D g = mybuffer.createGraphics();
+        g.setFont(myfont);
+        g.setColor(active ? Color.RED : Color.GRAY);
+        if (mypicture_tcp != null)
         {
-            e.printStackTrace();
+            g.drawImage(mypicture_tcp, 0, 0, null);
+        }
+        g.drawString("P:"+mentry.getNrPlayers()+" L:"+mentry.getPing()+" - "+mentry.getHost()+" - "+mentry.getComment(), 16, myfont.getSize()+1);
+        g.dispose();
+        if (mylabel != null && active)
+        {
+            mylabel.setText(mentry.getComment());
+        }
+        if (mytext != null && active)
+        {
+            mytext.setText(mentry.getHost());
         }
         setChanged();
     }
