@@ -1,5 +1,8 @@
 2007-12-08  Andreas Kirschbaum
 
+	* Implement "low food" warning: displays a symbol above the player
+	if food drops below 100.
+
 	* Add support for checkbox gui elements.
 	- Add client-side command (set <option> <state>) to set an option
 	  manually.
