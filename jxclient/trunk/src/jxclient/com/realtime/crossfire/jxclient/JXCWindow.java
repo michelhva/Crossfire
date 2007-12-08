@@ -235,7 +235,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver.removeScriptMonitor(sp);
     }
 
-    public void runScript(final String cmdline)
+    private void runScript(final String cmdline)
     {
         try
         {
@@ -272,13 +272,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         return mycurrentspell;
     }
 
-    public void createKeyBinding(final GUICommandList cmdlist)
+    private void createKeyBinding(final GUICommandList cmdlist)
     {
         keyBindingState = new KeyBindingState(cmdlist);
         jxcWindowRenderer.openDialog(mydialog_keybind);
     }
 
-    public void removeKeyBinding()
+    private void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
         jxcWindowRenderer.openDialog(mydialog_keybind);
@@ -357,7 +357,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         return key_shift[keyid];
     }
 
-    public void setKeyShift(final int keyid, final boolean state)
+    private void setKeyShift(final int keyid, final boolean state)
     {
         key_shift[keyid] = state;
     }
@@ -1333,7 +1333,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @param e The event that caused this call.
      */
-    public void enterElement(final GUIElement element, final MouseEvent e)
+    private void enterElement(final GUIElement element, final MouseEvent e)
     {
         if (element == null)
         {
@@ -1365,7 +1365,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      *
      * @param e The event that caused this call.
      */
-    public void leaveElement(final MouseEvent e)
+    private void leaveElement(final MouseEvent e)
     {
         if (mouseElement != null)
         {
