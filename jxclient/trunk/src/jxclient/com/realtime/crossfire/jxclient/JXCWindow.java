@@ -584,6 +584,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         switch (e.getKeyCode())
         {
+        case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
         case KeyEvent.VK_NUMPAD8:
             if (getKeyShift(KEY_SHIFT_CTRL))
@@ -601,6 +602,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_PAGE_UP:
         case KeyEvent.VK_NUMPAD9:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
@@ -617,6 +619,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_KP_RIGHT:
         case KeyEvent.VK_RIGHT:
         case KeyEvent.VK_NUMPAD6:
             if (getKeyShift(KEY_SHIFT_CTRL))
@@ -634,6 +637,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_PAGE_DOWN:
         case KeyEvent.VK_NUMPAD3:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
@@ -650,6 +654,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
         case KeyEvent.VK_NUMPAD2:
             if (getKeyShift(KEY_SHIFT_CTRL))
@@ -667,6 +672,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_END:
         case KeyEvent.VK_NUMPAD1:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
@@ -683,6 +689,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_KP_LEFT:
         case KeyEvent.VK_LEFT:
         case KeyEvent.VK_NUMPAD4:
             if (getKeyShift(KEY_SHIFT_CTRL))
@@ -700,6 +707,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_HOME:
         case KeyEvent.VK_NUMPAD7:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
@@ -716,6 +724,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             }
             break;
 
+        case KeyEvent.VK_BEGIN:
         case KeyEvent.VK_NUMPAD5:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
