@@ -61,6 +61,7 @@ import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.DialogStatusOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.Skill;
 import com.realtime.crossfire.jxclient.SkillListener;
@@ -658,6 +659,25 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 elements.insert(element.getName(), element);
                             }
                             gui.setPosition(x, y);
+                        }
+                        else if (gui != null && args[0].equals("dialog_state"))
+                        {
+                            if (args.length < 3)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final boolean defaultValue = parseBoolean(args[2]);
+                            final String description = parseText(args, 3);
+                            try
+                            {
+                                window.getOptionManager().addOption(name, description, new DialogStatusOption(window, gui, defaultValue));
+                            }
+                            catch (final OptionException ex)
+                            {
+                                throw new IOException(ex.getMessage());
+                            }
                         }
                         else if (args[0].equals("event"))
                         {
@@ -1343,6 +1363,27 @@ public abstract class JXCSkinLoader implements JXCSkin
         catch (final NumberFormatException ex)
         {
             throw new IOException("invalid number: "+str);
+        }
+    }
+
+    /**
+     * Parse a boolean constant.
+     *
+     * @param str The boolean constant string to parse.
+     *
+     * @return The boolean value.
+     *
+     * @throws IOException If a parsing error occurs.
+     */
+    private static boolean parseBoolean(final String str) throws IOException
+    {
+        try
+        {
+            return Boolean.parseBoolean(str);
+        }
+        catch (final NumberFormatException ex)
+        {
+            throw new IOException("invalid boolean: "+str);
         }
     }
 

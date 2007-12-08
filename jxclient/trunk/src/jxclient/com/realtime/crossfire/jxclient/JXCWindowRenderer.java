@@ -272,6 +272,18 @@ public class JXCWindowRenderer
     }
 
     /**
+     * Return whether a given dialog is currently visible.
+     *
+     * @param dialog The dialog to check.
+     *
+     * @return Whether the dialog is visible.
+     */
+    public boolean isDialogOpen(final Gui dialog)
+    {
+        return openDialogs.contains(dialog);
+    }
+
+    /**
      * Return all open dialogs in reverse painting order; the first element is
      * the top-most dialog.
      *

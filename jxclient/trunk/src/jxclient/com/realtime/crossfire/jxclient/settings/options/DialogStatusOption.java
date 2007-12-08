@@ -19,27 +19,65 @@
 //
 package com.realtime.crossfire.jxclient.settings.options;
 
+import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.JXCWindow;
+
 /**
- * The base class for all check box options. It manages the checked/unchecked
- * state and notifies listeners about changes.
+ * An {@link Option} that affects the visibility of a dialog.
  *
  * @author Andreas Kirschbaum
  */
-public abstract class CheckBoxOption extends Option
+public class DialogStatusOption extends Option
 {
     /**
-     * The current state.
+     * The window to use.
      */
-    private boolean checked = false;
+    private final JXCWindow window;
+
+    /**
+     * The tracked dialog.
+     */
+    private final Gui dialog;
+
+    /**
+     * The default state.
+     */
+    private final boolean defaultOpen;
+
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to use.
+     *
+     * @param The tracked dialog.
+     *
+     * @param defaultOpen Whether the dialog is opened by default.
+     */
+    public DialogStatusOption(final JXCWindow window, final Gui dialog, final boolean defaultOpen)
+    {
+        this.window = window;
+        this.dialog = dialog;
+        this.defaultOpen = defaultOpen;
+    }
 
     /**
      * Return the current state.
      *
      * @return The current state.
      */
-    public boolean isChecked()
+    public boolean isOpen()
     {
-        return checked;
+        return window.isDialogOpen(dialog);
+    }
+
+    /**
+     * Return the default state.
+     *
+     * @return The default state.
+     */
+    public boolean isDefaultOpen()
+    {
+        return defaultOpen;
     }
 
     /**
@@ -47,42 +85,20 @@ public abstract class CheckBoxOption extends Option
      *
      * @param checked The new state.
      */
-    public void setChecked(final boolean checked)
+    public void setOpen(final boolean open)
     {
-        if (this.checked == checked)
+        if (isOpen() == open)
         {
             return;
         }
 
-        this.checked = checked;
+        window.toggleDialog(dialog);
         fireStateChangedEvent();
     }
-
-    /**
-     * Toggle the checked state.
-     */
-    public void toggleChecked()
-    {
-        setChecked(!checked);
-    }
-
-    /**
-     * Execute the action associated with this check box option. Must be
-     * implemented in subsclasses.
-     */
-    protected abstract void execute(final boolean checked);
 
     /** {@inheritDoc} */
     @Override protected void fireStateChangedEvent()
     {
-        execute(checked);
         super.fireStateChangedEvent();
     }
-
-    /**
-     * Return the default value of {@link #isChecked()}.
-     *
-     * @return The default value.
-     */
-    public abstract boolean isDefaultChecked();
 }

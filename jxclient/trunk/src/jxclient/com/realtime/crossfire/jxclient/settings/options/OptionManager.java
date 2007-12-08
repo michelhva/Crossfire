@@ -24,8 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Maintains a set of named options. For now, only {@link CheckBoxOptions} are
- * stored.
+ * Maintains a set of named options.
  *
  * @author Andreas Kirschbaum
  */
@@ -34,7 +33,7 @@ public class OptionManager
     /**
      * Maps option name to option instance.
      */
-    private final Map<String, CheckBoxOption> options = new HashMap<String, CheckBoxOption>();
+    private final Map<String, Option> options = new HashMap<String, Option>();
 
     /**
      * The settings instance for loading/saving option values.
@@ -62,7 +61,7 @@ public class OptionManager
      *
      * @throws OptionException If the option name is not unique.
      */
-    public void addOption(final String optionName, final String documentation, final CheckBoxOption option) throws OptionException
+    public void addOption(final String optionName, final String documentation, final Option option) throws OptionException
     {
         if (optionName == null) throw new IllegalArgumentException();
         if (documentation == null) throw new IllegalArgumentException();
@@ -87,13 +86,13 @@ public class OptionManager
      */
     public CheckBoxOption getCheckBoxOption(final String optionName) throws OptionException
     {
-        final CheckBoxOption option = options.get(optionName);
-        if (option == null)
+        final Option option = options.get(optionName);
+        if (option == null || !(option instanceof CheckBoxOption))
         {
             throw new OptionException("undefined option: "+optionName);
         }
 
-        return option;
+        return (CheckBoxOption)option;
     }
 
     /**
@@ -101,19 +100,41 @@ public class OptionManager
      */
     public void loadOptions()
     {
-        for (final Map.Entry<String, CheckBoxOption> e : options.entrySet())
+        for (final Map.Entry<String, Option> e : options.entrySet())
         {
             final String optionName = e.getKey();
-            final CheckBoxOption option = e.getValue();
-            final boolean checked = settings.getBoolean(optionName, true);
-            if (option.isChecked() != checked)
+            final Option option = e.getValue();
+            if (option instanceof CheckBoxOption)
             {
-                option.setChecked(checked);
+                final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
+                final boolean checked = settings.getBoolean(optionName, checkBoxOption.isDefaultChecked());
+                if (checkBoxOption.isChecked() != checked)
+                {
+                    checkBoxOption.setChecked(checked);
+                }
+                else
+                {
+                    // make sure the appropriate option command is executed
+                    checkBoxOption.fireStateChangedEvent();
+                }
+            }
+            else if (option instanceof DialogStatusOption)
+            {
+                final DialogStatusOption dialogStatusOption = (DialogStatusOption)option;
+                final boolean open = settings.getBoolean(optionName, dialogStatusOption.isDefaultOpen());
+                if (dialogStatusOption.isOpen() != open)
+                {
+                    dialogStatusOption.setOpen(open);
+                }
+                else
+                {
+                    // make sure the appropriate option command is executed
+                    dialogStatusOption.fireStateChangedEvent();
+                }
             }
             else
             {
-                // make sure the appropriate option command is executed
-                option.fireCheckedChangedEvent();
+                throw new AssertionError();
             }
         }
     }
@@ -123,11 +144,24 @@ public class OptionManager
      */
     public void saveOptions()
     {
-        for (final Map.Entry<String, CheckBoxOption> e : options.entrySet())
+        for (final Map.Entry<String, Option> e : options.entrySet())
         {
             final String optionName = e.getKey();
-            final CheckBoxOption option = e.getValue();
-            settings.putBoolean(optionName, option.isChecked());
+            final Option option = e.getValue();
+            if (option instanceof CheckBoxOption)
+            {
+                final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
+                settings.putBoolean(optionName, checkBoxOption.isChecked());
+            }
+            else if (option instanceof DialogStatusOption)
+            {
+                final DialogStatusOption dialogStatusOption = (DialogStatusOption)option;
+                settings.putBoolean(optionName, dialogStatusOption.isOpen());
+            }
+            else
+            {
+                throw new AssertionError();
+            }
         }
     }
 }

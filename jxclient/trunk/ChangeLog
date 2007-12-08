@@ -1,5 +1,8 @@
 2007-12-08  Andreas Kirschbaum
 
+	* Implement 'dialog_state' skin command to record the visibility
+	of dialogs.
+
 	* Remove 'label_picture' skin command; add 'label_html' skin
 	command to display HTML content; change 'label_text' to not
 	interpret HTML content.

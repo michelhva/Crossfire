@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
-import com.realtime.crossfire.jxclient.settings.options.CheckBoxOptionListener;
+import com.realtime.crossfire.jxclient.settings.options.OptionListener;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
@@ -128,10 +128,10 @@ public class GUICheckBox extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        option.addCheckBoxOptionListener(new CheckBoxOptionListener()
+        option.addOptionListener(new OptionListener()
             {
                 /** {@inheritDoc} */
-                public void checkedChanged(final CheckBoxOption option)
+                public void stateChanged()
                 {
                     render();
                 }

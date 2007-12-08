@@ -64,4 +64,10 @@ public class CommandCheckBoxOption extends CheckBoxOption
             commandOff.execute();
         }
     }
+
+    /** {@inheritDoc} */
+    @Override public boolean isDefaultChecked()
+    {
+        return true;
+    }
 }
