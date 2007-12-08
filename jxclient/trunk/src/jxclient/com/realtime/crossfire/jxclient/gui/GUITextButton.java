@@ -149,14 +149,7 @@ public class GUITextButton extends AbstractButton
         final Graphics2D g = mybuffer.createGraphics();
         g.setFont(font);
         g.setColor(color);
-        if (active)
-        {
-            down.render(g, getWidth());
-        }
-        else
-        {
-            up.render(g, getWidth());
-        }
+        (active ? down : up).render(g, getWidth());
         g.drawString(text, textX+ButtonImages.OFFSET, textY);
         g.dispose();
         setChanged();
