@@ -783,9 +783,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final BufferedImage picturePositive = getPicture(args[6]);
+                            final BufferedImage picturePositive = args[6].equals("null") ? null : getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
-                            final BufferedImage pictureEmpty = getPicture(args[8]);
+                            final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
                             final String tooltipPrefix = parseText(args, 11);

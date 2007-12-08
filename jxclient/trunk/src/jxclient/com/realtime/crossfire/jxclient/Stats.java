@@ -145,6 +145,11 @@ public class Stats
     public static final int CS_STAT_FOOD = 18;
 
     /**
+     * The Low Food indicator. It ranges from 0 (ok) to 1 (low food).
+     */
+    public static final int C_STAT_LOWFOOD = 0x10003;
+
+    /**
      * The Weapon Speed stat.
      */
     public static final int CS_STAT_WEAP_SP = 19;

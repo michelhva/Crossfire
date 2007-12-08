@@ -243,7 +243,10 @@ public class GUIGauge extends GUIElement
         final Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
-        g.drawImage(pictureEmpty, 0, 0, null);
+        if (pictureEmpty != null)
+        {
+            g.drawImage(pictureEmpty, 0, 0, null);
+        }
         if (fPicture != null)
         {
             g.drawImage(fPicture, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);

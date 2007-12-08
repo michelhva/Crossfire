@@ -33,6 +33,12 @@ import com.realtime.crossfire.jxclient.Stats;
 public class StatGaugeUpdater extends GaugeUpdater
 {
     /**
+     * The LOWFOOD indicator is turned on if the FOOD value falls below this
+     * value.
+     */
+    private static final int LOWFOOD_LIMIT = 100;
+
+    /**
      * The stat value to monitor.
      */
     private final int stat;
@@ -59,6 +65,10 @@ public class StatGaugeUpdater extends GaugeUpdater
 
             case Stats.CS_STAT_FOOD:
                 setValues(s.getStat(stat), 0, 999);
+                break;
+
+            case Stats.C_STAT_LOWFOOD:
+                setValues(s.getStat(Stats.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 break;
 
             case Stats.CS_STAT_GRACE:
