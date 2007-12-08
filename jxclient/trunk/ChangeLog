@@ -1,5 +1,9 @@
 2007-12-08  Andreas Kirschbaum
 
+	* Remove 'label_picture' skin command; add 'label_html' skin
+	command to display HTML content; change 'label_text' to not
+	interpret HTML content.
+
 	* Implement "low food" warning: displays a symbol above the player
 	if food drops below 100.
 

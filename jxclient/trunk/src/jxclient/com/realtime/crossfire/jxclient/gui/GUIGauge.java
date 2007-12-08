@@ -85,6 +85,9 @@ public class GUIGauge extends GUIElement
     public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final Orientation orientation, final String tooltipPrefix)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
+        checkSize(picture_full, "full", nw, nh);
+        checkSize(picture_negative, "negative", nw, nh);
+        checkSize(picture_empty, "empty", nw, nh);
         pictureFull = picture_full;
         pictureNegative = picture_negative;
         pictureEmpty = picture_empty;
@@ -93,6 +96,38 @@ public class GUIGauge extends GUIElement
         this.tooltipPrefix = tooltipPrefix;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         setValues(0, 0, 0, "", "");
+    }
+
+    /**
+     * Compare the image size to the given values.
+     *
+     * @param image The image to process.
+     *
+     * @param name The image name for generating error messages.
+     *
+     * @param w The expected image width.
+     *
+     * @param h The expected image height.
+     *
+     * @throws IllegalArgumentException If <code>image</code> is not
+     * <code>null</code> and it's size is not <code>w</code>x<code>h</code>.
+     */
+    static void checkSize(final BufferedImage image, final String name, final int w, final int h)
+    {
+        if (image == null)
+        {
+            return;
+        }
+
+        if (image.getWidth() != w)
+        {
+            throw new IllegalArgumentException("width of '"+name+"' does not match element width");
+        }
+
+        if (image.getHeight() != h)
+        {
+            throw new IllegalArgumentException("height of '"+name+"' does not match element height");
+        }
     }
 
     public void render()
