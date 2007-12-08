@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
 
 /**
  * A factory class to create "textbutton" instances.
