@@ -53,16 +53,6 @@ public class TextButtonFactory
     private final Color color;
 
     /**
-     * The x-offset for the text.
-     */
-    private final int textX;
-
-    /**
-     * The y-offset for the text.
-     */
-    private final int textY;
-
-    /**
      * Create a new instance.
      *
      * @param up The images comprising the "up" button state.
@@ -72,12 +62,8 @@ public class TextButtonFactory
      * @param font The font to use.
      *
      * @param color The text color.
-     *
-     * @param textX the x-offset for the text.
-     *
-     * @param textY the y-offset for the text.
      */
-    public TextButtonFactory(final GUITextButton.ButtonImages up, final GUITextButton.ButtonImages down, final Font font, final Color color, final int textX, final int textY)
+    public TextButtonFactory(final GUITextButton.ButtonImages up, final GUITextButton.ButtonImages down, final Font font, final Color color)
     {
         if (up == null) throw new IllegalArgumentException();
         if (down == null) throw new IllegalArgumentException();
@@ -88,8 +74,6 @@ public class TextButtonFactory
         this.down = down;
         this.font = font;
         this.color = color;
-        this.textX = textX;
-        this.textY = textY;
     }
 
     /**
@@ -115,6 +99,6 @@ public class TextButtonFactory
      */
     public GUITextButton newTextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String text, final GUICommandList commandList)
     {
-        return new GUITextButton(jxcWindow, name, x, y, w, h, up, down, text, font, color, textX, textY, commandList);
+        return new GUITextButton(jxcWindow, name, x, y, w, h, up, down, text, font, color, commandList);
     }
 }

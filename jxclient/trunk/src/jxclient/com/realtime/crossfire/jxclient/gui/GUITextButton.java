@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
+import java.awt.geom.Rectangle2D;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -66,16 +67,6 @@ public class GUITextButton extends AbstractButton
     private final Color color;
 
     /**
-     * The x-offset for the text.
-     */
-    private final int textX;
-
-    /**
-     * The y-offset for the text.
-     */
-    private final int textY;
-
-    /**
      * Create a new instance.
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
@@ -102,13 +93,9 @@ public class GUITextButton extends AbstractButton
      *
      * @param color The text color.
      *
-     * @param textX the x-offset for the text.
-     *
-     * @param textY the y-offset for the text.
-     *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final int textX, final int textY, final GUICommandList commandList)
+    public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final GUICommandList commandList)
     {
         super(jxcWindow, name, x, y, w, h, commandList);
         if (up == null) throw new IllegalArgumentException();
@@ -126,8 +113,6 @@ public class GUITextButton extends AbstractButton
         this.text = text;
         this.font = font;
         this.color = color;
-        this.textX = textX;
-        this.textY = textY;
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -150,7 +135,9 @@ public class GUITextButton extends AbstractButton
         g.setFont(font);
         g.setColor(color);
         (active ? down : up).render(g, getWidth());
-        g.drawString(text, textX+ButtonImages.OFFSET, textY);
+        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+        g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
         g.dispose();
         setChanged();
     }
