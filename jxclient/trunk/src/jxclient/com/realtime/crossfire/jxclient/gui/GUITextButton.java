@@ -106,7 +106,7 @@ public class GUITextButton extends AbstractButton
      *
      * @param textY the y-offset for the text.
      *
-     * @param commandList The commands to execute when the button is elected.
+     * @param commandList The commands to execute when the button is selected.
      */
     public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final int textX, final int textY, final GUICommandList commandList)
     {
