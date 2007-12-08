@@ -106,10 +106,7 @@ public class GUIButton extends AbstractButton
         final Graphics2D g = mybuffer.createGraphics();
         g.setFont(myfont);
         g.setColor(myfontcolor);
-        if (active)
-            g.drawImage(mypicture_down, 0, 0, null);
-        else
-            g.drawImage(mypicture_up, 0, 0, null);
+        g.drawImage(active ? mypicture_down : mypicture_up, 0, 0, null);
         if (mytext != null)
         {
             g.drawString(mytext, mytx, myty);
