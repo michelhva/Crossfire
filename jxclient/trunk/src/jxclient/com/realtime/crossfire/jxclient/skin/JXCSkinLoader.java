@@ -627,7 +627,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else if (args[1].equals("textbutton"))
                             {
-                                if (args.length != 8)
+                                if (args.length != 6)
                                 {
                                     throw new IOException("syntax error");
                                 }
@@ -636,11 +636,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final String down = args[3];
                                 final Font font = fonts.lookup(args[4]);
                                 final Color color = parseColor(args[5]);
-                                final int textX = parseInt(args[6]);
-                                final int textY = parseInt(args[7]);
                                 final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(getPicture(up+"_w"), getPicture(up+"_c"), getPicture(up+"_e"));
                                 final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(getPicture(down+"_w"), getPicture(down+"_c"), getPicture(down+"_e"));
-                                textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, textX, textY);
+                                textButtonFactory = new TextButtonFactory(upImages, downImages, font, color);
                             }
                             else
                             {
