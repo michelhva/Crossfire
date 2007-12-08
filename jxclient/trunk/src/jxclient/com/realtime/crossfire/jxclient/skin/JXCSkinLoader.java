@@ -53,6 +53,7 @@ import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.GUITextField;
 import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBinding;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
@@ -523,6 +524,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final String commandString = parseText(args, 4);
                                 params = new GUICommand.ExecuteCommandParameter(window, commandString);
                             }
+                            else if (command == GUICommand.Command.SCROLLNEXT)
+                            {
+                                if (args.length != 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final GUIElement nextElement = elements.lookup(args[4]);
+                                params = new GUICommand.ScrollNextParameter(window, nextElement);
+                            }
                             else
                             {
                                 if (args.length != 4)
@@ -888,16 +899,17 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             elements.insert(name, element);
                         }
-                        else if (gui == null && args[0].equals("key"))
+                        else if (args[0].equals("key"))
                         {
                             if (args.length < 2)
                             {
                                 throw new IOException("syntax error");
                             }
 
+                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : window.getKeyBindings();
                             try
                             {
-                                window.getKeyBindings().parseKeyBinding(line.substring(4).trim(), window, true);
+                                keyBindings.parseKeyBinding(line.substring(4).trim(), window, true);
                             }
                             catch (final InvalidKeyBinding ex)
                             {
