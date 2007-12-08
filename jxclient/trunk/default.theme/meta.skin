@@ -5,7 +5,7 @@ commandlist command_metaup
 commandlist command_metadown
 
 picture background 0 0 1024 768 metaserver
-text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 command_metaconnect
+text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE command_metaconnect
 label_html metacomment 200 650 600 118 font_description WHITE
 meta_element metaselect1 300 250 400 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 0
 meta_element metaselect2 300 280 400 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 1
