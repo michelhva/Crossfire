@@ -84,14 +84,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
             final MetaserverEntry mentry = l.get(myindex);
             final Graphics2D g = mybuffer.createGraphics();
             g.setFont(myfont);
-            if (active)
-            {
-                g.setColor(Color.RED);
-            }
-            else
-            {
-                g.setColor(Color.GRAY);
-            }
+            g.setColor(active ? Color.RED : Color.GRAY);
             if (mypicture_tcp != null)
             {
                 g.drawImage(mypicture_tcp, 0, 0, null);
