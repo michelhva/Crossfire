@@ -1117,7 +1117,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
-                            if (args.length != 10)
+                            if (args.length != 12)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1130,8 +1130,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = fonts.lookup(args[8]);
-                            final GUICommandList commandList = getCommandList(args[9]);
-                            elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, Color.GRAY, Color.WHITE, "", commandList));
+                            final Color inactiveColor = parseColor(args[9]);
+                            final Color activeColor = parseColor(args[10]);
+                            final GUICommandList commandList = getCommandList(args[11]);
+                            elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, "", commandList));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
