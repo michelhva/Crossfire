@@ -19,22 +19,38 @@
 //
 package com.realtime.crossfire.jxclient.settings.options;
 
+import javax.swing.event.EventListenerList;
+
 /**
- * A {@link CheckBoxOption} that has no immediate effect when triggered.
+ * The base class for all options. It manages a set of {@link OptionListener}s.
  *
  * @author Andreas Kirschbaum
  */
-public class PassiveCheckBoxOption extends CheckBoxOption
+public abstract class Option
 {
-    /** {@inheritDoc} */
-    @Override protected void execute(final boolean checked)
+    /**
+     * The listeners to be notified.
+     */
+    private final EventListenerList listeners = new EventListenerList();
+
+    /**
+     * Notify all listeners that the state has changed.
+     */
+    protected void fireStateChangedEvent()
     {
-        // nothing
+        for (final OptionListener listener : listeners.getListeners(OptionListener.class))
+        {
+            listener.stateChanged();
+        }
     }
 
-    /** {@inheritDoc} */
-    @Override public boolean isDefaultChecked()
+    /**
+     * Add a listener for state changes.
+     *
+     * @param listener The listener to add.
+     */
+    public void addOptionListener(final OptionListener listener)
     {
-        return true;
+        listeners.add(OptionListener.class, listener);
     }
 }

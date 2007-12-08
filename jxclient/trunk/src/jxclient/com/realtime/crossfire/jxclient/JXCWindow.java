@@ -403,6 +403,18 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Return whether a given dialog is currently visible.
+     *
+     * @param dialog The dialog to check.
+     *
+     * @return Whether the dialog is visible.
+     */
+    public boolean isDialogOpen(final Gui dialog)
+    {
+        return jxcWindowRenderer.isDialogOpen(dialog);
+    }
+
+    /**
      * Close the "query" dialog. Does nothing if the dialog is not open.
      */
     public void closeQueryDialog()
