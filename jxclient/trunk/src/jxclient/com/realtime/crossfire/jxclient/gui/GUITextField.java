@@ -35,9 +35,9 @@ public class GUITextField extends GUIText
 {
     private final GUICommandList commandList;
 
-    public GUITextField(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picactive, final BufferedImage picinactive, final Font nf, final Color inactiveColor, final Color activeColor, final String txt, final GUICommandList commandList)
+    public GUITextField(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activePicture, final BufferedImage inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final String text, final GUICommandList commandList)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, inactiveColor, activeColor, txt);
+        super(jxcWindow, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, text);
         if (commandList == null) throw new IllegalArgumentException();
         this.commandList = commandList;
     }
