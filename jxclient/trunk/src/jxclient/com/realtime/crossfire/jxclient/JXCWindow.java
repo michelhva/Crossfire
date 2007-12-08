@@ -29,6 +29,10 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
@@ -133,6 +137,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final TooltipManager tooltipManager = new TooltipManager(this);
 
     /**
+     * The option manager for this window.
+     */
+    private final OptionManager optionManager;
+
+    /**
      * The default repeat counter for "ncom" commands.
      */
     private int repeatCount = 0;
@@ -200,11 +209,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      * Create a new instance.
      *
      * @param boolean Whether GUI elements should be highlighted.
+     *
+     * @param settings The settings instance to use.
      */
-    public JXCWindow(final boolean debugGui)
+    public JXCWindow(final boolean debugGui, final Settings settings)
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
+        optionManager = new OptionManager(settings);
         addWindowFocusListener(windowFocusListener);
     }
 
@@ -414,6 +426,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         jxcWindowRenderer.endRendering();
         saveShortcuts();
         saveKeybindings();
+        optionManager.saveOptions();
         System.exit(0);
     }
 
@@ -1408,6 +1421,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         }
 
         myskin.executeInitEvents();
+        optionManager.loadOptions();
         return true;
     }
 
@@ -1603,9 +1617,69 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 myserver.drawInfo(ex.getMessage(), 3);
             }
         }
+        else if (command.startsWith("set "))
+        {
+            final String[] tmp = command.split(" +", 3);
+            if (tmp.length != 3)
+            {
+                myserver.drawInfo("The set command needs two arguments: set <option> <value>", 3);
+            }
+            else
+            {
+                setCheckBoxOption(tmp[1], tmp[2]);
+            }
+        }
         else
         {
             sendNcom(command);
         }
+    }
+
+    /**
+     * Set the state of a check box option.
+     *
+     * @param optionName The option name to set.
+     *
+     * @param args The new state.
+     */
+    private void setCheckBoxOption(final String optionName, final String args)
+    {
+        final CheckBoxOption option;
+        try
+        {
+            option = optionManager.getCheckBoxOption(optionName);
+        }
+        catch (final OptionException ex)
+        {
+            myserver.drawInfo("Unknown option '"+optionName+"'", 3);
+            return;
+        }
+
+        final boolean checked;
+        if (args.equals("on"))
+        {
+            checked = true;
+        }
+        else if (args.equals("off"))
+        {
+            checked = false;
+        }
+        else
+        {
+            myserver.drawInfo("The '"+args+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.", 3);
+            return;
+        }
+
+        option.setChecked(checked);
+    }
+
+    /**
+     * Return the option manager for this window.
+     *
+     * @return The option manager.
+     */
+    public OptionManager getOptionManager()
+    {
+        return optionManager;
     }
 }

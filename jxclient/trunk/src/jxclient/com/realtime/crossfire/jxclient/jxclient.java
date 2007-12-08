@@ -143,7 +143,7 @@ public class jxclient
             prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
 
-            final JXCWindow jxwin = new JXCWindow(debugGui);
+            final JXCWindow jxwin = new JXCWindow(debugGui, prefs);
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
         }
         catch (final Exception e)

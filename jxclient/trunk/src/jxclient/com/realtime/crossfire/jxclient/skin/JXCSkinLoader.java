@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
+import com.realtime.crossfire.jxclient.gui.GUICheckBox;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUICommandText;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
@@ -58,6 +59,9 @@ import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.Skill;
 import com.realtime.crossfire.jxclient.SkillListener;
 import com.realtime.crossfire.jxclient.Stats;
@@ -134,6 +138,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private DialogFactory dialogFactory = null;
 
     /**
+     * The checkbox factory. Set to <code>null</code> until defined.
+     */
+    private CheckBoxFactory checkBoxFactory = null;
+
+    /**
      * Names of pending skin files.
      */
     private final Set<String> dialogsToLoad = new HashSet<String>();
@@ -175,6 +184,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         fonts.clear();
         textButtonFactory = null;
         dialogFactory = null;
+        checkBoxFactory = null;
         try
         {
             load("global.skin", s, p, null);
@@ -192,6 +202,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             fonts.clear();
             textButtonFactory = null;
             dialogFactory = null;
+            checkBoxFactory = null;
             images.clear();
         }
     }
@@ -420,6 +431,27 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, commandList));
                             }
                         }
+                        else if (gui != null && args[0].equals("checkbox"))
+                        {
+                            if (args.length < 7)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            if (checkBoxFactory == null)
+                            {
+                                throw new IOException("missing 'def checkbox' command");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final CheckBoxOption option = parseCheckBoxOption(args[6], window);
+                            final String text = parseText(args, 7);
+                            elements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
+                        }
                         else if (args[0].equals("commandlist"))
                         {
                             if (args.length != 2)
@@ -480,6 +512,16 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                                 params = new GUICommand.DialogCloseParameter(window, addDialog(args[4]));
                             }
+                            else if (command == GUICommand.Command.GUI_EXECUTE_COMMAND)
+                            {
+                                if (args.length < 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final String commandString = parseText(args, 4);
+                                params = new GUICommand.ExecuteCommandParameter(window, commandString);
+                            }
                             else
                             {
                                 if (args.length != 4)
@@ -517,7 +559,40 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            if (args[1].equals("dialog"))
+                            if (args[1].equals("checkbox"))
+                            {
+                                if (args.length != 6)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final BufferedImage checked = getPicture(args[2]);
+                                final BufferedImage unchecked = getPicture(args[3]);
+                                final Font font = fonts.lookup(args[4]);
+                                final Color color = parseColor(args[5]);
+                                checkBoxFactory = new CheckBoxFactory(checked, unchecked, font, color);
+                            }
+                            else if (args[1].equals("checkbox_option"))
+                            {
+                                if (args.length < 5)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final String optionName = args[2];
+                                final GUICommandList commandOn = getCommandList(args[3]);
+                                final GUICommandList commandOff = getCommandList(args[4]);
+                                final String documentation = parseText(args, 5);
+                                try
+                                {
+                                    window.getOptionManager().addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
+                                }
+                                catch (final OptionException ex)
+                                {
+                                    throw new IOException(ex.getMessage());
+                                }
+                            }
+                            else if (args[1].equals("dialog"))
                             {
                                 if (args.length != 5)
                                 {
@@ -1399,6 +1474,29 @@ public abstract class JXCSkinLoader implements JXCSkin
             text.append(args[i]);
         }
         return text.toString();
+    }
+
+    /**
+     * Parse a check box option name.
+     *
+     * @param name The check box option name to parse.
+     *
+     * @param window The current window.
+     *
+     * @return The check box option.
+     *
+     * @throws IOException If the check box option name does not exist.
+     */
+    private CheckBoxOption parseCheckBoxOption(final String name, final JXCWindow window) throws IOException
+    {
+        try
+        {
+            return window.getOptionManager().getCheckBoxOption(name);
+        }
+        catch (final OptionException ex)
+        {
+            throw new IOException(ex.getMessage());
+        }
     }
 
     /**
