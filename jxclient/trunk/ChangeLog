@@ -1,3 +1,11 @@
+2007-12-08  Andreas Kirschbaum
+
+	* Add support for checkbox gui elements.
+	- Add client-side command (set <option> <state>) to set an option
+	  manually.
+	- Implement skin commands 'def checkbox', 'def checkbox_option',
+	  and 'checkbox'.
+
 2007-12-07  Andreas Kirschbaum
 
 	* Make ENTER and SPACE select the default action in dialogs. For

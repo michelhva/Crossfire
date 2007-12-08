@@ -86,6 +86,27 @@ public class Settings
     }
 
     /**
+     * Return the boolean associated with the specified key at a node, or
+     * <code>defaultValue</code> if there is no association for this key.
+     *
+     * @param key Key to get value for.
+     *
+     * @return The value.
+     */
+    public boolean getBoolean(final String key, final boolean defaultValue)
+    {
+        final String value = getString(key, Boolean.toString(defaultValue));
+        try
+        {
+            return Boolean.parseBoolean(value);
+        }
+        catch (final NumberFormatException ex)
+        {
+            return defaultValue;
+        }
+    }
+
+    /**
      * Return the integer associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
      *
@@ -120,6 +141,18 @@ public class Settings
         {
             setChanged();
         }
+    }
+
+    /**
+     * Store a key/value pair.
+     *
+     * @param key The key to store.
+     *
+     * @param value The value to store.
+     */
+    public void putBoolean(final String key, final boolean value)
+    {
+        putString(key, Boolean.toString(value));
     }
 
     /**
