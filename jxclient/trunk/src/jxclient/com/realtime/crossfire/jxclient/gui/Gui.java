@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -38,6 +40,11 @@ public class Gui
      * The list of {@link GUIElement}s comprising this gui.
      */
     private final List<GUIElement> elements = new ArrayList<GUIElement>();
+
+    /**
+     * The key bindings for this gui.
+     */
+    private final KeyBindings keyBindings = new KeyBindings();
 
     /**
      * The gui element which has the focus. Set to <code>null</code> if no such
@@ -307,6 +314,13 @@ public class Gui
             }
         }
 
+        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
+        if (keyBinding != null)
+        {
+            keyBinding.getCommands().execute();
+            return true;
+        }
+
         return false;
     }
 
@@ -396,5 +410,15 @@ public class Gui
     public int getY()
     {
         return y;
+    }
+
+    /**
+     * Return the key bindings instance for this gui.
+     *
+     * @return The key bindings.
+     */
+    public KeyBindings getKeyBindings()
+    {
+        return keyBindings;
     }
 }

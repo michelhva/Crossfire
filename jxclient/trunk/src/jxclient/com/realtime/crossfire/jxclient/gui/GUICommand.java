@@ -44,6 +44,7 @@ public class GUICommand
         QUIT,
         SCROLLUP,
         SCROLLDOWN,
+        SCROLLNEXT,
         CONNECT,
         GUI_META,
         GUI_START,
@@ -91,6 +92,7 @@ public class GUICommand
             }
             break;
 
+        case SCROLLNEXT:
         case CONNECT:
         case GUI_META:
         case GUI_START:
@@ -139,6 +141,14 @@ public class GUICommand
             if (mytarget instanceof GUIScrollable)
             {
                 ((GUIScrollable)mytarget).scrollDown();
+            }
+            break;
+
+        case SCROLLNEXT:
+            if (mytarget.isActive())
+            {
+                final ScrollNextParameter param = (ScrollNextParameter)myparams;
+                mytarget.getGui().setActiveElement(param.nextElement);
             }
             break;
 
@@ -194,6 +204,31 @@ public class GUICommand
     public Object getParams()
     {
         return myparams;
+    }
+
+    /**
+     * A parameter object for the {@link Command#SCROLLNEXT} command.
+     */
+    public static class ScrollNextParameter
+    {
+        /** The window to operate on. */
+        private final JXCWindow window;
+
+        /** The dialog to close. */
+        private final GUIElement nextElement;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window to operate on.
+         *
+         * @param nextElement The element to activate.
+         */
+        public ScrollNextParameter(final JXCWindow window, final GUIElement nextElement)
+        {
+            this.window = window;
+            this.nextElement = nextElement;
+        }
     }
 
     /**

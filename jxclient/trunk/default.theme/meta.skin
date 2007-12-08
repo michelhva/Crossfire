@@ -3,6 +3,8 @@ commandlist command_metaconnect
 commandlist command_metacancel
 commandlist command_metaup
 commandlist command_metadown
+commandlist command_metaprev
+commandlist command_metanext
 
 picture background 0 0 1024 768 metaserver
 text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE command_metaconnect
@@ -34,6 +36,22 @@ commandlist_add command_metadown metaselect6 SCROLLDOWN
 commandlist_add command_metadown metaselect7 SCROLLDOWN
 commandlist_add command_metadown metaselect8 SCROLLDOWN
 
+commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
+commandlist_add command_metaprev metaselect3 SCROLLNEXT metaselect2
+commandlist_add command_metaprev metaselect4 SCROLLNEXT metaselect3
+commandlist_add command_metaprev metaselect5 SCROLLNEXT metaselect4
+commandlist_add command_metaprev metaselect6 SCROLLNEXT metaselect5
+commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
+commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
+
+commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
+commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7
+commandlist_add command_metanext metaselect5 SCROLLNEXT metaselect6
+commandlist_add command_metanext metaselect4 SCROLLNEXT metaselect5
+commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
+commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
+commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
+
 commandlist_add command_metaconnect metaurl CONNECT
 commandlist_add command_metacancel null GUI_START
 
@@ -43,3 +61,9 @@ button metaup      270 250  20 25 metaup              metaup              comman
 button metadown    270 455  20 25 metadown            metadown            command_metadown
 
 set_default metaurl
+
+key code UP        0 exec command_metaprev
+key code DOWN      0 exec command_metanext
+key code PAGE_UP   0 exec command_metaup
+key code PAGE_DOWN 0 exec command_metadown
+key code ENTER     0 exec command_metaconnect
