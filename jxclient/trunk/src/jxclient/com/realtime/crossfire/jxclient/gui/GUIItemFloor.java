@@ -34,9 +34,17 @@ import java.util.List;
 public class GUIItemFloor extends GUIItemItem
 {
     /**
-     * The currently shown index.
+     * The currently shown index. It is the item's index for ground view, and
+     * +1 for container view; index 0 for container view is the container
+     * itself.
      */
     private int index = -1;
+
+    /**
+     * Whether currently a container is shown: 0=ground view, else=container
+     * view.
+     */
+    private int containerTag;
 
     /**
      * The {@link LocationListener} used to detect items added to or removed
@@ -47,7 +55,15 @@ public class GUIItemFloor extends GUIItemItem
         /** {@inheritDoc} */
         public void locationModified(final int index, final CfItem item)
         {
-            assert index == GUIItemFloor.this.index;
+            if (containerTag != 0)
+            {
+                assert GUIItemFloor.this.index >= 1;
+                assert index+1 == GUIItemFloor.this.index;
+            }
+            else
+            {
+                assert index == GUIItemFloor.this.index;
+            }
             setItem(item);
         }
     };
@@ -61,15 +77,16 @@ public class GUIItemFloor extends GUIItemItem
         /** {@inheritDoc} */
         public void currentFloorChanged(final int currentFloor)
         {
-            setIndex(index, true);
+            setIndex(index, currentFloor, true);
         }
     };
 
     public GUIItemFloor(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft, final Color nrofColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft, nrofColor);
+        containerTag = ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor();
         ItemsList.getItemsManager().getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
-        setIndex(index, false);
+        setIndex(index, containerTag, false);
         render();
     }
 
@@ -87,7 +104,7 @@ public class GUIItemFloor extends GUIItemItem
     /* {@inheritDoc} */
     @Override public void scrollUp()
     {
-        setIndex(index-1, false);
+        setIndex(index-1, containerTag, false);
     }
 
     /** {@inheritDoc} */
@@ -99,7 +116,7 @@ public class GUIItemFloor extends GUIItemItem
     /* {@inheritDoc} */
     @Override public void scrollDown()
     {
-        setIndex(index+1, false);
+        setIndex(index+1, containerTag, false);
     }
 
     /* {@inheritDoc} */
@@ -148,10 +165,12 @@ public class GUIItemFloor extends GUIItemItem
      *
      * @param index the floor tile
      *
+     * @param containerTag The new container tag.
+     *
      * @param forced if unset, do nothing if the <code>index</code> is
      * unchanged; if set, always render the item
      */
-    private void setIndex(final int index, final boolean forced)
+    private void setIndex(final int index, final int containerTag, final boolean forced)
     {
         if (!forced && this.index == index)
         {
@@ -160,15 +179,56 @@ public class GUIItemFloor extends GUIItemItem
 
         if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index, floorLocationListener);
+            if (this.containerTag != 0)
+            {
+                if (this.index > 0)
+                {
+                    ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
+                }
+                else
+                {
+                    // index 0 is the container itself -- no listener needed
+                }
+            }
+            else
+            {
+                ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index, floorLocationListener);
+            }
         }
         this.index = index;
+        this.containerTag = containerTag;
         if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index, floorLocationListener);
+            if (this.containerTag != 0)
+            {
+                if (this.index > 0)
+                {
+                    ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index-1, floorLocationListener);
+                }
+                else
+                {
+                    // index 0 is the container itself -- no listener needed
+                }
+            }
+            else
+            {
+                ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index, floorLocationListener);
+            }
         }
 
-        final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
-        setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
+        if (this.containerTag == 0)
+        {
+            final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+            setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
+        }
+        else if(this.index > 0)
+        {
+            final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+            setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
+        }
+        else
+        {
+            setItem(ItemsList.getItemsManager().getItem(containerTag));
+        }
     }
 }
