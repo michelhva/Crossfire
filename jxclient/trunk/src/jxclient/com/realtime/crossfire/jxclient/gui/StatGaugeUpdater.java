@@ -108,6 +108,6 @@ public class StatGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.stat = stat;
-        ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
+        ItemsList.getStats().addCrossfireStatsListener(crossfireStatsListener);
     }
 }

@@ -138,7 +138,7 @@ public class GUILabelStats extends GUIOneLineLabel
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, alignment, "");
         this.stat = stat;
-        ItemsList.getItemsManager().getStats().addCrossfireStatsListener(crossfireStatsListener);
+        ItemsList.getStats().addCrossfireStatsListener(crossfireStatsListener);
     }
 
     /**

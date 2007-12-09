@@ -918,7 +918,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
-                    final Stats stats = ItemsList.getItemsManager().getStats();
+                    final Stats stats = ItemsList.getStats();
                     while (pos < packet.length)
                     {
                         final int stat = packet[pos++]&0xFF;
