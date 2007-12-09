@@ -34,7 +34,7 @@ import java.awt.Font;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUILabelStats extends GUILabel
+public class GUILabelStats extends GUIOneLineLabel
 {
     /**
      * The stat to display.
