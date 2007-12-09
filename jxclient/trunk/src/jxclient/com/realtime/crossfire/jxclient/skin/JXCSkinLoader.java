@@ -1039,7 +1039,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("log"))
                         {
-                            if (args.length != 13)
+                            if (args.length != 12)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1055,10 +1055,26 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontFixedBold = fonts.lookup(args[9]);
                             final Font fontArcane = fonts.lookup(args[10]);
                             final Color defaultColor = parseColor(args[11]);
-                            final Color ignoreColor = parseColor(args[12]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor, ignoreColor);
+                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
                             elements.insert(name, element);
+                        }
+                        else if (gui != null && args[0].equals("log_color"))
+                        {
+                            if (args.length != 4)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int index = parseInt(args[2]);
+                            final Color color = parseColor(args[3]);
+                            final GUIElement element = elements.lookup(name);
+                            if (!(element instanceof GUILog))
+                            {
+                                    throw new IOException("element '"+name+"' is not of type 'log'");
+                            }
+                            ((GUILog)element).setColor(index, color);
                         }
                         else if (gui != null && args[0].equals("magicmap"))
                         {
