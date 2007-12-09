@@ -45,7 +45,7 @@ public class ItemsManager
      * Maps item tags to items. The map contains all items currently known to
      * the client.
      */
-    private final Map<Integer, CfItem> myitems  = new HashMap<Integer, CfItem>();
+    private final Map<Integer, CfItem> allItems  = new HashMap<Integer, CfItem>();
 
     /**
      * Maps floor index to list of {@link LocationListener}s to be notified
@@ -141,7 +141,7 @@ public class ItemsManager
      */
     public synchronized CfItem getItem(final int tag)
     {
-        return myitems.get(tag);
+        return allItems.get(tag);
     }
 
     /**
@@ -179,7 +179,7 @@ public class ItemsManager
      */
     public synchronized void removeItem(final int tag)
     {
-        final CfItem item = myitems.remove(tag);
+        final CfItem item = allItems.remove(tag);
         if (item == null)
         {
             System.err.println("removeItem: item "+tag+" does not exist");
@@ -202,7 +202,7 @@ public class ItemsManager
             setCurrentFloor(0);
         }
 
-        final CfItem deletedItem = myitems.remove(item.getTag());
+        final CfItem deletedItem = allItems.remove(item.getTag());
         if (deletedItem == null)
         {
             throw new AssertionError("cannot find item "+item.getTag());
@@ -222,14 +222,14 @@ public class ItemsManager
      */
     public synchronized void addItem(final CfItem item)
     {
-        final CfItem oldItem = myitems.get(item.getTag());
+        final CfItem oldItem = allItems.get(item.getTag());
         if (oldItem != null)
         {
             System.err.println("addItem: duplicate item "+item.getTag());
             removeItem(oldItem);
         }
 
-        if (myitems.put(item.getTag(), item) != null)
+        if (allItems.put(item.getTag(), item) != null)
         {
             throw new AssertionError("duplicate item "+item.getTag());
         }
