@@ -503,4 +503,14 @@ public class JXCWindowRenderer
         this.guiState = guiState;
         forcePaint = true;
     }
+
+    /**
+     * Return the current gui state.
+     *
+     * @return The gui state.
+     */
+    public GuiState getGuiState()
+    {
+        return guiState;
+    }
 }
