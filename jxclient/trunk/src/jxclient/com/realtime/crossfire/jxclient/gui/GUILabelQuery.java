@@ -30,7 +30,7 @@ import java.awt.Font;
  *
  * @author Andreas Kirschbaum
  */
-public class GUILabelQuery extends GUIHTMLLabel
+public class GUILabelQuery extends GUIMultiLineLabel
 {
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
@@ -65,7 +65,7 @@ public class GUILabelQuery extends GUIHTMLLabel
      */
     public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color)
     {
-        super(jxcWindow, name, x, y, w, h, null, font, color, "");
+        super(jxcWindow, name, x, y, w, h, null, font, color, Alignment.LEFT, "");
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
     }
 }

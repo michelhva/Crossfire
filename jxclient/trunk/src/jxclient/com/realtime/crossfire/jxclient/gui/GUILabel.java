@@ -28,7 +28,7 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
- * A {@link AbstractLabel} that renders the text as a plain string.
+ * Abstrct base class for labels that render text.
  *
  * @author Andreas Kirschbaum
  */
@@ -110,13 +110,17 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param y0 The y-ccordinate to draw to.
      *
+     * @param h0 The line height.
+     *
      * @param text The text to draw.
+     *
+     * @return The line height.
      */
-    protected void drawLine(final int y0, final String text)
+    protected int drawLine(final int y0, final int h0, final String text)
     {
         if (font == null)
         {
-            return;
+            return 0;
         }
 
         final Graphics2D g = mybuffer.createGraphics();
@@ -124,7 +128,7 @@ public abstract class GUILabel extends AbstractLabel
         g.setFont(font);
         g.setColor(color);
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
-        final int y = y0+(int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+        final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
         switch (alignment)
         {
         case LEFT:
@@ -140,6 +144,17 @@ public abstract class GUILabel extends AbstractLabel
             break;
         }
         g.dispose();
-        setChanged();
+
+        return (int)(rect.getHeight()+0.5);
+    }
+
+    /**
+     * Return the font.
+     *
+     * @return The font.
+     */
+    protected Font getFont()
+    {
+        return font;
     }
 }

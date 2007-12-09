@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.gui.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
+import com.realtime.crossfire.jxclient.gui.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
@@ -948,6 +949,23 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
                             elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, text));
+                        }
+                        else if (gui != null && args[0].equals("label_multi"))
+                        {
+                            if (args.length < 8)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final Font font = fonts.lookup(args[6]);
+                            final Color color = parseColor(args[7]);
+                            final String text = parseText(args, 8, lnr);
+                            elements.insert(name, new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_query"))
                         {
