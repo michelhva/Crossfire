@@ -608,7 +608,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else if (args[1].equals("dialog"))
                             {
-                                if (args.length != 6)
+                                if (args.length != 7)
                                 {
                                     throw new IOException("syntax error");
                                 }
@@ -624,9 +624,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage frameS = getPicture(frame+"_s");
                                 final BufferedImage frameSE = getPicture(frame+"_se");
                                 final Font titleFont = fonts.lookup(args[3]);
-                                final Color backgroundColor = parseColor(args[4]);
-                                final float alpha = parseFloat(args[5]);
-                                dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, backgroundColor, alpha);
+                                final Color titleColor = parseColor(args[4]);
+                                final Color backgroundColor = parseColor(args[5]);
+                                final float alpha = parseFloat(args[6]);
+                                dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, backgroundColor, alpha);
                             }
                             else if (args[1].equals("textbutton"))
                             {
