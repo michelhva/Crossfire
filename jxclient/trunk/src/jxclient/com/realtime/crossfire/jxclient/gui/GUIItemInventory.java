@@ -180,12 +180,12 @@ public class GUIItemInventory extends GUIItemItem
 
         if (myindex >= 0)
         {
-            ItemsList.getItemsManager().removeInventoryLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().getInventoryManager().removeLocationListener(myindex, inventoryLocationListener);
         }
         myindex = index;
         if (myindex >= 0)
         {
-            ItemsList.getItemsManager().addInventoryLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().getInventoryManager().addLocationListener(myindex, inventoryLocationListener);
         }
 
         final CfPlayer player = ItemsList.getItemsManager().getPlayer();

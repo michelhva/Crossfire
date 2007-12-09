@@ -55,10 +55,9 @@ public class ItemsManager
     private final FloorManager floorManager = new FloorManager();
 
     /**
-     * Maps floor index to list of {@link LocationListener}s to be notified
-     * about added or removed items in an inventory slot.
+     * The inventory manager used to maintain player inventory state.
      */
-    private final Map<Integer, EventListenerList> inventoryListeners = new HashMap<Integer, EventListenerList>();
+    private final InventoryManager inventoryManager = new InventoryManager();
 
     /**
      * The list of {@link CurrentFloorListener}s to be notified about changes
@@ -71,11 +70,6 @@ public class ItemsManager
      * changes of the current player.
      */
     private final EventListenerList playerListeners = new EventListenerList();
-
-    /**
-     * Modified inventory tiles for which no events have been delivered.
-     */
-    private final Set<Integer> modifiedInventories = new HashSet<Integer>();
 
     /**
      * The current player object this client controls.
@@ -263,7 +257,7 @@ public class ItemsManager
         }
         else if (player != null && where == player.getTag())
         {
-            addModified(modifiedInventories, index, list.size()+1);
+	    inventoryManager.addModified(index, list.size()+1);
         }
     }
 
@@ -293,14 +287,11 @@ public class ItemsManager
         }
         else if (player != null && where == player.getTag())
         {
-            // inventory order differs from server order, so insert at correct
+	    // inventory order differs from server order, so insert at correct
             // position
-            final int index = getInsertionIndex(list, item);
+	    final int index = inventoryManager.getInsertionIndex(list, item);
             list.add(index, item);
-            for (int i = index; i < list.size(); i++)
-            {
-                modifiedInventories.add(i);
-            }
+	    inventoryManager.addModified(index, list.size());
         }
         else
         {
@@ -316,7 +307,7 @@ public class ItemsManager
         floorManager.fireEvents(getItems(currentFloor));
         if (player != null)
         {
-            fireEvents(modifiedInventories, inventoryListeners, player.getTag());
+	    inventoryManager.fireEvents(getItems(player.getTag()));
         }
     }
 
@@ -334,7 +325,7 @@ public class ItemsManager
 
         if (this.player != null)
         {
-            addModified(modifiedInventories, items.get(this.player.getTag()));
+            inventoryManager.addModified(items.get(this.player.getTag()));
             for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
             {
                 listener.playerRemoved(this.player);
@@ -343,7 +334,7 @@ public class ItemsManager
         this.player = player;
         if (this.player != null)
         {
-            addModified(modifiedInventories, items.get(this.player.getTag()));
+            inventoryManager.addModified(items.get(this.player.getTag()));
             for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
             {
                 listener.playerAdded(this.player);
@@ -453,45 +444,6 @@ public class ItemsManager
     }
 
     /**
-     * Add a {@link LocationListener}s to be notified about changes in an
-     * inventory slot.
-     *
-     * @param index the inventory slot
-     *
-     * @param listener the listener
-     */
-    public void addInventoryLocationListener(final int index, final LocationListener listener)
-    {
-        EventListenerList listeners = inventoryListeners.get(index);
-        if (listeners == null)
-        {
-            listeners = new EventListenerList();
-            inventoryListeners.put(index, listeners);
-        }
-
-        listeners.add(LocationListener.class, listener);
-    }
-
-    /**
-     * Remove a {@link LocationListener}s to be notified about changes in an
-     * inventory slot.
-     *
-     * @param index the inventory slot
-     *
-     * @param listener the listener
-     */
-    public void removeInventoryLocationListener(final int index, final LocationListener listener)
-    {
-        EventListenerList listeners = inventoryListeners.get(index);
-        assert listeners != null;
-        listeners.remove(LocationListener.class, listener);
-        if (listeners.getListenerCount() <= 0)
-        {
-            inventoryListeners.remove(index);
-        }
-    }
-
-    /**
      * Add a {@link CurrentFloorListener} to be notified about current floor
      * changes.
      *
@@ -536,49 +488,6 @@ public class ItemsManager
     }
 
     /**
-     * Find the correct insertion position for an inventory object.
-     *
-     * @param list The inventory objects.
-     *
-     * @param item The item to add.
-     *
-     * @return The insertion index.
-     */
-    private int getInsertionIndex(final List<CfItem> list, final CfItem item)
-    {
-        for (int i = 0; i < list.size(); i++)
-        {
-            if (compareItem(list.get(i), item) >= 0)
-            {
-                return i;
-            }
-        }
-        return list.size();
-    }
-
-    /**
-     * Compare two items by inventory order.
-     *
-     * @param item1 The first item to compare.
-     *
-     * @param item2 The second item to compare.
-     *
-     * @return The comparision result: -1=<code>item1</code> before
-     * </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
-     * +1=<code>item1</code> after </code>item2</code>.
-     */
-    private int compareItem(final CfItem item1, final CfItem item2)
-    {
-        if (item1.getType() < item2.getType()) return -1;
-        if (item1.getType() > item2.getType()) return +1;
-        final int cmp1 = item1.getName().compareTo(item2.getName());
-        if (cmp1 != 0) return cmp1;
-        if (item1.getTag() < item2.getTag()) return -1;
-        if (item1.getTag() > item2.getTag()) return +1;
-        return 0;
-    }
-
-    /**
      * Return the floor manager.
      *
      * @return The floor manager.
@@ -586,5 +495,15 @@ public class ItemsManager
     public FloorManager getFloorManager()
     {
         return floorManager;
+    }
+
+    /**
+     * Return the inventory manager.
+     *
+     * @return The inventory manager.
+     */
+    public InventoryManager getInventoryManager()
+    {
+        return inventoryManager;
     }
 }
