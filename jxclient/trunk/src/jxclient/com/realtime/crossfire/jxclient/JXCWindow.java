@@ -1629,22 +1629,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             runScript(command.substring(7));
         }
-        else if (command.equals("test"))
-        {
-	    myserver.drawInfo("0 Color BLACK", 0);
-	    myserver.drawInfo("1 Color WHITE", 1);
-	    myserver.drawInfo("2 Color NAVY_BLUE", 2);
-	    myserver.drawInfo("3 Color RED", 3);
-	    myserver.drawInfo("4 Color ORANGE", 4);
-	    myserver.drawInfo("5 Color DODGER_BLUE", 5);
-	    myserver.drawInfo("6 Color DARK_ORANGE", 6);
-	    myserver.drawInfo("7 Color SEA_GREEN", 7);
-	    myserver.drawInfo("8 Color DARK_SEA_GREEN", 8);
-	    myserver.drawInfo("9 Color GREY", 9);
-	    myserver.drawInfo("10 Color BROWN_SIENNA", 10);
-	    myserver.drawInfo("11 Color GOLD", 11);
-	    myserver.drawInfo("12 Color KHAKI", 12);
-	}
         else if (command.startsWith("exec "))
         {
             try
