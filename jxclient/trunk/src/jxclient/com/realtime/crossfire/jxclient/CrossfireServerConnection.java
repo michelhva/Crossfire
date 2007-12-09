@@ -1498,19 +1498,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         // XXX: "MapExtended" command not yet implemented
     }
 
-    /**
-     * Returns the list of all items at the given location.
-     * Usually, this is either an inventory content, or the list of objects on
-     * the floor.
-     * @param location The object tag identifier of the location to get items from.
-     * @return Known items, as a List object.
-     * @since 1.0
-     */
-    public List<CfItem> getItems(int location)
-    {
-        return ItemsList.getItemsManager().getItems(location);
-    }
-
     public void drawInfo(String msg, int col)
     {
         CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, msg, col);
