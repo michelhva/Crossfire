@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -34,7 +35,31 @@ import java.awt.image.BufferedImage;
  */
 public class GUIPicture extends GUIElement
 {
-    public GUIPicture(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture)
+    /**
+     * Create a new instance.
+     *
+     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     *
+     * @param name The name of this element.
+     *
+     * @param x The x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>.
+     *
+     * @param y The y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>.
+     *
+     * @param w The width for drawing this element to screen.
+     *
+     * @param h The height for drawing this element to screen.
+     *
+     * @param picture The picture to paint.
+     */
+    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture)
+    {
+        this(jxcWindow, name, x, y, w, h, picture, 1F);
+    }
+
+    public GUIPicture(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, float alpha)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -42,6 +67,7 @@ public class GUIPicture extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(nw, nh, picture.getTransparency());
         final Graphics2D g = mybuffer.createGraphics();
+        g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
         g.drawImage(picture, 0, 0, picture.getWidth(), picture.getHeight(), null);
         g.dispose();
         setChanged();
