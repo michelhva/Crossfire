@@ -933,9 +933,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             {
                 for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
                 {
-                    if (dialog.handleKeyPress(e))
+                    if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
                     {
-                        return;
+                        if (dialog.handleKeyPress(e))
+                        {
+                            return;
+                        }
                     }
                 }
                 if (jxcWindowRenderer.getCurrentGui().handleKeyPress(e))
@@ -992,9 +995,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         {
             for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
             {
-                if (dialog.handleKeyTyped(e))
+                if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
                 {
-                    return;
+                    if (dialog.handleKeyTyped(e))
+                    {
+                        return;
+                    }
                 }
             }
             if (jxcWindowRenderer.getCurrentGui().handleKeyTyped(e))
@@ -1113,10 +1119,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
 
         for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
         {
-            elected = manageMouseEvents(dialog, e, ignoreButtons);
-            if (elected != null)
+            if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
             {
-                break;
+                elected = manageMouseEvents(dialog, e, ignoreButtons);
+                if (elected != null)
+                {
+                    break;
+                }
             }
         }
 
@@ -1500,11 +1509,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         // check visible dialogs
         for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
         {
-            final GUIText textArea2 = dialog.activateCommandInput();
-            if (textArea2 != null)
+            if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
             {
-                openDialog(dialog); // raise dialog
-                return textArea2;
+                final GUIText textArea2 = dialog.activateCommandInput();
+                if (textArea2 != null)
+                {
+                    openDialog(dialog); // raise dialog
+                    return textArea2;
+                }
             }
         }
 
