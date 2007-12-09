@@ -4,11 +4,17 @@ race angel
 name angel
 face angel.111
 anim
+facings 4
 angel.111
-angel.113
 angel.112
-angel.113
+angel.131
+angel.132
+angel.151
+angel.152
+angel.171
+angel.172
 mina
+is_animated 1
 monster 1
 move_type walk fly_low
 sleep 1
@@ -57,4 +63,25 @@ body_waist 1
 body_finger 2
 body_arm 2
 body_range 1
+end
+Object angel_sword
+anim
+facings 4
+angel.111
+angel_sword.111
+angel_sword.112
+angel_sword.111
+angel.131
+angel_sword.131
+angel_sword.132
+angel_sword.131
+angel.151
+angel_sword.151
+angel_sword.152
+angel_sword.151
+angel.171
+angel_sword.171
+angel_sword.172
+angel_sword.171
+mina
 end
