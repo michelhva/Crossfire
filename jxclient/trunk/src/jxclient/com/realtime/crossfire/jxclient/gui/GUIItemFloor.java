@@ -65,7 +65,7 @@ public class GUIItemFloor extends GUIItemItem
     public GUIItemFloor(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final int index, final CrossfireServerConnection msc, final Font mft, final Color nrofColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft, nrofColor);
-        ItemsList.getItemsManager().addCurrentFloorListener(currentFloorListener);
+        ItemsList.getItemsManager().getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
         setIndex(index, false);
         render();
     }
@@ -89,7 +89,7 @@ public class GUIItemFloor extends GUIItemItem
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        return myindex+1 < ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloor()).size();
+        return myindex+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
     }
 
     public void scrollDown()
@@ -161,7 +161,7 @@ public class GUIItemFloor extends GUIItemItem
             ItemsList.getItemsManager().getFloorManager().addLocationListener(myindex, floorLocationListener);
         }
 
-        final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloor());
+        final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
         setItem(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
     }
 }
