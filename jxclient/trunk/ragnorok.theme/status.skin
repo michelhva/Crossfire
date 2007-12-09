@@ -1,0 +1,54 @@
+
+dialog border 262 164 408 280
+dialog_state plain_dialog_status false Whether the status dialog is open.
+dialog_hide START META LOGIN
+label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
+button button_close    388   4  16  16 close_up close_down command_status
+
+label_text label_lvl    10  40 100  16 font_label BLACK Level:
+label_text label_xp     10  60 100  16 font_label BLACK Experience:
+label_text label_xp2    10  80 100  16 font_label BLACK Exp. next level:
+label_text label_range  10 100  55  16 font_label BLACK Range:
+label_stat stat_lvl    110  40  40  16 font_label BLACK LEVEL RIGHT
+label_stat stat_xp     110  60 110  16 font_label BLACK EXP RIGHT
+label_stat stat_xp2    110  80 110  16 font_label BLACK EXP_NEXT_LEVEL RIGHT
+label_stat stat_range   65 100 335  16 font_label BLACK RANGE LEFT
+
+label_text label_str    10 130  90  16 font_label BLACK Strength:
+label_text label_dex    10 150  90  16 font_label BLACK Dexterity:
+label_text label_con    10 170  90  16 font_label BLACK Constitution:
+label_text label_int    10 190  90  16 font_label BLACK Intelligence:
+label_text label_wis    10 210  90  16 font_label BLACK Wisdom:
+label_text label_pow    10 230  90  16 font_label BLACK Power:
+label_text label_cha    10 250  90  16 font_label BLACK Charisma:
+label_stat stat_str    100 130  40  16 font_label BLACK STR RIGHT
+label_stat stat_dex    100 150  40  16 font_label BLACK DEX RIGHT
+label_stat stat_con    100 170  40  16 font_label BLACK CON RIGHT
+label_stat stat_int    100 190  40  16 font_label BLACK INT RIGHT
+label_stat stat_wis    100 210  40  16 font_label BLACK WIS RIGHT
+label_stat stat_pow    100 230  40  16 font_label BLACK POW RIGHT
+label_stat stat_cha    100 250  40  16 font_label BLACK CHA RIGHT
+
+label_text label_hp    230  60  50  16 font_label BLACK HP:
+label_text label_sp    230  80  50  16 font_label BLACK Mana:
+label_stat stat_hp     280  60  30  16 font_label BLACK HP RIGHT
+label_stat stat_sp     280  80  30  16 font_label BLACK SP RIGHT
+
+label_text label_gp    315  60  50  16 font_label BLACK Grace:
+label_text label_fp    315  80  50  16 font_label BLACK Food:
+label_stat stat_gp     370  60  30  16 font_label BLACK GRACE RIGHT
+label_stat stat_fp     370  80  30  16 font_label BLACK FOOD RIGHT
+
+label_text label_spd   170 130  70  16 font_label BLACK Speed:
+label_text label_wspd  170 150  70  16 font_label BLACK Weapon:
+label_stat stat_spd    240 130  40  16 font_label BLACK SPEED RIGHT
+label_stat stat_wspd   240 150  40  16 font_label BLACK WSPEED RIGHT
+
+label_text label_dam   170 190  70  16 font_label BLACK Dam:
+label_text label_wc    170 210  70  16 font_label BLACK WC:
+label_text label_arm   170 230  70  16 font_label BLACK Arm:
+label_text label_ac    170 250  70  16 font_label BLACK AC:
+label_stat stat_dam    240 190  40  16 font_label BLACK DAM RIGHT
+label_stat stat_wc     240 210  40  16 font_label BLACK WC RIGHT
+label_stat stat_arm    240 230  40  16 font_label BLACK ARM RIGHT
+label_stat stat_ac     240 250  40  16 font_label BLACK AC RIGHT

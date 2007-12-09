@@ -1,0 +1,64 @@
+
+picture background 0 0 1024 768 background_metaserver
+text metaurl 530 620 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE command_metaconnect
+label_html metacomment 200 650 500 118 font_label WHITE
+meta_element metaselect1 300 235 440 20 null null font_metaurl metaurl metacomment 0 (%P) %H - %C
+meta_element metaselect2 300 265 440 20 null null font_metaurl metaurl metacomment 1 (%P) %H - %C
+meta_element metaselect3 300 295 440 20 null null font_metaurl metaurl metacomment 2 (%P) %H - %C
+meta_element metaselect4 300 325 440 20 null null font_metaurl metaurl metacomment 3 (%P) %H - %C
+meta_element metaselect5 300 355 440 20 null null font_metaurl metaurl metacomment 4 (%P) %H - %C
+meta_element metaselect6 300 385 440 20 null null font_metaurl metaurl metacomment 5 (%P) %H - %C
+meta_element metaselect7 300 415 440 20 null null font_metaurl metaurl metacomment 6 (%P) %H - %C
+meta_element metaselect8 300 445 440 20 null null font_metaurl metaurl metacomment 7 (%P) %H - %C
+meta_element metaselect9 300 475 440 20 null null font_metaurl metaurl metacomment 8 (%P) %H - %C
+
+commandlist_add command_metaconnect metaurl CONNECT
+
+commandlist_add command_metaup metaselect1 SCROLLUP
+commandlist_add command_metaup metaselect2 SCROLLUP
+commandlist_add command_metaup metaselect3 SCROLLUP
+commandlist_add command_metaup metaselect4 SCROLLUP
+commandlist_add command_metaup metaselect5 SCROLLUP
+commandlist_add command_metaup metaselect6 SCROLLUP
+commandlist_add command_metaup metaselect7 SCROLLUP
+commandlist_add command_metaup metaselect8 SCROLLUP
+
+commandlist_add command_metadown metaselect1 SCROLLDOWN
+commandlist_add command_metadown metaselect2 SCROLLDOWN
+commandlist_add command_metadown metaselect3 SCROLLDOWN
+commandlist_add command_metadown metaselect4 SCROLLDOWN
+commandlist_add command_metadown metaselect5 SCROLLDOWN
+commandlist_add command_metadown metaselect6 SCROLLDOWN
+commandlist_add command_metadown metaselect7 SCROLLDOWN
+commandlist_add command_metadown metaselect8 SCROLLDOWN
+
+commandlist command_metaprev
+commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
+commandlist_add command_metaprev metaselect3 SCROLLNEXT metaselect2
+commandlist_add command_metaprev metaselect4 SCROLLNEXT metaselect3
+commandlist_add command_metaprev metaselect5 SCROLLNEXT metaselect4
+commandlist_add command_metaprev metaselect6 SCROLLNEXT metaselect5
+commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
+commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
+
+commandlist command_metanext
+commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
+commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7
+commandlist_add command_metanext metaselect5 SCROLLNEXT metaselect6
+commandlist_add command_metanext metaselect4 SCROLLNEXT metaselect5
+commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
+commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
+commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
+
+textbutton metaconnect 720 650 70 18 command_metaconnect Connect
+textbutton metacancel  720 680 70 18 command_metacancel  Cancel
+button metaup      270 235  20 25 metaup              metaup              command_metaup
+button metadown    270 470  20 25 metadown            metadown            command_metadown
+
+set_default metaurl
+
+key code UP        0 exec command_metaprev
+key code DOWN      0 exec command_metanext
+key code PAGE_UP   0 exec command_metaup
+key code PAGE_DOWN 0 exec command_metadown
+key code ENTER     0 exec command_metaconnect
