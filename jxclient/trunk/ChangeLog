@@ -1,5 +1,8 @@
 2007-12-09  Andreas Kirschbaum
 
+	* Implement 'log_color' skin command to override default color
+	mapping in 'log' elements. Fix default color mapping.
+
 	* Add "container close" button when a container is open.
 
 	* Implement 'label_multi' skin command that display a multi-line

@@ -39,7 +39,9 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.util.HashMap;
 import java.util.ListIterator;
+import java.util.Map;
 
 /**
  *
@@ -53,6 +55,26 @@ public class GUILog extends GUIElement implements GUIScrollable
      * The number of pixels to scroll.
      */
     public static final int SCROLL_PIXEL = 12;
+
+    /**
+     * Maps color index to color.
+     */
+    private final Map<Integer, Color> colors = new HashMap<Integer, Color>();
+    {
+        colors.put(0, Color.BLACK); //black
+        colors.put(1, Color.WHITE); //white
+        colors.put(2, Color.BLUE); //navy blue
+        colors.put(3, Color.RED); //red
+        colors.put(4, Color.ORANGE); //orange
+        colors.put(5, Color.CYAN); //dodger blue
+        colors.put(6, new Color(0xFFC000)); //dark orange
+        colors.put(7, Color.GREEN); //sea green
+        colors.put(8, new Color(0x008000)); //dark sea green
+        colors.put(9, Color.GRAY); //grey
+        colors.put(10, new Color(0x806000)); //brown sienna
+        colors.put(11, Color.YELLOW); //gold
+        colors.put(12, new Color(0xBDB76B)); //khaki
+    }
 
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
@@ -75,12 +97,6 @@ public class GUILog extends GUIElement implements GUIScrollable
      * The default color to use for text message not specifying a color.
      */
     private final Color defaultColor;
-
-    /**
-     * The color to replace with {@link #defaultColor}. It should be set to the
-     * background color of the text field.
-     */
-    private final Color ignoreColor;
 
     /**
      * The {@link FontRenderContext} associated to {@link #buffer}.
@@ -182,13 +198,12 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param The color to replace with <code>defaultColor</code>.
      */
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts, final Color defaultColor, final Color ignoreColor)
+    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts, final Color defaultColor)
     {
         super(jxcWindow, nn, nx, ny, nw, nh);
         mybackground = picture;
         this.fonts = fonts;
         this.defaultColor = defaultColor;
-        this.ignoreColor = ignoreColor;
         createBuffer();
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
@@ -342,10 +357,8 @@ public class GUILog extends GUIElement implements GUIScrollable
     {
         for (final Segment segment : line)
         {
-            final Color color = segment.getColor();
-            g.setColor(color == ignoreColor ? defaultColor : color);
-            final Font font = segment.getFont(fonts);
-            g.setFont(font);
+            g.setColor(segment.getColor());
+            g.setFont(segment.getFont(fonts));
             g.drawString(segment.getText(), segment.getX(), y+segment.getY());
             if (segment.isUnderline())
             {
@@ -357,43 +370,26 @@ public class GUILog extends GUIElement implements GUIScrollable
     /**
      * Convert a Crossfire color index to a {@link Color} instance.
      *
-     * @param color The color index to look up.
+     * @param index The color index to look up.
      *
      * @return The color.
      */
-    private Color findColor(final int color)
+    private Color findColor(final int index)
     {
-        switch (color)
-        {
-        case 0: //black
-            return Color.BLACK;
-        case 1: //white
-            return Color.WHITE;
-        case 2: //navy blue
-            return Color.BLUE;
-        case 3: //red
-            return Color.RED;
-        case 4: //orange
-            return Color.ORANGE;
-        case 5: //dodger blue
-            return Color.CYAN;
-        case 6: //dark orange
-            return Color.MAGENTA;
-        case 7: //sea green
-            return Color.GREEN;
-        case 8: //dark sea green
-            return Color.GREEN;
-        case 9: //grey
-            return Color.GRAY;
-        case 10: //brown sienna
-            return Color.PINK;
-        case 11: //gold
-            return Color.YELLOW;
-        case 12: //khaki
-            return Color.WHITE;
-        default:
-            return defaultColor;
-        }
+        final Color color = colors.get(index);
+        return color == null ? defaultColor : color;
+    }
+
+    /**
+     * Set a color mapping.
+     *
+     * @param index The color index to change.
+     *
+     * @param color The color to map to.
+     */
+    public void setColor(final int index, final Color color)
+    {
+        colors.put(index, color);
     }
 
     /** {@inheritDoc} */
