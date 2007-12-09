@@ -22,11 +22,13 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
 
 /**
@@ -45,6 +47,11 @@ public class Gui
      * The key bindings for this gui.
      */
     private final KeyBindings keyBindings = new KeyBindings();
+
+    /**
+     * The gui states that do not show this dialog.
+     */
+    private final EnumSet<JXCWindowRenderer.GuiState> hideInStates = EnumSet.noneOf(JXCWindowRenderer.GuiState.class);
 
     /**
      * The gui element which has the focus. Set to <code>null</code> if no such
@@ -420,5 +427,27 @@ public class Gui
     public KeyBindings getKeyBindings()
     {
         return keyBindings;
+    }
+
+    /**
+     * Hide the dialog in a state.
+     *
+     * @param state The state.
+     */
+    public void hideInState(final JXCWindowRenderer.GuiState state)
+    {
+        hideInStates.add(state);
+    }
+
+    /**
+     * Return whether this gui is visible in a state.
+     *
+     * @param state The state.
+     *
+     * @return Whether this gui is hidden.
+     */
+    public boolean isHidden(final JXCWindowRenderer.GuiState state)
+    {
+        return hideInStates.contains(state);
     }
 }

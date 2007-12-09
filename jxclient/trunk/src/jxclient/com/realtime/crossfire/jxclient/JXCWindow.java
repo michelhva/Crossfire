@@ -194,6 +194,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
     {
         /** {@inheritDoc} */
+        public void playerReceived(final CfPlayer player)
+        {
+            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
+        }
+
+        /** {@inheritDoc} */
         public void playerAdded(final CfPlayer player)
         {
             setTitle(TITLE_PREFIX+" - "+hostname+" - "+player.getName());
@@ -448,6 +454,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         switch (id)
         {
         case GUI_START:
+            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
             if (DISABLE_START_GUI)
             {
                 endRendering();
@@ -459,10 +466,12 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             break;
 
         case GUI_METASERVER:
+            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
             showGUIMeta();
             break;
 
         case GUI_MAIN:
+            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
             showGUIMain();
             break;
         }
