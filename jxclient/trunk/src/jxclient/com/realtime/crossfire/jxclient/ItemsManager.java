@@ -87,11 +87,6 @@ public class ItemsManager
     private CfPlayer player = null;
 
     /**
-     * The stats information.
-     */
-    private final Stats stats = new Stats();
-
-    /**
      * The location to show in the floor view.
      */
     private int currentFloor = 0;
@@ -368,16 +363,6 @@ public class ItemsManager
     public synchronized CfPlayer getPlayer()
     {
         return player;
-    }
-
-    /**
-     * Return the stats object for this client.
-     *
-     * @return The stats object.
-     */
-    public Stats getStats()
-    {
-        return stats;
     }
 
     /**

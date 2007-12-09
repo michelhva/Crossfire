@@ -33,6 +33,11 @@ public class ItemsList
 
     private static final SpellsManager spellsManager = new SpellsManager();
 
+    /**
+     * The stats information.
+     */
+    private static final Stats stats = new Stats();
+
     public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = itemsManager.getItemOrPlayer(tag);
@@ -65,5 +70,15 @@ public class ItemsList
     public static SpellsManager getSpellsManager()
     {
         return spellsManager;
+    }
+
+    /**
+     * Return the stats object for this client.
+     *
+     * @return The stats object.
+     */
+    public static Stats getStats()
+    {
+        return stats;
     }
 }
