@@ -1,0 +1,41 @@
+
+dialog border 64 64 896+8 640+8 Help
+button button_close 4+896-16 4 16 16 close_up close_down command_help_close
+
+label_multi help_text 4 40 896 604 font_label DARK_GRAY <<EOF
+Key bindings
+==========
+Use direction keys to walk around. Use ctrl + direction to run.
+Hint: running is generally preferrable when moving for more than a single step or to attack monsters.
+Bumping into a monster attacks it. Bumping into other players pushes them away.
+
+To fire a readied skill or spell, press shift + direction key.
+
+To define new key binding, type
+    /bind command to bind
+To undefine a key binding, type
+    /unbind
+
+Mouse bindings
+=============
+map window
+----------------
+left button: examine spot; it briefly displays the objects in the clicked spot
+
+ground and inventory view
+----------------------------------
+left button: examine item; it displays a details object description
+middle button: apply item; this eats/drinks/wears/wields/etc. the item
+right button: drop item; the item is dropped to the ground or picked up from the ground
+
+More information
+=============
+http://crossfire.real-time.com/           Crossfire - The Multiplayer Adventure Game
+
+http://crossfire.real-time.com/bugs   Report Bugs or suggest features about Crossfire
+
+Authors
+======
+Yann Chachkoff (Lauwenmark)
+Andreas Kirschbaum
+EOF

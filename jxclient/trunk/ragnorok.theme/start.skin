@@ -1,0 +1,10 @@
+
+picture background   0 0 1024 768 background_start
+
+textbutton meta    210 200 600 18 command_meta Connect to a game server
+textbutton new     210 300 600 18 command_meta Create a new character (not implemented)
+textbutton load    210 400 600 18 command_meta Load a saved character (not implemented)
+textbutton options 210 500 600 18 command_meta Options (not implemented)
+textbutton quit    210 600 600 18 command_quit Leave Crossfire
+
+set_default meta

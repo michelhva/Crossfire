@@ -1,0 +1,6 @@
+
+dialog border 422 250 180 81 (Un)bind a key
+label_multi message 10 40 170 32 font_label BLACK <<EOF
+Type the key to (un)bind.
+(ESC to abort)
+EOF

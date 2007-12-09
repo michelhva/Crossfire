@@ -1,0 +1,11 @@
+
+dialog dialog         398 260 4+220+4 4+120+4 Disconnect from server?
+
+label_multi message    10  40  208 40 font_label BLACK <<EOF
+Do you really want to disconnect
+from the server?
+EOF
+textbutton disconnect 20  100    86 18 command_disconnect Disconnect
+textbutton resume     140 100    66 18 command_resume     Resume
+
+set_default disconnect

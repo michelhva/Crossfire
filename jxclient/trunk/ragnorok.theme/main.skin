@@ -1,0 +1,46 @@
+
+tooltip font_tooltip
+
+# Map Group
+map playfield 64 -32 -32 1088 832
+
+# Stat Group
+picture gauge_hp_back          10 10 80 20 gauge_frame
+textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE WHITE font_label Hitpoints:
+
+picture gauge_sp_back         100 10 80 20 gauge_frame
+textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE WHITE font_label Mana:
+
+picture gauge_gp_back         190 10 80 20 gauge_frame
+textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE WHITE font_label Grace:
+
+picture gauge_fp_back         280 10 80 20 gauge_frame
+textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE WHITE font_label Food:
+
+picture gauge_xp_back         370 10 80 20 gauge_xp_frame
+gauge gauge_xp1               373 13 74  7 gauge_xp1 null gauge_xp1_empty EXP_NEXT_LEVEL_0X WE
+gauge gauge_xp2               373 20 74  7 gauge_xp2 null gauge_xp2_empty EXP_NEXT_LEVEL_X0 WE
+
+# Hpbar in map view
+picture hpbar_back            478 340 68  7 hpbar_frame
+gauge hpbar                   479 341 66  5 hpbar_full null hpbar_empty HP WE
+commandlist_add command_hitpoints_on hpbar_back SHOW
+commandlist_add command_hitpoints_on hpbar SHOW
+commandlist_add command_hitpoints_off hpbar_back HIDE
+commandlist_add command_hitpoints_off hpbar HIDE
+gauge lowfood                 499 285 25 45 lowfood null null LOWFOOD WE
+commandlist_add command_lowfood_on lowfood SHOW
+commandlist_add command_lowfood_off lowfood HIDE
+
+# Button Group
+textbutton button_status      561 11 48 18 command_status Status
+textbutton button_inventory   619 11 67 18 command_inventory Inventory
+textbutton button_messages    696 11 74 18 command_messages Messages
+textbutton button_protections 780 11 82 18 command_protections Protections
+textbutton button_skills      872 11 40 18 command_skills Skills
+textbutton button_map         922 11 35 18 command_map Map
+textbutton button_setup       967 11 46 18 command_setup Setup
+
+ignore hpbar_back
+ignore hpbar
+ignore lowfood

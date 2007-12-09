@@ -13,12 +13,13 @@
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
-    <target name="jar" depends="compile,skin.prelude">
+    <target name="jar" depends="compile,skin.prelude,skin.ragnorok">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
             <fileset dir="." includes="resource/spells/*.png"/>
             <fileset dir="." includes="resource/unknown.png"/>
             <zipfileset src="jxcskin_prelude.jar"/>
+            <zipfileset src="jxcskin_ragnorok.jar"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
             </manifest>
@@ -34,6 +35,17 @@
             </fileset>
         </copy>
         <jar destfile="jxcskin_prelude.jar" basedir="${build}/skin.prelude"/>
+    </target>
+    <target name="skin.ragnorok">
+        <delete dir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok"/>
+        <copy todir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok">
+            <fileset dir="ragnorok.theme">
+                <include name="*.skin"/>
+                <include name="fonts/**"/>
+                <include name="pictures/**"/>
+            </fileset>
+        </copy>
+        <jar destfile="jxcskin_ragnorok.jar" basedir="${build}/skin.ragnorok"/>
     </target>
     <target name="clean">
         <delete dir="${build}" failonerror="false"/>

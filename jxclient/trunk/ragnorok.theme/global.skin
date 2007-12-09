@@ -1,0 +1,93 @@
+font font_button         regular  14
+font font_label          regular  14
+font font_title          regular  16
+font font_tooltip        regular  16
+font font_log_arcane     squealer 12
+font font_log_fixed      cour     11
+font font_log_fixed_bold courbd   11
+font font_log_print      regular  12
+font font_item           regular   8
+font font_metaurl        regular  16
+
+def checkbox checked unchecked font_button BLACK
+def dialog dialog font_title #801010 #e0e0e0 1
+def textbutton button_up button_down font_button BLACK
+
+commandlist command_resume
+commandlist_add command_resume null DIALOG_CLOSE quit
+commandlist command_disconnect
+commandlist_add command_disconnect null GUI_START
+
+commandlist command_meta
+commandlist_add command_meta null GUI_META
+commandlist command_quit
+commandlist_add command_quit null QUIT
+
+commandlist command_metaconnect
+commandlist command_metacancel
+commandlist_add command_metacancel null GUI_START
+commandlist command_metaup
+commandlist command_metadown
+
+commandlist command_status
+commandlist_add command_status null DIALOG_TOGGLE status
+commandlist command_status_open
+commandlist_add command_status_open null DIALOG_OPEN status
+commandlist command_status_close
+commandlist_add command_status_close null DIALOG_CLOSE status
+commandlist command_ground
+commandlist_add command_ground null DIALOG_TOGGLE ground
+commandlist command_inventory
+commandlist_add command_inventory null DIALOG_TOGGLE inventory
+commandlist command_messages
+commandlist_add command_messages null DIALOG_TOGGLE messages
+commandlist command_protections
+commandlist_add command_protections null DIALOG_TOGGLE protections
+commandlist command_skills
+commandlist_add command_skills null DIALOG_TOGGLE skills
+commandlist command_map
+commandlist_add command_map null DIALOG_TOGGLE map
+commandlist command_map_open
+commandlist_add command_map_open null DIALOG_OPEN map
+commandlist command_setup
+commandlist_add command_setup null DIALOG_TOGGLE setup
+commandlist command_help
+commandlist_add command_help null DIALOG_TOGGLE help
+
+commandlist command_help_close
+commandlist_add command_help_close null DIALOG_CLOSE help
+
+commandlist command_book_close
+commandlist_add command_book_close null DIALOG_CLOSE book
+
+commandlist command_ground_left
+commandlist command_ground_right
+
+commandlist command_inventory_left
+commandlist command_inventory_right
+
+commandlist command_messages_up
+commandlist command_messages_down
+
+event magicmap command_map_open
+
+key code F1 0 exec command_help
+key code F2 0 exec command_status
+key code F3 0 exec command_ground
+key code F4 0 exec command_inventory
+key code F5 0 exec command_messages
+key code F6 0 exec command_protections
+key code F7 0 exec command_skills
+#key code F8 0 exec command_spells
+key code F9 0 exec command_map
+key code F10 0 exec command_setup
+
+# checkbox option "lowfood"
+commandlist command_lowfood_on
+commandlist command_lowfood_off
+def checkbox_option lowfood command_lowfood_on command_lowfood_off Whether the low food indicator is visible.
+
+# checkbox option "hitpoints"
+commandlist command_hitpoints_on
+commandlist command_hitpoints_off
+def checkbox_option hitpoints command_hitpoints_on command_hitpoints_off Whether the hp indicator is visible.
