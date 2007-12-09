@@ -327,8 +327,14 @@ public class ItemsManager
      */
     public synchronized void setPlayer(final CfPlayer player)
     {
+        if (player == null) throw new IllegalArgumentException();
+
         if (this.player == player)
         {
+            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            {
+                listener.playerReceived(this.player);
+            }
             return;
         }
 
@@ -346,6 +352,7 @@ public class ItemsManager
             inventoryManager.addModified(items.get(this.player.getTag()));
             for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
             {
+                listener.playerReceived(this.player);
                 listener.playerAdded(this.player);
             }
         }

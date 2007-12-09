@@ -62,6 +62,7 @@ import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.DialogStatusOption;
@@ -672,6 +673,18 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 elements.insert(element.getName(), element);
                             }
                             gui.setPosition(x, y);
+                        }
+                        else if (gui != null && args[0].equals("dialog_hide"))
+                        {
+                            if (args.length < 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            for (int i = 1; i < args.length; i++)
+                            {
+                                gui.hideInState(parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
+                            }
                         }
                         else if (gui != null && args[0].equals("dialog_state"))
                         {

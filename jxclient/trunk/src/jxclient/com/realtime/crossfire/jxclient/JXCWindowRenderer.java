@@ -93,6 +93,22 @@ public class JXCWindowRenderer
      */
     private boolean isFullScreen = false;
 
+    /**
+     * The current gui state.
+     */
+    private GuiState guiState = GuiState.START;
+
+    /**
+     * All gui states.
+     */
+    public enum GuiState
+    {
+        START,
+        META,
+        LOGIN,
+        PLAYING,
+    }
+
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
         this.jxcWindow = jxcWindow;
@@ -219,7 +235,10 @@ public class JXCWindowRenderer
         openDialogsChanged = false;
         for (final Gui dialog : openDialogs)
         {
-            dialog.redraw(g, jxcWindow);
+            if (!dialog.isHidden(guiState))
+            {
+                dialog.redraw(g, jxcWindow);
+            }
         }
     }
 
@@ -467,5 +486,21 @@ public class JXCWindowRenderer
     public AbstractLabel getTooltip()
     {
         return tooltip;
+    }
+
+    /**
+     * Set the current gui state.
+     *
+     * @param guiState The gui state.
+     */
+    public void setGuiState(final GuiState guiState)
+    {
+        if (this.guiState == guiState)
+        {
+            return;
+        }
+
+        this.guiState = guiState;
+        forcePaint = true;
     }
 }

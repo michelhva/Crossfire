@@ -30,6 +30,13 @@ import java.util.EventListener;
 public interface CrossfirePlayerListener extends EventListener
 {
     /**
+     * A "player" command has been received.
+     *
+     * @param player The corresponding player object.
+     */
+    void playerReceived(CfPlayer player);
+
+    /**
      * A player object has been added.
      *
      * @param player The added player object.
