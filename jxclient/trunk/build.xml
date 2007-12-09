@@ -24,7 +24,7 @@
             </manifest>
         </jar>
     </target>
-    <target name="skin.prelude" depends="compile">
+    <target name="skin.prelude">
         <delete dir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default"/>
         <copy todir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default">
             <fileset dir="default.theme">
