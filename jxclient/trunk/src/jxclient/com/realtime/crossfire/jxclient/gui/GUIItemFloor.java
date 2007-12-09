@@ -153,12 +153,12 @@ public class GUIItemFloor extends GUIItemItem
 
         if (myindex >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().removeFloorLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().getFloorManager().removeLocationListener(myindex, floorLocationListener);
         }
         myindex = index;
         if (myindex >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().addFloorLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().getFloorManager().addLocationListener(myindex, floorLocationListener);
         }
 
         final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloor());

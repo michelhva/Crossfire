@@ -42,12 +42,12 @@ public class FloorManager
      * Maps floor index to list of {@link LocationListener}s to be notified
      * about added or removed items in a floor tile.
      */
-    private final Map<Integer, EventListenerList> floorListeners = new HashMap<Integer, EventListenerList>();
+    private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();
 
     /**
      * Modified floor tiles for which no events have been delivered.
      */
-    private final Set<Integer> modifiedFloors = new HashSet<Integer>();
+    private final Set<Integer> modifiedItems = new HashSet<Integer>();
 
     /**
      * Deliver pending events.
@@ -56,7 +56,7 @@ public class FloorManager
      */
     public void fireEvents(final List<CfItem> items)
     {
-        fireEvents(modifiedFloors, floorListeners, items);
+        fireEvents(modifiedItems, allListeners, items);
     }
 
     /**
@@ -67,13 +67,13 @@ public class FloorManager
      *
      * @param listener The listener.
      */
-    public void addFloorLocationListener(final int index, final LocationListener listener)
+    public void addLocationListener(final int index, final LocationListener listener)
     {
-        EventListenerList listeners = floorListeners.get(index);
+        EventListenerList listeners = allListeners.get(index);
         if (listeners == null)
         {
             listeners = new EventListenerList();
-            floorListeners.put(index, listeners);
+            allListeners.put(index, listeners);
         }
         listeners.add(LocationListener.class, listener);
     }
@@ -86,14 +86,14 @@ public class FloorManager
      *
      * @param listener The listener.
      */
-    public void removeFloorLocationListener(final int index, final LocationListener listener)
+    public void removeLocationListener(final int index, final LocationListener listener)
     {
-        EventListenerList listeners = floorListeners.get(index);
+        EventListenerList listeners = allListeners.get(index);
         assert listeners != null;
         listeners.remove(LocationListener.class, listener);
         if (listeners.getListenerCount() <= 0)
         {
-            floorListeners.remove(index);
+            allListeners.remove(index);
         }
     }
 
@@ -117,7 +117,7 @@ public class FloorManager
      */
     public void addModified(final int index)
     {
-        modifiedFloors.add(index);
+        modifiedItems.add(index);
     }
 
     /**
@@ -131,7 +131,7 @@ public class FloorManager
     {
         for (int i = start; i < end; i++)
         {
-            modifiedFloors.add(i);
+            modifiedItems.add(i);
         }
     }
 
