@@ -76,28 +76,31 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    @Override public boolean canScrollUp()
     {
         return myindex > 0;
     }
 
-    public void scrollUp()
+    /* {@inheritDoc} */
+    @Override public void scrollUp()
     {
         setIndex(myindex-1, false);
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollDown()
+    @Override public boolean canScrollDown()
     {
         return myindex+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
     }
 
-    public void scrollDown()
+    /* {@inheritDoc} */
+    @Override public void scrollDown()
     {
         setIndex(myindex+1, false);
     }
 
-    protected void button1Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button1Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -115,7 +118,8 @@ public class GUIItemFloor extends GUIItemItem
         }
     }
 
-    protected void button3Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button3Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
