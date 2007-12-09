@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 
 /**
  *
