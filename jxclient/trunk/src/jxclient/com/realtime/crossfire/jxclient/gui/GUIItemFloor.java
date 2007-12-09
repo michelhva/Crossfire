@@ -33,7 +33,10 @@ import java.util.List;
 
 public class GUIItemFloor extends GUIItemItem
 {
-    private int myindex = -1;
+    /**
+     * The currently shown index.
+     */
+    private int index = -1;
 
     /**
      * The {@link LocationListener} used to detect items added to or removed
@@ -44,7 +47,7 @@ public class GUIItemFloor extends GUIItemItem
         /** {@inheritDoc} */
         public void locationModified(final int index, final CfItem item)
         {
-            assert index == myindex;
+            assert index == GUIItemFloor.this.index;
             setItem(item);
         }
     };
@@ -58,7 +61,7 @@ public class GUIItemFloor extends GUIItemItem
         /** {@inheritDoc} */
         public void currentFloorChanged(final int currentFloor)
         {
-            setIndex(myindex, true);
+            setIndex(index, true);
         }
     };
 
@@ -72,31 +75,31 @@ public class GUIItemFloor extends GUIItemItem
 
     public int getIndex()
     {
-        return myindex;
+        return index;
     }
 
     /** {@inheritDoc} */
     @Override public boolean canScrollUp()
     {
-        return myindex > 0;
+        return index > 0;
     }
 
     /* {@inheritDoc} */
     @Override public void scrollUp()
     {
-        setIndex(myindex-1, false);
+        setIndex(index-1, false);
     }
 
     /** {@inheritDoc} */
     @Override public boolean canScrollDown()
     {
-        return myindex+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+        return index+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
     }
 
     /* {@inheritDoc} */
     @Override public void scrollDown()
     {
-        setIndex(myindex+1, false);
+        setIndex(index+1, false);
     }
 
     /* {@inheritDoc} */
@@ -150,22 +153,22 @@ public class GUIItemFloor extends GUIItemItem
      */
     private void setIndex(final int index, final boolean forced)
     {
-        if (!forced && myindex == index)
+        if (!forced && this.index == index)
         {
             return;
         }
 
-        if (myindex >= 0)
+        if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().removeLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index, floorLocationListener);
         }
-        myindex = index;
-        if (myindex >= 0)
+        this.index = index;
+        if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getFloorManager().addLocationListener(myindex, floorLocationListener);
+            ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index, floorLocationListener);
         }
 
         final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
-        setItem(0 <= myindex && myindex < list.size() ? list.get(myindex) : null);
+        setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
     }
 }
