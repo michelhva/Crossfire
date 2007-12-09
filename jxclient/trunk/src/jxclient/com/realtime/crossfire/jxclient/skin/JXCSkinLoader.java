@@ -430,7 +430,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final Color color = parseColor(args[10]);
                                 final int textX = parseInt(args[11]);
                                 final int textY = parseInt(args[12]);
-                                final String label = parseText(args, 13);
+                                final String label = parseText(args, 13, lnr);
                                 elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, commandList));
                             }
                         }
@@ -452,7 +452,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final CheckBoxOption option = parseCheckBoxOption(args[6], window);
-                            final String text = parseText(args, 7);
+                            final String text = parseText(args, 7, lnr);
                             elements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
                         }
                         else if (args[0].equals("commandlist"))
@@ -522,7 +522,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final String commandString = parseText(args, 4);
+                                final String commandString = parseText(args, 4, lnr);
                                 params = new GUICommand.ExecuteCommandParameter(window, commandString);
                             }
                             else if (command == GUICommand.Command.SCROLLNEXT)
@@ -595,7 +595,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final String optionName = args[2];
                                 final GUICommandList commandOn = getCommandList(args[3]);
                                 final GUICommandList commandOff = getCommandList(args[4]);
-                                final String documentation = parseText(args, 5);
+                                final String documentation = parseText(args, 5, lnr);
                                 try
                                 {
                                     window.getOptionManager().addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
@@ -663,7 +663,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final String title = parseText(args, 6);
+                            final String title = parseText(args, 6, lnr);
                             for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
                             {
                                 elements.insert(element.getName(), element);
@@ -679,7 +679,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final String name = args[1];
                             final boolean defaultValue = parseBoolean(args[2]);
-                            final String description = parseText(args, 3);
+                            final String description = parseText(args, 3, lnr);
                             try
                             {
                                 window.getOptionManager().addOption(name, description, new DialogStatusOption(window, gui, defaultValue));
@@ -818,7 +818,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
-                            final String tooltipPrefix = parseText(args, 11);
+                            final String tooltipPrefix = parseText(args, 11, lnr);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             elements.insert(name, element);
                             gaugeUpdater.setGauge(element);
@@ -946,7 +946,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
-                            final String text = parseText(args, 8);
+                            final String text = parseText(args, 8, lnr);
                             elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, text));
                         }
                         else if (gui != null && args[0].equals("label_query"))
@@ -980,7 +980,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
-                            final String text = parseText(args, 8);
+                            final String text = parseText(args, 8, lnr);
                             elements.insert(name, new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_stat"))
@@ -1091,7 +1091,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIText text = lookupTextElement(args[9]);
                             final AbstractLabel label = lookupLabelElement(args[10]);
                             final int id = parseInt(args[11]);
-                            final String format = parseText(args, 12);
+                            final String format = parseText(args, 12, lnr);
                             elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id, format));
                         }
                         else if (gui != null && args[0].equals("picture"))
@@ -1165,7 +1165,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final GUICommandList commandList = getCommandList(args[6]);
-                            final String text = parseText(args, 7);
+                            final String text = parseText(args, 7, lnr);
                             elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, commandList));
                         }
                         else if (gui != null && args[0].equals("textgauge"))
@@ -1187,7 +1187,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
                             final Color color = parseColor(args[11]);
                             final Font font = fonts.lookup(args[12]);
-                            final String tooltipPrefix = parseText(args, 13);
+                            final String tooltipPrefix = parseText(args, 13, lnr);
                             final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
                             elements.insert(name, element);
                             gaugeUpdater.setGauge(element);
@@ -1510,15 +1510,21 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Concatenate trailing arguments into a string.
+     * Concatenate trailing arguments into a string. If the first line is
+     * "<<EOF", all text up to the next line containing only "EOF" is appended.
+     * Comments starting with "#" are dropped.
      *
      * @param args The args to concatenate.
      *
      * @param startIndex The first index to concatenate.
      *
+     * @param lnr Where to read additional lines from.
+     *
      * @return The concatenated string.
+     *
+     * @throws IOException If reading from <code>lnr</lnr> fails.
      */
-    private String parseText(final String[] args, final int startIndex)
+    private String parseText(final String[] args, final int startIndex, final LineNumberReader lnr) throws IOException
     {
         final StringBuilder text = new StringBuilder();
         for (int i = startIndex; i < args.length; i++)
@@ -1529,6 +1535,34 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             text.append(args[i]);
         }
+        if (text.toString().equals("<<EOF"))
+        {
+            text.setLength(0);
+            for (;;)
+            {
+                final String line = lnr.readLine();
+                if (line == null)
+                {
+                    throw new IOException();
+                }
+                if (line.equals("EOF"))
+                {
+                    break;
+                }
+                if (line.startsWith("#"))
+                {
+                    continue;
+                }
+
+                text.append(line);
+                text.append('\n');
+            }
+            if (text.length() > 0)
+            {
+                text.setLength(text.length()-1);
+            }
+        }
+
         return text.toString();
     }
 
