@@ -50,10 +50,9 @@ public class ItemsManager
     private final Map<Integer, CfItem> allItems  = new HashMap<Integer, CfItem>();
 
     /**
-     * Maps floor index to list of {@link LocationListener}s to be notified
-     * about added or removed items in a floor tile.
+     * The floor manager used to maintain floor object states.
      */
-    private final Map<Integer, EventListenerList> floorListeners = new HashMap<Integer, EventListenerList>();
+    private final FloorManager floorManager = new FloorManager();
 
     /**
      * Maps floor index to list of {@link LocationListener}s to be notified
@@ -72,11 +71,6 @@ public class ItemsManager
      * changes of the current player.
      */
     private final EventListenerList playerListeners = new EventListenerList();
-
-    /**
-     * Modified floor tiles for which no events have been delivered.
-     */
-    private final Set<Integer> modifiedFloors = new HashSet<Integer>();
 
     /**
      * Modified inventory tiles for which no events have been delivered.
@@ -265,7 +259,7 @@ public class ItemsManager
 
         if (where == currentFloor)
         {
-            addModified(modifiedFloors, index, list.size()+1);
+            floorManager.addModified(index, list.size()+1);
         }
         else if (player != null && where == player.getTag())
         {
@@ -295,7 +289,7 @@ public class ItemsManager
         if (where == currentFloor)
         {
             list.add(item);
-            modifiedFloors.add(list.size()-1);
+            floorManager.addModified(list.size()-1);
         }
         else if (player != null && where == player.getTag())
         {
@@ -319,7 +313,7 @@ public class ItemsManager
      */
     public synchronized void fireEvents()
     {
-        fireEvents(modifiedFloors, floorListeners, currentFloor);
+        floorManager.fireEvents(getItems(currentFloor));
         if (player != null)
         {
             fireEvents(modifiedInventories, inventoryListeners, player.getTag());
@@ -379,9 +373,9 @@ public class ItemsManager
             return;
         }
 
-        addModified(modifiedFloors, items.get(this.currentFloor));
+        floorManager.addModified(items.get(this.currentFloor));
         this.currentFloor = currentFloor;
-        addModified(modifiedFloors, items.get(this.currentFloor));
+        floorManager.addModified(items.get(this.currentFloor));
 
         for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class))
         {
@@ -456,45 +450,6 @@ public class ItemsManager
             }
         }
         modified.clear();
-    }
-
-    /**
-     * Add a {@link LocationListener}s to be notified about changes in a floor
-     * tile.
-     *
-     * @param index the floor tile
-     *
-     * @param listener the listener
-     */
-    public void addFloorLocationListener(final int index, final LocationListener listener)
-    {
-        EventListenerList listeners = floorListeners.get(index);
-        if (listeners == null)
-        {
-            listeners = new EventListenerList();
-            floorListeners.put(index, listeners);
-        }
-
-        listeners.add(LocationListener.class, listener);
-    }
-
-    /**
-     * Remove a {@link LocationListener}s to be notified about changes in a
-     * floor tile.
-     *
-     * @param index the floor tile
-     *
-     * @param listener the listener
-     */
-    public void removeFloorLocationListener(final int index, final LocationListener listener)
-    {
-        EventListenerList listeners = floorListeners.get(index);
-        assert listeners != null;
-        listeners.remove(LocationListener.class, listener);
-        if (listeners.getListenerCount() <= 0)
-        {
-            floorListeners.remove(index);
-        }
     }
 
     /**
@@ -621,5 +576,15 @@ public class ItemsManager
         if (item1.getTag() < item2.getTag()) return -1;
         if (item1.getTag() > item2.getTag()) return +1;
         return 0;
+    }
+
+    /**
+     * Return the floor manager.
+     *
+     * @return The floor manager.
+     */
+    public FloorManager getFloorManager()
+    {
+        return floorManager;
     }
 }
