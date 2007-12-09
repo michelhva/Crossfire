@@ -75,7 +75,8 @@ public abstract class GUIItemItem extends GUIItem
         }
     }
 
-    protected void button2Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button2Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)

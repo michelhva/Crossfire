@@ -62,19 +62,20 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    @Override public boolean canScrollUp()
     {
         return myindex > 0;
     }
 
-    public void scrollUp()
+    /* {@inheritDoc} */
+    @Override public void scrollUp()
     {
         setIndex(myindex-1);
         render();
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollDown()
+    @Override public boolean canScrollDown()
     {
         final CfPlayer player = ItemsList.getItemsManager().getPlayer();
         if (player == null)
@@ -86,13 +87,15 @@ public class GUIItemInventory extends GUIItemItem
         return myindex+1 < list.size();
     }
 
-    public void scrollDown()
+    /* {@inheritDoc} */
+    @Override public void scrollDown()
     {
         setIndex(myindex+1);
         render();
     }
 
-    protected void button1Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button1Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -118,7 +121,8 @@ public class GUIItemInventory extends GUIItemItem
         }
     }
 
-    protected void button2Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button2Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item != null)
@@ -141,7 +145,8 @@ public class GUIItemInventory extends GUIItemItem
         super.button2Clicked(jxcw);
     }
 
-    protected void button3Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button3Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)

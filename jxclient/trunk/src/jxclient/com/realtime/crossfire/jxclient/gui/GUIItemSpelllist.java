@@ -83,31 +83,34 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    @Override public boolean canScrollUp()
     {
         return myindex > 0;
     }
 
-    public void scrollUp()
+    /* {@inheritDoc} */
+    @Override public void scrollUp()
     {
         setIndex(myindex-1);
         render();
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollDown()
+    @Override public boolean canScrollDown()
     {
         final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
         return myindex+1 < list.size();
     }
 
-    public void scrollDown()
+    /* {@inheritDoc} */
+    @Override public void scrollDown()
     {
         setIndex(myindex+1);
         render();
     }
 
-    protected void button1Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button1Clicked(final JXCWindow jxcw)
     {
         if (myspell == null)
         {
@@ -126,15 +129,18 @@ public class GUIItemSpelllist extends GUIItem
         }
     }
 
-    protected void button2Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button2Clicked(final JXCWindow jxcw)
     {
     }
 
-    protected void button3Clicked(final JXCWindow jxcw)
+    /* {@inheritDoc} */
+    @Override protected void button3Clicked(final JXCWindow jxcw)
     {
     }
 
-    protected void render(final Graphics g)
+    /* {@inheritDoc} */
+    @Override protected void render(final Graphics g)
     {
         if (myspell == null)
         {

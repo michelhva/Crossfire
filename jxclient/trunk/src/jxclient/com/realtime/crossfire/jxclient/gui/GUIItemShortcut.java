@@ -80,7 +80,8 @@ public class GUIItemShortcut extends GUIItem
         render();
     }
 
-    protected void button1Clicked(final JXCWindow jxcWindow)
+    /* {@inheritDoc} */
+    @Override protected void button1Clicked(final JXCWindow jxcWindow)
     {
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut != null)
@@ -89,7 +90,8 @@ public class GUIItemShortcut extends GUIItem
         }
     }
 
-    protected void button2Clicked(final JXCWindow jxcWindow)
+    /* {@inheritDoc} */
+    @Override protected void button2Clicked(final JXCWindow jxcWindow)
     {
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut != null)
@@ -102,7 +104,8 @@ public class GUIItemShortcut extends GUIItem
         }
     }
 
-    protected void button3Clicked(final JXCWindow jxcWindow)
+    /* {@inheritDoc} */
+    @Override protected void button3Clicked(final JXCWindow jxcWindow)
     {
         final Spell spell = jxcWindow.getCurrentSpell();
         if (spell == null)
@@ -113,7 +116,8 @@ public class GUIItemShortcut extends GUIItem
         getJXCWindow().getShortcuts().setSpellShortcut(index, spell, true);
     }
 
-    protected void render(final Graphics g)
+    /* {@inheritDoc} */
+    @Override protected void render(final Graphics g)
     {
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut == null)
@@ -141,24 +145,24 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    @Override public boolean canScrollUp()
     {
         return false;
     }
 
     /** {@inheritDoc} */
-    public void scrollUp()
+    @Override public void scrollUp()
     {
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollDown()
+    @Override public boolean canScrollDown()
     {
         return false;
     }
 
     /** {@inheritDoc} */
-    public void scrollDown()
+    @Override public void scrollDown()
     {
     }
 }
