@@ -89,6 +89,11 @@ public class DialogFactory
     /** The background color of the center area. */
     private final Color backgroundColor;
 
+    /**y
+     * The alpha value for the dialog background except for the title.
+     */
+    private final float alpha;
+
     /**
      * Create a new instance. The border images must have matching sizes.
      *
@@ -113,8 +118,11 @@ public class DialogFactory
      * @param titleFont The font for the dialog title.
      *
      * @param backgroundColor The background color of the center area.
+     *
+     * @param alpha The alpha value for the dialog background except for the
+     * title.
      */
-    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color backgroundColor)
+    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color backgroundColor, final float alpha)
     {
         if (frameNW == null) throw new IllegalArgumentException();
         if (frameN == null) throw new IllegalArgumentException();
@@ -156,6 +164,7 @@ public class DialogFactory
         if (frameE.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of E does not match height of C");
         this.titleFont = titleFont;
         this.backgroundColor = backgroundColor;
+        this.alpha = alpha;
     }
 
     /**
@@ -180,19 +189,21 @@ public class DialogFactory
         if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width if wider than W+C+E");
         if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height is taller than N+C+S");
 
+        final int titleHeight = title.length() > 0 ? 30 : 0;
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
-        result.add(new GUIPicture(jxcWindow, name+"_nw", 0, 0, sizeW, sizeN, frameNW));
-        result.add(new GUIPicture(jxcWindow, name+"_n", sizeW, 0, w-sizeW-sizeE, sizeN, frameN));
-        result.add(new GUIPicture(jxcWindow, name+"_ne", w-sizeE, 0, sizeE, sizeN, frameNE));
-        result.add(new GUIPicture(jxcWindow, name+"_w", 0, sizeN, sizeW, h-sizeN-sizeS, frameW));
-        result.add(new GUIPicture(jxcWindow, name+"_c", sizeW, sizeN, w-sizeW-sizeE, h-sizeN-sizeS, frameC));
-        result.add(new GUIPicture(jxcWindow, name+"_e", w-sizeE, sizeN, sizeE, h-sizeN-sizeS, frameE));
-        result.add(new GUIPicture(jxcWindow, name+"_sw", 0, h-sizeS, sizeW, sizeS, frameSW));
-        result.add(new GUIPicture(jxcWindow, name+"_s", sizeW, h-sizeS, w-sizeW-sizeE, sizeS, frameS));
-        result.add(new GUIPicture(jxcWindow, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE));
-        if (title.length() > 0)
+        result.add(new GUIPicture(jxcWindow, name+"_nw", 0, 0, sizeW, sizeN, frameNW, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_n", sizeW, 0, w-sizeW-sizeE, sizeN, frameN, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_ne", w-sizeE, 0, sizeE, sizeN, frameNE, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_w", 0, sizeN, sizeW, h-sizeN-sizeS, frameW, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_c", sizeW, sizeN+titleHeight, w-sizeW-sizeE, h-sizeN-sizeS-titleHeight, frameC, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_e", w-sizeE, sizeN, sizeE, h-sizeN-sizeS, frameE, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_sw", 0, h-sizeS, sizeW, sizeS, frameSW, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_s", sizeW, h-sizeS, w-sizeW-sizeE, sizeS, frameS, alpha));
+        result.add(new GUIPicture(jxcWindow, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE, alpha));
+        if (titleHeight > 0)
         {
-            result.add(new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, 30, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
+            result.add(new GUIPicture(jxcWindow, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC));
+            result.add(new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
         }
         return result;
     }
