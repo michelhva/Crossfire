@@ -86,6 +86,9 @@ public class DialogFactory
     /** The font for the dialog title. */
     private final Font titleFont;
 
+    /** The color for the dialog title. */
+    private final Color titleColor;
+
     /** The background color of the center area. */
     private final Color backgroundColor;
 
@@ -117,12 +120,14 @@ public class DialogFactory
      *
      * @param titleFont The font for the dialog title.
      *
+     * @param titleColor The color for the dialog title.
+     *
      * @param backgroundColor The background color of the center area.
      *
      * @param alpha The alpha value for the dialog background except for the
      * title.
      */
-    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color backgroundColor, final float alpha)
+    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color titleColor, final Color backgroundColor, final float alpha)
     {
         if (frameNW == null) throw new IllegalArgumentException();
         if (frameN == null) throw new IllegalArgumentException();
@@ -134,6 +139,7 @@ public class DialogFactory
         if (frameS == null) throw new IllegalArgumentException();
         if (frameSE == null) throw new IllegalArgumentException();
         if (titleFont == null) throw new IllegalArgumentException();
+        if (titleColor == null) throw new IllegalArgumentException();
         if (backgroundColor == null) throw new IllegalArgumentException();
         this.frameNW = frameNW;
         this.frameN = frameN;
@@ -163,6 +169,7 @@ public class DialogFactory
         if (frameW.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of W does not match height of C");
         if (frameE.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of E does not match height of C");
         this.titleFont = titleFont;
+        this.titleColor = titleColor;
         this.backgroundColor = backgroundColor;
         this.alpha = alpha;
     }
@@ -203,7 +210,7 @@ public class DialogFactory
         if (titleHeight > 0)
         {
             result.add(new GUIPicture(jxcWindow, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC));
-            result.add(new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, Color.BLACK, GUILabel.Alignment.LEFT, title));
+            result.add(new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, GUILabel.Alignment.LEFT, title));
         }
         return result;
     }
