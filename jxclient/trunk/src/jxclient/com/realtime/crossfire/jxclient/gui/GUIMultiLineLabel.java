@@ -26,14 +26,31 @@ import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.util.regex.Pattern;
 
 /**
- * A {@link AbstractLabel} that renders the text as a plain string.
+ * A {@link AbstractLabel} that renders the text as a list of plain strings.
+ * The lines are separated by newline characters.
  *
  * @author Andreas Kirschbaum
  */
-public class GUIOneLineLabel extends GUILabel
+public class GUIMultiLineLabel extends GUILabel
 {
+    /**
+     * The pattern to split the text into lines.
+     */
+    private static final Pattern lineSeparatorPattern = Pattern.compile(" *\n");
+
+    /**
+     * The height of one line.
+     */
+    private int lineHeight = 0;
+
+    /**
+     * The text lines to draw.
+     */
+    private String[] lines = new String[0];
+
     /**
      * Create a new instance.
      *
@@ -60,16 +77,43 @@ public class GUIOneLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIOneLineLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment, final String text)
+    public GUIMultiLineLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment, final String text)
     {
         super(jxcWindow, name, x, y, w, h, picture, font, color, alignment, text);
+    }
+
+    /** {@inheritDoc} */
+    @Override protected void textChanged()
+    {
+        lines = lineSeparatorPattern.split(getText(), -1);
+        super.textChanged();
     }
 
     /** {@inheritDoc} */
     @Override protected void render()
     {
         super.render();
-        drawLine(0, h, getText());
+
+        if (lines == null)
+        {
+            return;
+        }
+
+        final Font font = getFont();
+        if (font == null)
+        {
+            return;
+        }
+
+        final Graphics2D g = mybuffer.createGraphics();
+        final Rectangle2D rect = font.getStringBounds("X", g.getFontRenderContext());
+        lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
+
+        int y = 0;
+        for (final String line : lines)
+        {
+            y += drawLine(y, lineHeight, line);
+        }
         setChanged();
     }
 }
