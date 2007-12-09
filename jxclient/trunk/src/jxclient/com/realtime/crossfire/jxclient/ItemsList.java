@@ -48,17 +48,17 @@ public class ItemsList
             return;
         }
 
-        final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && itemsManager.getCurrentFloor() == item.getTag() && item.isOpen();
+        final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && itemsManager.getCurrentFloorManager().getCurrentFloor() == item.getTag() && item.isOpen();
         item.update(flags, tag, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_FLAGS) != 0)
         {
             if (item.isOpen())
             {
-                itemsManager.setCurrentFloor(item.getTag());
+                itemsManager.getCurrentFloorManager().setCurrentFloor(item.getTag());
             }
             else if (wasopen)
             {
-                itemsManager.setCurrentFloor(0);
+                itemsManager.getCurrentFloorManager().setCurrentFloor(0);
             }
         }
     }

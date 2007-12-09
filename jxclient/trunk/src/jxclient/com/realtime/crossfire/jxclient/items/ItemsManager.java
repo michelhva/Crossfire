@@ -50,6 +50,12 @@ public class ItemsManager
     private final Map<Integer, CfItem> allItems  = new HashMap<Integer, CfItem>();
 
     /**
+     * The current floor manager used to track the player's current floor
+     * location.
+     */
+    private final CurrentFloorManager currentFloorManager = new CurrentFloorManager(this);
+
+    /**
      * The floor manager used to maintain floor object states.
      */
     private final FloorManager floorManager = new FloorManager();
@@ -58,12 +64,6 @@ public class ItemsManager
      * The inventory manager used to maintain player inventory state.
      */
     private final InventoryManager inventoryManager = new InventoryManager();
-
-    /**
-     * The list of {@link CurrentFloorListener}s to be notified about changes
-     * of the current floor location.
-     */
-    private final EventListenerList currentFloorListeners = new EventListenerList();
 
     /**
      * The list of {@link CrossfirePlayerListener}s to be notified about
@@ -75,11 +75,6 @@ public class ItemsManager
      * The current player object this client controls.
      */
     private CfPlayer player = null;
-
-    /**
-     * The location to show in the floor view.
-     */
-    private int currentFloor = 0;
 
     /**
      * Return a list of items in a given location. The returned list may not be
@@ -98,6 +93,20 @@ public class ItemsManager
         }
 
         return new ArrayList<CfItem>(result);
+    }
+
+    /**
+     * Return the number of items in a given location. Undefined locations
+     * return <code>0</code>.
+     *
+     * @param location The location to check.
+     *
+     * @retrn The number of items.
+     */
+    public synchronized int getNumberOfItems(final int location)
+    {
+        final List<CfItem> result = items.get(location);
+        return result == null ? 0 : result.size();
     }
 
     /**
@@ -182,9 +191,9 @@ public class ItemsManager
     public synchronized void removeItem(final CfItem item)
     {
         // safeguard against broken servers
-        if (item.getTag() == currentFloor)
+        if (currentFloorManager.isCurrentFloor(item.getTag()))
         {
-            setCurrentFloor(0);
+            currentFloorManager.setCurrentFloor(0);
         }
 
         final CfItem deletedItem = allItems.remove(item.getTag());
@@ -251,13 +260,13 @@ public class ItemsManager
             }
         }
 
-        if (where == currentFloor)
+        if (currentFloorManager.isCurrentFloor(where))
         {
             floorManager.addModified(index, list.size()+1);
         }
         else if (player != null && where == player.getTag())
         {
-	    inventoryManager.addModified(index, list.size()+1);
+            inventoryManager.addModified(index, list.size()+1);
         }
     }
 
@@ -280,18 +289,18 @@ public class ItemsManager
             }
         }
 
-        if (where == currentFloor)
+        if (currentFloorManager.isCurrentFloor(where))
         {
             list.add(item);
             floorManager.addModified(list.size()-1);
         }
         else if (player != null && where == player.getTag())
         {
-	    // inventory order differs from server order, so insert at correct
+            // inventory order differs from server order, so insert at correct
             // position
-	    final int index = inventoryManager.getInsertionIndex(list, item);
+            final int index = inventoryManager.getInsertionIndex(list, item);
             list.add(index, item);
-	    inventoryManager.addModified(index, list.size());
+            inventoryManager.addModified(index, list.size());
         }
         else
         {
@@ -304,10 +313,10 @@ public class ItemsManager
      */
     public synchronized void fireEvents()
     {
-        floorManager.fireEvents(getItems(currentFloor));
+        floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
         if (player != null)
         {
-	    inventoryManager.fireEvents(getItems(player.getTag()));
+            inventoryManager.fireEvents(getItems(player.getTag()));
         }
     }
 
@@ -350,38 +359,6 @@ public class ItemsManager
     public synchronized CfPlayer getPlayer()
     {
         return player;
-    }
-
-    /**
-     * Set the location to show in the floor view.
-     *
-     * @param currentFloor the new location of the floor view
-     */
-    public synchronized void setCurrentFloor(final int currentFloor)
-    {
-        if (this.currentFloor == currentFloor)
-        {
-            return;
-        }
-
-        floorManager.addModified(items.get(this.currentFloor));
-        this.currentFloor = currentFloor;
-        floorManager.addModified(items.get(this.currentFloor));
-
-        for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class))
-        {
-            listener.currentFloorChanged(this.currentFloor);
-        }
-    }
-
-    /**
-     * Return the location to show in the floor view.
-     *
-     * @return the floor location
-     */
-    public synchronized int getCurrentFloor()
-    {
-        return currentFloor;
     }
 
     /**
@@ -444,28 +421,6 @@ public class ItemsManager
     }
 
     /**
-     * Add a {@link CurrentFloorListener} to be notified about current floor
-     * changes.
-     *
-     * @param listener the listener to add
-     */
-    public void addCurrentFloorListener(final CurrentFloorListener listener)
-    {
-        currentFloorListeners.add(CurrentFloorListener.class, listener);
-    }
-
-    /**
-     * Remove a {@link CurrentFloorListener} to be notified about current floor
-     * changes.
-     *
-     * @param listener the listener to remove
-     */
-    public void removeCurrentFloorListener(final CurrentFloorListener listener)
-    {
-        currentFloorListeners.remove(CurrentFloorListener.class, listener);
-    }
-
-    /**
      * Add a {@link CrossfirePlayerListener} to be notified about changes of
      * the current player.
      *
@@ -485,6 +440,16 @@ public class ItemsManager
     public void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
     {
         playerListeners.remove(CrossfirePlayerListener.class, listener);
+    }
+
+    /**
+     * Return the current floor manager.
+     *
+     * @return The current floor manager.
+     */
+    public CurrentFloorManager getCurrentFloorManager()
+    {
+        return currentFloorManager;
     }
 
     /**
