@@ -17,9 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
-
-import java.util.EventObject;
+package com.realtime.crossfire.jxclient.mapupdater;
 
 /**
  *
@@ -27,13 +25,7 @@ import java.util.EventObject;
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandNewmapEvent extends EventObject
+public interface CrossfireNewmapListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    public CrossfireCommandNewmapEvent(Object src)
-    {
-        super(src);
-    }
+    void commandNewmapReceived(CrossfireCommandNewmapEvent evt);
 }

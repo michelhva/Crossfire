@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.map;
 
-import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
