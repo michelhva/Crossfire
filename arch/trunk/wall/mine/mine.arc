@@ -126,3 +126,35 @@ move_block all
 visibility 100
 magicmap grey
 end
+Object mine_nw
+face mine_nw.111
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+magicmap grey
+end
+Object mine_ne
+face mine_ne.111
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+magicmap grey
+end
+Object mine_se
+face mine_se.111
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+magicmap grey
+end
+Object mine_sw
+face mine_sw.111
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+magicmap grey
+end
