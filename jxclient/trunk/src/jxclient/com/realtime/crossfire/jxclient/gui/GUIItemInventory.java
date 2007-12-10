@@ -62,7 +62,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollUp()
+    public boolean canScrollUp()
     {
         return myindex > 0;
     }
@@ -75,7 +75,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollDown()
+    public boolean canScrollDown()
     {
         final CfPlayer player = ItemsList.getItemsManager().getPlayer();
         if (player == null)
