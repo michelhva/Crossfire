@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
-import com.realtime.crossfire.jxclient.gui.GUICheckBox;
 import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUICommandText;
 import com.realtime.crossfire.jxclient.gui.GUIElement;

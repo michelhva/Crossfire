@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import java.util.Collections;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;

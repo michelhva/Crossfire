@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
-import java.io.File;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much

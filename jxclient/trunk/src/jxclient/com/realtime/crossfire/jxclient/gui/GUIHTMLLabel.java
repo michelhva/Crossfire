@@ -25,15 +25,10 @@ import java.awt.font.FontRenderContext;
 import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
-import java.awt.Transparency;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.regex.Pattern;
-import javax.swing.ImageIcon;
 import javax.swing.text.html.parser.ParserDelegator;
 
 /**

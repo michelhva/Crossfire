@@ -20,17 +20,6 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import com.realtime.crossfire.jxclient.CfItem;
-import com.realtime.crossfire.jxclient.CfPlayer;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import javax.swing.event.EventListenerList;
-
 /**
  * Manages the items on the floor.
  *

@@ -19,10 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.Skill;
 import com.realtime.crossfire.jxclient.SkillListener;
 
