@@ -20,8 +20,8 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.Skill;
-import com.realtime.crossfire.jxclient.SkillListener;
+import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skills.SkillListener;
 
 /**
  * A {@link GaugeUpdater} which monitors a skill.
