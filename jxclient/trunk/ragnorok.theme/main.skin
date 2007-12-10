@@ -28,9 +28,12 @@ commandlist_add command_hitpoints_on hpbar_back SHOW
 commandlist_add command_hitpoints_on hpbar SHOW
 commandlist_add command_hitpoints_off hpbar_back HIDE
 commandlist_add command_hitpoints_off hpbar HIDE
-gauge lowfood                 499 285 25 45 lowfood null null LOWFOOD WE
+gauge lowfood                 499 286 25 45 lowfood null null LOWFOOD WE
 commandlist_add command_lowfood_on lowfood SHOW
 commandlist_add command_lowfood_off lowfood HIDE
+gauge poisoned                501 299 20 30 poisoned null null POISONED WE
+commandlist_add command_poisoned_on poisoned SHOW
+commandlist_add command_poisoned_off poisoned HIDE
 
 # Button Group
 textbutton button_status      561 11 48 18 command_status Status
@@ -44,3 +47,4 @@ textbutton button_setup       967 11 46 18 command_setup Setup
 ignore hpbar_back
 ignore hpbar
 ignore lowfood
+ignore poisoned

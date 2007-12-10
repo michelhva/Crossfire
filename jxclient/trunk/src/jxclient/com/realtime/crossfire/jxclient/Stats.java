@@ -410,11 +410,17 @@ public class Stats
     public static final int RESIST_TYPES = 18;
 
     /**
+     * The "is poisoned" indicator. It ranges from 0 (not poisoned) to 1
+     * (poisoned).
+     */
+    public static final int C_STAT_POISONED = 256;
+
+    /**
      * The listeners to inform of stat changes.
      */
     private final List<CrossfireStatsListener> statListeners = new ArrayList<CrossfireStatsListener>();
 
-    private final int[] stats = new int[256];
+    private final int[] stats = new int[257];
 
     private long exp = 0;
 

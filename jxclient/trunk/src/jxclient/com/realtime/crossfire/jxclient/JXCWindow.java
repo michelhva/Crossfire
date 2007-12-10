@@ -142,6 +142,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final OptionManager optionManager;
 
     /**
+     * The poison watcher to synthesize "poisoned" events.
+     */
+    private final PoisonWatcher poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
+
+    /**
      * The default repeat counter for "ncom" commands.
      */
     private int repeatCount = 0;

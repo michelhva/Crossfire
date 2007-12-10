@@ -35,6 +35,7 @@ public class StatsParser
         statTable.put("INT", Stats.CS_STAT_INT);
         statTable.put("LEVEL", Stats.CS_STAT_LEVEL);
         statTable.put("LOWFOOD", Stats.C_STAT_LOWFOOD);
+        statTable.put("POISONED", Stats.C_STAT_POISONED);
         statTable.put("POW", Stats.CS_STAT_POW);
         statTable.put("RANGE", Stats.CS_STAT_RANGE);
         statTable.put("RES_ACID", Stats.CS_STAT_RES_ACID);

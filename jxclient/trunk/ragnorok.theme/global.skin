@@ -87,6 +87,11 @@ commandlist command_lowfood_on
 commandlist command_lowfood_off
 def checkbox_option lowfood command_lowfood_on command_lowfood_off Whether the low food indicator is visible.
 
+# checkbox option "poisoned"
+commandlist command_poisoned_on
+commandlist command_poisoned_off
+def checkbox_option poisoned command_poisoned_on command_poisoned_off Whether the poisoned indicator is visible.
+
 # checkbox option "hitpoints"
 commandlist command_hitpoints_on
 commandlist command_hitpoints_off
