@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
+
 /**
  *
  * @version 1.0

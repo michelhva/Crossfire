@@ -17,9 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
-
-import java.util.EventObject;
+package com.realtime.crossfire.jxclient.stats;
 
 /**
  *
@@ -27,21 +25,7 @@ import java.util.EventObject;
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandStatsEvent extends EventObject
+public interface CrossfireStatsListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    private final Stats mystats;
-
-    public CrossfireCommandStatsEvent(Object src, Stats st)
-    {
-        super(src);
-        mystats = st;
-    }
-
-    public Stats getStats()
-    {
-        return mystats;
-    }
+    void commandStatsReceived(CrossfireCommandStatsEvent evt);
 }
