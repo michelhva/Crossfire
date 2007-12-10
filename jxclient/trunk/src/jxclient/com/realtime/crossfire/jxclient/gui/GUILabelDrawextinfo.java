@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawextinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import java.awt.Color;
 import java.awt.Font;
 

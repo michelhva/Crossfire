@@ -17,7 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
 
 /**
  *
@@ -25,7 +25,7 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public interface CrossfireDrawextinfoListener
+public interface CrossfireDrawinfoListener
 {
-    void commandDrawextinfoReceived(CrossfireCommandDrawextinfoEvent evt);
+    void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
 }

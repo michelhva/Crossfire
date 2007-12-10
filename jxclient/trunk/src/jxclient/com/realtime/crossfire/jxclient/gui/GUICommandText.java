@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.ServerConnection;
+import com.realtime.crossfire.jxclient.server.ServerConnection;
 import java.awt.Color;
 import java.awt.event.KeyListener;
 import java.awt.Font;

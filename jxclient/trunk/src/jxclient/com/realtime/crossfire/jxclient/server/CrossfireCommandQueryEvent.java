@@ -17,28 +17,54 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
+
+import java.util.EventObject;
 
 /**
- * An UnknownCommandException is generated whenever an unknown message packet is
- * received from the server.
  *
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
  */
-public class UnknownCommandException extends Exception
+public class CrossfireCommandQueryEvent extends EventObject
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    /**
-     * Creates a new exception with the given text message as a parameter.
-     * @param str The message to assign to this exception.
-     * @since 1.0
-     */
-    public UnknownCommandException(String str)
+    /** Query type: yes/no question. */
+    public static final int YESNO = 1;
+
+    /** Query type: single character response expected. */
+    public static final int SINGLECHAR = 2;
+
+    /** Query type: hide input being entered. */
+    public static final int HIDEINPUT = 4;
+
+    private final String myquery;
+
+    private final int myquerytype;
+
+    public CrossfireCommandQueryEvent(Object src, String msg, int type)
     {
-        super(str);
+        super(src);
+        myquery = msg;
+        myquerytype = type;
+    }
+
+    public String getPrompt()
+    {
+        return myquery;
+    }
+
+    /**
+     * Return the query type as a bitmask of {@link #YESNO}, {@link
+     * #SINGLECHAR} and {@link #HIDEINPUT}.
+     *
+     * @return The query type bitmask.
+     */
+    public int getQueryType()
+    {
+        return myquerytype;
     }
 }

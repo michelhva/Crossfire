@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;

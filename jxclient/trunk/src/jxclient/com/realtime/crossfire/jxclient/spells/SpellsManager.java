@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
-import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

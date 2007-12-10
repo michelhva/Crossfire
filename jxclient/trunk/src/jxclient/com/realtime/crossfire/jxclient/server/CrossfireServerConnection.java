@@ -17,12 +17,18 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.Animation;
+import com.realtime.crossfire.jxclient.Animations;
+import com.realtime.crossfire.jxclient.CfMagicMap;
+import com.realtime.crossfire.jxclient.CfMapUpdater;
+import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.faces.FacesCallback;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;

@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 
 /**

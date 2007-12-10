@@ -19,15 +19,15 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawextinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandQueryEvent;
-import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.font.LineMetrics;

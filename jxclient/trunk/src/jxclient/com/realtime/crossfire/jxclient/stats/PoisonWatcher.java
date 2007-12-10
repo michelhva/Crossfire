@@ -19,11 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawextinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandDrawinfoEvent;
-import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.TimeoutEvent;
 import com.realtime.crossfire.jxclient.Timeouts;
 

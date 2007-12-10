@@ -17,55 +17,14 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
-
-import java.util.EventObject;
+package com.realtime.crossfire.jxclient.server;
 
 /**
  *
  * @version 1.0
  * @author Lauwenmark
- * @since 1.0
  */
-public class CrossfireCommandDrawextinfoEvent extends EventObject
+public interface CrossfireScriptMonitorListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    private final int mycolor;
-
-    private final int mytype;
-
-    private final int mysubtype;
-
-    private final String mymessage;
-
-    public CrossfireCommandDrawextinfoEvent(Object src, int color, int type, int subtype, String message)
-    {
-        super(src);
-        mycolor = color;
-        mytype = type;
-        mysubtype = subtype;
-        mymessage = message;
-    }
-
-    public int getColor()
-    {
-        return mycolor;
-    }
-
-    public int getType()
-    {
-        return mytype;
-    }
-
-    public int getSubType()
-    {
-        return mysubtype;
-    }
-
-    public String getMessage()
-    {
-        return mymessage;
-    }
+    void commandSent(byte[] packet, int length);
 }
