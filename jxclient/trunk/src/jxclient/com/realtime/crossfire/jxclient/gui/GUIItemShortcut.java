@@ -129,7 +129,7 @@ public class GUIItemShortcut extends GUIItem
         {
             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
             g.drawImage(shortcutSpell.getSpell().getImageIcon().getImage(), 0, 0, null);
-            g.drawImage(shortcutSpell.isCast() ? mypiccursed : mypicapplied, 0, 0, null);
+            g.drawImage(shortcutSpell.isCast() ? cursedImage : appliedImage, 0, 0, null);
         }
         else if (shortcut instanceof ShortcutCommand)
         {

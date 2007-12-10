@@ -36,9 +36,9 @@ import java.awt.image.BufferedImage;
  */
 public class GUICommandText extends GUIText implements KeyListener
 {
-    public GUICommandText(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picactive, final BufferedImage picinactive, final Font nf, final Color inactiveColor, final Color activeColor, final int margin, final String txt)
+    public GUICommandText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, picactive, picinactive, nf, inactiveColor, activeColor, margin, txt);
+        super(jxcWindow, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
     }
 
     /** {@inheritDoc} */

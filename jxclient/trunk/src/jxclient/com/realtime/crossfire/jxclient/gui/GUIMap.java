@@ -205,23 +205,23 @@ public class GUIMap extends GUIElement
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
      *
-     * @param nn The name of this element.
+     * @param name The name of this element.
      *
-     * @param nx The x-coordinate for drawing this element to screen.
+     * @param x The x-coordinate for drawing this element to screen.
      *
-     * @param ny The y-coordinate for drawing this element to screen.
+     * @param y The y-coordinate for drawing this element to screen.
      *
-     * @param nw The width for drawing this element to screen.
+     * @param w The width for drawing this element to screen.
      *
-     * @param nh The height for drawing this element to screen.
+     * @param h The height for drawing this element to screen.
      *
      * @param tileSize The size of one tile in pixels.
      *
      * @throws IOException If an I/O error occurs.
      */
-    public GUIMap(final JXCWindow jxcWindow, final String nn, final int tileSize, final int nx, final int ny, final int nw, final int nh) throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h) throws IOException
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, name, x, y, w, h);
         if (tileSize == 32)
         {
             use_big_images = false;
@@ -240,8 +240,8 @@ public class GUIMap extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
-        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IOException("nw="+nw+"!="+CrossfireServerConnection.MAP_WIDTH*mysquaresize);
-        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IOException("nh="+nh+"!="+CrossfireServerConnection.MAP_HEIGHT*mysquaresize);
+        if (w != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IOException("w="+w+"!="+CrossfireServerConnection.MAP_WIDTH*mysquaresize);
+        if (h != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IOException("h="+h+"!="+CrossfireServerConnection.MAP_HEIGHT*mysquaresize);
 
         createBuffer();
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
@@ -249,9 +249,9 @@ public class GUIMap extends GUIElement
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
-    public GUIMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final boolean big)
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean big)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, name, x, y, w, h);
         use_big_images = big;
 
         if (big)
@@ -266,8 +266,8 @@ public class GUIMap extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
-        if (nw != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
-        if (nh != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
+        if (w != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
+        if (h != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
 
         createBuffer();
     }

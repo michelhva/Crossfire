@@ -35,9 +35,9 @@ public abstract class GUIItemItem extends GUIItem
      */
     private final Color nrofColor;
 
-    public GUIItemItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft, final Color nrofColor)
+    public GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, picture, pic_cursed, pic_applied, pic_selector, pic_locked, msc, mft);
+        super(jxcWindow, name, x, y, w, h, image, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.nrofColor = nrofColor;
     }
@@ -53,25 +53,25 @@ public abstract class GUIItemItem extends GUIItem
         g.drawImage(item.getFace().getOriginalImageIcon().getImage(), 0, 0, null);
         if (item.isApplied())
         {
-            g.drawImage(mypicapplied, 0, 0, null);
+            g.drawImage(appliedImage, 0, 0, null);
         }
         if (item.isCursed())
         {
-            g.drawImage(mypiccursed, 0, 0, null);
+            g.drawImage(cursedImage, 0, 0, null);
         }
         if (item.isLocked())
         {
-            g.drawImage(mypiclocked, 0, 0, null);
+            g.drawImage(lockedImage, 0, 0, null);
         }
         if (active)
         {
-            g.drawImage(mypicselector, 0, 0, null);
+            g.drawImage(selectorImage, 0, 0, null);
         }
         if (item.getNrOf() > 0)
         {
-            g.setFont(myfont);
+            g.setFont(font);
             g.setColor(nrofColor);
-            g.drawString(String.valueOf(item.getNrOf()), 1, 1+myfont.getSize());
+            g.drawString(String.valueOf(item.getNrOf()), 1, 1+font.getSize());
         }
     }
 

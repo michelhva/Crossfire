@@ -86,7 +86,7 @@ public class GUILog extends GUIElement implements GUIScrollable
      */
     private final Buffer buffer = new Buffer();
 
-    private final BufferedImage mybackground;
+    private final BufferedImage backgroundImage;
 
     /**
      * The {@link Fonts} instance for looking up fonts.
@@ -179,17 +179,18 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
      *
-     * @param nn The name of this element.
+     * @param name The name of this element.
      *
-     * @param nx The x-coordinate for drawing this element to screen.
+     * @param x The x-coordinate for drawing this element to screen.
      *
-     * @param ny The y-coordinate for drawing this element to screen.
+     * @param y The y-coordinate for drawing this element to screen.
      *
-     * @param nw The width for drawing this element to screen.
+     * @param w The width for drawing this element to screen.
      *
-     * @param nh The height for drawing this element to screen.
+     * @param h The height for drawing this element to screen.
      *
-     * @param picture The background image; may be <code>null</code> if unused.
+     * @param backgroundImage The background image; may be <code>null</code> if
+     * unused.
      *
      * @param Fonts The <code>Fonts</code> instance for looking up fonts.
      *
@@ -198,10 +199,10 @@ public class GUILog extends GUIElement implements GUIScrollable
      *
      * @param The color to replace with <code>defaultColor</code>.
      */
-    public GUILog(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final Fonts fonts, final Color defaultColor)
+    public GUILog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        mybackground = picture;
+        super(jxcWindow, name, x, y, w, h);
+        this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         this.defaultColor = defaultColor;
         createBuffer();
@@ -217,9 +218,9 @@ public class GUILog extends GUIElement implements GUIScrollable
         {
             g.setBackground(new Color(0, 0, 0, 0.0f));
             g.clearRect(0, 0, w, h);
-            if (mybackground != null)
+            if (backgroundImage != null)
             {
-                g.drawImage(mybackground, 0, 0, null);
+                g.drawImage(backgroundImage, 0, 0, null);
             }
 
             if (displayBottom)
@@ -456,9 +457,9 @@ public class GUILog extends GUIElement implements GUIScrollable
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         final Graphics2D g = mybuffer.createGraphics();
-        if (mybackground != null)
+        if (backgroundImage != null)
         {
-            g.drawImage(mybackground, 0, 0, null);
+            g.drawImage(backgroundImage, 0, 0, null);
         }
         context = g.getFontRenderContext();
         g.dispose();
