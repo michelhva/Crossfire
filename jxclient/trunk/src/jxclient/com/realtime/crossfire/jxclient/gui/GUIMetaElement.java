@@ -20,8 +20,8 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Metaserver;
-import com.realtime.crossfire.jxclient.MetaserverEntry;
+import com.realtime.crossfire.jxclient.metaserver.Metaserver;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
