@@ -52,11 +52,6 @@ public class GUIButton extends AbstractButton
 
     private final Color color;
 
-    public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final GUICommandList commandList)
-    {
-        this(jxcWindow, name, x, y, w, h, imageUp, imageDown, null, null, Color.WHITE, 0, 0, commandList);
-    }
-
     public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final GUICommandList commandList)
     {
         super(jxcWindow, name, x, y, w, h, commandList);
