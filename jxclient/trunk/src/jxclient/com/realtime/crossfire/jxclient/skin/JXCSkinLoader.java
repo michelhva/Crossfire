@@ -420,20 +420,29 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureUp = getPicture(args[6]);
                             final BufferedImage pictureDown = getPicture(args[7]);
                             final GUICommandList commandList = getCommandList(args[8]);
+                            final String label;
+                            final Font font;
+                            final Color color;
+                            final int textX;
+                            final int textY;
                             if (args.length == 9)
                             {
-                                elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, commandList));
+                                label = null;
+                                font = null;
+                                color = null;
+                                textX = 0;
+                                textY = 0;
                             }
                             else
                             {
                                 assert args.length >= 13;
-                                final Font font = fonts.lookup(args[9]);
-                                final Color color = parseColor(args[10]);
-                                final int textX = parseInt(args[11]);
-                                final int textY = parseInt(args[12]);
-                                final String label = parseText(args, 13, lnr);
-                                elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, commandList));
+                                font = fonts.lookup(args[9]);
+                                color = parseColor(args[10]);
+                                textX = parseInt(args[11]);
+                                textY = parseInt(args[12]);
+                                label = parseText(args, 13, lnr);
                             }
+                            elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, commandList));
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
