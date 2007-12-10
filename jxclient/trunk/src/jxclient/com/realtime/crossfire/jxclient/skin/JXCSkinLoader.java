@@ -550,7 +550,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
-                            if (args.length != 11)
+                            if (args.length != 12)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -565,7 +565,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[8]);
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
-                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, ""));
+                            final int margin = parseInt(args[11]);
+                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
                         }
                         else if (args[0].equals("def"))
                         {

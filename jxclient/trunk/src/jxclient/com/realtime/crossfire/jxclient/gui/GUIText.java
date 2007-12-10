@@ -49,6 +49,8 @@ public abstract class GUIText extends GUIElement implements KeyListener
 
     private final Color activeColor;
 
+    private final int margin;
+
     private final StringBuilder text;
 
     /**
@@ -61,14 +63,16 @@ public abstract class GUIText extends GUIElement implements KeyListener
      */
     private int cursor;
 
-    public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final String text)
+    public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
         super(jxcWindow, name, x, y, w, h);
+        if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
         this.font = font;
         this.inactiveColor = inactiveColor;
         this.activeColor = activeColor;
+        this.margin = margin;
         this.text = new StringBuilder(text);
         cursor = this.text.length();
         createBuffer();
@@ -120,10 +124,10 @@ public abstract class GUIText extends GUIElement implements KeyListener
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);
-                g.fillRect(cursorX1, 0, cursorX2-cursorX1, h);
+                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
             }
             g.setColor(active ? activeColor : inactiveColor);
-            g.drawString(tmp, 0, y);
+            g.drawString(tmp, margin, y);
 
             g.dispose();
         }
