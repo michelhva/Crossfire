@@ -17,7 +17,15 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.stats;
+
+import com.realtime.crossfire.jxclient.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.TimeoutEvent;
+import com.realtime.crossfire.jxclient.Timeouts;
 
 /**
  * Helper class to synthesize a "is poisoned" stat value. The Crossfire server

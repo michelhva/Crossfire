@@ -38,6 +38,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;

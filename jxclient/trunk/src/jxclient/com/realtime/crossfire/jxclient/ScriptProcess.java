@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
