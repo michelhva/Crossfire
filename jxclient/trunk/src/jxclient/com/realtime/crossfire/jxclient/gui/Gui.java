@@ -27,7 +27,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
-import java.util.ArrayList;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.EnumSet;
 import java.util.List;
 
@@ -41,7 +41,7 @@ public class Gui
     /**
      * The list of {@link GUIElement}s comprising this gui.
      */
-    private final List<GUIElement> elements = new ArrayList<GUIElement>();
+    private final List<GUIElement> elements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The key bindings for this gui.
