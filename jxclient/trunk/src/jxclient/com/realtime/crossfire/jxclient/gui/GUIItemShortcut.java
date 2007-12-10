@@ -145,7 +145,7 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollUp()
+    public boolean canScrollUp()
     {
         return false;
     }
@@ -156,7 +156,7 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollDown()
+    public boolean canScrollDown()
     {
         return false;
     }

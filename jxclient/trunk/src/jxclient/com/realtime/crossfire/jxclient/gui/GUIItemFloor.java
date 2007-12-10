@@ -96,7 +96,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollUp()
+    public boolean canScrollUp()
     {
         return index > 0;
     }
@@ -108,7 +108,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollDown()
+    public boolean canScrollDown()
     {
         return index+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
     }

@@ -83,7 +83,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollUp()
+    public boolean canScrollUp()
     {
         return myindex > 0;
     }
@@ -96,7 +96,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public boolean canScrollDown()
+    public boolean canScrollDown()
     {
         final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
         return myindex+1 < list.size();
