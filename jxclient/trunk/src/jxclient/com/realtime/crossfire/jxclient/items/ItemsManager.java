@@ -27,7 +27,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import javax.swing.event.EventListenerList;
 
 /**
@@ -365,65 +364,6 @@ public class ItemsManager
     public synchronized CfPlayer getPlayer()
     {
         return player;
-    }
-
-    /**
-     * Add pending modified events.
-     *
-     * @param modified the set of pending modified events
-     *
-     * @param items the pending events to add; may be <code>null</code>
-     */
-    private void addModified(final Set<Integer> modified, final List<CfItem> items)
-    {
-        if (items != null)
-        {
-            addModified(modified, 0, items.size());
-        }
-    }
-
-    /**
-     * Add pending modified events.
-     *
-     * @param modified the set of pending modified events
-     *
-     * @param start the first index to add
-     *
-     * @param end the first index not to add
-     */
-    private void addModified(final Set<Integer> modified, final int start, final int end)
-    {
-        for (int i = start; i < end; i++)
-        {
-            modified.add(i);
-        }
-    }
-
-    /**
-     * Deliver pending modified events.
-     *
-     * @param modified the set of pending events
-     *
-     * @param listeners the listeners to be modified
-     *
-     * @param location the location that has changed
-     */
-    private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final int location)
-    {
-        for (final int index : modified)
-        {
-            final EventListenerList tileListeners = listeners.get(index);
-            if (tileListeners != null)
-            {
-                final List<CfItem> items = getItems(location);
-                final CfItem item = 0 <= index && index < items.size() ? items.get(index) : null;
-                for (final LocationListener listener : tileListeners.getListeners(LocationListener.class))
-                {
-                    listener.locationModified(index, item);
-                }
-            }
-        }
-        modified.clear();
     }
 
     /**
