@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
@@ -27,13 +26,11 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.geom.Rectangle2D;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
-import java.awt.Image;
 import java.awt.Transparency;
 
 /**

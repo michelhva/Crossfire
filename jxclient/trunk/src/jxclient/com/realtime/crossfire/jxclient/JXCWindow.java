@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.GUICommand;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBinding;

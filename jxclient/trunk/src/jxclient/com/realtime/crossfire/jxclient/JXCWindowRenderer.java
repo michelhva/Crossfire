@@ -31,8 +31,6 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
 import java.awt.Insets;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;

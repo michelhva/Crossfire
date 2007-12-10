@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
-import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
