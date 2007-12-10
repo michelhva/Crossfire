@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.items;
 
-import com.realtime.crossfire.jxclient.CfPlayer;
 import java.util.EventListener;
 
 /**

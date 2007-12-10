@@ -20,8 +20,8 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CfItem;
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
