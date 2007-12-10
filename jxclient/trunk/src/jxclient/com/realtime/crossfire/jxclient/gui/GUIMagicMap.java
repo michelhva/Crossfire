@@ -22,8 +22,10 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
+import com.realtime.crossfire.jxclient.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.CrossfireCommandNewmapEvent;
 import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
+import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
@@ -41,6 +43,11 @@ import java.awt.Transparency;
  */
 public class GUIMagicMap extends GUIElement
 {
+    /**
+     * The size of one tile in pixels.
+     */
+    private final int TILE_SIZE = 4;
+
     private final Color[] mycolors = new Color[]
     {
         Color.BLACK, Color.WHITE, Color.BLUE,
@@ -61,8 +68,8 @@ public class GUIMagicMap extends GUIElement
             int datapos = 0;
             final byte[] data = evt.getData();
             final Graphics2D g = mybuffer.createGraphics();
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 0, w, h);
             while (data[datapos] == ' ')
             {
                 datapos++;
@@ -74,8 +81,50 @@ public class GUIMagicMap extends GUIElement
                     final byte square = data[datapos];
                     final Color scolor = square >= mycolors.length ? Color.DARK_GRAY : mycolors[square];
                     g.setColor(scolor);
-                    g.fillRect(x*4, y*4, (x*4)+4, (y*4)+4);
+                    g.fillRect(x*TILE_SIZE, y*TILE_SIZE, (x+1)*TILE_SIZE, (y+1)*TILE_SIZE);
                     datapos++;
+                }
+            }
+            g.dispose();
+            setChanged();
+        }
+    };
+
+    /**
+     * The {@link CrossfireMapscrollListener} used to track player position
+     * changes into the magic map.
+     */
+    private final CrossfireMapscrollListener crossfireMapscrollListener = new CrossfireMapscrollListener()
+    {
+        /** {@inheritDoc} */
+        public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
+        {
+            final Graphics2D g = mybuffer.createGraphics();
+            final int dx = evt.getDX()*TILE_SIZE;
+            final int dy = evt.getDY()*TILE_SIZE;
+            if (Math.abs(dx) >= w || Math.abs(dy) >= h)
+            {
+                g.fillRect(0, 0, w, h);
+            }
+            else
+            {
+                g.copyArea(dx <= 0 ? 0 : dx, dy <= 0 ? 0 : dy, dx == 0 ? w : w-Math.abs(dx), dy == 0 ? h : h-Math.abs(dy), -dx, -dy);
+                g.setColor(Color.BLACK);
+                if (dx < 0)
+                {
+                    g.fillRect(0, 0, -dx, h);
+                }
+                else if (dx > 0)
+                {
+                    g.fillRect(w-dx, 0, dx, h);
+                }
+                if (dy < 0)
+                {
+                    g.fillRect(0, 0, w, -dy);
+                }
+                else if (dy > 0)
+                {
+                    g.fillRect(0, h-dy, w, dy);
                 }
             }
             g.dispose();
@@ -93,8 +142,8 @@ public class GUIMagicMap extends GUIElement
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
             final Graphics2D g = mybuffer.createGraphics();
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 0, w, h);
             g.dispose();
             setChanged();
         }
@@ -106,6 +155,7 @@ public class GUIMagicMap extends GUIElement
         createBuffer();
         CfMagicMap.addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
+        CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
     /** {@inheritDoc} */
