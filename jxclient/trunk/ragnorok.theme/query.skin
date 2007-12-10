@@ -2,6 +2,6 @@
 dialog border 384 200 10+236+10 160 Query
 
 label_query message 10 40       236 80 font_label BLACK
-command_text input  10 40+80+10 236 20 input_active empty font_label GRAY BLACK
+command_text input  10 40+80+10 236 20 input_active empty font_label GRAY BLACK 0
 
 set_default input
