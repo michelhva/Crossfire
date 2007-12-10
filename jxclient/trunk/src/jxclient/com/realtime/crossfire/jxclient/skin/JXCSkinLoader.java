@@ -19,9 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.CfMagicMap;
-import com.realtime.crossfire.jxclient.CrossfireCommandMagicmapEvent;
-import com.realtime.crossfire.jxclient.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
@@ -61,6 +58,9 @@ import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.magicmap.CfMagicMap;
+import com.realtime.crossfire.jxclient.magicmap.CrossfireCommandMagicmapEvent;
+import com.realtime.crossfire.jxclient.magicmap.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
