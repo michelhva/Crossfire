@@ -20,8 +20,6 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import com.realtime.crossfire.jxclient.CfItem;
-import com.realtime.crossfire.jxclient.CfPlayer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
