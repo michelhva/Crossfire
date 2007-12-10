@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.Skill;
+import com.realtime.crossfire.jxclient.skills.Skill;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
