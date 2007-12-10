@@ -27,7 +27,7 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
-import com.realtime.crossfire.jxclient.Spell;
+import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;

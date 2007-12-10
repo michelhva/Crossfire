@@ -17,31 +17,15 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
-
-import java.util.EventObject;
+package com.realtime.crossfire.jxclient.spells;
 
 /**
- *
+ * A SpellListener is warned each time the currently selected spell has changed.
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
  */
-public class SpellChangedEvent extends EventObject
+public interface SpellListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    private final Spell myspell;
-
-    public SpellChangedEvent(Object src, Spell sp)
-    {
-        super(src);
-        myspell = sp;
-    }
-
-    public Spell getSpell()
-    {
-        return myspell;
-    }
+    void spellChanged(SpellChangedEvent evt);
 }

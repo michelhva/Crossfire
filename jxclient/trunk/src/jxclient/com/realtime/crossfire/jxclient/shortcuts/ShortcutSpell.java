@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Spell;
+import com.realtime.crossfire.jxclient.spells.Spell;
 
 /**
  * A {@link Shortcut} that casts a spell.

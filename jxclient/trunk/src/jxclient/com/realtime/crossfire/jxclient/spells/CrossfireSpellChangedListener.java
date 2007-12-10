@@ -17,15 +17,37 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.spells;
 
-/**
- * A SpellListener is warned each time the currently selected spell has changed.
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
- */
-public interface SpellListener
+public interface CrossfireSpellChangedListener
 {
-    void spellChanged(SpellChangedEvent evt);
+    /**
+     * A new spell was added.
+     *
+     * @param spell The added spell.
+     *
+     * @param index The current index of <code>spell</code> in the spells
+     * manager.
+     */
+    void spellAdded(Spell spell, int index);
+
+    /**
+     * A spell was removed.
+     *
+     * @param spell The removed spell.
+     *
+     * @param index The former index of <code>spell</code> in the spells
+     * manager.
+     */
+    void spellRemoved(Spell spell, int index);
+
+    /**
+     * A spell was modified.
+     *
+     * @param spell The modified spell.
+     *
+     * @param index The current index of <code>spell</code> in the spells
+     * manager.
+     */
+    void spellModified(Spell spell, int index);
 }

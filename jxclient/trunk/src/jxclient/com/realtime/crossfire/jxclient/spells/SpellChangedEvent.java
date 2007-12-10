@@ -17,37 +17,31 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.spells;
 
-public interface CrossfireSpellChangedListener
+import java.util.EventObject;
+
+/**
+ *
+ * @version 1.0
+ * @author Lauwenmark
+ * @since 1.0
+ */
+public class SpellChangedEvent extends EventObject
 {
-    /**
-     * A new spell was added.
-     *
-     * @param spell The added spell.
-     *
-     * @param index The current index of <code>spell</code> in the spells
-     * manager.
-     */
-    void spellAdded(Spell spell, int index);
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
 
-    /**
-     * A spell was removed.
-     *
-     * @param spell The removed spell.
-     *
-     * @param index The former index of <code>spell</code> in the spells
-     * manager.
-     */
-    void spellRemoved(Spell spell, int index);
+    private final Spell myspell;
 
-    /**
-     * A spell was modified.
-     *
-     * @param spell The modified spell.
-     *
-     * @param index The current index of <code>spell</code> in the spells
-     * manager.
-     */
-    void spellModified(Spell spell, int index);
+    public SpellChangedEvent(Object src, Spell sp)
+    {
+        super(src);
+        myspell = sp;
+    }
+
+    public Spell getSpell()
+    {
+        return myspell;
+    }
 }
