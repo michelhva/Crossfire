@@ -92,7 +92,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
-            Graphics2D g = mybuffer.createGraphics();
+            final Graphics2D g = mybuffer.createGraphics();
             g.setBackground(new Color(0, 0, 0, 0.0f));
             g.clearRect(0, 0, w, h);
             g.dispose();
