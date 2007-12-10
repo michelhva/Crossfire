@@ -20,8 +20,8 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.CfMapUpdater;
-import com.realtime.crossfire.jxclient.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link

@@ -17,9 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
-
-import java.util.EventObject;
+package com.realtime.crossfire.jxclient.server;
 
 /**
  *
@@ -27,29 +25,7 @@ import java.util.EventObject;
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandDrawinfoEvent extends EventObject
+public interface CrossfireQueryListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    private final String mytext;
-
-    private final int mytype;
-
-    public CrossfireCommandDrawinfoEvent(Object src, String msg, int type)
-    {
-        super(src);
-        mytext = msg;
-        mytype = type;
-    }
-
-    public int getTextType()
-    {
-        return mytype;
-    }
-
-    public String getText()
-    {
-        return mytext;
-    }
+    void commandQueryReceived(CrossfireCommandQueryEvent evt);
 }

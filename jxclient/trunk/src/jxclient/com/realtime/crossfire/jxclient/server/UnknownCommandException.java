@@ -17,15 +17,28 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
 
 /**
+ * An UnknownCommandException is generated whenever an unknown message packet is
+ * received from the server.
  *
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
  */
-public interface CrossfireQueryListener
+public class UnknownCommandException extends Exception
 {
-    void commandQueryReceived(CrossfireCommandQueryEvent evt);
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
+    /**
+     * Creates a new exception with the given text message as a parameter.
+     * @param str The message to assign to this exception.
+     * @since 1.0
+     */
+    public UnknownCommandException(String str)
+    {
+        super(str);
+    }
 }

@@ -17,7 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
 
 import java.util.EventObject;
 
@@ -27,44 +27,45 @@ import java.util.EventObject;
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandQueryEvent extends EventObject
+public class CrossfireCommandDrawextinfoEvent extends EventObject
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    /** Query type: yes/no question. */
-    public static final int YESNO = 1;
+    private final int mycolor;
 
-    /** Query type: single character response expected. */
-    public static final int SINGLECHAR = 2;
+    private final int mytype;
 
-    /** Query type: hide input being entered. */
-    public static final int HIDEINPUT = 4;
+    private final int mysubtype;
 
-    private final String myquery;
+    private final String mymessage;
 
-    private final int myquerytype;
-
-    public CrossfireCommandQueryEvent(Object src, String msg, int type)
+    public CrossfireCommandDrawextinfoEvent(Object src, int color, int type, int subtype, String message)
     {
         super(src);
-        myquery = msg;
-        myquerytype = type;
+        mycolor = color;
+        mytype = type;
+        mysubtype = subtype;
+        mymessage = message;
     }
 
-    public String getPrompt()
+    public int getColor()
     {
-        return myquery;
+        return mycolor;
     }
 
-    /**
-     * Return the query type as a bitmask of {@link #YESNO}, {@link
-     * #SINGLECHAR} and {@link #HIDEINPUT}.
-     *
-     * @return The query type bitmask.
-     */
-    public int getQueryType()
+    public int getType()
     {
-        return myquerytype;
+        return mytype;
+    }
+
+    public int getSubType()
+    {
+        return mysubtype;
+    }
+
+    public String getMessage()
+    {
+        return mymessage;
     }
 }

@@ -17,20 +17,39 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
+
+import java.util.EventObject;
 
 /**
- * Listener to be notified of updated face information.
  *
- * @author Andreas Kirschbaum
+ * @version 1.0
+ * @author Lauwenmark
+ * @since 1.0
  */
-public interface CrossfireUpdateFaceListener
+public class CrossfireCommandDrawinfoEvent extends EventObject
 {
-    /**
-     * Notification that a face has changed. This normally means that the face
-     * image now is available, but also that the face image has changed.
-     *
-     * @param faceID The face ID that has changed.
-     */
-    void updateFace(int faceID);
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
+    private final String mytext;
+
+    private final int mytype;
+
+    public CrossfireCommandDrawinfoEvent(Object src, String msg, int type)
+    {
+        super(src);
+        mytext = msg;
+        mytype = type;
+    }
+
+    public int getTextType()
+    {
+        return mytype;
+    }
+
+    public String getText()
+    {
+        return mytext;
+    }
 }
