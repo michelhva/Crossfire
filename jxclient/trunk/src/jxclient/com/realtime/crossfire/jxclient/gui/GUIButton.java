@@ -58,7 +58,7 @@ public class GUIButton extends AbstractButton
         if (imageUp == null) throw new IllegalArgumentException();
         if (imageDown == null) throw new IllegalArgumentException();
         if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
-        if (imageDown.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
+        if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
         this.imageUp = imageUp;
         this.imageDown = imageDown;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
