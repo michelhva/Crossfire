@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.faces.FacesCallback;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Spell;
+import com.realtime.crossfire.jxclient.spells.Spell;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;

@@ -21,10 +21,10 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.Spell;
+import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
+import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
