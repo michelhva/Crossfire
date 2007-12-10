@@ -54,23 +54,7 @@ public class GUIButton extends AbstractButton
 
     public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, commandList);
-        if (imageUp == null) throw new IllegalArgumentException();
-        if (imageDown == null) throw new IllegalArgumentException();
-        if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
-        if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
-        this.imageUp = imageUp;
-        this.imageDown = imageDown;
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
-        text = null;
-        font = null;
-        color = new Color(255, 255, 255);
-        textX = 0;
-        textY = 0;
-        render();
+        this(jxcWindow, name, x, y, w, h, imageUp, imageDown, null, null, new Color(255, 255, 255), 0, 0, commandList);
     }
 
     public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final GUICommandList commandList)
