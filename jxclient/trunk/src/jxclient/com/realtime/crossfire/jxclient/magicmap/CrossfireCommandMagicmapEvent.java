@@ -17,7 +17,9 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.magicmap;
+
+import java.util.EventObject;
 
 /**
  *
@@ -25,7 +27,49 @@ package com.realtime.crossfire.jxclient;
  * @author Lauwenmark
  * @since 1.0
  */
-public interface CrossfireMagicmapListener
+public class CrossfireCommandMagicmapEvent extends EventObject
 {
-    void commandMagicmapReceived(CrossfireCommandMagicmapEvent evt);
+    /** The serial version UID. */
+    private static final long serialVersionUID = 1;
+
+    private final int mywidth, myheight;
+
+    private final int mypx, mypy;
+
+    private final byte[] mydata;
+
+    public CrossfireCommandMagicmapEvent(Object src, int w, int h, int px, int py, byte[] d)
+    {
+        super(src);
+        mywidth = w;
+        myheight = h;
+        mypx = px;
+        mypy = py;
+        mydata = d;
+    }
+
+    public int getWidth()
+    {
+        return mywidth;
+    }
+
+    public int getHeight()
+    {
+        return myheight;
+    }
+
+    public int getPX()
+    {
+        return mypx;
+    }
+
+    public int getPY()
+    {
+        return mypy;
+    }
+
+    public byte[] getData()
+    {
+        return mydata;
+    }
 }
