@@ -100,9 +100,9 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh)
+    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, name, x, y, w, h);
         createBuffer();
         CfMagicMap.addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);

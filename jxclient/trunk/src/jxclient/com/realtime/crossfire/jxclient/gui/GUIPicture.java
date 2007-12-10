@@ -54,21 +54,21 @@ public class GUIPicture extends GUIElement
      *
      * @param picture The picture to paint.
      */
-    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture)
+    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image)
     {
-        this(jxcWindow, name, x, y, w, h, picture, 1F);
+        this(jxcWindow, name, x, y, w, h, image, 1F);
     }
 
-    public GUIPicture(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, float alpha)
+    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, float alpha)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
+        super(jxcWindow, name, x, y, w, h);
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(nw, nh, picture.getTransparency());
+        mybuffer = gconf.createCompatibleImage(w, h, image.getTransparency());
         final Graphics2D g = mybuffer.createGraphics();
         g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-        g.drawImage(picture, 0, 0, picture.getWidth(), picture.getHeight(), null);
+        g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
         g.dispose();
         setChanged();
     }

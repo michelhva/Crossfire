@@ -45,19 +45,19 @@ import java.awt.Transparency;
  */
 public abstract class GUIItem extends GUIElement implements GUIScrollable
 {
-    protected final BufferedImage mypiccursed;
+    protected final BufferedImage cursedImage;
 
-    protected final BufferedImage mypicapplied;
+    protected final BufferedImage appliedImage;
 
-    protected final BufferedImage mypicselector;
+    protected final BufferedImage selectorImage;
 
-    private final BufferedImage mypicbackground;
+    private final BufferedImage image;
 
-    protected final BufferedImage mypiclocked;
+    protected final BufferedImage lockedImage;
 
-    private CfItem myitem = null;
+    private CfItem item = null;
 
-    protected final Font myfont;
+    protected final Font font;
 
     /**
      * The background color of this item.
@@ -73,7 +73,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
         /** {@inheritDoc} */
         public void itemModified(final CfItem item)
         {
-            assert myitem == item;
+            assert GUIItem.this.item == item;
             render();
         }
     };
@@ -87,12 +87,12 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
         /** {@inheritDoc} */
         public void updateFace(final int faceID)
         {
-            if (myitem == null)
+            if (item == null)
             {
                 return;
             }
 
-            final Face face = myitem.getFace();
+            final Face face = item.getFace();
             if (face == null || face.getID() != faceID)
             {
                 return;
@@ -102,16 +102,16 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
         }
     };
 
-    public GUIItem(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture, final BufferedImage pic_cursed, final BufferedImage pic_applied, final BufferedImage pic_selector, final BufferedImage pic_locked, final CrossfireServerConnection msc, final Font mft)
+    public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        mypicbackground = picture;
-        mypiccursed = pic_cursed;
-        mypicapplied = pic_applied;
-        mypicselector = pic_selector;
-        mypiclocked = pic_locked;
+        super(jxcWindow, name, x, y, w, h);
+        this.image = image;
+        this.cursedImage = cursedImage;
+        this.appliedImage = appliedImage;
+        this.selectorImage = selectorImage;
+        this.lockedImage = lockedImage;
         active = false;
-        myfont = mft;
+        this.font = font;
         createBuffer();
         render();
         jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
@@ -161,7 +161,7 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
     protected void render()
     {
         final Graphics2D g = mybuffer.createGraphics();
-        g.drawImage(mypicbackground, 0, 0, null);
+        g.drawImage(image, 0, 0, null);
 
         g.setBackground(backgroundColor);
         g.clearRect(0, 0, w, h);
@@ -180,24 +180,24 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
 
     protected CfItem getItem()
     {
-        return myitem;
+        return item;
     }
 
     protected void setItem(final CfItem item)
     {
-        if (myitem == item)
+        if (this.item == item)
         {
             return;
         }
 
-        if (myitem != null)
+        if (this.item != null)
         {
-            myitem.removeCfItemModifiedListener(itemModifiedListener);
+            this.item.removeCfItemModifiedListener(itemModifiedListener);
         }
-        myitem = item;
-        if (myitem != null)
+        this.item = item;
+        if (this.item != null)
         {
-            myitem.addCfItemModifiedListener(itemModifiedListener);
+            this.item.addCfItemModifiedListener(itemModifiedListener);
         }
 
         render();

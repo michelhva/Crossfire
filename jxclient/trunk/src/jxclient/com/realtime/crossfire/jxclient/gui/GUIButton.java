@@ -38,59 +38,59 @@ import java.awt.Transparency;
  */
 public class GUIButton extends AbstractButton
 {
-    private final BufferedImage mypicture_up;
+    private final BufferedImage imageUp;
 
-    private final BufferedImage mypicture_down;
+    private final BufferedImage imageDown;
 
-    private final String mytext;
+    private final String text;
 
-    private final Font myfont;
+    private final Font font;
 
-    private final int mytx;
+    private final int textX;
 
-    private final int myty;
+    private final int textY;
 
-    private final Color myfontcolor;
+    private final Color color;
 
-    public GUIButton(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picup, final BufferedImage picdown, final GUICommandList cmd)
+    public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final GUICommandList commandList)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, cmd);
-        if (picup == null) throw new IllegalArgumentException();
-        if (picdown == null) throw new IllegalArgumentException();
-        if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
-        if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
-        mypicture_up = picup;
-        mypicture_down = picdown;
+        super(jxcWindow, name, x, y, w, h, commandList);
+        if (imageUp == null) throw new IllegalArgumentException();
+        if (imageDown == null) throw new IllegalArgumentException();
+        if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
+        if (imageDown.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
+        this.imageUp = imageUp;
+        this.imageDown = imageDown;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(picup.getWidth(), picup.getHeight(), Transparency.TRANSLUCENT);
-        mytext = null;
-        myfont = null;
-        myfontcolor = new Color(255, 255, 255);
-        mytx = 0;
-        myty = 0;
+        mybuffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
+        text = null;
+        font = null;
+        color = new Color(255, 255, 255);
+        textX = 0;
+        textY = 0;
         render();
     }
 
-    public GUIButton(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picup, final BufferedImage picdown, final String txt, final Font f, final Color mfc, final int tx, final int ty, final GUICommandList cmd)
+    public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final GUICommandList commandList)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh, cmd);
-        if (picup == null) throw new IllegalArgumentException();
-        if (picdown == null) throw new IllegalArgumentException();
-        if (picup.getWidth() != picdown.getWidth()) throw new IllegalArgumentException();
-        if (picup.getHeight() != picdown.getHeight()) throw new IllegalArgumentException();
-        mypicture_up = picup;
-        mypicture_down = picdown;
+        super(jxcWindow, name, x, y, w, h, commandList);
+        if (imageUp == null) throw new IllegalArgumentException();
+        if (imageDown == null) throw new IllegalArgumentException();
+        if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
+        if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
+        this.imageUp = imageUp;
+        this.imageDown = imageDown;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(picup.getWidth(), picup.getHeight(), Transparency.TRANSLUCENT);
-        mytext = txt;
-        myfont = f;
-        myfontcolor = mfc;
-        mytx = tx;
-        myty = ty;
+        mybuffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
+        this.text = text;
+        this.font = font;
+        this.color = color;
+        this.textX = textX;
+        this.textY = textY;
         render();
     }
 
@@ -104,12 +104,12 @@ public class GUIButton extends AbstractButton
     public void render()
     {
         final Graphics2D g = mybuffer.createGraphics();
-        g.setFont(myfont);
-        g.setColor(myfontcolor);
-        g.drawImage(active ? mypicture_down : mypicture_up, 0, 0, null);
-        if (mytext != null)
+        g.setFont(font);
+        g.setColor(color);
+        g.drawImage(active ? imageDown : imageUp, 0, 0, null);
+        if (text != null)
         {
-            g.drawString(mytext, mytx, myty);
+            g.drawString(text, textX, textY);
         }
         g.dispose();
         setChanged();

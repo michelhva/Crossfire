@@ -64,11 +64,11 @@ public class GUIGauge extends GUIElement
 
     private BufferedImage fPicture = null;
 
-    private final BufferedImage pictureFull;
+    private final BufferedImage fullImage;
 
-    private final BufferedImage pictureNegative;
+    private final BufferedImage negativeImage;
 
-    private final BufferedImage pictureEmpty;
+    private final BufferedImage emptyImage;
 
     private final Orientation orientation;
 
@@ -82,15 +82,15 @@ public class GUIGauge extends GUIElement
         SN,
     }
 
-    public GUIGauge(final JXCWindow jxcWindow, final String nn, final int nx, final int ny, final int nw, final int nh, final BufferedImage picture_full, final BufferedImage picture_negative, final BufferedImage picture_empty, final Orientation orientation, final String tooltipPrefix)
+    public GUIGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImage, final BufferedImage negativeImage, final BufferedImage emptyImage, final Orientation orientation, final String tooltipPrefix)
     {
-        super(jxcWindow, nn, nx, ny, nw, nh);
-        checkSize(picture_full, "full", nw, nh);
-        checkSize(picture_negative, "negative", nw, nh);
-        checkSize(picture_empty, "empty", nw, nh);
-        pictureFull = picture_full;
-        pictureNegative = picture_negative;
-        pictureEmpty = picture_empty;
+        super(jxcWindow, name, x, y, w, h);
+        checkSize(fullImage, "full", w, h);
+        checkSize(negativeImage, "negative", w, h);
+        checkSize(emptyImage, "empty", w, h);
+        this.fullImage = fullImage;
+        this.negativeImage = negativeImage;
+        this.emptyImage = emptyImage;
         createBuffer();
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
@@ -143,7 +143,7 @@ public class GUIGauge extends GUIElement
         int fx = 0;
         int fy = 0;
 
-        if (curValue < 0 && pictureNegative != null)
+        if (curValue < 0 && negativeImage != null)
         {
             switch (orientation)
             {
@@ -151,26 +151,26 @@ public class GUIGauge extends GUIElement
                 fw = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
                 fh = h;
                 fx = w-fw;
-                draw(fx, fy, fw, fh, pictureNegative);
+                draw(fx, fy, fw, fh, negativeImage);
                 break;
 
             case EW:
                 fw = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
                 fh = h;
-                draw(fx, fy, fw, fh, pictureNegative);
+                draw(fx, fy, fw, fh, negativeImage);
                 break;
 
             case NS:
                 fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
                 fw = w;
                 fy = h-fh;
-                draw(fx, fy, fw, fh, pictureNegative);
+                draw(fx, fy, fw, fh, negativeImage);
                 break;
 
             case SN:
                 fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
                 fw = w;
-                draw(fx, fy, fw, fh, pictureNegative);
+                draw(fx, fy, fw, fh, negativeImage);
                 break;
             }
         }
@@ -181,27 +181,27 @@ public class GUIGauge extends GUIElement
             case WE:
                 fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
                 fh = h;
-                draw(fx, fy, fw, fh, pictureFull);
+                draw(fx, fy, fw, fh, fullImage);
                 break;
 
             case EW:
                 fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
                 fh = h;
                 fx = w-fw;
-                draw(fx, fy, fw, fh, pictureFull);
+                draw(fx, fy, fw, fh, fullImage);
                 break;
 
             case NS:
                 fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
                 fw = w;
-                draw(fx, fy, fw, fh, pictureFull);
+                draw(fx, fy, fw, fh, fullImage);
                 break;
 
             case SN:
                 fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
                 fy = h-fh;
                 fw = w;
-                draw(fx, fy, fw, fh, pictureFull);
+                draw(fx, fy, fw, fh, fullImage);
                 break;
             }
         }
@@ -278,9 +278,9 @@ public class GUIGauge extends GUIElement
         final Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
-        if (pictureEmpty != null)
+        if (emptyImage != null)
         {
-            g.drawImage(pictureEmpty, 0, 0, null);
+            g.drawImage(emptyImage, 0, 0, null);
         }
         if (fPicture != null)
         {
