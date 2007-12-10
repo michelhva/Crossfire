@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.Animation;
-import com.realtime.crossfire.jxclient.Animations;
+import com.realtime.crossfire.jxclient.animations.Animation;
+import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.CfMagicMap;
 import com.realtime.crossfire.jxclient.CfMapUpdater;
 import com.realtime.crossfire.jxclient.ExperienceTable;
