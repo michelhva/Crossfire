@@ -19,17 +19,17 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.CfMapUpdater;
-import com.realtime.crossfire.jxclient.CrossfireCommandMapEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandMapscrollEvent;
-import com.realtime.crossfire.jxclient.CrossfireCommandNewmapEvent;
-import com.realtime.crossfire.jxclient.CrossfireMapListener;
-import com.realtime.crossfire.jxclient.CrossfireMapscrollListener;
-import com.realtime.crossfire.jxclient.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapEvent;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandNewmapEvent;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapListener;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
