@@ -87,6 +87,10 @@ public class StatGaugeUpdater extends GaugeUpdater
                 setValues(getPercentsToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience())/10, 0, 9);
                 break;
 
+            case Stats.C_STAT_POISONED:
+                setValues(s.getStat(Stats.C_STAT_POISONED), 0, 1);
+                break;
+
             default:
                 if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
                 {

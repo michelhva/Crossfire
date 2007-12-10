@@ -25,7 +25,8 @@ label_stat label_sp  844+72   3+732 32  32 font_types WHITE SP CENTER
 # Map View Gauges
 picture hpbar_back 478 340 68 7 hpbar_frame
 gauge hpbar        479 341 66 5 hpbar_full null hpbar_empty HP WE
-gauge lowfood      499 285 25 45 lowfood null null LOWFOOD WE
+gauge lowfood      499 286 25 45 lowfood null null LOWFOOD WE
+gauge poisoned     501 299 20 30 poisoned null null POISONED WE
 
 # UpperPane (207, 27)
 picture title_back          0+227  0+27 610 56 title
