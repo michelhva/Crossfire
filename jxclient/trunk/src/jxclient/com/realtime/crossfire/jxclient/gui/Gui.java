@@ -381,6 +381,13 @@ public class Gui
             }
         }
 
+        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
+        if (keyBinding != null)
+        {
+            keyBinding.getCommands().execute();
+            return true;
+        }
+
         return false;
     }
 
