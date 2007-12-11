@@ -118,7 +118,8 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         }
     }
 
-    public void setActive(final boolean active)
+    /** {@inheritDoc} */
+    @Override public void setActive(final boolean active)
     {
         if (this.active && !active)
         {
