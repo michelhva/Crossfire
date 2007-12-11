@@ -210,7 +210,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             break;
 
         case KeyEvent.VK_RIGHT:
-            if (cursor <text.length())
+            if (cursor < text.length())
             {
                 setCursor(cursor+1);
                 render();
