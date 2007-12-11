@@ -149,11 +149,11 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
 
     protected abstract void button3Clicked(final JXCWindow jxcw);
 
-    public void setActive(final boolean act)
+    public void setActive(final boolean active)
     {
-        if (active != act)
+        if (this.active != active)
         {
-            active = act;
+            this.active = active;
             render();
         }
     }
