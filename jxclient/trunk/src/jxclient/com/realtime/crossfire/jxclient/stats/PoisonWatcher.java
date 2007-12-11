@@ -138,22 +138,25 @@ public class PoisonWatcher
      */
     private void setActive(final boolean active)
     {
-        if (active)
+        synchronized (this)
         {
-            Timeouts.reset(TIMEOUT_DEASSERT, timeoutEvent);
-        }
-        else
-        {
-            Timeouts.remove(timeoutEvent);
-        }
+            if (active)
+            {
+                Timeouts.reset(TIMEOUT_DEASSERT, timeoutEvent);
+            }
+            else
+            {
+                Timeouts.remove(timeoutEvent);
+            }
 
-        if (this.active == active)
-        {
-            return;
-        }
+            if (this.active == active)
+            {
+                return;
+            }
 
-        this.active = active;
-        stats.setStat(Stats.C_STAT_POISONED, active ? 1 : 0);
+            this.active = active;
+            stats.setStat(Stats.C_STAT_POISONED, active ? 1 : 0);
+        }
         stats.setStatsProcessed();
     }
 }
