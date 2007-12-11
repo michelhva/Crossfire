@@ -213,7 +213,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (cursor < text.length())
             {
                 setCursor(cursor+1);
-                render();
             }
             break;
 
