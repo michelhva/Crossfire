@@ -1186,6 +1186,15 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             elements.lookup(args[1]).setVisible(false);
                         }
+                        else if (gui != null && args[0].equals("set_modal"))
+                        {
+                            if (args.length != 1)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            gui.setModal(true);
+                        }
                         else if (gui != null && args[0].equals("text"))
                         {
                             if (args.length != 12)

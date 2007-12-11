@@ -1,5 +1,6 @@
 
 dialog dialog 350 200 23+200+21 38+100+16
+set_modal
 
 label_query message 35  60 180 32 font_stats13 WHITE
 command_text input  50 100 132 20 textarea_medium_active textarea_medium_inactive font_cmdline14 GRAY WHITE 0

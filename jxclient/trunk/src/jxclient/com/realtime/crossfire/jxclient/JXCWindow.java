@@ -956,6 +956,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                         {
                             return;
                         }
+                        if (dialog.isModal())
+                        {
+                            return;
+                        }
                     }
                 }
                 if (jxcWindowRenderer.getCurrentGui().handleKeyPress(e))
@@ -1015,6 +1019,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
                 {
                     if (dialog.handleKeyTyped(e))
+                    {
+                        return;
+                    }
+                    if (dialog.isModal())
                     {
                         return;
                     }
@@ -1143,6 +1151,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                 {
                     break;
                 }
+            }
+            if (dialog.isModal())
+            {
+                return null;
             }
         }
 
@@ -1534,6 +1546,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
                     openDialog(dialog); // raise dialog
                     return textArea2;
                 }
+            }
+            if (dialog.isModal())
+            {
+                return null;
             }
         }
 

@@ -1,5 +1,6 @@
 
 dialog dialog         398 260 4+220+4 4+120+4 Disconnect from server?
+set_modal
 
 label_multi message    10  40  208 40 font_label BLACK <<EOF
 Do you really want to disconnect
