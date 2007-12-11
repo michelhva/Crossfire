@@ -34,6 +34,9 @@ import java.util.List;
 /**
  * Combines a list of {@link GUIElement}s to for a gui.
  *
+ * <p>A dialog can be modal. Such dialogs do not propagate key or mouse events
+ * to lower dialogs.
+ *
  * @author Andreas Kirschbaum
  */
 public class Gui
@@ -47,6 +50,11 @@ public class Gui
      * The key bindings for this gui.
      */
     private final KeyBindings keyBindings = new KeyBindings();
+
+    /**
+     * Whether this dialog is modal.
+     */
+    private boolean modal = false;
 
     /**
      * The gui states that do not show this dialog.
@@ -96,6 +104,26 @@ public class Gui
         this.x = x;
         this.y = y;
         hasChangedElements = true;
+    }
+
+    /**
+     * Set the modal state.
+     *
+     * @param modal The new modal state.
+     */
+    public void setModal(final boolean modal)
+    {
+        this.modal = modal;
+    }
+
+    /**
+     * Return the modal state.
+     *
+     * @return The modal state.
+     */
+    public boolean isModal()
+    {
+        return modal;
     }
 
     /**

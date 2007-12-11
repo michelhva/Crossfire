@@ -1,5 +1,11 @@
 2007-12-11  Andreas Kirschbaum
 
+	* Implement 'set_modal' skin command: it marks a dialog as
+	"modal". Use this to prevent query, quit, and keybinding dialogs
+	from losing the focus.
+
+2007-12-11  Andreas Kirschbaum
+
 	* Implement autorepeat buttons. Use these for message window and
 	item lists.
 
