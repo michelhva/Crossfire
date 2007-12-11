@@ -95,10 +95,13 @@ public class TextButtonFactory
      *
      * @param text The button text.
      *
+     * @param autoRepeat Whether the button should autorepeat while being
+     * pressed.
+     *
      * @param commandList The commands to execute when the button is elected.
      */
-    public GUITextButton newTextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String text, final GUICommandList commandList)
+    public GUITextButton newTextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
     {
-        return new GUITextButton(jxcWindow, name, x, y, w, h, up, down, text, font, color, commandList);
+        return new GUITextButton(jxcWindow, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }
 }

@@ -3,7 +3,7 @@ dialog border 262  55 408 280
 dialog_state plain_dialog_status false Whether the status dialog is open.
 dialog_hide START META LOGIN
 label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
-button button_close    388   4  16  16 close_up close_down command_status
+button button_close    388   4  16  16 close_up close_down false command_status
 
 label_text label_lvl    10  40 100  16 font_label BLACK Level:
 label_text label_xp     10  60 100  16 font_label BLACK Experience:

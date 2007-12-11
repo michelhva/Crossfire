@@ -92,11 +92,14 @@ public class GUITextButton extends AbstractButton
      *
      * @param color The text color.
      *
+     * @param autoRepeat Whether the button should autorepeat while being
+     * pressed.
+     *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final GUICommandList commandList)
+    public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, commandList);
+        super(jxcWindow, name, x, y, w, h, autoRepeat, commandList);
         if (up == null) throw new IllegalArgumentException();
         if (down == null) throw new IllegalArgumentException();
         if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);

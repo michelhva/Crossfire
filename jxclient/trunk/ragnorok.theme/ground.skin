@@ -3,7 +3,7 @@ dialog border -5 731 1034 42
 dialog_state plain_dialog_ground true Whether the ground view is open.
 dialog_hide START META LOGIN
 
-button button_left     5 5 16 32 scroll_left_up scroll_left_down command_ground_left
+button button_left     5 5 16 32 scroll_left_up scroll_left_down true command_ground_left
 item floor floor0     21 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK
 item floor floor1     53 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked  1 font_item BLACK
 item floor floor2     85 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked  2 font_item BLACK
@@ -35,7 +35,7 @@ item floor floor27   884 5 32 32 empty marker_cursed marker_applied inventory_se
 item floor floor28   915 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
 item floor floor29   947 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
 item floor floor30   989 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
-button button_right 1013 5 16 32 scroll_right_up scroll_right_down command_ground_right
+button button_right 1013 5 16 32 scroll_right_up scroll_right_down true command_ground_right
 
 commandlist_add command_ground_left floor0 SCROLLUP
 commandlist_add command_ground_left floor1 SCROLLUP

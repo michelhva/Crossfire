@@ -50,10 +50,10 @@ commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
 commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
 commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
 
-textbutton metaconnect 720 650 70 18 command_metaconnect Connect
-textbutton metacancel  720 680 70 18 command_metacancel  Cancel
-button metaup      270 235  20 25 metaup              metaup              command_metaup
-button metadown    270 470  20 25 metadown            metadown            command_metadown
+textbutton metaconnect 720 650 70 18 false command_metaconnect Connect
+textbutton metacancel  720 680 70 18 false command_metacancel  Cancel
+button metaup      270 235  20 25 metaup metaup true command_metaup
+button metadown    270 470  20 25 metadown metadown true command_metadown
 
 set_default metaurl
 

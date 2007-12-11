@@ -54,12 +54,12 @@ commandlist_add command_magicmap_undisplay magicmap_content HIDE
 commandlist_add command_magicmap_undisplay magicmap HIDE
 event magicmap command_magicmap_display
 
-button btn_magicmap_hide 0+63 0+3 232 20 magicmap_extended_inactive magicmap_extended_active command_magicmap_undisplay
-button btn_magicmap_show 0+63 0+3 232 20 magicmap_shrinked_inactive magicmap_shrinked_active command_magicmap_display
+button btn_magicmap_hide 0+63 0+3 232 20 magicmap_extended_inactive magicmap_extended_active false command_magicmap_undisplay
+button btn_magicmap_show 0+63 0+3 232 20 magicmap_shrinked_inactive magicmap_shrinked_active false command_magicmap_display
 
 commandlist command_menu_display
 
-button btn_menu 260+63 0+3 50 20 button_menu_inactive button_menu_active command_menu_display
+button btn_menu 260+63 0+3 50 20 button_menu_inactive button_menu_active false command_menu_display
 
 set_invisible btn_magicmap_hide
 commandlist_add command_magicmap_undisplay btn_magicmap_show SHOW
@@ -234,11 +234,11 @@ commandlist_add rsp_down rspH SCROLLDOWN
 commandlist_add rsp_down rspI SCROLLDOWN
 commandlist_add rsp_down rspJ SCROLLDOWN
 
-button btn_rinv_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed rinv_up
-button btn_rinv_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed rinv_down
+button btn_rinv_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rinv_up
+button btn_rinv_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rinv_down
 
-button btn_rsp_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed rsp_up
-button btn_rsp_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed rsp_down
+button btn_rsp_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rsp_up
+button btn_rsp_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rsp_down
 
 set_invisible btn_rsp_up
 set_invisible btn_rsp_down
@@ -514,15 +514,15 @@ commandlist_add rsp_undisplay grF_back SHOW
 commandlist_add rsp_undisplay grG_back SHOW
 commandlist_add rsp_undisplay grH_back SHOW
 
-button btn_rsp_display 690+72 22+732 25 14 button_chat_inactive button_chat_active rsp_display
-button btn_rsp_undisplay 690+72 22+732 25 14 button_chat_pushed button_chat_active rsp_undisplay
+button btn_rsp_display 690+72 22+732 25 14 button_chat_inactive button_chat_active false rsp_display
+button btn_rsp_undisplay 690+72 22+732 25 14 button_chat_pushed button_chat_active false rsp_undisplay
 set_invisible btn_rsp_undisplay
 commandlist_add rsp_undisplay btn_rsp_undisplay HIDE
 commandlist_add rsp_undisplay btn_rsp_display SHOW
 commandlist_add rsp_display btn_rsp_display HIDE
 commandlist_add rsp_display btn_rsp_undisplay SHOW
 
-button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active command_menu_display
+button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active false command_menu_display
 
 # TextPaneUp (679, 100)
 picture log_upper_back 0+679 0+100 272 204 log1_background
@@ -534,13 +534,13 @@ commandlist_add command_log_upper_up log_upper SCROLLUP
 commandlist command_log_upper_down
 commandlist_add command_log_upper_down log_upper SCROLLDOWN
 
-button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive command_log_upper_up
-button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive command_log_upper_down
+button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
+button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
 
 commandlist command_log_open
 commandlist command_log_close
-button log_open 270+681 160+100 16 40 log1_shrinked_inactive log1_shrinked_pushed command_log_open
-button log_close 270+681 160+100 16 40 log1_expanded_inactive log1_expanded_pushed command_log_close
+button log_open 270+681 160+100 16 40 log1_shrinked_inactive log1_shrinked_pushed false command_log_open
+button log_close 270+681 160+100 16 40 log1_expanded_inactive log1_expanded_pushed false command_log_close
 commandlist_add command_log_open log_upper_back SHOW
 commandlist_add command_log_open log_upper SHOW
 commandlist_add command_log_open log_upper_up SHOW

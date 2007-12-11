@@ -407,7 +407,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("button"))
                         {
-                            if (args.length != 9 && args.length < 13)
+                            if (args.length != 10 && args.length < 14)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -419,13 +419,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureUp = getPicture(args[6]);
                             final BufferedImage pictureDown = getPicture(args[7]);
-                            final GUICommandList commandList = getCommandList(args[8]);
+                            final boolean autoRepeat = parseBoolean(args[8]);
+                            final GUICommandList commandList = getCommandList(args[9]);
                             final String label;
                             final Font font;
                             final Color color;
                             final int textX;
                             final int textY;
-                            if (args.length == 9)
+                            if (args.length == 10)
                             {
                                 label = null;
                                 font = null;
@@ -435,14 +436,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else
                             {
-                                assert args.length >= 13;
-                                font = fonts.lookup(args[9]);
-                                color = parseColor(args[10]);
-                                textX = parseInt(args[11]);
-                                textY = parseInt(args[12]);
-                                label = parseText(args, 13, lnr);
+                                assert args.length >= 14;
+                                font = fonts.lookup(args[10]);
+                                color = parseColor(args[11]);
+                                textX = parseInt(args[12]);
+                                textY = parseInt(args[13]);
+                                label = parseText(args, 14, lnr);
                             }
-                            elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, commandList));
+                            elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, autoRepeat, commandList));
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
@@ -1222,9 +1223,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final GUICommandList commandList = getCommandList(args[6]);
-                            final String text = parseText(args, 7, lnr);
-                            elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, commandList));
+                            final boolean autoRepeat = parseBoolean(args[6]);
+                            final GUICommandList commandList = getCommandList(args[7]);
+                            final String text = parseText(args, 8, lnr);
+                            elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
                         }
                         else if (gui != null && args[0].equals("textgauge"))
                         {

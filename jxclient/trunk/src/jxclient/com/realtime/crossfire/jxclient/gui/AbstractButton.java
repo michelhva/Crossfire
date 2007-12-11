@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.TimeoutEvent;
+import com.realtime.crossfire.jxclient.Timeouts;
 import java.awt.event.MouseEvent;
 
 /**
@@ -31,9 +33,34 @@ import java.awt.event.MouseEvent;
 public abstract class AbstractButton extends GUIElement
 {
     /**
+     * The autorepeat delay initially.
+     */
+    private static final int TIMEOUT_FIRST = 350;
+
+    /**
+     * The autorepeat delay for further repeats.
+     */
+    private static final int TIMEOUT_SECOND = 80;
+
+    /**
+     * Whether this button should autorepeat.
+     */
+    private final boolean autoRepeat;
+
+    /**
      * The commands to execute when the button is elected.
      */
     private final GUICommandList commandList;
+
+    private final TimeoutEvent timeoutEvent = new TimeoutEvent()
+    {
+        /** {@inheritDoc} */
+        public void timeout()
+        {
+            execute();
+            Timeouts.reset(TIMEOUT_SECOND, timeoutEvent);
+        }
+    };
 
     /**
      * Create a new instance.
@@ -50,12 +77,16 @@ public abstract class AbstractButton extends GUIElement
      *
      * @param h The height for drawing this element to screen.
      *
+     * @param autoRepeat Whether the button should autorepeat while being
+     * pressed.
+     *
      * @param commandList The commands to execute when the button is elected.
      */
-    public AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final GUICommandList commandList)
+    public AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean autoRepeat, final GUICommandList commandList)
     {
         super(jxcWindow, name, x, y, w, h);
         if (commandList == null) throw new IllegalArgumentException();
+        this.autoRepeat = autoRepeat;
         this.commandList = commandList;
     }
 
@@ -67,7 +98,15 @@ public abstract class AbstractButton extends GUIElement
         switch (b)
         {
         case MouseEvent.BUTTON1:
-            execute();
+            if (autoRepeat)
+            {
+                Timeouts.remove(timeoutEvent);
+                setActive(false);
+            }
+            else
+            {
+                execute();
+            }
             break;
 
         case MouseEvent.BUTTON2:
@@ -86,7 +125,15 @@ public abstract class AbstractButton extends GUIElement
         switch (b)
         {
         case MouseEvent.BUTTON1:
-            setActive(true);
+            if (autoRepeat)
+            {
+                execute();
+                Timeouts.reset(TIMEOUT_FIRST, timeoutEvent);
+            }
+            else
+            {
+                setActive(true);
+            }
             break;
 
         case MouseEvent.BUTTON2:
@@ -109,7 +156,10 @@ public abstract class AbstractButton extends GUIElement
         }
         finally
         {
-            setActive(false);
+            if (!autoRepeat)
+            {
+                setActive(false);
+            }
         }
     }
 }
