@@ -614,10 +614,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return;
         }
 
-        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
-        if (keyBinding != null)
+        if (keyBindings.handleKeyPress(e))
         {
-            keyBinding.getCommands().execute();
             return;
         }
 
@@ -831,10 +829,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             return;
         }
 
-        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
-        if (keyBinding != null)
+        if (keyBindings.handleKeyTyped(e))
         {
-            keyBinding.getCommands().execute();
             return;
         }
 
