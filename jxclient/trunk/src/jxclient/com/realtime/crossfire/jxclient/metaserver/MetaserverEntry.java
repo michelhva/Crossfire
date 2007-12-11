@@ -20,74 +20,98 @@
 package com.realtime.crossfire.jxclient.metaserver;
 
 /**
+ * Represents a response line from the metaserver.
  *
- * @version 1.0
- * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
 public class MetaserverEntry implements Comparable<MetaserverEntry>
 {
-    private final String myip;
+    private final String ipAddress;
 
-    private final String myhost;
+    private final int updateSeconds;
 
-    private final String mycomment;
+    private final String hostname;
 
-    private final String myversion;
+    private final int players;
 
-    private final int mynrplayers;
+    private final String version;
 
-    private final int myping;
+    private final String comment;
 
-    public MetaserverEntry(String ip, String host, String comment, String version, int nrplayers, int ping)
+    private final long bytesIn;
+
+    private final long bytesOut;
+
+    private final int uptimeSeconds;
+
+    public MetaserverEntry(final String ipAddress, final int updateSeconds, final String hostname, final int players, final String version, final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds)
     {
-        myip = ip;
-        myhost = host;
-        mycomment = comment;
-        myversion = version;
-        mynrplayers = nrplayers;
-        myping = ping;
+        this.ipAddress = ipAddress;
+        this.updateSeconds = updateSeconds;
+        this.hostname = hostname;
+        this.players = players;
+        this.version = version;
+        this.comment = comment;
+        this.bytesIn = bytesIn;
+        this.bytesOut = bytesOut;
+        this.uptimeSeconds = uptimeSeconds;
     }
 
-    public String toString()
+    public String getIpAddress()
     {
-        return "IP:"+myip+" Host:"+myhost+" Version:"+myversion+" Players:"+mynrplayers+" Ping:"+myping+" Comment:"+mycomment;
+        return ipAddress;
     }
 
-    public String getIP()
+    public int getUpdateSeconds()
     {
-        return myip;
+        return updateSeconds;
     }
 
-    public String getHost()
+    public String getHostname()
     {
-        return myhost;
+        return hostname;
     }
 
-    public String getComment()
+    public int getPlayers()
     {
-        return mycomment;
+        return players;
     }
 
     public String getVersion()
     {
-        return myversion;
+        return version;
     }
 
-    public int getNrPlayers()
+    public String getComment()
     {
-        return mynrplayers;
+        return comment;
     }
 
-    public int getPing()
+    public long getBytesIn()
     {
-        return myping;
+        return bytesIn;
+    }
+
+    public long getBytesOut()
+    {
+        return bytesOut;
+    }
+
+    public int getUptimeSeconds()
+    {
+        return uptimeSeconds;
+    }
+
+    /** {@inheritDoc} */
+    public String toString()
+    {
+        return "IP:"+ipAddress+" Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
     }
 
     /** {@inheritDoc} */
     public int compareTo(final MetaserverEntry o)
     {
-        return myhost.compareTo(o.myhost);
+        return hostname.compareTo(o.hostname);
     }
 
     /**
@@ -96,10 +120,14 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      * <p>Supported format strings:
      * <ul>
      * <li>%% - a literal % character
+     * <li>%A - ip address
      * <li>%C - comment
-     * <li>%H - host name
-     * <li>%L - ping time
+     * <li>%H - hostname
+     * <li>%I - bytes in
+     * <li>%O - bytes out
      * <li>%P - number of players
+     * <li>%T - uptime
+     * <li>%U - time since last update
      * <li>%V - server version
      * </ul>
      *
@@ -126,24 +154,40 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     sb.append('%');
                     break;
 
+                case 'A':
+                    sb.append(ipAddress);
+                    break;
+
                 case 'C':
-                    sb.append(mycomment);
+                    sb.append(comment);
                     break;
 
                 case 'H':
-                    sb.append(myhost);
+                    sb.append(hostname);
                     break;
 
-                case 'L':
-                    sb.append(myping);
+                case 'I':
+                    sb.append(bytesIn);
+                    break;
+
+                case 'O':
+                    sb.append(bytesOut);
                     break;
 
                 case 'P':
-                    sb.append(mynrplayers);
+                    sb.append(players);
+                    break;
+
+                case 'U':
+                    sb.append(updateSeconds);
+                    break;
+
+                case 'T':
+                    sb.append(uptimeSeconds);
                     break;
 
                 case 'V':
-                    sb.append(myversion);
+                    sb.append(version);
                     break;
 
                 default:

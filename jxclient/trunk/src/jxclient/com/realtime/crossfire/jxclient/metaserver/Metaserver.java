@@ -107,23 +107,12 @@ public class Metaserver
      */
     private static void parseEntry(final String entry)
     {
-        final String[] entries = entry.split("\\|");
-        if (entries.length != 9)
-        {
+        final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(entry);
+        if (metaserverEntry == null)
+	{
             System.err.println("Dropping invalid metaserver response line: "+entry);
             return;
         }
-
-        final MetaserverEntry me;
-        try
-        {
-            me = new MetaserverEntry(entries[0], entries[2], entries[5], entries[4], Integer.parseInt(entries[3]), Integer.parseInt(entries[1]));
-        }
-        catch (final NumberFormatException ex)
-        {
-            System.err.println("Dropping invalid metaserver response line: "+entry);
-            return;
-        }
-        metalist.add(me);
+        metalist.add(metaserverEntry);
     }
 }

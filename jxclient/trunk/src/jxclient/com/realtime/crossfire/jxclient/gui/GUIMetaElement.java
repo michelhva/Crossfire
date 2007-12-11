@@ -93,7 +93,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
         if (text != null && isActive())
         {
-            text.setText(metaEntry.getHost());
+            text.setText(metaEntry.getHostname());
         }
         setChanged();
     }
