@@ -99,7 +99,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
             createBuffer();
 
             final Graphics2D g = mybuffer.createGraphics();
-            g.drawImage(active ? activeImage : inactiveImage, 0, 0, null);
+            g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
             g.setFont(font);
             final String tmp;
             if (hideInput)
@@ -115,7 +115,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
 
             final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
             final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
-            if (active)
+            if (isActive())
             {
                 final String tmpPrefix = tmp.substring(0, cursor);
                 final String tmpCursor = tmp.substring(0, cursor+1);
@@ -126,7 +126,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
                 g.setColor(inactiveColor);
                 g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
             }
-            g.setColor(active ? activeColor : inactiveColor);
+            g.setColor(isActive() ? activeColor : inactiveColor);
             g.drawString(tmp, margin, y);
 
             g.dispose();
@@ -142,7 +142,7 @@ public abstract class GUIText extends GUIElement implements KeyListener
         switch (b)
         {
         case MouseEvent.BUTTON1:
-            active = true;
+            setActive(true);
             render();
             break;
 

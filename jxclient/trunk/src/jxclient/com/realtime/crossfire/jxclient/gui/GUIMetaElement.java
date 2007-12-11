@@ -80,18 +80,18 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         final MetaserverEntry metaEntry = metaEntries.get(index);
         final Graphics2D g = mybuffer.createGraphics();
         g.setFont(font);
-        g.setColor(active ? Color.RED : Color.GRAY);
+        g.setColor(isActive() ? Color.RED : Color.GRAY);
         if (tcpImage != null)
         {
             g.drawImage(tcpImage, 0, 0, null);
         }
         g.drawString(metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
         g.dispose();
-        if (comment != null && active)
+        if (comment != null && isActive())
         {
             comment.setText(metaEntry.getComment());
         }
-        if (text != null && active)
+        if (text != null && isActive())
         {
             text.setText(metaEntry.getHost());
         }
@@ -106,7 +106,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
         switch (b)
         {
         case MouseEvent.BUTTON1:
-            active = true;
+            setActive(true);
             render();
             break;
 
@@ -121,16 +121,14 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     /** {@inheritDoc} */
     @Override public boolean setActive(final boolean active)
     {
-        if (this.active && !active)
-        {
-            if (comment != null)
-            {
-                comment.setText("");
-            }
-        }
         if (!super.setActive(active))
         {
             return false;
+        }
+
+        if (!active && comment != null)
+        {
+            comment.setText("");
         }
 
         render();
