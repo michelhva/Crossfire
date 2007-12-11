@@ -1,6 +1,6 @@
 
 commandlist command_metaconnect
-commandlist command_metacancel
+commandlist command_metacancel null GUI_START
 commandlist command_metaup
 commandlist command_metadown
 commandlist command_metaprev
@@ -8,6 +8,7 @@ commandlist command_metanext
 
 picture background 0 0 1024 768 metaserver
 text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE command_metaconnect
+commandlist_add command_metaconnect metaurl CONNECT
 label_html metacomment 200 650 600 118 font_description WHITE
 meta_element metaselect1 300 250 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 0 P:%P L:%L - %H - %C
 meta_element metaselect2 300 280 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 1 P:%P L:%L - %H - %C
@@ -51,9 +52,6 @@ commandlist_add command_metanext metaselect4 SCROLLNEXT metaselect5
 commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
 commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
 commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
-
-commandlist_add command_metaconnect metaurl CONNECT
-commandlist_add command_metacancel null GUI_START
 
 button metaconnect 620 600 135 55 button_small_active button_small_pushed false command_metaconnect font_metaurl16 DARK_GRAY 42 34 Connect
 button metacancel  620 670 135 55 button_small_active button_small_pushed false command_metacancel  font_metaurl16 DARK_GRAY 42 34 Cancel

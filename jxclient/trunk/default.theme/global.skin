@@ -18,10 +18,8 @@ font font_types          squealer 12
 
 def dialog dialog font_stats12 BLACK WHITE 1
 
-commandlist command_resume
-commandlist_add command_resume null DIALOG_CLOSE quit
-commandlist command_disconnect
-commandlist_add command_disconnect null GUI_START
+commandlist command_resume null DIALOG_CLOSE quit
+commandlist command_disconnect null GUI_START
 
 commandlist command_shortcut0
 commandlist command_shortcut1

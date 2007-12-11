@@ -1,11 +1,8 @@
 
-commandlist command_meta
-commandlist command_quit
+commandlist command_meta null GUI_META
+commandlist command_quit null QUIT
 
 picture background 160 0 714 112 crossfire_logo
-
-commandlist_add command_meta null GUI_META
-commandlist_add command_quit null QUIT
 
 button meta    210 200 600 55 button_large_active button_large_pushed false command_meta font_metaurl14 DARK_GRAY 220 34 Connect to a game server
 button new     210 300 600 55 button_large_active button_large_pushed false command_meta font_metaurl14 DARK_GRAY 180 34 Create a new character (not implemented)

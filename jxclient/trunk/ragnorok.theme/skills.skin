@@ -92,260 +92,200 @@ textgauge res_pyromancy      460 251  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_evocation      460 271  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE WHITE font_label Evocation:
 textgauge res_sorcery        460 291  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE WHITE font_label Sorcery:
 
-commandlist res_lockpicking_show
-commandlist res_lockpicking_hide
-commandlist_add res_lockpicking_show res_lockpicking SHOW
-commandlist_add res_lockpicking_hide res_lockpicking HIDE
+commandlist res_lockpicking_show res_lockpicking SHOW
+commandlist res_lockpicking_hide res_lockpicking HIDE
 event init res_lockpicking_hide
 event skill add lockpicking res_lockpicking_show
 event skill del lockpicking res_lockpicking_hide
 
-commandlist res_hiding_show
-commandlist res_hiding_hide
-commandlist_add res_hiding_show res_hiding SHOW
-commandlist_add res_hiding_hide res_hiding HIDE
+commandlist res_hiding_show res_hiding SHOW
+commandlist res_hiding_hide res_hiding HIDE
 event init res_hiding_hide
 event skill add hiding res_hiding_show
 event skill del hiding res_hiding_hide
 
-commandlist res_stealing_show
-commandlist res_stealing_hide
-commandlist_add res_stealing_show res_stealing SHOW
-commandlist_add res_stealing_hide res_stealing HIDE
+commandlist res_stealing_show res_stealing SHOW
+commandlist res_stealing_hide res_stealing HIDE
 event init res_stealing_hide
 event skill add stealing res_stealing_show
 event skill del stealing res_stealing_hide
 
-commandlist res_bargaining_show
-commandlist res_bargaining_hide
-commandlist_add res_bargaining_show res_bargaining SHOW
-commandlist_add res_bargaining_hide res_bargaining HIDE
+commandlist res_bargaining_show res_bargaining SHOW
+commandlist res_bargaining_hide res_bargaining HIDE
 event init res_bargaining_hide
 event skill add bargaining res_bargaining_show
 event skill del bargaining res_bargaining_hide
 
-commandlist res_oratory_show
-commandlist res_oratory_hide
-commandlist_add res_oratory_show res_oratory SHOW
-commandlist_add res_oratory_hide res_oratory HIDE
+commandlist res_oratory_show res_oratory SHOW
+commandlist res_oratory_hide res_oratory HIDE
 event init res_oratory_hide
 event skill add oratory res_oratory_show
 event skill del oratory res_oratory_hide
 
-commandlist res_singing_show
-commandlist res_singing_hide
-commandlist_add res_singing_show res_singing SHOW
-commandlist_add res_singing_hide res_singing HIDE
+commandlist res_singing_show res_singing SHOW
+commandlist res_singing_hide res_singing HIDE
 event init res_singing_hide
 event skill add singing res_singing_show
 event skill del singing res_singing_hide
 
-commandlist res_inscription_show
-commandlist res_inscription_hide
-commandlist_add res_inscription_show res_inscription SHOW
-commandlist_add res_inscription_hide res_inscription HIDE
+commandlist res_inscription_show res_inscription SHOW
+commandlist res_inscription_hide res_inscription HIDE
 event init res_inscription_hide
 event skill add inscription res_inscription_show
 event skill del inscription res_inscription_hide
 
-commandlist res_fishing_show
-commandlist res_fishing_hide
-commandlist_add res_fishing_show res_fishing SHOW
-commandlist_add res_fishing_hide res_fishing HIDE
+commandlist res_fishing_show res_fishing SHOW
+commandlist res_fishing_hide res_fishing HIDE
 event init res_fishing_hide
 event skill add fishing res_fishing_show
 event skill del fishing res_fishing_hide
 
-commandlist res_jumping_show
-commandlist res_jumping_hide
-commandlist_add res_jumping_show res_jumping SHOW
-commandlist_add res_jumping_hide res_jumping HIDE
+commandlist res_jumping_show res_jumping SHOW
+commandlist res_jumping_hide res_jumping HIDE
 event init res_jumping_hide
 event skill add jumping res_jumping_show
 event skill del jumping res_jumping_hide
 
-commandlist res_climbing_show
-commandlist res_climbing_hide
-commandlist_add res_climbing_show res_climbing SHOW
-commandlist_add res_climbing_hide res_climbing HIDE
+commandlist res_climbing_show res_climbing SHOW
+commandlist res_climbing_hide res_climbing HIDE
 event init res_climbing_hide
 event skill add climbing res_climbing_show
 event skill del climbing res_climbing_hide
 
-commandlist res_levitation_show
-commandlist res_levitation_hide
-commandlist_add res_levitation_show res_levitation SHOW
+commandlist res_levitation_show res_levitation SHOW
 commandlist_add res_levitation_show label_levitation SHOW
-commandlist_add res_levitation_hide res_levitation HIDE
+commandlist res_levitation_hide res_levitation HIDE
 commandlist_add res_levitation_hide label_levitation HIDE
 event init res_levitation_hide
 event skill add levitation res_levitation_show
 event skill del levitation res_levitation_hide
 
-commandlist res_meditation_show
-commandlist res_meditation_hide
-commandlist_add res_meditation_show res_meditation SHOW
+commandlist res_meditation_show res_meditation SHOW
 commandlist_add res_meditation_show label_meditation SHOW
-commandlist_add res_meditation_hide res_meditation HIDE
+commandlist res_meditation_hide res_meditation HIDE
 commandlist_add res_meditation_hide label_meditation HIDE
 event init res_meditation_hide
 event skill add meditation res_meditation_show
 event skill del meditation res_meditation_hide
 
-commandlist res_set_traps_show
-commandlist res_set_traps_hide
-commandlist_add res_set_traps_show res_set_traps SHOW
+commandlist res_set_traps_show res_set_traps SHOW
 commandlist_add res_set_traps_show label_set_traps SHOW
-commandlist_add res_set_traps_hide res_set_traps HIDE
+commandlist res_set_traps_hide res_set_traps HIDE
 commandlist_add res_set_traps_hide label_set_traps HIDE
 event init res_set_traps_hide
 event skill add set_traps res_set_traps_show
 event skill del set_traps res_set_traps_hide
 
-commandlist res_smithery_show
-commandlist res_smithery_hide
-commandlist_add res_smithery_show res_smithery SHOW
-commandlist_add res_smithery_hide res_smithery HIDE
+commandlist res_smithery_show res_smithery SHOW
+commandlist res_smithery_hide res_smithery HIDE
 event init res_smithery_hide
 event skill add smithery res_smithery_show
 event skill del smithery res_smithery_hide
 
-commandlist res_bowyer_show
-commandlist res_bowyer_hide
-commandlist_add res_bowyer_show res_bowyer SHOW
-commandlist_add res_bowyer_hide res_bowyer HIDE
+commandlist res_bowyer_show res_bowyer SHOW
+commandlist res_bowyer_hide res_bowyer HIDE
 event init res_bowyer_hide
 event skill add bowyer res_bowyer_show
 event skill del bowyer res_bowyer_hide
 
-commandlist res_jeweler_show
-commandlist res_jeweler_hide
-commandlist_add res_jeweler_show res_jeweler SHOW
-commandlist_add res_jeweler_hide res_jeweler HIDE
+commandlist res_jeweler_show res_jeweler SHOW
+commandlist res_jeweler_hide res_jeweler HIDE
 event init res_jeweler_hide
 event skill add jeweler res_jeweler_show
 event skill del jeweler res_jeweler_hide
 
-commandlist res_woodsman_show
-commandlist res_woodsman_hide
-commandlist_add res_woodsman_show res_woodsman SHOW
-commandlist_add res_woodsman_hide res_woodsman HIDE
+commandlist res_woodsman_show res_woodsman SHOW
+commandlist res_woodsman_hide res_woodsman HIDE
 event init res_woodsman_hide
 event skill add woodsman res_woodsman_show
 event skill del woodsman res_woodsman_hide
 
-commandlist res_thaumaturgy_show
-commandlist res_thaumaturgy_hide
-commandlist_add res_thaumaturgy_show res_thaumaturgy SHOW
-commandlist_add res_thaumaturgy_hide res_thaumaturgy HIDE
+commandlist res_thaumaturgy_show res_thaumaturgy SHOW
+commandlist res_thaumaturgy_hide res_thaumaturgy HIDE
 event init res_thaumaturgy_hide
 event skill add thaumaturgy res_thaumaturgy_show
 event skill del thaumaturgy res_thaumaturgy_hide
 
-commandlist res_literacy_show
-commandlist res_literacy_hide
-commandlist_add res_literacy_show res_literacy SHOW
-commandlist_add res_literacy_hide res_literacy HIDE
+commandlist res_literacy_show res_literacy SHOW
+commandlist res_literacy_hide res_literacy HIDE
 event init res_literacy_hide
 event skill add literacy res_literacy_show
 event skill del literacy res_literacy_hide
 
-commandlist res_sense_magic_show
-commandlist res_sense_magic_hide
-commandlist_add res_sense_magic_show res_sense_magic SHOW
-commandlist_add res_sense_magic_hide res_sense_magic HIDE
+commandlist res_sense_magic_show res_sense_magic SHOW
+commandlist res_sense_magic_hide res_sense_magic HIDE
 event init res_sense_magic_hide
 event skill add sense_magic res_sense_magic_show
 event skill del sense_magic res_sense_magic_hide
 
-commandlist res_sense_curse_show
-commandlist res_sense_curse_hide
-commandlist_add res_sense_curse_show res_sense_curse SHOW
-commandlist_add res_sense_curse_hide res_sense_curse HIDE
+commandlist res_sense_curse_show res_sense_curse SHOW
+commandlist res_sense_curse_hide res_sense_curse HIDE
 event init res_sense_curse_hide
 event skill add sense_curse res_sense_curse_show
 event skill del sense_curse res_sense_curse_hide
 
-commandlist res_find_traps_show
-commandlist res_find_traps_hide
-commandlist_add res_find_traps_show res_find_traps SHOW
-commandlist_add res_find_traps_hide res_find_traps HIDE
+commandlist res_find_traps_show res_find_traps SHOW
+commandlist res_find_traps_hide res_find_traps HIDE
 event init res_find_traps_hide
 event skill add find_traps res_find_traps_show
 event skill del find_traps res_find_traps_hide
 
-commandlist res_disarm_traps_show
-commandlist res_disarm_traps_hide
-commandlist_add res_disarm_traps_show res_disarm_traps SHOW
-commandlist_add res_disarm_traps_hide res_disarm_traps HIDE
+commandlist res_disarm_traps_show res_disarm_traps SHOW
+commandlist res_disarm_traps_hide res_disarm_traps HIDE
 event init res_disarm_traps_hide
 event skill add disarm_traps res_disarm_traps_show
 event skill del disarm_traps res_disarm_traps_hide
 
-commandlist res_punching_show
-commandlist res_punching_hide
-commandlist_add res_punching_show res_punching SHOW
-commandlist_add res_punching_hide res_punching HIDE
+commandlist res_punching_show res_punching SHOW
+commandlist res_punching_hide res_punching HIDE
 event init res_punching_hide
 event skill add punching res_punching_show
 event skill del punching res_punching_hide
 
-commandlist res_karate_show
-commandlist res_karate_hide
-commandlist_add res_karate_show res_karate SHOW
-commandlist_add res_karate_hide res_karate HIDE
+commandlist res_karate_show res_karate SHOW
+commandlist res_karate_hide res_karate HIDE
 event init res_karate_hide
 event skill add karate res_karate_show
 event skill del karate res_karate_hide
 
-commandlist res_one_handed_weapons_show
-commandlist res_one_handed_weapons_hide
-commandlist_add res_one_handed_weapons_show res_one_handed_weapons SHOW
-commandlist_add res_one_handed_weapons_hide res_one_handed_weapons HIDE
+commandlist res_one_handed_weapons_show res_one_handed_weapons SHOW
+commandlist res_one_handed_weapons_hide res_one_handed_weapons HIDE
 event init res_one_handed_weapons_hide
 event skill add one_handed_weapons res_one_handed_weapons_show
 event skill del one_handed_weapons res_one_handed_weapons_hide
 
-commandlist res_two_handed_weapons_show
-commandlist res_two_handed_weapons_hide
-commandlist_add res_two_handed_weapons_show res_two_handed_weapons SHOW
-commandlist_add res_two_handed_weapons_hide res_two_handed_weapons HIDE
+commandlist res_two_handed_weapons_show res_two_handed_weapons SHOW
+commandlist res_two_handed_weapons_hide res_two_handed_weapons HIDE
 event init res_two_handed_weapons_hide
 event skill add two_handed_weapons res_two_handed_weapons_show
 event skill del two_handed_weapons res_two_handed_weapons_hide
 
-commandlist res_missile_weapons_show
-commandlist res_missile_weapons_hide
-commandlist_add res_missile_weapons_show res_missile_weapons SHOW
-commandlist_add res_missile_weapons_hide res_missile_weapons HIDE
+commandlist res_missile_weapons_show res_missile_weapons SHOW
+commandlist res_missile_weapons_hide res_missile_weapons HIDE
 event init res_missile_weapons_hide
 event skill add missile_weapons res_missile_weapons_show
 event skill del missile_weapons res_missile_weapons_hide
 
-commandlist res_throwing_show
-commandlist res_throwing_hide
-commandlist_add res_throwing_show res_throwing SHOW
-commandlist_add res_throwing_hide res_throwing HIDE
+commandlist res_throwing_show res_throwing SHOW
+commandlist res_throwing_hide res_throwing HIDE
 event init res_throwing_hide
 event skill add throwing res_throwing_show
 event skill del throwing res_throwing_hide
 
-commandlist res_use_magic_item_show
-commandlist res_use_magic_item_hide
-commandlist_add res_use_magic_item_show res_use_magic_item SHOW
-commandlist_add res_use_magic_item_hide res_use_magic_item HIDE
+commandlist res_use_magic_item_show res_use_magic_item SHOW
+commandlist res_use_magic_item_hide res_use_magic_item HIDE
 event init res_use_magic_item_hide
 event skill add use_magic_item res_use_magic_item_show
 event skill del use_magic_item res_use_magic_item_hide
 
 commandlist res_flame_touch_show
-commandlist res_flame_touch_hide
 commandlist_add res_flame_touch_show res_flame_touch SHOW
 commandlist_add res_flame_touch_show res_clawing HIDE
 commandlist_add res_flame_touch_show res_wraith_feed HIDE
 commandlist_add res_flame_touch_show label_flame_touch SHOW
 commandlist_add res_flame_touch_show label_clawing HIDE
 commandlist_add res_flame_touch_show label_wraith_feed HIDE
+commandlist res_flame_touch_hide
 commandlist_add res_flame_touch_hide res_flame_touch HIDE
 commandlist_add res_flame_touch_hide label_flame_touch HIDE
 event init res_flame_touch_hide
@@ -353,13 +293,13 @@ event skill add flame_touch res_flame_touch_show
 event skill del flame_touch res_flame_touch_hide
 
 commandlist res_clawing_show
-commandlist res_clawing_hide
 commandlist_add res_clawing_show res_flame_touch HIDE
 commandlist_add res_clawing_show res_clawing SHOW
 commandlist_add res_clawing_show res_wraith_feed HIDE
 commandlist_add res_clawing_show label_flame_touch HIDE
 commandlist_add res_clawing_show label_clawing SHOW
 commandlist_add res_clawing_show label_wraith_feed HIDE
+commandlist res_clawing_hide
 commandlist_add res_clawing_hide res_clawing HIDE
 commandlist_add res_clawing_hide label_clawing HIDE
 event init res_clawing_hide
@@ -367,55 +307,45 @@ event skill add clawing res_clawing_show
 event skill del clawing res_clawing_hide
 
 commandlist res_wraith_feed_show
-commandlist res_wraith_feed_hide
 commandlist_add res_wraith_feed_show res_flame_touch HIDE
 commandlist_add res_wraith_feed_show res_clawing HIDE
 commandlist_add res_wraith_feed_show res_wraith_feed SHOW
 commandlist_add res_wraith_feed_show label_flame_touch HIDE
 commandlist_add res_wraith_feed_show label_clawing HIDE
 commandlist_add res_wraith_feed_show label_wraith_feed SHOW
+commandlist res_wraith_feed_hide
 commandlist_add res_wraith_feed_hide res_wraith_feed HIDE
 commandlist_add res_wraith_feed_hide label_wraith_feed HIDE
 event init res_wraith_feed_hide
 event skill add wraith_feed res_wraith_feed_show
 event skill del wraith_feed res_wraith_feed_hide
 
-commandlist res_praying_show
-commandlist res_praying_hide
-commandlist_add res_praying_show res_praying SHOW
-commandlist_add res_praying_hide res_praying HIDE
+commandlist res_praying_show res_praying SHOW
+commandlist res_praying_hide res_praying HIDE
 event init res_praying_hide
 event skill add praying res_praying_show
 event skill del praying res_praying_hide
 
-commandlist res_summoning_show
-commandlist res_summoning_hide
-commandlist_add res_summoning_show res_summoning SHOW
-commandlist_add res_summoning_hide res_summoning HIDE
+commandlist res_summoning_show res_summoning SHOW
+commandlist res_summoning_hide res_summoning HIDE
 event init res_summoning_hide
 event skill add summoning res_summoning_show
 event skill del summoning res_summoning_hide
 
-commandlist res_pyromancy_show
-commandlist res_pyromancy_hide
-commandlist_add res_pyromancy_show res_pyromancy SHOW
-commandlist_add res_pyromancy_hide res_pyromancy HIDE
+commandlist res_pyromancy_show res_pyromancy SHOW
+commandlist res_pyromancy_hide res_pyromancy HIDE
 event init res_pyromancy_hide
 event skill add pyromancy res_pyromancy_show
 event skill del pyromancy res_pyromancy_hide
 
-commandlist res_evocation_show
-commandlist res_evocation_hide
-commandlist_add res_evocation_show res_evocation SHOW
-commandlist_add res_evocation_hide res_evocation HIDE
+commandlist res_evocation_show res_evocation SHOW
+commandlist res_evocation_hide res_evocation HIDE
 event init res_evocation_hide
 event skill add evocation res_evocation_show
 event skill del evocation res_evocation_hide
 
-commandlist res_sorcery_show
-commandlist res_sorcery_hide
-commandlist_add res_sorcery_show res_sorcery SHOW
-commandlist_add res_sorcery_hide res_sorcery HIDE
+commandlist res_sorcery_show res_sorcery SHOW
+commandlist res_sorcery_hide res_sorcery HIDE
 event init res_sorcery_hide
 event skill add sorcery res_sorcery_show
 event skill del sorcery res_sorcery_hide
