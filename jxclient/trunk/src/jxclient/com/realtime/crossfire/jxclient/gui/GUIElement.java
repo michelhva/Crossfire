@@ -60,9 +60,9 @@ public abstract class GUIElement implements MouseListener
 
     protected BufferedImage mybuffer;
 
-    protected boolean visible = true;
+    private boolean visible = true;
 
-    protected boolean isDefault = false;
+    private boolean isDefault = false;
 
     /**
      * Whether this gui element should be ignored for user interaction.
@@ -72,7 +72,7 @@ public abstract class GUIElement implements MouseListener
     /**
      * The name of this element.
      */
-    protected final String myname;
+    private final String myname;
 
     /**
      * Whether {@link #mybuffer} has changed.
