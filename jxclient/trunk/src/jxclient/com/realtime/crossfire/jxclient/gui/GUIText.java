@@ -37,7 +37,7 @@ import java.awt.Transparency;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUIText extends GUIElement implements KeyListener
+public abstract class GUIText extends ActivatableGUIElement implements KeyListener
 {
     private final BufferedImage activeImage;
 

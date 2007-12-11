@@ -1,5 +1,7 @@
 2007-12-11  Andreas Kirschbaum
 
+	* Make sure the login dialog never looses focus.
+
 	* Implement 'set_modal' skin command: it marks a dialog as
 	"modal". Use this to prevent query, quit, and keybinding dialogs
 	from losing the focus.

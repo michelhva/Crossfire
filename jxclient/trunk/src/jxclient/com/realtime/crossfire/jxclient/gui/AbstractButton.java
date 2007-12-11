@@ -30,7 +30,7 @@ import java.awt.event.MouseEvent;
  *
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractButton extends GUIElement
+public abstract class AbstractButton extends ActivatableGUIElement
 {
     /**
      * The autorepeat delay initially.

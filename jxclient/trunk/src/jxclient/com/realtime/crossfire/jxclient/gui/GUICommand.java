@@ -215,7 +215,7 @@ public class GUICommand
         private final JXCWindow window;
 
         /** The dialog to close. */
-        private final GUIElement nextElement;
+        private final ActivatableGUIElement nextElement;
 
         /**
          * Create a new instance.
@@ -224,7 +224,7 @@ public class GUICommand
          *
          * @param nextElement The element to activate.
          */
-        public ScrollNextParameter(final JXCWindow window, final GUIElement nextElement)
+        public ScrollNextParameter(final JXCWindow window, final ActivatableGUIElement nextElement)
         {
             this.window = window;
             this.nextElement = nextElement;

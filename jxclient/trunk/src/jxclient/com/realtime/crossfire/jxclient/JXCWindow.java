@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIText;
@@ -1094,13 +1095,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             if (elected != null)
             {
                 elected.mousePressed(e);
-                if (elected.isActive())
+                if (elected instanceof ActivatableGUIElement)
                 {
-                    elected.getGui().setActiveElement(elected);
-                }
-                else
-                {
-                    elected.getGui().setActiveElement(null);
+                    if (elected.isActive())
+                    {
+                        elected.getGui().setActiveElement((ActivatableGUIElement)elected);
+                    }
+                    else
+                    {
+                        elected.getGui().setActiveElement(null);
+                    }
                 }
             }
         }
@@ -1113,10 +1117,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
             final GUIElement elected = findElement(e, false);
             if (elected != null)
             {
-                if (elected.getGui().getActiveElement() != elected)
-                {
-                    elected.getGui().setActiveElement(null);
-                }
                 elected.mouseReleased(e);
             }
         }

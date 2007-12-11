@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -544,7 +545,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final GUIElement nextElement = elements.lookup(args[4]);
-                                params = new GUICommand.ScrollNextParameter(window, nextElement);
+                                if (!(nextElement instanceof ActivatableGUIElement))
+                                {
+                                    throw new IOException("'"+args[4]+"' cannot become active");
+                                }
+                                params = new GUICommand.ScrollNextParameter(window, (ActivatableGUIElement)nextElement);
                             }
                             else
                             {
