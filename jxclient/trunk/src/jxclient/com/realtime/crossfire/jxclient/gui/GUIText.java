@@ -217,6 +217,20 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             }
             break;
 
+        case KeyEvent.VK_HOME:
+            if (cursor > 0)
+            {
+                setCursor(0);
+            }
+            break;
+
+        case KeyEvent.VK_END:
+            if (cursor < text.length())
+            {
+                setCursor(text.length());
+            }
+            break;
+
         default:
             final char chr = e.getKeyChar();
             if (chr != KeyEvent.CHAR_UNDEFINED && chr >= ' ')
