@@ -149,7 +149,8 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
 
     protected abstract void button3Clicked(final JXCWindow jxcw);
 
-    public void setActive(final boolean active)
+    /** {@inheritDoc} */
+    @Override public void setActive(final boolean active)
     {
         if (this.active != active)
         {
