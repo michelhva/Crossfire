@@ -1,5 +1,8 @@
 2007-12-11  Andreas Kirschbaum
 
+	* Add optional parameters to 'commandlist' skin command. Use them
+	to shorten skin definitions.
+
 	* Make sure the login dialog never looses focus.
 
 	* Implement 'set_modal' skin command: it marks a dialog as

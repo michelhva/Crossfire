@@ -529,10 +529,8 @@ picture log_upper_back 0+679 0+100 272 204 log1_background
 picture log_upper_back2 288+679 175+100 14 10 log1_background2
 log log_upper 10+679 3+100 250 198 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE
 log_color log_upper 0 WHITE
-commandlist command_log_upper_up
-commandlist_add command_log_upper_up log_upper SCROLLUP
-commandlist command_log_upper_down
-commandlist_add command_log_upper_down log_upper SCROLLDOWN
+commandlist command_log_upper_up log_upper SCROLLUP
+commandlist command_log_upper_down log_upper SCROLLDOWN
 
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down

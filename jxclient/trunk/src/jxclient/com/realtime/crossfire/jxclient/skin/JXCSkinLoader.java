@@ -469,12 +469,20 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("commandlist"))
                         {
-                            if (args.length != 2)
+                            if (args.length != 2 && args.length < 4)
                             {
                                 throw new IOException("syntax error");
                             }
 
-                            commandLists.insert(args[1], new GUICommandList());
+                            final GUICommandList commandList = new GUICommandList();
+                            commandLists.insert(args[1], commandList);
+                            if (args.length >= 4)
+                            {
+                                final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
+                                final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
+                                final Object params = parseCommandArgs(args, 4, command, window, lnr);
+                                commandList.add(new GUICommand(element, command, params));
+                            }
                         }
                         else if (args[0].equals("commandlist_add"))
                         {
@@ -486,80 +494,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
                             final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
-                            final Object params;
-                            if (command == GUICommand.Command.CONNECT
-                            || command == GUICommand.Command.GUI_EXECUTE_ELEMENT
-                            || command == GUICommand.Command.GUI_META
-                            || command == GUICommand.Command.GUI_START
-                            || command == GUICommand.Command.QUIT)
-                            {
-                                if (args.length != 4)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                params = window;
-                            }
-                            else if (command == GUICommand.Command.DIALOG_OPEN)
-                            {
-                                if (args.length != 5)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                params = new GUICommand.DialogOpenParameter(window, addDialog(args[4]));
-                            }
-                            else if (command == GUICommand.Command.DIALOG_TOGGLE)
-                            {
-                                if (args.length != 5)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                params = new GUICommand.DialogToggleParameter(window, addDialog(args[4]));
-                            }
-                            else if (command == GUICommand.Command.DIALOG_CLOSE)
-                            {
-                                if (args.length != 5)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                params = new GUICommand.DialogCloseParameter(window, addDialog(args[4]));
-                            }
-                            else if (command == GUICommand.Command.GUI_EXECUTE_COMMAND)
-                            {
-                                if (args.length < 5)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                final String commandString = parseText(args, 4, lnr);
-                                params = new GUICommand.ExecuteCommandParameter(window, commandString);
-                            }
-                            else if (command == GUICommand.Command.SCROLLNEXT)
-                            {
-                                if (args.length != 5)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                final GUIElement nextElement = elements.lookup(args[4]);
-                                if (!(nextElement instanceof ActivatableGUIElement))
-                                {
-                                    throw new IOException("'"+args[4]+"' cannot become active");
-                                }
-                                params = new GUICommand.ScrollNextParameter(window, (ActivatableGUIElement)nextElement);
-                            }
-                            else
-                            {
-                                if (args.length != 4)
-                                {
-                                    throw new IOException("syntax error");
-                                }
-
-                                params = "";
-                            }
+                            final Object params = parseCommandArgs(args, 4, command, window, lnr);
                             commandList.add(new GUICommand(element, command, params));
                         }
                         else if (gui != null && args[0].equals("command_text"))
@@ -1661,6 +1596,105 @@ public abstract class JXCSkinLoader implements JXCSkin
         {
             throw new IOException(ex.getMessage());
         }
+    }
+
+    /**
+     * Parse and build command arguments.
+     *
+     * @param args The list of arguments.
+     *
+     * @param argc The start index for parsing.
+     *
+     * @param command The command to parse the arguments of.
+     *
+     * @param window The window instance.
+     *
+     * @param lnr The source to read more parameters from.
+     *
+     * @return The command arguments.
+     *
+     * @throws IOException If a syntax error occurs.
+     *
+     * @throws JXCSkinException If an element cannot be found.
+     */
+    private Object parseCommandArgs(final String[] args, final int argc, final GUICommand.Command command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    {
+        final Object params;
+        if (command == GUICommand.Command.CONNECT
+        || command == GUICommand.Command.GUI_EXECUTE_ELEMENT
+        || command == GUICommand.Command.GUI_META
+        || command == GUICommand.Command.GUI_START
+        || command == GUICommand.Command.QUIT)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            params = window;
+        }
+        else if (command == GUICommand.Command.DIALOG_OPEN)
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            params = new GUICommand.DialogOpenParameter(window, addDialog(args[argc]));
+        }
+        else if (command == GUICommand.Command.DIALOG_TOGGLE)
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            params = new GUICommand.DialogToggleParameter(window, addDialog(args[argc]));
+        }
+        else if (command == GUICommand.Command.DIALOG_CLOSE)
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            params = new GUICommand.DialogCloseParameter(window, addDialog(args[argc]));
+        }
+        else if (command == GUICommand.Command.GUI_EXECUTE_COMMAND)
+        {
+            if (args.length < argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final String commandString = parseText(args, argc, lnr);
+            params = new GUICommand.ExecuteCommandParameter(window, commandString);
+        }
+        else if (command == GUICommand.Command.SCROLLNEXT)
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final GUIElement nextElement = elements.lookup(args[argc]);
+            if (!(nextElement instanceof ActivatableGUIElement))
+            {
+                throw new IOException("'"+args[argc]+"' cannot become active");
+            }
+            params = new GUICommand.ScrollNextParameter(window, (ActivatableGUIElement)nextElement);
+        }
+        else
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            params = "";
+        }
+
+        return params;
     }
 
     /**
