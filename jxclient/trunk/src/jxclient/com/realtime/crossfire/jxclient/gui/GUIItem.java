@@ -43,7 +43,7 @@ import java.awt.Transparency;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIItem extends GUIElement implements GUIScrollable
+public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
 {
     protected final BufferedImage cursedImage;
 

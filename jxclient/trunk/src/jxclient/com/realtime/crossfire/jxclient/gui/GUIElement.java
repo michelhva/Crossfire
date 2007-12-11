@@ -74,8 +74,6 @@ public abstract class GUIElement implements MouseListener
      */
     protected final String myname;
 
-    private boolean active = false;
-
     /**
      * Whether {@link #mybuffer} has changed.
      */
@@ -149,26 +147,13 @@ public abstract class GUIElement implements MouseListener
     }
 
     /**
-     * Set the active state.
+     * Return whether the element is active.
      *
-     * @param active The new active state.
-     *
-     * @return Whether the active state was changed.
+     * @return Whether the element is active.
      */
-    public boolean setActive(final boolean active)
-    {
-        if (this.active == active)
-        {
-            return false;
-        }
-
-        this.active = active;
-        return true;
-    }
-
     public boolean isActive()
     {
-        return active;
+        return false;
     }
 
     public BufferedImage getBuffer()
@@ -266,7 +251,6 @@ public abstract class GUIElement implements MouseListener
     /** {@inheritDoc} */
     public void mousePressed(final MouseEvent e)
     {
-        active = true;
     }
 
     /** {@inheritDoc} */

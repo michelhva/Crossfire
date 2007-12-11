@@ -39,7 +39,7 @@ import java.util.List;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUIMetaElement extends GUIElement implements GUIScrollable
+public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollable
 {
     private final BufferedImage tcpImage;
 

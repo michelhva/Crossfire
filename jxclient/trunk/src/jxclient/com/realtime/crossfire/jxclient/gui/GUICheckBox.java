@@ -38,7 +38,7 @@ import java.awt.Transparency;
  *
  * @author Andreas Kirschbaum
  */
-public class GUICheckBox extends GUIElement
+public class GUICheckBox extends ActivatableGUIElement
 {
     /**
      * The image for the checked [x] state.

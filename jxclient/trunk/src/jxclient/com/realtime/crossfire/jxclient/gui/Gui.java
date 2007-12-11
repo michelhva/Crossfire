@@ -65,7 +65,7 @@ public class Gui
      * The gui element which has the focus. Set to <code>null</code> if no such
      * element exists.
      */
-    private GUIElement activeElement = null;
+    private ActivatableGUIElement activeElement = null;
 
     /**
      * Records whether at least one gui element has changed since last redraw.
@@ -221,10 +221,11 @@ public class Gui
     public void activateDefaultElement()
     {
         final GUIElement defaultElement = getDefaultElement();
-        if (defaultElement != null)
+        if (defaultElement != null && defaultElement instanceof ActivatableGUIElement)
         {
-            defaultElement.setActive(true);
-            setActiveElement(defaultElement);
+            final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
+            activatableDefaultElement.setActive(true);
+            setActiveElement(activatableDefaultElement);
         }
     }
 
@@ -283,7 +284,7 @@ public class Gui
      * @param activeElement The gui element, or <code>null</code> if no element
      * should have the focus.
      */
-    public void setActiveElement(final GUIElement activeElement)
+    public void setActiveElement(final ActivatableGUIElement activeElement)
     {
         if (this.activeElement != null)
         {
@@ -304,7 +305,7 @@ public class Gui
      * @return The gui element owning the focus, or <code>null</code> if no
      * such element exists.
      */
-    public GUIElement getActiveElement()
+    public ActivatableGUIElement getActiveElement()
     {
         return activeElement;
     }
