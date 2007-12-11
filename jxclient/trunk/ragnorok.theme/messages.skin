@@ -2,7 +2,7 @@
 dialog border 4 522 586 208 Messages
 dialog_state plain_dialog_messages true Whether the messages dialog is open.
 dialog_hide START META LOGIN
-button button_close 566 4 16 16 close_up close_down command_messages
+button button_close 566 4 16 16 close_up close_down false command_messages
 
 log log 4 40 562 200-40-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log 1 #000000
@@ -10,8 +10,8 @@ log_color log 5 #8080ff
 log_color log 7 #00c000
 log_color log 11 #e0c000
 
-button slider_up    586-4-16 40          16 16 slider_up_up slider_up_down command_messages_up
-button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down command_messages_down
+button slider_up    586-4-16 40          16 16 slider_up_up slider_up_down true command_messages_up
+button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down
 
 command_text command 4 200-4-16 578 24   command_active empty font_label GRAY BLACK 0
 

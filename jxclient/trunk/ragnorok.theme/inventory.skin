@@ -2,9 +2,9 @@
 dialog border 212 340 520 176 Inventory
 dialog_state plain_dialog_inventory false Whether the inventory dialog is open.
 dialog_hide START META LOGIN
-button button_close  500    4   16 16 close_up close_down command_inventory
+button button_close  500    4   16 16 close_up close_down false command_inventory
 
-button button_left     4 40+4   16 32 scroll_left_up scroll_left_down command_inventory_left
+button button_left     4 40+4   16 32 scroll_left_up scroll_left_down true command_inventory_left
 item inventory inv0   20 40+4   32 32 empty marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK
 item inventory inv1   52 40+4   32 32 empty marker_cursed marker_applied inventory_selector marker_locked  1 font_item BLACK
 item inventory inv2   84 40+4   32 32 empty marker_cursed marker_applied inventory_selector marker_locked  2 font_item BLACK
@@ -65,7 +65,7 @@ item inventory inv56 372 40+100 32 32 empty marker_cursed marker_applied invento
 item inventory inv57 404 40+100 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 57 font_item BLACK
 item inventory inv58 436 40+100 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 58 font_item BLACK
 item inventory inv59 468 40+100 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 59 font_item BLACK
-button button_right  500 40+100 16 32 scroll_right_up scroll_right_down command_inventory_right
+button button_right  500 40+100 16 32 scroll_right_up scroll_right_down true command_inventory_right
 
 commandlist_add command_inventory_left inv0 SCROLLUP
 commandlist_add command_inventory_left inv1 SCROLLUP

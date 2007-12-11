@@ -1,6 +1,6 @@
 
 dialog border 64 64 896+8 640+8 Help
-button button_close 4+896-16 4 16 16 close_up close_down command_help_close
+button button_close 4+896-16 4 16 16 close_up close_down false command_help_close
 
 label_multi help_text 4 40 896 604 font_label DARK_GRAY <<EOF
 Key bindings
