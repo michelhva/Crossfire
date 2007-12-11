@@ -148,9 +148,22 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
-    public void setActive(final boolean active)
+    /**
+     * Set the active state.
+     *
+     * @param active The new active state.
+     *
+     * @return Whether the active state was changed.
+     */
+    public boolean setActive(final boolean active)
     {
+        if (this.active == active)
+        {
+            return false;
+        }
+
         this.active = active;
+        return true;
     }
 
     public boolean isActive()

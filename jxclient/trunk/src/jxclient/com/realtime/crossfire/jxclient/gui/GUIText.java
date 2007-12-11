@@ -155,10 +155,15 @@ public abstract class GUIText extends GUIElement implements KeyListener
     }
 
     /** {@inheritDoc} */
-    @Override public void setActive(final boolean active)
+    @Override public boolean setActive(final boolean active)
     {
-        this.active = active;
+        if (!super.setActive(active))
+        {
+            return false;
+        }
+
         render();
+        return true;
     }
 
     public void keyPressed(final KeyEvent e)

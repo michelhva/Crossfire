@@ -74,10 +74,15 @@ public class GUIButton extends AbstractButton
     }
 
     /** {@inheritDoc} */
-    @Override public void setActive(final boolean active)
+    @Override public boolean setActive(final boolean active)
     {
-        super.setActive(active);
+        if (!super.setActive(active))
+        {
+            return false;
+        }
+
         render();
+        return true;
     }
 
     public void render()
