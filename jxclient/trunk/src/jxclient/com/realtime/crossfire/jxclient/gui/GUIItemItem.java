@@ -63,7 +63,7 @@ public abstract class GUIItemItem extends GUIItem
         {
             g.drawImage(lockedImage, 0, 0, null);
         }
-        if (active)
+        if (isActive())
         {
             g.drawImage(selectorImage, 0, 0, null);
         }

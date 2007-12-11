@@ -148,7 +148,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         g.drawImage(myspell.getImageIcon().getImage(), 0, 0, null);
-        if (active)
+        if (isActive())
         {
             g.drawImage(selectorImage, 0, 0, null);
         }

@@ -110,7 +110,6 @@ public abstract class GUIItem extends GUIElement implements GUIScrollable
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
-        active = false;
         this.font = font;
         createBuffer();
         render();

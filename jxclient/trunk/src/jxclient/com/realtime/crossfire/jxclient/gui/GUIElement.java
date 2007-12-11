@@ -74,7 +74,7 @@ public abstract class GUIElement implements MouseListener
      */
     protected final String myname;
 
-    protected boolean active = false;
+    private boolean active = false;
 
     /**
      * Whether {@link #mybuffer} has changed.
