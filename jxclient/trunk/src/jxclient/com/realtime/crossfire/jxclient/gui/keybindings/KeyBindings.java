@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -284,7 +285,7 @@ public final class KeyBindings
      * @return The key binding, or <code>null</code> if no key binding is
      * associated.
      */
-    public KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers)
+    private KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers)
     {
         for (final KeyBinding keyBinding : keybindings)
         {
@@ -305,7 +306,7 @@ public final class KeyBindings
      * @return The key binding, or <code>null</code> if no key binding is
      * associated.
      */
-    public KeyBinding getKeyBindingAsKeyChar(final char keyChar)
+    private KeyBinding getKeyBindingAsKeyChar(final char keyChar)
     {
         for (final KeyBinding keyBinding : keybindings)
         {
@@ -391,5 +392,43 @@ public final class KeyBindings
         {
             throw new InvalidKeyBinding("syntax error");
         }
+    }
+
+    /**
+     * Execute a "key press" event.
+     *
+     * @param e The event to execute.
+     *
+     * @return Whether a matching key binding was found.
+     */
+    public boolean handleKeyPress(final KeyEvent e)
+    {
+        final KeyBinding keyBinding = getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
+        if (keyBinding == null)
+        {
+            return false;
+        }
+
+        keyBinding.getCommands().execute();
+        return true;
+    }
+
+    /**
+     * Execute a "key typed" event.
+     *
+     * @param e The event to execute.
+     *
+     * @return Whether a matching key binding was found.
+     */
+    public boolean handleKeyTyped(final KeyEvent e)
+    {
+        final KeyBinding keyBinding = getKeyBindingAsKeyChar(e.getKeyChar());
+        if (keyBinding == null)
+        {
+            return false;
+        }
+
+        keyBinding.getCommands().execute();
+        return true;
     }
 }

@@ -349,14 +349,7 @@ public class Gui
             }
         }
 
-        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
-        if (keyBinding != null)
-        {
-            keyBinding.getCommands().execute();
-            return true;
-        }
-
-        return false;
+        return keyBindings.handleKeyPress(e);
     }
 
     /**
@@ -381,14 +374,7 @@ public class Gui
             }
         }
 
-        final KeyBinding keyBinding = keyBindings.getKeyBindingAsKeyChar(e.getKeyChar());
-        if (keyBinding != null)
-        {
-            keyBinding.getCommands().execute();
-            return true;
-        }
-
-        return false;
+        return keyBindings.handleKeyTyped(e);
     }
 
     /**
