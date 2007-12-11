@@ -119,7 +119,7 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
     }
 
     /** {@inheritDoc} */
-    @Override public void setActive(final boolean active)
+    @Override public boolean setActive(final boolean active)
     {
         if (this.active && !active)
         {
@@ -128,8 +128,13 @@ public class GUIMetaElement extends GUIElement implements GUIScrollable
                 comment.setText("");
             }
         }
-        this.active = active;
+        if (!super.setActive(active))
+        {
+            return false;
+        }
+
         render();
+        return true;
     }
 
     /** {@inheritDoc} */
