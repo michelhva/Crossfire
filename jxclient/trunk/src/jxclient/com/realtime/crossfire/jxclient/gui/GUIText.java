@@ -39,6 +39,12 @@ import java.awt.Transparency;
  */
 public abstract class GUIText extends ActivatableGUIElement implements KeyListener
 {
+    /**
+     * The number of characters to scroll left/right when the cursor would move
+     * outside of the visible area.
+     */
+    private static final int SCROLL_CHARS = 8;
+
     private final BufferedImage activeImage;
 
     private final BufferedImage inactiveImage;
@@ -63,6 +69,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private int cursor;
 
+    /**
+     * The display offset: this many characters are hidden.
+     */
+    private int offset = 0;
+
     public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
         super(jxcWindow, name, x, y, w, h);
@@ -74,17 +85,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.activeColor = activeColor;
         this.margin = margin;
         this.text = new StringBuilder(text);
-        cursor = this.text.length();
         createBuffer();
-        render();
+        setCursor(this.text.length());
     }
 
     public void setText(final String text)
     {
         this.text.setLength(0);
         this.text.append(text);
-        cursor = this.text.length();
-        render();
+        setCursor(this.text.length());
     }
 
     public String getText()
@@ -101,24 +110,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final Graphics2D g = mybuffer.createGraphics();
             g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
             g.setFont(font);
-            final String tmp;
-            if (hideInput)
-            {
-                final String template = "********************";
-                final String hiddenText = template.substring(0, Math.min(text.length(), template.length()));
-                tmp = hiddenText+" ";
-            }
-            else
-            {
-                tmp = text.toString()+" ";
-            }
-
+            final String tmp = getDisplayText(g);
             final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
             final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
             if (isActive())
             {
-                final String tmpPrefix = tmp.substring(0, cursor);
-                final String tmpCursor = tmp.substring(0, cursor+1);
+                final String tmpPrefix = tmp.substring(0, cursor-offset);
+                final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
                 final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
@@ -132,6 +130,19 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             g.dispose();
         }
         setChanged();
+    }
+
+    public String getDisplayText(final Graphics2D g)
+    {
+        final String tmpText = text.substring(offset);
+        if (!hideInput)
+        {
+            return tmpText+" ";
+        }
+
+        final String template = "********************";
+        final String hiddenText = template.substring(0, Math.min(tmpText.length(), template.length()));
+        return hiddenText+" ";
     }
 
     /** {@inheritDoc} */
@@ -174,8 +185,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (cursor > 0)
             {
                 text.delete(cursor-1, cursor);
-                cursor--;
-                render();
+                setCursor(cursor-1);
             }
             break;
 
@@ -195,15 +205,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         case KeyEvent.VK_LEFT:
             if (cursor > 0)
             {
-                cursor--;
-                render();
+                setCursor(cursor-1);
             }
             break;
 
         case KeyEvent.VK_RIGHT:
             if (cursor <text.length())
             {
-                cursor++;
+                setCursor(cursor+1);
                 render();
             }
             break;
@@ -213,8 +222,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (chr != KeyEvent.CHAR_UNDEFINED && chr >= ' ')
             {
                 text.insert(cursor, chr);
-                cursor++;
-                render();
+                setCursor(cursor+1);
             }
             break;
         }
@@ -261,5 +269,59 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             this.hideInput = hideInput;
             render();
         }
+    }
+
+    /**
+     * Set the cursor position. Make sure the cursor position is visible.
+     *
+     * @param cursor The new cursor position.
+     */
+    public void setCursor(final int cursor)
+    {
+        if (this.cursor < cursor)
+        {
+            // cursor moved right
+
+            final Graphics2D g = mybuffer.createGraphics();
+            for (;;)
+            {
+                final String tmp = getDisplayText(g);
+                final String tmpCursor = tmp.substring(0, cursor-offset+1);
+                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                final int cursorX = (int)(rectCursor.getWidth()+0.5);
+                if (cursorX < w)
+                {
+                    break;
+                }
+
+                if (offset+SCROLL_CHARS <= cursor)
+                {
+                    offset += SCROLL_CHARS;
+                }
+                else
+                {
+                    offset = cursor;
+                }
+            }
+        }
+        else if (this.cursor > cursor)
+        {
+            // cursor moved left
+
+            if (cursor < offset)
+            {
+                if (offset > SCROLL_CHARS)
+                {
+                    offset -= SCROLL_CHARS;
+                }
+                else
+                {
+                    offset = 0;
+                }
+            }
+        }
+
+        this.cursor = cursor;
+        render();
     }
 }
