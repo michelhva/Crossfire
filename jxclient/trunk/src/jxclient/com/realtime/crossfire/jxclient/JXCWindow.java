@@ -1099,14 +1099,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
-    private void clearGUI()
-    {
-        jxcWindowRenderer.clearGUI();
-    }
-
     private void showGUIStart()
     {
-        clearGUI();
+        jxcWindowRenderer.clearGUI();
         Gui newGui;
         try
         {
@@ -1124,7 +1119,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void showGUIMeta()
     {
-        clearGUI();
+        jxcWindowRenderer.clearGUI();
         Gui newGui;
         try
         {
@@ -1143,7 +1138,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void showGUIMain()
     {
-        clearGUI();
+        jxcWindowRenderer.clearGUI();
         Gui newGui;
         try
         {
