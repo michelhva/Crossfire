@@ -120,7 +120,7 @@ public class GUIItemSpelllist extends GUIItem
         try
         {
             jxcw.sendNcom("cast "+myspell.getInternalName());
-            jxcw.setCurrentSpell(myspell);
+            jxcw.getCurrentSpellManager().setCurrentSpell(myspell);
         }
         catch (Exception ex)
         {
