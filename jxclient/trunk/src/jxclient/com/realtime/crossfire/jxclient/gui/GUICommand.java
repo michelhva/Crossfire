@@ -195,7 +195,7 @@ public class GUICommand
         case DIALOG_CLOSE:
             {
                 final DialogCloseParameter param = (DialogCloseParameter)myparams;
-                param.window.closeDialog(param.dialog);
+                param.window.getWindowRenderer().closeDialog(param.dialog);
             }
             break;
         }

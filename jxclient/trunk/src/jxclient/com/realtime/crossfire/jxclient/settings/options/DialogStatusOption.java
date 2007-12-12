@@ -67,7 +67,7 @@ public class DialogStatusOption extends Option
      */
     public boolean isOpen()
     {
-        return window.isDialogOpen(dialog);
+        return window.getWindowRenderer().isDialogOpen(dialog);
     }
 
     /**
