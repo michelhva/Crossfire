@@ -28,15 +28,25 @@ import com.realtime.crossfire.jxclient.settings.options.OptionException;
  *
  * @author Andreas Kirschbaum
  */
-public class SetCommand implements Command
+public class SetCommand extends AbstractCommand
 {
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to execute in.
+     */
+    protected SetCommand(final JXCWindow window)
+    {
+        super(window);
+    }
+
     /** {@inheritDoc} */
-    public void execute(final String args, final JXCWindow window)
+    public void execute(final String args)
     {
         final String[] tmp = Commands.patternWhitespace.split(args, 2);
         if (tmp.length != 2)
         {
-            window.getCrossfireServerConnection().drawInfo("The set command needs two arguments: set <option> <value>", 3);
+            drawInfoError("The set command needs two arguments: set <option> <value>");
             return;
         }
 
@@ -45,11 +55,11 @@ public class SetCommand implements Command
         final CheckBoxOption option;
         try
         {
-            option = window.getOptionManager().getCheckBoxOption(optionName);
+            option = getWindow().getOptionManager().getCheckBoxOption(optionName);
         }
         catch (final OptionException ex)
         {
-            window.getCrossfireServerConnection().drawInfo("Unknown option '"+optionName+"'", 3);
+            drawInfoError("Unknown option '"+optionName+"'");
             return;
         }
 
@@ -64,7 +74,7 @@ public class SetCommand implements Command
         }
         else
         {
-            window.getCrossfireServerConnection().drawInfo("The '"+optionArgs+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.", 3);
+            drawInfoError("The '"+optionArgs+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.");
             return;
         }
 

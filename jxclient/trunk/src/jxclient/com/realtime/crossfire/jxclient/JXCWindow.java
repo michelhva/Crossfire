@@ -162,7 +162,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     /**
      * The commands instance for this window.
      */
-    private final Commands commands = new Commands();
+    private final Commands commands = new Commands(this);
 
     /**
      * The default repeat counter for "ncom" commands.
@@ -1681,7 +1681,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     public void executeSingleCommand(final String command)
     {
-        if (!commands.execute(command, this))
+        if (!commands.execute(command))
         {
             sendNcom(command);
         }

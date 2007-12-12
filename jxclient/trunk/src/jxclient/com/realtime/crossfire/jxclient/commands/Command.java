@@ -32,8 +32,6 @@ public interface Command
      * Execute the command with the given arguments.
      *
      * @param args The command arguments.
-     *
-     * @param window The window to execute in.
      */
-    void execute(String args, JXCWindow window);
+    void execute(String args);
 }

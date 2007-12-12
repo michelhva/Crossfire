@@ -20,43 +20,58 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.ScriptProcess;
-import java.io.IOException;
 
 /**
- * Implements a "script" command. It runs a new script.
+ * Abstract base class of commands.
  *
  * @author Andreas Kirschbaum
  */
-public class ScriptCommand extends AbstractCommand
+public abstract class AbstractCommand implements Command
 {
+    /**
+     * The window to execute in.
+     */
+    private final JXCWindow window;
+
     /**
      * Create a new instance.
      *
      * @param window The window to execute in.
      */
-    protected ScriptCommand(final JXCWindow window)
+    protected AbstractCommand(final JXCWindow window)
     {
-        super(window);
+        this.window = window;
     }
 
-    /** {@inheritDoc} */
-    public void execute(final String args)
+    /**
+     * Display an error message.
+     *
+     * @param message The error message.
+     */
+    protected void drawInfoError(final String message)
     {
-        if (args.length() == 0)
-        {
-            drawInfoError("Which script to you want to run?");
-            return;
-        }
+        drawInfo(message, 3);
+    }
 
-        try
-        {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow());
-            // XXX: store scriptProcess
-        }
-        catch (final IOException ex)
-        {
-            drawInfoError("Unable to run script: "+ex.getMessage());
-        }
+    /**
+     * Display a message.
+     *
+     * @param message The message.
+     *
+     * @param color The color code.
+     */
+    protected void drawInfo(final String message, final int color)
+    {
+        window.getCrossfireServerConnection().drawInfo(message, color);
+    }
+
+    /**
+     * Return the associated window.
+     *
+     * @return The window.
+     */
+    protected JXCWindow getWindow()
+    {
+        return window;
     }
 }
