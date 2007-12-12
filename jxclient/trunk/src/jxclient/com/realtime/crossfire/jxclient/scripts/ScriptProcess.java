@@ -59,12 +59,31 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     {
         try
         {
-            InputStreamReader isr = new InputStreamReader(in);
-            BufferedReader br = new BufferedReader(isr);
-            String line;
-            while ((line = br.readLine()) != null)
+            final InputStreamReader isr = new InputStreamReader(in);
+            try
             {
-                runScriptCommand(line);
+                final BufferedReader br = new BufferedReader(isr);
+                try
+                {
+                    for (;;)
+                    {
+                        final String line = br.readLine();
+                        if (line == null)
+                        {
+                            break;
+                        }
+
+                        runScriptCommand(line);
+                    }
+                }
+                finally
+                {
+                    br.close();
+                }
+            }
+            finally
+            {
+                isr.close();
             }
         }
         catch (IOException e)
