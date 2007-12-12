@@ -151,6 +151,6 @@ public class GUISpellLabel extends GUIHTMLLabel
     {
         super(jxcWindow, name, x, y, w, h, picture, font, Color.WHITE, "");
         this.type = type;
-        jxcWindow.addSpellListener(spellListener);
+        jxcWindow.getCurrentSpellManager().addSpellListener(spellListener);
     }
 }

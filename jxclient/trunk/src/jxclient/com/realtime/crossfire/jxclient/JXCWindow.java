@@ -47,9 +47,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
-import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.spells.SpellChangedEvent;
-import com.realtime.crossfire.jxclient.spells.SpellListener;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -106,8 +104,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private final String semaphore_drawing = "semaphore_drawing";
 
-    private Spell mycurrentspell = null;
-
     /**
      * The shortcuts for this window.
      */
@@ -130,8 +126,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final boolean[] key_shift = new boolean[] { false, false, false, false };
 
     private KeyBindingState keyBindingState = null;
-
-    private final List<SpellListener> myspelllisteners = new ArrayList<SpellListener>();
 
     public static final int KEY_SHIFT_SHIFT = 0;
     public static final int KEY_SHIFT_CTRL = 1;
@@ -161,6 +155,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The commands instance for this window.
      */
     private final Commands commands = new Commands(this);
+
+    /**
+     * The current spell manager instance for this window.
+     */
+    private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
 
     /**
      * The mouse tracker.
@@ -256,31 +255,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public boolean checkFire()
     {
         return false;
-    }
-
-    public void addSpellListener(final SpellListener s)
-    {
-        myspelllisteners.add(s);
-    }
-
-    public void removeSpellListener(final SpellListener s)
-    {
-        myspelllisteners.remove(s);
-    }
-
-    public void setCurrentSpell(final Spell s)
-    {
-        mycurrentspell = s;
-        final SpellChangedEvent evt = new SpellChangedEvent(this, s);
-        for (final SpellListener sl : myspelllisteners)
-        {
-            sl.spellChanged(evt);
-        }
-    }
-
-    public Spell getCurrentSpell()
-    {
-        return mycurrentspell;
     }
 
     public void createKeyBinding(final GUICommandList cmdlist)
@@ -1441,5 +1415,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public TooltipManager getTooltipManager()
     {
         return tooltipManager;
+    }
+
+    /**
+     * Return the current spell manager instance for this window.
+     *
+     * @return the current spell manager instance for this window.
+     */
+    public final CurrentSpellManager getCurrentSpellManager()
+    {
+        return currentSpellManager;
     }
 }
