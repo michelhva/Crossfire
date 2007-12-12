@@ -237,7 +237,7 @@ public abstract class GUIElement
      */
     public void mouseClicked(final MouseEvent e)
     {
-        jxcWindow.openDialog(gui); // raise window
+        jxcWindow.getWindowRenderer().raiseDialog(gui);
     }
 
     /**

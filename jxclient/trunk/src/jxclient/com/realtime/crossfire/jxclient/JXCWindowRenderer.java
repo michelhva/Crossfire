@@ -210,7 +210,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        currentGui.clear();
+        currentGui = new Gui();
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -286,6 +286,36 @@ public class JXCWindowRenderer
         openDialogs.add(dialog);
         openDialogsChanged = true;
         return true;
+    }
+
+    /**
+     * Raise an already opened dialog.
+     *
+     * @param dialog The dialog to show.
+     */
+    public void raiseDialog(final Gui dialog)
+    {
+        if (dialog == currentGui)
+        {
+            return;
+        }
+
+        if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
+        {
+            return;
+        }
+
+        if (!isDialogOpen(dialog))
+        {
+            return;
+        }
+
+        if (!openDialogs.remove(dialog))
+        {
+            assert false;
+        }
+        openDialogs.add(dialog);
+        openDialogsChanged = true;
     }
 
     /**
