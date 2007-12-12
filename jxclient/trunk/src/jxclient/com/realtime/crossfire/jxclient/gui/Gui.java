@@ -151,7 +151,7 @@ public class Gui
     {
         final boolean debugGui = jxcWindow.isDebugGui();
 
-        final GUIElement mouseElement = debugGui ? jxcWindow.getMouseElement() : null;
+        final GUIElement mouseElement = debugGui ? jxcWindow.getMouseTracker().getMouseElement() : null;
         final long t0 = debugGui ? System.currentTimeMillis() : 0;
 
         hasChangedElements = false;

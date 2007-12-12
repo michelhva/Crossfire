@@ -21,16 +21,16 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
 /**
  *
  * @version 1.0
  * @author Lauwenmark
+ * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIElement implements MouseListener
+public abstract class GUIElement
 {
     /**
      * The {@link Gui} this element is part of. Set to <code>null</code> if
@@ -228,35 +228,84 @@ public abstract class GUIElement implements MouseListener
         return myname;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Will be called when the user has clicked (pressed+released) this
+     * element. This event will be delivered after {@link
+     * #mouseReleased(MouseEvent)}.
+     *
+     * @param e The mouse event relative to this element.
+     */
     public void mouseClicked(final MouseEvent e)
     {
         jxcWindow.openDialog(gui); // raise window
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Will be called when the mouse has entered the bounding box of this
+     * element.
+     *
+     * @param e The mouse event relative to this element.
+     */
     public void mouseEntered(final MouseEvent e)
     {
-        final JXCWindow jxcw = (JXCWindow)e.getSource();
-        jxcw.setTooltipElement(this);
+        ((JXCWindow)e.getSource()).setTooltipElement(this);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Will be called when the mouse has left the bounding box of this element.
+     * This function will not be called unless {@link mouseEntered(MouseEvent)}
+     * has been called before.
+     *
+     * @param e The mouse event relative to this element.
+     */
     public void mouseExited(final MouseEvent e)
     {
-        final JXCWindow jxcw = (JXCWindow)e.getSource();
-        jxcw.unsetTooltipElement(this);
+        ((JXCWindow)e.getSource()).unsetTooltipElement(this);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Will be called when the user has pressed the mouse inside this element.
+     *
+     * @param e The mouse event relative to this element.
+     */
     public void mousePressed(final MouseEvent e)
     {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Will be called when the user has released the mouse. This event may be
+     * deleivered even if no previous {@link #mousePressed(MouseEvent)} has
+     * been delivered before.
+     *
+     * @param e The mouse event relative to this element.
+     */
     public void mouseReleased(final MouseEvent e)
     {
-        mouseClicked(e);
+    }
+
+    /**
+     * Will be called when the mouse moves within this component.
+     * before.
+     *
+     * @param e The mouse event relative to this element.
+     */
+    public void mouseMoved(final MouseEvent e)
+    {
+    }
+
+    /**
+     * Will be called when the mouse moves within this component while the
+     * button is pressed. This event will be delivered after {@link
+     * #mouseMoved(MouseEvent)}.
+     *
+     * <p>Note: if the mouse leaves this elements's bounding box while the
+     * mouse button is still pressed, further <code>mouseDragged</code> (but no
+     * <code>mouseMoved</code>) events will be generated.
+     *
+     * @param e The mouse event relative to this element.
+     */
+    public void mouseDragged(final MouseEvent e)
+    {
     }
 
     /**
@@ -272,7 +321,7 @@ public abstract class GUIElement implements MouseListener
     /**
      * Record that {@link #mybuffer} has changed.
      */
-    protected void setChanged()
+    public void setChanged()
     {
         if (changed)
         {
