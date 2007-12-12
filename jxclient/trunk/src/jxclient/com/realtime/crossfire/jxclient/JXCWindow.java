@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;

@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.ScriptProcess;
+import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import java.io.IOException;
 
 /**
