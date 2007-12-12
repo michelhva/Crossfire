@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
@@ -39,8 +40,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.ServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
-import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
-import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
@@ -161,6 +160,11 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final PoisonWatcher poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
 
     /**
+     * The commands instance for this window.
+     */
+    private final Commands commands = new Commands();
+
+    /**
      * The default repeat counter for "ncom" commands.
      */
     private int repeatCount = 0;
@@ -260,18 +264,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         myserver.removeScriptMonitor(sp);
     }
 
-    private void runScript(final String cmdline)
-    {
-        try
-        {
-            final ScriptProcess sp = new ScriptProcess(cmdline, this);
-        }
-        catch (final IOException e)
-        {
-            System.out.println("Unable to run script: "+cmdline);
-        }
-    }
-
     public void addSpellListener(final SpellListener s)
     {
         myspelllisteners.add(s);
@@ -297,13 +289,13 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         return mycurrentspell;
     }
 
-    private void createKeyBinding(final GUICommandList cmdlist)
+    public void createKeyBinding(final GUICommandList cmdlist)
     {
         keyBindingState = new KeyBindingState(cmdlist);
         jxcWindowRenderer.openDialog(mydialog_keybind);
     }
 
-    private void removeKeyBinding()
+    public void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
         jxcWindowRenderer.openDialog(mydialog_keybind);
@@ -1564,6 +1556,16 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Return the current skin.
+     *
+     * @return The skin.
+     */
+    public JXCSkin getSkin()
+    {
+        return myskin;
+    }
+
+    /**
      * Return the gui element in which the mouse is.
      *
      * @return The gui element in which the mouse is.
@@ -1679,85 +1681,10 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
      */
     public void executeSingleCommand(final String command)
     {
-        if (command.startsWith("bind "))
-        {
-            final String cmdl = command.substring(5);
-            final GUICommandList commands = new GUICommandList(cmdl, this);
-            createKeyBinding(commands);
-        }
-        else if (command.startsWith("unbind"))
-        {
-            removeKeyBinding();
-        }
-        else if (command.startsWith("script "))
-        {
-            runScript(command.substring(7));
-        }
-        else if (command.startsWith("exec "))
-        {
-            try
-            {
-                myskin.getCommandList(command.substring(5).trim()).execute();
-            }
-            catch (final JXCSkinException ex)
-            {
-                myserver.drawInfo(ex.getMessage(), 3);
-            }
-        }
-        else if (command.startsWith("set "))
-        {
-            final String[] tmp = command.split(" +", 3);
-            if (tmp.length != 3)
-            {
-                myserver.drawInfo("The set command needs two arguments: set <option> <value>", 3);
-            }
-            else
-            {
-                setCheckBoxOption(tmp[1], tmp[2]);
-            }
-        }
-        else
+        if (!commands.execute(command, this))
         {
             sendNcom(command);
         }
-    }
-
-    /**
-     * Set the state of a check box option.
-     *
-     * @param optionName The option name to set.
-     *
-     * @param args The new state.
-     */
-    private void setCheckBoxOption(final String optionName, final String args)
-    {
-        final CheckBoxOption option;
-        try
-        {
-            option = optionManager.getCheckBoxOption(optionName);
-        }
-        catch (final OptionException ex)
-        {
-            myserver.drawInfo("Unknown option '"+optionName+"'", 3);
-            return;
-        }
-
-        final boolean checked;
-        if (args.equals("on"))
-        {
-            checked = true;
-        }
-        else if (args.equals("off"))
-        {
-            checked = false;
-        }
-        else
-        {
-            myserver.drawInfo("The '"+args+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.", 3);
-            return;
-        }
-
-        option.setChecked(checked);
     }
 
     /**
