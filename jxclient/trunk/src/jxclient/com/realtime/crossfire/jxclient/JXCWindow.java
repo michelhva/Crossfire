@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIText;
@@ -65,7 +64,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import javax.swing.event.MouseInputListener;
 import javax.swing.JFrame;
 
 /**
@@ -75,7 +73,7 @@ import javax.swing.JFrame;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public class JXCWindow extends JFrame implements KeyListener, MouseInputListener, CrossfireDrawextinfoListener, CrossfireQueryListener
+public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextinfoListener, CrossfireQueryListener
 {
     /**
      * The prefix for the window title.
@@ -165,14 +163,14 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     private final Commands commands = new Commands(this);
 
     /**
+     * The mouse tracker.
+     */
+    private final MouseTracker mouseTracker;
+
+    /**
      * The default repeat counter for "ncom" commands.
      */
     private int repeatCount = 0;
-
-    /**
-     * The gui element in which the mouse is.
-     */
-    private GUIElement mouseElement = null;
 
     /**
      * The width of the client area.
@@ -246,6 +244,7 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         optionManager = new OptionManager(settings);
+        mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
         addWindowFocusListener(windowFocusListener);
     }
 
@@ -498,8 +497,8 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         windowHeight = h;
         CfMapUpdater.processNewmap();
         addKeyListener(this);
-        addMouseListener(this);
-        addMouseMotionListener(this);
+        addMouseListener(mouseTracker);
+        addMouseMotionListener(mouseTracker);
         jxcWindowRenderer.init(w, h, b, f);
         if (!setSkin(skinName))
         {
@@ -1058,141 +1057,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
         is_run_active = false;
     }
 
-    public void mouseClicked(final MouseEvent e)
-    {
-    }
-
-    public void mouseEntered(final MouseEvent e)
-    {
-        synchronized(semaphore_drawing)
-        {
-            final GUIElement elected = findElement(e, true);
-            enterElement(elected, e);
-        }
-    }
-
-    public void mouseExited(final MouseEvent e)
-    {
-        synchronized(semaphore_drawing)
-        {
-            leaveElement(e);
-        }
-    }
-
-    public void mousePressed(final MouseEvent e)
-    {
-        synchronized(semaphore_drawing)
-        {
-            final GUIElement elected = findElement(e, false);
-            if (elected != null)
-            {
-                elected.mousePressed(e);
-                if (elected instanceof ActivatableGUIElement)
-                {
-                    if (elected.isActive())
-                    {
-                        elected.getGui().setActiveElement((ActivatableGUIElement)elected);
-                    }
-                    else
-                    {
-                        elected.getGui().setActiveElement(null);
-                    }
-                }
-            }
-        }
-    }
-
-    public void mouseReleased(final MouseEvent e)
-    {
-        synchronized(semaphore_drawing)
-        {
-            final GUIElement elected = findElement(e, false);
-            if (elected != null)
-            {
-                elected.mouseReleased(e);
-            }
-        }
-    }
-
-    /**
-     * Find the gui element for a given {@link MouseEvent}. If a gui element
-     * was found, update the event mouse coordinates to be relative to the gui
-     * element.
-     *
-     * @param e The mouse event to process.
-     *
-     * @param ignoreButtons If set, match elements even if no mouse button is
-     * pressed.
-     *
-     * @return The gui element found, or <code>null</code> if none was found.
-     */
-    private GUIElement findElement(final MouseEvent e, final boolean ignoreButtons)
-    {
-        GUIElement elected = null;
-
-        for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
-        {
-            if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
-            {
-                elected = manageMouseEvents(dialog, e, ignoreButtons);
-                if (elected != null)
-                {
-                    break;
-                }
-            }
-            if (dialog.isModal())
-            {
-                return null;
-            }
-        }
-
-        if (elected == null)
-        {
-            elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e, ignoreButtons);
-        }
-
-        if (elected != null)
-        {
-            e.translatePoint(-elected.getX()-jxcWindowRenderer.getOffsetX(), -elected.getY()-jxcWindowRenderer.getOffsetY());
-        }
-
-        return elected;
-    }
-
-    private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e, final boolean ignoreButtons)
-    {
-        final int x = e.getX()-jxcWindowRenderer.getOffsetX();
-        final int y = e.getY()-jxcWindowRenderer.getOffsetY();
-        final int b = e.getButton();
-        final GUIElement elected;
-        switch (b)
-        {
-        case MouseEvent.BUTTON1:
-        case MouseEvent.BUTTON2:
-        case MouseEvent.BUTTON3:
-            elected = gui.getElementFromPoint(x, y);
-            break;
-
-        default:
-            elected = ignoreButtons ? gui.getElementFromPoint(x, y) : null;
-            break;
-        }
-        return elected;
-    }
-
-    public void mouseDragged(final MouseEvent e)
-    {
-    }
-
-    public void mouseMoved(final MouseEvent e)
-    {
-        synchronized(semaphore_drawing)
-        {
-            final GUIElement elected = findElement(e, true);
-            enterElement(elected, e);
-        }
-    }
-
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
     {
         switch (evt.getType())
@@ -1373,61 +1237,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
-     * Called when the mouse enters an element or is moved within an element.
-     * It checks whether the element has changed and generates {@link
-     * GUIElement#mouseEntered(MouseEvent)} or {@link
-     * GUIElement#mouseExited(MouseEvent)}.
-     *
-     * @param element The gui element the mouse is in.
-     *
-     * @param e The event that caused this call.
-     */
-    private void enterElement(final GUIElement element, final MouseEvent e)
-    {
-        if (element == null)
-        {
-            leaveElement(e);
-            return;
-        }
-
-        if (mouseElement != null)
-        {
-            if (mouseElement == element)
-            {
-                return;
-            }
-
-            mouseElement.mouseExited(e);
-        }
-
-        mouseElement = element;
-        mouseElement.mouseEntered(e);
-        if (debugGui)
-        {
-            jxcWindowRenderer.repaint();
-        }
-    }
-
-    /**
-     * Called when the mouse has left an element. It generates {@link
-     * GUIElement#mouseExited(MouseEvent)}.
-     *
-     * @param e The event that caused this call.
-     */
-    private void leaveElement(final MouseEvent e)
-    {
-        if (mouseElement != null)
-        {
-            mouseElement.mouseExited(e);
-            mouseElement = null;
-            if (debugGui)
-            {
-                jxcWindowRenderer.repaint();
-            }
-        }
-    }
-
-    /**
      * Set the tooltip to use, or <code>null</code> if no tooltips should be
      * shown.
      *
@@ -1566,16 +1375,6 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
-     * Return the gui element in which the mouse is.
-     *
-     * @return The gui element in which the mouse is.
-     */
-    public GUIElement getMouseElement()
-    {
-        return mouseElement;
-    }
-
-    /**
      * Return whether GUI elements should be highlighted.
      *
      * @return Whether GUI elements should be highlighted.
@@ -1695,5 +1494,15 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     public OptionManager getOptionManager()
     {
         return optionManager;
+    }
+
+    /**
+     * Return the mouse tracker.
+     *
+     * @return The mouse tracker.
+     */
+    public MouseTracker getMouseTracker()
+    {
+        return mouseTracker;
     }
 }
