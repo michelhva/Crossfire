@@ -31,7 +31,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 
-public class ScriptProcess extends Thread implements CrossfireScriptMonitorListener
+public class ScriptProcess extends Thread
 {
     private final String mycmd;
 
@@ -42,6 +42,24 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
     private final OutputStream out;
 
     private final OutputStreamWriter osw;
+
+    private final CrossfireScriptMonitorListener crossfireScriptMonitorListener = new CrossfireScriptMonitorListener()
+    {
+        /** {@inheritDoc} */
+        public void commandSent(final byte[] packet, final int length)
+        {
+            final String cmd;
+            try
+            {
+                cmd = new String(packet, 0, length, "ISO-8859-1");
+            }
+            catch (final UnsupportedEncodingException ex)
+            {
+                throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
+            }
+            ScriptProcess.this.commandSent(cmd);
+        }
+    };
 
     public ScriptProcess(final String cmdline, final JXCWindow win) throws IOException
     {
@@ -90,26 +108,12 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
             e.printStackTrace();
         }
-        mywindow.getCrossfireServerConnection().removeScriptMonitor(this);
+        mywindow.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
     public OutputStream getOutputStream()
     {
         return out;
-    }
-
-    public void commandSent(final byte[] packet, final int length)
-    {
-        final String cmd;
-        try
-        {
-            cmd = new String(packet, 0, length, "ISO-8859-1");
-        }
-        catch (final UnsupportedEncodingException ex)
-        {
-            throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
-        }
-        commandSent(cmd);
     }
 
     public void commandSent(final String cmd)
@@ -294,11 +298,11 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (cmdline.startsWith("monitor"))
         {
-            mywindow.getCrossfireServerConnection().addScriptMonitor(this);
+            mywindow.getCrossfireServerConnection().addScriptMonitor(crossfireScriptMonitorListener);
         }
         else if (cmdline.startsWith("unmonitor"))
         {
-            mywindow.getCrossfireServerConnection().removeScriptMonitor(this);
+            mywindow.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
         }
     }
 }
