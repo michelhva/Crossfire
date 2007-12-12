@@ -399,7 +399,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         System.exit(0);
     }
 
-    private void initGUI(final int id)
+    public void changeGUI(final int id)
     {
         switch (id)
         {
@@ -425,11 +425,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             showGUIMain();
             break;
         }
-    }
-
-    public void changeGUI(final int id)
-    {
-        initGUI(id);
     }
 
     public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen, final String server)
@@ -464,7 +459,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else
             {
-                initGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+                changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
             }
             for (;;)
             {
@@ -489,7 +484,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         myserver.addCrossfireQueryListener(this);
         setTitle(TITLE_PREFIX+" - "+hostname);
         ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
-        initGUI(GUI_MAIN);
+        changeGUI(GUI_MAIN);
         myserver.connect(hostname, port);
         Faces.setFacesCallback(myserver);
     }
