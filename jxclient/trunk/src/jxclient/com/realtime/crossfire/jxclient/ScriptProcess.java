@@ -232,7 +232,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
     }
 
-    public void runScriptCommand(String cmdline)
+    private void runScriptCommand(String cmdline)
     {
         if (cmdline.startsWith("watch "))
         {
