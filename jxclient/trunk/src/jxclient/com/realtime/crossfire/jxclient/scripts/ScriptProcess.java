@@ -111,11 +111,6 @@ public class ScriptProcess extends Thread
         window.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
-    public OutputStream getOutputStream()
-    {
-        return out;
-    }
-
     public void commandSent(final String cmd)
     {
         try
