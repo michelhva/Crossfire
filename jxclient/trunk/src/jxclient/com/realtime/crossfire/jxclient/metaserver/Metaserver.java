@@ -109,7 +109,7 @@ public class Metaserver
     {
         final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(entry);
         if (metaserverEntry == null)
-	{
+        {
             System.err.println("Dropping invalid metaserver response line: "+entry);
             return;
         }
