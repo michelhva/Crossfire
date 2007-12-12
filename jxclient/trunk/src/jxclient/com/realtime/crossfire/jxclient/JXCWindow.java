@@ -1658,12 +1658,26 @@ public class JXCWindow extends JFrame implements KeyListener, MouseInputListener
     }
 
     /**
+     * Execute a command or a list of commands. The commands may be a client-
+     * or a server-sided command.
+     *
+     * @param commands The commands to execute.
+     */
+    public void executeCommand(final String commands)
+    {
+        for (final String command : commands.trim().split(" *; *"))
+        {
+            executeSingleCommand(command);
+        }
+    }
+
+    /**
      * Execute a command. The command may be a client- or a server-sided
      * command.
      *
      * @param command The command to execute.
      */
-    public void executeCommand(final String command)
+    public void executeSingleCommand(final String command)
     {
         if (command.startsWith("bind "))
         {
