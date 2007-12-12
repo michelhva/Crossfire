@@ -107,7 +107,7 @@ public class GUIItemShortcut extends GUIItem
     /* {@inheritDoc} */
     @Override protected void button3Clicked(final JXCWindow jxcWindow)
     {
-	    final Spell spell = jxcWindow.getCurrentSpellManager().getCurrentSpell();
+        final Spell spell = jxcWindow.getCurrentSpellManager().getCurrentSpell();
         if (spell == null)
         {
            return;
