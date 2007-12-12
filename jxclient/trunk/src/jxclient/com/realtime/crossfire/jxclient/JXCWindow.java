@@ -93,8 +93,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final boolean debugGui;
 
-    private long framecount = 0;
-
     /**
      * The global experience table.
      */
@@ -388,16 +386,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void initRendering(final boolean fullScreen)
     {
         jxcWindowRenderer.initRendering(fullScreen);
-        framecount = 0;
         loadKeybindings();
         loadShortcuts();
     }
 
     public void endRendering()
     {
-//        final long endtime = System.nanoTime();
-//        final long totaltime = endtime-starttime;
-//        System.out.println(framecount+" frames in "+totaltime/1000000+" ms - "+(framecount*1000/(totaltime/1000000))+" FPS");
         jxcWindowRenderer.endRendering();
         saveShortcuts();
         saveKeybindings();
@@ -478,7 +472,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 {
                     jxcWindowRenderer.redrawGUI();
                 }
-                framecount++;
                 Thread.sleep(10);
             }
         }
