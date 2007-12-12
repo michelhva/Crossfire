@@ -82,18 +82,6 @@ public class Gui
      */
     private int y = 0;
 
-    /**
-     * Remove all {@link GUIElement}s from this gui.
-     */
-    public void clear()
-    {
-        for (final GUIElement element : elements)
-        {
-            element.setGui(null);
-        }
-        elements.clear();
-    }
-
     public void setPosition(final int x, final int y)
     {
         if (this.x == x && this.y == y)
