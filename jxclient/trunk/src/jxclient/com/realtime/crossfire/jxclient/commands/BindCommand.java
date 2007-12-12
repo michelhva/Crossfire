@@ -27,17 +27,27 @@ import com.realtime.crossfire.jxclient.JXCWindow;
  *
  * @author Andreas Kirschbaum
  */
-public class BindCommand implements Command
+public class BindCommand extends AbstractCommand
 {
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to execute in.
+     */
+    protected BindCommand(final JXCWindow window)
+    {
+        super(window);
+    }
+
     /** {@inheritDoc} */
-    public void execute(final String args, final JXCWindow window)
+    public void execute(final String args)
     {
         if (args.length() == 0)
         {
-            window.getCrossfireServerConnection().drawInfo("Which command to you want to bind?", 3);
+            drawInfoError("Which command to you want to bind?");
             return;
         }
 
-        window.createKeyBinding(new GUICommandList(args, window));
+        getWindow().createKeyBinding(new GUICommandList(args, getWindow()));
     }
 }

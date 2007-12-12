@@ -39,14 +39,20 @@ public class Commands
     /**
      * Maps command name to {@link Command} instance.
      */
-    private static final Map<String, Command> commands = new HashMap<String, Command>();
-    static
+    private final Map<String, Command> commands = new HashMap<String, Command>();
+
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to execute the commands in.
+     */
+    public Commands(final JXCWindow window)
     {
-        commands.put("bind", new BindCommand());
-        commands.put("unbind", new UnbindCommand());
-        commands.put("script", new ScriptCommand());
-        commands.put("exec", new ExecCommand());
-        commands.put("set", new SetCommand());
+        commands.put("bind", new BindCommand(window));
+        commands.put("unbind", new UnbindCommand(window));
+        commands.put("script", new ScriptCommand(window));
+        commands.put("exec", new ExecCommand(window));
+        commands.put("set", new SetCommand(window));
     }
 
     /**
@@ -54,11 +60,9 @@ public class Commands
      *
      * @param command The command.
      *
-     * @param window The window to execute in.
-     *
      * @return Whether a command was executed.
      */
-    public boolean execute(final String command, final JXCWindow window)
+    public boolean execute(final String command)
     {
         final String[] args = patternWhitespace.split(command.trim(), 2);
         final Command cmd = commands.get(args[0]);
@@ -67,7 +71,7 @@ public class Commands
             return false;
         }
 
-        cmd.execute(args.length >= 2 ? args[1] : "", window);
+        cmd.execute(args.length >= 2 ? args[1] : "");
         return true;
     }
 }

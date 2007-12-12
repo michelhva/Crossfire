@@ -26,17 +26,27 @@ import com.realtime.crossfire.jxclient.JXCWindow;
  *
  * @author Andreas Kirschbaum
  */
-public class UnbindCommand implements Command
+public class UnbindCommand extends AbstractCommand
 {
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to execute in.
+     */
+    protected UnbindCommand(final JXCWindow window)
+    {
+        super(window);
+    }
+
     /** {@inheritDoc} */
-    public void execute(final String args, final JXCWindow window)
+    public void execute(final String args)
     {
         if (args.length() == 0)
         {
-            window.getCrossfireServerConnection().drawInfo("No arguments allowed.", 3);
+            drawInfoError("No arguments allowed.");
             return;
         }
 
-        window.removeKeyBinding();
+        getWindow().removeKeyBinding();
     }
 }

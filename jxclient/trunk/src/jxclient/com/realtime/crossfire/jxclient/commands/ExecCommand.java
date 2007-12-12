@@ -29,18 +29,28 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinException;
  *
  * @author Andreas Kirschbaum
  */
-public class ExecCommand implements Command
+public class ExecCommand extends AbstractCommand
 {
+    /**
+     * Create a new instance.
+     *
+     * @param window The window to execute in.
+     */
+    protected ExecCommand(final JXCWindow window)
+    {
+        super(window);
+    }
+
     /** {@inheritDoc} */
-    public void execute(final String args, final JXCWindow window)
+    public void execute(final String args)
     {
         if (args.length() == 0)
         {
-            window.getCrossfireServerConnection().drawInfo("Which command to you want to run?", 3);
+            drawInfoError("Which command to you want to run?");
             return;
         }
 
-        final JXCSkin skin = window.getSkin();
+        final JXCSkin skin = getWindow().getSkin();
         final GUICommandList commandList;
         try
         {
@@ -48,7 +58,7 @@ public class ExecCommand implements Command
         }
         catch (final JXCSkinException ex)
         {
-            window.getCrossfireServerConnection().drawInfo(ex.getMessage(), 3);
+            drawInfoError(ex.getMessage());
             return;
         }
         commandList.execute();
