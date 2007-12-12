@@ -282,7 +282,9 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
             final String parms = cmdline.substring(6);
             final String[] pps = parms.split(" ", 3);
             for (int i = 0; i < Integer.parseInt(pps[0]); i++)
+            {
                 mywindow.sendNcom(0, pps[2]);
+            }
         }
         else if (cmdline.startsWith("draw "))
         {
