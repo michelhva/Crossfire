@@ -33,9 +33,9 @@ import java.io.UnsupportedEncodingException;
 
 public class ScriptProcess extends Thread
 {
-    private final String mycmd;
+    private final String filename;
 
-    private final JXCWindow mywindow;
+    private final JXCWindow window;
 
     private final InputStream in;
 
@@ -61,12 +61,12 @@ public class ScriptProcess extends Thread
         }
     };
 
-    public ScriptProcess(final String cmdline, final JXCWindow win) throws IOException
+    public ScriptProcess(final String filename, final JXCWindow window) throws IOException
     {
-        mycmd = cmdline;
-        mywindow = win;
+        this.filename = filename;
+        this.window = window;
         final Runtime rt = Runtime.getRuntime();
-        final Process proc = rt.exec(mycmd);
+        final Process proc = rt.exec(filename);
         in = proc.getInputStream();
         out = proc.getOutputStream();
         osw = new OutputStreamWriter(out);
@@ -108,7 +108,7 @@ public class ScriptProcess extends Thread
         {
             e.printStackTrace();
         }
-        mywindow.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
+        window.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
     public OutputStream getOutputStream()
@@ -131,7 +131,7 @@ public class ScriptProcess extends Thread
 
     public String toString()
     {
-        return mycmd;
+        return filename;
     }
 
     private void cmd_watch(final String cmdline)
@@ -226,7 +226,7 @@ public class ScriptProcess extends Thread
         }
         else if (parms.equals("flags"))
         {
-            commandSent((mywindow.checkFire() ? "1" : "0")+","+(mywindow.checkRun() ? "1" : "0"));
+            commandSent((window.checkFire() ? "1" : "0")+","+(window.checkRun() ? "1" : "0"));
         }
         else if (parms.equals("items inv"))
         {
@@ -287,22 +287,22 @@ public class ScriptProcess extends Thread
             final String[] pps = parms.split(" ", 3);
             for (int i = 0; i < Integer.parseInt(pps[0]); i++)
             {
-                mywindow.sendNcom(0, pps[2]);
+                window.sendNcom(0, pps[2]);
             }
         }
         else if (cmdline.startsWith("draw "))
         {
             final String parms = cmdline.substring(5);
             final String[] pps = parms.split(" ");
-            mywindow.getCrossfireServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
+            window.getCrossfireServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
         }
         else if (cmdline.startsWith("monitor"))
         {
-            mywindow.getCrossfireServerConnection().addScriptMonitor(crossfireScriptMonitorListener);
+            window.getCrossfireServerConnection().addScriptMonitor(crossfireScriptMonitorListener);
         }
         else if (cmdline.startsWith("unmonitor"))
         {
-            mywindow.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
+            window.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
         }
     }
 }
