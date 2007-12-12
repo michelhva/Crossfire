@@ -404,33 +404,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /**
-     * Close a dialog. Does nothing if the given dialog is not open.
-     *
-     * @param dialog The dialog to close.
-     */
-    public void closeDialog(final Gui dialog)
-    {
-        jxcWindowRenderer.closeDialog(dialog);
-    }
-
-    /**
-     * Return whether a given dialog is currently visible.
-     *
-     * @param dialog The dialog to check.
-     *
-     * @return Whether the dialog is visible.
-     */
-    public boolean isDialogOpen(final Gui dialog)
-    {
-        return jxcWindowRenderer.isDialogOpen(dialog);
-    }
-
-    /**
      * Close the "query" dialog. Does nothing if the dialog is not open.
      */
     public void closeQueryDialog()
     {
-        closeDialog(mydialog_query);
+        jxcWindowRenderer.closeDialog(mydialog_query);
     }
 
     private void initRendering(final boolean fullScreen)
@@ -1197,47 +1175,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /**
-     * Display the tooltip for a gui element.
-     *
-     * @param guiElement The gui element to show the tooltip of.
-     */
-    public void setTooltipElement(final GUIElement guiElement)
-    {
-        tooltipManager.setElement(guiElement);
-    }
-
-    /**
-     * Undisplay the tooltip for a gui element.
-     *
-     * @param guiElement The gui element to remove the tooltip of.
-     */
-    public void unsetTooltipElement(final GUIElement guiElement)
-    {
-        tooltipManager.unsetElement(guiElement);
-    }
-
-    /**
-     * Update the tooltip text for a gui element.
-     *
-     * @param guiElement The gui element to process.
-     */
-    public void updateTooltipElement(final GUIElement guiElement)
-    {
-        tooltipManager.updateElement(guiElement);
-    }
-
-    /**
-     * Set the tooltip to use, or <code>null</code> if no tooltips should be
-     * shown.
-     *
-     * @param tooltip The tooltip to use, or <code>null</code>.
-     */
-    public void setTooltip(final AbstractLabel tooltip)
-    {
-        jxcWindowRenderer.setTooltip(tooltip);
-    }
-
-    /**
      * Set the skin to use.
      *
      * @param skinName The skin name to set.
@@ -1494,5 +1431,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public JXCWindowRenderer getWindowRenderer()
     {
         return jxcWindowRenderer;
+    }
+
+    /**
+     * Return the tooltip manager for this window.
+     *
+     * @return The tooltip manager for this window.
+     */
+    public TooltipManager getTooltipManager()
+    {
+        return tooltipManager;
     }
 }

@@ -248,7 +248,7 @@ public abstract class GUIElement
      */
     public void mouseEntered(final MouseEvent e)
     {
-        ((JXCWindow)e.getSource()).setTooltipElement(this);
+        ((JXCWindow)e.getSource()).getTooltipManager().setElement(this);
     }
 
     /**
@@ -260,7 +260,7 @@ public abstract class GUIElement
      */
     public void mouseExited(final MouseEvent e)
     {
-        ((JXCWindow)e.getSource()).unsetTooltipElement(this);
+        ((JXCWindow)e.getSource()).getTooltipManager().unsetElement(this);
     }
 
     /**
@@ -366,7 +366,7 @@ public abstract class GUIElement
             }
         }
         this.tooltipText = tooltipText;
-        jxcWindow.updateTooltipElement(this);
+        jxcWindow.getTooltipManager().updateElement(this);
     }
 
     /**
