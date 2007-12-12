@@ -31,10 +31,10 @@ item floor floor23   757 5 32 32 empty marker_cursed marker_applied inventory_se
 item floor floor24   789 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 24 font_item BLACK
 item floor floor25   821 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 25 font_item BLACK
 item floor floor26   853 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 26 font_item BLACK
-item floor floor27   884 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 27 font_item BLACK
-item floor floor28   915 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
-item floor floor29   947 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
-item floor floor30   989 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
+item floor floor27   885 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 27 font_item BLACK
+item floor floor28   917 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
+item floor floor29   949 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
+item floor floor30   981 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
 button button_right 1013 5 16 32 scroll_right_up scroll_right_down true command_ground_right
 
 commandlist_add command_ground_left floor0 SCROLLUP
