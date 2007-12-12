@@ -51,12 +51,12 @@ public interface JXCSkin extends Iterable<Gui>
      */
     Gui getDialogQuit();
 
-    Gui getDialogKeyBind() throws JXCSkinException;
-    Gui getDialogQuery() throws JXCSkinException;
-    Gui getDialogBook(int booknr) throws JXCSkinException;
-    Gui getMainInterface() throws JXCSkinException;
-    Gui getMetaInterface() throws JXCSkinException;
-    Gui getStartInterface() throws JXCSkinException;
+    Gui getDialogKeyBind();
+    Gui getDialogQuery();
+    Gui getDialogBook(int booknr);
+    Gui getMainInterface();
+    Gui getMetaInterface();
+    Gui getStartInterface();
 
     /**
      * Execute the "event init" commands.

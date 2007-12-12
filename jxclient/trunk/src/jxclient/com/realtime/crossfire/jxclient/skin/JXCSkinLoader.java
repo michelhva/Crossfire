@@ -248,39 +248,81 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogKeyBind() throws JXCSkinException
+    public Gui getDialogKeyBind()
     {
-        return dialogs.lookup("keybind");
+        try
+        {
+            return dialogs.lookup("keybind");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogQuery() throws JXCSkinException
+    public Gui getDialogQuery()
     {
-        return dialogs.lookup("query");
+        try
+        {
+            return dialogs.lookup("query");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogBook(int booknr) throws JXCSkinException
+    public Gui getDialogBook(int booknr)
     {
-        return dialogs.lookup("book");
+        try
+        {
+            return dialogs.lookup("book");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getMainInterface() throws JXCSkinException
+    public Gui getMainInterface()
     {
-        return dialogs.lookup("main");
+        try
+        {
+            return dialogs.lookup("main");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getMetaInterface() throws JXCSkinException
+    public Gui getMetaInterface()
     {
-        return dialogs.lookup("meta");
+        try
+        {
+            return dialogs.lookup("meta");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /** {@inheritDoc} */
-    public Gui getStartInterface() throws JXCSkinException
+    public Gui getStartInterface()
     {
-        return dialogs.lookup("start");
+        try
+        {
+            return dialogs.lookup("start");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError(ex.getMessage());
+        }
     }
 
     /**
