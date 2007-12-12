@@ -125,7 +125,7 @@ public class TooltipManager
     {
         assert activeGuiElement != null;
 
-        final AbstractLabel tooltip = jxcWindow.getTooltip();
+        final AbstractLabel tooltip = jxcWindow.getWindowRenderer().getTooltip();
         if (tooltip == null)
         {
             return;
@@ -159,7 +159,7 @@ public class TooltipManager
      */
     private void removeTooltip()
     {
-        final AbstractLabel tooltip = jxcWindow.getTooltip();
+        final AbstractLabel tooltip = jxcWindow.getWindowRenderer().getTooltip();
         if (tooltip != null)
         {
             tooltip.setVisible(false);

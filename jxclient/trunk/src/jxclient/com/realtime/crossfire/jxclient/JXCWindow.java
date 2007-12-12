@@ -1238,16 +1238,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /**
-     * Return the tooltip {@link AbstractLabel} for this window.
-     *
-     * @return The tooltip label for this window.
-     */
-    public AbstractLabel getTooltip()
-    {
-        return jxcWindowRenderer.getTooltip();
-    }
-
-    /**
      * Set the skin to use.
      *
      * @param skinName The skin name to set.
@@ -1494,5 +1484,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public MouseTracker getMouseTracker()
     {
         return mouseTracker;
+    }
+
+    /**
+     * Return the window renderer instance for this window.
+     *
+     * @return The window renderer.
+     */
+    public JXCWindowRenderer getWindowRenderer()
+    {
+        return jxcWindowRenderer;
     }
 }
