@@ -107,9 +107,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Shortcuts shortcuts = new Shortcuts(this);
 
-    private Gui mydialog_query = new Gui();
-    private Gui mydialog_book = new Gui();
-    private Gui mydialog_keybind = new Gui();
+    private Gui queryDialog = new Gui();
+
+    private Gui keybindDialog = new Gui();
 
     /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
@@ -258,13 +258,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void createKeyBinding(final GUICommandList cmdlist)
     {
         keyBindingState = new KeyBindingState(cmdlist);
-        jxcWindowRenderer.openDialog(mydialog_keybind);
+        jxcWindowRenderer.openDialog(keybindDialog);
     }
 
     public void removeKeyBinding()
     {
         keyBindingState = new KeyBindingState(null);
-        jxcWindowRenderer.openDialog(mydialog_keybind);
+        jxcWindowRenderer.openDialog(keybindDialog);
     }
 
     /**
@@ -353,7 +353,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void openDialog(final Gui dialog)
     {
         jxcWindowRenderer.openDialog(dialog);
-        if (dialog == mydialog_query)
+        if (dialog == queryDialog)
         {
             jxcWindowRenderer.setHideInput(false);
         }
@@ -368,7 +368,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         if (jxcWindowRenderer.toggleDialog(dialog))
         {
-            if (dialog == mydialog_query)
+            if (dialog == queryDialog)
             {
                 jxcWindowRenderer.setHideInput(false);
             }
@@ -380,7 +380,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void closeQueryDialog()
     {
-        jxcWindowRenderer.closeDialog(mydialog_query);
+        jxcWindowRenderer.closeDialog(queryDialog);
     }
 
     private void initRendering(final boolean fullScreen)
@@ -854,7 +854,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 if (keyBindingState != null)
                 {
                     keyBindingState = null;
-                    jxcWindowRenderer.closeDialog(mydialog_keybind);
+                    jxcWindowRenderer.closeDialog(keybindDialog);
                 }
                 else if (dialogQuit == null)
                 {
@@ -916,7 +916,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 if (keyBindingState.keyReleased(keyBindings))
                 {
                     keyBindingState = null;
-                    jxcWindowRenderer.closeDialog(mydialog_keybind);
+                    jxcWindowRenderer.closeDialog(keybindDialog);
                 }
             }
             break;
@@ -997,7 +997,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         switch (evt.getType())
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
-            jxcWindowRenderer.openDialog(mydialog_book);
+            jxcWindowRenderer.openDialog(myskin.getDialogBook(1));
             break;
 
         case CrossfireServerConnection.MSG_TYPE_CARD:
@@ -1035,42 +1035,21 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        jxcWindowRenderer.openDialog(mydialog_query);
+        jxcWindowRenderer.openDialog(queryDialog);
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
     private void showGUIStart()
     {
         jxcWindowRenderer.clearGUI();
-        Gui newGui;
-        try
-        {
-            newGui = myskin.getStartInterface();
-        }
-        catch (final JXCSkinException e)
-        {
-            e.printStackTrace();
-            endRendering();
-            newGui = null;
-        }
-        jxcWindowRenderer.setCurrentGui(newGui);
+        jxcWindowRenderer.setCurrentGui(myskin.getStartInterface());
         tooltipManager.reset();
     }
 
     private void showGUIMeta()
     {
         jxcWindowRenderer.clearGUI();
-        Gui newGui;
-        try
-        {
-            newGui = myskin.getMetaInterface();
-        }
-        catch (final JXCSkinException e)
-        {
-            e.printStackTrace();
-            endRendering();
-            newGui = null;
-        }
+        final Gui newGui = myskin.getMetaInterface();
         jxcWindowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
         tooltipManager.reset();
@@ -1079,22 +1058,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void showGUIMain()
     {
         jxcWindowRenderer.clearGUI();
-        Gui newGui;
-        try
-        {
-            newGui = myskin.getMainInterface();
-            mydialog_query = myskin.getDialogQuery();
-            mydialog_book = myskin.getDialogBook(1);
-
-            mydialog_keybind = myskin.getDialogKeyBind();
-            dialogQuit = myskin.getDialogQuit();
-        }
-        catch (final JXCSkinException e)
-        {
-            e.printStackTrace();
-            endRendering();
-            newGui = null;
-        }
+        Gui newGui = myskin.getMainInterface();
         jxcWindowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
     }
@@ -1167,6 +1131,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         myskin.executeInitEvents();
+        queryDialog = myskin.getDialogQuery();
+        keybindDialog = myskin.getDialogKeyBind();
+        dialogQuit = myskin.getDialogQuit();
         optionManager.loadOptions();
         return true;
     }
