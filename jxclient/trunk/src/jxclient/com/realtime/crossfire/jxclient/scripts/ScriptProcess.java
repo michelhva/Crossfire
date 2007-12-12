@@ -90,7 +90,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         {
             e.printStackTrace();
         }
-        mywindow.terminateScript(this);
+        mywindow.getCrossfireServerConnection().removeScriptMonitor(this);
     }
 
     public OutputStream getOutputStream()

@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
@@ -257,11 +256,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public boolean checkFire()
     {
         return false;
-    }
-
-    public void terminateScript(final ScriptProcess sp)
-    {
-        myserver.removeScriptMonitor(sp);
     }
 
     public void addSpellListener(final SpellListener s)
