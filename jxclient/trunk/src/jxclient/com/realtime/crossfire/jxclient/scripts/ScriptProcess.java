@@ -37,18 +37,18 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
 
     private final JXCWindow mywindow;
 
-    private InputStream in;
+    private final InputStream in;
 
-    private OutputStream out;
+    private final OutputStream out;
 
-    private OutputStreamWriter osw;
+    private final OutputStreamWriter osw;
 
-    public ScriptProcess(String cmdline, JXCWindow win) throws IOException
+    public ScriptProcess(final String cmdline, final JXCWindow win) throws IOException
     {
         mycmd = cmdline;
         mywindow = win;
-        Runtime rt = Runtime.getRuntime();
-        Process proc = rt.exec(mycmd);
+        final Runtime rt = Runtime.getRuntime();
+        final Process proc = rt.exec(mycmd);
         in = proc.getInputStream();
         out = proc.getOutputStream();
         osw = new OutputStreamWriter(out);
@@ -86,7 +86,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
                 isr.close();
             }
         }
-        catch (IOException e)
+        catch (final IOException e)
         {
             e.printStackTrace();
         }
@@ -112,14 +112,14 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         commandSent(cmd);
     }
 
-    public void commandSent(String cmd)
+    public void commandSent(final String cmd)
     {
         try
         {
             osw.write(cmd+"\n");
             osw.flush();
         }
-        catch (Exception e)
+        catch (final Exception e)
         {
             e.printStackTrace();
         }
@@ -130,21 +130,21 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         return mycmd;
     }
 
-    private void cmd_watch(String cmdline)
+    private void cmd_watch(final String cmdline)
     {
-        String parms = cmdline.substring(6);
+        final String parms = cmdline.substring(6);
         System.out.println(" - Watch   :"+parms);
     }
 
-    private void cmd_unwatch(String cmdline)
+    private void cmd_unwatch(final String cmdline)
     {
-        String parms = cmdline.substring(8);
+        final String parms = cmdline.substring(8);
         System.out.println(" - Unwatch :"+parms);
     }
 
-    private void cmd_request(String cmdline)
+    private void cmd_request(final String cmdline)
     {
-        String parms = cmdline.substring(8);
+        final String parms = cmdline.substring(8);
         System.out.println(" - Request :"+parms);
         final Stats st = ItemsList.getStats();
 
@@ -195,7 +195,7 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
                         sb.append(',').append(Stats.getSkill(i).getExperience());
                     }
                 }
-                catch (Exception e)
+                catch (final Exception e)
                 {
                     i = 201;
                 }
@@ -269,25 +269,25 @@ public class ScriptProcess extends Thread implements CrossfireScriptMonitorListe
         }
         else if (cmdline.startsWith("issue mark "))
         {
-            String parms = cmdline.substring(11);
+            final String parms = cmdline.substring(11);
             System.out.println(" - Issue M :"+parms);
         }
         else if (cmdline.startsWith("issue lock "))
         {
-            String parms = cmdline.substring(11);
+            final String parms = cmdline.substring(11);
             System.out.println(" - Issue L :"+parms);
         }
         else if (cmdline.startsWith("issue "))
         {
-            String parms = cmdline.substring(6);
-            String[] pps = parms.split(" ", 3);
+            final String parms = cmdline.substring(6);
+            final String[] pps = parms.split(" ", 3);
             for (int i = 0; i < Integer.parseInt(pps[0]); i++)
                 mywindow.sendNcom(0, pps[2]);
         }
         else if (cmdline.startsWith("draw "))
         {
-            String parms = cmdline.substring(5);
-            String[] pps = parms.split(" ");
+            final String parms = cmdline.substring(5);
+            final String[] pps = parms.split(" ");
             mywindow.getCrossfireServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
         }
         else if (cmdline.startsWith("monitor"))
