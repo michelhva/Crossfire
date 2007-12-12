@@ -53,10 +53,7 @@ public class GUICommandList
      */
     public GUICommandList(final String commands, final JXCWindow jxcWindow)
     {
-        for (final String command : commands.trim().split(" *; *"))
-        {
-            this.commands.add(new GUICommand(null, GUICommand.Command.GUI_EXECUTE_COMMAND, new GUICommand.ExecuteCommandParameter(jxcWindow, command)));
-        }
+        this.commands.add(new GUICommand(null, GUICommand.Command.GUI_EXECUTE_COMMAND, new GUICommand.ExecuteCommandParameter(jxcWindow, commands)));
     }
 
     /**
