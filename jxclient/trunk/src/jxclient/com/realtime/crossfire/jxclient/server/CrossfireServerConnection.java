@@ -230,7 +230,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void addCrossfireDrawinfoListener(CrossfireDrawinfoListener listener)
+    public synchronized void addCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
         mylisteners_drawinfo.add(listener);
     }
@@ -241,7 +241,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void removeCrossfireDrawinfoListener(CrossfireDrawinfoListener listener)
+    public synchronized void removeCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
         mylisteners_drawinfo.remove(listener);
     }
@@ -252,7 +252,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void addCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener)
+    public synchronized void addCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
         mylisteners_drawextinfo.add(listener);
     }
@@ -263,7 +263,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void removeCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener)
+    public synchronized void removeCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
         mylisteners_drawextinfo.remove(listener);
     }
@@ -274,7 +274,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void addCrossfireQueryListener(CrossfireQueryListener listener)
+    public synchronized void addCrossfireQueryListener(final CrossfireQueryListener listener)
     {
         mylisteners_query.add(listener);
     }
@@ -285,7 +285,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param listener The listener to remove.
      * @since 1.0
      */
-    public synchronized void removeCrossfireQueryListener(CrossfireQueryListener listener)
+    public synchronized void removeCrossfireQueryListener(final CrossfireQueryListener listener)
     {
         mylisteners_query.remove(listener);
     }
@@ -1173,7 +1173,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    void cmd_item(DataInputStream dis)
+    void cmd_item(final DataInputStream dis)
     {
         // XXX: "item" command not yet implemented
     }
@@ -1504,12 +1504,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    private void cmd_mapextended(DataInputStream dis)
+    private void cmd_mapextended(final DataInputStream dis)
     {
         // XXX: "MapExtended" command not yet implemented
     }
 
-    public void drawInfo(String msg, int col)
+    public void drawInfo(final String msg, final int col)
     {
         CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, msg, col);
         for (final CrossfireDrawinfoListener listener : mylisteners_drawinfo)
