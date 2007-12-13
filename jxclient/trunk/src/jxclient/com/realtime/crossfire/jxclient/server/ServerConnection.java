@@ -199,7 +199,7 @@ public abstract class ServerConnection extends Thread
      *
      * @param listener The listener to add.
      */
-    public void addScriptMonitor(CrossfireScriptMonitorListener listener)
+    public void addScriptMonitor(final CrossfireScriptMonitorListener listener)
     {
         scriptMonitorListeners.add(listener);
     }
@@ -209,7 +209,7 @@ public abstract class ServerConnection extends Thread
      *
      * @param listener The listener to remove.
      */
-    public void removeScriptMonitor(CrossfireScriptMonitorListener listener)
+    public void removeScriptMonitor(final CrossfireScriptMonitorListener listener)
     {
         scriptMonitorListeners.remove(listener);
     }
