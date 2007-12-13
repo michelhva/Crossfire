@@ -40,6 +40,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -76,6 +77,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Pattern to split a string by ":".
      */
     private static final Pattern patternDot = Pattern.compile(":");
+
+    private static final Charset utf8 = Charset.forName("UTF-8");
 
     private final List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
 
@@ -304,12 +307,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     // This function does not avoid index out of bounds accesses to the array
     // <code>packet</code>; instead, a try...catch clause is used to detect
     // invalid packets.
-    protected void command(final byte[] packet) throws IOException, UnknownCommandException
+    public void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         try
         {
             final DataInputStream dis;
-            int pos = 0;
+            int pos = start;
             switch (packet[pos++])
             {
             case 'a':
@@ -330,7 +333,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             if (packet[pos++] != 'l') break;
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 'd') break;
-                            if (pos != packet.length) break;
+                            if (pos != end) break;
                             // XXX: addme_failed command not implemented
                             return;
 
@@ -341,7 +344,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 's') break;
                             if (packet[pos++] != 's') break;
-                            if (pos != packet.length) break;
+                            if (pos != end) break;
                             // XXX: addme_success command not implemented
                             return;
                         }
@@ -353,7 +356,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != ' ') break;
-                        while (pos < packet.length)
+                        while (pos < end)
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int level = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -365,15 +368,15 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             final int path = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int nameLength = packet[pos++]&0xFF;
-                            final String name = new String(packet, pos, nameLength, "UTF-8");
+                            final String name = new String(packet, pos, nameLength, utf8);
                             pos += nameLength;
                             final int messageLength = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final String message = new String(packet, pos, messageLength, "UTF-8");
+                            final String message = new String(packet, pos, messageLength, utf8);
                             pos += messageLength;
-                            if (pos > packet.length) break;
+                            if (pos > end) break;
                             ItemsList.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
                         }
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         return;
                     }
                     break;
@@ -385,13 +388,13 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int flags = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int[] faces = new int[(packet.length-pos)/2];
+                        final int[] faces = new int[(end-pos)/2];
                         if (faces.length <= 0) throw new UnknownCommandException("no faces in anim command");
                         for (int i = 0; i < faces.length; i++)
                         {
                             faces[i] = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         }
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         if ((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
                         animations.addAnimation(num&0x1FFF, flags, faces);
                     }
@@ -407,7 +410,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 {
                     final int packetNo = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int time = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    if (pos != packet.length) break;
+                    if (pos != end) break;
                     // XXX: comc command not implemented
                 }
                 return;
@@ -431,8 +434,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     tag = tag*10+parseDigit(packet[pos++]);
                                 }
-                                while (pos < packet.length);
-                                if (pos != packet.length) break;
+                                while (pos < end);
+                                if (pos != end) break;
                                 ItemsList.getItemsManager().cleanInventory(tag);
                             }
                             return;
@@ -442,12 +445,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             if (packet[pos++] != 'm') break;
                             if (packet[pos++] != ' ') break;
                             {
-                                final int[] tags = new int[(packet.length-pos)/4];
+                                final int[] tags = new int[(end-pos)/4];
                                 for (int i = 0; i < tags.length; i++)
                                 {
                                     tags[i] = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 }
-                                if (pos != packet.length) break;
+                                if (pos != end) break;
                                 ItemsList.getItemsManager().removeItems(tags);
                             }
                             return;
@@ -462,7 +465,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         if (packet[pos++] != ' ') break;
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos != packet.length) break;
+                            if (pos != end) break;
                             ItemsList.getSpellsManager().deleteSpell(tag);
                         }
                         return;
@@ -507,7 +510,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             while (packet[pos] != ' ');
                             pos++;
 
-                            final String message = new String(packet, pos, packet.length-pos, "UTF-8");
+                            final String message = new String(packet, pos, end-pos, utf8);
 
                             final CrossfireCommandDrawextinfoEvent evt = new CrossfireCommandDrawextinfoEvent(this, color, type, subtype, message);
                             for (final CrossfireDrawextinfoListener listener : mylisteners_drawextinfo)
@@ -531,7 +534,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             while (packet[pos] != ' ');
                             pos++;
 
-                            final String message = new String(packet, pos, packet.length-pos, "UTF-8");
+                            final String message = new String(packet, pos, end-pos, utf8);
 
                             final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
                             for (final CrossfireDrawinfoListener listener : mylisteners_drawinfo)
@@ -566,14 +569,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     do
                     {
                         final int startPos = pos;
-                        while (pos < packet.length && packet[pos] != ' ')
+                        while (pos < end && packet[pos] != ' ')
                         {
                             pos++;
                         }
-                        final String string = new String(packet, startPos, pos-startPos, "UTF-8");
+                        final String string = new String(packet, startPos, pos-startPos, utf8);
                         // XXX: ExtendedInfoSet command not implemented
                     }
-                    while (pos < packet.length);
+                    while (pos < end);
                     return;
 
                 case 'T':
@@ -587,15 +590,15 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     do
                     {
                         final int startPos = pos;
-                        while (pos < packet.length && packet[pos] != ' ')
+                        while (pos < end && packet[pos] != ' ')
                         {
                             pos++;
                         }
-                        final String type = new String(packet, startPos, pos-startPos, "UTF-8");
+                        final String type = new String(packet, startPos, pos-startPos, utf8);
                         pos++;
                         // XXX: ExtendedTextSet command not implemented
                     }
-                    while (pos < packet.length);
+                    while (pos < end);
                     return;
                 }
                 break;
@@ -611,7 +614,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int checksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final String name = new String(packet, pos, packet.length-pos, "UTF-8");
+                        final String name = new String(packet, pos, end-pos, utf8);
                         Faces.setFace(num, 0, checksum, name);
                     }
                     return;
@@ -622,7 +625,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int setnum = packet[pos++]&0xFF;
                         final int checksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final String name = new String(packet, pos, packet.length-pos, "UTF-8");
+                        final String name = new String(packet, pos, end-pos, utf8);
                         Faces.setFace(num, setnum, checksum, name);
                     }
                     return;
@@ -653,7 +656,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos+len != packet.length) break;
+                            if (pos+len != end) break;
                             final int pixmap = Faces.setImage(face, 0, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
@@ -669,7 +672,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int set = packet[pos++]&0xFF;
                             final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos+len != packet.length) break;
+                            if (pos+len != end) break;
                             final int pixmap = Faces.setImage(face, set, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
                         }
@@ -683,13 +686,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     switch (packet[pos++])
                     {
                     case ' ':
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
+                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
                         cmd_item(dis);
                         return;
 
                     case '1':
                         if (packet[pos++] != ' ') break;
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
+                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
+                        try
                         {
                             final int len = dis.available();
                             int pos2 = 0;
@@ -718,20 +722,24 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             }
                             ItemsList.getItemsManager().fireEvents();
                         }
+                        catch (final IOException ex)
+                        {
+                            throw new UnknownCommandException("invalid item1 command: "+ex.getMessage());
+                        }
                         return;
 
                     case '2':
                         if (packet[pos++] != ' ') break;
                         {
                             final int location = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            while (pos < packet.length)
+                            while (pos < end)
                             {
                                 final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int flags = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int nameLength = packet[pos++]&0xFF;
-                                final String[] names = new String(packet, pos, nameLength, "UTF-8").split("\0", 2);
+                                final String[] names = new String(packet, pos, nameLength, utf8).split("\0", 2);
                                 pos += nameLength;
                                 final String name = names[0];
                                 final String namePl = names[names.length-1];
@@ -760,8 +768,15 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 'a') break;
                     if (packet[pos++] != 'p') break;
                     if (packet[pos++] != ' ') break;
-                    dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
-                    CfMagicMap.magicmap(dis);
+                    dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
+                    try
+                    {
+                        CfMagicMap.magicmap(dis);
+                    }
+                    catch (final IOException ex)
+                    {
+                        throw new UnknownCommandException("invalid magicmap command: "+ex.getMessage());
+                    }
                     return;
 
                 case 'p':
@@ -769,7 +784,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                     case '2':
                         if (packet[pos++] != ' ') break;
-                        cmd_map2(packet, pos);
+                        cmd_map2(packet, pos, end);
                         return;
 
                     case 'e':
@@ -781,7 +796,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         if (packet[pos++] != 'e') break;
                         if (packet[pos++] != 'd') break;
                         if (packet[pos++] != ' ') break;
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, packet.length-pos));
+                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
                         cmd_mapextended(dis);
                         return;
                     }
@@ -795,7 +810,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 if (packet[pos++] != 'm') break;
                 if (packet[pos++] != 'a') break;
                 if (packet[pos++] != 'p') break;
-                if (pos != packet.length) break;
+                if (pos != end) break;
                 CfMapUpdater.processNewmap();
                 return;
 
@@ -811,9 +826,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int nameLength = packet[pos++]&0xFF;
-                    final String name = new String(packet, pos, nameLength, "UTF-8");
+                    final String name = new String(packet, pos, nameLength, utf8);
                     pos += nameLength;
-                    if (pos != packet.length) break;
+                    if (pos != end) break;
                     ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
                     Stats.reset();
                 }
@@ -834,7 +849,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     while (packet[pos] != ' ');
                     pos++;
 
-                    final String text = new String(packet, pos, packet.length-pos, "UTF-8");
+                    final String text = new String(packet, pos, end-pos, utf8);
 
                     setStatus(Status.QUERY);
                     final CrossfireCommandQueryEvent evt = new CrossfireCommandQueryEvent(this, text, flags);
@@ -861,8 +876,15 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         pos++;
                     }
-                    final String infoType = new String(packet, startPos, pos-startPos, "UTF-8");
-                    cmd_replyinfo(infoType, packet, pos+1);
+                    final String infoType = new String(packet, startPos, pos-startPos, utf8);
+                    try
+                    {
+                        cmd_replyinfo(infoType, packet, pos+1, end);
+                    }
+                    catch (final IOException ex)
+                    {
+                        throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage());
+                    }
                 }
                 return;
 
@@ -875,15 +897,15 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 'p') break;
                     if (packet[pos++] != ' ') break;
                     final List<String> options = new ArrayList<String>();
-                    while (pos < packet.length)
+                    while (pos < end)
                     {
                         final int startPos = pos;
-                        while (pos < packet.length && packet[pos] != ' ')
+                        while (pos < end && packet[pos] != ' ')
                         {
                             pos++;
                         }
-                        options.add(new String(packet, startPos, pos-startPos, "UTF-8"));
-                        if (pos < packet.length)
+                        options.add(new String(packet, startPos, pos-startPos, utf8));
+                        if (pos < end)
                         {
                             pos++;
                         }
@@ -904,7 +926,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         final int facenbr = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int smoothpic = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         // XXX: smooth command not implemented
                     }
                     return;
@@ -919,7 +941,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int y = packet[pos++];
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int type = packet[pos++];
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         // sound command not implemented
                     }
                     return;
@@ -930,7 +952,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
                     final Stats stats = ItemsList.getStats();
-                    while (pos < packet.length)
+                    while (pos < end)
                     {
                         final int stat = packet[pos++]&0xFF;
                         switch (stat)
@@ -952,14 +974,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
                         case Stats.CS_STAT_RANGE:
                             final int rangeLength = packet[pos++]&0xFF;
-                            final String range = new String(packet, pos, rangeLength, "UTF-8");
+                            final String range = new String(packet, pos, rangeLength, utf8);
                             pos += rangeLength;
                             stats.setRange(range);
                             break;
 
                         case Stats.CS_STAT_TITLE:
                             final int titleLength = packet[pos++]&0xFF;
-                            final String title = new String(packet, pos, titleLength, "UTF-8");
+                            final String title = new String(packet, pos, titleLength, utf8);
                             pos += titleLength;
                             stats.setTitle(title);
                             break;
@@ -1031,13 +1053,13 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             }
                             else
                             {
-                                throw new IOException("unknown stat value: "+stat);
+                                throw new UnknownCommandException("unknown stat value: "+stat);
                             }
                             break;
                         }
                     }
                     stats.setStatsProcessed();
-                    if (pos > packet.length) break;
+                    if (pos > end) break;
                     return;
                 }
                 break;
@@ -1049,7 +1071,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 if (packet[pos++] != ' ') break;
                 {
                     final int tickno = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    if (pos != packet.length) break;
+                    if (pos != end) break;
                     CfMapUpdater.processTick(tickno);
                 }
                 return;
@@ -1080,8 +1102,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 namePlIndex++;
                             }
-                            valName = new String(packet, pos, namePlIndex, "UTF-8");
-                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, namePlIndex+1, nameLength-(namePlIndex+1), "UTF-8") : valName;
+                            valName = new String(packet, pos, namePlIndex, utf8);
+                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, namePlIndex+1, nameLength-(namePlIndex+1), utf8) : valName;
                             pos += nameLength;
                         }
                         else
@@ -1092,7 +1114,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int valAnim = (flags&CfItem.UPD_ANIM) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valAnimSpeed = (flags&CfItem.UPD_ANIM) != 0 ? packet[pos++]&0xFF : 0;
                         final int valNrof = (flags&CfItem.UPD_NROF) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         ItemsList.updateItem(flags, tag, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                     }
                     return;
@@ -1109,7 +1131,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int mana = (flags&UPD_SP_MANA) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int grace = (flags&UPD_SP_GRACE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int damage = (flags&UPD_SP_DAMAGE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if (pos != packet.length) break;
+                        if (pos != end) break;
                         ItemsList.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
                     }
                     return;
@@ -1141,7 +1163,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     while (packet[pos] != ' ');
                     pos++;
 
-                    final String vinfo = new String(packet, pos, packet.length-pos, "UTF-8");
+                    final String vinfo = new String(packet, pos, end-pos, utf8);
 
                     cmd_version(csval, scval, vinfo);
                 }
@@ -1158,14 +1180,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         }
 
         int cmdlen;
-        for (cmdlen = 0; cmdlen < packet.length; cmdlen++)
+        for (cmdlen = 0; cmdlen < end; cmdlen++)
         {
             if ((packet[cmdlen]&0xFF) <= 0x20 || (packet[cmdlen]&0xFF) >= 0x80)
             {
                 break;
             }
         }
-        throw new UnknownCommandException("Cannot parse command: "+new String(packet, 0, cmdlen, "UTF-8"));
+        throw new UnknownCommandException("Cannot parse command: "+new String(packet, 0, cmdlen, utf8));
     }
 
     /**
@@ -1185,12 +1207,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param pos The start of the payload data to process.
      *
+     * @param end The end of the payload data to process.
+     *
      * @throws UnknownCommandException If the command cannot be parsed.
      */
-    private void cmd_map2(final byte[] packet, int pos) throws UnknownCommandException
+    private void cmd_map2(final byte[] packet, int pos, int end) throws UnknownCommandException
     {
         CfMapUpdater.processMapBegin();
-        while (pos < packet.length)
+        while (pos < end)
         {
             final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
             final int x = ((coord>>10)&0x3F)-MAP2_COORD_OFFSET;
@@ -1302,7 +1326,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param vinfo The version information string.
      * @throws IOException If an I/O error occurs.
      */
-    private void cmd_version(final int csval, final int scval, final String vinfo) throws IOException
+    private void cmd_version(final int csval, final int scval, final String vinfo)
     {
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MSG_TYPE_BOOK, MSG_TYPE_CARD, MSG_TYPE_PAPER, MSG_TYPE_SIGN, MSG_TYPE_MONUMENT, MSG_TYPE_DIALOG, MSG_TYPE_MOTD, MSG_TYPE_ADMIN, MSG_TYPE_SHOP, MSG_TYPE_COMMAND, MSG_TYPE_ATTRIBUTE, MSG_TYPE_SKILL, MSG_TYPE_APPLY, MSG_TYPE_ATTACK, MSG_TYPE_COMMUNICATION, MSG_TYPE_SPELL, MSG_TYPE_ITEM, MSG_TYPE_MISC, MSG_TYPE_VICTIM);
@@ -1332,18 +1356,18 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * parameters of <code>infoType</code>'s parameter start.
      * @throws IOException If an I/O error occurs.
      */
-    private void cmd_replyinfo(final String infoType, final byte[] packet, final int startPos) throws IOException
+    private void cmd_replyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         if (infoType.equals("image_info"))
         {
-            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, packet.length-startPos)));
+            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
             final int nrpics = Integer.parseInt(d.readLine());
             sendAddme();
         }
         else if (infoType.equals("skill_info"))
         {
             Stats.clearSkills();
-            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, packet.length-startPos)));
+            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
             for (;;)
             {
                 final String r = d.readLine();
@@ -1390,7 +1414,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                 experienceTable.add(i, exp);
             }
-            if (pos < packet.length)
+            if (pos < endPos)
             {
                 System.err.println("Ignoring excess data at end of exp_table");
             }
@@ -1520,10 +1544,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Send an "addme" command to the server.
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendAddme() throws IOException
+    public void sendAddme()
     {
         writePacket(addmePrefix, addmePrefix.length);
     }
@@ -1532,10 +1554,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send an "apply" command to the server.
      *
      * @param tag the item to apply
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendApply(final int tag) throws IOException
+    public void sendApply(final int tag)
     {
         synchronized(writeBuffer)
         {
@@ -1551,7 +1571,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param num the face to query
      */
-    public void sendAskface(final int num) throws IOException
+    public void sendAskface(final int num)
     {
         synchronized(writeBuffer)
         {
@@ -1566,10 +1586,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send an "examine" command to the server.
      *
      * @param tag the item to examine
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendExamine(final int tag) throws IOException
+    public void sendExamine(final int tag)
     {
         synchronized(writeBuffer)
         {
@@ -1586,10 +1604,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param val whether to lock the item
      *
      * @param tag the item to lock
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendLock(final boolean val, final int tag) throws IOException
+    public void sendLock(final boolean val, final int tag)
     {
         synchronized(writeBuffer)
         {
@@ -1607,10 +1623,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param dx The x-coordinate in tiles, relative to the player.
      *
      * @param dy The y-coordinate in tiles, relative to the player.
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendLookat(final int dx, final int dy) throws IOException
+    public void sendLookat(final int dx, final int dy)
     {
         synchronized(writeBuffer)
         {
@@ -1625,10 +1639,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Send a "mapredraw" command to the server.
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendMapredraw() throws IOException
+    public void sendMapredraw()
     {
         writePacket(mapredrawPrefix, mapredrawPrefix.length);
     }
@@ -1637,10 +1649,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "mark" command to the server.
      *
      * @param tag the item to mark
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendMark(final int tag) throws IOException
+    public void sendMark(final int tag)
     {
         synchronized(writeBuffer)
         {
@@ -1659,10 +1669,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param tag the item to move
      *
      * @param nrof the number of items to move
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendMove(final int to, final int tag, final int nrof) throws IOException
+    public void sendMove(final int to, final int tag, final int nrof)
     {
         synchronized(writeBuffer)
         {
@@ -1685,10 +1693,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param command the command
      *
      * @return the packet id
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public int sendNcom(final int repeat, final String command) throws IOException
+    public int sendNcom(final int repeat, final String command)
     {
         final int thisPacket;
         synchronized(writeBuffer)
@@ -1698,7 +1704,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             byteBuffer.put(ncomPrefix);
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
-            byteBuffer.put(command.getBytes("UTF-8"));
+            byteBuffer.put(command.getBytes(utf8));
             writePacket(writeBuffer, byteBuffer.position());
         }
         return thisPacket;
@@ -1708,16 +1714,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "reply" command to the server.
      *
      * @param text the text to reply
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendReply(final String text) throws IOException
+    public void sendReply(final String text)
     {
         synchronized(writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(replyPrefix);
-            byteBuffer.put(text.getBytes("UTF-8"));
+            byteBuffer.put(text.getBytes(utf8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -1726,16 +1730,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "requestinfo" command to the server.
      *
      * @param infoType the info type to request
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendRequestinfo(final String infoType) throws IOException
+    public void sendRequestinfo(final String infoType)
     {
         synchronized(writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(requestinfoPrefix);
-            byteBuffer.put(infoType.getBytes("UTF-8"));
+            byteBuffer.put(infoType.getBytes(utf8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -1744,10 +1746,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "setup" command to the server.
      *
      * @param options the option/value pairs to send
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendSetup(final String... options) throws IOException
+    public void sendSetup(final String... options)
     {
         synchronized(writeBuffer)
         {
@@ -1762,7 +1762,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 for (final String option : options)
                 {
                     byteBuffer.put((byte)' ');
-                    byteBuffer.put(option.getBytes("UTF-8"));
+                    byteBuffer.put(option.getBytes(utf8));
                 }
             }
             writePacket(writeBuffer, byteBuffer.position());
@@ -1773,10 +1773,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * Send a "toggleextendedtext" command to the server.
      *
      * @param types the types to request
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendToggleextendedtext(final int... types) throws IOException
+    public void sendToggleextendedtext(final int... types)
     {
         if (types.length <= 0)
         {
@@ -1804,10 +1802,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param scval the server version number
      *
      * @param vinfo the client identification string
-     *
-     * @throws IOException If an I/O error occurs.
      */
-    public void sendVersion(final int csval, final int scval, final String vinfo) throws IOException
+    public void sendVersion(final int csval, final int scval, final String vinfo)
     {
         synchronized(writeBuffer)
         {
@@ -1817,7 +1813,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             byteBuffer.put((byte)' ');
             putDecimal(scval);
             byteBuffer.put((byte)' ');
-            byteBuffer.put(vinfo.getBytes("UTF-8"));
+            byteBuffer.put(vinfo.getBytes(utf8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -1827,10 +1823,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * #byteBuffer}.
      *
      * @param value the value to append
-     *
-     * @throws UnsupportedEncodingException will never be thrown
      */
-    private void putDecimal(final int value) throws UnsupportedEncodingException
+    private void putDecimal(final int value)
     {
         if (value == 0)
         {
@@ -1839,7 +1833,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         else
         {
             final String str = Integer.toString(value);
-            byteBuffer.put(str.getBytes("ISO-8859-1"));
+            try
+            {
+                byteBuffer.put(str.getBytes("ISO-8859-1"));
+            }
+            catch (final UnsupportedEncodingException ex)
+            {
+                throw new AssertionError(); // every Java implementation must support UTF-8
+            }
         }
     }
 

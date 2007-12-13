@@ -19,11 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import java.io.DataInputStream;
 import java.io.IOException;
-import java.net.Socket;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * One of the two most important classes, ServerConnection performs most of the
@@ -34,13 +30,11 @@ import java.util.List;
  * @author Lauwenmark
  * @since 1.0
  */
-public abstract class ServerConnection extends Thread
+public abstract class ServerConnection implements PacketListener
 {
-    private Socket socket;
+    private final Object clientSocketSem = "clientSocketSem";
 
-    private DataInputStream in;
-
-    private final List<CrossfireScriptMonitorListener> scriptMonitorListeners = new ArrayList<CrossfireScriptMonitorListener>();
+    private ClientSocket clientSocket = null;
 
     public enum Status
     {
@@ -68,44 +62,7 @@ public abstract class ServerConnection extends Thread
 
     private final String statusSem = "mystatus_sem";
 
-    /**
-     * The Thread Main loop. ServerConnection contains its own Thread, so it
-     * can monitor the socket content in parallel with the GUI handling loop.
-     * @since 1.0
-     */
-    public void run()
-    {
-        setStatus(Status.PLAYING);
-        try
-        {
-            for (;;)
-            {
-                readPacket();
-            }
-        }
-        catch (final Exception e)
-        {
-            setStatus(Status.UNCONNECTED);
-            e.printStackTrace();
-            System.exit(0);
-        }
-    }
-
-    /**
-     * Reads the next available packet sent by the Crossfire server on the
-     * network.
-     *
-     * @throws IOException If an I/O error occurs.
-     *
-     * @throws UnknownCommandException If the command cannot be parsed.
-     */
-    public synchronized void readPacket() throws IOException, UnknownCommandException
-    {
-        final int len = in.readUnsignedShort();
-        final byte[] data = new byte[len];
-        in.readFully(data);
-        command(data);
-    }
+    private final ScriptMonitorListeners scriptMonitorListeners = new ScriptMonitorListeners();
 
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
@@ -113,26 +70,15 @@ public abstract class ServerConnection extends Thread
      * bytes but only actual payload data
      * @param length the length of <code>packet</code>; if the array is larger,
      * excess data is ignored
-     * @throws IOException If an I/O error occurs.
      */
-    protected void writePacket(final byte[] packet, final int length) throws IOException
+    protected void writePacket(final byte[] packet, final int length)
     {
-        if (socket == null)
+        synchronized (clientSocketSem)
         {
-            throw new IOException("not connected");
-        }
-
-        assert length > 0;
-        synchronized(socket)
-        {
-            for (final CrossfireScriptMonitorListener listener : scriptMonitorListeners)
+            if (clientSocket != null)
             {
-                listener.commandSent(packet, length);
+                clientSocket.writePacket(packet, length);
             }
-
-            socket.getOutputStream().write(length/256);
-            socket.getOutputStream().write(length);
-            socket.getOutputStream().write(packet, 0, length);
         }
     }
 
@@ -142,19 +88,20 @@ public abstract class ServerConnection extends Thread
      * @param hostname The hostname to connect to.
      *
      * @param port The port to connect to.
+     *
+     * @param connectionListener The connection listener to notify about a
+     * broken connection.
      */
-    public void connect(final String hostname, final int port)
+    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
     {
-        try
+        synchronized (clientSocketSem)
         {
-            socket = new Socket(hostname, port);
-            in = new DataInputStream(socket.getInputStream());
-            start();
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            System.exit(0);
+            if (clientSocket != null)
+            {
+                clientSocket.disconnect();
+            }
+
+            clientSocket = new ClientSocket(hostname, port, this, scriptMonitorListeners, connectionListener);
         }
     }
 
@@ -185,32 +132,8 @@ public abstract class ServerConnection extends Thread
         }
     }
 
-    /**
-     * This is the main command handler, in which the command received is
-     * decoded, and the appropriate method called.
-     * @param packet The packet payload data.
-     * @throws IOException If an I/O error occurs.
-     * @throws UnknownCommandException if the command cannot be parsed.
-     */
-    protected abstract void command(final byte[] packet) throws IOException, UnknownCommandException;
-
-    /**
-     * Add a script monitor listener.
-     *
-     * @param listener The listener to add.
-     */
-    public void addScriptMonitor(final CrossfireScriptMonitorListener listener)
+    public ScriptMonitorListeners getScriptMonitorListeners()
     {
-        scriptMonitorListeners.add(listener);
-    }
-
-    /**
-     * Remove a script monitor listener.
-     *
-     * @param listener The listener to remove.
-     */
-    public void removeScriptMonitor(final CrossfireScriptMonitorListener listener)
-    {
-        scriptMonitorListeners.remove(listener);
+        return scriptMonitorListeners;
     }
 }

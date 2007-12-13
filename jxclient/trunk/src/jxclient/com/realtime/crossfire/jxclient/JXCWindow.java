@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
@@ -226,6 +227,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         public void playerRemoved(final CfPlayer player)
         {
             setTitle(TITLE_PREFIX+" - "+hostname);
+        }
+    };
+
+    private final ConnectionListener connectionListener = new ConnectionListener()
+    {
+        /** {@inheritDoc} */
+        public void connectionLost()
+        {
+            System.err.println("*** lost connection to server ***");
+            System.exit(1);
         }
     };
 
@@ -485,7 +496,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         setTitle(TITLE_PREFIX+" - "+hostname);
         ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
         changeGUI(GUI_MAIN);
-        myserver.connect(hostname, port);
+        myserver.connect(hostname, port, connectionListener);
         Faces.setFacesCallback(myserver);
     }
 
