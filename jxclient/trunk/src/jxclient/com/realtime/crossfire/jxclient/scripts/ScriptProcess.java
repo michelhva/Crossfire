@@ -108,7 +108,7 @@ public class ScriptProcess extends Thread
         {
             e.printStackTrace();
         }
-        window.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
+        window.getCrossfireServerConnection().getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
     public void commandSent(final String cmd)
@@ -293,11 +293,11 @@ public class ScriptProcess extends Thread
         }
         else if (cmdline.startsWith("monitor"))
         {
-            window.getCrossfireServerConnection().addScriptMonitor(crossfireScriptMonitorListener);
+            window.getCrossfireServerConnection().getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
         }
         else if (cmdline.startsWith("unmonitor"))
         {
-            window.getCrossfireServerConnection().removeScriptMonitor(crossfireScriptMonitorListener);
+            window.getCrossfireServerConnection().getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
         }
     }
 }
