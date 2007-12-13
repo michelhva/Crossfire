@@ -40,7 +40,7 @@ public abstract class ServerConnection extends Thread
 
     private DataInputStream in;
 
-    private final List<CrossfireScriptMonitorListener> scripts_monitor = new ArrayList<CrossfireScriptMonitorListener>();
+    private final List<CrossfireScriptMonitorListener> scriptMonitorListeners = new ArrayList<CrossfireScriptMonitorListener>();
 
     public enum Status
     {
@@ -125,7 +125,7 @@ public abstract class ServerConnection extends Thread
         assert length > 0;
         synchronized(socket)
         {
-            for (final CrossfireScriptMonitorListener listener : scripts_monitor)
+            for (final CrossfireScriptMonitorListener listener : scriptMonitorListeners)
             {
                 listener.commandSent(packet, length);
             }
@@ -196,11 +196,11 @@ public abstract class ServerConnection extends Thread
 
     public void addScriptMonitor(CrossfireScriptMonitorListener listener)
     {
-        scripts_monitor.add(listener);
+        scriptMonitorListeners.add(listener);
     }
 
     public void removeScriptMonitor(CrossfireScriptMonitorListener listener)
     {
-        scripts_monitor.remove(listener);
+        scriptMonitorListeners.remove(listener);
     }
 }
