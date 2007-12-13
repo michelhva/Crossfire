@@ -1390,7 +1390,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                 experienceTable.add(i, exp);
             }
-            if (pos < packet.length-pos)
+            if (pos < packet.length)
             {
                 System.err.println("Ignoring excess data at end of exp_table");
             }
