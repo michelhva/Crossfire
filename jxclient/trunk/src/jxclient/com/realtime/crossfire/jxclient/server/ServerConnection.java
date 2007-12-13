@@ -194,11 +194,21 @@ public abstract class ServerConnection extends Thread
      */
     protected abstract void command(final byte[] packet) throws IOException, UnknownCommandException;
 
+    /**
+     * Add a script monitor listener.
+     *
+     * @param listener The listener to add.
+     */
     public void addScriptMonitor(CrossfireScriptMonitorListener listener)
     {
         scriptMonitorListeners.add(listener);
     }
 
+    /**
+     * Remove a script monitor listener.
+     *
+     * @param listener The listener to remove.
+     */
     public void removeScriptMonitor(CrossfireScriptMonitorListener listener)
     {
         scriptMonitorListeners.remove(listener);
