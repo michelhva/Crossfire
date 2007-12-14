@@ -106,29 +106,21 @@ public abstract class AbstractLabel extends GUIElement
         }
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        try
+        super.render(g);
+        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.clearRect(0, 0, w, h);
+        if (backgroundImage != null)
         {
-            final Graphics2D g = mybuffer.createGraphics();
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
-            if (backgroundImage != null)
-            {
-                g.drawImage(backgroundImage.getImage(), 0, 0, null);
-            }
-            else if (backgroundColor != null)
-            {
-                g.setBackground(backgroundColor);
-                g.clearRect(0, 0, w-1, h-1);
-            }
-            g.dispose();
+            g.drawImage(backgroundImage.getImage(), 0, 0, null);
         }
-        catch (final Exception e)
+        else if (backgroundColor != null)
         {
-            e.printStackTrace();
+            g.setBackground(backgroundColor);
+            g.clearRect(0, 0, w-1, h-1);
         }
-        setChanged();
     }
 
     /**
@@ -151,11 +143,5 @@ public abstract class AbstractLabel extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, backgroundColor == null ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         final Graphics2D g = mybuffer.createGraphics();
-        if (backgroundImage != null)
-        {
-            g.drawImage(backgroundImage.getImage(), 0, 0, null);
-        }
-        g.dispose();
-        setChanged();
     }
 }

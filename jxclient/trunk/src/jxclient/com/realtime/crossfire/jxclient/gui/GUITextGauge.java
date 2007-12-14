@@ -82,23 +82,21 @@ public class GUITextGauge extends GUIGauge
     }
 
     /** {@inheritDoc} */
-    @Override public void render()
+    @Override protected void render(final Graphics2D g)
     {
-        super.render();
+        super.render(g);
+
         if (font == null)
         {
             return;
         }
 
-        final Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setColor(color);
         g.setFont(font);
         final String text = getLabelText();
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
-        g.dispose();
-        setChanged();
     }
 
     /** {@inheritDoc} */

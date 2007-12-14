@@ -211,54 +211,46 @@ public class GUILog extends GUIElement implements GUIScrollable
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
-        try
+        g.setBackground(new Color(0, 0, 0, 0.0f));
+        g.clearRect(0, 0, w, h);
+        if (backgroundImage != null)
         {
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            g.clearRect(0, 0, w, h);
-            if (backgroundImage != null)
-            {
-                g.drawImage(backgroundImage, 0, 0, null);
-            }
+            g.drawImage(backgroundImage, 0, 0, null);
+        }
 
-            if (displayBottom)
-            {
-                int y = getHeight();
-                topIndex = buffer.size();
-                final ListIterator<Line> it = buffer.listIterator(topIndex);
-                while (y > 0 && it.hasPrevious())
-                {
-                    final Line line = it.previous();
-                    topIndex--;
-                    y -= calculateHeight(line);
-                    drawLine(g, y, line);
-                }
-                canScrollUp = y < 0 || it.hasPrevious();
-                canScrollDown = false;
-                topOffset = -y;
-            }
-            else
-            {
-                int y = -topOffset;
-                final ListIterator<Line> it = buffer.listIterator(topIndex);
-                while (y < getHeight() && it.hasNext())
-                {
-                    final Line line = it.next();
-                    final int height = calculateHeight(line);
-                    drawLine(g, y, line);
-                    y += height;
-                }
-                canScrollUp = topIndex > 0 || topOffset > 0;
-                canScrollDown = y > getHeight() || it.hasNext();
-            }
-        }
-        finally
+        if (displayBottom)
         {
-            g.dispose();
+            int y = getHeight();
+            topIndex = buffer.size();
+            final ListIterator<Line> it = buffer.listIterator(topIndex);
+            while (y > 0 && it.hasPrevious())
+            {
+                final Line line = it.previous();
+                topIndex--;
+                y -= calculateHeight(line);
+                drawLine(g, y, line);
+            }
+            canScrollUp = y < 0 || it.hasPrevious();
+            canScrollDown = false;
+            topOffset = -y;
         }
-        setChanged();
+        else
+        {
+            int y = -topOffset;
+            final ListIterator<Line> it = buffer.listIterator(topIndex);
+            while (y < getHeight() && it.hasNext())
+            {
+                final Line line = it.next();
+                final int height = calculateHeight(line);
+                drawLine(g, y, line);
+                y += height;
+            }
+            canScrollUp = topIndex > 0 || topOffset > 0;
+            canScrollDown = y > getHeight() || it.hasNext();
+        }
     }
 
     /**

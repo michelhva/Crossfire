@@ -130,7 +130,7 @@ public class GUIGauge extends GUIElement
         }
     }
 
-    public void render()
+    public void updateValues()
     {
         if (maxValue <= minValue)
         {
@@ -274,8 +274,13 @@ public class GUIGauge extends GUIElement
         this.fw = fw;
         this.fh = fh;
         this.fPicture = fPicture;
+        render();
+    }
 
-        final Graphics2D g = mybuffer.createGraphics();
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
+    {
+        super.render(g);
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         if (emptyImage != null)
@@ -286,8 +291,6 @@ public class GUIGauge extends GUIElement
         {
             g.drawImage(fPicture, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
         }
-        g.dispose();
-        setChanged();
     }
 
     /**
@@ -326,7 +329,7 @@ public class GUIGauge extends GUIElement
         this.maxValue = maxValue;
         this.labelText = labelText;
         this.tooltipText = tooltipText;
-        render();
+        updateValues();
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }

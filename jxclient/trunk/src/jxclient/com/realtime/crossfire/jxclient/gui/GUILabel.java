@@ -107,6 +107,8 @@ public abstract class GUILabel extends AbstractLabel
     /**
      * Draw one line of text.
      *
+     * @param g The graphics to paint to.
+     *
      * @param y0 The y-ccordinate to draw to.
      *
      * @param h0 The line height.
@@ -115,14 +117,13 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @return The line height.
      */
-    protected int drawLine(final int y0, final int h0, final String text)
+    protected int drawLine(final Graphics2D g, final int y0, final int h0, final String text)
     {
         if (font == null)
         {
             return 0;
         }
 
-        final Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(font);
         g.setColor(color);
@@ -142,7 +143,6 @@ public abstract class GUILabel extends AbstractLabel
             g.drawString(text, (int)Math.round(w-rect.getWidth()), y);
             break;
         }
-        g.dispose();
 
         return (int)(rect.getHeight()+0.5);
     }

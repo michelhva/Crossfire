@@ -272,22 +272,16 @@ public class GUIMap extends GUIElement
         createBuffer();
     }
 
-    private void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
-        try
+        super.render(g);
+        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
         {
-            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
             {
-                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
-                {
-                    redrawSquare(g, x, y);
-                }
+                redrawSquare(g, x, y);
             }
-        }
-        finally
-        {
-            g.dispose();
         }
     }
 

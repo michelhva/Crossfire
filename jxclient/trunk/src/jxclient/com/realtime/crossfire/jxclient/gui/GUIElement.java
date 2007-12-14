@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.event.MouseEvent;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
@@ -424,5 +425,31 @@ public abstract class GUIElement
     public JXCWindow getJXCWindow()
     {
         return jxcWindow;
+    }
+
+    /**
+     * Re-create the contents of {@link #mybuffer}.
+     */
+    protected final void render()
+    {
+        final Graphics2D g = mybuffer.createGraphics();
+        try
+        {
+            render(g);
+        }
+        finally
+        {
+            g.dispose();
+        }
+        setChanged();
+    }
+
+    /**
+     * Paint the elements's contents into the passed graphics.
+     *
+     * @param g The gaphics to paint to.
+     */
+    protected void render(final Graphics2D g)
+    {
     }
 }

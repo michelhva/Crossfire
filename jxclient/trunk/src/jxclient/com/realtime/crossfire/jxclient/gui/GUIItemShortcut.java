@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 public class GUIItemShortcut extends GUIItem
@@ -117,8 +117,10 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void render(final Graphics g)
+    @Override protected void render(final Graphics2D g)
     {
+        super.render(g);
+
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut == null)
         {

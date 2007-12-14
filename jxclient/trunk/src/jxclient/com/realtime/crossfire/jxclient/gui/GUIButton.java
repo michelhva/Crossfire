@@ -85,9 +85,10 @@ public class GUIButton extends AbstractButton
         return true;
     }
 
-    public void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
+        super.render(g);
         g.setFont(font);
         g.setColor(color);
         g.drawImage(isActive() ? imageDown : imageUp, 0, 0, null);
@@ -95,8 +96,6 @@ public class GUIButton extends AbstractButton
         {
             g.drawString(text, textX, textY);
         }
-        g.dispose();
-        setChanged();
     }
 
     /** {@inheritDoc} */
