@@ -51,6 +51,15 @@ public interface JXCSkin extends Iterable<Gui>
      */
     Gui getDialogQuit();
 
+    /**
+     * The "disconnect from server?" dialog. It is opened when the user presses
+     * ESCAPE.
+     *
+     * @return The dialog, or <code>null</code> if the skin does not define
+     * this dialog.
+     */
+    Gui getDialogDisconnect();
+
     Gui getDialogKeyBind();
     Gui getDialogQuery();
     Gui getDialogBook(int booknr);

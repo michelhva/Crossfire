@@ -1,0 +1,12 @@
+
+dialog dialog 350 300 23+300+21 38+130+16
+set_modal
+
+label_multi message   35  55  280 50 font_metaurl16 WHITE <<EOF
+Do you really want to disconnect
+from the server?
+EOF
+button disconnect     30  120 135 55 button_small_active button_small_pushed false command_disconnect font_metaurl16 DARK_GRAY 32 34 Disconnect
+button resume         180 120 135 55 button_small_active button_small_pushed false command_resume_disconnect font_metaurl16 DARK_GRAY 42 34 Resume
+
+set_default disconnect

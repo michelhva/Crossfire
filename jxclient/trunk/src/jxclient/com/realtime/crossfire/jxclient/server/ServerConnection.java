@@ -106,6 +106,21 @@ public abstract class ServerConnection implements PacketListener
     }
 
     /**
+     * Disconnects from the server. Does nothing if not connected.
+     */
+    public void disconnect()
+    {
+        synchronized (clientSocketSem)
+        {
+            if (clientSocket != null)
+            {
+                clientSocket.disconnect();
+                clientSocket = null;
+            }
+        }
+    }
+
+    /**
      * Sets the current status of the client to the given value. See the various
      * STATUS_ constants.
      * @param status The new status value.

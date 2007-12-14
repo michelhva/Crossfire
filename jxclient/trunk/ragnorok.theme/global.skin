@@ -13,11 +13,12 @@ def checkbox checked unchecked font_button BLACK
 def dialog dialog font_title #801010 #e0e0e0 1
 def textbutton button_up button_down font_button BLACK
 
-commandlist command_resume null DIALOG_CLOSE quit
-commandlist command_disconnect null GUI_START
+commandlist command_disconnect null GUI_META
+commandlist command_resume_disconnect null DIALOG_CLOSE disconnect
 
 commandlist command_meta null GUI_META
 commandlist command_quit null QUIT
+commandlist command_resume_quit null DIALOG_CLOSE quit
 
 commandlist command_metaconnect
 commandlist command_metacancel null GUI_START
