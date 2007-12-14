@@ -56,6 +56,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
+import java.awt.event.WindowListener;
 import java.awt.Graphics;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -241,6 +242,37 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     };
 
     /**
+     * The window listener attached to this frame.
+     */
+    private final WindowListener windowListener = new WindowAdapter()
+    {
+        /** {@inheritDoc} */
+        public void windowClosing(final WindowEvent e)
+        {
+            if (keyBindingState != null)
+            {
+                keyBindingState = null;
+                jxcWindowRenderer.closeDialog(keybindDialog);
+            }
+
+            if (dialogQuit == null)
+            {
+                endRendering();
+            }
+            else
+            {
+                jxcWindowRenderer.openDialog(dialogQuit);
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void windowClosed(final WindowEvent e)
+        {
+            endRendering();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param boolean Whether GUI elements should be highlighted.
@@ -251,9 +283,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
+        setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
         addWindowFocusListener(windowFocusListener);
+        addWindowListener(windowListener);
     }
 
     public boolean checkRun()
