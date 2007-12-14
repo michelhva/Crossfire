@@ -6,6 +6,7 @@ width 20
 height 20
 msg
 Created:  1996-06-03
+Modified: 2007-12-13 Kevin Bulgrien
 endmsg
 end
 arch woodfloor
@@ -365,13 +366,11 @@ arch a_guard_h
 name Cain, the guard
 msg
 @match T.K.
-He is my master. In his days of youth
-no monster, no quest was too hard for
-him! He collected lot's of treasure...
-But now, he is an old man.
+He is my master.  In his days of youth, no monster or quest was too hard for him!
+He collected lots of treasure... But now, he is an old man.
 @match *
-An old treasure hunter, "T.K." lives in
-this tower. Please do not disturb him.
+T.K., an old treasure hunter, lives in this tower.
+Please do not disturb him.
 endmsg
 x 3
 y 3
@@ -1224,10 +1223,9 @@ y 15
 end
 arch note
 msg
-You have the talent to be a good
-treasure hunter. Find me. Then I'll
-tell you a secret.
-                            T.K.
+You have the talent to be a good treasure hunter.
+Find me. Then I'll tell you a secret.
+Signed, T.K.
 endmsg
 x 9
 y 15
