@@ -160,19 +160,14 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         return true;
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
+        super.render(g);
         g.drawImage(image, 0, 0, null);
-
         g.setBackground(backgroundColor);
         g.clearRect(0, 0, w, h);
-        render(g);
-        g.dispose();
-        setChanged();
     }
-
-    protected abstract void render(final Graphics g);
 
     public void setVisible(final boolean v)
     {

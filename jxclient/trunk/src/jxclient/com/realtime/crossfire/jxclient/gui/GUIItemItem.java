@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 public abstract class GUIItemItem extends GUIItem
@@ -42,8 +42,11 @@ public abstract class GUIItemItem extends GUIItem
         this.nrofColor = nrofColor;
     }
 
-    protected void render(final Graphics g)
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
+        super.render(g);
+
         final CfItem item = getItem();
         if (item == null)
         {

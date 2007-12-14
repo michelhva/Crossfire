@@ -101,35 +101,29 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return text.toString();
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
-        synchronized(mybuffer)
+        super.render(g);
+
+        g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
+        g.setFont(font);
+        final String tmp = getDisplayText(g);
+        final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
+        final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+        if (isActive())
         {
-            createBuffer();
-
-            final Graphics2D g = mybuffer.createGraphics();
-            g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
-            g.setFont(font);
-            final String tmp = getDisplayText(g);
-            final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
-            final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
-            if (isActive())
-            {
-                final String tmpPrefix = tmp.substring(0, cursor-offset);
-                final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
-                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
-                final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
-                final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
-                g.setColor(inactiveColor);
+            final String tmpPrefix = tmp.substring(0, cursor-offset);
+            final String tmpCursor = tmp.substring(0, cursor-offset+1);
+            final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
+            final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+            final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
+            final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
+            g.setColor(inactiveColor);
                 g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
-            }
-            g.setColor(isActive() ? activeColor : inactiveColor);
-            g.drawString(tmp, margin, y);
-
-            g.dispose();
         }
-        setChanged();
+        g.setColor(isActive() ? activeColor : inactiveColor);
+        g.drawString(tmp, margin, y);
     }
 
     public String getDisplayText(final Graphics2D g)

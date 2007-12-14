@@ -137,9 +137,8 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    public void render()
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         g.setFont(font);
@@ -148,8 +147,6 @@ public class GUICheckBox extends ActivatableGUIElement
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
-        g.dispose();
-        setChanged();
     }
 
     /** {@inheritDoc} */

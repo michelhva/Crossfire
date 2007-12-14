@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
@@ -63,10 +64,9 @@ public class GUIOneLineLabel extends GUILabel
     }
 
     /** {@inheritDoc} */
-    @Override protected void render()
+    @Override protected void render(final Graphics2D g)
     {
-        super.render();
-        drawLine(0, h, getText());
-        setChanged();
+        super.render(g);
+        drawLine(g, 0, h, getText());
     }
 }

@@ -136,17 +136,15 @@ public class GUITextButton extends AbstractButton
     }
 
     /** {@inheritDoc} */
-    public void render()
+    @Override protected void render(final Graphics2D g)
     {
-        final Graphics2D g = mybuffer.createGraphics();
+        super.render(g);
         g.setFont(font);
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
-        g.dispose();
-        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -219,7 +217,7 @@ public class GUITextButton extends AbstractButton
          *
          * @param w The button width.
          */
-        public void render(final Graphics g, final int w)
+        private void render(final Graphics g, final int w)
         {
             g.drawImage(imageLeft, 0, 0, null);
             g.drawImage(imageRight, w-imageRight.getWidth(null), 0, null);

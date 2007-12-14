@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Font;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
@@ -140,8 +140,10 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void render(final Graphics g)
+    @Override protected void render(final Graphics2D g)
     {
+        super.render(g);
+
         if (myspell == null)
         {
             return;

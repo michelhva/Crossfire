@@ -26,6 +26,7 @@ import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.regex.Pattern;
@@ -89,36 +90,29 @@ public class GUIHTMLLabel extends AbstractLabel
         }
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
+        super.render(g);
         if (myfont == null)
         {
             return;
         }
 
-        super.render();
+        g.setFont(myfont);
+        g.setColor(mycolor);
+
+        final Reader reader = new StringReader(getText());
+        final InternalHTMLRenderer renderer = new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
+        final ParserDelegator parserDelegator = new ParserDelegator();
         try
         {
-            final Graphics2D g = mybuffer.createGraphics();
-            g.setFont(myfont);
-            g.setColor(mycolor);
-
-            final Reader reader = new StringReader(getText());
-            try
-            {
-                new ParserDelegator().parse(reader, new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0), false);
-            }
-            catch (final Exception e)
-            {
-                e.printStackTrace();
-            }
-            g.dispose();
+            parserDelegator.parse(reader, renderer, false);
         }
-        catch (final Exception e)
+        catch (final IOException ex)
         {
-            e.printStackTrace();
+            // XXX: handle exception
         }
-        setChanged();
     }
 
     /**

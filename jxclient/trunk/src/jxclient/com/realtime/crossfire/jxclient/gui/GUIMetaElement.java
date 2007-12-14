@@ -69,8 +69,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         render();
     }
 
-    protected void render()
+    /** {@inheritDoc} */
+    @Override protected void render(final Graphics2D g)
     {
+        super.render(g);
+
         final List<MetaserverEntry> metaEntries = Metaserver.query();
         if (index < 0 || index >= metaEntries.size())
         {
@@ -78,7 +81,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
 
         final MetaserverEntry metaEntry = metaEntries.get(index);
-        final Graphics2D g = mybuffer.createGraphics();
         g.setFont(font);
         g.setColor(isActive() ? Color.RED : Color.GRAY);
         if (tcpImage != null)
@@ -86,7 +88,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             g.drawImage(tcpImage, 0, 0, null);
         }
         g.drawString(metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
-        g.dispose();
         if (comment != null && isActive())
         {
             comment.setText(metaEntry.getComment());
@@ -95,7 +96,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         {
             text.setText(metaEntry.getHostname());
         }
-        setChanged();
     }
 
     /** {@inheritDoc} */
