@@ -107,16 +107,7 @@ public class ClientSocket extends Thread
     }
 
     /**
-     * Return whether this socket is connected.
-     */
-    public boolean isConnected()
-    {
-        return connected;
-    }
-
-    /**
-     * Terminate the connection. Afterwards {@link #isConnected()} returns
-     * <code>false</code>. Does nothing if not connected.
+     * Terminate the connection. Does nothing if not connected.
      */
     public void disconnect()
     {
@@ -130,7 +121,10 @@ public class ClientSocket extends Thread
             connected = false;
             try
             {
-                socket.close();
+                if (socket != null)
+                {
+                    socket.close();
+                }
             }
             catch (final IOException ex)
             {

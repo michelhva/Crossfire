@@ -184,6 +184,8 @@ public abstract class JXCSkinLoader implements JXCSkin
         addDialog("book");
         addDialog("main");
         addDialog("meta");
+        addDialog("quit");
+        addDialog("disconnect");
         addDialog("start");
         commandLists.clear();
         fonts.clear();
@@ -240,6 +242,19 @@ public abstract class JXCSkinLoader implements JXCSkin
         try
         {
             return dialogs.lookup("quit");
+        }
+        catch (final JXCSkinException ex)
+        {
+            return null;
+        }
+    }
+
+    /** {@inheritDoc} */
+    public Gui getDialogDisconnect()
+    {
+        try
+        {
+            return dialogs.lookup("disconnect");
         }
         catch (final JXCSkinException ex)
         {
@@ -1663,6 +1678,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         final Object params;
         if (command == GUICommand.Command.CONNECT
+        || command == GUICommand.Command.DISCONNECT
         || command == GUICommand.Command.GUI_EXECUTE_ELEMENT
         || command == GUICommand.Command.GUI_META
         || command == GUICommand.Command.GUI_START

@@ -46,6 +46,7 @@ public class GUICommand
         SCROLLDOWN,
         SCROLLNEXT,
         CONNECT,
+        DISCONNECT,
         GUI_META,
         GUI_START,
         GUI_EXECUTE_COMMAND,
@@ -94,6 +95,7 @@ public class GUICommand
 
         case SCROLLNEXT:
         case CONNECT:
+        case DISCONNECT:
         case GUI_META:
         case GUI_START:
         case GUI_EXECUTE_COMMAND:
@@ -154,6 +156,10 @@ public class GUICommand
 
         case CONNECT:
             ((JXCWindow)myparams).connect(((GUIText)mytarget).getText(), 13327);
+            break;
+
+        case DISCONNECT:
+            ((JXCWindow)myparams).disconnect();
             break;
 
         case GUI_META:

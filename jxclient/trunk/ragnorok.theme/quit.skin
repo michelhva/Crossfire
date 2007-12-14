@@ -1,12 +1,12 @@
 
-dialog dialog         398 260 4+220+4 4+120+4 Disconnect from server?
+dialog dialog         418 260 4+180+4 4+120+4 Exit Crossfire?
 set_modal
 
-label_multi message    10  40  208 40 font_label BLACK <<EOF
-Do you really want to disconnect
-from the server?
+label_multi message    10  40  168 40 font_label BLACK <<EOF
+Do you really want to exit
+from Crossfire?
 EOF
-textbutton disconnect 20  100    86 18 false command_disconnect Disconnect
-textbutton resume     140 100    66 18 false command_resume     Resume
+textbutton disconnect 20  100    66 18 false command_quit        Exit
+textbutton resume     100 100    66 18 false command_resume_quit Resume
 
 set_default disconnect

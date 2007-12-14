@@ -90,6 +90,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public static final int GUI_METASERVER = 1;
     public static final int GUI_MAIN       = 2;
 
+    private int guiId = -1;
+
     /**
      * Whether GUI elements should be highlighted.
      */
@@ -118,6 +120,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * define this dialog.
      */
     private Gui dialogQuit = null;
+
+    /**
+     * The "really disconnect?" dialog. Set to <code>null</code> if the skin
+     * does not define this dialog.
+     */
+    private Gui dialogDisconnect = null;
 
     private JXCSkin myskin = null;
 
@@ -187,6 +195,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private String hostname = null;
 
     /**
+     * The currently connected port. Only valid if {@link #hostname} is set.
+     */
+    private int port = 0;
+
+    /**
      * The {@link WindowFocusListener} registered for this window. It resets
      * the keyboard modifier state when the window loses the focus. The idea is
      * to prevent the following: user switches from jxclient to another window
@@ -236,8 +249,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         public void connectionLost()
         {
-            System.err.println("*** lost connection to server ***");
-            System.exit(1);
+            myserver.setStatus(ServerConnection.Status.UNCONNECTED);
+            changeGUI(GUI_METASERVER);
         }
     };
 
@@ -261,6 +274,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else
             {
+                jxcWindowRenderer.closeDialog(dialogDisconnect);
                 jxcWindowRenderer.openDialog(dialogQuit);
             }
         }
@@ -444,9 +458,48 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         System.exit(0);
     }
 
-    public void changeGUI(final int id)
+    public void changeGUI(final int guiId)
     {
-        switch (id)
+        if (this.guiId == guiId)
+        {
+            return;
+        }
+
+        if (this.guiId == GUI_MAIN)
+        {
+            myserver.disconnect();
+            this.hostname = null;
+            this.port = 0;
+            ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
+            myserver.removeCrossfireQueryListener(this);
+            myserver.removeCrossfireDrawextinfoListener(this);
+            setTitle(TITLE_PREFIX);
+        }
+
+        final int prevGuiId = guiId;
+        this.guiId = guiId;
+
+        if (this.guiId == GUI_MAIN)
+        {
+            myserver.addCrossfireDrawextinfoListener(this);
+            myserver.addCrossfireQueryListener(this);
+            setTitle(TITLE_PREFIX+" - "+hostname);
+            ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+            myserver.connect(hostname, port, connectionListener);
+            Faces.setFacesCallback(myserver);
+        }
+
+        if (dialogDisconnect != null)
+        {
+            jxcWindowRenderer.closeDialog(dialogDisconnect);
+        }
+        if (dialogQuit != null)
+        {
+            jxcWindowRenderer.closeDialog(dialogQuit);
+        }
+        jxcWindowRenderer.closeDialog(queryDialog);
+
+        switch (guiId)
         {
         case GUI_START:
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
@@ -525,13 +578,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void connect(final String hostname, final int port)
     {
         this.hostname = hostname;
-        myserver.addCrossfireDrawextinfoListener(this);
-        myserver.addCrossfireQueryListener(this);
-        setTitle(TITLE_PREFIX+" - "+hostname);
-        ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+        this.port = port;
         changeGUI(GUI_MAIN);
-        myserver.connect(hostname, port, connectionListener);
-        Faces.setFacesCallback(myserver);
+    }
+
+    public void disconnect()
+    {
+        changeGUI(GUI_METASERVER);
     }
 
     /**
@@ -901,13 +954,41 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     keyBindingState = null;
                     jxcWindowRenderer.closeDialog(keybindDialog);
                 }
-                else if (dialogQuit == null)
+                else if (myserver != null && myserver.getStatus() != ServerConnection.Status.UNCONNECTED)
                 {
-                    endRendering();
+                    if (dialogDisconnect == null)
+                    {
+                        disconnect();
+                    }
+                    else if (jxcWindowRenderer.openDialog(dialogDisconnect))
+                    {
+                        if (dialogQuit != null)
+                        {
+                            jxcWindowRenderer.closeDialog(dialogQuit);
+                        }
+                    }
+                    else
+                    {
+                        jxcWindowRenderer.closeDialog(dialogDisconnect);
+                    }
                 }
-                else if (!jxcWindowRenderer.openDialog(dialogQuit))
+                else
                 {
-                    jxcWindowRenderer.closeDialog(dialogQuit);
+                    if (dialogQuit == null)
+                    {
+                        endRendering();
+                    }
+                    else if (jxcWindowRenderer.openDialog(dialogQuit))
+                    {
+                        if (dialogDisconnect != null)
+                        {
+                            jxcWindowRenderer.closeDialog(dialogDisconnect);
+                        }
+                    }
+                    else
+                    {
+                        jxcWindowRenderer.closeDialog(dialogQuit);
+                    }
                 }
             }
             else if (keyBindingState != null)
@@ -1080,6 +1161,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
+        myserver.setStatus(ServerConnection.Status.QUERY);
         jxcWindowRenderer.openDialog(queryDialog);
         jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
@@ -1179,6 +1261,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         queryDialog = myskin.getDialogQuery();
         keybindDialog = myskin.getDialogKeyBind();
         dialogQuit = myskin.getDialogQuit();
+        dialogDisconnect = myskin.getDialogDisconnect();
         optionManager.loadOptions();
         return true;
     }
