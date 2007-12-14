@@ -625,7 +625,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int setnum = packet[pos++]&0xFF;
                         final int checksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final String name = new String(packet, pos, end-pos, utf8);
+                        final String name = new String(packet, pos, end-pos, utf8).intern();
                         Faces.setFace(num, setnum, checksum, name);
                     }
                     return;
@@ -741,8 +741,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 final int nameLength = packet[pos++]&0xFF;
                                 final String[] names = new String(packet, pos, nameLength, utf8).split("\0", 2);
                                 pos += nameLength;
-                                final String name = names[0];
-                                final String namePl = names[names.length-1];
+                                final String name = names[0].intern();
+                                final String namePl = names.length < 2 ? name : names[1].intern();
                                 final int anim = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 final int animSpeed = packet[pos++]&0xFF;
                                 final int nrof = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
