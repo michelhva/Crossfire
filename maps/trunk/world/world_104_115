@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
+Modified: 2007-12-13 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -986,7 +987,7 @@ x 4
 y 4
 elevation -10
 end
-arch shallow_sea
+arch grass
 x 4
 y 5
 elevation -5
@@ -997,6 +998,7 @@ hp 2
 sp 9
 x 4
 y 6
+smoothlevel 0
 elevation 1
 end
 arch grass
@@ -1243,7 +1245,7 @@ x 5
 y 5
 elevation -10
 end
-arch shallow_sea
+arch grass
 x 5
 y 6
 elevation -10
@@ -2234,7 +2236,7 @@ x 9
 y 4
 elevation 95
 end
-arch shallow_sea
+arch grass
 x 9
 y 5
 elevation -1
@@ -2483,19 +2485,16 @@ x 10
 y 4
 elevation 588
 end
-arch grass
-x 10
-y 5
-elevation 444
-end
 arch hole
 slaying /dungeons/hut/watertunnel
 hp 43
 sp 8
 x 10
 y 5
+smoothlevel 0
+elevation 444
 end
-arch shallow_sea
+arch grass
 x 10
 y 6
 elevation -2
