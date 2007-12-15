@@ -71,7 +71,20 @@ public abstract class ActivatableGUIElement extends GUIElement
         }
 
         this.active = active;
+        final Gui gui = getGui();
+        if (gui != null)
+        {
+            gui.updateActiveElement(this);
+        }
+        activeChanged();
         return true;
+    }
+
+    /**
+     * Will be called whenever the active state has changed.
+     */
+    protected void activeChanged()
+    {
     }
 
     /* {@inheritDoc} */

@@ -213,7 +213,6 @@ public class Gui
         {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
             activatableDefaultElement.setActive(true);
-            setActiveElement(activatableDefaultElement);
         }
     }
 
@@ -272,7 +271,7 @@ public class Gui
      * @param activeElement The gui element, or <code>null</code> if no element
      * should have the focus.
      */
-    public void setActiveElement(final ActivatableGUIElement activeElement)
+    public void updateActiveElement(final ActivatableGUIElement activeElement)
     {
         if (this.activeElement != null)
         {
@@ -280,11 +279,6 @@ public class Gui
         }
 
         this.activeElement = activeElement;
-
-        if (this.activeElement != null)
-        {
-            this.activeElement.setActive(true);
-        }
     }
 
     /**
@@ -379,7 +373,6 @@ public class Gui
         if (textArea != null)
         {
             textArea.setActive(true);
-            setActiveElement(textArea);
         }
         return textArea;
     }

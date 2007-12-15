@@ -107,17 +107,6 @@ public class MouseTracker implements MouseInputListener
         if (mouseElement != null)
         {
             mouseElement.mousePressed(e);
-            if (mouseElement instanceof ActivatableGUIElement)
-            {
-                if (mouseElement.isActive())
-                {
-                    mouseElement.getGui().setActiveElement((ActivatableGUIElement)mouseElement);
-                }
-                else
-                {
-                    mouseElement.getGui().setActiveElement(null);
-                }
-            }
         }
     }
 
