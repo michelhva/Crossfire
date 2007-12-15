@@ -37,9 +37,38 @@ public class SoundManager
     public static SoundManager instance = null;
 
     /**
+     * Whether sound is enabled.
+     */
+    private boolean enabled;
+
+    /**
      * The muted sounds.
      */
     private final EnumSet<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
+
+    /**
+     * Return whether sound is enabled.
+     *
+     * @return Whether sound is enabled.
+     */
+    public boolean isEnabled()
+    {
+        return enabled;
+    }
+
+    public void setEnabled(final boolean enabled)
+    {
+        if (this.enabled == enabled)
+        {
+            return;
+        }
+
+        this.enabled = enabled;
+        if (!enabled)
+        {
+            // XXX: stop all running sounds
+        }
+    }
 
     /**
      * Play a sound clip.
@@ -53,7 +82,7 @@ public class SoundManager
         if (type == null) throw new IllegalArgumentException();
         if (name == null) throw new IllegalArgumentException();
 
-        if (!mutedSounds.contains(type))
+        if (enabled && !mutedSounds.contains(type))
         {
             new SoundClip(name);
         }
