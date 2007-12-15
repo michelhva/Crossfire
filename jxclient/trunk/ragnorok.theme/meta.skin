@@ -1,6 +1,6 @@
 
 picture background 0 0 1024 768 background_metaserver
-text metaurl 530 620 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE command_metaconnect
+text metaurl 530 620 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
 label_html metacomment 200 650 500 118 font_label WHITE
 meta_element metaselect1 300 235 440 20 null null font_metaurl metaurl metacomment 0 (%P) %H (%V) - %C
 meta_element metaselect2 300 265 440 20 null null font_metaurl metaurl metacomment 1 (%P) %H (%V) - %C
