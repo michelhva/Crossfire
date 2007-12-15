@@ -42,13 +42,43 @@ public class Metaserver
 
     private static final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
-    public static synchronized List<MetaserverEntry> query()
+    /**
+     * Return an metaserver entry by index.
+     *
+     * @param index The index.
+     *
+     * @return The metaserver entry, or <code>null</code> if the index is
+     * invalid.
+     */
+    public static synchronized MetaserverEntry getEntry(final int index)
     {
-        if (!metalist.isEmpty())
+        if (metalist.isEmpty())
         {
-            return metalist;
+            query();
         }
 
+        try
+        {
+            return metalist.get(index);
+        }
+        catch (IndexOutOfBoundsException ex)
+        {
+            return null;
+        }
+    }
+
+    /**
+     * Return the number of metaserver entries.
+     *
+     * @return The number of metaserver entries.
+     */
+    public static synchronized int size()
+    {
+        return metalist.size();
+    }
+
+    public static void query()
+    {
         metalist.clear();
         parseEntry("127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
         try
@@ -97,7 +127,6 @@ public class Metaserver
             System.exit(0);
         }
         Collections.sort(metalist);
-        return metalist;
     }
 
     /**
