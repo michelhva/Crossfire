@@ -14,8 +14,8 @@ button button_close          180   4  16 16 close_up close_down false command_se
 #textbutton setup_unbind      10 130 180 18 false command_setup_unbind Delete key binding
 #textbutton setup_restore     10 150 180 18 false command_setup_restore Restore key bidings to defaults
 
-# Preferences group
-label_text label_preferences  10  40 180 16 font_title BLACK Preferences:
+# Status indicators group
+label_text label_preferences  10  40 180 16 font_title BLACK Status indicators:
 checkbox checkbox_low_food    10  60 180 16 lowfood Low food warning
 checkbox checkbox_poisoned    10  80 180 16 poisoned Poisoned indicator
 checkbox checkbox_hitpoints   10 100 180 16 hitpoints Hitpoint indicator
