@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
@@ -149,6 +151,14 @@ public class jxclient
             new StatsWatcher(ItemsList.getStats());
 
             final JXCWindow jxwin = new JXCWindow(debugGui, prefs);
+            try
+            {
+                jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
+            }
+            catch (final OptionException ex)
+            {
+                throw new AssertionError();
+            }
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
         }
         catch (final Exception e)
