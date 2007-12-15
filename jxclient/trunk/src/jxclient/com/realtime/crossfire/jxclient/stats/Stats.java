@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.stats;
 
 import com.realtime.crossfire.jxclient.skills.Skill;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -445,9 +446,9 @@ public class Stats
     }
 
     /**
-     * Forget about all skill experience.
+     * Forget about all stats.
      */
-    public static void reset()
+    public void reset()
     {
         for (int i = 0; i < numberedSkills.length; i++)
         {
@@ -456,6 +457,11 @@ public class Stats
                 numberedSkills[i].set(0, 0);
             }
         }
+        Arrays.fill(stats, 0);
+        exp = 0;
+        range = "";
+        title = "";
+        setStatsProcessed();
     }
 
     /**
