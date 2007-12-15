@@ -26,7 +26,9 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  *
@@ -43,6 +45,16 @@ public class Metaserver
     private static final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
     /**
+     * All registered metaserver listeners.
+     */
+    private static final List<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
+
+    /**
+     * All registered metaserver entry listeners. Maps entry index to list of listeners.
+     */
+    private static final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
+
+    /**
      * Return an metaserver entry by index.
      *
      * @param index The index.
@@ -52,11 +64,6 @@ public class Metaserver
      */
     public static synchronized MetaserverEntry getEntry(final int index)
     {
-        if (metalist.isEmpty())
-        {
-            query();
-        }
-
         try
         {
             return metalist.get(index);
@@ -77,9 +84,18 @@ public class Metaserver
         return metalist.size();
     }
 
-    public static void query()
+    public static synchronized void query()
     {
+        final int metalistSize = metalist.size();
         metalist.clear();
+        for (int i = metalistSize-1; i >= 0; i--)
+        {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
+            {
+                metaserverEntryListener.entryRemoved();
+            }
+        }
+
         parseEntry("127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
         try
         {
@@ -122,6 +138,19 @@ public class Metaserver
             // ignore (but keep already parsed entries)
         }
         Collections.sort(metalist);
+
+        for (final MetaserverListener metaserverListener : metaserverListeners)
+        {
+            metaserverListener.numberOfEntriesChanged();
+        }
+
+        for (int i = 0; i < metalist.size(); i++)
+        {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
+            {
+                metaserverEntryListener.entryAdded();
+            }
+        }
     }
 
     /**
@@ -138,5 +167,69 @@ public class Metaserver
             return;
         }
         metalist.add(metaserverEntry);
+    }
+
+    /**
+     * Add a metaserver listener.
+     *
+     * @param listener The listener to add.
+     */
+    public static void addMetaserverListener(final MetaserverListener listener)
+    {
+        metaserverListeners.add(listener);
+    }
+
+    /**
+     * Remove a metaserver listener.
+     *
+     * @param listener The listener to add.
+     */
+    public static void removeMetaserverListener(final MetaserverListener listener)
+    {
+        metaserverListeners.remove(listener);
+    }
+
+    /**
+     * Add a metaserver entry listener for one entry.
+     *
+     * @param index The entry index to monitor.
+     *
+     * @param listener The listener to add.
+     */
+    public static void addMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    {
+        getMetaserverEntryListeners(index).add(listener);
+    }
+
+    /**
+     * Remove a metaserver entry listener for one entry.
+     *
+     * @param index The entry index to monitor.
+     *
+     * @param listener The listener to add.
+     */
+    public static void removeMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    {
+        getMetaserverEntryListeners(index).remove(listener);
+    }
+
+    /**
+     * Return the metaserver entry listeners for one entry index.
+     *
+     * @param index The entry index.
+     *
+     * @return The listsners list.
+     */
+    private static synchronized List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
+    {
+        final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
+        if (existingListeners != null)
+        {
+            return existingListeners;
+        }
+
+        final List<MetaserverEntryListener> newListeners = new ArrayList<MetaserverEntryListener>();
+        metaserverEntryListeners.put(index, newListeners);
+        return newListeners;
     }
 }

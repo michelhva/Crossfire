@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
@@ -54,6 +55,30 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     private int index;
 
+    /**
+     * The metaserver entry listener attached for the current {@link #index}.
+     */
+    private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
+    {
+        /** {@inheritDoc} */
+        public void entryAdded()
+        {
+            render();
+        }
+
+        /** {@inheritDoc} */
+        public void entryRemoved()
+        {
+            render();
+        }
+
+        /** {@inheritDoc} */
+        public void entryChanged()
+        {
+            render();
+        }
+    };
+
     public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final BufferedImage udpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format)
     {
         super(jxcWindow, name, x, y, w, h);
@@ -65,6 +90,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.index = index;
         this.format = format;
         createBuffer();
+        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
@@ -128,7 +154,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     public void scrollUp()
     {
+        Metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
         index--;
+        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
@@ -140,7 +168,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     public void scrollDown()
     {
+        Metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
         index++;
+        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
