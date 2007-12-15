@@ -91,6 +91,16 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private final List<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
 
+    /**
+     * The {@link CrossfireSoundListener}s to be notified.
+     */
+    private final List<CrossfireSoundListener> crossfireSoundListeners = new ArrayList<CrossfireSoundListener>();
+
+    /**
+     * The {@link CrossfireMusicListener}s to be notified.
+     */
+    private final List<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
+
     /** drawextinfo message type: character did read a book. */
     public static final int MSG_TYPE_BOOK = 1;
     /** drawextinfo message type: character did read a card. */
@@ -301,6 +311,26 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
     {
         crossfireUpdateFaceListeners.add(listener);
+    }
+
+    /**
+     * Add a listener to be notified about received sound commands.
+     *
+     * @param listener The listener to add.
+     */
+    public void addCrossfireSoundListener(final CrossfireSoundListener listener)
+    {
+        crossfireSoundListeners.add(listener);
+    }
+
+    /**
+     * Add a listener to be notified about received music commands.
+     *
+     * @param listener The listener to add.
+     */
+    public void addCrossfireMusicListener(final CrossfireMusicListener listener)
+    {
+        crossfireMusicListeners.add(listener);
     }
 
     /** {@inheritDoc} */
@@ -758,49 +788,66 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 break;
 
             case 'm':
-                if (packet[pos++] != 'a') break;
                 switch (packet[pos++])
                 {
-                case 'g':
-                    if (packet[pos++] != 'i') break;
-                    if (packet[pos++] != 'c') break;
-                    if (packet[pos++] != 'm') break;
-                    if (packet[pos++] != 'a') break;
-                    if (packet[pos++] != 'p') break;
-                    if (packet[pos++] != ' ') break;
-                    dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                    try
-                    {
-                        CfMagicMap.magicmap(dis);
-                    }
-                    catch (final IOException ex)
-                    {
-                        throw new UnknownCommandException("invalid magicmap command: "+ex.getMessage());
-                    }
-                    return;
-
-                case 'p':
+                case 'a':
                     switch (packet[pos++])
                     {
-                    case '2':
-                        if (packet[pos++] != ' ') break;
-                        cmd_map2(packet, pos, end);
-                        return;
-
-                    case 'e':
-                        if (packet[pos++] != 'x') break;
-                        if (packet[pos++] != 't') break;
-                        if (packet[pos++] != 'e') break;
-                        if (packet[pos++] != 'n') break;
-                        if (packet[pos++] != 'd') break;
-                        if (packet[pos++] != 'e') break;
-                        if (packet[pos++] != 'd') break;
+                    case 'g':
+                        if (packet[pos++] != 'i') break;
+                        if (packet[pos++] != 'c') break;
+                        if (packet[pos++] != 'm') break;
+                        if (packet[pos++] != 'a') break;
+                        if (packet[pos++] != 'p') break;
                         if (packet[pos++] != ' ') break;
                         dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                        cmd_mapextended(dis);
+                        try
+                        {
+                            CfMagicMap.magicmap(dis);
+                        }
+                        catch (final IOException ex)
+                        {
+                            throw new UnknownCommandException("invalid magicmap command: "+ex.getMessage());
+                        }
                         return;
+
+                    case 'p':
+                        switch (packet[pos++])
+                        {
+                        case '2':
+                            if (packet[pos++] != ' ') break;
+                            cmd_map2(packet, pos, end);
+                            return;
+
+                        case 'e':
+                            if (packet[pos++] != 'x') break;
+                            if (packet[pos++] != 't') break;
+                            if (packet[pos++] != 'e') break;
+                            if (packet[pos++] != 'n') break;
+                            if (packet[pos++] != 'd') break;
+                            if (packet[pos++] != 'e') break;
+                            if (packet[pos++] != 'd') break;
+                            if (packet[pos++] != ' ') break;
+                            dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
+                            cmd_mapextended(dis);
+                            return;
+                        }
+                        break;
                     }
                     break;
+
+                case 'u':
+                    if (packet[pos++] != 's') break;
+                    if (packet[pos++] != 'i') break;
+                    if (packet[pos++] != 'c') break;
+                    if (packet[pos++] != ' ') break;
+                    final String music = new String(packet, pos, end-pos, utf8);
+
+                    for (final CrossfireMusicListener listener : crossfireMusicListeners)
+                    {
+                        listener.commandMusicReceived(music);
+                    }
+                    return;
                 }
                 break;
 
@@ -940,7 +987,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int type = packet[pos++];
                         if (pos != end) break;
-                        // sound command not implemented
+
+                        for (final CrossfireSoundListener listener : crossfireSoundListeners)
+                        {
+                            listener.commandSoundReceived(x, y, num, type);
+                        }
                     }
                     return;
 
@@ -1178,14 +1229,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         }
 
         int cmdlen;
-        for (cmdlen = 0; cmdlen < end; cmdlen++)
+        for (cmdlen = start; cmdlen < end; cmdlen++)
         {
             if ((packet[cmdlen]&0xFF) <= 0x20 || (packet[cmdlen]&0xFF) >= 0x80)
             {
                 break;
             }
         }
-        throw new UnknownCommandException("Cannot parse command: "+new String(packet, 0, cmdlen, utf8));
+        throw new UnknownCommandException("Cannot parse command: "+new String(packet, start, cmdlen-start, utf8));
     }
 
     /**
@@ -1329,7 +1380,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MSG_TYPE_BOOK, MSG_TYPE_CARD, MSG_TYPE_PAPER, MSG_TYPE_SIGN, MSG_TYPE_MONUMENT, MSG_TYPE_DIALOG, MSG_TYPE_MOTD, MSG_TYPE_ADMIN, MSG_TYPE_SHOP, MSG_TYPE_COMMAND, MSG_TYPE_ATTRIBUTE, MSG_TYPE_SKILL, MSG_TYPE_APPLY, MSG_TYPE_ATTACK, MSG_TYPE_COMMUNICATION, MSG_TYPE_SPELL, MSG_TYPE_ITEM, MSG_TYPE_MISC, MSG_TYPE_VICTIM);
         sendSetup(
-            "sound 0",
+            "sound 3",
             "exp64 1",
             "map2cmd 1",
             "darkness 1",
