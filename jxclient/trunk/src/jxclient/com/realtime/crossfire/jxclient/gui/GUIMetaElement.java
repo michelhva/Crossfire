@@ -88,14 +88,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             g.drawImage(tcpImage, 0, 0, null);
         }
         g.drawString(metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
-        if (comment != null && isActive())
-        {
-            comment.setText(metaEntry.getComment());
-        }
-        if (text != null && isActive())
-        {
-            text.setText(metaEntry.getHostname());
-        }
     }
 
     /** {@inheritDoc} */
@@ -172,5 +164,23 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
+    }
+
+    /** {@inheritDoc} */
+    @Override protected void activeChanged()
+    {
+        final List<MetaserverEntry> metaEntries = Metaserver.query();
+        final MetaserverEntry metaEntry = 0 <= index && index < metaEntries.size() ? metaEntries.get(index) : null;
+        if (isActive())
+        {
+            if (comment != null)
+            {
+                comment.setText(metaEntry != null ? metaEntry.getComment() : "");
+            }
+            if (text != null)
+            {
+                text.setText(metaEntry != null ? metaEntry.getHostname() : "");
+            }
+        }
     }
 }

@@ -149,8 +149,7 @@ public class GUICommand
         case SCROLLNEXT:
             if (mytarget.isActive())
             {
-                final ScrollNextParameter param = (ScrollNextParameter)myparams;
-                mytarget.getGui().setActiveElement(param.nextElement);
+                ((ScrollNextParameter)myparams).nextElement.setActive(true);
             }
             break;
 
