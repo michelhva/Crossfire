@@ -48,6 +48,8 @@ import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.sound.SoundManager;
+import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import java.awt.event.InputEvent;
@@ -482,10 +484,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
         if (this.guiId == GUI_MAIN)
         {
+            SoundManager.instance.mute(Sounds.CHARACTER, false);
             myserver.addCrossfireDrawextinfoListener(this);
             myserver.addCrossfireQueryListener(this);
             setTitle(TITLE_PREFIX+" - "+hostname);
             ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+            ItemsList.getStats().reset();
             myserver.connect(hostname, port, connectionListener);
             Faces.setFacesCallback(myserver);
         }
@@ -503,6 +507,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         switch (guiId)
         {
         case GUI_START:
+            SoundManager.instance.mute(Sounds.CHARACTER, true);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
             if (DISABLE_START_GUI)
             {
@@ -515,6 +520,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case GUI_METASERVER:
+            SoundManager.instance.mute(Sounds.CHARACTER, true);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
             showGUIMeta();
             Metaserver.query();

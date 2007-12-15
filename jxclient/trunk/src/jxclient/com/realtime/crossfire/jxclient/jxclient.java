@@ -21,6 +21,9 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.sound.SoundManager;
+import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import java.io.File;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -141,6 +144,9 @@ public class jxclient
             prefs.putInt("bpp", bpp);
             prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
+
+            SoundManager.instance = new SoundManager();
+            new StatsWatcher(ItemsList.getStats());
 
             final JXCWindow jxwin = new JXCWindow(debugGui, prefs);
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);

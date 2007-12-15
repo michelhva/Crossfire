@@ -1,5 +1,7 @@
 2007-12-15  Andreas Kirschbaum
 
+	* Add sound support. Use it for poison warning.
+
 	* Do not query metaserver with --server. Re-query metaserver after
 	each connection attempt.
 

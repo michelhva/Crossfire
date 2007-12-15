@@ -830,7 +830,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     pos += nameLength;
                     if (pos != end) break;
                     ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
-                    Stats.reset();
                 }
                 return;
 
