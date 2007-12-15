@@ -120,7 +120,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
             final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
             g.setColor(inactiveColor);
-                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
+            g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
         }
         g.setColor(isActive() ? activeColor : inactiveColor);
         g.drawString(tmp, margin, y);
