@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
@@ -516,6 +517,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case GUI_METASERVER:
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
             showGUIMeta();
+            Metaserver.query();
             break;
 
         case GUI_MAIN:

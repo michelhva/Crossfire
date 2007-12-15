@@ -1,5 +1,8 @@
 2007-12-15  Andreas Kirschbaum
 
+	* Do not query metaserver with --server. Re-query metaserver after
+	each connection attempt.
+
 	* Do not crash when metaserver is not available.
 
 2007-12-14  Andreas Kirschbaum
