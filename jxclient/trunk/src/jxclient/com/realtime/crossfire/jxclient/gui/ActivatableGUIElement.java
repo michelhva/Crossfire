@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.event.MouseEvent;
 
 /**
- *
+ * A {@link GUIElement} that can be set to active or inactive.
  *
  * @author Andreas Kirschbaum
  */
