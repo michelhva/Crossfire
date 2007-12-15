@@ -31,7 +31,6 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
-import java.util.List;
 
 /**
  *
@@ -74,20 +73,14 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     {
         super.render(g);
 
-        final List<MetaserverEntry> metaEntries = Metaserver.query();
-        if (index < 0 || index >= metaEntries.size())
-        {
-            return;
-        }
-
-        final MetaserverEntry metaEntry = metaEntries.get(index);
+        final MetaserverEntry metaEntry = Metaserver.getEntry(index);
         g.setFont(font);
         g.setColor(isActive() ? Color.RED : Color.GRAY);
         if (tcpImage != null)
         {
             g.drawImage(tcpImage, 0, 0, null);
         }
-        g.drawString(metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
+        g.drawString(metaEntry == null ? "" : metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
     }
 
     /** {@inheritDoc} */
@@ -142,7 +135,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        return index+1 < Metaserver.query().size();
+        return index+1 < Metaserver.size();
     }
 
     public void scrollDown()
@@ -169,18 +162,21 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /** {@inheritDoc} */
     @Override protected void activeChanged()
     {
-        final List<MetaserverEntry> metaEntries = Metaserver.query();
-        final MetaserverEntry metaEntry = 0 <= index && index < metaEntries.size() ? metaEntries.get(index) : null;
-        if (isActive())
+        super.activeChanged();
+
+        if (!isActive())
         {
-            if (comment != null)
-            {
-                comment.setText(metaEntry != null ? metaEntry.getComment() : "");
-            }
-            if (text != null)
-            {
-                text.setText(metaEntry != null ? metaEntry.getHostname() : "");
-            }
+            return;
+        }
+
+        final MetaserverEntry metaEntry = Metaserver.getEntry(index);
+        if (comment != null)
+        {
+            comment.setText(metaEntry != null ? metaEntry.getComment() : "");
+        }
+        if (text != null)
+        {
+            text.setText(metaEntry != null ? metaEntry.getHostname() : "");
         }
     }
 }
