@@ -6,6 +6,7 @@ width 20
 height 20
 msg
 Created:  2006-05-26 Bort
+Modified: 2007-12-01 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -1247,6 +1248,7 @@ y 18
 weight 150
 container 10
 no_pick 1
+face_opened mat.111
 arch key
 end
 end
