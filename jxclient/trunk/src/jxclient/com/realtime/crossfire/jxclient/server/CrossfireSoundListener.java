@@ -26,7 +26,6 @@ package com.realtime.crossfire.jxclient.server;
  */
 public interface CrossfireSoundListener
 {
-
     /**
      * A sound command has been received.
      *
