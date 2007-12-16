@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import java.io.File;
@@ -147,9 +148,6 @@ public class jxclient
             prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
 
-            SoundManager.instance = new SoundManager();
-            new StatsWatcher(ItemsList.getStats());
-
             final JXCWindow jxwin = new JXCWindow(debugGui, prefs);
             try
             {
@@ -159,6 +157,11 @@ public class jxclient
             {
                 throw new AssertionError();
             }
+
+            SoundManager.instance = new SoundManager();
+            new StatsWatcher(ItemsList.getStats());
+            new MusicWatcher(jxwin.getCrossfireServerConnection());
+
             jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
         }
         catch (final Exception e)
