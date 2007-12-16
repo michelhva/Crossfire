@@ -37,15 +37,44 @@ public class AudioFileLoader
     }
 
     /**
-     * Return an input stream for an audio name.
+     * Return an input stream for an audio file. <code>action</code> identifies
+     * the audio file. <code>name</code> is an optional prefix.
      *
      * @param name The name.
+     *
+     * @param action The action; may be <code>null</code>.
      *
      * @return The input stream.
      *
      * @throws IOException If the file cannot be located.
      */
-    public static InputStream getInputStream(final String name) throws IOException
+    public static InputStream getInputStream(final String name, final String action) throws IOException
+    {
+        if (name != null)
+        {
+            try
+            {
+                return getResource(name+"/"+action);
+            }
+            catch (final IOException ex)
+            {
+                // ignore
+            }
+        }
+
+        return getResource(action);
+    }
+
+    /**
+     * Return an input stream for an audio file.
+     *
+     * @param name The resource name.
+     *
+     * @return The input stream.
+     *
+     * @throws IOException If the file cannot be located.
+     */
+    private static InputStream getResource(final String name) throws IOException
     {
         final String resource = "resource/sounds/"+name+".wav";
 

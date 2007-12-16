@@ -87,16 +87,18 @@ public class SoundManager
      *
      * @param type The sound type.
      *
-     * @param name The sound name.
+     * @param name An optional prefix for the action name.
+     *
+     * @param action The sound action name.
      */
-    public void playClip(final Sounds type, final String name)
+    public void playClip(final Sounds type, final String name, final String action)
     {
         if (type == null) throw new IllegalArgumentException();
-        if (name == null) throw new IllegalArgumentException();
+        if (action == null) throw new IllegalArgumentException();
 
         if (enabled && !mutedSounds.contains(type))
         {
-            clipManager.play(name);
+            clipManager.play(name, action);
         }
     }
 

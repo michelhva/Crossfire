@@ -44,11 +44,13 @@ public class ClipManager
     /**
      * Play the given sound effect. This function returns immediately.
      *
-     * @param filename The filename of the sound effect.
+     * @param name An optional prefix for the action name.
+     *
+     * @param action The action name of the sound effect.
      */
-    public void play(final String filename)
+    public void play(final String name, final String action)
     {
-        final Clip clip = clipCache.allocateClip(filename);
+        final Clip clip = clipCache.allocateClip(name, action);
         if (clip == null)
         {
             return;

@@ -37,13 +37,15 @@ public class ClipCache
     /**
      * Allocate a new clip.
      *
-     * @param filename The name of the clip to allocate.
+     * @param name An optional prefix for the action name.
+     *
+     * @param action The action name of the clip to allocate.
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    public Clip allocateClip(final String name)
+    public Clip allocateClip(final String name, final String action)
     {
-        return newClip(name);
+        return newClip(name, action);
     }
 
     /**
@@ -59,15 +61,17 @@ public class ClipCache
     /**
      * Allocate a new clip.
      *
-     * @param name The name of the clip to allocate.
+     * @param name An optional prefix for the action name.
+     *
+     * @param action The action name of the clip to allocate.
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    private Clip newClip(final String name)
+    private Clip newClip(final String name, final String action)
     {
         try
         {
-            final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name));
+            final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name, action));
             try
             {
                 final Clip clip = AudioSystem.getClip();
