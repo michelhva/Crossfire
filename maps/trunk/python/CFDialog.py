@@ -160,6 +160,7 @@ class Dialog:
                     self.__speaker.Say(rule.getMessage())
                     self.setConditions(rule)
                     return 0
+        return 1
     def isAnswer(self,msg, keyword):
         if keyword=="*":
             return 1
