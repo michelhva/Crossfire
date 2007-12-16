@@ -48,7 +48,6 @@ import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
@@ -172,11 +171,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The current spell manager instance for this window.
      */
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
-
-    /**
-     * The music watcher to play background music.
-     */
-    private final MusicWatcher musicWatcher = new MusicWatcher(myserver);
 
     /**
      * The mouse tracker.
