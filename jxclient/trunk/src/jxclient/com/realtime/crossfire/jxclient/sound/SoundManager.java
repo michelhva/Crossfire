@@ -37,6 +37,16 @@ public class SoundManager
     public static SoundManager instance = null;
 
     /**
+     * The clip manager for playing sound effects.
+     */
+    private static final ClipManager clipManager = new ClipManager();
+
+    /**
+     * The music manager for playing background music.
+     */
+    private static final MusicManager musicManager = new MusicManager();
+
+    /**
      * Whether sound is enabled.
      */
     private boolean enabled;
@@ -56,6 +66,11 @@ public class SoundManager
         return enabled;
     }
 
+    /**
+     * Set whether the sound system is enabled.
+     *
+     * @param enabled Whether the sound system is enabled.
+     */
     public void setEnabled(final boolean enabled)
     {
         if (this.enabled == enabled)
@@ -64,10 +79,7 @@ public class SoundManager
         }
 
         this.enabled = enabled;
-        if (!enabled)
-        {
-            // XXX: stop all running sounds
-        }
+        musicManager.setEnabled(enabled);
     }
 
     /**
@@ -77,14 +89,14 @@ public class SoundManager
      *
      * @param name The sound name.
      */
-    public void play(final Sounds type, final String name)
+    public void playClip(final Sounds type, final String name)
     {
         if (type == null) throw new IllegalArgumentException();
         if (name == null) throw new IllegalArgumentException();
 
         if (enabled && !mutedSounds.contains(type))
         {
-            new SoundClip(name);
+            clipManager.play(name);
         }
     }
 
@@ -107,5 +119,36 @@ public class SoundManager
             mutedSounds.remove(type);
             // XXX: stop running sounds of type
         }
+    }
+
+    /**
+     * Play a background music. If the new music name is unchanged, continue
+     * playing.
+     *
+     * @param name The music name.
+     */
+    public void playMusic(final String name)
+    {
+        musicManager.play(name);
+    }
+
+    /**
+     * Mute or unmute background music.
+     *
+     * @param muted Whether to mute (<code>true</code>) or unmute
+     * (<code>false</code>).
+     */
+    public void muteMusic(final boolean muted)
+    {
+        musicManager.setMuted(muted);
+    }
+
+    /**
+     * Terminate all sounds and free resources.
+     */
+    public void shutdown()
+    {
+        musicManager.shutdown();
+        clipManager.shutdown();
     }
 }

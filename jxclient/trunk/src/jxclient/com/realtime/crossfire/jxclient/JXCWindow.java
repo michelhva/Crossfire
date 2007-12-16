@@ -48,6 +48,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
@@ -171,6 +172,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The current spell manager instance for this window.
      */
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
+
+    /**
+     * The music watcher to play background music.
+     */
+    private final MusicWatcher musicWatcher = new MusicWatcher(myserver);
 
     /**
      * The mouse tracker.
@@ -458,6 +464,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         saveShortcuts();
         saveKeybindings();
         optionManager.saveOptions();
+        SoundManager.instance.shutdown();
         System.exit(0);
     }
 
@@ -507,6 +514,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         switch (guiId)
         {
         case GUI_START:
+            SoundManager.instance.muteMusic(true);
             SoundManager.instance.mute(Sounds.CHARACTER, true);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
             if (DISABLE_START_GUI)
@@ -520,6 +528,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case GUI_METASERVER:
+            SoundManager.instance.muteMusic(true);
             SoundManager.instance.mute(Sounds.CHARACTER, true);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
             showGUIMeta();
@@ -527,6 +536,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case GUI_MAIN:
+            SoundManager.instance.muteMusic(false);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
             showGUIMain();
             break;
