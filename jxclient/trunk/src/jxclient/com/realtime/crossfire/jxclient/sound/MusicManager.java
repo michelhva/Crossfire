@@ -211,7 +211,7 @@ public class MusicManager
         {
             try
             {
-                    AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name));
+                AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
                 try
                 {
                     final SourceDataLine sourceDataLine = AudioSystem.getSourceDataLine(audioInputStream.getFormat());
@@ -250,7 +250,7 @@ public class MusicManager
                                 int len = audioInputStream.read(buf, 0, buf.length);
                                 if (len == -1)
                                 {
-                                    final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name));
+                                    final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
                                     if (!newAudioInputStream.getFormat().matches(audioInputStream.getFormat()))
                                     {
                                         newAudioInputStream.close();

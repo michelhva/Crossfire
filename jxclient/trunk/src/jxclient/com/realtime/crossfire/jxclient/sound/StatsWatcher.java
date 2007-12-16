@@ -73,7 +73,7 @@ public class StatsWatcher
         if (this.poisoned != poisoned)
         {
             this.poisoned = poisoned;
-            SoundManager.instance.playClip(Sounds.CHARACTER, poisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+            SoundManager.instance.playClip(Sounds.CHARACTER, null, poisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
         }
     }
 }

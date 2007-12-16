@@ -980,20 +980,47 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 'u') break;
                     if (packet[pos++] != 'n') break;
                     if (packet[pos++] != 'd') break;
-                    if (packet[pos++] != ' ') break;
+                    switch (packet[pos++])
                     {
-                        final int x = packet[pos++];
-                        final int y = packet[pos++];
-                        final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int type = packet[pos++];
-                        if (pos != end) break;
-
-                        for (final CrossfireSoundListener listener : crossfireSoundListeners)
+                    case ' ':
                         {
-                            listener.commandSoundReceived(x, y, num, type);
+                            final int x = packet[pos++];
+                            final int y = packet[pos++];
+                            final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int type = packet[pos++];
+                            if (pos != end) break;
+
+                            for (final CrossfireSoundListener listener : crossfireSoundListeners)
+                            {
+                                listener.commandSoundReceived(x, y, num, type);
+                            }
                         }
+                        return;
+
+                    case '2':
+                        if (packet[pos++] != ' ') break;
+                        {
+                            final int x = packet[pos++];
+                            final int y = packet[pos++];
+                            final int dir = packet[pos++];
+                            final int volume = packet[pos++];
+                            final int type = packet[pos++];
+                            final int actionLength = packet[pos++]&0xFF;
+                            final String action = new String(packet, pos, actionLength, utf8);
+                            pos += actionLength;
+                            final int nameLength = packet[pos++]&0xFF;
+                            final String name = new String(packet, pos, nameLength, utf8);
+                            pos += nameLength;
+                            if (pos != end) break;
+
+                            for (final CrossfireSoundListener listener : crossfireSoundListeners)
+                            {
+                                listener.commandSound2Received(x, y, dir, volume, type, action, name);
+                            }
+                        }
+                        return;
                     }
-                    return;
+                    break;
 
                 case 't':
                     if (packet[pos++] != 'a') break;
@@ -1381,6 +1408,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         sendToggleextendedtext(MSG_TYPE_BOOK, MSG_TYPE_CARD, MSG_TYPE_PAPER, MSG_TYPE_SIGN, MSG_TYPE_MONUMENT, MSG_TYPE_DIALOG, MSG_TYPE_MOTD, MSG_TYPE_ADMIN, MSG_TYPE_SHOP, MSG_TYPE_COMMAND, MSG_TYPE_ATTRIBUTE, MSG_TYPE_SKILL, MSG_TYPE_APPLY, MSG_TYPE_ATTACK, MSG_TYPE_COMMUNICATION, MSG_TYPE_SPELL, MSG_TYPE_ITEM, MSG_TYPE_MISC, MSG_TYPE_VICTIM);
         sendSetup(
             "sound 3",
+            "sound2 3",
             "exp64 1",
             "map2cmd 1",
             "darkness 1",
@@ -1498,7 +1526,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             }
             else if (option.equals("sound"))
             {
-                // XXX: record setting: enabled iff value.equals("1")
+                // ignore: if the server sends sound info it is processed
+            }
+            else if (option.equals("sound2"))
+            {
+                // ignore: if the server sends sound info it is processed
             }
             else if (option.equals("exp64"))
             {

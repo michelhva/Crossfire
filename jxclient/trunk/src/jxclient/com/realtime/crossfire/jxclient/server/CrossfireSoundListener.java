@@ -26,6 +26,24 @@ package com.realtime.crossfire.jxclient.server;
  */
 public interface CrossfireSoundListener
 {
+    /** Type for "living sound (moving, dying, ...)". */
+    int TYPE_LIVING = 1;
+
+    /** Type for "spell casting sound." */
+    int TYPE_SPELL = 2;
+
+    /** Type for "item sound (potion, weapon ...)." */
+    int TYPE_ITEM = 3;
+
+    /** Type for "ground sound (door, trap opening, ...)". */
+    int TYPE_GROUND = 4;
+
+    /** Type for "hit something". */
+    int TYPE_HIT = 5;
+
+    /** Type for "hit by something". */
+    int TYPE_HIT_BY = 6;
+
     /**
      * A sound command has been received.
      *
@@ -38,4 +56,23 @@ public interface CrossfireSoundListener
      * @param type The sound type.
      */
     void commandSoundReceived(int x, int y, int num, int type);
+
+    /**
+     * A sound2 command has been received.
+     *
+     * @param x The x-coordinate relative to the player.
+     *
+     * @param y The y-coordinate relative to the player.
+     *
+     * @param dir The direction of the sound.
+     *
+     * @param volume The volume of the sound.
+     *
+     * @param type The sound type.
+     *
+     * @param action The action name.
+     *
+     * @param name The sound name.
+     */
+    void commandSound2Received(int x, int y, int dir, int volume, int type, String action, String name);
 }
