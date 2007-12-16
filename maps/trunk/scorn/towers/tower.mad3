@@ -6,6 +6,9 @@ width 16
 height 16
 enter_x 11
 enter_y 10
+msg
+Modified: 2007-12-16 Nicolas Weeger
+endmsg
 end
 arch grass
 end
@@ -440,15 +443,11 @@ arch woodfloor
 x 3
 y 11
 end
-arch table_3
+arch chair_2.3
 x 3
 y 11
 end
 arch woodfloor
-x 3
-y 12
-end
-arch table_3
 x 3
 y 12
 end
@@ -558,15 +557,11 @@ arch woodfloor
 x 4
 y 11
 end
-arch chair_2.2
-x 4
-y 11
-end
 arch woodfloor
 x 4
 y 12
 end
-arch table_3
+arch chair_2.4
 x 4
 y 12
 end
@@ -644,7 +639,7 @@ arch woodfloor
 x 5
 y 11
 end
-arch chair_2.2
+arch chair_2.1
 x 5
 y 11
 end
@@ -730,7 +725,7 @@ arch woodfloor
 x 6
 y 11
 end
-arch chair_2.2
+arch chair_2.1
 x 6
 y 11
 end
@@ -820,7 +815,7 @@ arch woodfloor
 x 7
 y 11
 end
-arch chair_2.2
+arch chair_2.1
 x 7
 y 11
 end
@@ -926,7 +921,7 @@ arch woodfloor
 x 8
 y 11
 end
-arch chair_2.2
+arch chair_2.1
 x 8
 y 11
 end
