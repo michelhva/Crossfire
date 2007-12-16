@@ -2,6 +2,9 @@ arch map
 name world_103_115
 width 50
 height 50
+msg
+Modified: 2007-12-16 Nicolas Weeger
+endmsg
 outdoor 1
 tile_path_1 world_103_114
 tile_path_2 world_104_115
@@ -9626,10 +9629,21 @@ x 39
 y 27
 elevation 435
 end
+arch detector
+x 39
+y 28
+speed 1
+connected 1
+elevation 789
+activate_on_push 1
+arch event_trigger
+title Python
+slaying /python/maps/witherspoon_manor/tomb.py
+end
+end
 arch grass
 x 39
 y 28
-elevation 789
 end
 arch grass
 x 39
