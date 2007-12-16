@@ -36,7 +36,7 @@ $qret = db_query($db, $query);
 
 // This really shouldn't happen, but might as well log for if it does.
 if (db_num_rows($qret)<1) {
-    print "<html><head><title>No metaservers listed on server</title></head><body>No metaservers listed on server</body>\n";
+    print "<html><head><title>No servers on metaserver</title></head><body>No servers listed on metaserver</body>\n";
     db_close($db);
     exit;
 }
@@ -49,7 +49,7 @@ while ($qrow = db_fetch_assoc($qret)) {
     print "<tr><td>" . $qrow['hostname'] . ":" . $qrow['port'] . "</td>";
     print "<td>" . $qrow['html_comment'] . "</td>";
     print "<td>" . $qrow['archbase'] . "/" . $qrow['mapbase'] . "/" . $qrow['codebase'] . "</td>";
-    print "<td>" . $qrow['flags'] . "</td><td>" . $qrow['num_players'] . "</td>";
+    print "<td>" . $qrow['flags'] . "&nbsp;</td><td>" . $qrow['num_players'] . "</td>";
     print "<td>" . $qrow['in_bytes'] . " / " . $qrow['out_bytes'] . "</td>";
     print "<td>" . (int)($qrow['uptime']/ 60) .  "</td><td>" . $qrow['version'] . "</td>";
     print "<td>" . $qrow['sc_version'] .  " / " . $qrow['cs_version'] . "</td>";
