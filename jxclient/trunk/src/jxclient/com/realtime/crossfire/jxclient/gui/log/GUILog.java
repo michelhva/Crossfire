@@ -30,9 +30,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
-import java.awt.font.LineMetrics;
-import java.awt.Font;
-import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -84,7 +81,7 @@ public class GUILog extends GUIElement implements GUIScrollable
     /**
      * The {@link Buffer} containing all received text messages.
      */
-    private final Buffer buffer = new Buffer();
+    private final Buffer buffer;
 
     private final BufferedImage backgroundImage;
 
@@ -206,6 +203,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         this.fonts = fonts;
         this.defaultColor = defaultColor;
         createBuffer();
+        buffer = new Buffer(fonts, context, w);
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
@@ -230,7 +228,7 @@ public class GUILog extends GUIElement implements GUIScrollable
             {
                 final Line line = it.previous();
                 topIndex--;
-                y -= calculateHeight(line);
+                y -= line.getHeight();
                 drawLine(g, y, line);
             }
             canScrollUp = y < 0 || it.hasPrevious();
@@ -244,96 +242,12 @@ public class GUILog extends GUIElement implements GUIScrollable
             while (y < getHeight() && it.hasNext())
             {
                 final Line line = it.next();
-                final int height = calculateHeight(line);
+                final int height = line.getHeight();
                 drawLine(g, y, line);
                 y += height;
             }
             canScrollUp = topIndex > 0 || topOffset > 0;
             canScrollDown = y > getHeight() || it.hasNext();
-        }
-    }
-
-    /**
-     * Determine the height of a {@link Line} in pixels.
-     *
-     * @param line The line to process.
-     *
-     * @return The height in pixels.
-     */
-    private int calculateHeight(final Line line)
-    {
-        final int cachedHeight = line.getHeight();
-        if (cachedHeight != -1)
-        {
-            return cachedHeight;
-        }
-
-        int totalHeight = 0;
-        int x = 0;
-        int minY = 0;
-        int maxY = 0;
-        int beginIndex = 0;
-        final int imax = line.size();
-        for (int i = 0; i < imax; i++)
-        {
-            final Segment segment = line.getSegment(i);
-            final String text = segment.getText();
-            final Font font = segment.getFont(fonts);
-            final Rectangle2D rect = font.getStringBounds(text, context);
-            final int width = (int)Math.round(rect.getWidth());
-            if (x != 0 && x+width > getWidth())
-            {
-                updateAttributes(line, beginIndex, i, totalHeight, minY, maxY);
-
-                totalHeight += maxY-minY;
-                x = 0;
-                minY = 0;
-                maxY = 0;
-                beginIndex = i;
-            }
-
-            segment.setX(x);
-            segment.setY(totalHeight);
-            segment.setWidth(width);
-
-            x += width;
-            minY = (int)Math.min(minY, Math.round(rect.getY()));
-            maxY = (int)Math.max(maxY, Math.round(rect.getY()+rect.getHeight()));
-        }
-
-        updateAttributes(line, beginIndex, imax, totalHeight, minY, maxY);
-        totalHeight += maxY-minY;
-        line.setHeight(totalHeight);
-
-        return totalHeight;
-    }
-
-    /**
-     * Update the cached attributes of some {@link Segment}s of a {@link Line}.
-     *
-     * @param line The line to process.
-     *
-     * @param begin The index of the first segment to update.
-     *
-     * @param end The index of the first segment not to update.
-     *
-     * @param y The top border of the line's bounding box.
-     *
-     * @param minY The minimum bottom offset of all segments' bounding boxes.
-     *
-     * @param maxY The maximum top offset of all segments' bounding boxes.
-     */
-    private void updateAttributes(final Line line, final int begin, final int end, final int y, final int minY, final int maxY)
-    {
-        for (int i = begin; i < end; i++)
-        {
-            final Segment segment = line.getSegment(i);
-            final String text = segment.getText();
-            final Font font = segment.getFont(fonts);
-            final LineMetrics lineMetrics = font.getLineMetrics(text, context);
-            segment.setHeight(maxY-minY);
-            segment.setY(y-minY);
-            segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
         }
     }
 
@@ -402,7 +316,7 @@ public class GUILog extends GUIElement implements GUIScrollable
             if (topIndex > 0)
             {
                 topIndex--;
-                topOffset += calculateHeight(buffer.getLine(topIndex));
+                topOffset += buffer.getLine(topIndex).getHeight();
             }
             else
             {
@@ -425,9 +339,9 @@ public class GUILog extends GUIElement implements GUIScrollable
         assert canScrollDown;
 
         topOffset += SCROLL_PIXEL;
-        while (topOffset >= calculateHeight(buffer.getLine(topIndex)))
+        while (topOffset >= buffer.getLine(topIndex).getHeight())
         {
-            topOffset -= calculateHeight(buffer.getLine(topIndex));
+            topOffset -= buffer.getLine(topIndex).getHeight();
             topIndex++;
         }
         int y = -topOffset;
@@ -435,7 +349,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         while (y < getHeight() && it.hasNext())
         {
             final Line line = it.next();
-            y += calculateHeight(line);
+            y += line.getHeight();
         }
         displayBottom = y <= getHeight() && !it.hasNext();
         render();
