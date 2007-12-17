@@ -1131,7 +1131,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("meta_element"))
                         {
-                            if (args.length < 12)
+                            if (args.length < 11)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1142,13 +1142,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureTcp = args[6].equals("null") ? null : getPicture(args[6]);
-                            final BufferedImage pictureUdp = args[7].equals("null") ? null : getPicture(args[7]);
-                            final Font font = fonts.lookup(args[8]);
-                            final GUIText text = lookupTextElement(args[9]);
-                            final AbstractLabel label = lookupLabelElement(args[10]);
-                            final int id = parseInt(args[11]);
-                            final String format = parseText(args, 12, lnr);
-                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, pictureUdp, font, text, label, id, format));
+                            final Font font = fonts.lookup(args[7]);
+                            final GUIText text = lookupTextElement(args[8]);
+                            final AbstractLabel label = lookupLabelElement(args[9]);
+                            final int id = parseInt(args[10]);
+                            final String format = parseText(args, 11, lnr);
+                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, font, text, label, id, format));
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
@@ -1741,7 +1740,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             {
                 throw new IOException("'"+args[argc]+"' cannot become active");
             }
-            params = new GUICommand.ScrollNextParameter(window, (ActivatableGUIElement)nextElement);
+            params = new GUICommand.ScrollNextParameter((ActivatableGUIElement)nextElement);
         }
         else
         {

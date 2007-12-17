@@ -30,12 +30,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
 public class MusicWatcher
 {
     /**
-     * The name of the currently playing sound clip, or <code>"NONE"</code> if
-     * none is active.
-     */
-    private String music = "NONE";
-
-    /**
      * The crossfire stats listener attached to {@link #stats}.
      */
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener()

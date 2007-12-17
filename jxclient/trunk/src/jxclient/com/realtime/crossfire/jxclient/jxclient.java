@@ -53,7 +53,7 @@ public class jxclient
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
-        final jxclient game = new jxclient(args);
+        new jxclient(args);
     }
 
     /**

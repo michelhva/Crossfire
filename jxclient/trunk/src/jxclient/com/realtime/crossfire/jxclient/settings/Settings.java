@@ -30,7 +30,6 @@ import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.regex.Pattern;
 
 /**
  * Maintains a set of key/value pairs. The values are stored in a flat file.
@@ -43,11 +42,6 @@ public class Settings
      * The file for loading/saving values.
      */
     private final File file;
-
-    /**
-     * Pattern to ignore in path names.
-     */
-    private static final Pattern patternIgnore = Pattern.compile("[\\[].*");
 
     /**
      * The stored values. Maps key name to value.

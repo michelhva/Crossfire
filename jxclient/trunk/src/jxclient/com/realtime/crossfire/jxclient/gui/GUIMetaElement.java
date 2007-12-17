@@ -42,8 +42,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 {
     private final BufferedImage tcpImage;
 
-    private final BufferedImage udpImage;
-
     private final Font font;
 
     private final GUIText text;
@@ -78,11 +76,10 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     };
 
-    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final BufferedImage udpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format)
+    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format)
     {
         super(jxcWindow, name, x, y, w, h);
         this.tcpImage = tcpImage;
-        this.udpImage = udpImage;
         this.font = font;
         this.text = text;
         this.comment = comment;
