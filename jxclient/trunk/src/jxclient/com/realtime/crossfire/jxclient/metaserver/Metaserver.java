@@ -46,24 +46,24 @@ public class Metaserver
 
     private static final int metaserver_port = 13326;
 
-    private static final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
+    private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
     /**
      * All registered metaserver listeners.
      */
-    private static final List<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
+    private final List<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of listeners.
      */
-    private static final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
+    private final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
 
     /**
      * Do not query th metaserver before time time has been reached. This is to
      * prevent unneccessary queries. It also prevents getting empty results
      * from the metaserver.
      */
-    private static long nextQuery = System.currentTimeMillis();
+    private long nextQuery = System.currentTimeMillis();
 
     /**
      * Return an metaserver entry by index.
@@ -73,7 +73,7 @@ public class Metaserver
      * @return The metaserver entry, or <code>null</code> if the index is
      * invalid.
      */
-    public static synchronized MetaserverEntry getEntry(final int index)
+    public synchronized MetaserverEntry getEntry(final int index)
     {
         try
         {
@@ -90,12 +90,12 @@ public class Metaserver
      *
      * @return The number of metaserver entries.
      */
-    public static synchronized int size()
+    public synchronized int size()
     {
         return metalist.size();
     }
 
-    public static synchronized void query()
+    public synchronized void query()
     {
         if (nextQuery > System.currentTimeMillis())
         {
@@ -176,7 +176,7 @@ public class Metaserver
      *
      * @param entry The metaserver response lines to parse.
      */
-    private static void parseEntry(final String entry)
+    private void parseEntry(final String entry)
     {
         final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(entry);
         if (metaserverEntry == null)
@@ -192,7 +192,7 @@ public class Metaserver
      *
      * @param listener The listener to add.
      */
-    public static void addMetaserverListener(final MetaserverListener listener)
+    public void addMetaserverListener(final MetaserverListener listener)
     {
         metaserverListeners.add(listener);
     }
@@ -202,7 +202,7 @@ public class Metaserver
      *
      * @param listener The listener to add.
      */
-    public static void removeMetaserverListener(final MetaserverListener listener)
+    public void removeMetaserverListener(final MetaserverListener listener)
     {
         metaserverListeners.remove(listener);
     }
@@ -214,7 +214,7 @@ public class Metaserver
      *
      * @param listener The listener to add.
      */
-    public static void addMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    public void addMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
     {
         getMetaserverEntryListeners(index).add(listener);
     }
@@ -226,7 +226,7 @@ public class Metaserver
      *
      * @param listener The listener to add.
      */
-    public static void removeMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    public void removeMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
     {
         getMetaserverEntryListeners(index).remove(listener);
     }
@@ -238,7 +238,7 @@ public class Metaserver
      *
      * @return The listsners list.
      */
-    private static synchronized List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
+    private synchronized List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
     {
         final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
         if (existingListeners != null)

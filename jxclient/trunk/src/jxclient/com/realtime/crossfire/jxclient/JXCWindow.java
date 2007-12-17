@@ -173,6 +173,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
 
     /**
+     * The metaserver instance for this window.
+     */
+    private final Metaserver metaserver = new Metaserver();
+
+    /**
      * The mouse tracker.
      */
     private final MouseTracker mouseTracker;
@@ -526,7 +531,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             SoundManager.instance.mute(Sounds.CHARACTER, true);
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
             showGUIMeta();
-            Metaserver.query();
+            metaserver.query();
             break;
 
         case GUI_MAIN:
@@ -1515,10 +1520,20 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * Return the current spell manager instance for this window.
      *
-     * @return the current spell manager instance for this window.
+     * @return The current spell manager instance for this window.
      */
     public final CurrentSpellManager getCurrentSpellManager()
     {
         return currentSpellManager;
+    }
+
+    /**
+     * Return the metaserver instance for this window.
+     *
+     * @return The metaserver instance for this window.
+     */
+    public final Metaserver getMetaserver()
+    {
+        return metaserver;
     }
 }
