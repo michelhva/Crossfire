@@ -192,7 +192,7 @@ public class GUILog extends GUIElement implements GUIScrollable
      * @param backgroundImage The background image; may be <code>null</code> if
      * unused.
      *
-     * @param Fonts The <code>Fonts</code> instance for looking up fonts.
+     * @param fonts The <code>Fonts</code> instance for looking up fonts.
      *
      * @param defaultColor The default color to use for text message not
      * specifying a color.
