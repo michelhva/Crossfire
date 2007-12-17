@@ -1,5 +1,8 @@
 2007-12-17  Andreas Kirschbaum
 
+	* Cache metaserver information; use it if the metaserver is not
+	available or if a server disappears from the metaserver.
+
 	* Do not query metaserver too often.
 
 2007-12-16  Andreas Kirschbaum

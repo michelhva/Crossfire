@@ -84,4 +84,29 @@ public class MetaserverEntryParser
 
         return new MetaserverEntry(ipAddress, updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds);
     }
+
+    /**
+     * Format a metaserver entry that returns the metaserver entry when parse
+     * with {@link #parse(MetaserverEntry)}.
+     *
+     * @param entry The metaserver entry to format.
+     *
+     * @return The formatted entry.
+     */
+    public static String format(final MetaserverEntry entry)
+    {
+        return entry.getIpAddress()+"|"+entry.getUpdateSeconds()+"|"+replace(entry.getHostname())+"|"+entry.getPlayers()+"|"+replace(entry.getVersion())+"|"+replace(entry.getComment())+"|"+entry.getBytesIn()+"|"+entry.getBytesOut()+"|"+entry.getUptimeSeconds();
+    }
+
+    /**
+     * Replace characters with may cause parsing issues.
+     *
+     * @param str The string to replace.
+     *
+     * @return The replaced string.
+     */
+    private static String replace(final String str)
+    {
+        return str.replaceAll("[\\|\r\n]", " ");
+    }
 }
