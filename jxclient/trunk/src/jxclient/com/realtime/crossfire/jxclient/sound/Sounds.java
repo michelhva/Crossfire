@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
-import java.io.File;
-
 /**
  * Manages all sounds.
  *

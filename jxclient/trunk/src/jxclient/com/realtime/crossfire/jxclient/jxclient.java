@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
-import java.io.File;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much

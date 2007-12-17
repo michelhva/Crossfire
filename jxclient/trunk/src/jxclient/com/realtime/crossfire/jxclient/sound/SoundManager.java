@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
-import java.io.File;
 import java.util.EnumSet;
 
 /**

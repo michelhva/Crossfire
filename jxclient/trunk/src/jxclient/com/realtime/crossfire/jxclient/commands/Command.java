@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
-
 /**
  * Implements a client-side command.
  *
