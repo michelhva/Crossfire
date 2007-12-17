@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import java.io.IOException;
-
 /**
  * One of the two most important classes, ServerConnection performs most of the
  * network-related work. It either decodes commands sent by the server itself,
