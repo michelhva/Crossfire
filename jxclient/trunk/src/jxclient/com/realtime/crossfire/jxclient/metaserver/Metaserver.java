@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.metaserver;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.net.Socket;
@@ -42,11 +43,21 @@ public class Metaserver
      */
     public static final long MIN_QUERY_INTERVAL = 30;
 
+    /**
+     * The time (in seconds) to forget about old metaserver entries.
+     */
+    public static final long EXPIRE_INTERVAL = 60*60*24*2;
+
     private static final String metaserver_name = "crossfire.real-time.com";
 
     private static final int metaserver_port = 13326;
 
     private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
+
+    /**
+     * The cached metaserver entries.
+     */
+    private final ServerCache serverCache;
 
     /**
      * All registered metaserver listeners.
@@ -64,6 +75,16 @@ public class Metaserver
      * from the metaserver.
      */
     private long nextQuery = System.currentTimeMillis();
+
+    /**
+     * Create a new instance.
+     *
+     * @param metaserverCacheFile The metaserver cache file.
+     */
+    public Metaserver(final File metaserverCacheFile)
+    {
+        serverCache = new ServerCache(metaserverCacheFile);
+    }
 
     /**
      * Return an metaserver entry by index.
@@ -112,7 +133,10 @@ public class Metaserver
             }
         }
 
-        parseEntry("127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
+        serverCache.expire(EXPIRE_INTERVAL*1000);
+        final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
+
+        parseEntry(oldEntries, "127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
         try
         {
             final Socket socket = new Socket(metaserver_name, metaserver_port);
@@ -131,7 +155,7 @@ public class Metaserver
                             {
                                 break;
                             }
-                            parseEntry(entry);
+                            parseEntry(oldEntries, entry);
                         }
                     }
                     finally
@@ -153,6 +177,10 @@ public class Metaserver
         {
             // ignore (but keep already parsed entries)
         }
+
+        // add previously known entries that are not anymore present
+        metalist.addAll(oldEntries.values());
+
         Collections.sort(metalist);
 
         nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
@@ -169,14 +197,18 @@ public class Metaserver
                 metaserverEntryListener.entryAdded();
             }
         }
+
+        serverCache.save();
     }
 
     /**
      * Parse a metaserver response line and add an entry to {@link #metalist}.
      *
+     * @param oldEntries Previously known metaserver entries.
+     *
      * @param entry The metaserver response lines to parse.
      */
-    private void parseEntry(final String entry)
+    private void parseEntry(final Map<String, MetaserverEntry> oldEntries, final String entry)
     {
         final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(entry);
         if (metaserverEntry == null)
@@ -185,6 +217,8 @@ public class Metaserver
             return;
         }
         metalist.add(metaserverEntry);
+        oldEntries.remove(ServerCache.makeKey(metaserverEntry));
+        serverCache.put(metaserverEntry);
     }
 
     /**

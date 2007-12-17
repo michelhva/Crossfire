@@ -111,6 +111,24 @@ public class Filenames
     }
 
     /**
+     * Return the metaserver cache file.
+     *
+     * @return The metaserver cache file, or <code>null</code> if the file
+     * cannot be accessed.
+     */
+    public static File getMetaserverCacheFile()
+    {
+        try
+        {
+            return getSettingsFile("metaserver.txt");
+        }
+        catch (final IOException ex)
+        {
+            return null;
+        }
+    }
+
+    /**
      * Return a file within the settings directory.
      *
      * @param filename The filename.

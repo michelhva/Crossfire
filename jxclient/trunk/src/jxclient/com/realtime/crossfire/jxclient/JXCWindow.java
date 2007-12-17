@@ -175,7 +175,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The metaserver instance for this window.
      */
-    private final Metaserver metaserver = new Metaserver();
+    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile());
 
     /**
      * The mouse tracker.
