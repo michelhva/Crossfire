@@ -142,6 +142,5 @@ public abstract class AbstractLabel extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, backgroundColor == null ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
-        final Graphics2D g = mybuffer.createGraphics();
     }
 }

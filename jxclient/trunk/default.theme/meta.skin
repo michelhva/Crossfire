@@ -6,14 +6,14 @@ picture background 0 0 1024 768 metaserver
 text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect
 commandlist_add command_metaconnect metaurl CONNECT
 label_html metacomment 200 650 600 118 font_description WHITE
-meta_element metaselect1 300 250 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 0 P:%P L:%U - %H - %C
-meta_element metaselect2 300 280 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 1 P:%P L:%U - %H - %C
-meta_element metaselect3 300 310 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 2 P:%P L:%U - %H - %C
-meta_element metaselect4 300 340 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 3 P:%P L:%U - %H - %C
-meta_element metaselect5 300 370 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 4 P:%P L:%U - %H - %C
-meta_element metaselect6 300 400 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 5 P:%P L:%U - %H - %C
-meta_element metaselect7 300 430 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 6 P:%P L:%U - %H - %C
-meta_element metaselect8 300 460 440 20 metaentry_tcp metaentry_udp font_metaurl16 metaurl metacomment 7 P:%P L:%U - %H - %C
+meta_element metaselect1 300 250 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 0 P:%P L:%U - %H - %C
+meta_element metaselect2 300 280 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 1 P:%P L:%U - %H - %C
+meta_element metaselect3 300 310 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 2 P:%P L:%U - %H - %C
+meta_element metaselect4 300 340 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 3 P:%P L:%U - %H - %C
+meta_element metaselect5 300 370 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 4 P:%P L:%U - %H - %C
+meta_element metaselect6 300 400 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 5 P:%P L:%U - %H - %C
+meta_element metaselect7 300 430 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 6 P:%P L:%U - %H - %C
+meta_element metaselect8 300 460 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 7 P:%P L:%U - %H - %C
 
 commandlist_add command_metaup metaselect1 SCROLLUP
 commandlist_add command_metaup metaselect2 SCROLLUP

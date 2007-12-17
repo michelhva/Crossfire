@@ -31,11 +31,6 @@ import com.realtime.crossfire.jxclient.skills.SkillListener;
 public class SkillGaugeUpdater extends GaugeUpdater
 {
     /**
-     * The skill to monitor.
-     */
-    private final Skill skill;
-
-    /**
      * The {@link SkillListener} registered to be notified about skill changes.
      */
     private final SkillListener skillListener = new SkillListener()
@@ -70,7 +65,6 @@ public class SkillGaugeUpdater extends GaugeUpdater
     public SkillGaugeUpdater(final ExperienceTable experienceTable, final Skill skill)
     {
         super(experienceTable);
-        this.skill = skill;
         skill.addSkillListener(skillListener);
     }
 }

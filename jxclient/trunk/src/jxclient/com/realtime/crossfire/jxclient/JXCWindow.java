@@ -479,7 +479,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             setTitle(TITLE_PREFIX);
         }
 
-        final int prevGuiId = guiId;
         this.guiId = guiId;
 
         if (this.guiId == GUI_MAIN)

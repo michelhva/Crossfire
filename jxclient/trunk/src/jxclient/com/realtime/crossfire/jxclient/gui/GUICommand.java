@@ -216,22 +216,16 @@ public class GUICommand
      */
     public static class ScrollNextParameter
     {
-        /** The window to operate on. */
-        private final JXCWindow window;
-
         /** The dialog to close. */
         private final ActivatableGUIElement nextElement;
 
         /**
          * Create a new instance.
          *
-         * @param window The window to operate on.
-         *
          * @param nextElement The element to activate.
          */
-        public ScrollNextParameter(final JXCWindow window, final ActivatableGUIElement nextElement)
+        public ScrollNextParameter(final ActivatableGUIElement nextElement)
         {
-            this.window = window;
             this.nextElement = nextElement;
         }
     }
