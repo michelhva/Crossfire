@@ -134,7 +134,7 @@ public class Buffer implements Iterable<Line>
      */
     private int calculateHeight(final Line line)
     {
-        int totalHeight = 0;
+        int height = 0;
         int x = 0;
         int minY = 0;
         int maxY = 0;
@@ -149,9 +149,9 @@ public class Buffer implements Iterable<Line>
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {
-                updateAttributes(line, beginIndex, i, totalHeight, minY, maxY);
+                updateAttributes(line, beginIndex, i, height, minY, maxY);
 
-                totalHeight += maxY-minY;
+                height += maxY-minY;
                 x = 0;
                 minY = 0;
                 maxY = 0;
@@ -159,7 +159,7 @@ public class Buffer implements Iterable<Line>
             }
 
             segment.setX(x);
-            segment.setY(totalHeight);
+            segment.setY(height);
             segment.setWidth(width);
 
             x += width;
@@ -167,10 +167,10 @@ public class Buffer implements Iterable<Line>
             maxY = (int)Math.max(maxY, Math.round(rect.getY()+rect.getHeight()));
         }
 
-        updateAttributes(line, beginIndex, imax, totalHeight, minY, maxY);
-        totalHeight += maxY-minY;
+        updateAttributes(line, beginIndex, imax, height, minY, maxY);
+        height += maxY-minY;
 
-        return totalHeight;
+        return height;
     }
 
     /**
