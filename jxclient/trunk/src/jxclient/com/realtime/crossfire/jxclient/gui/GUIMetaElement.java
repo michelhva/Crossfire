@@ -90,7 +90,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.index = index;
         this.format = format;
         createBuffer();
-        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
+        jxcWindow.getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
@@ -99,7 +99,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     {
         super.render(g);
 
-        final MetaserverEntry metaEntry = Metaserver.getEntry(index);
+        final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         g.setFont(font);
@@ -156,23 +156,23 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     public void scrollUp()
     {
-        Metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
+        getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
         index--;
-        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
+        getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
     /** {@inheritDoc} */
     public boolean canScrollDown()
     {
-        return index+1 < Metaserver.size();
+        return index+1 < getJXCWindow().getMetaserver().size();
     }
 
     public void scrollDown()
     {
-        Metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
+        getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
         index++;
-        Metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
+        getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }
 
@@ -201,7 +201,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             return;
         }
 
-        final MetaserverEntry metaEntry = Metaserver.getEntry(index);
+        final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
         if (comment != null)
         {
             comment.setText(metaEntry != null ? metaEntry.getComment() : "");
