@@ -32,12 +32,16 @@ import java.util.Map;
 
 /**
  *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class Metaserver
 {
+    /**
+     * The minimal interval (in seconds) between two metasever queries.
+     */
+    public static final long MIN_QUERY_INTERVAL = 30;
+
     private static final String metaserver_name = "crossfire.real-time.com";
 
     private static final int metaserver_port = 13326;
@@ -53,6 +57,13 @@ public class Metaserver
      * All registered metaserver entry listeners. Maps entry index to list of listeners.
      */
     private static final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
+
+    /**
+     * Do not query th metaserver before time time has been reached. This is to
+     * prevent unneccessary queries. It also prevents getting empty results
+     * from the metaserver.
+     */
+    private static long nextQuery = System.currentTimeMillis();
 
     /**
      * Return an metaserver entry by index.
@@ -86,6 +97,11 @@ public class Metaserver
 
     public static synchronized void query()
     {
+        if (nextQuery > System.currentTimeMillis())
+        {
+            return;
+        }
+
         final int metalistSize = metalist.size();
         metalist.clear();
         for (int i = metalistSize-1; i >= 0; i--)
@@ -138,6 +154,8 @@ public class Metaserver
             // ignore (but keep already parsed entries)
         }
         Collections.sort(metalist);
+
+        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
 
         for (final MetaserverListener metaserverListener : metaserverListeners)
         {
