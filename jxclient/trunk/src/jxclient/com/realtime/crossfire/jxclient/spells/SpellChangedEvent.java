@@ -34,7 +34,7 @@ public class SpellChangedEvent extends EventObject
 
     private final Spell myspell;
 
-    public SpellChangedEvent(Object src, Spell sp)
+    public SpellChangedEvent(final Object src, final Spell sp)
     {
         super(src);
         myspell = sp;

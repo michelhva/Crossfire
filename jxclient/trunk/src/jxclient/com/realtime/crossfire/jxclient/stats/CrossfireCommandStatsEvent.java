@@ -34,7 +34,7 @@ public class CrossfireCommandStatsEvent extends EventObject
 
     private final Stats mystats;
 
-    public CrossfireCommandStatsEvent(Object src, Stats st)
+    public CrossfireCommandStatsEvent(final Object src, final Stats st)
     {
         super(src);
         mystats = st;
