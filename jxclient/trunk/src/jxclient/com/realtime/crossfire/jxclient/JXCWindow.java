@@ -461,7 +461,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         System.exit(0);
     }
 
-    public void changeGUI(final int guiId)
+    public synchronized void changeGUI(final int guiId)
     {
         if (this.guiId == guiId)
         {

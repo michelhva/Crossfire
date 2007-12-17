@@ -1,5 +1,7 @@
 2007-12-17  Andreas Kirschbaum
 
+	* Fix race condition when connecting to the server fails.
+
 	* Cache metaserver information; use it if the metaserver is not
 	available or if a server disappears from the metaserver.
 
