@@ -103,6 +103,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private final String semaphore_drawing = "semaphore_drawing";
 
+    private final String semaphoseChangeGui = "semaphore_change_gui";
+
     /**
      * The shortcuts for this window.
      */
@@ -466,77 +468,80 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         System.exit(0);
     }
 
-    public synchronized void changeGUI(final int guiId)
+    public void changeGUI(final int guiId)
     {
-        if (this.guiId == guiId)
+        synchronized (semaphoseChangeGui)
         {
-            return;
-        }
-
-        if (this.guiId == GUI_MAIN)
-        {
-            myserver.disconnect();
-            this.hostname = null;
-            this.port = 0;
-            ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
-            myserver.removeCrossfireQueryListener(this);
-            myserver.removeCrossfireDrawextinfoListener(this);
-            setTitle(TITLE_PREFIX);
-        }
-
-        this.guiId = guiId;
-
-        if (this.guiId == GUI_MAIN)
-        {
-            SoundManager.instance.mute(Sounds.CHARACTER, false);
-            myserver.addCrossfireDrawextinfoListener(this);
-            myserver.addCrossfireQueryListener(this);
-            setTitle(TITLE_PREFIX+" - "+hostname);
-            ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
-            ItemsList.getStats().reset();
-            myserver.connect(hostname, port, connectionListener);
-            Faces.setFacesCallback(myserver);
-        }
-
-        if (dialogDisconnect != null)
-        {
-            jxcWindowRenderer.closeDialog(dialogDisconnect);
-        }
-        if (dialogQuit != null)
-        {
-            jxcWindowRenderer.closeDialog(dialogQuit);
-        }
-        jxcWindowRenderer.closeDialog(queryDialog);
-
-        switch (guiId)
-        {
-        case GUI_START:
-            SoundManager.instance.muteMusic(true);
-            SoundManager.instance.mute(Sounds.CHARACTER, true);
-            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
-            if (DISABLE_START_GUI)
+            if (this.guiId == guiId)
             {
-                endRendering();
+                return;
             }
-            else
+
+            if (this.guiId == GUI_MAIN)
             {
-                showGUIStart();
+                myserver.disconnect();
+                this.hostname = null;
+                this.port = 0;
+                ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
+                myserver.removeCrossfireQueryListener(this);
+                myserver.removeCrossfireDrawextinfoListener(this);
+                setTitle(TITLE_PREFIX);
             }
-            break;
 
-        case GUI_METASERVER:
-            SoundManager.instance.muteMusic(true);
-            SoundManager.instance.mute(Sounds.CHARACTER, true);
-            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
-            showGUIMeta();
-            metaserver.query();
-            break;
+            this.guiId = guiId;
 
-        case GUI_MAIN:
-            SoundManager.instance.muteMusic(false);
-            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
-            showGUIMain();
-            break;
+            if (this.guiId == GUI_MAIN)
+            {
+                SoundManager.instance.mute(Sounds.CHARACTER, false);
+                myserver.addCrossfireDrawextinfoListener(this);
+                myserver.addCrossfireQueryListener(this);
+                setTitle(TITLE_PREFIX+" - "+hostname);
+                ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+                ItemsList.getStats().reset();
+                myserver.connect(hostname, port, connectionListener);
+                Faces.setFacesCallback(myserver);
+            }
+
+            if (dialogDisconnect != null)
+            {
+                jxcWindowRenderer.closeDialog(dialogDisconnect);
+            }
+            if (dialogQuit != null)
+            {
+                jxcWindowRenderer.closeDialog(dialogQuit);
+            }
+            jxcWindowRenderer.closeDialog(queryDialog);
+
+            switch (guiId)
+            {
+            case GUI_START:
+                SoundManager.instance.muteMusic(true);
+                SoundManager.instance.mute(Sounds.CHARACTER, true);
+                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
+                if (DISABLE_START_GUI)
+                {
+                    endRendering();
+                }
+                else
+                {
+                    showGUIStart();
+                }
+                break;
+
+            case GUI_METASERVER:
+                SoundManager.instance.muteMusic(true);
+                SoundManager.instance.mute(Sounds.CHARACTER, true);
+                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
+                showGUIMeta();
+                metaserver.query();
+                break;
+
+            case GUI_MAIN:
+                SoundManager.instance.muteMusic(false);
+                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
+                showGUIMain();
+                break;
+            }
         }
     }
 
