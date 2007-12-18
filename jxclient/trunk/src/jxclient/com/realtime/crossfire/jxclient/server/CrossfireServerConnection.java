@@ -781,7 +781,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             CfMapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
-                                    listener.updateFace(pixmap);
+                                listener.updateFace(pixmap);
                             }
                         }
                         return;
