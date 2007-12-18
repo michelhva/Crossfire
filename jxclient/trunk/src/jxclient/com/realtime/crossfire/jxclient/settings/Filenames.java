@@ -140,7 +140,7 @@ public class Filenames
     private static File getSettingsFile(final String filename) throws IOException
     {
         final File settingsDir = new File(getCrossfireFile(), "jxclient");
-        if (!settingsDir.exists() && !settingsDir.mkdir())
+        if (!settingsDir.exists() && !settingsDir.mkdirs())
         {
             throw new IOException("cannot create "+settingsDir);
         }
