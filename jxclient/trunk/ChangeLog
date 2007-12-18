@@ -1,3 +1,7 @@
+2007-12-18  Andreas Kirschbaum
+
+	* Add --debug-protocol option to log protocol messages.
+
 2007-12-17  Andreas Kirschbaum
 
 	* Fix race condition when connecting to the server fails.

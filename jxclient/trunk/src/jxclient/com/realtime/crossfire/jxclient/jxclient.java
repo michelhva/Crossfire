@@ -27,6 +27,10 @@ import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -74,6 +78,7 @@ public class jxclient
             boolean fullScreen = true;
             String server = null;
             boolean debugGui = false;
+            String debugProtocolFilename = null;
 
             // fix changed default skin name
             if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
@@ -125,6 +130,11 @@ public class jxclient
                 {
                     debugGui = true;
                 }
+                else if (args[i].equals("--debug-protocol") && i+1 < args.length)
+                {
+                    debugProtocolFilename = args[i+1];
+                    i++;
+                }
                 else
                 {
                     System.out.println("");
@@ -139,6 +149,8 @@ public class jxclient
                     System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                     System.out.println("                  windows.");
                     System.out.println(" --debug-gui    : Enable debugging of GUI elements.");
+                    System.out.println(" --debug-protocol <log-file>");
+                    System.out.println("                : Log messages exchanged with the server.");
                     System.exit(1);
                 }
             }
@@ -148,27 +160,60 @@ public class jxclient
             prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
 
-            final JXCWindow jxwin = new JXCWindow(debugGui, prefs);
-            try
-            {
-                jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
-            }
-            catch (final OptionException ex)
-            {
-                throw new AssertionError();
-            }
+	    final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
+	    try
+	    {
+		final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
+		try
+		{
+		    final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
+		    try
+		    {
+			final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs);
+			try
+			{
+			    jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
+			}
+			catch (final OptionException ex)
+			{
+			    throw new AssertionError();
+			}
 
-            SoundManager.instance = new SoundManager();
-            new StatsWatcher(ItemsList.getStats());
-            new MusicWatcher(jxwin.getCrossfireServerConnection());
-            new SoundWatcher(jxwin.getCrossfireServerConnection());
+			SoundManager.instance = new SoundManager();
+			new StatsWatcher(ItemsList.getStats());
+			new MusicWatcher(jxwin.getCrossfireServerConnection());
+			new SoundWatcher(jxwin.getCrossfireServerConnection());
 
-            jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            System.exit(1);
-        }
+			jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
+		    }
+		    finally
+		    {
+			if (debugProtocolBufferedWriter != null)
+			{
+			    debugProtocolBufferedWriter.close();
+			}
+		    }
+		}
+		finally
+		{
+		    if (debugProtocolOutputStreamWriter != null)
+		    {
+			debugProtocolOutputStreamWriter.close();
+		    }
+		}
+	    }
+	    finally
+	    {
+		if (debugProtocolFileOutputStream != null)
+		{
+		    debugProtocolFileOutputStream.close();
+		}
+	    }
+	}
+	catch (final IOException e)
+	{
+	    e.printStackTrace();
+	    System.exit(1);
+	}
     }
 }
