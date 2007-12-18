@@ -1343,7 +1343,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         else
                         {
                             final Animation animation = animations.get(face&0x1FFF);
-                            if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x7FFF));
+                            if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x1FFF));
                             CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3);
                         }
                         if (len == 3)
