@@ -1,5 +1,7 @@
 2007-12-18  Andreas Kirschbaum
 
+	* Fix deadlock when using --server option.
+
 	* Do not fail if ~/.crossfire does not exist.
 
 	* Add --debug-protocol option to log protocol messages.
