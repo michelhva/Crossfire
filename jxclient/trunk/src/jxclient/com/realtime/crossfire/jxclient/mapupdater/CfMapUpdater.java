@@ -386,6 +386,7 @@ public class CfMapUpdater
                     if (f != null && f.getID() == face)
                     {
                         map.dirty(x, y);
+                        map.setFace(x, y, z, f);
                         //l.add(map[x][y]);
                     }
                 }

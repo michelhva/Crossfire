@@ -1,5 +1,7 @@
 2007-12-18  Andreas Kirschbaum
 
+	* Fix display issues with uncached multi-tile images.
+
 	* Fix deadlock when using --server option.
 
 	* Do not fail if ~/.crossfire does not exist.
