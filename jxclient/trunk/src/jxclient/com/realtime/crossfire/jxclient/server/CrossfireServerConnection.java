@@ -604,6 +604,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             pos++;
                         }
                         final String string = new String(packet, startPos, pos-startPos, utf8);
+                        pos++;
                         // XXX: ExtendedInfoSet command not implemented
                     }
                     while (pos < end);
