@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-12-18 tchize
 endmsg
 end
 arch dungeon_magic
@@ -3332,47 +3332,7 @@ end
 arch guildmaster
 name Sigmund
 msg
-@match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality
-A bed to reality is the way you quit
-the crossfire world to get back to
-your real life. While you are in
-real life, your character is asleep.
-Nothing can happens to it. But
-beware! If you use a bed to
-reality all items you could have
-left on the ground may disappear
-or be stolen by other players. If
-you want to keep them with you,
-they must be put in your inventory
-or in your permanent apartments.
-You can not use a bed to reality
-until you have earned at least
-one experience point. You must
-use a bed to reality at least
-once to have you character saved.
-You can find beds to reality
-just southwest of here.
-You may also want to get
-extra information on how to
-apply an object in crossfire.
-@match *
-Hello, dear newbie. I am a NPC.
-This mean you can interact with
-me. To do this, just speak with me.
-Like all NPCs in crossfire, i react
-to some words you could say when
-you are near me (using the
-'say <message>' command).
-If you want some additional
-information, just ask me.
-I know everything about what
-you should do next, where to heal,
-how to bind keys, how to use items,
-beds to reality and experience.
-Would you like me to tell you
-about beds to reality? That's one
-of the most important things in
-crossfire.
+
 endmsg
 x 11
 y 7
@@ -3381,6 +3341,11 @@ resist_magic 100
 weight 50000000
 friendly 1
 stand_still 1
+arch event_say
+name start/sigmund.msg
+title Python
+slaying /python/misc/npc_dialog.py
+end
 end
 arch dungeon_magic
 x 11
