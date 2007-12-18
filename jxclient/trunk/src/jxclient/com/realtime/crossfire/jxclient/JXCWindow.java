@@ -99,7 +99,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final ExperienceTable experienceTable = new ExperienceTable();
 
-    private final CrossfireServerConnection myserver = new CrossfireServerConnection(experienceTable);
+    private final CrossfireServerConnection myserver;
 
     private final String semaphore_drawing = "semaphore_drawing";
 
@@ -154,7 +154,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The poison watcher to synthesize "poisoned" events.
      */
-    private final PoisonWatcher poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
+    private final PoisonWatcher poisonWatcher;
 
     /**
      * The commands instance for this window.
@@ -293,12 +293,17 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @param debugGui Whether GUI elements should be highlighted.
      *
+     * @param debugProtocol If non-<code>null</code>, write all protocol
+     * commands to this appender.
+     *
      * @param settings The settings instance to use.
      */
-    public JXCWindow(final boolean debugGui, final Settings settings)
+    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings)
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
+        myserver = new CrossfireServerConnection(experienceTable, debugProtocol);
+        poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
