@@ -799,6 +799,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             }
                             final int pixmap = Faces.setImage(face, set, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
+                            for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
+                            {
+                                listener.updateFace(pixmap);
+                            }
                         }
                         return;
                     }
