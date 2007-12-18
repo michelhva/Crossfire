@@ -291,7 +291,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * Create a new instance.
      *
-     * @param boolean Whether GUI elements should be highlighted.
+     * @param debugGui Whether GUI elements should be highlighted.
      *
      * @param settings The settings instance to use.
      */
