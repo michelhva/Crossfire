@@ -166,7 +166,7 @@ class Dialog:
             return 1
         keys=string.split(keyword,"|")
         for ckey in keys:
-            if ckey==string.lower(msg):
+            if string.find(msg,ckey)!=-1:
                 return 1
         return 0
 

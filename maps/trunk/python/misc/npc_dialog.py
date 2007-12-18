@@ -18,7 +18,10 @@
 #
 #
 # This is a simple script that make use of CFDialog.py and receive it's
-# parameters from a JSON inside the event message
+# parameters from a JSON inside the event message. Alternativey, the JSON
+# parameters, if >= 4096 characters, can be stored in a file that will be
+# loaded. Use the classical script parameter to specify relative location
+# of dialog.
 # exemple
 #{
 #  "location" : "test_grandpa_01",
@@ -50,6 +53,7 @@
 # The match is the rule to apply to what user says
 
 import Crossfire
+import os
 
 from CFDialog import DialogRule, Dialog
 
@@ -57,7 +61,18 @@ import cjson
 event = Crossfire.WhatIsEvent()
 player = Crossfire.WhoIsActivator()
 npc = Crossfire.WhoAmI()
-parameters = cjson.decode(event.Message)
+if (Crossfire.ScriptParameters() != None):
+    filename = os.path.join(Crossfire.DataDirectory(),Crossfire.MapDirectory(),Crossfire.ScriptParameters())
+    try:
+        f = open(filename,'rb')
+    except:
+        raise 'Unable to read %s' % filename
+    else:
+        Crossfire.Log(Crossfire.LogDebug,"Reading from file %s" %filename)
+        parameters=cjson.decode(f.read())
+        f.close()
+else:
+    parameters = cjson.decode(event.Message)
 location = parameters["location"];
 speech = Dialog(player, npc, location)
 index=0;
