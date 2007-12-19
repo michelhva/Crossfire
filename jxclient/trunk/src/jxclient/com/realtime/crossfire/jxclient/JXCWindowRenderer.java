@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import java.awt.Color;
@@ -64,7 +65,7 @@ public class JXCWindowRenderer
      */
     private boolean currentGuiChanged = false;
 
-    private Gui currentGui = new Gui();
+    private Gui currentGui;
 
     /**
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
@@ -110,6 +111,7 @@ public class JXCWindowRenderer
     public JXCWindowRenderer(final JXCWindow jxcWindow)
     {
         this.jxcWindow = jxcWindow;
+        currentGui = new Gui(jxcWindow);
     }
 
     public void init(final int w, final int h, final int b, final int f)
@@ -210,7 +212,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        currentGui = new Gui();
+        currentGui = new Gui(jxcWindow);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -274,6 +276,7 @@ public class JXCWindowRenderer
             return false;
         }
 
+        dialog.setAutoCloseOnDeactivate(null);
         if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return false;
@@ -464,6 +467,11 @@ public class JXCWindowRenderer
     {
         if (openDialogs.remove(dialog))
         {
+            final ActivatableGUIElement activeElement = dialog.getActiveElement();
+            if (activeElement != null)
+            {
+                activeElement.setActive(false);
+            }
             openDialogsChanged = true;
         }
     }
@@ -486,9 +494,15 @@ public class JXCWindowRenderer
 
         if (openDialogs.remove(dialog))
         {
+            final ActivatableGUIElement activeElement = dialog.getActiveElement();
+            if (activeElement != null)
+            {
+                activeElement.setActive(false);
+            }
             return false;
         }
 
+        dialog.setAutoCloseOnDeactivate(null);
         openDialogs.add(dialog);
         dialog.activateDefaultElement();
         return true;

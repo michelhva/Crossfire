@@ -110,9 +110,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Shortcuts shortcuts = new Shortcuts(this);
 
-    private Gui queryDialog = new Gui();
+    private Gui queryDialog = new Gui(this);
 
-    private Gui keybindDialog = new Gui();
+    private Gui keybindDialog = new Gui(this);
 
     /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
@@ -1351,6 +1351,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (textArea3 != null)
             {
                 openDialog(dialog);
+                dialog.setAutoCloseOnDeactivate(textArea3);
                 return textArea3;
             }
         }
