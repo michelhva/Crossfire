@@ -179,14 +179,14 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         dialogs.clear();
         images.clear();
-        addDialog("keybind");
-        addDialog("query");
-        addDialog("book");
-        addDialog("main");
-        addDialog("meta");
-        addDialog("quit");
-        addDialog("disconnect");
-        addDialog("start");
+        addDialog("keybind", p);
+        addDialog("query", p);
+        addDialog("book", p);
+        addDialog("main", p);
+        addDialog("meta", p);
+        addDialog("quit", p);
+        addDialog("disconnect", p);
+        addDialog("start", p);
         commandLists.clear();
         fonts.clear();
         textButtonFactory = null;
@@ -214,7 +214,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
     }
 
-    private Gui addDialog(final String name)
+    private Gui addDialog(final String name, final JXCWindow window)
     {
         try
         {
@@ -222,7 +222,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui();
+            final Gui gui = new Gui(window);
             try
             {
                 dialogs.insert(name, gui);
@@ -1698,7 +1698,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            params = new GUICommand.DialogOpenParameter(window, addDialog(args[argc]));
+            params = new GUICommand.DialogOpenParameter(window, addDialog(args[argc], window));
         }
         else if (command == GUICommand.Command.DIALOG_TOGGLE)
         {
@@ -1707,7 +1707,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            params = new GUICommand.DialogToggleParameter(window, addDialog(args[argc]));
+            params = new GUICommand.DialogToggleParameter(window, addDialog(args[argc], window));
         }
         else if (command == GUICommand.Command.DIALOG_CLOSE)
         {
@@ -1716,7 +1716,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            params = new GUICommand.DialogCloseParameter(window, addDialog(args[argc]));
+            params = new GUICommand.DialogCloseParameter(window, addDialog(args[argc], window));
         }
         else if (command == GUICommand.Command.GUI_EXECUTE_COMMAND)
         {

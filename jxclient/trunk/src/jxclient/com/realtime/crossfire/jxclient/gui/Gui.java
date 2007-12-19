@@ -41,6 +41,11 @@ import java.util.List;
 public class Gui
 {
     /**
+     * The window this gui belongs to.
+     */
+    private final JXCWindow jxcWindow;
+
+    /**
      * The list of {@link GUIElement}s comprising this gui.
      */
     private final List<GUIElement> elements = new CopyOnWriteArrayList<GUIElement>();
@@ -80,6 +85,24 @@ public class Gui
      * The y-offset for drawing gui elements inside this gui.
      */
     private int y = 0;
+
+    /**
+     * If non-<code>null</code>, auto-close this dialog if this gui element
+     * becomes inactive.
+     */
+    private ActivatableGUIElement autoCloseOnDeactivate = null;
+
+    /**
+     * Create a new instance.
+     *
+     * @param jxcWindow The window this gui belongs to.
+     */
+    public Gui(final JXCWindow jxcWindow)
+    {
+        if (jxcWindow == null) throw new IllegalArgumentException();
+
+        this.jxcWindow = jxcWindow;
+    }
 
     public void setPosition(final int x, final int y)
     {
@@ -122,6 +145,7 @@ public class Gui
     public void add(final GUIElement element)
     {
         if (element.getGui() != null) throw new IllegalArgumentException();
+        if (element.getJXCWindow() != jxcWindow) throw new IllegalArgumentException();
 
         elements.add(element);
         element.setGui(this);
@@ -272,12 +296,17 @@ public class Gui
      */
     public void updateActiveElement(final ActivatableGUIElement activeElement)
     {
-        if (this.activeElement != null)
+        if (this.activeElement != null && this.activeElement != activeElement)
         {
             this.activeElement.setActive(false);
         }
 
-        this.activeElement = activeElement;
+        this.activeElement = activeElement.isActive() ? activeElement : null;
+        if (autoCloseOnDeactivate != null && autoCloseOnDeactivate == activeElement && !activeElement.isActive())
+        {
+            autoCloseOnDeactivate = null;
+            jxcWindow.getWindowRenderer().closeDialog(this);
+        }
     }
 
     /**
@@ -305,10 +334,6 @@ public class Gui
             if (activeElement instanceof KeyListener)
             {
                 ((KeyListener)activeElement).keyPressed(e);
-                if (!activeElement.isActive())
-                {
-                    activeElement = null;
-                }
                 return true;
             }
             else if (activeElement instanceof AbstractButton)
@@ -348,10 +373,6 @@ public class Gui
             if (activeElement instanceof KeyListener)
             {
                 ((KeyListener)activeElement).keyTyped(e);
-                if (!activeElement.isActive())
-                {
-                    activeElement = null;
-                }
                 return true;
             }
         }
@@ -451,5 +472,23 @@ public class Gui
     public boolean isHidden(final JXCWindowRenderer.GuiState state)
     {
         return hideInStates.contains(state);
+    }
+
+    /**
+     * Automatically close this gui element if the given gui element is
+     * deactivated.
+     *
+     * @param activatableGUIElement The gui element to monitor.
+     */
+    public void setAutoCloseOnDeactivate(final ActivatableGUIElement activatableGUIElement)
+    {
+        if (activatableGUIElement == null || !activatableGUIElement.isActive())
+        {
+            autoCloseOnDeactivate = null;
+        }
+        else
+        {
+            autoCloseOnDeactivate = activatableGUIElement;
+        }
     }
 }
