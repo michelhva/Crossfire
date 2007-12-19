@@ -160,60 +160,60 @@ public class jxclient
             prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
 
-	    final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
-	    try
-	    {
-		final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
-		try
-		{
-		    final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
-		    try
-		    {
-			final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs);
-			try
-			{
-			    jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
-			}
-			catch (final OptionException ex)
-			{
-			    throw new AssertionError();
-			}
+            final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
+            try
+            {
+                final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
+                try
+                {
+                    final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
+                    try
+                    {
+                        final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs);
+                        try
+                        {
+                            jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
+                        }
+                        catch (final OptionException ex)
+                        {
+                            throw new AssertionError();
+                        }
 
-			SoundManager.instance = new SoundManager();
-			new StatsWatcher(ItemsList.getStats());
-			new MusicWatcher(jxwin.getCrossfireServerConnection());
-			new SoundWatcher(jxwin.getCrossfireServerConnection());
+                        SoundManager.instance = new SoundManager();
+                        new StatsWatcher(ItemsList.getStats());
+                        new MusicWatcher(jxwin.getCrossfireServerConnection());
+                        new SoundWatcher(jxwin.getCrossfireServerConnection());
 
-			jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
-		    }
-		    finally
-		    {
-			if (debugProtocolBufferedWriter != null)
-			{
-			    debugProtocolBufferedWriter.close();
-			}
-		    }
-		}
-		finally
-		{
-		    if (debugProtocolOutputStreamWriter != null)
-		    {
-			debugProtocolOutputStreamWriter.close();
-		    }
-		}
-	    }
-	    finally
-	    {
-		if (debugProtocolFileOutputStream != null)
-		{
-		    debugProtocolFileOutputStream.close();
-		}
-	    }
-	}
-	catch (final IOException e)
-	{
-	    e.printStackTrace();
-	    System.exit(1);
-	}
+                        jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
+                    }
+                    finally
+                    {
+                        if (debugProtocolBufferedWriter != null)
+                        {
+                            debugProtocolBufferedWriter.close();
+                        }
+                    }
+                }
+                finally
+                {
+                    if (debugProtocolOutputStreamWriter != null)
+                    {
+                        debugProtocolOutputStreamWriter.close();
+                    }
+                }
+            }
+            finally
+            {
+                if (debugProtocolFileOutputStream != null)
+                {
+                    debugProtocolFileOutputStream.close();
+                }
+            }
+        }
+        catch (final IOException e)
+        {
+            e.printStackTrace();
+            System.exit(1);
+        }
     }
 }
