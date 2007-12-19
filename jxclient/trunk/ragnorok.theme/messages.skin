@@ -13,7 +13,7 @@ log_color log 11 #e0c000
 button slider_up    586-4-16 40          16 16 slider_up_up slider_up_down true command_messages_up
 button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down
 
-command_text command 4 200-4-16 578 24   command_active empty font_label GRAY BLACK 0
+command_text command 4 200-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1
 
 commandlist_add command_messages_up log SCROLLUP
 commandlist_add command_messages_down log SCROLLDOWN
