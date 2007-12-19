@@ -76,9 +76,11 @@ public class MouseTracker implements MouseInputListener
     /** {@inheritDoc} */
     public void mouseDragged(final MouseEvent e)
     {
-        assert mouseElement != null;
-        mouseElement.mouseMoved(e);
-        mouseElement.mouseDragged(e);
+        if (mouseElement != null)
+        {
+            mouseElement.mouseMoved(e);
+            mouseElement.mouseDragged(e);
+        }
     }
 
     /** {@inheritDoc} */
