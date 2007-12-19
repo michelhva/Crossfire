@@ -1,5 +1,5 @@
 
-dialog border 262  55 408 280
+dialog border 262  55 408 280 _
 dialog_state plain_dialog_status false Whether the status dialog is open.
 dialog_hide START META LOGIN
 label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
@@ -52,3 +52,5 @@ label_stat stat_dam    240 190  40  16 font_label BLACK DAM RIGHT
 label_stat stat_wc     240 210  40  16 font_label BLACK WC RIGHT
 label_stat stat_arm    240 230  40  16 font_label BLACK ARM RIGHT
 label_stat stat_ac     240 250  40  16 font_label BLACK AC RIGHT
+
+ignore border_title

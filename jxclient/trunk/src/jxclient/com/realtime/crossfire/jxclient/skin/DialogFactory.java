@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.gui.GUIDialogTitle;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
@@ -208,8 +209,13 @@ public class DialogFactory
         result.add(new GUIPicture(jxcWindow, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE, alpha));
         if (titleHeight > 0)
         {
-            result.add(new GUIPicture(jxcWindow, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC));
-            result.add(new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, GUILabel.Alignment.LEFT, title));
+            result.add(new GUIDialogTitle(jxcWindow, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC));
+            if (!title.equals("_"))
+            {
+                final GUIOneLineLabel titleLabel = new GUIOneLineLabel(jxcWindow, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, GUILabel.Alignment.LEFT, title);
+                result.add(titleLabel);
+                titleLabel.setIgnore();
+            }
         }
         return result;
     }

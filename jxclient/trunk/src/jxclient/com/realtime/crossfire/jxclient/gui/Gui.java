@@ -87,6 +87,16 @@ public class Gui
     private int y = 0;
 
     /**
+     * The width of the dialog.
+     */
+    private int w = 1;
+
+    /**
+     * The height of the dialog.
+     */
+    private int h = 1;
+
+    /**
      * If non-<code>null</code>, auto-close this dialog if this gui element
      * becomes inactive.
      */
@@ -104,15 +114,38 @@ public class Gui
         this.jxcWindow = jxcWindow;
     }
 
-    public void setPosition(final int x, final int y)
+    /**
+     * Set the size of this dialog.
+     *
+     * @param w The width.
+     *
+     * @param h The height.
+     */
+    public void setSize(final int w, final int h)
     {
-        if (this.x == x && this.y == y)
+        if (w <= 0 || h <= 0) throw new IllegalArgumentException();
+
+        if (this.w == w && this.h == h)
         {
             return;
         }
 
-        this.x = x;
-        this.y = y;
+        this.w = w;
+        this.h = h;
+        hasChangedElements = true;
+    }
+
+    public void setPosition(final int x, final int y)
+    {
+        final int newX = Math.max(Math.min(x, jxcWindow.getWindowWidth()-w), 0);
+        final int newY = Math.max(Math.min(y, jxcWindow.getWindowHeight()-h), 0);
+        if (this.x == newX && this.y == newY)
+        {
+            return;
+        }
+
+        this.x = newX;
+        this.y = newY;
         hasChangedElements = true;
     }
 

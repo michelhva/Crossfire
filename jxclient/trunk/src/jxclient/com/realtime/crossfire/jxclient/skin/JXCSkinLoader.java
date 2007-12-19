@@ -679,6 +679,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 elements.insert(element.getName(), element);
                             }
+                            gui.setSize(w, h);
                             gui.setPosition(x, y);
                         }
                         else if (gui != null && args[0].equals("dialog_hide"))
