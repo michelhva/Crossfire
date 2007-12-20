@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2007-12-08 Kevin Bulgrien
+Modified: 2007-12-19 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -1443,10 +1443,14 @@ end
 arch hills
 x 7
 y 13
+smoothlevel 15
+move_block swim boat
 end
 arch hills
 x 7
 y 14
+smoothlevel 15
+move_block swim boat
 end
 arch grass
 x 7
@@ -1663,17 +1667,22 @@ arch sea
 x 8
 y 11
 end
-arch brush
+arch beach
 x 8
 y 12
+smoothlevel 30
+move_block swim boat
 end
 arch brush
 x 8
 y 13
+smoothlevel 30
+move_block swim boat
 end
 arch cwall_2_2_2
 x 8
 y 13
+smoothlevel 25
 end
 arch brush
 x 8
@@ -1894,26 +1903,25 @@ arch sea
 x 9
 y 11
 end
-arch woodfloor2
-name woodfloor
-x 9
-y 12
-end
-arch tower_tob
+arch lighthouse
 name South Lighthouse
 slaying /santo_dominion/magara/south_lighthouse/floor_1
 hp 16
 sp 1
 x 9
-y 12
+y 11
 end
-arch light4
+arch beach
 x 9
 y 12
+smoothlevel 90
+move_block swim boat
 end
 arch brush
 x 9
 y 13
+smoothlevel 25
+move_block swim boat
 end
 arch cwall_1_3
 x 9
@@ -2114,7 +2122,7 @@ arch sea
 x 10
 y 11
 end
-arch brush
+arch beach
 x 10
 y 12
 end
@@ -2125,6 +2133,8 @@ end
 arch brush
 x 10
 y 13
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_1_1
 x 10
@@ -2133,6 +2143,8 @@ end
 arch brush
 x 10
 y 14
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_1_1
 x 10
@@ -2141,6 +2153,8 @@ end
 arch brush
 x 10
 y 15
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_2_1
 x 10
@@ -2317,30 +2331,29 @@ arch brush
 x 11
 y 5
 end
-arch brush
-x 11
-y 6
-end
 arch cwall_1_4
 x 11
-y 6
+y 5
 end
-arch woodfloor2
-name woodfloor
+arch beach
 x 11
-y 7
+y 6
+smoothlevel 30
+move_block swim boat
 end
-arch tower_tob
+arch lighthouse
 name North Lighthouse
 slaying /santo_dominion/magara/north_lighthouse/floor_1
 hp 14
 sp 1
 x 11
-y 7
+y 6
 end
-arch light4
+arch beach
 x 11
 y 7
+smoothlevel 30
+move_block swim boat
 end
 arch sea
 x 11
@@ -2573,15 +2586,11 @@ arch brush
 x 12
 y 5
 end
-arch cwall_2_2_2
+arch cwall_2_1_2
 x 12
 y 5
 end
 arch brush
-x 12
-y 6
-end
-arch dwall_2_2_4
 x 12
 y 6
 end
@@ -3082,6 +3091,8 @@ end
 arch grass
 x 14
 y 13
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_1_2
 x 14
@@ -3310,6 +3321,8 @@ end
 arch grass
 x 15
 y 13
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_1_2
 x 15
@@ -3561,6 +3574,8 @@ end
 arch grass
 x 16
 y 13
+smoothlevel 10
+move_block swim boat
 end
 arch pier_2_2_4
 x 16
