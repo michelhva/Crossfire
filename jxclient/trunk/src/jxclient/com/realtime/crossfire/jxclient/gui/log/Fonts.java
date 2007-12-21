@@ -29,24 +29,24 @@ import java.awt.Font;
 public class Fonts
 {
     /**
-     * The font to use for {@link Segment.FontId#PRINT}, {@link
-     * Segment.FontId#HAND}, and {@link Segment.FontId#STRANGE} text.
+     * The font to use for {@link Segment.FontID#PRINT}, {@link
+     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
      */
     private final Font fontPrint;
 
     /**
-     * The font to use for {@link Segment.FontId#FIXED} text.
+     * The font to use for {@link Segment.FontID#FIXED} text.
      */
     private final Font fontFixed;
 
     /**
-     * The font to use for {@link Segment.FontId#FIXED} text which has bold
+     * The font to use for {@link Segment.FontID#FIXED} text which has bold
      * enabled.
      */
     private final Font fontFixedBold;
 
     /**
-     * The font to use for {@link Segment.FontId#ARCANE} text.
+     * The font to use for {@link Segment.FontID#ARCANE} text.
      */
     private final Font fontArcane;
 
@@ -75,8 +75,8 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontId#PRINT}, {@link
-     * Segment.FontId#HAND}, and {@link Segment.FontId#STRANGE} text.
+     * Return the font to use for {@link Segment.FontID#PRINT}, {@link
+     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
      *
      * @return The font.
      */
@@ -86,7 +86,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontId#FIXED} text.
+     * Return the font to use for {@link Segment.FontID#FIXED} text.
      *
      * @return The font.
      */
@@ -96,7 +96,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontId#FIXED} text which has
+     * Return the font to use for {@link Segment.FontID#FIXED} text which has
      * bold enabled.
      *
      * @return The font.
@@ -107,7 +107,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontId#ARCANE} text.
+     * Return the font to use for {@link Segment.FontID#ARCANE} text.
      *
      * @return The font.
      */
