@@ -110,6 +110,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Shortcuts shortcuts = new Shortcuts(this);
 
+    /**
+     * Terminate the application if set.
+     */
+    private boolean terminated = false;
+
     private Gui queryDialog = new Gui(this);
 
     private Gui keybindDialog = new Gui(this);
@@ -461,13 +466,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void endRendering()
     {
-        jxcWindowRenderer.endRendering();
-        saveShortcuts();
-        saveKeybindings();
-        DialogStateParser.save(myskin, jxcWindowRenderer);
-        optionManager.saveOptions();
-        SoundManager.instance.shutdown();
-        System.exit(0);
+        terminated = true;
     }
 
     public void changeGUI(final int guiId)
@@ -573,22 +572,35 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         try
         {
             initRendering(fullScreen);
-            if (server != null)
+            try
             {
-                connect(server, 13327);
-            }
-            else
-            {
-                changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
-            }
-            for (;;)
-            {
-                synchronized(semaphore_drawing)
+                if (server != null)
                 {
-                    jxcWindowRenderer.redrawGUI();
+                    connect(server, 13327);
                 }
-                Thread.sleep(10);
+                else
+                {
+                    changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+                }
+                while (!terminated)
+                {
+                    synchronized(semaphore_drawing)
+                    {
+                        jxcWindowRenderer.redrawGUI();
+                    }
+                    Thread.sleep(10);
+                }
             }
+            finally
+            {
+                jxcWindowRenderer.endRendering();
+            }
+
+            saveShortcuts();
+            saveKeybindings();
+            DialogStateParser.save(myskin, jxcWindowRenderer);
+            optionManager.saveOptions();
+            SoundManager.instance.shutdown();
         }
         catch (final Exception e)
         {
