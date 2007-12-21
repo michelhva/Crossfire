@@ -38,6 +38,11 @@ import java.util.ListIterator;
 public class Buffer implements Iterable<Line>
 {
     /**
+     * The listeners to notify about changes.
+     */
+    private final List<BufferListener> listeners = new ArrayList<BufferListener>();
+
+    /**
      * The {@link Fonts} instance for looking up fonts.
      */
     private final Fonts fonts;
@@ -82,6 +87,7 @@ public class Buffer implements Iterable<Line>
     {
         line.setHeight(calculateHeight(line));
         lines.add(line);
+        fireChangedEvent();
     }
 
     /**
@@ -199,6 +205,27 @@ public class Buffer implements Iterable<Line>
             segment.setHeight(maxY-minY);
             segment.setY(y-minY);
             segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
+        }
+    }
+
+    /**
+     * Add a listener to notify of changes.
+     *
+     * @param listener The listener.
+     */
+    public void addBufferListener(final BufferListener listener)
+    {
+        listeners.add(listener);
+    }
+
+    /**
+     * Notify all listeners about changed lines.
+     */
+    private void fireChangedEvent()
+    {
+        for (final BufferListener listener : listeners)
+        {
+            listener.linesChanged();
         }
     }
 }
