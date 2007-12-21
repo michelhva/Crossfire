@@ -117,6 +117,7 @@ public class Parser
         {
             parseLine(line, defaultColor, buffer);
         }
+        buffer.prune();
     }
 
     /**
@@ -143,6 +144,7 @@ public class Parser
         {
             parseLineWithoutMediaTags(line, buffer);
         }
+        buffer.prune();
     }
 
     /**

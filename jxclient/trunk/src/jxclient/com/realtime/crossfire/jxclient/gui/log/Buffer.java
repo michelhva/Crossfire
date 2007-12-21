@@ -38,6 +38,11 @@ import java.util.ListIterator;
 public class Buffer implements Iterable<Line>
 {
     /**
+     * The maximum number of lines the buffer can hold.
+     */
+    public static final int MAX_LINES = 250;
+
+    /**
      * The listeners to notify about changes.
      */
     private final List<BufferListener> listeners = new ArrayList<BufferListener>();
@@ -87,6 +92,18 @@ public class Buffer implements Iterable<Line>
     {
         line.setHeight(calculateHeight(line));
         lines.add(line);
+        fireChangedEvent();
+    }
+
+    /**
+     * Prune excess lines.
+     */
+    public void prune()
+    {
+        while (lines.size() > MAX_LINES)
+        {
+            lines.remove(0);
+        }
         fireChangedEvent();
     }
 
