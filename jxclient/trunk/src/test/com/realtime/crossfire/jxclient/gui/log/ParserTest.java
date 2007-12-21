@@ -20,6 +20,16 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.image.BufferedImage;
+import java.awt.Transparency;
+import java.io.FileInputStream;
+import java.io.IOException;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -278,10 +288,26 @@ public class ParserTest extends TestCase
     }
 
     /** {@inheritDoc} */
-    public void setUp()
+    public void setUp() throws FontFormatException, IOException
     {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        final BufferedImage image = gconf.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
+        final Graphics2D g = image.createGraphics();
         parser = new Parser();
-        buffer = new Buffer();
+        final Font font;
+        final FileInputStream fis = new FileInputStream("default.theme/fonts/regular.ttf");
+        try
+        {
+            font = Font.createFont(Font.TRUETYPE_FONT, fis);
+        }
+        finally
+        {
+            fis.close();
+        }
+        buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
+        g.dispose();
     }
 
     /**
@@ -360,7 +386,7 @@ public class ParserTest extends TestCase
         {
             sb.append("(underline)");
         }
-        dumpFont(segment.getFont(), sb);
+        dumpFont(segment.getFontID(), sb);
         final Color color = segment.getColor();
         if (color != null)
         {
@@ -377,9 +403,9 @@ public class ParserTest extends TestCase
      *
      * @return The string representation.
      */
-    public void dumpFont(final Segment.Font font, final StringBuilder sb)
+    public void dumpFont(final Segment.FontID font, final StringBuilder sb)
     {
-        if (font == Segment.Font.PRINT)
+        if (font == Segment.FontID.PRINT)
         {
             // ignore
             return;
