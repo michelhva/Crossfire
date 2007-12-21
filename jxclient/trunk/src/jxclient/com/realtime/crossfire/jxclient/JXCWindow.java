@@ -454,6 +454,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void initRendering(final boolean fullScreen)
     {
         jxcWindowRenderer.initRendering(fullScreen);
+        DialogStateParser.load(myskin, jxcWindowRenderer);
         loadKeybindings();
         loadShortcuts();
     }
@@ -463,6 +464,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         jxcWindowRenderer.endRendering();
         saveShortcuts();
         saveKeybindings();
+        DialogStateParser.save(myskin, jxcWindowRenderer);
         optionManager.saveOptions();
         SoundManager.instance.shutdown();
         System.exit(0);

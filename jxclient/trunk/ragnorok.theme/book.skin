@@ -1,5 +1,5 @@
 
-dialog border 192 184 640 400 Book
+dialog border 192 184 640 400 false Book
 button button_close 620 4 16 16 close_up close_down false command_book_close
 
 label_drawextinfo book_text 4 40 632 400-40-4-8-18-8 font_label DARK_GRAY

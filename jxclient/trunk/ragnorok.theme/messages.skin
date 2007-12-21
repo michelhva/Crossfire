@@ -1,6 +1,5 @@
 
-dialog border 4 522 586 208 Messages
-dialog_state plain_dialog_messages true Whether the messages dialog is open.
+dialog border 4 522 586 208 true Messages
 dialog_hide START META LOGIN
 button button_close 566 4 16 16 close_up close_down false command_messages
 

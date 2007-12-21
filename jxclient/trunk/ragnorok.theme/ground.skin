@@ -1,6 +1,5 @@
 
-dialog border -5 731 1034 42
-dialog_state plain_dialog_ground true Whether the ground view is open.
+dialog border -5 731 1034 42 true
 dialog_hide START META LOGIN
 
 button button_left     5 5 16 32 scroll_left_up scroll_left_down true command_ground_left

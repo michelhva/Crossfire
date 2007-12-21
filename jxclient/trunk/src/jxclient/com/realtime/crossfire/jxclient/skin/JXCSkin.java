@@ -36,6 +36,14 @@ public interface JXCSkin extends Iterable<Gui>
     void load(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
 
     /**
+     * Return a short name for the skin. It is used to construct path or file
+     * names.
+     *
+     * @return The skin name.
+     */
+    String getSkinName();
+
+    /**
      * Return all gui instances of this skin. The instances has no defined
      * order.
      *
@@ -66,6 +74,15 @@ public interface JXCSkin extends Iterable<Gui>
     Gui getMainInterface();
     Gui getMetaInterface();
     Gui getStartInterface();
+
+    /**
+     * Return a dialog by name.
+     *
+     * @param name The dialog's name.
+     *
+     * @return The dialog, or <code>null</code> if the dialog does not exist.
+     */
+    Gui getDialog(final String name);
 
     /**
      * Execute the "event init" commands.

@@ -1,6 +1,5 @@
 
-dialog border 212 340 520 176 Inventory
-dialog_state plain_dialog_inventory false Whether the inventory dialog is open.
+dialog border 212 340 520 176 true Inventory
 dialog_hide START META LOGIN
 button button_close  500    4   16 16 close_up close_down false command_inventory
 

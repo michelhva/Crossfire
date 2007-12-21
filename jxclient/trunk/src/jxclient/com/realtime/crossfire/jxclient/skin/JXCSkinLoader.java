@@ -65,7 +65,6 @@ import com.realtime.crossfire.jxclient.magicmap.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
-import com.realtime.crossfire.jxclient.settings.options.DialogStatusOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
@@ -133,6 +132,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
 
     /**
+     * The skin name.
+     */
+    private String skinName = "unknown";
+
+    /**
      * The text button factory. Set to <code>null</code> until defined.
      */
     private TextButtonFactory textButtonFactory = null;
@@ -175,8 +179,10 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
     }
 
+    /** {@inheritDoc} */
     public void load(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
     {
+        skinName = "unknown";
         dialogs.clear();
         images.clear();
         addDialog("keybind", p);
@@ -194,14 +200,15 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global.skin", s, p, null);
+            load("global", "global.skin", s, p, null);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name+".skin", s, p, gui);
+                load(name, name+".skin", s, p, gui);
+                gui.setStateChanged(false);
             }
         }
         finally
@@ -212,6 +219,12 @@ public abstract class JXCSkinLoader implements JXCSkin
             checkBoxFactory = null;
             images.clear();
         }
+    }
+
+    /** {@inheritDoc} */
+    public String getSkinName()
+    {
+        return skinName;
     }
 
     private Gui addDialog(final String name, final JXCWindow window)
@@ -239,22 +252,69 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public Gui getDialogQuit()
     {
-        try
-        {
-            return dialogs.lookup("quit");
-        }
-        catch (final JXCSkinException ex)
-        {
-            return null;
-        }
+        return getDialog("quit");
     }
 
     /** {@inheritDoc} */
     public Gui getDialogDisconnect()
     {
+        return getDialog("disconnect");
+    }
+
+    /** {@inheritDoc} */
+    public Gui getDialogKeyBind()
+    {
+        final Gui result = getDialog("keybind");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getDialogQuery()
+    {
+        final Gui result = getDialog("query");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getDialogBook(int booknr)
+    {
+        final Gui result = getDialog("book");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getMainInterface()
+    {
+        final Gui result = getDialog("main");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getMetaInterface()
+    {
+        final Gui result = getDialog("meta");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getStartInterface()
+    {
+        final Gui result = getDialog("start");
+        assert result != null;
+        return result;
+    }
+
+    /** {@inheritDoc} */
+    public Gui getDialog(final String name)
+    {
         try
         {
-            return dialogs.lookup("disconnect");
+            return dialogs.lookup(name);
         }
         catch (final JXCSkinException ex)
         {
@@ -262,86 +322,10 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
     }
 
-    /** {@inheritDoc} */
-    public Gui getDialogKeyBind()
-    {
-        try
-        {
-            return dialogs.lookup("keybind");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
-    /** {@inheritDoc} */
-    public Gui getDialogQuery()
-    {
-        try
-        {
-            return dialogs.lookup("query");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
-    /** {@inheritDoc} */
-    public Gui getDialogBook(int booknr)
-    {
-        try
-        {
-            return dialogs.lookup("book");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
-    /** {@inheritDoc} */
-    public Gui getMainInterface()
-    {
-        try
-        {
-            return dialogs.lookup("main");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
-    /** {@inheritDoc} */
-    public Gui getMetaInterface()
-    {
-        try
-        {
-            return dialogs.lookup("meta");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
-    /** {@inheritDoc} */
-    public Gui getStartInterface()
-    {
-        try
-        {
-            return dialogs.lookup("start");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError(ex.getMessage());
-        }
-    }
-
     /**
      * Load a skin file and add the entries to a {@link Gui} instance.
+     *
+     * @param dialogName The key to identify this dialog.
      *
      * @param resourceName The name of the skin resource; used to construct
      * error messages.
@@ -354,7 +338,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String resourceName, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
         elements.clear();
         try
@@ -362,7 +346,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             final InputStream inputStream = getInputStream(resourceName);
             try
             {
-                load(resourceName, inputStream, server, window, gui);
+                load(dialogName, resourceName, inputStream, server, window, gui);
             }
             finally
             {
@@ -406,6 +390,8 @@ public abstract class JXCSkinLoader implements JXCSkin
     /**
      * Load a skin file and add the entries to a {@link Gui} instance.
      *
+     * @param dialogName The key to identify this dialog.
+     *
      * @param resourceName The name of the skin resource; used to construct
      * error messages.
      *
@@ -419,7 +405,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -659,7 +645,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("dialog"))
                         {
-                            if (args.length < 6)
+                            if (args.length < 7)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -674,10 +660,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final String title = parseText(args, 6, lnr);
+                            final boolean saveDialog = parseBoolean(args[6]);
+                            final String title = parseText(args, 7, lnr);
                             for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
                             {
                                 elements.insert(element.getName(), element);
+                            }
+                            if (saveDialog)
+                            {
+                                gui.setName(dialogName);
                             }
                             gui.setSize(w, h);
                             gui.setPosition(x, y);
@@ -692,25 +683,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             for (int i = 1; i < args.length; i++)
                             {
                                 gui.hideInState(parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
-                            }
-                        }
-                        else if (gui != null && args[0].equals("dialog_state"))
-                        {
-                            if (args.length < 3)
-                            {
-                                throw new IOException("syntax error");
-                            }
-
-                            final String name = args[1];
-                            final boolean defaultValue = parseBoolean(args[2]);
-                            final String description = parseText(args, 3, lnr);
-                            try
-                            {
-                                window.getOptionManager().addOption(name, description, new DialogStatusOption(window, gui, defaultValue));
-                            }
-                            catch (final OptionException ex)
-                            {
-                                throw new IOException(ex.getMessage());
                             }
                         }
                         else if (args[0].equals("event"))
@@ -1191,6 +1163,21 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             gui.setModal(true);
+                        }
+                        else if (gui == null && args[0].equals("skin_name"))
+                        {
+                            if (args.length != 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String skinName = args[1];
+                            if (!skinName.matches("[-a-z_0-9]+"))
+                            {
+                                throw new IOException("invalid skin_name: "+skinName);
+                            }
+
+                            this.skinName = skinName;
                         }
                         else if (gui != null && args[0].equals("text"))
                         {

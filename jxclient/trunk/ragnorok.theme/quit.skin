@@ -1,5 +1,5 @@
 
-dialog dialog         418 260 4+180+4 4+120+4 Exit Crossfire?
+dialog dialog         418 260 4+180+4 4+120+4 false Exit Crossfire?
 set_modal
 
 label_multi message    10  40  168 40 font_label BLACK <<EOF

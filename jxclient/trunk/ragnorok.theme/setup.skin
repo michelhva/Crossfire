@@ -1,6 +1,5 @@
 
-dialog border                250 250 200 178 Setup
-dialog_state plain_dialog_setup false Whether the setup dialog is open.
+dialog border                250 250 200 178 false Setup
 dialog_hide START META LOGIN
 button button_close          180   4  16 16 close_up close_down false command_setup
 
