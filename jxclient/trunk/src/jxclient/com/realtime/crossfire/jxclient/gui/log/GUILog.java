@@ -139,7 +139,6 @@ public class GUILog extends GUIElement implements GUIScrollable
         public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
         {
             parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
-            render();
         }
     };
 
@@ -153,7 +152,6 @@ public class GUILog extends GUIElement implements GUIScrollable
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
             parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
-            render();
         }
     };
 
@@ -167,6 +165,17 @@ public class GUILog extends GUIElement implements GUIScrollable
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
             parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
+        }
+    };
+
+    /**
+     * The listener to re-render the window contents after changes.
+     */
+    private BufferListener bufferListener = new BufferListener()
+    {
+        /** {@inheritDoc} */
+        public void linesChanged()
+        {
             render();
         }
     };
@@ -207,6 +216,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
+        buffer.addBufferListener(bufferListener);
     }
 
     /** {@inheritDoc} */
