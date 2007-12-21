@@ -8,5 +8,6 @@ subtype 13
 body_skill -1
 exp 10
 level 150
+anim_suffix singing
 end
 
