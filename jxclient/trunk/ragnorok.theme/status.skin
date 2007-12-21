@@ -1,6 +1,5 @@
 
-dialog border 262  55 408 280 _
-dialog_state plain_dialog_status false Whether the status dialog is open.
+dialog border 262  55 408 280 true _
 dialog_hide START META LOGIN
 label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
 button button_close    388   4  16  16 close_up close_down false command_status

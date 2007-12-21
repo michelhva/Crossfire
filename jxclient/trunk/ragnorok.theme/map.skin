@@ -1,6 +1,5 @@
 
-dialog border 12 52 200 200
-dialog_state plain_dialog_map true Whether the map dialog is open.
+dialog border 12 52 200 200 true
 dialog_hide START META LOGIN
 
 magicmap magicmap 4 4 192 192

@@ -129,6 +129,20 @@ public class Filenames
     }
 
     /**
+     * Return the file for storing dialog related information for a skin.
+     *
+     * @param skinName Identifies the skin.
+     *
+     * @return The file.
+     *
+     * @throws IOException If the file cannot be accessed.
+     */
+    public static File getDialogsFile(final String skinName) throws IOException
+    {
+        return new File(getSettingsFile("skin_"+skinName), "dialogs.txt");
+    }
+
+    /**
      * Return a file within the settings directory.
      *
      * @param filename The filename.

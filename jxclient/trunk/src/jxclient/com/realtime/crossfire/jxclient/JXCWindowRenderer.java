@@ -282,6 +282,7 @@ public class JXCWindowRenderer
             return false;
         }
 
+        dialog.setStateChanged(true);
         if (!openDialogs.remove(dialog))
         {
             dialog.activateDefaultElement();
@@ -467,6 +468,7 @@ public class JXCWindowRenderer
     {
         if (openDialogs.remove(dialog))
         {
+            dialog.setStateChanged(true);
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null)
             {
@@ -491,6 +493,7 @@ public class JXCWindowRenderer
         }
 
         openDialogsChanged = true;
+        dialog.setStateChanged(true);
 
         if (openDialogs.remove(dialog))
         {

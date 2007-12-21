@@ -118,20 +118,6 @@ public class OptionManager
                     checkBoxOption.fireStateChangedEvent();
                 }
             }
-            else if (option instanceof DialogStatusOption)
-            {
-                final DialogStatusOption dialogStatusOption = (DialogStatusOption)option;
-                final boolean open = settings.getBoolean(optionName, dialogStatusOption.isDefaultOpen());
-                if (dialogStatusOption.isOpen() != open)
-                {
-                    dialogStatusOption.setOpen(open);
-                }
-                else
-                {
-                    // make sure the appropriate option command is executed
-                    dialogStatusOption.fireStateChangedEvent();
-                }
-            }
             else
             {
                 throw new AssertionError();
@@ -152,11 +138,6 @@ public class OptionManager
             {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
                 settings.putBoolean(optionName, checkBoxOption.isChecked());
-            }
-            else if (option instanceof DialogStatusOption)
-            {
-                final DialogStatusOption dialogStatusOption = (DialogStatusOption)option;
-                settings.putBoolean(optionName, dialogStatusOption.isOpen());
             }
             else
             {

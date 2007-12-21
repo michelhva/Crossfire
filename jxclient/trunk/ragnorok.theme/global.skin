@@ -1,3 +1,5 @@
+skin_name ragnorok
+
 font font_button         regular  14
 font font_label          regular  14
 font font_title          regular  16
@@ -29,8 +31,10 @@ commandlist command_status null DIALOG_TOGGLE status
 commandlist command_status_open null DIALOG_OPEN status
 commandlist command_status_close null DIALOG_CLOSE status
 commandlist command_ground null DIALOG_TOGGLE ground
+commandlist command_ground_open null DIALOG_OPEN ground
 commandlist command_inventory null DIALOG_TOGGLE inventory
 commandlist command_messages null DIALOG_TOGGLE messages
+commandlist command_messages_open null DIALOG_OPEN messages
 commandlist command_protections null DIALOG_TOGGLE protections
 commandlist command_skills null DIALOG_TOGGLE skills
 commandlist command_map null DIALOG_TOGGLE map
@@ -52,6 +56,10 @@ commandlist command_messages_up
 commandlist command_messages_down
 
 event magicmap command_map_open
+
+event init command_ground_open
+event init command_map_open
+event init command_messages_open
 
 key code F1 0 exec command_help
 key code F2 0 exec command_status

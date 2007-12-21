@@ -1,6 +1,5 @@
 
-dialog border                262 216 548 315 Skills
-dialog_state plain_dialog_skills false Whether the skills dialog is open.
+dialog border                262 216 548 315 true Skills
 dialog_hide START META LOGIN
 button button_close          528   4  16  16 close_up close_down false command_skills
 

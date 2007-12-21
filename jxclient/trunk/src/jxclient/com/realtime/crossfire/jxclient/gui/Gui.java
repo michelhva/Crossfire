@@ -89,12 +89,22 @@ public class Gui
     /**
      * The width of the dialog.
      */
-    private int w = 1;
+    private int w = 0;
 
     /**
      * The height of the dialog.
      */
-    private int h = 1;
+    private int h = 0;
+
+    /**
+     * The name of the dialog, or <code>null</code>.
+     */
+    private String name = null;
+
+    /**
+     * Whether the state (position or size) has changed.
+     */
+    private boolean stateChanged = false;
 
     /**
      * If non-<code>null</code>, auto-close this dialog if this gui element
@@ -115,7 +125,21 @@ public class Gui
     }
 
     /**
-     * Set the size of this dialog.
+     * Set the name of this dialog.
+     *
+     * @param name The name of the dialog.
+     */
+    public void setName(final String name)
+    {
+        if (name == null) throw new IllegalArgumentException();
+
+        this.name = name;
+    }
+
+    /**
+     * Mark this gui as a "dialog".
+     *
+     * @param name The name of the dialog.
      *
      * @param w The width.
      *
@@ -133,10 +157,13 @@ public class Gui
         this.w = w;
         this.h = h;
         hasChangedElements = true;
+        stateChanged = true;
     }
 
     public void setPosition(final int x, final int y)
     {
+        if (w == 0 || h == 0) throw new IllegalStateException();
+
         final int newX = Math.max(Math.min(x, jxcWindow.getWindowWidth()-w), 0);
         final int newY = Math.max(Math.min(y, jxcWindow.getWindowHeight()-h), 0);
         if (this.x == newX && this.y == newY)
@@ -147,6 +174,7 @@ public class Gui
         this.x = newX;
         this.y = newY;
         hasChangedElements = true;
+        stateChanged = true;
     }
 
     /**
@@ -476,6 +504,36 @@ public class Gui
     }
 
     /**
+     * The width of the dialog.
+     *
+     * @return The width, or <code>0</code> if this is not a dlalog.
+     */
+    public int getWidth()
+    {
+        return w;
+    }
+
+    /**
+     * The height of this dialog.
+     *
+     * @return The height, or <code>0</code> if this is not a dialog.
+     */
+    public int getHeight()
+    {
+        return h;
+    }
+
+    /**
+     * Return the name of the dialog.
+     *
+     * @return The name, or <code>null</code> if this is not a dialog.
+     */
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
      * Return the key bindings instance for this gui.
      *
      * @return The key bindings.
@@ -523,5 +581,25 @@ public class Gui
         {
             autoCloseOnDeactivate = activatableGUIElement;
         }
+    }
+
+    /**
+     * Return whether the state (position or size) has changed.
+     *
+     * @return Whether the state has changed.
+     */
+    public boolean isStateChanged()
+    {
+        return stateChanged;
+    }
+
+    /**
+     * Set whether the state (position or size) has changed.
+     *
+     * @param stateChanged Whether the state has changed.
+     */
+    public void setStateChanged(final boolean stateChanged)
+    {
+        this.stateChanged = stateChanged;
     }
 }
