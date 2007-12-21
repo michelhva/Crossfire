@@ -29,24 +29,24 @@ import java.awt.Font;
 public class Fonts
 {
     /**
-     * The font to use for {@link Segment.Font#PRINT}, {@link
-     * Segment.Font#HAND}, and {@link Segment.Font#STRANGE} text.
+     * The font to use for {@link Segment.FontId#PRINT}, {@link
+     * Segment.FontId#HAND}, and {@link Segment.FontId#STRANGE} text.
      */
     private final Font fontPrint;
 
     /**
-     * The font to use for {@link Segment.Font#FIXED} text.
+     * The font to use for {@link Segment.FontId#FIXED} text.
      */
     private final Font fontFixed;
 
     /**
-     * The font to use for {@link Segment.Font#FIXED} text which has bold
+     * The font to use for {@link Segment.FontId#FIXED} text which has bold
      * enabled.
      */
     private final Font fontFixedBold;
 
     /**
-     * The font to use for {@link Segment.Font#ARCANE} text.
+     * The font to use for {@link Segment.FontId#ARCANE} text.
      */
     private final Font fontArcane;
 
@@ -75,8 +75,8 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.Font#PRINT}, {@link
-     * Segment.Font#HAND}, and {@link Segment.Font#STRANGE} text.
+     * Return the font to use for {@link Segment.FontId#PRINT}, {@link
+     * Segment.FontId#HAND}, and {@link Segment.FontId#STRANGE} text.
      *
      * @return The font.
      */
@@ -86,7 +86,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.Font#FIXED} text.
+     * Return the font to use for {@link Segment.FontId#FIXED} text.
      *
      * @return The font.
      */
@@ -96,7 +96,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.Font#FIXED} text which has
+     * Return the font to use for {@link Segment.FontId#FIXED} text which has
      * bold enabled.
      *
      * @return The font.
@@ -107,7 +107,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.Font#ARCANE} text.
+     * Return the font to use for {@link Segment.FontId#ARCANE} text.
      *
      * @return The font.
      */
