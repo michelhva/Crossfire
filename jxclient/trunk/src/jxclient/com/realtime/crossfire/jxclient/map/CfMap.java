@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import java.awt.Point;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.ImageIcon;
 
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
@@ -252,9 +251,8 @@ public class CfMap
     {
         assert oldMapSquare != null;
 
-        final ImageIcon img = face.getImageIcon(false);
-        final int sx = (img.getIconWidth()+31)/32;
-        final int sy = (img.getIconHeight()+31)/32;
+        final int sx = face.getTileWidth();
+        final int sy = face.getTileHeight();
         for (int dx = 0; dx < sx; dx++)
         {
             for (int dy = 0; dy < sy; dy++)
@@ -288,9 +286,8 @@ public class CfMap
      */
     private void dirtyFace(final int x, final int y, final int layer, final Face face)
     {
-        final ImageIcon img = face.getImageIcon(false);
-        final int sx = (img.getIconWidth()+31)/32;
-        final int sy = (img.getIconHeight()+31)/32;
+        final int sx = face.getTileWidth();
+        final int sy = face.getTileHeight();
         for (int dx = 0; dx < sx; dx++)
         {
             for (int dy = 0; dy < sy; dy++)
