@@ -275,15 +275,18 @@ public class CfMap
     }
 
     /**
-     * Mark one face as "dirty". This means the face has to be redrawn.
+     * Mark one face as "dirty". This function is called when the head part
+     * becomes a fog-of-war tile. This means the face has to be redrawn.
      *
      * @param x The x-coordinate of the tail part of the face.
      *
      * @param y The y-coordinate of the tail part of the face.
      *
+     * @param layer The layer of the face.
+     *
      * @param face The face to mark dirty.
      */
-    private void dirtyFace(final int x, final int y, final Face face)
+    private void dirtyFace(final int x, final int y, final int layer, final Face face)
     {
         final ImageIcon img = face.getImageIcon(false);
         final int sx = (img.getIconWidth()+31)/32;
@@ -294,7 +297,14 @@ public class CfMap
             {
                 if (dx > 0 || dy > 0)
                 {
-                    dirty(x-dx, y-dy);
+                    if (isFogOfWar(x-dx, y-dy))
+                    {
+                        dirty(x-dx, y-dy);
+                    }
+                    else
+                    {
+                        setHeadMapSquare(x-dx, y-dy, layer, null);
+                    }
                 }
             }
         }
@@ -428,7 +438,7 @@ public class CfMap
             final Face face = patch[px][py].getFace(ox, oy, layer);
             if (face != null)
             {
-                dirtyFace(x, y, face);
+                dirtyFace(x, y, layer, face);
             }
         }
     }
