@@ -84,12 +84,19 @@ public class GUIMap extends GUIElement
             synchronized(mybuffer)
             {
                 final Graphics2D g = mybuffer.createGraphics();
-                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                try
                 {
-                    for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                    for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
                     {
-                        redrawSquare(g, x, y);
+                        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                        {
+                            redrawSquare(g, x, y);
+                        }
                     }
+                }
+                finally
+                {
+                    g.dispose();
                 }
             }
             setChanged();
@@ -415,9 +422,15 @@ public class GUIMap extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
         final Graphics2D g = mybuffer.createGraphics();
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, w, h);
-        g.dispose();
+        try
+        {
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 0, w, h);
+        }
+        finally
+        {
+            g.dispose();
+        }
         setChanged();
     }
 
