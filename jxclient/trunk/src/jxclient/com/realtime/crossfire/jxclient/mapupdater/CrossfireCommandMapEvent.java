@@ -34,16 +34,16 @@ public class CrossfireCommandMapEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private final List<CfMapSquare> mylist;
+    private final List<CfMapSquare> changedSquares;
 
-    public CrossfireCommandMapEvent(final Object src, final List<CfMapSquare> l)
+    public CrossfireCommandMapEvent(final Object src, final List<CfMapSquare> changedSquares)
     {
         super(src);
-        mylist = l;
+        this.changedSquares = changedSquares;
     }
 
     public List<CfMapSquare> getChangedSquares()
     {
-        return mylist;
+        return changedSquares;
     }
 }
