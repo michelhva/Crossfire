@@ -175,11 +175,28 @@ public class CfMapSquare
         // need to check individual values because the server sometimes sends a
         // "clear" command for already cleared squares; without this check the
         // black square would be displayed as fog-of-war
-        if (!fogOfWar && (darkness != 255 || faces[0] != null || faces[1] != null || faces[2] != null))
+        if (fogOfWar)
         {
-            fogOfWar = true;
-            dirty();
+            return;
         }
+        if (darkness == 255)
+        {
+            int layer;
+            for (layer = 0; layer < faces.length; layer++)
+            {
+                if (faces[layer] != null || heads[layer] != null)
+                {
+                    break;
+                }
+            }
+            if (layer >= faces.length)
+            {
+                return;
+            }
+        }
+
+        fogOfWar = true;
+        dirty();
     }
 
     /**
