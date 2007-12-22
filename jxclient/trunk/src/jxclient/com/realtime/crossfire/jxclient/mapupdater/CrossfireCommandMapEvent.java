@@ -24,24 +24,39 @@ import java.util.EventObject;
 import java.util.List;
 
 /**
+ * An event containing details about a map change event.
  *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class CrossfireCommandMapEvent extends EventObject
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
+    /**
+     * The map squares that have changed.
+     */
     private final List<CfMapSquare> changedSquares;
 
+    /**
+     * Create a new instance.
+     *
+     * @param src The source object. (unused)
+     *
+     * @param changedSquares The map squares that have changed.
+     */
     public CrossfireCommandMapEvent(final Object src, final List<CfMapSquare> changedSquares)
     {
         super(src);
         this.changedSquares = changedSquares;
     }
 
+    /**
+     * Return the map squares that have changed.
+     *
+     * @return The changed map squares.
+     */
     public List<CfMapSquare> getChangedSquares()
     {
         return changedSquares;
