@@ -229,6 +229,28 @@ public class Face
     }
 
     /**
+     * Return the width in tiles.
+     *
+     * @return The width.
+     */
+    public int getTileWidth()
+    {
+        final ImageIcon img = getImageIcon(false);
+        return (img.getIconWidth()+31)/32;
+    }
+
+    /**
+     * Return the height in tiles.
+     *
+     * @return The height.
+     */
+    public int getTileHeight()
+    {
+        final ImageIcon img = getImageIcon(false);
+        return (img.getIconHeight()+31)/32;
+    }
+
+    /**
      * Return the face name.
      *
      * @return The face name.
