@@ -1,3 +1,12 @@
+2007-12-22 tchize
+Add some dialog entries to sigmund, add a password to access scorn (forces newbies in training). No way back to newbie house aftre quitting it, forced into scorn.
+
+    start/newbieshouse
+    start/Nexus
+    start/sigmund.msg
+
+
+
 2007-12-18 tchize
 M    python/misc/npc_dialog.py
 M    python/CFDialog.py

@@ -18,9 +18,9 @@
   "match" : "fighter|barbarian|melee",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal",""]],
-  "msg" : ["Relying on your muscles? Don't overlook what magic can do for you. You can wear big armor (unless you are a race without torso? my eyes are not what they used to be), you can use shields and yet you find your way quickly in a pack of monsters. Be careful, when you are surrounded, you can't defend from all sides and you suffer more. A priest in you group can help you heal."]
+  "msg" : ["Relying on your muscles? Don't overlook what magic can do for you. You can wear big armor (unless you are a race without torso? My eyes are not what they used to be), you can use shields and yet you find your way quickly in a pack of monsters. Be careful, when you are surrounded, you can't defend from all sides and you suffer more. A priest in you group can help you heal."]
   }, {
-  "match" : "caster|mage",
+  "match" : "caster|mage|magic",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal",""]],
   "msg" : ["Ah, the magic! Stay away from it! If you really want to know, magic reside on some special body energy named \"mana\", that is converted to spell energy during casting. To know about such convertion you must be skilled in one of the various magical paths and use books or scrolls. With books you can learn spells, whereas scrol just react as a catalyser for your energy that gets destroyed after use. I heard some magical paths are antagonists."]
