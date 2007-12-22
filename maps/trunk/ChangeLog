@@ -1,4 +1,13 @@
 2007-12-22 tchize
+A    python/misc/doNothing.py
+M    python/misc/npc_dialog.py
+A    scorn/kar/gork.msg
+M    scorn/kar/gorks3
+M    scorn/kar/somehouse3
+A    scorn/kar/mork.msg
+Make the gork's treasure quest use python for npc dialog. It's now mandatory to go throught full dialog to get the treasure key, knowing password is not enough
+
+2007-12-22 tchize
 Add some dialog entries to sigmund, add a password to access scorn (forces newbies in training). No way back to newbie house aftre quitting it, forced into scorn.
 
     start/newbieshouse
