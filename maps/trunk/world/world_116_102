@@ -3,6 +3,9 @@ name world_116_102
 region darcap
 width 50
 height 50
+msg
+Modified: 2007-12-22 Kevin Bulgrien
+endmsg
 outdoor 1
 tile_path_1 world_116_101
 tile_path_2 world_117_102
@@ -8869,7 +8872,7 @@ x 32
 y 33
 elevation 0
 end
-arch city_tower_northwest
+arch lighthouse_northwest
 name Lighthouse
 x 32
 y 33
@@ -8878,10 +8881,6 @@ arch cobblestones2
 x 32
 y 34
 elevation 0
-end
-arch light4
-x 32
-y 34
 end
 arch sea
 x 32
