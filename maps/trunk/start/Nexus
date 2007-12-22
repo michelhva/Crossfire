@@ -11,6 +11,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2003-09-25 Avion
+Modified: 2007-12-22 tchize
 endmsg
 end
 arch blocked
@@ -1090,6 +1091,12 @@ y 12
 no_magic 1
 damned 1
 end
+arch marker
+slaying quest initial training end
+food 0
+x 6
+y 12
+end
 arch tile_white_floor
 x 6
 y 13
@@ -1256,6 +1263,10 @@ x 7
 y 12
 no_magic 1
 damned 1
+end
+arch grate_closed_2
+x 7
+y 12
 end
 arch tile_white_floor
 x 7
@@ -1440,6 +1451,24 @@ x 8
 y 12
 no_magic 1
 damned 1
+end
+arch magic_ear
+msg
+@match eureka
+Let's go to scorn
+endmsg
+x 8
+y 12
+connected 66
+end
+arch teleporter
+hp 5
+sp 12
+x 8
+y 12
+speed 0.0
+invisible 1
+connected 66
 end
 arch tile_white_floor
 x 8
@@ -1635,9 +1664,10 @@ end
 arch sign_w
 msg
 To Scorn
-Scorn is the best place for new players to start.
+Scorn is the best place for new players to start when they have already completed the beginners tutorial.
 Players starting in Scorn have a lot of ready options for adventuring.
 This does however mean that many others may be adventuring in the same areas.
+Password to get pass the gate is "eureka"
 endmsg
 x 9
 y 12
@@ -2156,12 +2186,6 @@ x 12
 y 12
 no_magic 1
 damned 1
-end
-arch marker
-slaying quest initial training end
-food 0
-x 12
-y 12
 end
 arch tile_white_floor
 x 12

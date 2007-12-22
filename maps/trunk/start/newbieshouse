@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2007-12-18 tchize
+Modified: 2007-12-22 tchize
 endmsg
 end
 arch dungeon_magic
@@ -2371,14 +2371,6 @@ the knowledge you learned
 in the tutorials to go outside.
 There is no way back. You
 can find beds to reality at Inns.
-One more thing:
-Some places will be inaccessible
-until you reach level 3. In the
-beginning, you won't be able to
-use magic or wisdom. When you
-are level 5 you can go to the city
-hall to get a teleporter for the
-famous city of Scorn.
 Never mind speaking with other
 players. The commands shout, say
 and tell are very useful. The
@@ -2994,7 +2986,7 @@ y 28
 end
 arch invis_exit
 slaying /start/Nexus
-hp 12
+hp 6
 sp 12
 x 9
 y 28
@@ -3262,7 +3254,7 @@ y 28
 end
 arch invis_exit
 slaying /start/Nexus
-hp 12
+hp 6
 sp 12
 x 10
 y 28
