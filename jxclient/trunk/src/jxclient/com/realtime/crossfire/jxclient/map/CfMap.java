@@ -625,11 +625,11 @@ public class CfMap
     /**
      * Increase the defined area of the map.
      *
-     * @param dx The increase in x-direction. dx<0 means "expand (-dx) tiles to
-     * the left", dx>0 means "expand (dx) tiles to the right".
+     * @param dx The increase in x-direction. dx&lt;0 means "expand (-dx) tiles
+     * to the left", dx&gt;0 means "expand (dx) tiles to the right".
      *
-     * @param dy The increase in y-direction. dy<0 means "expand (-dy) tiles to
-     * the top", dy>0 means "expand (dy) tiles to the bottom".
+     * @param dy The increase in y-direction. dy&lt;0 means "expand (-dy) tiles
+     * to the top", dy&gt;0 means "expand (dy) tiles to the bottom".
      */
     private void increase(final int dx, final int dy)
     {
