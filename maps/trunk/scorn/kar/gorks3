@@ -4,6 +4,9 @@ difficulty 1
 region scorn
 width 16
 height 16
+msg
+Modified: 2007-12-22 tchize
+endmsg
 end
 arch cobblestones2
 x 2
@@ -588,6 +591,11 @@ endmsg
 x 9
 y 8
 unaggressive 1
+arch event_say
+name scorn/kar/gork.msg
+title Python
+slaying /python/misc/npc_dialog.py
+end
 end
 arch cobblestones2
 x 9
