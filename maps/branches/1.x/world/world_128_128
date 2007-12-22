@@ -8,6 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-25
+Modified: 2007-12-22 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_128_127
@@ -5002,26 +5003,18 @@ x 19
 y 38
 elevation -3520
 end
-arch light4
-x 19
-y 39
-end
 arch sea
 x 19
 y 39
 elevation -4891
 end
-arch s_citytower
+arch s_lighthouse
 name Frozen Lighthouse
 slaying /whalingoutpost/lighthouse1
 hp 8
 sp 15
 x 19
 y 39
-end
-arch light3
-x 19
-y 40
 end
 arch s_mountain
 x 19
