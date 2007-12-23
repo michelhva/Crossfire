@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapEvent;
@@ -90,7 +91,7 @@ public class GUIMap extends GUIElement
                     {
                         for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
                         {
-                            redrawSquare(g, x, y);
+                            redrawSquare(g, CfMapUpdater.getMap(), x, y);
                         }
                     }
                 }
@@ -173,7 +174,7 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
                         {
-                            redrawSquare(g, xx, yy);
+                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
                     }
 
@@ -181,7 +182,7 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
                         {
-                            redrawSquare(g, xx, yy);
+                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
                     }
 
@@ -189,12 +190,12 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = 0; xx < x; xx++)
                         {
-                            redrawSquare(g, xx, yy);
+                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
 
                         for (int xx = x+w; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
                         {
-                            redrawSquare(g, xx, yy);
+                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
                     }
                 }
@@ -287,7 +288,7 @@ public class GUIMap extends GUIElement
         {
             for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
             {
-                redrawSquare(g, x, y);
+                redrawSquare(g, CfMapUpdater.getMap(), x, y);
             }
         }
     }
@@ -312,13 +313,15 @@ public class GUIMap extends GUIElement
      *
      * @param g The graphics to draw into.
      *
+     * @param map The map to redraw.
+     *
      * @param x The x-coordinate of the map tile to redraw.
      *
      * @param y The y-coordinate of the map tile to redraw.
      */
-    private void redrawSquare(final Graphics g, final int x, final int y)
+    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
     {
-        if (!CfMapUpdater.getMap().resetDirty(x, y))
+        if (!map.resetDirty(x, y))
         {
             return;
         }
@@ -326,14 +329,14 @@ public class GUIMap extends GUIElement
         cleanSquare(g, x, y);
         for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
         {
-            redrawSquare(g, x, y, layer);
+            redrawSquare(g, map, x, y, layer);
         }
-        if (CfMapUpdater.getMap().isFogOfWar(x, y))
+        if (map.isFogOfWar(x, y))
         {
             g.setColor(fogOfWarColor);
             g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
         }
-        final int darkness = CfMapUpdater.getMap().getDarkness(x, y);
+        final int darkness = map.getDarkness(x, y);
         if (darkness < 255)
         {
             g.setColor(getDarknessColor(darkness));
@@ -346,25 +349,27 @@ public class GUIMap extends GUIElement
      *
      * @param g The graphics to draw into.
      *
+     * @param map The map to redraw.
+     *
      * @param x The x coordinate of the square to redraw.
      *
      * @param y The y coordinate of the square to redraw.
      *
      * @param layer The layer to redraw.
      */
-    private void redrawSquare(final Graphics g, final int x, final int y, final int layer)
+    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
     {
         final int px = x*mysquaresize;
         final int py = y*mysquaresize;
 
-        final CfMapSquare headMapSquare = CfMapUpdater.getMap().getHeadMapSquare(x, y, layer);
+        final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
         if (headMapSquare != null)
         {
             final Face headFace = headMapSquare.getFace(layer);
             assert headFace != null; // getHeadMapSquare() would have been cleared in this case
             final ImageIcon img = headFace.getImageIcon(use_big_images);
-            final int dx = headMapSquare.getX()-CfMapUpdater.getMap().getMapSquare(x, y).getX();
-            final int dy = headMapSquare.getY()-CfMapUpdater.getMap().getMapSquare(x, y).getY();
+            final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
+            final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
             assert dx > 0 || dy > 0;
             final int sx = img.getIconWidth()-mysquaresize*(dx+1);
             final int sy = img.getIconHeight()-mysquaresize*(dy+1);
@@ -374,7 +379,7 @@ public class GUIMap extends GUIElement
                 null);
         }
 
-        final Face f = CfMapUpdater.getMap().getFace(x, y, layer);
+        final Face f = map.getFace(x, y, layer);
         if (f != null)
         {
             final ImageIcon img = f.getImageIcon(use_big_images);
