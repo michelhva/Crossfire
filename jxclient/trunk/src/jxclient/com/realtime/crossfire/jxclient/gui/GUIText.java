@@ -186,6 +186,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             break;
 
         case KeyEvent.VK_ENTER:
+            getJXCWindow().updatePlayerName(text.toString());
             execute((JXCWindow)e.getSource(), text.toString());
             setActive(false);
             break;
