@@ -111,6 +111,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final Shortcuts shortcuts = new Shortcuts(this);
 
     /**
+     * The settings instance to use.
+     */
+    private final Settings settings;
+
+    /**
      * Terminate the application if set.
      */
     private boolean terminated = false;
@@ -207,6 +212,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The currently connected port. Only valid if {@link #hostname} is set.
      */
     private int port = 0;
+
+    /**
+     * Whether the currently shown query dialog is the character name prompt.
+     */
+    private boolean currentQueryDialogIsNamePrompt = false;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets
@@ -309,6 +319,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
+        this.settings = settings;
         myserver = new CrossfireServerConnection(experienceTable, debugProtocol);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -1198,6 +1209,20 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         myserver.setStatus(ServerConnection.Status.QUERY);
         jxcWindowRenderer.openDialog(queryDialog);
         queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
+
+        currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
+        if (currentQueryDialogIsNamePrompt)
+        {
+            final String playerName = settings.getString("player_"+hostname, "");
+            if (playerName.length() > 0)
+            {
+                final GUIText textArea = queryDialog.getFirstTextArea();
+                if (textArea != null)
+                {
+                    textArea.setText(playerName);
+                }
+            }
+        }
     }
 
     private void showGUIStart()
@@ -1553,5 +1578,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public final Metaserver getMetaserver()
     {
         return metaserver;
+    }
+
+    /**
+     * Set the current player name. Does nothing if not currently in the
+     * character name prompt.
+     *
+     * @param playerName The player name.
+     */
+    public void updatePlayerName(final String playerName)
+    {
+        if (currentQueryDialogIsNamePrompt)
+        {
+            settings.putString("player_"+hostname, playerName);
+        }
     }
 }
