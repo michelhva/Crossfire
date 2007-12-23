@@ -311,55 +311,55 @@ public class CfMapUpdater
                 }
             }
             visibleAnimations.clear();
-            /* XXX: does not call callbacks */
-            return;
         }
+        else
+        {
+            int tx = dx;
+            while (tx > 0)
+            {
+                map.scroll(-1, 0);
+                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                {
+                    map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, y);
+                    map.dirty(CrossfireServerConnection.MAP_WIDTH-1, y);
+                }
+                tx--;
+            }
+            while (tx < 0)
+            {
+                map.scroll(+1, 0);
+                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                {
+                    map.clearSquare(0, y);
+                    map.dirty(0, y);
+                }
+                tx++;
+            }
 
-        int tx = dx;
-        while (tx > 0)
-        {
-            map.scroll(-1, 0);
-            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            int ty = dy;
+            while (ty > 0)
             {
-                map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, y);
-                map.dirty(CrossfireServerConnection.MAP_WIDTH-1, y);
+                map.scroll(0, -1);
+                for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                {
+                    map.clearSquare(x, CrossfireServerConnection.MAP_HEIGHT-1);
+                    map.dirty(x, CrossfireServerConnection.MAP_HEIGHT-1);
+                }
+                ty--;
             }
-            tx--;
-        }
-        while (tx < 0)
-        {
-            map.scroll(+1, 0);
-            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            while (ty < 0)
             {
-                map.clearSquare(0, y);
-                map.dirty(0, y);
+                map.scroll(0, +1);
+                for (int x = 0; x <= CrossfireServerConnection.MAP_WIDTH; x++)
+                {
+                    map.clearSquare(x, 0);
+                    map.dirty(x, 0);
+                }
+                ty++;
             }
-            tx++;
-        }
 
-        int ty = dy;
-        while (ty > 0)
-        {
-            map.scroll(0, -1);
-            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
-            {
-                map.clearSquare(x, CrossfireServerConnection.MAP_HEIGHT-1);
-                map.dirty(x, CrossfireServerConnection.MAP_HEIGHT-1);
-            }
-            ty--;
+            visibleAnimations.scroll(dx, dy);
         }
-        while (ty < 0)
-        {
-            map.scroll(0, +1);
-            for (int x = 0; x <= CrossfireServerConnection.MAP_WIDTH; x++)
-            {
-                map.clearSquare(x, 0);
-                map.dirty(x, 0);
-            }
-            ty++;
-        }
-
-        visibleAnimations.scroll(dx, dy);
 
         final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
         for (final CrossfireMapscrollListener listener : mylistenersMapscroll)
