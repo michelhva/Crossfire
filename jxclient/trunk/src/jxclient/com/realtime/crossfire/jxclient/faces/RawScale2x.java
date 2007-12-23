@@ -18,9 +18,9 @@
 // JXClient is (C)2005 by Yann Chachkoff.
 //
 package com.realtime.crossfire.jxclient.faces;
+
 /**
- * A simple implementation of the Scale2x algorithm for scaling raw
- * image data.
+ * A simple implementation of the Scale2x algorithm for scaling raw image data.
  *
  * @author Kevin Glass
  */
@@ -39,12 +39,14 @@ public class RawScale2x
     private final int height;
 
     /**
-     * Create a new scaler based on some raw data. Right now it doesn't
-     * matter what order the channels in, just that its an int per pixel
+     * Create a new scaler based on some raw data. Right now it doesn't matter
+     * what order the channels in, just that its an int per pixel
      *
-     * @param imageData The source image data
-     * @param dataWidth The width of the source image
-     * @param dataHeight The height of the source image
+     * @param imageData The source image data.
+     *
+     * @param dataWidth The width of the source image.
+     *
+     * @param dataHeight The height of the source image.
      */
     public RawScale2x(int[] imageData, int dataWidth, int dataHeight)
     {
@@ -55,12 +57,14 @@ public class RawScale2x
     }
 
     /**
-     * Check if two pixels are different. Place holder for maybe
-     * some clever code about tolerance checking
+     * Check if two pixels are different. Place holder for maybe some clever
+     * code about tolerance checking.
      *
-     * @param a The first pixel value
-     * @param b The second pixel value
-     * @return True if the pixels are different
+     * @param a The first pixel value.
+     *
+     * @param b The second pixel value.
+     *
+     * @return <code>true</code> if the pixels are different.
      */
     private boolean different(int a, int b)
     {
@@ -68,11 +72,13 @@ public class RawScale2x
     }
 
     /**
-     * Set a pixel in the destination image data
+     * Set a pixel in the destination image data.
      *
-     * @param x The x location of the pixel to set
-     * @param y The y location of the pixel to set
-     * @param p The value of the pixel to set
+     * @param x The x location of the pixel to set.
+     *
+     * @param y The y location of the pixel to set.
+     *
+     * @param p The value of the pixel to set.
      */
     private void setDestPixel(int x, int y, int p)
     {
@@ -80,12 +86,14 @@ public class RawScale2x
     }
 
     /**
-     * Get a pixel from the source image. This handles bonds checks
-     * and resolves to edge pixels
+     * Get a pixel from the source image. This handles bonds checks and
+     * resolves to edge pixels.
      *
-     * @param x The x location of the pixel to retrieve
-     * @param y The y location of the pixel to retrieve
-     * @return The pixel value at the specified location
+     * @param x The x location of the pixel to retrieve.
+     *
+     * @param y The y location of the pixel to retrieve.
+     *
+     * @return The pixel value at the specified location.
      */
     private int getSourcePixel(int x, int y)
     {
@@ -98,10 +106,11 @@ public class RawScale2x
 
     /**
      * Process a specific pixel. This will generate 4 pixels in the destination
-     * image based on the scale2x algorithm
+     * image based on the scale2x algorithm.
      *
-     * @param x The x location in the source image of the pixel to process
-     * @param y The y location in the source image of the pixel to process
+     * @param x The x location in the source image of the pixel to process.
+     *
+     * @param y The y location in the source image of the pixel to process.
      */
     private void process(int x, int y)
     {
@@ -134,11 +143,11 @@ public class RawScale2x
     }
 
     /**
-     * Get the scale image data. Note this is the method that does the work
-     * so it might take some time to process.
+     * Get the scale image data. Note this is the method that does the work so
+     * it might take some time to process.
      *
-     * @return An array of pixels 4 times the size of the input array containing
-     * the smoothly scaled image
+     * @return An array of pixels 4 times the size of the input array
+     * containing the smoothly scaled image.
      */
     public int[] getScaledData()
     {
