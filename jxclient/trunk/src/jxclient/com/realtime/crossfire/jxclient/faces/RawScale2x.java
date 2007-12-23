@@ -95,13 +95,11 @@ public class RawScale2x
      *
      * @return The pixel value at the specified location.
      */
-    private int getSourcePixel(int x, int y)
+    private int getSourcePixel(final int x, final int y)
     {
-        x = Math.max(0, x);
-        x = Math.min(width-1, x);
-        y = Math.max(0, y);
-        y = Math.min(height-1, y);
-        return srcImage[x+(y*width)];
+        final int xx = Math.min(width-1, Math.max(0, x));
+        final int yy = Math.min(height-1, Math.max(0, y));
+        return srcImage[xx+(yy*width)];
     }
 
     /**
