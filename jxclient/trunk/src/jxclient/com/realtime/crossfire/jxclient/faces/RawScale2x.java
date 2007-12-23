@@ -26,16 +26,16 @@ package com.realtime.crossfire.jxclient.faces;
  */
 public class RawScale2x
 {
-    /** The src image data */
+    /** The source image data. */
     private final int[] srcImage;
 
-    /** The dest image data */
+    /** The destination image data. */
     private final int[] dstImage;
 
-    /** The width of the source image */
+    /** The width of the source image. */
     private final int width;
 
-    /** The height of the source image */
+    /** The height of the source image. */
     private final int height;
 
     /**
