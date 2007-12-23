@@ -41,7 +41,7 @@ public class Filenames
      *
      * @return The image cache directory.
      */
-    public static File getImageCacheDir()
+    public static File getOriginalImageCacheDir()
     {
         try
         {
@@ -60,7 +60,7 @@ public class Filenames
      *
      * @return The image cache directory.
      */
-    public static File getSizedImageCacheDir()
+    public static File getScaledImageCacheDir()
     {
         try
         {
