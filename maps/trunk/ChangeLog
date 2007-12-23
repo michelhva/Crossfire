@@ -1,3 +1,17 @@
+2007-12-23 Yann (gros) Chachkoff
+A    python/maps/scorn
+A    python/maps/scorn/towers
+A    python/maps/scorn/towers/mad_mage
+A    python/maps/scorn/towers/mad_mage/mad_mage_user.py
+A    python/maps/scorn/towers/mad_mage/brewery_letter
+A    python/commands
+A    python/commands/give.py
+A    python/events/init/give_command.py
+Add support for the "give" command, that allows a player to show an item to an NPC.
+Useful when coupled with scripts to write "bring me back something" quests.
+Add support for the "give" command to the Mad Mage, with a generic "show me and
+I'll talk" kind of system.
+
 2007-12-22 tchize
 scorn/misc/cityhall
 Cityhall is now closed at night :) Petition board and bonus amulet stay accessible.
