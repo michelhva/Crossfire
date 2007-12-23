@@ -492,10 +492,8 @@ public class CfMap
      */
     public void dirty(final int x, final int y)
     {
-        if (isWithinMap(x, y))
-        {
-            patch[px][py].dirty(ox, oy);
-        }
+        expandTo(x, y);
+        patch[px][py].dirty(ox, oy);
     }
 
     /**
@@ -854,5 +852,27 @@ public class CfMap
     {
         expandTo(x, y);
         return patch[px][py].getSquare(ox, oy);
+    }
+
+    /**
+     * Return the offset to convert an absolute x-coordinate of a map square
+     * ({@link CfMapSquare#getX()} to a relative x-coordinate.
+     *
+     * @return The x offset.
+     */
+    public int getOffsetX()
+    {
+        return patchX;
+    }
+
+    /**
+     * Return the offset to convert an absolute y-coordinate of a map square
+     * ({@link CfMapSquare#getY()} to a relative y-coordinate.
+     *
+     * @return The y offset.
+     */
+    public int getOffsetY()
+    {
+        return patchY;
     }
 }

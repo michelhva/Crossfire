@@ -27,8 +27,10 @@ import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Utility class to update a {@link CfMap} model from protocol commands.
@@ -61,7 +63,7 @@ public class CfMapUpdater
      * Collects the changed map squares between calls to {@link
      * #processMapBegin()} and {@link #processMapEnd(boolean)}.
      */
-    private static final List<CfMapSquare> squares = new LinkedList<CfMapSquare>();
+    private static final Set<CfMapSquare> squares = new HashSet<CfMapSquare>();
 
     /**
      * The animations in the visible map area.
@@ -255,7 +257,7 @@ public class CfMapUpdater
             return;
         }
 
-        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), squares);
+        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
         for (final CrossfireMapListener listener : mylistenersMap)
         {
             listener.commandMapReceived(evt);
@@ -308,6 +310,7 @@ public class CfMapUpdater
                 {
                     map.clearSquare(x, y);
                     map.dirty(x, y);
+                    map.dirty(x-dx, y-dy);
                 }
             }
             visibleAnimations.clear();
@@ -322,6 +325,7 @@ public class CfMapUpdater
                 {
                     map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, y);
                     map.dirty(CrossfireServerConnection.MAP_WIDTH-1, y);
+                    map.dirty(-1, y);
                 }
                 tx--;
             }
@@ -332,6 +336,7 @@ public class CfMapUpdater
                 {
                     map.clearSquare(0, y);
                     map.dirty(0, y);
+                    map.dirty(CrossfireServerConnection.MAP_WIDTH, y);
                 }
                 tx++;
             }
@@ -344,6 +349,7 @@ public class CfMapUpdater
                 {
                     map.clearSquare(x, CrossfireServerConnection.MAP_HEIGHT-1);
                     map.dirty(x, CrossfireServerConnection.MAP_HEIGHT-1);
+                    map.dirty(x, -1);
                 }
                 ty--;
             }
@@ -354,6 +360,7 @@ public class CfMapUpdater
                 {
                     map.clearSquare(x, 0);
                     map.dirty(x, 0);
+                    map.dirty(x, CrossfireServerConnection.MAP_HEIGHT);
                 }
                 ty++;
             }
@@ -375,6 +382,8 @@ public class CfMapUpdater
      */
     public static void updateFace(final int face)
     {
+        processMapBegin();
+
         final List<CfMapSquare> l = new LinkedList<CfMapSquare>();
         for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
         {
@@ -385,18 +394,14 @@ public class CfMapUpdater
                     final Face f = map.getFace(x, y, z);
                     if (f != null && f.getID() == face)
                     {
-                        map.dirty(x, y);
                         map.setFace(x, y, z, f);
-                        //l.add(map[x][y]);
+                        map.dirty(x, y);
                     }
                 }
             }
         }
-        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), l);
-        for (final CrossfireMapListener listener : mylistenersMap)
-        {
-            listener.commandMapReceived(evt);
-        }
+
+        processMapEnd(false);
     }
 
     /**

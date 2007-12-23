@@ -52,6 +52,11 @@ public class Faces
     private static final FileCache fileCacheScaled = new FileCache(Filenames.getScaledImageCacheDir());
 
     /**
+     * The image cache for /8 scaled .png files.
+     */
+    private static final FileCache fileCacheMagicMap = new FileCache(Filenames.getMagicMapImageCacheDir());
+
+    /**
      * The face cache which holds all known faces.
      */
     private static final FaceCache faceCache = new FaceCache();
@@ -66,14 +71,20 @@ public class Faces
      */
     private static final ImageIcon scaledEmptyImageIcon;
 
+    /**
+     * The magic map version of an empty face.
+     */
+    private static final ImageIcon magicMapEmptyImageIcon;
+
     static
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
-        scaledEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
-        faceCache.addFace(new Face(0, "empty", originalEmptyImageIcon, scaledEmptyImageIcon));
+        originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
+        scaledEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
+        magicMapEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE/8, SQUARE_SIZE/8, Transparency.OPAQUE));
+        faceCache.addFace(new Face(0, "empty", originalEmptyImageIcon, scaledEmptyImageIcon, magicMapEmptyImageIcon));
     }
 
     /**
@@ -105,7 +116,8 @@ public class Faces
             throw new AssertionError();
         }
         final ImageIcon scaledUnknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
-        Face.init(originalUnknownImageIcon, scaledUnknownImageIcon, askfaceManager, fileCacheOriginal, fileCacheScaled);
+        final ImageIcon magicMapUnknownImageIcon = getMagicMapImageIcon(originalUnknownImageIcon);
+        Face.init(originalUnknownImageIcon, scaledUnknownImageIcon, magicMapUnknownImageIcon, askfaceManager, fileCacheOriginal, fileCacheScaled, fileCacheMagicMap);
     }
 
     public static Face getFace(final int index)
@@ -117,7 +129,7 @@ public class Faces
         }
 
         System.err.println("Warning: creating face object for unknown face "+index);
-        final Face newFace = new Face(index, "face#"+index, null, null);
+        final Face newFace = new Face(index, "face#"+index, null, null, null);
         faceCache.addFace(newFace);
         return newFace;
     }
@@ -141,14 +153,17 @@ public class Faces
                 final Face f = faceCache.getFace(pixnum);
                 f.setOriginalImageIcon(null);
                 f.setScaledImageIcon(null);
+                f.setMagicMapImageIcon(null);
             }
             else
             {
                 final Face f = faceCache.getFace(pixnum);
                 f.setOriginalImageIcon(img);
                 f.setScaledImageIcon(getScaledImageIcon(img));
+                f.setMagicMapImageIcon(getMagicMapImageIcon(img));
                 fileCacheOriginal.save(f.getName(), f.getOriginalImageIcon());
                 fileCacheScaled.save(f.getName(), f.getScaledImageIcon());
+                fileCacheMagicMap.save(f.getName(), f.getMagicMapImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
@@ -182,13 +197,38 @@ public class Faces
         return imx2;
     }
 
+    /**
+     * Create a copy of a given image with eigth width and height.
+     *
+     * @param img the image icon to process
+     *
+     * @return the scaled image icon
+     */
+    private static ImageIcon getMagicMapImageIcon(final ImageIcon img)
+    {
+        final ImageIcon imd8;
+        try
+        {
+            final ImageScale8d scaler = new ImageScale8d(img);
+            imd8 = scaler.getScaledImage();
+        }
+        catch (final Exception e)
+        {
+            e.printStackTrace();
+            System.exit(0);
+            throw new AssertionError();
+        }
+        return imd8;
+    }
+
     // TODO: implement faceset
     // TODO: handle checksum
     public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname)
     {
         final ImageIcon originalImageIcon = fileCacheOriginal.load(pixname);
         final ImageIcon scaledImageIcon = fileCacheScaled.load(pixname);
-        faceCache.addFace(new Face(pixnum, pixname, originalImageIcon, scaledImageIcon));
+        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(pixname);
+        faceCache.addFace(new Face(pixnum, pixname, originalImageIcon, scaledImageIcon, magicMapImageIcon));
     }
 
     /**
