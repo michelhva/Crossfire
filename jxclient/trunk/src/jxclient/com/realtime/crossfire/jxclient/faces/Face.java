@@ -39,7 +39,7 @@ public class Face
     private static ImageIcon originalUnknownImageIcon = null;
 
     /**
-     * The scaled version of {@link #unknownImageIcon}. It is never
+     * The scaled version of {@link #originalUnknownImageIcon}. It is never
      * <code>null</code>.
      */
     private static ImageIcon scaledUnknownImageIcon = null;
