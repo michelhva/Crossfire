@@ -86,7 +86,8 @@ public class Face
      * @param originalUnknownImageIcon The face to return if an original image
      * is unknown.
      *
-     * @param scaledUnknownImageIcon The face to return if an image is unknown.
+     * @param scaledUnknownImageIcon The face to return if a scaled image is
+     * unknown.
      *
      * @param askfaceManager The askface manager to query unknown images.
      *
