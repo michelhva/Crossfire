@@ -19,9 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.mapupdater;
 
+import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.util.EventObject;
-import java.util.List;
+import java.util.Set;
 
 /**
  * An event containing details about a map change event.
@@ -35,21 +36,39 @@ public class CrossfireCommandMapEvent extends EventObject
     private static final long serialVersionUID = 1;
 
     /**
+     * The changed map.
+     */
+    private final CfMap map;
+
+    /**
      * The map squares that have changed.
      */
-    private final List<CfMapSquare> changedSquares;
+    private final Set<CfMapSquare> changedSquares;
 
     /**
      * Create a new instance.
      *
      * @param src The source object. (unused)
      *
+     * @param map The changed map.
+     *
      * @param changedSquares The map squares that have changed.
      */
-    public CrossfireCommandMapEvent(final Object src, final List<CfMapSquare> changedSquares)
+    public CrossfireCommandMapEvent(final Object src, final CfMap map, final Set<CfMapSquare> changedSquares)
     {
         super(src);
+        this.map = map;
         this.changedSquares = changedSquares;
+    }
+
+    /**
+     * Return the changed map.
+     *
+     * @return The changed map.
+     */
+    public CfMap getMap()
+    {
+        return map;
     }
 
     /**
@@ -57,7 +76,7 @@ public class CrossfireCommandMapEvent extends EventObject
      *
      * @return The changed map squares.
      */
-    public List<CfMapSquare> getChangedSquares()
+    public Set<CfMapSquare> getChangedSquares()
     {
         return changedSquares;
     }

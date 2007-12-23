@@ -75,6 +75,25 @@ public class Filenames
     }
 
     /**
+     * Return the image cache directory for magic map sized images.
+     *
+     * @return The image cache directory.
+     */
+    public static File getMagicMapImageCacheDir()
+    {
+        try
+        {
+            return getSettingsFile("cache-mm");
+        }
+        catch (final IOException ex)
+        {
+            System.err.println(ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
+    }
+
+    /**
      * Return the main settings file.
      *
      * @return The main settings file.

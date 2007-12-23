@@ -145,13 +145,14 @@ public class CfMapSquare
      */
     public void dirty()
     {
+        CfMapUpdater.addModifiedSquare(this);
+
         if (dirty)
         {
             return;
         }
 
         dirty = true;
-        CfMapUpdater.addModifiedSquare(this);
     }
 
     /**

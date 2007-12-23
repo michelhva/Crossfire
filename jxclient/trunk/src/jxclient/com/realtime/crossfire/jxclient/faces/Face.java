@@ -24,8 +24,8 @@ import javax.swing.ImageIcon;
 
 /**
  * Manage information for one face. The face is uniquely identified by a face
- * id, has a face name, and two images (original as sent by the server and
- * scaled for use in map view).
+ * id, has a face name, and three images (original as sent by the server,
+ * scaled for use in map view, scaled for use in magic map view).
  *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
@@ -45,6 +45,12 @@ public class Face
     private static ImageIcon scaledUnknownImageIcon = null;
 
     /**
+     * The scaled version of {@link #originalUnknownImageIcon}. It is never
+     * <code>null</code>.
+     */
+    private static ImageIcon magicMapUnknownImageIcon = null;
+
+    /**
      * The askface manager to query unknown images.
      */
     private static AskfaceManager askfaceManager = null;
@@ -60,6 +66,11 @@ public class Face
     private static FileCache fileCacheScaled = null;
 
     /**
+     * The file cache used for loading magic map images from disk.
+     */
+    private static FileCache fileCacheMagicMap = null;
+
+    /**
      * The original (unscaled) image; may be <code>null</code> if unknown.
      */
     private SoftReference<ImageIcon> originalImageIcon;
@@ -69,6 +80,12 @@ public class Face
      * unknown.
      */
     private SoftReference<ImageIcon> scaledImageIcon;
+
+    /**
+     * The image scaled to be used in magic map view; may be <code>null</code>
+     * if unknown.
+     */
+    private SoftReference<ImageIcon> magicMapImageIcon;
 
     /**
      * The face id as sent by the server.
@@ -89,6 +106,9 @@ public class Face
      * @param scaledUnknownImageIcon The face to return if a scaled image is
      * unknown.
      *
+     * @param magicMapUnknownImageIcon The face to return if a magic map image
+     * is unknown.
+     *
      * @param askfaceManager The askface manager to query unknown images.
      *
      * @param fileCacheOriginal The file cache used for loading original image
@@ -96,14 +116,19 @@ public class Face
      *
      * @param fileCacheScaled The file cache used for loading scaled image
      * files from disk.
+     *
+     * @param fileCacheMagicMap The file cache used for loading magic map image
+     * files from disk.
      */
-    static void init(final ImageIcon originalUnknownImageIcon, final ImageIcon scaledUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOriginal, final FileCache fileCacheScaled)
+    static void init(final ImageIcon originalUnknownImageIcon, final ImageIcon scaledUnknownImageIcon, final ImageIcon magicMapUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOriginal, final FileCache fileCacheScaled, final FileCache fileCacheMagicMap)
     {
         Face.originalUnknownImageIcon = originalUnknownImageIcon;
         Face.scaledUnknownImageIcon = scaledUnknownImageIcon;
+        Face.magicMapUnknownImageIcon = magicMapUnknownImageIcon;
         Face.askfaceManager = askfaceManager;
         Face.fileCacheOriginal = fileCacheOriginal;
         Face.fileCacheScaled = fileCacheScaled;
+        Face.fileCacheMagicMap = fileCacheMagicMap;
     }
 
     /**
@@ -118,8 +143,11 @@ public class Face
      *
      * @param scaledImageIcon The image to use for map view; may be
      * <code>null</code> if unknown.
+     *
+     * @param magicMapImageIcon The image to use for magic map view; may be
+     * <code>null</code> if unknown.
      */
-    public Face(final int id, final String name, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon)
+    public Face(final int id, final String name, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
     {
         if (name == null) throw new IllegalArgumentException();
 
@@ -127,6 +155,7 @@ public class Face
         this.name = name;
         this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
         this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
+        this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
     }
 
     /**
@@ -147,6 +176,16 @@ public class Face
     public void setScaledImageIcon(final ImageIcon scaledImageIcon)
     {
         this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
+    }
+
+    /**
+     * Replace the scaled image to use in magic map view.
+     *
+     * @param magicMapImageIcon The new image icon.
+     */
+    public void setMagicMapImageIcon(final ImageIcon magicMapImageIcon)
+    {
+        this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
     }
 
     /**
@@ -230,6 +269,27 @@ public class Face
     }
 
     /**
+     * Return the image scaled to be used in magic map view.
+     *
+     * @return The scaled image.
+     */
+    public ImageIcon getMagicMapImageIcon()
+    {
+        if (magicMapImageIcon != null)
+        {
+            final ImageIcon result = magicMapImageIcon.get();
+            if (result != null)
+            {
+                return result;
+            }
+
+            magicMapImageIcon = null;
+        }
+
+        return loadMagicMapImageIcon();
+    }
+
+    /**
      * Return the width in tiles.
      *
      * @return The width.
@@ -305,5 +365,25 @@ public class Face
 
         askfaceManager.queryFace(id);
         return scaledUnknownImageIcon;
+    }
+
+    /**
+     * Load {@link #magicMapImageIcon} from the backing storage. If loading
+     * fails, return {@link #magicMapUnknownImageIcon} and request the image
+     * from the server.
+     *
+     * @return The image.
+     */
+    private ImageIcon loadMagicMapImageIcon()
+    {
+        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(name);
+        if (magicMapImageIcon != null)
+        {
+            this.magicMapImageIcon = new SoftReference<ImageIcon>(magicMapImageIcon);
+            return magicMapImageIcon;
+        }
+
+        askfaceManager.queryFace(id);
+        return magicMapUnknownImageIcon;
     }
 }

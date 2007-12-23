@@ -54,7 +54,7 @@ public class GUIMap extends GUIElement
     /**
      * The color to use for overlaying fog-of-war tiles.
      */
-    private static final Color fogOfWarColor = new Color(0, 0, 0.5F, 0.5F);
+    public static final Color fogOfWarColor = new Color(0, 0, 0.5F, 0.5F);
 
     /**
      * The minimum darkness alpha value; it is used for completely black tiles.
@@ -72,7 +72,7 @@ public class GUIMap extends GUIElement
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
      * color. Not yet allocated entries are set to <code>null</code>.
      */
-    private final Color[] darknessColors = new Color[256];
+    private static final Color[] darknessColors = new Color[256];
 
     /**
      * The {@link CrossfireMapListener} registered to receive map updates.
@@ -302,7 +302,7 @@ public class GUIMap extends GUIElement
      *
      * @param y The y-coordinate of the square to clear.
      */
-    protected void cleanSquare(final Graphics g, final int x, final int y)
+    private void cleanSquare(final Graphics g, final int x, final int y)
     {
         g.drawImage(myblacktile.getImage(), x*mysquaresize, y*mysquaresize, null);
     }
@@ -420,7 +420,7 @@ public class GUIMap extends GUIElement
     }
 
     /** {@inheritDoc} */
-    protected void createBuffer()
+    @Override protected void createBuffer()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -446,7 +446,7 @@ public class GUIMap extends GUIElement
      *
      * @return The overlay color.
      */
-    private Color getDarknessColor(final int darkness)
+    public static synchronized Color getDarknessColor(final int darkness)
     {
         if (darknessColors[darkness] == null)
         {
