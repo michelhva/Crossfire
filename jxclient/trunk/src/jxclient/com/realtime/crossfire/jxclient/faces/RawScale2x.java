@@ -66,7 +66,7 @@ public class RawScale2x
      *
      * @return <code>true</code> if the pixels are different.
      */
-    private boolean different(final int a, final int b)
+    private static boolean different(final int a, final int b)
     {
         return a != b;
     }
