@@ -679,7 +679,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void handleKeyPress(final KeyEvent e)
     {
-        if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
+        if (myserver.getStatus() != ServerConnection.Status.PLAYING)
         {
             return;
         }
@@ -894,7 +894,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void handleKeyTyped(final KeyEvent e)
     {
-        if (myserver == null || myserver.getStatus() != ServerConnection.Status.PLAYING)
+        if (myserver.getStatus() != ServerConnection.Status.PLAYING)
         {
             return;
         }
@@ -999,7 +999,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     keyBindingState = null;
                     jxcWindowRenderer.closeDialog(keybindDialog);
                 }
-                else if (myserver != null && myserver.getStatus() != ServerConnection.Status.UNCONNECTED)
+                else if (myserver.getStatus() != ServerConnection.Status.UNCONNECTED)
                 {
                     if (dialogDisconnect == null)
                     {
