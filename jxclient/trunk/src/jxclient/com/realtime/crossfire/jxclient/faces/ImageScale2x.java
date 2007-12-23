@@ -21,11 +21,10 @@ package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-
 import javax.swing.ImageIcon;
 
 /**
- * A utility to perform the scale2x algorithm on a Java Image
+ * A utility to perform the scale2x algorithm on a Java Image.
  *
  * @author Kevin Glass
  */
@@ -41,9 +40,9 @@ public class ImageScale2x
     private final int height;
 
     /**
-     * Create a new scaler that will scale the passed image
+     * Create a new scaler that will scale the passed image.
      *
-     * @param srcImageIcon The image to be scaled
+     * @param srcImageIcon The image to be scaled.
      */
     public ImageScale2x(final ImageIcon srcImageIcon)
     {
@@ -57,10 +56,10 @@ public class ImageScale2x
     }
 
     /**
-     * Retrieve the scaled image. Note this is the method that actually
-     * does the work so it may take some time to return
+     * Retrieve the scaled image. Note this is the method that actually does
+     * the work so it may take some time to return.
      *
-     * @return The newly scaled image
+     * @return The scaled image.
      */
     public ImageIcon getScaledImage()
     {
@@ -73,9 +72,9 @@ public class ImageScale2x
     }
 
     /**
-     * An entry point and a bit of test code
+     * An entry point and a bit of test code.
      *
-     * @param argv The arguments passed in to the test code
+     * @param argv The arguments passed in to the test code.
      */
     public static void main(final String argv[])
     {
