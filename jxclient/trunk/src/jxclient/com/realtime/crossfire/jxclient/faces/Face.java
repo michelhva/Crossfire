@@ -42,7 +42,7 @@ public class Face
      * The scaled version of {@link #unknownImageIcon}. It is never
      * <code>null</code>.
      */
-    private static ImageIcon unknownImageIcon = null;
+    private static ImageIcon scaledUnknownImageIcon = null;
 
     /**
      * The askface manager to query unknown images.
@@ -52,23 +52,23 @@ public class Face
     /**
      * The file cache used for loading orignal images from disk.
      */
-    private static FileCache fileCacheOrig = null;
+    private static FileCache fileCacheOriginal = null;
 
     /**
-     * The file cache used for loading sized images from disk.
+     * The file cache used for loading scaled images from disk.
      */
-    private static FileCache fileCacheSized = null;
-
-    /**
-     * The image scaled to be used in map view; may be <code>null</code> if
-     * unknown.
-     */
-    private SoftReference<ImageIcon> imageIcon;
+    private static FileCache fileCacheScaled = null;
 
     /**
      * The original (unscaled) image; may be <code>null</code> if unknown.
      */
     private SoftReference<ImageIcon> originalImageIcon;
+
+    /**
+     * The image scaled to be used in map view; may be <code>null</code> if
+     * unknown.
+     */
+    private SoftReference<ImageIcon> scaledImageIcon;
 
     /**
      * The face id as sent by the server.
@@ -83,26 +83,26 @@ public class Face
     /**
      * Initialize the module.
      *
-     * @param unknownImageIcon The face to return if an image is unknown.
-     *
      * @param originalUnknownImageIcon The face to return if an original image
      * is unknown.
      *
+     * @param scaledUnknownImageIcon The face to return if an image is unknown.
+     *
      * @param askfaceManager The askface manager to query unknown images.
      *
-     * @param fileCacheOrig The file cache used for loading original image
+     * @param fileCacheOriginal The file cache used for loading original image
      * files from disk.
      *
-     * @param fileCacheSized The file cache used for loading sized image files
-     * from disk.
+     * @param fileCacheScaled The file cache used for loading scaled image
+     * files from disk.
      */
-    static void init(final ImageIcon unknownImageIcon, final ImageIcon originalUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOrig, final FileCache fileCacheSized)
+    static void init(final ImageIcon originalUnknownImageIcon, final ImageIcon scaledUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOriginal, final FileCache fileCacheScaled)
     {
-        Face.unknownImageIcon = unknownImageIcon;
         Face.originalUnknownImageIcon = originalUnknownImageIcon;
+        Face.scaledUnknownImageIcon = scaledUnknownImageIcon;
         Face.askfaceManager = askfaceManager;
-        Face.fileCacheOrig = fileCacheOrig;
-        Face.fileCacheSized = fileCacheSized;
+        Face.fileCacheOriginal = fileCacheOriginal;
+        Face.fileCacheScaled = fileCacheScaled;
     }
 
     /**
@@ -112,30 +112,20 @@ public class Face
      *
      * @param name The face name.
      *
-     * @param imageIcon The image to use for map view; may be <code>null</code>
-     * if unknown.
-     *
      * @param originalImageIcon The unscaled image as sent by the server; may
      * be <code>null</code> if unknown.
+     *
+     * @param scaledImageIcon The image to use for map view; may be
+     * <code>null</code> if unknown.
      */
-    public Face(final int id, final String name, final ImageIcon imageIcon, final ImageIcon originalImageIcon)
+    public Face(final int id, final String name, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon)
     {
         if (name == null) throw new IllegalArgumentException();
 
         this.id = id;
         this.name = name;
-        this.imageIcon = imageIcon == null ? null : new SoftReference<ImageIcon>(imageIcon);
         this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
-    }
-
-    /**
-     * Replace the images to use in map view.
-     *
-     * @param imageIcon The new image icon.
-     */
-    public void setImageIcon(final ImageIcon imageIcon)
-    {
-        this.imageIcon = imageIcon == null ? null : new SoftReference<ImageIcon>(imageIcon);
+        this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
     }
 
     /**
@@ -146,6 +136,16 @@ public class Face
     public void setOriginalImageIcon(final ImageIcon originalImageIcon)
     {
         this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
+    }
+
+    /**
+     * Replace the scaled image to use in map view.
+     *
+     * @param scaledImageIcon The new image icon.
+     */
+    public void setScaledImageIcon(final ImageIcon scaledImageIcon)
+    {
+        this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
     }
 
     /**
@@ -174,7 +174,7 @@ public class Face
 
     /**
      * Return the image to be used in map view. If <code>useBigImages</code> is
-     * set, return {@link #getImageIcon()}, else return {@link
+     * set, return {@link #getScaledImageIcon()}, else return {@link
      * #getOriginalImageIcon()}.
      *
      * @param useBigImages If set, return big images, else return small images.
@@ -183,28 +183,7 @@ public class Face
      */
     public ImageIcon getImageIcon(final boolean useBigImages)
     {
-        return useBigImages ? getImageIcon() : getOriginalImageIcon();
-    }
-
-    /**
-     * Return the image scaled to be used in map view.
-     *
-     * @return The scaled image.
-     */
-    public ImageIcon getImageIcon()
-    {
-        if (imageIcon != null)
-        {
-            final ImageIcon result = imageIcon.get();
-            if (result != null)
-            {
-                return result;
-            }
-
-            imageIcon = null;
-        }
-
-        return loadImageIcon();
+        return useBigImages ? getScaledImageIcon() : getOriginalImageIcon();
     }
 
     /**
@@ -229,13 +208,34 @@ public class Face
     }
 
     /**
+     * Return the image scaled to be used in map view.
+     *
+     * @return The scaled image.
+     */
+    public ImageIcon getScaledImageIcon()
+    {
+        if (scaledImageIcon != null)
+        {
+            final ImageIcon result = scaledImageIcon.get();
+            if (result != null)
+            {
+                return result;
+            }
+
+            scaledImageIcon = null;
+        }
+
+        return loadScaledImageIcon();
+    }
+
+    /**
      * Return the width in tiles.
      *
      * @return The width.
      */
     public int getTileWidth()
     {
-        final ImageIcon img = getImageIcon(false);
+        final ImageIcon img = getOriginalImageIcon();
         return (img.getIconWidth()+31)/32;
     }
 
@@ -246,7 +246,7 @@ public class Face
      */
     public int getTileHeight()
     {
-        final ImageIcon img = getImageIcon(false);
+        final ImageIcon img = getOriginalImageIcon();
         return (img.getIconHeight()+31)/32;
     }
 
@@ -267,25 +267,6 @@ public class Face
     }
 
     /**
-     * Load {@link #imageIcon} from the backing storage. If loading fails,
-     * return {@link #unknownImageIcon} and request the image from the server.
-     *
-     * @return The image.
-     */
-    private ImageIcon loadImageIcon()
-    {
-        final ImageIcon imageIcon = fileCacheSized.load(name);
-        if (imageIcon != null)
-        {
-            this.imageIcon = new SoftReference<ImageIcon>(imageIcon);
-            return imageIcon;
-        }
-
-        askfaceManager.queryFace(id);
-        return unknownImageIcon;
-    }
-
-    /**
      * Load {@link #originalImageIcon} from the backing storage. If loading
      * fails, return {@link #originalUnknownImageIcon} and request the image
      * from the server.
@@ -294,7 +275,7 @@ public class Face
      */
     private ImageIcon loadOriginalImageIcon()
     {
-        final ImageIcon originalImageIcon = fileCacheOrig.load(name);
+        final ImageIcon originalImageIcon = fileCacheOriginal.load(name);
         if (originalImageIcon != null)
         {
             this.originalImageIcon = new SoftReference<ImageIcon>(originalImageIcon);
@@ -303,5 +284,25 @@ public class Face
 
         askfaceManager.queryFace(id);
         return originalUnknownImageIcon;
+    }
+
+    /**
+     * Load {@link #scaledImageIcon} from the backing storage. If loading
+     * fails, return {@link #scaledUnknownImageIcon} and request the image from
+     * the server.
+     *
+     * @return The image.
+     */
+    private ImageIcon loadScaledImageIcon()
+    {
+        final ImageIcon scaledImageIcon = fileCacheScaled.load(name);
+        if (scaledImageIcon != null)
+        {
+            this.scaledImageIcon = new SoftReference<ImageIcon>(scaledImageIcon);
+            return scaledImageIcon;
+        }
+
+        askfaceManager.queryFace(id);
+        return scaledUnknownImageIcon;
     }
 }
