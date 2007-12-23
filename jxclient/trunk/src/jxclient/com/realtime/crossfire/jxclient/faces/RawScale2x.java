@@ -48,7 +48,7 @@ public class RawScale2x
      *
      * @param dataHeight The height of the source image.
      */
-    public RawScale2x(int[] imageData, int dataWidth, int dataHeight)
+    public RawScale2x(final int[] imageData, final int dataWidth, final int dataHeight)
     {
         this.width = dataWidth;
         this.height = dataHeight;
@@ -66,7 +66,7 @@ public class RawScale2x
      *
      * @return <code>true</code> if the pixels are different.
      */
-    private boolean different(int a, int b)
+    private boolean different(final int a, final int b)
     {
         return a != b;
     }
@@ -80,7 +80,7 @@ public class RawScale2x
      *
      * @param p The value of the pixel to set.
      */
-    private void setDestPixel(int x, int y, int p)
+    private void setDestPixel(final int x, final int y, final int p)
     {
         dstImage[x+(y*width*2)] = p;
     }
@@ -112,7 +112,7 @@ public class RawScale2x
      *
      * @param y The y location in the source image of the pixel to process.
      */
-    private void process(int x, int y)
+    private void process(final int x, final int y)
     {
 //        int A = getSourcePixel(x-1, y-1);
         int B = getSourcePixel(x, y-1);
