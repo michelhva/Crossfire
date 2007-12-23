@@ -602,4 +602,18 @@ public class Gui
     {
         this.stateChanged = stateChanged;
     }
+
+    /**
+     * Enable or disable hidden text in the first input field.
+     *
+     * @param hideInput If set, hide input; else show input.
+     */
+    public void setHideInput(final boolean hideInput)
+    {
+        final GUIText textArea = getFirstTextArea();
+        if (textArea != null)
+        {
+            textArea.setHideInput(hideInput);
+        }
+    }
 }

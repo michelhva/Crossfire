@@ -428,7 +428,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         jxcWindowRenderer.openDialog(dialog);
         if (dialog == queryDialog)
         {
-            jxcWindowRenderer.setHideInput(false);
+            dialog.setHideInput(false);
         }
     }
 
@@ -443,7 +443,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             if (dialog == queryDialog)
             {
-                jxcWindowRenderer.setHideInput(false);
+                dialog.setHideInput(false);
             }
         }
     }
@@ -1197,7 +1197,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         myserver.setStatus(ServerConnection.Status.QUERY);
         jxcWindowRenderer.openDialog(queryDialog);
-        jxcWindowRenderer.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
+        queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
     }
 
     private void showGUIStart()
