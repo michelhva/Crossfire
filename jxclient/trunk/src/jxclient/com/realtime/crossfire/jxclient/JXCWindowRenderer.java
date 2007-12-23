@@ -422,24 +422,6 @@ public class JXCWindowRenderer
     }
 
     /**
-     * Enable or disable hidden text in the first input field of the top-most
-     * dialog.
-     *
-     * @param hideInput If set, hide input; else show input.
-     */
-    public void setHideInput(final boolean hideInput)
-    {
-        if (openDialogs.size() > 0)
-        {
-            final GUIText textArea = openDialogs.get(openDialogs.size()-1).getFirstTextArea();
-            if (textArea != null)
-            {
-                textArea.setHideInput(hideInput);
-            }
-        }
-    }
-
-    /**
      * Return the x-offset of of the visible window.
      *
      * @return The x-offset of of the visible window.
