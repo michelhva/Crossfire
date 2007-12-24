@@ -8,6 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
+Modified: 2007-12-24 Kevin Bulgrien
 endmsg
 end
 arch blocked
@@ -1096,8 +1097,7 @@ end
 arch magic_mouth
 msg
 Step forward to become an Alchemist.
-Alchemists are for somewhat advanced
-players.
+Alchemists are for somewhat advanced players.
 endmsg
 x 4
 y 23
@@ -1122,8 +1122,7 @@ end
 arch magic_mouth
 msg
 Step forward to become a Sorcerer.
-Sorcerers are difficult to play and
-not recommended for beginners.
+Sorcerers are difficult to play and not recommended for beginners.
 endmsg
 x 4
 y 25
@@ -1329,17 +1328,8 @@ end
 arch magic_mouth
 msg
 Warlock
-You've divided your time between
-learning magic and learning weapons,
-but have totally disregarded
-religious devotion.  You're
-physically stronger and hardier
-because of your training, and you
-know the use of weapons and bows.
-However, you're just a bit clumsy in
-both weaponry and magic because
-you've had to divide your time
-between them.
+You've divided your time between learning magic and learning weapons, but have totally disregarded religious devotion.
+You're physically stronger and hardier because of your training, and you know the use of weapons and bows.  However, you're just a bit clumsy in both weaponry and magic because you've had to divide your time between them.
 endmsg
 x 5
 y 15
@@ -1364,27 +1354,10 @@ end
 arch magic_mouth
 msg
 Evoker
-Your specialty is the use of attack
-spells in combat.  You practice these
-spells daily, and your capacity to
-cast them has increased hugely.
-You've had some training in weaponry
-to help defend yourself, but you tend
-to leave most of the fighting
-to others, so your physical training
-has been somewhat lacking.
-You've never learend to use magic
-innately, but instead rely on a magic
-talisman to channel mana for you.
-The attack spells have imprinted
-themselves somewhat on your talisman,
-making it good for those and less
-useful for anything else.
-You have not been trained in
-religious devotion:  however, you
-come from a religious family and will
-have no particular difficulty taking
-up the service of a god.
+Your specialty is the use of attack spells in combat.  You practice these spells daily, and your capacity to cast them has increased hugely.
+You've had some training in weaponry to help defend yourself, but you tend to leave most of the fighting to others, so your physical training has been somewhat lacking.
+You've never learned to use magic innately, but instead rely on a magic talisman to channel mana for you.  The attack spells have imprinted themselves somewhat on your talisman, making it good for those and less useful for anything else.
+You have not been trained in religious devotion:  however, you come from a religious family and will have no particular difficulty taking up the service of a god.
 endmsg
 x 5
 y 17
@@ -1409,21 +1382,9 @@ end
 arch magic_mouth
 msg
 Summoner
-You've had more of an emphasis on
-physical training than most
-spellcasters, at the expense of less
-time spent on casting spells.  You've
-never learned to use magic innately,
-but instead rely on a magic talisman
-to channel mana for you.  Your work
-has leaned heavily toward the art of
-summoning creatures to help you in a
-fight, and your talisman has become
-attuned to that.  That attunement,
-however, makes it harder for you to
-reject unwanted creatures.  You've
-also had a reasonable education in
-religious devotion.
+You've had more of an emphasis on physical training than most spellcasters, at the expense of less practice with spellcasting.  You've never learned to use magic innately, but instead rely on a magic talisman to channel mana for you.
+Your work has leaned heavily toward the art of summoning creatures to help you in a fight, and your talisman has become attuned to that.  That attunement, however, makes it harder for you to reject unwanted creatures.
+You've also had a reasonable education in religious devotion.
 endmsg
 x 5
 y 19
@@ -1448,17 +1409,9 @@ end
 arch magic_mouth
 msg
 Wizard
-You're the generalist of the
-spellcasters.  You've emphasized the
-use of magic and studied all its
-areas equally.  You've learned
-something about the gods and
-religious devotion as well.  To a
-much lesser extent, you've studied
-weaponry, but you've not had much
-physical training:  you're mostly
-sedentary, and so you're not nearly
-so strong and healthy as you could be.
+You're the generalist of the spellcasters.  You've emphasized the use of magic and studied all its areas equally.
+You've learned something about the gods and religious devotion as well.
+To a much lesser extent, you've studied weaponry, but you've not had much physical training:  you're mostly sedentary, and so you're not nearly so strong and healthy as you could be.
 endmsg
 x 5
 y 21
@@ -1483,24 +1436,10 @@ end
 arch magic_mouth
 msg
 Alchemist
-Your specialty is magical devices and
-concoctions, but you've also had some
-training in weaponry, so that you can
-fend off townsfolk angered by the
-vile reeks that frequently emanate
-from your workshop.
-Searching for the perfect recipes and
-trying to recover lost knowledge has
-sharpened your wits considerably.
-However, it's left little time for
-physical training, and your sedentary
-lifestyle has weakened you.
-Your dependence on magical devices
-extends to the use of a talisman to
-channel mana.  The talisman has
-become attuned to detonation and
-transmutation because of how you've
-used it.
+Your specialty is magical devices and concoctions, but you've also had some training in weaponry, so that you could fend off townsfolk angered by the vile reeks that frequently emanate from your workshop.
+Searching for the ultimate recipe and trying to recover lost knowledge has sharpened your wits considerably.
+Your focus, however, has left little time for physical training, and your sedentary lifestyle has weakened you.
+Your dependence on magical devices extends to the use of a talisman to channel mana.  The talisman has become attuned to detonation and transmutation because of the way you have used it.
 endmsg
 x 5
 y 23
@@ -1525,29 +1464,10 @@ end
 arch magic_mouth
 msg
 Sorcerer
-Your study of magic has been
-obsessive.  Your frequent practice
-has greatly enhanced your powers, and
-your intellect has been sharpened
-enormously by your quest for ever
-betterways to channel energies.
-However, you've totally neglected to
-learn to use weaponry, and you're
-soft and weak.  Barbarians used to
-push you around on the street until
-you blasted one's leg off with a
-lightning bolt.  You reflected later
-on the stupidity of this, because you
-could by no means have blasted his
-friends, too.  Fortunately, they ran
-off.  You resolved to learn how to
-take out a whole group of barbarians
-before losing your temper again.
-Your study of magic and magical
-devices allows you to notice when an
-object has a magical aura, and you
-can often fathom the purpose of
-magical devices.
+Your study of magic has been obsessive.  Your frequent practice has greatly enhanced your powers, and your intellect has been sharpened enormously by your quest for ever better ways to channel energies.
+Barbarians used to push you around on the street until you blasted one's leg off with a lightning bolt.  You reflected later on the stupidity of this, because you could by no means have blasted his friends, too.  Fortunately, they ran off.  You resolved to learn how to take out a whole group of barbarians before losing your temper again.
+On the other hand, you have totally neglected to learn to use weaponry, so you're soft and weak.
+Your study of magical devices allows you to notice when an object has a magical aura, and you are often able to fathom the purpose of magical devices.
 endmsg
 x 5
 y 25
@@ -1572,19 +1492,9 @@ end
 arch magic_mouth
 msg
 Devotee
-The axis of your existence is your
-devotion to your god.  However,
-you've also been busy in other areas.
-Your sensitivity to godly powers has
-also caused your natural magical
-ability to bloom, and your religious
-order has encouraged your study.
-Your religious superiors have forced
-you to learn weaponry as well,
-against your will.  You will find
-that they were wise to do so, but you
-haven't trained as assiduously as you
-should have, so you are soft and weak.
+The axis of your existence is your devotion to your god, but you've also been busy in other areas.
+Your sensitivity to godly powers has also caused your natural magical ability to bloom, and your religious order has encouraged your study.
+Your religious superiors have forced you to learn weaponry against your choice, but you will find that they were wise to do so.  You haven't trained as assiduously as you should have, so you are soft and weak.
 endmsg
 x 5
 y 27
@@ -2071,18 +1981,8 @@ end
 arch magic_mouth
 msg
 Welcome to the Hall of Selection.
-Here, you will pick what your
-character's initial skills shall be.
-Different classes start out with
-different skills, but as you play the
-game, you will be able to 'train'
-your character to do whatever task
-you wish.  Like a person, your
-character can learn a new career, IF
-his native abilities allow it.
-Your choice of class will, however,
-have a permanent effect on how the
-player shall appear on the board.
+Here you pick a character class.  Each class starts out with different skills.  Picking a class here does not permanently affect the skills you know as it is quite possible to 'train' your character in additional skills.  Like a person, a character can learn a new career if his native abilities allow it.
+On this walk toward your destiny, some basic game concepts will be offered to prepare you for your adventures.  Do not worry too much about all the details yet.  After you select a class, you will have another chance to learn more about how to start playing Crossfire.
 endmsg
 x 7
 y 8
@@ -2105,24 +2005,12 @@ lifesave 1
 end
 arch magic_mouth
 msg
-Crossfire primer #1:
-Picking things up and applying them.
-On this square there is a piece of
-food.  Click around with your various
-mouse buttons until you can pick it
-up and drop it.  In particular, learn
-not to drop things you don't want to.
-Some things are gone forever if you
-drop them onto the ground.
-You can use the command "help" to
-learn more about other commands.
-The ',' (comma) key also picks up
-objects below you.  Another important
-key is the ' key, which tells your
-client that you're about to begin a
-text command.  On some clients you
-can click in a window to type in a
-text command.
+Crossfire Primer #1:
+How to pick up, drop, and apply things.
+On this square there is a piece of food.  Click around with various mouse buttons.  One of the buttons will cause you to apply (eat) the food.  Another button is used to pick up or drop items.  It is important to get comfortable with pickup and drop early so that you do not accidentally drop things that are given to you after you select a class.  Some of those items will disappear forever if you drop them.
+The mouse is not the only way to do things.  Keyboard keys are used also.  For example, the "," (comma) key is quick way to pick up objects you are standing on.
+Crossfire also has a rich set of text commands.  To begin entering a text command, use the apostrophe (') key.  On most modern clients, this places your cursor in a text entry box.
+To pick up, drop, or apply objects, type an apostrophe followed by an appropriate text command.  For example, typing a text command "take all" gets everything off of the floor at once.  You can even be more specific by using an objects name.  For example, "drop food" will cause all items named food to be dropped.
 endmsg
 x 7
 y 9
@@ -2137,133 +2025,88 @@ y 9
 end
 arch magic_mouth
 msg
-Crossfire primer #2:
-skills
-Crossfire players can have many
-skills.  Type in the command "skills"
-to see which ones you have.  Right
-now you have few or none.  Soon, you
-will be able to choose your beginning
-skills, which are determined by your
-choice of class.
-The main ones are magic, weapons, and
-praying.  There are many more.
-Some you will use like this:
-use_skill alchemy
-Others, like praying, weapons, and
-magic are automatic.
-endmsg
-x 7
-y 10
-end
-arch cobblestones2
-x 7
-y 10
-end
-arch dungeon_magic
-x 7
-y 10
-end
-arch magic_mouth
-msg
-Crossfire primer #3:
-Magic
-Players with the magic skill can cast
-magical spells.
-Magical spells are used in this way:
-by typing, for example:
-cast small lightning
-cast burning hands
-Either of these commands will set the
-RANGE ATTACK to that magic spell.
-Then, "firing" in a direction will
-invoke that spell in that direction.
-Magical energy is call mana, and it
-is depleted whenever a player invokes
-a magical spell.   Mana is normally
-replenished slowly, but certain items
-may speed the process.
-endmsg
-x 7
-y 11
-end
-arch cobblestones2
-x 7
-y 11
-end
-arch dungeon_magic
-x 7
-y 11
-end
-arch magic_mouth
-msg
-Crossfire primer #4:
-Prayers
-Players with the praying skill can
-ask help of their gods, and get it.
-Prayers and magical spells are used
-in much the same way, for example,
-by typing:
-cast holy word
-cast burning hands
-Either of these commands will set the
-RANGE ATTACK to that praying skill.
-Then, "firing" in a direction will
-invoke that prayer in that direction.
-Grace is a measure of how pleased
-your god is with you at the moment.
-Your god will grant you favors if
-you have sufficient grace for the
-favor, or even sometimes if you don't.
-However, asking for big favors when
-you have insufficient grace may bring
-down divine retribution.
-Grace is slowly replenished, up
-to a point.  Beyond that point, you
-must pray to gain more grace.
-This is a convenient way to do this:
-bind use_skill praying
-P
-Then simply hit the P key repeatedly.
-This is also a good way to regenerate
-grace quickly.
-endmsg
-x 7
-y 12
-end
-arch cobblestones2
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 12
-end
-arch magic_mouth
-msg
-Crossfire primer #5:
-Attacking with weapons or fists.
-If you want to physically strike a
-monster, all you need to do is run
-into him with your player, many times
-quickly.  To do this best, you should
-learn the keyboard commands for
-running, and indeed, for moving in
-general.  For moving with the
-keyboard:
+Crossfire Primer #2:
+Basic movement and melee combat.
+During your adventures, you often need to battle monsters.  If you want to physically strike a monster, just run into him with your player, many times, and quickly.  This is called melee combat.  To combat foes or escape with your life, learn the keyboard commands for running and moving.
+Move using the following keys, or by using arrow key clusters or numeric key pads present on many keyboards:
 yku
 h l
 bjn
-Running in a direction is done by
-<Ctrl> directon.  Firing in
-a direction is <shift> direction.
-It's generally better to hit a
-monster with a weapon besides your
-fists.   Click on your inventory
-until you figure out how to get a
-weapon to be marked "wielded".  Then,
-you'll be able to hit the monster
-with the weapon when you run into him.
+To run, hold the <Ctrl> key and press a direction key.  When you run, it is not necessary to repeatedly press direction keys.  You move in the indicated direction until the direction key is released.
+It is better to hit a monster with a weapon rather than with fists.  Click on your inventory until you figure out how to get a weapon "wielded".  Once that is done, you'll be able to hit the monster with the weapon when you run into him.
+Melee combat can be very effective, but be careful.  Some monsters do a great deal of damage to character and equipment during close combat, and yet others are unaffected by physical damage, though these monsters do not appear in the easy dungeons you will play first.
+To avoid melee combat, use ranged weapons like bows, crossbows, throwing weapons, or magic.  Fire such ranged weapons by pressing the <Shift> key in combination with a direction key.
+endmsg
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch magic_mouth
+msg
+Crossfire Primer #3:
+Skills
+Crossfire players can have many skills.  Type in the command "skills" to see which ones you have.  Remember, the apostrophe key is used to begin entering typed commands.  At the moment your character will have few or no skills.  Selecting your character class is the way to choose your beginning skill set.
+The primary skills are organized into groups that represent abilities to use various forms of magic, weapons, and praying, but there are also many other skills that do not fall into these broad categories.
+Some skills are used by typing in commands like this:
+use_skill alchemy
+Other skills, like praying, weapons, and magic are used automatically.  Skills may be inherent to your character, but they may also be acquired by using items like talismans, holy symbols, or other other inventory items.
+endmsg
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch magic_mouth
+msg
+Crossfire Primer #4:
+Magic
+Players with magical skills may cast mana-based spells.  Magic skills are split into sub-groups called evocation, pyromancy, sorcery, and summoning, and are used by typing commands.  For example:
+cast small lightning
+cast burning hands
+The cast command "readies" a spell and selects a ranged attack to prepare for "firing" magic.  To invoke the spell, fire, or shoot, in some direction after it has been readied.  It is also possible to invoke a spell without having to fire or ready it.  For example:
+invoke word of recall
+invoke small lightning
+Using the invoke command does not change the melee or ranged weapon selection.
+Magical energy is called mana and is depleted whenever a player invokes a magical spell.   Mana is normally replenished slowly, but certain items may speed the recharging process.
+endmsg
+x 7
+y 12
+end
+arch cobblestones2
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch magic_mouth
+msg
+Crossfire Primer #5:
+Prayers
+Players with the praying skill can ask help of their gods.  Prayers and magical spells are used in much the same way as magic spells.  For example:
+cast holy word
+cast cause light wounds
+These commands set a ranged attack to that prayer.  Then, like other ranged weapons, the spell is "fired" in a direction to invoke the prayer.  The "invoke" command also works with praying spells.
+Grace is a measure of how pleased your god is with you at the moment.  Your god will grant you favors if you have sufficient grace, or even sometimes when you don't.
+Asking for a big favor when you have insufficient grace may bring down divine retribution, so watch your grace meter when casting spells.
+Grace is slowly replenished, up to a point.  You must pray to gain more grace, or gain it faster than the natural replenishment rate.  The following command may be used to set up a convenient way to pray:
+bind use_skill praying
+P
+This is called keybinding, and sets up a hotkey for a commonly entered text command.  After binding the command to the P key, pressing P causes your character to pray.
 endmsg
 x 7
 y 13
@@ -2278,24 +2121,12 @@ y 13
 end
 arch magic_mouth
 msg
-Crossfire primer #6.
-Religions.
-When you first begin the game, you
-will be unable to use any prayers
-because you have no god to grant them
-as yet.
-Religions are acquired by praying at
-an altar.  Any player with the
-praying skill may pray at an altar
-and become a devotee of that god.
-The various dieties are very
-different from each other.  Beginning
-players should probably choose either
-Mostrai or Valriel, and avoid Gaea and
-Rugilli.  Temples for most of the
-religions are in the town Scorn,
-where you will appear after you
-choose a class.
+Crossfire Primer #6.
+Religions
+Religions are acquired by praying at an altar.  Any player with the praying skill may pray at an altar and become a devotee of that god.
+The deities are very different from each other and can vastly affect how the game is played.  Beginning players should probably choose either Mostrai or Valriel, and should probably avoid Gaea and Ruggilli.
+Praying at an altar can have a number of advantages.  For example, your god may grant you extra grace points, or may spontaneously bless you with some unexpected boon.  Don't give up on praying at the altar as sometimes it takes quite a bit of prayer to convince your god that you are worthy.
+Temples for most of the religions may be found in the town of Scorn, where new players should go after selecting a class.
 endmsg
 x 7
 y 14
@@ -2310,12 +2141,9 @@ y 14
 end
 arch magic_mouth
 msg
-To begin choosing, walk into the room
-below, and examine the different
-classes until you are satisfied.
-When you find a class you like, walk
-forward onto the circle for that
-class.
+To begin choosing a character class, walk into the room ahead.  Examine the different classes by stepping on the first tile of each aisle.  When you find a class that appeals to you, walk forward onto the teleport circle for that class.  At that point, your character will often assume the appearance of the fellow standing at the end of the aisle.
+Note that your character's statistics like strength, dexterity, and so on, will be automatically adjusted according the chosen class.  Keep this in mind when making a selection. Some statistics will get higher, and others will get lower.
+It may be helpful to choose a class keeping in mind which statistics are high and low.  For example, it may not be wise to pick a warrior class if your character has very low strength, and electing a magical class with a very low power statistic may prevent your character from using magic until artifacts may be found that raise your characters statistics to a useful level.
 endmsg
 x 7
 y 15
@@ -2983,14 +2811,9 @@ end
 arch magic_mouth
 msg
 Warrior
-As a Warrior you've been trained in
-the art of combat with weapons and in
-archery.  Because of your training,
-you're stronger, more agile, and
-hardier than you would be otherwise.
-However, your education has neglected
-the magical arts, religious devotion,
-and lacks breadth in general.
+As a Warrior you've been trained in the art of combat with weapons and in archery.
+Because of your training, you're stronger, more agile, and hardier than you would be otherwise.
+Your education, however, has not included studies in the magical arts or religious devotion, and, in general, lacks breadth.
 endmsg
 x 9
 y 15
@@ -3015,28 +2838,10 @@ end
 arch magic_mouth
 msg
 Barbarian
-Growing up in the howling wilderness,
-you've had no chance to pursue
-anything remotely intellectual, let
-alone learn your letters!  It's
-amazing you ever thought of leaving
-your hovel and going somewhere else,
-you're so ignorant.
-But now you have.  You find that
-you're a lot tougher and stronger
-than these cityfolk, and you know how
-to get around in rough terrain.
-You've learned archery in order to
-fill your cookpot, and weaponry is
-second nature to anyone who's had to
-fight with the local orc-tribe over
-food once a month.
-You're deeply afraid of magic, and
-it'll be awhile before you get over
-that and develop any facility with
-it.  You've no deep problem with the
-idea of gods, but you don't know much
-about them.
+Growing up in the howling wilderness, you've had no chance to pursue anything remotely intellectual, let alone learn your letters!  It's amazing you ever thought of leaving your hovel and going somewhere else, you're so ignorant.  But now you have.
+You find that you're a lot tougher and stronger than these cityfolk, and you know how to get around in rough terrain.  You've learned archery in order to fill your cookpot, and weaponry is second nature to anyone who's had to fight with the local orc-tribe over food once a month.
+You're deeply afraid of magic, and it'll be a while before you get over that and develop any facility with it.
+You've no deep problem with the idea of gods, but you don't know much about them.
 endmsg
 x 9
 y 17
@@ -3061,24 +2866,9 @@ end
 arch magic_mouth
 msg
 Swashbuckler
-On shipboard, you've learned good
-balance and agility, and you've also
-become strong and hardy.  Because of
-occasional oarswork, you and your
-shipmates have an admirable command
-of rhythm, and you can sing well.
-You've learned to make the most of
-your time in port:  after you pass
-out drunk in a bar and wake to find
-yourself short your pay, you've found
-ways to acquire new capital, or at
-the very least, talk someone into
-helping you out of your fix.
-On numerous occasions, you've taken
-up arms and the bow in defense of
-your ship, so you're facile with
-weapons, but you've had no chance to
-learn any magic or the ways of gods.
+Shipboard most of your life, you've learned good balance and agility, and you've also become strong and hardy.  Because of occasional oarswork, you and your shipmates have an admirable command of rhythm, and you can sing well.
+You've learned to make the most of your time in port:  after passing out drunk in a bar and waking to find yourself short your pay, you've found ways to acquire new capital, or at the very least, talk someone into helping you out of your fix.
+On numerous occasions, you've taken up arms and bow in defense of your ship, so you're facile with weapons, but you've had no chance to learn magic or the ways of gods.
 endmsg
 x 9
 y 19
@@ -3103,17 +2893,8 @@ end
 arch magic_mouth
 msg
 Ninja
-As a member of the secret society of
-the Ninja, you've been taught archery
-and the use of weapons, and also the
-art of combat without weapons.  Your
-style of combat, though, leans very
-much toward the sneak attack, so
-you've been taught how to be
-inconspicuous and how to appear in
-places you're not expected.  You have
-had NO introduction to either
-religious devotion or magic.
+As a member of the secret society of the Ninja, you've been taught archery, the use of weapons, and also the art of combat without weapons.  Your style of combat, leans very much toward the sneak attack, so you've been taught how to be inconspicuous and to appear in places you're not expected.
+You have had no introduction to either religious devotion or magic.
 endmsg
 x 9
 y 21
@@ -3138,18 +2919,9 @@ end
 arch magic_mouth
 msg
 Thief
-As a thief you've learned to steal
-and you're familiar with the value a
-fence will give you on your "finds".
-You've had some weaponry training,
-including archery, this being
-advisable to someone who is likely to
-have acrimonious disagreements about
-the ownership of valuable objects.
-You've had no time for religious
-devotion or the study of magecraft,
-but your quick wits have kept you
-alive many times.
+Trained to be a thief from a young age, you've learned to steal and you're familiar with the value a fence will give you on your "finds".
+You've had some weaponry training, including archery; this being advisable to someone who is likely to have acrimonious disagreements about the ownership of valuable objects.
+You've had no time for either religious devotion or the study of magecraft, but your quick wits have been enough to keep you alive so far.
 endmsg
 x 9
 y 23
@@ -3174,17 +2946,9 @@ end
 arch magic_mouth
 msg
 Monk
-In the Monastery, they believed in
-mental discipline and peace through
-physical training, meditation, and to
-a lesser extent, religious devotion.
-Your mental equilibrium requires you
-to forego the use of weapons, but
-your physical training in karate
-means you're not helpless.  Your
-inner peacefulness grants you the
-ability to regenerate faster and to
-sense auras.
+In the Monastery, they believed in mental discipline and peace through physical training, meditation, and, to a lesser extent, religious devotion.
+Your mental equilibrium requires you to forego the use of weapons, but your physical training in karate means you're not helpless.
+Your inner peace grants you the ability to regenerate faster and to sense metaphysical auras.
 endmsg
 x 9
 y 25
@@ -3209,22 +2973,9 @@ end
 arch magic_mouth
 msg
 Paladin
-You are a militant priest, with an
-emphasis on 'priest'.  You've been
-taught archery and the use of
-weapons, but great care has been
-taken that you're doctrinally
-correct.  Now you've been sent out
-in the world to convert the
-unrighteous and destroy the enemies
-of the faith, and your churchmembers
-have been charged a pretty penny to
-equip you to do it!
-All other areas of your education
-have been neglected.  Perhaps aware
-of your deficiency, your superiors
-have given you a measure of
-protection from magic.
+You are a militant priest, with an emphasis on 'priest'.
+You've been taught archery and the use of weapons, but great care has been taken that you're doctrinally correct.  Now you've been sent out in the world to convert the unrighteous and destroy the enemies of the faith.  Your churchmembers have been charged a pretty penny to equip you for the job!
+All other areas of your education have been neglected.  Perhaps aware of your deficiency, your superiors have given you some measure of protection from magic.
 endmsg
 x 9
 y 27
@@ -3249,17 +3000,9 @@ end
 arch magic_mouth
 msg
 Priest
-As a priest, you've learned an
-intense devotion to your god, and
-you've learned how to channel the
-energies your god vouchsafes to his
-devotees.  You've been taught the use
-of weapons, but only cursorily, and
-your physical training has been
-lacking in general.  Since you're in
-tune with the holy powers, you can
-tell when a god has marked an object
-as accursed.
+As a priest, you've learned an intense devotion to your god, and you've learned how to channel the energies your god vouchsafes to his devotees.
+You've been taught the use of weapons, but only cursorily, and your physical training has been lacking in general.
+Since you're in tune with the holy powers, you can tell when a god has marked an object as accursed.
 endmsg
 x 9
 y 29
@@ -3368,8 +3111,7 @@ y 15
 end
 arch magic_mouth
 msg
-Step on the circle to become a
-Warrior.
+Step on the circle to become a Warrior.
 endmsg
 x 10
 y 15
@@ -3393,8 +3135,7 @@ y 17
 end
 arch magic_mouth
 msg
-Step onto the circle to become a
-Barbarian.
+Step onto the circle to become a Barbarian.
 endmsg
 x 10
 y 17
@@ -3418,8 +3159,7 @@ y 19
 end
 arch magic_mouth
 msg
-Step forward to become a
-swashbuckler.
+Step forward to become a Swashbuckler.
 endmsg
 x 10
 y 19
@@ -3437,7 +3177,7 @@ end
 arch blackmarble
 name nothingness
 name_pl nothingness
-face blocked.111
+face locked.111
 x 10
 y 21
 end
@@ -3467,7 +3207,7 @@ y 23
 end
 arch magic_mouth
 msg
-Step forward to become a thief.
+Step forward to become a Thief.
 endmsg
 x 10
 y 23
@@ -3493,8 +3233,7 @@ arch magic_mouth
 msg
 Step forward to become a Monk.
 Beware!  Monks cannot use weapons.
-This is a significant handicap:
-experienced players only.
+This is a significant handicap:  experienced players only.
 endmsg
 x 10
 y 25
