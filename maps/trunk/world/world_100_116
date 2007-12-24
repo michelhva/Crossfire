@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_100_115
@@ -7055,7 +7055,11 @@ arch pstone_1
 x 28
 y 16
 end
-arch tree
+arch grass_only
+x 28
+y 16
+end
+arch tree3
 x 28
 y 16
 end
@@ -7298,7 +7302,11 @@ arch pstone_1
 x 29
 y 14
 end
-arch tree
+arch grass_only
+x 29
+y 14
+end
+arch tree3
 x 29
 y 14
 end

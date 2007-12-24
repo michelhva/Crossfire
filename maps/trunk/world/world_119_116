@@ -3,7 +3,7 @@ name world_119_116
 width 50
 height 50
 msg
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_119_115
@@ -1315,10 +1315,14 @@ x 5
 y 21
 elevation 3674
 end
-arch tree
+arch grass_only
 x 5
 y 22
 elevation 1364
+end
+arch tree3
+x 5
+y 22
 end
 arch steppe
 x 5
@@ -12812,10 +12816,14 @@ x 45
 y 1
 elevation 4037
 end
-arch tree
+arch grass_only
 x 45
 y 2
 elevation 2991
+end
+arch tree3
+x 45
+y 2
 end
 arch pstone_3
 x 45
@@ -13343,10 +13351,14 @@ x 47
 y 2
 elevation 3370
 end
-arch evergreen
+arch grass_only
 x 47
 y 3
 elevation 2819
+end
+arch tree5
+x 47
+y 3
 end
 arch hills_rocky
 x 47
@@ -13597,10 +13609,14 @@ arch hills_rocky
 x 48
 elevation 3590
 end
-arch evergreen
+arch grass_only
 x 48
 y 1
 elevation 1850
+end
+arch tree5
+x 48
+y 1
 end
 arch hills_rocky
 x 48
@@ -13617,10 +13633,14 @@ x 48
 y 4
 elevation 3590
 end
-arch evergreen
+arch grass_only
 x 48
 y 5
 elevation 2691
+end
+arch tree5
+x 48
+y 5
 end
 arch desert
 x 48

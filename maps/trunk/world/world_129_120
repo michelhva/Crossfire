@@ -2,6 +2,9 @@ arch map
 name world_129_120
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_129_119
 tile_path_3 world_129_121
@@ -1236,10 +1239,14 @@ x 5
 y 6
 elevation 2180
 end
-arch evergreens
+arch grass_only
 x 5
 y 7
 elevation 2431
+end
+arch evergreens2
+x 5
+y 7
 end
 arch hills
 x 5
@@ -1480,10 +1487,14 @@ x 6
 y 5
 elevation 459
 end
-arch evergreens
+arch grass_only
 x 6
 y 6
 elevation 1701
+end
+arch evergreens2
+x 6
+y 6
 end
 arch hills
 x 6

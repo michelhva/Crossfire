@@ -2,6 +2,9 @@ arch map
 name world_115_100
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_2 world_116_100
 tile_path_3 world_115_101
@@ -4434,10 +4437,14 @@ x 17
 y 48
 elevation 715
 end
-arch tree
+arch grass_only
 x 17
 y 49
 elevation 1296
+end
+arch tree3
+x 17
+y 49
 end
 arch deep_sea
 x 18
@@ -4683,10 +4690,14 @@ x 18
 y 48
 elevation 635
 end
-arch evergreens
+arch grass_only
 x 18
 y 49
 elevation 1371
+end
+arch evergreens2
+x 18
+y 49
 end
 arch deep_sea
 x 19
@@ -5609,10 +5620,14 @@ x 22
 y 34
 elevation 546
 end
-arch evergreens
+arch grass_only
 x 22
 y 35
 elevation 1114
+end
+arch evergreens2
+x 22
+y 35
 end
 arch grass
 x 22
@@ -5848,30 +5863,50 @@ x 23
 y 32
 elevation 771
 end
-arch evergreens
+arch grass_only
 x 23
 y 33
 elevation 1215
 end
-arch evergreens
+arch evergreens2
+x 23
+y 33
+end
+arch grass_only
 x 23
 y 34
 elevation 1655
 end
-arch evergreens
+arch evergreens2
+x 23
+y 34
+end
+arch grass_only
 x 23
 y 35
 elevation 1687
 end
-arch evergreens
+arch evergreens2
+x 23
+y 35
+end
+arch grass_only
 x 23
 y 36
 elevation 1497
 end
-arch evergreens
+arch evergreens2
+x 23
+y 36
+end
+arch grass_only
 x 23
 y 37
 elevation 1072
+end
+arch evergreens2
+x 23
+y 37
 end
 arch grass
 x 23
@@ -6092,35 +6127,59 @@ x 24
 y 31
 elevation 544
 end
-arch evergreens
+arch grass_only
 x 24
 y 32
 elevation 1003
 end
-arch evergreens
+arch evergreens2
+x 24
+y 32
+end
+arch grass_only
 x 24
 y 33
 elevation 1717
 end
-arch evergreens
+arch evergreens2
+x 24
+y 33
+end
+arch grass_only
 x 24
 y 34
 elevation 2346
 end
-arch evergreens
+arch evergreens2
+x 24
+y 34
+end
+arch grass_only
 x 24
 y 35
 elevation 2354
 end
-arch evergreens
+arch evergreens2
+x 24
+y 35
+end
+arch grass_only
 x 24
 y 36
 elevation 1380
 end
-arch evergreens
+arch evergreens2
+x 24
+y 36
+end
+arch grass_only
 x 24
 y 37
 elevation 1289
+end
+arch evergreens2
+x 24
+y 37
 end
 arch grass
 x 24
@@ -6346,30 +6405,50 @@ x 25
 y 32
 elevation 797
 end
-arch evergreens
+arch grass_only
 x 25
 y 33
 elevation 1845
 end
-arch evergreens
+arch evergreens2
+x 25
+y 33
+end
+arch grass_only
 x 25
 y 34
 elevation 2608
 end
-arch evergreens
+arch evergreens2
+x 25
+y 34
+end
+arch grass_only
 x 25
 y 35
 elevation 2677
 end
-arch evergreens
+arch evergreens2
+x 25
+y 35
+end
+arch grass_only
 x 25
 y 36
 elevation 2106
 end
-arch evergreens
+arch evergreens2
+x 25
+y 36
+end
+arch grass_only
 x 25
 y 37
 elevation 1335
+end
+arch evergreens2
+x 25
+y 37
 end
 arch grass
 x 25
@@ -6595,30 +6674,50 @@ x 26
 y 32
 elevation 639
 end
-arch evergreens
+arch grass_only
 x 26
 y 33
 elevation 1420
 end
-arch evergreens
+arch evergreens2
+x 26
+y 33
+end
+arch grass_only
 x 26
 y 34
 elevation 2248
 end
-arch evergreens
+arch evergreens2
+x 26
+y 34
+end
+arch grass_only
 x 26
 y 35
 elevation 2556
 end
-arch evergreens
+arch evergreens2
+x 26
+y 35
+end
+arch grass_only
 x 26
 y 36
 elevation 2007
 end
-arch evergreens
+arch evergreens2
+x 26
+y 36
+end
+arch grass_only
 x 26
 y 37
 elevation 1003
+end
+arch evergreens2
+x 26
+y 37
 end
 arch grass
 x 26
@@ -6849,20 +6948,32 @@ x 27
 y 33
 elevation 393
 end
-arch evergreens
+arch grass_only
 x 27
 y 34
 elevation 1457
 end
-arch evergreens
+arch evergreens2
+x 27
+y 34
+end
+arch grass_only
 x 27
 y 35
 elevation 2035
 end
-arch evergreens
+arch evergreens2
+x 27
+y 35
+end
+arch grass_only
 x 27
 y 36
 elevation 1727
+end
+arch evergreens2
+x 27
+y 36
 end
 arch grass
 x 27
@@ -7103,15 +7214,23 @@ x 28
 y 34
 elevation 725
 end
-arch evergreens
+arch grass_only
 x 28
 y 35
 elevation 1503
 end
-arch evergreens
+arch evergreens2
+x 28
+y 35
+end
+arch grass_only
 x 28
 y 36
 elevation 1348
+end
+arch evergreens2
+x 28
+y 36
 end
 arch grass
 x 28
@@ -9608,10 +9727,14 @@ x 38
 y 37
 elevation 1185
 end
-arch evergreens
+arch grass_only
 x 38
 y 38
 elevation 1810
+end
+arch evergreens2
+x 38
+y 38
 end
 arch woods_2
 x 38
@@ -10111,10 +10234,14 @@ x 40
 y 38
 elevation 795
 end
-arch tree
+arch grass_only
 x 40
 y 39
 elevation 1529
+end
+arch tree3
+x 40
+y 39
 end
 arch woods_2
 x 40

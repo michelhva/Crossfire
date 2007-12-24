@@ -8,6 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-27
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_127_124
@@ -3650,10 +3651,14 @@ x 14
 y 34
 elevation 1249
 end
-arch evergreen
+arch grass_only
 x 14
 y 35
 elevation 1158
+end
+arch tree5
+x 14
+y 35
 end
 arch grass
 x 14

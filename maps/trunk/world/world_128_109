@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2007-12-03 Gene Alexander
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -1023,10 +1023,14 @@ x 4
 y 12
 elevation 1129
 end
-arch tree
+arch grass_only
 x 4
 y 13
 elevation 1008
+end
+arch tree3
+x 4
+y 13
 end
 arch brush
 x 4
@@ -1267,20 +1271,32 @@ x 5
 y 11
 elevation 3098
 end
-arch tree
+arch grass_only
 x 5
 y 12
 elevation 2980
 end
-arch tree
+arch tree3
+x 5
+y 12
+end
+arch grass_only
 x 5
 y 13
 elevation 2277
 end
-arch tree
+arch tree3
+x 5
+y 13
+end
+arch grass_only
 x 5
 y 14
 elevation 1359
+end
+arch tree3
+x 5
+y 14
 end
 arch brush
 x 5
@@ -1521,10 +1537,14 @@ x 6
 y 12
 elevation 4260
 end
-arch tree
+arch grass_only
 x 6
 y 13
 elevation 2812
+end
+arch tree3
+x 6
+y 13
 end
 arch brush
 x 6
@@ -1745,10 +1765,14 @@ x 7
 y 7
 elevation 7830
 end
-arch tree
+arch grass_only
 x 7
 y 8
 elevation 2113
+end
+arch tree3
+x 7
+y 8
 end
 arch mountain
 x 7
@@ -1770,15 +1794,23 @@ x 7
 y 12
 elevation 4764
 end
-arch evergreens
+arch grass_only
 x 7
 y 13
 elevation 2900
 end
-arch tree
+arch evergreens2
+x 7
+y 13
+end
+arch grass_only
 x 7
 y 14
 elevation 1256
+end
+arch tree3
+x 7
+y 14
 end
 arch brush
 x 7
@@ -2267,10 +2299,14 @@ x 9
 y 13
 elevation 3126
 end
-arch tree
+arch grass_only
 x 9
 y 14
 elevation 2428
+end
+arch tree3
+x 9
+y 14
 end
 arch jungle_1
 x 9
@@ -2506,20 +2542,32 @@ x 10
 y 12
 elevation 30
 end
-arch tree
+arch grass_only
 x 10
 y 13
 elevation 2563
 end
-arch tree
+arch tree3
+x 10
+y 13
+end
+arch grass_only
 x 10
 y 14
 elevation 2905
 end
-arch tree
+arch tree3
+x 10
+y 14
+end
+arch grass_only
 x 10
 y 15
 elevation 2188
+end
+arch tree3
+x 10
+y 15
 end
 arch brush
 x 10
@@ -2748,30 +2796,46 @@ x 11
 y 11
 elevation 3987
 end
-arch tree
+arch grass_only
 x 11
 y 12
 elevation 1254
 end
-arch tree
+arch tree3
+x 11
+y 12
+end
+arch grass_only
 x 11
 y 13
 elevation 1479
+end
+arch tree3
+x 11
+y 13
 end
 arch hills_rocky
 x 11
 y 14
 elevation 3537
 end
-arch tree
+arch grass_only
 x 11
 y 15
 elevation 2890
 end
-arch tree
+arch tree3
+x 11
+y 15
+end
+arch grass_only
 x 11
 y 16
 elevation 1698
+end
+arch tree3
+x 11
+y 16
 end
 arch shallow_sea
 x 11
@@ -4639,10 +4703,14 @@ x 18
 y 35
 elevation 1456
 end
-arch tree
+arch grass_only
 x 18
 y 36
 elevation 2013
+end
+arch tree3
+x 18
+y 36
 end
 arch hills
 x 18
@@ -10468,7 +10536,11 @@ arch cwall_2_1_2
 x 42
 y 7
 end
-arch tree
+arch grass_only
+x 42
+y 8
+end
+arch tree3
 x 42
 y 8
 end
@@ -10480,7 +10552,11 @@ arch grass
 x 42
 y 10
 end
-arch tree
+arch grass_only
+x 42
+y 11
+end
+arch tree3
 x 42
 y 11
 end
@@ -11219,7 +11295,11 @@ arch cwall_2_1_2
 x 45
 y 7
 end
-arch tree
+arch grass_only
+x 45
+y 8
+end
+arch tree3
 x 45
 y 8
 end
@@ -11231,7 +11311,11 @@ arch grass
 x 45
 y 10
 end
-arch tree
+arch grass_only
+x 45
+y 11
+end
+arch tree3
 x 45
 y 11
 end

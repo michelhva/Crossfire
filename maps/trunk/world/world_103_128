@@ -2,6 +2,9 @@ arch map
 name world_103_128
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_103_127
 tile_path_2 world_104_128
@@ -1770,10 +1773,14 @@ x 7
 y 13
 elevation 2045
 end
-arch tree
+arch grass_only
 x 7
 y 14
 elevation 2437
+end
+arch tree3
+x 7
+y 14
 end
 arch jungle_1
 x 7
@@ -2751,10 +2758,14 @@ x 11
 y 10
 elevation 1697
 end
-arch tree
+arch grass_only
 x 11
 y 11
 elevation 1909
+end
+arch tree3
+x 11
+y 11
 end
 arch woods_2
 x 11
@@ -2990,20 +3001,32 @@ x 12
 y 8
 elevation 1056
 end
-arch tree
+arch grass_only
 x 12
 y 9
 elevation 1969
 end
-arch tree
+arch tree3
+x 12
+y 9
+end
+arch grass_only
 x 12
 y 10
 elevation 1112
 end
-arch tree
+arch tree3
+x 12
+y 10
+end
+arch grass_only
 x 12
 y 11
 elevation 1113
+end
+arch tree3
+x 12
+y 11
 end
 arch brush
 x 12
@@ -3040,10 +3063,14 @@ x 12
 y 18
 elevation 2874
 end
-arch tree
+arch grass_only
 x 12
 y 19
 elevation 2161
+end
+arch tree3
+x 12
+y 19
 end
 arch brush
 x 12
@@ -3991,10 +4018,14 @@ x 16
 y 9
 elevation 872
 end
-arch evergreen
+arch grass_only
 x 16
 y 10
 elevation 1101
+end
+arch tree5
+x 16
+y 10
 end
 arch hills
 x 16
@@ -4743,15 +4774,23 @@ x 19
 y 10
 elevation -7
 end
-arch tree
+arch grass_only
 x 19
 y 11
 elevation 1058
 end
-arch evergreen
+arch tree3
+x 19
+y 11
+end
+arch grass_only
 x 19
 y 12
 elevation 1733
+end
+arch tree5
+x 19
+y 12
 end
 arch desert
 x 19
@@ -5002,10 +5041,14 @@ x 20
 y 12
 elevation 1393
 end
-arch evergreen
+arch grass_only
 x 20
 y 13
 elevation 1581
+end
+arch tree5
+x 20
+y 13
 end
 arch desert
 x 20
@@ -11895,20 +11938,32 @@ x 47
 y 46
 elevation 1469
 end
-arch evergreens
+arch grass_only
 x 47
 y 47
 elevation 2114
 end
-arch tree
+arch evergreens2
+x 47
+y 47
+end
+arch grass_only
 x 47
 y 48
 elevation 2055
 end
-arch evergreens
+arch tree3
+x 47
+y 48
+end
+arch grass_only
 x 47
 y 49
 elevation 1677
+end
+arch evergreens2
+x 47
+y 49
 end
 arch deep_sea
 x 48
@@ -12139,10 +12194,14 @@ x 48
 y 45
 elevation 732
 end
-arch tree
+arch grass_only
 x 48
 y 46
 elevation 2498
+end
+arch tree3
+x 48
+y 46
 end
 arch steppe
 x 48
@@ -12154,10 +12213,14 @@ x 48
 y 48
 elevation 3181
 end
-arch evergreens
+arch grass_only
 x 48
 y 49
 elevation 2662
+end
+arch evergreens2
+x 48
+y 49
 end
 arch deep_sea
 x 49
@@ -12403,8 +12466,12 @@ x 49
 y 48
 elevation 3349
 end
-arch evergreens
+arch grass_only
 x 49
 y 49
 elevation 2973
+end
+arch evergreens2
+x 49
+y 49
 end

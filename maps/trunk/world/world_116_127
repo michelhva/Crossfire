@@ -2,6 +2,9 @@ arch map
 name world_116_127
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_116_126
 tile_path_2 world_117_127
@@ -9175,10 +9178,14 @@ arch hills_rocky
 x 37
 elevation 3174
 end
-arch tree
+arch grass_only
 x 37
 y 1
 elevation 2472
+end
+arch tree3
+x 37
+y 1
 end
 arch jungle_1
 x 37
@@ -11163,9 +11170,12 @@ x 44
 y 49
 elevation -13578
 end
-arch tree
+arch grass_only
 x 45
 elevation 2530
+end
+arch tree3
+x 45
 end
 arch woods_2
 x 45
@@ -11416,10 +11426,14 @@ arch jungle_1
 x 46
 elevation 1220
 end
-arch tree
+arch grass_only
 x 46
 y 1
 elevation 1125
+end
+arch tree3
+x 46
+y 1
 end
 arch desert
 x 46
@@ -12183,10 +12197,14 @@ x 49
 y 4
 elevation 429
 end
-arch evergreen
+arch grass_only
 x 49
 y 5
 elevation 1610
+end
+arch tree5
+x 49
+y 5
 end
 arch woods_2
 x 49
