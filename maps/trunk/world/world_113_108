@@ -2,6 +2,9 @@ arch map
 name world_113_108
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_113_107
 tile_path_2 world_114_108
@@ -406,10 +409,14 @@ x 1
 y 39
 elevation 3362
 end
-arch evergreen
+arch grass_only
 x 1
 y 40
 elevation 2914
+end
+arch tree5
+x 1
+y 40
 end
 arch woods_2
 x 1
@@ -8045,10 +8052,14 @@ x 32
 y 23
 elevation 5875
 end
-arch evergreen
+arch grass_only
 x 32
 y 24
 elevation 2442
+end
+arch tree5
+x 32
+y 24
 end
 arch steppe
 x 32

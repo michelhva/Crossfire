@@ -2,6 +2,9 @@ arch map
 name world_123_113
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_123_112
 tile_path_2 world_124_113
@@ -7765,10 +7768,14 @@ x 31
 y 16
 elevation 3113
 end
-arch evergreens
+arch grass_only
 x 31
 y 17
 elevation 2525
+end
+arch evergreens2
+x 31
+y 17
 end
 arch steppe
 x 31
@@ -9228,10 +9235,14 @@ x 37
 y 5
 elevation 708
 end
-arch evergreens
+arch grass_only
 x 37
 y 6
 elevation 2818
+end
+arch evergreens2
+x 37
+y 6
 end
 arch steppe
 x 37
@@ -9253,10 +9264,14 @@ x 37
 y 10
 elevation 3823
 end
-arch evergreens
+arch grass_only
 x 37
 y 11
 elevation 2980
+end
+arch evergreens2
+x 37
+y 11
 end
 arch hills_rocky
 x 37
@@ -9461,10 +9476,14 @@ x 38
 y 1
 elevation 4599
 end
-arch evergreens
+arch grass_only
 x 38
 y 2
 elevation 2615
+end
+arch evergreens2
+x 38
+y 2
 end
 arch hills_rocky
 x 38
@@ -9506,10 +9525,14 @@ x 38
 y 10
 elevation 3892
 end
-arch evergreens
+arch grass_only
 x 38
 y 11
 elevation 2673
+end
+arch evergreens2
+x 38
+y 11
 end
 arch hills_rocky
 x 38
@@ -10012,10 +10035,14 @@ x 40
 y 10
 elevation 2965
 end
-arch evergreens
+arch grass_only
 x 40
 y 11
 elevation 1957
+end
+arch evergreens2
+x 40
+y 11
 end
 arch steppe
 x 40
@@ -10260,15 +10287,23 @@ x 41
 y 9
 elevation 4851
 end
-arch evergreens
+arch grass_only
 x 41
 y 10
 elevation 2776
 end
-arch evergreens
+arch evergreens2
+x 41
+y 10
+end
+arch grass_only
 x 41
 y 11
 elevation 2215
+end
+arch evergreens2
+x 41
+y 11
 end
 arch steppe
 x 41
@@ -10721,9 +10756,12 @@ arch dirtroad_2_2_4
 x 42
 y 49
 end
-arch evergreen
+arch grass_only
 x 43
 elevation 2146
+end
+arch tree5
+x 43
 end
 arch hills_rocky
 x 43
@@ -12040,10 +12078,14 @@ x 48
 y 10
 elevation 316
 end
-arch evergreens
+arch grass_only
 x 48
 y 11
 elevation 2127
+end
+arch evergreens2
+x 48
+y 11
 end
 arch steppe
 x 48

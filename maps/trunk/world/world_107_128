@@ -3,6 +3,9 @@ name world_107_128
 difficulty 1
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_107_127
 tile_path_2 world_108_128
@@ -1658,7 +1661,11 @@ arch sea
 x 6
 y 46
 end
-arch evergreens
+arch grass_only
+x 6
+y 47
+end
+arch evergreens2
 x 6
 y 47
 end
@@ -1903,7 +1910,11 @@ arch woods
 x 7
 y 46
 end
-arch evergreens
+arch grass_only
+x 7
+y 47
+end
+arch evergreens2
 x 7
 y 47
 end
@@ -2338,7 +2349,11 @@ arch woods
 x 9
 y 37
 end
-arch evergreens
+arch grass_only
+x 9
+y 38
+end
+arch evergreens2
 x 9
 y 38
 end
@@ -2374,7 +2389,11 @@ arch woods
 x 9
 y 46
 end
-arch evergreens
+arch grass_only
+x 9
+y 47
+end
+arch evergreens2
 x 9
 y 47
 end
@@ -2560,11 +2579,19 @@ arch sea
 x 10
 y 34
 end
-arch evergreens
+arch grass_only
 x 10
 y 35
 end
-arch evergreens
+arch evergreens2
+x 10
+y 35
+end
+arch grass_only
+x 10
+y 36
+end
+arch evergreens2
 x 10
 y 36
 end
@@ -2572,7 +2599,11 @@ arch woods
 x 10
 y 37
 end
-arch evergreens
+arch grass_only
+x 10
+y 38
+end
+arch evergreens2
 x 10
 y 38
 end
@@ -2600,7 +2631,11 @@ arch grass
 x 10
 y 44
 end
-arch evergreens
+arch grass_only
+x 10
+y 45
+end
+arch evergreens2
 x 10
 y 45
 end
@@ -2802,11 +2837,19 @@ arch woods
 x 11
 y 36
 end
-arch evergreens
+arch grass_only
 x 11
 y 37
 end
-arch evergreens
+arch evergreens2
+x 11
+y 37
+end
+arch grass_only
+x 11
+y 38
+end
+arch evergreens2
 x 11
 y 38
 end
@@ -2838,7 +2881,11 @@ arch brush
 x 11
 y 45
 end
-arch evergreens
+arch grass_only
+x 11
+y 46
+end
+arch evergreens2
 x 11
 y 46
 end
@@ -3048,11 +3095,19 @@ arch brush
 x 12
 y 39
 end
-arch evergreens
+arch grass_only
 x 12
 y 40
 end
-arch evergreens
+arch evergreens2
+x 12
+y 40
+end
+arch grass_only
+x 12
+y 41
+end
+arch evergreens2
 x 12
 y 41
 end
@@ -3514,7 +3569,11 @@ arch sea
 x 14
 y 36
 end
-arch evergreens
+arch grass_only
+x 14
+y 37
+end
+arch evergreens2
 x 14
 y 37
 end
@@ -3781,7 +3840,11 @@ arch mountain
 x 15
 y 43
 end
-arch evergreens
+arch grass_only
+x 15
+y 44
+end
+arch evergreens2
 x 15
 y 44
 end
@@ -3993,7 +4056,11 @@ arch woods
 x 16
 y 37
 end
-arch evergreens
+arch grass_only
+x 16
+y 38
+end
+arch evergreens2
 x 16
 y 38
 end
@@ -6880,10 +6947,14 @@ arch dungeon_magic
 x 27
 y 12
 end
-arch evergreens
+arch grass_only
 x 27
 y 13
 elevation 1373
+end
+arch evergreens2
+x 27
+y 13
 end
 arch dungeon_magic
 x 27
@@ -7196,10 +7267,14 @@ arch dungeon_magic
 x 28
 y 14
 end
-arch evergreens
+arch grass_only
 x 28
 y 15
 elevation 1114
+end
+arch evergreens2
+x 28
+y 15
 end
 arch dungeon_magic
 x 28
@@ -7214,10 +7289,14 @@ arch dungeon_magic
 x 28
 y 16
 end
-arch evergreens
+arch grass_only
 x 28
 y 17
 elevation 1015
+end
+arch evergreens2
+x 28
+y 17
 end
 arch dungeon_magic
 x 28
@@ -7465,10 +7544,14 @@ arch dungeon_magic
 x 29
 y 13
 end
-arch evergreens
+arch grass_only
 x 29
 y 14
 elevation 1492
+end
+arch evergreens2
+x 29
+y 14
 end
 arch dungeon_magic
 x 29
@@ -7756,10 +7839,14 @@ arch dungeon_magic
 x 30
 y 15
 end
-arch evergreens
+arch grass_only
 x 30
 y 16
 elevation 2241
+end
+arch evergreens2
+x 30
+y 16
 end
 arch dungeon_magic
 x 30
@@ -8038,10 +8125,14 @@ arch dungeon_magic
 x 31
 y 16
 end
-arch evergreens
+arch grass_only
 x 31
 y 17
 elevation 1016
+end
+arch evergreens2
+x 31
+y 17
 end
 arch dungeon_magic
 x 31

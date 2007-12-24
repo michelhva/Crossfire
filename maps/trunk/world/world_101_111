@@ -2,6 +2,9 @@ arch map
 name world_101_111
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_101_110
 tile_path_2 world_102_111
@@ -1705,15 +1708,23 @@ arch woods
 x 7
 elevation 2022
 end
-arch tree
+arch grass_only
 x 7
 y 1
 elevation 2182
 end
-arch tree
+arch tree3
+x 7
+y 1
+end
+arch grass_only
 x 7
 y 2
 elevation 1668
+end
+arch tree3
+x 7
+y 2
 end
 arch brush
 x 7
@@ -1954,10 +1965,14 @@ arch hills
 x 8
 elevation 2247
 end
-arch tree
+arch grass_only
 x 8
 y 1
 elevation 2053
+end
+arch tree3
+x 8
+y 1
 end
 arch woods
 x 8
@@ -2936,15 +2951,23 @@ x 11
 y 47
 elevation 905
 end
-arch evergreens
+arch grass_only
 x 11
 y 48
 elevation 1158
 end
-arch evergreens
+arch evergreens2
+x 11
+y 48
+end
+arch grass_only
 x 11
 y 49
 elevation 1093
+end
+arch evergreens2
+x 11
+y 49
 end
 arch mountain
 x 12
@@ -3185,15 +3208,23 @@ x 12
 y 47
 elevation 1869
 end
-arch evergreens
+arch grass_only
 x 12
 y 48
 elevation 1779
 end
-arch evergreens
+arch evergreens2
+x 12
+y 48
+end
+arch grass_only
 x 12
 y 49
 elevation 1301
+end
+arch evergreens2
+x 12
+y 49
 end
 arch hills_rocky
 x 13
@@ -3419,10 +3450,14 @@ x 13
 y 44
 elevation 1655
 end
-arch evergreens
+arch grass_only
 x 13
 y 45
 elevation 1773
+end
+arch evergreens2
+x 13
+y 45
 end
 arch hills
 x 13
@@ -3439,10 +3474,14 @@ x 13
 y 48
 elevation 2331
 end
-arch evergreens
+arch grass_only
 x 13
 y 49
 elevation 1986
+end
+arch evergreens2
+x 13
+y 49
 end
 arch hills_rocky
 x 14
@@ -3683,15 +3722,23 @@ x 14
 y 47
 elevation 2754
 end
-arch evergreens
+arch grass_only
 x 14
 y 48
 elevation 2619
 end
-arch evergreens
+arch evergreens2
+x 14
+y 48
+end
+arch grass_only
 x 14
 y 49
 elevation 2137
+end
+arch evergreens2
+x 14
+y 49
 end
 arch mountain
 x 15
@@ -3917,10 +3964,14 @@ x 15
 y 44
 elevation 1942
 end
-arch evergreens
+arch grass_only
 x 15
 y 45
 elevation 2091
+end
+arch evergreens2
+x 15
+y 45
 end
 arch hills
 x 15
@@ -3932,10 +3983,14 @@ x 15
 y 47
 elevation 2587
 end
-arch evergreens
+arch grass_only
 x 15
 y 48
 elevation 2533
+end
+arch evergreens2
+x 15
+y 48
 end
 arch woods_2
 x 15
@@ -4171,25 +4226,41 @@ x 16
 y 45
 elevation 1616
 end
-arch evergreens
+arch grass_only
 x 16
 y 46
 elevation 1624
 end
-arch evergreens
+arch evergreens2
+x 16
+y 46
+end
+arch grass_only
 x 16
 y 47
 elevation 2120
 end
-arch evergreens
+arch evergreens2
+x 16
+y 47
+end
+arch grass_only
 x 16
 y 48
 elevation 2531
 end
-arch evergreens
+arch evergreens2
+x 16
+y 48
+end
+arch grass_only
 x 16
 y 49
 elevation 1960
+end
+arch evergreens2
+x 16
+y 49
 end
 arch mountain2
 x 17
@@ -4420,25 +4491,37 @@ x 17
 y 45
 elevation 1087
 end
-arch evergreens
+arch grass_only
 x 17
 y 46
 elevation 1718
+end
+arch evergreens2
+x 17
+y 46
 end
 arch hills
 x 17
 y 47
 elevation 2600
 end
-arch evergreens
+arch grass_only
 x 17
 y 48
 elevation 2739
 end
-arch evergreens
+arch evergreens2
+x 17
+y 48
+end
+arch grass_only
 x 17
 y 49
 elevation 2835
+end
+arch evergreens2
+x 17
+y 49
 end
 arch mountain2
 x 18
@@ -4669,10 +4752,14 @@ x 18
 y 45
 elevation 716
 end
-arch evergreens
+arch grass_only
 x 18
 y 46
 elevation 2262
+end
+arch evergreens2
+x 18
+y 46
 end
 arch hills
 x 18
@@ -4913,10 +5000,14 @@ x 19
 y 44
 elevation 2636
 end
-arch evergreens
+arch grass_only
 x 19
 y 45
 elevation 2186
+end
+arch evergreens2
+x 19
+y 45
 end
 arch hills
 x 19
@@ -5162,10 +5253,14 @@ x 20
 y 44
 elevation 2657
 end
-arch evergreens
+arch grass_only
 x 20
 y 45
 elevation 2124
+end
+arch evergreens2
+x 20
+y 45
 end
 arch hills
 x 20
@@ -5177,10 +5272,14 @@ x 20
 y 47
 elevation 2014
 end
-arch evergreens
+arch grass_only
 x 20
 y 48
 elevation 1339
+end
+arch evergreens2
+x 20
+y 48
 end
 arch hills_rocky
 x 20
@@ -5416,10 +5515,14 @@ x 21
 y 45
 elevation 1916
 end
-arch evergreens
+arch grass_only
 x 21
 y 46
 elevation 1466
+end
+arch evergreens2
+x 21
+y 46
 end
 arch woods_3
 x 21
@@ -5675,10 +5778,14 @@ x 22
 y 47
 elevation 871
 end
-arch evergreens
+arch grass_only
 x 22
 y 48
 elevation 1913
+end
+arch evergreens2
+x 22
+y 48
 end
 arch hills
 x 22
@@ -5909,10 +6016,14 @@ x 23
 y 44
 elevation 2755
 end
-arch evergreens
+arch grass_only
 x 23
 y 45
 elevation 2842
+end
+arch evergreens2
+x 23
+y 45
 end
 arch hills
 x 23
@@ -5924,10 +6035,14 @@ x 23
 y 47
 elevation 1320
 end
-arch evergreens
+arch grass_only
 x 23
 y 48
 elevation 1797
+end
+arch evergreens2
+x 23
+y 48
 end
 arch hills_rocky
 x 23
@@ -6422,15 +6537,23 @@ x 25
 y 47
 elevation 2965
 end
-arch evergreens
+arch grass_only
 x 25
 y 48
 elevation 1807
 end
-arch evergreens
+arch evergreens2
+x 25
+y 48
+end
+arch grass_only
 x 25
 y 49
 elevation 1951
+end
+arch evergreens2
+x 25
+y 49
 end
 arch mountain2
 x 26
@@ -6666,20 +6789,32 @@ x 26
 y 46
 elevation 2824
 end
-arch evergreens
+arch grass_only
 x 26
 y 47
 elevation 2752
 end
-arch evergreens
+arch evergreens2
+x 26
+y 47
+end
+arch grass_only
 x 26
 y 48
 elevation 2581
 end
-arch evergreens
+arch evergreens2
+x 26
+y 48
+end
+arch grass_only
 x 26
 y 49
 elevation 2332
+end
+arch evergreens2
+x 26
+y 49
 end
 arch mountain2
 x 27

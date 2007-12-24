@@ -3,6 +3,9 @@ name world_128_107
 region wolfsburg
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_128_106
 tile_path_2 world_129_107
@@ -6689,10 +6692,14 @@ x 26
 y 47
 elevation 815
 end
-arch tree
+arch grass_only
 x 26
 y 48
 elevation 1076
+end
+arch tree3
+x 26
+y 48
 end
 arch woods_2
 x 26
@@ -6868,15 +6875,23 @@ x 27
 y 33
 elevation 132
 end
-arch tree
+arch grass_only
 x 27
 y 34
 elevation 1347
 end
-arch tree
+arch tree3
+x 27
+y 34
+end
+arch grass_only
 x 27
 y 35
 elevation 1501
+end
+arch tree3
+x 27
+y 35
 end
 arch desert
 x 27
@@ -7122,10 +7137,14 @@ x 28
 y 34
 elevation 1984
 end
-arch tree
+arch grass_only
 x 28
 y 35
 elevation 2689
+end
+arch tree3
+x 28
+y 35
 end
 arch woods
 x 28
@@ -7137,10 +7156,14 @@ x 28
 y 37
 elevation 1247
 end
-arch tree
+arch grass_only
 x 28
 y 38
 elevation 1214
+end
+arch tree3
+x 28
+y 38
 end
 arch brush
 x 28
@@ -7386,10 +7409,14 @@ x 29
 y 37
 elevation 3960
 end
-arch tree
+arch grass_only
 x 29
 y 38
 elevation 2598
+end
+arch tree3
+x 29
+y 38
 end
 arch brush
 x 29
@@ -7884,10 +7911,14 @@ x 31
 y 37
 elevation 4297
 end
-arch tree
+arch grass_only
 x 31
 y 38
 elevation 2733
+end
+arch tree3
+x 31
+y 38
 end
 arch brush
 x 31
@@ -8118,10 +8149,14 @@ x 32
 y 34
 elevation 790
 end
-arch tree
+arch grass_only
 x 32
 y 35
 elevation 2090
+end
+arch tree3
+x 32
+y 35
 end
 arch woods
 x 32

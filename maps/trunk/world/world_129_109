@@ -3,6 +3,9 @@ name world_129_109
 region wolfsburg
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_129_108
 tile_path_3 world_129_110
@@ -466,15 +469,23 @@ x 2
 y 6
 elevation 607
 end
-arch tree
+arch grass_only
 x 2
 y 7
 elevation 1198
 end
-arch evergreen
+arch tree3
+x 2
+y 7
+end
+arch grass_only
 x 2
 y 8
 elevation 2158
+end
+arch tree5
+x 2
+y 8
 end
 arch hills
 x 2

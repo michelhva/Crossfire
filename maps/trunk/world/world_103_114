@@ -2,6 +2,9 @@ arch map
 name world_103_114
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_103_113
 tile_path_2 world_104_114
@@ -718,10 +721,14 @@ arch beach
 x 3
 y 5
 end
-arch evergreens
+arch grass_only
 x 3
 y 6
 elevation 1094
+end
+arch evergreens2
+x 3
+y 6
 end
 arch grass
 x 3
@@ -965,10 +972,14 @@ x 4
 y 5
 elevation 861
 end
-arch tree
+arch grass_only
 x 4
 y 6
 elevation 1084
+end
+arch tree3
+x 4
+y 6
 end
 arch brush
 x 4
@@ -1212,10 +1223,14 @@ x 5
 y 5
 elevation 711
 end
-arch tree
+arch grass_only
 x 5
 y 6
 elevation 1058
+end
+arch tree3
+x 5
+y 6
 end
 arch grass
 x 5
@@ -1724,20 +1739,28 @@ x 7
 y 10
 elevation 999
 end
-arch evergreens
+arch grass_only
 x 7
 y 11
 elevation 1213
+end
+arch evergreens2
+x 7
+y 11
 end
 arch jungle_1
 x 7
 y 12
 elevation 1237
 end
-arch tree
+arch grass_only
 x 7
 y 13
 elevation 1048
+end
+arch tree3
+x 7
+y 13
 end
 arch beach
 x 7
@@ -1886,10 +1909,14 @@ x 7
 y 43
 elevation 2611
 end
-arch tree
+arch grass_only
 x 7
 y 44
 elevation 2788
+end
+arch tree3
+x 7
+y 44
 end
 arch woods_2
 x 7
@@ -1963,20 +1990,32 @@ x 8
 y 9
 elevation 696
 end
-arch tree
+arch grass_only
 x 8
 y 10
 elevation 1360
 end
-arch tree
+arch tree3
+x 8
+y 10
+end
+arch grass_only
 x 8
 y 11
 elevation 1691
 end
-arch tree
+arch tree3
+x 8
+y 11
+end
+arch grass_only
 x 8
 y 12
 elevation 1752
+end
+arch tree3
+x 8
+y 12
 end
 arch jungle_1
 x 8
@@ -2008,10 +2047,14 @@ x 8
 y 18
 elevation 1165
 end
-arch tree
+arch grass_only
 x 8
 y 19
 elevation 1191
+end
+arch tree3
+x 8
+y 19
 end
 arch beach
 x 8
@@ -2194,30 +2237,46 @@ arch beach
 x 9
 y 6
 end
-arch tree
+arch grass_only
 x 9
 y 7
 elevation 1126
 end
-arch tree
+arch tree3
+x 9
+y 7
+end
+arch grass_only
 x 9
 y 8
 elevation 1234
 end
-arch tree
+arch tree3
+x 9
+y 8
+end
+arch grass_only
 x 9
 y 9
 elevation 1335
+end
+arch tree3
+x 9
+y 9
 end
 arch jungle_1
 x 9
 y 10
 elevation 1534
 end
-arch tree
+arch grass_only
 x 9
 y 11
 elevation 1755
+end
+arch tree3
+x 9
+y 11
 end
 arch jungle_1
 x 9
@@ -2248,15 +2307,23 @@ x 9
 y 17
 elevation 1002
 end
-arch tree
+arch grass_only
 x 9
 y 18
 elevation 1224
 end
-arch tree
+arch tree3
+x 9
+y 18
+end
+arch grass_only
 x 9
 y 19
 elevation 1085
+end
+arch tree3
+x 9
+y 19
 end
 arch beach
 x 9
@@ -2439,10 +2506,14 @@ arch beach
 x 10
 y 6
 end
-arch tree
+arch grass_only
 x 10
 y 7
 elevation 1097
+end
+arch tree3
+x 10
+y 7
 end
 arch jungle_1
 x 10
@@ -2454,10 +2525,14 @@ x 10
 y 9
 elevation 1342
 end
-arch tree
+arch grass_only
 x 10
 y 10
 elevation 1499
+end
+arch tree3
+x 10
+y 10
 end
 arch jungle_1
 x 10
@@ -2693,20 +2768,28 @@ arch beach
 x 11
 y 8
 end
-arch tree
+arch grass_only
 x 11
 y 9
 elevation 1055
+end
+arch tree3
+x 11
+y 9
 end
 arch jungle_1
 x 11
 y 10
 elevation 1183
 end
-arch tree
+arch grass_only
 x 11
 y 11
 elevation 1172
+end
+arch tree3
+x 11
+y 11
 end
 arch beach
 x 11
@@ -7557,9 +7640,12 @@ x 30
 y 49
 elevation -1210
 end
-arch tree
+arch grass_only
 x 31
 elevation 1040
+end
+arch tree3
+x 31
 end
 arch jungle_1
 x 31
@@ -8090,10 +8176,14 @@ x 33
 y 10
 elevation 1238
 end
-arch tree
+arch grass_only
 x 33
 y 11
 elevation 2044
+end
+arch tree3
+x 33
+y 11
 end
 arch jungle_1
 x 33
@@ -8588,10 +8678,14 @@ x 35
 y 12
 elevation 1461
 end
-arch tree
+arch grass_only
 x 35
 y 13
 elevation 2021
+end
+arch tree3
+x 35
+y 13
 end
 arch jungle_1
 x 35
@@ -12118,10 +12212,14 @@ x 49
 y 22
 elevation 2083
 end
-arch evergreen
+arch grass_only
 x 49
 y 23
 elevation 2801
+end
+arch tree5
+x 49
+y 23
 end
 arch hills_rocky
 x 49

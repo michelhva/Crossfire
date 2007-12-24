@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_2 world_128_100
@@ -6443,10 +6444,14 @@ x 25
 y 41
 elevation 702
 end
-arch tree
+arch grass_only
 x 25
 y 42
 elevation 1023
+end
+arch tree3
+x 25
+y 42
 end
 arch brush
 x 25
@@ -6700,15 +6705,23 @@ x 26
 y 41
 elevation 606
 end
-arch tree
+arch grass_only
 x 26
 y 42
 elevation 1209
 end
-arch tree
+arch tree3
+x 26
+y 42
+end
+arch grass_only
 x 26
 y 43
 elevation 1149
+end
+arch tree3
+x 26
+y 43
 end
 arch brush
 x 26
@@ -6961,15 +6974,23 @@ x 27
 y 41
 elevation 564
 end
-arch tree
+arch grass_only
 x 27
 y 42
 elevation 1247
 end
-arch tree
+arch tree3
+x 27
+y 42
+end
+arch grass_only
 x 27
 y 43
 elevation 1248
+end
+arch tree3
+x 27
+y 43
 end
 arch brush
 x 27
@@ -7222,15 +7243,23 @@ x 28
 y 41
 elevation 407
 end
-arch tree
+arch grass_only
 x 28
 y 42
 elevation 1012
 end
-arch tree
+arch tree3
+x 28
+y 42
+end
+arch grass_only
 x 28
 y 43
 elevation 1027
+end
+arch tree3
+x 28
+y 43
 end
 arch brush
 x 28
@@ -8558,10 +8587,14 @@ x 33
 y 48
 elevation 975
 end
-arch evergreen
+arch grass_only
 x 33
 y 49
 elevation 1060
+end
+arch tree5
+x 33
+y 49
 end
 arch sea
 x 34
@@ -8810,15 +8843,23 @@ x 34
 y 47
 elevation 941
 end
-arch evergreen
+arch grass_only
 x 34
 y 48
 elevation 1427
 end
-arch tree
+arch tree5
+x 34
+y 48
+end
+arch grass_only
 x 34
 y 49
 elevation 1440
+end
+arch tree3
+x 34
+y 49
 end
 arch sea
 x 35
@@ -9058,20 +9099,32 @@ x 35
 y 46
 elevation 355
 end
-arch tree
+arch grass_only
 x 35
 y 47
 elevation 1170
 end
-arch tree
+arch tree3
+x 35
+y 47
+end
+arch grass_only
 x 35
 y 48
 elevation 1514
 end
-arch evergreen
+arch tree3
+x 35
+y 48
+end
+arch grass_only
 x 35
 y 49
 elevation 1509
+end
+arch tree5
+x 35
+y 49
 end
 arch deep_sea
 x 36
@@ -9316,15 +9369,23 @@ x 36
 y 47
 elevation 953
 end
-arch evergreen
+arch grass_only
 x 36
 y 48
 elevation 1161
 end
-arch evergreen
+arch tree5
+x 36
+y 48
+end
+arch grass_only
 x 36
 y 49
 elevation 1293
+end
+arch tree5
+x 36
+y 49
 end
 arch deep_sea
 x 37
@@ -10646,10 +10707,14 @@ x 41
 y 38
 elevation 1024
 end
-arch evergreen
+arch grass_only
 x 41
 y 39
 elevation 1088
+end
+arch tree5
+x 41
+y 39
 end
 arch grass
 x 41
@@ -12053,10 +12118,14 @@ x 46
 y 24
 elevation 1505
 end
-arch evergreen
+arch grass_only
 x 46
 y 25
 elevation 1199
+end
+arch tree5
+x 46
+y 25
 end
 arch grass
 x 46
@@ -12346,10 +12415,14 @@ endmsg
 x 47
 y 24
 end
-arch evergreen
+arch grass_only
 x 47
 y 25
 elevation 1219
+end
+arch tree5
+x 47
+y 25
 end
 arch desert
 x 47
@@ -12955,20 +13028,32 @@ x 49
 y 24
 elevation 1748
 end
-arch evergreen
+arch grass_only
 x 49
 y 25
 elevation 2092
 end
-arch evergreen
+arch tree5
+x 49
+y 25
+end
+arch grass_only
 x 49
 y 26
 elevation 1863
 end
-arch evergreen
+arch tree5
+x 49
+y 26
+end
+arch grass_only
 x 49
 y 27
 elevation 1042
+end
+arch tree5
+x 49
+y 27
 end
 arch grass
 x 49

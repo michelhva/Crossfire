@@ -1,3 +1,15 @@
+2007-12-24  tchize
+lots of world file
+Split of combo tiles (eg tree+grass) to separate tiles (1 tree above 1 grass)
+
+
+2007-12-23 tchize
+editor/scripts/WorldMaker
+Update script so it now handles big image file with less disk copy. 
+Replace pnmpaste of world file (which output result in a copy) with a custom in file replacement (no copy, no need to reread full file on each iteration).
+1G world file are now feasible with reasonable run time.
+
+
 2007-12-23 Yann (gros) Chachkoff
 A    python/maps/scorn
 A    python/maps/scorn/towers

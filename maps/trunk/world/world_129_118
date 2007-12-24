@@ -2,6 +2,9 @@ arch map
 name world_129_118
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_129_117
 tile_path_3 world_129_119
@@ -1276,20 +1279,32 @@ x 5
 y 14
 elevation 351
 end
-arch evergreens
+arch grass_only
 x 5
 y 15
 elevation 1249
 end
-arch evergreens
+arch evergreens2
+x 5
+y 15
+end
+arch grass_only
 x 5
 y 16
 elevation 1515
 end
-arch evergreens
+arch evergreens2
+x 5
+y 16
+end
+arch grass_only
 x 5
 y 17
 elevation 1151
+end
+arch evergreens2
+x 5
+y 17
 end
 arch grass
 x 5
@@ -2202,15 +2217,23 @@ arch grass
 x 9
 elevation 884
 end
-arch evergreens
+arch grass_only
 x 9
 y 1
 elevation 1359
 end
-arch evergreens
+arch evergreens2
+x 9
+y 1
+end
+arch grass_only
 x 9
 y 2
 elevation 1312
+end
+arch evergreens2
+x 9
+y 2
 end
 arch grass
 x 9
@@ -2700,20 +2723,28 @@ arch desert
 x 11
 elevation 579
 end
-arch evergreens
+arch grass_only
 x 11
 y 1
 elevation 1626
+end
+arch evergreens2
+x 11
+y 1
 end
 arch jungle_1
 x 11
 y 2
 elevation 1786
 end
-arch evergreens
+arch grass_only
 x 11
 y 3
 elevation 1347
+end
+arch evergreens2
+x 11
+y 3
 end
 arch grass
 x 11
@@ -3682,10 +3713,14 @@ x 14
 y 47
 elevation 1289
 end
-arch evergreen
+arch grass_only
 x 14
 y 48
 elevation 1128
+end
+arch tree5
+x 14
+y 48
 end
 arch grass
 x 14
@@ -3911,10 +3946,14 @@ x 15
 y 43
 elevation 1004
 end
-arch evergreen
+arch grass_only
 x 15
 y 44
 elevation 1358
+end
+arch tree5
+x 15
+y 44
 end
 arch hills_rocky
 x 15
@@ -4095,10 +4134,14 @@ x 16
 y 30
 elevation 1765
 end
-arch evergreens
+arch grass_only
 x 16
 y 31
 elevation 1371
+end
+arch evergreens2
+x 16
+y 31
 end
 arch desert
 x 16
@@ -4329,20 +4372,28 @@ x 17
 y 27
 elevation 731
 end
-arch evergreen
+arch grass_only
 x 17
 y 28
 elevation 1293
+end
+arch tree5
+x 17
+y 28
 end
 arch hills_rocky
 x 17
 y 29
 elevation 1562
 end
-arch evergreen
+arch grass_only
 x 17
 y 30
 elevation 1618
+end
+arch tree5
+x 17
+y 30
 end
 arch jungle_1
 x 17
@@ -4578,10 +4629,14 @@ x 18
 y 27
 elevation 667
 end
-arch evergreen
+arch grass_only
 x 18
 y 28
 elevation 1004
+end
+arch tree5
+x 18
+y 28
 end
 arch hills_rocky
 x 18
