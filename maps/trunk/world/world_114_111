@@ -2,6 +2,9 @@ arch map
 name world_114_111
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_114_110
 tile_path_2 world_115_111
@@ -6402,15 +6405,13 @@ x 25
 y 43
 elevation 11937
 end
-arch mountain4
+arch mountain2
 x 25
 y 44
-elevation 12525
 end
-arch mountain4
+arch mountain2
 x 25
 y 45
-elevation 12127
 end
 arch mountain2
 x 25
@@ -6651,20 +6652,17 @@ x 26
 y 43
 elevation 11956
 end
-arch mountain4
+arch mountain2
 x 26
 y 44
-elevation 12375
 end
-arch mountain4
+arch mountain2
 x 26
 y 45
-elevation 12199
 end
 arch mountain2
 x 26
 y 46
-elevation 11341
 end
 arch mountain2
 x 26
@@ -6903,17 +6901,14 @@ end
 arch mountain2
 x 27
 y 44
-elevation 11313
 end
 arch mountain2
 x 27
 y 45
-elevation 11431
 end
 arch mountain2
 x 27
 y 46
-elevation 11287
 end
 arch mountain2
 x 27
@@ -7157,7 +7152,6 @@ end
 arch mountain2
 x 28
 y 45
-elevation 10695
 end
 arch mountain2
 x 28
@@ -7625,17 +7619,17 @@ end
 arch mountain
 x 30
 y 39
-elevation 7871
+elevation 8167
 end
 arch mountain
 x 30
 y 40
-elevation 8158
+elevation 8188
 end
 arch mountain
 x 30
 y 41
-elevation 8473
+elevation 6384
 end
 arch mountain2
 x 30
@@ -7657,20 +7651,17 @@ x 30
 y 45
 elevation 10480
 end
-arch mountain2
+arch mountain4
 x 30
 y 46
-elevation 10921
 end
-arch mountain2
+arch mountain4
 x 30
 y 47
-elevation 11036
 end
-arch mountain2
+arch mountain4
 x 30
 y 48
-elevation 10798
 end
 arch mountain2
 x 30
@@ -7874,17 +7865,17 @@ end
 arch mountain
 x 31
 y 39
-elevation 7469
+elevation 8167
 end
 arch mountain
 x 31
 y 40
-elevation 7905
+elevation 8188
 end
 arch mountain
 x 31
 y 41
-elevation 8481
+elevation 6384
 end
 arch mountain
 x 31
@@ -7899,32 +7890,27 @@ end
 arch mountain2
 x 31
 y 44
-elevation 9977
 end
-arch mountain2
+arch mountain4
 x 31
 y 45
-elevation 10011
 end
-arch mountain2
+arch mountain4
 x 31
 y 46
-elevation 9959
 end
 arch mountain2
 x 31
 y 47
 elevation 9819
 end
-arch mountain2
+arch mountain4
 x 31
 y 48
-elevation 9319
 end
-arch mountain2
+arch mountain4
 x 31
 y 49
-elevation 9347
 end
 arch hills
 x 32
@@ -8123,17 +8109,17 @@ end
 arch mountain
 x 32
 y 39
-elevation 5623
+elevation 8167
 end
 arch mountain
 x 32
 y 40
-elevation 7392
+elevation 8188
 end
 arch mountain
 x 32
 y 41
-elevation 6987
+elevation 6384
 end
 arch mountain
 x 32
@@ -8150,10 +8136,9 @@ x 32
 y 44
 elevation 9771
 end
-arch mountain
+arch mountain4
 x 32
 y 45
-elevation 8782
 end
 arch mountain
 x 32
@@ -8174,6 +8159,10 @@ arch mountain
 x 32
 y 49
 elevation 7953
+end
+arch cwall_1_4
+x 32
+y 49
 end
 arch hills_rocky
 x 33
@@ -8362,7 +8351,7 @@ end
 arch mountain
 x 33
 y 37
-elevation 6831
+elevation 5393
 end
 arch mountain
 x 33
@@ -8389,20 +8378,18 @@ x 33
 y 42
 elevation 7233
 end
-arch mountain
+arch mountain4
 x 33
 y 43
-elevation 8894
 end
 arch mountain2
 x 33
 y 44
 elevation 9187
 end
-arch mountain
+arch mountain4
 x 33
 y 45
-elevation 8741
 end
 arch mountain
 x 33
@@ -8423,6 +8410,10 @@ arch mountain
 x 33
 y 49
 elevation 6524
+end
+arch cwall_2_1_2
+x 33
+y 49
 end
 arch tree
 x 34
@@ -8633,30 +8624,26 @@ x 34
 y 41
 elevation 9086
 end
-arch mountain
+arch mountain4
 x 34
 y 42
-elevation 8734
 end
-arch mountain
+arch mountain4
 x 34
 y 43
-elevation 7896
 end
 arch mountain
 x 34
 y 44
 elevation 8549
 end
-arch mountain
+arch mountain4
 x 34
 y 45
-elevation 8098
 end
-arch mountain
+arch mountain2
 x 34
 y 46
-elevation 6902
 end
 arch mountain
 x 34
@@ -8672,6 +8659,10 @@ arch mountain
 x 34
 y 49
 elevation 5354
+end
+arch cwall_2_1_2
+x 34
+y 49
 end
 arch tree
 x 35
@@ -8897,30 +8888,38 @@ x 35
 y 44
 elevation 8002
 end
-arch mountain
+arch mountain4
 x 35
 y 45
-elevation 7310
 end
-arch steppe
+arch s_mountain
 x 35
 y 46
-elevation 4695
 end
-arch mountain
+arch s_mountain
 x 35
 y 47
-elevation 5746
 end
-arch mountain
+arch cwall_2_2_2
+x 35
+y 47
+end
+arch s_mountain
 x 35
 y 48
-elevation 5241
+end
+arch cwall_2_1_1
+x 35
+y 48
 end
 arch hills_rocky
 x 35
 y 49
 elevation 4531
+end
+arch cwall_2_2_4
+x 35
+y 49
 end
 arch steppe
 x 36
@@ -9136,40 +9135,41 @@ x 36
 y 42
 elevation 6936
 end
-arch mountain
+arch mountain4
 x 36
 y 43
-elevation 7834
 end
-arch mountain
+arch mountain4
 x 36
 y 44
-elevation 7465
 end
-arch mountain
+arch mountain4
 x 36
 y 45
-elevation 6412
 end
-arch mountain
+arch s_mountain
 x 36
 y 46
-elevation 6088
 end
-arch mountain
+arch s_mountain
 x 36
 y 47
-elevation 5523
 end
-arch hills_rocky
+arch cwall_1_3
+x 36
+y 47
+end
+arch snow
 x 36
 y 48
-elevation 4883
 end
-arch hills_rocky
+arch snow
 x 36
 y 49
-elevation 3158
+end
+arch ewall_0
+x 36
+y 49
 end
 arch mountain
 x 37
@@ -9370,55 +9370,46 @@ x 37
 y 39
 elevation 7502
 end
-arch mountain
+arch mountain4
 x 37
 y 40
-elevation 7862
 end
-arch mountain
+arch mountain_2
 x 37
 y 41
-elevation 7656
 end
-arch mountain
-x 37
-y 42
-elevation 7209
-end
-arch mountain
+arch mountain4
 x 37
 y 43
-elevation 6861
 end
-arch mountain
+arch s_mountain
 x 37
 y 44
-elevation 6809
 end
-arch mountain
+arch s_mountain
 x 37
 y 45
-elevation 6557
 end
-arch mountain
+arch s_mountain
 x 37
 y 46
-elevation 6131
 end
-arch hills_rocky
+arch snowroad
 x 37
 y 47
-elevation 4762
 end
-arch hills_rocky
+arch snow
 x 37
 y 48
-elevation 4752
 end
 arch hills_rocky
 x 37
 y 49
 elevation 3729
+end
+arch cwall_0
+x 37
+y 49
 end
 arch mountain2
 x 38
@@ -9614,60 +9605,45 @@ x 38
 y 38
 elevation 4983
 end
-arch mountain
+arch mountain4
 x 38
 y 39
-elevation 6043
 end
-arch mountain
+arch mountain4
 x 38
 y 40
-elevation 6839
 end
-arch mountain
-x 38
-y 41
-elevation 6485
-end
-arch mountain
-x 38
-y 42
-elevation 5376
-end
-arch mountain
+arch mountain4
 x 38
 y 43
-elevation 6078
 end
-arch mountain
+arch s_mountain
 x 38
 y 44
-elevation 6644
 end
-arch mountain
+arch s_mountain
 x 38
 y 45
-elevation 6621
 end
-arch mountain
+arch s_mountain
 x 38
 y 46
-elevation 5894
 end
-arch mountain
+arch snowroad
 x 38
 y 47
-elevation 5910
 end
-arch mountain
+arch snow
 x 38
 y 48
-elevation 5561
 end
-arch hills_rocky
+arch snow
 x 38
 y 49
-elevation 4886
+end
+arch ewall_0
+x 38
+y 49
 end
 arch mountain2
 x 39
@@ -9848,75 +9824,67 @@ x 39
 y 35
 elevation 6849
 end
-arch mountain
+arch mountain_2
 x 39
 y 36
-elevation 6598
-end
-arch mountain
-x 39
-y 37
-elevation 6311
 end
 arch mountain
 x 39
 y 38
 elevation 6491
 end
-arch mountain
+arch mountain4
 x 39
 y 39
-elevation 6489
 end
-arch mountain
+arch mountain4
 x 39
 y 40
-elevation 6475
 end
-arch mountain
+arch mountain4
 x 39
 y 41
-elevation 5236
 end
-arch hills_rocky
+arch mountain4
 x 39
 y 42
-elevation 4470
 end
-arch mountain
+arch mountain4
 x 39
 y 43
-elevation 5971
 end
-arch mountain
+arch s_mountain
 x 39
 y 44
-elevation 6404
 end
-arch mountain
+arch s_mountain
 x 39
 y 45
-elevation 6398
 end
-arch mountain
+arch snowroad
 x 39
 y 46
-elevation 6285
 end
-arch mountain
+arch snowroad
 x 39
 y 47
-elevation 6208
 end
-arch mountain
+arch s_mountain
 x 39
 y 48
-elevation 6217
+end
+arch cwall_1_1
+x 39
+y 48
 end
 arch mountain
 x 39
 y 49
-elevation 5825
+elevation 6390
+end
+arch cwall_2_2_1
+x 39
+y 49
 end
 arch mountain2
 x 40
@@ -10099,63 +10067,45 @@ elevation 6993
 end
 arch mountain
 x 40
-y 36
-elevation 5208
-end
-arch mountain
-x 40
-y 37
-elevation 6746
-end
-arch mountain
-x 40
 y 38
 elevation 6541
 end
-arch mountain
+arch mountain4
 x 40
 y 39
-elevation 6410
 end
-arch mountain
+arch mountain4
 x 40
 y 40
-elevation 6525
 end
-arch mountain
+arch mountain4
 x 40
 y 41
-elevation 6454
 end
-arch mountain
+arch s_mountain
 x 40
 y 42
-elevation 6333
 end
-arch mountain
+arch s_mountain
 x 40
 y 43
-elevation 6102
 end
-arch mountain
+arch s_mountain
 x 40
 y 44
-elevation 5296
 end
 arch mountain
 x 40
 y 45
 elevation 6041
 end
-arch mountain
+arch snowroad
 x 40
 y 46
-elevation 5518
 end
-arch mountain
+arch s_mountain
 x 40
 y 47
-elevation 5858
 end
 arch mountain
 x 40
@@ -10165,7 +10115,11 @@ end
 arch mountain
 x 40
 y 49
-elevation 6088
+elevation 6390
+end
+arch cwall_1_3
+x 40
+y 49
 end
 arch mountain
 x 41
@@ -10351,70 +10305,62 @@ x 41
 y 36
 elevation 7638
 end
-arch mountain
+arch mountain4
 x 41
 y 37
-elevation 6773
 end
-arch mountain
+arch mountain4
 x 41
 y 38
-elevation 5224
 end
-arch mountain
+arch mountain4
 x 41
 y 39
-elevation 5176
 end
-arch mountain
+arch s_mountain
 x 41
 y 40
-elevation 6436
 end
-arch mountain
+arch s_mountain
 x 41
 y 41
-elevation 7070
 end
-arch mountain
+arch s_mountain
 x 41
 y 42
-elevation 7225
 end
-arch mountain
+arch s_mountain
 x 41
 y 43
-elevation 6702
 end
 arch steppe
 x 41
 y 44
 elevation 4804
 end
-arch mountain
+arch sign
+x 41
+y 44
+end
+arch snowroad
 x 41
 y 45
-elevation 5710
 end
-arch mountain
+arch snowroad
 x 41
 y 46
-elevation 5690
 end
-arch mountain
+arch s_mountain
 x 41
 y 47
-elevation 5571
 end
-arch mountain
+arch s_mountain
 x 41
 y 48
-elevation 6271
 end
-arch mountain
+arch mountain4
 x 41
 y 49
-elevation 6121
 end
 arch mountain
 x 42
@@ -10595,15 +10541,13 @@ x 42
 y 35
 elevation 8252
 end
-arch mountain
+arch mountain4
 x 42
 y 36
-elevation 8422
 end
-arch mountain
+arch mountain4
 x 42
 y 37
-elevation 7441
 end
 arch hills_rocky
 x 42
@@ -10615,55 +10559,57 @@ x 42
 y 39
 elevation 4622
 end
-arch mountain
+arch s_mountain
 x 42
 y 40
-elevation 6185
 end
 arch mountain
 x 42
 y 41
 elevation 7392
 end
-arch mountain
+arch s_mountain
 x 42
 y 42
-elevation 7756
 end
-arch mountain
+arch s_mountain
 x 42
 y 43
-elevation 7289
 end
-arch mountain
+arch snow
 x 42
 y 44
-elevation 6581
 end
-arch mountain
+arch snowroad
 x 42
 y 45
-elevation 5446
 end
 arch hills_rocky
 x 42
 y 46
 elevation 4624
 end
-arch mountain
+arch snow5
+x 42
+y 46
+end
+arch hills
 x 42
 y 47
-elevation 5539
+elevation 4780
+end
+arch snow5
+x 42
+y 47
 end
 arch mountain
 x 42
 y 48
 elevation 6044
 end
-arch mountain
+arch mountain4
 x 42
 y 49
-elevation 6080
 end
 arch mountain
 x 43
@@ -10839,80 +10785,79 @@ x 43
 y 34
 elevation 7627
 end
-arch mountain
+arch mountain4
 x 43
 y 35
-elevation 8118
 end
-arch mountain
+arch mountain4
 x 43
 y 36
-elevation 8848
 end
-arch mountain
+arch s_mountain
 x 43
 y 37
-elevation 8609
 end
-arch mountain
+arch s_mountain
 x 43
 y 38
-elevation 7933
 end
-arch mountain
+arch s_mountain
 x 43
 y 39
-elevation 7256
 end
-arch mountain
+arch hills_rocky
 x 43
 y 40
-elevation 6354
 end
-arch mountain
+arch snow5
+x 43
+y 40
+end
+arch hills_rocky
 x 43
 y 41
-elevation 7691
 end
-arch mountain
+arch snow5
+x 43
+y 41
+end
+arch snowroad
 x 43
 y 42
-elevation 7886
 end
-arch mountain
+arch snowroad
 x 43
 y 43
-elevation 7436
 end
-arch mountain
+arch snowroad
 x 43
 y 44
-elevation 6843
 end
-arch mountain
+arch snowroad
 x 43
 y 45
-elevation 6242
 end
-arch mountain
+arch snow
 x 43
 y 46
-elevation 5492
 end
 arch hills_rocky
 x 43
 y 47
 elevation 4367
 end
-arch mountain
+arch snow5
+x 43
+y 47
+end
+arch steppe
 x 43
 y 48
-elevation 6286
+elevation 4795
 end
-arch mountain
+arch mountain4
 x 43
 y 49
-elevation 6309
 end
 arch mountain
 x 44
@@ -11078,90 +11023,101 @@ x 44
 y 32
 elevation 7392
 end
-arch mountain
+arch mountain4
 x 44
 y 33
-elevation 6351
 end
-arch mountain
+arch mountain4
 x 44
 y 34
-elevation 7758
 end
-arch mountain
+arch mountain4
 x 44
 y 35
-elevation 8495
 end
 arch mountain2
 x 44
 y 36
 elevation 9096
 end
-arch mountain2
+arch s_mountain
 x 44
 y 37
-elevation 9588
 end
-arch mountain2
+arch hills
 x 44
 y 38
-elevation 9381
 end
-arch mountain
+arch snow5
+x 44
+y 38
+end
+arch hills_rocky
 x 44
 y 39
-elevation 8898
 end
-arch mountain
+arch hills_rocky
 x 44
 y 40
-elevation 8344
 end
-arch mountain
+arch snow5
+x 44
+y 40
+end
+arch hills_rocky
 x 44
 y 41
-elevation 7881
 end
-arch mountain
+arch snow5
+x 44
+y 41
+end
+arch snowroad
 x 44
 y 42
-elevation 7397
 end
-arch mountain
+arch hills_rocky
 x 44
 y 43
-elevation 6747
+elevation 4762
 end
-arch mountain
+arch snow5
+x 44
+y 43
+end
+arch hills_rocky
 x 44
 y 44
-elevation 6338
+elevation 4762
 end
-arch mountain
+arch snow5
+x 44
+y 44
+end
+arch hills_rocky
 x 44
 y 45
-elevation 6343
+elevation 4762
 end
-arch mountain
+arch snow5
+x 44
+y 45
+end
+arch hills_rocky
 x 44
 y 46
-elevation 6400
 end
-arch mountain
+arch hills
 x 44
 y 47
-elevation 6666
 end
-arch mountain
+arch mountain4
 x 44
 y 48
-elevation 6928
 end
-arch mountain
+arch mountain4
 x 44
 y 49
-elevation 6797
 end
 arch mountain
 x 45
@@ -11327,90 +11283,100 @@ x 45
 y 32
 elevation 7610
 end
-arch mountain
+arch mountain4
 x 45
 y 33
-elevation 7789
 end
-arch mountain
+arch mountain4
 x 45
 y 34
-elevation 7782
 end
-arch mountain
+arch mountain4
 x 45
 y 35
-elevation 8076
 end
 arch mountain
 x 45
 y 36
 elevation 8641
 end
-arch mountain2
+arch s_mountain
 x 45
 y 37
-elevation 9225
 end
-arch mountain2
+arch hills_rocky
 x 45
 y 38
-elevation 9423
 end
-arch mountain2
+arch blood_sea
 x 45
 y 39
-elevation 9146
 end
-arch mountain
+arch blood_sea
 x 45
 y 40
-elevation 8366
 end
-arch mountain
+arch hills_rocky
 x 45
 y 41
-elevation 7166
 end
-arch mountain
+arch snow5
+x 45
+y 41
+end
+arch snowroad
 x 45
 y 42
-elevation 6595
+end
+arch snow5
+x 45
+y 42
 end
 arch hills_rocky
 x 45
 y 43
 elevation 4752
 end
+arch swall_1_1
+x 45
+y 43
+end
 arch hills_rocky
 x 45
 y 44
 elevation 4432
 end
-arch mountain
+arch swall_2_1_1
+x 45
+y 44
+end
+arch hills_rocky
 x 45
 y 45
-elevation 6031
 end
-arch mountain
+arch swall_2_2_1
+x 45
+y 45
+end
+arch hills
 x 45
 y 46
-elevation 6747
 end
-arch mountain
+arch hills_rocky
 x 45
 y 47
-elevation 7265
 end
-arch mountain
+arch snow5
+x 45
+y 47
+end
+arch mountain4
 x 45
 y 48
-elevation 7593
 end
-arch mountain
+arch mountain4
 x 45
 y 49
-elevation 7402
 end
 arch mountain
 x 46
@@ -11571,95 +11537,104 @@ x 46
 y 31
 elevation 6987
 end
-arch mountain
+arch mountain4
 x 46
 y 32
-elevation 7877
 end
-arch mountain
+arch mountain4
 x 46
 y 33
-elevation 8009
 end
-arch mountain
+arch mountain4
 x 46
 y 34
-elevation 7213
 end
-arch mountain
+arch mountain4
 x 46
 y 35
-elevation 6641
 end
 arch mountain
 x 46
 y 36
 elevation 7263
 end
-arch mountain
+arch hills_rocky
 x 46
 y 37
-elevation 8049
 end
-arch mountain
+arch blood_sea
 x 46
 y 38
-elevation 8419
 end
-arch mountain
+arch blood_sea
 x 46
 y 39
-elevation 8152
 end
-arch mountain
+arch blood_sea
 x 46
 y 40
-elevation 7278
 end
-arch mountain
+arch hills_rocky
 x 46
 y 41
-elevation 6292
 end
-arch mountain
+arch snow5
+x 46
+y 41
+end
+arch snowroad
 x 46
 y 42
-elevation 5381
+end
+arch snow5
+x 46
+y 42
 end
 arch steppe
 x 46
 y 43
 elevation 4795
 end
+arch gravestone
+x 46
+y 43
+end
 arch hills_rocky
 x 46
 y 44
 elevation 4464
 end
-arch mountain
+arch gravestone
+x 46
+y 44
+end
+arch hills
 x 46
 y 45
-elevation 5630
 end
-arch mountain
+arch swall_1_3
+x 46
+y 45
+end
+arch hills
 x 46
 y 46
-elevation 6370
 end
-arch mountain
+arch snow5
+x 46
+y 46
+end
+arch hills_rocky
 x 46
 y 47
-elevation 6871
 end
-arch mountain
+arch mountain4
 x 46
 y 48
-elevation 7397
 end
-arch mountain
+arch mountain4
 x 46
 y 49
-elevation 7386
 end
 arch mountain
 x 47
@@ -11815,100 +11790,101 @@ x 47
 y 30
 elevation 8330
 end
-arch mountain
+arch mountain4
 x 47
 y 31
-elevation 6490
 end
-arch mountain
+arch mountain4
 x 47
 y 32
-elevation 7953
 end
-arch mountain
+arch mountain4
 x 47
 y 33
-elevation 7860
 end
-arch mountain
+arch mountain4
 x 47
 y 34
-elevation 7093
 end
-arch mountain
+arch mountain4
 x 47
 y 35
-elevation 6420
 end
 arch mountain
 x 47
 y 36
 elevation 6335
 end
-arch mountain
+arch hills_rocky
 x 47
 y 37
-elevation 5641
 end
-arch mountain
+arch blood_sea
 x 47
 y 38
-elevation 7501
 end
-arch mountain
+arch blood_sea
 x 47
 y 39
-elevation 6842
 end
-arch mountain
+arch blood_sea
 x 47
 y 40
-elevation 5518
 end
 arch hills_rocky
 x 47
 y 41
 elevation 4906
 end
-arch hills_rocky
+arch snow5
+x 47
+y 41
+end
+arch snowroad
 x 47
 y 42
-elevation 3404
+end
+arch snow5
+x 47
+y 42
 end
 arch hills_rocky
 x 47
 y 43
 elevation 3825
 end
+arch gravestone
+x 47
+y 43
+end
 arch hills_rocky
 x 47
 y 44
 elevation 4552
 end
-arch mountain
+arch chole_2
+x 47
+y 44
+end
+arch farmland
 x 47
 y 45
-elevation 5129
 end
-arch mountain
+arch farmland
 x 47
 y 46
-elevation 5965
 end
-arch mountain
+arch farmland
 x 47
 y 47
-elevation 5439
 end
-arch mountain
+arch mountain4
 x 47
 y 48
-elevation 6536
 end
-arch mountain
+arch mountain4
 x 47
 y 49
-elevation 6968
 end
 arch mountain
 x 48
@@ -12059,105 +12035,120 @@ x 48
 y 29
 elevation 8637
 end
-arch mountain
+arch mountain4
 x 48
 y 30
-elevation 8874
 end
-arch mountain
+arch mountain4
 x 48
 y 31
-elevation 8379
 end
-arch mountain
+arch mountain4
 x 48
 y 32
-elevation 7753
 end
-arch mountain
+arch mountain4
 x 48
 y 33
-elevation 7277
 end
-arch mountain
+arch mountain4
 x 48
 y 34
-elevation 6471
 end
-arch mountain
+arch mountain4
 x 48
 y 35
-elevation 5557
 end
 arch steppe
 x 48
 y 36
 elevation 4015
 end
-arch mountain
+arch hills
 x 48
 y 37
-elevation 6084
-end
-arch mountain
-x 48
-y 38
-elevation 6789
-end
-arch mountain
-x 48
-y 39
-elevation 6398
-end
-arch mountain
-x 48
-y 40
-elevation 5349
 end
 arch hills_rocky
 x 48
-y 41
-elevation 4180
+y 38
 end
-arch woods
+arch hills_rocky
+x 48
+y 39
+end
+arch snow5
+x 48
+y 39
+end
+arch hills_rocky
+x 48
+y 40
+end
+arch snow5
+x 48
+y 40
+end
+arch snowroad
+x 48
+y 41
+end
+arch snow5
+x 48
+y 41
+end
+arch snowroad
 x 48
 y 42
-elevation 2618
 end
-arch woods
+arch snow5
+x 48
+y 42
+end
+arch hills_rocky
 x 48
 y 43
-elevation 2638
+elevation 4251
+end
+arch gravestone
+x 48
+y 43
 end
 arch hills_rocky
 x 48
 y 44
 elevation 4251
 end
-arch hills
+arch gravestone
+x 48
+y 44
+end
+arch farmland
 x 48
 y 45
-elevation 4780
 end
-arch mountain
+arch snow5
+x 48
+y 45
+end
+arch farmland
 x 48
 y 46
-elevation 5905
 end
-arch mountain
+arch farmland
 x 48
 y 47
-elevation 6358
 end
-arch mountain
+arch snow5
+x 48
+y 47
+end
+arch mountain4
 x 48
 y 48
-elevation 6168
 end
-arch mountain
+arch mountain4
 x 48
 y 49
-elevation 6787
 end
 arch mountain
 x 49
@@ -12308,30 +12299,25 @@ x 49
 y 29
 elevation 8969
 end
-arch mountain
+arch mountain4
 x 49
 y 30
-elevation 8756
 end
-arch mountain
+arch mountain4
 x 49
 y 31
-elevation 7653
 end
-arch mountain
+arch mountain4
 x 49
 y 32
-elevation 6693
 end
-arch mountain
+arch mountain4
 x 49
 y 33
-elevation 5655
 end
-arch mountain
+arch mountain4
 x 49
 y 34
-elevation 5051
 end
 arch hills_rocky
 x 49
@@ -12343,68 +12329,90 @@ x 49
 y 36
 elevation 4228
 end
-arch mountain
+arch hills
 x 49
 y 37
-elevation 5326
 end
-arch mountain
+arch hills_rocky
 x 49
 y 38
-elevation 5921
 end
-arch mountain
+arch snow5
+x 49
+y 38
+end
+arch hills_rocky
 x 49
 y 39
-elevation 5486
+end
+arch snow5
+x 49
+y 39
 end
 arch hills_rocky
 x 49
 y 40
 elevation 4443
 end
-arch hills_rocky
+arch snow5
+x 49
+y 40
+end
+arch snowroad
 x 49
 y 41
-elevation 3771
 end
-arch tree
+arch snow5
+x 49
+y 41
+end
+arch snowroad
 x 49
 y 42
-elevation 2788
 end
-arch evergreen
+arch snow5
+x 49
+y 42
+end
+arch hills_rocky
 x 49
 y 43
-elevation 2610
+elevation 4286
+end
+arch gravestone
+x 49
+y 43
 end
 arch hills_rocky
 x 49
 y 44
 elevation 4286
 end
-arch mountain
+arch gravestone
+x 49
+y 44
+end
+arch hills_rocky
 x 49
 y 45
-elevation 5467
 end
-arch mountain
+arch swall_1_4
+x 49
+y 45
+end
+arch hills_rocky
 x 49
 y 46
-elevation 6212
 end
-arch mountain
+arch hills
 x 49
 y 47
-elevation 6551
 end
-arch mountain
+arch mountain4
 x 49
 y 48
-elevation 6865
 end
-arch mountain
+arch mountain4
 x 49
 y 49
-elevation 6930
 end

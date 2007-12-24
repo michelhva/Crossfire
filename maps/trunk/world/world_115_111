@@ -2,6 +2,9 @@ arch map
 name world_115_111
 width 50
 height 50
+msg
+Modified: 2007-12-23 tchize
+endmsg
 outdoor 1
 tile_path_1 world_115_110
 tile_path_2 world_116_111
@@ -123,17 +126,14 @@ arch mountain
 y 28
 elevation 8163
 end
-arch mountain
+arch mountain4
 y 29
-elevation 8531
 end
-arch mountain
+arch mountain4
 y 30
-elevation 6428
 end
-arch mountain
+arch mountain4
 y 31
-elevation 6369
 end
 arch hills_rocky
 y 32
@@ -155,9 +155,15 @@ arch steppe
 y 36
 elevation 3521
 end
+arch snow5
+y 36
+end
 arch hills_rocky
 y 37
 elevation 4591
+end
+arch snow5
+y 37
 end
 arch hills_rocky
 y 38
@@ -167,25 +173,44 @@ arch hills_rocky
 y 39
 elevation 4050
 end
+arch snow5
+y 39
+end
+arch s_citytower
+y 39
+end
 arch hills_rocky
 y 40
 elevation 3387
 end
-arch steppe
-y 41
-elevation 3441
+arch snow5
+y 40
 end
-arch hills_rocky
+arch snowroad
+y 41
+end
+arch snow5
+y 41
+end
+arch snowroad
 y 42
-elevation 3371
+end
+arch snow5
+y 42
 end
 arch hills_rocky
 y 43
 elevation 3694
 end
+arch swall_1_1
+y 43
+end
 arch hills_rocky
 y 44
 elevation 4452
+end
+arch swall_1_2_half
+y 44
 end
 arch mountain
 y 45
@@ -199,9 +224,8 @@ arch mountain
 y 47
 elevation 6611
 end
-arch mountain
+arch mountain4
 y 48
-elevation 7021
 end
 arch mountain
 y 49
@@ -351,25 +375,21 @@ x 1
 y 28
 elevation 7560
 end
-arch mountain
+arch mountain4
 x 1
 y 29
-elevation 7878
 end
-arch mountain
+arch mountain4
 x 1
 y 30
-elevation 7819
 end
-arch mountain
+arch mountain4
 x 1
 y 31
-elevation 6749
 end
-arch mountain
+arch mountain4
 x 1
 y 32
-elevation 5075
 end
 arch hills_rocky
 x 1
@@ -391,6 +411,10 @@ x 1
 y 36
 elevation 4128
 end
+arch snow5
+x 1
+y 36
+end
 arch hills_rocky
 x 1
 y 37
@@ -400,6 +424,10 @@ arch steppe
 x 1
 y 38
 elevation 3168
+end
+arch snow5
+x 1
+y 38
 end
 arch woods
 x 1
@@ -411,20 +439,30 @@ x 1
 y 40
 elevation 2196
 end
-arch hills_rocky
+arch snowroad
 x 1
 y 41
-elevation 3259
 end
-arch hills_rocky
+arch snow5
+x 1
+y 41
+end
+arch snowroad
 x 1
 y 42
-elevation 3698
+end
+arch snow5
+x 1
+y 42
 end
 arch hills_rocky
 x 1
 y 43
-elevation 3744
+elevation 3877
+end
+arch snow5
+x 1
+y 43
 end
 arch hills_rocky
 x 1
@@ -436,20 +474,31 @@ x 1
 y 45
 elevation 4982
 end
+arch cwall_2_2_2
+x 1
+y 45
+end
 arch mountain
 x 1
 y 46
 elevation 5669
+end
+arch cwall_2_1_1
+x 1
+y 46
 end
 arch mountain
 x 1
 y 47
 elevation 6151
 end
-arch mountain
+arch cwall_1_2
+x 1
+y 47
+end
+arch mountain4
 x 1
 y 48
-elevation 6597
 end
 arch mountain
 x 1
@@ -605,20 +654,17 @@ x 2
 y 29
 elevation 7285
 end
-arch mountain
+arch mountain4
 x 2
 y 30
-elevation 8461
 end
-arch mountain
+arch mountain4
 x 2
 y 31
-elevation 7860
 end
-arch mountain
+arch mountain4
 x 2
 y 32
-elevation 5275
 end
 arch hills_rocky
 x 2
@@ -650,6 +696,10 @@ x 2
 y 38
 elevation 3188
 end
+arch snow5
+x 2
+y 38
+end
 arch woods
 x 2
 y 39
@@ -660,15 +710,21 @@ x 2
 y 40
 elevation 2437
 end
-arch woods
+arch snowroad
 x 2
 y 41
-elevation 2923
 end
-arch hills_rocky
+arch snow5
+x 2
+y 41
+end
+arch snowroad
 x 2
 y 42
-elevation 3665
+end
+arch snow5
+x 2
+y 42
 end
 arch hills_rocky
 x 2
@@ -685,6 +741,10 @@ x 2
 y 45
 elevation 4565
 end
+arch cwall_2_1_2
+x 2
+y 45
+end
 arch hills
 x 2
 y 46
@@ -695,10 +755,9 @@ x 2
 y 47
 elevation 3279
 end
-arch mountain
+arch mountain4
 x 2
 y 48
-elevation 6139
 end
 arch mountain
 x 2
@@ -854,35 +913,29 @@ x 3
 y 29
 elevation 8476
 end
-arch mountain
+arch mountain4
 x 3
 y 30
-elevation 8743
 end
-arch mountain
+arch mountain4
 x 3
 y 31
-elevation 8404
 end
-arch mountain
+arch mountain4
 x 3
 y 32
-elevation 7592
 end
-arch mountain
+arch mountain4
 x 3
 y 33
-elevation 6681
 end
-arch mountain
+arch mountain4
 x 3
 y 34
-elevation 6010
 end
-arch mountain
+arch mountain4
 x 3
 y 35
-elevation 5194
 end
 arch hills_rocky
 x 3
@@ -894,10 +947,18 @@ x 3
 y 37
 elevation 3664
 end
+arch snow5
+x 3
+y 37
+end
 arch hills_rocky
 x 3
 y 38
 elevation 3196
+end
+arch snow5
+x 3
+y 38
 end
 arch tree
 x 3
@@ -909,20 +970,30 @@ x 3
 y 40
 elevation 945
 end
-arch woods
+arch snowroad
 x 3
 y 41
-elevation 2709
 end
-arch hills_rocky
+arch snow5
+x 3
+y 41
+end
+arch snowroad
 x 3
 y 42
-elevation 3313
+end
+arch snow5
+x 3
+y 42
 end
 arch hills_rocky
 x 3
 y 43
 elevation 4316
+end
+arch snow5
+x 3
+y 43
 end
 arch hills_rocky
 x 3
@@ -933,6 +1004,11 @@ arch hills
 x 3
 y 45
 elevation 4630
+end
+arch cityport_a
+name ark
+x 3
+y 45
 end
 arch hills_rocky
 x 3
@@ -947,7 +1023,10 @@ end
 arch mountain
 x 3
 y 48
-elevation 6011
+end
+arch cwall_1_4
+x 3
+y 48
 end
 arch mountain
 x 3
@@ -1103,35 +1182,29 @@ x 4
 y 29
 elevation 8267
 end
-arch mountain
+arch mountain4
 x 4
 y 30
-elevation 8433
 end
-arch mountain
+arch mountain4
 x 4
 y 31
-elevation 8370
 end
-arch mountain
+arch mountain4
 x 4
 y 32
-elevation 8208
 end
-arch mountain
+arch mountain4
 x 4
 y 33
-elevation 7843
 end
-arch mountain
+arch mountain4
 x 4
 y 34
-elevation 7166
 end
-arch mountain
+arch mountain4
 x 4
 y 35
-elevation 6226
 end
 arch hills_rocky
 x 4
@@ -1143,45 +1216,72 @@ x 4
 y 37
 elevation 2712
 end
-arch hills_rocky
+arch snowroad
 x 4
 y 38
-elevation 3107
 end
-arch hills_rocky
+arch snow5
+x 4
+y 38
+end
+arch snowroad
 x 4
 y 39
-elevation 3160
 end
-arch hills_rocky
+arch snow5
+x 4
+y 39
+end
+arch snowroad
 x 4
 y 40
-elevation 3236
 end
-arch hills_rocky
+arch snow5
+x 4
+y 40
+end
+arch snowroad
 x 4
 y 41
-elevation 3159
 end
-arch hills_rocky
+arch snow5
+x 4
+y 41
+end
+arch snowroad
 x 4
 y 42
-elevation 3729
+end
+arch snow5
+x 4
+y 42
 end
 arch mountain
 x 4
 y 43
 elevation 5031
 end
+arch snow5
+x 4
+y 43
+end
 arch mountain
 x 4
 y 44
 elevation 5632
 end
+arch snow5
+x 4
+y 44
+end
 arch mountain
 x 4
 y 45
 elevation 5248
+end
+arch cwall_2_1_2
+x 4
+y 45
 end
 arch hills
 x 4
@@ -1191,12 +1291,14 @@ end
 arch mountain
 x 4
 y 47
-elevation 5155
 end
 arch mountain
 x 4
 y 48
-elevation 6286
+end
+arch cwall_2_1_2
+x 4
+y 48
 end
 arch mountain
 x 4
@@ -1362,30 +1464,25 @@ x 5
 y 31
 elevation 7074
 end
-arch mountain
+arch mountain4
 x 5
 y 32
-elevation 8245
 end
-arch mountain
+arch mountain4
 x 5
 y 33
-elevation 8212
 end
-arch mountain
+arch mountain4
 x 5
 y 34
-elevation 7997
 end
-arch mountain
+arch mountain4
 x 5
 y 35
-elevation 7241
 end
-arch mountain
+arch mountain4
 x 5
 y 36
-elevation 5874
 end
 arch hills_rocky
 x 5
@@ -1402,25 +1499,49 @@ x 5
 y 39
 elevation 3777
 end
+arch snow5
+x 5
+y 39
+end
 arch hills_rocky
 x 5
 y 40
 elevation 4041
+end
+arch snow5
+x 5
+y 40
 end
 arch hills_rocky
 x 5
 y 41
 elevation 4193
 end
+arch snow5
+x 5
+y 41
+end
+arch s_castle
+x 5
+y 41
+end
 arch hills_rocky
 x 5
 y 42
 elevation 4535
 end
+arch snow5
+x 5
+y 42
+end
 arch mountain
 x 5
 y 43
 elevation 5220
+end
+arch snow5
+x 5
+y 43
 end
 arch mountain
 x 5
@@ -1430,22 +1551,27 @@ end
 arch mountain
 x 5
 y 45
-elevation 5790
+end
+arch cwall_2_1_2
+x 5
+y 45
 end
 arch mountain
 x 5
 y 46
-elevation 5245
 end
 arch mountain
 x 5
 y 47
-elevation 5591
 end
 arch mountain
 x 5
 y 48
 elevation 6139
+end
+arch cwall_2_1_2
+x 5
+y 48
 end
 arch mountain
 x 5
@@ -1611,35 +1737,30 @@ x 6
 y 31
 elevation 7613
 end
-arch mountain
+arch mountain4
 x 6
 y 32
-elevation 7882
 end
-arch mountain
+arch mountain4
 x 6
 y 33
-elevation 8223
 end
-arch mountain
+arch mountain4
 x 6
 y 34
-elevation 8181
 end
 arch mountain
 x 6
 y 35
 elevation 7690
 end
-arch mountain
+arch mountain4
 x 6
 y 36
-elevation 6636
 end
-arch mountain
+arch mountain4
 x 6
 y 37
-elevation 5346
 end
 arch hills_rocky
 x 6
@@ -1651,35 +1772,56 @@ x 6
 y 39
 elevation 3311
 end
+arch snow5
+x 6
+y 39
+end
 arch hills_rocky
 x 6
 y 40
 elevation 4765
+end
+arch snow5
+x 6
+y 40
 end
 arch hills_rocky
 x 6
 y 41
 elevation 4782
 end
+arch snow5
+x 6
+y 41
+end
 arch hills_rocky
 x 6
 y 42
 elevation 3485
 end
+arch snow5
+x 6
+y 42
+end
 arch mountain
 x 6
 y 43
 elevation 5197
+move_block all
 end
 arch mountain
 x 6
 y 44
 elevation 5800
+move_block all
 end
 arch mountain
 x 6
 y 45
-elevation 6003
+end
+arch cwall_2_1_2
+x 6
+y 45
 end
 arch mountain
 x 6
@@ -1691,10 +1833,18 @@ x 6
 y 47
 elevation 5486
 end
+arch cwall_2_2_2
+x 6
+y 47
+end
 arch mountain
 x 6
 y 48
 elevation 5205
+end
+arch cwall_2_2_4
+x 6
+y 48
 end
 arch hills
 x 6
@@ -1885,10 +2035,9 @@ x 7
 y 36
 elevation 6384
 end
-arch mountain
+arch mountain4
 x 7
 y 37
-elevation 5479
 end
 arch hills_rocky
 x 7
@@ -1909,11 +2058,16 @@ arch mountain
 x 7
 y 41
 elevation 5137
+move_block all
 end
 arch hills_rocky
 x 7
 y 42
 elevation 4947
+end
+arch snow5
+x 7
+y 42
 end
 arch steppe
 x 7
@@ -1928,7 +2082,10 @@ end
 arch mountain
 x 7
 y 45
-elevation 5842
+end
+arch cwall_2_1_2
+x 7
+y 45
 end
 arch mountain
 x 7
@@ -1939,6 +2096,10 @@ arch mountain
 x 7
 y 47
 elevation 5285
+end
+arch cwall_2_1_2
+x 7
+y 47
 end
 arch evergreen
 x 7
@@ -2129,55 +2290,78 @@ x 8
 y 35
 elevation 5704
 end
-arch hills_rocky
+arch mountain4
 x 8
 y 36
-elevation 4886
 end
-arch mountain
+arch mountain4
 x 8
 y 37
-elevation 5000
 end
-arch hills_rocky
+arch mountain4
 x 8
 y 38
-elevation 4548
 end
 arch mountain
 x 8
 y 39
-elevation 5466
+end
+arch cwall_2_2_2
+x 8
+y 39
 end
 arch mountain
 x 8
 y 40
-elevation 5782
+end
+arch cwall_2_1_1
+x 8
+y 40
 end
 arch mountain
 x 8
 y 41
 elevation 5392
 end
+arch cwall_2_1_1
+x 8
+y 41
+end
 arch hills_rocky
 x 8
 y 42
 elevation 4352
+end
+arch cityport_b
+name ark
+x 8
+y 42
 end
 arch mountain
 x 8
 y 43
 elevation 5074
 end
+arch cwall_2_1_1
+x 8
+y 43
+end
 arch hills
 x 8
 y 44
 elevation 4785
 end
+arch cwall_2_1_1
+x 8
+y 44
+end
 arch mountain
 x 8
 y 45
-elevation 5590
+end
+arch cwall_2_2_4
+x 8
+y 45
 end
 arch mountain
 x 8
@@ -2188,6 +2372,10 @@ arch mountain
 x 8
 y 47
 elevation 5259
+end
+arch cwall_2_1_2
+x 8
+y 47
 end
 arch hills
 x 8
@@ -2378,15 +2566,13 @@ x 9
 y 35
 elevation 4382
 end
-arch hills_rocky
+arch mountain4
 x 9
 y 36
-elevation 4180
 end
-arch hills_rocky
+arch mountain4
 x 9
 y 37
-elevation 3846
 end
 arch mountain
 x 9
@@ -2398,20 +2584,26 @@ x 9
 y 39
 elevation 5700
 end
+arch cwall_2_1_2
+x 9
+y 39
+end
 arch mountain
 x 9
 y 40
-elevation 5934
 end
 arch mountain
 x 9
 y 41
-elevation 5536
 end
 arch hills_rocky
 x 9
 y 42
 elevation 4314
+end
+arch snow5
+x 9
+y 42
 end
 arch mountain
 x 9
@@ -2426,7 +2618,6 @@ end
 arch mountain
 x 9
 y 45
-elevation 6237
 end
 arch mountain
 x 9
@@ -2437,6 +2628,10 @@ arch mountain
 x 9
 y 47
 elevation 5354
+end
+arch cwall_2_1_2
+x 9
+y 47
 end
 arch hills
 x 9
@@ -2627,65 +2822,93 @@ x 10
 y 35
 elevation 2571
 end
-arch hills_rocky
+arch mountain4
 x 10
 y 36
-elevation 3654
 end
-arch hills_rocky
+arch mountain4
 x 10
 y 37
-elevation 4311
 end
-arch hills_rocky
+arch mountain4
 x 10
 y 38
-elevation 4888
 end
 arch mountain
 x 10
 y 39
 elevation 5391
 end
+arch cwall_2_2_3
+x 10
+y 39
+end
 arch mountain
 x 10
 y 40
 elevation 5551
 end
+arch cwall_2_1_1
+x 10
+y 40
+end
 arch mountain
 x 10
 y 41
-elevation 5377
+end
+arch cwall_2_1_1
+x 10
+y 41
 end
 arch mountain
 x 10
 y 42
-elevation 5355
+end
+arch cwall_2_1_1
+x 10
+y 42
 end
 arch mountain
 x 10
 y 43
-elevation 5713
+end
+arch cwall_2_1_1
+x 10
+y 43
 end
 arch mountain
 x 10
 y 44
-elevation 6317
+end
+arch cwall_2_1_1
+x 10
+y 44
 end
 arch mountain
 x 10
 y 45
-elevation 6668
+end
+arch cwall_2_1_1
+x 10
+y 45
 end
 arch mountain
 x 10
 y 46
 elevation 6415
 end
+arch cwall_2_1_1
+x 10
+y 46
+end
 arch mountain
 x 10
 y 47
 elevation 5559
+end
+arch cwall_2_2_4
+x 10
+y 47
 end
 arch hills
 x 10
