@@ -9,7 +9,7 @@ enter_y 28
 msg
 GuildHouse Main Floor
 Created:  2004-11-19 majorwoo (josh@woosworld.net), Avion
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2007-12-26 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -10769,7 +10769,7 @@ invisible 1
 connected 333
 end
 arch altar
-slaying platinacoin
+slaying ambercoin
 msg
 Please drop 100 amber coins for guild.
 endmsg
