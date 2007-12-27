@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -5292,14 +5292,9 @@ x 21
 y 49
 elevation -6910
 end
-arch grass_only
+arch woods
 x 22
-type -666
 elevation 1292
-end
-arch woods4
-x 22
-type -666
 end
 arch beach
 x 22
@@ -5522,25 +5517,14 @@ x 22
 y 49
 elevation -7042
 end
-arch grass_only
+arch woods
 x 23
-type -666
 elevation 1239
 end
-arch woods4
-x 23
-type -666
-end
-arch grass_only
+arch woods
 x 23
 y 1
-type -666
 elevation 1054
-end
-arch woods4
-x 23
-y 1
-type -666
 end
 arch beach
 x 23
@@ -5762,14 +5746,9 @@ x 23
 y 49
 elevation -7166
 end
-arch grass_only
+arch woods
 x 24
-type -666
 elevation 1188
-end
-arch woods4
-x 24
-type -666
 end
 arch beach
 x 24

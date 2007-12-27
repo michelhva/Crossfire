@@ -3,7 +3,7 @@ name world_114_112
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-23 tchize
 endmsg
 outdoor 1
 tile_path_1 world_114_111
@@ -11121,16 +11121,10 @@ x 45
 y 3
 elevation 3267
 end
-arch grass_only
+arch woods
 x 45
 y 4
-type -666
 elevation 2988
-end
-arch woods4
-x 45
-y 4
-type -666
 end
 arch hills_rocky
 x 45
@@ -11384,16 +11378,10 @@ x 46
 y 4
 elevation 3350
 end
-arch grass_only
+arch woods
 x 46
 y 5
-type -666
 elevation 2010
-end
-arch woods4
-x 46
-y 5
-type -666
 end
 arch hills_rocky
 x 46
@@ -11647,16 +11635,10 @@ x 47
 y 4
 elevation 4044
 end
-arch grass_only
+arch woods
 x 47
 y 5
-type -666
 elevation 2379
-end
-arch woods4
-x 47
-y 5
-type -666
 end
 arch hills_rocky
 x 47

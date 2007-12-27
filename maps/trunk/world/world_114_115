@@ -3,7 +3,7 @@ name world_114_115
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_114_114
@@ -985,16 +985,10 @@ x 4
 y 4
 elevation 4414
 end
-arch grass_only
+arch woods
 x 4
 y 5
-type -666
 elevation 2950
-end
-arch woods4
-x 4
-y 5
-type -666
 end
 arch mountain
 x 4
@@ -1245,16 +1239,10 @@ x 5
 y 5
 elevation 3198
 end
-arch grass_only
+arch woods
 x 5
 y 6
-type -666
 elevation 2871
-end
-arch woods4
-x 5
-y 6
-type -666
 end
 arch mountain
 x 5

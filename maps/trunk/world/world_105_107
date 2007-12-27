@@ -3,7 +3,7 @@ name world_105_107
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_105_106
@@ -399,16 +399,10 @@ x 1
 y 37
 elevation 2305
 end
-arch grass_only
+arch woods
 x 1
 y 38
-type -666
 elevation 2804
-end
-arch woods4
-x 1
-y 38
-type -666
 end
 arch steppe
 x 1
@@ -654,16 +648,10 @@ x 2
 y 37
 elevation 1232
 end
-arch grass_only
+arch woods
 x 2
 y 38
-type -666
 elevation 1164
-end
-arch woods4
-x 2
-y 38
-type -666
 end
 arch hills
 x 2
@@ -2168,43 +2156,25 @@ x 8
 y 39
 elevation 3745
 end
-arch grass_only
+arch woods
 x 8
 y 40
-type -666
 elevation 2402
-end
-arch woods4
-x 8
-y 40
-type -666
 end
 arch steppe
 x 8
 y 41
 elevation 3030
 end
-arch grass_only
+arch woods
 x 8
 y 42
-type -666
 elevation 2052
 end
-arch woods4
-x 8
-y 42
-type -666
-end
-arch grass_only
+arch woods
 x 8
 y 43
-type -666
 elevation 2781
-end
-arch woods4
-x 8
-y 43
-type -666
 end
 arch steppe
 x 8
@@ -2331,16 +2301,10 @@ x 9
 y 15
 elevation 980
 end
-arch grass_only
+arch woods
 x 9
 y 16
-type -666
 elevation 2845
-end
-arch woods4
-x 9
-y 16
-type -666
 end
 arch steppe
 x 9
@@ -2457,27 +2421,15 @@ x 9
 y 39
 elevation 3841
 end
-arch grass_only
+arch woods
 x 9
 y 40
-type -666
 elevation 2323
 end
-arch woods4
-x 9
-y 40
-type -666
-end
-arch grass_only
+arch woods
 x 9
 y 41
-type -666
 elevation 2685
-end
-arch woods4
-x 9
-y 41
-type -666
 end
 arch steppe
 x 9
@@ -5166,16 +5118,10 @@ x 20
 y 25
 elevation 1880
 end
-arch grass_only
+arch woods
 x 20
 y 26
-type -666
 elevation 2387
-end
-arch woods4
-x 20
-y 26
-type -666
 end
 arch hills_rocky
 x 20
@@ -5945,16 +5891,10 @@ x 23
 y 23
 elevation 3957
 end
-arch grass_only
+arch woods
 x 23
 y 24
-type -666
 elevation 2384
-end
-arch woods4
-x 23
-y 24
-type -666
 end
 arch brush
 x 23
@@ -6200,32 +6140,20 @@ x 24
 y 23
 elevation 2958
 end
-arch grass_only
+arch woods
 x 24
 y 24
-type -666
 elevation 1288
-end
-arch woods4
-x 24
-y 24
-type -666
 end
 arch grass
 x 24
 y 25
 elevation 545
 end
-arch grass_only
+arch woods
 x 24
 y 26
-type -666
 elevation 1888
-end
-arch woods4
-x 24
-y 26
-type -666
 end
 arch hills_rocky
 x 24

@@ -2,9 +2,6 @@ arch map
 name world_129_113
 width 50
 height 50
-msg
-Modified: 2007-12-27 tchize
-endmsg
 outdoor 1
 tile_path_1 world_129_112
 tile_path_3 world_129_114
@@ -201,14 +198,9 @@ arch woods_2
 y 47
 elevation 2574
 end
-arch grass_only
+arch woods
 y 48
-type -666
 elevation 1801
-end
-arch woods4
-y 48
-type -666
 end
 arch brush
 y 49
@@ -433,65 +425,35 @@ x 1
 y 43
 elevation -194
 end
-arch grass_only
+arch woods
 x 1
 y 44
-type -666
 elevation 1075
-end
-arch woods4
-x 1
-y 44
-type -666
 end
 arch woods_2
 x 1
 y 45
 elevation 1956
 end
-arch grass_only
+arch woods
 x 1
 y 46
-type -666
 elevation 2361
 end
-arch woods4
-x 1
-y 46
-type -666
-end
-arch grass_only
+arch woods
 x 1
 y 47
-type -666
 elevation 2536
 end
-arch woods4
-x 1
-y 47
-type -666
-end
-arch grass_only
+arch woods
 x 1
 y 48
-type -666
 elevation 2118
 end
-arch woods4
-x 1
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 1
 y 49
-type -666
 elevation 1509
-end
-arch woods4
-x 1
-y 49
-type -666
 end
 arch deep_sea
 x 2
@@ -727,16 +689,10 @@ x 2
 y 46
 elevation 451
 end
-arch grass_only
+arch woods
 x 2
 y 47
-type -666
 elevation 1343
-end
-arch woods4
-x 2
-y 47
-type -666
 end
 arch woods_2
 x 2

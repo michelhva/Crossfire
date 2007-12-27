@@ -4,7 +4,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7968,16 +7968,10 @@ x 27
 y 48
 elevation 0
 end
-arch grass_only
+arch woods
 x 27
 y 49
-type -666
 elevation 0
-end
-arch woods4
-x 27
-y 49
-type -666
 end
 arch shallow_sea
 x 28
@@ -9383,16 +9377,10 @@ x 32
 y 5
 elevation 1495
 end
-arch grass_only
+arch woods
 x 32
 y 6
-type -666
 elevation 0
-end
-arch woods4
-x 32
-y 6
-type -666
 end
 arch woodhouse
 name Tollhouse

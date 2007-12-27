@@ -3,7 +3,7 @@ name world_128_117
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_128_116
@@ -2185,16 +2185,10 @@ arch evergreens2
 x 8
 y 8
 end
-arch grass_only
+arch woods
 x 8
 y 9
-type -666
 elevation 1710
-end
-arch woods4
-x 8
-y 9
-type -666
 end
 arch grass_only
 x 8
@@ -2476,16 +2470,10 @@ arch evergreens2
 x 9
 y 8
 end
-arch grass_only
+arch woods
 x 9
 y 9
-type -666
 elevation 1682
-end
-arch woods4
-x 9
-y 9
-type -666
 end
 arch grass_only
 x 9

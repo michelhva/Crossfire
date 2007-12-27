@@ -3,7 +3,7 @@ name world_118_121
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_118_120
@@ -8289,16 +8289,10 @@ x 33
 y 12
 elevation 3841
 end
-arch grass_only
+arch woods
 x 33
 y 13
-type -666
 elevation 2636
-end
-arch woods4
-x 33
-y 13
-type -666
 end
 arch hills
 x 33
@@ -8567,16 +8561,10 @@ x 34
 y 15
 elevation 2040
 end
-arch grass_only
+arch woods
 x 34
 y 16
-type -666
 elevation 2084
-end
-arch woods4
-x 34
-y 16
-type -666
 end
 arch hills
 x 34
@@ -11694,16 +11682,10 @@ x 46
 y 8
 elevation 3278
 end
-arch grass_only
+arch woods
 x 46
 y 9
-type -666
 elevation 2997
-end
-arch woods4
-x 46
-y 9
-type -666
 end
 arch hills
 x 46
@@ -11912,60 +11894,30 @@ arch evergreens2
 x 46
 y 44
 end
-arch grass_only
+arch woods
 x 46
 y 45
-type -666
 elevation 1160
 end
-arch woods4
-x 46
-y 45
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 46
-type -666
 elevation 2121
 end
-arch woods4
-x 46
-y 46
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 47
-type -666
 elevation 2841
 end
-arch woods4
-x 46
-y 47
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 48
-type -666
 elevation 2439
 end
-arch woods4
-x 46
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 49
-type -666
 elevation 1775
-end
-arch woods4
-x 46
-y 49
-type -666
 end
 arch hills
 x 47
@@ -12207,32 +12159,20 @@ x 47
 y 40
 elevation 1290
 end
-arch grass_only
+arch woods
 x 47
 y 41
-type -666
 elevation 2545
-end
-arch woods4
-x 47
-y 41
-type -666
 end
 arch hills_rocky
 x 47
 y 42
 elevation 2729
 end
-arch grass_only
+arch woods
 x 47
 y 43
-type -666
 elevation 2204
-end
-arch woods4
-x 47
-y 43
-type -666
 end
 arch grass_only
 x 47
@@ -12789,38 +12729,20 @@ x 49
 y 40
 elevation 2035
 end
-arch grass_only
+arch woods
 x 49
 y 41
-type -666
 elevation 2692
 end
-arch woods4
-x 49
-y 41
-type -666
-end
-arch grass_only
+arch woods
 x 49
 y 42
-type -666
 elevation 2708
 end
-arch woods4
-x 49
-y 42
-type -666
-end
-arch grass_only
+arch woods
 x 49
 y 43
-type -666
 elevation 2281
-end
-arch woods4
-x 49
-y 43
-type -666
 end
 arch hills
 x 49

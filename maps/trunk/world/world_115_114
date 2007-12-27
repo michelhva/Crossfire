@@ -3,7 +3,7 @@ name world_115_114
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_115_113
@@ -2970,16 +2970,10 @@ x 12
 y 1
 elevation 2729
 end
-arch grass_only
+arch woods
 x 12
 y 2
-type -666
 elevation 1249
-end
-arch woods4
-x 12
-y 2
-type -666
 end
 arch steppe
 x 12
@@ -4722,14 +4716,9 @@ x 18
 y 49
 elevation 8882
 end
-arch grass_only
+arch woods
 x 19
-type -666
 elevation 2143
-end
-arch woods4
-x 19
-type -666
 end
 arch hills
 x 19
@@ -4976,14 +4965,9 @@ x 19
 y 49
 elevation 10530
 end
-arch grass_only
+arch woods
 x 20
-type -666
 elevation 2482
-end
-arch woods4
-x 20
-type -666
 end
 arch hills
 x 20
@@ -5753,27 +5737,15 @@ x 23
 y 1
 elevation 4141
 end
-arch grass_only
+arch woods
 x 23
 y 2
-type -666
 elevation 2409
 end
-arch woods4
-x 23
-y 2
-type -666
-end
-arch grass_only
+arch woods
 x 23
 y 3
-type -666
 elevation 2577
-end
-arch woods4
-x 23
-y 3
-type -666
 end
 arch steppe
 x 23
@@ -7046,16 +7018,10 @@ x 28
 y 1
 elevation 4743
 end
-arch grass_only
+arch woods
 x 28
 y 2
-type -666
 elevation 2705
-end
-arch woods4
-x 28
-y 2
-type -666
 end
 arch steppe
 x 28

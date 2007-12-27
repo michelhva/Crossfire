@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -85,13 +85,8 @@ end
 arch grass
 y 22
 end
-arch grass_only
+arch woods
 y 23
-type -666
-end
-arch woods4
-y 23
-type -666
 end
 arch grass_only
 y 24
@@ -123,13 +118,8 @@ end
 arch evergreens2
 y 30
 end
-arch grass_only
+arch woods
 y 31
-type -666
-end
-arch woods4
-y 31
-type -666
 end
 arch grass_only
 y 32
@@ -340,15 +330,9 @@ arch evergreens2
 x 1
 y 32
 end
-arch grass_only
+arch woods
 x 1
 y 33
-type -666
-end
-arch woods4
-x 1
-y 33
-type -666
 end
 arch grass_only
 x 1
@@ -865,15 +849,9 @@ arch hills
 x 3
 y 43
 end
-arch grass_only
+arch woods
 x 3
 y 44
-type -666
-end
-arch woods4
-x 3
-y 44
-type -666
 end
 arch hills
 x 3
@@ -4655,15 +4633,9 @@ x 19
 y 15
 unique 1
 end
-arch grass_only
+arch woods
 x 19
 y 16
-type -666
-end
-arch woods4
-x 19
-y 16
-type -666
 end
 arch cobblestones
 x 19
@@ -4948,15 +4920,9 @@ arch grass
 x 20
 y 21
 end
-arch grass_only
+arch woods
 x 20
 y 22
-type -666
-end
-arch woods4
-x 20
-y 22
-type -666
 end
 arch grass
 x 20
@@ -5699,15 +5665,9 @@ arch tree3
 x 23
 y 13
 end
-arch grass_only
+arch woods
 x 23
 y 14
-type -666
-end
-arch woods4
-x 23
-y 14
-type -666
 end
 arch grass_only
 x 23
@@ -6347,33 +6307,16 @@ arch brush
 x 25
 y 49
 end
-arch grass_only
+arch woods
 x 26
-type -666
 end
-arch woods4
-x 26
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 1
-type -666
 end
-arch woods4
-x 26
-y 1
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 2
-type -666
-end
-arch woods4
-x 26
-y 2
-type -666
 end
 arch cobblestones
 x 26
@@ -6595,23 +6538,12 @@ arch brush
 x 26
 y 49
 end
-arch grass_only
+arch woods
 x 27
-type -666
 end
-arch woods4
-x 27
-type -666
-end
-arch grass_only
+arch woods
 x 27
 y 1
-type -666
-end
-arch woods4
-x 27
-y 1
-type -666
 end
 arch grass
 x 27
@@ -6897,37 +6829,20 @@ arch tree3
 x 27
 y 49
 end
-arch grass_only
+arch woods
 x 28
-type -666
 end
-arch woods4
-x 28
-type -666
-end
-arch grass_only
+arch woods
 x 28
 y 1
-type -666
-end
-arch woods4
-x 28
-y 1
-type -666
 end
 arch beach
 x 28
 y 2
 end
-arch grass_only
+arch woods
 x 28
 y 3
-type -666
-end
-arch woods4
-x 28
-y 3
-type -666
 end
 arch grass
 x 28
@@ -7136,25 +7051,13 @@ end
 arch woods_3
 x 29
 end
-arch grass_only
+arch woods
 x 29
 y 1
-type -666
 end
-arch woods4
-x 29
-y 1
-type -666
-end
-arch grass_only
+arch woods
 x 29
 y 2
-type -666
-end
-arch woods4
-x 29
-y 2
-type -666
 end
 arch steppe
 x 29
@@ -7380,13 +7283,8 @@ arch woods_2
 x 29
 y 49
 end
-arch grass_only
+arch woods
 x 30
-type -666
-end
-arch woods4
-x 30
-type -666
 end
 arch brush
 x 30
@@ -8340,13 +8238,8 @@ arch cobblestones
 x 33
 y 49
 end
-arch grass_only
+arch woods
 x 34
-type -666
-end
-arch woods4
-x 34
-type -666
 end
 arch steppe
 x 34
@@ -9134,15 +9027,9 @@ arch hills
 x 36
 y 44
 end
-arch grass_only
+arch woods
 x 36
 y 45
-type -666
-end
-arch woods4
-x 36
-y 45
-type -666
 end
 arch jungle_1
 x 36
@@ -9885,15 +9772,9 @@ arch hills_rocky
 x 39
 y 46
 end
-arch grass_only
+arch woods
 x 39
 y 47
-type -666
-end
-arch woods4
-x 39
-y 47
-type -666
 end
 arch woods_2
 x 39
@@ -11110,15 +10991,9 @@ arch hills
 x 44
 y 45
 end
-arch grass_only
+arch woods
 x 44
 y 46
-type -666
-end
-arch woods4
-x 44
-y 46
-type -666
 end
 arch grass_only
 x 44
@@ -11590,25 +11465,13 @@ arch tree3
 x 46
 y 44
 end
-arch grass_only
+arch woods
 x 46
 y 45
-type -666
 end
-arch woods4
-x 46
-y 45
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 46
-type -666
-end
-arch woods4
-x 46
-y 46
-type -666
 end
 arch hills
 x 46
@@ -11777,29 +11640,17 @@ arch tree3
 x 47
 y 37
 end
-arch grass_only
+arch woods
 x 47
 y 38
-type -666
-end
-arch woods4
-x 47
-y 38
-type -666
 end
 arch jungle_1
 x 47
 y 39
 end
-arch grass_only
+arch woods
 x 47
 y 40
-type -666
-end
-arch woods4
-x 47
-y 40
-type -666
 end
 arch grass_only
 x 47
@@ -12243,15 +12094,9 @@ arch tree3
 x 49
 y 36
 end
-arch grass_only
+arch woods
 x 49
 y 37
-type -666
-end
-arch woods4
-x 49
-y 37
-type -666
 end
 arch grass_only
 x 49
@@ -12261,15 +12106,9 @@ arch tree3
 x 49
 y 38
 end
-arch grass_only
+arch woods
 x 49
 y 39
-type -666
-end
-arch woods4
-x 49
-y 39
-type -666
 end
 arch grass_only
 x 49
@@ -12323,15 +12162,9 @@ arch hills
 x 49
 y 47
 end
-arch grass_only
+arch woods
 x 49
 y 48
-type -666
-end
-arch woods4
-x 49
-y 48
-type -666
 end
 arch woods_2
 x 49

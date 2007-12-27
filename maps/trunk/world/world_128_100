@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_2 world_129_100
@@ -2506,16 +2506,10 @@ x 9
 y 43
 elevation 564
 end
-arch grass_only
+arch woods
 x 9
 y 44
-type -666
 elevation 1084
-end
-arch woods4
-x 9
-y 44
-type -666
 end
 arch hills_rocky
 x 9
@@ -2784,16 +2778,10 @@ x 10
 y 46
 elevation 1411
 end
-arch grass_only
+arch woods
 x 10
 y 47
-type -666
 elevation 1085
-end
-arch woods4
-x 10
-y 47
-type -666
 end
 arch desert
 x 10
@@ -3048,27 +3036,15 @@ x 11
 y 47
 elevation 828
 end
-arch grass_only
+arch woods
 x 11
 y 48
-type -666
 elevation 1058
 end
-arch woods4
-x 11
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 11
 y 49
-type -666
 elevation 1140
-end
-arch woods4
-x 11
-y 49
-type -666
 end
 arch sea
 x 12
@@ -3326,16 +3302,10 @@ arch tree5
 x 12
 y 48
 end
-arch grass_only
+arch woods
 x 12
 y 49
-type -666
 elevation 1373
-end
-arch woods4
-x 12
-y 49
-type -666
 end
 arch sea
 x 13
