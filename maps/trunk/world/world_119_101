@@ -3,7 +3,7 @@ name world_119_101
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_119_100
@@ -86,9 +86,14 @@ end
 arch dungeon_magic
 y 12
 end
-arch woods
+arch grass_only
 y 13
+type -666
 elevation 1487
+end
+arch woods4
+y 13
+type -666
 end
 arch dungeon_magic
 y 13
@@ -381,10 +386,16 @@ arch dungeon_magic
 x 1
 y 13
 end
-arch woods
+arch grass_only
 x 1
 y 14
+type -666
 elevation 1168
+end
+arch woods4
+x 1
+y 14
+type -666
 end
 arch dungeon_magic
 x 1
@@ -700,10 +711,16 @@ arch dungeon_magic
 x 2
 y 11
 end
-arch woods
+arch grass_only
 x 2
 y 12
+type -666
 elevation 1725
+end
+arch woods4
+x 2
+y 12
+type -666
 end
 arch dungeon_magic
 x 2
@@ -1041,10 +1058,16 @@ arch dungeon_magic
 x 3
 y 11
 end
-arch woods
+arch grass_only
 x 3
 y 12
+type -666
 elevation 1217
+end
+arch woods4
+x 3
+y 12
+type -666
 end
 arch dungeon_magic
 x 3
@@ -1113,10 +1136,16 @@ arch dungeon_magic
 x 3
 y 19
 end
-arch woods
+arch grass_only
 x 3
 y 20
+type -666
 elevation 1152
+end
+arch woods4
+x 3
+y 20
+type -666
 end
 arch dungeon_magic
 x 3
@@ -1429,10 +1458,16 @@ arch dungeon_magic
 x 4
 y 18
 end
-arch woods
+arch grass_only
 x 4
 y 19
+type -666
 elevation 1772
+end
+arch woods4
+x 4
+y 19
+type -666
 end
 arch dungeon_magic
 x 4
@@ -3016,10 +3051,16 @@ arch dungeon_magic
 x 9
 y 20
 end
-arch woods
+arch grass_only
 x 9
 y 21
+type -666
 elevation 1279
+end
+arch woods4
+x 9
+y 21
+type -666
 end
 arch dungeon_magic
 x 9

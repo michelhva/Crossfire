@@ -4,7 +4,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_116_102
@@ -4456,15 +4456,27 @@ x 14
 y 46
 elevation 3106
 end
-arch woods
+arch grass_only
 x 14
 y 47
+type -666
 elevation 2882
 end
-arch woods
+arch woods4
+x 14
+y 47
+type -666
+end
+arch grass_only
 x 14
 y 48
+type -666
 elevation 2875
+end
+arch woods4
+x 14
+y 48
+type -666
 end
 arch hills
 x 14
@@ -4749,10 +4761,16 @@ x 15
 y 46
 elevation 3072
 end
-arch woods
+arch grass_only
 x 15
 y 47
+type -666
 elevation 2190
+end
+arch woods4
+x 15
+y 47
+type -666
 end
 arch grass_only
 x 15
@@ -5624,10 +5642,16 @@ arch evergreens2
 x 18
 y 46
 end
-arch woods
+arch grass_only
 x 18
 y 47
+type -666
 elevation 1061
+end
+arch woods4
+x 18
+y 47
+type -666
 end
 arch hills_rocky
 x 18
@@ -6239,10 +6263,16 @@ x 20
 y 47
 elevation 1521
 end
-arch woods
+arch grass_only
 x 20
 y 48
+type -666
 elevation 2145
+end
+arch woods4
+x 20
+y 48
+type -666
 end
 arch hills_rocky
 x 20
@@ -6567,10 +6597,16 @@ x 21
 y 46
 elevation 1262
 end
-arch woods
+arch grass_only
 x 21
 y 47
+type -666
 elevation 1784
+end
+arch woods4
+x 21
+y 47
+type -666
 end
 arch hills_rocky
 x 21
@@ -6912,10 +6948,16 @@ arch evergreens2
 x 22
 y 46
 end
-arch woods
+arch grass_only
 x 22
 y 47
+type -666
 elevation 1910
+end
+arch woods4
+x 22
+y 47
+type -666
 end
 arch hills
 x 22
@@ -8083,8 +8125,13 @@ x 26
 y 49
 elevation 3890
 end
-arch woods
+arch grass_only
 x 27
+type -666
+end
+arch woods4
+x 27
+type -666
 end
 arch brush
 x 27
@@ -10655,9 +10702,15 @@ arch cobblestones
 x 36
 y 7
 end
-arch woods
+arch grass_only
 x 36
 y 8
+type -666
+end
+arch woods4
+x 36
+y 8
+type -666
 end
 arch brush
 x 36
@@ -12411,10 +12464,16 @@ x 42
 y 19
 elevation 2085
 end
-arch woods
+arch grass_only
 x 42
 y 20
+type -666
 elevation 1878
+end
+arch woods4
+x 42
+y 20
+type -666
 end
 arch grass_only
 x 42

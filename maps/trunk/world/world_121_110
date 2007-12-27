@@ -3,7 +3,7 @@ name world_121_110
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_121_109
@@ -103,9 +103,14 @@ arch hills_rocky
 y 22
 elevation 3473
 end
-arch woods
+arch grass_only
 y 23
+type -666
 elevation 1222
+end
+arch woods4
+y 23
+type -666
 end
 arch grass_only
 y 24
@@ -140,9 +145,14 @@ end
 arch evergreens2
 y 29
 end
-arch woods
+arch grass_only
 y 30
+type -666
 elevation 1773
+end
+arch woods4
+y 30
+type -666
 end
 arch grass_only
 y 31
@@ -211,9 +221,14 @@ arch hills_rocky
 y 46
 elevation 3974
 end
-arch woods
+arch grass_only
 y 47
+type -666
 elevation 2413
+end
+arch woods4
+y 47
+type -666
 end
 arch grass
 y 48
@@ -346,10 +361,16 @@ x 1
 y 22
 elevation 4681
 end
-arch woods
+arch grass_only
 x 1
 y 23
+type -666
 elevation 2583
+end
+arch woods4
+x 1
+y 23
+type -666
 end
 arch grass_only
 x 1
@@ -360,10 +381,16 @@ arch evergreens2
 x 1
 y 24
 end
-arch woods
+arch grass_only
 x 1
 y 25
+type -666
 elevation 2918
+end
+arch woods4
+x 1
+y 25
+type -666
 end
 arch hills_rocky
 x 1
@@ -1276,10 +1303,16 @@ x 4
 y 46
 elevation 3057
 end
-arch woods
+arch grass_only
 x 4
 y 47
+type -666
 elevation 2861
+end
+arch woods4
+x 4
+y 47
+type -666
 end
 arch hills_rocky
 x 4
@@ -1291,9 +1324,14 @@ x 4
 y 49
 elevation 4137
 end
-arch woods
+arch grass_only
 x 5
+type -666
 elevation 1541
+end
+arch woods4
+x 5
+type -666
 end
 arch hills_rocky
 x 5
@@ -5790,20 +5828,32 @@ x 22
 y 23
 elevation 1624
 end
-arch woods
+arch grass_only
 x 22
 y 24
+type -666
 elevation 2414
+end
+arch woods4
+x 22
+y 24
+type -666
 end
 arch hills
 x 22
 y 25
 elevation 3409
 end
-arch woods
+arch grass_only
 x 22
 y 26
+type -666
 elevation 2435
+end
+arch woods4
+x 22
+y 26
+type -666
 end
 arch hills_rocky
 x 22
@@ -6040,10 +6090,16 @@ arch cobblestones
 x 23
 y 23
 end
-arch woods
+arch grass_only
 x 23
 y 24
+type -666
 elevation 1695
+end
+arch woods4
+x 23
+y 24
+type -666
 end
 arch hills
 x 23
@@ -7518,10 +7574,16 @@ x 29
 y 25
 elevation 5308
 end
-arch woods
+arch grass_only
 x 29
 y 26
+type -666
 elevation 2470
+end
+arch woods4
+x 29
+y 26
+type -666
 end
 arch hills_rocky
 x 29

@@ -3,7 +3,7 @@ name world_111_103
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_111_102
@@ -9141,10 +9141,16 @@ arch tree5
 x 35
 y 42
 end
-arch woods
+arch grass_only
 x 35
 y 43
+type -666
 elevation 2773
+end
+arch woods4
+x 35
+y 43
+type -666
 end
 arch grass_only
 x 35
@@ -9662,10 +9668,16 @@ x 37
 y 42
 elevation 2375
 end
-arch woods
+arch grass_only
 x 37
 y 43
+type -666
 elevation 2844
+end
+arch woods4
+x 37
+y 43
+type -666
 end
 arch grass_only
 x 37
@@ -9676,10 +9688,16 @@ arch evergreens2
 x 37
 y 44
 end
-arch woods
+arch grass_only
 x 37
 y 45
+type -666
 elevation 1084
+end
+arch woods4
+x 37
+y 45
+type -666
 end
 arch brush
 x 37
@@ -9917,10 +9935,16 @@ x 38
 y 40
 elevation 1710
 end
-arch woods
+arch grass_only
 x 38
 y 41
+type -666
 elevation 2338
+end
+arch woods4
+x 38
+y 41
+type -666
 end
 arch grass_only
 x 38
@@ -10192,10 +10216,16 @@ x 39
 y 42
 elevation 2609
 end
-arch woods
+arch grass_only
 x 39
 y 43
+type -666
 elevation 1642
+end
+arch woods4
+x 39
+y 43
+type -666
 end
 arch desert
 x 39
@@ -11730,10 +11760,16 @@ x 45
 y 46
 elevation 1422
 end
-arch woods
+arch grass_only
 x 45
 y 47
+type -666
 elevation 1913
+end
+arch woods4
+x 45
+y 47
+type -666
 end
 arch grass_only
 x 45

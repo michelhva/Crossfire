@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -4738,10 +4738,16 @@ x 18
 y 20
 elevation 1204
 end
-arch woods
+arch grass_only
 x 18
 y 21
+type -666
 elevation 2837
+end
+arch woods4
+x 18
+y 21
+type -666
 end
 arch brush
 x 18
@@ -4803,10 +4809,16 @@ x 18
 y 28
 elevation 183
 end
-arch woods
+arch grass_only
 x 18
 y 29
+type -666
 elevation 2100
+end
+arch woods4
+x 18
+y 29
+type -666
 end
 arch grass_only
 x 18
@@ -4876,9 +4888,15 @@ x 18
 y 39
 elevation 2195
 end
-arch woods
+arch grass_only
 x 18
 y 40
+type -666
+end
+arch woods4
+x 18
+y 40
+type -666
 end
 arch grass_only
 x 18
@@ -4889,10 +4907,16 @@ arch tree3
 x 18
 y 41
 end
-arch woods
+arch grass_only
 x 18
 y 42
+type -666
 elevation 863
+end
+arch woods4
+x 18
+y 42
+type -666
 end
 arch pstone_1
 x 18
@@ -5087,10 +5111,16 @@ x 19
 y 27
 elevation 2580
 end
-arch woods
+arch grass_only
 x 19
 y 28
+type -666
 elevation 1626
+end
+arch woods4
+x 19
+y 28
+type -666
 end
 arch brush
 x 19
@@ -5110,19 +5140,31 @@ arch house_1
 x 19
 y 30
 end
-arch woods
+arch grass_only
 x 19
 y 31
+type -666
+end
+arch woods4
+x 19
+y 31
+type -666
 end
 arch brush
 x 19
 y 32
 elevation 1372
 end
-arch woods
+arch grass_only
 x 19
 y 33
+type -666
 elevation 131
+end
+arch woods4
+x 19
+y 33
+type -666
 end
 arch brush
 x 19
@@ -5163,9 +5205,15 @@ x 19
 y 40
 elevation 930
 end
-arch woods
+arch grass_only
 x 19
 y 41
+type -666
+end
+arch woods4
+x 19
+y 41
+type -666
 end
 arch pstone_1
 x 19
@@ -5319,9 +5367,15 @@ arch house_1
 x 20
 y 20
 end
-arch woods
+arch grass_only
 x 20
 y 21
+type -666
+end
+arch woods4
+x 20
+y 21
+type -666
 end
 arch brush
 x 20
@@ -5375,9 +5429,15 @@ arch tree3
 x 20
 y 27
 end
-arch woods
+arch grass_only
 x 20
 y 28
+type -666
+end
+arch woods4
+x 20
+y 28
+type -666
 end
 arch brush
 x 20
@@ -5611,9 +5671,15 @@ arch woods_2
 x 21
 y 20
 end
-arch woods
+arch grass_only
 x 21
 y 21
+type -666
+end
+arch woods4
+x 21
+y 21
+type -666
 end
 arch brush
 x 21
@@ -5666,10 +5732,16 @@ x 21
 y 27
 elevation 2059
 end
-arch woods
+arch grass_only
 x 21
 y 28
+type -666
 elevation 1999
+end
+arch woods4
+x 21
+y 28
+type -666
 end
 arch brush
 x 21

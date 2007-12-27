@@ -3,7 +3,7 @@ name world_108_125
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_108_124
@@ -10786,10 +10786,16 @@ x 42
 y 38
 elevation 3536
 end
-arch woods
+arch grass_only
 x 42
 y 39
+type -666
 elevation 2280
+end
+arch woods4
+x 42
+y 39
+type -666
 end
 arch grass_only
 x 42
@@ -10805,10 +10811,16 @@ x 42
 y 41
 elevation 288
 end
-arch woods
+arch grass_only
 x 42
 y 42
+type -666
 elevation 1537
+end
+arch woods4
+x 42
+y 42
+type -666
 end
 arch hills_rocky
 x 42
@@ -11641,10 +11653,16 @@ x 45
 y 46
 elevation 2155
 end
-arch woods
+arch grass_only
 x 45
 y 47
+type -666
 elevation 1725
+end
+arch woods4
+x 45
+y 47
+type -666
 end
 arch grass
 x 45
@@ -11888,10 +11906,16 @@ x 46
 y 40
 elevation 1932
 end
-arch woods
+arch grass_only
 x 46
 y 41
+type -666
 elevation 1969
+end
+arch woods4
+x 46
+y 41
+type -666
 end
 arch grass_only
 x 46
@@ -11902,10 +11926,16 @@ arch evergreens2
 x 46
 y 42
 end
-arch woods
+arch grass_only
 x 46
 y 43
+type -666
 elevation 1984
+end
+arch woods4
+x 46
+y 43
+type -666
 end
 arch grass_only
 x 46
@@ -12199,15 +12229,27 @@ arch evergreens2
 x 47
 y 45
 end
-arch woods
+arch grass_only
 x 47
 y 46
+type -666
 elevation 2417
 end
-arch woods
+arch woods4
+x 47
+y 46
+type -666
+end
+arch grass_only
 x 47
 y 47
+type -666
 elevation 1628
+end
+arch woods4
+x 47
+y 47
+type -666
 end
 arch desert
 x 47
@@ -12471,10 +12513,16 @@ arch tree3
 x 48
 y 46
 end
-arch woods
+arch grass_only
 x 48
 y 47
+type -666
 elevation 1389
+end
+arch woods4
+x 48
+y 47
+type -666
 end
 arch grass_only
 x 48

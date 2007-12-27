@@ -3,7 +3,7 @@ name world_103_125
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_103_124
@@ -692,15 +692,27 @@ x 2
 y 38
 elevation 826
 end
-arch woods
+arch grass_only
 x 2
 y 39
+type -666
 elevation 1401
 end
-arch woods
+arch woods4
+x 2
+y 39
+type -666
+end
+arch grass_only
 x 2
 y 40
+type -666
 elevation 1496
+end
+arch woods4
+x 2
+y 40
+type -666
 end
 arch grass_only
 x 2
@@ -761,15 +773,27 @@ arch tree3
 x 2
 y 47
 end
-arch woods
+arch grass_only
 x 2
 y 48
+type -666
 elevation 1627
 end
-arch woods
+arch woods4
+x 2
+y 48
+type -666
+end
+arch grass_only
 x 2
 y 49
+type -666
 elevation 2050
+end
+arch woods4
+x 2
+y 49
+type -666
 end
 arch hills_rocky
 x 3
@@ -973,10 +997,16 @@ x 3
 y 38
 elevation 233
 end
-arch woods
+arch grass_only
 x 3
 y 39
+type -666
 elevation 1917
+end
+arch woods4
+x 3
+y 39
+type -666
 end
 arch grass_only
 x 3
@@ -1029,10 +1059,16 @@ arch tree3
 x 3
 y 46
 end
-arch woods
+arch grass_only
 x 3
 y 47
+type -666
 elevation 2476
+end
+arch woods4
+x 3
+y 47
+type -666
 end
 arch jungle_1
 x 3
@@ -1253,15 +1289,27 @@ arch tree5
 x 4
 y 38
 end
-arch woods
+arch grass_only
 x 4
 y 39
+type -666
 elevation 2213
 end
-arch woods
+arch woods4
+x 4
+y 39
+type -666
+end
+arch grass_only
 x 4
 y 40
+type -666
 elevation 2925
+end
+arch woods4
+x 4
+y 40
+type -666
 end
 arch grass_only
 x 4
@@ -1287,15 +1335,27 @@ x 4
 y 44
 elevation 2845
 end
-arch woods
+arch grass_only
 x 4
 y 45
+type -666
 elevation 2509
 end
-arch woods
+arch woods4
+x 4
+y 45
+type -666
+end
+arch grass_only
 x 4
 y 46
+type -666
 elevation 2363
+end
+arch woods4
+x 4
+y 46
+type -666
 end
 arch grass_only
 x 4
@@ -1535,10 +1595,16 @@ arch tree5
 x 5
 y 39
 end
-arch woods
+arch grass_only
 x 5
 y 40
+type -666
 elevation 2561
+end
+arch woods4
+x 5
+y 40
+type -666
 end
 arch jungle_1
 x 5
@@ -1550,10 +1616,16 @@ x 5
 y 42
 elevation 1057
 end
-arch woods
+arch grass_only
 x 5
 y 43
+type -666
 elevation 1809
+end
+arch woods4
+x 5
+y 43
+type -666
 end
 arch grass_only
 x 5
@@ -1800,20 +1872,32 @@ x 6
 y 39
 elevation 691
 end
-arch woods
+arch grass_only
 x 6
 y 40
+type -666
 elevation 1350
+end
+arch woods4
+x 6
+y 40
+type -666
 end
 arch woods_2
 x 6
 y 41
 elevation 1770
 end
-arch woods
+arch grass_only
 x 6
 y 42
+type -666
 elevation 2136
+end
+arch woods4
+x 6
+y 42
+type -666
 end
 arch grass_only
 x 6
@@ -2080,10 +2164,16 @@ x 7
 y 42
 elevation 1205
 end
-arch woods
+arch grass_only
 x 7
 y 43
+type -666
 elevation 1863
+end
+arch woods4
+x 7
+y 43
+type -666
 end
 arch grass_only
 x 7
@@ -3987,10 +4077,16 @@ x 14
 y 30
 elevation 3353
 end
-arch woods
+arch grass_only
 x 14
 y 31
+type -666
 elevation 1848
+end
+arch woods4
+x 14
+y 31
+type -666
 end
 arch desert
 x 14
@@ -7613,10 +7709,16 @@ x 26
 y 29
 elevation 1796
 end
-arch woods
+arch grass_only
 x 26
 y 30
+type -666
 elevation 1829
+end
+arch woods4
+x 26
+y 30
+type -666
 end
 arch hills
 x 26
@@ -10211,10 +10313,16 @@ x 35
 y 24
 elevation 3388
 end
-arch woods
+arch grass_only
 x 35
 y 25
+type -666
 elevation 2840
+end
+arch woods4
+x 35
+y 25
+type -666
 end
 arch hills
 x 35
@@ -11308,10 +11416,16 @@ arch tree3
 x 39
 y 25
 end
-arch woods
+arch grass_only
 x 39
 y 26
+type -666
 elevation 2560
+end
+arch woods4
+x 39
+y 26
+type -666
 end
 arch grass_only
 x 39
@@ -11322,10 +11436,16 @@ arch tree3
 x 39
 y 27
 end
-arch woods
+arch grass_only
 x 39
 y 28
+type -666
 elevation 1685
+end
+arch woods4
+x 39
+y 28
+type -666
 end
 arch brush
 x 39
@@ -11841,10 +11961,16 @@ x 41
 y 24
 elevation 232
 end
-arch woods
+arch grass_only
 x 41
 y 25
+type -666
 elevation 1300
+end
+arch woods4
+x 41
+y 25
+type -666
 end
 arch grass_only
 x 41
@@ -11855,10 +11981,16 @@ arch tree3
 x 41
 y 26
 end
-arch woods
+arch grass_only
 x 41
 y 27
+type -666
 elevation 2251
+end
+arch woods4
+x 41
+y 27
+type -666
 end
 arch hills_rocky
 x 41
@@ -12360,20 +12492,38 @@ x 43
 y 25
 elevation 976
 end
-arch woods
+arch grass_only
 x 43
 y 26
+type -666
 elevation 1397
 end
-arch woods
+arch woods4
+x 43
+y 26
+type -666
+end
+arch grass_only
 x 43
 y 27
+type -666
 elevation 1635
 end
-arch woods
+arch woods4
+x 43
+y 27
+type -666
+end
+arch grass_only
 x 43
 y 28
+type -666
 elevation 1601
+end
+arch woods4
+x 43
+y 28
+type -666
 end
 arch hills
 x 43
@@ -12851,10 +13001,16 @@ x 45
 y 22
 elevation 1317
 end
-arch woods
+arch grass_only
 x 45
 y 23
+type -666
 elevation 1026
+end
+arch woods4
+x 45
+y 23
+type -666
 end
 arch desert
 x 45

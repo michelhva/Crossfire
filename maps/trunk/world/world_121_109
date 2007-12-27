@@ -3,7 +3,7 @@ name world_121_109
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_121_108
@@ -389,10 +389,16 @@ x 1
 y 35
 elevation 5386
 end
-arch woods
+arch grass_only
 x 1
 y 36
+type -666
 elevation 1984
+end
+arch woods4
+x 1
+y 36
+type -666
 end
 arch steppe
 x 1
@@ -860,10 +866,16 @@ x 3
 y 28
 elevation 3945
 end
-arch woods
+arch grass_only
 x 3
 y 29
+type -666
 elevation 2757
+end
+arch woods4
+x 3
+y 29
+type -666
 end
 arch mountain
 x 3
@@ -1150,10 +1162,16 @@ arch tree3
 x 4
 y 33
 end
-arch woods
+arch grass_only
 x 4
 y 34
+type -666
 elevation 2799
+end
+arch woods4
+x 4
+y 34
+type -666
 end
 arch hills_rocky
 x 4
@@ -1199,15 +1217,27 @@ x 4
 y 42
 elevation 1471
 end
-arch woods
+arch grass_only
 x 4
 y 43
+type -666
 elevation 1993
 end
-arch woods
+arch woods4
+x 4
+y 43
+type -666
+end
+arch grass_only
 x 4
 y 44
+type -666
 elevation 2370
+end
+arch woods4
+x 4
+y 44
+type -666
 end
 arch woods_3
 x 4
@@ -1233,10 +1263,16 @@ arch tree3
 x 4
 y 48
 end
-arch woods
+arch grass_only
 x 4
 y 49
+type -666
 elevation 1940
+end
+arch woods4
+x 4
+y 49
+type -666
 end
 arch mountain
 x 5
@@ -1452,10 +1488,16 @@ x 5
 y 42
 elevation 1178
 end
-arch woods
+arch grass_only
 x 5
 y 43
+type -666
 elevation 1741
+end
+arch woods4
+x 5
+y 43
+type -666
 end
 arch grass_only
 x 5
@@ -1675,10 +1717,16 @@ x 6
 y 36
 elevation 3425
 end
-arch woods
+arch grass_only
 x 6
 y 37
+type -666
 elevation 2417
+end
+arch woods4
+x 6
+y 37
+type -666
 end
 arch woods_3
 x 6
@@ -1728,10 +1776,16 @@ arch tree3
 x 6
 y 45
 end
-arch woods
+arch grass_only
 x 6
 y 46
+type -666
 elevation 1817
+end
+arch woods4
+x 6
+y 46
+type -666
 end
 arch grass_only
 x 6
@@ -13341,10 +13395,16 @@ x 49
 y 25
 elevation 3649
 end
-arch woods
+arch grass_only
 x 49
 y 26
+type -666
 elevation 2414
+end
+arch woods4
+x 49
+y 26
+type -666
 end
 arch grass_only
 x 49
@@ -13380,10 +13440,16 @@ x 49
 y 32
 elevation 3455
 end
-arch woods
+arch grass_only
 x 49
 y 33
+type -666
 elevation 2681
+end
+arch woods4
+x 49
+y 33
+type -666
 end
 arch hills_rocky
 x 49
