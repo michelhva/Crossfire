@@ -3,7 +3,7 @@ name world_104_124
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_104_123
@@ -4726,10 +4726,16 @@ x 18
 y 9
 elevation 4564
 end
-arch woods
+arch grass_only
 x 18
 y 10
+type -666
 elevation 2270
+end
+arch woods4
+x 18
+y 10
+type -666
 end
 arch hills_rocky
 x 18
@@ -5745,10 +5751,16 @@ x 22
 y 12
 elevation 4762
 end
-arch woods
+arch grass_only
 x 22
 y 13
+type -666
 elevation 1484
+end
+arch woods4
+x 22
+y 13
+type -666
 end
 arch woods_2
 x 22
@@ -6522,10 +6534,16 @@ x 25
 y 14
 elevation 3486
 end
-arch woods
+arch grass_only
 x 25
 y 15
+type -666
 elevation 2974
+end
+arch woods4
+x 25
+y 15
+type -666
 end
 arch hills_rocky
 x 25
@@ -7025,10 +7043,16 @@ x 27
 y 15
 elevation 1886
 end
-arch woods
+arch grass_only
 x 27
 y 16
+type -666
 elevation 1007
+end
+arch woods4
+x 27
+y 16
+type -666
 end
 arch woods_3
 x 27

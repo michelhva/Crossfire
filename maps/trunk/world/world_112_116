@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_112_115
@@ -254,10 +254,16 @@ x 1
 y 7
 elevation 2406
 end
-arch woods
+arch grass_only
 x 1
 y 8
+type -666
 elevation 1597
+end
+arch woods4
+x 1
+y 8
+type -666
 end
 arch jungle_1
 x 1
@@ -770,10 +776,16 @@ x 3
 y 9
 elevation 2082
 end
-arch woods
+arch grass_only
 x 3
 y 10
+type -666
 elevation 2900
+end
+arch woods4
+x 3
+y 10
+type -666
 end
 arch hills_rocky
 x 3
@@ -800,10 +812,16 @@ x 3
 y 15
 elevation 4567
 end
-arch woods
+arch grass_only
 x 3
 y 16
+type -666
 elevation 2656
+end
+arch woods4
+x 3
+y 16
+type -666
 end
 arch grass_only
 x 3

@@ -3,7 +3,7 @@ name world_105_102
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_105_101
@@ -26,21 +26,41 @@ arch jungle_1
 y 3
 elevation 1320
 end
-arch woods
+arch grass_only
 y 4
+type -666
 elevation 1497
 end
-arch woods
+arch woods4
+y 4
+type -666
+end
+arch grass_only
 y 5
+type -666
 elevation 1538
 end
-arch woods
+arch woods4
+y 5
+type -666
+end
+arch grass_only
 y 6
+type -666
 elevation 1172
 end
-arch woods
+arch woods4
+y 6
+type -666
+end
+arch grass_only
 y 7
+type -666
 elevation 1033
+end
+arch woods4
+y 7
+type -666
 end
 arch brush
 y 8
@@ -224,20 +244,32 @@ x 1
 y 2
 elevation 626
 end
-arch woods
+arch grass_only
 x 1
 y 3
+type -666
 elevation 1059
+end
+arch woods4
+x 1
+y 3
+type -666
 end
 arch jungle_1
 x 1
 y 4
 elevation 1594
 end
-arch woods
+arch grass_only
 x 1
 y 5
+type -666
 elevation 1735
+end
+arch woods4
+x 1
+y 5
+type -666
 end
 arch brush
 x 1
@@ -468,35 +500,65 @@ x 2
 y 1
 elevation 626
 end
-arch woods
+arch grass_only
 x 2
 y 2
+type -666
 elevation 1062
 end
-arch woods
+arch woods4
+x 2
+y 2
+type -666
+end
+arch grass_only
 x 2
 y 3
+type -666
 elevation 1451
+end
+arch woods4
+x 2
+y 3
+type -666
 end
 arch jungle_1
 x 2
 y 4
 elevation 1826
 end
-arch woods
+arch grass_only
 x 2
 y 5
+type -666
 elevation 1982
 end
-arch woods
+arch woods4
+x 2
+y 5
+type -666
+end
+arch grass_only
 x 2
 y 6
+type -666
 elevation 1808
 end
-arch woods
+arch woods4
+x 2
+y 6
+type -666
+end
+arch grass_only
 x 2
 y 7
+type -666
 elevation 1424
+end
+arch woods4
+x 2
+y 7
+type -666
 end
 arch woods_2
 x 2
@@ -717,25 +779,49 @@ x 3
 y 1
 elevation 822
 end
-arch woods
+arch grass_only
 x 3
 y 2
+type -666
 elevation 1216
 end
-arch woods
+arch woods4
+x 3
+y 2
+type -666
+end
+arch grass_only
 x 3
 y 3
+type -666
 elevation 1428
 end
-arch woods
+arch woods4
+x 3
+y 3
+type -666
+end
+arch grass_only
 x 3
 y 4
+type -666
 elevation 1676
 end
-arch woods
+arch woods4
+x 3
+y 4
+type -666
+end
+arch grass_only
 x 3
 y 5
+type -666
 elevation 1872
+end
+arch woods4
+x 3
+y 5
+type -666
 end
 arch woods_2
 x 3
@@ -966,35 +1052,59 @@ x 4
 y 1
 elevation 996
 end
-arch woods
+arch grass_only
 x 4
 y 2
+type -666
 elevation 1105
 end
-arch woods
+arch woods4
+x 4
+y 2
+type -666
+end
+arch grass_only
 x 4
 y 3
+type -666
 elevation 1086
+end
+arch woods4
+x 4
+y 3
+type -666
 end
 arch brush
 x 4
 y 4
 elevation 561
 end
-arch woods
+arch grass_only
 x 4
 y 5
+type -666
 elevation 1358
+end
+arch woods4
+x 4
+y 5
+type -666
 end
 arch woods_2
 x 4
 y 6
 elevation 1498
 end
-arch woods
+arch grass_only
 x 4
 y 7
+type -666
 elevation 1411
+end
+arch woods4
+x 4
+y 7
+type -666
 end
 arch woods_2
 x 4
@@ -2475,10 +2585,16 @@ x 10
 y 4
 elevation 925
 end
-arch woods
+arch grass_only
 x 10
 y 5
+type -666
 elevation 1034
+end
+arch woods4
+x 10
+y 5
+type -666
 end
 arch desert
 x 10
@@ -2729,15 +2845,27 @@ x 11
 y 5
 elevation 1140
 end
-arch woods
+arch grass_only
 x 11
 y 6
+type -666
 elevation 1297
 end
-arch woods
+arch woods4
+x 11
+y 6
+type -666
+end
+arch grass_only
 x 11
 y 7
+type -666
 elevation 1246
+end
+arch woods4
+x 11
+y 7
+type -666
 end
 arch brush
 x 11
@@ -2953,10 +3081,16 @@ arch desert
 x 12
 elevation 950
 end
-arch woods
+arch grass_only
 x 12
 y 1
+type -666
 elevation 1077
+end
+arch woods4
+x 12
+y 1
+type -666
 end
 arch desert
 x 12
@@ -2978,10 +3112,16 @@ x 12
 y 5
 elevation 940
 end
-arch woods
+arch grass_only
 x 12
 y 6
+type -666
 elevation 1177
+end
+arch woods4
+x 12
+y 6
+type -666
 end
 arch woods_2
 x 12
@@ -3198,14 +3338,25 @@ x 12
 y 49
 elevation 917
 end
-arch woods
+arch grass_only
 x 13
+type -666
 elevation 1165
 end
-arch woods
+arch woods4
+x 13
+type -666
+end
+arch grass_only
 x 13
 y 1
+type -666
 elevation 1330
+end
+arch woods4
+x 13
+y 1
+type -666
 end
 arch desert
 x 13
@@ -11852,10 +12003,16 @@ arch hills_rocky
 x 47
 elevation 3701
 end
-arch woods
+arch grass_only
 x 47
 y 1
+type -666
 elevation 2977
+end
+arch woods4
+x 47
+y 1
+type -666
 end
 arch hills_rocky
 x 47

@@ -3,7 +3,7 @@ name world_116_111
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_116_110
@@ -2664,10 +2664,16 @@ x 10
 y 27
 elevation 4905
 end
-arch woods
+arch grass_only
 x 10
 y 28
+type -666
 elevation 2258
+end
+arch woods4
+x 10
+y 28
+type -666
 end
 arch hills
 x 10
@@ -3472,10 +3478,16 @@ arch evergreens2
 x 13
 y 36
 end
-arch woods
+arch grass_only
 x 13
 y 37
+type -666
 elevation 2514
+end
+arch woods4
+x 13
+y 37
+type -666
 end
 arch hills
 x 13
@@ -12240,25 +12252,43 @@ x 48
 y 33
 elevation 4344
 end
-arch woods
+arch grass_only
 x 48
 y 34
+type -666
 elevation 2531
+end
+arch woods4
+x 48
+y 34
+type -666
 end
 arch hills_rocky
 x 48
 y 35
 elevation 3468
 end
-arch woods
+arch grass_only
 x 48
 y 36
+type -666
 elevation 2997
 end
-arch woods
+arch woods4
+x 48
+y 36
+type -666
+end
+arch grass_only
 x 48
 y 37
+type -666
 elevation 2883
+end
+arch woods4
+x 48
+y 37
+type -666
 end
 arch steppe
 x 48
@@ -12508,15 +12538,27 @@ arch tree5
 x 49
 y 36
 end
-arch woods
+arch grass_only
 x 49
 y 37
+type -666
 elevation 1304
 end
-arch woods
+arch woods4
+x 49
+y 37
+type -666
+end
+arch grass_only
 x 49
 y 38
+type -666
 elevation 2189
+end
+arch woods4
+x 49
+y 38
+type -666
 end
 arch hills_rocky
 x 49

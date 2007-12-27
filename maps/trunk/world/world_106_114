@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-18
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_106_113
@@ -36,14 +36,29 @@ end
 arch steppe
 y 6
 end
-arch woods
+arch grass_only
 y 7
+type -666
 end
-arch woods
+arch woods4
+y 7
+type -666
+end
+arch grass_only
 y 8
+type -666
 end
-arch woods
+arch woods4
+y 8
+type -666
+end
+arch grass_only
 y 9
+type -666
+end
+arch woods4
+y 9
+type -666
 end
 arch desert
 y 10
@@ -54,8 +69,13 @@ end
 arch cobblestones
 y 12
 end
-arch woods
+arch grass_only
 y 13
+type -666
+end
+arch woods4
+y 13
+type -666
 end
 arch desert
 y 14
@@ -123,8 +143,13 @@ end
 arch cobblestones
 y 35
 end
-arch woods
+arch grass_only
 y 36
+type -666
+end
+arch woods4
+y 36
+type -666
 end
 arch grass_only
 y 37
@@ -195,17 +220,29 @@ arch steppe
 x 1
 y 6
 end
-arch woods
+arch grass_only
 x 1
 y 7
+type -666
+end
+arch woods4
+x 1
+y 7
+type -666
 end
 arch steppe
 x 1
 y 8
 end
-arch woods
+arch grass_only
 x 1
 y 9
+type -666
+end
+arch woods4
+x 1
+y 9
+type -666
 end
 arch desert
 x 1
@@ -219,9 +256,15 @@ arch cobblestones
 x 1
 y 12
 end
-arch woods
+arch grass_only
 x 1
 y 13
+type -666
+end
+arch woods4
+x 1
+y 13
+type -666
 end
 arch steppe
 x 1
@@ -367,8 +410,13 @@ arch mountain
 x 1
 y 49
 end
-arch woods
+arch grass_only
 x 2
+type -666
+end
+arch woods4
+x 2
+type -666
 end
 arch hills_rocky
 x 2
@@ -406,9 +454,15 @@ arch steppe
 x 2
 y 9
 end
-arch woods
+arch grass_only
 x 2
 y 10
+type -666
+end
+arch woods4
+x 2
+y 10
+type -666
 end
 arch cobblestones
 x 2
@@ -418,9 +472,15 @@ arch cobblestones
 x 2
 y 12
 end
-arch woods
+arch grass_only
 x 2
 y 13
+type -666
+end
+arch woods4
+x 2
+y 13
+type -666
 end
 arch steppe
 x 2
@@ -574,12 +634,23 @@ arch mountain
 x 2
 y 49
 end
-arch woods
+arch grass_only
 x 3
+type -666
 end
-arch woods
+arch woods4
+x 3
+type -666
+end
+arch grass_only
 x 3
 y 1
+type -666
+end
+arch woods4
+x 3
+y 1
+type -666
 end
 arch steppe
 x 3
@@ -804,9 +875,15 @@ arch brush
 x 4
 y 1
 end
-arch woods
+arch grass_only
 x 4
 y 2
+type -666
+end
+arch woods4
+x 4
+y 2
+type -666
 end
 arch steppe
 x 4
@@ -1019,9 +1096,15 @@ end
 arch hills
 x 5
 end
-arch woods
+arch grass_only
 x 5
 y 1
+type -666
+end
+arch woods4
+x 5
+y 1
+type -666
 end
 arch hills
 x 5
@@ -1091,9 +1174,15 @@ arch steppe
 x 5
 y 18
 end
-arch woods
+arch grass_only
 x 5
 y 19
+type -666
+end
+arch woods4
+x 5
+y 19
+type -666
 end
 arch beach
 x 5
@@ -1282,13 +1371,25 @@ arch steppe
 x 6
 y 12
 end
-arch woods
+arch grass_only
 x 6
 y 13
+type -666
 end
-arch woods
+arch woods4
+x 6
+y 13
+type -666
+end
+arch grass_only
 x 6
 y 14
+type -666
+end
+arch woods4
+x 6
+y 14
+type -666
 end
 arch steppe
 x 6
@@ -1310,9 +1411,15 @@ arch steppe
 x 6
 y 19
 end
-arch woods
+arch grass_only
 x 6
 y 20
+type -666
+end
+arch woods4
+x 6
+y 20
+type -666
 end
 arch beach
 x 6
@@ -1481,9 +1588,15 @@ arch steppe
 x 7
 y 4
 end
-arch woods
+arch grass_only
 x 7
 y 5
+type -666
+end
+arch woods4
+x 7
+y 5
+type -666
 end
 arch steppe
 x 7
@@ -1541,9 +1654,15 @@ arch steppe
 x 7
 y 19
 end
-arch woods
+arch grass_only
 x 7
 y 20
+type -666
+end
+arch woods4
+x 7
+y 20
+type -666
 end
 arch brush
 x 7
@@ -1716,9 +1835,15 @@ arch hills_rocky
 x 8
 y 3
 end
-arch woods
+arch grass_only
 x 8
 y 4
+type -666
+end
+arch woods4
+x 8
+y 4
+type -666
 end
 arch hills_rocky
 x 8
@@ -1780,9 +1905,15 @@ arch steppe
 x 8
 y 19
 end
-arch woods
+arch grass_only
 x 8
 y 20
+type -666
+end
+arch woods4
+x 8
+y 20
+type -666
 end
 arch hills_rocky
 x 8
@@ -1931,13 +2062,25 @@ arch hills
 x 9
 y 2
 end
-arch woods
+arch grass_only
 x 9
 y 3
+type -666
 end
-arch woods
+arch woods4
+x 9
+y 3
+type -666
+end
+arch grass_only
 x 9
 y 4
+type -666
+end
+arch woods4
+x 9
+y 4
+type -666
 end
 arch steppe
 x 9
@@ -1995,21 +2138,39 @@ arch steppe
 x 9
 y 18
 end
-arch woods
+arch grass_only
 x 9
 y 19
+type -666
+end
+arch woods4
+x 9
+y 19
+type -666
 end
 arch hills_rocky
 x 9
 y 20
 end
-arch woods
+arch grass_only
 x 9
 y 21
+type -666
 end
-arch woods
+arch woods4
+x 9
+y 21
+type -666
+end
+arch grass_only
 x 9
 y 22
+type -666
+end
+arch woods4
+x 9
+y 22
+type -666
 end
 arch hills_rocky
 x 9
@@ -2202,9 +2363,15 @@ arch jungle_1
 x 10
 y 15
 end
-arch woods
+arch grass_only
 x 10
 y 16
+type -666
+end
+arch woods4
+x 10
+y 16
+type -666
 end
 arch brush
 x 10
@@ -2230,9 +2397,15 @@ arch hills_rocky
 x 10
 y 22
 end
-arch woods
+arch grass_only
 x 10
 y 23
+type -666
+end
+arch woods4
+x 10
+y 23
+type -666
 end
 arch shallow_sea
 x 10
@@ -2648,9 +2821,15 @@ arch brush
 x 12
 y 20
 end
-arch woods
+arch grass_only
 x 12
 y 21
+type -666
+end
+arch woods4
+x 12
+y 21
+type -666
 end
 arch brush
 x 12
@@ -2827,9 +3006,15 @@ arch steppe
 x 13
 y 15
 end
-arch woods
+arch grass_only
 x 13
 y 16
+type -666
+end
+arch woods4
+x 13
+y 16
+type -666
 end
 arch jungle_1
 x 13
@@ -3042,13 +3227,25 @@ arch jungle_1
 x 14
 y 18
 end
-arch woods
+arch grass_only
 x 14
 y 19
+type -666
 end
-arch woods
+arch woods4
+x 14
+y 19
+type -666
+end
+arch grass_only
 x 14
 y 20
+type -666
+end
+arch woods4
+x 14
+y 20
+type -666
 end
 arch brush
 x 14
@@ -3122,9 +3319,15 @@ arch grass
 x 14
 y 38
 end
-arch woods
+arch grass_only
 x 14
 y 39
+type -666
+end
+arch woods4
+x 14
+y 39
+type -666
 end
 arch steppe
 x 14

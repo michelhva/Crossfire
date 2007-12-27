@@ -3,7 +3,7 @@ name world_123_100
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_2 world_124_100
@@ -448,10 +448,16 @@ x 1
 y 47
 elevation 515
 end
-arch woods
+arch grass_only
 x 1
 y 48
+type -666
 elevation 1530
+end
+arch woods4
+x 1
+y 48
+type -666
 end
 arch hills_rocky
 x 1
@@ -1447,20 +1453,32 @@ x 5
 y 46
 elevation 732
 end
-arch woods
+arch grass_only
 x 5
 y 47
+type -666
 elevation 1171
+end
+arch woods4
+x 5
+y 47
+type -666
 end
 arch hills_rocky
 x 5
 y 48
 elevation 1547
 end
-arch woods
+arch grass_only
 x 5
 y 49
+type -666
 elevation 1615
+end
+arch woods4
+x 5
+y 49
+type -666
 end
 arch deep_sea
 x 6
@@ -4210,15 +4228,27 @@ arch evergreens2
 x 16
 y 46
 end
-arch woods
+arch grass_only
 x 16
 y 47
+type -666
 elevation 2241
 end
-arch woods
+arch woods4
+x 16
+y 47
+type -666
+end
+arch grass_only
 x 16
 y 48
+type -666
 elevation 1892
+end
+arch woods4
+x 16
+y 48
+type -666
 end
 arch desert
 x 16
@@ -4477,10 +4507,16 @@ arch evergreens2
 x 17
 y 48
 end
-arch woods
+arch grass_only
 x 17
 y 49
+type -666
 elevation 1197
+end
+arch woods4
+x 17
+y 49
+type -666
 end
 arch deep_sea
 x 18
@@ -4720,20 +4756,32 @@ x 18
 y 46
 elevation 1819
 end
-arch woods
+arch grass_only
 x 18
 y 47
+type -666
 elevation 2218
+end
+arch woods4
+x 18
+y 47
+type -666
 end
 arch hills_rocky
 x 18
 y 48
 elevation 2251
 end
-arch woods
+arch grass_only
 x 18
 y 49
+type -666
 elevation 1606
+end
+arch woods4
+x 18
+y 49
+type -666
 end
 arch deep_sea
 x 19
@@ -4999,10 +5047,16 @@ arch evergreens2
 x 19
 y 48
 end
-arch woods
+arch grass_only
 x 19
 y 49
+type -666
 elevation 1328
+end
+arch woods4
+x 19
+y 49
+type -666
 end
 arch deep_sea
 x 20
@@ -5752,10 +5806,16 @@ arch evergreens2
 x 22
 y 46
 end
-arch woods
+arch grass_only
 x 22
 y 47
+type -666
 elevation 1215
+end
+arch woods4
+x 22
+y 47
+type -666
 end
 arch grass
 x 22
@@ -6011,10 +6071,16 @@ x 23
 y 48
 elevation 294
 end
-arch woods
+arch grass_only
 x 23
 y 49
+type -666
 elevation 1015
+end
+arch woods4
+x 23
+y 49
+type -666
 end
 arch deep_sea
 x 24
@@ -12445,10 +12511,16 @@ x 49
 y 40
 elevation 1034
 end
-arch woods
+arch grass_only
 x 49
 y 41
+type -666
 elevation 1051
+end
+arch woods4
+x 49
+y 41
+type -666
 end
 arch brush
 x 49

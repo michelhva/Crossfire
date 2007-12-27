@@ -3,7 +3,7 @@ name world_112_123
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_112_122
@@ -3441,10 +3441,16 @@ arch evergreens2
 x 12
 y 44
 end
-arch woods
+arch grass_only
 x 12
 y 45
+type -666
 elevation 1949
+end
+arch woods4
+x 12
+y 45
+type -666
 end
 arch grass
 x 12
@@ -4009,10 +4015,16 @@ arch tree3
 x 14
 y 43
 end
-arch woods
+arch grass_only
 x 14
 y 44
+type -666
 elevation 1677
+end
+arch woods4
+x 14
+y 44
+type -666
 end
 arch grass
 x 14
@@ -4042,10 +4054,16 @@ arch evergreens2
 x 14
 y 48
 end
-arch woods
+arch grass_only
 x 14
 y 49
+type -666
 elevation 2139
+end
+arch woods4
+x 14
+y 49
+type -666
 end
 arch hills_rocky
 x 15
@@ -4306,10 +4324,16 @@ arch evergreens2
 x 15
 y 47
 end
-arch woods
+arch grass_only
 x 15
 y 48
+type -666
 elevation 2374
+end
+arch woods4
+x 15
+y 48
+type -666
 end
 arch grass_only
 x 15
@@ -4577,15 +4601,27 @@ x 16
 y 46
 elevation 278
 end
-arch woods
+arch grass_only
 x 16
 y 47
+type -666
 elevation 1469
 end
-arch woods
+arch woods4
+x 16
+y 47
+type -666
+end
+arch grass_only
 x 16
 y 48
+type -666
 elevation 2335
+end
+arch woods4
+x 16
+y 48
+type -666
 end
 arch grass_only
 x 16
@@ -4854,15 +4890,27 @@ x 17
 y 47
 elevation 874
 end
-arch woods
+arch grass_only
 x 17
 y 48
+type -666
 elevation 1764
 end
-arch woods
+arch woods4
+x 17
+y 48
+type -666
+end
+arch grass_only
 x 17
 y 49
+type -666
 elevation 2115
+end
+arch woods4
+x 17
+y 49
+type -666
 end
 arch desert
 x 18
@@ -5119,15 +5167,27 @@ x 18
 y 47
 elevation 130
 end
-arch woods
+arch grass_only
 x 18
 y 48
+type -666
 elevation 1314
 end
-arch woods
+arch woods4
+x 18
+y 48
+type -666
+end
+arch grass_only
 x 18
 y 49
+type -666
 elevation 1539
+end
+arch woods4
+x 18
+y 49
+type -666
 end
 arch grass
 x 19
@@ -5376,15 +5436,27 @@ x 19
 y 47
 elevation 771
 end
-arch woods
+arch grass_only
 x 19
 y 48
+type -666
 elevation 1272
 end
-arch woods
+arch woods4
+x 19
+y 48
+type -666
+end
+arch grass_only
 x 19
 y 49
+type -666
 elevation 1394
+end
+arch woods4
+x 19
+y 49
+type -666
 end
 arch grass_only
 x 20

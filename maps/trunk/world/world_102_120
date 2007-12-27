@@ -3,7 +3,7 @@ name world_102_120
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2007-12-27 tchize
 endmsg
 outdoor 1
 tile_path_1 world_102_119
@@ -40,9 +40,14 @@ end
 arch evergreens2
 y 5
 end
-arch woods
+arch grass_only
 y 6
+type -666
 elevation 1177
+end
+arch woods4
+y 6
+type -666
 end
 arch steppe
 y 7
@@ -514,10 +519,16 @@ x 2
 y 6
 elevation 2599
 end
-arch woods
+arch grass_only
 x 2
 y 7
+type -666
 elevation 2810
+end
+arch woods4
+x 2
+y 7
+type -666
 end
 arch grass_only
 x 2
@@ -533,10 +544,16 @@ x 2
 y 9
 elevation 1981
 end
-arch woods
+arch grass_only
 x 2
 y 10
+type -666
 elevation 1221
+end
+arch woods4
+x 2
+y 10
+type -666
 end
 arch hills
 x 2
@@ -799,10 +816,16 @@ x 3
 y 10
 elevation 315
 end
-arch woods
+arch grass_only
 x 3
 y 11
+type -666
 elevation 1422
+end
+arch woods4
+x 3
+y 11
+type -666
 end
 arch hills
 x 3
@@ -4209,10 +4232,16 @@ x 16
 y 3
 elevation 921
 end
-arch woods
+arch grass_only
 x 16
 y 4
+type -666
 elevation 1914
+end
+arch woods4
+x 16
+y 4
+type -666
 end
 arch woods_3
 x 16
@@ -4476,10 +4505,16 @@ x 17
 y 5
 elevation 2633
 end
-arch woods
+arch grass_only
 x 17
 y 6
+type -666
 elevation 2766
+end
+arch woods4
+x 17
+y 6
+type -666
 end
 arch woods_3
 x 17
@@ -8133,10 +8168,16 @@ arch tree5
 x 30
 y 29
 end
-arch woods
+arch grass_only
 x 30
 y 30
+type -666
 elevation 2539
+end
+arch woods4
+x 30
+y 30
+type -666
 end
 arch steppe
 x 30
@@ -10865,10 +10906,16 @@ x 41
 y 6
 elevation 2312
 end
-arch woods
+arch grass_only
 x 41
 y 7
+type -666
 elevation 2859
+end
+arch woods4
+x 41
+y 7
+type -666
 end
 arch steppe
 x 41
@@ -11363,10 +11410,16 @@ x 43
 y 6
 elevation 1037
 end
-arch woods
+arch grass_only
 x 43
 y 7
+type -666
 elevation 2930
+end
+arch woods4
+x 43
+y 7
+type -666
 end
 arch steppe
 x 43
@@ -11408,10 +11461,16 @@ x 43
 y 15
 elevation 3489
 end
-arch woods
+arch grass_only
 x 43
 y 16
+type -666
 elevation 1542
+end
+arch woods4
+x 43
+y 16
+type -666
 end
 arch grass_only
 x 43
@@ -11848,10 +11907,16 @@ x 45
 y 1
 elevation 2014
 end
-arch woods
+arch grass_only
 x 45
 y 2
+type -666
 elevation 1117
+end
+arch woods4
+x 45
+y 2
+type -666
 end
 arch steppe
 x 45
@@ -12705,10 +12770,16 @@ x 48
 y 19
 elevation 2504
 end
-arch woods
+arch grass_only
 x 48
 y 20
+type -666
 elevation 1383
+end
+arch woods4
+x 48
+y 20
+type -666
 end
 arch mountain
 x 48
@@ -12958,10 +13029,16 @@ x 49
 y 19
 elevation 1946
 end
-arch woods
+arch grass_only
 x 49
 y 20
+type -666
 elevation 1163
+end
+arch woods4
+x 49
+y 20
+type -666
 end
 arch steppe
 x 49

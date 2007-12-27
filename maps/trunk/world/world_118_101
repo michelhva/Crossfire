@@ -2,6 +2,9 @@ arch map
 name world_118_101
 width 50
 height 50
+msg
+Modified: 2007-12-27 tchize
+endmsg
 outdoor 1
 tile_path_1 world_118_100
 tile_path_2 world_119_101
@@ -12085,10 +12088,16 @@ arch dungeon_magic
 x 48
 y 11
 end
-arch woods
+arch grass_only
 x 48
 y 12
+type -666
 elevation 1250
+end
+arch woods4
+x 48
+y 12
+type -666
 end
 arch dungeon_magic
 x 48
@@ -12409,10 +12418,16 @@ arch dungeon_magic
 x 49
 y 10
 end
-arch woods
+arch grass_only
 x 49
 y 11
+type -666
 elevation 1290
+end
+arch woods4
+x 49
+y 11
+type -666
 end
 arch dungeon_magic
 x 49
@@ -12427,10 +12442,16 @@ arch dungeon_magic
 x 49
 y 12
 end
-arch woods
+arch grass_only
 x 49
 y 13
+type -666
 elevation 1292
+end
+arch woods4
+x 49
+y 13
+type -666
 end
 arch dungeon_magic
 x 49
