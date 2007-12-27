@@ -3,7 +3,7 @@ name world_109_108
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_109_107
@@ -12373,16 +12373,10 @@ arch evergreens2
 x 39
 y 20
 end
-arch grass_only
+arch woods
 x 39
 y 21
-type -666
 elevation 2890
-end
-arch woods4
-x 39
-y 21
-type -666
 end
 arch hills_rocky
 x 39
@@ -12640,16 +12634,10 @@ arch evergreens2
 x 40
 y 20
 end
-arch grass_only
+arch woods
 x 40
 y 21
-type -666
 elevation 1345
-end
-arch woods4
-x 40
-y 21
-type -666
 end
 arch hills_rocky
 x 40
@@ -13142,16 +13130,10 @@ arch evergreens2
 x 42
 y 18
 end
-arch grass_only
+arch woods
 x 42
 y 19
-type -666
 elevation 1791
-end
-arch woods4
-x 42
-y 19
-type -666
 end
 arch grass_only
 x 42
@@ -13412,16 +13394,10 @@ x 43
 y 17
 elevation 4373
 end
-arch grass_only
+arch woods
 x 43
 y 18
-type -666
 elevation 1767
-end
-arch woods4
-x 43
-y 18
-type -666
 end
 arch grass_only
 x 43
@@ -14808,16 +14784,10 @@ x 48
 y 22
 elevation 3103
 end
-arch grass_only
+arch woods
 x 48
 y 23
-type -666
 elevation 2706
-end
-arch woods4
-x 48
-y 23
-type -666
 end
 arch grass_only
 x 48

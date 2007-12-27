@@ -3,7 +3,7 @@ name world_126_123
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_126_122
@@ -1021,16 +1021,10 @@ x 3
 y 46
 elevation 2617
 end
-arch grass_only
+arch woods
 x 3
 y 47
-type -666
 elevation 1100
-end
-arch woods4
-x 3
-y 47
-type -666
 end
 arch shallow_sea
 x 3
@@ -1304,16 +1298,10 @@ x 4
 y 46
 elevation 3152
 end
-arch grass_only
+arch woods
 x 4
 y 47
-type -666
 elevation 1856
-end
-arch woods4
-x 4
-y 47
-type -666
 end
 arch desert
 x 4
@@ -2394,16 +2382,10 @@ x 8
 y 46
 elevation 5592
 end
-arch grass_only
+arch woods
 x 8
 y 47
-type -666
 elevation 2957
-end
-arch woods4
-x 8
-y 47
-type -666
 end
 arch grass_only
 x 8
@@ -3510,16 +3492,10 @@ x 12
 y 48
 elevation 1014
 end
-arch grass_only
+arch woods
 x 12
 y 49
-type -666
 elevation 1607
-end
-arch woods4
-x 12
-y 49
-type -666
 end
 arch sea
 x 13
@@ -3779,16 +3755,10 @@ x 13
 y 46
 elevation 3658
 end
-arch grass_only
+arch woods
 x 13
 y 47
-type -666
 elevation 2655
-end
-arch woods4
-x 13
-y 47
-type -666
 end
 arch woods_2
 x 13
@@ -4336,16 +4306,10 @@ arch evergreens2
 x 15
 y 43
 end
-arch grass_only
+arch woods
 x 15
 y 44
-type -666
 elevation 2417
-end
-arch woods4
-x 15
-y 44
-type -666
 end
 arch grass_only
 x 15
@@ -4651,16 +4615,10 @@ x 16
 y 47
 elevation 330
 end
-arch grass_only
+arch woods
 x 16
 y 48
-type -666
 elevation 1693
-end
-arch woods4
-x 16
-y 48
-type -666
 end
 arch woods_2
 x 16
@@ -5428,16 +5386,10 @@ x 19
 y 47
 elevation 555
 end
-arch grass_only
+arch woods
 x 19
 y 48
-type -666
 elevation 1830
-end
-arch woods4
-x 19
-y 48
-type -666
 end
 arch grass_only
 x 19
@@ -6189,16 +6141,10 @@ x 22
 y 47
 elevation 648
 end
-arch grass_only
+arch woods
 x 22
 y 48
-type -666
 elevation 2112
-end
-arch woods4
-x 22
-y 48
-type -666
 end
 arch grass_only
 x 22
@@ -6448,16 +6394,10 @@ x 23
 y 47
 elevation 273
 end
-arch grass_only
+arch woods
 x 23
 y 48
-type -666
 elevation 1976
-end
-arch woods4
-x 23
-y 48
-type -666
 end
 arch grass_only
 x 23

@@ -4,7 +4,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_116_103
@@ -521,16 +521,10 @@ arch tree3
 x 1
 y 48
 end
-arch grass_only
+arch woods
 x 1
 y 49
-type -666
 elevation 1226
-end
-arch woods4
-x 1
-y 49
-type -666
 end
 arch brush
 x 2
@@ -1541,16 +1535,10 @@ x 5
 y 30
 elevation 2834
 end
-arch grass_only
+arch woods
 x 5
 y 31
-type -666
 elevation 2233
-end
-arch woods4
-x 5
-y 31
-type -666
 end
 arch steppe
 x 5
@@ -1901,16 +1889,10 @@ x 6
 y 43
 elevation 2344
 end
-arch grass_only
+arch woods
 x 6
 y 44
-type -666
 elevation 1972
-end
-arch woods4
-x 6
-y 44
-type -666
 end
 arch grass_only
 x 6
@@ -1921,16 +1903,10 @@ arch tree3
 x 6
 y 45
 end
-arch grass_only
+arch woods
 x 6
 y 46
-type -666
 elevation 1208
-end
-arch woods4
-x 6
-y 46
-type -666
 end
 arch grass_only
 x 6
@@ -2553,16 +2529,10 @@ x 9
 y 4
 elevation 3549
 end
-arch grass_only
+arch woods
 x 9
 y 5
-type -666
 elevation 2556
-end
-arch woods4
-x 9
-y 5
-type -666
 end
 arch grass_only
 x 9
@@ -4371,16 +4341,10 @@ x 15
 y 47
 elevation 4245
 end
-arch grass_only
+arch woods
 x 15
 y 48
-type -666
 elevation 2765
-end
-arch woods4
-x 15
-y 48
-type -666
 end
 arch grass_only
 x 15
@@ -6445,16 +6409,10 @@ x 24
 y 2
 elevation 3013
 end
-arch grass_only
+arch woods
 x 24
 y 3
-type -666
 elevation 2988
-end
-arch woods4
-x 24
-y 3
-type -666
 end
 arch hills_rocky
 x 24
@@ -11744,16 +11702,10 @@ arch tree3
 x 43
 y 48
 end
-arch grass_only
+arch woods
 x 43
 y 49
-type -666
 elevation 2461
-end
-arch woods4
-x 43
-y 49
-type -666
 end
 arch hills
 x 44
@@ -11999,16 +11951,10 @@ x 44
 y 48
 elevation 844
 end
-arch grass_only
+arch woods
 x 44
 y 49
-type -666
 elevation 1278
-end
-arch woods4
-x 44
-y 49
-type -666
 end
 arch mountain
 x 45

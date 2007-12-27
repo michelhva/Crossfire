@@ -3,7 +3,7 @@ name world_124_120
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_124_119
@@ -545,16 +545,10 @@ x 2
 y 15
 elevation 1792
 end
-arch grass_only
+arch woods
 x 2
 y 16
-type -666
 elevation 2026
-end
-arch woods4
-x 2
-y 16
-type -666
 end
 arch hills
 x 2

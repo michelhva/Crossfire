@@ -3,7 +3,7 @@ name world_127_110
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_127_109
@@ -548,16 +548,10 @@ x 2
 y 15
 elevation 3559
 end
-arch grass_only
+arch woods
 x 2
 y 16
-type -666
 elevation 2816
-end
-arch woods4
-x 2
-y 16
-type -666
 end
 arch woods_2
 x 2
@@ -788,16 +782,10 @@ x 3
 y 12
 elevation 2291
 end
-arch grass_only
+arch woods
 x 3
 y 13
-type -666
 elevation 2942
-end
-arch woods4
-x 3
-y 13
-type -666
 end
 arch steppe
 x 3
@@ -7886,16 +7874,10 @@ arch tree3
 x 31
 y 28
 end
-arch grass_only
+arch woods
 x 31
 y 29
-type -666
 elevation 2307
-end
-arch woods4
-x 31
-y 29
-type -666
 end
 arch brush
 x 31
@@ -8430,16 +8412,10 @@ x 33
 y 28
 elevation 2354
 end
-arch grass_only
+arch woods
 x 33
 y 29
-type -666
 elevation 1900
-end
-arch woods4
-x 33
-y 29
-type -666
 end
 arch desert
 x 33

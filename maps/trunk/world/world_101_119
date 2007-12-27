@@ -3,7 +3,7 @@ name world_101_119
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_101_118
@@ -1610,16 +1610,10 @@ x 6
 y 11
 elevation 3254
 end
-arch grass_only
+arch woods
 x 6
 y 12
-type -666
 elevation 2985
-end
-arch woods4
-x 6
-y 12
-type -666
 end
 arch steppe
 x 6
@@ -1853,16 +1847,10 @@ x 7
 y 7
 elevation 569
 end
-arch grass_only
+arch woods
 x 7
 y 8
-type -666
 elevation 1808
-end
-arch woods4
-x 7
-y 8
-type -666
 end
 arch desert
 x 7
@@ -2130,16 +2118,10 @@ x 8
 y 9
 elevation 1828
 end
-arch grass_only
+arch woods
 x 8
 y 10
-type -666
 elevation 2390
-end
-arch woods4
-x 8
-y 10
-type -666
 end
 arch jungle_1
 x 8
@@ -2950,16 +2932,10 @@ arch tree3
 x 11
 y 10
 end
-arch grass_only
+arch woods
 x 11
 y 11
-type -666
 elevation 2835
-end
-arch woods4
-x 11
-y 11
-type -666
 end
 arch hills_rocky
 x 11
@@ -3475,27 +3451,15 @@ arch tree3
 x 13
 y 11
 end
-arch grass_only
+arch woods
 x 13
 y 12
-type -666
 elevation 2455
 end
-arch woods4
-x 13
-y 12
-type -666
-end
-arch grass_only
+arch woods
 x 13
 y 13
-type -666
 elevation 2382
-end
-arch woods4
-x 13
-y 13
-type -666
 end
 arch hills_rocky
 x 13
@@ -3689,16 +3653,10 @@ x 14
 y 1
 elevation 440
 end
-arch grass_only
+arch woods
 x 14
 y 2
-type -666
 elevation 1193
-end
-arch woods4
-x 14
-y 2
-type -666
 end
 arch woods_3
 x 14
@@ -3734,16 +3692,10 @@ x 14
 y 8
 elevation 1297
 end
-arch grass_only
+arch woods
 x 14
 y 9
-type -666
 elevation 1500
-end
-arch woods4
-x 14
-y 9
-type -666
 end
 arch grass_only
 x 14
@@ -4060,16 +4012,10 @@ arch tree3
 x 15
 y 12
 end
-arch grass_only
+arch woods
 x 15
 y 13
-type -666
 elevation 2382
-end
-arch woods4
-x 15
-y 13
-type -666
 end
 arch hills_rocky
 x 15
@@ -4267,16 +4213,10 @@ arch tree3
 x 16
 y 1
 end
-arch grass_only
+arch woods
 x 16
 y 2
-type -666
 elevation 1883
-end
-arch woods4
-x 16
-y 2
-type -666
 end
 arch grass_only
 x 16
@@ -4287,16 +4227,10 @@ arch tree5
 x 16
 y 3
 end
-arch grass_only
+arch woods
 x 16
 y 4
-type -666
 elevation 1451
-end
-arch woods4
-x 16
-y 4
-type -666
 end
 arch brush
 x 16
@@ -4327,16 +4261,10 @@ x 16
 y 9
 elevation 2155
 end
-arch grass_only
+arch woods
 x 16
 y 10
-type -666
 elevation 2303
-end
-arch woods4
-x 16
-y 10
-type -666
 end
 arch grass_only
 x 16
@@ -4545,14 +4473,9 @@ x 16
 y 49
 elevation 1903
 end
-arch grass_only
+arch woods
 x 17
-type -666
 elevation 1451
-end
-arch woods4
-x 17
-type -666
 end
 arch grass_only
 x 17
@@ -4572,16 +4495,10 @@ arch tree3
 x 17
 y 2
 end
-arch grass_only
+arch woods
 x 17
 y 3
-type -666
 elevation 1519
-end
-arch woods4
-x 17
-y 3
-type -666
 end
 arch grass_only
 x 17
@@ -5174,16 +5091,10 @@ x 19
 y 9
 elevation 380
 end
-arch grass_only
+arch woods
 x 19
 y 10
-type -666
 elevation 1426
-end
-arch woods4
-x 19
-y 10
-type -666
 end
 arch hills_rocky
 x 19
@@ -5195,16 +5106,10 @@ x 19
 y 12
 elevation 2185
 end
-arch grass_only
+arch woods
 x 19
 y 13
-type -666
 elevation 2266
-end
-arch woods4
-x 19
-y 13
-type -666
 end
 arch hills_rocky
 x 19
@@ -5386,14 +5291,9 @@ x 19
 y 49
 elevation 1641
 end
-arch grass_only
+arch woods
 x 20
-type -666
 elevation 1249
-end
-arch woods4
-x 20
-type -666
 end
 arch desert
 x 20
@@ -5727,16 +5627,10 @@ x 21
 y 15
 elevation 1609
 end
-arch grass_only
+arch woods
 x 21
 y 16
-type -666
 elevation 1820
-end
-arch woods4
-x 21
-y 16
-type -666
 end
 arch hills_rocky
 x 21
@@ -6445,16 +6339,10 @@ x 24
 y 8
 elevation 1298
 end
-arch grass_only
+arch woods
 x 24
 y 9
-type -666
 elevation 1604
-end
-arch woods4
-x 24
-y 9
-type -666
 end
 arch hills_rocky
 x 24
@@ -6743,16 +6631,10 @@ x 25
 y 16
 elevation 2746
 end
-arch grass_only
+arch woods
 x 25
 y 17
-type -666
 elevation 2222
-end
-arch woods4
-x 25
-y 17
-type -666
 end
 arch woods_2
 x 25
@@ -6953,27 +6835,15 @@ x 26
 y 7
 elevation 933
 end
-arch grass_only
+arch woods
 x 26
 y 8
-type -666
 elevation 1381
 end
-arch woods4
-x 26
-y 8
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 9
-type -666
 elevation 1345
-end
-arch woods4
-x 26
-y 9
-type -666
 end
 arch brush
 x 26

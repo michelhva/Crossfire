@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_102_106
@@ -24,13 +24,8 @@ end
 arch hills_rocky
 y 2
 end
-arch grass_only
+arch woods
 y 3
-type -666
-end
-arch woods4
-y 3
-type -666
 end
 arch woods_3
 y 4
@@ -177,35 +172,17 @@ arch beach
 x 1
 y 1
 end
-arch grass_only
+arch woods
 x 1
 y 2
-type -666
 end
-arch woods4
-x 1
-y 2
-type -666
-end
-arch grass_only
+arch woods
 x 1
 y 3
-type -666
 end
-arch woods4
-x 1
-y 3
-type -666
-end
-arch grass_only
+arch woods
 x 1
 y 4
-type -666
-end
-arch woods4
-x 1
-y 4
-type -666
 end
 arch grass
 x 1
@@ -438,15 +415,9 @@ arch brush
 x 2
 y 11
 end
-arch grass_only
+arch woods
 x 2
 y 12
-type -666
-end
-arch woods4
-x 2
-y 12
-type -666
 end
 arch brush
 x 2
@@ -619,29 +590,17 @@ arch beach
 x 3
 y 2
 end
-arch grass_only
+arch woods
 x 3
 y 3
-type -666
-end
-arch woods4
-x 3
-y 3
-type -666
 end
 arch woods_3
 x 3
 y 4
 end
-arch grass_only
+arch woods
 x 3
 y 5
-type -666
-end
-arch woods4
-x 3
-y 5
-type -666
 end
 arch beach
 x 3
@@ -667,15 +626,9 @@ arch beach
 x 3
 y 11
 end
-arch grass_only
+arch woods
 x 3
 y 12
-type -666
-end
-arch woods4
-x 3
-y 12
-type -666
 end
 arch woods_3
 x 3
@@ -844,45 +797,21 @@ arch shallow_sea
 x 4
 y 1
 end
-arch grass_only
+arch woods
 x 4
 y 2
-type -666
 end
-arch woods4
-x 4
-y 2
-type -666
-end
-arch grass_only
+arch woods
 x 4
 y 3
-type -666
 end
-arch woods4
-x 4
-y 3
-type -666
-end
-arch grass_only
+arch woods
 x 4
 y 4
-type -666
 end
-arch woods4
-x 4
-y 4
-type -666
-end
-arch grass_only
+arch woods
 x 4
 y 5
-type -666
-end
-arch woods4
-x 4
-y 5
-type -666
 end
 arch beach
 x 4
@@ -912,15 +841,9 @@ arch beach
 x 4
 y 12
 end
-arch grass_only
+arch woods
 x 4
 y 13
-type -666
-end
-arch woods4
-x 4
-y 13
-type -666
 end
 arch beach
 x 4
@@ -1073,35 +996,17 @@ arch shallow_sea
 x 5
 y 1
 end
-arch grass_only
+arch woods
 x 5
 y 2
-type -666
 end
-arch woods4
-x 5
-y 2
-type -666
-end
-arch grass_only
+arch woods
 x 5
 y 3
-type -666
 end
-arch woods4
-x 5
-y 3
-type -666
-end
-arch grass_only
+arch woods
 x 5
 y 4
-type -666
-end
-arch woods4
-x 5
-y 4
-type -666
 end
 arch beach
 x 5
@@ -1131,25 +1036,13 @@ arch beach
 x 5
 y 11
 end
-arch grass_only
+arch woods
 x 5
 y 12
-type -666
 end
-arch woods4
-x 5
-y 12
-type -666
-end
-arch grass_only
+arch woods
 x 5
 y 13
-type -666
-end
-arch woods4
-x 5
-y 13
-type -666
 end
 arch beach
 x 5
@@ -1195,35 +1088,17 @@ arch desert
 x 5
 y 24
 end
-arch grass_only
+arch woods
 x 5
 y 25
-type -666
 end
-arch woods4
-x 5
-y 25
-type -666
-end
-arch grass_only
+arch woods
 x 5
 y 26
-type -666
 end
-arch woods4
-x 5
-y 26
-type -666
-end
-arch grass_only
+arch woods
 x 5
 y 27
-type -666
-end
-arch woods4
-x 5
-y 27
-type -666
 end
 arch desert
 x 5
@@ -1324,15 +1199,9 @@ arch beach
 x 6
 y 2
 end
-arch grass_only
+arch woods
 x 6
 y 3
-type -666
-end
-arch woods4
-x 6
-y 3
-type -666
 end
 arch beach
 x 6
@@ -1366,25 +1235,13 @@ arch beach
 x 6
 y 11
 end
-arch grass_only
+arch woods
 x 6
 y 12
-type -666
 end
-arch woods4
-x 6
-y 12
-type -666
-end
-arch grass_only
+arch woods
 x 6
 y 13
-type -666
-end
-arch woods4
-x 6
-y 13
-type -666
 end
 arch beach
 x 6
@@ -1430,35 +1287,17 @@ arch desert
 x 6
 y 24
 end
-arch grass_only
+arch woods
 x 6
 y 25
-type -666
 end
-arch woods4
-x 6
-y 25
-type -666
-end
-arch grass_only
+arch woods
 x 6
 y 26
-type -666
 end
-arch woods4
-x 6
-y 26
-type -666
-end
-arch grass_only
+arch woods
 x 6
 y 27
-type -666
-end
-arch woods4
-x 6
-y 27
-type -666
 end
 arch desert
 x 6
@@ -1563,25 +1402,13 @@ arch beach
 x 7
 y 2
 end
-arch grass_only
+arch woods
 x 7
 y 3
-type -666
 end
-arch woods4
-x 7
-y 3
-type -666
-end
-arch grass_only
+arch woods
 x 7
 y 4
-type -666
-end
-arch woods4
-x 7
-y 4
-type -666
 end
 arch beach
 x 7
@@ -1663,25 +1490,13 @@ arch desert
 x 7
 y 24
 end
-arch grass_only
+arch woods
 x 7
 y 25
-type -666
 end
-arch woods4
-x 7
-y 25
-type -666
-end
-arch grass_only
+arch woods
 x 7
 y 26
-type -666
-end
-arch woods4
-x 7
-y 26
-type -666
 end
 arch desert
 x 7
@@ -1878,25 +1693,13 @@ arch tree3
 x 8
 y 23
 end
-arch grass_only
+arch woods
 x 8
 y 24
-type -666
 end
-arch woods4
-x 8
-y 24
-type -666
-end
-arch grass_only
+arch woods
 x 8
 y 25
-type -666
-end
-arch woods4
-x 8
-y 25
-type -666
 end
 arch brush
 x 8
@@ -2089,15 +1892,9 @@ arch desert
 x 9
 y 22
 end
-arch grass_only
+arch woods
 x 9
 y 23
-type -666
-end
-arch woods4
-x 9
-y 23
-type -666
 end
 arch hills_rocky
 x 9
@@ -3413,15 +3210,9 @@ arch cobblestones
 x 15
 y 46
 end
-arch grass_only
+arch woods
 x 15
 y 47
-type -666
-end
-arch woods4
-x 15
-y 47
-type -666
 end
 arch beach
 x 15
@@ -3610,29 +3401,17 @@ arch steppe
 x 16
 y 44
 end
-arch grass_only
+arch woods
 x 16
 y 45
-type -666
-end
-arch woods4
-x 16
-y 45
-type -666
 end
 arch cobblestones
 x 16
 y 46
 end
-arch grass_only
+arch woods
 x 16
 y 47
-type -666
-end
-arch woods4
-x 16
-y 47
-type -666
 end
 arch beach
 x 16
@@ -3821,15 +3600,9 @@ arch steppe
 x 17
 y 44
 end
-arch grass_only
+arch woods
 x 17
 y 45
-type -666
-end
-arch woods4
-x 17
-y 45
-type -666
 end
 arch cobblestones
 x 17
@@ -4026,15 +3799,9 @@ arch steppe
 x 18
 y 44
 end
-arch grass_only
+arch woods
 x 18
 y 45
-type -666
-end
-arch woods4
-x 18
-y 45
-type -666
 end
 arch cobblestones
 x 18
@@ -4227,25 +3994,13 @@ arch steppe
 x 19
 y 43
 end
-arch grass_only
+arch woods
 x 19
 y 44
-type -666
 end
-arch woods4
-x 19
-y 44
-type -666
-end
-arch grass_only
+arch woods
 x 19
 y 45
-type -666
-end
-arch woods4
-x 19
-y 45
-type -666
 end
 arch cobblestones
 x 19
@@ -4438,53 +4193,29 @@ arch steppe
 x 20
 y 43
 end
-arch grass_only
+arch woods
 x 20
 y 44
-type -666
-end
-arch woods4
-x 20
-y 44
-type -666
 end
 arch desert
 x 20
 y 45
 end
-arch grass_only
+arch woods
 x 20
 y 46
-type -666
-end
-arch woods4
-x 20
-y 46
-type -666
 end
 arch cobblestones
 x 20
 y 47
 end
-arch grass_only
+arch woods
 x 20
 y 48
-type -666
 end
-arch woods4
-x 20
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 20
 y 49
-type -666
-end
-arch woods4
-x 20
-y 49
-type -666
 end
 arch shallow_sea
 x 21
@@ -4657,63 +4388,33 @@ arch steppe
 x 21
 y 42
 end
-arch grass_only
+arch woods
 x 21
 y 43
-type -666
 end
-arch woods4
-x 21
-y 43
-type -666
-end
-arch grass_only
+arch woods
 x 21
 y 44
-type -666
-end
-arch woods4
-x 21
-y 44
-type -666
 end
 arch desert
 x 21
 y 45
 end
-arch grass_only
+arch woods
 x 21
 y 46
-type -666
-end
-arch woods4
-x 21
-y 46
-type -666
 end
 arch cobblestones
 x 21
 y 47
 end
-arch grass_only
+arch woods
 x 21
 y 48
-type -666
 end
-arch woods4
-x 21
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 21
 y 49
-type -666
-end
-arch woods4
-x 21
-y 49
-type -666
 end
 arch shallow_sea
 x 22
@@ -4858,15 +4559,9 @@ arch steppe
 x 22
 y 35
 end
-arch grass_only
+arch woods
 x 22
 y 36
-type -666
-end
-arch woods4
-x 22
-y 36
-type -666
 end
 arch steppe
 x 22
@@ -4892,15 +4587,9 @@ arch steppe
 x 22
 y 42
 end
-arch grass_only
+arch woods
 x 22
 y 43
-type -666
-end
-arch woods4
-x 22
-y 43
-type -666
 end
 arch desert
 x 22
@@ -5073,15 +4762,9 @@ arch steppe
 x 23
 y 36
 end
-arch grass_only
+arch woods
 x 23
 y 37
-type -666
-end
-arch woods4
-x 23
-y 37
-type -666
 end
 arch steppe
 x 23
@@ -5103,49 +4786,25 @@ arch steppe
 x 23
 y 42
 end
-arch grass_only
+arch woods
 x 23
 y 43
-type -666
 end
-arch woods4
-x 23
-y 43
-type -666
-end
-arch grass_only
+arch woods
 x 23
 y 44
-type -666
 end
-arch woods4
-x 23
-y 44
-type -666
-end
-arch grass_only
+arch woods
 x 23
 y 45
-type -666
-end
-arch woods4
-x 23
-y 45
-type -666
 end
 arch desert
 x 23
 y 46
 end
-arch grass_only
+arch woods
 x 23
 y 47
-type -666
-end
-arch woods4
-x 23
-y 47
-type -666
 end
 arch cobblestones
 x 23
@@ -5298,45 +4957,21 @@ arch steppe
 x 24
 y 35
 end
-arch grass_only
+arch woods
 x 24
 y 36
-type -666
 end
-arch woods4
-x 24
-y 36
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 37
-type -666
 end
-arch woods4
-x 24
-y 37
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 38
-type -666
 end
-arch woods4
-x 24
-y 38
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 39
-type -666
-end
-arch woods4
-x 24
-y 39
-type -666
 end
 arch steppe
 x 24
@@ -5346,59 +4981,29 @@ arch steppe
 x 24
 y 41
 end
-arch grass_only
+arch woods
 x 24
 y 42
-type -666
 end
-arch woods4
-x 24
-y 42
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 43
-type -666
-end
-arch woods4
-x 24
-y 43
-type -666
 end
 arch steppe
 x 24
 y 44
 end
-arch grass_only
+arch woods
 x 24
 y 45
-type -666
 end
-arch woods4
-x 24
-y 45
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 46
-type -666
 end
-arch woods4
-x 24
-y 46
-type -666
-end
-arch grass_only
+arch woods
 x 24
 y 47
-type -666
-end
-arch woods4
-x 24
-y 47
-type -666
 end
 arch cobblestones
 x 24
@@ -5551,69 +5156,33 @@ arch steppe
 x 25
 y 35
 end
-arch grass_only
+arch woods
 x 25
 y 36
-type -666
 end
-arch woods4
-x 25
-y 36
-type -666
-end
-arch grass_only
+arch woods
 x 25
 y 37
-type -666
-end
-arch woods4
-x 25
-y 37
-type -666
 end
 arch desert
 x 25
 y 38
 end
-arch grass_only
+arch woods
 x 25
 y 39
-type -666
 end
-arch woods4
-x 25
-y 39
-type -666
-end
-arch grass_only
+arch woods
 x 25
 y 40
-type -666
 end
-arch woods4
-x 25
-y 40
-type -666
-end
-arch grass_only
+arch woods
 x 25
 y 41
-type -666
 end
-arch woods4
-x 25
-y 41
-type -666
-end
-arch grass_only
+arch woods
 x 25
 y 42
-type -666
-end
-arch woods4
-x 25
-y 42
-type -666
 end
 arch steppe
 x 25
@@ -5627,25 +5196,13 @@ arch steppe
 x 25
 y 45
 end
-arch grass_only
+arch woods
 x 25
 y 46
-type -666
 end
-arch woods4
-x 25
-y 46
-type -666
-end
-arch grass_only
+arch woods
 x 25
 y 47
-type -666
-end
-arch woods4
-x 25
-y 47
-type -666
 end
 arch cobblestones
 x 25
@@ -5802,25 +5359,13 @@ arch steppe
 x 26
 y 36
 end
-arch grass_only
+arch woods
 x 26
 y 37
-type -666
 end
-arch woods4
-x 26
-y 37
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 38
-type -666
-end
-arch woods4
-x 26
-y 38
-type -666
 end
 arch desert
 x 26
@@ -5834,15 +5379,9 @@ arch desert
 x 26
 y 41
 end
-arch grass_only
+arch woods
 x 26
 y 42
-type -666
-end
-arch woods4
-x 26
-y 42
-type -666
 end
 arch steppe
 x 26
@@ -5856,45 +5395,21 @@ arch steppe
 x 26
 y 45
 end
-arch grass_only
+arch woods
 x 26
 y 46
-type -666
 end
-arch woods4
-x 26
-y 46
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 47
-type -666
 end
-arch woods4
-x 26
-y 47
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 48
-type -666
 end
-arch woods4
-x 26
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 26
 y 49
-type -666
-end
-arch woods4
-x 26
-y 49
-type -666
 end
 arch sea
 x 27
@@ -6043,87 +5558,45 @@ arch steppe
 x 27
 y 36
 end
-arch grass_only
+arch woods
 x 27
 y 37
-type -666
-end
-arch woods4
-x 27
-y 37
-type -666
 end
 arch desert
 x 27
 y 38
 end
-arch grass_only
+arch woods
 x 27
 y 39
-type -666
 end
-arch woods4
-x 27
-y 39
-type -666
-end
-arch grass_only
+arch woods
 x 27
 y 40
-type -666
 end
-arch woods4
-x 27
-y 40
-type -666
-end
-arch grass_only
+arch woods
 x 27
 y 41
-type -666
 end
-arch woods4
-x 27
-y 41
-type -666
-end
-arch grass_only
+arch woods
 x 27
 y 42
-type -666
-end
-arch woods4
-x 27
-y 42
-type -666
 end
 arch desert
 x 27
 y 43
 end
-arch grass_only
+arch woods
 x 27
 y 44
-type -666
-end
-arch woods4
-x 27
-y 44
-type -666
 end
 arch steppe
 x 27
 y 45
 end
-arch grass_only
+arch woods
 x 27
 y 46
-type -666
-end
-arch woods4
-x 27
-y 46
-type -666
 end
 arch steppe
 x 27
@@ -6248,25 +5721,13 @@ arch hills
 x 28
 y 27
 end
-arch grass_only
+arch woods
 x 28
 y 28
-type -666
 end
-arch woods4
-x 28
-y 28
-type -666
-end
-arch grass_only
+arch woods
 x 28
 y 29
-type -666
-end
-arch woods4
-x 28
-y 29
-type -666
 end
 arch mountain
 x 28
@@ -6292,15 +5753,9 @@ arch steppe
 x 28
 y 35
 end
-arch grass_only
+arch woods
 x 28
 y 36
-type -666
-end
-arch woods4
-x 28
-y 36
-type -666
 end
 arch desert
 x 28
@@ -6310,39 +5765,21 @@ arch desert
 x 28
 y 38
 end
-arch grass_only
+arch woods
 x 28
 y 39
-type -666
 end
-arch woods4
-x 28
-y 39
-type -666
-end
-arch grass_only
+arch woods
 x 28
 y 40
-type -666
-end
-arch woods4
-x 28
-y 40
-type -666
 end
 arch hills_rocky
 x 28
 y 41
 end
-arch grass_only
+arch woods
 x 28
 y 42
-type -666
-end
-arch woods4
-x 28
-y 42
-type -666
 end
 arch brush
 x 28
@@ -6527,25 +5964,13 @@ arch brush
 x 29
 y 38
 end
-arch grass_only
+arch woods
 x 29
 y 39
-type -666
 end
-arch woods4
-x 29
-y 39
-type -666
-end
-arch grass_only
+arch woods
 x 29
 y 40
-type -666
-end
-arch woods4
-x 29
-y 40
-type -666
 end
 arch grass_only
 x 29
@@ -6567,15 +5992,9 @@ arch hills_rocky
 x 29
 y 42
 end
-arch grass_only
+arch woods
 x 29
 y 43
-type -666
-end
-arch woods4
-x 29
-y 43
-type -666
 end
 arch steppe
 x 29
@@ -6760,25 +6179,13 @@ arch hills_rocky
 x 30
 y 39
 end
-arch grass_only
+arch woods
 x 30
 y 40
-type -666
 end
-arch woods4
-x 30
-y 40
-type -666
-end
-arch grass_only
+arch woods
 x 30
 y 41
-type -666
-end
-arch woods4
-x 30
-y 41
-type -666
 end
 arch hills_rocky
 x 30
@@ -6804,25 +6211,13 @@ arch steppe
 x 30
 y 47
 end
-arch grass_only
+arch woods
 x 30
 y 48
-type -666
 end
-arch woods4
-x 30
-y 48
-type -666
-end
-arch grass_only
+arch woods
 x 30
 y 49
-type -666
-end
-arch woods4
-x 30
-y 49
-type -666
 end
 arch shallow_sea
 x 31
@@ -6947,15 +6342,9 @@ arch steppe
 x 31
 y 30
 end
-arch grass_only
+arch woods
 x 31
 y 31
-type -666
-end
-arch woods4
-x 31
-y 31
-type -666
 end
 arch steppe
 x 31
@@ -6981,39 +6370,21 @@ arch hills_rocky
 x 31
 y 37
 end
-arch grass_only
+arch woods
 x 31
 y 38
-type -666
-end
-arch woods4
-x 31
-y 38
-type -666
 end
 arch hills_rocky
 x 31
 y 39
 end
-arch grass_only
+arch woods
 x 31
 y 40
-type -666
 end
-arch woods4
-x 31
-y 40
-type -666
-end
-arch grass_only
+arch woods
 x 31
 y 41
-type -666
-end
-arch woods4
-x 31
-y 41
-type -666
 end
 arch desert
 x 31
@@ -7035,29 +6406,17 @@ arch hills_rocky
 x 31
 y 46
 end
-arch grass_only
+arch woods
 x 31
 y 47
-type -666
-end
-arch woods4
-x 31
-y 47
-type -666
 end
 arch desert
 x 31
 y 48
 end
-arch grass_only
+arch woods
 x 31
 y 49
-type -666
-end
-arch woods4
-x 31
-y 49
-type -666
 end
 arch brush
 x 32
@@ -7158,15 +6517,9 @@ arch deep_swamp
 x 32
 y 24
 end
-arch grass_only
+arch woods
 x 32
 y 25
-type -666
-end
-arch woods4
-x 32
-y 25
-type -666
 end
 arch steppe
 x 32
@@ -7180,15 +6533,9 @@ arch steppe
 x 32
 y 28
 end
-arch grass_only
+arch woods
 x 32
 y 29
-type -666
-end
-arch woods4
-x 32
-y 29
-type -666
 end
 arch beach
 x 32
@@ -7222,29 +6569,17 @@ arch brush
 x 32
 y 37
 end
-arch grass_only
+arch woods
 x 32
 y 38
-type -666
-end
-arch woods4
-x 32
-y 38
-type -666
 end
 arch hills_rocky
 x 32
 y 39
 end
-arch grass_only
+arch woods
 x 32
 y 40
-type -666
-end
-arch woods4
-x 32
-y 40
-type -666
 end
 arch brush
 x 32
@@ -7270,15 +6605,9 @@ arch hills_rocky
 x 32
 y 46
 end
-arch grass_only
+arch woods
 x 32
 y 47
-type -666
-end
-arch woods4
-x 32
-y 47
-type -666
 end
 arch grass
 x 32
@@ -7391,15 +6720,9 @@ arch shallow_sea
 x 33
 y 25
 end
-arch grass_only
+arch woods
 x 33
 y 26
-type -666
-end
-arch woods4
-x 33
-y 26
-type -666
 end
 arch beach
 x 33
@@ -7429,15 +6752,9 @@ arch hills_rocky
 x 33
 y 33
 end
-arch grass_only
+arch woods
 x 33
 y 34
-type -666
-end
-arch woods4
-x 33
-y 34
-type -666
 end
 arch desert
 x 33
@@ -7467,15 +6784,9 @@ arch brush
 x 33
 y 41
 end
-arch grass_only
+arch woods
 x 33
 y 42
-type -666
-end
-arch woods4
-x 33
-y 42
-type -666
 end
 arch steppe
 x 33
@@ -7644,15 +6955,9 @@ arch beach
 x 34
 y 34
 end
-arch grass_only
+arch woods
 x 34
 y 35
-type -666
-end
-arch woods4
-x 34
-y 35
-type -666
 end
 arch desert
 x 34
@@ -7670,15 +6975,9 @@ arch desert
 x 34
 y 39
 end
-arch grass_only
+arch woods
 x 34
 y 40
-type -666
-end
-arch woods4
-x 34
-y 40
-type -666
 end
 arch hills_rocky
 x 34
@@ -7723,15 +7022,9 @@ arch steppe
 x 35
 y 1
 end
-arch grass_only
+arch woods
 x 35
 y 2
-type -666
-end
-arch woods4
-x 35
-y 2
-type -666
 end
 arch brush
 x 35
@@ -7857,29 +7150,17 @@ arch beach
 x 35
 y 33
 end
-arch grass_only
+arch woods
 x 35
 y 34
-type -666
-end
-arch woods4
-x 35
-y 34
-type -666
 end
 arch hills_rocky
 x 35
 y 35
 end
-arch grass_only
+arch woods
 x 35
 y 36
-type -666
-end
-arch woods4
-x 35
-y 36
-type -666
 end
 arch desert
 x 35
@@ -7889,25 +7170,13 @@ arch hills_rocky
 x 35
 y 38
 end
-arch grass_only
+arch woods
 x 35
 y 39
-type -666
 end
-arch woods4
-x 35
-y 39
-type -666
-end
-arch grass_only
+arch woods
 x 35
 y 40
-type -666
-end
-arch woods4
-x 35
-y 40
-type -666
 end
 arch hills
 x 35
@@ -7956,15 +7225,9 @@ arch steppe
 x 36
 y 2
 end
-arch grass_only
+arch woods
 x 36
 y 3
-type -666
-end
-arch woods4
-x 36
-y 3
-type -666
 end
 arch beach
 x 36
@@ -8086,15 +7349,9 @@ arch beach
 x 36
 y 33
 end
-arch grass_only
+arch woods
 x 36
 y 34
-type -666
-end
-arch woods4
-x 36
-y 34
-type -666
 end
 arch steppe
 x 36
@@ -8171,25 +7428,13 @@ arch steppe
 x 37
 y 3
 end
-arch grass_only
+arch woods
 x 37
 y 4
-type -666
 end
-arch woods4
-x 37
-y 4
-type -666
-end
-arch grass_only
+arch woods
 x 37
 y 5
-type -666
-end
-arch woods4
-x 37
-y 5
-type -666
 end
 arch shallow_sea
 x 37
@@ -8589,15 +7834,9 @@ arch hills
 x 39
 y 5
 end
-arch grass_only
+arch woods
 x 39
 y 6
-type -666
-end
-arch woods4
-x 39
-y 6
-type -666
 end
 arch beach
 x 39
@@ -8794,25 +8033,13 @@ arch hills
 x 40
 y 5
 end
-arch grass_only
+arch woods
 x 40
 y 6
-type -666
 end
-arch woods4
-x 40
-y 6
-type -666
-end
-arch grass_only
+arch woods
 x 40
 y 7
-type -666
-end
-arch woods4
-x 40
-y 7
-type -666
 end
 arch beach
 x 40
@@ -9005,15 +8232,9 @@ arch hills
 x 41
 y 5
 end
-arch grass_only
+arch woods
 x 41
 y 6
-type -666
-end
-arch woods4
-x 41
-y 6
-type -666
 end
 arch beach
 x 41
@@ -9210,35 +8431,17 @@ arch woods_3
 x 42
 y 5
 end
-arch grass_only
+arch woods
 x 42
 y 6
-type -666
 end
-arch woods4
-x 42
-y 6
-type -666
-end
-arch grass_only
+arch woods
 x 42
 y 7
-type -666
 end
-arch woods4
-x 42
-y 7
-type -666
-end
-arch grass_only
+arch woods
 x 42
 y 8
-type -666
-end
-arch woods4
-x 42
-y 8
-type -666
 end
 arch beach
 x 42
@@ -9316,15 +8519,9 @@ arch evergreens2
 x 42
 y 26
 end
-arch grass_only
+arch woods
 x 42
 y 27
-type -666
-end
-arch woods4
-x 42
-y 27
-type -666
 end
 arch hills_rocky
 x 42
@@ -9433,45 +8630,21 @@ arch woods_3
 x 43
 y 4
 end
-arch grass_only
+arch woods
 x 43
 y 5
-type -666
 end
-arch woods4
-x 43
-y 5
-type -666
-end
-arch grass_only
+arch woods
 x 43
 y 6
-type -666
 end
-arch woods4
-x 43
-y 6
-type -666
-end
-arch grass_only
+arch woods
 x 43
 y 7
-type -666
 end
-arch woods4
-x 43
-y 7
-type -666
-end
-arch grass_only
+arch woods
 x 43
 y 8
-type -666
-end
-arch woods4
-x 43
-y 8
-type -666
 end
 arch beach
 x 43
@@ -9645,13 +8818,8 @@ arch mountain2
 x 43
 y 49
 end
-arch grass_only
+arch woods
 x 44
-type -666
-end
-arch woods4
-x 44
-type -666
 end
 arch steppe
 x 44
@@ -9669,45 +8837,21 @@ arch steppe
 x 44
 y 4
 end
-arch grass_only
+arch woods
 x 44
 y 5
-type -666
 end
-arch woods4
-x 44
-y 5
-type -666
-end
-arch grass_only
+arch woods
 x 44
 y 6
-type -666
 end
-arch woods4
-x 44
-y 6
-type -666
-end
-arch grass_only
+arch woods
 x 44
 y 7
-type -666
 end
-arch woods4
-x 44
-y 7
-type -666
-end
-arch grass_only
+arch woods
 x 44
 y 8
-type -666
-end
-arch woods4
-x 44
-y 8
-type -666
 end
 arch beach
 x 44
@@ -9896,59 +9040,29 @@ arch steppe
 x 45
 y 5
 end
-arch grass_only
+arch woods
 x 45
 y 6
-type -666
-end
-arch woods4
-x 45
-y 6
-type -666
 end
 arch steppe
 x 45
 y 7
 end
-arch grass_only
+arch woods
 x 45
 y 8
-type -666
 end
-arch woods4
-x 45
-y 8
-type -666
-end
-arch grass_only
+arch woods
 x 45
 y 9
-type -666
 end
-arch woods4
-x 45
-y 9
-type -666
-end
-arch grass_only
+arch woods
 x 45
 y 10
-type -666
 end
-arch woods4
-x 45
-y 10
-type -666
-end
-arch grass_only
+arch woods
 x 45
 y 11
-type -666
-end
-arch woods4
-x 45
-y 11
-type -666
 end
 arch grass_only
 x 45
@@ -9990,15 +9104,9 @@ arch desert
 x 45
 y 20
 end
-arch grass_only
+arch woods
 x 45
 y 21
-type -666
-end
-arch woods4
-x 45
-y 21
-type -666
 end
 arch mountain
 x 45
@@ -10036,15 +9144,9 @@ arch hills_rocky
 x 45
 y 29
 end
-arch grass_only
+arch woods
 x 45
 y 30
-type -666
-end
-arch woods4
-x 45
-y 30
-type -666
 end
 arch hills_rocky
 x 45
@@ -10153,35 +9255,17 @@ arch steppe
 x 46
 y 7
 end
-arch grass_only
+arch woods
 x 46
 y 8
-type -666
 end
-arch woods4
-x 46
-y 8
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 9
-type -666
 end
-arch woods4
-x 46
-y 9
-type -666
-end
-arch grass_only
+arch woods
 x 46
 y 10
-type -666
-end
-arch woods4
-x 46
-y 10
-type -666
 end
 arch grass_only
 x 46
@@ -10215,15 +9299,9 @@ arch evergreens2
 x 46
 y 14
 end
-arch grass_only
+arch woods
 x 46
 y 15
-type -666
-end
-arch woods4
-x 46
-y 15
-type -666
 end
 arch grass_only
 x 46
@@ -10245,15 +9323,9 @@ arch grass
 x 46
 y 19
 end
-arch grass_only
+arch woods
 x 46
 y 20
-type -666
-end
-arch woods4
-x 46
-y 20
-type -666
 end
 arch steppe
 x 46
@@ -10299,15 +9371,9 @@ arch grass
 x 46
 y 30
 end
-arch grass_only
+arch woods
 x 46
 y 31
-type -666
-end
-arch woods4
-x 46
-y 31
-type -666
 end
 arch steppe
 x 46
@@ -10396,15 +9462,9 @@ arch grass
 x 47
 y 3
 end
-arch grass_only
+arch woods
 x 47
 y 4
-type -666
-end
-arch woods4
-x 47
-y 4
-type -666
 end
 arch steppe
 x 47
@@ -10462,39 +9522,21 @@ arch evergreens2
 x 47
 y 15
 end
-arch grass_only
+arch woods
 x 47
 y 16
-type -666
 end
-arch woods4
-x 47
-y 16
-type -666
-end
-arch grass_only
+arch woods
 x 47
 y 17
-type -666
-end
-arch woods4
-x 47
-y 17
-type -666
 end
 arch grass
 x 47
 y 18
 end
-arch grass_only
+arch woods
 x 47
 y 19
-type -666
-end
-arch woods4
-x 47
-y 19
-type -666
 end
 arch steppe
 x 47
@@ -10631,15 +9673,9 @@ arch steppe
 x 48
 y 1
 end
-arch grass_only
+arch woods
 x 48
 y 2
-type -666
-end
-arch woods4
-x 48
-y 2
-type -666
 end
 arch desert
 x 48
@@ -10657,15 +9693,9 @@ arch woods_3
 x 48
 y 6
 end
-arch grass_only
+arch woods
 x 48
 y 7
-type -666
-end
-arch woods4
-x 48
-y 7
-type -666
 end
 arch steppe
 x 48
@@ -10862,15 +9892,9 @@ end
 arch mountain
 x 49
 end
-arch grass_only
+arch woods
 x 49
 y 1
-type -666
-end
-arch woods4
-x 49
-y 1
-type -666
 end
 arch woods_2
 x 49
@@ -10896,15 +9920,9 @@ arch woods_3
 x 49
 y 7
 end
-arch grass_only
+arch woods
 x 49
 y 8
-type -666
-end
-arch woods4
-x 49
-y 8
-type -666
 end
 arch hills
 x 49

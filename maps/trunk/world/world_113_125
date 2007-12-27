@@ -3,7 +3,7 @@ name world_113_125
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_113_124
@@ -11,12 +11,8 @@ tile_path_2 world_114_125
 tile_path_3 world_113_126
 tile_path_4 world_112_125
 end
-arch grass_only
-type -666
+arch woods
 elevation 1836
-end
-arch woods4
-type -666
 end
 arch woods_2
 y 1
@@ -223,16 +219,10 @@ x 1
 y 1
 elevation 1483
 end
-arch grass_only
+arch woods
 x 1
 y 2
-type -666
 elevation 1166
-end
-arch woods4
-x 1
-y 2
-type -666
 end
 arch desert
 x 1
@@ -478,16 +468,10 @@ x 2
 y 1
 elevation 889
 end
-arch grass_only
+arch woods
 x 2
 y 2
-type -666
 elevation 1065
-end
-arch woods4
-x 2
-y 2
-type -666
 end
 arch brush
 x 2
@@ -987,16 +971,10 @@ x 4
 y 2
 elevation 1321
 end
-arch grass_only
+arch woods
 x 4
 y 3
-type -666
 elevation 1147
-end
-arch woods4
-x 4
-y 3
-type -666
 end
 arch brush
 x 4

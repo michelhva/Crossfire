@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_128_106
@@ -7132,16 +7132,10 @@ x 28
 y 33
 elevation -10
 end
-arch grass_only
+arch woods
 x 28
 y 34
-type -666
 elevation 1984
-end
-arch woods4
-x 28
-y 34
-type -666
 end
 arch grass_only
 x 28
@@ -7152,27 +7146,15 @@ arch tree3
 x 28
 y 35
 end
-arch grass_only
+arch woods
 x 28
 y 36
-type -666
 elevation 2492
 end
-arch woods4
-x 28
-y 36
-type -666
-end
-arch grass_only
+arch woods
 x 28
 y 37
-type -666
 elevation 1247
-end
-arch woods4
-x 28
-y 37
-type -666
 end
 arch grass_only
 x 28
@@ -7407,16 +7389,10 @@ x 29
 y 33
 elevation 222
 end
-arch grass_only
+arch woods
 x 29
 y 34
-type -666
 elevation 2551
-end
-arch woods4
-x 29
-y 34
-type -666
 end
 arch hills
 x 29
@@ -7666,16 +7642,10 @@ x 30
 y 33
 elevation 350
 end
-arch grass_only
+arch woods
 x 30
 y 34
-type -666
 elevation 2822
-end
-arch woods4
-x 30
-y 34
-type -666
 end
 arch hills
 x 30
@@ -7921,16 +7891,10 @@ x 31
 y 33
 elevation 76
 end
-arch grass_only
+arch woods
 x 31
 y 34
-type -666
 elevation 2220
-end
-arch woods4
-x 31
-y 34
-type -666
 end
 arch hills
 x 31
@@ -8194,27 +8158,15 @@ arch tree3
 x 32
 y 35
 end
-arch grass_only
+arch woods
 x 32
 y 36
-type -666
 elevation 2940
 end
-arch woods4
-x 32
-y 36
-type -666
-end
-arch grass_only
+arch woods
 x 32
 y 37
-type -666
 elevation 2926
-end
-arch woods4
-x 32
-y 37
-type -666
 end
 arch woods_2
 x 32
@@ -8455,27 +8407,15 @@ x 33
 y 35
 elevation 341
 end
-arch grass_only
+arch woods
 x 33
 y 36
-type -666
 elevation 1341
 end
-arch woods4
-x 33
-y 36
-type -666
-end
-arch grass_only
+arch woods
 x 33
 y 37
-type -666
 elevation 1533
-end
-arch woods4
-x 33
-y 37
-type -666
 end
 arch brush
 x 33

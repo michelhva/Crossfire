@@ -3,7 +3,7 @@ name world_106_107
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_106_106
@@ -9327,16 +9327,10 @@ x 36
 y 31
 elevation 3646
 end
-arch grass_only
+arch woods
 x 36
 y 32
-type -666
 elevation 2637
-end
-arch woods4
-x 36
-y 32
-type -666
 end
 arch mountain
 x 36
@@ -10946,16 +10940,10 @@ x 42
 y 38
 elevation 5771
 end
-arch grass_only
+arch woods
 x 42
 y 39
-type -666
 elevation 2781
-end
-arch woods4
-x 42
-y 39
-type -666
 end
 arch hills
 x 42
@@ -10982,27 +10970,15 @@ x 42
 y 44
 elevation 4617
 end
-arch grass_only
+arch woods
 x 42
 y 45
-type -666
 elevation 2699
 end
-arch woods4
-x 42
-y 45
-type -666
-end
-arch grass_only
+arch woods
 x 42
 y 46
-type -666
 elevation 1431
-end
-arch woods4
-x 42
-y 46
-type -666
 end
 arch hills
 x 42
@@ -11255,16 +11231,10 @@ x 43
 y 44
 elevation 3977
 end
-arch grass_only
+arch woods
 x 43
 y 45
-type -666
 elevation 1539
-end
-arch woods4
-x 43
-y 45
-type -666
 end
 arch hills
 x 43
@@ -11514,16 +11484,10 @@ x 44
 y 44
 elevation 3672
 end
-arch grass_only
+arch woods
 x 44
 y 45
-type -666
 elevation 2497
-end
-arch woods4
-x 44
-y 45
-type -666
 end
 arch hills_rocky
 x 44
@@ -11535,16 +11499,10 @@ x 44
 y 47
 elevation 3500
 end
-arch grass_only
+arch woods
 x 44
 y 48
-type -666
 elevation 2422
-end
-arch woods4
-x 44
-y 48
-type -666
 end
 arch mountain
 x 44
@@ -11793,16 +11751,10 @@ x 45
 y 46
 elevation 3639
 end
-arch grass_only
+arch woods
 x 45
 y 47
-type -666
 elevation 2295
-end
-arch woods4
-x 45
-y 47
-type -666
 end
 arch hills
 x 45
@@ -11982,16 +11934,10 @@ x 46
 y 32
 elevation 3878
 end
-arch grass_only
+arch woods
 x 46
 y 33
-type -666
 elevation 1503
-end
-arch woods4
-x 46
-y 33
-type -666
 end
 arch hills_rocky
 x 46
@@ -12336,16 +12282,10 @@ x 47
 y 48
 elevation 4809
 end
-arch grass_only
+arch woods
 x 47
 y 49
-type -666
 elevation 2722
-end
-arch woods4
-x 47
-y 49
-type -666
 end
 arch brush
 x 48
@@ -12818,16 +12758,10 @@ x 49
 y 31
 elevation 1014
 end
-arch grass_only
+arch woods
 x 49
 y 32
-type -666
 elevation 1313
-end
-arch woods4
-x 49
-y 32
-type -666
 end
 arch desert
 x 49

@@ -3,7 +3,7 @@ name world_123_110
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_123_109
@@ -7502,16 +7502,10 @@ x 28
 y 22
 elevation 2794
 end
-arch grass_only
+arch woods
 x 28
 y 23
-type -666
 elevation 2633
-end
-arch woods4
-x 28
-y 23
-type -666
 end
 arch brush
 x 28
@@ -7770,16 +7764,10 @@ x 29
 y 23
 elevation 2216
 end
-arch grass_only
+arch woods
 x 29
 y 24
-type -666
 elevation 1521
-end
-arch woods4
-x 29
-y 24
-type -666
 end
 arch grass_only
 x 29
@@ -9188,16 +9176,10 @@ arch tree5
 x 35
 y 5
 end
-arch grass_only
+arch woods
 x 35
 y 6
-type -666
 elevation 1409
-end
-arch woods4
-x 35
-y 6
-type -666
 end
 arch jungle_1
 x 35
@@ -9532,16 +9514,10 @@ arch tree5
 x 36
 y 22
 end
-arch grass_only
+arch woods
 x 36
 y 23
-type -666
 elevation 1637
-end
-arch woods4
-x 36
-y 23
-type -666
 end
 arch hills_rocky
 x 36
@@ -9782,27 +9758,15 @@ x 37
 y 21
 elevation 4421
 end
-arch grass_only
+arch woods
 x 37
 y 22
-type -666
 elevation 2184
 end
-arch woods4
-x 37
-y 22
-type -666
-end
-arch grass_only
+arch woods
 x 37
 y 23
-type -666
 elevation 2401
-end
-arch woods4
-x 37
-y 23
-type -666
 end
 arch hills
 x 37
@@ -11492,16 +11456,10 @@ x 44
 y 12
 elevation 7216
 end
-arch grass_only
+arch woods
 x 44
 y 13
-type -666
 elevation 2719
-end
-arch woods4
-x 44
-y 13
-type -666
 end
 arch mountain
 x 44

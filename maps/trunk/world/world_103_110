@@ -4,7 +4,7 @@ difficulty 1
 width 50
 height 50
 msg
-Modified: 2007-12-27 tchize
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_103_109
@@ -10555,16 +10555,10 @@ x 41
 y 38
 elevation 3390
 end
-arch grass_only
+arch woods
 x 41
 y 39
-type -666
 elevation 2663
-end
-arch woods4
-x 41
-y 39
-type -666
 end
 arch grass_only
 x 41
@@ -10584,16 +10578,10 @@ arch tree5
 x 41
 y 41
 end
-arch grass_only
+arch woods
 x 41
 y 42
-type -666
 elevation 1696
-end
-arch woods4
-x 41
-y 42
-type -666
 end
 arch hills_rocky
 x 41
@@ -10824,16 +10812,10 @@ x 42
 y 38
 elevation 1140
 end
-arch grass_only
+arch woods
 x 42
 y 39
-type -666
 elevation 1993
-end
-arch woods4
-x 42
-y 39
-type -666
 end
 arch woods_3
 x 42
@@ -11079,32 +11061,20 @@ x 43
 y 38
 elevation 1264
 end
-arch grass_only
+arch woods
 x 43
 y 39
-type -666
 elevation 1916
-end
-arch woods4
-x 43
-y 39
-type -666
 end
 arch jungle_1
 x 43
 y 40
 elevation 2011
 end
-arch grass_only
+arch woods
 x 43
 y 41
-type -666
 elevation 1868
-end
-arch woods4
-x 43
-y 41
-type -666
 end
 arch hills_rocky
 x 43
@@ -11325,16 +11295,10 @@ x 44
 y 35
 elevation 4316
 end
-arch grass_only
+arch woods
 x 44
 y 36
-type -666
 elevation 2333
-end
-arch woods4
-x 44
-y 36
-type -666
 end
 arch cobblestones
 x 44
