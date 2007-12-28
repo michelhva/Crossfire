@@ -1,0 +1,34 @@
+==============================================================================
+ChangeLog
+==============================================================================
+
+The ChangeLog file has been built with svn2cl 0.7 and 0.9 as obtained fromm
+http://ch.tudelft.nl/~arthur/svn2cl/downloads.html.  Do not use version 0.6
+or older as it appears to generate incompatible ChangeLog formats.
+
+These instructions presume an installation of the tarball similar to this.
+The actual paths may be different for each developer, but these are used for
+sake of example.  There is no requirement to use the example paths.
+
+  $ cd ~
+  $ tar -xzf svn2cl-0.9.tar.gz
+
+To update the ChangeLog, a command sequence like this is generally possible
+with one caveat.  Do not check in the results without checking the the changes
+with svn diff to avoid throwing away someone's comments that are more verbose
+than the svn commit comment.
+
+  $ cd /home/data/svn/crossfire/maps/trunk
+  $ ~/svn2cl-0.9/svn2cl.sh
+
+The following may be safer, but also may not entirely regenerate missing
+entries if manual edits have been made.  Again, never check in updates without
+checking differences and merging any manual edits developers may have made.
+
+  $ cd /home/data/svn/crossfire/maps/trunk
+  $ ~/svn2cl-0.9/svn2cl.sh --output=ChangeLog.New
+  $ diff -u ChangeLog ChangeLog.New >ChangeLog.patch
+
+Verify the ChangeLog.patch file and remove any patch hunks that would remove
+information prior to patching up the ChangeLog file for commit.
+
