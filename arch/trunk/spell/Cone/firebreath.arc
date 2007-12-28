@@ -10,6 +10,7 @@ fireball.111
 fireball.112
 fireball.113
 mina
+smoothlevel 200
 speed 1
 wc -30
 move_type fly_low
