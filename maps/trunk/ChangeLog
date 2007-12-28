@@ -1,60 +1,1133 @@
-2007-12-24  tchize
-lots of world file
-Split of combo tiles (eg tree+grass) to separate tiles (1 tree above 1 grass)
+2007-12-27 22:35  tchize
 
+	* world/world_100_107, world/world_100_109, world/world_100_110,
+	  world/world_100_111, world/world_100_112, world/world_100_113,
+	  world/world_100_119, world/world_100_125, world/world_100_126,
+	  world/world_101_104, world/world_101_106, world/world_101_107,
+	  world/world_101_108, world/world_101_109, world/world_101_110,
+	  world/world_101_111, world/world_101_112, world/world_101_113,
+	  world/world_101_114, world/world_101_116, world/world_101_117,
+	  world/world_101_118, world/world_101_119, world/world_101_120,
+	  world/world_101_123, world/world_101_125, world/world_102_102,
+	  world/world_102_103, world/world_102_104, world/world_102_105,
+	  world/world_102_106, world/world_102_107, world/world_102_108,
+	  world/world_102_109, world/world_102_110, world/world_102_111,
+	  world/world_102_112, world/world_102_113, world/world_102_114,
+	  world/world_102_116, world/world_102_117, world/world_102_118,
+	  world/world_102_119, world/world_102_120, world/world_102_123,
+	  world/world_102_124, world/world_102_125, world/world_102_126,
+	  world/world_102_129, world/world_103_102, world/world_103_103,
+	  world/world_103_104, world/world_103_105, world/world_103_106,
+	  world/world_103_107, world/world_103_108, world/world_103_109,
+	  world/world_103_110, world/world_103_112, world/world_103_113,
+	  world/world_103_114, world/world_103_115, world/world_103_116,
+	  world/world_103_117, world/world_103_118, world/world_103_119,
+	  world/world_103_120, world/world_103_121, world/world_103_122,
+	  world/world_103_123, world/world_103_124, world/world_103_125,
+	  world/world_103_126, world/world_103_128, world/world_103_129,
+	  world/world_104_101, world/world_104_102, world/world_104_103,
+	  world/world_104_104, world/world_104_105, world/world_104_107,
+	  world/world_104_108, world/world_104_109, world/world_104_110,
+	  world/world_104_113, world/world_104_114, world/world_104_115,
+	  world/world_104_116, world/world_104_117, world/world_104_118,
+	  world/world_104_119, world/world_104_120, world/world_104_121,
+	  world/world_104_122, world/world_104_123, world/world_104_124,
+	  world/world_104_125, world/world_104_126, world/world_104_127,
+	  world/world_104_128, world/world_104_129, world/world_105_100,
+	  world/world_105_101, world/world_105_102, world/world_105_103,
+	  world/world_105_104, world/world_105_105, world/world_105_106,
+	  world/world_105_107, world/world_105_108, world/world_105_109,
+	  world/world_105_111, world/world_105_112, world/world_105_113,
+	  world/world_105_114, world/world_105_115, world/world_105_116,
+	  world/world_105_119, world/world_105_121, world/world_105_122,
+	  world/world_105_123, world/world_105_124, world/world_105_125,
+	  world/world_105_126, world/world_105_128, world/world_106_100,
+	  world/world_106_101, world/world_106_102, world/world_106_103,
+	  world/world_106_104, world/world_106_105, world/world_106_106,
+	  world/world_106_107, world/world_106_108, world/world_106_109,
+	  world/world_106_110, world/world_106_111, world/world_106_112,
+	  world/world_106_113, world/world_106_114, world/world_106_115,
+	  world/world_106_116, world/world_106_118, world/world_106_119,
+	  world/world_106_120, world/world_106_123, world/world_106_124,
+	  world/world_106_125, world/world_106_126, world/world_106_127,
+	  world/world_107_101, world/world_107_102, world/world_107_103,
+	  world/world_107_104, world/world_107_106, world/world_107_107,
+	  world/world_107_108, world/world_107_109, world/world_107_110,
+	  world/world_107_111, world/world_107_112, world/world_107_113,
+	  world/world_107_114, world/world_107_115, world/world_107_116,
+	  world/world_107_117, world/world_107_118, world/world_107_119,
+	  world/world_107_120, world/world_107_121, world/world_107_123,
+	  world/world_107_124, world/world_107_125, world/world_107_126,
+	  world/world_107_127, world/world_107_128, world/world_108_103,
+	  world/world_108_107, world/world_108_108, world/world_108_109,
+	  world/world_108_112, world/world_108_113, world/world_108_114,
+	  world/world_108_115, world/world_108_116, world/world_108_117,
+	  world/world_108_118, world/world_108_119, world/world_108_120,
+	  world/world_108_121, world/world_108_122, world/world_108_123,
+	  world/world_108_124, world/world_108_125, world/world_108_126,
+	  world/world_108_127, world/world_109_104, world/world_109_105,
+	  world/world_109_106, world/world_109_107, world/world_109_108,
+	  world/world_109_109, world/world_109_112, world/world_109_113,
+	  world/world_109_114, world/world_109_116, world/world_109_117,
+	  world/world_109_118, world/world_109_119, world/world_109_120,
+	  world/world_109_121, world/world_109_122, world/world_109_123,
+	  world/world_109_124, world/world_109_125, world/world_109_126,
+	  world/world_109_127, world/world_109_128, world/world_110_103,
+	  world/world_110_104, world/world_110_105, world/world_110_106,
+	  world/world_110_107, world/world_110_108, world/world_110_110,
+	  world/world_110_114, world/world_110_115, world/world_110_116,
+	  world/world_110_118, world/world_110_119, world/world_110_120,
+	  world/world_110_121, world/world_110_122, world/world_110_123,
+	  world/world_110_124, world/world_110_125, world/world_110_126,
+	  world/world_110_127, world/world_110_128, world/world_111_100,
+	  world/world_111_102, world/world_111_103, world/world_111_104,
+	  world/world_111_105, world/world_111_106, world/world_111_107,
+	  world/world_111_108, world/world_111_109, world/world_111_110,
+	  world/world_111_111, world/world_111_112, world/world_111_114,
+	  world/world_111_115, world/world_111_116, world/world_111_118,
+	  world/world_111_119, world/world_111_120, world/world_111_121,
+	  world/world_111_123, world/world_111_124, world/world_111_125,
+	  world/world_111_126, world/world_111_127, world/world_111_128,
+	  world/world_111_129, world/world_112_100, world/world_112_102,
+	  world/world_112_103, world/world_112_104, world/world_112_105,
+	  world/world_112_106, world/world_112_107, world/world_112_108,
+	  world/world_112_109, world/world_112_110, world/world_112_115,
+	  world/world_112_116, world/world_112_117, world/world_112_118,
+	  world/world_112_119, world/world_112_120, world/world_112_121,
+	  world/world_112_122, world/world_112_123, world/world_112_124,
+	  world/world_112_125, world/world_112_126, world/world_112_127,
+	  world/world_112_128, world/world_112_129, world/world_113_101,
+	  world/world_113_103, world/world_113_104, world/world_113_105,
+	  world/world_113_106, world/world_113_107, world/world_113_108,
+	  world/world_113_109, world/world_113_110, world/world_113_117,
+	  world/world_113_118, world/world_113_119, world/world_113_120,
+	  world/world_113_121, world/world_113_122, world/world_113_123,
+	  world/world_113_124, world/world_113_125, world/world_113_126,
+	  world/world_113_127, world/world_113_128, world/world_114_101,
+	  world/world_114_102, world/world_114_103, world/world_114_104,
+	  world/world_114_105, world/world_114_106, world/world_114_107,
+	  world/world_114_108, world/world_114_109, world/world_114_112,
+	  world/world_114_113, world/world_114_114, world/world_114_115,
+	  world/world_114_116, world/world_114_117, world/world_114_118,
+	  world/world_114_119, world/world_114_120, world/world_114_121,
+	  world/world_114_122, world/world_114_123, world/world_114_124,
+	  world/world_114_125, world/world_114_126, world/world_114_127,
+	  world/world_114_128, world/world_114_129, world/world_115_100,
+	  world/world_115_101, world/world_115_102, world/world_115_103,
+	  world/world_115_104, world/world_115_105, world/world_115_106,
+	  world/world_115_107, world/world_115_110, world/world_115_111,
+	  world/world_115_112, world/world_115_113, world/world_115_114,
+	  world/world_115_115, world/world_115_116, world/world_115_117,
+	  world/world_115_119, world/world_115_120, world/world_115_121,
+	  world/world_115_124, world/world_115_125, world/world_115_127,
+	  world/world_115_128, world/world_116_101, world/world_116_102,
+	  world/world_116_103, world/world_116_104, world/world_116_105,
+	  world/world_116_108, world/world_116_109, world/world_116_110,
+	  world/world_116_111, world/world_116_112, world/world_116_113,
+	  world/world_116_114, world/world_116_115, world/world_116_116,
+	  world/world_116_117, world/world_116_118, world/world_116_119,
+	  world/world_116_120, world/world_116_121, world/world_116_122,
+	  world/world_116_123, world/world_116_124, world/world_116_125,
+	  world/world_116_126, world/world_117_101, world/world_117_104,
+	  world/world_117_105, world/world_117_106, world/world_117_113,
+	  world/world_117_114, world/world_117_115, world/world_117_116,
+	  world/world_117_117, world/world_117_118, world/world_117_119,
+	  world/world_117_120, world/world_117_121, world/world_117_122,
+	  world/world_117_123, world/world_117_124, world/world_117_126,
+	  world/world_118_101, world/world_118_103, world/world_118_104,
+	  world/world_118_105, world/world_118_106, world/world_118_107,
+	  world/world_118_109, world/world_118_110, world/world_118_112,
+	  world/world_118_113, world/world_118_117, world/world_118_118,
+	  world/world_118_119, world/world_118_120, world/world_118_121,
+	  world/world_118_122, world/world_118_123, world/world_118_124,
+	  world/world_118_125, world/world_118_126, world/world_118_127,
+	  world/world_118_128, world/world_119_100, world/world_119_101,
+	  world/world_119_102, world/world_119_103, world/world_119_104,
+	  world/world_119_105, world/world_119_106, world/world_119_107,
+	  world/world_119_108, world/world_119_109, world/world_119_110,
+	  world/world_119_112, world/world_119_113, world/world_119_114,
+	  world/world_119_115, world/world_119_117, world/world_119_118,
+	  world/world_119_119, world/world_119_120, world/world_119_121,
+	  world/world_119_122, world/world_119_123, world/world_119_124,
+	  world/world_119_125, world/world_119_127, world/world_119_128,
+	  world/world_120_101, world/world_120_102, world/world_120_103,
+	  world/world_120_104, world/world_120_105, world/world_120_106,
+	  world/world_120_107, world/world_120_108, world/world_120_109,
+	  world/world_120_110, world/world_120_111, world/world_120_113,
+	  world/world_120_114, world/world_120_115, world/world_120_116,
+	  world/world_120_117, world/world_120_119, world/world_120_120,
+	  world/world_120_121, world/world_120_122, world/world_120_123,
+	  world/world_120_124, world/world_120_125, world/world_120_126,
+	  world/world_121_101, world/world_121_102, world/world_121_103,
+	  world/world_121_104, world/world_121_105, world/world_121_106,
+	  world/world_121_107, world/world_121_108, world/world_121_109,
+	  world/world_121_110, world/world_121_111, world/world_121_112,
+	  world/world_121_113, world/world_121_114, world/world_121_115,
+	  world/world_121_116, world/world_121_118, world/world_121_119,
+	  world/world_121_122, world/world_121_123, world/world_121_124,
+	  world/world_121_125, world/world_121_127, world/world_122_101,
+	  world/world_122_102, world/world_122_104, world/world_122_105,
+	  world/world_122_106, world/world_122_107, world/world_122_108,
+	  world/world_122_109, world/world_122_111, world/world_122_112,
+	  world/world_122_113, world/world_122_114, world/world_122_117,
+	  world/world_122_118, world/world_122_119, world/world_122_120,
+	  world/world_122_121, world/world_122_122, world/world_122_123,
+	  world/world_122_124, world/world_122_125, world/world_122_126,
+	  world/world_122_127, world/world_122_128, world/world_123_100,
+	  world/world_123_101, world/world_123_102, world/world_123_103,
+	  world/world_123_104, world/world_123_105, world/world_123_106,
+	  world/world_123_107, world/world_123_108, world/world_123_109,
+	  world/world_123_110, world/world_123_111, world/world_123_112,
+	  world/world_123_113, world/world_123_114, world/world_123_117,
+	  world/world_123_118, world/world_123_120, world/world_123_121,
+	  world/world_123_122, world/world_123_123, world/world_123_124,
+	  world/world_123_125, world/world_123_126, world/world_124_100,
+	  world/world_124_101, world/world_124_102, world/world_124_103,
+	  world/world_124_104, world/world_124_105, world/world_124_106,
+	  world/world_124_107, world/world_124_108, world/world_124_109,
+	  world/world_124_110, world/world_124_111, world/world_124_112,
+	  world/world_124_113, world/world_124_114, world/world_124_115,
+	  world/world_124_117, world/world_124_118, world/world_124_120,
+	  world/world_124_121, world/world_124_122, world/world_124_123,
+	  world/world_124_124, world/world_124_125, world/world_124_126,
+	  world/world_125_100, world/world_125_101, world/world_125_102,
+	  world/world_125_103, world/world_125_104, world/world_125_105,
+	  world/world_125_106, world/world_125_107, world/world_125_109,
+	  world/world_125_110, world/world_125_111, world/world_125_112,
+	  world/world_125_113, world/world_125_114, world/world_125_115,
+	  world/world_125_116, world/world_125_118, world/world_125_119,
+	  world/world_125_120, world/world_125_122, world/world_125_123,
+	  world/world_125_124, world/world_125_125, world/world_126_101,
+	  world/world_126_102, world/world_126_103, world/world_126_104,
+	  world/world_126_105, world/world_126_106, world/world_126_107,
+	  world/world_126_108, world/world_126_109, world/world_126_110,
+	  world/world_126_111, world/world_126_112, world/world_126_113,
+	  world/world_126_115, world/world_126_116, world/world_126_119,
+	  world/world_126_120, world/world_126_121, world/world_126_122,
+	  world/world_126_123, world/world_126_124, world/world_126_125,
+	  world/world_127_100, world/world_127_104, world/world_127_105,
+	  world/world_127_106, world/world_127_107, world/world_127_108,
+	  world/world_127_109, world/world_127_110, world/world_127_112,
+	  world/world_127_113, world/world_127_114, world/world_127_115,
+	  world/world_127_116, world/world_127_117, world/world_127_120,
+	  world/world_127_121, world/world_128_100, world/world_128_107,
+	  world/world_128_108, world/world_128_109, world/world_128_112,
+	  world/world_128_113, world/world_128_114, world/world_128_116,
+	  world/world_128_117, world/world_128_120, world/world_128_121,
+	  world/world_128_124, world/world_129_108, world/world_129_109,
+	  world/world_129_113, world/world_129_114, world/world_129_117,
+	  world/world_129_122: undo woods convertion commit of 2 hours ago
 
-2007-12-23 tchize
-editor/scripts/WorldMaker
-Update script so it now handles big image file with less disk copy. 
-Replace pnmpaste of world file (which output result in a copy) with a custom in file replacement (no copy, no need to reread full file on each iteration).
-1G world file are now feasible with reasonable run time.
+2007-12-27 19:21  tchize
 
+	* world/world_100_107, world/world_100_109, world/world_100_110,
+	  world/world_100_111, world/world_100_112, world/world_100_113,
+	  world/world_100_119, world/world_100_125, world/world_100_126,
+	  world/world_101_104, world/world_101_106, world/world_101_107,
+	  world/world_101_108, world/world_101_109, world/world_101_110,
+	  world/world_101_111, world/world_101_112, world/world_101_113,
+	  world/world_101_114, world/world_101_116, world/world_101_117,
+	  world/world_101_118, world/world_101_119, world/world_101_120,
+	  world/world_101_123, world/world_101_125, world/world_102_102,
+	  world/world_102_103, world/world_102_104, world/world_102_105,
+	  world/world_102_106, world/world_102_107, world/world_102_108,
+	  world/world_102_109, world/world_102_110, world/world_102_111,
+	  world/world_102_112, world/world_102_113, world/world_102_114,
+	  world/world_102_116, world/world_102_117, world/world_102_118,
+	  world/world_102_119, world/world_102_120, world/world_102_123,
+	  world/world_102_124, world/world_102_125, world/world_102_126,
+	  world/world_102_129, world/world_103_102, world/world_103_103,
+	  world/world_103_104, world/world_103_105, world/world_103_106,
+	  world/world_103_107, world/world_103_108, world/world_103_109,
+	  world/world_103_110, world/world_103_112, world/world_103_113,
+	  world/world_103_114, world/world_103_115, world/world_103_116,
+	  world/world_103_117, world/world_103_118, world/world_103_119,
+	  world/world_103_120, world/world_103_121, world/world_103_122,
+	  world/world_103_123, world/world_103_124, world/world_103_125,
+	  world/world_103_126, world/world_103_128, world/world_103_129,
+	  world/world_104_101, world/world_104_102, world/world_104_103,
+	  world/world_104_104, world/world_104_105, world/world_104_107,
+	  world/world_104_108, world/world_104_109, world/world_104_110,
+	  world/world_104_113, world/world_104_114, world/world_104_115,
+	  world/world_104_116, world/world_104_117, world/world_104_118,
+	  world/world_104_119, world/world_104_120, world/world_104_121,
+	  world/world_104_122, world/world_104_123, world/world_104_124,
+	  world/world_104_125, world/world_104_126, world/world_104_127,
+	  world/world_104_128, world/world_104_129, world/world_105_100,
+	  world/world_105_101, world/world_105_102, world/world_105_103,
+	  world/world_105_104, world/world_105_105, world/world_105_106,
+	  world/world_105_107, world/world_105_108, world/world_105_109,
+	  world/world_105_111, world/world_105_112, world/world_105_113,
+	  world/world_105_114, world/world_105_115, world/world_105_116,
+	  world/world_105_119, world/world_105_121, world/world_105_122,
+	  world/world_105_123, world/world_105_124, world/world_105_125,
+	  world/world_105_126, world/world_105_128, world/world_106_100,
+	  world/world_106_101, world/world_106_102, world/world_106_103,
+	  world/world_106_104, world/world_106_105, world/world_106_106,
+	  world/world_106_107, world/world_106_108, world/world_106_109,
+	  world/world_106_110, world/world_106_111, world/world_106_112,
+	  world/world_106_113, world/world_106_114, world/world_106_115,
+	  world/world_106_116, world/world_106_118, world/world_106_119,
+	  world/world_106_120, world/world_106_123, world/world_106_124,
+	  world/world_106_125, world/world_106_126, world/world_106_127,
+	  world/world_107_101, world/world_107_102, world/world_107_103,
+	  world/world_107_104, world/world_107_106, world/world_107_107,
+	  world/world_107_108, world/world_107_109, world/world_107_110,
+	  world/world_107_111, world/world_107_112, world/world_107_113,
+	  world/world_107_114, world/world_107_115, world/world_107_116,
+	  world/world_107_117, world/world_107_118, world/world_107_119,
+	  world/world_107_120, world/world_107_121, world/world_107_123,
+	  world/world_107_124, world/world_107_125, world/world_107_126,
+	  world/world_107_127, world/world_107_128, world/world_108_103,
+	  world/world_108_107, world/world_108_108, world/world_108_109,
+	  world/world_108_112, world/world_108_113, world/world_108_114,
+	  world/world_108_115, world/world_108_116, world/world_108_117,
+	  world/world_108_118, world/world_108_119, world/world_108_120,
+	  world/world_108_121, world/world_108_122, world/world_108_123,
+	  world/world_108_124, world/world_108_125, world/world_108_126,
+	  world/world_108_127, world/world_109_104, world/world_109_105,
+	  world/world_109_106, world/world_109_107, world/world_109_108,
+	  world/world_109_109, world/world_109_112, world/world_109_113,
+	  world/world_109_114, world/world_109_116, world/world_109_117,
+	  world/world_109_118, world/world_109_119, world/world_109_120,
+	  world/world_109_121, world/world_109_122, world/world_109_123,
+	  world/world_109_124, world/world_109_125, world/world_109_126,
+	  world/world_109_127, world/world_109_128, world/world_110_103,
+	  world/world_110_104, world/world_110_105, world/world_110_106,
+	  world/world_110_107, world/world_110_108, world/world_110_110,
+	  world/world_110_114, world/world_110_115, world/world_110_116,
+	  world/world_110_118, world/world_110_119, world/world_110_120,
+	  world/world_110_121, world/world_110_122, world/world_110_123,
+	  world/world_110_124, world/world_110_125, world/world_110_126,
+	  world/world_110_127, world/world_110_128, world/world_111_100,
+	  world/world_111_102, world/world_111_103, world/world_111_104,
+	  world/world_111_105, world/world_111_106, world/world_111_107,
+	  world/world_111_108, world/world_111_109, world/world_111_110,
+	  world/world_111_111, world/world_111_112, world/world_111_114,
+	  world/world_111_115, world/world_111_116, world/world_111_118,
+	  world/world_111_119, world/world_111_120, world/world_111_121,
+	  world/world_111_123, world/world_111_124, world/world_111_125,
+	  world/world_111_126, world/world_111_127, world/world_111_128,
+	  world/world_111_129, world/world_112_100, world/world_112_102,
+	  world/world_112_103, world/world_112_104, world/world_112_105,
+	  world/world_112_106, world/world_112_107, world/world_112_108,
+	  world/world_112_109, world/world_112_110, world/world_112_115,
+	  world/world_112_116, world/world_112_117, world/world_112_118,
+	  world/world_112_119, world/world_112_120, world/world_112_121,
+	  world/world_112_122, world/world_112_123, world/world_112_124,
+	  world/world_112_125, world/world_112_126, world/world_112_127,
+	  world/world_112_128, world/world_112_129, world/world_113_101,
+	  world/world_113_103, world/world_113_104, world/world_113_105,
+	  world/world_113_106, world/world_113_107, world/world_113_108,
+	  world/world_113_109, world/world_113_110, world/world_113_117,
+	  world/world_113_118, world/world_113_119, world/world_113_120,
+	  world/world_113_121, world/world_113_122, world/world_113_123,
+	  world/world_113_124, world/world_113_125, world/world_113_126,
+	  world/world_113_127, world/world_113_128, world/world_114_101,
+	  world/world_114_102, world/world_114_103, world/world_114_104,
+	  world/world_114_105, world/world_114_106, world/world_114_107,
+	  world/world_114_108, world/world_114_109, world/world_114_112,
+	  world/world_114_113, world/world_114_114, world/world_114_115,
+	  world/world_114_116, world/world_114_117, world/world_114_118,
+	  world/world_114_119, world/world_114_120, world/world_114_121,
+	  world/world_114_122, world/world_114_123, world/world_114_124,
+	  world/world_114_125, world/world_114_126, world/world_114_127,
+	  world/world_114_128, world/world_114_129, world/world_115_100,
+	  world/world_115_101, world/world_115_102, world/world_115_103,
+	  world/world_115_104, world/world_115_105, world/world_115_106,
+	  world/world_115_107, world/world_115_110, world/world_115_111,
+	  world/world_115_112, world/world_115_113, world/world_115_114,
+	  world/world_115_115, world/world_115_116, world/world_115_117,
+	  world/world_115_119, world/world_115_120, world/world_115_121,
+	  world/world_115_124, world/world_115_125, world/world_115_127,
+	  world/world_115_128, world/world_116_101, world/world_116_102,
+	  world/world_116_103, world/world_116_104, world/world_116_105,
+	  world/world_116_108, world/world_116_109, world/world_116_110,
+	  world/world_116_111, world/world_116_112, world/world_116_113,
+	  world/world_116_114, world/world_116_115, world/world_116_116,
+	  world/world_116_117, world/world_116_118, world/world_116_119,
+	  world/world_116_120, world/world_116_121, world/world_116_122,
+	  world/world_116_123, world/world_116_124, world/world_116_125,
+	  world/world_116_126, world/world_117_101, world/world_117_104,
+	  world/world_117_105, world/world_117_106, world/world_117_113,
+	  world/world_117_114, world/world_117_115, world/world_117_116,
+	  world/world_117_117, world/world_117_118, world/world_117_119,
+	  world/world_117_120, world/world_117_121, world/world_117_122,
+	  world/world_117_123, world/world_117_124, world/world_117_126,
+	  world/world_118_101, world/world_118_103, world/world_118_104,
+	  world/world_118_105, world/world_118_106, world/world_118_107,
+	  world/world_118_109, world/world_118_110, world/world_118_112,
+	  world/world_118_113, world/world_118_117, world/world_118_118,
+	  world/world_118_119, world/world_118_120, world/world_118_121,
+	  world/world_118_122, world/world_118_123, world/world_118_124,
+	  world/world_118_125, world/world_118_126, world/world_118_127,
+	  world/world_118_128, world/world_119_100, world/world_119_101,
+	  world/world_119_102, world/world_119_103, world/world_119_104,
+	  world/world_119_105, world/world_119_106, world/world_119_107,
+	  world/world_119_108, world/world_119_109, world/world_119_110,
+	  world/world_119_112, world/world_119_113, world/world_119_114,
+	  world/world_119_115, world/world_119_117, world/world_119_118,
+	  world/world_119_119, world/world_119_120, world/world_119_121,
+	  world/world_119_122, world/world_119_123, world/world_119_124,
+	  world/world_119_125, world/world_119_127, world/world_119_128,
+	  world/world_120_101, world/world_120_102, world/world_120_103,
+	  world/world_120_104, world/world_120_105, world/world_120_106,
+	  world/world_120_107, world/world_120_108, world/world_120_109,
+	  world/world_120_110, world/world_120_111, world/world_120_113,
+	  world/world_120_114, world/world_120_115, world/world_120_116,
+	  world/world_120_117, world/world_120_119, world/world_120_120,
+	  world/world_120_121, world/world_120_122, world/world_120_123,
+	  world/world_120_124, world/world_120_125, world/world_120_126,
+	  world/world_121_101, world/world_121_102, world/world_121_103,
+	  world/world_121_104, world/world_121_105, world/world_121_106,
+	  world/world_121_107, world/world_121_108, world/world_121_109,
+	  world/world_121_110, world/world_121_111, world/world_121_112,
+	  world/world_121_113, world/world_121_114, world/world_121_115,
+	  world/world_121_116, world/world_121_118, world/world_121_119,
+	  world/world_121_122, world/world_121_123, world/world_121_124,
+	  world/world_121_125, world/world_121_127, world/world_122_101,
+	  world/world_122_102, world/world_122_104, world/world_122_105,
+	  world/world_122_106, world/world_122_107, world/world_122_108,
+	  world/world_122_109, world/world_122_111, world/world_122_112,
+	  world/world_122_113, world/world_122_114, world/world_122_117,
+	  world/world_122_118, world/world_122_119, world/world_122_120,
+	  world/world_122_121, world/world_122_122, world/world_122_123,
+	  world/world_122_124, world/world_122_125, world/world_122_126,
+	  world/world_122_127, world/world_122_128, world/world_123_100,
+	  world/world_123_101, world/world_123_102, world/world_123_103,
+	  world/world_123_104, world/world_123_105, world/world_123_106,
+	  world/world_123_107, world/world_123_108, world/world_123_109,
+	  world/world_123_110, world/world_123_111, world/world_123_112,
+	  world/world_123_113, world/world_123_114, world/world_123_117,
+	  world/world_123_118, world/world_123_120, world/world_123_121,
+	  world/world_123_122, world/world_123_123, world/world_123_124,
+	  world/world_123_125, world/world_123_126, world/world_124_100,
+	  world/world_124_101, world/world_124_102, world/world_124_103,
+	  world/world_124_104, world/world_124_105, world/world_124_106,
+	  world/world_124_107, world/world_124_108, world/world_124_109,
+	  world/world_124_110, world/world_124_111, world/world_124_112,
+	  world/world_124_113, world/world_124_114, world/world_124_115,
+	  world/world_124_117, world/world_124_118, world/world_124_120,
+	  world/world_124_121, world/world_124_122, world/world_124_123,
+	  world/world_124_124, world/world_124_125, world/world_124_126,
+	  world/world_125_100, world/world_125_101, world/world_125_102,
+	  world/world_125_103, world/world_125_104, world/world_125_105,
+	  world/world_125_106, world/world_125_107, world/world_125_109,
+	  world/world_125_110, world/world_125_111, world/world_125_112,
+	  world/world_125_113, world/world_125_114, world/world_125_115,
+	  world/world_125_116, world/world_125_118, world/world_125_119,
+	  world/world_125_120, world/world_125_122, world/world_125_123,
+	  world/world_125_124, world/world_125_125, world/world_126_101,
+	  world/world_126_102, world/world_126_103, world/world_126_104,
+	  world/world_126_105, world/world_126_106, world/world_126_107,
+	  world/world_126_108, world/world_126_109, world/world_126_110,
+	  world/world_126_111, world/world_126_112, world/world_126_113,
+	  world/world_126_115, world/world_126_116, world/world_126_119,
+	  world/world_126_120, world/world_126_121, world/world_126_122,
+	  world/world_126_123, world/world_126_124, world/world_126_125,
+	  world/world_127_100, world/world_127_104, world/world_127_105,
+	  world/world_127_106, world/world_127_107, world/world_127_108,
+	  world/world_127_109, world/world_127_110, world/world_127_112,
+	  world/world_127_113, world/world_127_114, world/world_127_115,
+	  world/world_127_116, world/world_127_117, world/world_127_120,
+	  world/world_127_121, world/world_128_100, world/world_128_107,
+	  world/world_128_108, world/world_128_109, world/world_128_112,
+	  world/world_128_113, world/world_128_114, world/world_128_116,
+	  world/world_128_117, world/world_128_120, world/world_128_121,
+	  world/world_128_124, world/world_129_108, world/world_129_109,
+	  world/world_129_113, world/world_129_114, world/world_129_117,
+	  world/world_129_122: Convert woods to grass_only + woods 5
 
-2007-12-23 Yann (gros) Chachkoff
-A    python/maps/scorn
-A    python/maps/scorn/towers
-A    python/maps/scorn/towers/mad_mage
-A    python/maps/scorn/towers/mad_mage/mad_mage_user.py
-A    python/maps/scorn/towers/mad_mage/brewery_letter
-A    python/commands
-A    python/commands/give.py
-A    python/events/init/give_command.py
-Add support for the "give" command, that allows a player to show an item to an NPC.
-Useful when coupled with scripts to write "bring me back something" quests.
-Add support for the "give" command to the Mad Mage, with a generic "show me and
-I'll talk" kind of system.
+2007-12-26 23:15  ryo_saeba
 
-2007-12-22 tchize
-scorn/misc/cityhall
-Cityhall is now closed at night :) Petition board and bonus amulet stay accessible.
+	* templates/guild/mainfloor: Fix message.
 
-2007-12-22 tchize
-A    python/misc/doNothing.py
-M    python/misc/npc_dialog.py
-A    scorn/kar/gork.msg
-M    scorn/kar/gorks3
-M    scorn/kar/somehouse3
-A    scorn/kar/mork.msg
-Make the gork's treasure quest use python for npc dialog. It's now mandatory to go throught full dialog to get the treasure key, knowing password is not enough
+2007-12-26 23:12  ryo_saeba
 
-2007-12-22 tchize
-Add some dialog entries to sigmund, add a password to access scorn (forces newbies in training). No way back to newbie house aftre quitting it, forced into scorn.
+	* templates/guild/mainfloor: Fix wrong coin for buying.
 
-    start/newbieshouse
-    start/Nexus
-    start/sigmund.msg
+2007-12-24 19:50  tchize
 
+	* ChangeLog, world/world_100_107, world/world_100_108,
+	  world/world_100_109, world/world_100_110, world/world_100_111,
+	  world/world_100_112, world/world_100_113, world/world_100_114,
+	  world/world_100_115, world/world_100_116, world/world_100_119,
+	  world/world_100_124, world/world_100_125, world/world_100_126,
+	  world/world_101_104, world/world_101_105, world/world_101_106,
+	  world/world_101_107, world/world_101_108, world/world_101_109,
+	  world/world_101_110, world/world_101_111, world/world_101_112,
+	  world/world_101_113, world/world_101_114, world/world_101_115,
+	  world/world_101_116, world/world_101_117, world/world_101_118,
+	  world/world_101_119, world/world_101_120, world/world_101_121,
+	  world/world_101_124, world/world_101_125, world/world_101_126,
+	  world/world_102_101, world/world_102_102, world/world_102_103,
+	  world/world_102_104, world/world_102_105, world/world_102_106,
+	  world/world_102_107, world/world_102_108, world/world_102_109,
+	  world/world_102_110, world/world_102_111, world/world_102_112,
+	  world/world_102_113, world/world_102_114, world/world_102_115,
+	  world/world_102_116, world/world_102_117, world/world_102_118,
+	  world/world_102_119, world/world_102_120, world/world_102_121,
+	  world/world_102_122, world/world_102_123, world/world_102_124,
+	  world/world_102_125, world/world_102_126, world/world_102_127,
+	  world/world_102_128, world/world_102_129, world/world_103_101,
+	  world/world_103_102, world/world_103_103, world/world_103_104,
+	  world/world_103_105, world/world_103_106, world/world_103_107,
+	  world/world_103_108, world/world_103_109, world/world_103_110,
+	  world/world_103_111, world/world_103_112, world/world_103_113,
+	  world/world_103_114, world/world_103_115, world/world_103_116,
+	  world/world_103_117, world/world_103_118, world/world_103_119,
+	  world/world_103_120, world/world_103_121, world/world_103_122,
+	  world/world_103_123, world/world_103_124, world/world_103_125,
+	  world/world_103_126, world/world_103_127, world/world_103_128,
+	  world/world_103_129, world/world_104_101, world/world_104_102,
+	  world/world_104_103, world/world_104_104, world/world_104_105,
+	  world/world_104_106, world/world_104_107, world/world_104_109,
+	  world/world_104_110, world/world_104_111, world/world_104_112,
+	  world/world_104_113, world/world_104_114, world/world_104_115,
+	  world/world_104_116, world/world_104_117, world/world_104_118,
+	  world/world_104_119, world/world_104_120, world/world_104_121,
+	  world/world_104_122, world/world_104_123, world/world_104_124,
+	  world/world_104_125, world/world_104_126, world/world_104_127,
+	  world/world_104_128, world/world_104_129, world/world_105_100,
+	  world/world_105_101, world/world_105_102, world/world_105_103,
+	  world/world_105_104, world/world_105_105, world/world_105_106,
+	  world/world_105_107, world/world_105_108, world/world_105_109,
+	  world/world_105_110, world/world_105_111, world/world_105_112,
+	  world/world_105_113, world/world_105_114, world/world_105_115,
+	  world/world_105_116, world/world_105_117, world/world_105_118,
+	  world/world_105_119, world/world_105_120, world/world_105_121,
+	  world/world_105_122, world/world_105_123, world/world_105_124,
+	  world/world_105_125, world/world_105_126, world/world_105_127,
+	  world/world_105_128, world/world_105_129, world/world_106_101,
+	  world/world_106_102, world/world_106_103, world/world_106_104,
+	  world/world_106_105, world/world_106_106, world/world_106_107,
+	  world/world_106_108, world/world_106_109, world/world_106_110,
+	  world/world_106_111, world/world_106_112, world/world_106_113,
+	  world/world_106_114, world/world_106_115, world/world_106_116,
+	  world/world_106_117, world/world_106_118, world/world_106_119,
+	  world/world_106_120, world/world_106_121, world/world_106_122,
+	  world/world_106_123, world/world_106_124, world/world_106_125,
+	  world/world_106_126, world/world_106_127, world/world_106_128,
+	  world/world_107_101, world/world_107_102, world/world_107_103,
+	  world/world_107_104, world/world_107_105, world/world_107_106,
+	  world/world_107_107, world/world_107_108, world/world_107_109,
+	  world/world_107_110, world/world_107_111, world/world_107_112,
+	  world/world_107_113, world/world_107_114, world/world_107_115,
+	  world/world_107_116, world/world_107_117, world/world_107_118,
+	  world/world_107_119, world/world_107_120, world/world_107_121,
+	  world/world_107_122, world/world_107_123, world/world_107_124,
+	  world/world_107_125, world/world_107_126, world/world_107_127,
+	  world/world_107_128, world/world_108_102, world/world_108_103,
+	  world/world_108_104, world/world_108_105, world/world_108_106,
+	  world/world_108_107, world/world_108_108, world/world_108_109,
+	  world/world_108_110, world/world_108_111, world/world_108_112,
+	  world/world_108_113, world/world_108_114, world/world_108_115,
+	  world/world_108_116, world/world_108_117, world/world_108_118,
+	  world/world_108_119, world/world_108_120, world/world_108_121,
+	  world/world_108_122, world/world_108_123, world/world_108_124,
+	  world/world_108_125, world/world_108_126, world/world_108_127,
+	  world/world_109_101, world/world_109_102, world/world_109_103,
+	  world/world_109_104, world/world_109_105, world/world_109_106,
+	  world/world_109_107, world/world_109_108, world/world_109_109,
+	  world/world_109_110, world/world_109_111, world/world_109_112,
+	  world/world_109_113, world/world_109_114, world/world_109_115,
+	  world/world_109_116, world/world_109_117, world/world_109_118,
+	  world/world_109_119, world/world_109_120, world/world_109_121,
+	  world/world_109_122, world/world_109_123, world/world_109_124,
+	  world/world_109_125, world/world_109_126, world/world_109_127,
+	  world/world_109_128, world/world_109_129, world/world_110_100,
+	  world/world_110_101, world/world_110_102, world/world_110_103,
+	  world/world_110_104, world/world_110_105, world/world_110_106,
+	  world/world_110_107, world/world_110_108, world/world_110_109,
+	  world/world_110_110, world/world_110_111, world/world_110_112,
+	  world/world_110_113, world/world_110_114, world/world_110_115,
+	  world/world_110_116, world/world_110_117, world/world_110_118,
+	  world/world_110_119, world/world_110_120, world/world_110_121,
+	  world/world_110_122, world/world_110_123, world/world_110_124,
+	  world/world_110_125, world/world_110_126, world/world_110_127,
+	  world/world_110_128, world/world_110_129, world/world_111_100,
+	  world/world_111_101, world/world_111_102, world/world_111_103,
+	  world/world_111_104, world/world_111_105, world/world_111_106,
+	  world/world_111_107, world/world_111_108, world/world_111_109,
+	  world/world_111_110, world/world_111_111, world/world_111_113,
+	  world/world_111_114, world/world_111_115, world/world_111_116,
+	  world/world_111_117, world/world_111_118, world/world_111_119,
+	  world/world_111_120, world/world_111_121, world/world_111_122,
+	  world/world_111_123, world/world_111_124, world/world_111_125,
+	  world/world_111_126, world/world_111_127, world/world_111_128,
+	  world/world_111_129, world/world_112_100, world/world_112_101,
+	  world/world_112_102, world/world_112_103, world/world_112_104,
+	  world/world_112_105, world/world_112_106, world/world_112_107,
+	  world/world_112_108, world/world_112_109, world/world_112_110,
+	  world/world_112_112, world/world_112_113, world/world_112_114,
+	  world/world_112_115, world/world_112_116, world/world_112_117,
+	  world/world_112_118, world/world_112_119, world/world_112_120,
+	  world/world_112_121, world/world_112_122, world/world_112_123,
+	  world/world_112_124, world/world_112_125, world/world_112_126,
+	  world/world_112_127, world/world_112_128, world/world_112_129,
+	  world/world_113_100, world/world_113_101, world/world_113_102,
+	  world/world_113_103, world/world_113_104, world/world_113_105,
+	  world/world_113_106, world/world_113_107, world/world_113_108,
+	  world/world_113_109, world/world_113_110, world/world_113_111,
+	  world/world_113_112, world/world_113_114, world/world_113_115,
+	  world/world_113_116, world/world_113_117, world/world_113_118,
+	  world/world_113_119, world/world_113_120, world/world_113_121,
+	  world/world_113_122, world/world_113_123, world/world_113_124,
+	  world/world_113_125, world/world_113_126, world/world_113_127,
+	  world/world_113_128, world/world_114_100, world/world_114_101,
+	  world/world_114_102, world/world_114_103, world/world_114_104,
+	  world/world_114_105, world/world_114_106, world/world_114_107,
+	  world/world_114_108, world/world_114_109, world/world_114_110,
+	  world/world_114_111, world/world_114_113, world/world_114_114,
+	  world/world_114_115, world/world_114_116, world/world_114_117,
+	  world/world_114_118, world/world_114_119, world/world_114_120,
+	  world/world_114_121, world/world_114_122, world/world_114_123,
+	  world/world_114_124, world/world_114_125, world/world_114_126,
+	  world/world_114_127, world/world_114_128, world/world_114_129,
+	  world/world_115_100, world/world_115_101, world/world_115_102,
+	  world/world_115_103, world/world_115_104, world/world_115_105,
+	  world/world_115_106, world/world_115_107, world/world_115_108,
+	  world/world_115_109, world/world_115_110, world/world_115_111,
+	  world/world_115_112, world/world_115_113, world/world_115_114,
+	  world/world_115_115, world/world_115_116, world/world_115_117,
+	  world/world_115_118, world/world_115_119, world/world_115_120,
+	  world/world_115_121, world/world_115_122, world/world_115_123,
+	  world/world_115_124, world/world_115_125, world/world_115_127,
+	  world/world_115_128, world/world_115_129, world/world_116_101,
+	  world/world_116_102, world/world_116_103, world/world_116_104,
+	  world/world_116_105, world/world_116_106, world/world_116_107,
+	  world/world_116_108, world/world_116_109, world/world_116_110,
+	  world/world_116_111, world/world_116_112, world/world_116_113,
+	  world/world_116_114, world/world_116_115, world/world_116_116,
+	  world/world_116_117, world/world_116_118, world/world_116_119,
+	  world/world_116_120, world/world_116_121, world/world_116_122,
+	  world/world_116_123, world/world_116_124, world/world_116_125,
+	  world/world_116_126, world/world_116_127, world/world_117_101,
+	  world/world_117_102, world/world_117_103, world/world_117_104,
+	  world/world_117_105, world/world_117_106, world/world_117_107,
+	  world/world_117_108, world/world_117_109, world/world_117_110,
+	  world/world_117_111, world/world_117_112, world/world_117_113,
+	  world/world_117_114, world/world_117_115, world/world_117_116,
+	  world/world_117_117, world/world_117_118, world/world_117_119,
+	  world/world_117_120, world/world_117_121, world/world_117_122,
+	  world/world_117_123, world/world_117_124, world/world_117_125,
+	  world/world_117_126, world/world_117_127, world/world_118_102,
+	  world/world_118_103, world/world_118_104, world/world_118_105,
+	  world/world_118_106, world/world_118_107, world/world_118_108,
+	  world/world_118_109, world/world_118_112, world/world_118_113,
+	  world/world_118_114, world/world_118_115, world/world_118_116,
+	  world/world_118_117, world/world_118_118, world/world_118_119,
+	  world/world_118_120, world/world_118_121, world/world_118_122,
+	  world/world_118_123, world/world_118_124, world/world_118_125,
+	  world/world_118_126, world/world_118_127, world/world_118_128,
+	  world/world_118_129, world/world_119_100, world/world_119_101,
+	  world/world_119_102, world/world_119_103, world/world_119_104,
+	  world/world_119_105, world/world_119_106, world/world_119_107,
+	  world/world_119_108, world/world_119_110, world/world_119_111,
+	  world/world_119_113, world/world_119_114, world/world_119_115,
+	  world/world_119_116, world/world_119_117, world/world_119_118,
+	  world/world_119_119, world/world_119_120, world/world_119_121,
+	  world/world_119_122, world/world_119_123, world/world_119_124,
+	  world/world_119_125, world/world_119_127, world/world_119_128,
+	  world/world_120_101, world/world_120_102, world/world_120_103,
+	  world/world_120_104, world/world_120_105, world/world_120_106,
+	  world/world_120_107, world/world_120_108, world/world_120_109,
+	  world/world_120_110, world/world_120_111, world/world_120_112,
+	  world/world_120_113, world/world_120_114, world/world_120_115,
+	  world/world_120_116, world/world_120_117, world/world_120_118,
+	  world/world_120_119, world/world_120_121, world/world_120_122,
+	  world/world_120_123, world/world_120_124, world/world_120_125,
+	  world/world_120_126, world/world_120_127, world/world_121_101,
+	  world/world_121_102, world/world_121_103, world/world_121_104,
+	  world/world_121_105, world/world_121_106, world/world_121_107,
+	  world/world_121_108, world/world_121_109, world/world_121_110,
+	  world/world_121_111, world/world_121_112, world/world_121_113,
+	  world/world_121_114, world/world_121_115, world/world_121_116,
+	  world/world_121_117, world/world_121_118, world/world_121_121,
+	  world/world_121_122, world/world_121_123, world/world_121_124,
+	  world/world_121_125, world/world_121_126, world/world_121_127,
+	  world/world_122_101, world/world_122_102, world/world_122_103,
+	  world/world_122_104, world/world_122_105, world/world_122_106,
+	  world/world_122_107, world/world_122_108, world/world_122_109,
+	  world/world_122_110, world/world_122_111, world/world_122_112,
+	  world/world_122_113, world/world_122_114, world/world_122_115,
+	  world/world_122_116, world/world_122_117, world/world_122_118,
+	  world/world_122_119, world/world_122_120, world/world_122_121,
+	  world/world_122_122, world/world_122_123, world/world_122_124,
+	  world/world_122_125, world/world_122_126, world/world_122_127,
+	  world/world_122_128, world/world_123_100, world/world_123_101,
+	  world/world_123_102, world/world_123_103, world/world_123_104,
+	  world/world_123_105, world/world_123_106, world/world_123_107,
+	  world/world_123_108, world/world_123_109, world/world_123_110,
+	  world/world_123_111, world/world_123_112, world/world_123_113,
+	  world/world_123_114, world/world_123_115, world/world_123_116,
+	  world/world_123_117, world/world_123_118, world/world_123_119,
+	  world/world_123_120, world/world_123_121, world/world_123_122,
+	  world/world_123_123, world/world_123_124, world/world_123_125,
+	  world/world_123_126, world/world_124_100, world/world_124_102,
+	  world/world_124_103, world/world_124_104, world/world_124_105,
+	  world/world_124_106, world/world_124_107, world/world_124_108,
+	  world/world_124_109, world/world_124_110, world/world_124_111,
+	  world/world_124_112, world/world_124_113, world/world_124_114,
+	  world/world_124_115, world/world_124_116, world/world_124_117,
+	  world/world_124_118, world/world_124_119, world/world_124_120,
+	  world/world_124_121, world/world_124_122, world/world_124_123,
+	  world/world_124_124, world/world_124_125, world/world_124_126,
+	  world/world_124_128, world/world_125_101, world/world_125_102,
+	  world/world_125_103, world/world_125_104, world/world_125_105,
+	  world/world_125_106, world/world_125_107, world/world_125_108,
+	  world/world_125_109, world/world_125_110, world/world_125_111,
+	  world/world_125_112, world/world_125_113, world/world_125_114,
+	  world/world_125_115, world/world_125_116, world/world_125_117,
+	  world/world_125_118, world/world_125_119, world/world_125_120,
+	  world/world_125_122, world/world_125_123, world/world_125_124,
+	  world/world_125_125, world/world_126_101, world/world_126_102,
+	  world/world_126_103, world/world_126_104, world/world_126_105,
+	  world/world_126_106, world/world_126_107, world/world_126_108,
+	  world/world_126_109, world/world_126_110, world/world_126_111,
+	  world/world_126_112, world/world_126_113, world/world_126_114,
+	  world/world_126_115, world/world_126_116, world/world_126_117,
+	  world/world_126_118, world/world_126_119, world/world_126_120,
+	  world/world_126_121, world/world_126_122, world/world_126_123,
+	  world/world_126_124, world/world_126_125, world/world_127_100,
+	  world/world_127_101, world/world_127_102, world/world_127_103,
+	  world/world_127_104, world/world_127_105, world/world_127_106,
+	  world/world_127_107, world/world_127_108, world/world_127_110,
+	  world/world_127_111, world/world_127_112, world/world_127_113,
+	  world/world_127_114, world/world_127_115, world/world_127_116,
+	  world/world_127_117, world/world_127_118, world/world_127_119,
+	  world/world_127_120, world/world_127_121, world/world_127_125,
+	  world/world_128_100, world/world_128_101, world/world_128_102,
+	  world/world_128_103, world/world_128_104, world/world_128_105,
+	  world/world_128_106, world/world_128_107, world/world_128_108,
+	  world/world_128_109, world/world_128_110, world/world_128_111,
+	  world/world_128_112, world/world_128_113, world/world_128_114,
+	  world/world_128_116, world/world_128_117, world/world_128_118,
+	  world/world_128_119, world/world_128_120, world/world_128_121,
+	  world/world_128_124, world/world_129_103, world/world_129_106,
+	  world/world_129_108, world/world_129_109, world/world_129_110,
+	  world/world_129_114, world/world_129_115, world/world_129_117,
+	  world/world_129_118, world/world_129_120, world/world_129_121,
+	  world/world_129_122, world/world_129_125: Massive change of grass
+	  based tiles to grass + another object above. Better result with
+          smoothing. Split of combo tiles (eg tree+grass) to separate tiles
+          (1 tree above 1 grass).
 
+2007-12-24 17:41  kbulgrien
 
-2007-12-18 tchize
-M    python/misc/npc_dialog.py
-M    python/CFDialog.py
-M    start/newbieshouse
-A    start/sigmund.msg
-Update match rules of CFDialog, add a script to use it
-easily in maps, update newbie house so the wise sigmund
-can provide more interactive support to players
+	* HallOfSelection, start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon,
+	  start/HallsOfSelection/wraith_player: - Remove spurious line
+	  breaks and section texts into paragraphs.
+	  - Remove spurious msg/endmsg in warlock and monk characters.
+	  - Various subtle improvements to character class descriptions.
+	  - Major rework of the welcome message and to the Crossfire Primer
+	  texts include
+	  placing the movement primer prior to the primers that refer to
+	  direction keys
+	  used to fire magic. Texts regarding character appearance are
+	  changed to
+	  account for the fact that dragon/wraith/fireborn faces are not
+	  affected by a
+	  class selection. In some cases, new relevant information has been
+	  added to
+	  better teach the concept presented in a primer.
+	  - Re-synch the four Halls Of Selection except where the content
+	  differences
+	  are due to gameplay differences.
 
+2007-12-24 15:13  tchize
+
+	* world/world_114_111, world/world_114_112, world/world_115_111:
+	  Updated maps, begin of quest of blood vampire
+
+2007-12-23 01:19  gros
+
+	* ChangeLog, python/commands, python/commands/give.py,
+	  python/events/init/give_command.py, python/maps/scorn,
+	  python/maps/scorn/towers, python/maps/scorn/towers/mad_mage,
+	  python/maps/scorn/towers/mad_mage/brewery_letter,
+	  python/maps/scorn/towers/mad_mage/mad_mage_user.py: Add support
+	  for the "give" command, that allows a player to show an item to
+	  an NPC.
+	  Useful when coupled with scripts to write "bring me back
+	  something" quests.
+	  Add support for the "give" command to the Mad Mage, with a
+	  generic "show me and
+	  I'll talk" kind of system.
+
+2007-12-22 15:35  tchize
+
+	* ChangeLog, scorn/misc/cityhall: Cityhall is now closed at night.
+	  Petition board and bonus amulet remain available
+
+2007-12-22 13:44  tchize
+
+	* ChangeLog, python/misc/doNothing.py, python/misc/npc_dialog.py,
+	  scorn/kar/gork.msg, scorn/kar/gorks3, scorn/kar/mork.msg,
+	  scorn/kar/somehouse3: Make the gork's treasure quest use python
+	  for npc dialog. It's now mandatory to go throught full dialog to
+	  get the treasure key, knowing password is not enough
+
+2007-12-22 10:55  tchize
+
+	* ChangeLog, start/Nexus, start/newbieshouse, start/sigmund.msg:
+	  Add some dialog entries to sigmund, add a password to access
+	  scorn (forces newbies in training). No way back to newbie house
+	  aftre quitting it, forced into scorn.
+
+2007-12-22 08:37  kbulgrien
+
+	* world/world_116_102: - Replace Lighthouse arch with
+	  lighthouse_northwest arch and remove no longer
+	  needed light source.
+
+2007-12-22 08:03  kbulgrien
+
+	* world/world_122_117: - Convert the lighthouse to the
+	  lighthouse_west arch.
+
+2007-12-22 06:34  kbulgrien
+
+	* world/world_128_128: - Replace s_city_tower arch with
+	  s_lighthouse since it is named Lighthouse.
+	  - Remove light sources since the lighthouse arch already has a
+	  glow radius.
+
+2007-12-20 23:27  tchize
+
+	* start/sigmund.msg: Upgraded sigmund :)
+
+2007-12-20 05:15  kbulgrien
+
+	* world/world_102_108: - Change woodfloor2/brush shoreline where
+	  the lighthouses sit.
+	  - Rework the town wall on the north by the lighthouse so two-tile
+	  high
+	  lighthouse will not overlap the wall tile.
+	  - Remove the light sources by the lighthouse since the lighthouse
+	  has a
+	  glow_radius set in the arch.
+	  - Smoothing fixes under docks where grass was smoothing into the
+	  water
+	  (regression introduced in SVN revision 7746).
+	  - Smoothing fixes on shoreline after introduction of lighthouse.
+
+2007-12-18 22:29  tchize
+
+	* ChangeLog, python/CFDialog.py, python/misc/npc_dialog.py,
+	  start/newbieshouse, start/sigmund.msg: Update match rules of
+	  Update match rules of CFDialog, add a script to use it
+	  easily in maps, update newbie house so the wise sigmund
+	  can provide more interactive support to players
+
+2007-12-16 23:20  ryo_saeba
+
+	* scorn/temples/valriel3: Change the exit leading to the final map.
+
+2007-12-16 22:10  ryo_saeba
+
+	* python/maps/witherspoon_manor,
+	  python/maps/witherspoon_manor/ghost.py,
+	  python/maps/witherspoon_manor/tomb.py,
+	  scorn/mansion/witherspoon_manor,
+	  scorn/mansion/witherspoon_manor_attic, world/world_103_115,
+	  world/world_105_116: Small quest, that may be expanded later. New
+	  manor outside Scorn.
+
+2007-12-16 22:08  ryo_saeba
+
+	* scorn/houses/easy_house.1.a: Fix mat seen as a chest.
+
+2007-12-16 15:15  tchize
+
+	* python/CFDialog.py, python/misc/npc_dialog.py, test/dialog: Add a
+	  simple to use script that make use of NPC dialog
+
+2007-12-16 14:41  ryo_saeba
+
+	* scorn/towers/tower.mad3: Fix some chairs.
+
+2007-12-16 12:52  tchize
+
+	* python/tod/sleep.py, test/tod: Add a "go to sleep" script based
+	  on time of day
+
+2007-12-14 05:40  kbulgrien
+
+	* world/world_104_115: - Smoothing fix to make smoothing not cover
+	  over water tunnel and subsequent
+	  shoreline modification to avoid unsmoothed corner of shoreline.
+	  - Remove unnecessary grass tile under hole.
+
+2007-12-14 03:52  kbulgrien
+
+	* pup_land/s_f/Kira: - Line break removal and minor rework of some
+	  message texts.
+
+2007-12-14 01:07  kbulgrien
+
+	* pup_land/rainbow/w-tower: - Line break removal and minor rework
+	  of some message texts.
+
+2007-12-13 04:55  kbulgrien
+
+	* scorn/shops/coffeeshop: - Coffee drinker now has a name and a bit
+	  more to say.
+	  - Remove pointless case sensitive match strings.
+	  - Add a few more match strings to Eswald.
+	  - Remove spurious line breaks.
+
+2007-12-11 04:48  kbulgrien
+
+	* scorn/misc/cityhall: - Various under-wall tiles changed to better
+	  match adjoining ground tiles.
+	  - Northern wall insets changed to show previously invisible
+	  landscape.
+	  - Numerous instances of redundant woodfloor tiles removed.
+	  - Add a slightly hidden book of proverbs (obscure hints).
+
+2007-12-10 07:19  kbulgrien
+
+	* scorn/anthony/portgate: - New ne, se, sw, and nw mine wall
+	  archetypes fix the Scorn port gate house to
+	  use the same wall material for the entire building. Various floor
+	  changes
+	  also done to go along with the wall edits.
+
+2007-12-08 15:11  kbulgrien
+
+	* world/world_102_108: - Replace board floor under pier with more
+	  appropriate ground pieces.
+
+2007-12-04 19:22  eracc
+
+	* wolfsburg/shops/transport.shoppe: Fix a display problem with
+	  overlapping swall not looking correct when in-game
+	  although it looks correct in Gridarta.
+
+2007-12-03 22:34  eracc
+
+	* wolfsburg/shops/transport.shoppe: Fix mistyped path for pup_land
+	  in the Wolfsburg transport shoppe.
+	  Add buttons under the teleporters to try to keep players from
+	  being trapped.
+
+2007-12-03 21:38  eracc
+
+	* pup_land/lone_town/shops/transport.shoppe,
+	  wolfsburg/shops/transport.shoppe: Update transport shoppes with
+	  Valkyrie altar
+
+2007-12-03 20:10  eracc
+
+	* wolfsburg/shops/transport.shoppe, world/world_128_109: Add "Ye
+	  Olde Transport Shoppe" to Wolfsburg and update world map for
+	  same.
+	  Fix some errors with various buildings on the world map.
+
+2007-12-03 00:26  eracc
+
+	* wolfsburg/apartments, wolfsburg/apartments/wolfsburg.apartment,
+	  wolfsburg/shops, wolfsburg/shops/buildshop, wolfsburg/whorehouse,
+	  world/world_128_109: Removed the silly and useless Wolfsburg
+	  "whorehouse".
+	  Added Wolfsburg apartment (buildable).
+	  Added Wolfsburg buildshop.
+	  Update world/world_128_109 with the new map info.
+
+2007-11-24 23:28  ryo_saeba
+
+	* python/items/sunnista.py: Fun item Eracc can use for his maps :)
+
+2007-11-24 20:34  rjtanner
+
+	* port_joseph/town/underground_tavern: Map normalize, no functional
+	  changes
+
+2007-11-24 20:28  eracc
+
+	* brest/zorn/castle.mainfloor, brest/zorn/castle.upper.floor.four,
+	  brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Add Zorn castle floor four.
+	  Update all "shadow" creatures in Zorn castle to be disease immune
+	  even though
+	  they are not undead.
+
+2007-11-22 22:29  tchize
+
+	* python/CFMapTransformer.py, python/tod/filter.py,
+	  python/tod/filter_all_periods.py,
+	  python/tod/filter_one_period.py, python/tod/push.py,
+	  python/tod/push_all_periods.py, python/tod/push_one_period.py,
+	  python/tod/replace.py, python/tod/replace_all_periods.py,
+	  python/tod/replace_in_map.py,
+	  python/tod/replace_in_map_one_period.py,
+	  python/tod/replace_one_period.py, test/tod, test/tod2: time of
+	  day script modified to use python, and simplified in use.
+
+2007-11-19 23:21  tchize
+
+	* python/CFMapTransformer.py, python/CFTimeOfDay.py,
+	  python/tod/filter_all_periods.py,
+	  python/tod/filter_one_period.py, python/tod/push_all_periods.py,
+	  python/tod/push_one_period.py, python/tod/replace_all_periods.py,
+	  python/tod/replace_in_map_one_period.py,
+	  python/tod/replace_one_period.py, test/tod, test/tod2: timeofday
+	  based python script
+	  updated existing script to use JSON notation
+	  added a "replace in all map" script
+	  added a test map
+	  updated test maps to JSON notation
+	  added helper tools: CFTimeOfDay and CFMapTransformer
+	  fixed warnings in gridarta
+
+2007-11-19 01:58  rjtanner
+
+	* pup_land/nurnberg/bank: Additional conversion tables in the
+	  Nurnberg bank; jade to amberium, amberium to jade, platinum to
+	  jade, jade to platinum and gold to silver
+
+2007-11-19 01:39  rjtanner
+
+	* pup_land/nurnberg/bank: Cosmetic changes with the Nurnberg bank,
+	  also rearranged the floor stacking order so that no_magic tiles
+	  appear under sections of swall
+
+2007-11-19 01:27  rjtanner
+
+	* azumauindo/suno-yamatoshi/shops/bank1, dragonisland/advguild,
+	  pup_land/lone_town/bank: Updated various banks to include a gold
+	  -> silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-18 23:16  akirschbaum
+
+	* darcap/darcap/circus/wurfbude, darcap/quest/water,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/pypers_treehouse,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/sweets_inn2,
+	  inn_and_outpost/treehouse_df1, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6,
+	  pup_land/ancient/volcano/volcano.2, scorn/houses/bowyer,
+	  scorn/houses/wizz.entry, scorn/oldcity/oldcity12: Replace
+	  obsolete field slow_move with move_slow/move_slow_penalty.
+
+2007-11-18 23:10  rjtanner
+
+	* navar_city/misc/city1bank: Updated the Navar bank to include a
+	  gold -> silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-18 23:02  akirschbaum
+
+	* editor/scripts/LegacySpellConverter: Do not create superfluous
+	  'randomitems none' attributes.
+
+2007-11-18 22:54  rjtanner
+
+	* scorn/shops/bank: Updated the Scorn bank to include a gold ->
+	  silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-18 18:52  gros
+
+	* python/IPO/say.py: Corrected a glitch in IPO Colette's answer.
+
+2007-11-17 17:38  tchize
+
+	* python/tod/replace_all_periods.py,
+	  python/tod/replace_one_period.py, test/tod: add a werebeast
+	  script and demo
+	  The demo "werebeast" is based on beholder transforming into black
+	  dragon
+	  Updated sage opening door message
+
+2007-11-17 00:14  qal21
+
+	* python/tod/filter_all_periods.py,
+	  python/tod/filter_one_period.py: Fix filename comments
+
+2007-11-16 13:27  tchize
+
+	* python/tod, python/tod/filter_all_periods.py,
+	  python/tod/filter_one_period.py, python/tod/push_all_periods.py,
+	  python/tod/push_one_period.py, test/tod: Add Timeofday generic
+	  scripts and a demo map
+	  Those 4 script can be used as filter or triggerer based on
+	  current time.
+	  See test/tod for a demo map (conditionnal magic mouth, weapons
+	  that
+	  attack only at day/night, grates that open in morning and close
+	  at dusk)
+
+2007-11-14 17:54  eracc
+
+	* brest/zorn/castle.upper.floor.one: Fixing the Zorn girls. They
+	  all had too low max hp.
+
+2007-11-13 05:57  rjtanner
+
+	* darcap/darcap/circus/wurfbude: Map changes to address bug #
+	  [1829831] Mechanism bug - limit range and effectiveness of
+	  dimension door
+
+2007-11-13 05:34  eracc
+
+	* dungeons/gorokh/gorokh_final: Rename Kitten of Gorokh to Cat of
+	  Gorokh and reduce number on map by half.
+	  Create new 1 tile Kitten of Gorokh to replace removed Cat of
+	  Gorokh.
+	  This should help prevent cowardly hiding behind earhtwalls with a
+	  one tile
+	  opening to avoid one's deserved punishment. Yes, this is evil ...
+	  but one
+	  is in "hell" after all. :)
+
+2007-11-12 20:15  eracc
+
+	* pup_land/nurnberg/city, pup_land/rainbow/islands, pup_land/world:
+	  Since pupland is not yet merged into big world I am making the
+	  pupland outdoor
+	  maps actually *be* outdoor maps to honor the day/night cycle.
+
+2007-11-08 23:36  tchize
+
+	* python/CFBank.py, python/CFDataFile.py, python/CFGuilds.py,
+	  python/IPO/receive.py, python/events/init/guild_init.py,
+	  python/events/python_init.py,
+	  python/guilds/guild_questpoints_apply.py,
+	  python/guilds/guildbuy.py, python/guilds/guildjoin.py,
+	  python/guilds/guildoracle.py, python/misc/CFweardisguise.py,
+	  python/misc/greet_message.py, python/monsters/combat_chicken.py:
+	  Modified all print of script to calls to
+	  Crossfire.Log(Crossfire.Log(Debug|Error|Info|Monster),message)
+
+2007-11-07 06:05  rjtanner
+
+	* scorn/houses/wizz.entry, scorn/houses/wizz.lev1,
+	  scorn/houses/wizz.lev1.pass1: Add missing floor tiles, removed
+	  redundant walls, added map difficulty, cosmetic changes with
+	  bwall_ arrangements
+
+2007-11-06 06:41  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon: Widen the
+	  hallways of One Eyed Mike's store in order to accomodate use from
+	  more then one player at a time
+
+2007-11-06 05:46  rjtanner
+
+	* brest/pshops/pshopsinc, sisters/shrine0, sisters/shrine_entrance:
+	  Modify NPC or magic_mouth dialogue to be generic in regards to
+	  player race; Fix for bug [825637] Some maps assume what race you
+	  are.
+
+2007-11-06 02:25  rjtanner
+
+	* ChangeLog: Updated ChangeLog files using svn2cl
 
 2007-11-05 01:50  rjtanner
 
