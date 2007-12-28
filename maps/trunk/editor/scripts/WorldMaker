@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
   <name>WorldMaker</name>
-  <code><![CDATA[import java.io.*;
-import cfeditor.IGUIConstants;
+  <code><![CDATA[import cfeditor.IGUIConstants;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import java.io.RandomAccessFile;
+import java.io.FileOutputStream;
+import java.io.File;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
 
 /*
  * Functions declaration
@@ -85,13 +90,27 @@ void checkDaList() {
 
     HashSet mapList = new HashSet();
     boolean firstRun = false;
+    print("...");
+    long headerSize = ("P6\n"+DestWidth+" "+DestHeight+"\n255\n").getBytes().length;
+    print("...");
     if (new File(Location + PictureDirectory + WorldPicture + ".ppm").exists()) {
         runCommand("cp " + Location + PictureDirectory + WorldPicture + ".ppm /tmp/tmp.ppm");
     } else {
-        runCommand("ppmmake \\#000 " + DestWidth + " " + DestHeight + " > /tmp/tmp.ppm");
+        File f = new File("/tmp/tmp.ppm");
+        String header = "P6\n"+DestWidth+" "+DestHeight+"\n255\n" ;
+        print("generating empty picture");
+        FileOutputStream fos = new FileOutputStream(f,false);
+        fos.write(header.getBytes());
+        byte[] buf = new byte[(int)DestWidth.intValue()*3];
+        for (int i=0;i<DestHeight.intValue();i++) fos.write(buf);
+        fos.close();
         firstRun = true;
-        print("Creating images for the first time.");
     }
+    print("gogogo");
+    long toSkip = ("P6\n"+TileWidth+" "+TileHeight+"\n255\n").getBytes().length;
+    RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"),"rw");
+    FileChannel fc  = raf.getChannel();
+    byte[] buf = new byte[3*TileWidth.intValue()*TileHeight.intValue()];
 
     for (int x = 0; x < NumX.intValue(); x++) {
         for (int y = 0; y < NumY.intValue(); y++) {
@@ -102,14 +121,25 @@ void checkDaList() {
             didUpdate = updateMap(currentMap, currentPicture);
             if ((didUpdate || firstRun) && currentPicture.exists()) {
                 runCommand("pngtopnm " + currentPicture + " | pnmscale -xysize " + TileWidth + " " + TileHeight + " > /tmp/ppm.tmp");
+                FileInputStream fis = new FileInputStream("/tmp/ppm.tmp");
+                fis.skip(toSkip);
+                fis.read(buf);
                 sx = x * TileWidth.intValue();
                 sy = y * TileHeight.intValue();
-                runCommand("pnmpaste /tmp/ppm.tmp " + sx + " " + sy + " /tmp/tmp.ppm > /tmp/tmp.ppm1");
-                runCommand("rm -f /tmp/tmp.ppm");
-                runCommand("mv /tmp/tmp.ppm1 /tmp/tmp.ppm");
+                long index=((long)sy*(long)DestWidth.intValue()+(long)sx)*(long)3+headerSize;
+                for (long row=0; row<TileHeight.intValue();row++){
+                    MappedByteBuffer mbb = fc.map(
+                         java.nio.channels.FileChannel.MapMode.READ_WRITE,
+                         index+row*DestWidth.intValue()*(long)3,
+                         TileWidth.intValue()*(long)3
+                         );
+                    mbb.put(buf,(int)(row*TileWidth.intValue()*3),(int)(TileWidth.intValue()*3));
+                }
+
             }
         }
     }
+    raf.close();
     runCommand("mv /tmp/tmp.ppm " + Location + PictureDirectory + WorldPicture + ".ppm");
     print("converting to png if possible.\n");
     runCommand("pnmtopng " + Location + PictureDirectory + WorldPicture + ".ppm > /tmp/tmp.png");
