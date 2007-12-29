@@ -1,10 +1,60 @@
 Changes for SVN top of tree:
 
+Add dev/wip directory for commiting work-in-progress archetypes.  The directory
+is not visible in Gridarta CrossfireEditor, but can be made so with a soft link
+like arch/trunk/wip --> arch/trunk/dev/wip.
+Add dev/wip/README describing the use of the directory.
+Add dev/wip/manhole as a manhole archetype work-in-progress to facilitate some
+collaboration on getting a multi-tile HOLE animation to work.  Included is a
+README and a world_105_115.patch test case.
+Kevin Bulgrien 2007-12-29
+
+Add names to woodfloor, woodfloor2, woodlarge, and dirtfloor.
+Nicolas Weeger 2007-12-29
+
+Nicer mountain1, 2, 3, 4 5.
+Update woods_4 archetype so it's not anymore acting as a ground (transparency
+parts, it is *NOT* a ground, visually speaking)
+Make the fireball and firebreath smooth
+Tchize 2007-12-28
+
 Add smooth image for light snow + source file + empty layer file (use it to help building smooth images)
 Tchize 2007-12-24
 
 Add the archetype hook for user-defined plugin events.
 Yann (gros) Chachkoff 2007-12-23
+
+Add various lighthouse archetypes to replace use of huts and towers that are
+called "lighthouse" in various maps.  A base archetype is added along with
+west, northwest, and snowy variants.
+Kevin Bulgrien 2007-12-22
+
+Singing anim_suffix.
+Nicolas Weeger 2007-12-21
+
+Singing animation for Fenx.
+Nicolas Weeger 2007-12-18
+
+Add missing faces for spider (for now, always the same sprite).
+Nicolas Weeger 2007-12-16
+
+Add ne, se, sw, and nw corners to the mine walls to fix the Scorn port gate
+house with consistent walls.
+Kevin Bulgrien 2007-12-10
+
+Four facings for angel, and sword animation.
+Facings for whim.
+Nicolas Weeger 2007-12-09
+
+Basic animation for Ruggilli's altar.
+Basic animation for Sorig's altar.
+Nicolas Weeger 2007-12-07
+
+Commit spellcasting animations for chinese dragons
+Andreas Kirchbaum 2007-11-30
+
+Added a spellcasting animation for the Big Dragon. Courtesy of Rednaxela.
+Yann (gros) Chachkoff 2007-11-29
 
 Add anim_suffix spellcasting to all spells.
 Alex Schultz 2007-11-29
@@ -12,11 +62,18 @@ Alex Schultz 2007-11-29
 Add correct plural name to flowers_permanent.
 Andreas Kirschbaum 2007-11-23
 
+Add sample support for spellcasting compound animations.
+Try to cast minor healing with a Fenx 
+Yann (gros) Chachkoff 2007-11-18
+
 Update spellcasting objects to use inventory objects.
 Andreas Kirschbaum 2007-11-04
 
 Rename low_boots from "shoes" to "pair of shoes".
 Andreas Kirschbaum 2007-11-03
+
+New archetypes goldflagstone.arc  to avoid using creator tricks.
+Nicholas Weeger 2007-10-20
 
 Revert previous change of dragon's steaks weight.
 Andreas Kirschbaum 2007-10-15
