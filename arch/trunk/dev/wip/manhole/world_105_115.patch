@@ -1,0 +1,208 @@
+Index: ../../../../../maps/trunk/world/world_105_115
+===================================================================
+--- ../../../../../maps/trunk/world/world_105_115	(revision 8060)
++++ ../../../../../maps/trunk/world/world_105_115	(working copy)
+@@ -9,7 +9,11 @@
+ enter_y 1
+ msg
+ Created:  2001-02-16
++<<<<<<< .mine
++Modified: 2007-12-29 Kevin Bulgrien
++=======
+ Modified: 2007-12-24 tchize
++>>>>>>> .r8038
+ endmsg
+ outdoor 1
+ tile_path_1 world_105_114
+@@ -1569,8 +1573,16 @@
+ arch cobblestones2
+ x 3
+ y 34
+-elevation 7225
++elevation 10685
+ end
++arch button_lever
++msg
++Pit Test #1
++endmsg
++x 3
++y 34
++connected 64
++end
+ arch dungeon_magic
+ x 3
+ y 35
+@@ -1580,6 +1592,14 @@
+ y 35
+ elevation 10034
+ end
++arch button_handle
++msg
++Manhole Test #1
++endmsg
++x 3
++y 35
++connected 63
++end
+ arch dungeon_magic
+ x 3
+ y 36
+@@ -1596,7 +1616,7 @@
+ arch cobblestones2
+ x 3
+ y 37
+-elevation 12068
++elevation 8727
+ end
+ arch dungeon_magic
+ x 3
+@@ -1605,7 +1625,7 @@
+ arch cobblestones2
+ x 3
+ y 38
+-elevation 12236
++elevation 8727
+ end
+ arch dungeon_magic
+ x 3
+@@ -2029,8 +2049,15 @@
+ arch cobblestones
+ x 4
+ y 34
+-elevation 6917
++elevation 6692
+ end
++arch pit_closed
++hp 6
++sp 39
++x 4
++y 34
++connected 64
++end
+ arch dungeon_magic
+ x 4
+ y 35
+@@ -2056,8 +2083,15 @@
+ arch cobblestones2
+ x 4
+ y 37
+-elevation 10853
++elevation 12236
+ end
++arch manhole_closed_1
++hp 6
++sp 39
++x 4
++y 37
++connected 63
++end
+ arch dungeon_magic
+ x 4
+ y 38
+@@ -2074,7 +2108,7 @@
+ arch cobblestones2
+ x 4
+ y 39
+-elevation 10685
++elevation 8727
+ end
+ arch dungeon_magic
+ x 4
+@@ -2454,7 +2488,7 @@
+ arch cobblestones
+ x 5
+ y 34
+-elevation 6692
++elevation 5919
+ end
+ arch dungeon_magic
+ x 5
+@@ -2498,10 +2532,10 @@
+ x 5
+ y 37
+ end
+-arch cobblestones
++arch cobblestones2
+ x 5
+ y 37
+-elevation 9652
++elevation 7364
+ end
+ arch dungeon_magic
+ x 5
+@@ -2519,7 +2553,7 @@
+ arch cobblestones2
+ x 5
+ y 39
+-elevation 9827
++elevation 8727
+ end
+ arch dungeon_magic
+ x 5
+@@ -2912,8 +2946,15 @@
+ arch cobblestones
+ x 6
+ y 34
+-elevation 5919
++elevation 6692
+ end
++arch pit_open
++hp 6
++sp 39
++x 6
++y 34
++connected 65
++end
+ arch dungeon_magic
+ x 6
+ y 35
+@@ -2941,6 +2982,13 @@
+ y 37
+ elevation 7865
+ end
++arch manhole_open_1
++hp 6
++sp 39
++x 6
++y 37
++connected 66
++end
+ arch dungeon_magic
+ x 6
+ y 38
+@@ -3350,8 +3398,16 @@
+ arch cobblestones2
+ x 7
+ y 34
+-elevation 4624
++elevation 10685
+ end
++arch button_lever
++msg
++Pit Test #2
++endmsg
++x 7
++y 34
++connected 65
++end
+ arch dungeon_magic
+ x 7
+ y 35
+@@ -3359,8 +3415,16 @@
+ arch cobblestones2
+ x 7
+ y 35
+-elevation 3552
++elevation 10034
+ end
++arch button_handle
++msg
++Manhole Test #2
++endmsg
++x 7
++y 35
++connected 66
++end
+ arch dungeon_magic
+ x 7
+ y 36
