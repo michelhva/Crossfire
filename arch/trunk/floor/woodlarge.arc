@@ -1,4 +1,5 @@
 Object woodlarge
+name wood floor
 face woodlarge.111
 color_fg dark_orange
 no_pick 1
