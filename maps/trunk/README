@@ -25,10 +25,29 @@ The following may be safer, but also may not entirely regenerate missing
 entries if manual edits have been made.  Again, never check in updates without
 checking differences and merging any manual edits developers may have made.
 
+1) Only generate portion of the ChangeLog since the last svn2cl run.
+
+   Determine the date of the last svn2cl run by looking at the top of the
+   ChangeLog.  For this example, presume 2007-12-20 is the last svn2cl
+   notation, and that today is 2007-12-30.
+
+   $ cd /home/data/svn/crossfire/maps/trunk
+   $ ~/svn2cl-0.9/svn2cl.sh -o ChangeLog.New -r "{2007-12-20}:{2007-12-30}"
+
+   Note that the day of the last svn2cl is used in case new entries were made
+   that day following the svn2cl run.
+
+   Place the contents of ChangeLog.New at the top of the ChangeLog file, but
+   make sure to delete any redundant entries.  If manual entries have been
+   made, merge any additional content with the appropriate svn2cl generated
+   entries.
+
+2) Regenerate the entire log, but generate a patch file.
+
   $ cd /home/data/svn/crossfire/maps/trunk
   $ ~/svn2cl-0.9/svn2cl.sh --output=ChangeLog.New
   $ diff -u ChangeLog ChangeLog.New >ChangeLog.patch
 
-Verify the ChangeLog.patch file and remove any patch hunks that would remove
-information prior to patching up the ChangeLog file for commit.
+  Verify the ChangeLog.patch file and remove any patch hunks that would remove
+  information prior to patching up the ChangeLog file for commit.
 
