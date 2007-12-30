@@ -32,7 +32,7 @@ checking differences and merging any manual edits developers may have made.
    notation, and that today is 2007-12-30.
 
    $ cd /home/data/svn/crossfire/maps/trunk
-   $ ~/svn2cl-0.9/svn2cl.sh -o ChangeLog.New -r "{2007-12-20}:{2007-12-30}"
+   $ ~/svn2cl-0.9/svn2cl.sh -o ChangeLog.New -r "{2007-12-30}:{2007-12-20}"
 
    Note that the day of the last svn2cl is used in case new entries were made
    that day following the svn2cl run.
