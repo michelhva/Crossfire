@@ -9,7 +9,7 @@ enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2007-12-22 tchize
+Modified: 2007-12-29 Kevin Bulgrien
 endmsg
 end
 arch woods_2
@@ -31,6 +31,8 @@ y 5
 end
 arch grass
 y 6
+smoothlevel 30
+move_block swim boat
 end
 arch mine10
 y 6
@@ -306,6 +308,7 @@ end
 arch tree
 x 1
 y 15
+smoothlevel 30
 end
 arch grass
 x 1
@@ -478,6 +481,8 @@ end
 arch grass
 x 2
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 2
@@ -697,6 +702,7 @@ end
 arch tree
 x 3
 y 15
+smoothlevel 30
 end
 arch grass
 x 3
@@ -1119,6 +1125,7 @@ end
 arch tree
 x 5
 y 15
+smoothlevel 30
 end
 arch grass
 x 5
@@ -1309,6 +1316,8 @@ end
 arch grass
 x 6
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 6
@@ -1548,6 +1557,7 @@ end
 arch tree
 x 7
 y 15
+smoothlevel 30
 end
 arch grasspond
 x 7
@@ -1746,6 +1756,8 @@ end
 arch grass
 x 8
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 8
@@ -2004,6 +2016,7 @@ end
 arch tree
 x 9
 y 15
+smoothlevel 30
 end
 arch grass
 x 9
@@ -3974,6 +3987,7 @@ end
 arch tree
 x 18
 y 15
+smoothlevel 30
 end
 arch grass
 x 18
@@ -4177,6 +4191,8 @@ end
 arch grass
 x 19
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 19
@@ -4391,6 +4407,7 @@ end
 arch tree
 x 20
 y 15
+smoothlevel 30
 end
 arch grass
 x 20
@@ -4581,6 +4598,8 @@ end
 arch grass
 x 21
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 21
@@ -4808,6 +4827,7 @@ end
 arch tree
 x 22
 y 15
+smoothlevel 30
 end
 arch grass
 x 22
@@ -5064,10 +5084,6 @@ arch grass
 x 23
 y 25
 end
-arch grass
-x 23
-y 26
-end
 arch tree
 x 23
 y 26
@@ -5223,13 +5239,10 @@ arch mine7
 x 24
 y 14
 end
-arch grass
-x 24
-y 15
-end
 arch tree
 x 24
 y 15
+smoothlevel 30
 end
 arch grass
 x 24
@@ -5405,6 +5418,8 @@ end
 arch grass
 x 25
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 25
@@ -5477,10 +5492,6 @@ end
 arch grass
 x 25
 y 25
-end
-arch grass
-x 25
-y 26
 end
 arch tree
 x 25
@@ -5613,21 +5624,14 @@ arch mine6
 x 26
 y 14
 end
-arch grass
-x 26
-y 15
-end
 arch tree
 x 26
 y 15
+smoothlevel 30
 end
 arch grass
 x 26
 y 16
-end
-arch grass
-x 26
-y 17
 end
 arch tree
 x 26
@@ -5636,10 +5640,6 @@ end
 arch grass
 x 26
 y 18
-end
-arch grass
-x 26
-y 19
 end
 arch tree
 x 26
@@ -5678,10 +5678,6 @@ x 26
 y 22
 move_block all
 end
-arch grass
-x 26
-y 23
-end
 arch tree
 x 26
 y 23
@@ -5689,10 +5685,6 @@ end
 arch grass
 x 26
 y 24
-end
-arch grass
-x 26
-y 25
 end
 arch tree
 x 26
@@ -5828,6 +5820,8 @@ end
 arch grass
 x 27
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 x 27
@@ -6010,14 +6004,19 @@ end
 arch brush
 x 28
 y 13
+move_block swim boat
 end
 arch brush
 x 28
 y 14
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 28
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch brush
 x 28
