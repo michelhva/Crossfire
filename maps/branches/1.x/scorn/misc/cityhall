@@ -9,7 +9,7 @@ enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2007-12-10 Kevin Bulgrien
+Modified: 2007-12-31 Kevin Bulgrien
 endmsg
 end
 arch woods_2
@@ -31,6 +31,8 @@ y 5
 end
 arch grass
 y 6
+smoothlevel 30
+move_block swim boat
 end
 arch mine10
 y 6
@@ -88,12 +90,16 @@ y 14
 end
 arch grass
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 y 15
 end
 arch grass
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 y 16
@@ -306,10 +312,13 @@ end
 arch tree
 x 1
 y 15
+smoothlevel 30
 end
 arch grass
 x 1
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 1
@@ -478,10 +487,14 @@ end
 arch grass
 x 2
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 2
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 2
@@ -697,10 +710,13 @@ end
 arch tree
 x 3
 y 15
+smoothlevel 30
 end
 arch grass
 x 3
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 3
@@ -887,10 +903,14 @@ end
 arch grass
 x 4
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 4
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Kjetil T Homme
@@ -915,6 +935,15 @@ x 4
 y 19
 end
 arch grass
+x 4
+y 20
+end
+arch statue
+name Kevin Bulgrien
+msg
+Rayvin Was Here
+And BIB Was Too.
+endmsg
 x 4
 y 20
 end
@@ -1119,10 +1148,13 @@ end
 arch tree
 x 5
 y 15
+smoothlevel 30
 end
 arch grass
 x 5
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 5
@@ -1309,10 +1341,14 @@ end
 arch grass
 x 6
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 6
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Andreas Vogl
@@ -1548,10 +1584,13 @@ end
 arch tree
 x 7
 y 15
+smoothlevel 30
 end
 arch grasspond
 x 7
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 7
@@ -1746,10 +1785,14 @@ end
 arch grass
 x 8
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 8
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tyler Van Gorder
@@ -2004,10 +2047,13 @@ end
 arch tree
 x 9
 y 15
+smoothlevel 30
 end
 arch grass
 x 9
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 9
@@ -2219,10 +2265,14 @@ end
 arch grass
 x 10
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 10
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tony Elmroth
@@ -3708,10 +3758,14 @@ end
 arch grass
 x 17
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 17
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Mikael Olsson
@@ -3927,10 +3981,13 @@ end
 arch tree
 x 18
 y 15
+smoothlevel 30
 end
 arch grass
 x 18
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 18
@@ -4130,10 +4187,14 @@ end
 arch grass
 x 19
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 19
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tero Haatanen
@@ -4344,10 +4405,13 @@ end
 arch tree
 x 20
 y 15
+smoothlevel 30
 end
 arch grass
 x 20
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 20
@@ -4534,10 +4598,14 @@ end
 arch grass
 x 21
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 21
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Lasse Ylitalo
@@ -4761,10 +4829,13 @@ end
 arch tree
 x 22
 y 15
+smoothlevel 30
 end
 arch grass
 x 22
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 22
@@ -4951,10 +5022,14 @@ end
 arch grass
 x 23
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 23
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Peter Mardahl
@@ -5016,10 +5091,6 @@ end
 arch grass
 x 23
 y 25
-end
-arch grass
-x 23
-y 26
 end
 arch tree
 x 23
@@ -5176,17 +5247,16 @@ arch mine7
 x 24
 y 14
 end
-arch grass
-x 24
-y 15
-end
 arch tree
 x 24
 y 15
+smoothlevel 30
 end
 arch grass
 x 24
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 24
@@ -5358,10 +5428,14 @@ end
 arch grass
 x 25
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 25
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Rachel Yotter
@@ -5392,7 +5466,7 @@ end
 arch hedge_2_2_2
 x 25
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 25
@@ -5412,7 +5486,7 @@ end
 arch hedge_2_2_1
 x 25
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 25
@@ -5430,10 +5504,6 @@ end
 arch grass
 x 25
 y 25
-end
-arch grass
-x 25
-y 26
 end
 arch tree
 x 25
@@ -5566,21 +5636,16 @@ arch mine6
 x 26
 y 14
 end
-arch grass
-x 26
-y 15
-end
 arch tree
 x 26
 y 15
+smoothlevel 30
 end
 arch grass
 x 26
 y 16
-end
-arch grass
-x 26
-y 17
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 26
@@ -5589,10 +5654,6 @@ end
 arch grass
 x 26
 y 18
-end
-arch grass
-x 26
-y 19
 end
 arch tree
 x 26
@@ -5605,7 +5666,7 @@ end
 arch hedge_2_1_2
 x 26
 y 20
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -5629,11 +5690,7 @@ end
 arch hedge_2_1_2
 x 26
 y 22
-no_pass 1
-end
-arch grass
-x 26
-y 23
+move_block all
 end
 arch tree
 x 26
@@ -5642,10 +5699,6 @@ end
 arch grass
 x 26
 y 24
-end
-arch grass
-x 26
-y 25
 end
 arch tree
 x 26
@@ -5769,6 +5822,8 @@ end
 arch grass
 x 27
 y 14
+smoothlevel 30
+move_block swim boat
 end
 arch mine12
 x 27
@@ -5781,6 +5836,8 @@ end
 arch grass
 x 27
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 x 27
@@ -5789,6 +5846,8 @@ end
 arch grass
 x 27
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 x 27
@@ -5829,7 +5888,7 @@ end
 arch hedge_2_2_3
 x 27
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5838,7 +5897,7 @@ end
 arch hedge_2_1_1
 x 27
 y 21
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5847,7 +5906,7 @@ end
 arch hedge_2_2_4
 x 27
 y 22
-no_pass 1
+move_block all
 end
 arch swall_1_1_half
 x 27
@@ -5963,14 +6022,19 @@ end
 arch brush
 x 28
 y 13
+move_block swim boat
 end
 arch brush
 x 28
 y 14
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 28
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch brush
 x 28
