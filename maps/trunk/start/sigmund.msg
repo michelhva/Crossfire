@@ -8,41 +8,41 @@
   "match" : "yes|sound fun|sounds fun|experience|teach",
   "pre" : [["proposal","experience"]],
   "post" : [["proposal","pathExplain"]],
-  "msg" : ["Experience comes by adventuring the world, and knowing what your level is. Don't try too difficult things and try to concentrate on your profession and class. If you are a caster, don't just run and bash in the ennemies, you are not solid enough. If you are a barbarian, don't try to cast icestorm at level 1, you are supposed to use your muscles! What are you?"]
+  "msg" : ["Experience comes by adventuring in the world, and knowing what your level is. Don't try too difficult things and do concentrate on your profession and class. If you are a caster, don't just run and bash in the enemies; you are not solid enough. If you are a barbarian, don't try to cast icestorm at level 1, you are supposed to use your muscles! What are you?"]
   }, {
   "match" : "bow|range|archer",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal",""]],
-  "msg" : ["Some people will probably tell you are a coward. But range weapons is by far one of the most difficult path to handle. You need to have your arrows ready, you will need to replace them on a regular basis. And if arrows are magical, the stock is expensive to replace. Not to mention it's not always easy to aim. You still can fight with melee weapons if you are surrounded, but don't take too heavy equipments."]
+  "msg" : ["Some people will probably call you a coward, but ranged weapons are by far one of the most difficult ones to master. You need to have plenty of arrows ready, and will need to replace them on a regular basis. If your arrows are magical, replacing them is expensive. If that isn't enough, note that it is not always easy to aim. You still can fight with melee weapons if you are surrounded, but you probably shouldn't carry around a lot of heavy equipment."]
   }, {
   "match" : "fighter|barbarian|melee",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal",""]],
-  "msg" : ["Relying on your muscles? Don't overlook what magic can do for you. You can wear big armor (unless you are a race without torso? My eyes are not what they used to be), you can use shields and yet you find your way quickly in a pack of monsters. Be careful, when you are surrounded, you can't defend from all sides and you suffer more. A priest in you group can help you heal."]
+  "msg" : ["Relying on your muscles? Don't overlook what magic can do for you.  You can wear heavy armor (unless you are a race without a torso? My eyes are not what they used to be). You can use shields, and can quickly fight your way through a pack of monsters. Be careful when surrounded though; you can't defend from all sides, and will suffer more. If you travel with a priest, they may help you heal more quickly than you could on your own."]
   }, {
   "match" : "caster|mage|magic",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal",""]],
-  "msg" : ["Ah, the magic! Stay away from it! If you really want to know, magic reside on some special body energy named \"mana\", that is converted to spell energy during casting. To know about such convertion you must be skilled in one of the various magical paths and use books or scrolls. With books you can learn spells, whereas scrol just react as a catalyser for your energy that gets destroyed after use. I heard some magical paths are antagonists."]
+  "msg" : ["Ah, the magic! Stay away from it! If you really want to know, magic is conjured from some special body energy, named \"mana\". that is converted to spell energy during casting. To know about such convertion you must be skilled in one of the various magical paths and will need to use books or scrolls. With books you can memorize spells, whereas scrolls just act as a catalyst for your energy, and are destroyed after use. I heard some magical paths are antagonists."]
   }, {
   "match" : "priest",
   "pre" : [["proposal","pathExplain"]],
   "post" : [["proposal","pray"]],
-  "msg" : ["So your fate will lie in the hands of some never seen entity that help you when it is in the mood? If you embrasse the career of a priest, you will need to convert to a god. To do this, find the temple of the god you want to worship and pray over it's altar. To cast a priest spell, you need to be on the good side of your god. The more you pray, the more you are in grace. If your grace becomes low, god may still fulfill your request, or just punish you!"]
+  "msg" : ["So your fate will lie in the hands of some never seen entity that helps you when it is in the right mood? If you embrace the career of a priest, you will need to devote yourself to a god. To do this, find the temple of the god you want to worship and pray on it's altar. To cast a priestly spell, you need to be on the good side of your god. The more you pray, the more you are in his good graces. If your grace becomes low, god may still fulfill your request, or he may just punish you for being so presumptuous!"]
   }, {
   "match" : "pray",
   "pre" : [["proposal","pray"]],
   "post" : [["proposal",""]],
-  "msg" : ["You have, as a priest, a special skill for praying. It allows you to be in grace of our god. As you pray on altars, your god might give you temporary bonuses too, or even drop you some lost artefact. But this is very uncommon!"]
+  "msg" : ["As a priest, you have a special skill for praying. It allows you to stay in the good graces of your god. As you pray on altars, your god might give you temporary bonuses too, or even drop you some lost artifact, but this is very uncommon, and often only occurs later in one's career!"]
   }, {
   "match" : "*",
   "pre" : [["proposal","pathExplain"]],
   "post" : [],
-  "msg" : ["What is your character class? Are you a caster? Or are you more of a priest? A bowier? A fighter!",
+  "msg" : ["What is your character class? Are you a caster? Are you more of a priest? A bowyer? A fighter!",
            "I sense you are a fighter or a priest! What is your class?"
            "That's not helping! Caster, priest, fighter, using range weapons? What is your profession?",
-           "There is no much choise you can make at the start of the game. Either you embrased a caster or priest path, or you embrassed the range weapons or you engaged in melee weapons",
-           "Did i tell you already i killed once a kobold?"]
+           "There is not much choice you can make at the start of the game.  Either you embraced a caster or priest path, or you embraced ranged weapons, or you engaged in the use of melee weapons",
+           "Did I tell you already I once killed a kobold?"]
   }, {
   
   
@@ -50,49 +50,46 @@
   "match" : "yes|bind",
   "pre" : [["proposal","bindings"]],
   "post" : [["proposal","bindings2"]],
-  "msg" : ["Binding is the way to bind a keyboard key to a crossfire action. Lots of actions are available in crossfire. Use the 'help commands' to know about them. To bind the command 'apply', type bind apply then hit the key you want to bind apply to. Various clients for crossfire also provide a custom menu to easily manipulate bindings. There are also default keybindings."]
+  "msg" : ["Binding is a way to associate a keyboard key with a Crossfire action.  Lots of actions are available in Crossfire. Use the 'help commands' to learn about them. To bind the command 'apply', type 'bind apply' then hit the key you want to use to apply things with. Various Crossfire clients provide a custom menu to easily manipulate bindings. There is also a set of default keybindings."]
   }, {
   "match" : "default",
   "pre" : [["proposal","bindings2"]],
   "post" : [["proposal",""]],
-  "msg" : ["There is a basic set of keybindings available to all clients\n' gives immediate access to command box,\nNumpad & arrows allows you to move,\nCtrl enable/disable run mode\nShift enable/disable firing more (for throwing or spell casting)."]
+  "msg" : ["The default set of keybindings is available to all clients\n, picks things up\n' gives immediate access to command box,\nNumpad & arrows allows you to move,\nCtrl enables/disables run mode\nShift enables/disables firing mode (for throwing or spell casting)."]
   }, {
   "match" : "custom|client",
   "pre" : [["proposal","bindings2"]],
   "post" : [],
-  "msg" : ["Yes, clients can help you manipulate keybindings, using also combination of shift, meta or pomme-pomme key. They do this in specialiazed dialog boxes. The GTK client does it using the client -> bindings menu."]
+  "msg" : ["Yes, clients can help you manipulate keybindings, making available combinations of the control, shift, meta or Apple keys. They do this using in specialized dialog boxes. The older GTK client does it using the Client -> Configure -> Keybindings menu, and the newer one uses Client -> Keybindings."]
   }, {
-  
   
   
   "comment" : "**** apply object thread ****",
-  "match" : "apply|more",
+  "match" : "yes|apply|more",
   "pre" : [["proposal","apply"]],
   "post" : [["proposal","bindings"]],
-  "msg" : ["Some objects in crossfire reacts to 'Applying'. To apply an object (lever, sign, ...), just stand above it and type apply This will apply the object you are standing upon. Of course, it might be quite cumbersome to do that again and again. The easiest way is to use the binding of the client. Do you want to know about that?"]
+  "msg" : ["Some objects in Crossfire react to 'Applying'. To apply an object (lever, sign, ...), stand above it and type 'apply'. This applies the object.  Of course, it might be quite cumbersome to do that again and again. The easiest way to apply is to use a binding in the client. Do you want to learn about that?"]
   }, {
-  
   
   
   "comment" : "**** saving thread ****",
   "match": "yes|saving",
   "pre" :[["proposal","saving"]],
-  "post" :[["proposal",""]],
-  "msg" : ["You can not use a bed to reality until you have earned at least one experience point. You must use a bed to reality at least once to have you character saved. You can find beds to reality just southwest of here. You may also want to get extra information on how to apply an object in crossfire."]
+  "post" :[["proposal","apply"]],
+  "msg" : ["You cannot use a bed to reality until you have earned at least one experience point. You must use a bed to reality at least once to have your character saved. You can find beds to reality just southwest of here. Do you want to get more information on how to apply an object in Crossfire."]
   }, {
-  
   
   
   "comment" : "**** bed to reality thread ****",
   "match": "yes|more",
   "pre" :[["proposal","bed"]],
   "post" :[["proposal","bed2"]],
-  "msg" : ["A bed to reality is the way you quit the crossfire world to get back to your real life. While you are in real life, your character is asleep. Nothing can happens to it. But beware for items! Want to know more?"]
+  "msg" : ["A bed to reality is the way you quit the Crossfire world to get back to your real life. While you are in real life, your character is asleep.  Nothing can happen to it, but beware of losing your items! Want to know more?"]
   }, {
   "match": "yes|more",
   "pre" :[["proposal","bed2"]],
   "post" :[["proposal","saving"]],
-  "msg" : ["All items you could have left on the ground may disappear or be stolen by other players. If you want to keep them with you, they must be put in your inventory or in your permanent apartments. Do you want me to tell you about player saving?"]
+  "msg" : ["All items left on the ground while you are in real life may disappear or be stolen by other players. If you want to keep them with you, they must be put into your inventory or in a permanent apartment. Do you want me to tell you about saving your character?"]
   }, {
   
   
@@ -100,8 +97,7 @@
   "match": "yes|food|eat",
   "pre" :[["proposal","food"]],
   "post" :[["proposal",""]],
-  "msg" : ["There are plenty of snacks in the wild world (and in shops). Before going to adventure, always bring your bag of healthy food with you. Don't die starving. If you forget to eat, you might become a bit crazy and eat whatever come by your hand. Take care of poisonned food my lad! I think i saw a safe snack nearby :)
-"]
+  "msg" : ["There are plenty of snacks in the wild world (and in shops). Before going to adventure, always bring a bag of healthy food with you. Don't die starving. If you forget to eat, you might become a bit crazy and eat whatever happens to be in your pack. Beware of poisoned food my lad! I think i saw a safe snack nearby :)"]
   }, {
 
 
@@ -109,48 +105,48 @@
   "match": "yes|heal",
   "pre" :[["proposal","heal"]],
   "post" :[["proposal","heal2"]],
-  "msg" : ["You have hit points in crossfire. If you don't heal after losing life points, you might die. Your character heals naturally. You can also use potions or spells to heal faster. Praying on your god's altar might also proves usefull. You want me to instruct you on dangers in crossfire world? Or, maybe, on natural healing?"]
+  "msg" : ["You have hit points in Crossfire. If you don't heal after losing life points, you might die. Your character heals naturally, but you can also use potions or spells to heal faster. Praying on your god's altar might also prove useful. Do you want me to instruct you on the dangers in the Crossfire world? Or, maybe, on natural healing?"]
   }, {
   "match": "danger|damage",
   "pre" :[["proposal","heal2"]],
   "post" :[["proposal","food"]],
-  "msg" : ["Most wild monsters deal damages. Some of them deal damage faster than other ones. Traps and spells can also deal damage. And food too! Not only is there poisoned food in crossfire, but you *need* to eat! Wanna get some info on eating?"]
+  "msg" : ["Most wild monsters deal damage. Some of them deal damage faster than other ones. Traps and spells can also deal damage. Even some food can damage as there is there poisoned food to be found in Crossfirer, but you *need* to eat! Wanna get some info on eating?"]
   }, {
   "match": "natural|heal",
   "pre" :[["proposal","heal2"]],
   "post" :[["proposal","food"]],
-  "msg" : ["You heal naturally on bigworld. Your wounds will close naturally. As one say, \"to stay healthy, eat often\". Or maybe that was \"one orc chop a day, always healthy\"? Anyway, there is a wide variety of snacks for adventurers, but be careful. Want me to instruct you on food?"]
+  "msg" : ["Your wounds close and heal naturally in Crossfire. If you are taking damage though, it is necessary to eat more often.  As one might say, \"to stay healthy, eat often\". Or maybe that was \"an orc chop a day, keeps the doctor away\"? Anyway, there is a wide variety of snacks for adventurers, but be careful. Want me to instruct you on food?"]
   }, {
   "match": "yes",
   "pre" :[["proposal","heal2"]],
   "post" :[],
   "msg" : ["Yes what?",
-  "Yes i want to know about natural healing? Or yes i want to know about dangerous areas? Are you sure you are listening to me?",
+  "Yes I want to know about natural healing? Or yes I want to know about dangerous areas? Are you sure you are listening to me?",
   "I once killed a kobold, you know?"]
   }, {
   
   
-  
-  "comment" : " ***** generic subjects player might want to abord. Switch to proposal *****",
+  "comment" : " ***** Generic subjects player might want to abord. Switch to proposal *****",
   "match": "bed|reality",
   "pre" :[["dialog","started"]],
   "post" :[["proposal","bed"]],
-  "msg" : ["A bed to reality is the way you quit the crossfire world. Want to know about it?"]
+  "msg" : ["A bed to reality is the way you quit the Crossfire world. Want to know about it?"]
   }, {
   "match": "experience",
   "pre" :[["dialog","started"]],
   "post" :[["proposal","experience"]],
-  "msg" : ["Experience? I *am* a man of experience! I have traveled the world! And if you want, just between you and me, i will teach you about experience. Sound fun?"]
+  "msg" : ["Experience? I *am* a man of experience! I have traveled the world! And if you want, just between you and me, I can teach you about experience. Sound fun?"]
   }, {
   "match": "bind",
   "pre" :[["dialog","started"]],
   "post" :[["proposal","bindings"]],
-  "msg" : ["Bindings links your keyboard to specific crossfire commands. Want to know about it?"]
+  "msg" : ["Bindings links your keyboard to specific Crossfire commands. Want to know about it?"]
   }, {
   "match": "apply|use|item",
   "pre" : [["dialog","started"]],
   "post": [["proposal","apply"]],
-  "msg" : ["You need to learn how to use items if you want to interract with the crossfire world. Want to learn how to do it?"]
+  "msg" : ["You need to learn how to use items if you want to interact with the
+Crossfire world. Want to learn how to do that?"]
   }, {
   "match": "heal|wound",
   "pre" : [["dialog","started"]],
@@ -162,26 +158,25 @@
   "post" : [["proposal",""]],
   "msg" : ["That's ok pal, want something more?",
 "So you think you know everything?\nThose children!",
-"Adventurers, all the same, no time\n for listening old wise Sigmund"]
+"Adventurers, all the same, no time\n to listen to old, wise Sigmund"]
   }, {
-  
   
   
   "comment" : "******  Various non threaded dialogs / basic proposals *****"
   "match" : "spell|cast",
   "pre" : [["dialog","started"]],
   "post": [["proposal",""]],
-  "msg" : ["I am a old wise man, and as a the old wise man i am, i give you this advice.\nStay away from magic!\nIt burns your soul, kill you teammates and, if you use the magic of the gods, it can destroy you. Wild beasts sometimes use magical powers, be careful and if possible use amulets or rings to protect you. My grand grand cousin has a magic shop, \"The Lord of The Rings\", it full of usefull stuffs. A bit expensive thought!"]
+  "msg" : ["I am a old wise man, and as the old wise man I am, I give you this advice.\nStay away from magic!\nIt burns your soul, kills your teammates and, if you use the magic of the gods, it can destroy you. Wild beasts sometimes use magical powers, be careful and if possible use amulets or rings to protect you. My grand grand cousin has a magic shop, \"The Lord of The Rings\", it full of usefull stuff. A bit expensive though!"]
   }, {
   "match" : "*",
   "pre" : [["dialog","0"]],
   "post": [["dialog", "started"]],
-  "msg" : ["Hello, dear newbie. I am a NPC. This mean you can interact with me. To do this, just speak with me. Like all NPCs in crossfire, i react to some words you could say when you are near me (using the 'say <message>' command). Just say you need help, and i'll be glad to help you!"]
+  "msg" : ["Hello, dear newbie. I am an NPC. This means you can interact with me. To do so, just speak to me. Like all NPCs in Crossfire, I react to various words you say when you are near me (using the 'say <message>' command). Just say you need help, and I'll be glad to help you!"]
   }, {
   "match" : "*",
   "pre" : [["dialog","started"]],
   "post": [["proposal","bed"]],
-  "msg" : ["I know everything about what you should do next, where to heal, how to bind keys, how to use items, beds to reality and experience. Would you like me to tell you about beds to reality? That's important in crossfire."]
+  "msg" : ["I know everything about what you should do next: where to heal, how to bind keys, how to use items, beds to reality, and gain experience. Would you like me to tell you about beds to reality? That's important in Crossfire."]
   }
 ]}
 
