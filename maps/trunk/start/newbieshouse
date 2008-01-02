@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2007-12-22 tchize
+Modified: 2008-01-01 Kevin Bulgrien
 endmsg
 end
 arch dungeon_magic
@@ -1244,10 +1244,8 @@ end
 arch sign
 name Gates and doors
 msg
-Some doors and gates actually swing open
-and by triggering a (sometimes hidden) button or switch.
-Be careful not to stand in the way when they swing
-close again...Ouch.
+Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.
+Be careful not to stand in the way when they are swinging open or closed...  Ouch.
 endmsg
 x 4
 y 7
@@ -2756,24 +2754,17 @@ y 5
 end
 arch sign
 msg
-Welcome to crossfire, newbie!
-You are new to this game?
-If this is the case, this map is
-made for you. You will find lots
-of information on how to play
-Crossfire. Want a quick start?
-Speak with Sigmund at the
-entrance. Don't know how to
-speak? just type
+Welcome to Crossfire, newbie!
+If you are new to this game, this map was made for you.
+Here you will find of information on how to play Crossfire.
+Want a quick start?  Speak with Sigmund at the entrance.
+Don't know how to speak?  Just type
 -------
 say hello
 -------
-in the command box of your
-client or use the chat boxes if
-(there are any). You will find lots of signs
-like this one in the game.
-Never forget to read them.
-They give you useful information.
+in the command box of your client or use the chat boxes if (there are any).
+You will find many signs like this one in the game.
+Never forget to read them as they give you useful information.
 endmsg
 x 9
 y 5
