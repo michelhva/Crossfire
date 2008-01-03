@@ -1,7 +1,13 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+Fix include order.
+ common/metaserver.c
+Nicolas Weeger 2008-01-03
+
 Win32 compilation fixes. Remove superflous includes messing everything.
+ common/client.c commands.c item.c metaserver.c newsocket.c p_cmd.c player.c script.c
+ gtk/win32/config.h porting.c
 Nicolas Weeger 2008-01-03
 
 Fix for bug #1825653: Odd number problem with nrof.
