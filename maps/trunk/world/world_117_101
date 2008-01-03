@@ -3,7 +3,7 @@ name world_117_101
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-01-03 Gene Alexander
 endmsg
 outdoor 1
 tile_path_1 world_117_100
@@ -867,10 +867,10 @@ x 3
 y 31
 elevation 526
 end
-arch woods_3
+arch grass
 x 3
 y 32
-elevation 1470
+elevation 526
 end
 arch woods_3
 x 3
@@ -1091,35 +1091,35 @@ x 4
 y 26
 elevation 902
 end
-arch woods_3
+arch grass
 x 4
 y 27
-elevation 1109
+elevation 958
 end
-arch woods_3
+arch grass
 x 4
 y 28
-elevation 1061
+elevation 234
 end
 arch grass
 x 4
 y 29
-elevation 952
+elevation 195
 end
-arch woods_3
+arch grass
 x 4
 y 30
-elevation 1069
+elevation 37
 end
-arch woods_3
+arch grass
 x 4
 y 31
-elevation 1298
+elevation 526
 end
-arch woods_3
+arch grass
 x 4
 y 32
-elevation 1592
+elevation 526
 end
 arch woods_3
 x 4
@@ -1340,35 +1340,35 @@ x 5
 y 26
 elevation 598
 end
-arch woods_3
+arch grass
 x 5
 y 27
-elevation 1195
+elevation 958
 end
 arch grass
 x 5
 y 28
-elevation 865
+elevation 234
 end
-arch woods_3
+arch grass
 x 5
 y 29
-elevation 1537
+elevation 195
 end
-arch woods_3
+arch grass
 x 5
 y 30
-elevation 1451
+elevation 125
 end
-arch woods_3
+arch grass
 x 5
 y 31
-elevation 1358
+elevation 526
 end
-arch woods_3
+arch grass
 x 5
 y 32
-elevation 1215
+elevation 526
 end
 arch grass
 x 5
@@ -1589,25 +1589,25 @@ x 6
 y 26
 elevation 95
 end
-arch woods_3
+arch grass
 x 6
 y 27
-elevation 1049
+elevation 234
 end
-arch woods_3
+arch grass
 x 6
 y 28
-elevation 1710
+elevation 125
 end
-arch woods_3
+arch grass
 x 6
 y 29
-elevation 1898
+elevation 125
 end
-arch woods_3
+arch grass
 x 6
 y 30
-elevation 1505
+elevation 125
 end
 arch grass
 x 6
@@ -1617,7 +1617,7 @@ end
 arch grass
 x 6
 y 32
-elevation 639
+elevation 125
 end
 arch grass
 x 6
@@ -1833,50 +1833,74 @@ x 7
 y 25
 elevation -342
 end
-arch swamp
+arch grass
 x 7
 y 26
-elevation 2
+elevation 95
 end
 arch grass
 x 7
 y 27
 elevation 760
 end
-arch woods_3
+arch darkforest
 x 7
 y 28
-elevation 1753
+elevation 445
 end
-arch woods_3
+arch tree5
+x 7
+y 28
+move_block all
+blocksview 1
+end
+arch darkforest
 x 7
 y 29
-elevation 2049
+elevation 445
 end
-arch woods_3
+arch tree5
+x 7
+y 29
+move_block all
+blocksview 1
+end
+arch darkforest
 x 7
 y 30
-elevation 1420
+elevation 445
 end
-arch grass
+arch tree5
+x 7
+y 30
+move_block all
+blocksview 1
+end
+arch darkforest
 x 7
 y 31
-elevation 15
+elevation 445
+end
+arch tree5
+x 7
+y 31
+move_block all
+blocksview 1
 end
 arch grass
 x 7
 y 32
-elevation 445
+elevation 125
 end
-arch woods_3
+arch grass
 x 7
 y 33
-elevation 1128
+elevation 740
 end
-arch woods_3
+arch grass
 x 7
 y 34
-elevation 1612
+elevation 740
 end
 arch woods_3
 x 7
@@ -1888,14 +1912,10 @@ x 7
 y 36
 elevation 1075
 end
-arch grass_only
+arch tree
 x 7
 y 37
 elevation 2148
-end
-arch tree3
-x 7
-y 37
 end
 arch steppe
 x 7
@@ -2096,40 +2116,64 @@ x 8
 y 27
 elevation 149
 end
-arch woods_3
+arch darkforest
 x 8
 y 28
-elevation 1487
+elevation 445
 end
-arch woods_3
+arch tree5
+x 8
+y 28
+move_block all
+blocksview 1
+end
+arch darkforest
 x 8
 y 29
-elevation 1812
+elevation 445
 end
-arch woods_3
+arch tree5
+x 8
+y 29
+move_block all
+blocksview 1
+end
+arch darkforest
 x 8
 y 30
-elevation 1305
+elevation 445
 end
-arch grass
+arch tree5
+x 8
+y 30
+move_block all
+blocksview 1
+end
+arch darkforest
 x 8
 y 31
-elevation 548
+elevation 445
+end
+arch tree5
+x 8
+y 31
+move_block all
+blocksview 1
 end
 arch grass
 x 8
 y 32
-elevation 88
+elevation 639
 end
-arch woods_3
+arch grass
 x 8
 y 33
-elevation 1052
+elevation 740
 end
-arch woods_3
+arch grass
 x 8
 y 34
-elevation 1777
+elevation 740
 end
 arch woods_3
 x 8
@@ -2345,25 +2389,54 @@ x 9
 y 27
 elevation 260
 end
-arch woods_3
+arch darkforest
 x 9
 y 28
-elevation 1157
+elevation 445
 end
-arch woods_3
+arch tree5
+x 9
+y 28
+move_block all
+blocksview 1
+end
+arch darkforest
 x 9
 y 29
-elevation 1455
+elevation 445
 end
-arch woods_3
+arch tree5
+x 9
+y 29
+move_block all
+blocksview 1
+end
+arch darkforest
 x 9
 y 30
-elevation 1127
+elevation 445
 end
-arch grass
+arch tree5
+x 9
+y 30
+move_block all
+blocksview 1
+end
+arch darkforest
 x 9
 y 31
 elevation 213
+end
+arch archway_tree
+name Pygmy Forest
+slaying /darcap/pygmy_forest/pygmy_forest
+msg
+You enter a dark forest....there seems to be a very evil prescence here...you suddenly remember what its like to feel scared, and you realize you are not alone....
+endmsg
+hp 25
+sp 48
+x 9
+y 31
 end
 arch grass
 x 9
@@ -2373,12 +2446,12 @@ end
 arch grass
 x 9
 y 33
-elevation 365
+elevation 740
 end
-arch woods_3
+arch grass
 x 9
 y 34
-elevation 1570
+elevation 740
 end
 arch woods_3
 x 9
@@ -2410,14 +2483,10 @@ x 9
 y 40
 elevation 3940
 end
-arch grass_only
+arch tree
 x 9
 y 41
 elevation 2778
-end
-arch tree3
-x 9
-y 41
 end
 arch hills
 x 9
@@ -2598,40 +2667,83 @@ x 10
 y 27
 elevation 449
 end
-arch grass
+arch darkforest
 x 10
 y 28
-elevation 874
+elevation 445
 end
-arch grass
+arch tree5
+x 10
+y 28
+move_block all
+blocksview 1
+end
+arch darkforest
 x 10
 y 29
-elevation 917
+elevation 445
 end
-arch grass
+arch tree5
+x 10
+y 29
+move_block all
+blocksview 1
+end
+arch darkforest
 x 10
 y 30
-elevation 808
+elevation 445
 end
-arch grass
+arch tree5
+x 10
+y 30
+move_block all
+blocksview 1
+end
+arch darkforest
 x 10
 y 31
-elevation 752
+elevation 445
+end
+arch tree5
+x 10
+y 31
+move_block all
+blocksview 1
 end
 arch grass
 x 10
 y 32
-elevation 403
+elevation 740
 end
-arch woods_3
+arch bones5
+name Remains of a dead adventurer
+msg
+A rotting corpse holding a note.
+endmsg
+x 10
+y 32
+type 122
+material 0
+no_pick 1
+arch note
+msg
+Do not enter the forest! It is inhabited by some evil creatures more powerful than any I have previously met!  I was just exploring and came by this place and entered it..then I saw some creatures and attempted to slay them but failed.....I barely escaped the forest...my escape was in vain however, the wounds I received are sure to kill me, and I think I am poisoned....I write this note as a warning to any adventurers who come across this forest...do not enter if you wish to live...though, as I lay dieing, I wonder what all these creatures could be protecting...
+
+(This is a very dangerous map, only experienced lvl 100ish chars should attempt to clear it)
+endmsg
+no_pick 1
+end
+end
+arch grass
 x 10
 y 33
-elevation 1103
+elevation 740
 end
-arch woods_3
+arch grass
 x 10
 y 34
-elevation 2561
+elevation 740
 end
 arch steppe
 x 10
@@ -2847,40 +2959,64 @@ x 11
 y 27
 elevation 660
 end
-arch grass
+arch darkforest
 x 11
 y 28
-elevation 553
+elevation 445
 end
-arch grass
+arch tree5
+x 11
+y 28
+move_block all
+blocksview 1
+end
+arch darkforest
 x 11
 y 29
-elevation 27
+elevation 445
 end
-arch grass
+arch tree5
+x 11
+y 29
+move_block all
+blocksview 1
+end
+arch darkforest
 x 11
 y 30
-elevation 113
+elevation 445
+end
+arch tree5
+x 11
+y 30
+move_block all
+blocksview 1
+end
+arch darkforest
+x 11
+y 31
+elevation 445
+end
+arch tree5
+x 11
+y 31
+move_block all
+blocksview 1
 end
 arch grass
 x 11
-y 31
-elevation 793
-end
-arch woods_3
-x 11
 y 32
-elevation 1556
+elevation 639
 end
-arch woods_3
+arch grass
 x 11
 y 33
-elevation 2266
+elevation 740
 end
-arch steppe
+arch grass
 x 11
 y 34
-elevation 3022
+elevation 740
 end
 arch steppe
 x 11
@@ -3096,10 +3232,10 @@ x 12
 y 27
 elevation 759
 end
-arch beach
+arch grass
 x 12
 y 28
-elevation 324
+elevation 151
 end
 arch grass
 x 12
@@ -3111,25 +3247,25 @@ x 12
 y 30
 elevation 102
 end
-arch desert
+arch grass
 x 12
 y 31
-elevation 579
+elevation 266
 end
-arch woods_3
+arch grass
 x 12
 y 32
-elevation 1570
+elevation 740
 end
-arch woods
+arch grass
 x 12
 y 33
-elevation 2171
+elevation 740
 end
-arch woods
+arch grass
 x 12
 y 34
-elevation 2680
+elevation 740
 end
 arch woods
 x 12
@@ -3353,7 +3489,7 @@ end
 arch grass
 x 13
 y 29
-elevation 88
+elevation 151
 end
 arch beach
 x 13
@@ -3370,15 +3506,15 @@ x 13
 y 32
 elevation 740
 end
-arch woods_3
+arch grass
 x 13
 y 33
-elevation 1079
+elevation 740
 end
-arch woods
+arch grass
 x 13
 y 34
-elevation 1407
+elevation 740
 end
 arch woods
 x 13
@@ -3617,17 +3753,17 @@ end
 arch grass
 x 14
 y 32
-elevation 61
+elevation 740
 end
 arch grass
 x 14
 y 33
-elevation 126
+elevation 740
 end
 arch grass
 x 14
 y 34
-elevation 96
+elevation 740
 end
 arch beach
 x 14
