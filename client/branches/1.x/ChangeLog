@@ -1,6 +1,9 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+Win32 compilation fixes. Remove superflous includes messing everything.
+Nicolas Weeger 2008-01-03
+
 Fix for bug #1825653: Odd number problem with nrof.
  common/item.c: nrof is unsigned int32.
 Nicolas Weeger 2007-12-01

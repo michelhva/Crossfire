@@ -33,8 +33,6 @@ const char *rcsid_common_metaserver_c =
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
-#else
-#include <windows.h>
 #endif /* WIN32 */
 
 #include <ctype.h>
