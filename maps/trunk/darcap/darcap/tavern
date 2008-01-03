@@ -1,13 +1,15 @@
 arch map
-name Cameron's Tavern
-difficulty 1
+name tavern
 region darcap
 width 26
 height 19
 enter_x 19
 enter_y 13
 msg
-Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
+Creator: Cater/Wade
+Email: john_cater@yahoo.com
+Date: Fri Jan 15 12:02:40 1999
+Modified: 2008-01-03 Gene Alexander
 endmsg
 end
 arch cobblestones2
@@ -632,7 +634,7 @@ end
 arch table_4
 x 6
 y 7
-move_block all
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -645,7 +647,7 @@ end
 arch table_4
 x 6
 y 8
-move_block all
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -658,7 +660,7 @@ end
 arch table_4
 x 6
 y 9
-move_block all
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -671,7 +673,7 @@ end
 arch table_4
 x 6
 y 10
-move_block all
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -684,7 +686,7 @@ end
 arch table_4
 x 6
 y 11
-move_block all
+no_pass 1
 end
 arch magic_banned
 x 6
@@ -1091,6 +1093,23 @@ end
 arch chair_1.1
 x 9
 y 9
+end
+arch elf_man
+name Frightened Elf Man
+msg
+@match nightmares
+Yes, I keep having a nightmare where the Pygmys slaughter me and then eat me..like what I saw them doing to their prisoners when I stumbled upon that forest...
+
+@match pygmy|Pygmy|forest|Forest
+The Pygmys are these evil little creatures that live in a forest on an island north and slightly east of this town...I had to use dimension door to get there...they are really dangerous and I'm sure they are guarding something in that forest...
+
+@match *
+I still have nightmares about my visit to the Pygmy Forest.
+endmsg
+x 9
+y 9
+move_type 0
+no_damage 1
 end
 arch magic_banned
 x 9
@@ -1804,7 +1823,7 @@ Enter the courthouse and you will
 understand me.
 The major difficulty is finding the
 places that are involved in this
-quest. E.g. I suspect the high volcano
+quest. E.g. I suspect the high volcanoe
 poses the fire-part...
 @match *
 I've devoted myself to the elemental
@@ -2210,7 +2229,7 @@ end
 arch ninja2
 msg
 @match [Ll]and|[Ee]xiled
-I lived north-east from here, until I took a
+I lived north-east from here, untill I took a
 boat out to talk to a forginer like you.
 They didn't let me go back.
 @match *
@@ -2606,7 +2625,7 @@ msg
 @match no|library|spell
 It's located in a mountain village,
 not far from here. Take a few
-gold coins with you, I believe they
+goldcoins with you, I believe they
 charge for a small entrance fee.
 @match *
 Did you know that there is a huge
@@ -2620,7 +2639,6 @@ y 5
 level 10
 type 0
 randomitems none
-move_type walk
 monster 1
 friendly 1
 end
