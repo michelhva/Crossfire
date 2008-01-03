@@ -55,7 +55,7 @@
   "match" : "default",
   "pre" : [["proposal","bindings2"]],
   "post" : [["proposal",""]],
-  "msg" : ["The default set of keybindings is available to all clients\n, picks things up\n' gives immediate access to command box,\nNumpad & arrows allows you to move,\nCtrl enables/disables run mode\nShift enables/disables firing mode (for throwing or spell casting)."]
+  "msg" : ["The default set of keybindings is available to all clients\n, picks things up\n' gives immediate access to command box,\nNumpad & arrows allows you to move,\nCtrl enables/disables run mode\nShift enables/disables firing mode (for throwing or spell casting).\ns may be used to search your surroundings.\nd is useful for disarming traps.\nThere are probably others too, but give this old man a break, eh?"]
   }, {
   "match" : "custom|client",
   "pre" : [["proposal","bindings2"]],
