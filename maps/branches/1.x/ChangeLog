@@ -1,3 +1,14 @@
+2008-01-03 23:00  kbulgrien
+
+        * start/newbieshouse : This is primarily a merge down from trunk to
+          remove line breaks and rework some message content, but Sigmund
+          cannot be merged down due to the fact that cfdialog is not in the
+          branch server.  Sigmund was quite broken though, and offered to
+          tell about things he did not know about.  To fix this, some of the
+          new trunk content was added to Sigmund, Manu, and the Doorman to
+          improve this introduction, but all of the new content in trunk has
+          not been added.
+
 2007-12-31 19:30  kbulgrien
 
         * scorn/misc/cityhall : Merge from trunk various smoothing fixes and
