@@ -1,7 +1,7 @@
 Object peace
 name peace
 other_arch peacemaker
-face archangel.118
+face highangel.118
 move_on walk fly_low
 wc -90
 move_type fly_low
