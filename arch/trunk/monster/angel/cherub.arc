@@ -1,7 +1,7 @@
 Object cherub
 race angel
 name cherub
-face cupid.111
+face cherub.111
 monster 1
 move_type walk fly_low
 see_invisible 1
