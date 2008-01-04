@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-01-03 Kevin Bulgrien
 endmsg
 end
 arch dungeon_magic
@@ -131,7 +131,7 @@ y 17
 end
 arch mountain3
 y 17
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic
@@ -540,7 +540,7 @@ x 2
 end
 arch mountain
 x 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -549,7 +549,7 @@ end
 arch mountain
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1244,10 +1244,8 @@ end
 arch sign
 name Gates and doors
 msg
-Some doors and gates actually swing open
-and by triggering a (sometimes hidden) button or switch.
-Be careful not to stand in the way when they swing
-close again...Ouch.
+Some doors and gates automatically swing open by triggering a (sometimes hidden) button or switch.
+Be careful not to stand in the way when they are swinging open or closed...  Ouch.
 endmsg
 x 4
 y 7
@@ -1591,30 +1589,32 @@ arch guildmaster
 name Manu
 title crazy key binder
 msg
+@match bind|default|key|no|tell
+The default set of keybindings is available to all clients:
+, picks things up
+' gives immediate access to command box
+Numpad & arrows allows you to move
+Ctrl enables/disables run mode
+Shift enables/disables firing mode (for throwing or spell casting)
+s may be used to search your surroundings.
+d is useful for disarming traps.
+There are probably others too, but give this crazy dude a break, eh?
 @match *
 Hello,
-I will teach you how to use
-keybindings. There are two ways
-to do so. The first is to use the
-keybinding window provided
-with your client (see documentation
-of client for additional help).
-The second is to use the command
-'bind <command>'. Your client
-will then ask you to push the key
-you want to associate with
-<command>.
-Let's try and example. type
-the command
+I will teach you how to use keybindings.
+There are two ways to bind commands to keys.
+The first is to use the keybinding window provided with your client (see the client for additional help).
+The second is to use the command 'bind <command>'. Your client will then ask you to push the key you want to associate with <command>.
+Let's try and example. type the command
 ---------
 bind apply
 ---------
-and push the key 'a' when your
-client asks for a key. Is it done?
-Congratulation, you have done
-your first keybinding! Now each
-time you push the key 'a' you
-will apply an item on the ground.
+then push the key 'a' when your client asks for a key.
+Is it done?
+Congratulations, you have performed your first keybinding!
+Now each time you push the key 'a' you will apply an item on the ground.
+By the way there are various default keybindings that are already set up.  I'd
+be glad to tell you about them.
 endmsg
 x 5
 y 12
@@ -1954,7 +1954,7 @@ arch check_inv
 hp 1
 x 6
 y 15
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1968,7 +1968,7 @@ arch check_inv
 hp 1
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2251,12 +2251,11 @@ end
 arch sign
 msg
 -------------------
-Tutorial: fighting
+Tutorial: Fighting
 Get your first experience points!
-Ants are the most easy to kill
-creatures in the world of crossfire.
-To fight, nothing is more easy.
-Just run into the ants.
+Ants are the easiest creatures to kill in the world of Crossfire.
+Nothing is easier than fighting.  Just run into the ants.
+Go ahead, you can kill them!
 -------------------
 endmsg
 x 7
@@ -2294,32 +2293,26 @@ end
 arch sign
 msg
 -------------------
-Tutorial: traps
-Searching for traps can save
-your life in crossfire. Some traps
-are difficult to find, others are
-easy. Some traps are dangerous,
-others are harmless. To find a
-trap, use your traps finding
-skill. To do so, type
+Tutorial: Traps
+Searching for traps can save your life in Crossfire.
+Some traps are difficult to find, others are easy.
+Some traps are dangerous, others are harmless.
+To find a trap, use your trap finding skills by typing
 ------
 use_skill find traps
 ------
-You may need to disarm them,
-so you can continue your way
-fully secure. To disarm a trap,
-use the command
+but it is a lot easier to use the default "s" keybinding to find traps.
+Some traps are hard to find, so you might want to search a number of times.
+If you find a trap, disarm them so you can continue your way fully secure.
+To disarm a trap, use the command
 ------
 use_skill disarm traps
 ------
-It is really useful to bind those
-skills to keys, since they
-are used a lot in the game.
-If you don't know how to bind
-a key, talk with Manu, 'the crazy
-key binder' north from here.
-Now, follow the black marbled
-path and try to find traps around.
+If at first you do not succeed, try, try again. 
+The "d" key is bound to the disarm command by default.
+It is really useful to use keybindings for these actions since they are used a lot.
+Now follow the black marbled path and try to find and disarm all the traps.
+Are you confused yet?
 -------------------
 endmsg
 x 7
@@ -2362,36 +2355,29 @@ x 7
 y 22
 end
 arch farmer
-name doorman
+name Doorman
 msg
+@match heal
+You have hit points in Crossfire. If you don't heal after losing life points, you might die. Your character heals naturally, but you can also use potions or
+spells to heal faster. Praying on your god's altar might also prove useful.
+You might want to know that you have to eat more often while healing.
+There is a wide variety of food for adventurers, but be careful, some of it is poisonous.
+@match poison
+If you have unidentified food in your pack, take care.  What might look like a
+good snack might harm instead of help.
+Food has to be identified to find out if it is poisonous or not.
 @match *
-So you are ready for the world
-of crossfire? You will need to use
-the knowledge you learned
-in the tutorials to go outside.
-There is no way back. You
-can find beds to reality at Inns.
-One more thing:
-Some places will be inaccessible
-until you reach level 3. In the
-beginning, you won't be able to
-use magic or wisdom. When you
-are level 5 you can go to the city
-hall to get a teleporter for the
-famous city of Scorn.
-Never mind speaking with other
-players. The commands shout, say
-and tell are very useful. The
-command chat is useful too, but you
-have to be listening carefully to
-hear it. So use the command
-'listen 10' to do that.
-After you do that, if you
-get tired of all that noise use
-'listen 9' to ignore it.
-And don't forget the most useful
-command:
-help
+So you are ready for the world of Crossfire?
+If you don't know about healing, you might want to ask about it before going
+on.
+If not, to go outside, use the knowledge you have just learned in the tutorials.
+There is no way back once you pass through the passageway ahead.
+You can find beds of reality at Inns.
+If you get stuck, try speaking to other players.
+The commands 'shout', 'say', and 'tell' are very useful.
+The chat command is useful too, but you have to listen carefully to hear replies, so use the command 'listen 10' to do that.
+If you get tired of all that chat noise, use 'listen 9' to ignore it.
+And, as a parting word to the wise, don't forget the most useful command: 'help'.
 endmsg
 x 7
 y 22
@@ -2746,11 +2732,13 @@ y 4
 end
 arch marker
 slaying quest initial training start
+msg
+Go through the newbiehouse, and learn how to play the game.
+endmsg
 food 0
 x 9
 y 4
 speed 1.0
-Go through the newbiehouse, and learn how to play the game.
 end
 arch dungeon_magic
 x 9
@@ -2762,24 +2750,17 @@ y 5
 end
 arch sign
 msg
-Welcome to crossfire, newbie!
-You are new to this game?
-If this is the case, this map is
-made for you. You will find lots
-of information on how to play
-Crossfire. Want a quick start?
-Speak with Sigmund at the
-entrance. Don't know how to
-speak? just type
+Welcome to Crossfire, newbie!
+If you are new to this game, this map was made for you.
+Here you will find of information on how to play Crossfire.
+Want a quick start?  Speak with Sigmund at the entrance.
+Don't know how to speak?  Just type
 -------
 say hello
 -------
-in the command box of your
-client or use the chat boxes if
-(there are any). You will find lots of signs
-like this one in the game.
-Never forget to read them.
-They give you useful information.
+in the command box of your client or use the chat boxes if (there are any).
+You will find many signs like this one in the game.
+Never forget to read them as they give you useful information.
 endmsg
 x 9
 y 5
@@ -3133,13 +3114,10 @@ y 16
 end
 arch sign
 msg
-If you have a ranged weapon this would be a good chance
-to practice firing it at some ants.  First you ready the weapon,
-then hold down the fire key and press the direction
-key for the direction you wish to fire your missile.
-Fire is usually bound to <shift> key and the directions
-you would have learned already to even get to this sign.
-Make sure you always have enough ammo!
+If you have a ranged weapon this would be a good chance to practice firing it at the ants.
+First you ready the weapon, then hold down the fire key and press a direction key to fire a missile.
+Fire is usually bound to the <shift> key by now you must know what direction keys are to have gotten as far as this sign.
+Make sure to keep enough ammo on hand!
 endmsg
 x 10
 y 16
@@ -3330,47 +3308,25 @@ end
 arch guildmaster
 name Sigmund
 msg
-@match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality
-A bed to reality is the way you quit
-the crossfire world to get back to
-your real life. While you are in
-real life, your character is asleep.
-Nothing can happens to it. But
-beware! If you use a bed to
-reality all items you could have
-left on the ground may disappear
-or be stolen by other players. If
-you want to keep them with you,
-they must be put in your inventory
-or in your permanent apartments.
-You can not use a bed to reality
-until you have earned at least
-one experience point. You must
-use a bed to reality at least
-once to have you character saved.
-You can find beds to reality
-just southwest of here.
-You may also want to get
-extra information on how to
-apply an object in crossfire.
+@match yes|bed|reality
+A bed to reality is the way you quit the Crossfire world to get back to your real life.
+While you are in real life, your character is asleep.  Nothing can happen to it.
+But beware! If you use a bed to reality all items you left on the ground could disappear or be stolen by other players.
+If you want to keep them with you, they must be put in your inventory or in your permanent apartment.
+You can not use a bed to reality until you have earned at least one experience point, and you must use a bed to reality at least once to have you character saved.
+You can find beds to reality just southwest of here.
+You may also want to get extra information on how to apply an object in Crossfire.
+@match apply|object
+Some objects in Crossfire react to 'Applying'. To apply an object (lever, sign, ...), stand above it and type 'apply'. This applies the object.  Of course, it might be quite cumbersome to do that again and again. The easiest way to apply is to use a binding in the client.
+@match binding|key|client
+Manu will be glad to teach you all about that.  You'll find him to the south a
+ways.
 @match *
-Hello, dear newbie. I am a NPC.
-This mean you can interact with
-me. To do this, just speak with me.
-Like all NPCs in crossfire, i react
-to some words you could say when
-you are near me (using the
-'say <message>' command).
-If you want some additional
-information, just ask me.
-I know everything about what
-you should do next, where to heal,
-how to bind keys, how to use items,
-beds to reality and experience.
-Would you like me to tell you
-about beds to reality? That's one
-of the most important things in
-crossfire.
+Hello, dear newbie. I am a NPC. That means you can interact with me. To do so, just speak to me.
+Like all NPCs in Crossfire, I react to words you say when you are near me (using the 'say <message>' command).
+If you want additional information, just ask me, or the other NPCs you see standing around.
+We know a lot about what you should do next, where to heal, how to bind keys, how to use items, beds to reality and experience.  One of the best ways to find out what an NPC knows about is to just say hi, or hello.
+Would you like me to tell you about beds to reality? That's one of the most important things in Crossfire.
 endmsg
 x 11
 y 7
@@ -3443,27 +3399,16 @@ end
 arch sign
 msg
 -------------------
-Tutorial: using items
-To use items in crossfire,
-there are 2 ways. The first is
-to use mouse buttons in your
-inventory. The second is to
-use the command
+Tutorial: Using items
+To use items in Crossfire, there are two basic methods.
+The first is to use mouse buttons on your inventory.
+The second is to use the command
 -----
 apply
 -----
-which will use the first object on
-the ground where you are standing.
-Of course it isn't easy to type
-the command each time you want
-to use a lever on the ground or
-eat some food. I recommend you
-bind the command to a key.
-If you don't know how to do so,
-i recommend you follow the
-binding tutorial on your left
-and talk with Manu, the crazy
-key binder.
+which uses the top object on the ground where you are standing.
+Of course it isn't easy to type the command each time you want to use a lever or eat some food.  I recommend you bind the command to a key.
+If you don't know how to do bind commands to keys, follow the binding tutorial by talking to Manu, the crazy key binder.  He is to your left.
 -------------------
 endmsg
 x 11
@@ -3537,17 +3482,10 @@ end
 arch sign
 msg
 -------------------
-Tutorial: books
-You will find a lot of books
-in the crossfire world. Their
-content is not always
-interesting. Some are so
-difficult your character may
-not understand them.
-But there is one important
-fact with books:
-Reading them may brings you
-some experience.
+Tutorial: Books
+You will find a lot of books in the Crossfire world.
+Some are so difficult your character may not understand them.
+Not everyone finds all books interesting, but one important fact is: Reading them often yields experience.
 Simply apply a book to read it.
 -------------------
 endmsg
@@ -3585,19 +3523,12 @@ end
 arch sign
 msg
 -------------------
-Tutorial: food
-You need to eat in crossfire, or
-you'll starve. Never forget to
-carry food with you. When you cast
-spells or are healing, you are
-consuming more food than usual.
-When your food level reach zero, you
-begin to lose life very fast.
-If you carry food with you and your
-food level reach zero, your character
-will randomly eat some of it. You want
-food now? Go near the altar and
-say food
+Tutorial: Food
+You need to eat in Crossfire or you'll starve.  Never forget to carry food with you.
+When you cast spells or are healing, you consume more food than usual.
+If your food level reaches zero, you begin to lose hit points very fast.
+If you carry food with you and your food level reaches zero, your character will randomly eat some of it.
+Would you like some more food now?  If so, go near the altar and say food.
 -------------------
 endmsg
 x 11
@@ -3929,7 +3860,7 @@ end
 arch woodfloor2
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch altar
 food 0
@@ -4471,8 +4402,7 @@ y 13
 end
 arch sign
 msg
-This door will open when you
-walk near it.
+This door opens when you walk near it.
 endmsg
 x 14
 y 13
@@ -4625,7 +4555,7 @@ arch check_inv
 hp 1
 x 14
 y 26
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -4695,11 +4625,9 @@ y 4
 end
 arch sign
 msg
-Keys can also be used to open locked chests.
-Not all chests are locked and some doors
-and chests are trapped so use caution.
-This chest is locked and by chance the key to
-open it is right here.
+Keys can also be used to open locked chests, but not all chests are locked.
+Beware, though, as some doors and chests are trapped. Use caution.
+This chest is locked by chance the key to open it is right here.
 endmsg
 x 15
 y 4
@@ -4770,20 +4698,11 @@ end
 arch sign
 msg
 Doors.
-There are many varieties of door
-the most basic type is a simple closed
-door.  You can open this type of door
-with a generic key like the one beside this sign.
-If you have no key you can try to break
-the door down by attacking it.
-If you have the skill lockpicking
-you can try to open the door that way
-too by typing 'ready_skill lockpicking'
-then 'firing' (usually pressing shift + <direction>)
-towards the door like you would fire
-an arrow or a bolt.
-There are also locked doors which
-can only be opened with special keys...
+There are many varieties of door.
+The most basic type is a simple closed door.  You can open this kind of door with a generic key like the one beside this sign.
+If you have no keys you can try to break the door down by attacking it.
+If you have the lockpicking skill you can try to open the door by typing 'ready_skill lockpicking' and then 'firing' (usually pressing shift + <direction>) towards the door like you would fire an arrow or a bolt.
+There are also locked doors which can only be opened with special keys...
 endmsg
 x 15
 y 9
@@ -5012,7 +4931,7 @@ x 16
 end
 arch mountain
 x 16
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5021,7 +4940,7 @@ end
 arch mountain
 x 16
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -5829,7 +5748,7 @@ end
 arch mountain3
 x 18
 y 23
-no_pass 1
+move_block all
 is_floor 1
 end
 arch dungeon_magic
