@@ -2,9 +2,9 @@ Object HighAngel
 randomitems high_angel
 name High Angel
 race angel
-face archangel.118
+face highangel.118
 color_fg white
-animation archangel
+animation highangel
 monster 1
 move_type walk fly_low
 sleep 1

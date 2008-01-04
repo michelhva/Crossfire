@@ -1,8 +1,8 @@
 Object valriel_avatar
-face archangel.115
+face highangel.115
 slaying demon
 race angel
-animation archangel
+animation highangel
 Str 30
 Con 30
 Dex 30

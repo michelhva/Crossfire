@@ -1,10 +1,10 @@
 # supernatural -- lord of angels Valriel
 Object Valriel
 title Gorokh
-face archangel.115
+face highangel.115
 slaying demon
 race angel
-animation archangel
+animation highangel
 Str 30
 Con 30
 Dex 30
