@@ -127,11 +127,12 @@ public class GUIMagicMap extends GUIElement
             synchronized (mybuffer)
             {
                 final Graphics2D g = mybuffer.createGraphics();
+                final CfMap map = CfMapUpdater.getMap();
                 final int dx = evt.getDX()*TILE_SIZE;
                 final int dy = evt.getDY()*TILE_SIZE;
                 if (Math.abs(dx) >= w || Math.abs(dy) >= h)
                 {
-                    g.fillRect(0, 0, w, h);
+                    redrawTiles(g, map, 0, 0, w/TILE_SIZE, h/TILE_SIZE);
                 }
                 else
                 {
@@ -139,22 +140,22 @@ public class GUIMagicMap extends GUIElement
                     g.setColor(Color.BLACK);
                     if (dx < 0)
                     {
-                        g.fillRect(0, 0, -dx, h);
+                        redrawTiles(g, map, 0, 0, -dx/TILE_SIZE, h/TILE_SIZE);
                     }
                     else if (dx > 0)
                     {
-                        g.fillRect(w-dx, 0, dx, h);
+                        redrawTiles(g, map, w/TILE_SIZE-dx/TILE_SIZE, 0, w/TILE_SIZE, h/TILE_SIZE);
                     }
                     if (dy < 0)
                     {
-                        g.fillRect(0, 0, w, -dy);
+                        redrawTiles(g, map, 0, 0, w/TILE_SIZE, -dy/TILE_SIZE);
                     }
                     else if (dy > 0)
                     {
-                        g.fillRect(0, h-dy, w, dy);
+                        redrawTiles(g, map, 0, h/TILE_SIZE-dy/TILE_SIZE, w/TILE_SIZE, h/TILE_SIZE);
                     }
                 }
-                redrawSquare(g, CfMapUpdater.getMap(), (CrossfireServerConnection.MAP_WIDTH-1)/2-evt.getDX(), (CrossfireServerConnection.MAP_HEIGHT-1)/2-evt.getDY());
+                redrawSquare(g, map, (CrossfireServerConnection.MAP_WIDTH-1)/2-evt.getDX(), (CrossfireServerConnection.MAP_HEIGHT-1)/2-evt.getDY());
                 markPlayer(g);
                 g.dispose();
             }
@@ -234,6 +235,34 @@ public class GUIMagicMap extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
+    }
+
+    /**
+     * Redraw a rectangular area of tiles.
+     *
+     * @param g The graphics to draw into.
+     *
+     * @param map The map to draw.
+     *
+     * @param x0 The left edge to redraw (inclusive).
+     *
+     * @param y0 The top edge to redraw (inclusive).
+     *
+     * @param x1 The right edge to redraw (exclusive).
+     *
+     * @param y1 The bottom edge to redraw (exclusive).
+     */
+    private void redrawTiles(final Graphics2D g, final CfMap map, final int x0, final int y0, final int x1, final int y1)
+    {
+        for (int x = x0; x < x1; x++)
+        {
+            for (int y = y0; y < y1; y++)
+            {
+                final int xx = x-offsetX/TILE_SIZE;
+                final int yy = y-offsetY/TILE_SIZE;
+                redrawSquare(g, map, xx, yy);
+            }
+        }
     }
 
     /**
