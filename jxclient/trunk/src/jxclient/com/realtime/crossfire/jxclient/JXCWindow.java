@@ -1586,14 +1586,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void sendReply(final String reply)
     {
         setStatus(JXCWindow.Status.PLAYING);
-        try
-        {
-            myserver.sendReply(reply);
-        }
-        catch (final Exception ex)
-        {
-            ex.printStackTrace();
-        }
+        myserver.sendReply(reply);
         closeQueryDialog();
     }
 

@@ -126,15 +126,8 @@ public class GUIItemFloor extends GUIItemItem
         {
             return;
         }
-        try
-        {
-            jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-            System.exit(0);
-        }
+
+        jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
     }
 
     /* {@inheritDoc} */
@@ -145,17 +138,9 @@ public class GUIItemFloor extends GUIItemItem
         {
             return;
         }
-        try
+        if (ItemsList.getItemsManager().getPlayer() != null)
         {
-            if (ItemsList.getItemsManager().getPlayer() != null)
-            {
-                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
-            }
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-            System.exit(0);
+            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
         }
     }
 

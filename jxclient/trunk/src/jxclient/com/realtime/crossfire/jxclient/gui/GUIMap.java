@@ -401,16 +401,8 @@ public class GUIMap extends GUIElement
         case MouseEvent.BUTTON1:
             final int dx = e.getX()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
             final int dy = e.getY()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
-            try
-            {
-                final JXCWindow jxcw = (JXCWindow)e.getSource();
-                jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
-            }
-            catch (final Exception ex)
-            {
-                ex.printStackTrace();
-                System.exit(0);
-            }
+            final JXCWindow jxcw = (JXCWindow)e.getSource();
+            jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
             break;
 
         case MouseEvent.BUTTON2:

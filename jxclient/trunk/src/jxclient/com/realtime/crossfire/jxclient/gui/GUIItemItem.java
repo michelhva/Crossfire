@@ -87,14 +87,6 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
-        try
-        {
-            jxcw.getCrossfireServerConnection().sendApply(item.getTag());
-        }
-        catch (final Exception ex)
-        {
-            ex.printStackTrace();
-            System.exit(0);
-        }
+        jxcw.getCrossfireServerConnection().sendApply(item.getTag());
     }
 }
