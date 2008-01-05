@@ -101,12 +101,12 @@ public abstract class AbstractButton extends ActivatableGUIElement
             if (autoRepeat)
             {
                 Timeouts.remove(timeoutEvent);
-                setActive(false);
             }
             else
             {
                 execute();
             }
+            setActive(false);
             break;
 
         case MouseEvent.BUTTON2:
@@ -125,14 +125,11 @@ public abstract class AbstractButton extends ActivatableGUIElement
         switch (b)
         {
         case MouseEvent.BUTTON1:
+            setActive(true);
             if (autoRepeat)
             {
                 execute();
                 Timeouts.reset(TIMEOUT_FIRST, timeoutEvent);
-            }
-            else
-            {
-                setActive(true);
             }
             break;
 
@@ -144,22 +141,21 @@ public abstract class AbstractButton extends ActivatableGUIElement
         }
     }
 
+    /** {@inheritDoc} */
+    @Override public void mouseExited(final MouseEvent e)
+    {
+        if (autoRepeat)
+        {
+            Timeouts.remove(timeoutEvent);
+        }
+        setActive(false);
+    }
+
     /**
      * Execute the command actions.
      */
     public void execute()
     {
-        setActive(true);
-        try
-        {
-            commandList.execute();
-        }
-        finally
-        {
-            if (!autoRepeat)
-            {
-                setActive(false);
-            }
-        }
+        commandList.execute();
     }
 }
