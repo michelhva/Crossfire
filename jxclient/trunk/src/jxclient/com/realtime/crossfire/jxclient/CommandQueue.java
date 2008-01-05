@@ -19,7 +19,10 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.server.CrossfireComcListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Maintains the pending (ncom) commands sent to the server.
@@ -29,14 +32,56 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 public class CommandQueue
 {
     /**
+     * Maximum number of pending commands sent to the server. Excess commands
+     * will be dropped.
+     */
+    public static final int MAX_PENDING_COMMANDS = 4;
+
+    /**
      * The server connection for sending ncom commands.
      */
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
+     * Records command ids of commands sent to the server for which no comc
+     * commands has been received. Note that the size may be larger than {@link
+     * #MAX_PENDING_COMMANDS} due to "must send" commands.
+     */
+    private final List<Integer> pendingCommands = new LinkedList<Integer>();
+
+    /**
      * The default repeat counter for ncom commands.
      */
     private int repeatCount = 0;
+
+    /**
+     * The listener to track comc commands.
+     */
+    private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener()
+    {
+        /** {@inheritDoc} */
+        public void commandComcReceived(final int packetNo, final int time)
+        {
+            synchronized (pendingCommands)
+            {
+                final int index = pendingCommands.indexOf(packetNo);
+                if (index == -1)
+                {
+                    System.err.println("Error: got unexpected comc command #"+packetNo);
+                    return;
+                }
+                if (index > 0)
+                {
+                    System.err.println("Warning: got out of order comc command #"+packetNo);
+                }
+
+                for (int i = 0; i <= index; i++)
+                {
+                    pendingCommands.remove(0);
+                }
+            }
+        }
+    };
 
     /**
      * Create a new instance.
@@ -47,6 +92,7 @@ public class CommandQueue
     public CommandQueue(final CrossfireServerConnection crossfireServerConnection)
     {
         this.crossfireServerConnection = crossfireServerConnection;
+        crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
     }
 
     /**
@@ -86,23 +132,30 @@ public class CommandQueue
     public void clear()
     {
         resetRepeatCount();
+        pendingCommands.clear();
     }
 
     /**
      * Send a "ncom" command to the server. This function uses the default
      * repeat count.
      *
+     * @param mustSend If set, always send the command; if unset, drop the
+     * command if the command queue is full.
+     *
      * @param command The command to send.
      *
      * @see #sendNcom(int, String)
      */
-    public void sendNcom(final String command)
+    public void sendNcom(final boolean mustSend, final String command)
     {
-        sendNcom(getRepeatCount(), command);
+        sendNcom(mustSend, getRepeatCount(), command);
     }
 
     /**
      * Send a "ncom" command to the server.
+     *
+     * @param mustSend If set, always send the command; if unset, drop the
+     * command if the command queue is full.
      *
      * @param repeat The repeat count.
      *
@@ -110,8 +163,17 @@ public class CommandQueue
      *
      * @see #sendNcom(String)
      */
-    public void sendNcom(final int repeat, final String command)
+    public void sendNcom(final boolean mustSend, final int repeat, final String command)
     {
-        crossfireServerConnection.sendNcom(repeat, command);
+        synchronized (pendingCommands)
+        {
+            if (!mustSend && pendingCommands.size() >= MAX_PENDING_COMMANDS)
+            {
+                return;
+            }
+
+            final int packetNo = crossfireServerConnection.sendNcom(repeat, command);
+            pendingCommands.add(packetNo);
+        }
     }
 }

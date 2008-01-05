@@ -115,7 +115,7 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
-        jxcw.getCommandQueue().sendNcom("cast "+myspell.getInternalName());
+        jxcw.getCommandQueue().sendNcom(false, "cast "+myspell.getInternalName());
         jxcw.getCurrentSpellManager().setCurrentSpell(myspell);
     }
 

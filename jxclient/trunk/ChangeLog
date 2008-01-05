@@ -1,5 +1,8 @@
 2008-01-05  Andreas Kirschbaum
 
+	* Implement command queue to keep the client responsive when
+	executing repetitive commands (praying, searching traps).
+
 	* ragnorok: Improve scrolling in inventory dialog.
 
 	* skin: Add support for command lists executing if at least one

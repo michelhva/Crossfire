@@ -109,6 +109,6 @@ public class ShortcutSpell extends Shortcut
     /** {@inheritDoc} */
     public void execute()
     {
-        jxcWindow.getCommandQueue().sendNcom(command+spell.getInternalName());
+        jxcWindow.getCommandQueue().sendNcom(false, command+spell.getInternalName());
     }
 }

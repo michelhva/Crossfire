@@ -104,6 +104,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private final List<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
 
+    /**
+     * The {@link CrossfireComcListener}s to be notified.
+     */
+    private final List<CrossfireComcListener> crossfireComcListeners = new ArrayList<CrossfireComcListener>();
+
     /** drawextinfo message type: character did read a book. */
     public static final int MSG_TYPE_BOOK = 1;
     /** drawextinfo message type: character did read a card. */
@@ -356,6 +361,16 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         crossfireMusicListeners.add(listener);
     }
 
+    /**
+     * Add a listener to be notified about received comc commands.
+     *
+     * @param listener The listener to add.
+     */
+    public void addCrossfireComcListener(final CrossfireComcListener listener)
+    {
+        crossfireComcListeners.add(listener);
+    }
+
     /** {@inheritDoc} */
     // This function does not avoid index out of bounds accesses to the array
     // <code>packet</code>; instead, a try...catch clause is used to detect
@@ -484,7 +499,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         debugProtocolWrite("recv comc no="+packetNo+" time="+time+"\n");
                     }
-                    // XXX: comc command not implemented
+                    for (final CrossfireComcListener listener : crossfireComcListeners)
+                    {
+                        listener.commandComcReceived(packetNo, time);
+                    }
                 }
                 return;
 

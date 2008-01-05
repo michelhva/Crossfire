@@ -282,7 +282,7 @@ public class ScriptProcess extends Thread
             final String[] pps = parms.split(" ", 3);
             for (int i = 0; i < Integer.parseInt(pps[0]); i++)
             {
-                window.getCommandQueue().sendNcom(0, pps[2]);
+                window.getCommandQueue().sendNcom(pps[1].equals("1"), 0, pps[2]);
             }
         }
         else if (cmdline.startsWith("draw "))
