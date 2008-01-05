@@ -217,8 +217,8 @@ public class GUIMagicMap extends GUIElement
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
-        offsetX = w/2-2-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
-        offsetY = h/2-2-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
+        offsetX = w/2-TILE_SIZE/2-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
+        offsetY = h/2-TILE_SIZE/2-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
         createBuffer();
         CfMagicMap.addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
