@@ -218,6 +218,32 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private boolean currentQueryDialogIsNamePrompt = false;
 
+    public enum Status
+    {
+        /**
+         * Represents the unconnected status of the client, which is the first to
+         * happen during a normal gaming session.
+         * @since 1.0
+         */
+        UNCONNECTED,
+
+        /**
+         * Represents the status of the client that is used during play.
+         * @since 1.0
+         */
+        PLAYING,
+
+        /**
+         * Represents the status of the client that is displaying a Query dialog.
+         * @since 1.0
+         */
+        QUERY;
+    }
+
+    private Status status = Status.UNCONNECTED;
+
+    private final String statusSem = "mystatus_sem";
+
     /**
      * The {@link WindowFocusListener} registered for this window. It resets
      * the keyboard modifier state when the window loses the focus. The idea is
@@ -268,7 +294,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         public void connectionLost()
         {
-            myserver.setStatus(ServerConnection.Status.UNCONNECTED);
+            setStatus(Status.UNCONNECTED);
             changeGUI(GUI_METASERVER);
         }
     };
@@ -679,7 +705,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void handleKeyPress(final KeyEvent e)
     {
-        if (myserver.getStatus() != ServerConnection.Status.PLAYING)
+        if (getStatus() != Status.PLAYING)
         {
             return;
         }
@@ -894,7 +920,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void handleKeyTyped(final KeyEvent e)
     {
-        if (myserver.getStatus() != ServerConnection.Status.PLAYING)
+        if (getStatus() != Status.PLAYING)
         {
             return;
         }
@@ -999,7 +1025,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     keyBindingState = null;
                     jxcWindowRenderer.closeDialog(keybindDialog);
                 }
-                else if (myserver.getStatus() != ServerConnection.Status.UNCONNECTED)
+                else if (getStatus() != Status.UNCONNECTED)
                 {
                     if (dialogDisconnect == null)
                     {
@@ -1206,7 +1232,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        myserver.setStatus(ServerConnection.Status.QUERY);
+        setStatus(Status.QUERY);
         jxcWindowRenderer.openDialog(queryDialog);
         queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
 
@@ -1596,6 +1622,33 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         if (currentQueryDialogIsNamePrompt)
         {
             settings.putString("player_"+hostname, playerName);
+        }
+    }
+
+    /**
+     * Sets the current status of the client to the given value. See the various
+     * STATUS_ constants.
+     * @param status The new status value.
+     * @since 1.0
+     */
+    public void setStatus(final Status status)
+    {
+        synchronized(statusSem)
+        {
+            this.status = status;
+        }
+    }
+
+    /**
+     * Gets the current status of the client. See the STATUS_ constants.
+     * @since 1.0
+     * @return A value representing the current status.
+     */
+    public Status getStatus()
+    {
+        synchronized(statusSem)
+        {
+            return status;
         }
     }
 }

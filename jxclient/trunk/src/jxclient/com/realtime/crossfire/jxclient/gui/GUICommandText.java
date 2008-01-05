@@ -41,14 +41,14 @@ public class GUICommandText extends GUIText
     /** {@inheritDoc} */
     protected void execute(final JXCWindow jxcWindow, final String command)
     {
-        switch (jxcWindow.getCrossfireServerConnection().getStatus())
+        switch (jxcWindow.getStatus())
         {
         case PLAYING:
             jxcWindow.executeCommand(command);
             break;
 
         case QUERY:
-            jxcWindow.getCrossfireServerConnection().setStatus(ServerConnection.Status.PLAYING);
+            jxcWindow.setStatus(JXCWindow.Status.PLAYING);
             try
             {
                 jxcWindow.getCrossfireServerConnection().sendReply(command);
