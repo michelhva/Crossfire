@@ -1,5 +1,8 @@
 2008-01-05  Andreas Kirschbaum
 
+	* Make sure auto-repeating buttons stop firing when the mouse is
+	moved off.
+
 	* Do not overwrite book contents with random text messages.
 
 	* Close book dialog when server connection breaks.
