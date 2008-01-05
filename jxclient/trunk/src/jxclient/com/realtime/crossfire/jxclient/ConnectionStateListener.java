@@ -17,27 +17,22 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient;
 
 /**
- * @author Lauwenmark
+ * Interface for listeners interested in connection state related events.
+ *
  * @author Andreas Kirschbaum
  */
-public interface GUIScrollable
+public interface ConnectionStateListener
 {
     /**
-     * Return whether scrolling is possible.
-     *
-     * @param distance The distance to scroll.
-     *
-     * @return Whether scrolling is possible.
+     * A connection to the server has been established.
      */
-    boolean canScroll(int distance);
-
-    void scroll(int distance);
+    void connect();
 
     /**
-     * Reset the scroll index to the default value.
+     * The connection to the server was disconnected.
      */
-    void resetScroll();
+    void disconnect();
 }

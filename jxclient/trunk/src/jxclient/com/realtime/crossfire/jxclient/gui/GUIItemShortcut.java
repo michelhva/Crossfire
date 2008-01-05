@@ -156,4 +156,9 @@ public class GUIItemShortcut extends GUIItem
     @Override public void scroll(final int distance)
     {
     }
+
+    /** {@inheritDoc} */
+    public void resetScroll()
+    {
+    }
 }

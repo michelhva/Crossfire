@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
@@ -63,6 +64,9 @@ import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.magicmap.CfMagicMap;
 import com.realtime.crossfire.jxclient.magicmap.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.magicmap.CrossfireMagicmapListener;
+import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
+import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
@@ -696,7 +700,30 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String type = args[1];
-                            if (type.equals("init"))
+                            if (type.equals("connect"))
+                            {
+                                if (args.length != 3)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final GUICommandList commandList = getCommandList(args[2]);
+                                window.addConnectionStateListener(new ConnectionStateListener()
+                                    {
+                                        /** {@inheritDoc} */
+                                        public void connect()
+                                        {
+                                            commandList.execute();
+                                        }
+
+                                        /** {@inheritDoc} */
+                                        public void disconnect()
+                                        {
+                                            // ignore
+                                        }
+                                    });
+                            }
+                            else if (type.equals("init"))
                             {
                                 if (args.length != 3)
                                 {
@@ -717,6 +744,23 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     {
                                         /** {@inheritDoc} */
                                         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
+                                        {
+                                            commandList.execute();
+                                        }
+                                    });
+                            }
+                            else if (type.equals("mapscroll"))
+                            {
+                                if (args.length != 3)
+                                {
+                                    throw new IOException("syntax error");
+                                }
+
+                                final GUICommandList commandList = getCommandList(args[2]);
+                                CfMapUpdater.addCrossfireMapscrollListener(new CrossfireMapscrollListener()
+                                    {
+                                        /** {@inheritDoc} */
+                                        public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
                                         {
                                             commandList.execute();
                                         }

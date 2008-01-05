@@ -376,6 +376,13 @@ public class GUILog extends GUIElement implements GUIScrollable
     }
 
     /** {@inheritDoc} */
+    public void resetScroll()
+    {
+        displayBottom = true;
+        render();
+    }
+
+    /** {@inheritDoc} */
     protected void createBuffer()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();

@@ -60,7 +60,9 @@ import java.awt.Graphics;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import javax.swing.JFrame;
 
 /**
@@ -86,6 +88,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public static final int GUI_START      = 0;
     public static final int GUI_METASERVER = 1;
     public static final int GUI_MAIN       = 2;
+
+    /**
+     * The connection state listeners to notify.
+     */
+    private final List<ConnectionStateListener> connectionStateListeners = new ArrayList<ConnectionStateListener>();
 
     private int guiId = -1;
 
@@ -525,6 +532,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 myserver.removeCrossfireQueryListener(this);
                 myserver.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
+                for (final ConnectionStateListener listener : connectionStateListeners)
+                {
+                    listener.disconnect();
+                }
             }
 
             this.guiId = guiId;
@@ -540,6 +551,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 myserver.connect(hostname, port, connectionListener);
                 commandQueue.clear();
                 Faces.setFacesCallback(myserver);
+                for (final ConnectionStateListener listener : connectionStateListeners)
+                {
+                    listener.connect();
+                }
             }
 
             if (dialogDisconnect != null)
@@ -1598,5 +1613,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public CommandQueue getCommandQueue()
     {
         return commandQueue;
+    }
+
+    /**
+     * Add a connection listener.
+     *
+     * @param listener The listener to add.
+     */
+    public void addConnectionStateListener(final ConnectionStateListener listener)
+    {
+        connectionStateListeners.add(listener);
     }
 }

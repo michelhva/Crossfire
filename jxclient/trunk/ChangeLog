@@ -1,5 +1,11 @@
 2008-01-05  Andreas Kirschbaum
 
+	* ragnorok, prelude: Reset ground/spells/inventory/messages view
+	scroll position when connecting to a server.
+
+	* ragnorok: Reset ground view scroll position when character
+	moves.
+
 	* Correctly update fog-of-war information in magic map.
 
 	* Correctly update magic map when character is invisible.
