@@ -1,5 +1,5 @@
 
-commandlist command_book_close null DIALOG_CLOSE book
+commandlist command_book_close AND null DIALOG_CLOSE book
 
 picture book_background 104 63 785 579 bouquin
 label_drawextinfo book_text 180 100 640 420 font_metaurl14 DARK_GRAY

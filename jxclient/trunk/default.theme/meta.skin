@@ -1,6 +1,6 @@
 
-commandlist command_metaprev
-commandlist command_metanext
+commandlist command_metaprev AND
+commandlist command_metanext AND
 
 picture background 0 0 1024 768 metaserver
 text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect

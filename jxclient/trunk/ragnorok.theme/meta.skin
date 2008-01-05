@@ -34,7 +34,7 @@ commandlist_add command_metadown metaselect7 SCROLL 1
 commandlist_add command_metadown metaselect8 SCROLL 1
 commandlist_add command_metadown metaselect9 SCROLL 1
 
-commandlist command_metaprev
+commandlist command_metaprev AND
 commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
 commandlist_add command_metaprev metaselect3 SCROLLNEXT metaselect2
 commandlist_add command_metaprev metaselect4 SCROLLNEXT metaselect3
@@ -44,7 +44,7 @@ commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
 commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
 commandlist_add command_metaprev metaselect9 SCROLLNEXT metaselect8
 
-commandlist command_metanext
+commandlist command_metanext AND
 commandlist_add command_metanext metaselect8 SCROLLNEXT metaselect9
 commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
 commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7

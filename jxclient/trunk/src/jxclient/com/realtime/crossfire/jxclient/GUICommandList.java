@@ -31,15 +31,35 @@ import java.util.List;
 public class GUICommandList
 {
     /**
+     * The command list type.
+     */
+    public enum Type
+    {
+        /** List is executed if all entries can execute. */
+        AND,
+
+        /** List is executed if any entry can execute. */
+        OR,
+    }
+
+    /**
+     * The command list type.
+     */
+    private final Type type;
+
+    /**
      * The list of {@link GUICommand}s in execution order.
      */
     private final List<GUICommand> commands = new ArrayList<GUICommand>();
 
     /**
      * Create a new instance as an empty command list.
+     *
+     * @param type The command list type.
      */
-    public GUICommandList()
+    public GUICommandList(final Type type)
     {
+        this.type = type;
     }
 
     /**
@@ -47,12 +67,15 @@ public class GUICommandList
      * of commands to be sent to the server. The commands are separated by ';'
      * characters.
      *
+     * @param type The command list type.
+     *
      * @param commands The commands.
      *
      * @param jxcWindow The window to execute the commands in.
      */
-    public GUICommandList(final String commands, final JXCWindow jxcWindow)
+    public GUICommandList(final Type type, final String commands, final JXCWindow jxcWindow)
     {
+        this(type);
         this.commands.add(new GUICommand(null, GUICommand.Command.GUI_EXECUTE_COMMAND, new GUICommand.ExecuteCommandParameter(jxcWindow, commands)));
     }
 
@@ -72,12 +95,33 @@ public class GUICommandList
      */
     public void execute()
     {
-        for (final GUICommand command : commands)
+        switch (type)
         {
-            if (!command.canExecute())
+        case AND:
+            for (final GUICommand command : commands)
+            {
+                if (!command.canExecute())
+                {
+                    return;
+                }
+            }
+            break;
+
+        case OR:
+            boolean ok = false;
+            for (final GUICommand command : commands)
+            {
+                if (command.canExecute())
+                {
+                    ok = true;
+                    break;
+                }
+            }
+            if (!ok)
             {
                 return;
             }
+            break;
         }
 
         for (final GUICommand command : commands)
