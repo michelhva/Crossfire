@@ -566,6 +566,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 jxcWindowRenderer.closeDialog(dialogQuit);
             }
             jxcWindowRenderer.closeDialog(queryDialog);
+            jxcWindowRenderer.closeDialog(myskin.getDialogBook(1));
 
             switch (guiId)
             {
