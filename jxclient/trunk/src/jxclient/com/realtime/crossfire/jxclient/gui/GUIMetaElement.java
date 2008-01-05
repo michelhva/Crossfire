@@ -170,11 +170,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         render();
     }
 
-    public int getIndex()
-    {
-        return index;
-    }
-
     /** {@inheritDoc} */
     protected void createBuffer()
     {

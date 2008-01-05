@@ -90,11 +90,6 @@ public class GUIItemFloor extends GUIItemItem
         render();
     }
 
-    public int getIndex()
-    {
-        return index;
-    }
-
     /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {

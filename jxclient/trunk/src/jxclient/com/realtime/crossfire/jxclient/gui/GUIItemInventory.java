@@ -56,11 +56,6 @@ public class GUIItemInventory extends GUIItemItem
         render();
     }
 
-    public int getIndex()
-    {
-        return myindex;
-    }
-
     /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {

@@ -77,11 +77,6 @@ public class GUIItemSpelllist extends GUIItem
         render();
     }
 
-    public int getIndex()
-    {
-        return myindex;
-    }
-
     /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {
