@@ -22,6 +22,7 @@ commandlist_add command_metaup metaselect5 SCROLL -1
 commandlist_add command_metaup metaselect6 SCROLL -1
 commandlist_add command_metaup metaselect7 SCROLL -1
 commandlist_add command_metaup metaselect8 SCROLL -1
+commandlist_add command_metaup metaselect9 SCROLL -1
 
 commandlist_add command_metadown metaselect1 SCROLL 1
 commandlist_add command_metadown metaselect2 SCROLL 1
@@ -31,6 +32,7 @@ commandlist_add command_metadown metaselect5 SCROLL 1
 commandlist_add command_metadown metaselect6 SCROLL 1
 commandlist_add command_metadown metaselect7 SCROLL 1
 commandlist_add command_metadown metaselect8 SCROLL 1
+commandlist_add command_metadown metaselect9 SCROLL 1
 
 commandlist command_metaprev
 commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
@@ -40,8 +42,10 @@ commandlist_add command_metaprev metaselect5 SCROLLNEXT metaselect4
 commandlist_add command_metaprev metaselect6 SCROLLNEXT metaselect5
 commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
 commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
+commandlist_add command_metaprev metaselect9 SCROLLNEXT metaselect8
 
 commandlist command_metanext
+commandlist_add command_metanext metaselect8 SCROLLNEXT metaselect9
 commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
 commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7
 commandlist_add command_metanext metaselect5 SCROLLNEXT metaselect6
