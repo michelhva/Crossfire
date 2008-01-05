@@ -164,15 +164,13 @@ public class Gui
     {
         if (w == 0 || h == 0) throw new IllegalStateException();
 
-        final int newX = Math.max(Math.min(x, jxcWindow.getWindowWidth()-w), 0);
-        final int newY = Math.max(Math.min(y, jxcWindow.getWindowHeight()-h), 0);
-        if (this.x == newX && this.y == newY)
+        if (this.x == x && this.y == y)
         {
             return;
         }
 
-        this.x = newX;
-        this.y = newY;
+        this.x = x;
+        this.y = y;
         hasChangedElements = true;
         stateChanged = true;
     }

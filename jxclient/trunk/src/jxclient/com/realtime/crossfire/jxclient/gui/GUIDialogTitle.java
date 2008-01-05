@@ -111,6 +111,8 @@ public class GUIDialogTitle extends GUIPicture
         }
 
         final Point point = e.getLocationOnScreen();
-        gui.setPosition(point.x+offset.x, point.y+offset.y);
+        final int newX = Math.max(Math.min(point.x+offset.x, getJXCWindow().getWindowWidth()-gui.getWidth()), 0);
+        final int newY = Math.max(Math.min(point.y+offset.y, getJXCWindow().getWindowHeight()-gui.getHeight()), 0);
+        gui.setPosition(newX, newY);
     }
 }
