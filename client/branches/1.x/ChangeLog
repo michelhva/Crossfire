@@ -1,6 +1,14 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+
+common/image.c README: Rename client '.crossfire/crossfire-images/' to
+  '.crossfire/image-cache/' to make backups avoid backing it up with a
+  generic exclude like "*/*cache*/*" that works for many other packages
+  that employ caching.  Included on branch to avoid having two separate
+  caches if running both versions of clients for testing.
+Kevin Bulgrien 2008-01-05
+
 Fix include order.
  common/metaserver.c
 Nicolas Weeger 2008-01-03
