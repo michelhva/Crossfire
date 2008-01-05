@@ -48,7 +48,7 @@ public class Gui
     /**
      * The list of {@link GUIElement}s comprising this gui.
      */
-    private final List<GUIElement> elements = new CopyOnWriteArrayList<GUIElement>();
+    private final List<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The key bindings for this gui.
@@ -208,7 +208,7 @@ public class Gui
         if (element.getGui() != null) throw new IllegalArgumentException();
         if (element.getJXCWindow() != jxcWindow) throw new IllegalArgumentException();
 
-        elements.add(element);
+        updateVisibleElement(element);
         element.setGui(this);
     }
 
@@ -221,32 +221,24 @@ public class Gui
      */
     public void redraw(final Graphics g, final JXCWindow jxcWindow)
     {
-        final boolean debugGui = jxcWindow.isDebugGui();
-
-        final GUIElement mouseElement = debugGui ? jxcWindow.getMouseTracker().getMouseElement() : null;
-        final long t0 = debugGui ? System.currentTimeMillis() : 0;
-
-        hasChangedElements = false;
-        for (final GUIElement element : elements)
+        if (jxcWindow.isDebugGui())
         {
-            if (element.isVisible())
+            final GUIElement mouseElement = jxcWindow.getMouseTracker().getMouseElement();
+            final long t0 = System.currentTimeMillis();
+
+            hasChangedElements = false;
+            for (final GUIElement element : visibleElements)
             {
                 final BufferedImage bufferedImage = element.getBuffer();
                 synchronized(bufferedImage)
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();
-                    if (debugGui)
-                    {
-                        g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
-                        g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
-                    }
+                    g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
+                    g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
                 }
             }
-        }
 
-        if (debugGui)
-        {
             final long t1 = System.currentTimeMillis();
             g.setColor(java.awt.Color.YELLOW);
             if(mouseElement != null)
@@ -254,6 +246,19 @@ public class Gui
                 g.drawString(mouseElement.getName(), 16, 16);
             }
             g.drawString((t1-t0)+"ms", 16, 32);
+        }
+        else
+        {
+            hasChangedElements = false;
+            for (final GUIElement element : visibleElements)
+            {
+                final BufferedImage bufferedImage = element.getBuffer();
+                synchronized(bufferedImage)
+                {
+                    g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
+                    element.resetChanged();
+                }
+            }
         }
     }
 
@@ -276,9 +281,9 @@ public class Gui
      */
     public GUIElement getDefaultElement()
     {
-        for (final GUIElement element : elements)
+        for (final GUIElement element : visibleElements)
         {
-            if (element.isVisible() && element.isDefault())
+            if (element.isDefault())
             {
                 return element;
             }
@@ -308,9 +313,9 @@ public class Gui
      */
     public GUIText getFirstTextArea()
     {
-        for (final GUIElement element : elements)
+        for (final GUIElement element : visibleElements)
         {
-            if ((element instanceof GUIText) && element.isVisible())
+            if (element instanceof GUIText)
             {
                 return (GUIText)element;
             }
@@ -332,9 +337,9 @@ public class Gui
     public GUIElement getElementFromPoint(final int x, final int y)
     {
         GUIElement elected = null;
-        for (final GUIElement element : elements)
+        for (final GUIElement element : visibleElements)
         {
-            if (element.isVisible() && !element.isIgnore())
+            if (!element.isIgnore())
             {
                 if (element.getX() <= x && x < element.getX()+element.getWidth())
                 {
@@ -614,6 +619,18 @@ public class Gui
         if (textArea != null)
         {
             textArea.setHideInput(hideInput);
+        }
+    }
+
+    public void updateVisibleElement(final GUIElement element)
+    {
+        if (element.isVisible())
+        {
+            visibleElements.add(element);
+        }
+        else
+        {
+            visibleElements.remove(element);
         }
     }
 }
