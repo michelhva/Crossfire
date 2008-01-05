@@ -1718,7 +1718,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             final String commandString = parseText(args, argc, lnr);
             params = new GUICommand.ExecuteCommandParameter(window, commandString);
         }
-        else if (command == GUICommand.Command.SCROLL)
+        else if (command == GUICommand.Command.SCROLL || command == GUICommand.Command.SCROLL_NEVER)
         {
             if (args.length != argc+1)
             {

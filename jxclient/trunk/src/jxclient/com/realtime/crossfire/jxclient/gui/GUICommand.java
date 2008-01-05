@@ -43,6 +43,7 @@ public class GUICommand
         PRINT,
         QUIT,
         SCROLL,
+        SCROLL_NEVER,
         SCROLLNEXT,
         CONNECT,
         DISCONNECT,
@@ -85,6 +86,9 @@ public class GUICommand
             }
             break;
 
+        case SCROLL_NEVER:
+            return false;
+
         case SCROLLNEXT:
         case CONNECT:
         case DISCONNECT:
@@ -125,6 +129,7 @@ public class GUICommand
             break;
 
         case SCROLL:
+        case SCROLL_NEVER:
             if (mytarget instanceof GUIScrollable)
             {
                 ((GUIScrollable)mytarget).scroll(((ScrollParameter)myparams).distance);
@@ -197,7 +202,8 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link Command#SCROLL} command.
+     * A parameter object for the {@link Command#SCROLL} and {@link
+     * Command#SCROLL_NEVER} commands.
      */
     public static class ScrollParameter
     {
