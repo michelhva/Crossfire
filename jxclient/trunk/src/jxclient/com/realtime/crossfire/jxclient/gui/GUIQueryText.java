@@ -25,14 +25,13 @@ import java.awt.Font;
 import java.awt.image.BufferedImage;
 
 /**
+ * Input field for "query" dialogs.
  *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
-public class GUICommandText extends GUIText
+public class GUIQueryText extends GUIText
 {
-    public GUICommandText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    public GUIQueryText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
         super(jxcWindow, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
     }
@@ -40,7 +39,16 @@ public class GUICommandText extends GUIText
     /** {@inheritDoc} */
     protected void execute(final JXCWindow jxcWindow, final String command)
     {
-        jxcWindow.executeCommand(command);
+        jxcWindow.setStatus(JXCWindow.Status.PLAYING);
+        try
+        {
+            jxcWindow.getCrossfireServerConnection().sendReply(command);
+        }
+        catch (final Exception ex)
+        {
+            ex.printStackTrace();
+        }
+        jxcWindow.closeQueryDialog();
         setText("");
     }
 }

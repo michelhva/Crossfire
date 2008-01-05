@@ -45,6 +45,7 @@ import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
+import com.realtime.crossfire.jxclient.gui.GUIQueryText;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
@@ -1138,6 +1139,26 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage picture = getPicture(args[6]);
                             elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture));
+                        }
+                        else if (gui != null && args[0].equals("query_text"))
+                        {
+                            if (args.length != 12)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final BufferedImage activePicture = getPicture(args[6]);
+                            final BufferedImage inactivePicture = getPicture(args[7]);
+                            final Font font = fonts.lookup(args[8]);
+                            final Color inactiveColor = parseColor(args[9]);
+                            final Color activeColor = parseColor(args[10]);
+                            final int margin = parseInt(args[11]);
+                            elements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
                         }
                         else if (gui != null && args[0].equals("set_default"))
                         {
