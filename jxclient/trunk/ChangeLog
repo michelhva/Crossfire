@@ -1,5 +1,9 @@
 2008-01-05  Andreas Kirschbaum
 
+	* Try harder to fall back to windowed mode if either full-screen
+	mode or display mode change is not supported. Remove options -F
+	and -B.
+
 	* Make sure auto-repeating buttons stop firing when the mouse is
 	moved off.
 

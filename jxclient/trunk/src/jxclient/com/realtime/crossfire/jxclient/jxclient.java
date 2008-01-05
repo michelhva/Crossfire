@@ -72,8 +72,6 @@ public class jxclient
             final Settings prefs = new Settings(Filenames.getSettingsFile());
             int width = prefs.getInt("width", 1024);
             int height = prefs.getInt("height", 768);
-            int bpp = prefs.getInt("bpp", -1);
-            int freq = prefs.getInt("frequency", 0);
             String skin = prefs.getString("skin", DEFAULT_SKIN);
             boolean fullScreen = true;
             String server = null;
@@ -96,16 +94,6 @@ public class jxclient
                 else if (args[i].equals("-H") && i+1 < args.length)
                 {
                     height = Integer.parseInt(args[i+1]);
-                    i++;
-                }
-                else if (args[i].equals("-B") && i+1 < args.length)
-                {
-                    bpp = Integer.parseInt(args[i+1]);
-                    i++;
-                }
-                else if (args[i].equals("-F") && i+1 < args.length)
-                {
-                    freq = Integer.parseInt(args[i+1]);
                     i++;
                 }
                 else if (args[i].equals("-S") && i+1 < args.length)
@@ -142,8 +130,6 @@ public class jxclient
                     System.out.println(" -N             : Disable full-screen mode;");
                     System.out.println(" -W <size>      : Width of the screen, in pixels;");
                     System.out.println(" -H <size>      : Height of the screen, in pixels;");
-                    System.out.println(" -B <bpp>       : Bit per pixels, or (-1) for multibpp mode;");
-                    System.out.println(" -F <freq>      : Refresh frequency of the screen in Hz (0:guess);");
                     System.out.println(" -S <skin>      : Skin name to use.");
                     System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                     System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
@@ -156,8 +142,6 @@ public class jxclient
             }
             prefs.putInt("width", width);
             prefs.putInt("height", height);
-            prefs.putInt("bpp", bpp);
-            prefs.putInt("frequency", freq);
             prefs.putString("skin", skin);
 
             final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
@@ -184,7 +168,7 @@ public class jxclient
                         new MusicWatcher(jxwin.getCrossfireServerConnection());
                         new SoundWatcher(jxwin.getCrossfireServerConnection());
 
-                        jxwin.init(width, height, bpp, freq, skin, fullScreen, server);
+                        jxwin.init(width, height, skin, fullScreen, server);
                     }
                     finally
                     {

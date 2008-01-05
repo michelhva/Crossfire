@@ -602,7 +602,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    public void init(final int w, final int h, final int b, final int f, final String skinName, final boolean fullScreen, final String server)
+    public void init(final int w, final int h, final String skinName, final boolean fullScreen, final String server)
     {
         windowWidth = w;
         windowHeight = h;
@@ -610,7 +610,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
-        jxcWindowRenderer.init(w, h, b, f);
+        jxcWindowRenderer.init(w, h);
         if (!setSkin(skinName))
         {
             if (skinName.equals(jxclient.DEFAULT_SKIN))
