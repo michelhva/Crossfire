@@ -94,7 +94,7 @@ public class GUIDialogTitle extends GUIPicture
     /**
      * Move the dialog the given point.
      *
-     * @param point The destination point.
+     * @param e The destination point.
      */
     private void moveTo(final MouseEvent e)
     {
