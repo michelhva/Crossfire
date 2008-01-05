@@ -2,7 +2,7 @@
 commandlist command_book_close AND null DIALOG_CLOSE book
 
 picture book_background 104 63 785 579 bouquin
-label_drawextinfo book_text 180 100 640 420 font_metaurl14 DARK_GRAY
+label_html book_text 180 100 640 420 font_metaurl14 DARK_GRAY
 button book_close 690 510 135 55 button_small_active button_small_pushed false command_book_close font_metaurl14 DARK_GRAY 20 34 Close
 
 set_default book_close

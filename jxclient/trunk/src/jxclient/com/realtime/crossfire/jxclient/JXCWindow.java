@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -1169,10 +1170,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
     {
+        final Gui dialog;
         switch (evt.getType())
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
-            jxcWindowRenderer.openDialog(myskin.getDialogBook(1));
+            dialog = myskin.getDialogBook(1);
             break;
 
         case CrossfireServerConnection.MSG_TYPE_CARD:
@@ -1180,6 +1182,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case CrossfireServerConnection.MSG_TYPE_SIGN:
         case CrossfireServerConnection.MSG_TYPE_MONUMENT:
         case CrossfireServerConnection.MSG_TYPE_DIALOG:
+            dialog = null;
             break;
 
         case CrossfireServerConnection.MSG_TYPE_MOTD:
@@ -1187,6 +1190,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
              * We do not display a MOTD dialog, because it interferes with the
              * query dialog that gets displayed just after it.
              */
+            dialog = null;
             break;
 
         case CrossfireServerConnection.MSG_TYPE_ADMIN:
@@ -1201,11 +1205,25 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case CrossfireServerConnection.MSG_TYPE_ITEM:
         case CrossfireServerConnection.MSG_TYPE_MISC:
         case CrossfireServerConnection.MSG_TYPE_VICTIM:
+            dialog = null;
             break;
 
         default:
+            dialog = null;
             break;
         }
+
+        if (dialog == null)
+        {
+            return;
+        }
+
+        final AbstractLabel label = dialog.getFirstLabel();
+        if (label != null)
+        {
+            label.setText(evt.getMessage());
+        }
+        jxcWindowRenderer.openDialog(dialog);
     }
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)

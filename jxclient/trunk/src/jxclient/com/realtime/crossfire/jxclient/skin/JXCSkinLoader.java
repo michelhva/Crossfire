@@ -37,7 +37,6 @@ import com.realtime.crossfire.jxclient.gui.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.GUILabel;
-import com.realtime.crossfire.jxclient.gui.GUILabelDrawextinfo;
 import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
@@ -957,23 +956,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 throw new IOException("invalid key binding: "+ex.getMessage());
                             }
-                        }
-                        else if (gui != null && args[0].equals("label_drawextinfo"))
-                        {
-                            if (args.length != 8)
-                            {
-                                throw new IOException("syntax error");
-                            }
-
-                            final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
-                            final Color color = parseColor(args[7]);
-                            final GUILabelDrawextinfo element = new GUILabelDrawextinfo(window, name, x, y, w, h, font, color);
-                            elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_html"))
                         {

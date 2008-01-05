@@ -323,6 +323,25 @@ public class Gui
     }
 
     /**
+     * Return the first {@link AbstractLabel} gui element of this gui.
+     *
+     * @return The <code>AbstractLabel</code> element, or <code>null</code> if
+     * this gui does not contain any <code>AbstractLabel</code> gui elements.
+     */
+    public AbstractLabel getFirstLabel()
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if (element instanceof AbstractLabel)
+            {
+                return (AbstractLabel)element;
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Determine the {@link GUIElement} for a given coordinate.
      *
      * @param x The x-coordinate to check.
