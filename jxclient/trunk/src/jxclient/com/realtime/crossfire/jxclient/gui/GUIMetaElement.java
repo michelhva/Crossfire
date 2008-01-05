@@ -50,6 +50,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     private final String format;
 
+    /**
+     * The default scroll index.
+     */
+    private final int defaultIndex;
+
     private int index;
 
     /**
@@ -83,6 +88,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.font = font;
         this.text = text;
         this.comment = comment;
+        this.defaultIndex = index;
         this.index = index;
         this.format = format;
         createBuffer();
@@ -168,6 +174,15 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         index += distance;
         getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         render();
+    }
+
+    /** {@inheritDoc} */
+    public void resetScroll()
+    {
+        if (index != defaultIndex)
+        {
+            scroll(defaultIndex-index);
+        }
     }
 
     /** {@inheritDoc} */

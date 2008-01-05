@@ -45,6 +45,7 @@ public class GUICommand
         SCROLL,
         SCROLL_NEVER,
         SCROLLNEXT,
+        SCROLL_RESET,
         CONNECT,
         DISCONNECT,
         GUI_META,
@@ -90,6 +91,7 @@ public class GUICommand
             return false;
 
         case SCROLLNEXT:
+        case SCROLL_RESET:
         case CONNECT:
         case DISCONNECT:
         case GUI_META:
@@ -140,6 +142,13 @@ public class GUICommand
             if (mytarget.isActive())
             {
                 ((ScrollNextParameter)myparams).nextElement.setActive(true);
+            }
+            break;
+
+        case SCROLL_RESET:
+            if (mytarget instanceof GUIScrollable)
+            {
+                ((GUIScrollable)mytarget).resetScroll();
             }
             break;
 

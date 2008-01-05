@@ -579,3 +579,50 @@ ignore left_back_top
 ignore log_upper_back
 ignore log_upper_back2
 ignore title_back
+
+commandlist command_inventory_reset OR rinv0 SCROLL_RESET
+commandlist command_inventory_reset OR rinv1 SCROLL_RESET
+commandlist command_inventory_reset OR rinv2 SCROLL_RESET
+commandlist command_inventory_reset OR rinv3 SCROLL_RESET
+commandlist command_inventory_reset OR rinv4 SCROLL_RESET
+commandlist command_inventory_reset OR rinv5 SCROLL_RESET
+commandlist command_inventory_reset OR rinv6 SCROLL_RESET
+commandlist command_inventory_reset OR rinv7 SCROLL_RESET
+commandlist command_inventory_reset OR rinv8 SCROLL_RESET
+commandlist command_inventory_reset OR rinv9 SCROLL_RESET
+commandlist command_inventory_reset OR rinvA SCROLL_RESET
+commandlist command_inventory_reset OR rinvB SCROLL_RESET
+commandlist command_inventory_reset OR rinvC SCROLL_RESET
+commandlist command_inventory_reset OR rinvD SCROLL_RESET
+commandlist command_inventory_reset OR rinvE SCROLL_RESET
+commandlist command_inventory_reset OR rinvF SCROLL_RESET
+commandlist command_inventory_reset OR rinvG SCROLL_RESET
+commandlist command_inventory_reset OR rinvH SCROLL_RESET
+commandlist command_inventory_reset OR rinvI SCROLL_RESET
+commandlist command_inventory_reset OR rinvJ SCROLL_RESET
+event connect command_inventory_reset
+
+commandlist command_spells_reset OR rsp0 SCROLL_RESET
+commandlist command_spells_reset OR rsp1 SCROLL_RESET
+commandlist command_spells_reset OR rsp2 SCROLL_RESET
+commandlist command_spells_reset OR rsp3 SCROLL_RESET
+commandlist command_spells_reset OR rsp4 SCROLL_RESET
+commandlist command_spells_reset OR rsp5 SCROLL_RESET
+commandlist command_spells_reset OR rsp6 SCROLL_RESET
+commandlist command_spells_reset OR rsp7 SCROLL_RESET
+commandlist command_spells_reset OR rsp8 SCROLL_RESET
+commandlist command_spells_reset OR rsp9 SCROLL_RESET
+commandlist command_spells_reset OR rspA SCROLL_RESET
+commandlist command_spells_reset OR rspB SCROLL_RESET
+commandlist command_spells_reset OR rspC SCROLL_RESET
+commandlist command_spells_reset OR rspD SCROLL_RESET
+commandlist command_spells_reset OR rspE SCROLL_RESET
+commandlist command_spells_reset OR rspF SCROLL_RESET
+commandlist command_spells_reset OR rspG SCROLL_RESET
+commandlist command_spells_reset OR rspH SCROLL_RESET
+commandlist command_spells_reset OR rspI SCROLL_RESET
+commandlist command_spells_reset OR rspJ SCROLL_RESET
+event connect command_spells_reset
+
+commandlist command_messages_reset OR log_upper SCROLL_RESET
+event connect command_messages_reset
