@@ -14,23 +14,23 @@ meta_element metaselect9 300 475 440 20 null font_metaurl metaurl metacomment 8 
 
 commandlist_add command_metaconnect metaurl CONNECT
 
-commandlist_add command_metaup metaselect1 SCROLLUP
-commandlist_add command_metaup metaselect2 SCROLLUP
-commandlist_add command_metaup metaselect3 SCROLLUP
-commandlist_add command_metaup metaselect4 SCROLLUP
-commandlist_add command_metaup metaselect5 SCROLLUP
-commandlist_add command_metaup metaselect6 SCROLLUP
-commandlist_add command_metaup metaselect7 SCROLLUP
-commandlist_add command_metaup metaselect8 SCROLLUP
+commandlist_add command_metaup metaselect1 SCROLL -1
+commandlist_add command_metaup metaselect2 SCROLL -1
+commandlist_add command_metaup metaselect3 SCROLL -1
+commandlist_add command_metaup metaselect4 SCROLL -1
+commandlist_add command_metaup metaselect5 SCROLL -1
+commandlist_add command_metaup metaselect6 SCROLL -1
+commandlist_add command_metaup metaselect7 SCROLL -1
+commandlist_add command_metaup metaselect8 SCROLL -1
 
-commandlist_add command_metadown metaselect1 SCROLLDOWN
-commandlist_add command_metadown metaselect2 SCROLLDOWN
-commandlist_add command_metadown metaselect3 SCROLLDOWN
-commandlist_add command_metadown metaselect4 SCROLLDOWN
-commandlist_add command_metadown metaselect5 SCROLLDOWN
-commandlist_add command_metadown metaselect6 SCROLLDOWN
-commandlist_add command_metadown metaselect7 SCROLLDOWN
-commandlist_add command_metadown metaselect8 SCROLLDOWN
+commandlist_add command_metadown metaselect1 SCROLL 1
+commandlist_add command_metadown metaselect2 SCROLL 1
+commandlist_add command_metadown metaselect3 SCROLL 1
+commandlist_add command_metadown metaselect4 SCROLL 1
+commandlist_add command_metadown metaselect5 SCROLL 1
+commandlist_add command_metadown metaselect6 SCROLL 1
+commandlist_add command_metadown metaselect7 SCROLL 1
+commandlist_add command_metadown metaselect8 SCROLL 1
 
 commandlist command_metaprev
 commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1

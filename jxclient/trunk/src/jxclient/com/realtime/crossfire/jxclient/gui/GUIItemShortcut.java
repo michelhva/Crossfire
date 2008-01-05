@@ -147,24 +147,13 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance)
     {
         return false;
     }
 
     /** {@inheritDoc} */
-    @Override public void scrollUp()
-    {
-    }
-
-    /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        return false;
-    }
-
-    /** {@inheritDoc} */
-    @Override public void scrollDown()
+    @Override public void scroll(final int distance)
     {
     }
 }

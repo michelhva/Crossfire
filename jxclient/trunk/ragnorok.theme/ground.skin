@@ -36,69 +36,69 @@ item floor floor29   949 5 32 32 empty marker_cursed marker_applied inventory_se
 item floor floor30   981 5 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
 button button_right 1013 5 16 32 scroll_right_up scroll_right_down true command_ground_right
 
-commandlist_add command_ground_left floor0 SCROLLUP
-commandlist_add command_ground_left floor1 SCROLLUP
-commandlist_add command_ground_left floor2 SCROLLUP
-commandlist_add command_ground_left floor3 SCROLLUP
-commandlist_add command_ground_left floor4 SCROLLUP
-commandlist_add command_ground_left floor5 SCROLLUP
-commandlist_add command_ground_left floor6 SCROLLUP
-commandlist_add command_ground_left floor7 SCROLLUP
-commandlist_add command_ground_left floor8 SCROLLUP
-commandlist_add command_ground_left floor9 SCROLLUP
-commandlist_add command_ground_left floor10 SCROLLUP
-commandlist_add command_ground_left floor11 SCROLLUP
-commandlist_add command_ground_left floor12 SCROLLUP
-commandlist_add command_ground_left floor13 SCROLLUP
-commandlist_add command_ground_left floor14 SCROLLUP
-commandlist_add command_ground_left floor15 SCROLLUP
-commandlist_add command_ground_left floor16 SCROLLUP
-commandlist_add command_ground_left floor17 SCROLLUP
-commandlist_add command_ground_left floor18 SCROLLUP
-commandlist_add command_ground_left floor19 SCROLLUP
-commandlist_add command_ground_left floor20 SCROLLUP
-commandlist_add command_ground_left floor21 SCROLLUP
-commandlist_add command_ground_left floor22 SCROLLUP
-commandlist_add command_ground_left floor23 SCROLLUP
-commandlist_add command_ground_left floor24 SCROLLUP
-commandlist_add command_ground_left floor25 SCROLLUP
-commandlist_add command_ground_left floor26 SCROLLUP
-commandlist_add command_ground_left floor27 SCROLLUP
-commandlist_add command_ground_left floor28 SCROLLUP
-commandlist_add command_ground_left floor29 SCROLLUP
-commandlist_add command_ground_left floor30 SCROLLUP
+commandlist_add command_ground_left floor0 SCROLL -1
+commandlist_add command_ground_left floor1 SCROLL -1
+commandlist_add command_ground_left floor2 SCROLL -1
+commandlist_add command_ground_left floor3 SCROLL -1
+commandlist_add command_ground_left floor4 SCROLL -1
+commandlist_add command_ground_left floor5 SCROLL -1
+commandlist_add command_ground_left floor6 SCROLL -1
+commandlist_add command_ground_left floor7 SCROLL -1
+commandlist_add command_ground_left floor8 SCROLL -1
+commandlist_add command_ground_left floor9 SCROLL -1
+commandlist_add command_ground_left floor10 SCROLL -1
+commandlist_add command_ground_left floor11 SCROLL -1
+commandlist_add command_ground_left floor12 SCROLL -1
+commandlist_add command_ground_left floor13 SCROLL -1
+commandlist_add command_ground_left floor14 SCROLL -1
+commandlist_add command_ground_left floor15 SCROLL -1
+commandlist_add command_ground_left floor16 SCROLL -1
+commandlist_add command_ground_left floor17 SCROLL -1
+commandlist_add command_ground_left floor18 SCROLL -1
+commandlist_add command_ground_left floor19 SCROLL -1
+commandlist_add command_ground_left floor20 SCROLL -1
+commandlist_add command_ground_left floor21 SCROLL -1
+commandlist_add command_ground_left floor22 SCROLL -1
+commandlist_add command_ground_left floor23 SCROLL -1
+commandlist_add command_ground_left floor24 SCROLL -1
+commandlist_add command_ground_left floor25 SCROLL -1
+commandlist_add command_ground_left floor26 SCROLL -1
+commandlist_add command_ground_left floor27 SCROLL -1
+commandlist_add command_ground_left floor28 SCROLL -1
+commandlist_add command_ground_left floor29 SCROLL -1
+commandlist_add command_ground_left floor30 SCROLL -1
 
-commandlist_add command_ground_right floor0 SCROLLDOWN
-commandlist_add command_ground_right floor1 SCROLLDOWN
-commandlist_add command_ground_right floor2 SCROLLDOWN
-commandlist_add command_ground_right floor3 SCROLLDOWN
-commandlist_add command_ground_right floor4 SCROLLDOWN
-commandlist_add command_ground_right floor5 SCROLLDOWN
-commandlist_add command_ground_right floor6 SCROLLDOWN
-commandlist_add command_ground_right floor7 SCROLLDOWN
-commandlist_add command_ground_right floor8 SCROLLDOWN
-commandlist_add command_ground_right floor9 SCROLLDOWN
-commandlist_add command_ground_right floor10 SCROLLDOWN
-commandlist_add command_ground_right floor11 SCROLLDOWN
-commandlist_add command_ground_right floor12 SCROLLDOWN
-commandlist_add command_ground_right floor13 SCROLLDOWN
-commandlist_add command_ground_right floor14 SCROLLDOWN
-commandlist_add command_ground_right floor15 SCROLLDOWN
-commandlist_add command_ground_right floor16 SCROLLDOWN
-commandlist_add command_ground_right floor17 SCROLLDOWN
-commandlist_add command_ground_right floor18 SCROLLDOWN
-commandlist_add command_ground_right floor19 SCROLLDOWN
-commandlist_add command_ground_right floor20 SCROLLDOWN
-commandlist_add command_ground_right floor21 SCROLLDOWN
-commandlist_add command_ground_right floor22 SCROLLDOWN
-commandlist_add command_ground_right floor23 SCROLLDOWN
-commandlist_add command_ground_right floor24 SCROLLDOWN
-commandlist_add command_ground_right floor25 SCROLLDOWN
-commandlist_add command_ground_right floor26 SCROLLDOWN
-commandlist_add command_ground_right floor27 SCROLLDOWN
-commandlist_add command_ground_right floor28 SCROLLDOWN
-commandlist_add command_ground_right floor29 SCROLLDOWN
-commandlist_add command_ground_right floor30 SCROLLDOWN
+commandlist_add command_ground_right floor0 SCROLL 1
+commandlist_add command_ground_right floor1 SCROLL 1
+commandlist_add command_ground_right floor2 SCROLL 1
+commandlist_add command_ground_right floor3 SCROLL 1
+commandlist_add command_ground_right floor4 SCROLL 1
+commandlist_add command_ground_right floor5 SCROLL 1
+commandlist_add command_ground_right floor6 SCROLL 1
+commandlist_add command_ground_right floor7 SCROLL 1
+commandlist_add command_ground_right floor8 SCROLL 1
+commandlist_add command_ground_right floor9 SCROLL 1
+commandlist_add command_ground_right floor10 SCROLL 1
+commandlist_add command_ground_right floor11 SCROLL 1
+commandlist_add command_ground_right floor12 SCROLL 1
+commandlist_add command_ground_right floor13 SCROLL 1
+commandlist_add command_ground_right floor14 SCROLL 1
+commandlist_add command_ground_right floor15 SCROLL 1
+commandlist_add command_ground_right floor16 SCROLL 1
+commandlist_add command_ground_right floor17 SCROLL 1
+commandlist_add command_ground_right floor18 SCROLL 1
+commandlist_add command_ground_right floor19 SCROLL 1
+commandlist_add command_ground_right floor20 SCROLL 1
+commandlist_add command_ground_right floor21 SCROLL 1
+commandlist_add command_ground_right floor22 SCROLL 1
+commandlist_add command_ground_right floor23 SCROLL 1
+commandlist_add command_ground_right floor24 SCROLL 1
+commandlist_add command_ground_right floor25 SCROLL 1
+commandlist_add command_ground_right floor26 SCROLL 1
+commandlist_add command_ground_right floor27 SCROLL 1
+commandlist_add command_ground_right floor28 SCROLL 1
+commandlist_add command_ground_right floor29 SCROLL 1
+commandlist_add command_ground_right floor30 SCROLL 1
 
 set_invisible border_nw
 set_invisible border_n

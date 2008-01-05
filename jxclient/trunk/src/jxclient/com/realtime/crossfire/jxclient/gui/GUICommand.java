@@ -42,8 +42,7 @@ public class GUICommand
         TOGGLE,
         PRINT,
         QUIT,
-        SCROLLUP,
-        SCROLLDOWN,
+        SCROLL,
         SCROLLNEXT,
         CONNECT,
         DISCONNECT,
@@ -79,17 +78,10 @@ public class GUICommand
         case QUIT:
             break;
 
-        case SCROLLUP:
+        case SCROLL:
             if (mytarget instanceof GUIScrollable)
             {
-                return ((GUIScrollable)mytarget).canScrollUp();
-            }
-            break;
-
-        case SCROLLDOWN:
-            if (mytarget instanceof GUIScrollable)
-            {
-                return ((GUIScrollable)mytarget).canScrollDown();
+                return ((GUIScrollable)mytarget).canScroll(((ScrollParameter)myparams).distance);
             }
             break;
 
@@ -132,17 +124,10 @@ public class GUICommand
             ((JXCWindow)myparams).endRendering();
             break;
 
-        case SCROLLUP:
+        case SCROLL:
             if (mytarget instanceof GUIScrollable)
             {
-                ((GUIScrollable)mytarget).scrollUp();
-            }
-            break;
-
-        case SCROLLDOWN:
-            if (mytarget instanceof GUIScrollable)
-            {
-                ((GUIScrollable)mytarget).scrollDown();
+                ((GUIScrollable)mytarget).scroll(((ScrollParameter)myparams).distance);
             }
             break;
 
@@ -209,6 +194,25 @@ public class GUICommand
     public Object getParams()
     {
         return myparams;
+    }
+
+    /**
+     * A parameter object for the {@link Command#SCROLL} command.
+     */
+    public static class ScrollParameter
+    {
+        /** The distance to scroll. */
+        private final int distance;
+
+        /**
+         * Create a new instance.
+         *
+         * @param distance The distance to scroll.
+         */
+        public ScrollParameter(final int distance)
+        {
+            this.distance = distance;
+        }
     }
 
     /**

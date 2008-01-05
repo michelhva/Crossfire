@@ -1716,6 +1716,20 @@ public abstract class JXCSkinLoader implements JXCSkin
             final String commandString = parseText(args, argc, lnr);
             params = new GUICommand.ExecuteCommandParameter(window, commandString);
         }
+        else if (command == GUICommand.Command.SCROLL)
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final int distance = parseInt(args[argc]);
+            if (distance == 0)
+            {
+                throw new IOException("Invalid zero scroll distance");
+            }
+            params = new GUICommand.ScrollParameter(distance);
+        }
         else if (command == GUICommand.Command.SCROLLNEXT)
         {
             if (args.length != argc+1)

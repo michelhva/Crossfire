@@ -96,27 +96,26 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance)
     {
-        return index > 0;
+        if (distance < 0)
+        {
+            return index >= -distance;
+        }
+        else if (distance > 0)
+        {
+            return index+distance < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /* {@inheritDoc} */
-    @Override public void scrollUp()
+    @Override public void scroll(final int distance)
     {
-        setIndex(index-1, containerTag, false);
-    }
-
-    /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        return index+1 < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
-    }
-
-    /* {@inheritDoc} */
-    @Override public void scrollDown()
-    {
-        setIndex(index+1, containerTag, false);
+        setIndex(index+distance, containerTag, false);
     }
 
     /* {@inheritDoc} */

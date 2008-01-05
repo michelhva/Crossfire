@@ -83,29 +83,27 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance)
     {
-        return myindex > 0;
+        if (distance < 0)
+        {
+            return myindex >= -distance;
+        }
+        else if (distance > 0)
+        {
+            final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
+            return myindex+distance < list.size();
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /* {@inheritDoc} */
-    @Override public void scrollUp()
+    @Override public void scroll(final int distance)
     {
-        setIndex(myindex-1);
-        render();
-    }
-
-    /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
-        return myindex+1 < list.size();
-    }
-
-    /* {@inheritDoc} */
-    @Override public void scrollDown()
-    {
-        setIndex(myindex+1);
+        setIndex(myindex+distance);
         render();
     }
 

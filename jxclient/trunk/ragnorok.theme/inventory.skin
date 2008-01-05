@@ -66,124 +66,124 @@ item inventory inv58 436 40+100 32 32 empty marker_cursed marker_applied invento
 item inventory inv59 468 40+100 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 59 font_item BLACK
 button button_right  500 40+100 16 32 scroll_right_up scroll_right_down true command_inventory_right
 
-commandlist_add command_inventory_left inv0 SCROLLUP
-commandlist_add command_inventory_left inv1 SCROLLUP
-commandlist_add command_inventory_left inv2 SCROLLUP
-commandlist_add command_inventory_left inv3 SCROLLUP
-commandlist_add command_inventory_left inv4 SCROLLUP
-commandlist_add command_inventory_left inv5 SCROLLUP
-commandlist_add command_inventory_left inv6 SCROLLUP
-commandlist_add command_inventory_left inv7 SCROLLUP
-commandlist_add command_inventory_left inv8 SCROLLUP
-commandlist_add command_inventory_left inv9 SCROLLUP
-commandlist_add command_inventory_left inv10 SCROLLUP
-commandlist_add command_inventory_left inv11 SCROLLUP
-commandlist_add command_inventory_left inv12 SCROLLUP
-commandlist_add command_inventory_left inv13 SCROLLUP
-commandlist_add command_inventory_left inv14 SCROLLUP
-commandlist_add command_inventory_left inv15 SCROLLUP
-commandlist_add command_inventory_left inv16 SCROLLUP
-commandlist_add command_inventory_left inv17 SCROLLUP
-commandlist_add command_inventory_left inv18 SCROLLUP
-commandlist_add command_inventory_left inv19 SCROLLUP
-commandlist_add command_inventory_left inv20 SCROLLUP
-commandlist_add command_inventory_left inv21 SCROLLUP
-commandlist_add command_inventory_left inv22 SCROLLUP
-commandlist_add command_inventory_left inv23 SCROLLUP
-commandlist_add command_inventory_left inv24 SCROLLUP
-commandlist_add command_inventory_left inv25 SCROLLUP
-commandlist_add command_inventory_left inv26 SCROLLUP
-commandlist_add command_inventory_left inv27 SCROLLUP
-commandlist_add command_inventory_left inv28 SCROLLUP
-commandlist_add command_inventory_left inv29 SCROLLUP
-commandlist_add command_inventory_left inv30 SCROLLUP
-commandlist_add command_inventory_left inv31 SCROLLUP
-commandlist_add command_inventory_left inv32 SCROLLUP
-commandlist_add command_inventory_left inv33 SCROLLUP
-commandlist_add command_inventory_left inv34 SCROLLUP
-commandlist_add command_inventory_left inv35 SCROLLUP
-commandlist_add command_inventory_left inv36 SCROLLUP
-commandlist_add command_inventory_left inv37 SCROLLUP
-commandlist_add command_inventory_left inv38 SCROLLUP
-commandlist_add command_inventory_left inv39 SCROLLUP
-commandlist_add command_inventory_left inv40 SCROLLUP
-commandlist_add command_inventory_left inv41 SCROLLUP
-commandlist_add command_inventory_left inv42 SCROLLUP
-commandlist_add command_inventory_left inv43 SCROLLUP
-commandlist_add command_inventory_left inv44 SCROLLUP
-commandlist_add command_inventory_left inv45 SCROLLUP
-commandlist_add command_inventory_left inv46 SCROLLUP
-commandlist_add command_inventory_left inv47 SCROLLUP
-commandlist_add command_inventory_left inv48 SCROLLUP
-commandlist_add command_inventory_left inv49 SCROLLUP
-commandlist_add command_inventory_left inv50 SCROLLUP
-commandlist_add command_inventory_left inv51 SCROLLUP
-commandlist_add command_inventory_left inv52 SCROLLUP
-commandlist_add command_inventory_left inv53 SCROLLUP
-commandlist_add command_inventory_left inv54 SCROLLUP
-commandlist_add command_inventory_left inv55 SCROLLUP
-commandlist_add command_inventory_left inv56 SCROLLUP
-commandlist_add command_inventory_left inv57 SCROLLUP
-commandlist_add command_inventory_left inv58 SCROLLUP
-commandlist_add command_inventory_left inv59 SCROLLUP
+commandlist_add command_inventory_left inv0 SCROLL -1
+commandlist_add command_inventory_left inv1 SCROLL -1
+commandlist_add command_inventory_left inv2 SCROLL -1
+commandlist_add command_inventory_left inv3 SCROLL -1
+commandlist_add command_inventory_left inv4 SCROLL -1
+commandlist_add command_inventory_left inv5 SCROLL -1
+commandlist_add command_inventory_left inv6 SCROLL -1
+commandlist_add command_inventory_left inv7 SCROLL -1
+commandlist_add command_inventory_left inv8 SCROLL -1
+commandlist_add command_inventory_left inv9 SCROLL -1
+commandlist_add command_inventory_left inv10 SCROLL -1
+commandlist_add command_inventory_left inv11 SCROLL -1
+commandlist_add command_inventory_left inv12 SCROLL -1
+commandlist_add command_inventory_left inv13 SCROLL -1
+commandlist_add command_inventory_left inv14 SCROLL -1
+commandlist_add command_inventory_left inv15 SCROLL -1
+commandlist_add command_inventory_left inv16 SCROLL -1
+commandlist_add command_inventory_left inv17 SCROLL -1
+commandlist_add command_inventory_left inv18 SCROLL -1
+commandlist_add command_inventory_left inv19 SCROLL -1
+commandlist_add command_inventory_left inv20 SCROLL -1
+commandlist_add command_inventory_left inv21 SCROLL -1
+commandlist_add command_inventory_left inv22 SCROLL -1
+commandlist_add command_inventory_left inv23 SCROLL -1
+commandlist_add command_inventory_left inv24 SCROLL -1
+commandlist_add command_inventory_left inv25 SCROLL -1
+commandlist_add command_inventory_left inv26 SCROLL -1
+commandlist_add command_inventory_left inv27 SCROLL -1
+commandlist_add command_inventory_left inv28 SCROLL -1
+commandlist_add command_inventory_left inv29 SCROLL -1
+commandlist_add command_inventory_left inv30 SCROLL -1
+commandlist_add command_inventory_left inv31 SCROLL -1
+commandlist_add command_inventory_left inv32 SCROLL -1
+commandlist_add command_inventory_left inv33 SCROLL -1
+commandlist_add command_inventory_left inv34 SCROLL -1
+commandlist_add command_inventory_left inv35 SCROLL -1
+commandlist_add command_inventory_left inv36 SCROLL -1
+commandlist_add command_inventory_left inv37 SCROLL -1
+commandlist_add command_inventory_left inv38 SCROLL -1
+commandlist_add command_inventory_left inv39 SCROLL -1
+commandlist_add command_inventory_left inv40 SCROLL -1
+commandlist_add command_inventory_left inv41 SCROLL -1
+commandlist_add command_inventory_left inv42 SCROLL -1
+commandlist_add command_inventory_left inv43 SCROLL -1
+commandlist_add command_inventory_left inv44 SCROLL -1
+commandlist_add command_inventory_left inv45 SCROLL -1
+commandlist_add command_inventory_left inv46 SCROLL -1
+commandlist_add command_inventory_left inv47 SCROLL -1
+commandlist_add command_inventory_left inv48 SCROLL -1
+commandlist_add command_inventory_left inv49 SCROLL -1
+commandlist_add command_inventory_left inv50 SCROLL -1
+commandlist_add command_inventory_left inv51 SCROLL -1
+commandlist_add command_inventory_left inv52 SCROLL -1
+commandlist_add command_inventory_left inv53 SCROLL -1
+commandlist_add command_inventory_left inv54 SCROLL -1
+commandlist_add command_inventory_left inv55 SCROLL -1
+commandlist_add command_inventory_left inv56 SCROLL -1
+commandlist_add command_inventory_left inv57 SCROLL -1
+commandlist_add command_inventory_left inv58 SCROLL -1
+commandlist_add command_inventory_left inv59 SCROLL -1
 
-commandlist_add command_inventory_right inv0 SCROLLDOWN
-commandlist_add command_inventory_right inv1 SCROLLDOWN
-commandlist_add command_inventory_right inv2 SCROLLDOWN
-commandlist_add command_inventory_right inv3 SCROLLDOWN
-commandlist_add command_inventory_right inv4 SCROLLDOWN
-commandlist_add command_inventory_right inv5 SCROLLDOWN
-commandlist_add command_inventory_right inv6 SCROLLDOWN
-commandlist_add command_inventory_right inv7 SCROLLDOWN
-commandlist_add command_inventory_right inv8 SCROLLDOWN
-commandlist_add command_inventory_right inv9 SCROLLDOWN
-commandlist_add command_inventory_right inv10 SCROLLDOWN
-commandlist_add command_inventory_right inv11 SCROLLDOWN
-commandlist_add command_inventory_right inv12 SCROLLDOWN
-commandlist_add command_inventory_right inv13 SCROLLDOWN
-commandlist_add command_inventory_right inv14 SCROLLDOWN
-commandlist_add command_inventory_right inv15 SCROLLDOWN
-commandlist_add command_inventory_right inv16 SCROLLDOWN
-commandlist_add command_inventory_right inv17 SCROLLDOWN
-commandlist_add command_inventory_right inv18 SCROLLDOWN
-commandlist_add command_inventory_right inv19 SCROLLDOWN
-commandlist_add command_inventory_right inv20 SCROLLDOWN
-commandlist_add command_inventory_right inv21 SCROLLDOWN
-commandlist_add command_inventory_right inv22 SCROLLDOWN
-commandlist_add command_inventory_right inv23 SCROLLDOWN
-commandlist_add command_inventory_right inv24 SCROLLDOWN
-commandlist_add command_inventory_right inv25 SCROLLDOWN
-commandlist_add command_inventory_right inv26 SCROLLDOWN
-commandlist_add command_inventory_right inv27 SCROLLDOWN
-commandlist_add command_inventory_right inv28 SCROLLDOWN
-commandlist_add command_inventory_right inv29 SCROLLDOWN
-commandlist_add command_inventory_right inv30 SCROLLDOWN
-commandlist_add command_inventory_right inv31 SCROLLDOWN
-commandlist_add command_inventory_right inv32 SCROLLDOWN
-commandlist_add command_inventory_right inv33 SCROLLDOWN
-commandlist_add command_inventory_right inv34 SCROLLDOWN
-commandlist_add command_inventory_right inv35 SCROLLDOWN
-commandlist_add command_inventory_right inv36 SCROLLDOWN
-commandlist_add command_inventory_right inv37 SCROLLDOWN
-commandlist_add command_inventory_right inv38 SCROLLDOWN
-commandlist_add command_inventory_right inv39 SCROLLDOWN
-commandlist_add command_inventory_right inv40 SCROLLDOWN
-commandlist_add command_inventory_right inv41 SCROLLDOWN
-commandlist_add command_inventory_right inv42 SCROLLDOWN
-commandlist_add command_inventory_right inv43 SCROLLDOWN
-commandlist_add command_inventory_right inv44 SCROLLDOWN
-commandlist_add command_inventory_right inv45 SCROLLDOWN
-commandlist_add command_inventory_right inv46 SCROLLDOWN
-commandlist_add command_inventory_right inv47 SCROLLDOWN
-commandlist_add command_inventory_right inv48 SCROLLDOWN
-commandlist_add command_inventory_right inv49 SCROLLDOWN
-commandlist_add command_inventory_right inv50 SCROLLDOWN
-commandlist_add command_inventory_right inv51 SCROLLDOWN
-commandlist_add command_inventory_right inv52 SCROLLDOWN
-commandlist_add command_inventory_right inv53 SCROLLDOWN
-commandlist_add command_inventory_right inv54 SCROLLDOWN
-commandlist_add command_inventory_right inv55 SCROLLDOWN
-commandlist_add command_inventory_right inv56 SCROLLDOWN
-commandlist_add command_inventory_right inv57 SCROLLDOWN
-commandlist_add command_inventory_right inv58 SCROLLDOWN
-commandlist_add command_inventory_right inv59 SCROLLDOWN
+commandlist_add command_inventory_right inv0 SCROLL 1
+commandlist_add command_inventory_right inv1 SCROLL 1
+commandlist_add command_inventory_right inv2 SCROLL 1
+commandlist_add command_inventory_right inv3 SCROLL 1
+commandlist_add command_inventory_right inv4 SCROLL 1
+commandlist_add command_inventory_right inv5 SCROLL 1
+commandlist_add command_inventory_right inv6 SCROLL 1
+commandlist_add command_inventory_right inv7 SCROLL 1
+commandlist_add command_inventory_right inv8 SCROLL 1
+commandlist_add command_inventory_right inv9 SCROLL 1
+commandlist_add command_inventory_right inv10 SCROLL 1
+commandlist_add command_inventory_right inv11 SCROLL 1
+commandlist_add command_inventory_right inv12 SCROLL 1
+commandlist_add command_inventory_right inv13 SCROLL 1
+commandlist_add command_inventory_right inv14 SCROLL 1
+commandlist_add command_inventory_right inv15 SCROLL 1
+commandlist_add command_inventory_right inv16 SCROLL 1
+commandlist_add command_inventory_right inv17 SCROLL 1
+commandlist_add command_inventory_right inv18 SCROLL 1
+commandlist_add command_inventory_right inv19 SCROLL 1
+commandlist_add command_inventory_right inv20 SCROLL 1
+commandlist_add command_inventory_right inv21 SCROLL 1
+commandlist_add command_inventory_right inv22 SCROLL 1
+commandlist_add command_inventory_right inv23 SCROLL 1
+commandlist_add command_inventory_right inv24 SCROLL 1
+commandlist_add command_inventory_right inv25 SCROLL 1
+commandlist_add command_inventory_right inv26 SCROLL 1
+commandlist_add command_inventory_right inv27 SCROLL 1
+commandlist_add command_inventory_right inv28 SCROLL 1
+commandlist_add command_inventory_right inv29 SCROLL 1
+commandlist_add command_inventory_right inv30 SCROLL 1
+commandlist_add command_inventory_right inv31 SCROLL 1
+commandlist_add command_inventory_right inv32 SCROLL 1
+commandlist_add command_inventory_right inv33 SCROLL 1
+commandlist_add command_inventory_right inv34 SCROLL 1
+commandlist_add command_inventory_right inv35 SCROLL 1
+commandlist_add command_inventory_right inv36 SCROLL 1
+commandlist_add command_inventory_right inv37 SCROLL 1
+commandlist_add command_inventory_right inv38 SCROLL 1
+commandlist_add command_inventory_right inv39 SCROLL 1
+commandlist_add command_inventory_right inv40 SCROLL 1
+commandlist_add command_inventory_right inv41 SCROLL 1
+commandlist_add command_inventory_right inv42 SCROLL 1
+commandlist_add command_inventory_right inv43 SCROLL 1
+commandlist_add command_inventory_right inv44 SCROLL 1
+commandlist_add command_inventory_right inv45 SCROLL 1
+commandlist_add command_inventory_right inv46 SCROLL 1
+commandlist_add command_inventory_right inv47 SCROLL 1
+commandlist_add command_inventory_right inv48 SCROLL 1
+commandlist_add command_inventory_right inv49 SCROLL 1
+commandlist_add command_inventory_right inv50 SCROLL 1
+commandlist_add command_inventory_right inv51 SCROLL 1
+commandlist_add command_inventory_right inv52 SCROLL 1
+commandlist_add command_inventory_right inv53 SCROLL 1
+commandlist_add command_inventory_right inv54 SCROLL 1
+commandlist_add command_inventory_right inv55 SCROLL 1
+commandlist_add command_inventory_right inv56 SCROLL 1
+commandlist_add command_inventory_right inv57 SCROLL 1
+commandlist_add command_inventory_right inv58 SCROLL 1
+commandlist_add command_inventory_right inv59 SCROLL 1

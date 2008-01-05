@@ -147,92 +147,92 @@ item spelllist rspI 0+973+14 630+53+9 32 32 empty marker_cursed marker_applied i
 item spelllist rspJ 0+973+14 665+53+9 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 19 font_default_small
 
 commandlist rinv_up
-commandlist_add rinv_up rinv0 SCROLLUP
-commandlist_add rinv_up rinv1 SCROLLUP
-commandlist_add rinv_up rinv2 SCROLLUP
-commandlist_add rinv_up rinv3 SCROLLUP
-commandlist_add rinv_up rinv4 SCROLLUP
-commandlist_add rinv_up rinv5 SCROLLUP
-commandlist_add rinv_up rinv6 SCROLLUP
-commandlist_add rinv_up rinv7 SCROLLUP
-commandlist_add rinv_up rinv8 SCROLLUP
-commandlist_add rinv_up rinv9 SCROLLUP
-commandlist_add rinv_up rinvA SCROLLUP
-commandlist_add rinv_up rinvB SCROLLUP
-commandlist_add rinv_up rinvC SCROLLUP
-commandlist_add rinv_up rinvD SCROLLUP
-commandlist_add rinv_up rinvE SCROLLUP
-commandlist_add rinv_up rinvF SCROLLUP
-commandlist_add rinv_up rinvG SCROLLUP
-commandlist_add rinv_up rinvH SCROLLUP
-commandlist_add rinv_up rinvI SCROLLUP
-commandlist_add rinv_up rinvJ SCROLLUP
+commandlist_add rinv_up rinv0 SCROLL -1
+commandlist_add rinv_up rinv1 SCROLL -1
+commandlist_add rinv_up rinv2 SCROLL -1
+commandlist_add rinv_up rinv3 SCROLL -1
+commandlist_add rinv_up rinv4 SCROLL -1
+commandlist_add rinv_up rinv5 SCROLL -1
+commandlist_add rinv_up rinv6 SCROLL -1
+commandlist_add rinv_up rinv7 SCROLL -1
+commandlist_add rinv_up rinv8 SCROLL -1
+commandlist_add rinv_up rinv9 SCROLL -1
+commandlist_add rinv_up rinvA SCROLL -1
+commandlist_add rinv_up rinvB SCROLL -1
+commandlist_add rinv_up rinvC SCROLL -1
+commandlist_add rinv_up rinvD SCROLL -1
+commandlist_add rinv_up rinvE SCROLL -1
+commandlist_add rinv_up rinvF SCROLL -1
+commandlist_add rinv_up rinvG SCROLL -1
+commandlist_add rinv_up rinvH SCROLL -1
+commandlist_add rinv_up rinvI SCROLL -1
+commandlist_add rinv_up rinvJ SCROLL -1
 
 commandlist rinv_down
-commandlist_add rinv_down rinv0 SCROLLDOWN
-commandlist_add rinv_down rinv1 SCROLLDOWN
-commandlist_add rinv_down rinv2 SCROLLDOWN
-commandlist_add rinv_down rinv3 SCROLLDOWN
-commandlist_add rinv_down rinv4 SCROLLDOWN
-commandlist_add rinv_down rinv5 SCROLLDOWN
-commandlist_add rinv_down rinv6 SCROLLDOWN
-commandlist_add rinv_down rinv7 SCROLLDOWN
-commandlist_add rinv_down rinv8 SCROLLDOWN
-commandlist_add rinv_down rinv9 SCROLLDOWN
-commandlist_add rinv_down rinvA SCROLLDOWN
-commandlist_add rinv_down rinvB SCROLLDOWN
-commandlist_add rinv_down rinvC SCROLLDOWN
-commandlist_add rinv_down rinvD SCROLLDOWN
-commandlist_add rinv_down rinvE SCROLLDOWN
-commandlist_add rinv_down rinvF SCROLLDOWN
-commandlist_add rinv_down rinvG SCROLLDOWN
-commandlist_add rinv_down rinvH SCROLLDOWN
-commandlist_add rinv_down rinvI SCROLLDOWN
-commandlist_add rinv_down rinvJ SCROLLDOWN
+commandlist_add rinv_down rinv0 SCROLL 1
+commandlist_add rinv_down rinv1 SCROLL 1
+commandlist_add rinv_down rinv2 SCROLL 1
+commandlist_add rinv_down rinv3 SCROLL 1
+commandlist_add rinv_down rinv4 SCROLL 1
+commandlist_add rinv_down rinv5 SCROLL 1
+commandlist_add rinv_down rinv6 SCROLL 1
+commandlist_add rinv_down rinv7 SCROLL 1
+commandlist_add rinv_down rinv8 SCROLL 1
+commandlist_add rinv_down rinv9 SCROLL 1
+commandlist_add rinv_down rinvA SCROLL 1
+commandlist_add rinv_down rinvB SCROLL 1
+commandlist_add rinv_down rinvC SCROLL 1
+commandlist_add rinv_down rinvD SCROLL 1
+commandlist_add rinv_down rinvE SCROLL 1
+commandlist_add rinv_down rinvF SCROLL 1
+commandlist_add rinv_down rinvG SCROLL 1
+commandlist_add rinv_down rinvH SCROLL 1
+commandlist_add rinv_down rinvI SCROLL 1
+commandlist_add rinv_down rinvJ SCROLL 1
 
 commandlist rsp_up
-commandlist_add rsp_up rsp0 SCROLLUP
-commandlist_add rsp_up rsp1 SCROLLUP
-commandlist_add rsp_up rsp2 SCROLLUP
-commandlist_add rsp_up rsp3 SCROLLUP
-commandlist_add rsp_up rsp4 SCROLLUP
-commandlist_add rsp_up rsp5 SCROLLUP
-commandlist_add rsp_up rsp6 SCROLLUP
-commandlist_add rsp_up rsp7 SCROLLUP
-commandlist_add rsp_up rsp8 SCROLLUP
-commandlist_add rsp_up rsp9 SCROLLUP
-commandlist_add rsp_up rspA SCROLLUP
-commandlist_add rsp_up rspB SCROLLUP
-commandlist_add rsp_up rspC SCROLLUP
-commandlist_add rsp_up rspD SCROLLUP
-commandlist_add rsp_up rspE SCROLLUP
-commandlist_add rsp_up rspF SCROLLUP
-commandlist_add rsp_up rspG SCROLLUP
-commandlist_add rsp_up rspH SCROLLUP
-commandlist_add rsp_up rspI SCROLLUP
-commandlist_add rsp_up rspJ SCROLLUP
+commandlist_add rsp_up rsp0 SCROLL -1
+commandlist_add rsp_up rsp1 SCROLL -1
+commandlist_add rsp_up rsp2 SCROLL -1
+commandlist_add rsp_up rsp3 SCROLL -1
+commandlist_add rsp_up rsp4 SCROLL -1
+commandlist_add rsp_up rsp5 SCROLL -1
+commandlist_add rsp_up rsp6 SCROLL -1
+commandlist_add rsp_up rsp7 SCROLL -1
+commandlist_add rsp_up rsp8 SCROLL -1
+commandlist_add rsp_up rsp9 SCROLL -1
+commandlist_add rsp_up rspA SCROLL -1
+commandlist_add rsp_up rspB SCROLL -1
+commandlist_add rsp_up rspC SCROLL -1
+commandlist_add rsp_up rspD SCROLL -1
+commandlist_add rsp_up rspE SCROLL -1
+commandlist_add rsp_up rspF SCROLL -1
+commandlist_add rsp_up rspG SCROLL -1
+commandlist_add rsp_up rspH SCROLL -1
+commandlist_add rsp_up rspI SCROLL -1
+commandlist_add rsp_up rspJ SCROLL -1
 
 commandlist rsp_down
-commandlist_add rsp_down rsp0 SCROLLDOWN
-commandlist_add rsp_down rsp1 SCROLLDOWN
-commandlist_add rsp_down rsp2 SCROLLDOWN
-commandlist_add rsp_down rsp3 SCROLLDOWN
-commandlist_add rsp_down rsp4 SCROLLDOWN
-commandlist_add rsp_down rsp5 SCROLLDOWN
-commandlist_add rsp_down rsp6 SCROLLDOWN
-commandlist_add rsp_down rsp7 SCROLLDOWN
-commandlist_add rsp_down rsp8 SCROLLDOWN
-commandlist_add rsp_down rsp9 SCROLLDOWN
-commandlist_add rsp_down rspA SCROLLDOWN
-commandlist_add rsp_down rspB SCROLLDOWN
-commandlist_add rsp_down rspC SCROLLDOWN
-commandlist_add rsp_down rspD SCROLLDOWN
-commandlist_add rsp_down rspE SCROLLDOWN
-commandlist_add rsp_down rspF SCROLLDOWN
-commandlist_add rsp_down rspG SCROLLDOWN
-commandlist_add rsp_down rspH SCROLLDOWN
-commandlist_add rsp_down rspI SCROLLDOWN
-commandlist_add rsp_down rspJ SCROLLDOWN
+commandlist_add rsp_down rsp0 SCROLL 1
+commandlist_add rsp_down rsp1 SCROLL 1
+commandlist_add rsp_down rsp2 SCROLL 1
+commandlist_add rsp_down rsp3 SCROLL 1
+commandlist_add rsp_down rsp4 SCROLL 1
+commandlist_add rsp_down rsp5 SCROLL 1
+commandlist_add rsp_down rsp6 SCROLL 1
+commandlist_add rsp_down rsp7 SCROLL 1
+commandlist_add rsp_down rsp8 SCROLL 1
+commandlist_add rsp_down rsp9 SCROLL 1
+commandlist_add rsp_down rspA SCROLL 1
+commandlist_add rsp_down rspB SCROLL 1
+commandlist_add rsp_down rspC SCROLL 1
+commandlist_add rsp_down rspD SCROLL 1
+commandlist_add rsp_down rspE SCROLL 1
+commandlist_add rsp_down rspF SCROLL 1
+commandlist_add rsp_down rspG SCROLL 1
+commandlist_add rsp_down rspH SCROLL 1
+commandlist_add rsp_down rspI SCROLL 1
+commandlist_add rsp_down rspJ SCROLL 1
 
 button btn_rinv_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rinv_up
 button btn_rinv_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rinv_down
@@ -529,8 +529,8 @@ picture log_upper_back 0+679 0+100 272 204 log1_background
 picture log_upper_back2 288+679 175+100 14 10 log1_background2
 log log_upper 10+679 3+100 250 198 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE
 log_color log_upper 0 WHITE
-commandlist command_log_upper_up log_upper SCROLLUP
-commandlist command_log_upper_down log_upper SCROLLDOWN
+commandlist command_log_upper_up log_upper SCROLL -1
+commandlist command_log_upper_down log_upper SCROLL 1
 
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
