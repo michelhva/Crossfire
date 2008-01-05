@@ -213,6 +213,10 @@ public class GUIMagicMap extends GUIElement
     public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
         super(jxcWindow, name, x, y, w, h);
+        if (w%TILE_SIZE != 0) throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
+        if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
+        if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
+        if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
         offsetX = w/2-2-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
         offsetY = h/2-2-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
         createBuffer();
