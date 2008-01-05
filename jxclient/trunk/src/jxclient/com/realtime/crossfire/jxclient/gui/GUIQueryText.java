@@ -39,16 +39,7 @@ public class GUIQueryText extends GUIText
     /** {@inheritDoc} */
     protected void execute(final JXCWindow jxcWindow, final String command)
     {
-        jxcWindow.setStatus(JXCWindow.Status.PLAYING);
-        try
-        {
-            jxcWindow.getCrossfireServerConnection().sendReply(command);
-        }
-        catch (final Exception ex)
-        {
-            ex.printStackTrace();
-        }
-        jxcWindow.closeQueryDialog();
+        jxcWindow.sendReply(command);
         setText("");
     }
 }
