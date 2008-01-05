@@ -512,18 +512,20 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (args[0].equals("commandlist"))
                         {
-                            if (args.length != 2 && args.length < 4)
+                            if (args.length != 3 && args.length < 5)
                             {
                                 throw new IOException("syntax error");
                             }
 
-                            final GUICommandList commandList = new GUICommandList();
-                            commandLists.insert(args[1], commandList);
-                            if (args.length >= 4)
+                            final String commandListName = args[1];
+                            final GUICommandList.Type commandListType = parseEnum(GUICommandList.Type.class, args[2], "type");
+                            final GUICommandList commandList = new GUICommandList(commandListType);
+                            commandLists.insert(commandListName, commandList);
+                            if (args.length >= 5)
                             {
-                                final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
-                                final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
-                                final Object params = parseCommandArgs(args, 4, command, window, lnr);
+                                final GUIElement element = args[3].equals("null") ? null : elements.lookup(args[3]);
+                                final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[4], "command");
+                                final Object params = parseCommandArgs(args, 5, command, window, lnr);
                                 commandList.add(new GUICommand(element, command, params));
                             }
                         }

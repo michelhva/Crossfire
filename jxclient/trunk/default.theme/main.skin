@@ -46,10 +46,10 @@ picture magicmap_content 0+113 20+3 232 232 magicmap_content
 magicmap magicmap       18+113 38+3 196 196
 set_invisible magicmap_content
 set_invisible magicmap
-commandlist command_magicmap_display
+commandlist command_magicmap_display AND
 commandlist_add command_magicmap_display magicmap_content SHOW
 commandlist_add command_magicmap_display magicmap SHOW
-commandlist command_magicmap_undisplay
+commandlist command_magicmap_undisplay AND
 commandlist_add command_magicmap_undisplay magicmap_content HIDE
 commandlist_add command_magicmap_undisplay magicmap HIDE
 event magicmap command_magicmap_display
@@ -57,7 +57,7 @@ event magicmap command_magicmap_display
 button btn_magicmap_hide 0+63 0+3 232 20 magicmap_extended_inactive magicmap_extended_active false command_magicmap_undisplay
 button btn_magicmap_show 0+63 0+3 232 20 magicmap_shrinked_inactive magicmap_shrinked_active false command_magicmap_display
 
-commandlist command_menu_display
+commandlist command_menu_display AND
 
 button btn_menu 260+63 0+3 50 20 button_menu_inactive button_menu_active false command_menu_display
 
@@ -146,7 +146,7 @@ item spelllist rspH 0+973+14 595+53+9 32 32 empty marker_cursed marker_applied i
 item spelllist rspI 0+973+14 630+53+9 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 18 font_default_small
 item spelllist rspJ 0+973+14 665+53+9 32 32 empty marker_cursed marker_applied inventory_selector marker_locked 19 font_default_small
 
-commandlist rinv_up
+commandlist rinv_up AND
 commandlist_add rinv_up rinv0 SCROLL -1
 commandlist_add rinv_up rinv1 SCROLL -1
 commandlist_add rinv_up rinv2 SCROLL -1
@@ -168,7 +168,7 @@ commandlist_add rinv_up rinvH SCROLL -1
 commandlist_add rinv_up rinvI SCROLL -1
 commandlist_add rinv_up rinvJ SCROLL -1
 
-commandlist rinv_down
+commandlist rinv_down AND
 commandlist_add rinv_down rinv0 SCROLL 1
 commandlist_add rinv_down rinv1 SCROLL 1
 commandlist_add rinv_down rinv2 SCROLL 1
@@ -190,7 +190,7 @@ commandlist_add rinv_down rinvH SCROLL 1
 commandlist_add rinv_down rinvI SCROLL 1
 commandlist_add rinv_down rinvJ SCROLL 1
 
-commandlist rsp_up
+commandlist rsp_up AND
 commandlist_add rsp_up rsp0 SCROLL -1
 commandlist_add rsp_up rsp1 SCROLL -1
 commandlist_add rsp_up rsp2 SCROLL -1
@@ -212,7 +212,7 @@ commandlist_add rsp_up rspH SCROLL -1
 commandlist_add rsp_up rspI SCROLL -1
 commandlist_add rsp_up rspJ SCROLL -1
 
-commandlist rsp_down
+commandlist rsp_down AND
 commandlist_add rsp_down rsp0 SCROLL 1
 commandlist_add rsp_down rsp1 SCROLL 1
 commandlist_add rsp_down rsp2 SCROLL 1
@@ -342,7 +342,7 @@ gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_
 picture lower_bar 0+72 0+732 880 36 lower_bar
 command_text command 127+66 20+732 512+46 16 command_active empty font_cmdline11 GRAY WHITE 8
 
-commandlist rsp_display
+commandlist rsp_display AND
 commandlist_add rsp_display rinv0 HIDE
 commandlist_add rsp_display rinv1 HIDE
 commandlist_add rsp_display rinv2 HIDE
@@ -428,7 +428,7 @@ commandlist_add rsp_display grF_back HIDE
 commandlist_add rsp_display grG_back HIDE
 commandlist_add rsp_display grH_back HIDE
 
-commandlist rsp_undisplay
+commandlist rsp_undisplay AND
 commandlist_add rsp_undisplay rsp0 HIDE
 commandlist_add rsp_undisplay rsp1 HIDE
 commandlist_add rsp_undisplay rsp2 HIDE
@@ -529,14 +529,14 @@ picture log_upper_back 0+679 0+100 272 204 log1_background
 picture log_upper_back2 288+679 175+100 14 10 log1_background2
 log log_upper 10+679 3+100 250 198 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE
 log_color log_upper 0 WHITE
-commandlist command_log_upper_up log_upper SCROLL -1
-commandlist command_log_upper_down log_upper SCROLL 1
+commandlist command_log_upper_up AND log_upper SCROLL -1
+commandlist command_log_upper_down AND log_upper SCROLL 1
 
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
 
-commandlist command_log_open
-commandlist command_log_close
+commandlist command_log_open AND
+commandlist command_log_close AND
 button log_open 270+681 160+100 16 40 log1_shrinked_inactive log1_shrinked_pushed false command_log_open
 button log_close 270+681 160+100 16 40 log1_expanded_inactive log1_expanded_pushed false command_log_close
 commandlist_add command_log_open log_upper_back SHOW

@@ -344,7 +344,7 @@ public final class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commands = new GUICommandList(tmp[1], jxcWindow);
+                final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[1], jxcWindow);
                 addKeyBindingAsKeyChar(keyChar, commands, isDefault);
             }
             catch (final NumberFormatException ex)
@@ -385,7 +385,7 @@ public final class KeyBindings
                 throw new InvalidKeyBinding("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commands = new GUICommandList(tmp[2], jxcWindow);
+            final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[2], jxcWindow);
             addKeyBindingAsKeyCode(keyCode, modifiers, commands, isDefault);
         }
         else

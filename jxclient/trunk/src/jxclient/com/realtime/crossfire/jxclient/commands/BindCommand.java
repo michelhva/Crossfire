@@ -48,6 +48,6 @@ public class BindCommand extends AbstractCommand
             return;
         }
 
-        getWindow().createKeyBinding(new GUICommandList(args, getWindow()));
+        getWindow().createKeyBinding(new GUICommandList(GUICommandList.Type.AND, args, getWindow()));
     }
 }

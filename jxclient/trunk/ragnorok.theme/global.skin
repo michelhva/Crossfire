@@ -15,45 +15,45 @@ def checkbox checked unchecked font_button BLACK
 def dialog dialog font_title #801010 #e0e0e0 1
 def textbutton button_up button_down font_button BLACK
 
-commandlist command_disconnect null GUI_META
-commandlist command_resume_disconnect null DIALOG_CLOSE disconnect
+commandlist command_disconnect AND null GUI_META
+commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
 
-commandlist command_meta null GUI_META
-commandlist command_quit null QUIT
-commandlist command_resume_quit null DIALOG_CLOSE quit
+commandlist command_meta AND null GUI_META
+commandlist command_quit AND null QUIT
+commandlist command_resume_quit AND null DIALOG_CLOSE quit
 
-commandlist command_metaconnect
-commandlist command_metacancel null GUI_START
-commandlist command_metaup
-commandlist command_metadown
+commandlist command_metaconnect AND
+commandlist command_metacancel AND null GUI_START
+commandlist command_metaup AND
+commandlist command_metadown AND
 
-commandlist command_status null DIALOG_TOGGLE status
-commandlist command_status_open null DIALOG_OPEN status
-commandlist command_status_close null DIALOG_CLOSE status
-commandlist command_ground null DIALOG_TOGGLE ground
-commandlist command_ground_open null DIALOG_OPEN ground
-commandlist command_inventory null DIALOG_TOGGLE inventory
-commandlist command_messages null DIALOG_TOGGLE messages
-commandlist command_messages_open null DIALOG_OPEN messages
-commandlist command_protections null DIALOG_TOGGLE protections
-commandlist command_skills null DIALOG_TOGGLE skills
-commandlist command_map null DIALOG_TOGGLE map
-commandlist command_map_open null DIALOG_OPEN map
-commandlist command_setup null DIALOG_TOGGLE setup
-commandlist command_help null DIALOG_TOGGLE help
+commandlist command_status AND null DIALOG_TOGGLE status
+commandlist command_status_open AND null DIALOG_OPEN status
+commandlist command_status_close AND null DIALOG_CLOSE status
+commandlist command_ground AND null DIALOG_TOGGLE ground
+commandlist command_ground_open AND null DIALOG_OPEN ground
+commandlist command_inventory AND null DIALOG_TOGGLE inventory
+commandlist command_messages AND null DIALOG_TOGGLE messages
+commandlist command_messages_open AND null DIALOG_OPEN messages
+commandlist command_protections AND null DIALOG_TOGGLE protections
+commandlist command_skills AND null DIALOG_TOGGLE skills
+commandlist command_map AND null DIALOG_TOGGLE map
+commandlist command_map_open AND null DIALOG_OPEN map
+commandlist command_setup AND null DIALOG_TOGGLE setup
+commandlist command_help AND null DIALOG_TOGGLE help
 
-commandlist command_help_close null DIALOG_CLOSE help
+commandlist command_help_close AND null DIALOG_CLOSE help
 
-commandlist command_book_close null DIALOG_CLOSE book
+commandlist command_book_close AND null DIALOG_CLOSE book
 
-commandlist command_ground_left
-commandlist command_ground_right
+commandlist command_ground_left AND
+commandlist command_ground_right AND
 
-commandlist command_inventory_left
-commandlist command_inventory_right
+commandlist command_inventory_left AND
+commandlist command_inventory_right AND
 
-commandlist command_messages_up
-commandlist command_messages_down
+commandlist command_messages_up AND
+commandlist command_messages_down AND
 
 event magicmap command_map_open
 
@@ -73,16 +73,16 @@ key code F9 0 exec command_map
 key code F10 0 exec command_setup
 
 # checkbox option "lowfood"
-commandlist command_lowfood_on
-commandlist command_lowfood_off
+commandlist command_lowfood_on AND
+commandlist command_lowfood_off AND
 def checkbox_option lowfood command_lowfood_on command_lowfood_off Whether the low food indicator is visible.
 
 # checkbox option "poisoned"
-commandlist command_poisoned_on
-commandlist command_poisoned_off
+commandlist command_poisoned_on AND
+commandlist command_poisoned_off AND
 def checkbox_option poisoned command_poisoned_on command_poisoned_off Whether the poisoned indicator is visible.
 
 # checkbox option "hitpoints"
-commandlist command_hitpoints_on
-commandlist command_hitpoints_off
+commandlist command_hitpoints_on AND
+commandlist command_hitpoints_off AND
 def checkbox_option hitpoints command_hitpoints_on command_hitpoints_off Whether the hp indicator is visible.

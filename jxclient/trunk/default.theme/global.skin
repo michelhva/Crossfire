@@ -20,30 +20,30 @@ font font_types          squealer 12
 
 def dialog dialog font_stats12 BLACK WHITE 1
 
-commandlist command_disconnect null GUI_META
-commandlist command_resume_disconnect null DIALOG_CLOSE disconnect
+commandlist command_disconnect AND null GUI_META
+commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
 
-commandlist command_meta null GUI_META
-commandlist command_quit null QUIT
-commandlist command_resume_quit null DIALOG_CLOSE quit
+commandlist command_meta AND null GUI_META
+commandlist command_quit AND null QUIT
+commandlist command_resume_quit AND null DIALOG_CLOSE quit
 
-commandlist command_metaconnect
-commandlist command_metacancel null GUI_START
-commandlist command_metaup
-commandlist command_metadown
+commandlist command_metaconnect AND
+commandlist command_metacancel AND null GUI_START
+commandlist command_metaup AND
+commandlist command_metadown AND
 
-commandlist command_shortcut0
-commandlist command_shortcut1
-commandlist command_shortcut2
-commandlist command_shortcut3
-commandlist command_shortcut4
-commandlist command_shortcut5
-commandlist command_shortcut6
-commandlist command_shortcut7
-commandlist command_shortcut8
-commandlist command_shortcut9
-commandlist command_shortcutA
-commandlist command_shortcutB
+commandlist command_shortcut0 AND
+commandlist command_shortcut1 AND
+commandlist command_shortcut2 AND
+commandlist command_shortcut3 AND
+commandlist command_shortcut4 AND
+commandlist command_shortcut5 AND
+commandlist command_shortcut6 AND
+commandlist command_shortcut7 AND
+commandlist command_shortcut8 AND
+commandlist command_shortcut9 AND
+commandlist command_shortcutA AND
+commandlist command_shortcutB AND
 key code F1 0 exec command_shortcut0
 key code F2 0 exec command_shortcut1
 key code F3 0 exec command_shortcut2
