@@ -62,35 +62,33 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance)
     {
-        return myindex > 0;
-    }
+        if (distance < 0)
+        {
+            return myindex >= -distance;
+        }
+        else if (distance > 0)
+        {
+            final CfPlayer player = ItemsList.getItemsManager().getPlayer();
+            if (player == null)
+            {
+                return false;
+            }
 
-    /* {@inheritDoc} */
-    @Override public void scrollUp()
-    {
-        setIndex(myindex-1);
-        render();
-    }
-
-    /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        final CfPlayer player = ItemsList.getItemsManager().getPlayer();
-        if (player == null)
+            final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
+            return myindex+distance < list.size();
+        }
+        else
         {
             return false;
         }
-
-        final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
-        return myindex+1 < list.size();
     }
 
     /* {@inheritDoc} */
-    @Override public void scrollDown()
+    @Override public void scroll(final int distance)
     {
-        setIndex(myindex+1);
+        setIndex(myindex+distance);
         render();
     }
 

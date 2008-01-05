@@ -310,59 +310,69 @@ public class GUILog extends GUIElement implements GUIScrollable
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance) // XXX: implement |distance|>1
     {
-        return canScrollUp;
+        if (distance < 0)
+        {
+            return canScrollUp;
+        }
+        else if (distance > 0)
+        {
+            return canScrollDown;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /** {@inheritDoc} */
-    public void scrollUp()
+    public void scroll(final int distance) // XXX: implement |distance|>1
     {
-        assert canScrollUp;
-
-        topOffset -= SCROLL_PIXEL;
-        while (topOffset < 0)
+        if (distance < 0)
         {
-            if (topIndex > 0)
+            assert canScrollUp;
+
+            topOffset -= SCROLL_PIXEL;
+            while (topOffset < 0)
             {
-                topIndex--;
-                topOffset += buffer.getLine(topIndex).getHeight();
+                if (topIndex > 0)
+                {
+                    topIndex--;
+                    topOffset += buffer.getLine(topIndex).getHeight();
+                }
+                else
+                {
+                    topOffset = 0;
+                }
             }
-            else
+            displayBottom = false;
+            render();
+        }
+        else if (distance > 0)
+        {
+            assert canScrollDown;
+
+            topOffset += SCROLL_PIXEL;
+            while (topOffset >= buffer.getLine(topIndex).getHeight())
             {
-                topOffset = 0;
+                topOffset -= buffer.getLine(topIndex).getHeight();
+                topIndex++;
             }
+            int y = -topOffset;
+            final ListIterator<Line> it = buffer.listIterator(topIndex);
+            while (y < getHeight() && it.hasNext())
+            {
+                final Line line = it.next();
+                y += line.getHeight();
+            }
+            displayBottom = y <= getHeight() && !it.hasNext();
+            render();
         }
-        displayBottom = false;
-        render();
-    }
-
-    /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        return canScrollDown;
-    }
-
-    /** {@inheritDoc} */
-    public void scrollDown()
-    {
-        assert canScrollDown;
-
-        topOffset += SCROLL_PIXEL;
-        while (topOffset >= buffer.getLine(topIndex).getHeight())
+        else
         {
-            topOffset -= buffer.getLine(topIndex).getHeight();
-            topIndex++;
+            assert false;
         }
-        int y = -topOffset;
-        final ListIterator<Line> it = buffer.listIterator(topIndex);
-        while (y < getHeight() && it.hasNext())
-        {
-            final Line line = it.next();
-            y += line.getHeight();
-        }
-        displayBottom = y <= getHeight() && !it.hasNext();
-        render();
     }
 
     /** {@inheritDoc} */

@@ -145,29 +145,27 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollUp()
+    public boolean canScroll(final int distance)
     {
-        return index > 0;
-    }
-
-    public void scrollUp()
-    {
-        getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
-        index--;
-        getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
-        render();
+        if (distance < 0)
+        {
+            return index >= -distance;
+        }
+        else if (distance > 0)
+        {
+            return index+distance < getJXCWindow().getMetaserver().size();
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /** {@inheritDoc} */
-    public boolean canScrollDown()
-    {
-        return index+1 < getJXCWindow().getMetaserver().size();
-    }
-
-    public void scrollDown()
+    public void scroll(final int distance)
     {
         getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
-        index++;
+        index += distance;
         getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         render();
     }

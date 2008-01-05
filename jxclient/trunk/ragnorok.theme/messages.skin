@@ -14,5 +14,5 @@ button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down t
 
 command_text command 4 200-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1
 
-commandlist_add command_messages_up log SCROLLUP
-commandlist_add command_messages_down log SCROLLDOWN
+commandlist_add command_messages_up log SCROLL -1
+commandlist_add command_messages_down log SCROLL 1

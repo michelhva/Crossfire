@@ -115,10 +115,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
-    public abstract void scrollUp();
-
-    public abstract void scrollDown();
-
     /** {@inheritDoc} */
     @Override public void mouseClicked(final MouseEvent e)
     {

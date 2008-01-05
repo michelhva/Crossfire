@@ -20,28 +20,19 @@
 package com.realtime.crossfire.jxclient.gui;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public interface GUIScrollable
 {
     /**
-     * Return whether scrolling up is possible.
+     * Return whether scrolling is possible.
      *
-     * @return Whether scrolling up is possible.
-     */
-    boolean canScrollUp();
-
-    void scrollUp();
-
-    /**
-     * Return whether scrolling down is possible.
+     * @param distance The distance to scroll.
      *
-     * @return Whether scrolling down is possible.
+     * @return Whether scrolling is possible.
      */
-    boolean canScrollDown();
+    boolean canScroll(int distance);
 
-    void scrollDown();
+    void scroll(int distance);
 }
