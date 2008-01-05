@@ -149,7 +149,7 @@ public class GUIItemFloor extends GUIItemItem
         {
             if (ItemsList.getItemsManager().getPlayer() != null)
             {
-                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getRepeatCount());
+                jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
             }
         }
         catch (Exception ex)

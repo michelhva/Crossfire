@@ -64,6 +64,6 @@ public class ShortcutCommand extends Shortcut
     /** {@inheritDoc} */
     public void execute()
     {
-        jxcWindow.sendNcom(command);
+        jxcWindow.getCommandQueue().sendNcom(command);
     }
 }
