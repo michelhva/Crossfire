@@ -154,7 +154,7 @@ public class GUIMagicMap extends GUIElement
                         g.fillRect(0, h-dy, w, dy);
                     }
                 }
-                redrawSquare(g, CfMapUpdater.getMap(), -dx, -dy);
+                redrawSquare(g, CfMapUpdater.getMap(), (CrossfireServerConnection.MAP_WIDTH-1)/2-evt.getDX(), (CrossfireServerConnection.MAP_HEIGHT-1)/2-evt.getDY());
                 markPlayer(g);
                 g.dispose();
             }

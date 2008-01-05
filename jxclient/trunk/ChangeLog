@@ -1,5 +1,7 @@
 2008-01-05  Andreas Kirschbaum
 
+	* Correctly update magic map when character is invisible.
+
 	* Implement command queue to keep the client responsive when
 	executing repetitive commands (praying, searching traps).
 
