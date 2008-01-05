@@ -34,32 +34,6 @@ public abstract class ServerConnection implements PacketListener
 
     private ClientSocket clientSocket = null;
 
-    public enum Status
-    {
-        /**
-         * Represents the unconnected status of the client, which is the first to
-         * happen during a normal gaming session.
-         * @since 1.0
-         */
-        UNCONNECTED,
-
-        /**
-         * Represents the status of the client that is used during play.
-         * @since 1.0
-         */
-        PLAYING,
-
-        /**
-         * Represents the status of the client that is displaying a Query dialog.
-         * @since 1.0
-         */
-        QUERY;
-    }
-
-    private Status status = Status.UNCONNECTED;
-
-    private final String statusSem = "mystatus_sem";
-
     private final ScriptMonitorListeners scriptMonitorListeners = new ScriptMonitorListeners();
 
     /**
@@ -117,34 +91,6 @@ public abstract class ServerConnection implements PacketListener
             }
         }
     }
-
-    /**
-     * Sets the current status of the client to the given value. See the various
-     * STATUS_ constants.
-     * @param status The new status value.
-     * @since 1.0
-     */
-    public void setStatus(final Status status)
-    {
-        synchronized(statusSem)
-        {
-            this.status = status;
-        }
-    }
-
-    /**
-     * Gets the current status of the client. See the STATUS_ constants.
-     * @since 1.0
-     * @return A value representing the current status.
-     */
-    public Status getStatus()
-    {
-        synchronized(statusSem)
-        {
-            return status;
-        }
-    }
-
     public ScriptMonitorListeners getScriptMonitorListeners()
     {
         return scriptMonitorListeners;
