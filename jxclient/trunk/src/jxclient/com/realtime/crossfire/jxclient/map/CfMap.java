@@ -366,7 +366,7 @@ public class CfMap
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
+//        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
 
         if (!isWithinMap(x, y))
         {

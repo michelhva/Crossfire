@@ -256,9 +256,9 @@ public class CfMapPatch
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
+//        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
+//        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
+//        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
 
         return square[x][y].getHeadMapSquare(layer);
     }

@@ -293,7 +293,7 @@ public class CfMapSquare
      */
     public CfMapSquare getHeadMapSquare(final int layer)
     {
-        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
+//        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
 
         // suppress parts of fog-of-war objects if this square is not
         // fog-of-war
