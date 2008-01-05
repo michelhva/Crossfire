@@ -49,8 +49,8 @@ commandlist command_book_close AND null DIALOG_CLOSE book
 commandlist command_ground_left AND
 commandlist command_ground_right AND
 
-commandlist command_inventory_left AND
-commandlist command_inventory_right AND
+commandlist command_inventory_up OR
+commandlist command_inventory_down OR
 
 commandlist command_messages_up AND
 commandlist command_messages_down AND
