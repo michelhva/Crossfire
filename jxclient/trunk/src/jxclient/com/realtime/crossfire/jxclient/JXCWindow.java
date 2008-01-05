@@ -1514,6 +1514,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void executeSingleCommand(final String command)
     {
+        if (command.length() <= 0)
+        {
+            return;
+        }
+
         if (!commands.execute(command))
         {
             sendNcom(command);
