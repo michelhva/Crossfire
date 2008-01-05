@@ -101,6 +101,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private final CrossfireServerConnection myserver;
 
+    /**
+     * The command queue instance for this window.
+     */
+    private final CommandQueue commandQueue;
+
     private final String semaphore_drawing = "semaphore_drawing";
 
     private final String semaphoseChangeGui = "semaphore_change_gui";
@@ -187,11 +192,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The mouse tracker.
      */
     private final MouseTracker mouseTracker;
-
-    /**
-     * The default repeat counter for "ncom" commands.
-     */
-    private int repeatCount = 0;
 
     /**
      * The width of the client area.
@@ -347,6 +347,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.debugGui = debugGui;
         this.settings = settings;
         myserver = new CrossfireServerConnection(experienceTable, debugProtocol);
+        commandQueue = new CommandQueue(myserver);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
@@ -537,6 +538,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
                 ItemsList.getStats().reset();
                 myserver.connect(hostname, port, connectionListener);
+                commandQueue.clear();
                 Faces.setFacesCallback(myserver);
             }
 
@@ -658,46 +660,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         changeGUI(GUI_METASERVER);
     }
 
-    /**
-     * Send a "ncom" command to the server. This function uses the default
-     * repeat count.
-     *
-     * @param command the command
-     *
-     * @return the packet id
-     *
-     * @see #sendNcom(int, String)
-     */
-    public int sendNcom(final String command)
-    {
-        return sendNcom(getRepeatCount(), command);
-    }
-
-    /**
-     * Send a "ncom" command to the server.
-     *
-     * @param repeat the repeat count
-     *
-     * @param command the command
-     *
-     * @return the packet id
-     *
-     * @see #sendNcom(String)
-     */
-    public int sendNcom(final int repeat, final String command)
-    {
-        try
-        {
-            return myserver.sendNcom(repeat, command);
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            endRendering();
-            return 0;
-        }
-    }
-
     public CrossfireServerConnection getCrossfireServerConnection()
     {
         return myserver;
@@ -722,16 +684,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD8:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 1");
+                commandQueue.sendNcom(0, "run 1");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("north f");
+                commandQueue.sendNcom("north f");
             }
             else
             {
-                sendNcom(0, "north");
+                commandQueue.sendNcom(0, "north");
             }
             break;
 
@@ -739,16 +701,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD9:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 2");
+                commandQueue.sendNcom(0, "run 2");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("northeast f");
+                commandQueue.sendNcom("northeast f");
             }
             else
             {
-                sendNcom(0, "northeast");
+                commandQueue.sendNcom(0, "northeast");
             }
             break;
 
@@ -757,16 +719,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD6:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 3");
+                commandQueue.sendNcom(0, "run 3");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("east f");
+                commandQueue.sendNcom("east f");
             }
             else
             {
-                sendNcom(0, "east");
+                commandQueue.sendNcom(0, "east");
             }
             break;
 
@@ -774,16 +736,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD3:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 4");
+                commandQueue.sendNcom(0, "run 4");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("southeast f");
+                commandQueue.sendNcom("southeast f");
             }
             else
             {
-                sendNcom(0, "southeast");
+                commandQueue.sendNcom(0, "southeast");
             }
             break;
 
@@ -792,16 +754,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD2:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 5");
+                commandQueue.sendNcom(0, "run 5");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("south f");
+                commandQueue.sendNcom("south f");
             }
             else
             {
-                sendNcom(0, "south");
+                commandQueue.sendNcom(0, "south");
             }
             break;
 
@@ -809,16 +771,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD1:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 6");
+                commandQueue.sendNcom(0, "run 6");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("southwest f");
+                commandQueue.sendNcom("southwest f");
             }
             else
             {
-                sendNcom(0, "southwest");
+                commandQueue.sendNcom(0, "southwest");
             }
             break;
 
@@ -827,16 +789,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD4:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 7");
+                commandQueue.sendNcom(0, "run 7");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("west f");
+                commandQueue.sendNcom("west f");
             }
             else
             {
-                sendNcom(0, "west");
+                commandQueue.sendNcom(0, "west");
             }
             break;
 
@@ -844,16 +806,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         case KeyEvent.VK_NUMPAD7:
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
-                sendNcom(0, "run 8");
+                commandQueue.sendNcom(0, "run 8");
                 is_run_active = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("northwest f");
+                commandQueue.sendNcom("northwest f");
             }
             else
             {
-                sendNcom(0, "northwest");
+                commandQueue.sendNcom(0, "northwest");
             }
             break;
 
@@ -865,52 +827,52 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
-                sendNcom("stay f");
+                commandQueue.sendNcom("stay f");
             }
             else
             {
-                sendNcom(0, "stay");
+                commandQueue.sendNcom(0, "stay");
             }
             break;
 
         case KeyEvent.VK_0:
-            addToRepeatCount(0);
+            commandQueue.addToRepeatCount(0);
             break;
 
         case KeyEvent.VK_1:
-            addToRepeatCount(1);
+            commandQueue.addToRepeatCount(1);
             break;
 
         case KeyEvent.VK_2:
-            addToRepeatCount(2);
+            commandQueue.addToRepeatCount(2);
             break;
 
         case KeyEvent.VK_3:
-            addToRepeatCount(3);
+            commandQueue.addToRepeatCount(3);
             break;
 
         case KeyEvent.VK_4:
-            addToRepeatCount(4);
+            commandQueue.addToRepeatCount(4);
             break;
 
         case KeyEvent.VK_5:
-            addToRepeatCount(5);
+            commandQueue.addToRepeatCount(5);
             break;
 
         case KeyEvent.VK_6:
-            addToRepeatCount(6);
+            commandQueue.addToRepeatCount(6);
             break;
 
         case KeyEvent.VK_7:
-            addToRepeatCount(7);
+            commandQueue.addToRepeatCount(7);
             break;
 
         case KeyEvent.VK_8:
-            addToRepeatCount(8);
+            commandQueue.addToRepeatCount(8);
             break;
 
         case KeyEvent.VK_9:
-            addToRepeatCount(9);
+            commandQueue.addToRepeatCount(9);
             break;
 
         default:
@@ -933,23 +895,23 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         switch (e.getKeyChar())
         {
         case 'a':
-            sendNcom("apply");
+            commandQueue.sendNcom("apply");
             break;
 
         case 'd':
-            sendNcom("use_skill disarm traps");
+            commandQueue.sendNcom("use_skill disarm traps");
             break;
 
         case 'e':
-            sendNcom("examine");
+            commandQueue.sendNcom("examine");
             break;
 
         case 'i':
-            sendNcom("mapinfo");
+            commandQueue.sendNcom("mapinfo");
             break;
 
         case 'j':
-            sendNcom("use_skill jumping");
+            commandQueue.sendNcom("use_skill jumping");
             break;
 
         case 'm':
@@ -963,27 +925,27 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case 's':
-            sendNcom("use_skill find traps");
+            commandQueue.sendNcom("use_skill find traps");
             break;
 
         case 'p':
-            sendNcom("use_skill praying");
+            commandQueue.sendNcom("use_skill praying");
             break;
 
         case 't':
-            sendNcom("ready_skill throwing");
+            commandQueue.sendNcom("ready_skill throwing");
             break;
 
         case 'w':
-            sendNcom("who");
+            commandQueue.sendNcom("who");
             break;
 
         case '?':
-            sendNcom("help");
+            commandQueue.sendNcom("help");
             break;
 
         case ',':
-            sendNcom("get");
+            commandQueue.sendNcom("get");
             break;
 
         case '/':
@@ -1130,7 +1092,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         if (keyBindingState != null)
         {
             keyBindingState.keyTyped(e.getKeyChar());
-            resetRepeatCount();
+            commandQueue.resetRepeatCount();
         }
         else
         {
@@ -1185,7 +1147,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return;
         }
 
-        sendNcom(0, "run_stop");
+        commandQueue.sendNcom(0, "run_stop");
         is_run_active = false;
     }
 
@@ -1279,37 +1241,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void paint(final Graphics g)
     {
         jxcWindowRenderer.repaint();
-    }
-
-    /**
-     * Return the current repeat count and reset it to zero.
-     *
-     * @return The current repeat count.
-     */
-    public int getRepeatCount()
-    {
-        final int oldRepeatCount = this.repeatCount;
-        resetRepeatCount();
-        return oldRepeatCount;
-    }
-
-    /**
-     * Reset the current repeat count to zero.
-     */
-    private void resetRepeatCount()
-    {
-        this.repeatCount = 0;
-    }
-
-    /**
-     * Add a digit to the current repeat count.
-     *
-     * @param digit The digit (0-9) to add.
-     */
-    private void addToRepeatCount(final int digit)
-    {
-        assert 0 <= digit && digit <= 9;
-        this.repeatCount = (10*repeatCount+digit)%100000;
     }
 
     /**
@@ -1547,7 +1478,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
         if (!commands.execute(command))
         {
-            sendNcom(command);
+            commandQueue.sendNcom(command);
         }
     }
 
@@ -1664,5 +1595,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             ex.printStackTrace();
         }
         closeQueryDialog();
+    }
+
+    /**
+     * Return the command queue instance for this window.
+     *
+     * @return The command queue instance.
+     */
+    public CommandQueue getCommandQueue()
+    {
+        return commandQueue;
     }
 }
