@@ -101,21 +101,13 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        try
+        if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
         {
-            if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
-            {
-                jxcw.getCrossfireServerConnection().sendLock(!item.isLocked(), item.getTag());
-            }
-            else
-            {
-                jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
-            }
+            jxcw.getCrossfireServerConnection().sendLock(!item.isLocked(), item.getTag());
         }
-        catch (Exception ex)
+        else
         {
-            ex.printStackTrace();
-            System.exit(0);
+            jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
         }
     }
 
@@ -125,18 +117,10 @@ public class GUIItemInventory extends GUIItemItem
         final CfItem item = getItem();
         if (item != null)
         {
-            try
+            if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
             {
-                if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
-                {
-                    jxcw.getCrossfireServerConnection().sendMark(item.getTag());
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                ex.printStackTrace();
-                System.exit(0);
+                jxcw.getCrossfireServerConnection().sendMark(item.getTag());
+                return;
             }
         }
 
@@ -158,15 +142,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        try
-        {
-            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
-        }
-        catch (Exception ex)
-        {
-            ex.printStackTrace();
-            System.exit(0);
-        }
+        jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
     }
 
     /**
