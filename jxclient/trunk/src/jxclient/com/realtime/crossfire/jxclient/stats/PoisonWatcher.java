@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.TimeoutEvent;
 import com.realtime.crossfire.jxclient.Timeouts;
 
 /**
- * Helper class to synthesize a "is poisoned" stat value. The Crossfire server
+ * Helper class to synthesize an "is poisoned" stat value. The Crossfire server
  * currently does not send this information, therefore drawinfo messages are
  * tracked.
  *
