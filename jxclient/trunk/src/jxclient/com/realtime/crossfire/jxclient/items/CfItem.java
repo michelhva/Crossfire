@@ -45,7 +45,7 @@ public class CfItem
 
     private int mynrof;
 
-    private final int mylocation;
+    private int mylocation;
 
     private final int mytype;
 
@@ -142,6 +142,16 @@ public class CfItem
             mynrof = nv;
             modified = true;
         }
+    }
+
+    /**
+     * Update the location.
+     *
+     * @param location The new location.
+     */
+    public void setLocation(final int location)
+    {
+        mylocation = location;
     }
 
     public int getTag()

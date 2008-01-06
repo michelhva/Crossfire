@@ -1404,6 +1404,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         final int flags = packet[pos++]&0xFF;
                         final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int valLocation = (flags&CfItem.UPD_LOCATION) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valFlags = (flags&CfItem.UPD_FLAGS) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valWeight = (flags&CfItem.UPD_WEIGHT) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valFace = (flags&CfItem.UPD_FACE) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
@@ -1432,9 +1433,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" flags="+valFlags+" weight="+valWeight+" face="+valFace+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
+                            debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFace+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
                         }
-                        ItemsList.updateItem(flags, tag, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+                        ItemsList.updateItem(flags, tag, valLocation, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                     }
                     return;
 

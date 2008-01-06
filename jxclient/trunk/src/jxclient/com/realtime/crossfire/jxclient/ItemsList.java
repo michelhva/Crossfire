@@ -42,7 +42,7 @@ public class ItemsList
      */
     private static final Stats stats = new Stats();
 
-    public static void updateItem(final int flags, final int tag, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+    public static void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = itemsManager.getItemOrPlayer(tag);
         if (item == null)
@@ -53,6 +53,10 @@ public class ItemsList
 
         final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && itemsManager.getCurrentFloorManager().getCurrentFloor() == item.getTag() && item.isOpen();
         item.update(flags, tag, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        if ((flags&CfItem.UPD_LOCATION) != 0)
+        {
+            itemsManager.moveItem(item, valLocation);
+        }
         if ((flags&CfItem.UPD_FLAGS) != 0)
         {
             if (item.isOpen())
