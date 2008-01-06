@@ -1414,12 +1414,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             final int nameLength = packet[pos++]&0xFF;
                             int namePlIndex = 0;
-                            while (namePlIndex < nameLength && packet[namePlIndex] != 0)
+                            while (namePlIndex < nameLength && packet[pos+namePlIndex] != 0)
                             {
                                 namePlIndex++;
                             }
                             valName = new String(packet, pos, namePlIndex, utf8);
-                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, namePlIndex+1, nameLength-(namePlIndex+1), utf8) : valName;
+                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, pos+namePlIndex+1, nameLength-(namePlIndex+1), utf8) : valName;
                             pos += nameLength;
                         }
                         else
