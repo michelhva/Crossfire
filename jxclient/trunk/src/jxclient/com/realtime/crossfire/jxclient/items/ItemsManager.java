@@ -228,6 +228,25 @@ public class ItemsManager
     }
 
     /**
+     * Move an item to a new location.
+     *
+     * @param item The item to move.
+     *
+     * @param newLocation The location to move to.
+     */
+    public synchronized void moveItem(final CfItem item, final int newLocation)
+    {
+        if (allItems.get(item.getTag()) != item)
+        {
+            throw new AssertionError("invalid item "+item.getTag());
+        }
+
+        removeItemFromLocation(item);
+        item.setLocation(newLocation);
+        addItemToLocation(item);
+    }
+
+    /**
      * Remove an item from {@link #items}. The item must exist.
      *
      * @param item the item to remove
