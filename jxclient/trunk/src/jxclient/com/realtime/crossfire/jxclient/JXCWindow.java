@@ -48,6 +48,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.Sounds;
+import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import java.awt.event.InputEvent;
@@ -186,6 +187,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The poison watcher to synthesize "poisoned" events.
      */
     private final PoisonWatcher poisonWatcher;
+
+    /**
+     * The active skill watcher to synthesize "active skill" events.
+     */
+    private final ActiveSkillWatcher activeSkillWatcher;
 
     /**
      * The commands instance for this window.
@@ -363,6 +369,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         myserver = new CrossfireServerConnection(redrawSemanphore, experienceTable, debugProtocol);
         commandQueue = new CommandQueue(myserver);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
+        activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats());
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);

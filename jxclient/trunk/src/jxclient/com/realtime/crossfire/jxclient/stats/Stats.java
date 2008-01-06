@@ -431,6 +431,11 @@ public class Stats
     private String title = "";
 
     /**
+     * The active skill name.
+     */
+    private String activeSkill = "";
+
+    /**
      * Forget about all skill name mappings.
      */
     public static void clearSkills()
@@ -461,6 +466,7 @@ public class Stats
         exp = 0;
         range = "";
         title = "";
+        activeSkill = "";
         setStatsProcessed();
     }
 
@@ -567,6 +573,16 @@ public class Stats
     }
 
     /**
+     * Returns the active skill name.
+     *
+     * @return The active skill name.
+     */
+    public String getActiveSkill()
+    {
+        return activeSkill;
+    }
+
+    /**
      * Sets the current Title.
      * @param tile The new Title content.
      */
@@ -583,6 +599,16 @@ public class Stats
     public void setRange(final String range)
     {
         this.range = range;
+    }
+
+    /**
+     * Set the active skill name.
+     *
+     * @param activeSkill The active skill name.
+     */
+    public void setActiveSkill(final String activeSkill)
+    {
+        this.activeSkill = activeSkill;
     }
 
     /**
