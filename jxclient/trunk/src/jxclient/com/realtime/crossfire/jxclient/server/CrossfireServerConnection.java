@@ -231,6 +231,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /** The command prefix for the "version" command. */
     private static final byte[] versionPrefix = { 'v', 'e', 'r', 's', 'i', 'o', 'n', ' ', };
 
+    /**
+     * The semaphore used to synchronized map model updates and map view
+     * redraws.
+     */
+    private final Object redrawSemanphore;
+
     /** The global experience table. */
     private final ExperienceTable experienceTable;
 
@@ -253,13 +259,17 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /**
      * Create a new instance.
      *
+     * @param redrawSemaphore The semaphore used to synchronized map model
+     * updates and map view redraws.
+     *
      * @param experienceTable The experience table instance to update.
      *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      */
-    public CrossfireServerConnection(final ExperienceTable experienceTable, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemanphore, final ExperienceTable experienceTable, final Appendable debugProtocol)
     {
+        this.redrawSemanphore = redrawSemanphore;
         this.experienceTable = experienceTable;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
@@ -1531,91 +1541,124 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private void cmd_map2(final byte[] packet, int pos, int end) throws UnknownCommandException
     {
-        CfMapUpdater.processMapBegin();
-        if (debugProtocol != null)
+        synchronized (redrawSemanphore)
         {
-            debugProtocolWrite("recv map2 begin\n");
-        }
-        while (pos < end)
-        {
-            final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-            final int x = ((coord>>10)&0x3F)-MAP2_COORD_OFFSET;
-            final int y = ((coord>>4)&0x3F)-MAP2_COORD_OFFSET;
-            final int coordType = coord&0xF;
-
-            switch (coordType)
+            CfMapUpdater.processMapBegin();
+            if (debugProtocol != null)
             {
-            case 0:             // normal coordinate
-                for (;;)
+                debugProtocolWrite("recv map2 begin\n");
+            }
+            while (pos < end)
+            {
+                final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                final int x = ((coord>>10)&0x3F)-MAP2_COORD_OFFSET;
+                final int y = ((coord>>4)&0x3F)-MAP2_COORD_OFFSET;
+                final int coordType = coord&0xF;
+
+                switch (coordType)
                 {
-                    final int lenType = packet[pos++]&0xFF;
-                    if (lenType == 0xFF)
+                case 0:         // normal coordinate
+                    for (;;)
                     {
-                        break;
-                    }
-
-                    final int len = (lenType>>5)&7;
-                    final int type = lenType&31;
-                    switch (type)
-                    {
-                    case 0: // clear space
-                        if (len != 0) throw new UnknownCommandException("map2 command contains clear command with length "+len);
-                        if (debugProtocol != null)
+                        final int lenType = packet[pos++]&0xFF;
+                        if (lenType == 0xFF)
                         {
-                            debugProtocolWrite("recv map2 "+x+"/"+y+" clear\n");
+                            break;
                         }
-                        CfMapUpdater.processMapClear(x, y);
-                        break;
 
-                    case 1: // darkness information
-                        if (len != 1) throw new UnknownCommandException("map2 command contains darkness command with length "+len);
-                        final int darkness = packet[pos++]&0xFF;
-                        if (debugProtocol != null)
+                        final int len = (lenType>>5)&7;
+                        final int type = lenType&31;
+                        switch (type)
                         {
-                            debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness+"\n");
-                        }
-                        CfMapUpdater.processMapDarkness(x, y, darkness);
-                        break;
-
-                    case 0x10: // image information
-                    case 0x11:
-                    case 0x12:
-                    case 0x13:
-                    case 0x14:
-                    case 0x15:
-                    case 0x16:
-                    case 0x17:
-                    case 0x18:
-                    case 0x19:
-                        if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
-                        final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if ((face&0x8000) == 0)
-                        {
+                        case 0: // clear space
+                            if (len != 0) throw new UnknownCommandException("map2 command contains clear command with length "+len);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" face="+face+"\n");
+                                debugProtocolWrite("recv map2 "+x+"/"+y+" clear\n");
                             }
-                            CfMapUpdater.processMapFace(x, y, type-0x10, face);
-                        }
-                        else
-                        {
-                            final Animation animation = animations.get(face&0x1FFF);
-                            if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x1FFF));
+                            CfMapUpdater.processMapClear(x, y);
+                            break;
+
+                        case 1: // darkness information
+                            if (len != 1) throw new UnknownCommandException("map2 command contains darkness command with length "+len);
+                            final int darkness = packet[pos++]&0xFF;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3)+"\n");
+                                debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness+"\n");
                             }
-                            CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3);
-                        }
-                        if (len == 3)
-                        {
-                            if (face == 0)
-                            {
-                                throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
-                            }
+                            CfMapUpdater.processMapDarkness(x, y, darkness);
+                            break;
 
+                        case 0x10: // image information
+                        case 0x11:
+                        case 0x12:
+                        case 0x13:
+                        case 0x14:
+                        case 0x15:
+                        case 0x16:
+                        case 0x17:
+                        case 0x18:
+                        case 0x19:
+                            if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
+                            final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if ((face&0x8000) == 0)
                             {
+                                if (debugProtocol != null)
+                                {
+                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" face="+face+"\n");
+                                }
+                                CfMapUpdater.processMapFace(x, y, type-0x10, face);
+                            }
+                            else
+                            {
+                                final Animation animation = animations.get(face&0x1FFF);
+                                if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x1FFF));
+                                if (debugProtocol != null)
+                                {
+                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3)+"\n");
+                                }
+                                CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3);
+                            }
+                            if (len == 3)
+                            {
+                                if (face == 0)
+                                {
+                                    throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                                }
+
+                                if ((face&0x8000) == 0)
+                                {
+                                    final int smooth = packet[pos++]&0xFF;
+                                    if (debugProtocol != null)
+                                    {
+                                        debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth+"\n");
+                                    }
+                                    // XXX: update smoothing information
+                                }
+                                else
+                                {
+                                    final int animSpeed = packet[pos++]&0xFF;
+                                    if (debugProtocol != null)
+                                    {
+                                        debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
+                                    }
+                                    CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
+                                }
+                            }
+                            else if (len == 4)
+                            {
+                                if (face == 0)
+                                {
+                                    throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                                }
+
+                                final int animSpeed = packet[pos++]&0xFF;
+                                if (debugProtocol != null)
+                                {
+                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
+                                }
+                                CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
+
                                 final int smooth = packet[pos++]&0xFF;
                                 if (debugProtocol != null)
                                 {
@@ -1623,70 +1666,40 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 }
                                 // XXX: update smoothing information
                             }
-                            else
+                            else if (len != 2)
                             {
-                                final int animSpeed = packet[pos++]&0xFF;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
+                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" <invalid>\n");
                                 }
-                                CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
+                                throw new UnknownCommandException("map2 command contains image command with length "+len);
                             }
-                        }
-                        else if (len == 4)
-                        {
-                            if (face == 0)
-                            {
-                                throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
-                            }
-
-                            final int animSpeed = packet[pos++]&0xFF;
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
-                            }
-                            CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
-
-                            final int smooth = packet[pos++]&0xFF;
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth+"\n");
-                            }
-                            // XXX: update smoothing information
-                        }
-                        else if (len != 2)
-                        {
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" <invalid>\n");
-                            }
-                            throw new UnknownCommandException("map2 command contains image command with length "+len);
                         }
                     }
-                }
-                break;
+                    break;
 
-            case 1:             // scroll information
-                if (debugProtocol != null)
-                {
-                    debugProtocolWrite("recv map2 "+x+"/"+y+" scroll\n");
-                }
-                CfMapUpdater.processScroll(x, y);
-                break;
+                case 1:         // scroll information
+                    if (debugProtocol != null)
+                    {
+                        debugProtocolWrite("recv map2 "+x+"/"+y+" scroll\n");
+                    }
+                    CfMapUpdater.processScroll(x, y);
+                    break;
 
-            default:
-                if (debugProtocol != null)
-                {
-                    debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>\n");
+                default:
+                    if (debugProtocol != null)
+                    {
+                        debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>\n");
+                    }
+                    throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
                 }
-                throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
             }
+            if (debugProtocol != null)
+            {
+                debugProtocolWrite("recv map2 end\n");
+            }
+            CfMapUpdater.processMapEnd(true);
         }
-        if (debugProtocol != null)
-        {
-            debugProtocolWrite("recv map2 end\n");
-        }
-        CfMapUpdater.processMapEnd(true);
     }
 
     /**

@@ -43,6 +43,12 @@ public class JXCWindowRenderer
 {
     private final JXCWindow jxcWindow;
 
+    /**
+     * The semaphore used to synchronized map model updates and map view
+     * redraws.
+     */
+    private final Object redrawSemanphore;
+
     private BufferStrategy bufferStrategy;
 
     private DisplayMode oldDisplayMode = null;
@@ -108,9 +114,18 @@ public class JXCWindowRenderer
         PLAYING,
     }
 
-    public JXCWindowRenderer(final JXCWindow jxcWindow)
+    /**
+     * Create a new instance.
+     *
+     * @param jxcWindow The associated window.
+     *
+     * @param redrawSemaphore The semaphore used to synchronized map model
+     * updates and map view redraws.
+     */
+    public JXCWindowRenderer(final JXCWindow jxcWindow, final Object redrawSemanphore)
     {
         this.jxcWindow = jxcWindow;
+        this.redrawSemanphore = redrawSemanphore;
         currentGui = new Gui(jxcWindow);
     }
 
@@ -243,9 +258,12 @@ public class JXCWindowRenderer
                 {
                     redrawBlack(g);
                 }
-                redrawGUIBasic(g);
-                redrawGUIDialog(g);
-                redrawTooltip(g);
+                synchronized(redrawSemanphore)
+                {
+                    redrawGUIBasic(g);
+                    redrawGUIDialog(g);
+                    redrawTooltip(g);
+                }
                 g.dispose();
             }
             while (bufferStrategy.contentsLost());
