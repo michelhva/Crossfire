@@ -164,7 +164,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private boolean is_run_active = false;
 
-    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this);
+    /**
+     * The semaphore used to synchronized map model updates and map view
+     * redraws.
+     */
+    private final Object redrawSemanphore = "redraw_semaphore";
+
+    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this, redrawSemanphore);
 
     /**
      * The {@link TooltipManager} for this window.
@@ -354,7 +360,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        myserver = new CrossfireServerConnection(experienceTable, debugProtocol);
+        myserver = new CrossfireServerConnection(redrawSemanphore, experienceTable, debugProtocol);
         commandQueue = new CommandQueue(myserver);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);

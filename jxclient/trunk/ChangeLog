@@ -1,3 +1,8 @@
+2008-01-06  Andreas Kirschbaum
+
+	* Fix display glitches when scrolling the map view. Now the
+	character is always displayed in the center of the screen.
+
 2008-01-05  Andreas Kirschbaum
 
 	* Try harder to fall back to windowed mode if either full-screen
