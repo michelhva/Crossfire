@@ -310,16 +310,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         {
             // cursor moved left
 
-            if (cursor < offset)
+            while (cursor < offset)
             {
-                if (offset > SCROLL_CHARS)
-                {
-                    offset -= SCROLL_CHARS;
-                }
-                else
+                if (offset <= SCROLL_CHARS)
                 {
                     offset = 0;
+                    break;
                 }
+
+                offset -= SCROLL_CHARS;
             }
         }
 
