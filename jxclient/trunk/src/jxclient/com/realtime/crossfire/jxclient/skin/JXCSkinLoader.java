@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -1578,6 +1579,11 @@ public abstract class JXCSkinLoader implements JXCSkin
         if (name.startsWith("SKILL_"))
         {
             return new SkillGaugeUpdater(experienceTable, Stats.getNamedSkill(name.substring(6).replaceAll("_", " ")));
+        }
+
+        if (name.startsWith("ACTIVE_SKILL_"))
+        {
+            return new ActiveSkillGaugeUpdater(experienceTable, name.substring(13).replaceAll("_", " "));
         }
 
         throw new IOException("invalid stat name: "+name);

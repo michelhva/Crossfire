@@ -4,6 +4,14 @@ dialog_hide START META LOGIN
 button button_close          528   4  16  16 close_up close_down false command_skills
 
 # skills group
+gauge     act_lockpicking      9  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE
+gauge     act_hiding           9  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_hiding WE
+gauge     act_stealing         9  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_stealing WE
+gauge     act_bargaining       9 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_bargaining WE
+gauge     act_oratory          9 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_oratory WE
+gauge     act_singing          9 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_singing WE
+gauge     act_inscription      9 160 166  16 skill_active null skill_inactive ACTIVE_SKILL_inscription WE
+gauge     act_fishing          9 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_fishing WE
 label_text label_lockpicking  10  40  90  16 font_label BLACK Lockpicking:
 label_text label_hiding       10  60  90  16 font_label BLACK Hiding:
 label_text label_stealing     10  80  90  16 font_label BLACK Stealing:
@@ -22,6 +30,11 @@ textgauge res_inscription    100 161  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_fishing        100 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE WHITE font_label Fishing:
 
 # skills "yes/no" group
+gauge     act_jumping          9 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_jumping WE
+gauge     act_climbing         9 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_climbing WE
+gauge     act_levitation       9 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_levitation WE
+gauge     act_meditation       9 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_meditation WE
+gauge     act_set_traps        9 290 166  16 skill_active null skill_inactive ACTIVE_SKILL_set_traps WE
 label_text label_jumping      10 210  90  16 font_label BLACK Jumping:
 label_text label_climbing     10 230  90  16 font_label BLACK Climbing:
 label_text label_levitation   10 250  90  16 font_label BLACK Levitation:
@@ -34,6 +47,12 @@ textgauge res_meditation     100 271  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_set_traps      100 291  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE WHITE font_label Set traps:
 
 # identify/creation group
+gauge     act_smithery       189  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_smithery WE
+gauge     act_bowyer         189  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_bowyer WE
+gauge     act_jeweler        189  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_jeweler WE
+gauge     act_woodsman       189 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
+gauge     act_thaumaturgy    189 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
+gauge     act_literacy       189 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_literacy WE
 label_text label_smithery    190  40  90  16 font_label BLACK Smithery:
 label_text label_bowyer      190  60  90  16 font_label BLACK Bowyer:
 label_text label_jeweler     190  80  90  16 font_label BLACK Jeweler:
@@ -48,6 +67,10 @@ textgauge res_thaumaturgy    280 121  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_literacy       280 141  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE WHITE font_label Literacy:
 
 # identify/detection group
+gauge     act_sense_magic    189 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
+gauge     act_sense_curse    189 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE
+gauge     act_find_traps     189 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_find_traps WE
+gauge     act_disarm_traps   189 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE
 label_text label_sense_magic 190 210  90  16 font_label BLACK Sense magic:
 label_text label_sense_curse 190 230  90  16 font_label BLACK Sense curse:
 label_text label_find_traps  190 250  90  16 font_label BLACK Find traps:
@@ -58,6 +81,16 @@ textgauge res_find_traps     280 251  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_disarm_traps   280 271  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE WHITE font_label Disarm traps:
 
 # combat group
+gauge     act_punching       369  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_punching WE
+gauge     act_karate         369  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_karate WE
+gauge     act_one_handed_weapons 369  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE
+gauge     act_two_handed_weapons 369 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE
+gauge     act_missile_weapons 369 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE
+gauge     act_throwing       369 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_throwing WE
+gauge     act_use_magic_item 369 160 166  16 skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE
+gauge     act_flame_touch    369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE
+gauge     act_clawing        369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_clawing WE
+gauge     act_wraith_feed    369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE
 label_text label_punching    370 40   90  16 font_label BLACK Punching:
 label_text label_karate      370 60   90  16 font_label BLACK Karate:
 label_text label_one_handed_weapons 370 80  90  16 font_label BLACK One handed:
@@ -80,6 +113,11 @@ textgauge res_clawing        460 181  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_wraith_feed    460 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE WHITE font_label Wraith feed:
 
 # spells/prayers group
+gauge     act_praying        369 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_praying WE
+gauge     act_summoning      369 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_summoning WE
+gauge     act_pyromancy      369 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE
+gauge     act_evocation      369 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_evocation WE
+gauge     act_sorcery        369 290 166  16 skill_active null skill_inactive ACTIVE_SKILL_sorcery WE
 label_text label_praying     370 210  90  16 font_label BLACK Praying:
 label_text label_summoning   370 230  90  16 font_label BLACK Summoning:
 label_text label_pyromancy   370 250  90  16 font_label BLACK Pyromancy:
