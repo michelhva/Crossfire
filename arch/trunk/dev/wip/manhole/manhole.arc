@@ -19,7 +19,7 @@ manhole.112
 manhole.113
 manhole.114
 mina
-is_animated 1
+is_animated 0
 wc 4
 maxsp 0
 visibility 50
@@ -59,7 +59,7 @@ manhole.112
 manhole.113
 manhole.114
 mina
-is_animated 1
+is_animated 0
 move_on walk
 wc 0
 maxsp 1
