@@ -69,7 +69,10 @@ public abstract class GaugeUpdater
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue)
     {
-        gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), Integer.toString(curValue));
+        if (gauge != null)
+        {
+            gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), Integer.toString(curValue));
+        }
     }
 
     /**
@@ -85,7 +88,10 @@ public abstract class GaugeUpdater
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        gauge.setValues(curValue, minValue, maxValue, labelText, tooltipText);
+        if (gauge != null)
+        {
+            gauge.setValues(curValue, minValue, maxValue, labelText, tooltipText);
+        }
     }
 
     /**
