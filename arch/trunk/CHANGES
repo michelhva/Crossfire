@@ -1,5 +1,14 @@
 Changes for SVN top of tree:
 
+Add wall/slevel/dlevel*.png and wall/slevel/dlevel.arc.  The slevel arches are
+raised "elevation" marks that are supposed to overlay other tiles to give the
+appearance of a raised platform.  The dlevel arches are the same graphics but
+flipped in X and/or Y as appropriate to present a depression.  Both arch sets
+rely on the Crossfire perspective to give the hint of a ridge or depression.
+In an elevation, the leading edges are long and the receding edges are short.
+For the depression the leading edges are short and receding edges long.
+Kevin Bulgrien 2007-01-07
+
 Add wall/bwall/bwall_hole_5.base.111.png,wall/bwall/bwall_hole_A.base.111.png,
 and wall/bwall/bwall_hole.arc.  The vertical wall has a transparent hole in
 the left face, and the horizontal wall has a transparent hole in the bottom
