@@ -17,30 +17,19 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.sound;
+package com.realtime.crossfire.jxclient;
 
 /**
- * Manages all sounds.
+ * Interface for listeners interested in gui state changes.
  *
  * @author Andreas Kirschbaum
  */
-public enum Sounds
+public interface GuiStateListener
 {
-    /** A character related sound event. */
-    CHARACTER;
-
     /**
-     * The sound to play when the character get poisoned.
+     * The gui state has changed.
+     *
+     * @param guiState The new guiState.
      */
-    public static final String POISON_ON = "poison_on";
-
-    /**
-     * The sound to play when the character gets unpoisoned.
-     */
-    public static final String POISON_OFF = "poison_off";
-
-    /**
-     * The sound to play when the character gains a new level.
-     */
-    public static final String LEVEL_UP = "level_up";
+    void guiStateChanged(JXCWindowRenderer.GuiState guiState);
 }
