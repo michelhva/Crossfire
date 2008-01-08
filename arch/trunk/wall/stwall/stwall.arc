@@ -25,6 +25,13 @@ move_block all
 visibility 100
 magicmap grey
 end
+Object stwall_1_4_door
+name doorway
+face stwall_2_door.111
+no_pick 1
+visibility 100
+magicmap grey
+end
 Object stwall_2_2_1
 name wall
 face stwall_3.111
@@ -49,6 +56,13 @@ face stwall_5.111
 blocksview 1
 no_pick 1
 move_block all
+visibility 100
+magicmap grey
+end
+Object stwall_2_1_1_door
+name doorway
+face stwall_5_door.111
+no_pick 1
 visibility 100
 magicmap grey
 end

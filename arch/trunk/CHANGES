@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+Add wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+make it possible to have tight-fitting doors (no gaps due to perspective).
+wall/stwall/stwall.arc modified.
+Kevin Bulgrien 2007-01-07
+
 Add wall/slevel/dlevel*.png and wall/slevel/dlevel.arc.  The slevel arches are
 raised "elevation" marks that are supposed to overlay other tiles to give the
 appearance of a raised platform.  The dlevel arches are the same graphics but
