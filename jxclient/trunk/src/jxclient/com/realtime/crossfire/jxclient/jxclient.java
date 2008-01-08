@@ -164,7 +164,7 @@ public class jxclient
                         }
 
                         SoundManager.instance = new SoundManager();
-                        new StatsWatcher(ItemsList.getStats());
+                        new StatsWatcher(ItemsList.getStats(), jxwin.getWindowRenderer());
                         new MusicWatcher(jxwin.getCrossfireServerConnection());
                         new SoundWatcher(jxwin.getCrossfireServerConnection());
 

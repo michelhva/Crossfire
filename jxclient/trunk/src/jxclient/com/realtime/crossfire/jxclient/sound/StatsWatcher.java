@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.GuiStateListener;
+import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -36,9 +38,25 @@ public class StatsWatcher
     private final Stats stats;
 
     /**
+     * Whether sounds should be generated.
+     */
+    private boolean active;
+
+    /**
      * The last known poisoned state.
      */
     private boolean poisoned;
+
+    /**
+     * The last know level.
+     */
+    private int level;
+
+    /**
+     * If set, ignore the next level change. This is used to suppress false
+     * positives right after login.
+     */
+    private boolean ignoreNextLevelChange = true;
 
     /**
      * The crossfire stats listener attached to {@link #stats}.
@@ -53,15 +71,33 @@ public class StatsWatcher
     };
 
     /**
+     * The gui state listener.
+     */
+    private final GuiStateListener guiStateListener = new GuiStateListener()
+    {
+        /** {@inheritDoc} */
+        public void guiStateChanged(final JXCWindowRenderer.GuiState guiState)
+        {
+            active = guiState == JXCWindowRenderer.GuiState.PLAYING;
+            ignoreNextLevelChange = true;
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param stats The stats instance to watch.
+     *
+     * @param jxcWindow The window instance.
      */
-    public StatsWatcher(final Stats stats)
+    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer)
     {
         this.stats = stats;
         poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
+        level = stats.getStat(Stats.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(crossfireStatsListener);
+        jxcWindowRenderer.addGuiStateListener(guiStateListener);
+        guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
     }
 
     /**
@@ -73,7 +109,37 @@ public class StatsWatcher
         if (this.poisoned != poisoned)
         {
             this.poisoned = poisoned;
-            SoundManager.instance.playClip(Sounds.CHARACTER, null, poisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+            if (active)
+            {
+                playClip(poisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+            }
+        }
+
+        final int level = stats.getStat(Stats.CS_STAT_LEVEL);
+        if (this.level != level)
+        {
+            if (ignoreNextLevelChange)
+            {
+                ignoreNextLevelChange = false;
+            }
+            else if (this.level < level && active)
+            {
+                playClip(Sounds.LEVEL_UP);
+            }
+            this.level = level;
+        }
+    }
+
+    /**
+     * Play a clip if sounds should be generated.
+     *
+     * @param sound The clip to play.
+     */
+    private void playClip(final String clip)
+    {
+        if (active)
+        {
+            SoundManager.instance.playClip(Sounds.CHARACTER, null, clip);
         }
     }
 }

@@ -67,6 +67,11 @@ public class JXCWindowRenderer
     private CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
+     * Listeners to be notified about {@link #guiState} changes.
+     */
+    private CopyOnWriteArrayList<GuiStateListener> guiStateListeners = new CopyOnWriteArrayList<GuiStateListener>();
+
+    /**
      * If set, {@link #currentGui} has changed.
      */
     private boolean currentGuiChanged = false;
@@ -591,6 +596,10 @@ public class JXCWindowRenderer
 
         this.guiState = guiState;
         forcePaint = true;
+        for (final GuiStateListener listener : guiStateListeners)
+        {
+            listener.guiStateChanged(guiState);
+        }
     }
 
     /**
@@ -601,5 +610,15 @@ public class JXCWindowRenderer
     public GuiState getGuiState()
     {
         return guiState;
+    }
+
+    /**
+     * Add a gui state listener to be notified about {@link #guiState} changes.
+     *
+     * @param listener The listener to add.
+     */
+    public void addGuiStateListener(final GuiStateListener listener)
+    {
+        guiStateListeners.add(listener);
     }
 }
