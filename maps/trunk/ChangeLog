@@ -1,3 +1,12 @@
+2008-01-07 11:40  kbulgrien
+        * unlinked/kbulgrien: Add directory to begin developing maps while
+          they are still not complete enough to link in the real world.
+        * unlinked/kbulgrien/rayvins_house.1: A house map to be linked to
+          the small house in world_105_116 at coordinates 11,4 (just east
+          of Patch's house.  The map is not linked because as of yet it
+          references the manhole which has not been finalized and is still
+          in arch/dev/wip/manhole.
+
 2008-01-03 02:35  kbulgrien
         * start/newbieshouse: Remove mid-sentence line breaks and rework some
           sign content.  Add some detail, like the default "s" and "d"
