@@ -1,5 +1,11 @@
 Changes for SVN top of tree:
 
+Add wall/bwall/bwall_hole_5.base.111.png,wall/bwall/bwall_hole_A.base.111.png,
+and wall/bwall/bwall_hole.arc.  The vertical wall has a transparent hole in
+the left face, and the horizontal wall has a transparent hole in the bottom
+face.  The holes could be drains for flowing rivers, or might even be an exit.
+Kevin Bulgrien 2007-01-07
+
 Add dev/wip directory for commiting work-in-progress archetypes.  The directory
 is not visible in Gridarta CrossfireEditor, but can be made so with a soft link
 like arch/trunk/wip --> arch/trunk/dev/wip.
