@@ -60,18 +60,32 @@ public class Commands
      *
      * @param command The command.
      *
-     * @return Whether a command was executed.
+     * @param command The command and all remaining commands of the command
+     * list.
+     *
+     * @return 0=unknown command, 1=command was executed, 2=whole command list
+     * was executed.
      */
-    public boolean execute(final String command)
+    public int execute(final String command, final String commandList)
     {
         final String[] args = patternWhitespace.split(command.trim(), 2);
         final Command cmd = commands.get(args[0]);
         if (cmd == null)
         {
-            return false;
+            return 0;
         }
 
-        cmd.execute(args.length >= 2 ? args[1] : "");
-        return true;
+        if(!cmd.allArguments())
+        {
+            cmd.execute(args.length >= 2 ? args[1] : "");
+            return 1;
+        }
+
+        assert commandList.startsWith(command);
+        final String[] argsList = patternWhitespace.split(commandList.trim(), 2);
+        assert argsList[0].equals(args[0]);
+
+        cmd.execute(argsList.length >= 2 ? argsList[1] : "");
+        return 2;
     }
 }

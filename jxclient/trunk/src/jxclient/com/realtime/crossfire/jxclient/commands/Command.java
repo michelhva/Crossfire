@@ -27,6 +27,13 @@ package com.realtime.crossfire.jxclient.commands;
 public interface Command
 {
     /**
+     * Return whether all remaining commands should be included as arguments.
+     *
+     * @return Whether all remaining commands should be included as arguments.
+     */
+    boolean allArguments();
+
+    /**
      * Execute the command with the given arguments.
      *
      * @param args The command arguments.

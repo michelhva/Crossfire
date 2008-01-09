@@ -42,6 +42,12 @@ public class ExecCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    public boolean allArguments()
+    {
+        return false;
+    }
+
+    /** {@inheritDoc} */
     public void execute(final String args)
     {
         if (args.length() == 0)

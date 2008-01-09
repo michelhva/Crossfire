@@ -41,6 +41,12 @@ public class SetCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    public boolean allArguments()
+    {
+        return false;
+    }
+
+    /** {@inheritDoc} */
     public void execute(final String args)
     {
         final String[] tmp = Commands.patternWhitespace.split(args, 2);
