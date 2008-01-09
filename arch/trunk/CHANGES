@@ -1,5 +1,15 @@
 Changes for SVN top of tree:
 
+Add a set of "overlay" archs that are designed to sit on top of walls to form
+a spout with water pouring out.  The art is designed to separate the liquid
+and spout to allow spout and fluid variations.  The archs are WIP because they
+cause the wall underneath them to disappear.  This is probably a map layer
+issue.  It may not take much to fix, but are not presently releasable.
+The files are in dev/wip/spout, and are: pour_h2o.arc, pour_h2o.base.111.png,
+pour_h2o.base.112.png, pour_h2o.base.113.png, pour_h2o.base.114.png,
+pour_h2o.face, pour_spout.arc, pour_spout.base.111.png, README, spout.xcf.
+Note that maps/trunk/unlinked/kbulgrien/rayvins_house.1 contains these arches.
+
 Add wall/wall/wall_door_0.base.111.png and wall_door_1.base.111.png to make
 it possible to have tight-fitting doors (no gaps due to perspective) in the
 wall arch set.  wall/wall/wall.arc modified.  Decided to use the numbering

@@ -1,0 +1,74 @@
+===============================================================================
+SPOUT OVERLAYS by Kevin Bulgrien
+===============================================================================
+
+This is a first run at creating a set of overlays that may be reused in a
+number of combinations:
+
+pour_spout.arc
+pour_spout.base.111.png : A wall spout with nothing coming out of it.  To be
+                          placed on top of wall facings A or B, or possibly
+                          even 2 and 8.  Not designed for use with "short"
+                          walls like bwall, cave, dun, etc, but, a spout
+                          could be created for them too.
+
+pour_h2o.arc
+pour_h2o.base.111.png
+pour_h2o.base.112.png
+pour_h2o.base.113.png
+pour_h2o.base.114.png   : Animated pouring water to be placed over top of
+                          the pour spout.  This arch and associated graphics
+                          are not quite perfected.  The water is a bit to
+                          dark for sea tiles, though might work for the
+                          darker river water.
+
+===============================================================================
+GRAPHICS
+===============================================================================
+
+The spout.xcf contains many individual layers of components used to create the
+above artwork.  Note that the water design was quite easy.  A single color
+water was drawn, then GIMP's Filters | Noise | HSV Noise... was used to vary
+the color.  The effect of the filter is somewhat random, so it was a simple
+matter to generate variants of the water to make the water look like it was
+flowing.
+
+HSV Noise settings that seemed reasonable were as follows:
+
+  Holdness:    2
+  Hue:         3
+  Saturation: 63
+  Value:      63
+
+The water is too dark to match the sea tiles, but might match the river water
+colors.
+
+The flowing  water needs to be wider to show up the animation on 32x32 tiles.
+It is even a bit hard to see at 64x64 in jxclient.
+
+The graphics are still in RGB format instead of INDEXED form, so they are not
+compressed as well as they could be.  The conversion to INDEXED should be done
+before releasing the graphics.
+
+===============================================================================
+POSSIBILITIES
+===============================================================================
+
+The possibilities of modular overlays becomes more evident if one concsiders
+things like the following.
+
+  Use the same pour_spout.arc on any "tall" wall for a number of variations
+  on the wall/spout theme.
+
+  Now, increase the variability by writing new replacement for pour_h2o.arc
+  along the lines of pour_blood.arc, pour_sewage.arc, pour_fire.arc, etc.
+
+===============================================================================
+PROBLEMS
+===============================================================================
+
+Presently pour_spout.arc and/or pour_h2o.arc cause a wall piece placed below
+them to disappear.  Only the floor graphic is visible.  This is probably a
+map layer issue, so some experimentation will have to be done to figure out
+how to get the wall piece to stay visible below the spout and animated water.
+
