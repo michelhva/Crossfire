@@ -25,9 +25,9 @@ move_block all
 visibility 100
 magicmap grey
 end
-Object stwall_1_4_door
+Object stwall_door_1_4
 name doorway
-face stwall_2_door.111
+face stwall_door_1.111
 no_pick 1
 visibility 100
 magicmap grey
@@ -59,9 +59,9 @@ move_block all
 visibility 100
 magicmap grey
 end
-Object stwall_2_1_1_door
+Object stwall_door_2_1_1
 name doorway
-face stwall_5_door.111
+face stwall_door_0.111
 no_pick 1
 visibility 100
 magicmap grey

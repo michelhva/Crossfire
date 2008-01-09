@@ -1,5 +1,14 @@
 Changes for SVN top of tree:
 
+Add wall/wall/wall_door_0.base.111.png and wall_door_1.base.111.png to make
+it possible to have tight-fitting doors (no gaps due to perspective) in the
+wall arch set.  wall/wall/wall.arc modified.  Decided to use the numbering
+of the window archs.  Also, per naming of the stwall window archs, rename
+wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+stwall_door_1.base.111.png and stwall_door_0.base.111.png and update
+stwall.arc.
+Kevin Bulgrien 2007-01-08
+
 Add wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
 make it possible to have tight-fitting doors (no gaps due to perspective).
 wall/stwall/stwall.arc modified.
