@@ -25,6 +25,13 @@ no_pick 1
 move_block all
 visibility 100
 end
+Object wall_door_1_4
+name doorway
+face wall_door_1.111
+color_fg brown
+no_pick 1
+visibility 100
+end
 Object wall_2_2_1
 name wall
 face wall_3.111
@@ -50,6 +57,13 @@ color_fg brown
 blocksview 1
 no_pick 1
 move_block all
+visibility 100
+end
+Object wall_door_2_1_1
+name doorway
+face wall_door_0.111
+color_fg brown
+no_pick 1
 visibility 100
 end
 Object wall_2_2_2
