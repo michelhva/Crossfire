@@ -1504,9 +1504,20 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void executeCommand(final String commands)
     {
-        for (final String command : commands.trim().split(" *; *"))
+
+        String cmds = commands.trim();
+        while (cmds.length() > 0)
         {
-            executeSingleCommand(command);
+            final String[] cmd = cmds.split(" *; *", 2);
+            if (executeSingleCommand(cmd[0], cmds))
+            {
+                break;
+            }
+            if (cmd.length <= 1)
+            {
+                break;
+            }
+            cmds = cmd[1];
         }
     }
 
@@ -1515,17 +1526,29 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * command.
      *
      * @param command The command to execute.
+     *
+     * @param commandList The command and all remaining commands.
+     *
+     * @return <code>true</code> if all remaining commands have been consumed.
      */
-    private void executeSingleCommand(final String command)
+    private boolean executeSingleCommand(final String command, final String commandList)
     {
         if (command.length() <= 0)
         {
-            return;
+            return false;
         }
 
-        if (!commands.execute(command))
+        switch (commands.execute(command, commandList))
         {
+        case 0:
             commandQueue.sendNcom(false, command);
+            return false;
+
+        case 1:
+            return false;
+
+        default:
+            return true;
         }
     }
 
