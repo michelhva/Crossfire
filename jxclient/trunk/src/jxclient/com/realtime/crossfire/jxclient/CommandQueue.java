@@ -35,7 +35,7 @@ public class CommandQueue
      * Maximum number of pending commands sent to the server. Excess commands
      * will be dropped.
      */
-    public static final int MAX_PENDING_COMMANDS = 4;
+    public static final int MAX_PENDING_COMMANDS = 10;
 
     /**
      * The server connection for sending ncom commands.
