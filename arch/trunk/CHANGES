@@ -1,5 +1,14 @@
 Changes for SVN top of tree:
 
+Rework dev/wip/spout to make water wider and more visible.  Also adjust the
+color to better match the sea arch set.  Add a reference layer of a sea tile
+to spout.xcf.  Convert all the .png files to indexed mode to reduce size.
+Update README with methods used to produce the graphics and remove comments
+about issues with the original revision.  The .arc files have been modified
+to add 'map_layer item' to prevent wall pieces from disappearing when these
+archs are placed on top of them.
+Kevin Bulgrien 2007-01-09
+
 Add a set of "overlay" archs that are designed to sit on top of walls to form
 a spout with water pouring out.  The art is designed to separate the liquid
 and spout to allow spout and fluid variations.  The archs are WIP because they
