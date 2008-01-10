@@ -12,5 +12,6 @@ is_animated 1
 magicmap blue
 no_pick 1
 anim_speed 2
+map_layer item
 client_anim_random 1
 end
