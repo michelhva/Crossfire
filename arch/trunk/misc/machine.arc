@@ -9,13 +9,14 @@
 #
 # The original image is Copyright © 2001, 2004 by David M. MacMillan and
 # Rollande Krandall. The original work, and this derivative, are both licensed
-# under an Attribution-ShareAlike Creative Commons License which is described
+# under a Creative Commons Attribution-ShareAlike License which is described
 # at http://creativecommons.org/licenses/by-sa/2.0/.  The license includes
 # important disclaimers of warranty and liability.
 #
-# The contents of this file are an original work by Kevin Bulgrien, and is
-# also distributed under the Attribution-ShareAlike license described above.
-# Attribution requirements are met through retension of this header text.
+# This derivative work and the original contents of this file were created
+# by Kevin Bulgrien, and are distributed under the Attribution-ShareAlike
+# license described at at http://creativecommons.org/licenses/by-sa/3.0/.
+# Attribution requirements are met through retention of this header text.
 #
 Object Machine.1
 name Machine
