@@ -13,8 +13,7 @@
 # at http://creativecommons.org/licenses/by-sa/2.0/.  The license includes
 # important disclaimers of warranty and liability.
 #
-# This derivative work and the original contents of this file were created
-# by Kevin Bulgrien, and are distributed under the Attribution-ShareAlike
+# The derivative work is distributed under the Attribution-ShareAlike
 # license described at at http://creativecommons.org/licenses/by-sa/3.0/.
 # Attribution requirements are met through retention of this header text.
 #
