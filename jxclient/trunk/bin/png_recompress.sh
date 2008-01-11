@@ -25,7 +25,6 @@
 # Also this need the programs mentioned above (optipng and advpng).
 #
 # TODO:
-#  * Make it work recursivly on a directory.
 #  * Better docs
 #  * Check that input really are *.png
 #  * If advpng doesn't make a file smaller, don't run the second
@@ -51,6 +50,9 @@ fi
 # Version
 declare -r png_recompress_version='0.0.1'
 
+# Useful for debugging
+export PS4='+(${BASH_SOURCE}:${LINENO}): ${FUNCNAME[0]} : '
+
 print_cmd_help() {
 	echo 'png_recompress is a script to automate compressing of png images.'
 	echo ''
@@ -59,7 +61,7 @@ print_cmd_help() {
 	echo 'Options:'
 	echo '  -h, --help              Display this help and exit.'
 	echo '  -V, --version           Output version information and exit.'
-	echo '  -r, --recursive         Run recursively on directories specified on command line.'
+	echo '  -r, --recursive         Run recursively on directories specified on command line. Will not follow symlinks.'
 	echo '      --skip pass         Make png_recompress skip this pass (1, 2 or 3).'
 	echo ''
 	echo "Note that png_recompress can't handle short versions of options being written together like"
@@ -105,6 +107,8 @@ die() {
 PATHS=()
 # Option: Skip passes
 SKIP=""
+# Recursive?
+RECURSIVE=''
 if [[ $# -gt 0 ]]; then
 	while [[ $# -gt 0 ]]; do
 		case "$1" in
@@ -113,6 +117,10 @@ if [[ $# -gt 0 ]]; then
 				;;
 			'--version'|'-V')
 				print_version
+				;;
+			'--recursive'|'-r')
+				RECURSIVE=1
+				shift 1
 				;;
 			'--skip')
 				if [[ -z "$2" ]]; then
@@ -167,6 +175,25 @@ echo -e "Please wait, this can take a \e[1mlong\e[0m time."
 # Array of image files
 IMAGES=()
 
+
+# ${PATHS[@]} paths to process
+# Sets IMAGES
+collect_images_recursive() {
+	local image directory results
+	local images=()
+	for directory in "${PATHS[@]}"; do
+		if ! [[ -d $directory && -r "$directory" && -w "$directory" ]]; then
+			echo "$directory skipped: directory not found, not readable and/or writable, or not a directory."
+			continue
+		fi
+		export IFS=$'\n'
+		results=( $(find "$directory" -iname '*.png' -type f -print ) )
+		unset IFS
+		images+=( "${results[@]}" )
+	done
+	PATHS=( "${images[@]}" )
+}
+
 # This will check that the images in question is a png, otherwise remove it from the list
 checkimages() {
 	local image
@@ -182,10 +209,9 @@ checkimages() {
 			(( failcount++ ))
 			continue
 		else
-			NEWIMAGES+=( "$image" )
+			IMAGES+=( "$image" )
 		fi
 	done
-	IMAGES=( "${NEWIMAGES[@]}" )
 	if [[ $failcount -ne 0 ]]; then
 		echo "Of the images given as parameters $failcount could not be processed (see above for reasons)"
 	else
@@ -218,12 +244,17 @@ doadvpng() {
 # $2 = string to print
 pass_check() {
 	if ! list_contains SKIP "$1"; then
-		echo -e "\n\e[1mPass   $1: $2\e[0m\n"
+		echo -e "\n\e[1mPass $1: $2\e[0m\n"
 		return 0
 	else
 		return 1
 	fi
 }
+
+if [[ $RECURSIVE ]]; then
+	echo "Collecting images from directories"
+	collect_images_recursive
+fi
 
 pass_check 0 "verifying images (can not be skipped, checks that all images exists and are png)" && {
 	checkimages || die 2 "Pass 0 (check images) failed with return code $?"
