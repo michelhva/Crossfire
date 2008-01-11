@@ -1,5 +1,13 @@
 Changes for SVN top of tree:
 
+Add misc/machine.arc, misc/machine.base.x11.png under terms of a Creative
+Commons Attribution-ShareAlike license described in misc/machine.arc and
+as an attributed derivative work of a copyrighted image.  The inspiration
+for this graphic was provided by Yann (gros) Chachkoff.  Added a LICENSE
+file to communicate the fact that this type of license now governs some
+material in the arch collection.
+Kevin Bulgrien 2007-01-10
+
 Rework dev/wip/spout to make water wider and more visible.  Also adjust the
 color to better match the sea arch set.  Add a reference layer of a sea tile
 to spout.xcf.  Convert all the .png files to indexed mode to reduce size.
