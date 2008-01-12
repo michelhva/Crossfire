@@ -157,6 +157,6 @@ public class PoisonWatcher
             this.active = active;
             stats.setStat(Stats.C_STAT_POISONED, active ? 1 : 0);
         }
-        stats.setStatsProcessed();
+        stats.setStatsProcessed(false);
     }
 }

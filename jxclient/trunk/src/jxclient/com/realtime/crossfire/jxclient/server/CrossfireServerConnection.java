@@ -1370,7 +1370,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             break;
                         }
                     }
-                    stats.setStatsProcessed();
+                    stats.setStatsProcessed(false);
                     if (pos > end) break;
                     return;
                 }

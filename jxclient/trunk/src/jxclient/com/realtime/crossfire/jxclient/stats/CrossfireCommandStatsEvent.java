@@ -34,14 +34,22 @@ public class CrossfireCommandStatsEvent extends EventObject
 
     private final Stats mystats;
 
-    public CrossfireCommandStatsEvent(final Object src, final Stats st)
+    private final boolean reset;
+
+    public CrossfireCommandStatsEvent(final Object src, final Stats st, final boolean reset)
     {
         super(src);
         mystats = st;
+        this.reset = reset;
     }
 
     public Stats getStats()
     {
         return mystats;
+    }
+
+    public boolean isReset()
+    {
+        return reset;
     }
 }
