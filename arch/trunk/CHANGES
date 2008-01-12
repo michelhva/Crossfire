@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+Remove misc/machine.arc and machine.base.x11.png and newly added LICENCE (as it
+was added specifically to address Creative Commons licensing) due to concerns
+about Creative Commons ShareAlike licensing requirements, and most especially
+concerning a possible perception that this project or a distribution might be
+construed to be a "collection" as defined by Creative Commons.
+Kevin Bulgrien 2007-01-11
+
 Correct the license text to show that this derivation is released under
 version 3.0 Creative Commons licensing to improve compatibility with
 Debian.
