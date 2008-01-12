@@ -1034,7 +1034,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+face+" name="+name+"\n");
                     }
-                    ItemsList.getStats().reset();
+                    ItemsList.getStats().resetSkills();
                     ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
                 }
                 return;

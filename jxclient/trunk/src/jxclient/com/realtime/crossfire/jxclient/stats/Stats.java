@@ -471,6 +471,21 @@ public class Stats
     }
 
     /**
+     * Forget about all skills.
+     */
+    public void resetSkills()
+    {
+        for (int i = 0; i < numberedSkills.length; i++)
+        {
+            if (numberedSkills[i] != null)
+            {
+                numberedSkills[i].set(0, 0);
+            }
+        }
+        setStatsProcessed(false);
+    }
+
+    /**
      * Adds a new skill to the list of known skills.
      * @param id The numerical identifier for the new skill.
      * @param n The skill name.
