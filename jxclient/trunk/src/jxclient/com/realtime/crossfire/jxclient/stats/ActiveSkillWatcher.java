@@ -94,6 +94,6 @@ public class ActiveSkillWatcher
             this.activeSkill = activeSkill;
             stats.setActiveSkill(activeSkill);
         }
-        stats.setStatsProcessed();
+        stats.setStatsProcessed(false);
     }
 }

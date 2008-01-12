@@ -67,6 +67,10 @@ public class StatsWatcher
         public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
         {
             checkStats();
+            if (evt.isReset())
+            {
+                ignoreNextLevelChange = true;
+            }
         }
     };
 

@@ -467,7 +467,7 @@ public class Stats
         range = "";
         title = "";
         activeSkill = "";
-        setStatsProcessed();
+        setStatsProcessed(true);
     }
 
     /**
@@ -639,9 +639,9 @@ public class Stats
         statListeners.remove(listener);
     }
 
-    public void setStatsProcessed()
+    public void setStatsProcessed(final boolean reset)
     {
-        final CrossfireCommandStatsEvent event = new CrossfireCommandStatsEvent(new Object(), this);
+        final CrossfireCommandStatsEvent event = new CrossfireCommandStatsEvent(new Object(), this, reset);
         for (final CrossfireStatsListener listener : statListeners)
         {
             listener.commandStatsReceived(event);
