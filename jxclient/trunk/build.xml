@@ -29,9 +29,9 @@
         </jar>
     </target>
     <target name="skin.prelude">
-        <delete dir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default"/>
-        <copy todir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/default">
-            <fileset dir="default.theme">
+        <delete dir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/prelude"/>
+        <copy todir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/prelude">
+            <fileset dir="skins/prelude">
                 <include name="*.skin"/>
                 <include name="fonts/**"/>
                 <include name="pictures/**"/>
@@ -42,7 +42,7 @@
     <target name="skin.ragnorok">
         <delete dir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok"/>
         <copy todir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok">
-            <fileset dir="ragnorok.theme">
+            <fileset dir="skins/ragnorok">
                 <include name="*.skin"/>
                 <include name="fonts/**"/>
                 <include name="pictures/**"/>
@@ -52,11 +52,11 @@
     </target>
     <target name="clean">
         <delete dir="${build}" failonerror="false"/>
-        <delete dir="default.theme/com" failonerror="false"/>
         <delete file="jxclient.jar" failonerror="false"/>
         <delete file="jxcskin_prelude.jar" failonerror="false"/>
+        <delete file="jxcskin_ragnorok.jar" failonerror="false"/>
     </target>
-    <target name="all" depends="jar,skin.prelude">
+    <target name="all" depends="jar">
     </target>
     <target name="check" depends="compile">
         <mkdir dir="${build}/reports"/>

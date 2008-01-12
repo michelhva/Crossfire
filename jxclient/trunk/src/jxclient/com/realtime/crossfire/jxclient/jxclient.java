@@ -46,7 +46,7 @@ public class jxclient
     /**
      * The default skin name.
      */
-    public static final String DEFAULT_SKIN = "default";
+    public static final String DEFAULT_SKIN = "ragnorok";
 
     /**
      * The program entry point.
@@ -72,7 +72,7 @@ public class jxclient
             final Settings prefs = new Settings(Filenames.getSettingsFile());
             int width = prefs.getInt("width", 1024);
             int height = prefs.getInt("height", 768);
-            String skin = prefs.getString("skin", DEFAULT_SKIN);
+            String skin = prefs.getString("skin", "default");
             boolean fullScreen = true;
             String server = null;
             boolean debugGui = false;
@@ -81,7 +81,7 @@ public class jxclient
             // fix changed default skin name
             if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
             {
-                skin = DEFAULT_SKIN;
+                skin = "default";
             }
 
             for (int i = 0; i < args.length; i++)
@@ -130,7 +130,7 @@ public class jxclient
                     System.out.println(" -N             : Disable full-screen mode;");
                     System.out.println(" -W <size>      : Width of the screen, in pixels;");
                     System.out.println(" -H <size>      : Height of the screen, in pixels;");
-                    System.out.println(" -S <skin>      : Skin name to use.");
+                    System.out.println(" -S <skin>      : Skin name to use. [default, prelude, ragnorok]");
                     System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                     System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                     System.out.println("                  windows.");
@@ -143,6 +143,13 @@ public class jxclient
             prefs.putInt("width", width);
             prefs.putInt("height", height);
             prefs.putString("skin", skin);
+
+            // Map "default to actual skin name; must be after skin name has
+            // been written to preferences.
+            if (skin.equals("default"))
+            {
+                skin = DEFAULT_SKIN;
+            }
 
             final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
             try
