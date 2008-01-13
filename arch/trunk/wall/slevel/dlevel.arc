@@ -1,3 +1,7 @@
+# Created by flipping slevel*.png in either or both x, y to make a depression
+# instead of an elevation.  Since slevel_F is a completely transparent tile,
+# it is reused for dlevel_F in this file.
+#
 Object dlevel_0
 name depression
 face dlevel_0.111
@@ -105,7 +109,7 @@ magicmap grey
 end
 Object dlevel_4
 name depression
-face dlevel_F.111
+face slevel_F.111
 no_pick 1
 visibility 100
 magicmap grey
