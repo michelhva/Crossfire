@@ -8,15 +8,19 @@ enter_x 7
 enter_y 15
 msg
 Created:  1993-10-15
+Modified: 2008-01-13 Kevin Bulgrien
 endmsg
 end
 arch sea
 end
 arch grass
 y 1
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_se
+arch sea_se
 y 1
+smoothlevel 0
 end
 arch grass
 y 2
@@ -102,6 +106,8 @@ end
 arch grass
 x 1
 y 1
+smoothlevel 0
+move_block swim boat
 end
 arch tree5
 x 1
@@ -204,6 +210,8 @@ end
 arch grass
 x 2
 y 1
+smoothlevel 0
+move_block swim boat
 end
 arch grass
 x 2
@@ -302,13 +310,18 @@ y 15
 end
 arch grass
 x 3
+smoothlevel 0
+move_block swim boat
 end
-arch biglake_se
+arch sea_se
 x 3
+smoothlevel 0
 end
 arch grass
 x 3
 y 1
+smoothlevel 0
+move_block swim boat
 end
 arch grass
 x 3
