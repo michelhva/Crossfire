@@ -15,18 +15,18 @@ bear.x71
 bear.x72
 facings 2
 mina
-exp 700
-ac 1
-wc 2
+exp 1500
+ac 6
+wc 9
 dam 20
-hp 200
+hp 150
+maxhp 150
 attacktype 1
 attack_movement 4
 Con 2
 Str 30
 Int 5
-maxhp 200
-level 6
+level 8
 alive 1
 no_pick 1
 speed -0.085

@@ -12,21 +12,22 @@ anim
 giant.x11
 giant.x12
 mina
+resist_physical 30
 resist_electricity 50
 resist_blind -30
-exp 1500
-ac 1
-wc 2
+exp 4000
+ac 6
+wc 8
 dam 20
-hp 250
+hp 200
+maxhp 200
 Con 4
 Str 30
 Int 13
-maxhp 250
 level 10
 alive 1
 no_pick 1
-speed -0.085
+speed -0.15
 weight 300000
 run_away 6
 pick_up 1

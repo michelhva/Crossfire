@@ -14,15 +14,14 @@ monster 1
 move_type walk fly_low
 alive 1
 resist_electricity 100
-
 attacktype 8
-ac 3
+ac 6
 wc 10
 dam 10
-hp 100
-maxhp 100
-speed -0.3
-exp 200
+hp 50
+maxhp 50
+speed -0.5
+exp 1100
 weight 200
-level 6
+level 7
 end

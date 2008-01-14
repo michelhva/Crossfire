@@ -1,7 +1,7 @@
 Object generate_skeleton
 other_arch skeleton
 race undead
-name generator
+name tombstone
 generator 1
 alive 1
 level 1
@@ -17,4 +17,5 @@ weight 750000
 resist_cold 50
 undead 1
 map_layer living
+generator_limit 5
 end

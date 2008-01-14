@@ -22,7 +22,7 @@ gryphon.x74
 gryphon.x73
 gryphon.x72
 mina
-level 18
+level 29
 attacktype 128
 Dex 30
 Str 80

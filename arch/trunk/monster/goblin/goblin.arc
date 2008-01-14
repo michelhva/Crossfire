@@ -1,3 +1,4 @@
+# blah
 Object goblin
 randomitems goblin
 race goblin
@@ -20,12 +21,12 @@ sleep 1
 Wis 10
 no_pick 1
 alive 1
-exp 20
-ac 14
+exp 10
+ac 8
 wc 17
 dam 3
-hp 6
-maxhp 6
+hp 20
+maxhp 20
 level 2
 speed -0.1
 weight 50000

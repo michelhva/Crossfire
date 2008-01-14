@@ -36,7 +36,7 @@ Con 6
 maxsp 30
 hp 4000
 maxhp 4000
-level 15
+level 80
 alive 1
 no_pick 1
 speed -0.33

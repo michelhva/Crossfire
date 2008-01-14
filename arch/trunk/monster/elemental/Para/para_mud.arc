@@ -17,18 +17,16 @@ mina
 monster 1
 move_type walk
 alive 1
-ac 8
+ac 7
 wc 9
 dam 30
-hp 150
-maxhp 150
-speed -0.08
-exp 200
+hp 75
+maxhp 75
+speed -0.15
+exp 1200
 weight 100000
-level 6
+level 7
 resist_cold 100
-
 attacktype 1
 resist_fire -100
-
 end

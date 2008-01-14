@@ -21,9 +21,9 @@ wc 8
 dam 5
 hp 35
 maxhp 35
-level 4
-speed -0.05
-exp 60
+level 3
+speed -0.1
+exp 30
 weight 15000
 attacktype 1
 resist_cold 50

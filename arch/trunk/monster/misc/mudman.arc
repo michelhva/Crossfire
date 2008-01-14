@@ -30,7 +30,7 @@ resist_slow 100
 resist_paralyze 100
 resist_cold 50
 resist_acid 50
-level 18
+level 29
 speed 0.1
 weight 100000
 run_away 10

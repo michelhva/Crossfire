@@ -14,13 +14,13 @@ sleep 1
 Wis 6
 alive 1
 no_pick 1
-ac 10
-hp 1
-maxhp 1
-wc 1
+ac 15
+hp 25
+maxhp 25
+wc 10
 level 3
-dam 5
+dam 4
 speed -0.3
-exp 20
+exp 30
 weight 7
 end

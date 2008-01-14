@@ -15,9 +15,9 @@ pyromaniac.113
 pyromaniac.114
 mina
 ac 6
-wc 5
-dam 3
-level 4
+wc 10
+dam 8
+level 6
 Con 2
 Pow 3
 Int 5
@@ -26,12 +26,11 @@ Dex 15
 Wis 20
 can_cast_spell 1
 can_use_skill 1
-hp 100
-maxhp 100
+hp 75
+maxhp 75
 sp 300
 maxsp 1
 resist_magic 100
-
 weight 50000
 speed 0.2
 random_movement 1

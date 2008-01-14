@@ -7,7 +7,7 @@ monster 1
 move_type walk
 alive 1
 ac 7
-wc 18
+wc 20
 dam 2
 hp 15
 maxhp 15
@@ -15,7 +15,7 @@ Str 8
 Int 12
 Dex 16
 Con 2
-exp 15
+exp 8
 speed 0.4
 weight 50000
 level 1

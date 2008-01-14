@@ -77,16 +77,14 @@ alive 1
 ac 8
 wc 9
 dam 30
-hp 120
-maxhp 120
-speed -0.1
-exp 200
+hp 60
+maxhp 60
+speed -0.2
+exp 1100
 weight 50000
-level 6
+level 7
 resist_cold 100
 resist_confusion 100
-
 attacktype 16
 resist_fire -100
-
 end

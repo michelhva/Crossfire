@@ -20,11 +20,11 @@ maxhp 50
 Con 3
 can_see_in_dark 1
 speed -0.3
-exp 70
+exp 200
 ac 4
 dam 10
-wc 1
-level 4
+wc 13
+level 5
 weight 60000
 run_away 15
 attack_movement 3

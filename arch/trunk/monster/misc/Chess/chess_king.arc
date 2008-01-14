@@ -12,12 +12,12 @@ alive 1
 ac 5
 wc 10
 dam 4
-hp 20
-maxhp 20
-exp 150
+hp 40
+maxhp 40
+exp 70
 speed 0.25
 weight 50000
-level 3
+level 4
 will_apply 2
 pick_up 24
 can_cast_spell 1

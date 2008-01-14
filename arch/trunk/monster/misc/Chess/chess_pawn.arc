@@ -10,10 +10,10 @@ monster 1
 move_type walk
 alive 1
 ac 5
-wc 5
-dam 5
+wc 17
+dam 4
 hp 10
-maxhp 20
+maxhp 10
 exp 20
 speed 0.25
 weight 50000

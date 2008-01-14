@@ -62,6 +62,9 @@ body_finger 2
 body_shoulder 1
 body_wrist 2
 body_waist 1
+maxhp 30
+maxsp 30
+maxgrace 30
 end
 Object dragon_skin_force
 name dragon skin

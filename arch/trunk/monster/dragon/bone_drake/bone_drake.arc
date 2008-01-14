@@ -10,7 +10,7 @@ mina
 monster 1
 move_type walk
 sleep 1
-level 14
+level 50
 Con 6
 maxsp 40
 hp 8000

@@ -70,4 +70,7 @@ body_wrist 4
 body_finger 3
 body_waist 1
 body_leg 2
+maxhp 30
+maxsp 30
+maxgrace 30
 end

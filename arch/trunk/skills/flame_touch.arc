@@ -4,6 +4,7 @@ skill flame touch
 type 43
 invisible 1
 dam 2
+damage_physical 1
 last_sp 4
 attacktype 4
 no_drop 1

@@ -18,7 +18,7 @@ big_wiz.x14
 big_wiz.x13
 big_wiz.x12
 mina
-level 18
+level 49
 attacktype 128
 Con 28
 Pow 48

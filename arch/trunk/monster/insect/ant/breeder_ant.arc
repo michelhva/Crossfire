@@ -14,20 +14,17 @@ move_type walk
 no_pick 1
 alive 1
 Con 20
-exp 5000
+exp 4000
 level 10
-ac 2
-hp 1000
-maxhp 1000
-wc -12
+ac 6
+hp 200
+maxhp 200
+wc 9
 dam 30
 resist_physical 30
 resist_cold -100
-
 resist_poison 100
-
 resist_acid 30
-
 attacktype 1025
 attack_movement 7
 generator 1

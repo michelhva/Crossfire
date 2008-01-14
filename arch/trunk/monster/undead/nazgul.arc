@@ -11,9 +11,10 @@ hp 200
 maxhp 200
 Con 10
 Wis 15
-exp 2000
+exp 12000
 dam 10
-wc -3
+wc 8
+ac 4
 speed 0.8
 attack_movement 5
 level 13

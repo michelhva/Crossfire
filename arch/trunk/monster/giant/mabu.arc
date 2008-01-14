@@ -15,19 +15,19 @@ mabu.x13
 mabu.x12
 mina
 resist_electricity 50
-exp 1500
-ac 1
-wc 2
+exp 4000
+ac 6
+wc 8
 dam 20
-hp 250
+hp 200
 Con 4
 Str 30
 Int 13
-maxhp 250
+maxhp 200
 level 10
 alive 1
 no_pick 1
-speed -0.085
+speed -0.15
 weight 300000
 run_away 6
 pick_up 1

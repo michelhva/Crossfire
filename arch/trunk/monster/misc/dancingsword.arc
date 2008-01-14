@@ -21,12 +21,12 @@ see_invisible 1
 no_pick 1
 weight 15000
 alive 1
-exp 10000
-level 15
-ac -5
+exp 6000
+level 10
+ac 2
 hp 100
 maxhp 100
-wc -5
+wc 5
 dam 20
 speed -0.3
 resist_physical 25

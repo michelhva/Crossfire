@@ -13,12 +13,12 @@ alive 1
 ac 5
 wc 12
 dam 3
-hp 10
-maxhp 10
+hp 30
+maxhp 30
 level 3
-speed 0.10
+speed 0.15
 resist_poison 100
 attacktype 1025
-exp 50
+exp 35
 weight 200000
 end

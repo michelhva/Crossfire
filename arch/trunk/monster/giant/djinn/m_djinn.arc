@@ -8,7 +8,7 @@ move_type walk
 sleep 1
 Wis 15
 animation djinn
-level 15
+level 40
 Con 10
 Int 10
 Pow 10

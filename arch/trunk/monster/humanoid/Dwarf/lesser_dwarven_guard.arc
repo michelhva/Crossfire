@@ -18,12 +18,12 @@ monster 1
 move_type walk
 attack_movement 4
 alive 1
-ac -5
-wc 15
-dam 10
+ac 1
+wc 5
+dam 20
 hp 300
 maxhp 300
-exp 7000
+exp 15000
 speed 0.20
 weight 50000
 level 15

@@ -13,10 +13,9 @@ wc -1
 dam 50
 hp 500
 maxhp 500
-level 12
+level 23
 speed 0.25
 resist_magic 100
-
 exp 1000
 weight 200000
 end

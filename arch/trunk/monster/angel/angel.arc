@@ -22,10 +22,10 @@ Wis 15
 see_invisible 1
 no_pick 1
 alive 1
-exp 800
-ac 0
-wc 1
-dam 12
+exp 8000
+ac 2
+wc 4
+dam 20
 Pow 16
 maxsp 40
 hp 150

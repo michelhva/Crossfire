@@ -50,14 +50,14 @@ sleep 1
 Wis 5
 can_see_in_dark 1
 alive 1
-exp 32
+exp 35
 ac 10
 wc 8
-dam 10
-hp 10
+dam 6
+hp 25
+maxhp 25
 Con 1
-maxhp 10
-level 4
+level 3
 weight 5000
 magicmap green
 end

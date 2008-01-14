@@ -19,7 +19,7 @@ alive 1
 sleep 1
 undead 1
 exp 3500
-level 15
+level 100
 attacktype 17
 resist_magic 100
 resist_cold 100

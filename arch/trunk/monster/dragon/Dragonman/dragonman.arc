@@ -18,7 +18,7 @@ dragonman.x72
 dragonman.x73
 dragonman.x72
 mina
-level 18
+level 39
 Con 11
 Pow 13
 can_cast_spell 1

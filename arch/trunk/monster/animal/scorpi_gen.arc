@@ -1,7 +1,7 @@
 Object generate_scorpion
 race animal
 other_arch scorpion
-name generator
+name scorpion generator
 generator 1
 face scorpi_gen.111
 color_fg red
@@ -14,4 +14,5 @@ ac 3
 exp 50
 maxsp 1
 weight 10000
+generator_limit 5
 end

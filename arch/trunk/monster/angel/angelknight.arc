@@ -7,8 +7,8 @@ move_type walk fly_low
 level 8
 hp 100
 maxhp 100
-ac 0
-wc 6
+ac 4
+wc 13
 dam 20
 speed 0.3
 attacktype 1048577
@@ -16,7 +16,7 @@ Wis 12
 see_invisible 1
 no_pick 1
 alive 1
-exp 600
+exp 2200
 resist_magic 50
 resist_holyword 40
 resist_blind 90

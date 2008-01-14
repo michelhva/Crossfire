@@ -20,7 +20,7 @@ no_pick 1
 alive 1
 ac 4
 wc 10
-dam 5
+dam 10
 sp 20
 maxsp 20
 hp 80
@@ -30,8 +30,8 @@ Int 3
 Con 2
 can_cast_spell 1
 level 7
-speed 0.1
-exp 400
+speed 0.2
+exp 1000
 weight 14000
 attacktype 17
 resist_fire -20

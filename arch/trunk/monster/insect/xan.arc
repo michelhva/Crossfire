@@ -15,15 +15,15 @@ Wis 6
 alive 1
 is_turnable 1
 no_pick 1
-ac 10
-hp 1
-maxhp 1
+ac 15
+hp 25
+maxhp 25
 wc 1
-level 5
+level 3
 dam 1
 attacktype 1025
 speed 0.5
-exp 20
+exp 35
 weight 7
 magicmap brown
 end

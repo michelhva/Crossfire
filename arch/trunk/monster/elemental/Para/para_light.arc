@@ -12,17 +12,16 @@ mina
 monster 1
 move_type walk fly_low
 alive 1
-ac 3
+ac 5
 wc 9
 dam 10
-hp 120
-maxhp 120
-speed -0.3
-exp 200
+hp 60
+maxhp 60
+speed -0.4
+exp 1100
 weight 200
-level 6
+level 7
 resist_fire 100
 resist_electricity 100
-
 attacktype 8
 end

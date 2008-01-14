@@ -14,4 +14,5 @@ exp 40
 speed 0.1
 weight 750000
 magicmap orange
+generator_limit 5
 end

@@ -18,7 +18,7 @@ monster 1
 move_type walk
 sleep 1
 Wis 20
-level 14
+level 25
 Con 4
 Pow 32
 can_cast_spell 1

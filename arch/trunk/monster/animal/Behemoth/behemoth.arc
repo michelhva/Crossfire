@@ -28,7 +28,7 @@ dam 16
 hp 800
 maxhp 800
 Con 2
-level 12
+level 20
 alive 1
 speed -0.5
 weight 1800000

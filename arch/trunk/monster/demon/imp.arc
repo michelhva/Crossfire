@@ -16,24 +16,22 @@ see_invisible 1
 Wis 3
 no_pick 1
 alive 1
-exp 150
+exp 10
 ac 4
 resist_physical 20
-wc 4
+wc 18
 dam 2
 Int 0
 sp 0
 maxsp 5
-hp 5
+hp 10
+maxhp 10
 Con 1
 Str 24
 Pow 1
-maxhp 5
 level 1
 resist_magic 30
-
 resist_fire 100
-
 speed 0.25
 weight 200000
 run_away 15

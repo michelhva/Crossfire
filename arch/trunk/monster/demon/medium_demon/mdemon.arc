@@ -32,7 +32,7 @@ sp 30
 maxsp 50
 hp 2000
 maxhp 2000
-level 12
+level 20
 alive 1
 speed 0.3
 weight 300000

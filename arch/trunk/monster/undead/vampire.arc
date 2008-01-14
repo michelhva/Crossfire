@@ -17,10 +17,10 @@ Pow 32
 hp 150
 Con 13
 maxhp 150
-exp 2000
-dam 10
-wc 2
-ac 0
+exp 6000
+dam 15
+wc 6
+ac 3
 resist_physical 100
 resist_cold 100
 resist_blind 70

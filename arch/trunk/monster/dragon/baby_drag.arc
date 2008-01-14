@@ -13,7 +13,7 @@ baby_drag.112
 baby_drag.113
 mina
 color_fg red
-level 10
+level 25
 Con 8
 Pow 8
 can_cast_spell 1
