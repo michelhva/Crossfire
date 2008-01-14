@@ -8,10 +8,11 @@ color_fg red
 hp 20
 maxhp 20
 exp 30
-ac 15
+ac 10
 speed 0.02
 alive 1
 level 1
 maxsp 1
 weight 1000000
+generator_limit 5
 end

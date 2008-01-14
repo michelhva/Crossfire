@@ -14,12 +14,12 @@ sleep 1
 Wis 10
 no_pick 1
 alive 1
-exp 120
-ac 12
+exp 50
+ac 6
 wc 15
-dam 16
-hp 30
-maxhp 30
+dam 10
+hp 40
+maxhp 40
 level 4
 resist_physical 30
 speed 0.1

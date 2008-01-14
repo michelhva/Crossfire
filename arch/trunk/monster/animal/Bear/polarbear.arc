@@ -16,17 +16,17 @@ polarbear.x72
 facings 2
 mina
 resist_cold 50
-exp 1300
+exp 3000
 attacktype 1
 attack_movement 4
-ac 1
-wc 2
+ac 4
+wc 8
 dam 20
-hp 250
+hp 175
 Con 4
 Str 30
 Int 13
-maxhp 250
+maxhp 175
 level 9
 alive 1
 no_pick 1

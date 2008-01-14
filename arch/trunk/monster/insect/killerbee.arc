@@ -16,13 +16,13 @@ sleep 1
 can_see_in_dark 1
 Wis 10
 alive 1
-exp 50
+exp 90
 ac 10
-wc 8
-dam 13
-hp 15
+wc 13
+dam 10
+hp 35
+maxhp 35
 Con 1
-maxhp 15
 run_away 75
 level 4
 end

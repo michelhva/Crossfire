@@ -13,7 +13,7 @@ slug.x32
 slug.x71
 slug.x72
 mina
-level 8
+level 12
 Con 10
 color_fg grey
 resist_acid 100
@@ -22,15 +22,15 @@ resist_blind 100
 resist_fire -100
 resist_electricity 50
 attacktype 65
-exp 500
-ac -1
-wc -1
-dam 10
+exp 8000
+ac 6
+wc 8
+dam 40
 hp 250
 maxhp 250
 alive 1
 no_pick 1
-speed -0.08
+speed -0.12
 weight 300000
 run_away 5
 end

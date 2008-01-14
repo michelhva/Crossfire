@@ -15,10 +15,10 @@ Wis 15
 see_invisible 1
 no_pick 1
 alive 1
-exp 800
-ac 1
+exp 2500
+ac 4
 resist_physical 30
-wc 3
+wc 8
 dam 12
 Pow 4
 Int 15

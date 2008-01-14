@@ -13,12 +13,14 @@ sleep 1
 Wis 10
 no_pick 1
 alive 1
-exp 40
+# exp for ghost is a bit hard - they only
+# hit once and die
+exp 50
 level 3
 ac 10
-hp 15
-maxhp 15
-wc 2
+hp 25
+maxhp 25
+wc 15
 dam 14
 speed 0.14
 attacktype 528

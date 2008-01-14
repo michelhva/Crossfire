@@ -15,14 +15,14 @@ Wis 17
 Pow 35
 undead 1
 dam 15
-hp 500
-maxhp 500
-level 10
+hp 350
+maxhp 350
+level 15
 resist_physical 50
 resist_magic 50
 resist_blind 90
 wc 5
-ac -5
+ac 3
 no_pick 1
 invisible 1
 see_invisible 1
@@ -31,9 +31,9 @@ will_apply 2
 pick_up 24
 can_cast_spell 1
 color_fg black
-speed 0.12
+speed -0.25
 attacktype 17
-exp 50000
+exp 15000
 body_finger 2
 body_range 1
 end

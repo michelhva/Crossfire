@@ -16,7 +16,7 @@ Pow 43
 undead 1
 hp 1000
 maxhp 1000
-level 15
+level 25
 resist_physical 50
 resist_magic 50
 resist_blind 90

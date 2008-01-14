@@ -62,4 +62,7 @@ body_wrist 2
 body_waist 1
 body_leg 2
 can_use_shield 1
+maxhp 30
+maxsp 30
+maxgrace 30
 end

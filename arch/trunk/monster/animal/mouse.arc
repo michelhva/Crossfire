@@ -13,12 +13,12 @@ no_pick 1
 generator 1
 maxsp 15
 alive 1
-exp 5
+exp 1
 ac 7
-wc 25
+wc 20
 dam 2
-hp 1
-maxhp 1
+hp 4
+maxhp 4
 level 1
 speed -0.11
 weight 80

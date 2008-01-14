@@ -16,22 +16,19 @@ sleep 1
 Wis 5
 no_pick 1
 alive 1
-exp 500
-level 10
+exp 1500
+level 8
 Con 10
 Wis 10
-ac -5
 hp 100
 maxhp 100
 resist_physical 45
 attacktype 1025
 resist_poison 100
-
 resist_acid 30
-
 resist_cold -100
-
-wc -5
+ac 5
+wc 10
 dam 15
 speed -0.2
 weight 15000

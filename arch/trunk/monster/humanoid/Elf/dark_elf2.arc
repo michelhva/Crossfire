@@ -16,10 +16,10 @@ sleep 1
 Wis 25
 no_pick 1
 alive 1
-exp 40
-ac 1
-wc 1
-dam 8
+exp 75
+ac 8
+wc 16
+dam 6
 Pow 2
 Int 15
 Str 13
@@ -28,7 +28,7 @@ maxsp 40
 can_cast_spell 1
 hp 40
 maxhp 40
-level 18
+level 4
 speed 0.5
 weight 50000
 pick_up 24

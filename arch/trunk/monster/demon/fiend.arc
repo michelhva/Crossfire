@@ -14,10 +14,10 @@ Wis 15
 see_invisible 1
 no_pick 1
 alive 1
-exp 3600
-ac -3
+exp 15000
+ac 3
 resist_physical 30
-wc 0
+wc 6
 dam 22
 Pow 8
 Int 15

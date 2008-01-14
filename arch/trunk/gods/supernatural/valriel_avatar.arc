@@ -20,12 +20,12 @@ resist_confusion 20
 resist_blind 100
 resist_fear 100
 resist_physical 50
-ac -7
-wc -1
+ac 3
+wc 7
 hp 350
 maxhp 350
 dam 40
-level 15
+level 19
 speed 0.25
 can_cast_spell 1
 can_use_armour 1

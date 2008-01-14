@@ -18,15 +18,13 @@ alive 1
 ac 5
 wc 8
 dam 50
-hp 280
-maxhp 280
+hp 150
+maxhp 150
 speed -0.08
-exp 500
+exp 2500
 weight 100000
 level 8
 resist_cold 100
-
 attacktype 16
 resist_fire -100
-
 end

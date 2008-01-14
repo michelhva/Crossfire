@@ -13,7 +13,7 @@ undead 1
 dam 15
 hp 500
 maxhp 500
-level 10
+level 40
 resist_physical 50
 resist_magic 50
 resist_blind 90

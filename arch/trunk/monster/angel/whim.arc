@@ -28,12 +28,12 @@ see_invisible 1
 can_see_in_dark 1
 no_pick 1
 alive 1
-exp 10
+exp 7
 ac 10
-wc 20
+wc 15
 dam 2
-hp 3
-maxhp 3
+hp 10
+maxhp 10
 Wis 8
 level 1
 resist_magic 100

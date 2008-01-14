@@ -15,4 +15,5 @@ level 1
 sp 130
 maxsp 1
 magicmap yellow
+generator_limit 5
 end

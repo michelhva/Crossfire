@@ -22,14 +22,14 @@ resist_deplete 100
 resist_death 100
 resist_fear -100
 resist_physical 50
-ac -5
-wc -1
+ac 5
+wc 5
 dam 40
 hp 500
 last_heal 2
 last_grace 3
 maxhp 500
-level 15
+level 19
 speed 0.18
 can_cast_spell 1
 can_use_armour 1

@@ -1,3 +1,7 @@
+# Acid spehres are sort of odd creatures - they are really
+# only a danger if the player is not careful and runs into
+# them - they otherwise move slowly and are easily killed.
+# But they do a lot of damage if a player does run into one.
 Object acid_sphere
 race slime
 name acid sphere
@@ -17,9 +21,9 @@ Wis 5
 alive 1
 ac 1
 wc 1
-dam 100
+dam 50
 weight 1
-level 5
+level 4
 resist_fire 100
 resist_electricity 100
 resist_cold 100

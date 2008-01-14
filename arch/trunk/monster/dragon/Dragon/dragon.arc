@@ -18,7 +18,7 @@ dragon.x32
 dragon.x33
 dragon.x34
 mina
-level 18
+level 29
 Con 11
 Pow 26
 can_cast_spell 1

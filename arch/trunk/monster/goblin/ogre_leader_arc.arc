@@ -12,10 +12,10 @@ move_type walk
 sleep 1
 no_pick 1
 alive 1
-exp 150
-level 7
-ac 8
-wc 5
+exp 500
+level 6
+ac 6
+wc 8
 can_see_in_dark 1
 hp 75
 maxhp 75

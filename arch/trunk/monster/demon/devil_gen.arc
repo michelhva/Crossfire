@@ -1,7 +1,7 @@
 Object generate_devil
 race demon
 other_arch devil
-name generator
+name demon gate
 generator 1
 face devil_gen.111
 color_fg red
@@ -17,4 +17,5 @@ alive 1
 level 1
 maxsp 1
 weight 300000
+generator_limit 5
 end

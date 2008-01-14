@@ -12,12 +12,12 @@ sleep 1
 Wis 8
 no_pick 1
 alive 1
-exp 15
-ac 16
-wc 19
+exp 5
+ac 8
+wc 17
 dam 1
-hp 4
-maxhp 4
+hp 20
+maxhp 20
 level 1
 speed -0.15
 weight 23000

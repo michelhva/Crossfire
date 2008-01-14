@@ -18,17 +18,16 @@ Dex 18
 no_pick 1
 alive 1
 resist_fire -100
-
 can_see_in_dark 1
-exp 450
-ac 2
-wc 4
-dam 10
+exp 1200
+ac 6
+wc 6
+dam 15
 hp 90
 Con 5
 maxhp 90
 level 7
-speed 0.12
+speed 0.2
 weight 100000
 run_away 5
 will_apply 2

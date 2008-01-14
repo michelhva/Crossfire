@@ -26,13 +26,13 @@ can_cast_spell 1
 maxsp 15
 hp 80
 maxhp 80
-level 9
+level 8
 resist_magic 100
 resist_poison 100
 resist_paralyze 100
 resist_fear 100
 resist_blind -75
-speed -0.07
+speed -0.15
 weight 1000
 run_away 15
 attack_movement 1

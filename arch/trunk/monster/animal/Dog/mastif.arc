@@ -22,10 +22,10 @@ hp 120
 maxhp 120
 Con 2
 speed -0.2
-exp 200
-ac 1
+exp 1800
+ac 3
 dam 9
-wc 1
+wc 9
 level 8
 can_see_in_dark 1
 weight 60000

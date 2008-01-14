@@ -20,7 +20,7 @@ dam 8
 wc 9
 ac 1
 speed 0.150000
-level 3
+level 30
 weight 50000
 randomitems warrior_1
 pick_up 24

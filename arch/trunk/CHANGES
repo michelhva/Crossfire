@@ -1,5 +1,13 @@
 Changes for SVN top of tree:
 
+monster/*: Rebalance monsters.  In many cases, hp, ac, exp, and level
+were adjusted.  This also incluedes the gods avatars and some spells that
+create monster like objects.
+player/race/*.arc: Give all playable races a 30 sp/hp/grace boost, so
+starting values are higher, making things more playable.
+MSW 2008-01-13
+
+
 wall/slevel/dlevel.arc corrected to provide reused face from slevel set.
 traps/tspikes.base.111.png changed from greyscale to indexed to fix a
 transparency problem.

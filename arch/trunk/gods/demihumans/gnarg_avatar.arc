@@ -21,10 +21,10 @@ resist_magic -10
 resist_physical 40
 hp 500
 maxhp 500
-ac -5
-wc -3
+ac 5
+wc 3
 dam 30
-level 15
+level 19
 speed 0.25
 can_use_shield 1
 can_use_weapon 1

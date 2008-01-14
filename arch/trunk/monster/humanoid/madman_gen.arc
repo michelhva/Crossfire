@@ -1,6 +1,6 @@
 Object generate_madman
 race human
-name generator
+name madman hut
 other_arch madman
 face madman_gen.111
 generator 1
@@ -15,4 +15,5 @@ speed 0.01
 maxsp 1
 weight 1000000
 magicmap brown
+generator_limit 5
 end

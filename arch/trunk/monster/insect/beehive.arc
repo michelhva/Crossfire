@@ -19,4 +19,5 @@ exp 50
 ac 12
 hp 30
 maxhp 30
+generator_limit 5
 end

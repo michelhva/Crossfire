@@ -19,11 +19,11 @@ alive 1
 ac 6
 wc 13
 dam 5
-hp 75
-maxhp 75
-level 5
+hp 65
+maxhp 65
+level 3
 speed .10
-exp 75
+exp 35
 weight 15000
 attacktype 16385
 can_see_in_dark 1

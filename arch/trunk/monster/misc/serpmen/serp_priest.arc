@@ -12,9 +12,9 @@ monster 1
 move_type walk
 no_pick 1
 alive 1
-exp 700
-level 12
-ac -1
+exp 4000
+level 10
+ac 2
 hp 100
 maxhp 100
 Con 5
@@ -24,8 +24,8 @@ Str 12
 Dex 20
 sp 50
 maxsp 50
-wc 3
-dam 6
+wc 5
+dam 16
 speed 0.15
 see_invisible 1
 attacktype 1025

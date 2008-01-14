@@ -15,7 +15,7 @@ elec_dr.x12
 elec_dr.x11
 elec_dr.x12
 mina
-level 18
+level 27
 Con 11
 Pow 32
 can_cast_spell 1

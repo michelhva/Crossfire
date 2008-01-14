@@ -9,12 +9,12 @@ Pow 10
 monster 1
 move_type walk
 alive 1
-ac 8
+ac 7
 wc 12
 dam 6
-hp 25
-maxhp 25
-exp 55
+hp 35
+maxhp 35
+exp 80
 speed 0.35
 weight 50000
 level 4

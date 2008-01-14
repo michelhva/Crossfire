@@ -14,4 +14,5 @@ alive 1
 level 1
 maxsp 1
 weight 1000
+generator_limit 5
 end

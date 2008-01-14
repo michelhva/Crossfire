@@ -15,9 +15,9 @@ alive 1
 ac 6
 wc 12
 dam 5
-hp 15
-maxhp 15
-exp 40
+hp 25
+maxhp 25
+exp 35
 speed -0.20
 resist_slow -100
 weight 50000

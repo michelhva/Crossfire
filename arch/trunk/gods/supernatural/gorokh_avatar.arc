@@ -19,12 +19,12 @@ path_denied 1025
 resist_physical 50
 resist_fear 100
 resist_magic 20
-ac -5
-wc -3
+ac 5
+wc 3
 dam 40
 hp 350
 maxhp 350
-level 15
+level 19
 speed 0.25
 can_cast_spell 1
 can_use_armour 1

@@ -38,4 +38,5 @@ level 30000
 generator 1
 other_arch fire_elemental
 maxsp 5000
+generator_limit 5
 end

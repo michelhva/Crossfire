@@ -70,6 +70,9 @@ body_hand 2
 body_wrist 2
 body_waist 1
 body_leg 2
+maxhp 30
+maxsp 30
+maxgrace 30
 end
 Object elf_player_force
 name elf_force

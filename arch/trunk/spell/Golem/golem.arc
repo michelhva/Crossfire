@@ -14,8 +14,8 @@ dam 8
 attacktype 1
 hp 50
 maxhp 50
-level 5
+level 4
 speed 0.1
-exp 50
+exp 65
 weight 200000
 end

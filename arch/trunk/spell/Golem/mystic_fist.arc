@@ -16,8 +16,8 @@ dam 8
 color_fg brown
 hp 50
 maxhp 50
-level 9
+level 5
 speed 0.5
-exp 200
+exp 250
 weight 20
 end

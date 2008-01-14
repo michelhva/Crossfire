@@ -1,5 +1,5 @@
 Object generate_bee
-name generator
+name bee tree
 race insect
 other_arch bee
 generator 1
@@ -15,4 +15,5 @@ speed 0.02
 maxsp 1
 weight 10000
 magicmap brown
+generator_limit 5
 end

@@ -18,12 +18,12 @@ see_invisible 1
 no_pick 1
 weight 100000
 alive 1
-exp 1000
+exp 4000
 level 10
-ac -6
-hp 300
-maxhp 300
-wc -7
+ac 3
+hp 200
+maxhp 200
+wc 9
 dam 20
 speed -0.1
 resist_physical 50

@@ -15,12 +15,12 @@ move_type walk
 sleep 1
 no_pick 1
 alive 1
-exp 600
+exp 1400
 level 7
-ac 0
-wc 5
-hp 160
-maxhp 160
+ac 4
+wc 11
+hp 100
+maxhp 100
 Con 2
 Wis 6
 Str 24
