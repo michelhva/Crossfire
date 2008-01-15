@@ -1509,6 +1509,26 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             // ignore
         }
 
+        if (debugProtocol != null)
+        {
+            final StringBuilder sb = new StringBuilder("recv invalid ");
+            for (int i = start; i < end; i++)
+            {
+                if (i > start)
+                {
+                    sb.append(' ');
+                }
+
+                final String tmp = Integer.toHexString(packet[i]&0xFF);
+                if (tmp.length() < 2)
+                {
+                    sb.append('0');
+                }
+                sb.append(tmp);
+            }
+            debugProtocolWrite(sb.toString());
+        }
+
         int cmdlen;
         for (cmdlen = start; cmdlen < end; cmdlen++)
         {
