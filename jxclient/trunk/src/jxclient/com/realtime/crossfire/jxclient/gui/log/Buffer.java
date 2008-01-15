@@ -92,7 +92,11 @@ public class Buffer implements Iterable<Line>
     {
         line.setHeight(calculateHeight(line));
         lines.add(line);
-        fireChangedEvent();
+
+        for (final BufferListener listener : listeners)
+        {
+            listener.linesAdded(this, 1);
+        }
     }
 
     /**
@@ -100,11 +104,20 @@ public class Buffer implements Iterable<Line>
      */
     public void prune()
     {
+        if (lines.size() <= MAX_LINES)
+        {
+            return;
+        }
+
+        final List<Line> removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
         while (lines.size() > MAX_LINES)
         {
-            lines.remove(0);
+            removedLines.add(lines.remove(0));
         }
-        fireChangedEvent();
+        for (final BufferListener listener : listeners)
+        {
+            listener.linesRemoved(this, removedLines);
+        }
     }
 
     /**
@@ -233,16 +246,5 @@ public class Buffer implements Iterable<Line>
     public void addBufferListener(final BufferListener listener)
     {
         listeners.add(listener);
-    }
-
-    /**
-     * Notify all listeners about changed lines.
-     */
-    private void fireChangedEvent()
-    {
-        for (final BufferListener listener : listeners)
-        {
-            listener.linesChanged();
-        }
     }
 }
