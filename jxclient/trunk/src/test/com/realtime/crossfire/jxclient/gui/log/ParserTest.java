@@ -297,7 +297,7 @@ public class ParserTest extends TestCase
         final Graphics2D g = image.createGraphics();
         parser = new Parser();
         final Font font;
-        final FileInputStream fis = new FileInputStream("default.theme/fonts/regular.ttf");
+        final FileInputStream fis = new FileInputStream("skins/ragnorok/fonts/regular.ttf");
         try
         {
             font = Font.createFont(Font.TRUETYPE_FONT, fis);
