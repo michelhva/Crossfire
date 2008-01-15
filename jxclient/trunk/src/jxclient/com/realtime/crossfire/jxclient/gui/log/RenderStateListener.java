@@ -19,32 +19,24 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.util.List;
-
 /**
- * Interface for listeners for changes of {@link Buffer} contents.
+ * Interface for listeners interested in changes of a {@link RenderState}
+ * instance.
  *
  * @author Andreas Kirschbaum
  */
-public interface BufferListener
+public interface RenderStateListener
 {
     /**
-     * Some lines have been added to the buffer.
-     *
-     * @param buffer The buffer that has changed.
-     *
-     * @param lines The number of lines that have been added to the end of the
-     * buffer.
+     * Notifies the listener about a state change in the tracked {@link
+     * RenderState} object.
      */
-    void linesAdded(Buffer buffer, int lines);
+    void stateChanged();
 
     /**
-     * Some lines have been removed from the buffer.
+     * Return the height of the rendered gui element in pixels.
      *
-     * @param buffer The buffer that has changed.
-     *
-     * @param lines The lines that have been removed from the beginning of the
-     * buffer.
+     * @return The height.
      */
-    void linesRemoved(Buffer buffer, List<Line> lines);
+    int getHeight();
 }

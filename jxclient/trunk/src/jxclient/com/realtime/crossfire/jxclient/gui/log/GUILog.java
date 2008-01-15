@@ -101,34 +101,9 @@ public class GUILog extends GUIElement implements GUIScrollable
     private FontRenderContext context = null;
 
     /**
-     * Records whether scrolling up is possible. It is updated when the buffer
-     * is rendered.
+     * The rendering state.
      */
-    private boolean canScrollUp = false;
-
-    /**
-     * Records whether scrolling down is possible. It is updated when the
-     * buffer is rendered.
-     */
-    private boolean canScrollDown = false;
-
-    /**
-     * Whether to display the bottom most text messages or lines starting at
-     * {@link #topIndex}.
-     */
-    private boolean displayBottom = true;
-
-    /**
-     * The first line of {@link #buffer} to display. Only used if {@link
-     * #displayBottom} is unset.
-     */
-    private int topIndex = 0;
-
-    /**
-     * The number of pixels to shift the first displayed line. Only used if
-     * {@link #displayBottom} is unset.
-     */
-    private int topOffset = 0;
+    private final RenderState renderState;
 
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
@@ -168,15 +143,18 @@ public class GUILog extends GUIElement implements GUIScrollable
         }
     };
 
-    /**
-     * The listener to re-render the window contents after changes.
-     */
-    private BufferListener bufferListener = new BufferListener()
+    private final RenderStateListener renderStateListener = new RenderStateListener()
     {
         /** {@inheritDoc} */
-        public void linesChanged()
+        public void stateChanged()
         {
             render();
+        }
+
+        /** {@inheritDoc} */
+        public int getHeight()
+        {
+            return GUILog.super.getHeight();
         }
     };
 
@@ -213,10 +191,10 @@ public class GUILog extends GUIElement implements GUIScrollable
         this.defaultColor = defaultColor;
         createBuffer();
         buffer = new Buffer(fonts, context, w);
+        renderState = new RenderState(renderStateListener, buffer);
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
-        buffer.addBufferListener(bufferListener);
     }
 
     /** {@inheritDoc} */
@@ -229,35 +207,13 @@ public class GUILog extends GUIElement implements GUIScrollable
             g.drawImage(backgroundImage, 0, 0, null);
         }
 
-        if (displayBottom)
+        int y = -renderState.getTopOffset();
+        final ListIterator<Line> it = buffer.listIterator(renderState.getTopIndex());
+        while (y < getHeight() && it.hasNext())
         {
-            int y = getHeight();
-            topIndex = buffer.size();
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
-            while (y > 0 && it.hasPrevious())
-            {
-                final Line line = it.previous();
-                topIndex--;
-                y -= line.getHeight();
-                drawLine(g, y, line);
-            }
-            canScrollUp = y < 0 || it.hasPrevious();
-            canScrollDown = false;
-            topOffset = -y;
-        }
-        else
-        {
-            int y = -topOffset;
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
-            while (y < getHeight() && it.hasNext())
-            {
-                final Line line = it.next();
-                final int height = line.getHeight();
-                drawLine(g, y, line);
-                y += height;
-            }
-            canScrollUp = topIndex > 0 || topOffset > 0;
-            canScrollDown = y > getHeight() || it.hasNext();
+            final Line line = it.next();
+            drawLine(g, y, line);
+            y += line.getHeight();
         }
     }
 
@@ -314,11 +270,11 @@ public class GUILog extends GUIElement implements GUIScrollable
     {
         if (distance < 0)
         {
-            return canScrollUp;
+            return renderState.canScrollUp();
         }
         else if (distance > 0)
         {
-            return canScrollDown;
+            return renderState.canScrollDown();
         }
         else
         {
@@ -327,47 +283,15 @@ public class GUILog extends GUIElement implements GUIScrollable
     }
 
     /** {@inheritDoc} */
-    public void scroll(final int distance) // XXX: implement |distance|>1
+    public void scroll(final int distance)
     {
         if (distance < 0)
         {
-            assert canScrollUp;
-
-            topOffset -= SCROLL_PIXEL;
-            while (topOffset < 0)
-            {
-                if (topIndex > 0)
-                {
-                    topIndex--;
-                    topOffset += buffer.getLine(topIndex).getHeight();
-                }
-                else
-                {
-                    topOffset = 0;
-                }
-            }
-            displayBottom = false;
-            render();
+            renderState.scrollUp(-distance*SCROLL_PIXEL);
         }
         else if (distance > 0)
         {
-            assert canScrollDown;
-
-            topOffset += SCROLL_PIXEL;
-            while (topOffset >= buffer.getLine(topIndex).getHeight())
-            {
-                topOffset -= buffer.getLine(topIndex).getHeight();
-                topIndex++;
-            }
-            int y = -topOffset;
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
-            while (y < getHeight() && it.hasNext())
-            {
-                final Line line = it.next();
-                y += line.getHeight();
-            }
-            displayBottom = y <= getHeight() && !it.hasNext();
-            render();
+            renderState.scrollDown(distance*SCROLL_PIXEL);
         }
         else
         {
@@ -378,8 +302,7 @@ public class GUILog extends GUIElement implements GUIScrollable
     /** {@inheritDoc} */
     public void resetScroll()
     {
-        displayBottom = true;
-        render();
+        renderState.resetScroll();
     }
 
     /** {@inheritDoc} */
