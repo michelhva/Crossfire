@@ -1752,6 +1752,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         sendRequestinfo("skill_info");
         sendRequestinfo("exp_table");
         sendToggleextendedtext(1);
+        ItemsList.getStats().setSimpleWeaponSpeed(scval >= 1029);
     }
 
     /**

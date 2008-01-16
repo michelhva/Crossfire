@@ -418,6 +418,12 @@ public class Stats
     public static final int C_STAT_POISONED = 256;
 
     /**
+     * Whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
+     * directly.
+     */
+    private boolean simpleWeaponSpeed = false;
+
+    /**
      * The listeners to inform of stat changes.
      */
     private final List<CrossfireStatsListener> statListeners = new ArrayList<CrossfireStatsListener>();
@@ -434,6 +440,23 @@ public class Stats
      * The active skill name.
      */
     private String activeSkill = "";
+
+    /**
+     * Set whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
+     * directly.
+     *
+     * @param Whether <code>CS_STAT_WEAP_SP</code> is the weapon speed value.
+     */
+    public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
+    {
+        if (this.simpleWeaponSpeed == simpleWeaponSpeed)
+        {
+            return;
+        }
+
+        this.simpleWeaponSpeed = simpleWeaponSpeed;
+        setStatsProcessed(false);
+    }
 
     /**
      * Forget about all skill name mappings.
@@ -661,5 +684,26 @@ public class Stats
         {
             listener.commandStatsReceived(event);
         }
+    }
+
+    /**
+     * Return the weapon speed stat.
+     *
+     * @return The weapon speed stat.
+     */
+    public double getWeaponSpeed()
+    {
+        final double weaponSpeed = getFloatStat(CS_STAT_WEAP_SP);
+        if (simpleWeaponSpeed)
+        {
+            return weaponSpeed;
+        }
+
+        if (weaponSpeed < 0.001)
+        {
+            return 0;
+        }
+
+        return getFloatStat(Stats.CS_STAT_SPEED)/weaponSpeed;
     }
 }
