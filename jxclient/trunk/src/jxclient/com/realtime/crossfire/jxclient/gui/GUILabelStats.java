@@ -59,15 +59,7 @@ public class GUILabelStats extends GUIOneLineLabel
                 break;
 
             case Stats.CS_STAT_WEAP_SP:
-                final double weaponSpeed = s.getFloatStat(stat);
-                if (weaponSpeed < 0.001)
-                {
-                    text = "?";
-                }
-                else
-                {
-                    text = formatFloatStat(s.getFloatStat(Stats.CS_STAT_SPEED)/weaponSpeed);
-                }
+                text = formatFloatStat(s.getWeaponSpeed());
                 break;
 
             case Stats.CS_STAT_RANGE:
