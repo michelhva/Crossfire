@@ -137,11 +137,6 @@ public class Faces
     // TODO: implement faceset
     public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen)
     {
-        if (askfaceManager != null)
-        {
-            askfaceManager.faceReceived(pixnum);
-        }
-
         final byte[] data = new byte[pixlen];
         System.arraycopy(packet, start, data, 0, pixlen);
         try
