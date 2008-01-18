@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import java.io.IOException;
 
 /**
@@ -36,4 +37,11 @@ public interface FacesCallback
      * @throws IOException if the server connection is broken
      */
     void sendAskface(int face) throws IOException;
+
+    /**
+     * Add a listener to be notified about face image changes.
+     *
+     * @param listener The listener to add.
+     */
+    void addCrossfireUpdateFaceListener(CrossfireUpdateFaceListener listener);
 }

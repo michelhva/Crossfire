@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
@@ -61,6 +62,19 @@ public class AskfaceManager
     private final Set<Integer> pendingFaces = new HashSet<Integer>();
 
     /**
+     * The {@link CrossfireUpdateFaceListener} registered to detect updated
+     * faces.
+     */
+    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    {
+        /** {@inheritDoc} */
+        public void updateFace(final int faceID)
+        {
+            faceReceived(faceID);
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param facesCallback The faces callback to be notified.
@@ -70,6 +84,7 @@ public class AskfaceManager
         if (facesCallback == null) throw new IllegalArgumentException();
 
         this.facesCallback = facesCallback;
+        facesCallback.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /**
@@ -123,7 +138,7 @@ public class AskfaceManager
      *
      * @param face The modified face.
      */
-    public void faceReceived(final int face)
+    private void faceReceived(final int face)
     {
         if (!pendingAskfaces.remove(face))
         {
