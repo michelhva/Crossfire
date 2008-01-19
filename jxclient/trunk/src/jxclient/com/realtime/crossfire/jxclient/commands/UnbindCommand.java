@@ -47,7 +47,7 @@ public class UnbindCommand extends AbstractCommand
     /** {@inheritDoc} */
     public void execute(final String args)
     {
-        if (args.length() == 0)
+        if (args.length() != 0)
         {
             drawInfoError("No arguments allowed.");
             return;
