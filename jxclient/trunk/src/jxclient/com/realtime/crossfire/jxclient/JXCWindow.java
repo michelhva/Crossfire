@@ -152,7 +152,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private JXCSkin myskin = null;
 
-    private final KeyBindings keyBindings = new KeyBindings();
+    private final KeyBindings keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null));
+
+    /**
+     * The key bindings for the current user. Set to <code>null</code> if no
+     * user is logged in.
+     */
+    private KeyBindings characterKeyBindings = null;
 
     private final boolean[] key_shift = new boolean[] { false, false, false, false };
 
@@ -229,6 +235,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private String hostname = null;
 
     /**
+     * The currently logged in character. Set to <code>null</code> if not
+     * logged in.
+     */
+    private String character = null;
+
+    /**
      * The currently connected port. Only valid if {@link #hostname} is set.
      */
     private int port = 0;
@@ -299,13 +311,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         public void playerAdded(final CfPlayer player)
         {
-            setTitle(TITLE_PREFIX+" - "+hostname+" - "+player.getName());
+            setCharacter(player.getName());
         }
 
         /** {@inheritDoc} */
         public void playerRemoved(final CfPlayer player)
         {
-            setTitle(TITLE_PREFIX+" - "+hostname);
+            setCharacter(null);
         }
     };
 
@@ -375,6 +387,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
+        updateTitle();
     }
 
     public boolean checkRun()
@@ -387,16 +400,29 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         return false;
     }
 
-    public void createKeyBinding(final GUICommandList cmdlist)
+    public boolean createKeyBinding(final boolean perCharacter, final GUICommandList cmdlist)
     {
-        keyBindingState = new KeyBindingState(cmdlist);
+        final KeyBindings bindings = getKeyBindings(perCharacter);
+        if (bindings == null)
+        {
+            return false;
+        }
+
+        keyBindingState = new KeyBindingState(bindings, null, cmdlist);
         jxcWindowRenderer.openDialog(keybindDialog);
+        return true;
     }
 
-    public void removeKeyBinding()
+    public boolean removeKeyBinding(final boolean perCharacter)
     {
-        keyBindingState = new KeyBindingState(null);
+        if (perCharacter && characterKeyBindings == null)
+        {
+            return false;
+        }
+
+        keyBindingState = new KeyBindingState(characterKeyBindings, perCharacter ? null : keyBindings, null);
         jxcWindowRenderer.openDialog(keybindDialog);
+        return true;
     }
 
     /**
@@ -540,8 +566,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (this.guiId == GUI_MAIN)
             {
                 myserver.disconnect();
-                this.hostname = null;
-                this.port = 0;
+                setHost(null, 0);
                 ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
                 myserver.removeCrossfireQueryListener(this);
                 myserver.removeCrossfireDrawextinfoListener(this);
@@ -680,8 +705,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void connect(final String hostname, final int port)
     {
-        this.hostname = hostname;
-        this.port = port;
+        setHost(hostname, port);
         changeGUI(GUI_MAIN);
     }
 
@@ -698,6 +722,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void handleKeyPress(final KeyEvent e)
     {
         if (getStatus() != Status.PLAYING)
+        {
+            return;
+        }
+
+        if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e))
         {
             return;
         }
@@ -917,6 +946,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return;
         }
 
+        if (characterKeyBindings != null && characterKeyBindings.handleKeyTyped(e))
+        {
+            return;
+        }
+
         if (keyBindings.handleKeyTyped(e))
         {
             return;
@@ -1102,7 +1136,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else if (keyBindingState != null)
             {
-                if (keyBindingState.keyReleased(keyBindings))
+                if (keyBindingState.keyReleased())
                 {
                     keyBindingState = null;
                     jxcWindowRenderer.closeDialog(keybindDialog);
@@ -1437,24 +1471,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private void loadKeybindings()
     {
-        final File file;
         try
         {
-            file = Filenames.getKeybindingsFile();
+            keyBindings.loadKeyBindings(this);
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot read keybindings file: "+ex.getMessage());
-            return;
-        }
-
-        try
-        {
-            keyBindings.loadKeyBindings(file, this);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot read keybindings file "+file+": "+ex.getMessage());
+            System.err.println("Cannot read keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
             return;
         }
     }
@@ -1464,24 +1487,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private void saveKeybindings()
     {
-        final File file;
         try
         {
-            file = Filenames.getKeybindingsFile();
+            keyBindings.saveKeyBindings();
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot write keybindings file: "+ex.getMessage());
-            return;
-        }
-
-        try
-        {
-            keyBindings.saveKeyBindings(file);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write keybindings file "+file+": "+ex.getMessage());
+            System.err.println("Cannot write keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
             return;
         }
     }
@@ -1489,11 +1501,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * Return the key bindings instance for this window.
      *
-     * @return The key bindings.
+     * @param perCharacter If set, return the per-character key bindings; else
+     * return the global bindings.
+     *
+     * @return The key bindings, or <code>null</code> if no per-character
+     * bindings exist because no character is logged in.
      */
-    public KeyBindings getKeyBindings()
+    public KeyBindings getKeyBindings(final boolean perCharacter)
     {
-        return keyBindings;
+        return perCharacter ? characterKeyBindings : keyBindings;
     }
 
     /**
@@ -1678,5 +1694,88 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void addConnectionStateListener(final ConnectionStateListener listener)
     {
         connectionStateListeners.add(listener);
+    }
+
+    /**
+     * Update the active character name.
+     *
+     * @param character The active character; <code>null</code> if not logged
+     * in.
+     */
+    private void setCharacter(final String character)
+    {
+        if (this.character == null ? character == null : this.character.equals(character))
+        {
+            return;
+        }
+
+        if (characterKeyBindings != null)
+        {
+            try
+            {
+                characterKeyBindings.saveKeyBindings();
+            }
+            catch (final IOException ex)
+            {
+                System.err.println("Cannot write keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
+            }
+            characterKeyBindings = null;
+        }
+
+        this.character = character;
+        updateTitle();
+
+        if (hostname != null && character != null)
+        {
+            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character));
+            try
+            {
+                characterKeyBindings.loadKeyBindings(this);
+            }
+            catch (final IOException ex)
+            {
+                System.err.println("Cannot read keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
+            }
+        }
+    }
+
+    /**
+     * Update information about the connected host.
+     *
+     * @param hostname The hostname; <code>null</code> if not connected.
+     *
+     * @param port The port number.
+     */
+    private void setHost(final String hostname, final int port)
+    {
+        if ((this.hostname == null ? hostname == null : this.hostname.equals(hostname))
+        && this.port == port)
+        {
+            return;
+        }
+
+        setCharacter(null);
+        this.hostname = hostname;
+        this.port = port;
+        updateTitle();
+    }
+
+    /**
+     * Update the window title to reflect the current connection state.
+     */
+    private void updateTitle()
+    {
+        if (hostname == null)
+        {
+            setTitle(TITLE_PREFIX);
+        }
+        else if (character == null)
+        {
+            setTitle(TITLE_PREFIX+" - "+hostname);
+        }
+        else
+        {
+            setTitle(TITLE_PREFIX+" - "+hostname+" - "+character);
+        }
     }
 }

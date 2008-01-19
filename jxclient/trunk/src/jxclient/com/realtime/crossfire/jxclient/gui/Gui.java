@@ -53,7 +53,7 @@ public class Gui
     /**
      * The key bindings for this gui.
      */
-    private final KeyBindings keyBindings = new KeyBindings();
+    private final KeyBindings keyBindings = new KeyBindings(null);
 
     /**
      * Whether this dialog is modal.

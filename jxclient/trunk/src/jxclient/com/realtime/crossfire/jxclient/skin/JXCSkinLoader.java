@@ -948,7 +948,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : window.getKeyBindings();
+                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : window.getKeyBindings(false);
                             try
                             {
                                 keyBindings.parseKeyBinding(line.substring(4).trim(), window, true);

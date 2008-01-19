@@ -29,6 +29,16 @@ import com.realtime.crossfire.jxclient.GUICommandList;
 public class KeyBindingState
 {
     /**
+     * The {@link KeyBindings} to modify.
+     */
+    private final KeyBindings keyBindings;
+
+    /**
+     * The {@link KeyBindings} to modify.
+     */
+    private final KeyBindings keyBindings2;
+
+    /**
      * The commands to bind, or <code>null</code> to unbind.
      */
     private final GUICommandList commands;
@@ -63,10 +73,18 @@ public class KeyBindingState
     /**
      * Create a new instance.
      *
+     * @param keyBindings The <code>KeyBindings</code> to modify; may be
+     * <code>null</code> when removing bindings.
+     *
+     * @param keyBindings2 The <code>KeyBindings</code> to modify; only used
+     * when removing bindings; may be <code>null</code> when removing bindings.
+     *
      * @param commands The commands to bind, or <code>null</code> to unbind.
      */
-    public KeyBindingState(final GUICommandList commands)
+    public KeyBindingState(final KeyBindings keyBindings, final KeyBindings keyBindings2, final GUICommandList commands)
     {
+        this.keyBindings = keyBindings;
+        this.keyBindings2 = keyBindings2;
         this.commands = commands;
     }
 
@@ -102,12 +120,10 @@ public class KeyBindingState
     /**
      * Record a key released event.
      *
-     * @param keyBindings The <code>KeyBindings</code> to modify.
-     *
      * @return <code>true</code> if the dialog has finished, or
      * <code>false</code> if the dialog is still active.
      */
-    public boolean keyReleased(final KeyBindings keyBindings)
+    public boolean keyReleased()
     {
         if (state == 0)
         {
@@ -130,11 +146,27 @@ public class KeyBindingState
         {
             if (type == 0)
             {
-                keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+                if (keyBindings != null)
+                {
+                    keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+                }
+
+                if (keyBindings2 != null)
+                {
+                    keyBindings2.deleteKeyBindingAsKeyCode(keyCode, modifiers);
+                }
             }
             else
             {
-                keyBindings.deleteKeyBindingAsKeyChar(keyChar);
+                if (keyBindings != null)
+                {
+                    keyBindings.deleteKeyBindingAsKeyChar(keyChar);
+                }
+
+                if (keyBindings2 != null)
+                {
+                    keyBindings2.deleteKeyBindingAsKeyChar(keyChar);
+                }
             }
         }
 
