@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
-import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -118,15 +117,7 @@ public class AskfaceManager
 
             if (!pendingAskfaces.contains(face))
             {
-                try
-                {
-                    facesCallback.sendAskface(face);
-                }
-                catch (final IOException ex)
-                {
-                    pendingFaces.clear();
-                    break;
-                }
+                facesCallback.sendAskface(face);
                 pendingAskfaces.add(face);
             }
         }

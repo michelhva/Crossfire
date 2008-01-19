@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
-import java.io.IOException;
 
 /**
  * Callback functions used by this package.
@@ -33,10 +32,8 @@ public interface FacesCallback
      * Send an "askface" command to the server.
      *
      * @param face The face number to query.
-     *
-     * @throws IOException if the server connection is broken
      */
-    void sendAskface(int face) throws IOException;
+    void sendAskface(int face);
 
     /**
      * Add a listener to be notified about face image changes.
