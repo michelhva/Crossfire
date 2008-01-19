@@ -87,6 +87,14 @@ public class AskfaceManager
     }
 
     /**
+     * Reset the askface queue.
+     */
+    public void reset()
+    {
+        pendingAskfaces.clear();
+    }
+
+    /**
      * Ask the server to send image info.
      *
      * @param face the face to query

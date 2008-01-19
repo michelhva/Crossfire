@@ -227,6 +227,15 @@ public class Faces
     }
 
     /**
+     * Reset the askface queue. Must be called when a server connection is
+     * established.
+     */
+    public static void reset()
+    {
+        askfaceManager.reset();
+    }
+
+    /**
      * Ask the server to send image info.
      *
      * @param face the face to query

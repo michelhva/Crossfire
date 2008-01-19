@@ -588,8 +588,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
                 ItemsList.getStats().reset();
                 myserver.connect(hostname, port, connectionListener);
+                Faces.reset();
                 commandQueue.clear();
-                Faces.setFacesCallback(myserver);
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
@@ -648,6 +648,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
+        Faces.setFacesCallback(myserver);
         jxcWindowRenderer.init(w, h);
         if (!setSkin(skinName))
         {
