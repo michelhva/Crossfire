@@ -78,6 +78,7 @@ public class MouseTracker implements MouseInputListener
     {
         if (mouseElement != null)
         {
+            e.translatePoint(-mouseElement.getX()-jxcWindowRenderer.getOffsetX(), -mouseElement.getY()-jxcWindowRenderer.getOffsetY());
             mouseElement.mouseMoved(e);
             mouseElement.mouseDragged(e);
         }

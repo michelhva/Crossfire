@@ -19,126 +19,153 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 
 /**
- * Encapsulates the state for rendering a {@link #Buffer} instance.
+ * Encapsulates the state for a scroll bar. The first line shown is the line
+ * index {@link #topIndex}. If {@link #topOffset} is non-zero, it should be
+ * shifted by this number of pixels. The current scrolling position is {@link
+ * #scrollPos}.
  *
  * @author Andreas Kirschbaum
  */
 public class RenderState
 {
     /**
-     * The listener to notify about state changes.
+     * The height of the viewable area.
      */
-    private final RenderStateListener renderStateListener;
+    private int height = 1;
 
     /**
-     * The rendered buffer.
-     */
-    private final Buffer buffer;
-
-    /**
-     * Records whether scrolling down is possible. It is updated when the
-     * buffer is rendered.
-     */
-    private boolean canScrollDown = false;
-
-    /**
-     * Whether to display the bottom most text messages or lines starting at
-     * {@link #topIndex}.
-     */
-    private boolean displayBottom = true;
-
-    /**
-     * The first line of {@link #buffer} to display.
+     * The first line to display in the viewable area. It is shifted by {@link
+     * #topOffset} pixels.
      */
     private int topIndex = 0;
 
     /**
-     * The number of pixels to shift the first displayed line.
+     * The number of pixels to shift the first displayed line ({@link
+     * #topIndex}. Positive values shift up, negative shift down. It's value is
+     * either between zero and less than the height of line {@link #topIdex},
+     * or it is negative if the rendered buffer does not contain enough lines
+     * to fill the view area.
      */
-    private int topOffset = 0;
+    private int topOffset = -height;
 
     /**
-     * The listener to re-render the window contents after changes.
+     * The location of the view area relative to the buffer's total height.
      */
-    private BufferListener bufferListener = new BufferListener()
-    {
-        /** {@inheritDoc} */
-        public void linesAdded(final Buffer buffer, final int lines)
-        {
-            assert lines > 0;
-
-            if (displayBottom)
-            {
-                int dy = 0;
-                final ListIterator<Line> it = buffer.listIterator(topIndex);
-                for (int i = 0; i < lines; i++)
-                {
-                    dy += it.next().getHeight();
-                }
-                scrollDown(dy);
-            }
-            else
-            {
-                canScrollDown = true;
-                renderStateListener.stateChanged();
-            }
-        }
-
-        /** {@inheritDoc} */
-        public void linesRemoved(final Buffer buffer, final List<Line> lines)
-        {
-            assert lines.size() > 0;
-
-            int i = lines.size();
-            final int j = Math.min(topIndex, i);
-            i -= j;
-            topIndex -= j;
-            assert i <= 0 || topIndex <= 0;
-
-            if (i > 0)
-            {
-                if (displayBottom)
-                {
-                    final Iterator<Line> it = lines.iterator();
-                    while (i > 0)
-                    {
-                        topOffset -= it.next().getHeight();
-                        i--;
-                    }
-                }
-                else
-                {
-                    topOffset = 0;
-                    recalc();
-                }
-            }
-
-            renderStateListener.stateChanged();
-        }
-    };
+    private int scrollPos = 0;
 
     /**
-     * Create a new instance.
-     *
-     * @param renderStateListener The listener to notify about state changes.
-     *
-     * @param buffer The rendered buffer.
+     * Whether scrolling up is possible.
      */
-    public RenderState(final RenderStateListener renderStateListener, final Buffer buffer)
+    private boolean canScrollUp = false;
+
+    /**
+     * Whether scrolling down is possible.
+     */
+    private boolean canScrollDown = false;
+
+    /**
+     * Whether the view has to be repainted even if no other value has changed.
+     */
+    private boolean mustRepaint = true;
+
+    /**
+     * The the viewable height in pixel.
+     *
+     * @param buffer The displayed buffer.
+     *
+     * @param h The viewable height.
+     */
+    public synchronized void setHeight(final Buffer buffer, final int h)
     {
-        this.renderStateListener = renderStateListener;
-        this.buffer = buffer;
-        buffer.addBufferListener(bufferListener);
-        recalc();
+        final int oldHeight = height;
+        height = h;
+        if (buffer.getTotalHeight() < height)
+        {
+            scrollPos = 0;
+            topIndex = 0;
+            topOffset = buffer.getTotalHeight()-height;
+            canScrollUp = false;
+            canScrollDown = false;
+        }
+        else if (topOffset < 0)
+        {
+            scrollToBottom(buffer);
+        }
+        else if (scrollPos > buffer.getTotalHeight()-height || scrollPos == buffer.getTotalHeight()-oldHeight)
+        {
+            scrollToBottom(buffer);
+        }
     }
 
     /**
-     * Return the first line to render.
+     * Some lines have been added to the buffer.
+     *
+     * @param buffer The displayed buffer.
+     *
+     * @param lines The number of lines that have been added.
+     */
+    public synchronized void linesAdded(final Buffer buffer, final int lines)
+    {
+        if (topOffset < 0)
+        {
+            scrollToBottom(buffer);
+        }
+        else if (!canScrollDown)
+        {
+            scrollToBottom(buffer);
+        }
+        else
+        {
+            mustRepaint = true;
+        }
+    }
+
+    /**
+     * Some lines have been removed from the buffer.
+     *
+     * @param buffer The displayed buffer.
+     *
+     * @param lines The number of lines that have been remove.
+     */
+    public synchronized void linesRemoved(final Buffer buffer, final List<Line> lines)
+    {
+        if (buffer.getTotalHeight() <= height)
+        {
+            scrollPos = 0;
+            topIndex = 0;
+            topOffset = buffer.getTotalHeight()-height;
+            canScrollUp = false;
+            canScrollDown = false;
+        }
+        else
+        {
+            for (final Line line : lines)
+            {
+                scrollPos -= line.getHeight();
+            }
+            topIndex -= lines.size();
+            if (scrollPos < 0)
+            {
+                scrollPos = 0;
+                topIndex = 0;
+                topOffset = 0;
+                canScrollUp = false;
+                mustRepaint = true;
+            }
+            else
+            {
+                assert topIndex >= 0;
+                // canScrollUp is unaffected
+            }
+            // canScrollDown is unaffected
+        }
+    }
+
+    /**
+     * Return the index of the first line to display.
      *
      * @return The line index.
      */
@@ -148,7 +175,7 @@ public class RenderState
     }
 
     /**
-     * Return the pixel offset for the first line to render.
+     * The number of pixels to shift the first displayed line.
      *
      * @return The pixel offset.
      */
@@ -158,81 +185,29 @@ public class RenderState
     }
 
     /**
-     * Return whether the bottom most lines are displayed.
+     * The location of the view area in pixels.
      *
-     * @return Whether the bottom most lines are displayed.
+     * @return The location.
      */
-    public boolean isDisplayBottom()
+    public int getScrollPos()
     {
-        return displayBottom;
-    }
-
-    /**
-     * Reset the scrolling range to default values.
-     */
-    public void resetScroll()
-    {
-        displayBottom = true;
-        recalc();
-        renderStateListener.stateChanged();
-    }
-
-    /**
-     * Scroll up by pixels.
-     *
-     * @param dy The number of pixels to scroll.
-     */
-    public void scrollUp(final int dy)
-    {
-        assert dy > 0;
-
-        topOffset -= dy;
-        while (topOffset < 0)
-        {
-            if (topIndex <= 0)
-            {
-                topOffset = 0;
-                break;
-            }
-
-            topIndex--;
-            topOffset += buffer.getLine(topIndex).getHeight();
-        }
-        displayBottom = false;
-        recalc();
-        renderStateListener.stateChanged();
-    }
-
-    /**
-     * Scroll down by pixels.
-     *
-     * @param dy The number of pixels to scroll.
-     */
-    public void scrollDown(final int dy)
-    {
-        assert dy > 0;
-
-        topOffset += dy;
-        while (topIndex < buffer.size() && topOffset >= buffer.getLine(topIndex).getHeight())
-        {
-            topOffset -= buffer.getLine(topIndex).getHeight();
-            topIndex++;
-        }
-
-        recalc();
-        renderStateListener.stateChanged();
+        return scrollPos;
     }
 
     /**
      * Whether scrolling up is possible.
+     *
+     * @return Whether scrolling up is possible.
      */
     public boolean canScrollUp()
     {
-        return topIndex > 0 || topOffset > 0;
+        return canScrollUp;
     }
 
     /**
      * Whether scrolling down is possible.
+     *
+     * @return Whether scrolling down is possible.
      */
     public boolean canScrollDown()
     {
@@ -240,41 +215,85 @@ public class RenderState
     }
 
     /**
-     * Validate the rendering state.
+     * Return whether the view should be repainted even if no other values have
+     * hchanged. This function resets the flag; calling the function twice
+     * returns <code>false</code> in the second call (if no other changes
+     * happen concurrently).
+     *
+     * @return Whether the view should be repainted.
      */
-    private void recalc()
+    public boolean mustRepaint()
     {
-        if (!displayBottom)
-        {
-            int y = -topOffset;
-            final int h = renderStateListener.getHeight();
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
-            while (y < h && it.hasNext())
-            {
-                y += it.next().getHeight();
-            }
-            if (it.hasNext() || y > h)
-            {
-                canScrollDown = y > h || it.hasNext();
-            }
-            else
-            {
-                displayBottom = true;
-            }
-        }
+        final boolean result = mustRepaint;
+        mustRepaint = false;
+        return result;
+    }
 
-        if (displayBottom)
+    /**
+     * Scroll to the given pixel location.
+     *
+     * @param buffer The displayed buffer.
+     *
+     * @param y The new location.
+     */
+    public synchronized void scrollTo(final Buffer buffer, final int y)
+    {
+        if (buffer.getTotalHeight() < height)
         {
-            int y = renderStateListener.getHeight();
+            // ignore
+        }
+        else
+        {
+            scrollPos = Math.max(Math.min(y, buffer.getTotalHeight()-height), 0);
+            topIndex = 0;
+            int yPos = scrollPos;
+            while (yPos > 0)
+            {
+                final int lineHeight = buffer.getLine(topIndex).getHeight();
+                if (yPos < lineHeight)
+                {
+                    break;
+                }
+
+                yPos -= lineHeight;
+                topIndex++;
+            }
+            assert yPos >= 0;
+            topOffset = yPos;
+            canScrollUp = topIndex > 0 || topOffset > 0;
+            canScrollDown = y+height < buffer.getTotalHeight();
+        }
+    }
+
+    /**
+     * Set the view area to the bottom-most value.
+     *
+     * @param buffer The displayed buffer.
+     */
+    public synchronized void scrollToBottom(final Buffer buffer)
+    {
+        if (buffer.getTotalHeight() <= height)
+        {
+            scrollPos = 0;
+            topIndex = 0;
+            topOffset = buffer.getTotalHeight()-height;
+            canScrollUp = false;
+            canScrollDown = false;
+        }
+        else
+        {
+            scrollPos = Math.max(buffer.getTotalHeight()-height, 0);
             topIndex = buffer.size();
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
-            while (y > 0 && it.hasPrevious())
+            int y = height;
+            while (y > 0)
             {
                 topIndex--;
-                y -= it.previous().getHeight();
+                assert topIndex >= 0;
+                y -= buffer.getLine(topIndex).getHeight();
             }
-            canScrollDown = false;
             topOffset = -y;
+            canScrollUp = topIndex > 0 || topOffset > 0;
+            canScrollDown = false;
         }
     }
 }

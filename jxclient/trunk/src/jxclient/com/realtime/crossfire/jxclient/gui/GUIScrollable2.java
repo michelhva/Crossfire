@@ -17,26 +17,33 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui.log;
+package com.realtime.crossfire.jxclient.gui;
 
 /**
- * Interface for listeners interested in changes of a {@link RenderStateManager}
- * instance.
- *
- * @author Andreas Kirschbaum
+ * A {@link GUIScrollable} that can be attached to {@link GUIScrollBar}s.
  */
-public interface RenderStateListener
+public interface GUIScrollable2 extends GUIScrollable
 {
     /**
-     * Notifies the listener about a state change in the tracked {@link
-     * RenderStateManager} object.
+     * Add a scrollable listener to be informed about changes.
+     *
+     * @param listener The listener to add.
      */
-    void stateChanged();
+    void addScrollableListener(ScrollableListener listener);
 
     /**
-     * Return the height of the rendered gui element in pixels.
+     * Remove a scrollable listener.
      *
-     * @return The height.
+     * @param listener The listener to remove.
      */
-    int getHeight();
+    void removeScrollableListener(ScrollableListener listener);
+
+    /**
+     * Scroll to the given location. The possible range is given by a previous
+     * notification through a listener registered with {@link
+     * #addScrollableListener(ScrollableListener)}.
+     *
+     * @param pos The location to scroll to.
+     */
+    void scrollTo(int pos);
 }

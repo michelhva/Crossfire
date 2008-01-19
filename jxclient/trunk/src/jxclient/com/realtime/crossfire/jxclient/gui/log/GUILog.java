@@ -20,7 +20,8 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.GUIScrollable;
+import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
+import com.realtime.crossfire.jxclient.gui.ScrollableListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
@@ -36,7 +37,9 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Map;
 
@@ -46,7 +49,7 @@ import java.util.Map;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILog extends GUIElement implements GUIScrollable
+public class GUILog extends GUIElement implements GUIScrollable2
 {
     /**
      * The number of pixels to scroll.
@@ -72,6 +75,11 @@ public class GUILog extends GUIElement implements GUIScrollable
         colors.put(11, Color.YELLOW); //gold
         colors.put(12, new Color(0xBDB76B)); //khaki
     }
+
+    /**
+     * All listeners.
+     */
+    private final List<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
 
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
@@ -103,7 +111,7 @@ public class GUILog extends GUIElement implements GUIScrollable
     /**
      * The rendering state.
      */
-    private final RenderState renderState;
+    private final RenderStateManager renderStateManager;
 
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
@@ -149,6 +157,11 @@ public class GUILog extends GUIElement implements GUIScrollable
         public void stateChanged()
         {
             render();
+
+            for (final ScrollableListener listener : listeners)
+            {
+                listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), GUILog.super.getHeight());
+            }
         }
 
         /** {@inheritDoc} */
@@ -191,7 +204,7 @@ public class GUILog extends GUIElement implements GUIScrollable
         this.defaultColor = defaultColor;
         createBuffer();
         buffer = new Buffer(fonts, context, w);
-        renderState = new RenderState(renderStateListener, buffer);
+        renderStateManager = new RenderStateManager(renderStateListener, buffer);
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
@@ -200,6 +213,11 @@ public class GUILog extends GUIElement implements GUIScrollable
     /** {@inheritDoc} */
     @Override protected void render(final Graphics2D g)
     {
+        if (renderStateManager == null)
+        {
+            return;
+        }
+
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         if (backgroundImage != null)
@@ -207,8 +225,8 @@ public class GUILog extends GUIElement implements GUIScrollable
             g.drawImage(backgroundImage, 0, 0, null);
         }
 
-        int y = -renderState.getTopOffset();
-        final ListIterator<Line> it = buffer.listIterator(renderState.getTopIndex());
+        int y = -renderStateManager.getTopOffset();
+        final ListIterator<Line> it = buffer.listIterator(renderStateManager.getTopIndex());
         while (y < getHeight() && it.hasNext())
         {
             final Line line = it.next();
@@ -270,11 +288,11 @@ public class GUILog extends GUIElement implements GUIScrollable
     {
         if (distance < 0)
         {
-            return renderState.canScrollUp();
+            return renderStateManager.canScrollUp();
         }
         else if (distance > 0)
         {
-            return renderState.canScrollDown();
+            return renderStateManager.canScrollDown();
         }
         else
         {
@@ -287,11 +305,11 @@ public class GUILog extends GUIElement implements GUIScrollable
     {
         if (distance < 0)
         {
-            renderState.scrollUp(-distance*SCROLL_PIXEL);
+            renderStateManager.scrollUp(-distance*SCROLL_PIXEL);
         }
         else if (distance > 0)
         {
-            renderState.scrollDown(distance*SCROLL_PIXEL);
+            renderStateManager.scrollDown(distance*SCROLL_PIXEL);
         }
         else
         {
@@ -302,7 +320,13 @@ public class GUILog extends GUIElement implements GUIScrollable
     /** {@inheritDoc} */
     public void resetScroll()
     {
-        renderState.resetScroll();
+        renderStateManager.resetScroll();
+    }
+
+    /** {@inheritDoc} */
+    public void scrollTo(final int pos)
+    {
+        renderStateManager.scrollTo(pos);
     }
 
     /** {@inheritDoc} */
@@ -320,5 +344,17 @@ public class GUILog extends GUIElement implements GUIScrollable
         context = g.getFontRenderContext();
         g.dispose();
         setChanged();
+    }
+
+    /** {@inheritDoc} */
+    public void addScrollableListener(final ScrollableListener listener)
+    {
+        listeners.add(listener);
+    }
+
+    /** {@inheritDoc} */
+    public void removeScrollableListener(final ScrollableListener listener)
+    {
+        listeners.remove(listener);
     }
 }

@@ -17,26 +17,26 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui.log;
+package com.realtime.crossfire.jxclient.gui;
 
 /**
- * Interface for listeners interested in changes of a {@link RenderStateManager}
- * instance.
+ * Listener for {@link GUIScrollable} elements.
  *
  * @author Andreas Kirschbaum
  */
-public interface RenderStateListener
+public interface ScrollableListener
 {
     /**
-     * Notifies the listener about a state change in the tracked {@link
-     * RenderStateManager} object.
-     */
-    void stateChanged();
-
-    /**
-     * Return the height of the rendered gui element in pixels.
+     * Sets the scoll range.
      *
-     * @return The height.
+     * @param valueMin The minimum scroll value.
+     *
+     * @param valueMax The maximum scroll value.
+     *
+     * @param sliderPos The scroll location; it need not within the scroll
+     * range.
+     *
+     * @param sliderSize The size of the slider itself.
      */
-    int getHeight();
+    void setRange(int valueMin, int valueMax, int sliderPos, int sliderSize);
 }
