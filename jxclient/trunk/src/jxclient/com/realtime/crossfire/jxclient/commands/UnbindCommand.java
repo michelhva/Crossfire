@@ -47,12 +47,34 @@ public class UnbindCommand extends AbstractCommand
     /** {@inheritDoc} */
     public void execute(final String args)
     {
-        if (args.length() != 0)
+        final String commands;
+        final boolean perCharacterBinding;
+        if (args.equals("-c"))
+        {
+            perCharacterBinding = true;
+            commands = "";
+        }
+        else if (args.startsWith("-c "))
+        {
+            perCharacterBinding = true;
+            commands = args.substring(3).trim();
+        }
+        else
+        {
+            perCharacterBinding = false;
+            commands = args;
+        }
+
+        if (commands.length() != 0)
         {
             drawInfoError("No arguments allowed.");
             return;
         }
 
-        getWindow().removeKeyBinding();
+        if (!getWindow().removeKeyBinding(perCharacterBinding))
+        {
+            drawInfoError("Cannot use unbind -c since no character is logged in.");
+            return;
+        }
     }
 }

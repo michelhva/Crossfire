@@ -45,9 +45,35 @@ public final class KeyBindings
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
     /**
+     * The file for saving the bindings; <code>null</code> to not save.
+     */
+    private final File file;
+
+    /**
      * The key code map to use. Set to <code>null</code> until first use.
      */
     private KeyCodeMap keyCodeMap = null;
+
+    /**
+     * Create a new instance.
+     *
+     * @param file The file for saving the bindings; <code>null</code> to not
+     * save.
+     */
+    public KeyBindings(final File file)
+    {
+        this.file = file;
+    }
+
+    /**
+     * Return the file for saving the bindings; <code>null</code> to not save.
+     *
+     * @return The file.
+     */
+    public File getFile()
+    {
+        return file;
+    }
 
     /**
      * Add a key binding for a key code/modifiers pair.
@@ -140,14 +166,17 @@ public final class KeyBindings
     /**
      * Load the key bindings from the given file.
      *
-     * @param file The file to load from.
-     *
      * @param jxcWindow The window to execute the commands in.
      *
      * @throws IOException If the file cannot be read.
      */
-    public void loadKeyBindings(final File file, final JXCWindow jxcWindow) throws IOException
+    public void loadKeyBindings(final JXCWindow jxcWindow) throws IOException
     {
+        if (file == null)
+        {
+            return;
+        }
+
         try
         {
             final FileInputStream fis = new FileInputStream(file);
@@ -207,12 +236,21 @@ public final class KeyBindings
     /**
      * Save the key bindings to the given file.
      *
-     * @param file The file to save to.
-     *
      * @throws IOException If the file cannot be written.
      */
-    public void saveKeyBindings(final File file) throws IOException
+    public void saveKeyBindings() throws IOException
     {
+        if (file == null)
+        {
+            return;
+        }
+
+        if (keybindings.size() <= 0)
+        {
+            file.delete();
+            return;
+        }
+
         final FileOutputStream fos = new FileOutputStream(file);
         try
         {

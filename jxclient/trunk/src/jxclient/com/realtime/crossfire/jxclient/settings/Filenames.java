@@ -120,13 +120,25 @@ public class Filenames
     /**
      * Return the keybindings file.
      *
-     * @return The keybindings file.
+     * @param hostname The hostname of the character; <code>null</code>=global
+     * key bindings file.
      *
-     * @throws IOException If the file cannot be accessed.
+     * @param character The character name; <code>null</code>=global key
+     * bindings file.
+     *
+     * @return The keybindings file; return <code>null</code> if the file
+     * cannot be accessed.
      */
-    public static File getKeybindingsFile() throws IOException
+    public static File getKeybindingsFile(final String hostname, final String character)
     {
-        return getSettingsFile("keybindings.txt");
+        try
+        {
+            return getSettingsFile(hostname == null || character == null ? "keybindings.txt" : "keybindings-"+encode(hostname)+"-"+encode(character)+".txt");
+        }
+        catch (final IOException ex)
+        {
+            return null;
+        }
     }
 
     /**
@@ -197,5 +209,39 @@ public class Filenames
         }
 
         return new File(home, ".crossfire");
+    }
+
+    /**
+     * Encode a string to make it safe as a file name.
+     *
+     * @param str The string to encode.
+     *
+     * @return The encoded string.
+     */
+    private static String encode(final String str)
+    {
+        final String hexChars = "0123456789abcdef";
+
+        final StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < str.length(); i++)
+        {
+            final char ch = str.charAt(i);
+            if (('a' <= ch && ch <= 'z')
+            || ('A' <= ch && ch <= 'Z')
+            || ('0' <= ch && ch <= '9')
+            || ch == '-'
+            || ch == '_'
+            || ch == '.')
+            {
+                sb.append(ch);
+            }
+            else
+            {
+                sb.append('%');
+                sb.append(hexChars.charAt((ch>>4)&15));
+                sb.append(hexChars.charAt(ch&15));
+            }
+        }
+        return sb.toString();
     }
 }

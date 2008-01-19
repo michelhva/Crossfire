@@ -48,12 +48,34 @@ public class BindCommand extends AbstractCommand
     /** {@inheritDoc} */
     public void execute(final String args)
     {
-        if (args.length() == 0)
+        final String commands;
+        final boolean perCharacterBinding;
+        if (args.equals("-c"))
+        {
+            perCharacterBinding = true;
+            commands = "";
+        }
+        else if (args.startsWith("-c "))
+        {
+            perCharacterBinding = true;
+            commands = args.substring(3).trim();
+        }
+        else
+        {
+            perCharacterBinding = false;
+            commands = args;
+        }
+
+        if (commands.length() == 0)
         {
             drawInfoError("Which command to you want to bind?");
             return;
         }
 
-        getWindow().createKeyBinding(new GUICommandList(GUICommandList.Type.AND, args, getWindow()));
+        if (!getWindow().createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commands, getWindow())))
+        {
+            drawInfoError("Cannot use bind -c since no character is logged in.");
+            return;
+        }
     }
 }
