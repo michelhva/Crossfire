@@ -400,8 +400,13 @@ void keys_init(GtkWidget *window_root)
      * bind everything.  Probably not a good idea, however.
      */
 
-#ifdef WIN32
+#if 0
     /* For Windows, use player name if defined for key file */
+    /* FIXME:  keys_init() is called long before the player logs in, so until
+     * that is fixed, it is pointless to have this code check for cpl.name
+     * being set.  Also, it is completely inappropriate for this to be a
+     * Windows only feature.
+     */
     if ( strlen( cpl.name ) )
         sprintf( buf, "%s/.crossfire/%s.keys", getenv( "HOME" ), cpl.name );
     else
@@ -945,8 +950,16 @@ static void save_keys(void)
     int i;
     FILE *fp;
 
-#ifdef WIN32
+#if 0
     /* Use player's name if available */
+    /* FIXME:  keys_init() is called long before the player logs in, so until
+     * that is fixed, it is pointless to have this code check for cpl.name
+     * being set so that a file is written that cannot be opened by under
+     * the existing code structure.  That just means the keybindings saved
+     * while logged in would be inaccessible until the file was copied to
+     * the regular keys file.  Also, this was originally under #ifdef WIN32,
+     * but is completely inappropriate for this to be a Windows only feature.
+     */
     if ( strlen( cpl.name ) )
         sprintf( buf,"%s/.crossfire/%s.keys", getenv("HOME"), cpl.name );
     else

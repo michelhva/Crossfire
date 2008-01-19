@@ -2,6 +2,16 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Per-character keybind support.
+gtk-v2/src/keys.c: In save_keys() and keys_init(), a pointless #ifdef WIN32
+  was used to attempt to implement per-character keybind files but keys_init()
+  is called long before a player can log in, so this had the effect of writing
+  keybinds to a file that cannot be loaded.  Oddly, this was under a #ifdef
+  WIN32 which is quite inappropriate as if supported, it should be for all
+  platforms.  The support is commented out with #if 0 until it can be fixed
+  and then re-enabled for all clients. Meanwhile, it surely fixes a WIN32 bug.
+Kevin Bulgrien 2008-01-18
+
 common/image.c README: Rename client '.crossfire/crossfire-images/' to
   '.crossfire/image-cache/' to make backups avoid backing it up with a
   generic exclude like "*/*cache*/*" that works for many other packages
