@@ -533,6 +533,7 @@ commandlist command_log_upper_up AND log_upper SCROLL -1
 commandlist command_log_upper_down AND log_upper SCROLL 1
 
 button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
+scrollbar log_upper_scroll 0+679 0+100+31 10 180-31 false log_upper #303030 #c0c0c0
 button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
 
 commandlist command_log_open AND

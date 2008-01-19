@@ -10,6 +10,7 @@ log_color log 7 #00c000
 log_color log 11 #e0c000
 
 button slider_up    586-4-16 40          16 16 slider_up_up slider_up_down true command_messages_up
+scrollbar slider1   586-4-16 56          16 108 true log #c0c0c0 #808080
 button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down
 
 command_text command 4 200-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1

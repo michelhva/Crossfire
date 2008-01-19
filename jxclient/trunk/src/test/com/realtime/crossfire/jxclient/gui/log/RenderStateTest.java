@@ -29,6 +29,7 @@ import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.List;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -49,23 +50,6 @@ public class RenderStateTest extends TestCase
     private RenderState rs = null;
 
     private Buffer buffer = null;
-
-    private int stateChanged = 0;
-
-    private final RenderStateListener renderStateListener = new RenderStateListener()
-    {
-        /** {@inheritDoc} */
-        public void stateChanged()
-        {
-            stateChanged++;
-        }
-
-        /** {@inheritDoc} */
-        public int getHeight()
-        {
-            return HEIGHT;
-        }
-    };
 
     /**
      * Create a new instance.
@@ -96,89 +80,111 @@ public class RenderStateTest extends TestCase
     {
         final Parser parser = new Parser();
 
-        checkState(0, true, 0, -HEIGHT);
-        parser.parse("xxx", null, buffer);
-        checkState(1, true, 0, -HEIGHT+1);
-        parser.parse("xxx", null, buffer);
-        checkState(1, true, 0, -HEIGHT+2);
-
-        // scroll up; will not do anything because buffer has too few lines
-        rs.scrollUp(1);
-        checkState(1/*XXX: should be 0*/, true, 0, -HEIGHT+2);
-
-        // scroll down; will not do anything because display is at bottom
-        rs. scrollDown(1);
-        checkState(1/*XXX: should be 0*/, true, 0, -HEIGHT+2);
-
-        // fill the buffer
-        for(int i = 0; i < 100; i++)
+        for (int i = 0; i < HEIGHT+10; i++)
         {
             parser.parse("xxx", null, buffer);
         }
-        checkState(100, true, 2, 0);
+        checkState(10, 0, 10);
 
-        // scroll up
-        rs.scrollUp(1);
-        checkState(1, false, 1, 0);
+        // scroll to valid positions
+        rs.scrollTo(buffer, 0);
+        checkState(0, 0, 0);
+        rs.scrollTo(buffer, 5);
+        checkState(5, 0, 5);
+        rs.scrollTo(buffer, 10);
+        checkState(10, 0, 10);
 
-        // add one more line
-        parser.parse("xxx", null, buffer);
-        checkState(1, false, 1, 0);
+        // scroll to invalid positions
+        rs.scrollTo(buffer, -1);
+        checkState(0, 0, 0);
+        rs.scrollTo(buffer, -10);
+        checkState(0, 0, 0);
 
-        // scroll down
-        rs.scrollDown(1);
-        checkState(1, false, 2, 0);
-
-        // scroll down
-        rs.scrollDown(1);
-        checkState(1, true, 3, 0);
-
-        // completely fill the buffer
-        assertEquals(Buffer.MAX_LINES, 250);
-        for(int i = 0; i < 200; i++)
-        {
-            parser.parse("xxx", null, buffer);
-        }
-        assertEquals(150, Buffer.MAX_LINES-HEIGHT);
-        checkState(Buffer.MAX_LINES-50, true, 150, 0);
-
-        // scroll up
-        rs.scrollUp(3);
-        checkState(1, false, 147, 0);
-
-        // add one more line; this decrements topIndex because one line is pruned
-        parser.parse("xxx", null, buffer);
-        checkState(1, false, 146, 0);
-
-        // add enough lines to make topIndex decrement to zero
-        for(int i = 0; i < 146; i++)
-        {
-            parser.parse("xxx", null, buffer);
-        }
-        checkState(146, false, 0, 0);
-
-        // add one more line => topIndex must stay at zero
-        parser.parse("xxx", null, buffer);
-        checkState(146, false, 0, 0);
-
-        // add one more line => topIndex must stay at zero
-        parser.parse("xxx", null, buffer);
-        checkState(146, false, 0, 0);
-
-        // scroll down
-        rs.scrollDown(1);
-        checkState(1, false, 1, 0);
+        // scroll to invalid positions
+        rs.scrollTo(buffer, 11);
+        checkState(10, 0, 10);
+        rs.scrollTo(buffer, 21);
+        checkState(10, 0, 10);
     }
 
-    private void checkState(final int expectedStateChanged, final boolean expectedDisplayBottom, final int expectedTopIndex, final int expectedTopOffset)
+    public void test2()
     {
-        assertEquals(format(expectedStateChanged, expectedDisplayBottom, expectedTopIndex, expectedTopOffset), format(stateChanged, rs.isDisplayBottom(), rs.getTopIndex(), rs.getTopOffset()));
-        stateChanged = 0;
+        final Parser parser = new Parser();
+
+        checkState(0, -HEIGHT, 0);
+        parser.parse("xxx", null, buffer);
+        checkState(0, -HEIGHT+1, 0);
+        parser.parse("xxx", null, buffer);
+        checkState(0, -HEIGHT+2, 0);
+
+        // add lines to completely fill visible area
+        for (int i = 2; i < HEIGHT; i++)
+        {
+            parser.parse("xxx", null, buffer);
+        }
+        checkState(0, 0, 0);
+
+        // add one more line ==> buffer sticks at bottom
+        parser.parse("xxx", null, buffer);
+        checkState(1, 0, 1);
+
+        // add one more line ==> buffer sticks at bottom
+        parser.parse("xxx", null, buffer);
+        checkState(2, 0, 2);
+
+        // scroll up one line
+        rs.scrollTo(buffer, 1);
+        checkState(1, 0, 1);
+
+        // add one more line ==> buffer sticks at scroll position
+        parser.parse("xxx", null, buffer);
+        checkState(1, 0, 1);
+
+        // scroll back to bottom
+        rs.scrollTo(buffer, 3);
+        checkState(3, 0, 3);
+
+        // add one more line ==> buffer sticks at bottom
+        parser.parse("xxx", null, buffer);
+        checkState(4, 0, 4);
+
+        // completely fill buffer
+        for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++)
+        {
+            parser.parse("xxx", null, buffer);
+        }
+        checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
+
+        // add one more line ==> buffer sticks at bottom
+        parser.parse("xxx", null, buffer);
+        checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
+
+        // scroll one line up
+        rs.scrollTo(buffer, Buffer.MAX_LINES-HEIGHT-1);
+        checkState(Buffer.MAX_LINES-HEIGHT-1, 0, Buffer.MAX_LINES-HEIGHT-1);
+
+        // fill more lines ==> scroll position sticks
+        for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++)
+        {
+            parser.parse("xxx", null, buffer);
+        }
+        checkState(1, 0, 1);
+        parser.parse("xxx", null, buffer);
+        checkState(0, 0, 0);
+
+        // add one more line ==> scroll position hits top
+        parser.parse("xxx", null, buffer);
+        checkState(0, 0, 0);
     }
 
-    private static String format(final int stateChanged, final boolean displayBottom, final int topIndex, final int topOffset)
+    private void checkState(final int expectedTopIndex, final int expectedTopOffset, final int expectedScrollPos)
     {
-        return "ch="+(stateChanged != 0)+" bottom="+displayBottom+" top="+topIndex+"/"+topOffset;
+        assertEquals(format(expectedTopIndex, expectedTopOffset, expectedScrollPos), format(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
+    }
+
+    private String format(final int topIndex, final int topOffset, final int scrollPos)
+    {
+        return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
     }
 
     /** {@inheritDoc} */
@@ -201,8 +207,22 @@ public class RenderStateTest extends TestCase
         }
         buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
         g.dispose();
-        rs = new RenderState(renderStateListener, buffer);
+        rs = new RenderState();
+        rs.setHeight(buffer, HEIGHT);
 
-        stateChanged = 0;
+        buffer.addBufferListener(new BufferListener()
+            {
+                /** {@inheritDoc} */
+                public void linesAdded(final Buffer buffer, final int lines)
+                {
+                    rs.linesAdded(buffer, lines);
+                }
+
+                /** {@inheritDoc} */
+                public void linesRemoved(final Buffer buffer, final List<Line> lines)
+                {
+                    rs.linesRemoved(buffer, lines);
+                }
+            });
     }
 }

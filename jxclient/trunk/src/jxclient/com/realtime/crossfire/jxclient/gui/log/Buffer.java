@@ -68,6 +68,11 @@ public class Buffer implements Iterable<Line>
     private final List<Line> lines = new ArrayList<Line>();
 
     /**
+     * The total height of all {@link #lines}.
+     */
+    private int totalHeight = 0;
+
+    /**
      * Create a new instance.
      *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
@@ -90,7 +95,9 @@ public class Buffer implements Iterable<Line>
      */
     public void addLine(final Line line)
     {
-        line.setHeight(calculateHeight(line));
+        final int height = calculateHeight(line);
+        line.setHeight(height);
+        totalHeight += height;
         lines.add(line);
 
         for (final BufferListener listener : listeners)
@@ -112,7 +119,9 @@ public class Buffer implements Iterable<Line>
         final List<Line> removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
         while (lines.size() > MAX_LINES)
         {
-            removedLines.add(lines.remove(0));
+            final Line line = lines.remove(0);
+            removedLines.add(line);
+            totalHeight -= line.getHeight();
         }
         for (final BufferListener listener : listeners)
         {
@@ -131,6 +140,16 @@ public class Buffer implements Iterable<Line>
     public Line getLine(final int line)
     {
         return lines.get(line);
+    }
+
+    /**
+     * Return the total height of all lines.
+     *
+     * @return The total height.
+     */
+    public int getTotalHeight()
+    {
+        return totalHeight;
     }
 
     /** {@inheritDoc} */
@@ -206,7 +225,7 @@ public class Buffer implements Iterable<Line>
         updateAttributes(line, beginIndex, imax, height, minY, maxY);
         height += maxY-minY;
 
-        return height;
+        return Math.max(1, height);
     }
 
     /**
