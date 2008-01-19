@@ -115,10 +115,9 @@ public class AskfaceManager
                 break;
             }
 
-            if (!pendingAskfaces.contains(face))
+            if (pendingAskfaces.add(face))
             {
                 facesCallback.sendAskface(face);
-                pendingAskfaces.add(face);
             }
         }
     }
