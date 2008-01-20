@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
@@ -1218,11 +1219,20 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
     {
+        String message = evt.getMessage();
+
         final Gui dialog;
         switch (evt.getType())
         {
         case CrossfireServerConnection.MSG_TYPE_BOOK:
             dialog = myskin.getDialogBook(1);
+            final GUIOneLineLabel title = dialog.getDialogTitle();
+            if (title != null)
+            {
+                final String[] tmp = message.split("\n", 2);
+                title.setText(tmp[0]);
+                message = tmp.length >= 2 ? tmp[1] : "";
+            }
             break;
 
         case CrossfireServerConnection.MSG_TYPE_CARD:
@@ -1269,7 +1279,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         final AbstractLabel label = dialog.getFirstLabel();
         if (label != null)
         {
-            label.setText(evt.getMessage());
+            label.setText(message);
         }
         jxcWindowRenderer.openDialog(dialog);
     }
