@@ -3,7 +3,7 @@ dialog border 4 532 586 198 true Messages
 dialog_hide START META LOGIN
 button button_close 566 4 16 16 close_up close_down false command_messages
 
-log_message log 4 30 562 200-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log 4 30 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log 1 #000000
 log_color log 5 #8080ff
 log_color log 7 #00c000
