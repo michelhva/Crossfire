@@ -751,7 +751,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             debugProtocolWrite("recv face1 num="+num+" checksum="+checksum+" name="+name+"\n");
                         }
-                        Faces.setFace(num, 0, checksum, name);
+                        Faces.setFace(num, 0, name);
                     }
                     return;
 
@@ -766,7 +766,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             debugProtocolWrite("recv face2 num="+num+" set="+setnum+" checksum="+checksum+" name="+name+"\n");
                         }
-                        Faces.setFace(num, setnum, checksum, name);
+                        Faces.setFace(num, setnum, name);
                     }
                     return;
                 }
@@ -805,7 +805,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv image face="+face+" len="+len+"\n");
                             }
-                            final int pixmap = Faces.setImage(face, 0, packet, pos, len);
+                            final int pixmap = Faces.setImage(face, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
@@ -825,7 +825,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv image2 face="+face+" set="+set+" len="+len+"\n");
                             }
-                            final int pixmap = Faces.setImage(face, set, packet, pos, len);
+                            final int pixmap = Faces.setImage(face, packet, pos, len);
                             CfMapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
