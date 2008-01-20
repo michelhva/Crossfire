@@ -1,12 +1,12 @@
 
-dialog dialog         398 260 4+220+4 4+120+4 false Disconnect from server?
+dialog dialog         398 260 4+220+4 4+110+4 false Disconnect from server?
 set_modal
 
-label_multi message    10  40  208 40 font_label BLACK <<EOF
+label_multi message    10  30  208 40 font_label BLACK <<EOF
 Do you really want to disconnect
 from the server?
 EOF
-textbutton disconnect 20  100    86 18 false command_disconnect        Disconnect
-textbutton resume     140 100    66 18 false command_resume_disconnect Resume
+textbutton disconnect 20   90    86 18 false command_disconnect        Disconnect
+textbutton resume     140  90    66 18 false command_resume_disconnect Resume
 
 set_default disconnect

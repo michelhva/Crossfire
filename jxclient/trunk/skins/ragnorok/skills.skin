@@ -1,133 +1,133 @@
 
-dialog border                262 216 548 315 true Skills
+dialog border                262 216 548 305 true Skills
 dialog_hide START META LOGIN
 button button_close          528   4  16  16 close_up close_down false command_skills
 
 # skills group
-gauge     act_lockpicking      9  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE
-gauge     act_hiding           9  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_hiding WE
-gauge     act_stealing         9  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_stealing WE
-gauge     act_bargaining       9 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_bargaining WE
-gauge     act_oratory          9 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_oratory WE
-gauge     act_singing          9 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_singing WE
-gauge     act_inscription      9 160 166  16 skill_active null skill_inactive ACTIVE_SKILL_inscription WE
-gauge     act_fishing          9 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_fishing WE
-label_text label_lockpicking  10  40  90  16 font_label BLACK Lockpicking:
-label_text label_hiding       10  60  90  16 font_label BLACK Hiding:
-label_text label_stealing     10  80  90  16 font_label BLACK Stealing:
-label_text label_bargaining   10 100  90  16 font_label BLACK Bargaining:
-label_text label_oratory      10 120  90  16 font_label BLACK Oratory:
-label_text label_singing      10 140  90  16 font_label BLACK Singing:
-label_text label_inscription  10 160  90  16 font_label BLACK Inscription:
-label_text label_fishing      10 180  90  16 font_label BLACK Fishing:
-textgauge res_lockpicking    100  41  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE WHITE font_label Lockpicking:
-textgauge res_hiding         100  61  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE WHITE font_label Hiding:
-textgauge res_stealing       100  81  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE WHITE font_label Stealing:
-textgauge res_bargaining     100 101  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE WHITE font_label Bargaining:
-textgauge res_oratory        100 121  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE WHITE font_label Oratory:
-textgauge res_singing        100 141  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE WHITE font_label Singing:
-textgauge res_inscription    100 161  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE WHITE font_label Inscription:
-textgauge res_fishing        100 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE WHITE font_label Fishing:
+gauge     act_lockpicking      9  30 166  16 skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE
+gauge     act_hiding           9  50 166  16 skill_active null skill_inactive ACTIVE_SKILL_hiding WE
+gauge     act_stealing         9  70 166  16 skill_active null skill_inactive ACTIVE_SKILL_stealing WE
+gauge     act_bargaining       9  90 166  16 skill_active null skill_inactive ACTIVE_SKILL_bargaining WE
+gauge     act_oratory          9 110 166  16 skill_active null skill_inactive ACTIVE_SKILL_oratory WE
+gauge     act_singing          9 130 166  16 skill_active null skill_inactive ACTIVE_SKILL_singing WE
+gauge     act_inscription      9 150 166  16 skill_active null skill_inactive ACTIVE_SKILL_inscription WE
+gauge     act_fishing          9 170 166  16 skill_active null skill_inactive ACTIVE_SKILL_fishing WE
+label_text label_lockpicking  10  30  90  16 font_label BLACK Lockpicking:
+label_text label_hiding       10  50  90  16 font_label BLACK Hiding:
+label_text label_stealing     10  70  90  16 font_label BLACK Stealing:
+label_text label_bargaining   10  90  90  16 font_label BLACK Bargaining:
+label_text label_oratory      10 110  90  16 font_label BLACK Oratory:
+label_text label_singing      10 130  90  16 font_label BLACK Singing:
+label_text label_inscription  10 150  90  16 font_label BLACK Inscription:
+label_text label_fishing      10 170  90  16 font_label BLACK Fishing:
+textgauge res_lockpicking    100  31  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_lockpicking WE WHITE font_label Lockpicking:
+textgauge res_hiding         100  51  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_hiding WE WHITE font_label Hiding:
+textgauge res_stealing       100  71  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_stealing WE WHITE font_label Stealing:
+textgauge res_bargaining     100  91  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_bargaining WE WHITE font_label Bargaining:
+textgauge res_oratory        100 111  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_oratory WE WHITE font_label Oratory:
+textgauge res_singing        100 131  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_singing WE WHITE font_label Singing:
+textgauge res_inscription    100 151  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_inscription WE WHITE font_label Inscription:
+textgauge res_fishing        100 171  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_fishing WE WHITE font_label Fishing:
 
 # skills "yes/no" group
-gauge     act_jumping          9 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_jumping WE
-gauge     act_climbing         9 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_climbing WE
-gauge     act_levitation       9 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_levitation WE
-gauge     act_meditation       9 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_meditation WE
-gauge     act_set_traps        9 290 166  16 skill_active null skill_inactive ACTIVE_SKILL_set_traps WE
-label_text label_jumping      10 210  90  16 font_label BLACK Jumping:
-label_text label_climbing     10 230  90  16 font_label BLACK Climbing:
-label_text label_levitation   10 250  90  16 font_label BLACK Levitation:
-label_text label_meditation   10 270  90  16 font_label BLACK Meditation:
-label_text label_set_traps    10 290  90  16 font_label BLACK Set traps:
-textgauge res_jumping        100 211  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE WHITE font_label Jumping:
-textgauge res_climbing       100 231  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE WHITE font_label Climbing:
-textgauge res_levitation     100 251  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE WHITE font_label Levitation:
-textgauge res_meditation     100 271  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE WHITE font_label Meditation:
-textgauge res_set_traps      100 291  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE WHITE font_label Set traps:
+gauge     act_jumping          9 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_jumping WE
+gauge     act_climbing         9 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_climbing WE
+gauge     act_levitation       9 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_levitation WE
+gauge     act_meditation       9 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_meditation WE
+gauge     act_set_traps        9 280 166  16 skill_active null skill_inactive ACTIVE_SKILL_set_traps WE
+label_text label_jumping      10 200  90  16 font_label BLACK Jumping:
+label_text label_climbing     10 220  90  16 font_label BLACK Climbing:
+label_text label_levitation   10 240  90  16 font_label BLACK Levitation:
+label_text label_meditation   10 260  90  16 font_label BLACK Meditation:
+label_text label_set_traps    10 280  90  16 font_label BLACK Set traps:
+textgauge res_jumping        100 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jumping WE WHITE font_label Jumping:
+textgauge res_climbing       100 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_climbing WE WHITE font_label Climbing:
+textgauge res_levitation     100 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_levitation WE WHITE font_label Levitation:
+textgauge res_meditation     100 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_meditation WE WHITE font_label Meditation:
+textgauge res_set_traps      100 281  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_set_traps WE WHITE font_label Set traps:
 
 # identify/creation group
-gauge     act_smithery       189  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_smithery WE
-gauge     act_bowyer         189  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_bowyer WE
-gauge     act_jeweler        189  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_jeweler WE
-gauge     act_woodsman       189 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
-gauge     act_thaumaturgy    189 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
-gauge     act_literacy       189 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_literacy WE
-label_text label_smithery    190  40  90  16 font_label BLACK Smithery:
-label_text label_bowyer      190  60  90  16 font_label BLACK Bowyer:
-label_text label_jeweler     190  80  90  16 font_label BLACK Jeweler:
-label_text label_woodsman    190 100  90  16 font_label BLACK Woodsman:
-label_text label_thaumaturgy 190 120  90  16 font_label BLACK Thaumaturgy:
-label_text label_literacy    190 140  90  16 font_label BLACK Literacy:
-textgauge res_smithery       280  41  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE WHITE font_label Smithery:
-textgauge res_bowyer         280  61  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE WHITE font_label Bowyer:
-textgauge res_jeweler        280  81  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE WHITE font_label Jeweler:
-textgauge res_woodsman       280 101  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE WHITE font_label Woodsman:
-textgauge res_thaumaturgy    280 121  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE WHITE font_label Thaumaturgy:
-textgauge res_literacy       280 141  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE WHITE font_label Literacy:
+gauge     act_smithery       189  30 166  16 skill_active null skill_inactive ACTIVE_SKILL_smithery WE
+gauge     act_bowyer         189  50 166  16 skill_active null skill_inactive ACTIVE_SKILL_bowyer WE
+gauge     act_jeweler        189  70 166  16 skill_active null skill_inactive ACTIVE_SKILL_jeweler WE
+gauge     act_woodsman       189  90 166  16 skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
+gauge     act_thaumaturgy    189 110 166  16 skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
+gauge     act_literacy       189 130 166  16 skill_active null skill_inactive ACTIVE_SKILL_literacy WE
+label_text label_smithery    190  30  90  16 font_label BLACK Smithery:
+label_text label_bowyer      190  50  90  16 font_label BLACK Bowyer:
+label_text label_jeweler     190  70  90  16 font_label BLACK Jeweler:
+label_text label_woodsman    190  90  90  16 font_label BLACK Woodsman:
+label_text label_thaumaturgy 190 110  90  16 font_label BLACK Thaumaturgy:
+label_text label_literacy    190 130  90  16 font_label BLACK Literacy:
+textgauge res_smithery       280  31  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE WHITE font_label Smithery:
+textgauge res_bowyer         280  51  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE WHITE font_label Bowyer:
+textgauge res_jeweler        280  71  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE WHITE font_label Jeweler:
+textgauge res_woodsman       280  91  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE WHITE font_label Woodsman:
+textgauge res_thaumaturgy    280 111  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE WHITE font_label Thaumaturgy:
+textgauge res_literacy       280 131  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE WHITE font_label Literacy:
 
 # identify/detection group
-gauge     act_sense_magic    189 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
-gauge     act_sense_curse    189 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE
-gauge     act_find_traps     189 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_find_traps WE
-gauge     act_disarm_traps   189 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE
-label_text label_sense_magic 190 210  90  16 font_label BLACK Sense magic:
-label_text label_sense_curse 190 230  90  16 font_label BLACK Sense curse:
-label_text label_find_traps  190 250  90  16 font_label BLACK Find traps:
-label_text label_disarm_traps 190 270 90  16 font_label BLACK Disarm traps:
-textgauge res_sense_magic    280 211  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE WHITE font_label Sense magic:
-textgauge res_sense_curse    280 231  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE WHITE font_label Sense curse:
-textgauge res_find_traps     280 251  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE WHITE font_label Find traps:
-textgauge res_disarm_traps   280 271  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE WHITE font_label Disarm traps:
+gauge     act_sense_magic    189 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
+gauge     act_sense_curse    189 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_curse WE
+gauge     act_find_traps     189 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_find_traps WE
+gauge     act_disarm_traps   189 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_disarm_traps WE
+label_text label_sense_magic 190 200  90  16 font_label BLACK Sense magic:
+label_text label_sense_curse 190 220  90  16 font_label BLACK Sense curse:
+label_text label_find_traps  190 240  90  16 font_label BLACK Find traps:
+label_text label_disarm_traps 190 260 90  16 font_label BLACK Disarm traps:
+textgauge res_sense_magic    280 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_magic WE WHITE font_label Sense magic:
+textgauge res_sense_curse    280 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sense_curse WE WHITE font_label Sense curse:
+textgauge res_find_traps     280 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_find_traps WE WHITE font_label Find traps:
+textgauge res_disarm_traps   280 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_disarm_traps WE WHITE font_label Disarm traps:
 
 # combat group
-gauge     act_punching       369  40 166  16 skill_active null skill_inactive ACTIVE_SKILL_punching WE
-gauge     act_karate         369  60 166  16 skill_active null skill_inactive ACTIVE_SKILL_karate WE
-gauge     act_one_handed_weapons 369  80 166  16 skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE
-gauge     act_two_handed_weapons 369 100 166  16 skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE
-gauge     act_missile_weapons 369 120 166  16 skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE
-gauge     act_throwing       369 140 166  16 skill_active null skill_inactive ACTIVE_SKILL_throwing WE
-gauge     act_use_magic_item 369 160 166  16 skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE
-gauge     act_flame_touch    369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE
-gauge     act_clawing        369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_clawing WE
-gauge     act_wraith_feed    369 180 166  16 skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE
-label_text label_punching    370 40   90  16 font_label BLACK Punching:
-label_text label_karate      370 60   90  16 font_label BLACK Karate:
-label_text label_one_handed_weapons 370 80  90  16 font_label BLACK One handed:
-label_text label_two_handed_weapons 370 100  90  16 font_label BLACK Two handed:
-label_text label_missile_weapons 370 120  90  16 font_label BLACK Missiles:
-label_text label_throwing    370 140  90  16 font_label BLACK Throwing:
-label_text label_use_magic_item 370 160 90 16 font_label BLACK Magic item:
-label_text label_flame_touch 370 180  90  16 font_label BLACK Flame touch:
-label_text label_clawing     370 180  90  16 font_label BLACK Clawing:
-label_text label_wraith_feed 370 180  90  16 font_label BLACK Wraith feed:
-textgauge res_punching       460  41  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE WHITE font_label Punching:
-textgauge res_karate         460  61  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE WHITE font_label Karate:
-textgauge res_one_handed_weapons 460  81  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE WHITE font_label One handed weapons:
-textgauge res_two_handed_weapons 460 101  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE WHITE font_label Two handed weapons:
-textgauge res_missile_weapons 460 121  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE WHITE font_label Missile weapons:
-textgauge res_throwing       460 141  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE WHITE font_label Throwing:
-textgauge res_use_magic_item 460 161  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE WHITE font_label Use magic item:
-textgauge res_flame_touch    460 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE WHITE font_label Flame touch:
-textgauge res_clawing        460 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE WHITE font_label Clawing:
-textgauge res_wraith_feed    460 181  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE WHITE font_label Wraith feed:
+gauge     act_punching       369  30 166  16 skill_active null skill_inactive ACTIVE_SKILL_punching WE
+gauge     act_karate         369  50 166  16 skill_active null skill_inactive ACTIVE_SKILL_karate WE
+gauge     act_one_handed_weapons 369  70 166  16 skill_active null skill_inactive ACTIVE_SKILL_one_handed_weapons WE
+gauge     act_two_handed_weapons 369  90 166  16 skill_active null skill_inactive ACTIVE_SKILL_two_handed_weapons WE
+gauge     act_missile_weapons 369 110 166  16 skill_active null skill_inactive ACTIVE_SKILL_missile_weapons WE
+gauge     act_throwing       369 130 166  16 skill_active null skill_inactive ACTIVE_SKILL_throwing WE
+gauge     act_use_magic_item 369 150 166  16 skill_active null skill_inactive ACTIVE_SKILL_use_magic_item WE
+gauge     act_flame_touch    369 170 166  16 skill_active null skill_inactive ACTIVE_SKILL_flame_touch WE
+gauge     act_clawing        369 170 166  16 skill_active null skill_inactive ACTIVE_SKILL_clawing WE
+gauge     act_wraith_feed    369 170 166  16 skill_active null skill_inactive ACTIVE_SKILL_wraith_feed WE
+label_text label_punching    370  30  90  16 font_label BLACK Punching:
+label_text label_karate      370  50  90  16 font_label BLACK Karate:
+label_text label_one_handed_weapons 370  70  90  16 font_label BLACK One handed:
+label_text label_two_handed_weapons 370  90  90  16 font_label BLACK Two handed:
+label_text label_missile_weapons 370 110  90  16 font_label BLACK Missiles:
+label_text label_throwing    370 130  90  16 font_label BLACK Throwing:
+label_text label_use_magic_item 370 150 90 16 font_label BLACK Magic item:
+label_text label_flame_touch 370 170  90  16 font_label BLACK Flame touch:
+label_text label_clawing     370 170  90  16 font_label BLACK Clawing:
+label_text label_wraith_feed 370 170  90  16 font_label BLACK Wraith feed:
+textgauge res_punching       460  31  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_punching WE WHITE font_label Punching:
+textgauge res_karate         460  51  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_karate WE WHITE font_label Karate:
+textgauge res_one_handed_weapons 460  71  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_one_handed_weapons WE WHITE font_label One handed weapons:
+textgauge res_two_handed_weapons 460  91  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_two_handed_weapons WE WHITE font_label Two handed weapons:
+textgauge res_missile_weapons 460 111  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_missile_weapons WE WHITE font_label Missile weapons:
+textgauge res_throwing       460 131  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_throwing WE WHITE font_label Throwing:
+textgauge res_use_magic_item 460 151  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_use_magic_item WE WHITE font_label Use magic item:
+textgauge res_flame_touch    460 171  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_flame_touch WE WHITE font_label Flame touch:
+textgauge res_clawing        460 171  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_clawing WE WHITE font_label Clawing:
+textgauge res_wraith_feed    460 171  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_wraith_feed WE WHITE font_label Wraith feed:
 
 # spells/prayers group
-gauge     act_praying        369 210 166  16 skill_active null skill_inactive ACTIVE_SKILL_praying WE
-gauge     act_summoning      369 230 166  16 skill_active null skill_inactive ACTIVE_SKILL_summoning WE
-gauge     act_pyromancy      369 250 166  16 skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE
-gauge     act_evocation      369 270 166  16 skill_active null skill_inactive ACTIVE_SKILL_evocation WE
-gauge     act_sorcery        369 290 166  16 skill_active null skill_inactive ACTIVE_SKILL_sorcery WE
-label_text label_praying     370 210  90  16 font_label BLACK Praying:
-label_text label_summoning   370 230  90  16 font_label BLACK Summoning:
-label_text label_pyromancy   370 250  90  16 font_label BLACK Pyromancy:
-label_text label_evocation   370 270  90  16 font_label BLACK Evocation:
-label_text label_sorcery     370 290  90  16 font_label BLACK Sorcery:
-textgauge res_praying        460 211  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE WHITE font_label Praying:
-textgauge res_summoning      460 231  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE WHITE font_label Summoning:
-textgauge res_pyromancy      460 251  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE WHITE font_label Pyromancy:
-textgauge res_evocation      460 271  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE WHITE font_label Evocation:
-textgauge res_sorcery        460 291  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE WHITE font_label Sorcery:
+gauge     act_praying        369 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_praying WE
+gauge     act_summoning      369 220 166  16 skill_active null skill_inactive ACTIVE_SKILL_summoning WE
+gauge     act_pyromancy      369 240 166  16 skill_active null skill_inactive ACTIVE_SKILL_pyromancy WE
+gauge     act_evocation      369 260 166  16 skill_active null skill_inactive ACTIVE_SKILL_evocation WE
+gauge     act_sorcery        369 280 166  16 skill_active null skill_inactive ACTIVE_SKILL_sorcery WE
+label_text label_praying     370 200  90  16 font_label BLACK Praying:
+label_text label_summoning   370 220  90  16 font_label BLACK Summoning:
+label_text label_pyromancy   370 240  90  16 font_label BLACK Pyromancy:
+label_text label_evocation   370 260  90  16 font_label BLACK Evocation:
+label_text label_sorcery     370 280  90  16 font_label BLACK Sorcery:
+textgauge res_praying        460 201  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_praying WE WHITE font_label Praying:
+textgauge res_summoning      460 221  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_summoning WE WHITE font_label Summoning:
+textgauge res_pyromancy      460 241  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_pyromancy WE WHITE font_label Pyromancy:
+textgauge res_evocation      460 261  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_evocation WE WHITE font_label Evocation:
+textgauge res_sorcery        460 281  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_sorcery WE WHITE font_label Sorcery:
 
 commandlist res_lockpicking_show AND res_lockpicking SHOW
 commandlist res_lockpicking_hide AND res_lockpicking HIDE

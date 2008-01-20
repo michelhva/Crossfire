@@ -1,19 +1,19 @@
 
-dialog border 4 522 586 208 true Messages
+dialog border 4 532 586 198 true Messages
 dialog_hide START META LOGIN
 button button_close 566 4 16 16 close_up close_down false command_messages
 
-log log 4 40 562 200-40-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log log 4 30 562 200-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log 1 #000000
 log_color log 5 #8080ff
 log_color log 7 #00c000
 log_color log 11 #e0c000
 
-button slider_up    586-4-16 40          16 16 slider_up_up slider_up_down true command_messages_up
-scrollbar slider1   586-4-16 56          16 108 true log #c0c0c0 #808080
-button slider_down  586-4-16 200-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down
+button slider_up    586-4-16 30          16 16 slider_up_up slider_up_down true command_messages_up
+scrollbar slider1   586-4-16 46          16 108 true log #c0c0c0 #808080
+button slider_down  586-4-16 190-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down
 
-command_text command 4 200-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1
+command_text command 4 190-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1
 
 commandlist_add command_messages_up log SCROLL -1
 commandlist_add command_messages_down log SCROLL 1

@@ -1,8 +1,8 @@
 
-dialog border 422 250 180 81 false (Un)bind a key
+dialog border 422 250 180 71 false (Un)bind a key
 set_modal
 
-label_multi message 10 40 170 32 font_label BLACK <<EOF
+label_multi message 10 30 170 32 font_label BLACK <<EOF
 Type the key to (un)bind.
 (ESC to abort)
 EOF

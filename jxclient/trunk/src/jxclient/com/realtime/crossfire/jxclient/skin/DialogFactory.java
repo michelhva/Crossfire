@@ -196,7 +196,7 @@ public class DialogFactory
         if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width if wider than W+C+E");
         if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height is taller than N+C+S");
 
-        final int titleHeight = title.length() > 0 ? 30 : 0;
+        final int titleHeight = title.length() > 0 ? 18 : 0;
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
         result.add(new GUIPicture(jxcWindow, name+"_nw", 0, 0, sizeW, sizeN, frameNW, alpha));
         result.add(new GUIPicture(jxcWindow, name+"_n", sizeW, 0, w-sizeW-sizeE, sizeN, frameN, alpha));
