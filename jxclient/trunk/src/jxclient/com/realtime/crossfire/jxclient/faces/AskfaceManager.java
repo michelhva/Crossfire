@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -61,6 +63,11 @@ public class AskfaceManager
     private final Set<Integer> pendingFaces = new HashSet<Integer>();
 
     /**
+     * The same elements as {@link #pendingFaces} in query order.
+     */
+    private final List<Integer> pendingFacesQueue = new LinkedList<Integer>();
+
+    /**
      * The {@link CrossfireUpdateFaceListener} registered to detect updated
      * faces.
      */
@@ -93,6 +100,7 @@ public class AskfaceManager
     {
         pendingAskfaces.clear();
         pendingFaces.clear();
+        pendingFacesQueue.clear();
     }
 
     /**
@@ -104,10 +112,15 @@ public class AskfaceManager
     {
         assert face > 0;
 
-        if (!pendingFaces.add(face))
+        final Integer faceObject = face;
+        if (!pendingFaces.add(faceObject))
         {
+            // move image to front of queue
+            pendingFacesQueue.remove(faceObject);
+            pendingFacesQueue.add(0, faceObject);
             return;
         }
+        pendingFacesQueue.add(0, faceObject);
 
         sendAskface();
     }
@@ -117,7 +130,7 @@ public class AskfaceManager
      */
     private void sendAskface()
     {
-        for (final int face : pendingFaces)
+        for (final int face : pendingFacesQueue)
         {
             if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS)
             {
@@ -139,13 +152,21 @@ public class AskfaceManager
      */
     private void faceReceived(final int face)
     {
-        if (!pendingAskfaces.remove(face))
+        final Integer faceObject = face;
+        if (!pendingAskfaces.remove(faceObject))
         {
             System.err.println("received unexpected image for "+face);
         }
-        else if (!pendingFaces.remove(face))
+        else
         {
-            assert false;
+            if (!pendingFaces.remove(faceObject))
+            {
+                assert false;
+            }
+            if (!pendingFacesQueue.remove(faceObject))
+            {
+                assert false;
+            }
         }
         sendAskface();
     }
