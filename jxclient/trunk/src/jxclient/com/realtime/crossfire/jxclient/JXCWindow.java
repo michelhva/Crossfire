@@ -38,7 +38,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.ServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.Settings;
