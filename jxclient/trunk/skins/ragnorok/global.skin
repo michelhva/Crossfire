@@ -12,7 +12,7 @@ font font_item           regular   8
 font font_metaurl        regular  16
 
 def checkbox checked unchecked font_button BLACK
-def dialog dialog font_title #801010 #e0e0e0 1
+def dialog dialog font_title #801010 1
 def textbutton button_up button_down font_button BLACK
 
 commandlist command_disconnect AND null GUI_META
