@@ -102,7 +102,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void scroll(final int distance)
+    public void scroll(final int distance)
     {
         setIndex(myindex+distance);
         render();

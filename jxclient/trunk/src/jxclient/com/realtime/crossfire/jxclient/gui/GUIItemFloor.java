@@ -114,7 +114,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void scroll(final int distance)
+    public void scroll(final int distance)
     {
         setIndex(index+distance, containerTag, false);
     }
