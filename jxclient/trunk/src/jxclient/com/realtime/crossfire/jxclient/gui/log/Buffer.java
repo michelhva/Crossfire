@@ -89,6 +89,20 @@ public class Buffer implements Iterable<Line>
     }
 
     /**
+     * Clear all lines from the buffer.
+     */
+    public void clear()
+    {
+        final List<Line> removedLines = new ArrayList<Line>(lines);
+        totalHeight = 0;
+        lines.clear();
+        for (final BufferListener listener : listeners)
+        {
+            listener.linesRemoved(this, removedLines);
+        }
+    }
+
+    /**
      * Append a {@link Line} to the end of the buffer.
      *
      * @param line The line to append.

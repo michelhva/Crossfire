@@ -78,6 +78,7 @@ public class GUILabelLog extends GUILog
      */
     public void updateText(final String string)
     {
+        buffer.clear();
         parser.parse(string, defaultColor, buffer);
         scrollTo(0);
     }
