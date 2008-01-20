@@ -1,5 +1,8 @@
 2008-01-20  Andreas Kirschbaum
 
+	* Fix book dialogs: correctly display long text lines and
+	interpret media tags.
+
 	* Display book titles.
 
 	* Fix image cache: re-request changed faces from the server.

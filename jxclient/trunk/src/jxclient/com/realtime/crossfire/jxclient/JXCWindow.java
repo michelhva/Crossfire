@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
@@ -1279,6 +1280,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         if (label != null)
         {
             label.setText(message);
+        }
+        else
+        {
+            final GUILabelLog log = dialog.getFirstLabelLog();
+            if (log != null)
+            {
+                log.updateText(message);
+            }
         }
         jxcWindowRenderer.openDialog(dialog);
     }
