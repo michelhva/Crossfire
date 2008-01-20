@@ -1,46 +1,46 @@
 
-dialog border                262 416  548 166 true Protections
+dialog border                262 416  548 156 true Protections
 dialog_hide START META LOGIN
 button button_close          528 4    16  16 close_up close_down false command_protections
 
-label_text label_phys         10  40  90  16 font_label BLACK Physical:
-label_text label_fire         10  60  90  16 font_label BLACK Fire:
-label_text label_cold         10  80  90  16 font_label BLACK Cold:
-label_text label_elec         10 100  90  16 font_label BLACK Electricity:
-label_text label_acid         10 120  90  16 font_label BLACK Acid:
-label_text label_magic        10 140  90  16 font_label BLACK Magic:
+label_text label_phys         10  30  90  16 font_label BLACK Physical:
+label_text label_fire         10  50  90  16 font_label BLACK Fire:
+label_text label_cold         10  70  90  16 font_label BLACK Cold:
+label_text label_elec         10  90  90  16 font_label BLACK Electricity:
+label_text label_acid         10 110  90  16 font_label BLACK Acid:
+label_text label_magic        10 130  90  16 font_label BLACK Magic:
 
-gauge res_phys               100  41  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE Physical:
-gauge res_fire               100  61  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE Fire:
-gauge res_cold               100  81  74  14 gauge_gp gauge_gp_negative gauge_empty RES_COLD WE Cold:
-gauge res_elec               100 101  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE Electricity:
-gauge res_acid               100 121  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ACID WE Acid:
-gauge res_magic              100 141  74  14 gauge_gp gauge_gp_negative gauge_empty RES_MAG WE Magic:
+gauge res_phys               100  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PHYS WE Physical:
+gauge res_fire               100  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FIRE WE Fire:
+gauge res_cold               100  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_COLD WE Cold:
+gauge res_elec               100  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ELEC WE Electricity:
+gauge res_acid               100 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_ACID WE Acid:
+gauge res_magic              100 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_MAG WE Magic:
 
-label_text label_conf        190  40  90  16 font_label BLACK Confusion:
-label_text label_fear        190  60  90  16 font_label BLACK Fear:
-label_text label_slow        190  80  90  16 font_label BLACK Slow:
-label_text label_para        190 100  90  16 font_label BLACK Paralyzation:
-label_text label_poison      190 120  90  16 font_label BLACK Poison:
-label_text label_blind       190 140  90  16 font_label BLACK Blindness:
+label_text label_conf        190  30  90  16 font_label BLACK Confusion:
+label_text label_fear        190  50  90  16 font_label BLACK Fear:
+label_text label_slow        190  70  90  16 font_label BLACK Slow:
+label_text label_para        190  90  90  16 font_label BLACK Paralyzation:
+label_text label_poison      190 110  90  16 font_label BLACK Poison:
+label_text label_blind       190 130  90  16 font_label BLACK Blindness:
 
-gauge res_conf               280  41  74  14 gauge_gp gauge_gp_negative gauge_empty RES_CONF WE Confusion:
-gauge res_fear               280  61  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FEAR WE Fear:
-gauge res_slow               280  81  74  14 gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE Slow:
-gauge res_para               280 101  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PARA WE Paralyzation:
-gauge res_poison             280 121  74  14 gauge_gp gauge_gp_negative gauge_empty RES_POISON WE Poison:
-gauge res_blind              280 141  74  14 gauge_gp gauge_gp_negative gauge_empty RES_BLIND WE Blindness:
+gauge res_conf               280  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_CONF WE Confusion:
+gauge res_fear               280  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_FEAR WE Fear:
+gauge res_slow               280  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_SLOW WE Slow:
+gauge res_para               280  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_PARA WE Paralyzation:
+gauge res_poison             280 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_POISON WE Poison:
+gauge res_blind              280 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_BLIND WE Blindness:
 
-label_text label_drain       370  40  90  16 font_label BLACK Draining:
-label_text label_deplete     370  60  90  16 font_label BLACK Depletion:
-label_text label_death       370  80  90  16 font_label BLACK Death:
-label_text label_ghosthit    370 100  90  16 font_label BLACK Ghosthit:
-label_text label_turn_undead 370 120  90  16 font_label BLACK Turn undead:
-label_text label_holy_word   370 140  90  16 font_label BLACK Holy word:
+label_text label_drain       370  30  90  16 font_label BLACK Draining:
+label_text label_deplete     370  50  90  16 font_label BLACK Depletion:
+label_text label_death       370  70  90  16 font_label BLACK Death:
+label_text label_ghosthit    370  90  90  16 font_label BLACK Ghosthit:
+label_text label_turn_undead 370 110  90  16 font_label BLACK Turn undead:
+label_text label_holy_word   370 130  90  16 font_label BLACK Holy word:
 
-gauge res_drain              460  41  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE Draining:
-gauge res_deplete            460  61  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE Depletion:
-gauge res_death              460  81  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE Death:
-gauge res_ghosthit           460 101  74  14 gauge_gp gauge_gp_negative gauge_empty RES_GHOSTHIT WE Ghosthit:
-gauge res_turn_undead        460 121  74  14 gauge_gp gauge_gp_negative gauge_empty TURN_UNDEAD WE Turn undead:
-gauge res_holy_word          460 141  74  14 gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE Holy word:
+gauge res_drain              460  31  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DRAIN WE Draining:
+gauge res_deplete            460  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE Depletion:
+gauge res_death              460  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE Death:
+gauge res_ghosthit           460  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_GHOSTHIT WE Ghosthit:
+gauge res_turn_undead        460 111  74  14 gauge_gp gauge_gp_negative gauge_empty TURN_UNDEAD WE Turn undead:
+gauge res_holy_word          460 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE Holy word:

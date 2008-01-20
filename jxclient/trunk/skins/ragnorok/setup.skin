@@ -1,29 +1,29 @@
 
-dialog border                250 250 200 178 false Setup
+dialog border                250 250 200 168 false Setup
 dialog_hide START META LOGIN
 button button_close          180   4  16 16 close_up close_down false command_setup
 
 ## Video group
-#label_text label_video        10  40 180 16 font_title BLACK Video:
-#checkbox checkbox_full_screen 10  60 180 16 fullscreen Full screen
+#label_text label_video        10  30 180 16 font_title BLACK Video:
+#checkbox checkbox_full_screen 10  50 180 16 fullscreen Full screen
 
 ## Key bindings group
-#label_text label_bindings    10  90 180 16 font_title BLACK Key bindings:
-#textbutton setup_bind        10 110 180 18 false command_setup_bind Create new key binding
-#textbutton setup_unbind      10 130 180 18 false command_setup_unbind Delete key binding
-#textbutton setup_restore     10 150 180 18 false command_setup_restore Restore key bidings to defaults
+#label_text label_bindings    10  80 180 16 font_title BLACK Key bindings:
+#textbutton setup_bind        10 100 180 18 false command_setup_bind Create new key binding
+#textbutton setup_unbind      10 120 180 18 false command_setup_unbind Delete key binding
+#textbutton setup_restore     10 140 180 18 false command_setup_restore Restore key bidings to defaults
 
 # Status indicators group
-label_text label_preferences  10  40 180 16 font_title BLACK Status indicators:
-checkbox checkbox_low_food    10  60 180 16 lowfood Low food warning
-checkbox checkbox_poisoned    10  80 180 16 poisoned Poisoned indicator
-checkbox checkbox_hitpoints   10 100 180 16 hitpoints Hitpoint indicator
+label_text label_preferences  10  30 180 16 font_title BLACK Status indicators:
+checkbox checkbox_low_food    10  50 180 16 lowfood Low food warning
+checkbox checkbox_poisoned    10  70 180 16 poisoned Poisoned indicator
+checkbox checkbox_hitpoints   10  90 180 16 hitpoints Hitpoint indicator
 
 # Sound group
-label_text label_sound        10 130 180 16 font_title BLACK Sound:
-checkbox checkbox_sound       10 150 180 16 sound_enabled Enable sound
+label_text label_sound        10 120 180 16 font_title BLACK Sound:
+checkbox checkbox_sound       10 140 180 16 sound_enabled Enable sound
 
 ## Popups group
-#label_text label_popups       10 110 180 16 font_title BLACK Popup windows:
-#checkbox checkbox_login       10 130 180 16 popup_login Login window
-#checkbox checkbox_book        10 150 180 16 popup_book Books
+#label_text label_popups       10 100 180 16 font_title BLACK Popup windows:
+#checkbox checkbox_login       10 120 180 16 popup_login Login window
+#checkbox checkbox_book        10 140 180 16 popup_book Books

@@ -2,7 +2,7 @@
 dialog border 192 184 640 400 false Book
 button button_close 620 4 16 16 close_up close_down false command_book_close
 
-label_html book_text 4 40 632 400-40-4-8-18-8 font_label DARK_GRAY
+label_html book_text 4 30 632 400-30-4-8-18-8 font_label DARK_GRAY
 textbutton book_close 4+8 400-4-8-18 90 18 false command_book_close Close
 
 set_default book_close
