@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
-import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -33,11 +32,9 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
-import java.util.Set;
 
 /**
  * Utility class to store or restore the dialog states to/from a file.

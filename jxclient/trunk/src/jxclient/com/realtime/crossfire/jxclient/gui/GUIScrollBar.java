@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.TimeoutEvent;
-import com.realtime.crossfire.jxclient.Timeouts;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;

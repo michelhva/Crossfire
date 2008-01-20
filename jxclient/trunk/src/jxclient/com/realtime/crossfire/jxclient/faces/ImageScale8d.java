@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
-import java.io.File;
 import javax.swing.ImageIcon;
 
 /**
