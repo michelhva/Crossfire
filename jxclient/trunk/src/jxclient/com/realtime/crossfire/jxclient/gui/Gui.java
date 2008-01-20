@@ -323,6 +323,25 @@ public class Gui
     }
 
     /**
+     * Return the dialog title gui element of this gui.
+     *
+     * @return The title element, or <code>null</code> if this gui does not
+     * contain a title element.
+     */
+    public GUIOneLineLabel getDialogTitle()
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if ((element instanceof GUIOneLineLabel) && element.getName().endsWith("_title"))
+            {
+                return (GUIOneLineLabel)element;
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Return the first {@link AbstractLabel} gui element of this gui.
      *
      * @return The <code>AbstractLabel</code> element, or <code>null</code> if
@@ -332,7 +351,7 @@ public class Gui
     {
         for (final GUIElement element : visibleElements)
         {
-            if (element instanceof AbstractLabel)
+            if ((element instanceof AbstractLabel) && !element.getName().endsWith("_title"))
             {
                 return (AbstractLabel)element;
             }
