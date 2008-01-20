@@ -23,12 +23,6 @@ import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.ScrollableListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.Graphics2D;
@@ -38,10 +32,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Map;
 
 /**
  *
@@ -49,7 +41,7 @@ import java.util.Map;
  * @author Lauwenmark
  * @since 1.0
  */
-public class GUILog extends GUIElement implements GUIScrollable2
+public abstract class GUILog extends GUIElement implements GUIScrollable2
 {
     /**
      * The number of pixels to scroll.
@@ -57,39 +49,14 @@ public class GUILog extends GUIElement implements GUIScrollable2
     public static final int SCROLL_PIXEL = 12;
 
     /**
-     * Maps color index to color.
-     */
-    private final Map<Integer, Color> colors = new HashMap<Integer, Color>();
-    {
-        colors.put(0, Color.BLACK); //black
-        colors.put(1, Color.WHITE); //white
-        colors.put(2, Color.BLUE); //navy blue
-        colors.put(3, Color.RED); //red
-        colors.put(4, Color.ORANGE); //orange
-        colors.put(5, Color.CYAN); //dodger blue
-        colors.put(6, new Color(0xFFC000)); //dark orange
-        colors.put(7, Color.GREEN); //sea green
-        colors.put(8, new Color(0x008000)); //dark sea green
-        colors.put(9, Color.GRAY); //grey
-        colors.put(10, new Color(0x806000)); //brown sienna
-        colors.put(11, Color.YELLOW); //gold
-        colors.put(12, new Color(0xBDB76B)); //khaki
-    }
-
-    /**
      * All listeners.
      */
     private final List<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
 
     /**
-     * The {@link Parser} instance for parsing drawextinfo messages.
-     */
-    private final Parser parser = new Parser();
-
-    /**
      * The {@link Buffer} containing all received text messages.
      */
-    private final Buffer buffer;
+    protected final Buffer buffer;
 
     private final BufferedImage backgroundImage;
 
@@ -99,57 +66,14 @@ public class GUILog extends GUIElement implements GUIScrollable2
     private final Fonts fonts;
 
     /**
-     * The default color to use for text message not specifying a color.
-     */
-    private final Color defaultColor;
-
-    /**
-     * The {@link FontRenderContext} associated to {@link #buffer}.
-     */
-    private FontRenderContext context = null;
-
-    /**
      * The rendering state.
      */
     private final RenderStateManager renderStateManager;
 
     /**
-     * The {@link CrossfireQueryListener} registered to receive query commands.
+     * The {@link FontRenderContext} associated to {@link #buffer}.
      */
-    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
-    {
-        /** {@inheritDoc} */
-        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
-        {
-            parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
-        }
-    };
-
-    /**
-     * The {@link CrossfireDrawextinfoListener} registered to receive
-     * drawextinfo commands.
-     */
-    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
-    {
-        /** {@inheritDoc} */
-        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
-        {
-            parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
-        }
-    };
-
-    /**
-     * The {@link CrossfireDrawinfoListener} registered to receive drawinfo
-     * commands.
-     */
-    private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener()
-    {
-        /** {@inheritDoc} */
-        public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
-        {
-            parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
-        }
-    };
+    private FontRenderContext context = null;
 
     private final RenderStateListener renderStateListener = new RenderStateListener()
     {
@@ -190,24 +114,15 @@ public class GUILog extends GUIElement implements GUIScrollable2
      * unused.
      *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
-     *
-     * @param defaultColor The default color to use for text message not
-     * specifying a color.
-     *
-     * @param The color to replace with <code>defaultColor</code>.
      */
-    public GUILog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUILog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
     {
         super(jxcWindow, name, x, y, w, h);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
-        this.defaultColor = defaultColor;
         createBuffer();
         buffer = new Buffer(fonts, context, w);
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
-        jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
-        jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-        jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
     /** {@inheritDoc} */
@@ -256,31 +171,6 @@ public class GUILog extends GUIElement implements GUIScrollable2
                 g.drawLine(segment.getX(), y+segment.getY()+segment.getUnderlineOffset(), segment.getX()+segment.getWidth()-1, y+segment.getY()+segment.getUnderlineOffset());
             }
         }
-    }
-
-    /**
-     * Convert a Crossfire color index to a {@link Color} instance.
-     *
-     * @param index The color index to look up.
-     *
-     * @return The color.
-     */
-    private Color findColor(final int index)
-    {
-        final Color color = colors.get(index);
-        return color == null ? defaultColor : color;
-    }
-
-    /**
-     * Set a color mapping.
-     *
-     * @param index The color index to change.
-     *
-     * @param color The color to map to.
-     */
-    public void setColor(final int index, final Color color)
-    {
-        colors.put(index, color);
     }
 
     /** {@inheritDoc} */
