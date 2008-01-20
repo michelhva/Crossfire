@@ -87,7 +87,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void scroll(final int distance)
+    public void scroll(final int distance)
     {
         setIndex(myindex+distance);
         render();
