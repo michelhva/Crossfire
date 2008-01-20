@@ -57,7 +57,7 @@ import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
-import com.realtime.crossfire.jxclient.gui.log.GUILog;
+import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
@@ -1083,7 +1083,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontArcane = fonts.lookup(args[10]);
                             final Color defaultColor = parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-                            final GUILog element = new GUILog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
+                            final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_color"))
@@ -1097,11 +1097,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int index = parseInt(args[2]);
                             final Color color = parseColor(args[3]);
                             final GUIElement element = elements.lookup(name);
-                            if (!(element instanceof GUILog))
+                            if (!(element instanceof GUIMessageLog))
                             {
                                     throw new IOException("element '"+name+"' is not of type 'log'");
                             }
-                            ((GUILog)element).setColor(index, color);
+                            ((GUIMessageLog)element).setColor(index, color);
                         }
                         else if (gui != null && args[0].equals("magicmap"))
                         {
