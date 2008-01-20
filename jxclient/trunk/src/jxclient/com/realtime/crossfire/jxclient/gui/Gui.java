@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import java.awt.event.KeyEvent;
@@ -354,6 +355,25 @@ public class Gui
             if ((element instanceof AbstractLabel) && !element.getName().endsWith("_title"))
             {
                 return (AbstractLabel)element;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Return the first {@link GUILabelLog} gui element of this gui.
+     *
+     * @return The <code>GUILabelLog</code> element, or <code>null</code> if
+     * this gui does not contain any <code>GUILabelLog</code> gui elements.
+     */
+    public GUILabelLog getFirstLabelLog()
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if (element instanceof GUILabelLog)
+            {
+                return (GUILabelLog)element;
             }
         }
 

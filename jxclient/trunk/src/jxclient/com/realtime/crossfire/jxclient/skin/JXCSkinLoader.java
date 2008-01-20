@@ -57,6 +57,7 @@ import com.realtime.crossfire.jxclient.gui.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBinding;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
@@ -1063,7 +1064,29 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, font, type);
                             elements.insert(name, element);
                         }
-                        else if (gui != null && args[0].equals("log"))
+                        else if (gui != null && args[0].equals("log_label"))
+                        {
+                            if (args.length != 12)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final BufferedImage pictureEmpty = getPicture(args[6]);
+                            final Font fontPrint = fonts.lookup(args[7]);
+                            final Font fontFixed = fonts.lookup(args[8]);
+                            final Font fontFixedBold = fonts.lookup(args[9]);
+                            final Font fontArcane = fonts.lookup(args[10]);
+                            final Color defaultColor = parseColor(args[11]);
+                            final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
+                            final GUILabelLog element = new GUILabelLog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
+                            elements.insert(name, element);
+                        }
+                        else if (gui != null && args[0].equals("log_message"))
                         {
                             if (args.length != 12)
                             {
