@@ -89,9 +89,6 @@ public class DialogFactory
     /** The color for the dialog title. */
     private final Color titleColor;
 
-    /** The background color of the center area. */
-    private final Color backgroundColor;
-
     /**y
      * The alpha value for the dialog background except for the title.
      */
@@ -122,12 +119,10 @@ public class DialogFactory
      *
      * @param titleColor The color for the dialog title.
      *
-     * @param backgroundColor The background color of the center area.
-     *
      * @param alpha The alpha value for the dialog background except for the
      * title.
      */
-    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color titleColor, final Color backgroundColor, final float alpha)
+    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color titleColor, final float alpha)
     {
         if (frameNW == null) throw new IllegalArgumentException();
         if (frameN == null) throw new IllegalArgumentException();
@@ -140,7 +135,6 @@ public class DialogFactory
         if (frameSE == null) throw new IllegalArgumentException();
         if (titleFont == null) throw new IllegalArgumentException();
         if (titleColor == null) throw new IllegalArgumentException();
-        if (backgroundColor == null) throw new IllegalArgumentException();
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -170,7 +164,6 @@ public class DialogFactory
         if (frameE.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of E does not match height of C");
         this.titleFont = titleFont;
         this.titleColor = titleColor;
-        this.backgroundColor = backgroundColor;
         this.alpha = alpha;
     }
 
