@@ -77,7 +77,7 @@ public class FileCache
         final long len = file.length();
         if (len >= 0x10000 || len <= 0)
         {
-            return  null;
+            return null;
         }
         final byte[] data = new byte[(int)len];
         try
