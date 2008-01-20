@@ -84,7 +84,7 @@ public class Faces
         originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
         scaledEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
         magicMapEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE/8, SQUARE_SIZE/8, Transparency.OPAQUE));
-        faceCache.addFace(new Face(0, "empty", originalEmptyImageIcon, scaledEmptyImageIcon, magicMapEmptyImageIcon));
+        faceCache.addFace(new Face(0, "empty", 0, originalEmptyImageIcon, scaledEmptyImageIcon, magicMapEmptyImageIcon));
     }
 
     /**
@@ -129,13 +129,12 @@ public class Faces
         }
 
         System.err.println("Warning: creating face object for unknown face "+index);
-        final Face newFace = new Face(index, "face#"+index, null, null, null);
+        final Face newFace = new Face(index, "face#"+index, 0, null, null, null);
         faceCache.addFace(newFace);
         return newFace;
     }
 
-    // TODO: implement faceset
-    public static int setImage(final int pixnum, final int faceset, final byte[] packet, final int start, final int pixlen)
+    public static int setImage(final int pixnum, final byte[] packet, final int start, final int pixlen)
     {
         final byte[] data = new byte[pixlen];
         System.arraycopy(packet, start, data, 0, pixlen);
@@ -156,9 +155,9 @@ public class Faces
                 f.setOriginalImageIcon(img);
                 f.setScaledImageIcon(getScaledImageIcon(img));
                 f.setMagicMapImageIcon(getMagicMapImageIcon(img));
-                fileCacheOriginal.save(f.getName(), f.getOriginalImageIcon());
-                fileCacheScaled.save(f.getName(), f.getScaledImageIcon());
-                fileCacheMagicMap.save(f.getName(), f.getMagicMapImageIcon());
+                fileCacheOriginal.save(f.getName(), f.getChecksum(), f.getOriginalImageIcon());
+                fileCacheScaled.save(f.getName(), f.getChecksum(), f.getScaledImageIcon());
+                fileCacheMagicMap.save(f.getName(), f.getChecksum(), f.getMagicMapImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
@@ -216,14 +215,12 @@ public class Faces
         return imd8;
     }
 
-    // TODO: implement faceset
-    // TODO: handle checksum
-    public static void setFace(final int pixnum, final int faceset, final int checksum, final String pixname)
+    public static void setFace(final int pixnum, final int checksum, final String pixname)
     {
-        final ImageIcon originalImageIcon = fileCacheOriginal.load(pixname);
-        final ImageIcon scaledImageIcon = fileCacheScaled.load(pixname);
-        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(pixname);
-        faceCache.addFace(new Face(pixnum, pixname, originalImageIcon, scaledImageIcon, magicMapImageIcon));
+        final ImageIcon originalImageIcon = fileCacheOriginal.load(pixname, checksum);
+        final ImageIcon scaledImageIcon = fileCacheScaled.load(pixname, checksum);
+        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(pixname, checksum);
+        faceCache.addFace(new Face(pixnum, pixname, checksum, originalImageIcon, scaledImageIcon, magicMapImageIcon));
     }
 
     /**

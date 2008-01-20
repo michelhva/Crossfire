@@ -89,7 +89,7 @@ public class ImageScale2x
             final String outFile = srcFile.substring(0, srcFile.length()-4)+"2x.png";
             System.out.println("Writing: "+outFile);
             final FileCache fileCache = new FileCache(new File("cache"));
-            fileCache.save(outFile, out);
+            fileCache.save(outFile, 0, out);
         }
         catch (final Exception e)
         {

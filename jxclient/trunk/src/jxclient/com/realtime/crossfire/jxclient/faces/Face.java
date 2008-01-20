@@ -98,6 +98,11 @@ public class Face
     private String name;
 
     /**
+     * The image checksum as sent by the server.
+     */
+    private int checksum;
+
+    /**
      * Initialize the module.
      *
      * @param originalUnknownImageIcon The face to return if an original image
@@ -138,6 +143,8 @@ public class Face
      *
      * @param name The face name.
      *
+     * @param checksum The image checksum as sent by the server.
+     *
      * @param originalImageIcon The unscaled image as sent by the server; may
      * be <code>null</code> if unknown.
      *
@@ -147,12 +154,13 @@ public class Face
      * @param magicMapImageIcon The image to use for magic map view; may be
      * <code>null</code> if unknown.
      */
-    public Face(final int id, final String name, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
+    public Face(final int id, final String name, final int checksum, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
     {
         if (name == null) throw new IllegalArgumentException();
 
         this.id = id;
         this.name = name;
+        this.checksum = checksum;
         this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
         this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
         this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
@@ -321,6 +329,16 @@ public class Face
         return name;
     }
 
+    /**
+     * Return the image checksum.
+     *
+     * @return The image checksum.
+     */
+    public int getChecksum()
+    {
+        return checksum;
+    }
+
     /** {@inheritDoc} */
     public String toString()
     {
@@ -336,7 +354,7 @@ public class Face
      */
     private ImageIcon loadOriginalImageIcon()
     {
-        final ImageIcon originalImageIcon = fileCacheOriginal.load(name);
+        final ImageIcon originalImageIcon = fileCacheOriginal.load(name, checksum);
         if (originalImageIcon != null)
         {
             this.originalImageIcon = new SoftReference<ImageIcon>(originalImageIcon);
@@ -356,7 +374,7 @@ public class Face
      */
     private ImageIcon loadScaledImageIcon()
     {
-        final ImageIcon scaledImageIcon = fileCacheScaled.load(name);
+        final ImageIcon scaledImageIcon = fileCacheScaled.load(name, checksum);
         if (scaledImageIcon != null)
         {
             this.scaledImageIcon = new SoftReference<ImageIcon>(scaledImageIcon);
@@ -376,7 +394,7 @@ public class Face
      */
     private ImageIcon loadMagicMapImageIcon()
     {
-        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(name);
+        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(name, checksum);
         if (magicMapImageIcon != null)
         {
             this.magicMapImageIcon = new SoftReference<ImageIcon>(magicMapImageIcon);

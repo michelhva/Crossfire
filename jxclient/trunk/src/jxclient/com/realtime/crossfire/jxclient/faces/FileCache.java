@@ -68,12 +68,14 @@ public class FileCache
      *
      * @param name The image name to retrieve.
      *
+     * @param checksum The checksum to retrieve.
+     *
      * @return The image icon, or <code>null</code> if the cache does not
      * contain the image.
      */
-    public ImageIcon load(final String name)
+    public ImageIcon load(final String name, final int checksum)
     {
-        final File file = getImageFileName(name);
+        final File file = getImageFileName(name, checksum);
         final long len = file.length();
         if (len >= 0x10000 || len <= 0)
         {
@@ -108,11 +110,13 @@ public class FileCache
      *
      * @param name The image name to save.
      *
+     * @param checksum The checksum to retrieve.
+     *
      * @param imageIcon The image icon to store.
      */
-    public void save(final String name, final ImageIcon imageIcon)
+    public void save(final String name, final int checksum, final ImageIcon imageIcon)
     {
-        saveImageIcon(getImageFileName(name), imageIcon);
+        saveImageIcon(getImageFileName(name, checksum), imageIcon);
     }
 
     /**
@@ -137,21 +141,24 @@ public class FileCache
     }
 
     /**
-     * Calculate a hashed image name to be used as a file name. The algorithm
-     * matches the one implemented in <code>image_hash_name()</code> in gtk-v2
-     * client.
+     * Calculate a hashed image name to be used as a file name.
      *
      * @param name The image name to hash.
      *
+     * @param checksum The checksum to hash.
+     *
      * @return the hashed image name.
      */
-    private File getImageFileName(final String name)
+    private File getImageFileName(final String name, final int checksum)
     {
-        final String quotedName = quoteName(name)+".base.0"; // TODO: implement faceset
+        final String quotedName = quoteName(name);
         final String dirName = quotedName.substring(0, Math.min(2, quotedName.length()));
-        final File dir = new File(cacheDir, dirName);
-        dir.mkdir();
-        return new File(dir, quotedName);
+        final File dir = new File(new File(cacheDir, dirName), quotedName);
+        if (!dir.exists() && !dir.mkdirs())
+        {
+            System.err.println("Cannot create directory: "+dir);
+        }
+        return new File(dir, Integer.toString(checksum));
     }
 
     /**
