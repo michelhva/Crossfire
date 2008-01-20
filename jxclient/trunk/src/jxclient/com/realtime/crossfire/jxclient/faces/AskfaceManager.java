@@ -92,6 +92,7 @@ public class AskfaceManager
     public void reset()
     {
         pendingAskfaces.clear();
+        pendingFaces.clear();
     }
 
     /**
