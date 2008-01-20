@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
@@ -72,7 +73,33 @@ public class FileCache
      */
     public ImageIcon load(final String name)
     {
-        final ImageIcon imageIcon = new ImageIcon(getImageFileName(name).getPath());
+        final File file = getImageFileName(name);
+        final long len = file.length();
+        if (len >= 0x10000 || len <= 0)
+        {
+            return  null;
+        }
+        final byte[] data = new byte[(int)len];
+        try
+        {
+            final FileInputStream fis = new FileInputStream(file);
+            try
+            {
+                if (fis.read(data) != data.length)
+                {
+                    return null;
+                }
+            }
+            finally
+            {
+                fis.close();
+            }
+        }
+        catch (final IOException ex)
+        {
+            return null;
+        }
+        final ImageIcon imageIcon = new ImageIcon(data); // cannot use ImageIcon(String) since this caches "file not found"
         return imageIcon.getIconWidth() <= 0 && imageIcon.getIconHeight() <= 0 ? null : imageIcon;
     }
 
