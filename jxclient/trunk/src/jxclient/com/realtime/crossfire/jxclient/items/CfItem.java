@@ -79,6 +79,32 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
+    public CfItem(int locaction, int tag, int flags, int weight, Face face, String name, String namePl, int nrof, final int anim, final int animSpeed, int type)
+    {
+        this.location = locaction;
+        this.tag = tag;
+        this.flags = flags;
+        this.weight = weight;
+        this.face = face;
+        this.name = name;
+        this.namePl = namePl;
+        this.nrof = nrof;
+        this.type = type;
+    }
+
+    public CfItem(int location, int tag, int flags, int weight, Face face, String name, String namePl, final int anim, final int animSpeed, int nrof)
+    {
+        this.location = location;
+        this.tag = tag;
+        this.flags = flags;
+        this.weight = weight;
+        this.face = face;
+        this.name = name;
+        this.namePl = namePl;
+        this.nrof = nrof;
+        this.type = -1;
+    }
+
     public void setFlags(int flags)
     {
         if (this.flags != flags)
@@ -213,32 +239,6 @@ public class CfItem
     public int getType()
     {
         return type;
-    }
-
-    public CfItem(int locaction, int tag, int flags, int weight, Face face, String name, String namePl, int nrof, final int anim, final int animSpeed, int type)
-    {
-        this.location = locaction;
-        this.tag = tag;
-        this.flags = flags;
-        this.weight = weight;
-        this.face = face;
-        this.name = name;
-        this.namePl = namePl;
-        this.nrof = nrof;
-        this.type = type;
-    }
-
-    public CfItem(int location, int tag, int flags, int weight, Face face, String name, String namePl, final int anim, final int animSpeed, int nrof)
-    {
-        this.location = location;
-        this.tag = tag;
-        this.flags = flags;
-        this.weight = weight;
-        this.face = face;
-        this.name = name;
-        this.namePl = namePl;
-        this.nrof = nrof;
-        this.type = -1;
     }
 
     public void update(final int updateFlags, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
