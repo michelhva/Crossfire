@@ -79,7 +79,7 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
-    public CfItem(int locaction, int tag, int flags, int weight, Face face, String name, String namePl, int nrof, final int anim, final int animSpeed, int type)
+    public CfItem(final int locaction, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int nrof, final int anim, final int animSpeed, final int type)
     {
         this.location = locaction;
         this.tag = tag;
@@ -92,7 +92,7 @@ public class CfItem
         this.type = type;
     }
 
-    public CfItem(int location, int tag, int flags, int weight, Face face, String name, String namePl, final int anim, final int animSpeed, int nrof)
+    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
     {
         this.location = location;
         this.tag = tag;
@@ -105,7 +105,7 @@ public class CfItem
         this.type = -1;
     }
 
-    public void setFlags(int flags)
+    public void setFlags(final int flags)
     {
         if (this.flags != flags)
         {
@@ -114,7 +114,7 @@ public class CfItem
         }
     }
 
-    public void setWeight(int weight)
+    public void setWeight(final int weight)
     {
         if (this.weight != weight)
         {
@@ -123,7 +123,7 @@ public class CfItem
         }
     }
 
-    public void setFace(Face face)
+    public void setFace(final Face face)
     {
         if (this.face != face)
         {
@@ -132,7 +132,7 @@ public class CfItem
         }
     }
 
-    public void setName(String name, String namePl)
+    public void setName(final String name, final String namePl)
     {
         if (!this.name.equals(name) || !this.namePl.equals(namePl))
         {
@@ -142,7 +142,7 @@ public class CfItem
         }
     }
 
-    public void setNrOf(int nrof)
+    public void setNrOf(final int nrof)
     {
         if (this.nrof != nrof)
         {
