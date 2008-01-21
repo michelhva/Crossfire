@@ -874,14 +874,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 final String namePl = names[names.length >= 2 ? 1 : 0];
                                 pos2 += namelength;
                                 final int anim = dis.readUnsignedShort();
-                                final int animspeed = dis.readUnsignedByte();
+                                final int animSpeed = dis.readUnsignedByte();
                                 final int nrof = dis.readInt();
                                 pos2 += 7;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceid+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animspeed+" nrof="+nrof+"\n");
+                                    debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceid+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
                                 }
-                                final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, nrof);
+                                final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, anim, animSpeed, nrof);
                                 ItemsList.getItemsManager().addItem(item);
                             }
                             ItemsList.getItemsManager().fireEvents();
@@ -915,7 +915,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+face+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
-                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, type));
+                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, anim, animSpeed, nrof, type));
                             }
                             ItemsList.getItemsManager().fireEvents();
                         }

@@ -237,7 +237,7 @@ public class CfItem
         return mytype;
     }
 
-    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof, int type)
+    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof, final int anim, final int animSpeed, int type)
     {
         mylocation = loc;
         mytag = tag;
@@ -252,7 +252,7 @@ public class CfItem
         mytype = type;
     }
 
-    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof)
+    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, final int anim, final int animSpeed, int nrof)
     {
         mylocation = loc;
         mytag = tag;
