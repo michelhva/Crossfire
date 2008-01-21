@@ -31,27 +31,27 @@ import javax.swing.event.EventListenerList;
  */
 public class CfItem
 {
-    private final int mytag;
+    private final int tag;
 
-    private int myflags;
+    private int flags;
 
-    private int myweight;
+    private int weight;
 
-    private Face myface;
+    private Face face;
 
-    private String myname;
+    private String name;
 
-    private String mynamepl;
+    private String namePl;
 
-    private int mynrof;
+    private int nrof;
 
-    private int mylocation;
+    private int location;
 
-    private final int mytype;
+    private final int type;
 
     private boolean applied = false;
 
-    private boolean location = false;
+    private boolean locationFlag = false;
 
     private boolean unpaid = false;
 
@@ -97,49 +97,49 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
-    public void setFlags(int nv)
+    public void setFlags(int flags)
     {
-        if (myflags != nv)
+        if (this.flags != flags)
         {
-            myflags = nv;
+            this.flags = flags;
             computeFlags();
             modified = true;
         }
     }
 
-    public void setWeight(int nv)
+    public void setWeight(int weight)
     {
-        if (myweight != nv)
+        if (this.weight != weight)
         {
-            myweight = nv;
+            this.weight = weight;
             modified = true;
         }
     }
 
-    public void setFace(Face f)
+    public void setFace(Face face)
     {
-        if (myface != f)
+        if (this.face != face)
         {
-            myface = f;
+            this.face = face;
             modified = true;
         }
     }
 
-    public void setName(String n, String npl)
+    public void setName(String name, String namePl)
     {
-        if (!myname.equals(n) || !npl.equals(npl))
+        if (!this.name.equals(name) || !this.namePl.equals(namePl))
         {
-            myname = n;
-            mynamepl = npl;
+            this.name = name;
+            this.namePl = namePl;
             modified = true;
         }
     }
 
-    public void setNrOf(int nv)
+    public void setNrOf(int nrof)
     {
-        if (mynrof != nv)
+        if (this.nrof != nrof)
         {
-            mynrof = nv;
+            this.nrof = nrof;
             modified = true;
         }
     }
@@ -151,35 +151,35 @@ public class CfItem
      */
     public void setLocation(final int location)
     {
-        mylocation = location;
+        this.location = location;
     }
 
     public int getTag()
     {
-        return mytag;
+        return tag;
     }
 
     public int getWeight()
     {
-        return myweight;
+        return weight;
     }
 
     public Face getFace()
     {
-        return myface;
+        return face;
     }
 
     public String getName()
     {
-        if (mynrof > 1)
-            return mynamepl;
+        if (nrof > 1)
+            return namePl;
         else
-            return myname;
+            return name;
     }
 
     public int getNrOf()
     {
-        return mynrof;
+        return nrof;
     }
 
     public boolean isApplied()
@@ -189,7 +189,7 @@ public class CfItem
 
     public boolean isLocation()
     {
-        return location;
+        return locationFlag;
     }
 
     public boolean isUnpaid()
@@ -229,42 +229,42 @@ public class CfItem
 
     public int getLocation()
     {
-        return mylocation;
+        return location;
     }
 
     public int getType()
     {
-        return mytype;
+        return type;
     }
 
-    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, int nrof, final int anim, final int animSpeed, int type)
+    public CfItem(int locaction, int tag, int flags, int weight, Face face, String name, String namePl, int nrof, final int anim, final int animSpeed, int type)
     {
-        mylocation = loc;
-        mytag = tag;
-        myflags = flags;
+        this.location = locaction;
+        this.tag = tag;
+        this.flags = flags;
         computeFlags();
 
-        myweight = weight;
-        myface = face;
-        myname = name;
-        mynrof = nrof;
-        mynamepl = namepl;
-        mytype = type;
+        this.weight = weight;
+        this.face = face;
+        this.name = name;
+        this.nrof = nrof;
+        this.namePl = namePl;
+        this.type = type;
     }
 
-    public CfItem(int loc, int tag, int flags, int weight, Face face, String name, String namepl, final int anim, final int animSpeed, int nrof)
+    public CfItem(int location, int tag, int flags, int weight, Face face, String name, String namePl, final int anim, final int animSpeed, int nrof)
     {
-        mylocation = loc;
-        mytag = tag;
-        myflags = flags;
+        this.location = location;
+        this.tag = tag;
+        this.flags = flags;
         computeFlags();
 
-        myweight = weight;
-        myface = face;
-        myname = name;
-        mynrof = nrof;
-        mynamepl = namepl;
-        mytype = -1;
+        this.weight = weight;
+        this.face = face;
+        this.name = name;
+        this.nrof = nrof;
+        this.namePl = namePl;
+        this.type = -1;
     }
 
     public void update(final int updateFlags, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
@@ -339,18 +339,18 @@ public class CfItem
     }
 
     /**
-     * Expand the flags bitmask {@link #myflags} into separate boolean values.
+     * Expand the flags bitmask {@link #flags} into separate boolean values.
      */
     private void computeFlags()
     {
-        applied = (myflags & CfItem.F_APPLIED) != 0;
-        location = (myflags & CfItem.F_LOCATION) != 0;
-        unpaid = (myflags & CfItem.F_UNPAID) != 0;
-        magic = (myflags & CfItem.F_MAGIC) != 0;
-        cursed = (myflags & CfItem.F_CURSED) != 0;
-        damned = (myflags & CfItem.F_DAMNED) != 0;
-        open = (myflags & CfItem.F_OPEN) != 0;
-        nopick = (myflags & CfItem.F_NOPICK) != 0;
-        locked = (myflags & CfItem.F_LOCKED) != 0;
+        applied = (flags & CfItem.F_APPLIED) != 0;
+        locationFlag = (flags & CfItem.F_LOCATION) != 0;
+        unpaid = (flags & CfItem.F_UNPAID) != 0;
+        magic = (flags & CfItem.F_MAGIC) != 0;
+        cursed = (flags & CfItem.F_CURSED) != 0;
+        damned = (flags & CfItem.F_DAMNED) != 0;
+        open = (flags & CfItem.F_OPEN) != 0;
+        nopick = (flags & CfItem.F_NOPICK) != 0;
+        locked = (flags & CfItem.F_LOCKED) != 0;
     }
 }
