@@ -49,24 +49,6 @@ public class CfItem
 
     private final int type;
 
-    private boolean applied = false;
-
-    private boolean locationFlag = false;
-
-    private boolean unpaid = false;
-
-    private boolean magic = false;
-
-    private boolean cursed = false;
-
-    private boolean damned = false;
-
-    private boolean open = false;
-
-    private boolean nopick = false;
-
-    private boolean locked = false;
-
     /**
      * Set if any attribute has changed since the last time listeners were
      * notified.
@@ -102,7 +84,6 @@ public class CfItem
         if (this.flags != flags)
         {
             this.flags = flags;
-            computeFlags();
             modified = true;
         }
     }
@@ -171,10 +152,7 @@ public class CfItem
 
     public String getName()
     {
-        if (nrof > 1)
-            return namePl;
-        else
-            return name;
+        return nrof > 1 ? namePl : name;
     }
 
     public int getNrOf()
@@ -184,47 +162,47 @@ public class CfItem
 
     public boolean isApplied()
     {
-        return applied;
+        return (flags&CfItem.F_APPLIED) != 0;
     }
 
     public boolean isLocation()
     {
-        return locationFlag;
+        return (flags&CfItem.F_LOCATION) != 0;
     }
 
     public boolean isUnpaid()
     {
-        return unpaid;
+        return (flags&CfItem.F_UNPAID) != 0;
     }
 
     public boolean isMagic()
     {
-        return magic;
+        return (flags&CfItem.F_MAGIC) != 0;
     }
 
     public boolean isCursed()
     {
-        return cursed;
+        return (flags&CfItem.F_CURSED) != 0;
     }
 
     public boolean isDamned()
     {
-        return damned;
+        return (flags&CfItem.F_DAMNED) != 0;
     }
 
     public boolean isOpen()
     {
-        return open;
+        return (flags&CfItem.F_OPEN) != 0;
     }
 
     public boolean isNoPick()
     {
-        return nopick;
+        return (flags&CfItem.F_NOPICK) != 0;
     }
 
     public boolean isLocked()
     {
-        return locked;
+        return (flags&CfItem.F_LOCKED) != 0;
     }
 
     public int getLocation()
@@ -242,13 +220,11 @@ public class CfItem
         this.location = locaction;
         this.tag = tag;
         this.flags = flags;
-        computeFlags();
-
         this.weight = weight;
         this.face = face;
         this.name = name;
-        this.nrof = nrof;
         this.namePl = namePl;
+        this.nrof = nrof;
         this.type = type;
     }
 
@@ -257,13 +233,11 @@ public class CfItem
         this.location = location;
         this.tag = tag;
         this.flags = flags;
-        computeFlags();
-
         this.weight = weight;
         this.face = face;
         this.name = name;
-        this.nrof = nrof;
         this.namePl = namePl;
+        this.nrof = nrof;
         this.type = -1;
     }
 
@@ -336,21 +310,5 @@ public class CfItem
     public void removeCfItemModifiedListener(final CfItemModifiedListener listener)
     {
         listeners.remove(CfItemModifiedListener.class, listener);
-    }
-
-    /**
-     * Expand the flags bitmask {@link #flags} into separate boolean values.
-     */
-    private void computeFlags()
-    {
-        applied = (flags & CfItem.F_APPLIED) != 0;
-        locationFlag = (flags & CfItem.F_LOCATION) != 0;
-        unpaid = (flags & CfItem.F_UNPAID) != 0;
-        magic = (flags & CfItem.F_MAGIC) != 0;
-        cursed = (flags & CfItem.F_CURSED) != 0;
-        damned = (flags & CfItem.F_DAMNED) != 0;
-        open = (flags & CfItem.F_OPEN) != 0;
-        nopick = (flags & CfItem.F_NOPICK) != 0;
-        locked = (flags & CfItem.F_LOCKED) != 0;
     }
 }
