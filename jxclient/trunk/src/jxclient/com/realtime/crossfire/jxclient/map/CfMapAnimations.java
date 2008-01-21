@@ -177,13 +177,13 @@ public class CfMapAnimations
         for (final Map.Entry<Location, AnimationState> e : tmp.entrySet())
         {
             final Location location = e.getKey();
-            if (0 <= location.x && location.x < width && 0 <= location.y && location.y < height) // out-of-map bounds animations are dropped not scrolled
+            if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) // out-of-map bounds animations are dropped not scrolled
             {
-                final int newX = location.x-dx;
-                final int newY = location.y-dy;
+                final int newX = location.getX()-dx;
+                final int newY = location.getY()-dy;
                 if (0 <= newX && newX < width && 0 <= newY && newY < height) // in-map bounds animations are dropped if scrolled off the visible area
                 {
-                    animations.put(new Location(newX, newY, location.layer), e.getValue());
+                    animations.put(new Location(newX, newY, location.getLayer()), e.getValue());
                 }
             }
         }
@@ -215,176 +215,5 @@ public class CfMapAnimations
             animationState.updateTickno(tickno, location);
         }
         CfMapUpdater.processMapEnd(false);
-    }
-
-    /**
-     * A location on the map.
-     */
-    private static class Location
-    {
-        /**
-         * The x-coordinate.
-         */
-        private final int x;
-
-        /**
-         * The y-coordinate.
-         */
-        private final int y;
-
-        /**
-         * The layer.
-         */
-        private final int layer;
-
-        /**
-         * Create a new location.
-         *
-         * @param x The x-coordinate.
-         *
-         * @param y The y-coordinate.
-         *
-         * @param layer The layer.
-         */
-        public Location(final int x, final int y, final int layer)
-        {
-            this.x = x;
-            this.y = y;
-            this.layer = layer;
-        }
-
-        /** {@inheritDoc} */
-        public boolean equals(final Object obj)
-        {
-            if (obj == null) return false;
-            if (obj.getClass() != Location.class) return false;
-            final Location loc = (Location) obj;
-            return loc.x == x && loc.y == y && loc.layer == layer;
-        }
-
-        /** {@inheritDoc} */
-        public int hashCode()
-        {
-            return x^y*0x1000^layer*0x1000000;
-        }
-
-        /** {@inheritDoc} */
-        public String toString()
-        {
-            return x+"/"+y+"/"+layer;
-        }
-    }
-
-    /**
-     * Animation state information.
-     */
-    private static class AnimationState
-    {
-        /**
-         * The animation to display.
-         */
-        private final Animation animation;
-
-        /**
-         * The animation type.
-         */
-        private final int type;
-
-        /**
-         * The animation speed.
-         */
-        private int speed = 1;
-
-        /**
-         * The face was updated last in this tick number.
-         */
-        private int tickno = 0;
-
-        /**
-         * The face index currently shown.
-         */
-        private int index = 0;
-
-        /**
-         * Create a new instance.
-         *
-         * @param animation The animation to display.
-         *
-         * @param type The animation type.
-         */
-        public AnimationState(final Animation animation, final int type)
-        {
-            this.animation = animation;
-            this.type = type;
-        }
-
-        /**
-         * Set the animation speed.
-         *
-         * @param speed The new animation speed to set.
-         */
-        public void setSpeed(final int speed)
-        {
-            assert speed > 0;
-            final int tmpIndex = this.index/this.speed;
-            final int tmpDelay = Math.min(this.index%this.speed, speed-1);
-            this.speed = speed;
-            this.index = tmpIndex*speed+tmpDelay;
-        }
-
-        /**
-         * Set the tick number. This function does not update the displayed
-         * face.
-         *
-         * @param tickno The current tick number.
-         */
-        public void setTickno(final int tickno)
-        {
-            this.tickno = tickno;
-        }
-
-        /**
-         * Set the tick number and update affected faces.
-         *
-         * @param tickno The tick number.
-         *
-         * @param location The location to update.
-         */
-        public void updateTickno(final int tickno, final Location location)
-        {
-            final int oldFaceIndex = index/speed;
-            final int diff = tickno-this.tickno;
-            if (tickno < this.tickno)
-            {
-                System.err.println("Ignoring inconsistent tick value: current tick number is "+tickno+", previous tick number was "+this.tickno+".");
-            }
-            else
-            {
-                index = (index+diff)%(speed*animation.getFaces());
-            }
-            this.tickno = tickno;
-
-            draw(location, oldFaceIndex);
-        }
-
-        /**
-         * Update the map face at the given location.
-         *
-         * @param location The map location to update.
-         *
-         * @param oldFaceIndex Suppress the map face update if the new face
-         * index equals this value.
-         */
-        public void draw(final Location location, final int oldFaceIndex)
-        {
-            final int faceIndex = index/speed;
-            if (faceIndex == oldFaceIndex)
-            {
-                return;
-            }
-
-            final int face = animation.getFace(faceIndex);
-            CfMapUpdater.processMapFace(location.x, location.y, location.layer, face);
-        }
     }
 }
