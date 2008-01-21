@@ -26,6 +26,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MessageTypes;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
@@ -74,6 +76,11 @@ public class MessageBufferUpdater
     private final Color defaultColor;
 
     /**
+     * The types to show.
+     */
+    private int types = ~0;
+
+    /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
@@ -81,7 +88,10 @@ public class MessageBufferUpdater
         /** {@inheritDoc} */
         public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
         {
-            parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
+            if (isTypeShown(MessageTypes.MSG_TYPE_QUERY))
+            {
+                parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
+            }
         }
     };
 
@@ -94,7 +104,11 @@ public class MessageBufferUpdater
         /** {@inheritDoc} */
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
-            parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
+            if (evt.getType() == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
+            || isTypeShown(evt.getType()))
+            {
+                parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
+            }
         }
     };
 
@@ -107,7 +121,10 @@ public class MessageBufferUpdater
         /** {@inheritDoc} */
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
-            parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
+            if (isTypeShown(MessageTypes.MSG_TYPE_MISC))
+            {
+                parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
+            }
         }
     };
 
@@ -153,5 +170,27 @@ public class MessageBufferUpdater
     public void setColor(final int index, final Color color)
     {
         colors.put(index, color);
+    }
+
+    /**
+     * Set the message types to show.
+     *
+     * @param types The types to show.
+     */
+    public void setTypes(final int types)
+    {
+        this.types = types;
+    }
+
+    /**
+     * Return whether a message type should be shown.
+     *
+     * @param type The message type.
+     *
+     * @return Whether the message type should be shown.
+     */
+    private boolean isTypeShown(final int type)
+    {
+        return type < 0 || type > 31 || (types&(1<<type)) != 0;
     }
 }

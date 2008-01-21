@@ -39,6 +39,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -1224,7 +1225,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         final Gui dialog;
         switch (evt.getType())
         {
-        case CrossfireServerConnection.MSG_TYPE_BOOK:
+        case MessageTypes.MSG_TYPE_BOOK:
             dialog = myskin.getDialogBook(1);
             final GUIOneLineLabel title = dialog.getDialogTitle();
             if (title != null)
@@ -1235,15 +1236,15 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             break;
 
-        case CrossfireServerConnection.MSG_TYPE_CARD:
-        case CrossfireServerConnection.MSG_TYPE_PAPER:
-        case CrossfireServerConnection.MSG_TYPE_SIGN:
-        case CrossfireServerConnection.MSG_TYPE_MONUMENT:
-        case CrossfireServerConnection.MSG_TYPE_DIALOG:
+        case MessageTypes.MSG_TYPE_CARD:
+        case MessageTypes.MSG_TYPE_PAPER:
+        case MessageTypes.MSG_TYPE_SIGN:
+        case MessageTypes.MSG_TYPE_MONUMENT:
+        case MessageTypes.MSG_TYPE_DIALOG:
             dialog = null;
             break;
 
-        case CrossfireServerConnection.MSG_TYPE_MOTD:
+        case MessageTypes.MSG_TYPE_MOTD:
             /*
              * We do not display a MOTD dialog, because it interferes with the
              * query dialog that gets displayed just after it.
@@ -1251,18 +1252,18 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             dialog = null;
             break;
 
-        case CrossfireServerConnection.MSG_TYPE_ADMIN:
-        case CrossfireServerConnection.MSG_TYPE_SHOP:
-        case CrossfireServerConnection.MSG_TYPE_COMMAND:
-        case CrossfireServerConnection.MSG_TYPE_ATTRIBUTE:
-        case CrossfireServerConnection.MSG_TYPE_SKILL:
-        case CrossfireServerConnection.MSG_TYPE_APPLY:
-        case CrossfireServerConnection.MSG_TYPE_ATTACK:
-        case CrossfireServerConnection.MSG_TYPE_COMMUNICATION:
-        case CrossfireServerConnection.MSG_TYPE_SPELL:
-        case CrossfireServerConnection.MSG_TYPE_ITEM:
-        case CrossfireServerConnection.MSG_TYPE_MISC:
-        case CrossfireServerConnection.MSG_TYPE_VICTIM:
+        case MessageTypes.MSG_TYPE_ADMIN:
+        case MessageTypes.MSG_TYPE_SHOP:
+        case MessageTypes.MSG_TYPE_COMMAND:
+        case MessageTypes.MSG_TYPE_ATTRIBUTE:
+        case MessageTypes.MSG_TYPE_SKILL:
+        case MessageTypes.MSG_TYPE_APPLY:
+        case MessageTypes.MSG_TYPE_ATTACK:
+        case MessageTypes.MSG_TYPE_COMMUNICATION:
+        case MessageTypes.MSG_TYPE_SPELL:
+        case MessageTypes.MSG_TYPE_ITEM:
+        case MessageTypes.MSG_TYPE_MISC:
+        case MessageTypes.MSG_TYPE_VICTIM:
             dialog = null;
             break;
 

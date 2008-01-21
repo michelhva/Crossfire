@@ -77,4 +77,14 @@ public class GUIMessageLog extends GUILog
     {
         messageBufferUpdater.setColor(index, color);
     }
+
+    /**
+     * Set the message types to show.
+     *
+     * @param types The types to show.
+     */
+    public void setTypes(final int types)
+    {
+        messageBufferUpdater.setTypes(types);
+    }
 }
