@@ -31,6 +31,6 @@ public class CfPlayer extends CfItem
 {
     public CfPlayer(final int tag, final int weight, final Face face, final String name)
     {
-        super(0, tag, 0, weight, face, name, name, 0, 0, 1);
+        super(0, tag, 0, weight, face, name, name, 1, 0, 0);
     }
 }
