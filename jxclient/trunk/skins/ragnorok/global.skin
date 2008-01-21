@@ -54,8 +54,16 @@ commandlist command_ground_right AND
 commandlist command_inventory_up OR
 commandlist command_inventory_down OR
 
-commandlist command_messages_up AND
-commandlist command_messages_down AND
+commandlist command_messages_up_all AND
+commandlist command_messages_up_msg AND
+commandlist command_messages_up_chat AND
+commandlist command_messages_down_all AND
+commandlist command_messages_down_msg AND
+commandlist command_messages_down_chat AND
+
+commandlist command_message_show_all AND
+commandlist command_message_show_msg AND
+commandlist command_message_show_chat AND
 
 event magicmap command_map_open
 

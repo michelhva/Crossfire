@@ -71,6 +71,8 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
@@ -1124,6 +1126,51 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("element '"+name+"' is not of type 'log'");
                             }
                             ((GUIMessageLog)element).setColor(index, color);
+                        }
+                        else if (gui != null && args[0].equals("log_filter"))
+                        {
+                            if (args.length < 4)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final String type = args[2];
+                            final boolean add;
+                            if (type.equals("only"))
+                            {
+                                add = true;
+                            }
+                            else if (type.equals("not"))
+                            {
+                                add = false;
+                            }
+                            else
+                            {
+                                throw new IOException("type '"+type+"' is invalid");
+                            }
+                            int types = 0;
+                            for (int i = 3; i < args.length; i++)
+                            {
+                                try
+                                {
+                                    types |= 1<<MessageTypes.parseMessageType(args[i]);
+                                }
+                                catch (final UnknownCommandException ex)
+                                {
+                                    throw new IOException("undefined message type '"+args[i]+"'");
+                                }
+                            }
+                            if (!add)
+                            {
+                                types = ~types;
+                            }
+                            final GUIElement element = elements.lookup(name);
+                            if (!(element instanceof GUIMessageLog))
+                            {
+                                throw new IOException("element '"+name+"' is not of type 'log'");
+                            }
+                            ((GUIMessageLog)element).setTypes(types);
                         }
                         else if (gui != null && args[0].equals("magicmap"))
                         {

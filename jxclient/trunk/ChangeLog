@@ -1,3 +1,9 @@
+2008-01-21  Andreas Kirschbaum
+
+	* ragnorok: Add tabs ("All", "Important", "Chat") to message
+	dialog. All contains all messages, Important omits combat related
+	messages, Chat includes communication only.
+
 2008-01-20  Andreas Kirschbaum
 
 	* Fix book dialogs: correctly display long text lines and
