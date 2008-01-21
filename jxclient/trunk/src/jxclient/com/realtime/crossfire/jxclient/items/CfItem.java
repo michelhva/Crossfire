@@ -92,7 +92,7 @@ public class CfItem
         this.type = type;
     }
 
-    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
+    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int nrof, final int anim, final int animSpeed)
     {
         this.location = location;
         this.tag = tag;
