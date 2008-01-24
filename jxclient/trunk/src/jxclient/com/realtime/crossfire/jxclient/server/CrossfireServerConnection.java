@@ -829,7 +829,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceid+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
                                 }
-                                final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, nrof, anim, animSpeed);
+                                final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, anim, animSpeed, nrof);
                                 ItemsList.getItemsManager().addItem(item);
                             }
                             ItemsList.getItemsManager().fireEvents();
@@ -863,7 +863,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+face+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
-                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, nrof, anim, animSpeed, type));
+                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, anim, animSpeed, nrof, type));
                             }
                             ItemsList.getItemsManager().fireEvents();
                         }

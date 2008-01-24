@@ -43,6 +43,10 @@ public class CfItem
 
     private String namePl;
 
+    private int anim;
+
+    private int animSpeed;
+
     private int nrof;
 
     private int location;
@@ -79,7 +83,7 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
-    public CfItem(final int locaction, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int nrof, final int anim, final int animSpeed, final int type)
+    public CfItem(final int locaction, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
     {
         this.location = locaction;
         this.tag = tag;
@@ -88,11 +92,13 @@ public class CfItem
         this.face = face;
         this.name = name;
         this.namePl = namePl;
+        this.anim = anim;
+        this.animSpeed = animSpeed;
         this.nrof = nrof;
         this.type = type;
     }
 
-    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int nrof, final int anim, final int animSpeed)
+    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
     {
         this.location = location;
         this.tag = tag;
@@ -101,6 +107,8 @@ public class CfItem
         this.face = face;
         this.name = name;
         this.namePl = namePl;
+        this.anim = anim;
+        this.animSpeed = animSpeed;
         this.nrof = nrof;
         this.type = -1;
     }
@@ -138,6 +146,24 @@ public class CfItem
         {
             this.name = name;
             this.namePl = namePl;
+            modified = true;
+        }
+    }
+
+    public void setAnim(final int anim)
+    {
+        if (this.anim != anim)
+        {
+            this.anim = anim;
+            modified = true;
+        }
+    }
+
+    public void setAnimSpeed(final int anim)
+    {
+        if (this.animSpeed != animSpeed)
+        {
+            this.animSpeed = animSpeed;
             modified = true;
         }
     }
@@ -261,11 +287,11 @@ public class CfItem
         }
         if ((updateFlags&UPD_ANIM) != 0)
         {
-            //Unused for now
+            setAnim(anim);
         }
         if ((updateFlags&UPD_ANIMSPEED) != 0)
         {
-            //Unused for now
+            setAnimSpeed(animSpeed);
         }
         if ((updateFlags&UPD_NROF) != 0)
         {
