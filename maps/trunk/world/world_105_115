@@ -12865,6 +12865,7 @@ y 15
 elevation 10750
 end
 arch mountain_cave2
+name Goblin Den
 slaying /!
 msg
 layoutstyle maze
@@ -12882,7 +12883,6 @@ endmsg
 x 33
 y 15
 elevation 10852
-is_floor 0
 end
 arch mountain
 x 33
