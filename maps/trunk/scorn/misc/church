@@ -401,21 +401,7 @@ arch generate_zombie
 x 3
 y 13
 end
-arch hole
-slaying /!
-msg
-layoutstyle onion
-floorstyle lightdirt
-wallstyle dungeon2
-exitstyle sstair
-decorstyle creepy
-monsterstyle undead
-symmetry 4
-dungeon_level 1
-dungeon_depth 5
-orientation 1
-final_map /scorn/peterm/undead_quest
-endmsg
+arch grass_only
 x 3
 y 14
 end
@@ -509,6 +495,30 @@ end
 arch zombie
 x 4
 y 13
+end
+arch check_inv
+slaying Noble Rank Baronet
+x 4
+y 14
+move_block walk fly_low
+end
+arch hole
+slaying /!
+msg
+layoutstyle onion
+floorstyle lightdirt
+wallstyle dungeon2
+exitstyle sstair
+decorstyle creepy
+monsterstyle undead
+symmetry 4
+dungeon_level 1
+dungeon_depth 5
+orientation 1
+final_map /scorn/peterm/undead_quest
+endmsg
+x 4
+y 14
 end
 arch tree
 x 4
