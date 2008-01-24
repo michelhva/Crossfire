@@ -8,13 +8,13 @@ textbutton button_msg   40 5 76 18 false command_message_show_msg Important
 textbutton button_chat 119 5 43 18 false command_message_show_chat Chat
 
 # "all" tab
-log_message log_all 4 30 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_all 4 25 562 190-25-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_all 1 #000000
 log_color log_all 5 #8080ff
 log_color log_all 7 #00c000
 log_color log_all 11 #e0c000
-button slider_all_up    586-4-16 30          16 16 slider_up_up slider_up_down true command_messages_up_all
-scrollbar slider_all    586-4-16 46          16 108 true log_all #c0c0c0 #808080
+button slider_all_up    586-4-16 25          16 16 slider_up_up slider_up_down true command_messages_up_all
+scrollbar slider_all    586-4-16 41          16 113 true log_all #c0c0c0 #808080
 button slider_all_down  586-4-16 190-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down_all
 commandlist_add command_messages_up_all log_all SCROLL -1
 commandlist_add command_messages_down_all log_all SCROLL 1
