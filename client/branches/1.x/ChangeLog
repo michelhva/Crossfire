@@ -2,6 +2,18 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Spelling corrections.
+gtk/gcfclient.man
+help/bugreport.h
+help/chelp.h
+NOTES
+README
+gnome/gnome-cfclient.man
+TODO
+INSTALL
+x11/cfclient.man
+Kevin Bulgrien 2008-01-24
+
 gtk-v2/src/keys.c: Fix for [ 1875657 ] Bogus keybinding too long errors. Made
   more truncation messages consistent, and fixed an inconsistently formatted
   LOG message. Fixed case and shortened message when keybinds are saved.
