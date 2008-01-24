@@ -1,9 +1,8 @@
 '''
-Script for the ghost in Witherspoon manor (south-west of Scorn).
+This script is part of the Witherspoon quest, that starts in /scorn/mansion/witherspoon_manor_attic.
+Check the README file in the same directory as this file for more details.
 
-Associated script is tomb.py which should be in the same directory.
-
-Both scripts are linked, so if you change something make sure to change both scripts!
+Script for the ghost in Witherspoon manor (south-east of Scorn).
 '''
 
 import random
@@ -30,13 +29,20 @@ def check_body(player, rule):
 	
 	return False
 
+def start_disappear(ghost, player):
+	'''ghost should disappear, called for 2 endings.'''
+	ghost.WriteKey(key_disappear, '1', 1)
+	ghost.CreateTimer(5, 1)
+	ghost.StandStill = True
+	player.Write('The %s starts fading...'%ghost.Name)
+	
 def found_body(player, rule):
 	'''Does the player have the body?'''
 	if player.ReadKey('witherspoon_tomb') != 'dig':
 		return False
 	
 	player.WriteKey('witherspoon_tomb', '', 1)
-	#reset our dialog anyway - the player did dig, so quest ends (for now)
+	#reset our dialog anyway - the player did dig, so quest ends (nicely or badly)
 	player.WriteKey('dialog_witherspoon_ghost', '', 1)
 	
 	#try to find the body, if not found then get angry
@@ -47,10 +53,7 @@ def found_body(player, rule):
 	if body:
 		#all fine!
 		body.Remove()
-		ghost.WriteKey(key_disappear, '1', 1)
-		ghost.CreateTimer(5, 1)
-		ghost.StandStill = True
-		player.Write('The %s starts fading...'%ghost.Name)
+		start_disappearing(ghost, player)
 		return 1
 	
 	#oh oh, bad, ghost is getting angry!
@@ -72,6 +75,25 @@ def do_dialog():
 	'''Main dialog routine.'''
 	if not can_talk(None, None):
 		return
+	
+	whoami = Crossfire.WhoAmI()
+	pl = Crossfire.WhoIsActivator()
+	if pl.ReadKey('witherspoon_know_all') == '1':
+		# player found the real story, through Rolanda.
+		whoami.Say('Oh...')
+		whoami.Map.Print('The %s manages to blush.'%whoami.Name)
+		whoami.Say('Now I remember. I\'m so stupid. Poor Rolanda, will she ever forgive me...')
+		whoami.Say('Well, I guess I can go now. Many thanks for your help!')
+		whoami.WriteKey('bonus', '1', 1)
+		start_disappear(whoami, pl)
+		return
+	
+	if pl.ReadKey('witherspoon_know_dagger') == '1':
+		# player talked to the priest of Devourers, and knows the dagger is special.
+		whoami.Say('Oh, please find who could be as cruel as to use such a horrible spell on me!')
+		return
+	
+	# default dialog, just talk
 	
 	# If you ever change this key, change the value in tomb.py too!
 	speech = Dialog(Crossfire.WhoIsActivator(), Crossfire.WhoAmI(), "witherspoon_ghost")
@@ -138,9 +160,13 @@ def do_disappear():
 	
 	ghost.Say('Thanks a lot! Please take those small presents as a token of my gratitude.')
 	
+	bonus = 0
+	if ghost.ReadKey('bonus') == '1':
+		bonus = 25
+	
 	presents = ['gem', 'ruby', 'emerald', 'pearl', 'sapphire']
 	got = ghost.Map.CreateObject(presents[random.randint(0, len(presents) - 1)], ghost.X, ghost.Y)
-	got.Quantity = random.randint(3, 7)
+	got.Quantity = random.randint(3 + bonus, 7 + bonus)
 	
 	ghost.Remove()
 

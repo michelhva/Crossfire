@@ -7,6 +7,7 @@ height 16
 msg
 Created:  1997-04-16 David Sundqvist (azzie@tellutec.se)
 Altar to level 120 20050527 (cvstry2)
+Modified: 2008-01-03 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -275,15 +276,26 @@ arch blackmarble
 x 2
 y 10
 end
-arch sage
-msg
-@match devourers|Devourers
-They will suck your soul out!
-@match *
-Welcome to the temple of Devourers.
-endmsg
+arch dave
+name priest of Devourers
 x 2
 y 10
+speed 0.05
+unaggressive 1
+sleep 0
+random_movement 1
+arch event_time
+title Python
+slaying /python/maps/witherspoon_manor/devourers.py
+end
+arch event_timer
+title Python
+slaying /python/maps/witherspoon_manor/devourers.py
+end
+arch event_user
+title Python
+slaying /python/maps/witherspoon_manor/devourers.py
+end
 end
 arch blackmarble
 x 2
