@@ -27,8 +27,8 @@ Install Steps:
     compiled it (Note: only the gcfclient supports sdl). Use --disable-sdl
     if you don't want this.
 
-    The system will use the new sound system if available (this is a seperate
-    sound daemon).  If you want to use the builtin sound system, use
+    The system will use the new sound system if available (this is a separate
+    sound daemon).  If you want to use the built-in sound system, use
     the --enable-old-sound.  See sound notes further down.
 
     To specify additional places to find header files, use the
@@ -162,7 +162,7 @@ can include the entire image set.
 
 To decrease bandwidth used when actually playing the sounds, it is suggested
 you download the image archive and install it.  The default location
-for the archive is <prefix>/share/cfclient/, where <prefix> is deteremined
+for the archive is <prefix>/share/cfclient/, where <prefix> is determined
 by the -prefix= option given when running configure.
 
 The mechanism the client uses to find a matching image file when the

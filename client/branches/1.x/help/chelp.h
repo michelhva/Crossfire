@@ -40,7 +40,7 @@ bind -e shout  (\")\n\
 #define HELP_UNBIND_LONG "Syntax:\n\
  unbind [-g] [#]\n\
  unbind reset\n\
-Without -g command uses user's bindind,\n\
+Without -g the user's binding is used,\n\
 with -g global binding.\n\
 Without number it displays current bindings,\n\
 with # it unbinds it.\n\
@@ -51,7 +51,7 @@ with # it unbinds it.\n\
  magicmap\n\
 Displays last shown magic map."
 
-#define HELP_SAVEDEFAULTS_SHORT "save various defaults into ~/.crossfire/defaults"
+#define HELP_SAVEDEFAULTS_SHORT "save various defaults into ~/.crossfire"
 #define HELP_SAVEDEFAULTS_LONG "Syntax:\n\
  savedefaults\n\
 Saves configuration."
