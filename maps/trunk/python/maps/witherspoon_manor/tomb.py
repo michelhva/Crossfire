@@ -1,11 +1,10 @@
 '''
-Script for the ghost in Witherspoon manor (south-west of Scorn).
+This script is part of the Witherspoon quest, that starts in /scorn/mansion/witherspoon_manor_attic.
+Check the README file in the same directory as this file for more details.
+
+Script for the tomb near the lake west of Scorn.
 
 This script is called when the player steps on the correct spot where the body is buried.
-
-Associated script is ghost.py which should be in the same directory.
-
-Both scripts are linked, so if you change something make sure to change both scripts!
 '''
 
 import Crossfire
@@ -53,10 +52,20 @@ def main():
 	#don't want the player to dig again! Will be reset by the ghost later on
 	pl.WriteKey('witherspoon_tomb', 'dig', 1)
 	
-	body = pl.CreateObject('corpse')
+	body = Crossfire.CreateObjectByName('corpse') # so it doesn't merge with another item
+	body.WriteKey('special_item', 'ghost_body', 1)
 	body.Name = 'tortured body'
 	body.NamePl = 'tortured bodies'
+	body.Message = 'You suppose this is the body of the ghost in Witherspoon Manor. It is covered in scars, as if someone really wanted to make him pay for something.'
+	body.InsertInto(pl)
 	
-	pl.Write('You find a body!')
+	dagger = Crossfire.CreateObjectByName('dagger')
+	dagger.WriteKey('special_item', 'ghost_dagger', 1)
+	dagger.Name = 'strange dagger'
+	dagger.NamePl = 'strange daggers'
+	dagger.Message = 'You found this dagger with the body of the Witherspoon Manor ghost. It has some weird look. You wonder if a marchant could figure what the symbols mean.'
+	dagger.InsertInto(pl)
+	
+	pl.Write('You find a body with a dagger in it!')
 
 main()

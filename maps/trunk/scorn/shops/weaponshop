@@ -10,6 +10,7 @@ height 16
 enter_y 14
 msg
 Created:  1993-10-15
+Modified: 2008-01-03 Nicolas Weeger
 endmsg
 end
 arch shop_empty
@@ -503,6 +504,27 @@ end
 arch shop_empty
 x 5
 y 6
+end
+arch fighter
+name Shop owner
+x 5
+y 6
+speed 0.05
+sleep 0
+no_damage 1
+random_movement 1
+arch event_user
+title Python
+slaying /python/maps/witherspoon_manor/weapon_shop.py
+end
+arch event_time
+title Python
+slaying /python/maps/witherspoon_manor/weapon_shop.py
+end
+arch event_timer
+title Python
+slaying /python/maps/witherspoon_manor/weapon_shop.py
+end
 end
 arch shop_empty
 x 5

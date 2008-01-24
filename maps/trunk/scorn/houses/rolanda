@@ -1,0 +1,620 @@
+arch map
+name Rolanda's house
+width 10
+height 10
+msg
+Created:  2008-01-24 Nicolas Weeger
+Modified: 2008-01-24 Nicolas Weeger
+endmsg
+end
+arch marble
+end
+arch woodwall_2_2_2
+end
+arch marble
+y 1
+end
+arch woodwall_2_1_1
+y 1
+end
+arch marble
+y 2
+end
+arch woodwall_2_1_1
+y 2
+end
+arch marble
+y 3
+end
+arch woodwall_win1
+y 3
+end
+arch marble
+y 4
+end
+arch woodwall_2_1_1
+y 4
+end
+arch marble
+y 5
+end
+arch woodwall_3_2
+y 5
+end
+arch marble
+y 6
+end
+arch woodwall_2_1_1
+y 6
+end
+arch marble
+y 7
+end
+arch woodwall_2_1_1
+y 7
+end
+arch marble
+y 8
+end
+arch woodwall_2_1_1
+y 8
+end
+arch marble
+y 9
+end
+arch woodwall_2_2_1
+y 9
+end
+arch marble
+x 1
+end
+arch woodwall_2_1_2
+x 1
+end
+arch bluemarblemedium
+x 1
+y 1
+end
+arch bluemarblemedium
+x 1
+y 2
+end
+arch bluemarblemedium
+x 1
+y 3
+end
+arch bluemarblemedium
+x 1
+y 4
+end
+arch marble
+x 1
+y 5
+end
+arch woodwall_2_1_2
+x 1
+y 5
+end
+arch lightgreenmarble
+x 1
+y 6
+end
+arch lightgreenmarble
+x 1
+y 7
+end
+arch lightgreenmarble
+x 1
+y 8
+end
+arch cauldron
+x 1
+y 8
+container 0
+is_cauldron 0
+end
+arch marble
+x 1
+y 9
+end
+arch woodwall_2_1_2
+x 1
+y 9
+end
+arch marble
+x 2
+end
+arch woodwall_2_1_2
+x 2
+end
+arch bluemarblemedium
+x 2
+y 1
+end
+arch bluemarblemedium
+x 2
+y 2
+end
+arch bluemarblemedium
+x 2
+y 3
+end
+arch bluemarblemedium
+x 2
+y 4
+end
+arch marble
+x 2
+y 5
+end
+arch woodwall_2_1_2
+x 2
+y 5
+end
+arch lightgreenmarble
+x 2
+y 6
+end
+arch chair_1.1
+x 2
+y 6
+end
+arch lightgreenmarble
+x 2
+y 7
+end
+arch lightgreenmarble
+x 2
+y 8
+end
+arch marble
+x 2
+y 9
+end
+arch woodwall_2_1_2
+x 2
+y 9
+end
+arch marble
+x 3
+end
+arch woodwall_2_1_2
+x 3
+end
+arch bluemarblemedium
+x 3
+y 1
+end
+arch bluemarblemedium
+x 3
+y 2
+end
+arch bluemarblemedium
+x 3
+y 3
+end
+arch bluemarblemedium
+x 3
+y 4
+end
+arch marble
+x 3
+y 5
+end
+arch woodwall_2_2_3
+x 3
+y 5
+end
+arch marble
+x 3
+y 6
+end
+arch woodwall_1_2
+x 3
+y 6
+end
+arch lightgreenmarble
+x 3
+y 7
+end
+arch door_1
+x 3
+y 7
+move_block 0
+end
+arch marble
+x 3
+y 8
+end
+arch woodwall_1_1
+x 3
+y 8
+end
+arch marble
+x 3
+y 9
+end
+arch woodwall_2_2_4
+x 3
+y 9
+end
+arch marble
+x 4
+end
+arch woodwall_2_1_2
+x 4
+end
+arch bluemarblemedium
+x 4
+y 1
+end
+arch bluemarblemedium
+x 4
+y 2
+end
+arch bluemarblemedium
+x 4
+y 3
+end
+arch bluemarblemedium
+x 4
+y 4
+end
+arch bluemarblemedium
+x 4
+y 5
+end
+arch lightgreenmarble
+x 4
+y 6
+end
+arch lightgreenmarble
+x 4
+y 7
+end
+arch marble
+x 4
+y 8
+end
+arch exit
+slaying /world/world_105_116
+hp 7
+sp 4
+x 4
+y 9
+end
+arch marble
+x 4
+y 9
+end
+arch door_look_1
+x 4
+y 9
+move_block 0
+end
+arch marble
+x 5
+end
+arch woodwall_win2
+x 5
+end
+arch bluemarblemedium
+x 5
+y 1
+end
+arch bluemarblemedium
+x 5
+y 2
+end
+arch bluemarblemedium
+x 5
+y 3
+end
+arch woman2
+name Rolanda
+x 5
+y 3
+speed -0.05
+random_movement 1
+arch event_user
+title Python
+slaying /python/maps/witherspoon_manor/rolanda.py
+end
+arch event_timer
+title Python
+slaying /python/maps/witherspoon_manor/rolanda.py
+end
+arch event_time
+title Python
+slaying /python/maps/witherspoon_manor/rolanda.py
+end
+arch event_say
+title Python
+slaying /python/maps/witherspoon_manor/rolanda.py
+end
+end
+arch bluemarblemedium
+x 5
+y 4
+end
+arch bluemarblemedium
+x 5
+y 5
+end
+arch lightgreenmarble
+x 5
+y 6
+end
+arch lightgreenmarble
+x 5
+y 7
+end
+arch marble
+x 5
+y 8
+end
+arch exit
+slaying /world/world_105_116
+hp 7
+sp 4
+x 5
+y 9
+end
+arch marble
+x 5
+y 9
+end
+arch door_look_1
+x 5
+y 9
+move_block 0
+end
+arch marble
+x 6
+end
+arch woodwall_2_1_2
+x 6
+end
+arch bluemarblemedium
+x 6
+y 1
+end
+arch bluemarblemedium
+x 6
+y 2
+end
+arch bluemarblemedium
+x 6
+y 3
+end
+arch bluemarblemedium
+x 6
+y 4
+end
+arch marble
+x 6
+y 5
+end
+arch woodwall_2_2_2
+x 6
+y 5
+end
+arch marble
+x 6
+y 6
+end
+arch woodwall_1_2
+x 6
+y 6
+end
+arch lightgreenmarble
+x 6
+y 7
+end
+arch door_1
+x 6
+y 7
+move_block 0
+end
+arch marble
+x 6
+y 8
+end
+arch woodwall_1_1
+x 6
+y 8
+end
+arch marble
+x 6
+y 9
+end
+arch woodwall_2_2_1
+x 6
+y 9
+end
+arch marble
+x 7
+end
+arch woodwall_2_1_2
+x 7
+end
+arch bluemarblemedium
+x 7
+y 1
+end
+arch bluemarblemedium
+x 7
+y 2
+end
+arch bluemarblemedium
+x 7
+y 3
+end
+arch bluemarblemedium
+x 7
+y 4
+end
+arch marble
+x 7
+y 5
+end
+arch woodwall_2_1_2
+x 7
+y 5
+end
+arch lightgreenmarble
+x 7
+y 6
+end
+arch lightgreenmarble
+x 7
+y 7
+end
+arch lightgreenmarble
+x 7
+y 8
+end
+arch marble
+x 7
+y 9
+end
+arch woodwall_2_1_2
+x 7
+y 9
+end
+arch marble
+x 8
+end
+arch woodwall_2_1_2
+x 8
+end
+arch bluemarblemedium
+x 8
+y 1
+end
+arch bluemarblemedium
+x 8
+y 2
+end
+arch bluemarblemedium
+x 8
+y 3
+end
+arch bluemarblemedium
+x 8
+y 4
+end
+arch marble
+x 8
+y 5
+end
+arch woodwall_2_1_2
+x 8
+y 5
+end
+arch lightgreenmarble
+x 8
+y 6
+end
+arch lightgreenmarble
+x 8
+y 7
+end
+arch table_3
+x 8
+y 7
+end
+arch lightgreenmarble
+x 8
+y 8
+end
+arch chair_1.3
+x 8
+y 8
+end
+arch marble
+x 8
+y 9
+end
+arch woodwall_2_1_2
+x 8
+y 9
+end
+arch marble
+x 9
+end
+arch woodwall_2_2_3
+x 9
+end
+arch marble
+x 9
+y 1
+end
+arch woodwall_2_1_1
+x 9
+y 1
+end
+arch marble
+x 9
+y 2
+end
+arch woodwall_win1
+x 9
+y 2
+end
+arch marble
+x 9
+y 3
+end
+arch woodwall_2_1_1
+x 9
+y 3
+end
+arch marble
+x 9
+y 4
+end
+arch woodwall_2_1_1
+x 9
+y 4
+end
+arch marble
+x 9
+y 5
+end
+arch woodwall_3_4
+x 9
+y 5
+end
+arch marble
+x 9
+y 6
+end
+arch woodwall_2_1_1
+x 9
+y 6
+end
+arch marble
+x 9
+y 7
+end
+arch woodwall_2_1_1
+x 9
+y 7
+end
+arch marble
+x 9
+y 8
+end
+arch woodwall_2_1_1
+x 9
+y 8
+end
+arch marble
+x 9
+y 9
+end
+arch woodwall_2_2_4
+x 9
+y 9
+end
