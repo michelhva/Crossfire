@@ -1,6 +1,8 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+gtk-v2/src/gtk2proto.h, gtk-v2/src/metaserver.c, gtk-v2/src/main.c: Remove
+  unused return value for get_metaserver().  From trunk revision 7117.
 gtk-v2/src/map.c: Spelling correction.
 gtk-v2/src/info.c: Change error message when the client gets a message with a
   [] text format tag that is not valid to make it more obvious what is wrong.

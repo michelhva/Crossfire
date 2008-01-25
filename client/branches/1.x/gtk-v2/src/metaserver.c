@@ -60,7 +60,7 @@ gboolean metaserver_selection_func (
     return TRUE;
 }
 
-char *get_metaserver()
+get_metaserver()
 {
     static int has_init=0;
     GtkTreeIter iter;
@@ -212,7 +212,6 @@ char *get_metaserver()
 
     gtk_widget_hide(metaserver_window);
     enable_menu_items(TRUE);
-    return cpl.input_text;
 }
 
 
