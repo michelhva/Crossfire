@@ -1,6 +1,19 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+Bring in relevant changes from trunk revision 7108.
+  Added to svn:ignore: config.log Makefile autom4te.cache
+Bring in relevant changes from trunk revision 7104.
+  macros/curses.m4, macros/gnome-print-check.m4, macros/linger.m4,
+  macros/sdl.m4, macros/gtk.m4, macros/gnome-gettext.m4,
+  macros/need-declaration.m4: m4 file updates were made to fix a configure
+    script crash and to remove aclocal warnings.
+  pixmaps/Makefile.in, Makefile.in, gtk/Makefile.in, common/Makefile.in,
+  help/Makefile.in, utils/Makefile.in, x11/Makefile.in, gtk-v2/Makefile.in,
+  gtk-v2/src/Makefile.in, sound-src/Makefile.in, aclocal.m4 : Result from
+    new and updated m4 files.
+  autogen.sh: Point aclocal at macros so that undefined macros do not crash
+    ./configure.
 gtk-v2/src/gtk2proto.h, gtk-v2/src/metaserver.c, gtk-v2/src/main.c: Remove
   unused return value for get_metaserver().  From trunk revision 7117.
 gtk-v2/src/map.c: Spelling correction.
