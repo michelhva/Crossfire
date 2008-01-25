@@ -396,7 +396,7 @@ static void display_mapcell(int ax, int ay, int mx, int my)
 	} /* else for processing the layers */
     }
 
-    /* If this is a fog cell, do darknening of the space.
+    /* If this is a fog cell, do darkening of the space.
      * otherwise, process light/darkness - only do those if not a
      * fog cell.
      */
