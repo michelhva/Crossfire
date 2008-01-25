@@ -159,6 +159,7 @@ if eval "test x$cfgtk2 = xyes" ; then
             AC_MSG_NOTICE(GTK+ 2 found - building original gtk-v1 client with GTK+ 2.0.0)
 else
             AC_MSG_WARN(GTK2 not found and --enable-cfgtk2 is set - cannot original gtk-v1 client)
+            gtkv1="no"
 fi
     else
         AM_PATH_GTK(1.0.0,CFGTK="yes",CFGTK="no")
@@ -172,6 +173,7 @@ if eval "test x$CFGTK = xyes"; then
 	dnl AC_DEFINE(GTK_CLIENT, 1, [Define if the GTK client is built.])
 else
             AC_MSG_WARN(GTK 1 not found - not building building gtk-v1 client)
+            gtkv1=no
         fi
     fi
 else
@@ -188,6 +190,7 @@ if eval "test x$gtkv2 = xyes" ; then
       AC_MSG_NOTICE(GTK+ 2 found - will build gtk-v2 client)
     else
       AC_MSG_WARN(GTK+ 2 libraries not found - will not build gtk-v2 client)
+      gtkv2="no"
 fi
 else
     AC_MSG_NOTICE(gtkv2 client disabled)
@@ -226,7 +229,7 @@ AC_CHECK_LIB(GL, main)
 AC_CHECK_LIB(GLU, main)
 AC_CHECK_LIB(opengl32, main)
 AC_CHECK_LIB(glu32, main)
-AC_CHECK_LIB(glut, main, [opengl="yes"; AC_DEFINE(HAVE_OPENGL, 1, [Define if you have OpenGL.])])
+AC_CHECK_LIB(glut, main, [opengl="yes"; AC_DEFINE(HAVE_OPENGL, 1, [Define if you have OpenGL.])], [opengl="no"])
 if eval "test x$opengl = xyes" ; then
     if eval "test x$win32 = xyes" ; then
         OPENGL_LIBS="-lopengl32 -lglu32 -lglut"
@@ -308,6 +311,7 @@ if eval "test x$sound = xyes"; then
 	      SOUND_SRC="sound-src";
   	  else
   	      echo "No suitable sound system found."
+              sound="no"
           fi
         fi
       fi
@@ -340,12 +344,17 @@ if eval "test x$no_sdl = x"; then
      AC_CHECK_LIB( SDL_image, IMG_LoadPNG_RW, 
                    have_sdlimage="yes", have_sdlimage="no", $SDL_CFLAGS $SDL_LIBS) 
      if eval "test x$have_sdlimage = xyes"; then
+         echo  "sdl image detected!"
          SDL_LIBS="$SDL_LIBS -lSDL_image"
+     else
+         no_sdl="yes"
      fi
  fi
 
   if eval "test x$no_sdl = x"; then
           AC_DEFINE(HAVE_SDL, 1, [Define if you have SDL])
+  else
+      use_sdl="no"
   fi
 fi
 
@@ -502,3 +511,43 @@ AC_OUTPUT([
 	Makefile gtk/Makefile x11/Makefile common/Makefile 
 	sound-src/Makefile gtk-v2/Makefile pixmaps/Makefile
 	gtk-v2/src/Makefile  help/Makefile utils/Makefile ] )
+
+AC_MSG_NOTICE([])
+AC_MSG_NOTICE([Configuration summary....])
+AC_MSG_NOTICE([])
+AC_MSG_NOTICE([  Paths])
+AC_MSG_NOTICE([    prefix default value                 ${prefix}])
+AC_MSG_NOTICE([    exec_prefix default value            ${exec_prefix}])
+AC_MSG_NOTICE([    Will put executables in              $bindir])
+AC_MSG_NOTICE([    Will put config in                   $sysconfdir])
+AC_MSG_NOTICE([])
+AC_MSG_NOTICE([  Build options])
+if eval "test x$cfgtk2 = xyes" ; then
+  gtk1_2_ext="(with gtk2 extensions)"
+else
+  gtk1_2_ext=""
+fi
+AC_MSG_NOTICE([    Will build GTK1 client?              $gtkv1 $gtk1_2_ext])
+AC_MSG_NOTICE([    Will build GTK2 client?              $gtkv2])
+AC_MSG_NOTICE([    Will build OpenGL renderer?          $opengl])
+AC_MSG_NOTICE([    Will build SDL renderer?             $use_sdl])
+sound_system=""
+if eval "test x$sound = xyes"; then
+  if eval "test x$alsa9_sound = xyes"; then
+    sound_system="$sound_system (Alsa 0.9.x)"
+  fi
+  if eval "test x$alsa_sound = xyes"; then
+    sound_system="$sound_system (Alsa)"
+  fi
+  if eval "test x$sgi_sound = xyes"; then
+    sound_system="$sound_system (SGI)"
+  fi
+  if eval "test x$oss_sound = xyes"; then
+    sound_system="$sound_system (OSS)"
+  fi
+  if eval "test x$sun_sound = xyes"; then
+    sound_system="$sound_system (Solaris)"
+  fi
+fi
+AC_MSG_NOTICE([    Will build sound server?             $sound $sound_system])
+

@@ -1,6 +1,9 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+aclocal.m4, configure, configure.in:  From trunk, move tchize' fix for
+  [ 1832377 ] configure script should check for SDL_image.h. Also added
+  configure summary lines at the end.  Rebuild using autogen.sh
 common/client.c: Move down from trunk mwedel's "If servername is (null), don't
   both trying to connect - this happens when the NULL value is saved out on
   some systems.
