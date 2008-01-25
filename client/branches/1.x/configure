@@ -3678,7 +3678,7 @@ ac_x_header_dirs='
 /usr/openwin/share/include'
 
 if test "$ac_x_includes" = no; then
-  # Guess where to find include files, by looking for Xlib.h.
+  # Guess where to find include files, by looking for Intrinsic.h.
   # First, try using that file with no special directory specified.
   cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
@@ -3686,7 +3686,7 @@ _ACEOF
 cat confdefs.h >>conftest.$ac_ext
 cat >>conftest.$ac_ext <<_ACEOF
 /* end confdefs.h.  */
-#include <X11/Xlib.h>
+#include <X11/Intrinsic.h>
 _ACEOF
 if { (eval echo "$as_me:$LINENO: \"$ac_cpp conftest.$ac_ext\"") >&5
   (eval $ac_cpp conftest.$ac_ext) 2>conftest.er1
@@ -3713,7 +3713,7 @@ else
 sed 's/^/| /' conftest.$ac_ext >&5
 
   for ac_dir in $ac_x_header_dirs; do
-  if test -r "$ac_dir/X11/Xlib.h"; then
+  if test -r "$ac_dir/X11/Intrinsic.h"; then
     ac_x_includes=$ac_dir
     break
   fi
@@ -3727,18 +3727,18 @@ if test "$ac_x_libraries" = no; then
   # See if we find them without any special options.
   # Don't add to $LIBS permanently.
   ac_save_LIBS=$LIBS
-  LIBS="-lX11 $LIBS"
+  LIBS="-lXt $LIBS"
   cat >conftest.$ac_ext <<_ACEOF
 /* confdefs.h.  */
 _ACEOF
 cat confdefs.h >>conftest.$ac_ext
 cat >>conftest.$ac_ext <<_ACEOF
 /* end confdefs.h.  */
-#include <X11/Xlib.h>
+#include <X11/Intrinsic.h>
 int
 main ()
 {
-XrmInitialize ()
+XtMalloc (0)
   ;
   return 0;
 }
@@ -6381,9 +6381,7 @@ fi
 	# Put the nasty error message in config.log where it belongs
 	echo "$GTK2_PKG_ERRORS" >&5
 
-	echo "$as_me:$LINENO: result: no" >&5
-echo "${ECHO_T}no" >&6
-                HAVE_GTK2=no
+	HAVE_GTK2=no
 elif test $pkg_failed = untried; then
 	HAVE_GTK2=no
 else
@@ -6403,6 +6401,7 @@ echo "$as_me: GTK+ 2 found - building original gtk-v1 client with GTK+ 2.0.0" >&
 else
             { echo "$as_me:$LINENO: WARNING: GTK2 not found and --enable-cfgtk2 is set - cannot original gtk-v1 client" >&5
 echo "$as_me: WARNING: GTK2 not found and --enable-cfgtk2 is set - cannot original gtk-v1 client" >&2;}
+            gtkv1="no"
 fi
     else
 
@@ -6730,6 +6729,7 @@ echo "$as_me: GTK 1 found - building gtk client" >&6;}
 	else
             { echo "$as_me:$LINENO: WARNING: GTK 1 not found - not building building gtk-v1 client" >&5
 echo "$as_me: WARNING: GTK 1 not found - not building building gtk-v1 client" >&2;}
+            gtkv1=no
         fi
     fi
 else
@@ -6798,9 +6798,7 @@ fi
 	# Put the nasty error message in config.log where it belongs
 	echo "$GTK2_PKG_ERRORS" >&5
 
-	echo "$as_me:$LINENO: result: no" >&5
-echo "${ECHO_T}no" >&6
-                gtkv2="no"
+	gtkv2="no"
 elif test $pkg_failed = untried; then
 	gtkv2="no"
 else
@@ -6816,6 +6814,7 @@ echo "$as_me: GTK+ 2 found - will build gtk-v2 client" >&6;}
     else
       { echo "$as_me:$LINENO: WARNING: GTK+ 2 libraries not found - will not build gtk-v2 client" >&5
 echo "$as_me: WARNING: GTK+ 2 libraries not found - will not build gtk-v2 client" >&2;}
+      gtkv2="no"
 fi
 else
     { echo "$as_me:$LINENO: gtkv2 client disabled" >&5
@@ -7262,6 +7261,8 @@ cat >>confdefs.h <<\_ACEOF
 #define HAVE_OPENGL 1
 _ACEOF
 
+else
+  opengl="no"
 fi
 
 if eval "test x$opengl = xyes" ; then
@@ -8635,6 +8636,7 @@ fi
 	      SOUND_SRC="sound-src";
   	  else
   	      echo "No suitable sound system found."
+              sound="no"
           fi
         fi
       fi
@@ -9026,7 +9028,10 @@ else
 fi
 
      if eval "test x$have_sdlimage = xyes"; then
+         echo  "sdl image detected!"
          SDL_LIBS="$SDL_LIBS -lSDL_image"
+     else
+         no_sdl="yes"
      fi
  fi
 
@@ -9036,6 +9041,8 @@ cat >>confdefs.h <<\_ACEOF
 #define HAVE_SDL 1
 _ACEOF
 
+  else
+      use_sdl="no"
   fi
 fi
 
@@ -13442,4 +13449,59 @@ if test "$no_create" != yes; then
   # would make configure fail if this is the last instruction.
   $ac_cs_success || { (exit 1); exit 1; }
 fi
+
+
+{ echo "$as_me:$LINENO: " >&5
+echo "$as_me: " >&6;}
+{ echo "$as_me:$LINENO: Configuration summary...." >&5
+echo "$as_me: Configuration summary...." >&6;}
+{ echo "$as_me:$LINENO: " >&5
+echo "$as_me: " >&6;}
+{ echo "$as_me:$LINENO:   Paths" >&5
+echo "$as_me:   Paths" >&6;}
+{ echo "$as_me:$LINENO:     prefix default value                 ${prefix}" >&5
+echo "$as_me:     prefix default value                 ${prefix}" >&6;}
+{ echo "$as_me:$LINENO:     exec_prefix default value            ${exec_prefix}" >&5
+echo "$as_me:     exec_prefix default value            ${exec_prefix}" >&6;}
+{ echo "$as_me:$LINENO:     Will put executables in              $bindir" >&5
+echo "$as_me:     Will put executables in              $bindir" >&6;}
+{ echo "$as_me:$LINENO:     Will put config in                   $sysconfdir" >&5
+echo "$as_me:     Will put config in                   $sysconfdir" >&6;}
+{ echo "$as_me:$LINENO: " >&5
+echo "$as_me: " >&6;}
+{ echo "$as_me:$LINENO:   Build options" >&5
+echo "$as_me:   Build options" >&6;}
+if eval "test x$cfgtk2 = xyes" ; then
+  gtk1_2_ext="(with gtk2 extensions)"
+else
+  gtk1_2_ext=""
+fi
+{ echo "$as_me:$LINENO:     Will build GTK1 client?              $gtkv1 $gtk1_2_ext" >&5
+echo "$as_me:     Will build GTK1 client?              $gtkv1 $gtk1_2_ext" >&6;}
+{ echo "$as_me:$LINENO:     Will build GTK2 client?              $gtkv2" >&5
+echo "$as_me:     Will build GTK2 client?              $gtkv2" >&6;}
+{ echo "$as_me:$LINENO:     Will build OpenGL renderer?          $opengl" >&5
+echo "$as_me:     Will build OpenGL renderer?          $opengl" >&6;}
+{ echo "$as_me:$LINENO:     Will build SDL renderer?             $use_sdl" >&5
+echo "$as_me:     Will build SDL renderer?             $use_sdl" >&6;}
+sound_system=""
+if eval "test x$sound = xyes"; then
+  if eval "test x$alsa9_sound = xyes"; then
+    sound_system="$sound_system (Alsa 0.9.x)"
+  fi
+  if eval "test x$alsa_sound = xyes"; then
+    sound_system="$sound_system (Alsa)"
+  fi
+  if eval "test x$sgi_sound = xyes"; then
+    sound_system="$sound_system (SGI)"
+  fi
+  if eval "test x$oss_sound = xyes"; then
+    sound_system="$sound_system (OSS)"
+  fi
+  if eval "test x$sun_sound = xyes"; then
+    sound_system="$sound_system (Solaris)"
+  fi
+fi
+{ echo "$as_me:$LINENO:     Will build sound server?             $sound $sound_system" >&5
+echo "$as_me:     Will build sound server?             $sound $sound_system" >&6;}
 
