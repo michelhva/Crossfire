@@ -1,6 +1,11 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+gtk-v2/src/info.c: Change error message when the client gets a message with a
+  [] text format tag that is not valid to make it more obvious what is wrong.
+  This can help determine the error faster if the server inadvertently sends
+  the client a message with displayed text that has square brackets around it.
+  Brought down from trunk revision 7289.
 aclocal.m4, configure, configure.in:  From trunk, move tchize' fix for
   [ 1832377 ] configure script should check for SDL_image.h. Also added
   configure summary lines at the end.  Rebuild using autogen.sh
