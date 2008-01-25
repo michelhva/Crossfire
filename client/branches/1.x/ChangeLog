@@ -2,6 +2,12 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+gtk-v2/src/keys.c: Move down from trunk the bugfixes for keybinding and for
+  exiting the login prompt with the escape key.  Some formatting done to break
+  long lines now matches trunk codebase, but not a general reformat.  Rework
+  some LOG() messages for consistency by changing "gtk::" to "keys.c:".
+Kevin Bulgrien 2008-01-24
+
 Spelling corrections.
 gtk/gcfclient.man
 help/bugreport.h
