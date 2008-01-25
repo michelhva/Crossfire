@@ -1,7 +1,9 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
-
+common/client.c: Move down from trunk mwedel's "If servername is (null), don't
+  both trying to connect - this happens when the NULL value is saved out on
+  some systems.
 gtk-v2/src/keys.c: Move down from trunk the bugfixes for keybinding and for
   exiting the login prompt with the escape key.  Some formatting done to break
   long lines now matches trunk codebase, but not a general reformat.  Rework
