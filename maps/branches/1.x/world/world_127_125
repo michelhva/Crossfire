@@ -8,6 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-27
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_127_124
@@ -3100,7 +3101,7 @@ arch sea
 x 12
 y 27
 elevation -2699
-no_pass 0
+move_block 0
 end
 arch sea
 x 12
@@ -3350,13 +3351,13 @@ arch sea
 x 13
 y 27
 elevation -2692
-no_pass 0
+move_block 0
 end
 arch sea
 x 13
 y 28
 elevation -2575
-no_pass 0
+move_block 0
 end
 arch pier_1_1
 x 13
@@ -3366,7 +3367,7 @@ arch sea
 x 13
 y 29
 elevation -1696
-no_pass 0
+move_block 0
 end
 arch pier_2_1_1
 x 13
@@ -3650,10 +3651,14 @@ x 14
 y 34
 elevation 1249
 end
-arch evergreen
+arch grass_only
 x 14
 y 35
 elevation 1158
+end
+arch tree5
+x 14
+y 35
 end
 arch grass
 x 14
@@ -4161,7 +4166,7 @@ arch sea
 x 16
 y 36
 elevation -746
-no_pass 0
+move_block 0
 end
 arch pier_2_1_2
 x 16
@@ -4193,7 +4198,7 @@ arch sea
 x 16
 y 37
 elevation -1506
-no_pass 0
+move_block 0
 end
 arch sea
 x 16
@@ -4438,7 +4443,7 @@ arch sea
 x 17
 y 36
 elevation -1754
-no_pass 0
+move_block 0
 end
 arch pier_1_3
 x 17
@@ -4448,7 +4453,7 @@ arch sea
 x 17
 y 37
 elevation -2354
-no_pass 0
+move_block 0
 end
 arch sea
 x 17
