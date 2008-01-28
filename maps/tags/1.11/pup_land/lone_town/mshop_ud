@@ -1,0 +1,1705 @@
+arch map
+name Magic Shop
+difficulty 1
+region lonetown
+shopitems *:100
+shopgreed 50.0000
+shopmin 10000
+width 15
+height 16
+msg
+Created:  1996-01-31
+endmsg
+end
+arch shop_empty
+end
+arch cwall_2_2_2
+end
+arch shop_empty
+y 1
+end
+arch cwall_2_1_1
+y 1
+end
+arch shop_empty
+y 2
+end
+arch cwall_2_1_1
+y 2
+end
+arch shop_empty
+y 3
+end
+arch cwall_2_1_1
+y 3
+end
+arch shop_empty
+y 4
+end
+arch cwall_2_1_1
+y 4
+end
+arch shop_empty
+y 5
+end
+arch cwall_2_1_1
+y 5
+end
+arch shop_empty
+y 6
+end
+arch cwall_2_1_1
+y 6
+end
+arch shop_empty
+y 7
+end
+arch cwall_2_1_1
+y 7
+end
+arch shop_empty
+y 8
+end
+arch cwall_2_1_1
+y 8
+end
+arch shop_empty
+y 9
+end
+arch cwall_2_1_1
+y 9
+end
+arch shop_empty
+y 10
+end
+arch cwall_2_1_1
+y 10
+end
+arch shop_empty
+y 11
+end
+arch cwall_2_1_1
+y 11
+end
+arch cobblestones2
+y 12
+end
+arch cwall_2_1_1
+y 12
+end
+arch cobblestones2
+y 13
+end
+arch cwall_2_1_1
+y 13
+end
+arch cobblestones2
+y 14
+end
+arch cwall_2_1_1
+y 14
+end
+arch cobblestones2
+y 15
+end
+arch cwall_2_2_1
+y 15
+end
+arch shop_empty
+x 1
+end
+arch cwall_2_1_2
+x 1
+end
+arch shop_empty
+x 1
+y 1
+end
+arch shop_empty
+x 1
+y 2
+end
+arch shop_empty
+x 1
+y 3
+end
+arch shop_empty
+x 1
+y 4
+end
+arch shop_empty
+x 1
+y 5
+end
+arch shop_empty
+x 1
+y 6
+end
+arch shop_empty
+x 1
+y 7
+end
+arch shop_empty
+x 1
+y 8
+end
+arch shop_empty
+x 1
+y 9
+end
+arch shop_empty
+x 1
+y 10
+end
+arch shop_empty
+x 1
+y 11
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 12
+end
+arch swall_1_4
+x 1
+y 12
+end
+arch cobblestones2
+x 1
+y 13
+end
+arch stair2_up
+slaying mshop
+hp 26
+sp 1
+x 1
+y 13
+end
+arch cobblestones2
+x 1
+y 14
+end
+arch stair2_down
+slaying town_ud2
+hp 14
+sp 1
+x 1
+y 14
+end
+arch cobblestones2
+x 1
+y 15
+end
+arch cwall_2_1_2
+x 1
+y 15
+end
+arch shop_empty
+x 2
+end
+arch cwall_2_1_2
+x 2
+end
+arch shop_empty
+x 2
+y 1
+end
+arch shop_empty
+x 2
+y 2
+end
+arch elvenboots
+x 2
+y 2
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 3
+end
+arch levitationboots
+x 2
+y 3
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 4
+end
+arch bracers_ac
+x 2
+y 4
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 5
+end
+arch girdle_dam
+x 2
+y 5
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 6
+end
+arch sandals
+x 2
+y 6
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 7
+end
+arch dragon_mail
+x 2
+y 7
+unpaid 1
+end
+arch shop_empty
+x 2
+y 8
+end
+arch dragon_shield
+x 2
+y 8
+unpaid 1
+end
+arch shop_empty
+x 2
+y 9
+end
+arch eyeshield
+x 2
+y 9
+unpaid 1
+end
+arch shop_empty
+x 2
+y 10
+end
+arch ring_nodrain
+x 2
+y 10
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 2
+y 11
+end
+arch dungeon_magic
+x 2
+y 12
+end
+arch cobblestones2
+x 2
+y 12
+end
+arch swall_2_1_2
+x 2
+y 12
+end
+arch cobblestones2
+x 2
+y 13
+end
+arch menu
+x 2
+y 13
+end
+arch magic_mouth
+msg
+Black Market
+Please drop one hundred diamonds of
+exceptional beauty.
+endmsg
+x 2
+y 14
+end
+arch cobblestones2
+x 2
+y 14
+end
+arch cobblestones2
+x 2
+y 15
+end
+arch cwall_2_1_2
+x 2
+y 15
+end
+arch shop_empty
+x 3
+end
+arch cwall_2_1_2
+x 3
+end
+arch shop_empty
+x 3
+y 1
+end
+arch shop_empty
+x 3
+y 2
+end
+arch swall_1_1
+x 3
+y 2
+end
+arch shop_empty
+x 3
+y 3
+end
+arch swall_2_1_1
+x 3
+y 3
+end
+arch shop_empty
+x 3
+y 4
+end
+arch swall_2_1_1
+x 3
+y 4
+end
+arch shop_empty
+x 3
+y 5
+end
+arch swall_2_1_1
+x 3
+y 5
+end
+arch shop_empty
+x 3
+y 6
+end
+arch swall_2_1_1
+x 3
+y 6
+end
+arch shop_empty
+x 3
+y 7
+end
+arch swall_2_1_1
+x 3
+y 7
+end
+arch shop_empty
+x 3
+y 8
+end
+arch swall_2_1_1
+x 3
+y 8
+end
+arch shop_empty
+x 3
+y 9
+end
+arch swall_2_1_1
+x 3
+y 9
+end
+arch shop_empty
+x 3
+y 10
+end
+arch swall_1_2
+x 3
+y 10
+end
+arch shop_empty
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch cobblestones2
+x 3
+y 12
+end
+arch swall_2_2_3
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch cobblestones2
+x 3
+y 13
+end
+arch swall_2_2_1
+x 3
+y 13
+end
+arch cobblestones2
+x 3
+y 14
+end
+arch altar
+slaying diamond of exceptional beauty
+food 100
+x 3
+y 14
+connected 1
+end
+arch cobblestones2
+x 3
+y 15
+end
+arch cwall_2_1_2
+x 3
+y 15
+end
+arch shop_empty
+x 4
+end
+arch cwall_2_1_2
+x 4
+end
+arch shop_empty
+x 4
+y 1
+end
+arch shop_empty
+x 4
+y 2
+end
+arch elven_bow
+x 4
+y 2
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 3
+end
+arch bonecrusher
+x 4
+y 3
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 4
+end
+arch firebrand
+x 4
+y 4
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 5
+end
+arch frostbrand
+x 4
+y 5
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 6
+end
+arch excalibur
+x 4
+y 6
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 7
+end
+arch dragonslayer
+x 4
+y 7
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 8
+end
+arch defender
+x 4
+y 8
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 9
+end
+arch amulet_lifesave
+x 4
+y 9
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 10
+end
+arch ring
+x 4
+y 10
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 4
+y 11
+end
+arch shop_empty
+x 4
+y 12
+end
+arch shop_mat
+x 4
+y 12
+end
+arch dungeon_magic
+x 4
+y 13
+end
+arch cobblestones2
+x 4
+y 13
+end
+arch swall_2_1_2
+x 4
+y 13
+end
+arch cobblestones2
+x 4
+y 14
+end
+arch gate_closed_2
+x 4
+y 14
+connected 1
+end
+arch cobblestones2
+x 4
+y 15
+end
+arch cwall_2_1_2
+x 4
+y 15
+end
+arch shop_empty
+x 5
+end
+arch cwall_2_1_2
+x 5
+end
+arch shop_empty
+x 5
+y 1
+end
+arch shop_empty
+x 5
+y 2
+end
+arch shop_empty
+x 5
+y 3
+end
+arch shop_empty
+x 5
+y 4
+end
+arch shop_empty
+x 5
+y 5
+end
+arch shop_empty
+x 5
+y 6
+end
+arch shop_empty
+x 5
+y 7
+end
+arch shop_empty
+x 5
+y 8
+end
+arch shop_empty
+x 5
+y 9
+end
+arch shop_empty
+x 5
+y 10
+end
+arch shop_empty
+x 5
+y 11
+end
+arch shop_empty
+x 5
+y 12
+end
+arch dungeon_magic
+x 5
+y 13
+end
+arch cobblestones2
+x 5
+y 13
+end
+arch swall_2_1_2
+x 5
+y 13
+end
+arch cobblestones2
+x 5
+y 14
+end
+arch shop_mat
+x 5
+y 14
+end
+arch cobblestones2
+x 5
+y 15
+end
+arch cwall_2_1_2
+x 5
+y 15
+end
+arch shop_empty
+x 6
+end
+arch cwall_2_1_2
+x 6
+end
+arch shop_empty
+x 6
+y 1
+end
+arch shop_empty
+x 6
+y 2
+end
+arch scroll_oratory
+x 6
+y 2
+unpaid 1
+end
+arch shop_empty
+x 6
+y 3
+end
+arch scroll_stealing
+x 6
+y 3
+unpaid 1
+end
+arch shop_empty
+x 6
+y 4
+end
+arch scroll_singing
+x 6
+y 4
+unpaid 1
+end
+arch shop_empty
+x 6
+y 5
+end
+arch scroll_literacy
+x 6
+y 5
+unpaid 1
+end
+arch shop_empty
+x 6
+y 6
+end
+arch shop_empty
+x 6
+y 7
+end
+arch scroll_punching
+x 6
+y 7
+unpaid 1
+end
+arch shop_empty
+x 6
+y 8
+end
+arch scroll_one_handed_weapons
+x 6
+y 8
+unpaid 1
+end
+arch shop_empty
+x 6
+y 9
+end
+arch scroll_karate
+x 6
+y 9
+unpaid 1
+end
+arch shop_empty
+x 6
+y 10
+end
+arch scroll_jumping
+x 6
+y 10
+unpaid 1
+end
+arch shop_empty
+x 6
+y 11
+end
+arch scroll_missile_weap
+x 6
+y 11
+unpaid 1
+end
+arch shop_empty
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch cobblestones2
+x 6
+y 13
+end
+arch swall_2_2_3
+x 6
+y 13
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch cobblestones2
+x 6
+y 14
+end
+arch swall_1_2
+x 6
+y 14
+end
+arch cobblestones2
+x 6
+y 15
+end
+arch cwall_2_1_2
+x 6
+y 15
+end
+arch shop_empty
+x 7
+end
+arch cwall_2_1_2
+x 7
+end
+arch shop_empty
+x 7
+y 1
+end
+arch shop_empty
+x 7
+y 2
+end
+arch swall_1_1
+x 7
+y 2
+end
+arch shop_empty
+x 7
+y 3
+end
+arch swall_2_1_1
+x 7
+y 3
+end
+arch shop_empty
+x 7
+y 4
+end
+arch swall_2_1_1
+x 7
+y 4
+end
+arch shop_empty
+x 7
+y 5
+end
+arch swall_2_1_1
+x 7
+y 5
+end
+arch shop_empty
+x 7
+y 6
+end
+arch swall_2_1_1
+x 7
+y 6
+end
+arch shop_empty
+x 7
+y 7
+end
+arch swall_2_1_1
+x 7
+y 7
+end
+arch shop_empty
+x 7
+y 8
+end
+arch swall_2_1_1
+x 7
+y 8
+end
+arch shop_empty
+x 7
+y 9
+end
+arch swall_2_1_1
+x 7
+y 9
+end
+arch shop_empty
+x 7
+y 10
+end
+arch swall_2_1_1
+x 7
+y 10
+end
+arch shop_empty
+x 7
+y 11
+end
+arch swall_1_2
+x 7
+y 11
+end
+arch shop_empty
+x 7
+y 12
+end
+arch shop_empty
+x 7
+y 13
+end
+arch shop_empty
+x 7
+y 14
+end
+arch scroll_two_handed_weapons
+x 7
+y 14
+unpaid 1
+end
+arch shop_empty
+x 7
+y 15
+end
+arch cwall_2_1_2
+x 7
+y 15
+end
+arch shop_empty
+x 8
+end
+arch cwall_2_1_2
+x 8
+end
+arch shop_empty
+x 8
+y 1
+end
+arch shop_empty
+x 8
+y 2
+end
+arch scroll_bargaining
+x 8
+y 2
+unpaid 1
+end
+arch shop_empty
+x 8
+y 3
+end
+arch scroll_woodsman
+x 8
+y 3
+unpaid 1
+end
+arch shop_empty
+x 8
+y 4
+end
+arch scroll_thaumaturgy
+x 8
+y 4
+unpaid 1
+end
+arch shop_empty
+x 8
+y 5
+end
+arch scroll_jewelry
+x 8
+y 5
+unpaid 1
+end
+arch shop_empty
+x 8
+y 6
+end
+arch scroll_smithing
+x 8
+y 6
+unpaid 1
+end
+arch shop_empty
+x 8
+y 7
+end
+arch scroll_bowyer
+x 8
+y 7
+unpaid 1
+end
+arch shop_empty
+x 8
+y 8
+end
+arch holy_symbol
+x 8
+y 8
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 8
+y 9
+end
+arch scroll_pyromancy
+x 8
+y 9
+unpaid 1
+end
+arch shop_empty
+x 8
+y 10
+end
+arch scroll_evocation
+x 8
+y 10
+unpaid 1
+end
+arch shop_empty
+x 8
+y 11
+end
+arch scroll_sorcery
+x 8
+y 11
+unpaid 1
+end
+arch shop_empty
+x 8
+y 12
+end
+arch shop_empty
+x 8
+y 13
+end
+arch shop_empty
+x 8
+y 14
+end
+arch shop_empty
+x 8
+y 15
+end
+arch cwall_2_1_2
+x 8
+y 15
+end
+arch shop_empty
+x 9
+end
+arch cwall_2_1_2
+x 9
+end
+arch shop_empty
+x 9
+y 1
+end
+arch shop_empty
+x 9
+y 2
+end
+arch shop_empty
+x 9
+y 3
+end
+arch shop_empty
+x 9
+y 4
+end
+arch shop_empty
+x 9
+y 5
+end
+arch shop_empty
+x 9
+y 6
+end
+arch shop_empty
+x 9
+y 7
+end
+arch shop_empty
+x 9
+y 8
+end
+arch shop_empty
+x 9
+y 9
+end
+arch shop_empty
+x 9
+y 10
+end
+arch shop_empty
+x 9
+y 11
+end
+arch shop_empty
+x 9
+y 12
+end
+arch shop_empty
+x 9
+y 13
+end
+arch shop_empty
+x 9
+y 14
+end
+arch shop_empty
+x 9
+y 15
+end
+arch cwall_2_1_2
+x 9
+y 15
+end
+arch shop_empty
+x 10
+end
+arch cwall_2_1_2
+x 10
+end
+arch shop_empty
+x 10
+y 1
+end
+arch shop_empty
+x 10
+y 2
+end
+arch scroll_alchemy
+x 10
+y 2
+unpaid 1
+end
+arch shop_empty
+x 10
+y 3
+end
+arch scroll_summoning
+x 10
+y 3
+unpaid 1
+end
+arch shop_empty
+x 10
+y 4
+end
+arch lockpicks
+x 10
+y 4
+unpaid 1
+identified 1
+end
+arch shop_empty
+x 10
+y 5
+end
+arch scroll_disarm_traps
+x 10
+y 5
+unpaid 1
+end
+arch shop_empty
+x 10
+y 6
+end
+arch scroll_set_traps
+x 10
+y 6
+unpaid 1
+end
+arch shop_empty
+x 10
+y 7
+end
+arch scroll_hiding
+x 10
+y 7
+unpaid 1
+end
+arch shop_empty
+x 10
+y 8
+end
+arch scroll_climbing
+x 10
+y 8
+unpaid 1
+end
+arch shop_empty
+x 10
+y 9
+end
+arch scroll_sense_mag
+x 10
+y 9
+unpaid 1
+end
+arch shop_empty
+x 10
+y 10
+end
+arch scroll_sense_curse
+x 10
+y 10
+unpaid 1
+end
+arch shop_empty
+x 10
+y 11
+end
+arch scroll_use_magic_item
+x 10
+y 11
+unpaid 1
+end
+arch shop_empty
+x 10
+y 12
+end
+arch scroll_find_traps
+x 10
+y 12
+unpaid 1
+end
+arch shop_empty
+x 10
+y 13
+end
+arch scroll_praying
+x 10
+y 13
+unpaid 1
+end
+arch shop_empty
+x 10
+y 14
+end
+arch shop_empty
+x 10
+y 15
+end
+arch cwall_2_1_2
+x 10
+y 15
+end
+arch shop_empty
+x 11
+end
+arch cwall_2_1_2
+x 11
+end
+arch shop_empty
+x 11
+y 1
+end
+arch shop_empty
+x 11
+y 2
+end
+arch swall_1_1
+x 11
+y 2
+end
+arch shop_empty
+x 11
+y 3
+end
+arch swall_2_1_1
+x 11
+y 3
+end
+arch shop_empty
+x 11
+y 4
+end
+arch swall_2_1_1
+x 11
+y 4
+end
+arch shop_empty
+x 11
+y 5
+end
+arch swall_2_1_1
+x 11
+y 5
+end
+arch shop_empty
+x 11
+y 6
+end
+arch swall_2_1_1
+x 11
+y 6
+end
+arch shop_empty
+x 11
+y 7
+end
+arch swall_2_1_1
+x 11
+y 7
+end
+arch shop_empty
+x 11
+y 8
+end
+arch swall_2_1_1
+x 11
+y 8
+end
+arch shop_empty
+x 11
+y 9
+end
+arch swall_2_1_1
+x 11
+y 9
+end
+arch shop_empty
+x 11
+y 10
+end
+arch swall_2_1_1
+x 11
+y 10
+end
+arch shop_empty
+x 11
+y 11
+end
+arch swall_2_1_1
+x 11
+y 11
+end
+arch shop_empty
+x 11
+y 12
+end
+arch swall_2_1_1
+x 11
+y 12
+end
+arch shop_empty
+x 11
+y 13
+end
+arch swall_1_2
+x 11
+y 13
+end
+arch shop_empty
+x 11
+y 14
+end
+arch shop_empty
+x 11
+y 15
+end
+arch cwall_2_1_2
+x 11
+y 15
+end
+arch shop_empty
+x 12
+end
+arch cwall_2_1_2
+x 12
+end
+arch shop_empty
+x 12
+y 1
+end
+arch shop_empty
+x 12
+y 2
+end
+arch prepare_weapon
+x 12
+y 2
+unpaid 1
+end
+arch shop_empty
+x 12
+y 3
+end
+arch improve_wis
+x 12
+y 3
+unpaid 1
+end
+arch shop_empty
+x 12
+y 4
+end
+arch improve_weight
+x 12
+y 4
+unpaid 1
+end
+arch shop_empty
+x 12
+y 5
+end
+arch improve_str
+x 12
+y 5
+unpaid 1
+end
+arch shop_empty
+x 12
+y 6
+end
+arch improve_pow
+x 12
+y 6
+unpaid 1
+end
+arch shop_empty
+x 12
+y 7
+end
+arch improve_int
+x 12
+y 7
+unpaid 1
+end
+arch shop_empty
+x 12
+y 8
+end
+arch improve_enchantment
+x 12
+y 8
+unpaid 1
+end
+arch shop_empty
+x 12
+y 9
+end
+arch improve_dex
+x 12
+y 9
+unpaid 1
+end
+arch shop_empty
+x 12
+y 10
+end
+arch improve_damage
+x 12
+y 10
+unpaid 1
+end
+arch shop_empty
+x 12
+y 11
+end
+arch improve_con
+x 12
+y 11
+unpaid 1
+end
+arch shop_empty
+x 12
+y 12
+end
+arch improve_cha
+x 12
+y 12
+unpaid 1
+end
+arch shop_empty
+x 12
+y 13
+end
+arch ench_armour
+x 12
+y 13
+unpaid 1
+end
+arch shop_empty
+x 12
+y 14
+end
+arch shop_empty
+x 12
+y 15
+end
+arch cwall_2_1_2
+x 12
+y 15
+end
+arch shop_empty
+x 13
+end
+arch cwall_2_1_2
+x 13
+end
+arch shop_empty
+x 13
+y 1
+end
+arch shop_empty
+x 13
+y 2
+end
+arch shop_empty
+x 13
+y 3
+end
+arch shop_empty
+x 13
+y 4
+end
+arch shop_empty
+x 13
+y 5
+end
+arch shop_empty
+x 13
+y 6
+end
+arch shop_empty
+x 13
+y 7
+end
+arch shop_empty
+x 13
+y 8
+end
+arch shop_empty
+x 13
+y 9
+end
+arch shop_empty
+x 13
+y 10
+end
+arch shop_empty
+x 13
+y 11
+end
+arch shop_empty
+x 13
+y 12
+end
+arch shop_empty
+x 13
+y 13
+end
+arch shop_empty
+x 13
+y 14
+end
+arch shop_empty
+x 13
+y 15
+end
+arch cwall_2_1_2
+x 13
+y 15
+end
+arch shop_empty
+x 14
+end
+arch cwall_2_2_3
+x 14
+end
+arch shop_empty
+x 14
+y 1
+end
+arch cwall_2_1_1
+x 14
+y 1
+end
+arch shop_empty
+x 14
+y 2
+end
+arch cwall_2_1_1
+x 14
+y 2
+end
+arch shop_empty
+x 14
+y 3
+end
+arch cwall_2_1_1
+x 14
+y 3
+end
+arch shop_empty
+x 14
+y 4
+end
+arch cwall_2_1_1
+x 14
+y 4
+end
+arch shop_empty
+x 14
+y 5
+end
+arch cwall_2_1_1
+x 14
+y 5
+end
+arch shop_empty
+x 14
+y 6
+end
+arch cwall_2_1_1
+x 14
+y 6
+end
+arch shop_empty
+x 14
+y 7
+end
+arch cwall_2_1_1
+x 14
+y 7
+end
+arch shop_empty
+x 14
+y 8
+end
+arch cwall_2_1_1
+x 14
+y 8
+end
+arch shop_empty
+x 14
+y 9
+end
+arch cwall_2_1_1
+x 14
+y 9
+end
+arch shop_empty
+x 14
+y 10
+end
+arch cwall_2_1_1
+x 14
+y 10
+end
+arch shop_empty
+x 14
+y 11
+end
+arch cwall_2_1_1
+x 14
+y 11
+end
+arch shop_empty
+x 14
+y 12
+end
+arch cwall_2_1_1
+x 14
+y 12
+end
+arch shop_empty
+x 14
+y 13
+end
+arch cwall_2_1_1
+x 14
+y 13
+end
+arch shop_empty
+x 14
+y 14
+end
+arch cwall_2_1_1
+x 14
+y 14
+end
+arch shop_empty
+x 14
+y 15
+end
+arch cwall_2_2_4
+x 14
+y 15
+end

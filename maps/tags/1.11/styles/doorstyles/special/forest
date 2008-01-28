@@ -1,0 +1,38 @@
+arch map
+name <untitled>
+width 6
+height 6
+msg
+Created:  1998-02-26
+endmsg
+end
+arch door_look_1
+name spider web
+name_pl spider webs
+face spider_web.111
+material 8
+randomitems none
+end
+arch door_2
+name light brush
+face fernssparse.111
+x 1
+randomitems none
+end
+arch door_2
+name bushes
+face fernsdense.111
+x 2
+randomitems none
+end
+arch door_2
+name heavy bush
+face forestsparse.111
+x 3
+randomitems none
+end
+arch thorns
+x 4
+material 16
+no_pass 1
+end
