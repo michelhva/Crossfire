@@ -6,6 +6,9 @@ width 50
 height 50
 enter_x 1
 enter_y 1
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_105_116
 tile_path_2 world_106_117
@@ -9096,10 +9099,14 @@ x 36
 y 30
 elevation 3922
 end
-arch evergreens
+arch grass_only
 x 36
 y 31
 elevation 2519
+end
+arch evergreens2
+x 36
+y 31
 end
 arch hills
 x 36

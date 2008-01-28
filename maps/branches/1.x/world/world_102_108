@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2007-12-19 Kevin Bulgrien
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -88,7 +88,10 @@ end
 arch woods
 y 23
 end
-arch evergreen
+arch grass_only
+y 24
+end
+arch tree5
 y 24
 end
 arch grass
@@ -103,19 +106,31 @@ end
 arch desert
 y 28
 end
-arch evergreens
+arch grass_only
 y 29
 end
-arch evergreens
+arch evergreens2
+y 29
+end
+arch grass_only
+y 30
+end
+arch evergreens2
 y 30
 end
 arch woods
 y 31
 end
-arch evergreens
+arch grass_only
 y 32
 end
-arch evergreens
+arch evergreens2
+y 32
+end
+arch grass_only
+y 33
+end
+arch evergreens2
 y 33
 end
 arch hills
@@ -148,13 +163,19 @@ end
 arch desert
 y 43
 end
-arch evergreen
+arch grass_only
+y 44
+end
+arch tree5
 y 44
 end
 arch hills
 y 45
 end
-arch tree
+arch grass_only
+y 46
+end
+arch tree3
 y 46
 end
 arch hills_rocky
@@ -281,11 +302,19 @@ arch desert
 x 1
 y 28
 end
-arch evergreen
+arch grass_only
 x 1
 y 29
 end
-arch evergreens
+arch tree5
+x 1
+y 29
+end
+arch grass_only
+x 1
+y 30
+end
+arch evergreens2
 x 1
 y 30
 end
@@ -293,7 +322,11 @@ arch hills
 x 1
 y 31
 end
-arch evergreens
+arch grass_only
+x 1
+y 32
+end
+arch evergreens2
 x 1
 y 32
 end
@@ -301,11 +334,19 @@ arch woods
 x 1
 y 33
 end
-arch evergreens
+arch grass_only
 x 1
 y 34
 end
-arch evergreen
+arch evergreens2
+x 1
+y 34
+end
+arch grass_only
+x 1
+y 35
+end
+arch tree5
 x 1
 y 35
 end
@@ -345,7 +386,11 @@ arch hills
 x 1
 y 44
 end
-arch evergreen
+arch grass_only
+x 1
+y 45
+end
+arch tree5
 x 1
 y 45
 end
@@ -472,19 +517,35 @@ arch grass
 x 2
 y 26
 end
-arch evergreens
+arch grass_only
 x 2
 y 27
 end
-arch evergreens
+arch evergreens2
+x 2
+y 27
+end
+arch grass_only
 x 2
 y 28
 end
-arch evergreens
+arch evergreens2
+x 2
+y 28
+end
+arch grass_only
 x 2
 y 29
 end
-arch evergreens
+arch evergreens2
+x 2
+y 29
+end
+arch grass_only
+x 2
+y 30
+end
+arch evergreens2
 x 2
 y 30
 end
@@ -492,7 +553,11 @@ arch hills
 x 2
 y 31
 end
-arch evergreens
+arch grass_only
+x 2
+y 32
+end
+arch evergreens2
 x 2
 y 32
 end
@@ -668,7 +733,11 @@ arch shallow_sea
 x 3
 y 21
 end
-arch evergreens
+arch grass_only
+x 3
+y 22
+end
+arch evergreens2
 x 3
 y 22
 end
@@ -676,7 +745,11 @@ arch brush
 x 3
 y 23
 end
-arch evergreens
+arch grass_only
+x 3
+y 24
+end
+arch evergreens2
 x 3
 y 24
 end
@@ -688,15 +761,27 @@ arch grass
 x 3
 y 26
 end
-arch evergreens
+arch grass_only
 x 3
 y 27
 end
-arch evergreens
+arch evergreens2
+x 3
+y 27
+end
+arch grass_only
 x 3
 y 28
 end
-arch evergreens
+arch evergreens2
+x 3
+y 28
+end
+arch grass_only
+x 3
+y 29
+end
+arch evergreens2
 x 3
 y 29
 end
@@ -704,7 +789,11 @@ arch hills
 x 3
 y 30
 end
-arch evergreens
+arch grass_only
+x 3
+y 31
+end
+arch evergreens2
 x 3
 y 31
 end
@@ -716,7 +805,11 @@ arch woods_3
 x 3
 y 33
 end
-arch evergreens
+arch grass_only
+x 3
+y 34
+end
+arch evergreens2
 x 3
 y 34
 end
@@ -911,19 +1004,35 @@ arch hills
 x 4
 y 29
 end
-arch evergreens
+arch grass_only
 x 4
 y 30
 end
-arch evergreens
+arch evergreens2
+x 4
+y 30
+end
+arch grass_only
 x 4
 y 31
 end
-arch evergreen
+arch evergreens2
+x 4
+y 31
+end
+arch grass_only
 x 4
 y 32
 end
-arch evergreens
+arch tree5
+x 4
+y 32
+end
+arch grass_only
+x 4
+y 33
+end
+arch evergreens2
 x 4
 y 33
 end
@@ -1062,7 +1171,11 @@ arch grass
 x 5
 y 17
 end
-arch evergreens
+arch grass_only
+x 5
+y 18
+end
+arch evergreens2
 x 5
 y 18
 end
@@ -1074,7 +1187,11 @@ arch brush
 x 5
 y 20
 end
-arch evergreens
+arch grass_only
+x 5
+y 21
+end
+arch evergreens2
 x 5
 y 21
 end
@@ -1110,7 +1227,11 @@ arch hills
 x 5
 y 29
 end
-arch evergreens
+arch grass_only
+x 5
+y 30
+end
+arch evergreens2
 x 5
 y 30
 end
@@ -1257,15 +1378,27 @@ arch brush
 x 6
 y 16
 end
-arch evergreens
+arch grass_only
 x 6
 y 17
 end
-arch evergreens
+arch evergreens2
+x 6
+y 17
+end
+arch grass_only
 x 6
 y 18
 end
-arch evergreens
+arch evergreens2
+x 6
+y 18
+end
+arch grass_only
+x 6
+y 19
+end
+arch evergreens2
 x 6
 y 19
 end
@@ -1285,7 +1418,11 @@ arch brush
 x 6
 y 23
 end
-arch evergreens
+arch grass_only
+x 6
+y 24
+end
+arch evergreens2
 x 6
 y 24
 end
@@ -1305,11 +1442,19 @@ arch grass
 x 6
 y 28
 end
-arch evergreens
+arch grass_only
 x 6
 y 29
 end
-arch evergreens
+arch evergreens2
+x 6
+y 29
+end
+arch grass_only
+x 6
+y 30
+end
+arch evergreens2
 x 6
 y 30
 end
@@ -1732,7 +1877,11 @@ arch woods_2
 x 8
 y 19
 end
-arch evergreens
+arch grass_only
+x 8
+y 20
+end
+arch evergreens2
 x 8
 y 20
 end
@@ -1784,7 +1933,11 @@ arch hills
 x 8
 y 31
 end
-arch evergreen
+arch grass_only
+x 8
+y 32
+end
+arch tree5
 x 8
 y 32
 end
@@ -1931,7 +2084,11 @@ arch brush
 x 9
 y 14
 end
-arch tree
+arch grass_only
+x 9
+y 15
+end
+arch tree3
 x 9
 y 15
 end
@@ -1967,7 +2124,11 @@ arch cwall_2_1_2
 x 9
 y 22
 end
-arch evergreens
+arch grass_only
+x 9
+y 23
+end
+arch evergreens2
 x 9
 y 23
 end
@@ -2160,7 +2321,11 @@ arch pier_2_2_1
 x 10
 y 15
 end
-arch tree
+arch grass_only
+x 10
+y 16
+end
+arch tree3
 x 10
 y 16
 end
@@ -2172,7 +2337,11 @@ arch woods_2
 x 10
 y 18
 end
-arch evergreens
+arch grass_only
+x 10
+y 19
+end
+arch evergreens2
 x 10
 y 19
 end
@@ -2240,7 +2409,11 @@ arch woods_3
 x 10
 y 32
 end
-arch evergreen
+arch grass_only
+x 10
+y 33
+end
+arch tree5
 x 10
 y 33
 end
@@ -2435,11 +2608,19 @@ sp 15
 x 11
 y 19
 end
-arch evergreens
+arch grass_only
 x 11
 y 20
 end
-arch evergreens
+arch evergreens2
+x 11
+y 20
+end
+arch grass_only
+x 11
+y 21
+end
+arch evergreens2
 x 11
 y 21
 end
@@ -3048,7 +3229,11 @@ arch cwall_2_1_2
 x 14
 y 5
 end
-arch tree
+arch grass_only
+x 14
+y 6
+end
+arch tree3
 x 14
 y 6
 end
@@ -3265,11 +3450,19 @@ arch grass
 x 15
 y 3
 end
-arch evergreens
+arch grass_only
 x 15
 y 4
 end
-arch evergreens
+arch evergreens2
+x 15
+y 4
+end
+arch grass_only
+x 15
+y 5
+end
+arch evergreens2
 x 15
 y 5
 end
@@ -3304,7 +3497,7 @@ end
 arch sea
 x 15
 y 9
-no_pass 0
+move_block 0
 end
 arch sea1
 x 15
@@ -3360,7 +3553,11 @@ arch brush
 x 15
 y 17
 end
-arch tree
+arch grass_only
+x 15
+y 18
+end
+arch tree3
 x 15
 y 18
 end
@@ -3507,15 +3704,27 @@ arch sea
 x 16
 y 2
 end
-arch evergreens
+arch grass_only
 x 16
 y 3
 end
-arch evergreens
+arch evergreens2
+x 16
+y 3
+end
+arch grass_only
 x 16
 y 4
 end
-arch evergreens
+arch evergreens2
+x 16
+y 4
+end
+arch grass_only
+x 16
+y 5
+end
+arch evergreens2
 x 16
 y 5
 end
@@ -3621,7 +3830,11 @@ arch lamppost
 x 16
 y 20
 end
-arch tree
+arch grass_only
+x 16
+y 21
+end
+arch tree3
 x 16
 y 21
 end
@@ -3641,11 +3854,19 @@ arch cwall_2_1_2
 x 16
 y 24
 end
-arch tree
+arch grass_only
 x 16
 y 25
 end
-arch tree
+arch tree3
+x 16
+y 25
+end
+arch grass_only
+x 16
+y 26
+end
+arch tree3
 x 16
 y 26
 end
@@ -3653,7 +3874,11 @@ arch woods_3
 x 16
 y 27
 end
-arch tree
+arch grass_only
+x 16
+y 28
+end
+arch tree3
 x 16
 y 28
 end
@@ -3669,7 +3894,11 @@ arch brush
 x 16
 y 31
 end
-arch tree
+arch grass_only
+x 16
+y 32
+end
+arch tree3
 x 16
 y 32
 end
@@ -3677,11 +3906,19 @@ arch woods_3
 x 16
 y 33
 end
-arch tree
+arch grass_only
 x 16
 y 34
 end
-arch tree
+arch tree3
+x 16
+y 34
+end
+arch grass_only
+x 16
+y 35
+end
+arch tree3
 x 16
 y 35
 end
@@ -3733,7 +3970,11 @@ arch desert
 x 16
 y 47
 end
-arch tree
+arch grass_only
+x 16
+y 48
+end
+arch tree3
 x 16
 y 48
 end
@@ -3756,7 +3997,11 @@ arch brush
 x 17
 y 3
 end
-arch evergreens
+arch grass_only
+x 17
+y 4
+end
+arch evergreens2
 x 17
 y 4
 end
@@ -3764,7 +4009,11 @@ arch cwall_2_2_2
 x 17
 y 4
 end
-arch evergreens
+arch grass_only
+x 17
+y 5
+end
+arch evergreens2
 x 17
 y 5
 end
@@ -3780,15 +4029,27 @@ arch cobblestones
 x 17
 y 7
 end
-arch tree
+arch grass_only
 x 17
 y 8
 end
-arch evergreen
+arch tree3
+x 17
+y 8
+end
+arch grass_only
 x 17
 y 9
 end
-arch tree
+arch tree5
+x 17
+y 9
+end
+arch grass_only
+x 17
+y 10
+end
+arch tree3
 x 17
 y 10
 end
@@ -3820,7 +4081,11 @@ arch brush
 x 17
 y 16
 end
-arch tree
+arch grass_only
+x 17
+y 16
+end
+arch tree3
 x 17
 y 16
 end
@@ -3828,7 +4093,11 @@ arch brush
 x 17
 y 17
 end
-arch tree
+arch grass_only
+x 17
+y 18
+end
+arch tree3
 x 17
 y 18
 end
@@ -3868,11 +4137,19 @@ arch cwall_2_1_2
 x 17
 y 24
 end
-arch tree
+arch grass_only
 x 17
 y 25
 end
-arch tree
+arch tree3
+x 17
+y 25
+end
+arch grass_only
+x 17
+y 26
+end
+arch tree3
 x 17
 y 26
 end
@@ -3880,19 +4157,35 @@ arch woods_3
 x 17
 y 27
 end
-arch tree
+arch grass_only
 x 17
 y 28
 end
-arch tree
+arch tree3
+x 17
+y 28
+end
+arch grass_only
 x 17
 y 29
 end
-arch tree
+arch tree3
+x 17
+y 29
+end
+arch grass_only
 x 17
 y 30
 end
-arch tree
+arch tree3
+x 17
+y 30
+end
+arch grass_only
+x 17
+y 31
+end
+arch tree3
 x 17
 y 31
 end
@@ -3904,7 +4197,11 @@ arch hills
 x 17
 y 33
 end
-arch tree
+arch grass_only
+x 17
+y 34
+end
+arch tree3
 x 17
 y 34
 end
@@ -3948,11 +4245,19 @@ arch brush
 x 17
 y 44
 end
-arch tree
+arch grass_only
 x 17
 y 45
 end
-arch tree
+arch tree3
+x 17
+y 45
+end
+arch grass_only
+x 17
+y 46
+end
+arch tree3
 x 17
 y 46
 end
@@ -3960,7 +4265,11 @@ arch hills
 x 17
 y 47
 end
-arch tree
+arch grass_only
+x 17
+y 48
+end
+arch tree3
 x 17
 y 48
 end
@@ -4011,7 +4320,11 @@ arch cobblestones
 x 18
 y 7
 end
-arch tree
+arch grass_only
+x 18
+y 8
+end
+arch tree3
 x 18
 y 8
 end
@@ -4019,7 +4332,11 @@ arch grasspond
 x 18
 y 9
 end
-arch evergreen
+arch grass_only
+x 18
+y 10
+end
+arch tree5
 x 18
 y 10
 end
@@ -4100,7 +4417,11 @@ arch cwall_2_1_2
 x 18
 y 24
 end
-arch tree
+arch grass_only
+x 18
+y 25
+end
+arch tree3
 x 18
 y 25
 end
@@ -4120,15 +4441,27 @@ arch woods_3
 x 18
 y 29
 end
-arch tree
+arch grass_only
 x 18
 y 30
 end
-arch evergreen
+arch tree3
+x 18
+y 30
+end
+arch grass_only
 x 18
 y 31
 end
-arch tree
+arch tree5
+x 18
+y 31
+end
+arch grass_only
+x 18
+y 32
+end
+arch tree3
 x 18
 y 32
 end
@@ -4140,7 +4473,11 @@ arch hills
 x 18
 y 34
 end
-arch tree
+arch grass_only
+x 18
+y 35
+end
+arch tree3
 x 18
 y 35
 end
@@ -4196,7 +4533,11 @@ arch hills
 x 18
 y 48
 end
-arch tree
+arch grass_only
+x 18
+y 49
+end
+arch tree3
 x 18
 y 49
 end
@@ -4211,11 +4552,19 @@ arch shallow_sea
 x 19
 y 2
 end
-arch evergreens
+arch grass_only
 x 19
 y 3
 end
-arch evergreens
+arch evergreens2
+x 19
+y 3
+end
+arch grass_only
+x 19
+y 4
+end
+arch evergreens2
 x 19
 y 4
 end
@@ -4243,7 +4592,11 @@ arch lamppost
 x 19
 y 8
 end
-arch evergreen
+arch grass_only
+x 19
+y 9
+end
+arch tree5
 x 19
 y 9
 end
@@ -4316,7 +4669,11 @@ sp 15
 x 19
 y 20
 end
-arch tree
+arch grass_only
+x 19
+y 21
+end
+arch tree3
 x 19
 y 21
 end
@@ -4336,15 +4693,27 @@ arch cwall_2_1_2
 x 19
 y 24
 end
-arch tree
+arch grass_only
 x 19
 y 25
 end
-arch tree
+arch tree3
+x 19
+y 25
+end
+arch grass_only
 x 19
 y 26
 end
-arch tree
+arch tree3
+x 19
+y 26
+end
+arch grass_only
+x 19
+y 27
+end
+arch tree3
 x 19
 y 27
 end
@@ -4360,7 +4729,11 @@ arch woods_3
 x 19
 y 30
 end
-arch tree
+arch grass_only
+x 19
+y 31
+end
+arch tree3
 x 19
 y 31
 end
@@ -4372,7 +4745,11 @@ arch hills
 x 19
 y 33
 end
-arch tree
+arch grass_only
+x 19
+y 34
+end
+arch tree3
 x 19
 y 34
 end
@@ -4380,7 +4757,11 @@ arch hills
 x 19
 y 35
 end
-arch tree
+arch grass_only
+x 19
+y 36
+end
+arch tree3
 x 19
 y 36
 end
@@ -4416,11 +4797,19 @@ arch brush
 x 19
 y 44
 end
-arch tree
+arch grass_only
 x 19
 y 45
 end
-arch tree
+arch tree3
+x 19
+y 45
+end
+arch grass_only
+x 19
+y 46
+end
+arch tree3
 x 19
 y 46
 end
@@ -4463,7 +4852,11 @@ arch brush
 x 20
 y 5
 end
-arch tree
+arch grass_only
+x 20
+y 6
+end
+arch tree3
 x 20
 y 6
 end
@@ -4551,7 +4944,11 @@ arch woods_3
 x 20
 y 26
 end
-arch tree
+arch grass_only
+x 20
+y 27
+end
+arch tree3
 x 20
 y 27
 end
@@ -4579,7 +4976,11 @@ arch hills
 x 20
 y 33
 end
-arch tree
+arch grass_only
+x 20
+y 34
+end
+arch tree3
 x 20
 y 34
 end
@@ -4587,7 +4988,11 @@ arch hills
 x 20
 y 35
 end
-arch tree
+arch grass_only
+x 20
+y 36
+end
+arch tree3
 x 20
 y 36
 end
@@ -4623,11 +5028,19 @@ arch brush
 x 20
 y 44
 end
-arch tree
+arch grass_only
 x 20
 y 45
 end
-arch tree
+arch tree3
+x 20
+y 45
+end
+arch grass_only
+x 20
+y 46
+end
+arch tree3
 x 20
 y 46
 end
@@ -4654,11 +5067,19 @@ arch grass
 x 21
 y 2
 end
-arch evergreens
+arch grass_only
 x 21
 y 3
 end
-arch evergreens
+arch evergreens2
+x 21
+y 3
+end
+arch grass_only
+x 21
+y 4
+end
+arch evergreens2
 x 21
 y 4
 end
@@ -4754,7 +5175,11 @@ arch brush
 x 21
 y 16
 end
-arch tree
+arch grass_only
+x 21
+y 17
+end
+arch tree3
 x 21
 y 17
 end
@@ -4766,7 +5191,11 @@ arch cobblestones
 x 21
 y 19
 end
-arch tree
+arch grass_only
+x 21
+y 20
+end
+arch tree3
 x 21
 y 20
 end
@@ -4854,7 +5283,11 @@ arch hills_rocky
 x 21
 y 40
 end
-arch tree
+arch grass_only
+x 21
+y 41
+end
+arch tree3
 x 21
 y 41
 end
@@ -4882,7 +5315,11 @@ arch woods_2
 x 21
 y 47
 end
-arch tree
+arch grass_only
+x 21
+y 48
+end
+arch tree3
 x 21
 y 48
 end
@@ -4901,7 +5338,11 @@ arch grass
 x 22
 y 2
 end
-arch evergreens
+arch grass_only
+x 22
+y 3
+end
+arch evergreens2
 x 22
 y 3
 end
@@ -5093,7 +5534,11 @@ arch hills
 x 22
 y 38
 end
-arch tree
+arch grass_only
+x 22
+y 39
+end
+arch tree3
 x 22
 y 39
 end
@@ -5105,7 +5550,11 @@ arch hills
 x 22
 y 41
 end
-arch tree
+arch grass_only
+x 22
+y 42
+end
+arch tree3
 x 22
 y 42
 end
@@ -5121,11 +5570,19 @@ arch brush
 x 22
 y 45
 end
-arch tree
+arch grass_only
 x 22
 y 46
 end
-arch tree
+arch tree3
+x 22
+y 46
+end
+arch grass_only
+x 22
+y 47
+end
+arch tree3
 x 22
 y 47
 end
@@ -5200,7 +5657,11 @@ arch lamppost
 x 23
 y 12
 end
-arch tree
+arch grass_only
+x 23
+y 13
+end
+arch tree3
 x 23
 y 13
 end
@@ -5208,7 +5669,11 @@ arch woods
 x 23
 y 14
 end
-arch tree
+arch grass_only
+x 23
+y 15
+end
+arch tree3
 x 23
 y 15
 end
@@ -5216,7 +5681,11 @@ arch grass
 x 23
 y 16
 end
-arch tree
+arch grass_only
+x 23
+y 17
+end
+arch tree3
 x 23
 y 17
 end
@@ -5606,7 +6075,11 @@ arch brush
 x 25
 y 5
 end
-arch evergreens
+arch grass_only
+x 25
+y 6
+end
+arch evergreens2
 x 25
 y 6
 end
@@ -5722,7 +6195,11 @@ arch brush
 x 25
 y 23
 end
-arch evergreens
+arch grass_only
+x 25
+y 24
+end
+arch evergreens2
 x 25
 y 24
 end
@@ -5766,7 +6243,11 @@ arch hills_rocky
 x 25
 y 34
 end
-arch tree
+arch grass_only
+x 25
+y 35
+end
+arch tree3
 x 25
 y 35
 end
@@ -5897,7 +6378,11 @@ arch grass
 x 26
 y 14
 end
-arch tree
+arch grass_only
+x 26
+y 15
+end
+arch tree3
 x 26
 y 15
 end
@@ -5913,7 +6398,11 @@ arch brush
 x 26
 y 18
 end
-arch tree
+arch grass_only
+x 26
+y 19
+end
+arch tree3
 x 26
 y 19
 end
@@ -5981,7 +6470,11 @@ arch hills
 x 26
 y 34
 end
-arch tree
+arch grass_only
+x 26
+y 35
+end
+arch tree3
 x 26
 y 35
 end
@@ -6144,7 +6637,11 @@ arch cwall_2_1_1
 x 27
 y 15
 end
-arch evergreens
+arch grass_only
+x 27
+y 16
+end
+arch evergreens2
 x 27
 y 16
 end
@@ -6152,7 +6649,11 @@ arch cwall_2_1_1
 x 27
 y 16
 end
-arch evergreens
+arch grass_only
+x 27
+y 17
+end
+arch evergreens2
 x 27
 y 17
 end
@@ -6184,7 +6685,11 @@ arch cwall_2_1_1
 x 27
 y 20
 end
-arch evergreens
+arch grass_only
+x 27
+y 21
+end
+arch evergreens2
 x 27
 y 21
 end
@@ -6192,7 +6697,11 @@ arch cwall_2_1_1
 x 27
 y 21
 end
-arch evergreens
+arch grass_only
+x 27
+y 22
+end
+arch evergreens2
 x 27
 y 22
 end
@@ -6204,7 +6713,11 @@ arch grass
 x 27
 y 23
 end
-arch evergreens
+arch grass_only
+x 27
+y 24
+end
+arch evergreens2
 x 27
 y 24
 end
@@ -6244,7 +6757,11 @@ arch hills
 x 27
 y 33
 end
-arch tree
+arch grass_only
+x 27
+y 34
+end
+arch tree3
 x 27
 y 34
 end
@@ -6304,7 +6821,11 @@ arch brush
 x 27
 y 48
 end
-arch tree
+arch grass_only
+x 27
+y 49
+end
+arch tree3
 x 27
 y 49
 end
@@ -6359,7 +6880,11 @@ arch cobblestones
 x 28
 y 12
 end
-arch evergreens
+arch grass_only
+x 28
+y 13
+end
+arch evergreens2
 x 28
 y 13
 end
@@ -6379,7 +6904,11 @@ arch grass
 x 28
 y 16
 end
-arch evergreens
+arch grass_only
+x 28
+y 17
+end
+arch evergreens2
 x 28
 y 17
 end
@@ -6387,7 +6916,11 @@ arch grass
 x 28
 y 18
 end
-arch evergreens
+arch grass_only
+x 28
+y 19
+end
+arch evergreens2
 x 28
 y 19
 end
@@ -6403,7 +6936,11 @@ arch grass
 x 28
 y 22
 end
-arch evergreens
+arch grass_only
+x 28
+y 23
+end
+arch evergreens2
 x 28
 y 23
 end
@@ -6622,7 +7159,11 @@ arch cobblestones
 x 29
 y 26
 end
-arch tree
+arch grass_only
+x 29
+y 27
+end
+arch tree3
 x 29
 y 27
 end
@@ -6654,27 +7195,51 @@ arch hills
 x 29
 y 34
 end
-arch tree
+arch grass_only
 x 29
 y 35
 end
-arch tree
+arch tree3
+x 29
+y 35
+end
+arch grass_only
 x 29
 y 36
 end
-arch tree
+arch tree3
+x 29
+y 36
+end
+arch grass_only
 x 29
 y 37
 end
-arch tree
+arch tree3
+x 29
+y 37
+end
+arch grass_only
 x 29
 y 38
 end
-arch tree
+arch tree3
+x 29
+y 38
+end
+arch grass_only
 x 29
 y 39
 end
-arch tree
+arch tree3
+x 29
+y 39
+end
+arch grass_only
+x 29
+y 40
+end
+arch tree3
 x 29
 y 40
 end
@@ -6706,7 +7271,11 @@ arch beach
 x 29
 y 47
 end
-arch tree
+arch grass_only
+x 29
+y 48
+end
+arch tree3
 x 29
 y 48
 end
@@ -6857,19 +7426,35 @@ arch hills
 x 30
 y 35
 end
-arch tree
+arch grass_only
 x 30
 y 36
 end
-arch tree
+arch tree3
+x 30
+y 36
+end
+arch grass_only
 x 30
 y 37
 end
-arch tree
+arch tree3
+x 30
+y 37
+end
+arch grass_only
 x 30
 y 38
 end
-arch tree
+arch tree3
+x 30
+y 38
+end
+arch grass_only
+x 30
+y 39
+end
+arch tree3
 x 30
 y 39
 end
@@ -6877,19 +7462,35 @@ arch brush
 x 30
 y 40
 end
-arch tree
+arch grass_only
 x 30
 y 41
 end
-arch tree
+arch tree3
+x 30
+y 41
+end
+arch grass_only
 x 30
 y 42
 end
-arch tree
+arch tree3
+x 30
+y 42
+end
+arch grass_only
 x 30
 y 43
 end
-arch tree
+arch tree3
+x 30
+y 43
+end
+arch grass_only
+x 30
+y 44
+end
+arch tree3
 x 30
 y 44
 end
@@ -7076,15 +7677,27 @@ arch hills
 x 31
 y 35
 end
-arch tree
+arch grass_only
 x 31
 y 36
 end
-arch tree
+arch tree3
+x 31
+y 36
+end
+arch grass_only
 x 31
 y 37
 end
-arch tree
+arch tree3
+x 31
+y 37
+end
+arch grass_only
+x 31
+y 38
+end
+arch tree3
 x 31
 y 38
 end
@@ -7096,19 +7709,35 @@ arch brush
 x 31
 y 40
 end
-arch tree
+arch grass_only
 x 31
 y 41
 end
-arch tree
+arch tree3
+x 31
+y 41
+end
+arch grass_only
 x 31
 y 42
 end
-arch tree
+arch tree3
+x 31
+y 42
+end
+arch grass_only
 x 31
 y 43
 end
-arch tree
+arch tree3
+x 31
+y 43
+end
+arch grass_only
+x 31
+y 44
+end
+arch tree3
 x 31
 y 44
 end
@@ -7116,11 +7745,19 @@ arch woods_2
 x 31
 y 45
 end
-arch tree
+arch grass_only
 x 31
 y 46
 end
-arch tree
+arch tree3
+x 31
+y 46
+end
+arch grass_only
+x 31
+y 47
+end
+arch tree3
 x 31
 y 47
 end
@@ -7167,7 +7804,11 @@ arch steppe
 x 32
 y 8
 end
-arch evergreens
+arch grass_only
+x 32
+y 9
+end
+arch evergreens2
 x 32
 y 9
 end
@@ -7179,7 +7820,11 @@ arch grass
 x 32
 y 11
 end
-arch evergreens
+arch grass_only
+x 32
+y 12
+end
+arch evergreens2
 x 32
 y 12
 end
@@ -7187,7 +7832,11 @@ arch grass
 x 32
 y 13
 end
-arch evergreens
+arch grass_only
+x 32
+y 14
+end
+arch evergreens2
 x 32
 y 14
 end
@@ -7219,11 +7868,19 @@ arch cobblestones2
 x 32
 y 19
 end
-arch evergreens
+arch grass_only
 x 32
 y 20
 end
-arch evergreens
+arch evergreens2
+x 32
+y 20
+end
+arch grass_only
+x 32
+y 21
+end
+arch evergreens2
 x 32
 y 21
 end
@@ -7378,7 +8035,11 @@ arch steppe
 x 33
 y 9
 end
-arch evergreens
+arch grass_only
+x 33
+y 10
+end
+arch evergreens2
 x 33
 y 10
 end
@@ -7441,23 +8102,43 @@ arch cobblestones2
 x 33
 y 20
 end
-arch evergreens
+arch grass_only
 x 33
 y 21
 end
-arch evergreens
+arch evergreens2
+x 33
+y 21
+end
+arch grass_only
 x 33
 y 22
 end
-arch evergreens
+arch evergreens2
+x 33
+y 22
+end
+arch grass_only
 x 33
 y 23
 end
-arch evergreens
+arch evergreens2
+x 33
+y 23
+end
+arch grass_only
 x 33
 y 24
 end
-arch tree
+arch evergreens2
+x 33
+y 24
+end
+arch grass_only
+x 33
+y 25
+end
+arch tree3
 x 33
 y 25
 end
@@ -7652,7 +8333,11 @@ arch cobblestones2
 x 34
 y 20
 end
-arch evergreens
+arch grass_only
+x 34
+y 21
+end
+arch evergreens2
 x 34
 y 21
 end
@@ -7660,7 +8345,11 @@ arch swall_1_1
 x 34
 y 21
 end
-arch evergreens
+arch grass_only
+x 34
+y 22
+end
+arch evergreens2
 x 34
 y 22
 end
@@ -7668,7 +8357,11 @@ arch swall_2_1_1
 x 34
 y 22
 end
-arch evergreens
+arch grass_only
+x 34
+y 23
+end
+arch evergreens2
 x 34
 y 23
 end
@@ -7676,7 +8369,11 @@ arch swall_2_1_1
 x 34
 y 23
 end
-arch evergreens
+arch grass_only
+x 34
+y 24
+end
+arch evergreens2
 x 34
 y 24
 end
@@ -7684,7 +8381,11 @@ arch swall_2_1_1
 x 34
 y 24
 end
-arch evergreens
+arch grass_only
+x 34
+y 25
+end
+arch evergreens2
 x 34
 y 25
 end
@@ -7692,7 +8393,11 @@ arch swall_2_2_1
 x 34
 y 25
 end
-arch tree
+arch grass_only
+x 34
+y 26
+end
+arch tree3
 x 34
 y 26
 end
@@ -7736,35 +8441,67 @@ arch hills
 x 34
 y 36
 end
-arch tree
+arch grass_only
 x 34
 y 37
 end
-arch tree
+arch tree3
+x 34
+y 37
+end
+arch grass_only
 x 34
 y 38
 end
-arch tree
+arch tree3
+x 34
+y 38
+end
+arch grass_only
 x 34
 y 39
 end
-arch tree
+arch tree3
+x 34
+y 39
+end
+arch grass_only
 x 34
 y 40
 end
-arch tree
+arch tree3
+x 34
+y 40
+end
+arch grass_only
 x 34
 y 41
 end
-arch tree
+arch tree3
+x 34
+y 41
+end
+arch grass_only
 x 34
 y 42
 end
-arch tree
+arch tree3
+x 34
+y 42
+end
+arch grass_only
 x 34
 y 43
 end
-arch tree
+arch tree3
+x 34
+y 43
+end
+arch grass_only
+x 34
+y 44
+end
+arch tree3
 x 34
 y 44
 end
@@ -7891,11 +8628,19 @@ arch cobblestones2
 x 35
 y 20
 end
-arch evergreens
+arch grass_only
 x 35
 y 21
 end
-arch evergreens
+arch evergreens2
+x 35
+y 21
+end
+arch grass_only
+x 35
+y 22
+end
+arch evergreens2
 x 35
 y 22
 end
@@ -7959,39 +8704,75 @@ arch hills
 x 35
 y 35
 end
-arch tree
+arch grass_only
 x 35
 y 36
 end
-arch tree
+arch tree3
+x 35
+y 36
+end
+arch grass_only
 x 35
 y 37
 end
-arch tree
+arch tree3
+x 35
+y 37
+end
+arch grass_only
 x 35
 y 38
 end
-arch tree
+arch tree3
+x 35
+y 38
+end
+arch grass_only
 x 35
 y 39
 end
-arch tree
+arch tree3
+x 35
+y 39
+end
+arch grass_only
 x 35
 y 40
 end
-arch tree
+arch tree3
+x 35
+y 40
+end
+arch grass_only
 x 35
 y 41
 end
-arch tree
+arch tree3
+x 35
+y 41
+end
+arch grass_only
 x 35
 y 42
 end
-arch tree
+arch tree3
+x 35
+y 42
+end
+arch grass_only
 x 35
 y 43
 end
-arch tree
+arch tree3
+x 35
+y 43
+end
+arch grass_only
+x 35
+y 44
+end
+arch tree3
 x 35
 y 44
 end
@@ -8130,7 +8911,11 @@ arch swall_2_1_2
 x 36
 y 25
 end
-arch tree
+arch grass_only
+x 36
+y 26
+end
+arch tree3
 x 36
 y 26
 end
@@ -8138,7 +8923,11 @@ arch hills
 x 36
 y 27
 end
-arch tree
+arch grass_only
+x 36
+y 28
+end
+arch tree3
 x 36
 y 28
 end
@@ -8166,7 +8955,11 @@ arch hills
 x 36
 y 34
 end
-arch tree
+arch grass_only
+x 36
+y 35
+end
+arch tree3
 x 36
 y 35
 end
@@ -8174,31 +8967,59 @@ arch brush
 x 36
 y 36
 end
-arch tree
+arch grass_only
 x 36
 y 37
 end
-arch tree
+arch tree3
+x 36
+y 37
+end
+arch grass_only
 x 36
 y 38
 end
-arch tree
+arch tree3
+x 36
+y 38
+end
+arch grass_only
 x 36
 y 39
 end
-arch tree
+arch tree3
+x 36
+y 39
+end
+arch grass_only
 x 36
 y 40
 end
-arch tree
+arch tree3
+x 36
+y 40
+end
+arch grass_only
 x 36
 y 41
 end
-arch tree
+arch tree3
+x 36
+y 41
+end
+arch grass_only
 x 36
 y 42
 end
-arch tree
+arch tree3
+x 36
+y 42
+end
+arch grass_only
+x 36
+y 43
+end
+arch tree3
 x 36
 y 43
 end
@@ -8321,7 +9142,11 @@ arch brush
 x 37
 y 21
 end
-arch tree
+arch grass_only
+x 37
+y 22
+end
+arch tree3
 x 37
 y 22
 end
@@ -8329,11 +9154,19 @@ arch cobblestones2
 x 37
 y 23
 end
-arch tree
+arch grass_only
 x 37
 y 24
 end
-arch tree
+arch tree3
+x 37
+y 24
+end
+arch grass_only
+x 37
+y 25
+end
+arch tree3
 x 37
 y 25
 end
@@ -8341,7 +9174,11 @@ arch swall_2_1_2
 x 37
 y 25
 end
-arch tree
+arch grass_only
+x 37
+y 26
+end
+arch tree3
 x 37
 y 26
 end
@@ -8377,7 +9214,11 @@ arch hills
 x 37
 y 34
 end
-arch tree
+arch grass_only
+x 37
+y 35
+end
+arch tree3
 x 37
 y 35
 end
@@ -8385,27 +9226,51 @@ arch brush
 x 37
 y 36
 end
-arch tree
+arch grass_only
 x 37
 y 37
 end
-arch tree
+arch tree3
+x 37
+y 37
+end
+arch grass_only
 x 37
 y 38
 end
-arch tree
+arch tree3
+x 37
+y 38
+end
+arch grass_only
 x 37
 y 39
 end
-arch tree
+arch tree3
+x 37
+y 39
+end
+arch grass_only
 x 37
 y 40
 end
-arch tree
+arch tree3
+x 37
+y 40
+end
+arch grass_only
 x 37
 y 41
 end
-arch tree
+arch tree3
+x 37
+y 41
+end
+arch grass_only
+x 37
+y 42
+end
+arch tree3
 x 37
 y 42
 end
@@ -8425,7 +9290,11 @@ arch woods_2
 x 37
 y 46
 end
-arch tree
+arch grass_only
+x 37
+y 47
+end
+arch tree3
 x 37
 y 47
 end
@@ -8492,7 +9361,11 @@ arch grass
 x 38
 y 12
 end
-arch evergreens
+arch grass_only
+x 38
+y 13
+end
+arch evergreens2
 x 38
 y 13
 end
@@ -8524,7 +9397,11 @@ arch brush
 x 38
 y 19
 end
-arch tree
+arch grass_only
+x 38
+y 20
+end
+arch tree3
 x 38
 y 20
 end
@@ -8600,15 +9477,27 @@ arch hills
 x 38
 y 35
 end
-arch tree
+arch grass_only
 x 38
 y 36
 end
-arch tree
+arch tree3
+x 38
+y 36
+end
+arch grass_only
 x 38
 y 37
 end
-arch tree
+arch tree3
+x 38
+y 37
+end
+arch grass_only
+x 38
+y 38
+end
+arch tree3
 x 38
 y 38
 end
@@ -8616,7 +9505,11 @@ arch hills
 x 38
 y 39
 end
-arch tree
+arch grass_only
+x 38
+y 40
+end
+arch tree3
 x 38
 y 40
 end
@@ -8640,7 +9533,11 @@ arch hills
 x 38
 y 45
 end
-arch tree
+arch grass_only
+x 38
+y 46
+end
+arch tree3
 x 38
 y 46
 end
@@ -8648,7 +9545,11 @@ arch jungle_1
 x 38
 y 47
 end
-arch tree
+arch grass_only
+x 38
+y 48
+end
+arch tree3
 x 38
 y 48
 end
@@ -8719,7 +9620,11 @@ arch grass
 x 39
 y 13
 end
-arch evergreens
+arch grass_only
+x 39
+y 14
+end
+arch evergreens2
 x 39
 y 14
 end
@@ -8767,7 +9672,11 @@ arch brush
 x 39
 y 24
 end
-arch tree
+arch grass_only
+x 39
+y 25
+end
+arch tree3
 x 39
 y 25
 end
@@ -8815,7 +9724,11 @@ arch hills
 x 39
 y 35
 end
-arch tree
+arch grass_only
+x 39
+y 36
+end
+arch tree3
 x 39
 y 36
 end
@@ -8926,7 +9839,11 @@ arch swall_2_1_2
 x 40
 y 12
 end
-arch evergreens
+arch grass_only
+x 40
+y 13
+end
+arch evergreens2
 x 40
 y 13
 end
@@ -8978,7 +9895,11 @@ arch brush
 x 40
 y 24
 end
-arch tree
+arch grass_only
+x 40
+y 25
+end
+arch tree3
 x 40
 y 25
 end
@@ -8986,7 +9907,11 @@ arch swall_2_1_2
 x 40
 y 25
 end
-arch tree
+arch grass_only
+x 40
+y 26
+end
+arch tree3
 x 40
 y 26
 end
@@ -9070,7 +9995,11 @@ arch hills
 x 40
 y 46
 end
-arch tree
+arch grass_only
+x 40
+y 47
+end
+arch tree3
 x 40
 y 47
 end
@@ -9078,7 +10007,11 @@ arch woods_2
 x 40
 y 48
 end
-arch tree
+arch grass_only
+x 40
+y 49
+end
+arch tree3
 x 40
 y 49
 end
@@ -9333,7 +10266,11 @@ arch woods_2
 x 41
 y 48
 end
-arch tree
+arch grass_only
+x 41
+y 49
+end
+arch tree3
 x 41
 y 49
 end
@@ -9388,15 +10325,27 @@ arch hills
 x 42
 y 12
 end
-arch evergreens
+arch grass_only
 x 42
 y 13
 end
-arch evergreens
+arch evergreens2
+x 42
+y 13
+end
+arch grass_only
 x 42
 y 14
 end
-arch evergreens
+arch evergreens2
+x 42
+y 14
+end
+arch grass_only
+x 42
+y 15
+end
+arch evergreens2
 x 42
 y 15
 end
@@ -9420,7 +10369,11 @@ arch brush
 x 42
 y 20
 end
-arch evergreens
+arch grass_only
+x 42
+y 21
+end
+arch evergreens2
 x 42
 y 21
 end
@@ -9428,11 +10381,19 @@ arch brush
 x 42
 y 22
 end
-arch evergreens
+arch grass_only
 x 42
 y 23
 end
-arch tree
+arch evergreens2
+x 42
+y 23
+end
+arch grass_only
+x 42
+y 24
+end
+arch tree3
 x 42
 y 24
 end
@@ -9440,7 +10401,11 @@ arch hills
 x 42
 y 25
 end
-arch tree
+arch grass_only
+x 42
+y 26
+end
+arch tree3
 x 42
 y 26
 end
@@ -9456,7 +10421,11 @@ arch hills
 x 42
 y 29
 end
-arch tree
+arch grass_only
+x 42
+y 30
+end
+arch tree3
 x 42
 y 30
 end
@@ -9528,11 +10497,19 @@ arch woods_2
 x 42
 y 47
 end
-arch tree
+arch grass_only
 x 42
 y 48
 end
-arch tree
+arch tree3
+x 42
+y 48
+end
+arch grass_only
+x 42
+y 49
+end
+arch tree3
 x 42
 y 49
 end
@@ -9595,43 +10572,83 @@ arch hills
 x 43
 y 13
 end
-arch evergreens
+arch grass_only
 x 43
 y 14
 end
-arch evergreens
+arch evergreens2
+x 43
+y 14
+end
+arch grass_only
 x 43
 y 15
 end
-arch evergreens
+arch evergreens2
+x 43
+y 15
+end
+arch grass_only
 x 43
 y 16
 end
-arch evergreens
+arch evergreens2
+x 43
+y 16
+end
+arch grass_only
 x 43
 y 17
 end
-arch evergreens
+arch evergreens2
+x 43
+y 17
+end
+arch grass_only
 x 43
 y 18
 end
-arch evergreens
+arch evergreens2
+x 43
+y 18
+end
+arch grass_only
 x 43
 y 19
 end
-arch evergreens
+arch evergreens2
+x 43
+y 19
+end
+arch grass_only
 x 43
 y 20
 end
-arch evergreens
+arch evergreens2
+x 43
+y 20
+end
+arch grass_only
 x 43
 y 21
 end
-arch evergreens
+arch evergreens2
+x 43
+y 21
+end
+arch grass_only
 x 43
 y 22
 end
-arch evergreens
+arch evergreens2
+x 43
+y 22
+end
+arch grass_only
+x 43
+y 23
+end
+arch evergreens2
 x 43
 y 23
 end
@@ -9727,7 +10744,11 @@ arch woods_2
 x 43
 y 46
 end
-arch tree
+arch grass_only
+x 43
+y 47
+end
+arch tree3
 x 43
 y 47
 end
@@ -9802,35 +10823,67 @@ arch hills
 x 44
 y 15
 end
-arch evergreens
+arch grass_only
 x 44
 y 16
 end
-arch evergreens
+arch evergreens2
+x 44
+y 16
+end
+arch grass_only
 x 44
 y 17
 end
-arch evergreens
+arch evergreens2
+x 44
+y 17
+end
+arch grass_only
 x 44
 y 18
 end
-arch evergreens
+arch evergreens2
+x 44
+y 18
+end
+arch grass_only
 x 44
 y 19
 end
-arch evergreens
+arch evergreens2
+x 44
+y 19
+end
+arch grass_only
 x 44
 y 20
 end
-arch evergreens
+arch evergreens2
+x 44
+y 20
+end
+arch grass_only
 x 44
 y 21
 end
-arch evergreens
+arch evergreens2
+x 44
+y 21
+end
+arch grass_only
 x 44
 y 22
 end
-arch evergreens
+arch evergreens2
+x 44
+y 22
+end
+arch grass_only
+x 44
+y 23
+end
+arch evergreens2
 x 44
 y 23
 end
@@ -9862,7 +10915,11 @@ arch hills
 x 44
 y 30
 end
-arch tree
+arch grass_only
+x 44
+y 31
+end
+arch tree3
 x 44
 y 31
 end
@@ -9874,7 +10931,11 @@ arch hills
 x 44
 y 33
 end
-arch tree
+arch grass_only
+x 44
+y 34
+end
+arch tree3
 x 44
 y 34
 end
@@ -9890,11 +10951,19 @@ arch hills
 x 44
 y 37
 end
-arch tree
+arch grass_only
 x 44
 y 38
 end
-arch tree
+arch tree3
+x 44
+y 38
+end
+arch grass_only
+x 44
+y 39
+end
+arch tree3
 x 44
 y 39
 end
@@ -9926,7 +10995,11 @@ arch woods
 x 44
 y 46
 end
-arch tree
+arch grass_only
+x 44
+y 47
+end
+arch tree3
 x 44
 y 47
 end
@@ -10009,23 +11082,43 @@ arch hills
 x 45
 y 17
 end
-arch evergreens
+arch grass_only
 x 45
 y 18
 end
-arch evergreens
+arch evergreens2
+x 45
+y 18
+end
+arch grass_only
 x 45
 y 19
 end
-arch evergreens
+arch evergreens2
+x 45
+y 19
+end
+arch grass_only
 x 45
 y 20
 end
-arch evergreens
+arch evergreens2
+x 45
+y 20
+end
+arch grass_only
 x 45
 y 21
 end
-arch evergreens
+arch evergreens2
+x 45
+y 21
+end
+arch grass_only
+x 45
+y 22
+end
+arch evergreens2
 x 45
 y 22
 end
@@ -10085,15 +11178,27 @@ arch hills
 x 45
 y 36
 end
-arch tree
+arch grass_only
 x 45
 y 37
 end
-arch tree
+arch tree3
+x 45
+y 37
+end
+arch grass_only
 x 45
 y 38
 end
-arch tree
+arch tree3
+x 45
+y 38
+end
+arch grass_only
+x 45
+y 39
+end
+arch tree3
 x 45
 y 39
 end
@@ -10101,7 +11206,11 @@ arch brush
 x 45
 y 40
 end
-arch tree
+arch grass_only
+x 45
+y 41
+end
+arch tree3
 x 45
 y 41
 end
@@ -10113,7 +11222,11 @@ arch hills
 x 45
 y 43
 end
-arch tree
+arch grass_only
+x 45
+y 44
+end
+arch tree3
 x 45
 y 44
 end
@@ -10121,11 +11234,19 @@ arch hills
 x 45
 y 45
 end
-arch tree
+arch grass_only
 x 45
 y 46
 end
-arch tree
+arch tree3
+x 45
+y 46
+end
+arch grass_only
+x 45
+y 47
+end
+arch tree3
 x 45
 y 47
 end
@@ -10284,15 +11405,27 @@ arch hills
 x 46
 y 36
 end
-arch tree
+arch grass_only
 x 46
 y 37
 end
-arch tree
+arch tree3
+x 46
+y 37
+end
+arch grass_only
 x 46
 y 38
 end
-arch tree
+arch tree3
+x 46
+y 38
+end
+arch grass_only
+x 46
+y 39
+end
+arch tree3
 x 46
 y 39
 end
@@ -10300,19 +11433,35 @@ arch brush
 x 46
 y 40
 end
-arch tree
+arch grass_only
 x 46
 y 41
 end
-arch tree
+arch tree3
+x 46
+y 41
+end
+arch grass_only
 x 46
 y 42
 end
-arch tree
+arch tree3
+x 46
+y 42
+end
+arch grass_only
 x 46
 y 43
 end
-arch tree
+arch tree3
+x 46
+y 43
+end
+arch grass_only
+x 46
+y 44
+end
+arch tree3
 x 46
 y 44
 end
@@ -10483,7 +11632,11 @@ arch hills
 x 47
 y 36
 end
-arch tree
+arch grass_only
+x 47
+y 37
+end
+arch tree3
 x 47
 y 37
 end
@@ -10499,11 +11652,19 @@ arch woods
 x 47
 y 40
 end
-arch tree
+arch grass_only
 x 47
 y 41
 end
-arch tree
+arch tree3
+x 47
+y 41
+end
+arch grass_only
+x 47
+y 42
+end
+arch tree3
 x 47
 y 42
 end
@@ -10511,11 +11672,19 @@ arch brush
 x 47
 y 43
 end
-arch tree
+arch grass_only
 x 47
 y 44
 end
-arch tree
+arch tree3
+x 47
+y 44
+end
+arch grass_only
+x 47
+y 45
+end
+arch tree3
 x 47
 y 45
 end
@@ -10527,11 +11696,19 @@ arch hills
 x 47
 y 47
 end
-arch tree
+arch grass_only
 x 47
 y 48
 end
-arch tree
+arch tree3
+x 47
+y 48
+end
+arch grass_only
+x 47
+y 49
+end
+arch tree3
 x 47
 y 49
 end
@@ -10686,7 +11863,11 @@ arch jungle_1
 x 48
 y 37
 end
-arch tree
+arch grass_only
+x 48
+y 38
+end
+arch tree3
 x 48
 y 38
 end
@@ -10694,31 +11875,59 @@ arch desert
 x 48
 y 39
 end
-arch tree
+arch grass_only
 x 48
 y 40
 end
-arch tree
+arch tree3
+x 48
+y 40
+end
+arch grass_only
 x 48
 y 41
 end
-arch tree
+arch tree3
+x 48
+y 41
+end
+arch grass_only
 x 48
 y 42
 end
-arch tree
+arch tree3
+x 48
+y 42
+end
+arch grass_only
 x 48
 y 43
 end
-arch tree
+arch tree3
+x 48
+y 43
+end
+arch grass_only
 x 48
 y 44
 end
-arch tree
+arch tree3
+x 48
+y 44
+end
+arch grass_only
 x 48
 y 45
 end
-arch tree
+arch tree3
+x 48
+y 45
+end
+arch grass_only
+x 48
+y 46
+end
+arch tree3
 x 48
 y 46
 end
@@ -10877,7 +12086,11 @@ arch steppe
 x 49
 y 35
 end
-arch tree
+arch grass_only
+x 49
+y 36
+end
+arch tree3
 x 49
 y 36
 end
@@ -10885,7 +12098,11 @@ arch woods
 x 49
 y 37
 end
-arch tree
+arch grass_only
+x 49
+y 38
+end
+arch tree3
 x 49
 y 38
 end
@@ -10893,15 +12110,27 @@ arch woods
 x 49
 y 39
 end
-arch tree
+arch grass_only
 x 49
 y 40
 end
-arch tree
+arch tree3
+x 49
+y 40
+end
+arch grass_only
 x 49
 y 41
 end
-arch tree
+arch tree3
+x 49
+y 41
+end
+arch grass_only
+x 49
+y 42
+end
+arch tree3
 x 49
 y 42
 end
@@ -10913,11 +12142,19 @@ arch woods_2
 x 49
 y 44
 end
-arch tree
+arch grass_only
 x 49
 y 45
 end
-arch tree
+arch tree3
+x 49
+y 45
+end
+arch grass_only
+x 49
+y 46
+end
+arch tree3
 x 49
 y 46
 end
