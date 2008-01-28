@@ -1,0 +1,89 @@
+arch map
+name <unnamed>
+width 16
+height 16
+msg
+Created:  1998-07-28
+endmsg
+end
+arch bwall_2_2_2
+x 1
+y 2
+end
+arch bwall_2_1_1
+x 1
+y 3
+end
+arch bwall_2_1_1
+x 1
+y 4
+end
+arch bwall_2_1_1
+x 1
+y 5
+end
+arch bwall_2_2_1
+x 1
+y 6
+end
+arch bwall_2_1_2
+x 2
+y 2
+end
+arch bwall_2_1_2
+x 2
+y 6
+end
+arch bwall_2_1_2
+x 3
+y 2
+end
+arch chinese_dragon
+hp 10
+x 3
+y 4
+end
+arch bwall_2_1_2
+x 3
+y 6
+end
+arch bwall_2_1_2
+x 4
+y 2
+end
+arch bwall_2_1_2
+x 4
+y 6
+end
+arch bwall_3_3
+x 5
+y 2
+end
+arch bwall_2_2_1
+x 5
+y 3
+end
+arch bwall_2_2_2
+x 5
+y 5
+end
+arch bwall_3_1
+x 5
+y 6
+end
+arch bwall_2_2_3
+x 6
+y 2
+end
+arch bwall_2_2_4
+x 6
+y 3
+end
+arch bwall_2_2_3
+x 6
+y 5
+end
+arch bwall_2_2_4
+x 6
+y 6
+end

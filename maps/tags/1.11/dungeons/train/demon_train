@@ -1,0 +1,4145 @@
+arch map
+name demon_train
+region wilderness
+width 21
+height 21
+enter_x 10
+enter_y 17
+msg
+Created:  2005-05-30 Gene Alexander
+endmsg
+outdoor 1
+end
+arch shallow_sea
+elevation -2
+end
+arch shallow_sea
+y 1
+elevation -2
+end
+arch shallow_sea
+y 2
+elevation -2
+end
+arch shallow_sea
+y 3
+elevation -2
+end
+arch shallow_sea
+y 4
+elevation -2
+end
+arch shallow_sea
+y 5
+elevation -2
+end
+arch shallow_sea
+y 6
+elevation -2
+end
+arch shallow_sea
+y 7
+elevation -2
+end
+arch shallow_sea
+y 8
+elevation -2
+end
+arch shallow_sea
+y 9
+elevation -2
+end
+arch shallow_sea
+y 10
+elevation -2
+end
+arch shallow_sea
+y 11
+elevation -2
+end
+arch shallow_sea
+y 12
+elevation -2
+end
+arch shallow_sea
+y 13
+elevation -2
+end
+arch shallow_sea
+y 14
+elevation -2
+end
+arch shallow_sea
+y 15
+elevation -2
+end
+arch shallow_sea
+y 16
+elevation -2
+end
+arch shallow_sea
+y 17
+elevation -2
+end
+arch shallow_sea
+y 18
+elevation -2
+end
+arch shallow_sea
+y 19
+elevation -2
+end
+arch shallow_sea
+y 20
+elevation -2
+end
+arch shallow_sea
+x 1
+elevation -2
+end
+arch shallow_sea
+x 1
+y 1
+elevation -2
+end
+arch shallow_sea
+x 1
+y 2
+elevation -2
+end
+arch shallow_sea
+x 1
+y 3
+elevation -2
+end
+arch shallow_sea
+x 1
+y 4
+elevation -2
+end
+arch shallow_sea
+x 1
+y 5
+elevation -2
+end
+arch shallow_sea
+x 1
+y 6
+elevation -2
+end
+arch shallow_sea
+x 1
+y 7
+elevation -2
+end
+arch shallow_sea
+x 1
+y 8
+elevation -2
+end
+arch shallow_sea
+x 1
+y 9
+elevation -2
+end
+arch shallow_sea
+x 1
+y 10
+elevation -2
+end
+arch shallow_sea
+x 1
+y 11
+elevation -2
+end
+arch shallow_sea
+x 1
+y 12
+elevation -2
+end
+arch shallow_sea
+x 1
+y 13
+elevation -2
+end
+arch shallow_sea
+x 1
+y 14
+elevation -2
+end
+arch shallow_sea
+x 1
+y 15
+elevation -2
+end
+arch shallow_sea
+x 1
+y 16
+elevation -2
+end
+arch shallow_sea
+x 1
+y 17
+elevation -2
+end
+arch shallow_sea
+x 1
+y 18
+elevation -2
+end
+arch shallow_sea
+x 1
+y 19
+elevation -2
+end
+arch shallow_sea
+x 1
+y 20
+elevation -2
+end
+arch small_stones
+x 2
+end
+arch small_stones
+x 2
+y 1
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 2
+end
+arch small_stones
+x 2
+y 2
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 3
+end
+arch small_stones
+x 2
+y 3
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 4
+end
+arch small_stones
+x 2
+y 4
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 5
+end
+arch small_stones
+x 2
+y 5
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 6
+end
+arch small_stones
+x 2
+y 6
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 7
+end
+arch small_stones
+x 2
+y 7
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 8
+end
+arch small_stones
+x 2
+y 8
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 9
+end
+arch small_stones
+x 2
+y 9
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 10
+end
+arch small_stones
+x 2
+y 10
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 11
+end
+arch small_stones
+x 2
+y 11
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 12
+end
+arch small_stones
+x 2
+y 12
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 13
+end
+arch small_stones
+x 2
+y 13
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 14
+end
+arch small_stones
+x 2
+y 14
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 15
+end
+arch small_stones
+x 2
+y 15
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 16
+end
+arch small_stones
+x 2
+y 16
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 17
+end
+arch small_stones
+x 2
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 2
+y 18
+end
+arch small_stones
+x 2
+y 18
+end
+arch small_stones
+x 2
+y 19
+end
+arch small_stones
+x 2
+y 20
+end
+arch grass
+x 3
+elevation 343
+end
+arch small_stones
+x 3
+y 1
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 3
+y 2
+end
+arch small_stones
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch grass
+x 3
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch grass
+x 3
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch grass
+x 3
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch small_stones
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch grass
+x 3
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 8
+end
+arch small_stones
+x 3
+y 8
+end
+arch dungeon_magic
+x 3
+y 9
+end
+arch small_stones
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch grass
+x 3
+y 10
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch grass
+x 3
+y 11
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch grass
+x 3
+y 12
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch grass
+x 3
+y 13
+elevation 682
+end
+arch small_stones
+x 3
+y 13
+end
+arch dungeon_magic
+x 3
+y 14
+end
+arch grass
+x 3
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 15
+end
+arch grass
+x 3
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 16
+end
+arch grass
+x 3
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 3
+y 17
+end
+arch small_stones
+x 3
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 3
+y 18
+end
+arch grass
+x 3
+y 18
+elevation 682
+end
+arch small_stones
+x 3
+y 19
+end
+arch grass
+x 3
+y 20
+elevation 343
+end
+arch grass
+x 4
+elevation 343
+end
+arch grass
+x 4
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 4
+y 2
+end
+arch grass
+x 4
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch grass
+x 4
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch grass
+x 4
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch grass
+x 4
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch grass
+x 4
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch grass
+x 4
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 8
+end
+arch grass
+x 4
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch grass
+x 4
+y 9
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch grass
+x 4
+y 10
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch grass
+x 4
+y 11
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch small_stones
+x 4
+y 12
+end
+arch dungeon_magic
+x 4
+y 13
+end
+arch grass
+x 4
+y 13
+elevation 682
+end
+arch small_stones
+x 4
+y 13
+end
+arch dungeon_magic
+x 4
+y 14
+end
+arch grass
+x 4
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 15
+end
+arch grass
+x 4
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 16
+end
+arch grass
+x 4
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 4
+y 17
+end
+arch small_stones
+x 4
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 4
+y 18
+end
+arch small_stones
+x 4
+y 18
+end
+arch small_stones
+x 4
+y 19
+end
+arch grass
+x 4
+y 20
+elevation 343
+end
+arch grass
+x 5
+elevation 343
+end
+arch grass
+x 5
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 5
+y 2
+end
+arch grass
+x 5
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch grass
+x 5
+y 3
+elevation 682
+end
+arch raas
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 4
+end
+arch grass
+x 5
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 5
+end
+arch grass
+x 5
+y 5
+elevation 682
+end
+arch raas
+x 5
+y 5
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch grass
+x 5
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch grass
+x 5
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch grass
+x 5
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 9
+end
+arch grass
+x 5
+y 9
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 10
+end
+arch small_stones
+x 5
+y 10
+end
+arch dungeon_magic
+x 5
+y 11
+end
+arch small_stones
+x 5
+y 11
+end
+arch dungeon_magic
+x 5
+y 12
+end
+arch small_stones
+x 5
+y 12
+end
+arch dungeon_magic
+x 5
+y 13
+end
+arch grass
+x 5
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 14
+end
+arch grass
+x 5
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 15
+end
+arch grass
+x 5
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 16
+end
+arch grass
+x 5
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 5
+y 17
+end
+arch small_stones
+x 5
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 5
+y 18
+end
+arch grass
+x 5
+y 18
+elevation 682
+end
+arch grass
+x 5
+y 19
+elevation 343
+end
+arch grass
+x 5
+y 20
+elevation 343
+end
+arch grass
+x 6
+elevation 343
+end
+arch grass
+x 6
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 6
+y 2
+end
+arch grass
+x 6
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch grass
+x 6
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 4
+end
+arch grass
+x 6
+y 4
+elevation 682
+end
+arch raas
+x 6
+y 4
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch grass
+x 6
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch grass
+x 6
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 7
+end
+arch grass
+x 6
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 8
+end
+arch grass
+x 6
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch grass
+x 6
+y 9
+elevation 682
+end
+arch swall_1_4
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch small_stones
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch grass
+x 6
+y 11
+elevation 682
+end
+arch swall_1_4
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch small_stones
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch grass
+x 6
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch grass
+x 6
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 15
+end
+arch grass
+x 6
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 16
+end
+arch grass
+x 6
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 6
+y 17
+end
+arch grass
+x 6
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 6
+y 18
+end
+arch grass
+x 6
+y 18
+elevation 682
+end
+arch grass
+x 6
+y 19
+elevation 343
+end
+arch grass
+x 6
+y 20
+elevation 343
+end
+arch grass
+x 7
+elevation 343
+end
+arch grass
+x 7
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 7
+y 2
+end
+arch grass
+x 7
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 7
+y 3
+end
+arch grass
+x 7
+y 3
+elevation 682
+end
+arch raas
+x 7
+y 3
+end
+arch dungeon_magic
+x 7
+y 4
+end
+arch grass
+x 7
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch grass
+x 7
+y 5
+elevation 682
+end
+arch raas
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 6
+end
+arch grass
+x 7
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 7
+y 7
+end
+arch grass
+x 7
+y 7
+elevation 682
+end
+arch swall_2_2_2
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 8
+end
+arch grass
+x 7
+y 8
+elevation 682
+end
+arch swall_2_1_1
+x 7
+y 8
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch grass
+x 7
+y 9
+elevation 682
+end
+arch swall_3_1
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch grass
+x 7
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 7
+y 10
+connected 1
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch grass
+x 7
+y 11
+elevation 682
+end
+arch swall_2_1_2
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch small_stones
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch small_stones
+x 7
+y 13
+end
+arch dungeon_magic
+x 7
+y 14
+end
+arch small_stones
+x 7
+y 14
+end
+arch dungeon_magic
+x 7
+y 15
+end
+arch grass
+x 7
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 7
+y 16
+end
+arch grass
+x 7
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 7
+y 17
+end
+arch grass
+x 7
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 7
+y 18
+end
+arch grass
+x 7
+y 18
+elevation 682
+end
+arch grass
+x 7
+y 19
+elevation 343
+end
+arch grass
+x 7
+y 20
+elevation 343
+end
+arch grass
+x 8
+elevation 343
+end
+arch grass
+x 8
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 8
+y 2
+end
+arch grass
+x 8
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 3
+end
+arch grass
+x 8
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 4
+end
+arch grass
+x 8
+y 4
+elevation 682
+end
+arch raas
+x 8
+y 4
+end
+arch dungeon_magic
+x 8
+y 5
+end
+arch grass
+x 8
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 6
+end
+arch grass
+x 8
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 7
+end
+arch grass
+x 8
+y 7
+elevation 682
+end
+arch swall_2_1_2
+x 8
+y 7
+end
+arch dungeon_magic
+x 8
+y 8
+end
+arch grass
+x 8
+y 8
+elevation 682
+end
+arch statue
+face fiend.112
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch grass
+x 8
+y 9
+elevation 682
+end
+arch swall_2_1_2
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch grass
+x 8
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 8
+y 10
+connected 2
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch grass
+x 8
+y 11
+elevation 682
+end
+arch swall_3_3
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch grass
+x 8
+y 12
+elevation 682
+end
+arch swall_2_1_1
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch grass
+x 8
+y 13
+elevation 682
+end
+arch swall_1_2
+x 8
+y 13
+end
+arch dungeon_magic
+x 8
+y 14
+end
+arch small_stones
+x 8
+y 14
+end
+arch dungeon_magic
+x 8
+y 15
+end
+arch grass
+x 8
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 16
+end
+arch grass
+x 8
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 8
+y 17
+end
+arch grass
+x 8
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 8
+y 18
+end
+arch grass
+x 8
+y 18
+elevation 682
+end
+arch grass
+x 8
+y 19
+elevation 343
+end
+arch grass
+x 8
+y 20
+elevation 343
+end
+arch grass
+x 9
+elevation 343
+end
+arch grass
+x 9
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 9
+y 2
+end
+arch grass
+x 9
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 9
+y 3
+end
+arch grass
+x 9
+y 3
+elevation 682
+end
+arch raas
+x 9
+y 3
+end
+arch dungeon_magic
+x 9
+y 4
+end
+arch grass
+x 9
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 9
+y 5
+end
+arch grass
+x 9
+y 5
+elevation 682
+end
+arch raas
+x 9
+y 5
+end
+arch dungeon_magic
+x 9
+y 6
+end
+arch grass
+x 9
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch grass
+x 9
+y 7
+elevation 682
+end
+arch swall_2_1_2
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
+end
+arch grass
+x 9
+y 8
+elevation 682
+end
+arch statue
+face raas.131
+x 9
+y 8
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch grass
+x 9
+y 9
+elevation 682
+end
+arch swall_2_1_2
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch grass
+x 9
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 9
+y 10
+connected 3
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch grass
+x 9
+y 11
+elevation 682
+end
+arch swall_2_1_2
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch grass
+x 9
+y 12
+elevation 682
+end
+arch firebrand
+x 9
+y 12
+no_pick 1
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch grass
+x 9
+y 13
+elevation 682
+end
+arch altar
+name Drop Firebrand
+slaying Firebrand
+food 1
+x 9
+y 13
+connected 1
+end
+arch light4
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
+end
+arch small_stones
+x 9
+y 14
+end
+arch dungeon_magic
+x 9
+y 15
+end
+arch small_stones
+x 9
+y 15
+end
+arch dungeon_magic
+x 9
+y 16
+end
+arch grass
+x 9
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 9
+y 17
+end
+arch grass
+x 9
+y 17
+elevation 682
+end
+arch small_stones
+x 9
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 9
+y 18
+end
+arch grass
+x 9
+y 18
+elevation 682
+end
+arch grass
+x 9
+y 19
+elevation 343
+end
+arch grass
+x 9
+y 20
+elevation 343
+end
+arch grass
+x 10
+elevation 343
+end
+arch grass
+x 10
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 10
+y 2
+end
+arch grass
+x 10
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 10
+y 3
+end
+arch grass
+x 10
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 10
+y 4
+end
+arch grass
+x 10
+y 4
+elevation 682
+end
+arch raas
+x 10
+y 4
+end
+arch dungeon_magic
+x 10
+y 5
+end
+arch grass
+x 10
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 10
+y 6
+end
+arch grass
+x 10
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 10
+y 7
+end
+arch grass
+x 10
+y 7
+elevation 682
+end
+arch swall_3_3
+x 10
+y 7
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch grass
+x 10
+y 8
+elevation 682
+end
+arch swall_2_1_1
+x 10
+y 8
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch grass
+x 10
+y 9
+elevation 682
+end
+arch swall_3_1
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch grass
+x 10
+y 10
+elevation 682
+end
+arch stair_down_4
+slaying /!
+msg
+layoutstyle onion
+symmetry 0
+xsize 40
+ysize 40
+monsterstyle demon
+dungeon_level 10
+dungeon_depth 30
+decorstyle fireproof-gems
+wallstyle burningwall
+floorstyle lava
+exitstyle sstair
+orientation 2
+expand2x 1
+treasureoptions 1
+endmsg
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 11
+end
+arch grass
+x 10
+y 11
+elevation 682
+end
+arch swall_2_1_2
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch grass
+x 10
+y 12
+elevation 682
+end
+arch demonbane
+x 10
+y 12
+no_pick 1
+end
+arch dungeon_magic
+x 10
+y 13
+end
+arch grass
+x 10
+y 13
+elevation 682
+end
+arch altar
+name Drop Demonbane
+slaying Demonbane
+food 1
+x 10
+y 13
+connected 2
+end
+arch light4
+x 10
+y 13
+end
+arch dungeon_magic
+x 10
+y 14
+end
+arch small_stones
+x 10
+y 14
+end
+arch dungeon_magic
+x 10
+y 15
+end
+arch small_stones
+x 10
+y 15
+elevation 682
+end
+arch sign
+msg
+Training Centers Incorporated
+-=+=-
+Please pay the designated fee to enter
+the training center to train with our
+demon trainers.
+-=+=-
+Cowards need not enter. Cowardly
+running about may get one ejected
+from entering this training center.
+endmsg
+x 10
+y 15
+elevation 682
+move_on walk fly_low
+end
+arch dungeon_magic
+x 10
+y 16
+end
+arch small_stones
+x 10
+y 16
+end
+arch dungeon_magic
+x 10
+y 17
+end
+arch small_stones
+x 10
+y 17
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 10
+y 18
+end
+arch small_stones
+x 10
+y 18
+end
+arch small_stones
+x 10
+y 19
+end
+arch small_stones
+x 10
+y 20
+end
+arch grass
+x 11
+elevation 343
+end
+arch grass
+x 11
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 11
+y 2
+end
+arch grass
+x 11
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 11
+y 3
+end
+arch grass
+x 11
+y 3
+elevation 682
+end
+arch raas
+x 11
+y 3
+end
+arch dungeon_magic
+x 11
+y 4
+end
+arch grass
+x 11
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 11
+y 5
+end
+arch grass
+x 11
+y 5
+elevation 682
+end
+arch raas
+x 11
+y 5
+end
+arch dungeon_magic
+x 11
+y 6
+end
+arch grass
+x 11
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 11
+y 7
+end
+arch grass
+x 11
+y 7
+elevation 682
+end
+arch swall_2_1_2
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 8
+end
+arch grass
+x 11
+y 8
+elevation 682
+end
+arch statue
+face raas.131
+x 11
+y 8
+end
+arch dungeon_magic
+x 11
+y 9
+end
+arch grass
+x 11
+y 9
+elevation 682
+end
+arch swall_2_1_2
+x 11
+y 9
+end
+arch dungeon_magic
+x 11
+y 10
+end
+arch grass
+x 11
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 11
+y 10
+connected 3
+end
+arch dungeon_magic
+x 11
+y 11
+end
+arch grass
+x 11
+y 11
+elevation 682
+end
+arch swall_2_1_2
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch grass
+x 11
+y 12
+elevation 682
+end
+arch uw_sword
+x 11
+y 12
+no_pick 1
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch grass
+x 11
+y 13
+elevation 682
+end
+arch altar
+name Drop Belzebub's sword
+slaying Belzebub's sword
+food 1
+x 11
+y 13
+connected 3
+end
+arch light4
+x 11
+y 13
+end
+arch dungeon_magic
+x 11
+y 14
+end
+arch small_stones
+x 11
+y 14
+end
+arch dungeon_magic
+x 11
+y 15
+end
+arch small_stones
+x 11
+y 15
+end
+arch dungeon_magic
+x 11
+y 16
+end
+arch grass
+x 11
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 11
+y 17
+end
+arch grass
+x 11
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 11
+y 18
+end
+arch grass
+x 11
+y 18
+elevation 682
+end
+arch grass
+x 11
+y 19
+elevation 343
+end
+arch small_stones
+x 11
+y 19
+end
+arch grass
+x 11
+y 20
+elevation 343
+end
+arch grass
+x 12
+elevation 343
+end
+arch grass
+x 12
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 12
+y 2
+end
+arch grass
+x 12
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch grass
+x 12
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch grass
+x 12
+y 4
+elevation 682
+end
+arch raas
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch grass
+x 12
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch grass
+x 12
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch grass
+x 12
+y 7
+elevation 682
+end
+arch swall_2_1_2
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
+end
+arch grass
+x 12
+y 8
+elevation 682
+end
+arch statue
+face fiend.111
+x 12
+y 8
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch grass
+x 12
+y 9
+elevation 682
+end
+arch swall_2_1_2
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch grass
+x 12
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 12
+y 10
+connected 2
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch grass
+x 12
+y 11
+elevation 682
+end
+arch swall_3_3
+x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch grass
+x 12
+y 12
+elevation 682
+end
+arch swall_2_1_1
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 13
+end
+arch grass
+x 12
+y 13
+elevation 682
+end
+arch swall_1_2
+x 12
+y 13
+end
+arch dungeon_magic
+x 12
+y 14
+end
+arch small_stones
+x 12
+y 14
+end
+arch dungeon_magic
+x 12
+y 15
+end
+arch grass
+x 12
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 16
+end
+arch grass
+x 12
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch grass
+x 12
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 12
+y 18
+end
+arch grass
+x 12
+y 18
+elevation 682
+end
+arch grass
+x 12
+y 19
+elevation 343
+end
+arch grass
+x 12
+y 20
+elevation 343
+end
+arch grass
+x 13
+elevation 343
+end
+arch grass
+x 13
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 13
+y 2
+end
+arch grass
+x 13
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 3
+end
+arch grass
+x 13
+y 3
+elevation 682
+end
+arch raas
+x 13
+y 3
+end
+arch dungeon_magic
+x 13
+y 4
+end
+arch grass
+x 13
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 5
+end
+arch grass
+x 13
+y 5
+elevation 682
+end
+arch raas
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
+y 6
+end
+arch grass
+x 13
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 7
+end
+arch grass
+x 13
+y 7
+elevation 682
+end
+arch swall_2_2_3
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 8
+end
+arch grass
+x 13
+y 8
+elevation 682
+end
+arch swall_2_1_1
+x 13
+y 8
+end
+arch dungeon_magic
+x 13
+y 9
+end
+arch grass
+x 13
+y 9
+elevation 682
+end
+arch swall_3_1
+x 13
+y 9
+end
+arch dungeon_magic
+x 13
+y 10
+end
+arch grass
+x 13
+y 10
+elevation 682
+end
+arch grate_closed_2
+x 13
+y 10
+connected 1
+end
+arch dungeon_magic
+x 13
+y 11
+end
+arch grass
+x 13
+y 11
+elevation 682
+end
+arch swall_2_1_2
+x 13
+y 11
+end
+arch dungeon_magic
+x 13
+y 12
+end
+arch grass
+x 13
+y 12
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 13
+end
+arch grass
+x 13
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 14
+end
+arch small_stones
+x 13
+y 14
+end
+arch dungeon_magic
+x 13
+y 15
+end
+arch grass
+x 13
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 16
+end
+arch grass
+x 13
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 13
+y 17
+end
+arch grass
+x 13
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 13
+y 18
+end
+arch grass
+x 13
+y 18
+elevation 682
+end
+arch grass
+x 13
+y 19
+elevation 343
+end
+arch grass
+x 13
+y 20
+elevation 343
+end
+arch grass
+x 14
+elevation 343
+end
+arch grass
+x 14
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 14
+y 2
+end
+arch grass
+x 14
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch grass
+x 14
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 4
+end
+arch grass
+x 14
+y 4
+elevation 682
+end
+arch raas
+x 14
+y 4
+end
+arch dungeon_magic
+x 14
+y 5
+end
+arch grass
+x 14
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 6
+end
+arch grass
+x 14
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 7
+end
+arch grass
+x 14
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 8
+end
+arch grass
+x 14
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch grass
+x 14
+y 9
+elevation 682
+end
+arch swall_1_3
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch small_stones
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 11
+end
+arch grass
+x 14
+y 11
+elevation 682
+end
+arch swall_1_3
+x 14
+y 11
+end
+arch dungeon_magic
+x 14
+y 12
+end
+arch small_stones
+x 14
+y 12
+end
+arch dungeon_magic
+x 14
+y 13
+end
+arch small_stones
+x 14
+y 13
+end
+arch dungeon_magic
+x 14
+y 14
+end
+arch small_stones
+x 14
+y 14
+end
+arch dungeon_magic
+x 14
+y 15
+end
+arch grass
+x 14
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 16
+end
+arch grass
+x 14
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 14
+y 17
+end
+arch grass
+x 14
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 14
+y 18
+end
+arch grass
+x 14
+y 18
+elevation 682
+end
+arch grass
+x 14
+y 19
+elevation 343
+end
+arch grass
+x 14
+y 20
+elevation 343
+end
+arch grass
+x 15
+elevation 343
+end
+arch grass
+x 15
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 15
+y 2
+end
+arch grass
+x 15
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 3
+end
+arch grass
+x 15
+y 3
+elevation 682
+end
+arch raas
+x 15
+y 3
+end
+arch dungeon_magic
+x 15
+y 4
+end
+arch grass
+x 15
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 5
+end
+arch grass
+x 15
+y 5
+elevation 682
+end
+arch raas
+x 15
+y 5
+end
+arch dungeon_magic
+x 15
+y 6
+end
+arch grass
+x 15
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 7
+end
+arch grass
+x 15
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 8
+end
+arch grass
+x 15
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 9
+end
+arch grass
+x 15
+y 9
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 10
+end
+arch small_stones
+x 15
+y 10
+end
+arch dungeon_magic
+x 15
+y 11
+end
+arch small_stones
+x 15
+y 11
+end
+arch dungeon_magic
+x 15
+y 12
+end
+arch small_stones
+x 15
+y 12
+end
+arch dungeon_magic
+x 15
+y 13
+end
+arch grass
+x 15
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 14
+end
+arch grass
+x 15
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 15
+end
+arch grass
+x 15
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 16
+end
+arch grass
+x 15
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 15
+y 17
+end
+arch grass
+x 15
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 15
+y 18
+end
+arch grass
+x 15
+y 18
+elevation 682
+end
+arch grass
+x 15
+y 19
+elevation 343
+end
+arch grass
+x 15
+y 20
+elevation 343
+end
+arch grass
+x 16
+elevation 343
+end
+arch grass
+x 16
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 16
+y 2
+end
+arch grass
+x 16
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 3
+end
+arch grass
+x 16
+y 3
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 4
+end
+arch grass
+x 16
+y 4
+elevation 682
+end
+arch raas
+x 16
+y 4
+end
+arch dungeon_magic
+x 16
+y 5
+end
+arch grass
+x 16
+y 5
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 6
+end
+arch grass
+x 16
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 7
+end
+arch grass
+x 16
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 8
+end
+arch grass
+x 16
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 9
+end
+arch grass
+x 16
+y 9
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 10
+end
+arch grass
+x 16
+y 10
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 11
+end
+arch grass
+x 16
+y 11
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 12
+end
+arch grass
+x 16
+y 12
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 13
+end
+arch grass
+x 16
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 14
+end
+arch grass
+x 16
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 15
+end
+arch grass
+x 16
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 16
+end
+arch grass
+x 16
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 16
+y 17
+end
+arch grass
+x 16
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 16
+y 18
+end
+arch grass
+x 16
+y 18
+elevation 682
+end
+arch grass
+x 16
+y 19
+elevation 343
+end
+arch grass
+x 16
+y 20
+elevation 343
+end
+arch grass
+x 17
+elevation 343
+end
+arch grass
+x 17
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 17
+y 2
+end
+arch grass
+x 17
+y 2
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 3
+end
+arch grass
+x 17
+y 3
+elevation 682
+end
+arch raas
+x 17
+y 3
+end
+arch dungeon_magic
+x 17
+y 4
+end
+arch grass
+x 17
+y 4
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 5
+end
+arch grass
+x 17
+y 5
+elevation 682
+end
+arch raas
+x 17
+y 5
+end
+arch dungeon_magic
+x 17
+y 6
+end
+arch grass
+x 17
+y 6
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 7
+end
+arch grass
+x 17
+y 7
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 8
+end
+arch grass
+x 17
+y 8
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 9
+end
+arch grass
+x 17
+y 9
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 10
+end
+arch grass
+x 17
+y 10
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 11
+end
+arch grass
+x 17
+y 11
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 12
+end
+arch grass
+x 17
+y 12
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 13
+end
+arch grass
+x 17
+y 13
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 14
+end
+arch grass
+x 17
+y 14
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 15
+end
+arch grass
+x 17
+y 15
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 16
+end
+arch grass
+x 17
+y 16
+elevation 682
+end
+arch dungeon_magic
+x 17
+y 17
+end
+arch grass
+x 17
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 17
+y 18
+end
+arch grass
+x 17
+y 18
+elevation 682
+end
+arch grass
+x 17
+y 19
+elevation 343
+end
+arch grass
+x 17
+y 20
+elevation 343
+end
+arch grass
+x 18
+elevation 343
+end
+arch grass
+x 18
+y 1
+elevation 343
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 2
+end
+arch grass
+x 18
+y 2
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 3
+end
+arch grass
+x 18
+y 3
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 4
+end
+arch grass
+x 18
+y 4
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 5
+end
+arch grass
+x 18
+y 5
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 6
+end
+arch grass
+x 18
+y 6
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 7
+end
+arch grass
+x 18
+y 7
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 8
+end
+arch grass
+x 18
+y 8
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 9
+end
+arch grass
+x 18
+y 9
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 10
+end
+arch grass
+x 18
+y 10
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 11
+end
+arch grass
+x 18
+y 11
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 12
+end
+arch grass
+x 18
+y 12
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 13
+end
+arch grass
+x 18
+y 13
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 14
+end
+arch grass
+x 18
+y 14
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 15
+end
+arch grass
+x 18
+y 15
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 16
+end
+arch grass
+x 18
+y 16
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 17
+end
+arch grass
+x 18
+y 17
+elevation 682
+end
+arch invis_exit
+slaying /world/world_121_116
+msg
+An unseen force moves you across the world.
+You feel as though you have moved quite a
+distance.
+endmsg
+hp 33
+sp 46
+x 18
+y 18
+end
+arch grass
+x 18
+y 18
+elevation 682
+end
+arch grass
+x 18
+y 19
+elevation 343
+end
+arch grass
+x 18
+y 20
+elevation 343
+end
+arch woods_3
+x 19
+elevation 1097
+end
+arch woods
+x 19
+y 1
+elevation 1758
+end
+arch woods_3
+x 19
+y 2
+elevation 1561
+end
+arch woods_3
+x 19
+y 3
+elevation 1097
+end
+arch woods
+x 19
+y 4
+elevation 1758
+end
+arch woods_3
+x 19
+y 5
+elevation 1561
+end
+arch woods_3
+x 19
+y 6
+elevation 1097
+end
+arch woods
+x 19
+y 7
+elevation 1758
+end
+arch woods_3
+x 19
+y 8
+elevation 1561
+end
+arch woods_3
+x 19
+y 9
+elevation 1097
+end
+arch woods
+x 19
+y 10
+elevation 1758
+end
+arch woods_3
+x 19
+y 11
+elevation 1561
+end
+arch woods_3
+x 19
+y 12
+elevation 1097
+end
+arch woods
+x 19
+y 13
+elevation 1758
+end
+arch woods_3
+x 19
+y 14
+elevation 1561
+end
+arch woods_3
+x 19
+y 15
+elevation 1097
+end
+arch woods
+x 19
+y 16
+elevation 1758
+end
+arch woods_3
+x 19
+y 17
+elevation 1561
+end
+arch woods_3
+x 19
+y 18
+elevation 1097
+end
+arch woods
+x 19
+y 19
+elevation 1758
+end
+arch woods_3
+x 19
+y 20
+elevation 1561
+end
+arch woods_3
+x 20
+elevation 1097
+end
+arch woods
+x 20
+y 1
+elevation 1758
+end
+arch woods_3
+x 20
+y 2
+elevation 1561
+end
+arch woods_3
+x 20
+y 3
+elevation 1097
+end
+arch woods
+x 20
+y 4
+elevation 1758
+end
+arch woods_3
+x 20
+y 5
+elevation 1561
+end
+arch woods_3
+x 20
+y 6
+elevation 1097
+end
+arch woods
+x 20
+y 7
+elevation 1758
+end
+arch woods_3
+x 20
+y 8
+elevation 1561
+end
+arch woods_3
+x 20
+y 9
+elevation 1097
+end
+arch woods
+x 20
+y 10
+elevation 1758
+end
+arch woods_3
+x 20
+y 11
+elevation 1561
+end
+arch woods_3
+x 20
+y 12
+elevation 1097
+end
+arch woods
+x 20
+y 13
+elevation 1758
+end
+arch woods_3
+x 20
+y 14
+elevation 1561
+end
+arch woods_3
+x 20
+y 15
+elevation 1097
+end
+arch woods
+x 20
+y 16
+elevation 1758
+end
+arch woods_3
+x 20
+y 17
+elevation 1561
+end
+arch woods_3
+x 20
+y 18
+elevation 1097
+end
+arch woods
+x 20
+y 19
+elevation 1758
+end
+arch woods_3
+x 20
+y 20
+elevation 1561
+end

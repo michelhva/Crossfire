@@ -1,0 +1,19 @@
+arch map
+name <unnamed>
+width 6
+height 6
+msg
+Created:  1998-02-26
+endmsg
+end
+arch ant
+end
+arch ant_larvae
+x 1
+end
+arch ant_egg
+x 2
+end
+arch fly_ant
+x 3
+end
