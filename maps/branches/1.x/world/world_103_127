@@ -3,6 +3,9 @@ name world_103_127
 region stoneville
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_103_126
 tile_path_2 world_104_127
@@ -46,7 +49,10 @@ end
 arch grass
 y 9
 end
-arch tree
+arch grass_only
+y 9
+end
+arch tree3
 y 9
 end
 arch cobblestones2
@@ -55,7 +61,10 @@ end
 arch grass
 y 11
 end
-arch tree
+arch grass_only
+y 11
+end
+arch tree3
 y 11
 end
 arch grass
@@ -82,7 +91,10 @@ end
 arch grass
 y 19
 end
-arch tree
+arch grass_only
+y 19
+end
+arch tree3
 y 19
 end
 arch cobblestones2
@@ -274,7 +286,11 @@ arch grass
 x 1
 y 16
 end
-arch tree
+arch grass_only
+x 1
+y 16
+end
+arch tree3
 x 1
 y 16
 end
@@ -498,7 +514,11 @@ arch grass
 x 2
 y 10
 end
-arch tree
+arch grass_only
+x 2
+y 10
+end
+arch tree3
 x 2
 y 10
 end
@@ -569,7 +589,11 @@ arch grass
 x 2
 y 20
 end
-arch tree
+arch grass_only
+x 2
+y 20
+end
+arch tree3
 x 2
 y 20
 end
@@ -581,7 +605,11 @@ arch grass
 x 2
 y 22
 end
-arch tree
+arch grass_only
+x 2
+y 22
+end
+arch tree3
 x 2
 y 22
 end
@@ -589,7 +617,11 @@ arch grass
 x 2
 y 23
 end
-arch tree
+arch grass_only
+x 2
+y 23
+end
+arch tree3
 x 2
 y 23
 end
@@ -737,10 +769,14 @@ arch brush
 x 3
 elevation 972
 end
-arch evergreen
+arch grass_only
 x 3
 y 1
 elevation 1633
+end
+arch tree5
+x 3
+y 1
 end
 arch woods_2
 x 3
@@ -849,7 +885,11 @@ arch grass
 x 3
 y 22
 end
-arch tree
+arch grass_only
+x 3
+y 22
+end
+arch tree3
 x 3
 y 22
 end
@@ -857,7 +897,11 @@ arch grass
 x 3
 y 23
 end
-arch tree
+arch grass_only
+x 3
+y 23
+end
+arch tree3
 x 3
 y 23
 end
@@ -989,9 +1033,12 @@ x 3
 y 49
 elevation -210
 end
-arch evergreen
+arch grass_only
 x 4
 elevation 1277
+end
+arch tree5
+x 4
 end
 arch woods_2
 x 4
@@ -1083,7 +1130,11 @@ arch grass
 x 4
 y 19
 end
-arch tree
+arch grass_only
+x 4
+y 19
+end
+arch tree3
 x 4
 y 19
 end
@@ -1091,7 +1142,11 @@ arch grass
 x 4
 y 20
 end
-arch tree
+arch grass_only
+x 4
+y 20
+end
+arch tree3
 x 4
 y 20
 end
@@ -1099,7 +1154,11 @@ arch grass
 x 4
 y 21
 end
-arch tree
+arch grass_only
+x 4
+y 21
+end
+arch tree3
 x 4
 y 21
 end
@@ -1107,7 +1166,11 @@ arch grass
 x 4
 y 22
 end
-arch tree
+arch grass_only
+x 4
+y 22
+end
+arch tree3
 x 4
 y 22
 end
@@ -1299,7 +1362,11 @@ arch grass
 x 5
 y 11
 end
-arch tree
+arch grass_only
+x 5
+y 11
+end
+arch tree3
 x 5
 y 11
 end
@@ -1632,7 +1699,11 @@ arch grass
 x 6
 y 23
 end
-arch tree
+arch grass_only
+x 6
+y 23
+end
+arch tree3
 x 6
 y 23
 end
@@ -1814,7 +1885,11 @@ arch grass
 x 7
 y 10
 end
-arch tree
+arch grass_only
+x 7
+y 10
+end
+arch tree3
 x 7
 y 10
 end
@@ -1865,7 +1940,11 @@ arch grass
 x 7
 y 19
 end
-arch tree
+arch grass_only
+x 7
+y 19
+end
+arch tree3
 x 7
 y 19
 end
@@ -1873,7 +1952,11 @@ arch grass
 x 7
 y 20
 end
-arch tree
+arch grass_only
+x 7
+y 20
+end
+arch tree3
 x 7
 y 20
 end
@@ -1893,10 +1976,14 @@ arch grass
 x 7
 y 24
 end
-arch tree
+arch grass_only
 x 7
 y 25
 elevation 1533
+end
+arch tree3
+x 7
+y 25
 end
 arch grass
 x 7
@@ -2132,7 +2219,11 @@ arch grass
 x 8
 y 21
 end
-arch tree
+arch grass_only
+x 8
+y 21
+end
+arch tree3
 x 8
 y 21
 end
@@ -2322,7 +2413,11 @@ arch grass
 x 9
 y 10
 end
-arch tree
+arch grass_only
+x 9
+y 10
+end
+arch tree3
 x 9
 y 10
 end
@@ -2382,7 +2477,11 @@ arch grass
 x 9
 y 22
 end
-arch tree
+arch grass_only
+x 9
+y 22
+end
+arch tree3
 x 9
 y 22
 end
@@ -2581,7 +2680,11 @@ arch grass
 x 10
 y 12
 end
-arch evergreen
+arch grass_only
+x 10
+y 12
+end
+arch tree5
 x 10
 y 12
 end
@@ -3072,7 +3175,11 @@ arch grass
 x 12
 y 13
 end
-arch tree
+arch grass_only
+x 12
+y 13
+end
+arch tree3
 x 12
 y 13
 end
@@ -3088,7 +3195,11 @@ arch grass
 x 12
 y 16
 end
-arch tree
+arch grass_only
+x 12
+y 16
+end
+arch tree3
 x 12
 y 16
 end
@@ -3297,7 +3408,11 @@ arch grass
 x 13
 y 9
 end
-arch tree
+arch grass_only
+x 13
+y 9
+end
+arch tree3
 x 13
 y 9
 end
@@ -3329,7 +3444,11 @@ arch grass
 x 13
 y 16
 end
-arch tree
+arch grass_only
+x 13
+y 16
+end
+arch tree3
 x 13
 y 16
 end
@@ -3449,10 +3568,14 @@ x 13
 y 41
 elevation 654
 end
-arch tree
+arch grass_only
 x 13
 y 42
 elevation 1014
+end
+arch tree3
+x 13
+y 42
 end
 arch beach
 x 13
@@ -3522,7 +3645,11 @@ x 14
 y 6
 elevation -17
 end
-arch tree
+arch grass_only
+x 14
+y 7
+end
+arch tree3
 x 14
 y 7
 end
@@ -4898,7 +5025,11 @@ arch brush
 x 20
 y 8
 end
-arch tree
+arch grass_only
+x 20
+y 9
+end
+arch tree3
 x 20
 y 9
 end
@@ -5315,7 +5446,11 @@ x 22
 y 6
 elevation -10
 end
-arch tree
+arch grass_only
+x 22
+y 7
+end
+arch tree3
 x 22
 y 7
 end
@@ -5994,7 +6129,11 @@ x 25
 y 7
 elevation -27
 end
-arch tree
+arch grass_only
+x 25
+y 8
+end
+arch tree3
 x 25
 y 8
 end

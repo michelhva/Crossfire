@@ -2,6 +2,9 @@ arch map
 name world_105_119
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_105_118
 tile_path_2 world_106_119
@@ -1666,15 +1669,23 @@ x 6
 y 42
 elevation 4886
 end
-arch tree
+arch grass_only
 x 6
 y 43
 elevation 1503
 end
-arch evergreens
+arch tree3
+x 6
+y 43
+end
+arch grass_only
 x 6
 y 44
 elevation 1051
+end
+arch evergreens2
+x 6
+y 44
 end
 arch woods_3
 x 6
@@ -2587,10 +2598,14 @@ x 10
 y 27
 elevation 3488
 end
-arch evergreens
+arch grass_only
 x 10
 y 28
 elevation 2091
+end
+arch evergreens2
+x 10
+y 28
 end
 arch hills_rocky
 x 10
@@ -2711,10 +2726,14 @@ x 11
 y 2
 elevation 1252
 end
-arch tree
+arch grass_only
 x 11
 y 3
 elevation 1902
+end
+arch tree3
+x 11
+y 3
 end
 arch desert
 x 11
@@ -2766,10 +2785,14 @@ x 11
 y 13
 elevation 349
 end
-arch tree
+arch grass_only
 x 11
 y 14
 elevation 1751
+end
+arch tree3
+x 11
+y 14
 end
 arch hills_rocky
 x 11
@@ -5112,10 +5135,14 @@ x 20
 y 34
 elevation 5037
 end
-arch evergreens
+arch grass_only
 x 20
 y 35
 elevation 2454
+end
+arch evergreens2
+x 20
+y 35
 end
 arch mountain
 x 20
@@ -6964,10 +6991,14 @@ x 28
 y 6
 elevation 238
 end
-arch evergreens
+arch grass_only
 x 28
 y 7
 elevation 2902
+end
+arch evergreens2
+x 28
+y 7
 end
 arch hills_rocky
 x 28
@@ -7866,10 +7897,14 @@ x 31
 y 37
 elevation 6795
 end
-arch evergreens
+arch grass_only
 x 31
 y 38
 elevation 1717
+end
+arch evergreens2
+x 31
+y 38
 end
 arch mountain
 x 31
@@ -9265,10 +9300,14 @@ x 37
 y 18
 elevation 4020
 end
-arch evergreens
+arch grass_only
 x 37
 y 19
 elevation 2040
+end
+arch evergreens2
+x 37
+y 19
 end
 arch mountain
 x 37
@@ -11367,15 +11406,23 @@ x 45
 y 40
 elevation 3540
 end
-arch evergreens
+arch grass_only
 x 45
 y 41
 elevation 1411
 end
-arch evergreens
+arch evergreens2
+x 45
+y 41
+end
+arch grass_only
 x 45
 y 42
 elevation 2852
+end
+arch evergreens2
+x 45
+y 42
 end
 arch mountain
 x 45
@@ -11616,10 +11663,14 @@ x 46
 y 40
 elevation 4702
 end
-arch evergreens
+arch grass_only
 x 46
 y 41
 elevation 2852
+end
+arch evergreens2
+x 46
+y 41
 end
 arch hills_rocky
 x 46

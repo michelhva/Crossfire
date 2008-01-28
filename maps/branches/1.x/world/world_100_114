@@ -3,6 +3,9 @@ name world_100_114
 region portjoseph
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_100_113
 tile_path_2 world_101_114
@@ -3998,7 +4001,11 @@ arch pstone_1
 x 16
 y 24
 end
-arch tree
+arch grass_only
+x 16
+y 24
+end
+arch tree3
 x 16
 y 24
 end
@@ -4151,14 +4158,21 @@ x 16
 y 49
 elevation -7068
 end
-arch tree
+arch grass_only
 x 17
 elevation 1286
 end
-arch tree
+arch tree3
+x 17
+end
+arch grass_only
 x 17
 y 1
 elevation 1178
+end
+arch tree3
+x 17
+y 1
 end
 arch brush
 x 17
@@ -4423,9 +4437,12 @@ x 17
 y 49
 elevation -6993
 end
-arch tree
+arch grass_only
 x 18
 elevation 1480
+end
+arch tree3
+x 18
 end
 arch hills_rocky
 x 18
@@ -4578,7 +4595,11 @@ arch pstone_1
 x 18
 y 29
 end
-arch tree
+arch grass_only
+x 18
+y 29
+end
+arch tree3
 x 18
 y 29
 end
@@ -5086,7 +5107,6 @@ arch fort
 name Fortress
 x 20
 y 27
-no_pass 1
 blocksview 1
 end
 arch pstone_1
@@ -5841,7 +5861,11 @@ arch pstone_1
 x 23
 y 26
 end
-arch tree
+arch grass_only
+x 23
+y 26
+end
+arch tree3
 x 23
 y 26
 end
@@ -6391,7 +6415,11 @@ arch pstone_1
 x 25
 y 33
 end
-arch tree
+arch grass_only
+x 25
+y 33
+end
+arch tree3
 x 25
 y 33
 end
@@ -6578,7 +6606,7 @@ end
 arch door_look_1
 x 26
 y 21
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 26
@@ -6664,7 +6692,11 @@ arch pstone_1
 x 26
 y 34
 end
-arch tree
+arch grass_only
+x 26
+y 34
+end
+arch tree3
 x 26
 y 34
 end
