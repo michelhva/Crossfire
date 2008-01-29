@@ -7590,6 +7590,13 @@ x 26
 y 40
 elevation 0
 end
+arch smallpark
+slaying /darcap/darcap/park
+hp 4
+sp 8
+x 26
+y 40
+end
 arch grass
 x 26
 y 41
@@ -9550,7 +9557,8 @@ x 32
 y 33
 elevation 0
 end
-arch city_tower_northwest
+arch lighthouse_northwest
+name Lighthouse
 x 32
 y 33
 end

@@ -2360,7 +2360,6 @@ y 4
 elevation 11718
 end
 arch house_2
-name Rolanda's house
 x 7
 y 4
 end
@@ -11149,6 +11148,9 @@ elevation 1318
 end
 arch barn2
 name cider house
+slaying /scorn/misc/cider_house
+hp 9
+sp 18
 x 38
 y 24
 end
@@ -12044,6 +12046,9 @@ elevation 1262
 end
 arch house_largish
 name Witherspoon Manor
+slaying /scorn/mansion/witherspoon_manor
+hp 5
+sp 8
 x 41
 y 24
 end

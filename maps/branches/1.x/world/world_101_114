@@ -2442,7 +2442,14 @@ x 10
 y 32
 end
 arch house_2
+<<<<<<< .mine
 name Half-destroyed house
+slaying /port_joseph/town/ruined_home
+hp 8
+sp 4
+=======
+name Half-destroyed house
+>>>>>>> .r8310
 x 10
 y 32
 end
@@ -2935,6 +2942,16 @@ arch grass
 x 12
 y 35
 end
+<<<<<<< .mine
+arch house_1_green
+slaying /port_joseph/town/house
+hp 7
+sp 8
+x 12
+y 35
+end
+=======
+>>>>>>> .r8310
 arch grass
 x 12
 y 36
