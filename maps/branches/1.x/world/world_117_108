@@ -2,6 +2,9 @@ arch map
 name world_117_108
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_117_107
 tile_path_2 world_118_108
@@ -281,10 +284,14 @@ x 1
 y 14
 elevation 3740
 end
-arch evergreens
+arch grass_only
 x 1
 y 15
 elevation 2682
+end
+arch evergreens2
+x 1
+y 15
 end
 arch hills_rocky
 x 1
@@ -545,10 +552,14 @@ x 2
 y 17
 elevation 4165
 end
-arch evergreen
+arch grass_only
 x 2
 y 18
 elevation 2959
+end
+arch tree5
+x 2
+y 18
 end
 arch steppe
 x 2
@@ -774,15 +785,23 @@ x 3
 y 13
 elevation 4188
 end
-arch tree
+arch grass_only
 x 3
 y 14
 elevation 2158
 end
-arch tree
+arch tree3
+x 3
+y 14
+end
+arch grass_only
 x 3
 y 15
 elevation 2740
+end
+arch tree3
+x 3
+y 15
 end
 arch hills_rocky
 x 3
@@ -1207,10 +1226,14 @@ arch hills
 x 5
 elevation 3271
 end
-arch evergreens
+arch grass_only
 x 5
 y 1
 elevation 2315
+end
+arch evergreens2
+x 5
+y 1
 end
 arch hills
 x 5
@@ -2522,10 +2545,14 @@ x 10
 y 14
 elevation 3245
 end
-arch tree
+arch grass_only
 x 10
 y 15
 elevation 2963
+end
+arch tree3
+x 10
+y 15
 end
 arch hills_rocky
 x 10
@@ -7452,10 +7479,14 @@ x 30
 y 4
 elevation 4245
 end
-arch evergreens
+arch grass_only
 x 30
 y 5
 elevation 2981
+end
+arch evergreens2
+x 30
+y 5
 end
 arch mountain
 x 30

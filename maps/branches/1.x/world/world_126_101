@@ -2,6 +2,9 @@ arch map
 name world_126_101
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_126_100
 tile_path_2 world_127_101
@@ -944,10 +947,14 @@ x 3
 y 47
 elevation 2656
 end
-arch evergreens
+arch grass_only
 x 3
 y 48
 elevation 1147
+end
+arch evergreens2
+x 3
+y 48
 end
 arch brush
 x 3
@@ -1312,15 +1319,23 @@ x 5
 y 21
 elevation 122
 end
-arch evergreen
+arch grass_only
 x 5
 y 22
 elevation 1765
 end
-arch evergreen
+arch tree5
+x 5
+y 22
+end
+arch grass_only
 x 5
 y 23
 elevation 2739
+end
+arch tree5
+x 5
+y 23
 end
 arch hills_rocky
 x 5
@@ -2433,10 +2448,14 @@ x 9
 y 46
 elevation 113
 end
-arch tree
+arch grass_only
 x 9
 y 47
 elevation 1778
+end
+arch tree3
+x 9
+y 47
 end
 arch hills_rocky
 x 9
@@ -2926,10 +2945,14 @@ x 11
 y 45
 elevation 1085
 end
-arch tree
+arch grass_only
 x 11
 y 46
 elevation 1678
+end
+arch tree3
+x 11
+y 46
 end
 arch hills_rocky
 x 11
@@ -3165,20 +3188,28 @@ x 12
 y 43
 elevation 1853
 end
-arch evergreens
+arch grass_only
 x 12
 y 44
 elevation 2149
+end
+arch evergreens2
+x 12
+y 44
 end
 arch hills_rocky
 x 12
 y 45
 elevation 2073
 end
-arch evergreens
+arch grass_only
 x 12
 y 46
 elevation 1899
+end
+arch evergreens2
+x 12
+y 46
 end
 arch hills_rocky
 x 12
@@ -3274,10 +3305,14 @@ x 13
 y 15
 elevation 539
 end
-arch tree
+arch grass_only
 x 13
 y 16
 elevation 1205
+end
+arch tree3
+x 13
+y 16
 end
 arch hills_rocky
 x 13
@@ -3409,20 +3444,32 @@ x 13
 y 42
 elevation 1108
 end
-arch tree
+arch grass_only
 x 13
 y 43
 elevation 1716
 end
-arch tree
+arch tree3
+x 13
+y 43
+end
+arch grass_only
 x 13
 y 44
 elevation 2241
 end
-arch tree
+arch tree3
+x 13
+y 44
+end
+arch grass_only
 x 13
 y 45
 elevation 2362
+end
+arch tree3
+x 13
+y 45
 end
 arch hills_rocky
 x 13
@@ -3523,10 +3570,14 @@ x 14
 y 15
 elevation 699
 end
-arch tree
+arch grass_only
 x 14
 y 16
 elevation 1202
+end
+arch tree3
+x 14
+y 16
 end
 arch hills_rocky
 x 14
@@ -3772,15 +3823,23 @@ x 15
 y 15
 elevation 677
 end
-arch tree
+arch grass_only
 x 15
 y 16
 elevation 1172
 end
-arch tree
+arch tree3
+x 15
+y 16
+end
+arch grass_only
 x 15
 y 17
 elevation 1527
+end
+arch tree3
+x 15
+y 17
 end
 arch hills_rocky
 x 15
@@ -3932,10 +3991,14 @@ x 15
 y 47
 elevation 1884
 end
-arch tree
+arch grass_only
 x 15
 y 48
 elevation 2080
+end
+arch tree3
+x 15
+y 48
 end
 arch hills_rocky
 x 15
@@ -4161,10 +4224,14 @@ x 16
 y 43
 elevation 306
 end
-arch tree
+arch grass_only
 x 16
 y 44
 elevation 2167
+end
+arch tree3
+x 16
+y 44
 end
 arch hills_rocky
 x 16
@@ -4275,10 +4342,14 @@ x 17
 y 16
 elevation 1463
 end
-arch tree
+arch grass_only
 x 17
 y 17
 elevation 1960
+end
+arch tree3
+x 17
+y 17
 end
 arch hills_rocky
 x 17
@@ -4345,10 +4416,14 @@ x 17
 y 30
 elevation 217
 end
-arch tree
+arch grass_only
 x 17
 y 31
 elevation 1128
+end
+arch tree3
+x 17
+y 31
 end
 arch hills_rocky
 x 17
@@ -4405,40 +4480,60 @@ x 17
 y 42
 elevation 16
 end
-arch tree
+arch grass_only
 x 17
 y 43
 elevation 1769
 end
-arch tree
+arch tree3
+x 17
+y 43
+end
+arch grass_only
 x 17
 y 44
 elevation 2961
+end
+arch tree3
+x 17
+y 44
 end
 arch hills_rocky
 x 17
 y 45
 elevation 3400
 end
-arch tree
+arch grass_only
 x 17
 y 46
 elevation 2852
 end
-arch tree
+arch tree3
+x 17
+y 46
+end
+arch grass_only
 x 17
 y 47
 elevation 2035
+end
+arch tree3
+x 17
+y 47
 end
 arch grass
 x 17
 y 48
 elevation 691
 end
-arch tree
+arch grass_only
 x 17
 y 49
 elevation 1447
+end
+arch tree3
+x 17
+y 49
 end
 arch sea
 x 18
@@ -4514,20 +4609,32 @@ x 18
 y 14
 elevation 699
 end
-arch tree
+arch grass_only
 x 18
 y 15
 elevation 1029
 end
-arch tree
+arch tree3
+x 18
+y 15
+end
+arch grass_only
 x 18
 y 16
 elevation 1924
 end
-arch tree
+arch tree3
+x 18
+y 16
+end
+arch grass_only
 x 18
 y 17
 elevation 2437
+end
+arch tree3
+x 18
+y 17
 end
 arch hills_rocky
 x 18
@@ -4599,15 +4706,23 @@ x 18
 y 31
 elevation 1314
 end
-arch tree
+arch grass_only
 x 18
 y 32
 elevation 1739
 end
-arch tree
+arch tree3
+x 18
+y 32
+end
+arch grass_only
 x 18
 y 33
 elevation 1470
+end
+arch tree3
+x 18
+y 33
 end
 arch brush
 x 18
@@ -4649,15 +4764,23 @@ x 18
 y 41
 elevation 161
 end
-arch tree
+arch grass_only
 x 18
 y 42
 elevation 1387
 end
-arch tree
+arch tree3
+x 18
+y 42
+end
+arch grass_only
 x 18
 y 43
 elevation 2499
+end
+arch tree3
+x 18
+y 43
 end
 arch hills
 x 18
@@ -4674,20 +4797,32 @@ x 18
 y 46
 elevation 3325
 end
-arch tree
+arch grass_only
 x 18
 y 47
 elevation 2767
 end
-arch tree
+arch tree3
+x 18
+y 47
+end
+arch grass_only
 x 18
 y 48
 elevation 2382
 end
-arch tree
+arch tree3
+x 18
+y 48
+end
+arch grass_only
 x 18
 y 49
 elevation 1805
+end
+arch tree3
+x 18
+y 49
 end
 arch sea
 x 19
@@ -4753,10 +4888,14 @@ x 19
 y 12
 elevation 990
 end
-arch tree
+arch grass_only
 x 19
 y 13
 elevation 1748
+end
+arch tree3
+x 19
+y 13
 end
 arch hills_rocky
 x 19
@@ -4768,15 +4907,23 @@ x 19
 y 15
 elevation 2091
 end
-arch tree
+arch grass_only
 x 19
 y 16
 elevation 2364
 end
-arch tree
+arch tree3
+x 19
+y 16
+end
+arch grass_only
 x 19
 y 17
 elevation 2771
+end
+arch tree3
+x 19
+y 17
 end
 arch hills_rocky
 x 19
@@ -4843,10 +4990,14 @@ x 19
 y 30
 elevation 417
 end
-arch tree
+arch grass_only
 x 19
 y 31
 elevation 1050
+end
+arch tree3
+x 19
+y 31
 end
 arch hills_rocky
 x 19
@@ -4893,50 +5044,82 @@ x 19
 y 40
 elevation 397
 end
-arch tree
+arch grass_only
 x 19
 y 41
 elevation 1042
 end
-arch tree
+arch tree3
+x 19
+y 41
+end
+arch grass_only
 x 19
 y 42
 elevation 2020
 end
-arch tree
+arch tree3
+x 19
+y 42
+end
+arch grass_only
 x 19
 y 43
 elevation 2933
+end
+arch tree3
+x 19
+y 43
 end
 arch hills
 x 19
 y 44
 elevation 3295
 end
-arch tree
+arch grass_only
 x 19
 y 45
 elevation 2902
 end
-arch tree
+arch tree3
+x 19
+y 45
+end
+arch grass_only
 x 19
 y 46
 elevation 2588
 end
-arch tree
+arch tree3
+x 19
+y 46
+end
+arch grass_only
 x 19
 y 47
 elevation 2555
 end
-arch tree
+arch tree3
+x 19
+y 47
+end
+arch grass_only
 x 19
 y 48
 elevation 2642
 end
-arch tree
+arch tree3
+x 19
+y 48
+end
+arch grass_only
 x 19
 y 49
 elevation 2162
+end
+arch tree3
+x 19
+y 49
 end
 arch sea
 x 20
@@ -4997,10 +5180,14 @@ x 20
 y 11
 elevation 1285
 end
-arch tree
+arch grass_only
 x 20
 y 12
 elevation 1707
+end
+arch tree3
+x 20
+y 12
 end
 arch hills_rocky
 x 20
@@ -5012,10 +5199,14 @@ x 20
 y 14
 elevation 2412
 end
-arch tree
+arch grass_only
 x 20
 y 15
 elevation 2427
+end
+arch tree3
+x 20
+y 15
 end
 arch hills_rocky
 x 20
@@ -5142,50 +5333,82 @@ x 20
 y 40
 elevation 573
 end
-arch tree
+arch grass_only
 x 20
 y 41
 elevation 1176
 end
-arch tree
+arch tree3
+x 20
+y 41
+end
+arch grass_only
 x 20
 y 42
 elevation 1971
 end
-arch tree
+arch tree3
+x 20
+y 42
+end
+arch grass_only
 x 20
 y 43
 elevation 2545
 end
-arch tree
+arch tree3
+x 20
+y 43
+end
+arch grass_only
 x 20
 y 44
 elevation 2234
 end
-arch tree
+arch tree3
+x 20
+y 44
+end
+arch grass_only
 x 20
 y 45
 elevation 1434
+end
+arch tree3
+x 20
+y 45
 end
 arch brush
 x 20
 y 46
 elevation 152
 end
-arch tree
+arch grass_only
 x 20
 y 47
 elevation 1367
 end
-arch tree
+arch tree3
+x 20
+y 47
+end
+arch grass_only
 x 20
 y 48
 elevation 2135
 end
-arch tree
+arch tree3
+x 20
+y 48
+end
+arch grass_only
 x 20
 y 49
 elevation 1991
+end
+arch tree3
+x 20
+y 49
 end
 arch sea
 x 21
@@ -5241,40 +5464,60 @@ x 21
 y 10
 elevation 868
 end
-arch tree
+arch grass_only
 x 21
 y 11
 elevation 1356
+end
+arch tree3
+x 21
+y 11
 end
 arch hills_rocky
 x 21
 y 12
 elevation 1022
 end
-arch tree
+arch grass_only
 x 21
 y 13
 elevation 1597
+end
+arch tree3
+x 21
+y 13
 end
 arch hills_rocky
 x 21
 y 14
 elevation 1859
 end
-arch tree
+arch grass_only
 x 21
 y 15
 elevation 2023
 end
-arch tree
+arch tree3
+x 21
+y 15
+end
+arch grass_only
 x 21
 y 16
 elevation 2156
 end
-arch tree
+arch tree3
+x 21
+y 16
+end
+arch grass_only
 x 21
 y 17
 elevation 2316
+end
+arch tree3
+x 21
+y 17
 end
 arch hills_rocky
 x 21
@@ -5396,15 +5639,23 @@ x 21
 y 41
 elevation 541
 end
-arch tree
+arch grass_only
 x 21
 y 42
 elevation 1342
 end
-arch tree
+arch tree3
+x 21
+y 42
+end
+arch grass_only
 x 21
 y 43
 elevation 1329
+end
+arch tree3
+x 21
+y 43
 end
 arch brush
 x 21
@@ -5426,15 +5677,23 @@ x 21
 y 47
 elevation 821
 end
-arch tree
+arch grass_only
 x 21
 y 48
 elevation 1421
 end
-arch tree
+arch tree3
+x 21
+y 48
+end
+arch grass_only
 x 21
 y 49
 elevation 1406
+end
+arch tree3
+x 21
+y 49
 end
 arch sea
 x 22
@@ -5485,15 +5744,23 @@ x 22
 y 9
 elevation 528
 end
-arch tree
+arch grass_only
 x 22
 y 10
 elevation 1193
 end
-arch tree
+arch tree3
+x 22
+y 10
+end
+arch grass_only
 x 22
 y 11
 elevation 1361
+end
+arch tree3
+x 22
+y 11
 end
 arch brush
 x 22
@@ -5729,15 +5996,23 @@ x 23
 y 8
 elevation 277
 end
-arch tree
+arch grass_only
 x 23
 y 9
 elevation 1158
 end
-arch tree
+arch tree3
+x 23
+y 9
+end
+arch grass_only
 x 23
 y 10
 elevation 1670
+end
+arch tree3
+x 23
+y 10
 end
 arch hills_rocky
 x 23
@@ -5764,15 +6039,23 @@ x 23
 y 15
 elevation 889
 end
-arch tree
+arch grass_only
 x 23
 y 16
 elevation 1039
 end
-arch tree
+arch tree3
+x 23
+y 16
+end
+arch grass_only
 x 23
 y 17
 elevation 1426
+end
+arch tree3
+x 23
+y 17
 end
 arch hills_rocky
 x 23
@@ -5874,15 +6157,23 @@ x 23
 y 37
 elevation 748
 end
-arch tree
+arch grass_only
 x 23
 y 38
 elevation 1152
 end
-arch tree
+arch tree3
+x 23
+y 38
+end
+arch grass_only
 x 23
 y 39
 elevation 1054
+end
+arch tree3
+x 23
+y 39
 end
 arch brush
 x 23
@@ -5993,20 +6284,28 @@ x 24
 y 11
 elevation 1328
 end
-arch tree
+arch grass_only
 x 24
 y 12
 elevation 1483
+end
+arch tree3
+x 24
+y 12
 end
 arch hills_rocky
 x 24
 y 13
 elevation 1371
 end
-arch tree
+arch grass_only
 x 24
 y 14
 elevation 1092
+end
+arch tree3
+x 24
+y 14
 end
 arch brush
 x 24
@@ -6247,10 +6546,14 @@ x 25
 y 12
 elevation 1275
 end
-arch tree
+arch grass_only
 x 25
 y 13
 elevation 1491
+end
+arch tree3
+x 25
+y 13
 end
 arch brush
 x 25
@@ -6496,20 +6799,28 @@ x 26
 y 12
 elevation 539
 end
-arch tree
+arch grass_only
 x 26
 y 13
 elevation 1291
+end
+arch tree3
+x 26
+y 13
 end
 arch hills_rocky
 x 26
 y 14
 elevation 1485
 end
-arch tree
+arch grass_only
 x 26
 y 15
 elevation 1190
+end
+arch tree3
+x 26
+y 15
 end
 arch brush
 x 26

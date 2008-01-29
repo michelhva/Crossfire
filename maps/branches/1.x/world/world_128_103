@@ -3,6 +3,9 @@ name world_128_103
 region azumauindo
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_128_102
 tile_path_2 world_129_103
@@ -5586,15 +5589,23 @@ x 22
 y 29
 elevation 942
 end
-arch evergreen
+arch grass_only
 x 22
 y 30
 elevation 1179
 end
-arch evergreen
+arch tree5
+x 22
+y 30
+end
+arch grass_only
 x 22
 y 31
 elevation 1021
+end
+arch tree5
+x 22
+y 31
 end
 arch grass
 x 22
@@ -5835,15 +5846,23 @@ x 23
 y 29
 elevation 277
 end
-arch evergreen
+arch grass_only
 x 23
 y 30
 elevation 1167
 end
-arch evergreen
+arch tree5
+x 23
+y 30
+end
+arch grass_only
 x 23
 y 31
 elevation 1478
+end
+arch tree5
+x 23
+y 31
 end
 arch grass
 x 23
