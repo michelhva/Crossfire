@@ -192,6 +192,11 @@ public class Stats
     public static final int CS_STAT_WEIGHT_LIM = 26;
 
     /**
+     * The character's weight.
+     */
+    public static final int C_STAT_WEIGHT = 257;
+
+    /**
      * The Global Experience (64bit encoding) stat.
      */
     public static final int CS_STAT_EXP64 = 28;
@@ -428,7 +433,7 @@ public class Stats
      */
     private final List<CrossfireStatsListener> statListeners = new ArrayList<CrossfireStatsListener>();
 
-    private final int[] stats = new int[257];
+    private final int[] stats = new int[258];
 
     private long exp = 0;
 

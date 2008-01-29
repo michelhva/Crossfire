@@ -1,5 +1,5 @@
 
-dialog border 220 340 504 166 true Inventory
+dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN
 button button_close  484    4   16 16 close_up close_down false command_inventory
 
@@ -66,6 +66,11 @@ item inventory inv59 452 30+100 32 32 empty marker_cursed marker_applied invento
 
 button slider_up     484 30+4   16 16 slider_up_up slider_up_down true command_inventory_up
 button slider_down   484 30+116 16 16 slider_down_up slider_down_down true command_inventory_down
+
+label_text label_weight_label   4 30+136 50 16 font_label BLACK Weight:
+label_stat label_weight        54 30+136 45 16 font_label BLACK WEIGHT RIGHT
+label_text label_weight_sep    99 30+136  6 16 font_label BLACK /
+label_stat label_weight_limit 105 30+136 45 16 font_label BLACK WEIGHT_LIMIT LEFT
 
 commandlist_add command_inventory_up inv0 SCROLL -15
 commandlist_add command_inventory_up inv1 SCROLL -15

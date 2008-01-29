@@ -55,11 +55,11 @@ public class GUILabelStats extends GUIOneLineLabel
             switch (stat)
             {
             case Stats.CS_STAT_SPEED:
-                text = formatFloatStat(s.getFloatStat(stat));
+                text = formatFloatStat(s.getFloatStat(stat), 2);
                 break;
 
             case Stats.CS_STAT_WEAP_SP:
-                text = formatFloatStat(s.getWeaponSpeed());
+                text = formatFloatStat(s.getWeaponSpeed(), 2);
                 break;
 
             case Stats.CS_STAT_RANGE:
@@ -93,6 +93,15 @@ public class GUILabelStats extends GUIOneLineLabel
 
             case Stats.C_STAT_EXP_NEXT_LEVEL:
                 text = String.valueOf(getJXCWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience()));
+                break;
+
+            case Stats.CS_STAT_WEIGHT_LIM:
+            case Stats.C_STAT_WEIGHT:
+                {
+                    final int weight = s.getStat(stat);
+                    text = formatFloatStat(((weight+50)/100)/10.0, 1);
+                    setTooltipText(formatFloatStat(weight/1000.0, 3)+"kg");
+                }
                 break;
 
             default:
@@ -138,11 +147,29 @@ public class GUILabelStats extends GUIOneLineLabel
      *
      * @param value The float stat value.
      *
+     * @param digits The number of fraction digits; must be between 1..3
+     * inclusive.
+     *
      * @return The formatted value.
      */
-    private String formatFloatStat(final double value)
+    private String formatFloatStat(final double value, final int digits)
     {
-        final int tmp = (int)(value*100+0.5);
-        return tmp/100+"."+tmp/10%10+tmp%10;
+        final int tmp;
+        switch (digits)
+        {
+        case 1:
+            tmp = (int)(value*10+0.5);
+            return tmp/10+"."+tmp%10;
+
+        case 2:
+            tmp = (int)(value*100+0.5);
+            return tmp/100+"."+tmp/10%10+tmp%10;
+
+        case 3:
+            tmp = (int)(value*1000+0.5);
+            return tmp/1000+"."+tmp/100%10+tmp/10%10+tmp%10;
+        }
+
+        throw new IllegalArgumentException();
     }
 }

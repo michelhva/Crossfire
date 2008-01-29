@@ -78,6 +78,8 @@ public class StatsParser
         statTable.put("TITLE", Stats.CS_STAT_TITLE);
         statTable.put("TURN_UNDEAD", Stats.CS_STAT_TURN_UNDEAD);
         statTable.put("WC", Stats.CS_STAT_WC);
+        statTable.put("WEIGHT", Stats.C_STAT_WEIGHT);
+        statTable.put("WEIGHT_LIMIT", Stats.CS_STAT_WEIGHT_LIM);
         statTable.put("WIS", Stats.CS_STAT_WIS);
         statTable.put("WSPEED", Stats.CS_STAT_WEAP_SP);
     }
