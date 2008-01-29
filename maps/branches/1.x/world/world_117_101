@@ -2427,6 +2427,17 @@ x 9
 y 31
 elevation 213
 end
+arch archway_tree
+name Pygmy Forest
+slaying /darcap/pygmy_forest/pygmy_forest
+msg
+You enter a dark forest....there seems to be a very evil prescence here...you suddenly remember what its like to feel scared, and you realize you are not alone....
+endmsg
+hp 25
+sp 48
+x 9
+y 31
+end
 arch grass
 x 9
 y 32
@@ -2704,6 +2715,9 @@ arch grass
 x 10
 y 32
 elevation 740
+end
+x 10
+y 32
 end
 arch grass
 x 10
