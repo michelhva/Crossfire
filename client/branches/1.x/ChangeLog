@@ -1,6 +1,9 @@
 "$Id$"
 Top of SVN tree:
 ------------------------------------------------------------------------------
+
+Changes for 1.11.0:
+------------------------------------------------------------------------------
 configure.in: Trunk revision 6524 merge of mwedel's add another eval $ndatadir
   line so properly resolve all the shell variable names so that CF_DATADIR is
   set properly in common/config.h.
