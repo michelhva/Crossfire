@@ -3,6 +3,9 @@ name world_101_114
 region portjoseph
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_101_113
 tile_path_2 world_102_114
@@ -2439,6 +2442,7 @@ x 10
 y 32
 end
 arch house_2
+name Half-destroyed house
 x 10
 y 32
 end
@@ -2650,23 +2654,43 @@ arch pstone_1
 x 11
 y 28
 end
-arch evergreens
+arch grass_only
 x 11
 y 29
 end
-arch evergreens
+arch evergreens2
+x 11
+y 29
+end
+arch grass_only
 x 11
 y 30
 end
-arch evergreens
+arch evergreens2
+x 11
+y 30
+end
+arch grass_only
 x 11
 y 31
 end
-arch evergreens
+arch evergreens2
+x 11
+y 31
+end
+arch grass_only
 x 11
 y 32
 end
-arch evergreens
+arch evergreens2
+x 11
+y 32
+end
+arch grass_only
+x 11
+y 33
+end
+arch evergreens2
 x 11
 y 33
 end
@@ -2871,7 +2895,11 @@ arch pstone_1
 x 12
 y 27
 end
-arch evergreens
+arch grass_only
+x 12
+y 28
+end
+arch evergreens2
 x 12
 y 28
 end
@@ -2904,10 +2932,6 @@ x 12
 y 34
 end
 arch grass
-x 12
-y 35
-end
-arch house_1
 x 12
 y 35
 end
@@ -3139,7 +3163,11 @@ arch grass
 x 13
 y 31
 end
-arch tree
+arch grass_only
+x 13
+y 31
+end
+arch tree3
 x 13
 y 31
 end
@@ -4226,7 +4254,11 @@ arch grass
 x 17
 y 38
 end
-arch tree
+arch grass_only
+x 17
+y 38
+end
+arch tree3
 x 17
 y 38
 end
@@ -4713,7 +4745,11 @@ arch pstone_2
 x 19
 y 37
 end
-arch evergreen
+arch grass_only
+x 19
+y 37
+end
+arch tree5
 x 19
 y 37
 end
@@ -4721,7 +4757,11 @@ arch brush
 x 19
 y 38
 end
-arch evergreen
+arch grass_only
+x 19
+y 38
+end
+arch tree5
 x 19
 y 38
 end
@@ -4729,7 +4769,11 @@ arch brush
 x 19
 y 39
 end
-arch evergreen
+arch grass_only
+x 19
+y 39
+end
+arch tree5
 x 19
 y 39
 end
@@ -11670,10 +11714,14 @@ x 48
 y 14
 elevation 2051
 end
-arch evergreen
+arch grass_only
 x 48
 y 15
 elevation 1659
+end
+arch tree5
+x 48
+y 15
 end
 arch grass
 x 48
@@ -11914,15 +11962,23 @@ x 49
 y 13
 elevation 1805
 end
-arch evergreen
+arch grass_only
 x 49
 y 14
 elevation 2009
 end
-arch evergreen
+arch tree5
+x 49
+y 14
+end
+arch grass_only
 x 49
 y 15
 elevation 1528
+end
+arch tree5
+x 49
+y 15
 end
 arch grass
 x 49

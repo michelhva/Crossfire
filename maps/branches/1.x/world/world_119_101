@@ -2,6 +2,9 @@ arch map
 name world_119_101
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_119_100
 tile_path_2 world_120_101
@@ -56,9 +59,12 @@ end
 arch dungeon_magic
 y 9
 end
-arch tree
+arch grass_only
 y 10
 elevation 1067
+end
+arch tree3
+y 10
 end
 arch dungeon_magic
 y 10
@@ -70,9 +76,12 @@ end
 arch dungeon_magic
 y 11
 end
-arch tree
+arch grass_only
 y 12
 elevation 1769
+end
+arch tree3
+y 12
 end
 arch dungeon_magic
 y 12
@@ -754,10 +763,14 @@ arch dungeon_magic
 x 2
 y 18
 end
-arch tree
+arch grass_only
 x 2
 y 19
 elevation 1321
+end
+arch tree3
+x 2
+y 19
 end
 arch dungeon_magic
 x 2
@@ -2695,10 +2708,14 @@ arch dungeon_magic
 x 8
 y 21
 end
-arch evergreens
+arch grass_only
 x 8
 y 22
 elevation 1119
+end
+arch evergreens2
+x 8
+y 22
 end
 arch dungeon_magic
 x 8
@@ -6247,19 +6264,27 @@ arch dungeon_magic
 x 19
 y 26
 end
-arch evergreens
+arch grass_only
 x 19
 y 27
 elevation 1117
+end
+arch evergreens2
+x 19
+y 27
 end
 arch dungeon_magic
 x 19
 y 27
 end
-arch evergreens
+arch grass_only
 x 19
 y 28
 elevation 1091
+end
+arch evergreens2
+x 19
+y 28
 end
 arch dungeon_magic
 x 19
@@ -6569,10 +6594,14 @@ arch dungeon_magic
 x 20
 y 27
 end
-arch evergreens
+arch grass_only
 x 20
 y 28
 elevation 1034
+end
+arch evergreens2
+x 20
+y 28
 end
 arch dungeon_magic
 x 20
@@ -7272,10 +7301,14 @@ arch dungeon_magic
 x 22
 y 36
 end
-arch evergreens
+arch grass_only
 x 22
 y 37
 elevation 1121
+end
+arch evergreens2
+x 22
+y 37
 end
 arch dungeon_magic
 x 22
@@ -8994,7 +9027,7 @@ arch shallow_sea
 x 28
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 28
@@ -9254,7 +9287,7 @@ arch shallow_sea
 x 29
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 29
@@ -9508,7 +9541,7 @@ arch shallow_sea
 x 30
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 30
@@ -9762,7 +9795,7 @@ arch shallow_sea
 x 31
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 31
@@ -10016,7 +10049,7 @@ arch shallow_sea
 x 32
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 32
@@ -10270,7 +10303,7 @@ arch shallow_sea
 x 33
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 33
@@ -10524,7 +10557,7 @@ arch shallow_sea
 x 34
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 34
@@ -10782,7 +10815,7 @@ arch shallow_sea
 x 35
 y 31
 elevation -9
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 35
@@ -12328,10 +12361,14 @@ x 41
 y 26
 elevation -8
 end
-arch tree
+arch grass_only
 x 41
 y 27
 elevation 1340
+end
+arch tree3
+x 41
+y 27
 end
 arch dragon
 x 41
@@ -12594,15 +12631,23 @@ x 42
 y 27
 elevation 1941
 end
-arch evergreen
+arch grass_only
 x 42
 y 28
 elevation 2384
 end
-arch tree
+arch tree5
+x 42
+y 28
+end
+arch grass_only
 x 42
 y 29
 elevation 1967
+end
+arch tree3
+x 42
+y 29
 end
 arch woods_2
 x 42
@@ -12842,10 +12887,14 @@ x 43
 y 26
 elevation 788
 end
-arch evergreen
+arch grass_only
 x 43
 y 27
 elevation 2467
+end
+arch tree5
+x 43
+y 27
 end
 arch woods_2
 x 43
@@ -13864,10 +13913,14 @@ x 47
 y 28
 elevation 257
 end
-arch tree
+arch grass_only
 x 47
 y 29
 elevation 1035
+end
+arch tree3
+x 47
+y 29
 end
 arch brush
 x 47
