@@ -8,6 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
+Modified: 2008-01-30 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -1675,7 +1676,7 @@ end
 arch invis_exit
 slaying /world/world_105_115
 hp 2
-sp 36
+sp 35
 x 24
 y 5
 end
