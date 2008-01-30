@@ -8657,11 +8657,6 @@ endmsg
 x 32
 y 22
 end
-arch mountain
-x 32
-y 22
-elevation 8000
-end
 arch mountain_cave2
 name Mopoon's Weapon Shop
 slaying /lake_country/shops/Mopoon_wshop
@@ -8669,6 +8664,7 @@ hp 9
 sp 9
 x 32
 y 22
+smoothlevel 128
 end
 arch jungle_2
 x 32
@@ -9382,17 +9378,12 @@ arch wasteland
 x 35
 y 19
 end
-arch mountain
-x 35
-y 20
-end
 arch mountain_cave
 slaying /lake_country/snake_pit/snakepit_1
 hp 7
 sp 16
 x 35
 y 20
-is_floor 0
 end
 arch mountain
 x 35
