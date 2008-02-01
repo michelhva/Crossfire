@@ -2,6 +2,9 @@ arch map
 name world_109_125
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_109_124
 tile_path_2 world_110_125
@@ -195,13 +198,19 @@ arch hills_rocky
 y 43
 elevation 4089
 end
-arch evergreens
+arch grass_only
 y 44
 elevation 2955
 end
-arch evergreens
+arch evergreens2
+y 44
+end
+arch grass_only
 y 45
 elevation 1544
+end
+arch evergreens2
+y 45
 end
 arch grass
 y 46
@@ -276,12 +285,13 @@ end
 arch firewall_4
 name snowstorm
 face brefjell.111
-dam 17
 x 1
 y 10
 speed -0.03
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch snow
 x 1
@@ -336,11 +346,12 @@ end
 arch firewall_2
 name snowstorm
 face brefjell.111
-dam 17
 x 1
 y 21
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 1
@@ -456,10 +467,14 @@ x 1
 y 43
 elevation 3562
 end
-arch evergreens
+arch grass_only
 x 1
 y 44
 elevation 2374
+end
+arch evergreens2
+x 1
+y 44
 end
 arch grass
 x 1
@@ -1220,10 +1235,14 @@ x 4
 y 36
 elevation 4406
 end
-arch evergreens
+arch grass_only
 x 4
 y 37
 elevation 2460
+end
+arch evergreens2
+x 4
+y 37
 end
 arch hills_rocky
 x 4
@@ -1332,12 +1351,13 @@ end
 arch firewall_5
 name snowstorm
 face brefjell.111
-dam 17
 x 5
 y 8
 speed -0.07
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch drifts
 x 5
@@ -1475,15 +1495,23 @@ x 5
 y 36
 elevation 3663
 end
-arch evergreens
+arch grass_only
 x 5
 y 37
 elevation 2241
 end
-arch evergreens
+arch evergreens2
+x 5
+y 37
+end
+arch grass_only
 x 5
 y 38
 elevation 2814
+end
+arch evergreens2
+x 5
+y 38
 end
 arch hills_rocky
 x 5
@@ -1684,12 +1712,13 @@ end
 arch firewall_1
 name snowstorm
 face brefjell.111
-dam 17
 x 6
 y 23
 speed -0.1
 level 15
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 6
@@ -1775,10 +1804,14 @@ x 6
 y 39
 elevation 2187
 end
-arch evergreens
+arch grass_only
 x 6
 y 40
 elevation 1084
+end
+arch evergreens2
+x 6
+y 40
 end
 arch brush
 x 6
@@ -1908,12 +1941,13 @@ end
 arch firewall_4
 name snowstorm
 face brefjell.111
-dam 17
 x 7
 y 16
 speed -0.05
 level 10
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 7
@@ -2006,30 +2040,46 @@ arch dirtroad_1_3
 x 7
 y 34
 end
-arch evergreens
+arch grass_only
 x 7
 y 35
 elevation 2799
+end
+arch evergreens2
+x 7
+y 35
 end
 arch hills_rocky
 x 7
 y 36
 elevation 3248
 end
-arch evergreen
+arch grass_only
 x 7
 y 37
 elevation 2592
 end
-arch evergreen
+arch tree5
+x 7
+y 37
+end
+arch grass_only
 x 7
 y 38
 elevation 2674
 end
-arch evergreen
+arch tree5
+x 7
+y 38
+end
+arch grass_only
 x 7
 y 39
 elevation 1817
+end
+arch tree5
+x 7
+y 39
 end
 arch brush
 x 7
@@ -2373,12 +2423,13 @@ end
 arch firewall_3
 name snowstorm
 face brefjell.111
-dam 17
 x 9
 y 7
 speed -0.05
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 9
@@ -2507,10 +2558,14 @@ arch dirtroad_1_3
 x 9
 y 33
 end
-arch evergreens
+arch grass_only
 x 9
 y 34
 elevation 2517
+end
+arch evergreens2
+x 9
+y 34
 end
 arch hills
 x 9
@@ -2527,15 +2582,23 @@ x 9
 y 37
 elevation 3937
 end
-arch evergreens
+arch grass_only
 x 9
 y 38
 elevation 2739
 end
-arch tree
+arch evergreens2
+x 9
+y 38
+end
+arch grass_only
 x 9
 y 39
 elevation 2298
+end
+arch tree3
+x 9
+y 39
 end
 arch grass
 x 9
@@ -2657,12 +2720,13 @@ end
 arch firewall_1
 name snowstorm
 face brefjell.111
-dam 17
 x 10
 y 14
 speed -0.1
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 10
@@ -2787,10 +2851,14 @@ arch dirtroad_1_3
 x 10
 y 33
 end
-arch evergreens
+arch grass_only
 x 10
 y 34
 elevation 2091
+end
+arch evergreens2
+x 10
+y 34
 end
 arch hills
 x 10
@@ -2837,20 +2905,28 @@ x 10
 y 43
 elevation 1459
 end
-arch evergreens
+arch grass_only
 x 10
 y 44
 elevation 1675
+end
+arch evergreens2
+x 10
+y 44
 end
 arch jungle_1
 x 10
 y 45
 elevation 1703
 end
-arch evergreens
+arch grass_only
 x 10
 y 46
 elevation 1692
+end
+arch evergreens2
+x 10
+y 46
 end
 arch jungle_1
 x 10
@@ -3030,10 +3106,14 @@ arch dirtroad_1_3
 x 11
 y 33
 end
-arch evergreens
+arch grass_only
 x 11
 y 34
 elevation 2880
+end
+arch evergreens2
+x 11
+y 34
 end
 arch hills
 x 11
@@ -3055,15 +3135,23 @@ x 11
 y 38
 elevation 1427
 end
-arch tree
+arch grass_only
 x 11
 y 39
 elevation 1317
 end
-arch evergreens
+arch tree3
+x 11
+y 39
+end
+arch grass_only
 x 11
 y 40
 elevation 2104
+end
+arch evergreens2
+x 11
+y 40
 end
 arch grass
 x 11
@@ -3080,15 +3168,23 @@ x 11
 y 43
 elevation 801
 end
-arch evergreens
+arch grass_only
 x 11
 y 44
 elevation 2141
 end
-arch evergreens
+arch evergreens2
+x 11
+y 44
+end
+arch grass_only
 x 11
 y 45
 elevation 2391
+end
+arch evergreens2
+x 11
+y 45
 end
 arch jungle_1
 x 11
@@ -3105,10 +3201,14 @@ x 11
 y 48
 elevation 3225
 end
-arch evergreens
+arch grass_only
 x 11
 y 49
 elevation 2745
+end
+arch evergreens2
+x 11
+y 49
 end
 arch mountain
 x 12
@@ -3260,10 +3360,14 @@ x 12
 y 31
 elevation 3146
 end
-arch evergreens
+arch grass_only
 x 12
 y 32
 elevation 2698
+end
+arch evergreens2
+x 12
+y 32
 end
 arch hills_rocky
 x 12
@@ -3318,20 +3422,28 @@ x 12
 y 41
 elevation 801
 end
-arch tree
+arch grass_only
 x 12
 y 42
 elevation 2298
+end
+arch tree3
+x 12
+y 42
 end
 arch jungle_1
 x 12
 y 43
 elevation 1828
 end
-arch evergreens
+arch grass_only
 x 12
 y 44
 elevation 2282
+end
+arch evergreens2
+x 12
+y 44
 end
 arch jungle_1
 x 12
@@ -3514,10 +3626,14 @@ x 13
 y 32
 elevation 3319
 end
-arch evergreens
+arch grass_only
 x 13
 y 33
 elevation 2648
+end
+arch evergreens2
+x 13
+y 33
 end
 arch hills_rocky
 x 13
@@ -3555,10 +3671,14 @@ x 13
 y 38
 elevation 426
 end
-arch evergreens
+arch grass_only
 x 13
 y 39
 elevation 2097
+end
+arch evergreens2
+x 13
+y 39
 end
 arch grass
 x 13
@@ -3678,12 +3798,13 @@ end
 arch firewall_5
 name snowstorm
 face brefjell.111
-dam 17
 x 14
 y 13
 speed -0.05
 level 3
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 14
@@ -3864,12 +3985,13 @@ end
 arch firewall_4
 name snowstorm
 face brefjell.111
-dam 17
 x 15
 y 3
 speed -0.07
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch s_mountain
 x 15
@@ -3944,12 +4066,13 @@ end
 arch firewall_8
 name snowstorm
 face brefjell.111
-dam 17
 x 15
 y 19
 speed -0.07
 level 5
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 15
@@ -4314,10 +4437,14 @@ arch flagstone
 x 16
 y 46
 end
-arch evergreens
+arch grass_only
 x 16
 y 47
 elevation 2205
+end
+arch evergreens2
+x 16
+y 47
 end
 arch jungle_1
 x 16
@@ -4383,12 +4510,13 @@ end
 arch firewall_8
 name snowstorm
 face brefjell.111
-dam 17
 x 17
 y 10
 speed -0.05
 level 20
 invisible 1
+arch spell_icestorm
+end
 end
 arch mountain5
 x 17
@@ -4565,10 +4693,14 @@ x 17
 y 47
 elevation 3025
 end
-arch evergreens
+arch grass_only
 x 17
 y 48
 elevation 1265
+end
+arch evergreens2
+x 17
+y 48
 end
 arch jungle_1
 x 17
@@ -4756,10 +4888,14 @@ x 18
 y 31
 elevation 4906
 end
-arch evergreens
+arch grass_only
 x 18
 y 32
 elevation 2147
+end
+arch evergreens2
+x 18
+y 32
 end
 arch hills_rocky
 x 18
@@ -4834,10 +4970,14 @@ x 18
 y 47
 elevation 3230
 end
-arch evergreens
+arch grass_only
 x 18
 y 48
 elevation 2484
+end
+arch evergreens2
+x 18
+y 48
 end
 arch jungle_1
 x 18
@@ -4999,10 +5139,14 @@ x 19
 y 32
 elevation 4374
 end
-arch evergreens
+arch grass_only
 x 19
 y 33
 elevation 2364
+end
+arch evergreens2
+x 19
+y 33
 end
 arch hills_rocky
 x 19
@@ -5072,15 +5216,23 @@ x 19
 y 47
 elevation 2613
 end
-arch evergreens
+arch grass_only
 x 19
 y 48
 elevation 2578
 end
-arch evergreens
+arch evergreens2
+x 19
+y 48
+end
+arch grass_only
 x 19
 y 49
 elevation 2034
+end
+arch evergreens2
+x 19
+y 49
 end
 arch s_mountain
 x 20
@@ -5279,10 +5431,14 @@ x 20
 y 35
 elevation 4990
 end
-arch evergreens
+arch grass_only
 x 20
 y 36
 elevation 2378
+end
+arch evergreens2
+x 20
+y 36
 end
 arch hills_rocky
 x 20
@@ -5496,20 +5652,28 @@ x 21
 y 32
 elevation 4003
 end
-arch evergreens
+arch grass_only
 x 21
 y 33
 elevation 2156
+end
+arch evergreens2
+x 21
+y 33
 end
 arch hills_rocky
 x 21
 y 34
 elevation 3429
 end
-arch evergreens
+arch grass_only
 x 21
 y 35
 elevation 1838
+end
+arch evergreens2
+x 21
+y 35
 end
 arch woods_3
 x 21
@@ -5988,20 +6152,28 @@ x 23
 y 37
 elevation 2303
 end
-arch evergreens
+arch grass_only
 x 23
 y 38
 elevation 2003
+end
+arch evergreens2
+x 23
+y 38
 end
 arch woods_3
 x 23
 y 39
 elevation 2234
 end
-arch evergreens
+arch grass_only
 x 23
 y 40
 elevation 2757
+end
+arch evergreens2
+x 23
+y 40
 end
 arch hills
 x 23
@@ -6026,10 +6198,14 @@ arch flagstone
 x 23
 y 45
 end
-arch evergreens
+arch grass_only
 x 23
 y 46
 elevation 1612
+end
+arch evergreens2
+x 23
+y 46
 end
 arch woods_3
 x 23
@@ -6194,20 +6370,28 @@ x 24
 y 31
 elevation 3610
 end
-arch evergreens
+arch grass_only
 x 24
 y 32
 elevation 2916
+end
+arch evergreens2
+x 24
+y 32
 end
 arch woods_3
 x 24
 y 33
 elevation 1994
 end
-arch evergreens
+arch grass_only
 x 24
 y 34
 elevation 2842
+end
+arch evergreens2
+x 24
+y 34
 end
 arch woods_3
 x 24
@@ -6219,20 +6403,32 @@ x 24
 y 36
 elevation 2519
 end
-arch evergreens
+arch grass_only
 x 24
 y 37
 elevation 2169
 end
-arch evergreens
+arch evergreens2
+x 24
+y 37
+end
+arch grass_only
 x 24
 y 38
 elevation 1587
 end
-arch evergreens
+arch evergreens2
+x 24
+y 38
+end
+arch grass_only
 x 24
 y 39
 elevation 1631
+end
+arch evergreens2
+x 24
+y 39
 end
 arch woods_3
 x 24
@@ -6483,45 +6679,73 @@ x 25
 y 32
 elevation 3323
 end
-arch evergreens
+arch grass_only
 x 25
 y 33
 elevation 2026
 end
-arch evergreens
+arch evergreens2
+x 25
+y 33
+end
+arch grass_only
 x 25
 y 34
 elevation 2940
 end
-arch evergreens
+arch evergreens2
+x 25
+y 34
+end
+arch grass_only
 x 25
 y 35
 elevation 2542
 end
-arch evergreens
+arch evergreens2
+x 25
+y 35
+end
+arch grass_only
 x 25
 y 36
 elevation 2142
 end
-arch evergreens
+arch evergreens2
+x 25
+y 36
+end
+arch grass_only
 x 25
 y 37
 elevation 1656
 end
-arch evergreens
+arch evergreens2
+x 25
+y 37
+end
+arch grass_only
 x 25
 y 38
 elevation 1643
+end
+arch evergreens2
+x 25
+y 38
 end
 arch grass
 x 25
 y 39
 elevation 700
 end
-arch evergreens
+arch grass_only
 x 25
 y 40
 elevation 1589
+end
+arch evergreens2
+x 25
+y 40
 end
 arch woods_3
 x 25
@@ -6676,7 +6900,7 @@ name large rocks
 x 26
 y 17
 type 0
-no_pass 1
+move_block all
 blocksview 0
 end
 arch snow
@@ -6759,35 +6983,55 @@ x 26
 y 34
 elevation 3266
 end
-arch evergreens
+arch grass_only
 x 26
 y 35
 elevation 2913
 end
-arch evergreens
+arch evergreens2
+x 26
+y 35
+end
+arch grass_only
 x 26
 y 36
 elevation 2543
 end
-arch evergreens
+arch evergreens2
+x 26
+y 36
+end
+arch grass_only
 x 26
 y 37
 elevation 2350
 end
-arch evergreens
+arch evergreens2
+x 26
+y 37
+end
+arch grass_only
 x 26
 y 38
 elevation 1933
+end
+arch evergreens2
+x 26
+y 38
 end
 arch grass
 x 26
 y 39
 elevation 706
 end
-arch evergreens
+arch grass_only
 x 26
 y 40
 elevation 1530
+end
+arch evergreens2
+x 26
+y 40
 end
 arch jungle_1
 x 26
@@ -6927,7 +7171,7 @@ name large rocks
 x 27
 y 17
 type 0
-no_pass 1
+move_block all
 blocksview 0
 end
 arch snow
@@ -7043,20 +7287,28 @@ x 27
 y 37
 elevation 2527
 end
-arch evergreens
+arch grass_only
 x 27
 y 38
 elevation 2673
+end
+arch evergreens2
+x 27
+y 38
 end
 arch woods_3
 x 27
 y 39
 elevation 2679
 end
-arch evergreens
+arch grass_only
 x 27
 y 40
 elevation 2538
+end
+arch evergreens2
+x 27
+y 40
 end
 arch woods
 x 27
@@ -7228,7 +7480,7 @@ name large rocks
 x 28
 y 17
 type 0
-no_pass 1
+move_block all
 blocksview 0
 end
 arch drifts

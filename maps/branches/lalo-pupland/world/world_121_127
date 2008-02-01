@@ -2,6 +2,9 @@ arch map
 name world_121_127
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_121_126
 tile_path_2 world_122_127
@@ -5475,15 +5478,23 @@ x 22
 y 7
 elevation -119
 end
-arch evergreen
+arch grass_only
 x 22
 y 8
 elevation 1275
 end
-arch evergreen
+arch tree5
+x 22
+y 8
+end
+arch grass_only
 x 22
 y 9
 elevation 2179
+end
+arch tree5
+x 22
+y 9
 end
 arch woods_3
 x 22
@@ -5729,30 +5740,46 @@ x 23
 y 8
 elevation 658
 end
-arch evergreen
+arch grass_only
 x 23
 y 9
 elevation 2026
+end
+arch tree5
+x 23
+y 9
 end
 arch jungle_1
 x 23
 y 10
 elevation 2644
 end
-arch evergreen
+arch grass_only
 x 23
 y 11
 elevation 2868
 end
-arch evergreen
+arch tree5
+x 23
+y 11
+end
+arch grass_only
 x 23
 y 12
 elevation 2626
 end
-arch evergreen
+arch tree5
+x 23
+y 12
+end
+arch grass_only
 x 23
 y 13
 elevation 1497
+end
+arch tree5
+x 23
+y 13
 end
 arch sea
 x 23
@@ -5983,25 +6010,41 @@ x 24
 y 9
 elevation 433
 end
-arch evergreen
+arch grass_only
 x 24
 y 10
 elevation 1490
 end
-arch evergreens
+arch tree5
+x 24
+y 10
+end
+arch grass_only
 x 24
 y 11
 elevation 1921
 end
-arch evergreen
+arch evergreens2
+x 24
+y 11
+end
+arch grass_only
 x 24
 y 12
 elevation 1969
 end
-arch evergreen
+arch tree5
+x 24
+y 12
+end
+arch grass_only
 x 24
 y 13
 elevation 1272
+end
+arch tree5
+x 24
+y 13
 end
 arch sea
 x 24
@@ -8946,15 +8989,23 @@ x 36
 y 4
 elevation 92
 end
-arch evergreen
+arch grass_only
 x 36
 y 5
 elevation 1688
 end
-arch evergreen
+arch tree5
+x 36
+y 5
+end
+arch grass_only
 x 36
 y 6
 elevation 1717
+end
+arch tree5
+x 36
+y 6
 end
 arch grass
 x 36
@@ -9195,10 +9246,14 @@ x 37
 y 4
 elevation 502
 end
-arch evergreen
+arch grass_only
 x 37
 y 5
 elevation 1627
+end
+arch tree5
+x 37
+y 5
 end
 arch woods_3
 x 37
@@ -9937,15 +9992,23 @@ x 40
 y 3
 elevation 156
 end
-arch evergreen
+arch grass_only
 x 40
 y 4
 elevation 1274
 end
-arch evergreen
+arch tree5
+x 40
+y 4
+end
+arch grass_only
 x 40
 y 5
 elevation 1094
+end
+arch tree5
+x 40
+y 5
 end
 arch grass
 x 40

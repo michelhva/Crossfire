@@ -8,9 +8,8 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Mar 11 12:21:00 2005
+Created:  2005-02-11
+Modified: 2007-12-24 tchize
 endmsg
 outdoor 1
 tile_path_2 world_129_100
@@ -3294,10 +3293,14 @@ x 12
 y 47
 elevation 58
 end
-arch evergreen
+arch grass_only
 x 12
 y 48
 elevation 1027
+end
+arch tree5
+x 12
+y 48
 end
 arch woods
 x 12

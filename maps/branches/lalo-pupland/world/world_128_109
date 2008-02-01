@@ -4,11 +4,14 @@ difficulty 1
 region wolfsburg
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
-tile_path_1 /world/world_128_108
-tile_path_2 /world/world_129_109
-tile_path_3 /world/world_128_110
-tile_path_4 /world/world_127_109
+tile_path_1 world_128_108
+tile_path_2 world_129_109
+tile_path_3 world_128_110
+tile_path_4 world_127_109
 end
 arch mountain
 elevation 5930
@@ -1020,10 +1023,14 @@ x 4
 y 12
 elevation 1129
 end
-arch tree
+arch grass_only
 x 4
 y 13
 elevation 1008
+end
+arch tree3
+x 4
+y 13
 end
 arch brush
 x 4
@@ -1264,20 +1271,32 @@ x 5
 y 11
 elevation 3098
 end
-arch tree
+arch grass_only
 x 5
 y 12
 elevation 2980
 end
-arch tree
+arch tree3
+x 5
+y 12
+end
+arch grass_only
 x 5
 y 13
 elevation 2277
 end
-arch tree
+arch tree3
+x 5
+y 13
+end
+arch grass_only
 x 5
 y 14
 elevation 1359
+end
+arch tree3
+x 5
+y 14
 end
 arch brush
 x 5
@@ -1518,10 +1537,14 @@ x 6
 y 12
 elevation 4260
 end
-arch tree
+arch grass_only
 x 6
 y 13
 elevation 2812
+end
+arch tree3
+x 6
+y 13
 end
 arch brush
 x 6
@@ -1742,10 +1765,14 @@ x 7
 y 7
 elevation 7830
 end
-arch tree
+arch grass_only
 x 7
 y 8
 elevation 2113
+end
+arch tree3
+x 7
+y 8
 end
 arch mountain
 x 7
@@ -1767,15 +1794,23 @@ x 7
 y 12
 elevation 4764
 end
-arch evergreens
+arch grass_only
 x 7
 y 13
 elevation 2900
 end
-arch tree
+arch evergreens2
+x 7
+y 13
+end
+arch grass_only
 x 7
 y 14
 elevation 1256
+end
+arch tree3
+x 7
+y 14
 end
 arch brush
 x 7
@@ -2264,10 +2299,14 @@ x 9
 y 13
 elevation 3126
 end
-arch tree
+arch grass_only
 x 9
 y 14
 elevation 2428
+end
+arch tree3
+x 9
+y 14
 end
 arch jungle_1
 x 9
@@ -2503,20 +2542,32 @@ x 10
 y 12
 elevation 30
 end
-arch tree
+arch grass_only
 x 10
 y 13
 elevation 2563
 end
-arch tree
+arch tree3
+x 10
+y 13
+end
+arch grass_only
 x 10
 y 14
 elevation 2905
 end
-arch tree
+arch tree3
+x 10
+y 14
+end
+arch grass_only
 x 10
 y 15
 elevation 2188
+end
+arch tree3
+x 10
+y 15
 end
 arch brush
 x 10
@@ -2745,30 +2796,46 @@ x 11
 y 11
 elevation 3987
 end
-arch tree
+arch grass_only
 x 11
 y 12
 elevation 1254
 end
-arch tree
+arch tree3
+x 11
+y 12
+end
+arch grass_only
 x 11
 y 13
 elevation 1479
+end
+arch tree3
+x 11
+y 13
 end
 arch hills_rocky
 x 11
 y 14
 elevation 3537
 end
-arch tree
+arch grass_only
 x 11
 y 15
 elevation 2890
 end
-arch tree
+arch tree3
+x 11
+y 15
+end
+arch grass_only
 x 11
 y 16
 elevation 1698
+end
+arch tree3
+x 11
+y 16
 end
 arch shallow_sea
 x 11
@@ -3235,7 +3302,6 @@ y 1
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 1
 end
@@ -3249,7 +3315,6 @@ y 3
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 3
 end
@@ -3263,7 +3328,6 @@ y 5
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 5
 end
@@ -3277,7 +3341,6 @@ y 7
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 7
 end
@@ -3291,7 +3354,6 @@ y 9
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 9
 end
@@ -3305,7 +3367,6 @@ y 11
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 11
 end
@@ -3319,7 +3380,6 @@ y 13
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 13
 y 13
 end
@@ -3611,7 +3671,7 @@ hp 17
 sp 40
 x 14
 y 26
-walk_on 1
+move_on walk
 end
 arch sea
 x 14
@@ -4227,7 +4287,6 @@ y 1
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 1
 end
@@ -4241,7 +4300,6 @@ y 3
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 3
 end
@@ -4263,7 +4321,6 @@ y 7
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 7
 end
@@ -4277,7 +4334,6 @@ y 9
 end
 arch barn
 name warehouse
-name_pl warehouse
 x 17
 y 9
 end
@@ -4303,8 +4359,10 @@ x 17
 y 13
 end
 arch barn
-name warehouse
-name_pl warehouse
+name Acme Homebuilding Inc.
+slaying /wolfsburg/shops/buildshop
+hp 17
+sp 38
 x 17
 y 13
 end
@@ -4439,7 +4497,7 @@ arch shallow_sea
 x 17
 y 40
 elevation -33
-no_pass 0
+move_block 0
 end
 arch rowboat
 slaying world_128_109
@@ -4645,10 +4703,14 @@ x 18
 y 35
 elevation 1456
 end
-arch tree
+arch grass_only
 x 18
 y 36
 elevation 2013
+end
+arch tree3
+x 18
+y 36
 end
 arch hills
 x 18
@@ -4669,7 +4731,7 @@ arch shallow_sea
 x 18
 y 40
 elevation -8
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
@@ -4768,7 +4830,6 @@ y 7
 end
 arch city_tower
 name Old Tower
-name_pl Old Tower
 slaying /wolfsburg/magara/tower1/entrance
 hp 4
 sp 12
@@ -4979,7 +5040,7 @@ x 20
 y 1
 end
 arch well
-name Well to Catabombs
+name Well to Catacombs
 slaying /wolfsburg/dungeons/church.2
 hp 5
 sp 6
@@ -6005,6 +6066,7 @@ x 24
 y 4
 end
 arch house_2
+name Lursendis's house
 x 24
 y 4
 end
@@ -6256,7 +6318,6 @@ y 1
 end
 arch keep
 name west gatehouse
-name_pl west gatehouse
 x 25
 y 1
 end
@@ -6290,7 +6351,6 @@ y 7
 end
 arch guild
 name Damned Heretics's Storage Room
-name_pl Damned Heretics's Storage Room
 slaying /wolfsburg/guilds/damned_heretics/storage_room
 hp 1
 sp 10
@@ -7221,7 +7281,6 @@ y 1
 end
 arch keep
 name east gatehouse
-name_pl east gatehouse
 x 29
 y 1
 end
@@ -7935,6 +7994,10 @@ x 32
 y 2
 end
 arch house_2
+name Ye Olde Transport Shoppe
+slaying /wolfsburg/shops/transport.shoppe
+hp 17
+sp 22
 x 32
 y 2
 end
@@ -9024,13 +9087,15 @@ arch dungeon_floor
 x 36
 y 8
 end
-arch inn
-name The Red Light District
-slaying /wolfsburg/whorehouse
-hp 1
+arch house_long
+name Apartment
+slaying /wolfsburg/apartments/wolfsburg.apartment
+hp 2
 sp 1
 x 36
 y 8
+glow_radius 2
+unique 1
 end
 arch dungeon_floor
 x 36
@@ -10468,7 +10533,11 @@ arch cwall_2_1_2
 x 42
 y 7
 end
-arch tree
+arch grass_only
+x 42
+y 8
+end
+arch tree3
 x 42
 y 8
 end
@@ -10480,7 +10549,11 @@ arch grass
 x 42
 y 10
 end
-arch tree
+arch grass_only
+x 42
+y 11
+end
+arch tree3
 x 42
 y 11
 end
@@ -11219,7 +11292,11 @@ arch cwall_2_1_2
 x 45
 y 7
 end
-arch tree
+arch grass_only
+x 45
+y 8
+end
+arch tree3
 x 45
 y 8
 end
@@ -11231,7 +11308,11 @@ arch grass
 x 45
 y 10
 end
-arch tree
+arch grass_only
+x 45
+y 11
+end
+arch tree3
 x 45
 y 11
 end
