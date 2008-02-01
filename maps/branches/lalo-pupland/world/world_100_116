@@ -3,6 +3,9 @@ name world_100_116
 region portjoseph
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_100_115
 tile_path_2 world_101_116
@@ -7052,7 +7055,11 @@ arch pstone_1
 x 28
 y 16
 end
-arch tree
+arch grass_only
+x 28
+y 16
+end
+arch tree3
 x 28
 y 16
 end
@@ -7295,7 +7302,11 @@ arch pstone_1
 x 29
 y 14
 end
-arch tree
+arch grass_only
+x 29
+y 14
+end
+arch tree3
 x 29
 y 14
 end
@@ -7903,6 +7914,8 @@ end
 arch active_volcano
 x 31
 y 21
+arch spell_magic_bullet
+end
 end
 arch food
 x 31
@@ -10301,7 +10314,7 @@ arch wasteland
 name jagged rocks
 x 41
 y 29
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch pstone_1

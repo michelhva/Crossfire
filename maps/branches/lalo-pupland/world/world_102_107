@@ -7,6 +7,9 @@ width 50
 height 50
 enter_x 1
 enter_y 1
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_102_106
 tile_path_2 world_103_107
@@ -544,7 +547,11 @@ arch grass
 x 2
 y 44
 end
-arch evergreens
+arch grass_only
+x 2
+y 45
+end
+arch evergreens2
 x 2
 y 45
 end
@@ -1356,7 +1363,11 @@ arch grass
 x 6
 y 43
 end
-arch evergreens
+arch grass_only
+x 6
+y 44
+end
+arch evergreens2
 x 6
 y 44
 end
@@ -1563,7 +1574,11 @@ arch grass
 x 7
 y 45
 end
-arch evergreens
+arch grass_only
+x 7
+y 46
+end
+arch evergreens2
 x 7
 y 46
 end
@@ -1670,7 +1685,11 @@ arch desert
 x 8
 y 22
 end
-arch tree
+arch grass_only
+x 8
+y 23
+end
+arch tree3
 x 8
 y 23
 end
@@ -1758,7 +1777,11 @@ arch grass
 x 8
 y 44
 end
-arch evergreens
+arch grass_only
+x 8
+y 45
+end
+arch evergreens2
 x 8
 y 45
 end
@@ -2167,7 +2190,7 @@ end
 arch shallow_sea
 x 10
 y 46
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 10
@@ -2371,7 +2394,7 @@ end
 arch shallow_sea
 x 11
 y 46
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 11
@@ -2575,7 +2598,7 @@ end
 arch shallow_sea
 x 12
 y 46
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 12
@@ -2779,7 +2802,7 @@ end
 arch shallow_sea
 x 13
 y 46
-no_pass 0
+move_block 0
 end
 arch stonebridge_2_1_2
 x 13
@@ -5949,7 +5972,11 @@ arch woods
 x 29
 y 40
 end
-arch evergreens
+arch grass_only
+x 29
+y 41
+end
+arch evergreens2
 x 29
 y 41
 end
@@ -8484,7 +8511,11 @@ arch beach
 x 42
 y 25
 end
-arch evergreens
+arch grass_only
+x 42
+y 26
+end
+arch evergreens2
 x 42
 y 26
 end
@@ -8695,7 +8726,11 @@ arch steppe
 x 43
 y 28
 end
-arch evergreens
+arch grass_only
+x 43
+y 29
+end
+arch evergreens2
 x 43
 y 29
 end
@@ -8707,7 +8742,11 @@ arch hills
 x 43
 y 31
 end
-arch evergreens
+arch grass_only
+x 43
+y 32
+end
+arch evergreens2
 x 43
 y 32
 end
@@ -9025,7 +9064,11 @@ arch woods
 x 45
 y 11
 end
-arch evergreens
+arch grass_only
+x 45
+y 12
+end
+arch evergreens2
 x 45
 y 12
 end
@@ -9085,7 +9128,11 @@ arch mountain
 x 45
 y 26
 end
-arch evergreens
+arch grass_only
+x 45
+y 27
+end
+arch evergreens2
 x 45
 y 27
 end
@@ -9220,19 +9267,35 @@ arch woods
 x 46
 y 10
 end
-arch evergreens
+arch grass_only
 x 46
 y 11
 end
-arch evergreens
+arch evergreens2
+x 46
+y 11
+end
+arch grass_only
 x 46
 y 12
 end
-arch evergreens
+arch evergreens2
+x 46
+y 12
+end
+arch grass_only
 x 46
 y 13
 end
-arch evergreens
+arch evergreens2
+x 46
+y 13
+end
+arch grass_only
+x 46
+y 14
+end
+arch evergreens2
 x 46
 y 14
 end
@@ -9240,7 +9303,11 @@ arch woods
 x 46
 y 15
 end
-arch evergreens
+arch grass_only
+x 46
+y 16
+end
+arch evergreens2
 x 46
 y 16
 end
@@ -9288,7 +9355,11 @@ arch steppe
 x 46
 y 27
 end
-arch evergreens
+arch grass_only
+x 46
+y 28
+end
+arch evergreens2
 x 46
 y 28
 end
@@ -9423,7 +9494,11 @@ arch steppe
 x 47
 y 11
 end
-arch evergreens
+arch grass_only
+x 47
+y 12
+end
+arch evergreens2
 x 47
 y 12
 end
@@ -9431,11 +9506,19 @@ arch grass
 x 47
 y 13
 end
-arch evergreens
+arch grass_only
 x 47
 y 14
 end
-arch evergreens
+arch evergreens2
+x 47
+y 14
+end
+arch grass_only
+x 47
+y 15
+end
+arch evergreens2
 x 47
 y 15
 end
@@ -9487,7 +9570,11 @@ arch mountain
 x 47
 y 27
 end
-arch evergreens
+arch grass_only
+x 47
+y 28
+end
+arch evergreens2
 x 47
 y 28
 end
@@ -9495,7 +9582,11 @@ arch desert
 x 47
 y 29
 end
-arch evergreens
+arch grass_only
+x 47
+y 30
+end
+arch evergreens2
 x 47
 y 30
 end
@@ -9638,15 +9729,27 @@ arch steppe
 x 48
 y 15
 end
-arch evergreens
+arch grass_only
 x 48
 y 16
 end
-arch evergreens
+arch evergreens2
+x 48
+y 16
+end
+arch grass_only
 x 48
 y 17
 end
-arch evergreens
+arch evergreens2
+x 48
+y 17
+end
+arch grass_only
+x 48
+y 18
+end
+arch evergreens2
 x 48
 y 18
 end
@@ -9686,15 +9789,27 @@ arch steppe
 x 48
 y 27
 end
-arch evergreens
+arch grass_only
 x 48
 y 28
 end
-arch evergreens
+arch evergreens2
+x 48
+y 28
+end
+arch grass_only
 x 48
 y 29
 end
-arch evergreens
+arch evergreens2
+x 48
+y 29
+end
+arch grass_only
+x 48
+y 30
+end
+arch evergreens2
 x 48
 y 30
 end
@@ -9829,7 +9944,11 @@ arch hills
 x 49
 y 13
 end
-arch evergreens
+arch grass_only
+x 49
+y 14
+end
+arch evergreens2
 x 49
 y 14
 end
@@ -9881,11 +10000,19 @@ arch steppe
 x 49
 y 26
 end
-arch evergreens
+arch grass_only
 x 49
 y 27
 end
-arch evergreens
+arch evergreens2
+x 49
+y 27
+end
+arch grass_only
+x 49
+y 28
+end
+arch evergreens2
 x 49
 y 28
 end

@@ -3,6 +3,9 @@ name world_102_127
 region stoneville
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_102_126
 tile_path_2 world_103_127
@@ -10257,7 +10260,11 @@ x 41
 y 17
 elevation -474
 end
-arch tree
+arch grass_only
+x 41
+y 18
+end
+arch tree3
 x 41
 y 18
 end
@@ -11007,7 +11014,11 @@ arch grass
 x 44
 y 16
 end
-arch tree
+arch grass_only
+x 44
+y 16
+end
+arch tree3
 x 44
 y 16
 end
@@ -11704,7 +11715,11 @@ arch grass
 x 47
 y 9
 end
-arch tree
+arch grass_only
+x 47
+y 9
+end
+arch tree3
 x 47
 y 9
 end
@@ -11768,7 +11783,11 @@ arch grass
 x 47
 y 20
 end
-arch tree
+arch grass_only
+x 47
+y 20
+end
+arch tree3
 x 47
 y 20
 end
@@ -12256,7 +12275,11 @@ arch grass
 x 49
 y 18
 end
-arch tree
+arch grass_only
+x 49
+y 18
+end
+arch tree3
 x 49
 y 18
 end
@@ -12264,7 +12287,11 @@ arch grass
 x 49
 y 19
 end
-arch tree
+arch grass_only
+x 49
+y 19
+end
+arch tree3
 x 49
 y 19
 end

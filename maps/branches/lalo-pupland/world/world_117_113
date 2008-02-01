@@ -2,6 +2,9 @@ arch map
 name world_117_113
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_117_112
 tile_path_2 world_118_113
@@ -2637,10 +2640,14 @@ x 10
 y 37
 elevation 6028
 end
-arch tree
+arch grass_only
 x 10
 y 38
 elevation 1576
+end
+arch tree3
+x 10
+y 38
 end
 arch hills_rocky
 x 10
@@ -5555,10 +5562,14 @@ x 22
 y 23
 elevation 3957
 end
-arch tree
+arch grass_only
 x 22
 y 24
 elevation 2799
+end
+arch tree3
+x 22
+y 24
 end
 arch mountain
 x 22
@@ -6043,10 +6054,14 @@ x 24
 y 21
 elevation 3899
 end
-arch tree
+arch grass_only
 x 24
 y 22
 elevation 1607
+end
+arch tree3
+x 24
+y 22
 end
 arch hills_rocky
 x 24
@@ -6292,15 +6307,23 @@ x 25
 y 21
 elevation 2751
 end
-arch tree
+arch grass_only
 x 25
 y 22
 elevation 2127
 end
-arch evergreens
+arch tree3
+x 25
+y 22
+end
+arch grass_only
 x 25
 y 23
 elevation 2301
+end
+arch evergreens2
+x 25
+y 23
 end
 arch hills_rocky
 x 25
@@ -6546,10 +6569,14 @@ x 26
 y 22
 elevation 3022
 end
-arch evergreens
+arch grass_only
 x 26
 y 23
 elevation 1797
+end
+arch evergreens2
+x 26
+y 23
 end
 arch hills_rocky
 x 26
@@ -6566,10 +6593,14 @@ x 26
 y 26
 elevation 4157
 end
-arch evergreens
+arch grass_only
 x 26
 y 27
 elevation 2834
+end
+arch evergreens2
+x 26
+y 27
 end
 arch steppe
 x 26
@@ -7891,10 +7922,14 @@ x 31
 y 42
 elevation 5168
 end
-arch evergreens
+arch grass_only
 x 31
 y 43
 elevation 2218
+end
+arch evergreens2
+x 31
+y 43
 end
 arch hills_rocky
 x 31
@@ -7921,10 +7956,14 @@ x 31
 y 48
 elevation 4700
 end
-arch evergreens
+arch grass_only
 x 31
 y 49
 elevation 2601
+end
+arch evergreens2
+x 31
+y 49
 end
 arch mountain
 x 32
@@ -8140,15 +8179,23 @@ x 32
 y 42
 elevation 4809
 end
-arch evergreens
+arch grass_only
 x 32
 y 43
 elevation 2503
 end
-arch evergreens
+arch evergreens2
+x 32
+y 43
+end
+arch grass_only
 x 32
 y 44
 elevation 1370
+end
+arch evergreens2
+x 32
+y 44
 end
 arch steppe
 x 32
@@ -10361,10 +10408,14 @@ x 41
 y 38
 elevation 5359
 end
-arch evergreens
+arch grass_only
 x 41
 y 39
 elevation 2809
+end
+arch evergreens2
+x 41
+y 39
 end
 arch steppe
 x 41

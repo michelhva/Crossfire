@@ -7,9 +7,8 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb 25 22:55:47 2005
+Created:  2005-02-25
+Modified: 2007-12-22 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_128_127
@@ -5004,26 +5003,18 @@ x 19
 y 38
 elevation -3520
 end
-arch light4
-x 19
-y 39
-end
 arch sea
 x 19
 y 39
 elevation -4891
 end
-arch s_citytower
+arch s_lighthouse
 name Frozen Lighthouse
 slaying /whalingoutpost/lighthouse1
 hp 8
 sp 15
 x 19
 y 39
-end
-arch light3
-x 19
-y 40
 end
 arch s_mountain
 x 19
@@ -5067,7 +5058,7 @@ arch sea
 x 19
 y 45
 elevation -2699
-no_pass 0
+move_block 0
 end
 arch s_mountain
 x 19
@@ -5317,7 +5308,7 @@ arch sea
 x 20
 y 45
 elevation -2692
-no_pass 0
+move_block 0
 end
 arch s_mountain
 x 20

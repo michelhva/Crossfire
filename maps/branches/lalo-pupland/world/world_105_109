@@ -2,6 +2,9 @@ arch map
 name world_105_109
 width 50
 height 50
+msg
+Modified: 2007-12-24 tchize
+endmsg
 outdoor 1
 tile_path_1 world_105_108
 tile_path_2 world_106_109
@@ -1207,10 +1210,14 @@ x 4
 y 46
 elevation 4418
 end
-arch evergreen
+arch grass_only
 x 4
 y 47
 elevation 2637
+end
+arch tree5
+x 4
+y 47
 end
 arch hills_rocky
 x 4
@@ -1465,10 +1472,14 @@ x 5
 y 47
 elevation 2327
 end
-arch evergreen
+arch grass_only
 x 5
 y 48
 elevation 2737
+end
+arch tree5
+x 5
+y 48
 end
 arch hills_rocky
 x 5
@@ -3855,25 +3866,37 @@ x 15
 y 19
 elevation 4926
 end
-arch tree
+arch grass_only
 x 15
 y 20
 elevation 2638
+end
+arch tree3
+x 15
+y 20
 end
 arch steppe
 x 15
 y 21
 elevation 3207
 end
-arch tree
+arch grass_only
 x 15
 y 22
 elevation 2761
 end
-arch tree
+arch tree3
+x 15
+y 22
+end
+arch grass_only
 x 15
 y 23
 elevation 2408
+end
+arch tree3
+x 15
+y 23
 end
 arch jungle_1
 x 15
@@ -4113,20 +4136,32 @@ x 16
 y 20
 elevation 3798
 end
-arch tree
+arch grass_only
 x 16
 y 21
 elevation 1962
 end
-arch tree
+arch tree3
+x 16
+y 21
+end
+arch grass_only
 x 16
 y 22
 elevation 1519
 end
-arch tree
+arch tree3
+x 16
+y 22
+end
+arch grass_only
 x 16
 y 23
 elevation 1931
+end
+arch tree3
+x 16
+y 23
 end
 arch hills
 x 16
@@ -4619,10 +4654,14 @@ x 18
 y 20
 elevation 4077
 end
-arch tree
+arch grass_only
 x 18
 y 21
 elevation 2535
+end
+arch tree3
+x 18
+y 21
 end
 arch hills_rocky
 x 18
@@ -4881,10 +4920,14 @@ x 19
 y 21
 elevation 3091
 end
-arch tree
+arch grass_only
 x 19
 y 22
 elevation 1973
+end
+arch tree3
+x 19
+y 22
 end
 arch hills_rocky
 x 19
@@ -5981,10 +6024,14 @@ arch dirtroad_2_2_3
 x 23
 y 37
 end
-arch evergreens
+arch grass_only
 x 23
 y 38
 elevation 2412
+end
+arch evergreens2
+x 23
+y 38
 end
 arch dirtroad_1_1
 x 23
