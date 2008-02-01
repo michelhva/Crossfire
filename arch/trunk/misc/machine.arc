@@ -25,7 +25,7 @@ Object Machine.1
 name Machine
 title of the Empire
 face machine.x11
-move_block none
+move_block 0
 blocksview 0
 identified 1
 no_pick 1
@@ -42,7 +42,7 @@ end
 More
 Object Machine.3
 face machine.x11
-move_block none
+move_block 0
 blocksview 0
 x 2
 y 0
@@ -98,7 +98,7 @@ end
 More
 Object Machine.A
 face machine.x11
-move_block none
+move_block 0
 blocksview 0
 x 0
 y 3
@@ -114,7 +114,7 @@ end
 More
 Object Machine.C
 face machine.x11
-move_block none
+move_block 0
 blocksview 0
 x 2
 y 3
