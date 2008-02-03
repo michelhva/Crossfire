@@ -1,36 +1,607 @@
-Changes for top of SVN:
-------------------------------------------------------------------------------
+2008-01-30 19:04  kbulgrien
 
-2008-01-20 13:00 kbulgrien
-        * world/world_102_108, darcap/darcap/apartment, darcap/darcap/tavern,
-          santo_dominion/sdomino_appartment: Fix mispelled "appartment" in
-          various player visible data locations.
+	* ChangeLog, darcap/darcap/apartment, darcap/darcap/tavern,
+	  santo_dominion/sdomino_appartment, world/world_102_108: Fix
+	  mispelled "appartment" in various player visible data locations.
 
-Changes for 1.11.0
-------------------------------------------------------------------------------
-2008-01-13 16:42 kbulgrien
-        * scorn/temples/gaea: Fix spelling per trunk fix.
+2008-01-30 06:06  rjtanner
 
-2008-01-13 15:55 kbulgrien
-        * scorn/taverns/inn: Smoothing fix along with replacing biglake
-          tiles for sea tiles to make water color consistent.
+	* start/newbieshouse: More descriptive information for disarming
+	  traps in the newbiehouse tutorial map.
 
-2008-01-03 23:00  kbulgrien
+2008-01-30 06:03  rjtanner
 
-        * start/newbieshouse : This is primarily a merge down from trunk to
-          remove line breaks and rework some message content, but Sigmund
-          cannot be merged down due to the fact that cfdialog is not in the
-          branch server.  Sigmund was quite broken though, and offered to
-          tell about things he did not know about.  To fix this, some of the
-          new trunk content was added to Sigmund, Manu, and the Doorman to
-          improve this introduction, but all of the new content in trunk has
-          not been added.
+	* world/world_109_126: Changes to make Mopoon's Weapon Shop
+	  entrance a little easier to see and obscure the entrance to the
+	  Chaos Lair - this is to revert back to how Lake Country used to
+	  look before recent changes with either client display, tile
+	  smoothing, etc.
 
-2007-12-31 19:30  kbulgrien
+2008-01-29 08:25  rjtanner
 
-        * scorn/misc/cityhall : Merge from trunk various smoothing fixes and
-          removal of some extra ground tiles from the lawn area.  Add a new
-          statue.
+	* world/world_105_116, world/world_108_126, world/world_128_109:
+	  Backport map names from trunk as place holders (future maps.)
+
+2008-01-29 08:19  rjtanner
+
+	* world/world_101_114: Correct backport error for the Port Joseph
+	  town/house
+
+2008-01-29 08:19  rjtanner
+
+	* world/world_104_115: Re-add the tavern building for the Castle
+	  kitchen place holder, was accidentaly removed.
+
+2008-01-29 08:14  rjtanner
+
+	* world/world_101_114, world/world_104_115, world/world_105_115:
+	  Resolve merge conflicts between different map revisions.
+
+2008-01-29 08:12  rjtanner
+
+	* world/world_101_114, world/world_104_115, world/world_105_115,
+	  world/world_105_116, world/world_108_126, world/world_109_126,
+	  world/world_114_111, world/world_115_111, world/world_116_102,
+	  world/world_117_101, world/world_122_117, world/world_128_109:
+	  Resolve merge conflicts between different map revisions.
+
+2008-01-29 07:43  rjtanner
+
+	* world/world_101_114, world/world_104_115, world/world_105_115,
+	  world/world_105_116, world/world_106_122, world/world_106_123,
+	  world/world_106_124, world/world_106_125, world/world_106_126,
+	  world/world_106_127, world/world_106_128, world/world_107_101,
+	  world/world_107_102, world/world_107_103, world/world_107_104,
+	  world/world_107_106, world/world_107_107, world/world_107_108,
+	  world/world_107_109, world/world_107_110, world/world_107_111,
+	  world/world_107_112, world/world_107_113, world/world_107_114,
+	  world/world_107_115, world/world_107_116, world/world_107_118,
+	  world/world_107_119, world/world_107_120, world/world_107_121,
+	  world/world_107_122, world/world_107_123, world/world_107_124,
+	  world/world_107_125, world/world_107_126, world/world_107_127,
+	  world/world_107_128, world/world_108_102, world/world_108_103,
+	  world/world_108_104, world/world_108_105, world/world_108_107,
+	  world/world_108_108, world/world_108_109, world/world_108_110,
+	  world/world_108_111, world/world_108_112, world/world_108_115,
+	  world/world_108_116, world/world_108_117, world/world_108_118,
+	  world/world_108_119, world/world_108_120, world/world_108_121,
+	  world/world_108_122, world/world_108_123, world/world_108_124,
+	  world/world_108_125, world/world_108_126, world/world_108_127,
+	  world/world_109_101, world/world_109_103, world/world_109_104,
+	  world/world_109_105, world/world_109_106, world/world_109_107,
+	  world/world_109_108, world/world_109_109, world/world_109_110,
+	  world/world_109_111, world/world_109_112, world/world_109_113,
+	  world/world_109_114, world/world_109_115, world/world_109_125,
+	  world/world_109_127, world/world_109_128, world/world_109_129,
+	  world/world_110_100, world/world_110_101, world/world_110_102,
+	  world/world_110_103, world/world_110_104, world/world_110_105,
+	  world/world_110_106, world/world_110_107, world/world_110_108,
+	  world/world_110_109, world/world_110_110, world/world_110_111,
+	  world/world_110_112, world/world_110_113, world/world_110_114,
+	  world/world_110_115, world/world_110_117, world/world_110_118,
+	  world/world_110_119, world/world_110_120, world/world_110_121,
+	  world/world_110_122, world/world_110_123, world/world_110_124,
+	  world/world_110_125, world/world_110_126, world/world_110_127,
+	  world/world_110_128, world/world_111_100, world/world_111_101,
+	  world/world_111_102, world/world_111_103, world/world_111_104,
+	  world/world_111_105, world/world_111_106, world/world_111_107,
+	  world/world_111_109, world/world_111_110, world/world_111_111,
+	  world/world_111_113, world/world_111_114, world/world_111_115,
+	  world/world_111_116, world/world_111_117, world/world_111_119,
+	  world/world_111_120, world/world_111_121, world/world_111_122,
+	  world/world_111_123, world/world_111_124, world/world_111_125,
+	  world/world_111_126, world/world_111_127, world/world_111_128,
+	  world/world_111_129, world/world_112_100, world/world_112_101,
+	  world/world_112_102, world/world_112_103, world/world_112_104,
+	  world/world_112_105, world/world_112_106, world/world_112_107,
+	  world/world_112_108, world/world_112_109, world/world_112_112,
+	  world/world_112_113, world/world_112_114, world/world_112_115,
+	  world/world_112_116, world/world_112_118, world/world_112_119,
+	  world/world_112_120, world/world_112_121, world/world_112_122,
+	  world/world_112_123, world/world_112_124, world/world_112_126,
+	  world/world_112_127, world/world_112_128, world/world_112_129,
+	  world/world_113_100, world/world_113_101, world/world_113_102,
+	  world/world_113_103, world/world_113_104, world/world_113_106,
+	  world/world_113_107, world/world_113_108, world/world_113_109,
+	  world/world_113_110, world/world_113_111, world/world_113_112,
+	  world/world_113_116, world/world_113_117, world/world_113_119,
+	  world/world_113_120, world/world_113_122, world/world_113_123,
+	  world/world_113_124, world/world_113_125, world/world_113_126,
+	  world/world_113_127, world/world_114_100, world/world_114_101,
+	  world/world_114_102, world/world_114_103, world/world_114_104,
+	  world/world_114_105, world/world_114_106, world/world_114_107,
+	  world/world_114_108, world/world_114_109, world/world_114_110,
+	  world/world_114_112, world/world_114_113, world/world_114_114,
+	  world/world_114_115, world/world_114_116, world/world_114_117,
+	  world/world_114_118, world/world_114_119, world/world_114_120,
+	  world/world_114_121, world/world_114_122, world/world_114_123,
+	  world/world_114_124, world/world_114_125, world/world_114_126,
+	  world/world_114_127, world/world_114_128, world/world_114_129,
+	  world/world_115_100, world/world_115_101, world/world_115_102,
+	  world/world_115_103, world/world_115_104, world/world_115_105,
+	  world/world_115_106, world/world_115_107, world/world_115_108,
+	  world/world_115_109, world/world_115_110, world/world_115_112,
+	  world/world_115_113, world/world_115_114, world/world_115_115,
+	  world/world_115_116, world/world_115_117, world/world_115_118,
+	  world/world_115_119, world/world_115_120, world/world_115_121,
+	  world/world_115_122, world/world_115_123, world/world_115_124,
+	  world/world_115_125, world/world_115_128, world/world_115_129,
+	  world/world_116_101, world/world_116_102, world/world_116_103,
+	  world/world_116_104, world/world_116_105, world/world_116_106,
+	  world/world_116_107, world/world_116_108, world/world_116_109,
+	  world/world_116_110, world/world_116_111, world/world_116_113,
+	  world/world_116_114, world/world_116_117, world/world_116_118,
+	  world/world_116_120, world/world_116_121, world/world_116_122,
+	  world/world_116_123, world/world_116_124, world/world_116_125,
+	  world/world_116_126, world/world_117_101, world/world_117_103,
+	  world/world_117_104, world/world_117_105, world/world_117_106,
+	  world/world_117_107, world/world_117_108, world/world_117_109,
+	  world/world_117_111, world/world_117_112, world/world_117_113,
+	  world/world_117_114, world/world_117_115, world/world_117_116,
+	  world/world_117_117, world/world_117_118, world/world_117_119,
+	  world/world_117_120, world/world_117_121, world/world_117_122,
+	  world/world_117_123, world/world_117_124, world/world_117_125,
+	  world/world_117_126, world/world_117_127, world/world_118_102,
+	  world/world_118_103, world/world_118_104, world/world_118_105,
+	  world/world_118_106, world/world_118_107, world/world_118_108,
+	  world/world_118_109, world/world_118_112, world/world_118_113,
+	  world/world_118_114, world/world_118_115, world/world_118_116,
+	  world/world_118_117, world/world_118_118, world/world_118_119,
+	  world/world_118_122, world/world_118_123, world/world_118_124,
+	  world/world_118_125, world/world_118_126, world/world_118_127,
+	  world/world_118_128, world/world_118_129, world/world_119_100,
+	  world/world_119_101, world/world_119_102, world/world_119_104,
+	  world/world_119_105, world/world_119_106, world/world_119_107,
+	  world/world_119_110, world/world_119_111, world/world_119_113,
+	  world/world_119_114, world/world_119_115, world/world_119_116,
+	  world/world_119_118, world/world_119_120, world/world_119_121,
+	  world/world_119_122, world/world_119_123, world/world_119_125,
+	  world/world_119_127, world/world_119_128, world/world_120_101,
+	  world/world_120_102, world/world_120_103, world/world_120_104,
+	  world/world_120_105, world/world_120_106, world/world_120_108,
+	  world/world_120_109, world/world_120_110, world/world_120_111,
+	  world/world_120_112, world/world_120_113, world/world_120_114,
+	  world/world_120_115, world/world_120_116, world/world_120_117,
+	  world/world_120_118, world/world_120_119, world/world_120_121,
+	  world/world_120_122, world/world_120_123, world/world_120_124,
+	  world/world_120_125, world/world_120_126, world/world_121_101,
+	  world/world_121_102, world/world_121_103, world/world_121_104,
+	  world/world_121_105, world/world_121_109, world/world_121_110,
+	  world/world_121_112, world/world_121_113, world/world_121_114,
+	  world/world_121_115, world/world_121_117, world/world_121_118,
+	  world/world_121_121, world/world_121_122, world/world_121_124,
+	  world/world_121_125, world/world_121_127, world/world_122_101,
+	  world/world_122_102, world/world_122_103, world/world_122_104,
+	  world/world_122_105, world/world_122_106, world/world_122_107,
+	  world/world_122_108, world/world_122_109, world/world_122_110,
+	  world/world_122_111, world/world_122_112, world/world_122_113,
+	  world/world_122_115, world/world_122_116, world/world_122_117,
+	  world/world_122_118, world/world_122_119, world/world_122_120,
+	  world/world_122_121, world/world_122_123, world/world_122_125,
+	  world/world_122_126, world/world_122_128, world/world_123_100,
+	  world/world_123_101, world/world_123_102, world/world_123_103,
+	  world/world_123_104, world/world_123_105, world/world_123_106,
+	  world/world_123_107, world/world_123_108, world/world_123_109,
+	  world/world_123_110, world/world_123_111, world/world_123_112,
+	  world/world_123_113, world/world_123_114, world/world_123_115,
+	  world/world_123_116, world/world_123_117, world/world_123_118,
+	  world/world_123_119, world/world_123_120, world/world_123_121,
+	  world/world_123_122, world/world_123_123, world/world_123_125,
+	  world/world_123_126, world/world_124_100, world/world_124_102,
+	  world/world_124_103, world/world_124_104, world/world_124_105,
+	  world/world_124_106, world/world_124_107, world/world_124_108,
+	  world/world_124_109, world/world_124_110, world/world_124_111,
+	  world/world_124_112, world/world_124_113, world/world_124_114,
+	  world/world_124_115, world/world_124_116, world/world_124_117,
+	  world/world_124_118, world/world_124_119, world/world_124_120,
+	  world/world_124_121, world/world_124_122, world/world_124_123,
+	  world/world_124_124, world/world_124_125, world/world_124_126,
+	  world/world_124_128, world/world_125_101, world/world_125_102,
+	  world/world_125_103, world/world_125_104, world/world_125_106,
+	  world/world_125_107, world/world_125_108, world/world_125_109,
+	  world/world_125_110, world/world_125_111, world/world_125_113,
+	  world/world_125_114, world/world_125_115, world/world_125_117,
+	  world/world_125_119, world/world_125_122, world/world_125_123,
+	  world/world_125_124, world/world_126_101, world/world_126_102,
+	  world/world_126_103, world/world_126_104, world/world_126_105,
+	  world/world_126_107, world/world_126_108, world/world_126_109,
+	  world/world_126_110, world/world_126_111, world/world_126_112,
+	  world/world_126_113, world/world_126_114, world/world_126_115,
+	  world/world_126_116, world/world_126_117, world/world_126_118,
+	  world/world_126_119, world/world_126_121, world/world_126_122,
+	  world/world_126_123, world/world_126_124, world/world_127_100,
+	  world/world_127_101, world/world_127_102, world/world_127_103,
+	  world/world_127_104, world/world_127_105, world/world_127_106,
+	  world/world_127_107, world/world_127_108, world/world_127_110,
+	  world/world_127_111, world/world_127_112, world/world_127_113,
+	  world/world_127_114, world/world_127_116, world/world_127_117,
+	  world/world_127_119, world/world_127_120, world/world_127_121,
+	  world/world_128_100, world/world_128_101, world/world_128_102,
+	  world/world_128_103, world/world_128_104, world/world_128_105,
+	  world/world_128_107, world/world_128_108, world/world_128_109,
+	  world/world_128_111, world/world_128_112, world/world_128_113,
+	  world/world_128_114, world/world_128_116, world/world_128_117,
+	  world/world_128_118, world/world_128_119, world/world_128_120,
+	  world/world_128_121, world/world_128_124, world/world_128_128,
+	  world/world_129_101, world/world_129_108, world/world_129_109,
+	  world/world_129_110, world/world_129_114, world/world_129_115,
+	  world/world_129_117, world/world_129_118, world/world_129_120,
+	  world/world_129_121, world/world_129_125: Backport changes from
+	  trunk - improved and better smoothing to world maps. A handful of
+	  changes remain.
+
+2008-01-28 07:42  mwedel
+
+	* ChangeLog: Add 1.11 relese delimiter.
+	  MSW 2008-01-27
+
+2008-01-28 03:29  rjtanner
+
+	* world/world_100_108, world/world_100_109, world/world_100_110,
+	  world/world_100_111, world/world_100_112, world/world_100_113,
+	  world/world_100_114, world/world_100_116, world/world_100_124,
+	  world/world_100_125, world/world_100_126, world/world_101_104,
+	  world/world_101_106, world/world_101_107, world/world_101_108,
+	  world/world_101_109, world/world_101_111, world/world_101_113,
+	  world/world_101_115, world/world_101_116, world/world_101_118,
+	  world/world_101_119, world/world_101_120, world/world_101_121,
+	  world/world_101_124, world/world_101_125, world/world_101_126,
+	  world/world_102_101, world/world_102_102, world/world_102_103,
+	  world/world_102_104, world/world_102_105, world/world_102_106,
+	  world/world_102_107, world/world_102_108, world/world_102_109,
+	  world/world_102_110, world/world_102_111, world/world_102_112,
+	  world/world_102_114, world/world_102_115, world/world_102_116,
+	  world/world_102_117, world/world_102_118, world/world_102_119,
+	  world/world_102_120, world/world_102_121, world/world_102_122,
+	  world/world_102_123, world/world_102_124, world/world_102_125,
+	  world/world_102_126, world/world_102_127, world/world_102_128,
+	  world/world_102_129, world/world_103_101, world/world_103_102,
+	  world/world_103_103, world/world_103_104, world/world_103_105,
+	  world/world_103_106, world/world_103_107, world/world_103_108,
+	  world/world_103_109, world/world_103_110, world/world_103_111,
+	  world/world_103_112, world/world_103_113, world/world_103_114,
+	  world/world_103_115, world/world_103_116, world/world_103_117,
+	  world/world_103_118, world/world_103_119, world/world_103_120,
+	  world/world_103_121, world/world_103_122, world/world_103_123,
+	  world/world_103_124, world/world_103_125, world/world_103_126,
+	  world/world_103_127, world/world_103_128, world/world_103_129,
+	  world/world_104_101, world/world_104_102, world/world_104_103,
+	  world/world_104_104, world/world_104_106, world/world_104_107,
+	  world/world_104_109, world/world_104_110, world/world_104_111,
+	  world/world_104_112, world/world_104_114, world/world_104_116,
+	  world/world_104_117, world/world_104_118, world/world_104_121,
+	  world/world_104_122, world/world_104_123, world/world_104_125,
+	  world/world_104_126, world/world_104_127, world/world_104_128,
+	  world/world_104_129, world/world_105_100, world/world_105_101,
+	  world/world_105_102, world/world_105_103, world/world_105_104,
+	  world/world_105_105, world/world_105_106, world/world_105_107,
+	  world/world_105_108, world/world_105_109, world/world_105_110,
+	  world/world_105_111, world/world_105_112, world/world_105_113,
+	  world/world_105_114, world/world_105_117, world/world_105_118,
+	  world/world_105_119, world/world_105_120, world/world_105_121,
+	  world/world_105_122, world/world_105_123, world/world_105_124,
+	  world/world_105_125, world/world_105_127, world/world_105_128,
+	  world/world_106_101, world/world_106_102, world/world_106_103,
+	  world/world_106_104, world/world_106_105, world/world_106_106,
+	  world/world_106_107, world/world_106_108, world/world_106_109,
+	  world/world_106_110, world/world_106_111, world/world_106_113,
+	  world/world_106_114, world/world_106_115, world/world_106_116,
+	  world/world_106_117, world/world_106_118, world/world_106_119,
+	  world/world_106_120, world/world_106_121, world/world_109_116,
+	  world/world_109_117, world/world_109_118, world/world_109_119,
+	  world/world_109_120, world/world_109_122, world/world_109_123:
+	  Backkport changes from trunk - improved and better smoothing to
+	  world maps. Backport is still in progress, this is an incremental
+	  checkin.
+
+2008-01-27 10:03  rjtanner
+
+	* world/world_100_107, world/world_100_115, world/world_100_119,
+	  world/world_101_105, world/world_101_110, world/world_101_112,
+	  world/world_101_117, world/world_102_113, world/world_104_105,
+	  world/world_104_113, world/world_104_119, world/world_104_120,
+	  world/world_104_124, world/world_105_126, world/world_105_129,
+	  world/world_106_112, world/world_107_105, world/world_107_117,
+	  world/world_108_106, world/world_108_113, world/world_108_114,
+	  world/world_109_102, world/world_109_121, world/world_109_124,
+	  world/world_109_126, world/world_110_116, world/world_110_129,
+	  world/world_111_108, world/world_111_118, world/world_112_110,
+	  world/world_112_117, world/world_112_125, world/world_113_105,
+	  world/world_113_114, world/world_113_115, world/world_113_118,
+	  world/world_113_121, world/world_113_128, world/world_115_127,
+	  world/world_116_112, world/world_116_115, world/world_116_116,
+	  world/world_116_119, world/world_116_127, world/world_117_102,
+	  world/world_117_110, world/world_118_120, world/world_118_121,
+	  world/world_119_103, world/world_119_108, world/world_119_117,
+	  world/world_119_119, world/world_119_124, world/world_120_107,
+	  world/world_120_127, world/world_121_106, world/world_121_107,
+	  world/world_121_108, world/world_121_111, world/world_121_116,
+	  world/world_121_123, world/world_121_126, world/world_122_114,
+	  world/world_122_122, world/world_122_124, world/world_122_127,
+	  world/world_123_124, world/world_125_105, world/world_125_112,
+	  world/world_125_116, world/world_125_118, world/world_125_120,
+	  world/world_125_125, world/world_126_106, world/world_126_120,
+	  world/world_126_125, world/world_127_115, world/world_127_118,
+	  world/world_127_125, world/world_128_106, world/world_128_109,
+	  world/world_128_110, world/world_129_103, world/world_129_106,
+	  world/world_129_122: Backport changes from trunk - improved and
+	  better smoothing to world maps. Backport is still in progress,
+	  this is an incremental checkin.
+
+2008-01-24 07:18  rjtanner
+
+	* scorn/misc/church: Changes to the Undead Church - moved the
+	  entrance to the Animator Quest one tile to the right and have it
+	  hidden by an existing tree. Added an inventory check so that only
+	  those who are working on and have completed the Baronet Royalty
+	  Quest may enter. This also keeps low level players from
+	  accidently ending up in a map that is beyond their level. Changes
+	  were made per IRC discussion on 2008-Jan-23.
+
+2008-01-24 06:29  rjtanner
+
+	* world/world_105_115: Updated the map/cave name for the Goblin
+	  Chieftan map that is part of the Scorn Royalty Quest.
+
+2008-01-22 06:15  rjtanner
+
+	* regions: Added description for Stoneville in the regions file
+
+2008-01-22 05:55  rjtanner
+
+	* regions: Added description for Santo Dominion in the regions file
+
+2008-01-13 22:46  kbulgrien
+
+	* ChangeLog, scorn/temples/gaea: Fix spelling per trunk fix.
+
+2008-01-13 21:56  kbulgrien
+
+	* ChangeLog, scorn/taverns/inn: Smoothing fix along with replacing
+	  biglake tiles for sea tiles to make water
+	  color consistent.
+
+2008-01-04 05:04  kbulgrien
+
+	* ChangeLog, start/newbieshouse: This is primarily a merge down
+	  from trunk to remove line breaks and rework some
+	  message content, but Sigmund cannot be merged down due to the
+	  fact that
+	  cfdialog is not in the branch server. Sigmund was quite broken
+	  though, and
+	  offered to tell about things he did not know about. To fix this,
+	  some of the
+	  new trunk content was added to Sigmund, Manu, and the Doorman to
+	  improve this
+	  introduction, but all of the new content in trunk has not been
+	  added.
+
+2008-01-01 01:36  kbulgrien
+
+	* ChangeLog, scorn/misc/cityhall: Merge from trunk various
+	  smoothing fixes and removal of some extra ground tiles from the
+	  lawn area.
+	  Add a new statue.
+
+2007-12-26 23:15  ryo_saeba
+
+	* templates/guild/mainfloor: Fix wrong coin messages.
+
+2007-12-22 07:07  kbulgrien
+
+	* world/world_128_128: - Replace s_city_tower arch with
+	  s_lighthouse since it is named Lighthouse.
+	  - Remove light sources since the lighthouse arch already has a
+	  glow radius.
+
+2007-12-22 04:35  kbulgrien
+
+	* world/world_102_108: - Merge lighthouse changes and smoothing
+	  fixes from trunk..
+
+2007-12-18 19:39  ryo_saeba
+
+	* python/IPO/say.py: Fix broken price.
+
+2007-12-14 05:42  kbulgrien
+
+	* world/world_104_115: - Smoothing fix to make smoothing not cover
+	  over water tunnel and subsequent
+	  shoreline modification to avoid unsmoothed corner of shoreline.
+	  - Remove unnecessary grass tile under hole.
+
+2007-12-14 03:52  kbulgrien
+
+	* pup_land/s_f/Kira: - Line break removal and minor rework of some
+	  message texts.
+
+2007-12-14 01:06  kbulgrien
+
+	* pup_land/rainbow/w-tower: - Line break removal and minor rework
+	  of some message texts.
+
+2007-12-13 04:55  kbulgrien
+
+	* scorn/shops/coffeeshop: - Coffee drinker now has a name and a bit
+	  more to say.
+	  - Remove pointless case sensitive match strings.
+	  - Add a few more match strings to Eswald.
+	  - Remove spurious line breaks.
+
+2007-12-11 04:37  kbulgrien
+
+	* scorn/misc/cityhall: - Various under-wall tiles changed to better
+	  match adjoining ground tiles.
+	  - Northern wall insets changed to show previously invisible
+	  landscape.
+	  - Numerous instances of redundant woodfloor tiles removed.
+	  - Add a slightly hidden book of proverbs (obscure hints).
+
+2007-12-10 07:37  kbulgrien
+
+	* scorn/anthony/portgate: - New ne, se, sw, and nw mine wall
+	  archetypes fix the Scorn port gate house to
+	  use the same wall material for the entire building. Various floor
+	  changes
+	  also done to go along with the wall edits.
+
+2007-12-08 15:12  kbulgrien
+
+	* world/world_102_108: - Replace board floor under pier with more
+	  appropriate ground pieces.
+
+2007-12-04 19:22  eracc
+
+	* wolfsburg/shops/transport.shoppe: Fix a display problem with
+	  overlapping swall not looking correct when in-game
+	  although it looks correct in Gridarta.
+
+2007-12-03 22:34  eracc
+
+	* wolfsburg/shops/transport.shoppe: Fix mistyped path for pup_land
+	  in the Wolfsburg transport shoppe.
+	  Add buttons under the teleporters to try to keep players from
+	  being trapped.
+
+2007-12-03 21:38  eracc
+
+	* pup_land/lone_town/shops/transport.shoppe,
+	  wolfsburg/shops/transport.shoppe: Update transport shoppes with
+	  Valkyrie altar
+
+2007-12-03 20:10  eracc
+
+	* wolfsburg/shops/transport.shoppe, world/world_128_109: Add "Ye
+	  Olde Transport Shoppe" to Wolfsburg and update world map for
+	  same.
+	  Fix some errors with various buildings on the world map.
+
+2007-12-03 00:26  eracc
+
+	* wolfsburg/apartments, wolfsburg/apartments/wolfsburg.apartment,
+	  wolfsburg/shops, wolfsburg/shops/buildshop, wolfsburg/whorehouse,
+	  world/world_128_109: Removed the silly and useless Wolfsburg
+	  "whorehouse".
+	  Added Wolfsburg apartment (buildable).
+	  Added Wolfsburg buildshop.
+	  Update world/world_128_109 with the new map info.
+
+2007-11-24 20:28  eracc
+
+	* brest/zorn/castle.mainfloor, brest/zorn/castle.upper.floor.four,
+	  brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Add Zorn castle floor four.
+	  Update all "shadow" creatures in Zorn castle to be disease immune
+	  even though
+	  they are not undead.
+
+2007-11-24 07:23  rjtanner
+
+	* darcap/quest/water: Map normalize, no functional changes
+
+2007-11-19 01:58  rjtanner
+
+	* pup_land/nurnberg/bank: Additional conversion tables in the
+	  Nurnberg bank; jade to amberium, amberium to jade, platinum to
+	  jade, jade to platinum and gold to silver
+
+2007-11-19 01:39  rjtanner
+
+	* pup_land/nurnberg/bank: Cosmetic changes with the Nurnberg bank,
+	  also rearranged the floor stacking order so that no_magic tiles
+	  appear under sections of swall
+
+2007-11-19 01:27  rjtanner
+
+	* azumauindo/suno-yamatoshi/shops/bank1, dragonisland/advguild,
+	  pup_land/lone_town/bank: Updated various banks to include a gold
+	  -> silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-18 23:16  akirschbaum
+
+	* darcap/darcap/circus/wurfbude, darcap/quest/water,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/pypers_treehouse,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/sweets_inn2,
+	  inn_and_outpost/treehouse_df1, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6,
+	  pup_land/ancient/volcano/volcano.2, scorn/houses/bowyer,
+	  scorn/houses/wizz.entry, scorn/oldcity/oldcity12: Replace
+	  obsolete field slow_move with move_slow/move_slow_penalty.
+
+2007-11-18 23:10  rjtanner
+
+	* navar_city/misc/city1bank: Updated the Navar bank to include a
+	  gold -> silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-18 22:54  rjtanner
+
+	* scorn/shops/bank: Updated the Scorn bank to include a gold ->
+	  silver conversion table; addresses bug# 1832558 - Silver
+	  conversion
+
+2007-11-14 17:54  eracc
+
+	* brest/zorn/castle.upper.floor.one: Fixing the Zorn girls. They
+	  all had too low max hp.
+
+2007-11-13 05:57  rjtanner
+
+	* darcap/darcap/circus/wurfbude: Map changes to address bug #
+	  [1829831] Mechanism bug - limit range and effectiveness of
+	  dimension door
+
+2007-11-13 05:34  eracc
+
+	* dungeons/gorokh/gorokh_final: Rename Kitten of Gorokh to Cat of
+	  Gorokh and reduce number on map by half.
+	  Create new 1 tile Kitten of Gorokh to replace removed Cat of
+	  Gorokh.
+	  This should help prevent cowardly hiding behind earhtwalls with a
+	  one tile
+	  opening to avoid one's deserved punishment. Yes, this is evil ...
+	  but one
+	  is in "hell" after all. :)
+
+2007-11-12 20:15  eracc
+
+	* pup_land/nurnberg/city, pup_land/rainbow/islands, pup_land/world:
+	  Since pupland is not yet merged into big world I am making the
+	  pupland outdoor
+	  maps actually *be* outdoor maps to honor the day/night cycle.
+
+2007-11-07 06:06  rjtanner
+
+	* scorn/houses/wizz.lev1.pass1: Missed this in the last commit;
+	  removed redundant walls, added map difficulty, cosmetic changes
+	  with bwall_ arrangements
+
+2007-11-07 06:05  rjtanner
+
+	* scorn/houses/wizz.entry, scorn/houses/wizz.lev1: Add missing
+	  floor tiles, removed redundant walls, added map difficulty,
+	  cosmetic changes with bwall_ arrangements
+
+2007-11-06 06:41  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon: Widen the
+	  hallways of One Eyed Mike's store in order to accomodate use from
+	  more then one player at a time
+
+2007-11-06 05:46  rjtanner
+
+	* brest/pshops/pshopsinc, sisters/shrine0, sisters/shrine_entrance:
+	  Modify NPC or magic_mouth dialogue to be generic in regards to
+	  player race; Fix for bug [825637] Some maps assume what race you
+	  are.
+
+2007-11-06 02:25  rjtanner
+
+	* ChangeLog: Updated ChangeLog files using svn2cl
 
 2007-11-05 02:23  rjtanner
 
@@ -3096,9 +3667,10 @@ Changes for 1.11.0
 2007-10-18 03:32  kbulgrien
 
 	* ChangeLog, port_joseph/town/church: Path made with glue faces was
-	  not rendered properly because the arch used was a floor piece. 
-      Change base arch and make no_pick 1. Also put the glue explicitly 
-      on the no_pick map layer to render it below the gate.
+	  not rendered properly because the arch used
+	  was a floor piece. Change base arch and make no_pick 1. Also put
+	  the glue
+	  explicitly on the no_pick map layer to render it below the gate.
 
 2007-10-18 01:37  rjtanner
 
