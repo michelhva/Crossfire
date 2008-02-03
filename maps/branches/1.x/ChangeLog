@@ -1,3 +1,30 @@
+2008-02-03 05:51  rjtanner
+
+	* world/world_116_102: Error in the last commit. Finally solve map
+	  warning about a random map without a message
+
+2008-02-03 05:31  rjtanner
+
+	* world/world_116_102: Resolve map warning about a random map
+	  without a message
+
+2008-02-03 05:21  rjtanner
+
+	* world/world_105_116, world/world_109_126, world/world_116_102,
+	  world/world_117_101, world/world_122_117: Fix a merge mistake
+	  from trunk - removed links to maps that have not been backported
+	  to branch yet.
+
+2008-02-03 04:53  rjtanner
+
+	* world/world_105_116: Fix a merge mistake from trunk - removed
+	  links to maps that have not been backported to branch yet.
+	  Building name update (cider house -> Cider House)
+
+2008-02-03 04:07  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-01-30 19:04  kbulgrien
 
 	* ChangeLog, darcap/darcap/apartment, darcap/darcap/tavern,
