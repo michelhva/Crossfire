@@ -1,3 +1,43 @@
+2008-02-03 06:15  rjtanner
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Update Pygmy Forest and
+	  related map names
+
+2008-02-03 06:09  rjtanner
+
+	* darcap/pygmy_forest/pygmy_garden: Fix broken exit in Pygmy Garden
+	  map
+
+2008-02-03 05:51  rjtanner
+
+	* world/world_116_102: Error in the last commit. Finally solve map
+	  warning about a random map without a message
+
+2008-02-03 05:31  rjtanner
+
+	* world/world_116_102: Resolve map warning about a random map
+	  without a message
+
+2008-02-03 04:47  rjtanner
+
+	* world/world_105_116: Building name update (cider house -> Cider
+	  House) and removed a link to a map that currently is not in SVN
+	  (/scorn/misc/cider_house)
+
+2008-02-03 04:17  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-01-30 19:09  ryo_saeba
 
 	* scorn/houses/resir: Fix wrong exit coordinate.
