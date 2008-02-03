@@ -1,64 +1,243 @@
-2008-01-20 13:00 kbulgrien
-        * world/world_102_108, darcap/darcap/apartment, darcap/darcap/tavern,
-          santo_dominion/sdomino_appartment: Fix mispelled "appartment" in
-          various player visible data locations.
+2008-01-30 19:09  ryo_saeba
 
-2008-01-18 18:45 kbulgrien
-        * the whole world: Rename dwall3_3 to dwall_3_3 after removing
-          incorrect Object in arch/trunk/wall/dwall/dwall.arc.
+	* scorn/houses/resir: Fix wrong exit coordinate.
 
-2008-01-13 15:50 kbulgrien
-        * scorn/taverns/inn: Smoothing fix along with replacing biglake
-          tiles for sea tiles to make water color consistent.
+2008-01-30 19:02  kbulgrien
 
-2008-01-12 01:50 gros
-	* wolfsburg/volcano/heimser_hut_{1,2,3}: Added the first part of the
-	  Heimser Brothers Quest.
+	* ChangeLog, darcap/darcap/apartment, darcap/darcap/tavern,
+	  santo_dominion/sdomino_appartment, world/world_102_108: Fix
+	  mispelled "appartment" in various player visible data locations.
 
-2008-01-09 00:30 kbulgrien
-        * unlinked/kbulgrien/rayvins_house.1: Doors now have no gaps around
-          them due to new wall_door and stwall_door arches.  Spout and
-          pouring water arch added in backyard.
+2008-01-30 06:42  rjtanner
 
-2008-01-08 00:00  kbulgrien
-        * unlinked/kbulgrien/rayvins_house.1: Fence and exits placed along
-          east property line.
+	* start/newbieshouse: Descriptive text change on a sign from the
+	  map normalizer plugin in the editor.
 
-2008-01-07 11:40  kbulgrien
-        * unlinked/kbulgrien: Add directory to begin developing maps while
-          they are still not complete enough to link in the real world.
-        * unlinked/kbulgrien/rayvins_house.1: A house map to be linked to
-          the small house in world_105_116 at coordinates 11,4 (just east
-          of Patch's house.  The map is not linked because as of yet it
-          references the manhole which has not been finalized and is still
-          in arch/dev/wip/manhole.
+2008-01-30 06:03  rjtanner
 
-2008-01-03 02:35  kbulgrien
-        * start/newbieshouse: Remove mid-sentence line breaks and rework some
-          sign content.  Add some detail, like the default "s" and "d"
-          keybindings.
-        * start/Nexus: Remove mid-sentence line breaks and rework some sign
-          content.
-        * start/sigmund.msg: Add mention of the "s" and "d" default
-          keybindings.
+	* world/world_109_126: Changes to make Mopoon's Weapon Shop
+	  entrance a little easier to see and obscure the entrance to the
+	  Chaos Lair - this is to revert back to how Lake Country used to
+	  look before recent changes with either client display, tile
+	  smoothing, etc.
 
-2008-01-01 22:55  kbulgrien
+2008-01-24 22:56  ryo_saeba
 
-        * start/newbiehouse: Some line breaks removed.  Slight modification
-          of some sign information.
-        * start/sigmund.msg: General spelling corrections, fr-en (pomme),
-          and some grammatical rework.  One dialog flow modification to get
-          to apply description without having to guess a word in the dialog.
+	* python/maps/witherspoon_manor/README,
+	  python/maps/witherspoon_manor/devourers.py,
+	  python/maps/witherspoon_manor/ghost.py,
+	  python/maps/witherspoon_manor/rolanda.py,
+	  python/maps/witherspoon_manor/tomb.py,
+	  python/maps/witherspoon_manor/weapon_shop.py,
+	  scorn/houses/rolanda, scorn/misc/templedevour,
+	  scorn/shops/weaponshop, world/world_105_116: End of the
+	  Witherspoon ghost quest, some more fun.
 
-2007-12-31 19:30  kbulgrien
+2008-01-24 07:18  rjtanner
 
-        * scorn/misc/cityhall: Yet another smoothing update to prevent trees
-          from being smoothed by grass.  Add another statue.
+	* scorn/misc/church: Changes to the Undead Church - moved the
+	  entrance to the Animator Quest one tile to the right and have it
+	  hidden by an existing tree. Added an inventory check so that only
+	  those who are working on and have completed the Baronet Royalty
+	  Quest may enter. This also keeps low level players from
+	  accidently ending up in a map that is beyond their level. Changes
+	  were made per IRC discussion on 2008-Jan-23.
 
-2007-12-30 05:45  kbulgrien
+2008-01-24 06:29  rjtanner
 
-        * ChangeLog: Update to fix error triggered by wrong order of svn2cl
-          -r dates.
+	* world/world_105_115: Updated the map/cave name for the Goblin
+	  Chieftan map that is part of the Scorn Royalty Quest.
+
+2008-01-22 06:15  rjtanner
+
+	* regions: Added description for Stoneville in the regions file
+
+2008-01-22 05:55  rjtanner
+
+	* regions: Added description for Santo Dominion in the regions file
+
+2008-01-19 00:56  kbulgrien
+
+	* ChangeLog, azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  brest/zorn/castle.upper.floor.one, darcap/darcap/pirates.1,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.9, dragonisland/advguild3,
+	  editor/walls/wall, euthville/devil.church5,
+	  lake_country/Butakis/gate_inner, lake_country/RETower/tower0,
+	  mlab/citydeclouds/IPO_citydeclouds,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore3f,
+	  mlab/citydeclouds/cdccourthsuplvl1,
+	  mlab/citydeclouds/cdcnwgateuprlv1,
+	  mlab/citydeclouds/citydeclouds2A,
+	  mlab/citydeclouds/citydeclouds2B,
+	  mlab/citydeclouds/citydeclouds2D,
+	  mlab/citydeclouds/citydeclouds2E,
+	  mlab/citydeclouds/citydeclouds2I,
+	  mlab/citydeclouds/shops/cdcwcafe1,
+	  mlab/citydeclouds/shops/cwdcgenshop1, navar_city/mlab/tavern,
+	  port_joseph/goblin/fort2, port_joseph/goblin/fortress,
+	  port_joseph/goblin/netower, port_joseph/goblin/nwtower,
+	  port_joseph/goblin/setower, port_joseph/pirates/fortvsship,
+	  port_joseph/town/inn, pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/village/hole/hole.B5,
+	  pup_land/castle_eureca/castle_eurecaB1,
+	  pup_land/lone_town/apartment/groundfloor,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1, pup_land/lone_town/pupuly,
+	  pup_land/lone_town/town, pup_land/nurnberg/hq,
+	  pup_land/ordeal/tower_ordeal3, pup_land/ordeal/tower_ordeal4,
+	  pup_land/ordeal/tower_ordeal5, pup_land/ordeal/tower_ordealB1,
+	  pup_land/raffle/raffle1, pup_land/raffle/raffle1_u1,
+	  pup_land/raffle/raffle1_u2, pup_land/raffle/raffle1_u3,
+	  pup_land/rainbow/Lv5/cross, pup_land/rainbow/Lv5/e-hall,
+	  pup_land/rainbow/Lv6/big-hall, pup_land/rainbow/Lv6/n-gate,
+	  quests/mak/chaos/down2, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/undead/mausoleum,
+	  quests/mcz/castle1, quests/peterm/CTower/Barracks,
+	  quests/peterm/CTower/GroundLevel, quests/peterm/CTower/Officers,
+	  quests/peterm/CTower/Servants,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/ApprenticeLevel,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterTower1,
+	  santo_dominion/house_of_hell, santo_dominion/magara/opera,
+	  santo_dominion/north_farm, scorn/kar/gorks1, scorn/kar/gorks2,
+	  scorn/mansion/stronghold, scorn/misc/HouseofHealing,
+	  scorn/shops/scorn.sale2, scorn/taverns/goths0,
+	  templates/guild/guild_thaum, templates/guild/hallofjoining,
+	  templates/guild/mainfloor, test/anthony/roller_cades,
+	  test/anthony/special_objects, unlinked/kandora/elcyon/palace,
+	  unlinked/kandora/elcyon/temple, unlinked/lefttower2,
+	  whalingoutpost/underwaterdungeon/level1, wolfsburg/temple/temple:
+	  Rename dwall3_3 to dwall_3_3 after removing incorrect Object in
+	  arch/trunk/wall/dwall/dwall.arc.
+
+2008-01-13 21:53  kbulgrien
+
+	* ChangeLog, scorn/taverns/inn: Smoothing fix along with replacing
+	  biglake tiles for sea tiles to make water
+	  color consistent.
+
+2008-01-12 00:49  gros
+
+	* ChangeLog, wolfsburg/volcano/heimser_hut_0,
+	  wolfsburg/volcano/heimser_hut_1, wolfsburg/volcano/heimser_hut_2,
+	  world/world_129_108: Added the first part of the Heimser Brothers
+	  Quest.
+
+2008-01-09 06:37  kbulgrien
+
+	* ChangeLog, unlinked/kbulgrien/rayvins_house.1:
+	  unlinked/kbulgrien/rayvins_house.1: Doors now have no gaps around
+	  them
+	  due to new wall_door and stwall_door arches. Spout and pouring
+	  water
+	  arch added in backyard.
+
+2008-01-08 06:00  kbulgrien
+
+	* ChangeLog, unlinked/kbulgrien/rayvins_house.1: Fence and exits
+	  placed along east property line.
+
+2008-01-08 05:46  kbulgrien
+
+	* ChangeLog, unlinked/kbulgrien,
+	  unlinked/kbulgrien/rayvins_house.1: * unlinked/kbulgrien: Add
+	  directory to begin developing maps while
+	  they are still not complete enough to link in the real world.
+	  * unlinked/kbulgrien/rayvins_house.1: A house map to be linked to
+	  the small house in world_105_116 at coordinates 11,4 (just east
+	  of Patch's house. The map is not linked because as of yet it
+	  references the manhole which has not been finalized and is still
+	  in arch/dev/wip/manhole.
+
+2008-01-04 23:29  eracc
+
+	* darcap/pygmy_forest/pygmy_forest: Exit to world map was borked.
+	  Fixed in this update.
+
+2008-01-04 13:15  ryo_saeba
+
+	* quests/greyshield/Finish, unlinked/Greyshield/Finish: Fix
+	  pics/animations.
+
+2008-01-04 12:12  ryo_saeba
+
+	* darcap/temple_justice/temple_justice.9: Fix face, and remove
+	  animation so face stays the same.
+
+2008-01-03 23:47  eracc
+
+	* darcap/darcap/tavern, darcap/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d, world/world_117_101: Add a
+	  quest that starts in Darcap. Quest was created by Chad Opperman
+	  cromagic@sbcglobal.net with minor fixes by me.
+
+2008-01-03 15:53  ryo_saeba
+
+	* scorn/temples/gaea: Fix Gaea's name.
+
+2008-01-03 08:25  kbulgrien
+
+	* ChangeLog, start/Nexus, start/newbieshouse, start/sigmund.msg: *
+	  start/newbieshouse: Remove mid-sentence line breaks and rework
+	  some sign
+	  content. Add some detail, like the default "s" and "d"
+	  keybindings.
+	  * start/Nexus: Remove mid-sentence line breaks and rework some
+	  sign content.
+	  * start/sigmund.msg: Add mention of the "s" and "d" default
+	  keybindings.
+
+2008-01-02 05:02  kbulgrien
+
+	* ChangeLog, start/newbieshouse, start/sigmund.msg:
+	  start/newbiehouse: Some line breaks removed. Slight modification
+	  of some sign
+	  information.
+	  start/sigmund.msg: General spelling corrections, fr->en (pomme),
+	  along with
+	  some grammatical and content rework. One dialog flow modification
+	  to get to
+	  apply description without having to guess a word in the dialog.
+
+2008-01-01 01:35  kbulgrien
+
+	* ChangeLog, scorn/misc/cityhall: Yet another smoothing update to
+	  prevent trees from being smoothed by grass.
+	  Add another statue.
+
+2007-12-30 05:40  kbulgrien
+
+	* ChangeLog: Update to fix error triggered by wrong order of svn2cl
+	  -r dates.
 
 2007-12-30 05:37  kbulgrien
 
