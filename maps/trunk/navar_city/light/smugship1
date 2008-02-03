@@ -6,6 +6,7 @@ width 29
 height 25
 msg
 Created:  1993-11-17
+Modified: 2008-02-03 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -178,7 +179,7 @@ x 2
 y 8
 end
 arch locked_door2
-slaying set_individual_value smugd1
+slaying smugdf
 face ldoor_brown2.111
 x 2
 y 8
@@ -306,7 +307,7 @@ level 11
 carrying 100
 arch key2
 name Skeleton Key
-slaying set_individual_value smugd1
+slaying smugdf
 end
 arch spell_summon_pet_monster
 end
@@ -3369,7 +3370,7 @@ level 11
 carrying 100
 arch key2
 name Skeleton Key
-slaying set_individual_value smugd1
+slaying smugdm
 end
 end
 arch woodfloor
@@ -3445,7 +3446,7 @@ x 26
 y 8
 end
 arch locked_door2
-slaying set_individual_value smugd1
+slaying smugdm
 face ldoor_brown2.111
 x 26
 y 8
