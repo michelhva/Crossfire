@@ -10168,6 +10168,15 @@ arch house_1
 name Random House
 name_pl Random House
 slaying /!
+msg
+layoutstyle onion
+floorstyle indoor
+wallstyle wooden
+monsterstyle city
+dungeon_level 1
+dungeon_depth 1
+decorstyle furniture
+endmsg
 x 34
 y 30
 end
