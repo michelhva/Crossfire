@@ -45,6 +45,11 @@ public class TooltipManager
     private GUIElement activeGuiElement = null;
 
     /**
+     * Synchronizes access to {@link #activeGuiElement}.
+     */
+    private final Object activeGuiElementSync = "activeGuiElementSync";
+
+    /**
      * Create a new instance.
      *
      * @param jxcWindow The window to manage the tooltips of.
@@ -59,10 +64,13 @@ public class TooltipManager
      */
     public void reset()
     {
-        if (activeGuiElement != null)
+        synchronized (activeGuiElementSync)
         {
-            removeTooltip();
-            activeGuiElement = null;
+            if (activeGuiElement != null)
+            {
+                removeTooltip();
+                activeGuiElement = null;
+            }
         }
     }
 
@@ -74,16 +82,19 @@ public class TooltipManager
     public void setElement(final GUIElement guiElement)
     {
         assert guiElement != null;
-        if (activeGuiElement == null)
+        synchronized (activeGuiElementSync)
         {
-            activeGuiElement = guiElement;
-            addTooltip();
-        }
-        else if (activeGuiElement != guiElement)
-        {
-            removeTooltip();
-            activeGuiElement = guiElement;
-            addTooltip();
+            if (activeGuiElement == null)
+            {
+                activeGuiElement = guiElement;
+                addTooltip();
+            }
+            else if (activeGuiElement != guiElement)
+            {
+                removeTooltip();
+                activeGuiElement = guiElement;
+                addTooltip();
+            }
         }
     }
 
@@ -95,10 +106,13 @@ public class TooltipManager
     public void unsetElement(final GUIElement guiElement)
     {
         assert guiElement != null;
-        if (activeGuiElement == guiElement)
+        synchronized (activeGuiElementSync)
         {
-            removeTooltip();
-            activeGuiElement = null;
+            if (activeGuiElement == guiElement)
+            {
+                removeTooltip();
+                activeGuiElement = null;
+            }
         }
     }
 
@@ -110,10 +124,13 @@ public class TooltipManager
     public void updateElement(final GUIElement guiElement)
     {
         assert guiElement != null;
-        if (activeGuiElement == guiElement)
+        synchronized (activeGuiElementSync)
         {
-            removeTooltip();
-            addTooltip();
+            if (activeGuiElement == guiElement)
+            {
+                removeTooltip();
+                addTooltip();
+            }
         }
     }
 
@@ -124,6 +141,7 @@ public class TooltipManager
     private void addTooltip()
     {
         assert activeGuiElement != null;
+        assert Thread.holdsLock(activeGuiElementSync);
 
         final AbstractLabel tooltip = jxcWindow.getWindowRenderer().getTooltip();
         if (tooltip == null)
