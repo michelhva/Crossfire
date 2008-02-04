@@ -7,6 +7,9 @@ width 24
 height 22
 enter_x 1
 enter_y 1
+msg
+Modified: 2008-02-04 Kevin Bulgrien
+endmsg
 end
 arch dungeon_floor
 end
@@ -170,26 +173,7 @@ end
 arch key
 x 1
 y 3
-end
-arch key
-x 1
-y 3
-end
-arch key
-x 1
-y 3
-end
-arch key
-x 1
-y 3
-end
-arch key
-x 1
-y 3
-end
-arch key
-x 1
-y 3
+nrof 6
 end
 arch dungeon_floor
 x 1
