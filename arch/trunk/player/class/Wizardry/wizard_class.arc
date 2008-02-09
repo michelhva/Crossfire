@@ -1,5 +1,6 @@
 Object wizard_class
 race human
+anim_suffix class_wizard
 name wizard
 randomitems wizard_class_items
 face wizard.171

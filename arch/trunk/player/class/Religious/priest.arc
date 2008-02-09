@@ -1,4 +1,5 @@
 Object priest_class
+anim_suffix class_priest
 name priest
 randomitems priest_class_items
 face priestnew.171

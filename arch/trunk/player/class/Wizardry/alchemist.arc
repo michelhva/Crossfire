@@ -1,5 +1,6 @@
 Object alchemist_class
 name alchemist
+anim_suffix class_alchemist
 randomitems alchemist_class_items
 face alchemist.151
 anim

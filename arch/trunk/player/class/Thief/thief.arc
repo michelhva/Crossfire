@@ -1,5 +1,6 @@
 Object thief_class
 name thief
+anim_suffix class_thief
 randomitems thief_class_items
 face thief.171
 anim

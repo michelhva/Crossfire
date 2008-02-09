@@ -1,5 +1,6 @@
 Object cleric_class
 race cleric
+anim_suffix class_cleric
 name cleric
 randomitems cleric_class_items
 face cleric.151

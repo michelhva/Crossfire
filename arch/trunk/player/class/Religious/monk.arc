@@ -1,5 +1,6 @@
 Object monk_class
 name monk
+anim_suffix class_monk
 randomitems monk_class_items
 face monk.151
 anim

@@ -1,5 +1,6 @@
 Object barbarian_class
 name barbarian
+anim_suffix class_barbarian
 randomitems barbarian_class_items
 face barbarian.151
 anim

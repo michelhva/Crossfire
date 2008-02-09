@@ -1,5 +1,6 @@
 Object ninja_class
 name ninja
+anim_suffix class_ninja
 randomitems ninja_class_items
 face ninja.151
 anim
