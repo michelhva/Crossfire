@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2007-12-24 tchize
+Modified: 2008-02-09 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -146,6 +146,10 @@ arch grass
 y 14
 end
 arch s_house1
+name Iscar's house
+slaying /navar_city/iscar
+hp 2
+sp 9
 y 14
 end
 arch dungeon_magic
