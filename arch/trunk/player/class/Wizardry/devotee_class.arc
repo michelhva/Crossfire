@@ -1,5 +1,6 @@
 Object devotee_class
 name devotee
+anim_suffix class_devotee
 randomitems devotee_class_items
 face wizard_white.171
 animation wizard_white

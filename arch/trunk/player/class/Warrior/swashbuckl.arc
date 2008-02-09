@@ -1,6 +1,7 @@
 Object swashbuckler_class
 name swashbuckler
 randomitems swashbuckler_class_items
+anim_suffix class_swashbuckler
 face swashbuckl.151
 anim
 swashbuckl.111

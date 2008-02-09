@@ -1,5 +1,6 @@
 Object mountain_dwarf_class
 name mountain dwarf
+anim_suffix class_mountain_dwarf
 randomitems barbarian_class_items
 face mountain_dwarf.151
 anim

@@ -1,5 +1,6 @@
 Object summoner_class
 name summoner
+anim_suffix class_summoner
 randomitems summoner_class_items
 face wizard_yellow.171
 animation wizard_yellow

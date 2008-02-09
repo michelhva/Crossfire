@@ -1,5 +1,6 @@
 Object evoker_class
 name evoker
+anim_suffix class_evoker
 randomitems evoker_class_items
 face evoker.151
 anim

@@ -1,5 +1,6 @@
 Object sorcerer_class
 name sorcerer
+anim_suffix class_sorcerer
 randomitems sorcerer_class_items
 face sorcerer.171
 anim

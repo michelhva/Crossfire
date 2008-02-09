@@ -1,5 +1,6 @@
 Object paladin_class
 name paladin
+anim_suffix class_paladin
 randomitems paladin_class_items
 face paladin.171
 type 37
