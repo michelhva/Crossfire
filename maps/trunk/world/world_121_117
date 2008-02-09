@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-02-09 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_121_116
@@ -10737,6 +10737,7 @@ arch grass
 x 39
 end
 arch house_up
+name Crazy house
 slaying /navar_city/city1houses2
 hp 28
 sp 8
@@ -12812,6 +12813,7 @@ arch grass
 x 45
 end
 arch house_small
+name Freddy's house
 slaying /navar_city/city1houses2
 hp 22
 sp 9
@@ -12838,6 +12840,7 @@ x 45
 y 2
 end
 arch house_1
+name Dancing Lessons
 name_pl Dancing Lessons
 slaying /navar_city/city1houses3
 hp 27
