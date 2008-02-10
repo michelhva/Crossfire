@@ -5,14 +5,14 @@
 !include "MUI.nsh"
 
 ;Title Of Your Application
-Name "Crossfire GTK Client 1.9.1"
+Name "Crossfire GTK Client 1.11.0"
 
 VIAddVersionKey "ProductName" "Crossfire GTK client installer"
 VIAddVersionKey "Comments" "Website: http://crossfire.real-time.com"
 VIAddVersionKey "FileDescription" "Crossfire GTK client installer"
-VIAddVersionKey "FileVersion" "1.9.1"
+VIAddVersionKey "FileVersion" "1.11.0"
 VIAddVersionKey "LegalCopyright" "Crossfire is released under the GPL."
-VIProductVersion "1.9.1.0"
+VIProductVersion "1.11.0.0"
 
 ;Do A CRC Check
 CRCCheck On
@@ -187,6 +187,9 @@ Section "Install"
   File "crossfire.base"
   File "crossfire.clsc"
   File "Release\GTKClient.exe"
+  File "pthreadVC2.dll"
+  File "libcurl.dll"
+  File "zlib1.dll"
   File "Win32Changes.txt"
   File /oname=ChangeLog.rtf "..\..\ChangeLog"
   File /oname=Copying.rtf "..\..\Copying"
@@ -243,6 +246,9 @@ Section Uninstall
   Delete "$INSTDIR\Copying.rtf"
   Delete "$INSTDIR\Running.txt"
   Delete "$INSTDIR\Building.txt"
+  Delete "$INSTDIR\pthreadVC2.dll"
+  Delete "$INSTDIR\libcurl.dll"
+  Delete "$INSTDIR\zlib1.dll"
   ;Delete directories, but only if empty
   RmDir "$INSTDIR\.crossfire"
   RmDir "$INSTDIR"
