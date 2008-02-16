@@ -6,8 +6,8 @@ face big_demon.x71
 color_fg red
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 resist_magic 50
 resist_godpower 50
@@ -51,12 +51,12 @@ end
 More
 Object big_demon_2
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -67,12 +67,12 @@ end
 More
 Object big_demon_3
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x731
 mina
 monster 1
 move_type walk
@@ -83,12 +83,12 @@ end
 More
 Object big_demon_4
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -99,12 +99,12 @@ end
 More
 Object big_demon_5
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -116,12 +116,12 @@ end
 More
 Object big_demon_6
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -133,12 +133,12 @@ end
 More
 Object big_demon_7
 name big demon
-face big_demon.x71
+face big_demon.x31
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -153,8 +153,8 @@ face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -170,8 +170,8 @@ face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -203,8 +203,8 @@ face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
@@ -220,8 +220,8 @@ face big_demon.x71
 color_fg green
 anim
 facings 2
-big_demon.x71
 big_demon.x31
+big_demon.x71
 mina
 monster 1
 move_type walk
