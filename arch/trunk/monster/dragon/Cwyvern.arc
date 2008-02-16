@@ -10,10 +10,10 @@ Con 48
 Pow 76
 face Cwyvern.x71
 anim
-Cwyvern.x71
-Cwyvern.x72
 Cwyvern.x31
 Cwyvern.x32
+Cwyvern.x71
+Cwyvern.x72
 facings 2
 mina
 level 30
@@ -46,10 +46,10 @@ name wyvern of chaos
 face Cwyvern.x71
 anim
 facings 2
-Cwyvern.x71
-Cwyvern.x72
 Cwyvern.x31
 Cwyvern.x32
+Cwyvern.x71
+Cwyvern.x72
 mina
 monster 1
 move_type walk
