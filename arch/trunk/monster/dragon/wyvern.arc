@@ -10,10 +10,10 @@ face wyvern.x71
 color_fg green
 anim
 facings 2
-wyvern.x71
-wyvern.x72
 wyvern.x31
 wyvern.x32
+wyvern.x71
+wyvern.x72
 mina
 level 10
 Con 2
