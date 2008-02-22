@@ -2,14 +2,12 @@
 <script>
   <name>LegacySpellConverter</name>
   <code><![CDATA[import java.io.File;
-import java.util.Arrays;
 import java.util.Iterator;
 import net.sf.gridarta.gameobject.ArchetypeParser;
 import net.sf.gridarta.gameobject.ArchetypeSet;
 import net.sf.gridarta.gameobject.GameObject;
+import net.sf.gridarta.io.RecursiveFileIterator;
 import net.sf.gridarta.map.MapSquare;
-import net.sf.gridarta.map.validation.ErrorCollector;
-import net.sf.gridarta.map.validation.ValidationError;
 
 int countMapFiles = 0;
 int countSpellObjects = 0;
@@ -303,29 +301,6 @@ void convertMap(File mapFile, String mapPath) {
     }
 }
 
-void convertDirectory(File mapFile, String mapPath) {
-    File[] files = mapFile.listFiles();
-    if (files == null) {
-        print("Cannot read directory " + mapFile);
-        return;
-    }
-    Arrays.sort(files);
-    for (File file : files) {
-        String name = file.getName();
-        if (!name.equals(".svn") && !name.equals("README")) {
-            convertMaps(file, mapPath + "/" + file.getName());
-        }
-    }
-}
-
-void convertMaps(File mapFile, String mapPath) {
-    if (mapFile.isDirectory()) {
-        convertDirectory(mapFile, mapPath);
-    } else if (mapFile.isFile()) {
-        convertMap(mapFile, mapPath);
-    }
-}
-
 if (baseDirectory == null || baseDirectory.length() <= 0) {
     baseDirectory = "/";
 }
@@ -334,7 +309,17 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-convertMaps(new File(mainControl.getMapDefaultFolder() + baseDirectory), baseDirectory);
+String mapDefaultFolder = mainControl.getMapDefaultFolder();
+String rootDirectory = mapDefaultFolder + baseDirectory;
+Iterator it = new RecursiveFileIterator(new File(rootDirectory));
+while (it.hasNext()) {
+    File file = it.next();
+    if (file.isFile()
+    && file.getPath().startsWith(rootDirectory)
+    && !file.getName().equalsIgnoreCase("README")) {
+        convertMap(file, file.getPath().substring(mapDefaultFolder.length()));
+    }
+}
 
 print("Done. Created " + countSpellObjects + " spell objects in " + countMapFiles + " map files.");]]></code>
   <mode>
