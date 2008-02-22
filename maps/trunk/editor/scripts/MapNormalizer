@@ -2,11 +2,8 @@
 <script>
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
-import java.util.Arrays;
 import java.util.Iterator;
-import net.sf.gridarta.gameobject.GameObject;
-import net.sf.gridarta.map.validation.ErrorCollector;
-import net.sf.gridarta.map.validation.ValidationError;
+import net.sf.gridarta.io.RecursiveFileIterator;
 
 void normalizeMap(File mapFile, String mapPath) {
     print(mapPath);
@@ -20,29 +17,6 @@ void normalizeMap(File mapFile, String mapPath) {
     map.save();
 }
 
-void normalizeDirectory(File mapFile, String mapPath) {
-    File[] files = mapFile.listFiles();
-    if (files == null) {
-        print("Cannot read directory " + mapFile);
-        return;
-    }
-    Arrays.sort(files);
-    for (File file : files) {
-        String name = file.getName();
-        if (!name.equals(".svn") && !name.equals("README")) {
-            normalizeMaps(file, mapPath + "/" + file.getName());
-        }
-    }
-}
-
-void normalizeMaps(File mapFile, String mapPath) {
-    if (mapFile.isDirectory()) {
-        normalizeDirectory(mapFile, mapPath);
-    } else if (mapFile.isFile()) {
-        normalizeMap(mapFile, mapPath);
-    }
-}
-
 if (baseDirectory == null || baseDirectory.length() <= 0) {
     baseDirectory = "/";
 }
@@ -51,7 +25,17 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-normalizeMaps(new File(mainControl.getMapDefaultFolder() + baseDirectory), baseDirectory);
+String mapDefaultFolder = mainControl.getMapDefaultFolder();
+String rootDirectory = mapDefaultFolder + baseDirectory;
+Iterator it = new RecursiveFileIterator(new File(rootDirectory));
+while (it.hasNext()) {
+    File file = it.next();
+    if (file.isFile()
+    && file.getPath().startsWith(rootDirectory)
+    && !file.getName().equalsIgnoreCase("README")) {
+        normalizeMap(file, file.getPath().substring(mapDefaultFolder.length()));
+    }
+}
 
 print("Done.");]]></code>
   <mode>
