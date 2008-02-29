@@ -1,5 +1,6 @@
 arch map
 name world_116_102
+difficulty 1
 region darcap
 width 50
 height 50
@@ -11685,6 +11686,13 @@ arch brush
 x 39
 y 24
 elevation 0
+end
+arch house_small
+name Darcap Raffle 1
+slaying ../darcap/raffle/raffle1
+sp 7
+x 39
+y 24
 end
 arch grass_only
 x 39
