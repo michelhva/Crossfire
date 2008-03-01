@@ -1,5 +1,6 @@
 arch map
-name brest.scrolls.right
+name Scrolls Galore
+reset_timeout 3600
 difficulty 50
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
@@ -10,9 +11,8 @@ shoprace human
 width 30
 height 40
 msg
-Creator: Gene Alexander
-Editor: CF Java Map Editor
-Date:    5/23/2005
+Created:  2005-05-23 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls
@@ -94,7 +94,7 @@ arch lamppost
 name Lighted fence post
 y 15
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch footpath_2_2_3
 y 16
@@ -975,7 +975,7 @@ name Security light
 x 4
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 4
@@ -997,7 +997,7 @@ arch biglake_n
 name fish pond
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch footbridge_0
 name dock
@@ -1008,7 +1008,7 @@ arch biglake_center
 name fish pond
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch fishboat
 name Zorn's fishing boat
@@ -1187,7 +1187,7 @@ name Lighted fence post
 x 4
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -1248,7 +1248,7 @@ name Lighted fence post
 x 4
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 5
@@ -1294,7 +1294,7 @@ arch biglake_center
 name fish pond
 x 5
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 name fish pond
@@ -1452,7 +1452,7 @@ name Lighted fence post
 x 5
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 5
@@ -1513,7 +1513,7 @@ name Lighted fence post
 x 5
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 6
@@ -1825,7 +1825,7 @@ name Security light
 x 7
 y 2
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 7
@@ -2903,7 +2903,7 @@ slaying irritable_zorn_key
 x 11
 y 4
 connected 6
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -2913,8 +2913,7 @@ food 1
 x 11
 y 4
 connected 6
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch tile_white_floor
 x 11
@@ -3645,8 +3644,6 @@ hp 17
 sp 36
 x 13
 y 36
-walk_on 0
-fly_on 0
 end
 arch dungeon_magic
 x 13
@@ -3671,8 +3668,6 @@ hp 17
 sp 38
 x 13
 y 38
-walk_on 0
-fly_on 0
 end
 arch dungeon_magic
 x 13
@@ -3879,7 +3874,7 @@ name Lighted fence post
 x 14
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -3940,7 +3935,7 @@ name Lighted fence post
 x 14
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 15
@@ -4194,7 +4189,7 @@ name Lighted fence post
 x 15
 y 35
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -4255,7 +4250,7 @@ name Lighted fence post
 x 15
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 16
@@ -4515,8 +4510,6 @@ hp 12
 sp 36
 x 16
 y 36
-walk_on 0
-fly_on 0
 end
 arch dungeon_magic
 x 16
@@ -4541,8 +4534,6 @@ hp 12
 sp 38
 x 16
 y 38
-walk_on 0
-fly_on 0
 end
 arch brush
 x 16
@@ -4887,9 +4878,9 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 161
 level 110
 value 3500
+randomitems none
 startequip 1
 arch spell_sunspear
 end
@@ -4897,9 +4888,9 @@ end
 arch rod_light
 hp 500
 maxhp 500
-sp 190
 level 110
 value 3500
+randomitems none
 startequip 1
 arch spell_sanctuary
 end
@@ -7443,7 +7434,7 @@ name Lighted fence post
 x 27
 y 39
 glow_radius 5
-no_pass 1
+move_block all
 end
 arch brush
 x 28

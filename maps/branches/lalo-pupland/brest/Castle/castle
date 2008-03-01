@@ -1,12 +1,11 @@
 arch map
-name castle
+name Castle
 region brest
 width 28
 height 33
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Aug 30 20:56:43 1994
+Created:  1994-02-30
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -1346,7 +1345,7 @@ arch dirtfloor
 x 7
 y 11
 end
-arch bwall_0
+arch bwall_3_3
 x 7
 y 11
 end
@@ -1354,7 +1353,7 @@ arch dirtfloor
 x 7
 y 12
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 12
 end
@@ -1362,7 +1361,7 @@ arch dirtfloor
 x 7
 y 13
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 13
 end
@@ -1370,7 +1369,7 @@ arch dirtfloor
 x 7
 y 14
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 14
 end
@@ -1378,7 +1377,7 @@ arch dirtfloor
 x 7
 y 15
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 15
 end
@@ -1386,7 +1385,7 @@ arch dirtfloor
 x 7
 y 16
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 16
 end
@@ -1394,7 +1393,7 @@ arch dirtfloor
 x 7
 y 17
 end
-arch bwall_0
+arch bwall_3_2
 x 7
 y 17
 end
@@ -1597,7 +1596,7 @@ arch dirtfloor
 x 8
 y 11
 end
-arch bwall_0
+arch bwall_3_3
 x 8
 y 11
 end
@@ -1605,7 +1604,7 @@ arch dirtfloor
 x 8
 y 12
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 12
 end
@@ -1613,7 +1612,7 @@ arch dirtfloor
 x 8
 y 13
 end
-arch bwall_0
+arch bwall_3_4
 x 8
 y 13
 end
@@ -1621,7 +1620,7 @@ arch dirtfloor
 x 8
 y 14
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 14
 end
@@ -1629,7 +1628,7 @@ arch dirtfloor
 x 8
 y 15
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 15
 end
@@ -1637,7 +1636,7 @@ arch dirtfloor
 x 8
 y 16
 end
-arch bwall_0
+arch bwall_3_4
 x 8
 y 16
 end
@@ -1645,7 +1644,7 @@ arch dirtfloor
 x 8
 y 17
 end
-arch bwall_0
+arch bwall_4
 x 8
 y 17
 end
@@ -1844,7 +1843,7 @@ arch dirtfloor
 x 9
 y 11
 end
-arch earthwall
+arch bwall_2_2_3
 x 9
 y 11
 end
@@ -1852,7 +1851,7 @@ arch dirtfloor
 x 9
 y 12
 end
-arch bwall_0
+arch bwall_2_2_4
 x 9
 y 12
 end
@@ -1872,7 +1871,7 @@ arch dirtfloor
 x 9
 y 14
 end
-arch bwall_0
+arch bwall_2_2_3
 x 9
 y 14
 end
@@ -1880,7 +1879,7 @@ arch dirtfloor
 x 9
 y 15
 end
-arch bwall_0
+arch bwall_2_2_4
 x 9
 y 15
 end
@@ -1899,7 +1898,7 @@ arch dirtfloor
 x 9
 y 17
 end
-arch bwall_0
+arch bwall_3_3
 x 9
 y 17
 end
@@ -2161,7 +2160,7 @@ arch dirtfloor
 x 10
 y 17
 end
-arch bwall_0
+arch bwall_3_3
 x 10
 y 17
 end
@@ -2307,7 +2306,7 @@ arch dirtfloor
 x 11
 y 3
 end
-arch bwall_0
+arch bwall_2_2_2
 x 11
 y 3
 end
@@ -2315,7 +2314,7 @@ arch dirtfloor
 x 11
 y 4
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 4
 end
@@ -2323,7 +2322,7 @@ arch dirtfloor
 x 11
 y 5
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 5
 end
@@ -2331,7 +2330,7 @@ arch dirtfloor
 x 11
 y 6
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 6
 end
@@ -2339,7 +2338,7 @@ arch dirtfloor
 x 11
 y 7
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 7
 end
@@ -2347,7 +2346,7 @@ arch dirtfloor
 x 11
 y 8
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 8
 end
@@ -2355,7 +2354,7 @@ arch dirtfloor
 x 11
 y 9
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 9
 end
@@ -2363,7 +2362,7 @@ arch dirtfloor
 x 11
 y 10
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 10
 end
@@ -2371,7 +2370,7 @@ arch dirtfloor
 x 11
 y 11
 end
-arch bwall_0
+arch bwall_3_2
 x 11
 y 11
 end
@@ -2379,7 +2378,7 @@ arch dirtfloor
 x 11
 y 12
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 12
 end
@@ -2387,7 +2386,7 @@ arch dirtfloor
 x 11
 y 13
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 13
 end
@@ -2395,7 +2394,7 @@ arch dirtfloor
 x 11
 y 14
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 14
 end
@@ -2403,7 +2402,7 @@ arch dirtfloor
 x 11
 y 15
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 15
 end
@@ -2411,7 +2410,7 @@ arch dirtfloor
 x 11
 y 16
 end
-arch bwall_0
+arch bwall_2_1_1
 x 11
 y 16
 end
@@ -2419,7 +2418,7 @@ arch dirtfloor
 x 11
 y 17
 end
-arch bwall_0
+arch bwall_3_4
 x 11
 y 17
 end
@@ -3242,6 +3241,8 @@ end
 arch lightningwall_5
 x 14
 y 20
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 14
@@ -3306,6 +3307,8 @@ end
 arch lightningwall_1
 x 14
 y 28
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 14
@@ -5666,6 +5669,8 @@ end
 arch firewall_5
 x 25
 y 8
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 25
@@ -5734,6 +5739,8 @@ end
 arch firewall_1
 x 25
 y 19
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 25
@@ -5865,6 +5872,8 @@ end
 arch lightningwall_7
 x 26
 y 9
+arch spell_sm_lightning
+end
 end
 arch dirtfloor
 x 26
