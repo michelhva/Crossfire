@@ -1,15 +1,15 @@
 arch map
 name Zorn Castle Upper Floor Two
-difficulty 75
+difficulty 95
 region brest
 width 59
 height 59
 enter_x 29
 enter_y 3
 msg
-Creator: Gene Alexander
-Date:    2006.11.11
+Created:  2006-11-11 Gene Alexander
 Info: Zorn Castle, second upper floor
+Modified: 2007-11-24 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -698,17 +698,13 @@ arch brush
 x 3
 y 2
 end
-arch brush
-x 3
-y 3
-end
 arch dungeon_magic
 x 3
 y 3
 end
 arch brush
 x 3
-y 4
+y 3
 end
 arch dungeon_magic
 x 3
@@ -716,7 +712,7 @@ y 4
 end
 arch brush
 x 3
-y 5
+y 4
 end
 arch dungeon_magic
 x 3
@@ -724,11 +720,19 @@ y 5
 end
 arch brush
 x 3
-y 6
+y 5
 end
 arch dungeon_magic
 x 3
 y 6
+end
+arch brush
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch brush
 x 3
@@ -739,15 +743,7 @@ name Security light
 x 3
 y 7
 glow_radius 5
-no_pass 1
-end
-arch dungeon_magic
-x 3
-y 7
-end
-arch brush
-x 3
-y 8
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -755,7 +751,7 @@ y 8
 end
 arch brush
 x 3
-y 9
+y 8
 end
 arch dungeon_magic
 x 3
@@ -763,7 +759,7 @@ y 9
 end
 arch brush
 x 3
-y 10
+y 9
 end
 arch dungeon_magic
 x 3
@@ -771,7 +767,7 @@ y 10
 end
 arch brush
 x 3
-y 11
+y 10
 end
 arch dungeon_magic
 x 3
@@ -779,7 +775,7 @@ y 11
 end
 arch brush
 x 3
-y 12
+y 11
 end
 arch dungeon_magic
 x 3
@@ -787,7 +783,7 @@ y 12
 end
 arch brush
 x 3
-y 13
+y 12
 end
 arch dungeon_magic
 x 3
@@ -795,7 +791,7 @@ y 13
 end
 arch brush
 x 3
-y 14
+y 13
 end
 arch dungeon_magic
 x 3
@@ -803,7 +799,7 @@ y 14
 end
 arch brush
 x 3
-y 15
+y 14
 end
 arch dungeon_magic
 x 3
@@ -811,7 +807,7 @@ y 15
 end
 arch brush
 x 3
-y 16
+y 15
 end
 arch dungeon_magic
 x 3
@@ -819,7 +815,7 @@ y 16
 end
 arch brush
 x 3
-y 17
+y 16
 end
 arch dungeon_magic
 x 3
@@ -827,7 +823,7 @@ y 17
 end
 arch brush
 x 3
-y 18
+y 17
 end
 arch dungeon_magic
 x 3
@@ -835,7 +831,7 @@ y 18
 end
 arch brush
 x 3
-y 19
+y 18
 end
 arch dungeon_magic
 x 3
@@ -843,7 +839,7 @@ y 19
 end
 arch brush
 x 3
-y 20
+y 19
 end
 arch dungeon_magic
 x 3
@@ -851,7 +847,7 @@ y 20
 end
 arch brush
 x 3
-y 21
+y 20
 end
 arch dungeon_magic
 x 3
@@ -859,7 +855,7 @@ y 21
 end
 arch brush
 x 3
-y 22
+y 21
 end
 arch dungeon_magic
 x 3
@@ -867,7 +863,7 @@ y 22
 end
 arch brush
 x 3
-y 23
+y 22
 end
 arch dungeon_magic
 x 3
@@ -875,7 +871,7 @@ y 23
 end
 arch brush
 x 3
-y 24
+y 23
 end
 arch dungeon_magic
 x 3
@@ -883,7 +879,7 @@ y 24
 end
 arch brush
 x 3
-y 25
+y 24
 end
 arch dungeon_magic
 x 3
@@ -891,7 +887,7 @@ y 25
 end
 arch brush
 x 3
-y 26
+y 25
 end
 arch dungeon_magic
 x 3
@@ -899,7 +895,7 @@ y 26
 end
 arch brush
 x 3
-y 27
+y 26
 end
 arch dungeon_magic
 x 3
@@ -907,7 +903,7 @@ y 27
 end
 arch brush
 x 3
-y 28
+y 27
 end
 arch dungeon_magic
 x 3
@@ -915,7 +911,7 @@ y 28
 end
 arch brush
 x 3
-y 29
+y 28
 end
 arch dungeon_magic
 x 3
@@ -923,7 +919,7 @@ y 29
 end
 arch brush
 x 3
-y 30
+y 29
 end
 arch dungeon_magic
 x 3
@@ -931,7 +927,7 @@ y 30
 end
 arch brush
 x 3
-y 31
+y 30
 end
 arch dungeon_magic
 x 3
@@ -939,7 +935,7 @@ y 31
 end
 arch brush
 x 3
-y 32
+y 31
 end
 arch dungeon_magic
 x 3
@@ -947,7 +943,7 @@ y 32
 end
 arch brush
 x 3
-y 33
+y 32
 end
 arch dungeon_magic
 x 3
@@ -955,7 +951,7 @@ y 33
 end
 arch brush
 x 3
-y 34
+y 33
 end
 arch dungeon_magic
 x 3
@@ -963,7 +959,7 @@ y 34
 end
 arch brush
 x 3
-y 35
+y 34
 end
 arch dungeon_magic
 x 3
@@ -971,7 +967,7 @@ y 35
 end
 arch brush
 x 3
-y 36
+y 35
 end
 arch dungeon_magic
 x 3
@@ -979,7 +975,7 @@ y 36
 end
 arch brush
 x 3
-y 37
+y 36
 end
 arch dungeon_magic
 x 3
@@ -987,7 +983,7 @@ y 37
 end
 arch brush
 x 3
-y 38
+y 37
 end
 arch dungeon_magic
 x 3
@@ -995,7 +991,7 @@ y 38
 end
 arch brush
 x 3
-y 39
+y 38
 end
 arch dungeon_magic
 x 3
@@ -1003,7 +999,7 @@ y 39
 end
 arch brush
 x 3
-y 40
+y 39
 end
 arch dungeon_magic
 x 3
@@ -1011,7 +1007,7 @@ y 40
 end
 arch brush
 x 3
-y 41
+y 40
 end
 arch dungeon_magic
 x 3
@@ -1019,7 +1015,7 @@ y 41
 end
 arch brush
 x 3
-y 42
+y 41
 end
 arch dungeon_magic
 x 3
@@ -1027,7 +1023,7 @@ y 42
 end
 arch brush
 x 3
-y 43
+y 42
 end
 arch dungeon_magic
 x 3
@@ -1035,7 +1031,7 @@ y 43
 end
 arch brush
 x 3
-y 44
+y 43
 end
 arch dungeon_magic
 x 3
@@ -1043,7 +1039,7 @@ y 44
 end
 arch brush
 x 3
-y 45
+y 44
 end
 arch dungeon_magic
 x 3
@@ -1051,7 +1047,7 @@ y 45
 end
 arch brush
 x 3
-y 46
+y 45
 end
 arch dungeon_magic
 x 3
@@ -1059,7 +1055,7 @@ y 46
 end
 arch brush
 x 3
-y 47
+y 46
 end
 arch dungeon_magic
 x 3
@@ -1067,7 +1063,7 @@ y 47
 end
 arch brush
 x 3
-y 48
+y 47
 end
 arch dungeon_magic
 x 3
@@ -1075,7 +1071,7 @@ y 48
 end
 arch brush
 x 3
-y 49
+y 48
 end
 arch dungeon_magic
 x 3
@@ -1083,7 +1079,7 @@ y 49
 end
 arch brush
 x 3
-y 50
+y 49
 end
 arch dungeon_magic
 x 3
@@ -1091,7 +1087,7 @@ y 50
 end
 arch brush
 x 3
-y 51
+y 50
 end
 arch dungeon_magic
 x 3
@@ -1099,7 +1095,7 @@ y 51
 end
 arch brush
 x 3
-y 52
+y 51
 end
 arch dungeon_magic
 x 3
@@ -1107,7 +1103,7 @@ y 52
 end
 arch brush
 x 3
-y 53
+y 52
 end
 arch dungeon_magic
 x 3
@@ -1115,17 +1111,21 @@ y 53
 end
 arch brush
 x 3
-y 54
+y 53
 end
 arch dungeon_magic
 x 3
 y 54
 end
 arch brush
+x 3
+y 54
+end
+arch dungeon_magic
 x 3
 y 55
 end
-arch dungeon_magic
+arch brush
 x 3
 y 55
 end
@@ -1162,11 +1162,11 @@ arch brush
 x 4
 y 2
 end
-arch brush
+arch dungeon_magic
 x 4
 y 3
 end
-arch dungeon_magic
+arch brush
 x 4
 y 3
 end
@@ -1425,11 +1425,11 @@ name moat
 x 4
 y 54
 end
-arch brush
+arch dungeon_magic
 x 4
 y 55
 end
-arch dungeon_magic
+arch brush
 x 4
 y 55
 end
@@ -1466,11 +1466,11 @@ arch brush
 x 5
 y 2
 end
-arch brush
+arch dungeon_magic
 x 5
 y 3
 end
-arch dungeon_magic
+arch brush
 x 5
 y 3
 end
@@ -1729,11 +1729,11 @@ name moat
 x 5
 y 54
 end
-arch brush
+arch dungeon_magic
 x 5
 y 55
 end
-arch dungeon_magic
+arch brush
 x 5
 y 55
 end
@@ -1770,11 +1770,11 @@ arch brush
 x 6
 y 2
 end
-arch brush
+arch dungeon_magic
 x 6
 y 3
 end
-arch dungeon_magic
+arch brush
 x 6
 y 3
 end
@@ -2033,11 +2033,11 @@ name moat
 x 6
 y 54
 end
-arch brush
+arch dungeon_magic
 x 6
 y 55
 end
-arch dungeon_magic
+arch brush
 x 6
 y 55
 end
@@ -2074,11 +2074,11 @@ arch brush
 x 7
 y 2
 end
-arch brush
+arch dungeon_magic
 x 7
 y 3
 end
-arch dungeon_magic
+arch brush
 x 7
 y 3
 end
@@ -2467,11 +2467,11 @@ name moat
 x 7
 y 54
 end
-arch brush
+arch dungeon_magic
 x 7
 y 55
 end
-arch dungeon_magic
+arch brush
 x 7
 y 55
 end
@@ -2508,11 +2508,11 @@ arch brush
 x 8
 y 2
 end
-arch brush
+arch dungeon_magic
 x 8
 y 3
 end
-arch dungeon_magic
+arch brush
 x 8
 y 3
 end
@@ -2580,13 +2580,9 @@ arch cwall_1_2
 x 8
 y 12
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 13
-end
-arch swall_1_1
-x 8
-y 13
+y 12
 end
 arch dungeon_magic
 x 8
@@ -2594,17 +2590,29 @@ y 13
 end
 arch cobblestones2
 x 8
-y 14
+y 13
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 14
+y 13
 end
 arch dungeon_magic
 x 8
 y 14
 end
 arch cobblestones2
+x 8
+y 14
+end
+arch swall_2_1_1
+x 8
+y 14
+end
+arch cobblestones2
+x 8
+y 15
+end
+arch swall_1_2_half
 x 8
 y 15
 end
@@ -2660,20 +2668,27 @@ arch cwall_1_2
 x 8
 y 21
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 22
-end
-arch swall_0
-face swall_55.111
-x 8
-y 22
+y 21
 end
 arch dungeon_magic
 x 8
 y 22
 end
 arch cobblestones2
+x 8
+y 22
+end
+arch swall_2_1_1
+x 8
+y 22
+end
+arch cobblestones2
+x 8
+y 23
+end
+arch swall_1_2_half
 x 8
 y 23
 end
@@ -2681,20 +2696,27 @@ arch cwall_1_4
 x 8
 y 23
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 24
-end
-arch swall_0
-face swall_55.111
-x 8
-y 24
+y 23
 end
 arch dungeon_magic
 x 8
 y 24
 end
 arch cobblestones2
+x 8
+y 24
+end
+arch swall_2_1_1
+x 8
+y 24
+end
+arch cobblestones2
+x 8
+y 25
+end
+arch swall_1_2_half
 x 8
 y 25
 end
@@ -2718,17 +2740,25 @@ arch cwall_1_2
 x 8
 y 27
 end
+arch swall_1_1_half
+x 8
+y 27
+end
+arch dungeon_magic
+x 8
+y 28
+end
 arch cobblestones2
 x 8
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 28
 end
 arch dungeon_magic
 x 8
-y 28
+y 29
 end
 arch cobblestones2
 x 8
@@ -2740,21 +2770,21 @@ y 29
 end
 arch dungeon_magic
 x 8
-y 29
+y 30
 end
 arch cobblestones2
 x 8
 y 30
 end
-arch swall_1_2
-x 8
-y 30
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 8
 y 30
 end
 arch cobblestones2
+x 8
+y 31
+end
+arch swall_1_2_half
 x 8
 y 31
 end
@@ -2778,20 +2808,27 @@ arch cwall_1_2
 x 8
 y 33
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 34
-end
-arch swall_0
-face swall_55.111
-x 8
-y 34
+y 33
 end
 arch dungeon_magic
 x 8
 y 34
 end
 arch cobblestones2
+x 8
+y 34
+end
+arch swall_2_1_1
+x 8
+y 34
+end
+arch cobblestones2
+x 8
+y 35
+end
+arch swall_1_2_half
 x 8
 y 35
 end
@@ -2847,13 +2884,9 @@ arch cwall_1_2
 x 8
 y 41
 end
-arch cobblestones2
+arch swall_1_1_half
 x 8
-y 42
-end
-arch swall_1_1
-x 8
-y 42
+y 41
 end
 arch dungeon_magic
 x 8
@@ -2861,17 +2894,29 @@ y 42
 end
 arch cobblestones2
 x 8
-y 43
+y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
-y 43
+y 42
 end
 arch dungeon_magic
 x 8
 y 43
 end
 arch cobblestones2
+x 8
+y 43
+end
+arch swall_2_1_1
+x 8
+y 43
+end
+arch cobblestones2
+x 8
+y 44
+end
+arch swall_1_2_half
 x 8
 y 44
 end
@@ -2951,11 +2996,11 @@ name moat
 x 8
 y 54
 end
-arch brush
+arch dungeon_magic
 x 8
 y 55
 end
-arch dungeon_magic
+arch brush
 x 8
 y 55
 end
@@ -2992,11 +3037,11 @@ arch brush
 x 9
 y 2
 end
-arch brush
+arch dungeon_magic
 x 9
 y 3
 end
-arch dungeon_magic
+arch brush
 x 9
 y 3
 end
@@ -3057,7 +3102,7 @@ x 9
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3078,7 +3123,7 @@ x 9
 y 14
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3215,7 +3260,7 @@ x 9
 y 44
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3236,7 +3281,7 @@ x 9
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -3263,6 +3308,10 @@ arch cobblestones2
 x 9
 y 50
 end
+arch swall_1_4_half
+x 9
+y 50
+end
 arch cwall_1_3
 x 9
 y 50
@@ -3286,11 +3335,11 @@ name moat
 x 9
 y 54
 end
-arch brush
+arch dungeon_magic
 x 9
 y 55
 end
-arch dungeon_magic
+arch brush
 x 9
 y 55
 end
@@ -3327,11 +3376,11 @@ arch brush
 x 10
 y 2
 end
-arch brush
+arch dungeon_magic
 x 10
 y 3
 end
-arch dungeon_magic
+arch brush
 x 10
 y 3
 end
@@ -3419,6 +3468,13 @@ arch woodfloor
 x 10
 y 17
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 10
+y 18
+connected 12000
+end
 arch woodfloor2
 x 10
 y 18
@@ -3427,7 +3483,7 @@ arch bed_1
 name guard generator
 x 10
 y 18
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -3436,6 +3492,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -3481,6 +3538,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -3565,136 +3681,6 @@ arch woodfloor
 x 10
 y 21
 end
-arch bed_1
-name guard generator
-x 10
-y 21
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 10
 y 22
@@ -3719,6 +3705,16 @@ arch cobblestones2
 x 10
 y 26
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 10
+y 27
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 10
 y 27
@@ -3727,6 +3723,16 @@ arch stonefloor2
 x 10
 y 28
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 10
+y 29
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 10
 y 29
@@ -3734,6 +3740,16 @@ end
 arch stonefloor2
 x 10
 y 30
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 10
+y 31
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch stonefloor2
 x 10
@@ -3767,136 +3783,6 @@ arch woodfloor
 x 10
 y 37
 end
-arch bed_1
-name guard generator
-x 10
-y 37
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 10
 y 38
@@ -3905,6 +3791,13 @@ arch woodfloor
 x 10
 y 39
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 10
+y 40
+connected 12000
+end
 arch woodfloor2
 x 10
 y 40
@@ -3913,7 +3806,7 @@ arch bed_1
 name guard generator
 x 10
 y 40
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -3922,6 +3815,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -3967,6 +3861,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -4091,16 +4044,15 @@ arch woodfloor2
 x 10
 y 49
 end
+arch dungeon_magic
+x 10
+y 50
+end
 arch cobblestones2
 x 10
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 10
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 10
 y 50
 end
@@ -4123,11 +4075,11 @@ name moat
 x 10
 y 54
 end
-arch brush
+arch dungeon_magic
 x 10
 y 55
 end
-arch dungeon_magic
+arch brush
 x 10
 y 55
 end
@@ -4164,11 +4116,11 @@ arch brush
 x 11
 y 2
 end
-arch brush
+arch dungeon_magic
 x 11
 y 3
 end
-arch dungeon_magic
+arch brush
 x 11
 y 3
 end
@@ -4413,6 +4365,10 @@ x 11
 y 49
 end
 arch cobblestones2
+x 11
+y 50
+end
+arch swall_1_3_half
 x 11
 y 50
 end
@@ -4439,11 +4395,11 @@ name moat
 x 11
 y 54
 end
-arch brush
+arch dungeon_magic
 x 11
 y 55
 end
-arch dungeon_magic
+arch brush
 x 11
 y 55
 end
@@ -4480,11 +4436,11 @@ arch brush
 x 12
 y 2
 end
-arch brush
+arch dungeon_magic
 x 12
 y 3
 end
-arch dungeon_magic
+arch brush
 x 12
 y 3
 end
@@ -4530,7 +4486,7 @@ x 12
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4591,7 +4547,7 @@ x 12
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4688,7 +4644,7 @@ x 12
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -4749,7 +4705,7 @@ x 12
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -4784,11 +4740,11 @@ name moat
 x 12
 y 54
 end
-arch brush
+arch dungeon_magic
 x 12
 y 55
 end
-arch dungeon_magic
+arch brush
 x 12
 y 55
 end
@@ -4825,11 +4781,11 @@ arch brush
 x 13
 y 2
 end
-arch brush
+arch dungeon_magic
 x 13
 y 3
 end
-arch dungeon_magic
+arch brush
 x 13
 y 3
 end
@@ -4858,6 +4814,10 @@ x 13
 y 7
 end
 arch cobblestones2
+x 13
+y 8
+end
+arch swall_1_4_half
 x 13
 y 8
 end
@@ -4933,6 +4893,13 @@ arch woodfloor2
 x 13
 y 20
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 13
+y 21
+connected 12000
+end
 arch woodfloor
 x 13
 y 21
@@ -4941,7 +4908,7 @@ arch bed_1
 name guard generator
 x 13
 y 21
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -4950,6 +4917,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -4995,6 +4963,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -5135,6 +5162,13 @@ arch woodfloor2
 x 13
 y 36
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 13
+y 37
+connected 12000
+end
 arch woodfloor
 x 13
 y 37
@@ -5143,7 +5177,7 @@ arch bed_1
 name guard generator
 x 13
 y 37
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -5152,6 +5186,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -5197,6 +5232,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -5369,11 +5463,11 @@ name moat
 x 13
 y 54
 end
-arch brush
+arch dungeon_magic
 x 13
 y 55
 end
-arch dungeon_magic
+arch brush
 x 13
 y 55
 end
@@ -5410,11 +5504,11 @@ arch brush
 x 14
 y 2
 end
-arch brush
+arch dungeon_magic
 x 14
 y 3
 end
-arch dungeon_magic
+arch brush
 x 14
 y 3
 end
@@ -5437,15 +5531,15 @@ arch brush
 x 14
 y 7
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch cobblestones2
 x 14
 y 8
 end
-arch swall_1_4
-x 14
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 14
 y 8
 end
@@ -5459,7 +5553,7 @@ x 14
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -5489,6 +5583,16 @@ end
 arch woodfloor2
 x 14
 y 13
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 14
+y 14
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 14
@@ -5642,6 +5746,16 @@ arch woodfloor
 x 14
 y 43
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 14
+y 44
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 14
 y 44
@@ -5684,10 +5798,14 @@ x 14
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
+x 14
+y 50
+end
+arch swall_1_4_half
 x 14
 y 50
 end
@@ -5714,11 +5832,11 @@ name moat
 x 14
 y 54
 end
-arch brush
+arch dungeon_magic
 x 14
 y 55
 end
-arch dungeon_magic
+arch brush
 x 14
 y 55
 end
@@ -5755,11 +5873,11 @@ arch brush
 x 15
 y 2
 end
-arch brush
+arch dungeon_magic
 x 15
 y 3
 end
-arch dungeon_magic
+arch brush
 x 15
 y 3
 end
@@ -5781,6 +5899,10 @@ end
 arch brush
 x 15
 y 7
+end
+arch dungeon_magic
+x 15
+y 8
 end
 arch cobblestones2
 x 15
@@ -5790,10 +5912,6 @@ arch swall_2_1_2
 x 15
 y 8
 end
-arch dungeon_magic
-x 15
-y 8
-end
 arch woodfloor
 x 15
 y 9
@@ -6026,16 +6144,15 @@ arch woodfloor
 x 15
 y 49
 end
+arch dungeon_magic
+x 15
+y 50
+end
 arch cobblestones2
 x 15
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 15
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 15
 y 50
 end
@@ -6058,11 +6175,11 @@ name moat
 x 15
 y 54
 end
-arch brush
+arch dungeon_magic
 x 15
 y 55
 end
-arch dungeon_magic
+arch brush
 x 15
 y 55
 end
@@ -6099,11 +6216,11 @@ arch brush
 x 16
 y 2
 end
-arch brush
+arch dungeon_magic
 x 16
 y 3
 end
-arch dungeon_magic
+arch brush
 x 16
 y 3
 end
@@ -6126,15 +6243,15 @@ arch brush
 x 16
 y 7
 end
+arch dungeon_magic
+x 16
+y 8
+end
 arch cobblestones2
 x 16
 y 8
 end
-arch swall_1_3
-x 16
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 16
 y 8
 end
@@ -6177,6 +6294,16 @@ end
 arch woodfloor2
 x 16
 y 15
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 16
+y 16
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 16
@@ -6314,6 +6441,16 @@ arch woodfloor
 x 16
 y 41
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 16
+y 42
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 16
 y 42
@@ -6362,6 +6499,10 @@ arch cobblestones2
 x 16
 y 50
 end
+arch swall_1_3_half
+x 16
+y 50
+end
 arch cwall_1_4
 x 16
 y 50
@@ -6385,11 +6526,11 @@ name moat
 x 16
 y 54
 end
-arch brush
+arch dungeon_magic
 x 16
 y 55
 end
-arch dungeon_magic
+arch brush
 x 16
 y 55
 end
@@ -6426,11 +6567,11 @@ arch brush
 x 17
 y 2
 end
-arch brush
+arch dungeon_magic
 x 17
 y 3
 end
-arch dungeon_magic
+arch brush
 x 17
 y 3
 end
@@ -6459,6 +6600,10 @@ x 17
 y 7
 end
 arch cobblestones2
+x 17
+y 8
+end
+arch swall_1_3_half
 x 17
 y 8
 end
@@ -6552,7 +6697,7 @@ x 17
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -6625,7 +6770,7 @@ x 17
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -6736,11 +6881,11 @@ name moat
 x 17
 y 54
 end
-arch brush
+arch dungeon_magic
 x 17
 y 55
 end
-arch dungeon_magic
+arch brush
 x 17
 y 55
 end
@@ -6777,11 +6922,11 @@ arch brush
 x 18
 y 2
 end
-arch brush
+arch dungeon_magic
 x 18
 y 3
 end
-arch dungeon_magic
+arch brush
 x 18
 y 3
 end
@@ -6810,6 +6955,10 @@ x 18
 y 7
 end
 arch cobblestones2
+x 18
+y 8
+end
+arch swall_1_4_half
 x 18
 y 8
 end
@@ -6821,6 +6970,13 @@ arch woodfloor2
 x 18
 y 9
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 18
+y 10
+connected 12000
+end
 arch woodfloor2
 x 18
 y 10
@@ -6829,7 +6985,7 @@ arch bed_1
 name guard generator
 x 18
 y 10
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -6838,6 +6994,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -6883,6 +7040,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -6994,6 +7210,16 @@ end
 arch woodfloor2
 x 18
 y 17
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 18
+y 18
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 18
@@ -7107,6 +7333,16 @@ arch woodfloor
 x 18
 y 39
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 18
+y 40
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 18
 y 40
@@ -7151,6 +7387,13 @@ arch woodfloor2
 x 18
 y 47
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 18
+y 48
+connected 12000
+end
 arch woodfloor2
 x 18
 y 48
@@ -7159,7 +7402,7 @@ arch bed_1
 name guard generator
 x 18
 y 48
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -7168,6 +7411,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -7213,6 +7457,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -7321,11 +7624,11 @@ name moat
 x 18
 y 54
 end
-arch brush
+arch dungeon_magic
 x 18
 y 55
 end
-arch dungeon_magic
+arch brush
 x 18
 y 55
 end
@@ -7362,11 +7665,11 @@ arch brush
 x 19
 y 2
 end
-arch brush
+arch dungeon_magic
 x 19
 y 3
 end
-arch dungeon_magic
+arch brush
 x 19
 y 3
 end
@@ -7389,15 +7692,15 @@ arch brush
 x 19
 y 7
 end
+arch dungeon_magic
+x 19
+y 8
+end
 arch cobblestones2
 x 19
 y 8
 end
-arch swall_1_4
-x 19
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 19
 y 8
 end
@@ -7423,7 +7726,7 @@ x 19
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -7474,6 +7777,13 @@ arch woodfloor
 x 19
 y 21
 end
+arch gate_open_1
+name security gate
+x 19
+y 21
+connected 12000
+activate_on_release 0
+end
 arch woodfloor2
 x 19
 y 22
@@ -7484,7 +7794,7 @@ x 19
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -7557,12 +7867,19 @@ x 19
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
 x 19
 y 37
+end
+arch gate_open_1
+name security gate
+x 19
+y 37
+connected 12000
+activate_on_release 0
 end
 arch woodfloor2
 x 19
@@ -7618,7 +7935,7 @@ x 19
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -7634,6 +7951,10 @@ x 19
 y 49
 end
 arch cobblestones2
+x 19
+y 50
+end
+arch swall_1_4_half
 x 19
 y 50
 end
@@ -7660,11 +7981,11 @@ name moat
 x 19
 y 54
 end
-arch brush
+arch dungeon_magic
 x 19
 y 55
 end
-arch dungeon_magic
+arch brush
 x 19
 y 55
 end
@@ -7701,11 +8022,11 @@ arch brush
 x 20
 y 2
 end
-arch brush
+arch dungeon_magic
 x 20
 y 3
 end
-arch dungeon_magic
+arch brush
 x 20
 y 3
 end
@@ -7728,15 +8049,15 @@ arch brush
 x 20
 y 7
 end
+arch dungeon_magic
+x 20
+y 8
+end
 arch cobblestones2
 x 20
 y 8
 end
 arch swall_2_1_2
-x 20
-y 8
-end
-arch dungeon_magic
 x 20
 y 8
 end
@@ -7803,6 +8124,13 @@ end
 arch woodfloor
 x 20
 y 21
+end
+arch gate_open_1
+name security gate
+x 20
+y 21
+connected 12000
+activate_on_release 0
 end
 arch woodfloor2
 x 20
@@ -7958,6 +8286,13 @@ arch woodfloor
 x 20
 y 37
 end
+arch gate_open_1
+name security gate
+x 20
+y 37
+connected 12000
+activate_on_release 0
+end
 arch woodfloor2
 x 20
 y 38
@@ -8018,16 +8353,15 @@ arch woodfloor2
 x 20
 y 49
 end
+arch dungeon_magic
+x 20
+y 50
+end
 arch cobblestones2
 x 20
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 20
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 20
 y 50
 end
@@ -8050,11 +8384,11 @@ name moat
 x 20
 y 54
 end
-arch brush
+arch dungeon_magic
 x 20
 y 55
 end
-arch dungeon_magic
+arch brush
 x 20
 y 55
 end
@@ -8091,11 +8425,11 @@ arch brush
 x 21
 y 2
 end
-arch brush
+arch dungeon_magic
 x 21
 y 3
 end
-arch dungeon_magic
+arch brush
 x 21
 y 3
 end
@@ -8118,15 +8452,15 @@ arch brush
 x 21
 y 7
 end
+arch dungeon_magic
+x 21
+y 8
+end
 arch cobblestones2
 x 21
 y 8
 end
 arch swall_2_1_2
-x 21
-y 8
-end
-arch dungeon_magic
 x 21
 y 8
 end
@@ -8138,136 +8472,6 @@ arch woodfloor
 x 21
 y 10
 end
-arch bed_1
-name guard generator
-x 21
-y 10
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 21
 y 11
@@ -8276,6 +8480,13 @@ arch woodfloor
 x 21
 y 12
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 21
+y 13
+connected 12000
+end
 arch woodfloor
 x 21
 y 13
@@ -8284,7 +8495,7 @@ arch bed_1
 name guard generator
 x 21
 y 13
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -8293,6 +8504,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -8338,6 +8550,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -8594,6 +8865,13 @@ arch woodfloor
 x 21
 y 44
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 21
+y 45
+connected 12000
+end
 arch woodfloor
 x 21
 y 45
@@ -8602,7 +8880,7 @@ arch bed_1
 name guard generator
 x 21
 y 45
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -8611,6 +8889,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -8656,6 +8935,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -8740,141 +9078,15 @@ arch woodfloor
 x 21
 y 48
 end
-arch bed_1
-name guard generator
-x 21
-y 48
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 21
 y 49
 end
 arch cobblestones2
+x 21
+y 50
+end
+arch swall_1_3_half
 x 21
 y 50
 end
@@ -8901,11 +9113,11 @@ name moat
 x 21
 y 54
 end
-arch brush
+arch dungeon_magic
 x 21
 y 55
 end
-arch dungeon_magic
+arch brush
 x 21
 y 55
 end
@@ -8942,11 +9154,11 @@ arch brush
 x 22
 y 2
 end
-arch brush
+arch dungeon_magic
 x 22
 y 3
 end
-arch dungeon_magic
+arch brush
 x 22
 y 3
 end
@@ -8974,19 +9186,24 @@ name ornamental pine
 x 22
 y 7
 end
-arch cobblestones2
-x 22
-y 8
-end
-arch swall_1_3
-x 22
-y 8
-end
 arch dungeon_magic
 x 22
 y 8
 end
+arch cobblestones2
+x 22
+y 8
+end
+arch swall_2_1_2
+x 22
+y 8
+end
 arch woodfloor2
+x 22
+y 9
+end
+arch chair_2.1
+name sergeant's chair
 x 22
 y 9
 end
@@ -9031,7 +9248,9 @@ resist_holyword 85
 resist_blind 85
 path_attuned 16
 randomitems none
+will_apply 7
 see_invisible 1
+unaggressive 0
 sleep 1
 arch shadow
 name Fearless personal guard shadow
@@ -9041,6 +9260,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -9120,8 +9398,23 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 55
+randomitems none
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch woodfloor2
+x 22
+y 10
+end
+arch dresser
+name sergeant's desk
 x 22
 y 10
 end
@@ -9159,7 +9452,7 @@ x 22
 y 17
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9180,7 +9473,7 @@ x 22
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9299,7 +9592,7 @@ x 22
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9320,7 +9613,7 @@ x 22
 y 41
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -9351,7 +9644,17 @@ arch woodfloor2
 x 22
 y 48
 end
+arch desk
+name sergeant's desk
+x 22
+y 48
+end
 arch woodfloor2
+x 22
+y 49
+end
+arch chair_2.3
+name sergeant's chair
 x 22
 y 49
 end
@@ -9396,7 +9699,9 @@ resist_holyword 85
 resist_blind 85
 path_attuned 16
 randomitems none
+will_apply 7
 see_invisible 1
+unaggressive 0
 sleep 1
 arch shadow
 name Fearless personal guard shadow
@@ -9406,6 +9711,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -9485,6 +9849,16 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 55
+randomitems none
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch cobblestones2
 x 22
@@ -9518,11 +9892,11 @@ name moat
 x 22
 y 54
 end
-arch brush
+arch dungeon_magic
 x 22
 y 55
 end
-arch dungeon_magic
+arch brush
 x 22
 y 55
 end
@@ -9559,11 +9933,11 @@ arch brush
 x 23
 y 2
 end
-arch brush
+arch dungeon_magic
 x 23
 y 3
 end
-arch dungeon_magic
+arch brush
 x 23
 y 3
 end
@@ -9592,6 +9966,10 @@ x 23
 y 7
 end
 arch cobblestones2
+x 23
+y 8
+end
+arch swall_1_3_half
 x 23
 y 8
 end
@@ -9887,6 +10265,10 @@ arch cobblestones2
 x 23
 y 50
 end
+arch swall_1_4_half
+x 23
+y 50
+end
 arch cwall_2_2_4
 x 23
 y 50
@@ -9915,11 +10297,11 @@ name moat
 x 23
 y 54
 end
-arch brush
+arch dungeon_magic
 x 23
 y 55
 end
-arch dungeon_magic
+arch brush
 x 23
 y 55
 end
@@ -9956,11 +10338,11 @@ arch brush
 x 24
 y 2
 end
-arch brush
+arch dungeon_magic
 x 24
 y 3
 end
-arch dungeon_magic
+arch brush
 x 24
 y 3
 end
@@ -10000,7 +10382,17 @@ arch cobblestones2
 x 24
 y 9
 end
+arch awall_1_1
+name alarm system
+x 24
+y 9
+end
 arch cobblestones2
+x 24
+y 10
+end
+arch awall_2_1_1
+name alarm system
 x 24
 y 10
 end
@@ -10008,11 +10400,26 @@ arch cobblestones2
 x 24
 y 11
 end
+arch awall_2_1_1
+name alarm system
+x 24
+y 11
+end
 arch cobblestones2
 x 24
 y 12
 end
+arch awall_2_1_1
+name alarm system
+x 24
+y 12
+end
 arch cobblestones2
+x 24
+y 13
+end
+arch awall_2_2_1
+name alarm system
 x 24
 y 13
 end
@@ -10096,6 +10503,13 @@ arch cobblestones2
 x 24
 y 33
 end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 24
+y 34
+connected 12000
+end
 arch cobblestones2
 x 24
 y 34
@@ -10121,6 +10535,13 @@ end
 arch cobblestones2
 x 24
 y 37
+end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 24
+y 38
+connected 12000
 end
 arch cobblestones2
 x 24
@@ -10163,17 +10584,43 @@ arch cobblestones2
 x 24
 y 43
 end
+arch gate_open_1
+name security gate
+x 24
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 24
 y 44
+end
+arch gate_open_2
+x 24
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 24
 y 45
 end
+arch gate_open_2
+x 24
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 24
 y 46
+end
+arch gate_open_1
+name security gate
+x 24
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 24
@@ -10194,20 +10641,28 @@ arch cwall_2_1_2
 x 24
 y 48
 end
-arch cobblestones2
+arch magic_mouth
+name guards
+msg
+You hear the sounds of many guards in a guard room.
+endmsg
+food 1
 x 24
 y 49
 end
 arch cobblestones2
 x 24
-y 50
+y 49
 end
-arch swall_0
-face swall_AA.111
+arch dungeon_magic
 x 24
 y 50
 end
-arch dungeon_magic
+arch cobblestones2
+x 24
+y 50
+end
+arch swall_2_1_2
 x 24
 y 50
 end
@@ -10230,11 +10685,11 @@ name moat
 x 24
 y 54
 end
-arch brush
+arch dungeon_magic
 x 24
 y 55
 end
-arch dungeon_magic
+arch brush
 x 24
 y 55
 end
@@ -10271,11 +10726,11 @@ arch brush
 x 25
 y 2
 end
-arch brush
+arch dungeon_magic
 x 25
 y 3
 end
-arch dungeon_magic
+arch brush
 x 25
 y 3
 end
@@ -10307,10 +10762,6 @@ arch cobblestones2
 x 25
 y 8
 end
-arch cobblestones2
-x 25
-y 8
-end
 arch cwall_2_1_2
 x 25
 y 8
@@ -10319,7 +10770,17 @@ arch cobblestones2
 x 25
 y 9
 end
+arch awall_1_1
+name alarm system
+x 25
+y 9
+end
 arch cobblestones2
+x 25
+y 10
+end
+arch awall_2_1_1
+name alarm system
 x 25
 y 10
 end
@@ -10327,11 +10788,26 @@ arch cobblestones2
 x 25
 y 11
 end
+arch awall_2_1_1
+name alarm system
+x 25
+y 11
+end
 arch cobblestones2
 x 25
 y 12
 end
+arch awall_2_2_1
+name alarm system
+x 25
+y 12
+end
 arch cobblestones2
+x 25
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 25
 y 13
 end
@@ -10470,31 +10946,73 @@ arch cobblestones2
 x 25
 y 43
 end
+arch gate_open_1
+name security gate
+x 25
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 25
 y 44
 end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
+msg
+You feel a sense of relief when
+you leave this floor.
+endmsg
 hp 25
 sp 44
 x 25
 y 44
 end
+arch teleporter
+hp 28
+sp 44
+x 25
+y 44
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 25
 y 45
 end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
+msg
+You feel a sense of relief when
+you leave this floor.
+endmsg
 hp 25
 sp 45
 x 25
 y 45
 end
+arch teleporter
+hp 28
+sp 45
+x 25
+y 45
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 25
 y 46
+end
+arch gate_open_1
+name security gate
+x 25
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 25
@@ -10520,6 +11038,10 @@ x 25
 y 49
 end
 arch cobblestones2
+x 25
+y 50
+end
+arch swall_1_3_half
 x 25
 y 50
 end
@@ -10551,16 +11073,16 @@ name moat
 x 25
 y 54
 end
+arch dungeon_magic
+x 25
+y 55
+end
 arch brush
 x 25
 y 55
 end
 arch tree5
 name ornamental pine
-x 25
-y 55
-end
-arch dungeon_magic
 x 25
 y 55
 end
@@ -10597,11 +11119,11 @@ arch brush
 x 26
 y 2
 end
-arch brush
+arch dungeon_magic
 x 26
 y 3
 end
-arch dungeon_magic
+arch brush
 x 26
 y 3
 end
@@ -10633,10 +11155,6 @@ arch cobblestones2
 x 26
 y 8
 end
-arch cobblestones2
-x 26
-y 8
-end
 arch cwall_2_1_2
 x 26
 y 8
@@ -10645,19 +11163,120 @@ arch cobblestones2
 x 26
 y 9
 end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 26
+y 9
+connected 1987
+activate_on_release 0
+end
 arch cobblestones2
 x 26
 y 10
+end
+arch magic_mouth
+msg
+You hear a click and a.subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 26
+y 10
+connected 1990
+activate_on_release 0
 end
 arch cobblestones2
 x 26
 y 11
 end
+arch magic_mouth
+name alarm goes off!
+msg
+YOU SUDDENLY HEAR A LOUD ALARM AND THE SOUNDS OF ACTIVITY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY! RUN! GET AWAY!
+endmsg
+x 26
+y 11
+connected 12000
+activate_on_release 0
+end
+arch altar_trigger
+name trigger the nasty events
+food 1
+x 26
+y 11
+connected 12000
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1987
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1988
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1989
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1990
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1991
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1992
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1993
+activate_on_push 0
+end
+arch creator
+other_arch food
+x 26
+y 11
+connected 1994
+activate_on_push 0
+end
 arch cobblestones2
 x 26
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 26
+y 12
+end
 arch cobblestones2
+x 26
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 26
 y 13
 end
@@ -10838,17 +11457,43 @@ arch cobblestones2
 x 26
 y 43
 end
+arch gate_open_1
+name security gate
+x 26
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 26
 y 44
+end
+arch gate_open_2
+x 26
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 26
 y 45
 end
+arch gate_open_2
+x 26
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 26
 y 46
+end
+arch gate_open_1
+name security gate
+x 26
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 26
@@ -10902,16 +11547,16 @@ name moat
 x 26
 y 54
 end
+arch dungeon_magic
+x 26
+y 55
+end
 arch brush
 x 26
 y 55
 end
 arch tree5
 name ornamental pine
-x 26
-y 55
-end
-arch dungeon_magic
 x 26
 y 55
 end
@@ -10948,11 +11593,11 @@ arch brush
 x 27
 y 2
 end
-arch brush
+arch dungeon_magic
 x 27
 y 3
 end
-arch dungeon_magic
+arch brush
 x 27
 y 3
 end
@@ -10979,7 +11624,7 @@ arch cobblestones2
 x 27
 y 8
 end
-arch cwall_1_3
+arch cwall_2_1_2
 x 27
 y 8
 end
@@ -10987,19 +11632,56 @@ arch stonefloor2
 x 27
 y 9
 end
+arch magic_mouth
+msg
+You hear.a click and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 27
+y 9
+connected 1988
+activate_on_release 0
+end
 arch stonefloor2
 x 27
 y 10
+end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking.sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 27
+y 10
+connected 1991
+activate_on_release 0
 end
 arch stonefloor2
 x 27
 y 11
 end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a.timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 27
+y 11
+connected 1993
+activate_on_release 0
+end
 arch stonefloor2
 x 27
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 27
+y 12
+end
 arch stonefloor2
+x 27
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 27
 y 13
 end
@@ -11010,6 +11692,16 @@ end
 arch stonefloor2
 x 27
 y 15
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 27
+y 16
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch stonefloor2
 x 27
@@ -11113,6 +11805,13 @@ arch stonefloor2
 x 27
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 27
+y 35
+connected 12000
+end
 arch stonefloor2
 x 27
 y 35
@@ -11130,6 +11829,16 @@ arch stonefloor2
 x 27
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 27
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 27
 y 38
@@ -11141,6 +11850,13 @@ end
 arch stonefloor2
 x 27
 y 40
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 27
+y 41
+connected 12000
 end
 arch stonefloor2
 x 27
@@ -11157,6 +11873,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 27
 y 42
 end
@@ -11191,6 +11908,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 27
 y 47
 end
@@ -11215,10 +11933,13 @@ Run away! Run away!
 endmsg
 x 27
 y 49
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
+x 27
+y 50
+end
+arch swall_1_4_half
 x 27
 y 50
 end
@@ -11234,7 +11955,7 @@ arch bench_1_1
 name railing
 x 27
 y 51
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11249,7 +11970,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 52
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11264,7 +11985,7 @@ arch bench_2_1_1
 name railing
 x 27
 y 53
-no_pass 1
+move_block all
 end
 arch sea
 name moat
@@ -11279,7 +12000,11 @@ arch bench_2_1_1
 name railing
 x 27
 y 54
-no_pass 1
+move_block all
+end
+arch dungeon_magic
+x 27
+y 55
 end
 arch brush
 x 27
@@ -11293,11 +12018,7 @@ arch bench_1_2
 name railing
 x 27
 y 55
-no_pass 1
-end
-arch dungeon_magic
-x 27
-y 55
+move_block all
 end
 arch brush
 x 27
@@ -11332,11 +12053,11 @@ arch brush
 x 28
 y 2
 end
-arch brush
+arch dungeon_magic
 x 28
 y 3
 end
-arch dungeon_magic
+arch brush
 x 28
 y 3
 end
@@ -11363,11 +12084,7 @@ arch cobblestones2
 x 28
 y 8
 end
-arch swall_1_4
-x 28
-y 8
-end
-arch dungeon_magic
+arch cwall_2_1_2
 x 28
 y 8
 end
@@ -11375,19 +12092,56 @@ arch stonefloor2
 x 28
 y 9
 end
+arch magic_mouth
+msg
+You hear a click.and a subtle ticking sound as if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 28
+y 9
+connected 1989
+activate_on_release 0
+end
 arch stonefloor2
 x 28
 y 10
+end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as.if a timer has started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 28
+y 10
+connected 1992
+activate_on_release 0
 end
 arch stonefloor2
 x 28
 y 11
 end
+arch magic_mouth
+msg
+You hear a click and a subtle ticking sound as if a timer has.started. You get the feeling that staying here for very long might be a bad idea.
+endmsg
+x 28
+y 11
+connected 1994
+activate_on_release 0
+end
 arch stonefloor2
 x 28
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 28
+y 12
+end
 arch stonefloor2
+x 28
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 28
 y 13
 end
@@ -11494,6 +12248,13 @@ arch stonefloor2
 x 28
 y 27
 end
+arch gate_open_1
+name security gate
+x 28
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 28
 y 27
@@ -11501,6 +12262,12 @@ end
 arch stonefloor2
 x 28
 y 28
+end
+arch gate_open_2
+x 28
+y 28
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 28
@@ -11510,9 +12277,25 @@ arch stonefloor2
 x 28
 y 29
 end
+arch gate_open_2
+x 28
+y 29
+connected 12000
+activate_on_release 0
+end
+arch light2
+x 28
+y 29
+end
 arch stonefloor2
 x 28
 y 30
+end
+arch gate_open_2
+x 28
+y 30
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 28
@@ -11521,6 +12304,13 @@ end
 arch stonefloor2
 x 28
 y 31
+end
+arch gate_open_1
+name security gate
+x 28
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 28
@@ -11544,6 +12334,13 @@ end
 arch stonefloor2
 x 28
 y 34
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 28
+y 35
+connected 12000
 end
 arch stonefloor2
 x 28
@@ -11574,6 +12371,13 @@ arch stonefloor2
 x 28
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 28
+y 41
+connected 12000
+end
 arch stonefloor2
 x 28
 y 41
@@ -11599,6 +12403,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 28
 y 44
 end
@@ -11631,15 +12436,22 @@ arch stonefloor2
 x 28
 y 49
 end
+arch firepot
+x 28
+y 49
+glow_radius 4
+no_magic 1
+damned 1
+end
+arch dungeon_magic
+x 28
+y 50
+end
 arch cobblestones2
 x 28
 y 50
 end
-arch swall_1_4
-x 28
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 28
 y 50
 end
@@ -11651,7 +12463,7 @@ arch sea
 name moat
 x 28
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 28
@@ -11683,14 +12495,6 @@ arch cobblestones2
 x 28
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 56
-invisible 1
-end
 arch brush
 x 28
 y 56
@@ -11700,14 +12504,6 @@ name road
 x 28
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 57
-invisible 1
-end
 arch brush
 x 28
 y 57
@@ -11716,14 +12512,6 @@ arch earth
 name road
 x 28
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 28
-y 58
-invisible 1
 end
 arch brush
 x 28
@@ -11740,11 +12528,11 @@ arch brush
 x 29
 y 2
 end
-arch brush
+arch dungeon_magic
 x 29
 y 3
 end
-arch dungeon_magic
+arch brush
 x 29
 y 3
 end
@@ -11771,11 +12559,7 @@ arch cobblestones2
 x 29
 y 8
 end
-arch swall_2_1_2
-x 29
-y 8
-end
-arch dungeon_magic
+arch cwall_2_1_2
 x 29
 y 8
 end
@@ -11783,7 +12567,17 @@ arch stonefloor2
 x 29
 y 9
 end
+arch awall_1_1
+name alarm system
+x 29
+y 9
+end
 arch stonefloor2
+x 29
+y 10
+end
+arch awall_2_1_1
+name alarm system
 x 29
 y 10
 end
@@ -11791,7 +12585,17 @@ arch stonefloor2
 x 29
 y 11
 end
+arch awall_2_1_1
+name alarm system
+x 29
+y 11
+end
 arch stonefloor2
+x 29
+y 12
+end
+arch awall_3_1
+name alarm system
 x 29
 y 12
 end
@@ -11799,13 +12603,51 @@ arch stonefloor2
 x 29
 y 13
 end
-arch stonefloor2
+arch awall_2_1_2
+name alarm system
+x 29
+y 13
+end
+arch magic_mouth
+name Plaque
+msg
+You look at the Plaque and see written:
+Alarm system installed by Acme Inc.
+Come to Acme Inc. for all your
+building supplies.
+endmsg
 x 29
 y 14
 end
 arch stonefloor2
 x 29
+y 14
+end
+arch dwall_0
+name Plaque
+msg
+Alarm system installed by Acme Inc.
+Come to Acme Inc. for all your
+building supplies.
+endmsg
+face dwall_AA.111
+x 29
+y 14
+move_block 0
+end
+arch stonefloor2
+x 29
 y 15
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 29
+y 16
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch stonefloor2
 x 29
@@ -11879,6 +12721,13 @@ arch stonefloor2
 x 29
 y 27
 end
+arch gate_open_1
+name security gate
+x 29
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 29
 y 27
@@ -11890,6 +12739,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 28
 end
@@ -11904,6 +12754,16 @@ sp 28
 x 29
 y 28
 end
+arch teleporter
+hp 29
+sp 15
+x 29
+y 28
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch magic_mouth
 name chaos dragon warning
 msg
@@ -11911,6 +12771,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 29
 end
@@ -11925,9 +12786,15 @@ sp 29
 x 29
 y 29
 end
-arch light3
+arch teleporter
+hp 28
+sp 15
 x 29
 y 29
+speed 0.0
+level 200
+invisible 1
+connected 12000
 end
 arch magic_mouth
 name chaos dragon warning
@@ -11936,6 +12803,7 @@ You hear the peculiar roar of
 a large chaos dragon wafting
 down the stairs.
 endmsg
+food 1
 x 29
 y 30
 end
@@ -11950,9 +12818,26 @@ sp 30
 x 29
 y 30
 end
+arch teleporter
+hp 30
+sp 15
+x 29
+y 30
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch stonefloor2
 x 29
 y 31
+end
+arch gate_open_1
+name security gate
+x 29
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 29
@@ -11977,6 +12862,13 @@ arch stonefloor2
 x 29
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 29
+y 35
+connected 12000
+end
 arch stonefloor2
 x 29
 y 35
@@ -11994,6 +12886,16 @@ arch stonefloor2
 x 29
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 29
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 29
 y 38
@@ -12006,6 +12908,13 @@ arch stonefloor2
 x 29
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 29
+y 41
+connected 12000
+end
 arch stonefloor2
 x 29
 y 41
@@ -12014,14 +12923,6 @@ arch igate_closed_1
 x 29
 y 41
 connected 2
-end
-arch magic_mouth
-name open sesame
-msg
-You *SEE* no way to open these gates ...
-endmsg
-x 29
-y 42
 end
 arch stonefloor2
 name stonefloor
@@ -12057,6 +12958,13 @@ arch stonefloor2
 name stonefloor
 x 29
 y 48
+end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 29
+y 49
+connected 12000
 end
 arch stonefloor2
 x 29
@@ -12066,18 +12974,17 @@ arch button_lever
 name gate lever
 x 29
 y 49
-invisible 1
 connected 2
+end
+arch dungeon_magic
+x 29
+y 50
 end
 arch cobblestones2
 x 29
 y 50
 end
 arch swall_2_1_2
-x 29
-y 50
-end
-arch dungeon_magic
 x 29
 y 50
 end
@@ -12089,7 +12996,7 @@ arch sea
 name moat
 x 29
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 29
@@ -12121,14 +13028,6 @@ arch cobblestones2
 x 29
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 56
-invisible 1
-end
 arch brush
 x 29
 y 56
@@ -12138,14 +13037,6 @@ name road
 x 29
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 57
-invisible 1
-end
 arch brush
 x 29
 y 57
@@ -12154,14 +13045,6 @@ arch earth
 name road
 x 29
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 29
-y 58
-invisible 1
 end
 arch brush
 x 29
@@ -12178,11 +13061,11 @@ arch brush
 x 30
 y 2
 end
-arch brush
+arch dungeon_magic
 x 30
 y 3
 end
-arch dungeon_magic
+arch brush
 x 30
 y 3
 end
@@ -12209,11 +13092,7 @@ arch cobblestones2
 x 30
 y 8
 end
-arch swall_1_3
-x 30
-y 8
-end
-arch dungeon_magic
+arch cwall_2_1_2
 x 30
 y 8
 end
@@ -12221,19 +13100,53 @@ arch stonefloor2
 x 30
 y 9
 end
+arch altar_trigger
+name start timer
+exp 59900
+food 1
+x 30
+y 9
+connected 1994
+end
 arch stonefloor2
 x 30
 y 10
+end
+arch altar_trigger
+name start timer
+exp 90
+food 1
+x 30
+y 10
+connected 1987
 end
 arch stonefloor2
 x 30
 y 11
 end
+arch altar_trigger
+name start timer
+exp 900
+food 1
+x 30
+y 11
+connected 1988
+end
 arch stonefloor2
 x 30
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 30
+y 12
+end
 arch stonefloor2
+x 30
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 30
 y 13
 end
@@ -12300,6 +13213,13 @@ arch stonefloor2
 x 30
 y 27
 end
+arch gate_open_1
+name security gate
+x 30
+y 27
+connected 12000
+activate_on_release 0
+end
 arch light1
 x 30
 y 27
@@ -12307,6 +13227,12 @@ end
 arch stonefloor2
 x 30
 y 28
+end
+arch gate_open_2
+x 30
+y 28
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 30
@@ -12316,9 +13242,25 @@ arch stonefloor2
 x 30
 y 29
 end
+arch gate_open_2
+x 30
+y 29
+connected 12000
+activate_on_release 0
+end
+arch light2
+x 30
+y 29
+end
 arch stonefloor2
 x 30
 y 30
+end
+arch gate_open_2
+x 30
+y 30
+connected 12000
+activate_on_release 0
 end
 arch light2
 x 30
@@ -12327,6 +13269,13 @@ end
 arch stonefloor2
 x 30
 y 31
+end
+arch gate_open_1
+name security gate
+x 30
+y 31
+connected 12000
+activate_on_release 0
 end
 arch light1
 x 30
@@ -12350,6 +13299,13 @@ end
 arch stonefloor2
 x 30
 y 34
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 30
+y 35
+connected 12000
 end
 arch stonefloor2
 x 30
@@ -12379,6 +13335,13 @@ end
 arch stonefloor2
 x 30
 y 40
+end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 30
+y 41
+connected 12000
 end
 arch stonefloor2
 x 30
@@ -12428,15 +13391,22 @@ arch stonefloor2
 x 30
 y 49
 end
+arch firepot
+x 30
+y 49
+glow_radius 4
+no_magic 1
+damned 1
+end
+arch dungeon_magic
+x 30
+y 50
+end
 arch cobblestones2
 x 30
 y 50
 end
-arch swall_1_3
-x 30
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 30
 y 50
 end
@@ -12448,7 +13418,7 @@ arch sea
 name moat
 x 30
 y 52
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 30
@@ -12480,14 +13450,6 @@ arch cobblestones2
 x 30
 y 55
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 56
-invisible 1
-end
 arch brush
 x 30
 y 56
@@ -12497,14 +13459,6 @@ name road
 x 30
 y 56
 end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 57
-invisible 1
-end
 arch brush
 x 30
 y 57
@@ -12513,14 +13467,6 @@ arch earth
 name road
 x 30
 y 57
-end
-arch exit
-slaying /brest/brest.scrolls.right
-hp 6
-sp 4
-x 30
-y 58
-invisible 1
 end
 arch brush
 x 30
@@ -12537,11 +13483,11 @@ arch brush
 x 31
 y 2
 end
-arch brush
+arch dungeon_magic
 x 31
 y 3
 end
-arch dungeon_magic
+arch brush
 x 31
 y 3
 end
@@ -12568,7 +13514,7 @@ arch cobblestones2
 x 31
 y 8
 end
-arch cwall_1_4
+arch cwall_2_1_2
 x 31
 y 8
 end
@@ -12576,7 +13522,29 @@ arch stonefloor2
 x 31
 y 9
 end
+arch altar_trigger
+name start timer
+exp 49900
+food 1
+x 31
+y 9
+connected 1993
+end
 arch stonefloor2
+x 31
+y 10
+end
+arch spikes_moving
+name alarm system randomizer
+msg
+There are 8 chances here. From near two hours
+down to the alarm goes off immediately. This
+should make things *really* fun. :)
+endmsg
+x 31
+y 10
+end
+arch food
 x 31
 y 10
 end
@@ -12584,11 +13552,29 @@ arch stonefloor2
 x 31
 y 11
 end
+arch altar_trigger
+name start timer
+exp 9900
+food 1
+x 31
+y 11
+connected 1989
+end
 arch stonefloor2
 x 31
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 31
+y 12
+end
 arch stonefloor2
+x 31
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 31
 y 13
 end
@@ -12599,6 +13585,16 @@ end
 arch stonefloor2
 x 31
 y 15
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 31
+y 16
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch stonefloor2
 x 31
@@ -12702,6 +13698,13 @@ arch stonefloor2
 x 31
 y 34
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 31
+y 35
+connected 12000
+end
 arch stonefloor2
 x 31
 y 35
@@ -12719,6 +13722,16 @@ arch stonefloor2
 x 31
 y 37
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 31
+y 38
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 31
 y 38
@@ -12731,6 +13744,13 @@ arch stonefloor2
 x 31
 y 40
 end
+arch duplicator
+name alarm gate remover
+other_arch igate_closed_1
+x 31
+y 41
+connected 12000
+end
 arch stonefloor2
 x 31
 y 41
@@ -12739,6 +13759,16 @@ arch igate_closed_1
 x 31
 y 41
 connected 2
+end
+arch magic_mouth
+name twitter
+msg
+You hear the twitter of canaries ...
+LARGE canaries ...
+endmsg
+food 1
+x 31
+y 42
 end
 arch stonefloor2
 name stonefloor
@@ -12751,6 +13781,7 @@ msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 31
 y 43
 end
@@ -12795,10 +13826,13 @@ Run away! Run away!
 endmsg
 x 31
 y 49
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch cobblestones2
+x 31
+y 50
+end
+arch swall_1_3_half
 x 31
 y 50
 end
@@ -12814,7 +13848,7 @@ arch bench_1_1
 name railing
 x 31
 y 51
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -12829,7 +13863,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 52
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -12844,7 +13878,7 @@ arch bench_2_1_1
 name railing
 x 31
 y 53
-no_pass 1
+move_block 1
 end
 arch sea
 name moat
@@ -12859,7 +13893,11 @@ arch bench_2_1_1
 name railing
 x 31
 y 54
-no_pass 1
+move_block 1
+end
+arch dungeon_magic
+x 31
+y 55
 end
 arch brush
 x 31
@@ -12873,11 +13911,7 @@ arch bench_1_2
 name railing
 x 31
 y 55
-no_pass 1
-end
-arch dungeon_magic
-x 31
-y 55
+move_block 1
 end
 arch brush
 x 31
@@ -12912,11 +13946,11 @@ arch brush
 x 32
 y 2
 end
-arch brush
+arch dungeon_magic
 x 32
 y 3
 end
-arch dungeon_magic
+arch brush
 x 32
 y 3
 end
@@ -12948,10 +13982,6 @@ arch cobblestones2
 x 32
 y 8
 end
-arch cobblestones2
-x 32
-y 8
-end
 arch cwall_2_1_2
 x 32
 y 8
@@ -12960,19 +13990,53 @@ arch cobblestones2
 x 32
 y 9
 end
+arch altar_trigger
+name start timer
+exp 39900
+food 1
+x 32
+y 9
+connected 1992
+end
 arch cobblestones2
 x 32
 y 10
+end
+arch altar_trigger
+name start timer
+exp 29900
+food 1
+x 32
+y 10
+connected 1991
 end
 arch cobblestones2
 x 32
 y 11
 end
+arch altar_trigger
+name start timer
+exp 19900
+food 1
+x 32
+y 11
+connected 1990
+end
 arch cobblestones2
 x 32
 y 12
 end
+arch awall_2_1_2
+name alarm system
+x 32
+y 12
+end
 arch cobblestones2
+x 32
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 32
 y 13
 end
@@ -13153,26 +14217,53 @@ arch cobblestones2
 x 32
 y 43
 end
+arch gate_open_1
+name security gate
+x 32
+y 43
+connected 12000
+activate_on_release 0
+end
 arch magic_mouth
 name twitter
 msg
 You hear the twitter of canaries ...
 LARGE canaries ...
 endmsg
+food 1
 x 32
 y 44
 end
 arch cobblestones2
 x 32
 y 44
+end
+arch gate_open_2
+x 32
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 32
 y 45
 end
+arch gate_open_2
+x 32
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 32
 y 46
+end
+arch gate_open_1
+name security gate
+x 32
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 32
@@ -13205,6 +14296,20 @@ end
 arch brush
 x 32
 y 51
+end
+arch bulletwall
+name earth wall remover
+sp 1
+x 32
+y 51
+speed 0.0
+level 300
+invisible 1
+connected 12000
+move_block 0
+blocksview 0
+arch spell_earth_to_dust
+end
 end
 arch tree5
 name ornamental pine
@@ -13226,16 +14331,16 @@ name moat
 x 32
 y 54
 end
+arch dungeon_magic
+x 32
+y 55
+end
 arch brush
 x 32
 y 55
 end
 arch tree5
 name ornamental pine
-x 32
-y 55
-end
-arch dungeon_magic
 x 32
 y 55
 end
@@ -13272,11 +14377,11 @@ arch brush
 x 33
 y 2
 end
-arch brush
+arch dungeon_magic
 x 33
 y 3
 end
-arch dungeon_magic
+arch brush
 x 33
 y 3
 end
@@ -13316,7 +14421,17 @@ arch cobblestones2
 x 33
 y 9
 end
+arch awall_1_1
+name alarm system
+x 33
+y 9
+end
 arch cobblestones2
+x 33
+y 10
+end
+arch awall_2_1_1
+name alarm system
 x 33
 y 10
 end
@@ -13324,11 +14439,26 @@ arch cobblestones2
 x 33
 y 11
 end
+arch awall_2_1_1
+name alarm system
+x 33
+y 11
+end
 arch cobblestones2
 x 33
 y 12
 end
+arch awall_2_2_4
+name alarm system
+x 33
+y 12
+end
 arch cobblestones2
+x 33
+y 13
+end
+arch awall_2_1_2
+name alarm system
 x 33
 y 13
 end
@@ -13467,31 +14597,73 @@ arch cobblestones2
 x 33
 y 43
 end
+arch gate_open_1
+name security gate
+x 33
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 33
 y 44
 end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
+msg
+You feel a sense of relief when
+you leave this floor.
+endmsg
 hp 33
 sp 44
 x 33
 y 44
 end
+arch teleporter
+hp 30
+sp 44
+x 33
+y 44
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 33
 y 45
 end
 arch stair3_gstone_do
 slaying castle.upper.floor.one
+msg
+You feel a sense of relief when
+you leave this floor.
+endmsg
 hp 33
 sp 45
 x 33
 y 45
 end
+arch teleporter
+hp 30
+sp 45
+x 33
+y 45
+speed 0.0
+level 200
+invisible 1
+connected 12000
+end
 arch cobblestones2
 x 33
 y 46
+end
+arch gate_open_1
+name security gate
+x 33
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 33
@@ -13517,6 +14689,10 @@ x 33
 y 49
 end
 arch cobblestones2
+x 33
+y 50
+end
+arch swall_1_4_half
 x 33
 y 50
 end
@@ -13548,16 +14724,16 @@ name moat
 x 33
 y 54
 end
+arch dungeon_magic
+x 33
+y 55
+end
 arch brush
 x 33
 y 55
 end
 arch tree5
 name ornamental pine
-x 33
-y 55
-end
-arch dungeon_magic
 x 33
 y 55
 end
@@ -13594,11 +14770,11 @@ arch brush
 x 34
 y 2
 end
-arch brush
+arch dungeon_magic
 x 34
 y 3
 end
-arch dungeon_magic
+arch brush
 x 34
 y 3
 end
@@ -13638,7 +14814,17 @@ arch cobblestones2
 x 34
 y 9
 end
+arch awall_1_1
+name alarm system
+x 34
+y 9
+end
 arch cobblestones2
+x 34
+y 10
+end
+arch awall_2_1_1
+name alarm system
 x 34
 y 10
 end
@@ -13646,11 +14832,26 @@ arch cobblestones2
 x 34
 y 11
 end
+arch awall_2_1_1
+name alarm system
+x 34
+y 11
+end
 arch cobblestones2
 x 34
 y 12
 end
+arch awall_2_1_1
+name alarm system
+x 34
+y 12
+end
 arch cobblestones2
+x 34
+y 13
+end
+arch awall_2_2_4
+name alarm system
 x 34
 y 13
 end
@@ -13734,6 +14935,13 @@ arch cobblestones2
 x 34
 y 33
 end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 34
+y 34
+connected 12000
+end
 arch cobblestones2
 x 34
 y 34
@@ -13759,6 +14967,13 @@ end
 arch cobblestones2
 x 34
 y 37
+end
+arch duplicator
+name alarm lever remover
+other_arch button_lever
+x 34
+y 38
+connected 12000
 end
 arch cobblestones2
 x 34
@@ -13801,17 +15016,43 @@ arch cobblestones2
 x 34
 y 43
 end
+arch gate_open_1
+name security gate
+x 34
+y 43
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 34
 y 44
+end
+arch gate_open_2
+x 34
+y 44
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 34
 y 45
 end
+arch gate_open_2
+x 34
+y 45
+connected 12000
+activate_on_release 0
+end
 arch cobblestones2
 x 34
 y 46
+end
+arch gate_open_1
+name security gate
+x 34
+y 46
+connected 12000
+activate_on_release 0
 end
 arch cobblestones2
 x 34
@@ -13832,20 +15073,28 @@ arch cwall_2_1_2
 x 34
 y 48
 end
-arch cobblestones2
+arch magic_mouth
+name guards
+msg
+You hear the sounds of many guards in a guard room.
+endmsg
+food 1
 x 34
 y 49
 end
 arch cobblestones2
 x 34
-y 50
+y 49
 end
-arch swall_0
-face swall_AA.111
+arch dungeon_magic
 x 34
 y 50
 end
-arch dungeon_magic
+arch cobblestones2
+x 34
+y 50
+end
+arch swall_2_1_2
 x 34
 y 50
 end
@@ -13868,11 +15117,11 @@ name moat
 x 34
 y 54
 end
-arch brush
+arch dungeon_magic
 x 34
 y 55
 end
-arch dungeon_magic
+arch brush
 x 34
 y 55
 end
@@ -13909,11 +15158,11 @@ arch brush
 x 35
 y 2
 end
-arch brush
+arch dungeon_magic
 x 35
 y 3
 end
-arch dungeon_magic
+arch brush
 x 35
 y 3
 end
@@ -13942,6 +15191,10 @@ x 35
 y 7
 end
 arch cobblestones2
+x 35
+y 8
+end
+arch swall_1_4_half
 x 35
 y 8
 end
@@ -14237,6 +15490,10 @@ arch cobblestones2
 x 35
 y 50
 end
+arch swall_1_3_half
+x 35
+y 50
+end
 arch cwall_2_2_1
 x 35
 y 50
@@ -14265,11 +15522,11 @@ name moat
 x 35
 y 54
 end
-arch brush
+arch dungeon_magic
 x 35
 y 55
 end
-arch dungeon_magic
+arch brush
 x 35
 y 55
 end
@@ -14306,11 +15563,11 @@ arch brush
 x 36
 y 2
 end
-arch brush
+arch dungeon_magic
 x 36
 y 3
 end
-arch dungeon_magic
+arch brush
 x 36
 y 3
 end
@@ -14338,19 +15595,24 @@ name ornamental pine
 x 36
 y 7
 end
-arch cobblestones2
-x 36
-y 8
-end
-arch swall_1_4
-x 36
-y 8
-end
 arch dungeon_magic
 x 36
 y 8
 end
+arch cobblestones2
+x 36
+y 8
+end
+arch swall_2_1_2
+x 36
+y 8
+end
 arch woodfloor2
+x 36
+y 9
+end
+arch chair_2.1
+name sergeant's chair
 x 36
 y 9
 end
@@ -14395,7 +15657,9 @@ resist_holyword 85
 resist_blind 85
 path_attuned 16
 randomitems none
+will_apply 7
 see_invisible 1
+unaggressive 0
 sleep 1
 arch shadow
 name Fearless personal guard shadow
@@ -14405,6 +15669,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -14484,8 +15807,23 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 55
+randomitems none
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch woodfloor2
+x 36
+y 10
+end
+arch dresser
+name sergeant's desk
 x 36
 y 10
 end
@@ -14523,7 +15861,7 @@ x 36
 y 17
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -14544,7 +15882,7 @@ x 36
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -14745,7 +16083,7 @@ x 36
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -14766,7 +16104,7 @@ x 36
 y 41
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -14797,7 +16135,17 @@ arch woodfloor2
 x 36
 y 48
 end
+arch desk
+name sergeant's desk
+x 36
+y 48
+end
 arch woodfloor2
+x 36
+y 49
+end
+arch chair_2.3
+name sergeant's chair
 x 36
 y 49
 end
@@ -14842,7 +16190,9 @@ resist_holyword 85
 resist_blind 85
 path_attuned 16
 randomitems none
+will_apply 7
 see_invisible 1
+unaggressive 0
 sleep 1
 arch shadow
 name Fearless personal guard shadow
@@ -14852,6 +16202,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -14931,6 +16340,16 @@ This key is to the tower door.
 Guard it with yout life.
 endmsg
 end
+arch rod_heavy
+hp 1000
+maxhp 1000
+level 55
+randomitems none
+applied 1
+startequip 1
+arch spell_banishment
+end
+end
 end
 arch cobblestones2
 x 36
@@ -14964,11 +16383,11 @@ name moat
 x 36
 y 54
 end
-arch brush
+arch dungeon_magic
 x 36
 y 55
 end
-arch dungeon_magic
+arch brush
 x 36
 y 55
 end
@@ -15005,11 +16424,11 @@ arch brush
 x 37
 y 2
 end
-arch brush
+arch dungeon_magic
 x 37
 y 3
 end
-arch dungeon_magic
+arch brush
 x 37
 y 3
 end
@@ -15032,15 +16451,15 @@ arch brush
 x 37
 y 7
 end
+arch dungeon_magic
+x 37
+y 8
+end
 arch cobblestones2
 x 37
 y 8
 end
 arch swall_2_1_2
-x 37
-y 8
-end
-arch dungeon_magic
 x 37
 y 8
 end
@@ -15052,136 +16471,6 @@ arch woodfloor
 x 37
 y 10
 end
-arch bed_1
-name guard generator
-x 37
-y 10
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 37
 y 11
@@ -15190,6 +16479,13 @@ arch woodfloor
 x 37
 y 12
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 37
+y 13
+connected 12000
+end
 arch woodfloor
 x 37
 y 13
@@ -15198,7 +16494,7 @@ arch bed_1
 name guard generator
 x 37
 y 13
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -15207,6 +16503,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -15252,6 +16549,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -15508,6 +16864,13 @@ arch woodfloor
 x 37
 y 44
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 37
+y 45
+connected 12000
+end
 arch woodfloor
 x 37
 y 45
@@ -15516,7 +16879,7 @@ arch bed_1
 name guard generator
 x 37
 y 45
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -15525,6 +16888,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -15570,6 +16934,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -15654,141 +17077,15 @@ arch woodfloor
 x 37
 y 48
 end
-arch bed_1
-name guard generator
-x 37
-y 48
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor
 x 37
 y 49
 end
 arch cobblestones2
+x 37
+y 50
+end
+arch swall_1_4_half
 x 37
 y 50
 end
@@ -15815,11 +17112,11 @@ name moat
 x 37
 y 54
 end
-arch brush
+arch dungeon_magic
 x 37
 y 55
 end
-arch dungeon_magic
+arch brush
 x 37
 y 55
 end
@@ -15856,11 +17153,11 @@ arch brush
 x 38
 y 2
 end
-arch brush
+arch dungeon_magic
 x 38
 y 3
 end
-arch dungeon_magic
+arch brush
 x 38
 y 3
 end
@@ -15883,15 +17180,15 @@ arch brush
 x 38
 y 7
 end
+arch dungeon_magic
+x 38
+y 8
+end
 arch cobblestones2
 x 38
 y 8
 end
 arch swall_2_1_2
-x 38
-y 8
-end
-arch dungeon_magic
 x 38
 y 8
 end
@@ -15958,6 +17255,13 @@ end
 arch woodfloor
 x 38
 y 21
+end
+arch gate_open_1
+name security gate
+x 38
+y 21
+connected 12000
+activate_on_release 0
 end
 arch woodfloor2
 x 38
@@ -16031,6 +17335,13 @@ arch woodfloor
 x 38
 y 37
 end
+arch gate_open_1
+name security gate
+x 38
+y 37
+connected 12000
+activate_on_release 0
+end
 arch woodfloor2
 x 38
 y 38
@@ -16091,16 +17402,15 @@ arch woodfloor2
 x 38
 y 49
 end
+arch dungeon_magic
+x 38
+y 50
+end
 arch cobblestones2
 x 38
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 38
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 38
 y 50
 end
@@ -16123,11 +17433,11 @@ name moat
 x 38
 y 54
 end
-arch brush
+arch dungeon_magic
 x 38
 y 55
 end
-arch dungeon_magic
+arch brush
 x 38
 y 55
 end
@@ -16164,11 +17474,11 @@ arch brush
 x 39
 y 2
 end
-arch brush
+arch dungeon_magic
 x 39
 y 3
 end
-arch dungeon_magic
+arch brush
 x 39
 y 3
 end
@@ -16191,15 +17501,15 @@ arch brush
 x 39
 y 7
 end
+arch dungeon_magic
+x 39
+y 8
+end
 arch cobblestones2
 x 39
 y 8
 end
-arch swall_1_3
-x 39
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 39
 y 8
 end
@@ -16225,7 +17535,7 @@ x 39
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16276,6 +17586,13 @@ arch woodfloor
 x 39
 y 21
 end
+arch gate_open_1
+name security gate
+x 39
+y 21
+connected 12000
+activate_on_release 0
+end
 arch woodfloor2
 x 39
 y 22
@@ -16286,7 +17603,7 @@ x 39
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -16359,12 +17676,19 @@ x 39
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
 x 39
 y 37
+end
+arch gate_open_1
+name security gate
+x 39
+y 37
+connected 12000
+activate_on_release 0
 end
 arch woodfloor2
 x 39
@@ -16420,7 +17744,7 @@ x 39
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -16436,6 +17760,10 @@ x 39
 y 49
 end
 arch cobblestones2
+x 39
+y 50
+end
+arch swall_1_3_half
 x 39
 y 50
 end
@@ -16462,11 +17790,11 @@ name moat
 x 39
 y 54
 end
-arch brush
+arch dungeon_magic
 x 39
 y 55
 end
-arch dungeon_magic
+arch brush
 x 39
 y 55
 end
@@ -16503,11 +17831,11 @@ arch brush
 x 40
 y 2
 end
-arch brush
+arch dungeon_magic
 x 40
 y 3
 end
-arch dungeon_magic
+arch brush
 x 40
 y 3
 end
@@ -16539,6 +17867,10 @@ arch cobblestones2
 x 40
 y 8
 end
+arch swall_1_3_half
+x 40
+y 8
+end
 arch cwall_1_4
 x 40
 y 8
@@ -16546,6 +17878,13 @@ end
 arch woodfloor2
 x 40
 y 9
+end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 40
+y 10
+connected 12000
 end
 arch woodfloor2
 x 40
@@ -16555,7 +17894,7 @@ arch bed_1
 name guard generator
 x 40
 y 10
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -16564,6 +17903,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -16609,6 +17949,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -16720,6 +18119,16 @@ end
 arch woodfloor2
 x 40
 y 17
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 40
+y 18
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 40
@@ -16833,6 +18242,16 @@ arch woodfloor
 x 40
 y 39
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 40
+y 40
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 40
 y 40
@@ -16877,6 +18296,13 @@ arch woodfloor2
 x 40
 y 47
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 40
+y 48
+connected 12000
+end
 arch woodfloor2
 x 40
 y 48
@@ -16885,7 +18311,7 @@ arch bed_1
 name guard generator
 x 40
 y 48
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -16894,6 +18320,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -16939,6 +18366,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -17047,11 +18533,11 @@ name moat
 x 40
 y 54
 end
-arch brush
+arch dungeon_magic
 x 40
 y 55
 end
-arch dungeon_magic
+arch brush
 x 40
 y 55
 end
@@ -17088,11 +18574,11 @@ arch brush
 x 41
 y 2
 end
-arch brush
+arch dungeon_magic
 x 41
 y 3
 end
-arch dungeon_magic
+arch brush
 x 41
 y 3
 end
@@ -17121,6 +18607,10 @@ x 41
 y 7
 end
 arch cobblestones2
+x 41
+y 8
+end
+arch swall_1_4_half
 x 41
 y 8
 end
@@ -17214,7 +18704,7 @@ x 41
 y 22
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -17287,7 +18777,7 @@ x 41
 y 36
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -17398,11 +18888,11 @@ name moat
 x 41
 y 54
 end
-arch brush
+arch dungeon_magic
 x 41
 y 55
 end
-arch dungeon_magic
+arch brush
 x 41
 y 55
 end
@@ -17439,11 +18929,11 @@ arch brush
 x 42
 y 2
 end
-arch brush
+arch dungeon_magic
 x 42
 y 3
 end
-arch dungeon_magic
+arch brush
 x 42
 y 3
 end
@@ -17466,15 +18956,15 @@ arch brush
 x 42
 y 7
 end
+arch dungeon_magic
+x 42
+y 8
+end
 arch cobblestones2
 x 42
 y 8
 end
-arch swall_1_4
-x 42
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 42
 y 8
 end
@@ -17517,6 +19007,16 @@ end
 arch woodfloor2
 x 42
 y 15
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 42
+y 16
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 42
@@ -17654,6 +19154,16 @@ arch woodfloor
 x 42
 y 41
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 42
+y 42
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 42
 y 42
@@ -17702,6 +19212,10 @@ arch cobblestones2
 x 42
 y 50
 end
+arch swall_1_4_half
+x 42
+y 50
+end
 arch cwall_1_3
 x 42
 y 50
@@ -17725,11 +19239,11 @@ name moat
 x 42
 y 54
 end
-arch brush
+arch dungeon_magic
 x 42
 y 55
 end
-arch dungeon_magic
+arch brush
 x 42
 y 55
 end
@@ -17766,11 +19280,11 @@ arch brush
 x 43
 y 2
 end
-arch brush
+arch dungeon_magic
 x 43
 y 3
 end
-arch dungeon_magic
+arch brush
 x 43
 y 3
 end
@@ -17792,6 +19306,10 @@ end
 arch brush
 x 43
 y 7
+end
+arch dungeon_magic
+x 43
+y 8
 end
 arch cobblestones2
 x 43
@@ -17801,10 +19319,6 @@ arch swall_2_1_2
 x 43
 y 8
 end
-arch dungeon_magic
-x 43
-y 8
-end
 arch woodfloor
 x 43
 y 9
@@ -18037,16 +19551,15 @@ arch woodfloor
 x 43
 y 49
 end
+arch dungeon_magic
+x 43
+y 50
+end
 arch cobblestones2
 x 43
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 43
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 43
 y 50
 end
@@ -18069,11 +19582,11 @@ name moat
 x 43
 y 54
 end
-arch brush
+arch dungeon_magic
 x 43
 y 55
 end
-arch dungeon_magic
+arch brush
 x 43
 y 55
 end
@@ -18110,11 +19623,11 @@ arch brush
 x 44
 y 2
 end
-arch brush
+arch dungeon_magic
 x 44
 y 3
 end
-arch dungeon_magic
+arch brush
 x 44
 y 3
 end
@@ -18137,15 +19650,15 @@ arch brush
 x 44
 y 7
 end
+arch dungeon_magic
+x 44
+y 8
+end
 arch cobblestones2
 x 44
 y 8
 end
-arch swall_1_3
-x 44
-y 8
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 44
 y 8
 end
@@ -18159,7 +19672,7 @@ x 44
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -18189,6 +19702,16 @@ end
 arch woodfloor2
 x 44
 y 13
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 44
+y 14
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch woodfloor2
 x 44
@@ -18342,6 +19865,16 @@ arch woodfloor
 x 44
 y 43
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 44
+y 44
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch woodfloor2
 x 44
 y 44
@@ -18384,10 +19917,14 @@ x 44
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
+x 44
+y 50
+end
+arch swall_1_3_half
 x 44
 y 50
 end
@@ -18414,11 +19951,11 @@ name moat
 x 44
 y 54
 end
-arch brush
+arch dungeon_magic
 x 44
 y 55
 end
-arch dungeon_magic
+arch brush
 x 44
 y 55
 end
@@ -18455,11 +19992,11 @@ arch brush
 x 45
 y 2
 end
-arch brush
+arch dungeon_magic
 x 45
 y 3
 end
-arch dungeon_magic
+arch brush
 x 45
 y 3
 end
@@ -18488,6 +20025,10 @@ x 45
 y 7
 end
 arch cobblestones2
+x 45
+y 8
+end
+arch swall_1_3_half
 x 45
 y 8
 end
@@ -18563,6 +20104,13 @@ arch woodfloor2
 x 45
 y 20
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 45
+y 21
+connected 12000
+end
 arch woodfloor
 x 45
 y 21
@@ -18571,7 +20119,7 @@ arch bed_1
 name guard generator
 x 45
 y 21
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -18580,6 +20128,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -18625,6 +20174,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -18765,6 +20373,13 @@ arch woodfloor2
 x 45
 y 36
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 45
+y 37
+connected 12000
+end
 arch woodfloor
 x 45
 y 37
@@ -18773,7 +20388,7 @@ arch bed_1
 name guard generator
 x 45
 y 37
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -18782,6 +20397,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -18827,6 +20443,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -18999,11 +20674,11 @@ name moat
 x 45
 y 54
 end
-arch brush
+arch dungeon_magic
 x 45
 y 55
 end
-arch dungeon_magic
+arch brush
 x 45
 y 55
 end
@@ -19040,11 +20715,11 @@ arch brush
 x 46
 y 2
 end
-arch brush
+arch dungeon_magic
 x 46
 y 3
 end
-arch dungeon_magic
+arch brush
 x 46
 y 3
 end
@@ -19090,7 +20765,7 @@ x 46
 y 9
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19151,7 +20826,7 @@ x 46
 y 19
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19248,7 +20923,7 @@ x 46
 y 39
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor2
@@ -19309,7 +20984,7 @@ x 46
 y 49
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch cobblestones2
@@ -19344,11 +21019,11 @@ name moat
 x 46
 y 54
 end
-arch brush
+arch dungeon_magic
 x 46
 y 55
 end
-arch dungeon_magic
+arch brush
 x 46
 y 55
 end
@@ -19385,11 +21060,11 @@ arch brush
 x 47
 y 2
 end
-arch brush
+arch dungeon_magic
 x 47
 y 3
 end
-arch dungeon_magic
+arch brush
 x 47
 y 3
 end
@@ -19634,6 +21309,10 @@ x 47
 y 49
 end
 arch cobblestones2
+x 47
+y 50
+end
+arch swall_1_4_half
 x 47
 y 50
 end
@@ -19660,11 +21339,11 @@ name moat
 x 47
 y 54
 end
-arch brush
+arch dungeon_magic
 x 47
 y 55
 end
-arch dungeon_magic
+arch brush
 x 47
 y 55
 end
@@ -19701,11 +21380,11 @@ arch brush
 x 48
 y 2
 end
-arch brush
+arch dungeon_magic
 x 48
 y 3
 end
-arch dungeon_magic
+arch brush
 x 48
 y 3
 end
@@ -19793,6 +21472,13 @@ arch woodfloor
 x 48
 y 17
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 48
+y 18
+connected 12000
+end
 arch woodfloor2
 x 48
 y 18
@@ -19801,7 +21487,7 @@ arch bed_1
 name guard generator
 x 48
 y 18
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -19810,6 +21496,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -19855,6 +21542,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -19939,136 +21685,6 @@ arch woodfloor
 x 48
 y 21
 end
-arch bed_1
-name guard generator
-x 48
-y 21
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 48
 y 22
@@ -20093,6 +21709,16 @@ arch cobblestones2
 x 48
 y 26
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 27
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 48
 y 27
@@ -20101,6 +21727,16 @@ arch stonefloor2
 x 48
 y 28
 end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 29
+connected 12000
+lifesave 1
+activate_on_release 0
+end
 arch stonefloor2
 x 48
 y 29
@@ -20108,6 +21744,16 @@ end
 arch stonefloor2
 x 48
 y 30
+end
+arch creator
+name random encounter 1
+slaying Zorn Security Guard
+other_arch deathshead
+x 48
+y 31
+connected 12000
+lifesave 1
+activate_on_release 0
 end
 arch stonefloor2
 x 48
@@ -20141,136 +21787,6 @@ arch woodfloor
 x 48
 y 37
 end
-arch bed_1
-name guard generator
-x 48
-y 37
-speed -0.05
-type 0
-alive 1
-no_pick 1
-generator 1
-use_content_on_gen 1
-arch man2
-name Fearless personal guard
-Con 25
-Pow 25
-hp 1800
-maxhp 1800
-sp 1000
-maxsp 1000
-exp 250000
-dam 25
-wc -50
-ac -50
-speed 0.75
-level 120
-attacktype 1
-resist_physical 85
-resist_magic 85
-resist_fire 85
-resist_electricity 85
-resist_cold 85
-resist_confusion 85
-resist_acid 85
-resist_drain 85
-resist_weaponmagic 85
-resist_ghosthit 85
-resist_poison 85
-resist_slow 85
-resist_paralyze 85
-resist_turn_undead 85
-resist_fear 100
-resist_deplete 85
-resist_death 85
-resist_chaos 85
-resist_godpower 45
-resist_holyword 85
-resist_blind 85
-path_attuned 16
-randomitems none
-see_invisible 1
-sleep 1
-arch shadow
-name Fearless personal guard shadow
-sp 100
-maxsp 100
-path_attuned 4
-can_use_bow 1
-can_use_armour 1
-can_use_weapon 1
-end
-arch skill_two_handed_weapon
-can_use_skill 1
-end
-arch skill_one_handed_weapon
-can_use_skill 1
-end
-arch skill_missile_weapon
-can_use_skill 1
-end
-arch skill_use_magic_item
-can_use_skill 1
-end
-arch skill_throwing
-can_use_skill 1
-end
-arch crossbow
-name Custom crossbow
-name_pl Custom crossbows
-msg
-This custom crossbow was specially commissioned
-for Fearless personal guards in the Zorn Castle.
-endmsg
-Dex 5
-sp 50
-dam 15
-wc 0
-value 7500
-item_power 5
-applied 1
-end
-arch bolt
-name weaponmagic bolt
-name_pl weaponmagic bolts
-msg
-These custom made bolts do weaponmagic
-damage to one's opponent.
-endmsg
-food 1
-dam 10
-wc 0
-nrof 500
-attacktype 257
-value 20
-end
-arch helmet
-applied 1
-end
-arch ring_mail2
-applied 1
-end
-arch low_boots
-applied 1
-end
-arch katana_1
-name Custom katana
-name_pl Custom katanas
-msg
-The Custom katana was commissioned for Zorn
-Fearless personal guards in the Zorn castle.
-endmsg
-Str 2
-Dex 2
-dam 10
-attacktype 257
-material 0
-value 300
-last_sp 3
-applied 1
-end
-end
-end
 arch woodfloor2
 x 48
 y 38
@@ -20279,6 +21795,13 @@ arch woodfloor
 x 48
 y 39
 end
+arch duplicator
+name alarm bed remover
+other_arch bed_1
+x 48
+y 40
+connected 12000
+end
 arch woodfloor2
 x 48
 y 40
@@ -20287,7 +21810,7 @@ arch bed_1
 name guard generator
 x 48
 y 40
-speed -0.05
+speed 0.0050
 type 0
 alive 1
 no_pick 1
@@ -20296,6 +21819,7 @@ use_content_on_gen 1
 arch man2
 name Fearless personal guard
 Con 25
+Wis 10
 Pow 25
 hp 1800
 maxhp 1800
@@ -20341,6 +21865,65 @@ path_attuned 4
 can_use_bow 1
 can_use_armour 1
 can_use_weapon 1
+arch immunity
+name typhoid
+level 127
+startequip 1
+end
+arch immunity
+name smallpox
+level 127
+startequip 1
+end
+arch immunity
+name rabies
+level 127
+startequip 1
+end
+arch immunity
+name pneumonic plague
+level 127
+startequip 1
+end
+arch immunity
+name leprosy
+level 127
+startequip 1
+end
+arch immunity
+name insanity
+level 127
+startequip 1
+end
+arch immunity
+name flu
+level 127
+startequip 1
+end
+arch immunity
+name Red Death
+level 127
+startequip 1
+end
+arch immunity
+name cold
+level 127
+startequip 1
+end
+arch immunity
+name Black Death
+level 127
+startequip 1
+end
+arch immunity
+name anthrax
+level 127
+startequip 1
+end
+arch immolation_immunity
+end
+arch creeping_frost_immunity
+end
 end
 arch skill_two_handed_weapon
 can_use_skill 1
@@ -20465,16 +22048,15 @@ arch woodfloor2
 x 48
 y 49
 end
+arch dungeon_magic
+x 48
+y 50
+end
 arch cobblestones2
 x 48
 y 50
 end
-arch swall_0
-face swall_AA.111
-x 48
-y 50
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 48
 y 50
 end
@@ -20497,11 +22079,11 @@ name moat
 x 48
 y 54
 end
-arch brush
+arch dungeon_magic
 x 48
 y 55
 end
-arch dungeon_magic
+arch brush
 x 48
 y 55
 end
@@ -20538,11 +22120,11 @@ arch brush
 x 49
 y 2
 end
-arch brush
+arch dungeon_magic
 x 49
 y 3
 end
-arch dungeon_magic
+arch brush
 x 49
 y 3
 end
@@ -20608,7 +22190,7 @@ x 49
 y 12
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -20629,7 +22211,7 @@ x 49
 y 14
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -20766,7 +22348,7 @@ x 49
 y 44
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -20787,7 +22369,7 @@ x 49
 y 46
 material 0
 glow_radius 4
-no_pass 0
+move_block 0
 identified 1
 end
 arch woodfloor
@@ -20814,6 +22396,10 @@ arch cobblestones2
 x 49
 y 50
 end
+arch swall_1_3_half
+x 49
+y 50
+end
 arch cwall_1_4
 x 49
 y 50
@@ -20837,11 +22423,11 @@ name moat
 x 49
 y 54
 end
-arch brush
+arch dungeon_magic
 x 49
 y 55
 end
-arch dungeon_magic
+arch brush
 x 49
 y 55
 end
@@ -20878,11 +22464,11 @@ arch brush
 x 50
 y 2
 end
-arch brush
+arch dungeon_magic
 x 50
 y 3
 end
-arch dungeon_magic
+arch brush
 x 50
 y 3
 end
@@ -20950,13 +22536,9 @@ arch cwall_1_2
 x 50
 y 12
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 13
-end
-arch swall_1_1
-x 50
-y 13
+y 12
 end
 arch dungeon_magic
 x 50
@@ -20964,17 +22546,29 @@ y 13
 end
 arch cobblestones2
 x 50
-y 14
+y 13
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 14
+y 13
 end
 arch dungeon_magic
 x 50
 y 14
 end
 arch cobblestones2
+x 50
+y 14
+end
+arch swall_2_1_1
+x 50
+y 14
+end
+arch cobblestones2
+x 50
+y 15
+end
+arch swall_1_2_half
 x 50
 y 15
 end
@@ -21030,20 +22624,31 @@ arch cwall_1_2
 x 50
 y 21
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 22
-end
-arch swall_0
-face swall_55.111
-x 50
-y 22
+y 21
 end
 arch dungeon_magic
 x 50
 y 22
 end
 arch cobblestones2
+x 50
+y 22
+end
+arch swall_2_1_1
+x 50
+y 22
+end
+arch cobblestones2
+x 50
+y 23
+end
+arch swall_1_1_half
+x 50
+y 23
+end
+arch swall_1_2_half
 x 50
 y 23
 end
@@ -21051,20 +22656,23 @@ arch cwall_1_3
 x 50
 y 23
 end
-arch cobblestones2
-x 50
-y 24
-end
-arch swall_0
-face swall_55.111
-x 50
-y 24
-end
 arch dungeon_magic
 x 50
 y 24
 end
 arch cobblestones2
+x 50
+y 24
+end
+arch swall_2_1_1
+x 50
+y 24
+end
+arch cobblestones2
+x 50
+y 25
+end
+arch swall_1_2_half
 x 50
 y 25
 end
@@ -21088,17 +22696,25 @@ arch cwall_1_2
 x 50
 y 27
 end
+arch swall_1_1_half
+x 50
+y 27
+end
+arch dungeon_magic
+x 50
+y 28
+end
 arch cobblestones2
 x 50
 y 28
 end
-arch swall_1_1
+arch swall_2_1_1
 x 50
 y 28
 end
 arch dungeon_magic
 x 50
-y 28
+y 29
 end
 arch cobblestones2
 x 50
@@ -21110,21 +22726,21 @@ y 29
 end
 arch dungeon_magic
 x 50
-y 29
+y 30
 end
 arch cobblestones2
 x 50
 y 30
 end
-arch swall_1_2
-x 50
-y 30
-end
-arch dungeon_magic
+arch swall_2_1_1
 x 50
 y 30
 end
 arch cobblestones2
+x 50
+y 31
+end
+arch swall_1_2_half
 x 50
 y 31
 end
@@ -21148,20 +22764,27 @@ arch cwall_1_2
 x 50
 y 33
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 34
-end
-arch swall_0
-face swall_55.111
-x 50
-y 34
+y 33
 end
 arch dungeon_magic
 x 50
 y 34
 end
 arch cobblestones2
+x 50
+y 34
+end
+arch swall_2_1_1
+x 50
+y 34
+end
+arch cobblestones2
+x 50
+y 35
+end
+arch swall_1_2_half
 x 50
 y 35
 end
@@ -21217,13 +22840,9 @@ arch cwall_1_2
 x 50
 y 41
 end
-arch cobblestones2
+arch swall_1_1_half
 x 50
-y 42
-end
-arch swall_1_1
-x 50
-y 42
+y 41
 end
 arch dungeon_magic
 x 50
@@ -21231,17 +22850,29 @@ y 42
 end
 arch cobblestones2
 x 50
-y 43
+y 42
 end
-arch swall_1_2
+arch swall_2_1_1
 x 50
-y 43
+y 42
 end
 arch dungeon_magic
 x 50
 y 43
 end
 arch cobblestones2
+x 50
+y 43
+end
+arch swall_2_1_1
+x 50
+y 43
+end
+arch cobblestones2
+x 50
+y 44
+end
+arch swall_1_2_half
 x 50
 y 44
 end
@@ -21321,11 +22952,11 @@ name moat
 x 50
 y 54
 end
-arch brush
+arch dungeon_magic
 x 50
 y 55
 end
-arch dungeon_magic
+arch brush
 x 50
 y 55
 end
@@ -21362,11 +22993,11 @@ arch brush
 x 51
 y 2
 end
-arch brush
+arch dungeon_magic
 x 51
 y 3
 end
-arch dungeon_magic
+arch brush
 x 51
 y 3
 end
@@ -21760,11 +23391,11 @@ name moat
 x 51
 y 54
 end
-arch brush
+arch dungeon_magic
 x 51
 y 55
 end
-arch dungeon_magic
+arch brush
 x 51
 y 55
 end
@@ -21801,11 +23432,11 @@ arch brush
 x 52
 y 2
 end
-arch brush
+arch dungeon_magic
 x 52
 y 3
 end
-arch dungeon_magic
+arch brush
 x 52
 y 3
 end
@@ -22064,11 +23695,11 @@ name moat
 x 52
 y 54
 end
-arch brush
+arch dungeon_magic
 x 52
 y 55
 end
-arch dungeon_magic
+arch brush
 x 52
 y 55
 end
@@ -22105,11 +23736,11 @@ arch brush
 x 53
 y 2
 end
-arch brush
+arch dungeon_magic
 x 53
 y 3
 end
-arch dungeon_magic
+arch brush
 x 53
 y 3
 end
@@ -22368,11 +23999,11 @@ name moat
 x 53
 y 54
 end
-arch brush
+arch dungeon_magic
 x 53
 y 55
 end
-arch dungeon_magic
+arch brush
 x 53
 y 55
 end
@@ -22409,11 +24040,11 @@ arch brush
 x 54
 y 2
 end
-arch brush
+arch dungeon_magic
 x 54
 y 3
 end
-arch dungeon_magic
+arch brush
 x 54
 y 3
 end
@@ -22672,11 +24303,11 @@ name moat
 x 54
 y 54
 end
-arch brush
+arch dungeon_magic
 x 54
 y 55
 end
-arch dungeon_magic
+arch brush
 x 54
 y 55
 end
@@ -22713,17 +24344,13 @@ arch brush
 x 55
 y 2
 end
-arch brush
-x 55
-y 3
-end
 arch dungeon_magic
 x 55
 y 3
 end
 arch brush
 x 55
-y 4
+y 3
 end
 arch dungeon_magic
 x 55
@@ -22731,7 +24358,7 @@ y 4
 end
 arch brush
 x 55
-y 5
+y 4
 end
 arch dungeon_magic
 x 55
@@ -22739,11 +24366,19 @@ y 5
 end
 arch brush
 x 55
-y 6
+y 5
 end
 arch dungeon_magic
 x 55
 y 6
+end
+arch brush
+x 55
+y 6
+end
+arch dungeon_magic
+x 55
+y 7
 end
 arch brush
 x 55
@@ -22754,15 +24389,7 @@ name Security light
 x 55
 y 7
 glow_radius 5
-no_pass 1
-end
-arch dungeon_magic
-x 55
-y 7
-end
-arch brush
-x 55
-y 8
+move_block 1
 end
 arch dungeon_magic
 x 55
@@ -22770,7 +24397,7 @@ y 8
 end
 arch brush
 x 55
-y 9
+y 8
 end
 arch dungeon_magic
 x 55
@@ -22778,7 +24405,7 @@ y 9
 end
 arch brush
 x 55
-y 10
+y 9
 end
 arch dungeon_magic
 x 55
@@ -22786,7 +24413,7 @@ y 10
 end
 arch brush
 x 55
-y 11
+y 10
 end
 arch dungeon_magic
 x 55
@@ -22794,7 +24421,7 @@ y 11
 end
 arch brush
 x 55
-y 12
+y 11
 end
 arch dungeon_magic
 x 55
@@ -22802,7 +24429,7 @@ y 12
 end
 arch brush
 x 55
-y 13
+y 12
 end
 arch dungeon_magic
 x 55
@@ -22810,7 +24437,7 @@ y 13
 end
 arch brush
 x 55
-y 14
+y 13
 end
 arch dungeon_magic
 x 55
@@ -22818,7 +24445,7 @@ y 14
 end
 arch brush
 x 55
-y 15
+y 14
 end
 arch dungeon_magic
 x 55
@@ -22826,7 +24453,7 @@ y 15
 end
 arch brush
 x 55
-y 16
+y 15
 end
 arch dungeon_magic
 x 55
@@ -22834,7 +24461,7 @@ y 16
 end
 arch brush
 x 55
-y 17
+y 16
 end
 arch dungeon_magic
 x 55
@@ -22842,7 +24469,7 @@ y 17
 end
 arch brush
 x 55
-y 18
+y 17
 end
 arch dungeon_magic
 x 55
@@ -22850,7 +24477,7 @@ y 18
 end
 arch brush
 x 55
-y 19
+y 18
 end
 arch dungeon_magic
 x 55
@@ -22858,7 +24485,7 @@ y 19
 end
 arch brush
 x 55
-y 20
+y 19
 end
 arch dungeon_magic
 x 55
@@ -22866,7 +24493,7 @@ y 20
 end
 arch brush
 x 55
-y 21
+y 20
 end
 arch dungeon_magic
 x 55
@@ -22874,7 +24501,7 @@ y 21
 end
 arch brush
 x 55
-y 22
+y 21
 end
 arch dungeon_magic
 x 55
@@ -22882,7 +24509,7 @@ y 22
 end
 arch brush
 x 55
-y 23
+y 22
 end
 arch dungeon_magic
 x 55
@@ -22890,7 +24517,7 @@ y 23
 end
 arch brush
 x 55
-y 24
+y 23
 end
 arch dungeon_magic
 x 55
@@ -22898,7 +24525,7 @@ y 24
 end
 arch brush
 x 55
-y 25
+y 24
 end
 arch dungeon_magic
 x 55
@@ -22906,7 +24533,7 @@ y 25
 end
 arch brush
 x 55
-y 26
+y 25
 end
 arch dungeon_magic
 x 55
@@ -22914,7 +24541,7 @@ y 26
 end
 arch brush
 x 55
-y 27
+y 26
 end
 arch dungeon_magic
 x 55
@@ -22922,7 +24549,7 @@ y 27
 end
 arch brush
 x 55
-y 28
+y 27
 end
 arch dungeon_magic
 x 55
@@ -22930,7 +24557,7 @@ y 28
 end
 arch brush
 x 55
-y 29
+y 28
 end
 arch dungeon_magic
 x 55
@@ -22938,7 +24565,7 @@ y 29
 end
 arch brush
 x 55
-y 30
+y 29
 end
 arch dungeon_magic
 x 55
@@ -22946,7 +24573,7 @@ y 30
 end
 arch brush
 x 55
-y 31
+y 30
 end
 arch dungeon_magic
 x 55
@@ -22954,7 +24581,7 @@ y 31
 end
 arch brush
 x 55
-y 32
+y 31
 end
 arch dungeon_magic
 x 55
@@ -22962,7 +24589,7 @@ y 32
 end
 arch brush
 x 55
-y 33
+y 32
 end
 arch dungeon_magic
 x 55
@@ -22970,7 +24597,7 @@ y 33
 end
 arch brush
 x 55
-y 34
+y 33
 end
 arch dungeon_magic
 x 55
@@ -22978,7 +24605,7 @@ y 34
 end
 arch brush
 x 55
-y 35
+y 34
 end
 arch dungeon_magic
 x 55
@@ -22986,7 +24613,7 @@ y 35
 end
 arch brush
 x 55
-y 36
+y 35
 end
 arch dungeon_magic
 x 55
@@ -22994,7 +24621,7 @@ y 36
 end
 arch brush
 x 55
-y 37
+y 36
 end
 arch dungeon_magic
 x 55
@@ -23002,7 +24629,7 @@ y 37
 end
 arch brush
 x 55
-y 38
+y 37
 end
 arch dungeon_magic
 x 55
@@ -23010,7 +24637,7 @@ y 38
 end
 arch brush
 x 55
-y 39
+y 38
 end
 arch dungeon_magic
 x 55
@@ -23018,7 +24645,7 @@ y 39
 end
 arch brush
 x 55
-y 40
+y 39
 end
 arch dungeon_magic
 x 55
@@ -23026,7 +24653,7 @@ y 40
 end
 arch brush
 x 55
-y 41
+y 40
 end
 arch dungeon_magic
 x 55
@@ -23034,7 +24661,7 @@ y 41
 end
 arch brush
 x 55
-y 42
+y 41
 end
 arch dungeon_magic
 x 55
@@ -23042,7 +24669,7 @@ y 42
 end
 arch brush
 x 55
-y 43
+y 42
 end
 arch dungeon_magic
 x 55
@@ -23050,7 +24677,7 @@ y 43
 end
 arch brush
 x 55
-y 44
+y 43
 end
 arch dungeon_magic
 x 55
@@ -23058,7 +24685,7 @@ y 44
 end
 arch brush
 x 55
-y 45
+y 44
 end
 arch dungeon_magic
 x 55
@@ -23066,7 +24693,7 @@ y 45
 end
 arch brush
 x 55
-y 46
+y 45
 end
 arch dungeon_magic
 x 55
@@ -23074,7 +24701,7 @@ y 46
 end
 arch brush
 x 55
-y 47
+y 46
 end
 arch dungeon_magic
 x 55
@@ -23082,7 +24709,7 @@ y 47
 end
 arch brush
 x 55
-y 48
+y 47
 end
 arch dungeon_magic
 x 55
@@ -23090,7 +24717,7 @@ y 48
 end
 arch brush
 x 55
-y 49
+y 48
 end
 arch dungeon_magic
 x 55
@@ -23098,7 +24725,7 @@ y 49
 end
 arch brush
 x 55
-y 50
+y 49
 end
 arch dungeon_magic
 x 55
@@ -23106,7 +24733,7 @@ y 50
 end
 arch brush
 x 55
-y 51
+y 50
 end
 arch dungeon_magic
 x 55
@@ -23114,7 +24741,7 @@ y 51
 end
 arch brush
 x 55
-y 52
+y 51
 end
 arch dungeon_magic
 x 55
@@ -23122,7 +24749,7 @@ y 52
 end
 arch brush
 x 55
-y 53
+y 52
 end
 arch dungeon_magic
 x 55
@@ -23130,17 +24757,21 @@ y 53
 end
 arch brush
 x 55
-y 54
+y 53
 end
 arch dungeon_magic
 x 55
 y 54
 end
 arch brush
+x 55
+y 54
+end
+arch dungeon_magic
 x 55
 y 55
 end
-arch dungeon_magic
+arch brush
 x 55
 y 55
 end

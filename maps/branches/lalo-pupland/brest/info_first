@@ -1,13 +1,12 @@
 arch map
-name Tower of Zoon, Level 1
+name Tower of Zoon
 difficulty 1
 region brest
 width 40
 height 80
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 31 01:44:50 1994
+Created:  1994-02-31
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -15230,6 +15229,8 @@ end
 arch lightningwall_4
 x 33
 y 16
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15238,6 +15239,8 @@ end
 arch lightningwall_4
 x 33
 y 17
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15246,6 +15249,8 @@ end
 arch lightningwall_4
 x 33
 y 18
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15254,6 +15259,8 @@ end
 arch lightningwall_4
 x 33
 y 19
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15262,6 +15269,8 @@ end
 arch lightningwall_3
 x 33
 y 20
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15270,6 +15279,8 @@ end
 arch lightningwall_3
 x 33
 y 21
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15278,6 +15289,8 @@ end
 arch lightningwall_3
 x 33
 y 22
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15286,6 +15299,8 @@ end
 arch lightningwall_3
 x 33
 y 23
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15294,6 +15309,8 @@ end
 arch lightningwall_2
 x 33
 y 24
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15302,6 +15319,8 @@ end
 arch lightningwall_2
 x 33
 y 25
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15310,6 +15329,8 @@ end
 arch lightningwall_2
 x 33
 y 26
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15318,6 +15339,8 @@ end
 arch lightningwall_3
 x 33
 y 27
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15326,6 +15349,8 @@ end
 arch lightningwall_3
 x 33
 y 28
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -15334,6 +15359,8 @@ end
 arch lightningwall_3
 x 33
 y 29
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 33
@@ -16038,6 +16065,8 @@ end
 arch lightningwall_5
 x 35
 y 15
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 35
@@ -16435,6 +16464,8 @@ end
 arch lightningwall_5
 x 36
 y 15
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 36
@@ -16821,6 +16852,8 @@ end
 arch lightningwall_5
 x 37
 y 15
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 37
@@ -17221,6 +17254,8 @@ end
 arch lightningwall_6
 x 38
 y 16
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17229,6 +17264,8 @@ end
 arch lightningwall_6
 x 38
 y 17
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17237,6 +17274,8 @@ end
 arch lightningwall_7
 x 38
 y 18
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17245,6 +17284,8 @@ end
 arch lightningwall_7
 x 38
 y 19
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17253,6 +17294,8 @@ end
 arch lightningwall_7
 x 38
 y 20
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17261,6 +17304,8 @@ end
 arch lightningwall_7
 x 38
 y 21
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17269,6 +17314,8 @@ end
 arch lightningwall_7
 x 38
 y 22
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17277,6 +17324,8 @@ end
 arch lightningwall_7
 x 38
 y 23
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17285,6 +17334,8 @@ end
 arch lightningwall_7
 x 38
 y 24
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17293,6 +17344,8 @@ end
 arch lightningwall_7
 x 38
 y 25
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17301,6 +17354,8 @@ end
 arch lightningwall_8
 x 38
 y 26
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17309,6 +17364,8 @@ end
 arch lightningwall_8
 x 38
 y 27
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17317,6 +17374,8 @@ end
 arch lightningwall_8
 x 38
 y 28
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
@@ -17325,6 +17384,8 @@ end
 arch lightningwall_7
 x 38
 y 29
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 38
