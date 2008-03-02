@@ -7,9 +7,7 @@ height 22
 enter_x 5
 enter_y 8
 msg
-Creator: Cater/Wade
-Email: john_cater@yahoo.com
-Date: Fri Jan 15 13:04:54 1999
+Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
 endmsg
 end
 arch sea
@@ -2933,7 +2931,7 @@ endmsg
 x 22
 y 14
 connected 1
-walk_off 1
+move_off walk
 end
 arch gate_closed_2
 x 22
@@ -3112,10 +3110,10 @@ msg
 To claim the rewards in the courthouse
 all four parts of the quest must be
 tackled :
-Water
-Earth
-Air
-Fire
+   Water
+   Earth
+   Air
+   Fire
 endmsg
 x 23
 y 17

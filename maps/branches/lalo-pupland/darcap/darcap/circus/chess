@@ -5,9 +5,7 @@ region darcapcircus
 width 20
 height 16
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Wed Mar 10 11:35:04 1999
+Created:  1999-03-10 Cater & Wade (john_cater@yahoo.com)
 endmsg
 end
 arch pstone_1
@@ -420,14 +418,12 @@ name 2
 x 5
 weight 1000
 connected 2
-protected 2
 end
 arch creator
 name 1
 other_arch boulder
 x 5
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 5
@@ -631,12 +627,11 @@ x 6
 y 3
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 6
 y 3
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -647,12 +642,11 @@ x 6
 y 4
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 6
 y 4
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -663,12 +657,11 @@ x 6
 y 5
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 6
 y 5
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -679,12 +672,11 @@ x 6
 y 6
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 6
 y 6
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 6
@@ -839,7 +831,6 @@ arch grate_closed_2
 x 7
 y 3
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -853,7 +844,6 @@ arch grate_closed_2
 x 7
 y 4
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -867,7 +857,6 @@ arch grate_closed_2
 x 7
 y 5
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -881,7 +870,6 @@ arch grate_closed_2
 x 7
 y 6
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -1041,7 +1029,6 @@ arch button_handle
 x 8
 y 7
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 8

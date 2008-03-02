@@ -7,9 +7,8 @@ height 43
 enter_x 23
 enter_y 24
 msg
-Creator: Gnat the Gnu
-Email: john_cater@yahoo.com
-Date: Thu Jan 21 14:38:50 1999
+Created:  1999-01-21 (john_cater@yahoo.com)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -7178,6 +7177,8 @@ end
 arch firewall_7
 x 34
 y 14
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 34
