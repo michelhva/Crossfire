@@ -7,9 +7,8 @@ height 49
 enter_x 18
 enter_y 11
 msg
-Creator: Cater & Wade
-Email: john_cater@yahoo.com
-Date: Thu Jan 28 17:49:34 1999
+Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -1007,6 +1006,8 @@ end
 arch active_volcano
 x 4
 y 1
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 4
@@ -1213,6 +1214,8 @@ end
 arch active_volcano
 x 4
 y 26
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 4
@@ -3656,6 +3659,8 @@ x 12
 end
 arch active_volcano
 x 12
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 12
@@ -3840,6 +3845,8 @@ end
 arch active_volcano
 x 12
 y 25
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 12
@@ -5244,7 +5251,7 @@ x 16
 y 10
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 10
@@ -5259,7 +5266,7 @@ x 16
 y 11
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 11
@@ -5274,7 +5281,7 @@ x 16
 y 12
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 12
@@ -5289,7 +5296,7 @@ x 16
 y 13
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 13
@@ -5460,7 +5467,7 @@ x 16
 y 35
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 35
@@ -5475,7 +5482,7 @@ x 16
 y 36
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 36
@@ -5490,7 +5497,7 @@ x 16
 y 37
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 37
@@ -5505,7 +5512,7 @@ x 16
 y 38
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 16
 y 38
@@ -7138,6 +7145,8 @@ end
 arch active_volcano
 x 21
 y 6
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 21
@@ -7266,6 +7275,8 @@ end
 arch active_volcano
 x 21
 y 31
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 21
@@ -9183,6 +9194,8 @@ end
 arch active_volcano
 x 29
 y 1
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 29
@@ -9363,6 +9376,8 @@ end
 arch active_volcano
 x 29
 y 26
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 29
@@ -11782,6 +11797,8 @@ x 37
 end
 arch active_volcano
 x 37
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 37
@@ -11966,6 +11983,8 @@ end
 arch active_volcano
 x 37
 y 25
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 37
@@ -13366,7 +13385,7 @@ x 41
 y 10
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 10
@@ -13381,7 +13400,7 @@ x 41
 y 11
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 11
@@ -13396,7 +13415,7 @@ x 41
 y 12
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 12
@@ -13411,7 +13430,7 @@ x 41
 y 13
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 13
@@ -13582,7 +13601,7 @@ x 41
 y 35
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 35
@@ -13597,7 +13616,7 @@ x 41
 y 36
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 36
@@ -13612,7 +13631,7 @@ x 41
 y 37
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 37
@@ -13627,7 +13646,7 @@ x 41
 y 38
 end
 arch goldfloor
-name drop 20 goldcoins
+name drop 20 gold coins
 food 20
 x 41
 y 38
@@ -15268,6 +15287,8 @@ end
 arch active_volcano
 x 46
 y 6
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 46
@@ -15396,6 +15417,8 @@ end
 arch active_volcano
 x 46
 y 31
+arch spell_magic_bullet
+end
 end
 arch small_stones
 x 46

@@ -2,7 +2,7 @@ arch map
 name Darcap General Store
 difficulty 1
 region darcap
-shopitems light source:10;*:0
+shopitems lamp:10;*:0
 shopmin 100
 shopmax 8000
 width 16
@@ -10,9 +10,7 @@ height 13
 enter_x 15
 enter_y 6
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Sun Nov 19 19:56:03 2000
+Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
 endmsg
 end
 arch dungeon_floor
