@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1997-02-19
+Modified: 2008-01-30 Kevin Bulgrien
 endmsg
 end
 arch woodfloor
@@ -127,6 +128,7 @@ end
 arch generate_kobold
 x 1
 y 3
+generator_limit 15
 end
 arch woodfloor
 x 1
@@ -297,8 +299,7 @@ end
 arch sign
 name Check chests for Traps
 msg
-Always check chests for traps, some are
-trapped as well!
+Always check chests for traps as they may be trapped also!
 endmsg
 x 2
 y 11
@@ -611,8 +612,7 @@ y 9
 end
 arch rune_mark
 msg
-If you enter this corridor and don't
-react fast, you will die!
+If you enter this corridor and don't react fast, you will die!
 endmsg
 x 5
 y 9
@@ -824,8 +824,7 @@ end
 arch sign_w
 name Check for Traps
 msg
-Check for Traps before entering this
-corridor.
+Check for traps before entering this corridor.
 endmsg
 x 7
 y 7
@@ -865,8 +864,7 @@ end
 arch sign
 name Test doors for traps before opening
 msg
-Test a door for traps before you open
-it or you may regret it.
+Test a door for traps before you open it or you may regret it.
 endmsg
 x 7
 y 12
@@ -981,8 +979,7 @@ end
 arch sign
 name Do not enter!
 msg
-You must learn when to fight, and when
-NOT to fight!
+You must learn when to fight, and when NOT to fight!
 endmsg
 x 9
 y 2
@@ -1330,6 +1327,7 @@ maxhp 75
 x 12
 y 14
 speed 0.0060
+generator_limit 10
 end
 arch woodfloor
 x 12
@@ -1445,6 +1443,8 @@ x 14
 y 4
 end
 arch gravestone
+name grave
+face zombie_gen.111
 x 14
 y 4
 end

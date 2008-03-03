@@ -1,3 +1,10 @@
+2008-03-03 00:30  kbulgrien
+
+        * scorn/misc/beginners2: Remove some line wrapping.  Change gravestone
+          fake generator to grave to match change from skeletons to zombies.
+          Override the default generator (5) to (15) mostly because a lot of
+          the time, the zombies are all dead by the time you get to them.
+
 2008-02-04 01:00  kbulgrien
 
         * scorn/misc/drywell: delete multiple keys and set nrof of one key to
