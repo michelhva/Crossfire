@@ -11,7 +11,7 @@ monster 1
 move_type walk
 no_pick 1
 generator 1
-maxsp 15
+maxsp 100
 alive 1
 exp 1
 ac 7
