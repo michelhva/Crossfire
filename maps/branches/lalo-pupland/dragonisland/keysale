@@ -5,9 +5,7 @@ region stoneville
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul  9 23:21:08 1997
+Created:  1997-07-09
 endmsg
 end
 arch grass_only
@@ -699,7 +697,7 @@ x 6
 y 13
 end
 arch sign
-name explaination sign
+name explanation sign
 msg
 In this house, you can buy keys. These
 key are unique and will open the
@@ -954,7 +952,7 @@ name pay 3000 diamonds to get key
 slaying diamond
 msg
 Pay 3000 diamonds to get the key for
-the manor by the northern wel
+the manor by the northern well.
 endmsg
 food 3000
 x 9
