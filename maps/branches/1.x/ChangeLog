@@ -1,8 +1,86 @@
-2008-02-04 01:00  kbulgrien
+2008-03-08 07:39  rjtanner
 
-        * scorn/misc/drywell: Delete multiple keys and set nrof of one key to
-          the number of keys sitting on the table so that the table renders
-          under the keys.
+	* dungeons/train/demon_train, dungeons/train/dragon_train,
+	  dungeons/train/gobl_zomb_train, dungeons/train/humanoid_train,
+	  dungeons/train/ogre, dungeons/train/ogre_skel_train,
+	  dungeons/train/undead_train, dungeons/train/zombie: Synchronize
+	  Dungeons map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-08 06:02  rjtanner
+
+	* dragonisland/advguild3, dragonisland/apartment3,
+	  dragonisland/dragonmountain1: Synchronize Dragonisland map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-08 05:59  rjtanner
+
+	* darcap/darcap/pirates.1, darcap/darcap/tavern,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.9: Synchronize Darcap map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-02 02:31  rjtanner
+
+	* brest/amphis: Synchronize map changes between trunk, branches/1.x
+	  and branches/lalo-pupland
+
+2008-03-02 02:25  rjtanner
+
+	* brest/sport.jess, brest/zorn/castle.upper.floor.one: Synchronize
+	  map changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-01 06:08  rjtanner
+
+	* brest/apartments/brest_town_house, brest/asyvan/gate1,
+	  brest/asyvan/gate2, brest/asyvan/gate3, brest/asyvan/gate4,
+	  brest/asyvan/gate5, brest/asyvan/gate6, brest/asyvan/gate7,
+	  brest/asyvan/gate8, brest/asyvan/gate9, brest/asyvan/palace1,
+	  brest/asyvan/palace2, brest/asyvan/palace3, brest/brest.cvt:
+	  Synchronize map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-01 05:08  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA1: Backport from
+	  trunk - adjust altars so they are level 120 and can't be
+	  reconsecrated by other players
+
+2008-02-29 06:49  rjtanner
+
+	* darcap/raffle, darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2, darcap/raffle/raffle1_u3,
+	  world/world_116_102: Patch [ 1817282 ] Almost new map -- Now a
+	  new map, Darcap Raffle 1
+
+2008-02-29 05:51  rjtanner
+
+	* world/world_101_114, world/world_105_116, world/world_121_117:
+	  Synchronize world map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-02-22 23:58  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator:
+	  Shorten scripts by using Gridarta's RecursiveFileIterator class.
+
+2008-02-19 05:01  rjtanner
+
+	* wolfsburg/dept_store_weapon: Region names are case sensitive -
+	  converted Wolfsburg -> wolsburg, which was my typo to begin with
+
+2008-02-04 07:04  kbulgrien
+
+	* ChangeLog, scorn/misc/drywell: Delete multiple keys and set nrof
+	  of one key to the number of keys sitting on
+	  the table so that the table renders under the keys.
+
+2008-02-03 06:38  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-02-03 05:51  rjtanner
 
