@@ -1,15 +1,109 @@
-2008-03-03 00:30  kbulgrien
+2008-03-08 07:37  rjtanner
 
-        * scorn/misc/beginners2: Remove some line wrapping.  Change gravestone
-          fake generator to grave to match change from skeletons to zombies.
-          Override the default generator (5) to (15) mostly because a lot of
-          the time, the zombies are all dead by the time you get to them.
+	* dungeons/train/demon_train, dungeons/train/dragon_train,
+	  dungeons/train/gobl_zomb_train, dungeons/train/humanoid_train,
+	  dungeons/train/ogre, dungeons/train/ogre_skel_train,
+	  dungeons/train/undead_train, dungeons/train/zombie: Updated and
+	  corrected map names for the Training Center maps
 
-2008-02-04 01:00  kbulgrien
+2008-03-08 06:02  rjtanner
 
-        * scorn/misc/drywell: delete multiple keys and set nrof of one key to
-          the number of keys sitting on the table so that the table renders
-          under the keys.
+	* dragonisland/advguild3: Synchronize Dragonisland map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-08 05:59  rjtanner
+
+	* darcap/darcap/tavern: Synchronize Darcap map changes between
+	  trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-03 06:38  kbulgrien
+
+	* ChangeLog, scorn/misc/beginners2: Change gravestone fake
+	  generator to grave to match change from skeletons to
+	  zombies. Override the default generator (5) to (15) mostly
+	  because a lot of
+	  the time, the zombies are all dead by the time you get to them.
+	  Also remove
+	  some line wrapping.
+
+2008-03-01 06:08  rjtanner
+
+	* brest/brest.cvt: Synchronize map changes between trunk,
+	  branches/1.x and branches/lalo-pupland
+
+2008-02-29 06:49  rjtanner
+
+	* darcap/raffle, darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2, darcap/raffle/raffle1_u3,
+	  world/world_116_102: Patch [ 1817282 ] Almost new map -- Now a
+	  new map, Darcap Raffle 1
+
+2008-02-25 21:49  ryo_saeba
+
+	* navar_city/mlab/thehole: Remove obsolete field.
+
+2008-02-22 23:58  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator:
+	  Shorten scripts by using Gridarta's RecursiveFileIterator class.
+
+2008-02-19 05:01  rjtanner
+
+	* wolfsburg/dept_store_weapon: Region names are case sensitive -
+	  converted Wolfsburg -> wolsburg, which was my typo to begin with
+
+2008-02-17 17:05  ryo_saeba
+
+	* scorn/houses/resir: Fix walls. Add quest info.
+
+2008-02-16 09:50  ryo_saeba
+
+	* lake_country/elven_moon/elvenmoon.4: Remove invalid treasurelist.
+
+2008-02-16 09:46  ryo_saeba
+
+	* navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.8: Remove invalid tile_path.
+
+2008-02-16 09:23  ryo_saeba
+
+	* mlab/citydeclouds/misc/cwdcchessarenaa1,
+	  mlab/citydeclouds/misc/cwdcchessarenaa2,
+	  mlab/citydeclouds/misc/cwdcchessarenab2: Fix tiled map paths.
+
+2008-02-16 09:02  ryo_saeba
+
+	* navar_city/mlab/tavernb1, navar_city/mlab/tavernb2,
+	  navar_city/mlab/tavernb3, navar_city/mlab/tavernb4: Remove now
+	  invalid temp header.
+
+2008-02-09 23:14  ryo_saeba
+
+	* navar_city/iscar, world/world_122_117: New small house.
+
+2008-02-09 21:56  ryo_saeba
+
+	* world/world_121_117: Name some houses.
+
+2008-02-04 07:02  kbulgrien
+
+	* ChangeLog, scorn/misc/drywell: Delete multiple keys and set nrof
+	  of one key to the number of keys sitting on
+	  the table so that the table renders under the keys.
+
+2008-02-03 17:42  ryo_saeba
+
+	* navar_city/light/smugship1: Give a real slaying field to keys.
+
+2008-02-03 10:24  ryo_saeba
+
+	* scorn/misc/cider_house, scorn/misc/cider_house_top,
+	  world/world_105_116: Small cider house, not much to see yet.
+
+2008-02-03 06:38  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-02-03 06:15  rjtanner
 

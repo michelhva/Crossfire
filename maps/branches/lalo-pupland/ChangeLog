@@ -1,3 +1,198 @@
+2008-03-08 07:39  rjtanner
+
+	* dungeons/castle_aaaarg, dungeons/gorokh/gorokh_final,
+	  dungeons/gorokh/gorokh_treasure, dungeons/grukks/grukks.1,
+	  dungeons/grukks/grukks.2, dungeons/grukks/grukks.3,
+	  dungeons/grukks/grukks.4, dungeons/hole,
+	  dungeons/hut/ancient_hut, dungeons/hut/kjerring,
+	  dungeons/hut/watertunnel, dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2, dungeons/ruins,
+	  dungeons/train/demon_train, dungeons/train/dragon_train,
+	  dungeons/train/gobl_zomb_train, dungeons/train/goblin,
+	  dungeons/train/humanoid_train, dungeons/train/ogre,
+	  dungeons/train/ogre_skel_train, dungeons/train/skeleton,
+	  dungeons/train/train-old, dungeons/train/undead_train,
+	  dungeons/train/zombie, dungeons/trollbridge,
+	  dungeons/valriel/valriel_final,
+	  dungeons/valriel/valriel_treasure, dungeons/xyzzy-mines:
+	  Synchronize Dungeons map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-08 06:02  rjtanner
+
+	* dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/apartment2, dragonisland/apartment3,
+	  dragonisland/bloodwell, dragonisland/damarishouse0,
+	  dragonisland/damarishouse1, dragonisland/damarishouse2,
+	  dragonisland/dragonmountain0, dragonisland/dragonmountain1,
+	  dragonisland/drowmansion, dragonisland/hangar,
+	  dragonisland/hangar2, dragonisland/hangar3, dragonisland/house1,
+	  dragonisland/house4, dragonisland/house5, dragonisland/house6,
+	  dragonisland/house7, dragonisland/house8, dragonisland/house9,
+	  dragonisland/housebrxzl, dragonisland/intwell,
+	  dragonisland/keysale, dragonisland/luxhouse, dragonisland/tavern,
+	  dragonisland/thievesden: Synchronize Dragonisland map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-08 05:59  rjtanner
+
+	* darcap/README, darcap/darcap/apartment, darcap/darcap/church,
+	  darcap/darcap/guilds/poisoned_dagger/bigchest,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/bigchest,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/upper,
+	  darcap/darcap/pirates.1, darcap/darcap/potionshop,
+	  darcap/darcap/quest, darcap/darcap/shop_a, darcap/darcap/shop_w,
+	  darcap/darcap/tavern, darcap/darcap/temple,
+	  darcap/forgotten_town/city, darcap/forgotten_town/enter,
+	  darcap/forgotten_town/ft_dragonslib,
+	  darcap/forgotten_town/ft_funhouse, darcap/forgotten_town/inn,
+	  darcap/forgotten_town/palace,
+	  darcap/forgotten_town/quests/ft_quest_1,
+	  darcap/forgotten_town/quests/ft_quest_2,
+	  darcap/forgotten_town/quests/ft_quest_40,
+	  darcap/forgotten_town/shops/armour,
+	  darcap/forgotten_town/shops/general,
+	  darcap/forgotten_town/shops/general2,
+	  darcap/forgotten_town/shops/magic,
+	  darcap/forgotten_town/shops/potion,
+	  darcap/forgotten_town/shops/weapon, darcap/house1,
+	  darcap/lynn/castle1.2, darcap/lynn/castle1.3, darcap/quest/fire,
+	  darcap/quest/water, darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.9, darcap/town2/shop_b,
+	  darcap/town2/shop_f, darcap/town2/tower1, darcap/town2/tower2,
+	  darcap/town2/tower3, darcap/town2/tower4, darcap/town2/towers,
+	  darcap/undead/undead.2, darcap/village1: Synchronize Darcap map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-02 03:19  rjtanner
+
+	* darcap/castle/castle2.0, darcap/castle/castle2.1,
+	  darcap/castle/castle2.3, darcap/cave/level1,
+	  darcap/darcap/circus/bigtop, darcap/darcap/circus/chess,
+	  darcap/darcap/circus/circus, darcap/darcap/circus/double,
+	  darcap/darcap/circus/ghost, darcap/darcap/circus/illusions,
+	  darcap/darcap/circus/movers, darcap/darcap/circus/roller1,
+	  darcap/darcap/circus/roller2, darcap/darcap/circus/roller3,
+	  darcap/darcap/circus/shooting, darcap/darcap/circus/strength,
+	  darcap/darcap/circus/walls, darcap/darcap/circus/wheel,
+	  darcap/darcap/circus/wurfbude, darcap/darcap/gshop,
+	  darcap/darcap/houses, darcap/darcap/inn, darcap/darcap/maze,
+	  darcap/darcap/pirates.1: Synchronize map changes between trunk,
+	  branches/1.x and branches/lalo-pupland
+
+2008-03-02 02:38  rjtanner
+
+	* brest/zorn/castle.upper.floor.two: Another checkin to fix file
+	  over write error in Zorn castle maps
+
+2008-03-02 02:35  rjtanner
+
+	* brest/zorn/castle.upper.floor.one: Another checkin attempt to fix
+	  file over right error in Zorn castle maps
+
+2008-03-02 02:31  rjtanner
+
+	* brest/amphis, brest/zorn/castle.upper.floor.two: Synchronize map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-02 02:25  rjtanner
+
+	* brest/elec.jes, brest/info.2.zoon, brest/info_first,
+	  brest/jes.admini, brest/jes.admini.1, brest/ludo1, brest/ludo2,
+	  brest/nasty_house, brest/shops/a_small_shop,
+	  brest/shops/buildshop, brest/shops/buildshop2, brest/sow/sow,
+	  brest/sport.jess, brest/taverns/brest.seaside.tavern,
+	  brest/underground, brest/underground2,
+	  brest/zorn/castle.basement0, brest/zorn/castle.mainfloor,
+	  brest/zorn/castle.upper.floor.four,
+	  brest/zorn/castle.upper.floor.one,
+	  brest/zorn/castle.upper.floor.three,
+	  brest/zorn/castle.upper.floor.two: Synchronize map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-01 06:30  rjtanner
+
+	* brest/asyvan/gate9, brest/brittany/jessy.2: Another checkin
+	  attempt to fix accidental file overwrites
+
+2008-03-01 06:24  rjtanner
+
+	* brest/asyvan/gate7, brest/asyvan/gate9, brest/brittany/jessy.3:
+	  Correct file merge conflicts and accidental over writes
+
+2008-03-01 06:17  rjtanner
+
+	* brest/asyvan/gate7, brest/brittany/jessy.2: Missed a few maps in
+	  the previous commit; Synchronize map changes between trunk,
+	  branches/1.x and branches/lalo-pupland
+
+2008-03-01 06:08  rjtanner
+
+	* brest/Castle/AcidChamber, brest/Castle/DragonRoom,
+	  brest/Castle/Finale, brest/Castle/LargeRoom, brest/Castle/castle,
+	  brest/apartments/brest_town_house, brest/asyvan/gate1,
+	  brest/asyvan/gate2, brest/asyvan/gate3, brest/asyvan/gate4,
+	  brest/asyvan/gate5, brest/asyvan/gate6, brest/asyvan/gate7,
+	  brest/asyvan/gate8, brest/asyvan/gate9, brest/asyvan/palace1,
+	  brest/asyvan/palace2, brest/asyvan/palace3,
+	  brest/black_shield/bigchest, brest/black_shield/storage_room,
+	  brest/black_shield/upper, brest/brest.IPO, brest/brest.cvt,
+	  brest/brest.food, brest/brest.inn, brest/brest.magic,
+	  brest/brest.scrolls, brest/brest.scrolls.right,
+	  brest/brest.scrolls.upper.1, brest/brest.scrolls.upper.2,
+	  brest/brest.trademarket, brest/brittany/dol-guldur.1,
+	  brest/brittany/dol-guldur.2, brest/brittany/dol-guldur.3,
+	  brest/brittany/dol-guldur.4, brest/brittany/dol-guldur.5,
+	  brest/brittany/dol-guldur.6, brest/brittany/enigme.1,
+	  brest/brittany/enigme.2, brest/brittany/enigme.3,
+	  brest/brittany/enigme.4, brest/brittany/enigme.5,
+	  brest/brittany/enigme.6, brest/brittany/hole,
+	  brest/brittany/jessy.1, brest/brittany/jessy.3,
+	  brest/brittany/khazad.1, brest/brittany/khazad.2,
+	  brest/brittany/khazad.3, brest/brittany/khazad.4,
+	  brest/brittany/khazad.5, brest/brittany/tower_of__zoon:
+	  Synchronize map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-01 05:09  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA1: Sync map header
+	  formatting with branches/1.x
+
+2008-02-29 06:49  rjtanner
+
+	* darcap/raffle, darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2, darcap/raffle/raffle1_u3,
+	  world/world_116_102: Patch [ 1817282 ] Almost new map -- Now a
+	  new map, Darcap Raffle 1
+
+2008-02-29 05:51  rjtanner
+
+	* world/world_101_114, world/world_105_116, world/world_109_126,
+	  world/world_117_101, world/world_121_117: Synchronize world map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-02-19 05:01  rjtanner
+
+	* wolfsburg/dept_store_weapon: Region names are case sensitive -
+	  converted Wolfsburg -> wolsburg, which was my typo to begin with
+
+2008-02-03 06:40  rjtanner
+
+	* world/world_122_117: Synchronize Navar with branch/1.x
+
+2008-02-03 06:38  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-02-03 05:57  rjtanner
 
 	* world/world_116_102: Synchronize Darcap with branch/1.x
