@@ -6,9 +6,8 @@ height 25
 enter_x 1
 enter_y 11
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    9/10/2003
+Created:  2003-09-10 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -1610,7 +1609,6 @@ y 16
 end
 arch lbulletwall_1
 name dart launcher
-dam 203
 x 10
 y 16
 speed 0.0
@@ -2976,7 +2974,7 @@ endmsg
 food 1
 x 19
 y 14
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 19
@@ -3478,7 +3476,7 @@ endmsg
 food 1
 x 22
 y 11
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 22

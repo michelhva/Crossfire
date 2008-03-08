@@ -1,14 +1,12 @@
 arch map
-name dragon_train
+name Dragon Training
 region wilderness
 width 21
 height 21
 enter_x 10
 enter_y 17
 msg
-Creator: Gene Alexander
-Editor: CF Java Map Editor
-Date:    5/30/2005
+Created:  2005-05-30 Gene Alexander
 endmsg
 outdoor 1
 end
@@ -2215,8 +2213,7 @@ endmsg
 x 10
 y 15
 elevation 452
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 10
