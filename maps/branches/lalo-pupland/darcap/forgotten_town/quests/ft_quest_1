@@ -5,9 +5,9 @@ height 20
 enter_x 1
 enter_y 18
 msg
-Creator: K. Ahlers
-Date:    6/6/2006
+Created:  2006-06-06 K. Ahlers
 Mail: info@knutshome.de
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -2474,6 +2474,8 @@ end
 arch firewall_3
 x 22
 y 5
+arch spell_small_fireball
+end
 end
 arch blocked
 x 22
@@ -2979,6 +2981,8 @@ y 19
 end
 arch firewall_5
 x 26
+arch spell_small_fireball
+end
 end
 arch unholy_ground
 x 26
@@ -3107,6 +3111,8 @@ end
 arch firewall_1
 x 26
 y 10
+arch spell_small_fireball
+end
 end
 arch blocked
 x 26
@@ -3558,6 +3564,8 @@ y 19
 end
 arch firewall_5
 x 29
+arch spell_small_fireball
+end
 end
 arch unholy_ground
 x 29
@@ -3686,6 +3694,8 @@ end
 arch firewall_1
 x 29
 y 10
+arch spell_small_fireball
+end
 end
 arch blocked
 x 29
@@ -4163,6 +4173,8 @@ end
 arch firewall_7
 x 33
 y 5
+arch spell_small_fireball
+end
 end
 arch blocked
 x 33
@@ -4203,6 +4215,8 @@ end
 arch firewall_3
 x 33
 y 15
+arch spell_small_fireball
+end
 end
 arch blocked
 x 33
@@ -4251,8 +4265,7 @@ food 1
 x 34
 y 3
 connected 32
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch blocked
 x 34
@@ -4645,6 +4658,8 @@ end
 arch firewall_5
 x 37
 y 11
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 37
@@ -4749,6 +4764,8 @@ end
 arch firewall_1
 x 37
 y 19
+arch spell_small_fireball
+end
 end
 arch blocked
 x 38
@@ -5153,6 +5170,8 @@ end
 arch firewall_7
 x 41
 y 15
+arch spell_small_fireball
+end
 end
 arch blocked
 x 41

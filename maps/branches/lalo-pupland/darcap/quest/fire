@@ -7,9 +7,8 @@ height 36
 enter_x 19
 enter_y 31
 msg
-Creator: dtabb
-Email: dtabb@ecst.csuchico.edu
-Date: Fri Oct 15 18:02:23 1993
+Created:  1993-10-15 dtabb (dtabb@ecst.csuchico.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -3228,6 +3227,8 @@ end
 arch active_volcano
 x 15
 y 8
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -3244,6 +3245,8 @@ end
 arch active_volcano
 x 15
 y 10
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -3256,6 +3259,8 @@ end
 arch active_volcano
 x 15
 y 12
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -3272,6 +3277,8 @@ end
 arch active_volcano
 x 15
 y 14
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 15
@@ -4132,6 +4139,8 @@ end
 arch active_volcano
 x 19
 y 8
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -4144,6 +4153,8 @@ end
 arch active_volcano
 x 19
 y 10
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -4156,6 +4167,8 @@ end
 arch active_volcano
 x 19
 y 12
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
@@ -4168,6 +4181,8 @@ end
 arch active_volcano
 x 19
 y 14
+arch spell_magic_bullet
+end
 end
 arch dirtfloor
 x 19
