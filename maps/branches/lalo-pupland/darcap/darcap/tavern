@@ -7,9 +7,11 @@ height 19
 enter_x 19
 enter_y 13
 msg
+Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
 Creator: Cater/Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 15 12:02:40 1999
+Modified: 2008-01-03 Gene Alexander
 endmsg
 end
 arch cobblestones2
@@ -1806,7 +1808,7 @@ Enter the courthouse and you will
 understand me.
 The major difficulty is finding the
 places that are involved in this
-quest. E.g. I suspect the high volcanoe
+quest. E.g. I suspect the high volcano
 poses the fire-part...
 @match *
 I've devoted myself to the elemental
@@ -2126,7 +2128,7 @@ end
 arch guildmaster
 name Old Man
 msg
-@match apartment|appartment
+@match apartment
 Yes, you should buy an apartment.
 There you can store some food and
 equipment.
@@ -2212,7 +2214,7 @@ end
 arch ninja2
 msg
 @match [Ll]and|[Ee]xiled
-I lived north-east from here, untill I took a
+I lived north-east from here, until I took a
 boat out to talk to a forginer like you.
 They didn't let me go back.
 @match *
@@ -2608,7 +2610,7 @@ msg
 @match no|library|spell
 It's located in a mountain village,
 not far from here. Take a few
-goldcoins with you, I believe they
+gold coins with you, I believe they
 charge for a small entrance fee.
 @match *
 Did you know that there is a huge

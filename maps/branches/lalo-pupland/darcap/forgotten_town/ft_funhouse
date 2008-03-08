@@ -4,14 +4,16 @@ width 20
 height 28
 enter_y 4
 msg
-Creator: K. Ahlers
-Date:    6/5/2006
+Created:  2006-06-05 K. Ahlers
 Mail: info@knutshome.de
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
 end
 arch lightningwall_3
+arch spell_sm_lightning
+end
 end
 arch blocked
 y 1
@@ -246,6 +248,8 @@ end
 arch lightningwall_3
 x 1
 y 25
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 1
@@ -2487,6 +2491,8 @@ x 18
 end
 arch lightningwall_7
 x 18
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 18
@@ -2735,6 +2741,8 @@ end
 arch lightningwall_7
 x 19
 y 25
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 19

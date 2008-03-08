@@ -6,8 +6,7 @@ height 20
 enter_x 3
 enter_y 1
 msg
-Creator: Knut Ahlers
-Date:    7/17/2005
+Created:  2005-07-17 Knut Ahlers
 endmsg
 end
 arch woodfloor
@@ -322,8 +321,7 @@ Exit to Darcap
 endmsg
 x 2
 y 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch woodfloor
 x 2
@@ -619,8 +617,7 @@ you may take the shortcut into the town.
 endmsg
 x 4
 connected 159
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 4
@@ -646,8 +643,7 @@ Only higher level players!
 endmsg
 x 4
 y 1
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch woodfloor
 x 4
@@ -2259,8 +2255,7 @@ Be VERY careful!
 endmsg
 x 14
 y 12
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch woodfloor
 x 14
@@ -2984,8 +2979,7 @@ hp 28
 sp 30
 x 18
 y 18
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 18
