@@ -7,9 +7,8 @@ height 60
 enter_x 3
 enter_y 4
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Sep 14 18:12:38 2001
+Created:  2001-02-14
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2693,6 +2692,8 @@ end
 arch firewall
 x 7
 y 35
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 7
@@ -2701,6 +2702,8 @@ end
 arch firewall
 x 7
 y 36
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 7
@@ -2717,6 +2720,8 @@ end
 arch firewall
 x 7
 y 38
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 7
@@ -3052,6 +3057,8 @@ end
 arch firewall
 x 8
 y 34
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 8
@@ -3068,6 +3075,8 @@ end
 arch firewall
 x 8
 y 36
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 8
@@ -3076,6 +3085,8 @@ end
 arch firewall
 x 8
 y 37
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 8
@@ -3443,6 +3454,8 @@ end
 arch firewall
 x 9
 y 35
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 9
@@ -3467,6 +3480,8 @@ end
 arch firewall
 x 9
 y 38
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 9
@@ -3806,6 +3821,8 @@ end
 arch firewall
 x 10
 y 34
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 10
@@ -3814,6 +3831,8 @@ end
 arch firewall
 x 10
 y 35
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 10
@@ -3830,6 +3849,8 @@ end
 arch firewall
 x 10
 y 37
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 10
@@ -3838,6 +3859,8 @@ end
 arch firewall
 x 10
 y 38
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 10
@@ -4165,6 +4188,8 @@ end
 arch firewall
 x 11
 y 35
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 11
@@ -13155,6 +13180,8 @@ end
 arch firewall
 x 37
 y 47
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 37
@@ -14136,6 +14163,8 @@ end
 arch firewall
 x 40
 y 45
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 40
@@ -14766,6 +14795,8 @@ end
 arch firewall
 x 42
 y 43
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 42
@@ -15731,6 +15762,8 @@ end
 arch firewall
 x 45
 y 39
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 45
@@ -15739,6 +15772,8 @@ end
 arch firewall
 x 45
 y 40
+arch spell_small_fireball
+end
 end
 arch flagstone
 x 45
