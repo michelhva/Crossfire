@@ -4,9 +4,7 @@ difficulty 4
 width 22
 height 10
 msg
-Creator: Todd Mitchell
-CF Java Map Editor
-Date:    10/27/2002
+Created:  2002-10-27 Todd Mitchell
 endmsg
 outdoor 1
 end
@@ -1300,8 +1298,7 @@ food 1
 x 18
 y 3
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor2
 x 18

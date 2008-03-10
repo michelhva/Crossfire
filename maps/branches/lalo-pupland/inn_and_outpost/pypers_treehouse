@@ -6,9 +6,7 @@ height 25
 enter_x 12
 enter_y 12
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    08/13/2004
+Created:  2004-08-13 Avion
 endmsg
 outdoor 1
 end
@@ -16,11 +14,12 @@ arch invis_exit
 slaying /world/world_104_114
 hp 36
 sp 39
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -28,12 +27,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 1
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -41,12 +41,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 2
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -54,12 +55,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 3
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -67,12 +69,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 4
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -80,12 +83,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 5
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -93,12 +97,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 6
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -106,12 +111,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 7
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -119,12 +125,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 8
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -132,12 +139,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 9
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -145,12 +153,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 10
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -158,12 +167,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 11
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -171,12 +181,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 12
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -184,12 +195,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 13
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -197,12 +209,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 14
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -210,12 +223,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 15
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -223,12 +237,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 16
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -236,12 +251,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 17
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 17
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -249,12 +265,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 18
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 18
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -262,12 +279,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 19
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 19
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -275,12 +293,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 20
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 20
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -288,12 +307,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 21
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 21
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -301,12 +321,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 22
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 22
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -314,12 +335,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 23
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -327,7 +349,7 @@ slaying /world/world_104_114
 hp 36
 sp 39
 y 24
-fly_on 0
+move_on walk
 end
 arch brush
 y 24
@@ -337,89 +359,101 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 1
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -438,70 +472,80 @@ arch woods_2
 name foilage
 x 1
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 17
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 18
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 19
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 20
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 21
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 22
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 1
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -510,13 +554,14 @@ hp 36
 sp 39
 x 1
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 1
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -524,26 +569,29 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 2
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 2
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 2
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -610,7 +658,8 @@ arch woods_2
 name foilage
 x 2
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -629,21 +678,24 @@ arch woods_2
 name foilage
 x 2
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 2
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 2
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -694,7 +746,8 @@ arch woods_2
 name foilage
 x 2
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -703,13 +756,14 @@ hp 36
 sp 39
 x 2
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 2
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -717,19 +771,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 3
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 3
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -812,7 +868,8 @@ arch woods_2
 name foilage
 x 3
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -823,21 +880,24 @@ arch woods_2
 name foilage
 x 3
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 3
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 3
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -905,7 +965,8 @@ arch woods_2
 name foilage
 x 3
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -914,13 +975,14 @@ hp 36
 sp 39
 x 3
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 3
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -928,19 +990,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 4
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 4
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1007,28 +1071,32 @@ arch woods_2
 name foilage
 x 4
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 4
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 4
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 4
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -1071,7 +1139,8 @@ arch woods_2
 name foilage
 x 4
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1080,13 +1149,14 @@ hp 36
 sp 39
 x 4
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 4
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1094,19 +1164,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 5
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 5
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1205,14 +1277,16 @@ arch woods_2
 name foilage
 x 5
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 5
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_1_4
@@ -1223,14 +1297,16 @@ arch woods_2
 name foilage
 x 5
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 5
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1285,7 +1361,8 @@ arch woods_2
 name foilage
 x 5
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1294,13 +1371,14 @@ hp 36
 sp 39
 x 5
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 5
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1308,19 +1386,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 6
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 6
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1363,14 +1443,16 @@ arch woods_2
 name foilage
 x 6
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 6
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_3_3
@@ -1381,7 +1463,8 @@ arch woods_2
 name foilage
 x 6
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_2_2_1
@@ -1392,7 +1475,8 @@ arch woods_2
 name foilage
 x 6
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1443,7 +1527,8 @@ arch woods_2
 name foilage
 x 6
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1452,13 +1537,14 @@ hp 36
 sp 39
 x 6
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 6
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1466,19 +1552,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 7
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 7
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -1529,14 +1617,16 @@ arch woods_2
 name foilage
 x 7
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 7
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_2_2_3
@@ -1547,7 +1637,8 @@ arch woods_2
 name foilage
 x 7
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_2_2_4
@@ -1558,7 +1649,8 @@ arch woods_2
 name foilage
 x 7
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -1617,7 +1709,8 @@ arch woods_2
 name foilage
 x 7
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1626,13 +1719,14 @@ hp 36
 sp 39
 x 7
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 7
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1640,19 +1734,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 8
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -1675,21 +1771,24 @@ arch woods_2
 name foilage
 x 8
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_2_2_2
@@ -1716,28 +1815,32 @@ arch woods_2
 name foilage
 x 8
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 8
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -1788,7 +1891,8 @@ arch woods_2
 name foilage
 x 8
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1797,13 +1901,14 @@ hp 36
 sp 39
 x 8
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 8
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1811,19 +1916,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 9
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 9
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -1854,14 +1961,16 @@ arch woods_2
 name foilage
 x 9
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 9
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_2_2_3
@@ -1956,7 +2065,8 @@ arch woods_2
 name foilage
 x 9
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1965,13 +2075,14 @@ hp 36
 sp 39
 x 9
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 9
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -1979,19 +2090,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 10
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 10
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -2094,7 +2207,8 @@ arch woods_2
 name foilage
 x 10
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2103,13 +2217,14 @@ hp 36
 sp 39
 x 10
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 10
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2117,19 +2232,21 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 11
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 11
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -2192,7 +2309,8 @@ arch woods_2
 name foilage
 x 11
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -2211,7 +2329,8 @@ arch woods_2
 name foilage
 x 11
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -2282,7 +2401,8 @@ arch woods_2
 name foilage
 x 11
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2291,13 +2411,14 @@ hp 36
 sp 39
 x 11
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 11
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2305,47 +2426,53 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 12
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_1_3
@@ -2356,42 +2483,48 @@ arch woods_2
 name foilage
 x 12
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor2
@@ -2413,21 +2546,24 @@ arch woods_2
 name foilage
 x 12
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch wall_1_3
@@ -2438,49 +2574,56 @@ arch woods_2
 name foilage
 x 12
 y 17
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 18
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 19
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 20
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 21
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 22
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 12
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2489,13 +2632,14 @@ hp 36
 sp 39
 x 12
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 12
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2503,26 +2647,29 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 13
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2531,13 +2678,14 @@ hp 36
 sp 39
 x 13
 y 3
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 13
 y 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2546,118 +2694,134 @@ hp 36
 sp 39
 x 13
 y 4
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 13
 y 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 17
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 18
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 19
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2666,34 +2830,38 @@ hp 36
 sp 39
 x 13
 y 20
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 13
 y 20
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 21
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 22
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 13
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2702,13 +2870,14 @@ hp 36
 sp 39
 x 13
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 13
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2716,12 +2885,13 @@ slaying /world/world_104_114
 hp 36
 sp 39
 x 14
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2730,13 +2900,14 @@ hp 36
 sp 39
 x 14
 y 1
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 1
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2745,13 +2916,14 @@ hp 36
 sp 39
 x 14
 y 2
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 2
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2760,13 +2932,14 @@ hp 36
 sp 39
 x 14
 y 3
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 3
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2775,13 +2948,14 @@ hp 36
 sp 39
 x 14
 y 4
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 4
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2790,13 +2964,14 @@ hp 36
 sp 39
 x 14
 y 5
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 5
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2805,13 +2980,14 @@ hp 36
 sp 39
 x 14
 y 6
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 6
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2820,13 +2996,14 @@ hp 36
 sp 39
 x 14
 y 7
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 7
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2835,13 +3012,14 @@ hp 36
 sp 39
 x 14
 y 8
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 8
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2850,13 +3028,14 @@ hp 36
 sp 39
 x 14
 y 9
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 9
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2865,13 +3044,14 @@ hp 36
 sp 39
 x 14
 y 10
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 10
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2880,13 +3060,14 @@ hp 36
 sp 39
 x 14
 y 11
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 11
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2895,13 +3076,14 @@ hp 36
 sp 39
 x 14
 y 12
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 12
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2910,13 +3092,14 @@ hp 36
 sp 39
 x 14
 y 13
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 13
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2925,13 +3108,14 @@ hp 36
 sp 39
 x 14
 y 14
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 14
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2940,13 +3124,14 @@ hp 36
 sp 39
 x 14
 y 15
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 15
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2955,13 +3140,14 @@ hp 36
 sp 39
 x 14
 y 16
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 16
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2970,13 +3156,14 @@ hp 36
 sp 39
 x 14
 y 17
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 17
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -2985,13 +3172,14 @@ hp 36
 sp 39
 x 14
 y 18
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 18
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -3000,13 +3188,14 @@ hp 36
 sp 39
 x 14
 y 19
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 19
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -3015,20 +3204,22 @@ hp 36
 sp 39
 x 14
 y 20
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 20
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woods_2
 name foilage
 x 14
 y 21
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch woodfloor
@@ -3058,13 +3249,14 @@ hp 36
 sp 39
 x 14
 y 22
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 22
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -3073,13 +3265,14 @@ hp 36
 sp 39
 x 14
 y 23
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 23
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
 arch invis_exit
@@ -3088,12 +3281,13 @@ hp 36
 sp 39
 x 14
 y 24
-fly_on 0
+move_on walk
 end
 arch woods_2
 name foilage
 x 14
 y 24
-slow_move 3
+move_slow walk
+move_slow_penalty 3
 blocksview 1
 end
