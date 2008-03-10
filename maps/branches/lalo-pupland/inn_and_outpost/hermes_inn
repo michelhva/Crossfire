@@ -6,9 +6,7 @@ height 15
 enter_x 7
 enter_y 13
 msg
-Creator: Todd Mitchell
-CF Java Map Editor
-Date:    10/27/2002
+Created:  2002-10-27 Todd Mitchell
 endmsg
 outdoor 1
 end
@@ -2045,7 +2043,7 @@ arch check_floor
 slaying hermes_inn_pass
 x 20
 y 8
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 20
