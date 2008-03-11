@@ -573,6 +573,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 myserver.removeCrossfireQueryListener(this);
                 myserver.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
+                ItemsList.getItemsManager().reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -592,6 +593,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 myserver.connect(hostname, port, connectionListener);
                 Faces.reset();
                 commandQueue.clear();
+                ItemsList.getItemsManager().reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();

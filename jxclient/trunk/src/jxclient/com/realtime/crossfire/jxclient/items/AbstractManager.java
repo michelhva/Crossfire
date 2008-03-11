@@ -46,6 +46,14 @@ public abstract class AbstractManager
     private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();
 
     /**
+     * Reset the manager's state.
+     */
+    public void reset()
+    {
+        modifiedItems.clear();
+    }
+
+    /**
      * Add a {@link LocationListener}s to be notified about changes in a slot.
      *
      * @param index The slot index.
