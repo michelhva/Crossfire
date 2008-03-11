@@ -23,8 +23,10 @@ package com.realtime.crossfire.jxclient.items;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import javax.swing.event.EventListenerList;
 
 /**
@@ -71,6 +73,23 @@ public class ItemsManager
      * The current player object this client controls.
      */
     private CfPlayer player = null;
+
+    /**
+     * Reset the manager's state.
+     */
+    public synchronized void reset()
+    {
+        final Set<CfItem> tmp = new HashSet<CfItem>(allItems.values());
+        for (final CfItem item : tmp)
+        {
+            removeItem(item);
+        }
+        assert items.size() == 0;
+        currentFloorManager.setCurrentFloor(0);
+        floorManager.reset();
+        inventoryManager.reset();
+        setPlayer(null);
+    }
 
     /**
      * Return a list of items in a given location. The returned list may not be
@@ -176,7 +195,7 @@ public class ItemsManager
             return;
         }
 
-        removeItemFromLocation(item);
+        removeItemFromLocation(item, true);
     }
 
     /**
@@ -186,12 +205,6 @@ public class ItemsManager
      */
     public synchronized void removeItem(final CfItem item)
     {
-        // safeguard against broken servers
-        if (currentFloorManager.isCurrentFloor(item.getTag()))
-        {
-            currentFloorManager.setCurrentFloor(0);
-        }
-
         final CfItem deletedItem = allItems.remove(item.getTag());
         if (deletedItem == null)
         {
@@ -202,7 +215,7 @@ public class ItemsManager
             throw new AssertionError("deleted wrong item "+item.getTag());
         }
 
-        removeItemFromLocation(item);
+        removeItemFromLocation(item, true);
     }
 
     /**
@@ -241,7 +254,7 @@ public class ItemsManager
             throw new AssertionError("invalid item "+item.getTag());
         }
 
-        removeItemFromLocation(item);
+        removeItemFromLocation(item, false);
         item.setLocation(newLocation);
         addItemToLocation(item);
     }
@@ -250,9 +263,17 @@ public class ItemsManager
      * Remove an item from {@link #items}. The item must exist.
      *
      * @param item the item to remove
+     *
+     * @param removeItem whether the item is removed (<code>true</code>) or
+     * moved to a new location (<code>false</code>)
      */
-    private void removeItemFromLocation(final CfItem item)
+    private void removeItemFromLocation(final CfItem item, final boolean removeItem)
     {
+        if (currentFloorManager.isCurrentFloor(item.getTag()))
+        {
+            currentFloorManager.setCurrentFloor(0);
+        }
+
         final int where = item.getLocation();
 
         final List<CfItem> list = items.get(where);
@@ -342,8 +363,6 @@ public class ItemsManager
      */
     public synchronized void setPlayer(final CfPlayer player)
     {
-        if (player == null) throw new IllegalArgumentException();
-
         if (this.player == player)
         {
             for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
