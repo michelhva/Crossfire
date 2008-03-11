@@ -73,7 +73,7 @@ public abstract class AbstractManager
      */
     public void removeLocationListener(final int index, final LocationListener listener)
     {
-        EventListenerList listeners = allListeners.get(index);
+        final EventListenerList listeners = allListeners.get(index);
         assert listeners != null;
         listeners.remove(LocationListener.class, listener);
         if (listeners.getListenerCount() <= 0)
