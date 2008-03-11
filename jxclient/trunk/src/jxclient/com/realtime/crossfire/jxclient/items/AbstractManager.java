@@ -65,7 +65,7 @@ public abstract class AbstractManager
 
     /**
      * Remove a {@link LocationListener}s to be notified about changes in a
-     * slot..
+     * slot.
      *
      * @param index The slot index.
      *
