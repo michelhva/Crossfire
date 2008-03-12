@@ -8,7 +8,7 @@ height 30
 enter_x 1
 enter_y 1
 msg
-Created:  1995-03-24
+Created:  1995-02-24
 endmsg
 end
 arch flagstone
@@ -4439,6 +4439,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_earth_elemental

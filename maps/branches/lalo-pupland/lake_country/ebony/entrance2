@@ -5,9 +5,7 @@ region lakecountry
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Apr 22 20:00:12 1995
+Created:  1995-02-22
 endmsg
 end
 arch dun10
@@ -320,7 +318,8 @@ y 1
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch magic_mouth
 msg
@@ -367,7 +366,8 @@ y 4
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch magic_mouth
 msg
@@ -414,7 +414,8 @@ y 7
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch magic_mouth
 msg
@@ -461,7 +462,8 @@ y 10
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch magic_mouth
 msg
@@ -535,7 +537,8 @@ y 2
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 4
@@ -562,7 +565,8 @@ y 5
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 4
@@ -589,7 +593,8 @@ y 8
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 4
@@ -616,7 +621,8 @@ y 11
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 4
@@ -672,7 +678,8 @@ y 2
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 5
@@ -699,7 +706,8 @@ y 5
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 5
@@ -726,7 +734,8 @@ y 8
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 5
@@ -753,7 +762,8 @@ y 11
 speed 0.670000
 speed_left -3.090000
 attacktype 5121
-immune 5120
+resist_poison 100
+resist_paralysis 100
 end
 arch cobblestones
 x 5
@@ -2013,6 +2023,7 @@ hp 500
 x 14
 y 1
 type 0
+move_type walk
 monster 1
 unaggressive 1
 arch poisoning

@@ -6,9 +6,8 @@ darkness 5
 width 16
 height 41
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Tue Jun  6 14:45:11 1995
+Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -287,10 +286,11 @@ y 7
 speed 0.800000
 speed_left -4.700000
 level 60
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5100
-move_type fly_low
-immune 9
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -316,11 +316,11 @@ x 1
 y 9
 end
 arch locked_door1
-name permenent ice
+name permanent ice
 slaying celestial
 msg
 You can't seem to be able to force
-yourself through this permenent ice.
+yourself through this permanent ice.
 endmsg
 face icecube.111
 x 1
@@ -599,9 +599,9 @@ dam 5
 x 1
 y 17
 attacktype 5
+resist_fire 30
 path_attuned 2
 path_denied 4
-protected 4
 end
 arch small_stones
 x 1
@@ -659,10 +659,11 @@ y 23
 speed 0.600000
 speed_left -11.099999
 level 40
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5000
-move_type fly_low
-immune 9
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -2208,10 +2209,11 @@ Con 20
 hp 9000
 maxhp 9000
 exp 500000
-dam 89
 x 7
 y 7
 alive 1
+arch spell_meteor_swarm
+end
 end
 arch large_stones
 x 7
@@ -3630,10 +3632,11 @@ y 20
 speed 0.600000
 speed_left -11.099999
 level 40
+resist_physical 100
+resist_electricity 100
 material 64
 carrying 5000
-move_type fly_low
-immune 9
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none

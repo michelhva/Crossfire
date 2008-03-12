@@ -381,6 +381,7 @@ x 2
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -432,6 +433,7 @@ x 2
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -545,6 +547,7 @@ x 3
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -592,6 +595,7 @@ x 3
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -705,6 +709,7 @@ x 4
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -752,6 +757,7 @@ x 4
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1983,6 +1989,7 @@ speed 1.000000
 level 80
 type 0
 carrying 100
+move_type walk
 monster 1
 unaggressive 1
 sleep 1
@@ -2016,6 +2023,7 @@ y 12
 speed 1.000000
 level 50
 type 0
+move_type walk
 monster 1
 unaggressive 1
 sleep 1
@@ -2934,6 +2942,7 @@ x 17
 y 8
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -3253,6 +3262,7 @@ x 19
 y 8
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end

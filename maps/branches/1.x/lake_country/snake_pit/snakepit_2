@@ -2447,7 +2447,7 @@ resist_fire 30
 resist_electricity 30
 resist_poison 100
 carrying 100
-move_type fly_low
+move_type walk fly_low
 unaggressive 0
 can_see_in_dark 1
 arch abil_fear
@@ -4364,7 +4364,7 @@ resist_electricity 30
 resist_cold 100
 resist_paralyze 100
 carrying 25000
-move_type fly_low
+move_type walk fly_low
 arch abil_icestorm
 end
 arch spell_dragonbreath

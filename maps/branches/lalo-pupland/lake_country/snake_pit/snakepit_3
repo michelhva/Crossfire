@@ -6,9 +6,8 @@ darkness 5
 width 40
 height 40
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Sun Jun  4 13:29:23 1995
+Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -745,7 +744,7 @@ resist_confusion -100
 resist_fear 100
 resist_blind 50
 carrying 25000
-move_type fly_low
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -1396,7 +1395,7 @@ speed 0.700000
 speed_left -17.569998
 level 70
 attacktype 1167
-immune 8
+resist_electricity 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2122,8 +2121,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2161,8 +2161,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2378,8 +2379,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2417,8 +2419,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3388,8 +3391,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -3641,8 +3645,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -4352,8 +4357,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -4565,8 +4571,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -4907,7 +4914,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -4969,7 +4976,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 25000
-move_type fly_low
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion
@@ -5433,8 +5440,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5472,8 +5480,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5697,8 +5706,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -5736,8 +5746,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
+resist_fire 100
+resist_electricity 100
 can_see_in_dark 1
-immune 12
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -6589,18 +6600,24 @@ y 2
 carrying 25100
 arch potion_magic
 nrof 4
+arch spell_regenerate_spellpoints
+end
 end
 arch potion_heal
 nrof 8
+arch spell_heal
+end
 end
 arch rod_light
 name Rod of Knowledge
 hp 120
 maxhp 120
-sp 75
 level 20
 value 1000
+randomitems none
 identified 1
+arch spell_identify
+end
 end
 end
 arch large_stones
@@ -8545,7 +8562,7 @@ resist_cold -100
 resist_confusion -100
 resist_blind 50
 carrying 25000
-move_type fly_low
+move_type walk fly_low
 arch spell_dragonbreath
 end
 arch spell_mass_confusion

@@ -143,7 +143,7 @@ resist_electricity 100
 resist_confusion 100
 resist_acid 100
 carrying 545050
-move_type fly_low
+move_type walk fly_low
 can_cast_spell 1
 arch spell_create_bomb
 end
@@ -640,7 +640,7 @@ level 30
 attacktype 29
 resist_electricity 100
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch abil_icestorm
 end
 arch gem
@@ -1262,7 +1262,7 @@ level 30
 resist_electricity 100
 resist_cold 100
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch gem
 nrof 600
 end
@@ -1393,7 +1393,7 @@ level 30
 resist_electricity 100
 resist_cold 100
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch gem
 nrof 600
 end
@@ -2374,7 +2374,7 @@ level 30
 resist_electricity 100
 resist_cold 100
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch gem
 nrof 600
 end
@@ -2471,7 +2471,7 @@ level 30
 attacktype 29
 resist_electricity 100
 carrying 35000
-move_type fly_low
+move_type walk fly_low
 arch abil_icestorm
 end
 arch gem

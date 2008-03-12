@@ -5,9 +5,8 @@ region lakecountry
 width 20
 height 18
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Wed May  3 22:04:51 1995
+Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1035,6 +1034,7 @@ x 8
 y 11
 level 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
@@ -1309,7 +1309,7 @@ arch sign
 msg
 Thievies are severely penalized in this
 town!!!
--Old Sam
+                            -Old Sam
 endmsg
 x 10
 y 14
@@ -2117,6 +2117,8 @@ end
 arch lbulletwall_3
 x 17
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch woodfloor
 x 17

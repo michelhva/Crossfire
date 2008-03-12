@@ -5,7 +5,7 @@ region lakecountry
 width 15
 height 15
 msg
-Created:  1995-03-23
+Created:  1995-02-23
 endmsg
 end
 arch woodfloor
@@ -844,14 +844,17 @@ x 7
 y 3
 end
 arch woodfloor
-x 7
-y 4
-end
 arch check_floor
 slaying LC_inn1_pass
 x 7
 y 4
 connected 9
+end
+arch check_floor
+slaying LC_inn1_pass
+arch woodfloor
+x 7
+y 4
 end
 arch woodfloor
 x 7

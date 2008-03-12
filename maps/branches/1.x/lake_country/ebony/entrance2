@@ -5,7 +5,7 @@ region lakecountry
 width 16
 height 16
 msg
-Created:  1995-04-22
+Created:  1995-02-22
 endmsg
 end
 arch dun10
@@ -2023,6 +2023,7 @@ hp 500
 x 14
 y 1
 type 0
+move_type walk
 monster 1
 unaggressive 1
 arch poisoning

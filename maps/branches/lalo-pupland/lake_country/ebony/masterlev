@@ -5,9 +5,8 @@ region lakecountry
 width 25
 height 25
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Mon Apr 24 18:08:11 1995
+Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -382,6 +381,7 @@ x 2
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -433,6 +433,7 @@ x 2
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -546,6 +547,7 @@ x 3
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -593,6 +595,7 @@ x 3
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -706,6 +709,7 @@ x 4
 y 7
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -753,6 +757,7 @@ x 4
 y 16
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1323,12 +1328,13 @@ uncontrollably breathe forth like a
 fire dragon.
 endmsg
 face potiongen.111
-sp 58
 x 7
 y 20
 value 4000
 unpaid 1
 identified 1
+arch spell_dragonbreath
+end
 end
 arch shop_empty
 x 7
@@ -1479,12 +1485,13 @@ uncontrollably breathe forth like a ice
 dragon.
 endmsg
 face potiongen.111
-sp 59
 x 8
 y 20
 value 4000
 unpaid 1
 identified 1
+arch spell_large_icestorm
+end
 end
 arch shop_empty
 x 8
@@ -1634,12 +1641,13 @@ power to poison the air all around you
 with your bad breath.
 endmsg
 face potiongen.111
-sp 21
 x 9
 y 20
 value 1000
 unpaid 1
 identified 1
+arch spell_poison_cloud
+end
 end
 arch shop_empty
 x 9
@@ -1789,12 +1797,13 @@ senses and let you move and react
 faster...
 endmsg
 face potiongen.111
-sp 86
 x 10
 y 20
 value 6000
 unpaid 1
 identified 1
+arch spell_haste
+end
 end
 arch shop_empty
 x 10
@@ -1812,12 +1821,13 @@ arch potion_heroism
 name potion of invisibility
 name_pl potions of invisibility
 face potiongen.111
-sp 26
 x 10
 y 22
 value 2000
 unpaid 1
 identified 1
+arch spell_invisible
+end
 end
 arch shop_gems
 x 10
@@ -1979,6 +1989,7 @@ speed 1.000000
 level 80
 type 0
 carrying 100
+move_type walk
 monster 1
 unaggressive 1
 sleep 1
@@ -2012,6 +2023,7 @@ y 12
 speed 1.000000
 level 50
 type 0
+move_type walk
 monster 1
 unaggressive 1
 sleep 1
@@ -2930,6 +2942,7 @@ x 17
 y 8
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -3249,6 +3262,7 @@ x 19
 y 8
 level 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end

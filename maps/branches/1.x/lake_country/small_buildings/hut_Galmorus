@@ -623,6 +623,7 @@ hp 200
 x 4
 y 14
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2380,6 +2381,7 @@ x 16
 y 9
 type 0
 carrying 2120
+move_type walk
 monster 1
 unaggressive 1
 arch eyeglasses
