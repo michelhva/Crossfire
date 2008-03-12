@@ -5,9 +5,8 @@ region lakecountry
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Mar 28 11:58:46 1995
+Created:  1995-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch mine2
@@ -247,6 +246,8 @@ arch lightningwall_5
 x 2
 y 1
 level 15
+arch spell_sm_lightning
+end
 end
 arch cobblestones2
 x 2
@@ -410,6 +411,8 @@ arch lightningwall_1
 x 2
 y 13
 level 15
+arch spell_sm_lightning
+end
 end
 arch mine13
 x 2
@@ -593,6 +596,8 @@ end
 arch lbulletwall_4
 x 4
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 4
@@ -631,6 +636,8 @@ end
 arch lbulletwall_2
 x 4
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 4
@@ -692,6 +699,8 @@ end
 arch lbulletwall_5
 x 5
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 5
@@ -732,6 +741,8 @@ end
 arch lbulletwall_1
 x 5
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 5
@@ -898,6 +909,8 @@ end
 arch lbulletwall_5
 x 7
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 7
@@ -938,6 +951,8 @@ end
 arch lbulletwall_1
 x 7
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 7
@@ -1121,6 +1136,8 @@ end
 arch lbulletwall_5
 x 9
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 9
@@ -1161,6 +1178,8 @@ end
 arch lbulletwall_1
 x 9
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 9
@@ -1327,6 +1346,8 @@ end
 arch lbulletwall_5
 x 11
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 11
@@ -1367,6 +1388,8 @@ end
 arch lbulletwall_1
 x 11
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 11
@@ -1433,6 +1456,8 @@ end
 arch lbulletwall_6
 x 12
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 12
@@ -1489,6 +1514,8 @@ end
 arch lbulletwall_8
 x 12
 y 10
+arch spell_lg_magic_bullet
+end
 end
 arch cobblestones
 x 12
@@ -1743,7 +1770,7 @@ x 14
 y 4
 end
 arch spikes_open
-name wierd cobblestone
+name weird cobblestone
 face cobblesto2.111
 x 14
 y 4
@@ -1756,7 +1783,7 @@ x 14
 y 5
 end
 arch spikes_open
-name wierd cobblestone
+name weird cobblestone
 face cobblesto2.111
 x 14
 y 5
@@ -1807,7 +1834,7 @@ x 14
 y 9
 end
 arch spikes_open
-name wierd cobblestone
+name weird cobblestone
 face cobblesto2.111
 x 14
 y 9
@@ -1824,7 +1851,7 @@ x 14
 y 10
 end
 arch spikes_open
-name wierd cobblestone
+name weird cobblestone
 face cobblesto2.111
 x 14
 y 10

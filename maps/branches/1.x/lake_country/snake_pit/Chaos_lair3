@@ -290,7 +290,7 @@ resist_physical 100
 resist_electricity 100
 material 64
 carrying 5100
-move_type fly_low
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -663,7 +663,7 @@ resist_physical 100
 resist_electricity 100
 material 64
 carrying 5000
-move_type fly_low
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none
@@ -3636,7 +3636,7 @@ resist_physical 100
 resist_electricity 100
 material 64
 carrying 5000
-move_type fly_low
+move_type walk fly_low
 arch pyro_book
 value 1600
 randomitems none

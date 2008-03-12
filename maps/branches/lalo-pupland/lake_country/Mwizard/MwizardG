@@ -1,12 +1,11 @@
 arch map
-name MwizardG
+name Tower of Sorcery
 region lakecountry
 width 37
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr 26 06:07:03 1995
+Created:  1995-02-26
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -926,6 +925,8 @@ end
 arch potion_heroism
 x 8
 y 18
+arch spell_heroism
+end
 end
 arch flagstone
 x 8
@@ -1332,6 +1333,8 @@ end
 arch potion_magic
 x 12
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch flagstone
 x 12
@@ -1545,6 +1548,8 @@ end
 arch potion_magic
 x 14
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch flagstone
 x 14
@@ -1755,6 +1760,8 @@ end
 arch potion_magic
 x 16
 y 18
+arch spell_regenerate_spellpoints
+end
 end
 arch magic_mouth
 msg
@@ -1763,8 +1770,7 @@ endmsg
 x 16
 y 19
 connected 999
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch flagstone
 x 16
@@ -3048,6 +3054,8 @@ end
 arch potion_heal
 x 29
 y 15
+arch spell_heal
+end
 end
 arch flagstone
 x 29
@@ -3056,6 +3064,8 @@ end
 arch potion_heal
 x 29
 y 16
+arch spell_heal
+end
 end
 arch flagstone
 x 29

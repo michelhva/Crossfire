@@ -5,9 +5,8 @@ region lakecountry
 width 26
 height 30
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Thu Apr 13 02:47:04 1995
+Created:  1995-04-13 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch jungle_2
@@ -2342,6 +2341,8 @@ nrof 3
 end
 arch potion_magic
 nrof 2
+arch spell_regenerate_spellpoints
+end
 end
 arch potionint
 end
@@ -2591,8 +2592,8 @@ y 7
 speed 1.0
 speed_left -13.210000
 attack_movement 4
+resist_physical 100
 carrying 5000
-immune 4097
 arch dragon_scale
 name figurine of a faerie dragon
 face fae_drag.171
@@ -4235,12 +4236,14 @@ speed 1.0
 attack_movement 4
 level 50
 type 0
+resist_physical 100
+resist_magic 100
 carrying 5000
+move_type walk
 monster 1
 unique 1
 can_cast_spell 1
 can_use_scroll 1
-immune 3
 arch skill_pyromancy
 end
 arch skill_evocation

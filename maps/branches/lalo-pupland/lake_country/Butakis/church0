@@ -5,9 +5,7 @@ region lakecountry
 width 20
 height 30
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Wed Mar 29 19:25:57 1995
+Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -208,6 +206,7 @@ arch priest
 x 1
 y 1
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1053,6 +1052,7 @@ arch priest
 x 6
 y 3
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1259,6 +1259,7 @@ arch priest
 x 7
 y 4
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2120,6 +2121,7 @@ arch priest
 x 12
 y 4
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2304,6 +2306,7 @@ arch priest
 x 13
 y 3
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end

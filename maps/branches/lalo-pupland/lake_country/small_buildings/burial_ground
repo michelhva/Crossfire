@@ -5,9 +5,8 @@ region lakecountry
 width 8
 height 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Mar 20 08:27:08 1995
+Created:  1995-02-20
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -804,14 +803,18 @@ x 2
 y 5
 level 100
 attacktype 285
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 carrying 7500
-immune 28
 arch staff
 name Staff
-sp 35
 food 20
 level 20
+randomitems none
 identified 1
+arch spell_heal
+end
 end
 arch pyro_book
 value 1600
@@ -1933,7 +1936,7 @@ x 5
 y 2
 speed 2.000000
 level 30
-move_type fly_low
+move_type walk fly_low
 end
 arch magic_mouth
 name howling voice

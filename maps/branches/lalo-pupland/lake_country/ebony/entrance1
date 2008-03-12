@@ -5,9 +5,7 @@ region lakecountry
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Apr 22 20:00:12 1995
+Created:  1995-02-22
 endmsg
 end
 arch marble
@@ -2230,6 +2228,7 @@ hp 500
 x 14
 y 1
 type 0
+move_type walk
 monster 1
 unaggressive 1
 arch poisoning

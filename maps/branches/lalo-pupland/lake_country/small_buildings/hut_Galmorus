@@ -6,9 +6,7 @@ width 21
 height 24
 enter_x 9
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Fri Mar 24 11:46:19 1995
+Created:  1995-03-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
 endmsg
 end
 arch grass
@@ -625,6 +623,7 @@ hp 200
 x 4
 y 14
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -819,7 +818,7 @@ or don't want to meet guests at the
 moment. So please come visit me again
 some other time. Take some refreshment
 and food before you leave.
--Galmorus
+                   -Galmorus
 endmsg
 x 6
 y 2
@@ -2382,6 +2381,7 @@ x 16
 y 9
 type 0
 carrying 2120
+move_type walk
 monster 1
 unaggressive 1
 arch eyeglasses

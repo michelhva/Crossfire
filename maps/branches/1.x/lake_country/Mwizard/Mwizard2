@@ -4,7 +4,7 @@ region lakecountry
 width 30
 height 30
 msg
-Created:  1995-04-26
+Created:  1995-02-26
 endmsg
 end
 arch flagstone
@@ -4966,6 +4966,7 @@ attack_movement 4
 level 25
 type 0
 carrying 20
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1

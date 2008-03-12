@@ -1034,6 +1034,7 @@ x 8
 y 11
 level 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
@@ -1945,7 +1946,7 @@ end
 arch door_look_2
 x 15
 y 14
-move_block 0
+no_pass 0
 end
 arch woodfloor
 x 15

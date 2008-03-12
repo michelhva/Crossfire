@@ -6,9 +6,8 @@ darkness 5
 width 36
 height 36
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.berkeley.edu
-Date: Wed Apr 26 00:15:00 1995
+Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -6545,7 +6544,7 @@ guest to enter his chamber. The Chaos
 Lord would destroy you with disdain.
 I think you could bring him some
 sacrifice and see what happens.
-Kasnuk
+                     Kasnuk
 endmsg
 end
 arch scroll
@@ -6555,7 +6554,7 @@ As we agreed to each other, as a
 safety measure, I entrust you to guard
 my Venomtooth. In exchange I will guard
 your diamonds.
-Kasnuk
+                     Kasnuk
 endmsg
 end
 arch key2
@@ -6570,9 +6569,13 @@ value 60000
 end
 arch potion_heal
 nrof 2
+arch spell_heal
+end
 end
 arch potion_magic
 nrof 2
+arch spell_regenerate_spellpoints
+end
 end
 end
 arch small_stones

@@ -5,9 +5,8 @@ region lakecountry
 width 17
 height 17
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Wed Mar 22 06:31:54 1995
+Created:  1995-03-22 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch permanent_lava
@@ -896,8 +895,9 @@ endmsg
 face u_horn.114
 hp 100
 maxhp 100
-sp 126
 value 10000000
+arch spell_restoration
+end
 end
 arch pyro_book
 value 2400

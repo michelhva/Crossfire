@@ -5,9 +5,7 @@ region lakecountry
 width 25
 height 25
 msg
-Creator: Kundi, Xue
-Email: xkd@soda.csua.berkeley.edu
-Date: Thu Apr  6 14:05:55 1995
+Created:  1995-04-06 Kundi, Xue (xkd@soda.csua.berkeley.edu)
 endmsg
 end
 arch grass
@@ -185,6 +183,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -501,6 +500,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -965,6 +965,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -1587,6 +1588,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -2275,6 +2277,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -3331,6 +3334,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -3773,6 +3777,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
@@ -3973,6 +3978,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_summon_water_elemental
