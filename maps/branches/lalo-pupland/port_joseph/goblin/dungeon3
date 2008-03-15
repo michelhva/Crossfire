@@ -6,9 +6,8 @@ darkness 5
 width 24
 height 24
 msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Sat Sep  3 16:45:01 1994
+Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -2523,6 +2522,8 @@ end
 arch lightningwall_2
 x 16
 y 20
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 16

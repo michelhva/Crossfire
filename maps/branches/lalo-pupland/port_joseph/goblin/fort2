@@ -1,12 +1,11 @@
 arch map
 name Goblin Fort
+difficulty 1
 region portjoseph
 width 24
 height 15
 msg
-Creator: llangley
-Email: langley@fermat.dartmouth.edu
-Date: Fri Jul 22 22:16:49 1994
+Created:  1994-07-22 langley (langley@fermat.dartmouth.edu)
 endmsg
 end
 arch afloor_right
@@ -548,7 +547,7 @@ x 5
 y 6
 end
 arch note
-name orchish note
+name orcish note
 msg
 Beewar!  Du not tuch! Danjir
 endmsg
@@ -613,7 +612,7 @@ arch afloor_right
 x 6
 y 2
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 2
 end
@@ -1590,7 +1589,7 @@ end
 arch afloor_right
 x 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 end
 arch afloor_right
