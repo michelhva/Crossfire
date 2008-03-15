@@ -1,5 +1,6 @@
 arch map
-name citydeclouds
+name City de Clouds
+difficulty 1
 region dream
 width 50
 height 50
@@ -3562,23 +3563,27 @@ face shop_empty.111
 x 5
 y 21
 end
+arch swall_1_1
+x 5
+y 21
+end
 arch cwall_2_2_4
 x 5
 y 21
+end
+arch dungeon_magic
+x 5
+y 22
 end
 arch dungeon_floor
 x 5
 y 22
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 22
 end
 arch brazier
-x 5
-y 22
-end
-arch dungeon_magic
 x 5
 y 22
 end
@@ -16933,23 +16938,27 @@ face shop_empty.111
 x 45
 y 21
 end
+arch swall_1_1
+x 45
+y 21
+end
 arch cwall_2_2_1
 x 45
 y 21
+end
+arch dungeon_magic
+x 45
+y 22
 end
 arch dungeon_floor
 x 45
 y 22
 end
-arch swall_1_1
+arch swall_2_1_1
 x 45
 y 22
 end
 arch brazier
-x 45
-y 22
-end
-arch dungeon_magic
 x 45
 y 22
 end

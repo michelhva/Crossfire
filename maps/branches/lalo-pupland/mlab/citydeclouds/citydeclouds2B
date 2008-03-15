@@ -8,9 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Creator: mikeeusa
-Email: gnu@foo.bar
-Date: Wed Aug 28 11:11:32 2002
+Created:  2002-02-28 mikeeusa
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2A
@@ -14938,8 +14936,8 @@ x 36
 y 42
 end
 arch sign_w
-name Rare Poisined Discs
-name_pl Rare Poisined Discs
+name Rare Poisoned Discs
+name_pl Rare Poisoned Discs
 msg
 Rare Poisoned Discs imported from the
 East. The finest quality light-weight
@@ -16613,7 +16611,7 @@ arch flagstone
 x 40
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 40
 y 27
 end
@@ -17059,7 +17057,7 @@ arch flagstone
 x 41
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 41
 y 27
 end
@@ -17521,7 +17519,7 @@ arch flagstone
 x 42
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 42
 y 27
 end
@@ -17564,7 +17562,7 @@ end
 arch table_3
 x 42
 y 31
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 42
@@ -17957,7 +17955,7 @@ arch flagstone
 x 43
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 43
 y 27
 end
@@ -18454,7 +18452,7 @@ arch flagstone
 x 44
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 44
 y 27
 end
@@ -18948,7 +18946,7 @@ arch flagstone
 x 45
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 45
 y 27
 end
@@ -19451,7 +19449,7 @@ arch flagstone
 x 46
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 46
 y 27
 end
@@ -19893,7 +19891,7 @@ arch flagstone
 x 47
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 47
 y 27
 end
@@ -20413,7 +20411,7 @@ arch flagstone
 x 48
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 48
 y 27
 end
@@ -20888,7 +20886,7 @@ arch flagstone
 x 49
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 49
 y 27
 end

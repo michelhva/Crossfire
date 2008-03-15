@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-28 mikeeusa
+Created:  2002-02-28 mikeeusa
 Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
@@ -4240,7 +4240,7 @@ arch flagstone
 x 8
 y 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 16
 end
@@ -15305,13 +15305,6 @@ face shop_empty.111
 x 32
 y 12
 end
-arch stair_down_1
-slaying cdcunderbigstre1
-hp 101
-sp 94
-x 32
-y 12
-end
 arch fighter
 x 32
 y 12
@@ -15705,13 +15698,6 @@ arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
-x 33
-y 12
-end
-arch stair_down_1
-slaying cdcunderbigstre1
-hp 102
-sp 94
 x 33
 y 12
 end
@@ -19906,19 +19892,17 @@ arch dungeon_floor
 x 42
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 42
 y 12
-speed 0.500000
 end
 arch dungeon_floor
 x 42
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 42
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 42
@@ -20453,19 +20437,17 @@ arch dungeon_floor
 x 43
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 43
 y 12
-speed 0.500000
 end
 arch dungeon_floor
 x 43
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 43
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 43
@@ -20883,9 +20865,23 @@ arch swall_2_1_2
 x 44
 y 11
 end
+arch invis_exit
+slaying cloudworlddecity
+hp 84
+sp 97
+x 44
+y 12
+end
 arch dungeon_floor
 x 44
 y 12
+end
+arch invis_exit
+slaying cloudworlddecity
+hp 84
+sp 97
+x 44
+y 13
 end
 arch dungeon_floor
 x 44
@@ -21344,10 +21340,9 @@ arch dungeon_floor
 x 45
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 45
 y 12
-speed 0.500000
 end
 arch dungeon_magic
 x 45
@@ -21357,10 +21352,9 @@ arch dungeon_floor
 x 45
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 45
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 45
@@ -21737,13 +21731,6 @@ arch dungeon_floor
 x 46
 y 6
 end
-arch stair_up_2
-slaying cdccotgf1
-hp 115
-sp 48
-x 46
-y 6
-end
 arch flagstone
 name floor
 name_pl floor
@@ -21798,10 +21785,9 @@ arch dungeon_floor
 x 46
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 46
 y 12
-speed 0.500000
 end
 arch dungeon_magic
 x 46
@@ -21811,10 +21797,9 @@ arch dungeon_floor
 x 46
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 46
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 46

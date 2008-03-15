@@ -8,9 +8,8 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Creator: mikeeusa
-Email: gnu@foo.bar
-Date: Wed Aug 28 11:11:32 2002
+Created:  2002-02-28 mikeeusa
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2D
@@ -208,7 +207,7 @@ end
 arch flagstone
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 y 27
 end
 arch flagstone
@@ -582,7 +581,7 @@ arch flagstone
 x 1
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 27
 end
@@ -1086,7 +1085,7 @@ arch flagstone
 x 2
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 y 27
 end
@@ -1326,7 +1325,7 @@ arch flagstone
 x 3
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 5
 end
@@ -1526,7 +1525,7 @@ arch flagstone
 x 3
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 27
 end
@@ -1998,7 +1997,7 @@ arch flagstone
 x 4
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 27
 end
@@ -2462,7 +2461,7 @@ arch flagstone
 x 5
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 27
 end
@@ -2898,7 +2897,7 @@ arch flagstone
 x 6
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 27
 end
@@ -3338,7 +3337,7 @@ arch flagstone
 x 7
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 27
 end
@@ -3838,7 +3837,7 @@ arch flagstone
 x 8
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 27
 end
@@ -4238,7 +4237,7 @@ arch flagstone
 x 9
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 27
 end
@@ -4710,7 +4709,7 @@ arch flagstone
 x 10
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 27
 end
@@ -5144,7 +5143,7 @@ arch flagstone
 x 11
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 27
 end
@@ -5618,7 +5617,7 @@ arch flagstone
 x 12
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 27
 end
@@ -6074,7 +6073,7 @@ arch flagstone
 x 13
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 y 27
 end
@@ -6560,7 +6559,7 @@ arch flagstone
 x 14
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 27
 end
@@ -7010,7 +7009,7 @@ arch flagstone
 x 15
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 27
 end
@@ -7482,7 +7481,7 @@ arch flagstone
 x 16
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 y 27
 end
@@ -7926,7 +7925,7 @@ arch flagstone
 x 17
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 17
 y 27
 end
@@ -8414,7 +8413,7 @@ arch flagstone
 x 18
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 y 27
 end
@@ -8814,7 +8813,7 @@ arch flagstone
 x 19
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 y 27
 end
@@ -9250,7 +9249,7 @@ arch flagstone
 x 20
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 20
 y 27
 end
@@ -9679,7 +9678,7 @@ arch flagstone
 x 21
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 21
 y 27
 end
@@ -10151,7 +10150,7 @@ arch flagstone
 x 22
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 22
 y 27
 end
@@ -10591,7 +10590,7 @@ arch flagstone
 x 23
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 23
 y 27
 end
@@ -11027,7 +11026,7 @@ arch flagstone
 x 24
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 y 27
 end
@@ -11555,7 +11554,7 @@ arch flagstone
 x 25
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 25
 y 27
 end
@@ -11959,7 +11958,7 @@ arch flagstone
 x 26
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 26
 y 27
 end
@@ -12160,7 +12159,7 @@ arch flagstone
 x 27
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 y 5
 end
@@ -12392,7 +12391,7 @@ arch flagstone
 x 27
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 y 27
 end
@@ -12806,7 +12805,7 @@ arch flagstone
 x 28
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 28
 y 27
 end
@@ -13289,7 +13288,7 @@ arch flagstone
 x 29
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 29
 y 27
 end
@@ -14068,7 +14067,7 @@ arch flagstone
 x 31
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 31
 y 8
 end
@@ -14436,7 +14435,7 @@ arch flagstone
 x 32
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 y 8
 end
@@ -14485,7 +14484,7 @@ arch flagstone
 x 32
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 y 13
 end
@@ -14838,7 +14837,7 @@ arch flagstone
 x 33
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 y 8
 end
@@ -14887,7 +14886,7 @@ arch flagstone
 x 33
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 y 13
 end
@@ -15179,7 +15178,7 @@ arch flagstone
 x 34
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 y 8
 end
@@ -15228,7 +15227,7 @@ arch flagstone
 x 34
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 y 13
 end
@@ -15513,7 +15512,7 @@ arch flagstone
 x 35
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 35
 y 13
 end
@@ -15829,7 +15828,7 @@ arch flagstone
 x 36
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 36
 y 13
 end
@@ -16145,7 +16144,7 @@ arch flagstone
 x 37
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 37
 y 13
 end
@@ -17170,7 +17169,6 @@ end
 arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
-sp 163
 x 40
 y 13
 value 1500
@@ -17190,7 +17188,6 @@ end
 arch balm_generic
 name balm of cure vision
 name_pl balm of cure vision
-sp 163
 x 40
 y 14
 value 1500
@@ -17548,7 +17545,6 @@ end
 arch staff
 name staff of healing
 name_pl staff of healing
-sp 34
 food 20
 x 41
 y 13
@@ -17570,7 +17566,6 @@ end
 arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
-sp 171
 x 41
 y 14
 level 20
@@ -17958,7 +17953,6 @@ end
 arch balm_generic
 name balm of major healing
 name_pl balm of major healing
-sp 34
 x 42
 y 13
 nrof 5
@@ -17979,7 +17973,6 @@ end
 arch balm_generic
 name balm of curing disease
 name_pl balm of curing disease
-sp 171
 x 42
 y 14
 level 20
@@ -18370,7 +18363,6 @@ end
 arch balm_generic
 name balm of major healing
 name_pl balm of major healing
-sp 34
 x 43
 y 14
 nrof 5

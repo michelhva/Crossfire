@@ -1,5 +1,5 @@
 arch map
-name <untitled>
+name City de Clouds Big Store
 reset_timeout 7200
 difficulty 1
 width 50
@@ -369,9 +369,6 @@ arch dungeon_magic
 y 43
 end
 arch flagstone
-y 43
-end
-arch woodwall_1_3
 y 43
 end
 arch dwall_3_2
@@ -1497,7 +1494,7 @@ arch flagstone
 x 2
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 y 43
 end
@@ -1890,7 +1887,7 @@ arch flagstone
 x 3
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 43
 end
@@ -2279,7 +2276,7 @@ arch flagstone
 x 4
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 43
 end
@@ -2892,7 +2889,7 @@ arch flagstone
 x 5
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 43
 end
@@ -3485,7 +3482,7 @@ arch flagstone
 x 6
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 43
 end
@@ -3878,7 +3875,7 @@ arch flagstone
 x 7
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 43
 end
@@ -3908,7 +3905,7 @@ end
 arch flagstone
 x 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 end
 arch dungeon_magic
@@ -4271,7 +4268,7 @@ arch flagstone
 x 8
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 43
 end
@@ -4301,7 +4298,7 @@ end
 arch flagstone
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch dungeon_magic
@@ -4876,7 +4873,7 @@ arch flagstone
 x 9
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 43
 end
@@ -4906,7 +4903,7 @@ end
 arch flagstone
 x 10
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 end
 arch dungeon_magic
@@ -5481,7 +5478,7 @@ arch flagstone
 x 10
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 43
 end
@@ -5511,7 +5508,7 @@ end
 arch flagstone
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch dungeon_magic
@@ -5874,7 +5871,7 @@ arch flagstone
 x 11
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 43
 end
@@ -5904,7 +5901,7 @@ end
 arch flagstone
 x 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 end
 arch dungeon_magic
@@ -6263,7 +6260,7 @@ arch flagstone
 x 12
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 43
 end
@@ -6293,7 +6290,7 @@ end
 arch flagstone
 x 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 end
 arch dungeon_magic
@@ -6836,7 +6833,7 @@ arch flagstone
 x 13
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 y 43
 end
@@ -6866,7 +6863,7 @@ end
 arch flagstone
 x 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 end
 arch dungeon_magic
@@ -7409,7 +7406,7 @@ arch flagstone
 x 14
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 43
 end
@@ -7439,7 +7436,7 @@ end
 arch flagstone
 x 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 end
 arch dungeon_magic
@@ -7742,7 +7739,7 @@ arch flagstone
 x 15
 y 21
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 21
 end
@@ -7950,7 +7947,7 @@ arch flagstone
 x 15
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 43
 end
@@ -7980,7 +7977,7 @@ end
 arch flagstone
 x 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 end
 arch dungeon_magic
@@ -8523,7 +8520,7 @@ arch flagstone
 x 16
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 y 43
 end
@@ -8553,7 +8550,7 @@ end
 arch flagstone
 x 17
 end
-arch dwall3_3
+arch dwall_3_3
 x 17
 end
 arch dungeon_magic
@@ -8984,7 +8981,7 @@ arch flagstone
 x 17
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 17
 y 43
 end
@@ -9014,7 +9011,7 @@ end
 arch flagstone
 x 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 end
 arch dungeon_magic
@@ -9389,7 +9386,7 @@ arch flagstone
 x 18
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 y 43
 end
@@ -9419,7 +9416,7 @@ end
 arch flagstone
 x 19
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 end
 arch dungeon_magic
@@ -9838,7 +9835,7 @@ arch flagstone
 x 19
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 y 43
 end
@@ -9868,7 +9865,7 @@ end
 arch flagstone
 x 20
 end
-arch dwall3_3
+arch dwall_3_3
 x 20
 end
 arch dungeon_magic
@@ -10419,7 +10416,7 @@ arch flagstone
 x 20
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 20
 y 43
 end
@@ -10449,7 +10446,7 @@ end
 arch flagstone
 x 21
 end
-arch dwall3_3
+arch dwall_3_3
 x 21
 end
 arch dungeon_magic
@@ -10976,7 +10973,7 @@ arch flagstone
 x 21
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 21
 y 43
 end
@@ -11006,7 +11003,7 @@ end
 arch flagstone
 x 22
 end
-arch dwall3_3
+arch dwall_3_3
 x 22
 end
 arch dungeon_magic
@@ -11417,7 +11414,7 @@ arch flagstone
 x 22
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 22
 y 43
 end
@@ -11447,7 +11444,7 @@ end
 arch flagstone
 x 23
 end
-arch dwall3_3
+arch dwall_3_3
 x 23
 end
 arch dungeon_magic
@@ -11854,7 +11851,7 @@ arch flagstone
 x 23
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 23
 y 43
 end
@@ -11884,7 +11881,7 @@ end
 arch flagstone
 x 24
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 end
 arch dungeon_magic
@@ -12419,7 +12416,7 @@ arch flagstone
 x 24
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 y 43
 end
@@ -12449,7 +12446,7 @@ end
 arch flagstone
 x 25
 end
-arch dwall3_3
+arch dwall_3_3
 x 25
 end
 arch dungeon_magic
@@ -13015,7 +13012,7 @@ arch flagstone
 x 25
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 25
 y 43
 end
@@ -13045,7 +13042,7 @@ end
 arch flagstone
 x 26
 end
-arch dwall3_3
+arch dwall_3_3
 x 26
 end
 arch dungeon_magic
@@ -13452,7 +13449,7 @@ arch flagstone
 x 26
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 26
 y 43
 end
@@ -13482,7 +13479,7 @@ end
 arch flagstone
 x 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 end
 arch dungeon_magic
@@ -13869,7 +13866,7 @@ arch flagstone
 x 27
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 y 43
 end
@@ -13899,7 +13896,7 @@ end
 arch flagstone
 x 28
 end
-arch dwall3_3
+arch dwall_3_3
 x 28
 end
 arch dungeon_magic
@@ -14358,7 +14355,7 @@ arch flagstone
 x 28
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 28
 y 43
 end
@@ -14388,7 +14385,7 @@ end
 arch flagstone
 x 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 29
 end
 arch dungeon_magic
@@ -14855,7 +14852,7 @@ arch flagstone
 x 29
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 29
 y 43
 end
@@ -14885,7 +14882,7 @@ end
 arch flagstone
 x 30
 end
-arch dwall3_3
+arch dwall_3_3
 x 30
 end
 arch dungeon_magic
@@ -15216,7 +15213,7 @@ arch flagstone
 x 30
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 30
 y 43
 end
@@ -15234,7 +15231,7 @@ end
 arch flagstone
 x 31
 end
-arch dwall3_3
+arch dwall_3_3
 x 31
 end
 arch dungeon_magic
@@ -15613,7 +15610,7 @@ arch flagstone
 x 31
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 31
 y 43
 end
@@ -15631,7 +15628,7 @@ end
 arch flagstone
 x 32
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 end
 arch dungeon_magic
@@ -16010,7 +16007,7 @@ arch flagstone
 x 32
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 y 43
 end
@@ -16028,7 +16025,7 @@ end
 arch flagstone
 x 33
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 end
 arch dungeon_magic
@@ -16355,7 +16352,7 @@ arch flagstone
 x 33
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 y 43
 end
@@ -16373,7 +16370,7 @@ end
 arch flagstone
 x 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 end
 arch dungeon_magic
@@ -16772,7 +16769,7 @@ arch flagstone
 x 34
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 y 43
 end
@@ -16790,7 +16787,7 @@ end
 arch flagstone
 x 35
 end
-arch dwall3_3
+arch dwall_3_3
 x 35
 end
 arch dungeon_magic
@@ -17189,7 +17186,7 @@ arch flagstone
 x 35
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 35
 y 43
 end
@@ -17207,7 +17204,7 @@ end
 arch flagstone
 x 36
 end
-arch dwall3_3
+arch dwall_3_3
 x 36
 end
 arch dungeon_magic
@@ -17570,7 +17567,7 @@ arch flagstone
 x 36
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 36
 y 43
 end
@@ -17596,7 +17593,7 @@ end
 arch flagstone
 x 37
 end
-arch dwall3_3
+arch dwall_3_3
 x 37
 end
 arch dungeon_magic
@@ -17963,7 +17960,7 @@ arch flagstone
 x 37
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 37
 y 43
 end
@@ -17989,7 +17986,7 @@ end
 arch flagstone
 x 38
 end
-arch dwall3_3
+arch dwall_3_3
 x 38
 end
 arch dungeon_magic
@@ -18424,7 +18421,7 @@ arch flagstone
 x 38
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 38
 y 43
 end
@@ -18450,7 +18447,7 @@ end
 arch flagstone
 x 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 39
 end
 arch dungeon_magic
@@ -18699,7 +18696,7 @@ arch swall_1_2
 x 39
 y 21
 end
-arch dwall3_3
+arch dwall_3_3
 x 39
 y 21
 end
@@ -18919,7 +18916,7 @@ arch flagstone
 x 39
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 39
 y 43
 end
@@ -18945,7 +18942,7 @@ end
 arch flagstone
 x 40
 end
-arch dwall3_3
+arch dwall_3_3
 x 40
 end
 arch dungeon_magic
@@ -19420,7 +19417,7 @@ arch flagstone
 x 40
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 40
 y 43
 end
@@ -19446,7 +19443,7 @@ end
 arch flagstone
 x 41
 end
-arch dwall3_3
+arch dwall_3_3
 x 41
 end
 arch dungeon_magic
@@ -19946,7 +19943,7 @@ arch flagstone
 x 41
 y 43
 end
-arch dwall3_3
+arch dwall_3_3
 x 41
 y 43
 end
@@ -19972,7 +19969,7 @@ end
 arch flagstone
 x 42
 end
-arch dwall3_3
+arch dwall_3_3
 x 42
 end
 arch dungeon_magic
@@ -20148,14 +20145,14 @@ x 42
 y 15
 end
 arch flagstone
-x 42
-y 15
-end
-arch dwall_2_2_1
 x 42
 y 15
 end
 arch swall_1_3
+x 42
+y 15
+end
+arch dwall_2_2_1
 x 42
 y 15
 end
@@ -20836,7 +20833,7 @@ arch flagstone
 x 43
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 43
 y 29
 end
@@ -21047,7 +21044,7 @@ arch flagstone
 x 44
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 44
 y 14
 end
@@ -21223,7 +21220,7 @@ arch flagstone
 x 44
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 44
 y 29
 end
@@ -21239,7 +21236,7 @@ arch flagstone
 x 45
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 45
 y 14
 end
@@ -21395,7 +21392,7 @@ arch flagstone
 x 45
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 45
 y 29
 end
@@ -21419,7 +21416,7 @@ arch flagstone
 x 46
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 46
 y 14
 end
@@ -21687,7 +21684,7 @@ arch flagstone
 x 46
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 46
 y 29
 end
@@ -21703,7 +21700,7 @@ arch flagstone
 x 47
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 47
 y 14
 end
@@ -21891,7 +21888,7 @@ arch flagstone
 x 47
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 47
 y 29
 end
@@ -21915,7 +21912,7 @@ arch flagstone
 x 48
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 48
 y 14
 end
@@ -22132,7 +22129,7 @@ arch flagstone
 x 48
 y 29
 end
-arch dwall3_3
+arch dwall_3_3
 x 48
 y 29
 end
@@ -22148,7 +22145,7 @@ arch flagstone
 x 49
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 49
 y 14
 end

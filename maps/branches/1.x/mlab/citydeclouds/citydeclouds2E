@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-28 mikeeusa
+Created:  2002-02-28 mikeeusa
 Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
@@ -207,7 +207,7 @@ end
 arch flagstone
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 y 27
 end
 arch flagstone
@@ -581,7 +581,7 @@ arch flagstone
 x 1
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 27
 end
@@ -1085,7 +1085,7 @@ arch flagstone
 x 2
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 y 27
 end
@@ -1325,7 +1325,7 @@ arch flagstone
 x 3
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 5
 end
@@ -1525,7 +1525,7 @@ arch flagstone
 x 3
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 27
 end
@@ -1997,7 +1997,7 @@ arch flagstone
 x 4
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 27
 end
@@ -2461,7 +2461,7 @@ arch flagstone
 x 5
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 27
 end
@@ -2897,7 +2897,7 @@ arch flagstone
 x 6
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 27
 end
@@ -3337,7 +3337,7 @@ arch flagstone
 x 7
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 27
 end
@@ -3837,7 +3837,7 @@ arch flagstone
 x 8
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 27
 end
@@ -4237,7 +4237,7 @@ arch flagstone
 x 9
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 27
 end
@@ -4709,7 +4709,7 @@ arch flagstone
 x 10
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 27
 end
@@ -5143,7 +5143,7 @@ arch flagstone
 x 11
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 27
 end
@@ -5617,7 +5617,7 @@ arch flagstone
 x 12
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 27
 end
@@ -6073,7 +6073,7 @@ arch flagstone
 x 13
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 y 27
 end
@@ -6559,7 +6559,7 @@ arch flagstone
 x 14
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 27
 end
@@ -7009,7 +7009,7 @@ arch flagstone
 x 15
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 27
 end
@@ -7481,7 +7481,7 @@ arch flagstone
 x 16
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 y 27
 end
@@ -7925,7 +7925,7 @@ arch flagstone
 x 17
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 17
 y 27
 end
@@ -8413,7 +8413,7 @@ arch flagstone
 x 18
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 y 27
 end
@@ -8813,7 +8813,7 @@ arch flagstone
 x 19
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 y 27
 end
@@ -9249,7 +9249,7 @@ arch flagstone
 x 20
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 20
 y 27
 end
@@ -9678,7 +9678,7 @@ arch flagstone
 x 21
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 21
 y 27
 end
@@ -10150,7 +10150,7 @@ arch flagstone
 x 22
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 22
 y 27
 end
@@ -10590,7 +10590,7 @@ arch flagstone
 x 23
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 23
 y 27
 end
@@ -10619,13 +10619,6 @@ face stfloor.111
 x 23
 y 30
 unique 1
-end
-arch stair_up_1
-slaying cdccotgf1
-hp 42
-sp 22
-x 23
-y 30
 end
 arch shop_empty
 name perm tiles
@@ -11033,7 +11026,7 @@ arch flagstone
 x 24
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 y 27
 end
@@ -11561,7 +11554,7 @@ arch flagstone
 x 25
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 25
 y 27
 end
@@ -11965,7 +11958,7 @@ arch flagstone
 x 26
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 26
 y 27
 end
@@ -12166,7 +12159,7 @@ arch flagstone
 x 27
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 y 5
 end
@@ -12398,7 +12391,7 @@ arch flagstone
 x 27
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 27
 y 27
 end
@@ -12812,7 +12805,7 @@ arch flagstone
 x 28
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 28
 y 27
 end
@@ -13295,7 +13288,7 @@ arch flagstone
 x 29
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 29
 y 27
 end
@@ -14074,7 +14067,7 @@ arch flagstone
 x 31
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 31
 y 8
 end
@@ -14094,13 +14087,6 @@ arch dungeon_magic
 x 31
 y 10
 end
-arch invis_exit
-slaying cdcunderbigstre1
-hp 50
-sp 42
-x 31
-y 10
-end
 arch flagstone
 x 31
 y 10
@@ -14114,13 +14100,6 @@ arch dungeon_magic
 x 31
 y 11
 end
-arch invis_exit
-slaying cdcunderbigstre1
-hp 50
-sp 43
-x 31
-y 11
-end
 arch flagstone
 x 31
 y 11
@@ -14131,13 +14110,6 @@ y 11
 no_pass 0
 end
 arch dungeon_magic
-x 31
-y 12
-end
-arch invis_exit
-slaying cdcunderbigstre1
-hp 50
-sp 44
 x 31
 y 12
 end
@@ -14463,7 +14435,7 @@ arch flagstone
 x 32
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 y 8
 end
@@ -14512,7 +14484,7 @@ arch flagstone
 x 32
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 32
 y 13
 end
@@ -14865,7 +14837,7 @@ arch flagstone
 x 33
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 y 8
 end
@@ -14914,7 +14886,7 @@ arch flagstone
 x 33
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 33
 y 13
 end
@@ -15206,7 +15178,7 @@ arch flagstone
 x 34
 y 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 y 8
 end
@@ -15255,7 +15227,7 @@ arch flagstone
 x 34
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 34
 y 13
 end
@@ -15540,7 +15512,7 @@ arch flagstone
 x 35
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 35
 y 13
 end
@@ -15856,7 +15828,7 @@ arch flagstone
 x 36
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 36
 y 13
 end
@@ -16172,7 +16144,7 @@ arch flagstone
 x 37
 y 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 37
 y 13
 end
@@ -16824,6 +16796,10 @@ arch flagstone
 x 39
 y 12
 end
+arch swall_1_4_half
+x 39
+y 12
+end
 arch dwall_2_2_3
 x 39
 y 12
@@ -17178,7 +17154,7 @@ arch grass
 x 40
 y 12
 end
-arch swall_1_4
+arch swall_2_1_2
 x 40
 y 12
 end
@@ -17635,6 +17611,14 @@ arch woodfloor
 x 41
 y 20
 end
+arch sign
+msg
+Property Rezoned
+Future home of a monster.
+endmsg
+x 41
+y 20
+end
 arch woodfloor
 x 41
 y 21
@@ -18034,15 +18018,6 @@ arch woodfloor
 x 42
 y 20
 end
-arch sign_e
-name J&J Building Supplies Upstairs
-name_pl J&J Building Supplies Upstairs
-msg
-J&J Building Supplies Upstairs
-endmsg
-x 42
-y 20
-end
 arch woodfloor
 x 42
 y 21
@@ -18426,13 +18401,6 @@ x 43
 y 19
 end
 arch woodfloor
-x 43
-y 20
-end
-arch stair_up_1
-slaying cdcjjbuild/cdcjjbuild1
-hp 11
-sp 5
 x 43
 y 20
 end
