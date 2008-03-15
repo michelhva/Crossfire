@@ -1,3 +1,222 @@
+2008-03-15 06:18  rjtanner
+
+	* port_joseph/goblin/fort2, port_joseph/goblin/fortress,
+	  port_joseph/goblin/netower, port_joseph/goblin/nwtower,
+	  port_joseph/goblin/setower, port_joseph/pirates/fortvsship,
+	  port_joseph/pirates/madvillage, port_joseph/town/generalstore,
+	  port_joseph/town/inn: Synchronize Port Joseph map changes between
+	  trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-15 06:17  rjtanner
+
+	* planes/greenway5, planes/greenway6, planes/greenway8: Synchronize
+	  Planes map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-15 05:55  rjtanner
+
+	* navar_city/city1court, navar_city/collosium,
+	  navar_city/dreaming_sage/ground, navar_city/illusion/illtow1,
+	  navar_city/illusion/illtow5, navar_city/light/smugship1,
+	  navar_city/misc/aliscave, navar_city/misc/aliswell,
+	  navar_city/misc/city1armour, navar_city/misc/city1mermaid,
+	  navar_city/misc/market1, navar_city/misc/market2,
+	  navar_city/misc/theater, navar_city/misc/theater2,
+	  navar_city/misc/theater3, navar_city/misc/theater4,
+	  navar_city/misc/theaterb1, navar_city/misc/theaterb2,
+	  navar_city/misc/theaterb3, navar_city/misc/theaterb4,
+	  navar_city/mlab/dream, navar_city/mlab/tadobebuild2,
+	  navar_city/mlab/tadobebuild3, navar_city/mlab/tavern,
+	  navar_city/mlab/tavern2, navar_city/mlab/tavern3,
+	  navar_city/mlab/tavern4, navar_city/mlab/tavern5,
+	  navar_city/mlab/tavern6, navar_city/mlab/tavern7,
+	  navar_city/mlab/tavernb1, navar_city/mlab/tavernb2,
+	  navar_city/mlab/tavernb3, navar_city/mlab/tavernb4,
+	  navar_city/mlab/thehole, navar_city/mlab/ttower10,
+	  navar_city/mlab/ttower11, navar_city/mlab/ttower12,
+	  navar_city/mlab/ttower13, navar_city/mlab/ttower14,
+	  navar_city/mlab/ttower15, navar_city/mlab/ttower16,
+	  navar_city/mlab/ttower17, navar_city/mlab/ttower18,
+	  navar_city/mlab/ttower19, navar_city/mlab/ttower20,
+	  navar_city/mlab/ttower21, navar_city/mlab/ttower22,
+	  navar_city/mlab/ttower23, navar_city/mlab/ttower24,
+	  navar_city/mlab/ttower25, navar_city/mlab/ttower26,
+	  navar_city/mlab/ttower27, navar_city/mlab/ttower28,
+	  navar_city/mlab/ttower29, navar_city/mlab/ttower30,
+	  navar_city/mlab/ttower31, navar_city/mlab/ttower32,
+	  navar_city/mlab/ttower33, navar_city/mlab/ttower34,
+	  navar_city/mlab/ttower35, navar_city/mlab/ttower36,
+	  navar_city/mlab/ttower37, navar_city/mlab/ttower38,
+	  navar_city/mlab/ttower39, navar_city/mlab/ttower40,
+	  navar_city/mlab/ttower41, navar_city/mlab/ttower42,
+	  navar_city/mlab/ttower43, navar_city/mlab/ttower44,
+	  navar_city/mlab/ttower45, navar_city/mlab/ttower8,
+	  navar_city/mlab/ttower9, navar_city/mlab/ttowerchoswld1,
+	  navar_city/mlab/zealothouse2, navar_city/mlab/zealothouseb1,
+	  navar_city/spyhouse, navar_city/temples/gaea,
+	  navar_city/temples/sorig, navar_city/temples/valriel,
+	  navar_city/tower/magetowfinal,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.8: Synchronize Navar map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-15 03:57  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds, mlab/citydeclouds/apartment,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2,
+	  mlab/citydeclouds/bank/bank1, mlab/citydeclouds/bank/bank2,
+	  mlab/citydeclouds/bank/bank3, mlab/citydeclouds/bank/bank4,
+	  mlab/citydeclouds/bank/bank5, mlab/citydeclouds/bank/vaulta1,
+	  mlab/citydeclouds/bank/vaultb2, mlab/citydeclouds/bank/vaultc3,
+	  mlab/citydeclouds/bank/vaultd4, mlab/citydeclouds/bank/vaulte5,
+	  mlab/citydeclouds/castle, mlab/citydeclouds/castle/cwdccastleb1,
+	  mlab/citydeclouds/castle/cwdccastleb10,
+	  mlab/citydeclouds/castle/cwdccastleb11,
+	  mlab/citydeclouds/castle/cwdccastleb12,
+	  mlab/citydeclouds/castle/cwdccastleb13,
+	  mlab/citydeclouds/castle/cwdccastleb14,
+	  mlab/citydeclouds/castle/cwdccastleb15,
+	  mlab/citydeclouds/castle/cwdccastleb16,
+	  mlab/citydeclouds/castle/cwdccastleb17,
+	  mlab/citydeclouds/castle/cwdccastleb18,
+	  mlab/citydeclouds/castle/cwdccastleb19,
+	  mlab/citydeclouds/castle/cwdccastleb2,
+	  mlab/citydeclouds/castle/cwdccastleb20,
+	  mlab/citydeclouds/castle/cwdccastleb21,
+	  mlab/citydeclouds/castle/cwdccastleb3,
+	  mlab/citydeclouds/castle/cwdccastleb4,
+	  mlab/citydeclouds/castle/cwdccastleb5,
+	  mlab/citydeclouds/castle/cwdccastleb6,
+	  mlab/citydeclouds/castle/cwdccastleb7,
+	  mlab/citydeclouds/castle/cwdccastleb8,
+	  mlab/citydeclouds/castle/cwdccastleb9,
+	  mlab/citydeclouds/castle/cwdccastlechoswld1,
+	  mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/castle/cwdccastlef2,
+	  mlab/citydeclouds/castle/cwdccastlef3,
+	  mlab/citydeclouds/castle/cwdccastlef4,
+	  mlab/citydeclouds/castle/cwdccastlef5,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis1,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis2,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis3,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis4,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis5,
+	  mlab/citydeclouds/castle/cwdccastleofmarquisb1,
+	  mlab/citydeclouds/cdcapart1, mlab/citydeclouds/cdcapart2,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore3f,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccastlekeep/cdckeepbarrack1,
+	  mlab/citydeclouds/cdccloudre1,
+	  mlab/citydeclouds/cdccourthsuplvl1, mlab/citydeclouds/cdcgatea2,
+	  mlab/citydeclouds/cdcmesshluper1,
+	  mlab/citydeclouds/cdcnrkpdevtmp1,
+	  mlab/citydeclouds/cdcnwgateuprlv1, mlab/citydeclouds/cdcscasino,
+	  mlab/citydeclouds/cdcspire/cdcspire1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit2,
+	  mlab/citydeclouds/cdcwgrotto1, mlab/citydeclouds/citydeclouds2A,
+	  mlab/citydeclouds/citydeclouds2B,
+	  mlab/citydeclouds/citydeclouds2C,
+	  mlab/citydeclouds/citydeclouds2D,
+	  mlab/citydeclouds/citydeclouds2E,
+	  mlab/citydeclouds/citydeclouds2F,
+	  mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/citydeclouds2H,
+	  mlab/citydeclouds/citydeclouds2I,
+	  mlab/citydeclouds/citydecloudsA, mlab/citydeclouds/citydecloudsB,
+	  mlab/citydeclouds/citydecloudsC,
+	  mlab/citydeclouds/cloudworlddecity,
+	  mlab/citydeclouds/cwdcguestofmarquis1, mlab/citydeclouds/keep,
+	  mlab/citydeclouds/keep/cwdcrandkeep1, mlab/citydeclouds/misc,
+	  mlab/citydeclouds/misc/cwdcchessarenaa1,
+	  mlab/citydeclouds/misc/cwdcchessarenaa2,
+	  mlab/citydeclouds/misc/cwdcchessarenab2, mlab/citydeclouds/shops,
+	  mlab/citydeclouds/shops/cdcwcafe1,
+	  mlab/citydeclouds/shops/cwdcgenshop1,
+	  mlab/citydeclouds/shops/cwdckitchen,
+	  mlab/citydeclouds/shops/cwdcpotionshop1,
+	  mlab/citydeclouds/shops/cwdctrademarket,
+	  mlab/citydeclouds/temples, mlab/citydeclouds/temples/valriel,
+	  mlab/citydeclouds/villa,
+	  mlab/citydeclouds/villa/citydecloudsvillaC1,
+	  mlab/citydeclouds/villa/citydecloudsvillaC2,
+	  mlab/citydeclouds/villa/citydecloudsvillaC3,
+	  mlab/citydeclouds/villa/citydecloudsvillab1,
+	  mlab/citydeclouds/villa/citydecloudsvillab2,
+	  mlab/citydeclouds/villa/citydecloudsvillab3, mlab/mlabscrntrd1,
+	  mlab/mlabscrntrd2, mlab/mlabscrntrdb1, mlab/mlabscrntrdb2,
+	  mlab/mlabscrntrdb3: Synchronize City de Cloud map changes between
+	  trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-12 06:09  rjtanner
+
+	* lake_country/Butakis/prison_s: Removed duplicate teleporter to
+	  Navar
+
+2008-03-12 01:46  rjtanner
+
+	* marksel/church, marksel/keep: Synchronize Marksel map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-12 01:43  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/Butakis0,
+	  lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/arena,
+	  lake_country/Butakis/church0, lake_country/Butakis/church1,
+	  lake_country/Butakis/gate_inner, lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/Sams_house, lake_country/Butakis/inn,
+	  lake_country/Butakis/luck1, lake_country/Butakis/luck3,
+	  lake_country/Butakis/p_ghouse_s, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w, lake_country/Mwizard/Mwizard0,
+	  lake_country/Mwizard/Mwizard1, lake_country/Mwizard/Mwizard2,
+	  lake_country/Mwizard/Mwizard3, lake_country/Mwizard/Mwizard4,
+	  lake_country/Mwizard/Mwizard5, lake_country/Mwizard/Mwizard6,
+	  lake_country/Mwizard/MwizardD, lake_country/Mwizard/MwizardG,
+	  lake_country/Mwizard/MwizardT, lake_country/RETower/tower0,
+	  lake_country/RETower/tower2, lake_country/RETower/tower4,
+	  lake_country/Sunset_Lake/gatehouse, lake_country/Sunset_Lake/inn,
+	  lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.4, lake_country/marsh/marsh1_1,
+	  lake_country/marsh/marsh1_2, lake_country/marsh/marsh2_1,
+	  lake_country/marsh/marsh2_2, lake_country/shops/Mopoon_wshop,
+	  lake_country/shops/Olds_jewel, lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/burial_ground,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/small_buildings/portal,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/Takuse_lair,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4,
+	  lake_country/snake_pit/snakepit_5: Synchronize Lake Country map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-10 05:41  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-03-10 05:25  rjtanner
 
 	* HallOfSelection: Synchronize HallOfSelction and HallOfDMs map
