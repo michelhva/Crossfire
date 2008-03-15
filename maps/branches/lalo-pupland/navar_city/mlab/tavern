@@ -8,9 +8,7 @@ height 80
 enter_x 1
 enter_y 1
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Sun Aug 18 01:25:12 2002
+Created:  2002-02-18 Mikeeusa
 endmsg
 end
 arch invis_exit
@@ -7269,6 +7267,7 @@ hp 20
 x 13
 y 34
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -8888,6 +8887,7 @@ y 27
 level 2
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -10061,6 +10061,7 @@ x 18
 y 23
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -10106,6 +10107,7 @@ x 18
 y 27
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -12570,6 +12572,7 @@ x 22
 y 27
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -13720,6 +13723,7 @@ maxhp 100
 x 24
 y 26
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -16607,6 +16611,7 @@ hp 50
 x 29
 y 28
 type 0
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
@@ -17755,6 +17760,7 @@ x 31
 y 24
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -17799,6 +17805,7 @@ x 31
 y 29
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -18339,6 +18346,7 @@ maxhp 100
 x 32
 y 30
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -18661,6 +18669,7 @@ endmsg
 x 33
 y 5
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -20281,6 +20290,7 @@ x 36
 y 21
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 arch random_wealth
@@ -21941,6 +21951,7 @@ x 39
 y 30
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -23038,6 +23049,7 @@ hp 225
 x 41
 y 34
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -24562,6 +24574,7 @@ arch viking
 x 44
 y 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -26217,6 +26230,7 @@ hp 100
 x 47
 y 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -28654,6 +28668,7 @@ x 52
 y 5
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -30001,6 +30016,7 @@ x 54
 y 17
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -30819,6 +30835,7 @@ x 55
 y 34
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -43715,7 +43732,7 @@ x 80
 y 54
 unique 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 80
 y 54
 end

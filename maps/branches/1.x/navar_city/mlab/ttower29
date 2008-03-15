@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tower
 reset_timeout 7200
 difficulty 85
 region navar
@@ -2091,6 +2091,10 @@ y 8
 no_pass 0
 blocksview 0
 end
+arch dungeon_magic
+x 8
+y 9
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -2098,10 +2102,6 @@ x 8
 y 9
 end
 arch swall_2_2_2
-x 8
-y 9
-end
-arch dungeon_magic
 x 8
 y 9
 end
@@ -2149,6 +2149,10 @@ arch cwall_1_3
 x 8
 y 15
 end
+arch dungeon_magic
+x 8
+y 16
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -2156,10 +2160,6 @@ x 8
 y 16
 end
 arch swall_2_2_1
-x 8
-y 16
-end
-arch dungeon_magic
 x 8
 y 16
 end
@@ -2314,6 +2314,10 @@ arch wall_2_2_1
 x 9
 y 7
 end
+arch dungeon_magic
+x 9
+y 8
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -2321,10 +2325,6 @@ x 9
 y 8
 end
 arch swall_2_2_2
-x 9
-y 8
-end
-arch dungeon_magic
 x 9
 y 8
 end
@@ -3575,6 +3575,10 @@ arch wall_2_2_4
 x 16
 y 7
 end
+arch dungeon_magic
+x 16
+y 8
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -3582,10 +3586,6 @@ x 16
 y 8
 end
 arch swall_2_2_3
-x 16
-y 8
-end
-arch dungeon_magic
 x 16
 y 8
 end
@@ -3814,6 +3814,10 @@ y 8
 no_pass 0
 blocksview 0
 end
+arch dungeon_magic
+x 17
+y 9
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -3821,10 +3825,6 @@ x 17
 y 9
 end
 arch swall_2_2_3
-x 17
-y 9
-end
-arch dungeon_magic
 x 17
 y 9
 end
@@ -3872,6 +3872,10 @@ arch cwall_1_4
 x 17
 y 15
 end
+arch dungeon_magic
+x 17
+y 16
+end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
@@ -3879,10 +3883,6 @@ x 17
 y 16
 end
 arch swall_2_2_4
-x 17
-y 16
-end
-arch dungeon_magic
 x 17
 y 16
 end

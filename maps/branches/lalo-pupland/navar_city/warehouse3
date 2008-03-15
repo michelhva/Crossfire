@@ -5,9 +5,8 @@ region navar
 width 20
 height 35
 msg
-Creator:
-Email:
-Date: Wed Nov 10 12:22:24 1993
+Created:  1993-11-10
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -3143,6 +3142,8 @@ end
 arch firechest
 x 14
 y 3
+arch spell_magic_bullet
+end
 end
 arch woodfloor
 x 14

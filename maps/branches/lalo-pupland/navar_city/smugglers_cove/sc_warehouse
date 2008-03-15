@@ -8,9 +8,8 @@ height 20
 enter_x 7
 enter_y 18
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    10/4/2003
+Created:  2003-04-10 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor2
@@ -420,8 +419,7 @@ food 1
 x 3
 y 7
 connected 10
-walk_on 0
-fly_on 0
+move_on walk fly_low
 end
 arch woodfloor2
 x 3
@@ -1633,7 +1631,6 @@ end
 arch firewall_1
 name poision shooter
 other_arch spell_poison_cloud
-dam 21
 x 12
 y 17
 speed 0.0
@@ -1642,6 +1639,8 @@ invisible 1
 connected 10
 no_pass 0
 blocksview 0
+arch spell_poison_cloud
+end
 end
 arch woodfloor2
 x 12

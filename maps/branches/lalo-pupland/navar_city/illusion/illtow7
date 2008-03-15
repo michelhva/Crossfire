@@ -5,9 +5,8 @@ region navar
 width 19
 height 19
 msg
-Creator:
-Email:
-Date: Mon Nov 15 22:11:21 1993
+Created:  1993-11-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_3
@@ -342,11 +341,14 @@ ac -5
 x 3
 y 9
 level 15
+resist_fire 100
 carrying 2300
-immune 4
 arch spell_sm_lightning
 end
 arch wand
+randomitems none
+arch spell_magic_bullet
+end
 end
 arch abil_slow
 end
@@ -868,7 +870,7 @@ x 9
 y 9
 end
 arch stair_3_down
-name stairs back to the begining
+name stairs back to the beginning
 slaying illtow1
 hp 18
 sp 18

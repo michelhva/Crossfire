@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tavern
 reset_timeout 7200
 difficulty 1
 region navar
@@ -11,7 +11,6 @@ enter_y 1
 msg
 Created:  2002-02-20 mikeeusa
 endmsg
-temp 52
 end
 arch blocked
 end
@@ -9526,6 +9525,7 @@ y 15
 type 0
 carrying 3000
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 arch book_read
@@ -11719,6 +11719,10 @@ arch cwall_2_2_4
 x 44
 y 24
 end
+arch swall_1_1_half
+x 44
+y 24
+end
 arch dungeon_magic
 x 44
 y 25
@@ -11729,7 +11733,7 @@ name_pl stonefloor
 x 44
 y 25
 end
-arch swall_1_1
+arch swall_2_1_1
 x 44
 y 25
 end
@@ -14450,6 +14454,10 @@ x 50
 y 24
 end
 arch mine0
+x 50
+y 24
+end
+arch swall_1_1_half
 x 50
 y 24
 end

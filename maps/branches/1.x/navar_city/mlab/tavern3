@@ -1,5 +1,5 @@
 arch map
-name <untitled>
+name Western Navar Tavern
 reset_timeout 7200
 difficulty 1
 region navar
@@ -1185,13 +1185,17 @@ name_pl woodfloor
 x 2
 y 28
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 28
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 2
+y 29
+end
+arch swall_1_2_half
 x 2
 y 29
 end
@@ -2393,13 +2397,17 @@ arch cwall_1_3
 x 6
 y 13
 end
+arch swall_1_1_half
+x 6
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 6
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 x 6
 y 14
 end
@@ -3220,13 +3228,17 @@ arch cwall_1_4
 x 9
 y 13
 end
+arch swall_1_1_half
+x 9
+y 13
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
 x 9
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 x 9
 y 14
 end
@@ -7093,7 +7105,7 @@ arch flagstone
 x 23
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 23
 y 6
 end
@@ -7330,6 +7342,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 24
+y 6
+end
+arch swall_1_3
 x 24
 y 6
 end

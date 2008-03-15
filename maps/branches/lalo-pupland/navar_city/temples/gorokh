@@ -7,9 +7,7 @@ height 17
 enter_x 7
 enter_y 13
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    2003/12/14
+Created:  2003-12-14 Avion
 endmsg
 end
 arch medium_stones
@@ -748,7 +746,7 @@ hp 46
 sp 40
 x 6
 y 16
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 6
@@ -843,7 +841,7 @@ hp 46
 sp 40
 x 7
 y 16
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 7
@@ -956,7 +954,7 @@ hp 46
 sp 40
 x 8
 y 16
-fly_on 0
+move_on walk
 end
 arch flagstone
 x 8
