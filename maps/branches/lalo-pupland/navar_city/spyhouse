@@ -8,9 +8,7 @@ height 32
 enter_x 1
 enter_y 1
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Tue Aug  3 23:32:57 2004
+Created:  2004-08-03 Mikeeusa
 endmsg
 end
 arch dungeon_floor
@@ -991,6 +989,7 @@ dam 50
 x 6
 y 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1282,6 +1281,7 @@ dam 50
 x 8
 y 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -1934,6 +1934,7 @@ dam 50
 x 13
 y 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2125,6 +2126,7 @@ dam 50
 x 14
 y 17
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2238,6 +2240,7 @@ dam 50
 x 15
 y 10
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -2968,6 +2971,7 @@ dam 50
 x 19
 y 17
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end

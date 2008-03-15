@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tavern
 reset_timeout 7200
 difficulty 1
 region navar
@@ -1214,11 +1214,15 @@ arch cwall_2_2_1
 x 2
 y 10
 end
+arch swall_1_1_half
+x 2
+y 10
+end
 arch grass
 x 2
 y 11
 end
-arch swall_1_1
+arch swall_2_1_1
 x 2
 y 11
 end
@@ -1351,13 +1355,17 @@ arch grass
 x 2
 y 26
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 26
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 2
+y 27
+end
+arch swall_1_2
 x 2
 y 27
 end
@@ -1897,7 +1905,7 @@ arch grass
 x 3
 y 18
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 18
 end
@@ -2393,6 +2401,10 @@ x 4
 y 18
 end
 arch wwall_1_2
+x 4
+y 18
+end
+arch swall_1_3_half
 x 4
 y 18
 end
@@ -5394,6 +5406,10 @@ name_pl stonefloor
 x 10
 y 2
 end
+arch swall_1_4_half
+x 10
+y 2
+end
 arch cwall_2_2_3
 x 10
 y 2
@@ -5924,7 +5940,7 @@ arch grass
 x 11
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 11
 y 2
 end
@@ -7026,6 +7042,10 @@ name_pl stonefloor
 x 13
 y 6
 end
+arch swall_1_4_half
+x 13
+y 6
+end
 arch cwall_1_2
 x 13
 y 6
@@ -7041,6 +7061,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 13
+y 9
+end
+arch swall_1_4_half
 x 13
 y 9
 end
@@ -7243,6 +7267,7 @@ hp 20
 x 13
 y 34
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -7518,7 +7543,7 @@ arch grass
 x 14
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 2
 end
@@ -7540,7 +7565,7 @@ name_pl stonefloor
 x 14
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 6
 end
@@ -7558,7 +7583,7 @@ name_pl stonefloor
 x 14
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 9
 end
@@ -7993,6 +8018,10 @@ name_pl stonefloor
 x 15
 y 2
 end
+arch swall_1_3_half
+x 15
+y 2
+end
 arch awall_2_2_2
 x 15
 y 2
@@ -8037,6 +8066,10 @@ arch awall_1_2
 x 15
 y 6
 end
+arch swall_1_3_half
+x 15
+y 6
+end
 arch cwall_1_1
 x 15
 y 6
@@ -8064,6 +8097,10 @@ x 15
 y 9
 end
 arch awall_1_1
+x 15
+y 9
+end
+arch swall_1_3_half
 x 15
 y 9
 end
@@ -8253,6 +8290,14 @@ name_pl stonefloor
 x 15
 y 29
 end
+arch swall_1_4
+x 15
+y 29
+end
+arch swall_1_1
+x 15
+y 29
+end
 arch awall_2_2_4
 x 15
 y 29
@@ -8263,7 +8308,7 @@ name_pl stonefloor
 x 15
 y 30
 end
-arch swall_1_1
+arch swall_2_1_1
 x 15
 y 30
 end
@@ -8304,13 +8349,17 @@ name_pl stonefloor
 x 15
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 15
 y 34
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 15
+y 35
+end
+arch swall_1_2
 x 15
 y 35
 end
@@ -8838,6 +8887,7 @@ y 27
 level 2
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -8853,7 +8903,7 @@ name_pl stonefloor
 x 16
 y 29
 end
-arch swall_1_4
+arch swall_2_1_2
 x 16
 y 29
 end
@@ -10011,6 +10061,7 @@ x 18
 y 23
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -10056,6 +10107,7 @@ x 18
 y 27
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -10122,13 +10174,17 @@ name_pl stonefloor
 x 18
 y 34
 end
-arch swall_1_2
+arch swall_2_1_1
 x 18
 y 34
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 18
+y 35
+end
+arch swall_1_2
 x 18
 y 35
 end
@@ -12516,6 +12572,7 @@ x 22
 y 27
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -13480,11 +13537,15 @@ arch wwall_1_3
 x 24
 y 2
 end
+arch swall_1_1_half
+x 24
+y 2
+end
 arch woodfloor
 x 24
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 24
 y 3
 end
@@ -13662,6 +13723,7 @@ maxhp 100
 x 24
 y 26
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -15718,11 +15780,15 @@ arch wwall_1_4
 x 28
 y 2
 end
+arch swall_1_1_half
+x 28
+y 2
+end
 arch woodfloor
 x 28
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 28
 y 3
 end
@@ -16367,6 +16433,10 @@ arch awall_1_1
 x 29
 y 10
 end
+arch swall_1_4
+x 29
+y 10
+end
 arch cwall_2_2_4
 x 29
 y 10
@@ -16541,6 +16611,7 @@ hp 50
 x 29
 y 28
 type 0
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
@@ -16584,6 +16655,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 29
+y 35
+end
+arch swall_1_4
 x 29
 y 35
 end
@@ -17020,7 +17095,7 @@ arch dungeon_floor
 x 30
 y 10
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 10
 end
@@ -17252,7 +17327,7 @@ name_pl floor
 x 30
 y 35
 end
-arch swall_1_4
+arch swall_2_1_2
 x 30
 y 35
 end
@@ -17573,13 +17648,17 @@ arch dungeon_floor
 x 31
 y 12
 end
-arch swall_1_2
+arch swall_2_1_1
 x 31
 y 12
 end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 31
+y 13
+end
+arch swall_1_2
 x 31
 y 13
 end
@@ -17681,6 +17760,7 @@ x 31
 y 24
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -17725,6 +17805,7 @@ x 31
 y 29
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -18265,6 +18346,7 @@ maxhp 100
 x 32
 y 30
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -18587,6 +18669,7 @@ endmsg
 x 33
 y 5
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -20207,6 +20290,7 @@ x 36
 y 21
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 arch random_wealth
@@ -21867,6 +21951,7 @@ x 39
 y 30
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -22964,6 +23049,7 @@ hp 225
 x 41
 y 34
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -23485,7 +23571,7 @@ name_pl floor
 x 42
 y 35
 end
-arch swall_1_3
+arch swall_2_1_2
 x 42
 y 35
 end
@@ -24023,6 +24109,10 @@ name_pl stonefloor
 x 43
 y 35
 end
+arch swall_1_3
+x 43
+y 35
+end
 arch cwall_2_2_2
 x 43
 y 35
@@ -24484,6 +24574,7 @@ arch viking
 x 44
 y 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -26139,6 +26230,7 @@ hp 100
 x 47
 y 20
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -28576,6 +28668,7 @@ x 52
 y 5
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -29923,6 +30016,7 @@ x 54
 y 17
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -30741,6 +30835,7 @@ x 55
 y 34
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -34946,6 +35041,10 @@ arch brush
 x 65
 y 2
 end
+arch swall_1_4_half
+x 65
+y 2
+end
 arch hedge_1_1
 x 65
 y 2
@@ -35571,7 +35670,7 @@ arch brush
 x 66
 y 2
 end
-arch swall_1_4
+arch swall_2_1_2
 x 66
 y 2
 end
@@ -36231,6 +36330,10 @@ arch mine13
 x 67
 y 48
 end
+arch dungeon_magic
+x 67
+y 49
+end
 arch dungeon_floor
 x 67
 y 49
@@ -36246,16 +36349,12 @@ unique 1
 end
 arch dungeon_magic
 x 67
-y 49
+y 50
 end
 arch dungeon_floor
 x 67
 y 50
 unique 1
-end
-arch dungeon_magic
-x 67
-y 50
 end
 arch grate_closed_1
 x 67
@@ -36754,6 +36853,10 @@ arch mine13
 x 68
 y 48
 end
+arch dungeon_magic
+x 68
+y 49
+end
 arch dungeon_floor
 x 68
 y 49
@@ -36761,16 +36864,12 @@ unique 1
 end
 arch dungeon_magic
 x 68
-y 49
+y 50
 end
 arch dungeon_floor
 x 68
 y 50
 unique 1
-end
-arch dungeon_magic
-x 68
-y 50
 end
 arch swall_1_4
 x 68
@@ -37252,18 +37351,26 @@ arch mine13
 x 69
 y 48
 end
+arch swall_1_1_half
+x 69
+y 48
+end
+arch dungeon_magic
+x 69
+y 49
+end
 arch dungeon_floor
 x 69
 y 49
 unique 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 69
 y 49
 end
 arch dungeon_magic
 x 69
-y 49
+y 50
 end
 arch dungeon_floor
 x 69
@@ -37271,10 +37378,6 @@ y 50
 unique 1
 end
 arch swall_2_2_4
-x 69
-y 50
-end
-arch dungeon_magic
 x 69
 y 50
 end
@@ -43629,7 +43732,7 @@ x 80
 y 54
 unique 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 80
 y 54
 end
@@ -50927,7 +51030,7 @@ arch brush
 x 93
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 93
 y 2
 end
@@ -51380,6 +51483,10 @@ x 94
 y 1
 end
 arch brush
+x 94
+y 2
+end
+arch swall_1_3_half
 x 94
 y 2
 end

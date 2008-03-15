@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tower
 reset_timeout 7200
 difficulty 1
 region navar
@@ -1637,16 +1637,6 @@ arch ghost
 x 9
 y 13
 end
-arch stonefloor2
-name stonefloor
-name_pl stonefloor
-x 9
-y 14
-end
-arch swall_2_1_2
-x 9
-y 14
-end
 arch magic_banned
 x 9
 y 14
@@ -1656,6 +1646,16 @@ x 9
 y 14
 end
 arch unholy_ground
+x 9
+y 14
+end
+arch stonefloor2
+name stonefloor
+name_pl stonefloor
+x 9
+y 14
+end
+arch swall_2_1_2
 x 9
 y 14
 end

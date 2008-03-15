@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tower
 reset_timeout 7200
 difficulty 1
 region navar
@@ -1175,6 +1175,10 @@ arch skull
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1187,7 +1191,7 @@ y 7
 end
 arch dungeon_magic
 x 7
-y 7
+y 8
 end
 arch woodfloor2
 name woodfloor
@@ -1201,7 +1205,7 @@ y 8
 end
 arch dungeon_magic
 x 7
-y 8
+y 9
 end
 arch woodfloor2
 name woodfloor
@@ -1215,7 +1219,7 @@ y 9
 end
 arch dungeon_magic
 x 7
-y 9
+y 10
 end
 arch woodfloor2
 name woodfloor
@@ -1224,10 +1228,6 @@ x 7
 y 10
 end
 arch swall_2_2_1
-x 7
-y 10
-end
-arch dungeon_magic
 x 7
 y 10
 end
@@ -1373,6 +1373,10 @@ arch skull
 x 8
 y 6
 end
+arch dungeon_magic
+x 8
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1381,10 +1385,6 @@ y 7
 end
 arch locked_door1
 slaying tttower20
-x 8
-y 7
-end
-arch dungeon_magic
 x 8
 y 7
 end
@@ -1419,6 +1419,10 @@ arch dwall_0
 x 8
 y 9
 end
+arch dungeon_magic
+x 8
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1426,10 +1430,6 @@ x 8
 y 10
 end
 arch swall_1_3
-x 8
-y 10
-end
-arch dungeon_magic
 x 8
 y 10
 end
@@ -1578,6 +1578,10 @@ arch skull
 x 9
 y 6
 end
+arch dungeon_magic
+x 9
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1585,10 +1589,6 @@ x 9
 y 7
 end
 arch swall_1_4
-x 9
-y 7
-end
-arch dungeon_magic
 x 9
 y 7
 end
@@ -1623,6 +1623,10 @@ sp 9
 x 9
 y 9
 end
+arch dungeon_magic
+x 9
+y 10
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1631,10 +1635,6 @@ y 10
 end
 arch locked_door1
 slaying tttower20
-x 9
-y 10
-end
-arch dungeon_magic
 x 9
 y 10
 end
@@ -1780,6 +1780,10 @@ arch skull
 x 10
 y 6
 end
+arch dungeon_magic
+x 10
+y 7
+end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1792,7 +1796,7 @@ y 7
 end
 arch dungeon_magic
 x 10
-y 7
+y 8
 end
 arch woodfloor2
 name woodfloor
@@ -1806,7 +1810,7 @@ y 8
 end
 arch dungeon_magic
 x 10
-y 8
+y 9
 end
 arch woodfloor2
 name woodfloor
@@ -1820,7 +1824,7 @@ y 9
 end
 arch dungeon_magic
 x 10
-y 9
+y 10
 end
 arch woodfloor2
 name woodfloor
@@ -1829,10 +1833,6 @@ x 10
 y 10
 end
 arch swall_1_2
-x 10
-y 10
-end
-arch dungeon_magic
 x 10
 y 10
 end

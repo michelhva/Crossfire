@@ -7,7 +7,7 @@ height 15
 enter_x 7
 enter_y 13
 msg
-Created:  2003-11-01 Avion
+Created:  2003-01-11 Avion
 endmsg
 end
 arch grass
@@ -65,7 +65,7 @@ arch dungeon_floor
 x 1
 y 2
 end
-arch dwall_2_2_2
+arch westcwall_2_2_2
 x 1
 y 2
 end
@@ -73,7 +73,7 @@ arch dungeon_floor
 x 1
 y 3
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 3
 end
@@ -81,7 +81,7 @@ arch dungeon_floor
 x 1
 y 4
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 4
 end
@@ -89,7 +89,7 @@ arch dungeon_floor
 x 1
 y 5
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 5
 end
@@ -97,7 +97,7 @@ arch dungeon_floor
 x 1
 y 6
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 6
 end
@@ -105,7 +105,7 @@ arch dungeon_floor
 x 1
 y 7
 end
-arch dwall_2_1_1
+arch westcwall_win1
 x 1
 y 7
 end
@@ -113,7 +113,7 @@ arch dungeon_floor
 x 1
 y 8
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 8
 end
@@ -121,7 +121,7 @@ arch dungeon_floor
 x 1
 y 9
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 9
 end
@@ -129,7 +129,7 @@ arch dungeon_floor
 x 1
 y 10
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 10
 end
@@ -137,7 +137,7 @@ arch dungeon_floor
 x 1
 y 11
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 1
 y 11
 end
@@ -145,7 +145,7 @@ arch dungeon_floor
 x 1
 y 12
 end
-arch dwall_2_2_1
+arch westcwall_2_2_1
 x 1
 y 12
 end
@@ -168,7 +168,7 @@ arch dungeon_floor
 x 2
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 2
 y 2
 end
@@ -228,7 +228,7 @@ arch dungeon_floor
 x 2
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 2
 y 12
 end
@@ -251,7 +251,7 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 3
 y 2
 end
@@ -264,6 +264,10 @@ x 3
 y 4
 end
 arch dungeon_floor
+x 3
+y 5
+end
+arch westcwall_0
 x 3
 y 5
 end
@@ -311,7 +315,7 @@ arch dungeon_floor
 x 3
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_win2
 x 3
 y 12
 end
@@ -334,7 +338,7 @@ arch dungeon_floor
 x 4
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 2
 end
@@ -394,7 +398,7 @@ arch dungeon_floor
 x 4
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 4
 y 12
 end
@@ -417,7 +421,7 @@ arch dungeon_floor
 x 5
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_win2
 x 5
 y 2
 end
@@ -481,7 +485,7 @@ arch dungeon_floor
 x 5
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 5
 y 12
 end
@@ -504,7 +508,7 @@ arch dungeon_floor
 x 6
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 6
 y 2
 end
@@ -568,7 +572,7 @@ arch dungeon_floor
 x 6
 y 12
 end
-arch dwall_1_3
+arch westcwall_1_3
 x 6
 y 12
 end
@@ -582,7 +586,7 @@ hp 43
 sp 5
 x 6
 y 14
-move_on walk
+fly_on 0
 end
 arch flagstone
 x 6
@@ -599,7 +603,7 @@ arch dungeon_floor
 x 7
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 7
 y 2
 end
@@ -662,7 +666,7 @@ hp 43
 sp 5
 x 7
 y 14
-move_on walk
+fly_on 0
 end
 arch flagstone
 x 7
@@ -679,7 +683,7 @@ arch dungeon_floor
 x 8
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 8
 y 2
 end
@@ -757,7 +761,7 @@ arch dungeon_floor
 x 8
 y 12
 end
-arch dwall_1_4
+arch westcwall_1_4
 x 8
 y 12
 end
@@ -771,7 +775,7 @@ hp 43
 sp 5
 x 8
 y 14
-move_on walk
+fly_on 0
 end
 arch flagstone
 x 8
@@ -788,7 +792,7 @@ arch dungeon_floor
 x 9
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_win2
 x 9
 y 2
 end
@@ -852,7 +856,7 @@ arch dungeon_floor
 x 9
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 9
 y 12
 end
@@ -875,7 +879,7 @@ arch dungeon_floor
 x 10
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 10
 y 2
 end
@@ -935,7 +939,7 @@ arch dungeon_floor
 x 10
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 10
 y 12
 end
@@ -958,7 +962,7 @@ arch dungeon_floor
 x 11
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 11
 y 2
 end
@@ -971,6 +975,10 @@ x 11
 y 4
 end
 arch dungeon_floor
+x 11
+y 5
+end
+arch westcwall_0
 x 11
 y 5
 end
@@ -1018,7 +1026,7 @@ arch dungeon_floor
 x 11
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_win2
 x 11
 y 12
 end
@@ -1041,7 +1049,7 @@ arch dungeon_floor
 x 12
 y 2
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 2
 end
@@ -1101,7 +1109,7 @@ arch dungeon_floor
 x 12
 y 12
 end
-arch dwall_2_1_2
+arch westcwall_2_1_2
 x 12
 y 12
 end
@@ -1124,7 +1132,7 @@ arch dungeon_floor
 x 13
 y 2
 end
-arch dwall_2_2_3
+arch westcwall_2_2_3
 x 13
 y 2
 end
@@ -1132,7 +1140,7 @@ arch dungeon_floor
 x 13
 y 3
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 3
 end
@@ -1140,7 +1148,7 @@ arch dungeon_floor
 x 13
 y 4
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 4
 end
@@ -1148,7 +1156,7 @@ arch dungeon_floor
 x 13
 y 5
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 5
 end
@@ -1156,7 +1164,7 @@ arch dungeon_floor
 x 13
 y 6
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 6
 end
@@ -1164,7 +1172,7 @@ arch dungeon_floor
 x 13
 y 7
 end
-arch dwall_2_1_1
+arch westcwall_win1
 x 13
 y 7
 end
@@ -1172,7 +1180,7 @@ arch dungeon_floor
 x 13
 y 8
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 8
 end
@@ -1180,7 +1188,7 @@ arch dungeon_floor
 x 13
 y 9
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 9
 end
@@ -1188,7 +1196,7 @@ arch dungeon_floor
 x 13
 y 10
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 10
 end
@@ -1196,7 +1204,7 @@ arch dungeon_floor
 x 13
 y 11
 end
-arch dwall_2_1_1
+arch westcwall_2_1_1
 x 13
 y 11
 end
@@ -1204,7 +1212,7 @@ arch dungeon_floor
 x 13
 y 12
 end
-arch dwall_2_2_4
+arch westcwall_2_2_4
 x 13
 y 12
 end

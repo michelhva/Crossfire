@@ -5,9 +5,8 @@ region navar
 width 50
 height 50
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Oct 11 23:12:18 1994
+Created:  1994-02-11
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -8270,6 +8269,8 @@ end
 arch lbulletwall_4
 x 31
 y 26
+arch spell_lg_magic_bullet
+end
 end
 arch small_stones
 x 31
@@ -8298,6 +8299,8 @@ end
 arch lbulletwall_3
 x 31
 y 32
+arch spell_lg_magic_bullet
+end
 end
 arch small_stones
 x 31
@@ -11696,6 +11699,8 @@ end
 arch lbulletwall_8
 x 44
 y 38
+arch spell_lg_magic_bullet
+end
 end
 arch small_stones
 x 44
@@ -12396,6 +12401,8 @@ end
 arch lbulletwall_7
 x 47
 y 28
+arch spell_lg_magic_bullet
+end
 end
 arch small_stones
 x 47

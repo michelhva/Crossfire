@@ -1,5 +1,5 @@
 arch map
-name <unnamed>
+name Western Navar Tower
 reset_timeout 7200
 difficulty 85
 region navar
@@ -3027,20 +3027,14 @@ arch cwall_2_1_2
 x 12
 y 7
 end
-arch invis_exit
-slaying ttowerchoswld1
-hp 19
-sp 44
-x 12
-y 8
-end
 arch flagstone
 x 12
 y 8
 end
 arch perm_magic_portal
-hp 0
-sp 0
+slaying ttowerchoswld1
+hp 19
+sp 44
 x 12
 y 8
 end

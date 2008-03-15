@@ -1,9 +1,9 @@
 arch map
-name <untitled>
+name Western Navar Tavern
 reset_timeout 7200
 difficulty 1
 region navar
-darkness 6
+darkness 5
 width 60
 height 40
 enter_x 1
@@ -11,7 +11,6 @@ enter_y 1
 msg
 Created:  2002-02-20 mikeeusa
 endmsg
-temp 52
 end
 arch blocked
 end
@@ -4471,6 +4470,7 @@ x 19
 y 4
 type 0
 randomitems standard
+move_type walk
 monster 1
 unaggressive 1
 end
