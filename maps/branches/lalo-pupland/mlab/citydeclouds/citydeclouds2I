@@ -8,9 +8,8 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Creator: mikeeusa
-Email: gnu@foo.bar
-Date: Wed Aug 28 11:11:32 2002
+Created:  2002-02-28 mikeeusa
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2H
@@ -1096,7 +1095,6 @@ arch altar
 name Restore (drop 200 gold)
 name_pl Restore (drop 200 gold)
 slaying money
-sp 126
 food 2000
 x 2
 y 5
@@ -1606,7 +1604,6 @@ arch altar
 name altar of detect curse (25 gp)
 name_pl altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 3
 y 2
@@ -1624,7 +1621,6 @@ arch altar
 name altar of detect magic (10 gp)
 name_pl altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 3
 y 3
@@ -1668,7 +1664,6 @@ arch altar
 name restore full mana (550 gold)
 name_pl restore full mana (550 gold)
 slaying money
-sp 67
 food 5500
 x 3
 y 5
@@ -4245,7 +4240,7 @@ arch flagstone
 x 8
 y 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 16
 end
@@ -19897,19 +19892,17 @@ arch dungeon_floor
 x 42
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 42
 y 12
-speed 0.500000
 end
 arch dungeon_floor
 x 42
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 42
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 42
@@ -20444,19 +20437,17 @@ arch dungeon_floor
 x 43
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 43
 y 12
-speed 0.500000
 end
 arch dungeon_floor
 x 43
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 43
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 43
@@ -20874,9 +20865,23 @@ arch swall_2_1_2
 x 44
 y 11
 end
+arch invis_exit
+slaying cloudworlddecity
+hp 84
+sp 97
+x 44
+y 12
+end
 arch dungeon_floor
 x 44
 y 12
+end
+arch invis_exit
+slaying cloudworlddecity
+hp 84
+sp 97
+x 44
+y 13
 end
 arch dungeon_floor
 x 44
@@ -21335,10 +21340,9 @@ arch dungeon_floor
 x 45
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 45
 y 12
-speed 0.500000
 end
 arch dungeon_magic
 x 45
@@ -21348,10 +21352,9 @@ arch dungeon_floor
 x 45
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 45
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 45
@@ -21782,10 +21785,9 @@ arch dungeon_floor
 x 46
 y 12
 end
-arch grate_closed_2
+arch grate_open_2
 x 46
 y 12
-speed 0.500000
 end
 arch dungeon_magic
 x 46
@@ -21795,10 +21797,9 @@ arch dungeon_floor
 x 46
 y 13
 end
-arch grate_closed_2
+arch grate_open_2
 x 46
 y 13
-speed 0.500000
 end
 arch dungeon_floor
 x 46
@@ -23223,7 +23224,7 @@ end
 arch magic_mouth
 msg
 Assistant: OMG! He's got a BOMB!!!
-Gaurds! Gaurds!! Kill the adventurer!
+Guards! Guards!! Kill the adventurer!
 endmsg
 x 48
 y 46

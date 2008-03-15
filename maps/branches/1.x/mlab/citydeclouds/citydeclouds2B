@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-28 mikeeusa
+Created:  2002-02-28 mikeeusa
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2A
@@ -16611,7 +16611,7 @@ arch flagstone
 x 40
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 40
 y 27
 end
@@ -16764,13 +16764,6 @@ end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
-x 40
-y 45
-end
-arch stair_down_2
-slaying cdcunderbigstre1
-hp 9
-sp 76
 x 40
 y 45
 end
@@ -17064,7 +17057,7 @@ arch flagstone
 x 41
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 41
 y 27
 end
@@ -17526,7 +17519,7 @@ arch flagstone
 x 42
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 42
 y 27
 end
@@ -17569,7 +17562,7 @@ end
 arch table_3
 x 42
 y 31
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 42
@@ -17962,7 +17955,7 @@ arch flagstone
 x 43
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 43
 y 27
 end
@@ -18459,7 +18452,7 @@ arch flagstone
 x 44
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 44
 y 27
 end
@@ -18953,7 +18946,7 @@ arch flagstone
 x 45
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 45
 y 27
 end
@@ -19456,7 +19449,7 @@ arch flagstone
 x 46
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 46
 y 27
 end
@@ -19898,7 +19891,7 @@ arch flagstone
 x 47
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 47
 y 27
 end
@@ -20418,7 +20411,7 @@ arch flagstone
 x 48
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 48
 y 27
 end
@@ -20893,7 +20886,7 @@ arch flagstone
 x 49
 y 27
 end
-arch dwall3_3
+arch dwall_3_3
 x 49
 y 27
 end

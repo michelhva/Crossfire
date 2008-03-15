@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-27 mikeeusa
+Created:  2002-02-27 mikeeusa
 endmsg
 outdoor 1
 tile_path_1 citydecloudsA
@@ -4017,6 +4017,10 @@ arch slevel_3_3
 x 5
 y 49
 end
+arch swall_1_4
+x 5
+y 49
+end
 arch cwall_2_2_3
 x 5
 y 49
@@ -4554,6 +4558,10 @@ arch marble
 x 6
 y 48
 end
+arch dungeon_magic
+x 6
+y 49
+end
 arch flagstone
 x 6
 y 49
@@ -4562,11 +4570,7 @@ arch slevel_3_3
 x 6
 y 49
 end
-arch swall_1_4
-x 6
-y 49
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 6
 y 49
 end
@@ -5182,6 +5186,10 @@ arch tree5
 x 8
 y 5
 end
+arch dungeon_magic
+x 8
+y 6
+end
 arch flagstone
 name floor
 name_pl floor
@@ -5189,15 +5197,11 @@ face shop_empty.111
 x 8
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 8
 y 6
 end
 arch brazier
-x 8
-y 6
-end
-arch dungeon_magic
 x 8
 y 6
 end
@@ -5808,6 +5812,10 @@ x 9
 y 6
 end
 arch cwall_3_2
+x 9
+y 6
+end
+arch swall_1_3_half
 x 9
 y 6
 end
@@ -8317,6 +8325,10 @@ arch marble
 x 15
 y 48
 end
+arch dungeon_magic
+x 15
+y 49
+end
 arch flagstone
 x 15
 y 49
@@ -8325,11 +8337,7 @@ arch slevel_3_3
 x 15
 y 49
 end
-arch swall_1_3
-x 15
-y 49
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 15
 y 49
 end
@@ -8662,6 +8670,10 @@ x 16
 y 49
 end
 arch slevel_3_3
+x 16
+y 49
+end
+arch swall_1_3
 x 16
 y 49
 end
@@ -16514,6 +16526,10 @@ arch slevel_3_3
 x 34
 y 49
 end
+arch swall_1_4
+x 34
+y 49
+end
 arch cwall_2_2_3
 x 34
 y 49
@@ -16926,6 +16942,10 @@ arch marble
 x 35
 y 48
 end
+arch dungeon_magic
+x 35
+y 49
+end
 arch flagstone
 x 35
 y 49
@@ -16934,11 +16954,7 @@ arch slevel_3_3
 x 35
 y 49
 end
-arch swall_1_4
-x 35
-y 49
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 35
 y 49
 end
@@ -18616,6 +18632,10 @@ face shop_empty.111
 x 41
 y 6
 end
+arch swall_1_4
+x 41
+y 6
+end
 arch cwall_3_4
 x 41
 y 6
@@ -19133,6 +19153,10 @@ arch tree5
 x 42
 y 5
 end
+arch dungeon_magic
+x 42
+y 6
+end
 arch flagstone
 name floor
 name_pl floor
@@ -19140,15 +19164,11 @@ face shop_empty.111
 x 42
 y 6
 end
-arch swall_1_4
+arch swall_2_1_2
 x 42
 y 6
 end
 arch brazier
-x 42
-y 6
-end
-arch dungeon_magic
 x 42
 y 6
 end
@@ -20794,6 +20814,10 @@ arch marble
 x 44
 y 48
 end
+arch dungeon_magic
+x 44
+y 49
+end
 arch flagstone
 x 44
 y 49
@@ -20802,11 +20826,7 @@ arch slevel_3_3
 x 44
 y 49
 end
-arch swall_1_3
-x 44
-y 49
-end
-arch dungeon_magic
+arch swall_2_1_2
 x 44
 y 49
 end
@@ -21344,6 +21364,10 @@ x 45
 y 49
 end
 arch slevel_3_3
+x 45
+y 49
+end
+arch swall_1_3
 x 45
 y 49
 end

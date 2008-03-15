@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-28 mikeeusa
+Created:  2002-02-28 mikeeusa
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2E
@@ -132,22 +132,10 @@ end
 arch flagstone
 y 17
 end
-arch stair_down_4
-slaying cdcunderbigstre1
-hp 19
-sp 98
-y 17
-end
 arch dungeon_magic
 y 18
 end
 arch flagstone
-y 18
-end
-arch stair_up_4
-slaying cdccotgf1
-hp 19
-sp 60
 y 18
 end
 arch dungeon_magic
@@ -6003,7 +5991,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 13
@@ -6434,7 +6422,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 14
@@ -6809,13 +6797,6 @@ arch dungeon_floor
 x 15
 y 38
 end
-arch stair_up_2
-slaying cdccotgf1
-hp 34
-sp 80
-x 15
-y 38
-end
 arch dungeon_floor
 x 15
 y 39
@@ -6869,7 +6850,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 15
@@ -7281,7 +7262,7 @@ speed 0.500000
 value 1
 end
 arch invis_exit
-slaying ../cloudworlddecity
+slaying cloudworlddecity
 hp 62
 sp 106
 x 16
@@ -17420,13 +17401,6 @@ arch marble
 x 36
 y 25
 end
-arch stair_up_2
-slaying cdccotgf1
-hp 55
-sp 67
-x 36
-y 25
-end
 arch marble
 x 36
 y 26
@@ -21144,7 +21118,7 @@ arch flagstone
 x 43
 y 3
 end
-arch swall_1_3
+arch swall_2_1_2
 x 43
 y 3
 end
@@ -21172,7 +21146,7 @@ arch flagstone
 x 43
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 43
 y 6
 end
@@ -21708,6 +21682,10 @@ arch wwall_1_2
 x 44
 y 3
 end
+arch swall_1_3_half
+x 44
+y 3
+end
 arch dungeon_floor
 x 44
 y 4
@@ -21729,6 +21707,10 @@ randomitems none
 no_pass 0
 end
 arch dungeon_floor
+x 44
+y 6
+end
+arch swall_1_3_half
 x 44
 y 6
 end
@@ -21792,13 +21774,6 @@ x 44
 y 14
 end
 arch marble
-x 44
-y 15
-end
-arch stair_3_up
-slaying cdccotgf1
-hp 63
-sp 57
 x 44
 y 15
 end
@@ -23335,13 +23310,6 @@ x 47
 y 11
 end
 arch marble
-x 47
-y 12
-end
-arch stair_3_down
-slaying cdcunderbigstre1
-hp 66
-sp 93
 x 47
 y 12
 end

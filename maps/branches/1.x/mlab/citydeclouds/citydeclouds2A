@@ -1,5 +1,5 @@
 arch map
-name citydeclouds
+name City de Clouds
 reset_timeout 7200
 difficulty 1
 region dream
@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Created:  2002-08-28 mikeeusa
+Created:  2002-02-28 mikeeusa
 endmsg
 outdoor 1
 tile_path_2 citydeclouds2D
@@ -78,7 +78,7 @@ arch cwall_2_2_1
 y 24
 end
 arch exit
-slaying /mlab/cloudworlddecity
+slaying cloudworlddecity
 hp 45
 sp 76
 y 25
@@ -1100,7 +1100,7 @@ arch marble
 x 3
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 39
 end
@@ -1638,7 +1638,7 @@ arch marble
 x 5
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 39
 end
@@ -1970,7 +1970,7 @@ arch marble
 x 6
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 39
 end
@@ -2122,7 +2122,7 @@ arch marble
 x 6
 y 48
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 48
 end
@@ -2308,7 +2308,7 @@ arch marble
 x 7
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 39
 end
@@ -2460,7 +2460,7 @@ arch marble
 x 7
 y 48
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 48
 end
@@ -2621,7 +2621,7 @@ arch marble
 x 8
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 39
 end
@@ -3309,7 +3309,7 @@ arch marble
 x 10
 y 39
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 39
 end
@@ -4252,6 +4252,10 @@ arch dungeon_floor
 x 13
 y 32
 end
+arch swall_1_4
+x 13
+y 32
+end
 arch cwall_2_2_4
 x 13
 y 32
@@ -4522,7 +4526,7 @@ x 14
 y 32
 unique 1
 end
-arch swall_1_4
+arch swall_2_1_2
 x 14
 y 32
 end
@@ -6539,7 +6543,7 @@ x 22
 y 32
 unique 1
 end
-arch swall_1_3
+arch swall_2_1_2
 x 22
 y 32
 end
@@ -6807,6 +6811,10 @@ arch flagstone
 name floor
 name_pl floor
 face shop_empty.111
+x 23
+y 32
+end
+arch swall_1_3
 x 23
 y 32
 end
@@ -9816,11 +9824,11 @@ arch dungeon_floor
 x 34
 y 35
 end
-arch swall_2_2_3
+arch stwall_1_3
 x 34
 y 35
 end
-arch stwall_1_3
+arch swall_1_1_half
 x 34
 y 35
 end
@@ -10323,11 +10331,11 @@ arch dungeon_floor
 x 36
 y 35
 end
-arch swall_2_2_2
+arch stwall_1_4
 x 36
 y 35
 end
-arch stwall_1_4
+arch swall_1_1_half
 x 36
 y 35
 end
@@ -11086,7 +11094,7 @@ arch flagstone
 x 39
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 39
 y 34
 end
@@ -11320,7 +11328,7 @@ arch flagstone
 x 40
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 40
 y 34
 end
@@ -11585,7 +11593,7 @@ arch flagstone
 x 41
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 41
 y 34
 end
@@ -11846,7 +11854,7 @@ arch flagstone
 x 42
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 42
 y 34
 end
@@ -12116,7 +12124,7 @@ arch flagstone
 x 43
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 43
 y 34
 end
@@ -12382,7 +12390,7 @@ arch flagstone
 x 44
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 44
 y 34
 end
@@ -12640,7 +12648,7 @@ arch flagstone
 x 45
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 45
 y 34
 end
@@ -12868,7 +12876,7 @@ arch flagstone
 x 46
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 46
 y 34
 end
@@ -13126,7 +13134,7 @@ arch flagstone
 x 47
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 47
 y 34
 end
@@ -13360,7 +13368,7 @@ arch flagstone
 x 48
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 48
 y 34
 end
@@ -13641,7 +13649,7 @@ arch flagstone
 x 49
 y 34
 end
-arch dwall3_3
+arch dwall_3_3
 x 49
 y 34
 end
