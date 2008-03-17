@@ -1,12 +1,10 @@
 arch map
-name Tower of Demonolgy Master Level
+name Tower of Demonology Master Level
 difficulty 1
 width 20
 height 20
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -162,6 +160,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -299,6 +298,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -326,6 +326,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -389,6 +390,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -420,6 +422,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -481,6 +484,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -606,6 +610,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -667,6 +672,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -760,6 +766,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -833,6 +840,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -946,6 +954,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1019,6 +1028,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1058,6 +1068,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1121,6 +1132,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1160,6 +1172,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1217,6 +1230,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1244,6 +1258,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1275,6 +1290,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1346,6 +1362,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1487,6 +1504,7 @@ speed 0.310000
 attack_movement 7
 level 22
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1512,7 +1530,7 @@ end
 arch woodfloor
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch woodfloor
@@ -1730,7 +1748,7 @@ arch woodfloor
 x 10
 y 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 11
 end
@@ -1833,6 +1851,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -1864,6 +1883,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2005,6 +2025,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2064,6 +2085,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2103,6 +2125,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2164,6 +2187,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2259,6 +2283,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2336,6 +2361,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2453,6 +2479,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2510,6 +2537,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2541,6 +2569,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2572,6 +2601,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2673,6 +2703,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2817,6 +2848,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2909,6 +2941,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2936,6 +2969,7 @@ speed 0.320000
 attack_movement 7
 level 26
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -3003,6 +3037,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -3038,6 +3073,7 @@ speed 0.320000
 attack_movement 7
 level 28
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1

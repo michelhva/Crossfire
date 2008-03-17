@@ -7,8 +7,8 @@ enter_x 3
 enter_y 3
 msg
 Coyote: Todd Mitchell
-Creator: CF Java Map Editor
-Date:    3/30/2002
+Created:  2002-03-30
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch desert
@@ -1507,7 +1507,6 @@ x 10
 y 18
 end
 arch lightningwall
-dam 189
 x 10
 y 18
 speed 0.0
@@ -1516,6 +1515,8 @@ invisible 1
 connected 4
 no_pass 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch cobblestones
 x 10
@@ -1974,8 +1975,7 @@ endmsg
 x 13
 y 17
 connected 4
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch desert
 x 13
@@ -2091,8 +2091,7 @@ endmsg
 x 14
 y 11
 connected 3
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch desert
 x 14
@@ -2123,7 +2122,6 @@ x 14
 y 15
 end
 arch lightningwall
-dam 189
 x 14
 y 15
 speed 0.0
@@ -2132,6 +2130,8 @@ invisible 1
 connected 3
 no_pass 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch cobblestones
 x 14
@@ -2365,7 +2365,6 @@ y 3
 end
 arch lightningwall
 sp 5
-dam 189
 x 16
 y 3
 speed 0.0
@@ -2374,6 +2373,8 @@ invisible 1
 connected 2
 no_pass 0
 blocksview 0
+arch spell_windstorm
+end
 end
 arch desert
 x 16
@@ -2895,8 +2896,7 @@ food 1
 x 19
 y 11
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch bwall_4
 x 19

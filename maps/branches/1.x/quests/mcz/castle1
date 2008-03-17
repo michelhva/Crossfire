@@ -323,7 +323,7 @@ dam 8
 x 2
 y 2
 level 6
-armour 28
+resist_physical 28
 end
 arch dungeon_floor
 x 2
@@ -348,7 +348,7 @@ dam 8
 x 2
 y 3
 level 6
-armour 28
+resist_physical 28
 end
 arch dungeon_floor
 x 2
@@ -539,7 +539,7 @@ dam 8
 x 3
 y 2
 level 6
-armour 28
+resist_physical 28
 end
 arch dungeon_floor
 x 3
@@ -559,7 +559,7 @@ dam 8
 x 3
 y 3
 level 6
-armour 28
+resist_physical 28
 end
 arch dungeon_floor
 x 3
@@ -877,6 +877,10 @@ x 5
 y 3
 connected 2
 end
+arch dungeon_floor
+x 5
+y 4
+end
 arch bwall_0
 x 5
 y 4
@@ -1175,7 +1179,7 @@ arch dungeon_floor
 x 7
 y 7
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 7
 end
@@ -1191,7 +1195,7 @@ arch dungeon_floor
 x 7
 y 9
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 7
 y 9
 end
@@ -1207,7 +1211,7 @@ arch dungeon_floor
 x 7
 y 11
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 7
 y 11
 end
@@ -1247,7 +1251,7 @@ arch dungeon_floor
 x 7
 y 16
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 7
 y 16
 end
@@ -1263,7 +1267,7 @@ arch dungeon_floor
 x 7
 y 18
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 7
 y 18
 end
@@ -1576,10 +1580,6 @@ x 9
 y 22
 connected 1
 end
-arch dungeon_floor
-x 9
-y 23
-end
 arch magic_ear
 msg
 @match something|Something
@@ -1588,6 +1588,10 @@ endmsg
 x 9
 y 23
 connected 1
+end
+arch dungeon_floor
+x 9
+y 23
 end
 arch dungeon_floor
 x 9
@@ -1925,7 +1929,7 @@ arch dungeon_floor
 x 12
 y 7
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 7
 end
@@ -1941,7 +1945,7 @@ arch dungeon_floor
 x 12
 y 9
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 12
 y 9
 end
@@ -1957,7 +1961,7 @@ arch dungeon_floor
 x 12
 y 11
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 12
 y 11
 end
@@ -1997,7 +2001,7 @@ arch dungeon_floor
 x 12
 y 16
 end
-arch dwall_2_1_1
+arch dwall_1_2
 x 12
 y 16
 end
@@ -2013,7 +2017,7 @@ arch dungeon_floor
 x 12
 y 18
 end
-arch dwall_2_1_1
+arch dwall_1_1
 x 12
 y 18
 end
@@ -2373,7 +2377,7 @@ arch dungeon_floor
 x 15
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 1
 end

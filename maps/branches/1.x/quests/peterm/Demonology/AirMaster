@@ -274,6 +274,7 @@ level 30
 type 0
 resist_electricity 100
 carrying 100
+move_type walk
 monster 1
 can_cast_spell 1
 arch spell_paralyze
@@ -478,6 +479,10 @@ arch woodfloor
 x 7
 y 6
 end
+arch dungeon_magic
+x 7
+y 7
+end
 arch woodfloor
 x 7
 y 7
@@ -486,10 +491,6 @@ arch stair_down
 slaying AirTower2
 hp 7
 sp 7
-x 7
-y 7
-end
-arch dungeon_magic
 x 7
 y 7
 end

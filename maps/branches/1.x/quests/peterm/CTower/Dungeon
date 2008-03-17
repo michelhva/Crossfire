@@ -44,22 +44,19 @@ end
 arch dungeon_floor
 y 6
 end
-arch awall_2_2_1
+arch awall_3_2
 y 6
 end
 arch dungeon_floor
 y 7
 end
-arch stair_3_up
-name To the Servant level
-slaying Servants
-sp 7
+arch awall_2_1_1
 y 7
 end
 arch dungeon_floor
 y 8
 end
-arch awall_1_1
+arch awall_2_1_1
 y 8
 end
 arch dungeon_floor
@@ -180,6 +177,18 @@ x 1
 y 6
 end
 arch dungeon_floor
+x 1
+y 7
+end
+arch dungeon_floor
+x 1
+y 7
+end
+arch stair_3_up
+name To the Servant level
+slaying Servants
+hp 1
+sp 7
 x 1
 y 7
 end

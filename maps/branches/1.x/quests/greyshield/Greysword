@@ -935,19 +935,19 @@ face blocked.111
 x 6
 y 5
 end
-arch marble
-x 6
-y 6
-end
 arch dungeon_magic
 x 6
 y 6
 end
 arch marble
+x 6
+y 6
+end
+arch dungeon_magic
 x 6
 y 7
 end
-arch dungeon_magic
+arch marble
 x 6
 y 7
 end
@@ -956,11 +956,11 @@ x 6
 y 7
 connected 1
 end
-arch marble
+arch dungeon_magic
 x 6
 y 8
 end
-arch dungeon_magic
+arch marble
 x 6
 y 8
 end
@@ -969,11 +969,11 @@ x 6
 y 8
 connected 1
 end
-arch marble
+arch dungeon_magic
 x 6
 y 9
 end
-arch dungeon_magic
+arch marble
 x 6
 y 9
 end
@@ -1094,11 +1094,11 @@ face blocked.111
 x 7
 y 5
 end
-arch marble
+arch dungeon_magic
 x 7
 y 6
 end
-arch dungeon_magic
+arch marble
 x 7
 y 6
 end
@@ -1107,11 +1107,11 @@ x 7
 y 6
 connected 1
 end
-arch marble
+arch dungeon_magic
 x 7
 y 7
 end
-arch dungeon_magic
+arch marble
 x 7
 y 7
 end
@@ -1122,11 +1122,11 @@ sp 14
 x 7
 y 7
 end
-arch marble
+arch dungeon_magic
 x 7
 y 8
 end
-arch dungeon_magic
+arch marble
 x 7
 y 8
 end
@@ -1141,11 +1141,11 @@ endmsg
 x 7
 y 8
 end
-arch marble
+arch dungeon_magic
 x 7
 y 9
 end
-arch dungeon_magic
+arch marble
 x 7
 y 9
 end
@@ -1267,11 +1267,11 @@ face blocked.111
 x 8
 y 5
 end
-arch marble
+arch dungeon_magic
 x 8
 y 6
 end
-arch dungeon_magic
+arch marble
 x 8
 y 6
 end
@@ -1280,19 +1280,19 @@ x 8
 y 6
 connected 1
 end
-arch marble
-x 8
-y 7
-end
 arch dungeon_magic
 x 8
 y 7
 end
 arch marble
+x 8
+y 7
+end
+arch dungeon_magic
 x 8
 y 8
 end
-arch dungeon_magic
+arch marble
 x 8
 y 8
 end
@@ -1303,11 +1303,11 @@ sp 14
 x 8
 y 8
 end
-arch marble
+arch dungeon_magic
 x 8
 y 9
 end
-arch dungeon_magic
+arch marble
 x 8
 y 9
 end
@@ -1433,19 +1433,19 @@ face blocked.111
 x 9
 y 5
 end
-arch marble
-x 9
-y 6
-end
 arch dungeon_magic
 x 9
 y 6
 end
 arch marble
+x 9
+y 6
+end
+arch dungeon_magic
 x 9
 y 7
 end
-arch dungeon_magic
+arch marble
 x 9
 y 7
 end
@@ -1454,11 +1454,11 @@ x 9
 y 7
 connected 1
 end
-arch marble
+arch dungeon_magic
 x 9
 y 8
 end
-arch dungeon_magic
+arch marble
 x 9
 y 8
 end
@@ -1467,11 +1467,11 @@ x 9
 y 8
 connected 1
 end
-arch marble
+arch dungeon_magic
 x 9
 y 9
 end
-arch dungeon_magic
+arch marble
 x 9
 y 9
 end

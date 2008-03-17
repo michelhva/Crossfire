@@ -5,9 +5,7 @@ difficulty 1
 width 32
 height 29
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
 endmsg
 end
 arch dungeon_floor
@@ -2016,7 +2014,7 @@ end
 arch dungeon_floor
 x 10
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 end
 arch dungeon_floor
@@ -3684,7 +3682,7 @@ end
 arch dungeon_floor
 x 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 18
 end
 arch dungeon_floor
@@ -5041,7 +5039,7 @@ arch dungeon_floor
 x 24
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 24
 y 15
 end

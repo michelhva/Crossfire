@@ -4,7 +4,7 @@ difficulty 1
 width 25
 height 28
 msg
-Created:  1996-10-08
+Created:  1996-02-08
 endmsg
 end
 arch blocked
@@ -1327,6 +1327,10 @@ end
 arch cave18
 x 8
 y 1
+end
+arch pstone_1
+x 8
+y 2
 end
 arch cave3
 x 8
@@ -2947,9 +2951,17 @@ arch cave6
 x 15
 y 13
 end
+arch pstone_1
+x 15
+y 14
+end
 arch cave1
 x 15
 y 14
+end
+arch pstone_1
+x 15
+y 15
 end
 arch cave1
 x 15

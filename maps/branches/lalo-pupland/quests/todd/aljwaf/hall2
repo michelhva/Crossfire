@@ -8,8 +8,8 @@ enter_x 28
 enter_y 14
 msg
 Todd Mitchell
-Creator: CF Java Map Editor
-Date:    4/20/2002
+Created:  2002-04-20
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dun_2_2_2
@@ -201,7 +201,6 @@ x 1
 y 7
 end
 arch lightningwall_3
-dam 0
 x 1
 y 7
 no_pick 1
@@ -913,8 +912,7 @@ Go to your doom robber!
 endmsg
 x 5
 connected 7
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dun_2_1_2
 x 5
@@ -1939,8 +1937,7 @@ Shazzamm!
 endmsg
 x 10
 connected 9
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dun_2_1_2
 x 10
@@ -2537,7 +2534,6 @@ x 13
 y 4
 end
 arch lightningwall_7
-dam 6
 x 13
 y 4
 no_pick 1
@@ -2570,7 +2566,6 @@ x 13
 y 9
 end
 arch lightningwall_7
-dam 0
 x 13
 y 9
 no_pick 1
@@ -3296,8 +3291,7 @@ endmsg
 x 16
 y 22
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch stonefloor2
 x 16
@@ -3832,7 +3826,7 @@ No man may enter the tomb of Al Jwaf.
 endmsg
 x 19
 y 2
-fly_on 0
+move_on walk
 end
 arch stonefloor2
 x 19

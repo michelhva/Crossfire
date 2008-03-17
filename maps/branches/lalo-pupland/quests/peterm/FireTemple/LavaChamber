@@ -4,9 +4,8 @@ difficulty 1
 width 35
 height 37
 msg
-Creator: Peter Mardahl
-Email: peterm@soda.csua.berkeley.edu
-Date: Tue Oct  8 22:16:35 1996
+Created:  1996-10-08 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -1810,6 +1809,8 @@ end
 arch active_volcano
 x 15
 y 11
+arch spell_magic_bullet
+end
 end
 arch pstone_2
 x 15
@@ -2324,6 +2325,8 @@ end
 arch active_volcano
 x 17
 y 9
+arch spell_magic_bullet
+end
 end
 arch magic_mouth
 msg
@@ -2390,6 +2393,8 @@ end
 arch active_volcano
 x 17
 y 13
+arch spell_magic_bullet
+end
 end
 arch pstone_2
 x 17
@@ -2981,6 +2986,8 @@ end
 arch active_volcano
 x 19
 y 11
+arch spell_magic_bullet
+end
 end
 arch pstone_2
 x 19
