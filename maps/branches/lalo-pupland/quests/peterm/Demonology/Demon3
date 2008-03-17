@@ -1,12 +1,10 @@
 arch map
-name Tower of Demonolgy
+name Tower of Demonology
 difficulty 1
 width 15
 height 25
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Mon May 30 13:08:53 1994
+Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -708,7 +706,7 @@ arch dwall_2_1_2
 x 4
 y 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 17
 end
@@ -1038,7 +1036,7 @@ If you are, let me run downstairs.
 Opening the gates summons the
 Guardians!
 @match Guardians|Guardian|guardians
-yes, two visible, and two invisibile.
+yes, two visible, and two invisible.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
 summoned by means of those portals.

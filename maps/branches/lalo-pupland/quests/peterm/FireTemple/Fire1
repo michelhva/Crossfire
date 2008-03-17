@@ -5,9 +5,7 @@ darkness 5
 width 32
 height 32
 msg
-Creator: PeterM
-Email: peterm@soda.csua.berkeley.edu
-Date: Sat Jun  7 09:38:36 1997
+Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
 endmsg
 end
 arch pstone_1
@@ -748,9 +746,9 @@ name fire worshipper
 Wis 3
 x 3
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 3
@@ -944,9 +942,9 @@ name fire worshipper
 Wis 3
 x 4
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 4
@@ -1141,9 +1139,9 @@ name fire worshipper
 Wis 3
 x 5
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 5
@@ -1964,9 +1962,9 @@ name fire worshipper
 Wis 3
 x 9
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 9
@@ -2178,9 +2176,9 @@ name fire worshipper
 Wis 3
 x 10
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 10
@@ -2365,9 +2363,9 @@ name fire worshipper
 Wis 3
 x 11
 y 1
+resist_fire 100
 randomitems imp
 sleep 1
-immune 4
 end
 arch pstone_1
 x 11
@@ -4900,7 +4898,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 22
@@ -4943,7 +4940,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 22
@@ -5098,7 +5094,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 23
@@ -5504,7 +5499,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 25
@@ -5670,7 +5664,6 @@ attacktype 5
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 end
 arch pstone_1
 x 26
@@ -5900,7 +5893,6 @@ carrying 100
 weight 70000
 randomitems imp
 see_invisible 0
-immune 0
 arch key2
 slaying firedoor3
 end

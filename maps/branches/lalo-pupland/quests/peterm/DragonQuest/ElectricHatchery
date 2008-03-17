@@ -5,9 +5,7 @@ darkness 5
 width 16
 height 30
 msg
-Creator: peterm
-Email: peterm@soda.csua.berkeley.edu
-Date: Fri Aug 19 23:44:33 1994
+Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
 endmsg
 end
 arch blocked
@@ -458,7 +456,8 @@ other_arch elec_dragon
 x 2
 y 21
 speed 0.004000
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 2
@@ -506,7 +505,8 @@ arch generate_dragon
 other_arch big_elec
 x 2
 y 27
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 2
@@ -542,7 +542,8 @@ arch generate_dragon
 other_arch big_elec
 x 3
 y 3
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 3
@@ -585,7 +586,8 @@ other_arch elec_dragon
 x 3
 y 10
 speed 0.004000
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 3
@@ -1047,7 +1049,8 @@ arch generate_dragon
 other_arch big_elec
 x 6
 y 6
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 6
@@ -1224,7 +1227,8 @@ other_arch elec_dragon
 x 7
 y 8
 speed 0.004000
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 7
@@ -1604,7 +1608,8 @@ other_arch elec_dragon
 x 9
 y 15
 speed 0.004000
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 9
@@ -1704,7 +1709,8 @@ arch generate_dragon
 other_arch big_elec
 x 10
 y 3
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 10
@@ -2052,7 +2058,8 @@ other_arch elec_dragon
 x 12
 y 9
 speed 0.004000
-vulnerable 8
+resist_fire 0
+resist_electricity 100
 end
 arch pstone_2
 x 12

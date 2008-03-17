@@ -1,12 +1,10 @@
 arch map
-name Tower of Demonolgy Journeyman Level
+name Tower of Demonology Journeyman Level
 difficulty 1
 width 20
 height 20
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
 endmsg
 end
 arch cobblestones
@@ -355,6 +353,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -435,6 +434,7 @@ speed 0.200000
 attack_movement 7
 level 10
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -498,6 +498,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -563,6 +564,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -600,6 +602,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -687,6 +690,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -740,6 +744,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -804,6 +809,7 @@ speed 0.200000
 attack_movement 7
 level 10
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -836,6 +842,7 @@ speed 0.200000
 attack_movement 7
 level 10
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1013,6 +1020,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1062,6 +1070,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1118,6 +1127,7 @@ speed 0.200000
 attack_movement 7
 level 10
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1150,6 +1160,7 @@ speed 0.200000
 attack_movement 7
 level 10
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1253,6 +1264,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1357,6 +1369,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1391,6 +1404,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1436,6 +1450,7 @@ speed 0.210000
 attack_movement 7
 level 11
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1469,6 +1484,7 @@ speed 0.220000
 attack_movement 7
 level 12
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -1830,9 +1846,6 @@ y 11
 end
 arch locked_door1
 slaying master
-msg
-
-endmsg
 x 10
 y 11
 end
@@ -2144,6 +2157,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2215,6 +2229,7 @@ speed 0.300000
 attack_movement 7
 level 20
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2288,6 +2303,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2370,6 +2386,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2397,6 +2414,7 @@ speed 0.300000
 attack_movement 7
 level 20
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2429,6 +2447,7 @@ speed 0.300000
 attack_movement 7
 level 20
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2460,6 +2479,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2508,6 +2528,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2542,6 +2563,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2592,6 +2614,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2765,6 +2788,7 @@ speed 0.300000
 attack_movement 7
 level 20
 type 0
+move_type walk
 monster 1
 see_invisible 1
 can_cast_spell 1
@@ -2842,6 +2866,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2884,6 +2909,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -2926,6 +2952,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -3018,6 +3045,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -3104,6 +3132,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -3208,6 +3237,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -3250,6 +3280,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1
@@ -3296,6 +3327,7 @@ speed 0.250000
 attack_movement 7
 level 15
 type 0
+move_type walk
 is_animated 1
 monster 1
 see_invisible 1

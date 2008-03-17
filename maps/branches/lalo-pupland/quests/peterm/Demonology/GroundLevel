@@ -1,12 +1,10 @@
 arch map
-name Tower of Demonolgy Ground Level
+name Tower of Demonology Ground Level
 difficulty 1
 width 20
 height 20
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -631,7 +629,7 @@ end
 arch woodfloor
 x 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 end
 arch woodfloor
@@ -1014,7 +1012,7 @@ end
 arch woodfloor
 x 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 end
 arch woodfloor
@@ -1526,7 +1524,7 @@ end
 arch woodfloor
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch woodfloor
@@ -2243,7 +2241,7 @@ end
 arch woodfloor
 x 16
 end
-arch dwall3_3
+arch dwall_3_3
 x 16
 end
 arch woodfloor

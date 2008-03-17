@@ -5,6 +5,9 @@ width 37
 height 35
 enter_x 35
 enter_y 33
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 end
 arch woodfloor2
 end
@@ -3172,6 +3175,8 @@ end
 arch lightningwall_5
 x 13
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 13
@@ -3442,6 +3447,8 @@ end
 arch lightningwall_5
 x 14
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 14
@@ -3616,6 +3623,8 @@ end
 arch lightningwall_5
 x 15
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 15
@@ -3799,6 +3808,8 @@ end
 arch lightningwall_5
 x 16
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 16
@@ -3886,6 +3897,8 @@ x 17
 y 11
 material 256
 no_pick 1
+arch spell_regenerate_spellpoints
+end
 end
 arch woodfloor2
 x 17
@@ -3978,6 +3991,8 @@ end
 arch lightningwall_5
 x 17
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 17
@@ -4169,6 +4184,8 @@ end
 arch lightningwall_5
 x 18
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 18
@@ -4332,6 +4349,8 @@ end
 arch lightningwall_5
 x 19
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 19
@@ -4510,6 +4529,8 @@ end
 arch lightningwall_5
 x 20
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 20
@@ -4680,6 +4701,8 @@ end
 arch lightningwall_5
 x 21
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 21
@@ -4950,6 +4973,8 @@ end
 arch lightningwall_5
 x 22
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 22
@@ -5224,6 +5249,8 @@ end
 arch lightningwall_5
 x 23
 y 32
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 23

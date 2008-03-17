@@ -6,9 +6,7 @@ height 40
 enter_x 15
 enter_y 38
 msg
-Creator:
-Email:
-Date: Tue Nov 16 14:07:01 1993
+Created:  1993-11-16
 endmsg
 end
 arch marble
@@ -1132,7 +1130,7 @@ x 4
 y 22
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1149,7 +1147,7 @@ x 4
 y 23
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1166,7 +1164,7 @@ x 4
 y 24
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1183,7 +1181,7 @@ x 4
 y 25
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1200,7 +1198,7 @@ x 4
 y 26
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 4
@@ -1436,7 +1434,7 @@ x 5
 y 22
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1453,7 +1451,7 @@ x 5
 y 23
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1470,7 +1468,7 @@ x 5
 y 24
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1487,7 +1485,7 @@ x 5
 y 25
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 5
@@ -1740,7 +1738,7 @@ x 6
 y 23
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -1757,7 +1755,7 @@ x 6
 y 24
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -1774,7 +1772,7 @@ x 6
 y 25
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 6
@@ -2016,7 +2014,7 @@ x 7
 y 22
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 7
@@ -2033,7 +2031,7 @@ x 7
 y 23
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 7
@@ -2291,7 +2289,7 @@ x 8
 y 22
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 8
@@ -2308,7 +2306,7 @@ x 8
 y 23
 speed 0.300000
 attacktype 16385
-immune 16
+resist_cold 100
 end
 arch marble
 x 8
@@ -2376,9 +2374,10 @@ wc -14
 x 8
 y 27
 speed 0.600000
+resist_physical 100
+resist_electricity 100
 carrying 100
 unaggressive 1
-immune 29
 arch key2
 name Very hot key
 slaying hell

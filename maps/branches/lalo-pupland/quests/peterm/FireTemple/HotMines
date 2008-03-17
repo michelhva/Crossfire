@@ -4,9 +4,8 @@ difficulty 10
 width 30
 height 30
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr 15 22:39:46 1997
+Created:  1997-02-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch permanent_lava
@@ -20,11 +19,12 @@ arch bwall_2_1_1
 y 1
 end
 arch lightningwall_3
-dam 82
 y 1
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 y 2
@@ -69,11 +69,12 @@ arch bwall_2_1_1
 y 8
 end
 arch lightningwall_3
-dam 82
 y 8
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 y 9
@@ -88,11 +89,12 @@ arch bwall_2_1_1
 y 10
 end
 arch lightningwall_3
-dam 82
 y 10
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 y 11
@@ -203,11 +205,12 @@ arch bwall_2_1_1
 y 28
 end
 arch lightningwall_3
-dam 82
 y 28
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 y 29
@@ -250,20 +253,22 @@ x 1
 y 5
 end
 arch lightningwall_1
-dam 82
 x 1
 y 5
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch lightningwall_3
-dam 82
 x 1
 y 5
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 1
@@ -322,12 +327,13 @@ x 1
 y 16
 end
 arch lightningwall_1
-dam 82
 x 1
 y 16
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch pstone_1
 x 1
@@ -409,12 +415,13 @@ x 1
 y 29
 end
 arch lightningwall_1
-dam 82
 x 1
 y 29
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 2
@@ -471,12 +478,13 @@ x 2
 y 11
 end
 arch lightningwall_1
-dam 82
 x 2
 y 11
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 2
@@ -547,12 +555,13 @@ x 2
 y 22
 end
 arch lightningwall_1
-dam 82
 x 2
 y 22
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 2
@@ -583,12 +592,13 @@ x 2
 y 27
 end
 arch lightningwall_3
-dam 82
 x 2
 y 27
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 2
@@ -740,12 +750,13 @@ x 3
 y 19
 end
 arch lightningwall_3
-dam 82
 x 3
 y 19
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 3
@@ -768,12 +779,13 @@ x 3
 y 22
 end
 arch lightningwall_3
-dam 82
 x 3
 y 22
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 3
@@ -1415,12 +1427,13 @@ x 7
 y 4
 end
 arch lightningwall_3
-dam 82
 x 7
 y 4
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 7
@@ -1675,12 +1688,13 @@ x 8
 y 16
 end
 arch lightningwall_1
-dam 82
 x 8
 y 16
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 8
@@ -1979,12 +1993,13 @@ x 9
 y 29
 end
 arch lightningwall_1
-dam 82
 x 9
 y 29
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 10
@@ -2427,12 +2442,13 @@ x 12
 y 6
 end
 arch lightningwall_3
-dam 82
 x 12
 y 6
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 12
@@ -2581,12 +2597,13 @@ x 12
 y 29
 end
 arch lightningwall_1
-dam 82
 x 12
 y 29
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 13
@@ -2662,12 +2679,13 @@ x 13
 y 12
 end
 arch lightningwall_1
-dam 82
 x 13
 y 12
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch pstone_1
 x 13
@@ -2862,12 +2880,13 @@ x 14
 y 9
 end
 arch lightningwall_3
-dam 82
 x 14
 y 9
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 14
@@ -2878,12 +2897,13 @@ x 14
 y 10
 end
 arch lightningwall_3
-dam 82
 x 14
 y 10
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 14
@@ -3111,12 +3131,13 @@ x 15
 y 15
 end
 arch lightningwall_1
-dam 82
 x 15
 y 15
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 15
@@ -3559,12 +3580,13 @@ x 17
 y 24
 end
 arch lightningwall_7
-dam 82
 x 17
 y 24
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 17
@@ -3637,12 +3659,13 @@ x 18
 y 4
 end
 arch lightningwall_3
-dam 82
 x 18
 y 4
 speed 0.100000
 speed_left -1.590000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 18
@@ -3729,12 +3752,13 @@ x 18
 y 16
 end
 arch lightningwall_7
-dam 82
 x 18
 y 16
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 18
@@ -3817,12 +3841,13 @@ x 18
 y 29
 end
 arch lightningwall_1
-dam 82
 x 18
 y 29
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 19
@@ -3887,12 +3912,13 @@ x 19
 y 11
 end
 arch lightningwall_1
-dam 82
 x 19
 y 11
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch pstone_1
 x 19
@@ -4027,12 +4053,13 @@ x 19
 y 28
 end
 arch lightningwall_7
-dam 82
 x 19
 y 28
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 19
@@ -4428,12 +4455,13 @@ x 21
 y 23
 end
 arch lightningwall_1
-dam 82
 x 21
 y 23
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 21
@@ -4586,12 +4614,13 @@ x 22
 y 17
 end
 arch lightningwall_1
-dam 82
 x 22
 y 17
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 22
@@ -4630,12 +4659,13 @@ x 22
 y 22
 end
 arch lightningwall_7
-dam 82
 x 22
 y 22
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 22
@@ -4989,12 +5019,13 @@ x 24
 y 15
 end
 arch lightningwall_7
-dam 82
 x 24
 y 15
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 24
@@ -5467,12 +5498,13 @@ x 26
 y 29
 end
 arch lightningwall_1
-dam 82
 x 26
 y 29
 speed 0.100000
 speed_left -0.870000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 27
@@ -5613,12 +5645,13 @@ x 27
 y 18
 end
 arch lightningwall_7
-dam 82
 x 27
 y 18
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 27
@@ -5701,12 +5734,13 @@ x 27
 y 28
 end
 arch lightningwall_7
-dam 82
 x 27
 y 28
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 27
@@ -5877,12 +5911,13 @@ x 29
 y 1
 end
 arch lightningwall_7
-dam 82
 x 29
 y 1
 speed 0.100000
 speed_left -1.060000
 level 100
+arch spell_firebolt
+end
 end
 arch permanent_lava
 x 29

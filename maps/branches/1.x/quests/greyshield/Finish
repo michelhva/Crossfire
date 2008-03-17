@@ -7,48 +7,93 @@ enter_x 7
 enter_y 7
 msg
 Created:  1996-10-26 Chris Jeske
+Modified: 2008-01-04 Nicolas Weeger
 endmsg
 end
+arch marble
+end
 arch flagstone_2_2_2
+end
+arch marble
+y 1
 end
 arch flagstone_2_1_1
 y 1
 end
+arch marble
+y 2
+end
 arch flagstone_2_1_1
 y 2
+end
+arch marble
+y 3
 end
 arch flagstone_2_1_1
 y 3
 end
+arch marble
+y 4
+end
 arch flagstone_2_1_1
 y 4
+end
+arch marble
+y 5
 end
 arch flagstone_2_1_1
 y 5
 end
+arch marble
+y 6
+end
 arch flagstone_2_1_1
 y 6
+end
+arch marble
+y 7
 end
 arch flagstone_2_1_1
 y 7
 end
+arch marble
+y 8
+end
 arch flagstone_2_1_1
 y 8
+end
+arch marble
+y 9
 end
 arch flagstone_2_1_1
 y 9
 end
+arch marble
+y 10
+end
 arch flagstone_2_1_1
 y 10
+end
+arch marble
+y 11
 end
 arch flagstone_2_1_1
 y 11
 end
-arch flagstone_2_1_1
+arch marble
 y 12
 end
 arch flagstone_2_1_1
+y 12
+end
+arch marble
 y 13
+end
+arch flagstone_2_1_1
+y 13
+end
+arch marble
+y 14
 end
 arch flagstone_3_2
 y 14
@@ -56,6 +101,9 @@ end
 arch blocked
 y 15
 end
+arch marble
+x 1
+end
 arch flagstone_2_1_2
 x 1
 end
@@ -203,6 +251,10 @@ sp 45
 x 1
 y 13
 end
+arch marble
+x 1
+y 14
+end
 arch flagstone_2_1_2
 x 1
 y 14
@@ -211,6 +263,9 @@ arch blocked
 x 1
 y 15
 end
+arch marble
+x 2
+end
 arch flagstone_2_1_2
 x 2
 end
@@ -349,6 +404,10 @@ arch magic_banned
 x 2
 y 13
 end
+arch marble
+x 2
+y 14
+end
 arch flagstone_2_1_2
 x 2
 y 14
@@ -357,6 +416,9 @@ arch blocked
 x 2
 y 15
 end
+arch marble
+x 3
+end
 arch flagstone_2_1_2
 x 3
 end
@@ -495,6 +557,10 @@ arch marble
 x 3
 y 13
 end
+arch marble
+x 3
+y 14
+end
 arch flagstone_2_1_2
 x 3
 y 14
@@ -503,6 +569,9 @@ arch blocked
 x 3
 y 15
 end
+arch marble
+x 4
+end
 arch flagstone_2_1_2
 x 4
 end
@@ -641,6 +710,10 @@ arch marble
 x 4
 y 13
 end
+arch marble
+x 4
+y 14
+end
 arch flagstone_2_1_2
 x 4
 y 14
@@ -648,6 +721,9 @@ end
 arch blocked
 x 4
 y 15
+end
+arch marble
+x 5
 end
 arch flagstone_2_1_2
 x 5
@@ -775,6 +851,10 @@ arch marble
 x 5
 y 13
 end
+arch marble
+x 5
+y 14
+end
 arch flagstone_2_1_2
 x 5
 y 14
@@ -782,6 +862,9 @@ end
 arch blocked
 x 5
 y 15
+end
+arch marble
+x 6
 end
 arch flagstone_2_1_2
 x 6
@@ -969,6 +1052,10 @@ x 6
 y 13
 connected 1
 end
+arch marble
+x 6
+y 14
+end
 arch flagstone_2_1_2
 x 6
 y 14
@@ -976,6 +1063,9 @@ end
 arch blocked
 x 6
 y 15
+end
+arch marble
+x 7
 end
 arch flagstone_2_1_2
 x 7
@@ -1178,6 +1268,10 @@ x 7
 y 13
 connected 1
 end
+arch marble
+x 7
+y 14
+end
 arch flagstone_2_1_2
 x 7
 y 14
@@ -1186,6 +1280,9 @@ arch blocked
 x 7
 y 15
 end
+arch marble
+x 8
+end
 arch flagstone_2_1_2
 x 8
 end
@@ -1372,6 +1469,10 @@ x 8
 y 13
 connected 1
 end
+arch marble
+x 8
+y 14
+end
 arch flagstone_2_1_2
 x 8
 y 14
@@ -1380,6 +1481,9 @@ arch blocked
 x 8
 y 15
 end
+arch marble
+x 9
+end
 arch flagstone_2_1_2
 x 9
 end
@@ -1506,6 +1610,10 @@ arch marble
 x 9
 y 13
 end
+arch marble
+x 9
+y 14
+end
 arch flagstone_2_1_2
 x 9
 y 14
@@ -1514,6 +1622,9 @@ arch blocked
 x 9
 y 15
 end
+arch marble
+x 10
+end
 arch flagstone_2_1_2
 x 10
 end
@@ -1652,6 +1763,10 @@ arch marble
 x 10
 y 13
 end
+arch marble
+x 10
+y 14
+end
 arch flagstone_2_1_2
 x 10
 y 14
@@ -1659,6 +1774,9 @@ end
 arch blocked
 x 10
 y 15
+end
+arch marble
+x 11
 end
 arch flagstone_2_1_2
 x 11
@@ -1798,6 +1916,10 @@ arch marble
 x 11
 y 13
 end
+arch marble
+x 11
+y 14
+end
 arch flagstone_2_1_2
 x 11
 y 14
@@ -1805,6 +1927,9 @@ end
 arch blocked
 x 11
 y 15
+end
+arch marble
+x 12
 end
 arch flagstone_2_1_2
 x 12
@@ -1944,6 +2069,10 @@ arch magic_banned
 x 12
 y 13
 end
+arch marble
+x 12
+y 14
+end
 arch flagstone_2_1_2
 x 12
 y 14
@@ -1951,6 +2080,9 @@ end
 arch blocked
 x 12
 y 15
+end
+arch marble
+x 13
 end
 arch flagstone_2_1_2
 x 13
@@ -2099,6 +2231,10 @@ sp 45
 x 13
 y 13
 end
+arch marble
+x 13
+y 14
+end
 arch flagstone_2_1_2
 x 13
 y 14
@@ -2106,61 +2242,120 @@ end
 arch blocked
 x 13
 y 15
+end
+arch marble
+x 14
 end
 arch flagstone_3_3
 x 14
 end
-arch flagstone_2_1_1
+arch marble
 x 14
 y 1
 end
 arch flagstone_2_1_1
 x 14
+y 1
+end
+arch marble
+x 14
 y 2
 end
 arch flagstone_2_1_1
+x 14
+y 2
+end
+arch marble
 x 14
 y 3
 end
 arch flagstone_2_1_1
 x 14
+y 3
+end
+arch marble
+x 14
 y 4
 end
 arch flagstone_2_1_1
+x 14
+y 4
+end
+arch marble
 x 14
 y 5
 end
 arch flagstone_2_1_1
 x 14
+y 5
+end
+arch marble
+x 14
 y 6
 end
 arch flagstone_2_1_1
+x 14
+y 6
+end
+arch marble
 x 14
 y 7
 end
 arch flagstone_2_1_1
 x 14
+y 7
+end
+arch marble
+x 14
 y 8
 end
 arch flagstone_2_1_1
+x 14
+y 8
+end
+arch marble
 x 14
 y 9
 end
 arch flagstone_2_1_1
 x 14
+y 9
+end
+arch marble
+x 14
 y 10
 end
 arch flagstone_2_1_1
+x 14
+y 10
+end
+arch marble
 x 14
 y 11
 end
 arch flagstone_2_1_1
 x 14
+y 11
+end
+arch marble
+x 14
 y 12
 end
 arch flagstone_2_1_1
 x 14
+y 12
+end
+arch marble
+x 14
 y 13
+end
+arch flagstone_2_1_1
+x 14
+y 13
+end
+arch marble
+x 14
+y 14
 end
 arch flagstone_3_1
 x 14
@@ -2369,8 +2564,8 @@ connected 1
 end
 arch statue
 name Grey Angel
-face archangel.118
-animation GreyAngel
+face highangel.118
+animation highangel
 x 19
 y 11
 speed -0.500000
@@ -2386,8 +2581,8 @@ connected 1
 end
 arch statue
 name Grey Angel
-face archangel.118
-animation GreyAngel
+face highangel.118
+animation highangel
 x 20
 y 10
 speed -0.500000
@@ -2404,7 +2599,6 @@ end
 arch holy_shield
 name Greyshield
 msg
-
 The arts that crafted this shield have long
 been lost. The Grey Master's works are but
 a distant shadow of the might contained in
@@ -2417,7 +2611,6 @@ But looking back at the shield, you
 decide that it certainly doesn't emit any
 light. As a matter of fact, it looks as if
 it would absorb light, were that possible...
-
 endmsg
 Dex 3
 Con 3
@@ -2450,8 +2643,8 @@ connected 1
 end
 arch statue
 name Grey Angel
-face archangel.118
-animation GreyAngel
+face highangel.118
+animation highangel
 x 20
 y 12
 speed -0.500000
@@ -2467,8 +2660,8 @@ connected 1
 end
 arch statue
 name Grey Angel
-face archangel.118
-animation GreyAngel
+face highangel.118
+animation highangel
 x 21
 y 11
 speed -0.500000

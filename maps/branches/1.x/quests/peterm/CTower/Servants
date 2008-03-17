@@ -10,25 +10,25 @@ end
 arch cobblestones2
 y 6
 end
-arch dwall_2_1_2
+arch dwall_2_2_2
 y 6
 end
 arch cobblestones2
 y 7
 end
-arch stair_3_down
-name To the Dungeon
-slaying Dungeon
-sp 7
+arch dwall_2_1_1
 y 7
 end
 arch cobblestones2
 y 8
 end
+arch dwall_2_1_1
+y 8
+end
 arch cobblestones2
 y 9
 end
-arch dwall_2_1_2
+arch dwall_2_2_1
 y 9
 end
 arch cobblestones2
@@ -67,7 +67,11 @@ arch cobblestones2
 x 1
 y 7
 end
-arch medium_guard
+arch stair_3_down
+name To the Dungeon
+slaying Dungeon
+hp 1
+sp 7
 x 1
 y 7
 end
@@ -75,15 +79,11 @@ arch cobblestones2
 x 1
 y 8
 end
-arch medium_guard
-x 1
-y 8
-end
 arch cobblestones2
 x 1
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 9
 end
@@ -156,6 +156,22 @@ x 2
 y 7
 end
 arch cobblestones2
+x 2
+y 7
+end
+arch medium_guard
+x 2
+y 7
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch cobblestones2
+x 2
+y 8
+end
+arch medium_guard
 x 2
 y 8
 end
@@ -243,10 +259,6 @@ arch cobblestones2
 x 3
 y 7
 end
-arch charwoman
-x 3
-y 7
-end
 arch cobblestones2
 x 3
 y 8
@@ -275,7 +287,7 @@ arch cobblestones2
 x 3
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 12
 end
@@ -350,6 +362,10 @@ x 4
 y 6
 end
 arch cobblestones2
+x 4
+y 7
+end
+arch charwoman
 x 4
 y 7
 end
@@ -872,7 +888,7 @@ end
 arch cobblestones2
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch cobblestones2
@@ -939,7 +955,7 @@ arch cobblestones2
 x 9
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 9
 end

@@ -4,9 +4,7 @@ difficulty 1
 width 16
 height 16
 msg
-Creator: peter mardahl
-Email: peterm@soda.berkeley.edu
-Date: Fri Feb 11 16:20:28 1994
+Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
 endmsg
 end
 arch marble
@@ -54,7 +52,7 @@ end
 arch marble
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 y 9
 end
 arch marble
@@ -386,7 +384,7 @@ end
 arch marble
 x 4
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 end
 arch marble
@@ -928,7 +926,7 @@ end
 arch marble
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch marble
@@ -1109,7 +1107,7 @@ arch marble
 x 13
 y 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 y 1
 end

@@ -5,9 +5,7 @@ difficulty 1
 width 32
 height 29
 msg
-Creator: Magnus Kronhamn
-Email: mak@solace.mh.se
-Date: Sun Apr  9 23:46:05 2000
+Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
 endmsg
 end
 arch blocked
@@ -4953,8 +4951,7 @@ food 1
 x 18
 y 2
 connected 2
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 msg
@@ -4965,7 +4962,7 @@ endmsg
 food 1
 x 18
 y 2
-fly_on 0
+move_on walk
 end
 arch dungeon_floor
 x 18

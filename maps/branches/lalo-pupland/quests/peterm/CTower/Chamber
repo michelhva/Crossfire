@@ -4,9 +4,8 @@ difficulty 1
 width 16
 height 16
 msg
-Creator: peter mardahl
-Email: peterm@soda.berkeley.edu
-Date: Fri Feb 11 16:20:28 1994
+Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -218,7 +217,6 @@ y 8
 speed 0.200000
 level 6
 sleep 0
-protected 0
 end
 arch woodfloor
 x 6
@@ -455,6 +453,8 @@ end
 arch potion_magic
 x 10
 y 6
+arch spell_regenerate_spellpoints
+end
 end
 arch woodfloor
 x 10

@@ -1,12 +1,10 @@
 arch map
-name Tower of Demonolgy Earth Study
+name Tower of Demonology Earth Study
 difficulty 1
 width 9
 height 9
 msg
-Creator: peterm
-Email: peterm@soda.berkeley.edu
-Date: Sat Apr 30 20:50:08 1994
+Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
 endmsg
 end
 arch woodfloor
@@ -275,10 +273,11 @@ speed 0.320000
 attack_movement 7
 level 30
 type 0
+resist_cold 100
 carrying 100
+move_type walk
 monster 1
 can_cast_spell 1
-immune 16
 arch spell_summon_earth_elemental
 end
 arch key2

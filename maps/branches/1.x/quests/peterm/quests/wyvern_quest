@@ -1143,7 +1143,6 @@ x 3
 y 30
 end
 arch altar_devourers
-face altardevo.111
 x 3
 y 30
 level 120
@@ -1903,18 +1902,13 @@ face mediumston.111
 x 6
 y 22
 end
-arch dun_1_1
-face dun_4.111
-x 6
-y 22
-end
 arch medium_stones
 face mediumston.111
 x 6
 y 23
 end
-arch dun_2_1_1
-face dun_5.111
+arch dun_1_1
+face dun_4.111
 x 6
 y 23
 end
@@ -1953,8 +1947,8 @@ face mediumston.111
 x 6
 y 27
 end
-arch dun_2_1_1
-face dun_5.111
+arch dun_1_2
+face dun_1.111
 x 6
 y 27
 end
@@ -1993,8 +1987,8 @@ face mediumston.111
 x 6
 y 34
 end
-arch dun_2_1_1
-face dun_5.111
+arch dun_1_1
+face dun_4.111
 x 6
 y 34
 end
@@ -3600,18 +3594,13 @@ face mediumston.111
 x 12
 y 26
 end
-arch dun_1_1
-face dun_4.111
-x 12
-y 26
-end
 arch medium_stones
 face mediumston.111
 x 12
 y 27
 end
-arch dun_2_1_1
-face dun_5.111
+arch dun_1_1
+face dun_4.111
 x 12
 y 27
 end
