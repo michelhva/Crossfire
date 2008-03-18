@@ -8,9 +8,7 @@ height 16
 enter_x 12
 enter_y 3
 msg
-Creator: Raphael Quinet
-Email: quinet@gamers.org
-Date: Fri Jan 22 04:07:56 1999
+Created:  1999-01-22 Raphael Quinet (quinet@gamers.org)
 endmsg
 end
 arch blocked
@@ -188,11 +186,6 @@ arch pstone_1
 x 2
 y 6
 end
-arch button_handle
-x 2
-y 6
-connected 1
-end
 arch pstone_2
 x 2
 y 7
@@ -296,12 +289,6 @@ arch pstone_1
 x 3
 y 8
 end
-arch spikes_closed
-x 3
-y 8
-speed 0.500000
-connected 1
-end
 arch pstone_2
 x 3
 y 9
@@ -368,9 +355,17 @@ arch cave13
 x 4
 y 3
 end
-arch pstone_1
+arch pstone_2
 x 4
 y 4
+end
+arch torch_1
+food 0
+x 4
+y 4
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_1
 x 4
@@ -450,22 +445,36 @@ arch pstone_1
 x 5
 y 2
 end
-arch pstone_1
-x 5
-y 3
-end
-arch sign
+arch ladder_down
+name to the dwarven mines
+slaying /!
 msg
-Nothing here yet..
+layoutstyle maze
+xsize 19
+ysize 14
+expand2x 1
+floorstyle lightdirt
+decorstyle minerals2
+wallstyle cave2
+doorstyle none
+exitstyle ladder
+monsterstyle dwarf
+dungeon_level 1
+dungeon_depth 50
+difficulty 0
+difficulty_increase 0.5
+orientation 1
+symmetry 1
+treasureoptions 1
 endmsg
 x 5
-y 3
+y 2
 end
 arch pstone_1
 x 5
-y 4
+y 3
 end
-arch horned_helmet
+arch pstone_1
 x 5
 y 4
 end
@@ -560,9 +569,25 @@ arch pstone_1
 x 6
 y 3
 end
+arch sign_w
+name All who enter read this
+msg
+The estimated level one should be is level 10 for this random dungeon. Perhaps higher.
+endmsg
+x 6
+y 3
+end
 arch pstone_2
 x 6
 y 4
+end
+arch torch_1
+food 0
+x 6
+y 4
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_2
 x 6
@@ -609,8 +634,12 @@ x 6
 y 11
 end
 arch torch_1
+food 0
 x 6
 y 11
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_1
 x 6
@@ -977,8 +1006,12 @@ x 10
 y 7
 end
 arch torch_1
+food 0
 x 10
 y 7
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_1
 x 10
@@ -996,9 +1029,17 @@ arch cave13
 x 10
 y 9
 end
-arch pstone_1
+arch pstone_2
 x 10
 y 10
+end
+arch torch_1
+food 0
+x 10
+y 10
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_2
 x 10
@@ -1050,6 +1091,14 @@ end
 arch pstone_2
 x 11
 y 3
+end
+arch torch_1
+food 0
+x 11
+y 3
+material 0
+no_pick 1
+changing 0
 end
 arch pstone_1
 x 11
@@ -1162,10 +1211,6 @@ x 12
 y 11
 end
 arch pstone_2
-x 12
-y 12
-end
-arch torch_1
 x 12
 y 12
 end

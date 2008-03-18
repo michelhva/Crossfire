@@ -8,9 +8,7 @@ height 11
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Dec 28 00:59:37 1994
+Created:  1994-02-28
 endmsg
 end
 arch medium_stones
@@ -2369,8 +2367,7 @@ endmsg
 x 28
 y 9
 connected 2
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch medium_stones
 x 28

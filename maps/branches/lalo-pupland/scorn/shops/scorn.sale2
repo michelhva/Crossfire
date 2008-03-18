@@ -1,15 +1,14 @@
 arch map
 name Scorn Pawn Shop
+difficulty 1
 region scorn
 width 21
 height 20
 enter_x 10
 enter_y 2
 msg
-Creator: Gene Alexander
-email: gene@eracc.com
-Using ideas of: Andreas Vogl
-email: red.blaze@gmx.net
+Created:  Gene Alexander (gene@eracc.com)
+Using ideas of: Andreas Vogl (red.blaze@gmx.net)
 endmsg
 end
 arch shop_empty
@@ -161,7 +160,6 @@ y 3
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -177,7 +175,6 @@ y 4
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -193,7 +190,6 @@ y 5
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -209,7 +205,6 @@ y 6
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -225,7 +220,6 @@ y 7
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -241,7 +235,6 @@ y 8
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -257,7 +250,6 @@ y 9
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -273,7 +265,6 @@ y 10
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -289,7 +280,6 @@ y 11
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -305,7 +295,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -321,7 +310,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -337,7 +325,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -353,7 +340,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -362,14 +348,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 1
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -378,14 +363,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 1
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 1
@@ -428,7 +412,6 @@ y 2
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -444,7 +427,6 @@ y 3
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -460,7 +442,6 @@ y 4
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -476,7 +457,6 @@ y 5
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -492,7 +472,6 @@ y 6
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -508,7 +487,6 @@ y 7
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -524,7 +502,6 @@ y 8
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -540,7 +517,6 @@ y 9
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -556,7 +532,6 @@ y 10
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -572,7 +547,6 @@ y 11
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -588,7 +562,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -604,7 +577,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -620,7 +592,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -636,7 +607,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -645,14 +615,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 2
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -661,14 +630,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 2
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -677,14 +645,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 2
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 2
@@ -819,7 +786,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -835,7 +801,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -851,7 +816,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -867,7 +831,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -876,14 +839,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 3
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -892,14 +854,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 3
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -908,14 +869,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 3
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 3
@@ -1048,7 +1008,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1064,7 +1023,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1080,7 +1038,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1096,7 +1053,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1105,14 +1061,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 4
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1121,14 +1076,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 4
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1137,14 +1091,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 4
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 4
@@ -1248,8 +1201,7 @@ if necessary.
 endmsg
 x 5
 y 8
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch magic_mouth
 msg
@@ -1267,7 +1219,6 @@ name clean shop
 x 5
 y 9
 connected 1
-protected 1
 end
 arch blocked
 x 5
@@ -1283,7 +1234,7 @@ y 11
 unique 1
 damned 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 11
 end
@@ -1331,7 +1282,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 5
@@ -1347,7 +1297,6 @@ y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 5
@@ -1363,7 +1312,6 @@ y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 5
@@ -1541,7 +1489,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 6
@@ -1557,7 +1504,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 6
@@ -1566,14 +1512,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 6
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 6
@@ -1582,14 +1527,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 6
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 6
@@ -1598,14 +1542,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 6
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 6
@@ -1771,7 +1714,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 7
@@ -1787,7 +1729,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 7
@@ -1796,14 +1737,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 7
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 7
@@ -1812,14 +1752,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 7
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 7
@@ -1828,14 +1767,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 7
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 7
@@ -1863,7 +1801,7 @@ arch palm
 name House Plant
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -2022,7 +1960,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 8
@@ -2038,7 +1975,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 8
@@ -2047,14 +1983,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 8
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 8
@@ -2063,14 +1998,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 8
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 8
@@ -2079,14 +2013,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 8
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 8
@@ -2256,7 +2189,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 9
@@ -2272,7 +2204,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 9
@@ -2281,14 +2212,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 9
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 9
@@ -2297,14 +2227,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 9
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 9
@@ -2313,14 +2242,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 9
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 9
@@ -2525,7 +2453,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 10
@@ -2534,14 +2461,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 10
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 10
@@ -2550,14 +2476,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 10
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 10
@@ -2566,14 +2491,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 10
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 10
@@ -2734,7 +2658,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 11
@@ -2750,7 +2673,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 11
@@ -2759,14 +2681,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 11
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 11
@@ -2775,14 +2696,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 11
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 11
@@ -2791,14 +2711,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 11
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 11
@@ -2826,7 +2745,7 @@ arch palm
 name House Plant
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -2988,7 +2907,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 12
@@ -3004,7 +2922,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 12
@@ -3013,14 +2930,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 12
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 12
@@ -3029,14 +2945,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 12
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 12
@@ -3045,14 +2960,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 12
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 12
@@ -3231,7 +3145,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 13
@@ -3247,7 +3160,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 13
@@ -3256,14 +3168,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 13
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 13
@@ -3272,14 +3183,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 13
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 13
@@ -3288,14 +3198,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 13
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 13
@@ -3420,7 +3329,7 @@ arch palm
 name House Plant
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 14
@@ -3484,7 +3393,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 14
@@ -3500,7 +3408,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 14
@@ -3509,14 +3416,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 14
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 14
@@ -3525,14 +3431,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 14
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 14
@@ -3541,14 +3446,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 14
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 14
@@ -3639,7 +3543,7 @@ arch palm
 name House Plant
 x 15
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3677,7 +3581,7 @@ x 15
 y 9
 arch pouch
 name deposit pouch
-name_pl deposit pouchs
+name_pl deposit pouches
 arch platinacoin
 nrof 151
 end
@@ -3715,7 +3619,7 @@ y 11
 unique 1
 damned 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 y 11
 end
@@ -3763,7 +3667,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 15
@@ -3779,7 +3682,6 @@ y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 15
@@ -3795,7 +3697,6 @@ y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 15
@@ -3926,7 +3827,7 @@ arch palm
 name House Plant
 x 16
 y 10
-no_pass 1
+move_block all
 end
 arch shop_empty
 x 16
@@ -3952,7 +3853,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -3968,7 +3868,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -3984,7 +3883,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -4000,7 +3898,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -4009,14 +3906,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 16
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -4025,14 +3921,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 16
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -4041,14 +3936,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 16
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 16
@@ -4189,7 +4083,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4205,7 +4098,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4221,7 +4113,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4237,7 +4128,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4246,14 +4136,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 17
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4262,14 +4151,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 17
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4278,14 +4166,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 17
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 17
@@ -4320,7 +4207,6 @@ y 2
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4336,7 +4222,6 @@ y 3
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4352,7 +4237,6 @@ y 4
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4368,7 +4252,6 @@ y 5
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4384,7 +4267,6 @@ y 6
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4400,7 +4282,6 @@ y 7
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4416,7 +4297,6 @@ y 8
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4432,7 +4312,6 @@ y 9
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4448,7 +4327,6 @@ y 10
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4464,7 +4342,6 @@ y 11
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4480,7 +4357,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4496,7 +4372,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4512,7 +4387,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4528,7 +4402,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4537,14 +4410,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 18
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4553,14 +4425,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 18
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4569,14 +4440,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 18
 y 18
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 18
@@ -4619,7 +4489,6 @@ y 3
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4635,7 +4504,6 @@ y 4
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4651,7 +4519,6 @@ y 5
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4667,7 +4534,6 @@ y 6
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4683,7 +4549,6 @@ y 7
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4699,7 +4564,6 @@ y 8
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4715,7 +4579,6 @@ y 9
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4731,7 +4594,6 @@ y 10
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4747,7 +4609,6 @@ y 11
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4763,7 +4624,6 @@ y 12
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4779,7 +4639,6 @@ y 13
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4795,7 +4654,6 @@ y 14
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4811,7 +4669,6 @@ y 15
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4820,14 +4677,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 19
 y 16
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19
@@ -4836,14 +4692,13 @@ unique 1
 damned 1
 end
 arch teleporter
-hp 15
-sp 7
+hp 16
+sp 8
 x 19
 y 17
 speed 0.000000
 invisible 1
 connected 1
-protected 1
 end
 arch shop_empty
 x 19

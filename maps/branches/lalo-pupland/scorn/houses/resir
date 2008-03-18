@@ -7,10 +7,15 @@ height 10
 enter_x 1
 enter_y 1
 msg
-Creator: Knut Ahlers
-Email: webmaster@knutshome.de
-Date: Sat Jul  16 23:11:00 2005
+Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
+Modified: 2008-02-17 Nicolas Weeger
 endmsg
+maplore
+@def Resir's house
+This is a simple house with a nice reward at the end.
+
+Stand-alone map.
+endmaplore
 end
 arch cobblestones2
 end
@@ -768,7 +773,7 @@ arch dirtfloor
 x 11
 y 3
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 11
 y 3
 end
@@ -792,7 +797,7 @@ arch dirtfloor
 x 11
 y 6
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 11
 y 6
 end
@@ -1048,7 +1053,7 @@ arch dirtfloor
 x 15
 y 3
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 15
 y 3
 end
@@ -1072,7 +1077,7 @@ arch dirtfloor
 x 15
 y 6
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 15
 y 6
 end
@@ -1328,7 +1333,7 @@ arch dirtfloor
 x 19
 y 3
 end
-arch cwall_2_1_1
+arch cwall_1_2
 x 19
 y 3
 end
@@ -1352,7 +1357,7 @@ arch dirtfloor
 x 19
 y 6
 end
-arch cwall_2_1_1
+arch cwall_1_1
 x 19
 y 6
 end
@@ -1537,7 +1542,7 @@ arch dirtfloor
 x 22
 y 3
 end
-arch cwall_2_2_2
+arch cwall_1_4
 x 22
 y 3
 end
@@ -1561,7 +1566,7 @@ arch dirtfloor
 x 22
 y 6
 end
-arch cwall_2_2_1
+arch cwall_1_4
 x 22
 y 6
 end
@@ -1677,7 +1682,7 @@ end
 arch invis_exit
 slaying /world/world_105_115
 hp 2
-sp 36
+sp 35
 x 24
 y 5
 end

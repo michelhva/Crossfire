@@ -816,7 +816,7 @@ end
 arch woodfloor
 x 3
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 end
 arch woodfloor
@@ -1247,7 +1247,7 @@ end
 arch woodfloor
 x 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 end
 arch woodfloor
@@ -1489,7 +1489,7 @@ arch woodfloor
 x 6
 y 9
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 9
 end
@@ -1521,7 +1521,7 @@ arch woodfloor
 x 6
 y 13
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 13
 end
@@ -1553,7 +1553,7 @@ arch woodfloor
 x 6
 y 17
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 6
 y 17
 end
@@ -1656,7 +1656,7 @@ end
 arch woodfloor
 x 7
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 end
 arch woodfloor
@@ -1691,7 +1691,7 @@ arch woodfloor
 x 7
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 7
 y 5
 end
@@ -1872,7 +1872,7 @@ arch woodfloor
 x 7
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 7
 y 21
 end
@@ -1987,7 +1987,7 @@ arch woodfloor
 x 8
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 8
 y 5
 end
@@ -2063,7 +2063,7 @@ arch woodfloor
 x 8
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 8
 y 21
 end
@@ -2118,7 +2118,7 @@ end
 arch table_3
 x 8
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -2131,7 +2131,7 @@ end
 arch table_3
 x 8
 y 29
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 8
@@ -2168,7 +2168,7 @@ end
 arch woodfloor
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch woodfloor
@@ -2494,7 +2494,7 @@ end
 arch table_3
 x 9
 y 29
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 9
@@ -2804,7 +2804,7 @@ end
 arch woodfloor
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch woodfloor
@@ -3188,7 +3188,7 @@ arch woodfloor
 x 12
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 12
 y 5
 end
@@ -3273,7 +3273,7 @@ arch woodfloor
 x 12
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 12
 y 21
 end
@@ -3378,7 +3378,7 @@ end
 arch woodfloor
 x 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 end
 arch woodfloor
@@ -3413,7 +3413,7 @@ arch woodfloor
 x 13
 y 5
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 13
 y 5
 end
@@ -3608,7 +3608,7 @@ arch woodfloor
 x 13
 y 21
 end
-arch dwall_2_1_2
+arch swall_2_1_2
 x 13
 y 21
 end
@@ -3751,7 +3751,7 @@ arch woodfloor
 x 14
 y 9
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 9
 end
@@ -3783,7 +3783,7 @@ arch woodfloor
 x 14
 y 13
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 13
 end
@@ -3815,7 +3815,7 @@ arch woodfloor
 x 14
 y 17
 end
-arch dwall_2_1_1
+arch swall_2_1_1
 x 14
 y 17
 end
@@ -3918,7 +3918,7 @@ end
 arch woodfloor
 x 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 end
 arch woodfloor
@@ -4247,7 +4247,7 @@ end
 arch woodfloor
 x 17
 end
-arch dwall3_3
+arch dwall_3_3
 x 17
 end
 arch woodfloor

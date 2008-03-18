@@ -7,9 +7,8 @@ height 21
 enter_x 23
 enter_y 19
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun  5 21:56:20 2000
+Created:  2000-06-05
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_1
@@ -1082,11 +1081,12 @@ end
 arch potion_generic
 name fountain
 face fountain.111
-sp 129
 x 7
 y 8
 material 256
 no_pick 1
+arch spell_cause_light_wounds
+end
 end
 arch wraith
 x 7

@@ -8,8 +8,7 @@ height 12
 enter_x 11
 enter_y 9
 msg
-Creator: CF Java Map Editor
-Date:    5/3/2003
+Created:  2003-05-03
 endmsg
 end
 arch grass
@@ -391,8 +390,7 @@ food 1
 x 3
 y 7
 connected 4
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor2
 x 3
@@ -859,8 +857,7 @@ endmsg
 x 8
 y 7
 connected 7
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor2
 x 8

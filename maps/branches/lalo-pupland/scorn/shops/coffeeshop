@@ -1,12 +1,12 @@
 arch map
 name Eswald's Coffee Shop
+difficulty 1
 region scorn
 width 10
 height 10
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    4/27/2003
+Created:  2003-04-27 Avion
+Modified: 2007-12-12 Kevin Bulgrien
 endmsg
 end
 arch woodfloor2
@@ -131,7 +131,14 @@ x 1
 y 7
 end
 arch woman
+name Juanita
 msg
+@match job
+I'm off right now, as you can see.
+@match name
+Juanita Valdez... Yours?
+@match quest
+Park it and enjoy the java...
 @match *
 Mmmmm, mountain grown.
 endmsg
@@ -385,20 +392,20 @@ end
 arch man
 name Eswald
 msg
-@match Hello|hi
+@match hello|hi
 Hello stranger.
-@match Job|job|Work|work
+@match job|work
 I'm looking for someone to do a job for me.
 You interested?
-@match interested|what
-Pay ya 500 gold to find my goose
-@match goose|Goose
-Her name is Esmeralda, she's a special goose
+@match interested|what|yes
+Pay ya 500 gold to find my goose.
+@match goose
+Her name is Esmeralda, she's a special goose.
 @match special
 I'm not telling, you might not bring her back...
-@match 300
+@match 500
 Worth every coin too.
-@match clue|lead|suspicious
+@match clue|idea|lead|lost|suspicious
 Well Oled has always been jealous of my goose...
 @match *
 Finest brew east of Navar.
@@ -471,18 +478,15 @@ y 3
 end
 arch magic_mouth
 msg
-You found her!  Here is your pay.
-Thanks.
-Esmeralda has the finest nose...er beak
-for coffee in the kingdom.
+You found her!  Here is your pay.  Thanks.
+Esmeralda has the finest nose...er... beak for coffee in the kingdom.
 Oled will be so jealous of my coffee.
 endmsg
 food 1
 x 6
 y 4
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor2
 x 6

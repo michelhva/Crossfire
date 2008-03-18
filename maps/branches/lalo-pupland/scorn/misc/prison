@@ -7,9 +7,7 @@ height 55
 enter_x 14
 enter_y 53
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 14 23:42:44 1994
+Created:  1994-02-14
 endmsg
 end
 arch flagstone
@@ -2363,9 +2361,9 @@ end
 arch sign
 name Gate Room
 msg
-Gate Room
-No Entry
-This means you!
+             Gate Room
+             No Entry
+          This means you!
 endmsg
 x 7
 y 45

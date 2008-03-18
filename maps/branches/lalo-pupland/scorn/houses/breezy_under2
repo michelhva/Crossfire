@@ -8,9 +8,8 @@ height 30
 enter_x 1
 enter_y 1
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    5/11/2003
+Created:  2003-05-11 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1941,7 +1940,6 @@ x 11
 y 21
 end
 arch firewall
-dam 7
 x 11
 y 21
 speed 0.0
@@ -1949,6 +1947,8 @@ level 3
 invisible 1
 connected 27
 blocksview 0
+arch spell_magic_missile
+end
 end
 arch dungeon_floor
 x 11
@@ -2252,8 +2252,7 @@ endmsg
 x 13
 y 20
 connected 31
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_floor
 x 13
@@ -2714,7 +2713,6 @@ x 15
 y 25
 end
 arch firewall
-dam 7
 x 15
 y 25
 speed 0.0
@@ -2722,6 +2720,8 @@ level 3
 invisible 1
 connected 27
 blocksview 0
+arch spell_magic_missile
+end
 end
 arch dungeon_floor
 x 15

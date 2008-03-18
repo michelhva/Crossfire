@@ -8,6 +8,7 @@ height 16
 enter_y 3
 msg
 Created:  1999-01-22 Raphael Quinet (quinet@gamers.org)
+Modified: 2007-12-16 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -250,6 +251,7 @@ symmetry 4
 orientation 2
 dungeon_depth 99
 dungeon_name Valriel's church
+final_exit_archetype archway_gold
 endmsg
 hp 0
 sp 0

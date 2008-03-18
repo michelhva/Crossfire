@@ -8,9 +8,8 @@ height 20
 enter_x 9
 enter_y 16
 msg
-Creator: Gene Alexander
-Editor: CF Java Map Editor
-Date:    7/1/2004
+Created:  2004-07-01 Gene Alexander
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -1198,10 +1197,11 @@ end
 arch altar
 name altar of detect magic (10 gp)
 slaying money
-sp 76
 food 100
 x 9
 y 14
+arch spell_detect_magic
+end
 end
 arch magic_mouth
 name A tiny fairy voice
@@ -1547,10 +1547,11 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 11
 y 14
+arch spell_detect_curse
+end
 end
 arch magic_mouth
 name A tiny fairy voice
@@ -1689,8 +1690,7 @@ The Management
 endmsg
 x 12
 y 11
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch dungeon_magic
 x 12

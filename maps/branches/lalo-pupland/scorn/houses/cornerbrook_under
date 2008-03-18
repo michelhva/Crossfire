@@ -8,9 +8,7 @@ height 20
 enter_x 1
 enter_y 1
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    5/4/2003
+Created:  2003-04-05 Avion
 endmsg
 end
 arch dirtfloor
@@ -148,7 +146,7 @@ hp 2
 sp 11
 x 1
 y 1
-walk_on 0
+move_on 0
 end
 arch light2
 x 1

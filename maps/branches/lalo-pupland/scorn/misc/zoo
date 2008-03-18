@@ -6,9 +6,8 @@ width 48
 height 40
 enter_y 15
 msg
-Creator:
-Email:
-Date: Fri Oct 15 13:46:01 1993
+Created:  1993-10-15
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch large_stones
@@ -13339,6 +13338,8 @@ end
 arch lbulletwall_5
 x 45
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch medium_stones
 x 45
@@ -13503,6 +13504,8 @@ end
 arch bulletwall_1
 x 45
 y 38
+arch spell_magic_bullet
+end
 end
 arch medium_stones
 x 45
@@ -13548,6 +13551,8 @@ end
 arch firewall_5
 x 46
 y 4
+arch spell_small_fireball
+end
 end
 arch medium_stones
 x 46
@@ -13706,6 +13711,8 @@ end
 arch lbulletwall_1
 x 46
 y 38
+arch spell_lg_magic_bullet
+end
 end
 arch medium_stones
 x 46

@@ -6,6 +6,7 @@ width 15
 height 15
 msg
 Created:  1993-10-15
+Modified: 2007-12-22 tchize
 endmsg
 end
 arch dirtfloor
@@ -532,10 +533,6 @@ arch timberwall_1_3
 x 5
 y 8
 end
-arch dirtfloor
-x 5
-y 9
-end
 arch magic_ear
 msg
 @match key|Key
@@ -544,6 +541,11 @@ endmsg
 x 5
 y 9
 connected 9
+end
+end
+arch dirtfloor
+x 5
+y 9
 end
 arch giant
 name Mork

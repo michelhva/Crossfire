@@ -668,7 +668,7 @@ end
 arch bench_1_4
 x 3
 y 14
-move_block all
+no_pass 1
 end
 arch dungeon_magic
 x 3
@@ -700,7 +700,7 @@ end
 arch bench_1_4
 x 3
 y 16
-move_block all
+no_pass 1
 end
 arch pstone_2
 x 3
@@ -917,7 +917,7 @@ end
 arch bench_2_2_3
 x 4
 y 14
-move_block all
+no_pass 1
 end
 arch pstone_2
 x 4
@@ -926,7 +926,7 @@ end
 arch bench_2_1_1
 x 4
 y 15
-move_block all
+no_pass 1
 end
 arch pstone_2
 x 4
@@ -935,7 +935,7 @@ end
 arch bench_2_2_4
 x 4
 y 16
-move_block all
+no_pass 1
 end
 arch pstone_2
 x 4

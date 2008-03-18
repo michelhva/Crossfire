@@ -7,9 +7,8 @@ height 16
 enter_x 7
 enter_y 13
 msg
-Creator: Raphael Quinet
-Email: quinet@gamers.org
-Date: Fri Jan 22 02:39:30 1999
+Created:  1999-01-22 Raphael Quinet (quinet@gamers.org)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -258,6 +257,8 @@ name statue of a devil
 face devil.111
 x 3
 y 3
+arch spell_magic_bullet
+end
 end
 arch marble
 x 3
@@ -276,6 +277,8 @@ name statue of a devil
 face devil.111
 x 3
 y 6
+arch spell_magic_bullet
+end
 end
 arch marble
 x 3
@@ -294,6 +297,8 @@ name statue of a devil
 face devil.111
 x 3
 y 9
+arch spell_magic_bullet
+end
 end
 arch medium_stones
 x 3
