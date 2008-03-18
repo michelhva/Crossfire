@@ -290,7 +290,7 @@ arch dungeon_floor
 x 2
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 14
 end
@@ -1165,6 +1165,10 @@ arch dungeon_floor
 x 12
 y 12
 end
+arch dungeon_floor
+x 12
+y 13
+end
 arch bwall_1_4
 x 12
 y 13
@@ -1254,6 +1258,10 @@ arch dungeon_floor
 x 13
 y 12
 end
+arch dungeon_floor
+x 13
+y 13
+end
 arch bwall_2_1_2
 x 13
 y 13
@@ -1301,7 +1309,7 @@ arch dungeon_floor
 x 14
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 14
 y 2
 end
@@ -1357,6 +1365,10 @@ arch dungeon_floor
 x 14
 y 12
 end
+arch dungeon_floor
+x 14
+y 13
+end
 arch bwall_2_1_2
 x 14
 y 13
@@ -1395,6 +1407,10 @@ x 15
 y 1
 end
 arch dungeon_floor
+x 15
+y 2
+end
+arch swall_2_1_2
 x 15
 y 2
 end
