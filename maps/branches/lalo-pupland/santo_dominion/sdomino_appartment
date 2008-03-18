@@ -1,5 +1,5 @@
 arch map
-name Permanent Appartments
+name Permanent Apartments
 difficulty 1
 region santodominion
 width 11
@@ -7,9 +7,7 @@ height 10
 enter_x 5
 enter_y 1
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Wed Nov 15 15:18:26 2000
+Created:  2000-11-15 Andreas Vogl (red.blaze@gmx.net)
 endmsg
 end
 arch blocked
@@ -345,7 +343,6 @@ food 300
 x 5
 y 2
 connected 1
-protected 1
 end
 arch woodfloor
 x 5
@@ -357,7 +354,6 @@ x 5
 y 3
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 5

@@ -8,9 +8,7 @@ shopmin 3000
 width 28
 height 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu May 12 01:23:20 1994
+Created:  1994-02-12
 endmsg
 end
 arch marble
@@ -213,7 +211,6 @@ food 100
 x 3
 y 5
 connected 1
-protected 1
 end
 arch marble
 x 3
@@ -273,7 +270,6 @@ arch igateTrg2
 x 4
 y 4
 connected 1
-protected 1
 end
 arch marble
 x 4
@@ -283,7 +279,6 @@ arch igateTrg2
 x 4
 y 5
 connected 1
-protected 1
 end
 arch marble
 x 4
@@ -343,7 +338,6 @@ arch pedestal
 x 5
 y 4
 connected 1
-protected 1
 end
 arch marble
 x 5
@@ -353,7 +347,6 @@ arch pedestal
 x 5
 y 5
 connected 1
-protected 1
 end
 arch marble
 x 5

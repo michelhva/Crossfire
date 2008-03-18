@@ -6,8 +6,7 @@ darkness 2
 width 38
 height 38
 msg
-Creator: Andreas Vogl
-Date:    8/23/2002
+Created:  2002-08-23 Andreas Vogl
 endmsg
 end
 arch blocked
@@ -1435,8 +1434,7 @@ food 3
 x 5
 y 9
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch detector
 name 10
@@ -5102,8 +5100,7 @@ food 3
 x 18
 y 9
 connected 11
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch detector
 name 11
@@ -5860,8 +5857,7 @@ food 3
 x 20
 y 32
 connected 13
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch detector
 name 13
@@ -9270,8 +9266,7 @@ food 3
 x 33
 y 13
 connected 12
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch detector
 name 12

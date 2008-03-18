@@ -4,6 +4,9 @@ difficulty 1
 region santodominion
 width 30
 height 40
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 end
 arch afloor_left
 name floor
@@ -326,6 +329,8 @@ end
 arch lightningwall_3
 x 1
 y 5
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -335,6 +340,8 @@ end
 arch lightningwall_3
 x 1
 y 6
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -344,6 +351,8 @@ end
 arch lightningwall_3
 x 1
 y 7
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -353,6 +362,8 @@ end
 arch lightningwall_3
 x 1
 y 8
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -362,6 +373,8 @@ end
 arch lightningwall_2
 x 1
 y 9
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -644,6 +657,8 @@ end
 arch lightningwall_1
 x 2
 y 9
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -950,6 +965,8 @@ end
 arch lightningwall_1
 x 3
 y 9
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -1240,6 +1257,8 @@ end
 arch lightningwall_1
 x 4
 y 9
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -1550,6 +1569,8 @@ end
 arch lightningwall_1
 x 5
 y 9
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -1831,6 +1852,8 @@ end
 arch lightningwall_1
 x 6
 y 8
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -2092,6 +2115,8 @@ end
 arch lightningwall_1
 x 7
 y 6
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -2348,6 +2373,8 @@ end
 arch lightningwall_1
 x 8
 y 4
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -2671,6 +2698,8 @@ end
 arch lightningwall_1
 x 9
 y 4
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -2952,6 +2981,8 @@ end
 arch lightningwall_1
 x 10
 y 3
+arch spell_sm_lightning
+end
 end
 arch afloor_left
 name floor
@@ -5140,6 +5171,8 @@ end
 arch lbulletwall_1
 x 19
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -5434,6 +5467,8 @@ end
 arch lbulletwall_1
 x 20
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -5688,6 +5723,8 @@ end
 arch lbulletwall_1
 x 21
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -5935,6 +5972,8 @@ end
 arch lbulletwall_1
 x 22
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -6202,6 +6241,8 @@ end
 arch lbulletwall_1
 x 23
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -6464,6 +6505,8 @@ end
 arch lbulletwall_1
 x 24
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -6755,6 +6798,8 @@ end
 arch lbulletwall_1
 x 25
 y 5
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7045,6 +7090,8 @@ end
 arch lbulletwall_1
 x 26
 y 5
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7340,6 +7387,8 @@ end
 arch lbulletwall_1
 x 27
 y 6
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7581,6 +7630,8 @@ end
 arch lbulletwall_7
 x 28
 y 1
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7590,6 +7641,8 @@ end
 arch lbulletwall_7
 x 28
 y 2
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7599,6 +7652,8 @@ end
 arch lbulletwall_7
 x 28
 y 3
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7608,6 +7663,8 @@ end
 arch lbulletwall_7
 x 28
 y 4
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor
@@ -7617,6 +7674,8 @@ end
 arch lbulletwall_7
 x 28
 y 5
+arch spell_lg_magic_bullet
+end
 end
 arch afloor_left
 name floor

@@ -5,9 +5,8 @@ region santodominion
 width 30
 height 40
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Oct 12 00:40:38 1994
+Created:  1994-02-12
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -6018,6 +6017,8 @@ end
 arch firewall_6
 x 28
 y 9
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 28
@@ -6030,6 +6031,8 @@ end
 arch firewall_7
 x 28
 y 11
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 28
@@ -6042,6 +6045,8 @@ end
 arch firewall_7
 x 28
 y 13
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 28
@@ -6062,6 +6067,8 @@ end
 arch firewall_7
 x 28
 y 16
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 28
@@ -6074,6 +6081,8 @@ end
 arch firewall_8
 x 28
 y 18
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 28

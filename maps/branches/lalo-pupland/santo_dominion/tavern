@@ -7,9 +7,7 @@ height 23
 enter_x 14
 enter_y 18
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Tue Apr  5 17:23:51 1994
+Created:  1994-04-05 Andreas Vogl (red.blaze@gmx.net)
 endmsg
 end
 arch grass
@@ -2864,6 +2862,7 @@ x 19
 y 8
 level 15
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -2874,7 +2873,6 @@ food 1
 x 19
 y 9
 connected 1
-protected 1
 end
 arch magic_mouth
 name 1
@@ -2886,9 +2884,7 @@ endmsg
 x 19
 y 9
 connected 1
-walk_on 0
-fly_on 0
-protected 1
+move_on 0
 end
 arch woodfloor
 x 19
@@ -3060,7 +3056,6 @@ x 20
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 20
@@ -3210,7 +3205,6 @@ x 21
 y 7
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 21
