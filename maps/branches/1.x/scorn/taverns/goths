@@ -406,6 +406,7 @@ y 14
 level 10
 type 0
 resist_magic 30
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1
@@ -468,7 +469,7 @@ You probably want me to tell you how to get your hands on some powerful magic, d
 Well, that can be hard and dangerous.  Got a deathwish?  Eh?
 @match yes|yup|aye
 Well, maybe your greed will keep you alive, then.  I've known some people who have dragged their bones out of the grave for greed.  Smelly, and grumpy, every one!  Never underestimate the power of greed!
- Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.
+Well, I know of two places where you can get your hands on a powerful item.  One I know for sure:  a powerful magical Sword.  The other I'm not sure of, but it's inside a mountain, I bet.
 Which do you want to hear about?
 endmsg
 face wizard_blue.131
@@ -502,6 +503,7 @@ resist_fear 30
 resist_cancellation 30
 resist_deplete 30
 resist_death 30
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1
@@ -2420,6 +2422,7 @@ y 8
 level 5
 type 0
 resist_magic 100
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1

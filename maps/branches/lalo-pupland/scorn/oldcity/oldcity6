@@ -4,6 +4,9 @@ difficulty 1
 region scornoldcity
 width 40
 height 40
+msg
+Modified: 2007-11-04 Andreas Kirschbaum
+endmsg
 tile_path_1 oldcity54
 tile_path_2 oldcity3
 end
@@ -6682,14 +6685,20 @@ end
 arch firewall_3
 x 28
 y 34
+arch spell_small_fireball
+end
 end
 arch firewall_3
 x 28
 y 35
+arch spell_small_fireball
+end
 end
 arch firewall_3
 x 28
 y 36
+arch spell_small_fireball
+end
 end
 arch pstone_1
 x 28

@@ -9,8 +9,7 @@ height 20
 enter_x 4
 enter_y 17
 msg
-Creator: Preston Crow
-Date:    6/19/2003
+Created:  2003-06-19 Preston Crow
 endmsg
 end
 arch flagstone
@@ -380,6 +379,11 @@ arch flagstone
 x 3
 y 8
 end
+arch pedestal
+x 3
+y 9
+connected 1
+end
 arch magic_mouth
 msg
 HEY! Who goes there?
@@ -387,7 +391,6 @@ endmsg
 food 1
 x 3
 y 9
-connected 1
 end
 arch flagstone
 x 3
@@ -500,6 +503,11 @@ arch flagstone
 x 4
 y 8
 end
+arch pedestal
+x 4
+y 9
+connected 1
+end
 arch magic_mouth
 msg
 I heard something! Check it out!
@@ -507,7 +515,6 @@ endmsg
 food 1
 x 4
 y 9
-connected 1
 end
 arch flagstone
 x 4
@@ -611,6 +618,11 @@ arch flagstone
 x 5
 y 8
 end
+arch pedestal
+x 5
+y 9
+connected 1
+end
 arch magic_mouth
 msg
 You! What are you doing?
@@ -618,7 +630,6 @@ endmsg
 food 1
 x 5
 y 9
-connected 1
 end
 arch flagstone
 x 5
@@ -730,6 +741,11 @@ arch flagstone
 x 6
 y 8
 end
+arch pedestal
+x 6
+y 9
+connected 1
+end
 arch magic_mouth
 msg
 Quiet! Someone is in here!
@@ -737,7 +753,6 @@ endmsg
 food 1
 x 6
 y 9
-connected 1
 end
 arch flagstone
 x 6

@@ -3815,20 +3815,36 @@ arch grass
 x 9
 y 54
 end
+arch small_stones
+x 9
+y 55
+end
 arch block_door_closed
 x 9
 y 55
 connected 3
+end
+arch small_stones
+x 9
+y 56
 end
 arch block_door_closed
 x 9
 y 56
 connected 3
 end
+arch small_stones
+x 9
+y 57
+end
 arch block_door_closed
 x 9
 y 57
 connected 3
+end
+arch small_stones
+x 9
+y 58
 end
 arch block_door_closed
 x 9
@@ -4208,6 +4224,10 @@ arch grass
 x 10
 y 54
 end
+arch small_stones
+x 10
+y 55
+end
 arch block_door_closed
 x 10
 y 55
@@ -4225,6 +4245,10 @@ end
 arch small_stones
 x 10
 y 57
+end
+arch small_stones
+x 10
+y 58
 end
 arch block_door_closed
 x 10
@@ -4579,6 +4603,10 @@ arch grass
 x 11
 y 54
 end
+arch small_stones
+x 11
+y 55
+end
 arch block_door_closed
 x 11
 y 55
@@ -4591,6 +4619,10 @@ end
 arch small_stones
 x 11
 y 57
+end
+arch small_stones
+x 11
+y 58
 end
 arch block_door_closed
 x 11
@@ -4922,6 +4954,10 @@ arch grass
 x 12
 y 54
 end
+arch small_stones
+x 12
+y 55
+end
 arch block_door_closed
 x 12
 y 55
@@ -4939,6 +4975,10 @@ end
 arch small_stones
 x 12
 y 57
+end
+arch small_stones
+x 12
+y 58
 end
 arch block_door_closed
 x 12
@@ -5291,6 +5331,10 @@ arch grass
 x 13
 y 54
 end
+arch small_stones
+x 13
+y 55
+end
 arch block_door_closed
 x 13
 y 55
@@ -5303,6 +5347,10 @@ end
 arch small_stones
 x 13
 y 57
+end
+arch small_stones
+x 13
+y 58
 end
 arch block_door_closed
 x 13
@@ -5697,6 +5745,10 @@ arch grass
 x 14
 y 54
 end
+arch small_stones
+x 14
+y 55
+end
 arch block_door_closed
 x 14
 y 55
@@ -5714,6 +5766,10 @@ end
 arch small_stones
 x 14
 y 57
+end
+arch small_stones
+x 14
+y 58
 end
 arch block_door_closed
 x 14
@@ -6009,6 +6065,10 @@ arch grass
 x 15
 y 54
 end
+arch small_stones
+x 15
+y 55
+end
 arch block_door_closed
 x 15
 y 55
@@ -6021,6 +6081,10 @@ end
 arch small_stones
 x 15
 y 57
+end
+arch small_stones
+x 15
+y 58
 end
 arch block_door_closed
 x 15
@@ -6394,6 +6458,10 @@ arch grass
 x 16
 y 54
 end
+arch small_stones
+x 16
+y 55
+end
 arch block_door_closed
 x 16
 y 55
@@ -6411,6 +6479,10 @@ end
 arch small_stones
 x 16
 y 57
+end
+arch small_stones
+x 16
+y 58
 end
 arch block_door_closed
 x 16
@@ -6766,6 +6838,10 @@ arch grass
 x 17
 y 54
 end
+arch small_stones
+x 17
+y 55
+end
 arch block_door_closed
 x 17
 y 55
@@ -6778,6 +6854,10 @@ end
 arch small_stones
 x 17
 y 57
+end
+arch small_stones
+x 17
+y 58
 end
 arch block_door_closed
 x 17
@@ -7116,20 +7196,36 @@ arch grass
 x 18
 y 54
 end
+arch small_stones
+x 18
+y 55
+end
 arch block_door_closed
 x 18
 y 55
 connected 3
+end
+arch small_stones
+x 18
+y 56
 end
 arch block_door_closed
 x 18
 y 56
 connected 3
 end
+arch small_stones
+x 18
+y 57
+end
 arch block_door_closed
 x 18
 y 57
 connected 3
+end
+arch small_stones
+x 18
+y 58
 end
 arch block_door_closed
 x 18
@@ -20939,9 +21035,17 @@ arch bwall_2_2_2
 x 56
 y 33
 end
+arch small_stones
+x 56
+y 34
+end
 arch weak_wall_5
 x 56
 y 34
+end
+arch small_stones
+x 56
+y 35
 end
 arch weak_wall_5
 x 56
@@ -22057,9 +22161,17 @@ arch bwall_3_3
 x 59
 y 33
 end
+arch small_stones
+x 59
+y 34
+end
 arch weak_wall_5
 x 59
 y 34
+end
+arch small_stones
+x 59
+y 35
 end
 arch weak_wall_5
 x 59

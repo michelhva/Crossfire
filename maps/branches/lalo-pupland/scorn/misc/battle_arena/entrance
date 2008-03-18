@@ -1,13 +1,13 @@
 arch map
 name Arena Entrance
+reset_timeout 1800
 difficulty 1
 region scornarena
 width 23
 height 27
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Wed 8.11.2000
+Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch pstone_2
@@ -743,6 +743,8 @@ arch lightningwall_1
 x 3
 y 22
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 3
@@ -981,6 +983,8 @@ arch lightningwall_1
 x 4
 y 23
 speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 4
@@ -1134,8 +1138,7 @@ y 15
 resist_physical 30
 resist_fire 30
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch pstone_2
 x 5
@@ -2094,8 +2097,7 @@ the spectator fees.
 endmsg
 x 11
 y 6
-walk_on 1
-fly_on 1
+move_on walk fly_low
 end
 arch pstone_2
 x 11

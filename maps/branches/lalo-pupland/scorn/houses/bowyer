@@ -1,5 +1,5 @@
 arch map
-name bowyer
+name Bowyer's Workshop
 reset_timeout 7200
 difficulty 2
 region scorn
@@ -8,9 +8,7 @@ height 15
 enter_x 6
 enter_y 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Dec 28 14:07:57 2002
+Created:  2002-02-28
 endmsg
 end
 arch grass
@@ -477,7 +475,8 @@ name_pl sawdust
 exp 0
 x 4
 y 5
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 4
@@ -489,7 +488,8 @@ name_pl sawdust
 exp 0
 x 4
 y 6
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 4
@@ -501,7 +501,8 @@ name_pl sawdust
 exp 0
 x 4
 y 7
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 4
@@ -580,7 +581,8 @@ name_pl sawdust
 exp 0
 x 5
 y 5
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 5
@@ -600,7 +602,8 @@ name_pl sawdust
 exp 0
 x 5
 y 7
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 5
@@ -612,7 +615,8 @@ name_pl sawdust
 exp 0
 x 5
 y 8
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 5
@@ -687,7 +691,8 @@ name_pl sawdust
 exp 0
 x 6
 y 5
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 6
@@ -699,7 +704,8 @@ name_pl sawdust
 exp 0
 x 6
 y 6
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 6
@@ -711,7 +717,8 @@ name_pl sawdust
 exp 0
 x 6
 y 7
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 6
@@ -723,7 +730,8 @@ name_pl sawdust
 exp 0
 x 6
 y 8
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 6
@@ -809,7 +817,8 @@ name_pl sawdust
 exp 0
 x 7
 y 7
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 7
@@ -821,7 +830,8 @@ name_pl sawdust
 exp 0
 x 7
 y 8
-slow_move 0.000000
+move_slow walk
+move_slow_penalty 0.000000
 end
 arch woodfloor2
 x 7

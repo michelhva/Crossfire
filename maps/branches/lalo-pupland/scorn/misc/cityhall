@@ -8,9 +8,8 @@ height 32
 enter_x 13
 enter_y 25
 msg
-Creator:
-Email:
-Date: Fri Oct 15 13:42:48 1993
+Created:  1993-10-15
+Modified: 2007-12-31 Kevin Bulgrien
 endmsg
 end
 arch woods_2
@@ -30,8 +29,10 @@ end
 arch grass
 y 5
 end
-arch woodfloor
+arch grass
 y 6
+smoothlevel 30
+move_block swim boat
 end
 arch mine10
 y 6
@@ -89,12 +90,16 @@ y 14
 end
 arch grass
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 y 15
 end
 arch grass
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 y 16
@@ -212,10 +217,6 @@ arch mine7
 x 1
 y 6
 end
-arch woodfloor
-x 1
-y 7
-end
 arch dungeon_magic
 x 1
 y 7
@@ -236,10 +237,6 @@ arch woodfloor
 x 1
 y 8
 end
-arch woodfloor
-x 1
-y 9
-end
 arch dungeon_magic
 x 1
 y 9
@@ -251,10 +248,6 @@ end
 arch chair_2.1
 x 1
 y 9
-end
-arch woodfloor
-x 1
-y 10
 end
 arch dungeon_magic
 x 1
@@ -268,10 +261,6 @@ arch chair_2.1
 x 1
 y 10
 end
-arch woodfloor
-x 1
-y 11
-end
 arch dungeon_magic
 x 1
 y 11
@@ -284,10 +273,6 @@ arch chair_2.1
 x 1
 y 11
 end
-arch woodfloor
-x 1
-y 12
-end
 arch dungeon_magic
 x 1
 y 12
@@ -299,10 +284,6 @@ end
 arch chair_2.1
 x 1
 y 12
-end
-arch woodfloor
-x 1
-y 13
 end
 arch dungeon_magic
 x 1
@@ -331,10 +312,13 @@ end
 arch tree
 x 1
 y 15
+smoothlevel 30
 end
 arch grass
 x 1
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 1
@@ -503,10 +487,14 @@ end
 arch grass
 x 2
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 2
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 2
@@ -575,7 +563,7 @@ end
 arch woods_2
 x 3
 end
-arch dungeon_floor
+arch woods
 x 3
 y 1
 end
@@ -671,10 +659,6 @@ arch chair_2.1
 x 3
 y 10
 end
-arch woodfloor
-x 3
-y 11
-end
 arch dungeon_magic
 x 3
 y 11
@@ -687,10 +671,6 @@ arch chair_2.1
 x 3
 y 11
 end
-arch woodfloor
-x 3
-y 12
-end
 arch dungeon_magic
 x 3
 y 12
@@ -702,10 +682,6 @@ end
 arch chair_2.1
 x 3
 y 12
-end
-arch woodfloor
-x 3
-y 13
 end
 arch dungeon_magic
 x 3
@@ -734,10 +710,13 @@ end
 arch tree
 x 3
 y 15
+smoothlevel 30
 end
 arch grass
 x 3
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 3
@@ -803,7 +782,7 @@ arch cobblestones
 x 3
 y 31
 end
-arch dungeon_floor
+arch woods
 x 4
 end
 arch mine10
@@ -924,10 +903,14 @@ end
 arch grass
 x 4
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 4
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Kjetil T Homme
@@ -952,6 +935,15 @@ x 4
 y 19
 end
 arch grass
+x 4
+y 20
+end
+arch statue
+name Kevin Bulgrien
+msg
+Rayvin Was Here
+And BIB Was Too.
+endmsg
 x 4
 y 20
 end
@@ -1105,10 +1097,6 @@ arch chair_2.1
 x 5
 y 10
 end
-arch woodfloor
-x 5
-y 11
-end
 arch dungeon_magic
 x 5
 y 11
@@ -1121,10 +1109,6 @@ arch chair_2.1
 x 5
 y 11
 end
-arch woodfloor
-x 5
-y 12
-end
 arch dungeon_magic
 x 5
 y 12
@@ -1136,10 +1120,6 @@ end
 arch chair_2.1
 x 5
 y 12
-end
-arch woodfloor
-x 5
-y 13
 end
 arch dungeon_magic
 x 5
@@ -1168,10 +1148,13 @@ end
 arch tree
 x 5
 y 15
+smoothlevel 30
 end
 arch grass
 x 5
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 5
@@ -1358,10 +1341,14 @@ end
 arch grass
 x 6
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 6
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Andreas Vogl
@@ -1546,10 +1533,6 @@ arch chair_2.1
 x 7
 y 10
 end
-arch woodfloor
-x 7
-y 11
-end
 arch dungeon_magic
 x 7
 y 11
@@ -1562,10 +1545,6 @@ arch chair_2.1
 x 7
 y 11
 end
-arch woodfloor
-x 7
-y 12
-end
 arch dungeon_magic
 x 7
 y 12
@@ -1577,10 +1556,6 @@ end
 arch chair_2.1
 x 7
 y 12
-end
-arch woodfloor
-x 7
-y 13
 end
 arch dungeon_magic
 x 7
@@ -1609,10 +1584,13 @@ end
 arch tree
 x 7
 y 15
+smoothlevel 30
 end
 arch grasspond
 x 7
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 7
@@ -1807,10 +1785,14 @@ end
 arch grass
 x 8
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 8
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tyler Van Gorder
@@ -1911,7 +1893,7 @@ arch dungeon_floor
 x 9
 y 1
 end
-arch mine4
+arch mine_1_2
 x 9
 y 1
 end
@@ -1995,10 +1977,6 @@ arch table
 x 9
 y 10
 end
-arch woodfloor
-x 9
-y 11
-end
 arch dungeon_magic
 x 9
 y 11
@@ -2007,13 +1985,28 @@ arch woodfloor
 x 9
 y 11
 end
-arch table
+arch dresser2
+name desk
+name_pl desks
 x 9
 y 11
+arch note
+name Proverbs
+name_pl Proverbs
+title of the Servant
+msg
+A feast fit for a king gains a valued prize.
+Royal service begets honor, title, and gifts.
+A royal title profers respect and freedom.
+A noble citizen neither hungers nor thirsts.
+Generous supplication yields bountiful grace.
+Lifelong and diligent veneration is greatly rewarded.
+The heretic is to be pitied for holy chastisement is harsh.
+endmsg
+level 1
+value 10
+weight 10
 end
-arch woodfloor
-x 9
-y 12
 end
 arch dungeon_magic
 x 9
@@ -2026,10 +2019,6 @@ end
 arch table
 x 9
 y 12
-end
-arch woodfloor
-x 9
-y 13
 end
 arch dungeon_magic
 x 9
@@ -2058,10 +2047,13 @@ end
 arch tree
 x 9
 y 15
+smoothlevel 30
 end
 arch grass
 x 9
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 9
@@ -2134,7 +2126,7 @@ arch dungeon_floor
 x 10
 y 1
 end
-arch mine2
+arch swall_2_1_2
 x 10
 y 1
 end
@@ -2230,10 +2222,6 @@ arch woodfloor
 x 10
 y 10
 end
-arch woodfloor
-x 10
-y 11
-end
 arch dungeon_magic
 x 10
 y 11
@@ -2253,10 +2241,6 @@ end
 arch woodfloor
 x 10
 y 12
-end
-arch woodfloor
-x 10
-y 13
 end
 arch dungeon_magic
 x 10
@@ -2281,10 +2265,14 @@ end
 arch grass
 x 10
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 10
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tony Elmroth
@@ -2375,7 +2363,7 @@ arch cobblestones
 x 10
 y 31
 end
-arch dungeon_floor
+arch woods
 x 11
 end
 arch mine10
@@ -2385,7 +2373,7 @@ arch dungeon_floor
 x 11
 y 1
 end
-arch mine12
+arch mine_1_2
 x 11
 y 1
 end
@@ -2498,7 +2486,7 @@ arch mine8
 x 11
 y 13
 end
-arch woodfloor
+arch cobblestones2
 x 11
 y 14
 end
@@ -3368,7 +3356,7 @@ arch dungeon_floor
 x 16
 y 1
 end
-arch mine4
+arch mine_1_2
 x 16
 y 1
 end
@@ -3438,10 +3426,6 @@ x 16
 y 8
 end
 arch dungeon_floor
-x 16
-y 9
-end
-arch woodfloor
 x 16
 y 9
 end
@@ -3572,7 +3556,7 @@ arch dungeon_floor
 x 17
 y 1
 end
-arch mine2
+arch swall_2_1_2
 x 17
 y 1
 end
@@ -3639,20 +3623,11 @@ end
 arch book_read
 name History of Crossfire
 msg
-Frank Tore Johansen started writing
-Crossfire in march 1992.  Since then
-several people throughout the world
-have contributed with source, maps
-and graphics.
-The earlier versions looked a lot
-like the game Gauntlet.  Then it
-started adopting the features of
-Nethack and Moria.
-Now it is moving in the direction
-of more complex games like Ultima.
-But during all those years, Crossfire
-has developed it's very own unique
-style.
+Frank Tore Johansen started writing Crossfire in March, 1992.
+Since then, many people throughout the world have contributed source code, maps, graphics, and other forms of support.
+Early versions of Crossfire looked much like early renditions of the game Gauntlet.  Since then, features like that of Nethack and Moria were adopted.
+Presently development is moving in the direction of producing a more complex game similar to Ultima.
+Throughout the years though, Crossfire continues to maintain it's very own distinctive style.
 endmsg
 x 17
 y 8
@@ -3783,10 +3758,14 @@ end
 arch grass
 x 17
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 17
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Mikael Olsson
@@ -3877,7 +3856,7 @@ arch cobblestones
 x 17
 y 31
 end
-arch dungeon_floor
+arch woods
 x 18
 end
 arch mine10
@@ -3887,7 +3866,7 @@ arch dungeon_floor
 x 18
 y 1
 end
-arch mine12
+arch mine_1_2
 x 18
 y 1
 end
@@ -4002,10 +3981,13 @@ end
 arch tree
 x 18
 y 15
+smoothlevel 30
 end
 arch grass
 x 18
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 18
@@ -4205,10 +4187,14 @@ end
 arch grass
 x 19
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 19
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Tero Haatanen
@@ -4419,10 +4405,13 @@ end
 arch tree
 x 20
 y 15
+smoothlevel 30
 end
 arch grass
 x 20
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 20
@@ -4609,10 +4598,14 @@ end
 arch grass
 x 21
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 21
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Lasse Ylitalo
@@ -4836,10 +4829,13 @@ end
 arch tree
 x 22
 y 15
+smoothlevel 30
 end
 arch grass
 x 22
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 22
@@ -5026,10 +5022,14 @@ end
 arch grass
 x 23
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 23
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Peter Mardahl
@@ -5091,10 +5091,6 @@ end
 arch grass
 x 23
 y 25
-end
-arch grass
-x 23
-y 26
 end
 arch tree
 x 23
@@ -5251,17 +5247,16 @@ arch mine7
 x 24
 y 14
 end
-arch grass
-x 24
-y 15
-end
 arch tree
 x 24
 y 15
+smoothlevel 30
 end
 arch grass
 x 24
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 24
@@ -5433,10 +5428,14 @@ end
 arch grass
 x 25
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 25
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch statue
 name Rachel Yotter
@@ -5467,7 +5466,7 @@ end
 arch hedge_2_2_2
 x 25
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 25
@@ -5487,7 +5486,7 @@ end
 arch hedge_2_2_1
 x 25
 y 22
-no_pass 1
+move_block all
 end
 arch grass
 x 25
@@ -5505,10 +5504,6 @@ end
 arch grass
 x 25
 y 25
-end
-arch grass
-x 25
-y 26
 end
 arch tree
 x 25
@@ -5641,21 +5636,16 @@ arch mine6
 x 26
 y 14
 end
-arch grass
-x 26
-y 15
-end
 arch tree
 x 26
 y 15
+smoothlevel 30
 end
 arch grass
 x 26
 y 16
-end
-arch grass
-x 26
-y 17
+smoothlevel 30
+move_block swim boat
 end
 arch tree
 x 26
@@ -5664,10 +5654,6 @@ end
 arch grass
 x 26
 y 18
-end
-arch grass
-x 26
-y 19
 end
 arch tree
 x 26
@@ -5680,7 +5666,7 @@ end
 arch hedge_2_1_2
 x 26
 y 20
-no_pass 1
+move_block all
 end
 arch magic_mouth
 msg
@@ -5704,11 +5690,7 @@ end
 arch hedge_2_1_2
 x 26
 y 22
-no_pass 1
-end
-arch grass
-x 26
-y 23
+move_block all
 end
 arch tree
 x 26
@@ -5717,10 +5699,6 @@ end
 arch grass
 x 26
 y 24
-end
-arch grass
-x 26
-y 25
 end
 arch tree
 x 26
@@ -5841,9 +5819,11 @@ arch mine3
 x 27
 y 13
 end
-arch woodfloor
+arch grass
 x 27
 y 14
+smoothlevel 30
+move_block swim boat
 end
 arch mine12
 x 27
@@ -5856,6 +5836,8 @@ end
 arch grass
 x 27
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 x 27
@@ -5864,6 +5846,8 @@ end
 arch grass
 x 27
 y 16
+smoothlevel 30
+move_block swim boat
 end
 arch swall_2_1_1
 x 27
@@ -5904,7 +5888,7 @@ end
 arch hedge_2_2_3
 x 27
 y 20
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5913,7 +5897,7 @@ end
 arch hedge_2_1_1
 x 27
 y 21
-no_pass 1
+move_block all
 end
 arch brush
 x 27
@@ -5922,7 +5906,7 @@ end
 arch hedge_2_2_4
 x 27
 y 22
-no_pass 1
+move_block all
 end
 arch swall_1_1_half
 x 27
@@ -6038,14 +6022,19 @@ end
 arch brush
 x 28
 y 13
+move_block swim boat
 end
 arch brush
 x 28
 y 14
+smoothlevel 30
+move_block swim boat
 end
 arch grass
 x 28
 y 15
+smoothlevel 30
+move_block swim boat
 end
 arch brush
 x 28

@@ -5,9 +5,7 @@ region scorn
 width 25
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Oct 11 23:09:52 1994
+Created:  1994-02-11
 endmsg
 end
 arch dirtfloor
@@ -251,8 +249,8 @@ name Mailbox
 msg
 17 Stronghold Road
 House of Porters
-Home of Teleporters Inc.
-You need to teleport somewhere?
+       Home of Teleporters Inc.
+   You need to teleport somewhere?
 -- Closed due to monster infestation -
 endmsg
 x 2
@@ -611,7 +609,7 @@ WARNING: This Dungeon consists of
 one way teleporters! You must complete
 dungeon or die! Do not use unless
 you are at least 3rd level.
--- Scorn Guild of adventurers
+    -- Scorn Guild of adventurers
 endmsg
 x 5
 y 2

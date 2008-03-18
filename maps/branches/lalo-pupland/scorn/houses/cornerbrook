@@ -7,9 +7,7 @@ height 25
 enter_x 11
 enter_y 1
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    4/27/2003
+Created:  2003-04-27 Avion
 endmsg
 outdoor 1
 end
@@ -446,7 +444,7 @@ hp 1
 sp 1
 x 2
 y 11
-walk_on 0
+move_on 0
 end
 arch evergreen
 x 2
@@ -3678,8 +3676,7 @@ food 1
 x 22
 y 19
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch magic_mouth
 msg
@@ -3694,8 +3691,7 @@ food 1
 x 22
 y 19
 connected 6
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch woodfloor
 x 22

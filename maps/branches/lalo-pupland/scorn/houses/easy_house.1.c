@@ -5,8 +5,7 @@ darkness 3
 width 16
 height 16
 msg
-Creator: Bort
-Date:    5/26/2006
+Created:  2006-05-26 Bort
 endmsg
 end
 arch cobblestones2

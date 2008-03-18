@@ -7,6 +7,7 @@ height 16
 msg
 Created:  1997-04-16 David Sundqvist (azzie@tellutec.se)
 Altar to level 120 20050527 (cvstry2)
+Modified: 2008-01-03 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -313,7 +314,7 @@ arch grass
 x 2
 y 15
 end
-arch swall_2_1_2
+arch swall_1_3
 x 2
 y 15
 end
@@ -879,7 +880,7 @@ arch grass
 x 8
 y 15
 end
-arch swall_2_1_2
+arch swall_1_4
 x 8
 y 15
 end
@@ -1148,7 +1149,7 @@ end
 arch grass
 x 12
 end
-arch swall_1_3
+arch swall_2_2_3
 x 12
 end
 arch grass
@@ -1339,7 +1340,7 @@ end
 arch grass
 x 14
 end
-arch swall_1_4
+arch swall_2_2_2
 x 14
 end
 arch grass

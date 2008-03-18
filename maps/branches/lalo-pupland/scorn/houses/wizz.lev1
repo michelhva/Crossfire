@@ -1,13 +1,13 @@
 arch map
-name house
+name Yarid's House
 swap_time 3600
+difficulty 1
 region scorn
 width 48
 height 48
 msg
-Creator: Bjoern Helfesrieder
-Email: helfesri@igd.fhg.de
-Date: Fri Jan  5 22:43:54 1996
+Created:  1996-01-05 Bjoern Helfesrieder (helfesri@igd.fhg.de)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -266,6 +266,10 @@ arch bwall_2_1_1
 x 1
 y 5
 end
+arch dungeon_floor
+x 1
+y 6
+end
 arch bwall_2_1_1
 x 1
 y 6
@@ -609,10 +613,6 @@ arch dungeon_floor
 x 2
 end
 arch dungeon_floor
-x 2
-y 1
-end
-arch bwall_2_2_4
 x 2
 y 1
 end
@@ -957,10 +957,6 @@ arch dungeon_floor
 x 3
 y 1
 end
-arch bwall_2_2_4
-x 3
-y 1
-end
 arch bwall_2_1_2
 x 3
 y 1
@@ -1242,6 +1238,10 @@ x 3
 y 44
 connected 41
 end
+arch dungeon_floor
+x 3
+y 45
+end
 arch bwall_1_1
 x 3
 y 45
@@ -1265,10 +1265,6 @@ arch dungeon_floor
 x 4
 end
 arch dungeon_floor
-x 4
-y 1
-end
-arch bwall_2_2_4
 x 4
 y 1
 end
@@ -1411,7 +1407,7 @@ arch dungeon_floor
 x 4
 y 21
 end
-arch bwall_2_1_1
+arch bwall_1_1
 x 4
 y 21
 end
@@ -2216,6 +2212,10 @@ arch bwall_2_1_1
 x 7
 y 14
 end
+arch dungeon_floor
+x 7
+y 15
+end
 arch bwall_1_2
 x 7
 y 15
@@ -2407,18 +2407,6 @@ arch dungeon_floor
 x 8
 end
 arch dungeon_floor
-x 8
-y 1
-end
-arch bwall_2_1_1
-x 8
-y 1
-end
-arch bwall_2_1_2
-x 8
-y 1
-end
-arch bwall_4
 x 8
 y 1
 end
@@ -3610,6 +3598,10 @@ end
 arch bwall_1_1
 x 11
 y 45
+end
+arch dungeon_floor
+x 11
+y 46
 end
 arch bwall_3_1
 x 11
@@ -5384,7 +5376,7 @@ arch dungeon_floor
 x 17
 y 14
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 17
 y 14
 end
@@ -5586,6 +5578,10 @@ y 47
 end
 arch dungeon_floor
 x 18
+end
+arch dungeon_floor
+x 18
+y 1
 end
 arch bwall_2_1_2
 x 18
@@ -5849,6 +5845,10 @@ end
 arch dungeon_floor
 x 19
 end
+arch dungeon_floor
+x 19
+y 1
+end
 arch bwall_2_1_2
 x 19
 y 1
@@ -5867,7 +5867,7 @@ arch dungeon_floor
 x 19
 y 3
 end
-arch bwall_2_1_1
+arch bwall_1_1
 x 19
 y 3
 end
@@ -5951,7 +5951,7 @@ arch dungeon_floor
 x 19
 y 14
 end
-arch bwall_2_1_2
+arch bwall_1_4
 x 19
 y 14
 end
@@ -6694,6 +6694,8 @@ end
 arch firewall_1
 x 21
 y 34
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 21
@@ -7044,6 +7046,10 @@ end
 arch bwall_2_1_1
 x 22
 y 39
+end
+arch dungeon_floor
+x 22
+y 40
 end
 arch bwall_2_1_1
 x 22
@@ -8460,6 +8466,8 @@ end
 arch lightningwall_1
 x 27
 y 19
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 27
@@ -8958,6 +8966,10 @@ end
 arch bwall_2_1_1
 x 28
 y 39
+end
+arch dungeon_floor
+x 28
+y 40
 end
 arch bwall_2_1_1
 x 28
@@ -9885,6 +9897,8 @@ end
 arch potion_magic
 x 31
 y 33
+arch spell_regenerate_spellpoints
+end
 end
 arch dungeon_magic
 x 31
@@ -10601,6 +10615,10 @@ end
 arch dungeon_floor
 x 33
 y 42
+end
+arch dungeon_floor
+x 33
+y 43
 end
 arch bwall_2_1_2
 x 33
@@ -12311,6 +12329,10 @@ end
 arch bwall_2_2_2
 x 39
 y 37
+end
+arch dungeon_floor
+x 39
+y 38
 end
 arch bwall_2_1_1
 x 39

@@ -8,9 +8,7 @@ height 33
 enter_x 17
 enter_y 32
 msg
-Creator:
-Email:
-Date: Fri Oct 15 13:54:27 1993
+Created:  1993-10-15
 endmsg
 end
 arch woodfloor
@@ -408,6 +406,7 @@ y 14
 level 10
 type 0
 resist_magic 30
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1
@@ -504,6 +503,7 @@ resist_fear 30
 resist_cancellation 30
 resist_deplete 30
 resist_death 30
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1
@@ -2422,6 +2422,7 @@ y 8
 level 5
 type 0
 resist_magic 100
+move_type walk
 monster 1
 friendly 1
 can_cast_spell 1
@@ -4913,9 +4914,9 @@ I am a beholder.  I came here because I was tired of being cooped up in Barad Du
 @match barad|dur
 It is a fortress to the north of here, in the small range of mountains.
 Between all the skulls, other beholders, and other nasty monsters, I just had to get out of there.
-match job
+@match job
 Psionic reader...  Why do you ask?
-match *
+@match *
 (Mumble) I wonder if anyone here knows what I am... or why I'm here? (Mumble)
 endmsg
 x 23

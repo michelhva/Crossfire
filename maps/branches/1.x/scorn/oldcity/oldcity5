@@ -910,10 +910,6 @@ y 5
 speed_left -1.300000
 unaggressive 1
 end
-arch large_stones
-x 3
-y 6
-end
 arch magic_ear
 msg
 @match Cloud|cloud
@@ -925,6 +921,10 @@ endmsg
 x 3
 y 6
 connected 1
+end
+arch large_stones
+x 3
+y 6
 end
 arch large_stones
 x 3
@@ -3123,7 +3123,7 @@ arch pstone_1
 x 11
 y 39
 end
-arch swall_2_1_2
+arch swall_1_3_half
 x 11
 y 39
 end
@@ -3531,7 +3531,7 @@ arch pstone_1
 x 13
 y 39
 end
-arch swall_2_1_2
+arch swall_1_4_half
 x 13
 y 39
 end

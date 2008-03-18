@@ -9,7 +9,7 @@ height 16
 enter_x 1
 enter_y 1
 msg
-Created:  2004-02-03 Mikeeusa
+Created:  2004-08-03 Mikeeusa
 endmsg
 outdoor 1
 end
@@ -1876,10 +1876,6 @@ arch door_2
 x 14
 y 3
 end
-arch dirtfloor
-x 14
-y 4
-end
 arch magic_mouth
 msg
 You hear angry noises behind the door.
@@ -1887,6 +1883,10 @@ Whatever is in there, sounds more dangerous
 than a kobold.  You wonder if you should
 just leave it alone.
 endmsg
+x 14
+y 4
+end
+arch dirtfloor
 x 14
 y 4
 end

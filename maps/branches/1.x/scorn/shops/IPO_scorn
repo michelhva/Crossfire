@@ -27,13 +27,13 @@ end
 arch awall_2_1_1
 y 2
 end
+arch dungeon_magic
+y 3
+end
 arch marble
 y 3
 end
 arch awall_3_2
-y 3
-end
-arch dungeon_magic
 y 3
 end
 arch marble
@@ -99,15 +99,15 @@ name Coffee supplies
 x 1
 y 2
 end
+arch dungeon_magic
+x 1
+y 3
+end
 arch marble
 x 1
 y 3
 end
-arch awall_2_1_2
-x 1
-y 3
-end
-arch dungeon_magic
+arch awall_1_3
 x 1
 y 3
 end
@@ -197,6 +197,10 @@ title Python
 slaying /python/IPO/say.py
 end
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch marble
 x 2
 y 3
@@ -206,10 +210,6 @@ name II
 x 2
 y 3
 no_pass 1
-end
-arch dungeon_magic
-x 2
-y 3
 end
 arch marble
 x 2
@@ -261,15 +261,15 @@ arch table_2
 x 3
 y 2
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch marble
 x 3
 y 3
 end
-arch awall_2_1_2
-x 3
-y 3
-end
-arch dungeon_magic
+arch awall_1_4
 x 3
 y 3
 end
@@ -315,15 +315,15 @@ arch marble
 x 4
 y 2
 end
+arch dungeon_magic
+x 4
+y 3
+end
 arch marble
 x 4
 y 3
 end
 arch awall_2_1_2
-x 4
-y 3
-end
-arch dungeon_magic
 x 4
 y 3
 end
@@ -383,15 +383,15 @@ arch marble
 x 5
 y 2
 end
+arch dungeon_magic
+x 5
+y 3
+end
 arch marble
 x 5
 y 3
 end
 arch awall_2_1_2
-x 5
-y 3
-end
-arch dungeon_magic
 x 5
 y 3
 end
@@ -453,15 +453,15 @@ name Coffee supplies
 x 6
 y 2
 end
+arch dungeon_magic
+x 6
+y 3
+end
 arch marble
 x 6
 y 3
 end
-arch awall_2_1_2
-x 6
-y 3
-end
-arch dungeon_magic
+arch awall_1_3
 x 6
 y 3
 end
@@ -527,6 +527,10 @@ endmsg
 x 7
 y 2
 end
+arch dungeon_magic
+x 7
+y 3
+end
 arch marble
 x 7
 y 3
@@ -536,10 +540,6 @@ name I
 x 7
 y 3
 no_pass 1
-end
-arch dungeon_magic
-x 7
-y 3
 end
 arch marble
 x 7
@@ -649,15 +649,15 @@ arch table_2
 x 8
 y 2
 end
+arch dungeon_magic
+x 8
+y 3
+end
 arch marble
 x 8
 y 3
 end
-arch awall_2_1_2
-x 8
-y 3
-end
-arch dungeon_magic
+arch awall_1_4
 x 8
 y 3
 end
@@ -723,15 +723,15 @@ arch awall_2_1_1
 x 9
 y 2
 end
+arch dungeon_magic
+x 9
+y 3
+end
 arch marble
 x 9
 y 3
 end
 arch awall_3_4
-x 9
-y 3
-end
-arch dungeon_magic
 x 9
 y 3
 end

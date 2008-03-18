@@ -8,9 +8,8 @@ height 30
 enter_x 14
 enter_y 8
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    5/11/2003
+Created:  2003-05-11 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -3019,8 +3018,7 @@ endmsg
 x 17
 y 26
 connected 5
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_floor
 x 17
@@ -4211,8 +4209,7 @@ endmsg
 x 24
 y 22
 connected 15
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_floor
 x 24
@@ -4237,11 +4234,12 @@ x 24
 y 25
 end
 arch lightningwall_1
-dam 6
 x 24
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 24
@@ -4406,8 +4404,7 @@ endmsg
 x 25
 y 22
 connected 18
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_floor
 x 25
@@ -4431,11 +4428,12 @@ x 25
 y 25
 end
 arch lightningwall_1
-dam 6
 x 25
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 25
@@ -4592,8 +4590,7 @@ arch magic_mouth
 x 26
 y 22
 connected 17
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch dungeon_floor
 x 26
@@ -4618,11 +4615,12 @@ x 26
 y 25
 end
 arch lightningwall_1
-dam 6
 x 26
 y 25
 speed 0.0
 connected 8
+arch spell_large_lightning
+end
 end
 arch dungeon_floor
 x 26

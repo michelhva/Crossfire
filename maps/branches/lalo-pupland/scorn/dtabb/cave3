@@ -5,9 +5,8 @@ region scorn
 width 20
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Oct 19 03:52:51 1994
+Created:  1994-02-19
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -1371,6 +1370,8 @@ end
 arch firewall
 x 10
 y 18
+arch spell_small_fireball
+end
 end
 arch dirtfloor
 x 10
