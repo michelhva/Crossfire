@@ -4,8 +4,8 @@ difficulty 1
 width 39
 height 26
 msg
-Creator: josh@woosworld.net
-Date:    3/19/2005
+Created:  2005-03-19 josh@woosworld.net
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -1045,7 +1045,7 @@ x 4
 y 16
 invisible 1
 connected 2
-walk_off 0
+move_off 0
 end
 arch battleground
 slaying team2
@@ -1587,6 +1587,8 @@ end
 arch potion_heal
 x 6
 y 18
+arch spell_heal
+end
 end
 arch permanent_lava
 x 6
@@ -4733,7 +4735,7 @@ x 19
 y 20
 invisible 1
 connected 1
-walk_off 0
+move_off 0
 end
 arch battleground
 slaying team2
@@ -7852,6 +7854,8 @@ end
 arch potion_heal
 x 32
 y 18
+arch spell_heal
+end
 end
 arch permanent_lava
 x 32
@@ -8300,7 +8304,7 @@ x 34
 y 14
 end
 arch button_lever
-name lPull To Leave
+name Pull To Leave
 x 34
 y 14
 connected 3
@@ -8366,7 +8370,7 @@ x 34
 y 16
 invisible 1
 connected 3
-walk_off 0
+move_off 0
 end
 arch battleground
 slaying team2
