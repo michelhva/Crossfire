@@ -345,7 +345,7 @@ public class MusicManager
         }
 
         /**
-         * Convert one audio sample according to the current {@link #factor}.
+         * Convert one audio sample according to the current {@link #volume}.
          *
          * @param buf The buffer holding the sample.
          *

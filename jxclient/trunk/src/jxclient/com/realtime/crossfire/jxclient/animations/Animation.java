@@ -33,7 +33,7 @@ public class Animation
     private final int flags;
 
     /**
-     * @The faces list of the animation.
+     * The faces list of the animation.
      */
     private final int[] faces;
 

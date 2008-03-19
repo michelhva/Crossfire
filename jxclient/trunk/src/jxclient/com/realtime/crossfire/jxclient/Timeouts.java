@@ -116,7 +116,7 @@ public class Timeouts
      *
      * @param timeout The new timeout in milliseconds.
      *
-     * @para, timeoutEvent The timeout event to execute.
+     * @param timeoutEvent The timeout event to execute.
      */
     public static void reset(final int timeout, final TimeoutEvent timeoutEvent)
     {
@@ -132,7 +132,7 @@ public class Timeouts
      *
      * @param timeout The timeout in milliseconds.
      *
-     * @para, timeoutEvent The timeout event to execute.
+     * @param timeoutEvent The timeout event to execute.
      */
     public static void add(final int timeout, final TimeoutEvent timeoutEvent)
     {
@@ -151,7 +151,7 @@ public class Timeouts
      * Remove a timeout event. If the timeout event is not active, nothing
      * happens.
      *
-     * @para, timeoutEvent The timeout event to remove.
+     * @param timeoutEvent The timeout event to remove.
      */
     public static void remove(final TimeoutEvent timeoutEvent)
     {

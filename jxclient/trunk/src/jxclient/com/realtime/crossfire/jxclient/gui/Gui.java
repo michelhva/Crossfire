@@ -140,8 +140,6 @@ public class Gui
     /**
      * Mark this gui as a "dialog".
      *
-     * @param name The name of the dialog.
-     *
      * @param w The width.
      *
      * @param h The height.

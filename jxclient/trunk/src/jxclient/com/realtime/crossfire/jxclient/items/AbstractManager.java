@@ -145,7 +145,7 @@ public abstract class AbstractManager
      *
      * @param listeners the listeners to be modified
      *
-     * @param location the location that has changed
+     * @param items the items that have changed
      */
     private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
     {

@@ -62,7 +62,7 @@ public class GUITextGauge extends GUIGauge
      *
      * @param pictureNegative The image for negative values.
      *
-     * @param pictureFull The image for an empty gauge.
+     * @param pictureEmpty The image for an empty gauge.
      *
      * @param orientation The gauge's orientation.
      *

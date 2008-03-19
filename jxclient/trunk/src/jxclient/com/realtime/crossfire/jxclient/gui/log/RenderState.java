@@ -45,7 +45,7 @@ public class RenderState
     /**
      * The number of pixels to shift the first displayed line ({@link
      * #topIndex}. Positive values shift up, negative shift down. It's value is
-     * either between zero and less than the height of line {@link #topIdex},
+     * either between zero and less than the height of line {@link #topIndex},
      * or it is negative if the rendered buffer does not contain enough lines
      * to fill the view area.
      */

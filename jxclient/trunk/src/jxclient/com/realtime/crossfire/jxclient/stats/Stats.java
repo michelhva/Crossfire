@@ -450,7 +450,8 @@ public class Stats
      * Set whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
      * directly.
      *
-     * @param Whether <code>CS_STAT_WEAP_SP</code> is the weapon speed value.
+     * @param simpleWeaponSpeed Whether <code>CS_STAT_WEAP_SP</code> is the
+     * weapon speed value.
      */
     public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
     {
@@ -516,7 +517,7 @@ public class Stats
     /**
      * Adds a new skill to the list of known skills.
      * @param id The numerical identifier for the new skill.
-     * @param n The skill name.
+     * @param skillName The skill name.
      */
     public static void addSkill(final int id, final String skillName)
     {
@@ -627,7 +628,7 @@ public class Stats
 
     /**
      * Sets the current Title.
-     * @param tile The new Title content.
+     * @param title The new Title content.
      */
     public void setTitle(final String title)
     {

@@ -316,7 +316,7 @@ public class Shortcuts
     }
 
     /**
-     * Register a {@łink ShortcutsListener}.
+     * Register a {@link ShortcutsListener}.
      *
      * @param listener The listener to register.
      */

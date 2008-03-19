@@ -55,7 +55,7 @@ public class GUIHTMLLabel extends AbstractLabel
     private final Color mycolor;
 
     /**
-     * If set, auto-resize this element to the extent of {@link #mycaption}.
+     * If set, auto-resize this element to the extent of {@link #text}.
      */
     private boolean autoResize = false;
 

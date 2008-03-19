@@ -92,7 +92,7 @@ public class StatsWatcher
      *
      * @param stats The stats instance to watch.
      *
-     * @param jxcWindow The window instance.
+     * @param jxcWindowRenderer The window renderer instance.
      */
     public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer)
     {
@@ -137,7 +137,7 @@ public class StatsWatcher
     /**
      * Play a clip if sounds should be generated.
      *
-     * @param sound The clip to play.
+     * @param clip The sound clip to play.
      */
     private void playClip(final String clip)
     {

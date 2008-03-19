@@ -48,7 +48,7 @@ public abstract class AbstractLabel extends GUIElement
     /**
      * If set, the opaque background color; if <code>null</code>, the
      * background is transparent. This field is ignored if {@link
-     * #mybackground} is set.
+     * #backgroundImage} is set.
      */
     private Color backgroundColor = null;
 

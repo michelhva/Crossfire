@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 import java.util.List;
 
 /**
- * Encapsulates the state for rendering a {@link #Buffer} instance.
+ * Encapsulates the state for rendering a {@link Buffer} instance.
  *
  * @author Andreas Kirschbaum
  */

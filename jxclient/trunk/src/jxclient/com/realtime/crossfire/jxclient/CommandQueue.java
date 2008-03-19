@@ -144,7 +144,7 @@ public class CommandQueue
      *
      * @param command The command to send.
      *
-     * @see #sendNcom(int, String)
+     * @see #sendNcom(boolean, int, String)
      */
     public void sendNcom(final boolean mustSend, final String command)
     {
@@ -161,7 +161,7 @@ public class CommandQueue
      *
      * @param command The command to send.
      *
-     * @see #sendNcom(String)
+     * @see #sendNcom(boolean, String)
      */
     public void sendNcom(final boolean mustSend, final int repeat, final String command)
     {

@@ -36,7 +36,7 @@ import java.io.OutputStreamWriter;
  * This is the entry point for JXClient. Note that this class doesn't do much
  * by itself - most of the work in done in JXCWindow or CrossfireServerConnection.
  * @see com.realtime.crossfire.jxclient.JXCWindow
- * @see com.realtime.crossfire.jxclient.CrossfireServerConnection
+ * @see com.realtime.crossfire.jxclient.server.CrossfireServerConnection
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0

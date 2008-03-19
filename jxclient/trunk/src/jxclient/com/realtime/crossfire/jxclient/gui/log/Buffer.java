@@ -53,7 +53,7 @@ public class Buffer implements Iterable<Line>
     private final Fonts fonts;
 
     /**
-     * The {@link FontRenderContext} associated to {@link #buffer}.
+     * The {@link FontRenderContext} to use.
      */
     private final FontRenderContext context;
 

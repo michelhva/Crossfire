@@ -53,7 +53,7 @@ public class MouseTracker implements MouseInputListener
     /**
      * Create a new instance.
      *
-     * @param boolean Whether GUI elements should be highlighted.
+     * @param debugGui Whether GUI elements should be highlighted.
      *
      * @param jxcWindowRenderer The renderer to access dialogs/gui elements.
      */

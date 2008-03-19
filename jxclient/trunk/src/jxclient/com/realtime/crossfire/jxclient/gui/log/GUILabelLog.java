@@ -62,8 +62,6 @@ public class GUILabelLog extends GUILog
      *
      * @param defaultColor The default color to use for text message not
      * specifying a color.
-     *
-     * @param The color to replace with <code>defaultColor</code>.
      */
     public GUILabelLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {

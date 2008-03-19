@@ -259,8 +259,8 @@ public abstract class GUIElement
 
     /**
      * Will be called when the mouse has left the bounding box of this element.
-     * This function will not be called unless {@link mouseEntered(MouseEvent)}
-     * has been called before.
+     * This function will not be called unless {@link
+     * #mouseEntered(MouseEvent)} has been called before.
      *
      * @param e The mouse event relative to this element.
      */

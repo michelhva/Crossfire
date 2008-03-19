@@ -41,7 +41,7 @@ public abstract class Shortcut
     /**
      * Register a shortcut listener.
      *
-     * @param The listener to register.
+     * @param listener The listener to register.
      */
     public void addShortcutListener(final ShortcutListener listener)
     {
@@ -51,7 +51,7 @@ public abstract class Shortcut
     /**
      * Unregister a shortcut listener.
      *
-     * @param The listener to unregister.
+     * @param listener The listener to unregister.
      */
     public void removeShortcutListener(final ShortcutListener listener)
     {
