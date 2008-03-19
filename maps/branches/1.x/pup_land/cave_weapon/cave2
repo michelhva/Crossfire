@@ -490,6 +490,7 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
 no_pass 0
 pass_thru 0
@@ -708,6 +709,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -915,6 +917,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1130,6 +1133,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1174,6 +1178,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1344,6 +1349,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1380,6 +1386,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1420,6 +1427,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1456,6 +1464,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1532,6 +1541,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -1568,6 +1578,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -1686,6 +1697,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1730,6 +1742,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1818,6 +1831,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -1925,6 +1939,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -2050,6 +2065,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -2161,6 +2177,7 @@ type 0
 attacktype 7
 resist_physical 25
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -2281,6 +2298,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -2329,6 +2347,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -2556,6 +2575,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -2600,6 +2620,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -2837,6 +2858,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -3081,6 +3103,7 @@ speed 0.200000
 level 10
 type 0
 resist_physical 25
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
@@ -3489,6 +3512,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -3520,6 +3544,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -3702,6 +3727,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -3733,6 +3759,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -4058,6 +4085,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -4089,6 +4117,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -4289,6 +4318,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -4320,6 +4350,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
@@ -4519,6 +4550,7 @@ attack_movement 7
 level 12
 type 0
 resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0

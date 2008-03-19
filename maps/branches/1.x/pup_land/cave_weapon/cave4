@@ -212,12 +212,14 @@ y 9
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch dungeon_magic
 x 1
@@ -265,12 +267,14 @@ y 13
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch dungeon_magic
 x 1
@@ -310,12 +314,14 @@ y 16
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 1
@@ -634,12 +640,14 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 3
@@ -714,12 +722,14 @@ y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch dun2
 x 4
@@ -747,12 +757,14 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 4
@@ -798,8 +810,10 @@ y 12
 level 10
 type 0
 attacktype 7
+resist_physical 25
 carrying 12000
 randomitems none
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -807,7 +821,7 @@ can_use_scroll 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 arch bow
 name enhanced bow
 Str 1
@@ -1115,12 +1129,14 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 6
@@ -1284,12 +1300,14 @@ y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch dun2
 x 8
@@ -1317,12 +1335,14 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 8
@@ -1420,7 +1440,9 @@ speed 0.050000
 level 10
 type 0
 attacktype 7
+resist_physical 25
 carrying 6000
+move_type walk
 monster 1
 run_away 15
 can_cast_spell 1
@@ -1428,7 +1450,7 @@ can_use_scroll 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 arch axe_2
 name enhanced axe
 Str 2
@@ -1500,12 +1522,14 @@ y 10
 attack_movement 7
 level 12
 type 0
+resist_physical 28
 carrying 9000
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 arch quarterstaff
 name enhanced staff
 Con -20
@@ -1563,12 +1587,14 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 9
@@ -1838,12 +1864,14 @@ y 5
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 12
@@ -1875,12 +1903,14 @@ y 7
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 12
@@ -1936,12 +1966,13 @@ y 14
 speed 1.000000
 level 10
 type 0
+resist_physical 25
 carrying 5000
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
 can_use_weapon 0
-armour 25
 arch nunchacu_1
 name enhanced nunchacu
 Dex 2
@@ -1983,12 +2014,14 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 12
@@ -2377,12 +2410,14 @@ y 17
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 unaggressive 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch flagstone
 x 15
@@ -2444,12 +2479,13 @@ y 6
 speed 0.050000
 level 10
 type 0
+resist_physical 25
 carrying 300000
+move_type walk
 monster 1
 run_away 15
 can_use_armour 0
 can_use_weapon 0
-armour 25
 arch hammer_2
 name enhanced hammer
 dam 50

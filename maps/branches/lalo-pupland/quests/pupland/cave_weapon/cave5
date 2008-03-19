@@ -1,12 +1,11 @@
 arch map
-name cave5
+name Cave Weapon
+difficulty 1
 region pupland
 width 18
 height 27
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb  8 07:18:34 1996
+Created:  1996-02-08
 endmsg
 end
 arch blocked
@@ -324,7 +323,6 @@ endmsg
 x 2
 y 4
 connected 105
-protected 105
 end
 arch flagstone
 x 2
@@ -372,7 +370,6 @@ y 5
 speed 0.500000
 value 1
 connected 105
-protected 105
 end
 arch dungeon_magic
 x 2
@@ -446,7 +443,6 @@ arch button_small
 x 2
 y 14
 connected 93
-protected 93
 end
 arch flagstone
 x 2
@@ -642,7 +638,6 @@ x 3
 y 14
 speed 0.500000
 connected 93
-protected 93
 end
 arch flagstone
 x 3
@@ -784,7 +779,6 @@ x 4
 y 9
 speed 0.500000
 connected 105
-protected 105
 end
 arch dungeon_magic
 x 4
@@ -842,7 +836,6 @@ arch button_small
 x 4
 y 14
 connected 93
-protected 93
 end
 arch flagstone
 x 4
@@ -1036,7 +1029,6 @@ x 5
 y 14
 invisible 1
 connected 199
-protected 199
 end
 arch flagstone
 x 5
@@ -1217,7 +1209,6 @@ name Don't pull me.
 x 6
 y 14
 connected 199
-protected 199
 end
 arch flagstone
 x 6
@@ -1420,7 +1411,6 @@ arch gate_closed_2
 x 7
 y 14
 connected 32
-protected 32
 end
 arch flagstone
 x 7
@@ -1732,7 +1722,6 @@ x 9
 y 4
 speed 0.500000
 connected 11
-protected 11
 end
 arch dungeon_magic
 x 9
@@ -1834,7 +1823,6 @@ arch button_lever
 x 9
 y 14
 connected 92
-protected 92
 end
 arch flagstone
 x 9
@@ -2046,7 +2034,6 @@ arch gate_closed_2
 x 10
 y 14
 connected 91
-protected 91
 end
 arch flagstone
 x 10
@@ -2226,9 +2213,7 @@ endmsg
 x 11
 y 14
 connected 11
-walk_on 0
-fly_on 0
-protected 11
+move_on 0
 end
 arch flagstone
 x 11
@@ -2238,7 +2223,6 @@ arch button_lever
 x 11
 y 14
 connected 91
-protected 91
 end
 arch flagstone
 x 11
@@ -2599,7 +2583,6 @@ arch gate_closed_2
 x 13
 y 14
 connected 90
-protected 90
 end
 arch flagstone
 x 13
@@ -2768,7 +2751,6 @@ arch button_lever
 x 14
 y 14
 connected 90
-protected 90
 end
 arch flagstone
 x 14
@@ -2991,7 +2973,6 @@ x 16
 y 1
 weight 1000
 connected 11
-protected 11
 end
 arch creator
 name 91
@@ -2999,7 +2980,6 @@ other_arch boulder
 x 16
 y 1
 connected 91
-protected 91
 end
 arch blocked
 x 16
@@ -3016,7 +2996,6 @@ y 4
 speed 0.500000
 value 1
 connected 92
-protected 92
 end
 arch boulder
 x 16
@@ -3040,7 +3019,6 @@ x 16
 y 5
 weight 1000000
 connected 32
-protected 32
 end
 arch blocked
 x 16

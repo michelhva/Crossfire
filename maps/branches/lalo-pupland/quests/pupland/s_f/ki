@@ -1,12 +1,11 @@
 arch map
 name KI
+difficulty 1
 region pupland
 width 12
 height 12
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb  8 01:08:02 1996
+Created:  1996-02-08
 endmsg
 end
 arch woodfloor
@@ -587,7 +586,6 @@ name 1 - if player on wrong side
 x 8
 y 1
 connected 1
-protected 1
 end
 arch woodfloor
 x 8
@@ -804,14 +802,12 @@ name 2
 x 11
 weight 10000
 connected 2
-protected 2
 end
 arch creator
 name 1
 other_arch boulder
 x 11
 connected 1
-protected 1
 end
 arch blocked
 x 11

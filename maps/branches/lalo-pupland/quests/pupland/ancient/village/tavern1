@@ -1,12 +1,12 @@
 arch map
-name tavern
+name Tavern
+difficulty 1
 region ancientpupland
 width 34
 height 19
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue May 21 22:59:59 1996
+Created:  1996-02-21
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -348,6 +348,7 @@ hp 100
 x 2
 y 8
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1044,6 +1045,7 @@ hp 100
 x 6
 y 11
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1818,6 +1820,7 @@ hp 100
 x 11
 y 4
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -3143,6 +3146,8 @@ end
 arch lightningwall_7
 x 21
 y 17
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 21

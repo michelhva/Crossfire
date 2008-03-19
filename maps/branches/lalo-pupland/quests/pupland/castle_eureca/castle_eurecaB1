@@ -1,5 +1,5 @@
 arch map
-name castle_eurecaB1
+name Castle Eureca
 difficulty 10
 region pupland
 width 21
@@ -7,9 +7,7 @@ height 21
 enter_x 10
 enter_y 8
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 22:34:57 1996
+Created:  1996-02-29
 endmsg
 end
 arch blocked
@@ -185,6 +183,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -214,6 +213,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -243,6 +243,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -272,6 +273,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -308,7 +310,7 @@ arch cobblestones2
 x 1
 y 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 y 18
 end
@@ -1533,7 +1535,7 @@ arch cobblestones2
 x 10
 y 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 5
 end
@@ -1612,6 +1614,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -1641,6 +1644,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2875,6 +2879,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2904,6 +2909,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2937,6 +2943,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2966,6 +2973,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3002,7 +3010,7 @@ arch cobblestones2
 x 19
 y 18
 end
-arch dwall3_3
+arch dwall_3_3
 x 19
 y 18
 end

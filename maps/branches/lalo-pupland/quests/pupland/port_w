@@ -1,12 +1,11 @@
 arch map
-name port_w
+name Port West
+difficulty 1
 region pupland
 width 32
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 00:14:36 1996
+Created:  1996-02-29
 endmsg
 end
 arch sea
@@ -1471,7 +1470,6 @@ endmsg
 x 10
 y 9
 connected 1
-protected 1
 end
 arch pstone_1
 x 10
@@ -1660,7 +1658,6 @@ arch igateTrg2
 x 11
 y 9
 connected 1
-protected 1
 end
 arch grass
 x 11
@@ -1854,7 +1851,6 @@ endmsg
 x 12
 y 9
 connected 1
-protected 1
 end
 arch pstone_1
 x 12

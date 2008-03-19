@@ -1,12 +1,11 @@
 arch map
-name <unnamed>
+name Eureca Road
+difficulty 1
 region pupland
 width 39
 height 39
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr  3 11:40:56 1996
+Created:  1996-02-03
 endmsg
 end
 arch blocked
@@ -1870,6 +1869,7 @@ hp 100
 x 10
 y 29
 type 0
+move_type walk
 monster 1
 friendly 1
 end

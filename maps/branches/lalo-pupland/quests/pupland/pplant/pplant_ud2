@@ -1,13 +1,11 @@
 arch map
-name pplant_ud2
+name Power Plant
 difficulty 5
 region pupland
 width 20
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb  6 01:15:33 1996
+Created:  1996-02-06
 endmsg
 end
 arch blocked
@@ -570,15 +568,13 @@ connected 1
 end
 arch magic_mouth
 msg
-The cave chief appears to be a
-gnome of the tougher kind!
+The cave chief appears to be a gnome of the tougher kind!
 endmsg
 food 1
 x 6
 y 4
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch pedestal
 x 6
@@ -596,10 +592,12 @@ end
 arch pstone_1
 x 6
 y 6
+smoothlevel 0
 end
 arch pstone_1
 x 6
 y 7
+smoothlevel 1
 end
 arch pstone_1
 x 6
@@ -609,7 +607,7 @@ arch pstone_1
 x 6
 y 9
 end
-arch biglake_nw
+arch sea_nw
 x 6
 y 9
 end
@@ -699,7 +697,8 @@ end
 arch sea
 x 7
 y 6
-no_pass 0
+smoothlevel 0
+move_block 0
 end
 arch pier_2_1_2
 x 7
@@ -708,6 +707,7 @@ end
 arch sea
 x 7
 y 7
+smoothlevel 1
 end
 arch sea
 x 7
@@ -788,7 +788,7 @@ arch pstone_1
 x 8
 y 4
 end
-arch biglake_nw
+arch sea_nw
 x 8
 y 4
 end
@@ -825,7 +825,7 @@ arch pstone_1
 x 8
 y 11
 end
-arch biglake_sew
+arch sea_sew
 x 8
 y 11
 end
@@ -885,7 +885,7 @@ arch pstone_1
 x 9
 y 3
 end
-arch biglake_nw
+arch sea_nw
 x 9
 y 3
 end
@@ -1173,8 +1173,7 @@ arch pstone_1
 x 12
 y 10
 end
-arch biglake_se
-name sea
+arch sea_se
 x 12
 y 10
 end
@@ -1311,8 +1310,7 @@ arch pstone_1
 x 14
 y 6
 end
-arch biglake_ne
-name sea
+arch sea_ne
 x 14
 y 6
 end
@@ -1328,8 +1326,7 @@ arch pstone_1
 x 14
 y 9
 end
-arch biglake_se
-name sea
+arch sea_se
 x 14
 y 9
 end
@@ -1388,8 +1385,7 @@ arch pstone_1
 x 15
 y 4
 end
-arch biglake_sw
-name sea
+arch sea_sw
 x 15
 y 4
 end
@@ -1405,8 +1401,7 @@ arch pstone_1
 x 15
 y 6
 end
-arch biglake_nw
-name sea
+arch sea_nw
 x 15
 y 6
 end
@@ -1666,7 +1661,7 @@ arch pstone_1
 x 18
 y 8
 end
-arch biglake_se
+arch sea_se
 x 18
 y 8
 end

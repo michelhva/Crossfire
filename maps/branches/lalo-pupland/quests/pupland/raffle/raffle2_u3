@@ -1,14 +1,14 @@
 arch map
-name raffle2_u3
+name Raffle 2
 swap_time 5
 reset_timeout 3600
+difficulty 1
 region pupland
 width 25
 height 32
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr  1 19:24:57 1997
+Created:  1997-02-01
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2534,10 +2534,12 @@ arch rod_heavy
 name Rod of Fire Ball
 hp 60
 maxhp 60
-sp 3
 x 9
 y 7
 level 3
+randomitems none
+arch spell_large_fireball
+end
 end
 arch small_stones
 x 9

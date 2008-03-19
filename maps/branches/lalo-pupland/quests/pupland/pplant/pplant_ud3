@@ -1,11 +1,12 @@
 arch map
-name pplant_ud3
+name Power Plant
+difficulty 1
 region pupland
 width 11
 height 15
 msg
-Creator: CF Java Map Editor
-Date:    2/5/2002
+Created:  2002-02-05
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -117,6 +118,8 @@ x 1
 y 5
 speed -1.0000
 level 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -163,6 +166,8 @@ x 1
 y 13
 speed -1.0000
 level 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 1
@@ -517,8 +522,7 @@ food 1
 x 5
 y 9
 connected 1
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch pedestal
 x 5
@@ -851,8 +855,7 @@ food 1
 x 9
 y 2
 connected 2
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch teleporter
 hp 5
@@ -900,6 +903,8 @@ x 9
 y 5
 speed -1.0000
 level 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 9
@@ -946,6 +951,8 @@ x 9
 y 13
 speed -1.0000
 level 10
+arch spell_sm_lightning
+end
 end
 arch dungeon_floor
 x 9

@@ -1,12 +1,11 @@
 arch map
-name house
+name House
+difficulty 1
 region pupland
 width 17
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr  2 17:07:53 1996
+Created:  1996-02-02
 endmsg
 end
 arch blocked
@@ -804,7 +803,7 @@ arch wall_2_1_2
 x 8
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 8
 y 1
 resist_physical 30
@@ -833,7 +832,7 @@ end
 arch magic_mouth
 msg
 This teleporter accepts only
-scolars of Kurte!
+scholars of Kurte!
 endmsg
 x 8
 y 2
@@ -907,7 +906,7 @@ end
 arch magic_mouth
 msg
 Step on this teleporter if you want
-to become a scolar of Kurte. Prepare
+to become a scholar of Kurte. Prepare
 for a series of discerning tests.
 endmsg
 x 8

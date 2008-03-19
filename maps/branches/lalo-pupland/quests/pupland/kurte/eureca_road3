@@ -1,12 +1,11 @@
 arch map
-name eureca_road3
+name Eureca Road
+difficulty 1
 region pupland
 width 39
 height 39
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Apr  3 11:40:56 1996
+Created:  1996-02-03
 endmsg
 end
 arch blocked
@@ -2430,6 +2429,7 @@ hp 100
 x 10
 y 31
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -5968,7 +5968,7 @@ arch magic_mouth
 msg
 To find Eureca,
 the spy of regular army ... to the
-underground of headquater of
+underground of headquarter of
 liberation army
 endmsg
 x 23
@@ -6244,6 +6244,7 @@ hp 100
 x 24
 y 24
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -8925,10 +8926,10 @@ x 34
 y 29
 end
 arch marker
-slaying scolar of kurte
+slaying scholar of kurte
 msg
 Congratulations, you passed the test!
-You are now a scolar of Kurte.
+You are now a scholar of Kurte.
 endmsg
 hp 1
 food 0
@@ -9338,10 +9339,10 @@ x 36
 y 30
 end
 arch marker
-slaying scolar of kurte
+slaying scholar of kurte
 msg
 Congratulations, you passed the test!
-You are now a scolar of Kurte.
+You are now a scholar of Kurte.
 endmsg
 hp 1
 food 0
@@ -9543,12 +9544,12 @@ Kurte is the beginning and the end.
 He is part of the land, and the
 land is *him*. The real question is:
 Who are you?
-@match scolar
-Yes, you are a now scolar of kurte.
+@match scholar
+Yes, you are a now scholar of kurte.
 <clap>, <clap>, <clap>...
 @match *
 For being so honest <chuckle>.. you
-are a scolar of Kurte. You should
+are a scholar of Kurte. You should
 buy an apartment and live in Nurnberg
 now!
 endmsg
@@ -9563,7 +9564,7 @@ x 37
 y 30
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 37
 y 31
 resist_physical 30

@@ -1,12 +1,12 @@
 arch map
-name cave5
+name Cave Weapon
+difficulty 1
 region pupland
 width 18
 height 27
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb  8 07:18:34 1996
+Created:  1996-02-08
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -1455,10 +1455,10 @@ y 3
 speed 1.200000
 attack_movement 3
 level 50
+resist_cold -100
 carrying 12000
 unaggressive 1
 run_away 0
-vulnerable 16
 arch sting
 name Kobold Dagger
 dam 6
@@ -2215,6 +2215,8 @@ end
 arch lightningwall_7
 x 16
 y 20
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 16

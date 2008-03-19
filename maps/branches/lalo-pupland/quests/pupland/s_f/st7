@@ -1,12 +1,11 @@
 arch map
-name st7
+name Shining Tower
+difficulty 1
 region pupland
 width 17
 height 13
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 12 18:16:09 1996
+Created:  1996-02-12
 endmsg
 end
 arch blocked
@@ -552,18 +551,6 @@ x 6
 y 6
 connected 11
 end
-arch altar
-slaying golden axe
-msg
-Which axe did you drop, gold or
-iron?
-endmsg
-food 1
-x 6
-y 6
-invisible 1
-connected 10
-end
 arch magic_ear
 msg
 @match iron|Iron
@@ -582,6 +569,18 @@ name fountain
 x 6
 y 6
 no_pass 0
+end
+arch altar
+slaying golden axe
+msg
+Which axe did you drop, gold or
+iron?
+endmsg
+food 1
+x 6
+y 6
+invisible 1
+connected 10
 end
 arch button_plate
 x 6
@@ -993,9 +992,9 @@ name Yoroi of Banzai
 ac 4
 x 11
 y 6
+resist_death 100
 value 100000
 weight 5000
-armour 131072
 end
 arch flagstone
 x 11

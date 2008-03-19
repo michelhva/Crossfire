@@ -1,12 +1,11 @@
 arch map
-name port_e
+name Port East
+difficulty 1
 region pupland
 width 32
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 00:35:14 1996
+Created:  1996-02-29
 endmsg
 end
 arch sea
@@ -1105,7 +1104,7 @@ no_pass 0
 end
 arch s_ship
 name To Nurnberg
-slaying /nurnberg/city
+slaying nurnberg/city
 hp 1
 sp 26
 x 14

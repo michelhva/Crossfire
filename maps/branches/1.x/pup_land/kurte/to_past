@@ -5,7 +5,7 @@ region pupland
 width 15
 height 33
 msg
-Created:  2000-10-02
+Created:  2000-02-02
 endmsg
 end
 arch dungeon_magic
@@ -598,12 +598,9 @@ arch yellow_0
 x 2
 y 5
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 2
 y 5
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -619,13 +616,6 @@ arch yellow_0
 x 2
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 2
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 2
 y 7
@@ -633,13 +623,6 @@ end
 arch yellow_0
 x 2
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 2
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -765,12 +748,9 @@ arch yellow_0
 x 2
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 2
 y 23
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -780,13 +760,6 @@ arch yellow_0
 x 2
 y 24
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 2
-y 24
-is_floor 0
-end
 arch dungeon_magic
 x 2
 y 25
@@ -794,13 +767,6 @@ end
 arch yellow_0
 x 2
 y 25
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 2
-y 25
-is_floor 0
 end
 arch dungeon_magic
 x 2
@@ -917,13 +883,6 @@ arch yellow_0
 x 3
 y 5
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 3
-y 5
-is_floor 0
-end
 arch dungeon_magic
 x 3
 y 6
@@ -938,13 +897,6 @@ arch yellow_0
 x 3
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.122
-x 3
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 3
 y 7
@@ -958,13 +910,6 @@ end
 arch yellow_0
 x 3
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 3
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 3
@@ -1105,13 +1050,6 @@ arch yellow_0
 x 3
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 3
-y 23
-is_floor 0
-end
 arch dungeon_magic
 x 3
 y 24
@@ -1119,13 +1057,6 @@ end
 arch yellow_0
 x 3
 y 24
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 3
-y 24
-is_floor 0
 end
 arch creator
 x 3
@@ -1148,13 +1079,6 @@ arch yellow_0
 x 3
 y 25
 end
-arch flagstone
-name pentagram
-face pentagram.132
-x 3
-y 25
-is_floor 0
-end
 arch dungeon_magic
 x 3
 y 26
@@ -1263,13 +1187,6 @@ end
 arch yellow_0
 x 4
 y 5
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 4
-y 5
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1285,13 +1202,6 @@ arch yellow_0
 x 4
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 4
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 4
 y 7
@@ -1299,13 +1209,6 @@ end
 arch yellow_0
 x 4
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 4
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1331,12 +1234,9 @@ arch yellow_0
 x 4
 y 10
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 4
 y 10
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1352,13 +1252,6 @@ arch yellow_0
 x 4
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 4
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 4
 y 12
@@ -1366,13 +1259,6 @@ end
 arch yellow_0
 x 4
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 4
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1485,13 +1371,6 @@ arch yellow_0
 x 4
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 4
-y 23
-is_floor 0
-end
 arch dungeon_magic
 x 4
 y 24
@@ -1500,13 +1379,6 @@ arch yellow_0
 x 4
 y 24
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 4
-y 24
-is_floor 0
-end
 arch dungeon_magic
 x 4
 y 25
@@ -1514,13 +1386,6 @@ end
 arch yellow_0
 x 4
 y 25
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 4
-y 25
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1546,12 +1411,9 @@ arch yellow_0
 x 4
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 4
 y 28
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1561,13 +1423,6 @@ arch yellow_0
 x 4
 y 29
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 4
-y 29
-is_floor 0
-end
 arch dungeon_magic
 x 4
 y 30
@@ -1575,13 +1430,6 @@ end
 arch yellow_0
 x 4
 y 30
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 4
-y 30
-is_floor 0
 end
 arch dungeon_magic
 x 4
@@ -1698,13 +1546,6 @@ arch yellow_0
 x 5
 y 10
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 5
-y 10
-is_floor 0
-end
 arch dungeon_magic
 x 5
 y 11
@@ -1719,13 +1560,6 @@ arch yellow_0
 x 5
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.122
-x 5
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 5
 y 12
@@ -1739,13 +1573,6 @@ end
 arch yellow_0
 x 5
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 5
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 5
@@ -1898,13 +1725,6 @@ arch yellow_0
 x 5
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 5
-y 28
-is_floor 0
-end
 arch dungeon_magic
 x 5
 y 29
@@ -1912,13 +1732,6 @@ end
 arch yellow_0
 x 5
 y 29
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 5
-y 29
-is_floor 0
 end
 arch creator
 x 5
@@ -1941,13 +1754,6 @@ arch yellow_0
 x 5
 y 30
 end
-arch flagstone
-name pentagram
-face pentagram.132
-x 5
-y 30
-is_floor 0
-end
 arch dungeon_magic
 x 5
 y 31
@@ -1993,12 +1799,9 @@ arch yellow_0
 x 6
 y 2
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 6
 y 2
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2014,13 +1817,6 @@ arch yellow_0
 x 6
 y 3
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 6
-y 3
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 4
@@ -2028,13 +1824,6 @@ end
 arch yellow_0
 x 6
 y 4
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 6
-y 4
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2091,13 +1880,6 @@ arch yellow_0
 x 6
 y 10
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 6
-y 10
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 11
@@ -2112,13 +1894,6 @@ arch yellow_0
 x 6
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 6
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 12
@@ -2126,13 +1901,6 @@ end
 arch yellow_0
 x 6
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 6
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2221,12 +1989,9 @@ arch yellow_0
 x 6
 y 20
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 6
 y 20
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2236,13 +2001,6 @@ arch yellow_0
 x 6
 y 21
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 6
-y 21
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 22
@@ -2250,13 +2008,6 @@ end
 arch yellow_0
 x 6
 y 22
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 6
-y 22
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2313,13 +2064,6 @@ arch yellow_0
 x 6
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 6
-y 28
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 29
@@ -2328,13 +2072,6 @@ arch yellow_0
 x 6
 y 29
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 6
-y 29
-is_floor 0
-end
 arch dungeon_magic
 x 6
 y 30
@@ -2342,13 +2079,6 @@ end
 arch yellow_0
 x 6
 y 30
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 6
-y 30
-is_floor 0
 end
 arch dungeon_magic
 x 6
@@ -2401,13 +2131,6 @@ arch yellow_0
 x 7
 y 2
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 7
-y 2
-is_floor 0
-end
 arch dungeon_magic
 x 7
 y 3
@@ -2422,13 +2145,6 @@ arch yellow_0
 x 7
 y 3
 end
-arch flagstone
-name pentagram
-face pentagram.122
-x 7
-y 3
-is_floor 0
-end
 arch dungeon_magic
 x 7
 y 4
@@ -2442,13 +2158,6 @@ end
 arch yellow_0
 x 7
 y 4
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 7
-y 4
-is_floor 0
 end
 arch dungeon_magic
 x 7
@@ -2634,13 +2343,6 @@ arch yellow_0
 x 7
 y 20
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 7
-y 20
-is_floor 0
-end
 arch dungeon_magic
 x 7
 y 21
@@ -2648,13 +2350,6 @@ end
 arch yellow_0
 x 7
 y 21
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 7
-y 21
-is_floor 0
 end
 arch creator
 x 7
@@ -2676,13 +2371,6 @@ end
 arch yellow_0
 x 7
 y 22
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 7
-y 22
-is_floor 0
 end
 arch dungeon_magic
 x 7
@@ -2803,13 +2491,6 @@ arch yellow_0
 x 8
 y 2
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 8
-y 2
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 3
@@ -2824,13 +2505,6 @@ arch yellow_0
 x 8
 y 3
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 8
-y 3
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 4
@@ -2838,13 +2512,6 @@ end
 arch yellow_0
 x 8
 y 4
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 8
-y 4
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -2901,12 +2568,9 @@ arch yellow_0
 x 8
 y 10
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 8
 y 10
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -2922,13 +2586,6 @@ arch yellow_0
 x 8
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 8
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 12
@@ -2936,13 +2593,6 @@ end
 arch yellow_0
 x 8
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 8
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -3031,13 +2681,6 @@ arch yellow_0
 x 8
 y 20
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 8
-y 20
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 21
@@ -3046,13 +2689,6 @@ arch yellow_0
 x 8
 y 21
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 8
-y 21
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 22
@@ -3060,13 +2696,6 @@ end
 arch yellow_0
 x 8
 y 22
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 8
-y 22
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -3123,12 +2752,9 @@ arch yellow_0
 x 8
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 8
 y 28
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -3138,13 +2764,6 @@ arch yellow_0
 x 8
 y 29
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 8
-y 29
-is_floor 0
-end
 arch dungeon_magic
 x 8
 y 30
@@ -3152,13 +2771,6 @@ end
 arch yellow_0
 x 8
 y 30
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 8
-y 30
-is_floor 0
 end
 arch dungeon_magic
 x 8
@@ -3275,13 +2887,6 @@ arch yellow_0
 x 9
 y 10
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 9
-y 10
-is_floor 0
-end
 arch dungeon_magic
 x 9
 y 11
@@ -3296,13 +2901,6 @@ arch yellow_0
 x 9
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.122
-x 9
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 9
 y 12
@@ -3316,13 +2914,6 @@ end
 arch yellow_0
 x 9
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 9
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 9
@@ -3463,13 +3054,6 @@ arch yellow_0
 x 9
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 9
-y 28
-is_floor 0
-end
 arch dungeon_magic
 x 9
 y 29
@@ -3477,13 +3061,6 @@ end
 arch yellow_0
 x 9
 y 29
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 9
-y 29
-is_floor 0
 end
 arch creator
 x 9
@@ -3506,13 +3083,6 @@ arch yellow_0
 x 9
 y 30
 end
-arch flagstone
-name pentagram
-face pentagram.132
-x 9
-y 30
-is_floor 0
-end
 arch dungeon_magic
 x 9
 y 31
@@ -3582,12 +3152,9 @@ arch yellow_0
 x 10
 y 5
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 10
 y 5
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3603,13 +3170,6 @@ arch yellow_0
 x 10
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 10
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 10
 y 7
@@ -3617,13 +3177,6 @@ end
 arch yellow_0
 x 10
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 10
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3648,13 +3201,6 @@ end
 arch yellow_0
 x 10
 y 10
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 10
-y 10
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3670,13 +3216,6 @@ arch yellow_0
 x 10
 y 11
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 10
-y 11
-is_floor 0
-end
 arch dungeon_magic
 x 10
 y 12
@@ -3684,13 +3223,6 @@ end
 arch yellow_0
 x 10
 y 12
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 10
-y 12
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3776,12 +3308,9 @@ arch yellow_0
 x 10
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.111
+arch pentagram_111
 x 10
 y 23
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3791,13 +3320,6 @@ arch yellow_0
 x 10
 y 24
 end
-arch flagstone
-name pentagram
-face pentagram.121
-x 10
-y 24
-is_floor 0
-end
 arch dungeon_magic
 x 10
 y 25
@@ -3805,13 +3327,6 @@ end
 arch yellow_0
 x 10
 y 25
-end
-arch flagstone
-name pentagram
-face pentagram.131
-x 10
-y 25
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3837,13 +3352,6 @@ arch yellow_0
 x 10
 y 28
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 10
-y 28
-is_floor 0
-end
 arch dungeon_magic
 x 10
 y 29
@@ -3852,13 +3360,6 @@ arch yellow_0
 x 10
 y 29
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 10
-y 29
-is_floor 0
-end
 arch dungeon_magic
 x 10
 y 30
@@ -3866,13 +3367,6 @@ end
 arch yellow_0
 x 10
 y 30
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 10
-y 30
-is_floor 0
 end
 arch dungeon_magic
 x 10
@@ -3949,13 +3443,6 @@ arch yellow_0
 x 11
 y 5
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 11
-y 5
-is_floor 0
-end
 arch dungeon_magic
 x 11
 y 6
@@ -3970,13 +3457,6 @@ arch yellow_0
 x 11
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.122
-x 11
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 11
 y 7
@@ -3990,13 +3470,6 @@ end
 arch yellow_0
 x 11
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.132
-x 11
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 11
@@ -4122,13 +3595,6 @@ arch yellow_0
 x 11
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.112
-x 11
-y 23
-is_floor 0
-end
 arch dungeon_magic
 x 11
 y 24
@@ -4136,13 +3602,6 @@ end
 arch yellow_0
 x 11
 y 24
-end
-arch flagstone
-name pentagram
-face pentagram.122
-x 11
-y 24
-is_floor 0
 end
 arch creator
 x 11
@@ -4165,13 +3624,6 @@ arch yellow_0
 x 11
 y 25
 end
-arch flagstone
-name pentagram
-face pentagram.132
-x 11
-y 25
-is_floor 0
-end
 arch dungeon_magic
 x 11
 y 26
@@ -4280,13 +3732,6 @@ end
 arch yellow_0
 x 12
 y 5
-end
-arch flagstone
-name pentagram
-face pentagram.113
-x 12
-y 5
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4302,13 +3747,6 @@ arch yellow_0
 x 12
 y 6
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 12
-y 6
-is_floor 0
-end
 arch dungeon_magic
 x 12
 y 7
@@ -4316,13 +3754,6 @@ end
 arch yellow_0
 x 12
 y 7
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 12
-y 7
-is_floor 0
 end
 arch dungeon_magic
 x 12
@@ -4448,13 +3879,6 @@ arch yellow_0
 x 12
 y 23
 end
-arch flagstone
-name pentagram
-face pentagram.113
-x 12
-y 23
-is_floor 0
-end
 arch dungeon_magic
 x 12
 y 24
@@ -4463,13 +3887,6 @@ arch yellow_0
 x 12
 y 24
 end
-arch flagstone
-name pentagram
-face pentagram.123
-x 12
-y 24
-is_floor 0
-end
 arch dungeon_magic
 x 12
 y 25
@@ -4477,13 +3894,6 @@ end
 arch yellow_0
 x 12
 y 25
-end
-arch flagstone
-name pentagram
-face pentagram.133
-x 12
-y 25
-is_floor 0
 end
 arch dungeon_magic
 x 12

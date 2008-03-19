@@ -1,12 +1,11 @@
 arch map
-name st6
+name Shining Tower
+difficulty 1
 region pupland
 width 21
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 12 17:23:03 1996
+Created:  1996-02-12
 endmsg
 end
 arch blocked
@@ -640,7 +639,6 @@ arch grate_closed_2
 x 5
 y 6
 connected 3
-protected 3
 end
 arch flagstone
 x 5
@@ -650,7 +648,6 @@ arch grate_closed_2
 x 5
 y 7
 connected 3
-protected 3
 end
 arch flagstone
 x 5
@@ -660,7 +657,6 @@ arch grate_closed_2
 x 5
 y 8
 connected 3
-protected 3
 end
 arch flagstone
 x 5
@@ -670,7 +666,6 @@ arch grate_closed_2
 x 5
 y 9
 connected 3
-protected 3
 end
 arch flagstone
 x 5
@@ -802,7 +797,6 @@ arch grate_closed_1
 x 6
 y 10
 connected 2
-protected 2
 end
 arch flagstone
 x 6
@@ -926,7 +920,6 @@ arch grate_closed_1
 x 7
 y 10
 connected 2
-protected 2
 end
 arch flagstone
 x 7
@@ -1052,7 +1045,6 @@ arch button_handle
 x 8
 y 7
 connected 1
-protected 1
 end
 arch flagstone
 x 8
@@ -1080,7 +1072,6 @@ arch grate_closed_1
 x 8
 y 10
 connected 2
-protected 2
 end
 arch flagstone
 x 8
@@ -1205,7 +1196,6 @@ arch grate_closed_1
 x 9
 y 10
 connected 2
-protected 2
 end
 arch flagstone
 x 9
@@ -1329,7 +1319,6 @@ arch grate_closed_1
 x 10
 y 10
 connected 2
-protected 2
 end
 arch flagstone
 x 10
@@ -1441,7 +1430,6 @@ arch grate_closed_2
 x 11
 y 6
 connected 4
-protected 4
 end
 arch flagstone
 x 11
@@ -1451,7 +1439,6 @@ arch grate_closed_2
 x 11
 y 7
 connected 4
-protected 4
 end
 arch flagstone
 x 11
@@ -1461,7 +1448,6 @@ arch grate_closed_2
 x 11
 y 8
 connected 4
-protected 4
 end
 arch flagstone
 x 11
@@ -1471,7 +1457,6 @@ arch grate_closed_2
 x 11
 y 9
 connected 4
-protected 4
 end
 arch flagstone
 x 11
@@ -2282,7 +2267,6 @@ arch button_small
 x 18
 y 9
 connected 3
-protected 3
 end
 arch blocked
 x 18
@@ -2333,7 +2317,6 @@ sp 9
 x 19
 y 4
 connected 1
-protected 1
 end
 arch key2
 x 19
@@ -2355,19 +2338,16 @@ arch button_small
 x 19
 y 8
 connected 2
-protected 2
 end
 arch button_small
 x 19
 y 9
 connected 5
-protected 5
 end
 arch button_small
 x 19
 y 10
 connected 4
-protected 4
 end
 arch blocked
 x 19
@@ -2387,7 +2367,6 @@ sp 3
 x 19
 y 14
 connected 5
-protected 5
 end
 arch note
 msg

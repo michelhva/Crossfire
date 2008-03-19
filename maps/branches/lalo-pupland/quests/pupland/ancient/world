@@ -1,14 +1,14 @@
 arch map
-name world
+name World
+difficulty 1
 region ancientpupland
 width 38
 height 37
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Jan 25 20:16:45 1996
+Created:  1996-02-25
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch sea
@@ -388,6 +388,8 @@ exp 1000
 x 2
 y 22
 is_floor 1
+arch spell_magic_bullet
+end
 end
 arch volcano_low
 slaying volcano/volcano.1
@@ -2915,12 +2917,10 @@ arch sea1
 x 17
 y 18
 end
-arch pillars
+arch s_tower2_top
 name flooded tower
-face s_tower2.111
 x 17
 y 18
-no_pass 1
 end
 arch sea
 x 17
@@ -3735,7 +3735,6 @@ y 27
 weight 4000000
 invisible 1
 connected 1
-protected 1
 end
 arch grass
 x 22

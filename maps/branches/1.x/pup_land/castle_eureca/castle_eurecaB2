@@ -5,7 +5,7 @@ region pupland
 width 27
 height 41
 msg
-Created:  1996-01-29
+Created:  1996-02-29
 endmsg
 end
 arch pstone_1
@@ -2786,6 +2786,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3136,6 +3137,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3490,6 +3492,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3828,6 +3831,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -4182,6 +4186,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -4532,6 +4537,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -4882,6 +4888,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -7197,12 +7204,12 @@ arch dragon_mail
 ac 5
 x 22
 y 21
+resist_physical 45
 value 1000
 weight 5000
 magic -3
 identified 0
 cursed 1
-armour 45
 end
 arch blocked
 x 22

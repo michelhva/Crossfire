@@ -5,9 +5,7 @@ region ancientpupland
 width 22
 height 9
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  1 20:56:12 1996
+Created:  1996-06-01
 endmsg
 end
 arch blocked
@@ -278,7 +276,6 @@ arch button_small
 x 5
 weight 10
 connected 3
-protected 3
 end
 arch blocked
 x 5
@@ -342,7 +339,6 @@ x 5
 y 8
 weight 1000
 connected 2
-protected 2
 end
 arch creator
 name 1
@@ -350,7 +346,6 @@ other_arch boulder
 x 5
 y 8
 connected 1
-protected 1
 end
 arch blocked
 x 6
@@ -388,7 +383,6 @@ name 1
 x 6
 y 4
 connected 1
-protected 1
 end
 arch large_stones
 x 6
@@ -478,7 +472,6 @@ invisible 1
 connected 3
 no_magic 1
 damned 1
-protected 3
 end
 arch unholy_ground
 x 7
@@ -523,7 +516,6 @@ y 8
 speed 0.500000
 value 1
 connected 2
-protected 2
 end
 arch scroll_2
 x 7
@@ -568,7 +560,6 @@ x 8
 y 4
 invisible 1
 connected 3
-protected 3
 end
 arch pstone_2
 x 8
@@ -600,7 +591,6 @@ x 8
 y 8
 weight 2000
 connected 4
-protected 4
 end
 arch blocked
 x 9
@@ -631,7 +621,6 @@ other_arch mover_7
 x 9
 y 4
 connected 2
-protected 2
 end
 arch pstone_2
 x 9
@@ -714,7 +703,6 @@ name handle
 x 10
 y 4
 connected 4
-protected 4
 end
 arch pstone_2
 x 10
@@ -948,7 +936,6 @@ y 3
 speed 0.500000
 speed_left -9.100000
 connected 4
-protected 4
 end
 arch large_stones
 x 13
@@ -964,7 +951,6 @@ y 4
 speed 0.500000
 speed_left -9.100000
 connected 4
-protected 4
 end
 arch large_stones
 x 13
@@ -980,7 +966,6 @@ y 5
 speed 0.500000
 speed_left -9.100000
 connected 4
-protected 4
 end
 arch large_stones
 x 13
@@ -1045,7 +1030,6 @@ name 1
 x 14
 y 3
 connected 1
-protected 1
 end
 arch large_stones
 x 14
@@ -1068,16 +1052,13 @@ endmsg
 x 14
 y 4
 connected 2
-walk_on 0
-fly_on 0
-protected 2
+move_on 0
 end
 arch pedestal
 name 1
 x 14
 y 4
 connected 1
-protected 1
 end
 arch large_stones
 x 14
@@ -1092,7 +1073,6 @@ name 1
 x 14
 y 5
 connected 1
-protected 1
 end
 arch large_stones
 x 14

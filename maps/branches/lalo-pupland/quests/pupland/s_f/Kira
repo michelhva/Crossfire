@@ -1,12 +1,12 @@
 arch map
 name Kira
+difficulty 1
 region pupland
 width 14
 height 11
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 02:31:17 1996
+Created:  1996-02-10
+Modified: 2007-12-13 Kevin Bulgrien
 endmsg
 end
 arch grass
@@ -190,14 +190,12 @@ arch woman2
 name Kira
 msg
 @match griffin
-Do you know Jake Griffin? He used to
-be a great military officer. Now he
-lives in the next house. He knows
-stories about old treasures. If you're
-seeking adventures you must visit him.
+Do you know Jake Griffin?
+He used to be a great military officer.  Now he lives in the house next door.
+If you're seeking adventure, you must visit him.  He knows stories about old treasures.
 @match hi|hello
-Hello! Are you hungry? There's some
-food in the other room.
+Hello! Are you hungry?
+There's some food in the other room.
 @match *
 Welcome to my house.
 endmsg
