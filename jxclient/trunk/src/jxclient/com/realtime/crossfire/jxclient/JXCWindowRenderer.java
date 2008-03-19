@@ -46,7 +46,7 @@ public class JXCWindowRenderer
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
-    private final Object redrawSemanphore;
+    private final Object redrawSemaphore;
 
     private BufferStrategy bufferStrategy;
 
@@ -126,10 +126,10 @@ public class JXCWindowRenderer
      * @param redrawSemaphore The semaphore used to synchronized map model
      * updates and map view redraws.
      */
-    public JXCWindowRenderer(final JXCWindow jxcWindow, final Object redrawSemanphore)
+    public JXCWindowRenderer(final JXCWindow jxcWindow, final Object redrawSemaphore)
     {
         this.jxcWindow = jxcWindow;
-        this.redrawSemanphore = redrawSemanphore;
+        this.redrawSemaphore = redrawSemaphore;
         currentGui = new Gui(jxcWindow);
     }
 
@@ -262,7 +262,7 @@ public class JXCWindowRenderer
                 {
                     redrawBlack(g);
                 }
-                synchronized(redrawSemanphore)
+                synchronized(redrawSemaphore)
                 {
                     redrawGUIBasic(g);
                     redrawGUIDialog(g);
