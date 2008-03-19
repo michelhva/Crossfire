@@ -44,19 +44,19 @@ public class MessageBufferUpdater
      */
     private final Map<Integer, Color> colors = new HashMap<Integer, Color>();
     {
-        colors.put(0, Color.BLACK); //black
-        colors.put(1, Color.WHITE); //white
-        colors.put(2, Color.BLUE); //navy blue
-        colors.put(3, Color.RED); //red
-        colors.put(4, Color.ORANGE); //orange
-        colors.put(5, Color.CYAN); //dodger blue
-        colors.put(6, new Color(0xFFC000)); //dark orange
-        colors.put(7, Color.GREEN); //sea green
-        colors.put(8, new Color(0x008000)); //dark sea green
-        colors.put(9, Color.GRAY); //grey
-        colors.put(10, new Color(0x806000)); //brown sienna
-        colors.put(11, Color.YELLOW); //gold
-        colors.put(12, new Color(0xBDB76B)); //khaki
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_BLACK, Color.BLACK); //black
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_WHITE, Color.WHITE); //white
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_NAVY, Color.BLUE); //navy blue
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_RED, Color.RED); //red
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_ORANGE, Color.ORANGE); //orange
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_BLUE, Color.CYAN); //dodger blue
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_DK_ORANGE, new Color(0xFFC000)); //dark orange
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_GREEN, Color.GREEN); //sea green
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_LT_GREEN, new Color(0x008000)); //dark sea green
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_GREY, Color.GRAY); //grey
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_BROWN, new Color(0x806000)); //brown sienna
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_GOLD, Color.YELLOW); //gold
+        colors.put(CrossfireCommandDrawinfoEvent.NDI_TAN, new Color(0xBDB76B)); //khaki
     }
 
     /**
@@ -120,7 +120,23 @@ public class MessageBufferUpdater
         /** {@inheritDoc} */
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
-            if (isTypeShown(MessageTypes.MSG_TYPE_MISC))
+            // guess category from message color
+            final int type;
+            switch(evt.getTextType())
+            {
+            case CrossfireCommandDrawinfoEvent.NDI_WHITE:
+            case CrossfireCommandDrawinfoEvent.NDI_ORANGE:
+            case CrossfireCommandDrawinfoEvent.NDI_BLUE:
+            case CrossfireCommandDrawinfoEvent.NDI_RED:
+                type = MessageTypes.MSG_TYPE_COMMUNICATION;
+                break;
+
+            default:
+                type = MessageTypes.MSG_TYPE_MISC;
+                break;
+            }
+
+            if (isTypeShown(type))
             {
                 parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
             }
