@@ -183,7 +183,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
-    private final Object redrawSemanphore;
+    private final Object redrawSemaphore;
 
     /** The global experience table. */
     private final ExperienceTable experienceTable;
@@ -215,9 +215,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      */
-    public CrossfireServerConnection(final Object redrawSemanphore, final ExperienceTable experienceTable, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Appendable debugProtocol)
     {
-        this.redrawSemanphore = redrawSemanphore;
+        this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
@@ -1522,7 +1522,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private void cmd_map2(final byte[] packet, int pos, int end) throws UnknownCommandException
     {
-        synchronized (redrawSemanphore)
+        synchronized (redrawSemaphore)
         {
             CfMapUpdater.processMapBegin();
             if (debugProtocol != null)
