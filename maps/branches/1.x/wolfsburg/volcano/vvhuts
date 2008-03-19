@@ -367,17 +367,19 @@ end
 arch wwall_2_1_2
 x 2
 end
+arch woodfloor
+x 2
+y 1
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 4
 sp 23
 x 2
 y 1
 is_animated 0
-end
-arch woodfloor
-x 2
-y 1
 end
 arch woodfloor
 x 2
@@ -424,17 +426,19 @@ arch wwall_2_1_2
 x 2
 y 8
 end
+arch woodfloor
+x 2
+y 9
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 12
 sp 25
 x 2
 y 9
 is_animated 0
-end
-arch woodfloor
-x 2
-y 9
 end
 arch woodfloor
 x 2
@@ -476,17 +480,19 @@ arch wwall_2_1_2
 x 2
 y 16
 end
+arch woodfloor
+x 2
+y 17
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 5
 sp 22
 x 2
 y 17
 is_animated 0
-end
-arch woodfloor
-x 2
-y 17
 end
 arch woodfloor
 x 2
@@ -1639,8 +1645,14 @@ end
 arch wwall_2_1_2
 x 9
 end
+arch woodfloor
+x 9
+y 1
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 6
 sp 26
 x 9
@@ -1649,10 +1661,6 @@ is_animated 0
 end
 arch woodfloor
 x 9
-y 1
-end
-arch woodfloor
-x 9
 y 2
 end
 arch woodfloor
@@ -1695,17 +1703,19 @@ arch wwall_2_1_2
 x 9
 y 8
 end
+arch woodfloor
+x 9
+y 9
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 11
 sp 28
 x 9
 y 9
 is_animated 0
-end
-arch woodfloor
-x 9
-y 9
 end
 arch woodfloor
 x 9
@@ -1747,8 +1757,14 @@ arch wwall_2_1_2
 x 9
 y 16
 end
+arch woodfloor
+x 9
+y 17
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 19
 sp 23
 x 9
@@ -1757,10 +1773,6 @@ is_animated 0
 end
 arch woodfloor
 x 9
-y 17
-end
-arch woodfloor
-x 9
 y 18
 end
 arch woodfloor
@@ -2852,17 +2864,19 @@ end
 arch wwall_2_1_2
 x 16
 end
+arch woodfloor
+x 16
+y 1
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 8
 sp 29
 x 16
 y 1
 is_animated 0
-end
-arch woodfloor
-x 16
-y 1
 end
 arch woodfloor
 x 16
@@ -2908,8 +2922,14 @@ arch wwall_2_1_2
 x 16
 y 8
 end
+arch woodfloor
+x 16
+y 9
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 7
 sp 32
 x 16
@@ -2918,10 +2938,6 @@ is_animated 0
 end
 arch woodfloor
 x 16
-y 9
-end
-arch woodfloor
-x 16
 y 10
 end
 arch woodfloor
@@ -3396,7 +3412,7 @@ arch wwall_2_1_2
 x 18
 y 29
 end
-arch woodfloor
+arch blocked
 x 19
 end
 arch woodfloor
@@ -3730,7 +3746,7 @@ arch blocked
 x 20
 y 29
 end
-arch woodfloor
+arch blocked
 x 21
 end
 arch woodfloor
@@ -4099,8 +4115,14 @@ arch wwall_2_1_2
 x 22
 y 23
 end
+arch woodfloor
+x 22
+y 24
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 10
 sp 29
 x 22
@@ -4109,10 +4131,6 @@ is_animated 0
 end
 arch woodfloor
 x 22
-y 24
-end
-arch woodfloor
-x 22
 y 25
 end
 arch woodfloor
@@ -4153,17 +4171,19 @@ end
 arch wwall_2_1_2
 x 23
 end
+arch woodfloor
+x 23
+y 1
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 3
 sp 25
 x 23
 y 1
 is_animated 0
-end
-arch woodfloor
-x 23
-y 1
 end
 arch woodfloor
 x 23
@@ -4213,17 +4233,19 @@ arch wwall_2_1_2
 x 23
 y 8
 end
+arch woodfloor
+x 23
+y 9
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 11
 sp 22
 x 23
 y 9
 is_animated 0
-end
-arch woodfloor
-x 23
-y 9
 end
 arch woodfloor
 x 23
@@ -4269,17 +4291,19 @@ arch wwall_2_1_2
 x 23
 y 16
 end
+arch woodfloor
+x 23
+y 17
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 8
 sp 27
 x 23
 y 17
 is_animated 0
-end
-arch woodfloor
-x 23
-y 17
 end
 arch woodfloor
 x 23
@@ -5454,17 +5478,19 @@ end
 arch wwall_2_1_2
 x 30
 end
+arch woodfloor
+x 30
+y 1
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 5
 sp 30
 x 30
 y 1
 is_animated 0
-end
-arch woodfloor
-x 30
-y 1
 end
 arch woodfloor
 x 30
@@ -5506,17 +5532,19 @@ arch wwall_2_1_2
 x 30
 y 8
 end
+arch woodfloor
+x 30
+y 9
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 8
 sp 24
 x 30
 y 9
 is_animated 0
-end
-arch woodfloor
-x 30
-y 9
 end
 arch woodfloor
 x 30
@@ -5562,17 +5590,19 @@ arch wwall_2_1_2
 x 30
 y 16
 end
+arch woodfloor
+x 30
+y 17
+end
 arch exit
+name oakdoor
 slaying /world/world_129_108
+face oakdoor.111
 hp 3
 sp 28
 x 30
 y 17
 is_animated 0
-end
-arch woodfloor
-x 30
-y 17
 end
 arch woodfloor
 x 30
@@ -6026,7 +6056,7 @@ arch wwall_2_1_2
 x 32
 y 29
 end
-arch woodfloor
+arch blocked
 x 33
 end
 arch woodfloor
