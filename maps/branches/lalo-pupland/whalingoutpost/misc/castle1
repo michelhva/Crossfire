@@ -7,9 +7,7 @@ height 64
 enter_x 1
 enter_y 1
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Tue Aug  3 23:32:57 2004
+Created:  2004-08-03 Mikeeusa
 endmsg
 outdoor 1
 end
@@ -12301,10 +12299,6 @@ arch dungeon_floor
 x 31
 y 14
 end
-arch swall_1_4_half
-x 31
-y 14
-end
 arch woodwall_1_2
 x 31
 y 14
@@ -12330,10 +12324,6 @@ x 31
 y 17
 end
 arch dungeon_floor
-x 31
-y 18
-end
-arch swall_1_4_half
 x 31
 y 18
 end
@@ -12797,7 +12787,7 @@ arch dungeon_floor
 x 32
 y 14
 end
-arch swall_2_1_2
+arch swall_1_4
 x 32
 y 14
 end
@@ -12817,7 +12807,7 @@ arch dungeon_floor
 x 32
 y 18
 end
-arch swall_2_1_2
+arch swall_1_4
 x 32
 y 18
 end
@@ -18688,7 +18678,7 @@ arch dungeon_floor
 x 46
 y 14
 end
-arch swall_2_1_2
+arch swall_1_3
 x 46
 y 14
 end
@@ -18708,7 +18698,7 @@ arch dungeon_floor
 x 46
 y 18
 end
-arch swall_2_1_2
+arch swall_1_3
 x 46
 y 18
 end
@@ -19024,10 +19014,6 @@ arch woodwall_1_2
 x 47
 y 14
 end
-arch swall_1_3_half
-x 47
-y 14
-end
 arch dungeon_floor
 x 47
 y 15
@@ -19053,10 +19039,6 @@ x 47
 y 18
 end
 arch woodwall_1_1
-x 47
-y 18
-end
-arch swall_1_3_half
 x 47
 y 18
 end
