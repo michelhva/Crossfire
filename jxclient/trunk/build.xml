@@ -55,6 +55,7 @@
         <delete file="jxclient.jar" failonerror="false"/>
         <delete file="jxcskin_prelude.jar" failonerror="false"/>
         <delete file="jxcskin_ragnorok.jar" failonerror="false"/>
+        <delete dir="doc-html" failonerror="false"/>
     </target>
     <target name="all" depends="jar">
     </target>
@@ -73,5 +74,12 @@
                 <fileset dir="${src.test}" includes="**/*Test.java"/>
             </batchtest>
         </junit>
+    </target>
+    <target name="doc" description="Generate javadoc documentation.">
+        <javadoc destdir="doc-html" packagenames="com.realtime.crossfire.*" failonerror="yes" access="private" version="no" use="yes" author="no" splitindex="no" windowtitle="Jikes" nodeprecated="yes" notree="no" noindex="no" nohelp="yes" nonavbar="yes">
+            <sourcepath>
+                <pathelement path="src/jxclient"/>
+            </sourcepath>
+        </javadoc>
     </target>
 </project>
