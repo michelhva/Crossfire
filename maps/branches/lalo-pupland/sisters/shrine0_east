@@ -5,9 +5,7 @@ darkness 5
 width 33
 height 25
 msg
-Creator: bt
-Email: thomas@nomad.astro.psu.edu
-Date: Tue Jan  3 03:40:13 1995
+Created:  1995-01-03 bt (thomas@nomad.astro.psu.edu)
 endmsg
 end
 arch blocked
@@ -1009,7 +1007,7 @@ ac 0
 x 15
 y 5
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 15
@@ -1024,7 +1022,7 @@ ac 0
 x 15
 y 6
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 15
@@ -1108,7 +1106,7 @@ ac 0
 x 15
 y 18
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 15
@@ -1123,7 +1121,7 @@ ac 0
 x 15
 y 19
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch magic_mouth
 msg
@@ -1205,7 +1203,7 @@ ac 0
 x 16
 y 5
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 16
@@ -1220,7 +1218,7 @@ ac 0
 x 16
 y 6
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 16
@@ -1303,7 +1301,7 @@ ac 0
 x 16
 y 18
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 16
@@ -1318,7 +1316,7 @@ ac 0
 x 16
 y 19
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 16
@@ -1575,7 +1573,7 @@ ac 0
 x 18
 y 12
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 18
@@ -1590,7 +1588,7 @@ ac 0
 x 18
 y 13
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 18
@@ -1744,7 +1742,7 @@ ac 0
 x 19
 y 12
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 19
@@ -1759,7 +1757,7 @@ ac 0
 x 19
 y 13
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 19
@@ -2120,7 +2118,7 @@ ac 0
 x 21
 y 12
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 21
@@ -2135,7 +2133,7 @@ ac 0
 x 21
 y 13
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 21
@@ -2293,7 +2291,7 @@ ac 0
 x 22
 y 12
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 22
@@ -2308,7 +2306,7 @@ ac 0
 x 22
 y 13
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 22
@@ -2545,7 +2543,7 @@ ac 0
 x 24
 y 6
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 24
@@ -2560,7 +2558,7 @@ ac 0
 x 24
 y 7
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 24
@@ -2635,7 +2633,7 @@ ac 0
 x 24
 y 17
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 24
@@ -2650,7 +2648,7 @@ ac 0
 x 24
 y 18
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 24
@@ -2728,7 +2726,7 @@ ac 0
 x 25
 y 6
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 25
@@ -2743,7 +2741,7 @@ ac 0
 x 25
 y 7
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 25
@@ -2818,7 +2816,7 @@ ac 0
 x 25
 y 17
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch flagstone
 x 25
@@ -2833,7 +2831,7 @@ ac 0
 x 25
 y 18
 speed -0.180000
-armour 0
+resist_physical 0
 end
 arch magic_mouth
 msg
