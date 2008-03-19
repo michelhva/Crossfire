@@ -2836,6 +2836,7 @@ arch creator
 other_arch altar_gaea
 x 13
 y 3
+level 120
 connected 15
 end
 arch goldfloor
@@ -5327,7 +5328,7 @@ speed 0
 connected 50
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 24
 y 12
 no_pass 1

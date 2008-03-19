@@ -2917,12 +2917,10 @@ arch sea1
 x 17
 y 18
 end
-arch pillars
+arch s_tower2_top
 name flooded tower
-face s_tower2.111
 x 17
 y 18
-no_pass 1
 end
 arch sea
 x 17

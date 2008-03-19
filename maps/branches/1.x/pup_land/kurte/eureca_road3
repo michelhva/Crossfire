@@ -5,7 +5,7 @@ region pupland
 width 39
 height 39
 msg
-Created:  1996-04-03
+Created:  1996-02-03
 endmsg
 end
 arch blocked
@@ -2429,6 +2429,7 @@ hp 100
 x 10
 y 31
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -6243,6 +6244,7 @@ hp 100
 x 24
 y 24
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -8924,7 +8926,7 @@ x 34
 y 29
 end
 arch marker
-slaying scolar of kurte
+slaying scholar of kurte
 msg
 Congratulations, you passed the test!
 You are now a scholar of Kurte.
@@ -9337,7 +9339,7 @@ x 36
 y 30
 end
 arch marker
-slaying scolar of kurte
+slaying scholar of kurte
 msg
 Congratulations, you passed the test!
 You are now a scholar of Kurte.
@@ -9562,7 +9564,7 @@ x 37
 y 30
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 37
 y 31
 resist_physical 30

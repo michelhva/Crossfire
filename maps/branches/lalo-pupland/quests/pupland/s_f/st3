@@ -1,12 +1,11 @@
 arch map
-name st3
+name Shining Tower
+difficulty 1
 region pupland
 width 17
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 12 14:37:24 1996
+Created:  1996-02-12
 endmsg
 end
 arch blocked
@@ -254,7 +253,6 @@ x 1
 y 11
 value 1
 connected 1
-protected 1
 end
 arch kog
 x 1
@@ -600,7 +598,7 @@ y 10
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 10
 level 20
@@ -623,7 +621,7 @@ y 11
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 11
 level 20
@@ -646,7 +644,7 @@ y 12
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 12
 level 20
@@ -669,7 +667,7 @@ y 13
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 13
 level 20
@@ -692,7 +690,7 @@ y 14
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 3
 y 14
 level 20
@@ -754,7 +752,7 @@ x 4
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 3
 level 20
@@ -764,7 +762,7 @@ x 4
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 4
 level 20
@@ -774,7 +772,7 @@ x 4
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 5
 level 20
@@ -784,7 +782,7 @@ x 4
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 6
 level 20
@@ -822,7 +820,7 @@ x 4
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 4
 y 14
 level 20
@@ -884,7 +882,7 @@ x 5
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 3
 level 20
@@ -894,7 +892,7 @@ x 5
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 4
 level 20
@@ -904,7 +902,7 @@ x 5
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 5
 level 20
@@ -914,7 +912,7 @@ x 5
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 6
 level 20
@@ -952,7 +950,7 @@ x 5
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 5
 y 14
 level 20
@@ -1046,7 +1044,7 @@ x 6
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 7
 level 20
@@ -1056,7 +1054,7 @@ x 6
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 8
 level 20
@@ -1086,7 +1084,7 @@ x 6
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 6
 y 14
 level 20
@@ -1180,7 +1178,7 @@ x 7
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 7
 level 20
@@ -1190,7 +1188,7 @@ x 7
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 8
 level 20
@@ -1220,7 +1218,7 @@ x 7
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 7
 y 14
 level 20
@@ -1316,14 +1314,13 @@ arch ggate_open
 x 8
 y 6
 connected 1
-protected 1
 end
 arch flagstone
 x 8
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 7
 level 20
@@ -1333,7 +1330,7 @@ x 8
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 8
 level 20
@@ -1370,7 +1367,7 @@ x 8
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 8
 y 14
 level 20
@@ -1442,7 +1439,6 @@ arch button_handle
 x 9
 y 5
 connected 1
-protected 1
 end
 arch flagstone
 x 9
@@ -1457,7 +1453,7 @@ x 9
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 7
 level 20
@@ -1467,7 +1463,7 @@ x 9
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 8
 level 20
@@ -1497,7 +1493,7 @@ x 9
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 9
 y 14
 level 20
@@ -1591,7 +1587,7 @@ x 10
 y 7
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 7
 level 20
@@ -1601,7 +1597,7 @@ x 10
 y 8
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 8
 level 20
@@ -1631,7 +1627,7 @@ x 10
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 10
 y 14
 level 20
@@ -1693,7 +1689,7 @@ x 11
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 3
 level 20
@@ -1703,7 +1699,7 @@ x 11
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 4
 level 20
@@ -1713,7 +1709,7 @@ x 11
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 5
 level 20
@@ -1723,7 +1719,7 @@ x 11
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 6
 level 20
@@ -1761,7 +1757,7 @@ x 11
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 11
 y 14
 level 20
@@ -1823,7 +1819,7 @@ x 12
 y 3
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 3
 level 20
@@ -1833,7 +1829,7 @@ x 12
 y 4
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 4
 level 20
@@ -1843,7 +1839,7 @@ x 12
 y 5
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 5
 level 20
@@ -1853,7 +1849,7 @@ x 12
 y 6
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 6
 level 20
@@ -1899,7 +1895,7 @@ x 12
 y 14
 end
 arch angel
-name gardian angel
+name guardian angel
 x 12
 y 14
 level 20
@@ -2002,7 +1998,7 @@ x 13
 y 10
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 10
 level 20
@@ -2012,7 +2008,7 @@ x 13
 y 11
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 11
 level 20
@@ -2022,7 +2018,7 @@ x 13
 y 12
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 12
 level 20
@@ -2032,7 +2028,7 @@ x 13
 y 13
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 13
 level 20
@@ -2055,7 +2051,7 @@ y 14
 no_pass 0
 end
 arch angel
-name gardian angel
+name guardian angel
 x 13
 y 14
 level 20

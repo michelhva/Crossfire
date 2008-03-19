@@ -1,12 +1,12 @@
 arch map
-name eureca_road1
+name Eureca Road
+difficulty 1
 region pupland
 width 31
 height 31
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr  2 17:46:55 1996
+Created:  1996-02-02
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2467,6 +2467,8 @@ end
 arch potion_magic
 x 14
 y 14
+arch spell_regenerate_spellpoints
+end
 end
 arch afloor_right
 x 14
@@ -2475,6 +2477,8 @@ end
 arch potion_magic
 x 14
 y 15
+arch spell_regenerate_spellpoints
+end
 end
 arch afloor_right
 x 14
@@ -2483,6 +2487,8 @@ end
 arch potion_magic
 x 14
 y 16
+arch spell_regenerate_spellpoints
+end
 end
 arch afloor_right
 x 14

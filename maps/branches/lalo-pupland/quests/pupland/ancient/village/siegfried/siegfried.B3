@@ -1,13 +1,12 @@
 arch map
-name <unnamed>
+name Siegfried
 difficulty 5
 region ancientpupland
 width 32
 height 32
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jun  5 17:16:58 1996
+Created:  1996-06-05
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch afloor_right
@@ -566,13 +565,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 2
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 2
@@ -952,13 +952,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 4
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_treasure
 x 4
@@ -1366,13 +1367,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 6
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 6
@@ -1748,13 +1750,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 8
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 8
@@ -2198,13 +2201,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 10
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 10
@@ -2230,13 +2234,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 11
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 11
@@ -2658,13 +2663,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 12
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 12
@@ -2690,13 +2696,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 13
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 13
@@ -3138,13 +3145,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 14
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_treasure
 x 14
@@ -3174,13 +3182,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 15
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_spells
 x 15
@@ -3624,13 +3633,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 16
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 16
@@ -3656,13 +3666,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 17
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 17
@@ -4112,13 +4123,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 18
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 18
@@ -4144,13 +4156,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 19
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 19
@@ -4560,13 +4573,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 20
 y 30
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 20
@@ -4592,13 +4606,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 21
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_spells
 x 21
@@ -5069,11 +5084,11 @@ y 24
 speed 0.250000
 level 100
 attacktype 1
+resist_physical 127
 unaggressive 1
 run_away 0
 can_use_armour 0
 can_use_weapon 0
-armour 127
 end
 arch afloor_right
 x 22
@@ -5093,11 +5108,11 @@ y 25
 speed 0.250000
 level 100
 attacktype 1
+resist_physical 127
 unaggressive 1
 run_away 0
 can_use_armour 0
 can_use_weapon 0
-armour 127
 end
 arch afloor_right
 x 22
@@ -5117,12 +5132,12 @@ y 26
 speed 0.800000
 level 100
 attacktype 1
+resist_physical 127
 carrying 100
 unaggressive 1
 run_away 0
 can_use_armour 0
 can_use_weapon 0
-armour 127
 arch key2
 slaying siegfried.B3.2
 end
@@ -5183,13 +5198,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 23
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 23
@@ -5705,13 +5721,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 25
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 25
@@ -6240,13 +6257,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 27
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 27
@@ -6767,13 +6785,14 @@ other_arch bomb
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 29
 y 1
 speed -0.100000
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_spells
 x 29
@@ -7121,12 +7140,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 11
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7144,12 +7164,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 13
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7167,12 +7188,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 15
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7190,12 +7212,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 17
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7213,12 +7236,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 19
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7236,12 +7260,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 21
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7259,12 +7284,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 23
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_spells
 x 30
@@ -7286,12 +7312,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 25
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7309,12 +7336,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 27
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch afloor_right
 x 30
@@ -7332,12 +7360,13 @@ arch lbulletwall_7
 Con 100
 hp 5000
 maxhp 5000
-dam 8
 ac -30
 x 30
 y 29
 level 50
 alive 1
+arch spell_create_bomb
+end
 end
 arch random_spells
 x 30

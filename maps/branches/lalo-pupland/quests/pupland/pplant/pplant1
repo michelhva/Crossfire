@@ -1,13 +1,11 @@
 arch map
-name pplant1
+name Power Plant
 difficulty 5
 region pupland
 width 23
 height 23
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Feb  4 21:37:57 1996
+Created:  1996-02-04
 endmsg
 end
 arch dungeon_floor
@@ -2053,7 +2051,7 @@ y 2
 carrying 100
 unaggressive 1
 arch key2
-name zombi key
+name zombie key
 slaying 1235567
 end
 end

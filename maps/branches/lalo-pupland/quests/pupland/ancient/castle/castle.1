@@ -1,13 +1,11 @@
 arch map
-name castle
+name Castle
 difficulty 5
 region ancientpupland
 width 32
 height 32
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  8 02:44:40 1996
+Created:  1996-06-08
 endmsg
 end
 arch brush
@@ -1427,13 +1425,23 @@ speed 0.500000
 speed_left -2.100000
 level 100
 attacktype 4588873
+resist_physical 80
+resist_magic 30
+resist_electricity 100
+resist_weaponmagic 30
+resist_ghosthit 100
+resist_poison 100
+resist_slow -100
+resist_paralyze 100
+resist_deplete 100
+resist_death 100
+resist_godpower 100
 carrying 15100
 see_invisible 1
 run_away 3
 can_cast_spell 1
 sleep 0
 can_see_in_dark 1
-armour 2048
 arch spell_bullet_swarm
 end
 arch spell_cause_heavy_wounds
@@ -1462,6 +1470,18 @@ ac -127
 speed 0.100000
 level 110
 attacktype 257
+resist_physical 0
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_acid 100
+resist_poison 100
+resist_paralyze 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
 carrying 100
 generator 0
 see_invisible 1
@@ -1469,7 +1489,6 @@ is_used_up 0
 can_cast_spell 1
 can_use_skill 1
 can_see_in_dark 1
-armour 0
 arch key2
 name eye of Surtur
 slaying slime_seal
@@ -1502,12 +1521,22 @@ ac -120
 speed 0.100000
 level 110
 attacktype 1048705
+resist_physical 99
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_drain 100
+resist_weaponmagic 100
+resist_poison 100
+resist_deplete 100
+resist_chaos 100
+resist_godpower 100
 generator 0
 see_invisible 1
 is_used_up 0
 can_cast_spell 1
 can_see_in_dark 1
-armour 0
 arch spell_major_healing
 end
 arch spell_regenerate_spellpoints
@@ -1535,6 +1564,17 @@ ac -120
 speed 0.100000
 level 130
 attacktype 1089
+resist_physical 95
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_drain 100
+resist_weaponmagic 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
 generator 0
 see_invisible 1
 is_used_up 0
@@ -1542,7 +1582,6 @@ hitback 1
 can_cast_spell 1
 can_use_skill 1
 can_see_in_dark 1
-armour 0
 arch spell_major_healing
 end
 arch spell_regenerate_spellpoints
@@ -3190,7 +3229,6 @@ x 15
 y 17
 speed 0.500000
 connected 1
-protected 1
 end
 arch marble
 x 15
@@ -3370,7 +3408,6 @@ x 16
 y 17
 speed 0.500000
 connected 1
-protected 1
 end
 arch marble
 x 16
@@ -3565,7 +3602,6 @@ arch trigger
 x 17
 y 16
 connected 1
-protected 1
 end
 arch marble
 x 17
@@ -3592,7 +3628,6 @@ arch trigger
 x 17
 y 18
 connected 1
-protected 1
 end
 arch marble
 x 17
@@ -3749,7 +3784,6 @@ arch button_handle
 x 18
 y 13
 connected 2
-protected 2
 end
 arch marble
 x 18
@@ -3955,7 +3989,6 @@ x 19
 y 14
 speed 0.500000
 connected 2
-protected 2
 end
 arch marble
 x 19
@@ -4164,7 +4197,6 @@ arch button_handle
 x 20
 y 13
 connected 2
-protected 2
 end
 arch marble
 x 20

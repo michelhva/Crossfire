@@ -6,7 +6,7 @@ darkness 3
 width 30
 height 32
 msg
-Created:  1997-01-27
+Created:  1997-02-27
 endmsg
 end
 arch pstone_2
@@ -3990,6 +3990,7 @@ speed 0.001000
 type 0
 carrying 38810
 randomitems none
+move_type walk
 monster 1
 unaggressive 1
 can_use_armour 0

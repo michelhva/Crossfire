@@ -1,5 +1,5 @@
 arch map
-name raffle_u1
+name Raffle 3
 swap_time 5
 reset_timeout 3600
 difficulty 7
@@ -8,9 +8,8 @@ darkness 3
 width 37
 height 41
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 24 21:58:23 1997
+Created:  1997-02-24
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -6406,6 +6405,8 @@ end
 arch firewall_5
 x 20
 y 8
+arch spell_small_fireball
+end
 end
 arch dungeon_magic
 x 20

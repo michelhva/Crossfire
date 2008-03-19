@@ -2790,11 +2790,13 @@ y 15
 attack_movement 7
 level 12
 type 0
+resist_physical 28
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_armour 0
 can_use_weapon 0
-armour 1
+can_use_wand 1
 end
 arch dungeon_floor
 x 28

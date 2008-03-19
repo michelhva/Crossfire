@@ -1,5 +1,5 @@
 arch map
-name castle_eureca1
+name Castle Eureca
 difficulty 10
 region pupland
 width 21
@@ -7,9 +7,8 @@ height 26
 enter_x 10
 enter_y 24
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 02:27:17 1996
+Created:  1996-02-29
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -315,6 +314,8 @@ end
 arch firewall_5
 x 2
 y 2
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 2
@@ -1267,6 +1268,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -1296,6 +1298,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -1325,6 +1328,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -1853,6 +1857,8 @@ end
 arch firewall_5
 x 12
 y 2
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 12
@@ -2296,6 +2302,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2325,6 +2332,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2354,6 +2362,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2383,6 +2392,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2412,6 +2422,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2567,6 +2578,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2596,6 +2608,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2625,6 +2638,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2654,6 +2668,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -2683,6 +2698,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3036,6 +3052,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3065,6 +3082,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3094,6 +3112,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3123,6 +3142,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3152,6 +3172,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3275,6 +3296,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3304,6 +3326,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3333,6 +3356,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -3362,6 +3386,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0

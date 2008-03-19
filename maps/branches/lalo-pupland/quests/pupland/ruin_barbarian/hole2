@@ -1,14 +1,12 @@
 arch map
-name hole2
+name Hole in the Ground
 swap_time 10
 difficulty 8
 region pupland
 width 32
 height 42
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 27 20:40:37 1997
+Created:  1997-02-27
 endmsg
 end
 arch dun8
@@ -11157,7 +11155,6 @@ y 1
 weight 3158
 invisible 1
 connected 10
-protected 10
 end
 arch afloor_right
 x 26
@@ -13139,7 +13136,6 @@ x 31
 y 11
 speed 0.500000
 connected 10
-protected 10
 end
 arch boulder
 x 31
@@ -13149,5 +13145,4 @@ arch button_plate
 x 31
 y 12
 connected 11
-protected 11
 end

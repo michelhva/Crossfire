@@ -1,12 +1,11 @@
 arch map
-name hut1
+name Hut
+difficulty 1
 region pupland
 width 30
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Apr  1 18:32:12 1996
+Created:  1996-02-01
 endmsg
 end
 arch grass
@@ -2900,7 +2899,6 @@ sp 7
 x 29
 y 19
 connected 1
-protected 1
 end
 arch scroll
 name scroll - obsolete (?)

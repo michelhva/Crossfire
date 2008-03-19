@@ -1,14 +1,12 @@
 arch map
-name hole1
+name Hole in the Ground
 difficulty 7
 region pupland
 darkness 3
 width 30
 height 32
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 27 21:06:35 1997
+Created:  1997-02-27
 endmsg
 end
 arch pstone_2
@@ -1317,8 +1315,7 @@ endmsg
 x 6
 y 1
 connected 101
-walk_on 0
-fly_on 0
+move_on 0
 end
 arch flagstone
 x 6
@@ -3993,6 +3990,7 @@ speed 0.001000
 type 0
 carrying 38810
 randomitems none
+move_type walk
 monster 1
 unaggressive 1
 can_use_armour 0

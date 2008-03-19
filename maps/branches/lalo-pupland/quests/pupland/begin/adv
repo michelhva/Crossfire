@@ -1,12 +1,11 @@
 arch map
-name adv
+name House of Treasure
+difficulty 1
 region pupland
 width 13
 height 15
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 13 18:25:26 1996
+Created:  1996-02-13
 endmsg
 end
 arch marble
@@ -567,7 +566,6 @@ arch button_handle
 x 5
 y 9
 connected 1
-protected 1
 end
 arch marble
 x 5
@@ -838,19 +836,16 @@ arch button_small
 x 9
 y 2
 connected 11
-protected 11
 end
 arch button_small
 x 9
 y 3
 connected 14
-protected 14
 end
 arch button_small
 x 9
 y 4
 connected 17
-protected 17
 end
 arch blocked
 x 9
@@ -872,7 +867,6 @@ x 9
 y 8
 speed 0.000000
 connected 11
-protected 11
 end
 arch note
 name hint from the semi-gods 1
@@ -895,7 +889,6 @@ x 9
 y 9
 speed 0.000000
 connected 14
-protected 14
 end
 arch note
 name hint from the semi-gods 4
@@ -922,7 +915,6 @@ x 9
 y 10
 speed 0.000000
 connected 17
-protected 17
 end
 arch note
 name hint from the semi-gods 7
@@ -960,7 +952,6 @@ sp 3
 x 10
 speed 0.500000
 connected 1
-protected 1
 end
 arch orcchop
 x 10
@@ -973,19 +964,16 @@ arch button_small
 x 10
 y 2
 connected 12
-protected 12
 end
 arch button_small
 x 10
 y 3
 connected 15
-protected 15
 end
 arch button_small
 x 10
 y 4
 connected 18
-protected 18
 end
 arch blocked
 x 10
@@ -1007,7 +995,6 @@ x 10
 y 8
 speed 0.000000
 connected 12
-protected 12
 end
 arch note
 name hint from the semi-gods 2
@@ -1033,7 +1020,6 @@ x 10
 y 9
 speed 0.000000
 connected 15
-protected 15
 end
 arch note
 name hint from the semi-gods 5
@@ -1057,7 +1043,6 @@ x 10
 y 10
 speed 0.000000
 connected 18
-protected 18
 end
 arch note
 name hint from the semi-gods 8
@@ -1098,19 +1083,16 @@ arch button_small
 x 11
 y 2
 connected 13
-protected 13
 end
 arch button_small
 x 11
 y 3
 connected 16
-protected 16
 end
 arch button_small
 x 11
 y 4
 connected 19
-protected 19
 end
 arch blocked
 x 11
@@ -1132,7 +1114,6 @@ x 11
 y 8
 speed 0.000000
 connected 13
-protected 13
 end
 arch note
 name hint from the semi-gods 3
@@ -1157,7 +1138,6 @@ x 11
 y 9
 speed 0.000000
 connected 16
-protected 16
 end
 arch note
 name hint from the semi-gods 6
@@ -1177,7 +1157,6 @@ x 11
 y 10
 speed 0.000000
 connected 19
-protected 19
 end
 arch note
 name secret note

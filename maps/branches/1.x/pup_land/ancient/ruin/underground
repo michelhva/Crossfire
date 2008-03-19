@@ -6,7 +6,7 @@ darkness 3
 width 20
 height 20
 msg
-Created:  1996-02-08
+Created:  1996-06-08
 endmsg
 end
 arch dungeon_floor
@@ -1313,6 +1313,7 @@ hp 1000
 x 9
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end

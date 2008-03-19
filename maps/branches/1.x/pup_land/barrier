@@ -5,7 +5,7 @@ region pupland
 width 34
 height 16
 msg
-Created:  1996-01-28
+Created:  1996-02-28
 endmsg
 end
 arch cobblestones2
@@ -370,6 +370,7 @@ hp 100
 x 4
 y 3
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -438,6 +439,7 @@ x 4
 y 14
 type 0
 carrying 2
+move_type walk
 monster 1
 unaggressive 1
 arch card
@@ -578,6 +580,7 @@ hp 100
 x 6
 y 2
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -796,6 +799,7 @@ hp 100
 x 8
 y 8
 type 0
+move_type walk
 monster 1
 friendly 1
 end

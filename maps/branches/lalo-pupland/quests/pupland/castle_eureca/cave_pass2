@@ -1,5 +1,5 @@
 arch map
-name cave_pass2
+name Cave Pass
 difficulty 15
 region pupland
 darkness 2
@@ -8,9 +8,7 @@ height 40
 enter_x 9
 enter_y 10
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jan 28 00:13:44 1996
+Created:  1996-02-28
 endmsg
 end
 arch blocked
@@ -890,7 +888,14 @@ end
 arch big_elec
 x 3
 y 13
-immune 421744
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 3
@@ -1586,7 +1591,14 @@ end
 arch big_elec
 x 6
 y 14
-immune 421744
+resist_acid 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
 end
 arch dungeon_floor
 x 6

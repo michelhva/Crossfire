@@ -1,12 +1,11 @@
 arch map
-name house
+name House
+difficulty 1
 region ancientpupland
 width 21
 height 21
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Apr  2 17:07:53 1996
+Created:  1996-02-02
 endmsg
 end
 arch grass
@@ -620,6 +619,7 @@ hp 100
 x 6
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1033,7 +1033,7 @@ first. He is even older than us. You
 must be very careful...
 @match sword
 I forgot the name of Gothwolte's
-sword. Ask Timothey, my scolar. He
+sword. Ask Timothey, my scholar. He
 lives in lone village.
 @match eureca
 I cannot see him. But still, I feel

@@ -1,12 +1,11 @@
 arch map
-name hut2
+name Hut
+difficulty 1
 region ancientpupland
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri May 17 23:47:55 1996
+Created:  1996-02-17
 endmsg
 end
 arch pstone_1
@@ -691,7 +690,7 @@ Gothwolte. I found out that his sword,
 the ancient dancing sword, is called
 "whirlwind".
 @match *
-I'm a scolar of the Kurte.
+I'm a scholar of the Kurte.
 endmsg
 face man.131
 hp 180

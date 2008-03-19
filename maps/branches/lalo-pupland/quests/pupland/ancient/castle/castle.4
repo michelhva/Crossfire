@@ -1,13 +1,11 @@
 arch map
-name castle
+name Castle
 difficulty 6
 region ancientpupland
 width 28
 height 28
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 15 18:38:35 1996
+Created:  1996-02-15
 endmsg
 end
 arch marble
@@ -2074,7 +2072,11 @@ maxhp 100
 x 11
 y 1
 level 10
-immune 31
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 end
 arch permanent_lava
 name fire
@@ -2177,8 +2179,7 @@ endmsg
 x 11
 y 19
 connected 10
-walk_on 0
-fly_on 0
+move_on 0
 activate_on_release 0
 end
 arch afloor_right
