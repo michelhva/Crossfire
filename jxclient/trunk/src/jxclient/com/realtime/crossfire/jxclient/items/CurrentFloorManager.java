@@ -90,7 +90,7 @@ public class CurrentFloorManager
     /**
      * Return whether a given location is the current floor.
      *
-     * @param floot The location to compare.
+     * @param floor The location to compare.
      *
      * @return Whether the given location is the current floor.
      */

@@ -32,8 +32,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Adds drawinfo, drawextinfo, and query messages to a {@link #Buffer}
- * instance.
+ * Adds drawinfo, drawextinfo, and query messages to a {@link Buffer} instance.
  *
  * @author Andreas Kirschbaum
  */

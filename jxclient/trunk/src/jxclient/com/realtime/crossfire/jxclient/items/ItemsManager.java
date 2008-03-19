@@ -116,7 +116,7 @@ public class ItemsManager
      *
      * @param location The location to check.
      *
-     * @retrn The number of items.
+     * @return The number of items.
      */
     public synchronized int getNumberOfItems(final int location)
     {

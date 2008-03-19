@@ -344,7 +344,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
-     * @return The Gui representing the skin file.
+     * @param gui The Gui representing the skin file.
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
@@ -411,7 +411,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
-     * @return The Gui representing the skin file.
+     * @param gui The Gui representing the skin file.
      *
      * @throws JXCSkinException if the file cannot be loaded
      */

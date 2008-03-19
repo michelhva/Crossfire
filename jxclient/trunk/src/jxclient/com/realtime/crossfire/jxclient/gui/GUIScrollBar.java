@@ -42,17 +42,17 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     private final boolean proportionalSlider;
 
     /**
-     * @param scrollable The target element to scroll.
+     * The target element to scroll.
      */
     private final GUIScrollable2 scrollable;
 
     /**
-     * @param colorBackground The background color of the slider.
+     * The background color of the slider.
      */
     private final Color colorBackground;
 
     /**
-     * @param colorForeground The foreground color of the slider.
+     * The foreground color of the slider.
      */
     private final Color colorForeground;
 
@@ -208,7 +208,6 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         return (int)(yPixels*(double)(valueSize-sliderSize)/(h-getSliderHeightPixels())+0.5);
     }
 
-    /** {@inheritDoc} */
     public void setPosition(final int pos)
     {
         if (pos < valueMin)

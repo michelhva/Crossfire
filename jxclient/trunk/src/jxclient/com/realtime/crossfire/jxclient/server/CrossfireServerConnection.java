@@ -225,7 +225,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * drawinfo S->C messages.
+     * drawinfo S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */
@@ -236,7 +236,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Removes the given listener from the list of objects listening to the
-     * drawinfo S->C messages.
+     * drawinfo S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */
@@ -247,7 +247,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * drawextinfo S->C messages.
+     * drawextinfo S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */
@@ -258,7 +258,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Removes the given listener from the list of objects listening to the
-     * drawextinfo S->C messages.
+     * drawextinfo S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */
@@ -269,7 +269,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Adds a new listener monitoring the
-     * query S->C messages.
+     * query S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */
@@ -280,7 +280,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     /**
      * Removes the given listener from the list of objects listening to the
-     * query S->C messages.
+     * query S-&gt;C messages.
      * @param listener The listener to remove.
      * @since 1.0
      */

@@ -87,7 +87,7 @@ public class MetaserverEntryParser
 
     /**
      * Format a metaserver entry that returns the metaserver entry when parse
-     * with {@link #parse(MetaserverEntry)}.
+     * with {@link #parse(String)}.
      *
      * @param entry The metaserver entry to format.
      *

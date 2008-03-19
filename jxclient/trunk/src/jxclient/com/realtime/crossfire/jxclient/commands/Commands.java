@@ -60,7 +60,7 @@ public class Commands
      *
      * @param command The command.
      *
-     * @param command The command and all remaining commands of the command
+     * @param commandList The command and all remaining commands of the command
      * list.
      *
      * @return 0=unknown command, 1=command was executed, 2=whole command list

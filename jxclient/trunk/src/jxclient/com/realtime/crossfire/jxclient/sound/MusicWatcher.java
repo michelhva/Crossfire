@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
 public class MusicWatcher
 {
     /**
-     * The crossfire stats listener attached to {@link #stats}.
+     * The crossfire stats listener.
      */
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener()
     {
