@@ -5,7 +5,7 @@ region nurnberg
 width 22
 height 16
 msg
-Created:  1996-03-04
+Created:  1996-02-04
 endmsg
 end
 arch blocked
@@ -128,6 +128,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -380,6 +381,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -546,6 +548,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -582,6 +585,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -927,6 +931,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0
@@ -963,6 +968,7 @@ level 10
 type 0
 weight 10000
 randomitems none
+move_type walk
 monster 1
 can_use_armour 0
 can_use_weapon 0

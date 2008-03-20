@@ -5,7 +5,7 @@ region nurnberg
 width 24
 height 17
 msg
-Created:  1996-03-02
+Created:  1996-02-02
 endmsg
 end
 arch cobblestones2
@@ -1157,6 +1157,7 @@ y 5
 direction 3
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1191,6 +1192,7 @@ x 9
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1222,6 +1224,7 @@ x 9
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1805,6 +1808,7 @@ x 14
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1842,6 +1846,7 @@ x 14
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1872,6 +1877,7 @@ x 14
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end

@@ -1,14 +1,13 @@
 arch map
-name pshop
+name Invulnerable
+difficulty 1
 region nurnberg
 shopitems potion:100;*:-100
 shopmax 20000
 width 25
 height 25
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Feb 13 01:00:57 1996
+Created:  1996-02-13
 endmsg
 end
 arch grass
@@ -1790,6 +1789,7 @@ hp 100
 x 13
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end

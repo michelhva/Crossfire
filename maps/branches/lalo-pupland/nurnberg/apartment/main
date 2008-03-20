@@ -1,12 +1,12 @@
 arch map
-name main
+name Nurnberg Apartment
+difficulty 1
 region nurnberg
 width 13
 height 15
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Sun Nov 19 21:46:25 2000
+Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -135,7 +135,6 @@ arch stwall_closed_1
 x 1
 y 3
 connected 2
-protected 2
 end
 arch woodfloor
 x 1
@@ -149,7 +148,6 @@ food 5000
 x 1
 y 4
 connected 2
-protected 2
 end
 arch woodfloor
 x 1
@@ -223,7 +221,6 @@ endmsg
 x 1
 y 14
 connected 5
-protected 5
 end
 arch button_small
 name 5
@@ -231,7 +228,6 @@ x 1
 y 14
 weight 1000000
 connected 5
-protected 5
 end
 arch creator
 name 4
@@ -239,7 +235,6 @@ other_arch boulder
 x 1
 y 14
 connected 4
-protected 4
 end
 arch blocked
 x 2
@@ -610,10 +605,11 @@ end
 arch firewall_2
 name wall
 face stwall_3.111
-dam 82
 x 5
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 5
@@ -655,14 +651,12 @@ food 1000
 x 6
 y 3
 connected 1
-protected 1
 end
 arch check_inv
-slaying scolar of kurte
+slaying scholar of kurte
 x 6
 y 4
 connected 4
-protected 4
 end
 arch woodfloor
 x 6
@@ -674,7 +668,6 @@ x 6
 y 4
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 6
@@ -740,7 +733,6 @@ arch stwall_closed_1
 x 6
 y 13
 connected 5
-protected 5
 end
 arch blocked
 x 6
@@ -847,10 +839,11 @@ end
 arch firewall_8
 name wall
 face stwall_9.111
-dam 82
 x 7
 y 13
 level 10
+arch spell_firebolt
+end
 end
 arch blocked
 x 7
@@ -1150,7 +1143,6 @@ arch stwall_closed_1
 x 11
 y 3
 connected 3
-protected 3
 end
 arch woodfloor
 x 11
@@ -1164,7 +1156,6 @@ food 5000
 x 11
 y 4
 connected 3
-protected 3
 end
 arch woodfloor
 x 11

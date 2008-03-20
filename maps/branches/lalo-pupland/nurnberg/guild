@@ -1,12 +1,11 @@
 arch map
-name guild
+name Guild of Law
+difficulty 1
 region nurnberg
 width 24
 height 22
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb 15 23:24:11 1996
+Created:  1996-02-15
 endmsg
 end
 arch grass
@@ -503,6 +502,7 @@ x 3
 y 13
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -702,7 +702,6 @@ x 5
 y 2
 speed 0.500000
 connected 4
-protected 4
 end
 arch flagstone
 x 5
@@ -803,6 +802,7 @@ x 5
 y 13
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1392,12 +1392,32 @@ sp 0
 maxsp 0
 x 10
 y 1
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-immune 8388607
 end
 arch flagstone
 x 10
@@ -1486,6 +1506,7 @@ x 10
 y 10
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1509,7 +1530,6 @@ food 1
 x 10
 y 12
 connected 3
-protected 3
 end
 arch altar
 name 2 - water
@@ -1518,7 +1538,6 @@ food 1
 x 10
 y 12
 connected 2
-protected 2
 end
 arch altar
 name 1 - fire
@@ -1527,7 +1546,6 @@ food 1
 x 10
 y 12
 connected 1
-protected 1
 end
 arch flagstone
 x 10
@@ -2412,6 +2430,7 @@ x 16
 y 16
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2539,6 +2558,7 @@ x 17
 y 11
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2823,6 +2843,7 @@ x 19
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -3250,7 +3271,6 @@ food 1
 x 23
 y 1
 connected 4
-protected 4
 end
 arch creator
 name 3
@@ -3258,7 +3278,6 @@ other_arch small_shield
 x 23
 y 1
 connected 3
-protected 3
 end
 arch creator
 name 2
@@ -3266,7 +3285,6 @@ other_arch small_shield
 x 23
 y 1
 connected 2
-protected 2
 end
 arch creator
 name 1
@@ -3274,7 +3292,6 @@ other_arch small_shield
 x 23
 y 1
 connected 1
-protected 1
 end
 arch magic_mouth
 name 3 - elec
@@ -3287,7 +3304,6 @@ endmsg
 x 23
 y 2
 connected 3
-protected 3
 end
 arch magic_mouth
 name 2 - water
@@ -3300,7 +3316,6 @@ endmsg
 x 23
 y 2
 connected 2
-protected 2
 end
 arch magic_mouth
 name 1 - fire
@@ -3313,7 +3328,6 @@ endmsg
 x 23
 y 2
 connected 1
-protected 1
 end
 arch blocked
 x 23
@@ -3327,7 +3341,6 @@ x 23
 y 4
 speed 0.000000
 connected 5
-protected 5
 end
 arch guildmaster
 name Hartwig, the guildmaster
@@ -3345,12 +3358,32 @@ sp 0
 maxsp 0
 x 23
 y 4
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+resist_weaponmagic 100
+resist_ghosthit 100
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_turn_undead 100
+resist_fear 100
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower 100
+resist_holyword 100
+resist_blind 100
 randomitems none
 pick_up 0
 monster 0
 unaggressive 0
 can_cast_spell 0
-immune 8388607
 end
 arch blocked
 x 23
@@ -3362,7 +3395,6 @@ x 23
 y 6
 weight 1000
 connected 5
-protected 5
 end
 arch blocked
 x 23
@@ -3376,7 +3408,6 @@ x 23
 y 8
 speed 0.000000
 connected 4
-protected 4
 end
 arch card
 name Passport

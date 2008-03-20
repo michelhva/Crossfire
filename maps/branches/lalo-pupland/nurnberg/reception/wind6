@@ -1,12 +1,11 @@
 arch map
-name wind6
+name wind
+difficulty 1
 region nurnberg
 width 24
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb 28 18:34:57 1996
+Created:  1996-02-28
 endmsg
 end
 arch flagstone
@@ -120,8 +119,9 @@ maxsp 300
 x 1
 y 1
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch spell_hellfire
@@ -222,8 +222,9 @@ maxsp 300
 x 2
 y 4
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch abil_icestorm
@@ -649,8 +650,9 @@ maxsp 300
 x 5
 y 3
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch abil_icestorm
@@ -989,8 +991,9 @@ maxsp 300
 x 7
 y 11
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch spell_hellfire
@@ -1181,8 +1184,9 @@ maxsp 300
 x 9
 y 2
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch abil_icestorm
@@ -1533,8 +1537,9 @@ maxsp 300
 x 11
 y 11
 attack_movement 7
+resist_electricity 100
+resist_fear 100
 can_cast_spell 1
-immune 16392
 arch spell_sm_lightning
 end
 arch spell_hellfire

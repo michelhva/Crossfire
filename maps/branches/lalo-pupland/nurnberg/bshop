@@ -1,5 +1,5 @@
 arch map
-name bshop
+name Sunspear
 difficulty 5
 region nurnberg
 shopitems book:100;spellbook:100;*:-90
@@ -7,9 +7,7 @@ shopmin 50
 width 25
 height 23
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 23:22:20 1996
+Created:  1996-02-09
 endmsg
 end
 arch invis_exit

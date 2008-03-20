@@ -1,12 +1,11 @@
 arch map
-name house
+name Dick's House
+difficulty 1
 region nurnberg
 width 27
 height 21
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Feb  9 23:49:57 1996
+Created:  1996-02-09
 endmsg
 end
 arch grass
@@ -551,6 +550,7 @@ hp 100
 x 4
 y 10
 type 0
+move_type walk
 monster 1
 friendly 1
 end

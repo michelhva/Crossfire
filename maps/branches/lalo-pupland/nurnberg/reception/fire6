@@ -1,13 +1,11 @@
 arch map
-name fire6
+name Fire
 difficulty 10
 region nurnberg
 width 19
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 19 00:59:30 1996
+Created:  1996-02-19
 endmsg
 end
 arch dungeon_magic
@@ -172,7 +170,6 @@ arch button_lever
 x 1
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -187,7 +184,6 @@ x 1
 y 2
 speed 0.500000
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -201,7 +197,6 @@ arch button_lever
 x 1
 y 3
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -217,7 +212,6 @@ y 4
 speed 0.500000
 value 1
 connected 30
-protected 30
 end
 arch baby_dragon
 x 1
@@ -235,7 +229,6 @@ arch button_lever
 x 1
 y 5
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -250,7 +243,6 @@ x 1
 y 6
 speed 0.500000
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -264,7 +256,6 @@ arch button_lever
 x 1
 y 7
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 1
@@ -312,7 +303,6 @@ arch button_small
 x 1
 y 11
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 1
@@ -388,7 +378,6 @@ y 1
 speed 0.500000
 value 1
 connected 30
-protected 30
 end
 arch baby_dragon
 x 2
@@ -540,7 +529,6 @@ maxhp 1
 x 2
 y 13
 connected 1
-protected 1
 end
 arch dungeon_magic
 x 2
@@ -587,7 +575,6 @@ arch button_lever
 x 3
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 3
@@ -762,7 +749,6 @@ x 4
 y 1
 speed 0.500000
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 4
@@ -945,7 +931,6 @@ arch button_lever
 x 5
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 5
@@ -1114,7 +1099,6 @@ y 1
 speed 0.500000
 value 1
 connected 30
-protected 30
 end
 arch baby_dragon
 x 6
@@ -1281,7 +1265,6 @@ arch button_lever
 x 7
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 7
@@ -1463,7 +1446,6 @@ x 8
 y 1
 speed 0.500000
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 8
@@ -1633,7 +1615,6 @@ arch button_lever
 x 9
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 9
@@ -1802,7 +1783,6 @@ y 1
 speed 0.500000
 value 1
 connected 30
-protected 30
 end
 arch baby_dragon
 x 10
@@ -1969,7 +1949,6 @@ arch button_lever
 x 11
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 11
@@ -2092,7 +2071,6 @@ x 11
 y 11
 connected 20
 blocksview 0
-protected 20
 end
 arch dungeon_magic
 x 11
@@ -2119,7 +2097,6 @@ name trigger for GATE-B
 x 11
 y 13
 connected 20
-protected 20
 end
 arch dungeon_magic
 x 11
@@ -2172,7 +2149,6 @@ x 12
 y 1
 speed 0.500000
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 12
@@ -2194,7 +2170,6 @@ arch button_lever
 x 12
 y 3
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2209,7 +2184,6 @@ x 12
 y 4
 speed 0.500000
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2223,7 +2197,6 @@ arch button_lever
 x 12
 y 5
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2239,7 +2212,6 @@ y 6
 speed 0.500000
 value 1
 connected 31
-protected 31
 end
 arch baby_dragon
 x 12
@@ -2257,7 +2229,6 @@ arch button_lever
 x 12
 y 7
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2272,7 +2243,6 @@ x 12
 y 8
 speed 0.500000
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2286,7 +2256,6 @@ arch button_lever
 x 12
 y 9
 connected 31
-protected 31
 end
 arch dungeon_magic
 x 12
@@ -2377,7 +2346,6 @@ arch button_lever
 x 13
 y 1
 connected 30
-protected 30
 end
 arch dungeon_magic
 x 13
@@ -2500,7 +2468,6 @@ x 13
 y 11
 connected 10
 blocksview 0
-protected 10
 end
 arch dungeon_magic
 x 13
@@ -2661,7 +2628,6 @@ name trigger for GATE-A
 x 14
 y 9
 connected 10
-protected 10
 end
 arch dungeon_magic
 x 14

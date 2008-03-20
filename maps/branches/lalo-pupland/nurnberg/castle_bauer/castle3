@@ -1,12 +1,11 @@
 arch map
-name <unnamed>
+name Castle
+difficulty 1
 region nurnberg
 width 22
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Mar  5 00:39:39 1996
+Created:  1996-02-05
 endmsg
 end
 arch blocked
@@ -288,9 +287,9 @@ wc 5
 x 3
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -314,9 +313,9 @@ wc 5
 x 3
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -387,9 +386,9 @@ dam 25
 x 3
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -412,9 +411,9 @@ dam 25
 x 3
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -562,9 +561,9 @@ wc 5
 x 5
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -588,9 +587,9 @@ wc 5
 x 5
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -681,9 +680,9 @@ dam 25
 x 5
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -706,9 +705,9 @@ dam 25
 x 5
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -840,9 +839,9 @@ wc 5
 x 7
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -866,9 +865,9 @@ wc 5
 x 7
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -947,9 +946,9 @@ dam 25
 x 7
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -972,9 +971,9 @@ dam 25
 x 7
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1102,9 +1101,9 @@ wc 5
 x 9
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1128,9 +1127,9 @@ wc 5
 x 9
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1205,9 +1204,9 @@ dam 25
 x 9
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1230,9 +1229,9 @@ dam 25
 x 9
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1352,9 +1351,9 @@ wc 5
 x 11
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1378,9 +1377,9 @@ wc 5
 x 11
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1483,9 +1482,9 @@ dam 25
 x 11
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1508,9 +1507,9 @@ dam 25
 x 11
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1638,9 +1637,9 @@ wc 5
 x 13
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1664,9 +1663,9 @@ wc 5
 x 13
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1741,9 +1740,9 @@ dam 25
 x 13
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1766,9 +1765,9 @@ dam 25
 x 13
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -1912,9 +1911,9 @@ wc 5
 x 15
 y 1
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -1938,9 +1937,9 @@ wc 5
 x 15
 y 2
 level 12
+resist_cold 100
 can_use_armour 0
 can_use_weapon 0
-immune 16
 arch spell_icestorm
 end
 arch spell_icestorm
@@ -2035,9 +2034,9 @@ dam 25
 x 15
 y 13
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2060,9 +2059,9 @@ dam 25
 x 15
 y 14
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2249,9 +2248,9 @@ dam 25
 x 17
 y 5
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2286,9 +2285,9 @@ dam 25
 x 17
 y 9
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2377,9 +2376,9 @@ dam 25
 x 18
 y 5
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2414,9 +2413,9 @@ dam 25
 x 18
 y 9
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2497,9 +2496,9 @@ dam 25
 x 19
 y 5
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2534,9 +2533,9 @@ dam 25
 x 19
 y 9
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2610,9 +2609,9 @@ dam 25
 x 20
 y 5
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2654,9 +2653,9 @@ dam 25
 x 20
 y 9
 level 14
+resist_electricity 100
 can_use_armour 0
 can_use_weapon 0
-immune 8
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
