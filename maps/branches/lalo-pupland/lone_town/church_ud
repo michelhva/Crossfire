@@ -1,12 +1,11 @@
 arch map
-name townA_church_ud
+name Church
+difficulty 1
 region lonetown
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jan 31 18:58:13 1996
+Created:  1996-02-31
 endmsg
 end
 arch blocked
@@ -755,6 +754,7 @@ hp 10000
 x 6
 y 8
 type 0
+move_type walk
 monster 1
 friendly 1
 end

@@ -1,14 +1,12 @@
 arch map
-name training
+name Training Center
 difficulty 1
 region lonetown
 width 25
 height 25
 enter_x 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jan 29 20:01:18 1996
+Created:  1996-02-29
 endmsg
 end
 arch cobblestones2
@@ -592,6 +590,7 @@ y 3
 direction 1
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 stand_still 1
@@ -615,6 +614,7 @@ x 4
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -637,6 +637,7 @@ x 4
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -846,7 +847,6 @@ arch trigger
 x 5
 y 16
 connected 11
-protected 11
 end
 arch kobold
 x 5
@@ -954,6 +954,7 @@ y 3
 direction 3
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -975,6 +976,7 @@ x 6
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1017,6 +1019,7 @@ x 6
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1062,7 +1065,6 @@ arch gateTrg1
 x 6
 y 15
 connected 11
-protected 11
 end
 arch pstone_1
 x 6
@@ -1158,15 +1160,9 @@ arch fighter
 name Instructor
 msg
 @match [Cc]ordish
-Cordish was my worst pupil ever.
-I couldn't teach him how to fight
-because he always ran away.
-Unbelievable that Eureca accepted such
-a person as royal servant.
+Cordish was my worst pupil ever. I couldn't teach him how to fight because he always ran away. Unbelievable that Eureca accepted such a person as royal servant.
 @match *
-Here is the Training Center of
-Liberation Army.
-Do you want to be my pupil?
+Here is the Training Center of Liberation Army. Do you want to be my pupil?
 endmsg
 Con 30
 hp 5000
@@ -1244,7 +1240,6 @@ arch trigger
 x 7
 y 14
 connected 11
-protected 11
 end
 arch cobblestones2
 x 7
@@ -1367,6 +1362,7 @@ x 8
 y 3
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1389,6 +1385,7 @@ x 8
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1430,6 +1427,7 @@ x 8
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1733,6 +1731,7 @@ y 3
 direction 1
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1755,6 +1754,7 @@ x 10
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1777,6 +1777,7 @@ x 10
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1799,6 +1800,7 @@ x 10
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -2186,7 +2188,6 @@ arch trigger
 x 12
 y 14
 connected 2
-protected 2
 end
 arch cobblestones2
 x 12
@@ -2292,7 +2293,6 @@ arch trigger
 x 13
 y 2
 connected 3
-protected 3
 end
 arch cobblestones2
 x 13
@@ -2362,7 +2362,6 @@ endmsg
 x 13
 y 15
 connected 2
-protected 2
 end
 arch cobblestones2
 x 13
@@ -2373,7 +2372,6 @@ sp 1
 x 13
 y 15
 connected 2
-protected 2
 end
 arch small_stones
 x 13
@@ -2471,7 +2469,6 @@ arch gateTrg2
 x 14
 y 1
 connected 3
-protected 3
 end
 arch cobblestones2
 x 14
@@ -2611,7 +2608,6 @@ x 14
 y 18
 value 1
 connected 200
-protected 200
 end
 arch kobold
 x 14
@@ -2693,7 +2689,6 @@ arch trigger
 x 15
 y 2
 connected 3
-protected 3
 end
 arch cobblestones2
 x 15
@@ -2831,7 +2826,6 @@ arch gate_open_2
 x 15
 y 18
 connected 200
-protected 200
 end
 arch kobold
 x 15
@@ -3072,7 +3066,6 @@ arch grate_closed_2
 x 16
 y 18
 connected 100
-protected 100
 end
 arch pstone_1
 x 16
@@ -3276,7 +3269,6 @@ arch button_small
 x 17
 y 18
 connected 100
-protected 100
 end
 arch pstone_1
 x 17

@@ -5,7 +5,7 @@ region lonetown
 width 15
 height 32
 msg
-Created:  1996-01-27
+Created:  1996-02-27
 endmsg
 end
 arch blocked
@@ -896,6 +896,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -920,6 +921,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -948,6 +950,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -976,6 +979,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1004,6 +1008,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1032,6 +1037,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1060,6 +1066,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1088,6 +1095,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1280,6 +1288,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1304,6 +1313,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1332,6 +1342,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1360,6 +1371,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1388,6 +1400,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1416,6 +1429,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1444,6 +1458,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1472,6 +1487,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1669,6 +1685,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1693,6 +1710,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1721,6 +1739,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1749,6 +1768,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1945,8 +1965,7 @@ arch wizard
 name Magician Leader
 msg
 @match *
-You came here to fight with me?
-Haha, you wouldn't dare!
+You came here to fight with me? Haha, you wouldn't dare!
 endmsg
 face wizard_blue.171
 animation wizard_blue
@@ -1972,6 +1991,7 @@ type 0
 attacktype 11
 carrying 100
 weight 1500
+move_type walk
 is_animated 1
 monster 1
 unaggressive 1
@@ -2050,6 +2070,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2074,6 +2095,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2102,6 +2124,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2130,6 +2153,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2392,6 +2416,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2416,6 +2441,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2444,6 +2470,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2472,6 +2499,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2716,6 +2744,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2740,6 +2769,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2768,6 +2798,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2796,6 +2827,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2824,6 +2856,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2852,6 +2885,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2880,6 +2914,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2908,6 +2943,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3112,6 +3148,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3136,6 +3173,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3164,6 +3202,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3192,6 +3231,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3220,6 +3260,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3248,6 +3289,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3276,6 +3318,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3304,6 +3347,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end

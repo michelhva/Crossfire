@@ -6,7 +6,7 @@ width 25
 height 25
 enter_x 1
 msg
-Created:  1996-01-29
+Created:  1996-02-29
 endmsg
 end
 arch cobblestones2
@@ -590,6 +590,7 @@ y 3
 direction 1
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 stand_still 1
@@ -613,6 +614,7 @@ x 4
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -635,6 +637,7 @@ x 4
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -951,6 +954,7 @@ y 3
 direction 3
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -972,6 +976,7 @@ x 6
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1014,6 +1019,7 @@ x 6
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1154,15 +1160,9 @@ arch fighter
 name Instructor
 msg
 @match [Cc]ordish
-Cordish was my worst pupil ever.
-I couldn't teach him how to fight
-because he always ran away.
-Unbelievable that Eureca accepted such
-a person as royal servant.
+Cordish was my worst pupil ever. I couldn't teach him how to fight because he always ran away. Unbelievable that Eureca accepted such a person as royal servant.
 @match *
-Here is the Training Center of
-Liberation Army.
-Do you want to be my pupil?
+Here is the Training Center of Liberation Army. Do you want to be my pupil?
 endmsg
 Con 30
 hp 5000
@@ -1362,6 +1362,7 @@ x 8
 y 3
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1384,6 +1385,7 @@ x 8
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1425,6 +1427,7 @@ x 8
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1728,6 +1731,7 @@ y 3
 direction 1
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1750,6 +1754,7 @@ x 10
 y 5
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1772,6 +1777,7 @@ x 10
 y 7
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1794,6 +1800,7 @@ x 10
 y 9
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end

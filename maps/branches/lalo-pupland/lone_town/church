@@ -1,12 +1,11 @@
 arch map
-name townA_charch
+name Church
+difficulty 1
 region lonetown
 width 11
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Fri Jan 26 23:40:23 1996
+Created:  1996-02-26
 endmsg
 end
 arch blocked
@@ -620,7 +619,6 @@ food 100
 x 5
 y 13
 connected 99
-protected 99
 end
 arch woodfloor
 x 5

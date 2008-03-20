@@ -5,7 +5,7 @@ region lonetown
 width 20
 height 16
 msg
-Created:  1996-12-18
+Created:  1996-02-18
 endmsg
 end
 arch woodfloor
@@ -230,6 +230,7 @@ speed 0.001000
 type 0
 weight 700000
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -260,13 +261,9 @@ We are members of Liberation Army.
 @match Regular|regular
 We fight against Regular Army.
 @match No|no|Sumson|sumson
-Sumson is the spy of Liberation Army.
-He entered the city of Nurnberg,
-to collected information about
-our enemies, Regular Army.
+Sumson is the spy of Liberation Army. He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
 @match Yes|yes
-Really!?
-So, Where is he?
+Really!? So, Where is he?
 @match *
 Do you know Sumson?
 endmsg
@@ -275,6 +272,7 @@ x 2
 y 1
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -587,18 +585,15 @@ end
 arch sage
 msg
 @match Barrier|barrier
-There is the barrior station to
-the south-east from Lone Town.
+There is the barrior station to the south-east from Lone Town.
 @match Regular|regular
 We fight against Regular Army.
 @match Bauer|bauer
-He is the leader of Regular Army.
-And he is the mayer of Nurnberg.
+He is the leader of Regular Army and he is the mayer of Nurnberg.
 @match Lone|lone|town|Town
 Welcome to lone town!
 @match *
-Mr.Bauer and his Regular Army built
-the Barrier station.
+Mr.Bauer and his Regular Army built the Barrier station.
 endmsg
 hp 180
 x 5
@@ -1078,6 +1073,7 @@ x 11
 y 2
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1376,31 +1372,24 @@ arch human
 name Reception of Liberation Army
 msg
 @match protect nature
-Good, you passed the test!
-Talk to the guildmaster now. He will
-provide you with further instructions.
+Good, you passed the test! Talk to the guildmaster now. He will provide you with further instructions.
 @match Tower|tower
-The Tower of Ordeal lies to the east
-of lone town. I'll give you the key
-when you are ready.
+The Tower of Ordeal lies to the east of lone town. I'll give you the key when you are ready.
 @match key|Key
-Here it is. The key for the Tower of
-Ordeal.
+Here it is. The key for the Tower of Ordeal.
 @match scroll
 You must find the scroll by yourself.
 @match yes
-Fine, but I must test your combat
-ability first. Go to the Tower of
-Ordeal, and search for a scroll there.
+Fine, but I must test your combat ability first. Go to the Tower of Ordeal, and search for a scroll there.
 @match *
-I am a member of Liberation Army.
-Do you want to join us?
+I am a member of Liberation Army. Do you want to join us?
 endmsg
 hp 100
 x 13
 y 12
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1587,9 +1576,7 @@ arch guildmaster
 name Dean, the guildmaster
 msg
 @match money
-Yes, money is an important issue
-during war. And that's why the
-Liberation Army cannot be defeated :-)
+Yes, money is an important issue during war. And that's why the Liberation Army cannot be defeated :-)
 @match *
 We're fighting for freedom.
 endmsg

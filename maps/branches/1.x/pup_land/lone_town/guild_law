@@ -5,7 +5,7 @@ region lonetown
 width 24
 height 17
 msg
-Created:  1996-12-18
+Created:  1996-02-18
 Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
@@ -225,9 +225,7 @@ arch guildmaster
 name James, the guildmaster
 msg
 @match *
-We are fighting to defend the law.
-Our enemies the resistance, they are
-all rascals.
+We are fighting to defend the law. Our enemies the resistance, they are all rascals.
 endmsg
 hp 5000
 maxhp 5000
@@ -481,13 +479,9 @@ arch elf
 name Reception of ???
 msg
 @match Yes|yes
-Sorry, but I have to test your combat
-abilities first: Enter the Cave of
-Ordeal and search for a scroll.
-I have opened the gate for you...
+Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll. I have opened the gate for you...
 @match *
-Sssh!
-Please lower your voice...
+Sssh! Please lower your voice...
 Do you want to join the Regular Army?
 endmsg
 face elf.131
@@ -496,6 +490,7 @@ x 4
 y 4
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -918,9 +913,7 @@ arch elf
 name Regular Army
 msg
 @match siegfried|saga
-Siegfried is a great hero in the
-history of pupland. You *must* read
-it.
+Siegfried is a great hero in the history of pupland. You *must* read it.
 @match *
 Do you know about the siegfried-saga?
 endmsg
@@ -929,6 +922,7 @@ x 8
 y 14
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -986,20 +980,18 @@ arch elf
 name Regular Army
 msg
 @match [Rr]esistance
-Lone town is the origin and center of
-the "resistance" movement.
+Lone town is the origin and center of the "resistance" movement.
 @match Regular|regular
-We'll win the war against Resistance
-because we can outnumber them.
+We'll win the war against the resistance because we can outnumber them.
 @match *
-This is the guild of Regular Army.
-I'm working as a spy.
+This is the guild of Regular Army. I'm working as a spy.
 endmsg
 hp 100
 x 9
 y 8
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1468,6 +1460,7 @@ x 14
 y 2
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -1956,10 +1949,7 @@ msg
 @match Siegfried
 He is our Hero!
 @match *
-Conglaturations! Now you are a member
-of Regular Army. Don't loose your
-passport, it enables you to pass the
-barrier station.
+Conglaturations! Now you are a member of Regular Army. Don't loose your passport, it enables you to pass the barrier station.
 endmsg
 sp 0
 maxsp 0
