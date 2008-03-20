@@ -1,13 +1,11 @@
 arch map
-name dress2
+name Dressing Room
 difficulty 15
 region lonetown
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jan 27 01:51:24 1996
+Created:  1996-02-27
 endmsg
 end
 arch marble
@@ -168,6 +166,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -234,6 +233,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -385,6 +385,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -432,6 +433,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -505,6 +507,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -576,6 +579,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -629,6 +633,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -693,6 +698,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -868,6 +874,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1124,6 +1131,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1151,6 +1159,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1506,6 +1515,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1554,6 +1564,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1593,6 +1604,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1801,6 +1813,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1
@@ -1832,6 +1845,7 @@ attack_movement 7
 level 18
 type 0
 attacktype 5
+move_type walk
 monster 1
 can_cast_spell 1
 can_use_scroll 1

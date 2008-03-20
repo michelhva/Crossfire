@@ -5,7 +5,7 @@ region lonetown
 width 16
 height 25
 msg
-Created:  1996-03-14
+Created:  1996-02-14
 endmsg
 end
 arch blocked
@@ -877,6 +877,7 @@ hp 100
 x 7
 y 12
 type 0
+move_type walk
 monster 1
 friendly 1
 end

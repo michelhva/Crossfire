@@ -1,12 +1,11 @@
 arch map
-name nf_bar
+name Night Flower Bar
+difficulty 1
 region lonetown
 width 26
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 05:55:01 1996
+Created:  1996-02-10
 endmsg
 end
 arch cobblestones
@@ -148,6 +147,7 @@ hp 100
 x 1
 y 5
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1448,6 +1448,7 @@ hp 100
 x 13
 y 16
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -2309,6 +2310,7 @@ hp 100
 x 21
 y 17
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -2330,6 +2332,7 @@ hp 100
 x 21
 y 18
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -2638,6 +2641,7 @@ hp 100
 x 23
 y 17
 type 0
+move_type walk
 monster 1
 friendly 1
 end

@@ -1,13 +1,11 @@
 arch map
-name dress3
+name Dressing Room
 difficulty 16
 region lonetown
 width 15
 height 32
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jan 27 04:38:51 1996
+Created:  1996-02-27
 endmsg
 end
 arch blocked
@@ -898,6 +896,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -922,6 +921,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -950,6 +950,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -978,6 +979,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1006,6 +1008,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1034,6 +1037,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1062,6 +1066,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1090,6 +1095,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1282,6 +1288,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1306,6 +1313,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1334,6 +1342,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1362,6 +1371,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1390,6 +1400,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1418,6 +1429,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1446,6 +1458,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1474,6 +1487,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1671,6 +1685,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1695,6 +1710,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1723,6 +1739,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1751,6 +1768,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -1767,7 +1785,6 @@ x 6
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 6
@@ -1782,7 +1799,6 @@ x 6
 y 28
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 6
@@ -1949,8 +1965,7 @@ arch wizard
 name Magician Leader
 msg
 @match *
-You came here to fight with my?
-Haha, you wouldn't dare!
+You came here to fight with me? Haha, you wouldn't dare!
 endmsg
 face wizard_blue.171
 animation wizard_blue
@@ -1976,6 +1991,7 @@ type 0
 attacktype 11
 carrying 100
 weight 1500
+move_type walk
 is_animated 1
 monster 1
 unaggressive 1
@@ -2054,6 +2070,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2078,6 +2095,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2106,6 +2124,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2134,6 +2153,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2150,7 +2170,6 @@ x 7
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2172,7 +2191,6 @@ arch button_lever
 x 7
 y 28
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2188,7 +2206,6 @@ y 29
 speed 0.500000
 value 1
 connected 1
-protected 1
 end
 arch unholy_ground
 x 7
@@ -2399,6 +2416,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2423,6 +2441,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2451,6 +2470,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2479,6 +2499,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2495,7 +2516,6 @@ x 8
 y 27
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 8
@@ -2510,7 +2530,6 @@ x 8
 y 28
 speed 0.500000
 connected 1
-protected 1
 end
 arch unholy_ground
 x 8
@@ -2725,6 +2744,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2749,6 +2769,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2777,6 +2798,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2805,6 +2827,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2833,6 +2856,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2861,6 +2885,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2889,6 +2914,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -2917,6 +2943,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3121,6 +3148,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3145,6 +3173,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3173,6 +3202,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3201,6 +3231,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3229,6 +3260,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3257,6 +3289,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3285,6 +3318,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
@@ -3313,6 +3347,7 @@ speed 0.320000
 attack_movement 7
 level 24
 type 0
+move_type walk
 monster 1
 can_cast_spell 1
 end
