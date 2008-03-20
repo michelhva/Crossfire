@@ -195,13 +195,5 @@ print("Done!");]]></code>
     <type>java.lang.String</type>
     <value>worldmap</value>
   </parameter>
-  <parameter>
-    <name>CheckDelay</name>
-    <description>The delay in milliseconds between map checks</description>
-    <type>java.lang.Integer</type>
-    <value>15000</value>
-    <minimum>0</minimum>
-    <maximum>86400000</maximum>
-  </parameter>
 </script>
 
