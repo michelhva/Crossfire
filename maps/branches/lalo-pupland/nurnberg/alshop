@@ -1,16 +1,16 @@
 arch map
-name ashop
+name Alchemy shop
 swap_time 30
 reset_timeout 1800
+difficulty 1
 region nurnberg
 shopitems inorganic:100;potion:90;container:100;*:-80
 shopmax 20000
 width 27
 height 27
 msg
-Creator: Xtreme
-Email: gnu@foo.bar
-Date: Wed Nov  5 16:39:36 1997
+Created:  1997-02-05 Xtreme
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch small_stones
@@ -353,6 +353,8 @@ end
 arch potion_heroism
 x 2
 y 14
+arch spell_heroism
+end
 end
 arch dungeon_floor
 x 2
@@ -2302,6 +2304,7 @@ hp 100
 x 15
 y 10
 type 0
+move_type walk
 monster 1
 friendly 1
 end

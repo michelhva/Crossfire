@@ -1,13 +1,12 @@
 arch map
-name <untitled>
+name Nurnberg Apartment
 swap_time 10
+difficulty 1
 region nurnberg
 width 13
 height 9
 msg
-Creator: Andreas Vogl
-Email: red.blaze@gmx.net
-Date: Sun Nov 19 23:36:33 2000
+Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
 endmsg
 end
 arch blocked
@@ -41,13 +40,14 @@ y 3
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -84,6 +84,7 @@ dam 5
 ac -20
 y 5
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -91,7 +92,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 y 6
@@ -163,6 +163,7 @@ ac -20
 x 1
 y 4
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -170,7 +171,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -237,6 +237,7 @@ ac -20
 x 2
 y 1
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -244,7 +245,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -272,13 +272,14 @@ y 2
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -306,13 +307,14 @@ y 3
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -354,6 +356,7 @@ ac -20
 x 2
 y 5
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -361,7 +364,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -389,13 +391,14 @@ y 6
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -423,13 +426,14 @@ y 7
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 x 2
@@ -573,13 +577,14 @@ x 4
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -607,6 +612,7 @@ ac -20
 x 4
 y 1
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -614,7 +620,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -642,6 +647,7 @@ ac -20
 x 4
 y 2
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -649,7 +655,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch dungeon_magic
 x 4
@@ -714,13 +719,14 @@ y 6
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -748,6 +754,7 @@ ac -20
 x 4
 y 7
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -755,7 +762,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -783,6 +789,7 @@ ac -20
 x 4
 y 8
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -790,7 +797,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -936,6 +942,7 @@ ac -20
 x 6
 y 1
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -943,7 +950,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -971,13 +977,14 @@ y 2
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -1005,13 +1012,14 @@ y 3
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -1053,6 +1061,7 @@ ac -20
 x 6
 y 5
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -1060,7 +1069,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -1088,13 +1096,14 @@ y 6
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -1122,13 +1131,14 @@ y 7
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 x 6
@@ -1195,6 +1205,7 @@ ac -20
 x 7
 y 4
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -1202,7 +1213,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 name darkness
@@ -1277,13 +1287,14 @@ y 3
 nrof 0
 level 100
 type 0
+resist_physical 100
 value 0
+move_type walk
 alive 1
 no_pick 1
 monster 1
 run_away 90
 sleep 1
-immune 1
 end
 arch blocked
 name darkness
@@ -1325,6 +1336,7 @@ ac -20
 x 8
 y 5
 level 100
+resist_physical 100
 weight 10000
 invisible 0
 glow_radius 0
@@ -1332,7 +1344,6 @@ move_type walk
 alive 1
 monster 1
 is_used_up 0
-immune 1
 end
 arch blocked
 x 8
@@ -1455,7 +1466,7 @@ maxhp 200
 x 11
 y 2
 level 40
-immune 1
+resist_physical 100
 end
 arch mover_1
 x 11
@@ -1468,7 +1479,6 @@ name 1
 x 11
 y 3
 connected 1
-protected 1
 end
 arch mover_1
 x 11

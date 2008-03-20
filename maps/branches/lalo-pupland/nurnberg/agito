@@ -1,12 +1,11 @@
 arch map
-name agito
+name Agito
+difficulty 1
 region nurnberg
 width 20
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb  7 22:02:17 1996
+Created:  1996-02-07
 endmsg
 end
 arch dirtfloor
@@ -168,6 +167,7 @@ hp 100
 x 1
 y 4
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -536,6 +536,7 @@ hp 100
 x 4
 y 7
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -765,10 +766,10 @@ Bauer's castle. Bauer deserves to DIE!
 @match eureca
 Eureca is the lord of this country.
 I mean, he used to be - before he
-dissapeared.
+disappeared.
 @match *
 Bauer has kidnapped Eureca! He caused
-the war... bauer is resposible for
+the war... bauer is responsible for
 EVERYTHING!
 endmsg
 face woman.131
@@ -1191,6 +1192,7 @@ hp 100
 x 10
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1418,6 +1420,7 @@ hp 100
 x 12
 y 6
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1505,6 +1508,7 @@ hp 100
 x 12
 y 17
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -1720,6 +1724,7 @@ hp 100
 x 14
 y 12
 type 0
+move_type walk
 monster 1
 friendly 1
 end

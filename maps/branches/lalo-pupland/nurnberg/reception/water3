@@ -1,5 +1,5 @@
 arch map
-name water3
+name Water
 reset_timeout 7200
 difficulty 9
 region nurnberg
@@ -8,9 +8,8 @@ height 16
 enter_x 1
 enter_y 1
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb 22 20:23:15 1996
+Created:  1996-02-22
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -2013,6 +2012,8 @@ end
 arch lightningwall_1
 x 17
 y 11
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 17

@@ -1,12 +1,11 @@
 arch map
-name <unnamed>
+name Headquarter of the Regular Army
+difficulty 1
 region nurnberg
 width 36
 height 40
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 24 15:48:40 2000
+Created:  2000-02-24
 endmsg
 end
 arch pstone_1
@@ -1525,6 +1524,7 @@ speed 0.001000
 type 0
 weight 700000
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end

@@ -1,12 +1,12 @@
 arch map
-name fire7
+name Fire
+difficulty 1
 region nurnberg
 width 16
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 19 01:38:55 1996
+Created:  1996-02-19
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -380,12 +380,13 @@ x 4
 y 5
 end
 arch firewall_4
-dam 58
 x 4
 y 5
 speed 0.250000
 speed_left -1.160000
 level 30
+arch spell_dragonbreath
+end
 end
 arch woodfloor
 x 4
@@ -396,12 +397,13 @@ x 4
 y 7
 end
 arch firewall_2
-dam 58
 x 4
 y 7
 speed 0.250000
 speed_left -0.410000
 level 30
+arch spell_dragonbreath
+end
 end
 arch woodfloor
 x 4
@@ -505,7 +507,6 @@ x 5
 y 6
 speed 0.500000
 connected 10
-protected 10
 end
 arch woodfloor
 x 5
@@ -676,7 +677,6 @@ x 7
 y 2
 speed 0.500000
 connected 1
-protected 1
 end
 arch woodfloor
 x 7
@@ -803,7 +803,6 @@ arch button_lever
 x 8
 y 6
 connected 10
-protected 10
 end
 arch woodfloor
 x 8
@@ -875,7 +874,6 @@ arch button_lever
 x 9
 y 2
 connected 1
-protected 1
 end
 arch woodfloor
 x 9

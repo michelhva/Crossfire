@@ -1,12 +1,11 @@
 arch map
-name water5
+name Water
+difficulty 1
 region nurnberg
 width 19
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Thu Feb 22 22:06:46 1996
+Created:  1996-02-22
 endmsg
 end
 arch dungeon_floor
@@ -1244,6 +1243,7 @@ x 11
 y 7
 material 256
 weight 1
+map_layer item
 move_type fly_low
 end
 arch dungeon_floor

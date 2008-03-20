@@ -1,12 +1,12 @@
 arch map
-name click
+name Click de Pon
+difficulty 1
 region nurnberg
 width 29
 height 22
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 06:23:50 1996
+Created:  1996-02-10
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1297,6 +1297,8 @@ end
 arch lightningwall_1
 x 10
 y 20
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 10
@@ -2680,6 +2682,8 @@ arch lightningwall_3
 x 20
 y 11
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 20
@@ -2689,6 +2693,8 @@ arch lightningwall_3
 x 20
 y 12
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 20
@@ -2698,6 +2704,8 @@ arch lightningwall_3
 x 20
 y 13
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 20
@@ -2707,6 +2715,8 @@ arch lightningwall_3
 x 20
 y 14
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 20
@@ -3288,6 +3298,8 @@ x 23
 y 17
 state 4
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 23
@@ -3333,6 +3345,8 @@ end
 arch lightningwall_7
 x 24
 y 1
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 24
@@ -3488,6 +3502,8 @@ x 24
 y 17
 state 4
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 24
@@ -3680,6 +3696,8 @@ x 25
 y 17
 state 4
 blocksview 0
+arch spell_sm_lightning
+end
 end
 arch woodfloor
 x 25

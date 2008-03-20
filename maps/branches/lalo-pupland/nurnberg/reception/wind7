@@ -1,12 +1,12 @@
 arch map
-name wind7
+name Wind
+difficulty 1
 region nurnberg
 width 26
 height 26
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Feb 28 20:02:30 1996
+Created:  1996-02-28
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1060,12 +1060,21 @@ ac 30
 x 5
 y 12
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_sm_lightning
+end
 end
 arch dungeon_magic
 x 5
@@ -1098,17 +1107,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 5
 y 14
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_frostbolt
+end
 end
 arch dungeon_magic
 x 5
@@ -1155,17 +1172,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 5
 y 17
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_firebolt
+end
 end
 arch dungeon_magic
 x 5
@@ -1216,12 +1241,21 @@ ac 30
 x 5
 y 20
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_sm_lightning
+end
 end
 arch invis_exit
 slaying reception
@@ -1560,17 +1594,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 7
 y 20
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_frostbolt
+end
 end
 arch invis_exit
 slaying reception
@@ -1736,17 +1778,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 8
 y 12
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_firebolt
+end
 end
 arch flagstone
 x 8
@@ -2157,17 +2207,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 10
 y 20
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_firebolt
+end
 end
 arch invis_exit
 slaying reception
@@ -2287,17 +2345,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 11
 y 12
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_frostbolt
+end
 end
 arch flagstone
 x 11
@@ -2644,12 +2710,21 @@ ac 30
 x 13
 y 12
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_sm_lightning
+end
 end
 arch flagstone
 x 13
@@ -2684,17 +2759,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 82
 ac 30
 x 13
 y 15
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_firebolt
+end
 end
 arch flagstone
 x 13
@@ -2729,17 +2812,25 @@ end
 arch lightningwall
 hp 24
 maxhp 24
-dam 83
 ac 30
 x 13
 y 18
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_frostbolt
+end
 end
 arch flagstone
 x 13
@@ -2772,12 +2863,21 @@ ac 30
 x 13
 y 20
 level 20
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+resist_confusion 100
+resist_acid 100
+resist_drain 100
+move_block 0
 alive 1
 no_pick 1
 no_pass 0
 tear_down 1
 pass_thru 1
-immune 254
+arch spell_sm_lightning
+end
 end
 arch invis_exit
 slaying reception

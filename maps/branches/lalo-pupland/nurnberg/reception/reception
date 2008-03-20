@@ -1,12 +1,12 @@
 arch map
-name reception
+name Reception
+difficulty 1
 region nurnberg
 width 40
 height 36
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 17 23:59:28 1996
+Created:  1996-02-17
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch evergreens
@@ -443,12 +443,13 @@ x 2
 y 9
 end
 arch firewall_3
-dam 139
 x 2
 y 9
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 2
@@ -507,6 +508,8 @@ end
 arch firewall_4
 x 2
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -516,6 +519,8 @@ arch firewall_3
 x 2
 y 20
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -525,6 +530,8 @@ arch firewall_3
 x 2
 y 21
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -534,6 +541,8 @@ arch firewall_3
 x 2
 y 22
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -543,6 +552,8 @@ arch firewall_3
 x 2
 y 23
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -552,6 +563,8 @@ arch firewall_3
 x 2
 y 24
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -561,6 +574,8 @@ arch firewall_3
 x 2
 y 25
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -570,6 +585,8 @@ arch firewall_3
 x 2
 y 26
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -579,6 +596,8 @@ arch firewall_3
 x 2
 y 27
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -588,6 +607,8 @@ arch firewall_3
 x 2
 y 28
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -597,6 +618,8 @@ arch firewall_3
 x 2
 y 29
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -606,6 +629,8 @@ arch firewall_3
 x 2
 y 30
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -615,6 +640,8 @@ arch firewall_3
 x 2
 y 31
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -624,6 +651,8 @@ arch firewall_2
 x 2
 y 32
 level 4
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 2
@@ -763,6 +792,8 @@ end
 arch firewall_5
 x 3
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 3
@@ -820,6 +851,8 @@ arch firewall_1
 x 3
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 3
@@ -929,12 +962,13 @@ x 4
 y 13
 end
 arch firewall_3
-dam 139
 x 4
 y 13
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 4
@@ -979,6 +1013,8 @@ end
 arch firewall_5
 x 4
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 4
@@ -1076,6 +1112,8 @@ arch firewall_1
 x 4
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 4
@@ -1125,7 +1163,6 @@ arch button_lever
 x 5
 y 4
 connected 41
-protected 41
 end
 arch xan
 name Maraial Mosquito
@@ -1224,6 +1261,8 @@ end
 arch firewall_5
 x 5
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 5
@@ -1296,6 +1335,8 @@ arch firewall_1
 x 5
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 5
@@ -1342,12 +1383,13 @@ y 4
 no_pass 0
 end
 arch firewall_5
-dam 139
 x 6
 y 4
 speed 0.050000
 speed_left -1.790000
 level 30
+arch spell_steambolt
+end
 end
 arch biglake_center
 x 6
@@ -1445,6 +1487,8 @@ end
 arch firewall_5
 x 6
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 6
@@ -1531,6 +1575,8 @@ arch firewall_1
 x 6
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 6
@@ -1672,6 +1718,8 @@ end
 arch firewall_5
 x 7
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 7
@@ -1751,6 +1799,8 @@ arch firewall_1
 x 7
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 7
@@ -1852,12 +1902,13 @@ x 8
 y 15
 end
 arch firewall_1
-dam 139
 x 8
 y 15
 speed 0.050000
 speed_left -1.370000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 8
@@ -1886,6 +1937,8 @@ end
 arch firewall_5
 x 8
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -1972,6 +2025,8 @@ arch firewall_1
 x 8
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 8
@@ -2111,6 +2166,8 @@ end
 arch firewall_5
 x 9
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 9
@@ -2183,6 +2240,8 @@ arch firewall_1
 x 9
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 9
@@ -2216,12 +2275,13 @@ x 10
 y 2
 end
 arch firewall_5
-dam 139
 x 10
 y 2
 speed 0.050000
 speed_left -1.790000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 10
@@ -2264,12 +2324,13 @@ x 10
 y 11
 end
 arch firewall_3
-dam 139
 x 10
 y 11
 speed 0.050000
 speed_left -0.480000
 level 30
+arch spell_steambolt
+end
 end
 arch dungeon_floor
 x 10
@@ -2318,6 +2379,8 @@ end
 arch firewall_5
 x 10
 y 19
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 10
@@ -2331,7 +2394,6 @@ arch ggate_closed
 x 10
 y 21
 connected 10
-protected 10
 end
 arch woodfloor
 x 10
@@ -2399,6 +2461,8 @@ arch firewall_1
 x 10
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 10
@@ -2620,6 +2684,8 @@ arch firewall_1
 x 11
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 11
@@ -2673,7 +2739,6 @@ x 12
 y 5
 speed 0.500000
 connected 41
-protected 41
 end
 arch dungeon_floor
 x 12
@@ -2835,7 +2900,6 @@ arch button_lever
 x 12
 y 29
 connected 10
-protected 10
 end
 arch guard_ant
 name fire ant
@@ -2852,7 +2916,6 @@ speed 0.500000
 attacktype 5
 stand_still 0
 can_see_in_dark 1
-immune 0
 end
 arch woodfloor
 x 12
@@ -2874,6 +2937,8 @@ arch firewall_1
 x 12
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 12
@@ -3012,7 +3077,6 @@ arch button_small
 x 13
 y 19
 connected 4
-protected 4
 end
 arch woodfloor
 x 13
@@ -3118,6 +3182,8 @@ arch firewall_1
 x 13
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 13
@@ -3253,7 +3319,6 @@ x 14
 y 19
 speed 0.500000
 connected 4
-protected 4
 end
 arch woodfloor
 x 14
@@ -3280,13 +3345,14 @@ y 22
 end
 arch firewall_1
 name anti-magic force
-dam 128
 x 14
 y 23
 speed -0.050000
 level 100
 no_pass 0
 blocksview 0
+arch spell_counterwall
+end
 end
 arch woodfloor
 x 14
@@ -3332,6 +3398,8 @@ arch firewall_1
 x 14
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 14
@@ -3420,7 +3488,6 @@ arch button_small
 x 15
 y 13
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 15
@@ -3435,7 +3502,6 @@ x 15
 y 14
 speed 0.500000
 connected 1
-protected 1
 end
 arch magic_mouth
 msg
@@ -3448,7 +3514,6 @@ arch button_small
 x 15
 y 15
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 15
@@ -3463,7 +3528,6 @@ x 15
 y 16
 speed 0.500000
 connected 6
-protected 6
 end
 arch cobblestones2
 x 15
@@ -3478,7 +3542,6 @@ x 15
 y 18
 speed 0.500000
 connected 8
-protected 8
 end
 arch magic_mouth
 msg
@@ -3491,7 +3554,6 @@ arch button_small
 x 15
 y 19
 connected 4
-protected 4
 end
 arch woodfloor
 x 15
@@ -3529,6 +3591,8 @@ arch firewall_7
 x 15
 y 23
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3538,6 +3602,8 @@ arch firewall_7
 x 15
 y 24
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3547,6 +3613,8 @@ arch firewall_7
 x 15
 y 25
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3556,6 +3624,8 @@ arch firewall_7
 x 15
 y 26
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3565,6 +3635,8 @@ arch firewall_7
 x 15
 y 27
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3574,6 +3646,8 @@ arch firewall_7
 x 15
 y 28
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3583,6 +3657,8 @@ arch firewall_7
 x 15
 y 29
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3592,6 +3668,8 @@ arch firewall_7
 x 15
 y 30
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3601,6 +3679,8 @@ arch firewall_7
 x 15
 y 31
 level 10
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -3610,6 +3690,8 @@ arch firewall_8
 x 15
 y 32
 level 7
+arch spell_small_fireball
+end
 end
 arch woodfloor
 x 15
@@ -4441,7 +4523,6 @@ arch button_small
 x 19
 y 13
 connected 2
-protected 2
 end
 arch flagstone
 x 19
@@ -4456,7 +4537,6 @@ x 19
 y 14
 speed 0.500000
 connected 2
-protected 2
 end
 arch magic_mouth
 msg
@@ -4469,7 +4549,6 @@ arch button_small
 x 19
 y 15
 connected 2
-protected 2
 end
 arch flagstone
 x 19
@@ -4484,7 +4563,6 @@ x 19
 y 16
 speed 0.500000
 connected 7
-protected 7
 end
 arch cobblestones2
 x 19
@@ -4499,7 +4577,6 @@ x 19
 y 18
 speed 0.500000
 connected 9
-protected 9
 end
 arch magic_mouth
 msg
@@ -4512,7 +4589,6 @@ arch button_small
 x 19
 y 19
 connected 3
-protected 3
 end
 arch marble
 x 19
@@ -4732,7 +4808,6 @@ x 20
 y 19
 speed 0.500000
 connected 3
-protected 3
 end
 arch marble
 x 20
@@ -4826,7 +4901,6 @@ x 20
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 20
@@ -4963,7 +5037,6 @@ arch button_small
 x 21
 y 19
 connected 3
-protected 3
 end
 arch marble
 x 21
@@ -5666,7 +5739,6 @@ x 24
 y 29
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5678,7 +5750,6 @@ x 24
 y 30
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5690,7 +5761,6 @@ x 24
 y 31
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5701,7 +5771,6 @@ x 24
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 24
@@ -5845,7 +5914,6 @@ arch button_lever
 x 25
 y 23
 connected 20
-protected 20
 end
 arch snake
 name Electric eel
@@ -5862,8 +5930,8 @@ speed 0.500000
 speed_left -2.500000
 level 8
 attacktype 8
+resist_electricity 100
 unaggressive 1
-immune 8
 end
 arch marble
 x 25
@@ -5892,6 +5960,8 @@ end
 arch lightningwall_4
 x 25
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 25
@@ -6083,6 +6153,8 @@ end
 arch lightningwall_5
 x 26
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 26
@@ -6281,6 +6353,8 @@ end
 arch lightningwall_6
 x 27
 y 27
+arch spell_sm_lightning
+end
 end
 arch marble
 x 27
@@ -6491,7 +6565,6 @@ x 28
 y 29
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6503,7 +6576,6 @@ x 28
 y 30
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6515,7 +6587,6 @@ x 28
 y 31
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6526,7 +6597,6 @@ x 28
 y 32
 speed 0.500000
 connected 20
-protected 20
 end
 arch marble
 x 28
@@ -6615,7 +6685,6 @@ arch button_lever
 x 29
 y 9
 connected 50
-protected 50
 end
 arch stalker
 name Sylph
@@ -7216,7 +7285,6 @@ arch ggate_closed
 x 32
 y 3
 connected 50
-protected 50
 end
 arch flagstone
 x 32
@@ -8179,7 +8247,6 @@ x 37
 y 27
 speed 0.000000
 connected 321
-protected 321
 end
 arch woman
 msg

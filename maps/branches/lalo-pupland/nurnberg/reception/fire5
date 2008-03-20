@@ -1,13 +1,12 @@
 arch map
-name fire5
+name Fire
 difficulty 10
 region nurnberg
 width 21
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Feb 18 23:36:15 1996
+Created:  1996-02-18
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -175,11 +174,12 @@ end
 arch firewall_2
 name dragon statue
 face fire_drag.131
-dam 82
 x 1
 y 12
 speed 1.000000
 level 60
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 1
@@ -247,7 +247,7 @@ name mysterious crater
 x 2
 y 2
 type 0
-walk_on 0
+move_on 0
 end
 arch woodfloor
 x 2
@@ -296,7 +296,7 @@ name mysterious crater
 x 2
 y 5
 type 0
-walk_on 0
+move_on 0
 end
 arch woodfloor
 x 2
@@ -452,11 +452,12 @@ end
 arch firewall_8
 name dragon statue
 face fire_drag.171
-dam 82
 x 3
 y 12
 speed 1.000000
 level 60
+arch spell_firebolt
+end
 end
 arch woodfloor
 x 3
@@ -1364,7 +1365,7 @@ name mysterious crater
 x 10
 y 2
 type 0
-walk_on 0
+move_on 0
 end
 arch woodfloor
 x 10
@@ -1411,7 +1412,7 @@ name mysterious crater
 x 10
 y 5
 type 0
-walk_on 0
+move_on 0
 end
 arch woodfloor
 x 10

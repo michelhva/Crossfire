@@ -1,5 +1,6 @@
 arch map
-name nf_bar
+name Night Flower Bar
+difficulty 1
 region nurnberg
 shopitems food:100;*:-100
 shopgreed 1.50000
@@ -7,9 +8,7 @@ shopmax 5000
 width 27
 height 20
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Feb 10 05:55:01 1996
+Created:  1996-02-10
 endmsg
 end
 arch cobblestones
@@ -308,6 +307,7 @@ hp 100
 x 2
 y 5
 type 0
+move_type walk
 monster 1
 unaggressive 1
 end
@@ -729,7 +729,7 @@ msg
 "Kurte" - I don't have the slightest
 idea what or who that might be.
 @match yes|beer|war|senseless
-Did you ever meet the scolars of Kurte
+Did you ever meet the scholars of Kurte
 in their huts next to the sea?
 They are so wise, ask them about the
 war...
@@ -743,6 +743,7 @@ y 10
 speed_left -7.600000
 type 0
 randomitems none
+move_type walk
 monster 1
 friendly 1
 end
@@ -789,6 +790,7 @@ x 4
 y 14
 type 0
 randomitems standard
+move_type walk
 monster 1
 friendly 1
 end
@@ -1869,7 +1871,7 @@ name soldier
 msg
 @match money|would
 If I had more money I would do the
-same as Eureca: Grab it and dissapear!
+same as Eureca: Grab it and disappear!
 But I would take one of those two
 bunnies with me...
 @match *
@@ -3319,6 +3321,7 @@ hp 100
 x 22
 y 17
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -3340,6 +3343,7 @@ hp 100
 x 22
 y 18
 type 0
+move_type walk
 monster 1
 friendly 1
 end
@@ -3674,6 +3678,7 @@ x 24
 y 17
 type 0
 randomitems standard
+move_type walk
 monster 1
 friendly 1
 end
