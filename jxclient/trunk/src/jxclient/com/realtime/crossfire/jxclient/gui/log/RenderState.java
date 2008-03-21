@@ -124,6 +124,29 @@ public class RenderState
     }
 
     /**
+     * Some lines have been replaced at the end of the buffer.
+     *
+     * @param buffer The displayed buffer.
+     *
+     * @param lines The number of lines that have been replaced.
+     */
+    public synchronized void linesReplaced(final Buffer buffer, final int lines)
+    {
+        if (topOffset < 0)
+        {
+            scrollToBottom(buffer);
+        }
+        else if (!canScrollDown)
+        {
+            scrollToBottom(buffer);
+        }
+        else
+        {
+            mustRepaint = true;
+        }
+    }
+
+    /**
      * Some lines have been removed from the buffer.
      *
      * @param buffer The displayed buffer.

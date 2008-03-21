@@ -39,6 +39,16 @@ public interface BufferListener
     void linesAdded(Buffer buffer, int lines);
 
     /**
+     * Some lines have been replaced at the end of the buffer.
+     *
+     * @param buffer The buffer that has changed.
+     *
+     * @param lines The number of lines that have been replaced at the end of
+     * the buffer.
+     */
+    void linesReplaced(Buffer buffer, int lines);
+
+    /**
      * Some lines have been removed from the buffer.
      *
      * @param buffer The buffer that has changed.

@@ -73,6 +73,13 @@ public class RenderStateManager
         }
 
         /** {@inheritDoc} */
+        public void linesReplaced(final Buffer buffer, final int lines)
+        {
+            renderState.linesReplaced(buffer, lines);
+            fireChanges();
+        }
+
+        /** {@inheritDoc} */
         public void linesRemoved(final Buffer buffer, final List<Line> lines)
         {
             renderState.linesRemoved(buffer, lines);

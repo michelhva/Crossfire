@@ -121,6 +121,24 @@ public class Buffer implements Iterable<Line>
     }
 
     /**
+     * Replace the last {@link Line} of this buffer.
+     *
+     * @param line The replacing line.
+     */
+    public void replaceLine(final Line line)
+    {
+        final int height = calculateHeight(line);
+        line.setHeight(height);
+        totalHeight += height;
+        lines.set(lines.size()-1, line);
+
+        for (final BufferListener listener : listeners)
+        {
+            listener.linesReplaced(this, 1);
+        }
+    }
+
+    /**
      * Prune excess lines.
      */
     public void prune()
