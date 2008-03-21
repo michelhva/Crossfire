@@ -1727,7 +1727,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         if (infoType.equals("image_info"))
         {
             final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
-            final int nrpics = Integer.parseInt(d.readLine());
+            final String info = d.readLine();
+            if (info == null)
+            {
+                throw new IOException("Truncated parameter in image_info");
+            }
+            final int nrpics = Integer.parseInt(info);
             sendAddme();
         }
         else if (infoType.equals("skill_info"))
