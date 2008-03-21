@@ -136,7 +136,7 @@ public class Metaserver
         serverCache.expire(EXPIRE_INTERVAL*1000);
         final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
 
-        parseEntry(oldEntries, "127.0.0.1|0|localhost|0|1.8.0|localhost|0|0|0");
+        parseEntry(oldEntries, "127.0.0.1|0|localhost|0|--|localhost|0|0|0");
         try
         {
             final Socket socket = new Socket(metaserver_name, metaserver_port);
