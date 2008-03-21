@@ -169,7 +169,7 @@ public class RenderState
      *
      * @return The line index.
      */
-    public int getTopIndex()
+    public synchronized int getTopIndex()
     {
         return topIndex;
     }
@@ -179,7 +179,7 @@ public class RenderState
      *
      * @return The pixel offset.
      */
-    public int getTopOffset()
+    public synchronized int getTopOffset()
     {
         return topOffset;
     }
@@ -189,7 +189,7 @@ public class RenderState
      *
      * @return The location.
      */
-    public int getScrollPos()
+    public synchronized int getScrollPos()
     {
         return scrollPos;
     }
@@ -199,7 +199,7 @@ public class RenderState
      *
      * @return Whether scrolling up is possible.
      */
-    public boolean canScrollUp()
+    public synchronized boolean canScrollUp()
     {
         return canScrollUp;
     }
@@ -209,7 +209,7 @@ public class RenderState
      *
      * @return Whether scrolling down is possible.
      */
-    public boolean canScrollDown()
+    public synchronized boolean canScrollDown()
     {
         return canScrollDown;
     }
@@ -222,7 +222,7 @@ public class RenderState
      *
      * @return Whether the view should be repainted.
      */
-    public boolean mustRepaint()
+    public synchronized boolean mustRepaint()
     {
         final boolean result = mustRepaint;
         mustRepaint = false;
