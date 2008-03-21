@@ -308,10 +308,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         public void playerReceived(final CfPlayer player)
         {
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
-            if (player != null)
-            {
-                commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
-            }
+            commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
         }
 
         /** {@inheritDoc} */

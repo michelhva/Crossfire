@@ -365,9 +365,12 @@ public class ItemsManager
     {
         if (this.player == player)
         {
-            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            if (this.player != null)
             {
-                listener.playerReceived(this.player);
+                for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+                {
+                    listener.playerReceived(this.player);
+                }
             }
             return;
         }
