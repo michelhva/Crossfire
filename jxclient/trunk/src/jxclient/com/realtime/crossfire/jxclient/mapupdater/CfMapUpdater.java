@@ -138,6 +138,14 @@ public class CfMapUpdater
     }
 
     /**
+     * Reset the animation state.
+     */
+    public static void reset()
+    {
+        visibleAnimations.clear();
+    }
+
+    /**
      * Start processing of a set of map square changes.
      */
     public static void processMapBegin()
