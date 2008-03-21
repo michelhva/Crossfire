@@ -3,9 +3,8 @@ name Keep Basement
 width 30
 height 22
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    9/3/2002
+Created:  2002-03-09 Avion
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch teleporter
@@ -3899,14 +3898,20 @@ end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch firewall
 x 26
 y 5
+arch spell_small_fireball
+end
 end
 arch dungeon_floor
 x 26

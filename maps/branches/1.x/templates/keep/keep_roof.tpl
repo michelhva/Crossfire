@@ -5,7 +5,7 @@ height 20
 enter_x 10
 enter_y 8
 msg
-Created:  2002-09-03 Avion
+Created:  2002-03-09 Avion
 endmsg
 outdoor 1
 end

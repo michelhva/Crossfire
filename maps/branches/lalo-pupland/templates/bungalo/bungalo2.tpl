@@ -5,9 +5,7 @@ height 18
 enter_x 1
 enter_y 16
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    9/19/2002
+Created:  2002-09-19 Avion
 endmsg
 outdoor 1
 end
@@ -1085,7 +1083,7 @@ y 7
 unique 1
 end
 arch goldfloor
-name drop x for thamaturgist desk
+name drop x for thaumaturgist desk
 x 6
 y 7
 end

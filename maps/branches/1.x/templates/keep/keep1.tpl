@@ -6,7 +6,7 @@ height 22
 enter_x 7
 enter_y 20
 msg
-Created:  2002-09-03 Avion
+Created:  2002-03-09 Avion
 endmsg
 end
 arch teleporter
