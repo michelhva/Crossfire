@@ -48,7 +48,7 @@ public class JXCWindowRenderer
      */
     private final Object redrawSemaphore;
 
-    private BufferStrategy bufferStrategy;
+    private BufferStrategy bufferStrategy = null;
 
     private DisplayMode oldDisplayMode = null;
 
