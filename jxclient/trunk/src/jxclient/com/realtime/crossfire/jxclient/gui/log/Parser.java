@@ -94,6 +94,21 @@ public class Parser
     private Color color = null;
 
     /**
+     * The number of repetitions of the previously added line of text.
+     */
+    private int lastCount = 0;
+
+    /**
+     * The color of the previously added line of text.
+     */
+    private Color lastColor = null;
+
+    /**
+     * The contents of the previously added line of text.
+     */
+    private String lastText = "";
+
+    /**
      * Parse a text message.
      *
      * @param text The text message to parse.
@@ -158,6 +173,34 @@ public class Parser
      */
     private void parseLine(final String text, final Color defaultColor, final Buffer buffer)
     {
+        if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor))
+        {
+            lastCount++;
+            buffer.replaceLine(parseLine(text+" [["+lastCount+" times]", defaultColor, true));
+        }
+        else
+        {
+            lastCount = 1;
+            lastText = text;
+            lastColor = defaultColor;
+            buffer.addLine(parseLine(text, defaultColor, false));
+        }
+    }
+
+    /**
+     * Parse one text line.
+     *
+     * @param text The text to process.
+     *
+     * @param defaultColor The default color to use.
+     *
+     * @param replaceLastLine If unset, append the new line; else replace the
+     * previously added line.
+     *
+     * @return the <code>Line</code> instance
+     */
+    private Line parseLine(final String text, final Color defaultColor, boolean replaceLastLine)
+    {
         final Line line = new Line();
 
         int begin = 0;
@@ -166,17 +209,29 @@ public class Parser
         for (int i = 0; i < imax; i++)
         {
             final char ch = text.charAt(i);
-            if (active && ch == ']')
+            if (active)
             {
-                processTag(text.substring(begin, i), defaultColor);
-                begin = i+1;
-                active = false;
+                if (ch == ']')
+                {
+                    processTag(text.substring(begin, i), defaultColor);
+                    begin = i+1;
+                    active = false;
+                }
+                else if (ch == '[' && i == begin)
+                {
+                    processText("[", line);
+                    begin = i+1;
+                    active = false;
+                }
             }
-            else if (ch == '[')
+            else
             {
-                processText(text.substring(begin, i), line);
-                begin = i+1;
-                active = true;
+                if (ch == '[')
+                {
+                    processText(text.substring(begin, i), line);
+                    begin = i+1;
+                    active = true;
+                }
             }
         }
         if (!active)
@@ -184,7 +239,7 @@ public class Parser
             processText(text.substring(begin, imax), line);
         }
 
-        buffer.addLine(line);
+        return line;
     }
 
     /**
@@ -197,8 +252,20 @@ public class Parser
     private void parseLineWithoutMediaTags(final String text, final Buffer buffer)
     {
         final Line line = new Line();
-        processText(text, line);
-        buffer.addLine(line);
+        if (lastCount > 0 && text.equals(lastText) && lastColor == null)
+        {
+            lastCount++;
+            processText(text+" ["+lastCount+" times]", line);
+            buffer.replaceLine(line);
+        }
+        else
+        {
+            lastCount = 1;
+            lastText = text;
+            lastColor = null;
+            processText(text, line);
+            buffer.addLine(line);
+        }
     }
 
     /**
