@@ -143,7 +143,7 @@ public class Timeouts
             final Event event = new Event(timeout, timeoutEvent);
             timeoutEvents.put(timeoutEvent, event);
             events.add(event);
-            events.notify();
+            events.notifyAll();
         }
     }
 
