@@ -53,7 +53,7 @@ public class GUIMagicMap extends GUIElement
     /**
      * The size of one tile in pixels.
      */
-    private final int TILE_SIZE = 4;
+    private static final int TILE_SIZE = 4;
 
     /**
      * The x offset for the visible map area.
