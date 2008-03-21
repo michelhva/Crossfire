@@ -2102,7 +2102,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send ncom repeat="+repeat+" cmd="+command+"\n");
+            debugProtocolWrite("send ncom no="+packet+" repeat="+repeat+" cmd="+command+"\n");
         }
         final int thisPacket;
         synchronized (writeBuffer)
