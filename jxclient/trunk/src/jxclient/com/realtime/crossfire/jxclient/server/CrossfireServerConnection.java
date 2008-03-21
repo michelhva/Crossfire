@@ -1933,7 +1933,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send apply tag="+tag+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(applyPrefix);
@@ -1953,7 +1953,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send askface face="+num+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(askfacePrefix);
@@ -1973,7 +1973,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send examine tag="+tag+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(examinePrefix);
@@ -1995,7 +1995,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send lock tag="+tag+" val="+val+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(lockPrefix);
@@ -2018,7 +2018,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send lockat pos="+dx+"/"+dy+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(lookatPrefix);
@@ -2052,7 +2052,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send mark tag="+tag+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(markPrefix);
@@ -2076,7 +2076,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send move tag="+tag+" to="+to+" nrof="+nrof+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(movePrefix);
@@ -2105,7 +2105,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             debugProtocolWrite("send ncom repeat="+repeat+" cmd="+command+"\n");
         }
         final int thisPacket;
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             thisPacket = packet++&0x00FF;
             byteBuffer.clear();
@@ -2129,7 +2129,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send reply text="+text+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(replyPrefix);
@@ -2149,7 +2149,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send requestinfo type="+infoType+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(requestinfoPrefix);
@@ -2169,7 +2169,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send setup options="+Arrays.toString(options)+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(setupPrefix);
@@ -2205,7 +2205,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send toggleextendedtext types="+Arrays.toString(types)+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(toggleextendedtextPrefix);
@@ -2233,7 +2233,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             debugProtocolWrite("send version cs="+csval+" sc="+scval+" info="+vinfo+"\n");
         }
-        synchronized(writeBuffer)
+        synchronized (writeBuffer)
         {
             byteBuffer.clear();
             byteBuffer.put(versionPrefix);

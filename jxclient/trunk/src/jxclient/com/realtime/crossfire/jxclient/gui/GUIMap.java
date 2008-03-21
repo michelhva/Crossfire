@@ -82,7 +82,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
         {
-            synchronized(mybuffer)
+            synchronized (mybuffer)
             {
                 final Graphics2D g = mybuffer.createGraphics();
                 try
@@ -113,7 +113,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
-            synchronized(mybuffer)
+            synchronized (mybuffer)
             {
                 render();
             }
@@ -130,7 +130,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
         {
-            synchronized(mybuffer)
+            synchronized (mybuffer)
             {
                 final int dx = -evt.getDX();
                 final int dy = -evt.getDY();
