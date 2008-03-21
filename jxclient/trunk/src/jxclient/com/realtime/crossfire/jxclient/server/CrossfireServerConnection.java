@@ -1799,9 +1799,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     /**
      * Handles the setup server to client command.
      * @param options The option/value pairs.
-     * @since 1.0
+     * @throws UnknownCommandException If a protocol error occurs
      */
-    private void cmd_setup(final List<String> options)
+    private void cmd_setup(final List<String> options) throws UnknownCommandException
     {
         for (int i = 0; i+1 < options.size(); i += 2)
         {
@@ -1835,48 +1835,42 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the newmapcmd=1 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("Error: the server is too old for this client since it does not support the newmapcmd=1 setup option.");
                 }
             }
             else if (option.equals("facecache"))
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the facecache=1 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is too old for this client since it does not support the facecache=1 setup option.");
                 }
             }
             else if (option.equals("extendedTextInfos"))
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the extendedTextInfos=1 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is too old for this client since it does not support the extendedTextInfos=1 setup option.");
                 }
             }
             else if (option.equals("itemcmd"))
             {
                 if (!value.equals("2"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the itemcmd=2 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is too old for this client since it does not support the itemcmd=2 setup option.");
                 }
             }
             else if (option.equals("mapsize"))
             {
                 if (!value.equals(MAP_WIDTH+"x"+MAP_HEIGHT))
                 {
-                    System.err.println("Error: the server is not suitable for this client since it does not support a map size of "+MAP_WIDTH+"x"+MAP_HEIGHT+".");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is not suitable for this client since it does not support a map size of "+MAP_WIDTH+"x"+MAP_HEIGHT+".");
                 }
             }
             else if (option.equals("map2cmd"))
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the map2cmd=1 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is too old for this client since it does not support the map2cmd=1 setup option.");
                 }
             }
             else if (option.equals("darkness"))
@@ -1887,13 +1881,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 if (!value.equals("1"))
                 {
-                    System.err.println("Error: the server is too old for this client since it does not support the tick=1 setup option.");
-                    System.exit(1);
+                    throw new UnknownCommandException("the server is too old for this client since it does not support the tick=1 setup option.");
                 }
             }
             else
             {
-                System.err.println("Warning: got unknown option from server: "+option+"="+value);
+                System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
             }
         }
     }
