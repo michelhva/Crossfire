@@ -710,10 +710,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             optionManager.saveOptions();
             SoundManager.instance.shutdown();
         }
-        catch (final Exception e)
+        catch (final InterruptedException e)
         {
-            e.printStackTrace();
-            System.exit(1);
+            // ignore
         }
     }
 
