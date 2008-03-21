@@ -219,6 +219,12 @@ public class RenderStateTest extends TestCase
                 }
 
                 /** {@inheritDoc} */
+                public void linesReplaced(final Buffer buffer, final int lines)
+                {
+                    rs.linesReplaced(buffer, lines);
+                }
+
+                /** {@inheritDoc} */
                 public void linesRemoved(final Buffer buffer, final List<Line> lines)
                 {
                     rs.linesRemoved(buffer, lines);
