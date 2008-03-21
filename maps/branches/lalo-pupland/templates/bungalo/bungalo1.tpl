@@ -5,9 +5,7 @@ height 22
 enter_x 6
 enter_y 20
 msg
-Creator: Avion
-CF Java Map Editor
-Date:    9/18/2002
+Created:  2002-09-18 Avion
 endmsg
 outdoor 1
 end
