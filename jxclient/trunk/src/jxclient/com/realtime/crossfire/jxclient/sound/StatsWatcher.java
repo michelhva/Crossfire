@@ -20,6 +20,9 @@
 package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.GuiStateListener;
+import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
+import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
@@ -32,6 +35,11 @@ import com.realtime.crossfire.jxclient.stats.Stats;
  */
 public class StatsWatcher
 {
+    /**
+     * Duration for which to ignore level changes after login.
+     */
+    private static final long DELAY = 1000;
+
     /**
      * The stats instance to watch.
      */
@@ -53,10 +61,11 @@ public class StatsWatcher
     private int level;
 
     /**
-     * If set, ignore the next level change. This is used to suppress false
-     * positives right after login.
+     * Ignore level changes until this time has reached. This is used to
+     * suppress false positives right after login. The value <code>0</code>
+     * means not to ignore level changes.
      */
-    private boolean ignoreNextLevelChange = true;
+    private long ignoreLevelChange = System.currentTimeMillis()+DELAY;
 
     /**
      * The crossfire stats listener attached to {@link #stats}.
@@ -69,7 +78,7 @@ public class StatsWatcher
             checkStats();
             if (evt.isReset())
             {
-                ignoreNextLevelChange = true;
+                ignoreLevelChange = System.currentTimeMillis()+DELAY;
             }
         }
     };
@@ -83,7 +92,31 @@ public class StatsWatcher
         public void guiStateChanged(final JXCWindowRenderer.GuiState guiState)
         {
             active = guiState == JXCWindowRenderer.GuiState.PLAYING;
-            ignoreNextLevelChange = true;
+            ignoreLevelChange = System.currentTimeMillis()+DELAY;
+        }
+    };
+
+    /**
+     * The player listener.
+     */
+    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    {
+        /** {@inheritDoc} */
+        public void playerReceived(final CfPlayer player)
+        {
+            ignoreLevelChange = System.currentTimeMillis()+DELAY;
+        }
+
+        /** {@inheritDoc} */
+        public void playerAdded(final CfPlayer player)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void playerRemoved(final CfPlayer player)
+        {
+            // ignore
         }
     };
 
@@ -102,6 +135,7 @@ public class StatsWatcher
         stats.addCrossfireStatsListener(crossfireStatsListener);
         jxcWindowRenderer.addGuiStateListener(guiStateListener);
         guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
+        ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
     }
 
     /**
@@ -122,11 +156,11 @@ public class StatsWatcher
         final int level = stats.getStat(Stats.CS_STAT_LEVEL);
         if (this.level != level)
         {
-            if (ignoreNextLevelChange)
+            if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())
             {
-                ignoreNextLevelChange = false;
+                ignoreLevelChange = 0;
             }
-            else if (this.level < level && active)
+            if (ignoreLevelChange == 0 && this.level < level && active)
             {
                 playClip(Sounds.LEVEL_UP);
             }
