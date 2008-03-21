@@ -281,7 +281,7 @@ public class CfMapUpdaterTest extends TestCase
 
     private static void defineFace(final int face, final String name, final byte[] data)
     {
-        Faces.setFace(face, 0, 0, name);
-        Faces.setImage(face, 0, data, 0, data.length);
+        Faces.setFace(face, 0, name);
+        Faces.setImage(face, data, 0, data.length);
     }
 }

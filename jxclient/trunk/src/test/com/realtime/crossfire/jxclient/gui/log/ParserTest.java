@@ -97,7 +97,7 @@ public class ParserTest extends TestCase
         checkResult(""
             +"buffer:\n"
             +"line:\n"
-            +"segment:abcd]e\n"
+            +"segment:abc[]d]e\n"
         );
     }
 
