@@ -1,12 +1,11 @@
 arch map
-name bed_room
+name Bed Room
+difficulty 1
 region pupland
 width 10
 height 7
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sat Jun  1 08:50:22 1996
+Created:  1996-06-01
 endmsg
 end
 arch dungeon_magic

@@ -1,12 +1,11 @@
 arch map
-name e-hall
+name East Hall
+difficulty 1
 region pupland
 width 17
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Wed Jul 17 18:04:22 1996
+Created:  1996-02-17
 endmsg
 end
 arch flagstone
@@ -1678,7 +1677,7 @@ end
 arch flagstone
 x 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 end
 arch flagstone

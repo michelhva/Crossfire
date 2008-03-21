@@ -1,12 +1,11 @@
 arch map
-name e_hall
+name E Hall
+difficulty 1
 region pupland
 width 17
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun 10 15:22:19 1996
+Created:  1996-02-10
 endmsg
 end
 arch blocked
@@ -1075,7 +1074,6 @@ name 11
 x 12
 y 3
 connected 11
-protected 11
 end
 arch grassdark
 name grass
@@ -1093,7 +1091,6 @@ name 11
 x 12
 y 4
 connected 11
-protected 11
 end
 arch grassdark
 name grass
@@ -1184,7 +1181,6 @@ name 11
 x 13
 y 2
 connected 11
-protected 11
 end
 arch grassdark
 name grass
@@ -1202,7 +1198,6 @@ name 11
 x 13
 y 3
 connected 11
-protected 11
 end
 arch grassdark
 name grass
@@ -1220,7 +1215,6 @@ name 11
 x 13
 y 4
 connected 11
-protected 11
 end
 arch grassdark
 name grass
@@ -1551,7 +1545,6 @@ endmsg
 x 16
 y 12
 connected 10
-protected 10
 end
 arch button_small
 name 10
@@ -1559,7 +1552,6 @@ x 16
 y 12
 weight 1000
 connected 10
-protected 10
 end
 arch creator
 name 11
@@ -1567,7 +1559,6 @@ other_arch boulder
 x 16
 y 12
 connected 11
-protected 11
 end
 arch blocked
 x 16
