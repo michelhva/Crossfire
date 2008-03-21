@@ -40,7 +40,7 @@ public class PoisonWatcher
      * Timeout after that the "poisoned" state is reset. This allow to prevent
      * a stuck poison warning if the deassertion was missed for any reason.
      */
-    private final int TIMEOUT_DEASSERT = 10000;
+    private static final int TIMEOUT_DEASSERT = 10000;
 
     /**
      * The text message the server sends in poisoned state.
