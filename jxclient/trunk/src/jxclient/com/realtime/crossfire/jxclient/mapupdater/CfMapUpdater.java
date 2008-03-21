@@ -384,7 +384,6 @@ public class CfMapUpdater
     {
         processMapBegin();
 
-        final List<CfMapSquare> l = new LinkedList<CfMapSquare>();
         for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
         {
             for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
