@@ -319,12 +319,12 @@ public class Settings
             return;
         }
 
-        for (final String key : node.keySet())
+        for (final Map.Entry<String, String> entry : node.entrySet())
         {
             writer.newLine();
-            writer.write(Codec.encode(key));
+            writer.write(Codec.encode(entry.getKey()));
             writer.write("=");
-            writer.write(Codec.encode(node.get(key)));
+            writer.write(Codec.encode(entry.getValue()));
             writer.newLine();
         }
     }
