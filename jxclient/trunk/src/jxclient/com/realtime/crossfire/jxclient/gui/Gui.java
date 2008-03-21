@@ -227,7 +227,7 @@ public class Gui
             for (final GUIElement element : visibleElements)
             {
                 final BufferedImage bufferedImage = element.getBuffer();
-                synchronized(bufferedImage)
+                synchronized (bufferedImage)
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();
@@ -250,7 +250,7 @@ public class Gui
             for (final GUIElement element : visibleElements)
             {
                 final BufferedImage bufferedImage = element.getBuffer();
-                synchronized(bufferedImage)
+                synchronized (bufferedImage)
                 {
                     g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
                     element.resetChanged();

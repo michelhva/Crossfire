@@ -171,7 +171,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
         {
-            synchronized(mybuffer)
+            synchronized (mybuffer)
             {
                 final CfMap map = evt.getMap();
                 final int x0 = map.getOffsetX();

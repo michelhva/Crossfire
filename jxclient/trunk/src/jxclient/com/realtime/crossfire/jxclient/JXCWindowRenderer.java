@@ -262,7 +262,7 @@ public class JXCWindowRenderer
                 {
                     redrawBlack(g);
                 }
-                synchronized(redrawSemaphore)
+                synchronized (redrawSemaphore)
                 {
                     redrawGUIBasic(g);
                     redrawGUIDialog(g);
@@ -313,7 +313,7 @@ public class JXCWindowRenderer
         if (tooltip != null && tooltip.isVisible())
         {
             final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized(bufferedImage)
+            synchronized (bufferedImage)
             {
                 g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
                 tooltip.resetChanged();

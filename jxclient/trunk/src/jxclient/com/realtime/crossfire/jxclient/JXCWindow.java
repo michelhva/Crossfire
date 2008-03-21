@@ -692,7 +692,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 }
                 while (!terminated)
                 {
-                    synchronized(semaphoreDrawing)
+                    synchronized (semaphoreDrawing)
                     {
                         jxcWindowRenderer.redrawGUI();
                     }
