@@ -652,7 +652,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
-        Faces.setFacesCallback(myserver);
+        try
+        {
+            Faces.setFacesCallback(myserver);
+        }
+        catch (final IOException ex)
+        {
+            System.err.println(ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
         jxcWindowRenderer.init(w, h);
         if (!setSkin(skinName))
         {
