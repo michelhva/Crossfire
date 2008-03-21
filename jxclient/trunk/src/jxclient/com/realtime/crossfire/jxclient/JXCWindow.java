@@ -117,7 +117,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final CommandQueue commandQueue;
 
-    private final String semaphore_drawing = "semaphore_drawing";
+    private final String semaphoreDrawing = "semaphore_drawing";
 
     private final String semaphoreChangeGui = "semaphore_change_gui";
 
@@ -177,9 +177,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
-    private final Object redrawSemanphore = "redraw_semaphore";
+    private final Object semaphoreRedraw = "semaphore_redraw";
 
-    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this, redrawSemanphore);
+    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this, semaphoreRedraw);
 
     /**
      * The {@link TooltipManager} for this window.
@@ -276,7 +276,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private Status status = Status.UNCONNECTED;
 
-    private final String statusSem = "mystatus_sem";
+    private final String semaphoreStatus = "semaphore_status";
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets
@@ -380,7 +380,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        myserver = new CrossfireServerConnection(redrawSemanphore, experienceTable, debugProtocol);
+        myserver = new CrossfireServerConnection(semaphoreRedraw, experienceTable, debugProtocol);
         commandQueue = new CommandQueue(myserver);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats());
@@ -692,7 +692,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 }
                 while (!terminated)
                 {
-                    synchronized(semaphore_drawing)
+                    synchronized(semaphoreDrawing)
                     {
                         jxcWindowRenderer.redrawGUI();
                     }
@@ -1681,7 +1681,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void setStatus(final Status status)
     {
-        synchronized(statusSem)
+        synchronized (semaphoreStatus)
         {
             this.status = status;
         }
@@ -1694,7 +1694,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public Status getStatus()
     {
-        synchronized(statusSem)
+        synchronized (semaphoreStatus)
         {
             return status;
         }
