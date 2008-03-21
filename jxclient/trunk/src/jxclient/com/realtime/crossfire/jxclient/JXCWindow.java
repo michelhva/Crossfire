@@ -385,6 +385,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.debugGui = debugGui;
         this.settings = settings;
         myserver = new CrossfireServerConnection(semaphoreRedraw, experienceTable, debugProtocol);
+        CfMapUpdater.reset();
         commandQueue = new CommandQueue(myserver);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
         activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats());
