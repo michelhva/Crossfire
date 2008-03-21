@@ -119,7 +119,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private final String semaphore_drawing = "semaphore_drawing";
 
-    private final String semaphoseChangeGui = "semaphore_change_gui";
+    private final String semaphoreChangeGui = "semaphore_change_gui";
 
     /**
      * The shortcuts for this window.
@@ -558,7 +558,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void changeGUI(final int guiId)
     {
-        synchronized (semaphoseChangeGui)
+        synchronized (semaphoreChangeGui)
         {
             if (this.guiId == guiId)
             {
