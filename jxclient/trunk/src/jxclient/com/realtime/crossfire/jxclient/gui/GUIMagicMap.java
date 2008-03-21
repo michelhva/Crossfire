@@ -214,6 +214,7 @@ public class GUIMagicMap extends GUIElement
     public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
         super(jxcWindow, name, x, y, w, h);
+        if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
         if (w%TILE_SIZE != 0) throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
