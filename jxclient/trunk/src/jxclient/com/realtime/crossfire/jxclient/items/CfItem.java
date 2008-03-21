@@ -159,7 +159,7 @@ public class CfItem
         }
     }
 
-    public void setAnimSpeed(final int anim)
+    public void setAnimSpeed(final int animSpeed)
     {
         if (this.animSpeed != animSpeed)
         {
