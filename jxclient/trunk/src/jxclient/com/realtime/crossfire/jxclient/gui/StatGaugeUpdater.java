@@ -20,7 +20,10 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
+import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.ItemsList;
+import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -42,6 +45,11 @@ public class StatGaugeUpdater extends GaugeUpdater
      * The stat value to monitor.
      */
     private final int stat;
+
+    /**
+     * Whether the low food event should be generated.
+     */
+    private boolean active = false;
 
     /**
      * The {@link CrossfireStatsListener} registered to be notified about stat
@@ -68,7 +76,7 @@ public class StatGaugeUpdater extends GaugeUpdater
                 break;
 
             case Stats.C_STAT_LOWFOOD:
-                setValues(s.getStat(Stats.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+                setValues(active && s.getStat(Stats.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 break;
 
             case Stats.CS_STAT_GRACE:
@@ -102,6 +110,30 @@ public class StatGaugeUpdater extends GaugeUpdater
     };
 
     /**
+     * The listener to detect a changed player name.
+     */
+    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    {
+        /** {@inheritDoc} */
+        public void playerReceived(final CfPlayer player)
+        {
+            active = true;
+        }
+
+        /** {@inheritDoc} */
+        public void playerAdded(final CfPlayer player)
+        {
+            active = true;
+        }
+
+        /** {@inheritDoc} */
+        public void playerRemoved(final CfPlayer player)
+        {
+            active = false;
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param experienceTable The experience table to query.
@@ -113,5 +145,6 @@ public class StatGaugeUpdater extends GaugeUpdater
         super(experienceTable);
         this.stat = stat;
         ItemsList.getStats().addCrossfireStatsListener(crossfireStatsListener);
+        ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
     }
 }
