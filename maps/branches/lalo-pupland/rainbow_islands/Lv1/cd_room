@@ -1,12 +1,11 @@
 arch map
-name cd_room
+name CD Room
+difficulty 1
 region pupland
 width 17
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jun 11 15:27:53 1996
+Created:  1996-02-11
 endmsg
 end
 arch dungeon_floor
@@ -968,9 +967,9 @@ msg
   "The burning arrow will lead you
    deeper underground."
 endmsg
+resist_paralyze 100
 value 5000
 lifesave 0
-immune 0
 end
 end
 arch dungeon_floor

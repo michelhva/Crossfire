@@ -5,7 +5,7 @@ region pupland
 width 16
 height 16
 msg
-Created:  1996-07-16
+Created:  1996-02-16
 endmsg
 end
 arch pstone_1
@@ -1761,6 +1761,7 @@ hp 100
 x 14
 y 5
 type 0
+move_type walk
 monster 1
 friendly 1
 end

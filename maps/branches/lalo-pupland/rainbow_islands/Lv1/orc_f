@@ -1,12 +1,11 @@
 arch map
-name orc_f
+name Orc Farm
+difficulty 1
 region pupland
 width 25
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Tue Jun 11 22:38:29 1996
+Created:  1996-02-11
 endmsg
 end
 arch dungeon_floor
@@ -1958,7 +1957,6 @@ arch button_plate
 x 18
 y 9
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 18
@@ -2130,7 +2128,6 @@ x 20
 y 5
 speed 0.500000
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 20

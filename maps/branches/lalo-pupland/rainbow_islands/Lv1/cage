@@ -1,22 +1,21 @@
 arch map
-name cage
+name Cage
+difficulty 1
 region pupland
 width 13
 height 14
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Jun 10 16:32:42 1996
+Created:  1996-02-10
 endmsg
 end
 arch dungeon_floor
 end
-arch blocked
+arch goblin
 end
 arch dungeon_floor
 y 1
 end
-arch generate_goblin
+arch goblin
 y 1
 end
 arch dungeon_floor
@@ -30,13 +29,13 @@ end
 arch dungeon_floor
 y 3
 end
-arch blocked
+arch goblin
 y 3
 end
 arch dungeon_floor
 y 4
 end
-arch blocked
+arch goblin
 y 4
 end
 arch dungeon_floor
@@ -71,22 +70,32 @@ end
 arch dungeon_floor
 y 11
 end
-arch generate_goblin
+arch goblin
 y 11
 end
 arch dungeon_floor
 y 12
 end
-arch blocked
+arch goblin
+y 12
+end
+arch dungeon_floor
+y 13
+end
+arch goblin
 y 13
 end
 arch dungeon_floor
 x 1
 end
-arch generate_goblin
+arch goblin
 x 1
 end
 arch dungeon_floor
+x 1
+y 1
+end
+arch goblin
 x 1
 y 1
 end
@@ -94,7 +103,7 @@ arch dungeon_floor
 x 1
 y 2
 end
-arch generate_goblin
+arch goblin
 x 1
 y 2
 end
@@ -102,7 +111,7 @@ arch dungeon_floor
 x 1
 y 3
 end
-arch blocked
+arch goblin
 x 1
 y 3
 end
@@ -110,7 +119,7 @@ arch dungeon_floor
 x 1
 y 4
 end
-arch blocked
+arch goblin
 x 1
 y 4
 end
@@ -161,7 +170,7 @@ arch dungeon_floor
 x 1
 y 10
 end
-arch generate_goblin
+arch goblin
 x 1
 y 10
 end
@@ -169,15 +178,23 @@ arch dungeon_floor
 x 1
 y 11
 end
+arch goblin
+x 1
+y 11
+end
 arch dungeon_floor
 x 1
 y 12
 end
-arch generate_goblin
+arch goblin
 x 1
 y 12
 end
-arch blocked
+arch dungeon_floor
+x 1
+y 13
+end
+arch goblin
 x 1
 y 13
 end
@@ -193,7 +210,7 @@ arch dungeon_floor
 x 2
 y 1
 end
-arch generate_goblin
+arch goblin
 x 2
 y 1
 end
@@ -273,7 +290,7 @@ arch dungeon_floor
 x 2
 y 11
 end
-arch generate_goblin
+arch goblin
 x 2
 y 11
 end
@@ -287,14 +304,18 @@ sp 10
 x 2
 y 12
 end
-arch blocked
+arch dungeon_floor
+x 2
+y 13
+end
+arch goblin
 x 2
 y 13
 end
 arch dungeon_floor
 x 3
 end
-arch blocked
+arch goblin
 x 3
 end
 arch dungeon_floor
@@ -371,18 +392,22 @@ arch dungeon_floor
 x 3
 y 12
 end
-arch blocked
+arch goblin
 x 3
 y 12
 end
-arch blocked
+arch dungeon_floor
+x 3
+y 13
+end
+arch goblin
 x 3
 y 13
 end
 arch dungeon_floor
 x 4
 end
-arch blocked
+arch goblin
 x 4
 end
 arch dungeon_floor
@@ -537,15 +562,12 @@ x 5
 y 13
 weight 1000
 connected 2
-protected 2
 end
-arch creator
-name 1
-other_arch boulder
+arch gateTrg1
+hp 5
 x 5
 y 13
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 6
@@ -636,9 +658,23 @@ arch blocked
 x 6
 y 12
 end
-arch blocked
+arch button_small
+face button_sma.112
 x 6
 y 13
+value 1
+connected 20
+end
+arch spikes_open
+x 6
+y 13
+speed 0.500000
+connected 20
+end
+arch boulder
+x 6
+y 13
+weight 1000
 end
 arch dungeon_floor
 x 7
@@ -682,7 +718,6 @@ endmsg
 x 7
 y 6
 connected 1
-protected 1
 end
 arch dungeon_floor
 x 7
@@ -692,11 +727,10 @@ arch pit_closed
 name floor
 face dung_floor.111
 hp 12
-sp 13
+sp 12
 x 7
 y 6
 connected 2
-protected 2
 end
 arch dungeon_magic
 x 7
@@ -852,7 +886,7 @@ end
 arch dungeon_floor
 x 9
 end
-arch blocked
+arch goblin
 x 9
 end
 arch dungeon_floor
@@ -920,7 +954,7 @@ end
 arch dungeon_floor
 x 10
 end
-arch blocked
+arch goblin
 x 10
 end
 arch dungeon_floor
@@ -1043,7 +1077,7 @@ end
 arch dungeon_floor
 x 11
 end
-arch generate_goblin
+arch goblin
 x 11
 end
 arch dungeon_floor
@@ -1060,7 +1094,7 @@ arch dungeon_floor
 x 11
 y 2
 end
-arch blocked
+arch goblin
 x 11
 y 2
 end
@@ -1137,11 +1171,15 @@ end
 arch dungeon_floor
 x 12
 end
+arch goblin
+x 12
+y 1
+end
 arch dungeon_floor
 x 12
 y 1
 end
-arch generate_goblin
+arch goblin
 x 12
 y 1
 end
@@ -1149,7 +1187,7 @@ arch dungeon_floor
 x 12
 y 2
 end
-arch blocked
+arch goblin
 x 12
 y 2
 end
@@ -1218,8 +1256,19 @@ x 12
 y 11
 end
 arch blocked
+name darkness
 x 12
 y 12
+no_pass 0
+blocksview 0
+is_floor 1
+end
+arch button_small
+name reset gate
+x 12
+y 12
+invisible 1
+connected 1
 end
 arch blocked
 name darkness

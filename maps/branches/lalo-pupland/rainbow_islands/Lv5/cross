@@ -1,12 +1,11 @@
 arch map
-name cross
+name Cross
+difficulty 1
 region pupland
 width 20
 height 17
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Jul 21 11:45:12 1996
+Created:  1996-02-21
 endmsg
 end
 arch blocked
@@ -280,7 +279,7 @@ arch flagstone
 x 3
 y 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 9
 end

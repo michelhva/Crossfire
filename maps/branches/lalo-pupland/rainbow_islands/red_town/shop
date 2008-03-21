@@ -1,5 +1,6 @@
 arch map
-name <unnamed>
+name Bobo's shop
+difficulty 1
 region pupland
 shopitems weapon:25;bow:10;armour:10;shield:10;helmet:10;cloak:15;boots:10;gloves:10;bracers:10;girdle:5;food:40;flesh:40;wand:20;rod:15;*:-60
 shopmax 6000
@@ -7,9 +8,8 @@ shoprace dwarf
 width 13
 height 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Oct 22 19:03:57 2000
+Created:  2000-02-22
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -994,10 +994,11 @@ end
 arch altar
 name altar of detect curse (25 gp)
 slaying money
-sp 79
 food 250
 x 11
 y 11
+arch spell_detect_curse
+end
 end
 arch woodfloor
 x 11
