@@ -24,6 +24,7 @@ import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
+import java.io.IOException;
 import java.net.URL;
 import javax.swing.ImageIcon;
 
@@ -96,24 +97,22 @@ public class Faces
      * Set the callback functions to use.
      *
      * @param facesCallback The callback functions to use.
+     *
+     * @throws IOException if a resource cannot be found
      */
-    public static void setFacesCallback(final FacesCallback facesCallback)
+    public static void setFacesCallback(final FacesCallback facesCallback) throws IOException
     {
         askfaceManager = new AskfaceManager(facesCallback);
 
         final URL url = Faces.class.getClassLoader().getResource("resource/unknown.png");
         if (url == null)
         {
-            System.err.println("cannot find unknown.png");
-            System.exit(0);
-            throw new AssertionError();
+            throw new IOException("cannot find unknown.png");
         }
         final ImageIcon originalUnknownImageIcon = new ImageIcon(url);
         if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
         {
-            System.err.println("cannot load unknown.png");
-            System.exit(0);
-            throw new AssertionError();
+            throw new IOException("cannot load unknown.png");
         }
         final ImageIcon scaledUnknownImageIcon = getScaledImageIcon(originalUnknownImageIcon);
         final ImageIcon magicMapUnknownImageIcon = getMagicMapImageIcon(originalUnknownImageIcon);
