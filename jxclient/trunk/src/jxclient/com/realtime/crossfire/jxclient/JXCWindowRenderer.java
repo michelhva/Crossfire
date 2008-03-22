@@ -478,7 +478,7 @@ public class JXCWindowRenderer
 
         for (final Gui dialog : openDialogs)
         {
-            if (dialog.needRedraw())
+            if (!dialog.isHidden(guiState) && dialog.needRedraw())
             {
                 return true;
             }
