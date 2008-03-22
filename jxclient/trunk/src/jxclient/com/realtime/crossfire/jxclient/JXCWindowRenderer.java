@@ -310,12 +310,19 @@ public class JXCWindowRenderer
 
     private void redrawTooltip(final Graphics g)
     {
-        if (tooltip != null && tooltip.isVisible())
+        if (tooltip != null)
         {
-            final BufferedImage bufferedImage = tooltip.getBuffer();
-            synchronized (bufferedImage)
+            if (tooltip.isVisible())
             {
-                g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
+                final BufferedImage bufferedImage = tooltip.getBuffer();
+                synchronized (bufferedImage)
+                {
+                    g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
+                    tooltip.resetChanged();
+                }
+            }
+            else
+            {
                 tooltip.resetChanged();
             }
         }
@@ -484,7 +491,7 @@ public class JXCWindowRenderer
             }
         }
 
-        return tooltip != null && tooltip.isVisible() && tooltip.hasChanged();
+        return tooltip != null && tooltip.hasChanged();
     }
 
     /**

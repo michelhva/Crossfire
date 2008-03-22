@@ -708,5 +708,6 @@ public class Gui
         {
             visibleElements.remove(element);
         }
+        hasChangedElements = true;
     }
 }
