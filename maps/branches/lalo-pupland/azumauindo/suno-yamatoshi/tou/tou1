@@ -8,9 +8,7 @@ height 32
 enter_x 1
 enter_y 1
 msg
-Creator: Mikeeusa
-Email: gnu@foo.bar
-Date: Tue Aug  3 23:32:57 2004
+Created:  2004-08-03 Mikeeusa
 endmsg
 outdoor 1
 end
@@ -123,7 +121,7 @@ end
 arch flagstone
 x 1
 end
-arch dwall3_3
+arch dwall_3_3
 x 1
 end
 arch flagstone
@@ -265,7 +263,7 @@ end
 arch flagstone
 x 2
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 end
 arch flagstone
@@ -332,7 +330,7 @@ arch flagstone
 x 2
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 2
 y 15
 end
@@ -355,7 +353,7 @@ end
 arch flagstone
 x 3
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 end
 arch flagstone
@@ -454,7 +452,7 @@ arch flagstone
 x 3
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 3
 y 15
 end
@@ -477,7 +475,7 @@ end
 arch flagstone
 x 4
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 end
 arch flagstone
@@ -556,7 +554,7 @@ arch flagstone
 x 4
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 12
 end
@@ -576,7 +574,7 @@ arch flagstone
 x 4
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 4
 y 15
 end
@@ -599,7 +597,7 @@ end
 arch flagstone
 x 5
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 end
 arch flagstone
@@ -654,7 +652,7 @@ arch flagstone
 x 5
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 12
 end
@@ -681,7 +679,7 @@ arch flagstone
 x 5
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 5
 y 15
 end
@@ -704,7 +702,7 @@ end
 arch flagstone
 x 6
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 end
 arch flagstone
@@ -767,7 +765,7 @@ arch flagstone
 x 6
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 6
 y 12
 end
@@ -814,7 +812,7 @@ end
 arch flagstone
 x 7
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 end
 arch flagstone
@@ -877,7 +875,7 @@ arch flagstone
 x 7
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 7
 y 12
 end
@@ -924,7 +922,7 @@ end
 arch flagstone
 x 8
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 end
 arch flagstone
@@ -979,7 +977,7 @@ arch flagstone
 x 8
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 8
 y 12
 end
@@ -1019,7 +1017,7 @@ end
 arch flagstone
 x 9
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 end
 arch flagstone
@@ -1082,7 +1080,7 @@ arch flagstone
 x 9
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 9
 y 12
 end
@@ -1125,7 +1123,7 @@ end
 arch flagstone
 x 10
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 end
 arch flagstone
@@ -1188,7 +1186,7 @@ arch flagstone
 x 10
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 12
 end
@@ -1208,7 +1206,7 @@ arch flagstone
 x 10
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 10
 y 15
 end
@@ -1231,7 +1229,7 @@ end
 arch flagstone
 x 11
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 end
 arch flagstone
@@ -1286,7 +1284,7 @@ arch flagstone
 x 11
 y 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 12
 end
@@ -1306,7 +1304,7 @@ arch flagstone
 x 11
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 11
 y 15
 end
@@ -1329,7 +1327,7 @@ end
 arch flagstone
 x 12
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 end
 arch flagstone
@@ -1440,7 +1438,7 @@ arch flagstone
 x 12
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 12
 y 15
 end
@@ -1463,7 +1461,7 @@ end
 arch flagstone
 x 13
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 end
 arch flagstone
@@ -1574,7 +1572,7 @@ arch flagstone
 x 13
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 13
 y 15
 end
@@ -1597,7 +1595,7 @@ end
 arch flagstone
 x 14
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 end
 arch flagstone
@@ -1664,7 +1662,7 @@ arch flagstone
 x 14
 y 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 14
 y 15
 end
@@ -1687,7 +1685,7 @@ end
 arch flagstone
 x 15
 end
-arch dwall3_3
+arch dwall_3_3
 x 15
 end
 arch flagstone
