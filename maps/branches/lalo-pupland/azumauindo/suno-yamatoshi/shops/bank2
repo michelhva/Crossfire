@@ -8,9 +8,7 @@ height 16
 enter_x 1
 enter_y 1
 msg
-Creator: MikeeUSA
-Email: gnu@foo.bar
-Date: Thu Apr  7 10:55:04 2005
+Created:  2005-02-07 MikeeUSA
 endmsg
 end
 arch afloor_right
@@ -52,6 +50,7 @@ maxhp 1000
 dam 50
 y 4
 type 0
+move_type walk
 monster 1
 end
 arch afloor_right
@@ -263,6 +262,7 @@ maxhp 1000
 dam 50
 x 2
 type 0
+move_type walk
 monster 1
 end
 arch afloor_right
@@ -381,6 +381,7 @@ dam 50
 x 2
 y 13
 type 0
+move_type walk
 monster 1
 end
 arch afloor_left
@@ -595,6 +596,7 @@ dam 50
 x 4
 y 8
 type 0
+move_type walk
 monster 1
 end
 arch afloor_left
@@ -903,6 +905,7 @@ dam 50
 x 7
 y 3
 type 0
+move_type walk
 monster 1
 end
 arch woodfloor2
@@ -1608,6 +1611,7 @@ dam 50
 x 13
 y 5
 type 0
+move_type walk
 monster 1
 end
 arch afloor_right
@@ -1662,6 +1666,7 @@ dam 50
 x 13
 y 10
 type 0
+move_type walk
 monster 1
 end
 arch afloor_right
