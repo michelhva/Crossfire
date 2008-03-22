@@ -25,7 +25,7 @@ import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
 
 /**
- * Tracks mouse actions and deleivers mouse events to affected {@link
+ * Tracks mouse actions and delivers mouse events to affected {@link
  * GUIElement}.
  *
  * <p>XXX: some delivered MouseEvents are not relative to the underlying
