@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.metaserver;
 
+import java.util.regex.Pattern;
+
 /**
  * Represents a response line from the metaserver.
  *
@@ -26,6 +28,11 @@ package com.realtime.crossfire.jxclient.metaserver;
  */
 public class MetaserverEntry implements Comparable<MetaserverEntry>
 {
+    /**
+     * Matches html tags.
+     */
+    private static final Pattern htmlTagMatcher = Pattern.compile("<[^>]*>");
+
     private final String ipAddress;
 
     private final int updateSeconds;
@@ -159,7 +166,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     break;
 
                 case 'C':
-                    sb.append(comment);
+                    sb.append(htmlTagMatcher.matcher(comment).replaceAll(" "));
                     break;
 
                 case 'H':
