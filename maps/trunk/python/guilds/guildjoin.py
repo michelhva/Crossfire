@@ -56,7 +56,7 @@ if (guildname):
     else:
         message = 'No one is in the chair!'
 else:
-    Crossfire.Log(Crossfire.LogError, 'Guild Join Error: %s' %(guildname))
+    print 'Guild Join Error: %s' %(guildname)
     message = 'Guild Join Error, please notify a DM'
 
 whoami.Say(message)

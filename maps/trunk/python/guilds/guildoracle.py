@@ -27,10 +27,11 @@ activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
 whoami=Crossfire.WhoAmI()
 isDM=activator.DungeonMaster
-
+mymap=activator.Map
+print mymap
 log=CFLog.CFLog()
 guildname=Crossfire.ScriptParameters() # 6 is say event
-Crossfire.Log(Crossfire.LogDebug, "Activated %s" %guildname)
+print "Activated %s" %guildname
 
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
@@ -79,7 +80,7 @@ if (guildname):
             if record:
                 if guild.promote_member(text[1]):
                     record = guild.info(text[1]) #refresh record
-                    message = '%s promoted to %s' %(text[1], record['Rank'])
+                    message = '%s promoted to %s' %(text[1], record['Rank'])	
                 else:
                     message = 'You cannot promote %s' %text[1]
             else:

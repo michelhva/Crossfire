@@ -1,13 +1,17 @@
 arch map
-name guildHQ
+name Guild HeadQuarters
 difficulty 1
+region Template
 width 25
 height 25
 enter_x 1
 enter_y 1
 msg
-Created:  2003-06-14 Avion
-Modified: 2007-08-27 Alestan (jehloq@yahoo.com)
+CF Java Map Editor
+Creator: Avion
+Date:    6/14/2003
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch flagstone
@@ -166,7 +170,7 @@ end
 arch card
 name Alchemy Token
 name_pl Alchemy Tokens
-slaying Alchemy_Token
+slaying Alch_Token
 msg
 The holder of this card is allowed free
 access into and out of the Alchemy Room.
@@ -652,7 +656,7 @@ end
 arch card
 name Alchemy Token
 name_pl Alchemy Tokens
-slaying Alchemy_Token
+slaying Alch_Token
 msg
 The holder of this card is allowed free
 access into and out of the Alchemy Room.
@@ -1107,7 +1111,7 @@ end
 arch card
 name Alchemy Token
 name_pl Alchemy Tokens
-slaying Alchemy_Token
+slaying Alch_Token
 msg
 The holder of this card is allowed free
 access into and out of the Alchemy Room.
@@ -1135,7 +1139,7 @@ end
 arch card
 name Garden Token
 name_pl Garden Tokens
-slaying Garden_Token
+slaying Gard_Token
 msg
 The holder of this card is allowed free
 access into and out of the Garden.
@@ -1210,7 +1214,11 @@ name Guild Oracle
 name_pl Guild Oracle
 x 7
 y 7
-material 256
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
 no_pick 1
 arch event_say
 name GUILD_TEMPLATE
@@ -1634,7 +1642,7 @@ end
 arch card
 name Alchemy Token
 name_pl Alchemy Tokens
-slaying Alchemy_Token
+slaying Alch_Token
 msg
 The holder of this card is allowed free
 access into and out of the Alchemy Room.
@@ -1658,7 +1666,7 @@ end
 arch card
 name Garden Token
 name_pl Garden Tokens
-slaying Garden_Token
+slaying Gard_Token
 msg
 The holder of this card is allowed free
 access into and out of the Garden.
@@ -2165,7 +2173,7 @@ end
 arch card
 name Garden Token
 name_pl Garden Tokens
-slaying Garden_Token
+slaying Gard_Token
 msg
 The holder of this card is allowed free
 access into and out of the Garden.
@@ -2485,7 +2493,7 @@ end
 arch card
 name Toolshed Token
 name_pl Toolshed Tokens
-slaying Toolshed_Token
+slaying Tool_Token
 msg
 The holder of this card is allowed free
 access into and out of the Tool Shed
@@ -2942,7 +2950,7 @@ end
 arch card
 name Garden Token
 name_pl Garden Tokens
-slaying Garden_Token
+slaying Gard_Token
 msg
 The holder of this card is allowed free
 access into and out of the Garden.
@@ -3215,7 +3223,7 @@ end
 arch card
 name Toolshed Token
 name_pl Toolshed Tokens
-slaying Toolshed_Token
+slaying Tool_Token
 msg
 The holder of this card is allowed free
 access into and out of the Tool Shed
@@ -3629,7 +3637,7 @@ end
 arch card
 name Toolshed Token
 name_pl Toolshed Tokens
-slaying Toolshed_Token
+slaying Tool_Token
 msg
 The holder of this card is allowed free
 access into and out of the Tool Shed
@@ -3847,7 +3855,7 @@ end
 arch card
 name Jeweler Token
 name_pl Jeweler Tokens
-slaying Jeweler_Token
+slaying Jewe_Token
 msg
 The holder of this card is allowed free
 access into and out of the Jeweler's Workshop.
@@ -3879,7 +3887,7 @@ end
 arch card
 name Jeweler Token
 name_pl Jeweler Tokens
-slaying Jeweler_Token
+slaying Jewe_Token
 msg
 The holder of this card is allowed free
 access into and out of the Jeweler's Workshop.
@@ -3915,7 +3923,7 @@ end
 arch card
 name Jeweler Token
 name_pl Jeweler Tokens
-slaying Jeweler_Token
+slaying Jewe_Token
 msg
 The holder of this card is allowed free
 access into and out of the Jeweler's Workshop.
@@ -3960,7 +3968,7 @@ end
 arch card
 name Jeweler Token
 name_pl Jeweler Tokens
-slaying Jeweler_Token
+slaying Jewe_Token
 msg
 The holder of this card is allowed free
 access into and out of the Jeweler's Workshop.
@@ -4009,7 +4017,7 @@ end
 arch card
 name Toolshed Token
 name_pl Toolshed Tokens
-slaying Toolshed_Token
+slaying Tool_Token
 msg
 The holder of this card is allowed free
 access into and out of the Tool Shed
@@ -4214,7 +4222,7 @@ end
 arch card
 name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
-slaying GCrystal_Token
+slaying GC_Token
 msg
 The holder of this card is allowed free
 access into and out of the Crystal Room
@@ -4246,7 +4254,7 @@ end
 arch card
 name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
-slaying GCrystal_Token
+slaying GC_Token
 msg
 The holder of this card is allowed free
 access into and out of the Crystal Room
@@ -4282,7 +4290,7 @@ end
 arch card
 name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
-slaying GCrystal_Token
+slaying GC_Token
 msg
 The holder of this card is allowed free
 access into and out of the Crystal Room
@@ -4327,7 +4335,7 @@ end
 arch card
 name Glowing Crystal Token
 name_pl Glowing Crystal Tokens
-slaying GCrystal_Token
+slaying GC_Token
 msg
 The holder of this card is allowed free
 access into and out of the Crystal Room

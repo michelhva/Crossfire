@@ -1,13 +1,17 @@
 arch map
 name Guild Tool Shed
 difficulty 1
+region Template
 width 28
 height 16
 enter_x 14
 enter_y 4
 msg
-Created:  2007-03-17 Rick Tanner
-Modified: 2007-08-27 Alestan (jehloq@yahoo.com)
+Creator: Rick Tanner
+Editor: CrossfireEditor
+Date:    3/17/2007
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 unique 1
 end
@@ -237,8 +241,11 @@ other_arch flagstone
 x 2
 y 7
 connected 76
+arch flagstone
+unique 1
 end
-arch goldflagstone
+end
+arch goldfloor
 name drop 30,000 rubies for a forge
 slaying ruby
 food 30000
@@ -1014,10 +1021,14 @@ y 7
 connected 8004
 lifesave 1
 activate_on_push 0
+arch forge
+magic 4
+end
 end
 arch forge
 x 9
 y 7
+magic 4
 end
 arch flagstone
 x 9
@@ -1275,10 +1286,14 @@ y 7
 connected 8005
 lifesave 1
 activate_on_push 0
+arch workbench
+magic 4
+end
 end
 arch workbench
 x 11
 y 7
+magic 4
 end
 arch flagstone
 x 11
@@ -2018,8 +2033,11 @@ other_arch flagstone
 x 18
 y 7
 connected 76
+arch flagstone
+unique 1
 end
-arch goldflagstone
+end
+arch goldfloor
 name drop 30,000 rubies for a workbench
 slaying ruby
 food 30000
@@ -2688,8 +2706,9 @@ arch blocked
 x 26
 y 15
 end
-arch blocked
+arch flagstone
 x 27
+unique 1
 end
 arch teleporter
 hp 18
@@ -2705,6 +2724,12 @@ food 100
 x 27
 last_sp 1
 connected 121
+unique 1
+end
+arch flagstone
+x 27
+y 1
+unique 1
 end
 arch creator
 other_arch jadecoin
@@ -2721,9 +2746,10 @@ y 1
 speed 0.0
 connected 999
 end
-arch blocked
+arch flagstone
 x 27
 y 2
+unique 1
 end
 arch teleporter
 hp 2
@@ -2741,6 +2767,12 @@ x 27
 y 2
 last_sp 1
 connected 131
+unique 1
+end
+arch flagstone
+x 27
+y 3
+unique 1
 end
 arch creator
 other_arch jadecoin

@@ -1,15 +1,20 @@
 arch map
-name mainfloor
+name Main Floor
 reset_timeout 7200
 difficulty 1
+region Template
 width 36
 height 30
 enter_x 15
 enter_y 28
 msg
 GuildHouse Main Floor
-Created:  2004-11-19 majorwoo (josh@woosworld.net), Avion
-Modified: 2007-12-26 Nicolas Weeger
+Creators:
+majorwoo josh@woosworld.net
+Avion
+Date:    11/19/2004
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 outdoor 1
 end
@@ -407,6 +412,16 @@ arch dungeon_magic
 x 1
 y 24
 end
+arch trigger_marker
+slaying guild_forge121
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
+x 1
+y 24
+connected 130
+end
 arch dungeon_magic
 x 1
 y 25
@@ -648,9 +663,20 @@ arch dungeon_magic
 x 2
 y 24
 end
-arch goldflagstone
+arch creator
+other_arch flagstone
 x 2
 y 24
+connected 76
+end
+arch goldfloor
+name drop 30,000 rubies for a forge
+slaying ruby
+food 30000
+x 2
+y 24
+connected 130
+unique 1
 end
 arch flagstone
 x 2
@@ -907,7 +933,9 @@ end
 arch flagstone
 x 3
 y 23
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win2
 x 3
@@ -1020,6 +1048,10 @@ endmsg
 x 4
 y 5
 connected 999
+arch event_apply
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch woodfloor
 x 4
@@ -1038,231 +1070,6 @@ end
 arch dungeon_magic
 x 4
 y 7
-end
-arch magic_ear
-name 25
-msg
-@match pay 25|Pay 25
-endmsg
-x 4
-y 7
-connected 925
-end
-arch magic_ear
-name 24
-msg
-@match pay 24|Pay 24
-endmsg
-x 4
-y 7
-connected 924
-end
-arch magic_ear
-name 23
-msg
-@match pay 23|Pay 23
-endmsg
-x 4
-y 7
-connected 923
-end
-arch magic_ear
-name 22
-msg
-@match pay 22|Pay 22
-endmsg
-x 4
-y 7
-connected 922
-end
-arch magic_ear
-name 21
-msg
-@match pay 21|Pay 21
-endmsg
-x 4
-y 7
-connected 921
-end
-arch magic_ear
-name 20
-msg
-@match pay 20|Pay 20
-endmsg
-x 4
-y 7
-connected 920
-end
-arch magic_ear
-name 19
-msg
-@match pay 19|Pay 19
-endmsg
-x 4
-y 7
-connected 919
-end
-arch magic_ear
-name 18
-msg
-@match pay 18|Pay 18
-endmsg
-x 4
-y 7
-connected 918
-end
-arch magic_ear
-name 17
-msg
-@match pay 17|Pay 17
-endmsg
-x 4
-y 7
-connected 917
-end
-arch magic_ear
-name 16
-msg
-@match pay 16|Pay 16
-endmsg
-x 4
-y 7
-connected 916
-end
-arch magic_ear
-name 15
-msg
-@match pay 15|Pay 15
-endmsg
-x 4
-y 7
-connected 915
-end
-arch magic_ear
-name 14
-msg
-@match pay 14|Pay 14
-endmsg
-x 4
-y 7
-connected 914
-end
-arch magic_ear
-name 13
-msg
-@match pay 13|Pay 13
-endmsg
-x 4
-y 7
-connected 913
-end
-arch magic_ear
-name 12
-msg
-@match pay 12|Pay 12
-endmsg
-x 4
-y 7
-connected 912
-end
-arch magic_ear
-name 11
-msg
-@match pay 11|Pay 11
-endmsg
-x 4
-y 7
-connected 911
-end
-arch magic_ear
-name 10
-msg
-@match pay 10|Pay 10
-endmsg
-x 4
-y 7
-connected 910
-end
-arch magic_ear
-name 9
-msg
-@match pay 9|Pay 9
-endmsg
-x 4
-y 7
-connected 909
-end
-arch magic_ear
-name 8
-msg
-@match pay 8|Pay 8
-endmsg
-x 4
-y 7
-connected 908
-end
-arch magic_ear
-name 7
-msg
-@match pay 7|Pay 7
-endmsg
-x 4
-y 7
-connected 907
-end
-arch magic_ear
-name 6
-msg
-@match pay 6|Pay 6
-endmsg
-x 4
-y 7
-connected 906
-end
-arch magic_ear
-name 5
-msg
-@match pay 5|Pay 5
-endmsg
-x 4
-y 7
-connected 905
-end
-arch magic_ear
-name 4
-msg
-@match pay 4|Pay 4
-endmsg
-x 4
-y 7
-connected 904
-end
-arch magic_ear
-name 3
-msg
-@match pay 3|Pay 3
-endmsg
-x 4
-y 7
-connected 903
-end
-arch magic_ear
-name 1
-msg
-@match pay 1|Pay 1
-endmsg
-x 4
-y 7
-connected 901
-end
-arch magic_ear
-name 2
-msg
-@match pay 2|Pay 2
-endmsg
-x 4
-y 7
-connected 902
 end
 arch woodfloor
 x 4
@@ -1549,7 +1356,7 @@ Pull to let unwanted guests out.
 endmsg
 x 5
 y 5
-connected 951
+connected 952
 end
 arch woodfloor
 x 5
@@ -1654,7 +1461,9 @@ end
 arch woodfloor
 x 5
 y 15
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win1
 x 5
@@ -2331,7 +2140,9 @@ end
 arch woodfloor
 x 7
 y 20
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win2
 x 7
@@ -2659,9 +2470,20 @@ arch dungeon_magic
 x 8
 y 24
 end
-arch goldflagstone
+arch creator
+other_arch flagstone
 x 8
 y 24
+connected 76
+end
+arch goldfloor
+name drop 30,000 rubies for a workbench
+slaying ruby
+food 30000
+x 8
+y 24
+connected 120
+unique 1
 end
 arch flagstone
 x 8
@@ -2932,6 +2754,16 @@ arch dungeon_magic
 x 9
 y 24
 end
+arch trigger_marker
+slaying guild_boyer121
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
+x 9
+y 24
+connected 120
+end
 arch dungeon_magic
 x 9
 y 25
@@ -2959,6 +2791,12 @@ end
 arch flagstone
 x 9
 y 27
+end
+arch pedestal
+x 9
+y 27
+invisible 1
+connected 122
 end
 arch flagstone
 x 9
@@ -3122,7 +2960,7 @@ x 10
 y 16
 end
 arch goldfloor
-name drop 5000 platinum for a portal to Scorn
+name drop 5000 Platinum for a portal to Scorn
 slaying platinacoin
 food 5000
 x 10
@@ -3376,6 +3214,7 @@ end
 arch dwall_0
 x 11
 y 10
+blocksview 0
 end
 arch light4
 x 11
@@ -3402,6 +3241,7 @@ end
 arch dwall_0
 x 11
 y 12
+blocksview 0
 end
 arch light4
 x 11
@@ -3428,6 +3268,7 @@ end
 arch dwall_0
 x 11
 y 14
+blocksview 0
 end
 arch light4
 x 11
@@ -3677,6 +3518,12 @@ x 12
 y 10
 unique 1
 end
+arch creator
+other_arch woodfloor
+x 12
+y 10
+connected 60
+end
 arch dungeon_magic
 x 12
 y 10
@@ -3687,7 +3534,7 @@ slaying jadecoin
 food 25
 x 12
 y 10
-connected 121
+connected 9999
 unique 1
 end
 arch dungeon_magic
@@ -3724,24 +3571,28 @@ end
 arch woodfloor
 x 12
 y 14
-unique 1
-end
-arch dungeon_magic
-x 12
-y 15
-end
-arch woodfloor
-x 12
-y 15
 unique 1
 end
 arch book_clasp
 name Owners Guide
 msg
 Welcome to your new Guild House!
+A few things to note, bugs should be reported to jehloq@yahoo.com.
+In the upper left corner, there are two levers, the left one pays out fees and dues, fees are dropped onto the floor and dues go straight into your inventory.  The one on the right sets what happens if a non member tries to enter.  In the left position, they are held in a prison and must wait for the guild master, get a DM to help, or step into chaos long enough to word of recall out.  In the right position, it simply throws them out of the entry portal.  The work rooms are not player unique maps, so multiple people can enter the same work room.  The maps also do not reset, there is a small fee for using the maps, that the guild masters collect, use the funds from it to replace broken equipment.  To control who has access to the rooms, in the basement there are tokens, one of each kind is free, further ones must be purchased at ten gold apeice.  Once in a while the mechanish malfunctions and eats your money, just like a real vending machine, if this happns, sorry, just put more in and it should work.  You may buy four aditional tokens per map reset, if you buy a fifth, it will refund your money and tell you it is sold out, putting more money in is simply eaten by the machine.  Questions or comments, please send them to jehloq@yahoo.com
+
+Alestan
 endmsg
 x 12
+y 14
+end
+arch dungeon_magic
+x 12
 y 15
+end
+arch woodfloor
+x 12
+y 15
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -3773,6 +3624,12 @@ end
 arch dungeon_magic
 x 12
 y 19
+end
+arch creator
+other_arch woodfloor
+x 12
+y 19
+connected 77
 end
 arch woodfloor
 x 12
@@ -3986,6 +3843,7 @@ end
 arch dwall_0
 x 13
 y 10
+blocksview 0
 end
 arch light4
 x 13
@@ -4012,6 +3870,7 @@ end
 arch dwall_0
 x 13
 y 12
+blocksview 0
 end
 arch light4
 x 13
@@ -4038,6 +3897,7 @@ end
 arch dwall_0
 x 13
 y 14
+blocksview 0
 end
 arch light4
 x 13
@@ -4394,7 +4254,21 @@ arch dungeon_magic
 x 14
 y 21
 end
-arch goldgrass
+arch grass
+x 14
+y 21
+move_block swim boat
+unique 1
+end
+arch creator
+other_arch grass
+x 14
+y 21
+connected 81
+arch grass
+end
+end
+arch goldfloor
 name drop 25 jade coins  for Kennel
 slaying jadecoin
 food 25
@@ -4500,7 +4374,9 @@ end
 arch woodfloor
 x 15
 y 2
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win2
 x 15
@@ -4812,7 +4688,7 @@ x 15
 y 29
 end
 arch exit
-slaying /world/world_105_113
+slaying /Edit/This/Exit/Path
 hp 13
 sp 20
 x 15
@@ -5420,6 +5296,12 @@ x 17
 y 19
 unique 1
 end
+arch creator
+other_arch woodfloor
+x 17
+y 19
+connected 123
+end
 arch dungeon_magic
 x 17
 y 19
@@ -5432,6 +5314,7 @@ x 17
 y 19
 connected 123
 is_animated 0
+unique 1
 end
 arch woodfloor
 x 17
@@ -5621,6 +5504,23 @@ x 18
 y 7
 unique 1
 end
+arch creator
+other_arch pearl_converter
+x 18
+y 7
+connected 707
+arch pearl_converter
+end
+end
+arch goldfloor
+name drop 1000 platinum coins for a pearl converter
+slaying platinacoin
+food 1000
+x 18
+y 7
+connected 707
+unique 1
+end
 arch woodfloor
 x 18
 y 8
@@ -5635,6 +5535,15 @@ end
 arch dungeon_magic
 x 18
 y 8
+end
+arch goldfloor
+name drop 1000 platinum for a silver to gold converter
+slaying platinacoin
+food 1000
+x 18
+y 8
+connected 30
+unique 1
 end
 arch woodfloor
 x 18
@@ -5651,6 +5560,15 @@ arch dungeon_magic
 x 18
 y 9
 end
+arch goldfloor
+name drop 1000 platinum for a gold to platinum converter
+slaying platinacoin
+food 1000
+x 18
+y 9
+connected 31
+unique 1
+end
 arch woodfloor
 x 18
 y 10
@@ -5666,6 +5584,15 @@ arch dungeon_magic
 x 18
 y 10
 end
+arch goldfloor
+name drop 1000 platinum coins for a platinum to gold converter
+slaying platinacoin
+food 1000
+x 18
+y 10
+connected 32
+unique 1
+end
 arch dungeon_magic
 x 18
 y 11
@@ -5673,6 +5600,23 @@ end
 arch woodfloor
 x 18
 y 11
+unique 1
+end
+arch creator
+other_arch ruby_converter
+x 18
+y 11
+connected 706
+arch ruby_converter
+end
+end
+arch goldfloor
+name drop 1000 platinum coins for a ruby  converter
+slaying platinacoin
+food 1000
+x 18
+y 11
+connected 706
 unique 1
 end
 arch woodfloor
@@ -5688,28 +5632,96 @@ arch dungeon_magic
 x 18
 y 13
 end
+arch creator
+other_arch platinum_converter2
+x 18
+y 13
+connected 701
+arch platinum_converter2
+end
+end
 arch woodfloor
 x 18
 y 13
 unique 1
 end
+arch goldfloor
+name drop 1000 platinum coins for a platinum to jade converter
+slaying platinacoin
+food 1000
+x 18
+y 13
+connected 701
+unique 1
+end
 arch dungeon_magic
 x 18
 y 14
+end
+arch creator
+x 18
+y 14
+connected 702
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
+end
 end
 arch woodfloor
 x 18
 y 14
 unique 1
 end
+arch goldfloor
+name drop 1000 platinum coins for a jade to platinum
+slaying platinacoin
+food 1000
+x 18
+y 14
+connected 702
+unique 1
+end
 arch dungeon_magic
 x 18
 y 15
+end
+arch creator
+other_arch platinum_converter
+x 18
+y 15
+connected 703
+arch jade_converter
+end
 end
 arch woodfloor
 x 18
 y 15
 unique 1
+end
+arch goldfloor
+name drop 1000 platinum coins for a jade to amberium
+slaying platinacoin
+food 1000
+x 18
+y 15
+connected 703
+unique 1
+end
+arch creator
+other_arch platinum_converter
+x 18
+y 16
+connected 704
+arch jade_converter
+name convert amberium into jade
+slaying ambercoin
+other_arch jadecoin
+sp 100
+food 1
+end
 end
 arch dungeon_magic
 x 18
@@ -5720,6 +5732,23 @@ x 18
 y 16
 unique 1
 end
+arch goldfloor
+name drop 1000 platinum coins for an amberium to jade converter
+slaying platinacoin
+food 1000
+x 18
+y 16
+connected 704
+unique 1
+end
+arch creator
+other_arch platinum_converter
+x 18
+y 17
+connected 705
+arch diamond_converter
+end
+end
 arch dungeon_magic
 x 18
 y 17
@@ -5727,6 +5756,15 @@ end
 arch woodfloor
 x 18
 y 17
+unique 1
+end
+arch goldfloor
+name drop 1000 platinum coins for a diamond converter
+slaying platinacoin
+food 1000
+x 18
+y 17
+connected 705
 unique 1
 end
 arch dungeon_magic
@@ -5763,6 +5801,8 @@ end
 arch grass
 x 18
 y 21
+move_block swim boat
+unique 1
 end
 arch dungeon_magic
 x 18
@@ -5937,7 +5977,9 @@ end
 arch woodfloor
 x 19
 y 9
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win1
 x 19
@@ -5991,7 +6033,9 @@ end
 arch woodfloor
 x 19
 y 15
+no_magic 1
 unique 1
+damned 1
 end
 arch dwall_win1
 x 19
@@ -6945,6 +6989,12 @@ arch earth
 x 22
 y 21
 end
+arch grass
+x 22
+y 22
+move_block swim boat
+unique 1
+end
 arch dungeon_magic
 x 22
 y 22
@@ -6954,8 +7004,10 @@ other_arch grass
 x 22
 y 22
 connected 779
+arch grass
 end
-arch goldgrass
+end
+arch goldfloor
 name drop 30,000 rubies for stove
 slaying ruby
 food 30000
@@ -8655,8 +8707,8 @@ x 29
 end
 arch teleporter
 name scorn portal
-hp 10
-sp 17
+hp 8
+sp 19
 x 29
 speed 0.000000
 connected 21
@@ -8673,11 +8725,12 @@ end
 arch grass
 x 29
 y 1
+unique 1
 end
 arch teleporter
 name brest portal
-hp 9
-sp 17
+hp 7
+sp 19
 x 29
 y 1
 speed 0.000000
@@ -8696,8 +8749,8 @@ x 29
 y 2
 end
 arch teleporter
-hp 8
-sp 17
+hp 6
+sp 19
 x 29
 y 2
 speed 0.000000
@@ -8719,8 +8772,8 @@ y 3
 end
 arch teleporter
 name navar portal
-hp 7
-sp 17
+hp 6
+sp 18
 x 29
 y 3
 speed 0.000000
@@ -9075,6 +9128,7 @@ end
 arch grass
 x 30
 y 1
+unique 1
 end
 arch teleporter
 hp 1
@@ -9189,6 +9243,7 @@ hp 16
 sp 15
 x 30
 y 7
+unique 0
 end
 arch blocked
 x 30
@@ -9331,7 +9386,7 @@ arch sign_e
 name Altar
 msg
 Three characters are required to purchase a guild house.
-To purchase your guild house, you will need 5000 imperials for the altar.
+To purchase your guild house, you will need 100 amber for the altar.
 After the fee is paid three characters must stand on the pedestals in the small rooms.
 endmsg
 x 30
@@ -9456,7 +9511,7 @@ sp 9
 x 31
 y 7
 speed 0.0
-connected 121
+connected 9999
 end
 arch sign
 name Guild Message Board
@@ -9476,453 +9531,46 @@ arch blocked
 x 31
 y 8
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 31
 y 9
-connected 901
-lifesave 1
 end
-arch teleporter
-hp 4
-sp 5
+arch lightningwall_5
 x 31
 y 9
-speed 0.0
-connected 999
+speed 100
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 10
-connected 906
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 31
-y 10
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 31
 y 11
-connected 911
-lifesave 1
+unique 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch grate_closed_1
 x 31
 y 11
-connected 911
-lifesave 1
+connected 953
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 11
-connected 911
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 31
-y 11
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 31
 y 12
-connected 916
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch detector
+slaying lightning
 x 31
 y 12
-connected 916
-lifesave 1
+speed 1.0
+connected 955
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 12
-connected 916
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 31
-y 12
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 31
 y 13
-connected 921
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch detector
+slaying lightning
 x 31
 y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 31
-y 13
-connected 921
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 31
-y 13
-speed 0.0
-connected 999
+speed 1.0
+connected 951
 end
 arch blocked
 x 31
@@ -9933,24 +9581,11 @@ dam 1
 x 31
 y 15
 end
-arch magma
-dam 1
-x 31
-y 15
-end
 arch major_chaos
 x 31
 y 16
 end
-arch magma
-x 31
-y 16
-end
 arch major_chaos
-x 31
-y 17
-end
-arch magma
 x 31
 y 17
 end
@@ -10079,7 +9714,7 @@ other_arch jadecoin
 hp -1
 x 32
 y 1
-connected 131
+connected 13100
 lifesave 1
 activate_on_release 0
 end
@@ -10088,7 +9723,7 @@ other_arch jadecoin
 hp -1
 x 32
 y 1
-connected 121
+connected 12100
 lifesave 1
 activate_on_release 0
 end
@@ -10104,503 +9739,27 @@ arch blocked
 x 32
 y 8
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch blocked
 x 32
 y 9
-connected 902
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 9
-connected 902
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 32
-y 9
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch blocked
 x 32
 y 10
-connected 907
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 10
-connected 907
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 32
-y 10
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch blocked
 x 32
 y 11
-connected 912
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 11
-connected 912
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 32
-y 11
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch blocked
 x 32
 y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 12
-connected 917
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 32
-y 12
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 13
-connected 922
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 32
-y 13
-speed 0.0
-connected 999
 end
 arch blocked
 x 32
 y 14
 end
 arch major_chaos
-x 32
-y 15
-end
-arch magma
 x 32
 y 15
 end
@@ -10621,10 +9780,6 @@ speed 0.0
 connected 951
 end
 arch major_chaos
-x 32
-y 17
-end
-arch magma
 x 32
 y 17
 end
@@ -10781,7 +9936,7 @@ activate_on_release 0
 arch event_apply
 name TEST
 title Python
-slaying guildbuy.py
+slaying /python/guilds/guildbuy.py
 end
 end
 arch light3
@@ -10831,533 +9986,45 @@ arch blocked
 x 33
 y 8
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 33
 y 9
-connected 903
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch lightningwall_5
 x 33
 y 9
-connected 903
-lifesave 1
+speed 100
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 9
-connected 903
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 33
-y 9
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 10
-connected 908
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 33
-y 10
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch grass
 x 33
 y 11
-connected 913
-lifesave 1
+unique 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch grate_open_1
 x 33
 y 11
-connected 913
-lifesave 1
+connected 955
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 11
-connected 913
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 33
-y 11
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 33
 y 12
-connected 918
-lifesave 1
+unique 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch grate_closed_1
 x 33
 y 12
-connected 918
-lifesave 1
+connected 952
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 12
-connected 918
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 33
-y 12
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch woodfloor2
 x 33
 y 13
-connected 923
-lifesave 1
 end
-arch creator
-other_arch jadecoin
-hp -1
+arch detector
+slaying lightning
 x 33
 y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 33
-y 13
-connected 923
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 33
-y 13
-speed 0.0
-connected 999
+speed 1.0
+connected 953
 end
 arch blocked
 x 33
@@ -11367,23 +10034,11 @@ arch major_chaos
 x 33
 y 15
 end
-arch magma
-x 33
-y 15
-end
 arch major_chaos
 x 33
 y 16
 end
-arch magma
-x 33
-y 16
-end
 arch major_chaos
-x 33
-y 17
-end
-arch magma
 x 33
 y 17
 end
@@ -11537,8 +10192,6 @@ end
 arch lightningwall_5
 x 34
 speed -0.2
-arch spell_sm_lightning
-end
 end
 arch woodfloor2
 x 34
@@ -11594,573 +10247,9 @@ arch blocked
 x 34
 y 8
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 9
-connected 904
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 9
-connected 904
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 9
-connected 904
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 9
-connected 904
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 34
-y 9
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 10
-connected 909
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 34
-y 10
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 11
-connected 914
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 34
-y 11
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 12
-connected 919
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 34
-y 12
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
+arch director_7
 x 34
 y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 34
-y 13
-connected 924
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 34
-y 13
-speed 0.0
-connected 999
 end
 arch blocked
 x 34
@@ -12278,610 +10367,6 @@ arch blocked
 x 35
 y 8
 end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 9
-connected 905
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 9
-connected 905
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 9
-connected 905
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 9
-connected 905
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 9
-connected 905
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 35
-y 9
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 10
-connected 910
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 35
-y 10
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 11
-connected 915
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 35
-y 11
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 12
-connected 920
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 35
-y 12
-speed 0.0
-connected 999
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 35
-y 13
-connected 925
-lifesave 1
-end
-arch teleporter
-hp 4
-sp 5
-x 35
-y 13
-speed 0.0
-connected 999
-end
-arch teleporter
-hp 18
-sp 13
-x 35
-y 14
-speed 0.0
-connected 701
-end
-arch platinum_converter2
-x 35
-y 14
-end
 arch magma
 x 35
 y 15
@@ -12897,88 +10382,6 @@ end
 arch blocked
 x 35
 y 17
-end
-arch teleporter
-hp 18
-sp 14
-x 35
-y 18
-speed 0.0
-connected 702
-end
-arch platinum_converter2
-name convert jade into platinum
-slaying jadecoin
-other_arch platinacoin
-sp 100
-food 1
-x 35
-y 18
-end
-arch teleporter
-hp 18
-sp 15
-x 35
-y 19
-speed 0.0
-connected 703
-end
-arch jade_converter
-x 35
-y 19
-end
-arch teleporter
-hp 18
-sp 16
-x 35
-y 20
-speed 0.0
-connected 704
-end
-arch jade_converter
-name convert amberium into jade
-slaying ambercoin
-other_arch jadecoin
-sp 100
-food 1
-x 35
-y 20
-end
-arch teleporter
-hp 18
-sp 11
-x 35
-y 22
-speed 0.0
-connected 706
-end
-arch ruby_converter
-x 35
-y 22
-end
-arch teleporter
-hp 18
-sp 17
-x 35
-y 23
-speed 0.0
-connected 705
-end
-arch diamond_converter
-x 35
-y 23
-end
-arch teleporter
-hp 18
-sp 7
-x 35
-y 24
-speed 0.0
-connected 707
-end
-arch pearl_converter
-x 35
-y 24
 end
 arch blocked
 x 35
