@@ -107,6 +107,27 @@ public class Metaserver
     }
 
     /**
+     * Returns the index of an entry by server name.
+     * @param serverName the server name
+     * @return the index, or <code>-1</code> if not found
+     */
+    public synchronized int getServerIndex(final String serverName)
+    {
+        int index = 0;
+        for (final MetaserverEntry metaserverEntry : metalist)
+        {
+            if (metaserverEntry.getHostname().equals(serverName))
+            {
+                return index;
+            }
+
+            index++;
+        }
+
+        return -1;
+    }
+
+    /**
      * Return the number of metaserver entries.
      *
      * @return The number of metaserver entries.
