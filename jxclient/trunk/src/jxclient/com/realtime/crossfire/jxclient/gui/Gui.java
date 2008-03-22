@@ -322,6 +322,28 @@ public class Gui
     }
 
     /**
+     * Returns a {@link GUIMetaElement} gui element of this gui by index.
+     * @param index the index
+     * @return the gui element, or <code>null</code> if not found
+     */
+    public GUIMetaElement getMetaElement(final int index)
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if (element instanceof GUIMetaElement)
+            {
+                final GUIMetaElement metaElement = (GUIMetaElement)element;
+                if (metaElement.getIndex() == index)
+                {
+                    return metaElement;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /**
      * Return the dialog title gui element of this gui.
      *
      * @return The title element, or <code>null</code> if this gui does not

@@ -215,4 +215,13 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             text.setText(metaEntry != null ? metaEntry.getHostname() : "");
         }
     }
+
+    /**
+     * Returns the index of this element.
+     * @return the index
+     */
+    public int getIndex()
+    {
+        return index;
+    }
 }

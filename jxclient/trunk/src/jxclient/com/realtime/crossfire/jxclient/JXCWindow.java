@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -635,6 +636,20 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
                 showGUIMeta();
                 metaserver.query();
+
+                final String serverName = settings.getString("server", "crossfire.metalforge.net");
+                if (serverName.length() > 0)
+                {
+                    final int metaIndex = metaserver.getServerIndex(serverName);
+                    if (metaIndex != -1)
+                    {
+                        final GUIMetaElement metaElement = jxcWindowRenderer.getCurrentGui().getMetaElement(metaIndex);
+                        if (metaElement != null)
+                        {
+                            metaElement.setActive(true);
+                        }
+                    }
+                }
                 break;
 
             case GUI_MAIN:
@@ -720,6 +735,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void connect(final String hostname, final int port)
     {
+        settings.putString("server", hostname);
         setHost(hostname, port);
         changeGUI(GUI_MAIN);
     }
