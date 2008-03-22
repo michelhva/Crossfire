@@ -2,15 +2,15 @@
 picture background 0 0 1024 768 background_metaserver
 text metaurl 530 620 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
 label_html metacomment 200 650 500 118 font_label WHITE
-meta_element metaselect1 270 235 480 20 null font_metaurl metaurl metacomment 0 (%P) %H (%V) - %C
-meta_element metaselect2 270 265 480 20 null font_metaurl metaurl metacomment 1 (%P) %H (%V) - %C
-meta_element metaselect3 270 295 480 20 null font_metaurl metaurl metacomment 2 (%P) %H (%V) - %C
-meta_element metaselect4 270 325 480 20 null font_metaurl metaurl metacomment 3 (%P) %H (%V) - %C
-meta_element metaselect5 270 355 480 20 null font_metaurl metaurl metacomment 4 (%P) %H (%V) - %C
-meta_element metaselect6 270 385 480 20 null font_metaurl metaurl metacomment 5 (%P) %H (%V) - %C
-meta_element metaselect7 270 415 480 20 null font_metaurl metaurl metacomment 6 (%P) %H (%V) - %C
-meta_element metaselect8 270 445 480 20 null font_metaurl metaurl metacomment 7 (%P) %H (%V) - %C
-meta_element metaselect9 270 475 480 20 null font_metaurl metaurl metacomment 8 (%P) %H (%V) - %C
+meta_element metaselect1 270 235 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect2 270 265 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect3 270 295 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect4 270 325 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect5 270 355 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect6 270 385 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect7 270 415 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect8 270 445 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect9 270 475 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
 
 commandlist_add command_metaconnect metaurl CONNECT
 

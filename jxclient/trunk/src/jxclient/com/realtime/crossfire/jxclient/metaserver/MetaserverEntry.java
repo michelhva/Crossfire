@@ -166,6 +166,10 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     break;
 
                 case 'C':
+                    sb.append(comment);
+                    break;
+
+                case 'D':
                     sb.append(htmlTagMatcher.matcher(comment).replaceAll(" "));
                     break;
 

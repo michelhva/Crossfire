@@ -107,11 +107,6 @@ import javax.imageio.ImageIO;
 public abstract class JXCSkinLoader implements JXCSkin
 {
     /**
-     * Pattern to split a command into tokens.
-     */
-    private static final Pattern patternTokens = Pattern.compile("[ \t]+");
-
-    /**
      * Pattern to parse integer constants.
      */
     private static final Pattern patternExpr = Pattern.compile("([0-9]+)([-+])(.+)");
@@ -441,7 +436,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             continue;
                         }
 
-                        final String[] args = patternTokens.split(line);
+                        final String[] args = split(line);
                         if (gui != null && args[0].equals("add"))
                         {
                             if (args.length != 2)
@@ -1205,7 +1200,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("meta_element"))
                         {
-                            if (args.length < 11)
+                            if (args.length != 13)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1220,8 +1215,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIText text = lookupTextElement(args[8]);
                             final AbstractLabel label = lookupLabelElement(args[9]);
                             final int id = parseInt(args[10]);
-                            final String format = parseText(args, 11, lnr);
-                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, font, text, label, id, format));
+                            final String format = args[11];
+                            final String tooltip = args[12];
+                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
@@ -2050,5 +2046,57 @@ public abstract class JXCSkinLoader implements JXCSkin
     public GUICommandList getCommandList(final String name) throws JXCSkinException
     {
         return commandLists.lookup(name);
+    }
+
+    /**
+     * Splits a line into tokens. Handles quoting ("...").
+     * @param line the line
+     * @return the tokens
+     */
+    private String[] split(final String line) throws JXCSkinException
+    {
+        final List<String> tokens = new ArrayList<String>(64);
+
+        final char[] chars = line.toCharArray();
+
+        int i = 0;
+        while (i < chars.length)
+        {
+            while (i < chars.length && (chars[i] == ' ' || chars[i] == '\t'))
+            {
+                i++;
+            }
+            final int start;
+            final int end;
+            if (i < chars.length && (chars[i] == '"' || chars[i] == '\''))
+            {
+                // quoted token
+                final char quoteChar = chars[i++];
+                start = i;
+                while (i < chars.length && chars[i] != quoteChar)
+                {
+                    i++;
+                }
+                if (i >= chars.length)
+                {
+                    throw new JXCSkinException("unterminated token: "+line.substring(start-1));
+                }
+                end = i;
+                i++;
+            }
+            else
+            {
+                // unquoted token
+                start = i;
+                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t'))
+                {
+                    i++;
+                }
+                end = i;
+            }
+            tokens.add(line.substring(start, end));
+        }
+
+        return tokens.toArray(new String[tokens.size()]);
     }
 }
