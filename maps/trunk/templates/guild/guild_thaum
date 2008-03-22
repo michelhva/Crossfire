@@ -1,13 +1,17 @@
 arch map
 name Guild Thaumaturgy Lab
 difficulty 1
+region Template
 width 14
 height 7
 enter_x 6
 enter_y 3
 msg
-Created:  2007-03-19 Rick Tanner
-Modified: 2007-08-27 Alestan (jehloq@yahoo.com)
+Creator: Rick Tanner
+Editor: CrossfireEditor
+Date:    3/19/2007
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch woodfloor
@@ -557,19 +561,11 @@ arch woodfloor
 x 9
 y 2
 end
-arch dwall_0
-x 9
-y 2
-end
 arch woodfloor
 x 9
 y 3
 end
 arch woodfloor
-x 9
-y 4
-end
-arch dwall_0
 x 9
 y 4
 end
@@ -596,23 +592,11 @@ arch woodfloor
 x 10
 y 2
 end
-arch dwall_0
-x 10
-y 2
-end
 arch woodfloor
 x 10
 y 3
 end
-arch grate_closed_2
-x 10
-y 3
-end
 arch woodfloor
-x 10
-y 4
-end
-arch dwall_0
 x 10
 y 4
 end

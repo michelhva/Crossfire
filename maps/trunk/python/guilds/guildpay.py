@@ -26,45 +26,68 @@ import string
 activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
 mymap = activator.Map
-x=32
-y=16
+gdues=open('share/maps/python/guilds/guildbalance.py', 'r')
+balance = gdues.readline (1)
+gdues.close()
 whoami=Crossfire.WhoAmI()
 guildname=Crossfire.ScriptParameters() # 6 is say event
-
+x=1
+y=7
+x1=18
+y1=4
+x2=18
+y2=6
 if (guildname):
 
     guild = CFGuilds.CFGuild(guildname)
     text = string.split(Crossfire.WhatIsMessage())
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
     found = 0
-    if text[0] == 'enter' or text[0] == 'Enter':
+    if text[0] == 'dues' or text[0] == 'Dues':
 
-            if guildrecord['Status'] == 'inactive':
-                message = 'This guild is currently inactive and available to be bought.'
+            
 
-            elif guildrecord['Status'] == 'suspended':
-                message = 'This guild is currently under suspension.\nPlease see a DM for more information'
+            
+            
 
-            else:
-                if guildrecord['Status'] == 'probation':
-                    activator.Write('This guild is currently under probation.\nPlease see a DM for more information')
+            
+            
+           
 
-                record = guild.info(activatorname) #see if they are on the board
-                if record:
+            record = guild.info(activatorname) #see if they are on the board
+            if record:
                     #check their status
-                    if record['Status'] == 'suspended':
-                        message = 'You are currently suspended from the guild'
-                    elif record['Status'] == 'probation':
-                        message = 'Granted, but you are on probation'
-                        x=15
-			y=22
-                    else:
-                        message = 'Entry granted for %s' %activatorname
-                        y=22
-			x=15
-                else:
-                    message = 'You try my patience %s.  BEGONE!' %activatorname
-                activator.Teleport(mymap,int(x),int(y)) #teleport them
+               if record['Status'] == 'suspended':
+                  message = 'You are currently suspended from the guild'
+               else:
+                 if record['Status'] == 'probation':
+                        message = 'You are on probation, you may not recieve dues.'
+                 else:
+                      if balance >= 1001:
+                         balance1 = int (balance) - 1000
+                         gdues1=open('share/maps/python/guilds/guildbalance.py', 'w')
+                         balance2 = str (balance1)
+                         gdues1.write (balance2)
+                         gdues1.close()
+                         message = 'Paying out now.'
+                         activator.Teleport(mymap,int(x2),int(y2))
+                         activator.Teleport (mymap,int(x),int(y))
+
+                      else: 
+                           if balance >= 101:
+                              balance1 = int (balance) - 100 
+                              gdues1=open('share/maps/python/guilds/guildbalance.py', 'w')
+                              balance2 = str (balance1)
+                              gdues1.write (balance2)
+                              gdues1.close()
+                              message = 'Paying out now.'
+                              activator.Teleport(mymap,int(x1),int(y1))
+                              activator.Teleport (mymap, int (x),int(y))
+                           else:
+                             message = 'Insufficient funds, try again later.'
+            else:
+                     message = 'You are not in the guild, %s.  Leave now!' %activatorname
+
 
     elif text[0] == 'buy' or text[0] == 'Buy':
         if guildrecord['Status'] == 'inactive':
@@ -85,4 +108,3 @@ else:
     message = 'Guild Guardian Error, please notify a DM'
 
 whoami.Say(message)
-

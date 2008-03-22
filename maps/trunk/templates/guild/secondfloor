@@ -6,8 +6,10 @@ height 20
 enter_x 12
 enter_y 11
 msg
-Created:  2004-11-19 majorwoo (josh@woosworld.net)
-Modified: 2007-11-04 Andreas Kirschbaum
+Creator: majorwoo josh@woosworld.net
+Date:    11/19/2004
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
 arch dungeon_magic
@@ -217,72 +219,70 @@ end
 arch dwall_2_1_2
 x 1
 end
-arch dungeon_magic
-x 1
-y 1
-end
 arch woodfloor
 x 1
 y 1
 unique 1
 end
+arch dungeon_magic
+x 1
+y 1
+end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
+dam 121
 x 1
 y 1
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
-end
-arch dungeon_magic
-x 1
-y 2
 end
 arch woodfloor
 x 1
 y 2
 unique 1
 end
+arch dungeon_magic
+x 1
+y 2
+end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
+sp 3
+dam 121
 x 1
 y 2
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
-end
-arch dungeon_magic
-x 1
-y 3
 end
 arch woodfloor
 x 1
 y 3
 unique 1
+end
+arch dungeon_magic
+x 1
+y 3
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 2
+dam 121
 x 1
 y 3
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
 end
 arch woodfloor
 x 1
@@ -342,6 +342,10 @@ x 1
 y 9
 unique 1
 end
+arch dungeon_magic
+x 1
+y 10
+end
 arch woodfloor
 x 1
 y 10
@@ -349,23 +353,43 @@ unique 1
 end
 arch dungeon_magic
 x 1
-y 10
+y 11
+end
+arch woodfloor
+x 1
+y 11
+unique 1
+end
+arch dungeon_magic
+x 1
+y 11
+end
+arch creator
+other_arch woodfloor
+x 1
+y 11
+connected 10
+end
+arch woodfloor
+x 1
+y 11
+unique 1
 end
 arch goldfloor
 name drop 15 diamonds of exceptional beauty for Jewelers room
 slaying diamond of exceptional beauty
 food 15
 x 1
-y 10
+y 11
 connected 10
 end
 arch dungeon_magic
 x 1
-y 11
+y 12
 end
 arch woodfloor
 x 1
-y 11
+y 12
 unique 1
 end
 arch trigger_marker
@@ -375,21 +399,8 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 1
-y 11
+y 12
 connected 11
-end
-arch dungeon_magic
-x 1
-y 12
-end
-arch woodfloor
-x 1
-y 12
-unique 1
-end
-arch cwall_0
-x 1
-y 12
 end
 arch dungeon_magic
 x 1
@@ -476,32 +487,27 @@ end
 arch dwall_2_1_2
 x 2
 end
-arch dungeon_magic
-x 2
-y 1
-end
 arch woodfloor
 x 2
 y 1
 unique 1
 end
+arch dungeon_magic
+x 2
+y 1
+end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 5
+dam 121
 x 2
 y 1
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
-end
-arch dungeon_magic
-x 2
-y 2
 end
 arch magic_mouth
 msg
@@ -515,6 +521,10 @@ x 2
 y 2
 unique 1
 end
+arch dungeon_magic
+x 2
+y 2
+end
 arch button_lever
 name Vibrantly Flashing Crystal
 face power_crystal.111
@@ -523,28 +533,27 @@ x 2
 y 2
 connected 2
 end
-arch dungeon_magic
-x 2
-y 3
-end
 arch woodfloor
 x 2
 y 3
 unique 1
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 1
+dam 121
 x 2
 y 3
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
 end
 arch woodfloor
 x 2
@@ -622,12 +631,6 @@ x 2
 y 11
 unique 1
 end
-arch check_floor
-slaying Jewe_Token
-x 2
-y 11
-connected 898
-end
 arch dungeon_magic
 x 2
 y 12
@@ -635,32 +638,32 @@ end
 arch woodfloor
 x 2
 y 12
+unique 1
+end
+arch check_floor
+slaying Jewe_Token
+x 2
+y 12
+connected 898
+end
+arch dungeon_magic
+x 2
+y 13
+end
+arch woodfloor
+x 2
+y 13
 unique 1
 end
 arch check_floor
 race Jewelry Pass
 x 2
-y 12
+y 13
 connected 898
 end
 arch grate_closed_1
 x 2
-y 12
-connected 898
-end
-arch dungeon_magic
-x 2
 y 13
-end
-arch woodfloor
-x 2
-y 13
-unique 1
-end
-arch pedestal
-x 2
-y 13
-invisible 1
 connected 898
 end
 arch dungeon_magic
@@ -751,73 +754,71 @@ end
 arch dwall_2_1_2
 x 3
 end
-arch dungeon_magic
-x 3
-y 1
-end
 arch woodfloor
 x 3
 y 1
 unique 1
+end
+arch dungeon_magic
+x 3
+y 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 6
+dam 121
 x 3
 y 1
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
-end
-arch dungeon_magic
-x 3
-y 2
 end
 arch woodfloor
 x 3
 y 2
 unique 1
+end
+arch dungeon_magic
+x 3
+y 2
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 7
+dam 121
 x 3
 y 2
-speed 0.0
+speed 0
 level 107
 invisible 1
 connected 2
+no_pass 0
 blocksview 0
-arch spell_transference
-end
-end
-arch dungeon_magic
-x 3
-y 3
 end
 arch woodfloor
 x 3
 y 3
 unique 1
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
 sp 8
+dam 121
 x 3
 y 3
 speed 0
 level 107
 invisible 1
 connected 2
-move_block 0
+no_pass 0
 blocksview 0
-arch spell_transference
-end
 end
 arch woodfloor
 x 3
@@ -903,10 +904,6 @@ arch woodfloor
 x 3
 y 12
 unique 1
-end
-arch cwall_0
-x 3
-y 12
 end
 arch dungeon_magic
 x 3
@@ -1409,7 +1406,7 @@ end
 arch pedestal
 x 6
 y 2
-connected 42
+connected 746
 end
 arch woodfloor
 x 6
@@ -2380,10 +2377,16 @@ arch dungeon_magic
 x 10
 y 7
 end
-arch woodfloor
+arch creator
 x 10
 y 7
-unique 1
+end
+arch goldfloor
+slaying Glowing Crystal Token
+food 1
+x 10
+y 7
+connected 80
 end
 arch dungeon_magic
 x 10
@@ -2463,6 +2466,15 @@ end
 arch woodfloor
 x 10
 y 15
+unique 1
+end
+arch dungeon_magic
+x 10
+y 16
+end
+arch woodfloor
+x 10
+y 16
 unique 1
 end
 arch dungeon_magic
@@ -2487,10 +2499,9 @@ x 10
 y 17
 unique 1
 end
-arch pedestal
+arch igate_closed_2
 x 10
 y 17
-invisible 1
 connected 899
 end
 arch dungeon_magic
@@ -2502,6 +2513,15 @@ x 10
 y 18
 unique 1
 end
+arch dungeon_magic
+x 10
+y 18
+end
+arch woodfloor
+x 10
+y 18
+unique 1
+end
 arch cwall_0
 x 10
 y 18
@@ -2529,14 +2549,20 @@ end
 arch dwall_2_1_2
 x 11
 end
+arch dungeon_magic
+x 11
+y 1
+end
 arch woodfloor
 x 11
 y 1
 unique 1
 end
-arch dungeon_magic
+arch creator
+other_arch woodfloor
 x 11
 y 1
+connected 40
 end
 arch goldfloor
 name drop 100 jade coins for Glowing Crystal Room
@@ -2694,19 +2720,6 @@ unique 1
 end
 arch dungeon_magic
 x 11
-y 16
-end
-arch woodfloor
-x 11
-y 16
-unique 1
-end
-arch cwall_0
-x 11
-y 16
-end
-arch dungeon_magic
-x 11
 y 17
 end
 arch woodfloor
@@ -2714,7 +2727,8 @@ x 11
 y 17
 unique 1
 end
-arch igate_closed_2
+arch check_floor
+slaying Thau_Token
 x 11
 y 17
 connected 899
@@ -2737,9 +2751,15 @@ x 11
 y 18
 unique 1
 end
-arch cwall_0
+arch trigger_marker
+slaying guild_thaum21
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
 x 11
 y 18
+connected 21
 end
 arch dungeon_magic
 x 11
@@ -2886,7 +2906,7 @@ end
 arch stair_3_down
 slaying mainfloor
 hp 16
-sp 14
+sp 15
 x 12
 y 11
 end
@@ -2944,11 +2964,9 @@ x 12
 y 17
 unique 1
 end
-arch check_floor
-slaying Thau_Token
+arch dungeon_magic
 x 12
-y 17
-connected 899
+y 18
 end
 arch woodfloor
 x 12
@@ -2959,15 +2977,24 @@ arch dungeon_magic
 x 12
 y 18
 end
-arch trigger_marker
-slaying guild_thaum21
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
+arch woodfloor
 x 12
 y 18
-connected 21
+unique 1
+end
+arch creator
+other_arch woodfloor
+x 12
+y 18
+connected 20
+end
+arch goldfloor
+name drop 30,000 rubies for Thaumaturgy room
+slaying ruby
+food 30000
+x 12
+y 18
+connected 20
 end
 arch woodfloor
 x 12
@@ -3055,14 +3082,20 @@ arch cwall_0
 x 13
 y 6
 end
+arch dungeon_magic
+x 13
+y 7
+end
 arch woodfloor
 x 13
 y 7
 unique 1
 end
-arch dungeon_magic
+arch creator
+other_arch woodfloor
 x 13
 y 7
+connected 30
 end
 arch goldfloor
 name drop 30,000 diamonds for Alchemy room
@@ -3170,22 +3203,14 @@ x 13
 y 17
 unique 1
 end
-arch woodfloor
-x 13
-y 18
-unique 1
-end
 arch dungeon_magic
 x 13
 y 18
 end
-arch goldfloor
-name drop 30,000 rubies for Thaumaturgy room
-slaying ruby
-food 30000
+arch woodfloor
 x 13
 y 18
-connected 20
+unique 1
 end
 arch woodfloor
 x 13
@@ -3511,14 +3536,14 @@ arch cwall_0
 x 15
 y 6
 end
+arch dungeon_magic
+x 15
+y 7
+end
 arch woodfloor
 x 15
 y 7
 unique 1
-end
-arch dungeon_magic
-x 15
-y 7
 end
 arch trigger_marker
 slaying guild_alchemy31
@@ -3552,14 +3577,20 @@ x 15
 y 9
 unique 1
 end
+arch dungeon_magic
+x 15
+y 10
+end
 arch woodfloor
 x 15
 y 10
 unique 1
 end
-arch dungeon_magic
+arch creator
+other_arch woodfloor
 x 15
 y 10
+connected 7
 end
 arch goldfloor
 name drop 20 amulets of Lifesaving for a portal to the Mazes of Menace
@@ -3663,10 +3694,10 @@ x 15
 y 18
 unique 1
 end
-arch check_floor
-slaying GuildMaster
+arch pedestal
 x 15
 y 18
+invisible 1
 connected 918
 end
 arch button_lever
@@ -4109,27 +4140,6 @@ y 6
 end
 arch woodfloor
 x 18
-y 7
-unique 1
-end
-arch teleporter
-hp 15
-sp 9
-x 18
-y 7
-speed 0
-connected 7
-end
-arch perm_magic_portal
-name The Mazes of Menace
-slaying /quests/peterm/Nethack_in_crossfire_entrance
-hp 0
-sp 0
-x 18
-y 7
-end
-arch woodfloor
-x 18
 y 8
 unique 1
 end
@@ -4153,6 +4163,8 @@ hp 0
 sp 0
 x 18
 y 9
+walk_on 0
+fly_on 0
 end
 arch blocked
 x 18
@@ -4169,7 +4181,7 @@ end
 arch altar_trigger
 name Drop 100 platinum to enter Jewelers Room
 slaying platinacoin
-food 100
+food 200
 x 18
 y 11
 connected 11
@@ -4284,7 +4296,7 @@ x 19
 y 10
 end
 arch teleporter
-hp 11
+hp 10
 sp 19
 x 19
 y 11
