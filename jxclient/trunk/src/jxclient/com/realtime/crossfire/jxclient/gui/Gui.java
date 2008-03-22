@@ -710,4 +710,15 @@ public class Gui
         }
         hasChangedElements = true;
     }
+
+    /**
+     * Returns whether a given point is within this dialog's drawing area.
+     * @param x the x-coordinate of the the point
+     * @param y the y-coordinate of the the point
+     * @return whether the coordinate is within the drawing area
+     */
+    public boolean isWithinDrawingArea(final int x, final int y)
+    {
+        return this.x <= x && x < this.x+w && this.y <= y && y < this.y+this.h;
+    }
 }

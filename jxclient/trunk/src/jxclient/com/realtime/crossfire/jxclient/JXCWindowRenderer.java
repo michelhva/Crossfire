@@ -25,12 +25,14 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
+import java.awt.event.MouseEvent;
 import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
 import java.awt.Insets;
+import java.awt.Point;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.Iterator;
 import java.util.ListIterator;
@@ -356,11 +358,11 @@ public class JXCWindowRenderer
         }
 
         dialog.setStateChanged(true);
-        if (!openDialogs.remove(dialog))
+        if (!openDialogsRemove(dialog))
         {
             dialog.activateDefaultElement();
         }
-        openDialogs.add(dialog);
+        openDialogsAdd(dialog);
         openDialogsChanged = true;
         return true;
     }
@@ -387,11 +389,11 @@ public class JXCWindowRenderer
             return;
         }
 
-        if (!openDialogs.remove(dialog))
+        if (!openDialogsRemove(dialog))
         {
             assert false;
         }
-        openDialogs.add(dialog);
+        openDialogsAdd(dialog);
         openDialogsChanged = true;
     }
 
@@ -521,7 +523,7 @@ public class JXCWindowRenderer
      */
     public void closeDialog(final Gui dialog)
     {
-        if (openDialogs.remove(dialog))
+        if (openDialogsRemove(dialog))
         {
             dialog.setStateChanged(true);
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
@@ -550,7 +552,7 @@ public class JXCWindowRenderer
         openDialogsChanged = true;
         dialog.setStateChanged(true);
 
-        if (openDialogs.remove(dialog))
+        if (openDialogsRemove(dialog))
         {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
             if (activeElement != null)
@@ -561,7 +563,7 @@ public class JXCWindowRenderer
         }
 
         dialog.setAutoCloseOnDeactivate(null);
-        openDialogs.add(dialog);
+        openDialogsAdd(dialog);
         dialog.activateDefaultElement();
         return true;
     }
@@ -626,5 +628,79 @@ public class JXCWindowRenderer
     public void addGuiStateListener(final GuiStateListener listener)
     {
         guiStateListeners.add(listener);
+    }
+
+    /**
+     * Adds a dialog to {@link #openDialogs}. Generates mouse events if
+     * necessary.
+     * @param dialog the dialog
+     */
+    private boolean openDialogsAdd(final Gui dialog)
+    {
+        if (openDialogs.contains(dialog))
+        {
+            return false;
+        }
+
+        final Point mouse = jxcWindow.getMousePosition(true);
+        if (mouse == null)
+        {
+            openDialogs.add(dialog);
+        }
+        else
+        {
+            mouse.x -= offsetX;
+            mouse.y -= offsetY;
+            if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
+            {
+                final MouseEvent mouseEvent = new MouseEvent(jxcWindow, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                jxcWindow.getMouseTracker().mouseExited(mouseEvent);
+                openDialogs.add(dialog);
+                jxcWindow.getMouseTracker().mouseEntered(mouseEvent);
+            }
+            else
+            {
+                openDialogs.add(dialog);
+            }
+        }
+
+        return true;
+    }
+
+    /**
+     * Removes a dialog to {@link #openDialogs}. Generates mouse events if
+     * necessary.
+     * @param dialog the dialog
+     */
+    private boolean openDialogsRemove(final Gui dialog)
+    {
+        if (!openDialogs.contains(dialog))
+        {
+            return false;
+        }
+
+        final Point mouse = jxcWindow.getMousePosition(true);
+        if (mouse == null)
+        {
+            openDialogs.add(dialog);
+        }
+        else
+        {
+            mouse.x -= offsetX;
+            mouse.y -= offsetY;
+            if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
+            {
+                final MouseEvent mouseEvent = new MouseEvent(jxcWindow, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                jxcWindow.getMouseTracker().mouseExited(mouseEvent);
+                openDialogs.remove(dialog);
+                jxcWindow.getMouseTracker().mouseEntered(mouseEvent);
+            }
+            else
+            {
+                openDialogs.add(dialog);
+            }
+        }
+
+        return true;
     }
 }
