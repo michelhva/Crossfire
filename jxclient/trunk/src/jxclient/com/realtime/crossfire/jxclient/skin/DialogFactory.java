@@ -148,20 +148,20 @@ public class DialogFactory
         sizeS = frameS.getHeight(null);
         sizeW = frameW.getWidth(null);
         sizeE = frameE.getWidth(null);
-        if (frameNW.getHeight(null) != sizeN) throw new IllegalArgumentException("height of NW does not match height of N");
-        if (frameNE.getHeight(null) != sizeN) throw new IllegalArgumentException("height of NE does not match height of N");
-        if (frameSW.getHeight(null) != sizeS) throw new IllegalArgumentException("height of SW does not match height of N");
-        if (frameSE.getHeight(null) != sizeS) throw new IllegalArgumentException("height of SE does not match height of N");
-        if (frameNW.getWidth(null) != sizeW) throw new IllegalArgumentException("width of NW does not match width of W");
-        if (frameNE.getWidth(null) != sizeE) throw new IllegalArgumentException("width of NE does not match width of E");
-        if (frameSW.getWidth(null) != sizeW) throw new IllegalArgumentException("width of SW does not match width of W");
-        if (frameSE.getWidth(null) != sizeE) throw new IllegalArgumentException("width of SE does not match width of E");
+        if (frameNW.getHeight(null) != sizeN) throw new IllegalArgumentException("height of NW ("+frameNW.getHeight(null)+") does not match height of N ("+sizeN+")");
+        if (frameNE.getHeight(null) != sizeN) throw new IllegalArgumentException("height of NE ("+frameNE.getHeight(null)+") does not match height of N ("+sizeN+")");
+        if (frameSW.getHeight(null) != sizeS) throw new IllegalArgumentException("height of SW ("+frameSW.getHeight(null)+") does not match height of N ("+sizeS+")");
+        if (frameSE.getHeight(null) != sizeS) throw new IllegalArgumentException("height of SE ("+frameSE.getHeight(null)+") does not match height of N ("+sizeS+")");
+        if (frameNW.getWidth(null) != sizeW) throw new IllegalArgumentException("width of NW ("+frameNW.getWidth(null)+") does not match width of W");
+        if (frameNE.getWidth(null) != sizeE) throw new IllegalArgumentException("width of NE ("+frameNE.getWidth(null)+") does not match width of E");
+        if (frameSW.getWidth(null) != sizeW) throw new IllegalArgumentException("width of SW ("+frameSW.getWidth(null)+") does not match width of W");
+        if (frameSE.getWidth(null) != sizeE) throw new IllegalArgumentException("width of SE ("+frameSE.getWidth(null)+") does not match width of E");
         contentWidth = frameC.getWidth(null);
         contentHeight = frameC.getHeight(null);
-        if (frameN.getWidth(null) != contentWidth) throw new IllegalArgumentException("width of N does not match width of C");
-        if (frameS.getWidth(null) != contentWidth) throw new IllegalArgumentException("width of S does not match width of C");
-        if (frameW.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of W does not match height of C");
-        if (frameE.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of E does not match height of C");
+        if (frameN.getWidth(null) != contentWidth) throw new IllegalArgumentException("width of N ("+frameN.getWidth(null)+") does not match width of C ("+contentWidth+")");
+        if (frameS.getWidth(null) != contentWidth) throw new IllegalArgumentException("width of S ("+frameS.getWidth(null)+") does not match width of C ("+contentWidth+")");
+        if (frameW.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of W ("+frameW.getHeight(null)+") does not match height of C ("+contentHeight+")");
+        if (frameE.getHeight(null) != contentHeight) throw new IllegalArgumentException("width of E ("+frameE.getHeight(null)+") does not match height of C ("+contentHeight+")");
         this.titleFont = titleFont;
         this.titleColor = titleColor;
         this.alpha = alpha;
@@ -184,10 +184,10 @@ public class DialogFactory
      */
     public Collection<GUIElement> newDialog(final JXCWindow jxcWindow, final String name, final int w, final int h, final String title)
     {
-        if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height is smaller than heights of N and S");
-        if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width is smaller than heights of W and E");
-        if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width is wider than W+C+E");
-        if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height is taller than N+C+S");
+        if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
+        if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");
+        if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width ("+w+") is wider than W+C+E ("+sizeW+"+"+contentWidth+"+"+sizeE+")");
+        if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height ("+h+") is taller than N+C+S ("+sizeN+"+"+contentHeight+"+"+sizeS+")");
 
         final int titleHeight = title.length() > 0 ? 18 : 0;
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
