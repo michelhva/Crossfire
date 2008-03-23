@@ -108,10 +108,10 @@ public class Gui
     private boolean stateChanged = false;
 
     /**
-     * If non-<code>null</code>, auto-close this dialog if this gui element
-     * becomes inactive.
+     * If set, auto-close this dialog if this dialog looses the active gui
+     * element.
      */
-    private ActivatableGUIElement autoCloseOnDeactivate = null;
+    private boolean autoCloseOnDeactivate = false;
 
     /**
      * Create a new instance.
@@ -433,22 +433,57 @@ public class Gui
     /**
      * Set the gui element owning the focus.
      *
-     * @param activeElement The gui element, or <code>null</code> if no element
-     * should have the focus.
+     * @param activeElement The gui element.
+     *
+     * @param active The new active state.
      */
-    public void updateActiveElement(final ActivatableGUIElement activeElement)
+    void setActiveElement(final ActivatableGUIElement activeElement, final boolean active)
     {
-        if (this.activeElement != null && this.activeElement != activeElement)
-        {
-            this.activeElement.setActive(false);
-        }
+        assert activeElement != null;
 
-        this.activeElement = activeElement.isActive() ? activeElement : null;
-        if (autoCloseOnDeactivate != null && autoCloseOnDeactivate == activeElement && !activeElement.isActive())
+        final ActivatableGUIElement previousActiveElement = this.activeElement;
+        if (active)
         {
-            autoCloseOnDeactivate = null;
-            jxcWindow.getWindowRenderer().closeDialog(this);
+            if (isActiveElement(activeElement))
+            {
+                return;
+            }
+
+            this.activeElement = activeElement;
+            if (previousActiveElement != null)
+            {
+                previousActiveElement.activeChanged();
+            }
+            this.activeElement.activeChanged();
+
+            autoCloseOnDeactivate = false;
         }
+        else
+        {
+            if (!isActiveElement(activeElement))
+            {
+                return;
+            }
+
+            this.activeElement = null;
+            previousActiveElement.activeChanged();
+
+            if (autoCloseOnDeactivate)
+            {
+                jxcWindow.getWindowRenderer().closeDialog(this);
+            }
+        }
+    }
+
+    /**
+     * Returns whether a given gui element is the active element of this
+     * dialog.
+     * @param activeElement the gui element
+     * @return whether the given gui element is active
+     */
+    public boolean isActiveElement(final ActivatableGUIElement activeElement)
+    {
+        return this.activeElement != null && this.activeElement == activeElement;
     }
 
     /**
@@ -647,21 +682,13 @@ public class Gui
     }
 
     /**
-     * Automatically close this gui element if the given gui element is
-     * deactivated.
-     *
-     * @param activatableGUIElement The gui element to monitor.
+     * Automatically close this dialog when it looses the focus.
+     * @param autoCloseOnDeactivate whether the dialog should be automatically
+     * closed
      */
-    public void setAutoCloseOnDeactivate(final ActivatableGUIElement activatableGUIElement)
+    public void setAutoCloseOnDeactivate(final boolean autoCloseOnDeactivate)
     {
-        if (activatableGUIElement == null || !activatableGUIElement.isActive())
-        {
-            autoCloseOnDeactivate = null;
-        }
-        else
-        {
-            autoCloseOnDeactivate = activatableGUIElement;
-        }
+        this.autoCloseOnDeactivate = autoCloseOnDeactivate;
     }
 
     /**

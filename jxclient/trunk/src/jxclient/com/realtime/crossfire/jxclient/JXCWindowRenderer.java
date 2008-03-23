@@ -351,7 +351,7 @@ public class JXCWindowRenderer
             return false;
         }
 
-        dialog.setAutoCloseOnDeactivate(null);
+        dialog.setAutoCloseOnDeactivate(false);
         if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return false;
@@ -562,7 +562,7 @@ public class JXCWindowRenderer
             return false;
         }
 
-        dialog.setAutoCloseOnDeactivate(null);
+        dialog.setAutoCloseOnDeactivate(false);
         openDialogsAdd(dialog);
         dialog.activateDefaultElement();
         return true;
