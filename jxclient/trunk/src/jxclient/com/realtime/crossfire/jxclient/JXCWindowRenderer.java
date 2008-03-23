@@ -682,7 +682,7 @@ public class JXCWindowRenderer
         final Point mouse = jxcWindow.getMousePosition(true);
         if (mouse == null)
         {
-            openDialogs.add(dialog);
+            openDialogs.remove(dialog);
         }
         else
         {
@@ -697,7 +697,7 @@ public class JXCWindowRenderer
             }
             else
             {
-                openDialogs.add(dialog);
+                openDialogs.remove(dialog);
             }
         }
 
