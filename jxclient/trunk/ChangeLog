@@ -1,5 +1,9 @@
 2008-03-23  Andreas Kirschbaum
 
+	* Fix #1881471 (Can't see statistics at character creation) by
+	automatically opening both messages and status dialogs when
+	creating a new character.
+
 	* Fix #1864274 (Disappearing message window).
 
 2008-03-22  Andreas Kirschbaum
