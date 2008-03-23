@@ -1342,8 +1342,17 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
         else if (evt.getPrompt().startsWith("[y] to roll new stats"))
         {
-            openDialog("messages");
-            openDialog("status");
+            final Gui messagesDialog = myskin.getDialog("messages");
+            if (messagesDialog != null)
+            {
+                openDialog(messagesDialog);
+            }
+            final Gui statusDialog = myskin.getDialog("status");
+            if (statusDialog != null)
+            {
+                openDialog(statusDialog);
+            }
+            openDialog(queryDialog); // raise dialog
         }
     }
 
