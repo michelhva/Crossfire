@@ -186,7 +186,7 @@ public class DialogFactory
     {
         if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height is smaller than heights of N and S");
         if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width is smaller than heights of W and E");
-        if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width if wider than W+C+E");
+        if (w > sizeW+contentWidth+sizeE) throw new IllegalArgumentException("dialog width is wider than W+C+E");
         if (h > sizeN+contentHeight+sizeS) throw new IllegalArgumentException("dialog height is taller than N+C+S");
 
         final int titleHeight = title.length() > 0 ? 18 : 0;
