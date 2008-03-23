@@ -1340,6 +1340,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 }
             }
         }
+        else if (evt.getPrompt().startsWith("[y] to roll new stats"))
+        {
+            openDialog("messages");
+            openDialog("status");
+        }
     }
 
     private void showGUIStart()
