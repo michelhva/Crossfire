@@ -30,11 +30,6 @@ import java.awt.event.MouseEvent;
 public abstract class ActivatableGUIElement extends GUIElement
 {
     /**
-     * Whether the element is active.
-     */
-    private boolean active = false;
-
-    /**
      * Create a new instance.
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
@@ -63,34 +58,27 @@ public abstract class ActivatableGUIElement extends GUIElement
      *
      * @return Whether the active state was changed.
      */
-    public boolean setActive(final boolean active)
+    public void setActive(final boolean active)
     {
-        if (this.active == active)
-        {
-            return false;
-        }
-
-        this.active = active;
         final Gui gui = getGui();
         if (gui != null)
         {
-            gui.updateActiveElement(this);
+            gui.setActiveElement(this, active);
         }
-        activeChanged();
-        return true;
     }
 
     /**
      * Will be called whenever the active state has changed.
      */
-    protected void activeChanged()
+    void activeChanged()
     {
     }
 
     /* {@inheritDoc} */
     @Override public boolean isActive()
     {
-        return active;
+        final Gui gui = getGui();
+        return gui != null && gui.getActiveElement() == this;
     }
 
     /** {@inheritDoc} */

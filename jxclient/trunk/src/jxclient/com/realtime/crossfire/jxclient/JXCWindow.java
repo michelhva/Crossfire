@@ -1476,7 +1476,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (textArea3 != null)
             {
                 openDialog(dialog);
-                dialog.setAutoCloseOnDeactivate(textArea3);
+                dialog.setAutoCloseOnDeactivate(true);
                 return textArea3;
             }
         }

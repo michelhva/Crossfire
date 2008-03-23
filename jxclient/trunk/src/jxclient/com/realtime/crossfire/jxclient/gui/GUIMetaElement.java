@@ -141,23 +141,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override public boolean setActive(final boolean active)
-    {
-        if (!super.setActive(active))
-        {
-            return false;
-        }
-
-        if (!active && comment != null)
-        {
-            comment.setText("");
-        }
-
-        render();
-        return true;
-    }
-
-    /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {
         if (distance < 0)
@@ -209,18 +192,25 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
         if (!isActive())
         {
-            return;
+            if (comment != null)
+            {
+                comment.setText("");
+            }
+        }
+        else
+        {
+            final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
+            if (comment != null)
+            {
+                comment.setText(metaEntry != null ? metaEntry.getComment() : "");
+            }
+            if (text != null)
+            {
+                text.setText(metaEntry != null ? metaEntry.getHostname() : "");
+            }
         }
 
-        final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
-        if (comment != null)
-        {
-            comment.setText(metaEntry != null ? metaEntry.getComment() : "");
-        }
-        if (text != null)
-        {
-            text.setText(metaEntry != null ? metaEntry.getHostname() : "");
-        }
+        render();
     }
 
     /**
