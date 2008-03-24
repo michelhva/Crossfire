@@ -1,5 +1,408 @@
-2008-03-22 17:22  kbulgrien
-        * santo_dominion/tavern.2ndfloor: Fix spelling.
+2008-03-24 04:00  rjtanner
+
+	* pup_land/lone_town/town: Rearranged map stacking order, moved
+	  no_spell tiles to the bottom of the stack
+
+2008-03-23 22:23  kbulgrien
+
+	* ChangeLog, santo_dominion/tavern.2ndfloor: - Spelling correction.
+
+2008-03-22 07:25  rjtanner
+
+	* darcap/raffle/raffle1_u3: Missed converting dwall3_3 to dwall_
+	  3_3 in earlier commit, checking it in now
+
+2008-03-22 04:43  rjtanner
+
+	* darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2: Per earlier archetype changes
+	  (2008-01-18), removed/renamed dwall3_3 to dwall_3_3
+
+2008-03-22 04:27  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/gates/gate1,
+	  azumauindo/minatomachi/gates/gate2,
+	  azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1,
+	  azumauindo/minatomachi/stores/generalstore,
+	  azumauindo/minatomachi/stores/postoffice,
+	  azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2,
+	  azumauindo/misc/cave1, azumauindo/misc/entrance1,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/shops/armourshop1,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/bank2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/shops/pawn1,
+	  azumauindo/suno-yamatoshi/shops/weaponshop1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2,
+	  azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3: Synchronize Azumauindo map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-21 00:15  rjtanner
+
+	* templates/README, templates/keep/grounds.tpl,
+	  templates/keep/keep1.tpl, templates/keep/keep2.tpl,
+	  templates/keep/keep3.tpl, templates/keep/keep_b.tpl,
+	  templates/keep/keep_roof.tpl: Synchronize Template map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-21 00:07  rjtanner
+
+	* pup_land/rainbow/Keira, pup_land/rainbow/Lv1/Bizuzu,
+	  pup_land/rainbow/Lv1/b_pass, pup_land/rainbow/Lv1/cage,
+	  pup_land/rainbow/Lv1/cd_room, pup_land/rainbow/Lv1/d_pass,
+	  pup_land/rainbow/Lv1/e_hall, pup_land/rainbow/Lv1/f_a,
+	  pup_land/rainbow/Lv1/g_boss, pup_land/rainbow/Lv1/g_road,
+	  pup_land/rainbow/Lv1/hut1, pup_land/rainbow/Lv1/hut2,
+	  pup_land/rainbow/Lv1/hut3, pup_land/rainbow/Lv1/hut4,
+	  pup_land/rainbow/Lv1/n_gate, pup_land/rainbow/Lv1/orc_f,
+	  pup_land/rainbow/Lv1/prison, pup_land/rainbow/Lv1/t_room,
+	  pup_land/rainbow/Lv2/Kum, pup_land/rainbow/Lv2/b_inner,
+	  pup_land/rainbow/Lv2/b_m, pup_land/rainbow/Lv2/b_m2,
+	  pup_land/rainbow/Lv2/d_cage, pup_land/rainbow/Lv2/e_hall,
+	  pup_land/rainbow/Lv2/h_pass, pup_land/rainbow/Lv2/holes,
+	  pup_land/rainbow/Lv2/maze, pup_land/rainbow/Lv2/n_gate,
+	  pup_land/rainbow/Lv2/sticky, pup_land/rainbow/Lv2/tray,
+	  pup_land/rainbow/Lv3/Garan, pup_land/rainbow/Lv3/Goraon,
+	  pup_land/rainbow/Lv3/Ring, pup_land/rainbow/Lv3/Rufto,
+	  pup_land/rainbow/Lv3/Wips, pup_land/rainbow/Lv3/c-road,
+	  pup_land/rainbow/Lv3/e-path, pup_land/rainbow/Lv3/e_hall,
+	  pup_land/rainbow/Lv3/hidden, pup_land/rainbow/Lv3/maze,
+	  pup_land/rainbow/Lv3/n-gate, pup_land/rainbow/Lv3/name,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv3/sec-p,
+	  pup_land/rainbow/Lv3/w-path, pup_land/rainbow/Lv4/alter,
+	  pup_land/rainbow/Lv4/alter2, pup_land/rainbow/Lv4/bot,
+	  pup_land/rainbow/Lv4/curve, pup_land/rainbow/Lv4/demi,
+	  pup_land/rainbow/Lv4/e-hall, pup_land/rainbow/Lv4/hidden,
+	  pup_land/rainbow/Lv4/junk, pup_land/rainbow/Lv4/key,
+	  pup_land/rainbow/Lv4/mf, pup_land/rainbow/Lv4/n-gate,
+	  pup_land/rainbow/Lv4/path4, pup_land/rainbow/Lv4/path7,
+	  pup_land/rainbow/Lv4/path8, pup_land/rainbow/Lv4/path9,
+	  pup_land/rainbow/Lv4/statue, pup_land/rainbow/Lv5/cross,
+	  pup_land/rainbow/Lv5/e-hall, pup_land/rainbow/Lv5/romm88,
+	  pup_land/rainbow/Lv5/room2, pup_land/rainbow/Lv5/room22,
+	  pup_land/rainbow/Lv5/room4, pup_land/rainbow/Lv5/room44,
+	  pup_land/rainbow/Lv5/room6, pup_land/rainbow/Lv5/room66,
+	  pup_land/rainbow/Lv5/room8, pup_land/rainbow/Lv5/room88,
+	  pup_land/rainbow/Lv6/big-hall, pup_land/rainbow/Lv6/n-gate,
+	  pup_land/rainbow/Lv7/back, pup_land/rainbow/l_h1,
+	  pup_land/rainbow/l_h2, pup_land/rainbow/l_hB,
+	  pup_land/rainbow/red_town/shop, pup_land/rainbow/red_town/town,
+	  pup_land/rainbow/river, pup_land/rainbow/station,
+	  pup_land/rainbow/w-tower, pup_land/rainbow/well,
+	  pup_land/rainbow/woods: Synchronize Rainbow map changes between
+	  trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-20 21:29  akirschbaum
+
+	* editor/scripts/WorldMaker: Remove unused configuration parameter
+	  from WorldMaker script.
+
+2008-03-20 05:36  rjtanner
+
+	* pup_land/nurnberg/agito, pup_land/nurnberg/alshop,
+	  pup_land/nurnberg/apartment/cave,
+	  pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/apartment/to_past, pup_land/nurnberg/aqueduct,
+	  pup_land/nurnberg/castle, pup_land/nurnberg/castle_bauer/castle2,
+	  pup_land/nurnberg/castle_bauer/castle3,
+	  pup_land/nurnberg/castle_bauer/castle4,
+	  pup_land/nurnberg/castle_ud, pup_land/nurnberg/city,
+	  pup_land/nurnberg/dick/bomb1, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/dragonhangar/hangar, pup_land/nurnberg/guild,
+	  pup_land/nurnberg/guild_ud, pup_land/nurnberg/hq,
+	  pup_land/nurnberg/hq_training, pup_land/nurnberg/nf_bar,
+	  pup_land/nurnberg/paslab, pup_land/nurnberg/pshop: Synchronize
+	  Nurnberg map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-20 01:08  rjtanner
+
+	* pup_land/lone_town/apartment/groundfloor,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1, pup_land/lone_town/bank,
+	  pup_land/lone_town/cave/b1, pup_land/lone_town/cave/b2,
+	  pup_land/lone_town/cave/b3, pup_land/lone_town/church,
+	  pup_land/lone_town/church_ud, pup_land/lone_town/cordish,
+	  pup_land/lone_town/cordish2,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/lone_town/dress1, pup_land/lone_town/dress2,
+	  pup_land/lone_town/dress3, pup_land/lone_town/gemshop,
+	  pup_land/lone_town/gemshop_ud, pup_land/lone_town/gshop,
+	  pup_land/lone_town/guild_freedom,
+	  pup_land/lone_town/guild_freedom_ud,
+	  pup_land/lone_town/guild_law, pup_land/lone_town/guild_law_ud,
+	  pup_land/lone_town/heinrich, pup_land/lone_town/inn,
+	  pup_land/lone_town/magic, pup_land/lone_town/mshop,
+	  pup_land/lone_town/mshop_ud, pup_land/lone_town/nf_bar,
+	  pup_land/lone_town/pupuly, pup_land/lone_town/tavern,
+	  pup_land/lone_town/tavern_ud, pup_land/lone_town/thief_market,
+	  pup_land/lone_town/town, pup_land/lone_town/town_ud1,
+	  pup_land/lone_town/town_ud2, pup_land/lone_town/training,
+	  pup_land/lone_town/training2: Synchronize Lonetown map changes
+	  between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-19 23:50  rjtanner
+
+	* pup_land/ancient/castle/castle.1,
+	  pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/gothwolte.1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/castle/gothwolte.3,
+	  pup_land/ancient/kurte/house, pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/mountain/tower.4,
+	  pup_land/ancient/mountain/tower.b1,
+	  pup_land/ancient/ruin/underground, pup_land/ancient/to_future,
+	  pup_land/ancient/village/hole/hole.B1,
+	  pup_land/ancient/village/hole/hole.B2,
+	  pup_land/ancient/village/hole/hole.B3,
+	  pup_land/ancient/village/hole/hole.B4,
+	  pup_land/ancient/village/hole/hole.B5,
+	  pup_land/ancient/village/hole/hole.B6,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/library,
+	  pup_land/ancient/village/siegfried/lever,
+	  pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.2,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/siegfried/siegfried.B2,
+	  pup_land/ancient/village/siegfried/siegfried.B3,
+	  pup_land/ancient/village/siegfried/siegfried.B4,
+	  pup_land/ancient/village/siegfried/siegfried.B5,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1, pup_land/ancient/world,
+	  pup_land/barrier, pup_land/castle_eureca/castle_eureca1,
+	  pup_land/castle_eureca/castle_eureca2,
+	  pup_land/castle_eureca/castle_eureca3,
+	  pup_land/castle_eureca/castle_eureca4,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/castle_eureca7,
+	  pup_land/castle_eureca/castle_eureca8,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/castle_eureca/castle_eurecaB1,
+	  pup_land/castle_eureca/castle_eurecaB2,
+	  pup_land/castle_eureca/cave_pass,
+	  pup_land/castle_eureca/cave_pass2,
+	  pup_land/castle_eureca/cave_pass3,
+	  pup_land/castle_eureca/cave_pass4, pup_land/cave_weapon/cave1,
+	  pup_land/cave_weapon/cave2, pup_land/cave_weapon/cave3,
+	  pup_land/cave_weapon/cave4,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/purple_butterfly/ground, pup_land/hall2,
+	  pup_land/hall_of_fame, pup_land/hq, pup_land/hq_ud,
+	  pup_land/kurte/eureca_road1, pup_land/kurte/eureca_road2,
+	  pup_land/kurte/eureca_road3, pup_land/kurte/eureca_road31,
+	  pup_land/kurte/house, pup_land/kurte/hut1, pup_land/kurte/hut2,
+	  pup_land/kurte/jungle, pup_land/kurte/kurte,
+	  pup_land/kurte/penta, pup_land/kurte/to_past,
+	  pup_land/ordeal/tower_ordeal1, pup_land/ordeal/tower_ordeal2,
+	  pup_land/ordeal/tower_ordeal3, pup_land/ordeal/tower_ordeal4,
+	  pup_land/ordeal/tower_ordeal5, pup_land/ordeal/tower_ordeal6,
+	  pup_land/ordeal/tower_ordealB1, pup_land/ordeal/tower_ordealB2,
+	  pup_land/ordeal/tower_ordealB3, pup_land/port_e,
+	  pup_land/port_e_house, pup_land/port_w,
+	  pup_land/pplant/pplant_ud2, pup_land/raffle/raffle1,
+	  pup_land/raffle/raffle1_u1, pup_land/raffle/raffle1_u2,
+	  pup_land/raffle/raffle1_u3, pup_land/raffle/raffle2,
+	  pup_land/raffle/raffle2_u1, pup_land/raffle/raffle2_u2_a,
+	  pup_land/raffle/raffle2_u2_b, pup_land/raffle/raffle2_u3,
+	  pup_land/raffle/raffle2_u3a, pup_land/raffle/raffle2_u4,
+	  pup_land/raffle/raffle3, pup_land/raffle/raffle3_u1,
+	  pup_land/raffle/raffle3_u2a, pup_land/ruin_barbarian/hole1,
+	  pup_land/ruin_barbarian/hole2, pup_land/ruin_barbarian/jungle,
+	  pup_land/s_f/floor2, pup_land/s_f/special, pup_land/s_f/st2,
+	  pup_land/s_f/st7, pup_land/terminal, pup_land/terminal_u1:
+	  Synchronize Pupland map changes (with the esception of lonetown,
+	  nurnberg and rainbow) between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-19 01:36  rjtanner
+
+	* wolfsburg/dungeons/church.3, wolfsburg/dungeons/church.4a,
+	  wolfsburg/dungeons/church.4b, wolfsburg/dungeons/church.4c,
+	  wolfsburg/dungeons/church.4d, wolfsburg/dungeons/hut,
+	  wolfsburg/dungeons/pirateenter, wolfsburg/dungeons/underworld,
+	  wolfsburg/eeur/tower1.1, wolfsburg/eeur/tower1.2,
+	  wolfsburg/eeur/tower1.3, wolfsburg/etern_rew, wolfsburg/inns,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_3, wolfsburg/magara/cellar1/hole,
+	  wolfsburg/magara/cellar_1, wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower2/floor_2, wolfsburg/piratechurch,
+	  wolfsburg/temple/temple, wolfsburg/volcano/vvhuts: Synchronize
+	  Wolfsburg map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-19 01:34  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1, whalingoutpost/lighthouse1,
+	  whalingoutpost/lighthouse2, whalingoutpost/lighthouse3,
+	  whalingoutpost/lighthouse4, whalingoutpost/lighthouse5,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/icehole1, whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3: Synchronize
+	  WhalingOutpost map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-19 01:33  rjtanner
+
+	* under_world/README: Synchronize Underworld map changes between
+	  trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-19 01:31  rjtanner
+
+	* sisters/README, sisters/granary, sisters/necro_ruin1a,
+	  sisters/shrine0_east, sisters/small_manor0, sisters/small_manor1,
+	  sisters/small_manor2, sisters/tower2: Synchronize Sisters map
+	  changes between trunk, branches/1.x and branches/lalo-pupland
+
+2008-03-18 18:57  rjtanner
+
+	* scorn/anthony/prison, scorn/guilds/mailed_fist/ground,
+	  scorn/houses/easy_house.1.a, scorn/houses/resir, scorn/kar/drink,
+	  scorn/kar/gorks1, scorn/kar/gorks2, scorn/kar/gorks3,
+	  scorn/kar/somehouse3, scorn/mansion/garden,
+	  scorn/mansion/stronghold, scorn/misc/HouseofHealing,
+	  scorn/misc/battle_arena/entrance,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners2,
+	  scorn/misc/castle2, scorn/misc/church, scorn/misc/drywell,
+	  scorn/misc/jail_upper, scorn/misc/kboldtemp1,
+	  scorn/misc/kboldtemp1b1, scorn/misc/kboldtemp1b2,
+	  scorn/misc/kboldtemp1b3, scorn/misc/kboldtemp1b4,
+	  scorn/misc/prison, scorn/misc/templedevour, scorn/misc/zoo2,
+	  scorn/oldcity/oldcity13, scorn/oldcity/oldcity5,
+	  scorn/oldcity/oldcity6, scorn/oldcity/oldcity7,
+	  scorn/shops/BasicSpells, scorn/shops/IPO_scorn,
+	  scorn/shops/bowshop, scorn/shops/gemshop, scorn/shops/light_shop,
+	  scorn/shops/scorn.sale2, scorn/shops/weaponshop,
+	  scorn/taverns/goths, scorn/taverns/goths0, scorn/taverns/goths2,
+	  scorn/temples/gaea, scorn/temples/ruggilli2,
+	  scorn/temples/valriel3, scorn/towers/tower.mad3: Synchronize
+	  Scorn map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-18 02:05  rjtanner
+
+	* santo_dominion/basement, santo_dominion/eeur/hut.1,
+	  santo_dominion/espen/espen2, santo_dominion/espen/palace,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/house_of_hell, santo_dominion/houses/house1,
+	  santo_dominion/magara/hut/floor_2,
+	  santo_dominion/magara/hut/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/north_lighthouse/floor_3,
+	  santo_dominion/magara/opera,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/mudman/mudman.2, santo_dominion/mudman/mudman.3,
+	  santo_dominion/north_farm, santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shops/armour, santo_dominion/shops/eliks,
+	  santo_dominion/shops/rings, santo_dominion/tavern,
+	  santo_dominion/tavern.downstairs, santo_dominion/tobias.top:
+	  Synchronize Santo Dominion map changes between trunk,
+	  branches/1.x and branches/lalo-pupland
+
+2008-03-18 01:06  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2: Fix broken keys
+	  and inventory checks for each town haus
+
+2008-03-18 00:10  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Corrected wrong exit/entrance
+	  coordinates for Townhaus maps
+
+2008-03-17 22:59  rjtanner
+
+	* quests/cd/cd.castle.750, quests/cd/cd.store.753,
+	  quests/greyshield/Cavern2, quests/greyshield/Dungeon,
+	  quests/greyshield/Finish, quests/greyshield/Fortress,
+	  quests/greyshield/GreyMaster, quests/greyshield/Greysword,
+	  quests/greyshield/Sphinx, quests/hendel/mountain_pass,
+	  quests/mak/chaos/down2, quests/mak/chaos/down5,
+	  quests/mak/chaos/monsters.pick, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/chaos/up5,
+	  quests/mak/undead/mausoleum, quests/mcz/castle1,
+	  quests/peterm/CTower/Barracks, quests/peterm/CTower/Dungeon,
+	  quests/peterm/CTower/GroundLevel, quests/peterm/CTower/Officers,
+	  quests/peterm/CTower/Servants, quests/peterm/CTower/TowerTop,
+	  quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/ApprenticeLevel,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/Demonology/WaterTower1,
+	  quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor,
+	  quests/peterm/Nethack_in_crossfire_Yendor,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  quests/peterm/quests/TitanGate, quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/wyvern_quest,
+	  quests/peterm/temple/AnteChamber,
+	  quests/peterm/temple/OuterTemple, quests/peterm/temple/Temple,
+	  quests/todd/aljwaf/crypt, quests/todd/aljwaf/crypt5: Synchronize
+	  Quest (directory) map changes between trunk, branches/1.x and
+	  branches/lalo-pupland
+
+2008-03-15 06:39  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-03-15 06:18  rjtanner
 
