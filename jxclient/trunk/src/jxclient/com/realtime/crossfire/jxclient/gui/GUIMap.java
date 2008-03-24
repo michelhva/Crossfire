@@ -87,12 +87,12 @@ public class GUIMap extends GUIElement
                 final Graphics2D g = mybuffer.createGraphics();
                 try
                 {
-                    for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                    final CfMap map = evt.getMap();
+                    final int x0 = map.getOffsetX();
+                    final int y0 = map.getOffsetY();
+                    for (final CfMapSquare mapSquare : evt.getChangedSquares())
                     {
-                        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
-                        {
-                            redrawSquare(g, CfMapUpdater.getMap(), x, y);
-                        }
+                        redrawSquare(g, map, mapSquare.getX()+x0, mapSquare.getY()+y0);
                     }
                 }
                 finally
