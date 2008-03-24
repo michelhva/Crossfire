@@ -8,7 +8,7 @@ msg
 Created:  1996-05-30
 Updated 2007.11.12 by Gene Alexander
  - made this an outdoor map
-Modified: 2007-11-12 crossfire
+Modified: 2008-03-23 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3529,7 +3529,7 @@ y 26
 end
 arch ruins
 name ancient ruins
-slaying ../s_f/ruin
+slaying ../quests/pupland/s_f/ruin
 hp 6
 sp 11
 x 19
@@ -4488,7 +4488,7 @@ y 21
 end
 arch hut
 name To-jyo's hut
-slaying ../s_f/to-jyo
+slaying ../quests/pupland/s_f/to-jyo
 hp 9
 sp 13
 x 24
