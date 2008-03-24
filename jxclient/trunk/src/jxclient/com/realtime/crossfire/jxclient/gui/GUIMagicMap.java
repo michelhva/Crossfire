@@ -80,10 +80,17 @@ public class GUIMagicMap extends GUIElement
      */
     private final Color[] tileColors = new Color[]
     {
-        Color.BLACK, Color.WHITE, Color.BLUE,
-        Color.RED, Color.GREEN, Color.YELLOW,
-        Color.PINK, Color.GRAY, Color.ORANGE,
-        Color.CYAN, Color.MAGENTA,
+        Color.BLACK,
+        Color.WHITE,
+        Color.BLUE,
+        Color.RED,
+        Color.GREEN,
+        Color.YELLOW,
+        Color.PINK,
+        Color.GRAY,
+        Color.ORANGE,
+        Color.CYAN,
+        Color.MAGENTA,
     };
 
     /**
