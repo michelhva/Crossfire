@@ -83,11 +83,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
 
     private static final Charset utf8 = Charset.forName("UTF-8");
 
-    private final List<CrossfireDrawinfoListener> mylisteners_drawinfo = new ArrayList<CrossfireDrawinfoListener>();
+    private final List<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
 
-    private final List<CrossfireDrawextinfoListener> mylisteners_drawextinfo = new ArrayList<CrossfireDrawextinfoListener>();
+    private final List<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
 
-    private final List<CrossfireQueryListener> mylisteners_query = new ArrayList<CrossfireQueryListener>();
+    private final List<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.
@@ -231,7 +231,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
-        mylisteners_drawinfo.add(listener);
+        drawinfoListeners.add(listener);
     }
 
     /**
@@ -242,7 +242,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
-        mylisteners_drawinfo.remove(listener);
+        drawinfoListeners.remove(listener);
     }
 
     /**
@@ -253,7 +253,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
-        mylisteners_drawextinfo.add(listener);
+        drawextinfoListeners.add(listener);
     }
 
     /**
@@ -264,7 +264,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
-        mylisteners_drawextinfo.remove(listener);
+        drawextinfoListeners.remove(listener);
     }
 
     /**
@@ -275,7 +275,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void addCrossfireQueryListener(final CrossfireQueryListener listener)
     {
-        mylisteners_query.add(listener);
+        queryListeners.add(listener);
     }
 
     /**
@@ -286,7 +286,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     public synchronized void removeCrossfireQueryListener(final CrossfireQueryListener listener)
     {
-        mylisteners_query.remove(listener);
+        queryListeners.remove(listener);
     }
 
     /**
@@ -579,7 +579,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             }
 
                             final CrossfireCommandDrawextinfoEvent evt = new CrossfireCommandDrawextinfoEvent(this, color, type, subtype, message);
-                            for (final CrossfireDrawextinfoListener listener : mylisteners_drawextinfo)
+                            for (final CrossfireDrawextinfoListener listener : drawextinfoListeners)
                             {
                                 listener.commandDrawextinfoReceived(evt);
                             }
@@ -608,7 +608,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             }
 
                             final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
-                            for (final CrossfireDrawinfoListener listener : mylisteners_drawinfo)
+                            for (final CrossfireDrawinfoListener listener : drawinfoListeners)
                             {
                                 listener.commandDrawinfoReceived(evt);
                             }
@@ -1012,7 +1012,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     }
 
                     final CrossfireCommandQueryEvent evt = new CrossfireCommandQueryEvent(this, text, flags);
-                    for (final CrossfireQueryListener listener : mylisteners_query)
+                    for (final CrossfireQueryListener listener : queryListeners)
                     {
                         listener.commandQueryReceived(evt);
                     }
@@ -1904,7 +1904,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public void drawInfo(final String msg, final int col)
     {
         CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, msg, col);
-        for (final CrossfireDrawinfoListener listener : mylisteners_drawinfo)
+        for (final CrossfireDrawinfoListener listener : drawinfoListeners)
         {
             listener.commandDrawinfoReceived(evt);
         }
