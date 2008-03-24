@@ -22,26 +22,68 @@ package com.realtime.crossfire.jxclient.magicmap;
 import java.util.EventObject;
 
 /**
- *
- * @version 1.0
+ * Stores information of the "magicmap" Crossfire protocol command.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class CrossfireCommandMagicmapEvent extends EventObject
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
+    /**
+     * Bitmask to extract the color information of a tile in {@link #data}.
+     */
+    public static final int FACE_COLOR_MASK = 0x0F;
+
+    /**
+     * Bitmask to denote a floor tile in {@link #data}.
+     */
+    public static final int FACE_FLOOR = 0x80;
+
+    /**
+     * Bitmask to denote a wall tile in {@link #data}.
+     */
+    public static final int FACE_WALL = 0x40;
+
+    /**
+     * The width of {@link #data} in tiles.
+     */
     private final int width;
 
+    /**
+     * The height of {@link #data} in tiles.
+     */
     private final int height;
 
+    /**
+     * The x-coordinate of the player.
+     */
     private final int px;
 
+    /**
+     * The y-coordinate of the player.
+     */
     private final int py;
 
+    /**
+     * The data describing the tiles. It is 1 byte per tile, with the low
+     * nibble containing the color information, and the high nibble containing
+     * extra flags, like the existance of walls and floors. See the {@link
+     * #FACE_FLOOR} and {@link #FACE_WALL} values. The string of data
+     * represents the tiles from left to right, then up to down.
+     */
     private final byte[] data;
 
+    /**
+     * Creates a new instance.
+     * @param src the source object; currently unused
+     * @param width the width of <code>data</code>
+     * @param height the height of <code>data</code>
+     * @param px the x-coordinate of the player
+     * @param py the y-coordinate of the player
+     * @param data the data describing tiles
+     */
     public CrossfireCommandMagicmapEvent(final Object src, final int width, final int height, final int px, final int py, final byte[] data)
     {
         super(src);
@@ -52,26 +94,46 @@ public class CrossfireCommandMagicmapEvent extends EventObject
         this.data = data;
     }
 
+    /**
+     * Returns the width of the tile data.
+     * @return the width
+     */
     public int getWidth()
     {
         return width;
     }
 
+    /**
+     * Returns the height of the tile data.
+     * @return the height
+     */
     public int getHeight()
     {
         return height;
     }
 
+    /**
+     * Returns the x-coordinate of the player.
+     * @retur the x-coodinate
+     */
     public int getPX()
     {
         return px;
     }
 
+    /**
+     * Returns the y-coordiante of the player.
+     * @return the y-coordinate
+     */
     public int getPY()
     {
         return py;
     }
 
+    /**
+     * Returns the tile data. See {@linl #data} for details.
+     * @return the tile data
+     */
     public byte[] getData()
     {
         return data;
