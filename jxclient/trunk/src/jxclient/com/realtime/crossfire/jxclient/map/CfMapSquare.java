@@ -208,8 +208,6 @@ public class CfMapSquare
      */
     public void setDarkness(final int darkness)
     {
-        if (darkness < 0 || darkness > 255) throw new IllegalArgumentException();
-
         if (this.darkness != darkness)
         {
             this.darkness = darkness;
@@ -238,8 +236,6 @@ public class CfMapSquare
      */
     public void setFace(final int layer, final Face face)
     {
-        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
-
         if (faces[layer] != face)
         {
             faces[layer] = face;
@@ -257,8 +253,6 @@ public class CfMapSquare
      */
     public Face getFace(final int layer)
     {
-        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
-
         return faces[layer];
     }
 
@@ -273,9 +267,6 @@ public class CfMapSquare
      */
     public void setHeadMapSquare(final int layer, final CfMapSquare mapSquare)
     {
-        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
-        if (mapSquare == this) throw new IllegalArgumentException();
-
         if (heads[layer] != mapSquare)
         {
             heads[layer] = mapSquare;
@@ -293,8 +284,6 @@ public class CfMapSquare
      */
     public CfMapSquare getHeadMapSquare(final int layer)
     {
-//        if (layer < 0 || layer >= LAYERS) throw new IllegalArgumentException();
-
         // suppress parts of fog-of-war objects if this square is not
         // fog-of-war
         if (heads[layer] != null && fogOfWar && heads[layer].isFogOfWar())

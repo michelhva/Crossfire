@@ -77,9 +77,6 @@ public class CfMapPatch
      */
     public boolean isModified(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].isModified();
     }
 
@@ -92,9 +89,6 @@ public class CfMapPatch
      */
     public void dirty(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         square[x][y].dirty();
     }
 
@@ -109,9 +103,6 @@ public class CfMapPatch
      */
     public boolean resetDirty(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].resetDirty();
     }
 
@@ -125,9 +116,6 @@ public class CfMapPatch
      */
     public void clearSquare(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         square[x][y].clear();
     }
 
@@ -157,9 +145,6 @@ public class CfMapPatch
      */
     public void setDarkness(final int x, final int y, final int darkness)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         square[x][y].setDarkness(darkness);
     }
 
@@ -175,9 +160,6 @@ public class CfMapPatch
      */
     public int getDarkness(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].getDarkness();
     }
 
@@ -194,9 +176,6 @@ public class CfMapPatch
      */
     public void setFace(final int x, final int y, final int layer, final Face face)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         square[x][y].setFace(layer, face);
     }
 
@@ -214,9 +193,6 @@ public class CfMapPatch
      */
     public Face getFace(final int x, final int y, final int layer)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].getFace(layer);
     }
 
@@ -235,10 +211,6 @@ public class CfMapPatch
      */
     public void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         square[x][y].setHeadMapSquare(layer, mapSquare);
     }
 
@@ -256,10 +228,6 @@ public class CfMapPatch
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-//        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-//        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-//        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         return square[x][y].getHeadMapSquare(layer);
     }
 
@@ -274,9 +242,6 @@ public class CfMapPatch
      */
     public boolean isFogOfWar(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].isFogOfWar();
     }
 
@@ -291,9 +256,6 @@ public class CfMapPatch
      */
     public boolean resetFogOfWar(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y].resetFogOfWar();
     }
 
@@ -308,9 +270,6 @@ public class CfMapPatch
      */
     public CfMapSquare getSquare(final int x, final int y)
     {
-        if (x < 0 || x >= SIZE) throw new IllegalArgumentException();
-        if (y < 0 || y >= SIZE) throw new IllegalArgumentException();
-
         return square[x][y];
     }
 }
