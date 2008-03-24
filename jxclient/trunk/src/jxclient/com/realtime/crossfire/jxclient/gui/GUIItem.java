@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
+import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -49,13 +50,16 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
 
     protected final BufferedImage selectorImage;
 
-    private final BufferedImage image;
-
     protected final BufferedImage lockedImage;
 
     private CfItem item = null;
 
     protected final Font font;
+
+    /**
+     * The background color of this item.
+     */
+    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
     /**
      * The {@link CfItemModifiedListener} used to detect attribute changes of
@@ -95,10 +99,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         }
     };
 
-    public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font)
+    public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
         super(jxcWindow, name, x, y, w, h);
-        this.image = image;
         this.cursedImage = cursedImage;
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
@@ -147,7 +150,8 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
-        g.drawImage(image, 0, 0, null);
+        g.setBackground(backgroundColor);
+        g.clearRect(0, 0, w, h);
     }
 
     public void setVisible(final boolean v)
