@@ -5,6 +5,7 @@ width 16
 height 16
 msg
 Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
+Modified: 2008-03-24 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -315,6 +316,7 @@ x 2
 y 12
 end
 arch locked_door1
+slaying ctower_dungeon
 x 2
 y 12
 end
@@ -349,6 +351,7 @@ x 3
 y 1
 end
 arch locked_door2
+slaying ctower_dungeon
 x 3
 y 1
 end
@@ -418,6 +421,7 @@ x 3
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 3
 y 10
 end
@@ -540,6 +544,7 @@ x 4
 y 12
 end
 arch locked_door1
+slaying ctower_dungeon
 x 4
 y 12
 end
@@ -640,6 +645,7 @@ x 5
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 5
 y 10
 end
@@ -686,6 +692,7 @@ x 6
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 6
 y 1
 end
@@ -698,6 +705,7 @@ x 6
 y 3
 end
 arch locked_door1
+slaying ctower_dungeon
 x 6
 y 3
 end
@@ -796,6 +804,7 @@ x 7
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 7
 y 1
 end
@@ -856,6 +865,7 @@ x 7
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 7
 y 10
 end
@@ -868,6 +878,7 @@ x 7
 y 12
 end
 arch locked_door1
+slaying ctower_dungeon
 x 7
 y 12
 end
@@ -902,6 +913,7 @@ x 8
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 8
 y 1
 end
@@ -1016,6 +1028,7 @@ x 9
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 9
 y 1
 end
@@ -1064,6 +1077,7 @@ x 9
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 9
 y 10
 end
@@ -1114,6 +1128,7 @@ x 10
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 10
 y 1
 end
@@ -1217,6 +1232,7 @@ x 11
 y 1
 end
 arch key2
+slaying ctower_dungeon
 x 11
 y 1
 end
@@ -1265,6 +1281,7 @@ x 11
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 11
 y 10
 end
@@ -1277,6 +1294,7 @@ x 11
 y 12
 end
 arch locked_door1
+slaying ctower_dungeon
 x 11
 y 12
 end
@@ -1401,6 +1419,7 @@ x 13
 y 1
 end
 arch locked_door2
+slaying ctower_dungeon
 x 13
 y 1
 end
@@ -1417,6 +1436,7 @@ x 13
 y 3
 end
 arch locked_door2
+slaying ctower_dungeon
 x 13
 y 3
 end
@@ -1433,6 +1453,7 @@ x 13
 y 5
 end
 arch locked_door2
+slaying ctower_dungeon
 x 13
 y 5
 end
@@ -1449,6 +1470,7 @@ x 13
 y 7
 end
 arch locked_door2
+slaying ctower_dungeon
 x 13
 y 7
 end
@@ -1500,6 +1522,7 @@ x 13
 y 12
 end
 arch locked_door1
+slaying ctower_dungeon
 x 13
 y 12
 end
@@ -1598,6 +1621,7 @@ x 14
 y 10
 end
 arch locked_door1
+slaying ctower_dungeon
 x 14
 y 10
 end
