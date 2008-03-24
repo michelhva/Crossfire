@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
-import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -57,11 +56,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     private CfItem item = null;
 
     protected final Font font;
-
-    /**
-     * The background color of this item.
-     */
-    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
     /**
      * The {@link CfItemModifiedListener} used to detect attribute changes of
@@ -154,8 +148,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     {
         super.render(g);
         g.drawImage(image, 0, 0, null);
-        g.setBackground(backgroundColor);
-        g.clearRect(0, 0, w, h);
     }
 
     public void setVisible(final boolean v)
