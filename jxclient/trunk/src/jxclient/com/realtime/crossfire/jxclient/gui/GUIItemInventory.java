@@ -38,7 +38,7 @@ public class GUIItemInventory extends GUIItemItem
      */
     private final int defaultIndex;
 
-    private int myindex = -1;
+    private int index = -1;
 
     /**
      * The {@link LocationListener} used to detect items added to or removed
@@ -49,7 +49,7 @@ public class GUIItemInventory extends GUIItemItem
         /** {@inheritDoc} */
         public void locationModified(final int index, final CfItem item)
         {
-            assert index == myindex;
+            assert index == GUIItemInventory.this.index;
             setItem(item);
         }
     };
@@ -67,7 +67,7 @@ public class GUIItemInventory extends GUIItemItem
     {
         if (distance < 0)
         {
-            return myindex >= -distance;
+            return index >= -distance;
         }
         else if (distance > 0)
         {
@@ -78,7 +78,7 @@ public class GUIItemInventory extends GUIItemItem
             }
 
             final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
-            return myindex+distance < list.size();
+            return index+distance < list.size();
         }
         else
         {
@@ -89,7 +89,7 @@ public class GUIItemInventory extends GUIItemItem
     /* {@inheritDoc} */
     public void scroll(final int distance)
     {
-        setIndex(myindex+distance);
+        setIndex(index+distance);
         render();
     }
 
@@ -159,28 +159,28 @@ public class GUIItemInventory extends GUIItemItem
      */
     private void setIndex(final int index)
     {
-        if (myindex == index)
+        if (this.index == index)
         {
             return;
         }
 
-        if (myindex >= 0)
+        if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getInventoryManager().removeLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
         }
-        myindex = index;
-        if (myindex >= 0)
+        this.index = index;
+        if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getInventoryManager().addLocationListener(myindex, inventoryLocationListener);
+            ItemsList.getItemsManager().getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
         }
 
         final CfPlayer player = ItemsList.getItemsManager().getPlayer();
         if (player != null)
         {
             final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
-            if (0 <= myindex && myindex < list.size())
+            if (0 <= this.index && this.index < list.size())
             {
-                setItem(list.get(myindex));
+                setItem(list.get(this.index));
             }
             else
             {

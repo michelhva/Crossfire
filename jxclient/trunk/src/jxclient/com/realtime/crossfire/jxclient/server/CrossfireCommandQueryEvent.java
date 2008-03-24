@@ -41,20 +41,20 @@ public class CrossfireCommandQueryEvent extends EventObject
     /** Query type: hide input being entered. */
     public static final int HIDEINPUT = 4;
 
-    private final String myquery;
+    private final String prompt;
 
-    private final int myquerytype;
+    private final int queryType;
 
-    public CrossfireCommandQueryEvent(Object src, String msg, int type)
+    public CrossfireCommandQueryEvent(Object src, String prompt, int queryType)
     {
         super(src);
-        myquery = msg;
-        myquerytype = type;
+        this.prompt = prompt;
+        this.queryType = queryType;
     }
 
     public String getPrompt()
     {
-        return myquery;
+        return prompt;
     }
 
     /**
@@ -65,6 +65,6 @@ public class CrossfireCommandQueryEvent extends EventObject
      */
     public int getQueryType()
     {
-        return myquerytype;
+        return queryType;
     }
 }

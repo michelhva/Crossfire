@@ -33,78 +33,78 @@ import javax.swing.text.MutableAttributeSet;
  */
 public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 {
-    private final Stack<Font> myfonts = new Stack<Font>();
+    private final Stack<Font> fonts = new Stack<Font>();
 
-    private final Stack<Color> mycolors = new Stack<Color>();
+    private final Stack<Color> colors = new Stack<Color>();
 
-    private final Graphics2D mygc;
+    private final Graphics2D gc;
 
-    private int myx = 0;
+    private int x = 0;
 
-    private int myy = 0;
+    private int y = 0;
 
-    private final int myorigx;
+    private final int origx;
 
     private final int borderSize;
 
-    public InternalHTMLRenderer(final Font fd, final Color fdc, final Graphics2D g, final int x, final int y, final int borderSize)
+    public InternalHTMLRenderer(final Font font, final Color color, final Graphics2D gc, final int x, final int y, final int borderSize)
     {
-        myfonts.push(fd);
-        mycolors.push(fdc);
-        mygc = g;
-        myx = x;
-        myy = y;
-        myorigx = myx;
+        fonts.push(font);
+        colors.push(color);
+        this.gc = gc;
+        this.x = x;
+        this.y = y;
+        this.origx = x;
         this.borderSize = borderSize;
     }
 
     public void handleText(final char[] data, final int pos)
     {
-        mygc.setFont(myfonts.peek());
-        mygc.setColor(mycolors.peek());
-        final FontMetrics m = mygc.getFontMetrics();
+        gc.setFont(fonts.peek());
+        gc.setColor(colors.peek());
+        final FontMetrics m = gc.getFontMetrics();
         final String str = new String(data);
         final int w = m.stringWidth(str);
-        mygc.drawString(str, myx+borderSize, myy+borderSize);
-        myx += w;
+        gc.drawString(str, x+borderSize, y+borderSize);
+        x += w;
     }
 
     public void handleStartTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
     {
         if (tag.equals(HTML.Tag.A))
         {
-            myfonts.push(myfonts.peek());
-            mycolors.push(Color.YELLOW);
-            //myy += mydefaultfont.getSize()+1;
+            fonts.push(fonts.peek());
+            colors.push(Color.YELLOW);
+            //y += defaultfont.getSize()+1;
         }
         else if (tag.equals(HTML.Tag.B))
         {
-            myfonts.push(myfonts.peek().deriveFont(Font.BOLD));
-            mycolors.push(mycolors.peek());
+            fonts.push(fonts.peek().deriveFont(Font.BOLD));
+            colors.push(colors.peek());
         }
         else if (tag.equals(HTML.Tag.I))
         {
-            myfonts.push(myfonts.peek().deriveFont(Font.ITALIC));
-            mycolors.push(mycolors.peek());
+            fonts.push(fonts.peek().deriveFont(Font.ITALIC));
+            colors.push(colors.peek());
         }
         else if (tag.equals(HTML.Tag.LI))
         {
-            myfonts.push(myfonts.peek());
-            mycolors.push(mycolors.peek());
-            mygc.setFont(myfonts.peek());
-            mygc.setColor(mycolors.peek());
-            final FontMetrics m = mygc.getFontMetrics();
-            myx = myorigx;
-            myy += myfonts.peek().getSize()+1;
+            fonts.push(fonts.peek());
+            colors.push(colors.peek());
+            gc.setFont(fonts.peek());
+            gc.setColor(colors.peek());
+            final FontMetrics m = gc.getFontMetrics();
+            x = origx;
+            y += fonts.peek().getSize()+1;
             final String str = " - ";
             final int w = m.stringWidth(str);
-            mygc.drawString(str, myx+borderSize, myy+borderSize);
-            myx += w;
+            gc.drawString(str, x+borderSize, y+borderSize);
+            x += w;
         }
         else
         {
-            myfonts.push(myfonts.peek());
-            mycolors.push(mycolors.peek());
+            fonts.push(fonts.peek());
+            colors.push(colors.peek());
         }
     }
 
@@ -112,14 +112,14 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     {
         if (tag.equals(HTML.Tag.BR))
         {
-            myy += myfonts.peek().getSize()+1;
-            myx = myorigx;
+            y += fonts.peek().getSize()+1;
+            x = origx;
         }
     }
 
     public void handleEndTag(final HTML.Tag tag, final int pos)
     {
-        myfonts.pop();
-        mycolors.pop();
+        fonts.pop();
+        colors.pop();
     }
 }

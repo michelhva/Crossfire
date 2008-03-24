@@ -32,16 +32,16 @@ public class SpellChangedEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private final Spell myspell;
+    private final Spell spell;
 
-    public SpellChangedEvent(final Object src, final Spell sp)
+    public SpellChangedEvent(final Object src, final Spell spell)
     {
         super(src);
-        myspell = sp;
+        this.spell = spell;
     }
 
     public Spell getSpell()
     {
-        return myspell;
+        return spell;
     }
 }

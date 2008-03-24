@@ -208,7 +208,7 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Draw the given part of a picture to {@link #mybuffer}.
+     * Draw the given part of a picture to {@link #buffer}.
      *
      * @param fx The x-coordinate of the area to draw from
      * <code>fPicture</code>.
@@ -340,7 +340,7 @@ public class GUIGauge extends GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
     }
 

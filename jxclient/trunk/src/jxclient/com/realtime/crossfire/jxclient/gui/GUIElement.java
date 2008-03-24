@@ -59,7 +59,7 @@ public abstract class GUIElement
      */
     protected int h;
 
-    protected BufferedImage mybuffer;
+    protected BufferedImage buffer;
 
     private boolean visible = true;
 
@@ -73,10 +73,10 @@ public abstract class GUIElement
     /**
      * The name of this element.
      */
-    private final String myname;
+    private final String name;
 
     /**
-     * Whether {@link #mybuffer} has changed.
+     * Whether {@link #buffer} has changed.
      */
     private boolean changed;
 
@@ -115,7 +115,7 @@ public abstract class GUIElement
         this.y = y;
         this.w = w;
         this.h = h;
-        myname = name;
+        this.name = name;
     }
 
     /**
@@ -144,7 +144,7 @@ public abstract class GUIElement
 
     public String toString()
     {
-        return myname;
+        return name;
     }
 
     /**
@@ -159,7 +159,7 @@ public abstract class GUIElement
 
     public BufferedImage getBuffer()
     {
-        return mybuffer;
+        return buffer;
     }
 
     public int getX()
@@ -231,7 +231,7 @@ public abstract class GUIElement
 
     public String getName()
     {
-        return myname;
+        return name;
     }
 
     /**
@@ -315,9 +315,9 @@ public abstract class GUIElement
     }
 
     /**
-     * Return whether {@link #mybuffer} has changed.
+     * Return whether {@link #buffer} has changed.
      *
-     * @return whether <code>mybuffer</code> has changed
+     * @return whether <code>buffer</code> has changed
      */
     public boolean hasChanged()
     {
@@ -325,7 +325,7 @@ public abstract class GUIElement
     }
 
     /**
-     * Record that {@link #mybuffer} has changed.
+     * Record that {@link #buffer} has changed.
      */
     public void setChanged()
     {
@@ -342,7 +342,7 @@ public abstract class GUIElement
     }
 
     /**
-     * Clear the flag that {@link #mybuffer} has changed.
+     * Clear the flag that {@link #buffer} has changed.
      */
     public void resetChanged()
     {
@@ -433,11 +433,11 @@ public abstract class GUIElement
     }
 
     /**
-     * Re-create the contents of {@link #mybuffer}.
+     * Re-create the contents of {@link #buffer}.
      */
     protected final void render()
     {
-        final Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = buffer.createGraphics();
         try
         {
             render(g);

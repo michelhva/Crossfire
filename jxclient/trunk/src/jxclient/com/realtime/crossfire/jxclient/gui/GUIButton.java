@@ -64,7 +64,7 @@ public class GUIButton extends AbstractButton
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
+        buffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
         this.text = text;
         this.font = font;
         this.color = color;

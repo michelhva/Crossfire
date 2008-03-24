@@ -121,7 +121,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
+        buffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
         render();
     }
 

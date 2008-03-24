@@ -32,20 +32,20 @@ public class CrossfireCommandStatsEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private final Stats mystats;
+    private final Stats stats;
 
     private final boolean reset;
 
-    public CrossfireCommandStatsEvent(final Object src, final Stats st, final boolean reset)
+    public CrossfireCommandStatsEvent(final Object src, final Stats stats, final boolean reset)
     {
         super(src);
-        mystats = st;
+        this.stats = stats;
         this.reset = reset;
     }
 
     public Stats getStats()
     {
-        return mystats;
+        return stats;
     }
 
     public boolean isReset()

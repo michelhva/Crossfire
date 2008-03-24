@@ -29,11 +29,11 @@ import com.realtime.crossfire.jxclient.JXCWindow;
  */
 public class GUICommand
 {
-    private final GUIElement mytarget;
+    private final GUIElement target;
 
-    private final Command myorder;
+    private final Command order;
 
-    private final Object myparams; //Often a String, but not always - see QUIT or CONNECT
+    private final Object params; //Often a String, but not always - see QUIT or CONNECT
 
     public enum Command
     {
@@ -57,21 +57,21 @@ public class GUICommand
         DIALOG_CLOSE,
     }
 
-    public GUICommand(final GUIElement element, final Command order, final Object params)
+    public GUICommand(final GUIElement target, final Command order, final Object params)
     {
-        mytarget = element;
-        myorder = order;
-        myparams = params;
+        this.target = target;
+        this.order = order;
+        this.params = params;
     }
 
     public Command getOrder()
     {
-        return myorder;
+        return order;
     }
 
     public boolean canExecute()
     {
-        switch (myorder)
+        switch (order)
         {
         case SHOW:
         case HIDE:
@@ -81,9 +81,9 @@ public class GUICommand
             break;
 
         case SCROLL:
-            if (mytarget instanceof GUIScrollable)
+            if (target instanceof GUIScrollable)
             {
-                return ((GUIScrollable)mytarget).canScroll(((ScrollParameter)myparams).distance);
+                return ((GUIScrollable)target).canScroll(((ScrollParameter)params).distance);
             }
             break;
 
@@ -109,96 +109,96 @@ public class GUICommand
 
     public void execute()
     {
-        switch (myorder)
+        switch (order)
         {
         case SHOW:
-            mytarget.setVisible(true);
+            target.setVisible(true);
             break;
 
         case HIDE:
-            mytarget.setVisible(false);
+            target.setVisible(false);
             break;
 
         case TOGGLE:
-            mytarget.setVisible(!mytarget.isVisible());
+            target.setVisible(!target.isVisible());
             break;
 
         case PRINT:
             break;
 
         case QUIT:
-            ((JXCWindow)myparams).endRendering();
+            ((JXCWindow)params).endRendering();
             break;
 
         case SCROLL:
         case SCROLL_NEVER:
-            if (mytarget instanceof GUIScrollable)
+            if (target instanceof GUIScrollable)
             {
-                ((GUIScrollable)mytarget).scroll(((ScrollParameter)myparams).distance);
+                ((GUIScrollable)target).scroll(((ScrollParameter)params).distance);
             }
             break;
 
         case SCROLLNEXT:
-            if (mytarget.isActive())
+            if (target.isActive())
             {
-                ((ScrollNextParameter)myparams).nextElement.setActive(true);
+                ((ScrollNextParameter)params).nextElement.setActive(true);
             }
             break;
 
         case SCROLL_RESET:
-            if (mytarget instanceof GUIScrollable)
+            if (target instanceof GUIScrollable)
             {
-                ((GUIScrollable)mytarget).resetScroll();
+                ((GUIScrollable)target).resetScroll();
             }
             break;
 
         case CONNECT:
-            ((JXCWindow)myparams).connect(((GUIText)mytarget).getText(), 13327);
+            ((JXCWindow)params).connect(((GUIText)target).getText(), 13327);
             break;
 
         case DISCONNECT:
-            ((JXCWindow)myparams).disconnect();
+            ((JXCWindow)params).disconnect();
             break;
 
         case GUI_META:
-            ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_METASERVER);
+            ((JXCWindow)params).changeGUI(JXCWindow.GUI_METASERVER);
             break;
 
         case GUI_START:
-            ((JXCWindow)myparams).changeGUI(JXCWindow.GUI_START);
+            ((JXCWindow)params).changeGUI(JXCWindow.GUI_START);
             break;
 
         case GUI_EXECUTE_COMMAND:
             {
-                final ExecuteCommandParameter param = (ExecuteCommandParameter)myparams;
+                final ExecuteCommandParameter param = (ExecuteCommandParameter)params;
                 param.window.executeCommand(param.command);
             }
             break;
 
         case GUI_EXECUTE_ELEMENT:
-            if (mytarget instanceof GUIItem)
+            if (target instanceof GUIItem)
             {
-                ((GUIItem)mytarget).button1Clicked((JXCWindow)myparams);
+                ((GUIItem)target).button1Clicked((JXCWindow)params);
             }
             break;
 
         case DIALOG_OPEN:
             {
-                final DialogOpenParameter param = (DialogOpenParameter)myparams;
+                final DialogOpenParameter param = (DialogOpenParameter)params;
                 param.window.openDialog(param.dialog);
             }
             break;
 
         case DIALOG_TOGGLE:
             {
-                final DialogToggleParameter param = (DialogToggleParameter)myparams;
+                final DialogToggleParameter param = (DialogToggleParameter)params;
                 param.window.toggleDialog(param.dialog);
             }
             break;
 
         case DIALOG_CLOSE:
             {
-                final DialogCloseParameter param = (DialogCloseParameter)myparams;
+                final DialogCloseParameter param = (DialogCloseParameter)params;
                 param.window.getWindowRenderer().closeDialog(param.dialog);
             }
             break;
@@ -207,7 +207,7 @@ public class GUICommand
 
     public Object getParams()
     {
-        return myparams;
+        return params;
     }
 
     /**

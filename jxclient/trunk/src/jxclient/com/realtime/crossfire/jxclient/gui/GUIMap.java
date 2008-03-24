@@ -62,11 +62,11 @@ public class GUIMap extends GUIElement
      */
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
-    private final ImageIcon myblacktile;
+    private final ImageIcon blackTile;
 
-    private final boolean use_big_images;
+    private final boolean useBigImages;
 
-    private final int mysquaresize;
+    private final int tileSize;
 
     /**
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
@@ -82,9 +82,9 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 try
                 {
                     final CfMap map = evt.getMap();
@@ -113,7 +113,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
                 render();
             }
@@ -130,7 +130,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
                 final int dx = -evt.getDX();
                 final int dy = -evt.getDY();
@@ -165,10 +165,10 @@ public class GUIMap extends GUIElement
                     h = CrossfireServerConnection.MAP_HEIGHT-dy;
                 }
 
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 try
                 {
-                    g.copyArea(x*mysquaresize, y*mysquaresize, w*mysquaresize, h*mysquaresize, dx*mysquaresize, dy*mysquaresize);
+                    g.copyArea(x*tileSize, y*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
 
                     for (int yy = 0; yy < y; yy++)
                     {
@@ -232,24 +232,24 @@ public class GUIMap extends GUIElement
         super(jxcWindow, name, x, y, w, h);
         if (tileSize == 32)
         {
-            use_big_images = false;
+            useBigImages = false;
         }
         else if (tileSize == 64)
         {
-            use_big_images = true;
+            useBigImages = true;
         }
         else
         {
             throw new IOException("invalid tile size "+tileSize);
         }
 
-        mysquaresize = tileSize;
+        this.tileSize = tileSize;
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
-        if (w != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IOException("w="+w+"!="+CrossfireServerConnection.MAP_WIDTH*mysquaresize);
-        if (h != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IOException("h="+h+"!="+CrossfireServerConnection.MAP_HEIGHT*mysquaresize);
+        blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
+        if (w != CrossfireServerConnection.MAP_WIDTH*tileSize) throw new IOException("w="+w+"!="+CrossfireServerConnection.MAP_WIDTH*tileSize);
+        if (h != CrossfireServerConnection.MAP_HEIGHT*tileSize) throw new IOException("h="+h+"!="+CrossfireServerConnection.MAP_HEIGHT*tileSize);
 
         createBuffer();
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
@@ -257,25 +257,25 @@ public class GUIMap extends GUIElement
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean big)
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean useBigImages)
     {
         super(jxcWindow, name, x, y, w, h);
-        use_big_images = big;
+        this.useBigImages = useBigImages;
 
-        if (big)
+        if (useBigImages)
         {
-            mysquaresize = Faces.SQUARE_SIZE;
+            tileSize = Faces.SQUARE_SIZE;
         }
         else
         {
-            mysquaresize = 32;
+            tileSize = 32;
         }
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        myblacktile = new ImageIcon(gconf.createCompatibleImage(mysquaresize, mysquaresize, Transparency.OPAQUE));
-        if (w != CrossfireServerConnection.MAP_WIDTH*mysquaresize) throw new IllegalArgumentException();
-        if (h != CrossfireServerConnection.MAP_HEIGHT*mysquaresize) throw new IllegalArgumentException();
+        blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
+        if (w != CrossfireServerConnection.MAP_WIDTH*tileSize) throw new IllegalArgumentException();
+        if (h != CrossfireServerConnection.MAP_HEIGHT*tileSize) throw new IllegalArgumentException();
 
         createBuffer();
     }
@@ -304,7 +304,7 @@ public class GUIMap extends GUIElement
      */
     private void cleanSquare(final Graphics g, final int x, final int y)
     {
-        g.drawImage(myblacktile.getImage(), x*mysquaresize, y*mysquaresize, null);
+        g.drawImage(blackTile.getImage(), x*tileSize, y*tileSize, null);
     }
 
     /**
@@ -334,13 +334,13 @@ public class GUIMap extends GUIElement
         if (map.isFogOfWar(x, y))
         {
             g.setColor(fogOfWarColor);
-            g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
+            g.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
         if (darkness < 255)
         {
             g.setColor(getDarknessColor(darkness));
-            g.fillRect(x*mysquaresize, y*mysquaresize, mysquaresize, mysquaresize);
+            g.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
         }
     }
 
@@ -359,35 +359,35 @@ public class GUIMap extends GUIElement
      */
     private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
     {
-        final int px = x*mysquaresize;
-        final int py = y*mysquaresize;
+        final int px = x*tileSize;
+        final int py = y*tileSize;
 
         final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
         if (headMapSquare != null)
         {
             final Face headFace = headMapSquare.getFace(layer);
             assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon img = headFace.getImageIcon(use_big_images);
+            final ImageIcon img = headFace.getImageIcon(useBigImages);
             final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
             final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
             assert dx > 0 || dy > 0;
-            final int sx = img.getIconWidth()-mysquaresize*(dx+1);
-            final int sy = img.getIconHeight()-mysquaresize*(dy+1);
+            final int sx = img.getIconWidth()-tileSize*(dx+1);
+            final int sy = img.getIconHeight()-tileSize*(dy+1);
             g.drawImage(img.getImage(),
-                px, py, px+mysquaresize, py+mysquaresize,
-                sx, sy, sx+mysquaresize, sy+mysquaresize,
+                px, py, px+tileSize, py+tileSize,
+                sx, sy, sx+tileSize, sy+tileSize,
                 null);
         }
 
         final Face f = map.getFace(x, y, layer);
         if (f != null)
         {
-            final ImageIcon img = f.getImageIcon(use_big_images);
+            final ImageIcon img = f.getImageIcon(useBigImages);
             final int sx = img.getIconWidth();
             final int sy = img.getIconHeight();
             g.drawImage(img.getImage(),
-                px, py, px+mysquaresize, py+mysquaresize,
-                sx-mysquaresize, sy-mysquaresize, sx, sy,
+                px, py, px+tileSize, py+tileSize,
+                sx-tileSize, sy-tileSize, sx, sy,
                 null);
         }
     }
@@ -417,8 +417,8 @@ public class GUIMap extends GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
-        final Graphics2D g = mybuffer.createGraphics();
+        buffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
+        final Graphics2D g = buffer.createGraphics();
         try
         {
             g.setColor(Color.BLACK);

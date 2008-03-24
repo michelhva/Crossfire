@@ -37,9 +37,9 @@ public class GUIItemSpelllist extends GUIItem
      */
     private final int defaultIndex;
 
-    private Spell myspell = null;
+    private Spell spell = null;
 
-    private int myindex = -1;
+    private int index = -1;
 
     /**
      * The {@link CrossfireSpellChangedListener} used to detect spell changes.
@@ -49,7 +49,7 @@ public class GUIItemSpelllist extends GUIItem
         /** {@inheritDoc} */
         public void spellAdded(final Spell spell, final int index)
         {
-            if (myindex >= index)
+            if (GUIItemSpelllist.this.index >= index)
             {
                 setSpell();
             }
@@ -58,7 +58,7 @@ public class GUIItemSpelllist extends GUIItem
         /** {@inheritDoc} */
         public void spellRemoved(final Spell spell, final int index)
         {
-            if (myindex >= index)
+            if (GUIItemSpelllist.this.index >= index)
             {
                 setSpell();
             }
@@ -67,7 +67,7 @@ public class GUIItemSpelllist extends GUIItem
         /** {@inheritDoc} */
         public void spellModified(final Spell spell, final int index)
         {
-            if (myindex == index)
+            if (GUIItemSpelllist.this.index == index)
             {
                 setSpell();
             }
@@ -88,12 +88,12 @@ public class GUIItemSpelllist extends GUIItem
     {
         if (distance < 0)
         {
-            return myindex >= -distance;
+            return index >= -distance;
         }
         else if (distance > 0)
         {
             final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
-            return myindex+distance < list.size();
+            return index+distance < list.size();
         }
         else
         {
@@ -104,7 +104,7 @@ public class GUIItemSpelllist extends GUIItem
     /* {@inheritDoc} */
     public void scroll(final int distance)
     {
-        setIndex(myindex+distance);
+        setIndex(index+distance);
         render();
     }
 
@@ -117,13 +117,13 @@ public class GUIItemSpelllist extends GUIItem
     /* {@inheritDoc} */
     @Override protected void button1Clicked(final JXCWindow jxcw)
     {
-        if (myspell == null)
+        if (spell == null)
         {
             return;
         }
 
-        jxcw.getCommandQueue().sendNcom(false, "cast "+myspell.getInternalName());
-        jxcw.getCurrentSpellManager().setCurrentSpell(myspell);
+        jxcw.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
+        jxcw.getCurrentSpellManager().setCurrentSpell(spell);
     }
 
     /* {@inheritDoc} */
@@ -141,12 +141,12 @@ public class GUIItemSpelllist extends GUIItem
     {
         super.render(g);
 
-        if (myspell == null)
+        if (spell == null)
         {
             return;
         }
 
-        g.drawImage(myspell.getImageIcon().getImage(), 0, 0, null);
+        g.drawImage(spell.getImageIcon().getImage(), 0, 0, null);
         if (isActive())
         {
             g.drawImage(selectorImage, 0, 0, null);
@@ -156,14 +156,14 @@ public class GUIItemSpelllist extends GUIItem
     private void setSpell()
     {
         final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
-        final Spell spell = 0 <= myindex && myindex < list.size() ? list.get(myindex) : null;
+        final Spell spell = 0 <= index && index < list.size() ? list.get(index) : null;
 
-        if (myspell == spell)
+        if (this.spell == spell)
         {
             return;
         }
 
-        myspell = spell;
+        this.spell = spell;
         render();
 
         setTooltipText(spell == null ? null : spell.getTooltipText());
@@ -171,11 +171,11 @@ public class GUIItemSpelllist extends GUIItem
 
     private void setIndex(final int index)
     {
-        if (myindex == index)
+        if (this.index == index)
         {
             return;
         }
-        myindex = index;
+        this.index = index;
 
         setSpell();
     }
