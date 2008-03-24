@@ -132,8 +132,6 @@ public class CfMap
      */
     public void setDarkness(final int x, final int y, final int darkness)
     {
-        if (darkness < 0 || darkness > 255) throw new IllegalArgumentException();
-
         expandTo(x, y);
         if (patch[px][py].resetFogOfWar(ox, oy))
         {
@@ -184,8 +182,6 @@ public class CfMap
      */
     public void setFace(final int x, final int y, final int layer, final Face face)
     {
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         expandTo(x, y);
         if (patch[px][py].resetFogOfWar(ox, oy))
         {
@@ -321,8 +317,6 @@ public class CfMap
      */
     public Face getFace(final int x, final int y, final int layer)
     {
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         if (!isWithinMap(x, y))
         {
             return null;
@@ -346,8 +340,6 @@ public class CfMap
      */
     private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
     {
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         expandTo(x, y);
         patch[px][py].setHeadMapSquare(ox, oy, layer, mapSquare);
     }
@@ -366,8 +358,6 @@ public class CfMap
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-//        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         if (!isWithinMap(x, y))
         {
             return null;
@@ -389,8 +379,6 @@ public class CfMap
      */
     public void setMultiFace(final int x, final int y, final int layer, final Face face)
     {
-        if (layer < 0 || layer >= CfMapSquare.LAYERS) throw new IllegalArgumentException();
-
         getOrCreateMultiSquare(x, y).setFace(layer, face);
     }
 
@@ -631,8 +619,6 @@ public class CfMap
      */
     private void increase(final int dx, final int dy)
     {
-        if (patch == null) throw new IllegalArgumentException();
-
         if (dx < 0)
         {
             final int newMinX = minX+dx;
