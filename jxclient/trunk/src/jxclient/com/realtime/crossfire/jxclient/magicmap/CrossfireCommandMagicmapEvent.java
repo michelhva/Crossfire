@@ -42,7 +42,7 @@ public class CrossfireCommandMagicmapEvent extends EventObject
 
     private final byte[] data;
 
-    public CrossfireCommandMagicmapEvent(Object src, int width, int height, int px, int py, byte[] data)
+    public CrossfireCommandMagicmapEvent(final Object src, final int width, final int height, final int px, final int py, final byte[] data)
     {
         super(src);
         this.width = width;
