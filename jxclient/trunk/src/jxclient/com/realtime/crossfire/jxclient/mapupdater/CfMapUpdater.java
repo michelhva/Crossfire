@@ -40,6 +40,16 @@ import java.util.Set;
 public class CfMapUpdater
 {
     /**
+     * The width of the visible map area.
+     */
+    private static int width = 0;
+
+    /**
+     * The height of the visible map area.
+     */
+    private static int height = 0;
+
+    /**
      * The current {@link CfMap} instance.
      */
     private static CfMap map = new CfMap();
@@ -68,7 +78,7 @@ public class CfMapUpdater
     /**
      * The animations in the visible map area.
      */
-    private static final CfMapAnimations visibleAnimations = new CfMapAnimations(CrossfireServerConnection.MAP_WIDTH, CrossfireServerConnection.MAP_HEIGHT);
+    private static CfMapAnimations visibleAnimations = new CfMapAnimations(0, 0);
 
     /**
      * Private constructor to prevent instantiation.
@@ -309,12 +319,12 @@ public class CfMapUpdater
     {
         map.clearMultiFaces();
 
-        if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
+        if (Math.abs(dx) >= width || Math.abs(dy) >= height)
         {
             map.scroll(dx, dy);
-            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+            for (int y = 0; y < height; y++)
             {
-                for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                for (int x = 0; x < width; x++)
                 {
                     map.clearSquare(x, y);
                     map.dirty(x, y);
@@ -329,10 +339,10 @@ public class CfMapUpdater
             while (tx > 0)
             {
                 map.scroll(-1, 0);
-                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                for (int y = 0; y < height; y++)
                 {
-                    map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, y);
-                    map.dirty(CrossfireServerConnection.MAP_WIDTH-1, y);
+                    map.clearSquare(width-1, y);
+                    map.dirty(width-1, y);
                     map.dirty(-1, y);
                 }
                 tx--;
@@ -340,11 +350,11 @@ public class CfMapUpdater
             while (tx < 0)
             {
                 map.scroll(+1, 0);
-                for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+                for (int y = 0; y < height; y++)
                 {
                     map.clearSquare(0, y);
                     map.dirty(0, y);
-                    map.dirty(CrossfireServerConnection.MAP_WIDTH, y);
+                    map.dirty(width, y);
                 }
                 tx++;
             }
@@ -353,10 +363,10 @@ public class CfMapUpdater
             while (ty > 0)
             {
                 map.scroll(0, -1);
-                for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+                for (int x = 0; x < width; x++)
                 {
-                    map.clearSquare(x, CrossfireServerConnection.MAP_HEIGHT-1);
-                    map.dirty(x, CrossfireServerConnection.MAP_HEIGHT-1);
+                    map.clearSquare(x, height-1);
+                    map.dirty(x, height-1);
                     map.dirty(x, -1);
                 }
                 ty--;
@@ -364,11 +374,11 @@ public class CfMapUpdater
             while (ty < 0)
             {
                 map.scroll(0, +1);
-                for (int x = 0; x <= CrossfireServerConnection.MAP_WIDTH; x++)
+                for (int x = 0; x <= width; x++)
                 {
                     map.clearSquare(x, 0);
                     map.dirty(x, 0);
-                    map.dirty(x, CrossfireServerConnection.MAP_HEIGHT);
+                    map.dirty(x, height);
                 }
                 ty++;
             }
@@ -392,9 +402,9 @@ public class CfMapUpdater
     {
         processMapBegin();
 
-        for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
+        for (int y = 0; y < height; y++)
         {
-            for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
+            for (int x = 0; x < width; x++)
             {
                 for (int z = 0; z < CrossfireServerConnection.NUM_LAYERS; z++)
                 {
@@ -413,16 +423,20 @@ public class CfMapUpdater
 
     /**
      * Process a newmap command. This clears the map state.
+     * @param width the width of the visible map area
+     * @param height the height of the visible map area
      */
-    public static void processNewmap()
+    public static void processNewmap(final int width, final int height)
     {
-        map = new CfMap();
+	CfMapUpdater.width = width;
+	CfMapUpdater.height = height;
+	map = new CfMap();
 
         // force dirty flags to be set for the visible map region
         map.clearSquare(0, 0);
-        map.clearSquare(CrossfireServerConnection.MAP_WIDTH-1, CrossfireServerConnection.MAP_HEIGHT-1);
+        map.clearSquare(width-1, height-1);
 
-        visibleAnimations.clear();
+        visibleAnimations = new CfMapAnimations(width, height);
 
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         for (final CrossfireNewmapListener listener : mylistenersNewmap)
