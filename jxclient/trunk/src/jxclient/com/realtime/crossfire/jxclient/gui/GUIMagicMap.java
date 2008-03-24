@@ -78,7 +78,7 @@ public class GUIMagicMap extends GUIElement
     /**
      * The colors for displaying magic map data.
      */
-    private final Color[] tileColors = new Color[]
+    private static final Color[] tileColors = new Color[]
     {
         Color.BLACK,
         Color.WHITE,
@@ -91,7 +91,16 @@ public class GUIMagicMap extends GUIElement
         Color.ORANGE,
         Color.CYAN,
         Color.MAGENTA,
+        Color.DARK_GRAY,
+        Color.DARK_GRAY,
+        Color.DARK_GRAY,
+        Color.DARK_GRAY,
+        Color.DARK_GRAY,
     };
+    static
+    {
+        assert CrossfireCommandMagicmapEvent.FACE_COLOR_MASK+1 == tileColors.length;
+    }
 
     /**
      * The {@link CrossfireMagicmapListener} registered to receive mapgicmap
@@ -119,9 +128,7 @@ public class GUIMagicMap extends GUIElement
                 {
                     for (int x = 0; x < evt.getWidth(); x++)
                     {
-                        final int square = data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK;
-                        final Color scolor = square >= tileColors.length ? Color.DARK_GRAY : tileColors[square];
-                        g.setColor(scolor);
+                        g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
                         final int sx = offsetX+x*TILE_SIZE;
                         final int sy = offsetY+y*TILE_SIZE;
                         g.fillRect(sx, sy, sx+TILE_SIZE, sy+TILE_SIZE);
