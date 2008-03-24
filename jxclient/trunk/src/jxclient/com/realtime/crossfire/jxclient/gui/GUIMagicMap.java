@@ -56,6 +56,16 @@ public class GUIMagicMap extends GUIElement
     private static final int TILE_SIZE = 4;
 
     /**
+     * The x offset of the tile representing the player.
+     */
+    private final int playerX;
+
+    /**
+     * The y offset of the tile representing the player.
+     */
+    private final int playerY;
+
+    /**
      * The x offset for the visible map area.
      */
     private final int offsetX;
@@ -93,8 +103,8 @@ public class GUIMagicMap extends GUIElement
                 {
                     datapos++;
                 }
-                final int offsetX = GUIMagicMap.this.offsetX+((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE-evt.getPX()*TILE_SIZE;
-                final int offsetY = GUIMagicMap.this.offsetY+((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE-evt.getPY()*TILE_SIZE;
+                final int offsetX = GUIMagicMap.this.playerX-evt.getPX()*TILE_SIZE;
+                final int offsetY = GUIMagicMap.this.playerY-evt.getPY()*TILE_SIZE;
                 for (int y = 0; y < evt.getHeight(); y++)
                 {
                     for (int x = 0; x < evt.getWidth(); x++)
@@ -219,8 +229,10 @@ public class GUIMagicMap extends GUIElement
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
-        offsetX = w/2-TILE_SIZE/2-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
-        offsetY = h/2-TILE_SIZE/2-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
+        playerX = w/2-TILE_SIZE/2;
+        playerY = h/2-TILE_SIZE/2;
+        offsetX = playerX-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
+        offsetY = playerY-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
         createBuffer();
         CfMagicMap.addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
@@ -259,9 +271,7 @@ public class GUIMagicMap extends GUIElement
         {
             for (int y = y0; y < y1; y++)
             {
-                final int xx = x-offsetX/TILE_SIZE;
-                final int yy = y-offsetY/TILE_SIZE;
-                redrawSquare(g, map, xx, yy);
+                redrawSquare(g, map, x-offsetX/TILE_SIZE, y-offsetY/TILE_SIZE);
             }
         }
     }
@@ -368,6 +378,6 @@ public class GUIMagicMap extends GUIElement
     private void markPlayer(final Graphics2D g)
     {
         g.setColor(Color.RED);
-        g.fillRect(offsetX+((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE, offsetY+((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE, TILE_SIZE, TILE_SIZE);
+        g.fillRect(playerX, playerY, TILE_SIZE, TILE_SIZE);
     }
 }
