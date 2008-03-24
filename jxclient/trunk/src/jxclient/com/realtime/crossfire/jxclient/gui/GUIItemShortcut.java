@@ -71,9 +71,9 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font)
+    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, image, imageCursed, imageApplied, imageSelector, imageLocked, crossfireServerConnection, font);
+        super(jxcWindow, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, crossfireServerConnection, font);
         this.index = index;
         this.font = font;
         jxcWindow.getShortcuts().addShortcutsListener(shortcutsListener);

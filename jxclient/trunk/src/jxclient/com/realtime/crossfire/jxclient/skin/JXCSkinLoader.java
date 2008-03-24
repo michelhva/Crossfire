@@ -876,7 +876,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("item"))
                         {
-                            if (args.length < 14)
+                            if (args.length < 13)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -887,51 +887,50 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[4]);
                             final int w = parseInt(args[5]);
                             final int h = parseInt(args[6]);
-                            final BufferedImage pictureEmpty = getPicture(args[7]);
-                            final BufferedImage pictureCursed = getPicture(args[8]);
-                            final BufferedImage pictureApplied = getPicture(args[9]);
-                            final BufferedImage pictureSelector = getPicture(args[10]);
-                            final BufferedImage pictureLocked = getPicture(args[11]);
-                            final int index = parseInt(args[12]);
-                            final Font font = fonts.lookup(args[13]);
+                            final BufferedImage pictureCursed = getPicture(args[7]);
+                            final BufferedImage pictureApplied = getPicture(args[8]);
+                            final BufferedImage pictureSelector = getPicture(args[9]);
+                            final BufferedImage pictureLocked = getPicture(args[10]);
+                            final int index = parseInt(args[11]);
+                            final Font font = fonts.lookup(args[12]);
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
-                                if (args.length != 15)
+                                if (args.length != 14)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                final Color nrofColor = parseColor(args[14]);
-                                element = new GUIItemFloor(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
+                                final Color nrofColor = parseColor(args[13]);
+                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
-                                if (args.length != 15)
+                                if (args.length != 14)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                final Color nrofColor = parseColor(args[14]);
-                                element = new GUIItemInventory(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
+                                final Color nrofColor = parseColor(args[13]);
+                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
-                                if (args.length != 14)
+                                if (args.length != 13)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else if (type.equals("spelllist"))
                             {
-                                if (args.length != 14)
+                                if (args.length != 13)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureEmpty, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
                             }
                             else
                             {
