@@ -1019,7 +1019,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 {
                     debugProtocolWrite("recv newmap\n");
                 }
-                CfMapUpdater.processNewmap();
+                CfMapUpdater.processNewmap(MAP_WIDTH, MAP_HEIGHT);
                 return;
 
             case 'p':
@@ -1751,6 +1751,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private void cmd_version(final int csval, final int scval, final String vinfo)
     {
+        CfMapUpdater.processNewmap(MAP_WIDTH, MAP_HEIGHT);
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MessageTypes.getAllTypes());
         sendSetup(

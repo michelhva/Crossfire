@@ -665,7 +665,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         windowWidth = w;
         windowHeight = h;
-        CfMapUpdater.processNewmap();
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
