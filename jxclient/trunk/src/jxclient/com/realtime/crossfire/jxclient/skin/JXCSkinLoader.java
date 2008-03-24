@@ -64,12 +64,11 @@ import com.realtime.crossfire.jxclient.gui.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
-import com.realtime.crossfire.jxclient.magicmap.CfMagicMap;
-import com.realtime.crossfire.jxclient.magicmap.CrossfireCommandMagicmapEvent;
-import com.realtime.crossfire.jxclient.magicmap.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
@@ -739,7 +738,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final GUICommandList commandList = getCommandList(args[2]);
-                                CfMagicMap.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
+                                server.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
                                     {
                                         /** {@inheritDoc} */
                                         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
