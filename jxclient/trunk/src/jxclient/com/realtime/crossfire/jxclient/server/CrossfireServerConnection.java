@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.faces.FacesCallback;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.ItemsList;
-import com.realtime.crossfire.jxclient.magicmap.CfMagicMap;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -88,6 +87,12 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private final List<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
 
     private final List<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
+
+    /**
+     * The {@link CrossfireMagicmapListener}s to be notified of received
+     * magicmap commands.
+     */
+    private final List<CrossfireMagicmapListener> magicmapListeners = new ArrayList<CrossfireMagicmapListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.
@@ -287,6 +292,25 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public synchronized void removeCrossfireQueryListener(final CrossfireQueryListener listener)
     {
         queryListeners.remove(listener);
+    }
+
+    /**
+     * Adds a listener from the list of objects listening to magicmap messages.
+     * @param listener the listener to add
+     */
+    public void addCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    {
+        magicmapListeners.add(listener);
+    }
+
+    /**
+     * Removes a listener from the list of objects listening to magicmap
+     * messages.
+     * @param listener the listener to remove
+     */
+    public void removeCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    {
+        magicmapListeners.remove(listener);
     }
 
     /**
@@ -929,7 +953,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             throw new UnknownCommandException("invalid magicmap command");
                         }
 
-                        CfMagicMap.magicmap(width, height, px, py, packet, pos);
+                        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(), width, height, px, py, packet, pos);
+                        for (final CrossfireMagicmapListener listener : magicmapListeners)
+                        {
+                            listener.commandMagicmapReceived(evt);
+                        }
                         return;
 
                     case 'p':
