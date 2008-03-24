@@ -99,7 +99,7 @@ public class GUIMagicMap extends GUIElement
                 {
                     for (int x = 0; x < evt.getWidth(); x++)
                     {
-                        final byte square = data[datapos];
+                        final int square = data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK;
                         final Color scolor = square >= mycolors.length ? Color.DARK_GRAY : mycolors[square];
                         g.setColor(scolor);
                         final int sx = offsetX+x*TILE_SIZE;
