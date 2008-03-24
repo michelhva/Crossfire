@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.magicmap;
 
-import java.io.DataInputStream;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,16 +42,9 @@ public class CfMagicMap
         mylisteners_magicmap.remove(listener);
     }
 
-    public static void magicmap(final DataInputStream dis) throws IOException
+    public static void magicmap(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
     {
-        final int len = dis.available();
-        final byte buf[] = new byte[len];
-
-        dis.readFully(buf);
-
-        final String str = new String(buf);
-        final String packs[] = str.split(" ", 5);
-        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(), Integer.parseInt(packs[0]), Integer.parseInt(packs[1]), Integer.parseInt(packs[2]), Integer.parseInt(packs[3]), packs[4].getBytes());
+        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(), width, height, px, py, data, pos);
         for (final CrossfireMagicmapListener listener : mylisteners_magicmap)
         {
             listener.commandMagicmapReceived(evt);

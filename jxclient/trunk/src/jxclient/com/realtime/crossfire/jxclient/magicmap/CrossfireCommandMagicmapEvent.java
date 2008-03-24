@@ -76,6 +76,11 @@ public class CrossfireCommandMagicmapEvent extends EventObject
     private final byte[] data;
 
     /**
+     * The index of the first valid byte in {@link #data}.
+     */
+    private final int pos;
+
+    /**
      * Creates a new instance.
      * @param src the source object; currently unused
      * @param width the width of <code>data</code>
@@ -83,8 +88,9 @@ public class CrossfireCommandMagicmapEvent extends EventObject
      * @param px the x-coordinate of the player
      * @param py the y-coordinate of the player
      * @param data the data describing tiles
+     * @param pos the index of the first valid byte in <code>data</code>
      */
-    public CrossfireCommandMagicmapEvent(final Object src, final int width, final int height, final int px, final int py, final byte[] data)
+    public CrossfireCommandMagicmapEvent(final Object src, final int width, final int height, final int px, final int py, final byte[] data, final int pos)
     {
         super(src);
         this.width = width;
@@ -92,6 +98,7 @@ public class CrossfireCommandMagicmapEvent extends EventObject
         this.px = px;
         this.py = py;
         this.data = data;
+        this.pos = pos;
     }
 
     /**
@@ -137,5 +144,14 @@ public class CrossfireCommandMagicmapEvent extends EventObject
     public byte[] getData()
     {
         return data;
+    }
+
+    /**
+     * Return the index of the first valid byte in {@link #data}.
+     * @return the first index
+     */
+    public int getPos()
+    {
+        return pos;
     }
 }

@@ -113,15 +113,11 @@ public class GUIMagicMap extends GUIElement
         {
             synchronized (mybuffer)
             {
-                int datapos = 0;
+                int datapos = evt.getPos();
                 final byte[] data = evt.getData();
                 final Graphics2D g = mybuffer.createGraphics();
                 g.setColor(Color.BLACK);
                 g.fillRect(0, 0, w, h);
-                while (data[datapos] == ' ')
-                {
-                    datapos++;
-                }
                 final int offsetX = GUIMagicMap.this.playerX-evt.getPX()*TILE_SIZE;
                 final int offsetY = GUIMagicMap.this.playerY-evt.getPY()*TILE_SIZE;
                 for (int y = 0; y < evt.getHeight(); y++)

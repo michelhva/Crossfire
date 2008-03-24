@@ -886,19 +886,50 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         if (packet[pos++] != 'a') break;
                         if (packet[pos++] != 'p') break;
                         if (packet[pos++] != ' ') break;
+
+                        int width = 0;
+                        do
+                        {
+                                width = width*10+parseDigit(packet[pos++]);
+                        }
+                        while (packet[pos] != ' ');
+                        pos++;
+
+                        int height = 0;
+                        do
+                        {
+                                height = height*10+parseDigit(packet[pos++]);
+                        }
+                        while (packet[pos] != ' ');
+                        pos++;
+
+                        int px = 0;
+                        do
+                        {
+                                px = px*10+parseDigit(packet[pos++]);
+                        }
+                        while (packet[pos] != ' ');
+                        pos++;
+
+                        int py = 0;
+                        do
+                        {
+                                py = py*10+parseDigit(packet[pos++]);
+                        }
+                        while (packet[pos] != ' ');
+                        pos++;
+
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv magicmap\n");
+                            debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+(end-pos)+"\n");
                         }
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                        try
+
+                        if (end-pos != width*height)
                         {
-                            CfMagicMap.magicmap(dis);
+                            throw new UnknownCommandException("invalid magicmap command");
                         }
-                        catch (final IOException ex)
-                        {
-                            throw new UnknownCommandException("invalid magicmap command: "+ex.getMessage());
-                        }
+
+                        CfMagicMap.magicmap(width, height, px, py, packet, pos);
                         return;
 
                     case 'p':
