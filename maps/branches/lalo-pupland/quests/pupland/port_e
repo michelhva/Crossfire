@@ -6,6 +6,7 @@ width 32
 height 16
 msg
 Created:  1996-02-29
+Modified: 2008-03-23 Rick Tanner
 endmsg
 end
 arch sea
@@ -1104,7 +1105,7 @@ no_pass 0
 end
 arch s_ship
 name To Nurnberg
-slaying nurnberg/city
+slaying ../../nurnberg/city
 hp 1
 sp 26
 x 14
