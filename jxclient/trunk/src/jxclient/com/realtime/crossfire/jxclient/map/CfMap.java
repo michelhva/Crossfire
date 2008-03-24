@@ -159,12 +159,7 @@ public class CfMap
      */
     public int getDarkness(final int x, final int y)
     {
-        if (!isWithinMap(x, y))
-        {
-            return 0;
-        }
-
-        return patch[px][py].getDarkness(ox, oy);
+        return isWithinMap(x, y) ? patch[px][py].getDarkness(ox, oy) : 0;
     }
 
     /**
@@ -317,12 +312,7 @@ public class CfMap
      */
     public Face getFace(final int x, final int y, final int layer)
     {
-        if (!isWithinMap(x, y))
-        {
-            return null;
-        }
-
-        return patch[px][py].getFace(ox, oy, layer);
+        return isWithinMap(x, y) ? patch[px][py].getFace(ox, oy, layer) : null;
     }
 
     /**
@@ -358,12 +348,7 @@ public class CfMap
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-        if (!isWithinMap(x, y))
-        {
-            return null;
-        }
-
-        return patch[px][py].getHeadMapSquare(ox, oy, layer);
+        return isWithinMap(x, y) ? patch[px][py].getHeadMapSquare(ox, oy, layer) : null;
     }
 
     /**
