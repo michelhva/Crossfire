@@ -1,5 +1,99 @@
-2008-03-22 17:18  kbulgrien
-        * santo_dominion/tavern.2ndfloor: Fix spelling.
+2008-03-24 04:00  rjtanner
+
+	* pup_land/lone_town/town: Rearranged map stacking order, moved
+	  no_spell tiles to the bottom of the stack
+
+2008-03-23 22:20  kbulgrien
+
+	* ChangeLog, santo_dominion/tavern.2ndfloor: - Spelling correction.
+
+2008-03-23 07:08  rjtanner
+
+	* templates/guild/mainfloor: Remove duplicate gem and currency
+	  conversion tables that were on the map due to a testing mistake
+
+2008-03-22 06:28  rjtanner
+
+	* darcap/raffle/raffle1_u3, python/guilds/guild_dues.py,
+	  python/guilds/guild_entry.py,
+	  python/guilds/guild_questpoints_apply.py,
+	  python/guilds/guildbuy.py, python/guilds/guildjoin.py,
+	  python/guilds/guildoracle.py, python/guilds/guildpay.py,
+	  templates/guild/README.txt, templates/guild/basement,
+	  templates/guild/bigchest, templates/guild/guild_alchemy,
+	  templates/guild/guild_bbq, templates/guild/guild_hq,
+	  templates/guild/guild_jeweler, templates/guild/guild_thaum,
+	  templates/guild/guild_toolshed, templates/guild/hallofjoining,
+	  templates/guild/mainfloor, templates/guild/secondfloor:
+	  Implemented, with changes backported from svn trunk, python guild
+	  hall patch: [ 1782975 ] Python guilds template. - applied, needs
+	  to check all is ok
+
+2008-03-22 04:43  rjtanner
+
+	* darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2: Per earlier archetype changes
+	  (2008-01-18), removed/renamed dwall3_3 to dwall_3_3
+
+2008-03-21 00:04  rjtanner
+
+	* pup_land/rainbow/Lv1/cd_room, pup_land/rainbow/w-tower: Restore
+	  text indentation to written instructions/dialogue
+
+2008-03-20 21:29  akirschbaum
+
+	* editor/scripts/WorldMaker: Remove unused configuration parameter
+	  from WorldMaker script.
+
+2008-03-20 05:34  rjtanner
+
+	* pup_land/nurnberg/apartment/main, pup_land/nurnberg/dick/bomb1:
+	  Restore text indentation to written instructions/dialogue
+
+2008-03-20 01:06  rjtanner
+
+	* pup_land/lone_town/cave/b3: Restore text indentation to written
+	  instructions/dialogue
+
+2008-03-19 23:43  rjtanner
+
+	* pup_land/s_f/st7: Correct improper resistance value for Yoroi of
+	  Banzai (resist_physical 131072 -> resist_death 100)
+
+2008-03-19 01:28  rjtanner
+
+	* pup_land/barrier, pup_land/ruin_barbarian/hole2,
+	  wolfsburg/dungeons/church.2: Restore line indentation to in-game
+	  text info
+
+2008-03-18 02:04  rjtanner
+
+	* santo_dominion/espen/palace, santo_dominion/magara/opera: Restore
+	  text indentation for show names in opera map
+
+2008-03-18 01:06  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2: Fix broken keys
+	  and inventory checks for each town haus
+
+2008-03-18 00:10  rjtanner
+
+	* mlab/citydeclouds/cloudworlddecity: Corrected wrong exit/entrance
+	  coordinates for Townhaus maps
+
+2008-03-17 22:33  rjtanner
+
+	* quests/mak/chaos/tritemples: Restore text indentations in the
+	  descriptive summaries for each cult
+
+2008-03-15 06:39  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-03-15 06:15  rjtanner
 
