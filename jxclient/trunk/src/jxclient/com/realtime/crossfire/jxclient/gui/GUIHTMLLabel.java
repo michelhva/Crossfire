@@ -50,9 +50,9 @@ public class GUIHTMLLabel extends AbstractLabel
      */
     private static final Pattern patternLineBreak = Pattern.compile("<br>");
 
-    private final Font myfont;
+    private final Font font;
 
-    private final Color mycolor;
+    private final Color color;
 
     /**
      * If set, auto-resize this element to the extent of {@link #text}.
@@ -62,8 +62,8 @@ public class GUIHTMLLabel extends AbstractLabel
     public GUIHTMLLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
     {
         super(jxcWindow, name, x, y, w, h, picture, text);
-        myfont = font;
-        mycolor = color;
+        this.font = font;
+        this.color = color;
         render();
     }
 
@@ -94,16 +94,16 @@ public class GUIHTMLLabel extends AbstractLabel
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
-        if (myfont == null)
+        if (font == null)
         {
             return;
         }
 
-        g.setFont(myfont);
-        g.setColor(mycolor);
+        g.setFont(font);
+        g.setColor(color);
 
         final Reader reader = new StringReader(getText());
-        final InternalHTMLRenderer renderer = new InternalHTMLRenderer(myfont, mycolor, g, 0, myfont.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
+        final InternalHTMLRenderer renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
         final ParserDelegator parserDelegator = new ParserDelegator();
         try
         {
@@ -125,7 +125,7 @@ public class GUIHTMLLabel extends AbstractLabel
             return;
         }
 
-        final Graphics2D g = mybuffer.createGraphics();
+        final Graphics2D g = buffer.createGraphics();
         try
         {
             final FontRenderContext context = g.getFontRenderContext();
@@ -133,7 +133,7 @@ public class GUIHTMLLabel extends AbstractLabel
             int height = 0;
             for (final String str : patternLineBreak.split(getText(), -1))
             {
-                final Rectangle2D size = myfont.getStringBounds(str, context);
+                final Rectangle2D size = font.getStringBounds(str, context);
                 width = Math.max(width, (int)size.getWidth());
                 height += (int)size.getHeight();
             }

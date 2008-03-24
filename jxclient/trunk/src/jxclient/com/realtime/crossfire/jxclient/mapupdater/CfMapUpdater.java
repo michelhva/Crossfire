@@ -57,17 +57,17 @@ public class CfMapUpdater
     /**
      * The listeners to notify about changed map squares.
      */
-    private static final List<CrossfireMapListener> mylistenersMap = new ArrayList<CrossfireMapListener>();
+    private static final List<CrossfireMapListener> mapListeners = new ArrayList<CrossfireMapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
-    private static final List<CrossfireNewmapListener> mylistenersNewmap = new ArrayList<CrossfireNewmapListener>();
+    private static final List<CrossfireNewmapListener> newmapListeners = new ArrayList<CrossfireNewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
-    private static final List<CrossfireMapscrollListener> mylistenersMapscroll = new ArrayList<CrossfireMapscrollListener>();
+    private static final List<CrossfireMapscrollListener> mapscrollListeners = new ArrayList<CrossfireMapscrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
@@ -94,7 +94,7 @@ public class CfMapUpdater
      */
     public static void addCrossfireMapListener(final CrossfireMapListener listener)
     {
-        mylistenersMap.add(listener);
+        mapListeners.add(listener);
     }
 
     /**
@@ -104,7 +104,7 @@ public class CfMapUpdater
      */
     public static void removeCrossfireMapListener(final CrossfireMapListener listener)
     {
-        mylistenersMap.remove(listener);
+        mapListeners.remove(listener);
     }
 
     /**
@@ -114,7 +114,7 @@ public class CfMapUpdater
      */
     public static void addCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
-        mylistenersNewmap.add(listener);
+        newmapListeners.add(listener);
     }
 
     /**
@@ -124,7 +124,7 @@ public class CfMapUpdater
      */
     public static void removeCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
-        mylistenersNewmap.remove(listener);
+        newmapListeners.remove(listener);
     }
 
     /**
@@ -134,7 +134,7 @@ public class CfMapUpdater
      */
     public static void addCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
-        mylistenersMapscroll.add(listener);
+        mapscrollListeners.add(listener);
     }
 
     /**
@@ -144,7 +144,7 @@ public class CfMapUpdater
      */
     public static void removeCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
-        mylistenersMapscroll.remove(listener);
+        mapscrollListeners.remove(listener);
     }
 
     /**
@@ -276,7 +276,7 @@ public class CfMapUpdater
         }
 
         final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
-        for (final CrossfireMapListener listener : mylistenersMap)
+        for (final CrossfireMapListener listener : mapListeners)
         {
             listener.commandMapReceived(evt);
         }
@@ -387,7 +387,7 @@ public class CfMapUpdater
         }
 
         final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
-        for (final CrossfireMapscrollListener listener : mylistenersMapscroll)
+        for (final CrossfireMapscrollListener listener : mapscrollListeners)
         {
             listener.commandMapscrollReceived(evt);
         }
@@ -439,7 +439,7 @@ public class CfMapUpdater
         visibleAnimations = new CfMapAnimations(width, height);
 
         final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
-        for (final CrossfireNewmapListener listener : mylistenersNewmap)
+        for (final CrossfireNewmapListener listener : newmapListeners)
         {
             listener.commandNewmapReceived(evt);
         }

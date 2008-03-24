@@ -110,11 +110,11 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
                 int datapos = evt.getPos();
                 final byte[] data = evt.getData();
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 g.setColor(Color.BLACK);
                 g.fillRect(0, 0, w, h);
                 final int offsetX = GUIMagicMap.this.playerX-evt.getPX()*TILE_SIZE;
@@ -146,9 +146,9 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 final CfMap map = CfMapUpdater.getMap();
                 final int dx = evt.getDX()*TILE_SIZE;
                 final int dy = evt.getDY()*TILE_SIZE;
@@ -193,12 +193,12 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
                 final CfMap map = evt.getMap();
                 final int x0 = map.getOffsetX();
                 final int y0 = map.getOffsetY();
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 for (final CfMapSquare mapSquare : evt.getChangedSquares())
                 {
                     final int x = mapSquare.getX()+x0;
@@ -221,9 +221,9 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
-            synchronized (mybuffer)
+            synchronized (buffer)
             {
-                final Graphics2D g = mybuffer.createGraphics();
+                final Graphics2D g = buffer.createGraphics();
                 g.setColor(Color.BLACK);
                 g.fillRect(0, 0, w, h);
                 markPlayer(g);
@@ -258,7 +258,7 @@ public class GUIMagicMap extends GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         setChanged();
     }
 

@@ -86,8 +86,8 @@ public class GUIPicture extends GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, image.getTransparency());
-        final Graphics2D g = mybuffer.createGraphics();
+        buffer = gconf.createCompatibleImage(w, h, image.getTransparency());
+        final Graphics2D g = buffer.createGraphics();
         g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
         g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
         g.dispose();

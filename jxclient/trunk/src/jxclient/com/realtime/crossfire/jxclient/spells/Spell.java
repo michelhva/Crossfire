@@ -31,162 +31,162 @@ import javax.swing.ImageIcon;
  */
 public class Spell
 {
-    private final ImageIcon myspellpic;
+    private final ImageIcon imageIcon;
 
-    private final String myid;
+    private final String internalName;
 
-    private final int mytag;
+    private final int tag;
 
-    private int mylevel;
+    private int level;
 
-    private int mycastingtime;
+    private int castingTime;
 
-    private int mymana;
+    private int mana;
 
-    private int mygrace;
+    private int grace;
 
-    private int mydamage;
+    private int damage;
 
-    private int myskill;
+    private int skill;
 
-    private int mypath;
+    private int path;
 
-    private final Face myface;
+    private final Face face;
 
-    private final String myname;
+    private final String name;
 
-    private final String mymessage;
+    private final String message;
 
     public int getTag()
     {
-        return mytag;
+        return tag;
     }
 
     public int getLevel()
     {
-        return mylevel;
+        return level;
     }
 
     public int getCastingTime()
     {
-        return mycastingtime;
+        return castingTime;
     }
 
     public int getMana()
     {
-        return mymana;
+        return mana;
     }
 
     public int getGrace()
     {
-        return mygrace;
+        return grace;
     }
 
     public int getDamage()
     {
-        return mydamage;
+        return damage;
     }
 
     public int getSkill()
     {
-        return myskill;
+        return skill;
     }
 
     public int getPath()
     {
-        return mypath;
+        return path;
     }
 
     public String getName()
     {
-        return myname;
+        return name;
     }
 
     public String getMessage()
     {
-        return mymessage;
+        return message;
     }
 
     public Face getFace()
     {
-        return myface;
+        return face;
     }
 
-    public void setLevel(final int nv)
+    public void setLevel(final int level)
     {
-        mylevel = nv;
+        this.level = level;
     }
 
-    public void setCastingTime(final int nv)
+    public void setCastingTime(final int castingTime)
     {
-        mycastingtime = nv;
+        this.castingTime = castingTime;
     }
 
-    public void setMana(final int nv)
+    public void setMana(final int mana)
     {
-        mymana = nv;
+        this.mana = mana;
     }
 
-    public void setGrace(final int nv)
+    public void setGrace(final int grace)
     {
-        mygrace = nv;
+        this.grace = grace;
     }
 
-    public void setDamage(final int nv)
+    public void setDamage(final int damage)
     {
-        mydamage = nv;
+        this.damage = damage;
     }
 
-    public void setSkill(final int nv)
+    public void setSkill(final int skill)
     {
-        myskill = nv;
+        this.skill = skill;
     }
 
     public void setPath(final int nv)
     {
-        mypath = nv;
+        this.path = path;
     }
 
-    public Spell(final Face f, final int tag, final String spellname, final String spellmessage)
+    public Spell(final Face face, final int tag, final String name, final String message)
     {
-        myspellpic = null;
-        myface = f;
-        mytag = tag;
-        myname = spellname;
-        mymessage = spellmessage;
-        myid = Integer.toString(tag);
+        imageIcon = null;
+        this.face = face;
+        this.tag = tag;
+        this.name = name;
+        this.message = message;
+        internalName = Integer.toString(tag);
     }
 
-    public Spell(final String filename, final String spellname, final String id)
+    public Spell(final String filename, final String name, final String internalName)
     {
         final URL url = getClass().getClassLoader().getResource(filename);
         if (url == null)
         {
             throw new IllegalArgumentException("resource '"+filename+"' does not exist");
         }
-        myspellpic = new ImageIcon(url);
-        myface = null;
-        mytag = 0;
-        myname = spellname;
-        mymessage = "";
-        myid = id;
+        imageIcon = new ImageIcon(url);
+        face = null;
+        tag = 0;
+        this.name = name;
+        message = "";
+        this.internalName = internalName;
     }
 
     public String getInternalName()
     {
-        return myid;
+        return internalName;
     }
 
     public ImageIcon getImageIcon()
     {
-        return myspellpic != null ? myspellpic : myface.getOriginalImageIcon();
+        return imageIcon != null ? imageIcon : face.getOriginalImageIcon();
     }
 
     public String toString()
     {
-        String str = "Name:"+myname+" ID:"+mytag+" Level:"+mylevel;
-        str = str+" Time:"+mycastingtime+" Mana:"+mymana+" Grace:"+mygrace;
-        str = str+" Damage:"+mydamage+" Skill:"+myskill+" Path:"+mypath;
+        String str = "Name:"+name+" ID:"+tag+" Level:"+level;
+        str = str+" Time:"+castingTime+" Mana:"+mana+" Grace:"+grace;
+        str = str+" Damage:"+damage+" Skill:"+skill+" Path:"+path;
         return str;
     }
 
@@ -197,6 +197,6 @@ public class Spell
      */
     public String getTooltipText()
     {
-        return mymessage.length() > 0 ? myname+"\n"+mymessage : myname;
+        return message.length() > 0 ? name+"\n"+message : name;
     }
 }

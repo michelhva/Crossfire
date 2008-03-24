@@ -111,7 +111,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final ExperienceTable experienceTable = new ExperienceTable();
 
-    private final CrossfireServerConnection myserver;
+    private final CrossfireServerConnection server;
 
     /**
      * The command queue instance for this window.
@@ -153,7 +153,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private Gui dialogDisconnect = null;
 
-    private JXCSkin myskin = null;
+    private JXCSkin skin = null;
 
     private final KeyBindings keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null));
 
@@ -382,10 +382,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        myserver = new CrossfireServerConnection(semaphoreRedraw, experienceTable, debugProtocol);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, debugProtocol);
         CfMapUpdater.reset();
-        commandQueue = new CommandQueue(myserver);
-        poisonWatcher = new PoisonWatcher(ItemsList.getStats(), myserver);
+        commandQueue = new CommandQueue(server);
+        poisonWatcher = new PoisonWatcher(ItemsList.getStats(), server);
         activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats());
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
@@ -549,7 +549,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void initRendering(final boolean fullScreen)
     {
         jxcWindowRenderer.initRendering(fullScreen);
-        DialogStateParser.load(myskin, jxcWindowRenderer);
+        DialogStateParser.load(skin, jxcWindowRenderer);
         loadKeybindings();
         loadShortcuts();
     }
@@ -570,11 +570,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             if (this.guiId == GUI_MAIN)
             {
-                myserver.disconnect();
+                server.disconnect();
                 setHost(null, 0);
                 ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
-                myserver.removeCrossfireQueryListener(this);
-                myserver.removeCrossfireDrawextinfoListener(this);
+                server.removeCrossfireQueryListener(this);
+                server.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
                 ItemsList.getItemsManager().reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
@@ -588,12 +588,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (this.guiId == GUI_MAIN)
             {
                 SoundManager.instance.mute(Sounds.CHARACTER, false);
-                myserver.addCrossfireDrawextinfoListener(this);
-                myserver.addCrossfireQueryListener(this);
+                server.addCrossfireDrawextinfoListener(this);
+                server.addCrossfireQueryListener(this);
                 setTitle(TITLE_PREFIX+" - "+hostname);
                 ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
                 ItemsList.getStats().reset();
-                myserver.connect(hostname, port, connectionListener);
+                server.connect(hostname, port, connectionListener);
                 Faces.reset();
                 commandQueue.clear();
                 ItemsList.getItemsManager().reset();
@@ -612,7 +612,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 jxcWindowRenderer.closeDialog(dialogQuit);
             }
             jxcWindowRenderer.closeDialog(queryDialog);
-            jxcWindowRenderer.closeDialog(myskin.getDialogBook(1));
+            jxcWindowRenderer.closeDialog(skin.getDialogBook(1));
 
             switch (guiId)
             {
@@ -670,7 +670,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addMouseMotionListener(mouseTracker);
         try
         {
-            Faces.setFacesCallback(myserver);
+            Faces.setFacesCallback(this.server);
         }
         catch (final IOException ex)
         {
@@ -722,7 +722,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             saveShortcuts();
             saveKeybindings();
-            DialogStateParser.save(myskin, jxcWindowRenderer);
+            DialogStateParser.save(skin, jxcWindowRenderer);
             optionManager.saveOptions();
             SoundManager.instance.shutdown();
         }
@@ -746,7 +746,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public CrossfireServerConnection getCrossfireServerConnection()
     {
-        return myserver;
+        return server;
     }
 
     private void handleKeyPress(final KeyEvent e)
@@ -1253,7 +1253,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         switch (evt.getType())
         {
         case MessageTypes.MSG_TYPE_BOOK:
-            dialog = myskin.getDialogBook(1);
+            dialog = skin.getDialogBook(1);
             final GUIOneLineLabel title = dialog.getDialogTitle();
             if (title != null)
             {
@@ -1341,12 +1341,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
         else if (evt.getPrompt().startsWith("[y] to roll new stats"))
         {
-            final Gui messagesDialog = myskin.getDialog("messages");
+            final Gui messagesDialog = skin.getDialog("messages");
             if (messagesDialog != null)
             {
                 openDialog(messagesDialog);
             }
-            final Gui statusDialog = myskin.getDialog("status");
+            final Gui statusDialog = skin.getDialog("status");
             if (statusDialog != null)
             {
                 openDialog(statusDialog);
@@ -1358,14 +1358,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void showGUIStart()
     {
         jxcWindowRenderer.clearGUI();
-        jxcWindowRenderer.setCurrentGui(myskin.getStartInterface());
+        jxcWindowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
 
     private void showGUIMeta()
     {
         jxcWindowRenderer.clearGUI();
-        final Gui newGui = myskin.getMetaInterface();
+        final Gui newGui = skin.getMetaInterface();
         jxcWindowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
         tooltipManager.reset();
@@ -1374,7 +1374,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void showGUIMain()
     {
         jxcWindowRenderer.clearGUI();
-        Gui newGui = myskin.getMainInterface();
+        Gui newGui = skin.getMainInterface();
         jxcWindowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
     }
@@ -1400,14 +1400,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             final File dir = new File(skinName);
             if (dir.exists() && dir.isDirectory())
             {
-                myskin = new JXCSkinDirLoader(dir);
+                skin = new JXCSkinDirLoader(dir);
             }
             else
             {
                 // fallback: built-in resource
-                myskin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
+                skin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
             }
-            myskin.load(myserver, this);
+            skin.load(server, this);
         }
         catch (final JXCSkinException ex)
         {
@@ -1415,11 +1415,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return false;
         }
 
-        myskin.executeInitEvents();
-        queryDialog = myskin.getDialogQuery();
-        keybindDialog = myskin.getDialogKeyBind();
-        dialogQuit = myskin.getDialogQuit();
-        dialogDisconnect = myskin.getDialogDisconnect();
+        skin.executeInitEvents();
+        queryDialog = skin.getDialogQuery();
+        keybindDialog = skin.getDialogKeyBind();
+        dialogQuit = skin.getDialogQuit();
+        dialogDisconnect = skin.getDialogDisconnect();
         optionManager.loadOptions();
         return true;
     }
@@ -1483,7 +1483,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         // check invisible dialogs
-        for (final Gui dialog : myskin)
+        for (final Gui dialog : skin)
         {
             final GUIText textArea3 = dialog.activateCommandInput();
             if (textArea3 != null)
@@ -1504,7 +1504,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public JXCSkin getSkin()
     {
-        return myskin;
+        return skin;
     }
 
     /**
@@ -1733,7 +1733,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void sendReply(final String reply)
     {
         setStatus(JXCWindow.Status.PLAYING);
-        myserver.sendReply(reply);
+        server.sendReply(reply);
         closeQueryDialog();
     }
 

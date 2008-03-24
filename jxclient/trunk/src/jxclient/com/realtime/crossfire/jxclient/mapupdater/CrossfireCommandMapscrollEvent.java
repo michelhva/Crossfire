@@ -32,24 +32,24 @@ public class CrossfireCommandMapscrollEvent extends EventObject
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    private final int mydx;
+    private final int dx;
 
-    private final int mydy;
+    private final int dy;
 
     public CrossfireCommandMapscrollEvent(Object src, int dx, int dy)
     {
         super(src);
-        mydx = dx;
-        mydy = dy;
+        this.dx = dx;
+        this.dy = dy;
     }
 
     public int getDX()
     {
-        return mydx;
+        return dx;
     }
 
     public int getDY()
     {
-        return mydy;
+        return dy;
     }
 }

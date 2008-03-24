@@ -58,24 +58,24 @@ public class CrossfireCommandDrawinfoEvent extends EventObject
 
     public static final int NDI_TAN = 12;
 
-    private final String mytext;
+    private final String text;
 
-    private final int mytype;
+    private final int type;
 
-    public CrossfireCommandDrawinfoEvent(final Object src, final String msg, final int type)
+    public CrossfireCommandDrawinfoEvent(final Object src, final String text, final int type)
     {
         super(src);
-        mytext = msg;
-        mytype = type;
+        this.text = text;
+        this.type = type;
     }
 
     public int getTextType()
     {
-        return mytype;
+        return type;
     }
 
     public String getText()
     {
-        return mytext;
+        return text;
     }
 }

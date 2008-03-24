@@ -225,8 +225,8 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        mybuffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        final Graphics2D g = mybuffer.createGraphics();
+        super.buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
+        final Graphics2D g = super.buffer.createGraphics();
         if (backgroundImage != null)
         {
             g.drawImage(backgroundImage, 0, 0, null);
