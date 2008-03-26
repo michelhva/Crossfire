@@ -7,7 +7,7 @@ height 16
 enter_x 11
 enter_y 10
 msg
-Modified: 2007-12-16 Nicolas Weeger
+Modified: 2008-03-26 Lauwenmark Akkendrittae
 endmsg
 end
 arch grass
@@ -894,8 +894,13 @@ Ha, my young brother.
 He's working for the King of Scorn, now, somewhere in the castle, I think.
 @match *
 Thank you for saving me from the monsters.
-Come back later... I'll be part of the quest.
+I'll help you in return: if you encounter a strange object, just show it to me with the "give" command.
+Who knows? I may be able to tell you more about it. I'm a wizard, after all.
 endmsg
+arch event_user
+title Python
+slaying /python/maps/scorn/towers/mad_mage/mad_mage_user.py
+end
 hp 500
 maxhp 500
 dam 50
