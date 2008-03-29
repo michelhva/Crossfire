@@ -38,6 +38,7 @@ def do_help():
 	whoami.Say(' - checkinv')
 	whoami.Say(' - face')
 	whoami.Say(' - anim')
+	whoami.Say(' - hook')
 
 def do_arch():
 	archs = Crossfire.GetArchetypes()
@@ -378,6 +379,22 @@ def do_anim():
 	obj.Anim = (topic[1])
 	whoami.Say('Anim changed')
 
+def do_hook():
+	item = whoami.Map.CreateObject('food', 0, 0)
+	whoami.Say('Created item.')
+	item2 = whoami.Map.ObjectAt(0, 0)
+	while item2.Above:
+		item2 = item2.Above
+	if item != item2:
+		whoami.Say('Not the same items!')
+	item.Remove()
+	whoami.Say('Trying to access removed item, exception coming')
+	try:
+		item2.Quantity = 1
+		whoami.Say('No exception! Error!')
+	except:
+		whoami.Say('Exception came, ok')
+
 topic = Crossfire.WhatIsMessage().split()
 #whoami.Say('topic = %s'%topic)
 #whoami.Say('topic[0] = %s'%topic[0])
@@ -445,5 +462,7 @@ elif topic[0] == 'anim':
 	do_anim()
 elif topic[0] == 'face':
 	do_face()
+elif topic[0] == 'hook':
+	do_hook()
 else:
 	do_help()
