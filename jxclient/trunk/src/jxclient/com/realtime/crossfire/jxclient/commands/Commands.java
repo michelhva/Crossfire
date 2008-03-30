@@ -50,6 +50,7 @@ public class Commands
     {
         commands.put("bind", new BindCommand(window));
         commands.put("unbind", new UnbindCommand(window));
+        commands.put("screenshot", new ScreenshotCommand(window));
         commands.put("script", new ScriptCommand(window));
         commands.put("exec", new ExecCommand(window));
         commands.put("set", new SetCommand(window));

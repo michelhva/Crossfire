@@ -45,6 +45,16 @@ public abstract class AbstractCommand implements Command
     }
 
     /**
+     * Display a normal output message.
+     *
+     * @param message The message.
+     */
+    protected void drawInfo(final String message)
+    {
+        drawInfo(message, CrossfireCommandDrawinfoEvent.NDI_BLACK);
+    }
+
+    /**
      * Display an error message.
      *
      * @param message The error message.
