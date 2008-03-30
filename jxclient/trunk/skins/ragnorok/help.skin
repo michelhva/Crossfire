@@ -11,10 +11,9 @@ Bumping into a monster attacks it. Bumping into other players pushes them away.
 
 To fire a readied skill or spell, press shift + direction key.
 
-To define new key binding, type
-    /bind command to bind
-To undefine a key binding, type
-    /unbind
+Define or replace a key binding:      /bind mapinfo
+Define a per-character key binding: /bind -c cast burning hands
+Undefine a key binding:                    /unbind
 
 Mouse bindings
 =============
