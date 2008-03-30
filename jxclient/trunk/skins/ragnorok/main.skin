@@ -36,6 +36,7 @@ commandlist_add command_poisoned_on poisoned SHOW
 commandlist_add command_poisoned_off poisoned HIDE
 
 # Button Group
+textbutton button_help        511 11 40 18 false command_help Help
 textbutton button_status      561 11 48 18 false command_status Status
 textbutton button_inventory   619 11 67 18 false command_inventory Inventory
 textbutton button_messages    696 11 74 18 false command_messages Messages
