@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 
 /**
  * Abstract base class of commands.
@@ -50,7 +51,7 @@ public abstract class AbstractCommand implements Command
      */
     protected void drawInfoError(final String message)
     {
-        drawInfo(message, 3);
+        drawInfo(message, CrossfireCommandDrawinfoEvent.NDI_RED);
     }
 
     /**
