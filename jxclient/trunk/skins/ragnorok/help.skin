@@ -17,15 +17,17 @@ Undefine a key binding:                    /unbind
 
 Mouse bindings
 =============
-map window
-----------------
-left button: examine spot; it briefly displays the objects in the clicked spot
+map window:
+   left button: examine spot; it briefly displays the objects in the clicked spot
 
-ground and inventory view
-----------------------------------
-left button: examine item; it displays a details object description
-middle button: apply item; this eats/drinks/wears/wields/etc. the item
-right button: drop item; the item is dropped to the ground or picked up from the ground
+ground and inventory view:
+   left button: examine item; it displays a details object description
+   middle button: apply item; this eats/drinks/wears/wields/etc. the item
+   right button: drop item; the item is dropped to the ground or picked up from the ground
+
+Miscellaneous
+===========
+Create screenshot: /screenshot
 
 More information
 =============
