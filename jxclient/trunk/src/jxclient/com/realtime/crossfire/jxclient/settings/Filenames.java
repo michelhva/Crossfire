@@ -182,7 +182,7 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
-    private static File getSettingsFile(final String filename) throws IOException
+    public static File getSettingsFile(final String filename) throws IOException
     {
         final File settingsDir = new File(getCrossfireFile(), "jxclient");
         if (!settingsDir.exists() && !settingsDir.mkdirs())

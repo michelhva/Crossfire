@@ -264,18 +264,27 @@ public class JXCWindowRenderer
                 {
                     redrawBlack(g);
                 }
-                synchronized (redrawSemaphore)
-                {
-                    redrawGUIBasic(g);
-                    redrawGUIDialog(g);
-                    redrawTooltip(g);
-                }
+                redraw(g);
                 g.dispose();
             }
             while (bufferStrategy.contentsLost());
             bufferStrategy.show();
         }
         while (bufferStrategy.contentsLost());
+    }
+
+    /**
+     * Paints the view into the given graphics instance.
+     * @param g the graphics instance to paint to
+     */
+    public void redraw(final Graphics g)
+    {
+        synchronized (redrawSemaphore)
+        {
+            redrawGUIBasic(g);
+            redrawGUIDialog(g);
+            redrawTooltip(g);
+        }
     }
 
     public void clearGUI()
