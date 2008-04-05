@@ -6,7 +6,19 @@ enter_x 8
 enter_y 4
 msg
 Created:  2007-05-23 ryo
+Modified: 2008-04-02 Nicolas Weeger
 endmsg
+maplore
+@quest Lursendis
+Quest starts and ends here.
+@end
+@def Lursendis
+Lursendis wishes to eat a caramel made by his friend Farnass.
+<br />
+No combat required, player just needs to figure where to find the NPCs or items.
+<br />
+The reward is a special item food-related.
+endmaplore
 end
 arch bluemarblemedium
 end
