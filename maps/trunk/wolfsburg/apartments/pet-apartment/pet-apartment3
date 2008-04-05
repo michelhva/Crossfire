@@ -1,0 +1,816 @@
+arch map
+name pet_apartment3
+width 9
+height 10
+msg
+Creator: Philip Stolarczyk
+Date:    2007-06-11
+Personal pet apartment
+Modified: 2008-04-05 Nicolas Weeger
+endmsg
+end
+arch marble
+end
+arch cwall_2_2_2
+end
+arch marble
+y 1
+end
+arch cwall_2_1_1
+y 1
+end
+arch marble
+y 2
+end
+arch cwall_2_1_1
+y 2
+end
+arch marble
+y 3
+end
+arch cwall_2_1_1
+y 3
+end
+arch marble
+y 4
+end
+arch cwall_2_1_1
+y 4
+end
+arch marble
+y 5
+end
+arch cwall_2_1_1
+y 5
+end
+arch marble
+y 6
+end
+arch cwall_2_1_1
+y 6
+end
+arch marble
+y 7
+end
+arch cwall_2_1_1
+y 7
+end
+arch marble
+y 8
+end
+arch cwall_2_1_1
+y 8
+end
+arch marble
+y 9
+end
+arch cwall_2_2_1
+y 9
+end
+arch marble
+x 1
+end
+arch cwall_mural_end_1_1
+x 1
+end
+arch marble
+x 1
+y 1
+end
+arch stair3_gstone_do
+slaying pet-apartment2
+hp 1
+sp 1
+x 1
+y 1
+unique 1
+end
+arch note
+msg
+Seems the roof collapsed, well, I doubt anyone has enough money to ever get up here, so there is no point fixing it up.
+
+(This area is buildable)
+endmsg
+x 1
+y 1
+end
+arch marble
+x 1
+y 2
+is_buildable 1
+end
+arch redcwall_2_2_2
+x 1
+y 2
+is_buildable 1
+end
+arch marble
+x 1
+y 3
+is_buildable 1
+end
+arch redcwall_3_2
+x 1
+y 3
+is_buildable 1
+end
+arch marble
+x 1
+y 4
+is_buildable 1
+end
+arch redcwall_3_2
+x 1
+y 4
+is_buildable 1
+end
+arch marble
+x 1
+y 5
+is_buildable 1
+end
+arch redcwall_3_2
+x 1
+y 5
+is_buildable 1
+end
+arch marble
+x 1
+y 6
+is_buildable 1
+end
+arch redcwall_3_2
+x 1
+y 6
+is_buildable 1
+end
+arch marble
+x 1
+y 7
+is_buildable 1
+end
+arch redcwall_3_2
+x 1
+y 7
+is_buildable 1
+end
+arch marble
+x 1
+y 8
+is_buildable 1
+end
+arch redcwall_2_2_1
+x 1
+y 8
+is_buildable 1
+end
+arch marble
+x 1
+y 9
+end
+arch cwall_2_1_2
+x 1
+y 9
+end
+arch marble
+x 2
+end
+arch cwall_mural_1_1
+x 2
+end
+arch marble
+x 2
+y 1
+is_buildable 1
+end
+arch redcwall_2_2_2
+x 2
+y 1
+is_buildable 1
+end
+arch marble
+x 2
+y 2
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 2
+is_buildable 1
+end
+arch marble
+x 2
+y 3
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 3
+is_buildable 1
+end
+arch marble
+x 2
+y 4
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 4
+is_buildable 1
+end
+arch marble
+x 2
+y 5
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 5
+is_buildable 1
+end
+arch marble
+x 2
+y 6
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 6
+is_buildable 1
+end
+arch marble
+x 2
+y 7
+is_buildable 1
+end
+arch redcwall_4
+x 2
+y 7
+is_buildable 1
+end
+arch marble
+x 2
+y 8
+is_buildable 1
+end
+arch redcwall_3_1
+x 2
+y 8
+is_buildable 1
+end
+arch marble
+x 2
+y 9
+end
+arch cwall_2_1_2
+x 2
+y 9
+end
+arch marble
+x 3
+end
+arch cwall_mural_1_2
+x 3
+end
+arch marble
+x 3
+y 1
+is_buildable 1
+end
+arch redcwall_3_3
+x 3
+y 1
+is_buildable 1
+end
+arch marble
+x 3
+y 2
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 2
+is_buildable 1
+end
+arch marble
+x 3
+y 3
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 3
+is_buildable 1
+end
+arch marble
+x 3
+y 4
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 4
+is_buildable 1
+end
+arch marble
+x 3
+y 5
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 5
+is_buildable 1
+end
+arch marble
+x 3
+y 6
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 6
+is_buildable 1
+end
+arch marble
+x 3
+y 7
+is_buildable 1
+end
+arch redcwall_4
+x 3
+y 7
+is_buildable 1
+end
+arch marble
+x 3
+y 8
+is_buildable 1
+end
+arch redcwall_3_1
+x 3
+y 8
+is_buildable 1
+end
+arch marble
+x 3
+y 9
+end
+arch cwall_2_1_2
+x 3
+y 9
+end
+arch marble
+x 4
+end
+arch cwall_mural_1_3
+x 4
+end
+arch marble
+x 4
+y 1
+is_buildable 1
+end
+arch redcwall_3_3
+x 4
+y 1
+is_buildable 1
+end
+arch marble
+x 4
+y 2
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 2
+is_buildable 1
+end
+arch marble
+x 4
+y 3
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 3
+is_buildable 1
+end
+arch marble
+x 4
+y 4
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 4
+is_buildable 1
+end
+arch marble
+x 4
+y 5
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 5
+is_buildable 1
+end
+arch marble
+x 4
+y 6
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 6
+is_buildable 1
+end
+arch marble
+x 4
+y 7
+is_buildable 1
+end
+arch redcwall_4
+x 4
+y 7
+is_buildable 1
+end
+arch marble
+x 4
+y 8
+is_buildable 1
+end
+arch redcwall_3_1
+x 4
+y 8
+is_buildable 1
+end
+arch marble
+x 4
+y 9
+end
+arch cwall_2_1_2
+x 4
+y 9
+end
+arch marble
+x 5
+end
+arch cwall_mural_1_4
+x 5
+end
+arch marble
+x 5
+y 1
+is_buildable 1
+end
+arch redcwall_3_3
+x 5
+y 1
+is_buildable 1
+end
+arch marble
+x 5
+y 2
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 2
+is_buildable 1
+end
+arch marble
+x 5
+y 3
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 3
+is_buildable 1
+end
+arch marble
+x 5
+y 4
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 4
+is_buildable 1
+end
+arch marble
+x 5
+y 5
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 5
+is_buildable 1
+end
+arch marble
+x 5
+y 6
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 6
+is_buildable 1
+end
+arch marble
+x 5
+y 7
+is_buildable 1
+end
+arch redcwall_4
+x 5
+y 7
+is_buildable 1
+end
+arch marble
+x 5
+y 8
+is_buildable 1
+end
+arch redcwall_3_1
+x 5
+y 8
+is_buildable 1
+end
+arch marble
+x 5
+y 9
+end
+arch cwall_2_1_2
+x 5
+y 9
+end
+arch marble
+x 6
+end
+arch cwall_mural_1_1
+x 6
+end
+arch marble
+x 6
+y 1
+is_buildable 1
+end
+arch redcwall_3_3
+x 6
+y 1
+is_buildable 1
+end
+arch marble
+x 6
+y 2
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 2
+is_buildable 1
+end
+arch marble
+x 6
+y 3
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 3
+is_buildable 1
+end
+arch marble
+x 6
+y 4
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 4
+is_buildable 1
+end
+arch marble
+x 6
+y 5
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 5
+is_buildable 1
+end
+arch marble
+x 6
+y 6
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 6
+is_buildable 1
+end
+arch marble
+x 6
+y 7
+is_buildable 1
+end
+arch redcwall_4
+x 6
+y 7
+is_buildable 1
+end
+arch marble
+x 6
+y 8
+is_buildable 1
+end
+arch redcwall_3_1
+x 6
+y 8
+is_buildable 1
+end
+arch marble
+x 6
+y 9
+end
+arch cwall_2_1_2
+x 6
+y 9
+end
+arch marble
+x 7
+end
+arch cwall_mural_end_1_2
+x 7
+end
+arch marble
+x 7
+y 1
+is_buildable 1
+end
+arch redcwall_2_2_3
+x 7
+y 1
+is_buildable 1
+end
+arch marble
+x 7
+y 2
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 2
+is_buildable 1
+end
+arch marble
+x 7
+y 3
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 3
+is_buildable 1
+end
+arch marble
+x 7
+y 4
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 4
+is_buildable 1
+end
+arch marble
+x 7
+y 5
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 5
+is_buildable 1
+end
+arch marble
+x 7
+y 6
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 6
+is_buildable 1
+end
+arch marble
+x 7
+y 7
+is_buildable 1
+end
+arch redcwall_3_4
+x 7
+y 7
+is_buildable 1
+end
+arch marble
+x 7
+y 8
+is_buildable 1
+end
+arch redcwall_2_2_4
+x 7
+y 8
+is_buildable 1
+end
+arch marble
+x 7
+y 9
+end
+arch cwall_2_1_2
+x 7
+y 9
+end
+arch marble
+x 8
+end
+arch cwall_2_2_3
+x 8
+end
+arch marble
+x 8
+y 1
+end
+arch cwall_2_1_1
+x 8
+y 1
+end
+arch marble
+x 8
+y 2
+end
+arch cwall_2_1_1
+x 8
+y 2
+end
+arch marble
+x 8
+y 3
+end
+arch cwall_2_1_1
+x 8
+y 3
+end
+arch marble
+x 8
+y 4
+end
+arch cwall_2_1_1
+x 8
+y 4
+end
+arch marble
+x 8
+y 5
+end
+arch cwall_2_1_1
+x 8
+y 5
+end
+arch marble
+x 8
+y 6
+end
+arch cwall_2_1_1
+x 8
+y 6
+end
+arch marble
+x 8
+y 7
+end
+arch cwall_2_1_1
+x 8
+y 7
+end
+arch marble
+x 8
+y 8
+end
+arch cwall_2_1_1
+x 8
+y 8
+end
+arch marble
+x 8
+y 9
+end
+arch cwall_2_2_4
+x 8
+y 9
+end

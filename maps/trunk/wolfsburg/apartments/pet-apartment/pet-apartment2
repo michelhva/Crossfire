@@ -1,0 +1,1597 @@
+arch map
+name pet_apartment2
+width 11
+height 19
+enter_x 4
+enter_y 4
+msg
+Creator: Philip Stolarczyk
+Date:    2007-06-11
+Personal pet apartment
+Modified: 2008-04-05 Nicolas Weeger
+endmsg
+end
+arch woodfloor2
+end
+arch stwall_2_2_2
+end
+arch woodfloor2
+y 1
+end
+arch stwall_2_1_1
+y 1
+end
+arch woodfloor2
+y 2
+end
+arch stwindow_win1
+y 2
+end
+arch woodfloor2
+y 3
+end
+arch stwall_2_1_1
+y 3
+end
+arch woodfloor2
+y 4
+end
+arch stwindow_win1
+y 4
+end
+arch woodfloor2
+y 5
+end
+arch stwall_3_2
+y 5
+end
+arch woodfloor2
+y 6
+end
+arch stwall_2_1_1
+y 6
+end
+arch woodfloor2
+y 7
+end
+arch stwall_2_1_1
+y 7
+end
+arch woodfloor2
+y 8
+end
+arch stwall_2_1_1
+y 8
+end
+arch woodfloor2
+y 9
+end
+arch stwall_2_2_1
+y 9
+end
+arch blocked
+y 10
+end
+arch blocked
+y 11
+end
+arch blocked
+y 12
+end
+arch blocked
+y 13
+end
+arch blocked
+y 14
+end
+arch blocked
+y 15
+end
+arch blocked
+y 16
+end
+arch blocked
+y 17
+end
+arch blocked
+y 18
+end
+arch woodfloor2
+x 1
+end
+arch stwall_2_1_2
+x 1
+end
+arch woodfloor2
+x 1
+y 1
+end
+arch woodfloor2
+x 1
+y 2
+end
+arch pentagram_111
+hp 1
+sp 12
+x 1
+y 2
+connected 202
+end
+arch woodfloor2
+x 1
+y 3
+end
+arch woodfloor2
+x 1
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 1
+y 5
+connected 101
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 1
+y 5
+connected 101
+end
+arch woodfloor2
+x 1
+y 5
+end
+arch stwall_2_1_2
+x 1
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 1
+y 6
+is_floor 1
+end
+arch charm_floor
+x 1
+y 6
+connected 202
+end
+arch pentagram_111
+hp 1
+sp 2
+x 1
+y 6
+connected 302
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 1
+y 7
+is_floor 1
+end
+arch charm_floor
+x 1
+y 7
+connected 202
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 1
+y 8
+is_floor 1
+end
+arch charm_floor
+x 1
+y 8
+connected 202
+end
+arch woodfloor2
+x 1
+y 9
+end
+arch stwall_2_1_2
+x 1
+y 9
+end
+arch blocked
+x 1
+y 10
+end
+arch blocked
+x 1
+y 11
+end
+arch furious_floor
+x 1
+y 12
+end
+arch woodfloor2
+x 1
+y 12
+end
+arch pentagram_111
+hp 1
+sp 16
+x 1
+y 12
+speed 0.03
+end
+arch furious_floor
+x 1
+y 13
+end
+arch woodfloor2
+x 1
+y 13
+end
+arch furious_floor
+x 1
+y 14
+end
+arch woodfloor2
+x 1
+y 14
+end
+arch blocked
+x 1
+y 15
+end
+arch calm_floor
+x 1
+y 16
+end
+arch woodfloor2
+x 1
+y 16
+end
+arch pentagram_111
+hp 1
+sp 6
+x 1
+y 16
+speed 0.03
+end
+arch calm_floor
+x 1
+y 17
+end
+arch woodfloor2
+x 1
+y 17
+end
+arch calm_floor
+x 1
+y 18
+end
+arch woodfloor2
+x 1
+y 18
+end
+arch woodfloor2
+x 2
+end
+arch stwindow_win2
+x 2
+end
+arch woodfloor2
+x 2
+y 1
+end
+arch woodfloor2
+x 2
+y 2
+end
+arch woodfloor2
+x 2
+y 3
+end
+arch woodfloor2
+x 2
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 2
+y 5
+connected 101
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 2
+y 5
+connected 101
+end
+arch woodfloor2
+x 2
+y 5
+end
+arch stwall_2_1_2
+x 2
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 2
+y 6
+is_floor 1
+end
+arch charm_floor
+x 2
+y 6
+connected 202
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 2
+y 7
+is_floor 1
+end
+arch charm_floor
+x 2
+y 7
+connected 202
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 2
+y 8
+is_floor 1
+end
+arch charm_floor
+x 2
+y 8
+connected 202
+end
+arch woodfloor2
+x 2
+y 9
+end
+arch stwall_2_1_2
+x 2
+y 9
+end
+arch blocked
+x 2
+y 10
+end
+arch blocked
+x 2
+y 11
+end
+arch furious_floor
+x 2
+y 12
+end
+arch woodfloor2
+x 2
+y 12
+end
+arch furious_floor
+x 2
+y 13
+end
+arch woodfloor2
+x 2
+y 13
+end
+arch furious_floor
+x 2
+y 14
+end
+arch woodfloor2
+x 2
+y 14
+end
+arch blocked
+x 2
+y 15
+end
+arch calm_floor
+x 2
+y 16
+end
+arch woodfloor2
+x 2
+y 16
+end
+arch calm_floor
+x 2
+y 17
+end
+arch woodfloor2
+x 2
+y 17
+end
+arch calm_floor
+x 2
+y 18
+end
+arch woodfloor2
+x 2
+y 18
+end
+arch woodfloor2
+x 3
+end
+arch stwall_2_1_2
+x 3
+end
+arch duplicator
+other_arch altar
+x 3
+y 1
+connected 101
+end
+arch woodfloor2
+x 3
+y 1
+end
+arch altar
+name 1000 amberium for left large pet cell
+slaying ambercoin
+food 1000
+x 3
+y 1
+connected 101
+end
+arch woodfloor2
+x 3
+y 2
+end
+arch woodfloor2
+x 3
+y 3
+end
+arch woodfloor2
+x 3
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 3
+y 5
+connected 101
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 3
+y 5
+connected 101
+end
+arch woodfloor2
+x 3
+y 5
+end
+arch stwall_2_1_2
+x 3
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 3
+y 6
+is_floor 1
+end
+arch charm_floor
+x 3
+y 6
+connected 202
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 3
+y 7
+is_floor 1
+end
+arch charm_floor
+x 3
+y 7
+connected 202
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 3
+y 8
+is_floor 1
+end
+arch charm_floor
+x 3
+y 8
+connected 202
+end
+arch woodfloor2
+x 3
+y 9
+end
+arch stwall_2_1_2
+x 3
+y 9
+end
+arch blocked
+x 3
+y 10
+end
+arch blocked
+x 3
+y 11
+end
+arch furious_floor
+x 3
+y 12
+end
+arch woodfloor2
+x 3
+y 12
+end
+arch furious_floor
+x 3
+y 13
+end
+arch woodfloor2
+x 3
+y 13
+end
+arch furious_floor
+x 3
+y 14
+end
+arch woodfloor2
+x 3
+y 14
+end
+arch blocked
+x 3
+y 15
+end
+arch calm_floor
+x 3
+y 16
+end
+arch woodfloor2
+x 3
+y 16
+end
+arch calm_floor
+x 3
+y 17
+end
+arch woodfloor2
+x 3
+y 17
+end
+arch calm_floor
+x 3
+y 18
+end
+arch woodfloor2
+x 3
+y 18
+end
+arch woodfloor2
+x 4
+end
+arch stwindow_win2
+x 4
+end
+arch duplicator
+other_arch altar
+x 4
+y 1
+connected 102
+end
+arch woodfloor2
+x 4
+y 1
+end
+arch altar
+name 5000 amberium for third floor
+slaying ambercoin
+food 5000
+x 4
+y 1
+connected 102
+end
+arch woodfloor2
+x 4
+y 2
+end
+arch cwall_0
+x 4
+y 2
+end
+arch woodfloor2
+x 4
+y 3
+end
+arch woodfloor2
+x 4
+y 4
+end
+arch woodfloor2
+x 4
+y 5
+end
+arch stwall_3_3
+x 4
+y 5
+end
+arch woodfloor2
+x 4
+y 6
+end
+arch stwall_2_1_1
+x 4
+y 6
+end
+arch woodfloor2
+x 4
+y 7
+end
+arch stwall_2_1_1
+x 4
+y 7
+end
+arch woodfloor2
+x 4
+y 8
+end
+arch stwall_2_1_1
+x 4
+y 8
+end
+arch woodfloor2
+x 4
+y 9
+end
+arch stwall_3_1
+x 4
+y 9
+end
+arch blocked
+x 4
+y 10
+end
+arch blocked
+x 4
+y 11
+end
+arch blocked
+x 4
+y 12
+end
+arch blocked
+x 4
+y 13
+end
+arch blocked
+x 4
+y 14
+end
+arch blocked
+x 4
+y 15
+end
+arch blocked
+x 4
+y 16
+end
+arch blocked
+x 4
+y 17
+end
+arch blocked
+x 4
+y 18
+end
+arch woodfloor2
+x 5
+end
+arch stwall_2_1_2
+x 5
+end
+arch duplicator
+other_arch altar
+x 5
+y 1
+connected 103
+end
+arch woodfloor2
+x 5
+y 1
+end
+arch altar
+name 100 amberium for right large pet cell
+slaying ambercoin
+food 100
+x 5
+y 1
+connected 103
+end
+arch woodfloor2
+x 5
+y 2
+end
+arch pentagram_111
+hp 5
+sp 12
+x 5
+y 2
+connected 201
+end
+arch woodfloor2
+x 5
+y 3
+end
+arch woodfloor2
+x 5
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 5
+y 5
+connected 103
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 5
+y 5
+connected 103
+end
+arch woodfloor2
+x 5
+y 5
+end
+arch stwall_2_1_2
+x 5
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+msg
+The power of the pentagram transports you out.
+endmsg
+face woodfloor2.111
+hp 4
+sp 1
+x 5
+y 6
+is_floor 1
+end
+arch charm_floor
+x 5
+y 6
+connected 201
+end
+arch pentagram_111
+hp 5
+sp 2
+x 5
+y 6
+connected 301
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 5
+y 7
+is_floor 1
+end
+arch charm_floor
+x 5
+y 7
+connected 201
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 5
+y 8
+is_floor 1
+end
+arch charm_floor
+x 5
+y 8
+connected 201
+end
+arch woodfloor2
+x 5
+y 9
+end
+arch stwall_2_1_2
+x 5
+y 9
+end
+arch blocked
+x 5
+y 10
+end
+arch blocked
+x 5
+y 11
+end
+arch furious_floor
+x 5
+y 12
+end
+arch woodfloor2
+x 5
+y 12
+end
+arch pentagram_111
+hp 5
+sp 16
+x 5
+y 12
+speed 0.03
+end
+arch furious_floor
+x 5
+y 13
+end
+arch woodfloor2
+x 5
+y 13
+end
+arch furious_floor
+x 5
+y 14
+end
+arch woodfloor2
+x 5
+y 14
+end
+arch blocked
+x 5
+y 15
+end
+arch calm_floor
+x 5
+y 16
+end
+arch woodfloor2
+x 5
+y 16
+end
+arch pentagram_111
+hp 5
+sp 6
+x 5
+y 16
+speed 0.03
+end
+arch calm_floor
+x 5
+y 17
+end
+arch woodfloor2
+x 5
+y 17
+end
+arch calm_floor
+x 5
+y 18
+end
+arch woodfloor2
+x 5
+y 18
+end
+arch woodfloor2
+x 6
+end
+arch stwall_2_1_2
+x 6
+end
+arch stwindow_win2
+x 6
+end
+arch woodfloor2
+x 6
+y 1
+end
+arch card
+msg
+Warnings:
+Due to the power of the magic involved, retrieving large creatures from their cells may not be completely safe.
+You may need to use town portal to bring your pets here, or to bring them with you after you retrieve them.
+endmsg
+x 6
+y 1
+end
+arch woodfloor2
+x 6
+y 2
+end
+arch woodfloor2
+x 6
+y 3
+end
+arch woodfloor2
+x 6
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 6
+y 5
+connected 103
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 6
+y 5
+connected 103
+end
+arch woodfloor2
+x 6
+y 5
+end
+arch stwall_2_1_2
+x 6
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 6
+y 6
+is_floor 1
+end
+arch charm_floor
+x 6
+y 6
+connected 201
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 6
+y 7
+is_floor 1
+end
+arch charm_floor
+x 6
+y 7
+connected 201
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 6
+y 8
+is_floor 1
+end
+arch charm_floor
+x 6
+y 8
+connected 201
+end
+arch woodfloor2
+x 6
+y 9
+end
+arch stwall_2_1_2
+x 6
+y 9
+end
+arch blocked
+x 6
+y 10
+end
+arch blocked
+x 6
+y 11
+end
+arch furious_floor
+x 6
+y 12
+end
+arch woodfloor2
+x 6
+y 12
+end
+arch furious_floor
+x 6
+y 13
+end
+arch woodfloor2
+x 6
+y 13
+end
+arch furious_floor
+x 6
+y 14
+end
+arch woodfloor2
+x 6
+y 14
+end
+arch blocked
+x 6
+y 15
+end
+arch calm_floor
+x 6
+y 16
+end
+arch woodfloor2
+x 6
+y 16
+end
+arch calm_floor
+x 6
+y 17
+end
+arch woodfloor2
+x 6
+y 17
+end
+arch calm_floor
+x 6
+y 18
+end
+arch woodfloor2
+x 6
+y 18
+end
+arch woodfloor2
+x 7
+end
+arch stwall_2_1_2
+x 7
+end
+arch woodfloor2
+x 7
+y 1
+end
+arch stair_down_2
+slaying pet-apartment
+hp 7
+sp 1
+x 7
+y 1
+unique 1
+end
+arch woodfloor2
+x 7
+y 2
+end
+arch woodfloor2
+x 7
+y 3
+end
+arch woodfloor2
+x 7
+y 4
+end
+arch creator
+other_arch stwindow_win2
+x 7
+y 5
+connected 103
+end
+arch duplicator
+other_arch stwall_2_1_2
+x 7
+y 5
+connected 103
+end
+arch woodfloor2
+x 7
+y 5
+end
+arch stwall_2_1_2
+x 7
+y 5
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 7
+y 6
+is_floor 1
+end
+arch charm_floor
+x 7
+y 6
+connected 201
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 7
+y 7
+is_floor 1
+end
+arch charm_floor
+x 7
+y 7
+connected 201
+end
+arch oakdoor
+name woodfloor2
+slaying pet_apartment2
+face woodfloor2.111
+hp 4
+sp 1
+x 7
+y 8
+is_floor 1
+end
+arch charm_floor
+x 7
+y 8
+connected 201
+end
+arch woodfloor2
+x 7
+y 9
+end
+arch stwall_2_1_2
+x 7
+y 9
+end
+arch blocked
+x 7
+y 10
+end
+arch blocked
+x 7
+y 11
+end
+arch furious_floor
+x 7
+y 12
+end
+arch woodfloor2
+x 7
+y 12
+end
+arch furious_floor
+x 7
+y 13
+end
+arch woodfloor2
+x 7
+y 13
+end
+arch furious_floor
+x 7
+y 14
+end
+arch woodfloor2
+x 7
+y 14
+end
+arch blocked
+x 7
+y 15
+end
+arch calm_floor
+x 7
+y 16
+end
+arch woodfloor2
+x 7
+y 16
+end
+arch calm_floor
+x 7
+y 17
+end
+arch woodfloor2
+x 7
+y 17
+end
+arch calm_floor
+x 7
+y 18
+end
+arch woodfloor2
+x 7
+y 18
+end
+arch woodfloor2
+x 8
+end
+arch stwall_2_2_3
+x 8
+end
+arch woodfloor2
+x 8
+y 1
+end
+arch stwall_2_1_1
+x 8
+y 1
+end
+arch woodfloor2
+x 8
+y 2
+end
+arch stwindow_win1
+x 8
+y 2
+end
+arch woodfloor2
+x 8
+y 3
+end
+arch stwall_2_1_1
+x 8
+y 3
+end
+arch woodfloor2
+x 8
+y 4
+end
+arch stwindow_win1
+x 8
+y 4
+end
+arch woodfloor2
+x 8
+y 5
+end
+arch stwall_3_4
+x 8
+y 5
+end
+arch woodfloor2
+x 8
+y 6
+end
+arch stwall_2_1_1
+x 8
+y 6
+end
+arch woodfloor2
+x 8
+y 7
+end
+arch stwall_2_1_1
+x 8
+y 7
+end
+arch woodfloor2
+x 8
+y 8
+end
+arch stwall_2_1_1
+x 8
+y 8
+end
+arch woodfloor2
+x 8
+y 9
+end
+arch stwall_2_2_4
+x 8
+y 9
+end
+arch blocked
+x 8
+y 10
+end
+arch blocked
+x 8
+y 11
+end
+arch blocked
+x 8
+y 12
+end
+arch blocked
+x 8
+y 13
+end
+arch blocked
+x 8
+y 14
+end
+arch blocked
+x 8
+y 15
+end
+arch blocked
+x 8
+y 16
+end
+arch blocked
+x 8
+y 17
+end
+arch blocked
+x 8
+y 18
+end
+arch blocked
+x 9
+end
+arch blocked
+x 9
+y 1
+end
+arch blocked
+x 9
+y 2
+end
+arch blocked
+x 9
+y 3
+end
+arch blocked
+x 9
+y 4
+end
+arch blocked
+x 9
+y 5
+end
+arch blocked
+x 9
+y 6
+end
+arch blocked
+x 9
+y 7
+end
+arch blocked
+x 9
+y 8
+end
+arch blocked
+x 9
+y 9
+end
+arch blocked
+x 9
+y 10
+end
+arch blocked
+x 9
+y 11
+end
+arch blocked
+x 9
+y 12
+end
+arch blocked
+x 9
+y 13
+end
+arch blocked
+x 9
+y 14
+end
+arch blocked
+x 9
+y 15
+end
+arch blocked
+x 9
+y 16
+end
+arch blocked
+x 9
+y 17
+end
+arch blocked
+x 9
+y 18
+end
+arch woodfloor2
+x 10
+end
+arch teleporter
+hp 4
+sp 3
+x 10
+speed 0.0
+connected 101
+end
+arch button_lever
+name lever for left cell
+x 10
+connected 202
+end
+arch woodfloor2
+x 10
+y 1
+end
+arch teleporter
+hp 1
+sp 1
+x 10
+y 1
+speed 0
+connected 102
+end
+arch stair3_gstone_up
+slaying pet-apartment3
+hp 1
+sp 1
+x 10
+y 1
+unique 1
+end
+arch woodfloor2
+x 10
+y 2
+end
+arch teleporter
+hp 4
+sp 4
+x 10
+y 2
+speed 0.0
+connected 103
+end
+arch button_lever
+name lever for right cell
+x 10
+y 2
+connected 201
+end
+arch blocked
+x 10
+y 3
+end
+arch woodfloor2
+x 10
+y 4
+end
+arch spikes_moving
+x 10
+y 4
+end
+arch boulder
+x 10
+y 4
+end
+arch woodfloor2
+x 10
+y 5
+end
+arch button_plate
+x 10
+y 5
+connected 301
+end
+arch gateTrg1
+hp 1
+maxhp 1
+x 10
+y 5
+connected 201
+end
+arch blocked
+x 10
+y 6
+end
+arch woodfloor2
+x 10
+y 7
+end
+arch spikes_moving
+x 10
+y 7
+end
+arch boulder
+x 10
+y 7
+end
+arch woodfloor2
+x 10
+y 8
+end
+arch button_plate
+x 10
+y 8
+connected 302
+end
+arch gateTrg1
+hp 1
+maxhp 1
+x 10
+y 8
+connected 202
+end
+arch blocked
+x 10
+y 9
+end
+arch blocked
+x 10
+y 10
+end
+arch blocked
+x 10
+y 11
+end
+arch blocked
+x 10
+y 12
+end
+arch blocked
+x 10
+y 13
+end
+arch blocked
+x 10
+y 14
+end
+arch blocked
+x 10
+y 15
+end
+arch blocked
+x 10
+y 16
+end
+arch blocked
+x 10
+y 17
+end
+arch blocked
+x 10
+y 18
+end
