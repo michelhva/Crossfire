@@ -8,7 +8,7 @@ enter_x 29
 enter_y 45
 msg
 Created:  2006-11-12 Gene Alexander (poof@eracc.com)
-Modified: 2008-04-05 Nicolas Weeger
+Modified: 2007-11-04 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -8786,8 +8786,27 @@ x 22
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 22
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_alchemy
+end
+arch scroll_bargaining
+end
+arch scroll_stealing
+end
 end
 arch dungeon_magic
 x 22
@@ -9367,8 +9386,27 @@ x 23
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 23
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_bowyer
+end
+arch scroll_climbing
+end
+arch scroll_summoning
+end
 end
 arch dungeon_magic
 x 23
@@ -9965,8 +10003,27 @@ x 24
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 24
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_disarm_traps
+end
+arch scroll_evocation
+end
+arch scroll_thaumaturgy
+end
 end
 arch dungeon_magic
 x 24
@@ -10570,8 +10627,27 @@ x 25
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 25
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_find_traps
+end
+arch scroll_hiding
+end
+arch scroll_throwing
+end
 end
 arch dungeon_magic
 x 25
@@ -11167,8 +11243,27 @@ x 26
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 26
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_jewelry
+end
+arch scroll_jumping
+end
+arch scroll_two_handed_weapons
+end
 end
 arch dungeon_magic
 x 26
@@ -11750,8 +11845,27 @@ x 27
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 27
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_karate
+end
+arch scroll_literacy
+end
+arch scroll_use_magic_item
+end
 end
 arch dungeon_magic
 x 27
@@ -13849,8 +13963,27 @@ x 31
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 31
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_missile_weap
+end
+arch scroll_one_handed_weapons
+end
+arch scroll_woodsman
+end
 end
 arch dungeon_magic
 x 31
@@ -14443,8 +14576,25 @@ x 32
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 32
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_oratory
+end
+arch scroll_praying
+end
 end
 arch dungeon_magic
 x 32
@@ -15033,8 +15183,25 @@ x 33
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 33
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_punching
+end
+arch scroll_pyromancy
+end
 end
 arch dungeon_magic
 x 33
@@ -15608,8 +15775,25 @@ x 34
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 34
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_sense_curse
+end
+arch scroll_sense_mag
+end
 end
 arch dungeon_magic
 x 34
@@ -16237,8 +16421,23 @@ x 35
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 35
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_singing
+end
 end
 arch dungeon_magic
 x 35
@@ -16835,8 +17034,25 @@ x 36
 y 13
 end
 arch chest_valriel_2
+name Fireproof Chest
+name_pl Fireproof Chests
+title of Valriel
+msg
+A glowing chest from Valriel's treasure
+endmsg
+Str 70
 x 36
 y 13
+material 0
+value 500000
+weight 25000
+glow_radius 5
+container 750000
+identified 0
+arch scroll_smithing
+end
+arch scroll_sorcery
+end
 end
 arch dungeon_magic
 x 36
