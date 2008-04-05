@@ -250,7 +250,7 @@ y 8
 end
 arch oakdoor
 name dirtfloor
-slaying pet_apartment
+slaying pet-apartment
 msg
 You tunnel under the bars.  You hope your pets don't figure out this trick.
 endmsg
@@ -259,6 +259,7 @@ hp 2
 sp 5
 x 1
 y 8
+unique 1
 is_floor 1
 end
 arch charm_floor
@@ -647,7 +648,7 @@ y 8
 end
 arch oakdoor
 name dirtfloor
-slaying pet_apartment
+slaying pet-apartment
 msg
 You tunnel under the bars.  You hope your pets don't figure out this trick.
 endmsg
@@ -656,6 +657,7 @@ hp 2
 sp 5
 x 3
 y 8
+unique 1
 is_floor 1
 end
 arch charm_floor
@@ -1056,7 +1058,7 @@ y 8
 end
 arch oakdoor
 name dirtfloor
-slaying pet_apartment
+slaying pet-apartment
 msg
 You tunnel under the bars.  You hope your pets don't figure out this trick.
 endmsg
@@ -1065,6 +1067,7 @@ hp 6
 sp 5
 x 5
 y 8
+unique 1
 is_floor 1
 end
 arch charm_floor
@@ -1447,7 +1450,7 @@ y 8
 end
 arch oakdoor
 name dirtfloor
-slaying pet_apartment
+slaying pet-apartment
 msg
 You tunnel under the bars.  You hope your pets don't figure out this trick.
 endmsg
@@ -1456,6 +1459,7 @@ hp 6
 sp 5
 x 7
 y 8
+unique 1
 is_floor 1
 end
 arch charm_floor
