@@ -14,10 +14,11 @@ Step 1: Copy the map files to ./share/maps/guilds/<guildname>
 
 Modify Map Files:
 
-There are 6 objects that need to be changed.  The first three are on the main floor, the next two are in the guild_hq and the final one is in hallofjoining. 
+There are 6 objects that need to be changed, or 11 objects if you want to use the optional Python based Guild Storage hall.  The first three are on the main floor, the next two are in the guild_hq and the final one is in hallofjoining. Withe the Storage Hall, three objects are found on the main floor and the last two are in the basement.
+
 It's not that hard, but you will need a map editor.  You find the object that has the script, click edit data, and change the line "script options" (which currently is "GUILD_TEMPALTE") to the guild you wish to use.  And make sure you use the same one for all of them or it won't work.
 
-It's not that hard, but you will need a map editor.  You'll need to find the object that has the script (more on this, below) 
+Here's a quick HOWTO for using the map editor to make these changes:
 
 1.) Left click on the object (ex: sign) so it's selected
 2.) Click on the Scripts tab
@@ -34,9 +35,17 @@ guild hq map:
 5:The guild master's sign straight above the oracle at the wall. (x7, y1)
 (Notice, GUILD_TEMPLATE_GM_board - leave the _GM_board in place)
 
-hallofjoining:
+hallofjoining map:
 6:One of the switches, called "Load" and located on the left, in the hallofjoining. (x8, y11)
 
+storage_hall map:
+7:The guardian, its a sign out front of the storage hall and *under* the bridge. (x10, y27)
+8:"Check Inv" object found under the first entrance gate. (x10, y27)
+9:"Check Inv" object found under the middle gate at the top of the map. (x10, y6)
+
+storage_hall.0: (basement)
+10:"Check Inv" object found under the stairs. (x3, y1)
+11:"Check Inv" object found under the middle gate at the bottom of the map. (x3, y6)
 
 Or, if you prefer a text editor or want to double check your changes..
 
@@ -61,8 +70,8 @@ GuildList:
 (This is a text file)
 
 All Map Files:
-In all the guild map files, update the Region setting (region Template), it's found at the fourth (4th) line in each file.
-See the "regions" file found at ./share/maps/ for more information
+In all the guild map files, update the Region setting (region Template), it's found at the fourth (4th) line in each file. In the map editor, click on Map -> Map Properties (or hit control-m) as another way to update the Region seting.
+See the "regions" file found at ./share/maps/ for more information.
   
 
 Step 2: 
