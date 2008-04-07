@@ -1,0 +1,586 @@
+arch map
+name Guild Hall Storage Basement
+difficulty 1
+region Template
+width 7
+height 12
+enter_x 3
+enter_y 1
+msg
+Creator: Chad Opperman
+cromagic@sbcglobal.net
+Date:    2007-12-19
+Modified: 2008-04-06 Rick Tanner
+endmsg
+end
+arch stonefloor2
+end
+arch dwall_2_2_2
+end
+arch stonefloor2
+y 1
+end
+arch dwall_2_1_1
+y 1
+end
+arch stonefloor2
+y 2
+end
+arch dwall_2_1_1
+y 2
+end
+arch stonefloor2
+y 3
+end
+arch dwall_2_1_1
+y 3
+end
+arch stonefloor2
+y 4
+end
+arch dwall_2_1_1
+y 4
+end
+arch stonefloor2
+y 5
+end
+arch dwall_2_1_1
+y 5
+end
+arch stonefloor2
+y 6
+end
+arch dwall_3_2
+y 6
+end
+arch stonefloor2
+y 7
+end
+arch dwall_2_1_1
+y 7
+end
+arch stonefloor2
+y 8
+end
+arch dwall_2_1_1
+y 8
+end
+arch stonefloor2
+y 9
+end
+arch dwall_2_2_1
+y 9
+end
+arch blocked
+y 10
+end
+arch stonefloor2
+x 1
+end
+arch dwall_2_1_2
+x 1
+end
+arch stonefloor2
+x 1
+y 1
+unique 1
+end
+arch stonefloor2
+x 1
+y 2
+unique 1
+end
+arch stonefloor2
+x 1
+y 3
+unique 1
+end
+arch stonefloor2
+x 1
+y 4
+unique 1
+end
+arch stonefloor2
+x 1
+y 5
+unique 1
+end
+arch stonefloor2
+x 1
+y 6
+end
+arch dwall_2_1_2
+x 1
+y 6
+end
+arch dungeon_magic
+x 1
+y 7
+end
+arch stonefloor2
+x 1
+y 7
+no_magic 1
+unique 1
+damned 1
+end
+arch bed_save
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
+end
+arch stonefloor2
+x 1
+y 8
+no_magic 1
+unique 1
+damned 1
+end
+arch bed_save
+x 1
+y 8
+end
+arch stonefloor2
+x 1
+y 9
+end
+arch dwall_2_1_2
+x 1
+y 9
+end
+arch blocked
+x 1
+y 10
+end
+arch stonefloor2
+x 2
+end
+arch dwall_3_3
+x 2
+end
+arch stonefloor2
+x 2
+y 1
+end
+arch cwall_1_2
+x 2
+y 1
+end
+arch stonefloor2
+x 2
+y 2
+unique 1
+end
+arch stonefloor2
+x 2
+y 3
+unique 1
+end
+arch stonefloor2
+x 2
+y 4
+unique 1
+end
+arch stonefloor2
+x 2
+y 5
+unique 1
+end
+arch stonefloor2
+x 2
+y 6
+end
+arch cwall_1_3
+x 2
+y 6
+end
+arch dungeon_magic
+x 2
+y 7
+end
+arch stonefloor2
+x 2
+y 7
+no_magic 1
+unique 1
+damned 1
+end
+arch dungeon_magic
+x 2
+y 8
+end
+arch stonefloor2
+x 2
+y 8
+no_magic 1
+unique 1
+damned 1
+end
+arch stonefloor2
+x 2
+y 9
+end
+arch dwall_2_1_2
+x 2
+y 9
+end
+arch blocked
+x 2
+y 10
+end
+arch stonefloor2
+x 3
+end
+arch dwall_2_1_2
+x 3
+end
+arch check_floor
+slaying GUILD_TEMPLATE
+x 3
+y 1
+move_block all
+end
+arch stonefloor2
+x 3
+y 1
+unique 1
+end
+arch stair_up_1
+slaying storage_hall
+hp 10
+sp 3
+x 3
+y 1
+end
+arch stonefloor2
+x 3
+y 2
+unique 1
+end
+arch stonefloor2
+x 3
+y 3
+unique 1
+end
+arch stonefloor2
+x 3
+y 4
+unique 1
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch stonefloor2
+x 3
+y 5
+no_magic 1
+unique 1
+damned 1
+end
+arch button_small
+x 3
+y 5
+invisible 1
+connected 111
+end
+arch check_floor
+slaying GUILD_TEMPLATE
+x 3
+y 6
+move_block all
+end
+arch stonefloor2
+x 3
+y 6
+unique 1
+end
+arch grate_closed_1
+x 3
+y 6
+connected 111
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch stonefloor2
+x 3
+y 7
+no_magic 1
+unique 1
+damned 1
+end
+arch button_small
+x 3
+y 7
+invisible 1
+connected 111
+end
+arch dungeon_magic
+x 3
+y 8
+end
+arch stonefloor2
+x 3
+y 8
+no_magic 1
+damned 1
+end
+arch stonefloor2
+x 3
+y 9
+end
+arch dwall_2_1_2
+x 3
+y 9
+end
+arch blocked
+x 3
+y 10
+end
+arch stonefloor2
+x 4
+end
+arch dwall_3_3
+x 4
+end
+arch stonefloor2
+x 4
+y 1
+end
+arch cwall_1_2
+x 4
+y 1
+end
+arch stonefloor2
+x 4
+y 2
+unique 1
+end
+arch stonefloor2
+x 4
+y 3
+unique 1
+end
+arch stonefloor2
+x 4
+y 4
+unique 1
+end
+arch stonefloor2
+x 4
+y 5
+unique 1
+end
+arch stonefloor2
+x 4
+y 6
+end
+arch cwall_1_4
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch stonefloor2
+x 4
+y 7
+no_magic 1
+unique 1
+damned 1
+end
+arch dungeon_magic
+x 4
+y 8
+end
+arch stonefloor2
+x 4
+y 8
+no_magic 1
+unique 1
+damned 1
+end
+arch stonefloor2
+x 4
+y 9
+end
+arch dwall_2_1_2
+x 4
+y 9
+end
+arch blocked
+x 4
+y 10
+end
+arch stonefloor2
+x 5
+end
+arch stonefloor2
+x 5
+end
+arch dwall_2_1_2
+x 5
+end
+arch stonefloor2
+x 5
+y 1
+unique 1
+end
+arch stonefloor2
+x 5
+y 2
+unique 1
+end
+arch stonefloor2
+x 5
+y 3
+unique 1
+end
+arch stonefloor2
+x 5
+y 4
+unique 1
+end
+arch stonefloor2
+x 5
+y 5
+unique 1
+end
+arch stonefloor2
+x 5
+y 6
+end
+arch dwall_2_1_2
+x 5
+y 6
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch stonefloor2
+x 5
+y 7
+no_magic 1
+unique 1
+damned 1
+end
+arch bed_save
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
+end
+arch stonefloor2
+x 5
+y 8
+no_magic 1
+unique 1
+damned 1
+end
+arch bed_save
+x 5
+y 8
+end
+arch stonefloor2
+x 5
+y 9
+end
+arch dwall_2_1_2
+x 5
+y 9
+end
+arch blocked
+x 5
+y 10
+end
+arch stonefloor2
+x 6
+end
+arch dwall_2_2_3
+x 6
+end
+arch stonefloor2
+x 6
+y 1
+end
+arch dwall_2_1_1
+x 6
+y 1
+end
+arch stonefloor2
+x 6
+y 2
+end
+arch dwall_2_1_1
+x 6
+y 2
+end
+arch stonefloor2
+x 6
+y 3
+end
+arch dwall_2_1_1
+x 6
+y 3
+end
+arch stonefloor2
+x 6
+y 4
+end
+arch dwall_2_1_1
+x 6
+y 4
+end
+arch stonefloor2
+x 6
+y 5
+end
+arch dwall_2_1_1
+x 6
+y 5
+end
+arch stonefloor2
+x 6
+y 6
+end
+arch dwall_3_4
+x 6
+y 6
+end
+arch stonefloor2
+x 6
+y 7
+end
+arch dwall_2_1_1
+x 6
+y 7
+end
+arch stonefloor2
+x 6
+y 8
+end
+arch dwall_2_1_1
+x 6
+y 8
+end
+arch stonefloor2
+x 6
+y 9
+end
+arch dwall_2_2_4
+x 6
+y 9
+end
+arch blocked
+x 6
+y 10
+end
