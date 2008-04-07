@@ -78,7 +78,7 @@ Step 2:
 Copy the scripts to ./share/maps/python/guilds
 
 Step 3: 
-Choose where you want the guild and edit the world map, place a guildhall ot that location, and set the exit path to /path/to/guilds/<guildname>; edit the mainfloor map exit (x15, y29 - set to /Edit/This/Exit/Path in the template) back to the world map as well.  Otherwise, players may not be able to enter the guild hall map or they may exit out to some other location in the game.
+Choose where you want the guild and edit the world map, place a guildhall at that location, and set the exit path to /path/to/guilds/<guildname>; edit the mainfloor map exit (x15, y29 - set to /Edit/This/Exit/Path in the template) back to the world map as well.  If you are using the Storage Hall map (storage_hall), you will need to update the exit path in this map as well - the exit is found at the bottom of the map (x10, y29 - set to /Edit/This/Exit/Path in the template) Otherwise, players may not be able to enter the guild hall map or they may exit out to some other location in the game.
 
 2 Bug reporting:
 Any problems installing and making it work or just general bugs you find, please email them to jehloq@yahoo.com, I will be more than willing to help figure out why it isn't working right and correct any bugs you find.
