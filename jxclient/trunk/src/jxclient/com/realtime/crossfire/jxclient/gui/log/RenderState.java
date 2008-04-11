@@ -236,7 +236,7 @@ public class RenderState
 
     /**
      * Return whether the view should be repainted even if no other values have
-     * hchanged. This function resets the flag; calling the function twice
+     * changed. This function resets the flag; calling the function twice
      * returns <code>false</code> in the second call (if no other changes
      * happen concurrently).
      *
