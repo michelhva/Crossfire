@@ -140,10 +140,7 @@ public class RenderState
         {
             scrollToBottom(buffer);
         }
-        else
-        {
-            mustRepaint = true;
-        }
+        mustRepaint = true;
     }
 
     /**

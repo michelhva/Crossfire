@@ -130,7 +130,9 @@ public class Buffer implements Iterable<Line>
         final int height = calculateHeight(line);
         line.setHeight(height);
         totalHeight += height;
-        lines.set(lines.size()-1, line);
+        final int lastIndex = lines.size()-1;
+        totalHeight -= lines.get(lastIndex).getHeight();
+        lines.set(lastIndex, line);
 
         for (final BufferListener listener : listeners)
         {
