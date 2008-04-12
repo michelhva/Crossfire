@@ -35,9 +35,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import javax.swing.ImageIcon;
 
@@ -235,7 +232,7 @@ public class GUIMagicMap extends GUIElement
 
     public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
         if (w%TILE_SIZE != 0) throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
@@ -245,21 +242,10 @@ public class GUIMagicMap extends GUIElement
         playerY = h/2-TILE_SIZE/2;
         offsetX = playerX-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
         offsetY = playerY-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
-        createBuffer();
         jxcWindow.getCrossfireServerConnection().addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        setChanged();
     }
 
     /**

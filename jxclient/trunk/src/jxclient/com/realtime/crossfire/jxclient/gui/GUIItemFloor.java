@@ -93,7 +93,6 @@ public class GUIItemFloor extends GUIItemItem
         containerTag = ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor();
         ItemsList.getItemsManager().getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
         setIndex(index, containerTag, false);
-        render();
     }
 
     /** {@inheritDoc} */

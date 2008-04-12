@@ -113,9 +113,15 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
         {
-            synchronized (buffer)
+            final Graphics2D g = buffer.createGraphics();
+            try
             {
-                render();
+                g.setColor(Color.BLACK);
+                g.fillRect(0, 0, w, h);
+            }
+            finally
+            {
+                g.dispose();
             }
             setChanged();
         }
@@ -136,7 +142,7 @@ public class GUIMap extends GUIElement
                 final int dy = -evt.getDY();
                 if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
                 {
-                    render();
+                    setChanged();
                     return;
                 }
 
@@ -229,7 +235,7 @@ public class GUIMap extends GUIElement
      */
     public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h) throws IOException
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
         if (tileSize == 32)
         {
             useBigImages = false;
@@ -251,7 +257,6 @@ public class GUIMap extends GUIElement
         if (w != CrossfireServerConnection.MAP_WIDTH*tileSize) throw new IOException("w="+w+"!="+CrossfireServerConnection.MAP_WIDTH*tileSize);
         if (h != CrossfireServerConnection.MAP_HEIGHT*tileSize) throw new IOException("h="+h+"!="+CrossfireServerConnection.MAP_HEIGHT*tileSize);
 
-        createBuffer();
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
@@ -259,7 +264,7 @@ public class GUIMap extends GUIElement
 
     public GUIMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean useBigImages)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
         this.useBigImages = useBigImages;
 
         if (useBigImages)
@@ -283,7 +288,10 @@ public class GUIMap extends GUIElement
     /** {@inheritDoc} */
     @Override protected void render(final Graphics2D g)
     {
+/*
         super.render(g);
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, w, h);
         for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
         {
             for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
@@ -291,6 +299,7 @@ public class GUIMap extends GUIElement
                 redrawSquare(g, CfMapUpdater.getMap(), x, y);
             }
         }
+*/
     }
 
     /**
@@ -409,26 +418,6 @@ public class GUIMap extends GUIElement
         case MouseEvent.BUTTON3:
             break;
         }
-    }
-
-    /** {@inheritDoc} */
-    @Override protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
-        final Graphics2D g = buffer.createGraphics();
-        try
-        {
-            g.setColor(Color.BLACK);
-            g.fillRect(0, 0, w, h);
-        }
-        finally
-        {
-            g.dispose();
-        }
-        setChanged();
     }
 
     /**

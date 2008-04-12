@@ -23,9 +23,6 @@ import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -120,14 +117,13 @@ public class GUIGauge extends GUIElement
      */
     public GUIGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImage, final BufferedImage negativeImage, final BufferedImage emptyImage, final Orientation orientation, final String tooltipPrefix)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImage, "full", w, h);
         checkSize(negativeImage, "negative", w, h);
         checkSize(emptyImage, "empty", w, h);
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
         this.emptyImage = emptyImage;
-        createBuffer();
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
@@ -255,16 +251,6 @@ public class GUIGauge extends GUIElement
         updateValues();
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        setChanged();
     }
 
     /**

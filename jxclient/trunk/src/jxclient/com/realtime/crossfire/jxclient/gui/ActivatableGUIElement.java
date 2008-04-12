@@ -45,10 +45,12 @@ public abstract class ActivatableGUIElement extends GUIElement
      * @param w The width for drawing this element to screen.
      *
      * @param h The height for drawing this element to screen.
+     *
+     * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
+    protected ActivatableGUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
-        super(jxcWindow, name, x, y, w, h);
+            super(jxcWindow, name, x, y, w, h, transparency);
     }
 
     /**

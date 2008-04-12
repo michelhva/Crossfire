@@ -64,14 +64,13 @@ public class GUIHTMLLabel extends AbstractLabel
         super(jxcWindow, name, x, y, w, h, picture, text);
         this.font = font;
         this.color = color;
-        render();
     }
 
     /** {@inheritDoc} */
     @Override protected void textChanged()
     {
         autoResize();
-        render();
+        setChanged();
     }
 
     /**

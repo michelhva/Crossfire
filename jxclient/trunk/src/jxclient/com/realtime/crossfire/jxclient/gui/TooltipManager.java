@@ -66,11 +66,8 @@ public class TooltipManager
     {
         synchronized (activeGuiElementSync)
         {
-            if (activeGuiElement != null)
-            {
-                removeTooltip();
-                activeGuiElement = null;
-            }
+            removeTooltip();
+            activeGuiElement = null;
         }
     }
 

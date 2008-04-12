@@ -26,9 +26,6 @@ import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Transparency;
 
@@ -99,7 +96,7 @@ public class GUITextButton extends AbstractButton
      */
     public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, autoRepeat, commandList);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (up == null) throw new IllegalArgumentException();
         if (down == null) throw new IllegalArgumentException();
         if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
@@ -115,18 +112,12 @@ public class GUITextButton extends AbstractButton
         this.text = text;
         this.font = font;
         this.color = color;
-
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        render();
     }
 
     /** {@inheritDoc} */
     @Override public void activeChanged()
     {
-        render();
+        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -139,12 +130,6 @@ public class GUITextButton extends AbstractButton
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        throw new AssertionError();
     }
 
     /**

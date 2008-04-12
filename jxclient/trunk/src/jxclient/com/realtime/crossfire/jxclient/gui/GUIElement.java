@@ -21,7 +21,11 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.event.MouseEvent;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 
 /**
@@ -71,6 +75,11 @@ public abstract class GUIElement
     private boolean ignore = false;
 
     /**
+     * The transparency for {@link #buffer}.
+     */
+    private final int transparency;
+
+    /**
      * The name of this element.
      */
     private final String name;
@@ -107,15 +116,19 @@ public abstract class GUIElement
      * @param w The width for drawing this element to screen.
      *
      * @param h The height for drawing this element to screen.
+     *
+     * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
+    protected GUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
         this.jxcWindow = jxcWindow;
+        this.name = name;
         this.x = x;
         this.y = y;
         this.w = w;
         this.h = h;
-        this.name = name;
+        this.transparency = transparency;
+        createBuffer();
     }
 
     /**
@@ -155,11 +168,6 @@ public abstract class GUIElement
     public boolean isActive()
     {
         return false;
-    }
-
-    public BufferedImage getBuffer()
-    {
-        return buffer;
     }
 
     public int getX()
@@ -321,11 +329,11 @@ public abstract class GUIElement
      */
     public boolean hasChanged()
     {
-        return changed;
+        return visible && changed;
     }
 
     /**
-     * Record that {@link #buffer} has changed.
+     * Record that {@link #buffer} has changed and must be repainted.
      */
     public void setChanged()
     {
@@ -342,7 +350,16 @@ public abstract class GUIElement
     }
 
     /**
-     * Clear the flag that {@link #buffer} has changed.
+     * Returns the changed flag.
+     * @return the changed flag
+     */
+    public boolean isChanged()
+    {
+        return changed;
+    }
+
+    /**
+     * Clears the changed flag.
      */
     public void resetChanged()
     {
@@ -420,7 +437,14 @@ public abstract class GUIElement
         }
     }
 
-    protected abstract void createBuffer();
+    protected void createBuffer()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+        buffer = gconf.createCompatibleImage(w, h, transparency);
+        setChanged();
+    }
 
     /**
      * Return the {@link JXCWindow} this gui element belongs to.
@@ -437,16 +461,18 @@ public abstract class GUIElement
      */
     protected final void render()
     {
-        final Graphics2D g = buffer.createGraphics();
-        try
+        synchronized (buffer)
         {
-            render(g);
+            final Graphics2D g = buffer.createGraphics();
+            try
+            {
+                render(g);
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
-        finally
-        {
-            g.dispose();
-        }
-        setChanged();
     }
 
     /**
@@ -456,5 +482,23 @@ public abstract class GUIElement
      */
     protected void render(final Graphics2D g)
     {
+    }
+
+    /**
+     * Draws this image into the given graphics instance.
+     * @param g the graphics instance
+     */
+    public void drawImage(final Graphics g)
+    {
+        synchronized (buffer)
+        {
+            if (changed)
+            {
+                changed = false;
+                render();
+            }
+
+            g.drawImage(buffer, getX(), getY(), jxcWindow);
+        }
     }
 }

@@ -22,9 +22,6 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 
 /**
@@ -82,21 +79,16 @@ public class GUIPicture extends GUIElement
      */
     public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, float alpha)
     {
-        super(jxcWindow, name, x, y, w, h);
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, image.getTransparency());
+        super(jxcWindow, name, x, y, w, h, image.getTransparency());
         final Graphics2D g = buffer.createGraphics();
-        g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-        g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-        g.dispose();
-        setChanged();
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        throw new AssertionError();
+        try
+        {
+            g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+            g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
+        }
+        finally
+        {
+            g.dispose();
+        }
     }
 }

@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Graphics;
-import java.awt.image.BufferedImage;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.EnumSet;
 import java.util.List;
@@ -226,14 +225,9 @@ public class Gui
             hasChangedElements = false;
             for (final GUIElement element : visibleElements)
             {
-                final BufferedImage bufferedImage = element.getBuffer();
-                synchronized (bufferedImage)
-                {
-                    g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
-                    element.resetChanged();
-                    g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
-                    g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
-                }
+                element.drawImage(g);
+                g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
+                g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
             }
 
             final long t1 = System.currentTimeMillis();
@@ -249,12 +243,7 @@ public class Gui
             hasChangedElements = false;
             for (final GUIElement element : visibleElements)
             {
-                final BufferedImage bufferedImage = element.getBuffer();
-                synchronized (bufferedImage)
-                {
-                    g.drawImage(bufferedImage, element.getX(), element.getY(), jxcWindow);
-                    element.resetChanged();
-                }
+                element.drawImage(g);
             }
         }
     }

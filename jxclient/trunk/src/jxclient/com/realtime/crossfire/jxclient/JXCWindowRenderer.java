@@ -325,12 +325,7 @@ public class JXCWindowRenderer
         {
             if (tooltip.isVisible())
             {
-                final BufferedImage bufferedImage = tooltip.getBuffer();
-                synchronized (bufferedImage)
-                {
-                    g.drawImage(bufferedImage, tooltip.getX(), tooltip.getY(), jxcWindow);
-                    tooltip.resetChanged();
-                }
+                tooltip.drawImage(g);
             }
             else
             {
@@ -502,7 +497,7 @@ public class JXCWindowRenderer
             }
         }
 
-        return tooltip != null && tooltip.hasChanged();
+        return tooltip != null && tooltip.isChanged();
     }
 
     /**

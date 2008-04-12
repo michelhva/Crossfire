@@ -24,9 +24,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -54,29 +51,24 @@ public class GUIButton extends AbstractButton
 
     public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, autoRepeat, commandList);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (imageUp == null) throw new IllegalArgumentException();
         if (imageDown == null) throw new IllegalArgumentException();
         if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
         if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
         this.imageUp = imageUp;
         this.imageDown = imageDown;
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(imageUp.getWidth(), imageUp.getHeight(), Transparency.TRANSLUCENT);
         this.text = text;
         this.font = font;
         this.color = color;
         this.textX = textX;
         this.textY = textY;
-        render();
     }
 
     /** {@inheritDoc} */
     @Override public void activeChanged()
     {
-        render();
+        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -90,11 +82,5 @@ public class GUIButton extends AbstractButton
         {
             g.drawString(text, textX, textY);
         }
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        throw new AssertionError();
     }
 }
