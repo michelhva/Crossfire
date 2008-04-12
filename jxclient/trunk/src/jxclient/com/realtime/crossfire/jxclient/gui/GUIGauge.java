@@ -73,27 +73,27 @@ public class GUIGauge extends GUIElement
     /**
      * The width of the "filled" area.
      */
-    private int fw = 0;
+    private int filledW = 0;
 
     /**
      * The height of the "filled" area.
      */
-    private int fh = 0;
+    private int filledH = 0;
 
     /**
      * The x-coordinate of the "filled" area.
      */
-    private int fx = 0;
+    private int filledX = 0;
 
     /**
      * The y-coordinate of the "filled" area.
      */
-    private int fy = 0;
+    private int filledY = 0;
 
     /**
      * The image for painting the "filled" area.
      */
-    private BufferedImage fPicture = null;
+    private BufferedImage filledPicture = null;
 
     /**
      * The image representing a full gauge.
@@ -209,39 +209,39 @@ public class GUIGauge extends GUIElement
             return;
         }
 
-        int fw;
-        int fh;
-        int fx = 0;
-        int fy = 0;
+        int filledW;
+        int filledH;
+        int filledX = 0;
+        int filledY = 0;
 
         if (curValue < 0 && negativeImage != null)
         {
             switch (orientation)
             {
             case WE:
-                fw = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
-                fh = h;
-                fx = w-fw;
-                draw(fx, fy, fw, fh, negativeImage);
+                filledW = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
+                filledH = h;
+                filledX = w-filledW;
+                draw(filledX, filledY, filledW, filledH, negativeImage);
                 break;
 
             case EW:
-                fw = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
-                fh = h;
-                draw(fx, fy, fw, fh, negativeImage);
+                filledW = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
+                filledH = h;
+                draw(filledX, filledY, filledW, filledH, negativeImage);
                 break;
 
             case NS:
-                fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
-                fw = w;
-                fy = h-fh;
-                draw(fx, fy, fw, fh, negativeImage);
+                filledH = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
+                filledW = w;
+                filledY = h-filledH;
+                draw(filledX, filledY, filledW, filledH, negativeImage);
                 break;
 
             case SN:
-                fh = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
-                fw = w;
-                draw(fx, fy, fw, fh, negativeImage);
+                filledH = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
+                filledW = w;
+                draw(filledX, filledY, filledW, filledH, negativeImage);
                 break;
             }
         }
@@ -250,29 +250,29 @@ public class GUIGauge extends GUIElement
             switch (orientation)
             {
             case WE:
-                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
-                fh = h;
-                draw(fx, fy, fw, fh, fullImage);
+                filledW = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
+                filledH = h;
+                draw(filledX, filledY, filledW, filledH, fullImage);
                 break;
 
             case EW:
-                fw = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
-                fh = h;
-                fx = w-fw;
-                draw(fx, fy, fw, fh, fullImage);
+                filledW = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
+                filledH = h;
+                filledX = w-filledW;
+                draw(filledX, filledY, filledW, filledH, fullImage);
                 break;
 
             case NS:
-                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
-                fw = w;
-                draw(fx, fy, fw, fh, fullImage);
+                filledH = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
+                filledW = w;
+                draw(filledX, filledY, filledW, filledH, fullImage);
                 break;
 
             case SN:
-                fh = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
-                fy = h-fh;
-                fw = w;
-                draw(fx, fy, fw, fh, fullImage);
+                filledH = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
+                filledY = h-filledH;
+                filledW = w;
+                draw(filledX, filledY, filledW, filledH, fullImage);
                 break;
             }
         }
@@ -280,66 +280,68 @@ public class GUIGauge extends GUIElement
 
     /**
      * Draws the given part of a picture to {@link #buffer}.
-     * @param fx the x-coordinate of the area to draw from
-     * <code>fPicture</code>
-     * @param fy the y-coordinate of the area to draw from
-     * <code>fPicture</code>
-     * @param fw the width of the area to draw from <code>fPicture</code>
-     * @param fh the height of the area to draw from <code>fPicture</code>
-     * @param fPicture the picture to draw
+     * @param filledX the x-coordinate of the area to draw from
+     * <code>filledPicture</code>
+     * @param filledY the y-coordinate of the area to draw from
+     * <code>filledPicture</code>
+     * @param filledW the width of the area to draw from
+     * <code>filledPicture</code>
+     * @param filledH the height of the area to draw from
+     * <code>filledPicture</code>
+     * @param filledPicture the picture to draw
      */
-    private void draw(int fx, int fy, int fw, int fh, final BufferedImage fPicture)
+    private void draw(int filledX, int filledY, int filledW, int filledH, final BufferedImage filledPicture)
     {
         assert this.w > 0;
-        if (fx > this.w)
+        if (filledX > this.w)
         {
-            fx = this.w;
-            fw = 0;
+            filledX = this.w;
+            filledW = 0;
         }
         else
         {
-            if (fx < 0)
+            if (filledX < 0)
             {
-                fw -= -fx;
-                fx = 0;
+                filledW -= -filledX;
+                filledX = 0;
             }
 
-            if (fw > this.w)
+            if (filledW > this.w)
             {
-                fw = this.w;
+                filledW = this.w;
             }
         }
 
         assert this.h > 0;
-        if (fy > this.h)
+        if (filledY > this.h)
         {
-            fy = this.h;
-            fh = 0;
+            filledY = this.h;
+            filledH = 0;
         }
         else
         {
-            if (fy < 0)
+            if (filledY < 0)
             {
-                fh -= -fy;
-                fy = 0;
+                filledH -= -filledY;
+                filledY = 0;
             }
 
-            if (fh > this.h)
+            if (filledH > this.h)
             {
-                fh = this.h;
+                filledH = this.h;
             }
         }
 
-        if (this.fx == fx && this.fy == fy && this.fw == fw && this.fh == fh && this.fPicture == fPicture && !mustRepaint())
+        if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture && !mustRepaint())
         {
             return;
         }
 
-        this.fx = fx;
-        this.fy = fy;
-        this.fw = fw;
-        this.fh = fh;
-        this.fPicture = fPicture;
+        this.filledX = filledX;
+        this.filledY = filledY;
+        this.filledW = filledW;
+        this.filledH = filledH;
+        this.filledPicture = filledPicture;
         render();
     }
 
@@ -353,9 +355,9 @@ public class GUIGauge extends GUIElement
         {
             g.drawImage(emptyImage, 0, 0, null);
         }
-        if (fPicture != null)
+        if (filledPicture != null)
         {
-            g.drawImage(fPicture, fx, fy, fx+fw, fy+fh, fx, fy, fx+fw, fy+fh, null);
+            g.drawImage(filledPicture, filledX, filledY, filledX+filledW, filledY+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
         }
     }
 
