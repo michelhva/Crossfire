@@ -80,7 +80,7 @@ public class StatGaugeUpdater extends GaugeUpdater
                 break;
 
             case Stats.CS_STAT_GRACE:
-                setValues(s.getStat(stat), -s.getStat(Stats.CS_STAT_MAXGRACE), s.getStat(Stats.CS_STAT_MAXGRACE));
+                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXGRACE));
                 break;
 
             case Stats.C_STAT_EXP_NEXT_LEVEL:
@@ -102,7 +102,7 @@ public class StatGaugeUpdater extends GaugeUpdater
             default:
                 if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
                 {
-                    setValues(s.getStat(stat), -100, 100);
+                    setValues(s.getStat(stat), 0, 100);
                 }
                 break;
             }

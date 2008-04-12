@@ -132,6 +132,7 @@ public class GUIGauge extends GUIElement
         this.tooltipPrefix = tooltipPrefix;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientation.setExtends(w, h);
+        orientation.setHasNegativeImage(negativeImage != null);
         setValues(0, 0, 0, "", "");
     }
 
@@ -192,48 +193,8 @@ public class GUIGauge extends GUIElement
      * <code>filledPicture</code>
      * @param filledPicture the picture to draw
      */
-    private void draw(int filledX, int filledY, int filledW, int filledH, final BufferedImage filledPicture)
+    private void draw(final int filledX, final int filledY, final int filledW, final int filledH, final BufferedImage filledPicture)
     {
-        assert this.w > 0;
-        if (filledX > this.w)
-        {
-            filledX = this.w;
-            filledW = 0;
-        }
-        else
-        {
-            if (filledX < 0)
-            {
-                filledW -= -filledX;
-                filledX = 0;
-            }
-
-            if (filledW > this.w)
-            {
-                filledW = this.w;
-            }
-        }
-
-        assert this.h > 0;
-        if (filledY > this.h)
-        {
-            filledY = this.h;
-            filledH = 0;
-        }
-        else
-        {
-            if (filledY < 0)
-            {
-                filledH -= -filledY;
-                filledY = 0;
-            }
-
-            if (filledH > this.h)
-            {
-                filledH = this.h;
-            }
-        }
-
         if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture && !mustRepaint())
         {
             return;
