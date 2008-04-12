@@ -34,6 +34,16 @@ public class GaugeState
     private final GUIGauge owner;
 
     /**
+     * The image representing a full gauge.
+     */
+    private final BufferedImage fullImage;
+
+    /**
+     * The image representing a more-than-empty gauge.
+     */
+    private final BufferedImage negativeImage;
+
+    /**
      * The width of the "filled" area.
      */
     private int filledW = 0;
@@ -61,10 +71,15 @@ public class GaugeState
     /**
      * Createss a new instance.
      * @param owner the owner gui element
+     * @param fullImage the image representing a full gauge
+     * @param negativeImage the image representing a more-than-empty gauge; if
+     * set to <code>null</code> the gauge remains in empty state
      */
-    public GaugeState(final GUIGauge owner)
+    public GaugeState(final GUIGauge owner, final BufferedImage fullImage, final BufferedImage negativeImage)
     {
         this.owner = owner;
+        this.fullImage = fullImage;
+        this.negativeImage = negativeImage;
     }
 
     /**
@@ -79,8 +94,14 @@ public class GaugeState
      * <code>filledPicture</code>
      * @param filledPicture the picture to draw
      */
-    public void draw(final int filledX, final int filledY, final int filledW, final int filledH, final BufferedImage filledPicture)
+    public void draw(final Orientation orientation)
     {
+        final int filledX = orientation.getX();
+        final int filledY = orientation.getY();
+        final int filledW = orientation.getW();
+        final int filledH = orientation.getH();
+        final BufferedImage filledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
+
         if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture && !owner.mustRepaint())
         {
             return;
