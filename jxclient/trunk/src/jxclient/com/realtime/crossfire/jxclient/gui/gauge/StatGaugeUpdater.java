@@ -89,14 +89,6 @@ public class StatGaugeUpdater extends GaugeUpdater
                 setValues(perc, 0, 99, perc+"%", s.getExperience()+"/"+getExperience(level+1));
                 break;
 
-            case Stats.C_STAT_EXP_NEXT_LEVEL_0X:
-                setValues(getPercentsToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience())%10, 0, 9);
-                break;
-
-            case Stats.C_STAT_EXP_NEXT_LEVEL_X0:
-                setValues(getPercentsToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience())/10, 0, 9);
-                break;
-
             case Stats.C_STAT_POISONED:
                 setValues(s.getStat(Stats.C_STAT_POISONED), 0, 1);
                 break;

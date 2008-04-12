@@ -100,18 +100,6 @@ public class Stats
     public static final int C_STAT_EXP_NEXT_LEVEL = 0x10000;
 
     /**
-     * The Global Experience needed to reach next level stat; the value is in
-     * percent%10.
-     */
-    public static final int C_STAT_EXP_NEXT_LEVEL_0X = 0x10001;
-
-    /**
-     * The Global Experience needed to reach next level stat; the value is in
-     * percent/10.
-     */
-    public static final int C_STAT_EXP_NEXT_LEVEL_X0 = 0x10002;
-
-    /**
      * The Global Level stat.
      */
     public static final int CS_STAT_LEVEL = 12;
