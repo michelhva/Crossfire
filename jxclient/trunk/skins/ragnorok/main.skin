@@ -6,19 +6,19 @@ map playfield 64 -32 -32 1088 832
 
 # Stat Group
 picture gauge_hp_back          10 10 80 20 gauge_frame
-textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE WHITE font_label Hitpoints:
+textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
 
 picture gauge_sp_back         100 10 80 20 gauge_frame
-textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE WHITE font_label Mana:
+textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
 
 picture gauge_gp_back         190 10 80 20 gauge_frame
-textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE WHITE font_label Grace:
+textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
 
 picture gauge_fp_back         280 10 80 20 gauge_frame
-textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE WHITE font_label Food:
+textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
 
 picture gauge_xp_back         370 10 80 20 gauge_xp_frame
-duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE WHITE font_label Experience:
+duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Experience:
 
 # Hpbar in map view
 picture hpbar_back            478 340 68  7 hpbar_frame
