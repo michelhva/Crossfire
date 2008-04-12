@@ -52,31 +52,6 @@ public class GUIGauge extends GUIElement
     private String tooltipText = "";
 
     /**
-     * The width of the "filled" area.
-     */
-    private int filledW = 0;
-
-    /**
-     * The height of the "filled" area.
-     */
-    private int filledH = 0;
-
-    /**
-     * The x-coordinate of the "filled" area.
-     */
-    private int filledX = 0;
-
-    /**
-     * The y-coordinate of the "filled" area.
-     */
-    private int filledY = 0;
-
-    /**
-     * The image for painting the "filled" area.
-     */
-    private BufferedImage filledPicture = null;
-
-    /**
      * The image representing a full gauge.
      */
     private final BufferedImage fullImage;
@@ -95,6 +70,11 @@ public class GUIGauge extends GUIElement
      * The gauge's orientation.
      */
     private final Orientation orientation;
+
+    /**
+     * The gauge state.
+     */
+    private final GaugeState gaugeState = new GaugeState(this);
 
     /**
      * Creates a new instance.
@@ -161,33 +141,6 @@ public class GUIGauge extends GUIElement
         }
     }
 
-    /**
-     * Draws the given part of a picture to {@link #buffer}.
-     * @param filledX the x-coordinate of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledY the y-coordinate of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledW the width of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledH the height of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledPicture the picture to draw
-     */
-    private void draw(final int filledX, final int filledY, final int filledW, final int filledH, final BufferedImage filledPicture)
-    {
-        if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture && !mustRepaint())
-        {
-            return;
-        }
-
-        this.filledX = filledX;
-        this.filledY = filledY;
-        this.filledW = filledW;
-        this.filledH = filledH;
-        this.filledPicture = filledPicture;
-        setChanged();
-    }
-
     /** {@inheritDoc} */
     @Override protected void render(final Graphics2D g)
     {
@@ -198,10 +151,7 @@ public class GUIGauge extends GUIElement
         {
             g.drawImage(emptyImage, 0, 0, null);
         }
-        if (filledPicture != null)
-        {
-            g.drawImage(filledPicture, filledX, filledY, filledX+filledW, filledY+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
-        }
+        gaugeState.draw(g);
     }
 
     /**
@@ -210,7 +160,7 @@ public class GUIGauge extends GUIElement
      * change.
      * @return whether the gauge should be repainted
      */
-    protected boolean mustRepaint()
+    public boolean mustRepaint()
     {
         return false;
     }
@@ -233,7 +183,7 @@ public class GUIGauge extends GUIElement
         this.labelText = labelText;
         this.tooltipText = tooltipText;
 
-        draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage);
+        gaugeState.draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }

@@ -87,7 +87,7 @@ public class GUITextGauge extends GUIGauge
     }
 
     /** {@inheritDoc} */
-    @Override protected boolean mustRepaint()
+    @Override public boolean mustRepaint()
     {
         return true;
     }
