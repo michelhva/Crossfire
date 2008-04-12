@@ -38,14 +38,16 @@ public class OrientationEW extends AbstractOrientation
     {
         if (isNegativeImage())
         {
-            w = (int)((float)-cur*((float)width/(float)-min)+0.5);
+            w = calc(min-cur, max-min, width);
             h = height;
         }
         else
         {
-            w = (int)((float)Math.min(cur, max)*((float)width/(float)max)+0.5);
-            h = height;
-            x = width-w;
+            w = calc(cur-min, max-min, width);
         }
+        x = width-w;
+
+        y = 0;
+        h = height;
     }
 }

@@ -151,7 +151,7 @@ public abstract class AbstractOrientation implements Orientation
     /** {@inheritDoc} */
     public boolean isNegativeImage()
     {
-        return cur < 0 && hasNegativeImage;
+        return cur < min && hasNegativeImage;
     }
 
     /** {@inheritDoc} */
@@ -160,5 +160,31 @@ public abstract class AbstractOrientation implements Orientation
         return min < max;
     }
 
+    /**
+     * Recalculate the extends of the highlighted image part.
+     */
     protected abstract void recalc();
+
+    /**
+     * Returns the fraction <code>val/max</code> rounded to
+     * [<code>0..width</code>].
+     * @param val the value
+     * @param max the range size
+     * @return the fraction in pixels
+     */
+    protected static int calc(final int val, final int max, final int width)
+    {
+        if (val <= 0 || max <= 0)
+        {
+            return 0;
+        }
+        else if (val >= max)
+        {
+            return width;
+        }
+        else
+        {
+            return (width*val+max/2)/max;
+        }
+    }
 }

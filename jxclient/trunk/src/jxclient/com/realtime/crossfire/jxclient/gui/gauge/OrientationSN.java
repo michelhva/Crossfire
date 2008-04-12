@@ -36,16 +36,17 @@ public class OrientationSN extends AbstractOrientation
     /** {@inheritDoc} */
     @Override protected void recalc()
     {
+        x = 0;
+        w = width;
+
         if (isNegativeImage())
         {
-            h = (int)((float)-cur*((float)height/(float)-min)+0.5);
-            w = width;
+            h = calc(min-cur, max-min, height);
         }
         else
         {
-            h = (int)((float)Math.min(cur, max)*((float)height/(float)max)+0.5);
-            y = height-h;
-            w = width;
+            h = calc(cur-min, max-min, height);
         }
+        y = height-h;
     }
 }
