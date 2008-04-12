@@ -25,6 +25,8 @@ import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gauge.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
+import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
+import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.Orientation;
@@ -691,6 +693,54 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 gui.hideInState(parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
                             }
+                        }
+                        else if (gui != null && args[0].equals("dupgauge"))
+                        {
+                            if (args.length < 12)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final BufferedImage picturePositiveDiv = getPicture(args[6]);
+                            final BufferedImage picturePositiveMod = getPicture(args[7]);
+                            final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final Orientation orientationDiv = parseOrientation(args[10]);
+                            final Orientation orientationMod = parseOrientation(args[11]);
+                            final String tooltipPrefix = parseText(args, 12, lnr);
+                            final GUIDupGauge element = new GUIDupGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+                            elements.insert(name, element);
+                            gaugeUpdater.setGauge(element);
+                        }
+                        else if (gui != null && args[0].equals("duptextgauge"))
+                        {
+                            if (args.length < 14)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final BufferedImage picturePositiveDiv = getPicture(args[6]);
+                            final BufferedImage picturePositiveMod = getPicture(args[7]);
+                            final BufferedImage pictureEmpty = getPicture(args[8]);
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final Orientation orientationDiv = parseOrientation(args[10]);
+                            final Orientation orientationMod = parseOrientation(args[11]);
+                            final Color color = parseColor(args[12]);
+                            final Font font = fonts.lookup(args[13]);
+                            final String tooltipPrefix = parseText(args, 14, lnr);
+                            final GUIDupTextGauge element = new GUIDupTextGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+                            elements.insert(name, element);
+                            gaugeUpdater.setGauge(element);
                         }
                         else if (args[0].equals("event"))
                         {

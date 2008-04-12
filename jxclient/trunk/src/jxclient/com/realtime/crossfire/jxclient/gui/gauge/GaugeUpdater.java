@@ -36,7 +36,7 @@ public abstract class GaugeUpdater
     /**
      * Set the gauge to update.
      */
-    private GUIGauge gauge = null;
+    private GUIGaugeListener gauge = null;
 
     /**
      * Create a new instance.
@@ -53,7 +53,7 @@ public abstract class GaugeUpdater
      *
      * @param gauge The gauge.
      */
-    public void setGauge(final GUIGauge gauge)
+    public void setGauge(final GUIGaugeListener gauge)
     {
         this.gauge = gauge;
     }
@@ -106,5 +106,17 @@ public abstract class GaugeUpdater
     protected int getPercentsToNextLevel(final int level, final long experience)
     {
         return experienceTable.getPercentsToNextLevel(level, experience);
+    }
+
+    /**
+     * Return the experience for the given level.
+     *
+     * @param level The level.
+     *
+     * @return The experience.
+     */
+    protected long getExperience(final int level)
+    {
+        return experienceTable.getExperience(level);
     }
 }
