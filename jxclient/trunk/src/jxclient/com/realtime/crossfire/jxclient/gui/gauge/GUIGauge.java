@@ -185,7 +185,7 @@ public class GUIGauge extends GUIElement
         this.filledW = filledW;
         this.filledH = filledH;
         this.filledPicture = filledPicture;
-        render();
+        setChanged();
     }
 
     /** {@inheritDoc} */
