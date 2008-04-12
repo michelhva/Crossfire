@@ -109,7 +109,7 @@ public class CfMapUpdaterTest extends TestCase
         defineFace(1, "M", png64x64);
         defineFace(2, "_", png32x32);
 
-        CfMapUpdater.processNewmap();
+        CfMapUpdater.processNewmap(5, 5);
         CfMapUpdater.processMapBegin();
         CfMapUpdater.processMapFace(0, 0, 0, 2);
         CfMapUpdater.processMapFace(1, 0, 0, 2);
@@ -152,7 +152,7 @@ public class CfMapUpdaterTest extends TestCase
         defineFace(4607, "woodfloor.111", png32x32);
         defineFace(312, "behemoth.x73", png64x64);
 
-        CfMapUpdater.processNewmap();
+        CfMapUpdater.processNewmap(10, 10);
         CfMapUpdater.processMapBegin();
         CfMapUpdater.processMapFace(7, 8, 0, 4607);
         CfMapUpdater.processMapFace(8, 8, 0, 4607);
