@@ -409,15 +409,6 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Returns the displayed value.
-     * @return the displayed value
-     */
-    public int getCurValue()
-    {
-        return curValue;
-    }
-
-    /**
      * Returns the label text.
      * @return the label text
      */
