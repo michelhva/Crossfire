@@ -52,16 +52,6 @@ public class GUIGauge extends GUIElement
     private String tooltipText = "";
 
     /**
-     * The image representing a full gauge.
-     */
-    private final BufferedImage fullImage;
-
-    /**
-     * The image representing a more-than-empty gauge.
-     */
-    private final BufferedImage negativeImage;
-
-    /**
      * The image representing an empty gauge.
      */
     private final BufferedImage emptyImage;
@@ -74,7 +64,7 @@ public class GUIGauge extends GUIElement
     /**
      * The gauge state.
      */
-    private final GaugeState gaugeState = new GaugeState(this);
+    private final GaugeState gaugeState;
 
     /**
      * Creates a new instance.
@@ -101,11 +91,10 @@ public class GUIGauge extends GUIElement
         checkSize(fullImage, "full", w, h);
         checkSize(negativeImage, "negative", w, h);
         checkSize(emptyImage, "empty", w, h);
-        this.fullImage = fullImage;
-        this.negativeImage = negativeImage;
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
+        gaugeState = new GaugeState(this, fullImage, negativeImage);
         tooltipText = "-";      // make sure the following setValues() does not short-cut
         orientation.setExtends(w, h);
         orientation.setHasNegativeImage(negativeImage != null);
@@ -183,7 +172,7 @@ public class GUIGauge extends GUIElement
         this.labelText = labelText;
         this.tooltipText = tooltipText;
 
-        gaugeState.draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage);
+        gaugeState.draw(orientation);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
