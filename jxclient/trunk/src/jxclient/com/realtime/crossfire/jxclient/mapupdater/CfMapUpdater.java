@@ -428,9 +428,9 @@ public class CfMapUpdater
      */
     public static void processNewmap(final int width, final int height)
     {
-	CfMapUpdater.width = width;
-	CfMapUpdater.height = height;
-	map = new CfMap();
+        CfMapUpdater.width = width;
+        CfMapUpdater.height = height;
+        map = new CfMap();
 
         // force dirty flags to be set for the visible map region
         map.clearSquare(0, 0);
