@@ -44,6 +44,11 @@ public class GUITextGauge extends GUIGauge
     private final Font font;
 
     /**
+     * The label text.
+     */
+    private String labelText = "";
+
+    /**
      * Creates a new instance.
      * @param jxcWindow the <code>JXCWindow</code> this element belongs to.
      * @param name the name of this element
@@ -81,14 +86,16 @@ public class GUITextGauge extends GUIGauge
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setColor(color);
         g.setFont(font);
-        final String text = getLabelText();
+        final String text = labelText;
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
     }
 
     /** {@inheritDoc} */
-    @Override public boolean mustRepaint()
+    @Override public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        return true;
+        super.setValues(curValue, minValue, maxValue, labelText, tooltipText);
+        this.labelText = labelText;
+        setChanged();
     }
 }

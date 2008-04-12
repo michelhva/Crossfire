@@ -102,7 +102,7 @@ public class GaugeState
         final int filledH = orientation.getH();
         final BufferedImage filledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
 
-        if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture && !owner.mustRepaint())
+        if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture)
         {
             return;
         }
