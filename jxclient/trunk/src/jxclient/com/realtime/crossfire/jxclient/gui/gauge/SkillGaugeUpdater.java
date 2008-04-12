@@ -17,35 +17,41 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.ItemsList;
-import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skills.SkillListener;
 
 /**
- * A {@link GaugeUpdater} which monitors a stat value.
+ * A {@link GaugeUpdater} which monitors a skill.
  *
  * @author Andreas Kirschbaum
  */
-public class ActiveSkillGaugeUpdater extends GaugeUpdater
+public class SkillGaugeUpdater extends GaugeUpdater
 {
     /**
-     * The skill name to monitor.
+     * The {@link SkillListener} registered to be notified about skill changes.
      */
-    private final String skill;
-
-    /**
-     * The {@link CrossfireStatsListener} registered to be notified about stat
-     * changes.
-     */
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    private final SkillListener skillListener = new SkillListener()
     {
         /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        public void addSkill(final Skill skill)
         {
-            setValues(evt.getStats().getActiveSkill().equals(skill) ? 1 : 0, 0, 1);
+            updSkill(skill);
+        }
+
+        /** {@inheritDoc} */
+        public void delSkill(final Skill skill)
+        {
+            setValues(0, 0, 0, "", "");
+        }
+
+        /** {@inheritDoc} */
+        public void updSkill(final Skill skill)
+        {
+            final int percents = getPercentsToNextLevel(skill.getLevel(), skill.getExperience());
+            setValues(percents, 0, 99, Integer.toString(skill.getLevel()), percents+"% "+skill.getExperience()+" (lvl "+skill.getLevel()+")");
         }
     };
 
@@ -54,12 +60,11 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
      *
      * @param experienceTable The experience table to query.
      *
-     * @param skill The skill name to monitor.
+     * @param skill The skill to monitor.
      */
-    public ActiveSkillGaugeUpdater(final ExperienceTable experienceTable, final String skill)
+    public SkillGaugeUpdater(final ExperienceTable experienceTable, final Skill skill)
     {
         super(experienceTable);
-        this.skill = skill;
-        ItemsList.getStats().addCrossfireStatsListener(crossfireStatsListener);
+        skill.addSkillListener(skillListener);
     }
 }
