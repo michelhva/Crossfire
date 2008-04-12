@@ -35,11 +35,6 @@ import java.awt.Transparency;
 public class GUIGauge extends GUIElement
 {
     /**
-     * The label text.
-     */
-    private String labelText = "";
-
-    /**
      * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
      * tooltip.
      */
@@ -144,17 +139,6 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Returns whether the gauge has been changed and must be repainted. May be
-     * overridden in sub-classes to force repaints even if the value didn't
-     * change.
-     * @return whether the gauge should be repainted
-     */
-    public boolean mustRepaint()
-    {
-        return false;
-    }
-
-    /**
      * Sets the values to display.
      * @param curValue the values to display
      * @param minValue the minium possible value
@@ -164,25 +148,15 @@ public class GUIGauge extends GUIElement
      */
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        if (!orientation.setValues(curValue, minValue, maxValue) && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText))
+        if (!orientation.setValues(curValue, minValue, maxValue) && this.tooltipText.equals(tooltipText))
         {
             return;
         }
 
-        this.labelText = labelText;
         this.tooltipText = tooltipText;
 
         gaugeState.draw(orientation);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
-    }
-
-    /**
-     * Returns the label text.
-     * @return the label text
-     */
-    public String getLabelText()
-    {
-        return labelText;
     }
 }
