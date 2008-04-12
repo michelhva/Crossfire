@@ -38,23 +38,6 @@ import java.awt.Transparency;
 public class GUIGauge extends GUIElement
 {
     /**
-     * The current value.
-     */
-    private int curValue = 0;
-
-    /**
-     * The maximum value; the gauge is displayed as full if <code>{@link
-     * #curValue} &gt;= maxValue</code>.
-     */
-    private int maxValue = -1;
-
-    /**
-     * The minimum value; the gauge is displayed as empty if <code>{@link
-     * #curValue} &gt;= minValue</code>.
-     */
-    private int minValue = 0;
-
-    /**
      * The label text.
      */
     private String labelText = "";
@@ -117,24 +100,6 @@ public class GUIGauge extends GUIElement
     private final Orientation orientation;
 
     /**
-     * A gauge's orientation.
-     */
-    public enum Orientation
-    {
-        /** Gauge fills west-&gt;east. */
-        WE,
-
-        /** Gauge fills east-&gt;west. */
-        EW,
-
-        /** Gauge fills north-&gt;south. */
-        NS,
-
-        /** Gauge fills south-&gt;north. */
-        SN,
-    }
-
-    /**
      * Creates a new instance.
      * @param jxcWindow the <code>JXCWindow</code> this element belongs to
      * @param name the name of this element
@@ -166,6 +131,7 @@ public class GUIGauge extends GUIElement
         this.orientation = orientation;
         this.tooltipPrefix = tooltipPrefix;
         tooltipText = "-";      // make sure the following setValues() does not short-cut
+        orientation.setExtends(w, h);
         setValues(0, 0, 0, "", "");
     }
 
@@ -204,78 +170,13 @@ public class GUIGauge extends GUIElement
      */
     public void updateValues()
     {
-        if (maxValue <= minValue)
+        if (!orientation.isValid())
         {
             draw(0, 0, 0, 0, null);
-            return;
-        }
-
-        int filledW;
-        int filledH;
-        int filledX = 0;
-        int filledY = 0;
-
-        if (curValue < 0 && negativeImage != null)
-        {
-            switch (orientation)
-            {
-            case WE:
-                filledW = (int)((float)(-curValue)*((float)w/(float)-minValue)+0.5);
-                filledH = h;
-                filledX = w-filledW;
-                draw(filledX, filledY, filledW, filledH, negativeImage);
-                break;
-
-            case EW:
-                filledW = (int)((float)-curValue*((float)w/(float)-minValue)+0.5);
-                filledH = h;
-                draw(filledX, filledY, filledW, filledH, negativeImage);
-                break;
-
-            case NS:
-                filledH = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
-                filledW = w;
-                filledY = h-filledH;
-                draw(filledX, filledY, filledW, filledH, negativeImage);
-                break;
-
-            case SN:
-                filledH = (int)((float)-curValue*((float)h/(float)-minValue)+0.5);
-                filledW = w;
-                draw(filledX, filledY, filledW, filledH, negativeImage);
-                break;
-            }
         }
         else
         {
-            switch (orientation)
-            {
-            case WE:
-                filledW = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
-                filledH = h;
-                draw(filledX, filledY, filledW, filledH, fullImage);
-                break;
-
-            case EW:
-                filledW = (int)((float)Math.min(curValue, maxValue)*((float)w/(float)maxValue)+0.5);
-                filledH = h;
-                filledX = w-filledW;
-                draw(filledX, filledY, filledW, filledH, fullImage);
-                break;
-
-            case NS:
-                filledH = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
-                filledW = w;
-                draw(filledX, filledY, filledW, filledH, fullImage);
-                break;
-
-            case SN:
-                filledH = (int)((float)Math.min(curValue, maxValue)*((float)h/(float)maxValue)+0.5);
-                filledY = h-filledH;
-                filledW = w;
-                draw(filledX, filledY, filledW, filledH, fullImage);
-                break;
-            }
+            draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), orientation.isNegativeImage() ? negativeImage : fullImage);
         }
     }
 
@@ -383,14 +284,11 @@ public class GUIGauge extends GUIElement
      */
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        if (this.curValue == curValue && this.minValue == minValue && this.maxValue == maxValue && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText))
+        if (!orientation.setValues(curValue, minValue, maxValue) && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText))
         {
             return;
         }
 
-        this.curValue = curValue;
-        this.minValue = minValue;
-        this.maxValue = maxValue;
         this.labelText = labelText;
         this.tooltipText = tooltipText;
         updateValues();
