@@ -59,6 +59,12 @@ public class GUIGauge extends GUIElement
     private String labelText = "";
 
     /**
+     * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
+     * tooltip.
+     */
+    private final String tooltipPrefix;
+
+    /**
      * The tooltip suffix. It is appended to {@link #tooltipPrefix} to form the
      * tooltip.
      */
@@ -108,12 +114,6 @@ public class GUIGauge extends GUIElement
      * The gauge's orientation.
      */
     private final Orientation orientation;
-
-    /**
-     * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
-     * tooltip.
-     */
-    private final String tooltipPrefix;
 
     /**
      * A gauge's orientation.
@@ -179,7 +179,7 @@ public class GUIGauge extends GUIElement
      * @throws IllegalArgumentException if <code>image</code> is not
      * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
-    static void checkSize(final BufferedImage image, final String name, final int w, final int h)
+    private static void checkSize(final BufferedImage image, final String name, final int w, final int h)
     {
         if (image == null)
         {
@@ -355,7 +355,7 @@ public class GUIGauge extends GUIElement
         }
         if (fPicture != null)
         {
-            g.drawImage(fPicture, fx, fy, fw+fx, fh+fy, fx, fy, fw+fx, fh+fy, null);
+            g.drawImage(fPicture, fx, fy, fx+fw, fy+fh, fx, fy, fx+fw, fy+fh, null);
         }
     }
 
