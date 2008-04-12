@@ -84,7 +84,9 @@ public class StatGaugeUpdater extends GaugeUpdater
                 break;
 
             case Stats.C_STAT_EXP_NEXT_LEVEL:
-                setValues(getPercentsToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience()), 0, 99);
+                final int level = s.getStat(Stats.CS_STAT_LEVEL);
+                final int perc = getPercentsToNextLevel(level, s.getExperience());
+                setValues(perc, 0, 99, perc+"%", s.getExperience()+"/"+getExperience(level+1));
                 break;
 
             case Stats.C_STAT_EXP_NEXT_LEVEL_0X:

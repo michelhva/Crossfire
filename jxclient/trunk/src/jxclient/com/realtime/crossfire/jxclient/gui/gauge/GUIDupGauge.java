@@ -29,11 +29,15 @@ import java.awt.Transparency;
 /**
  * Displays a value as a graphical gauge that's filling state depends on the
  * value.
- * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUIGauge extends GUIElement implements GUIGaugeListener
+public class GUIDupGauge extends GUIElement implements GUIGaugeListener
 {
+    /**
+     * The label text.
+     */
+    private String labelText = "";
+
     /**
      * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
      * tooltip.
@@ -54,12 +58,22 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     /**
      * The gauge's orientation.
      */
-    private final Orientation orientation;
+    private final Orientation orientationDiv;
+
+    /**
+     * The gauge's orientation.
+     */
+    private final Orientation orientationMod;
 
     /**
      * The gauge state.
      */
-    private final GaugeState gaugeState;
+    private final GaugeState gaugeStateDiv;
+
+    /**
+     * The gauge state.
+     */
+    private final GaugeState gaugeStateMod;
 
     /**
      * Creates a new instance.
@@ -71,29 +85,31 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * relative to <code>gui</code>
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param fullImage the image representing a full gauge
-     * @param negativeImage the image representing a more-than-empty gauge; if
-     * set to <code>null</code> the gauge remains in empty state
+     * @param fullImageDiv the top image
+     * @param fullImageMod the bottom image
      * @param emptyImage the image representing an empty gauge; if set to
      * <code>null</code> an empty background is used instead
-     * @param orientation the gauge's orientation
+     * @param orientationDiv the gauge's orientation
+     * @param orientationMod the gauge's orientation
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImage, final BufferedImage negativeImage, final BufferedImage emptyImage, final Orientation orientation, final String tooltipPrefix)
+    public GUIDupGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImageDiv, final BufferedImage fullImageMod, final BufferedImage emptyImage, final Orientation orientationDiv, final Orientation orientationMod, final String tooltipPrefix)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
-        checkSize(fullImage, "full", w, h);
-        checkSize(negativeImage, "negative", w, h);
+        checkSize(fullImageDiv, "full-div", w, h/2);
+        checkSize(fullImageMod, "full-mod", w, h/2);
         checkSize(emptyImage, "empty", w, h);
         this.emptyImage = emptyImage;
-        this.orientation = orientation;
+        this.orientationDiv = orientationDiv;
+        this.orientationMod = orientationMod;
         this.tooltipPrefix = tooltipPrefix;
-        gaugeState = new GaugeState(this, fullImage, negativeImage, 0, 0);
+        gaugeStateDiv = new GaugeState(this, fullImageDiv, null, 0, 0);
+        gaugeStateMod = new GaugeState(this, fullImageMod, null, 0, h/2);
         tooltipText = "-";      // make sure the following setValues() does not short-cut
-        orientation.setExtends(w, h);
-        orientation.setHasNegativeImage(negativeImage != null);
-        setValues(0, 0, 0, "", "");
+        orientationDiv.setExtends(w, h);
+        orientationMod.setExtends(w, h);
+        setValues(0, 0, 99, "", "");
     }
 
     /**
@@ -135,21 +151,38 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
         {
             g.drawImage(emptyImage, 0, 0, null);
         }
-        gaugeState.draw(g);
+        gaugeStateDiv.draw(g);
+        gaugeStateMod.draw(g);
     }
 
     /** {@inheritDoc} */
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
-        if (!orientation.setValues(curValue, minValue, maxValue) && this.tooltipText.equals(tooltipText))
+        if (minValue != 0) throw new IllegalArgumentException();
+        if (maxValue != 99) throw new IllegalArgumentException();
+        if (!orientationDiv.setValues(curValue/10, 0, 9)
+        && !orientationMod.setValues(curValue%10, 0, 9)
+        && this.labelText.equals(labelText)
+        && this.tooltipText.equals(tooltipText))
         {
             return;
         }
 
+        this.labelText = labelText;
         this.tooltipText = tooltipText;
 
-        gaugeState.draw(orientation);
+        gaugeStateDiv.draw(orientationDiv);
+        gaugeStateMod.draw(orientationMod);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
+    }
+
+    /**
+     * Returns the label text.
+     * @return the label text
+     */
+    public String getLabelText()
+    {
+        return labelText;
     }
 }

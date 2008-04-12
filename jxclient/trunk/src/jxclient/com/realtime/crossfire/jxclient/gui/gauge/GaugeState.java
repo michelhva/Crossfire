@@ -45,6 +45,16 @@ public class GaugeState
     private final BufferedImage negativeImage;
 
     /**
+     * The x-offset for drawing.
+     */
+    private final int dx;
+
+    /**
+     * The y-offset for drawing.
+     */
+    private final int dy;
+
+    /**
      * The width of the "filled" area.
      */
     private int filledW = 0;
@@ -75,25 +85,21 @@ public class GaugeState
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
      * set to <code>null</code> the gauge remains in empty state
+     * @param dx the x-offset for drawing
+     * @param dy the y-offset for drawing
      */
-    public GaugeState(final GUIElement owner, final BufferedImage fullImage, final BufferedImage negativeImage)
+    public GaugeState(final GUIElement owner, final BufferedImage fullImage, final BufferedImage negativeImage, final int dx, final int dy)
     {
         this.owner = owner;
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
+        this.dx = dx;
+        this.dy = dy;
     }
 
     /**
      * Draws the given part of a picture to {@link #buffer}.
-     * @param filledX the x-coordinate of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledY the y-coordinate of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledW the width of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledH the height of the area to draw from
-     * <code>filledPicture</code>
-     * @param filledPicture the picture to draw
+     * @param orientation the state
      */
     public void draw(final Orientation orientation)
     {
@@ -124,7 +130,7 @@ public class GaugeState
     {
         if (filledPicture != null)
         {
-            g.drawImage(filledPicture, filledX, filledY, filledX+filledW, filledY+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
+            g.drawImage(filledPicture, filledX+dx, filledY+dy, filledX+dx+filledW, filledY+dy+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
         }
     }
 }

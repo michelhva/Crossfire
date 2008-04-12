@@ -18,8 +18,7 @@ picture gauge_fp_back         280 10 80 20 gauge_frame
 textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE WHITE font_label Food:
 
 picture gauge_xp_back         370 10 80 20 gauge_xp_frame
-gauge gauge_xp1               373 13 74  7 gauge_xp1 null gauge_xp1_empty EXP_NEXT_LEVEL_0X WE
-gauge gauge_xp2               373 20 74  7 gauge_xp2 null gauge_xp2_empty EXP_NEXT_LEVEL_X0 WE
+duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE WHITE font_label Experience:
 
 # Hpbar in map view
 picture hpbar_back            478 340 68  7 hpbar_frame
