@@ -162,22 +162,6 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Updates the cached graphical state ({@link #buffer}) to reflect the
-     * current values.
-     */
-    public void updateValues()
-    {
-        if (!orientation.isValid())
-        {
-            draw(0, 0, 0, 0, null);
-        }
-        else
-        {
-            draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), orientation.isNegativeImage() ? negativeImage : fullImage);
-        }
-    }
-
-    /**
      * Draws the given part of a picture to {@link #buffer}.
      * @param filledX the x-coordinate of the area to draw from
      * <code>filledPicture</code>
@@ -248,7 +232,8 @@ public class GUIGauge extends GUIElement
 
         this.labelText = labelText;
         this.tooltipText = tooltipText;
-        updateValues();
+
+        draw(orientation.getX(), orientation.getY(), orientation.getW(), orientation.getH(), !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
