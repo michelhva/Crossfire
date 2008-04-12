@@ -27,6 +27,8 @@ import com.realtime.crossfire.jxclient.gui.gauge.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUITextGauge;
+import com.realtime.crossfire.jxclient.gui.gauge.Orientation;
+import com.realtime.crossfire.jxclient.gui.gauge.OrientationParser;
 import com.realtime.crossfire.jxclient.gui.gauge.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.Gui;
@@ -858,7 +860,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
-                            final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
+                            final Orientation orientation = parseOrientation(args[10]);
                             final String tooltipPrefix = parseText(args, 11, lnr);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             elements.insert(name, element);
@@ -1375,7 +1377,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
-                            final GUIGauge.Orientation orientation = parseEnum(GUIGauge.Orientation.class, args[10], "orientation");
+                            final Orientation orientation = parseOrientation(args[10]);
                             final Color color = parseColor(args[11]);
                             final Font font = fonts.lookup(args[12]);
                             final String tooltipPrefix = parseText(args, 13, lnr);
@@ -1639,6 +1641,29 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         throw new IOException("invalid stat name: "+name);
+    }
+
+    /**
+     * Parse a orientation value.
+     *
+     * @param name The orientation value to parse.
+     *
+     * @return The orientation.
+     *
+     * @throws IOException if the orientation value does not exist.
+     */
+    private static Orientation parseOrientation(final String name) throws IOException
+    {
+        try
+        {
+            return OrientationParser.parseOrientation(name);
+        }
+        catch (final IllegalArgumentException ex)
+        {
+            // ignore
+        }
+
+        throw new IOException("invalid orientation: "+name);
     }
 
     /**
