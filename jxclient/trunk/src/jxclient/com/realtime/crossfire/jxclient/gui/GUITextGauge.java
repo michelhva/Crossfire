@@ -27,8 +27,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
 /**
- * A {@link GUIGauge} which displays the current value on top of the gauge.
- *
+ * A {@link GUIGauge} which displays the current value as a text string on top
+ * of the gauge.
  * @author Andreas Kirschbaum
  */
 public class GUITextGauge extends GUIGauge
@@ -44,33 +44,20 @@ public class GUITextGauge extends GUIGauge
     private final Font font;
 
     /**
-     * Create a new instance.
-     *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param pictureFull The image for positive values.
-     *
-     * @param pictureNegative The image for negative values.
-     *
-     * @param pictureEmpty The image for an empty gauge.
-     *
-     * @param orientation The gauge's orientation.
-     *
-     * @param tooltipPrefix The prefix for generating a tooltip.
-     *
-     * @param color The text color.
-     *
-     * @param font The text font.
+     * Creates a new instance.
+     * @param jxcWindow the <code>JXCWindow</code> this element belongs to.
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param pictureFull the image for positive values
+     * @param pictureNegative the image for negative values
+     * @param pictureEmpty the image for an empty gauge
+     * @param orientation the gauge's orientation
+     * @param tooltipPrefix the prefix for generating a tooltip
+     * @param color the text color
+     * @param font the text font
      */
     public GUITextGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
     {
