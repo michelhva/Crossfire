@@ -29,18 +29,28 @@ import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
 /**
- *
- * @version 1.0
+ * Displays a value as a graphical gauge that's filling state depends on the
+ * value.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
- * @since 1.0
  */
 public class GUIGauge extends GUIElement
 {
+    /**
+     * The current value.
+     */
     private int curValue = 0;
 
+    /**
+     * The maximum value; the gauge is displayed as full if <code>{@link
+     * #curValue} &gt;= maxValue</code>.
+     */
     private int maxValue = -1;
 
+    /**
+     * The minimum value; the gauge is displayed as empty if <code>{@link
+     * #curValue} &gt;= minValue</code>.
+     */
     private int minValue = 0;
 
     /**
@@ -49,39 +59,99 @@ public class GUIGauge extends GUIElement
     private String labelText = "";
 
     /**
-     * The tooltip suffix. If is appended to {@link #tooltipPrefix} to form the
+     * The tooltip suffix. It is appended to {@link #tooltipPrefix} to form the
      * tooltip.
      */
     private String tooltipText = "";
 
+    /**
+     * The width of the "filled" area.
+     */
     private int fw = 0;
 
+    /**
+     * The height of the "filled" area.
+     */
     private int fh = 0;
 
+    /**
+     * The x-coordinate of the "filled" area.
+     */
     private int fx = 0;
 
+    /**
+     * The y-coordinate of the "filled" area.
+     */
     private int fy = 0;
 
+    /**
+     * The image for painting the "filled" area.
+     */
     private BufferedImage fPicture = null;
 
+    /**
+     * The image representing a full gauge.
+     */
     private final BufferedImage fullImage;
 
+    /**
+     * The image representing a more-than-empty gauge.
+     */
     private final BufferedImage negativeImage;
 
+    /**
+     * The image representing an empty gauge.
+     */
     private final BufferedImage emptyImage;
 
+    /**
+     * The gauge's orientation.
+     */
     private final Orientation orientation;
 
+    /**
+     * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
+     * tooltip.
+     */
     private final String tooltipPrefix;
 
+    /**
+     * A gauge's orientation.
+     */
     public enum Orientation
     {
+        /** Gauge fills west-&gt;east. */
         WE,
+
+        /** Gauge fills east-&gt;west. */
         EW,
+
+        /** Gauge fills north-&gt;south. */
         NS,
+
+        /** Gauge fills south-&gt;north. */
         SN,
     }
 
+    /**
+     * Creates a new instance.
+     * @param jxcWindow the <code>JXCWindow</code> this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param fullImage the image representing a full gauge
+     * @param negativeImage the image representing a more-than-empty gauge; if
+     * set to <code>null</code> the gauge remains in empty state
+     * @param emptyImage the image representing an empty gauge; if set to
+     * <code>null</code> an empty background is used instead
+     * @param orientation the gauge's orientation
+     * @param tooltipPrefix the prefix for displaying tooltips; if set to
+     * <code>null</code> no tooltips are shown
+     */
     public GUIGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImage, final BufferedImage negativeImage, final BufferedImage emptyImage, final Orientation orientation, final String tooltipPrefix)
     {
         super(jxcWindow, name, x, y, w, h);
@@ -99,18 +169,15 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Compare the image size to the given values.
-     *
-     * @param image The image to process.
-     *
-     * @param name The image name for generating error messages.
-     *
-     * @param w The expected image width.
-     *
-     * @param h The expected image height.
-     *
-     * @throws IllegalArgumentException If <code>image</code> is not
-     * <code>null</code> and it's size is not <code>w</code>x<code>h</code>.
+     * Validates an images's size: checks if the given image has the given size
+     * (in pixels).
+     * @param image the image to validate; if set to <code>null</code> no
+     * exception is thrown
+     * @param name the image's name for generating error messages
+     * @param w the expected image width
+     * @param h the expected image height
+     * @throws IllegalArgumentException if <code>image</code> is not
+     * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
     static void checkSize(final BufferedImage image, final String name, final int w, final int h)
     {
@@ -130,6 +197,10 @@ public class GUIGauge extends GUIElement
         }
     }
 
+    /**
+     * Updates the cached graphical state ({@link #buffer}) to reflect the
+     * current values.
+     */
     public void updateValues()
     {
         if (maxValue <= minValue)
@@ -208,19 +279,14 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Draw the given part of a picture to {@link #buffer}.
-     *
-     * @param fx The x-coordinate of the area to draw from
-     * <code>fPicture</code>.
-     *
-     * @param fy The y-coordinate of the area to draw from
-     * <code>fPicture</code>.
-     *
-     * @param fw The width of the area to draw from <code>fPicture</code>.
-     *
-     * @param fh The height of the area to draw from <code>fPicture</code>.
-     *
-     * @param fPicture The picture to draw.
+     * Draws the given part of a picture to {@link #buffer}.
+     * @param fx the x-coordinate of the area to draw from
+     * <code>fPicture</code>
+     * @param fy the y-coordinate of the area to draw from
+     * <code>fPicture</code>
+     * @param fw the width of the area to draw from <code>fPicture</code>
+     * @param fh the height of the area to draw from <code>fPicture</code>
+     * @param fPicture the picture to draw
      */
     private void draw(int fx, int fy, int fw, int fh, final BufferedImage fPicture)
     {
@@ -294,10 +360,10 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * May be overridden in sub-classes to force repaints even if the value
-     * didn't change.
-     *
-     * @return Whether the gauge should be repainted.
+     * Returns whether the gauge has been changed and must be repainted. May be
+     * overridden in sub-classes to force repaints even if the value didn't
+     * change.
+     * @return whether the gauge should be repainted
      */
     protected boolean mustRepaint()
     {
@@ -305,17 +371,12 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Change the displayed values.
-     *
-     * @param curValue The values to display.
-     *
-     * @param minValue The minium possible value.
-     *
-     * @param maxValue The maximum possible value.
-     *
-     * @param labelText The label text.
-     *
-     * @param tooltipText The tooltip suffix.
+     * Sets the values to display.
+     * @param curValue the values to display
+     * @param minValue the minium possible value
+     * @param maxValue the maximum possible value
+     * @param labelText the label text
+     * @param tooltipText the tooltip suffix
      */
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
@@ -345,9 +406,8 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Return the displayed value.
-     *
-     * @return The displayed value.
+     * Returns the displayed value.
+     * @return the displayed value
      */
     public int getCurValue()
     {
@@ -355,9 +415,8 @@ public class GUIGauge extends GUIElement
     }
 
     /**
-     * Return the label text.
-     *
-     * @return The label text.
+     * Returns the label text.
+     * @return the label text
      */
     public String getLabelText()
     {
