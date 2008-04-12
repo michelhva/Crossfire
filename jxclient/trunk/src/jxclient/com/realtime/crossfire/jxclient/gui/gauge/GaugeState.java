@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 
@@ -31,7 +32,7 @@ public class GaugeState
     /**
      * The owner gui element.
      */
-    private final GUIGauge owner;
+    private final GUIElement owner;
 
     /**
      * The image representing a full gauge.
@@ -75,7 +76,7 @@ public class GaugeState
      * @param negativeImage the image representing a more-than-empty gauge; if
      * set to <code>null</code> the gauge remains in empty state
      */
-    public GaugeState(final GUIGauge owner, final BufferedImage fullImage, final BufferedImage negativeImage)
+    public GaugeState(final GUIElement owner, final BufferedImage fullImage, final BufferedImage negativeImage)
     {
         this.owner = owner;
         this.fullImage = fullImage;
