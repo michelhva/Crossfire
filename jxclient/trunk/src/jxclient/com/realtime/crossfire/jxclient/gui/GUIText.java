@@ -27,9 +27,6 @@ import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -76,7 +73,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
@@ -85,7 +82,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.activeColor = activeColor;
         this.margin = margin;
         this.text = new StringBuilder(text);
-        createBuffer();
         setCursor(this.text.length());
     }
 
@@ -148,7 +144,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         {
         case MouseEvent.BUTTON1:
             setActive(true);
-            render();
+            setChanged();
             break;
 
         case MouseEvent.BUTTON2:
@@ -162,7 +158,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /** {@inheritDoc} */
     @Override protected void activeChanged()
     {
-        render();
+        setChanged();
     }
 
     public void keyPressed(final KeyEvent e)
@@ -181,7 +177,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             if (cursor < text.length())
             {
                 text.delete(cursor, cursor+1);
-                render();
+                setChanged();
             }
             break;
 
@@ -249,16 +245,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     protected abstract void execute(final JXCWindow jxcWindow, final String command);
 
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        setChanged();
-    }
-
     /**
      * Enable or disable hidden text.
      *
@@ -269,7 +255,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         if (this.hideInput != hideInput)
         {
             this.hideInput = hideInput;
-            render();
+            setChanged();
         }
     }
 
@@ -323,6 +309,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         }
 
         this.cursor = cursor;
-        render();
+        setChanged();
     }
 }

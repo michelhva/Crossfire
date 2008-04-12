@@ -77,14 +77,16 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param h The height for drawing this element to screen.
      *
+     * @param transparency The transparency value for the backing buffer
+     *
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    public AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean autoRepeat, final GUICommandList commandList)
+    public AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;

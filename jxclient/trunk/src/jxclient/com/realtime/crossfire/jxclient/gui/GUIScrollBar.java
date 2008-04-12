@@ -23,9 +23,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 
 /**
@@ -110,19 +107,13 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     public GUIScrollBar(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
         if (scrollable == null) throw new IllegalArgumentException();
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
         this.colorBackground = colorBackground;
         this.colorForeground = colorForeground;
         scrollable.addScrollableListener(this);
-
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.OPAQUE);
-        render();
     }
 
     /** {@inheritDoc} */
@@ -222,7 +213,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         {
             sliderPos = pos;
         }
-        render();
+        setChanged();
     }
 
     /**
@@ -257,11 +248,5 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         g.fillRect(0, sy+sh, w, h-sy-sh);
         g.setColor(colorForeground);
         g.fillRect(0, sy, w, sh);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        throw new AssertionError();
     }
 }

@@ -27,9 +27,6 @@ import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -101,7 +98,7 @@ public class GUICheckBox extends ActivatableGUIElement
      */
     public GUICheckBox(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (checkedImage == null) throw new IllegalArgumentException("missing checked image");
         if (uncheckedImage == null) throw new IllegalArgumentException("missing unchecked image");
         if (checkedImage.getHeight() != h) throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
@@ -120,20 +117,14 @@ public class GUICheckBox extends ActivatableGUIElement
         this.font = font;
         this.color = color;
         this.option = option;
-
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
         option.addOptionListener(new OptionListener()
             {
                 /** {@inheritDoc} */
                 public void stateChanged()
                 {
-                    render();
+                    setChanged();
                 }
             });
-        render();
     }
 
     /** {@inheritDoc} */
@@ -147,12 +138,6 @@ public class GUICheckBox extends ActivatableGUIElement
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        throw new AssertionError();
     }
 
     /** {@inheritDoc} */

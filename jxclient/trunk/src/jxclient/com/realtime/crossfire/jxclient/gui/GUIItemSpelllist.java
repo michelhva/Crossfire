@@ -80,7 +80,6 @@ public class GUIItemSpelllist extends GUIItem
         this.defaultIndex = index;
         setIndex(index);
         ItemsList.getSpellsManager().addCrossfireSpellChangedListener(crossfireSpellChangedListener);
-        render();
     }
 
     /** {@inheritDoc} */
@@ -105,7 +104,7 @@ public class GUIItemSpelllist extends GUIItem
     public void scroll(final int distance)
     {
         setIndex(index+distance);
-        render();
+        setChanged();
     }
 
     /* {@inheritDoc} */
@@ -164,7 +163,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         this.spell = spell;
-        render();
+        setChanged();
 
         setTooltipText(spell == null ? null : spell.getTooltipText());
     }

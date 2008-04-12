@@ -47,7 +47,7 @@ public class GUIItemShortcut extends GUIItem
             if (index == GUIItemShortcut.this.index)
             {
                 shortcut.addShortcutListener(shortcutListener);
-                render();
+                setChanged();
             }
         }
 
@@ -57,7 +57,7 @@ public class GUIItemShortcut extends GUIItem
             if (index == GUIItemShortcut.this.index)
             {
                 shortcut.removeShortcutListener(shortcutListener);
-                render();
+                setChanged();
             }
         }
     };
@@ -67,7 +67,7 @@ public class GUIItemShortcut extends GUIItem
         /** {@inheritDoc} */
         public void shortcutModified(final Shortcut shortcut)
         {
-            render();
+            setChanged();
         }
     };
 
@@ -77,7 +77,6 @@ public class GUIItemShortcut extends GUIItem
         this.index = index;
         this.font = font;
         jxcWindow.getShortcuts().addShortcutsListener(shortcutsListener);
-        render();
     }
 
     /* {@inheritDoc} */

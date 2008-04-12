@@ -29,9 +29,6 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -71,7 +68,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         public void itemModified(final CfItem item)
         {
             assert GUIItem.this.item == item;
-            render();
+            setChanged();
         }
     };
 
@@ -95,20 +92,18 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
                 return;
             }
 
-            render();
+            setChanged();
         }
     };
 
     public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.cursedImage = cursedImage;
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
         this.font = font;
-        createBuffer();
-        render();
         jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
@@ -143,7 +138,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     /** {@inheritDoc} */
     @Override public void activeChanged()
     {
-        render();
+        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -157,7 +152,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     public void setVisible(final boolean v)
     {
         super.setVisible(v);
-        render();
+        setChanged();
     }
 
     protected CfItem getItem()
@@ -182,18 +177,8 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
             this.item.addCfItemModifiedListener(itemModifiedListener);
         }
 
-        render();
+        setChanged();
 
         setTooltipText(item == null ? null : item.getName());
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        setChanged();
     }
 }

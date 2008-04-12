@@ -59,7 +59,6 @@ public class GUIItemInventory extends GUIItemItem
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font, nrofColor);
         defaultIndex = index;
         setIndex(index);
-        render();
     }
 
     /** {@inheritDoc} */
@@ -90,7 +89,7 @@ public class GUIItemInventory extends GUIItemItem
     public void scroll(final int distance)
     {
         setIndex(index+distance);
-        render();
+        setChanged();
     }
 
     /* {@inheritDoc} */

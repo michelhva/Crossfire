@@ -95,13 +95,12 @@ public abstract class GUILabel extends AbstractLabel
         this.font = font;
         this.color = color;
         this.alignment = alignment;
-        render();
     }
 
     /** {@inheritDoc} */
     @Override protected void textChanged()
     {
-        render();
+        setChanged();
     }
 
     /**

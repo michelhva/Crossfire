@@ -26,9 +26,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import java.util.ArrayList;
@@ -69,11 +66,6 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * The rendering state.
      */
     private final RenderStateManager renderStateManager;
-
-    /**
-     * The {@link FontRenderContext} associated to {@link #buffer}.
-     */
-    private FontRenderContext context = null;
 
     private final RenderStateListener renderStateListener = new RenderStateListener()
     {
@@ -117,10 +109,19 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      */
     public GUILog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
-        createBuffer();
+        final Graphics2D g = super.buffer.createGraphics();
+        final FontRenderContext context;
+        try
+        {
+            context = g.getFontRenderContext();
+        }
+        finally
+        {
+            g.dispose();
+        }
         buffer = new Buffer(fonts, context, w);
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
     }
@@ -217,23 +218,6 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     public void scrollTo(final int pos)
     {
         renderStateManager.scrollTo(pos);
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        super.buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        final Graphics2D g = super.buffer.createGraphics();
-        if (backgroundImage != null)
-        {
-            g.drawImage(backgroundImage, 0, 0, null);
-        }
-        context = g.getFontRenderContext();
-        g.dispose();
-        setChanged();
     }
 
     /** {@inheritDoc} */

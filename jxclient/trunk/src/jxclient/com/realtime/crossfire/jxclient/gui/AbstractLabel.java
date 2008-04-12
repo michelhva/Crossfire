@@ -22,9 +22,6 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 import javax.swing.ImageIcon;
@@ -46,22 +43,15 @@ public abstract class AbstractLabel extends GUIElement
     private ImageIcon backgroundImage = null;
 
     /**
-     * If set, the opaque background color; if <code>null</code>, the
-     * background is transparent. This field is ignored if {@link
+     * If set, the opaque background color. This field is ignored if {@link
      * #backgroundImage} is set.
      */
-    private Color backgroundColor = null;
-
-    private void commonInit(final BufferedImage picture)
-    {
-        backgroundImage = picture == null ? null : new ImageIcon(picture);
-        createBuffer();
-    }
+    private Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
     public AbstractLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final String text)
     {
-        super(jxcWindow, name, x, y, w, h);
-        commonInit(picture);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        backgroundImage = picture == null ? null : new ImageIcon(picture);
         setText(text);
     }
 
@@ -94,15 +84,14 @@ public abstract class AbstractLabel extends GUIElement
     /**
      * Set the background color.
      *
-     * @param backgroundColor The background color, or <code>null</code> for
-     * transparent background.
+     * @param backgroundColor The background color.
      */
     public void setBackgroundColor(final Color backgroundColor)
     {
         if (this.backgroundColor != backgroundColor)
         {
             this.backgroundColor = backgroundColor;
-            createBuffer();
+            setChanged();
         }
     }
 
@@ -110,8 +99,6 @@ public abstract class AbstractLabel extends GUIElement
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
-        g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, w, h);
         if (backgroundImage != null)
         {
             g.drawImage(backgroundImage.getImage(), 0, 0, null);
@@ -119,7 +106,7 @@ public abstract class AbstractLabel extends GUIElement
         else if (backgroundColor != null)
         {
             g.setBackground(backgroundColor);
-            g.clearRect(0, 0, w-1, h-1);
+            g.clearRect(0, 0, w, h);
         }
     }
 
@@ -131,16 +118,6 @@ public abstract class AbstractLabel extends GUIElement
     protected void setBackground(final ImageIcon backgroundImage)
     {
         this.backgroundImage = backgroundImage;
-        createBuffer();
-        render();
-    }
-
-    /** {@inheritDoc} */
-    @Override protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, backgroundColor == null ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+        setChanged();
     }
 }

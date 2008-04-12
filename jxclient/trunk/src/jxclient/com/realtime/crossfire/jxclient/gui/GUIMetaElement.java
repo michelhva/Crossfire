@@ -26,9 +26,6 @@ import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.image.BufferedImage;
 import java.awt.Transparency;
 
@@ -67,28 +64,28 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         /** {@inheritDoc} */
         public void entryAdded()
         {
-            render();
+            setChanged();
             updateTooltip();
         }
 
         /** {@inheritDoc} */
         public void entryRemoved()
         {
-            render();
+            setChanged();
             updateTooltip();
         }
 
         /** {@inheritDoc} */
         public void entryChanged()
         {
-            render();
+            setChanged();
             updateTooltip();
         }
     };
 
     public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format, final String tooltip)
     {
-        super(jxcWindow, name, x, y, w, h);
+        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.tcpImage = tcpImage;
         this.font = font;
         this.text = text;
@@ -97,9 +94,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.index = index;
         this.format = format;
         this.tooltip = tooltip;
-        createBuffer();
         jxcWindow.getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
-        render();
+        setChanged();
         updateTooltip();
     }
 
@@ -129,7 +125,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         {
         case MouseEvent.BUTTON1:
             setActive(true);
-            render();
+            setChanged();
             break;
 
         case MouseEvent.BUTTON2:
@@ -163,7 +159,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
         index += distance;
         getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
-        render();
+        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -173,16 +169,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         {
             scroll(defaultIndex-index);
         }
-    }
-
-    /** {@inheritDoc} */
-    protected void createBuffer()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, Transparency.TRANSLUCENT);
-        setChanged();
     }
 
     /** {@inheritDoc} */
@@ -210,7 +196,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             }
         }
 
-        render();
+        setChanged();
     }
 
     /**
