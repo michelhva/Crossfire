@@ -47,6 +47,12 @@ public class Shortcuts
     private final ArrayList<Shortcut> shortcuts = new ArrayList<Shortcut>();
 
     /**
+     * Whether the contents of {@link #shortcuts} have been modified from the
+     * last saved state.
+     */
+    private boolean modified = false;
+
+    /**
      * The listeners to be notified.
      */
     private final EventListenerList listeners = new EventListenerList();
@@ -76,6 +82,7 @@ public class Shortcuts
      */
     public void load(final File file) throws IOException
     {
+        modified = false;
         shortcuts.clear();
         try
         {
@@ -141,8 +148,10 @@ public class Shortcuts
         catch (final IOException ex)
         {
             shortcuts.clear();
+            modified = false;
             throw ex;
         }
+        modified = false;
     }
 
     /**
@@ -154,6 +163,11 @@ public class Shortcuts
      */
     public void save(final File file) throws IOException
     {
+        if (!modified)
+        {
+            return;
+        }
+
         final FileOutputStream fos = new FileOutputStream(file);
         try
         {
@@ -230,6 +244,7 @@ public class Shortcuts
         while (shortcuts.size() <= index)
         {
             shortcuts.add(null);
+            modified = true;
         }
 
         final Shortcut oldShortcut = shortcuts.get(index);
@@ -241,6 +256,7 @@ public class Shortcuts
             }
         }
         shortcuts.set(index, shortcut);
+        modified = true;
         if (shortcut != null)
         {
             for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class))
