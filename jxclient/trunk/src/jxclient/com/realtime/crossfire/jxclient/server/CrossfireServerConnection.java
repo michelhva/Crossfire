@@ -1871,7 +1871,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 if (!value.equals("1"))
                 {
-		    throw new UnknownCommandException("Error: the server is too old for this client since it does not support the spellmon=1 setup option.");
+                    throw new UnknownCommandException("Error: the server is too old for this client since it does not support the spellmon=1 setup option.");
                 }
             }
             else if (option.equals("sound"))
