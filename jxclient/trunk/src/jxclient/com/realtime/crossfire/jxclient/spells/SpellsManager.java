@@ -316,7 +316,6 @@ public class SpellsManager
 
     public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
     {
-        Faces.getFace(face).setName("spell_"+tag);
         Faces.askface(face);
 
         final Spell sp = new Spell(Faces.getFace(face), tag, name, message);
