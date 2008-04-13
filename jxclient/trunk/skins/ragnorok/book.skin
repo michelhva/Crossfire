@@ -1,7 +1,7 @@
 
 picture book_background 104 63 785 579 bouquin
 label_text book_title 180 100 640 20 font_book_title BLACK
-log_label boot_text 180 130 640 390 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_label book_text 180 130 640 390 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 button book_close 690 510 135 55 button_small_active button_small_pushed false command_book_close font_button_fancy DARK_GRAY 20 34 Close
 
 set_default book_close
