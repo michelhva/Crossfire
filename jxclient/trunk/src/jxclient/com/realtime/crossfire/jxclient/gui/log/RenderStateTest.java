@@ -111,11 +111,11 @@ public class RenderStateTest extends TestCase
     {
         final Parser parser = new Parser();
 
-        checkState(0, -HEIGHT, 0);
+        checkState(0, 0, 0);
         parser.parse("xxx", null, buffer);
-        checkState(0, -HEIGHT+1, 0);
+        checkState(0, 0, 0);
         parser.parse("xxx", null, buffer);
-        checkState(0, -HEIGHT+2, 0);
+        checkState(0, 0, 0);
 
         // add lines to completely fill visible area
         for (int i = 2; i < HEIGHT; i++)
