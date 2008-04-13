@@ -386,7 +386,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), server);
-        activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats());
+        activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats(), server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);

@@ -19,6 +19,12 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+
 /**
  * Helper class to synthesize an "active skill" stat value. The Crossfire
  * server currently does not send this information, therefore range stat
@@ -51,7 +57,31 @@ public class ActiveSkillWatcher
         /** {@inheritDoc} */
         public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
         {
-            check();
+            checkRange();
+        }
+    };
+
+    /**
+     * The drawinfo listener to receive drawinfo messages.
+     */
+    private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
+    {
+        /** {@inheritDoc} */
+        public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
+        {
+            checkMessage(evt.getText());
+        }
+    };
+
+    /**
+     * The drawextinfo listener to receive drawextinfo messages.
+     */
+    private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
+    {
+        /** {@inheritDoc} */
+        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        {
+            checkMessage(evt.getMessage());
         }
     };
 
@@ -59,22 +89,41 @@ public class ActiveSkillWatcher
      * Create a new instance.
      *
      * @param stats The stats instance to notify/watch.
+     *
+     * @param crossfireServerConnection The connection to watch.
      */
-    public ActiveSkillWatcher(final Stats stats)
+    public ActiveSkillWatcher(final Stats stats, final CrossfireServerConnection crossfireServerConnection)
     {
         this.stats = stats;
         stats.addCrossfireStatsListener(statsListener);
+        crossfireServerConnection.addCrossfireDrawinfoListener(drawinfoListener);
+        crossfireServerConnection.addCrossfireDrawextinfoListener(drawextinfoListener);
         setActive("");
     }
 
     /**
      * Check whether the range attribute has changed.
      */
-    private void check()
+    private void checkRange()
     {
         final String range = stats.getRange();
-        final String activeSkill = range.startsWith(prefix) ? range.substring(prefix.length()) : "";
-        setActive(activeSkill);
+        if (range.startsWith("Skill: "))
+        {
+            setActive(range.substring(7));
+        }
+    }
+
+    /**
+     * Check whether a drawinfo message is skill related.
+     * @param message the message
+     */
+    private void checkMessage(final String message)
+    {
+        if (message.startsWith("Readied skill: "))
+        {
+            final String tmp = message.substring(15);
+            setActive(tmp.endsWith(".") ? tmp.substring(0, tmp.length()-1) : tmp);
+        }
     }
 
     /**
@@ -84,15 +133,31 @@ public class ActiveSkillWatcher
      */
     private void setActive(final String activeSkill)
     {
+        // Normalize skill name: the Crossfire server sometimes sends "Skill:
+        // <skill item name>" rather than "Skill: <skill name>".
+        final String normalizedActiveSkill;
+        if (activeSkill.equals("lockpicks"))
+        {
+            normalizedActiveSkill = "lockpicking";
+        }
+        else if (activeSkill.equals("writing pen"))
+        {
+            normalizedActiveSkill = "inscription";
+        }
+        else
+        {
+            normalizedActiveSkill = activeSkill;
+        }
+
         synchronized (this)
         {
-            if (this.activeSkill.equals(activeSkill))
+            if (this.activeSkill.equals(normalizedActiveSkill))
             {
                 return;
             }
 
-            this.activeSkill = activeSkill;
-            stats.setActiveSkill(activeSkill);
+            this.activeSkill = normalizedActiveSkill;
+            stats.setActiveSkill(this.activeSkill);
         }
         stats.setStatsProcessed(false);
     }
