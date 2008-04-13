@@ -1,5 +1,7 @@
 2008-04-13  Andreas Kirschbaum
 
+	* Properly reset animation states when re-connecting to a server.
+
 	* Save keybindings.txt and shortcuts.txt only if changed.
 
 	* Show contents of "quit", "disconnect", and "help" dialogs.

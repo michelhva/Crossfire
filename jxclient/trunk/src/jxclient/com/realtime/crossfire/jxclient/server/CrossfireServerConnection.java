@@ -194,6 +194,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private final ExperienceTable experienceTable;
 
     /**
+     * The defined animations.
+     */
+    private final Animations animations;
+
+    /**
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
@@ -205,11 +210,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
-     * The defined animations.
-     */
-    private final Animations animations = new Animations();
-
-    /**
      * Create a new instance.
      *
      * @param redrawSemaphore The semaphore used to synchronized map model
@@ -217,13 +217,16 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param experienceTable The experience table instance to update.
      *
+     * @param animations The animations to update.
+     *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol)
     {
         this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
+        this.animations = animations;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
     }
