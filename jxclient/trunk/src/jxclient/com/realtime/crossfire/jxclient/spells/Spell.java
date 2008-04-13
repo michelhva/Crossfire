@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.util.StringSplitter;
 import java.net.URL;
 import javax.swing.ImageIcon;
 
@@ -197,6 +198,6 @@ public class Spell
      */
     public String getTooltipText()
     {
-        return message.length() > 0 ? name+"\n"+message : name;
+        return message.length() <= 0 ? name : name+"<br>"+StringSplitter.splitAsHtml(message);
     }
 }
