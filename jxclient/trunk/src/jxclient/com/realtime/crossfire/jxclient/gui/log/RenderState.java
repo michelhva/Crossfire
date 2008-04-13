@@ -82,7 +82,7 @@ public class RenderState
     {
         final int oldHeight = height;
         height = h;
-        if (buffer.getTotalHeight() < height)
+        if (buffer.getTotalHeight() <= height)
         {
             scrollPos = 0;
             topIndex = 0;
@@ -258,7 +258,7 @@ public class RenderState
      */
     public synchronized void scrollTo(final Buffer buffer, final int y)
     {
-        if (buffer.getTotalHeight() < height)
+        if (buffer.getTotalHeight() <= height)
         {
             // ignore
         }
