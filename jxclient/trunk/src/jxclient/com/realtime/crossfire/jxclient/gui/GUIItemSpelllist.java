@@ -20,10 +20,12 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -74,12 +76,37 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
+    /**
+     * The {@link CrossfireUpdateFaceListener} registered to detect updated
+     * faces.
+     */
+    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    {
+        /** {@inheritDoc} */
+        public void updateFace(final int faceID)
+        {
+            if (spell == null)
+            {
+                return;
+            }
+
+            final Face face = spell.getFace();
+            if (face == null || face.getID() != faceID)
+            {
+                return;
+            }
+
+            setChanged();
+        }
+    };
+
     public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         this.defaultIndex = index;
         setIndex(index);
         ItemsList.getSpellsManager().addCrossfireSpellChangedListener(crossfireSpellChangedListener);
+        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /** {@inheritDoc} */
