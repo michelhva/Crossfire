@@ -20,9 +20,12 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -35,11 +38,52 @@ public abstract class GUIItemItem extends GUIItem
      */
     private final Color nrofColor;
 
+    private CfItem item = null;
+
+    /**
+     * The {@link CfItemModifiedListener} used to detect attribute changes of
+     * the displayed item.
+     */
+    private final CfItemModifiedListener itemModifiedListener = new CfItemModifiedListener()
+    {
+        /** {@inheritDoc} */
+        public void itemModified(final CfItem item)
+        {
+            assert GUIItemItem.this.item == item;
+            setChanged();
+        }
+    };
+
+    /**
+     * The {@link CrossfireUpdateFaceListener} registered to detect updated
+     * faces.
+     */
+    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    {
+        /** {@inheritDoc} */
+        public void updateFace(final int faceID)
+        {
+            if (item == null)
+            {
+                return;
+            }
+
+            final Face face = item.getFace();
+            if (face == null || face.getID() != faceID)
+            {
+                return;
+            }
+
+            setChanged();
+        }
+    };
+
     public GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.nrofColor = nrofColor;
+        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /** {@inheritDoc} */
@@ -88,5 +132,32 @@ public abstract class GUIItemItem extends GUIItem
         }
 
         jxcw.getCrossfireServerConnection().sendApply(item.getTag());
+    }
+
+    protected CfItem getItem()
+    {
+        return item;
+    }
+
+    protected void setItem(final CfItem item)
+    {
+        if (this.item == item)
+        {
+            return;
+        }
+
+        if (this.item != null)
+        {
+            this.item.removeCfItemModifiedListener(itemModifiedListener);
+        }
+        this.item = item;
+        if (this.item != null)
+        {
+            this.item.addCfItemModifiedListener(itemModifiedListener);
+        }
+
+        setChanged();
+
+        setTooltipText(item == null ? null : item.getName());
     }
 }

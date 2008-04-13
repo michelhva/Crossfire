@@ -19,12 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Font;
@@ -49,52 +46,12 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
 
     protected final BufferedImage lockedImage;
 
-    private CfItem item = null;
-
     protected final Font font;
 
     /**
      * The background color of this item.
      */
     private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
-
-    /**
-     * The {@link CfItemModifiedListener} used to detect attribute changes of
-     * the displayed item.
-     */
-    private final CfItemModifiedListener itemModifiedListener = new CfItemModifiedListener()
-    {
-        /** {@inheritDoc} */
-        public void itemModified(final CfItem item)
-        {
-            assert GUIItem.this.item == item;
-            setChanged();
-        }
-    };
-
-    /**
-     * The {@link CrossfireUpdateFaceListener} registered to detect updated
-     * faces.
-     */
-    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
-    {
-        /** {@inheritDoc} */
-        public void updateFace(final int faceID)
-        {
-            if (item == null)
-            {
-                return;
-            }
-
-            final Face face = item.getFace();
-            if (face == null || face.getID() != faceID)
-            {
-                return;
-            }
-
-            setChanged();
-        }
-    };
 
     public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font)
     {
@@ -104,7 +61,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
         this.font = font;
-        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /** {@inheritDoc} */
@@ -153,32 +109,5 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     {
         super.setVisible(v);
         setChanged();
-    }
-
-    protected CfItem getItem()
-    {
-        return item;
-    }
-
-    protected void setItem(final CfItem item)
-    {
-        if (this.item == item)
-        {
-            return;
-        }
-
-        if (this.item != null)
-        {
-            this.item.removeCfItemModifiedListener(itemModifiedListener);
-        }
-        this.item = item;
-        if (this.item != null)
-        {
-            this.item.addCfItemModifiedListener(itemModifiedListener);
-        }
-
-        setChanged();
-
-        setTooltipText(item == null ? null : item.getName());
     }
 }
