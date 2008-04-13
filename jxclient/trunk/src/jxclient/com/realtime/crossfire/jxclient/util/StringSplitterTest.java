@@ -55,31 +55,31 @@ public class StringSplitterTest extends TestCase
 
     public void testSplit()
     {
-	assertEquals("", StringSplitter.splitAsHtml(""));
-	assertEquals("a", StringSplitter.splitAsHtml("a"));
-	assertEquals("abc", StringSplitter.splitAsHtml("abc"));
-	assertEquals("a b c", StringSplitter.splitAsHtml("a b c"));
-	assertEquals("a  b  c", StringSplitter.splitAsHtml("  a  b  c  "));
+        assertEquals("", StringSplitter.splitAsHtml(""));
+        assertEquals("a", StringSplitter.splitAsHtml("a"));
+        assertEquals("abc", StringSplitter.splitAsHtml("abc"));
+        assertEquals("a b c", StringSplitter.splitAsHtml("a b c"));
+        assertEquals("a  b  c", StringSplitter.splitAsHtml("  a  b  c  "));
 
-	assertEquals(
-	    "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
-	    "A B C D E",
-	    StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
-	assertEquals(
-	    "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
-	    "A B C D E F G H I J K L M N O P Q R S T U V W X Y<br>"+
-	    "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
-	    "A B C D E",
-	    StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E F G H I J K L M N O P Q R S T U V W X Y a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
-	assertEquals(
-	    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>"+
-	    "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>"+
-	    "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br>"+
-	    "cccccccccccccccccccc ddddddddddddddddddddddddddddd<br>"+
-	    "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<br>"+
-	    "ffffffffffffffffffffffffffffff<br>"+
-	    "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg<br>"+
-	    "gggggggggggggggggggg",
-	    StringSplitter.splitAsHtml("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc ddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffffff gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"));
+        assertEquals(
+            "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
+            "A B C D E",
+            StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
+        assertEquals(
+            "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
+            "A B C D E F G H I J K L M N O P Q R S T U V W X Y<br>"+
+            "a b c d e f g h i j k l m n o p q r s t u v w x y<br>"+
+            "A B C D E",
+            StringSplitter.splitAsHtml("a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E F G H I J K L M N O P Q R S T U V W X Y a b c d e f g h i j k l m n o p q r s t u v w x y A B C D E"));
+        assertEquals(
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br>"+
+            "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb<br>"+
+            "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc<br>"+
+            "cccccccccccccccccccc ddddddddddddddddddddddddddddd<br>"+
+            "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee<br>"+
+            "ffffffffffffffffffffffffffffff<br>"+
+            "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg<br>"+
+            "gggggggggggggggggggg",
+            StringSplitter.splitAsHtml("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc ddddddddddddddddddddddddddddd eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee ffffffffffffffffffffffffffffff gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"));
     }
 }
