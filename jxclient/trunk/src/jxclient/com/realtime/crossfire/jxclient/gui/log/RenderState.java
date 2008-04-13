@@ -86,7 +86,7 @@ public class RenderState
         {
             scrollPos = 0;
             topIndex = 0;
-            topOffset = buffer.getTotalHeight()-height;
+            topOffset = 0;
             canScrollUp = false;
             canScrollDown = false;
         }
@@ -116,6 +116,7 @@ public class RenderState
         else if (!canScrollDown)
         {
             scrollToBottom(buffer);
+            mustRepaint = true;
         }
         else
         {
@@ -156,9 +157,10 @@ public class RenderState
         {
             scrollPos = 0;
             topIndex = 0;
-            topOffset = buffer.getTotalHeight()-height;
+            topOffset = 0;
             canScrollUp = false;
             canScrollDown = false;
+            mustRepaint = true;
         }
         else
         {
@@ -296,7 +298,7 @@ public class RenderState
         {
             scrollPos = 0;
             topIndex = 0;
-            topOffset = buffer.getTotalHeight()-height;
+            topOffset = 0;
             canScrollUp = false;
             canScrollDown = false;
         }
