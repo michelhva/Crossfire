@@ -60,7 +60,8 @@ public class GUIOneLineLabel extends GUILabel
      */
     public GUIOneLineLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, picture, font, color, alignment, text);
+        super(jxcWindow, name, x, y, w, h, picture, font, color, alignment);
+        setText(text);
     }
 
     /** {@inheritDoc} */
