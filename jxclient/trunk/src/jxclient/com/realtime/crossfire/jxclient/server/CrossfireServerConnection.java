@@ -1869,13 +1869,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             final String value = options.get(i+1);
             if (option.equals("spellmon"))
             {
-                if (value.equals("1"))
+                if (!value.equals("1"))
                 {
-                    ItemsList.getSpellsManager().setSpellMode(SpellsManager.SPELLMODE_SENT);
-                }
-                else
-                {
-                    ItemsList.getSpellsManager().setSpellMode(SpellsManager.SPELLMODE_LOCAL);
+		    throw new UnknownCommandException("Error: the server is too old for this client since it does not support the spellmon=1 setup option.");
                 }
             }
             else if (option.equals("sound"))

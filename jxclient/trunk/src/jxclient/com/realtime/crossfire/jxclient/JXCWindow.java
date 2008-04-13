@@ -597,6 +597,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 Faces.reset();
                 commandQueue.clear();
                 ItemsList.getItemsManager().reset();
+                ItemsList.getSpellsManager().reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
