@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
@@ -112,6 +113,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final ExperienceTable experienceTable = new ExperienceTable();
 
     private final CrossfireServerConnection server;
+
+    private final Animations animations = new Animations();
 
     /**
      * The command queue instance for this window.
@@ -382,7 +385,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, debugProtocol);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol);
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), server);
@@ -598,6 +601,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 commandQueue.clear();
                 ItemsList.getItemsManager().reset();
                 ItemsList.getSpellsManager().reset();
+                animations.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();

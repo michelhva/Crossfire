@@ -35,6 +35,14 @@ public class Animations
      */
     private final Map<Integer, Animation> animations = new HashMap<Integer, Animation>();
 
+    /*
+     * Forget about all animations.
+     */
+    public void reset()
+    {
+        animations.clear();
+    }
+
     /**
      * Define a new animation.
      *
