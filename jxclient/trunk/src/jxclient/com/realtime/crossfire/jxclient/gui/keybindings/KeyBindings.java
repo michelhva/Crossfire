@@ -45,6 +45,12 @@ public final class KeyBindings
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
     /**
+     * Whether the contents of {@link #keybindings} have been modified from the
+     * last saved state.
+     */
+    private boolean modified = false;
+
+    /**
      * The file for saving the bindings; <code>null</code> to not save.
      */
     private final File file;
@@ -103,6 +109,7 @@ public final class KeyBindings
             keybindings.remove(elected);
         }
         keybindings.add(keyBinding);
+        modified = true;
     }
 
     /**
@@ -131,6 +138,7 @@ public final class KeyBindings
             keybindings.remove(elected);
         }
         keybindings.add(keyBinding);
+        modified = true;
     }
 
     /**
@@ -146,6 +154,7 @@ public final class KeyBindings
         if (keyBinding != null)
         {
             keybindings.remove(keyBinding);
+            modified = true;
         }
     }
 
@@ -160,6 +169,7 @@ public final class KeyBindings
         if (keyBinding != null)
         {
             keybindings.remove(keyBinding);
+            modified = true;
         }
     }
 
@@ -172,6 +182,8 @@ public final class KeyBindings
      */
     public void loadKeyBindings(final JXCWindow jxcWindow) throws IOException
     {
+        modified = false;
+
         if (file == null)
         {
             return;
@@ -229,8 +241,11 @@ public final class KeyBindings
         catch (final IOException ex)
         {
             keybindings.clear();
+            modified = false;
             throw ex;
         }
+
+        modified = false;
     }
 
     /**
@@ -240,7 +255,7 @@ public final class KeyBindings
      */
     public void saveKeyBindings() throws IOException
     {
-        if (file == null)
+        if (file == null || !modified)
         {
             return;
         }
