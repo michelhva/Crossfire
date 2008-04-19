@@ -122,6 +122,27 @@ public class Settings
     }
 
     /**
+     * Return the long associated with the specified key at a node, or
+     * <code>defaultValue</code> if there is no association for this key.
+     *
+     * @param key Key to get value for.
+     *
+     * @return The value.
+     */
+    public long getLong(final String key, final long defaultValue)
+    {
+        final String value = getString(key, Long.toString(defaultValue));
+        try
+        {
+            return Long.parseLong(value);
+        }
+        catch (final NumberFormatException ex)
+        {
+            return defaultValue;
+        }
+    }
+
+    /**
      * Store a key/value pair.
      *
      * @param key The key to store.
@@ -159,6 +180,18 @@ public class Settings
     public void putInt(final String key, final int value)
     {
         putString(key, Integer.toString(value));
+    }
+
+    /**
+     * Store a key/value pair.
+     *
+     * @param key The key to store.
+     *
+     * @param value The value to store.
+     */
+    public void putLong(final String key, final long value)
+    {
+        putString(key, Long.toString(value));
     }
 
     /**

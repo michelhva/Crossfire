@@ -42,7 +42,9 @@ import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
@@ -165,6 +167,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * user is logged in.
      */
     private KeyBindings characterKeyBindings = null;
+
+    /**
+     * The current pickup mode. Set to <code>null</code> if no user is logged
+     * in.
+     */
+    private final Pickup characterPickup;
 
     private final boolean[] key_shift = new boolean[] { false, false, false, false };
 
@@ -313,6 +321,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
+            characterPickup.update();                         // reset pickup mode
         }
 
         /** {@inheritDoc} */
@@ -392,6 +401,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats(), server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
+        try
+        {
+            characterPickup = new Pickup(commandQueue, optionManager);
+        }
+        catch (final OptionException ex)
+        {
+            throw new AssertionError();
+        }
         mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
@@ -1788,6 +1805,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             characterKeyBindings = null;
         }
 
+        if (hostname != null && this.character != null)
+        {
+            final long pickupMode = characterPickup.getPickupMode();
+            if (pickupMode != Pickup.PU_NOTHING)
+            {
+                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
+            }
+            else
+            {
+                settings.remove("pickup_"+hostname+"_"+this.character);
+            }
+        }
+
         this.character = character;
         updateTitle();
 
@@ -1802,6 +1832,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             {
                 System.err.println("Cannot read keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
             }
+
+            characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
         }
     }
 
