@@ -389,8 +389,8 @@ public class ItemsManager
             inventoryManager.addModified(items.get(this.player.getTag()));
             for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
             {
-                listener.playerReceived(this.player);
                 listener.playerAdded(this.player);
+                listener.playerReceived(this.player);
             }
         }
     }

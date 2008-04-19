@@ -35,13 +35,13 @@ commandlist_add command_poisoned_on poisoned SHOW
 commandlist_add command_poisoned_off poisoned HIDE
 
 # Button Group
-textbutton button_help        511 11 40 18 false command_help Help
-textbutton button_status      561 11 48 18 false command_status Status
-textbutton button_inventory   619 11 67 18 false command_inventory Inventory
-textbutton button_messages    696 11 74 18 false command_messages Messages
-textbutton button_protections 780 11 82 18 false command_protections Protections
-textbutton button_skills      872 11 40 18 false command_skills Skills
-textbutton button_map         922 11 35 18 false command_map Map
+textbutton button_help        497 11 40 18 false command_help Help
+textbutton button_status      547 11 48 18 false command_status Status
+textbutton button_inventory   605 11 67 18 false command_inventory Inventory
+textbutton button_messages    682 11 74 18 false command_messages Messages
+textbutton button_protections 766 11 82 18 false command_protections Protections
+textbutton button_skills      858 11 40 18 false command_skills Skills
+textbutton button_map         908 11 49 18 false command_pickup Pickup
 textbutton button_setup       967 11 46 18 false command_setup Setup
 
 ignore hpbar_back

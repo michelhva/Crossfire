@@ -1,0 +1,56 @@
+
+dialog border                250 250 600 300 false Pickup
+dialog_hide START META LOGIN
+button button_close          580   4  16 16 close_up close_down false command_pickup
+
+label_text label_general      10  30 180 16 font_title BLACK General:
+checkbox checkbox_inhibit     10  50 180 16 pickup_inhibit Disable pickup
+checkbox checkbox_stop        10  70 180 16 pickup_stop Stop before pickup
+checkbox checkbox_not_cursed  10  90 180 16 pickup_not_cursed Ignore cursed
+
+label_text label_misc         10 120 180 16 font_title BLACK Miscellaneous:
+checkbox checkbox_key         10 140 180 16 pickup_key Keys
+checkbox checkbox_valuables   10 160 180 16 pickup_valuables Rings and amulets
+checkbox checkbox_jewels      10 180 180 16 pickup_jewels Money and jewels
+
+#label_text label_ratio        10 120 180 16 font_title BLACK Weight/Value Ratio:
+#checkbox checkbox_ratio0     10 140 180 16 pickup_ratio0 Off
+#checkbox checkbox_ratio5     10 160 180 16 pickup_ratio5 >= 5
+#checkbox checkbox_ratio10    10 180 180 16 pickup_ratio10 >= 10
+#checkbox checkbox_ratio15    10 200 180 16 pickup_ratio15 >= 15
+#checkbox checkbox_ratio20    10 220 180 16 pickup_ratio20 >= 20
+#checkbox checkbox_ratio25    10 240 180 16 pickup_ratio25 >= 25
+#checkbox checkbox_ratio30    10 260 180 16 pickup_ratio30 >= 30
+#checkbox checkbox_ratio35    10 280 180 16 pickup_ratio35 >= 35
+#checkbox checkbox_ratio40    10 300 180 16 pickup_ratio40 >= 40
+#checkbox checkbox_ratio45    10 320 180 16 pickup_ratio45 >= 45
+#checkbox checkbox_ratio50    10 340 180 16 pickup_ratio50 >= 50
+
+label_text label_weapons     210  30 180 16 font_title BLACK Weapons:
+checkbox checkbox_allweapon  210  50 180 16 pickup_allweapon All weapons
+checkbox checkbox_missileweapon 210 70 180 16 pickup_missileweapon Missile weapons
+checkbox checkbox_bow        210  90 180 16 pickup_bow Bows
+checkbox checkbox_arrow      210 110 180 16 pickup_arrow Arrows
+
+label_text label_armor       210 140 180 16 font_title BLACK Gear:
+checkbox checkbox_armour     210 160 180 16 pickup_armour Armors
+checkbox checkbox_boots      210 180 180 16 pickup_boots Boots
+checkbox checkbox_cloak      210 200 180 16 pickup_cloak Cloaks
+checkbox checkbox_gloves     210 220 180 16 pickup_gloves Gloves
+checkbox checkbox_helmet     210 240 180 16 pickup_helmet Helmets
+checkbox checkbox_shield     210 260 180 16 pickup_shield Shields
+
+label_text label_readables   410  30 180 16 font_title BLACK Readables:
+checkbox checkbox_skillscroll 410 50 180 16 pickup_skillscroll Skillscrolls
+checkbox checkbox_readables  410 70 180 16 pickup_readables Normal books and scrolls
+checkbox checkbox_spellbook  410 90 180 16 pickup_spellbook Spellbooks
+
+label_text label_food        410 120 180 16 font_title BLACK Food:
+checkbox checkbox_drink      410 140 180 16 pickup_drink Drinks
+checkbox checkbox_food       410 160 180 16 pickup_food Normal Food
+checkbox checkbox_flesh      410 180 180 16 pickup_flesh Flesh
+
+label_text label_magical     410 210 180 16 font_title BLACK Magical:
+checkbox checkbox_magical    410 230 180 16 pickup_magical Magical items
+checkbox checkbox_potion     410 250 180 16 pickup_potion Potions
+checkbox checkbox_magic_device 410 270 180 16 pickup_magic_device Magic devices

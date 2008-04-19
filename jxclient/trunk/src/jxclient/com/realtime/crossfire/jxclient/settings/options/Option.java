@@ -53,4 +53,15 @@ public abstract class Option
     {
         listeners.add(OptionListener.class, listener);
     }
+
+    /**
+     * Whether the option should not be saved. This function can be overridden
+     * for options that are otherwise saved, or for options that should not be
+     * saved at all.
+     * @return whether the option value should not be saved
+     */
+    public boolean inhibitSave()
+    {
+        return false;
+    }
 }

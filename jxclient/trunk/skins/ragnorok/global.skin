@@ -43,6 +43,7 @@ commandlist command_map AND null DIALOG_TOGGLE map
 commandlist command_map_open AND null DIALOG_OPEN map
 commandlist command_setup AND null DIALOG_TOGGLE setup
 commandlist command_help AND null DIALOG_TOGGLE help
+commandlist command_pickup AND null DIALOG_TOGGLE pickup
 
 commandlist command_help_close AND null DIALOG_CLOSE help
 

@@ -134,14 +134,17 @@ public class OptionManager
         {
             final String optionName = e.getKey();
             final Option option = e.getValue();
-            if (option instanceof CheckBoxOption)
+            if (!option.inhibitSave())
             {
-                final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                settings.putBoolean(optionName, checkBoxOption.isChecked());
-            }
-            else
-            {
-                throw new AssertionError();
+                if (option instanceof CheckBoxOption)
+                {
+                    final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
+                    settings.putBoolean(optionName, checkBoxOption.isChecked());
+                }
+                else
+                {
+                    throw new AssertionError();
+                }
             }
         }
     }
