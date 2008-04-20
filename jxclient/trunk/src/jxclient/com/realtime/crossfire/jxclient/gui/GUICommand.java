@@ -153,7 +153,23 @@ public class GUICommand
             break;
 
         case CONNECT:
-            ((JXCWindow)params).connect(((GUIText)target).getText(), 13327);
+            String[] serverHostInfo = ((GUIText)target).getText().split(":",2);
+            int serverPort = 13327;
+            if (serverHostInfo.length>1)
+            {
+                try
+                {
+                    serverPort = Integer.parseInt(serverHostInfo[1].trim());
+                }
+                catch (java.lang.NumberFormatException ex)
+                {
+                    System.err.println("Warning: invalid port value specified, using 13327 instead.");
+                    serverPort=13327;
+                }
+            }
+            if (serverPort<=0)
+                serverPort=13327;
+            ((JXCWindow)params).connect(serverHostInfo[0], serverPort);
             break;
 
         case DISCONNECT:
