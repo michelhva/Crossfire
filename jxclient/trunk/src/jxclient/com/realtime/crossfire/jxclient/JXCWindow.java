@@ -730,7 +730,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                         {
                             serverPort = Integer.parseInt(serverHostInfo[1].trim());
                         }
-                        catch (java.lang.NumberFormatException ex)
+                        catch (NumberFormatException ex)
                         {
                             System.err.println("Warning: invalid port value specified, using 13327 instead.");
                             serverPort = 13327;
