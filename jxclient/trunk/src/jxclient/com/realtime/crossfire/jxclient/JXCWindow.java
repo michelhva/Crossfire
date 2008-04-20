@@ -592,7 +592,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (this.guiId == GUI_MAIN)
             {
                 server.disconnect();
-                setHost(null, 0);
+                setHost(null);
                 ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
                 server.removeCrossfireQueryListener(this);
                 server.removeCrossfireDrawextinfoListener(this);
@@ -684,7 +684,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    public void init(final int w, final int h, final String skinName, final boolean fullScreen, final String server)
+    public void init(final int w, final int h, final String skinName, final boolean fullScreen, final String serverInfo)
     {
         windowWidth = w;
         windowHeight = h;
@@ -693,7 +693,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addMouseMotionListener(mouseTracker);
         try
         {
-            Faces.setFacesCallback(this.server);
+            Faces.setFacesCallback(server);
         }
         catch (final IOException ex)
         {
@@ -721,19 +721,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             initRendering(fullScreen);
             try
             {
-                if (server != null)
+                if (serverInfo != null)
                 {
-                    final String[] serverHostInfo = server.split(":", 2);
-                    final int serverPort;
-                    if (serverHostInfo.length > 1)
-                    {
-                        serverPort = NumberParser.parseInt(serverHostInfo[1].trim(), 13327, 1, 65535);
-                    }
-                    else
-                    {
-                        serverPort = 13327;
-                    }
-                    connect(serverHostInfo[0], serverPort);
+                    connect(serverInfo);
                 }
                 else
                 {
@@ -765,10 +755,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    public void connect(final String hostname, final int port)
+    public void connect(final String serverInfo)
     {
-        settings.putString("server", hostname);
-        setHost(hostname, port);
+        settings.putString("server", serverInfo);
+        setHost(serverInfo);
         changeGUI(GUI_MAIN);
     }
 
@@ -1851,21 +1841,33 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * Update information about the connected host.
      *
-     * @param hostname The hostname; <code>null</code> if not connected.
-     *
-     * @param port The port number.
+     * @param serverInfo The hostname; <code>null</code> if not connected.
      */
-    private void setHost(final String hostname, final int port)
+    private void setHost(final String serverInfo)
     {
-        if ((this.hostname == null ? hostname == null : this.hostname.equals(hostname))
-        && this.port == port)
+        final String newHostname;
+        final int newPort;
+        if (serverInfo == null)
+        {
+            newHostname = null;
+            newPort = 0;
+        }
+        else
+        {
+            final String[] tmp = serverInfo.split(":", 2);
+            newHostname = tmp[0];
+            newPort = tmp.length < 2 ? 0 : NumberParser.parseInt(tmp[1], 13327, 1, 65535);
+        }
+
+        if ((hostname == null ? newHostname == null : hostname.equals(newHostname))
+        && port == newPort)
         {
             return;
         }
 
         setCharacter(null);
-        this.hostname = hostname;
-        this.port = port;
+        hostname = newHostname;
+        port = newPort;
         updateTitle();
     }
 

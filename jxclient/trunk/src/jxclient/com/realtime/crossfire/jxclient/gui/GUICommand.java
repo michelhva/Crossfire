@@ -154,17 +154,7 @@ public class GUICommand
             break;
 
         case CONNECT:
-            final String[] serverHostInfo = ((GUIText)target).getText().split(":", 2);
-            final int serverPort;
-            if (serverHostInfo.length > 1)
-            {
-                serverPort = NumberParser.parseInt(serverHostInfo[1].trim(), 13327, 1, 65535);
-            }
-            else
-            {
-                serverPort = 13327;
-            }
-            ((JXCWindow)params).connect(serverHostInfo[0], serverPort);
+            ((JXCWindow)params).connect(((GUIText)target).getText());
             break;
 
         case DISCONNECT:
