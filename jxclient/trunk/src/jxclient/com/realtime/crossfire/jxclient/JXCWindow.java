@@ -1856,7 +1856,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
-            newPort = tmp.length < 2 ? 0 : NumberParser.parseInt(tmp[1], 13327, 1, 65535);
+            newPort = tmp.length < 2 ? 13327 : NumberParser.parseInt(tmp[1], 13327, 1, 65535);
         }
 
         if ((hostname == null ? newHostname == null : hostname.equals(newHostname))
