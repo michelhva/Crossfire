@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.util.NumberParser;
 
 /**
  *
@@ -154,20 +155,12 @@ public class GUICommand
 
         case CONNECT:
             final String[] serverHostInfo = ((GUIText)target).getText().split(":", 2);
-            int serverPort = 13327;
+            final int serverPort;
             if (serverHostInfo.length > 1)
             {
-                try
-                {
-                    serverPort = Integer.parseInt(serverHostInfo[1].trim());
-                }
-                catch (final NumberFormatException ex)
-                {
-                    System.err.println("Warning: invalid port value specified, using 13327 instead.");
-                    serverPort = 13327;
-                }
+                serverPort = NumberParser.parseInt(serverHostInfo[1].trim(), 13327, 1, 65535);
             }
-            if (serverPort <= 0)
+            else
             {
                 serverPort = 13327;
             }

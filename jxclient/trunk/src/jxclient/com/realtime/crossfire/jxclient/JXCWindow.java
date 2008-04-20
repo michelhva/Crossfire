@@ -57,6 +57,7 @@ import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
+import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -723,20 +724,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 if (server != null)
                 {
                     final String[] serverHostInfo = server.split(":", 2);
-                    int serverPort = 13327;
+                    final int serverPort;
                     if (serverHostInfo.length > 1)
                     {
-                        try
-                        {
-                            serverPort = Integer.parseInt(serverHostInfo[1].trim());
-                        }
-                        catch (final NumberFormatException ex)
-                        {
-                            System.err.println("Warning: invalid port value specified, using 13327 instead.");
-                            serverPort = 13327;
-                        }
+                        serverPort = NumberParser.parseInt(serverHostInfo[1].trim(), 13327, 1, 65535);
                     }
-                    if (serverPort <= 0)
+                    else
                     {
                         serverPort = 13327;
                     }
