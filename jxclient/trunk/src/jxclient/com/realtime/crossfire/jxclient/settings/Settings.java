@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.settings;
 
+import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
@@ -110,15 +111,7 @@ public class Settings
      */
     public int getInt(final String key, final int defaultValue)
     {
-        final String value = getString(key, Integer.toString(defaultValue));
-        try
-        {
-            return Integer.parseInt(value);
-        }
-        catch (final NumberFormatException ex)
-        {
-            return defaultValue;
-        }
+        return NumberParser.parseInt(getString(key, Integer.toString(defaultValue)), defaultValue);
     }
 
     /**
@@ -131,15 +124,7 @@ public class Settings
      */
     public long getLong(final String key, final long defaultValue)
     {
-        final String value = getString(key, Long.toString(defaultValue));
-        try
-        {
-            return Long.parseLong(value);
-        }
-        catch (final NumberFormatException ex)
-        {
-            return defaultValue;
-        }
+        return NumberParser.parseLong(getString(key, Long.toString(defaultValue)), defaultValue);
     }
 
     /**
