@@ -232,7 +232,7 @@ public class Gui
 
             final long t1 = System.currentTimeMillis();
             g.setColor(java.awt.Color.YELLOW);
-            if(mouseElement != null)
+            if (mouseElement != null)
             {
                 g.drawString(mouseElement.getName(), 16, 16);
             }

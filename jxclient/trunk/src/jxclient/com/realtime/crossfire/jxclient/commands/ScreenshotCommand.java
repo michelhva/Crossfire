@@ -63,7 +63,7 @@ public class ScreenshotCommand extends AbstractCommand
             {
                 file = Filenames.getSettingsFile("screenshot"+screenshotId+".png");
             }
-            catch(final IOException ex)
+            catch (final IOException ex)
             {
                 drawInfoError("Failed to create screenshot filename: "+ex.getMessage());
                 return;
@@ -91,12 +91,12 @@ public class ScreenshotCommand extends AbstractCommand
         {
             ImageIO.write(image, "png", file);
         }
-        catch(final IOException ex)
+        catch (final IOException ex)
         {
             drawInfoError("Cannot write screenshot "+file.getPath()+": "+ex.getMessage());
             return;
         }
-        catch(final NullPointerException ex) // ImageIO.write() crashes if the destination cannot be written to
+        catch (final NullPointerException ex) // ImageIO.write() crashes if the destination cannot be written to
         {
             drawInfoError("Cannot write screenshot "+file.getPath());
             return;

@@ -55,7 +55,7 @@ public class CommandCheckBoxOption extends CheckBoxOption
     /** {@inheritDoc} */
     @Override protected void execute(final boolean checked)
     {
-        if(checked)
+        if (checked)
         {
             commandOn.execute();
         }
