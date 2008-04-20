@@ -94,7 +94,7 @@ public class ExperienceTable
         }
 
         final Long exp = info.get(level);
-        if(exp != null)
+        if (exp != null)
         {
             return exp;
         }

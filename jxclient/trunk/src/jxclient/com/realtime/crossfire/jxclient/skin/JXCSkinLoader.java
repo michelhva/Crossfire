@@ -1502,7 +1502,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         int i = 0;
-        if(addedElementsContainsWildcard)
+        if (addedElementsContainsWildcard)
         {
             while (i < addedElements.size())
             {

@@ -211,7 +211,7 @@ public class GUIItemFloor extends GUIItemItem
             final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
             setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
         }
-        else if(this.index > 0)
+        else if (this.index > 0)
         {
             final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
             setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);

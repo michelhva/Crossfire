@@ -76,7 +76,7 @@ public class Commands
             return 0;
         }
 
-        if(!cmd.allArguments())
+        if (!cmd.allArguments())
         {
             cmd.execute(args.length >= 2 ? args[1] : "");
             return 1;
