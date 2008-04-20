@@ -153,7 +153,7 @@ public class GUICommand
             break;
 
         case CONNECT:
-            String[] serverHostInfo = ((GUIText)target).getText().split(":", 2);
+            final String[] serverHostInfo = ((GUIText)target).getText().split(":", 2);
             int serverPort = 13327;
             if (serverHostInfo.length > 1)
             {
@@ -161,7 +161,7 @@ public class GUICommand
                 {
                     serverPort = Integer.parseInt(serverHostInfo[1].trim());
                 }
-                catch (NumberFormatException ex)
+                catch (final NumberFormatException ex)
                 {
                     System.err.println("Warning: invalid port value specified, using 13327 instead.");
                     serverPort = 13327;

@@ -722,7 +722,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             {
                 if (server != null)
                 {
-                    String[] serverHostInfo = server.split(":", 2);
+                    final String[] serverHostInfo = server.split(":", 2);
                     int serverPort = 13327;
                     if (serverHostInfo.length > 1)
                     {
@@ -730,7 +730,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                         {
                             serverPort = Integer.parseInt(serverHostInfo[1].trim());
                         }
-                        catch (NumberFormatException ex)
+                        catch (final NumberFormatException ex)
                         {
                             System.err.println("Warning: invalid port value specified, using 13327 instead.");
                             serverPort = 13327;
