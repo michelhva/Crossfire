@@ -733,7 +733,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     {
                         serverPort = 13327;
                     }
-                    connect(server, serverPort);
+                    connect(serverHostInfo[0], serverPort);
                 }
                 else
                 {
