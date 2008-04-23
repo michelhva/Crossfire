@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.util.HexCodec;
+
 /**
  * An UnknownCommandException is generated whenever an unknown message packet is
  * received from the server.
@@ -33,12 +35,35 @@ public class UnknownCommandException extends Exception
     private static final long serialVersionUID = 1;
 
     /**
+     * Details about the unparsable command.
+     */
+    private String details = "";
+
+    /**
      * Creates a new exception with the given text message as a parameter.
-     * @param str The message to assign to this exception.
-     * @since 1.0
+     * @param str the message to assign to this exception
      */
     public UnknownCommandException(final String str)
     {
         super(str);
+    }
+
+    /**
+     * Returns details about the unparsable command.
+     */
+    public String getDetails()
+    {
+        return details;
+    }
+
+    /**
+     * Set the detail information.
+     * @param data contains the raw data bytes of the command
+     * @param start the starting index into <code>data</code>
+     * @param len the length of the command in bytes
+     */
+    public void setDetails(final byte[] data, final int start, final int end)
+    {
+        details = HexCodec.hexDump(data, start, end-start);
     }
 }

@@ -47,4 +47,39 @@ public class HexCodec
         sb.append(hexChars.charAt((value>>4)&15));
         sb.append(hexChars.charAt(value&15));
     }
+
+    /**
+     * Append a given value as a foure digits hexadecimal number.
+     * @param sb the <code>StringBuilder</code> to append to
+     * @param value the value to append
+     */
+    public static void hexEncode4(final StringBuilder sb, final int value)
+    {
+        hexEncode2(sb, value>>16);
+        hexEncode2(sb, value);
+    }
+
+    /**
+     * Returns a hex dump of a part of a byte array.
+     * @param data the byte array to dump
+     * @param start the starting index
+     * @param end the end index
+     * @return the hex dump
+     */
+    public static String hexDump(final byte[] data, final int start, final int end)
+    {
+        final StringBuilder sb = new StringBuilder();
+        for (int i = start; i < end; i += 16)
+        {
+            hexEncode4(sb, i-start);
+            sb.append(':');
+            for (int j = i; j < i+16 && j < end; j++)
+            {
+                sb.append(' ');
+                hexEncode2(sb, data[j]);
+            }
+            sb.append('\n');
+        }
+        return sb.toString();
+    }
 }
