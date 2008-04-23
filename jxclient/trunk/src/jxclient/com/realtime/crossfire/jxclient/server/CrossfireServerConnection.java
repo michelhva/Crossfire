@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -1540,12 +1541,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     sb.append(' ');
                 }
 
-                final String tmp = Integer.toHexString(packet[i]&0xFF);
-                if (tmp.length() < 2)
-                {
-                    sb.append('0');
-                }
-                sb.append(tmp);
+                HexCodec.hexEncode2(sb, packet[i]&0xFF);
             }
             debugProtocolWrite(sb.toString());
         }
