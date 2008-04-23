@@ -1578,7 +1578,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @throws UnknownCommandException If the command cannot be parsed.
      */
-    private void cmd_map2(final byte[] packet, int pos, int end) throws UnknownCommandException
+    private void cmd_map2(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         synchronized (redrawSemaphore)
         {
@@ -1587,6 +1587,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 debugProtocolWrite("recv map2 begin\n");
             }
+            int pos = start;
             while (pos < end)
             {
                 final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
