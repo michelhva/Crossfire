@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.settings;
 
+import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.File;
 import java.io.IOException;
 
@@ -220,8 +221,6 @@ public class Filenames
      */
     private static String encode(final String str)
     {
-        final String hexChars = "0123456789abcdef";
-
         final StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++)
         {
@@ -238,8 +237,7 @@ public class Filenames
             else
             {
                 sb.append('%');
-                sb.append(hexChars.charAt((ch>>4)&15));
-                sb.append(hexChars.charAt(ch&15));
+                HexCodec.hexEncode2(sb, ch);
             }
         }
         return sb.toString();
