@@ -37,7 +37,7 @@ public class UnknownCommandException extends Exception
      * @param str The message to assign to this exception.
      * @since 1.0
      */
-    public UnknownCommandException(String str)
+    public UnknownCommandException(final String str)
     {
         super(str);
     }
