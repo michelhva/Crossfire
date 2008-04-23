@@ -1530,6 +1530,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         {
             // ignore
         }
+        catch (final UnknownCommandException ex)
+        {
+            ex.setDetails(packet, start, end);
+            throw ex;
+        }
 
         if (debugProtocol != null)
         {

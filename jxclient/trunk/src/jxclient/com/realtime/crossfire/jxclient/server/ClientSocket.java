@@ -217,6 +217,7 @@ LOOP:
         catch (final UnknownCommandException ex)
         {
             System.err.println("Warning: received unknown command: "+ex.getMessage());
+            System.err.println(ex.getDetails());
         }
 
         connectionListener.connectionLost();
