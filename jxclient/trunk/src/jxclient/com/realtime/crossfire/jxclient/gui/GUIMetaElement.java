@@ -160,6 +160,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         index += distance;
         getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
+        updateTooltip();
     }
 
     /** {@inheritDoc} */
