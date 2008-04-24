@@ -27,8 +27,9 @@ void checkMap(File mapFile, String mapPath) {
     }
     ErrorCollector errorCollector;
     try {
-        errorCollector = mainControl.runMapValidation(map.getMapModel());
+        mainControl.validateMap(map.getMapModel());
     } finally {
+        errorCollector = map.getMapModel().getErrors();
         if (map.nViews() <= 0) {
             mainControl.getMapManager().closeLevel(map);
         }
