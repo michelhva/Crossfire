@@ -4,21 +4,8 @@ race reptile
 randomitems serpentman_player_items
 face serpentman.131
 msg
-The Serpentman adventurer is a rare breed.
-Few Serpentmen ever leave the swamps, as they
-are not well adjusted for human society.
-Their heads and feet are not shaped properly
-to use boots or helmets made for humanoid
-folk, but their unusual build has given rise
-to a cultural habit of wearing pieces of
-bracelet- and ring-like jewelry on their
-tails.  They possess a tough hide and strong
-legs which enable them to leap further than
-most folks.  Their nasty claws can also double
-as weapons.
-
-They are only partially warm-blooded, and are
-as a result somewhat susceptible to cold.
+The Serpentman adventurer is a rare breed. Few Serpentmen ever leave the swamps, as they are not well adjusted for human society. Their heads and feet are not shaped properly to use boots or helmets made for humanoid folk, but their unusual build has given rise to a cultural habit of wearing pieces of bracelet- and ring-like jewelry on their tails. They possess a tough hide and strong legs which enable them to leap further than most folks. Their nasty claws can also double as weapons.
+They are only partially warm-blooded, and are as a result somewhat susceptible to cold.
 endmsg
 anim
 serpentman.111

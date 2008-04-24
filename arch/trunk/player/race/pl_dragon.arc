@@ -4,29 +4,9 @@ race dragon
 randomitems dragon_player_items
 face pl_dragon_r.151
 msg
-Dragons are completely different than any
-other race. Their vast size and bizarre body
-prevents them both from wearing armour and
-wielding weapons -- tools that they disdain
-in any case. Instead, they are gifted with
-the ability to evolve and grow stronger by
-eating the flesh of their defeated foes.
-
-Over the years, their dragonhide hardens and
-it can provide better protection than the
-best armour. Instead of wielding weapons,
-they use their sharp and lethal claws in
-combat.  Moreover, dragons have a natural
-talent for magic.
-
-Dragons are very interested in the lore of
-the elements and usually choose to
-specialize.  While focusing their metabolism
-on a certain element, they can gain various
-new abilities -- including new spells,
-enhanced claws and more.  Eventually, a
-dragon is able to evolve from the hatchling
-stage into a grown-up terrifying ancient
+Dragons are completely different than any other race. Their vast size and bizarre body prevents them both from wearing armour and wielding weapons -- tools that they disdain in any case. Instead, they are gifted with the ability to evolve and grow stronger by eating the flesh of their defeated foes.
+Over the years, their dragonhide hardens and it can provide better protection than the best armour. Instead of wielding weapons, they use their sharp and lethal claws in combat. Moreover, dragons have a natural talent for magic.
+Dragons are very interested in the lore of the elements and usually choose to specialize. While focusing their metabolism on a certain element, they can gain various new abilities -- including new spells, enhanced claws and more. Eventually, a dragon is able to evolve from the hatchling stage into a grown-up terrifying ancient
 dragon.
 endmsg
 animation pl_dragon_r

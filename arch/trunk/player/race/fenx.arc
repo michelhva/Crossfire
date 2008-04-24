@@ -4,16 +4,8 @@ race fenx
 randomitems fenx_player_items
 face fenx.150
 msg
-Fenxes, also called Fendrakhis by other
-speaking races, are humanoids that have
-some fox-like attributes. A little smaller
-than humans, they are agile and clever,
-but usually share little affinity with
-magical forces.
-Once an important race of Bigworld, they
-were forced to hide into the Great Forest
-after they lost an important war against
-Humans, a long time ago.
+Fenxes, also called Fendrakhis by other speaking races, are humanoids that have some fox-like attributes. A little smaller than humans, they are agile and clever, but usually share little affinity with magical forces.
+Once an important race of Bigworld, they were forced to hide into the Great Forest after they lost an important war against Humans, a long time ago.
 endmsg
 color_fg black
 anim

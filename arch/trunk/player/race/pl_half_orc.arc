@@ -3,14 +3,7 @@ name half orc
 randomitems half_orc_player_items
 face pl_half_orc.151
 msg
-Half-Orcs are usually the product of rape,
-slavery, or some such unpleasantness.  They
-look it too:  Half-Orcs are rather ugly.  On
-average, they're stronger, a bit quicker, and
-hardier than humans, but also stupid, impious,
-and unmagical. They're resistant to poison and
-can see in the dark, and every half-orc seems
-to know how to steal.
+Half-Orcs are usually the product of rape, slavery, or some such unpleasantness. They look it too:  Half-Orcs are rather ugly. On average, they're stronger, a bit quicker, and hardier than humans, but also stupid, impious, and unmagical. They're resistant to poison and can see in the dark, and every half-orc seems to know how to steal.
 endmsg
 anim
 pl_half_orc.111

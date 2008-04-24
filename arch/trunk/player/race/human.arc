@@ -4,11 +4,7 @@ race human
 randomitems human_player_items
 face human.151
 msg
-Humans are the generalists of the races.
-They are fit for any trade, and usually
-pick up a skill from their parents in
-addition to what they've learned as
-apprentices in their craft.
+Humans are the generalists of the races. They are fit for any trade, and usually pick up a skill from their parents in addition to what they've learned as apprentices in their craft.
 endmsg
 color_fg black
 anim
