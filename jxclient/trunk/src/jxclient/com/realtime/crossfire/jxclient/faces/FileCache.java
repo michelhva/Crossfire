@@ -28,8 +28,7 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 /**
- * Implements a disk based cache for {@link Face}s. It uses the same cache file
- * names as the gtk-v2 to allow shading of images caches.
+ * Implements a disk based cache for image files.
  *
  * @author Andreas Kirschbaum
  */
@@ -120,7 +119,7 @@ public class FileCache
     }
 
     /**
-     * Save an image to a file.
+     * Save an {@link ImageIcon} to a file.
      *
      * @param outputFile the file to save to
      *
