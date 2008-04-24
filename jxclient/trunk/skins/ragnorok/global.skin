@@ -35,15 +35,21 @@ commandlist command_status_close AND null DIALOG_CLOSE status
 commandlist command_ground AND null DIALOG_TOGGLE ground
 commandlist command_ground_open AND null DIALOG_OPEN ground
 commandlist command_inventory AND null DIALOG_TOGGLE inventory
+commandlist command_inventory_close AND null DIALOG_CLOSE inventory
 commandlist command_messages AND null DIALOG_TOGGLE messages
 commandlist command_messages_open AND null DIALOG_OPEN messages
+commandlist command_messages_close AND null DIALOG_CLOSE messages
 commandlist command_protections AND null DIALOG_TOGGLE protections
+commandlist command_protections_close AND null DIALOG_CLOSE protections
 commandlist command_skills AND null DIALOG_TOGGLE skills
+commandlist command_skills_close AND null DIALOG_CLOSE skills
 commandlist command_map AND null DIALOG_TOGGLE map
 commandlist command_map_open AND null DIALOG_OPEN map
 commandlist command_setup AND null DIALOG_TOGGLE setup
+commandlist command_setup_close AND null DIALOG_CLOSE setup
 commandlist command_help AND null DIALOG_TOGGLE help
 commandlist command_pickup AND null DIALOG_TOGGLE pickup
+commandlist command_pickup_close AND null DIALOG_CLOSE pickup
 
 commandlist command_help_close AND null DIALOG_CLOSE help
 

@@ -1,7 +1,7 @@
 
 dialog border 4 532 586 198 true
 dialog_hide START META LOGIN
-button button_close 566 4 16 16 close_up close_down false command_messages
+button button_close 566 4 16 16 close_up close_down false command_messages_close
 
 textbutton button_all    5 5 32 18 false command_message_show_all All
 textbutton button_msg   40 5 76 18 false command_message_show_msg Important

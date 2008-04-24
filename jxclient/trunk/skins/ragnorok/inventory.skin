@@ -1,7 +1,7 @@
 
 dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN
-button button_close  484    4   16 16 close_up close_down false command_inventory
+button button_close  484    4   16 16 close_up close_down false command_inventory_close
 
 item inventory inv0    4 30+4   32 32 marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK
 item inventory inv1   36 30+4   32 32 marker_cursed marker_applied inventory_selector marker_locked  1 font_item BLACK

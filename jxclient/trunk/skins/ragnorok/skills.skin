@@ -1,7 +1,7 @@
 
 dialog border                262 216 548 305 true Skills
 dialog_hide START META LOGIN
-button button_close          528   4  16  16 close_up close_down false command_skills
+button button_close          528   4  16  16 close_up close_down false command_skills_close
 
 # skills group
 gauge     act_lockpicking      9  30 166  16 skill_active null skill_inactive ACTIVE_SKILL_lockpicking WE

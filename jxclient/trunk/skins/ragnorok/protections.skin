@@ -1,7 +1,7 @@
 
 dialog border                262 416  548 156 true Protections
 dialog_hide START META LOGIN
-button button_close          528 4    16  16 close_up close_down false command_protections
+button button_close          528 4    16  16 close_up close_down false command_protections_close
 
 label_text label_phys         10  30  90  16 font_label BLACK Physical:
 label_text label_fire         10  50  90  16 font_label BLACK Fire:
