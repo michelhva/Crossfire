@@ -22,6 +22,7 @@ is_floor 1
 face shop_building.111
 no_pick 1
 no_magic 1
+damned 1
 type 68
 auto_apply 1
 randomitems shop_building
@@ -33,6 +34,7 @@ is_floor 1
 face shop_building.111
 no_pick 1
 no_magic 1
+damned 1
 type 68
 auto_apply 1
 randomitems shop_building_fant
@@ -44,6 +46,7 @@ is_floor 1
 face shop_building.111
 no_pick 1
 no_magic 1
+damned 1
 type 68
 auto_apply 1
 randomitems shop_building_west
@@ -55,6 +58,7 @@ is_floor 1
 face shop_building.111
 no_pick 1
 no_magic 1
+damned 1
 type 68
 auto_apply 1
 randomitems shop_building_east
@@ -66,6 +70,7 @@ is_floor 1
 face shop_building.111
 no_pick 1
 no_magic 1
+damned 1
 type 68
 auto_apply 1
 randomitems shop_building_pupland
