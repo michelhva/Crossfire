@@ -181,12 +181,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             }
             break;
 
-        case KeyEvent.VK_ENTER:
-            getJXCWindow().updatePlayerName(text.toString());
-            execute((JXCWindow)e.getSource(), text.toString());
-            setActive(false);
-            break;
-
         case KeyEvent.VK_LEFT:
             if (cursor > 0)
             {
@@ -214,15 +208,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 setCursor(text.length());
             }
             break;
-
-        default:
-            final char chr = e.getKeyChar();
-            if (chr != KeyEvent.CHAR_UNDEFINED && chr >= ' ')
-            {
-                text.insert(cursor, chr);
-                setCursor(cursor+1);
-            }
-            break;
         }
     }
 
@@ -234,6 +219,24 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /** {@inheritDoc} */
     public void keyTyped(final KeyEvent e)
     {
+        final char ch = e.getKeyChar();
+        switch (ch)
+        {
+        case '\r':
+        case '\n':
+            getJXCWindow().updatePlayerName(text.toString());
+            execute((JXCWindow)e.getSource(), text.toString());
+            setActive(false);
+            break;
+
+        default:
+            if (ch != KeyEvent.CHAR_UNDEFINED && ch >= ' ')
+            {
+                text.insert(cursor, ch);
+                setCursor(cursor+1);
+            }
+            break;
+        }
     }
 
     /**
