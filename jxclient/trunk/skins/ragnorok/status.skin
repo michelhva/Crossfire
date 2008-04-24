@@ -52,4 +52,5 @@ label_stat stat_wc     240 200  40  16 font_label BLACK WC RIGHT
 label_stat stat_arm    240 220  40  16 font_label BLACK ARM RIGHT
 label_stat stat_ac     240 240  40  16 font_label BLACK AC RIGHT
 
+# Allow dialog shifting by dragging the title bar.
 ignore border_title
