@@ -1,0 +1,35 @@
+
+dialog border 128 414 768 354 true Create New Character
+dialog_hide START META LOGIN PLAYING
+
+label_stat stat_title      10  30 638  16 font_label BLACK TITLE LEFT
+
+label_text label_str      679 200  50  16 font_label BLACK STR(1):
+label_text label_dex      679 220  50  16 font_label BLACK DEX(2):
+label_text label_con      679 240  50  16 font_label BLACK CON(3):
+label_text label_int      679 260  50  16 font_label BLACK INT(4):
+label_text label_wis      679 280  50  16 font_label BLACK WIS(5):
+label_text label_pow      679 300  50  16 font_label BLACK POW(6):
+label_text label_cha      679 320  50  16 font_label BLACK CHA(7):
+label_stat stat_str       729 200  25  16 font_label BLACK STR RIGHT
+label_stat stat_dex       729 220  25  16 font_label BLACK DEX RIGHT
+label_stat stat_con       729 240  25  16 font_label BLACK CON RIGHT
+label_stat stat_int       729 260  25  16 font_label BLACK INT RIGHT
+label_stat stat_wis       729 280  25  16 font_label BLACK WIS RIGHT
+label_stat stat_pow       729 300  25  16 font_label BLACK POW RIGHT
+label_stat stat_cha       729 320  25  16 font_label BLACK CHA RIGHT
+
+log_message messages       20  55 646 295 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_color messages 1 #000000
+log_color messages 4 #b78b00
+log_color messages 5 #8080ff
+log_color messages 6 #d0a000
+log_color messages 7 #00c000
+log_color messages 11 #909000
+log_color messages 12 #959054
+
+button messages_up          4  55  16  16 slider_up_up slider_up_down true command_newchar_up
+scrollbar messages_slider   4  71  16 263 true messages #c0c0c0 #808080
+button messages_down        4 334  16  16 slider_down_up slider_down_down true command_newchar_down
+commandlist_add command_newchar_up messages SCROLL -1
+commandlist_add command_newchar_down messages SCROLL 1

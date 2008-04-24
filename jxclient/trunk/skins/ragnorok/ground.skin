@@ -1,6 +1,6 @@
 
 dialog border -5 731 1034 42 true
-dialog_hide START META LOGIN
+dialog_hide START META LOGIN NEWCHAR
 
 button button_left     5 5 16 32 scroll_left_up scroll_left_down true command_ground_left
 item floor floor0     21 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK

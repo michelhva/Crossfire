@@ -17,6 +17,8 @@ def checkbox checked unchecked font_button BLACK
 def dialog dialog font_title #801010 1
 def textbutton button_up button_down font_button BLACK
 
+commandlist command_newchar_close AND null DIALOG_CLOSE newchar
+
 commandlist command_disconnect AND null GUI_META
 commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
 
@@ -57,6 +59,9 @@ commandlist command_book_close AND null DIALOG_CLOSE book
 
 commandlist command_ground_left AND
 commandlist command_ground_right AND
+
+commandlist command_newchar_up AND
+commandlist command_newchar_down AND
 
 commandlist command_inventory_up OR
 commandlist command_inventory_down OR

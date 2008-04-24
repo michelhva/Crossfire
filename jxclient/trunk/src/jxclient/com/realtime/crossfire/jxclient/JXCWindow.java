@@ -320,6 +320,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         public void playerReceived(final CfPlayer player)
         {
+            if (jxcWindowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
+            {
+                openDialogByName("messages"); // hack for race selection
+            }
             jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
             characterPickup.update();                         // reset pickup mode
@@ -573,6 +577,36 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         DialogStateParser.load(skin, jxcWindowRenderer);
         loadKeybindings();
         loadShortcuts();
+    }
+
+    /**
+     * Opens a dialog by name.
+     * @param dialog the name
+     * @return whether the dialog exists
+     */
+    private boolean openDialogByName(final String name)
+    {
+        final Gui dialog = skin.getDialog(name);
+        if (dialog == null)
+        {
+            return false;
+        }
+
+        openDialog(dialog);
+        return true;
+    }
+
+    /**
+     * Closes a dialog by name.
+     * @param dialog the name
+     */
+    private void closeDialogByName(final String name)
+    {
+        final Gui dialog = skin.getDialog(name);
+        if (dialog != null)
+        {
+            jxcWindowRenderer.closeDialog(dialog);
+        }
     }
 
     public void endRendering()
@@ -1362,17 +1396,21 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 }
             }
         }
-        else if (evt.getPrompt().startsWith("[y] to roll new stats"))
+        else if (evt.getPrompt().startsWith("[y] to roll new stats")
+        || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
         {
-            final Gui messagesDialog = skin.getDialog("messages");
-            if (messagesDialog != null)
+            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+            if (openDialogByName("newchar"))
             {
-                openDialog(messagesDialog);
+                closeDialogByName("messages");
+                closeDialogByName("status");
             }
-            final Gui statusDialog = skin.getDialog("status");
-            if (statusDialog != null)
+            else
             {
-                openDialog(statusDialog);
+                // fallback: open both message and status dialogs if this skin
+                // does not define a login dialog
+                openDialogByName("messages");
+                openDialogByName("status");
             }
             openDialog(queryDialog); // raise dialog
         }

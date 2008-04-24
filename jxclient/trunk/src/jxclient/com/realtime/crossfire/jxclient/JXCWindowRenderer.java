@@ -117,6 +117,7 @@ public class JXCWindowRenderer
         START,
         META,
         LOGIN,
+        NEWCHAR,
         PLAYING,
     }
 
