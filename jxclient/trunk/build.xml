@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <project name="jxclient" default="all" basedir=".">
+    <property file="developer.properties" />
     <property name="src.jxclient" value="src/jxclient"/>
     <property name="build" value="build"/>
     <target name="init">
