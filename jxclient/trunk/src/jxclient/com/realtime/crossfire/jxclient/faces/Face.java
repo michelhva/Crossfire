@@ -23,9 +23,10 @@ import java.lang.ref.SoftReference;
 import javax.swing.ImageIcon;
 
 /**
- * Manage information for one face. The face is uniquely identified by a face
- * id, has a face name, and three images (original as sent by the server,
- * scaled for use in map view, scaled for use in magic map view).
+ * A <code>Face</code> represents one image received from a Crossfire server.
+ * The face is uniquely identified by a face id; it has a face name and three
+ * images (original as sent by the server, scaled for use in map view, scaled
+ * for use in magic map view) attached.
  *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
