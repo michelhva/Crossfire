@@ -181,6 +181,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             }
             break;
 
+        case KeyEvent.VK_KP_LEFT:
         case KeyEvent.VK_LEFT:
             if (cursor > 0)
             {
@@ -188,6 +189,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             }
             break;
 
+        case KeyEvent.VK_KP_RIGHT:
         case KeyEvent.VK_RIGHT:
             if (cursor < text.length())
             {
