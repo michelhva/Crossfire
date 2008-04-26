@@ -145,6 +145,16 @@ public abstract class JXCSkinLoader implements JXCSkin
     private String skinName = "unknown";
 
     /**
+     * The map width in tiles; zero if unset.
+     */
+    private int mapWidth = 0;
+
+    /**
+     * The map height in tiles; zero if unset.
+     */
+    private int mapHeight = 0;
+
+    /**
      * The text button factory. Set to <code>null</code> until defined.
      */
     private TextButtonFactory textButtonFactory = null;
@@ -191,6 +201,8 @@ public abstract class JXCSkinLoader implements JXCSkin
     public void load(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
     {
         skinName = "unknown";
+        mapWidth = 0;
+        mapHeight = 0;
         dialogs.clear();
         images.clear();
         addDialog("keybind", p);
@@ -227,12 +239,29 @@ public abstract class JXCSkinLoader implements JXCSkin
             checkBoxFactory = null;
             images.clear();
         }
+
+        if (mapWidth == 0 || mapHeight == 0)
+        {
+            throw new JXCSkinException("Missing map command");
+        }
     }
 
     /** {@inheritDoc} */
     public String getSkinName()
     {
         return skinName;
+    }
+
+    /** {@inheritDoc} */
+    public int getMapWidth()
+    {
+        return mapWidth;
+    }
+
+    /** {@inheritDoc} */
+    public int getMapHeight()
+    {
+        return mapHeight;
     }
 
     private Gui addDialog(final String name, final JXCWindow window)
@@ -1245,6 +1274,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[4]);
                             final int w = parseInt(args[5]);
                             final int h = parseInt(args[6]);
+
+                            if (tileSize <= 0) throw new IOException("invalid tile size "+tileSize);
+                            if (w%tileSize != 0) throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
+                            if (h%tileSize != 0) throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
+                            final int tmpW = w/tileSize;
+                            final int tmpH = h/tileSize;
+                            CrossfireServerConnection.validateMapSize(tmpW, tmpH);
+                            mapWidth = tmpW;
+                            mapHeight = tmpH;
+
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
                             elements.insert(name, element);
                         }

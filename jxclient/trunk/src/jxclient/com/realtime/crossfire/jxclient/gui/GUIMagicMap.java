@@ -52,6 +52,16 @@ public class GUIMagicMap extends GUIElement
     private static final int TILE_SIZE = 4;
 
     /**
+     * The map width in tiles.
+     */
+    private final int mapWidth;
+
+    /**
+     * The map height in tiles.
+     */
+    private final int mapHeight;
+
+    /**
      * The x offset of the tile representing the player.
      */
     private final int playerX;
@@ -174,7 +184,7 @@ public class GUIMagicMap extends GUIElement
                         redrawTiles(g, map, 0, h/TILE_SIZE-dy/TILE_SIZE, w/TILE_SIZE, h/TILE_SIZE);
                     }
                 }
-                redrawSquare(g, map, (CrossfireServerConnection.MAP_WIDTH-1)/2-evt.getDX(), (CrossfireServerConnection.MAP_HEIGHT-1)/2-evt.getDY());
+                redrawSquare(g, map, (mapWidth-1)/2-evt.getDX(), (mapHeight-1)/2-evt.getDY());
                 markPlayer(g);
                 g.dispose();
             }
@@ -238,10 +248,12 @@ public class GUIMagicMap extends GUIElement
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
+        mapWidth = jxcWindow.getCrossfireServerConnection().getMapWidth();
+        mapHeight = jxcWindow.getCrossfireServerConnection().getMapHeight();
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
-        offsetX = playerX-((CrossfireServerConnection.MAP_WIDTH-1)/2)*TILE_SIZE;
-        offsetY = playerY-((CrossfireServerConnection.MAP_HEIGHT-1)/2)*TILE_SIZE;
+        offsetX = playerX-((mapWidth-1)/2)*TILE_SIZE;
+        offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
         jxcWindow.getCrossfireServerConnection().addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
@@ -307,7 +319,7 @@ public class GUIMagicMap extends GUIElement
         {
             redrawSquare(g, map, x, y, layer);
         }
-        if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= CrossfireServerConnection.MAP_WIDTH || y >= CrossfireServerConnection.MAP_HEIGHT)
+        if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight)
         {
             g.setColor(GUIMap.fogOfWarColor);
             g.fillRect(x*TILE_SIZE+offsetX, y*TILE_SIZE+offsetY, TILE_SIZE, TILE_SIZE);

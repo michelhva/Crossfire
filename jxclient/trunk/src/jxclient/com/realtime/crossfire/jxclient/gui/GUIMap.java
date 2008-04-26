@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapListener;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.Graphics2D;
@@ -61,11 +62,57 @@ public class GUIMap extends GUIElement
      */
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
+    /**
+     * The map width in tiles.
+     */
+    private int mapWidth = 0;
+
+    /**
+     * The map height in tiles.
+     */
+    private int mapHeight = 0;
+
     private final ImageIcon blackTile;
 
     private final boolean useBigImages;
 
     private final int tileSize;
+
+    /**
+     * The tile x-coordinate where map drawing starts. May be positive if the
+     * map view is larger than the gui's area.
+     */
+    private int displayMinX = 0;
+
+    /**
+     * The tile x-coordinate where map drawing ends. May be less than {@link
+     * #mapWidth} if the map view is larger than the gui's area.
+     */
+    private int displayMaxX = 0;
+
+    /**
+     * The tile y-coordinate where map drawing starts. May be positive if the
+     * map view is larger than the gui's area.
+     */
+    private int displayMinY = 0;
+
+    /**
+     * The tile y-coordinate where map drawing ends. May be less than {@link
+     * #mapWidth} if the map view is larger than the gui's area.
+     */
+    private int displayMaxY = 0;
+
+    /**
+     * The x-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
+     */
+    private int offsetX = 0;
+
+    /**
+     * The y-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
+     */
+    private int offsetY = 0;
 
     /**
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
@@ -91,7 +138,15 @@ public class GUIMap extends GUIElement
                     final int y0 = map.getOffsetY();
                     for (final CfMapSquare mapSquare : evt.getChangedSquares())
                     {
-                        redrawSquare(g, map, mapSquare.getX()+x0, mapSquare.getY()+y0);
+                        final int x = mapSquare.getX()+x0;
+                        if (displayMinX <= x && x < displayMaxX)
+                        {
+                            final int y = mapSquare.getY()+y0;
+                            if (displayMinY <= y && y < displayMaxY)
+                            {
+                                redrawSquare(g, map, x, y);
+                            }
+                        }
                     }
                 }
                 finally
@@ -139,7 +194,7 @@ public class GUIMap extends GUIElement
             {
                 final int dx = -evt.getDX();
                 final int dy = -evt.getDY();
-                if (Math.abs(dx) >= CrossfireServerConnection.MAP_WIDTH || Math.abs(dy) >= CrossfireServerConnection.MAP_HEIGHT)
+                if (Math.abs(dx) >= mapWidth || Math.abs(dy) >= mapHeight)
                 {
                     setChanged();
                     return;
@@ -150,55 +205,55 @@ public class GUIMap extends GUIElement
                 if (dx < 0)
                 {
                     x = -dx;
-                    w = CrossfireServerConnection.MAP_WIDTH+dx;
+                    w = mapWidth+dx;
                 }
                 else
                 {
                     x = 0;
-                    w = CrossfireServerConnection.MAP_WIDTH-dx;
+                    w = mapWidth-dx;
                 }
                 final int y;
                 final int h;
                 if (dy < 0)
                 {
                     y = -dy;
-                    h = CrossfireServerConnection.MAP_HEIGHT+dy;
+                    h = mapHeight+dy;
                 }
                 else
                 {
                     y = 0;
-                    h = CrossfireServerConnection.MAP_HEIGHT-dy;
+                    h = mapHeight-dy;
                 }
 
                 final Graphics2D g = buffer.createGraphics();
                 try
                 {
-                    g.copyArea(x*tileSize, y*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
+                    g.copyArea(offsetX+x*tileSize, offsetY+y*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
 
-                    for (int yy = 0; yy < y; yy++)
+                    for (int yy = displayMinY; yy < Math.min(y, displayMaxY); yy++)
                     {
-                        for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        for (int xx = displayMinX; xx < displayMaxX; xx++)
                         {
                             redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
                     }
 
-                    for (int yy = y+h; yy < CrossfireServerConnection.MAP_HEIGHT; yy++)
+                    for (int yy = Math.max(y+h, displayMinY); yy < displayMaxY; yy++)
                     {
-                        for (int xx = 0; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        for (int xx = displayMinX; xx < displayMaxX; xx++)
                         {
                             redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
                     }
 
-                    for (int yy = y; yy < y+h; yy++)
+                    for (int yy = Math.max(y, displayMinY); yy < Math.min(y+h, displayMaxY); yy++)
                     {
-                        for (int xx = 0; xx < x; xx++)
+                        for (int xx = displayMinX; xx < Math.min(x, displayMaxX); xx++)
                         {
                             redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
 
-                        for (int xx = x+w; xx < CrossfireServerConnection.MAP_WIDTH; xx++)
+                        for (int xx = Math.max(x+w, displayMinX); xx < displayMaxX; xx++)
                         {
                             redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
                         }
@@ -210,6 +265,18 @@ public class GUIMap extends GUIElement
                 }
             }
             setChanged();
+        }
+    };
+
+    /**
+     * The listener to registered to detect map size changes.
+     */
+    private final MapSizeListener mapSizeListener = new MapSizeListener()
+    {
+        /** {@inheritDoc} */
+        public void mapSizeChanged(final int mapWidth, final int mapHeight)
+        {
+            setMapSize(mapWidth, mapHeight);
         }
     };
 
@@ -253,12 +320,33 @@ public class GUIMap extends GUIElement
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
-        if (w != CrossfireServerConnection.MAP_WIDTH*tileSize) throw new IOException("w="+w+"!="+CrossfireServerConnection.MAP_WIDTH*tileSize);
-        if (h != CrossfireServerConnection.MAP_HEIGHT*tileSize) throw new IOException("h="+h+"!="+CrossfireServerConnection.MAP_HEIGHT*tileSize);
 
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
+
+        final CrossfireServerConnection crossfireServerConnection = jxcWindow.getCrossfireServerConnection();
+        crossfireServerConnection.addMapSizeListener(mapSizeListener);
+        setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
+    }
+
+    /**
+     * Redraws the complete map view.
+     * @param g the graphics to draw into
+     */
+    private void redrawAll(final Graphics g)
+    {
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, w, h);
+
+        final CfMap map = CfMapUpdater.getMap();
+        for (int y = displayMinY; y < displayMaxY; y++)
+        {
+            for (int x = displayMinX; x < displayMaxX; x++)
+            {
+                redrawSquare(g, map, x, y);
+            }
+        }
     }
 
     /**
@@ -272,7 +360,7 @@ public class GUIMap extends GUIElement
      */
     private void cleanSquare(final Graphics g, final int x, final int y)
     {
-        g.drawImage(blackTile.getImage(), x*tileSize, y*tileSize, null);
+        g.drawImage(blackTile.getImage(), offsetX+x*tileSize, offsetY+y*tileSize, null);
     }
 
     /**
@@ -302,13 +390,13 @@ public class GUIMap extends GUIElement
         if (map.isFogOfWar(x, y))
         {
             g.setColor(fogOfWarColor);
-            g.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
+            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
         if (darkness < 255)
         {
             g.setColor(getDarknessColor(darkness));
-            g.fillRect(x*tileSize, y*tileSize, tileSize, tileSize);
+            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
     }
 
@@ -327,8 +415,8 @@ public class GUIMap extends GUIElement
      */
     private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
     {
-        final int px = x*tileSize;
-        final int py = y*tileSize;
+        final int px = offsetX+x*tileSize;
+        final int py = offsetY+y*tileSize;
 
         final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
         if (headMapSquare != null)
@@ -367,10 +455,16 @@ public class GUIMap extends GUIElement
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
-            final int dx = e.getX()/tileSize-CrossfireServerConnection.MAP_WIDTH/2;
-            final int dy = e.getY()/tileSize-CrossfireServerConnection.MAP_HEIGHT/2;
-            final JXCWindow jxcw = (JXCWindow)e.getSource();
-            jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
+            if (e.getX() >= offsetX && e.getY() >= offsetY)
+            {
+                final int dx = (e.getX()-offsetX)/tileSize-mapWidth/2;
+                final int dy = (e.getY()-offsetY)/tileSize-mapHeight/2;
+                if (dx < mapWidth && dy < mapHeight)
+                {
+                    final JXCWindow jxcw = (JXCWindow)e.getSource();
+                    jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
+                }
+            }
             break;
 
         case MouseEvent.BUTTON2:
@@ -395,5 +489,57 @@ public class GUIMap extends GUIElement
         }
 
         return darknessColors[darkness];
+    }
+
+    /**
+     * Sets the map size. Calculates fields <code>displayMin/MaxX/Y</code> and
+     * <code>offsetX/Y</code>.
+     * @param mapWidth the map width in tiles
+     * @param mapHeight the map height in tiles
+     */
+    private void setMapSize(final int mapWidth, final int mapHeight)
+    {
+        this.mapWidth = mapWidth;
+        this.mapHeight = mapHeight;
+
+        if (mapWidth*tileSize < w)
+        {
+            displayMinX = 0;
+            displayMaxX = mapWidth;
+            offsetX = (w-mapWidth*tileSize)/2;
+        }
+        else
+        {
+            final int n = (w+tileSize-1)/(2*tileSize);
+            final int effectiveW = (1+2*n)*tileSize;
+            displayMinX = (mapWidth-(2*n+1))/2;
+            displayMaxX = displayMinX+(1+2*n);
+            offsetX = (w-effectiveW)/2;
+        }
+
+        if (mapHeight*tileSize < h)
+        {
+            displayMinY = 0;
+            displayMaxY = mapHeight;
+            offsetY = (h-mapHeight*tileSize)/2;
+        }
+        else
+        {
+            final int n = (h+tileSize-1)/(2*tileSize);
+            final int effectiveH = (1+2*n)*tileSize;
+            displayMinY = (mapHeight-(2*n+1))/2;
+            displayMaxY = displayMinY+(1+2*n);
+            offsetY = (h-effectiveH)/2;
+        }
+
+        final Graphics2D g = buffer.createGraphics();
+        try
+        {
+            redrawAll(g);
+        }
+        finally
+        {
+            g.dispose();
+        }
     }
 }

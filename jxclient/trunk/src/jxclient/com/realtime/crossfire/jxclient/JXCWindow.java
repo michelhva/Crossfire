@@ -648,6 +648,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 setTitle(TITLE_PREFIX+" - "+hostname);
                 ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
                 ItemsList.getStats().reset();
+                server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
                 Faces.reset();
                 commandQueue.clear();
