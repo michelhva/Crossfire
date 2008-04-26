@@ -67,21 +67,26 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     public static final int MAP2_COORD_OFFSET = 15;
 
     /**
-     * The map width in tiles that is negotiated with the server.
-     */
-    public static final int MAP_WIDTH = 17;
-
-    /**
-     * The map height in tiles that is negotiated with the server.
-     */
-    public static final int MAP_HEIGHT = 13;
-
-    /**
      * Pattern to split a string by ":".
      */
     private static final Pattern patternDot = Pattern.compile(":");
 
     private static final Charset utf8 = Charset.forName("UTF-8");
+
+    /**
+     * The map width in tiles that is negotiated with the server.
+     */
+    private int mapWidth = 17;
+
+    /**
+     * The map height in tiles that is negotiated with the server.
+     */
+    private int mapHeight = 13;
+
+    /**
+     * The {@link MapSizeListener}s to be notified.
+     */
+    private final List<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
     private final List<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
 
@@ -230,6 +235,24 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         this.animations = animations;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
+    }
+
+    /**
+     * Adds a listener to be notified about map size changes.
+     * @param listener the listener to add
+     */
+    public synchronized void addMapSizeListener(final MapSizeListener listener)
+    {
+        mapSizeListeners.add(listener);
+    }
+
+    /**
+     * Removes a listener to be notified about map size changes.
+     * @param listener the listener to remove
+     */
+    public synchronized void removeMapSizeListener(final MapSizeListener listener)
+    {
+        mapSizeListeners.remove(listener);
     }
 
     /**
@@ -1023,7 +1046,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 {
                     debugProtocolWrite("recv newmap\n");
                 }
-                CfMapUpdater.processNewmap(MAP_WIDTH, MAP_HEIGHT);
+                CfMapUpdater.processNewmap(mapWidth, mapHeight);
                 return;
 
             case 'p':
@@ -1760,7 +1783,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private void cmd_version(final int csval, final int scval, final String vinfo)
     {
-        CfMapUpdater.processNewmap(MAP_WIDTH, MAP_HEIGHT);
+        CfMapUpdater.processNewmap(mapWidth, mapHeight);
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MessageTypes.getAllTypes());
         sendSetup(
@@ -1775,7 +1798,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             "itemcmd 2",
             "spellmon 1",
             "tick 1",
-            "mapsize "+MAP_WIDTH+"x"+MAP_HEIGHT);
+            "mapsize "+mapWidth+"x"+mapHeight);
         sendRequestinfo("image_info");
         sendRequestinfo("skill_info");
         sendRequestinfo("exp_table");
@@ -1926,9 +1949,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             }
             else if (option.equals("mapsize"))
             {
-                if (!value.equals(MAP_WIDTH+"x"+MAP_HEIGHT))
+                if (!value.equals(mapWidth+"x"+mapHeight))
                 {
-                    throw new UnknownCommandException("the server is not suitable for this client since it does not support a map size of "+MAP_WIDTH+"x"+MAP_HEIGHT+".");
+                    throw new UnknownCommandException("the server is not suitable for this client since it does not support a map size of "+mapWidth+"x"+mapHeight+".");
                 }
             }
             else if (option.equals("map2cmd"))
@@ -2374,5 +2397,65 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             System.exit(1);
             throw new AssertionError();
         }
+    }
+
+    /**
+     * Validates a map size.
+     * @param mapWidth the map width in tiles; must be odd and between 3 and 63
+     * @param mapHeight the map height in tiles; must be odd and between 3 and
+     * 63
+     * @throws IllegalArgumentException if the map size if invalid
+     */
+    public static void validateMapSize(final int mapWidth, final int mapHeight)
+    {
+        if (mapWidth%2 == 0) throw new IllegalArgumentException("map width is even");
+        if (mapHeight%2 == 0) throw new IllegalArgumentException("map height is even");
+        if (mapWidth < 3) throw new IllegalArgumentException("map width is less than 3");
+        if (mapWidth > 63) throw new IllegalArgumentException("map width is greater than 63");
+        if (mapHeight < 3) throw new IllegalArgumentException("map width is less than 3");
+        if (mapHeight > 63) throw new IllegalArgumentException("map width is greater than 63");
+    }
+
+    /**
+     * Sets the map size. Must not be called in connected state.
+     * @param mapWidth the map width in tiles; must be odd and between 3 and 63
+     * @param mapHeight the map height in tiles; must be odd and between 3 and
+     * 63
+     * @throws IllegalArgumentException if the map size if invalid
+     */
+    public void setMapSize(final int mapWidth, final int mapHeight)
+    {
+        if (isConnected()) throw new IllegalStateException();
+
+        validateMapSize(mapWidth, mapHeight);
+        if (this.mapWidth == mapWidth && this.mapHeight == mapHeight)
+        {
+            return;
+        }
+
+        this.mapWidth = mapWidth;
+        this.mapHeight = mapHeight;
+        for (final MapSizeListener listener : mapSizeListeners)
+        {
+            listener.mapSizeChanged(mapWidth, mapHeight);
+        }
+    }
+
+    /**
+     * Return the map width in tiles.
+     * @return the map width
+     */
+    public int getMapWidth()
+    {
+        return mapWidth;
+    }
+
+    /**
+     * Return the map height in tiles.
+     * @return the map height
+     */
+    public int getMapHeight()
+    {
+        return mapHeight;
     }
 }

@@ -44,6 +44,18 @@ public interface JXCSkin extends Iterable<Gui>
     String getSkinName();
 
     /**
+     * Returns the map width in tiles.
+     * @return the map width in tiles
+     */
+    int getMapWidth();
+
+    /**
+     * Returns the map height in tiles.
+     * @return the map height in tiles
+     */
+    int getMapHeight();
+
+    /**
      * Return all gui instances of this skin. The instances has no defined
      * order.
      *

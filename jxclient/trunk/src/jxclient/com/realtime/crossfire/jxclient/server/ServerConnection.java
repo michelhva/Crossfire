@@ -92,6 +92,18 @@ public abstract class ServerConnection implements PacketListener
         }
     }
 
+    /**
+     * Returns whether the socket is connected.
+     * @return whether the socket is connected
+     */
+    public boolean isConnected()
+    {
+        synchronized (clientSocketSem)
+        {
+            return clientSocket != null;
+        }
+    }
+
     public ScriptMonitorListeners getScriptMonitorListeners()
     {
         return scriptMonitorListeners;
