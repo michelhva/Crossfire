@@ -262,46 +262,6 @@ public class GUIMap extends GUIElement
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
     }
 
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean useBigImages)
-    {
-        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
-        this.useBigImages = useBigImages;
-
-        if (useBigImages)
-        {
-            tileSize = Faces.SQUARE_SIZE;
-        }
-        else
-        {
-            tileSize = 32;
-        }
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
-        if (w != CrossfireServerConnection.MAP_WIDTH*tileSize) throw new IllegalArgumentException();
-        if (h != CrossfireServerConnection.MAP_HEIGHT*tileSize) throw new IllegalArgumentException();
-
-        createBuffer();
-    }
-
-    /** {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
-    {
-/*
-        super.render(g);
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, w, h);
-        for (int x = 0; x < CrossfireServerConnection.MAP_WIDTH; x++)
-        {
-            for (int y = 0; y < CrossfireServerConnection.MAP_HEIGHT; y++)
-            {
-                redrawSquare(g, CfMapUpdater.getMap(), x, y);
-            }
-        }
-*/
-    }
-
     /**
      * Redraw one square completely black.
      *
