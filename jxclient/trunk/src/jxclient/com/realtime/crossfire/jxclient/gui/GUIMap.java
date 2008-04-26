@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
@@ -368,8 +367,8 @@ public class GUIMap extends GUIElement
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
-            final int dx = e.getX()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_WIDTH/2;
-            final int dy = e.getY()/Faces.SQUARE_SIZE-CrossfireServerConnection.MAP_HEIGHT/2;
+            final int dx = e.getX()/tileSize-CrossfireServerConnection.MAP_WIDTH/2;
+            final int dy = e.getY()/tileSize-CrossfireServerConnection.MAP_HEIGHT/2;
             final JXCWindow jxcw = (JXCWindow)e.getSource();
             jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
             break;
