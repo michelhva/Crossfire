@@ -1125,6 +1125,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     final List<String> options = new ArrayList<String>();
                     while (pos < end)
                     {
+                        while (pos < end && packet[pos] == ' ')
+                        {
+                            pos++;
+                        }
                         final int startPos = pos;
                         while (pos < end && packet[pos] != ' ')
                         {
