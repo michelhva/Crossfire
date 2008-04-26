@@ -91,6 +91,7 @@ public abstract class ServerConnection implements PacketListener
             }
         }
     }
+
     public ScriptMonitorListeners getScriptMonitorListeners()
     {
         return scriptMonitorListeners;
