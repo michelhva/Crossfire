@@ -136,9 +136,9 @@ public class JXCWindowRenderer
         currentGui = new Gui(jxcWindow);
     }
 
-    public void init(final int w, final int h)
+    public void init(final Resolution resolution)
     {
-        displayMode = new DisplayMode(w, h, DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
+        displayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
     }
 
     /**

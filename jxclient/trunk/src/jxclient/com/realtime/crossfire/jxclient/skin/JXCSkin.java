@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.Iterator;
 
@@ -33,7 +34,7 @@ import java.util.Iterator;
  */
 public interface JXCSkin extends Iterable<Gui>
 {
-    void load(CrossfireServerConnection s, JXCWindow p) throws JXCSkinException;
+    void load(CrossfireServerConnection s, JXCWindow p, Resolution resolution) throws JXCSkinException;
 
     /**
      * Return a short name for the skin. It is used to construct path or file
@@ -42,6 +43,12 @@ public interface JXCSkin extends Iterable<Gui>
      * @return The skin name.
      */
     String getSkinName();
+
+    /**
+     * Returns the resolution of this skin.
+     * @return the resolution
+     */
+    Resolution getResolution();
 
     /**
      * Returns the map width in tiles.

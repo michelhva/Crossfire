@@ -1,5 +1,5 @@
 
-picture background   0 0 1024 768 background_start
+picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_start
 
 textbutton meta    210 200 600 18 false command_meta Connect to a game server
 textbutton new     210 300 600 18 false command_meta Create a new character (not implemented)

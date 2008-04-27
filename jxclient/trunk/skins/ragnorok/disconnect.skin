@@ -1,5 +1,5 @@
 
-dialog dialog         398 260 4+220+4 4+110+4 false Disconnect from server?
+dialog dialog         WIDTH/2-114 HEIGHT/2-124 4+220+4 4+110+4 false Disconnect from server?
 set_modal
 
 label_multi message    10  30  208 40 font_label BLACK <<EOF

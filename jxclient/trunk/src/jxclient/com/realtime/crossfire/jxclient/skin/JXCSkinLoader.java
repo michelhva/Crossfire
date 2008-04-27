@@ -71,6 +71,7 @@ import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
+import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -87,6 +88,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -112,7 +114,12 @@ public abstract class JXCSkinLoader implements JXCSkin
     /**
      * Pattern to parse integer constants.
      */
-    private static final Pattern patternExpr = Pattern.compile("([0-9]+)([-+])(.+)");
+    private static final Pattern patternExpr = Pattern.compile("([0-9]+|WIDTH|HEIGHT|WIDTH/2|HEIGHT/2)([-+])(.+)");
+
+    /**
+     * Available resolutions for this skin.
+     */
+    private final Set<Resolution> resolutions = new HashSet<Resolution>();
 
     /**
      * All defined gui elements.
@@ -143,6 +150,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The skin name.
      */
     private String skinName = "unknown";
+
+    /**
+     * The selected resolution.
+     */
+    private Resolution selectedResolution = new Resolution(true, 0, 0);
 
     /**
      * The map width in tiles; zero if unset.
@@ -188,18 +200,105 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            final InputStream inputStream = getInputStream("start.skin");
-            inputStream.close();
+            final InputStream is = getInputStream("resolutions");
+            try
+            {
+                final InputStreamReader isr = new InputStreamReader(is, "UTF-8");
+                try
+                {
+                    final BufferedReader br = new BufferedReader(isr);
+                    try
+                    {
+                        for (;;)
+                        {
+                            final String line = br.readLine();
+                            if (line == null)
+                            {
+                                break;
+                            }
+
+                            final Resolution resolution = Resolution.parse(true, line);
+                            if (resolution == null)
+                            {
+                                throw new JXCSkinException(getURI("resolutions")+": invalid resolution '"+line+"' in resolutions file");
+                            }
+                            resolutions.add(resolution);
+                        }
+                    }
+                    finally
+                    {
+                        br.close();
+                    }
+                }
+                finally
+                {
+                    isr.close();
+                }
+            }
+            finally
+            {
+                is.close();
+            }
         }
         catch (final IOException ex)
         {
-            throw new JXCSkinException(getURI("start.skin")+": "+ex.getMessage());
+            throw new JXCSkinException(getURI("resolutions")+": "+ex.getMessage());
+        }
+
+        if (resolutions.isEmpty())
+        {
+            throw new JXCSkinException(getURI("resolutions")+": empty file");
         }
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection s, final JXCWindow p) throws JXCSkinException
+    public void load(final CrossfireServerConnection s, final JXCWindow p, final Resolution resolution) throws JXCSkinException
     {
+        if (resolution.isExact())
+        {
+            if (!resolutions.contains(resolution))
+            {
+                throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skinName);
+            }
+
+            selectedResolution = resolution;
+        }
+        else
+        {
+            if (resolutions.contains(resolution))
+            {
+                selectedResolution = resolution;
+            }
+            else
+            {
+                Resolution selectedCandidate = null;
+                // select maximum <= requested
+                for (final Resolution candidate: resolutions)
+                {
+                    if (candidate.getWidth() <= resolution.getWidth() && candidate.getHeight() <= resolution.getHeight())
+                    {
+                        if (selectedCandidate == null || selectedCandidate.getArea() < candidate.getArea())
+                        {
+                            selectedCandidate = candidate;
+                        }
+                    }
+                }
+                if (selectedCandidate == null)
+                {
+                    // select minimum > requested
+                    for (final Resolution candidate: resolutions)
+                    {
+                        if (selectedCandidate == null || selectedCandidate.getArea() > candidate.getArea())
+                        {
+                            selectedCandidate = candidate;
+                        }
+                    }
+                    assert selectedCandidate != null; // at least one resolution exists
+                }
+                selectedResolution = selectedCandidate;
+            }
+        }
+
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
@@ -220,14 +319,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", "global.skin", s, p, null);
+            load("global", selectedResolution, s, p, null);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, name+".skin", s, p, gui);
+                load(name, selectedResolution, s, p, gui);
                 gui.setStateChanged(false);
             }
         }
@@ -249,7 +348,13 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public String getSkinName()
     {
-        return skinName;
+        return skinName+"@"+selectedResolution;
+    }
+
+    /** {@inheritDoc} */
+    public Resolution getResolution()
+    {
+        return selectedResolution;
     }
 
     /** {@inheritDoc} */
@@ -364,8 +469,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param dialogName The key to identify this dialog.
      *
-     * @param resourceName The name of the skin resource; used to construct
-     * error messages.
+     * @param resolution The preferred resolution.
      *
      * @param server The server connection to monitor.
      *
@@ -375,12 +479,23 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
     {
+        String resourceName = dialogName+"@"+resolution+".skin";
+
         elements.clear();
         try
         {
-            final InputStream inputStream = getInputStream(resourceName);
+            InputStream inputStream;
+            try
+            {
+                inputStream = getInputStream(resourceName);
+            }
+            catch (final IOException ex)
+            {
+                resourceName = dialogName+".skin";
+                inputStream = getInputStream(resourceName);
+            }
             try
             {
                 load(dialogName, resourceName, inputStream, server, window, gui);
@@ -1582,7 +1697,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws IOException if a parsing error occurs
      */
-    private static int parseInt(final String str) throws IOException
+    private int parseInt(final String str) throws IOException
     {
         try
         {
@@ -1601,7 +1716,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         int value;
         try
         {
-            value = Integer.parseInt(matcher.group(1));
+            value = parseIntegerConstant(matcher.group(1));
             for (;;)
             {
                 final boolean negative = matcher.group(2).equals("-");
@@ -1622,7 +1737,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                     break;
                 }
 
-                final int valueRest = Integer.parseInt(matcher.group(1));
+                final int valueRest = parseIntegerConstant(matcher.group(1));
                 if (negative)
                 {
                     value -= valueRest;
@@ -1639,6 +1754,38 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         return value;
+    }
+
+    private int parseIntegerConstant(final String str)
+    {
+        try
+        {
+            return Integer.parseInt(str);
+        }
+        catch (final NumberFormatException ex)
+        {
+            if (str.equals("WIDTH"))
+            {
+                return selectedResolution.getWidth();
+            }
+
+            if (str.equals("HEIGHT"))
+            {
+                return selectedResolution.getHeight();
+            }
+
+            if (str.equals("WIDTH/2"))
+            {
+                return selectedResolution.getWidth()/2;
+            }
+
+            if (str.equals("HEIGHT/2"))
+            {
+                return selectedResolution.getHeight()/2;
+            }
+
+            throw ex;
+        }
     }
 
     /**

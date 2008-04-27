@@ -1,5 +1,5 @@
 
-dialog border 128 414 768 354 true Create New Character
+dialog border WIDTH/2-384 HEIGHT-354 768 354 true Create New Character
 dialog_hide START META LOGIN PLAYING
 
 label_stat stat_title      10  30 638  16 font_label BLACK TITLE LEFT

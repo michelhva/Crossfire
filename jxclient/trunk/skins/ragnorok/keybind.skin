@@ -1,5 +1,5 @@
 
-dialog border 422 250 180 71 false (Un)bind a key
+dialog border WIDTH/2-90 HEIGHT/2-134 180 71 false (Un)bind a key
 set_modal
 
 label_multi message 10 30 170 32 font_label BLACK <<EOF
