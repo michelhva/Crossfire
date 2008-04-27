@@ -234,11 +234,20 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         default:
             if (ch != KeyEvent.CHAR_UNDEFINED && ch >= ' ')
             {
-                text.insert(cursor, ch);
-                setCursor(cursor+1);
+                insertChar(ch);
             }
             break;
         }
+    }
+
+    /**
+     * Inserts a character at the cursort position.
+     * @param ch the character
+     */
+    public void insertChar(final char ch)
+    {
+        text.insert(cursor, ch);
+        setCursor(cursor+1);
     }
 
     /**
