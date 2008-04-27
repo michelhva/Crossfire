@@ -21,6 +21,10 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -28,7 +32,9 @@ import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.awt.Toolkit;
 import java.awt.Transparency;
+import java.io.IOException;
 
 /**
  * @author Lauwenmark
@@ -45,6 +51,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final BufferedImage activeImage;
 
     private final BufferedImage inactiveImage;
+
+    /**
+     * The clipboard for cut/copy/paste operations.
+     */
+    private final Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+
+    /**
+     * The system selection for cut/copy/paste operations.
+     */
+    private final Clipboard selection = Toolkit.getDefaultToolkit().getSystemSelection();
 
     protected final Font font;
 
@@ -231,6 +247,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             setActive(false);
             break;
 
+        case 0x16:              // CTRL-V
+            paste();
+            break;
+
         default:
             if (ch != KeyEvent.CHAR_UNDEFINED && ch >= ' ')
             {
@@ -248,6 +268,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     {
         text.insert(cursor, ch);
         setCursor(cursor+1);
+    }
+
+    /**
+     * Inserts a string at the cursort position.
+     * @param str the string
+     */
+    public void insertString(final String str)
+    {
+        text.insert(cursor, str);
+        setCursor(cursor+str.length());
     }
 
     /**
@@ -324,5 +354,40 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         this.cursor = cursor;
         setChanged();
+    }
+
+    /**
+     * Perform a "paste" operation from the system clipboard.
+     */
+    public void paste()
+    {
+        Transferable content = null;
+        if (selection != null)
+        {
+            content = selection.getContents(this);
+        }
+        if (content == null)
+        {
+            content = clipboard.getContents(this);
+        }
+        if (content == null)
+        {
+            return;
+        }
+
+        final String str;
+        try
+        {
+            str = (String)content.getTransferData(DataFlavor.stringFlavor);
+        }
+        catch (final UnsupportedFlavorException ex)
+        {
+            return;
+        }
+        catch (final IOException ex)
+        {
+            return;
+        }
+        insertString(str);
     }
 }
