@@ -1,0 +1,49 @@
+
+tooltip font_tooltip
+
+# Map Group
+map playfield 64 -36 -16 1472 832
+
+# Stat Group
+picture gauge_hp_back          10 10 80 20 gauge_frame
+textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
+
+picture gauge_sp_back         100 10 80 20 gauge_frame
+textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
+
+picture gauge_gp_back         190 10 80 20 gauge_frame
+textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
+
+picture gauge_fp_back         280 10 80 20 gauge_frame
+textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
+
+picture gauge_xp_back         370 10 80 20 gauge_xp_frame
+duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Experience:
+
+# Hpbar in map view
+picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame
+gauge hpbar                   WIDTH/2-33 HEIGHT/2-43 66  5 hpbar_full null hpbar_empty HP WE
+commandlist_add command_hitpoints_on hpbar_back SHOW
+commandlist_add command_hitpoints_on hpbar SHOW
+commandlist_add command_hitpoints_off hpbar_back HIDE
+commandlist_add command_hitpoints_off hpbar HIDE
+gauge lowfood                 WIDTH/2-13 HEIGHT/2-98 25 45 lowfood null null LOWFOOD WE
+commandlist_add command_lowfood_on lowfood SHOW
+commandlist_add command_lowfood_off lowfood HIDE
+gauge poisoned                WIDTH/2-11 HEIGHT/2-85 20 30 poisoned null null POISONED WE
+commandlist_add command_poisoned_on poisoned SHOW
+commandlist_add command_poisoned_off poisoned HIDE
+
+# Button Group
+textbutton button_status      WIDTH-463 11 48 18 false command_status Status
+textbutton button_inventory   WIDTH-405 11 67 18 false command_inventory Inventory
+textbutton button_messages    WIDTH-328 11 74 18 false command_messages Messages
+textbutton button_protections WIDTH-244 11 82 18 false command_protections Protections
+textbutton button_skills      WIDTH-152 11 40 18 false command_skills Skills
+textbutton button_map         WIDTH-102 11 35 18 false command_map Map
+textbutton button_setup       WIDTH-57 11 46 18 false command_setup Setup
+
+ignore hpbar_back
+ignore hpbar
+ignore lowfood
+ignore poisoned
