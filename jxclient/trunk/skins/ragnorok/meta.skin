@@ -1,16 +1,16 @@
 
-picture background 0 0 1024 768 background_metaserver
-text metaurl 530 620 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
-label_html metacomment 200 650 500 118 font_label WHITE
-meta_element metaselect1 270 235 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect2 270 265 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect3 270 295 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect4 270 325 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect5 270 355 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect6 270 385 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect7 270 415 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect8 270 445 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect9 270 475 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver
+text metaurl WIDTH/2+18 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
+label_html metacomment WIDTH/2-312 HEIGHT/2+266 500 118 font_label WHITE
+meta_element metaselect1 WIDTH/2-242 HEIGHT/2-149 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect2 WIDTH/2-242 HEIGHT/2-119 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect3 WIDTH/2-242 HEIGHT/2-89 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect4 WIDTH/2-242 HEIGHT/2-59 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect5 WIDTH/2-242 HEIGHT/2-29 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect6 WIDTH/2-242 HEIGHT/2+1 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect7 WIDTH/2-242 HEIGHT/2+31 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect8 WIDTH/2-242 HEIGHT/2+61 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect9 WIDTH/2-242 HEIGHT/2+91 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
 
 commandlist_add command_metaconnect metaurl CONNECT
 
@@ -54,10 +54,10 @@ commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
 commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
 commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
 
-textbutton metaconnect 720 650 70 18 false command_metaconnect Connect
-textbutton metacancel  720 680 70 18 false command_metacancel  Cancel
-button metaup      500 200  20 25 metaup metaup true command_metaup
-button metadown    500 505  20 25 metadown metadown true command_metadown
+textbutton metaconnect WIDTH/2+208 HEIGHT/2+266 70 18 false command_metaconnect Connect
+textbutton metacancel  WIDTH/2+208 HEIGHT/2+296 70 18 false command_metacancel  Cancel
+button metaup      WIDTH/2-12 HEIGHT/2-184  20 25 metaup metaup true command_metaup
+button metadown    WIDTH/2-12 HEIGHT/2+121  20 25 metadown metadown true command_metadown
 
 set_default metaurl
 

@@ -1,5 +1,5 @@
 
-dialog border 262  55 408 264 true _
+dialog border WIDTH/2-250 HEIGHT/2-329 408 264 true _
 dialog_hide START META LOGIN
 label_stat border_title  4   4 400  24 font_title BLACK TITLE LEFT
 button button_close    388   4  16  16 close_up close_down false command_status_close

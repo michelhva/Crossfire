@@ -235,14 +235,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final MouseTracker mouseTracker;
 
     /**
-     * The width of the client area.
+     * The size of the client area.
      */
-    private int windowWidth = 0;
-
-    /**
-     * The height of the client area.
-     */
-    private int windowHeight = 0;
+    private Resolution resolution = null;
 
     /**
      * The currently connected server. Set to <code>null</code> if unconnected.
@@ -719,10 +714,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    public void init(final int w, final int h, final String skinName, final boolean fullScreen, final String serverInfo)
+    public void init(final Resolution resolution, final String skinName, final boolean fullScreen, final String serverInfo)
     {
-        windowWidth = w;
-        windowHeight = h;
+        this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
@@ -736,7 +730,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             System.exit(1);
             throw new AssertionError();
         }
-        jxcWindowRenderer.init(w, h);
         if (!setSkin(skinName))
         {
             if (skinName.equals(jxclient.DEFAULT_SKIN))
@@ -751,6 +744,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 throw new AssertionError();
             }
         }
+        jxcWindowRenderer.init(skin.getResolution());
         try
         {
             initRendering(fullScreen);
@@ -1469,7 +1463,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 // fallback: built-in resource
                 skin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
             }
-            skin.load(server, this);
+            skin.load(server, this, resolution);
         }
         catch (final JXCSkinException ex)
         {
@@ -1493,7 +1487,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public int getWindowWidth()
     {
-        return windowWidth;
+        return resolution.getWidth();
     }
 
     /**
@@ -1503,7 +1497,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public int getWindowHeight()
     {
-        return windowHeight;
+        return resolution.getHeight();
     }
 
     /**

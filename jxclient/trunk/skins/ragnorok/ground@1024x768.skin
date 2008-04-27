@@ -1,8 +1,8 @@
 
-dialog border -5 731 1034 42 true
-dialog_hide START META LOGIN NEWCHAR
+dialog border -5 HEIGHT-37 WIDTH+10 42 true
+dialog_hide START META LOGIN
 
-button button_left     5 5 16 32 scroll_left_up scroll_left_down true command_ground_left
+button button_left     5 5 16 32 scroll_left_up16 scroll_left_down16 true command_ground_left
 item floor floor0     21 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK
 item floor floor1     53 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  1 font_item BLACK
 item floor floor2     85 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  2 font_item BLACK
@@ -34,7 +34,7 @@ item floor floor27   885 5 32 32 marker_cursed marker_applied inventory_selector
 item floor floor28   917 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
 item floor floor29   949 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
 item floor floor30   981 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
-button button_right 1013 5 16 32 scroll_right_up scroll_right_down true command_ground_right
+button button_right 1013 5 16 32 scroll_right_up16 scroll_right_down16 true command_ground_right
 
 commandlist_add command_ground_left floor0 SCROLL -1
 commandlist_add command_ground_left floor1 SCROLL -1

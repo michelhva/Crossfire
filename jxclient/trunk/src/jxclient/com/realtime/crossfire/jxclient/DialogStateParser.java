@@ -60,10 +60,30 @@ public class DialogStateParser
      */
     public static void load(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
     {
+        final String skinName = skin.getSkinName();
         final File dialogsFile;
         try
         {
-            dialogsFile = Filenames.getDialogsFile(skin.getSkinName());
+            dialogsFile = Filenames.getDialogsFile(skinName);
+
+            // Hack for loading obsolete state files
+            if (skinName.endsWith("@1024x768"))
+            {
+                final File obsoleteDialogsFile = Filenames.getDialogsFile(skinName.replaceAll("@.*", ""));
+                if (obsoleteDialogsFile.exists())
+                {
+                    if (!dialogsFile.exists())
+                    {
+                        dialogsFile.getParentFile().mkdirs();
+                        obsoleteDialogsFile.renameTo(dialogsFile);
+                    }
+                    else
+                    {
+                        obsoleteDialogsFile.delete();
+                    }
+                    obsoleteDialogsFile.getParentFile().delete();
+                }
+            }
         }
         catch (final IOException ex)
         {

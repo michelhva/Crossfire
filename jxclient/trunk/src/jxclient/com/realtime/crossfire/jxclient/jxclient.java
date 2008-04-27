@@ -27,6 +27,9 @@ import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import java.awt.DisplayMode;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -70,8 +73,7 @@ public class jxclient
         try
         {
             final Settings prefs = new Settings(Filenames.getSettingsFile());
-            int width = prefs.getInt("width", 1024);
-            int height = prefs.getInt("height", 768);
+            Resolution resolution = Resolution.parse(false, prefs.getString("resolution", getScreenResolution()));
             String skin = prefs.getString("skin", "default");
             boolean fullScreen = true;
             String server = null;
@@ -86,19 +88,24 @@ public class jxclient
 
             for (int i = 0; i < args.length; i++)
             {
-                if (args[i].equals("-W") && i+1 < args.length)
+                if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length)
                 {
-                    width = Integer.parseInt(args[i+1]);
-                    i++;
-                }
-                else if (args[i].equals("-H") && i+1 < args.length)
-                {
-                    height = Integer.parseInt(args[i+1]);
+                    resolution = Resolution.parse(true, args[i+1]);
+                    if (resolution == null)
+                    {
+                        System.err.println("Invalid resolution: "+args[i+1]);
+                        System.exit(1);
+                    }
                     i++;
                 }
                 else if (args[i].equals("-S") && i+1 < args.length)
                 {
                     skin = args[i+1];
+                    if (skin.indexOf('@') != -1)
+                    {
+                        System.err.println("Invalid skin name: "+skin);
+                        System.exit(1);
+                    }
                     i++;
                 }
                 else if (args[i].equals("-N"))
@@ -128,8 +135,9 @@ public class jxclient
                     System.out.println("");
                     System.out.println("Available options:");
                     System.out.println(" -N             : Disable full-screen mode;");
-                    System.out.println(" -W <size>      : Width of the screen, in pixels;");
-                    System.out.println(" -H <size>      : Height of the screen, in pixels;");
+                    System.out.println(" --resolution <width>x<height>");
+                    System.out.println(" -r <width>x<height>");
+                    System.out.println("                : Resolution to use [default is maximum not exceeding current]");
                     System.out.println(" -S <skin>      : Skin name to use. [default, prelude, ragnorok]");
                     System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                     System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
@@ -140,8 +148,9 @@ public class jxclient
                     System.exit(1);
                 }
             }
-            prefs.putInt("width", width);
-            prefs.putInt("height", height);
+            prefs.putString("resolution", resolution.toString());
+            prefs.remove("width"); // delete obsolete entry
+            prefs.remove("height"); // delete obsolete entry
             prefs.putString("skin", skin);
 
             // Map "default to actual skin name; must be after skin name has
@@ -175,7 +184,7 @@ public class jxclient
                         new MusicWatcher(jxwin.getCrossfireServerConnection());
                         new SoundWatcher(jxwin.getCrossfireServerConnection());
 
-                        jxwin.init(width, height, skin, fullScreen, server);
+                        jxwin.init(resolution, skin, fullScreen, server);
                     }
                     finally
                     {
@@ -208,5 +217,17 @@ public class jxclient
         }
 
         System.exit(0);
+    }
+
+    /**
+     * Returns the current screen's resolution.
+     * @return the screen's resolution.
+     */
+    public static String getScreenResolution()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final DisplayMode displayMode = gd.getDisplayMode();
+        return new Resolution(true, displayMode.getWidth(), displayMode.getHeight()).toString();
     }
 }

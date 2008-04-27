@@ -35,6 +35,7 @@
                 <include name="*.skin"/>
                 <include name="fonts/**"/>
                 <include name="pictures/**"/>
+                <include name="resolutions"/>
             </fileset>
         </copy>
         <jar destfile="jxcskin_prelude.jar" basedir="${build}/skin.prelude"/>
@@ -46,6 +47,7 @@
                 <include name="*.skin"/>
                 <include name="fonts/**"/>
                 <include name="pictures/**"/>
+                <include name="resolutions"/>
             </fileset>
         </copy>
         <jar destfile="jxcskin_ragnorok.jar" basedir="${build}/skin.ragnorok"/>
