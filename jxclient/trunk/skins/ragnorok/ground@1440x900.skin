@@ -1,0 +1,197 @@
+
+dialog border -5 HEIGHT-37 WIDTH+10 42 true
+dialog_hide START META LOGIN
+
+button button_left     5 5 16 32 scroll_left_up16 scroll_left_down16 true command_ground_left
+item floor floor0     21 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  0 font_item BLACK
+item floor floor1     53 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  1 font_item BLACK
+item floor floor2     85 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  2 font_item BLACK
+item floor floor3    117 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  3 font_item BLACK
+item floor floor4    149 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  4 font_item BLACK
+item floor floor5    181 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  5 font_item BLACK
+item floor floor6    213 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  6 font_item BLACK
+item floor floor7    245 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  7 font_item BLACK
+item floor floor8    277 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  8 font_item BLACK
+item floor floor9    309 5 32 32 marker_cursed marker_applied inventory_selector marker_locked  9 font_item BLACK
+item floor floor10   341 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 10 font_item BLACK
+item floor floor11   373 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 11 font_item BLACK
+item floor floor12   405 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 12 font_item BLACK
+item floor floor13   437 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 13 font_item BLACK
+item floor floor14   469 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 14 font_item BLACK
+item floor floor15   501 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 15 font_item BLACK
+item floor floor16   533 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 16 font_item BLACK
+item floor floor17   565 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 17 font_item BLACK
+item floor floor18   597 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 18 font_item BLACK
+item floor floor19   629 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 19 font_item BLACK
+item floor floor20   661 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 20 font_item BLACK
+item floor floor21   693 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 21 font_item BLACK
+item floor floor22   725 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 22 font_item BLACK
+item floor floor23   757 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 23 font_item BLACK
+item floor floor24   789 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 24 font_item BLACK
+item floor floor25   821 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 25 font_item BLACK
+item floor floor26   853 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 26 font_item BLACK
+item floor floor27   885 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 27 font_item BLACK
+item floor floor28   917 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
+item floor floor29   949 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
+item floor floor30   981 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
+item floor floor31  1013 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 21 font_item BLACK
+item floor floor32  1045 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 22 font_item BLACK
+item floor floor33  1077 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 23 font_item BLACK
+item floor floor34  1109 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 24 font_item BLACK
+item floor floor35  1141 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 25 font_item BLACK
+item floor floor36  1173 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 26 font_item BLACK
+item floor floor37  1205 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 27 font_item BLACK
+item floor floor38  1237 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
+item floor floor39  1269 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
+item floor floor40  1301 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
+item floor floor41  1333 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 21 font_item BLACK
+item floor floor42  1365 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 22 font_item BLACK
+item floor floor43  1397 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 23 font_item BLACK
+button button_right 1429 5 16 32 scroll_right_up16 scroll_right_down16 true command_ground_right
+
+commandlist_add command_ground_left floor0 SCROLL -1
+commandlist_add command_ground_left floor1 SCROLL -1
+commandlist_add command_ground_left floor2 SCROLL -1
+commandlist_add command_ground_left floor3 SCROLL -1
+commandlist_add command_ground_left floor4 SCROLL -1
+commandlist_add command_ground_left floor5 SCROLL -1
+commandlist_add command_ground_left floor6 SCROLL -1
+commandlist_add command_ground_left floor7 SCROLL -1
+commandlist_add command_ground_left floor8 SCROLL -1
+commandlist_add command_ground_left floor9 SCROLL -1
+commandlist_add command_ground_left floor10 SCROLL -1
+commandlist_add command_ground_left floor11 SCROLL -1
+commandlist_add command_ground_left floor12 SCROLL -1
+commandlist_add command_ground_left floor13 SCROLL -1
+commandlist_add command_ground_left floor14 SCROLL -1
+commandlist_add command_ground_left floor15 SCROLL -1
+commandlist_add command_ground_left floor16 SCROLL -1
+commandlist_add command_ground_left floor17 SCROLL -1
+commandlist_add command_ground_left floor18 SCROLL -1
+commandlist_add command_ground_left floor19 SCROLL -1
+commandlist_add command_ground_left floor20 SCROLL -1
+commandlist_add command_ground_left floor21 SCROLL -1
+commandlist_add command_ground_left floor22 SCROLL -1
+commandlist_add command_ground_left floor23 SCROLL -1
+commandlist_add command_ground_left floor24 SCROLL -1
+commandlist_add command_ground_left floor25 SCROLL -1
+commandlist_add command_ground_left floor26 SCROLL -1
+commandlist_add command_ground_left floor27 SCROLL -1
+commandlist_add command_ground_left floor28 SCROLL -1
+commandlist_add command_ground_left floor29 SCROLL -1
+commandlist_add command_ground_left floor30 SCROLL -1
+commandlist_add command_ground_left floor31 SCROLL -1
+commandlist_add command_ground_left floor32 SCROLL -1
+commandlist_add command_ground_left floor33 SCROLL -1
+commandlist_add command_ground_left floor34 SCROLL -1
+commandlist_add command_ground_left floor35 SCROLL -1
+commandlist_add command_ground_left floor36 SCROLL -1
+commandlist_add command_ground_left floor37 SCROLL -1
+commandlist_add command_ground_left floor38 SCROLL -1
+commandlist_add command_ground_left floor39 SCROLL -1
+commandlist_add command_ground_left floor40 SCROLL -1
+commandlist_add command_ground_left floor41 SCROLL -1
+commandlist_add command_ground_left floor42 SCROLL -1
+commandlist_add command_ground_left floor43 SCROLL -1
+
+commandlist_add command_ground_right floor0 SCROLL 1
+commandlist_add command_ground_right floor1 SCROLL 1
+commandlist_add command_ground_right floor2 SCROLL 1
+commandlist_add command_ground_right floor3 SCROLL 1
+commandlist_add command_ground_right floor4 SCROLL 1
+commandlist_add command_ground_right floor5 SCROLL 1
+commandlist_add command_ground_right floor6 SCROLL 1
+commandlist_add command_ground_right floor7 SCROLL 1
+commandlist_add command_ground_right floor8 SCROLL 1
+commandlist_add command_ground_right floor9 SCROLL 1
+commandlist_add command_ground_right floor10 SCROLL 1
+commandlist_add command_ground_right floor11 SCROLL 1
+commandlist_add command_ground_right floor12 SCROLL 1
+commandlist_add command_ground_right floor13 SCROLL 1
+commandlist_add command_ground_right floor14 SCROLL 1
+commandlist_add command_ground_right floor15 SCROLL 1
+commandlist_add command_ground_right floor16 SCROLL 1
+commandlist_add command_ground_right floor17 SCROLL 1
+commandlist_add command_ground_right floor18 SCROLL 1
+commandlist_add command_ground_right floor19 SCROLL 1
+commandlist_add command_ground_right floor20 SCROLL 1
+commandlist_add command_ground_right floor21 SCROLL 1
+commandlist_add command_ground_right floor22 SCROLL 1
+commandlist_add command_ground_right floor23 SCROLL 1
+commandlist_add command_ground_right floor24 SCROLL 1
+commandlist_add command_ground_right floor25 SCROLL 1
+commandlist_add command_ground_right floor26 SCROLL 1
+commandlist_add command_ground_right floor27 SCROLL 1
+commandlist_add command_ground_right floor28 SCROLL 1
+commandlist_add command_ground_right floor29 SCROLL 1
+commandlist_add command_ground_right floor30 SCROLL 1
+commandlist_add command_ground_right floor31 SCROLL 1
+commandlist_add command_ground_right floor32 SCROLL 1
+commandlist_add command_ground_right floor33 SCROLL 1
+commandlist_add command_ground_right floor34 SCROLL 1
+commandlist_add command_ground_right floor35 SCROLL 1
+commandlist_add command_ground_right floor36 SCROLL 1
+commandlist_add command_ground_right floor37 SCROLL 1
+commandlist_add command_ground_right floor38 SCROLL 1
+commandlist_add command_ground_right floor39 SCROLL 1
+commandlist_add command_ground_right floor40 SCROLL 1
+commandlist_add command_ground_right floor41 SCROLL 1
+commandlist_add command_ground_right floor42 SCROLL 1
+commandlist_add command_ground_right floor43 SCROLL 1
+
+set_invisible border_nw
+set_invisible border_n
+set_invisible border_ne
+set_invisible border_w
+set_invisible border_e
+set_invisible border_sw
+set_invisible border_s
+set_invisible border_se
+
+commandlist command_ground_reset OR
+commandlist_add command_ground_reset floor0 SCROLL_RESET
+commandlist_add command_ground_reset floor1 SCROLL_RESET
+commandlist_add command_ground_reset floor2 SCROLL_RESET
+commandlist_add command_ground_reset floor3 SCROLL_RESET
+commandlist_add command_ground_reset floor4 SCROLL_RESET
+commandlist_add command_ground_reset floor5 SCROLL_RESET
+commandlist_add command_ground_reset floor6 SCROLL_RESET
+commandlist_add command_ground_reset floor7 SCROLL_RESET
+commandlist_add command_ground_reset floor8 SCROLL_RESET
+commandlist_add command_ground_reset floor9 SCROLL_RESET
+commandlist_add command_ground_reset floor10 SCROLL_RESET
+commandlist_add command_ground_reset floor11 SCROLL_RESET
+commandlist_add command_ground_reset floor12 SCROLL_RESET
+commandlist_add command_ground_reset floor13 SCROLL_RESET
+commandlist_add command_ground_reset floor14 SCROLL_RESET
+commandlist_add command_ground_reset floor15 SCROLL_RESET
+commandlist_add command_ground_reset floor16 SCROLL_RESET
+commandlist_add command_ground_reset floor17 SCROLL_RESET
+commandlist_add command_ground_reset floor18 SCROLL_RESET
+commandlist_add command_ground_reset floor19 SCROLL_RESET
+commandlist_add command_ground_reset floor20 SCROLL_RESET
+commandlist_add command_ground_reset floor21 SCROLL_RESET
+commandlist_add command_ground_reset floor22 SCROLL_RESET
+commandlist_add command_ground_reset floor23 SCROLL_RESET
+commandlist_add command_ground_reset floor24 SCROLL_RESET
+commandlist_add command_ground_reset floor25 SCROLL_RESET
+commandlist_add command_ground_reset floor26 SCROLL_RESET
+commandlist_add command_ground_reset floor27 SCROLL_RESET
+commandlist_add command_ground_reset floor28 SCROLL_RESET
+commandlist_add command_ground_reset floor29 SCROLL_RESET
+commandlist_add command_ground_reset floor30 SCROLL_RESET
+commandlist_add command_ground_reset floor31 SCROLL_RESET
+commandlist_add command_ground_reset floor32 SCROLL_RESET
+commandlist_add command_ground_reset floor33 SCROLL_RESET
+commandlist_add command_ground_reset floor34 SCROLL_RESET
+commandlist_add command_ground_reset floor35 SCROLL_RESET
+commandlist_add command_ground_reset floor36 SCROLL_RESET
+commandlist_add command_ground_reset floor37 SCROLL_RESET
+commandlist_add command_ground_reset floor38 SCROLL_RESET
+commandlist_add command_ground_reset floor39 SCROLL_RESET
+commandlist_add command_ground_reset floor40 SCROLL_RESET
+commandlist_add command_ground_reset floor41 SCROLL_RESET
+commandlist_add command_ground_reset floor42 SCROLL_RESET
+commandlist_add command_ground_reset floor43 SCROLL_RESET
+event connect command_ground_reset
+event mapscroll command_ground_reset
