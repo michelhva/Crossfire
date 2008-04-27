@@ -63,7 +63,7 @@ public class DialogStateParser
         final File dialogsFile;
         try
         {
-                dialogsFile = Filenames.getDialogsFile(skin.getSkinName());
+            dialogsFile = Filenames.getDialogsFile(skin.getSkinName());
         }
         catch (final IOException ex)
         {
