@@ -1,5 +1,8 @@
 2008-04-27  Andreas Kirschbaum
 
+	* Implement part of #1874043 (Copy from message window): in input
+	fields CTRL-V now pastes the system's selection.
+
 	* Implement #1874012 (Other window sizes): ragnorok: Implement
 	resolution 1400x1050.
 
