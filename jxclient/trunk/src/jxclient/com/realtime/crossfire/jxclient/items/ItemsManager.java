@@ -79,12 +79,18 @@ public class ItemsManager
      */
     public synchronized void reset()
     {
+        if (player != null)
+        {
+            cleanInventory(player.getTag());
+        }
+        cleanInventory(currentFloorManager.getCurrentFloor());
         final Set<CfItem> tmp = new HashSet<CfItem>(allItems.values());
         for (final CfItem item : tmp)
         {
             removeItem(item);
         }
         assert items.size() == 0;
+        fireEvents();
         currentFloorManager.setCurrentFloor(0);
         floorManager.reset();
         inventoryManager.reset();
