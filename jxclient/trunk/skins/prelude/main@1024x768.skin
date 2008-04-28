@@ -5,35 +5,35 @@ tooltip font_tooltip
 map playfield 64 -32 -32 1088 832
 
 # LGauges Group (80, 574)
-picture sword_back     16+80  0+574 64 256 background_sword
-picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty
-picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty
+picture sword_back     16+80  0+574 64 256 background_sword 0.9
+picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty 0.9
+picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty 0.9
 gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN HP:
 gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN Food:
 label_stat label_hp     4+72 3+732 32  32 font_types WHITE HP CENTER
 label_stat label_fp    80+72 3+732 32  32 font_types WHITE FOOD CENTER
 
 # RGauges Group (820, 552)
-picture staff_back    40+820  0+552 64 256 background_staff
-picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty
-picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty
+picture staff_back    40+820  0+552 64 256 background_staff 0.9
+picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty 0.9
+picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty 0.9
 gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN Grace:
 gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN Mana:
 label_stat label_gp  768+72   3+732 32  32 font_types WHITE GRACE CENTER
 label_stat label_sp  844+72   3+732 32  32 font_types WHITE SP CENTER
 
 # Map View Gauges
-picture hpbar_back 478 340 68 7 hpbar_frame
+picture hpbar_back 478 340 68 7 hpbar_frame 0.9
 gauge hpbar        479 341 66 5 hpbar_full null hpbar_empty HP WE
 gauge lowfood      499 286 25 45 lowfood null null LOWFOOD WE
 gauge poisoned     501 299 20 30 poisoned null null POISONED WE
 
 # UpperPane (207, 27)
-picture title_back          0+227  0+27 610 56 title
+picture title_back          0+227  0+27 610 56 title 0.9
 label_stat label_title     12+227 24+27 584 24 font_default_large WHITE TITLE LEFT
 
 # UpperBar (113, 0)
-picture up_back             0+113 0 813 29 background_up
+picture up_back             0+113 0 813 29 background_up 0.9
 label_stat label_stat_str 312+113 3 26 19 font_types WHITE STR CENTER
 label_stat label_stat_dex 397+113 3 26 19 font_types WHITE DEX CENTER
 label_stat label_stat_con 482+113 3 26 19 font_types WHITE CON CENTER
@@ -42,7 +42,7 @@ label_stat label_stat_pow 652+113 3 26 19 font_types WHITE POW CENTER
 label_stat label_stat_wis 737+113 3 26 19 font_types WHITE WIS CENTER
 label_stat label_stat_cha 822+113 3 26 19 font_types WHITE CHA CENTER
 
-picture magicmap_content 0+113 20+3 232 232 magicmap_content
+picture magicmap_content 0+113 20+3 232 232 magicmap_content 0.9
 magicmap magicmap       18+113 38+3 196 196
 set_invisible magicmap_content
 set_invisible magicmap
@@ -68,15 +68,15 @@ commandlist_add command_magicmap_display btn_magicmap_show HIDE
 commandlist_add command_magicmap_display btn_magicmap_hide SHOW
 
 # LeftBar (0, 0)
-picture left_back_top    0  0 113 87 background_left_top
-picture left_back_bottom 0 87  29 681 background_left_bottom
+picture left_back_top    0  0 113 87 background_left_top 0.9
+picture left_back_bottom 0 87  29 681 background_left_bottom 0.9
 
 # RightBar (926, 0)
-picture right_back_top     0+926   0 98 103 background_right_top
-#picture right_back_bottom 68+926 103 30 665 background_right_bottom
+picture right_back_top     0+926   0 98 103 background_right_top 0.9
+#picture right_back_bottom 68+926 103 30 665 background_right_bottom 0.9
 
 # LInventory (26, 171)
-picture shortcuts_left_back 0+26 171 45 597 shortcuts_left
+picture shortcuts_left_back 0+26 171 45 597 shortcuts_left 0.9
 item shortcut shortcut0 0+5+26   0+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  0 font_default_small
 item shortcut shortcut1 0+5+26  46+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  1 font_default_small
 item shortcut shortcut2 0+5+26  92+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  2 font_default_small
@@ -103,7 +103,7 @@ commandlist_add command_shortcutA shortcutA GUI_EXECUTE_ELEMENT
 commandlist_add command_shortcutB shortcutB GUI_EXECUTE_ELEMENT
 
 # RInventory (973, 53)
-picture inv_right_back 8+973 0+53 43 715 inventory
+picture inv_right_back 8+973 0+53 43 715 inventory 0.9
 item inventory rinv0 0+973+14   0+53+9 32 32 marker_cursed marker_applied inventory_selector marker_locked  0 font_default_small WHITE
 item inventory rinv1 0+973+14  35+53+9 32 32 marker_cursed marker_applied inventory_selector marker_locked  1 font_default_small WHITE
 item inventory rinv2 0+973+14  70+53+9 32 32 marker_cursed marker_applied inventory_selector marker_locked  2 font_default_small WHITE
@@ -273,10 +273,10 @@ label_stat label_sstat_dam   200+309 49+621  56 20 font_stats14 WHITE DAM RIGHT
 label_stat label_sstat_speed 200+309 71+621  56 20 font_stats14 WHITE SPEED RIGHT
 
 # Panel (199, 551)
-picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left
-picture panel_back_dragon_right 543+199  0+551  62  64 background_panel_dragon_right
-picture panel_back_bottom         0+199 64+551 626 153 background_panel_bottom
-picture panel_spells 392+199 74+551 224 123 spell_panel
+picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left 0.9
+picture panel_back_dragon_right 543+199  0+551  62  64 background_panel_dragon_right 0.9
+picture panel_back_bottom         0+199 64+551 626 153 background_panel_bottom 0.9
+picture panel_spells 392+199 74+551 224 123 spell_panel 0.9
 label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats14 SPELL_ICON
 label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats14 SPELL_NAME
 label_spell label_panel_spells_description 450+199 105+551 100 20 font_stats14 SPELL_DESCRIPTION
@@ -299,24 +299,24 @@ item floor floor9 0+199+9+306 0+551+165 32 32 marker_cursed marker_applied inven
 item floor floorA 0+199+9+340 0+551+165 32 32 marker_cursed marker_applied inventory_selector marker_locked 10 font_default_small WHITE
 
 # Resistances (630, 628)
-picture gr0_back   0+630   0+628 29 11 res_gauge_empty
-picture gr1_back  76+630   0+628 29 11 res_gauge_empty
-picture gr2_back 152+630   0+628 29 11 res_gauge_empty
-picture gr3_back   0+630  21+628 29 11 res_gauge_empty
-picture gr4_back  76+630  21+628 29 11 res_gauge_empty
-picture gr5_back 152+630  21+628 29 11 res_gauge_empty
-picture gr6_back   0+630  42+628 29 11 res_gauge_empty
-picture gr7_back  76+630  42+628 29 11 res_gauge_empty
-picture gr8_back 152+630  42+628 29 11 res_gauge_empty
-picture gr9_back   0+630  63+628 29 11 res_gauge_empty
-picture grA_back  76+630  63+628 29 11 res_gauge_empty
-picture grB_back 152+630  63+628 29 11 res_gauge_empty
-picture grC_back   0+630  84+628 29 11 res_gauge_empty
-picture grD_back  76+630  84+628 29 11 res_gauge_empty
-picture grE_back 152+630  84+628 29 11 res_gauge_empty
-picture grF_back   0+630 105+628 29 11 res_gauge_empty
-picture grG_back  76+630 105+628 29 11 res_gauge_empty
-picture grH_back 152+630 105+628 29 11 res_gauge_empty
+picture gr0_back   0+630   0+628 29 11 res_gauge_empty 0.9
+picture gr1_back  76+630   0+628 29 11 res_gauge_empty 0.9
+picture gr2_back 152+630   0+628 29 11 res_gauge_empty 0.9
+picture gr3_back   0+630  21+628 29 11 res_gauge_empty 0.9
+picture gr4_back  76+630  21+628 29 11 res_gauge_empty 0.9
+picture gr5_back 152+630  21+628 29 11 res_gauge_empty 0.9
+picture gr6_back   0+630  42+628 29 11 res_gauge_empty 0.9
+picture gr7_back  76+630  42+628 29 11 res_gauge_empty 0.9
+picture gr8_back 152+630  42+628 29 11 res_gauge_empty 0.9
+picture gr9_back   0+630  63+628 29 11 res_gauge_empty 0.9
+picture grA_back  76+630  63+628 29 11 res_gauge_empty 0.9
+picture grB_back 152+630  63+628 29 11 res_gauge_empty 0.9
+picture grC_back   0+630  84+628 29 11 res_gauge_empty 0.9
+picture grD_back  76+630  84+628 29 11 res_gauge_empty 0.9
+picture grE_back 152+630  84+628 29 11 res_gauge_empty 0.9
+picture grF_back   0+630 105+628 29 11 res_gauge_empty 0.9
+picture grG_back  76+630 105+628 29 11 res_gauge_empty 0.9
+picture grH_back 152+630 105+628 29 11 res_gauge_empty 0.9
 
 
 gauge gr0   0+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PHYS WE Phyical:
@@ -339,7 +339,7 @@ gauge grG  76+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_
 gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_BLIND WE Blind:
 
 # LowerBar (72, 732)
-picture lower_bar 0+72 0+732 880 36 lower_bar
+picture lower_bar 0+72 0+732 880 36 lower_bar 0.9
 command_text command 127+66 20+732 512+46 16 command_active empty font_cmdline11 GRAY WHITE 8
 
 commandlist rsp_display AND
@@ -525,8 +525,8 @@ commandlist_add rsp_display btn_rsp_undisplay SHOW
 button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active false command_menu_display
 
 # TextPaneUp (679, 100)
-picture log_upper_back 0+679 0+100 272 204 log1_background
-picture log_upper_back2 288+679 175+100 14 10 log1_background2
+picture log_upper_back 0+679 0+100 272 204 log1_background 0.9
+picture log_upper_back2 288+679 175+100 14 10 log1_background2 0.9
 log_message log_upper 10+679 3+100 250 198 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE
 log_color log_upper 0 WHITE
 commandlist command_log_upper_up AND log_upper SCROLL -1

@@ -85,13 +85,15 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param color The font color.
      *
+     * @param backgroundColor The background color.
+     *
      * @param alignment The text alignment.
      *
      * @param text The label text.
      */
-    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment, final String text)
+    public GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, picture);
+        super(jxcWindow, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         this.alignment = alignment;
@@ -120,11 +122,13 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param color The font color.
      *
+     * @param backgroundColor The background color.
+     *
      * @param alignment The text alignment.
      */
-    protected GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Alignment alignment)
+    protected GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment)
     {
-        super(jxcWindow, name, x, y, w, h, picture);
+        super(jxcWindow, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         this.alignment = alignment;

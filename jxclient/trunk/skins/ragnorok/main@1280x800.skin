@@ -5,23 +5,23 @@ tooltip font_tooltip
 map playfield 64 -32 -16 1344 832
 
 # Stat Group
-picture gauge_hp_back          10 10 80 20 gauge_frame
+picture gauge_hp_back          10 10 80 20 gauge_frame 0.9
 textgauge gauge_hp             13 13 74 14 gauge_hp null gauge_empty HP WE BLACK font_label Hitpoints:
 
-picture gauge_sp_back         100 10 80 20 gauge_frame
+picture gauge_sp_back         100 10 80 20 gauge_frame 0.9
 textgauge gauge_sp            103 13 74 14 gauge_sp null gauge_empty SP WE BLACK font_label Mana:
 
-picture gauge_gp_back         190 10 80 20 gauge_frame
+picture gauge_gp_back         190 10 80 20 gauge_frame 0.9
 textgauge gauge_gp            193 13 74 14 gauge_gp gauge_gp_negative gauge_empty GRACE WE BLACK font_label Grace:
 
-picture gauge_fp_back         280 10 80 20 gauge_frame
+picture gauge_fp_back         280 10 80 20 gauge_frame 0.9
 textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
 
-picture gauge_xp_back         370 10 80 20 gauge_xp_frame
+picture gauge_xp_back         370 10 80 20 gauge_xp_frame 0.9
 duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Experience:
 
 # Hpbar in map view
-picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame
+picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame 0.9
 gauge hpbar                   WIDTH/2-33 HEIGHT/2-43 66  5 hpbar_full null hpbar_empty HP WE
 commandlist_add command_hitpoints_on hpbar_back SHOW
 commandlist_add command_hitpoints_on hpbar SHOW

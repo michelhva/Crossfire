@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.awt.Transparency;
 
 /**
  *
@@ -79,7 +80,7 @@ public class GUIPicture extends GUIElement
      */
     public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, float alpha)
     {
-        super(jxcWindow, name, x, y, w, h, image.getTransparency());
+        super(jxcWindow, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         final Graphics2D g = buffer.createGraphics();
         try
         {

@@ -40,18 +40,19 @@ public abstract class AbstractLabel extends GUIElement
      */
     private String text = "";
 
-    private ImageIcon backgroundImage = null;
+    private ImageIcon backgroundImage;
 
     /**
      * If set, the opaque background color. This field is ignored if {@link
      * #backgroundImage} is set.
      */
-    private Color backgroundColor = new Color(0, 0, 0, 0.0f);
+    private final Color backgroundColor;
 
-    public AbstractLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture)
+    public AbstractLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Color backgroundColor)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         backgroundImage = picture == null ? null : new ImageIcon(picture);
+        this.backgroundColor = backgroundColor;
     }
 
     public void setText(final String text)
@@ -80,20 +81,6 @@ public abstract class AbstractLabel extends GUIElement
         return text;
     }
 
-    /**
-     * Set the background color.
-     *
-     * @param backgroundColor The background color.
-     */
-    public void setBackgroundColor(final Color backgroundColor)
-    {
-        if (this.backgroundColor != backgroundColor)
-        {
-            this.backgroundColor = backgroundColor;
-            setChanged();
-        }
-    }
-
     /** {@inheritDoc} */
     @Override protected void render(final Graphics2D g)
     {
@@ -102,7 +89,7 @@ public abstract class AbstractLabel extends GUIElement
         {
             g.drawImage(backgroundImage.getImage(), 0, 0, null);
         }
-        else if (backgroundColor != null)
+        else
         {
             g.setBackground(backgroundColor);
             g.clearRect(0, 0, w, h);

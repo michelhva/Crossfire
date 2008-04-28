@@ -62,10 +62,12 @@ public class GUILabelQuery extends GUIMultiLineLabel
      * @param font The font to use.
      *
      * @param color The color to use.
+     *
+     * @param backgroundColor The background color.
      */
-    public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color)
+    public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor)
     {
-        super(jxcWindow, name, x, y, w, h, null, font, color, Alignment.LEFT, "");
+        super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
     }
 }
