@@ -1,6 +1,6 @@
 
-picture background_black 0 0 1400 1050 black1600x1200
-picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver
+picture background_black 0 0 1400 1050 black1600x1200 1
+picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
 text metaurl WIDTH/2+18 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
 label_html metacomment WIDTH/2-312 HEIGHT/2+266 500 118 font_label WHITE
 meta_element metaselect1 WIDTH/2-242 HEIGHT/2-149 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"

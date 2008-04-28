@@ -59,9 +59,9 @@ public class GUIHTMLLabel extends AbstractLabel
      */
     private boolean autoResize = false;
 
-    public GUIHTMLLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final String text)
+    public GUIHTMLLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, picture);
+        super(jxcWindow, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         setText(text);

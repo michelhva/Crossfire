@@ -756,7 +756,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else if (args[1].equals("dialog"))
                             {
-                                if (args.length != 6)
+                                if (args.length != 7)
                                 {
                                     throw new IOException("syntax error");
                                 }
@@ -773,8 +773,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage frameSE = getPicture(frame+"_se");
                                 final Font titleFont = fonts.lookup(args[3]);
                                 final Color titleColor = parseColor(args[4]);
-                                final float alpha = parseFloat(args[5]);
-                                dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, alpha);
+                                final Color titleBackgroundColor = parseColor(args[5]);
+                                final float alpha = parseFloat(args[6]);
+                                if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
+                                dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
                             }
                             else if (args[1].equals("textbutton"))
                             {
@@ -1166,7 +1168,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, text));
+                            elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
                         }
                         else if (gui != null && args[0].equals("label_multi"))
                         {
@@ -1183,7 +1185,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, GUILabel.Alignment.LEFT, text));
+                            elements.insert(name, new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_query"))
                         {
@@ -1199,7 +1201,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
-                            final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color);
+                            final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F));
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_text"))
@@ -1217,7 +1219,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, GUILabel.Alignment.LEFT, text));
+                            elements.insert(name, new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_stat"))
                         {
@@ -1235,7 +1237,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
                             final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
-                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, stat, alignment);
+                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_spell"))
@@ -1425,7 +1427,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
-                            if (args.length != 7)
+                            if (args.length != 8)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1436,7 +1438,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage picture = getPicture(args[6]);
-                            elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture));
+                            final float alpha = parseFloat(args[7]);
+                            if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
+                            elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture, alpha));
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
@@ -1597,9 +1601,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final Font font = fonts.lookup(args[1]);
-                            final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, "");
+                            final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
                             tooltipLabel.setAutoResize(true);
-                            tooltipLabel.setBackgroundColor(Color.WHITE);
                             window.getWindowRenderer().setTooltip(tooltipLabel);
                         }
                         else

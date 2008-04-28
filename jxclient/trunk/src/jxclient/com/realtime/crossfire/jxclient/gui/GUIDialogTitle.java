@@ -55,10 +55,12 @@ public class GUIDialogTitle extends GUIPicture
      * @param h The height for drawing this element to screen.
      *
      * @param image The picture to paint.
+     *
+     * @param alpha The transparency value.
      */
-    public GUIDialogTitle(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image)
+    public GUIDialogTitle(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
-        super(jxcWindow, name, x, y, w, h, image, 1F);
+        super(jxcWindow, name, x, y, w, h, image, alpha);
     }
 
     /* {@inheritDoc} */
