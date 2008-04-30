@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.util.NumberParser;
 
 /**
  *
