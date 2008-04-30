@@ -34,7 +34,7 @@ public class GUICommand
 
     private final Command order;
 
-    private final Object params; //Often a String, but not always - see QUIT or CONNECT
+    private final Parameter params;
 
     public enum Command
     {
@@ -58,7 +58,7 @@ public class GUICommand
         DIALOG_CLOSE,
     }
 
-    public GUICommand(final GUIElement target, final Command order, final Object params)
+    public GUICommand(final GUIElement target, final Command order, final Parameter params)
     {
         this.target = target;
         this.order = order;
@@ -128,7 +128,7 @@ public class GUICommand
             break;
 
         case QUIT:
-            ((JXCWindow)params).endRendering();
+            ((QuitParameter)params).window.endRendering();
             break;
 
         case SCROLL:
@@ -154,19 +154,19 @@ public class GUICommand
             break;
 
         case CONNECT:
-            ((JXCWindow)params).connect(((GUIText)target).getText());
+            ((ConnectParameter)params).window.connect(((GUIText)target).getText());
             break;
 
         case DISCONNECT:
-            ((JXCWindow)params).disconnect();
+            ((DisconnectParameter)params).window.disconnect();
             break;
 
         case GUI_META:
-            ((JXCWindow)params).changeGUI(JXCWindow.GUI_METASERVER);
+            ((MetaParameter)params).window.changeGUI(JXCWindow.GUI_METASERVER);
             break;
 
         case GUI_START:
-            ((JXCWindow)params).changeGUI(JXCWindow.GUI_START);
+            ((StartParameter)params).window.changeGUI(JXCWindow.GUI_START);
             break;
 
         case GUI_EXECUTE_COMMAND:
@@ -179,7 +179,7 @@ public class GUICommand
         case GUI_EXECUTE_ELEMENT:
             if (target instanceof GUIItem)
             {
-                ((GUIItem)target).button1Clicked((JXCWindow)params);
+                ((GUIItem)target).button1Clicked(((ExecuteElementParameter)params).window);
             }
             break;
 
@@ -206,16 +206,137 @@ public class GUICommand
         }
     }
 
-    public Object getParams()
+    public Parameter getParams()
     {
         return params;
+    }
+
+    /**
+     * A parameter for an {@link GUICommand}.
+     */
+    public interface Parameter
+    {
+    }
+
+    /**
+     * A parameter object for the {@link Command#QUIT} command.
+     */
+    public static class QuitParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public QuitParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#CONNECT} command.
+     */
+    public static class ConnectParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public ConnectParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#DISCONNECT} command.
+     */
+    public static class DisconnectParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public DisconnectParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#GUI_META} command.
+     */
+    public static class MetaParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public MetaParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#GUI_START} command.
+     */
+    public static class StartParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public StartParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#GUI_EXECUTE_ELEMENT} command.
+     */
+    public static class ExecuteElementParameter implements Parameter
+    {
+        /** The window. */
+        private final JXCWindow window;
+
+        /**
+         * Create a new instance.
+         *
+         * @param window The window.
+         */
+        public ExecuteElementParameter(final JXCWindow window)
+        {
+            this.window = window;
+        }
     }
 
     /**
      * A parameter object for the {@link Command#SCROLL} and {@link
      * Command#SCROLL_NEVER} commands.
      */
-    public static class ScrollParameter
+    public static class ScrollParameter implements Parameter
     {
         /** The distance to scroll. */
         private final int distance;
@@ -234,7 +355,7 @@ public class GUICommand
     /**
      * A parameter object for the {@link Command#SCROLLNEXT} command.
      */
-    public static class ScrollNextParameter
+    public static class ScrollNextParameter implements Parameter
     {
         /** The element to activate. */
         private final ActivatableGUIElement nextElement;
@@ -253,7 +374,7 @@ public class GUICommand
     /**
      * A parameter object for the {@link Command#GUI_EXECUTE_COMMAND} command.
      */
-    public static class ExecuteCommandParameter
+    public static class ExecuteCommandParameter implements Parameter
     {
         /** The window to operate on. */
         private final JXCWindow window;
@@ -288,7 +409,7 @@ public class GUICommand
     /**
      * A parameter object for the {@link Command#DIALOG_OPEN} command.
      */
-    public static class DialogOpenParameter
+    public static class DialogOpenParameter implements Parameter
     {
         /** The window to operate on. */
         private final JXCWindow window;
@@ -313,7 +434,7 @@ public class GUICommand
     /**
      * A parameter object for the {@link Command#DIALOG_TOGGLE} command.
      */
-    public static class DialogToggleParameter
+    public static class DialogToggleParameter implements Parameter
     {
         /** The window to operate on. */
         private final JXCWindow window;
@@ -338,7 +459,7 @@ public class GUICommand
     /**
      * A parameter object for the {@link Command#DIALOG_CLOSE} command.
      */
-    public static class DialogCloseParameter
+    public static class DialogCloseParameter implements Parameter
     {
         /** The window to operate on. */
         private final JXCWindow window;
