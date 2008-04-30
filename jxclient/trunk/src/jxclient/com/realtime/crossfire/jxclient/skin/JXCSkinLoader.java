@@ -2209,7 +2209,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             {
                 throw new IOException("Invalid zero scroll distance");
             }
-            return new GUICommand.ScrollParameter(distance);
+            return command == GUICommand.Command.SCROLL ? new GUICommand.ScrollParameter(distance) : new GUICommand.ScrollNeverParameter(distance);
         }
         else if (command == GUICommand.Command.SCROLL_RESET)
         {

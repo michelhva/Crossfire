@@ -132,10 +132,16 @@ public class GUICommand
             break;
 
         case SCROLL:
-        case SCROLL_NEVER:
             if (target instanceof GUIScrollable)
             {
                 ((GUIScrollable)target).scroll(((ScrollParameter)params).distance);
+            }
+            break;
+
+        case SCROLL_NEVER:
+            if (target instanceof GUIScrollable)
+            {
+                ((GUIScrollable)target).scroll(((ScrollNeverParameter)params).distance);
             }
             break;
 
@@ -333,8 +339,7 @@ public class GUICommand
     }
 
     /**
-     * A parameter object for the {@link Command#SCROLL} and {@link
-     * Command#SCROLL_NEVER} commands.
+     * A parameter object for the {@link Command#SCROLL} command.
      */
     public static class ScrollParameter implements Parameter
     {
@@ -347,6 +352,25 @@ public class GUICommand
          * @param distance The distance to scroll.
          */
         public ScrollParameter(final int distance)
+        {
+            this.distance = distance;
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#SCROLL_NEVER} command.
+     */
+    public static class ScrollNeverParameter implements Parameter
+    {
+        /** The distance to scroll. */
+        private final int distance;
+
+        /**
+         * Create a new instance.
+         *
+         * @param distance The distance to scroll.
+         */
+        public ScrollNeverParameter(final int distance)
         {
             this.distance = distance;
         }
