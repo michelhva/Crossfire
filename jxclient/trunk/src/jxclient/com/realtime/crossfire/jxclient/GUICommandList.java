@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
 import java.util.List;
@@ -76,7 +77,7 @@ public class GUICommandList
     public GUICommandList(final Type type, final String commands, final JXCWindow jxcWindow)
     {
         this(type);
-        this.commands.add(new GUICommand(new GUICommand.ExecuteCommandParameter(jxcWindow, commands)));
+        this.commands.add(new ExecuteCommandCommand(jxcWindow, commands));
     }
 
     /**
@@ -141,10 +142,9 @@ public class GUICommandList
         boolean firstCommand = true;
         for (final GUICommand guiCommand : commands)
         {
-            final GUICommand.Parameter parameter = (GUICommand.Parameter)guiCommand.getParams();
-            if (!(parameter instanceof GUICommand.ExecuteCommandParameter))
+            if (!(guiCommand instanceof ExecuteCommandCommand))
             {
-                throw new AssertionError("Cannot encode command of type "+parameter.getClass().getName());
+                throw new AssertionError("Cannot encode command of type "+guiCommand.getClass().getName());
             }
 
             if (firstCommand)
@@ -155,7 +155,7 @@ public class GUICommandList
             {
                 sb.append(';');
             }
-            sb.append(((GUICommand.ExecuteCommandParameter)parameter).getCommand());
+            sb.append(((ExecuteCommandCommand)guiCommand).getCommand());
         }
         return sb.toString();
     }

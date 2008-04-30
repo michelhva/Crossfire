@@ -19,21 +19,37 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which quite the client.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class QuitCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The main window.
      */
-    boolean canExecute();
+    private final JXCWindow window;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * Creates a new instance.
+     * @param window the main window
      */
-    void execute();
+    public QuitCommand(final JXCWindow window)
+    {
+	this.window = window;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	window.endRendering();
+    }
 }

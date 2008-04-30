@@ -19,21 +19,37 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.GUIElement;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which hides a target {@link GUIElement}.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class HideCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The gui element to hide.
      */
-    boolean canExecute();
+    private final GUIElement target;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * Creates a new instance.
+     * @param target The gui element to hide.
      */
-    void execute();
+    public HideCommand(final GUIElement target)
+    {
+        this.target = target;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+        return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+        target.setVisible(false);
+    }
 }

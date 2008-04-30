@@ -19,21 +19,45 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.Gui;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which toggles the visibility of a dialog.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class DialogToggleCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The main window.
      */
-    boolean canExecute();
+    private final JXCWindow window;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The dialog to toggle.
      */
-    void execute();
+    private final Gui dialog;
+
+    /**
+     * Creates a new instance.
+     * @param window the main window
+     * @param dialog the dialog to toggle
+     */
+    public DialogToggleCommand(final JXCWindow window, final Gui dialog)
+    {
+	this.window = window;
+	this.dialog = dialog;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	window.toggleDialog(dialog);
+    }
 }

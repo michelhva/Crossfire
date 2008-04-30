@@ -19,21 +19,45 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.GUIText;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which connectes to a Crossfire server.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ConnectCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The main window.
      */
-    boolean canExecute();
+    private final JXCWindow window;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The host name input field.
      */
-    void execute();
+    private final GUIText hostNameInputField;
+
+    /**
+     * Creates a new instance.
+     * @param window the main window
+     * @param hostNameInputField the host name input field
+     */
+    public ConnectCommand(final JXCWindow window, final GUIText hostNameInputField)
+    {
+	this.window = window;
+	this.hostNameInputField = hostNameInputField;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	window.connect(hostNameInputField.getText());
+    }
 }
