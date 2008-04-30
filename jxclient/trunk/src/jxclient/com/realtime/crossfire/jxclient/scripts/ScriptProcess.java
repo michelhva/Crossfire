@@ -118,7 +118,7 @@ public class ScriptProcess extends Thread
             osw.write(cmd+"\n");
             osw.flush();
         }
-        catch (final Exception e)
+        catch (final IOException e)
         {
             e.printStackTrace();
         }
