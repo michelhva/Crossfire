@@ -29,7 +29,6 @@ import java.awt.event.MouseEvent;
 import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
-import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
 import java.awt.Insets;
 import java.awt.Point;
