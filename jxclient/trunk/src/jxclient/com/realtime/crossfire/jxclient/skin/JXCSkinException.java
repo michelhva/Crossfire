@@ -30,8 +30,8 @@ public class JXCSkinException extends Exception
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    public JXCSkinException(String s)
+    public JXCSkinException(final String reason)
     {
-        super(s);
+        super(reason);
     }
 }
