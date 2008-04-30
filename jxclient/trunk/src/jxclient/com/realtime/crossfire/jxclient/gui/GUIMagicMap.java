@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
@@ -54,12 +55,12 @@ public class GUIMagicMap extends GUIElement
     /**
      * The map width in tiles.
      */
-    private final int mapWidth;
+    private int mapWidth;
 
     /**
      * The map height in tiles.
      */
-    private final int mapHeight;
+    private int mapHeight;
 
     /**
      * The x offset of the tile representing the player.
@@ -74,12 +75,12 @@ public class GUIMagicMap extends GUIElement
     /**
      * The x offset for the visible map area.
      */
-    private final int offsetX;
+    private int offsetX;
 
     /**
      * The y offset for the visible map area.
      */
-    private final int offsetY;
+    private int offsetY;
 
     /**
      * The colors for displaying magic map data.
@@ -240,6 +241,27 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
+    /**
+     * The {@link MapSizeListener} registered to receive changes of the map
+     * view size.
+     */
+    private final MapSizeListener mapSizeListener = new MapSizeListener()
+    {
+        /** {@inheritDoc} */
+        public void mapSizeChanged(final int mapWidth, final int mapHeight)
+        {
+            GUIMagicMap.this.mapWidth = mapWidth;
+            GUIMagicMap.this.mapHeight = mapHeight;
+            offsetX = playerX-((mapWidth-1)/2)*TILE_SIZE;
+            offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
+            final Graphics2D g = buffer.createGraphics();
+            g.setColor(Color.BLACK);
+            g.fillRect(0, 0, w, h);
+            redrawTiles(g, CfMapUpdater.getMap(), 0, 0, w/TILE_SIZE, h/TILE_SIZE);
+            g.dispose();
+        }
+    };
+
     public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
@@ -248,12 +270,13 @@ public class GUIMagicMap extends GUIElement
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
-        mapWidth = jxcWindow.getCrossfireServerConnection().getMapWidth();
-        mapHeight = jxcWindow.getCrossfireServerConnection().getMapHeight();
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
-        offsetX = playerX-((mapWidth-1)/2)*TILE_SIZE;
-        offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
+
+        final CrossfireServerConnection crossfireServerConnection = jxcWindow.getCrossfireServerConnection();
+        crossfireServerConnection.addMapSizeListener(mapSizeListener);
+        mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
+
         jxcWindow.getCrossfireServerConnection().addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
