@@ -236,7 +236,7 @@ public class GUICommand
      */
     public static class ScrollNextParameter
     {
-        /** The dialog to close. */
+        /** The element to activate.
         private final ActivatableGUIElement nextElement;
 
         /**
