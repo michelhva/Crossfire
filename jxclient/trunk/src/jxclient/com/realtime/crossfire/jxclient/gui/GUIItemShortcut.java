@@ -80,7 +80,7 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button1Clicked(final JXCWindow jxcWindow)
+    @Override public void button1Clicked(final JXCWindow jxcWindow)
     {
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut != null)
@@ -90,7 +90,7 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button2Clicked(final JXCWindow jxcWindow)
+    @Override public void button2Clicked(final JXCWindow jxcWindow)
     {
         final Shortcut shortcut = getJXCWindow().getShortcuts().getShortcut(index);
         if (shortcut != null)
@@ -104,7 +104,7 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button3Clicked(final JXCWindow jxcWindow)
+    @Override public void button3Clicked(final JXCWindow jxcWindow)
     {
         final Spell spell = jxcWindow.getCurrentSpellManager().getCurrentSpell();
         if (spell == null)

@@ -84,11 +84,11 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         }
     }
 
-    protected abstract void button1Clicked(final JXCWindow jxcw);
+    public abstract void button1Clicked(final JXCWindow jxcw);
 
-    protected abstract void button2Clicked(final JXCWindow jxcw);
+    public abstract void button2Clicked(final JXCWindow jxcw);
 
-    protected abstract void button3Clicked(final JXCWindow jxcw);
+    public abstract void button3Clicked(final JXCWindow jxcw);
 
     /** {@inheritDoc} */
     @Override public void activeChanged()

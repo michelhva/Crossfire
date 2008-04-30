@@ -123,7 +123,7 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button2Clicked(final JXCWindow jxcw)
+    @Override public void button2Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
