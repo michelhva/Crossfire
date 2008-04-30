@@ -186,17 +186,10 @@ public class ScriptProcess extends Thread
             sb.append(',').append(st.getExperience());
             for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++)
             {
-                try
+                if (Stats.getSkill(i) != null)
                 {
-                    if (Stats.getSkill(i) != null)
-                    {
-                        sb.append(',').append(Stats.getSkill(i).getLevel());
-                        sb.append(',').append(Stats.getSkill(i).getExperience());
-                    }
-                }
-                catch (final Exception e)
-                {
-                    i = 201;
+                    sb.append(',').append(Stats.getSkill(i).getLevel());
+                    sb.append(',').append(Stats.getSkill(i).getExperience());
                 }
             }
             commandSent(sb.toString());
