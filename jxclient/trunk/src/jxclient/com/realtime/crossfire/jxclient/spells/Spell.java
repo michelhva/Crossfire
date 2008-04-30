@@ -143,7 +143,7 @@ public class Spell
         this.skill = skill;
     }
 
-    public void setPath(final int nv)
+    public void setPath(final int path)
     {
         this.path = path;
     }
