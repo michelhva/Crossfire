@@ -72,144 +72,12 @@ public class GUICommand
 
     public boolean canExecute()
     {
-        switch (order)
-        {
-        case SHOW:
-        case HIDE:
-        case TOGGLE:
-        case PRINT:
-        case QUIT:
-            break;
-
-        case SCROLL:
-            if (target instanceof GUIScrollable)
-            {
-                return ((GUIScrollable)target).canScroll(((ScrollParameter)params).distance);
-            }
-            break;
-
-        case SCROLL_NEVER:
-            return false;
-
-        case SCROLLNEXT:
-        case SCROLL_RESET:
-        case CONNECT:
-        case DISCONNECT:
-        case GUI_META:
-        case GUI_START:
-        case GUI_EXECUTE_COMMAND:
-        case GUI_EXECUTE_ELEMENT:
-        case DIALOG_OPEN:
-        case DIALOG_TOGGLE:
-        case DIALOG_CLOSE:
-            break;
-        }
-
-        return true;
+        return params.canExecute(target);
     }
 
     public void execute()
     {
-        switch (order)
-        {
-        case SHOW:
-            target.setVisible(true);
-            break;
-
-        case HIDE:
-            target.setVisible(false);
-            break;
-
-        case TOGGLE:
-            target.setVisible(!target.isVisible());
-            break;
-
-        case PRINT:
-            break;
-
-        case QUIT:
-            ((QuitParameter)params).window.endRendering();
-            break;
-
-        case SCROLL:
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).scroll(((ScrollParameter)params).distance);
-            }
-            break;
-
-        case SCROLL_NEVER:
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).scroll(((ScrollNeverParameter)params).distance);
-            }
-            break;
-
-        case SCROLLNEXT:
-            if (target.isActive())
-            {
-                ((ScrollNextParameter)params).nextElement.setActive(true);
-            }
-            break;
-
-        case SCROLL_RESET:
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).resetScroll();
-            }
-            break;
-
-        case CONNECT:
-            ((ConnectParameter)params).window.connect(((GUIText)target).getText());
-            break;
-
-        case DISCONNECT:
-            ((DisconnectParameter)params).window.disconnect();
-            break;
-
-        case GUI_META:
-            ((MetaParameter)params).window.changeGUI(JXCWindow.GUI_METASERVER);
-            break;
-
-        case GUI_START:
-            ((StartParameter)params).window.changeGUI(JXCWindow.GUI_START);
-            break;
-
-        case GUI_EXECUTE_COMMAND:
-            {
-                final ExecuteCommandParameter param = (ExecuteCommandParameter)params;
-                param.window.executeCommand(param.command);
-            }
-            break;
-
-        case GUI_EXECUTE_ELEMENT:
-            if (target instanceof GUIItem)
-            {
-                ((GUIItem)target).button1Clicked(((ExecuteElementParameter)params).window);
-            }
-            break;
-
-        case DIALOG_OPEN:
-            {
-                final DialogOpenParameter param = (DialogOpenParameter)params;
-                param.window.openDialog(param.dialog);
-            }
-            break;
-
-        case DIALOG_TOGGLE:
-            {
-                final DialogToggleParameter param = (DialogToggleParameter)params;
-                param.window.toggleDialog(param.dialog);
-            }
-            break;
-
-        case DIALOG_CLOSE:
-            {
-                final DialogCloseParameter param = (DialogCloseParameter)params;
-                param.window.getWindowRenderer().closeDialog(param.dialog);
-            }
-            break;
-        }
+        params.execute(target);
     }
 
     public Parameter getParams()
@@ -222,6 +90,9 @@ public class GUICommand
      */
     public interface Parameter
     {
+        boolean canExecute(GUIElement target);
+
+        void execute(GUIElement target);
     }
 
     /**
@@ -240,6 +111,18 @@ public class GUICommand
         public QuitParameter(final JXCWindow window)
         {
             this.window = window;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.endRendering();
         }
     }
 
@@ -260,6 +143,18 @@ public class GUICommand
         {
             this.window = window;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.connect(((GUIText)target).getText());
+        }
     }
 
     /**
@@ -278,6 +173,18 @@ public class GUICommand
         public DisconnectParameter(final JXCWindow window)
         {
             this.window = window;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.disconnect();
         }
     }
 
@@ -298,6 +205,18 @@ public class GUICommand
         {
             this.window = window;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.changeGUI(JXCWindow.GUI_METASERVER);
+        }
     }
 
     /**
@@ -316,6 +235,18 @@ public class GUICommand
         public StartParameter(final JXCWindow window)
         {
             this.window = window;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.changeGUI(JXCWindow.GUI_START);
         }
     }
 
@@ -336,6 +267,21 @@ public class GUICommand
         {
             this.window = window;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            if (target instanceof GUIItem)
+            {
+                ((GUIItem)target).button1Clicked(window);
+            }
+        }
     }
 
     /**
@@ -354,6 +300,21 @@ public class GUICommand
         public ScrollParameter(final int distance)
         {
             this.distance = distance;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return target instanceof GUIScrollable && ((GUIScrollable)target).canScroll(distance);
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            if (target instanceof GUIScrollable)
+            {
+                ((GUIScrollable)target).scroll(distance);
+            }
         }
     }
 
@@ -374,6 +335,21 @@ public class GUICommand
         {
             this.distance = distance;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return false;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            if (target instanceof GUIScrollable)
+            {
+                ((GUIScrollable)target).scroll(distance);
+            }
+        }
     }
 
     /**
@@ -392,6 +368,21 @@ public class GUICommand
         public ScrollNextParameter(final ActivatableGUIElement nextElement)
         {
             this.nextElement = nextElement;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            if (target.isActive())
+            {
+                nextElement.setActive(true);
+            }
         }
     }
 
@@ -417,6 +408,18 @@ public class GUICommand
         {
             this.window = window;
             this.command = command;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.executeCommand(command);
         }
 
         /**
@@ -453,6 +456,18 @@ public class GUICommand
             this.window = window;
             this.dialog = dialog;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.openDialog(dialog);
+        }
     }
 
     /**
@@ -477,6 +492,18 @@ public class GUICommand
         {
             this.window = window;
             this.dialog = dialog;
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.toggleDialog(dialog);
         }
     }
 
@@ -503,6 +530,18 @@ public class GUICommand
             this.window = window;
             this.dialog = dialog;
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            window.getWindowRenderer().closeDialog(dialog);
+        }
     }
 
     /**
@@ -515,6 +554,18 @@ public class GUICommand
          */
         public ShowParameter()
         {
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            target.setVisible(true);
         }
     }
 
@@ -529,6 +580,18 @@ public class GUICommand
         public HideParameter()
         {
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            target.setVisible(false);
+        }
     }
 
     /**
@@ -541,6 +604,18 @@ public class GUICommand
          */
         public ToggleParameter()
         {
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            target.setVisible(!target.isVisible());
         }
     }
 
@@ -555,6 +630,17 @@ public class GUICommand
         public PrintParameter()
         {
         }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+        }
     }
 
     /**
@@ -567,6 +653,21 @@ public class GUICommand
          */
         public ScrollResetParameter()
         {
+        }
+
+        /** {@inheritDoc} */
+        public boolean canExecute(final GUIElement target)
+        {
+            return true;
+        }
+
+        /** {@inheritDoc} */
+        public void execute(final GUIElement target)
+        {
+            if (target instanceof GUIScrollable)
+            {
+                ((GUIScrollable)target).resetScroll();
+            }
         }
     }
 }
