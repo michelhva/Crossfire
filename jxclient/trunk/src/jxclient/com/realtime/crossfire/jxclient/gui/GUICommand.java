@@ -480,4 +480,69 @@ public class GUICommand
             this.dialog = dialog;
         }
     }
+
+    /**
+     * A parameter object for the {@link Command#SHOW} command.
+     */
+    public static class ShowParameter implements Parameter
+    {
+        /**
+         * Create a new instance.
+         */
+        public ShowParameter()
+        {
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#HIDE} command.
+     */
+    public static class HideParameter implements Parameter
+    {
+        /**
+         * Create a new instance.
+         */
+        public HideParameter()
+        {
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#TOGGLE} command.
+     */
+    public static class ToggleParameter implements Parameter
+    {
+        /**
+         * Create a new instance.
+         */
+        public ToggleParameter()
+        {
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#PRINT} command.
+     */
+    public static class PrintParameter implements Parameter
+    {
+        /**
+         * Create a new instance.
+         */
+        public PrintParameter()
+        {
+        }
+    }
+
+    /**
+     * A parameter object for the {@link Command#SCROLL_RESET} command.
+     */
+    public static class ScrollResetParameter implements Parameter
+    {
+        /**
+         * Create a new instance.
+         */
+        public ScrollResetParameter()
+        {
+        }
+    }
 }

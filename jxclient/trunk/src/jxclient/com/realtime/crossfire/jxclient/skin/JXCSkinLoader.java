@@ -2070,7 +2070,43 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private GUICommand.Parameter parseCommandArgs(final String[] args, final int argc, final GUICommand.Command command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
-        if (command == GUICommand.Command.QUIT)
+        if (command == GUICommand.Command.SHOW)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            return new GUICommand.ShowParameter();
+        }
+        else if (command == GUICommand.Command.HIDE)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            return new GUICommand.HideParameter();
+        }
+        else if (command == GUICommand.Command.TOGGLE)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            return new GUICommand.ToggleParameter();
+        }
+        else if (command == GUICommand.Command.PRINT)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            return new GUICommand.PrintParameter();
+        }
+        else if (command == GUICommand.Command.QUIT)
         {
             if (args.length != argc)
             {
@@ -2175,6 +2211,15 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             return new GUICommand.ScrollParameter(distance);
         }
+        else if (command == GUICommand.Command.SCROLL_RESET)
+        {
+            if (args.length != argc)
+            {
+                throw new IOException("syntax error");
+            }
+
+            return new GUICommand.ScrollResetParameter();
+        }
         else if (command == GUICommand.Command.SCROLLNEXT)
         {
             if (args.length != argc+1)
@@ -2191,12 +2236,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         else
         {
-            if (args.length != argc)
-            {
-                throw new IOException("syntax error");
-            }
-
-            return null;
+            throw new AssertionError();
         }
     }
 
