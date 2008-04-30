@@ -29,41 +29,11 @@ import com.realtime.crossfire.jxclient.JXCWindow;
  */
 public class GUICommand
 {
-    private final Command order;
-
     private final Parameter params;
 
-    public enum Command
+    public GUICommand(final Parameter params)
     {
-        SHOW,
-        HIDE,
-        TOGGLE,
-        PRINT,
-        QUIT,
-        SCROLL,
-        SCROLL_NEVER,
-        SCROLLNEXT,
-        SCROLL_RESET,
-        CONNECT,
-        DISCONNECT,
-        GUI_META,
-        GUI_START,
-        GUI_EXECUTE_COMMAND,
-        GUI_EXECUTE_ELEMENT,
-        DIALOG_OPEN,
-        DIALOG_TOGGLE,
-        DIALOG_CLOSE,
-    }
-
-    public GUICommand(final Command order, final Parameter params)
-    {
-        this.order = order;
         this.params = params;
-    }
-
-    public Command getOrder()
-    {
-        return order;
     }
 
     public boolean canExecute()
