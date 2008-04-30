@@ -29,8 +29,6 @@ import com.realtime.crossfire.jxclient.JXCWindow;
  */
 public class GUICommand
 {
-    private final GUIElement target;
-
     private final Command order;
 
     private final Parameter params;
@@ -57,9 +55,8 @@ public class GUICommand
         DIALOG_CLOSE,
     }
 
-    public GUICommand(final GUIElement target, final Command order, final Parameter params)
+    public GUICommand(final Command order, final Parameter params)
     {
-        this.target = target;
         this.order = order;
         this.params = params;
     }
@@ -71,12 +68,12 @@ public class GUICommand
 
     public boolean canExecute()
     {
-        return params.canExecute(target);
+        return params.canExecute();
     }
 
     public void execute()
     {
-        params.execute(target);
+        params.execute();
     }
 
     public Parameter getParams()
@@ -89,9 +86,9 @@ public class GUICommand
      */
     public interface Parameter
     {
-        boolean canExecute(GUIElement target);
+        boolean canExecute();
 
-        void execute(GUIElement target);
+        void execute();
     }
 
     /**
@@ -113,13 +110,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.endRendering();
         }
@@ -133,26 +130,32 @@ public class GUICommand
         /** The window. */
         private final JXCWindow window;
 
+        /** The host name input field. */
+        private final GUIText hostNameInputField;
+
         /**
          * Create a new instance.
          *
          * @param window The window.
+         *
+         * @param hostNameInputField The host name input field.
          */
-        public ConnectParameter(final JXCWindow window)
+        public ConnectParameter(final JXCWindow window, final GUIText hostNameInputField)
         {
             this.window = window;
+            this.hostNameInputField = hostNameInputField;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            window.connect(((GUIText)target).getText());
+            window.connect(hostNameInputField.getText());
         }
     }
 
@@ -175,13 +178,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.disconnect();
         }
@@ -206,13 +209,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.changeGUI(JXCWindow.GUI_METASERVER);
         }
@@ -237,13 +240,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.changeGUI(JXCWindow.GUI_START);
         }
@@ -257,29 +260,32 @@ public class GUICommand
         /** The window. */
         private final JXCWindow window;
 
+        /** The item element to execute. */
+        private final GUIItem item;
+
         /**
          * Create a new instance.
          *
          * @param window The window.
+         *
+         * @param item The item element to execute.
          */
-        public ExecuteElementParameter(final JXCWindow window)
+        public ExecuteElementParameter(final JXCWindow window, final GUIItem item)
         {
             this.window = window;
+            this.item = item;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            if (target instanceof GUIItem)
-            {
-                ((GUIItem)target).button1Clicked(window);
-            }
+            item.button1Clicked(window);
         }
     }
 
@@ -291,29 +297,32 @@ public class GUICommand
         /** The distance to scroll. */
         private final int distance;
 
+        /** The scrollable element. */
+        private final GUIScrollable scrollable;
+
         /**
          * Create a new instance.
          *
          * @param distance The distance to scroll.
+         *
+         * @param scrollable The scrollable element.
          */
-        public ScrollParameter(final int distance)
+        public ScrollParameter(final int distance, final GUIScrollable scrollable)
         {
             this.distance = distance;
+            this.scrollable = scrollable;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
-            return target instanceof GUIScrollable && ((GUIScrollable)target).canScroll(distance);
+            return scrollable.canScroll(distance);
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).scroll(distance);
-            }
+            scrollable.scroll(distance);
         }
     }
 
@@ -325,29 +334,32 @@ public class GUICommand
         /** The distance to scroll. */
         private final int distance;
 
+        /** The scrollable element. */
+        private final GUIScrollable scrollable;
+
         /**
          * Create a new instance.
          *
          * @param distance The distance to scroll.
+         *
+         * @param scrollable The scrollable element.
          */
-        public ScrollNeverParameter(final int distance)
+        public ScrollNeverParameter(final int distance, final GUIScrollable scrollable)
         {
             this.distance = distance;
+            this.scrollable = scrollable;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return false;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).scroll(distance);
-            }
+            scrollable.scroll(distance);
         }
     }
 
@@ -359,26 +371,32 @@ public class GUICommand
         /** The element to activate. */
         private final ActivatableGUIElement nextElement;
 
+        /** The element to deactivate. */
+        private final ActivatableGUIElement prevElement;
+
         /**
          * Create a new instance.
          *
          * @param nextElement The element to activate.
+         *
+         * @param prevElement The element to deactivate.
          */
-        public ScrollNextParameter(final ActivatableGUIElement nextElement)
+        public ScrollNextParameter(final ActivatableGUIElement nextElement, final ActivatableGUIElement prevElement)
         {
             this.nextElement = nextElement;
+            this.prevElement = prevElement;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            if (target.isActive())
+            if (prevElement.isActive())
             {
                 nextElement.setActive(true);
             }
@@ -410,13 +428,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.executeCommand(command);
         }
@@ -457,13 +475,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.openDialog(dialog);
         }
@@ -494,13 +512,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.toggleDialog(dialog);
         }
@@ -531,13 +549,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             window.getWindowRenderer().closeDialog(dialog);
         }
@@ -549,20 +567,28 @@ public class GUICommand
     public static class ShowParameter implements Parameter
     {
         /**
-         * Create a new instance.
+         * The gui element to show.
          */
-        public ShowParameter()
+        private final GUIElement target;
+
+        /**
+         * Create a new instance.
+         *
+         * @param target The gui element to show.
+         */
+        public ShowParameter(final GUIElement target)
         {
+            this.target = target;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             target.setVisible(true);
         }
@@ -574,20 +600,28 @@ public class GUICommand
     public static class HideParameter implements Parameter
     {
         /**
-         * Create a new instance.
+         * The gui element to hide.
          */
-        public HideParameter()
+        private final GUIElement target;
+
+        /**
+         * Create a new instance.
+         *
+         * @param target The gui element to hide.
+         */
+        public HideParameter(final GUIElement target)
         {
+            this.target = target;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             target.setVisible(false);
         }
@@ -599,20 +633,28 @@ public class GUICommand
     public static class ToggleParameter implements Parameter
     {
         /**
-         * Create a new instance.
+         * The gui element to toggle.
          */
-        public ToggleParameter()
+        private final GUIElement target;
+
+        /**
+         * Create a new instance.
+         *
+         * @param target The gui element to toggle.
+         */
+        public ToggleParameter(final GUIElement target)
         {
+            this.target = target;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
             target.setVisible(!target.isVisible());
         }
@@ -631,13 +673,13 @@ public class GUICommand
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
         }
     }
@@ -648,25 +690,30 @@ public class GUICommand
     public static class ScrollResetParameter implements Parameter
     {
         /**
-         * Create a new instance.
+         * The scrollable gui element to reset.
          */
-        public ScrollResetParameter()
+        private final GUIScrollable scrollable;
+
+        /**
+         * Create a new instance.
+         *
+         * @param scrollable The scrollable gui element to reset.
+         */
+        public ScrollResetParameter(final GUIScrollable scrollable)
         {
+            this.scrollable = scrollable;
         }
 
         /** {@inheritDoc} */
-        public boolean canExecute(final GUIElement target)
+        public boolean canExecute()
         {
             return true;
         }
 
         /** {@inheritDoc} */
-        public void execute(final GUIElement target)
+        public void execute()
         {
-            if (target instanceof GUIScrollable)
-            {
-                ((GUIScrollable)target).resetScroll();
-            }
+            scrollable.resetScroll();
         }
     }
 }

@@ -54,6 +54,7 @@ import com.realtime.crossfire.jxclient.gui.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUIQueryText;
+import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.GUIScrollBar;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
@@ -677,8 +678,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 final GUIElement element = args[3].equals("null") ? null : elements.lookup(args[3]);
                                 final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[4], "command");
-                                final GUICommand.Parameter params = parseCommandArgs(args, 5, command, window, lnr);
-                                commandList.add(new GUICommand(element, command, params));
+                                final GUICommand.Parameter params = parseCommandArgs(args, 5, element, command, window, lnr);
+                                commandList.add(new GUICommand(command, params));
                             }
                         }
                         else if (args[0].equals("commandlist_add"))
@@ -691,8 +692,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
                             final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
-                            final GUICommand.Parameter params = parseCommandArgs(args, 4, command, window, lnr);
-                            commandList.add(new GUICommand(element, command, params));
+                            final GUICommand.Parameter params = parseCommandArgs(args, 4, element, command, window, lnr);
+                            commandList.add(new GUICommand(command, params));
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
@@ -2056,6 +2057,8 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param argc The start index for parsing.
      *
+     * @param element The target element.
+     *
      * @param command The command to parse the arguments of.
      *
      * @param window The window instance.
@@ -2068,7 +2071,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException If an element cannot be found.
      */
-    private GUICommand.Parameter parseCommandArgs(final String[] args, final int argc, final GUICommand.Command command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private GUICommand.Parameter parseCommandArgs(final String[] args, final int argc, final GUIElement element, final GUICommand.Command command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (command == GUICommand.Command.SHOW)
         {
@@ -2077,7 +2080,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.ShowParameter();
+            return new GUICommand.ShowParameter(element);
         }
         else if (command == GUICommand.Command.HIDE)
         {
@@ -2086,7 +2089,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.HideParameter();
+            return new GUICommand.HideParameter(element);
         }
         else if (command == GUICommand.Command.TOGGLE)
         {
@@ -2095,7 +2098,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.ToggleParameter();
+            return new GUICommand.ToggleParameter(element);
         }
         else if (command == GUICommand.Command.PRINT)
         {
@@ -2122,7 +2125,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.ConnectParameter(window);
+            if (!(element instanceof GUIText))
+            {
+                throw new IOException("'"+element+"' must be an input field");
+            }
+
+            return new GUICommand.ConnectParameter(window, (GUIText)element);
         }
         else if (command == GUICommand.Command.DISCONNECT)
         {
@@ -2158,7 +2166,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.ExecuteElementParameter(window);
+            if (!(element instanceof GUIItem))
+            {
+                throw new IOException("'"+element+"' must be an item element");
+            }
+
+            return new GUICommand.ExecuteElementParameter(window, (GUIItem)element);
         }
         else if (command == GUICommand.Command.DIALOG_OPEN)
         {
@@ -2209,7 +2222,13 @@ public abstract class JXCSkinLoader implements JXCSkin
             {
                 throw new IOException("Invalid zero scroll distance");
             }
-            return command == GUICommand.Command.SCROLL ? new GUICommand.ScrollParameter(distance) : new GUICommand.ScrollNeverParameter(distance);
+
+            if (!(element instanceof GUIScrollable))
+            {
+                throw new IOException("'"+element+"' must be a scrollable element");
+            }
+
+            return command == GUICommand.Command.SCROLL ? new GUICommand.ScrollParameter(distance, (GUIScrollable)element) : new GUICommand.ScrollNeverParameter(distance, (GUIScrollable)element);
         }
         else if (command == GUICommand.Command.SCROLL_RESET)
         {
@@ -2218,7 +2237,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new GUICommand.ScrollResetParameter();
+            if (!(element instanceof GUIScrollable))
+            {
+                throw new IOException("'"+element+"' must be a scrollable element");
+            }
+
+            return new GUICommand.ScrollResetParameter((GUIScrollable)element);
         }
         else if (command == GUICommand.Command.SCROLLNEXT)
         {
@@ -2232,7 +2256,13 @@ public abstract class JXCSkinLoader implements JXCSkin
             {
                 throw new IOException("'"+args[argc]+"' cannot become active");
             }
-            return new GUICommand.ScrollNextParameter((ActivatableGUIElement)nextElement);
+
+            if (!(element instanceof ActivatableGUIElement))
+            {
+                throw new IOException("'"+element+"' cannot become active");
+            }
+
+            return new GUICommand.ScrollNextParameter((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element);
         }
         else
         {
