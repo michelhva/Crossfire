@@ -91,20 +91,6 @@ public class CfMapPatch
     }
 
     /**
-     * Return whether a square is dirty and clear the dirty flag.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return Whether the square is dirty.
-     */
-    public boolean resetDirty(final int x, final int y)
-    {
-        return square[x][y].resetDirty();
-    }
-
-    /**
      * Clear the content of one square. Note: the old square content remains
      * available until at least one value will be changed ("fog of war").
      *

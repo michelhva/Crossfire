@@ -377,11 +377,6 @@ public class GUIMap extends GUIElement
      */
     private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
     {
-        if (!map.resetDirty(x, y))
-        {
-            return;
-        }
-
         cleanSquare(g, x, y);
         for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
         {

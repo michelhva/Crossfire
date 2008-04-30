@@ -82,11 +82,6 @@ public class CfMapSquare
     private final CfMapSquare[] heads = new CfMapSquare[LAYERS];
 
     /**
-     * Set if this square has been changes since last redraw.
-     */
-    private boolean dirty = true;
-
-    /**
      * Create a new (empty) square.
      *
      * @param x The absolute map x-coordinate of the top left corner of this
@@ -138,19 +133,6 @@ public class CfMapSquare
     public void dirty()
     {
         CfMapUpdater.addModifiedSquare(this);
-        dirty = true;
-    }
-
-    /**
-     * Return whether this square is dirty and clear the dirty flag.
-     *
-     * @return Whether the square is dirty.
-     */
-    public boolean resetDirty()
-    {
-        final boolean result = dirty;
-        dirty = false;
-        return result;
     }
 
     /**
