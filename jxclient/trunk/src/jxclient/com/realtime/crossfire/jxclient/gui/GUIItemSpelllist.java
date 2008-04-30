@@ -141,7 +141,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button1Clicked(final JXCWindow jxcw)
+    @Override public void button1Clicked(final JXCWindow jxcw)
     {
         if (spell == null)
         {
@@ -153,12 +153,12 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button2Clicked(final JXCWindow jxcw)
+    @Override public void button2Clicked(final JXCWindow jxcw)
     {
     }
 
     /* {@inheritDoc} */
-    @Override protected void button3Clicked(final JXCWindow jxcw)
+    @Override public void button3Clicked(final JXCWindow jxcw)
     {
     }
 

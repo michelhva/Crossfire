@@ -99,7 +99,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button1Clicked(final JXCWindow jxcw)
+    @Override public void button1Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -118,7 +118,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button2Clicked(final JXCWindow jxcw)
+    @Override public void button2Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item != null)
@@ -134,7 +134,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void button3Clicked(final JXCWindow jxcw)
+    @Override public void button3Clicked(final JXCWindow jxcw)
     {
         final CfItem item = getItem();
         if (item == null)

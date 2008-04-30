@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient;
 
-import com.realtime.crossfire.jxclient.gui.GUICommand;
+import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
 import java.util.List;
 
