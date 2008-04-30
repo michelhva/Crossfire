@@ -470,20 +470,6 @@ public class CfMap
     }
 
     /**
-     * Return whether a given square is dirty and clear the dirty flag.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return Whether the square is dirty.
-     */
-    public boolean resetDirty(final int x, final int y)
-    {
-        return isWithinMap(x, y) && patch[px][py].resetDirty(ox, oy);
-    }
-
-    /**
      * Determine if the tile is not up-to-date.
      *
      * @param x The x-coordinate of the square.
