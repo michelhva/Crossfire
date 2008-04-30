@@ -532,7 +532,7 @@ public class CfMap
 
         if (patch[px][py] == null)
         {
-            patch[px][py] = new CfMapPatch(this, x-patchX-ox, y-patchY-oy);
+            patch[px][py] = new CfMapPatch(x-patchX-ox, y-patchY-oy);
         }
 
         return true;

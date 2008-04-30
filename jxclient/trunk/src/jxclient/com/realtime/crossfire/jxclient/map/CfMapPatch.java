@@ -46,21 +46,19 @@ public class CfMapPatch
     /**
      * Create a new (empty) patch.
      *
-     * @param map The <code>CfMap</code> instance this patch belongs to.
-     *
      * @param x0 The absolute map x-coordinate of the top left corner of this
      * patch.
      *
      * @param y0 The absolute map y-coordinate of the top left corner of this
      * patch.
      */
-    public CfMapPatch(final CfMap map, final int x0, final int y0)
+    public CfMapPatch(final int x0, final int y0)
     {
         for (int y = 0; y < SIZE; y++)
         {
             for (int x = 0; x < SIZE; x++)
             {
-                square[x][y] = new CfMapSquare(map, x0+x, y0+y);
+                square[x][y] = new CfMapSquare(x0+x, y0+y);
             }
         }
     }

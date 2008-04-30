@@ -42,17 +42,12 @@ public class CfMapSquare
     public static final int LAYERS = CrossfireServerConnection.NUM_LAYERS;
 
     /**
-     * The {@link CfMap} instance this square is part of.
-     */
-    private final CfMap map;
-
-    /**
-     * The absolute x-coordinate of this square in {@link #map}.
+     * The absolute x-coordinate of this square in its {@link CfMap}.
      */
     private final int x;
 
     /**
-     * The absolute y-coordinate of this square in {@link #map}.
+     * The absolute y-coordinate of this square in its {@link CfMap}.
      */
     private final int y;
 
@@ -94,17 +89,14 @@ public class CfMapSquare
     /**
      * Create a new (empty) square.
      *
-     * @param map The <code>CfMap</code> instance this square belongs to.
-     *
      * @param x The absolute map x-coordinate of the top left corner of this
      * patch.
      *
      * @param y The absolute map y-coordinate of the top left corner of this
      * patch.
      */
-    public CfMapSquare(final CfMap map, final int x, final int y)
+    public CfMapSquare(final int x, final int y)
     {
-        this.map = map;
         this.x = x;
         this.y = y;
     }
