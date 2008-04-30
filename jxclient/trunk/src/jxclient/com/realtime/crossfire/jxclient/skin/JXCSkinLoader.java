@@ -677,9 +677,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             if (args.length >= 5)
                             {
                                 final GUIElement element = args[3].equals("null") ? null : elements.lookup(args[3]);
-                                final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[4], "command");
+                                final String command = args[4];
                                 final GUICommand.Parameter params = parseCommandArgs(args, 5, element, command, window, lnr);
-                                commandList.add(new GUICommand(command, params));
+                                commandList.add(new GUICommand(params));
                             }
                         }
                         else if (args[0].equals("commandlist_add"))
@@ -691,9 +691,9 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
-                            final GUICommand.Command command = parseEnum(GUICommand.Command.class, args[3], "command");
+                            final String command = args[3];
                             final GUICommand.Parameter params = parseCommandArgs(args, 4, element, command, window, lnr);
-                            commandList.add(new GUICommand(command, params));
+                            commandList.add(new GUICommand(params));
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
@@ -2071,9 +2071,9 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException If an element cannot be found.
      */
-    private GUICommand.Parameter parseCommandArgs(final String[] args, final int argc, final GUIElement element, final GUICommand.Command command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private GUICommand.Parameter parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
-        if (command == GUICommand.Command.SHOW)
+        if (command.equals("SHOW"))
         {
             if (args.length != argc)
             {
@@ -2082,7 +2082,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.ShowParameter(element);
         }
-        else if (command == GUICommand.Command.HIDE)
+        else if (command.equals("HIDE"))
         {
             if (args.length != argc)
             {
@@ -2091,7 +2091,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.HideParameter(element);
         }
-        else if (command == GUICommand.Command.TOGGLE)
+        else if (command.equals("TOGGLE"))
         {
             if (args.length != argc)
             {
@@ -2100,7 +2100,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.ToggleParameter(element);
         }
-        else if (command == GUICommand.Command.PRINT)
+        else if (command.equals("PRINT"))
         {
             if (args.length != argc)
             {
@@ -2109,7 +2109,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.PrintParameter();
         }
-        else if (command == GUICommand.Command.QUIT)
+        else if (command.equals("QUIT"))
         {
             if (args.length != argc)
             {
@@ -2118,7 +2118,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.QuitParameter(window);
         }
-        else if (command == GUICommand.Command.CONNECT)
+        else if (command.equals("CONNECT"))
         {
             if (args.length != argc)
             {
@@ -2132,7 +2132,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.ConnectParameter(window, (GUIText)element);
         }
-        else if (command == GUICommand.Command.DISCONNECT)
+        else if (command.equals("DISCONNECT"))
         {
             if (args.length != argc)
             {
@@ -2141,7 +2141,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.DisconnectParameter(window);
         }
-        else if (command == GUICommand.Command.GUI_META)
+        else if (command.equals("GUI_META"))
         {
             if (args.length != argc)
             {
@@ -2150,7 +2150,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.MetaParameter(window);
         }
-        else if (command == GUICommand.Command.GUI_START)
+        else if (command.equals("GUI_START"))
         {
             if (args.length != argc)
             {
@@ -2159,7 +2159,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.StartParameter(window);
         }
-        else if (command == GUICommand.Command.GUI_EXECUTE_ELEMENT)
+        else if (command.equals("GUI_EXECUTE_ELEMENT"))
         {
             if (args.length != argc)
             {
@@ -2173,7 +2173,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.ExecuteElementParameter(window, (GUIItem)element);
         }
-        else if (command == GUICommand.Command.DIALOG_OPEN)
+        else if (command.equals("DIALOG_OPEN"))
         {
             if (args.length != argc+1)
             {
@@ -2182,7 +2182,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.DialogOpenParameter(window, addDialog(args[argc], window));
         }
-        else if (command == GUICommand.Command.DIALOG_TOGGLE)
+        else if (command.equals("DIALOG_TOGGLE"))
         {
             if (args.length != argc+1)
             {
@@ -2191,7 +2191,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.DialogToggleParameter(window, addDialog(args[argc], window));
         }
-        else if (command == GUICommand.Command.DIALOG_CLOSE)
+        else if (command.equals("DIALOG_CLOSE"))
         {
             if (args.length != argc+1)
             {
@@ -2200,7 +2200,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.DialogCloseParameter(window, addDialog(args[argc], window));
         }
-        else if (command == GUICommand.Command.GUI_EXECUTE_COMMAND)
+        else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
             if (args.length < argc+1)
             {
@@ -2210,7 +2210,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             final String commandString = parseText(args, argc, lnr);
             return new GUICommand.ExecuteCommandParameter(window, commandString);
         }
-        else if (command == GUICommand.Command.SCROLL || command == GUICommand.Command.SCROLL_NEVER)
+        else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER"))
         {
             if (args.length != argc+1)
             {
@@ -2228,9 +2228,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("'"+element+"' must be a scrollable element");
             }
 
-            return command == GUICommand.Command.SCROLL ? new GUICommand.ScrollParameter(distance, (GUIScrollable)element) : new GUICommand.ScrollNeverParameter(distance, (GUIScrollable)element);
+            return command.equals("SCROLL") ? new GUICommand.ScrollParameter(distance, (GUIScrollable)element) : new GUICommand.ScrollNeverParameter(distance, (GUIScrollable)element);
         }
-        else if (command == GUICommand.Command.SCROLL_RESET)
+        else if (command.equals("SCROLL_RESET"))
         {
             if (args.length != argc)
             {
@@ -2244,7 +2244,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             return new GUICommand.ScrollResetParameter((GUIScrollable)element);
         }
-        else if (command == GUICommand.Command.SCROLLNEXT)
+        else if (command.equals("SCROLLNEXT"))
         {
             if (args.length != argc+1)
             {
@@ -2266,7 +2266,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         else
         {
-            throw new AssertionError();
+            throw new JXCSkinException("unknown command '"+command+"'");
         }
     }
 
