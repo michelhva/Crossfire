@@ -19,21 +19,46 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.GUIItem;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which executes (i.e., simulates a left-button mouse
+ * click on) an {@link GUIItem}.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ExecuteElementCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The main window.
      */
-    boolean canExecute();
+    private final JXCWindow window;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The item element to execute.
      */
-    void execute();
+    private final GUIItem item;
+
+    /**
+     * Creates a new instance.
+     * @param window the main window
+     * @param item the item element to execute
+     */
+    public ExecuteElementCommand(final JXCWindow window, final GUIItem item)
+    {
+	this.window = window;
+	this.item = item;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	item.button1Clicked(window);
+    }
 }

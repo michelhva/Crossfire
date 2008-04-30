@@ -19,21 +19,47 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
+
 /**
- * An executable command.
+ * A {@link GUIElement} which transfers the focus between two gui elements.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ScrollNextCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The element to activate.
      */
-    boolean canExecute();
+    private final ActivatableGUIElement nextElement;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The element to deactivate.
      */
-    void execute();
+    private final ActivatableGUIElement prevElement;
+
+    /**
+     * Creates a new instance.
+     * @param nextElement the element to activate
+     * @param prevElement the element to deactivate
+     */
+    public ScrollNextCommand(final ActivatableGUIElement nextElement, final ActivatableGUIElement prevElement)
+    {
+	this.nextElement = nextElement;
+	this.prevElement = prevElement;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	if (prevElement.isActive())
+	{
+	    nextElement.setActive(true);
+	}
+    }
 }

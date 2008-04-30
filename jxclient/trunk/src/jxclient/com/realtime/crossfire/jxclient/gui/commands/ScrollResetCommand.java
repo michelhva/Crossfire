@@ -19,21 +19,38 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.GUIScrollable;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which resets the scroll position of a {@link
+ * GUIScrollable}.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ScrollResetCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The scrollable gui element to reset.
      */
-    boolean canExecute();
+    private final GUIScrollable scrollable;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * Creates a new instance.
+     * @param scrollable the scrollable gui element to reset
      */
-    void execute();
+    public ScrollResetCommand(final GUIScrollable scrollable)
+    {
+	this.scrollable = scrollable;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	scrollable.resetScroll();
+    }
 }

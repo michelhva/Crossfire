@@ -20,20 +20,26 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 /**
- * An executable command.
+ * A {@link GUICommand} which does nothing.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class PrintCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * Creates a new instance.
      */
-    boolean canExecute();
+    public PrintCommand()
+    {
+    }
 
-    /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
-     */
-    void execute();
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+    }
 }

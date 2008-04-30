@@ -19,21 +19,45 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.Gui;
+
 /**
- * An executable command.
+ * A parameter object for the {@link Command#DIALOG_OPEN} command.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class DialogOpenCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The main window.
      */
-    boolean canExecute();
+    private final JXCWindow window;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The dialog to open.
      */
-    void execute();
+    private final Gui dialog;
+
+    /**
+     * Creates a new instance.
+     * @param window the main window
+     * @param dialog the dialog to open
+     */
+    public DialogOpenCommand(final JXCWindow window, final Gui dialog)
+    {
+	this.window = window;
+	this.dialog = dialog;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	window.openDialog(dialog);
+    }
 }

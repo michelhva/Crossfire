@@ -19,21 +19,37 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.GUIElement;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which shows a target {@link GUIElement}.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ShowCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The gui element to show.
      */
-    boolean canExecute();
+    private final GUIElement target;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * Creates a new instance.
+     * @param target the gui element to show
      */
-    void execute();
+    public ShowCommand(final GUIElement target)
+    {
+        this.target = target;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+        return true;
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+        target.setVisible(true);
+    }
 }

@@ -19,21 +19,45 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.GUIScrollable;
+
 /**
- * An executable command.
+ * A {@link GUICommand} which scrolls a {@link GUIScrollable} gui element by a
+ * given distance.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
+public class ScrollCommand implements GUICommand
 {
     /**
-     * Returns whether this command may be executed.
-     * @return whether this command may be executed
+     * The distance to scroll.
      */
-    boolean canExecute();
+    private final int distance;
 
     /**
-     * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * The scrollable element.
      */
-    void execute();
+    private final GUIScrollable scrollable;
+
+    /**
+     * Creates a new instance.
+     * @param distance the distance to scroll
+     * @param scrollable the scrollable element
+     */
+    public ScrollCommand(final int distance, final GUIScrollable scrollable)
+    {
+	this.distance = distance;
+	this.scrollable = scrollable;
+    }
+
+    /** {@inheritDoc} */
+    public boolean canExecute()
+    {
+	return scrollable.canScroll(distance);
+    }
+
+    /** {@inheritDoc} */
+    public void execute()
+    {
+	scrollable.scroll(distance);
+    }
 }
