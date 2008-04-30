@@ -76,7 +76,7 @@ public class GUICommandList
     public GUICommandList(final Type type, final String commands, final JXCWindow jxcWindow)
     {
         this(type);
-        this.commands.add(new GUICommand(null, GUICommand.Command.GUI_EXECUTE_COMMAND, new GUICommand.ExecuteCommandParameter(jxcWindow, commands)));
+        this.commands.add(new GUICommand(GUICommand.Command.GUI_EXECUTE_COMMAND, new GUICommand.ExecuteCommandParameter(jxcWindow, commands)));
     }
 
     /**
