@@ -1332,7 +1332,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIElement element = elements.lookup(name);
                             if (!(element instanceof GUIMessageLog))
                             {
-                                    throw new IOException("element '"+name+"' is not of type 'log'");
+                                 throw new IOException("element '"+name+"' is not of type 'log'");
                             }
                             if (index < 0 || index >= MessageBufferUpdater.NUM_COLORS)
                             {
