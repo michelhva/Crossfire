@@ -44,22 +44,22 @@ public class ScrollNextCommand implements GUICommand
      */
     public ScrollNextCommand(final ActivatableGUIElement nextElement, final ActivatableGUIElement prevElement)
     {
-	this.nextElement = nextElement;
-	this.prevElement = prevElement;
+        this.nextElement = nextElement;
+        this.prevElement = prevElement;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	if (prevElement.isActive())
-	{
-	    nextElement.setActive(true);
-	}
+        if (prevElement.isActive())
+        {
+            nextElement.setActive(true);
+        }
     }
 }

@@ -46,19 +46,19 @@ public class ExecuteElementCommand implements GUICommand
      */
     public ExecuteElementCommand(final JXCWindow window, final GUIItem item)
     {
-	this.window = window;
-	this.item = item;
+        this.window = window;
+        this.item = item;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	item.button1Clicked(window);
+        item.button1Clicked(window);
     }
 }

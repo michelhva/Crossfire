@@ -39,18 +39,18 @@ public class ScrollResetCommand implements GUICommand
      */
     public ScrollResetCommand(final GUIScrollable scrollable)
     {
-	this.scrollable = scrollable;
+        this.scrollable = scrollable;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	scrollable.resetScroll();
+        scrollable.resetScroll();
     }
 }

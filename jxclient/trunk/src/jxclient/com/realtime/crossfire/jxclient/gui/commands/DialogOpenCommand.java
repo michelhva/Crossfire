@@ -45,19 +45,19 @@ public class DialogOpenCommand implements GUICommand
      */
     public DialogOpenCommand(final JXCWindow window, final Gui dialog)
     {
-	this.window = window;
-	this.dialog = dialog;
+        this.window = window;
+        this.dialog = dialog;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.openDialog(dialog);
+        window.openDialog(dialog);
     }
 }

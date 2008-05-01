@@ -45,19 +45,19 @@ public class ConnectCommand implements GUICommand
      */
     public ConnectCommand(final JXCWindow window, final GUIText hostNameInputField)
     {
-	this.window = window;
-	this.hostNameInputField = hostNameInputField;
+        this.window = window;
+        this.hostNameInputField = hostNameInputField;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.connect(hostNameInputField.getText());
+        window.connect(hostNameInputField.getText());
     }
 }

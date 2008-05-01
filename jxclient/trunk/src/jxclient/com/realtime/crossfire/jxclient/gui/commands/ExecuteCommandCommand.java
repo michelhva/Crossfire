@@ -40,20 +40,20 @@ public class ExecuteCommandCommand implements GUICommand
      */
     public ExecuteCommandCommand(final JXCWindow window, final String command)
     {
-	this.window = window;
-	this.command = command;
+        this.window = window;
+        this.command = command;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.executeCommand(command);
+        window.executeCommand(command);
     }
 
     /**
@@ -62,6 +62,6 @@ public class ExecuteCommandCommand implements GUICommand
      */
     public String getCommand()
     {
-	return command;
+        return command;
     }
 }

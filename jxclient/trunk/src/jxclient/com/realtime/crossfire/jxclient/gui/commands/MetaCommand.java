@@ -38,18 +38,18 @@ public class MetaCommand implements GUICommand
      */
     public MetaCommand(final JXCWindow window)
     {
-	this.window = window;
+        this.window = window;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.changeGUI(JXCWindow.GUI_METASERVER);
+        window.changeGUI(JXCWindow.GUI_METASERVER);
     }
 }

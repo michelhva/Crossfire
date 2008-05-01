@@ -38,18 +38,18 @@ public class StartCommand implements GUICommand
      */
     public StartCommand(final JXCWindow window)
     {
-	this.window = window;
+        this.window = window;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.changeGUI(JXCWindow.GUI_START);
+        window.changeGUI(JXCWindow.GUI_START);
     }
 }
