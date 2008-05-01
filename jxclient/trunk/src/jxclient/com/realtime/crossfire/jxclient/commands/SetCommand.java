@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 
 /**
- * Implements a "script" command. It runs a new script.
+ * Implements the command "set". It allows settings options.
  *
  * @author Andreas Kirschbaum
  */
