@@ -156,14 +156,20 @@ public class CfMapSquare
      *
      * @param darkness The new darkness value between <code>0</code> and
      * <code>255</code>. 0=dark, 255=full bright.
+     *
+     * @return whether fog-of-war has been cleared
      */
-    public void setDarkness(final int darkness)
+    public boolean setDarkness(final int darkness)
     {
-        if (this.darkness != darkness)
+        final boolean result = fogOfWar;
+        final boolean markDirty = fogOfWar || this.darkness != darkness;
+        fogOfWar = false;
+        this.darkness = darkness;
+        if (markDirty)
         {
-            this.darkness = darkness;
             dirty();
         }
+        return result;
     }
 
     /**
