@@ -509,7 +509,7 @@ public class Stats
      */
     public static void addSkill(final int id, final String skillName)
     {
-        final int index = id-Stats.CS_STAT_SKILLINFO;
+        final int index = id-CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
         final Skill newSkill = getNamedSkill(skillName);
         if (oldSkill == newSkill)
@@ -572,7 +572,7 @@ public class Stats
      */
     public double getFloatStat(final int statnr)
     {
-        return (double)stats[statnr]/Stats.FLOAT_MULTI;
+        return (double)stats[statnr]/FLOAT_MULTI;
     }
 
     /**
@@ -698,6 +698,6 @@ public class Stats
             return 0;
         }
 
-        return getFloatStat(Stats.CS_STAT_SPEED)/weaponSpeed;
+        return getFloatStat(CS_STAT_SPEED)/weaponSpeed;
     }
 }
