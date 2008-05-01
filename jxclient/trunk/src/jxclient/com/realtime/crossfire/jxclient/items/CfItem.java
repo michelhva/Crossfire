@@ -110,7 +110,7 @@ public class CfItem
         this.anim = anim;
         this.animSpeed = animSpeed;
         this.nrof = nrof;
-        this.type = -1;
+        type = -1;
     }
 
     public void setFlags(final int flags)

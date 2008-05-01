@@ -102,7 +102,7 @@ public class CommandQueue
      */
     public int getRepeatCount()
     {
-        final int oldRepeatCount = this.repeatCount;
+        final int oldRepeatCount = repeatCount;
         resetRepeatCount();
         return oldRepeatCount;
     }
@@ -123,7 +123,7 @@ public class CommandQueue
     public void addToRepeatCount(final int digit)
     {
         assert 0 <= digit && digit <= 9;
-        this.repeatCount = (10*repeatCount+digit)%100000;
+        repeatCount = (10*repeatCount+digit)%100000;
     }
 
     /**

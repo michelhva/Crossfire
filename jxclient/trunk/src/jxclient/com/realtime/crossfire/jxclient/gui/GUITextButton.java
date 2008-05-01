@@ -170,7 +170,7 @@ public class GUITextButton extends AbstractButton
             this.imageLeft = imageLeft;
             this.imageMiddle = imageMiddle;
             this.imageRight = imageRight;
-            this.height = imageMiddle.getHeight(null);
+            height = imageMiddle.getHeight(null);
         }
 
         /**
