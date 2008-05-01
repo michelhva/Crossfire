@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
@@ -52,7 +53,7 @@ public class SetCommand extends AbstractCommand
     /** {@inheritDoc} */
     public void execute(final String args)
     {
-        final String[] tmp = Commands.patternWhitespace.split(args, 2);
+        final String[] tmp = Patterns.patternWhitespace.split(args, 2);
         if (tmp.length != 2)
         {
             drawInfoError("The set command needs two arguments: set <option> <value>");
