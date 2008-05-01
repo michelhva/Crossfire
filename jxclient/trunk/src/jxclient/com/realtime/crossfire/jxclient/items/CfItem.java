@@ -100,17 +100,7 @@ public class CfItem
 
     public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
     {
-        this.location = location;
-        this.tag = tag;
-        this.flags = flags;
-        this.weight = weight;
-        this.face = face;
-        this.name = name;
-        this.namePl = namePl;
-        this.anim = anim;
-        this.animSpeed = animSpeed;
-        this.nrof = nrof;
-        type = -1;
+        this(location, tag, flags, weight, face, name, namePl, anim, animSpeed, nrof, -1);
     }
 
     public void setFlags(final int flags)
