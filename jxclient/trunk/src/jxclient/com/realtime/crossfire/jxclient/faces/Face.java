@@ -341,11 +341,11 @@ public class Face
      */
     private ImageIcon loadOriginalImageIcon()
     {
-        final ImageIcon originalImageIcon = fileCacheOriginal.load(name, checksum);
-        if (originalImageIcon != null)
+        final ImageIcon imageIcon = fileCacheOriginal.load(name, checksum);
+        if (imageIcon != null)
         {
-            this.originalImageIcon = new SoftReference<ImageIcon>(originalImageIcon);
-            return originalImageIcon;
+            this.originalImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            return imageIcon;
         }
 
         askfaceManager.queryFace(id);
@@ -361,11 +361,11 @@ public class Face
      */
     private ImageIcon loadScaledImageIcon()
     {
-        final ImageIcon scaledImageIcon = fileCacheScaled.load(name, checksum);
-        if (scaledImageIcon != null)
+        final ImageIcon imageIcon = fileCacheScaled.load(name, checksum);
+        if (imageIcon != null)
         {
-            this.scaledImageIcon = new SoftReference<ImageIcon>(scaledImageIcon);
-            return scaledImageIcon;
+            this.scaledImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            return imageIcon;
         }
 
         askfaceManager.queryFace(id);
@@ -381,11 +381,11 @@ public class Face
      */
     private ImageIcon loadMagicMapImageIcon()
     {
-        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(name, checksum);
-        if (magicMapImageIcon != null)
+        final ImageIcon imageIcon = fileCacheMagicMap.load(name, checksum);
+        if (imageIcon != null)
         {
-            this.magicMapImageIcon = new SoftReference<ImageIcon>(magicMapImageIcon);
-            return magicMapImageIcon;
+            this.magicMapImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            return imageIcon;
         }
 
         askfaceManager.queryFace(id);
