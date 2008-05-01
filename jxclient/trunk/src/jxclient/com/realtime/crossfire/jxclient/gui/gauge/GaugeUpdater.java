@@ -84,6 +84,8 @@ public abstract class GaugeUpdater
      *
      * @param maxValue The maximum value.
      *
+     * @param labelText The text to draw on the gauge.
+     *
      * @param tooltipText The tooltip suffix.
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)

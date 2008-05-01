@@ -90,6 +90,7 @@ public class MessageTypes
 
     /**
      * Return all defined message types.
+     * @return all defined message types
      */
     public static int[] getAllTypes()
     {

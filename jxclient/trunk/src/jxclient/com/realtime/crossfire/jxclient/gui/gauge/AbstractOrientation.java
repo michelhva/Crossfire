@@ -170,6 +170,7 @@ public abstract class AbstractOrientation implements Orientation
      * [<code>0..width</code>].
      * @param val the value
      * @param max the range size
+     * @param width the size of the result
      * @return the fraction in pixels
      */
     protected static int calc(final int val, final int max, final int width)

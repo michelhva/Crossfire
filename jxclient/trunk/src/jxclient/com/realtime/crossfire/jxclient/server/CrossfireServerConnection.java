@@ -1584,7 +1584,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param packet The packet contents.
      *
-     * @param pos The start of the payload data to process.
+     * @param start The start of the payload data to process.
      *
      * @param end The end of the payload data to process.
      *
@@ -1759,7 +1759,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param csval The client version.
      * @param scval The server version.
      * @param vinfo The version information string.
-     * @throws IOException If an I/O error occurs.
      */
     private void cmd_version(final int csval, final int scval, final String vinfo)
     {
@@ -1792,6 +1791,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param packet The packet payload data.
      * @param startPos The starting offset into <code>packet</code> where the
      * parameters of <code>infoType</code>'s parameter start.
+     * @param endPos The end offset into <code>packet</code>.
      * @throws IOException If an I/O error occurs.
      */
     private void cmd_replyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException

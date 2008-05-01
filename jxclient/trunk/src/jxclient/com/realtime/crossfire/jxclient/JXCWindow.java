@@ -579,7 +579,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     /**
      * Opens a dialog by name.
-     * @param dialog the name
+     * @param name the dialog name
      * @return whether the dialog exists
      */
     private boolean openDialogByName(final String name)
@@ -596,7 +596,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     /**
      * Closes a dialog by name.
-     * @param dialog the name
+     * @param name the dialog name
      */
     private void closeDialogByName(final String name)
     {

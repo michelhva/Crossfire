@@ -175,6 +175,7 @@ public class GUITextButton extends AbstractButton
 
         /**
          * Return the button height.
+         * @return the height
          */
         public int getHeight()
         {
@@ -183,6 +184,7 @@ public class GUITextButton extends AbstractButton
 
         /**
          * Return the minimal possible button width.
+         * @return the minimal button width
          */
         public int getMinimumWidth()
         {

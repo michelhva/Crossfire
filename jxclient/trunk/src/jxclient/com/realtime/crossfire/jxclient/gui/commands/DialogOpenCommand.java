@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.Gui;
 
 /**
- * A parameter object for the {@link Command#DIALOG_OPEN} command.
+ * A {@link GUICommand} which opens a {@link Gui} dialog.
  * @author Andreas Kirschbaum
  */
 public class DialogOpenCommand implements GUICommand

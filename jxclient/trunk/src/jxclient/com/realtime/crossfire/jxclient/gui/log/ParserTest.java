@@ -401,7 +401,7 @@ public class ParserTest extends TestCase
      *
      * @param font The font to convert.
      *
-     * @return The string representation.
+     * @param sb the string builder to use
      */
     public static void dumpFont(final Segment.FontID font, final StringBuilder sb)
     {

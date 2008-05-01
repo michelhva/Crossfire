@@ -121,7 +121,7 @@ public class CrossfireCommandMagicmapEvent extends EventObject
 
     /**
      * Returns the x-coordinate of the player.
-     * @retur the x-coodinate
+     * @return the x-coodinate
      */
     public int getPX()
     {
@@ -138,7 +138,7 @@ public class CrossfireCommandMagicmapEvent extends EventObject
     }
 
     /**
-     * Returns the tile data. See {@linl #data} for details.
+     * Returns the tile data. See {@link #data} for details.
      * @return the tile data
      */
     public byte[] getData()

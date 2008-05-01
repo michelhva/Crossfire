@@ -174,6 +174,7 @@ public class RenderStateManager
 
     /**
      * Whether scrolling up is possible.
+     * @return whether scrolling up is possible
      */
     public boolean canScrollUp()
     {
@@ -182,6 +183,7 @@ public class RenderStateManager
 
     /**
      * Whether scrolling down is possible.
+     * @return whether scrolling down is possible
      */
     public boolean canScrollDown()
     {

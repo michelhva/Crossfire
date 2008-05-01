@@ -55,6 +55,8 @@ public class OrientationTest extends TestCase
 
     /**
      * Checks that {@link Orientation} instances work correctly.
+     * @throws IllegalAccessException if the test failed
+     * @throws InstantiationException if the test failed
      */
     public void testOrientations() throws IllegalAccessException, InstantiationException
     {

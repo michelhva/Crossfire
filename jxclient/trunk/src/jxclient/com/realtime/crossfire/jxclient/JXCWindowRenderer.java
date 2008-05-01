@@ -638,6 +638,7 @@ public class JXCWindowRenderer
      * Adds a dialog to {@link #openDialogs}. Generates mouse events if
      * necessary.
      * @param dialog the dialog
+     * @return whether the dialog was opened
      */
     private boolean openDialogsAdd(final Gui dialog)
     {
@@ -675,6 +676,7 @@ public class JXCWindowRenderer
      * Removes a dialog to {@link #openDialogs}. Generates mouse events if
      * necessary.
      * @param dialog the dialog
+     * @return whether the dialog was opened
      */
     private boolean openDialogsRemove(final Gui dialog)
     {

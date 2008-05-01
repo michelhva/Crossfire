@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.JXCWindow;
 
 /**
- * A parameter object for the {@link Command#GUI_START} command.
+ * A {@link GUICommand} which shows the start screen.
  * @author Andreas Kirschbaum
  */
 public class StartCommand implements GUICommand

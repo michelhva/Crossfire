@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.JXCWindow;
 
 /**
- * A parameter object for the {@link Command#GUI_EXECUTE_COMMAND} command.
+ * A {@link GUICommand} which executes a Crossfire command.
  * @author Andreas Kirschbaum
  */
 public class ExecuteCommandCommand implements GUICommand
