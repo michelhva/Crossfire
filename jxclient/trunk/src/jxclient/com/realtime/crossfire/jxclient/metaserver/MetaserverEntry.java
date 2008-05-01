@@ -110,7 +110,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     }
 
     /** {@inheritDoc} */
-    public String toString()
+    @Override public String toString()
     {
         return "IP:"+ipAddress+" Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
     }

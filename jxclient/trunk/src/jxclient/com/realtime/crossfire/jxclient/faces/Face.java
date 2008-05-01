@@ -341,7 +341,7 @@ public class Face
     }
 
     /** {@inheritDoc} */
-    public String toString()
+    @Override public String toString()
     {
         return name;
     }

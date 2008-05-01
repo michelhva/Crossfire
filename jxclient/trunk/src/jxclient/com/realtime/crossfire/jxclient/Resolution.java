@@ -126,7 +126,7 @@ public class Resolution
     }
 
     /** {@inheritDoc} */
-    public boolean equals(final Object obj)
+    @Override public boolean equals(final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Resolution.class) return false;
@@ -135,13 +135,13 @@ public class Resolution
     }
 
     /** {@inheritDoc} */
-    public int hashCode()
+    @Override public int hashCode()
     {
         return width^(height<<16)^(height>>16);
     }
 
     /** {@inheritDoc} */
-    public String toString()
+    @Override public String toString()
     {
         return width+"x"+height;
     }

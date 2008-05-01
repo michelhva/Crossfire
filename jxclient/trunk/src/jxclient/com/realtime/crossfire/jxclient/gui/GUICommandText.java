@@ -38,7 +38,7 @@ public class GUICommandText extends GUIText
     }
 
     /** {@inheritDoc} */
-    protected void execute(final JXCWindow jxcWindow, final String command)
+    @Override protected void execute(final JXCWindow jxcWindow, final String command)
     {
         jxcWindow.executeCommand(command);
         setText("");
