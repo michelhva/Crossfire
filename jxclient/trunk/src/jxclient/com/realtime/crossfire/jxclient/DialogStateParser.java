@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import java.io.BufferedReader;
