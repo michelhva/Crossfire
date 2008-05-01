@@ -457,14 +457,8 @@ public class Stats
      */
     public static void clearSkills()
     {
-        for (int i = 0; i < numberedSkills.length; i++)
-        {
-            if (numberedSkills[i] != null)
-            {
-                numberedSkills[i].set(0, 0);
-                numberedSkills[i] = null;
-            }
-        }
+        clearNumberedSkills();
+        Arrays.fill(numberedSkills, null);
     }
 
     /**
@@ -472,13 +466,7 @@ public class Stats
      */
     public void reset()
     {
-        for (final Skill skill : numberedSkills)
-        {
-            if (skill != null)
-            {
-                skill.set(0, 0);
-            }
-        }
+        clearNumberedSkills();
         Arrays.fill(stats, 0);
         exp = 0;
         range = "";
@@ -492,6 +480,15 @@ public class Stats
      */
     public void resetSkills()
     {
+        clearNumberedSkills();
+        setStatsProcessed(false);
+    }
+
+    /**
+     * Clears all stat info in {@link #numberedSkills}.
+     */
+    private static void clearNumberedSkills()
+    {
         for (final Skill skill : numberedSkills)
         {
             if (skill != null)
@@ -499,7 +496,6 @@ public class Stats
                 skill.set(0, 0);
             }
         }
-        setStatsProcessed(false);
     }
 
     /**
