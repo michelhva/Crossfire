@@ -442,21 +442,6 @@ public class CfMap
     }
 
     /**
-     * Determine if a given square has been defined.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return <code>true</code> iff at least one square value (face or
-     * darkness) has been set.
-     */
-    public boolean isModified(final int x, final int y)
-    {
-        return isWithinMap(x, y) && patch[px][py].isModified(ox, oy);
-    }
-
-    /**
      * Mark a single square as dirty.
      *
      * @param x The x-coordinate of the square.
