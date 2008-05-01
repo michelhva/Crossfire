@@ -57,9 +57,9 @@ public class RawScale8d
      */
     public RawScale8d(final int[] imageData, final int dataWidth, final int dataHeight)
     {
-        this.width = dataWidth;
-        this.height = dataHeight;
-        this.srcImage = imageData;
+        width = dataWidth;
+        height = dataHeight;
+        srcImage = imageData;
         dstImage = new int[imageData.length*4];
     }
 

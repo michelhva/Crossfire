@@ -735,6 +735,6 @@ public class Gui
      */
     public boolean isWithinDrawingArea(final int x, final int y)
     {
-        return this.x <= x && x < this.x+w && this.y <= y && y < this.y+this.h;
+        return this.x <= x && x < this.x+w && this.y <= y && y < this.y+h;
     }
 }

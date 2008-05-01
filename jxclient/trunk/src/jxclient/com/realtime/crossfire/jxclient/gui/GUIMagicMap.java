@@ -125,8 +125,8 @@ public class GUIMagicMap extends GUIElement
                 final Graphics2D g = buffer.createGraphics();
                 g.setColor(Color.BLACK);
                 g.fillRect(0, 0, w, h);
-                final int offsetX = GUIMagicMap.this.playerX-evt.getPX()*TILE_SIZE;
-                final int offsetY = GUIMagicMap.this.playerY-evt.getPY()*TILE_SIZE;
+                final int offsetX = playerX-evt.getPX()*TILE_SIZE;
+                final int offsetY = playerY-evt.getPY()*TILE_SIZE;
                 for (int y = 0; y < evt.getHeight(); y++)
                 {
                     for (int x = 0; x < evt.getWidth(); x++)

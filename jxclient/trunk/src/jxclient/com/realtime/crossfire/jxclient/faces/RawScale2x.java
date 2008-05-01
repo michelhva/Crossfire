@@ -50,9 +50,9 @@ public class RawScale2x
      */
     public RawScale2x(final int[] imageData, final int dataWidth, final int dataHeight)
     {
-        this.width = dataWidth;
-        this.height = dataHeight;
-        this.srcImage = imageData;
+        width = dataWidth;
+        height = dataHeight;
+        srcImage = imageData;
         dstImage = new int[imageData.length*4];
     }
 

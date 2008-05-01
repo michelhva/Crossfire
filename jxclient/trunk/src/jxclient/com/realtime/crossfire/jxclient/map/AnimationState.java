@@ -75,10 +75,10 @@ public class AnimationState
     public void setSpeed(final int speed)
     {
         assert speed > 0;
-        final int tmpIndex = this.index/this.speed;
-        final int tmpDelay = Math.min(this.index%this.speed, speed-1);
+        final int tmpIndex = index/this.speed;
+        final int tmpDelay = Math.min(index%this.speed, speed-1);
         this.speed = speed;
-        this.index = tmpIndex*speed+tmpDelay;
+        index = tmpIndex*speed+tmpDelay;
     }
 
     /**

@@ -54,7 +54,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
         this.gc = gc;
         this.x = x;
         this.y = y;
-        this.origx = x;
+        origx = x;
         this.borderSize = borderSize;
     }
 
