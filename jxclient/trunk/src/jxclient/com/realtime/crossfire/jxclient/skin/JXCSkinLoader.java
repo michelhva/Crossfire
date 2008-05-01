@@ -2442,6 +2442,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * Splits a line into tokens. Handles quoting ("...").
      * @param line the line
      * @return the tokens
+     * @throws JXCSkinException if the skin cannot be loaded
      */
     private static String[] split(final String line) throws JXCSkinException
     {

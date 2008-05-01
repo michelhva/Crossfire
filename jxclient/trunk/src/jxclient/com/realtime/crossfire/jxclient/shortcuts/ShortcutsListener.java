@@ -31,11 +31,15 @@ public interface ShortcutsListener extends EventListener
 {
     /**
      * A shortcut has been added.
+     * @param index the shortcut index
+     * @param shortcut the shortcut instance
      */
     void shortcutAdded(int index, Shortcut shortcut);
 
     /**
      * A shortcut has been removed.
+     * @param index the shortcut index
+     * @param shortcut the shortcut instance
      */
     void shortcutRemoved(int index, Shortcut shortcut);
 }

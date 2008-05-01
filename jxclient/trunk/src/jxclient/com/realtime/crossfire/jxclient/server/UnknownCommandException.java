@@ -50,6 +50,7 @@ public class UnknownCommandException extends Exception
 
     /**
      * Returns details about the unparsable command.
+     * @return the details
      */
     public String getDetails()
     {
@@ -60,7 +61,7 @@ public class UnknownCommandException extends Exception
      * Set the detail information.
      * @param data contains the raw data bytes of the command
      * @param start the starting index into <code>data</code>
-     * @param len the length of the command in bytes
+     * @param end the end index into <code>data</code>
      */
     public void setDetails(final byte[] data, final int start, final int end)
     {

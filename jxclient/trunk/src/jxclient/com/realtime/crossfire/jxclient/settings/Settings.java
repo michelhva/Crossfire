@@ -72,6 +72,8 @@ public class Settings
      *
      * @param key Key to get value for.
      *
+     * @param defaultValue the defaultValue
+     *
      * @return The value.
      */
     public String getString(final String key, final String defaultValue)
@@ -85,6 +87,8 @@ public class Settings
      * <code>defaultValue</code> if there is no association for this key.
      *
      * @param key Key to get value for.
+     *
+     * @param defaultValue the defaultValue
      *
      * @return The value.
      */
@@ -107,6 +111,8 @@ public class Settings
      *
      * @param key Key to get value for.
      *
+     * @param defaultValue the defaultValue
+     *
      * @return The value.
      */
     public int getInt(final String key, final int defaultValue)
@@ -119,6 +125,8 @@ public class Settings
      * <code>defaultValue</code> if there is no association for this key.
      *
      * @param key Key to get value for.
+     *
+     * @param defaultValue the defaultValue
      *
      * @return The value.
      */

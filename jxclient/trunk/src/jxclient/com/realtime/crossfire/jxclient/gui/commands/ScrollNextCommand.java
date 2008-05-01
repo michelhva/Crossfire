@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 
 /**
- * A {@link GUIElement} which transfers the focus between two gui elements.
+ * A {@link GUICommand} which transfers the focus between two gui elements.
  * @author Andreas Kirschbaum
  */
 public class ScrollNextCommand implements GUICommand

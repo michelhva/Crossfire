@@ -57,8 +57,6 @@ public abstract class ActivatableGUIElement extends GUIElement
      * Set the active state.
      *
      * @param active The new active state.
-     *
-     * @return Whether the active state was changed.
      */
     public void setActive(final boolean active)
     {

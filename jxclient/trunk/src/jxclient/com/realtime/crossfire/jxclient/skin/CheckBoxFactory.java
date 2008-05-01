@@ -97,6 +97,8 @@ public class CheckBoxFactory
      * @param option The option to affect.
      *
      * @param text The button text.
+     *
+     * @return The new checkbox.
      */
     public GUICheckBox newCheckBox(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
     {

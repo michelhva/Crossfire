@@ -99,6 +99,8 @@ public class TextButtonFactory
      * pressed.
      *
      * @param commandList The commands to execute when the button is elected.
+     *
+     * @return the new text button
      */
     public GUITextButton newTextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
     {

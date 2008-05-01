@@ -37,6 +37,7 @@ public interface Orientation
      * @param cur the current value
      * @param min the minimum value
      * @param max the maximum value
+     * @return whether the values have been updated
      */
     boolean setValues(int cur, int min, int max);
 

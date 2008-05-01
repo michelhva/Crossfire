@@ -56,6 +56,8 @@ public class DialogStateParser
 
     /**
      * Load the dialogs state from a file.
+     * @param skin the skin to update
+     * @param windowRenderer the window renderer instance to attach to
      */
     public static void load(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
     {
@@ -198,6 +200,8 @@ public class DialogStateParser
 
     /**
      * Save the dialogs state to a file.
+     * @param skin the skin to update
+     * @param windowRenderer the window renderer instance to attach to
      */
     public static void save(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
     {

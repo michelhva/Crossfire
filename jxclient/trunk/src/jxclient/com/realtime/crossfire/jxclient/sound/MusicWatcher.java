@@ -43,6 +43,7 @@ public class MusicWatcher
 
     /**
      * Create a new instance.
+     * @param crossfireServerConnection the connectio instance
      */
     public MusicWatcher(final CrossfireServerConnection crossfireServerConnection)
     {

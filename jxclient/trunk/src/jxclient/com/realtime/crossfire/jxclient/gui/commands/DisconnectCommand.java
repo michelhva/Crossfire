@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.JXCWindow;
 
 /**
- * A parameter object for the {@link Command#DISCONNECT} command.
+ * A {@link GUICommand} which disconnects from the Crossfire server.
  * @author Andreas Kirschbaum
  */
 public class DisconnectCommand implements GUICommand
