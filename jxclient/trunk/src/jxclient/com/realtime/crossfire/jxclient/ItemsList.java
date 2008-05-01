@@ -52,7 +52,7 @@ public class ItemsList
         }
 
         final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && itemsManager.getCurrentFloorManager().getCurrentFloor() == item.getTag() && item.isOpen();
-        item.update(flags, tag, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        item.update(flags, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_LOCATION) != 0)
         {
             itemsManager.moveItem(item, valLocation);

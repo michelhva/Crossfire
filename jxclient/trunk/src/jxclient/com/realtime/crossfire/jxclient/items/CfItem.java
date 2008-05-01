@@ -267,7 +267,7 @@ public class CfItem
         return type;
     }
 
-    public void update(final int updateFlags, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
+    public void update(final int updateFlags, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
     {
         if ((updateFlags&UPD_FLAGS) != 0)
         {
