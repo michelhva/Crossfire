@@ -49,7 +49,7 @@ public class JXCSkinClassLoader extends JXCSkinLoader
     }
 
     /** {@inheritDoc} */
-    protected InputStream getInputStream(final String name) throws IOException
+    @Override protected InputStream getInputStream(final String name) throws IOException
     {
         final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
         if (inputStream == null)
@@ -60,7 +60,7 @@ public class JXCSkinClassLoader extends JXCSkinLoader
     }
 
     /** {@inheritDoc} */
-    protected String getURI(final String name)
+    @Override protected String getURI(final String name)
     {
         return "resource:"+baseName+"/"+name;
     }

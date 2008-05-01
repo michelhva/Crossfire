@@ -73,7 +73,7 @@ public class ScriptProcess extends Thread
         start();
     }
 
-    public void run()
+    @Override public void run()
     {
         try
         {
@@ -124,7 +124,7 @@ public class ScriptProcess extends Thread
         }
     }
 
-    public String toString()
+    @Override public String toString()
     {
         return filename;
     }

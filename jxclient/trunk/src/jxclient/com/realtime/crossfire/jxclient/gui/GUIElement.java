@@ -155,7 +155,7 @@ public abstract class GUIElement
         }
     }
 
-    public String toString()
+    @Override public String toString()
     {
         return name;
     }

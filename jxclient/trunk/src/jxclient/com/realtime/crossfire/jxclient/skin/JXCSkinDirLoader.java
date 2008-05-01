@@ -51,13 +51,13 @@ public class JXCSkinDirLoader extends JXCSkinLoader
     }
 
     /** {@inheritDoc} */
-    protected InputStream getInputStream(final String name) throws IOException
+    @Override protected InputStream getInputStream(final String name) throws IOException
     {
         return new FileInputStream(new File(dir, name));
     }
 
     /** {@inheritDoc} */
-    protected String getURI(final String name)
+    @Override protected String getURI(final String name)
     {
         return "file:"+new File(dir, name);
     }

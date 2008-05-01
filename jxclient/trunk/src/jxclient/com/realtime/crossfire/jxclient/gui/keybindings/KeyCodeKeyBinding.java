@@ -78,7 +78,7 @@ public final class KeyCodeKeyBinding extends KeyBinding
     }
 
     /** {@inheritDoc} */
-    public boolean equals(final Object op)
+    @Override public boolean equals(final Object op)
     {
         if (op instanceof KeyCodeKeyBinding)
         {
@@ -92,13 +92,13 @@ public final class KeyCodeKeyBinding extends KeyBinding
     }
 
     /** {@inheritDoc} */
-    public boolean matchesKeyCode(final int keyCode, final int modifiers)
+    @Override public boolean matchesKeyCode(final int keyCode, final int modifiers)
     {
         return this.keyCode == keyCode && this.modifiers == modifiers;
     }
 
     /** {@inheritDoc} */
-    public boolean matchesKeyChar(final char keyChar)
+    @Override public boolean matchesKeyChar(final char keyChar)
     {
         return false;
     }

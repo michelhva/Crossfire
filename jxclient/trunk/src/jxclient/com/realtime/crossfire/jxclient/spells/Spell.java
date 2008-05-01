@@ -183,7 +183,7 @@ public class Spell
         return imageIcon != null ? imageIcon : face.getOriginalImageIcon();
     }
 
-    public String toString()
+    @Override public String toString()
     {
         String str = "Name:"+name+" ID:"+tag+" Level:"+level;
         str = str+" Time:"+castingTime+" Mana:"+mana+" Grace:"+grace;

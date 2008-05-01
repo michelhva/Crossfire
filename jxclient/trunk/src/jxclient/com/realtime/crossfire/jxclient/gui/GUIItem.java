@@ -104,7 +104,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         g.clearRect(0, 0, w, h);
     }
 
-    public void setVisible(final boolean v)
+    @Override public void setVisible(final boolean v)
     {
         super.setVisible(v);
         setChanged();

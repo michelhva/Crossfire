@@ -206,7 +206,7 @@ public class MusicManager
         }
 
         /** {@inheritDoc} */
-        public void run()
+        @Override public void run()
         {
             try
             {

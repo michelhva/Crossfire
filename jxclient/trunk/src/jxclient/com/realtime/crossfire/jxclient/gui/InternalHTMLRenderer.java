@@ -58,7 +58,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
         this.borderSize = borderSize;
     }
 
-    public void handleText(final char[] data, final int pos)
+    @Override public void handleText(final char[] data, final int pos)
     {
         gc.setFont(fonts.peek());
         gc.setColor(colors.peek());
@@ -69,7 +69,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
         x += w;
     }
 
-    public void handleStartTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
+    @Override public void handleStartTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
     {
         if (tag.equals(HTML.Tag.A))
         {
@@ -108,7 +108,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
         }
     }
 
-    public void handleSimpleTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
+    @Override public void handleSimpleTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
     {
         if (tag.equals(HTML.Tag.BR))
         {
@@ -117,7 +117,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
         }
     }
 
-    public void handleEndTag(final HTML.Tag tag, final int pos)
+    @Override public void handleEndTag(final HTML.Tag tag, final int pos)
     {
         fonts.pop();
         colors.pop();
