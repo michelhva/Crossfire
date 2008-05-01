@@ -36,7 +36,7 @@ public class CrossfireCommandMapscrollEvent extends EventObject
 
     private final int dy;
 
-    public CrossfireCommandMapscrollEvent(Object src, int dx, int dy)
+    public CrossfireCommandMapscrollEvent(final Object src, final int dx, final int dy)
     {
         super(src);
         this.dx = dx;

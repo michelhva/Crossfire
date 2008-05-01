@@ -40,7 +40,7 @@ public class CrossfireCommandDrawextinfoEvent extends EventObject
 
     private final String message;
 
-    public CrossfireCommandDrawextinfoEvent(Object src, int color, int type, int subtype, String message)
+    public CrossfireCommandDrawextinfoEvent(final Object src, final int color, final int type, final int subtype, final String message)
     {
         super(src);
         this.color = color;
