@@ -134,7 +134,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 100, 32, true);
     }
 
-    private void check(final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage)
+    private static void check(final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage)
     {
         final int isX = useX ? o.getX() : o.getY();
         final int isY = useX ? o.getY() : o.getX();

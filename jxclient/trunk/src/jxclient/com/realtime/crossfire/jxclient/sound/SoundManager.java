@@ -118,7 +118,7 @@ public class SoundManager
      *
      * @param name The music name.
      */
-    public void playMusic(final String name)
+    public static void playMusic(final String name)
     {
         musicManager.play(name);
     }
@@ -129,7 +129,7 @@ public class SoundManager
      * @param muted Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    public void muteMusic(final boolean muted)
+    public static void muteMusic(final boolean muted)
     {
         musicManager.setMuted(muted);
     }
@@ -137,7 +137,7 @@ public class SoundManager
     /**
      * Terminate all sounds and free resources.
      */
-    public void shutdown()
+    public static void shutdown()
     {
         musicManager.shutdown();
         clipManager.shutdown();

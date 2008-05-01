@@ -1971,7 +1971,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws IOException if the color name does not exist.
      */
-    private Color parseColor(final String name) throws IOException
+    private static Color parseColor(final String name) throws IOException
     {
         if (name.equals("BLACK")) return Color.BLACK;
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
@@ -2006,7 +2006,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws IOException If reading from <code>lnr</lnr> fails.
      */
-    private String parseText(final String[] args, final int startIndex, final LineNumberReader lnr) throws IOException
+    private static String parseText(final String[] args, final int startIndex, final LineNumberReader lnr) throws IOException
     {
         final StringBuilder text = new StringBuilder();
         for (int i = startIndex; i < args.length; i++)
@@ -2059,7 +2059,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws IOException If the check box option name does not exist.
      */
-    private CheckBoxOption parseCheckBoxOption(final String name, final JXCWindow window) throws IOException
+    private static CheckBoxOption parseCheckBoxOption(final String name, final JXCWindow window) throws IOException
     {
         try
         {
@@ -2443,7 +2443,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param line the line
      * @return the tokens
      */
-    private String[] split(final String line) throws JXCSkinException
+    private static String[] split(final String line) throws JXCSkinException
     {
         final List<String> tokens = new ArrayList<String>(64);
 

@@ -52,7 +52,7 @@ public class ClipCache
      *
      * @param clip The clip to deallocate.
      */
-    public void freeClip(final Clip clip)
+    public static void freeClip(final Clip clip)
     {
         clip.close();
     }
@@ -66,7 +66,7 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    private Clip newClip(final String name, final String action)
+    private static Clip newClip(final String name, final String action)
     {
         try
         {

@@ -136,13 +136,13 @@ public class ScriptProcess extends Thread
         return filename;
     }
 
-    private void cmd_watch(final String cmdline)
+    private static void cmd_watch(final String cmdline)
     {
         final String parms = cmdline.substring(6);
         System.out.println(" - Watch   :"+parms);
     }
 
-    private void cmd_unwatch(final String cmdline)
+    private static void cmd_unwatch(final String cmdline)
     {
         final String parms = cmdline.substring(8);
         System.out.println(" - Unwatch :"+parms);

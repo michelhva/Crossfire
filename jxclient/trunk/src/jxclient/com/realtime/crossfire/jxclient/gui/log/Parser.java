@@ -404,7 +404,7 @@ public class Parser
      *
      * @return The string representation.
      */
-    public String toString(final Color color)
+    public static String toString(final Color color)
     {
         if (color == null)
         {
