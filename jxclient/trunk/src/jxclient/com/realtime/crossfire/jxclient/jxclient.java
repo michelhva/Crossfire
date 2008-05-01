@@ -55,7 +55,7 @@ public class jxclient
      * The program entry point.
      * @param args The command line arguments.
      */
-    public static void main(final String args[])
+    public static void main(final String[] args)
     {
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
@@ -68,7 +68,7 @@ public class jxclient
      * Initialization of a JXCWindow is the only task performed here.
      * @param args The command line arguments.
      */
-    public jxclient(final String args[])
+    public jxclient(final String[] args)
     {
         try
         {

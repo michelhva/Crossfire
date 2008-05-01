@@ -76,7 +76,7 @@ public class ImageScale2x
      *
      * @param argv The arguments passed in to the test code.
      */
-    public static void main(final String argv[])
+    public static void main(final String[] argv)
     {
         final String srcFile = "randam_orig.png";
         try
