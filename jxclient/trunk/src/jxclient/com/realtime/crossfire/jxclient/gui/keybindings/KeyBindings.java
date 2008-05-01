@@ -95,21 +95,7 @@ public final class KeyBindings
      */
     public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist, final boolean isDefault)
     {
-        final KeyBinding keyBinding = new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault);
-        KeyBinding elected = null;
-        for (final KeyBinding ok : keybindings)
-        {
-            if (ok.equals(keyBinding))
-            {
-                elected = ok;
-            }
-        }
-        if (elected != null)
-        {
-            keybindings.remove(elected);
-        }
-        keybindings.add(keyBinding);
-        modified = true;
+        addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault));
     }
 
     /**
@@ -124,7 +110,15 @@ public final class KeyBindings
      */
     public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist, final boolean isDefault)
     {
-        final KeyBinding keyBinding = new KeyCharKeyBinding(keyChar, cmdlist, isDefault);
+        addKeyBinding(new KeyCharKeyBinding(keyChar, cmdlist, isDefault));
+    }
+
+    /**
+     * Add (or replace) a key binding.
+     * @param keyBinding the key binding
+     */
+    private void addKeyBinding(final KeyBinding keyBinding)
+    {
         KeyBinding elected = null;
         for (final KeyBinding ok : keybindings)
         {
