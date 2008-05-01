@@ -54,6 +54,8 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.Sounds;
+import com.realtime.crossfire.jxclient.sound.MusicWatcher;
+import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
@@ -217,7 +219,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The commands instance for this window.
      */
-    private final Commands commands = new Commands(this);
+    private final Commands commands;
 
     /**
      * The current spell manager instance for this window.
@@ -395,6 +397,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.debugGui = debugGui;
         this.settings = settings;
         server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol);
+        commands = new Commands(this, server);
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(ItemsList.getStats(), server);
@@ -716,6 +719,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void init(final Resolution resolution, final String skinName, final boolean fullScreen, final String serverInfo)
     {
+        new MusicWatcher(server);
+        new SoundWatcher(server);
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
@@ -794,11 +799,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public void disconnect()
     {
         changeGUI(GUI_METASERVER);
-    }
-
-    public CrossfireServerConnection getCrossfireServerConnection()
-    {
-        return server;
     }
 
     private void handleKeyPress(final KeyEvent e)

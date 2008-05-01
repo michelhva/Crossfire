@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.scripts;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -36,6 +37,11 @@ public class ScriptProcess extends Thread
     private final String filename;
 
     private final JXCWindow window;
+
+    /**
+     * The connection instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
 
     private final InputStream in;
 
@@ -61,10 +67,11 @@ public class ScriptProcess extends Thread
         }
     };
 
-    public ScriptProcess(final String filename, final JXCWindow window) throws IOException
+    public ScriptProcess(final String filename, final JXCWindow window, final CrossfireServerConnection crossfireServerConnection) throws IOException
     {
         this.filename = filename;
         this.window = window;
+        this.crossfireServerConnection = crossfireServerConnection;
         final Runtime rt = Runtime.getRuntime();
         final Process proc = rt.exec(filename);
         in = proc.getInputStream();
@@ -108,7 +115,7 @@ public class ScriptProcess extends Thread
         {
             e.printStackTrace();
         }
-        window.getCrossfireServerConnection().getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+        crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
     public void commandSent(final String cmd)
@@ -282,15 +289,15 @@ public class ScriptProcess extends Thread
         {
             final String parms = cmdline.substring(5);
             final String[] pps = parms.split(" ");
-            window.getCrossfireServerConnection().drawInfo(pps[1], Integer.parseInt(pps[0]));
+            crossfireServerConnection.drawInfo(pps[1], Integer.parseInt(pps[0]));
         }
         else if (cmdline.startsWith("monitor"))
         {
-            window.getCrossfireServerConnection().getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
+            crossfireServerConnection.getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
         }
         else if (cmdline.startsWith("unmonitor"))
         {
-            window.getCrossfireServerConnection().getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+            crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
         }
     }
 }

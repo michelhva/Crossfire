@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import java.io.IOException;
 
@@ -31,13 +32,21 @@ import java.io.IOException;
 public class ScriptCommand extends AbstractCommand
 {
     /**
+     * The connection instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
+     *
+     * @param crossfireServerConnection the connection instance
      */
-    protected ScriptCommand(final JXCWindow window)
+    protected ScriptCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window);
+        super(window, crossfireServerConnection);
+        this.crossfireServerConnection = crossfireServerConnection;
     }
 
     /** {@inheritDoc} */
@@ -57,7 +66,7 @@ public class ScriptCommand extends AbstractCommand
 
         try
         {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow());
+            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow(), crossfireServerConnection);
             // XXX: store scriptProcess
         }
         catch (final IOException ex)

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 
@@ -34,10 +35,12 @@ public class SetCommand extends AbstractCommand
      * Create a new instance.
      *
      * @param window The window to execute in.
+     *
+     * @param crossfireServerConnection the connection instance
      */
-    protected SetCommand(final JXCWindow window)
+    protected SetCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window);
+        super(window, crossfireServerConnection);
     }
 
     /** {@inheritDoc} */
