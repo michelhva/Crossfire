@@ -440,7 +440,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public Gui getDialogBook(int booknr)
+    public Gui getDialogBook(final int booknr)
     {
         final Gui result = getDialog("book");
         assert result != null;

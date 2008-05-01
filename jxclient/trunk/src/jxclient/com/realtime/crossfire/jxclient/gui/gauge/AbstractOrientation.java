@@ -85,7 +85,7 @@ public abstract class AbstractOrientation implements Orientation
     }
 
     /** {@inheritDoc} */
-    public void setHasNegativeImage(boolean hasNegativeImage)
+    public void setHasNegativeImage(final boolean hasNegativeImage)
     {
         if (this.hasNegativeImage == hasNegativeImage)
         {

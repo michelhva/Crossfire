@@ -1430,7 +1430,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private void showGUIMain()
     {
         jxcWindowRenderer.clearGUI();
-        Gui newGui = skin.getMainInterface();
+        final Gui newGui = skin.getMainInterface();
         jxcWindowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
     }

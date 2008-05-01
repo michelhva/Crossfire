@@ -45,7 +45,7 @@ public class CrossfireCommandQueryEvent extends EventObject
 
     private final int queryType;
 
-    public CrossfireCommandQueryEvent(Object src, String prompt, int queryType)
+    public CrossfireCommandQueryEvent(final Object src, final String prompt, final int queryType)
     {
         super(src);
         this.prompt = prompt;

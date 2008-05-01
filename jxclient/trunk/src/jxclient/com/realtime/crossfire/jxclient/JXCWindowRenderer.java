@@ -148,7 +148,7 @@ public class JXCWindowRenderer
         forcePaint = true;
     }
 
-    public void initRendering(boolean fullScreen)
+    public void initRendering(final boolean fullScreen)
     {
         isFullScreen = false;
         oldDisplayMode = null;

@@ -199,7 +199,7 @@ public class Parser
      *
      * @return the <code>Line</code> instance
      */
-    private Line parseLine(final String text, final Color defaultColor, boolean replaceLastLine)
+    private Line parseLine(final String text, final Color defaultColor, final boolean replaceLastLine)
     {
         final Line line = new Line();
 

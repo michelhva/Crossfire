@@ -245,7 +245,7 @@ public class ScriptProcess extends Thread
         }
     }
 
-    private void runScriptCommand(String cmdline)
+    private void runScriptCommand(final String cmdline)
     {
         if (cmdline.startsWith("watch "))
         {

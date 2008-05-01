@@ -476,7 +476,7 @@ public class CfMap
      * @return <code>true</code> iff the given position is within the defined
      * map area.
      */
-    public boolean isWithinMap(int x, int y)
+    public boolean isWithinMap(final int x, final int y)
     {
         if (x < minX || x > maxX || y < minY || y > maxY)
         {
