@@ -21,9 +21,9 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.util.Patterns;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Parses and executes client-side commands.
@@ -32,11 +32,6 @@ import java.util.regex.Pattern;
  */
 public class Commands
 {
-    /**
-     * The pattern to split a command from argments, and to split arguments.
-     */
-    public static final Pattern patternWhitespace = Pattern.compile(" +");
-
     /**
      * Maps command name to {@link Command} instance.
      */
@@ -72,7 +67,7 @@ public class Commands
      */
     public int execute(final String command, final String commandList)
     {
-        final String[] args = patternWhitespace.split(command.trim(), 2);
+        final String[] args = Patterns.patternWhitespace.split(command.trim(), 2);
         final Command cmd = commands.get(args[0]);
         if (cmd == null)
         {
@@ -86,7 +81,7 @@ public class Commands
         }
 
         assert commandList.startsWith(command);
-        final String[] argsList = patternWhitespace.split(commandList.trim(), 2);
+        final String[] argsList = Patterns.patternWhitespace.split(commandList.trim(), 2);
         assert argsList[0].equals(args[0]);
 
         cmd.execute(argsList.length >= 2 ? argsList[1] : "");
