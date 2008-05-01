@@ -61,7 +61,7 @@ public class InventoryManager extends AbstractManager
      * </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
      * +1=<code>item1</code> after </code>item2</code>.
      */
-    private int compareItem(final CfItem item1, final CfItem item2)
+    private static int compareItem(final CfItem item1, final CfItem item2)
     {
         if (item1.getType() < item2.getType()) return -1;
         if (item1.getType() > item2.getType()) return +1;

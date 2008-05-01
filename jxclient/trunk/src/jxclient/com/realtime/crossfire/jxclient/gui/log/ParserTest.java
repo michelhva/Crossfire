@@ -403,7 +403,7 @@ public class ParserTest extends TestCase
      *
      * @return The string representation.
      */
-    public void dumpFont(final Segment.FontID font, final StringBuilder sb)
+    public static void dumpFont(final Segment.FontID font, final StringBuilder sb)
     {
         if (font == Segment.FontID.PRINT)
         {

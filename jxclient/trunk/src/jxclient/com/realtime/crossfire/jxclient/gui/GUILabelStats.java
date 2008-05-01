@@ -154,7 +154,7 @@ public class GUILabelStats extends GUIOneLineLabel
      *
      * @return The formatted value.
      */
-    private String formatFloatStat(final double value, final int digits)
+    private static String formatFloatStat(final double value, final int digits)
     {
         final int tmp;
         switch (digits)

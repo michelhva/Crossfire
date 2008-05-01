@@ -147,7 +147,7 @@ public abstract class AbstractManager
      *
      * @param items the items that have changed
      */
-    private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
+    private static void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
     {
         for (final int index : modified)
         {
