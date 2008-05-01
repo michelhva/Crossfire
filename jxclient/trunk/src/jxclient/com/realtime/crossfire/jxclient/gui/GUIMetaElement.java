@@ -83,18 +83,18 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     };
 
-    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int index, final String format, final String tooltip)
+    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int defaultIndex, final String format, final String tooltip)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.tcpImage = tcpImage;
         this.font = font;
         this.text = text;
         this.comment = comment;
-        this.defaultIndex = index;
-        this.index = index;
+        this.defaultIndex = defaultIndex;
+        this.index = defaultIndex;
         this.format = format;
         this.tooltip = tooltip;
-        jxcWindow.getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
+        jxcWindow.getMetaserver().addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }
