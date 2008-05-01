@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 
@@ -35,10 +36,12 @@ public class ExecCommand extends AbstractCommand
      * Create a new instance.
      *
      * @param window The window to execute in.
+     *
+     * @param crossfireServerConnection the connection instance
      */
-    protected ExecCommand(final JXCWindow window)
+    protected ExecCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window);
+        super(window, crossfireServerConnection);
     }
 
     /** {@inheritDoc} */

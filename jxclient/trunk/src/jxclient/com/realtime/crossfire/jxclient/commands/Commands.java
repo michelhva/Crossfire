@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
@@ -45,15 +46,17 @@ public class Commands
      * Create a new instance.
      *
      * @param window The window to execute the commands in.
+     *
+     * @param crossfireServerConnection the connection instance
      */
-    public Commands(final JXCWindow window)
+    public Commands(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        commands.put("bind", new BindCommand(window));
-        commands.put("unbind", new UnbindCommand(window));
-        commands.put("screenshot", new ScreenshotCommand(window));
-        commands.put("script", new ScriptCommand(window));
-        commands.put("exec", new ExecCommand(window));
-        commands.put("set", new SetCommand(window));
+        commands.put("bind", new BindCommand(window, crossfireServerConnection));
+        commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
+        commands.put("screenshot", new ScreenshotCommand(window, crossfireServerConnection));
+        commands.put("script", new ScriptCommand(window, crossfireServerConnection));
+        commands.put("exec", new ExecCommand(window, crossfireServerConnection));
+        commands.put("set", new SetCommand(window, crossfireServerConnection));
     }
 
     /**

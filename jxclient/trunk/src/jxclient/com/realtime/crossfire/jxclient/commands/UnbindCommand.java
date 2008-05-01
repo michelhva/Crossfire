@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
  * Implements a "unbind" command. It removes a key binding.
@@ -32,10 +33,12 @@ public class UnbindCommand extends AbstractCommand
      * Create a new instance.
      *
      * @param window The window to execute in.
+     *
+     * @param crossfireServerConnection the connection instance
      */
-    protected UnbindCommand(final JXCWindow window)
+    protected UnbindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window);
+        super(window, crossfireServerConnection);
     }
 
     /** {@inheritDoc} */

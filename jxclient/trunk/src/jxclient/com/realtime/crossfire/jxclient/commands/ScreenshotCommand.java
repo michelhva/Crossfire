@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -40,10 +41,11 @@ public class ScreenshotCommand extends AbstractCommand
     /**
      * Creates a new instance.
      * @param window The window to execute in.
+     * @param crossfireServerConnection the connection instance
      */
-    protected ScreenshotCommand(final JXCWindow window)
+    protected ScreenshotCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window);
+        super(window, crossfireServerConnection);
     }
 
     /** {@inheritDoc} */
