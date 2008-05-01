@@ -144,12 +144,7 @@ public final class KeyBindings
      */
     public void deleteKeyBindingAsKeyCode(final int keyCode, final int modifiers)
     {
-        final KeyBinding keyBinding = getKeyBindingAsKeyCode(keyCode, modifiers);
-        if (keyBinding != null)
-        {
-            keybindings.remove(keyBinding);
-            modified = true;
-        }
+        deleteKeyBinding(getKeyBindingAsKeyCode(keyCode, modifiers));
     }
 
     /**
@@ -159,7 +154,15 @@ public final class KeyBindings
      */
     public void deleteKeyBindingAsKeyChar(final char keyChar)
     {
-        final KeyBinding keyBinding = getKeyBindingAsKeyChar(keyChar);
+        deleteKeyBinding(getKeyBindingAsKeyChar(keyChar));
+    }
+
+    /**
+     * Removes a key binding.
+     * @param keyBinding the key binding; may be <code>null</code>
+     */
+    private void deleteKeyBinding(final KeyBinding keyBinding)
+    {
         if (keyBinding != null)
         {
             keybindings.remove(keyBinding);
