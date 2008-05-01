@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;

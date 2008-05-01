@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * Abstract base class of commands.

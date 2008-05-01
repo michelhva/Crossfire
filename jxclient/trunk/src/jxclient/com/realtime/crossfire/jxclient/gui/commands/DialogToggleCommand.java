@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * A {@link GUICommand} which toggles the visibility of a dialog.

@@ -19,10 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellChangedEvent;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;

@@ -19,11 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.GUICommandList;
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * Implements a "script" command. It runs a new script.

@@ -19,10 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 

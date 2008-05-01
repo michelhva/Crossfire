@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;

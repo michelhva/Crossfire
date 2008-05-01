@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.GUICommandList;
-import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;

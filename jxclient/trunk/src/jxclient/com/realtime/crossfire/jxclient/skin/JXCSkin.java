@@ -19,11 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.GUICommandList;
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.Iterator;
 
 /**

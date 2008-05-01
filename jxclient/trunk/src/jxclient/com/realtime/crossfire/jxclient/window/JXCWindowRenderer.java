@@ -17,8 +17,9 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;

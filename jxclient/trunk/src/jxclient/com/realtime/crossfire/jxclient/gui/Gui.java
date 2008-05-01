@@ -19,10 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
-import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;

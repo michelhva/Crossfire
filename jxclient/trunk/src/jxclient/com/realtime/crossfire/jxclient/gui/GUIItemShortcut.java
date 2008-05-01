@@ -20,7 +20,6 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
@@ -28,6 +27,7 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;

@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.settings.options;
 
-import com.realtime.crossfire.jxclient.GUICommandList;
+import com.realtime.crossfire.jxclient.window.GUICommandList;
 
 /**
  * A {@link CheckBoxOption} that executes {@link GUICommandList}s when
