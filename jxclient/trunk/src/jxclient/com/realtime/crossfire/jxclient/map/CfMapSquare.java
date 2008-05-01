@@ -242,7 +242,7 @@ public class CfMapSquare
     {
         // suppress parts of fog-of-war objects if this square is not
         // fog-of-war
-        if (heads[layer] != null && fogOfWar && heads[layer].isFogOfWar())
+        if (heads[layer] != null && fogOfWar && heads[layer].fogOfWar)
         {
             return null;
         }
