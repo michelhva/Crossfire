@@ -866,7 +866,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 final int faceid = dis.readInt();
                                 final int namelength = dis.readUnsignedByte();
                                 pos2 += 17;
-                                final byte buf[] = new byte[namelength];
+                                final byte[] buf = new byte[namelength];
                                 dis.readFully(buf);
                                 final String[] names = new String(buf).split("\0", 2);
                                 final String name = names[0];
