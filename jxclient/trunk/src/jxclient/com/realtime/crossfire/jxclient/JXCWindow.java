@@ -126,9 +126,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final CommandQueue commandQueue;
 
-    private final String semaphoreDrawing = "semaphore_drawing";
+    private final Object semaphoreDrawing = new Object();
 
-    private final String semaphoreChangeGui = "semaphore_change_gui";
+    private final Object semaphoreChangeGui = new Object();
 
     /**
      * The shortcuts for this window.
@@ -286,7 +286,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private Status status = Status.UNCONNECTED;
 
-    private final String semaphoreStatus = "semaphore_status";
+    private final Object semaphoreStatus = new Object();
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets
