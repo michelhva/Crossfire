@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
+import java.awt.Font;
 import java.awt.font.FontRenderContext;
 import java.awt.font.LineMetrics;
-import java.awt.Font;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Collections;

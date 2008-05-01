@@ -21,6 +21,10 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.Toolkit;
+import java.awt.Transparency;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -28,12 +32,8 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
-import java.awt.Font;
 import java.awt.geom.Rectangle2D;
-import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.awt.Toolkit;
-import java.awt.Transparency;
 import java.io.IOException;
 
 /**

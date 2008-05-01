@@ -23,11 +23,11 @@ import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.geom.Rectangle2D;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
+import java.awt.geom.Rectangle2D;
 
 /**
  * A button which displays a string. The button width does not depend on the

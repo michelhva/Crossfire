@@ -20,12 +20,12 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import java.awt.event.MouseEvent;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 /**

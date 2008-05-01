@@ -24,9 +24,9 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
 import java.util.Stack;
+import javax.swing.text.MutableAttributeSet;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLEditorKit;
-import javax.swing.text.MutableAttributeSet;
 
 /**
  * @author Lauwenmark

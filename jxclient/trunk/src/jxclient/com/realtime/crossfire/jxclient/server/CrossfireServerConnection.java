@@ -19,14 +19,14 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.ExperienceTable;
+import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
-import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.faces.FacesCallback;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -34,8 +34,8 @@ import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

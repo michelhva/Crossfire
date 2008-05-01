@@ -23,12 +23,12 @@ import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
 import java.awt.Color;
-import java.awt.event.MouseEvent;
 import java.awt.Font;
-import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.awt.event.MouseEvent;
+import java.awt.geom.Rectangle2D;
+import java.awt.image.BufferedImage;
 
 /**
  * A check box gui element.

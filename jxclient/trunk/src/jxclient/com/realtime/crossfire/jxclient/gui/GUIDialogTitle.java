@@ -20,8 +20,8 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
-import java.awt.event.MouseEvent;
 import java.awt.Point;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 /**

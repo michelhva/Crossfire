@@ -19,17 +19,17 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
+import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.Graphics;
-import java.awt.Color;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.EnumSet;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * Combines a list of {@link GUIElement}s to for a gui.

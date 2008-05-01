@@ -20,10 +20,10 @@
 package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.GuiStateListener;
-import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;

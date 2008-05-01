@@ -19,15 +19,15 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
+import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.ScrollableListener;
-import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
-import java.awt.font.FontRenderContext;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.awt.font.FontRenderContext;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;

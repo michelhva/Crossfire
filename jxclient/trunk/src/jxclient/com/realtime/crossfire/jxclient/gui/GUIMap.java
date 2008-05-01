@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
@@ -32,13 +32,13 @@ import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import java.awt.Color;
-import java.awt.event.MouseEvent;
-import java.awt.Graphics2D;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
+import java.awt.event.MouseEvent;
 import java.io.IOException;
 import javax.swing.ImageIcon;
 
