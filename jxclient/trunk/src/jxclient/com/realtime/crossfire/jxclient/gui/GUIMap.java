@@ -204,31 +204,31 @@ public class GUIMap extends GUIElement
                 final int w;
                 if (dx < 0)
                 {
-                    x = -dx;
+                    x = 0;
                     w = mapWidth+dx;
                 }
                 else
                 {
-                    x = 0;
+                    x = dx;
                     w = mapWidth-dx;
                 }
                 final int y;
                 final int h;
                 if (dy < 0)
                 {
-                    y = -dy;
+                    y = 0;
                     h = mapHeight+dy;
                 }
                 else
                 {
-                    y = 0;
+                    y = dy;
                     h = mapHeight-dy;
                 }
 
                 final Graphics2D g = buffer.createGraphics();
                 try
                 {
-                    g.copyArea(offsetX+x*tileSize, offsetY+y*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
+                    g.copyArea(offsetX+(x-dx)*tileSize, offsetY+(y-dy)*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
 
                     for (int yy = displayMinY; yy < Math.min(y, displayMaxY); yy++)
                     {
