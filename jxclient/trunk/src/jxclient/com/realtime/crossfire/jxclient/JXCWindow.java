@@ -477,7 +477,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             return;
         }
-        catch (final Exception ex)
+        catch (final IOException ex)
         {
             System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
             return;
@@ -504,7 +504,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             shortcuts.save(file);
         }
-        catch (final Exception ex)
+        catch (final IOException ex)
         {
             System.err.println("Cannot write shortcuts file "+file+": "+ex.getMessage());
             return;
