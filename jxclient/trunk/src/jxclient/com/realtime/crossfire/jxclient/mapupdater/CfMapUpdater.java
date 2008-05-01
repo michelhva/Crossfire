@@ -326,8 +326,6 @@ public class CfMapUpdater
                 for (int x = 0; x < width; x++)
                 {
                     map.clearSquare(x, y);
-                    map.dirty(x, y);
-                    map.dirty(x-dx, y-dy);
                 }
             }
             visibleAnimations.clear();
@@ -341,8 +339,6 @@ public class CfMapUpdater
                 for (int y = 0; y < height; y++)
                 {
                     map.clearSquare(width-1, y);
-                    map.dirty(width-1, y);
-                    map.dirty(-1, y);
                 }
                 tx--;
             }
@@ -352,8 +348,6 @@ public class CfMapUpdater
                 for (int y = 0; y < height; y++)
                 {
                     map.clearSquare(0, y);
-                    map.dirty(0, y);
-                    map.dirty(width, y);
                 }
                 tx++;
             }
@@ -365,8 +359,6 @@ public class CfMapUpdater
                 for (int x = 0; x < width; x++)
                 {
                     map.clearSquare(x, height-1);
-                    map.dirty(x, height-1);
-                    map.dirty(x, -1);
                 }
                 ty--;
             }
@@ -376,8 +368,6 @@ public class CfMapUpdater
                 for (int x = 0; x <= width; x++)
                 {
                     map.clearSquare(x, 0);
-                    map.dirty(x, 0);
-                    map.dirty(x, height);
                 }
                 ty++;
             }
