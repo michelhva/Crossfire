@@ -111,10 +111,12 @@ public class CfMapPatch
      * @param y The y-coordinate of the square.
      *
      * @param darkness The darkness value to set. 0=dark, 255=full bright.
+     *
+     * @return whether fog-of-war has been cleared
      */
-    public void setDarkness(final int x, final int y, final int darkness)
+    public boolean setDarkness(final int x, final int y, final int darkness)
     {
-        square[x][y].setDarkness(darkness);
+        return square[x][y].setDarkness(darkness);
     }
 
     /**

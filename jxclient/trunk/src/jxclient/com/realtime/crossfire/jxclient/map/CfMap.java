@@ -133,17 +133,12 @@ public class CfMap
     public void setDarkness(final int x, final int y, final int darkness)
     {
         expandTo(x, y);
-        if (patch[px][py].resetFogOfWar(ox, oy))
+        if (patch[px][py].setDarkness(ox, oy, darkness))
         {
-            patch[px][py].setDarkness(ox, oy, darkness);
             for (int l = 0; l < CfMapSquare.LAYERS; l++)
             {
                 setFaceInternal(x, y, l, null);
             }
-        }
-        else
-        {
-            patch[px][py].setDarkness(ox, oy, darkness);
         }
     }
 
