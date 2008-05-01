@@ -124,13 +124,14 @@ public class CfMapSquare
      */
     public void clear()
     {
-        // need to check individual values because the server sometimes sends a
-        // "clear" command for already cleared squares; without this check the
-        // black square would be displayed as fog-of-war
         if (fogOfWar)
         {
             return;
         }
+
+        // need to check individual values because the server sometimes sends a
+        // "clear" command for already cleared squares; without this check the
+        // black square would be displayed as fog-of-war
         if (darkness == 255)
         {
             int layer;
