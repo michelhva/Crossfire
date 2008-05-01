@@ -22,11 +22,11 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
-import java.awt.event.MouseEvent;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
 
 /**
  *

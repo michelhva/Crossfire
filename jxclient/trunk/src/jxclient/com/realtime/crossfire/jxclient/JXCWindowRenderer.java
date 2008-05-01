@@ -25,16 +25,16 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
-import java.awt.event.MouseEvent;
 import java.awt.Graphics;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
-import java.awt.image.BufferStrategy;
 import java.awt.Insets;
 import java.awt.Point;
-import java.util.concurrent.CopyOnWriteArrayList;
+import java.awt.event.MouseEvent;
+import java.awt.image.BufferStrategy;
 import java.util.Iterator;
 import java.util.ListIterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @author Andreas Kirschbaum

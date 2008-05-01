@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
  * Monitors music commands and generates appropriate sound effects.

@@ -19,12 +19,12 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
 import java.awt.Transparency;
+import java.awt.image.BufferedImage;
 
 /**
  * Displays a value as a graphical gauge that's filling state depends on the

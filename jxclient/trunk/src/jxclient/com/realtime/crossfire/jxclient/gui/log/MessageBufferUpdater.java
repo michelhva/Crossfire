@@ -26,8 +26,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
-import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MessageTypes;
 import java.awt.Color;
 
 /**

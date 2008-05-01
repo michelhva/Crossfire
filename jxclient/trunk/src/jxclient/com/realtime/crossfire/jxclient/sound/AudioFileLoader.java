@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Utility class to locate audio files.

@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;

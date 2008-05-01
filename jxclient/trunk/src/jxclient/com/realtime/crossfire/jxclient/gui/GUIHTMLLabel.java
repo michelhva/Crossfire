@@ -21,10 +21,10 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
 import java.awt.Color;
-import java.awt.font.FontRenderContext;
 import java.awt.Font;
-import java.awt.geom.Rectangle2D;
 import java.awt.Graphics2D;
+import java.awt.font.FontRenderContext;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Reader;
