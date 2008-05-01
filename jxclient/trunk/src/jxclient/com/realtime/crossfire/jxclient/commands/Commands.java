@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.Patterns;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.HashMap;
 import java.util.Map;
 

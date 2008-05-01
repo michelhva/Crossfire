@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * A {@link Shortcut} that executes a Crossfire command.

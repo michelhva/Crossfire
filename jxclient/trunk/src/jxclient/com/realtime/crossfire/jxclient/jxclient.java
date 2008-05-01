@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.DisplayMode;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -36,7 +37,7 @@ import java.io.OutputStreamWriter;
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
  * by itself - most of the work in done in JXCWindow or CrossfireServerConnection.
- * @see com.realtime.crossfire.jxclient.JXCWindow
+ * @see JXCWindow
  * @see com.realtime.crossfire.jxclient.server.CrossfireServerConnection
  * @version 1.0
  * @author Lauwenmark

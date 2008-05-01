@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * A {@link Shortcut} that casts a spell.

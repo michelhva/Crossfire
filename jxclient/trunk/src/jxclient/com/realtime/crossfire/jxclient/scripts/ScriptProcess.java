@@ -20,10 +20,10 @@
 package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.ItemsList;
-import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
