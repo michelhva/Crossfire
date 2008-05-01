@@ -344,7 +344,7 @@ public class Face
         final ImageIcon imageIcon = fileCacheOriginal.load(name, checksum);
         if (imageIcon != null)
         {
-            this.originalImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            originalImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
@@ -364,7 +364,7 @@ public class Face
         final ImageIcon imageIcon = fileCacheScaled.load(name, checksum);
         if (imageIcon != null)
         {
-            this.scaledImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            scaledImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
@@ -384,7 +384,7 @@ public class Face
         final ImageIcon imageIcon = fileCacheMagicMap.load(name, checksum);
         if (imageIcon != null)
         {
-            this.magicMapImageIcon = new SoftReference<ImageIcon>(imageIcon);
+            magicMapImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
