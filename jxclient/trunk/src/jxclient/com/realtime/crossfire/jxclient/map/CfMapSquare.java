@@ -59,12 +59,6 @@ public class CfMapSquare
     private boolean fogOfWar = false;
 
     /**
-     * Set to <code>true</code> iff at least one square value has been
-     * modified.
-     */
-    private boolean isModified = false;
-
-    /**
      * The darkness value of the square in the range [0..255]. 0=dark, 255=full
      * bright
      */
@@ -114,17 +108,6 @@ public class CfMapSquare
     public int getY()
     {
         return y;
-    }
-
-    /**
-     * Determine if this square has been modified.
-     *
-     * @return <code>true</code> iff at least one square value has been
-     * modified.
-     */
-    public boolean isModified()
-    {
-        return isModified;
     }
 
     /**
@@ -181,7 +164,6 @@ public class CfMapSquare
             this.darkness = darkness;
             dirty();
         }
-        isModified = true;
     }
 
     /**
@@ -209,7 +191,6 @@ public class CfMapSquare
             faces[layer] = face;
             dirty();
         }
-        isModified = true;
     }
 
     /**

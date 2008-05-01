@@ -64,21 +64,6 @@ public class CfMapPatch
     }
 
     /**
-     * Determine if a given square has been modified.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return <code>true</code> iff at least one square value (face or
-     * darkness) has been set.
-     */
-    public boolean isModified(final int x, final int y)
-    {
-        return square[x][y].isModified();
-    }
-
-    /**
      * Mark a square as dirty.
      *
      * @param x The x-coordinate of the square.
