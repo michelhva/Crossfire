@@ -185,10 +185,15 @@ public class Spell
 
     @Override public String toString()
     {
-        String str = "Name:"+name+" ID:"+tag+" Level:"+level;
-        str = str+" Time:"+castingTime+" Mana:"+mana+" Grace:"+grace;
-        str = str+" Damage:"+damage+" Skill:"+skill+" Path:"+path;
-        return str;
+        return "Name:"+name
+            +" ID:"+tag
+            +" Level:"+level
+            +" Time:"+castingTime
+            +" Mana:"+mana
+            +" Grace:"+grace
+            +" Damage:"+damage
+            +" Skill:"+skill
+            +" Path:"+path;
     }
 
     /**
