@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
@@ -50,6 +51,8 @@ public class GUIMessageLog extends GUILog
      *
      * @param h The height for drawing this element to screen.
      *
+     * @param crossfireServerConnection the connection instance
+     * 
      * @param backgroundImage The background image; may be <code>null</code> if
      * unused.
      *
@@ -58,10 +61,10 @@ public class GUIMessageLog extends GUILog
      * @param defaultColor The default color to use for text message not
      * specifying a color.
      */
-    public GUIMessageLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUIMessageLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
         super(jxcWindow, name, x, y, w, h, backgroundImage, fonts);
-        messageBufferUpdater = new MessageBufferUpdater(jxcWindow, buffer, defaultColor);
+        messageBufferUpdater = new MessageBufferUpdater(jxcWindow, crossfireServerConnection, buffer, defaultColor);
     }
 
     /**

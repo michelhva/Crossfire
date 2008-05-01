@@ -1219,7 +1219,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
-                            final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F));
+                            final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_text"))
@@ -1316,7 +1316,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font fontArcane = fonts.lookup(args[10]);
                             final Color defaultColor = parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-                            final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
+                            final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, server, pictureEmpty, fonts, defaultColor);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_color"))
@@ -1397,7 +1397,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h);
+                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("map"))
@@ -1423,7 +1423,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             mapWidth = tmpW;
                             mapHeight = tmpH;
 
-                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h);
+                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("meta_element"))

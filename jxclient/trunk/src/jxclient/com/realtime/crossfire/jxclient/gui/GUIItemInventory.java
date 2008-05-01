@@ -34,6 +34,11 @@ import java.util.List;
 public class GUIItemInventory extends GUIItemItem
 {
     /**
+     * The server instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The default scroll index.
      */
     private final int defaultIndex;
@@ -57,6 +62,7 @@ public class GUIItemInventory extends GUIItemItem
     public GUIItemInventory(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font, nrofColor);
+        this.crossfireServerConnection = crossfireServerConnection;
         defaultIndex = index;
         setIndex(index);
     }
@@ -109,11 +115,11 @@ public class GUIItemInventory extends GUIItemItem
 
         if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
         {
-            jxcw.getCrossfireServerConnection().sendLock(!item.isLocked(), item.getTag());
+            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
         else
         {
-            jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
+            crossfireServerConnection.sendExamine(item.getTag());
         }
     }
 
@@ -125,7 +131,7 @@ public class GUIItemInventory extends GUIItemItem
         {
             if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
             {
-                jxcw.getCrossfireServerConnection().sendMark(item.getTag());
+                crossfireServerConnection.sendMark(item.getTag());
                 return;
             }
         }
@@ -144,11 +150,11 @@ public class GUIItemInventory extends GUIItemItem
 
         if (item.isLocked())
         {
-            jxcw.getCrossfireServerConnection().drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+            crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
             return;
         }
 
-        jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+        crossfireServerConnection.sendMove(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
     }
 
     /**

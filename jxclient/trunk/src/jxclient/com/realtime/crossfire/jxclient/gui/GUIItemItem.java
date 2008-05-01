@@ -34,6 +34,11 @@ import java.awt.image.BufferedImage;
 public abstract class GUIItemItem extends GUIItem
 {
     /**
+     * The connection instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The color for the "nrof" text.
      */
     private final Color nrofColor;
@@ -82,8 +87,9 @@ public abstract class GUIItemItem extends GUIItem
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         if (nrofColor == null) throw new IllegalArgumentException();
+        this.crossfireServerConnection = crossfireServerConnection;
         this.nrofColor = nrofColor;
-        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
+        crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /** {@inheritDoc} */
@@ -131,7 +137,7 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
-        jxcw.getCrossfireServerConnection().sendApply(item.getTag());
+        crossfireServerConnection.sendApply(item.getTag());
     }
 
     protected CfItem getItem()

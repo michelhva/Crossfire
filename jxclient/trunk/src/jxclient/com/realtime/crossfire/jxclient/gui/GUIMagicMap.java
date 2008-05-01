@@ -261,7 +261,7 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h)
+    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
@@ -272,11 +272,10 @@ public class GUIMagicMap extends GUIElement
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
 
-        final CrossfireServerConnection crossfireServerConnection = jxcWindow.getCrossfireServerConnection();
         crossfireServerConnection.addMapSizeListener(mapSizeListener);
         mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
 
-        jxcWindow.getCrossfireServerConnection().addCrossfireMagicmapListener(crossfireMagicmapListener);
+        crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
         CfMapUpdater.addCrossfireMapListener(crossfireMapListener);

@@ -106,7 +106,7 @@ public class GUIItemSpelllist extends GUIItem
         this.defaultIndex = defaultIndex;
         setIndex(defaultIndex);
         ItemsList.getSpellsManager().addCrossfireSpellChangedListener(crossfireSpellChangedListener);
-        jxcWindow.getCrossfireServerConnection().addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
+        crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
     /** {@inheritDoc} */

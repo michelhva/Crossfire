@@ -62,6 +62,11 @@ public class GUIMap extends GUIElement
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
     /**
+     * The connection instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The map width in tiles.
      */
     private int mapWidth = 0;
@@ -294,13 +299,16 @@ public class GUIMap extends GUIElement
      *
      * @param h The height for drawing this element to screen.
      *
+     * @param crossfireServerConnection the connection instance
+     *
      * @param tileSize The size of one tile in pixels.
      *
      * @throws IOException If an I/O error occurs.
      */
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h) throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection) throws IOException
     {
         super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
+        this.crossfireServerConnection = crossfireServerConnection;
         if (tileSize == 32)
         {
             useBigImages = false;
@@ -324,7 +332,6 @@ public class GUIMap extends GUIElement
         CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
         CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
 
-        final CrossfireServerConnection crossfireServerConnection = jxcWindow.getCrossfireServerConnection();
         crossfireServerConnection.addMapSizeListener(mapSizeListener);
         setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
     }
@@ -455,8 +462,7 @@ public class GUIMap extends GUIElement
                 final int dy = (e.getY()-offsetY)/tileSize-mapHeight/2;
                 if (dx < mapWidth && dy < mapHeight)
                 {
-                    final JXCWindow jxcw = (JXCWindow)e.getSource();
-                    jxcw.getCrossfireServerConnection().sendLookat(dx, dy);
+                    crossfireServerConnection.sendLookat(dx, dy);
                 }
             }
             break;

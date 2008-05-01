@@ -34,6 +34,11 @@ import java.util.List;
 public class GUIItemFloor extends GUIItemItem
 {
     /**
+     * The connection instance.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The default scroll index.
      */
     private final int defaultIndex;
@@ -89,6 +94,7 @@ public class GUIItemFloor extends GUIItemItem
     public GUIItemFloor(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font, nrofColor);
+        this.crossfireServerConnection = crossfireServerConnection;
         defaultIndex = index;
         containerTag = ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor();
         ItemsList.getItemsManager().getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
@@ -133,7 +139,7 @@ public class GUIItemFloor extends GUIItemItem
             return;
         }
 
-        jxcw.getCrossfireServerConnection().sendExamine(item.getTag());
+        crossfireServerConnection.sendExamine(item.getTag());
     }
 
     /* {@inheritDoc} */
@@ -146,7 +152,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         if (ItemsList.getItemsManager().getPlayer() != null)
         {
-            jxcw.getCrossfireServerConnection().sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+            crossfireServerConnection.sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
         }
     }
 
