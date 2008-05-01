@@ -41,22 +41,25 @@ public class MessageBufferUpdater
     /**
      * Maps color index to color.
      */
-    private final Map<Integer, Color> colors = new HashMap<Integer, Color>();
+    private final Color[] colors = new Color[]
     {
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_BLACK, Color.BLACK); //black
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_WHITE, Color.WHITE); //white
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_NAVY, Color.BLUE); //navy blue
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_RED, Color.RED); //red
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_ORANGE, Color.ORANGE); //orange
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_BLUE, Color.CYAN); //dodger blue
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_DK_ORANGE, new Color(0xFFC000)); //dark orange
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_GREEN, Color.GREEN); //sea green
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_LT_GREEN, new Color(0x008000)); //dark sea green
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_GREY, Color.GRAY); //grey
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_BROWN, new Color(0x806000)); //brown sienna
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_GOLD, Color.YELLOW); //gold
-        colors.put(CrossfireCommandDrawinfoEvent.NDI_TAN, new Color(0xBDB76B)); //khaki
-    }
+        Color.BLACK,            // black
+        Color.WHITE,            // white
+        Color.BLUE,             // navy blue
+        Color.RED,              // red
+        Color.ORANGE,           // orange
+        Color.CYAN,             // dodger blue
+        new Color(0xFFC000),    // dark orange
+        Color.GREEN,            // sea green
+        new Color(0x008000),    // dark sea green
+        Color.GRAY,             // grey
+        new Color(0x806000),    // brown sienna
+        Color.YELLOW,           // gold
+        new Color(0xBDB76B),    // khaki
+        null,                   // undefined
+        null,                   // undefined
+        null,                   // undefined
+    };
 
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
@@ -67,11 +70,6 @@ public class MessageBufferUpdater
      * The buffer to update.
      */
     private final Buffer buffer;
-
-    /**
-     * The default color to use for text message not specifying a color.
-     */
-    private final Color defaultColor;
 
     /**
      * The types to show.
@@ -149,13 +147,19 @@ public class MessageBufferUpdater
      *
      * @param buffer The buffer to update.
      *
-     * @param defaultColor The default color to use for text message not
-     * specifying a color.
+     * @param defaultColor The default color to use for undefined colors
+     * indices.
      */
     public MessageBufferUpdater(final JXCWindow jxcWindow, final Buffer buffer, final Color defaultColor)
     {
         this.buffer = buffer;
-        this.defaultColor = defaultColor;
+        for (int i = 0; i < colors.length; i++)
+        {
+            if (colors[i] == null)
+            {
+                colors[i] = defaultColor;
+            }
+        }
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
@@ -170,8 +174,7 @@ public class MessageBufferUpdater
      */
     private Color findColor(final int index)
     {
-        final Color color = colors.get(index);
-        return color == null ? defaultColor : color;
+        return colors[index];
     }
 
     /**
@@ -183,7 +186,7 @@ public class MessageBufferUpdater
      */
     public void setColor(final int index, final Color color)
     {
-        colors.put(index, color);
+        colors[index] = color;
     }
 
     /**
