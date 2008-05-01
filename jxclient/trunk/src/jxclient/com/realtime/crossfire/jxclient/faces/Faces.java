@@ -175,19 +175,8 @@ public class Faces
      */
     private static ImageIcon getScaledImageIcon(final ImageIcon img)
     {
-        final ImageIcon imx2;
-        try
-        {
-            final ImageScale2x scaler = new ImageScale2x(img);
-            imx2 = scaler.getScaledImage();
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            System.exit(0);
-            throw new AssertionError();
-        }
-        return imx2;
+        final ImageScale2x scaler = new ImageScale2x(img);
+        return scaler.getScaledImage();
     }
 
     /**
@@ -199,19 +188,8 @@ public class Faces
      */
     private static ImageIcon getMagicMapImageIcon(final ImageIcon img)
     {
-        final ImageIcon imd8;
-        try
-        {
-            final ImageScale8d scaler = new ImageScale8d(img);
-            imd8 = scaler.getScaledImage();
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-            System.exit(0);
-            throw new AssertionError();
-        }
-        return imd8;
+        final ImageScale8d scaler = new ImageScale8d(img);
+        return scaler.getScaledImage();
     }
 
     public static void setFace(final int pixnum, final int checksum, final String pixname)
