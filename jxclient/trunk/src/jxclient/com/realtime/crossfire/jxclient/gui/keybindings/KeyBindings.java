@@ -450,14 +450,7 @@ public final class KeyBindings
      */
     public boolean handleKeyPress(final KeyEvent e)
     {
-        final KeyBinding keyBinding = getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers());
-        if (keyBinding == null)
-        {
-            return false;
-        }
-
-        keyBinding.getCommands().execute();
-        return true;
+        return executeKeyBinding(getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers()));
     }
 
     /**
@@ -469,7 +462,16 @@ public final class KeyBindings
      */
     public boolean handleKeyTyped(final KeyEvent e)
     {
-        final KeyBinding keyBinding = getKeyBindingAsKeyChar(e.getKeyChar());
+        return executeKeyBinding(getKeyBindingAsKeyChar(e.getKeyChar()));
+    }
+
+    /**
+     * Execute a {@link KeyBinding} instance.
+     * @param keyBinding the key binding to execute; may be <code>null</code>
+     * @return whether <code>keyBinding</code> is not <code>null</code>
+     */
+    private boolean executeKeyBinding(final KeyBinding keyBinding)
+    {
         if (keyBinding == null)
         {
             return false;
