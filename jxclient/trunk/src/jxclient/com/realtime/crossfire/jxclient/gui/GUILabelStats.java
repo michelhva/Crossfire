@@ -137,7 +137,7 @@ public class GUILabelStats extends GUIOneLineLabel
      *
      * @param alignment The text alignment.
      */
-    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final GUILabel.Alignment alignment)
+    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment)
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stat = stat;

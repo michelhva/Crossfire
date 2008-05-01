@@ -214,47 +214,47 @@ public class CfItem
 
     public boolean isApplied()
     {
-        return (flags&CfItem.F_APPLIED) != 0;
+        return (flags&F_APPLIED) != 0;
     }
 
     public boolean isLocation()
     {
-        return (flags&CfItem.F_LOCATION) != 0;
+        return (flags&F_LOCATION) != 0;
     }
 
     public boolean isUnpaid()
     {
-        return (flags&CfItem.F_UNPAID) != 0;
+        return (flags&F_UNPAID) != 0;
     }
 
     public boolean isMagic()
     {
-        return (flags&CfItem.F_MAGIC) != 0;
+        return (flags&F_MAGIC) != 0;
     }
 
     public boolean isCursed()
     {
-        return (flags&CfItem.F_CURSED) != 0;
+        return (flags&F_CURSED) != 0;
     }
 
     public boolean isDamned()
     {
-        return (flags&CfItem.F_DAMNED) != 0;
+        return (flags&F_DAMNED) != 0;
     }
 
     public boolean isOpen()
     {
-        return (flags&CfItem.F_OPEN) != 0;
+        return (flags&F_OPEN) != 0;
     }
 
     public boolean isNoPick()
     {
-        return (flags&CfItem.F_NOPICK) != 0;
+        return (flags&F_NOPICK) != 0;
     }
 
     public boolean isLocked()
     {
-        return (flags&CfItem.F_LOCKED) != 0;
+        return (flags&F_LOCKED) != 0;
     }
 
     public int getLocation()
