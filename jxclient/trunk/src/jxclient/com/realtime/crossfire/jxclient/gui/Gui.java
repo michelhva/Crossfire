@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.JXCWindowRenderer;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.Graphics;
+import java.awt.Color;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.EnumSet;
 import java.util.List;
@@ -226,12 +227,12 @@ public class Gui
             for (final GUIElement element : visibleElements)
             {
                 element.drawImage(g);
-                g.setColor(element == mouseElement ? java.awt.Color.RED : java.awt.Color.WHITE);
+                g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
                 g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
             }
 
             final long t1 = System.currentTimeMillis();
-            g.setColor(java.awt.Color.YELLOW);
+            g.setColor(Color.YELLOW);
             if (mouseElement != null)
             {
                 g.drawString(mouseElement.getName(), 16, 16);
