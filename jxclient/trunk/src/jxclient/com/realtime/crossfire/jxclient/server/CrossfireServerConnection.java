@@ -657,11 +657,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 debugProtocolWrite("recv drawinfo color="+color+" msg="+message+"\n");
                             }
 
-                            final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
-                            for (final CrossfireDrawinfoListener listener : drawinfoListeners)
-                            {
-                                listener.commandDrawinfoReceived(evt);
-                            }
+                            drawInfo(message, color);
                         }
                         return;
                     }
@@ -1969,9 +1965,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         // XXX: "MapExtended" command not yet implemented
     }
 
-    public void drawInfo(final String msg, final int col)
+    public void drawInfo(final String message, final int color)
     {
-        final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, msg, col);
+        final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
         for (final CrossfireDrawinfoListener listener : drawinfoListeners)
         {
             listener.commandDrawinfoReceived(evt);
