@@ -427,10 +427,9 @@ public class CfMapUpdater
 
         visibleAnimations = new CfMapAnimations(width, height);
 
-        final CrossfireCommandNewmapEvent evt = new CrossfireCommandNewmapEvent(new Object());
         for (final CrossfireNewmapListener listener : newmapListeners)
         {
-            listener.commandNewmapReceived(evt);
+            listener.commandNewmapReceived();
         }
     }
 
