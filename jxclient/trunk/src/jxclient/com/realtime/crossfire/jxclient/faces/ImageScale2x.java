@@ -79,21 +79,14 @@ public class ImageScale2x
     public static void main(final String[] argv)
     {
         final String srcFile = "randam_orig.png";
-        try
-        {
-            System.out.println("Reading: "+srcFile);
-            final ImageIcon src = new ImageIcon(srcFile);
-            final ImageScale2x scaler = new ImageScale2x(src);
-            final ImageIcon out = scaler.getScaledImage();
+        System.out.println("Reading: "+srcFile);
+        final ImageIcon src = new ImageIcon(srcFile);
+        final ImageScale2x scaler = new ImageScale2x(src);
+        final ImageIcon out = scaler.getScaledImage();
 
-            final String outFile = srcFile.substring(0, srcFile.length()-4)+"2x.png";
-            System.out.println("Writing: "+outFile);
-            final FileCache fileCache = new FileCache(new File("cache"));
-            fileCache.save(outFile, 0, out);
-        }
-        catch (final Exception e)
-        {
-            e.printStackTrace();
-        }
+        final String outFile = srcFile.substring(0, srcFile.length()-4)+"2x.png";
+        System.out.println("Writing: "+outFile);
+        final FileCache fileCache = new FileCache(new File("cache"));
+        fileCache.save(outFile, 0, out);
     }
 }
