@@ -63,7 +63,7 @@ public class RenderStateManager
     /**
      * The listener to re-render the window contents after changes.
      */
-    private BufferListener bufferListener = new BufferListener()
+    private final BufferListener bufferListener = new BufferListener()
     {
         /** {@inheritDoc} */
         public void linesAdded(final Buffer buffer, final int lines)

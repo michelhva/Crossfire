@@ -36,7 +36,7 @@ public class ShortcutCommand extends Shortcut
     /**
      * The command to execute.
      */
-    private String command;
+    private final String command;
 
     /**
      * Create a new instance.
