@@ -47,7 +47,7 @@ public class Timeouts
     /**
      * The thread that delivers timeout events.
      */
-    private static Thread deliverPendingTimeouts = new Thread()
+    private static final Thread deliverPendingTimeouts = new Thread()
     {
         /** {@inheritDoc} */
         @Override public void run()

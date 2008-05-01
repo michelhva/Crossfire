@@ -64,12 +64,12 @@ public class JXCWindowRenderer
      * Currently opened dialogs. The ordering is the painting order: the
      * topmost dialog is at the end.
      */
-    private CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
+    private final CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
      * Listeners to be notified about {@link #guiState} changes.
      */
-    private CopyOnWriteArrayList<GuiStateListener> guiStateListeners = new CopyOnWriteArrayList<GuiStateListener>();
+    private final CopyOnWriteArrayList<GuiStateListener> guiStateListeners = new CopyOnWriteArrayList<GuiStateListener>();
 
     /**
      * If set, {@link #currentGui} has changed.

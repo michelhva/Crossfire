@@ -145,13 +145,13 @@ public class MusicManager
         /**
          * The minimum factor for fading in/out effects.
          */
-        private float MIN_VALUE = 1E-3F;
+        private final float MIN_VALUE = 1E-3F;
 
         /**
          * The step for the fading in/out factor. It is multiplied to the
          * current value for each sample.
          */
-        private float VOLUME_STEP_PER_SAMPLE = 1.00005F;
+        private final float VOLUME_STEP_PER_SAMPLE = 1.00005F;
 
         /**
          * The name of the music to play.
