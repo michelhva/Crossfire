@@ -84,6 +84,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
+import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.GUICommandList;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.JXCWindowRenderer;
@@ -1332,6 +1333,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             if (!(element instanceof GUIMessageLog))
                             {
                                     throw new IOException("element '"+name+"' is not of type 'log'");
+                            }
+                            if (index < 0 || index >= MessageBufferUpdater.NUM_COLORS)
+                            {
+                                throw new IOException("invalid color index "+index);
                             }
                             ((GUIMessageLog)element).setColor(index, color);
                         }
