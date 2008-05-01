@@ -39,6 +39,11 @@ import java.util.Map;
 public class MessageBufferUpdater
 {
     /**
+     * The number of supported colors.
+     */
+    public static final int NUM_COLORS = 13;
+
+    /**
      * Maps color index to color.
      */
     private final Color[] colors = new Color[]
@@ -56,15 +61,17 @@ public class MessageBufferUpdater
         new Color(0x806000),    // brown sienna
         Color.YELLOW,           // gold
         new Color(0xBDB76B),    // khaki
-        null,                   // undefined
-        null,                   // undefined
-        null,                   // undefined
     };
 
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
      */
     private final Parser parser = new Parser();
+
+    /**
+     * The color to use for invalid colors indices.
+     */
+    private final Color defaultColor;
 
     /**
      * The buffer to update.
@@ -153,13 +160,7 @@ public class MessageBufferUpdater
     public MessageBufferUpdater(final JXCWindow jxcWindow, final Buffer buffer, final Color defaultColor)
     {
         this.buffer = buffer;
-        for (int i = 0; i < colors.length; i++)
-        {
-            if (colors[i] == null)
-            {
-                colors[i] = defaultColor;
-            }
-        }
+        this.defaultColor = defaultColor;
         jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
@@ -174,7 +175,14 @@ public class MessageBufferUpdater
      */
     private Color findColor(final int index)
     {
-        return colors[index];
+        try
+        {
+            return colors[index];
+        }
+        catch (final ArrayIndexOutOfBoundsException ex)
+        {
+            return defaultColor;
+        }
     }
 
     /**
