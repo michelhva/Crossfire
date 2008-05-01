@@ -29,8 +29,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Adds drawinfo, drawextinfo, and query messages to a {@link Buffer} instance.
