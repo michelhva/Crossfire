@@ -472,11 +472,11 @@ public class Stats
      */
     public void reset()
     {
-        for (int i = 0; i < numberedSkills.length; i++)
+        for (final Skill skill : numberedSkills)
         {
-            if (numberedSkills[i] != null)
+            if (skill != null)
             {
-                numberedSkills[i].set(0, 0);
+                skill.set(0, 0);
             }
         }
         Arrays.fill(stats, 0);
@@ -492,11 +492,11 @@ public class Stats
      */
     public void resetSkills()
     {
-        for (int i = 0; i < numberedSkills.length; i++)
+        for (final Skill skill : numberedSkills)
         {
-            if (numberedSkills[i] != null)
+            if (skill != null)
             {
-                numberedSkills[i].set(0, 0);
+                skill.set(0, 0);
             }
         }
         setStatsProcessed(false);
