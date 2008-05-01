@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandNewmapEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapListener;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
@@ -227,7 +226,7 @@ public class GUIMagicMap extends GUIElement
     private final CrossfireNewmapListener crossfireNewmapListener = new CrossfireNewmapListener()
     {
         /** {@inheritDoc} */
-        public void commandNewmapReceived(final CrossfireCommandNewmapEvent evt)
+        public void commandNewmapReceived()
         {
             synchronized (buffer)
             {
