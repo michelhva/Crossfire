@@ -840,15 +840,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 'm') break;
                     switch (packet[pos++])
                     {
-                    case ' ':
-                        if (debugProtocol != null)
-                        {
-                            debugProtocolWrite("recv item\n");
-                        }
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                        cmd_item(dis);
-                        return;
-
                     case '1':
                         if (packet[pos++] != ' ') break;
                         dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
@@ -1587,16 +1578,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             }
         }
         throw new UnknownCommandException("Cannot parse command: "+new String(packet, start, cmdlen-start, utf8));
-    }
-
-    /**
-     * Handles the item server to client command.
-     * @param dis The DataInputStream holding the content of the message.
-     * @since 1.0
-     */
-    void cmd_item(final DataInputStream dis)
-    {
-        // XXX: "item" command not yet implemented
     }
 
     /**
