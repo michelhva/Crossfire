@@ -83,9 +83,9 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
-    public CfItem(final int locaction, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
+    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
     {
-        this.location = locaction;
+        this.location = location;
         this.tag = tag;
         this.flags = flags;
         this.weight = weight;
