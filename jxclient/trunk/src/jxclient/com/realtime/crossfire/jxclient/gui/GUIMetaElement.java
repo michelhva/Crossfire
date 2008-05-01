@@ -91,7 +91,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.text = text;
         this.comment = comment;
         this.defaultIndex = defaultIndex;
-        this.index = defaultIndex;
+        index = defaultIndex;
         this.format = format;
         this.tooltip = tooltip;
         jxcWindow.getMetaserver().addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
