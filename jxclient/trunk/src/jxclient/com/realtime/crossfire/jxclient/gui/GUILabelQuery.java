@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.JXCWindow;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -59,15 +60,17 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param h The height for drawing this element to screen.
      *
+     * @param crossfireServerConnection the connection instance
+     *
      * @param font The font to use.
      *
      * @param color The color to use.
      *
      * @param backgroundColor The background color.
      */
-    public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor)
+    public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
-        jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
+        crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }
 }

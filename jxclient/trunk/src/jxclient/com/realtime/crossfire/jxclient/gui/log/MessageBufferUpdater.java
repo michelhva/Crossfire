@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
@@ -152,18 +153,20 @@ public class MessageBufferUpdater
      *
      * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
      *
+     * @param crossfireServerConnection the connection instance
+     *
      * @param buffer The buffer to update.
      *
      * @param defaultColor The default color to use for undefined colors
      * indices.
      */
-    public MessageBufferUpdater(final JXCWindow jxcWindow, final Buffer buffer, final Color defaultColor)
+    public MessageBufferUpdater(final JXCWindow jxcWindow, final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
     {
         this.buffer = buffer;
         this.defaultColor = defaultColor;
-        jxcWindow.getCrossfireServerConnection().addCrossfireQueryListener(crossfireQueryListener);
-        jxcWindow.getCrossfireServerConnection().addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-        jxcWindow.getCrossfireServerConnection().addCrossfireDrawinfoListener(crossfireDrawinfoListener);
+        crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
+        crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
     /**
