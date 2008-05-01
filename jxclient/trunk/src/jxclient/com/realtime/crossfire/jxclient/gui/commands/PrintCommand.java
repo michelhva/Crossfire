@@ -35,7 +35,7 @@ public class PrintCommand implements GUICommand
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */

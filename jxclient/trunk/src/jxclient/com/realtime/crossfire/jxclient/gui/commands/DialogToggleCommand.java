@@ -45,19 +45,19 @@ public class DialogToggleCommand implements GUICommand
      */
     public DialogToggleCommand(final JXCWindow window, final Gui dialog)
     {
-	this.window = window;
-	this.dialog = dialog;
+        this.window = window;
+        this.dialog = dialog;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return true;
+        return true;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	window.toggleDialog(dialog);
+        window.toggleDialog(dialog);
     }
 }

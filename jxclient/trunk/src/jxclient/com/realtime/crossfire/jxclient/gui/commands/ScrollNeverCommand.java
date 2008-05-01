@@ -45,19 +45,19 @@ public class ScrollNeverCommand implements GUICommand
      */
     public ScrollNeverCommand(final int distance, final GUIScrollable scrollable)
     {
-	this.distance = distance;
-	this.scrollable = scrollable;
+        this.distance = distance;
+        this.scrollable = scrollable;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return false;
+        return false;
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	scrollable.scroll(distance);
+        scrollable.scroll(distance);
     }
 }

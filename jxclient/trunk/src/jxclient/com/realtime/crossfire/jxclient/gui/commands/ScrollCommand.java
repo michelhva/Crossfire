@@ -45,19 +45,19 @@ public class ScrollCommand implements GUICommand
      */
     public ScrollCommand(final int distance, final GUIScrollable scrollable)
     {
-	this.distance = distance;
-	this.scrollable = scrollable;
+        this.distance = distance;
+        this.scrollable = scrollable;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-	return scrollable.canScroll(distance);
+        return scrollable.canScroll(distance);
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-	scrollable.scroll(distance);
+        scrollable.scroll(distance);
     }
 }
