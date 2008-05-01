@@ -269,17 +269,6 @@ public class Segment
     }
 
     /**
-     * Return the height of the segment. Returns <code>-1</code> until {@link
-     * #setHeight(int)} was called
-     *
-     * @return The height.
-     */
-    public int getHeight()
-    {
-        return height;
-    }
-
-    /**
      * Set the height to display the segment.
      *
      * @param height The height.

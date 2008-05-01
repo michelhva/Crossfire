@@ -198,20 +198,6 @@ public class Face
     }
 
     /**
-     * Replace the face name.
-     *
-     * <p>XXX: this function may break the cache since it is used as a filename
-     *
-     * @param name The new face name.
-     */
-    public void setName(final String name)
-    {
-        if (name == null) throw new IllegalArgumentException();
-
-        this.name = name;
-    }
-
-    /**
      * Return the unique face id.
      *
      * @return The face id.

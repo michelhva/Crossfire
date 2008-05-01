@@ -77,7 +77,7 @@ public abstract class ActivatableGUIElement extends GUIElement
     }
 
     /* {@inheritDoc} */
-    @Override public boolean isActive()
+    public boolean isActive()
     {
         final Gui gui = getGui();
         return gui != null && gui.getActiveElement() == this;

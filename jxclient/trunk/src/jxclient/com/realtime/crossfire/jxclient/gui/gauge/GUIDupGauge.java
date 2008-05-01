@@ -176,13 +176,4 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
-
-    /**
-     * Returns the label text.
-     * @return the label text
-     */
-    public String getLabelText()
-    {
-        return labelText;
-    }
 }
