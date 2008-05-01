@@ -56,16 +56,6 @@ public class SoundManager
     private final EnumSet<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
 
     /**
-     * Return whether sound is enabled.
-     *
-     * @return Whether sound is enabled.
-     */
-    public boolean isEnabled()
-    {
-        return enabled;
-    }
-
-    /**
      * Set whether the sound system is enabled.
      *
      * @param enabled Whether the sound system is enabled.

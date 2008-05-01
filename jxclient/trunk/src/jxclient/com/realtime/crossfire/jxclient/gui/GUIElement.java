@@ -160,16 +160,6 @@ public abstract class GUIElement
         return name;
     }
 
-    /**
-     * Return whether the element is active.
-     *
-     * @return Whether the element is active.
-     */
-    public boolean isActive()
-    {
-        return false;
-    }
-
     public int getX()
     {
         return gui != null ? gui.getX()+x : x;
@@ -320,16 +310,6 @@ public abstract class GUIElement
      */
     public void mouseDragged(final MouseEvent e)
     {
-    }
-
-    /**
-     * Return whether {@link #buffer} has changed.
-     *
-     * @return whether <code>buffer</code> has changed
-     */
-    public boolean hasChanged()
-    {
-        return visible && changed;
     }
 
     /**

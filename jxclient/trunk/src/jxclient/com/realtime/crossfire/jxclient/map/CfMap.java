@@ -409,34 +409,6 @@ public class CfMap
     }
 
     /**
-     * Clear the content of all squares. Note: the old square content remains
-     * available until at least one value will be changed ("fog of war").
-     */
-    public void clearAllSquares()
-    {
-        if (patch == null)
-        {
-            return;
-        }
-
-        if (patch.length == 0)
-        {
-            return;
-        }
-
-        for (int x = 0; x < patch.length; x++)
-        {
-            for (int y = 0; y < patch[0].length; y++)
-            {
-                if (patch[x][y] != null)
-                {
-                    patch[x][y].clearAllSquares();
-                }
-            }
-        }
-    }
-
-    /**
      * Mark a single square as dirty.
      *
      * @param x The x-coordinate of the square.

@@ -51,30 +51,6 @@ public class GUIPicture extends GUIElement
      * @param h The height for drawing this element to screen.
      *
      * @param image The picture to paint.
-     */
-    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image)
-    {
-        this(jxcWindow, name, x, y, w, h, image, 1F);
-    }
-
-    /**
-     * Create a new instance.
-     *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     *
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param image The picture to paint.
      *
      * @param alpha The transparency value.
      */

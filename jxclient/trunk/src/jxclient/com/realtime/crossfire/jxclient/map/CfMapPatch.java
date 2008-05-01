@@ -89,21 +89,6 @@ public class CfMapPatch
     }
 
     /**
-     * Clear the content of all squares. Note: the old square content remains
-     * available until at least one value will be changed ("fog of war").
-     */
-    public void clearAllSquares()
-    {
-        for (int x = 0; x < SIZE; x++)
-        {
-            for (int y = 0; y < SIZE; y++)
-            {
-                square[x][y].clear();
-            }
-        }
-    }
-
-    /**
      * Set the darkness value of one square.
      *
      * @param x The x-coordinate of the square.
@@ -132,22 +117,6 @@ public class CfMapPatch
     public int getDarkness(final int x, final int y)
     {
         return square[x][y].getDarkness();
-    }
-
-    /**
-     * Set the face of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to set.
-     *
-     * @param face The face to set.
-     */
-    public void setFace(final int x, final int y, final int layer, final Face face)
-    {
-        square[x][y].setFace(layer, face);
     }
 
     /**

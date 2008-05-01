@@ -92,21 +92,6 @@ public class RawScale8d
     }
 
     /**
-     * Check if two pixels are different. Place holder for maybe some clever
-     * code about tolerance checking.
-     *
-     * @param a The first pixel value.
-     *
-     * @param b The second pixel value.
-     *
-     * @return <code>true</code> if the pixels are different.
-     */
-    private static boolean different(final int a, final int b)
-    {
-        return a != b;
-    }
-
-    /**
      * Process a specific destination pixel.
      *
      * @param x The x location in the source image of the pixel to process.

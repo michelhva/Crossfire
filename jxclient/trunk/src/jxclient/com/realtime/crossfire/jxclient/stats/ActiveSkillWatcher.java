@@ -35,11 +35,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 public class ActiveSkillWatcher
 {
     /**
-     * The range name prefix for skills.
-     */
-    private static final String prefix = "Skill: ";
-
-    /**
      * The stats instance to notify.
      */
     private final Stats stats;
