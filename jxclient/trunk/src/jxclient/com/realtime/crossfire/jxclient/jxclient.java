@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
-import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.DisplayMode;
 import java.awt.GraphicsDevice;
@@ -179,8 +178,6 @@ public class jxclient
                         }
 
                         SoundManager.instance = new SoundManager();
-                        new StatsWatcher(ItemsList.getStats(), jxwin.getWindowRenderer());
-
                         jxwin.init(resolution, skin, fullScreen, server);
                     }
                     finally
