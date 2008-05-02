@@ -62,6 +62,7 @@ import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.Sounds;
+import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
@@ -727,6 +728,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         new MusicWatcher(server);
         new SoundWatcher(server);
+        new StatsWatcher(ItemsList.getStats(), jxcWindowRenderer);
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
