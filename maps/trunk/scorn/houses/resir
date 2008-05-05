@@ -3,12 +3,12 @@ name Resir's House
 reset_timeout 7200
 difficulty 1
 width 25
-height 10
+height 20
 enter_x 1
 enter_y 1
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
-Modified: 2008-02-17 Nicolas Weeger
+Modified: 2008-05-05 Nicolas Weeger
 endmsg
 maplore
 @def Resir's house
@@ -19,32 +19,94 @@ endmaplore
 end
 arch cobblestones2
 end
+arch goblin
+end
 arch cobblestones2
+y 1
+end
+arch goblin
 y 1
 end
 arch cobblestones2
 y 2
 end
+arch goblin
+y 2
+end
 arch cobblestones2
+y 3
+end
+arch goblin
 y 3
 end
 arch cobblestones2
 y 4
 end
+arch chole_1
+slaying resir
+hp 22
+sp 13
+y 4
+glow_radius 22
+smoothlevel 12
+end
 arch cobblestones2
+y 5
+end
+arch goblin
 y 5
 end
 arch cobblestones2
 y 6
 end
+arch goblin
+y 6
+end
 arch cobblestones2
+y 7
+end
+arch goblin
 y 7
 end
 arch cobblestones2
 y 8
 end
+arch goblin
+y 8
+end
 arch cobblestones2
 y 9
+end
+arch dungeon_magic
+y 10
+move_block all
+end
+arch blocked
+y 10
+end
+arch dirtfloor
+y 12
+end
+arch dirtfloor
+y 13
+end
+arch dirtfloor
+y 14
+end
+arch dirtfloor
+y 15
+end
+arch dirtfloor
+y 16
+end
+arch dirtfloor
+y 17
+end
+arch dirtfloor
+y 18
+end
+arch dirtfloor
+y 19
 end
 arch cobblestones2
 x 1
@@ -117,6 +179,79 @@ arch cobblestones2
 x 1
 y 9
 end
+arch dungeon_magic
+x 1
+y 10
+move_block all
+end
+arch blocked
+x 1
+y 10
+end
+arch dirtfloor
+x 1
+y 12
+end
+arch dwall_2_2_2
+x 1
+y 12
+end
+arch dirtfloor
+x 1
+y 13
+end
+arch dwall_2_1_1
+x 1
+y 13
+end
+arch dirtfloor
+x 1
+y 14
+end
+arch dwall_2_1_1
+x 1
+y 14
+end
+arch dirtfloor
+x 1
+y 15
+end
+arch dwall_2_1_1
+x 1
+y 15
+end
+arch dirtfloor
+x 1
+y 16
+end
+arch dwall_2_1_1
+x 1
+y 16
+end
+arch dirtfloor
+x 1
+y 17
+end
+arch dwall_2_1_1
+x 1
+y 17
+end
+arch dirtfloor
+x 1
+y 18
+end
+arch dwall_2_1_1
+x 1
+y 18
+end
+arch dirtfloor
+x 1
+y 19
+end
+arch dwall_2_2_1
+x 1
+y 19
+end
 arch cobblestones2
 x 2
 end
@@ -133,6 +268,20 @@ x 2
 y 2
 end
 arch random_plant
+x 2
+y 2
+end
+arch stair2_down
+x 2
+y 2
+end
+arch magic_mouth
+msg
+DRATS THE STAIRS ARE BLOCKED.
+.o0O(I wonder if that secret passage
+is still located behind the house)
+I MUST HURRY BEFORE ITS TO LATE
+endmsg
 x 2
 y 2
 end
@@ -172,6 +321,10 @@ arch dirtfloor
 x 2
 y 7
 end
+arch key
+x 2
+y 7
+end
 arch random_plant
 x 2
 y 7
@@ -188,187 +341,59 @@ arch cobblestones2
 x 2
 y 9
 end
-arch cobblestones2
-x 3
+arch dungeon_magic
+x 2
+y 10
+move_block all
+end
+arch blocked
+x 2
+y 10
 end
 arch dirtfloor
-x 3
-y 1
+x 2
+y 12
 end
-arch cwall_2_1_2
-x 3
-y 1
-end
-arch dirtfloor
-x 3
-y 2
-end
-arch random_plant
-x 3
-y 2
+arch dwall_2_1_2
+x 2
+y 12
 end
 arch dirtfloor
-x 3
-y 3
+x 2
+y 13
 end
-arch random_scroll
-x 3
-y 3
+arch stair2_up
+msg
+Hum, the stairs seem blocked...
+endmsg
+x 2
+y 13
 end
-arch dirtfloor
-x 3
-y 4
-end
-arch random_wealth
-x 3
-y 4
-end
-arch dirtfloor
-x 3
-y 5
-end
-arch random_wealth
-x 3
-y 5
+arch mouse
+x 2
+y 13
 end
 arch dirtfloor
-x 3
-y 6
+x 2
+y 14
 end
-arch random_scroll
-x 3
-y 6
-end
-arch dirtfloor
-x 3
-y 7
-end
-arch random_plant
-x 3
-y 7
+arch mouse
+x 2
+y 14
 end
 arch dirtfloor
-x 3
-y 8
-end
-arch cwall_2_1_2
-x 3
-y 8
-end
-arch cobblestones2
-x 3
-y 9
-end
-arch cobblestones2
-x 4
-end
-arch dirtfloor
-x 4
-y 1
-end
-arch cwall_2_1_2
-x 4
-y 1
-end
-arch dirtfloor
-x 4
-y 2
-end
-arch door_look_2
-x 4
-y 2
-end
-arch dirtfloor
-x 4
-y 3
-end
-arch door_look_2
-x 4
-y 3
-end
-arch dirtfloor
-x 4
-y 4
-end
-arch door_look_2
-x 4
-y 4
-end
-arch dirtfloor
-x 4
-y 5
-end
-arch door_look_2
-x 4
-y 5
-end
-arch dirtfloor
-x 4
-y 6
-end
-arch door_look_2
-x 4
-y 6
-end
-arch dirtfloor
-x 4
-y 7
-end
-arch door_look_2
-x 4
-y 7
-end
-arch dirtfloor
-x 4
-y 8
-end
-arch cwall_2_1_2
-x 4
-y 8
-end
-arch cobblestones2
-x 4
-y 9
-end
-arch cobblestones2
-x 5
-end
-arch dirtfloor
-x 5
-y 1
-end
-arch cwall_2_1_2
-x 5
-y 1
-end
-arch dirtfloor
-x 5
-y 2
-end
-arch random_plant
-x 5
-y 2
-end
-arch dirtfloor
-x 5
-y 3
-end
-arch dirtfloor
-x 5
-y 4
+x 2
+y 15
 end
 arch chest
 name Resir
 name_pl Resir
 face corpse1.111
-x 5
-y 4
+x 2
+y 15
 carrying 1575
 randomitems none
 arch random_wealth
-end
-arch potion_restoration
-cursed 1
 end
 arch note
 msg
@@ -381,6 +406,396 @@ of life because I won't need it anymore,
 but mark my words.
 endmsg
 end
+arch minor_potion_restoration
+end
+end
+arch dirtfloor
+x 2
+y 16
+end
+arch mouse
+x 2
+y 16
+end
+arch dirtfloor
+x 2
+y 17
+end
+arch mouse
+x 2
+y 17
+end
+arch mouse
+x 2
+y 17
+end
+arch dirtfloor
+x 2
+y 18
+end
+arch mouse
+x 2
+y 18
+end
+arch dirtfloor
+x 2
+y 19
+end
+arch dwall_2_1_2
+x 2
+y 19
+end
+arch cobblestones2
+x 3
+end
+arch dirtfloor
+x 3
+y 1
+end
+arch cwall_2_1_2
+x 3
+y 1
+end
+arch dirtfloor
+x 3
+y 2
+end
+arch random_plant
+x 3
+y 2
+end
+arch dirtfloor
+x 3
+y 3
+end
+arch random_scroll
+x 3
+y 3
+end
+arch dirtfloor
+x 3
+y 4
+end
+arch random_wealth
+x 3
+y 4
+end
+arch dirtfloor
+x 3
+y 5
+end
+arch random_wealth
+x 3
+y 5
+end
+arch dirtfloor
+x 3
+y 6
+end
+arch random_scroll
+x 3
+y 6
+end
+arch dirtfloor
+x 3
+y 7
+end
+arch random_plant
+x 3
+y 7
+end
+arch dirtfloor
+x 3
+y 8
+end
+arch cwall_2_1_2
+x 3
+y 8
+end
+arch cobblestones2
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+move_block all
+end
+arch blocked
+x 3
+y 10
+end
+arch dirtfloor
+x 3
+y 12
+end
+arch dwall_2_1_2
+x 3
+y 12
+end
+arch dirtfloor
+x 3
+y 13
+end
+arch mouse
+x 3
+y 13
+end
+arch dirtfloor
+x 3
+y 14
+end
+arch mouse
+x 3
+y 14
+end
+arch dirtfloor
+x 3
+y 15
+end
+arch mouse
+x 3
+y 15
+end
+arch dirtfloor
+x 3
+y 16
+end
+arch mouse
+x 3
+y 16
+end
+arch dirtfloor
+x 3
+y 17
+end
+arch mouse
+x 3
+y 17
+end
+arch dirtfloor
+x 3
+y 18
+end
+arch mouse
+x 3
+y 18
+end
+arch mouse
+x 3
+y 18
+end
+arch mouse
+x 3
+y 18
+end
+arch dirtfloor
+x 3
+y 19
+end
+arch dwall_2_1_2
+x 3
+y 19
+end
+arch cobblestones2
+x 4
+end
+arch goblin
+hp 30
+maxhp 30
+maxsp 20
+x 4
+generator 1
+reflect_missile 1
+generator_limit 5
+end
+arch dirtfloor
+x 4
+y 1
+end
+arch cwall_2_1_2
+x 4
+y 1
+end
+arch dirtfloor
+x 4
+y 2
+end
+arch door_look_2
+x 4
+y 2
+end
+arch dirtfloor
+x 4
+y 3
+end
+arch door_look_2
+x 4
+y 3
+end
+arch dirtfloor
+x 4
+y 4
+end
+arch door_look_2
+x 4
+y 4
+end
+arch dirtfloor
+x 4
+y 5
+end
+arch door_look_2
+x 4
+y 5
+end
+arch dirtfloor
+x 4
+y 6
+end
+arch door_look_2
+x 4
+y 6
+end
+arch dirtfloor
+x 4
+y 7
+end
+arch door_look_2
+x 4
+y 7
+end
+arch dirtfloor
+x 4
+y 8
+end
+arch cwall_2_1_2
+x 4
+y 8
+end
+arch cobblestones2
+x 4
+y 9
+end
+arch goblin
+hp 30
+maxhp 30
+maxsp 20
+x 4
+y 9
+generator 1
+reflect_missile 1
+generator_limit 5
+end
+arch dungeon_magic
+x 4
+y 10
+move_block all
+end
+arch blocked
+x 4
+y 10
+end
+arch dirtfloor
+x 4
+y 12
+end
+arch dwall_2_1_2
+x 4
+y 12
+end
+arch dirtfloor
+x 4
+y 13
+end
+arch mouse
+x 4
+y 13
+end
+arch dirtfloor
+x 4
+y 14
+end
+arch mouse
+x 4
+y 14
+end
+arch dirtfloor
+x 4
+y 15
+end
+arch mouse
+x 4
+y 15
+end
+arch dirtfloor
+x 4
+y 16
+end
+arch mouse
+x 4
+y 16
+end
+arch dirtfloor
+x 4
+y 17
+end
+arch mouse
+x 4
+y 17
+end
+arch dirtfloor
+x 4
+y 18
+end
+arch mouse
+x 4
+y 18
+end
+arch dirtfloor
+x 4
+y 19
+end
+arch dwall_2_1_2
+x 4
+y 19
+end
+arch cobblestones2
+x 5
+end
+arch dirtfloor
+x 5
+y 1
+end
+arch cwall_2_1_2
+x 5
+y 1
+end
+arch dirtfloor
+x 5
+y 2
+end
+arch random_plant
+x 5
+y 2
+end
+arch dirtfloor
+x 5
+y 3
+end
+arch dirtfloor
+x 5
+y 4
+end
+arch note
+msg
+Drats my house has been over run!!!
+It seem my pets are stronger than
+I first though.  I will attempt to excape
+to my bacement.Hope to see you soon!!!
+endmsg
+x 5
+y 4
 end
 arch dirtfloor
 x 5
@@ -409,6 +824,79 @@ end
 arch cobblestones2
 x 5
 y 9
+end
+arch dungeon_magic
+x 5
+y 10
+move_block all
+end
+arch blocked
+x 5
+y 10
+end
+arch dirtfloor
+x 5
+y 12
+end
+arch dwall_2_1_2
+x 5
+y 12
+end
+arch dirtfloor
+x 5
+y 13
+end
+arch mouse
+x 5
+y 13
+end
+arch dirtfloor
+x 5
+y 14
+end
+arch mouse
+x 5
+y 14
+end
+arch dirtfloor
+x 5
+y 15
+end
+arch mouse
+x 5
+y 15
+end
+arch dirtfloor
+x 5
+y 16
+end
+arch mouse
+x 5
+y 16
+end
+arch dirtfloor
+x 5
+y 17
+end
+arch mouse
+x 5
+y 17
+end
+arch dirtfloor
+x 5
+y 18
+end
+arch mouse
+x 5
+y 18
+end
+arch dirtfloor
+x 5
+y 19
+end
+arch dwall_2_1_2
+x 5
+y 19
 end
 arch cobblestones2
 x 6
@@ -470,6 +958,79 @@ arch cobblestones2
 x 6
 y 9
 end
+arch dungeon_magic
+x 6
+y 10
+move_block all
+end
+arch blocked
+x 6
+y 10
+end
+arch dirtfloor
+x 6
+y 12
+end
+arch dwall_2_1_2
+x 6
+y 12
+end
+arch dirtfloor
+x 6
+y 13
+end
+arch mouse
+x 6
+y 13
+end
+arch dirtfloor
+x 6
+y 14
+end
+arch mouse
+x 6
+y 14
+end
+arch dirtfloor
+x 6
+y 15
+end
+arch mouse
+x 6
+y 15
+end
+arch dirtfloor
+x 6
+y 16
+end
+arch mouse
+x 6
+y 16
+end
+arch dirtfloor
+x 6
+y 17
+end
+arch mouse
+x 6
+y 17
+end
+arch dirtfloor
+x 6
+y 18
+end
+arch mouse
+x 6
+y 18
+end
+arch dirtfloor
+x 6
+y 19
+end
+arch dwall_2_1_2
+x 6
+y 19
+end
 arch cobblestones2
 x 7
 end
@@ -541,6 +1102,79 @@ arch cobblestones2
 x 7
 y 9
 end
+arch dungeon_magic
+x 7
+y 10
+move_block all
+end
+arch blocked
+x 7
+y 10
+end
+arch dirtfloor
+x 7
+y 12
+end
+arch cwall_3_3
+x 7
+y 12
+end
+arch dirtfloor
+x 7
+y 13
+end
+arch weak_wall_3
+x 7
+y 13
+end
+arch dirtfloor
+x 7
+y 14
+end
+arch weak_wall_3
+x 7
+y 14
+end
+arch dirtfloor
+x 7
+y 15
+end
+arch weak_wall_3
+x 7
+y 15
+end
+arch dirtfloor
+x 7
+y 16
+end
+arch weak_wall_3
+x 7
+y 16
+end
+arch dirtfloor
+x 7
+y 17
+end
+arch weak_wall_3
+x 7
+y 17
+end
+arch dirtfloor
+x 7
+y 18
+end
+arch weak_wall_3
+x 7
+y 18
+end
+arch dirtfloor
+x 7
+y 19
+end
+arch cwall_3_1
+x 7
+y 19
+end
 arch cobblestones2
 x 8
 end
@@ -612,6 +1246,79 @@ arch cobblestones2
 x 8
 y 9
 end
+arch dungeon_magic
+x 8
+y 10
+move_block all
+end
+arch blocked
+x 8
+y 10
+end
+arch dirtfloor
+x 8
+y 12
+end
+arch dwall_2_1_2
+x 8
+y 12
+end
+arch dirtfloor
+x 8
+y 13
+end
+arch ogre
+x 8
+y 13
+end
+arch dirtfloor
+x 8
+y 14
+end
+arch ogre
+x 8
+y 14
+end
+arch dirtfloor
+x 8
+y 15
+end
+arch ogre
+x 8
+y 15
+end
+arch dirtfloor
+x 8
+y 16
+end
+arch ogre
+x 8
+y 16
+end
+arch dirtfloor
+x 8
+y 17
+end
+arch ogre
+x 8
+y 17
+end
+arch dirtfloor
+x 8
+y 18
+end
+arch ogre
+x 8
+y 18
+end
+arch dirtfloor
+x 8
+y 19
+end
+arch dwall_2_1_2
+x 8
+y 19
+end
 arch cobblestones2
 x 9
 end
@@ -682,6 +1389,79 @@ end
 arch cobblestones2
 x 9
 y 9
+end
+arch dungeon_magic
+x 9
+y 10
+move_block all
+end
+arch blocked
+x 9
+y 10
+end
+arch dirtfloor
+x 9
+y 12
+end
+arch dwall_2_1_2
+x 9
+y 12
+end
+arch dirtfloor
+x 9
+y 13
+end
+arch ogre
+x 9
+y 13
+end
+arch dirtfloor
+x 9
+y 14
+end
+arch ogre
+x 9
+y 14
+end
+arch dirtfloor
+x 9
+y 15
+end
+arch ogre
+x 9
+y 15
+end
+arch dirtfloor
+x 9
+y 16
+end
+arch ogre
+x 9
+y 16
+end
+arch dirtfloor
+x 9
+y 17
+end
+arch ogre
+x 9
+y 17
+end
+arch dirtfloor
+x 9
+y 18
+end
+arch ogre
+x 9
+y 18
+end
+arch dirtfloor
+x 9
+y 19
+end
+arch dwall_2_1_2
+x 9
+y 19
 end
 arch cobblestones2
 x 10
@@ -750,6 +1530,83 @@ arch cobblestones2
 x 10
 y 9
 end
+arch dungeon_magic
+x 10
+y 10
+move_block all
+end
+arch blocked
+x 10
+y 10
+end
+arch dirtfloor
+x 10
+y 12
+end
+arch dwall_2_1_2
+x 10
+y 12
+end
+arch dirtfloor
+x 10
+y 13
+end
+arch key
+x 10
+y 13
+end
+arch ogre
+x 10
+y 13
+end
+arch dirtfloor
+x 10
+y 14
+end
+arch ogre
+x 10
+y 14
+end
+arch dirtfloor
+x 10
+y 15
+end
+arch ogre
+x 10
+y 15
+end
+arch dirtfloor
+x 10
+y 16
+end
+arch ogre
+x 10
+y 16
+end
+arch dirtfloor
+x 10
+y 17
+end
+arch ogre
+x 10
+y 17
+end
+arch dirtfloor
+x 10
+y 18
+end
+arch ogre
+x 10
+y 18
+end
+arch dirtfloor
+x 10
+y 19
+end
+arch dwall_2_1_2
+x 10
+y 19
+end
 arch cobblestones2
 x 11
 end
@@ -821,6 +1678,87 @@ arch cobblestones2
 x 11
 y 9
 end
+arch dungeon_magic
+x 11
+y 10
+move_block all
+end
+arch blocked
+x 11
+y 10
+end
+arch dirtfloor
+x 11
+y 12
+end
+arch cwall_3_3
+x 11
+y 12
+end
+arch dirtfloor
+x 11
+y 13
+end
+arch dwall_2_1_1
+x 11
+y 13
+end
+arch dirtfloor
+x 11
+y 14
+end
+arch cwall_1_2
+x 11
+y 14
+end
+arch dirtfloor
+x 11
+y 15
+end
+arch dirtfloor
+x 11
+y 15
+end
+arch door_1
+x 11
+y 15
+end
+arch dirtfloor
+x 11
+y 16
+end
+arch dirtfloor
+x 11
+y 16
+end
+arch door_1
+x 11
+y 16
+end
+arch dirtfloor
+x 11
+y 17
+end
+arch cwall_1_1
+x 11
+y 17
+end
+arch dirtfloor
+x 11
+y 18
+end
+arch dwall_2_1_1
+x 11
+y 18
+end
+arch dirtfloor
+x 11
+y 19
+end
+arch cwall_3_1
+x 11
+y 19
+end
 arch cobblestones2
 x 12
 end
@@ -892,6 +1830,85 @@ arch cobblestones2
 x 12
 y 9
 end
+arch dungeon_magic
+x 12
+y 10
+move_block all
+end
+arch blocked
+x 12
+y 10
+end
+arch dirtfloor
+x 12
+y 12
+end
+arch dwall_2_1_2
+x 12
+y 12
+end
+arch dirtfloor
+x 12
+y 13
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 12
+y 13
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 12
+y 14
+end
+arch dirtfloor
+x 12
+y 15
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 12
+y 15
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 12
+y 16
+end
+arch dirtfloor
+x 12
+y 17
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 12
+y 17
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 12
+y 18
+end
+arch dirtfloor
+x 12
+y 19
+end
+arch dwall_2_1_2
+x 12
+y 19
+end
 arch cobblestones2
 x 13
 end
@@ -962,6 +1979,105 @@ end
 arch cobblestones2
 x 13
 y 9
+end
+arch dungeon_magic
+x 13
+y 10
+move_block all
+end
+arch blocked
+x 13
+y 10
+end
+arch dirtfloor
+x 13
+y 12
+end
+arch dwall_2_1_2
+x 13
+y 12
+end
+arch dirtfloor
+x 13
+y 13
+end
+arch dirtfloor
+x 13
+y 14
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 13
+y 14
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 13
+y 15
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 13
+y 15
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 13
+y 16
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 13
+y 16
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 13
+y 17
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 13
+y 17
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 13
+y 18
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 13
+y 18
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 13
+y 19
+end
+arch dwall_2_1_2
+x 13
+y 19
 end
 arch cobblestones2
 x 14
@@ -1030,6 +2146,89 @@ arch cobblestones2
 x 14
 y 9
 end
+arch dungeon_magic
+x 14
+y 10
+move_block all
+end
+arch blocked
+x 14
+y 10
+end
+arch dirtfloor
+x 14
+y 12
+end
+arch dwall_2_1_2
+x 14
+y 12
+end
+arch dirtfloor
+x 14
+y 13
+end
+arch key
+x 14
+y 13
+end
+arch dirtfloor
+x 14
+y 14
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 14
+y 14
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 14
+y 15
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 14
+y 15
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 14
+y 16
+end
+arch gnoll
+other_arch gnoll
+hp 40
+maxhp 40
+maxsp 20
+x 14
+y 16
+generator 1
+generator_limit 1
+end
+arch dirtfloor
+x 14
+y 17
+end
+arch dirtfloor
+x 14
+y 18
+end
+arch dirtfloor
+x 14
+y 19
+end
+arch dwall_2_1_2
+x 14
+y 19
+end
 arch cobblestones2
 x 15
 end
@@ -1101,6 +2300,95 @@ arch cobblestones2
 x 15
 y 9
 end
+arch dungeon_magic
+x 15
+y 10
+move_block all
+end
+arch blocked
+x 15
+y 10
+end
+arch dirtfloor
+x 15
+y 12
+end
+arch cwall_3_3
+x 15
+y 12
+end
+arch dirtfloor
+x 15
+y 13
+end
+arch dwall_2_1_1
+x 15
+y 13
+end
+arch dirtfloor
+x 15
+y 14
+end
+arch cwall_1_2
+x 15
+y 14
+end
+arch dirtfloor
+x 15
+y 15
+end
+arch dirtfloor
+x 15
+y 15
+end
+arch dirtfloor
+x 15
+y 15
+end
+arch door_1
+x 15
+y 15
+end
+arch dirtfloor
+x 15
+y 16
+end
+arch dirtfloor
+x 15
+y 16
+end
+arch dirtfloor
+x 15
+y 16
+end
+arch door_1
+x 15
+y 16
+end
+arch dirtfloor
+x 15
+y 17
+end
+arch cwall_1_1
+x 15
+y 17
+end
+arch dirtfloor
+x 15
+y 18
+end
+arch dwall_2_1_1
+x 15
+y 18
+end
+arch dirtfloor
+x 15
+y 19
+end
+arch cwall_3_1
+x 15
+y 19
+end
 arch cobblestones2
 x 16
 end
@@ -1172,6 +2460,83 @@ arch cobblestones2
 x 16
 y 9
 end
+arch dungeon_magic
+x 16
+y 10
+move_block all
+end
+arch blocked
+x 16
+y 10
+end
+arch dirtfloor
+x 16
+y 12
+end
+arch dwall_2_1_2
+x 16
+y 12
+end
+arch dirtfloor
+x 16
+y 13
+end
+arch goblin
+x 16
+y 13
+end
+arch dirtfloor
+x 16
+y 14
+end
+arch goblin
+x 16
+y 14
+end
+arch dirtfloor
+x 16
+y 15
+end
+arch goblin
+x 16
+y 15
+end
+arch goblin
+x 16
+y 15
+end
+arch dirtfloor
+x 16
+y 16
+end
+arch goblin
+x 16
+y 16
+end
+arch dirtfloor
+x 16
+y 17
+end
+arch goblin
+x 16
+y 17
+end
+arch dirtfloor
+x 16
+y 18
+end
+arch goblin
+x 16
+y 18
+end
+arch dirtfloor
+x 16
+y 19
+end
+arch dwall_2_1_2
+x 16
+y 19
+end
 arch cobblestones2
 x 17
 end
@@ -1242,6 +2607,79 @@ end
 arch cobblestones2
 x 17
 y 9
+end
+arch dungeon_magic
+x 17
+y 10
+move_block all
+end
+arch blocked
+x 17
+y 10
+end
+arch dirtfloor
+x 17
+y 12
+end
+arch dwall_2_1_2
+x 17
+y 12
+end
+arch dirtfloor
+x 17
+y 13
+end
+arch goblin
+x 17
+y 13
+end
+arch dirtfloor
+x 17
+y 14
+end
+arch goblin
+x 17
+y 14
+end
+arch dirtfloor
+x 17
+y 15
+end
+arch goblin
+x 17
+y 15
+end
+arch dirtfloor
+x 17
+y 16
+end
+arch goblin
+x 17
+y 16
+end
+arch dirtfloor
+x 17
+y 17
+end
+arch goblin
+x 17
+y 17
+end
+arch dirtfloor
+x 17
+y 18
+end
+arch goblin
+x 17
+y 18
+end
+arch dirtfloor
+x 17
+y 19
+end
+arch dwall_2_1_2
+x 17
+y 19
 end
 arch cobblestones2
 x 18
@@ -1310,6 +2748,79 @@ arch cobblestones2
 x 18
 y 9
 end
+arch dungeon_magic
+x 18
+y 10
+move_block all
+end
+arch blocked
+x 18
+y 10
+end
+arch dirtfloor
+x 18
+y 12
+end
+arch dwall_2_1_2
+x 18
+y 12
+end
+arch dirtfloor
+x 18
+y 13
+end
+arch key
+x 18
+y 13
+end
+arch dirtfloor
+x 18
+y 14
+end
+arch goblin
+x 18
+y 14
+end
+arch dirtfloor
+x 18
+y 15
+end
+arch goblin
+x 18
+y 15
+end
+arch dirtfloor
+x 18
+y 16
+end
+arch goblin
+x 18
+y 16
+end
+arch dirtfloor
+x 18
+y 17
+end
+arch goblin
+x 18
+y 17
+end
+arch dirtfloor
+x 18
+y 18
+end
+arch goblin
+x 18
+y 18
+end
+arch dirtfloor
+x 18
+y 19
+end
+arch dwall_2_1_2
+x 18
+y 19
+end
 arch cobblestones2
 x 19
 end
@@ -1381,6 +2892,103 @@ arch cobblestones2
 x 19
 y 9
 end
+arch dungeon_magic
+x 19
+y 10
+move_block all
+end
+arch blocked
+x 19
+y 10
+end
+arch dirtfloor
+x 19
+y 12
+end
+arch cwall_3_3
+x 19
+y 12
+end
+arch dirtfloor
+x 19
+y 13
+end
+arch dwall_2_1_1
+x 19
+y 13
+end
+arch dirtfloor
+x 19
+y 14
+end
+arch cwall_1_2
+x 19
+y 14
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch dirtfloor
+x 19
+y 15
+end
+arch door_1
+x 19
+y 15
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 16
+end
+arch door_1
+x 19
+y 16
+end
+arch dirtfloor
+x 19
+y 17
+end
+arch cwall_1_1
+x 19
+y 17
+end
+arch dirtfloor
+x 19
+y 18
+end
+arch dwall_2_1_1
+x 19
+y 18
+end
+arch dirtfloor
+x 19
+y 19
+end
+arch cwall_3_1
+x 19
+y 19
+end
 arch cobblestones2
 x 20
 end
@@ -1452,6 +3060,55 @@ arch cobblestones2
 x 20
 y 9
 end
+arch dungeon_magic
+x 20
+y 10
+move_block all
+end
+arch blocked
+x 20
+y 10
+end
+arch dirtfloor
+x 20
+y 12
+end
+arch dwall_2_1_2
+x 20
+y 12
+end
+arch dirtfloor
+x 20
+y 13
+end
+arch dirtfloor
+x 20
+y 14
+end
+arch dirtfloor
+x 20
+y 15
+end
+arch dirtfloor
+x 20
+y 16
+end
+arch dirtfloor
+x 20
+y 17
+end
+arch dirtfloor
+x 20
+y 18
+end
+arch dirtfloor
+x 20
+y 19
+end
+arch dwall_2_1_2
+x 20
+y 19
+end
 arch cobblestones2
 x 21
 end
@@ -1514,6 +3171,55 @@ end
 arch cobblestones2
 x 21
 y 9
+end
+arch dungeon_magic
+x 21
+y 10
+move_block all
+end
+arch blocked
+x 21
+y 10
+end
+arch dirtfloor
+x 21
+y 12
+end
+arch dwall_2_1_2
+x 21
+y 12
+end
+arch dirtfloor
+x 21
+y 13
+end
+arch dirtfloor
+x 21
+y 14
+end
+arch dirtfloor
+x 21
+y 15
+end
+arch dirtfloor
+x 21
+y 16
+end
+arch dirtfloor
+x 21
+y 17
+end
+arch dirtfloor
+x 21
+y 18
+end
+arch dirtfloor
+x 21
+y 19
+end
+arch dwall_2_1_2
+x 21
+y 19
 end
 arch cobblestones2
 x 22
@@ -1589,6 +3295,63 @@ end
 arch cobblestones2
 x 22
 y 9
+end
+arch dungeon_magic
+x 22
+y 10
+move_block all
+end
+arch blocked
+x 22
+y 10
+end
+arch dirtfloor
+x 22
+y 12
+end
+arch dwall_2_1_2
+x 22
+y 12
+end
+arch dirtfloor
+x 22
+y 13
+end
+arch chole_1
+slaying resir
+sp 4
+x 22
+y 13
+glow_radius 22
+smoothlevel 12
+end
+arch dirtfloor
+x 22
+y 14
+end
+arch dirtfloor
+x 22
+y 15
+end
+arch dirtfloor
+x 22
+y 16
+end
+arch dirtfloor
+x 22
+y 17
+end
+arch dirtfloor
+x 22
+y 18
+end
+arch dirtfloor
+x 22
+y 19
+end
+arch dwall_2_1_2
+x 22
+y 19
 end
 arch cobblestones2
 x 23
@@ -1653,6 +3416,79 @@ arch cobblestones2
 x 23
 y 9
 end
+arch dungeon_magic
+x 23
+y 10
+move_block all
+end
+arch blocked
+x 23
+y 10
+end
+arch dirtfloor
+x 23
+y 12
+end
+arch dwall_2_2_3
+x 23
+y 12
+end
+arch dirtfloor
+x 23
+y 13
+end
+arch dwall_2_1_1
+x 23
+y 13
+end
+arch dirtfloor
+x 23
+y 14
+end
+arch dwall_2_1_1
+x 23
+y 14
+end
+arch dirtfloor
+x 23
+y 15
+end
+arch dwall_2_1_1
+x 23
+y 15
+end
+arch dirtfloor
+x 23
+y 16
+end
+arch dwall_2_1_1
+x 23
+y 16
+end
+arch dirtfloor
+x 23
+y 17
+end
+arch dwall_2_1_1
+x 23
+y 17
+end
+arch dirtfloor
+x 23
+y 18
+end
+arch dwall_2_1_1
+x 23
+y 18
+end
+arch dirtfloor
+x 23
+y 19
+end
+arch dwall_2_2_4
+x 23
+y 19
+end
 arch cobblestones2
 x 24
 end
@@ -1705,4 +3541,45 @@ end
 arch cobblestones2
 x 24
 y 9
+end
+arch dungeon_magic
+x 24
+y 10
+move_block all
+end
+arch blocked
+x 24
+y 10
+end
+arch dirtfloor
+x 24
+y 12
+end
+arch dirtfloor
+x 24
+y 13
+end
+arch dirtfloor
+x 24
+y 14
+end
+arch dirtfloor
+x 24
+y 15
+end
+arch dirtfloor
+x 24
+y 16
+end
+arch dirtfloor
+x 24
+y 17
+end
+arch dirtfloor
+x 24
+y 18
+end
+arch dirtfloor
+x 24
+y 19
 end
