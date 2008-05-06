@@ -34,19 +34,19 @@ item floor floor27   885 5 32 32 marker_cursed marker_applied inventory_selector
 item floor floor28   917 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
 item floor floor29   949 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
 item floor floor30   981 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
-item floor floor31  1013 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 21 font_item BLACK
-item floor floor32  1045 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 22 font_item BLACK
-item floor floor33  1077 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 23 font_item BLACK
-item floor floor34  1109 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 24 font_item BLACK
-item floor floor35  1141 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 25 font_item BLACK
-item floor floor36  1173 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 26 font_item BLACK
-item floor floor37  1205 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 27 font_item BLACK
-item floor floor38  1237 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 28 font_item BLACK
-item floor floor39  1269 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 29 font_item BLACK
-item floor floor40  1301 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 30 font_item BLACK
-item floor floor41  1333 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 21 font_item BLACK
-item floor floor42  1365 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 22 font_item BLACK
-item floor floor43  1397 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 23 font_item BLACK
+item floor floor31  1013 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 31 font_item BLACK
+item floor floor32  1045 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 32 font_item BLACK
+item floor floor33  1077 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 33 font_item BLACK
+item floor floor34  1109 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 34 font_item BLACK
+item floor floor35  1141 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 35 font_item BLACK
+item floor floor36  1173 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 36 font_item BLACK
+item floor floor37  1205 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 37 font_item BLACK
+item floor floor38  1237 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 38 font_item BLACK
+item floor floor39  1269 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 39 font_item BLACK
+item floor floor40  1301 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 40 font_item BLACK
+item floor floor41  1333 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 41 font_item BLACK
+item floor floor42  1365 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 42 font_item BLACK
+item floor floor43  1397 5 32 32 marker_cursed marker_applied inventory_selector marker_locked 43 font_item BLACK
 button button_right 1429 5 16 32 scroll_right_up16 scroll_right_down16 true command_ground_right
 
 commandlist_add command_ground_left floor0 SCROLL -1
