@@ -5,6 +5,7 @@ width 20
 height 27
 msg
 Created:  1993-10-18
+Modified: 2008-05-06 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -2106,7 +2107,7 @@ y 6
 end
 arch locked_door2
 name Earth Door
-slaying set_individual_value earth
+slaying ra-gar-earth
 msg
 You need the Earth Key to open this
 door
@@ -2259,7 +2260,7 @@ y 6
 end
 arch locked_door2
 name Air Door
-slaying set_individual_value air
+slaying ra-gar-air
 msg
 You need the Air Key to open this door
 endmsg
@@ -2419,7 +2420,7 @@ y 6
 end
 arch locked_door2
 name Fire Door
-slaying set_individual_value fire
+slaying ra-gar-fire
 msg
 You need the Fire Key to open this doo
 endmsg
@@ -2599,7 +2600,7 @@ y 6
 end
 arch locked_door2
 name Water Door
-slaying set_individual_value water
+slaying ra-gar-water
 msg
 You need the Water Key to open this
 doo
