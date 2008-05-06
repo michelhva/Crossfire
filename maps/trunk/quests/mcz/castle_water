@@ -5,6 +5,7 @@ width 9
 height 16
 msg
 Created:  1993-10-19
+Modified: 2008-05-06 Nicolas Weeger
 endmsg
 end
 arch sea1
@@ -859,7 +860,7 @@ generator 0
 can_cast_spell 1
 arch key2
 name Water Key
-slaying set_individual_value water
+slaying ra-gar-water
 end
 end
 arch glue

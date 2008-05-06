@@ -5,6 +5,7 @@ width 9
 height 16
 msg
 Created:  1993-10-19
+Modified: 2008-05-06 Nicolas Weeger
 endmsg
 end
 arch dirtfloor
@@ -118,7 +119,7 @@ y 1
 carrying 100
 arch key2
 name Earth Key
-slaying set_individual_value earth
+slaying ra-gar-earth
 end
 end
 arch dirtfloor
