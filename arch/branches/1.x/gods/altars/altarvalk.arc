@@ -8,7 +8,8 @@ level 100
 editable 48
 visibility 50
 magicmap grey
-randomitems altar_valkyrie
+arch altar_valkyrie_pray_event
+end
 end
 Object altar_valkyrie_pray_event
 title Python
