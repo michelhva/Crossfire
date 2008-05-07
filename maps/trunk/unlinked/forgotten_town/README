@@ -1,0 +1,17 @@
+Those maps where located in /darcap, and have been moved here
+because they are incomplete. Feel free to continue working on them.
+
+
+To put back the link to Darcap, add that to /world/world_116_102:
+
+arch castle_a_northwest
+name forgotten city
+slaying /darcap/forgotten_town/enter
+hp 3
+sp 1
+x 28
+y 30
+end
+
+
+Nicolas W, 2008-05-06
