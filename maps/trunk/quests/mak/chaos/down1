@@ -1,14 +1,18 @@
 arch map
 name Dungeon
 reset_timeout 7200
-difficulty 13
+difficulty 50
 width 32
 height 29
 enter_x 1
 enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-05-07 Nicolas Weeger
 endmsg
+maplore
+@quest Lorkas
+endmaplore
 end
 arch dungeon_floor
 end
