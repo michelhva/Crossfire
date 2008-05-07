@@ -1,12 +1,24 @@
 arch map
 name Temples
 swap_time 5300
-difficulty 1
+difficulty 30
 width 54
 height 25
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-05-07 Nicolas Weeger
 endmsg
+maplore
+@def Lorkas
+This temple gives access to Lorkas's lair.
+</p>
+<p><font color="red">TODO: add hints to Lorkas</font>
+@end
+
+@quest Lorkas
+Main entrance, accessible from Warriors' Tower.
+@end
+endmaplore
 end
 arch blocked
 end
