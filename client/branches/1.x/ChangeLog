@@ -2,6 +2,12 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Apply patch #1878451: Let crossfire client compile with OSS4's soundcard.h
+Courtesy anonymous.
+ sound-src/cfsndserv.c
+ Nicolas Weeger 2008-05-07
+
+
 Changes for 1.11.0:
 ------------------------------------------------------------------------------
 configure.in: Trunk revision 6524 merge of mwedel's add another eval $ndatadir
