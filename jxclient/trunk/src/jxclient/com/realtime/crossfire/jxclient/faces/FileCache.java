@@ -19,11 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.util.Filenames;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
@@ -34,17 +34,6 @@ import javax.swing.ImageIcon;
  */
 public class FileCache
 {
-    /**
-     * Replaces "unsafe" characters in file names (see {@link
-     * #unsafeFileNameCharacters}).
-     */
-    private static final String REPLACEMENT_CHARACTER = "_";
-
-    /**
-     * Matches all chracters that are considered "unsafe" for file names. These
-     * characters will be replaced with {@link #REPLACEMENT_CHARACTER}.
-     */
-    private static final Pattern unsafeFileNameCharacters = Pattern.compile("[^a-zA-Z0-9_.]");
 
     /**
      * The directory where the images are saved.
@@ -150,7 +139,7 @@ public class FileCache
      */
     private File getImageFileName(final String name, final int checksum)
     {
-        final String quotedName = quoteName(name);
+        final String quotedName = Filenames.quoteName(name);
         final String dirName = quotedName.substring(0, Math.min(2, quotedName.length()));
         final File dir = new File(new File(cacheDir, dirName), quotedName);
         if (!dir.exists() && !dir.mkdirs())
@@ -158,21 +147,5 @@ public class FileCache
             System.err.println("Cannot create directory: "+dir);
         }
         return new File(dir, Integer.toString(checksum));
-    }
-
-    /**
-     * Convert a file name to a "safe" form. The returned file name will not
-     * contain any "unsafe" characters (see {@link #unsafeFileNameCharacters}),
-     * and it will not be empty.
-     *
-     * @param name The file name to convert.
-     *
-     * @return The converted file name.
-     */
-    private static String quoteName(final String name)
-    {
-        final String trimmedName = name.endsWith(".png") ? name.substring(0, name.length()-5) : name;
-        final String replacedName = unsafeFileNameCharacters.matcher(trimmedName).replaceAll(REPLACEMENT_CHARACTER);
-        return replacedName.length() > 0 ? replacedName : REPLACEMENT_CHARACTER;
     }
 }
