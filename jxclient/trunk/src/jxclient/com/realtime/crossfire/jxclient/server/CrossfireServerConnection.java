@@ -2126,18 +2126,6 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     }
 
     /**
-     * Send a "mapredraw" command to the server.
-     */
-    public void sendMapredraw()
-    {
-        if (debugProtocol != null)
-        {
-            debugProtocolWrite("send mapredraw\n");
-        }
-        writePacket(mapredrawPrefix, mapredrawPrefix.length);
-    }
-
-    /**
      * Send a "mark" command to the server.
      *
      * @param tag the item to mark
