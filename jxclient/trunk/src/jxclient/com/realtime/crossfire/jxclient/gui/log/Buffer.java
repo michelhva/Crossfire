@@ -98,7 +98,7 @@ public class Buffer implements Iterable<Line>
         lines.clear();
         for (final BufferListener listener : listeners)
         {
-            listener.linesRemoved(this, removedLines);
+            listener.linesRemoved(removedLines);
         }
     }
 
@@ -116,7 +116,7 @@ public class Buffer implements Iterable<Line>
 
         for (final BufferListener listener : listeners)
         {
-            listener.linesAdded(this, 1);
+            listener.linesAdded(1);
         }
     }
 
@@ -136,7 +136,7 @@ public class Buffer implements Iterable<Line>
 
         for (final BufferListener listener : listeners)
         {
-            listener.linesReplaced(this, 1);
+            listener.linesReplaced(1);
         }
     }
 
@@ -159,7 +159,7 @@ public class Buffer implements Iterable<Line>
         }
         for (final BufferListener listener : listeners)
         {
-            listener.linesRemoved(this, removedLines);
+            listener.linesRemoved(removedLines);
         }
     }
 
