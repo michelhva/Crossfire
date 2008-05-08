@@ -185,8 +185,10 @@ public class CfMapUpdater
      * @param layer The layer to update.
      *
      * @param face The face to set. <code>0</code> clears the square.
+     *
+     * @param faces The instance for looking up faces.
      */
-    public static void processMapFace(final int x, final int y, final int layer, final int face)
+    public static void processMapFace(final int x, final int y, final int layer, final int face, final Faces faces)
     {
         final Face f;
         if (face == 0)
@@ -196,7 +198,7 @@ public class CfMapUpdater
         }
         else
         {
-            f = Faces.getFace(face);
+            f = faces.getFace(face);
         }
 
         map.setFace(x, y, layer, f);
@@ -214,10 +216,12 @@ public class CfMapUpdater
      * @param animation The animation to set.
      *
      * @param type The animation type.
+     *
+     * @param faces The instance for looking up faces.
      */
-    public static void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
+    public static void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
     {
-        visibleAnimations.add(x, y, layer, animation, type);
+        visibleAnimations.add(x, y, layer, animation, type, faces);
     }
 
     /**
@@ -295,15 +299,17 @@ public class CfMapUpdater
      * @param layer The layer to update.
      *
      * @param face The new face to set. <code>-1</code> means "do not change face".
+     *
+     * @param faces The instance for looking up faces.
      */
-    private static void setMultiFace(final int x, final int y, final int layer, final int face)
+    private static void setMultiFace(final int x, final int y, final int layer, final int face, final Faces faces)
     {
         if (face == -1)
         {
             return;
         }
 
-        final Face f = face == 0 ? null : Faces.getFace(face);
+        final Face f = face == 0 ? null : faces.getFace(face);
         map.setMultiFace(x, y, layer, f);
     }
 

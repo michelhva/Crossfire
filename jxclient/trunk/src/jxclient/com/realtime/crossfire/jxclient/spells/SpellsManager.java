@@ -35,6 +35,11 @@ import java.util.List;
 public class SpellsManager
 {
     /**
+     * The {@link Faces} instance.
+     */
+    private final Faces faces;
+
+    /**
      * All known spells.
      */
     private final List<Spell> spells = new ArrayList<Spell>();
@@ -60,9 +65,11 @@ public class SpellsManager
 
     /**
      * Create a new instance.
+     * @param faces the <code>Faces</code> instance
      */
-    public SpellsManager()
+    public SpellsManager(final Faces faces)
     {
+        this.faces = faces;
         initSpells();
     }
 
@@ -100,9 +107,9 @@ public class SpellsManager
 
     public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
     {
-        Faces.askface(face);
+        faces.askface(face);
 
-        final Spell sp = new Spell(Faces.getFace(face), tag, name, message);
+        final Spell sp = new Spell(faces.getFace(face), tag, name, message);
         sp.setLevel(level);
         sp.setCastingTime(castingTime);
         sp.setMana(mana);

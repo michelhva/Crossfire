@@ -106,16 +106,17 @@ public class CfMapUpdaterTest extends TestCase
      */
     public void testFogOfWar1()
     {
-        defineFace(1, "M", png64x64);
-        defineFace(2, "_", png32x32);
+        final Faces faces = new Faces();
+        defineFace(faces, 1, "M", png64x64);
+        defineFace(faces, 2, "_", png32x32);
 
         CfMapUpdater.processNewmap(5, 5);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(0, 0, 0, 2);
-        CfMapUpdater.processMapFace(1, 0, 0, 2);
-        CfMapUpdater.processMapFace(0, 1, 0, 2);
-        CfMapUpdater.processMapFace(1, 1, 0, 2);
-        CfMapUpdater.processMapFace(1, 1, 6, 1);
+        CfMapUpdater.processMapFace(0, 0, 0, 2, faces);
+        CfMapUpdater.processMapFace(1, 0, 0, 2, faces);
+        CfMapUpdater.processMapFace(0, 1, 0, 2, faces);
+        CfMapUpdater.processMapFace(1, 1, 0, 2, faces);
+        CfMapUpdater.processMapFace(1, 1, 6, 1, faces);
         CfMapUpdater.processMapEnd(true);
         assertEquals(""
             +"[H0=_,T6=M][H0=_,T6=M]\n"
@@ -144,72 +145,74 @@ public class CfMapUpdaterTest extends TestCase
      */
     public void testDisplayArtifacts1()
     {
-        defineFace(307, "behemoth.x31", png64x64);
-        defineFace(308, "behemoth.x32", png64x64);
-        defineFace(309, "behemoth.x33", png64x64);
-        defineFace(310, "behemoth.x71", png64x64);
-        defineFace(932, "charwoman.132", png32x32);
-        defineFace(4607, "woodfloor.111", png32x32);
-        defineFace(312, "behemoth.x73", png64x64);
+        final Faces faces = new Faces();
+
+        defineFace(faces, 307, "behemoth.x31", png64x64);
+        defineFace(faces, 308, "behemoth.x32", png64x64);
+        defineFace(faces, 309, "behemoth.x33", png64x64);
+        defineFace(faces, 310, "behemoth.x71", png64x64);
+        defineFace(faces, 932, "charwoman.132", png32x32);
+        defineFace(faces, 4607, "woodfloor.111", png32x32);
+        defineFace(faces, 312, "behemoth.x73", png64x64);
 
         CfMapUpdater.processNewmap(10, 10);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(7, 8, 0, 4607);
-        CfMapUpdater.processMapFace(8, 8, 0, 4607);
-        CfMapUpdater.processMapFace(9, 8, 0, 4607);
-        CfMapUpdater.processMapFace(7, 9, 0, 4607);
-        CfMapUpdater.processMapFace(8, 9, 0, 4607);
-        CfMapUpdater.processMapFace(9, 9, 0, 4607);
-        CfMapUpdater.processMapFace(9, 9, 6, 312);
+        CfMapUpdater.processMapFace(7, 8, 0, 4607, faces);
+        CfMapUpdater.processMapFace(8, 8, 0, 4607, faces);
+        CfMapUpdater.processMapFace(9, 8, 0, 4607, faces);
+        CfMapUpdater.processMapFace(7, 9, 0, 4607, faces);
+        CfMapUpdater.processMapFace(8, 9, 0, 4607, faces);
+        CfMapUpdater.processMapFace(9, 9, 0, 4607, faces);
+        CfMapUpdater.processMapFace(9, 9, 6, 312, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(26);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(9, 9, 6, 307);
+        CfMapUpdater.processMapFace(9, 9, 6, 307, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(27);
         CfMapUpdater.processTick(28);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(9, 9, 6, 308);
+        CfMapUpdater.processMapFace(9, 9, 6, 308, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(29);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(0, 5, 6, 0);
+        CfMapUpdater.processMapFace(0, 5, 6, 0, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(30);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(9, 9, 6, 309);
+        CfMapUpdater.processMapFace(9, 9, 6, 309, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(31);
         CfMapUpdater.processTick(32);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(9, 9, 6, 308);
+        CfMapUpdater.processMapFace(9, 9, 6, 308, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(33);
         CfMapUpdater.processTick(34);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(9, 9, 6, 0);
-        CfMapUpdater.processMapFace(10, 9, 6, 307);
+        CfMapUpdater.processMapFace(9, 9, 6, 0, faces);
+        CfMapUpdater.processMapFace(10, 9, 6, 307, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(35);
         CfMapUpdater.processTick(36);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(0, 6, 6, 932);
-        CfMapUpdater.processMapFace(9, 9, 6, 312);
+        CfMapUpdater.processMapFace(0, 6, 6, 932, faces);
+        CfMapUpdater.processMapFace(9, 9, 6, 312, faces);
         CfMapUpdater.processMapClear(10, 9);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(37);
         CfMapUpdater.processTick(38);
         CfMapUpdater.processMapBegin();
-        CfMapUpdater.processMapFace(8, 9, 6, 310);
-        CfMapUpdater.processMapFace(9, 9, 6, 0);
+        CfMapUpdater.processMapFace(8, 9, 6, 310, faces);
+        CfMapUpdater.processMapFace(9, 9, 6, 0, faces);
         CfMapUpdater.processMapEnd(true);
 
         CfMapUpdater.processTick(39);
@@ -279,9 +282,9 @@ public class CfMapUpdaterTest extends TestCase
         return sb.toString();
     }
 
-    private static void defineFace(final int face, final String name, final byte[] data)
+    private static void defineFace(final Faces faces, final int face, final String name, final byte[] data)
     {
-        Faces.setFace(face, 0, name);
-        Faces.setImage(face, data, 0, data.length);
+        faces.setFace(face, 0, name);
+        faces.setImage(face, data, 0, data.length);
     }
 }

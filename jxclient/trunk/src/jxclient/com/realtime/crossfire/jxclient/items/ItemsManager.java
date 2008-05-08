@@ -38,6 +38,11 @@ import javax.swing.event.EventListenerList;
 public class ItemsManager
 {
     /**
+     * The {@link Faces} instance for looking up faces.
+     */
+    private final Faces faces;
+
+    /**
      * Maps location to list of items.
      */
     private final Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
@@ -74,6 +79,15 @@ public class ItemsManager
      * The current player object this client controls.
      */
     private CfPlayer player = null;
+
+    /**
+     * Creates a new instance.
+     * @param faces the instance for looking up faces
+     */
+    public ItemsManager(final Faces faces)
+    {
+        this.faces = faces;
+    }
 
     /**
      * Reset the manager's state.
@@ -474,7 +488,7 @@ public class ItemsManager
         }
 
         final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && currentFloorManager.getCurrentFloor() == item.getTag() && item.isOpen();
-        item.update(flags, valFlags, valWeight, Faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        item.update(flags, valFlags, valWeight, faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_LOCATION) != 0)
         {
             moveItem(item, valLocation);

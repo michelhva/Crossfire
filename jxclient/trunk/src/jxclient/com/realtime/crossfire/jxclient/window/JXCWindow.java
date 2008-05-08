@@ -122,14 +122,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final boolean debugGui;
 
     /**
+     * The {@link Faces} instance.
+     */
+    private final Faces faces = new Faces();
+    
+    /**
      * The {@link ItemsManager} instance.
      */
-    private final ItemsManager itemsManager = new ItemsManager();
+    private final ItemsManager itemsManager = new ItemsManager(faces);
 
     /**
      * The {@link SpellsManager} instance.
      */
-    private final SpellsManager spellsManager = new SpellsManager();
+    private final SpellsManager spellsManager = new SpellsManager(faces);
 
     /**
      * The {@link Stats} instance.
@@ -420,7 +425,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats, faces);
         commands = new Commands(this, server, stats);
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
@@ -672,7 +677,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 stats.reset();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
-                Faces.reset();
+                faces.reset();
                 commandQueue.clear();
                 itemsManager.reset();
                 spellsManager.reset();
@@ -752,7 +757,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addMouseMotionListener(mouseTracker);
         try
         {
-            Faces.setFacesCallback(server);
+            faces.setFacesCallback(server);
         }
         catch (final IOException ex)
         {

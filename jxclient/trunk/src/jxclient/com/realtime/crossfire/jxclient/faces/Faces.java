@@ -45,39 +45,42 @@ public class Faces
     /**
      * The image cache for original .png files as received from the server.
      */
-    private static final FileCache fileCacheOriginal = new FileCache(Filenames.getOriginalImageCacheDir());
+    private final FileCache fileCacheOriginal = new FileCache(Filenames.getOriginalImageCacheDir());
 
     /**
      * The image cache for x2 scaled .png files.
      */
-    private static final FileCache fileCacheScaled = new FileCache(Filenames.getScaledImageCacheDir());
+    private final FileCache fileCacheScaled = new FileCache(Filenames.getScaledImageCacheDir());
 
     /**
      * The image cache for /8 scaled .png files.
      */
-    private static final FileCache fileCacheMagicMap = new FileCache(Filenames.getMagicMapImageCacheDir());
+    private final FileCache fileCacheMagicMap = new FileCache(Filenames.getMagicMapImageCacheDir());
 
     /**
      * The face cache which holds all known faces.
      */
-    private static final FaceCache faceCache = new FaceCache();
+    private final FaceCache faceCache = new FaceCache();
 
     /**
      * The empty face.
      */
-    private static final ImageIcon originalEmptyImageIcon;
+    private final ImageIcon originalEmptyImageIcon;
 
     /**
      * The scaled version of an empty face.
      */
-    private static final ImageIcon scaledEmptyImageIcon;
+    private final ImageIcon scaledEmptyImageIcon;
 
     /**
      * The magic map version of an empty face.
      */
-    private static final ImageIcon magicMapEmptyImageIcon;
+    private final ImageIcon magicMapEmptyImageIcon;
 
-    static
+    /**
+     * Creates a new instance.
+     */
+    public Faces()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -91,7 +94,7 @@ public class Faces
     /**
      * The askface manager to use.
      */
-    private static AskfaceManager askfaceManager;
+    private AskfaceManager askfaceManager;
 
     /**
      * Set the callback functions to use.
@@ -100,7 +103,7 @@ public class Faces
      *
      * @throws IOException if a resource cannot be found
      */
-    public static void setFacesCallback(final FacesCallback facesCallback) throws IOException
+    public void setFacesCallback(final FacesCallback facesCallback) throws IOException
     {
         askfaceManager = new AskfaceManager(facesCallback);
 
@@ -119,7 +122,7 @@ public class Faces
         Face.init(originalUnknownImageIcon, scaledUnknownImageIcon, magicMapUnknownImageIcon, askfaceManager, fileCacheOriginal, fileCacheScaled, fileCacheMagicMap);
     }
 
-    public static Face getFace(final int index)
+    public Face getFace(final int index)
     {
         final Face face = faceCache.getFace(index);
         if (face != null)
@@ -133,7 +136,7 @@ public class Faces
         return newFace;
     }
 
-    public static int setImage(final int pixnum, final byte[] packet, final int start, final int pixlen)
+    public int setImage(final int pixnum, final byte[] packet, final int start, final int pixlen)
     {
         final byte[] data = new byte[pixlen];
         System.arraycopy(packet, start, data, 0, pixlen);
@@ -173,7 +176,7 @@ public class Faces
      *
      * @return the scaled image icon
      */
-    private static ImageIcon getScaledImageIcon(final ImageIcon img)
+    private ImageIcon getScaledImageIcon(final ImageIcon img)
     {
         final ImageScale2x scaler = new ImageScale2x(img);
         return scaler.getScaledImage();
@@ -186,13 +189,13 @@ public class Faces
      *
      * @return the scaled image icon
      */
-    private static ImageIcon getMagicMapImageIcon(final ImageIcon img)
+    private ImageIcon getMagicMapImageIcon(final ImageIcon img)
     {
         final ImageScale8d scaler = new ImageScale8d(img);
         return scaler.getScaledImage();
     }
 
-    public static void setFace(final int pixnum, final int checksum, final String pixname)
+    public void setFace(final int pixnum, final int checksum, final String pixname)
     {
         final ImageIcon originalImageIcon = fileCacheOriginal.load(pixname, checksum);
         final ImageIcon scaledImageIcon = fileCacheScaled.load(pixname, checksum);
@@ -204,7 +207,7 @@ public class Faces
      * Reset the askface queue. Must be called when a server connection is
      * established.
      */
-    public static void reset()
+    public void reset()
     {
         askfaceManager.reset();
     }
@@ -214,7 +217,7 @@ public class Faces
      *
      * @param face the face to query
      */
-    public static void askface(final int face)
+    public void askface(final int face)
     {
         askfaceManager.queryFace(face);
     }

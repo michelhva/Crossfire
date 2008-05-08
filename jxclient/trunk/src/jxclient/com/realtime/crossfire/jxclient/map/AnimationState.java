@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
+import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 
 /**
@@ -38,6 +39,11 @@ public class AnimationState
      * The animation type.
      */
     private final int type;
+
+    /**
+     * The {@link Faces} instance for looking up faces.
+     */
+    private final Faces faces;
 
     /**
      * The animation speed.
@@ -60,11 +66,14 @@ public class AnimationState
      * @param animation The animation to display.
      *
      * @param type The animation type.
+     *
+     * @param faces The instance for looking up faces.
      */
-    public AnimationState(final Animation animation, final int type)
+    public AnimationState(final Animation animation, final int type, final Faces faces)
     {
         this.animation = animation;
         this.type = type;
+        this.faces = faces;
     }
 
     /**
@@ -133,6 +142,6 @@ public class AnimationState
         }
 
         final int face = animation.getFace(faceIndex);
-        CfMapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face);
+        CfMapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face, faces);
     }
 }
