@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * Abstract base class of commands.
@@ -31,11 +30,6 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public abstract class AbstractCommand implements Command
 {
     /**
-     * The window to execute in.
-     */
-    private final JXCWindow window;
-
-    /**
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
@@ -43,13 +37,10 @@ public abstract class AbstractCommand implements Command
     /**
      * Create a new instance.
      *
-     * @param window The window to execute in.
-     *
      * @param crossfireServerConnection the connection instance
      */
-    protected AbstractCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected AbstractCommand(final CrossfireServerConnection crossfireServerConnection)
     {
-        this.window = window;
         this.crossfireServerConnection = crossfireServerConnection;
     }
 
@@ -83,15 +74,5 @@ public abstract class AbstractCommand implements Command
     protected void drawInfo(final String message, final int color)
     {
         crossfireServerConnection.drawInfo(message, color);
-    }
-
-    /**
-     * Return the associated window.
-     *
-     * @return The window.
-     */
-    protected JXCWindow getWindow()
-    {
-        return window;
     }
 }

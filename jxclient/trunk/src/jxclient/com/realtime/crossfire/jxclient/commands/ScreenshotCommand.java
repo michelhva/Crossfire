@@ -39,13 +39,19 @@ public class ScreenshotCommand extends AbstractCommand
     private static int screenshotId = 0;
 
     /**
+     * The window to execute in.
+     */
+    private JXCWindow window;
+
+    /**
      * Creates a new instance.
      * @param window The window to execute in.
      * @param crossfireServerConnection the connection instance
      */
     protected ScreenshotCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -76,13 +82,13 @@ public class ScreenshotCommand extends AbstractCommand
             file = new File(args);
         }
 
-        final BufferedImage image = new BufferedImage(getWindow().getWindowWidth(), getWindow().getWindowHeight(), BufferedImage.TYPE_INT_RGB);
+        final BufferedImage image = new BufferedImage(window.getWindowWidth(), window.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
         final Graphics2D grfx = image.createGraphics();
         try
         {
             grfx.setColor(Color.black);
-            grfx.fillRect(0, 0, getWindow().getWindowWidth(), getWindow().getWindowHeight());
-            getWindow().getWindowRenderer().redraw(grfx);
+            grfx.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
+            window.getWindowRenderer().redraw(grfx);
         }
         finally
         {

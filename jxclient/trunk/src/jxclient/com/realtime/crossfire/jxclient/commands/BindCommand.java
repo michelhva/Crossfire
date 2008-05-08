@@ -31,6 +31,11 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class BindCommand extends AbstractCommand
 {
     /**
+     * The windows to execute in.
+     */
+    private final JXCWindow window;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
@@ -39,7 +44,8 @@ public class BindCommand extends AbstractCommand
      */
     protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -75,7 +81,7 @@ public class BindCommand extends AbstractCommand
             return;
         }
 
-        if (!getWindow().createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commands, getWindow())))
+        if (!window.createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commands, window)))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;

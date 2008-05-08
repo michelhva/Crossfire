@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -46,15 +47,17 @@ public class Commands
      * @param crossfireServerConnection the connection instance
      *
      * @param stats the instance to watch
+     *
+     * @param optionManager the option manager instance
      */
-    public Commands(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
+    public Commands(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
     {
         commands.put("bind", new BindCommand(window, crossfireServerConnection));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, crossfireServerConnection));
         commands.put("script", new ScriptCommand(window, crossfireServerConnection, stats));
         commands.put("exec", new ExecCommand(window, crossfireServerConnection));
-        commands.put("set", new SetCommand(window, crossfireServerConnection));
+        commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
     }
 
     /**

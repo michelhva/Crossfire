@@ -33,6 +33,11 @@ import java.io.IOException;
 public class ScriptCommand extends AbstractCommand
 {
     /**
+     * The window to execute in.
+     */
+    private final JXCWindow window;
+
+    /**
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
@@ -53,7 +58,8 @@ public class ScriptCommand extends AbstractCommand
      */
     protected ScriptCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.window = window;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
     }
@@ -75,7 +81,7 @@ public class ScriptCommand extends AbstractCommand
 
         try
         {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow(), crossfireServerConnection, stats);
+            final ScriptProcess scriptProcess = new ScriptProcess(args, window, crossfireServerConnection, stats);
             // XXX: store scriptProcess
         }
         catch (final IOException ex)

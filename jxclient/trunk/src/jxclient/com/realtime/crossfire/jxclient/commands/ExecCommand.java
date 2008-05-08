@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -33,6 +32,11 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class ExecCommand extends AbstractCommand
 {
     /**
+     * The window to execute in.
+     */
+    private JXCWindow window;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
@@ -41,7 +45,8 @@ public class ExecCommand extends AbstractCommand
      */
     protected ExecCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -59,11 +64,10 @@ public class ExecCommand extends AbstractCommand
             return;
         }
 
-        final JXCSkin skin = getWindow().getSkin();
         final GUICommandList commandList;
         try
         {
-            commandList = skin.getCommandList(args);
+            commandList = window.getSkin().getCommandList(args);
         }
         catch (final JXCSkinException ex)
         {
