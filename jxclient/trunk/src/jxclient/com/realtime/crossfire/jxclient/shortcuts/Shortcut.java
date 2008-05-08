@@ -65,7 +65,7 @@ public abstract class Shortcut
     {
         for (final ShortcutListener listener : listeners.getListeners(ShortcutListener.class))
         {
-            listener.shortcutModified(this);
+            listener.shortcutModified();
         }
     }
 }

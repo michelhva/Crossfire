@@ -31,8 +31,6 @@ public interface ShortcutListener extends EventListener
 {
     /**
      * Will be called when any attribute has been changed.
-     *
-     * @param shortcut The shortcut thas has been modified.
      */
-    void shortcutModified(Shortcut shortcut);
+    void shortcutModified();
 }
