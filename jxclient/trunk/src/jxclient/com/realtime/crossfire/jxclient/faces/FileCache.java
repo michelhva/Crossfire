@@ -20,11 +20,10 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.util.Filenames;
-import java.awt.image.BufferedImage;
+import com.realtime.crossfire.jxclient.util.Images;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
 /**
@@ -104,28 +103,7 @@ public class FileCache
      */
     public void save(final String name, final int checksum, final ImageIcon imageIcon)
     {
-        saveImageIcon(getImageFileName(name, checksum), imageIcon);
-    }
-
-    /**
-     * Save an {@link ImageIcon} to a file.
-     *
-     * @param outputFile the file to save to
-     *
-     * @param imageIcon the image to save
-     */
-    public static void saveImageIcon(final File outputFile, final ImageIcon imageIcon)
-    {
-        final BufferedImage bufferedImage = new BufferedImage(imageIcon.getIconWidth(), imageIcon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
-        imageIcon.paintIcon(null, bufferedImage.getGraphics(), 0, 0);
-        try
-        {
-            ImageIO.write(bufferedImage, "png", outputFile);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write cache file "+outputFile+": "+ex.getMessage());
-        }
+        Images.saveImageIcon(getImageFileName(name, checksum), imageIcon);
     }
 
     /**
