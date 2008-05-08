@@ -147,24 +147,24 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow jxcw)
+    @Override public void button1Clicked(final JXCWindow jxcWindow)
     {
         if (spell == null)
         {
             return;
         }
 
-        jxcw.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
-        jxcw.getCurrentSpellManager().setCurrentSpell(spell);
+        jxcWindow.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
+        jxcWindow.getCurrentSpellManager().setCurrentSpell(spell);
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow jxcw)
+    @Override public void button2Clicked(final JXCWindow jxcWindow)
     {
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow jxcw)
+    @Override public void button3Clicked(final JXCWindow jxcWindow)
     {
     }
 

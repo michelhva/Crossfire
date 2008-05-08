@@ -137,7 +137,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow jxcw)
+    @Override public void button1Clicked(final JXCWindow jxcWindow)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -149,7 +149,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow jxcw)
+    @Override public void button3Clicked(final JXCWindow jxcWindow)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -158,7 +158,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         if (itemsManager.getPlayer() != null)
         {
-            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), jxcWindow.getCommandQueue().getRepeatCount());
         }
     }
 

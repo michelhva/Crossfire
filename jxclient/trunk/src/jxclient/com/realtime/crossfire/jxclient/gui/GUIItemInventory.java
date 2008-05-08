@@ -111,7 +111,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow jxcw)
+    @Override public void button1Clicked(final JXCWindow jxcWindow)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -119,7 +119,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
+        if (jxcWindow.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
         {
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
@@ -130,23 +130,23 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow jxcw)
+    @Override public void button2Clicked(final JXCWindow jxcWindow)
     {
         final CfItem item = getItem();
         if (item != null)
         {
-            if (jxcw.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
+            if (jxcWindow.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
             {
                 crossfireServerConnection.sendMark(item.getTag());
                 return;
             }
         }
 
-        super.button2Clicked(jxcw);
+        super.button2Clicked(jxcWindow);
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow jxcw)
+    @Override public void button3Clicked(final JXCWindow jxcWindow)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -160,7 +160,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcWindow.getCommandQueue().getRepeatCount());
     }
 
     /**

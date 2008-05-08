@@ -84,11 +84,11 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         }
     }
 
-    public abstract void button1Clicked(final JXCWindow jxcw);
+    public abstract void button1Clicked(final JXCWindow jxcWindow);
 
-    public abstract void button2Clicked(final JXCWindow jxcw);
+    public abstract void button2Clicked(final JXCWindow jxcWindow);
 
-    public abstract void button3Clicked(final JXCWindow jxcw);
+    public abstract void button3Clicked(final JXCWindow jxcWindow);
 
     /** {@inheritDoc} */
     @Override public void activeChanged()
@@ -104,9 +104,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         g.clearRect(0, 0, w, h);
     }
 
-    @Override public void setVisible(final boolean v)
+    @Override public void setVisible(final boolean visible)
     {
-        super.setVisible(v);
+        super.setVisible(visible);
         setChanged();
     }
 }

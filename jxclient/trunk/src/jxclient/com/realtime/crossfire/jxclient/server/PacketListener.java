@@ -30,7 +30,7 @@ public interface PacketListener
      * Process a received packet. This passed buffer must not be modified
      * except for the packet range.
      *
-     * @param buf The buffer holding the packet.
+     * @param packet The buffer holding the packet.
      *
      * @param start The start index of the packet.
      *
@@ -38,5 +38,5 @@ public interface PacketListener
      *
      * @throws UnknownCommandException If the packet cannot be parsed.
      */
-    void processPacket(byte[] buf, int start, int end) throws UnknownCommandException;
+    void processPacket(byte[] packet, int start, int end) throws UnknownCommandException;
 }
