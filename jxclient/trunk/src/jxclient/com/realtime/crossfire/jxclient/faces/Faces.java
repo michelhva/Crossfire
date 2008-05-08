@@ -63,21 +63,6 @@ public class Faces
     private final FaceCache faceCache = new FaceCache();
 
     /**
-     * The empty face.
-     */
-    private final ImageIcon originalEmptyImageIcon;
-
-    /**
-     * The scaled version of an empty face.
-     */
-    private final ImageIcon scaledEmptyImageIcon;
-
-    /**
-     * The magic map version of an empty face.
-     */
-    private final ImageIcon magicMapEmptyImageIcon;
-
-    /**
      * Creates a new instance.
      */
     public Faces()
@@ -85,9 +70,9 @@ public class Faces
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
-        scaledEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
-        magicMapEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE/8, SQUARE_SIZE/8, Transparency.OPAQUE));
+        final ImageIcon originalEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE, SQUARE_SIZE, Transparency.OPAQUE));
+        final ImageIcon scaledEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(2*SQUARE_SIZE, 2*SQUARE_SIZE, Transparency.OPAQUE));
+        final ImageIcon magicMapEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE/8, SQUARE_SIZE/8, Transparency.OPAQUE));
         faceCache.addFace(new Face(0, "empty", 0, originalEmptyImageIcon, scaledEmptyImageIcon, magicMapEmptyImageIcon));
     }
 
