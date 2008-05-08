@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
+import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.HashMap;
@@ -89,15 +90,17 @@ public class CfMapAnimations
      * @param animation The animation to display.
      *
      * @param type The animation type.
+     *
+     * @param faces The instance for looking up faces.
      */
-    public void add(final int x, final int y, final int layer, final Animation animation, final int type)
+    public void add(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
     {
         assert 0 <= x;
         assert 0 <= y;
         assert 0 <= type && type < 4;
 
         final Location location = new Location(x, y, layer);
-        final AnimationState animationState = new AnimationState(animation, type);
+        final AnimationState animationState = new AnimationState(animation, type, faces);
         animations.put(location, animationState);
         animationState.draw(location, -1);
     }
