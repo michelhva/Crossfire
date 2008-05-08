@@ -209,7 +209,7 @@ public final class KeyBindings
                             {
                                 parseKeyBinding(line, jxcWindow, false);
                             }
-                            catch (final InvalidKeyBinding ex)
+                            catch (final InvalidKeyBindingException ex)
                             {
                                 System.err.println("ignoring invalid key binding ("+ex.getMessage()+"): "+line);
                             }
@@ -379,16 +379,16 @@ public final class KeyBindings
      * @param isDefault Whether the key binding is a "default" binding which
      * should not be saved.
      *
-     * @throws InvalidKeyBinding If the key binding is invalid.
+     * @throws InvalidKeyBindingException If the key binding is invalid.
      */
-    public void parseKeyBinding(final String line, final JXCWindow jxcWindow, final boolean isDefault) throws InvalidKeyBinding
+    public void parseKeyBinding(final String line, final JXCWindow jxcWindow, final boolean isDefault) throws InvalidKeyBindingException
     {
         if (line.startsWith("char "))
         {
             final String[] tmp = line.substring(5).split(" +", 2);
             if (tmp.length != 2)
             {
-                throw new InvalidKeyBinding("syntax error");
+                throw new InvalidKeyBindingException("syntax error");
             }
 
             try
@@ -399,7 +399,7 @@ public final class KeyBindings
             }
             catch (final NumberFormatException ex)
             {
-                throw new InvalidKeyBinding("syntax error");
+                throw new InvalidKeyBindingException("syntax error");
             }
         }
         else if (line.startsWith("code "))
@@ -407,7 +407,7 @@ public final class KeyBindings
             final String[] tmp = line.substring(5).split(" +", 3);
             if (tmp.length != 3)
             {
-                throw new InvalidKeyBinding("syntax error");
+                throw new InvalidKeyBindingException("syntax error");
             }
 
             if (keyCodeMap == null)
@@ -420,9 +420,9 @@ public final class KeyBindings
             {
                 keyCode = keyCodeMap.getKeyCode(tmp[0]);
             }
-            catch (final NoSuchKeyCode ex)
+            catch (final NoSuchKeyCodeException ex)
             {
-                throw new InvalidKeyBinding("invalid key code: "+tmp[0]);
+                throw new InvalidKeyBindingException("invalid key code: "+tmp[0]);
             }
 
             final int modifiers;
@@ -432,7 +432,7 @@ public final class KeyBindings
             }
             catch (final NumberFormatException ex)
             {
-                throw new InvalidKeyBinding("invalid modifier: "+tmp[1]);
+                throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
             final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[2], jxcWindow);
@@ -440,7 +440,7 @@ public final class KeyBindings
         }
         else
         {
-            throw new InvalidKeyBinding("syntax error");
+            throw new InvalidKeyBindingException("syntax error");
         }
     }
 

@@ -90,9 +90,9 @@ public class KeyCodeMap
      *
      * @return The key code.
      *
-     * @throws NoSuchKeyCode If the key name is invalid.
+     * @throws NoSuchKeyCodeException If the key name is invalid.
      */
-    public int getKeyCode(final String keyName) throws NoSuchKeyCode
+    public int getKeyCode(final String keyName) throws NoSuchKeyCodeException
     {
         if (keyCodes.containsKey(keyName))
         {
@@ -105,7 +105,7 @@ public class KeyCodeMap
         }
         catch (final NumberFormatException ex)
         {
-            throw new NoSuchKeyCode();
+            throw new NoSuchKeyCodeException();
         }
     }
 

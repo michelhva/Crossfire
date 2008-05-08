@@ -20,22 +20,12 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 /**
- * Indicates that a key binding is invalid.
+ * Indicates that a key code does not exist.
  *
  * @author Andreas Kirschbaum
  */
-public class InvalidKeyBinding extends Exception
+public class NoSuchKeyCodeException extends Exception
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
-
-    /**
-     * Create a new instance.
-     *
-     * @param reason The error reason.
-     */
-    public InvalidKeyBinding(final String reason)
-    {
-        super(reason);
-    }
 }

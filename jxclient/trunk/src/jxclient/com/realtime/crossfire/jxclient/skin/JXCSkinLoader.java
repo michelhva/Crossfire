@@ -80,7 +80,7 @@ import com.realtime.crossfire.jxclient.gui.gauge.Orientation;
 import com.realtime.crossfire.jxclient.gui.gauge.OrientationParser;
 import com.realtime.crossfire.jxclient.gui.gauge.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.StatGaugeUpdater;
-import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBinding;
+import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -1181,7 +1181,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 keyBindings.parseKeyBinding(line.substring(4).trim(), window, true);
                             }
-                            catch (final InvalidKeyBinding ex)
+                            catch (final InvalidKeyBindingException ex)
                             {
                                 throw new IOException("invalid key binding: "+ex.getMessage());
                             }
