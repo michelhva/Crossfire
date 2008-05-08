@@ -66,21 +66,21 @@ public class RenderStateManager
     private final BufferListener bufferListener = new BufferListener()
     {
         /** {@inheritDoc} */
-        public void linesAdded(final Buffer buffer, final int lines)
+        public void linesAdded(final int lines)
         {
             renderState.linesAdded(buffer, lines);
             fireChanges();
         }
 
         /** {@inheritDoc} */
-        public void linesReplaced(final Buffer buffer, final int lines)
+        public void linesReplaced(final int lines)
         {
             renderState.linesReplaced(buffer, lines);
             fireChanges();
         }
 
         /** {@inheritDoc} */
-        public void linesRemoved(final Buffer buffer, final List<Line> lines)
+        public void linesRemoved(final List<Line> lines)
         {
             renderState.linesRemoved(buffer, lines);
             fireChanges();
