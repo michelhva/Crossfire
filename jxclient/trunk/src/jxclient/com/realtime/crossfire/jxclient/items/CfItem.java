@@ -303,7 +303,7 @@ public class CfItem
 
         for (final CfItemModifiedListener listener : listeners.getListeners(CfItemModifiedListener.class))
         {
-            listener.itemModified(this);
+            listener.itemModified();
         }
     }
 

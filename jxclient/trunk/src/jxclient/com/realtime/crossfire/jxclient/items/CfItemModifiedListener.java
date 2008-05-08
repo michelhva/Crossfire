@@ -31,8 +31,6 @@ public interface CfItemModifiedListener extends EventListener
 {
     /**
      * Will be called when any attribute has been changed.
-     *
-     * @param item the item that was modified
      */
-    void itemModified(CfItem item);
+    void itemModified();
 }

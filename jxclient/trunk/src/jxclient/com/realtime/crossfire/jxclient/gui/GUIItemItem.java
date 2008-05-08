@@ -52,9 +52,8 @@ public abstract class GUIItemItem extends GUIItem
     private final CfItemModifiedListener itemModifiedListener = new CfItemModifiedListener()
     {
         /** {@inheritDoc} */
-        public void itemModified(final CfItem item)
+        public void itemModified()
         {
-            assert GUIItemItem.this.item == item;
             setChanged();
         }
     };
