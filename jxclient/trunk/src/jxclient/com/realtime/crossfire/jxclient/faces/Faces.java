@@ -63,6 +63,11 @@ public class Faces
     private final FaceCache faceCache = new FaceCache();
 
     /**
+     * The askface manager to use.
+     */
+    private AskfaceManager askfaceManager;
+
+    /**
      * Creates a new instance.
      */
     public Faces()
@@ -75,11 +80,6 @@ public class Faces
         final ImageIcon magicMapEmptyImageIcon = new ImageIcon(gconf.createCompatibleImage(SQUARE_SIZE/8, SQUARE_SIZE/8, Transparency.OPAQUE));
         faceCache.addFace(new Face(0, "empty", 0, originalEmptyImageIcon, scaledEmptyImageIcon, magicMapEmptyImageIcon));
     }
-
-    /**
-     * The askface manager to use.
-     */
-    private AskfaceManager askfaceManager;
 
     /**
      * Set the callback functions to use.
