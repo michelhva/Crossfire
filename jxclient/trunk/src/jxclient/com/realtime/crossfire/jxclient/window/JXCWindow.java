@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.window;
 import com.realtime.crossfire.jxclient.CommandQueue;
 import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Commands;
@@ -38,6 +37,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.jxclient;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
@@ -64,8 +64,10 @@ import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Graphics;
 import java.awt.event.InputEvent;
@@ -120,9 +122,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final boolean debugGui;
 
     /**
-     * The {@link ItemsList} instance.
+     * The {@link ItemsManager} instance.
      */
-    private final ItemsList itemsList = new ItemsList();
+    private final ItemsManager itemsManager = new ItemsManager();
+
+    /**
+     * The {@link SpellsManager} instance.
+     */
+    private final SpellsManager spellsManager = new SpellsManager();
+
+    /**
+     * The {@link Stats} instance.
+     */
+    private final Stats stats = new Stats();
 
     /**
      * The global experience table.
@@ -145,7 +157,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The shortcuts for this window.
      */
-    private final Shortcuts shortcuts = new Shortcuts(this, itemsList.getSpellsManager());
+    private final Shortcuts shortcuts = new Shortcuts(this, spellsManager);
 
     /**
      * The settings instance to use.
@@ -408,12 +420,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsList);
-        commands = new Commands(this, server, itemsList.getStats());
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats);
+        commands = new Commands(this, server, stats);
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
-        poisonWatcher = new PoisonWatcher(itemsList.getStats(), server);
-        activeSkillWatcher = new ActiveSkillWatcher(itemsList.getStats(), server);
+        poisonWatcher = new PoisonWatcher(stats, server);
+        activeSkillWatcher = new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         try
@@ -637,11 +649,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             {
                 server.disconnect();
                 setHost(null);
-                itemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
+                itemsManager.removeCrossfirePlayerListener(crossfirePlayerListener);
                 server.removeCrossfireQueryListener(this);
                 server.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
-                itemsList.getItemsManager().reset();
+                itemsManager.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -656,14 +668,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 server.addCrossfireDrawextinfoListener(this);
                 server.addCrossfireQueryListener(this);
                 setTitle(TITLE_PREFIX+" - "+hostname);
-                itemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
-                itemsList.getStats().reset();
+                itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
+                stats.reset();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
                 Faces.reset();
                 commandQueue.clear();
-                itemsList.getItemsManager().reset();
-                itemsList.getSpellsManager().reset();
+                itemsManager.reset();
+                spellsManager.reset();
                 animations.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
@@ -733,7 +745,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         new MusicWatcher(server);
         new SoundWatcher(server);
-        new StatsWatcher(itemsList.getStats(), jxcWindowRenderer, itemsList.getItemsManager());
+        new StatsWatcher(stats, jxcWindowRenderer, itemsManager);
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
@@ -1469,12 +1481,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             final File dir = new File(skinName);
             if (dir.exists() && dir.isDirectory())
             {
-                skin = new JXCSkinDirLoader(itemsList.getItemsManager(), itemsList.getSpellsManager(), itemsList.getStats(), dir);
+                skin = new JXCSkinDirLoader(itemsManager, spellsManager, stats, dir);
             }
             else
             {
                 // fallback: built-in resource
-                skin = new JXCSkinClassLoader(itemsList.getItemsManager(), itemsList.getSpellsManager(), itemsList.getStats(), "com/realtime/crossfire/jxclient/skins/"+skinName);
+                skin = new JXCSkinClassLoader(itemsManager, spellsManager, stats, "com/realtime/crossfire/jxclient/skins/"+skinName);
             }
             skin.load(server, this, resolution);
         }
