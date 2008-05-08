@@ -1010,19 +1010,19 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     skill.addSkillListener(new SkillListener()
                                         {
                                             /** {@inheritDoc} */
-                                            public void addSkill(final Skill skill)
+                                            public void gainedSkill(final Skill skill)
                                             {
                                                 commandList.execute();
                                             }
 
                                             /** {@inheritDoc} */
-                                            public void delSkill(final Skill skill)
+                                            public void lostSkill(final Skill skill)
                                             {
                                                 // ignore
                                             }
 
                                             /** {@inheritDoc} */
-                                            public void updSkill(final Skill skill)
+                                            public void changedSkill(final Skill skill)
                                             {
                                                 // ignore
                                             }
@@ -1033,19 +1033,19 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     skill.addSkillListener(new SkillListener()
                                         {
                                             /** {@inheritDoc} */
-                                            public void addSkill(final Skill skill)
+                                            public void gainedSkill(final Skill skill)
                                             {
                                                 // ignore
                                             }
 
                                             /** {@inheritDoc} */
-                                            public void delSkill(final Skill skill)
+                                            public void lostSkill(final Skill skill)
                                             {
                                                 commandList.execute();
                                             }
 
                                             /** {@inheritDoc} */
-                                            public void updSkill(final Skill skill)
+                                            public void changedSkill(final Skill skill)
                                             {
                                                 // ignore
                                             }

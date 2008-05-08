@@ -36,19 +36,19 @@ public class SkillGaugeUpdater extends GaugeUpdater
     private final SkillListener skillListener = new SkillListener()
     {
         /** {@inheritDoc} */
-        public void addSkill(final Skill skill)
+        public void gainedSkill(final Skill skill)
         {
-            updSkill(skill);
+            changedSkill(skill);
         }
 
         /** {@inheritDoc} */
-        public void delSkill(final Skill skill)
+        public void lostSkill(final Skill skill)
         {
             setValues(0, 0, 0, "", "");
         }
 
         /** {@inheritDoc} */
-        public void updSkill(final Skill skill)
+        public void changedSkill(final Skill skill)
         {
             final int percents = getPercentsToNextLevel(skill.getLevel(), skill.getExperience());
             setValues(percents, 0, 99, Integer.toString(skill.getLevel()), percents+"% "+skill.getExperience()+" (lvl "+skill.getLevel()+")");
