@@ -28,22 +28,16 @@ public interface SkillListener
 {
     /**
      * Notifies the listener that the skill has been gained.
-     *
-     * @param skill The new skill.
      */
-    void gainedSkill(Skill skill);
+    void gainedSkill();
 
     /**
      * Notifies the listener that the skill has been lost.
-     *
-     * @param skill The lost skill.
      */
-    void lostSkill(Skill skill);
+    void lostSkill();
 
     /**
      * Notifies the listener that the skill has changed.
-     *
-     * @param skill The changed skill.
      */
-    void changedSkill(Skill skill);
+    void changedSkill();
 }
