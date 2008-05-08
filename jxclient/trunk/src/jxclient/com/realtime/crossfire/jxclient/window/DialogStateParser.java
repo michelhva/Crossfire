@@ -247,7 +247,7 @@ public class DialogStateParser
                         for (final Gui dialog : openDialogs)
                         {
                             saveDialog(dialog, "open", bw);
-                            assert !isChangedDialog(dialog);
+                            assert !dialog.isChangedFromDefault();
                         }
 
                         for (final Gui dialog : skin)
@@ -257,7 +257,7 @@ public class DialogStateParser
                                 saveDialog(dialog, "close", bw);
                             }
 
-                            assert !isChangedDialog(dialog);
+                            assert !dialog.isChangedFromDefault();
                         }
                     }
                     finally
@@ -341,39 +341,12 @@ public class DialogStateParser
     {
         for (final Gui dialog : skin)
         {
-            if (isChangedDialog(dialog))
+            if (dialog.isChangedFromDefault())
             {
                 return true;
             }
         }
 
         return false;
-    }
-
-    /**
-     * Return whether one dialog has changed from its default state.
-     *
-     * @param dialog The dialog to check.
-     *
-     * @return Whether the state has changed.
-     */
-    private static boolean isChangedDialog(final Gui dialog)
-    {
-        if (dialog.getName() == null)
-        {
-            return false;
-        }
-
-        if (dialog.getWidth() <= 0 || dialog.getHeight() <= 0)
-        {
-            return false;
-        }
-
-        if (!dialog.isStateChanged())
-        {
-            return false;
-        }
-
-        return true;
     }
 }
