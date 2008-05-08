@@ -30,6 +30,11 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class UnbindCommand extends AbstractCommand
 {
     /**
+     * The window to execute in.
+     */
+    private JXCWindow window;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
@@ -38,7 +43,8 @@ public class UnbindCommand extends AbstractCommand
      */
     protected UnbindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -74,7 +80,7 @@ public class UnbindCommand extends AbstractCommand
             return;
         }
 
-        if (!getWindow().removeKeyBinding(perCharacterBinding))
+        if (!window.removeKeyBinding(perCharacterBinding))
         {
             drawInfoError("Cannot use unbind -c since no character is logged in.");
             return;

@@ -22,8 +22,8 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * Implements the command "set". It allows settings options.
@@ -33,15 +33,21 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class SetCommand extends AbstractCommand
 {
     /**
+     * The option manager instance.
+     */
+    private final OptionManager optionManager;
+
+    /**
      * Create a new instance.
      *
-     * @param window The window to execute in.
-     *
      * @param crossfireServerConnection the connection instance
+     *
+     * @param optionManager the option manager to use
      */
-    protected SetCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected SetCommand(final CrossfireServerConnection crossfireServerConnection, final OptionManager optionManager)
     {
-        super(window, crossfireServerConnection);
+        super(crossfireServerConnection);
+        this.optionManager = optionManager;
     }
 
     /** {@inheritDoc} */
@@ -65,7 +71,7 @@ public class SetCommand extends AbstractCommand
         final CheckBoxOption option;
         try
         {
-            option = getWindow().getOptionManager().getCheckBoxOption(optionName);
+            option = optionManager.getCheckBoxOption(optionName);
         }
         catch (final OptionException ex)
         {

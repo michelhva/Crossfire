@@ -426,13 +426,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.debugGui = debugGui;
         this.settings = settings;
         server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats, faces);
-        commands = new Commands(this, server, stats);
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(stats, server);
         activeSkillWatcher = new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
+        commands = new Commands(this, server, stats, optionManager);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
