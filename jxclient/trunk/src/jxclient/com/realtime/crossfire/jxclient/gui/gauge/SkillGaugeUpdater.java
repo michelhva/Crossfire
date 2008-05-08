@@ -31,24 +31,29 @@ import com.realtime.crossfire.jxclient.skills.SkillListener;
 public class SkillGaugeUpdater extends GaugeUpdater
 {
     /**
+     * The monitored skill.
+      */
+    private final Skill skill;
+
+    /**
      * The {@link SkillListener} registered to be notified about skill changes.
      */
     private final SkillListener skillListener = new SkillListener()
     {
         /** {@inheritDoc} */
-        public void gainedSkill(final Skill skill)
+        public void gainedSkill()
         {
-            changedSkill(skill);
+            changedSkill();
         }
 
         /** {@inheritDoc} */
-        public void lostSkill(final Skill skill)
+        public void lostSkill()
         {
             setValues(0, 0, 0, "", "");
         }
 
         /** {@inheritDoc} */
-        public void changedSkill(final Skill skill)
+        public void changedSkill()
         {
             final int percents = getPercentsToNextLevel(skill.getLevel(), skill.getExperience());
             setValues(percents, 0, 99, Integer.toString(skill.getLevel()), percents+"% "+skill.getExperience()+" (lvl "+skill.getLevel()+")");
@@ -65,6 +70,7 @@ public class SkillGaugeUpdater extends GaugeUpdater
     public SkillGaugeUpdater(final ExperienceTable experienceTable, final Skill skill)
     {
         super(experienceTable);
+        this.skill = skill;
         skill.addSkillListener(skillListener);
     }
 }
