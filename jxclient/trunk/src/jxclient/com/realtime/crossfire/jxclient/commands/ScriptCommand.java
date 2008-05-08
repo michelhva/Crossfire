@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 
@@ -37,16 +38,24 @@ public class ScriptCommand extends AbstractCommand
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
+     * The {@link Stats} instance to watch.
+     */
+    private final Stats stats;
+    
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
      *
      * @param crossfireServerConnection the connection instance
+     *
+     * @param stats the instance to watch
      */
-    protected ScriptCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected ScriptCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
     {
         super(window, crossfireServerConnection);
         this.crossfireServerConnection = crossfireServerConnection;
+        this.stats = stats;
     }
 
     /** {@inheritDoc} */
@@ -66,7 +75,7 @@ public class ScriptCommand extends AbstractCommand
 
         try
         {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow(), crossfireServerConnection);
+            final ScriptProcess scriptProcess = new ScriptProcess(args, getWindow(), crossfireServerConnection, stats);
             // XXX: store scriptProcess
         }
         catch (final IOException ex)

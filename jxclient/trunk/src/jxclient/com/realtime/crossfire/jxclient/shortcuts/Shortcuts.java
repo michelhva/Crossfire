@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -63,13 +63,21 @@ public class Shortcuts
     private final JXCWindow jxcWindow;
 
     /**
+     * The {@link SpellsManager} instance to watch.
+     */
+    private final SpellsManager spellsManager;
+
+    /**
      * Create a new instance.
      *
      * @param jxcWindow The window to cast the spell in.
+     *
+     * @param spellsManager  the instance to watch
      */
-    public Shortcuts(final JXCWindow jxcWindow)
+    public Shortcuts(final JXCWindow jxcWindow, final SpellsManager spellsManager)
     {
         this.jxcWindow = jxcWindow;
+        this.spellsManager = spellsManager;
     }
 
     /**
@@ -273,7 +281,7 @@ public class Shortcuts
 
     public void setSpellShortcut(final int index, final String spellName, final boolean cast)
     {
-        final Spell spell = ItemsList.getSpellsManager().getSpell(spellName);
+        final Spell spell = spellsManager.getSpell(spellName);
         if (spell == null)
         {
             System.err.println("shortcut: ignoring undefined spell '"+spellName+"'");

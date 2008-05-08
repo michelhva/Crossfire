@@ -20,12 +20,12 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -38,6 +38,11 @@ public class GUIItemSpelllist extends GUIItem
      * The default scroll index.
      */
     private final int defaultIndex;
+
+    /**
+     * The {@link SpellsManager} instance to watch.
+     */
+    private final SpellsManager spellsManager;
 
     private Spell spell = null;
 
@@ -100,12 +105,13 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final CrossfireServerConnection crossfireServerConnection, final Font font)
+    public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final CrossfireServerConnection crossfireServerConnection, final SpellsManager spellsManager, final Font font)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         this.defaultIndex = defaultIndex;
+        this.spellsManager = spellsManager;
         setIndex(defaultIndex);
-        ItemsList.getSpellsManager().addCrossfireSpellChangedListener(crossfireSpellChangedListener);
+        spellsManager.addCrossfireSpellChangedListener(crossfireSpellChangedListener);
         crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
     }
 
@@ -118,7 +124,7 @@ public class GUIItemSpelllist extends GUIItem
         }
         else if (distance > 0)
         {
-            final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
+            final List<Spell> list = spellsManager.getSpellList();
             return index+distance < list.size();
         }
         else
@@ -181,7 +187,7 @@ public class GUIItemSpelllist extends GUIItem
 
     private void setSpell()
     {
-        final List<Spell> list = ItemsList.getSpellsManager().getSpellList();
+        final List<Spell> list = spellsManager.getSpellList();
         final Spell spell = 0 <= index && index < list.size() ? list.get(index) : null;
 
         if (this.spell == spell)

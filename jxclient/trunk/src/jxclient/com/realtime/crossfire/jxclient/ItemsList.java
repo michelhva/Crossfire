@@ -33,16 +33,16 @@ import com.realtime.crossfire.jxclient.stats.Stats;
  */
 public class ItemsList
 {
-    private static final ItemsManager itemsManager = new ItemsManager();
+    private final ItemsManager itemsManager = new ItemsManager();
 
-    private static final SpellsManager spellsManager = new SpellsManager();
+    private final SpellsManager spellsManager = new SpellsManager();
 
     /**
      * The stats information.
      */
-    private static final Stats stats = new Stats();
+    private final Stats stats = new Stats();
 
-    public static void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+    public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = itemsManager.getItemOrPlayer(tag);
         if (item == null)
@@ -70,12 +70,12 @@ public class ItemsList
         }
     }
 
-    public static ItemsManager getItemsManager()
+    public ItemsManager getItemsManager()
     {
         return itemsManager;
     }
 
-    public static SpellsManager getSpellsManager()
+    public SpellsManager getSpellsManager()
     {
         return spellsManager;
     }
@@ -85,7 +85,7 @@ public class ItemsList
      *
      * @return The stats object.
      */
-    public static Stats getStats()
+    public Stats getStats()
     {
         return stats;
     }
