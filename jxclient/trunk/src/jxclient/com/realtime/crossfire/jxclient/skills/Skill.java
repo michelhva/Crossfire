@@ -147,7 +147,7 @@ public class Skill
     {
         for (final SkillListener listener : listeners)
         {
-            listener.addSkill(this);
+            listener.gainedSkill(this);
         }
     }
 
@@ -158,7 +158,7 @@ public class Skill
     {
         for (final SkillListener listener : listeners)
         {
-            listener.delSkill(this);
+            listener.lostSkill(this);
         }
     }
 
@@ -169,7 +169,7 @@ public class Skill
     {
         for (final SkillListener listener : listeners)
         {
-            listener.updSkill(this);
+            listener.changedSkill(this);
         }
     }
 
