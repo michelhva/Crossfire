@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.map;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -114,7 +114,7 @@ public class CfMapAnimations
      */
     public void remove(final int x, final int y)
     {
-        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
             animations.remove(new Location(x, y, layer));
         }

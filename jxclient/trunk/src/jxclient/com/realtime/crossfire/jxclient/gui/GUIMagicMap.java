@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -336,7 +337,7 @@ public class GUIMagicMap extends GUIElement
     private void redrawSquare(final Graphics2D g, final CfMap map, final int x, final int y)
     {
         cleanSquare(g, x, y);
-        for (int layer = 0; layer < CrossfireServerConnection.NUM_LAYERS; layer++)
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
             redrawSquare(g, map, x, y, layer);
         }

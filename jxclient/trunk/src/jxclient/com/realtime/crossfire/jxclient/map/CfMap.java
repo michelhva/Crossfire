@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import java.awt.Point;
 import java.util.HashMap;
 import java.util.Map;
@@ -135,7 +136,7 @@ public class CfMap
         expandTo(x, y);
         if (patch[px][py].setDarkness(ox, oy, darkness))
         {
-            for (int l = 0; l < CfMapSquare.LAYERS; l++)
+            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
             {
                 setFaceInternal(x, y, l, null);
             }
@@ -176,7 +177,7 @@ public class CfMap
         if (patch[px][py].resetFogOfWar(ox, oy))
         {
             setDarkness(x, y, 255);
-            for (int l = 0; l < CfMapSquare.LAYERS; l++)
+            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
             {
                 setFaceInternal(x, y, l, l == layer ? face : null);
             }
@@ -398,7 +399,7 @@ public class CfMap
     {
         expandTo(x, y);
         patch[px][py].clearSquare(ox, oy);
-        for (int layer = 0; layer < CfMapSquare.LAYERS; layer++)
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
             final Face face = patch[px][py].getFace(ox, oy, layer);
             if (face != null)

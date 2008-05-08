@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -401,7 +401,7 @@ public class CfMapUpdater
         {
             for (int x = 0; x < width; x++)
             {
-                for (int z = 0; z < CrossfireServerConnection.NUM_LAYERS; z++)
+                for (int z = 0; z < CrossfireMap2Command.NUM_LAYERS; z++)
                 {
                     final Face f = map.getFace(x, y, z);
                     if (f != null && f.getID() == face)
