@@ -1470,7 +1470,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFace+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
                         }
-                        itemsList.updateItem(flags, tag, valLocation, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+                        itemsList.getItemsManager().updateItem(flags, tag, valLocation, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                         if ((flags&CfItem.UPD_WEIGHT) != 0)
                         {
                             final CfPlayer player = itemsList.getItemsManager().getPlayer();
