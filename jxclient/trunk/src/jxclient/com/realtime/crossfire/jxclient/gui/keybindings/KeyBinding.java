@@ -57,7 +57,7 @@ public abstract class KeyBinding
     }
 
     /** {@inheritDoc} */
-    @Override public abstract boolean equals(final Object op);
+    @Override public abstract boolean equals(final Object obj);
 
     /**
      * Check whether this key binding matches a key code/modifiers pair.

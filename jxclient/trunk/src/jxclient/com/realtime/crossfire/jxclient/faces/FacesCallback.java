@@ -31,9 +31,9 @@ public interface FacesCallback
     /**
      * Send an "askface" command to the server.
      *
-     * @param face The face number to query.
+     * @param num The face number to query.
      */
-    void sendAskface(int face);
+    void sendAskface(int num);
 
     /**
      * Add a listener to be notified about face image changes.
