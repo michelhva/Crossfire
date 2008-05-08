@@ -2505,4 +2505,18 @@ public abstract class JXCSkinLoader implements JXCSkin
 
         return tokens.toArray(new String[tokens.size()]);
     }
+
+    /** {@inheritDoc} */
+    public boolean hasChangedDialog()
+    {
+        for (final Gui dialog : dialogs)
+        {
+            if (dialog.isChangedFromDefault())
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

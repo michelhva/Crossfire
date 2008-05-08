@@ -118,4 +118,11 @@ public interface JXCSkin extends Iterable<Gui>
      * @throws JXCSkinException If the command list does not exist.
      */
     GUICommandList getCommandList(String name) throws JXCSkinException;
+
+    /**
+     * Return whether the dialog state should be saved.
+     *
+     * @return Whether the dialog state should be saved.
+     */
+    boolean hasChangedDialog();
 }

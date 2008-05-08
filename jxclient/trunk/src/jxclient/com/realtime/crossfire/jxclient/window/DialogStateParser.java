@@ -205,7 +205,7 @@ public class DialogStateParser
      */
     public static void save(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
     {
-        if (!hasChangedDialog(skin))
+        if (!skin.hasChangedDialog())
         {
             return;
         }
@@ -280,7 +280,7 @@ public class DialogStateParser
             System.err.println(dialogsFile+": "+ex.getMessage());
         }
 
-        assert !hasChangedDialog(skin);
+        assert !skin.hasChangedDialog();
     }
 
     /**
@@ -328,25 +328,5 @@ public class DialogStateParser
         bw.write("\n");
 
         dialog.setStateChanged(false);
-    }
-
-    /**
-     * Return whether the dialog state should be saved.
-     *
-     * @param skin The skin to check.
-     *
-     * @return Whether the dialog state should be saved.
-     */
-    private static boolean hasChangedDialog(final JXCSkin skin)
-    {
-        for (final Gui dialog : skin)
-        {
-            if (dialog.isChangedFromDefault())
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 }
