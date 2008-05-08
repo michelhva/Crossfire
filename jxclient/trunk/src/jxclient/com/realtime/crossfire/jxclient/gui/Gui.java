@@ -738,4 +738,28 @@ public class Gui
     {
         return this.x <= x && x < this.x+w && this.y <= y && y < this.y+h;
     }
+
+    /**
+     * Returns whether this dialog has changed from its default state.
+     * @return whether the state has changed
+     */
+    public boolean isChangedFromDefault()
+    {
+        if (name == null)
+        {
+            return false;
+        }
+
+        if (w <= 0 || h <= 0)
+        {
+            return false;
+        }
+
+        if (!stateChanged)
+        {
+            return false;
+        }
+
+        return true;
+    }
 }
