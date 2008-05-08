@@ -57,16 +57,6 @@ import java.util.regex.Pattern;
 public class CrossfireServerConnection extends ServerConnection implements FacesCallback
 {
     /**
-     * The total number of map layers to display.
-     */
-    public static final int NUM_LAYERS = 10;
-
-    /**
-     * Offset for coordinate values in map2 command.
-     */
-    public static final int MAP2_COORD_OFFSET = 15;
-
-    /**
      * Pattern to split a string by ":".
      */
     private static final Pattern patternDot = Pattern.compile(":");
@@ -1631,8 +1621,8 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             while (pos < end)
             {
                 final int coord = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                final int x = ((coord>>10)&0x3F)-MAP2_COORD_OFFSET;
-                final int y = ((coord>>4)&0x3F)-MAP2_COORD_OFFSET;
+                final int x = ((coord>>10)&0x3F)-CrossfireMap2Command.MAP2_COORD_OFFSET;
+                final int y = ((coord>>4)&0x3F)-CrossfireMap2Command.MAP2_COORD_OFFSET;
                 final int coordType = coord&0xF;
 
                 switch (coordType)

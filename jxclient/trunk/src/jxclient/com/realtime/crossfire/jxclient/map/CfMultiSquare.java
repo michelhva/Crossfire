@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 
 /**
  * Represents a square outside the viewable area that contains multi-square
@@ -47,7 +48,7 @@ public class CfMultiSquare
     /**
      * The face values.
      */
-    private final Face[] faces = new Face[CfMapSquare.LAYERS];
+    private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
 
     /**
      * Create a new instance.
@@ -70,7 +71,7 @@ public class CfMultiSquare
      */
     public void clear()
     {
-        for (int layer = 0; layer < CfMapSquare.LAYERS; layer++)
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
             if (faces[layer] != null)
             {

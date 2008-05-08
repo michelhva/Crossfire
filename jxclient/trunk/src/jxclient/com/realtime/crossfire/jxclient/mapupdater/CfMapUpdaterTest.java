@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -244,7 +245,7 @@ public class CfMapUpdaterTest extends TestCase
                     firstFace = false;
                 }
 
-                for (int l = 0; l < CfMapSquare.LAYERS; l++)
+                for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
                 {
                     final Face face = map.getFace(x, y, l);
                     if (face != null)

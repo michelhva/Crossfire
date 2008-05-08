@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
@@ -36,11 +36,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
  */
 public class CfMapSquare
 {
-    /**
-     * Number of supported layers.
-     */
-    public static final int LAYERS = CrossfireServerConnection.NUM_LAYERS;
-
     /**
      * The absolute x-coordinate of this square in its {@link CfMap}.
      */
@@ -67,13 +62,13 @@ public class CfMapSquare
     /**
      * The faces (of head-parts) of all layers as sent by the server.
      */
-    private final Face[] faces = new Face[LAYERS];
+    private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
 
     /**
      * If this square contains a non-head part of a multi-square object this
      * points to the head square.
      */
-    private final CfMapSquare[] heads = new CfMapSquare[LAYERS];
+    private final CfMapSquare[] heads = new CfMapSquare[CrossfireMap2Command.NUM_LAYERS];
 
     /**
      * Create a new (empty) square.
