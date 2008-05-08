@@ -6,7 +6,7 @@ width 40
 height 32
 msg
 Created:  1996-06-03
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-08 Nicolas Weeger
 endmsg
 end
 arch pstone_1
@@ -1942,44 +1942,44 @@ connected 10001
 end
 arch siegfried
 msg
-@match Key|key
+@match key
 ... I cannot give it to you...
 because Eureca is very dangerous now!
-@match Lock|lock
+@match lock
 I locked the castle entrance with my
 Key.
-@match Ran|ran
+@match ran
 I ran away from the castle,
-and I Locked the castle entrance
+and I locked the castle entrance
 in order to prevent Eureca from
 leaving that place.
-@match Sword|sword
+@match sword
 Eureca picked up the sword, because he
 was curious about it. Then he started
 screaming and punching at his own head.
 I was frightened by his behavior, and
 ran away from the castle.
-@match [Gg]othwolte
-Eureca fought against Ghothwolte.
+@match gothwolte
+Eureca fought against Gothwolte.
 After a long fight, Eureca killed him!
-As soon as Ghothwolte had died,
+As soon as Gothwolte had died,
 his black Sword flashed mysteriously.
-@match Castle|castle
+@match castle
 There were four evil masters in the
 castle. But we didn't deal with them.
 We went directly to the top of the
-castle, to Ghothwolte's room.
-@match Everything|everything
+castle, to Gothwolte's room.
+@match everything
 Eureca and I came here two months ago.
-We went straight to Ghothwolte's
+We went straight to Gothwolte's
 Castle.
-@match Unpunished|unpunished
-I say Everything.
-@match Kill|kill
+@match unpunished
+I say everything.
+@match kill
 I never want to be killed!
 Bodyguards! Come and help me!!!
 @match *
-Don't Kill me!
+Don't kill me!
 If you leave me unpunished, I'll tell
 you everything.
 endmsg
@@ -1995,6 +1995,7 @@ friendly 1
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
+stand_still 1
 can_use_skill 0
 arch key2
 slaying siegfried_1_1
