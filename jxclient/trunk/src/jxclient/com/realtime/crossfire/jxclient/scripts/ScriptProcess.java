@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.scripts;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -42,6 +41,11 @@ public class ScriptProcess extends Thread
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
+     * The {@link Stats} instance to watch.
+     */
+    private final Stats stats;
 
     private final InputStream in;
 
@@ -67,11 +71,12 @@ public class ScriptProcess extends Thread
         }
     };
 
-    public ScriptProcess(final String filename, final JXCWindow window, final CrossfireServerConnection crossfireServerConnection) throws IOException
+    public ScriptProcess(final String filename, final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
     {
         this.filename = filename;
         this.window = window;
         this.crossfireServerConnection = crossfireServerConnection;
+        this.stats = stats;
         final Runtime rt = Runtime.getRuntime();
         final Process proc = rt.exec(filename);
         in = proc.getInputStream();
@@ -152,45 +157,44 @@ public class ScriptProcess extends Thread
     {
         final String parms = cmdline.substring(8);
         System.out.println(" - Request :"+parms);
-        final Stats st = ItemsList.getStats();
 
         if (parms.equals("range"))
         {
-            commandSent(st.getRange());
+            commandSent(stats.getRange());
         }
         else if (parms.equals("stat stats"))
         {
-            commandSent(st.getStat(Stats.CS_STAT_STR)+","+
-                        st.getStat(Stats.CS_STAT_CON)+","+
-                        st.getStat(Stats.CS_STAT_DEX)+","+
-                        st.getStat(Stats.CS_STAT_INT)+","+
-                        st.getStat(Stats.CS_STAT_WIS)+","+
-                        st.getStat(Stats.CS_STAT_POW)+","+
-                        st.getStat(Stats.CS_STAT_CHA));
+            commandSent(stats.getStat(Stats.CS_STAT_STR)+","+
+                        stats.getStat(Stats.CS_STAT_CON)+","+
+                        stats.getStat(Stats.CS_STAT_DEX)+","+
+                        stats.getStat(Stats.CS_STAT_INT)+","+
+                        stats.getStat(Stats.CS_STAT_WIS)+","+
+                        stats.getStat(Stats.CS_STAT_POW)+","+
+                        stats.getStat(Stats.CS_STAT_CHA));
         }
         else if (parms.equals("stat cmbt"))
         {
-            commandSent(st.getStat(Stats.CS_STAT_WC)+","+
-                        st.getStat(Stats.CS_STAT_AC)+","+
-                        st.getStat(Stats.CS_STAT_DAM)+","+
-                        st.getStat(Stats.CS_STAT_SPEED)+","+
-                        st.getStat(Stats.CS_STAT_WEAP_SP));
+            commandSent(stats.getStat(Stats.CS_STAT_WC)+","+
+                        stats.getStat(Stats.CS_STAT_AC)+","+
+                        stats.getStat(Stats.CS_STAT_DAM)+","+
+                        stats.getStat(Stats.CS_STAT_SPEED)+","+
+                        stats.getStat(Stats.CS_STAT_WEAP_SP));
         }
         else if (parms.equals("stat hp"))
         {
-            commandSent(st.getStat(Stats.CS_STAT_HP)+","+
-                    st.getStat(Stats.CS_STAT_MAXHP)+","+
-                    st.getStat(Stats.CS_STAT_SP)+","+
-                    st.getStat(Stats.CS_STAT_MAXSP)+","+
-                    st.getStat(Stats.CS_STAT_GRACE)+","+
-                    st.getStat(Stats.CS_STAT_MAXGRACE)+","+
-                    st.getStat(Stats.CS_STAT_FOOD));
+            commandSent(stats.getStat(Stats.CS_STAT_HP)+","+
+                    stats.getStat(Stats.CS_STAT_MAXHP)+","+
+                    stats.getStat(Stats.CS_STAT_SP)+","+
+                    stats.getStat(Stats.CS_STAT_MAXSP)+","+
+                    stats.getStat(Stats.CS_STAT_GRACE)+","+
+                    stats.getStat(Stats.CS_STAT_MAXGRACE)+","+
+                    stats.getStat(Stats.CS_STAT_FOOD));
         }
         else if (parms.equals("stat xp"))
         {
             final StringBuilder sb = new StringBuilder();
-            sb.append(st.getStat(Stats.CS_STAT_LEVEL));
-            sb.append(',').append(st.getExperience());
+            sb.append(stats.getStat(Stats.CS_STAT_LEVEL));
+            sb.append(',').append(stats.getExperience());
             for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++)
             {
                 if (Stats.getSkill(i) != null)
@@ -206,7 +210,7 @@ public class ScriptProcess extends Thread
             final StringBuilder sb = new StringBuilder();
             for (int i = Stats.CS_STAT_RESIST_START; i <= Stats.CS_STAT_RESIST_END; i++)
             {
-                sb.append(st.getStat(i));
+                sb.append(stats.getStat(i));
                 if (i < Stats.CS_STAT_RESIST_END)
                 {
                     sb.append(',');
@@ -217,7 +221,7 @@ public class ScriptProcess extends Thread
         else if (parms.equals("weight"))
         {
             //mmm... I've lost the location of the weight...
-            //commandSent(st.getStat(CS_STAT_MAXWEIGHT)+","+st.getStat(CS_STAT_WEIGHT));
+            //commandSent(stats.getStat(CS_STAT_MAXWEIGHT)+","+stats.getStat(CS_STAT_WEIGHT));
         }
         else if (parms.equals("flags"))
         {

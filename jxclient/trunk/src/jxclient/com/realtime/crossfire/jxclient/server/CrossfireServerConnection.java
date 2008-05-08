@@ -73,6 +73,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private static final Charset utf8 = Charset.forName("UTF-8");
 
     /**
+     * The {@link ItemsList} instance to update.
+     */
+    private final ItemsList itemsList;
+
+    /**
      * The map width in tiles that is negotiated with the server.
      */
     private int mapWidth = 17;
@@ -226,14 +231,17 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
+     *
+     * @param itemsList the instance to update
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final ItemsList itemsList)
     {
         this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
         this.animations = animations;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
+        this.itemsList = itemsList;
     }
 
     /**
@@ -462,7 +470,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message+"\n");
                             }
-                            ItemsList.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
+                            itemsList.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
                         }
                         if (pos != end) break;
                         return;
@@ -539,7 +547,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv delinv tag="+tag+"\n");
                                 }
-                                ItemsList.getItemsManager().cleanInventory(tag);
+                                itemsList.getItemsManager().cleanInventory(tag);
                             }
                             return;
 
@@ -558,7 +566,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv delitem tags="+Arrays.toString(tags)+"\n");
                                 }
-                                ItemsList.getItemsManager().removeItems(tags);
+                                itemsList.getItemsManager().removeItems(tags);
                             }
                             return;
                         }
@@ -577,7 +585,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv delspell tag="+tag+"\n");
                             }
-                            ItemsList.getSpellsManager().deleteSpell(tag);
+                            itemsList.getSpellsManager().deleteSpell(tag);
                         }
                         return;
                     }
@@ -867,9 +875,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                     debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceid+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
                                 }
                                 final CfItem item = new CfItem(location, tag, flags, weight, Faces.getFace(faceid), name, namePl, anim, animSpeed, nrof);
-                                ItemsList.getItemsManager().addItem(item);
+                                itemsList.getItemsManager().addItem(item);
                             }
-                            ItemsList.getItemsManager().fireEvents();
+                            itemsList.getItemsManager().fireEvents();
                         }
                         catch (final IOException ex)
                         {
@@ -900,9 +908,9 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+face+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
-                                ItemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, anim, animSpeed, nrof, type));
+                                itemsList.getItemsManager().addItem(new CfItem(location, tag, flags, weight, Faces.getFace(face), name, namePl, anim, animSpeed, nrof, type));
                             }
-                            ItemsList.getItemsManager().fireEvents();
+                            itemsList.getItemsManager().fireEvents();
                         }
                         return;
                     }
@@ -1054,10 +1062,10 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+face+" name="+name+"\n");
                     }
-                    ItemsList.getStats().resetSkills();
-                    ItemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
-                    ItemsList.getStats().setStat(Stats.C_STAT_WEIGHT, weight);
-                    ItemsList.getStats().setStatsProcessed(false);
+                    itemsList.getStats().resetSkills();
+                    itemsList.getItemsManager().setPlayer(new CfPlayer(tag, weight, Faces.getFace(face), name));
+                    itemsList.getStats().setStat(Stats.C_STAT_WEIGHT, weight);
+                    itemsList.getStats().setStatsProcessed(false);
                 }
                 return;
 
@@ -1237,7 +1245,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
-                    final Stats stats = ItemsList.getStats();
+                    final Stats stats = itemsList.getStats();
                     while (pos < end)
                     {
                         final int stat = packet[pos++]&0xFF;
@@ -1462,14 +1470,14 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFace+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
                         }
-                        ItemsList.updateItem(flags, tag, valLocation, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+                        itemsList.updateItem(flags, tag, valLocation, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                         if ((flags&CfItem.UPD_WEIGHT) != 0)
                         {
-                            final CfPlayer player = ItemsList.getItemsManager().getPlayer();
+                            final CfPlayer player = itemsList.getItemsManager().getPlayer();
                             if (player != null && player.getTag() == tag)
                             {
-                                ItemsList.getStats().setStat(Stats.C_STAT_WEIGHT, valWeight);
-                                ItemsList.getStats().setStatsProcessed(false);
+                                itemsList.getStats().setStat(Stats.C_STAT_WEIGHT, valWeight);
+                                itemsList.getStats().setStatsProcessed(false);
                             }
                         }
                     }
@@ -1492,7 +1500,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                         {
                             debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage+"\n");
                         }
-                        ItemsList.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
+                        itemsList.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
                     }
                     return;
                 }
@@ -1778,7 +1786,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
         sendRequestinfo("skill_info");
         sendRequestinfo("exp_table");
         sendToggleextendedtext(1);
-        ItemsList.getStats().setSimpleWeaponSpeed(scval >= 1029);
+        itemsList.getStats().setSimpleWeaponSpeed(scval >= 1029);
     }
 
     /**

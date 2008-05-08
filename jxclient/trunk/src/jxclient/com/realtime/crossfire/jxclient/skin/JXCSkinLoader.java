@@ -86,6 +86,7 @@ import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
@@ -99,6 +100,7 @@ import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
@@ -135,6 +137,12 @@ public abstract class JXCSkinLoader implements JXCSkin
      * Pattern to parse integer constants.
      */
     private static final Pattern patternExpr = Pattern.compile("([0-9]+|WIDTH|HEIGHT|WIDTH/2|HEIGHT/2)([-+])(.+)");
+
+    private final ItemsManager itemsManager;
+
+    private final SpellsManager spellsManager;
+
+    private final Stats stats;
 
     /**
      * Available resolutions for this skin.
@@ -210,6 +218,13 @@ public abstract class JXCSkinLoader implements JXCSkin
      * All "event init" commands in execution order.
      */
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
+
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats)
+    {
+        this.itemsManager = itemsManager;
+        this.spellsManager = spellsManager;
+        this.stats = stats;
+    }
 
     /**
      * Check that the skin exists and can be accessed.
@@ -1118,7 +1133,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
+                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
@@ -1128,7 +1143,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font, nrofColor);
+                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
@@ -1146,7 +1161,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, spellsManager, font);
                             }
                             else
                             {
@@ -1255,7 +1270,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
                             final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
-                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment);
+                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_spell"))
@@ -1938,11 +1953,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws IOException if the gauge updater value does not exist.
      */
-    private static GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
+    private GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
     {
         try
         {
-            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name));
+            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemsManager);
         }
         catch (final IllegalArgumentException ex)
         {
@@ -1956,7 +1971,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
         if (name.startsWith("ACTIVE_SKILL_"))
         {
-            return new ActiveSkillGaugeUpdater(experienceTable, name.substring(13).replaceAll("_", " "));
+            return new ActiveSkillGaugeUpdater(experienceTable, name.substring(13).replaceAll("_", " "), stats);
         }
 
         throw new IOException("invalid stat name: "+name);

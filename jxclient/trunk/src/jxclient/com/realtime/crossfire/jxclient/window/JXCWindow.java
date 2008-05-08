@@ -120,6 +120,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final boolean debugGui;
 
     /**
+     * The {@link ItemsList} instance.
+     */
+    private final ItemsList itemsList = new ItemsList();
+
+    /**
      * The global experience table.
      */
     private final ExperienceTable experienceTable = new ExperienceTable();
@@ -140,7 +145,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The shortcuts for this window.
      */
-    private final Shortcuts shortcuts = new Shortcuts(this);
+    private final Shortcuts shortcuts = new Shortcuts(this, itemsList.getSpellsManager());
 
     /**
      * The settings instance to use.
@@ -403,12 +408,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol);
-        commands = new Commands(this, server);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsList);
+        commands = new Commands(this, server, itemsList.getStats());
         CfMapUpdater.reset();
         commandQueue = new CommandQueue(server);
-        poisonWatcher = new PoisonWatcher(ItemsList.getStats(), server);
-        activeSkillWatcher = new ActiveSkillWatcher(ItemsList.getStats(), server);
+        poisonWatcher = new PoisonWatcher(itemsList.getStats(), server);
+        activeSkillWatcher = new ActiveSkillWatcher(itemsList.getStats(), server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         try
@@ -632,11 +637,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             {
                 server.disconnect();
                 setHost(null);
-                ItemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
+                itemsList.getItemsManager().removeCrossfirePlayerListener(crossfirePlayerListener);
                 server.removeCrossfireQueryListener(this);
                 server.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
-                ItemsList.getItemsManager().reset();
+                itemsList.getItemsManager().reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -651,14 +656,14 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 server.addCrossfireDrawextinfoListener(this);
                 server.addCrossfireQueryListener(this);
                 setTitle(TITLE_PREFIX+" - "+hostname);
-                ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
-                ItemsList.getStats().reset();
+                itemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+                itemsList.getStats().reset();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
                 Faces.reset();
                 commandQueue.clear();
-                ItemsList.getItemsManager().reset();
-                ItemsList.getSpellsManager().reset();
+                itemsList.getItemsManager().reset();
+                itemsList.getSpellsManager().reset();
                 animations.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
@@ -728,7 +733,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         new MusicWatcher(server);
         new SoundWatcher(server);
-        new StatsWatcher(ItemsList.getStats(), jxcWindowRenderer);
+        new StatsWatcher(itemsList.getStats(), jxcWindowRenderer, itemsList.getItemsManager());
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
@@ -1464,12 +1469,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             final File dir = new File(skinName);
             if (dir.exists() && dir.isDirectory())
             {
-                skin = new JXCSkinDirLoader(dir);
+                skin = new JXCSkinDirLoader(itemsList.getItemsManager(), itemsList.getSpellsManager(), itemsList.getStats(), dir);
             }
             else
             {
                 // fallback: built-in resource
-                skin = new JXCSkinClassLoader("com/realtime/crossfire/jxclient/skins/"+skinName);
+                skin = new JXCSkinClassLoader(itemsList.getItemsManager(), itemsList.getSpellsManager(), itemsList.getStats(), "com/realtime/crossfire/jxclient/skins/"+skinName);
             }
             skin.load(server, this, resolution);
         }

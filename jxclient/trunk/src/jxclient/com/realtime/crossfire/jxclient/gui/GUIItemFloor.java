@@ -20,9 +20,9 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -37,6 +37,11 @@ public class GUIItemFloor extends GUIItemItem
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
+     * The {@link ItemsManager} instance to watch.
+     */
+    private final ItemsManager itemsManager;
 
     /**
      * The default scroll index.
@@ -91,13 +96,14 @@ public class GUIItemFloor extends GUIItemItem
         }
     };
 
-    public GUIItemFloor(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
+    public GUIItemFloor(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font, nrofColor);
         this.crossfireServerConnection = crossfireServerConnection;
+        this.itemsManager = itemsManager;
         defaultIndex = index;
-        containerTag = ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor();
-        ItemsList.getItemsManager().getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
+        containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
+        itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
         setIndex(index, containerTag, false);
     }
 
@@ -110,7 +116,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         else if (distance > 0)
         {
-            return index+distance < ItemsList.getItemsManager().getNumberOfItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+            return index+distance < itemsManager.getNumberOfItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
         }
         else
         {
@@ -150,9 +156,9 @@ public class GUIItemFloor extends GUIItemItem
         {
             return;
         }
-        if (ItemsList.getItemsManager().getPlayer() != null)
+        if (itemsManager.getPlayer() != null)
         {
-            crossfireServerConnection.sendMove(ItemsList.getItemsManager().getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
         }
     }
 
@@ -179,7 +185,7 @@ public class GUIItemFloor extends GUIItemItem
             {
                 if (this.index > 0)
                 {
-                    ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
+                    itemsManager.getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
                 }
                 else
                 {
@@ -188,7 +194,7 @@ public class GUIItemFloor extends GUIItemItem
             }
             else
             {
-                ItemsList.getItemsManager().getFloorManager().removeLocationListener(this.index, floorLocationListener);
+                itemsManager.getFloorManager().removeLocationListener(this.index, floorLocationListener);
             }
         }
         this.index = index;
@@ -199,7 +205,7 @@ public class GUIItemFloor extends GUIItemItem
             {
                 if (this.index > 0)
                 {
-                    ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index-1, floorLocationListener);
+                    itemsManager.getFloorManager().addLocationListener(this.index-1, floorLocationListener);
                 }
                 else
                 {
@@ -208,23 +214,23 @@ public class GUIItemFloor extends GUIItemItem
             }
             else
             {
-                ItemsList.getItemsManager().getFloorManager().addLocationListener(this.index, floorLocationListener);
+                itemsManager.getFloorManager().addLocationListener(this.index, floorLocationListener);
             }
         }
 
         if (this.containerTag == 0)
         {
-            final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemsManager.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
         }
         else if (this.index > 0)
         {
-            final List<CfItem> list = ItemsList.getItemsManager().getItems(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemsManager.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
         }
         else
         {
-            setItem(ItemsList.getItemsManager().getItem(containerTag));
+            setItem(itemsManager.getItem(containerTag));
         }
     }
 }

@@ -20,9 +20,9 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -38,6 +38,11 @@ public class GUIItemInventory extends GUIItemItem
      */
     private final CrossfireServerConnection crossfireServerConnection;
 
+    /**
+     * The {@link ItemsManager} instance to watch.
+     */
+    private final ItemsManager itemsManager;
+    
     /**
      * The default scroll index.
      */
@@ -59,10 +64,11 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
+    public GUIItemInventory(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font, nrofColor);
         this.crossfireServerConnection = crossfireServerConnection;
+        this.itemsManager = itemsManager;
         defaultIndex = index;
         setIndex(index);
     }
@@ -76,13 +82,13 @@ public class GUIItemInventory extends GUIItemItem
         }
         else if (distance > 0)
         {
-            final CfPlayer player = ItemsList.getItemsManager().getPlayer();
+            final CfPlayer player = itemsManager.getPlayer();
             if (player == null)
             {
                 return false;
             }
 
-            final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
+            final List<CfItem> list = itemsManager.getItems(player.getTag());
             return index+distance < list.size();
         }
         else
@@ -154,7 +160,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        crossfireServerConnection.sendMove(ItemsList.getItemsManager().getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
+        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), jxcw.getCommandQueue().getRepeatCount());
     }
 
     /**
@@ -171,18 +177,18 @@ public class GUIItemInventory extends GUIItemItem
 
         if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
+            itemsManager.getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
         }
         this.index = index;
         if (this.index >= 0)
         {
-            ItemsList.getItemsManager().getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
+            itemsManager.getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
         }
 
-        final CfPlayer player = ItemsList.getItemsManager().getPlayer();
+        final CfPlayer player = itemsManager.getPlayer();
         if (player != null)
         {
-            final List<CfItem> list = ItemsList.getItemsManager().getItems(player.getTag());
+            final List<CfItem> list = itemsManager.getItems(player.getTag());
             if (0 <= this.index && this.index < list.size())
             {
                 setItem(list.get(this.index));

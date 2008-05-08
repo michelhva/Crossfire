@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -137,11 +136,11 @@ public class GUILabelStats extends GUIOneLineLabel
      *
      * @param alignment The text alignment.
      */
-    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment)
+    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stat = stat;
-        ItemsList.getStats().addCrossfireStatsListener(crossfireStatsListener);
+        stats.addCrossfireStatsListener(crossfireStatsListener);
     }
 
     /**

@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -41,8 +44,9 @@ public class JXCSkinClassLoader extends JXCSkinLoader
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinClassLoader(final String baseName) throws JXCSkinException
+    public JXCSkinClassLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats, final String baseName) throws JXCSkinException
     {
+        super(itemsManager, spellsManager, stats);
         if (baseName == null) throw new IllegalArgumentException();
         this.baseName = baseName;
         checkAccess();

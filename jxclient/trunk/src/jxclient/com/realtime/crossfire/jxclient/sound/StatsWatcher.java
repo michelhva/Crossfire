@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
-import com.realtime.crossfire.jxclient.ItemsList;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
 import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -126,8 +126,10 @@ public class StatsWatcher
      * @param stats The stats instance to watch.
      *
      * @param jxcWindowRenderer The window renderer instance.
+     *
+     * @param itemsManager the instance to watch
      */
-    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer)
+    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer, final ItemsManager itemsManager)
     {
         this.stats = stats;
         poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
@@ -135,7 +137,7 @@ public class StatsWatcher
         stats.addCrossfireStatsListener(crossfireStatsListener);
         jxcWindowRenderer.addGuiStateListener(guiStateListener);
         guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
-        ItemsList.getItemsManager().addCrossfirePlayerListener(crossfirePlayerListener);
+        itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
     }
 
     /**
