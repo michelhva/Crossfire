@@ -65,7 +65,7 @@ public class GUIItemShortcut extends GUIItem
     private final ShortcutListener shortcutListener = new ShortcutListener()
     {
         /** {@inheritDoc} */
-        public void shortcutModified(final Shortcut shortcut)
+        public void shortcutModified()
         {
             setChanged();
         }
