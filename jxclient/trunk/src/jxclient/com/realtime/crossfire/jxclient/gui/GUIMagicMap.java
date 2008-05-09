@@ -53,6 +53,11 @@ public class GUIMagicMap extends GUIElement
     private static final int TILE_SIZE = 4;
 
     /**
+     * The {@link CfMapUpdater} instance to use.
+     */
+    private final CfMapUpdater mapUpdater;
+
+    /**
      * The map width in tiles.
      */
     private int mapWidth;
@@ -157,7 +162,7 @@ public class GUIMagicMap extends GUIElement
             synchronized (buffer)
             {
                 final Graphics2D g = buffer.createGraphics();
-                final CfMap map = CfMapUpdater.getMap();
+                final CfMap map = mapUpdater.getMap();
                 final int dx = evt.getDX()*TILE_SIZE;
                 final int dy = evt.getDY()*TILE_SIZE;
                 if (Math.abs(dx) >= w || Math.abs(dy) >= h)
@@ -257,12 +262,12 @@ public class GUIMagicMap extends GUIElement
             final Graphics2D g = buffer.createGraphics();
             g.setColor(Color.BLACK);
             g.fillRect(0, 0, w, h);
-            redrawTiles(g, CfMapUpdater.getMap(), 0, 0, w/TILE_SIZE, h/TILE_SIZE);
+            redrawTiles(g, mapUpdater.getMap(), 0, 0, w/TILE_SIZE, h/TILE_SIZE);
             g.dispose();
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection)
+    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
@@ -270,6 +275,7 @@ public class GUIMagicMap extends GUIElement
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
+        this.mapUpdater = mapUpdater;
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
 
@@ -277,9 +283,9 @@ public class GUIMagicMap extends GUIElement
         mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
 
         crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
-        CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
-        CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
-        CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
+        mapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
+        mapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
+        mapUpdater.addCrossfireMapListener(crossfireMapListener);
     }
 
     /**
