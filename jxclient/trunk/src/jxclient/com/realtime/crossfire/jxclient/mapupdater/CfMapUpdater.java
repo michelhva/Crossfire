@@ -198,21 +198,21 @@ public class CfMapUpdater
      *
      * @param layer The layer to update.
      *
-     * @param face The face to set. <code>0</code> clears the square.
+     * @param faceNum The face to set. <code>0</code> clears the square.
      *
      * @param faces The instance for looking up faces.
      */
-    public void processMapFace(final int x, final int y, final int layer, final int face, final Faces faces)
+    public void processMapFace(final int x, final int y, final int layer, final int faceNum, final Faces faces)
     {
         final Face f;
-        if (face == 0)
+        if (faceNum == 0)
         {
             f = null;
             visibleAnimations.remove(x, y, layer);
         }
         else
         {
-            f = faces.getFace(face);
+            f = faces.getFace(faceNum);
         }
 
         map.setFace(x, y, layer, f);
@@ -312,19 +312,19 @@ public class CfMapUpdater
      *
      * @param layer The layer to update.
      *
-     * @param face The new face to set. <code>-1</code> means "do not change face".
+     * @param faceNum The new face to set. <code>-1</code> means "do not change face".
      *
      * @param faces The instance for looking up faces.
      */
-    private void setMultiFace(final int x, final int y, final int layer, final int face, final Faces faces)
+    private void setMultiFace(final int x, final int y, final int layer, final int faceNum, final Faces faces)
     {
-        if (face == -1)
+        if (faceNum == -1)
         {
             return;
         }
 
-        final Face f = face == 0 ? null : faces.getFace(face);
-        map.setMultiFace(x, y, layer, f);
+        final Face face = faceNum == 0 ? null : faces.getFace(faceNum);
+        map.setMultiFace(x, y, layer, face);
     }
 
     /**
@@ -405,9 +405,9 @@ public class CfMapUpdater
     /**
      * Process an updated face image.
      *
-     * @param face The face that has changed.
+     * @param faceNum The face that has changed.
      */
-    public void updateFace(final int face)
+    public void updateFace(final int faceNum)
     {
         processMapBegin();
 
@@ -417,10 +417,10 @@ public class CfMapUpdater
             {
                 for (int z = 0; z < CrossfireMap2Command.NUM_LAYERS; z++)
                 {
-                    final Face f = map.getFace(x, y, z);
-                    if (f != null && f.getID() == face)
+                    final Face face = map.getFace(x, y, z);
+                    if (face != null && face.getFaceNum() == faceNum)
                     {
-                        map.setFace(x, y, z, f);
+                        map.setFace(x, y, z, face);
                         map.dirty(x, y);
                     }
                 }

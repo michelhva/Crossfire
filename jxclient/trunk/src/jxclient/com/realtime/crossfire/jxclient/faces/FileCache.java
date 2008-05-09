@@ -53,16 +53,16 @@ public class FileCache
     /**
      * Retrieve an image from the cache.
      *
-     * @param name The image name to retrieve.
+     * @param faceName The image name to retrieve.
      *
-     * @param checksum The checksum to retrieve.
+     * @param faceChecksum The checksum to retrieve.
      *
      * @return The image icon, or <code>null</code> if the cache does not
      * contain the image.
      */
-    public ImageIcon load(final String name, final int checksum)
+    public ImageIcon load(final String faceName, final int faceChecksum)
     {
-        final File file = getImageFileName(name, checksum);
+        final File file = getImageFileName(faceName, faceChecksum);
         final long len = file.length();
         if (len >= 0x10000 || len <= 0)
         {
@@ -95,35 +95,35 @@ public class FileCache
     /**
      * Store an {@link ImageIcon} into the cache.
      *
-     * @param name The image name to save.
+     * @param faceName The image name to save.
      *
-     * @param checksum The checksum to retrieve.
+     * @param faceChecksum The checksum to retrieve.
      *
      * @param imageIcon The image icon to store.
      */
-    public void save(final String name, final int checksum, final ImageIcon imageIcon)
+    public void save(final String faceName, final int faceChecksum, final ImageIcon imageIcon)
     {
-        Images.saveImageIcon(getImageFileName(name, checksum), imageIcon);
+        Images.saveImageIcon(getImageFileName(faceName, faceChecksum), imageIcon);
     }
 
     /**
      * Calculate a hashed image name to be used as a file name.
      *
-     * @param name The image name to hash.
+     * @param faceName The image name to hash.
      *
-     * @param checksum The checksum to hash.
+     * @param faceChecksum The checksum to hash.
      *
      * @return the hashed image name.
      */
-    private File getImageFileName(final String name, final int checksum)
+    private File getImageFileName(final String faceName, final int faceChecksum)
     {
-        final String quotedName = Filenames.quoteName(name);
-        final String dirName = quotedName.substring(0, Math.min(2, quotedName.length()));
-        final File dir = new File(new File(cacheDir, dirName), quotedName);
+        final String quotedFaceName = Filenames.quoteName(faceName);
+        final String dirName = quotedFaceName.substring(0, Math.min(2, quotedFaceName.length()));
+        final File dir = new File(new File(cacheDir, dirName), quotedFaceName);
         if (!dir.exists() && !dir.mkdirs())
         {
             System.err.println("Cannot create directory: "+dir);
         }
-        return new File(dir, Integer.toString(checksum));
+        return new File(dir, Integer.toString(faceChecksum));
     }
 }

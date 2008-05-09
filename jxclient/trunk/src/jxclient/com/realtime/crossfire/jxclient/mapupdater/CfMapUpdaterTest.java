@@ -261,7 +261,7 @@ public class CfMapUpdaterTest extends TestCase
                         sb.append('H');
                         sb.append(l);
                         sb.append('=');
-                        sb.append(face.getName());
+                        sb.append(face.getFaceName());
                         firstFace = false;
                     }
 
@@ -276,7 +276,7 @@ public class CfMapUpdaterTest extends TestCase
                         sb.append('T');
                         sb.append(l);
                         sb.append('=');
-                        sb.append(headFace.getName());
+                        sb.append(headFace.getFaceName());
                         firstFace = false;
                     }
                 }
@@ -287,9 +287,9 @@ public class CfMapUpdaterTest extends TestCase
         return sb.toString();
     }
 
-    private static void defineFace(final Faces faces, final int face, final String name, final byte[] data)
+    private static void defineFace(final Faces faces, final int faceNum, final String name, final byte[] data)
     {
-        faces.setFace(face, 0, name);
-        faces.setImage(face, data, 0, data.length);
+        faces.setFace(faceNum, 0, name);
+        faces.setImage(faceNum, data, 0, data.length);
     }
 }

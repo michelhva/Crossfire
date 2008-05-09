@@ -107,51 +107,51 @@ public class Faces
         Face.init(originalUnknownImageIcon, scaledUnknownImageIcon, magicMapUnknownImageIcon, askfaceManager, fileCacheOriginal, fileCacheScaled, fileCacheMagicMap);
     }
 
-    public Face getFace(final int index)
+    public Face getFace(final int faceNum)
     {
-        final Face face = faceCache.getFace(index);
+        final Face face = faceCache.getFace(faceNum);
         if (face != null)
         {
             return face;
         }
 
-        System.err.println("Warning: creating face object for unknown face "+index);
-        final Face newFace = new Face(index, "face#"+index, 0, null, null, null);
+        System.err.println("Warning: creating face object for unknown face "+faceNum);
+        final Face newFace = new Face(faceNum, "face#"+faceNum, 0, null, null, null);
         faceCache.addFace(newFace);
         return newFace;
     }
 
-    public int setImage(final int pixnum, final byte[] packet, final int start, final int pixlen)
+    public int setImage(final int faceNum, final byte[] packet, final int start, final int pixlen)
     {
         final byte[] data = new byte[pixlen];
         System.arraycopy(packet, start, data, 0, pixlen);
         try
         {
-            final ImageIcon img = new ImageIcon(data);
-            if (img.getIconWidth() <= 0 || img.getIconHeight() <= 0)
+            final ImageIcon imageIcon = new ImageIcon(data);
+            if (imageIcon.getIconWidth() <= 0 || imageIcon.getIconHeight() <= 0)
             {
-                System.err.println("face data for face "+pixnum+" is invalid, using unknown.png instead");
-                final Face f = faceCache.getFace(pixnum);
-                f.setOriginalImageIcon(null);
-                f.setScaledImageIcon(null);
-                f.setMagicMapImageIcon(null);
+                System.err.println("face data for face "+faceNum+" is invalid, using unknown.png instead");
+                final Face face = faceCache.getFace(faceNum);
+                face.setOriginalImageIcon(null);
+                face.setScaledImageIcon(null);
+                face.setMagicMapImageIcon(null);
             }
             else
             {
-                final Face f = faceCache.getFace(pixnum);
-                f.setOriginalImageIcon(img);
-                f.setScaledImageIcon(getScaledImageIcon(img));
-                f.setMagicMapImageIcon(getMagicMapImageIcon(img));
-                fileCacheOriginal.save(f.getName(), f.getChecksum(), f.getOriginalImageIcon());
-                fileCacheScaled.save(f.getName(), f.getChecksum(), f.getScaledImageIcon());
-                fileCacheMagicMap.save(f.getName(), f.getChecksum(), f.getMagicMapImageIcon());
+                final Face face = faceCache.getFace(faceNum);
+                face.setOriginalImageIcon(imageIcon);
+                face.setScaledImageIcon(getScaledImageIcon(imageIcon));
+                face.setMagicMapImageIcon(getMagicMapImageIcon(imageIcon));
+                fileCacheOriginal.save(face.getFaceName(), face.getFaceChecksum(), face.getOriginalImageIcon());
+                fileCacheScaled.save(face.getFaceName(), face.getFaceChecksum(), face.getScaledImageIcon());
+                fileCacheMagicMap.save(face.getFaceName(), face.getFaceChecksum(), face.getMagicMapImageIcon());
             }
         }
         catch (final IllegalArgumentException e)
         {
-            System.out.println("Unable to get face:"+pixnum);
+            System.out.println("Unable to get face:"+faceNum);
         }
-        return pixnum;
+        return faceNum;
     }
 
     /**
@@ -180,12 +180,12 @@ public class Faces
         return scaler.getScaledImage();
     }
 
-    public void setFace(final int pixnum, final int checksum, final String pixname)
+    public void setFace(final int faceNum, final int faceChecksum, final String faceName)
     {
-        final ImageIcon originalImageIcon = fileCacheOriginal.load(pixname, checksum);
-        final ImageIcon scaledImageIcon = fileCacheScaled.load(pixname, checksum);
-        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(pixname, checksum);
-        faceCache.addFace(new Face(pixnum, pixname, checksum, originalImageIcon, scaledImageIcon, magicMapImageIcon));
+        final ImageIcon originalImageIcon = fileCacheOriginal.load(faceName, faceChecksum);
+        final ImageIcon scaledImageIcon = fileCacheScaled.load(faceName, faceChecksum);
+        final ImageIcon magicMapImageIcon = fileCacheMagicMap.load(faceName, faceChecksum);
+        faceCache.addFace(new Face(faceNum, faceName, faceChecksum, originalImageIcon, scaledImageIcon, magicMapImageIcon));
     }
 
     /**
@@ -200,10 +200,10 @@ public class Faces
     /**
      * Ask the server to send image info.
      *
-     * @param face the face to query
+     * @param faceNum the face to query
      */
-    public void askface(final int face)
+    public void askface(final int faceNum)
     {
-        askfaceManager.queryFace(face);
+        askfaceManager.queryFace(faceNum);
     }
 }
