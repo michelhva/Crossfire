@@ -30,7 +30,7 @@ public interface CrossfireUpdateFaceListener
      * Notification that a face has changed. This normally means that the face
      * image now is available, but also that the face image has changed.
      *
-     * @param faceID The face ID that has changed.
+     * @param faceNum The face ID that has changed.
      */
-    void updateFace(int faceID);
+    void updateFace(int faceNum);
 }

@@ -96,7 +96,7 @@ public class GUIItemSpelllist extends GUIItem
             }
 
             final Face face = spell.getFace();
-            if (face == null || face.getID() != faceID)
+            if (face == null || face.getFaceNum() != faceID)
             {
                 return;
             }

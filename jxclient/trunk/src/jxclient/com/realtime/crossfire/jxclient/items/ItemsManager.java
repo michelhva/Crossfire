@@ -478,7 +478,7 @@ public class ItemsManager
         return inventoryManager;
     }
 
-    public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFace, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+    public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = getItemOrPlayer(tag);
         if (item == null)
@@ -487,8 +487,8 @@ public class ItemsManager
             return;
         }
 
-        final boolean wasopen = (flags&CfItem.UPD_FLAGS) != 0 && currentFloorManager.getCurrentFloor() == item.getTag() && item.isOpen();
-        item.update(flags, valFlags, valWeight, faces.getFace(valFace), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        final boolean wasOpen = (flags&CfItem.UPD_FLAGS) != 0 && currentFloorManager.getCurrentFloor() == item.getTag() && item.isOpen();
+        item.update(flags, valFlags, valWeight, faces.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_LOCATION) != 0)
         {
             moveItem(item, valLocation);
@@ -499,7 +499,7 @@ public class ItemsManager
             {
                 currentFloorManager.setCurrentFloor(item.getTag());
             }
-            else if (wasopen)
+            else if (wasOpen)
             {
                 currentFloorManager.setCurrentFloor(0);
             }

@@ -91,17 +91,17 @@ public class Face
     /**
      * The face id as sent by the server.
      */
-    private final int id;
+    private final int faceNum;
 
     /**
      * The face name as sent by the server.
      */
-    private String name;
+    private String faceName;
 
     /**
      * The image checksum as sent by the server.
      */
-    private int checksum;
+    private int faceChecksum;
 
     /**
      * Initialize the module.
@@ -140,11 +140,11 @@ public class Face
     /**
      * Create a new face.
      *
-     * @param id The unique face id.
+     * @param faceNum The unique face id.
      *
-     * @param name The face name.
+     * @param faceName The face name.
      *
-     * @param checksum The image checksum as sent by the server.
+     * @param faceChecksum The image checksum as sent by the server.
      *
      * @param originalImageIcon The unscaled image as sent by the server; may
      * be <code>null</code> if unknown.
@@ -155,13 +155,13 @@ public class Face
      * @param magicMapImageIcon The image to use for magic map view; may be
      * <code>null</code> if unknown.
      */
-    public Face(final int id, final String name, final int checksum, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
+    public Face(final int faceNum, final String faceName, final int faceChecksum, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
     {
-        if (name == null) throw new IllegalArgumentException();
+        if (faceName == null) throw new IllegalArgumentException();
 
-        this.id = id;
-        this.name = name;
-        this.checksum = checksum;
+        this.faceNum = faceNum;
+        this.faceName = faceName;
+        this.faceChecksum = faceChecksum;
         this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
         this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
         this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
@@ -202,9 +202,9 @@ public class Face
      *
      * @return The face id.
      */
-    public int getID()
+    public int getFaceNum()
     {
-        return id;
+        return faceNum;
     }
 
     /**
@@ -291,8 +291,8 @@ public class Face
      */
     public int getTileWidth()
     {
-        final ImageIcon img = getOriginalImageIcon();
-        return (img.getIconWidth()+31)/32;
+        final ImageIcon imageIcon = getOriginalImageIcon();
+        return (imageIcon.getIconWidth()+31)/32;
     }
 
     /**
@@ -302,8 +302,8 @@ public class Face
      */
     public int getTileHeight()
     {
-        final ImageIcon img = getOriginalImageIcon();
-        return (img.getIconHeight()+31)/32;
+        final ImageIcon imageIcon = getOriginalImageIcon();
+        return (imageIcon.getIconHeight()+31)/32;
     }
 
     /**
@@ -311,9 +311,9 @@ public class Face
      *
      * @return The face name.
      */
-    public String getName()
+    public String getFaceName()
     {
-        return name;
+        return faceName;
     }
 
     /**
@@ -321,15 +321,15 @@ public class Face
      *
      * @return The image checksum.
      */
-    public int getChecksum()
+    public int getFaceChecksum()
     {
-        return checksum;
+        return faceChecksum;
     }
 
     /** {@inheritDoc} */
     @Override public String toString()
     {
-        return name;
+        return faceName;
     }
 
     /**
@@ -341,14 +341,14 @@ public class Face
      */
     private ImageIcon loadOriginalImageIcon()
     {
-        final ImageIcon imageIcon = fileCacheOriginal.load(name, checksum);
+        final ImageIcon imageIcon = fileCacheOriginal.load(faceName, faceChecksum);
         if (imageIcon != null)
         {
             originalImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
-        askfaceManager.queryFace(id);
+        askfaceManager.queryFace(faceNum);
         return originalUnknownImageIcon;
     }
 
@@ -361,14 +361,14 @@ public class Face
      */
     private ImageIcon loadScaledImageIcon()
     {
-        final ImageIcon imageIcon = fileCacheScaled.load(name, checksum);
+        final ImageIcon imageIcon = fileCacheScaled.load(faceName, faceChecksum);
         if (imageIcon != null)
         {
             scaledImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
-        askfaceManager.queryFace(id);
+        askfaceManager.queryFace(faceNum);
         return scaledUnknownImageIcon;
     }
 
@@ -381,14 +381,14 @@ public class Face
      */
     private ImageIcon loadMagicMapImageIcon()
     {
-        final ImageIcon imageIcon = fileCacheMagicMap.load(name, checksum);
+        final ImageIcon imageIcon = fileCacheMagicMap.load(faceName, faceChecksum);
         if (imageIcon != null)
         {
             magicMapImageIcon = new SoftReference<ImageIcon>(imageIcon);
             return imageIcon;
         }
 
-        askfaceManager.queryFace(id);
+        askfaceManager.queryFace(faceNum);
         return magicMapUnknownImageIcon;
     }
 }

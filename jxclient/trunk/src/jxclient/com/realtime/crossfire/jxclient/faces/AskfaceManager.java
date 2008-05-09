@@ -74,9 +74,9 @@ public class AskfaceManager
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
     {
         /** {@inheritDoc} */
-        public void updateFace(final int faceID)
+        public void updateFace(final int faceNum)
         {
-            faceReceived(faceID);
+            faceReceived(faceNum);
         }
     };
 
@@ -106,13 +106,13 @@ public class AskfaceManager
     /**
      * Ask the server to send image info.
      *
-     * @param face the face to query
+     * @param faceNum the face to query
      */
-    public void queryFace(final int face)
+    public void queryFace(final int faceNum)
     {
-        assert face > 0;
+        assert faceNum > 0;
 
-        final Integer faceObject = face;
+        final Integer faceObject = faceNum;
         if (!pendingFaces.add(faceObject))
         {
             // move image to front of queue
@@ -130,16 +130,16 @@ public class AskfaceManager
      */
     private void sendAskface()
     {
-        for (final int face : pendingFacesQueue)
+        for (final int faceNum : pendingFacesQueue)
         {
             if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS)
             {
                 break;
             }
 
-            if (pendingAskfaces.add(face))
+            if (pendingAskfaces.add(faceNum))
             {
-                facesCallback.sendAskface(face);
+                facesCallback.sendAskface(faceNum);
             }
         }
     }
@@ -148,14 +148,14 @@ public class AskfaceManager
      * Notify the askface manager that image information have been received
      * from the server.
      *
-     * @param face The modified face.
+     * @param faceNum The modified face.
      */
-    private void faceReceived(final int face)
+    private void faceReceived(final int faceNum)
     {
-        final Integer faceObject = face;
+        final Integer faceObject = faceNum;
         if (!pendingAskfaces.remove(faceObject))
         {
-            System.err.println("received unexpected image for "+face);
+            System.err.println("received unexpected image for "+faceNum);
         }
         else
         {

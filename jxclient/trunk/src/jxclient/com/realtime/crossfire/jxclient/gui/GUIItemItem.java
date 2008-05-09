@@ -73,7 +73,7 @@ public abstract class GUIItemItem extends GUIItem
             }
 
             final Face face = item.getFace();
-            if (face == null || face.getID() != faceID)
+            if (face == null || face.getFaceNum() != faceID)
             {
                 return;
             }

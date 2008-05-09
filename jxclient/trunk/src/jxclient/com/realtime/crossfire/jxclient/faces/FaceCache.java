@@ -38,18 +38,18 @@ public class FaceCache
      */
     public void addFace(final Face face)
     {
-        faces[face.getID()] = face;
+        faces[face.getFaceNum()] = face;
     }
 
     /**
      * Return a face by face id.
      *
-     * @param id The face id to look up.
+     * @param faceNum The face id to look up.
      *
      * @return The face, or <code>null</code> if the face is not cached.
      */
-    public Face getFace(final int id)
+    public Face getFace(final int faceNum)
     {
-        return faces[id];
+        return faces[faceNum];
     }
 }

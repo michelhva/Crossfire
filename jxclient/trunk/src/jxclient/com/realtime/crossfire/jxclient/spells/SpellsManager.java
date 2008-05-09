@@ -105,35 +105,35 @@ public class SpellsManager
         }
     }
 
-    public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
+    public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
     {
-        faces.askface(face);
+        faces.askface(faceNum);
 
-        final Spell sp = new Spell(faces.getFace(face), tag, name, message);
-        sp.setLevel(level);
-        sp.setCastingTime(castingTime);
-        sp.setMana(mana);
-        sp.setGrace(grace);
-        sp.setDamage(damage);
-        sp.setSkill(skill);
-        addSpell(sp);
+        final Spell spell = new Spell(faces.getFace(faceNum), tag, spellName, message);
+        spell.setLevel(level);
+        spell.setCastingTime(castingTime);
+        spell.setMana(mana);
+        spell.setGrace(grace);
+        spell.setDamage(damage);
+        spell.setSkill(skill);
+        addSpell(spell);
     }
 
-    private void addSpell(final Spell sp)
+    private void addSpell(final Spell spell)
     {
-        final int index = Collections.binarySearch(spells, sp, spellNameComparator);
+        final int index = Collections.binarySearch(spells, spell, spellNameComparator);
         if (index < 0)
         {
-            spells.add(-index-1, sp);
+            spells.add(-index-1, spell);
         }
         else
         {
-            spells.set(index, sp);
+            spells.set(index, spell);
         }
 
         for (final CrossfireSpellChangedListener listener : listeners)
         {
-            listener.spellAdded(sp, index);
+            listener.spellAdded(spell, index);
         }
     }
 
@@ -191,15 +191,15 @@ public class SpellsManager
     /**
      * Find a spell by name.
      *
-     * @param name The spell name to find.
+     * @param spellName The spell name to find.
      *
      * @return The spell, or <code>null</code> if the spell name is undefined.
      */
-    public Spell getSpell(final String name)
+    public Spell getSpell(final String spellName)
     {
         for (final Spell spell : spells)
         {
-            if (spell.getInternalName().equals(name))
+            if (spell.getInternalName().equals(spellName))
             {
                 return spell;
             }
