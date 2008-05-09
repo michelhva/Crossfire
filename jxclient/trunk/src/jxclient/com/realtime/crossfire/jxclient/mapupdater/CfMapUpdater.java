@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -51,7 +52,7 @@ public class CfMapUpdater
     /**
      * The current {@link CfMap} instance.
      */
-    private CfMap map = new CfMap(this);
+    private CfMap map;
 
     /**
      * The listeners to notify about changed map squares.
@@ -80,10 +81,23 @@ public class CfMapUpdater
     private CfMapAnimations visibleAnimations = new CfMapAnimations(0, 0, this);
 
     /**
+     * The map square listener attached to {@link #map}.
+     */
+    private final CfMapSquareListener mapSquareListener = new CfMapSquareListener()
+    {
+        /** {@inheritDoc} */
+        public void squareModified(final CfMapSquare mapSquare)
+        {
+            squares.add(mapSquare);
+        }
+    };
+
+    /**
      * Creates a new instance.
      */
     public CfMapUpdater()
     {
+        map = new CfMap(mapSquareListener);
     }
 
     /**
@@ -425,7 +439,7 @@ public class CfMapUpdater
     {
         this.width = width;
         this.height = height;
-        map = new CfMap(this);
+        map = new CfMap(mapSquareListener);
 
         // force dirty flags to be set for the visible map region
         map.clearSquare(0, 0);
@@ -447,15 +461,5 @@ public class CfMapUpdater
     public CfMap getMap()
     {
         return map;
-    }
-
-    /**
-     * Add a modified square to the current transaction.
-     *
-     * @param mapSquare The map square to add.
-     */
-    public void addModifiedSquare(final CfMapSquare mapSquare)
-    {
-        squares.add(mapSquare);
     }
 }
