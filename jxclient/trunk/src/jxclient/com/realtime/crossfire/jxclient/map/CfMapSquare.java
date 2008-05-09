@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 
 /**
@@ -37,9 +36,9 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 public class CfMapSquare
 {
     /**
-     * The {@link CfMapUpdater} instance to notify.
+     * The {@link CfMapSquareListener} instance to notify.
      */
-    private final CfMapUpdater mapUpdater;
+    private final CfMapSquareListener mapSquareListener;
 
     /**
      * The absolute x-coordinate of this square in its {@link CfMap}.
@@ -78,7 +77,7 @@ public class CfMapSquare
     /**
      * Create a new (empty) square.
      *
-     * @param mapUpdater the map updater to notify
+     * @param mapSquareListener the map square listener to notify
      * 
      * @param x The absolute map x-coordinate of the top left corner of this
      * patch.
@@ -86,9 +85,9 @@ public class CfMapSquare
      * @param y The absolute map y-coordinate of the top left corner of this
      * patch.
      */
-    public CfMapSquare(final CfMapUpdater mapUpdater, final int x, final int y)
+    public CfMapSquare(final CfMapSquareListener mapSquareListener, final int x, final int y)
     {
-        this.mapUpdater = mapUpdater;
+        this.mapSquareListener = mapSquareListener;
         this.x = x;
         this.y = y;
     }
@@ -118,7 +117,7 @@ public class CfMapSquare
      */
     public void dirty()
     {
-        mapUpdater.addModifiedSquare(this);
+        mapSquareListener.squareModified(this);
     }
 
     /**

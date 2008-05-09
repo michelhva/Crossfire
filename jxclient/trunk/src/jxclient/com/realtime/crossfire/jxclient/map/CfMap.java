@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import java.awt.Point;
 import java.util.HashMap;
@@ -38,9 +37,9 @@ import java.util.Map;
 public class CfMap
 {
     /**
-     * The {@link CfMapUpdater} instance to notify.
+     * The {@link CfMapSquareListener} instance to notify.
      */
-    private final CfMapUpdater mapUpdater;
+    private final CfMapSquareListener mapSquareListener;
 
     /**
      * The left edge of the defined tiles.
@@ -111,11 +110,11 @@ public class CfMap
 
     /**
      * Create a new (empty) map.
-     * @param mapUpdater the map updater instance to notify
+     * @param mapSquareListener the map square listener instance to notify
      */
-    public CfMap(final CfMapUpdater mapUpdater)
+    public CfMap(final CfMapSquareListener mapSquareListener)
     {
-        this.mapUpdater = mapUpdater;
+        this.mapSquareListener = mapSquareListener;
     }
 
     /**
@@ -479,7 +478,7 @@ public class CfMap
 
         if (patch[px][py] == null)
         {
-            patch[px][py] = new CfMapPatch(mapUpdater, x-patchX-ox, y-patchY-oy);
+            patch[px][py] = new CfMapPatch(mapSquareListener, x-patchX-ox, y-patchY-oy);
         }
 
         return true;
