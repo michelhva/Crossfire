@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 
 /**
  * Represents a square area of {@link CfMapSquare}s.
@@ -46,19 +47,21 @@ public class CfMapPatch
     /**
      * Create a new (empty) patch.
      *
+     * @param mapUpdater the map updater to notify.
+     *
      * @param x0 The absolute map x-coordinate of the top left corner of this
      * patch.
      *
      * @param y0 The absolute map y-coordinate of the top left corner of this
      * patch.
      */
-    public CfMapPatch(final int x0, final int y0)
+    public CfMapPatch(final CfMapUpdater mapUpdater, final int x0, final int y0)
     {
         for (int y = 0; y < SIZE; y++)
         {
             for (int x = 0; x < SIZE; x++)
             {
-                square[x][y] = new CfMapSquare(x0+x, y0+y);
+                square[x][y] = new CfMapSquare(mapUpdater, x0+x, y0+y);
             }
         }
     }

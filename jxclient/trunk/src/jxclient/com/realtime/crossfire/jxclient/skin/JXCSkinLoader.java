@@ -144,6 +144,8 @@ public abstract class JXCSkinLoader implements JXCSkin
 
     private final Stats stats;
 
+    private final CfMapUpdater mapUpdater;
+
     /**
      * Available resolutions for this skin.
      */
@@ -219,11 +221,12 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats, final CfMapUpdater mapUpdater)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.stats = stats;
+        this.mapUpdater = mapUpdater;
     }
 
     /**
@@ -986,7 +989,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final GUICommandList commandList = getCommandList(args[2]);
-                                CfMapUpdater.addCrossfireMapscrollListener(new CrossfireMapscrollListener()
+                                mapUpdater.addCrossfireMapscrollListener(new CrossfireMapscrollListener()
                                     {
                                         /** {@inheritDoc} */
                                         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
@@ -1412,7 +1415,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server);
+                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("map"))
@@ -1438,7 +1441,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             mapWidth = tmpW;
                             mapHeight = tmpH;
 
-                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server);
+                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, mapUpdater);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("meta_element"))

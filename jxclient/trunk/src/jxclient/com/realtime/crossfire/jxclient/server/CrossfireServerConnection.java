@@ -84,6 +84,11 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     private final Faces faces;
 
     /**
+     * The {@link CfMapUpdater} instance to update.
+     */
+    private final CfMapUpdater mapUpdater;
+
+    /**
      * The map width in tiles that is negotiated with the server.
      */
     private int mapWidth = 17;
@@ -245,13 +250,16 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      * @param stats the instance to update
      *
      * @param faces the instance to update
+     *
+     * @param mapUpdater the instance to update
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats, final Faces faces)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats, final Faces faces, final CfMapUpdater mapUpdater)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.stats = stats;
         this.faces = faces;
+        this.mapUpdater = mapUpdater;
         this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
         this.animations = animations;
@@ -823,7 +831,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 debugProtocolWrite("recv image face="+face+" len="+len+"\n");
                             }
                             final int pixmap = faces.setImage(face, packet, pos, len);
-                            CfMapUpdater.updateFace(pixmap);
+                            mapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
                                 listener.updateFace(pixmap);
@@ -843,7 +851,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 debugProtocolWrite("recv image2 face="+face+" set="+set+" len="+len+"\n");
                             }
                             final int pixmap = faces.setImage(face, packet, pos, len);
-                            CfMapUpdater.updateFace(pixmap);
+                            mapUpdater.updateFace(pixmap);
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
                                 listener.updateFace(pixmap);
@@ -1055,7 +1063,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                 {
                     debugProtocolWrite("recv newmap\n");
                 }
-                CfMapUpdater.processNewmap(mapWidth, mapHeight);
+                mapUpdater.processNewmap(mapWidth, mapHeight);
                 return;
 
             case 'p':
@@ -1436,7 +1444,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         debugProtocolWrite("recv tick "+tickno+"\n");
                     }
-                    CfMapUpdater.processTick(tickno);
+                    mapUpdater.processTick(tickno);
                 }
                 return;
 
@@ -1612,7 +1620,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
     {
         synchronized (redrawSemaphore)
         {
-            CfMapUpdater.processMapBegin();
+            mapUpdater.processMapBegin();
             if (debugProtocol != null)
             {
                 debugProtocolWrite("recv map2 begin\n");
@@ -1646,7 +1654,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv map2 "+x+"/"+y+" clear\n");
                             }
-                            CfMapUpdater.processMapClear(x, y);
+                            mapUpdater.processMapClear(x, y);
                             break;
 
                         case 1: // darkness information
@@ -1656,7 +1664,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                             {
                                 debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness+"\n");
                             }
-                            CfMapUpdater.processMapDarkness(x, y, darkness);
+                            mapUpdater.processMapDarkness(x, y, darkness);
                             break;
 
                         case 0x10: // image information
@@ -1677,7 +1685,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" face="+face+"\n");
                                 }
-                                CfMapUpdater.processMapFace(x, y, type-0x10, face, faces);
+                                mapUpdater.processMapFace(x, y, type-0x10, face, faces);
                             }
                             else
                             {
@@ -1687,7 +1695,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3)+"\n");
                                 }
-                                CfMapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3, faces);
+                                mapUpdater.processMapAnimation(x, y, type-0x10, animation, (face>>13)&3, faces);
                             }
                             if (len == 3)
                             {
@@ -1712,7 +1720,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                     {
                                         debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
                                     }
-                                    CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
+                                    mapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
                                 }
                             }
                             else if (len == 4)
@@ -1727,7 +1735,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                                 {
                                     debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
                                 }
-                                CfMapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
+                                mapUpdater.processMapAnimationSpeed(x, y, type-0x10, animSpeed);
 
                                 final int smooth = packet[pos++]&0xFF;
                                 if (debugProtocol != null)
@@ -1753,7 +1761,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
                     {
                         debugProtocolWrite("recv map2 "+x+"/"+y+" scroll\n");
                     }
-                    CfMapUpdater.processScroll(x, y);
+                    mapUpdater.processScroll(x, y);
                     break;
 
                 default:
@@ -1768,7 +1776,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
             {
                 debugProtocolWrite("recv map2 end\n");
             }
-            CfMapUpdater.processMapEnd(true);
+            mapUpdater.processMapEnd(true);
         }
     }
 
@@ -1780,7 +1788,7 @@ public class CrossfireServerConnection extends ServerConnection implements Faces
      */
     private void cmd_version(final int csval, final int scval, final String vinfo)
     {
-        CfMapUpdater.processNewmap(mapWidth, mapHeight);
+        mapUpdater.processNewmap(mapWidth, mapHeight);
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MessageTypes.getAllTypes());
         sendSetup(

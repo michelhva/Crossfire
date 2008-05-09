@@ -68,6 +68,11 @@ public class GUIMap extends GUIElement
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
+     * The map updater instance.
+     */
+    private final CfMapUpdater mapUpdater;
+
+    /**
      * The map width in tiles.
      */
     private int mapWidth = 0;
@@ -239,7 +244,7 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = displayMinX; xx < displayMaxX; xx++)
                         {
-                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
 
@@ -247,7 +252,7 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = displayMinX; xx < displayMaxX; xx++)
                         {
-                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
 
@@ -255,12 +260,12 @@ public class GUIMap extends GUIElement
                     {
                         for (int xx = displayMinX; xx < Math.min(x, displayMaxX); xx++)
                         {
-                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
 
                         for (int xx = Math.max(x+w, displayMinX); xx < displayMaxX; xx++)
                         {
-                            redrawSquare(g, CfMapUpdater.getMap(), xx, yy);
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
                 }
@@ -302,14 +307,17 @@ public class GUIMap extends GUIElement
      *
      * @param crossfireServerConnection the connection instance
      *
+     * @param mapUpdater the map updater instance
+     * 
      * @param tileSize The size of one tile in pixels.
      *
      * @throws IOException If an I/O error occurs.
      */
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection) throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater) throws IOException
     {
         super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
+        this.mapUpdater = mapUpdater;
         if (tileSize == 32)
         {
             useBigImages = false;
@@ -329,9 +337,9 @@ public class GUIMap extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
 
-        CfMapUpdater.addCrossfireMapListener(crossfireMapListener);
-        CfMapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
-        CfMapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
+        mapUpdater.addCrossfireMapListener(crossfireMapListener);
+        mapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
+        mapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
 
         crossfireServerConnection.addMapSizeListener(mapSizeListener);
         setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
@@ -346,7 +354,7 @@ public class GUIMap extends GUIElement
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, w, h);
 
-        final CfMap map = CfMapUpdater.getMap();
+        final CfMap map = mapUpdater.getMap();
         for (int y = displayMinY; y < displayMaxY; y++)
         {
             for (int x = displayMinX; x < displayMaxX; x++)

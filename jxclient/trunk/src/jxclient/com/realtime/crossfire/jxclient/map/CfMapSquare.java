@@ -37,6 +37,11 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 public class CfMapSquare
 {
     /**
+     * The {@link CfMapUpdater} instance to notify.
+     */
+    private final CfMapUpdater mapUpdater;
+
+    /**
      * The absolute x-coordinate of this square in its {@link CfMap}.
      */
     private final int x;
@@ -73,14 +78,17 @@ public class CfMapSquare
     /**
      * Create a new (empty) square.
      *
+     * @param mapUpdater the map updater to notify
+     * 
      * @param x The absolute map x-coordinate of the top left corner of this
      * patch.
      *
      * @param y The absolute map y-coordinate of the top left corner of this
      * patch.
      */
-    public CfMapSquare(final int x, final int y)
+    public CfMapSquare(final CfMapUpdater mapUpdater, final int x, final int y)
     {
+        this.mapUpdater = mapUpdater;
         this.x = x;
         this.y = y;
     }
@@ -110,7 +118,7 @@ public class CfMapSquare
      */
     public void dirty()
     {
-        CfMapUpdater.addModifiedSquare(this);
+        mapUpdater.addModifiedSquare(this);
     }
 
     /**

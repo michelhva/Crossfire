@@ -46,6 +46,11 @@ public class CfMapAnimations
     private final int height;
 
     /**
+     * The {@link CfMapUpdater} instance to update.
+     */
+    private final CfMapUpdater mapUpdater;
+    
+    /**
      * The animations in the visible map area.
      */
     private final Map<Location, AnimationState> animations = new HashMap<Location, AnimationState>();
@@ -62,11 +67,14 @@ public class CfMapAnimations
      * @param width The visible map width.
      *
      * @param height The visible map height.
+     *
+     * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(final int width, final int height)
+    public CfMapAnimations(final int width, final int height, final CfMapUpdater mapUpdater)
     {
         this.width = width;
         this.height = height;
+        this.mapUpdater = mapUpdater;
     }
 
     /**
@@ -100,7 +108,7 @@ public class CfMapAnimations
         assert 0 <= type && type < 4;
 
         final Location location = new Location(x, y, layer);
-        final AnimationState animationState = new AnimationState(animation, type, faces);
+        final AnimationState animationState = new AnimationState(animation, type, faces, mapUpdater);
         animations.put(location, animationState);
         animationState.draw(location, -1);
     }
@@ -210,13 +218,13 @@ public class CfMapAnimations
             return;
         }
 
-        CfMapUpdater.processMapBegin();
+        mapUpdater.processMapBegin();
         for (final Map.Entry<Location, AnimationState> e : animations.entrySet())
         {
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
             animationState.updateTickno(tickno, location);
         }
-        CfMapUpdater.processMapEnd(false);
+        mapUpdater.processMapEnd(false);
     }
 }

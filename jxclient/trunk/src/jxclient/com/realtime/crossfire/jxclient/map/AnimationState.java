@@ -46,6 +46,11 @@ public class AnimationState
     private final Faces faces;
 
     /**
+     * The {@link CfMapUpdater} instance to use.
+     */
+    private final CfMapUpdater mapUpdater;
+    
+    /**
      * The animation speed.
      */
     private int speed = 1;
@@ -68,12 +73,15 @@ public class AnimationState
      * @param type The animation type.
      *
      * @param faces The instance for looking up faces.
+     *
+     * @param mapUpdater the instance to use
      */
-    public AnimationState(final Animation animation, final int type, final Faces faces)
+    public AnimationState(final Animation animation, final int type, final Faces faces, final CfMapUpdater mapUpdater)
     {
         this.animation = animation;
         this.type = type;
         this.faces = faces;
+        this.mapUpdater = mapUpdater;
     }
 
     /**
@@ -142,6 +150,6 @@ public class AnimationState
         }
 
         final int face = animation.getFace(faceIndex);
-        CfMapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face, faces);
+        mapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face, faces);
     }
 }

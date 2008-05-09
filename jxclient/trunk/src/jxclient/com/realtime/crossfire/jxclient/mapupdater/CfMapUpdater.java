@@ -41,48 +41,48 @@ public class CfMapUpdater
     /**
      * The width of the visible map area.
      */
-    private static int width = 0;
+    private int width = 0;
 
     /**
      * The height of the visible map area.
      */
-    private static int height = 0;
+    private int height = 0;
 
     /**
      * The current {@link CfMap} instance.
      */
-    private static CfMap map = new CfMap();
+    private CfMap map = new CfMap(this);
 
     /**
      * The listeners to notify about changed map squares.
      */
-    private static final List<CrossfireMapListener> mapListeners = new ArrayList<CrossfireMapListener>();
+    private final List<CrossfireMapListener> mapListeners = new ArrayList<CrossfireMapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
-    private static final List<CrossfireNewmapListener> newmapListeners = new ArrayList<CrossfireNewmapListener>();
+    private final List<CrossfireNewmapListener> newmapListeners = new ArrayList<CrossfireNewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
-    private static final List<CrossfireMapscrollListener> mapscrollListeners = new ArrayList<CrossfireMapscrollListener>();
+    private final List<CrossfireMapscrollListener> mapscrollListeners = new ArrayList<CrossfireMapscrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
      * #processMapBegin()} and {@link #processMapEnd(boolean)}.
      */
-    private static final Set<CfMapSquare> squares = new HashSet<CfMapSquare>();
+    private final Set<CfMapSquare> squares = new HashSet<CfMapSquare>();
 
     /**
      * The animations in the visible map area.
      */
-    private static CfMapAnimations visibleAnimations = new CfMapAnimations(0, 0);
+    private CfMapAnimations visibleAnimations = new CfMapAnimations(0, 0, this);
 
     /**
-     * Private constructor to prevent instantiation.
+     * Creates a new instance.
      */
-    private CfMapUpdater()
+    public CfMapUpdater()
     {
     }
 
@@ -91,7 +91,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireMapListener(final CrossfireMapListener listener)
+    public void addCrossfireMapListener(final CrossfireMapListener listener)
     {
         mapListeners.add(listener);
     }
@@ -101,7 +101,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireMapListener(final CrossfireMapListener listener)
+    public void removeCrossfireMapListener(final CrossfireMapListener listener)
     {
         mapListeners.remove(listener);
     }
@@ -111,7 +111,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireNewmapListener(final CrossfireNewmapListener listener)
+    public void addCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
         newmapListeners.add(listener);
     }
@@ -121,7 +121,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireNewmapListener(final CrossfireNewmapListener listener)
+    public void removeCrossfireNewmapListener(final CrossfireNewmapListener listener)
     {
         newmapListeners.remove(listener);
     }
@@ -131,7 +131,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public static void addCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
+    public void addCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
         mapscrollListeners.add(listener);
     }
@@ -141,7 +141,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public static void removeCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
+    public void removeCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
     {
         mapscrollListeners.remove(listener);
     }
@@ -149,7 +149,7 @@ public class CfMapUpdater
     /**
      * Reset the animation state.
      */
-    public static void reset()
+    public void reset()
     {
         visibleAnimations.clear();
     }
@@ -157,7 +157,7 @@ public class CfMapUpdater
     /**
      * Start processing of a set of map square changes.
      */
-    public static void processMapBegin()
+    public void processMapBegin()
     {
         squares.clear();
     }
@@ -169,7 +169,7 @@ public class CfMapUpdater
      *
      * @param y The y-coordinate of the square.
      */
-    public static void processMapClear(final int x, final int y)
+    public void processMapClear(final int x, final int y)
     {
         visibleAnimations.remove(x, y);
         map.clearSquare(x, y);
@@ -188,7 +188,7 @@ public class CfMapUpdater
      *
      * @param faces The instance for looking up faces.
      */
-    public static void processMapFace(final int x, final int y, final int layer, final int face, final Faces faces)
+    public void processMapFace(final int x, final int y, final int layer, final int face, final Faces faces)
     {
         final Face f;
         if (face == 0)
@@ -219,7 +219,7 @@ public class CfMapUpdater
      *
      * @param faces The instance for looking up faces.
      */
-    public static void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
+    public void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
     {
         visibleAnimations.add(x, y, layer, animation, type, faces);
     }
@@ -235,7 +235,7 @@ public class CfMapUpdater
      *
      * @param animationSpeed The animation speed to set.
      */
-    public static void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
+    public void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
     {
         visibleAnimations.updateSpeed(x, y, layer, animationSpeed);
     }
@@ -245,7 +245,7 @@ public class CfMapUpdater
      *
      * @param tickno The tick number.
      */
-    public static void processTick(final int tickno)
+    public void processTick(final int tickno)
     {
         visibleAnimations.tick(tickno);
     }
@@ -259,7 +259,7 @@ public class CfMapUpdater
      *
      * @param darkness The darkness value to set.
      */
-    public static void processMapDarkness(final int x, final int y, final int darkness)
+    public void processMapDarkness(final int x, final int y, final int darkness)
     {
         map.setDarkness(x, y, darkness);
     }
@@ -271,7 +271,7 @@ public class CfMapUpdater
      * @param alwaysProcess If set, notify listeners even if no changes are
      * present.
      */
-    public static void processMapEnd(final boolean alwaysProcess)
+    public void processMapEnd(final boolean alwaysProcess)
     {
         if (!alwaysProcess && squares.isEmpty())
         {
@@ -302,7 +302,7 @@ public class CfMapUpdater
      *
      * @param faces The instance for looking up faces.
      */
-    private static void setMultiFace(final int x, final int y, final int layer, final int face, final Faces faces)
+    private void setMultiFace(final int x, final int y, final int layer, final int face, final Faces faces)
     {
         if (face == -1)
         {
@@ -320,7 +320,7 @@ public class CfMapUpdater
      *
      * @param dy The distance to scroll in y-direction in squares.
      */
-    public static void processScroll(final int dx, final int dy)
+    public void processScroll(final int dx, final int dy)
     {
         map.clearMultiFaces();
 
@@ -393,7 +393,7 @@ public class CfMapUpdater
      *
      * @param face The face that has changed.
      */
-    public static void updateFace(final int face)
+    public void updateFace(final int face)
     {
         processMapBegin();
 
@@ -421,17 +421,17 @@ public class CfMapUpdater
      * @param width the width of the visible map area
      * @param height the height of the visible map area
      */
-    public static void processNewmap(final int width, final int height)
+    public void processNewmap(final int width, final int height)
     {
-        CfMapUpdater.width = width;
-        CfMapUpdater.height = height;
-        map = new CfMap();
+        this.width = width;
+        this.height = height;
+        map = new CfMap(this);
 
         // force dirty flags to be set for the visible map region
         map.clearSquare(0, 0);
         map.clearSquare(width-1, height-1);
 
-        visibleAnimations = new CfMapAnimations(width, height);
+        visibleAnimations = new CfMapAnimations(width, height, this);
 
         for (final CrossfireNewmapListener listener : newmapListeners)
         {
@@ -444,7 +444,7 @@ public class CfMapUpdater
      *
      * @return The current map instance.
      */
-    public static CfMap getMap()
+    public CfMap getMap()
     {
         return map;
     }
@@ -454,7 +454,7 @@ public class CfMapUpdater
      *
      * @param mapSquare The map square to add.
      */
-    public static void addModifiedSquare(final CfMapSquare mapSquare)
+    public void addModifiedSquare(final CfMapSquare mapSquare)
     {
         squares.add(mapSquare);
     }

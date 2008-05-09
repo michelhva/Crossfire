@@ -142,6 +142,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final Stats stats = new Stats();
 
     /**
+     * The {@link CfMapUpdater} instance.
+     */
+    private final CfMapUpdater mapUpdater = new CfMapUpdater();
+
+    /**
      * The global experience table.
      */
     private final ExperienceTable experienceTable = new ExperienceTable();
@@ -425,8 +430,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats, faces);
-        CfMapUpdater.reset();
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats, faces, mapUpdater);
+        mapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(stats, server);
         activeSkillWatcher = new ActiveSkillWatcher(stats, server);
@@ -1486,12 +1491,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             final File dir = new File(skinName);
             if (dir.exists() && dir.isDirectory())
             {
-                skin = new JXCSkinDirLoader(itemsManager, spellsManager, stats, dir);
+                skin = new JXCSkinDirLoader(itemsManager, spellsManager, stats, mapUpdater, dir);
             }
             else
             {
                 // fallback: built-in resource
-                skin = new JXCSkinClassLoader(itemsManager, spellsManager, stats, "com/realtime/crossfire/jxclient/skins/"+skinName);
+                skin = new JXCSkinClassLoader(itemsManager, spellsManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
             }
             skin.load(server, this, resolution);
         }
