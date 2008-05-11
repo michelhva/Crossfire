@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
- * #LAYERS} faces as well as a darkness value.
+ * CrossfireMap2Command#NUM_LAYERS} faces as well as a darkness value.
  *
  * <p>This class assumes that the "head" part of a face is the part the server
  * did sent. This is the bottom-right part for multi-square objects. Not that
