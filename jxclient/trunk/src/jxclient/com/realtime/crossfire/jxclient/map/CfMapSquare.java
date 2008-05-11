@@ -278,4 +278,10 @@ public class CfMapSquare
         dirty();
         return true;
     }
+
+    /** {@inheritDoc} */
+    public String toString()
+    {
+        return x+"/"+y;
+    }
 }
