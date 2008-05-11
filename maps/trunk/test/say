@@ -1,0 +1,423 @@
+arch map
+name say
+width 10
+height 10
+msg
+Created:  2008-05-11 Nicolas Weeger
+Modified: 2008-05-11 Nicolas Weeger
+endmsg
+end
+arch pstone_4
+end
+arch pstone_4
+y 1
+end
+arch pstone_4
+y 2
+end
+arch pstone_4
+y 3
+end
+arch pstone_4
+y 4
+end
+arch pstone_4
+y 5
+end
+arch pstone_4
+y 6
+end
+arch pstone_4
+y 7
+end
+arch pstone_4
+y 8
+end
+arch pstone_4
+y 9
+end
+arch pstone_4
+x 1
+end
+arch pstone_4
+x 1
+y 1
+end
+arch magic_ear
+x 1
+y 1
+invisible 0
+connected 5
+end
+arch pstone_4
+x 1
+y 2
+end
+arch pstone_4
+x 1
+y 3
+end
+arch pstone_4
+x 1
+y 4
+end
+arch pstone_4
+x 1
+y 5
+end
+arch pstone_4
+x 1
+y 6
+end
+arch pstone_4
+x 1
+y 7
+end
+arch pstone_4
+x 1
+y 8
+end
+arch pstone_4
+x 1
+y 9
+end
+arch pstone_4
+x 2
+end
+arch pstone_4
+x 2
+y 1
+end
+arch gate_closed_2
+x 2
+y 1
+connected 5
+end
+arch pstone_4
+x 2
+y 2
+end
+arch pstone_4
+x 2
+y 3
+end
+arch pstone_4
+x 2
+y 4
+end
+arch pstone_4
+x 2
+y 5
+end
+arch pstone_4
+x 2
+y 6
+end
+arch pstone_4
+x 2
+y 7
+end
+arch pstone_4
+x 2
+y 8
+end
+arch pstone_4
+x 2
+y 9
+end
+arch pstone_4
+x 3
+end
+arch pstone_4
+x 3
+y 1
+end
+arch pstone_4
+x 3
+y 2
+end
+arch pstone_4
+x 3
+y 3
+end
+arch pstone_4
+x 3
+y 4
+end
+arch pstone_4
+x 3
+y 5
+end
+arch pstone_4
+x 3
+y 6
+end
+arch pstone_4
+x 3
+y 7
+end
+arch pstone_4
+x 3
+y 8
+end
+arch pstone_4
+x 3
+y 9
+end
+arch pstone_4
+x 4
+end
+arch pstone_4
+x 4
+y 1
+end
+arch pstone_4
+x 4
+y 2
+end
+arch pstone_4
+x 4
+y 3
+end
+arch pstone_4
+x 4
+y 4
+end
+arch pstone_4
+x 4
+y 5
+end
+arch pstone_4
+x 4
+y 6
+end
+arch pstone_4
+x 4
+y 7
+end
+arch pstone_4
+x 4
+y 8
+end
+arch pstone_4
+x 4
+y 9
+end
+arch pstone_4
+x 5
+end
+arch pstone_4
+x 5
+y 1
+end
+arch pstone_4
+x 5
+y 2
+end
+arch pstone_4
+x 5
+y 3
+end
+arch pstone_4
+x 5
+y 4
+end
+arch pstone_4
+x 5
+y 5
+end
+arch pstone_4
+x 5
+y 6
+end
+arch pstone_4
+x 5
+y 7
+end
+arch pstone_4
+x 5
+y 8
+end
+arch pstone_4
+x 5
+y 9
+end
+arch pstone_4
+x 6
+end
+arch pstone_4
+x 6
+y 1
+end
+arch pstone_4
+x 6
+y 2
+end
+arch pstone_4
+x 6
+y 3
+end
+arch pstone_4
+x 6
+y 4
+end
+arch pstone_4
+x 6
+y 5
+end
+arch pstone_4
+x 6
+y 6
+end
+arch pstone_4
+x 6
+y 7
+end
+arch pstone_4
+x 6
+y 8
+end
+arch pstone_4
+x 6
+y 9
+end
+arch pstone_4
+x 7
+end
+arch pstone_4
+x 7
+y 1
+end
+arch pstone_4
+x 7
+y 2
+end
+arch pstone_4
+x 7
+y 3
+end
+arch pstone_4
+x 7
+y 4
+end
+arch pstone_4
+x 7
+y 5
+end
+arch pstone_4
+x 7
+y 6
+end
+arch pstone_4
+x 7
+y 7
+end
+arch pstone_4
+x 7
+y 8
+end
+arch fighter
+msg
+@match test
+Yes, to make sure everything works.
+@match dialog
+@question rewritten Why is it being rewritten?
+It is being rewritten...
+@match rewritten
+Well, it was really not that powerful...
+@match yes
+It seems this works...
+@match *
+@question test Test the dialog system?
+@question dialog The dialog system?
+@reply yes Yes, please.
+hello, I'm an NPC to test the dialog system.
+
+You want me to explain something?
+endmsg
+x 7
+y 8
+stand_still 1
+end
+arch pstone_4
+x 7
+y 9
+end
+arch pstone_4
+x 8
+end
+arch pstone_4
+x 8
+y 1
+end
+arch pstone_4
+x 8
+y 2
+end
+arch pstone_4
+x 8
+y 3
+end
+arch pstone_4
+x 8
+y 4
+end
+arch pstone_4
+x 8
+y 5
+end
+arch pstone_4
+x 8
+y 6
+end
+arch pstone_4
+x 8
+y 7
+end
+arch pstone_4
+x 8
+y 8
+end
+arch pstone_4
+x 8
+y 9
+end
+arch pstone_4
+x 9
+end
+arch pstone_4
+x 9
+y 1
+end
+arch pstone_4
+x 9
+y 2
+end
+arch pstone_4
+x 9
+y 3
+end
+arch pstone_4
+x 9
+y 4
+end
+arch pstone_4
+x 9
+y 5
+end
+arch pstone_4
+x 9
+y 6
+end
+arch pstone_4
+x 9
+y 7
+end
+arch pstone_4
+x 9
+y 8
+end
+arch pstone_4
+x 9
+y 9
+end
