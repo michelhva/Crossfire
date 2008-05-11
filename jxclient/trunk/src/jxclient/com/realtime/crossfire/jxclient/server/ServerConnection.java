@@ -30,7 +30,7 @@ package com.realtime.crossfire.jxclient.server;
  */
 public abstract class ServerConnection implements PacketListener
 {
-    private final Object clientSocketSem = "clientSocketSem";
+    private final Object clientSocketSem = new Object();
 
     private ClientSocket clientSocket = null;
 
