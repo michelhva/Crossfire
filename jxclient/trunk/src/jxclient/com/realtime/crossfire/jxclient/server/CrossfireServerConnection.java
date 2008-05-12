@@ -1925,13 +1925,36 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private void processImageInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
-        final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
-        final String info = d.readLine();
-        if (info == null)
+        final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
+        try
         {
-            throw new IOException("Truncated parameter in image_info");
+            final InputStreamReader isr = new InputStreamReader(is);
+            try
+            {
+                final BufferedReader d = new BufferedReader(isr);
+                try
+                {
+                    final String info = d.readLine();
+                    if (info == null)
+                    {
+                        throw new IOException("Truncated parameter in image_info");
+                    }
+                    final int nrpics = Integer.parseInt(info);
+                }
+                finally
+                {
+                    d.close();
+                }
+            }
+            finally
+            {
+                isr.close();
+            }
         }
-        final int nrpics = Integer.parseInt(info);
+        finally
+        {
+            is.close();
+        }
         sendAddme();
     }
 
@@ -1945,40 +1968,63 @@ public class CrossfireServerConnection extends ServerConnection
     private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         Stats.clearSkills();
-        final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
-        for (;;)
+        final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
+        try
         {
-            final String r = d.readLine();
-            if (r == null)
-            {
-                break;
-            }
-
-            final String[] sk = patternDot.split(r, 2);
-            if (sk.length != 2)
-            {
-                System.err.println("Ignoring skill definition for invalid skill: "+r+".");
-                continue;
-            }
-
-            final int skillId;
+            final InputStreamReader isr = new InputStreamReader(is);
             try
             {
-                skillId = Integer.parseInt(sk[0]);
-            }
-            catch (final NumberFormatException ex)
-            {
-                System.err.println("Ignoring skill definition for invalid skill: "+r+".");
-                continue;
-            }
+                final BufferedReader d = new BufferedReader(isr);
+                try
+                {
+                    for (;;)
+                    {
+                        final String r = d.readLine();
+                        if (r == null)
+                        {
+                            break;
+                        }
 
-            if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
-            {
-                System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
-                continue;
-            }
+                        final String[] sk = patternDot.split(r, 2);
+                        if (sk.length != 2)
+                        {
+                            System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                            continue;
+                        }
 
-            Stats.addSkill(skillId, sk[1]);
+                        final int skillId;
+                        try
+                        {
+                            skillId = Integer.parseInt(sk[0]);
+                        }
+                        catch (final NumberFormatException ex)
+                        {
+                            System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                            continue;
+                        }
+
+                        if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+                        {
+                            System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
+                            continue;
+                        }
+
+                        Stats.addSkill(skillId, sk[1]);
+                    }
+                }
+                finally
+                {
+                    d.close();
+                }
+            }
+            finally
+            {
+                isr.close();
+            }
+        }
+        finally
+        {
+            is.close();
         }
     }
 
