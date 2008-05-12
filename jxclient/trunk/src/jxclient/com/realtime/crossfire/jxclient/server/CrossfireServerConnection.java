@@ -1137,13 +1137,10 @@ public class CrossfireServerConnection extends ServerConnection
                     {
                         debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name+"\n");
                     }
-                    stats.resetSkills();
                     for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                     {
                         crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
                     }
-                    stats.setStat(Stats.C_STAT_WEIGHT, weight);
-                    stats.setStatsProcessed(false);
                 }
                 return;
 
