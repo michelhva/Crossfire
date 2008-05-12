@@ -1046,7 +1046,7 @@ public class CrossfireServerConnection extends ServerConnection
                         {
                         case '2':
                             if (packet[pos++] != ' ') break;
-                            cmd_map2(packet, pos, end);
+                            cmdMap2(packet, pos, end);
                             return;
 
                         case 'e':
@@ -1063,7 +1063,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 debugProtocolWrite("recv mapextended\n");
                             }
                             dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                            cmd_mapextended(dis);
+                            cmdMapextended(dis);
                             return;
                         }
                         break;
@@ -1185,7 +1185,7 @@ public class CrossfireServerConnection extends ServerConnection
                     }
                     try
                     {
-                        cmd_replyinfo(infoType, packet, pos+1, end);
+                        cmdReplyinfo(infoType, packet, pos+1, end);
                     }
                     catch (final IOException ex)
                     {
@@ -1228,7 +1228,7 @@ public class CrossfireServerConnection extends ServerConnection
                     {
                         throw new UnknownCommandException("odd number of arguments in setup command");
                     }
-                    cmd_setup(options);
+                    cmdSetup(options);
                     return;
 
                 case 'm':
@@ -1606,7 +1606,7 @@ public class CrossfireServerConnection extends ServerConnection
                         debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo+"\n");
                     }
 
-                    cmd_version(csval, scval, vinfo);
+                    cmdVersion(csval, scval, vinfo);
                 }
                 return;
             }
@@ -1662,7 +1662,7 @@ public class CrossfireServerConnection extends ServerConnection
      *
      * @throws UnknownCommandException If the command cannot be parsed.
      */
-    private void cmd_map2(final byte[] packet, final int start, final int end) throws UnknownCommandException
+    private void cmdMap2(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         synchronized (redrawSemaphore)
         {
@@ -1859,7 +1859,7 @@ public class CrossfireServerConnection extends ServerConnection
      * @param scval The server version.
      * @param vinfo The version information string.
      */
-    private void cmd_version(final int csval, final int scval, final String vinfo)
+    private void cmdVersion(final int csval, final int scval, final String vinfo)
     {
         for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
         {
@@ -1896,7 +1896,7 @@ public class CrossfireServerConnection extends ServerConnection
      * @param endPos The end offset into <code>packet</code>.
      * @throws IOException If an I/O error occurs.
      */
-    private void cmd_replyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
+    private void cmdReplyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         if (infoType.equals("image_info"))
         {
@@ -1975,7 +1975,7 @@ public class CrossfireServerConnection extends ServerConnection
      * @param options The option/value pairs.
      * @throws UnknownCommandException If a protocol error occurs
      */
-    private void cmd_setup(final List<String> options) throws UnknownCommandException
+    private void cmdSetup(final List<String> options) throws UnknownCommandException
     {
         for (int i = 0; i+1 < options.size(); i += 2)
         {
@@ -2066,7 +2066,7 @@ public class CrossfireServerConnection extends ServerConnection
      * @param dis The DataInputStream holding the content of the message.
      * @since 1.0
      */
-    private void cmd_mapextended(final DataInputStream dis)
+    private void cmdMapextended(final DataInputStream dis)
     {
         // XXX: "MapExtended" command not yet implemented
     }
