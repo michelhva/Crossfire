@@ -20,9 +20,9 @@
 package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.stats.StatsEvent;
+import com.realtime.crossfire.jxclient.stats.StatsListener;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -37,13 +37,13 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     private final String skill;
 
     /**
-     * The {@link CrossfireStatsListener} registered to be notified about stat
+     * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        public void statChanged(final StatsEvent evt)
         {
             setValues(evt.getStats().getActiveSkill().equals(skill) ? 1 : 0, 0, 1);
         }
@@ -62,6 +62,6 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.skill = skill;
-        stats.addCrossfireStatsListener(crossfireStatsListener);
+        stats.addCrossfireStatsListener(statsListener);
     }
 }

@@ -47,10 +47,10 @@ public class ActiveSkillWatcher
     /**
      * The stats listener to detect the range stat.
      */
-    private final CrossfireStatsListener statsListener = new CrossfireStatsListener()
+    private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        public void statChanged(final StatsEvent evt)
         {
             checkRange();
         }

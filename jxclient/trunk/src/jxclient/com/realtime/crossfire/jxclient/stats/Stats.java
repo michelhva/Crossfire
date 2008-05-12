@@ -391,7 +391,7 @@ public class Stats
     /**
      * The listeners to inform of stat changes.
      */
-    private final List<CrossfireStatsListener> statListeners = new ArrayList<CrossfireStatsListener>();
+    private final List<StatsListener> statsListeners = new ArrayList<StatsListener>();
 
     private final int[] stats = new int[258];
 
@@ -551,22 +551,22 @@ public class Stats
         this.exp = exp;
     }
 
-    public void addCrossfireStatsListener(final CrossfireStatsListener listener)
+    public void addCrossfireStatsListener(final StatsListener statsListener)
     {
-        statListeners.add(listener);
+        statsListeners.add(statsListener);
     }
 
-    public void removeCrossfireStatsListener(final CrossfireStatsListener listener)
+    public void removeCrossfireStatsListener(final StatsListener statsListener)
     {
-        statListeners.remove(listener);
+        statsListeners.remove(statsListener);
     }
 
     public void setStatsProcessed(final boolean reset)
     {
-        final CrossfireCommandStatsEvent event = new CrossfireCommandStatsEvent(new Object(), this, reset);
-        for (final CrossfireStatsListener listener : statListeners)
+        final StatsEvent statsEvent = new StatsEvent(new Object(), this, reset);
+        for (final StatsListener statsListener : statsListeners)
         {
-            listener.commandStatsReceived(event);
+            statsListener.statChanged(statsEvent);
         }
     }
 
