@@ -450,7 +450,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        commands = new Commands(this, server, stats, optionManager);
+        commands = new Commands(this, commandQueue, server, stats, optionManager);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
