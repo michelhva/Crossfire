@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.items.CfItem;
@@ -134,6 +133,11 @@ public class CrossfireServerConnection extends ServerConnection
     private final List<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
 
     /**
+     * The {@link CrossfireExpTableListener}s to be notified.
+     */
+    private final List<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
+
+    /**
      * Buffer to build commands to send. It is shared between all sendXxx()
      * functions. It is used to synchronize these functions.
      */
@@ -197,9 +201,6 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private final Object redrawSemaphore;
 
-    /** The global experience table. */
-    private final ExperienceTable experienceTable;
-
     /**
      * The defined animations.
      */
@@ -222,17 +223,14 @@ public class CrossfireServerConnection extends ServerConnection
      * @param redrawSemaphore The semaphore used to synchronized map model
      * updates and map view redraws.
      *
-     * @param experienceTable The experience table instance to update.
-     *
      * @param animations The animations to update.
      *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final Animations animations, final Appendable debugProtocol)
     {
         this.redrawSemaphore = redrawSemaphore;
-        this.experienceTable = experienceTable;
         this.animations = animations;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
@@ -437,6 +435,15 @@ public class CrossfireServerConnection extends ServerConnection
     public void addCrossfireSpellListener(final CrossfireSpellListener listener)
     {
         crossfireSpellListeners.add(listener);
+    }
+
+    /**
+     * Adds a listener to be notified about received experience table changes.
+     * @param crossfireExpTableListener the listener to add
+     */
+    public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
+    {
+        crossfireExpTableListeners.add(crossfireExpTableListener);
     }
 
     /** {@inheritDoc} */
@@ -2017,18 +2024,21 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private void processExpTableReplyinfo(final byte[] packet, final int startPos, final int endPos)
     {
-        experienceTable.clear();
-
         int pos = startPos;
         final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-        for (int i = 1; i < numLevels; i++)
+        final long[] expTable = new long[numLevels];
+        for (int level = 1; level < numLevels; level++)
         {
-            final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-            experienceTable.add(i, exp);
+            expTable[level] = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
         }
         if (pos < endPos)
         {
             System.err.println("Ignoring excess data at end of exp_table");
+        }
+
+        for (final CrossfireExpTableListener crossfireExpTableListener : crossfireExpTableListeners)
+        {
+            crossfireExpTableListener.expTableReceived(expTable);
         }
     }
 
