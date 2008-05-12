@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.animations.Animations;
