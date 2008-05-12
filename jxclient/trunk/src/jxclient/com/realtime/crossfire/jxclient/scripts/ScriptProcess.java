@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
@@ -195,12 +196,12 @@ public class ScriptProcess extends Thread
             final StringBuilder sb = new StringBuilder();
             sb.append(stats.getStat(Stats.CS_STAT_LEVEL));
             sb.append(',').append(stats.getExperience());
-            for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++)
+            for (int i = SkillSet.CS_STAT_SKILLINFO; i < SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS; i++)
             {
-                if (Stats.getSkill(i) != null)
+                if (SkillSet.getSkill(i) != null)
                 {
-                    sb.append(',').append(Stats.getSkill(i).getLevel());
-                    sb.append(',').append(Stats.getSkill(i).getExperience());
+                    sb.append(',').append(SkillSet.getSkill(i).getLevel());
+                    sb.append(',').append(SkillSet.getSkill(i).getExperience());
                 }
             }
             commandSent(sb.toString());

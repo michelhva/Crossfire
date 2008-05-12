@@ -101,6 +101,7 @@ import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
@@ -1013,7 +1014,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final String subtype = args[2];
-                                final Skill skill = Stats.getNamedSkill(args[3].replaceAll("_", " "));
+                                final Skill skill = SkillSet.getNamedSkill(args[3].replaceAll("_", " "));
                                 final GUICommandList commandList = getCommandList(args[4]);
                                 if (subtype.equals("add"))
                                 {
@@ -1976,7 +1977,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
         if (name.startsWith("SKILL_"))
         {
-            return new SkillGaugeUpdater(experienceTable, Stats.getNamedSkill(name.substring(6).replaceAll("_", " ")));
+            return new SkillGaugeUpdater(experienceTable, SkillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
         }
 
         if (name.startsWith("ACTIVE_SKILL_"))

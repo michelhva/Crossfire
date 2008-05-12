@@ -56,6 +56,7 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
@@ -689,6 +690,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 setTitle(TITLE_PREFIX+" - "+hostname);
                 itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
                 stats.reset();
+                SkillSet.clearNumberedSkills();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
                 facesManager.reset();

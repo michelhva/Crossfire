@@ -19,12 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.skills.Skill;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * This is the representation of all the statistics of a player, like its speed
@@ -370,34 +367,9 @@ public class Stats
     public static final int CS_STAT_SKILLEXP_WILEVEL = 129;
 
     /**
-     * CS_STAT_SKILLINFO is used as the starting index point.  Skill number->name
-     * map is generated dynamically for the client, so a bunch of entries will
-     * be used here.
-     */
-    public static final int CS_STAT_SKILLINFO = 140;
-
-    /**
-     * CS_NUM_SKILLS does not match how many skills there really
-     * are - instead, it is used as a range of values so that the client
-     * can have some idea how many skill categories there may be.
-     */
-    public static final int CS_NUM_SKILLS = 50;
-
-    /**
      * Factor used to convert float int int values.
      */
     public static final int FLOAT_MULTI = 100000;
-
-    /**
-     * Maps stat number to skill instance. Entries may be <code>null</code> if
-     * the server did not provide a mapping.
-     */
-    private static final Skill[] numberedSkills = new Skill[CS_NUM_SKILLS];
-
-    /**
-     * Maps skill name to skill instance.
-     */
-    private static final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
 
     /**
      * The total number of resistances.
@@ -453,20 +425,10 @@ public class Stats
     }
 
     /**
-     * Forget about all skill name mappings.
-     */
-    public static void clearSkills()
-    {
-        clearNumberedSkills();
-        Arrays.fill(numberedSkills, null);
-    }
-
-    /**
      * Forget about all stats.
      */
     public void reset()
     {
-        clearNumberedSkills();
         Arrays.fill(stats, 0);
         exp = 0;
         range = "";
@@ -480,75 +442,7 @@ public class Stats
      */
     public void resetSkills()
     {
-        clearNumberedSkills();
         setStatsProcessed(false);
-    }
-
-    /**
-     * Clears all stat info in {@link #numberedSkills}.
-     */
-    private static void clearNumberedSkills()
-    {
-        for (final Skill skill : numberedSkills)
-        {
-            if (skill != null)
-            {
-                skill.set(0, 0);
-            }
-        }
-    }
-
-    /**
-     * Adds a new skill to the list of known skills.
-     * @param id The numerical identifier for the new skill.
-     * @param skillName The skill name.
-     */
-    public static void addSkill(final int id, final String skillName)
-    {
-        final int index = id-CS_STAT_SKILLINFO;
-        final Skill oldSkill = numberedSkills[index];
-        final Skill newSkill = getNamedSkill(skillName);
-        if (oldSkill == newSkill)
-        {
-            return;
-        }
-
-        if (oldSkill != null)
-        {
-            oldSkill.set(0, 0);
-        }
-        numberedSkills[index] = newSkill;
-    }
-
-    /**
-     * Return the skill instance for a given skill name.
-     *
-     * @param skillName The skill name to look up.
-     *
-     * @return The skill instance.
-     */
-    public static Skill getNamedSkill(final String skillName)
-    {
-        final Skill oldSkill = namedSkills.get(skillName);
-        if (oldSkill != null)
-        {
-            return oldSkill;
-        }
-
-        final Skill newSkill = new Skill(skillName);
-        namedSkills.put(skillName, newSkill);
-        return newSkill;
-    }
-
-    /**
-     * Returns the given skill as a Skill object.
-     * @param id The numerical skill identifier.
-     * @return The Skill object matching the given identifier; may be
-     * <code>null</code> for undefined skills.
-     */
-    public static Skill getSkill(final int id)
-    {
-        return numberedSkills[id-CS_STAT_SKILLINFO];
     }
 
     /**
