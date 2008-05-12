@@ -43,7 +43,7 @@ public class MouseTracker implements MouseInputListener
     /**
      * The renderer to access dialogs/gui elements.
      */
-    private final JXCWindowRenderer windowRenderer;
+    private JXCWindowRenderer windowRenderer = null;
 
     /**
      * The gui element in which the mouse is.
@@ -51,15 +51,16 @@ public class MouseTracker implements MouseInputListener
     private GUIElement mouseElement = null;
 
     /**
-     * Create a new instance.
-     *
-     * @param debugGui Whether GUI elements should be highlighted.
-     *
-     * @param windowRenderer The renderer to access dialogs/gui elements.
+     * Creates a new instance.
+     * @param debugGui whether GUI elements should be highlighted
      */
-    public MouseTracker(final boolean debugGui, final JXCWindowRenderer windowRenderer)
+    public MouseTracker(final boolean debugGui)
     {
         this.debugGui = debugGui;
+    }
+
+    public void init(final JXCWindowRenderer windowRenderer)
+    {
         this.windowRenderer = windowRenderer;
     }
 
