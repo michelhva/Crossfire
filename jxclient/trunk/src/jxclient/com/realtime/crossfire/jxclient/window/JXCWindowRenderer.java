@@ -587,17 +587,6 @@ public class JXCWindowRenderer
     }
 
     /**
-     * Return the tooltip to use, or <code>null</code> if no tooltips should be
-     * shown.
-     *
-     * @return The tooltip, or <code>null</code>.
-     */
-    public AbstractLabel getTooltip()
-    {
-        return tooltip;
-    }
-
-    /**
      * Set the current gui state.
      *
      * @param guiState The gui state.
