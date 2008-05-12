@@ -23,9 +23,9 @@ import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
-import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.stats.StatsEvent;
+import com.realtime.crossfire.jxclient.stats.StatsListener;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -51,13 +51,13 @@ public class StatGaugeUpdater extends GaugeUpdater
     private boolean active = false;
 
     /**
-     * The {@link CrossfireStatsListener} registered to be notified about stat
+     * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        public void statChanged(final StatsEvent evt)
         {
             final Stats s = evt.getStats();
             switch (stat)
@@ -141,7 +141,7 @@ public class StatGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.stat = stat;
-        stats.addCrossfireStatsListener(crossfireStatsListener);
+        stats.addCrossfireStatsListener(statsListener);
         itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
     }
 }

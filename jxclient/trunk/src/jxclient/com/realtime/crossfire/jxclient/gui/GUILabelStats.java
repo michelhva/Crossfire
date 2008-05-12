@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.stats.CrossfireCommandStatsEvent;
-import com.realtime.crossfire.jxclient.stats.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.stats.StatsEvent;
+import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
@@ -41,13 +41,13 @@ public class GUILabelStats extends GUIOneLineLabel
     private final int stat;
 
     /**
-     * The {@link CrossfireStatsListener} registered to be notified about stat
+     * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void commandStatsReceived(final CrossfireCommandStatsEvent evt)
+        public void statChanged(final StatsEvent evt)
         {
             final Stats s = evt.getStats();
             final String text;
@@ -140,7 +140,7 @@ public class GUILabelStats extends GUIOneLineLabel
     {
         super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stat = stat;
-        stats.addCrossfireStatsListener(crossfireStatsListener);
+        stats.addCrossfireStatsListener(statsListener);
     }
 
     /**

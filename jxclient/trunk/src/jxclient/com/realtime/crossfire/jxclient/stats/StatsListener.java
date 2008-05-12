@@ -19,37 +19,13 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import java.util.EventObject;
-
 /**
  *
  * @version 1.0
  * @author Lauwenmark
  * @since 1.0
  */
-public class CrossfireCommandStatsEvent extends EventObject
+public interface StatsListener
 {
-    /** The serial version UID. */
-    private static final long serialVersionUID = 1;
-
-    private final Stats stats;
-
-    private final boolean reset;
-
-    public CrossfireCommandStatsEvent(final Object src, final Stats stats, final boolean reset)
-    {
-        super(src);
-        this.stats = stats;
-        this.reset = reset;
-    }
-
-    public Stats getStats()
-    {
-        return stats;
-    }
-
-    public boolean isReset()
-    {
-        return reset;
-    }
+    void statChanged(StatsEvent evt);
 }
