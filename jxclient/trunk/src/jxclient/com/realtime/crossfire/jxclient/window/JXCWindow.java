@@ -1496,18 +1496,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         try
         {
-            // check for skin in directory
-            final File dir = new File(skinName);
-            if (dir.exists() && dir.isDirectory())
-            {
-                skin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
-            }
-            else
-            {
-                // fallback: built-in resource
-                skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
-            }
-            skin.load(server, this, resolution);
+            skin = loadSkin(skinName);
         }
         catch (final JXCSkinException ex)
         {
@@ -1522,6 +1511,30 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         dialogDisconnect = skin.getDialogDisconnect();
         optionManager.loadOptions();
         return true;
+    }
+
+    /**
+     * Loads a skin file.
+     * @param skinName the skin file name
+     * @return the loaded skin
+     * @throws JXCSkinException if the skin file cannot be loaded
+     */
+    private JXCSkin loadSkin(final String skinName) throws JXCSkinException
+    {
+        // check for skin in directory
+        final File dir = new File(skinName);
+        final JXCSkin skin;
+        if (dir.exists() && dir.isDirectory())
+        {
+            skin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
+        }
+        else
+        {
+            // fallback: built-in resource
+            skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
+        }
+        skin.load(server, this, resolution);
+        return skin;
     }
 
     /**
