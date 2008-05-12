@@ -43,8 +43,6 @@ public class GUIItemShortcut extends GUIItem
     
     private final int index;
 
-    private final Font font;
-
     private final ShortcutsListener shortcutsListener = new ShortcutsListener()
     {
         /** {@inheritDoc} */
@@ -82,7 +80,6 @@ public class GUIItemShortcut extends GUIItem
         super(jxcWindow, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, crossfireServerConnection, font);
         this.facesManager = facesManager;
         this.index = index;
-        this.font = font;
         jxcWindow.getShortcuts().addShortcutsListener(shortcutsListener);
     }
 
