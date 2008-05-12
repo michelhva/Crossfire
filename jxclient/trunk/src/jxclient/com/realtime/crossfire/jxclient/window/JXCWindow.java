@@ -444,9 +444,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations);
         spellsManager = new SpellsManager(server);
-        shortcuts = new Shortcuts(this, spellsManager);
-        mapUpdater.reset();
         commandQueue = new CommandQueue(server);
+        shortcuts = new Shortcuts(commandQueue, spellsManager);
+        mapUpdater.reset();
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);

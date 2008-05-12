@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 
 /**
  * A {@link Shortcut} that executes a Crossfire command.
@@ -29,9 +29,9 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class ShortcutCommand extends Shortcut
 {
      /**
-     * The window to cast the spell in.
+     * The command queue for sending commands.
      */
-    private final JXCWindow window;
+    private final CommandQueue commandQueue;
 
     /**
      * The command to execute.
@@ -39,15 +39,13 @@ public class ShortcutCommand extends Shortcut
     private final String command;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to execute in.
-     *
-     * @param command The command to execute.
+     * Creates a new instance.
+     * @param commandQueue the command queue for sending commands
+     * @param command the command to execute
      */
-    public ShortcutCommand(final JXCWindow window, final String command)
+    public ShortcutCommand(final CommandQueue commandQueue, final String command)
     {
-        this.window = window;
+        this.commandQueue = commandQueue;
         this.command = command;
     }
 
@@ -64,6 +62,6 @@ public class ShortcutCommand extends Shortcut
     /** {@inheritDoc} */
     @Override public void execute()
     {
-        window.getCommandQueue().sendNcom(false, command);
+        commandQueue.sendNcom(false, command);
     }
 }
