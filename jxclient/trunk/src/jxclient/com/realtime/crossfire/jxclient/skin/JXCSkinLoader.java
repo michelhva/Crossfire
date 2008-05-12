@@ -1571,7 +1571,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("invalid skin_name: "+newSkinName);
                             }
 
-                            this.skinName = newSkinName;
+                            skinName = newSkinName;
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
