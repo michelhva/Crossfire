@@ -27,7 +27,7 @@ import java.util.EventListener;
  *
  * @author Andreas Kirschbaum
  */
-public interface CfItemModifiedListener extends EventListener
+public interface CfItemListener extends EventListener
 {
     /**
      * Will be called when any attribute has been changed.
