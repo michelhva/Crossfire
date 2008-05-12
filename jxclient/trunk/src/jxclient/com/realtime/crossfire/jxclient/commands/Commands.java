@@ -37,6 +37,11 @@ import java.util.Map;
 public class Commands
 {
     /**
+     * The command queue for sending commands.
+     */
+    private final CommandQueue commandQueue;
+
+    /**
      * Maps command name to {@link Command} instance.
      */
     private final Map<String, Command> commands = new HashMap<String, Command>();
@@ -52,6 +57,7 @@ public class Commands
      */
     public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
     {
+        this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(window, crossfireServerConnection));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
@@ -68,22 +74,27 @@ public class Commands
      * @param commandList The command and all remaining commands of the command
      * list.
      *
-     * @return 0=unknown command, 1=command was executed, 2=whole command list
-     * was executed.
+     * @return <code>true</code> if all remaining commands have been consumed.
      */
-    public int execute(final String command, final String commandList)
+    public boolean execute(final String command, final String commandList)
     {
+        if (command.length() <= 0)
+        {
+            return false;
+        }
+
         final String[] args = Patterns.patternWhitespace.split(command.trim(), 2);
         final Command cmd = commands.get(args[0]);
         if (cmd == null)
         {
-            return 0;
+            commandQueue.sendNcom(false, command);
+            return false;
         }
 
         if (!cmd.allArguments())
         {
             cmd.execute(args.length >= 2 ? args[1] : "");
-            return 1;
+            return false;
         }
 
         assert commandList.startsWith(command);
@@ -91,6 +102,6 @@ public class Commands
         assert argsList[0].equals(args[0]);
 
         cmd.execute(argsList.length >= 2 ? argsList[1] : "");
-        return 2;
+        return true;
     }
 }

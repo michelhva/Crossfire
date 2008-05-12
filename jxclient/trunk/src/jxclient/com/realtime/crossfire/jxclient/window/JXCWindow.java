@@ -1678,7 +1678,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         while (cmds.length() > 0)
         {
             final String[] cmd = cmds.split(" *; *", 2);
-            if (executeSingleCommand(cmd[0], cmds))
+            if (this.commands.execute(cmd[0], cmds))
             {
                 break;
             }
@@ -1687,37 +1687,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 break;
             }
             cmds = cmd[1];
-        }
-    }
-
-    /**
-     * Execute a command. The command may be a client- or a server-sided
-     * command.
-     *
-     * @param command The command to execute.
-     *
-     * @param commandList The command and all remaining commands.
-     *
-     * @return <code>true</code> if all remaining commands have been consumed.
-     */
-    private boolean executeSingleCommand(final String command, final String commandList)
-    {
-        if (command.length() <= 0)
-        {
-            return false;
-        }
-
-        switch (commands.execute(command, commandList))
-        {
-        case 0:
-            commandQueue.sendNcom(false, command);
-            return false;
-
-        case 1:
-            return false;
-
-        default:
-            return true;
         }
     }
 
