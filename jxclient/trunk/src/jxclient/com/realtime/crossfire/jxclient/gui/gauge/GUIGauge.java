@@ -148,7 +148,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
 
         this.tooltipText = tooltipText;
 
-        gaugeState.draw(orientation);
+        gaugeState.setValues(orientation);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
