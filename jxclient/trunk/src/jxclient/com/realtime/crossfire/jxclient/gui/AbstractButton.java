@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.TimeoutEvent;
-import com.realtime.crossfire.jxclient.Timeouts;
+import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
+import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.event.MouseEvent;
