@@ -77,9 +77,9 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
     {
         /** {@inheritDoc} */
-        public void updateFace(final int faceNum, final int faceSet, final byte[] packet, final int pos, final int len)
+        public void updateFace(final int faceNum, final int faceSetNum, final byte[] packet, final int pos, final int len)
         {
-            faceReceived(faceNum, faceSet, packet, pos, len);
+            faceReceived(faceNum, faceSetNum, packet, pos, len);
         }
     };
 
@@ -156,12 +156,12 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * Notifies the askface manager that image information have been received
      * from the server.
      * @param faceNum the face ID
-     * @param faceSet the face set
+     * @param faceSetNum the face set
      * @param packet the face data
      * @param pos the starting position into <code>packet</code>
      * @param len the length in bytes
      */
-    private void faceReceived(final int faceNum, final int faceSet, final byte[] packet, final int pos, final int len)
+    private void faceReceived(final int faceNum, final int faceSetNum, final byte[] packet, final int pos, final int len)
     {
         final Integer faceObject = faceNum;
         synchronized (sync)
