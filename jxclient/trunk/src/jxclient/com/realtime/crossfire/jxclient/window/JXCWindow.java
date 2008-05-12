@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FileCache;
