@@ -34,61 +34,6 @@ import javax.swing.ImageIcon;
 public class Face
 {
     /**
-     * The image icon to display for unknown or invalid faces. It is never
-     * <code>null</code>.
-     */
-    private static ImageIcon originalUnknownImageIcon = null;
-
-    /**
-     * The scaled version of {@link #originalUnknownImageIcon}. It is never
-     * <code>null</code>.
-     */
-    private static ImageIcon scaledUnknownImageIcon = null;
-
-    /**
-     * The scaled version of {@link #originalUnknownImageIcon}. It is never
-     * <code>null</code>.
-     */
-    private static ImageIcon magicMapUnknownImageIcon = null;
-
-    /**
-     * The askface manager to query unknown images.
-     */
-    private static AskfaceManager askfaceManager = null;
-
-    /**
-     * The file cache used for loading orignal images from disk.
-     */
-    private static FileCache fileCacheOriginal = null;
-
-    /**
-     * The file cache used for loading scaled images from disk.
-     */
-    private static FileCache fileCacheScaled = null;
-
-    /**
-     * The file cache used for loading magic map images from disk.
-     */
-    private static FileCache fileCacheMagicMap = null;
-
-    /**
-     * The original (unscaled) image; may be <code>null</code> if unknown.
-     */
-    private SoftReference<ImageIcon> originalImageIcon;
-
-    /**
-     * The image scaled to be used in map view; may be <code>null</code> if
-     * unknown.
-     */
-    private SoftReference<ImageIcon> scaledImageIcon;
-
-    /**
-     * The image scaled to be used in magic map view; may be <code>null</code>
-     * if unknown.
-     */
-    private SoftReference<ImageIcon> magicMapImageIcon;
-
-    /**
      * The face id as sent by the server.
      */
     private final int faceNum;
@@ -103,104 +48,43 @@ public class Face
      */
     private int faceChecksum;
 
-    /**
-     * Initialize the module.
-     *
-     * @param originalUnknownImageIcon The face to return if an original image
-     * is unknown.
-     *
-     * @param scaledUnknownImageIcon The face to return if a scaled image is
-     * unknown.
-     *
-     * @param magicMapUnknownImageIcon The face to return if a magic map image
-     * is unknown.
-     *
-     * @param askfaceManager The askface manager to query unknown images.
-     *
-     * @param fileCacheOriginal The file cache used for loading original image
-     * files from disk.
-     *
-     * @param fileCacheScaled The file cache used for loading scaled image
-     * files from disk.
-     *
-     * @param fileCacheMagicMap The file cache used for loading magic map image
-     * files from disk.
-     */
-    static void init(final ImageIcon originalUnknownImageIcon, final ImageIcon scaledUnknownImageIcon, final ImageIcon magicMapUnknownImageIcon, final AskfaceManager askfaceManager, final FileCache fileCacheOriginal, final FileCache fileCacheScaled, final FileCache fileCacheMagicMap)
-    {
-        Face.originalUnknownImageIcon = originalUnknownImageIcon;
-        Face.scaledUnknownImageIcon = scaledUnknownImageIcon;
-        Face.magicMapUnknownImageIcon = magicMapUnknownImageIcon;
-        Face.askfaceManager = askfaceManager;
-        Face.fileCacheOriginal = fileCacheOriginal;
-        Face.fileCacheScaled = fileCacheScaled;
-        Face.fileCacheMagicMap = fileCacheMagicMap;
-    }
+    private int tileWidth = 1;
+
+    private int tileHeight = 1;
+
+    private SoftReference<FaceImages> faceImages = null;
+    static final int SQUARE_SIZE = 32;
 
     /**
-     * Create a new face.
-     *
-     * @param faceNum The unique face id.
-     *
-     * @param faceName The face name.
-     *
-     * @param faceChecksum The image checksum as sent by the server.
-     *
-     * @param originalImageIcon The unscaled image as sent by the server; may
-     * be <code>null</code> if unknown.
-     *
-     * @param scaledImageIcon The image to use for map view; may be
-     * <code>null</code> if unknown.
-     *
-     * @param magicMapImageIcon The image to use for magic map view; may be
-     * <code>null</code> if unknown.
+     * Creates a new instance.
+     * @param faceNum the unique face id
+     * @param faceName the face name
+     * @param faceChecksum the image checksum as sent by the server
      */
-    public Face(final int faceNum, final String faceName, final int faceChecksum, final ImageIcon originalImageIcon, final ImageIcon scaledImageIcon, final ImageIcon magicMapImageIcon)
+    public Face(final int faceNum, final String faceName, final int faceChecksum)
     {
-        if (faceName == null) throw new IllegalArgumentException();
-
         this.faceNum = faceNum;
         this.faceName = faceName;
         this.faceChecksum = faceChecksum;
-        this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
-        this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
-        this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
     }
 
     /**
-     * Replace the original image as sent by the server.
-     *
-     * @param originalImageIcon The new image icon.
+     * Sets the images.
+     * @param faceImages the images
      */
-    public void setOriginalImageIcon(final ImageIcon originalImageIcon)
+    public void setFaceImages(final FaceImages faceImages)
     {
-        this.originalImageIcon = originalImageIcon == null ? null : new SoftReference<ImageIcon>(originalImageIcon);
+        this.faceImages = new SoftReference<FaceImages>(faceImages);
+        final ImageIcon imageIcon = faceImages.getOriginalImageIcon();
+        final int width = imageIcon.getIconWidth();
+        final int height = imageIcon.getIconHeight();
+        tileWidth = (width+SQUARE_SIZE-1)/SQUARE_SIZE;
+        tileHeight = (height+SQUARE_SIZE-1)/SQUARE_SIZE;
     }
 
     /**
-     * Replace the scaled image to use in map view.
-     *
-     * @param scaledImageIcon The new image icon.
-     */
-    public void setScaledImageIcon(final ImageIcon scaledImageIcon)
-    {
-        this.scaledImageIcon = scaledImageIcon == null ? null : new SoftReference<ImageIcon>(scaledImageIcon);
-    }
-
-    /**
-     * Replace the scaled image to use in magic map view.
-     *
-     * @param magicMapImageIcon The new image icon.
-     */
-    public void setMagicMapImageIcon(final ImageIcon magicMapImageIcon)
-    {
-        this.magicMapImageIcon = magicMapImageIcon == null ? null : new SoftReference<ImageIcon>(magicMapImageIcon);
-    }
-
-    /**
-     * Return the unique face id.
-     *
-     * @return The face id.
+     * Returns the unique face id.
+     * @return the face id
      */
     public int getFaceNum()
     {
@@ -208,108 +92,28 @@ public class Face
     }
 
     /**
-     * Return the image to be used in map view. If <code>useBigImages</code> is
-     * set, return {@link #getScaledImageIcon()}, else return {@link
-     * #getOriginalImageIcon()}.
-     *
-     * @param useBigImages If set, return big images, else return small images.
-     *
-     * @return The image for map display.
+     * Returns the images. May return <code>null</code> if the images are not
+     * yet known, or if they have been dropped from the cache.
+     * @return the images or <code>null</code>
      */
-    public ImageIcon getImageIcon(final boolean useBigImages)
+    public FaceImages getFaceImages()
     {
-        return useBigImages ? getScaledImageIcon() : getOriginalImageIcon();
-    }
-
-    /**
-     * Return the original (unscaled) image.
-     *
-     * @return The unscaled image.
-     */
-    public ImageIcon getOriginalImageIcon()
-    {
-        if (originalImageIcon != null)
+        if (faceImages != null)
         {
-            final ImageIcon result = originalImageIcon.get();
+            final FaceImages result = faceImages.get();
             if (result != null)
             {
                 return result;
             }
 
-            originalImageIcon = null;
+            faceImages = null;
         }
-
-        return loadOriginalImageIcon();
+        return null;
     }
 
     /**
-     * Return the image scaled to be used in map view.
-     *
-     * @return The scaled image.
-     */
-    public ImageIcon getScaledImageIcon()
-    {
-        if (scaledImageIcon != null)
-        {
-            final ImageIcon result = scaledImageIcon.get();
-            if (result != null)
-            {
-                return result;
-            }
-
-            scaledImageIcon = null;
-        }
-
-        return loadScaledImageIcon();
-    }
-
-    /**
-     * Return the image scaled to be used in magic map view.
-     *
-     * @return The scaled image.
-     */
-    public ImageIcon getMagicMapImageIcon()
-    {
-        if (magicMapImageIcon != null)
-        {
-            final ImageIcon result = magicMapImageIcon.get();
-            if (result != null)
-            {
-                return result;
-            }
-
-            magicMapImageIcon = null;
-        }
-
-        return loadMagicMapImageIcon();
-    }
-
-    /**
-     * Return the width in tiles.
-     *
-     * @return The width.
-     */
-    public int getTileWidth()
-    {
-        final ImageIcon imageIcon = getOriginalImageIcon();
-        return (imageIcon.getIconWidth()+31)/32;
-    }
-
-    /**
-     * Return the height in tiles.
-     *
-     * @return The height.
-     */
-    public int getTileHeight()
-    {
-        final ImageIcon imageIcon = getOriginalImageIcon();
-        return (imageIcon.getIconHeight()+31)/32;
-    }
-
-    /**
-     * Return the face name.
-     *
-     * @return The face name.
+     * Returns the face name.
+     * @return the face name
      */
     public String getFaceName()
     {
@@ -317,9 +121,8 @@ public class Face
     }
 
     /**
-     * Return the image checksum.
-     *
-     * @return The image checksum.
+     * Returns the face checksum.
+     * @return the face checksum
      */
     public int getFaceChecksum()
     {
@@ -333,62 +136,35 @@ public class Face
     }
 
     /**
-     * Load {@link #originalImageIcon} from the backing storage. If loading
-     * fails, return {@link #originalUnknownImageIcon} and request the image
-     * from the server.
-     *
-     * @return The original image.
+     * Returns the face width in tiles.
+     * @return the tile width
      */
-    private ImageIcon loadOriginalImageIcon()
+    public int getTileWidth()
     {
-        final ImageIcon imageIcon = fileCacheOriginal.load(faceName, faceChecksum);
-        if (imageIcon != null)
-        {
-            originalImageIcon = new SoftReference<ImageIcon>(imageIcon);
-            return imageIcon;
-        }
-
-        askfaceManager.queryFace(faceNum);
-        return originalUnknownImageIcon;
+        return tileWidth;
     }
 
     /**
-     * Load {@link #scaledImageIcon} from the backing storage. If loading
-     * fails, return {@link #scaledUnknownImageIcon} and request the image from
-     * the server.
-     *
-     * @return The image.
+     * Returns the face height in tiles.
+     * @return the tile height
      */
-    private ImageIcon loadScaledImageIcon()
+    public int getTileHeight()
     {
-        final ImageIcon imageIcon = fileCacheScaled.load(faceName, faceChecksum);
-        if (imageIcon != null)
-        {
-            scaledImageIcon = new SoftReference<ImageIcon>(imageIcon);
-            return imageIcon;
-        }
-
-        askfaceManager.queryFace(faceNum);
-        return scaledUnknownImageIcon;
+        return tileHeight;
     }
 
-    /**
-     * Load {@link #magicMapImageIcon} from the backing storage. If loading
-     * fails, return {@link #magicMapUnknownImageIcon} and request the image
-     * from the server.
-     *
-     * @return The image.
-     */
-    private ImageIcon loadMagicMapImageIcon()
+    /** {@inheritDoc} */
+    public int hashCode()
     {
-        final ImageIcon imageIcon = fileCacheMagicMap.load(faceName, faceChecksum);
-        if (imageIcon != null)
-        {
-            magicMapImageIcon = new SoftReference<ImageIcon>(imageIcon);
-            return imageIcon;
-        }
+        return faceChecksum;
+    }
 
-        askfaceManager.queryFace(faceNum);
-        return magicMapUnknownImageIcon;
+    /** {@inheritDoc} */
+    public boolean equals(final Object obj)
+    {
+        if (obj == null) return false;
+        if (obj.getClass() != Face.class) return false;
+        final Face face = (Face)obj;
+        return faceNum == face.getFaceNum();
     }
 }

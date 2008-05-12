@@ -17,23 +17,33 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.server;
+package com.realtime.crossfire.jxclient.faces;
+
+import java.util.HashMap;
+import java.util.Map;
+import javax.swing.ImageIcon;
 
 /**
- * Listener to be notified of updated face information.
- *
+ * Simple in-memory cache implementing the {@link ImageCache} interface.
+ * Primary use is from regression tests.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
+public class MemoryImageCache implements ImageCache
 {
     /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
+     * The cache contents. Maps face to image associated with the face.
      */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
+    private final Map<Face, ImageIcon> faces = new HashMap<Face, ImageIcon>();
+
+    /** {@inheritDoc} */
+    public ImageIcon load(final Face face)
+    {
+        return faces.get(face);
+    }
+
+    /** {@inheritDoc} */
+    public void save(final Face face, final ImageIcon imageIcon)
+    {
+        faces.put(face, imageIcon);
+    }
 }

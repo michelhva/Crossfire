@@ -20,7 +20,7 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -38,9 +38,9 @@ import javax.swing.event.EventListenerList;
 public class ItemsManager
 {
     /**
-     * The {@link Faces} instance for looking up faces.
+     * The {@link FaceCache} instance for looking up faces.
      */
-    private final Faces faces;
+    private final FaceCache faceCache;
 
     /**
      * Maps location to list of items.
@@ -82,11 +82,11 @@ public class ItemsManager
 
     /**
      * Creates a new instance.
-     * @param faces the instance for looking up faces
+     * @param faceCache the instance for looking up faces
      */
-    public ItemsManager(final Faces faces)
+    public ItemsManager(final FaceCache faceCache)
     {
-        this.faces = faces;
+        this.faceCache = faceCache;
     }
 
     /**
@@ -488,7 +488,7 @@ public class ItemsManager
         }
 
         final boolean wasOpen = (flags&CfItem.UPD_FLAGS) != 0 && currentFloorManager.getCurrentFloor() == item.getTag() && item.isOpen();
-        item.update(flags, valFlags, valWeight, faces.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        item.update(flags, valFlags, valWeight, faceCache.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_LOCATION) != 0)
         {
             moveItem(item, valLocation);

@@ -20,9 +20,11 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
-import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireTickListener;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -38,12 +40,12 @@ public class CfMapAnimations
     /**
      * The width of the visible map area.
      */
-    private final int width;
+    private int width = 0;
 
     /**
      * The height of the visible map area.
      */
-    private final int height;
+    private int height = 0;
 
     /**
      * The {@link CfMapUpdater} instance to update.
@@ -62,19 +64,31 @@ public class CfMapAnimations
     private final Set<AnimationState> pendingTickUpdates = new HashSet<AnimationState>();
 
     /**
+     * The listener for receiving "tick" commands.
+     */
+    private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener()
+    {
+        /** {@inheritDoc} */
+        public void tick(final int tickNo)
+        {
+            CfMapAnimations.this.tick(tickNo);
+        }
+    };
+
+    /**
      * Create a new instance.
      *
-     * @param width The visible map width.
-     *
-     * @param height The visible map height.
-     *
+     * @param crossfireServerConnection the connection to watch
+     * 
      * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(final int width, final int height, final CfMapUpdater mapUpdater)
+    public CfMapAnimations(final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
     {
-        this.width = width;
-        this.height = height;
         this.mapUpdater = mapUpdater;
+        if (crossfireServerConnection != null)
+        {
+            crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
+        }
     }
 
     /**
@@ -99,16 +113,16 @@ public class CfMapAnimations
      *
      * @param type The animation type.
      *
-     * @param faces The instance for looking up faces.
+     * @param faceCache The instance for looking up faces.
      */
-    public void add(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
+    public void add(final int x, final int y, final int layer, final Animation animation, final int type, final FaceCache faceCache)
     {
         assert 0 <= x;
         assert 0 <= y;
         assert 0 <= type && type < 4;
 
         final Location location = new Location(x, y, layer);
-        final AnimationState animationState = new AnimationState(animation, type, faces, mapUpdater);
+        final AnimationState animationState = new AnimationState(animation, type, faceCache, mapUpdater);
         animations.put(location, animationState);
         animationState.draw(location, -1);
     }
@@ -203,13 +217,13 @@ public class CfMapAnimations
     /**
      * Process a tick command.
      *
-     * @param tickno The current tick number.
+     * @param tickNo The current tick number.
      */
-    public void tick(final int tickno)
+    public void tick(final int tickNo)
     {
         for (final AnimationState animationState : pendingTickUpdates)
         {
-            animationState.setTickno(tickno);
+            animationState.setTickno(tickNo);
         }
         pendingTickUpdates.clear();
 
@@ -223,8 +237,21 @@ public class CfMapAnimations
         {
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
-            animationState.updateTickno(tickno, location);
+            animationState.updateTickno(tickNo, location);
         }
         mapUpdater.processMapEnd(false);
+    }
+
+    /**
+     * Updates the map size.
+     * @param width the map width
+     * @param height the map height
+     */
+    public void setMapSize(final int width, final int height)
+    {
+        this.width = width;
+        this.height = height;
+        animations.clear();
+        pendingTickUpdates.clear();
     }
 }

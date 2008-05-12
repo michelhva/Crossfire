@@ -20,20 +20,14 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * Listener to be notified of updated face information.
- *
+ * Interface for listeners interested in "tick" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
+public interface CrossfireTickListener
 {
     /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
+     * A "tick" command has been received.
+     * @param tickNo the current tick
      */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
+    void tick(int tickNo);
 }

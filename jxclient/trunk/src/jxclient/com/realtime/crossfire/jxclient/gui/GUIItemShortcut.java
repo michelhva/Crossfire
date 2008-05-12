@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
@@ -35,6 +36,11 @@ import java.awt.image.BufferedImage;
 
 public class GUIItemShortcut extends GUIItem
 {
+    /**
+     * The {@link FacesManager} instance for looking up faces.
+     */
+    private final FacesManager facesManager;
+    
     private final int index;
 
     private final Font font;
@@ -71,9 +77,10 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final CrossfireServerConnection crossfireServerConnection, final Font font)
+    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font)
     {
         super(jxcWindow, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, crossfireServerConnection, font);
+        this.facesManager = facesManager;
         this.index = index;
         this.font = font;
         jxcWindow.getShortcuts().addShortcutsListener(shortcutsListener);
@@ -129,7 +136,7 @@ public class GUIItemShortcut extends GUIItem
         if (shortcut instanceof ShortcutSpell)
         {
             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-            g.drawImage(shortcutSpell.getSpell().getImageIcon().getImage(), 0, 0, null);
+            g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
             g.drawImage(shortcutSpell.isCast() ? cursedImage : appliedImage, 0, 0, null);
         }
         else if (shortcut instanceof ShortcutCommand)

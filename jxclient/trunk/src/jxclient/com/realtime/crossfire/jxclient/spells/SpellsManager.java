@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
-import com.realtime.crossfire.jxclient.faces.Faces;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -34,11 +34,6 @@ import java.util.List;
  */
 public class SpellsManager
 {
-    /**
-     * The {@link Faces} instance.
-     */
-    private final Faces faces;
-
     /**
      * All known spells.
      */
@@ -64,13 +59,37 @@ public class SpellsManager
     };
 
     /**
-     * Create a new instance.
-     * @param faces the <code>Faces</code> instance
+     * The listener to receive updates for spell information.
      */
-    public SpellsManager(final Faces faces)
+    private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener()
     {
-        this.faces = faces;
+        /** {@inheritDoc} */
+        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
+        {
+            SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
+        }
+
+        /** {@inheritDoc} */
+        public void deleteSpell(final int tag)
+        {
+            SpellsManager.this.deleteSpell(tag);
+        }
+
+        /** {@inheritDoc} */
+        public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
+        {
+            SpellsManager.this.updateSpell(flags, tag, mana, grace, damage);
+        }
+    };
+
+    /**
+     * Create a new instance.
+     * @param crossfireServerConnection the connection to listen on
+     */
+    public SpellsManager(final CrossfireServerConnection crossfireServerConnection)
+    {
         initSpells();
+        crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
     }
 
     public void reset()
@@ -107,9 +126,7 @@ public class SpellsManager
 
     public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
     {
-        faces.askface(faceNum);
-
-        final Spell spell = new Spell(faces.getFace(faceNum), tag, spellName, message);
+        final Spell spell = new Spell(faceNum, tag, spellName, message);
         spell.setLevel(level);
         spell.setCastingTime(castingTime);
         spell.setMana(mana);
@@ -144,17 +161,17 @@ public class SpellsManager
         {
             if (spell.getTag() == tag)
             {
-                if ((flags&CrossfireServerConnection.UPD_SP_MANA) != 0)
+                if ((flags&CrossfireSpellListener.UPD_SP_MANA) != 0)
                 {
                     spell.setMana(mana);
                 }
 
-                if ((flags&CrossfireServerConnection.UPD_SP_GRACE) != 0)
+                if ((flags&CrossfireSpellListener.UPD_SP_GRACE) != 0)
                 {
                     spell.setGrace(mana);
                 }
 
-                if ((flags&CrossfireServerConnection.UPD_SP_DAMAGE) != 0)
+                if ((flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0)
                 {
                     spell.setDamage(mana);
                 }

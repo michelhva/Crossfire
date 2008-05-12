@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
@@ -56,6 +57,11 @@ public class GUIMagicMap extends GUIElement
      * The {@link CfMapUpdater} instance to use.
      */
     private final CfMapUpdater mapUpdater;
+
+    /**
+     * The {@link FacesManager} instance for looking up faces.
+     */
+    private final FacesManager facesManager;
 
     /**
      * The map width in tiles.
@@ -267,7 +273,7 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
+    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater, final FacesManager facesManager)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
@@ -276,6 +282,7 @@ public class GUIMagicMap extends GUIElement
         if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
         this.mapUpdater = mapUpdater;
+        this.facesManager = facesManager;
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
 
@@ -383,7 +390,7 @@ public class GUIMagicMap extends GUIElement
         {
             final Face headFace = headMapSquare.getFace(layer);
             assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon img = headFace.getMagicMapImageIcon();
+            final ImageIcon img = facesManager.getMagicMapImageIcon(headFace.getFaceNum());
             final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
             final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
             assert dx > 0 || dy > 0;
@@ -395,10 +402,10 @@ public class GUIMagicMap extends GUIElement
                 null);
         }
 
-        final Face f = map.getFace(x, y, layer);
-        if (f != null)
+        final Face face = map.getFace(x, y, layer);
+        if (face != null)
         {
-            final ImageIcon img = f.getMagicMapImageIcon();
+            final ImageIcon img = facesManager.getMagicMapImageIcon(face.getFaceNum());
             final int sx = img.getIconWidth();
             final int sy = img.getIconHeight();
             g.drawImage(img.getImage(),

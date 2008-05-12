@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellChangedEvent;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
@@ -66,6 +67,11 @@ public class GUISpellLabel extends GUIHTMLLabel
     }
 
     /**
+     * The instance for looking up faces.
+     */
+    private final FacesManager facesManager;
+
+    /**
      * The spell type to display.
      */
     private final Type type;
@@ -79,8 +85,8 @@ public class GUISpellLabel extends GUIHTMLLabel
         /** {@inheritDoc} */
         public void spellChanged(final SpellChangedEvent evt)
         {
-            final Spell sp = evt.getSpell();
-            if (sp == null)
+            final Spell spell = evt.getSpell();
+            if (spell == null)
             {
                 setText("");
                 return;
@@ -89,17 +95,17 @@ public class GUISpellLabel extends GUIHTMLLabel
             switch (type)
             {
             case SPELL_NAME:
-                setText(sp.getName());
+                setText(spell.getName());
                 break;
 
             case SPELL_ICON:
                 setText("");
-                setBackground(sp.getImageIcon());
+                setBackground(facesManager.getOriginalImageIcon(spell.getFaceNum()));
                 break;
 
             case SPELL_COST:
-                final int mana = sp.getMana();
-                final int grace = sp.getGrace();
+                final int mana = spell.getMana();
+                final int grace = spell.getGrace();
                 if (grace == 0)
                 {
                     setText("M:"+mana);
@@ -115,11 +121,11 @@ public class GUISpellLabel extends GUIHTMLLabel
                 break;
 
             case SPELL_LEVEL:
-                setText(Integer.toString(sp.getLevel()));
+                setText(Integer.toString(spell.getLevel()));
                 break;
 
             case SPELL_DESCRIPTION:
-                setText(sp.getMessage());
+                setText(spell.getMessage());
                 break;
             }
         }
@@ -143,13 +149,16 @@ public class GUISpellLabel extends GUIHTMLLabel
      * @param picture The background picture; may be <code>null</code>. It is
      * ignored for type <code>SPELL_ICON</code>.
      *
+     * @param facesManager the instance for looking up faces
+     * 
      * @param font The font to use.
      *
      * @param type The display type.
      */
-    public GUISpellLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Type type)
+    public GUISpellLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type)
     {
         super(jxcWindow, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
+        this.facesManager = facesManager;
         this.type = type;
         jxcWindow.getCurrentSpellManager().addSpellListener(spellListener);
     }

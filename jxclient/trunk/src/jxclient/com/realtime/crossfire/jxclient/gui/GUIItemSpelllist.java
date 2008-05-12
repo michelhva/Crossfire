@@ -21,8 +21,9 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -34,6 +35,11 @@ import java.util.List;
 
 public class GUIItemSpelllist extends GUIItem
 {
+    /**
+     * The instance for looking up faces.
+     */
+    private final FacesManager facesManager;
+
     /**
      * The default scroll index.
      */
@@ -82,37 +88,29 @@ public class GUIItemSpelllist extends GUIItem
     };
 
     /**
-     * The {@link CrossfireUpdateFaceListener} registered to detect updated
-     * faces.
+     * The {@link FacesManagerListener} registered to detect updated faces.
      */
-    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
-        public void updateFace(final int faceID)
+        public void faceUpdated(final Face face)
         {
-            if (spell == null)
+            if (spell != null && spell.getFaceNum() == face.getFaceNum())
             {
-                return;
+                setChanged();
             }
-
-            final Face face = spell.getFace();
-            if (face == null || face.getFaceNum() != faceID)
-            {
-                return;
-            }
-
-            setChanged();
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final CrossfireServerConnection crossfireServerConnection, final SpellsManager spellsManager, final Font font)
+    public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
+        this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
         setIndex(defaultIndex);
         spellsManager.addCrossfireSpellChangedListener(crossfireSpellChangedListener);
-        crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
+        facesManager.addFacesManagerListener(facesManagerListener);
     }
 
     /** {@inheritDoc} */
@@ -178,7 +176,7 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
-        g.drawImage(spell.getImageIcon().getImage(), 0, 0, null);
+        g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
         if (isActive())
         {
             g.drawImage(selectorImage, 0, 0, null);

@@ -19,6 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.server.CrossfireFaceListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import java.util.Arrays;
+
 /**
  * A cache for {@link Face} instances.
  *
@@ -30,6 +34,40 @@ public class FaceCache
      * The cached faces. Empty slots are set to <code>null</code>.
      */
     private final Face[] faces = new Face[65536];
+
+    /**
+     * The listener to receive face commands.
+     */
+    private CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
+    {
+        /** {@inheritDoc} */
+        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, final String faceName)
+        {
+            // XXX: ignores faceSetNum
+            if (faces[faceNum] != null)
+            {
+                System.err.println("Warning: defining duplicate face "+faceNum+" ("+faceName+")");
+            }
+            faces[faceNum] = new Face(faceNum, faceName, faceChecksum);
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     */
+    public FaceCache()
+    {
+        faces[0] = new Face(0, "empty", 0);
+    }
+
+    /**
+     * Initializes this instance.
+     * @param crossfireServerConnection the server connection to use
+     */
+    public void init(final CrossfireServerConnection crossfireServerConnection)
+    {
+        crossfireServerConnection.addCrossfireFaceListener(crossfireFaceListener);
+    }
 
     /**
      * Add a new face to the cache.
@@ -50,6 +88,24 @@ public class FaceCache
      */
     public Face getFace(final int faceNum)
     {
+        final Face face = faces[faceNum];
+        if (face != null)
+        {
+            return face;
+        }
+
+        System.err.println("Warning: accessing undefined face "+faceNum);
+        faces[faceNum] = new Face(faceNum, "face#"+faceNum, 0);
         return faces[faceNum];
+    }
+
+    /**
+     * Forgets about all face information. Should be called when connecting to
+     * a Crossfire server.
+     */
+    public void reset()
+    {
+        Arrays.fill(faces, null);
+        faces[0] = new Face(0, "empty", 0);
     }
 }

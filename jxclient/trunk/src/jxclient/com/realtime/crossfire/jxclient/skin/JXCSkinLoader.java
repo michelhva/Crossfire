@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.Resolution;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIButton;
@@ -142,6 +143,11 @@ public abstract class JXCSkinLoader implements JXCSkin
 
     private final SpellsManager spellsManager;
 
+    /**
+     * The {@link FacesManager} instance to use.
+     */
+    private final FacesManager facesManager;
+
     private final Stats stats;
 
     private final CfMapUpdater mapUpdater;
@@ -221,10 +227,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final Stats stats, final CfMapUpdater mapUpdater)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
+        this.facesManager = facesManager;
         this.stats = stats;
         this.mapUpdater = mapUpdater;
     }
@@ -1136,7 +1143,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, font, nrofColor);
+                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, facesManager, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
@@ -1146,7 +1153,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, font, nrofColor);
+                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
@@ -1155,7 +1162,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, font);
                             }
                             else if (type.equals("spelllist"))
                             {
@@ -1164,7 +1171,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, spellsManager, font);
+                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, spellsManager, font);
                             }
                             else
                             {
@@ -1290,7 +1297,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = fonts.lookup(args[6]);
                             final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
-                            final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, font, type);
+                            final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_label"))
@@ -1415,7 +1422,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater);
+                            final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater, facesManager);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("map"))
@@ -1441,7 +1448,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             mapWidth = tmpW;
                             mapHeight = tmpH;
 
-                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, mapUpdater);
+                            final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("meta_element"))
