@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -38,6 +39,11 @@ public class ScriptCommand extends AbstractCommand
     private final JXCWindow window;
 
     /**
+     * The command queue for sending commands.
+     */
+    private final CommandQueue commandQueue;
+
+    /**
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
@@ -48,18 +54,17 @@ public class ScriptCommand extends AbstractCommand
     private final Stats stats;
     
     /**
-     * Create a new instance.
-     *
-     * @param window The window to execute in.
-     *
+     * Creates a new instance.
+     * @param window the window to execute in
+     * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
-     *
      * @param stats the instance to watch
      */
-    protected ScriptCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
+    protected ScriptCommand(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
     {
         super(crossfireServerConnection);
         this.window = window;
+        this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
     }
@@ -81,7 +86,7 @@ public class ScriptCommand extends AbstractCommand
 
         try
         {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, window, crossfireServerConnection, stats);
+            final ScriptProcess scriptProcess = new ScriptProcess(args, window, commandQueue, crossfireServerConnection, stats);
             // XXX: store scriptProcess
         }
         catch (final IOException ex)

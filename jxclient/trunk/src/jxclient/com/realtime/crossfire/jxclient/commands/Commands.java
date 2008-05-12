@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -40,22 +41,19 @@ public class Commands
     private final Map<String, Command> commands = new HashMap<String, Command>();
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to execute the commands in.
-     *
+     * Creates a new instance.
+     * @param window the window to execute the commands in
+     * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
-     *
      * @param stats the instance to watch
-     *
      * @param optionManager the option manager instance
      */
-    public Commands(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
+    public Commands(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
     {
         commands.put("bind", new BindCommand(window, crossfireServerConnection));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, crossfireServerConnection));
-        commands.put("script", new ScriptCommand(window, crossfireServerConnection, stats));
+        commands.put("script", new ScriptCommand(window, commandQueue, crossfireServerConnection, stats));
         commands.put("exec", new ExecCommand(window, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
     }

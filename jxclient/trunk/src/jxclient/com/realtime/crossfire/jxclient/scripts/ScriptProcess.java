@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.scripts;
 
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
@@ -38,6 +39,8 @@ public class ScriptProcess extends Thread
     private final String filename;
 
     private final JXCWindow window;
+
+    private final CommandQueue commandQueue;
 
     /**
      * The connection instance.
@@ -73,10 +76,11 @@ public class ScriptProcess extends Thread
         }
     };
 
-    public ScriptProcess(final String filename, final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
+    public ScriptProcess(final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
     {
         this.filename = filename;
         this.window = window;
+        this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
         final Runtime rt = Runtime.getRuntime();
@@ -288,7 +292,7 @@ public class ScriptProcess extends Thread
             final String[] pps = parms.split(" ", 3);
             for (int i = 0; i < Integer.parseInt(pps[0]); i++)
             {
-                window.getCommandQueue().sendNcom(pps[1].equals("1"), 0, pps[2]);
+                commandQueue.sendNcom(pps[1].equals("1"), 0, pps[2]);
             }
         }
         else if (cmdline.startsWith("draw "))
