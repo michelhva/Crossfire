@@ -204,7 +204,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private JXCSkin skin = null;
 
-    private final KeyBindings keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null));
+    private final KeyBindings keyBindings;
 
     /**
      * The key bindings for the current user. Set to <code>null</code> if no
@@ -453,9 +453,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw);
         mouseTracker.init(windowRenderer);
-        queryDialog = new Gui(this, mouseTracker);
-        keybindDialog = new Gui(this, mouseTracker);
         commands = new Commands(this, windowRenderer, commandQueue, server, stats, optionManager);
+        windowRenderer.init(commands);
+        queryDialog = new Gui(this, mouseTracker, commands);
+        keybindDialog = new Gui(this, mouseTracker, commands);
+        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -1522,7 +1524,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts);
+        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands);
         return skin;
     }
 
@@ -1666,31 +1668,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /**
-     * Execute a command or a list of commands. The commands may be a client-
-     * or a server-sided command.
-     *
-     * @param commands The commands to execute.
-     */
-    public void executeCommand(final String commands)
-    {
-
-        String cmds = commands.trim();
-        while (cmds.length() > 0)
-        {
-            final String[] cmd = cmds.split(" *; *", 2);
-            if (this.commands.execute(cmd[0], cmds))
-            {
-                break;
-            }
-            if (cmd.length <= 1)
-            {
-                break;
-            }
-            cmds = cmd[1];
-        }
-    }
-
-    /**
      * Return the window renderer instance for this window.
      *
      * @return The window renderer.
@@ -1822,7 +1799,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
         if (hostname != null && character != null)
         {
-            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character));
+            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands);
             try
             {
                 characterKeyBindings.loadKeyBindings(this);

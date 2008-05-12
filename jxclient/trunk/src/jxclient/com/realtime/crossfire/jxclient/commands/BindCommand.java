@@ -36,16 +36,24 @@ public class BindCommand extends AbstractCommand
     private final JXCWindow window;
 
     /**
+     * The commands instance for executing commands.
+     */
+    private final Commands commands;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
      *
      * @param crossfireServerConnection the connection instance
+     *
+     * @param commands the commands instance for executing commands
      */
-    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands)
     {
         super(crossfireServerConnection);
         this.window = window;
+        this.commands = commands;
     }
 
     /** {@inheritDoc} */
@@ -57,31 +65,31 @@ public class BindCommand extends AbstractCommand
     /** {@inheritDoc} */
     public void execute(final String args)
     {
-        final String commands;
+        final String commandList;
         final boolean perCharacterBinding;
         if (args.equals("-c"))
         {
             perCharacterBinding = true;
-            commands = "";
+            commandList = "";
         }
         else if (args.startsWith("-c "))
         {
             perCharacterBinding = true;
-            commands = args.substring(3).trim();
+            commandList = args.substring(3).trim();
         }
         else
         {
             perCharacterBinding = false;
-            commands = args;
+            commandList = args;
         }
 
-        if (commands.length() == 0)
+        if (commandList.length() == 0)
         {
             drawInfoError("Which command to you want to bind?");
             return;
         }
 
-        if (!window.createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commands, window)))
+        if (!window.createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commandList, commands)))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;

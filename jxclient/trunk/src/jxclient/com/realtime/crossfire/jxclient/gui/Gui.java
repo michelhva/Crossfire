@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -60,7 +61,7 @@ public class Gui
     /**
      * The key bindings for this gui.
      */
-    private final KeyBindings keyBindings = new KeyBindings(null);
+    private final KeyBindings keyBindings;
 
     /**
      * Whether this dialog is modal.
@@ -123,11 +124,13 @@ public class Gui
      * Creates a new instance.
      * @param window the window this gui belongs to
      * @param mouseTracker the mouse tracker instance
+     * @param commands the commands instance for executing commands
      */
-    public Gui(final JXCWindow window, final MouseTracker mouseTracker)
+    public Gui(final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
+        keyBindings = new KeyBindings(null, commands);
     }
 
     /**
