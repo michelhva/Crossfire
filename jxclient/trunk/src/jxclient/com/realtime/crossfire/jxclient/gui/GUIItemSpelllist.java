@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
-import com.realtime.crossfire.jxclient.spells.CrossfireSpellChangedListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
+import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -54,9 +54,9 @@ public class GUIItemSpelllist extends GUIItem
     private int index = -1;
 
     /**
-     * The {@link CrossfireSpellChangedListener} used to detect spell changes.
+     * The {@link SpellsManagerListener} used to detect spell changes.
      */
-    private final CrossfireSpellChangedListener crossfireSpellChangedListener = new CrossfireSpellChangedListener()
+    private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener()
     {
         /** {@inheritDoc} */
         public void spellAdded(final Spell spell, final int index)
@@ -108,7 +108,7 @@ public class GUIItemSpelllist extends GUIItem
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
         setIndex(defaultIndex);
-        spellsManager.addCrossfireSpellChangedListener(crossfireSpellChangedListener);
+        spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         facesManager.addFacesManagerListener(facesManagerListener);
     }
 

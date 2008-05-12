@@ -39,7 +39,7 @@ public class SpellsManager
      */
     private final List<Spell> spells = new ArrayList<Spell>();
 
-    private final List<CrossfireSpellChangedListener> listeners = new ArrayList<CrossfireSpellChangedListener>();
+    private final List<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path
@@ -97,12 +97,12 @@ public class SpellsManager
         spells.clear();
     }
 
-    public void addCrossfireSpellChangedListener(final CrossfireSpellChangedListener listener)
+    public void addCrossfireSpellChangedListener(final SpellsManagerListener listener)
     {
         listeners.add(listener);
     }
 
-    public void removeCrossfireSpellChangedListener(final CrossfireSpellChangedListener listener)
+    public void removeCrossfireSpellChangedListener(final SpellsManagerListener listener)
     {
         listeners.remove(listener);
     }
@@ -117,7 +117,7 @@ public class SpellsManager
         for (int i = spells.size()-1; i >= 0; i--)
         {
             final Spell spell = spells.remove(i);
-            for (final CrossfireSpellChangedListener listener : listeners)
+            for (final SpellsManagerListener listener : listeners)
             {
                 listener.spellRemoved(spell, i);
             }
@@ -148,7 +148,7 @@ public class SpellsManager
             spells.set(index, spell);
         }
 
-        for (final CrossfireSpellChangedListener listener : listeners)
+        for (final SpellsManagerListener listener : listeners)
         {
             listener.spellAdded(spell, index);
         }
@@ -176,7 +176,7 @@ public class SpellsManager
                     spell.setDamage(mana);
                 }
 
-                for (final CrossfireSpellChangedListener listener : listeners)
+                for (final SpellsManagerListener listener : listeners)
                 {
                     listener.spellModified(spell, index);
                 }
@@ -195,7 +195,7 @@ public class SpellsManager
             {
                 spells.remove(index);
 
-                for (final CrossfireSpellChangedListener listener : listeners)
+                for (final SpellsManagerListener listener : listeners)
                 {
                     listener.spellRemoved(spell, index);
                 }

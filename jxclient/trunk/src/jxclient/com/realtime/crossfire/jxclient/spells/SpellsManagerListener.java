@@ -19,7 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
-public interface CrossfireSpellChangedListener
+/**
+ * Interface for listeners interested in {@link SpellsManager} events.
+ * @author Andreas Kirschbaum
+ */
+public interface SpellsManagerListener
 {
     /**
      * A new spell was added.
