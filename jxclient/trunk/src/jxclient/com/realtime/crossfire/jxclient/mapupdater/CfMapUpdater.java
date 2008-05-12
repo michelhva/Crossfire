@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
+import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -58,6 +59,11 @@ public class CfMapUpdater
      * The {@link FaceCache} instance for looking up faces.
      */
     private final FaceCache faceCache;
+
+    /**
+     * The defined animations.
+     */
+    private final Animations animations;
 
     /**
      * The width of the visible map area.
@@ -163,8 +169,14 @@ public class CfMapUpdater
         }
 
         /** {@inheritDoc} */
-        public void mapAnimation(final int x, final int y, final int layer, final Animation animation, final int animationType)
+        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType)
         {
+            final Animation animation = animations.get(animationNum);
+            if (animation == null)
+            {
+                System.err.println("unknown animation id "+animation+", ignoring");
+                return;
+            }
             processMapAnimation(x, y, layer, animation, animationType);
         }
 
@@ -185,6 +197,12 @@ public class CfMapUpdater
         {
             processMapEnd(true);
         }
+
+        /** {@inheritDoc} */
+        public void addAnimation(final int animation, final int flags, final int[] faces)
+        {
+            animations.addAnimation(animation, flags, faces);
+        }
     };
 
     /**
@@ -192,10 +210,12 @@ public class CfMapUpdater
      * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
      * @param faceCache the instance for looking up faces
+     * @param animations the defined animations
      */
-    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache)
+    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache, final Animations animations)
     {
         this.faceCache = faceCache;
+        this.animations = animations;
         if (crossfireServerConnection != null)
         {
             crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);

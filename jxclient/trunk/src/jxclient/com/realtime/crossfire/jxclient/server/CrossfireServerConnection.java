@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.animations.Animation;
-import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.util.HexCodec;
@@ -202,11 +200,6 @@ public class CrossfireServerConnection extends ServerConnection
     private final Object redrawSemaphore;
 
     /**
-     * The defined animations.
-     */
-    private final Animations animations;
-
-    /**
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
@@ -223,15 +216,12 @@ public class CrossfireServerConnection extends ServerConnection
      * @param redrawSemaphore The semaphore used to synchronized map model
      * updates and map view redraws.
      *
-     * @param animations The animations to update.
-     *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final Animations animations, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final Appendable debugProtocol)
     {
         this.redrawSemaphore = redrawSemaphore;
-        this.animations = animations;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
     }
@@ -558,7 +548,10 @@ public class CrossfireServerConnection extends ServerConnection
                             debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces)+"\n");
                         }
                         if ((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
-                        animations.addAnimation(num&0x1FFF, flags, faces);
+                        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
+                        {
+                            listener.addAnimation(num&0x1FFF, flags, faces);
+                        }
                     }
                     return;
                 }
@@ -1732,15 +1725,13 @@ public class CrossfireServerConnection extends ServerConnection
                             }
                             else
                             {
-                                final Animation animation = animations.get(face&0x1FFF);
-                                if (animation == null) throw new UnknownCommandException("map2 command references undefined animation "+(face&0x1FFF));
                                 if (debugProtocol != null)
                                 {
                                     debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3)+"\n");
                                 }
                                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                                 {
-                                    listener.mapAnimation(x, y, type-0x10, animation, (face>>13)&3);
+                                    listener.mapAnimation(x, y, type-0x10, face&0x1FFF, (face>>13)&3);
                                 }
                             }
                             if (len == 3)

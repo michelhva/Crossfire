@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.mapupdater;
 
+import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -116,7 +117,7 @@ public class CfMapUpdaterTest extends TestCase
         defineFace(faceCache, facesManager, 1, "M", png64x64);
         defineFace(faceCache, facesManager, 2, "_", png32x32);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache);
+        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache, new Animations());
 
         mapUpdater.processNewMap(5, 5);
         mapUpdater.processMapBegin();
@@ -164,7 +165,7 @@ public class CfMapUpdaterTest extends TestCase
         defineFace(faceCache, facesManager, 4607, "woodfloor.111", png32x32);
         defineFace(faceCache, facesManager, 312, "behemoth.x73", png64x64);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache);
+        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache, new Animations());
 
         mapUpdater.processNewMap(10, 10);
         mapUpdater.processMapBegin();

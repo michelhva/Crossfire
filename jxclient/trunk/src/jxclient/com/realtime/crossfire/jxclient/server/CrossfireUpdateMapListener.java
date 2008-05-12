@@ -19,8 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.animations.Animation;
-
 /**
  * Interface for listeners interested in map related commands.
  * @author Andreas Kirschbaum
@@ -68,10 +66,10 @@ public interface CrossfireUpdateMapListener
      * @param x the x-coordinate
      * @param y the y-coordinate
      * @param layer the layer
-     * @param animation the animation ID
+     * @param animationNum the animation ID
      * @param animationType the animation type
      */
-    void mapAnimation(int x, int y, int layer, Animation animation, int animationType);
+    void mapAnimation(int x, int y, int layer, int animationNum, int animationType);
 
     /**
      * Part of "map2" parsing: set the animation speed.
@@ -93,4 +91,12 @@ public interface CrossfireUpdateMapListener
      * Parsing of "map2" has been finished.
      */
     void mapEnd();
+
+    /**
+     * An "addanim" command has been received.
+     * @param animation the animation ID
+     * @param flags the animation flags
+     * @param faces the faces list; must not be modified
+     */
+    void addAnimation(int animation, int flags, int[] faces);
 }
