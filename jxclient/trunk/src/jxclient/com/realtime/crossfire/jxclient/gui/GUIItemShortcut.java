@@ -21,7 +21,6 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
@@ -75,9 +74,9 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font)
+    public GUIItemShortcut(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final FacesManager facesManager, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, crossfireServerConnection, font);
+        super(jxcWindow, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, font);
         this.facesManager = facesManager;
         this.index = index;
         jxcWindow.getShortcuts().addShortcutsListener(shortcutsListener);

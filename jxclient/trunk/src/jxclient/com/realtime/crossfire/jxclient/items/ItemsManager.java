@@ -216,7 +216,7 @@ public class ItemsManager
             return;
         }
 
-        removeItemFromLocation(item, true);
+        removeItemFromLocation(item);
     }
 
     /**
@@ -236,7 +236,7 @@ public class ItemsManager
             throw new AssertionError("deleted wrong item "+item.getTag());
         }
 
-        removeItemFromLocation(item, true);
+        removeItemFromLocation(item);
     }
 
     /**
@@ -275,7 +275,7 @@ public class ItemsManager
             throw new AssertionError("invalid item "+item.getTag());
         }
 
-        removeItemFromLocation(item, false);
+        removeItemFromLocation(item);
         item.setLocation(newLocation);
         addItemToLocation(item);
     }
@@ -284,11 +284,8 @@ public class ItemsManager
      * Remove an item from {@link #items}. The item must exist.
      *
      * @param item the item to remove
-     *
-     * @param removeItem whether the item is removed (<code>true</code>) or
-     * moved to a new location (<code>false</code>)
      */
-    private void removeItemFromLocation(final CfItem item, final boolean removeItem)
+    private void removeItemFromLocation(final CfItem item)
     {
         if (currentFloorManager.isCurrentFloor(item.getTag()))
         {

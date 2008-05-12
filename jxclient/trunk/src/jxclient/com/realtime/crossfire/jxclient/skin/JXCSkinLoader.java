@@ -1162,7 +1162,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, font);
                             }
                             else if (type.equals("spelllist"))
                             {
@@ -1171,7 +1171,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, spellsManager, font);
+                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, spellsManager, font);
                             }
                             else
                             {

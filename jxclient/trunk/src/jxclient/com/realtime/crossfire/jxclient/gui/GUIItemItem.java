@@ -78,7 +78,7 @@ public abstract class GUIItemItem extends GUIItem
 
     public GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
-        super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
+        super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;

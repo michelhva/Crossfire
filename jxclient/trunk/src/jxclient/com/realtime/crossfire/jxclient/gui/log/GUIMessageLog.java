@@ -64,7 +64,7 @@ public class GUIMessageLog extends GUILog
     public GUIMessageLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
         super(jxcWindow, name, x, y, w, h, backgroundImage, fonts);
-        messageBufferUpdater = new MessageBufferUpdater(jxcWindow, crossfireServerConnection, buffer, defaultColor);
+        messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
     }
 
     /**
