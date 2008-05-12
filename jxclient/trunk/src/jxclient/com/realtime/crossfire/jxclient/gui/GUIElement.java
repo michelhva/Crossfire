@@ -191,10 +191,10 @@ public abstract class GUIElement
         {
             this.visible = visible;
             setChanged();
-            final Gui gui = getGui();
-            if (gui != null)
+            final Gui tmpGui = getGui();
+            if (tmpGui != null)
             {
-                gui.updateVisibleElement(this);
+                tmpGui.updateVisibleElement(this);
             }
         }
     }

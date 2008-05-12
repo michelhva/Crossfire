@@ -1565,13 +1565,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final String skinName = args[1];
-                            if (!skinName.matches("[-a-z_0-9]+"))
+                            final String newSkinName = args[1];
+                            if (!newSkinName.matches("[-a-z_0-9]+"))
                             {
-                                throw new IOException("invalid skin_name: "+skinName);
+                                throw new IOException("invalid skin_name: "+newSkinName);
                             }
 
-                            this.skinName = skinName;
+                            this.skinName = newSkinName;
                         }
                         else if (gui != null && args[0].equals("text"))
                         {

@@ -91,22 +91,22 @@ public abstract class GUIItemItem extends GUIItem
     {
         super.render(g);
 
-        final CfItem item = getItem();
-        if (item == null)
+        final CfItem tmpItem = getItem();
+        if (tmpItem == null)
         {
             return;
         }
 
-        g.drawImage(facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage(), 0, 0, null);
-        if (item.isApplied())
+        g.drawImage(facesManager.getOriginalImageIcon(tmpItem.getFace().getFaceNum()).getImage(), 0, 0, null);
+        if (tmpItem.isApplied())
         {
             g.drawImage(appliedImage, 0, 0, null);
         }
-        if (item.isCursed() || item.isDamned())
+        if (tmpItem.isCursed() || tmpItem.isDamned())
         {
             g.drawImage(cursedImage, 0, 0, null);
         }
-        if (item.isLocked())
+        if (tmpItem.isLocked())
         {
             g.drawImage(lockedImage, 0, 0, null);
         }
@@ -114,24 +114,24 @@ public abstract class GUIItemItem extends GUIItem
         {
             g.drawImage(selectorImage, 0, 0, null);
         }
-        if (item.getNrOf() > 0)
+        if (tmpItem.getNrOf() > 0)
         {
             g.setFont(font);
             g.setColor(nrofColor);
-            g.drawString(String.valueOf(item.getNrOf()), 1, 1+font.getSize());
+            g.drawString(String.valueOf(tmpItem.getNrOf()), 1, 1+font.getSize());
         }
     }
 
     /* {@inheritDoc} */
     @Override public void button2Clicked(final JXCWindow jxcWindow)
     {
-        final CfItem item = getItem();
-        if (item == null)
+        final CfItem tmpItem = getItem();
+        if (tmpItem == null)
         {
             return;
         }
 
-        crossfireServerConnection.sendApply(item.getTag());
+        crossfireServerConnection.sendApply(tmpItem.getTag());
     }
 
     protected CfItem getItem()
