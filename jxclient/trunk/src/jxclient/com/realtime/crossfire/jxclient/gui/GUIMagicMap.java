@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
@@ -163,40 +162,40 @@ public class GUIMagicMap extends GUIElement
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
-        public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
+        public void mapScrolled(final int dx, final int dy)
         {
             synchronized (bufferedImage)
             {
                 final Graphics2D g = bufferedImage.createGraphics();
                 final CfMap map = mapUpdater.getMap();
-                final int dx = evt.getDX()*TILE_SIZE;
-                final int dy = evt.getDY()*TILE_SIZE;
-                if (Math.abs(dx) >= w || Math.abs(dy) >= h)
+                final int dxPixels = dx*TILE_SIZE;
+                final int dyPixels = dy*TILE_SIZE;
+                if (Math.abs(dxPixels) >= w || Math.abs(dyPixels) >= h)
                 {
                     redrawTiles(g, map, 0, 0, w/TILE_SIZE, h/TILE_SIZE);
                 }
                 else
                 {
-                    g.copyArea(dx <= 0 ? 0 : dx, dy <= 0 ? 0 : dy, dx == 0 ? w : w-Math.abs(dx), dy == 0 ? h : h-Math.abs(dy), -dx, -dy);
+                    g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? w : w-Math.abs(dxPixels), dyPixels == 0 ? h : h-Math.abs(dyPixels), -dxPixels, -dyPixels);
                     g.setColor(Color.BLACK);
-                    if (dx < 0)
+                    if (dxPixels < 0)
                     {
-                        redrawTiles(g, map, 0, 0, -dx/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, 0, 0, -dxPixels/TILE_SIZE, h/TILE_SIZE);
                     }
-                    else if (dx > 0)
+                    else if (dxPixels > 0)
                     {
-                        redrawTiles(g, map, w/TILE_SIZE-dx/TILE_SIZE, 0, w/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, w/TILE_SIZE-dxPixels/TILE_SIZE, 0, w/TILE_SIZE, h/TILE_SIZE);
                     }
-                    if (dy < 0)
+                    if (dyPixels < 0)
                     {
-                        redrawTiles(g, map, 0, 0, w/TILE_SIZE, -dy/TILE_SIZE);
+                        redrawTiles(g, map, 0, 0, w/TILE_SIZE, -dyPixels/TILE_SIZE);
                     }
-                    else if (dy > 0)
+                    else if (dyPixels > 0)
                     {
-                        redrawTiles(g, map, 0, h/TILE_SIZE-dy/TILE_SIZE, w/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, 0, h/TILE_SIZE-dyPixels/TILE_SIZE, w/TILE_SIZE, h/TILE_SIZE);
                     }
                 }
-                redrawSquare(g, map, (mapWidth-1)/2-evt.getDX(), (mapHeight-1)/2-evt.getDY());
+                redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
                 markPlayer(g);
                 g.dispose();
             }
