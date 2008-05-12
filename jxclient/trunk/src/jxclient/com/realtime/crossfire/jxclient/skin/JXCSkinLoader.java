@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
