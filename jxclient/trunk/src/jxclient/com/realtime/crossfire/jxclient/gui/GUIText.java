@@ -120,7 +120,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
-        final String tmp = getDisplayText(g);
+        final String tmp = getDisplayText();
         final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         if (isActive())
@@ -138,7 +138,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         g.drawString(tmp, margin, y);
     }
 
-    public String getDisplayText(final Graphics2D g)
+    public String getDisplayText()
     {
         final String tmpText = text.substring(offset);
         if (!hideInput)
@@ -317,7 +317,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             final Graphics2D g = bufferedImage.createGraphics();
             for (;;)
             {
-                final String tmp = getDisplayText(g);
+                final String tmp = getDisplayText();
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
                 final int cursorX = (int)(rectCursor.getWidth()+0.5);

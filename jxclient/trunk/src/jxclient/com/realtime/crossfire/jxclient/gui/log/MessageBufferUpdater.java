@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 
 /**
@@ -149,8 +148,6 @@ public class MessageBufferUpdater
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
-     *
      * @param crossfireServerConnection the connection instance
      *
      * @param buffer The buffer to update.
@@ -158,7 +155,7 @@ public class MessageBufferUpdater
      * @param defaultColor The default color to use for undefined colors
      * indices.
      */
-    public MessageBufferUpdater(final JXCWindow jxcWindow, final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
+    public MessageBufferUpdater(final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
     {
         this.buffer = buffer;
         this.defaultColor = defaultColor;
