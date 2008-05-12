@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.sound;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -136,8 +137,8 @@ public class StatsWatcher
     {
         this.stats = stats;
         this.soundManager = soundManager;
-        poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
-        level = stats.getStat(Stats.CS_STAT_LEVEL);
+        poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
+        level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
         jxcWindowRenderer.addGuiStateListener(guiStateListener);
         guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
@@ -149,7 +150,7 @@ public class StatsWatcher
      */
     private void checkStats()
     {
-        final boolean newPoisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
+        final boolean newPoisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         if (poisoned != newPoisoned)
         {
             poisoned = newPoisoned;
@@ -159,7 +160,7 @@ public class StatsWatcher
             }
         }
 
-        final int newLevel = stats.getStat(Stats.CS_STAT_LEVEL);
+        final int newLevel = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         if (level != newLevel)
         {
             if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())

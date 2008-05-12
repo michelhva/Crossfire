@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -53,15 +54,15 @@ public class GUILabelStats extends GUIOneLineLabel
             final String text;
             switch (stat)
             {
-            case Stats.CS_STAT_SPEED:
+            case CrossfireStatsListener.CS_STAT_SPEED:
                 text = formatFloatStat(s.getFloatStat(stat), 2);
                 break;
 
-            case Stats.CS_STAT_WEAP_SP:
+            case CrossfireStatsListener.CS_STAT_WEAP_SP:
                 text = formatFloatStat(s.getWeaponSpeed(), 2);
                 break;
 
-            case Stats.CS_STAT_RANGE:
+            case CrossfireStatsListener.CS_STAT_RANGE:
                 final String rangeString = s.getRange();
                 if (rangeString.startsWith("Range: spell "))
                 {
@@ -81,21 +82,21 @@ public class GUILabelStats extends GUIOneLineLabel
                 }
                 break;
 
-            case Stats.CS_STAT_TITLE:
+            case CrossfireStatsListener.CS_STAT_TITLE:
                 text = s.getTitle();
                 break;
 
-            case Stats.CS_STAT_EXP64:
-            case Stats.CS_STAT_EXP:
+            case CrossfireStatsListener.CS_STAT_EXP64:
+            case CrossfireStatsListener.CS_STAT_EXP:
                 text = String.valueOf(s.getExperience());
                 break;
 
-            case Stats.C_STAT_EXP_NEXT_LEVEL:
-                text = String.valueOf(getJXCWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(Stats.CS_STAT_LEVEL), s.getExperience()));
+            case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
+                text = String.valueOf(getJXCWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(CrossfireStatsListener.CS_STAT_LEVEL), s.getExperience()));
                 break;
 
-            case Stats.CS_STAT_WEIGHT_LIM:
-            case Stats.C_STAT_WEIGHT:
+            case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
+            case CrossfireStatsListener.C_STAT_WEIGHT:
                 {
                     final int weight = s.getStat(stat);
                     text = formatFloatStat(((weight+50)/100)/10.0, 1);

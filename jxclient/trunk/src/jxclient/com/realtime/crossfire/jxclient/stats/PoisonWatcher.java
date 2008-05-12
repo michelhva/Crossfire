@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 
 /**
  * Helper class to synthesize an "is poisoned" stat value. The Crossfire server
@@ -155,7 +156,7 @@ public class PoisonWatcher
             }
 
             this.active = active;
-            stats.setStat(Stats.C_STAT_POISONED, active ? 1 : 0);
+            stats.setStat(CrossfireStatsListener.C_STAT_POISONED, active ? 1 : 0);
         }
         stats.setStatsProcessed(false);
     }

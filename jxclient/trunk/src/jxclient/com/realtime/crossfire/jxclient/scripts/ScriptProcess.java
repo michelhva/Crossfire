@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -165,38 +166,38 @@ public class ScriptProcess extends Thread
         }
         else if (parms.equals("stat stats"))
         {
-            commandSent(stats.getStat(Stats.CS_STAT_STR)+","+
-                        stats.getStat(Stats.CS_STAT_CON)+","+
-                        stats.getStat(Stats.CS_STAT_DEX)+","+
-                        stats.getStat(Stats.CS_STAT_INT)+","+
-                        stats.getStat(Stats.CS_STAT_WIS)+","+
-                        stats.getStat(Stats.CS_STAT_POW)+","+
-                        stats.getStat(Stats.CS_STAT_CHA));
+            commandSent(stats.getStat(CrossfireStatsListener.CS_STAT_STR)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_CON)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_INT)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_POW)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
         }
         else if (parms.equals("stat cmbt"))
         {
-            commandSent(stats.getStat(Stats.CS_STAT_WC)+","+
-                        stats.getStat(Stats.CS_STAT_AC)+","+
-                        stats.getStat(Stats.CS_STAT_DAM)+","+
-                        stats.getStat(Stats.CS_STAT_SPEED)+","+
-                        stats.getStat(Stats.CS_STAT_WEAP_SP));
+            commandSent(stats.getStat(CrossfireStatsListener.CS_STAT_WC)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_AC)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+","+
+                        stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
         }
         else if (parms.equals("stat hp"))
         {
-            commandSent(stats.getStat(Stats.CS_STAT_HP)+","+
-                    stats.getStat(Stats.CS_STAT_MAXHP)+","+
-                    stats.getStat(Stats.CS_STAT_SP)+","+
-                    stats.getStat(Stats.CS_STAT_MAXSP)+","+
-                    stats.getStat(Stats.CS_STAT_GRACE)+","+
-                    stats.getStat(Stats.CS_STAT_MAXGRACE)+","+
-                    stats.getStat(Stats.CS_STAT_FOOD));
+            commandSent(stats.getStat(CrossfireStatsListener.CS_STAT_HP)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_SP)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_GRACE)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE)+","+
+                    stats.getStat(CrossfireStatsListener.CS_STAT_FOOD));
         }
         else if (parms.equals("stat xp"))
         {
             final StringBuilder sb = new StringBuilder();
-            sb.append(stats.getStat(Stats.CS_STAT_LEVEL));
+            sb.append(stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL));
             sb.append(',').append(stats.getExperience());
-            for (int i = SkillSet.CS_STAT_SKILLINFO; i < SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS; i++)
+            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
             {
                 if (SkillSet.getSkill(i) != null)
                 {
@@ -209,10 +210,10 @@ public class ScriptProcess extends Thread
         else if (parms.equals("stat resists"))
         {
             final StringBuilder sb = new StringBuilder();
-            for (int i = Stats.CS_STAT_RESIST_START; i <= Stats.CS_STAT_RESIST_END; i++)
+            for (int i = CrossfireStatsListener.CS_STAT_RESIST_START; i <= CrossfireStatsListener.CS_STAT_RESIST_END; i++)
             {
                 sb.append(stats.getStat(i));
-                if (i < Stats.CS_STAT_RESIST_END)
+                if (i < CrossfireStatsListener.CS_STAT_RESIST_END)
                 {
                     sb.append(',');
                 }
