@@ -405,10 +405,9 @@ public class CfMapUpdater
                 return;
             }
 
-            final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
             for (final MapListener listener : mapListeners)
             {
-                listener.commandMapReceived(evt);
+                listener.mapChanged(map, squares);
             }
             squares.clear();
         }
