@@ -186,17 +186,17 @@ public class GUIItemSpelllist extends GUIItem
     private void setSpell()
     {
         final List<Spell> list = spellsManager.getSpellList();
-        final Spell spell = 0 <= index && index < list.size() ? list.get(index) : null;
+        final Spell newSpell = 0 <= index && index < list.size() ? list.get(index) : null;
 
-        if (this.spell == spell)
+        if (spell == newSpell)
         {
             return;
         }
 
-        this.spell = spell;
+        spell = newSpell;
         setChanged();
 
-        setTooltipText(spell == null ? null : spell.getTooltipText());
+        setTooltipText(newSpell == null ? null : newSpell.getTooltipText());
     }
 
     private void setIndex(final int index)

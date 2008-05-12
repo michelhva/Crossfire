@@ -145,28 +145,28 @@ public class StatsWatcher
      */
     private void checkStats()
     {
-        final boolean poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
-        if (this.poisoned != poisoned)
+        final boolean newPoisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
+        if (poisoned != newPoisoned)
         {
-            this.poisoned = poisoned;
+            poisoned = newPoisoned;
             if (active)
             {
-                playClip(poisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+                playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
             }
         }
 
-        final int level = stats.getStat(Stats.CS_STAT_LEVEL);
-        if (this.level != level)
+        final int newLevel = stats.getStat(Stats.CS_STAT_LEVEL);
+        if (level != newLevel)
         {
             if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())
             {
                 ignoreLevelChange = 0;
             }
-            if (ignoreLevelChange == 0 && this.level < level && active)
+            if (ignoreLevelChange == 0 && level < newLevel && active)
             {
                 playClip(Sounds.LEVEL_UP);
             }
-            this.level = level;
+            level = newLevel;
         }
     }
 
