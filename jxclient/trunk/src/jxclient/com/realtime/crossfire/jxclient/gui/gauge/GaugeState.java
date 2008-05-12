@@ -98,10 +98,10 @@ public class GaugeState
     }
 
     /**
-     * Draws the given part of a picture to {@link #buffer}.
+     * Updates the values from a {@link Orientation} state.
      * @param orientation the state
      */
-    public void draw(final Orientation orientation)
+    public void setValues(final Orientation orientation)
     {
         final int filledX = orientation.getX();
         final int filledY = orientation.getY();

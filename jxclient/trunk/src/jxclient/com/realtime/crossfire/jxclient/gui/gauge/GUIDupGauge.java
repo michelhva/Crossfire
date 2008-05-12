@@ -171,8 +171,8 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
         this.labelText = labelText;
         this.tooltipText = tooltipText;
 
-        gaugeStateDiv.draw(orientationDiv);
-        gaugeStateMod.draw(orientationMod);
+        gaugeStateDiv.setValues(orientationDiv);
+        gaugeStateMod.setValues(orientationMod);
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
