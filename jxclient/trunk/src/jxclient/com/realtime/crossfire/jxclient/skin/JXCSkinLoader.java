@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -104,6 +103,7 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
