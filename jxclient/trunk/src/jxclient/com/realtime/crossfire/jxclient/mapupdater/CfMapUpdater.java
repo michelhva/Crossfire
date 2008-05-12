@@ -77,17 +77,17 @@ public class CfMapUpdater
     /**
      * The listeners to notify about changed map squares.
      */
-    private final List<CrossfireMapListener> mapListeners = new ArrayList<CrossfireMapListener>();
+    private final List<MapListener> mapListeners = new ArrayList<MapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
-    private final List<CrossfireNewmapListener> newmapListeners = new ArrayList<CrossfireNewmapListener>();
+    private final List<NewmapListener> newmapListeners = new ArrayList<NewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
-    private final List<CrossfireMapscrollListener> mapscrollListeners = new ArrayList<CrossfireMapscrollListener>();
+    private final List<MapscrollListener> mapscrollListeners = new ArrayList<MapscrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
@@ -213,7 +213,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public void addCrossfireMapListener(final CrossfireMapListener listener)
+    public void addCrossfireMapListener(final MapListener listener)
     {
         mapListeners.add(listener);
     }
@@ -223,7 +223,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public void removeCrossfireMapListener(final CrossfireMapListener listener)
+    public void removeCrossfireMapListener(final MapListener listener)
     {
         mapListeners.remove(listener);
     }
@@ -233,7 +233,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public void addCrossfireNewmapListener(final CrossfireNewmapListener listener)
+    public void addCrossfireNewmapListener(final NewmapListener listener)
     {
         newmapListeners.add(listener);
     }
@@ -243,7 +243,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public void removeCrossfireNewmapListener(final CrossfireNewmapListener listener)
+    public void removeCrossfireNewmapListener(final NewmapListener listener)
     {
         newmapListeners.remove(listener);
     }
@@ -253,7 +253,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to add.
      */
-    public void addCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
+    public void addCrossfireMapscrollListener(final MapscrollListener listener)
     {
         mapscrollListeners.add(listener);
     }
@@ -263,7 +263,7 @@ public class CfMapUpdater
      *
      * @param listener The listener to remove.
      */
-    public void removeCrossfireMapscrollListener(final CrossfireMapscrollListener listener)
+    public void removeCrossfireMapscrollListener(final MapscrollListener listener)
     {
         mapscrollListeners.remove(listener);
     }
@@ -406,7 +406,7 @@ public class CfMapUpdater
             }
 
             final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
-            for (final CrossfireMapListener listener : mapListeners)
+            for (final MapListener listener : mapListeners)
             {
                 listener.commandMapReceived(evt);
             }
@@ -513,9 +513,9 @@ public class CfMapUpdater
             }
 
             final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
-            for (final CrossfireMapscrollListener listener : mapscrollListeners)
+            for (final MapscrollListener mapscrollListener : mapscrollListeners)
             {
-                listener.commandMapscrollReceived(evt);
+                mapscrollListener.commandMapscrollReceived(evt);
             }
         }
     }
@@ -570,7 +570,7 @@ public class CfMapUpdater
 
             visibleAnimations.setMapSize(width, height);
 
-            for (final CrossfireNewmapListener listener : newmapListeners)
+            for (final NewmapListener listener : newmapListeners)
             {
                 listener.commandNewmapReceived();
             }

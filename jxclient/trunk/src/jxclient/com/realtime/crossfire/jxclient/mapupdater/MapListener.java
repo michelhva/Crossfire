@@ -25,7 +25,7 @@ package com.realtime.crossfire.jxclient.mapupdater;
  * @author Lauwenmark
  * @since 1.0
  */
-public interface CrossfireMapListener
+public interface MapListener
 {
     void commandMapReceived(CrossfireCommandMapEvent evt);
 }
