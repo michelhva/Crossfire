@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.CommandQueue;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import java.util.LinkedList;
