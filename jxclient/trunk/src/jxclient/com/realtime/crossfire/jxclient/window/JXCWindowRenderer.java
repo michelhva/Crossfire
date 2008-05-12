@@ -639,13 +639,12 @@ public class JXCWindowRenderer
      * Adds a dialog to {@link #openDialogs}. Generates mouse events if
      * necessary.
      * @param dialog the dialog
-     * @return whether the dialog was opened
      */
-    private boolean openDialogsAdd(final Gui dialog)
+    private void openDialogsAdd(final Gui dialog)
     {
         if (openDialogs.contains(dialog))
         {
-            return false;
+            return;
         }
 
         final Point mouse = jxcWindow.getMousePosition(true);
@@ -669,8 +668,6 @@ public class JXCWindowRenderer
                 openDialogs.add(dialog);
             }
         }
-
-        return true;
     }
 
     /**
