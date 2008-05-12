@@ -1528,7 +1528,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, resolution);
+        skin.load(server, this, resolution, optionManager);
         return skin;
     }
 
@@ -1735,16 +1735,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         default:
             return true;
         }
-    }
-
-    /**
-     * Return the option manager for this window.
-     *
-     * @return The option manager.
-     */
-    public OptionManager getOptionManager()
-    {
-        return optionManager;
     }
 
     /**
