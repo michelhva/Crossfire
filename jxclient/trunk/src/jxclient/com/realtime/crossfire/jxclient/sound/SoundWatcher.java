@@ -31,6 +31,11 @@ import com.realtime.crossfire.jxclient.server.CrossfireSoundListener;
 public class SoundWatcher
 {
     /**
+     * The {@link SoundManager} instance to watch.
+     */
+    private final SoundManager soundManager;
+
+    /**
      * The crossfire sound listener.
      */
     private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener()
@@ -43,17 +48,18 @@ public class SoundWatcher
 
         public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, final String action, final String name)
         {
-            SoundManager.instance.playClip(Sounds.CHARACTER, name, action);
+            soundManager.playClip(Sounds.CHARACTER, name, action);
         }
     };
 
     /**
-     * Create a new instance.
-     *
-     * @param crossfireServerConnection The connection to watch.
+     * Creates a new instance.
+     * @param crossfireServerConnection the connection to watch
+     * @param soundManager the sound manager instance to watch
      */
-    public SoundWatcher(final CrossfireServerConnection crossfireServerConnection)
+    public SoundWatcher(final CrossfireServerConnection crossfireServerConnection, final SoundManager soundManager)
     {
         crossfireServerConnection.addCrossfireSoundListener(crossfireSoundListener);
+        this.soundManager = soundManager;
     }
 }

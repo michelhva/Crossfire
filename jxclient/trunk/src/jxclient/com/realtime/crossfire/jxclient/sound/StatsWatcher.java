@@ -41,6 +41,11 @@ public class StatsWatcher
     private static final long DELAY = 1000;
 
     /**
+     * The {@link SoundManager} instance to watch.
+     */
+    private final SoundManager soundManager;
+
+    /**
      * The stats instance to watch.
      */
     private final Stats stats;
@@ -121,17 +126,16 @@ public class StatsWatcher
     };
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param stats The stats instance to watch.
-     *
      * @param jxcWindowRenderer The window renderer instance.
-     *
      * @param itemsManager the instance to watch
+     * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer, final ItemsManager itemsManager)
+    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer, final ItemsManager itemsManager, final SoundManager soundManager)
     {
         this.stats = stats;
+        this.soundManager = soundManager;
         poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
         level = stats.getStat(Stats.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(crossfireStatsListener);
@@ -179,7 +183,7 @@ public class StatsWatcher
     {
         if (active)
         {
-            SoundManager.instance.playClip(Sounds.CHARACTER, null, clip);
+            soundManager.playClip(Sounds.CHARACTER, null, clip);
         }
     }
 }
