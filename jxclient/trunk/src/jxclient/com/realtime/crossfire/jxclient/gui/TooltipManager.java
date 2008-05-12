@@ -39,6 +39,12 @@ public class TooltipManager
     private final JXCWindow window;
 
     /**
+     * The tooltip label. Set to <code>null</code> if the skin does not use
+     * tooltips.
+     */
+    private AbstractLabel tooltip = null;
+
+    /**
      * The last known active gui element. It is used to suppress unnecessary
      * change events to the tooltip label.
      */
@@ -50,13 +56,21 @@ public class TooltipManager
     private final Object activeGuiElementSync = "activeGuiElementSync";
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to manage the tooltips of.
+     * Creates a new instance.
+     * @param window the window to manage the tooltips of
      */
     public TooltipManager(final JXCWindow window)
     {
         this.window = window;
+    }
+
+    /**
+     * Sets the tooltip label.
+     * @param tooltip the tooltip label, or <code>null</code>
+     */
+    public void setTooltip(final AbstractLabel tooltip)
+    {
+        this.tooltip = tooltip;
     }
 
     /**
@@ -140,7 +154,6 @@ public class TooltipManager
         assert activeGuiElement != null;
         assert Thread.holdsLock(activeGuiElementSync);
 
-        final AbstractLabel tooltip = window.getWindowRenderer().getTooltip();
         if (tooltip == null)
         {
             return;
@@ -174,7 +187,6 @@ public class TooltipManager
      */
     private void removeTooltip()
     {
-        final AbstractLabel tooltip = window.getWindowRenderer().getTooltip();
         if (tooltip != null)
         {
             tooltip.setVisible(false);

@@ -1674,6 +1674,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
                             tooltipLabel.setAutoResize(true);
                             window.getWindowRenderer().setTooltip(tooltipLabel);
+                            window.getTooltipManager().setTooltip(tooltipLabel);
                         }
                         else
                         {
