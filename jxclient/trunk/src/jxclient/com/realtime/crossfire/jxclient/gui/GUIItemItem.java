@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
+import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
@@ -49,10 +49,10 @@ public abstract class GUIItemItem extends GUIItem
     private CfItem item = null;
 
     /**
-     * The {@link CfItemModifiedListener} used to detect attribute changes of
+     * The {@link CfItemListener} used to detect attribute changes of
      * the displayed item.
      */
-    private final CfItemModifiedListener itemModifiedListener = new CfItemModifiedListener()
+    private final CfItemListener itemListener = new CfItemListener()
     {
         /** {@inheritDoc} */
         public void itemModified()
@@ -148,12 +148,12 @@ public abstract class GUIItemItem extends GUIItem
 
         if (this.item != null)
         {
-            this.item.removeCfItemModifiedListener(itemModifiedListener);
+            this.item.removeCfItemModifiedListener(itemListener);
         }
         this.item = item;
         if (this.item != null)
         {
-            this.item.addCfItemModifiedListener(itemModifiedListener);
+            this.item.addCfItemModifiedListener(itemListener);
         }
 
         setChanged();

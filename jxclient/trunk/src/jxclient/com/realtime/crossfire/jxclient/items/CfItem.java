@@ -296,7 +296,7 @@ public class CfItem
         }
         modified = false;
 
-        for (final CfItemModifiedListener listener : listeners.getListeners(CfItemModifiedListener.class))
+        for (final CfItemListener listener : listeners.getListeners(CfItemListener.class))
         {
             listener.itemModified();
         }
@@ -308,9 +308,9 @@ public class CfItem
      *
      * @param listener the listener to remove
      */
-    public void addCfItemModifiedListener(final CfItemModifiedListener listener)
+    public void addCfItemModifiedListener(final CfItemListener listener)
     {
-        listeners.add(CfItemModifiedListener.class, listener);
+        listeners.add(CfItemListener.class, listener);
     }
 
     /**
@@ -318,8 +318,8 @@ public class CfItem
      *
      * @param listener the listener to remove
      */
-    public void removeCfItemModifiedListener(final CfItemModifiedListener listener)
+    public void removeCfItemModifiedListener(final CfItemListener listener)
     {
-        listeners.remove(CfItemModifiedListener.class, listener);
+        listeners.remove(CfItemListener.class, listener);
     }
 }
