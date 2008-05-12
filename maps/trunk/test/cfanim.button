@@ -1,0 +1,18 @@
+[Config]
+name= CFAnim test
+victimtype= byname
+victim= Doorman
+unique= no
+always_delete= no
+paralyzed= yes
+time_representation= second
+errors_allowed= yes
+verbose= yes
+animation= Animation
+invisible= no
+wizard= no
+[Animation]
+0 say Yes, coming to open the door!
+1 moveto 4 14
+1 apply_object lever
+0 say Here you go.
