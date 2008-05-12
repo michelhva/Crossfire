@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
@@ -177,10 +178,11 @@ public class jxclient
                     final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
                     try
                     {
-                        final JXCWindow window = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager);
+                        final OptionManager optionManager = new OptionManager(prefs);
+                        final JXCWindow window = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager, optionManager);
                         try
                         {
-                            window.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                            optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                         }
                         catch (final OptionException ex)
                         {

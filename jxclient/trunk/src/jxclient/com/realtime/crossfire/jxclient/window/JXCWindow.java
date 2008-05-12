@@ -424,14 +424,17 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @param soundManager the sound manager instance to use
      *
+     * @param optionManager the option manager instance to use
+     *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager) throws IOException
+    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
         this.soundManager = soundManager;
+        this.optionManager = optionManager;
         final FaceCache faceCache = new FaceCache();
         server = new CrossfireServerConnection(semaphoreRedraw, debugProtocol);
         experienceTable = new ExperienceTable(server);
@@ -447,7 +450,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        optionManager = new OptionManager(settings);
         commands = new Commands(this, server, stats, optionManager);
         try
         {
