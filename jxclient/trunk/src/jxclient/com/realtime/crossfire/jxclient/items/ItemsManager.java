@@ -120,7 +120,10 @@ public class ItemsManager
         /** {@inheritDoc} */
         public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
         {
+            stats.resetSkills();
             setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
+            stats.setStat(Stats.C_STAT_WEIGHT, weight);
+            stats.setStatsProcessed(false);
         }
 
         /** {@inheritDoc} */
