@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -35,6 +36,8 @@ import java.awt.image.BufferedImage;
 
 public class GUIItemShortcut extends GUIItem
 {
+    private final Shortcuts shortcuts;
+
     /**
      * The {@link FacesManager} instance for looking up faces.
      */
@@ -74,18 +77,19 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final FacesManager facesManager, final Font font)
+    public GUIItemShortcut(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font)
     {
         super(window, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, font);
+        this.shortcuts = shortcuts;
         this.facesManager = facesManager;
         this.index = index;
-        window.getShortcuts().addShortcutsListener(shortcutsListener);
+        shortcuts.addShortcutsListener(shortcutsListener);
     }
 
     /* {@inheritDoc} */
     @Override public void button1Clicked(final JXCWindow window)
     {
-        final Shortcut shortcut = getWindow().getShortcuts().getShortcut(index);
+        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
         {
             shortcut.execute();
@@ -95,7 +99,7 @@ public class GUIItemShortcut extends GUIItem
     /* {@inheritDoc} */
     @Override public void button2Clicked(final JXCWindow window)
     {
-        final Shortcut shortcut = getWindow().getShortcuts().getShortcut(index);
+        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
         {
             if (shortcut instanceof ShortcutSpell)
@@ -115,7 +119,7 @@ public class GUIItemShortcut extends GUIItem
            return;
         }
 
-        getWindow().getShortcuts().setSpellShortcut(index, spell, true);
+        shortcuts.setSpellShortcut(index, spell, true);
     }
 
     /* {@inheritDoc} */
@@ -123,7 +127,7 @@ public class GUIItemShortcut extends GUIItem
     {
         super.render(g);
 
-        final Shortcut shortcut = getWindow().getShortcuts().getShortcut(index);
+        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut == null)
         {
             return;

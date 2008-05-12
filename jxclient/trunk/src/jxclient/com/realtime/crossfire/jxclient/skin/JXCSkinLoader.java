@@ -99,6 +99,7 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -300,7 +301,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -367,14 +368,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable);
+            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable, shortcuts);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable);
+                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts);
                 gui.setStateChanged(false);
             }
         }
@@ -535,9 +536,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param experienceTable the experience table to use
      *
+     * @param shortcuts the shortcuts instance
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -556,7 +559,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable);
+                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts);
             }
             finally
             {
@@ -623,9 +626,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param experienceTable the experience table to use
      *
+     * @param shortcuts the shortcuts instance
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -1185,7 +1190,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, shortcuts, font);
                             }
                             else if (type.equals("spelllist"))
                             {
