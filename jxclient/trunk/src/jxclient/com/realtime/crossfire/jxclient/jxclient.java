@@ -165,6 +165,8 @@ public class jxclient
                 skin = DEFAULT_SKIN;
             }
 
+            final SoundManager soundManager = new SoundManager();
+
             final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
             try
             {
@@ -174,17 +176,16 @@ public class jxclient
                     final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
                     try
                     {
-                        final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs);
+                        final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager);
                         try
                         {
-                            jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption());
+                            jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                         }
                         catch (final OptionException ex)
                         {
                             throw new AssertionError();
                         }
 
-                        SoundManager.instance = new SoundManager();
                         jxwin.init(resolution, skin, fullScreen, server);
                     }
                     finally

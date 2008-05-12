@@ -30,6 +30,11 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 public class MusicWatcher
 {
     /**
+     * The {@link SoundManager} instance to watch.
+     */
+    private final SoundManager soundManager;
+
+    /**
      * The crossfire stats listener.
      */
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener()
@@ -37,16 +42,18 @@ public class MusicWatcher
         /** {@inheritDoc} */
         public void commandMusicReceived(final String music)
         {
-            SoundManager.instance.playMusic(music.equals("NONE") ? null : music);
+            soundManager.playMusic(music.equals("NONE") ? null : music);
         }
     };
 
     /**
-     * Create a new instance.
-     * @param crossfireServerConnection the connectio instance
+     * Creates a new instance.
+     * @param crossfireServerConnection the connection instance
+     * @param soundManager the sound manager instance to watch
      */
-    public MusicWatcher(final CrossfireServerConnection crossfireServerConnection)
+    public MusicWatcher(final CrossfireServerConnection crossfireServerConnection, final SoundManager soundManager)
     {
         crossfireServerConnection.addCrossfireMusicListener(crossfireMusicListener);
+        this.soundManager = soundManager;
     }
 }

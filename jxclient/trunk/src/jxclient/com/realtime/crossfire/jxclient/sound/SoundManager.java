@@ -31,11 +31,6 @@ import java.util.EnumSet;
 public class SoundManager
 {
     /**
-     * The singleton instance.
-     */
-    public static SoundManager instance = null;
-
-    /**
      * The clip manager for playing sound effects.
      */
     private static final ClipManager clipManager = new ClipManager();

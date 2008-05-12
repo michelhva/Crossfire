@@ -28,10 +28,24 @@ import com.realtime.crossfire.jxclient.sound.SoundManager;
  */
 public class SoundCheckBoxOption extends CheckBoxOption
 {
+    /**
+     * The {@link SoundManager} instance to affect.
+     */
+    private final SoundManager soundManager;
+
+    /**
+     * Creates a new instance.
+     * @param soundManager the sound manager instance to affect
+     */
+    public SoundCheckBoxOption(final SoundManager soundManager)
+    {
+        this.soundManager = soundManager;
+    }
+
     /** {@inheritDoc} */
     @Override protected void execute(final boolean checked)
     {
-        SoundManager.instance.setEnabled(checked);
+        soundManager.setEnabled(checked);
     }
 
     /** {@inheritDoc} */

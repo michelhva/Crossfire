@@ -177,6 +177,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final Settings settings;
 
     /**
+     * The {@link SoundManager} instance.
+     */
+    private final SoundManager soundManager;
+
+    /**
      * Terminate the application if set.
      */
     private boolean terminated = false;
@@ -427,13 +432,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @param settings The settings instance to use.
      *
+     * @param soundManager the sound manager instance to use
+     *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings) throws IOException
+    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager) throws IOException
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
+        this.soundManager = soundManager;
         final FaceCache faceCache = new FaceCache();
         itemsManager = new ItemsManager(faceCache);
         server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, stats, faceCache);
@@ -685,7 +693,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             if (this.guiId == GUI_MAIN)
             {
-                SoundManager.instance.mute(Sounds.CHARACTER, false);
+                soundManager.mute(Sounds.CHARACTER, false);
                 server.addCrossfireDrawextinfoListener(this);
                 server.addCrossfireQueryListener(this);
                 setTitle(TITLE_PREFIX+" - "+hostname);
@@ -718,8 +726,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             switch (guiId)
             {
             case GUI_START:
-                SoundManager.instance.muteMusic(true);
-                SoundManager.instance.mute(Sounds.CHARACTER, true);
+                soundManager.muteMusic(true);
+                soundManager.mute(Sounds.CHARACTER, true);
                 jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
                 if (DISABLE_START_GUI)
                 {
@@ -732,8 +740,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 break;
 
             case GUI_METASERVER:
-                SoundManager.instance.muteMusic(true);
-                SoundManager.instance.mute(Sounds.CHARACTER, true);
+                soundManager.muteMusic(true);
+                soundManager.mute(Sounds.CHARACTER, true);
                 jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
                 showGUIMeta();
                 metaserver.query();
@@ -754,7 +762,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 break;
 
             case GUI_MAIN:
-                SoundManager.instance.muteMusic(false);
+                soundManager.muteMusic(false);
                 jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
                 showGUIMain();
                 break;
@@ -764,9 +772,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void init(final Resolution resolution, final String skinName, final boolean fullScreen, final String serverInfo)
     {
-        new MusicWatcher(server);
-        new SoundWatcher(server);
-        new StatsWatcher(stats, jxcWindowRenderer, itemsManager);
+        new MusicWatcher(server, soundManager);
+        new SoundWatcher(server, soundManager);
+        new StatsWatcher(stats, jxcWindowRenderer, itemsManager, soundManager);
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
@@ -817,7 +825,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             saveKeybindings();
             DialogStateParser.save(skin, jxcWindowRenderer);
             optionManager.saveOptions();
-            SoundManager.instance.shutdown();
+            soundManager.shutdown();
         }
         catch (final InterruptedException e)
         {
