@@ -297,7 +297,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection s, final JXCWindow p, final Resolution resolution) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Resolution resolution) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -349,14 +349,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         mapHeight = 0;
         dialogs.clear();
         images.clear();
-        addDialog("keybind", p);
-        addDialog("query", p);
-        addDialog("book", p);
-        addDialog("main", p);
-        addDialog("meta", p);
-        addDialog("quit", p);
-        addDialog("disconnect", p);
-        addDialog("start", p);
+        addDialog("keybind", window);
+        addDialog("query", window);
+        addDialog("book", window);
+        addDialog("main", window);
+        addDialog("meta", window);
+        addDialog("quit", window);
+        addDialog("disconnect", window);
+        addDialog("start", window);
         commandLists.clear();
         fonts.clear();
         textButtonFactory = null;
@@ -364,14 +364,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, s, p, null);
+            load("global", selectedResolution, crossfireServerConnection, window, null);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, s, p, gui);
+                load(name, selectedResolution, crossfireServerConnection, window, gui);
                 gui.setStateChanged(false);
             }
         }
