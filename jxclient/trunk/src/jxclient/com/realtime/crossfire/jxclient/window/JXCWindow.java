@@ -152,7 +152,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The global experience table.
      */
-    private final ExperienceTable experienceTable = new ExperienceTable();
+    private final ExperienceTable experienceTable;
 
     private final CrossfireServerConnection server;
 
@@ -434,7 +434,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.settings = settings;
         this.soundManager = soundManager;
         final FaceCache faceCache = new FaceCache();
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol);
+        server = new CrossfireServerConnection(semaphoreRedraw, animations, debugProtocol);
+        experienceTable = new ExperienceTable(server);
         stats = new Stats(server);
         itemsManager = new ItemsManager(server, faceCache, stats);
         faceCache.init(server);

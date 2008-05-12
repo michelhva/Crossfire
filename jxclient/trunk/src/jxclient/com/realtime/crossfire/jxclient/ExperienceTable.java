@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient;
 
+import com.realtime.crossfire.jxclient.server.CrossfireExpTableListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -45,9 +47,35 @@ public class ExperienceTable
     private int maxLevel = 0;
 
     /**
+     * The {@link CrossfireExpTableListener} to receive updated experience
+     * tables.
+     */
+    private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener()
+    {
+        /** {@inheritDoc} */
+        public void expTableReceived(final long[] expTable)
+        {
+            clear();
+            for (int level = 1; level < expTable.length; level++)
+            {
+                add(level, expTable[level]);
+            }
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param crossfireServerConnection the connection to monitor
+     */
+    public ExperienceTable(final CrossfireServerConnection crossfireServerConnection)
+    {
+        crossfireServerConnection.addCrossfireExpTableListener(crossfireExpTableListener);
+    }
+
+    /**
      * Forget about all level-$&gt; mappings.
      */
-    public void clear()
+    private void clear()
     {
         info.clear();
         minLevel = Integer.MAX_VALUE;
@@ -61,7 +89,7 @@ public class ExperienceTable
      *
      * @param exp The experience needed to reach level <code>level</code>.
      */
-    public void add(final int level, final long exp)
+    private void add(final int level, final long exp)
     {
         if (level < 1)
         {
