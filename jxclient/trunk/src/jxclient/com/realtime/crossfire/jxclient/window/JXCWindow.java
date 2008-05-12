@@ -38,8 +38,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.jxclient;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
@@ -344,7 +344,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The listener to detect a changed player name.
      */
-    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
         public void playerReceived(final CfPlayer player)
@@ -669,7 +669,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             {
                 server.disconnect();
                 setHost(null);
-                itemsManager.removeCrossfirePlayerListener(crossfirePlayerListener);
+                itemsManager.removeCrossfirePlayerListener(playerListener);
                 server.removeCrossfireQueryListener(this);
                 server.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
@@ -688,7 +688,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 server.addCrossfireDrawextinfoListener(this);
                 server.addCrossfireQueryListener(this);
                 setTitle(TITLE_PREFIX+" - "+hostname);
-                itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
+                itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 SkillSet.clearNumberedSkills();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());

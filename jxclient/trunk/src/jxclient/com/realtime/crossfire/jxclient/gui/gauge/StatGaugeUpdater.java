@@ -21,8 +21,8 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -105,7 +105,7 @@ public class StatGaugeUpdater extends GaugeUpdater
     /**
      * The listener to detect a changed player name.
      */
-    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
         public void playerReceived(final CfPlayer player)
@@ -142,6 +142,6 @@ public class StatGaugeUpdater extends GaugeUpdater
         super(experienceTable);
         this.stat = stat;
         stats.addCrossfireStatsListener(statsListener);
-        itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
+        itemsManager.addCrossfirePlayerListener(playerListener);
     }
 }

@@ -20,8 +20,8 @@
 package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.CrossfirePlayerListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -104,7 +104,7 @@ public class StatsWatcher
     /**
      * The player listener.
      */
-    private final CrossfirePlayerListener crossfirePlayerListener = new CrossfirePlayerListener()
+    private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
         public void playerReceived(final CfPlayer player)
@@ -141,7 +141,7 @@ public class StatsWatcher
         stats.addCrossfireStatsListener(statsListener);
         jxcWindowRenderer.addGuiStateListener(guiStateListener);
         guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
-        itemsManager.addCrossfirePlayerListener(crossfirePlayerListener);
+        itemsManager.addCrossfirePlayerListener(playerListener);
     }
 
     /**
