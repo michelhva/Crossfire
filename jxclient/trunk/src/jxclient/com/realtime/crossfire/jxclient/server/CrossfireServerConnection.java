@@ -555,7 +555,7 @@ public class CrossfireServerConnection extends ServerConnection
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv anim num="+num+" flags="+flags+" faces="+Arrays.toString(faces)+"\n");
+                            debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces)+"\n");
                         }
                         if ((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
                         animations.addAnimation(num&0x1FFF, flags, faces);
