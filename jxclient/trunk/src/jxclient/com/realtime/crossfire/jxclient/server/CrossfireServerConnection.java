@@ -108,6 +108,11 @@ public class CrossfireServerConnection extends ServerConnection
     private final List<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
 
     /**
+     * The {@link CrossfireUpdateItemListener}s to be notified.
+     */
+    private final List<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new ArrayList<CrossfireUpdateItemListener>();
+
+    /**
      * The {@link CrossfireUpdateMapListener}s to be notified.
      */
     private final List<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new ArrayList<CrossfireUpdateMapListener>();
@@ -370,6 +375,15 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
+     * Adds a listener to be notified about item changes.
+     * @param crossfireUpdateItemListener the listener to add
+     */
+    public void addCrossfireUpdateItemListener(final CrossfireUpdateItemListener crossfireUpdateItemListener)
+    {
+        crossfireUpdateItemListeners.add(crossfireUpdateItemListener);
+    }
+
+    /**
      * Add a listener to be notified about map changes.
      *
      * @param listener The listener to add.
@@ -603,6 +617,10 @@ public class CrossfireServerConnection extends ServerConnection
                                     debugProtocolWrite("recv delinv tag="+tag+"\n");
                                 }
                                 itemsManager.cleanInventory(tag);
+                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                {
+                                    crossfireUpdateItemListener.delinvReceived(tag);
+                                }
                             }
                             return;
 
@@ -622,6 +640,10 @@ public class CrossfireServerConnection extends ServerConnection
                                     debugProtocolWrite("recv delitem tags="+Arrays.toString(tags)+"\n");
                                 }
                                 itemsManager.removeItems(tags);
+                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                {
+                                    crossfireUpdateItemListener.delitemReceived(tags);
+                                }
                             }
                             return;
                         }
@@ -934,10 +956,18 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
                                 }
-                                final CfItem item = new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof);
+                                final CfItem item = new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, -1);
                                 itemsManager.addItem(item);
+                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                {
+                                    crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, -1);
+                                }
                             }
                             itemsManager.fireEvents();
+                            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                            {
+                                crossfireUpdateItemListener.commandComplete();
+                            }
                         }
                         catch (final IOException ex)
                         {
@@ -969,8 +999,16 @@ public class CrossfireServerConnection extends ServerConnection
                                     debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
                                 itemsManager.addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
+                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                {
+                                    crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
+                                }
                             }
                             itemsManager.fireEvents();
+                            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                            {
+                                crossfireUpdateItemListener.commandComplete();
+                            }
                         }
                         return;
                     }
@@ -1127,6 +1165,10 @@ public class CrossfireServerConnection extends ServerConnection
                     }
                     stats.resetSkills();
                     itemsManager.setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
+                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                    {
+                        crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
+                    }
                     stats.setStat(Stats.C_STAT_WEIGHT, weight);
                     stats.setStatsProcessed(false);
                 }
@@ -1536,6 +1578,10 @@ public class CrossfireServerConnection extends ServerConnection
                             debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
                         }
                         itemsManager.updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                        {
+                            crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+                        }
                         if ((flags&CfItem.UPD_WEIGHT) != 0)
                         {
                             final CfPlayer player = itemsManager.getPlayer();
