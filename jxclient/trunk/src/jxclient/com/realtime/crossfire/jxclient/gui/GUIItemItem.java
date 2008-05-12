@@ -102,7 +102,7 @@ public abstract class GUIItemItem extends GUIItem
         {
             g.drawImage(appliedImage, 0, 0, null);
         }
-        if (item.isCursed())
+        if (item.isCursed() || item.isDamned())
         {
             g.drawImage(cursedImage, 0, 0, null);
         }
