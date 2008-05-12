@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
@@ -45,6 +46,11 @@ public class Gui
      * The window this gui belongs to.
      */
     private final JXCWindow window;
+
+    /**
+     * The mouse tracker instance.
+     */
+    private final MouseTracker mouseTracker;
 
     /**
      * The list of {@link GUIElement}s comprising this gui.
@@ -114,15 +120,14 @@ public class Gui
     private boolean autoCloseOnDeactivate = false;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window this gui belongs to.
+     * Creates a new instance.
+     * @param window the window this gui belongs to
+     * @param mouseTracker the mouse tracker instance
      */
-    public Gui(final JXCWindow window)
+    public Gui(final JXCWindow window, final MouseTracker mouseTracker)
     {
-        if (window == null) throw new IllegalArgumentException();
-
         this.window = window;
+        this.mouseTracker = mouseTracker;
     }
 
     /**
@@ -220,7 +225,7 @@ public class Gui
     {
         if (window.isDebugGui())
         {
-            final GUIElement mouseElement = window.getMouseTracker().getMouseElement();
+            final GUIElement mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
 
             hasChangedElements = false;

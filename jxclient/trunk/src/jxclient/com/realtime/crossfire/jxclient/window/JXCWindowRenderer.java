@@ -44,6 +44,8 @@ public class JXCWindowRenderer
 {
     private final JXCWindow window;
 
+    private final MouseTracker mouseTracker;
+
     /**
      * The semaphore used to synchronized map model updates and map view
      * redraws.
@@ -122,18 +124,18 @@ public class JXCWindowRenderer
     }
 
     /**
-     * Create a new instance.
-     *
-     * @param window The associated window.
-     *
-     * @param redrawSemaphore The semaphore used to synchronized map model
-     * updates and map view redraws.
+     * Creates a new instance.
+     * @param window the associated window
+     * @param mouseTracker the mouse tracker instance
+     * @param redrawSemaphore the semaphore used to synchronized map model
+     * updates and map view redraws
      */
-    public JXCWindowRenderer(final JXCWindow window, final Object redrawSemaphore)
+    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore)
     {
         this.window = window;
+        this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
-        currentGui = new Gui(window);
+        currentGui = new Gui(window, mouseTracker);
     }
 
     public void init(final Resolution resolution)
@@ -290,7 +292,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        currentGui = new Gui(window);
+        currentGui = new Gui(window, mouseTracker);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -659,9 +661,9 @@ public class JXCWindowRenderer
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
                 final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
-                window.getMouseTracker().mouseExited(mouseEvent);
+                mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
-                window.getMouseTracker().mouseEntered(mouseEvent);
+                mouseTracker.mouseEntered(mouseEvent);
             }
             else
             {
@@ -695,9 +697,9 @@ public class JXCWindowRenderer
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
                 final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
-                window.getMouseTracker().mouseExited(mouseEvent);
+                mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
-                window.getMouseTracker().mouseEntered(mouseEvent);
+                mouseTracker.mouseEntered(mouseEvent);
             }
             else
             {

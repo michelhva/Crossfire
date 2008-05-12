@@ -186,9 +186,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private boolean terminated = false;
 
-    private Gui queryDialog = new Gui(this);
+    private Gui queryDialog;
 
-    private Gui keybindDialog = new Gui(this);
+    private Gui keybindDialog;
 
     /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
@@ -235,7 +235,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Object semaphoreRedraw = new Object();
 
-    private final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(this, semaphoreRedraw);
+    private final JXCWindowRenderer windowRenderer;
 
     /**
      * The {@link TooltipManager} for this window.
@@ -450,6 +450,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+        mouseTracker = new MouseTracker(debugGui);
+        windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw);
+        mouseTracker.init(windowRenderer);
+        queryDialog = new Gui(this, mouseTracker);
+        keybindDialog = new Gui(this, mouseTracker);
         commands = new Commands(this, windowRenderer, commandQueue, server, stats, optionManager);
         try
         {
@@ -459,7 +464,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             throw new AssertionError();
         }
-        mouseTracker = new MouseTracker(debugGui, windowRenderer);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         updateTitle();
@@ -1528,7 +1532,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, metaserver, commandQueue, resolution, optionManager, experienceTable);
+        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable);
         return skin;
     }
 
@@ -1725,16 +1729,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         default:
             return true;
         }
-    }
-
-    /**
-     * Return the mouse tracker.
-     *
-     * @return The mouse tracker.
-     */
-    public MouseTracker getMouseTracker()
-    {
-        return mouseTracker;
     }
 
     /**
