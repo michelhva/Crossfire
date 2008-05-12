@@ -1900,73 +1900,108 @@ public class CrossfireServerConnection extends ServerConnection
     {
         if (infoType.equals("image_info"))
         {
-            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
-            final String info = d.readLine();
-            if (info == null)
-            {
-                throw new IOException("Truncated parameter in image_info");
-            }
-            final int nrpics = Integer.parseInt(info);
-            sendAddme();
+            processImageInfoReplyinfo(packet, startPos, endPos);
         }
         else if (infoType.equals("skill_info"))
         {
-            Stats.clearSkills();
-            final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
-            for (;;)
-            {
-                final String r = d.readLine();
-                if (r == null)
-                {
-                    break;
-                }
-
-                final String[] sk = patternDot.split(r, 2);
-                if (sk.length != 2)
-                {
-                    System.err.println("Ignoring skill definition for invalid skill: "+r+".");
-                    continue;
-                }
-
-                final int skillId;
-                try
-                {
-                    skillId = Integer.parseInt(sk[0]);
-                }
-                catch (final NumberFormatException ex)
-                {
-                    System.err.println("Ignoring skill definition for invalid skill: "+r+".");
-                    continue;
-                }
-
-                if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
-                {
-                    System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
-                    continue;
-                }
-
-                Stats.addSkill(skillId, sk[1]);
-            }
+            processSkillInfoReplyinfo(packet, startPos, endPos);
         }
         else if (infoType.equals("exp_table"))
         {
-            experienceTable.clear();
-
-            int pos = startPos;
-            final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-            for (int i = 1; i < numLevels; i++)
-            {
-                final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                experienceTable.add(i, exp);
-            }
-            if (pos < endPos)
-            {
-                System.err.println("Ignoring excess data at end of exp_table");
-            }
+            processExpTableReplyinfo(packet, startPos, endPos);
         }
         else
         {
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
+        }
+    }
+
+    /**
+     * Processes a "replyinfo image_info" block.
+     * @param packet the packet to process
+     * @param startPos the starting position into <code>packet</code>
+     * @param endPos the end position into <code>packet</code>
+     * @throws IOException if the packet cannot be parsed
+     */
+    private void processImageInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    {
+        final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
+        final String info = d.readLine();
+        if (info == null)
+        {
+            throw new IOException("Truncated parameter in image_info");
+        }
+        final int nrpics = Integer.parseInt(info);
+        sendAddme();
+    }
+
+    /**
+     * Processes a "replyinfo skill_info" block.
+     * @param packet the packet to process
+     * @param startPos the starting position into <code>packet</code>
+     * @param endPos the end position into <code>packet</code>
+     * @throws IOException if the packet cannot be parsed
+     */
+    private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    {
+        Stats.clearSkills();
+        final BufferedReader d = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(packet, startPos, endPos-startPos)));
+        for (;;)
+        {
+            final String r = d.readLine();
+            if (r == null)
+            {
+                break;
+            }
+
+            final String[] sk = patternDot.split(r, 2);
+            if (sk.length != 2)
+            {
+                System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                continue;
+            }
+
+            final int skillId;
+            try
+            {
+                skillId = Integer.parseInt(sk[0]);
+            }
+            catch (final NumberFormatException ex)
+            {
+                System.err.println("Ignoring skill definition for invalid skill: "+r+".");
+                continue;
+            }
+
+            if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+            {
+                System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
+                continue;
+            }
+
+            Stats.addSkill(skillId, sk[1]);
+        }
+    }
+
+    /**
+     * Processes a "replyinfo exp_table" block.
+     * @param packet the packet to process
+     * @param startPos the starting position into <code>packet</code>
+     * @param endPos the end position into <code>packet</code>
+     */
+    private void processExpTableReplyinfo(final byte[] packet, final int startPos, final int endPos)
+    {
+        experienceTable.clear();
+
+        int pos = startPos;
+        final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+        for (int i = 1; i < numLevels; i++)
+        {
+            final long exp = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+            experienceTable.add(i, exp);
+        }
+        if (pos < endPos)
+        {
+            System.err.println("Ignoring excess data at end of exp_table");
         }
     }
 
