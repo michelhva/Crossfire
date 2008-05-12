@@ -707,7 +707,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final CheckBoxOption option = parseCheckBoxOption(args[6], window);
+                            final CheckBoxOption option = parseCheckBoxOption(args[6], optionManager);
                             final String text = parseText(args, 7, lnr);
                             elements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
                         }
@@ -2082,17 +2082,17 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param name The check box option name to parse.
      *
-     * @param window The current window.
+     * @param optionManager the option manager to use
      *
      * @return The check box option.
      *
      * @throws IOException If the check box option name does not exist.
      */
-    private static CheckBoxOption parseCheckBoxOption(final String name, final JXCWindow window) throws IOException
+    private static CheckBoxOption parseCheckBoxOption(final String name, final OptionManager optionManager) throws IOException
     {
         try
         {
-            return window.getOptionManager().getCheckBoxOption(name);
+            return optionManager.getCheckBoxOption(name);
         }
         catch (final OptionException ex)
         {
