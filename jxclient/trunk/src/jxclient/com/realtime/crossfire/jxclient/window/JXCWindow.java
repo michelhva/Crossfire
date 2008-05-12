@@ -1836,16 +1836,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /**
-     * Return the command queue instance for this window.
-     *
-     * @return The command queue instance.
-     */
-    public CommandQueue getCommandQueue()
-    {
-        return commandQueue;
-    }
-
-    /**
      * Add a connection listener.
      *
      * @param listener The listener to add.
