@@ -1327,12 +1327,12 @@ public class CrossfireServerConnection extends ServerConnection
                         switch (stat)
                         {
                         case Stats.CS_STAT_EXP:
-                            final int experience1 = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF); // XXX: should be 4 byte?
+                            final int experience1 = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats exp="+experience1+"\n");
+                                debugProtocolWrite("recv stats exp="+(experience1&0xFFFFFFFFL)+"\n");
                             }
-                            stats.setExperience(experience1);
+                            stats.setExperience(experience1&0xFFFFFFFFL);
                             break;
 
                         case Stats.CS_STAT_SPEED:
