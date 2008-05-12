@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * A {@link Shortcut} that casts a spell.
@@ -40,9 +40,9 @@ public class ShortcutSpell extends Shortcut
     private static final String INVOKE = "invoke ";
 
     /**
-     * The window to cast the spell in.
+     * The command queue for executing commands.
      */
-    private final JXCWindow window;
+    private final CommandQueue commandQueue;
 
     /**
      * The spell to cast.
@@ -55,15 +55,13 @@ public class ShortcutSpell extends Shortcut
     private String command = CAST;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to cast the spell in.
-     *
-     * @param spell The spell to cast.
+     * Creates a new instance.
+     * @param commandQueue the command queue for executing commands
+     * @param spell the spell to cast
      */
-    public ShortcutSpell(final JXCWindow window, final Spell spell)
+    public ShortcutSpell(final CommandQueue commandQueue, final Spell spell)
     {
-        this.window = window;
+        this.commandQueue = commandQueue;
         this.spell = spell;
     }
 
@@ -109,6 +107,6 @@ public class ShortcutSpell extends Shortcut
     /** {@inheritDoc} */
     @Override public void execute()
     {
-        window.getCommandQueue().sendNcom(false, command+spell.getInternalName());
+        commandQueue.sendNcom(false, command+spell.getInternalName());
     }
 }

@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.shortcuts;
 
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -58,9 +58,9 @@ public class Shortcuts
     private final EventListenerList listeners = new EventListenerList();
 
     /**
-     * The window to cast the spell in.
+     * The command queue for executing commands.
      */
-    private final JXCWindow window;
+    private final CommandQueue commandQueue;
 
     /**
      * The {@link SpellsManager} instance to watch.
@@ -68,15 +68,13 @@ public class Shortcuts
     private final SpellsManager spellsManager;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to cast the spell in.
-     *
-     * @param spellsManager  the instance to watch
+     * Creates a new instance.
+     * @param commandQueue the command queue for executing commands
+     * @param spellsManager the instance to watch
      */
-    public Shortcuts(final JXCWindow window, final SpellsManager spellsManager)
+    public Shortcuts(final CommandQueue commandQueue, final SpellsManager spellsManager)
     {
-        this.window = window;
+        this.commandQueue = commandQueue;
         this.spellsManager = spellsManager;
     }
 
@@ -293,7 +291,7 @@ public class Shortcuts
 
     public void setSpellShortcut(final int index, final Spell spell, final boolean cast)
     {
-        final ShortcutSpell shortcutSpell = new ShortcutSpell(window, spell);
+        final ShortcutSpell shortcutSpell = new ShortcutSpell(commandQueue, spell);
         shortcutSpell.setCast(cast);
         setShortcut(index, shortcutSpell);
     }
@@ -312,7 +310,7 @@ public class Shortcuts
             return;
         }
 
-        final ShortcutCommand shortcutCommand = new ShortcutCommand(window, command);
+        final ShortcutCommand shortcutCommand = new ShortcutCommand(commandQueue, command);
         setShortcut(index, shortcutCommand);
     }
     /**
