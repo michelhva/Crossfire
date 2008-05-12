@@ -213,7 +213,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Pickup characterPickup;
 
-    private final boolean[] key_shift = new boolean[] { false, false, false, false };
+    private final boolean[] keyShift = new boolean[] { false, false, false, false };
 
     private KeyBindingState keyBindingState = null;
 
@@ -222,7 +222,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public static final int KEY_SHIFT_ALT = 2;
     public static final int KEY_SHIFT_ALTGR = 3;
 
-    private boolean is_run_active = false;
+    private boolean isRunActive = false;
 
     /**
      * The semaphore used to synchronized map model updates and map view
@@ -340,7 +340,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         @Override public void windowLostFocus(final WindowEvent e)
         {
-            Arrays.fill(key_shift, false);
+            Arrays.fill(keyShift, false);
             stopRunning();
         }
     };
@@ -465,7 +465,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public boolean checkRun()
     {
-        return is_run_active;
+        return isRunActive;
     }
 
     public boolean checkFire()
@@ -568,12 +568,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public boolean getKeyShift(final int keyid)
     {
-        return key_shift[keyid];
+        return keyShift[keyid];
     }
 
     private void setKeyShift(final int keyid, final boolean state)
     {
-        key_shift[keyid] = state;
+        keyShift[keyid] = state;
     }
 
     /**
@@ -862,7 +862,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 1");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -879,7 +879,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 2");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -897,7 +897,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 3");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -914,7 +914,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 4");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -932,7 +932,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 5");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -949,7 +949,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 6");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -967,7 +967,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 7");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -984,7 +984,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (getKeyShift(KEY_SHIFT_CTRL))
             {
                 commandQueue.sendNcom(false, 0, "run 8");
-                is_run_active = true;
+                isRunActive = true;
             }
             else if (getKeyShift(KEY_SHIFT_SHIFT))
             {
@@ -1324,13 +1324,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private void stopRunning()
     {
-        if (!is_run_active)
+        if (!isRunActive)
         {
             return;
         }
 
         commandQueue.sendNcom(true, 0, "run_stop");
-        is_run_active = false;
+        isRunActive = false;
     }
 
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
