@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -62,38 +63,38 @@ public class StatGaugeUpdater extends GaugeUpdater
             final Stats s = evt.getStats();
             switch (stat)
             {
-            case Stats.CS_STAT_HP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXHP));
+            case CrossfireStatsListener.CS_STAT_HP:
+                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
                 break;
 
-            case Stats.CS_STAT_SP:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXSP));
+            case CrossfireStatsListener.CS_STAT_SP:
+                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
                 break;
 
-            case Stats.CS_STAT_FOOD:
+            case CrossfireStatsListener.CS_STAT_FOOD:
                 setValues(s.getStat(stat), 0, 999);
                 break;
 
-            case Stats.C_STAT_LOWFOOD:
-                setValues(active && s.getStat(Stats.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+            case CrossfireStatsListener.C_STAT_LOWFOOD:
+                setValues(active && s.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 break;
 
-            case Stats.CS_STAT_GRACE:
-                setValues(s.getStat(stat), 0, s.getStat(Stats.CS_STAT_MAXGRACE));
+            case CrossfireStatsListener.CS_STAT_GRACE:
+                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
                 break;
 
-            case Stats.C_STAT_EXP_NEXT_LEVEL:
-                final int level = s.getStat(Stats.CS_STAT_LEVEL);
+            case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
+                final int level = s.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
                 final int perc = getPercentsToNextLevel(level, s.getExperience());
                 setValues(perc, 0, 99, perc+"%", s.getExperience()+"/"+getExperience(level+1));
                 break;
 
-            case Stats.C_STAT_POISONED:
-                setValues(s.getStat(Stats.C_STAT_POISONED), 0, 1);
+            case CrossfireStatsListener.C_STAT_POISONED:
+                setValues(s.getStat(CrossfireStatsListener.C_STAT_POISONED), 0, 1);
                 break;
 
             default:
-                if (Stats.CS_STAT_RESIST_START <= stat && stat <= Stats.CS_STAT_RESIST_END)
+                if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END)
                 {
                     setValues(s.getStat(stat), 0, 100);
                 }

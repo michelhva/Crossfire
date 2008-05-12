@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skills;
 
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,24 +30,10 @@ import java.util.Map;
 public class SkillSet
 {
     /**
-     * CS_NUM_SKILLS does not match how many skills there really
-     * are - instead, it is used as a range of values so that the client
-     * can have some idea how many skill categories there may be.
-     */
-    public static final int CS_NUM_SKILLS = 50;
-
-    /**
-     * CS_STAT_SKILLINFO is used as the starting index point.  Skill number->name
-     * map is generated dynamically for the client, so a bunch of entries will
-     * be used here.
-     */
-    public static final int CS_STAT_SKILLINFO = 140;
-
-    /**
      * Maps stat number to skill instance. Entries may be <code>null</code> if
      * the server did not provide a mapping.
      */
-    private static final Skill[] numberedSkills = new Skill[CS_NUM_SKILLS];
+    private static final Skill[] numberedSkills = new Skill[CrossfireStatsListener.CS_NUM_SKILLS];
 
     /**
      * Maps skill name to skill instance.
@@ -67,7 +54,7 @@ public class SkillSet
      */
     public static void addSkill(final int id, final String skillName)
     {
-        final int index = id-CS_STAT_SKILLINFO;
+        final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
         final Skill newSkill = getNamedSkill(skillName);
         if (oldSkill == newSkill)
@@ -133,6 +120,6 @@ public class SkillSet
      */
     public static Skill getSkill(final int id)
     {
-        return numberedSkills[id-CS_STAT_SKILLINFO];
+        return numberedSkills[id-CrossfireStatsListener.CS_STAT_SKILLINFO];
     }
 }

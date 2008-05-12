@@ -142,7 +142,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The {@link Stats} instance.
      */
-    private final Stats stats = new Stats();
+    private final Stats stats;
 
     /**
      * The {@link CfMapUpdater} instance.
@@ -434,7 +434,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.settings = settings;
         this.soundManager = soundManager;
         final FaceCache faceCache = new FaceCache();
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, stats);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol);
+        stats = new Stats(server);
         itemsManager = new ItemsManager(server, faceCache, stats);
         faceCache.init(server);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);

@@ -23,9 +23,7 @@ import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -59,11 +57,6 @@ public class CrossfireServerConnection extends ServerConnection
     private static final Charset utf8 = Charset.forName("UTF-8");
 
     /**
-     * The {@link Stats} instance to update.
-     */
-    private final Stats stats;
-
-    /**
      * The map width in tiles that is negotiated with the server.
      */
     private int mapWidth = 17;
@@ -94,6 +87,11 @@ public class CrossfireServerConnection extends ServerConnection
      * The {@link CrossfireUpdateFaceListener}s to be notified.
      */
     private final List<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
+
+    /**
+     * The {@link CrossfireStatsListener}s to be notified.
+     */
+    private final List<CrossfireStatsListener> crossfireStatsListeners = new ArrayList<CrossfireStatsListener>();
 
     /**
      * The {@link CrossfireUpdateItemListener}s to be notified.
@@ -230,12 +228,9 @@ public class CrossfireServerConnection extends ServerConnection
      *
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
-     *
-     * @param stats the instance to update
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final Stats stats)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol)
     {
-        this.stats = stats;
         this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
         this.animations = animations;
@@ -354,6 +349,15 @@ public class CrossfireServerConnection extends ServerConnection
     public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
     {
         crossfireUpdateFaceListeners.add(listener);
+    }
+
+    /**
+     * Adds a listener to be notified about stats changes.
+     * @param crossfireStatsListener the listener to add
+     */
+    public void addCrossfireStatsListener(final CrossfireStatsListener crossfireStatsListener)
+    {
+        crossfireStatsListeners.add(crossfireStatsListener);
     }
 
     /**
@@ -1321,165 +1325,132 @@ public class CrossfireServerConnection extends ServerConnection
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
+                    for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                    {
+                        crossfireStatsListener.statBegin();
+                    }
                     while (pos < end)
                     {
                         final int stat = packet[pos++]&0xFF;
                         switch (stat)
                         {
-                        case Stats.CS_STAT_EXP:
-                            final int experience1 = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        case CrossfireStatsListener.CS_STAT_HP:
+                        case CrossfireStatsListener.CS_STAT_MAXHP:
+                        case CrossfireStatsListener.CS_STAT_SP:
+                        case CrossfireStatsListener.CS_STAT_MAXSP:
+                        case CrossfireStatsListener.CS_STAT_STR:
+                        case CrossfireStatsListener.CS_STAT_INT:
+                        case CrossfireStatsListener.CS_STAT_WIS:
+                        case CrossfireStatsListener.CS_STAT_DEX:
+                        case CrossfireStatsListener.CS_STAT_CON:
+                        case CrossfireStatsListener.CS_STAT_CHA:
+                        case CrossfireStatsListener.CS_STAT_LEVEL:
+                        case CrossfireStatsListener.CS_STAT_WC:
+                        case CrossfireStatsListener.CS_STAT_AC:
+                        case CrossfireStatsListener.CS_STAT_DAM:
+                        case CrossfireStatsListener.CS_STAT_ARMOUR:
+                        case CrossfireStatsListener.CS_STAT_FOOD:
+                        case CrossfireStatsListener.CS_STAT_POW:
+                        case CrossfireStatsListener.CS_STAT_GRACE:
+                        case CrossfireStatsListener.CS_STAT_MAXGRACE:
+                        case CrossfireStatsListener.CS_STAT_FLAGS:
+                            final short int2Param = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats exp="+(experience1&0xFFFFFFFFL)+"\n");
+                                debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF)+"\n");
                             }
-                            stats.setExperience(experience1&0xFFFFFFFFL);
+                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            {
+                                crossfireStatsListener.statInt2Received(stat, int2Param);
+                            }
                             break;
 
-                        case Stats.CS_STAT_SPEED:
-                            final int speed = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        case CrossfireStatsListener.CS_STAT_EXP:
+                        case CrossfireStatsListener.CS_STAT_SPEED:
+                        case CrossfireStatsListener.CS_STAT_WEAP_SP:
+                        case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
+                        case CrossfireStatsListener.CS_STAT_SPELL_ATTUNE:
+                        case CrossfireStatsListener.CS_STAT_SPELL_REPEL:
+                        case CrossfireStatsListener.CS_STAT_SPELL_DENY:
+                            final int int4Param = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats speed="+speed+"\n");
+                                debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param+"\n");
                             }
-                            stats.setStat(stat, speed);
+                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            {
+                                crossfireStatsListener.statInt4Received(stat, int4Param);
+                            }
                             break;
 
-                        case Stats.CS_STAT_WEAP_SP:
-                            final int weaponSpeed = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        case CrossfireStatsListener.CS_STAT_EXP64:
+                            final long int8Param = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats weapon_speed="+weaponSpeed+"\n");
+                                debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param+"\n");
                             }
-                            stats.setStat(stat, weaponSpeed);
+                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            {
+                                crossfireStatsListener.statInt8Received(stat, int8Param);
+                            }
                             break;
 
-                        case Stats.CS_STAT_RANGE:
-                            final int rangeLength = packet[pos++]&0xFF;
-                            final String range = new String(packet, pos, rangeLength, utf8);
-                            pos += rangeLength;
+                        case CrossfireStatsListener.CS_STAT_RANGE:
+                        case CrossfireStatsListener.CS_STAT_TITLE:
+                            final int length = packet[pos++]&0xFF;
+                            final String strParam = new String(packet, pos, length, utf8);
+                            pos += length;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats range="+range+"\n");
+                                debugProtocolWrite("recv stats stat="+stat+" str="+strParam+"\n");
                             }
-                            stats.setRange(range);
-                            break;
-
-                        case Stats.CS_STAT_TITLE:
-                            final int titleLength = packet[pos++]&0xFF;
-                            final String title = new String(packet, pos, titleLength, utf8);
-                            pos += titleLength;
-                            if (debugProtocol != null)
+                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
-                                debugProtocolWrite("recv stats title="+title+"\n");
+                                crossfireStatsListener.statStringReceived(stat, strParam);
                             }
-                            stats.setTitle(title);
-                            break;
-
-                        case Stats.CS_STAT_WEIGHT_LIM:
-                            final int weightLimit = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv stats weight_limit="+weightLimit+"\n");
-                            }
-                            stats.setStat(Stats.CS_STAT_WEIGHT_LIM, weightLimit);
-                            break;
-
-                        case Stats.CS_STAT_EXP64:
-                            final long experience2 = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv stats exp64="+experience2+"\n");
-                            }
-                            stats.setExperience(experience2);
-                            break;
-
-                        case Stats.CS_STAT_HP:
-                        case Stats.CS_STAT_MAXHP:
-                        case Stats.CS_STAT_SP:
-                        case Stats.CS_STAT_MAXSP:
-                        case Stats.CS_STAT_STR:
-                        case Stats.CS_STAT_INT:
-                        case Stats.CS_STAT_WIS:
-                        case Stats.CS_STAT_DEX:
-                        case Stats.CS_STAT_CON:
-                        case Stats.CS_STAT_CHA:
-                        case Stats.CS_STAT_LEVEL:
-                        case Stats.CS_STAT_WC:
-                        case Stats.CS_STAT_AC:
-                        case Stats.CS_STAT_DAM:
-                        case Stats.CS_STAT_ARMOUR:
-                        case Stats.CS_STAT_FOOD:
-                        case Stats.CS_STAT_POW:
-                        case Stats.CS_STAT_GRACE:
-                        case Stats.CS_STAT_MAXGRACE:
-                            final int statValue = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv stats stat"+stat+"="+((statValue&0x8000) != 0 ? statValue-0x10000 : statValue)+"\n");
-                            }
-                            stats.setStat(stat, (statValue&0x8000) != 0 ? statValue-0x10000 : statValue);
-                            break;
-
-                        case Stats.CS_STAT_FLAGS:
-                            final int value = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv stats flags="+value+"\n");
-                            }
-                            stats.setStat(stat, value);
-                            break;
-
-                        case Stats.CS_STAT_SPELL_ATTUNE:
-                        case Stats.CS_STAT_SPELL_REPEL:
-                        case Stats.CS_STAT_SPELL_DENY:
-                            final int spellPath = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv stats spell"+stat+"="+spellPath+"\n");
-                            }
-                            // TODO: set spell paths
                             break;
 
                         default:
-                            if (Stats.CS_STAT_RESIST_START <= stat && stat < Stats.CS_STAT_RESIST_START+Stats.RESIST_TYPES)
+                            if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES)
                             {
-                                final int resist = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                                final short int2Param2 = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats resist"+stat+"="+((resist&0x8000) != 0 ? resist-0x10000 : resist)+"\n");
+                                    debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2+"\n");
                                 }
-                                stats.setStat(stat, (resist&0x8000) != 0 ? resist-0x10000 : resist);
+                                for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                                {
+                                    crossfireStatsListener.statInt2Received(stat, int2Param2);
+                                }
                             }
-                            else if (SkillSet.CS_STAT_SKILLINFO <= stat && stat < SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS)
+                            else if (CrossfireStatsListener.CS_STAT_SKILLINFO <= stat && stat < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS)
                             {
                                 final int level = packet[pos++]&0xFF;
-                                final long experience3 = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                                final long experience = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats skill"+stat+"="+level+"/"+experience3+"\n");
+                                    debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience+"\n");
                                 }
-                                final Skill sk = SkillSet.getSkill(stat);
-                                if (sk == null)
+                                for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                                 {
-                                    System.err.println("ignoring skill value for unknown skill "+stat);
-                                }
-                                else
-                                {
-                                    sk.set(level, experience3);
+                                    crossfireStatsListener.statSkillReceived(stat, level, experience);
                                 }
                             }
                             else
                             {
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats <unknown>"+stat+"\n");
+                                    debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>\n");
                                 }
                                 throw new UnknownCommandException("unknown stat value: "+stat);
                             }
                             break;
                         }
                     }
-                    stats.setStatsProcessed(false);
+                    for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                    {
+                        crossfireStatsListener.statEnd();
+                    }
                     if (pos > end) break;
                     return;
                 }
@@ -1891,7 +1862,10 @@ public class CrossfireServerConnection extends ServerConnection
         sendRequestinfo("skill_info");
         sendRequestinfo("exp_table");
         sendToggleextendedtext(1);
-        stats.setSimpleWeaponSpeed(scval >= 1029);
+        for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+        {
+            crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
+        }
     }
 
     /**
@@ -2010,7 +1984,7 @@ public class CrossfireServerConnection extends ServerConnection
                             continue;
                         }
 
-                        if (skillId < SkillSet.CS_STAT_SKILLINFO || skillId >= SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS)
+                        if (skillId < CrossfireStatsListener.CS_STAT_SKILLINFO || skillId >= CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS)
                         {
                             System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
                             continue;

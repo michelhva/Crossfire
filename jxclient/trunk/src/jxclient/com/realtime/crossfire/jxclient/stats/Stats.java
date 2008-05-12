@@ -19,9 +19,15 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * This is the representation of all the statistics of a player, like its speed
@@ -36,355 +42,8 @@ import java.util.List;
 public class Stats
 {
     /**
-     * The Hit Points stat.
-     */
-    public static final int CS_STAT_HP = 1;
-
-    /**
-     * The Maximum Hit Points stat.
-     */
-    public static final int CS_STAT_MAXHP = 2;
-
-    /**
-     * The Spell Points stat.
-     */
-    public static final int CS_STAT_SP = 3;
-
-    /**
-     * The Maximum Spell Points stat.
-     */
-    public static final int CS_STAT_MAXSP = 4;
-
-    /**
-     * The Strength Primary stat.
-     */
-    public static final int CS_STAT_STR = 5;
-
-    /**
-     * The Intelligence Primary stat.
-     */
-    public static final int CS_STAT_INT = 6;
-
-    /**
-     * The Wisdom Primary stat.
-     */
-    public static final int CS_STAT_WIS = 7;
-
-    /**
-     * The Dexterity Primary stat.
-     */
-    public static final int CS_STAT_DEX = 8;
-
-    /**
-     * The Constitution Primary stat.
-     */
-    public static final int CS_STAT_CON = 9;
-
-    /**
-     * The Charisma Primary stat.
-     */
-    public static final int CS_STAT_CHA = 10;
-
-    /**
-     * The Global Experience (32bit encoding) stat.
-     */
-    public static final int CS_STAT_EXP = 11;
-
-    /**
-     * The Global Experience needed to reach next level stat; the value is in
-     * XP.
-     */
-    public static final int C_STAT_EXP_NEXT_LEVEL = 0x10000;
-
-    /**
-     * The Global Level stat.
-     */
-    public static final int CS_STAT_LEVEL = 12;
-
-    /**
-     * The Weapon Class stat.
-     */
-    public static final int CS_STAT_WC = 13;
-
-    /**
-     * The Armor Class stat.
-     */
-    public static final int CS_STAT_AC = 14;
-
-    /**
-     * The Damage stat.
-     */
-    public static final int CS_STAT_DAM = 15;
-
-    /**
-     * The Armour stat.
-     */
-    public static final int CS_STAT_ARMOUR = 16;
-
-    /**
-     * The Speed stat.
-     */
-    public static final int CS_STAT_SPEED = 17;
-
-    /**
-     * The Food stat.
-     */
-    public static final int CS_STAT_FOOD = 18;
-
-    /**
-     * The Low Food indicator. It ranges from 0 (ok) to 1 (low food).
-     */
-    public static final int C_STAT_LOWFOOD = 0x10003;
-
-    /**
-     * The Weapon Speed stat.
-     */
-    public static final int CS_STAT_WEAP_SP = 19;
-
-    /**
-     * The Range stat - this is what is currently readied by the player to fire.
-     */
-    public static final int CS_STAT_RANGE = 20;
-
-    /**
-     * The Title stat.
-     */
-    public static final int CS_STAT_TITLE = 21;
-
-    /**
-     * The Power Primary stat.
-     */
-    public static final int CS_STAT_POW = 22;
-
-    /**
-     * The Grace stat.
-     */
-    public static final int CS_STAT_GRACE = 23;
-
-    /**
-     * The Maximum Grace stat.
-     */
-    public static final int CS_STAT_MAXGRACE = 24;
-
-    /**
-     * The various flags used in stats.
-     */
-    public static final int CS_STAT_FLAGS = 25;
-
-    /**
-     * The Weight Limit stat.
-     */
-    public static final int CS_STAT_WEIGHT_LIM = 26;
-
-    /**
-     * The character's weight.
-     */
-    public static final int C_STAT_WEIGHT = 257;
-
-    /**
-     * The Global Experience (64bit encoding) stat.
-     */
-    public static final int CS_STAT_EXP64 = 28;
-
-    public static final int CS_STAT_SPELL_ATTUNE = 29;
-
-    public static final int CS_STAT_SPELL_REPEL = 30;
-
-    public static final int CS_STAT_SPELL_DENY = 31;
-
-    /* Start & end of resistances, inclusive. */
-
-    /**
-     * Beginning index of the resistances.
-     */
-    public static final int CS_STAT_RESIST_START = 100;
-
-    /**
-     * End index of the resistances.
-     */
-    public static final int CS_STAT_RESIST_END = 117;
-
-    /**
-     * Resistance to physical attacks.
-     */
-    public static final int CS_STAT_RES_PHYS = 100;
-
-    /**
-     * Resistance to magical attacks.
-     */
-    public static final int CS_STAT_RES_MAG = 101;
-
-    /**
-     * Resistance to fire.
-     */
-    public static final int CS_STAT_RES_FIRE = 102;
-
-    /**
-     * Resistance to electricity.
-     */
-    public static final int CS_STAT_RES_ELEC = 103;
-
-    /**
-     * Resistance to cold.
-     */
-    public static final int CS_STAT_RES_COLD = 104;
-
-    /**
-     * Resistance to confusion.
-     */
-    public static final int CS_STAT_RES_CONF = 105;
-
-    /**
-     * Resistance to acid.
-     */
-    public static final int CS_STAT_RES_ACID = 106;
-
-    /**
-     * Resistance to drain life.
-     */
-    public static final int CS_STAT_RES_DRAIN = 107;
-
-    /**
-     * Resistance to ghost hit.
-     */
-    public static final int CS_STAT_RES_GHOSTHIT = 108;
-
-    /**
-     * Resistance to poison.
-     */
-    public static final int CS_STAT_RES_POISON = 109;
-
-    /**
-     * Resistance to slowness.
-     */
-    public static final int CS_STAT_RES_SLOW = 110;
-
-    /**
-     * Resistance to paralysis.
-     */
-    public static final int CS_STAT_RES_PARA = 111;
-
-    /**
-     * Resistance to turn undead.
-     */
-    public static final int CS_STAT_TURN_UNDEAD = 112;
-
-    /**
-     * Resistance to fear.
-     */
-    public static final int CS_STAT_RES_FEAR = 113;
-
-    /**
-     * Resistance to depletion.
-     */
-    public static final int CS_STAT_RES_DEPLETE = 114;
-
-    /**
-     * Resistance to death.
-     */
-    public static final int CS_STAT_RES_DEATH = 115;
-
-    /**
-     * Resistance to holy word.
-     */
-    public static final int CS_STAT_RES_HOLYWORD = 116;
-
-    /**
-     * Resistance to blindness.
-     */
-    public static final int CS_STAT_RES_BLIND = 117;
-
-    /* Start & end of skill experience + skill level, inclusive. */
-
-    /**
-     * Beginning index of skill experience stats.
-     */
-    public static final int CS_STAT_SKILLEXP_START = 118;
-
-    /**
-     * End index of skill experience stats.
-     */
-    public static final int CS_STAT_SKILLEXP_END = 129;
-
-    /**
-     * Agility skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_AGILITY = 118;
-
-    /**
-     * Agility skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_AGLEVEL = 119;
-
-    /**
-     * Personal skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_PERSONAL = 120;
-
-    /**
-     * Personal skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_PELEVEL = 121;
-
-    /**
-     * Mental skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_MENTAL = 122;
-
-    /**
-     * Mental skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_MELEVEL = 123;
-
-    /**
-     * Physical skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_PHYSIQUE = 124;
-
-    /**
-     * Physical skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_PHLEVEL = 125;
-
-    /**
-     * Magical skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_MAGIC = 126;
-
-    /**
-     * Magical skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_MALEVEL = 127;
-
-    /**
-     * Wisdom skills experience.
-     */
-    public static final int CS_STAT_SKILLEXP_WISDOM = 128;
-
-    /**
-     * Wisdom skills level.
-     */
-    public static final int CS_STAT_SKILLEXP_WILEVEL = 129;
-
-    /**
-     * Factor used to convert float int int values.
-     */
-    public static final int FLOAT_MULTI = 100000;
-
-    /**
-     * The total number of resistances.
-     */
-    public static final int RESIST_TYPES = 18;
-
-    /**
-     * The "is poisoned" indicator. It ranges from 0 (not poisoned) to 1
-     * (poisoned).
-     */
-    public static final int C_STAT_POISONED = 256;
-
-    /**
-     * Whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
-     * directly.
+     * Whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
+     * contains the weapon speed directly.
      */
     private boolean simpleWeaponSpeed = false;
 
@@ -406,8 +65,187 @@ public class Stats
      */
     private String activeSkill = "";
 
+    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
+    {
+        /**
+         * All unhandled stat values for which an error has been printed.
+         */
+        private final Set<String> unhandledStats = new HashSet<String>(0);
+
+        /** {@inheritDoc} */
+        public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
+        {
+            Stats.this.setSimpleWeaponSpeed(simpleWeaponSpeed);
+        }
+
+        /** {@inheritDoc} */
+        public void statBegin()
+        {
+        }
+
+        /** {@inheritDoc} */
+        public void statEnd()
+        {
+            setStatsProcessed(false);
+        }
+
+        /** {@inheritDoc} */
+        public void statInt2Received(final int stat, final short param)
+        {
+            switch (stat)
+            {
+            case CS_STAT_HP:
+            case CS_STAT_MAXHP:
+            case CS_STAT_SP:
+            case CS_STAT_MAXSP:
+            case CS_STAT_STR:
+            case CS_STAT_INT:
+            case CS_STAT_WIS:
+            case CS_STAT_DEX:
+            case CS_STAT_CON:
+            case CS_STAT_CHA:
+            case CS_STAT_LEVEL:
+            case CS_STAT_WC:
+            case CS_STAT_AC:
+            case CS_STAT_DAM:
+            case CS_STAT_ARMOUR:
+            case CS_STAT_FOOD:
+            case CS_STAT_POW:
+            case CS_STAT_GRACE:
+            case CS_STAT_MAXGRACE:
+                setStat(stat, param);
+                break;
+
+            case CS_STAT_FLAGS:
+                setStat(stat, param&0xFFFF);
+                break;
+
+            default:
+                if (CS_STAT_RESIST_START <= stat && stat < CS_STAT_RESIST_START+RESIST_TYPES)
+                {
+                    setStat(stat, param);
+                }
+                else
+                {
+                    reportUnhandledStat(stat, "int2");
+                }
+                break;
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void statInt4Received(final int stat, final int param)
+        {
+            switch (stat)
+            {
+            case CS_STAT_EXP:
+                setExperience(param&0xFFFFFFFFL);
+                break;
+
+            case CS_STAT_SPEED:
+                setStat(stat, param);
+                break;
+
+            case CS_STAT_WEAP_SP:
+                setStat(stat, param);
+                break;
+
+            case CS_STAT_WEIGHT_LIM:
+                setStat(stat, param);
+                break;
+
+            case CS_STAT_SPELL_ATTUNE:
+            case CS_STAT_SPELL_REPEL:
+            case CS_STAT_SPELL_DENY:
+                // TODO: set spell paths
+                break;
+
+            default:
+                reportUnhandledStat(stat, "int4");
+                break;
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void statInt8Received(final int stat, final long param)
+        {
+            switch (stat)
+            {
+            case CS_STAT_EXP64:
+                setExperience(param);
+                break;
+
+            default:
+                reportUnhandledStat(stat, "int8");
+                break;
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void statStringReceived(final int stat, final String param)
+        {
+            switch (stat)
+            {
+            case CS_STAT_RANGE:
+                setRange(param);
+                break;
+
+            case CS_STAT_TITLE:
+                setTitle(param);
+                break;
+
+            default:
+                reportUnhandledStat(stat, "string");
+                break;
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void statSkillReceived(final int stat, final int level, final long experience)
+        {
+            if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS)
+            {
+                final Skill sk = SkillSet.getSkill(stat);
+                if (sk == null)
+                {
+                    System.err.println("ignoring skill value for unknown skill "+stat);
+                }
+                else
+                {
+                    sk.set(level, experience);
+                }
+            }
+            else
+            {
+                reportUnhandledStat(stat, "skill");
+            }
+        }
+
+        /**
+         * Report an unhandled stat value.
+         * @param stat the stat value
+         * @param type the stat type
+         */
+        private void reportUnhandledStat(final int stat, final String type)
+        {
+            if (unhandledStats.add(type+"-"+stat))
+            {
+                System.err.println("Warning: unhandled stat "+stat+" of type "+type);
+            }
+        }
+    };
+
     /**
-     * Set whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
+     * Create a new instance.
+     * @param crossfireServerConnection the connection to monitor
+     */
+    public Stats(final CrossfireServerConnection crossfireServerConnection)
+    {
+        crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
+    }
+
+    /**
+     * Set whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value contains the weapon speed
      * directly.
      *
      * @param simpleWeaponSpeed Whether <code>CS_STAT_WEAP_SP</code> is the
@@ -462,7 +300,7 @@ public class Stats
      */
     public double getFloatStat(final int statnr)
     {
-        return (double)stats[statnr]/FLOAT_MULTI;
+        return (double)stats[statnr]/CrossfireStatsListener.FLOAT_MULTI;
     }
 
     /**
@@ -577,7 +415,7 @@ public class Stats
      */
     public double getWeaponSpeed()
     {
-        final double weaponSpeed = getFloatStat(CS_STAT_WEAP_SP);
+        final double weaponSpeed = getFloatStat(CrossfireStatsListener.CS_STAT_WEAP_SP);
         if (simpleWeaponSpeed)
         {
             return weaponSpeed;
@@ -588,6 +426,6 @@ public class Stats
             return 0;
         }
 
-        return getFloatStat(CS_STAT_SPEED)/weaponSpeed;
+        return getFloatStat(CrossfireStatsListener.CS_STAT_SPEED)/weaponSpeed;
     }
 }
