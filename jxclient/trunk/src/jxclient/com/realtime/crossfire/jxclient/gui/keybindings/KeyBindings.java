@@ -40,7 +40,7 @@ import java.util.List;
  *
  * @author Andreas Kirschbaum
  */
-public final class KeyBindings
+public class KeyBindings
 {
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 

@@ -135,7 +135,7 @@ public class GUITextButton extends AbstractButton
     /**
      * A set of images to form a button image.
      */
-    public static final class ButtonImages
+    public static class ButtonImages
     {
         public static final int OFFSET = 3;
 

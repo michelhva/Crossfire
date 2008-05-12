@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
  *
  * @author Andreas Kirschbaum
  */
-public final class KeyCharKeyBinding extends KeyBinding
+public class KeyCharKeyBinding extends KeyBinding
 {
     /**
      * The key character to match.
