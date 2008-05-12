@@ -21,6 +21,9 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -41,6 +44,11 @@ public class ItemsManager
      * The {@link FaceCache} instance for looking up faces.
      */
     private final FaceCache faceCache;
+
+    /**
+     * The {@link Stats} instance to update.
+     */
+    private final Stats stats;
 
     /**
      * Maps location to list of items.
@@ -81,12 +89,67 @@ public class ItemsManager
     private CfPlayer player = null;
 
     /**
-     * Creates a new instance.
-     * @param faceCache the instance for looking up faces
+     * The {@link CrossfireUpdateItemListener} to receive item updates.          
      */
-    public ItemsManager(final FaceCache faceCache)
+    private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener()
+    {
+        /** {@inheritDoc} */
+        public void delinvReceived(final int tag)
+        {
+            cleanInventory(tag);
+        }
+
+        /** {@inheritDoc} */
+        public void delitemReceived(final int[] tags)
+        {
+            removeItems(tags);
+        }
+
+        /** {@inheritDoc} */
+        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
+        {
+            addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
+        }
+
+        /** {@inheritDoc} */
+        public void additemFinished()
+        {
+            fireEvents();
+        }
+
+        /** {@inheritDoc} */
+        public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
+        {
+            setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
+        }
+
+        /** {@inheritDoc} */
+        public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+        {
+            updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+            if ((flags&CfItem.UPD_WEIGHT) != 0)
+            {
+                final CfPlayer player = getPlayer();
+                if (player != null && player.getTag() == tag)
+                {
+                    stats.setStat(Stats.C_STAT_WEIGHT, valWeight);
+                    stats.setStatsProcessed(false);
+                }
+            }
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param crossfireServerConnection the connection to monitor
+     * @param faceCache the instance for looking up faces
+     * @param stats the instance to update
+     */
+    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats)
     {
         this.faceCache = faceCache;
+        this.stats = stats;
+        crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
     }
 
     /**
@@ -179,7 +242,7 @@ public class ItemsManager
      *
      * @param tag The item tag.
      */
-    public void cleanInventory(final int tag)
+    private void cleanInventory(final int tag)
     {
         for (final CfItem item : getItems(tag))
         {
@@ -193,7 +256,7 @@ public class ItemsManager
      *
      * @param tags The tags to delete.
      */
-    public void removeItems(final int[] tags)
+    private void removeItems(final int[] tags)
     {
         for (final int tag : tags)
         {
@@ -244,7 +307,7 @@ public class ItemsManager
      *
      * @param item the item to add
      */
-    public synchronized void addItem(final CfItem item)
+    private synchronized void addItem(final CfItem item)
     {
         final CfItem oldItem = allItems.get(item.getTag());
         if (oldItem != null)
@@ -379,7 +442,7 @@ public class ItemsManager
      *
      * @param player the new player object
      */
-    public synchronized void setPlayer(final CfPlayer player)
+    private synchronized void setPlayer(final CfPlayer player)
     {
         if (this.player == player)
         {
@@ -475,7 +538,7 @@ public class ItemsManager
         return inventoryManager;
     }
 
-    public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+    private void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = getItemOrPlayer(tag);
         if (item == null)

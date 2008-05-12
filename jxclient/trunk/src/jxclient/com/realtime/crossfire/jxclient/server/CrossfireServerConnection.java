@@ -24,8 +24,6 @@ import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.HexCodec;
@@ -59,11 +57,6 @@ public class CrossfireServerConnection extends ServerConnection
     private static final Pattern patternDot = Pattern.compile(":");
 
     private static final Charset utf8 = Charset.forName("UTF-8");
-
-    /**
-     * The {@link ItemsManager} instance to update.
-     */
-    private final ItemsManager itemsManager;
 
     /**
      * The {@link Stats} instance to update.
@@ -243,15 +236,12 @@ public class CrossfireServerConnection extends ServerConnection
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      *
-     * @param itemsManager the instance to update
-     *
      * @param stats the instance to update
      *
      * @param faceCache the instance to update
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final ItemsManager itemsManager, final Stats stats, final FaceCache faceCache)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final Stats stats, final FaceCache faceCache)
     {
-        this.itemsManager = itemsManager;
         this.stats = stats;
         this.faceCache = faceCache;
         this.redrawSemaphore = redrawSemaphore;
@@ -616,7 +606,6 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv delinv tag="+tag+"\n");
                                 }
-                                itemsManager.cleanInventory(tag);
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
                                     crossfireUpdateItemListener.delinvReceived(tag);
@@ -639,7 +628,6 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv delitem tags="+Arrays.toString(tags)+"\n");
                                 }
-                                itemsManager.removeItems(tags);
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
                                     crossfireUpdateItemListener.delitemReceived(tags);
@@ -956,17 +944,14 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
                                 }
-                                final CfItem item = new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, -1);
-                                itemsManager.addItem(item);
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
                                     crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, -1);
                                 }
                             }
-                            itemsManager.fireEvents();
                             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                             {
-                                crossfireUpdateItemListener.commandComplete();
+                                crossfireUpdateItemListener.additemFinished();
                             }
                         }
                         catch (final IOException ex)
@@ -998,16 +983,14 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
-                                itemsManager.addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
                                     crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
                                 }
                             }
-                            itemsManager.fireEvents();
                             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                             {
-                                crossfireUpdateItemListener.commandComplete();
+                                crossfireUpdateItemListener.additemFinished();
                             }
                         }
                         return;
@@ -1164,7 +1147,6 @@ public class CrossfireServerConnection extends ServerConnection
                         debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name+"\n");
                     }
                     stats.resetSkills();
-                    itemsManager.setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
                     for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                     {
                         crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
@@ -1577,19 +1559,9 @@ public class CrossfireServerConnection extends ServerConnection
                         {
                             debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
                         }
-                        itemsManager.updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                         {
                             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-                        }
-                        if ((flags&CfItem.UPD_WEIGHT) != 0)
-                        {
-                            final CfPlayer player = itemsManager.getPlayer();
-                            if (player != null && player.getTag() == tag)
-                            {
-                                stats.setStat(Stats.C_STAT_WEIGHT, valWeight);
-                                stats.setStatsProcessed(false);
-                            }
                         }
                     }
                     return;

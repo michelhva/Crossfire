@@ -433,8 +433,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         this.settings = settings;
         this.soundManager = soundManager;
         final FaceCache faceCache = new FaceCache();
-        itemsManager = new ItemsManager(faceCache);
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, stats, faceCache);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, stats, faceCache);
+        itemsManager = new ItemsManager(server, faceCache, stats);
         faceCache.init(server);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache);
