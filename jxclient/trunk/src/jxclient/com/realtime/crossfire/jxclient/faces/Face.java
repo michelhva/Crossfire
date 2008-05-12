@@ -41,12 +41,12 @@ public class Face
     /**
      * The face name as sent by the server.
      */
-    private String faceName;
+    private final String faceName;
 
     /**
      * The image checksum as sent by the server.
      */
-    private int faceChecksum;
+    private final int faceChecksum;
 
     private int tileWidth = 1;
 
