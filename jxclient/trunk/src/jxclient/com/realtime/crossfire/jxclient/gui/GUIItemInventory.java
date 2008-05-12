@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
@@ -34,6 +35,11 @@ import java.util.List;
 
 public class GUIItemInventory extends GUIItemItem
 {
+    /**
+     * The command queue for sending commands.
+     */
+    private final CommandQueue commandQueue;
+
     /**
      * The server instance.
      */
@@ -65,9 +71,10 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
+    public GUIItemInventory(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, facesManager, font, nrofColor);
+        this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
         defaultIndex = index;
@@ -161,7 +168,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), window.getCommandQueue().getRepeatCount());
+        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), commandQueue.getRepeatCount());
     }
 
     /**

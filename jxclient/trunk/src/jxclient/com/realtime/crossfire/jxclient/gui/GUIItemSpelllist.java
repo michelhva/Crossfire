@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
@@ -34,6 +35,11 @@ import java.util.List;
 
 public class GUIItemSpelllist extends GUIItem
 {
+    /**
+     * The command queue for sending commands.
+     */
+    private final CommandQueue commandQueue;
+
     /**
      * The instance for looking up faces.
      */
@@ -101,9 +107,10 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
+    public GUIItemSpelllist(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
     {
         super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
+        this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
@@ -151,7 +158,7 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
-        window.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
+        commandQueue.sendNcom(false, "cast "+spell.getInternalName());
         window.getCurrentSpellManager().setCurrentSpell(spell);
     }
 
