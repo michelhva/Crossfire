@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
@@ -34,7 +35,7 @@ import java.util.Iterator;
  */
 public interface JXCSkin extends Iterable<Gui>
 {
-    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, Resolution resolution, OptionManager optionManager) throws JXCSkinException;
+    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, final CommandQueue commandQueue, Resolution resolution, OptionManager optionManager) throws JXCSkinException;
 
     /**
      * Return a short name for the skin. It is used to construct path or file

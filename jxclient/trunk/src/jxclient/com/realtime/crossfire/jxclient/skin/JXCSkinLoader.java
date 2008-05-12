@@ -88,6 +88,7 @@ import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -297,7 +298,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -364,14 +365,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, null, optionManager);
+            load("global", selectedResolution, crossfireServerConnection, window, commandQueue, null, optionManager);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, gui, optionManager);
+                load(name, selectedResolution, crossfireServerConnection, window, commandQueue, gui, optionManager);
                 gui.setStateChanged(false);
             }
         }
@@ -520,13 +521,15 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
+     * @param commandQueue the command queue for sending commands
+     *
      * @param gui The Gui representing the skin file.
      *
      * @param optionManager the option manager instance to use
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -545,7 +548,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, gui, optionManager);
+                load(dialogName, resourceName, inputStream, server, window, commandQueue, gui, optionManager);
             }
             finally
             {
@@ -600,13 +603,15 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
+     * @param commandQueue the command queue for sending commands
+     *
      * @param gui The Gui representing the skin file.
      *
      * @param optionManager the option manager instance to use
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -1147,7 +1152,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemFloor(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, facesManager, font, nrofColor);
+                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, facesManager, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
@@ -1157,7 +1162,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color nrofColor = parseColor(args[13]);
-                                element = new GUIItemInventory(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, itemsManager, font, nrofColor);
+                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
@@ -1175,7 +1180,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                element = new GUIItemSpelllist(window, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, spellsManager, font);
+                                element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, facesManager, spellsManager, font);
                             }
                             else
                             {
