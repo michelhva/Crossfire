@@ -80,7 +80,7 @@ public class GaugeState
     private BufferedImage filledPicture = null;
 
     /**
-     * Createss a new instance.
+     * Creates a new instance.
      * @param owner the owner gui element
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
@@ -123,7 +123,7 @@ public class GaugeState
     }
 
     /**
-     * Draw the gauge image into the given graphics context.
+     * Draws the gauge image into the given graphics context.
      * @param g the graphics context
      */
     public void draw(final Graphics2D g)
