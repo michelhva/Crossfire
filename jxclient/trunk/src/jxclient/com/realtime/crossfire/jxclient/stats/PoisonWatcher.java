@@ -19,14 +19,14 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.TimeoutEvent;
-import com.realtime.crossfire.jxclient.Timeouts;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
+import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 
 /**
  * Helper class to synthesize an "is poisoned" stat value. The Crossfire server
