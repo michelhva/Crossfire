@@ -1,5 +1,7 @@
 2008-05-12  Andreas Kirschbaum
 
+	* Highlight damned items in inventory and ground view.
+
 	* Rewrite the face caching code to remove lags when loading (many)
 	images after entering a new map. Now all image loading is executed
 	asynchronously to the main rendering loop.
