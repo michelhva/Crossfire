@@ -84,7 +84,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    public AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
+    protected AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
     {
         super(jxcWindow, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();

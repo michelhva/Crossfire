@@ -227,7 +227,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater)
+    protected JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;

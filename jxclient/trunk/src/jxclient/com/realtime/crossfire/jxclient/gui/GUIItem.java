@@ -51,7 +51,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      */
     private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
-    public GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final Font font)
+    protected GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final Font font)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.cursedImage = cursedImage;

@@ -87,7 +87,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private int offset = 0;
 
-    public GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    protected GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");

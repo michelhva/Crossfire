@@ -43,7 +43,7 @@ public abstract class GaugeUpdater
      *
      * @param experienceTable The experience table to query.
      */
-    public GaugeUpdater(final ExperienceTable experienceTable)
+    protected GaugeUpdater(final ExperienceTable experienceTable)
     {
         this.experienceTable = experienceTable;
     }
