@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.items;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -121,6 +122,7 @@ public class ItemsManager
         public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
         {
             stats.resetSkills();
+            SkillSet.clearNumberedSkills();
             setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
             stats.setStat(Stats.C_STAT_WEIGHT, weight);
             stats.setStatsProcessed(false);

@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
@@ -1449,7 +1450,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 }
                                 stats.setStat(stat, (resist&0x8000) != 0 ? resist-0x10000 : resist);
                             }
-                            else if (Stats.CS_STAT_SKILLINFO <= stat && stat < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+                            else if (SkillSet.CS_STAT_SKILLINFO <= stat && stat < SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS)
                             {
                                 final int level = packet[pos++]&0xFF;
                                 final long experience3 = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1457,7 +1458,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 {
                                     debugProtocolWrite("recv stats skill"+stat+"="+level+"/"+experience3+"\n");
                                 }
-                                final Skill sk = Stats.getSkill(stat);
+                                final Skill sk = SkillSet.getSkill(stat);
                                 if (sk == null)
                                 {
                                     System.err.println("ignoring skill value for unknown skill "+stat);
@@ -1973,7 +1974,7 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
-        Stats.clearSkills();
+        SkillSet.clearSkills();
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
         try
         {
@@ -2009,13 +2010,13 @@ public class CrossfireServerConnection extends ServerConnection
                             continue;
                         }
 
-                        if (skillId < Stats.CS_STAT_SKILLINFO || skillId >= Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS)
+                        if (skillId < SkillSet.CS_STAT_SKILLINFO || skillId >= SkillSet.CS_STAT_SKILLINFO+SkillSet.CS_NUM_SKILLS)
                         {
                             System.err.println("Ignoring skill definition for invalid skill id "+skillId+": "+r+".");
                             continue;
                         }
 
-                        Stats.addSkill(skillId, sk[1]);
+                        SkillSet.addSkill(skillId, sk[1]);
                     }
                 }
                 finally
