@@ -26,9 +26,9 @@ import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapListener;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireNewmapListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
@@ -157,10 +157,10 @@ public class GUIMagicMap extends GUIElement
     };
 
     /**
-     * The {@link CrossfireMapscrollListener} used to track player position
+     * The {@link MapscrollListener} used to track player position
      * changes into the magic map.
      */
-    private final CrossfireMapscrollListener crossfireMapscrollListener = new CrossfireMapscrollListener()
+    private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
@@ -205,9 +205,9 @@ public class GUIMagicMap extends GUIElement
     };
 
     /**
-     * The {@link CrossfireMapListener} registered to receive map updates.
+     * The {@link MapListener} registered to receive map updates.
      */
-    private final CrossfireMapListener crossfireMapListener = new CrossfireMapListener()
+    private final MapListener mapListener = new MapListener()
     {
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
@@ -232,10 +232,10 @@ public class GUIMagicMap extends GUIElement
     };
 
     /**
-     * The {@link CrossfireNewmapListener} registered to receive newmap
+     * The {@link NewmapListener} registered to receive newmap
      * commands.
      */
-    private final CrossfireNewmapListener crossfireNewmapListener = new CrossfireNewmapListener()
+    private final NewmapListener newmapListener = new NewmapListener()
     {
         /** {@inheritDoc} */
         public void commandNewmapReceived()
@@ -290,9 +290,9 @@ public class GUIMagicMap extends GUIElement
         mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
 
         crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
-        mapUpdater.addCrossfireNewmapListener(crossfireNewmapListener);
-        mapUpdater.addCrossfireMapscrollListener(crossfireMapscrollListener);
-        mapUpdater.addCrossfireMapListener(crossfireMapListener);
+        mapUpdater.addCrossfireNewmapListener(newmapListener);
+        mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.addCrossfireMapListener(mapListener);
     }
 
     /**

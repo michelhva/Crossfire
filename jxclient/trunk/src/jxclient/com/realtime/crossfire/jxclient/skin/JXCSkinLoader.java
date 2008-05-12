@@ -90,7 +90,7 @@ import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireMapscrollListener;
+import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -997,7 +997,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final GUICommandList commandList = getCommandList(args[2]);
-                                mapUpdater.addCrossfireMapscrollListener(new CrossfireMapscrollListener()
+                                mapUpdater.addCrossfireMapscrollListener(new MapscrollListener()
                                     {
                                         /** {@inheritDoc} */
                                         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
