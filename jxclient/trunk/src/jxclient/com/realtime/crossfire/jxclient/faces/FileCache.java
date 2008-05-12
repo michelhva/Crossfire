@@ -27,22 +27,19 @@ import java.io.IOException;
 import javax.swing.ImageIcon;
 
 /**
- * Implements a disk based cache for image files.
- *
+ * A disk based cache for image files.
  * @author Andreas Kirschbaum
  */
-public class FileCache
+public class FileCache implements ImageCache
 {
-
     /**
      * The directory where the images are saved.
      */
     private final File cacheDir;
 
     /**
-     * Create a new instance.
-     *
-     * @param cacheDir The directory where the images are saved.
+     * Creates a new instance.
+     * @param cacheDir the directory where the images are saved
      */
     public FileCache(final File cacheDir)
     {
@@ -50,17 +47,20 @@ public class FileCache
         cacheDir.mkdirs();
     }
 
+    /** {@inheritDoc} */
+    public ImageIcon load(final Face face)
+    {
+        return load(face.getFaceName(), face.getFaceChecksum());
+    }
+
     /**
-     * Retrieve an image from the cache.
-     *
-     * @param faceName The image name to retrieve.
-     *
-     * @param faceChecksum The checksum to retrieve.
-     *
-     * @return The image icon, or <code>null</code> if the cache does not
-     * contain the image.
+     * Retrieves an image from the cache.
+     * @param faceName the image name to retrieve
+     * @param faceChecksum the checksum to retrieve
+     * @return the image icon, or <code>null</code> if the cache does not
+     * contain the image
      */
-    public ImageIcon load(final String faceName, final int faceChecksum)
+    private ImageIcon load(final String faceName, final int faceChecksum)
     {
         final File file = getImageFileName(faceName, faceChecksum);
         final long len = file.length();
@@ -92,14 +92,17 @@ public class FileCache
         return imageIcon.getIconWidth() <= 0 && imageIcon.getIconHeight() <= 0 ? null : imageIcon;
     }
 
+    /** {@inheritDoc} */
+    public void save(final Face face, final ImageIcon imageIcon)
+    {
+        save(face.getFaceName(), face.getFaceChecksum(), imageIcon);
+    }
+
     /**
-     * Store an {@link ImageIcon} into the cache.
-     *
-     * @param faceName The image name to save.
-     *
-     * @param faceChecksum The checksum to retrieve.
-     *
-     * @param imageIcon The image icon to store.
+     * Stores an {@link ImageIcon} into the cache
+     * @param faceName the image name to save
+     * @param faceChecksum the checksum to save
+     * @param imageIcon the image icon to store
      */
     public void save(final String faceName, final int faceChecksum, final ImageIcon imageIcon)
     {
@@ -107,13 +110,10 @@ public class FileCache
     }
 
     /**
-     * Calculate a hashed image name to be used as a file name.
-     *
-     * @param faceName The image name to hash.
-     *
-     * @param faceChecksum The checksum to hash.
-     *
-     * @return the hashed image name.
+     * Calculates a hashed image name to be used as a file name.
+     * @param faceName the image name to hash
+     * @param faceChecksum the checksum to hash
+     * @return the hashed image name
      */
     private File getImageFileName(final String faceName, final int faceChecksum)
     {

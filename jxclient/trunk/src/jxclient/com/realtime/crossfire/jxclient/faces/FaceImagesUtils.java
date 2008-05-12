@@ -17,23 +17,33 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.server;
+package com.realtime.crossfire.jxclient.faces;
+
+import javax.swing.ImageIcon;
 
 /**
- * Listener to be notified of updated face information.
- *
+ * Utility class for creating {@link FaceImages} instances.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
+public class FaceImagesUtils
 {
     /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
+     * Private constructor to prevent instantiation.
      */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
+    private FaceImagesUtils()
+    {
+    }
+
+    /**
+     * Creates a new {@link FaceImages} instance from an "original" face; the
+     * "scaled" and "magic map" sized images are calculated.
+     * @param originalImageIcon the original face
+     * @return the face images instance
+     */
+    public static FaceImages newFaceImages(final ImageIcon originalImageIcon)
+    {
+        final ImageIcon scaledImageIcon = new ImageScale2x(originalImageIcon).getScaledImage();
+        final ImageIcon magicMapImageIcon = new ImageScale8d(originalImageIcon).getScaledImage();
+        return new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon);
+    }
 }

@@ -17,23 +17,28 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.server;
+package com.realtime.crossfire.jxclient.faces;
+
+import javax.swing.ImageIcon;
 
 /**
- * Listener to be notified of updated face information.
- *
+ * Interface for {@link ImageIcon} caching classes.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
+public interface ImageCache
 {
     /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
+     * Retrieves an image from the cache.
+     * @param face the face to retrieve
+     * @return the image icon, or <code>null</code> if the cache does not
+     * contain the image
      */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
+    ImageIcon load(Face face);
+
+    /**
+     * Stores an {@link ImageIcon} into the cache
+     * @param face the face to save
+     * @param imageIcon the image icon to store
+     */
+    void save(Face face, ImageIcon imageIcon);
 }

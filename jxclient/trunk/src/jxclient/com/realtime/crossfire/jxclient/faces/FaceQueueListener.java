@@ -17,23 +17,24 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.server;
+package com.realtime.crossfire.jxclient.faces;
 
 /**
- * Listener to be notified of updated face information.
- *
+ * Interface for listeners interested in {@link FaceQueue} events.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
+public interface FaceQueueListener
 {
     /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
+     * Called after a {@link Face} has been loaded successfully.
+     * @param face the face that has been loaded
+     * @param faceImages the face images instance that has been loaded
      */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
+    void faceLoaded(Face face, FaceImages faceImages);
+
+    /**
+     * Called after a {@link Face} could not be loaded.
+     * @param face the face that has failed to load
+     */
+    void faceFailed(Face face);
 }

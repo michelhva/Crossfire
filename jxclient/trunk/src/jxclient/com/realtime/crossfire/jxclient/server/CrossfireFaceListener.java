@@ -17,28 +17,20 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.faces;
-
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
+package com.realtime.crossfire.jxclient.server;
 
 /**
- * Callback functions used by this package.
- *
+ * Interface for listeners interested in "face1"/"face2" commands.
  * @author Andreas Kirschbaum
  */
-public interface FacesCallback
+public interface CrossfireFaceListener
 {
     /**
-     * Send an "askface" command to the server.
-     *
-     * @param num The face number to query.
+     * A face command has been received.
+     * @param faceNum the face ID
+     * @param faceSetNum the face set
+     * @param faceChecksum the face checksum
+     * @param faceName the face name
      */
-    void sendAskface(int num);
-
-    /**
-     * Add a listener to be notified about face image changes.
-     *
-     * @param listener The listener to add.
-     */
-    void addCrossfireUpdateFaceListener(CrossfireUpdateFaceListener listener);
+    void faceReceived(int faceNum, int faceSetNum, int faceChecksum, String faceName);
 }

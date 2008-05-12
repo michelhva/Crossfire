@@ -21,12 +21,16 @@ package com.realtime.crossfire.jxclient.mapupdater;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -34,11 +38,27 @@ import java.util.Set;
 
 /**
  * Utility class to update a {@link CfMap} model from protocol commands.
- *
+ * <p>
+ * The map updater is called from two threads: the {@link 
+ * com.realtime.crossfire.jxclient.server.ClientSocket} reading commands
+ * received from the Crossfire server, and {@link
+ * com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue} reading faces from
+ * the (file) cache. Synchronization is by {@link #sync} and applies to the
+ * whole map model {@link #map}.
  * @author Andreas Kirschbaum
  */
 public class CfMapUpdater
 {
+    /**
+     * The object used for synchronization.
+     */
+    private final Object sync = new Object();
+
+    /**
+     * The {@link FaceCache} instance for looking up faces.
+     */
+    private final FaceCache faceCache;
+
     /**
      * The width of the visible map area.
      */
@@ -78,7 +98,7 @@ public class CfMapUpdater
     /**
      * The animations in the visible map area.
      */
-    private CfMapAnimations visibleAnimations = new CfMapAnimations(0, 0, this);
+    private final CfMapAnimations visibleAnimations;
 
     /**
      * The map square listener attached to {@link #map}.
@@ -88,16 +108,104 @@ public class CfMapUpdater
         /** {@inheritDoc} */
         public void squareModified(final CfMapSquare mapSquare)
         {
-            squares.add(mapSquare);
+            synchronized (squares)
+            {
+                squares.add(mapSquare);
+            }
+        }
+    };
+
+    /**
+     * The listener to detect updated faces.
+     */
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
+    {
+        /** {@inheritDoc} */
+        public void faceUpdated(final Face face)
+        {
+            updateFace(face.getFaceNum());
+        }
+    };
+
+    /**
+     * The listener to detect map model changes.
+     */
+    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
+    {
+        /** {@inheritDoc} */
+        public void newMap(final int mapWidth, final int mapHeight)
+        {
+            processNewMap(mapWidth, mapHeight);
+        }
+
+        /** {@inheritDoc} */
+        public void mapBegin()
+        {
+            processMapBegin();
+        }
+
+        /** {@inheritDoc} */
+        public void mapClear(final int x, final int y)
+        {
+            processMapClear(x, y);
+        }
+
+        /** {@inheritDoc} */
+        public void mapDarkness(final int x, final int y, final int darkness)
+        {
+            processMapDarkness(x, y, darkness);
+        }
+
+        /** {@inheritDoc} */
+        public void mapFace(final int x, final int y, final int layer, final int faceNum)
+        {
+            processMapFace(x, y, layer, faceNum);
+        }
+
+        /** {@inheritDoc} */
+        public void mapAnimation(final int x, final int y, final int layer, final Animation animation, final int animationType)
+        {
+            processMapAnimation(x, y, layer, animation, animationType);
+        }
+
+        /** {@inheritDoc} */
+        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed)
+        {
+            processMapAnimationSpeed(x, y, layer, animSpeed);
+        }
+
+        /** {@inheritDoc} */
+        public void scroll(final int dx, final int dy)
+        {
+            processScroll(dx, dy);
+        }
+
+        /** {@inheritDoc} */
+        public void mapEnd()
+        {
+            processMapEnd(true);
         }
     };
 
     /**
      * Creates a new instance.
+     * @param crossfireServerConnection the connection to monitor
+     * @param facesManager the faces manager to track for updated faces
+     * @param faceCache the instance for looking up faces
      */
-    public CfMapUpdater()
+    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache)
     {
+        this.faceCache = faceCache;
+        if (crossfireServerConnection != null)
+        {
+            crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
+        }
+        if (facesManager != null)
+        {
+            facesManager.addFacesManagerListener(facesManagerListener);
+        }
         map = new CfMap(mapSquareListener);
+        visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
     }
 
     /**
@@ -165,7 +273,10 @@ public class CfMapUpdater
      */
     public void reset()
     {
-        visibleAnimations.clear();
+        synchronized (sync)
+        {
+            visibleAnimations.clear();
+        }
     }
 
     /**
@@ -173,7 +284,6 @@ public class CfMapUpdater
      */
     public void processMapBegin()
     {
-        squares.clear();
     }
 
     /**
@@ -185,8 +295,11 @@ public class CfMapUpdater
      */
     public void processMapClear(final int x, final int y)
     {
-        visibleAnimations.remove(x, y);
-        map.clearSquare(x, y);
+        synchronized (sync)
+        {
+            visibleAnimations.remove(x, y);
+            map.clearSquare(x, y);
+        }
     }
 
     /**
@@ -199,23 +312,24 @@ public class CfMapUpdater
      * @param layer The layer to update.
      *
      * @param faceNum The face to set. <code>0</code> clears the square.
-     *
-     * @param faces The instance for looking up faces.
      */
-    public void processMapFace(final int x, final int y, final int layer, final int faceNum, final Faces faces)
+    public void processMapFace(final int x, final int y, final int layer, final int faceNum)
     {
-        final Face f;
-        if (faceNum == 0)
+        synchronized (sync)
         {
-            f = null;
-            visibleAnimations.remove(x, y, layer);
-        }
-        else
-        {
-            f = faces.getFace(faceNum);
-        }
+            final Face face;
+            if (faceNum == 0)
+            {
+                face = null;
+                visibleAnimations.remove(x, y, layer);
+            }
+            else
+            {
+                face = faceCache.getFace(faceNum);
+            }
 
-        map.setFace(x, y, layer, f);
+            map.setFace(x, y, layer, face);
+        }
     }
 
     /**
@@ -230,12 +344,13 @@ public class CfMapUpdater
      * @param animation The animation to set.
      *
      * @param type The animation type.
-     *
-     * @param faces The instance for looking up faces.
      */
-    public void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type, final Faces faces)
+    private void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
     {
-        visibleAnimations.add(x, y, layer, animation, type, faces);
+        synchronized (sync)
+        {
+            visibleAnimations.add(x, y, layer, animation, type, faceCache);
+        }
     }
 
     /**
@@ -249,19 +364,12 @@ public class CfMapUpdater
      *
      * @param animationSpeed The animation speed to set.
      */
-    public void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
+    private void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
     {
-        visibleAnimations.updateSpeed(x, y, layer, animationSpeed);
-    }
-
-    /**
-     * Update all animation to the given tick number.
-     *
-     * @param tickno The tick number.
-     */
-    public void processTick(final int tickno)
-    {
-        visibleAnimations.tick(tickno);
+        synchronized (sync)
+        {
+            visibleAnimations.updateSpeed(x, y, layer, animationSpeed);
+        }
     }
 
     /**
@@ -273,9 +381,12 @@ public class CfMapUpdater
      *
      * @param darkness The darkness value to set.
      */
-    public void processMapDarkness(final int x, final int y, final int darkness)
+    private void processMapDarkness(final int x, final int y, final int darkness)
     {
-        map.setDarkness(x, y, darkness);
+        synchronized (sync)
+        {
+            map.setDarkness(x, y, darkness);
+        }
     }
 
     /**
@@ -287,17 +398,20 @@ public class CfMapUpdater
      */
     public void processMapEnd(final boolean alwaysProcess)
     {
-        if (!alwaysProcess && squares.isEmpty())
+        synchronized (sync)
         {
-            return;
-        }
+            if (!alwaysProcess && squares.isEmpty())
+            {
+                return;
+            }
 
-        final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
-        for (final CrossfireMapListener listener : mapListeners)
-        {
-            listener.commandMapReceived(evt);
+            final CrossfireCommandMapEvent evt = new CrossfireCommandMapEvent(new Object(), map, squares);
+            for (final CrossfireMapListener listener : mapListeners)
+            {
+                listener.commandMapReceived(evt);
+            }
+            squares.clear();
         }
-        squares.clear();
     }
 
     /**
@@ -313,18 +427,19 @@ public class CfMapUpdater
      * @param layer The layer to update.
      *
      * @param faceNum The new face to set. <code>-1</code> means "do not change face".
-     *
-     * @param faces The instance for looking up faces.
      */
-    private void setMultiFace(final int x, final int y, final int layer, final int faceNum, final Faces faces)
+    private void setMultiFace(final int x, final int y, final int layer, final int faceNum)
     {
         if (faceNum == -1)
         {
             return;
         }
 
-        final Face face = faceNum == 0 ? null : faces.getFace(faceNum);
-        map.setMultiFace(x, y, layer, face);
+        final Face face = faceNum == 0 ? null : faceCache.getFace(faceNum);
+        synchronized (sync)
+        {
+            map.setMultiFace(x, y, layer, face);
+        }
     }
 
     /**
@@ -334,71 +449,74 @@ public class CfMapUpdater
      *
      * @param dy The distance to scroll in y-direction in squares.
      */
-    public void processScroll(final int dx, final int dy)
+    private void processScroll(final int dx, final int dy)
     {
-        map.clearMultiFaces();
+        synchronized (sync)
+        {
+            map.clearMultiFaces();
 
-        if (Math.abs(dx) >= width || Math.abs(dy) >= height)
-        {
-            map.scroll(dx, dy);
-            for (int y = 0; y < height; y++)
+            if (Math.abs(dx) >= width || Math.abs(dy) >= height)
             {
-                for (int x = 0; x < width; x++)
-                {
-                    map.clearSquare(x, y);
-                }
-            }
-            visibleAnimations.clear();
-        }
-        else
-        {
-            int tx = dx;
-            while (tx > 0)
-            {
-                map.scroll(-1, 0);
+                map.scroll(dx, dy);
                 for (int y = 0; y < height; y++)
                 {
-                    map.clearSquare(width-1, y);
+                    for (int x = 0; x < width; x++)
+                    {
+                        map.clearSquare(x, y);
+                    }
                 }
-                tx--;
+                visibleAnimations.clear();
             }
-            while (tx < 0)
+            else
             {
-                map.scroll(+1, 0);
-                for (int y = 0; y < height; y++)
+                int tx = dx;
+                while (tx > 0)
                 {
-                    map.clearSquare(0, y);
+                    map.scroll(-1, 0);
+                    for (int y = 0; y < height; y++)
+                    {
+                        map.clearSquare(width-1, y);
+                    }
+                    tx--;
                 }
-                tx++;
+                while (tx < 0)
+                {
+                    map.scroll(+1, 0);
+                    for (int y = 0; y < height; y++)
+                    {
+                        map.clearSquare(0, y);
+                    }
+                    tx++;
+                }
+
+                int ty = dy;
+                while (ty > 0)
+                {
+                    map.scroll(0, -1);
+                    for (int x = 0; x < width; x++)
+                    {
+                        map.clearSquare(x, height-1);
+                    }
+                    ty--;
+                }
+                while (ty < 0)
+                {
+                    map.scroll(0, +1);
+                    for (int x = 0; x <= width; x++)
+                    {
+                        map.clearSquare(x, 0);
+                    }
+                    ty++;
+                }
+
+                visibleAnimations.scroll(dx, dy);
             }
 
-            int ty = dy;
-            while (ty > 0)
+            final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
+            for (final CrossfireMapscrollListener listener : mapscrollListeners)
             {
-                map.scroll(0, -1);
-                for (int x = 0; x < width; x++)
-                {
-                    map.clearSquare(x, height-1);
-                }
-                ty--;
+                listener.commandMapscrollReceived(evt);
             }
-            while (ty < 0)
-            {
-                map.scroll(0, +1);
-                for (int x = 0; x <= width; x++)
-                {
-                    map.clearSquare(x, 0);
-                }
-                ty++;
-            }
-
-            visibleAnimations.scroll(dx, dy);
-        }
-
-        final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
-        for (final CrossfireMapscrollListener listener : mapscrollListeners)
-        {
-            listener.commandMapscrollReceived(evt);
         }
     }
 
@@ -407,27 +525,30 @@ public class CfMapUpdater
      *
      * @param faceNum The face that has changed.
      */
-    public void updateFace(final int faceNum)
+    private void updateFace(final int faceNum)
     {
-        processMapBegin();
-
-        for (int y = 0; y < height; y++)
+        synchronized (sync)
         {
-            for (int x = 0; x < width; x++)
+            processMapBegin();
+
+            for (int y = 0; y < height; y++)
             {
-                for (int z = 0; z < CrossfireMap2Command.NUM_LAYERS; z++)
+                for (int x = 0; x < width; x++)
                 {
-                    final Face face = map.getFace(x, y, z);
-                    if (face != null && face.getFaceNum() == faceNum)
+                    for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
                     {
-                        map.setFace(x, y, z, face);
-                        map.dirty(x, y);
+                        final Face face = map.getFace(x, y, layer);
+                        if (face != null && face.getFaceNum() == faceNum)
+                        {
+                            map.setFace(x, y, layer, face);
+                            map.dirty(x, y);
+                        }
                     }
                 }
             }
-        }
 
-        processMapEnd(false);
+            processMapEnd(false);
+        }
     }
 
     /**
@@ -435,21 +556,24 @@ public class CfMapUpdater
      * @param width the width of the visible map area
      * @param height the height of the visible map area
      */
-    public void processNewmap(final int width, final int height)
+    public void processNewMap(final int width, final int height)
     {
-        this.width = width;
-        this.height = height;
-        map = new CfMap(mapSquareListener);
-
-        // force dirty flags to be set for the visible map region
-        map.clearSquare(0, 0);
-        map.clearSquare(width-1, height-1);
-
-        visibleAnimations = new CfMapAnimations(width, height, this);
-
-        for (final CrossfireNewmapListener listener : newmapListeners)
+        synchronized (sync)
         {
-            listener.commandNewmapReceived();
+            this.width = width;
+            this.height = height;
+            map = new CfMap(mapSquareListener);
+
+            // force dirty flags to be set for the visible map region
+            map.clearSquare(0, 0);
+            map.clearSquare(width-1, height-1);
+
+            visibleAnimations.setMapSize(width, height);
+
+            for (final CrossfireNewmapListener listener : newmapListeners)
+            {
+                listener.commandNewmapReceived();
+            }
         }
     }
 
@@ -461,5 +585,14 @@ public class CfMapUpdater
     public CfMap getMap()
     {
         return map;
+    }
+
+    /**
+     * Returns the {@link CfMapAnimations} instance.
+     * @return the instance
+     */
+    public CfMapAnimations getMapAnimations()
+    {
+        return visibleAnimations;
     }
 }

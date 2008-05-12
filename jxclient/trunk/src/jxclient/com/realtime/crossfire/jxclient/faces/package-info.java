@@ -17,23 +17,17 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.server;
 
 /**
- * Listener to be notified of updated face information.
- *
- * @author Andreas Kirschbaum
+ * Manages image information ("faces") needed to display the map view, items,
+ * and spell icons. The main class is {@link
+ * com.realtime.crossfire.jxclient.faces.FacesManager}; it delegates to a
+ * {@link com.realtime.crossfire.jxclient.faces.FaceCache} instance for caching
+ * the face information. The faces are stored in {@link
+ * java.lang.ref.SoftReference}s so they can be reclaimed by the garbage
+ * collector.
+ * <p>If a face is not available, an "unknown" (question mark) face is returned
+ * and the face is requested through a {@link
+ * com.realtime.crossfire.jxclient.faces.FacesQueue} instance.
  */
-public interface CrossfireUpdateFaceListener
-{
-    /**
-     * Notifies that face information has been received from the Crossfire
-     * server.
-     * @param faceNum the face ID
-     * @param faceSet the face set
-     * @param packet the packet data; must not be changed
-     * @param pos the starting position into <code>data</code>
-     * @param len the length in bytes in <code>data</code>
-     */
-    void updateFace(int faceNum, int faceSet, byte[] packet, int pos, int len);
-}
+package com.realtime.crossfire.jxclient.faces;

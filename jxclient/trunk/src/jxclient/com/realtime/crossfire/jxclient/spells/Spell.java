@@ -19,10 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
-import java.net.URL;
-import javax.swing.ImageIcon;
 
 /**
  *
@@ -32,8 +29,6 @@ import javax.swing.ImageIcon;
  */
 public class Spell
 {
-    private final ImageIcon imageIcon;
-
     private final String internalName;
 
     private final int tag;
@@ -52,7 +47,7 @@ public class Spell
 
     private int path;
 
-    private final Face face;
+    private final int faceNum;
 
     private final String name;
 
@@ -108,9 +103,9 @@ public class Spell
         return message;
     }
 
-    public Face getFace()
+    public int getFaceNum()
     {
-        return face;
+        return faceNum;
     }
 
     public void setLevel(final int level)
@@ -148,39 +143,18 @@ public class Spell
         this.path = path;
     }
 
-    public Spell(final Face face, final int tag, final String name, final String message)
+    public Spell(final int faceNum, final int tag, final String name, final String message)
     {
-        imageIcon = null;
-        this.face = face;
+        this.faceNum = faceNum;
         this.tag = tag;
         this.name = name;
         this.message = message;
         internalName = Integer.toString(tag);
     }
 
-    public Spell(final String filename, final String name, final String internalName)
-    {
-        final URL url = getClass().getClassLoader().getResource(filename);
-        if (url == null)
-        {
-            throw new IllegalArgumentException("resource '"+filename+"' does not exist");
-        }
-        imageIcon = new ImageIcon(url);
-        face = null;
-        tag = 0;
-        this.name = name;
-        message = "";
-        this.internalName = internalName;
-    }
-
     public String getInternalName()
     {
         return internalName;
-    }
-
-    public ImageIcon getImageIcon()
-    {
-        return imageIcon != null ? imageIcon : face.getOriginalImageIcon();
     }
 
     @Override public String toString()

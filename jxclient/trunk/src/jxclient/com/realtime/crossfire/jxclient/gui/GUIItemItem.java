@@ -21,10 +21,11 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemModifiedListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
@@ -37,6 +38,8 @@ public abstract class GUIItemItem extends GUIItem
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
+
+    private final FacesManager facesManager;
 
     /**
      * The color for the "nrof" text.
@@ -59,36 +62,28 @@ public abstract class GUIItemItem extends GUIItem
     };
 
     /**
-     * The {@link CrossfireUpdateFaceListener} registered to detect updated
-     * faces.
+     * The {@link FacesManagerListener} registered to detect updated faces.
      */
-    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
-        public void updateFace(final int faceID)
+        public void faceUpdated(final Face face)
         {
-            if (item == null)
+            if (item != null && face.equals(item.getFace()))
             {
-                return;
+                setChanged();
             }
-
-            final Face face = item.getFace();
-            if (face == null || face.getFaceNum() != faceID)
-            {
-                return;
-            }
-
-            setChanged();
         }
     };
 
-    public GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color nrofColor)
+    public GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, font);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.crossfireServerConnection = crossfireServerConnection;
+        this.facesManager = facesManager;
         this.nrofColor = nrofColor;
-        crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
+        facesManager.addFacesManagerListener(facesManagerListener);
     }
 
     /** {@inheritDoc} */
@@ -102,7 +97,7 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
-        g.drawImage(item.getFace().getOriginalImageIcon().getImage(), 0, 0, null);
+        g.drawImage(facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage(), 0, 0, null);
         if (item.isApplied())
         {
             g.drawImage(appliedImage, 0, 0, null);

@@ -61,12 +61,13 @@
     </target>
     <target name="all" depends="jar">
     </target>
-    <target name="check" depends="compile">
+    <target name="check" depends="compile,jar">
         <mkdir dir="${build}/reports"/>
         <junit fork="yes" haltonerror="yes" haltonfailure="yes">
             <jvmarg value="-ea"/>
             <classpath>
                 <pathelement location="${build}/jxclient"/>
+                <pathelement location="jxclient.jar"/>
             </classpath>
             <formatter type="brief"/>
             <batchtest fork="yes" todir="${build}/reports">

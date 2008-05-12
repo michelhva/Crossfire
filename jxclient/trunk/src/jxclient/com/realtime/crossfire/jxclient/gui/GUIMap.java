@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
@@ -66,6 +67,11 @@ public class GUIMap extends GUIElement
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
+     * The instance for looking up faces.
+     */
+    private final FacesManager facesManager;
 
     /**
      * The map updater instance.
@@ -307,16 +313,19 @@ public class GUIMap extends GUIElement
      *
      * @param crossfireServerConnection the connection instance
      *
+     * @param facesManager the instance for looking up faces
+     *
      * @param mapUpdater the map updater instance
      * 
      * @param tileSize The size of one tile in pixels.
      *
      * @throws IOException If an I/O error occurs.
      */
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater) throws IOException
+    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final CfMapUpdater mapUpdater) throws IOException
     {
         super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
+        this.facesManager = facesManager;
         this.mapUpdater = mapUpdater;
         if (tileSize == 32)
         {
@@ -433,25 +442,25 @@ public class GUIMap extends GUIElement
         {
             final Face headFace = headMapSquare.getFace(layer);
             assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon img = headFace.getImageIcon(useBigImages);
+            final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
             final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
             final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
             assert dx > 0 || dy > 0;
-            final int sx = img.getIconWidth()-tileSize*(dx+1);
-            final int sy = img.getIconHeight()-tileSize*(dy+1);
-            g.drawImage(img.getImage(),
+            final int sx = imageIcon.getIconWidth()-tileSize*(dx+1);
+            final int sy = imageIcon.getIconHeight()-tileSize*(dy+1);
+            g.drawImage(imageIcon.getImage(),
                 px, py, px+tileSize, py+tileSize,
                 sx, sy, sx+tileSize, sy+tileSize,
                 null);
         }
 
-        final Face f = map.getFace(x, y, layer);
-        if (f != null)
+        final Face face = map.getFace(x, y, layer);
+        if (face != null)
         {
-            final ImageIcon img = f.getImageIcon(useBigImages);
-            final int sx = img.getIconWidth();
-            final int sy = img.getIconHeight();
-            g.drawImage(img.getImage(),
+            final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
+            final int sx = imageIcon.getIconWidth();
+            final int sy = imageIcon.getIconHeight();
+            g.drawImage(imageIcon.getImage(),
                 px, py, px+tileSize, py+tileSize,
                 sx-tileSize, sy-tileSize, sx, sy,
                 null);

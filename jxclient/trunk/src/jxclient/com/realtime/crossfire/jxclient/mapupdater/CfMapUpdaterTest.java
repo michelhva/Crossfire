@@ -20,10 +20,13 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.MemoryImageCache;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import java.io.IOException;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -104,22 +107,24 @@ public class CfMapUpdaterTest extends TestCase
     /**
      * Check that a cleared multi-tile face causes all affected tiles to become
      * fog-of-war.
+     * @throws IOException if an error occurs
      */
-    public void testFogOfWar1()
+    public void testFogOfWar1() throws IOException
     {
-        final Faces faces = new Faces();
-        defineFace(faces, 1, "M", png64x64);
-        defineFace(faces, 2, "_", png32x32);
+        final FaceCache faceCache = new FaceCache();
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache);
+        defineFace(faceCache, facesManager, 1, "M", png64x64);
+        defineFace(faceCache, facesManager, 2, "_", png32x32);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater();
+        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache);
 
-        mapUpdater.processNewmap(5, 5);
+        mapUpdater.processNewMap(5, 5);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 0, 0, 2, faces);
-        mapUpdater.processMapFace(1, 0, 0, 2, faces);
-        mapUpdater.processMapFace(0, 1, 0, 2, faces);
-        mapUpdater.processMapFace(1, 1, 0, 2, faces);
-        mapUpdater.processMapFace(1, 1, 6, 1, faces);
+        mapUpdater.processMapFace(0, 0, 0, 2);
+        mapUpdater.processMapFace(1, 0, 0, 2);
+        mapUpdater.processMapFace(0, 1, 0, 2);
+        mapUpdater.processMapFace(1, 1, 0, 2);
+        mapUpdater.processMapFace(1, 1, 6, 1);
         mapUpdater.processMapEnd(true);
         assertEquals(""
             +"[H0=_,T6=M][H0=_,T6=M]\n"
@@ -145,82 +150,83 @@ public class CfMapUpdaterTest extends TestCase
 
     /**
      * Check that a regression causing display artifacts is fixed.
+     * @throws IOException if an error occurs
      */
-    public void testDisplayArtifacts1()
+    public void testDisplayArtifacts1() throws IOException
     {
-        final Faces faces = new Faces();
+        final FaceCache faceCache = new FaceCache();
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache);
+        defineFace(faceCache, facesManager, 307, "behemoth.x31", png64x64);
+        defineFace(faceCache, facesManager, 308, "behemoth.x32", png64x64);
+        defineFace(faceCache, facesManager, 309, "behemoth.x33", png64x64);
+        defineFace(faceCache, facesManager, 310, "behemoth.x71", png64x64);
+        defineFace(faceCache, facesManager, 932, "charwoman.132", png32x32);
+        defineFace(faceCache, facesManager, 4607, "woodfloor.111", png32x32);
+        defineFace(faceCache, facesManager, 312, "behemoth.x73", png64x64);
 
-        defineFace(faces, 307, "behemoth.x31", png64x64);
-        defineFace(faces, 308, "behemoth.x32", png64x64);
-        defineFace(faces, 309, "behemoth.x33", png64x64);
-        defineFace(faces, 310, "behemoth.x71", png64x64);
-        defineFace(faces, 932, "charwoman.132", png32x32);
-        defineFace(faces, 4607, "woodfloor.111", png32x32);
-        defineFace(faces, 312, "behemoth.x73", png64x64);
+        final CfMapUpdater mapUpdater = new CfMapUpdater(null, null, faceCache);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater();
-
-        mapUpdater.processNewmap(10, 10);
+        mapUpdater.processNewMap(10, 10);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(7, 8, 0, 4607, faces);
-        mapUpdater.processMapFace(8, 8, 0, 4607, faces);
-        mapUpdater.processMapFace(9, 8, 0, 4607, faces);
-        mapUpdater.processMapFace(7, 9, 0, 4607, faces);
-        mapUpdater.processMapFace(8, 9, 0, 4607, faces);
-        mapUpdater.processMapFace(9, 9, 0, 4607, faces);
-        mapUpdater.processMapFace(9, 9, 6, 312, faces);
+        mapUpdater.processMapFace(7, 8, 0, 4607);
+        mapUpdater.processMapFace(8, 8, 0, 4607);
+        mapUpdater.processMapFace(9, 8, 0, 4607);
+        mapUpdater.processMapFace(7, 9, 0, 4607);
+        mapUpdater.processMapFace(8, 9, 0, 4607);
+        mapUpdater.processMapFace(9, 9, 0, 4607);
+        mapUpdater.processMapFace(9, 9, 6, 312);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(26);
+        mapUpdater.getMapAnimations().tick(26);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 307, faces);
+        mapUpdater.processMapFace(9, 9, 6, 307);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(27);
-        mapUpdater.processTick(28);
+        mapUpdater.getMapAnimations().tick(27);
+        mapUpdater.getMapAnimations().tick(28);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 308, faces);
+        mapUpdater.processMapFace(9, 9, 6, 308);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(29);
+        mapUpdater.getMapAnimations().tick(29);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 5, 6, 0, faces);
+        mapUpdater.processMapFace(0, 5, 6, 0);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(30);
+        mapUpdater.getMapAnimations().tick(30);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 309, faces);
+        mapUpdater.processMapFace(9, 9, 6, 309);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(31);
-        mapUpdater.processTick(32);
+        mapUpdater.getMapAnimations().tick(31);
+        mapUpdater.getMapAnimations().tick(32);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 308, faces);
+        mapUpdater.processMapFace(9, 9, 6, 308);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(33);
-        mapUpdater.processTick(34);
+        mapUpdater.getMapAnimations().tick(33);
+        mapUpdater.getMapAnimations().tick(34);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 0, faces);
-        mapUpdater.processMapFace(10, 9, 6, 307, faces);
+        mapUpdater.processMapFace(9, 9, 6, 0);
+        mapUpdater.processMapFace(10, 9, 6, 307);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(35);
-        mapUpdater.processTick(36);
+        mapUpdater.getMapAnimations().tick(35);
+        mapUpdater.getMapAnimations().tick(36);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 6, 6, 932, faces);
-        mapUpdater.processMapFace(9, 9, 6, 312, faces);
+        mapUpdater.processMapFace(0, 6, 6, 932);
+        mapUpdater.processMapFace(9, 9, 6, 312);
         mapUpdater.processMapClear(10, 9);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(37);
-        mapUpdater.processTick(38);
+        mapUpdater.getMapAnimations().tick(37);
+        mapUpdater.getMapAnimations().tick(38);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(8, 9, 6, 310, faces);
-        mapUpdater.processMapFace(9, 9, 6, 0, faces);
+        mapUpdater.processMapFace(8, 9, 6, 310);
+        mapUpdater.processMapFace(9, 9, 6, 0);
         mapUpdater.processMapEnd(true);
 
-        mapUpdater.processTick(39);
+        mapUpdater.getMapAnimations().tick(39);
 
         assertEquals(""
             +"[H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111,T6=behemoth.x71][H0=woodfloor.111][]\n"
@@ -287,9 +293,10 @@ public class CfMapUpdaterTest extends TestCase
         return sb.toString();
     }
 
-    private static void defineFace(final Faces faces, final int faceNum, final String name, final byte[] data)
+    private static void defineFace(final FaceCache faceCache, final FacesManager facesManager, final int faceNum, final String faceName, final byte[] data)
     {
-        faces.setFace(faceNum, 0, name);
-        faces.setImage(faceNum, data, 0, data.length);
+        final Face face = new Face(faceNum, faceName, 0);
+        faceCache.addFace(face);
+        facesManager.getFacesQueue().getAskfaceQueue().processFaceData(face, data);
     }
 }

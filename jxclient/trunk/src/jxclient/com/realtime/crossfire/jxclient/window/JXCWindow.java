@@ -25,7 +25,9 @@ import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.faces.Faces;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
@@ -122,19 +124,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final boolean debugGui;
 
     /**
-     * The {@link Faces} instance.
+     * The {@link FacesManager} instance.
      */
-    private final Faces faces = new Faces();
+    private final FacesManager facesManager;
     
     /**
      * The {@link ItemsManager} instance.
      */
-    private final ItemsManager itemsManager = new ItemsManager(faces);
+    private final ItemsManager itemsManager;
 
     /**
      * The {@link SpellsManager} instance.
      */
-    private final SpellsManager spellsManager = new SpellsManager(faces);
+    private final SpellsManager spellsManager;
 
     /**
      * The {@link Stats} instance.
@@ -144,7 +146,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The {@link CfMapUpdater} instance.
      */
-    private final CfMapUpdater mapUpdater = new CfMapUpdater();
+    private final CfMapUpdater mapUpdater;
 
     /**
      * The global experience table.
@@ -167,7 +169,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * The shortcuts for this window.
      */
-    private final Shortcuts shortcuts = new Shortcuts(this, spellsManager);
+    private final Shortcuts shortcuts;
 
     /**
      * The settings instance to use.
@@ -424,13 +426,22 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * commands to this appender.
      *
      * @param settings The settings instance to use.
+     *
+     * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings)
+    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings) throws IOException
     {
         super(TITLE_PREFIX);
         this.debugGui = debugGui;
         this.settings = settings;
-        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, spellsManager, stats, faces, mapUpdater);
+        final FaceCache faceCache = new FaceCache();
+        itemsManager = new ItemsManager(faceCache);
+        server = new CrossfireServerConnection(semaphoreRedraw, experienceTable, animations, debugProtocol, itemsManager, stats, faceCache);
+        faceCache.init(server);
+        facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
+        mapUpdater = new CfMapUpdater(server, facesManager, faceCache);
+        spellsManager = new SpellsManager(server);
+        shortcuts = new Shortcuts(this, spellsManager);
         mapUpdater.reset();
         commandQueue = new CommandQueue(server);
         poisonWatcher = new PoisonWatcher(stats, server);
@@ -682,7 +693,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 stats.reset();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.connect(hostname, port, connectionListener);
-                faces.reset();
+                facesManager.reset();
                 commandQueue.clear();
                 itemsManager.reset();
                 spellsManager.reset();
@@ -760,16 +771,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addKeyListener(this);
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
-        try
-        {
-            faces.setFacesCallback(server);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println(ex.getMessage());
-            System.exit(1);
-            throw new AssertionError();
-        }
         if (!setSkin(skinName))
         {
             if (skinName.equals(jxclient.DEFAULT_SKIN))
@@ -1491,12 +1492,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             final File dir = new File(skinName);
             if (dir.exists() && dir.isDirectory())
             {
-                skin = new JXCSkinDirLoader(itemsManager, spellsManager, stats, mapUpdater, dir);
+                skin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
             }
             else
             {
                 // fallback: built-in resource
-                skin = new JXCSkinClassLoader(itemsManager, spellsManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
+                skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
             }
             skin.load(server, this, resolution);
         }
