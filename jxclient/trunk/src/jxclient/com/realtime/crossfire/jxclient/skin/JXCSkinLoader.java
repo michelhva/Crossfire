@@ -96,6 +96,7 @@ import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -296,7 +297,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Resolution resolution) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -363,14 +364,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, null);
+            load("global", selectedResolution, crossfireServerConnection, window, null, optionManager);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, gui);
+                load(name, selectedResolution, crossfireServerConnection, window, gui, optionManager);
                 gui.setStateChanged(false);
             }
         }
@@ -521,9 +522,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param gui The Gui representing the skin file.
      *
+     * @param optionManager the option manager instance to use
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -542,7 +545,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, gui);
+                load(dialogName, resourceName, inputStream, server, window, gui, optionManager);
             }
             finally
             {
@@ -599,9 +602,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param gui The Gui representing the skin file.
      *
+     * @param optionManager the option manager instance to use
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -789,7 +794,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final String documentation = parseText(args, 5, lnr);
                                 try
                                 {
-                                    window.getOptionManager().addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
+                                    optionManager.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
                                 }
                                 catch (final OptionException ex)
                                 {
