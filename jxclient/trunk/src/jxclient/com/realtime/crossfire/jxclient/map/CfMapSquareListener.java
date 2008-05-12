@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 /**
- * Interface for listeners interested in {@link CfMapSquare] events.
+ * Interface for listeners interested in {@link CfMapSquare} events.
  */
 public interface CfMapSquareListener
 {
