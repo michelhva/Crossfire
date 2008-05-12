@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
@@ -45,6 +46,8 @@ public class JXCWindowRenderer
     private final JXCWindow window;
 
     private final MouseTracker mouseTracker;
+
+    private Commands commands = null;
 
     /**
      * The semaphore used to synchronized map model updates and map view
@@ -135,7 +138,12 @@ public class JXCWindowRenderer
         this.window = window;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
-        currentGui = new Gui(window, mouseTracker);
+    }
+
+    public void init(final Commands commands)
+    {
+        this.commands = commands;
+        currentGui = new Gui(window, mouseTracker, commands);
     }
 
     public void init(final Resolution resolution)
@@ -292,7 +300,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        currentGui = new Gui(window, mouseTracker);
+        currentGui = new Gui(window, mouseTracker, commands);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {

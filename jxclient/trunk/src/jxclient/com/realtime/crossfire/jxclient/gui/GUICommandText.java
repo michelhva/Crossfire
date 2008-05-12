@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
@@ -32,15 +33,18 @@ import java.awt.image.BufferedImage;
  */
 public class GUICommandText extends GUIText
 {
-    public GUICommandText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    private final Commands commands;
+
+    public GUICommandText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final Commands commands)
     {
         super(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
+        this.commands = commands;
     }
 
     /** {@inheritDoc} */
     @Override protected void execute(final JXCWindow window, final String command)
     {
-        window.executeCommand(command);
+        commands.executeCommand(command);
         setText("");
     }
 }

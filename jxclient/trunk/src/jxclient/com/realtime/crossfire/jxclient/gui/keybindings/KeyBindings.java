@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.event.KeyEvent;
@@ -42,6 +43,11 @@ import java.util.List;
  */
 public class KeyBindings
 {
+    /**
+     * The commands instance for executing commands.
+     */
+    private final Commands commands;
+
     private final List<KeyBinding> keybindings = new ArrayList<KeyBinding>();
 
     /**
@@ -61,14 +67,15 @@ public class KeyBindings
     private KeyCodeMap keyCodeMap = null;
 
     /**
-     * Create a new instance.
-     *
-     * @param file The file for saving the bindings; <code>null</code> to not
-     * save.
+     * Creates a new instance.
+     * @param file the file for saving the bindings; <code>null</code> to not
+     * save
+     * @param commands the commands instance for executing commands
      */
-    public KeyBindings(final File file)
+    public KeyBindings(final File file, final Commands commands)
     {
         this.file = file;
+        this.commands = commands;
     }
 
     /**
@@ -394,8 +401,7 @@ public class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[1], window);
-                addKeyBindingAsKeyChar(keyChar, commands, isDefault);
+                addKeyBindingAsKeyChar(keyChar, new GUICommandList(GUICommandList.Type.AND, tmp[1], commands), isDefault);
             }
             catch (final NumberFormatException ex)
             {
@@ -435,8 +441,7 @@ public class KeyBindings
                 throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[2], window);
-            addKeyBindingAsKeyCode(keyCode, modifiers, commands, isDefault);
+            addKeyBindingAsKeyCode(keyCode, modifiers, new GUICommandList(GUICommandList.Type.AND, tmp[2], commands), isDefault);
         }
         else
         {

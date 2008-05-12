@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
@@ -301,7 +302,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -353,14 +354,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         mapHeight = 0;
         dialogs.clear();
         images.clear();
-        addDialog("keybind", window, mouseTracker);
-        addDialog("query", window, mouseTracker);
-        addDialog("book", window, mouseTracker);
-        addDialog("main", window, mouseTracker);
-        addDialog("meta", window, mouseTracker);
-        addDialog("quit", window, mouseTracker);
-        addDialog("disconnect", window, mouseTracker);
-        addDialog("start", window, mouseTracker);
+        addDialog("keybind", window, mouseTracker, commands);
+        addDialog("query", window, mouseTracker, commands);
+        addDialog("book", window, mouseTracker, commands);
+        addDialog("main", window, mouseTracker, commands);
+        addDialog("meta", window, mouseTracker, commands);
+        addDialog("quit", window, mouseTracker, commands);
+        addDialog("disconnect", window, mouseTracker, commands);
+        addDialog("start", window, mouseTracker, commands);
         commandLists.clear();
         fonts.clear();
         textButtonFactory = null;
@@ -368,14 +369,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable, shortcuts);
+            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable, shortcuts, commands);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts);
+                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands);
                 gui.setStateChanged(false);
             }
         }
@@ -418,7 +419,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         return mapHeight;
     }
 
-    private Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker)
+    private Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
     {
         try
         {
@@ -426,7 +427,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui(window, mouseTracker);
+            final Gui gui = new Gui(window, mouseTracker, commands);
             try
             {
                 dialogs.insert(name, gui);
@@ -538,9 +539,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param shortcuts the shortcuts instance
      *
+     * @param commands the commands instance for executing commands
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -559,7 +562,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts);
+                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands);
             }
             finally
             {
@@ -628,9 +631,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param shortcuts the shortcuts instance
      *
+     * @param commands the commands instance for executing commands
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -749,7 +754,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             if (args.length >= 5)
                             {
                                 final GUIElement element = args[3].equals("null") ? null : elements.lookup(args[3]);
-                                final GUICommand command = parseCommandArgs(args, 5, element, args[4], window, mouseTracker, lnr);
+                                final GUICommand command = parseCommandArgs(args, 5, element, args[4], window, mouseTracker, commands, lnr);
                                 commandList.add(command);
                             }
                         }
@@ -762,7 +767,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
-                            final GUICommand command = parseCommandArgs(args, 4, element, args[3], window, mouseTracker, lnr);
+                            final GUICommand command = parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr);
                             commandList.add(command);
                         }
                         else if (gui != null && args[0].equals("command_text"))
@@ -783,7 +788,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
-                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
+                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands));
                         }
                         else if (args[0].equals("def"))
                         {
@@ -2140,6 +2145,8 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param mouseTracker the mouse tracker instance
      *
+     * @param commands the commands instance for executing commands
+     * 
      * @param lnr The source to read more parameters from.
      *
      * @return The command arguments.
@@ -2148,7 +2155,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException If an element cannot be found.
      */
-    private GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -2257,7 +2264,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogOpenCommand(window, addDialog(args[argc], window, mouseTracker));
+            return new DialogOpenCommand(window, addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("DIALOG_TOGGLE"))
         {
@@ -2266,7 +2273,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogToggleCommand(window, addDialog(args[argc], window, mouseTracker));
+            return new DialogToggleCommand(window, addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("DIALOG_CLOSE"))
         {
@@ -2275,7 +2282,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogCloseCommand(window, addDialog(args[argc], window, mouseTracker));
+            return new DialogCloseCommand(window, addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
@@ -2285,7 +2292,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
 
             final String commandString = parseText(args, argc, lnr);
-            return new ExecuteCommandCommand(window, commandString);
+            return new ExecuteCommandCommand(commands, commandString);
         }
         else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER"))
         {

@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
@@ -51,7 +52,7 @@ public class GUICommandList
     /**
      * The list of {@link GUICommand}s in execution order.
      */
-    private final List<GUICommand> commands = new ArrayList<GUICommand>();
+    private final List<GUICommand> commandList = new ArrayList<GUICommand>();
 
     /**
      * Create a new instance as an empty command list.
@@ -70,14 +71,14 @@ public class GUICommandList
      *
      * @param type The command list type.
      *
-     * @param commands The commands.
+     * @param commandList The commands.
      *
-     * @param window The window to execute the commands in.
+     * @param commands the commands instance to execute the commands
      */
-    public GUICommandList(final Type type, final String commands, final JXCWindow window)
+    public GUICommandList(final Type type, final String commandList, final Commands commands)
     {
         this(type);
-        this.commands.add(new ExecuteCommandCommand(window, commands));
+        this.commandList.add(new ExecuteCommandCommand(commands, commandList));
     }
 
     /**
@@ -87,7 +88,7 @@ public class GUICommandList
      */
     public void add(final GUICommand guiCommand)
     {
-        commands.add(guiCommand);
+        commandList.add(guiCommand);
     }
 
     /**
@@ -99,7 +100,7 @@ public class GUICommandList
         switch (type)
         {
         case AND:
-            for (final GUICommand command : commands)
+            for (final GUICommand command : commandList)
             {
                 if (!command.canExecute())
                 {
@@ -110,7 +111,7 @@ public class GUICommandList
 
         case OR:
             boolean ok = false;
-            for (final GUICommand command : commands)
+            for (final GUICommand command : commandList)
             {
                 if (command.canExecute())
                 {
@@ -125,7 +126,7 @@ public class GUICommandList
             break;
         }
 
-        for (final GUICommand command : commands)
+        for (final GUICommand command : commandList)
         {
             command.execute();
         }
@@ -140,7 +141,7 @@ public class GUICommandList
     {
         final StringBuilder sb = new StringBuilder();
         boolean firstCommand = true;
-        for (final GUICommand guiCommand : commands)
+        for (final GUICommand guiCommand : commandList)
         {
             if (!(guiCommand instanceof ExecuteCommandCommand))
             {

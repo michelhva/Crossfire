@@ -58,12 +58,37 @@ public class Commands
     public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
     {
         this.commandQueue = commandQueue;
-        commands.put("bind", new BindCommand(window, crossfireServerConnection));
+        commands.put("bind", new BindCommand(window, crossfireServerConnection, this));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
         commands.put("script", new ScriptCommand(window, commandQueue, crossfireServerConnection, stats));
         commands.put("exec", new ExecCommand(window, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
+    }
+
+    /**
+     * Execute a command or a list of commands. The commands may be a client-
+     * or a server-sided command.
+     *
+     * @param commands The commands to execute.
+     */
+    public void executeCommand(final String commands)
+    {
+
+        String cmds = commands.trim();
+        while (cmds.length() > 0)
+        {
+            final String[] cmd = cmds.split(" *; *", 2);
+            if (execute(cmd[0], cmds))
+            {
+                break;
+            }
+            if (cmd.length <= 1)
+            {
+                break;
+            }
+            cmds = cmd[1];
+        }
     }
 
     /**
@@ -76,7 +101,7 @@ public class Commands
      *
      * @return <code>true</code> if all remaining commands have been consumed.
      */
-    public boolean execute(final String command, final String commandList)
+    private boolean execute(final String command, final String commandList)
     {
         if (command.length() <= 0)
         {

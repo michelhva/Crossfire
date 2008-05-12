@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.commands.Commands;
 
 /**
  * A {@link GUICommand} which executes a Crossfire command.
@@ -27,20 +27,20 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
  */
 public class ExecuteCommandCommand implements GUICommand
 {
-    /** The window to operate on. */
-    private final JXCWindow window;
+    /** The commands instance for executing the command. */
+    private final Commands commands;
 
     /** The command to execute. */
     private final String command;
 
     /**
      * Creates a new instance.
-     * @param window the window to operate on
+     * @param commands the commands instance for executing the command
      * @param command the command to execute
      */
-    public ExecuteCommandCommand(final JXCWindow window, final String command)
+    public ExecuteCommandCommand(final Commands commands, final String command)
     {
-        this.window = window;
+        this.commands = commands;
         this.command = command;
     }
 
@@ -53,7 +53,7 @@ public class ExecuteCommandCommand implements GUICommand
     /** {@inheritDoc} */
     public void execute()
     {
-        window.executeCommand(command);
+        commands.executeCommand(command);
     }
 
     /**
