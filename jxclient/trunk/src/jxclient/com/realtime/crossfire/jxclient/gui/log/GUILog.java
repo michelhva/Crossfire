@@ -112,7 +112,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
-        final Graphics2D g = super.buffer.createGraphics();
+        final Graphics2D g = super.bufferedImage.createGraphics();
         final FontRenderContext context;
         try
         {
