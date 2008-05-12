@@ -43,7 +43,7 @@ public class GUILabelLog extends GUILog
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -63,9 +63,9 @@ public class GUILabelLog extends GUILog
      * @param defaultColor The default color to use for text message not
      * specifying a color.
      */
-    public GUILabelLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUILabelLog(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
-        super(jxcWindow, name, x, y, w, h, backgroundImage, fonts);
+        super(window, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
 

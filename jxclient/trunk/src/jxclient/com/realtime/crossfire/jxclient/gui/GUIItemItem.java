@@ -76,9 +76,9 @@ public abstract class GUIItemItem extends GUIItem
         }
     };
 
-    protected GUIItemItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
+    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
-        super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
+        super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
@@ -123,7 +123,7 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow jxcWindow)
+    @Override public void button2Clicked(final JXCWindow window)
     {
         final CfItem tmpItem = getItem();
         if (tmpItem == null)

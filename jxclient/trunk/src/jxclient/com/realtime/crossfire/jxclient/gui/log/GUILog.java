@@ -90,7 +90,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -107,9 +107,9 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
      */
-    protected GUILog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
+    protected GUILog(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         final Graphics2D g = super.bufferedImage.createGraphics();

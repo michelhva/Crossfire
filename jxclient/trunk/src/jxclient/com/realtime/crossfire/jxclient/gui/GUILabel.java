@@ -66,7 +66,7 @@ public abstract class GUILabel extends AbstractLabel
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -89,9 +89,9 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param alignment The text alignment.
      */
-    protected GUILabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment)
+    protected GUILabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment)
     {
-        super(jxcWindow, name, x, y, w, h, picture, backgroundColor);
+        super(window, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         this.alignment = alignment;

@@ -35,15 +35,15 @@ public class GUITextField extends GUIText
 {
     private final GUICommandList commandList;
 
-    public GUITextField(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activePicture, final BufferedImage inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final GUICommandList commandList)
+    public GUITextField(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activePicture, final BufferedImage inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text);
+        super(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text);
         if (commandList == null) throw new IllegalArgumentException();
         this.commandList = commandList;
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final JXCWindow jxcWindow, final String command)
+    @Override protected void execute(final JXCWindow window, final String command)
     {
         commandList.execute();
     }

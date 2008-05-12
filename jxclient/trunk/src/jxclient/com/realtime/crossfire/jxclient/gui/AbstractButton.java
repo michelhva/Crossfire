@@ -65,7 +65,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -84,9 +84,9 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
+    protected AbstractButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, transparency);
+        super(window, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;

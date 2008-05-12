@@ -173,11 +173,11 @@ public class KeyBindings
     /**
      * Load the key bindings from the given file.
      *
-     * @param jxcWindow The window to execute the commands in.
+     * @param window The window to execute the commands in.
      *
      * @throws IOException If the file cannot be read.
      */
-    public void loadKeyBindings(final JXCWindow jxcWindow) throws IOException
+    public void loadKeyBindings(final JXCWindow window) throws IOException
     {
         modified = false;
 
@@ -207,7 +207,7 @@ public class KeyBindings
 
                             try
                             {
-                                parseKeyBinding(line, jxcWindow, false);
+                                parseKeyBinding(line, window, false);
                             }
                             catch (final InvalidKeyBindingException ex)
                             {
@@ -374,14 +374,14 @@ public class KeyBindings
      *
      * @param line The key binding to parse.
      *
-     * @param jxcWindow The window to add the key binding to.
+     * @param window The window to add the key binding to.
      *
      * @param isDefault Whether the key binding is a "default" binding which
      * should not be saved.
      *
      * @throws InvalidKeyBindingException If the key binding is invalid.
      */
-    public void parseKeyBinding(final String line, final JXCWindow jxcWindow, final boolean isDefault) throws InvalidKeyBindingException
+    public void parseKeyBinding(final String line, final JXCWindow window, final boolean isDefault) throws InvalidKeyBindingException
     {
         if (line.startsWith("char "))
         {
@@ -394,7 +394,7 @@ public class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[1], jxcWindow);
+                final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[1], window);
                 addKeyBindingAsKeyChar(keyChar, commands, isDefault);
             }
             catch (final NumberFormatException ex)
@@ -435,7 +435,7 @@ public class KeyBindings
                 throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[2], jxcWindow);
+            final GUICommandList commands = new GUICommandList(GUICommandList.Type.AND, tmp[2], window);
             addKeyBindingAsKeyCode(keyCode, modifiers, commands, isDefault);
         }
         else

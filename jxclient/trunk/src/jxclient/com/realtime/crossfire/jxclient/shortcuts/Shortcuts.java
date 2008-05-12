@@ -60,7 +60,7 @@ public class Shortcuts
     /**
      * The window to cast the spell in.
      */
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The {@link SpellsManager} instance to watch.
@@ -70,13 +70,13 @@ public class Shortcuts
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The window to cast the spell in.
+     * @param window The window to cast the spell in.
      *
      * @param spellsManager  the instance to watch
      */
-    public Shortcuts(final JXCWindow jxcWindow, final SpellsManager spellsManager)
+    public Shortcuts(final JXCWindow window, final SpellsManager spellsManager)
     {
-        this.jxcWindow = jxcWindow;
+        this.window = window;
         this.spellsManager = spellsManager;
     }
 
@@ -293,7 +293,7 @@ public class Shortcuts
 
     public void setSpellShortcut(final int index, final Spell spell, final boolean cast)
     {
-        final ShortcutSpell shortcutSpell = new ShortcutSpell(jxcWindow, spell);
+        final ShortcutSpell shortcutSpell = new ShortcutSpell(window, spell);
         shortcutSpell.setCast(cast);
         setShortcut(index, shortcutSpell);
     }
@@ -312,7 +312,7 @@ public class Shortcuts
             return;
         }
 
-        final ShortcutCommand shortcutCommand = new ShortcutCommand(jxcWindow, command);
+        final ShortcutCommand shortcutCommand = new ShortcutCommand(window, command);
         setShortcut(index, shortcutCommand);
     }
     /**

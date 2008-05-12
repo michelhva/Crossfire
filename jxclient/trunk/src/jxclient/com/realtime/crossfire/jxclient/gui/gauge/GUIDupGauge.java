@@ -77,7 +77,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
 
     /**
      * Creates a new instance.
-     * @param jxcWindow the <code>JXCWindow</code> this element belongs to
+     * @param window the <code>JXCWindow</code> this element belongs to
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -94,9 +94,9 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIDupGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImageDiv, final BufferedImage fullImageMod, final BufferedImage emptyImage, final Orientation orientationDiv, final Orientation orientationMod, final String tooltipPrefix)
+    public GUIDupGauge(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImageDiv, final BufferedImage fullImageMod, final BufferedImage emptyImage, final Orientation orientationDiv, final Orientation orientationMod, final String tooltipPrefix)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImageDiv, "full-div", w, h/2);
         checkSize(fullImageMod, "full-mod", w, h/2);
         checkSize(emptyImage, "empty", w, h);

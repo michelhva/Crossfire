@@ -70,7 +70,7 @@ public class GUICheckBox extends ActivatableGUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -96,9 +96,9 @@ public class GUICheckBox extends ActivatableGUIElement
      *
      * @param text The text to display.
      */
-    public GUICheckBox(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
+    public GUICheckBox(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (checkedImage == null) throw new IllegalArgumentException("missing checked image");
         if (uncheckedImage == null) throw new IllegalArgumentException("missing unchecked image");
         if (checkedImage.getHeight() != h) throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);

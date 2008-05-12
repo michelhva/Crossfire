@@ -295,7 +295,7 @@ public class GUIMap extends GUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -317,9 +317,9 @@ public class GUIMap extends GUIElement
      *
      * @throws IOException If an I/O error occurs.
      */
-    public GUIMap(final JXCWindow jxcWindow, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final CfMapUpdater mapUpdater) throws IOException
+    public GUIMap(final JXCWindow window, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final CfMapUpdater mapUpdater) throws IOException
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
+        super(window, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.mapUpdater = mapUpdater;

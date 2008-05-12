@@ -44,7 +44,7 @@ public class Gui
     /**
      * The window this gui belongs to.
      */
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The list of {@link GUIElement}s comprising this gui.
@@ -116,13 +116,13 @@ public class Gui
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The window this gui belongs to.
+     * @param window The window this gui belongs to.
      */
-    public Gui(final JXCWindow jxcWindow)
+    public Gui(final JXCWindow window)
     {
-        if (jxcWindow == null) throw new IllegalArgumentException();
+        if (window == null) throw new IllegalArgumentException();
 
-        this.jxcWindow = jxcWindow;
+        this.window = window;
     }
 
     /**
@@ -203,7 +203,7 @@ public class Gui
     public void add(final GUIElement element)
     {
         if (element.getGui() != null) throw new IllegalArgumentException();
-        if (element.getJXCWindow() != jxcWindow) throw new IllegalArgumentException();
+        if (element.getWindow() != window) throw new IllegalArgumentException();
 
         updateVisibleElement(element);
         element.setGui(this);
@@ -214,13 +214,13 @@ public class Gui
      *
      * @param g The <code>Graphics</code> to paint into.
      *
-     * @param jxcWindow The window to deliver change events to.
+     * @param window The window to deliver change events to.
      */
-    public void redraw(final Graphics g, final JXCWindow jxcWindow)
+    public void redraw(final Graphics g, final JXCWindow window)
     {
-        if (jxcWindow.isDebugGui())
+        if (window.isDebugGui())
         {
-            final GUIElement mouseElement = jxcWindow.getMouseTracker().getMouseElement();
+            final GUIElement mouseElement = window.getMouseTracker().getMouseElement();
             final long t0 = System.currentTimeMillis();
 
             hasChangedElements = false;
@@ -460,7 +460,7 @@ public class Gui
 
             if (autoCloseOnDeactivate)
             {
-                jxcWindow.getWindowRenderer().closeDialog(this);
+                window.getWindowRenderer().closeDialog(this);
             }
         }
     }

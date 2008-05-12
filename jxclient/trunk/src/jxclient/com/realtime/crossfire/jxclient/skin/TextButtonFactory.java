@@ -79,7 +79,7 @@ public class TextButtonFactory
     /**
      * Create a new text button.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -102,8 +102,8 @@ public class TextButtonFactory
      *
      * @return the new text button
      */
-    public GUITextButton newTextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
+    public GUITextButton newTextButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
     {
-        return new GUITextButton(jxcWindow, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
+        return new GUITextButton(window, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }
 }

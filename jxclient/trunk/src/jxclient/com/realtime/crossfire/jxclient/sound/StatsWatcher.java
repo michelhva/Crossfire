@@ -129,19 +129,19 @@ public class StatsWatcher
     /**
      * Creates a new instance.
      * @param stats The stats instance to watch.
-     * @param jxcWindowRenderer The window renderer instance.
+     * @param windowRenderer The window renderer instance.
      * @param itemsManager the instance to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(final Stats stats, final JXCWindowRenderer jxcWindowRenderer, final ItemsManager itemsManager, final SoundManager soundManager)
+    public StatsWatcher(final Stats stats, final JXCWindowRenderer windowRenderer, final ItemsManager itemsManager, final SoundManager soundManager)
     {
         this.stats = stats;
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
-        jxcWindowRenderer.addGuiStateListener(guiStateListener);
-        guiStateListener.guiStateChanged(jxcWindowRenderer.getGuiState());
+        windowRenderer.addGuiStateListener(guiStateListener);
+        guiStateListener.guiStateChanged(windowRenderer.getGuiState());
         itemsManager.addCrossfirePlayerListener(playerListener);
     }
 

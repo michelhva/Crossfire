@@ -32,7 +32,7 @@ public abstract class ActivatableGUIElement extends GUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -48,9 +48,9 @@ public abstract class ActivatableGUIElement extends GUIElement
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected ActivatableGUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
-            super(jxcWindow, name, x, y, w, h, transparency);
+            super(window, name, x, y, w, h, transparency);
     }
 
     /**

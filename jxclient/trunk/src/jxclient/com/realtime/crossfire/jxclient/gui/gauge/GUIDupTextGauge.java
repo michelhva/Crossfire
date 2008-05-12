@@ -50,7 +50,7 @@ public class GUIDupTextGauge extends GUIDupGauge
 
     /**
      * Creates a new instance.
-     * @param jxcWindow the <code>JXCWindow</code> this element belongs to.
+     * @param window the <code>JXCWindow</code> this element belongs to.
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -65,9 +65,9 @@ public class GUIDupTextGauge extends GUIDupGauge
      * @param color the text color
      * @param font the text font
      */
-    public GUIDupTextGauge(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, final BufferedImage pictureEmpty, final Orientation orientationDiv, final Orientation orientationMod, final String tooltipPrefix, final Color color, final Font font)
+    public GUIDupTextGauge(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, final BufferedImage pictureEmpty, final Orientation orientationDiv, final Orientation orientationMod, final String tooltipPrefix, final Color color, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
+        super(window, name, x, y, w, h, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
         if (color == null) throw new IllegalArgumentException();
         if (font == null) throw new IllegalArgumentException();
         this.color = color;

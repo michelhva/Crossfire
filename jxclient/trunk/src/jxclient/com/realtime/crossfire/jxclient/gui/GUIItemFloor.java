@@ -97,9 +97,9 @@ public class GUIItemFloor extends GUIItemItem
         }
     };
 
-    public GUIItemFloor(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager, final Font font, final Color nrofColor)
+    public GUIItemFloor(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
-        super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, facesManager, font, nrofColor);
+        super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, facesManager, font, nrofColor);
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
         defaultIndex = index;
@@ -138,7 +138,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow jxcWindow)
+    @Override public void button1Clicked(final JXCWindow window)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -150,7 +150,7 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow jxcWindow)
+    @Override public void button3Clicked(final JXCWindow window)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -159,7 +159,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         if (itemsManager.getPlayer() != null)
         {
-            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), jxcWindow.getCommandQueue().getRepeatCount());
+            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), window.getCommandQueue().getRepeatCount());
         }
     }
 

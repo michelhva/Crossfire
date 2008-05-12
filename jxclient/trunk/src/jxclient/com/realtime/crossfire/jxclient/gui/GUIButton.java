@@ -49,9 +49,9 @@ public class GUIButton extends AbstractButton
 
     private final Color color;
 
-    public GUIButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final boolean autoRepeat, final GUICommandList commandList)
+    public GUIButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (imageUp == null) throw new IllegalArgumentException();
         if (imageDown == null) throw new IllegalArgumentException();
         if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();

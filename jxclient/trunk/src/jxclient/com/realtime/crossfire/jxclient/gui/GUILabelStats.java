@@ -92,7 +92,7 @@ public class GUILabelStats extends GUIOneLineLabel
                 break;
 
             case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
-                text = String.valueOf(getJXCWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(CrossfireStatsListener.CS_STAT_LEVEL), s.getExperience()));
+                text = String.valueOf(getWindow().getExperienceTable().getExperienceToNextLevel(s.getStat(CrossfireStatsListener.CS_STAT_LEVEL), s.getExperience()));
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
@@ -115,7 +115,7 @@ public class GUILabelStats extends GUIOneLineLabel
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -137,9 +137,9 @@ public class GUILabelStats extends GUIOneLineLabel
      *
      * @param alignment The text alignment.
      */
-    public GUILabelStats(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
+    public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
     {
-        super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
+        super(window, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stat = stat;
         stats.addCrossfireStatsListener(statsListener);
     }

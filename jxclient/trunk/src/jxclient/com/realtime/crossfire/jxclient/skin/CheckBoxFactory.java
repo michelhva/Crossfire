@@ -80,7 +80,7 @@ public class CheckBoxFactory
     /**
      * Create a new checkbox.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -100,8 +100,8 @@ public class CheckBoxFactory
      *
      * @return The new checkbox.
      */
-    public GUICheckBox newCheckBox(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
+    public GUICheckBox newCheckBox(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
     {
-            return new GUICheckBox(jxcWindow, name, x, y, w, h, checked, unchecked, font, color, option, text);
+            return new GUICheckBox(window, name, x, y, w, h, checked, unchecked, font, color, option, text);
     }
 }
