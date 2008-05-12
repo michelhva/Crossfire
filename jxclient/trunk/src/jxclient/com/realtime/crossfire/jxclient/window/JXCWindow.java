@@ -1766,7 +1766,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @return The current spell manager instance for this window.
      */
-    public final CurrentSpellManager getCurrentSpellManager()
+    public CurrentSpellManager getCurrentSpellManager()
     {
         return currentSpellManager;
     }
@@ -1776,7 +1776,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @return The metaserver instance for this window.
      */
-    public final Metaserver getMetaserver()
+    public Metaserver getMetaserver()
     {
         return metaserver;
     }
