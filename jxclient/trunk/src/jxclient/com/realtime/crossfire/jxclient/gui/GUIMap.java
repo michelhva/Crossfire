@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
@@ -203,13 +202,13 @@ public class GUIMap extends GUIElement
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
-        public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
+        public void mapScrolled(final int dx, final int dy)
         {
             synchronized (bufferedImage)
             {
-                final int dx = -evt.getDX();
-                final int dy = -evt.getDY();
-                if (Math.abs(dx) >= mapWidth || Math.abs(dy) >= mapHeight)
+                final int mdx = -dx;
+                final int mdy = -dy;
+                if (Math.abs(mdx) >= mapWidth || Math.abs(mdy) >= mapHeight)
                 {
                     setChanged();
                     return;
@@ -217,33 +216,33 @@ public class GUIMap extends GUIElement
 
                 final int x;
                 final int w;
-                if (dx < 0)
+                if (mdx < 0)
                 {
                     x = 0;
-                    w = mapWidth+dx;
+                    w = mapWidth+mdx;
                 }
                 else
                 {
-                    x = dx;
-                    w = mapWidth-dx;
+                    x = mdx;
+                    w = mapWidth-mdx;
                 }
                 final int y;
                 final int h;
-                if (dy < 0)
+                if (mdy < 0)
                 {
                     y = 0;
-                    h = mapHeight+dy;
+                    h = mapHeight+mdy;
                 }
                 else
                 {
-                    y = dy;
-                    h = mapHeight-dy;
+                    y = mdy;
+                    h = mapHeight-mdy;
                 }
 
                 final Graphics2D g = bufferedImage.createGraphics();
                 try
                 {
-                    g.copyArea(offsetX+(x-dx)*tileSize, offsetY+(y-dy)*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
+                    g.copyArea(offsetX+(x-mdx)*tileSize, offsetY+(y-mdy)*tileSize, w*tileSize, h*tileSize, mdx*tileSize, mdy*tileSize);
 
                     for (int yy = displayMinY; yy < Math.min(y, displayMaxY); yy++)
                     {

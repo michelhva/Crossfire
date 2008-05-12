@@ -511,10 +511,9 @@ public class CfMapUpdater
                 visibleAnimations.scroll(dx, dy);
             }
 
-            final CrossfireCommandMapscrollEvent evt = new CrossfireCommandMapscrollEvent(new Object(), dx, dy);
             for (final MapscrollListener mapscrollListener : mapscrollListeners)
             {
-                mapscrollListener.commandMapscrollReceived(evt);
+                mapscrollListener.mapScrolled(dx, dy);
             }
         }
     }
