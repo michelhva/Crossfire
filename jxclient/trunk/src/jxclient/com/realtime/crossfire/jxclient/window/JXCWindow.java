@@ -450,7 +450,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        commands = new Commands(this, commandQueue, server, stats, optionManager);
+        commands = new Commands(this, windowRenderer, commandQueue, server, stats, optionManager);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -1528,7 +1528,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, commandQueue, resolution, optionManager);
+        skin.load(server, this, metaserver, commandQueue, resolution, optionManager);
         return skin;
     }
 
@@ -1775,16 +1775,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public CurrentSpellManager getCurrentSpellManager()
     {
         return currentSpellManager;
-    }
-
-    /**
-     * Return the metaserver instance for this window.
-     *
-     * @return The metaserver instance for this window.
-     */
-    public Metaserver getMetaserver()
-    {
-        return metaserver;
     }
 
     /**

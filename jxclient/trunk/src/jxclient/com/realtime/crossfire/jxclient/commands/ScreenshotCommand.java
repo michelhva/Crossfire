@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -44,14 +45,21 @@ public class ScreenshotCommand extends AbstractCommand
     private final JXCWindow window;
 
     /**
+     * The renderer to use.
+     */
+    private final JXCWindowRenderer windowRenderer;
+
+    /**
      * Creates a new instance.
-     * @param window The window to execute in.
+     * @param window the window to execute in
+     * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
      */
-    protected ScreenshotCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected ScreenshotCommand(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.window = window;
+        this.windowRenderer = windowRenderer;
     }
 
     /** {@inheritDoc} */
@@ -88,7 +96,7 @@ public class ScreenshotCommand extends AbstractCommand
         {
             grfx.setColor(Color.black);
             grfx.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
-            window.getWindowRenderer().redraw(grfx);
+            windowRenderer.redraw(grfx);
         }
         finally
         {

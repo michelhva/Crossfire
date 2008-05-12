@@ -88,6 +88,7 @@ import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
+import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
@@ -298,7 +299,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -365,14 +366,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, commandQueue, null, optionManager);
+            load("global", selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, null, optionManager);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, commandQueue, gui, optionManager);
+                load(name, selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, gui, optionManager);
                 gui.setStateChanged(false);
             }
         }
@@ -521,6 +522,8 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
+     * @param metaserver the metaserver instance to use
+     *
      * @param commandQueue the command queue for sending commands
      *
      * @param gui The Gui representing the skin file.
@@ -529,7 +532,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -548,7 +551,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, commandQueue, gui, optionManager);
+                load(dialogName, resourceName, inputStream, server, window, metaserver, commandQueue, gui, optionManager);
             }
             finally
             {
@@ -603,6 +606,8 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param window The main window.
      *
+     * @param metaserver the metaserver instance to use
+     *
      * @param commandQueue the command queue for sending commands
      *
      * @param gui The Gui representing the skin file.
@@ -611,7 +616,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -1479,7 +1484,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int id = parseInt(args[10]);
                             final String format = args[11];
                             final String tooltip = args[12];
-                            elements.insert(name, new GUIMetaElement(window, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
+                            elements.insert(name, new GUIMetaElement(window, metaserver, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
