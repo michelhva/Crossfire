@@ -314,7 +314,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         {
             // cursor moved right
 
-            final Graphics2D g = buffer.createGraphics();
+            final Graphics2D g = bufferedImage.createGraphics();
             for (;;)
             {
                 final String tmp = getDisplayText(g);

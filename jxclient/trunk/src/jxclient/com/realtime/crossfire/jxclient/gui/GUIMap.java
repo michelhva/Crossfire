@@ -144,9 +144,9 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapReceived(final CrossfireCommandMapEvent evt)
         {
-            synchronized (buffer)
+            synchronized (bufferedImage)
             {
-                final Graphics2D g = buffer.createGraphics();
+                final Graphics2D g = bufferedImage.createGraphics();
                 try
                 {
                     final CfMap map = evt.getMap();
@@ -183,7 +183,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived()
         {
-            final Graphics2D g = buffer.createGraphics();
+            final Graphics2D g = bufferedImage.createGraphics();
             try
             {
                 g.setColor(Color.BLACK);
@@ -206,7 +206,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMapscrollReceived(final CrossfireCommandMapscrollEvent evt)
         {
-            synchronized (buffer)
+            synchronized (bufferedImage)
             {
                 final int dx = -evt.getDX();
                 final int dy = -evt.getDY();
@@ -241,7 +241,7 @@ public class GUIMap extends GUIElement
                     h = mapHeight-dy;
                 }
 
-                final Graphics2D g = buffer.createGraphics();
+                final Graphics2D g = bufferedImage.createGraphics();
                 try
                 {
                     g.copyArea(offsetX+(x-dx)*tileSize, offsetY+(y-dy)*tileSize, w*tileSize, h*tileSize, dx*tileSize, dy*tileSize);
@@ -550,7 +550,7 @@ public class GUIMap extends GUIElement
             offsetY = (h-effectiveH)/2;
         }
 
-        final Graphics2D g = buffer.createGraphics();
+        final Graphics2D g = bufferedImage.createGraphics();
         try
         {
             redrawAll(g);

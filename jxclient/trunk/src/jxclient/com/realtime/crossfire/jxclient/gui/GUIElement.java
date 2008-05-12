@@ -63,7 +63,7 @@ public abstract class GUIElement
      */
     protected int h;
 
-    protected BufferedImage buffer;
+    protected BufferedImage bufferedImage;
 
     private boolean visible = true;
 
@@ -75,7 +75,7 @@ public abstract class GUIElement
     private boolean ignore = false;
 
     /**
-     * The transparency for {@link #buffer}.
+     * The transparency for {@link #bufferedImage}.
      */
     private final int transparency;
 
@@ -85,7 +85,7 @@ public abstract class GUIElement
     private final String name;
 
     /**
-     * Whether {@link #buffer} has changed.
+     * Whether {@link #bufferedImage} has changed.
      */
     private boolean changed;
 
@@ -313,7 +313,7 @@ public abstract class GUIElement
     }
 
     /**
-     * Record that {@link #buffer} has changed and must be repainted.
+     * Record that {@link #bufferedImage} has changed and must be repainted.
      */
     public void setChanged()
     {
@@ -422,7 +422,7 @@ public abstract class GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        buffer = gconf.createCompatibleImage(w, h, transparency);
+        bufferedImage = gconf.createCompatibleImage(w, h, transparency);
         setChanged();
     }
 
@@ -437,13 +437,13 @@ public abstract class GUIElement
     }
 
     /**
-     * Re-create the contents of {@link #buffer}.
+     * Re-create the contents of {@link #bufferedImage}.
      */
     protected final void render()
     {
-        synchronized (buffer)
+        synchronized (bufferedImage)
         {
-            final Graphics2D g = buffer.createGraphics();
+            final Graphics2D g = bufferedImage.createGraphics();
             try
             {
                 render(g);
@@ -470,7 +470,7 @@ public abstract class GUIElement
      */
     public void drawImage(final Graphics g)
     {
-        synchronized (buffer)
+        synchronized (bufferedImage)
         {
             if (changed)
             {
@@ -478,7 +478,7 @@ public abstract class GUIElement
                 render();
             }
 
-            g.drawImage(buffer, getX(), getY(), jxcWindow);
+            g.drawImage(bufferedImage, getX(), getY(), jxcWindow);
         }
     }
 }

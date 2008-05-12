@@ -125,7 +125,7 @@ public class GUIHTMLLabel extends AbstractLabel
             return;
         }
 
-        final Graphics2D g = buffer.createGraphics();
+        final Graphics2D g = bufferedImage.createGraphics();
         try
         {
             final FontRenderContext context = g.getFontRenderContext();
