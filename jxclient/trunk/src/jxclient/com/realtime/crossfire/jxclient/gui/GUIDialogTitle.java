@@ -40,7 +40,7 @@ public class GUIDialogTitle extends GUIPicture
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -58,9 +58,9 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIDialogTitle(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
-        super(jxcWindow, name, x, y, w, h, image, alpha);
+        super(window, name, x, y, w, h, image, alpha);
     }
 
     /* {@inheritDoc} */
@@ -113,8 +113,8 @@ public class GUIDialogTitle extends GUIPicture
         }
 
         final Point point = e.getLocationOnScreen();
-        final int newX = Math.max(Math.min(point.x+offset.x, getJXCWindow().getWindowWidth()-gui.getWidth()), 0);
-        final int newY = Math.max(Math.min(point.y+offset.y, getJXCWindow().getWindowHeight()-gui.getHeight()), 0);
+        final int newX = Math.max(Math.min(point.x+offset.x, getWindow().getWindowWidth()-gui.getWidth()), 0);
+        final int newY = Math.max(Math.min(point.y+offset.y, getWindow().getWindowHeight()-gui.getHeight()), 0);
         gui.setPosition(newX, newY);
     }
 }

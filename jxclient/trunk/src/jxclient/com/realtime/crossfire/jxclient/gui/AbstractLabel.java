@@ -48,9 +48,9 @@ public abstract class AbstractLabel extends GUIElement
      */
     private final Color backgroundColor;
 
-    protected AbstractLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Color backgroundColor)
+    protected AbstractLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Color backgroundColor)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         backgroundImage = picture == null ? null : new ImageIcon(picture);
         this.backgroundColor = backgroundColor;
     }

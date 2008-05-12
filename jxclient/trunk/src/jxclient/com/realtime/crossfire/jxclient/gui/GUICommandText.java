@@ -32,15 +32,15 @@ import java.awt.image.BufferedImage;
  */
 public class GUICommandText extends GUIText
 {
-    public GUICommandText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    public GUICommandText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
+        super(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final JXCWindow jxcWindow, final String command)
+    @Override protected void execute(final JXCWindow window, final String command)
     {
-        jxcWindow.executeCommand(command);
+        window.executeCommand(command);
         setText("");
     }
 }

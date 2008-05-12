@@ -134,7 +134,7 @@ public class GUISpellLabel extends GUIHTMLLabel
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The window this gui element is part of.
+     * @param window The window this gui element is part of.
      *
      * @param name The gui element name.
      *
@@ -155,11 +155,11 @@ public class GUISpellLabel extends GUIHTMLLabel
      *
      * @param type The display type.
      */
-    public GUISpellLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type)
+    public GUISpellLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type)
     {
-        super(jxcWindow, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
+        super(window, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
-        jxcWindow.getCurrentSpellManager().addSpellListener(spellListener);
+        window.getCurrentSpellManager().addSpellListener(spellListener);
     }
 }

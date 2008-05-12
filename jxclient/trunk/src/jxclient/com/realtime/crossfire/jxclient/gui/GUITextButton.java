@@ -65,7 +65,7 @@ public class GUITextButton extends AbstractButton
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -94,9 +94,9 @@ public class GUITextButton extends AbstractButton
      *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final boolean autoRepeat, final GUICommandList commandList)
+    public GUITextButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (up == null) throw new IllegalArgumentException();
         if (down == null) throw new IllegalArgumentException();
         if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);

@@ -48,7 +48,7 @@ public class GUILabelQuery extends GUIMultiLineLabel
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -68,9 +68,9 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param backgroundColor The background color.
      */
-    public GUILabelQuery(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
+    public GUILabelQuery(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
     {
-        super(jxcWindow, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
+        super(window, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
         crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }
 }

@@ -101,9 +101,9 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
+    public GUIItemSpelllist(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
+        super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
@@ -144,24 +144,24 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow jxcWindow)
+    @Override public void button1Clicked(final JXCWindow window)
     {
         if (spell == null)
         {
             return;
         }
 
-        jxcWindow.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
-        jxcWindow.getCurrentSpellManager().setCurrentSpell(spell);
+        window.getCommandQueue().sendNcom(false, "cast "+spell.getInternalName());
+        window.getCurrentSpellManager().setCurrentSpell(spell);
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow jxcWindow)
+    @Override public void button2Clicked(final JXCWindow window)
     {
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow jxcWindow)
+    @Override public void button3Clicked(final JXCWindow window)
     {
     }
 

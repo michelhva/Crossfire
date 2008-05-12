@@ -42,7 +42,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class JXCWindowRenderer
 {
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The semaphore used to synchronized map model updates and map view
@@ -124,16 +124,16 @@ public class JXCWindowRenderer
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The associated window.
+     * @param window The associated window.
      *
      * @param redrawSemaphore The semaphore used to synchronized map model
      * updates and map view redraws.
      */
-    public JXCWindowRenderer(final JXCWindow jxcWindow, final Object redrawSemaphore)
+    public JXCWindowRenderer(final JXCWindow window, final Object redrawSemaphore)
     {
-        this.jxcWindow = jxcWindow;
+        this.window = window;
         this.redrawSemaphore = redrawSemaphore;
-        currentGui = new Gui(jxcWindow);
+        currentGui = new Gui(window);
     }
 
     public void init(final Resolution resolution)
@@ -158,8 +158,8 @@ public class JXCWindowRenderer
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         if (fullScreen && gd.isFullScreenSupported())
         {
-            jxcWindow.setUndecorated(true);
-            gd.setFullScreenWindow(jxcWindow);
+            window.setUndecorated(true);
+            gd.setFullScreenWindow(window);
             isFullScreen = true;
             final DisplayMode currentDisplayMode = gd.getDisplayMode();
             if (currentDisplayMode.getWidth() == displayMode.getWidth() && currentDisplayMode.getHeight() == displayMode.getHeight())
@@ -172,7 +172,7 @@ public class JXCWindowRenderer
                 {
                     isFullScreen = false;
                     gd.setFullScreenWindow(null);
-//                    jxcWindow.setUndecorated(false); // XXX: cannot be called anymore
+//                    window.setUndecorated(false); // XXX: cannot be called anymore
                     // windowed mode
                 }
                 else
@@ -195,7 +195,7 @@ public class JXCWindowRenderer
                     {
                         isFullScreen = false;
                         gd.setFullScreenWindow(null);
-//                        jxcWindow.setUndecorated(false); // XXX: cannot be called anymore
+//                        window.setUndecorated(false); // XXX: cannot be called anymore
                         // windowed mode
                     }
                 }
@@ -214,16 +214,16 @@ public class JXCWindowRenderer
             }
 
             final Dimension size = new Dimension(displayMode.getWidth(), displayMode.getHeight());
-            jxcWindow.getRootPane().setPreferredSize(size);
-            jxcWindow.pack();
-            jxcWindow.setResizable(false);
-            jxcWindow.setVisible(true);
-            jxcWindow.setLocationRelativeTo(null);
+            window.getRootPane().setPreferredSize(size);
+            window.pack();
+            window.setResizable(false);
+            window.setVisible(true);
+            window.setLocationRelativeTo(null);
         }
-        jxcWindow.createBufferStrategy(2);
-        bufferStrategy = jxcWindow.getBufferStrategy();
+        window.createBufferStrategy(2);
+        bufferStrategy = window.getBufferStrategy();
 
-        final Insets insets = jxcWindow.getInsets();
+        final Insets insets = window.getInsets();
         offsetX = insets.left;
         offsetY = insets.top;
     }
@@ -290,7 +290,7 @@ public class JXCWindowRenderer
 
     public void clearGUI()
     {
-        currentGui = new Gui(jxcWindow);
+        currentGui = new Gui(window);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -305,7 +305,7 @@ public class JXCWindowRenderer
     private void redrawGUIBasic(final Graphics g)
     {
         currentGuiChanged = false;
-        currentGui.redraw(g, jxcWindow);
+        currentGui.redraw(g, window);
     }
 
     private void redrawGUIDialog(final Graphics g)
@@ -315,7 +315,7 @@ public class JXCWindowRenderer
         {
             if (!dialog.isHidden(guiState))
             {
-                dialog.redraw(g, jxcWindow);
+                dialog.redraw(g, window);
             }
         }
     }
@@ -338,7 +338,7 @@ public class JXCWindowRenderer
     private void redrawBlack(final Graphics g)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, jxcWindow.getWindowWidth(), jxcWindow.getWindowHeight());
+        g.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
     }
 
     /**
@@ -647,7 +647,7 @@ public class JXCWindowRenderer
             return;
         }
 
-        final Point mouse = jxcWindow.getMousePosition(true);
+        final Point mouse = window.getMousePosition(true);
         if (mouse == null)
         {
             openDialogs.add(dialog);
@@ -658,10 +658,10 @@ public class JXCWindowRenderer
             mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
-                final MouseEvent mouseEvent = new MouseEvent(jxcWindow, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
-                jxcWindow.getMouseTracker().mouseExited(mouseEvent);
+                final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                window.getMouseTracker().mouseExited(mouseEvent);
                 openDialogs.add(dialog);
-                jxcWindow.getMouseTracker().mouseEntered(mouseEvent);
+                window.getMouseTracker().mouseEntered(mouseEvent);
             }
             else
             {
@@ -683,7 +683,7 @@ public class JXCWindowRenderer
             return false;
         }
 
-        final Point mouse = jxcWindow.getMousePosition(true);
+        final Point mouse = window.getMousePosition(true);
         if (mouse == null)
         {
             openDialogs.remove(dialog);
@@ -694,10 +694,10 @@ public class JXCWindowRenderer
             mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
-                final MouseEvent mouseEvent = new MouseEvent(jxcWindow, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
-                jxcWindow.getMouseTracker().mouseExited(mouseEvent);
+                final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                window.getMouseTracker().mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
-                jxcWindow.getMouseTracker().mouseEntered(mouseEvent);
+                window.getMouseTracker().mouseEntered(mouseEvent);
             }
             else
             {

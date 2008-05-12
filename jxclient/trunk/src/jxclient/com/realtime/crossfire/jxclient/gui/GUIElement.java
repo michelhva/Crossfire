@@ -92,7 +92,7 @@ public abstract class GUIElement
     /**
      * The {@link JXCWindow} this gui element belongs to.
      */
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The tooltip text to show when the mouse is inside this element. May be
@@ -103,7 +103,7 @@ public abstract class GUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -119,9 +119,9 @@ public abstract class GUIElement
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected GUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
-        this.jxcWindow = jxcWindow;
+        this.window = window;
         this.name = name;
         this.x = x;
         this.y = y;
@@ -241,7 +241,7 @@ public abstract class GUIElement
      */
     public void mouseClicked(final MouseEvent e)
     {
-        jxcWindow.getWindowRenderer().raiseDialog(gui);
+        window.getWindowRenderer().raiseDialog(gui);
     }
 
     /**
@@ -369,7 +369,7 @@ public abstract class GUIElement
             }
         }
         this.tooltipText = tooltipText;
-        jxcWindow.getTooltipManager().updateElement(this);
+        window.getTooltipManager().updateElement(this);
     }
 
     /**
@@ -431,9 +431,9 @@ public abstract class GUIElement
      *
      * @return The {@link JXCWindow} this gui element belongs to.
      */
-    public JXCWindow getJXCWindow()
+    public JXCWindow getWindow()
     {
-        return jxcWindow;
+        return window;
     }
 
     /**
@@ -478,7 +478,7 @@ public abstract class GUIElement
                 render();
             }
 
-            g.drawImage(bufferedImage, getX(), getY(), jxcWindow);
+            g.drawImage(bufferedImage, getX(), getY(), window);
         }
     }
 }

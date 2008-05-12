@@ -31,7 +31,7 @@ public class ShortcutCommand extends Shortcut
      /**
      * The window to cast the spell in.
      */
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The command to execute.
@@ -41,13 +41,13 @@ public class ShortcutCommand extends Shortcut
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The window to execute in.
+     * @param window The window to execute in.
      *
      * @param command The command to execute.
      */
-    public ShortcutCommand(final JXCWindow jxcWindow, final String command)
+    public ShortcutCommand(final JXCWindow window, final String command)
     {
-        this.jxcWindow = jxcWindow;
+        this.window = window;
         this.command = command;
     }
 
@@ -64,6 +64,6 @@ public class ShortcutCommand extends Shortcut
     /** {@inheritDoc} */
     @Override public void execute()
     {
-        jxcWindow.getCommandQueue().sendNcom(false, command);
+        window.getCommandQueue().sendNcom(false, command);
     }
 }

@@ -36,7 +36,7 @@ public class TooltipManager
     /**
      * The {@link JXCWindow} to manage to tooltips of.
      */
-    private final JXCWindow jxcWindow;
+    private final JXCWindow window;
 
     /**
      * The last known active gui element. It is used to suppress unnecessary
@@ -52,11 +52,11 @@ public class TooltipManager
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The window to manage the tooltips of.
+     * @param window The window to manage the tooltips of.
      */
-    public TooltipManager(final JXCWindow jxcWindow)
+    public TooltipManager(final JXCWindow window)
     {
-        this.jxcWindow = jxcWindow;
+        this.window = window;
     }
 
     /**
@@ -140,7 +140,7 @@ public class TooltipManager
         assert activeGuiElement != null;
         assert Thread.holdsLock(activeGuiElementSync);
 
-        final AbstractLabel tooltip = jxcWindow.getWindowRenderer().getTooltip();
+        final AbstractLabel tooltip = window.getWindowRenderer().getTooltip();
         if (tooltip == null)
         {
             return;
@@ -156,9 +156,9 @@ public class TooltipManager
         tooltip.setVisible(true);
         tooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.getX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, jxcWindow.getWindowWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(activeGuiElement.getX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= jxcWindow.getWindowHeight())
+        if (activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
         {
             ty = activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }
@@ -174,7 +174,7 @@ public class TooltipManager
      */
     private void removeTooltip()
     {
-        final AbstractLabel tooltip = jxcWindow.getWindowRenderer().getTooltip();
+        final AbstractLabel tooltip = window.getWindowRenderer().getTooltip();
         if (tooltip != null)
         {
             tooltip.setVisible(false);

@@ -236,7 +236,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private final Object semaphoreRedraw = new Object();
 
-    private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this, semaphoreRedraw);
+    private final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(this, semaphoreRedraw);
 
     /**
      * The {@link TooltipManager} for this window.
@@ -349,11 +349,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         /** {@inheritDoc} */
         public void playerReceived(final CfPlayer player)
         {
-            if (jxcWindowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
+            if (windowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
             {
                 openDialogByName("messages"); // hack for race selection
             }
-            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
+            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
             characterPickup.update();                         // reset pickup mode
         }
@@ -392,7 +392,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             if (keyBindingState != null)
             {
                 keyBindingState = null;
-                jxcWindowRenderer.closeDialog(keybindDialog);
+                windowRenderer.closeDialog(keybindDialog);
             }
 
             if (dialogQuit == null)
@@ -401,8 +401,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else
             {
-                jxcWindowRenderer.closeDialog(dialogDisconnect);
-                jxcWindowRenderer.openDialog(dialogQuit);
+                windowRenderer.closeDialog(dialogDisconnect);
+                windowRenderer.openDialog(dialogQuit);
             }
         }
 
@@ -458,7 +458,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             throw new AssertionError();
         }
-        mouseTracker = new MouseTracker(debugGui, jxcWindowRenderer);
+        mouseTracker = new MouseTracker(debugGui, windowRenderer);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         updateTitle();
@@ -483,7 +483,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         keyBindingState = new KeyBindingState(bindings, null, cmdlist);
-        jxcWindowRenderer.openDialog(keybindDialog);
+        windowRenderer.openDialog(keybindDialog);
         return true;
     }
 
@@ -495,7 +495,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         keyBindingState = new KeyBindingState(characterKeyBindings, perCharacter ? null : keyBindings, null);
-        jxcWindowRenderer.openDialog(keybindDialog);
+        windowRenderer.openDialog(keybindDialog);
         return true;
     }
 
@@ -584,7 +584,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void openDialog(final Gui dialog)
     {
-        jxcWindowRenderer.openDialog(dialog);
+        windowRenderer.openDialog(dialog);
         if (dialog == queryDialog)
         {
             dialog.setHideInput(false);
@@ -598,7 +598,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void toggleDialog(final Gui dialog)
     {
-        if (jxcWindowRenderer.toggleDialog(dialog))
+        if (windowRenderer.toggleDialog(dialog))
         {
             if (dialog == queryDialog)
             {
@@ -612,13 +612,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public void closeQueryDialog()
     {
-        jxcWindowRenderer.closeDialog(queryDialog);
+        windowRenderer.closeDialog(queryDialog);
     }
 
     private void initRendering(final boolean fullScreen)
     {
-        jxcWindowRenderer.initRendering(fullScreen);
-        DialogStateParser.load(skin, jxcWindowRenderer);
+        windowRenderer.initRendering(fullScreen);
+        DialogStateParser.load(skin, windowRenderer);
         loadKeybindings();
         loadShortcuts();
     }
@@ -649,7 +649,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         final Gui dialog = skin.getDialog(name);
         if (dialog != null)
         {
-            jxcWindowRenderer.closeDialog(dialog);
+            windowRenderer.closeDialog(dialog);
         }
     }
 
@@ -708,21 +708,21 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             if (dialogDisconnect != null)
             {
-                jxcWindowRenderer.closeDialog(dialogDisconnect);
+                windowRenderer.closeDialog(dialogDisconnect);
             }
             if (dialogQuit != null)
             {
-                jxcWindowRenderer.closeDialog(dialogQuit);
+                windowRenderer.closeDialog(dialogQuit);
             }
-            jxcWindowRenderer.closeDialog(queryDialog);
-            jxcWindowRenderer.closeDialog(skin.getDialogBook(1));
+            windowRenderer.closeDialog(queryDialog);
+            windowRenderer.closeDialog(skin.getDialogBook(1));
 
             switch (guiId)
             {
             case GUI_START:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
+                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
                 if (DISABLE_START_GUI)
                 {
                     endRendering();
@@ -736,7 +736,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             case GUI_METASERVER:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
+                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
                 showGUIMeta();
                 metaserver.query();
 
@@ -746,7 +746,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     final int metaIndex = metaserver.getServerIndex(serverName);
                     if (metaIndex != -1)
                     {
-                        final GUIMetaElement metaElement = jxcWindowRenderer.getCurrentGui().getMetaElement(metaIndex);
+                        final GUIMetaElement metaElement = windowRenderer.getCurrentGui().getMetaElement(metaIndex);
                         if (metaElement != null)
                         {
                             metaElement.setActive(true);
@@ -757,7 +757,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             case GUI_MAIN:
                 soundManager.muteMusic(false);
-                jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
+                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
                 showGUIMain();
                 break;
             }
@@ -768,7 +768,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         new MusicWatcher(server, soundManager);
         new SoundWatcher(server, soundManager);
-        new StatsWatcher(stats, jxcWindowRenderer, itemsManager, soundManager);
+        new StatsWatcher(stats, windowRenderer, itemsManager, soundManager);
         this.resolution = resolution;
         addKeyListener(this);
         addMouseListener(mouseTracker);
@@ -787,7 +787,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 throw new AssertionError();
             }
         }
-        jxcWindowRenderer.init(skin.getResolution());
+        windowRenderer.init(skin.getResolution());
         try
         {
             initRendering(fullScreen);
@@ -805,19 +805,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 {
                     synchronized (semaphoreDrawing)
                     {
-                        jxcWindowRenderer.redrawGUI();
+                        windowRenderer.redrawGUI();
                     }
                     Thread.sleep(10);
                 }
             }
             finally
             {
-                jxcWindowRenderer.endRendering();
+                windowRenderer.endRendering();
             }
 
             saveShortcuts();
             saveKeybindings();
-            DialogStateParser.save(skin, jxcWindowRenderer);
+            DialogStateParser.save(skin, windowRenderer);
             optionManager.saveOptions();
             soundManager.shutdown();
         }
@@ -1169,7 +1169,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 if (keyBindingState != null)
                 {
                     keyBindingState = null;
-                    jxcWindowRenderer.closeDialog(keybindDialog);
+                    windowRenderer.closeDialog(keybindDialog);
                 }
                 else if (getStatus() != Status.UNCONNECTED)
                 {
@@ -1177,16 +1177,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     {
                         disconnect();
                     }
-                    else if (jxcWindowRenderer.openDialog(dialogDisconnect))
+                    else if (windowRenderer.openDialog(dialogDisconnect))
                     {
                         if (dialogQuit != null)
                         {
-                            jxcWindowRenderer.closeDialog(dialogQuit);
+                            windowRenderer.closeDialog(dialogQuit);
                         }
                     }
                     else
                     {
-                        jxcWindowRenderer.closeDialog(dialogDisconnect);
+                        windowRenderer.closeDialog(dialogDisconnect);
                     }
                 }
                 else
@@ -1195,16 +1195,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     {
                         endRendering();
                     }
-                    else if (jxcWindowRenderer.openDialog(dialogQuit))
+                    else if (windowRenderer.openDialog(dialogQuit))
                     {
                         if (dialogDisconnect != null)
                         {
-                            jxcWindowRenderer.closeDialog(dialogDisconnect);
+                            windowRenderer.closeDialog(dialogDisconnect);
                         }
                     }
                     else
                     {
-                        jxcWindowRenderer.closeDialog(dialogQuit);
+                        windowRenderer.closeDialog(dialogQuit);
                     }
                 }
             }
@@ -1214,9 +1214,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
             else
             {
-                for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+                for (final Gui dialog : windowRenderer.getOpenDialogs())
                 {
-                    if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
+                    if (!dialog.isHidden(windowRenderer.getGuiState()))
                     {
                         if (dialog.handleKeyPress(e))
                         {
@@ -1228,7 +1228,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                         }
                     }
                 }
-                if (jxcWindowRenderer.getCurrentGui().handleKeyPress(e))
+                if (windowRenderer.getCurrentGui().handleKeyPress(e))
                 {
                     return;
                 }
@@ -1259,7 +1259,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 if (keyBindingState.keyReleased())
                 {
                     keyBindingState = null;
-                    jxcWindowRenderer.closeDialog(keybindDialog);
+                    windowRenderer.closeDialog(keybindDialog);
                 }
             }
             break;
@@ -1280,9 +1280,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
         else
         {
-            for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+            for (final Gui dialog : windowRenderer.getOpenDialogs())
             {
-                if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
+                if (!dialog.isHidden(windowRenderer.getGuiState()))
                 {
                     if (dialog.handleKeyTyped(e))
                     {
@@ -1294,7 +1294,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     }
                 }
             }
-            if (jxcWindowRenderer.getCurrentGui().handleKeyTyped(e))
+            if (windowRenderer.getCurrentGui().handleKeyTyped(e))
             {
                 return;
             }
@@ -1407,13 +1407,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 log.updateText(message);
             }
         }
-        jxcWindowRenderer.openDialog(dialog);
+        windowRenderer.openDialog(dialog);
     }
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
         setStatus(Status.QUERY);
-        jxcWindowRenderer.openDialog(queryDialog);
+        windowRenderer.openDialog(queryDialog);
         queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
 
         currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
@@ -1432,7 +1432,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         else if (evt.getPrompt().startsWith("[y] to roll new stats")
         || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
         {
-            jxcWindowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
             if (openDialogByName("newchar"))
             {
                 closeDialogByName("messages");
@@ -1451,32 +1451,32 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void showGUIStart()
     {
-        jxcWindowRenderer.clearGUI();
-        jxcWindowRenderer.setCurrentGui(skin.getStartInterface());
+        windowRenderer.clearGUI();
+        windowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
 
     private void showGUIMeta()
     {
-        jxcWindowRenderer.clearGUI();
+        windowRenderer.clearGUI();
         final Gui newGui = skin.getMetaInterface();
-        jxcWindowRenderer.setCurrentGui(newGui);
+        windowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
         tooltipManager.reset();
     }
 
     private void showGUIMain()
     {
-        jxcWindowRenderer.clearGUI();
+        windowRenderer.clearGUI();
         final Gui newGui = skin.getMainInterface();
-        jxcWindowRenderer.setCurrentGui(newGui);
+        windowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
     }
 
     /** {@inheritDoc} */
     @Override public void paint(final Graphics g)
     {
-        jxcWindowRenderer.repaint();
+        windowRenderer.repaint();
     }
 
     /**
@@ -1565,16 +1565,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private GUIText activateCommandInput()
     {
         // check main gui
-        final GUIText textArea1 = jxcWindowRenderer.getCurrentGui().activateCommandInput();
+        final GUIText textArea1 = windowRenderer.getCurrentGui().activateCommandInput();
         if (textArea1 != null)
         {
             return textArea1;
         }
 
         // check visible dialogs
-        for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+        for (final Gui dialog : windowRenderer.getOpenDialogs())
         {
-            if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
+            if (!dialog.isHidden(windowRenderer.getGuiState()))
             {
                 final GUIText textArea2 = dialog.activateCommandInput();
                 if (textArea2 != null)
@@ -1763,7 +1763,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     public JXCWindowRenderer getWindowRenderer()
     {
-        return jxcWindowRenderer;
+        return windowRenderer;
     }
 
     /**

@@ -72,12 +72,12 @@ public class GUICommandList
      *
      * @param commands The commands.
      *
-     * @param jxcWindow The window to execute the commands in.
+     * @param window The window to execute the commands in.
      */
-    public GUICommandList(final Type type, final String commands, final JXCWindow jxcWindow)
+    public GUICommandList(final Type type, final String commands, final JXCWindow window)
     {
         this(type);
-        this.commands.add(new ExecuteCommandCommand(jxcWindow, commands));
+        this.commands.add(new ExecuteCommandCommand(window, commands));
     }
 
     /**

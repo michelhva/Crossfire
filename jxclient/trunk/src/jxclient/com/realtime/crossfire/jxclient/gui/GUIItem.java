@@ -51,9 +51,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      */
     private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
-    protected GUIItem(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final Font font)
+    protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final Font font)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.cursedImage = cursedImage;
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
@@ -65,29 +65,29 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     @Override public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
-        final JXCWindow jxcw = (JXCWindow)e.getSource();
+        final JXCWindow window = (JXCWindow)e.getSource();
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
             setActive(true);
-            button1Clicked(jxcw);
+            button1Clicked(window);
             break;
 
         case MouseEvent.BUTTON2:
-            button2Clicked(jxcw);
+            button2Clicked(window);
             break;
 
         case MouseEvent.BUTTON3:
-            button3Clicked(jxcw);
+            button3Clicked(window);
             break;
         }
     }
 
-    public abstract void button1Clicked(final JXCWindow jxcWindow);
+    public abstract void button1Clicked(final JXCWindow window);
 
-    public abstract void button2Clicked(final JXCWindow jxcWindow);
+    public abstract void button2Clicked(final JXCWindow window);
 
-    public abstract void button3Clicked(final JXCWindow jxcWindow);
+    public abstract void button3Clicked(final JXCWindow window);
 
     /** {@inheritDoc} */
     @Override public void activeChanged()

@@ -43,7 +43,7 @@ public class MouseTracker implements MouseInputListener
     /**
      * The renderer to access dialogs/gui elements.
      */
-    private final JXCWindowRenderer jxcWindowRenderer;
+    private final JXCWindowRenderer windowRenderer;
 
     /**
      * The gui element in which the mouse is.
@@ -55,12 +55,12 @@ public class MouseTracker implements MouseInputListener
      *
      * @param debugGui Whether GUI elements should be highlighted.
      *
-     * @param jxcWindowRenderer The renderer to access dialogs/gui elements.
+     * @param windowRenderer The renderer to access dialogs/gui elements.
      */
-    public MouseTracker(final boolean debugGui, final JXCWindowRenderer jxcWindowRenderer)
+    public MouseTracker(final boolean debugGui, final JXCWindowRenderer windowRenderer)
     {
         this.debugGui = debugGui;
-        this.jxcWindowRenderer = jxcWindowRenderer;
+        this.windowRenderer = windowRenderer;
     }
 
     /**
@@ -78,7 +78,7 @@ public class MouseTracker implements MouseInputListener
     {
         if (mouseElement != null)
         {
-            e.translatePoint(-mouseElement.getX()-jxcWindowRenderer.getOffsetX(), -mouseElement.getY()-jxcWindowRenderer.getOffsetY());
+            e.translatePoint(-mouseElement.getX()-windowRenderer.getOffsetX(), -mouseElement.getY()-windowRenderer.getOffsetY());
             mouseElement.mouseMoved(e);
             mouseElement.mouseDragged(e);
         }
@@ -190,9 +190,9 @@ public class MouseTracker implements MouseInputListener
     {
         GUIElement elected = null;
 
-        for (final Gui dialog : jxcWindowRenderer.getOpenDialogs())
+        for (final Gui dialog : windowRenderer.getOpenDialogs())
         {
-            if (!dialog.isHidden(jxcWindowRenderer.getGuiState()))
+            if (!dialog.isHidden(windowRenderer.getGuiState()))
             {
                 elected = manageMouseEvents(dialog, e);
                 if (elected != null)
@@ -208,12 +208,12 @@ public class MouseTracker implements MouseInputListener
 
         if (elected == null)
         {
-            elected = manageMouseEvents(jxcWindowRenderer.getCurrentGui(), e);
+            elected = manageMouseEvents(windowRenderer.getCurrentGui(), e);
         }
 
         if (elected != null)
         {
-            e.translatePoint(-elected.getX()-jxcWindowRenderer.getOffsetX(), -elected.getY()-jxcWindowRenderer.getOffsetY());
+            e.translatePoint(-elected.getX()-windowRenderer.getOffsetX(), -elected.getY()-windowRenderer.getOffsetY());
         }
 
         return elected;
@@ -221,8 +221,8 @@ public class MouseTracker implements MouseInputListener
 
     private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e)
     {
-        final int x = e.getX()-jxcWindowRenderer.getOffsetX();
-        final int y = e.getY()-jxcWindowRenderer.getOffsetY();
+        final int x = e.getX()-windowRenderer.getOffsetX();
+        final int y = e.getY()-windowRenderer.getOffsetY();
         return gui.getElementFromPoint(x, y);
     }
 }

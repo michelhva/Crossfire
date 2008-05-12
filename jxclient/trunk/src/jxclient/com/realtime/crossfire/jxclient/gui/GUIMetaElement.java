@@ -83,9 +83,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     };
 
-    public GUIMetaElement(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int defaultIndex, final String format, final String tooltip)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.tcpImage = tcpImage;
         this.font = font;
         this.text = text;
@@ -94,7 +94,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         index = defaultIndex;
         this.format = format;
         this.tooltip = tooltip;
-        jxcWindow.getMetaserver().addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
+        window.getMetaserver().addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }
@@ -104,7 +104,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     {
         super.render(g);
 
-        final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
+        final MetaserverEntry metaEntry = getWindow().getMetaserver().getEntry(index);
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         g.setFont(font);
@@ -145,7 +145,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
         else if (distance > 0)
         {
-            return index+distance < getJXCWindow().getMetaserver().size();
+            return index+distance < getWindow().getMetaserver().size();
         }
         else
         {
@@ -156,9 +156,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /** {@inheritDoc} */
     public void scroll(final int distance)
     {
-        getJXCWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
+        getWindow().getMetaserver().removeMetaserverEntryListener(index, metaserverEntryListener);
         index += distance;
-        getJXCWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
+        getWindow().getMetaserver().addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }
@@ -186,7 +186,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
         else
         {
-            final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
+            final MetaserverEntry metaEntry = getWindow().getMetaserver().getEntry(index);
             if (comment != null)
             {
                 comment.setText(metaEntry != null ? metaEntry.getComment() : "");
@@ -214,7 +214,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      */
     private void updateTooltip()
     {
-        final MetaserverEntry metaEntry = getJXCWindow().getMetaserver().getEntry(index);
+        final MetaserverEntry metaEntry = getWindow().getMetaserver().getEntry(index);
         setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
     }
 }

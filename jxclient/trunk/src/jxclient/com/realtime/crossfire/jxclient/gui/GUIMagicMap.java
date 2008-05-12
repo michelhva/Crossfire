@@ -271,9 +271,9 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
-    public GUIMagicMap(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater, final FacesManager facesManager)
+    public GUIMagicMap(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater, final FacesManager facesManager)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
         if (w%TILE_SIZE != 0) throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
         if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);

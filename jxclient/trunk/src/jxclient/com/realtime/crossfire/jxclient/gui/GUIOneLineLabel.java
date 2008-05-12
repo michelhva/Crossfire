@@ -35,7 +35,7 @@ public class GUIOneLineLabel extends GUILabel
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -60,9 +60,9 @@ public class GUIOneLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIOneLineLabel(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
+    public GUIOneLineLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
+        super(window, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 

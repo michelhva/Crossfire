@@ -84,7 +84,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -105,9 +105,9 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      *
      * @param colorForeground The foreground color of the slider.
      */
-    public GUIScrollBar(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
+    public GUIScrollBar(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.OPAQUE);
+        super(window, name, x, y, w, h, Transparency.OPAQUE);
         if (scrollable == null) throw new IllegalArgumentException();
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;

@@ -36,7 +36,7 @@ public class GUIPicture extends GUIElement
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -54,9 +54,9 @@ public class GUIPicture extends GUIElement
      *
      * @param alpha The transparency value.
      */
-    public GUIPicture(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIPicture(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
-        super(jxcWindow, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+        super(window, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         final Graphics2D g = bufferedImage.createGraphics();
         try
         {

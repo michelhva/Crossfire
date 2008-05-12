@@ -87,9 +87,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private int offset = 0;
 
-    protected GUIText(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    protected GUIText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
-        super(jxcWindow, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
@@ -242,7 +242,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         {
         case '\r':
         case '\n':
-            getJXCWindow().updatePlayerName(text.toString());
+            getWindow().updatePlayerName(text.toString());
             execute((JXCWindow)e.getSource(), text.toString());
             setActive(false);
             break;
@@ -283,11 +283,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Will be called to execute the entered command.
      *
-     * @param jxcWindow The JXCWindow instance.
+     * @param window The JXCWindow instance.
      *
      * @param command The entered command.
      */
-    protected abstract void execute(final JXCWindow jxcWindow, final String command);
+    protected abstract void execute(final JXCWindow window, final String command);
 
     /**
      * Enable or disable hidden text.

@@ -39,7 +39,7 @@ public class GUIMessageLog extends GUILog
     /**
      * Create a new instance.
      *
-     * @param jxcWindow The <code>JXCWindow</code> this element belongs to.
+     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param name The name of this element.
      *
@@ -61,9 +61,9 @@ public class GUIMessageLog extends GUILog
      * @param defaultColor The default color to use for text message not
      * specifying a color.
      */
-    public GUIMessageLog(final JXCWindow jxcWindow, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUIMessageLog(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
-        super(jxcWindow, name, x, y, w, h, backgroundImage, fonts);
+        super(window, name, x, y, w, h, backgroundImage, fonts);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
     }
 
