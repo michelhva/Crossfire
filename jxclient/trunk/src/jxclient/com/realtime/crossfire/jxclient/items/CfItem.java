@@ -98,11 +98,6 @@ public class CfItem
         this.type = type;
     }
 
-    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
-    {
-        this(location, tag, flags, weight, face, name, namePl, anim, animSpeed, nrof, -1);
-    }
-
     public void setFlags(final int flags)
     {
         if (this.flags != flags)
