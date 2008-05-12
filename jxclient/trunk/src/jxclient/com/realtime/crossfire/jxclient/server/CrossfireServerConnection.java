@@ -176,9 +176,6 @@ public class CrossfireServerConnection extends ServerConnection
     /** The command prefix for the "lookat" command. */
     private static final byte[] lookatPrefix = { 'l', 'o', 'o', 'k', 'a', 't', ' ', };
 
-    /** The command prefix for the "mapredraw" command. */
-    private static final byte[] mapredrawPrefix = { 'm', 'a', 'p', 'r', 'e', 'd', 'r', 'a', 'w', ' ', };
-
     /** The command prefix for the "mark" command. */
     private static final byte[] markPrefix = { 'm', 'a', 'r', 'k', ' ', };
 
