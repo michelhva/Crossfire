@@ -34,7 +34,7 @@ import java.util.Iterator;
  */
 public interface JXCSkin extends Iterable<Gui>
 {
-    void load(CrossfireServerConnection s, JXCWindow p, Resolution resolution) throws JXCSkinException;
+    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, Resolution resolution) throws JXCSkinException;
 
     /**
      * Return a short name for the skin. It is used to construct path or file
