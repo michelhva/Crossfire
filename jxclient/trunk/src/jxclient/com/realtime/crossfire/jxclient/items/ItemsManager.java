@@ -79,7 +79,7 @@ public class ItemsManager
     private final InventoryManager inventoryManager = new InventoryManager();
 
     /**
-     * The list of {@link CrossfirePlayerListener}s to be notified about
+     * The list of {@link PlayerListener}s to be notified about
      * changes of the current player.
      */
     private final EventListenerList playerListeners = new EventListenerList();
@@ -453,7 +453,7 @@ public class ItemsManager
         {
             if (this.player != null)
             {
-                for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
                 {
                     listener.playerReceived(this.player);
                 }
@@ -464,7 +464,7 @@ public class ItemsManager
         if (this.player != null)
         {
             inventoryManager.addModified(items.get(this.player.getTag()));
-            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
             {
                 listener.playerRemoved(this.player);
             }
@@ -473,7 +473,7 @@ public class ItemsManager
         if (this.player != null)
         {
             inventoryManager.addModified(items.get(this.player.getTag()));
-            for (final CrossfirePlayerListener listener : playerListeners.getListeners(CrossfirePlayerListener.class))
+            for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
             {
                 listener.playerAdded(this.player);
                 listener.playerReceived(this.player);
@@ -492,25 +492,25 @@ public class ItemsManager
     }
 
     /**
-     * Add a {@link CrossfirePlayerListener} to be notified about changes of
+     * Add a {@link PlayerListener} to be notified about changes of
      * the current player.
      *
      * @param listener the listener to add
      */
-    public void addCrossfirePlayerListener(final CrossfirePlayerListener listener)
+    public void addCrossfirePlayerListener(final PlayerListener listener)
     {
-        playerListeners.add(CrossfirePlayerListener.class, listener);
+        playerListeners.add(PlayerListener.class, listener);
     }
 
     /**
-     * Remove a {@link CrossfirePlayerListener} to be notified about changes of
+     * Remove a {@link PlayerListener} to be notified about changes of
      * the current player.
      *
      * @param listener the listener to remove
      */
-    public void removeCrossfirePlayerListener(final CrossfirePlayerListener listener)
+    public void removeCrossfirePlayerListener(final PlayerListener listener)
     {
-        playerListeners.remove(CrossfirePlayerListener.class, listener);
+        playerListeners.remove(PlayerListener.class, listener);
     }
 
     /**

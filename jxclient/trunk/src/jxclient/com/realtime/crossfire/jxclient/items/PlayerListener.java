@@ -26,7 +26,7 @@ import java.util.EventListener;
  *
  * @author Andreas Kirschbaum
  */
-public interface CrossfirePlayerListener extends EventListener
+public interface PlayerListener extends EventListener
 {
     /**
      * A "player" command has been received.
