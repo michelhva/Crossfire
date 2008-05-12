@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapEvent;
 import com.realtime.crossfire.jxclient.mapupdater.CrossfireCommandMapscrollEvent;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
@@ -38,6 +37,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.util.Set;
 import javax.swing.ImageIcon;
 
 /**
@@ -210,15 +210,14 @@ public class GUIMagicMap extends GUIElement
     private final MapListener mapListener = new MapListener()
     {
         /** {@inheritDoc} */
-        public void commandMapReceived(final CrossfireCommandMapEvent evt)
+        public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
         {
             synchronized (bufferedImage)
             {
-                final CfMap map = evt.getMap();
                 final int x0 = map.getOffsetX();
                 final int y0 = map.getOffsetY();
                 final Graphics2D g = bufferedImage.createGraphics();
-                for (final CfMapSquare mapSquare : evt.getChangedSquares())
+                for (final CfMapSquare mapSquare : changedSquares)
                 {
                     final int x = mapSquare.getX()+x0;
                     final int y = mapSquare.getY()+y0;

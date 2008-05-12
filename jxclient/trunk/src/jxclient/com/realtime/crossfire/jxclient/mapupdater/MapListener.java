@@ -19,6 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.mapupdater;
 
+import com.realtime.crossfire.jxclient.map.CfMap;
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
+import java.util.Set;
+
 /**
  *
  * @version 1.0
@@ -27,5 +31,10 @@ package com.realtime.crossfire.jxclient.mapupdater;
  */
 public interface MapListener
 {
-    void commandMapReceived(CrossfireCommandMapEvent evt);
+    /**
+     * The map has changed.
+     * @param map the changed map
+     * @param changedSquares the changed map squares
+     */
+    void mapChanged(CfMap map, Set<CfMapSquare> changedSquares);
 }
