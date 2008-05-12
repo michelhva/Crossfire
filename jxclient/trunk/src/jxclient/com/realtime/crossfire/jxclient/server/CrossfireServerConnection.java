@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.server;
 import com.realtime.crossfire.jxclient.ExperienceTable;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
-import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -62,11 +61,6 @@ public class CrossfireServerConnection extends ServerConnection
      * The {@link Stats} instance to update.
      */
     private final Stats stats;
-
-    /**
-     * The {@link FaceCache} instance to update.
-     */
-    private final FaceCache faceCache;
 
     /**
      * The map width in tiles that is negotiated with the server.
@@ -237,13 +231,10 @@ public class CrossfireServerConnection extends ServerConnection
      * commands to this appender.
      *
      * @param stats the instance to update
-     *
-     * @param faceCache the instance to update
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final Stats stats, final FaceCache faceCache)
+    public CrossfireServerConnection(final Object redrawSemaphore, final ExperienceTable experienceTable, final Animations animations, final Appendable debugProtocol, final Stats stats)
     {
         this.stats = stats;
-        this.faceCache = faceCache;
         this.redrawSemaphore = redrawSemaphore;
         this.experienceTable = experienceTable;
         this.animations = animations;
