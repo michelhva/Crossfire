@@ -882,16 +882,16 @@ public class CrossfireServerConnection extends ServerConnection
                         if (packet[pos++] != ' ') break;
                         {
                             final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final int faceSet = packet[pos++]&0xFF;
+                            final int faceSetNum = packet[pos++]&0xFF;
                             final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (pos+len != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSet+" len="+len+"\n");
+                                debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len+"\n");
                             }
                             for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                             {
-                                listener.updateFace(faceNum, faceSet, packet, pos, len);
+                                listener.updateFace(faceNum, faceSetNum, packet, pos, len);
                             }
                         }
                         return;
