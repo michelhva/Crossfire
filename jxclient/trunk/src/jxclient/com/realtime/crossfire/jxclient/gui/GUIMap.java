@@ -206,9 +206,7 @@ public class GUIMap extends GUIElement
         {
             synchronized (bufferedImage)
             {
-                final int mdx = -dx;
-                final int mdy = -dy;
-                if (Math.abs(mdx) >= mapWidth || Math.abs(mdy) >= mapHeight)
+                if (Math.abs(dx) >= mapWidth || Math.abs(dy) >= mapHeight)
                 {
                     setChanged();
                     return;
@@ -216,33 +214,33 @@ public class GUIMap extends GUIElement
 
                 final int x;
                 final int w;
-                if (mdx < 0)
+                if (dx > 0)
                 {
                     x = 0;
-                    w = mapWidth+mdx;
+                    w = mapWidth-dx;
                 }
                 else
                 {
-                    x = mdx;
-                    w = mapWidth-mdx;
+                    x = -dx;
+                    w = mapWidth+dx;
                 }
                 final int y;
                 final int h;
-                if (mdy < 0)
+                if (dy > 0)
                 {
                     y = 0;
-                    h = mapHeight+mdy;
+                    h = mapHeight-dy;
                 }
                 else
                 {
-                    y = mdy;
-                    h = mapHeight-mdy;
+                    y = -dy;
+                    h = mapHeight+dy;
                 }
 
                 final Graphics2D g = bufferedImage.createGraphics();
                 try
                 {
-                    g.copyArea(offsetX+(x-mdx)*tileSize, offsetY+(y-mdy)*tileSize, w*tileSize, h*tileSize, mdx*tileSize, mdy*tileSize);
+                    g.copyArea(offsetX+(x+dx)*tileSize, offsetY+(y+dy)*tileSize, w*tileSize, h*tileSize, -dx*tileSize, -dy*tileSize);
 
                     for (int yy = displayMinY; yy < Math.min(y, displayMaxY); yy++)
                     {
