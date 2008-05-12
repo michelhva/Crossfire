@@ -248,16 +248,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final OptionManager optionManager;
 
     /**
-     * The poison watcher to synthesize "poisoned" events.
-     */
-    private final PoisonWatcher poisonWatcher;
-
-    /**
-     * The active skill watcher to synthesize "active skill" events.
-     */
-    private final ActiveSkillWatcher activeSkillWatcher;
-
-    /**
      * The commands instance for this window.
      */
     private final Commands commands;
@@ -452,8 +442,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         shortcuts = new Shortcuts(this, spellsManager);
         mapUpdater.reset();
         commandQueue = new CommandQueue(server);
-        poisonWatcher = new PoisonWatcher(stats, server);
-        activeSkillWatcher = new ActiveSkillWatcher(stats, server);
+        new PoisonWatcher(stats, server);
+        new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         optionManager = new OptionManager(settings);
         commands = new Commands(this, server, stats, optionManager);
