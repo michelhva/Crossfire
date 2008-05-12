@@ -17,10 +17,8 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.server.CrossfireComcListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.LinkedList;
 import java.util.List;
 
