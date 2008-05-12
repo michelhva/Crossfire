@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
+import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.DisplayMode;

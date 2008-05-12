@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.ExperienceTable;
-import com.realtime.crossfire.jxclient.Resolution;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -60,6 +59,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
