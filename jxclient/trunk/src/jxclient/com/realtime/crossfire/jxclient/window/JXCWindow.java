@@ -233,7 +233,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
-    private final Object semaphoreRedraw = "semaphore_redraw";
+    private final Object semaphoreRedraw = new Object();
 
     private final JXCWindowRenderer jxcWindowRenderer = new JXCWindowRenderer(this, semaphoreRedraw);
 
