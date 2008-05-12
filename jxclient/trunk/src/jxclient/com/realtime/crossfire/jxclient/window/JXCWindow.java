@@ -1528,7 +1528,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, metaserver, commandQueue, resolution, optionManager);
+        skin.load(server, this, metaserver, commandQueue, resolution, optionManager, experienceTable);
         return skin;
     }
 
@@ -1623,16 +1623,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public boolean isDebugGui()
     {
         return debugGui;
-    }
-
-    /**
-     * Return the global experience table.
-     *
-     * @return The experience table.
-     */
-    public ExperienceTable getExperienceTable()
-    {
-        return experienceTable;
     }
 
     /**

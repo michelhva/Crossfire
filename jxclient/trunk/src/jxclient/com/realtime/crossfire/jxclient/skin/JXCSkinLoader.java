@@ -299,7 +299,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -366,14 +366,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, null, optionManager);
+            load("global", selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, null, optionManager, experienceTable);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, gui, optionManager);
+                load(name, selectedResolution, crossfireServerConnection, window, metaserver, commandQueue, gui, optionManager, experienceTable);
                 gui.setStateChanged(false);
             }
         }
@@ -530,9 +530,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param optionManager the option manager instance to use
      *
+     * @param experienceTable the experience table to use
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -551,7 +553,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, metaserver, commandQueue, gui, optionManager);
+                load(dialogName, resourceName, inputStream, server, window, metaserver, commandQueue, gui, optionManager, experienceTable);
             }
             finally
             {
@@ -614,9 +616,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param optionManager the option manager instance to use
      *
+     * @param experienceTable the experience table to use
+     *
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -912,7 +916,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositiveDiv = getPicture(args[6]);
                             final BufferedImage picturePositiveMod = getPicture(args[7]);
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = parseOrientation(args[10]);
                             final Orientation orientationMod = parseOrientation(args[11]);
                             final String tooltipPrefix = parseText(args, 12, lnr);
@@ -935,7 +939,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositiveDiv = getPicture(args[6]);
                             final BufferedImage picturePositiveMod = getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = parseOrientation(args[10]);
                             final Orientation orientationMod = parseOrientation(args[11]);
                             final Color color = parseColor(args[12]);
@@ -1112,7 +1116,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositive = args[6].equals("null") ? null : getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = parseOrientation(args[10]);
                             final String tooltipPrefix = parseText(args, 11, lnr);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
@@ -1294,7 +1298,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
                             final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
-                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
+                            final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats, experienceTable);
                             elements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_spell"))
@@ -1645,7 +1649,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picturePositive = getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], window.getExperienceTable());
+                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = parseOrientation(args[10]);
                             final Color color = parseColor(args[11]);
                             final Font font = fonts.lookup(args[12]);
