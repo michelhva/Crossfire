@@ -103,22 +103,22 @@ public class GaugeState
      */
     public void setValues(final Orientation orientation)
     {
-        final int filledX = orientation.getX();
-        final int filledY = orientation.getY();
-        final int filledW = orientation.getW();
-        final int filledH = orientation.getH();
-        final BufferedImage filledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
+        final int newFilledX = orientation.getX();
+        final int newFilledY = orientation.getY();
+        final int newFilledW = orientation.getW();
+        final int newFilledH = orientation.getH();
+        final BufferedImage newFilledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
 
-        if (this.filledX == filledX && this.filledY == filledY && this.filledW == filledW && this.filledH == filledH && this.filledPicture == filledPicture)
+        if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture)
         {
             return;
         }
 
-        this.filledX = filledX;
-        this.filledY = filledY;
-        this.filledW = filledW;
-        this.filledH = filledH;
-        this.filledPicture = filledPicture;
+        filledX = newFilledX;
+        filledY = newFilledY;
+        filledW = newFilledW;
+        filledH = newFilledH;
+        filledPicture = newFilledPicture;
         owner.setChanged();
     }
 
