@@ -41,7 +41,7 @@ public class ScreenshotCommand extends AbstractCommand
     /**
      * The window to execute in.
      */
-    private JXCWindow window;
+    private final JXCWindow window;
 
     /**
      * Creates a new instance.

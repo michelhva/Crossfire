@@ -32,7 +32,7 @@ public class UnbindCommand extends AbstractCommand
     /**
      * The window to execute in.
      */
-    private JXCWindow window;
+    private final JXCWindow window;
 
     /**
      * Create a new instance.

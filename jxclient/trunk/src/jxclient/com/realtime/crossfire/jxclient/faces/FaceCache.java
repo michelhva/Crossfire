@@ -38,7 +38,7 @@ public class FaceCache
     /**
      * The listener to receive face commands.
      */
-    private CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
+    private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
     {
         /** {@inheritDoc} */
         public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, final String faceName)
