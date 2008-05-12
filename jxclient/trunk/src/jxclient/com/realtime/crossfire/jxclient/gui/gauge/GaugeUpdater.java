@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.ExperienceTable;
+import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 
 /**
  * Updates the displayed values in a {@link GUIGauge}.
