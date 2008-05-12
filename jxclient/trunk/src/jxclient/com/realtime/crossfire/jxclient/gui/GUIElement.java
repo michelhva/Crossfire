@@ -439,7 +439,7 @@ public abstract class GUIElement
     /**
      * Re-create the contents of {@link #bufferedImage}.
      */
-    protected final void render()
+    protected void render()
     {
         synchronized (bufferedImage)
         {
