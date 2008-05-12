@@ -562,16 +562,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    /**
-     * Return the shortcuts of this window.
-     *
-     * @return The shortcuts.
-     */
-    public Shortcuts getShortcuts()
-    {
-        return shortcuts;
-    }
-
     public boolean getKeyShift(final int keyid)
     {
         return keyShift[keyid];
@@ -1532,7 +1522,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             // fallback: built-in resource
             skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable);
+        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts);
         return skin;
     }
 
