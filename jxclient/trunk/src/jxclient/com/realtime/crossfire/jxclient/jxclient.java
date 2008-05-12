@@ -177,17 +177,17 @@ public class jxclient
                     final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
                     try
                     {
-                        final JXCWindow jxwin = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager);
+                        final JXCWindow window = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager);
                         try
                         {
-                            jxwin.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                            window.getOptionManager().addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                         }
                         catch (final OptionException ex)
                         {
                             throw new AssertionError();
                         }
 
-                        jxwin.init(resolution, skin, fullScreen, server);
+                        window.init(resolution, skin, fullScreen, server);
                     }
                     finally
                     {
