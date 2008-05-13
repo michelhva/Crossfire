@@ -91,7 +91,7 @@ public abstract class GUIItemItem extends GUIItem
     {
         super.render(g);
 
-        final CfItem tmpItem = getItem();
+        final CfItem tmpItem = item;
         if (tmpItem == null)
         {
             return;
@@ -125,7 +125,7 @@ public abstract class GUIItemItem extends GUIItem
     /* {@inheritDoc} */
     @Override public void button2Clicked(final JXCWindow window)
     {
-        final CfItem tmpItem = getItem();
+        final CfItem tmpItem = item;
         if (tmpItem == null)
         {
             return;
