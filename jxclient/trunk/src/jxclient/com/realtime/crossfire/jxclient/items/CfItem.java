@@ -61,6 +61,7 @@ public class CfItem
 
     public static final int F_APPLIED      = 0x000F;
     public static final int F_LOCATION     = 0x00F0;
+    public static final int F_BLESSED      = 0x0100;
     public static final int F_UNPAID       = 0x0200;
     public static final int F_MAGIC        = 0x0400;
     public static final int F_CURSED       = 0x0800;
@@ -205,6 +206,11 @@ public class CfItem
     public boolean isLocation()
     {
         return (flags&F_LOCATION) != 0;
+    }
+
+    public boolean isBlessed()
+    {
+        return (flags&F_UNPAID) != 0;
     }
 
     public boolean isUnpaid()
