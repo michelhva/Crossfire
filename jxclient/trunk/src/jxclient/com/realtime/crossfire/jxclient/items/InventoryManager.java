@@ -38,7 +38,7 @@ public class InventoryManager extends AbstractManager
      *
      * @return The insertion index.
      */
-    public int getInsertionIndex(final List<CfItem> list, final CfItem item)
+    public static int getInsertionIndex(final List<CfItem> list, final CfItem item)
     {
         for (int i = 0; i < list.size(); i++)
         {

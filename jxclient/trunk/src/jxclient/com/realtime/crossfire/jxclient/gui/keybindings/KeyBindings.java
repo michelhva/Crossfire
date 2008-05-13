@@ -478,7 +478,7 @@ public class KeyBindings
      * @param keyBinding the key binding to execute; may be <code>null</code>
      * @return whether <code>keyBinding</code> is not <code>null</code>
      */
-    private boolean executeKeyBinding(final KeyBinding keyBinding)
+    private static boolean executeKeyBinding(final KeyBinding keyBinding)
     {
         if (keyBinding == null)
         {
