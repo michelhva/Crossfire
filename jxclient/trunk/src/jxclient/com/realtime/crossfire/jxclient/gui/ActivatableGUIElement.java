@@ -70,7 +70,7 @@ public abstract class ActivatableGUIElement extends GUIElement
     /**
      * Will be called whenever the active state has changed.
      */
-    void activeChanged()
+    protected void activeChanged()
     {
     }
 
