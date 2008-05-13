@@ -210,7 +210,7 @@ public class CfItem
 
     public boolean isBlessed()
     {
-        return (flags&F_UNPAID) != 0;
+        return (flags&F_BLESSED) != 0;
     }
 
     public boolean isUnpaid()
