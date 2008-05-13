@@ -165,27 +165,27 @@ public abstract class JXCSkinLoader implements JXCSkin
     /**
      * All defined gui elements.
      */
-    private final JXCSkinCache<GUIElement> elements = new JXCSkinCache<GUIElement>("gui element");
+    private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
 
     /**
      * All defined command lists.
      */
-    private final JXCSkinCache<GUICommandList> commandLists = new JXCSkinCache<GUICommandList>("command list");
+    private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
 
     /**
      * All defined dialogs.
      */
-    private final JXCSkinCache<Gui> dialogs = new JXCSkinCache<Gui>("dialog");
+    private final JXCSkinCache<Gui> definedDialogs = new JXCSkinCache<Gui>("dialog");
 
     /**
      * All defined fonts.
      */
-    private final JXCSkinCache<Font> fonts = new JXCSkinCache<Font>("font");
+    private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<Font>("font");
 
     /**
      * All defined images.
      */
-    private final JXCSkinCache<BufferedImage> images = new JXCSkinCache<BufferedImage>("image");
+    private final JXCSkinCache<BufferedImage> definedImages = new JXCSkinCache<BufferedImage>("image");
 
     /**
      * The skin name.
@@ -352,8 +352,8 @@ public abstract class JXCSkinLoader implements JXCSkin
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
-        dialogs.clear();
-        images.clear();
+        definedDialogs.clear();
+        definedImages.clear();
         addDialog("keybind", window, mouseTracker, commands);
         addDialog("query", window, mouseTracker, commands);
         addDialog("book", window, mouseTracker, commands);
@@ -362,8 +362,8 @@ public abstract class JXCSkinLoader implements JXCSkin
         addDialog("quit", window, mouseTracker, commands);
         addDialog("disconnect", window, mouseTracker, commands);
         addDialog("start", window, mouseTracker, commands);
-        commandLists.clear();
-        fonts.clear();
+        definedCommandLists.clear();
+        definedFonts.clear();
         textButtonFactory = null;
         dialogFactory = null;
         checkBoxFactory = null;
@@ -375,18 +375,18 @@ public abstract class JXCSkinLoader implements JXCSkin
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
-                final Gui gui = dialogs.lookup(name);
+                final Gui gui = definedDialogs.lookup(name);
                 load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands);
                 gui.setStateChanged(false);
             }
         }
         finally
         {
-            fonts.clear();
+            definedFonts.clear();
             textButtonFactory = null;
             dialogFactory = null;
             checkBoxFactory = null;
-            images.clear();
+            definedImages.clear();
         }
 
         if (mapWidth == 0 || mapHeight == 0)
@@ -423,14 +423,14 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return dialogs.lookup(name);
+            return definedDialogs.lookup(name);
         }
         catch (final JXCSkinException ex)
         {
             final Gui gui = new Gui(window, mouseTracker, commands);
             try
             {
-                dialogs.insert(name, gui);
+                definedDialogs.insert(name, gui);
             }
             catch (final JXCSkinException ex2)
             {
@@ -506,7 +506,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return dialogs.lookup(name);
+            return definedDialogs.lookup(name);
         }
         catch (final JXCSkinException ex)
         {
@@ -547,7 +547,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
-        elements.clear();
+        definedGUIElements.clear();
         try
         {
             InputStream inputStream;
@@ -579,7 +579,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         finally
         {
-            elements.clear();
+            definedGUIElements.clear();
         }
     }
 
@@ -676,7 +676,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
                             else
                             {
-                                addedElements.add(elements.lookup(args[1]));
+                                addedElements.add(definedGUIElements.lookup(args[1]));
                             }
                         }
                         else if (gui != null && args[0].equals("button"))
@@ -711,13 +711,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                             else
                             {
                                 assert args.length >= 14;
-                                font = fonts.lookup(args[10]);
+                                font = definedFonts.lookup(args[10]);
                                 color = parseColor(args[11]);
                                 textX = parseInt(args[12]);
                                 textY = parseInt(args[13]);
                                 label = parseText(args, 14, lnr);
                             }
-                            elements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, autoRepeat, commandList));
+                            definedGUIElements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, autoRepeat, commandList));
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
@@ -738,7 +738,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final CheckBoxOption option = parseCheckBoxOption(args[6], optionManager);
                             final String text = parseText(args, 7, lnr);
-                            elements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
+                            definedGUIElements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
                         }
                         else if (args[0].equals("commandlist"))
                         {
@@ -750,10 +750,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String commandListName = args[1];
                             final GUICommandList.Type commandListType = parseEnum(GUICommandList.Type.class, args[2], "type");
                             final GUICommandList commandList = new GUICommandList(commandListType);
-                            commandLists.insert(commandListName, commandList);
+                            definedCommandLists.insert(commandListName, commandList);
                             if (args.length >= 5)
                             {
-                                final GUIElement element = args[3].equals("null") ? null : elements.lookup(args[3]);
+                                final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
                                 final GUICommand command = parseCommandArgs(args, 5, element, args[4], window, mouseTracker, commands, lnr);
                                 commandList.add(command);
                             }
@@ -766,7 +766,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final GUICommandList commandList = getCommandList(args[1]);
-                            final GUIElement element = args[2].equals("null") ? null : elements.lookup(args[2]);
+                            final GUIElement element = args[2].equals("null") ? null : definedGUIElements.lookup(args[2]);
                             final GUICommand command = parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr);
                             commandList.add(command);
                         }
@@ -784,11 +784,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
-                            final Font font = fonts.lookup(args[8]);
+                            final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
-                            elements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands));
+                            definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands));
                         }
                         else if (args[0].equals("def"))
                         {
@@ -806,7 +806,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                                 final BufferedImage checked = getPicture(args[2]);
                                 final BufferedImage unchecked = getPicture(args[3]);
-                                final Font font = fonts.lookup(args[4]);
+                                final Font font = definedFonts.lookup(args[4]);
                                 final Color color = parseColor(args[5]);
                                 checkBoxFactory = new CheckBoxFactory(checked, unchecked, font, color);
                             }
@@ -847,7 +847,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage frameSW = getPicture(frame+"_sw");
                                 final BufferedImage frameS = getPicture(frame+"_s");
                                 final BufferedImage frameSE = getPicture(frame+"_se");
-                                final Font titleFont = fonts.lookup(args[3]);
+                                final Font titleFont = definedFonts.lookup(args[3]);
                                 final Color titleColor = parseColor(args[4]);
                                 final Color titleBackgroundColor = parseColor(args[5]);
                                 final float alpha = parseFloat(args[6]);
@@ -863,7 +863,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                                 final String up = args[2];
                                 final String down = args[3];
-                                final Font font = fonts.lookup(args[4]);
+                                final Font font = definedFonts.lookup(args[4]);
                                 final Color color = parseColor(args[5]);
                                 final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(getPicture(up+"_w"), getPicture(up+"_c"), getPicture(up+"_e"));
                                 final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(getPicture(down+"_w"), getPicture(down+"_c"), getPicture(down+"_e"));
@@ -895,7 +895,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String title = parseText(args, 7, lnr);
                             for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
                             {
-                                elements.insert(element.getName(), element);
+                                definedGUIElements.insert(element.getName(), element);
                             }
                             if (saveDialog)
                             {
@@ -936,7 +936,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Orientation orientationMod = parseOrientation(args[11]);
                             final String tooltipPrefix = parseText(args, 12, lnr);
                             final GUIDupGauge element = new GUIDupGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
                         else if (gui != null && args[0].equals("duptextgauge"))
@@ -958,10 +958,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Orientation orientationDiv = parseOrientation(args[10]);
                             final Orientation orientationMod = parseOrientation(args[11]);
                             final Color color = parseColor(args[12]);
-                            final Font font = fonts.lookup(args[13]);
+                            final Font font = definedFonts.lookup(args[13]);
                             final String tooltipPrefix = parseText(args, 14, lnr);
                             final GUIDupTextGauge element = new GUIDupTextGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
                         else if (args[0].equals("event"))
@@ -1114,7 +1114,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String name = args[1];
                             final Font fontNormal = getFont(args[2]);
                             final Font font = fontNormal.deriveFont(parseFloat(args[3]));
-                            fonts.insert(name, font);
+                            definedFonts.insert(name, font);
                         }
                         else if (gui != null && args[0].equals("gauge"))
                         {
@@ -1135,7 +1135,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Orientation orientation = parseOrientation(args[10]);
                             final String tooltipPrefix = parseText(args, 11, lnr);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
                         else if (gui != null && args[0].equals("ignore"))
@@ -1146,7 +1146,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            elements.lookup(name).setIgnore();
+                            definedGUIElements.lookup(name).setIgnore();
                         }
                         else if (gui != null && args[0].equals("item"))
                         {
@@ -1166,7 +1166,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage pictureSelector = getPicture(args[9]);
                             final BufferedImage pictureLocked = getPicture(args[10]);
                             final int index = parseInt(args[11]);
-                            final Font font = fonts.lookup(args[12]);
+                            final Font font = definedFonts.lookup(args[12]);
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
@@ -1210,7 +1210,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 throw new IOException("undefined item type: "+type);
                             }
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (args[0].equals("key"))
                         {
@@ -1241,10 +1241,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
+                            definedGUIElements.insert(name, new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
                         }
                         else if (gui != null && args[0].equals("label_multi"))
                         {
@@ -1258,10 +1258,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+                            definedGUIElements.insert(name, new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_query"))
                         {
@@ -1275,10 +1275,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_text"))
                         {
@@ -1292,10 +1292,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+                            definedGUIElements.insert(name, new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
                         }
                         else if (gui != null && args[0].equals("label_stat"))
                         {
@@ -1309,12 +1309,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
                             final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
                             final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats, experienceTable);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("label_spell"))
                         {
@@ -1328,10 +1328,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final Font font = fonts.lookup(args[6]);
+                            final Font font = definedFonts.lookup(args[6]);
                             final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_label"))
                         {
@@ -1346,14 +1346,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
-                            final Font fontPrint = fonts.lookup(args[7]);
-                            final Font fontFixed = fonts.lookup(args[8]);
-                            final Font fontFixedBold = fonts.lookup(args[9]);
-                            final Font fontArcane = fonts.lookup(args[10]);
+                            final Font fontPrint = definedFonts.lookup(args[7]);
+                            final Font fontFixed = definedFonts.lookup(args[8]);
+                            final Font fontFixedBold = definedFonts.lookup(args[9]);
+                            final Font fontArcane = definedFonts.lookup(args[10]);
                             final Color defaultColor = parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
                             final GUILabelLog element = new GUILabelLog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_message"))
                         {
@@ -1368,14 +1368,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
-                            final Font fontPrint = fonts.lookup(args[7]);
-                            final Font fontFixed = fonts.lookup(args[8]);
-                            final Font fontFixedBold = fonts.lookup(args[9]);
-                            final Font fontArcane = fonts.lookup(args[10]);
+                            final Font fontPrint = definedFonts.lookup(args[7]);
+                            final Font fontFixed = definedFonts.lookup(args[8]);
+                            final Font fontFixedBold = definedFonts.lookup(args[9]);
+                            final Font fontArcane = definedFonts.lookup(args[10]);
                             final Color defaultColor = parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
                             final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, server, pictureEmpty, fonts, defaultColor);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_color"))
                         {
@@ -1387,7 +1387,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String name = args[1];
                             final int index = parseInt(args[2]);
                             final Color color = parseColor(args[3]);
-                            final GUIElement element = elements.lookup(name);
+                            final GUIElement element = definedGUIElements.lookup(name);
                             if (!(element instanceof GUIMessageLog))
                             {
                                  throw new IOException("element '"+name+"' is not of type 'log'");
@@ -1436,7 +1436,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             {
                                 types = ~types;
                             }
-                            final GUIElement element = elements.lookup(name);
+                            final GUIElement element = definedGUIElements.lookup(name);
                             if (!(element instanceof GUIMessageLog))
                             {
                                 throw new IOException("element '"+name+"' is not of type 'log'");
@@ -1456,7 +1456,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater, facesManager);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("map"))
                         {
@@ -1482,7 +1482,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             mapHeight = tmpH;
 
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("meta_element"))
                         {
@@ -1497,13 +1497,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureTcp = args[6].equals("null") ? null : getPicture(args[6]);
-                            final Font font = fonts.lookup(args[7]);
+                            final Font font = definedFonts.lookup(args[7]);
                             final GUIText text = lookupTextElement(args[8]);
                             final AbstractLabel label = lookupLabelElement(args[9]);
                             final int id = parseInt(args[10]);
                             final String format = args[11];
                             final String tooltip = args[12];
-                            elements.insert(name, new GUIMetaElement(window, metaserver, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
+                            definedGUIElements.insert(name, new GUIMetaElement(window, metaserver, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
@@ -1520,7 +1520,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage picture = getPicture(args[6]);
                             final float alpha = parseFloat(args[7]);
                             if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
-                            elements.insert(name, new GUIPicture(window, name, x, y, w, h, picture, alpha));
+                            definedGUIElements.insert(name, new GUIPicture(window, name, x, y, w, h, picture, alpha));
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
@@ -1536,11 +1536,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
-                            final Font font = fonts.lookup(args[8]);
+                            final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
-                            elements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
+                            definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
                         }
                         else if (gui != null && args[0].equals("set_default"))
                         {
@@ -1549,7 +1549,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            elements.lookup(args[1]).setDefault(true);
+                            definedGUIElements.lookup(args[1]).setDefault(true);
                         }
                         else if (gui != null && args[0].equals("set_invisible"))
                         {
@@ -1558,7 +1558,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            elements.lookup(args[1]).setVisible(false);
+                            definedGUIElements.lookup(args[1]).setVisible(false);
                         }
                         else if (gui != null && args[0].equals("set_modal"))
                         {
@@ -1582,14 +1582,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final boolean proportionalSlider = parseBoolean(args[6]);
-                            final GUIElement element = elements.lookup(args[7]);
+                            final GUIElement element = definedGUIElements.lookup(args[7]);
                             final Color colorBackground = parseColor(args[8]);
                             final Color colorForeground = parseColor(args[9]);
                             if (!(element instanceof GUIScrollable2))
                             {
                                 throw new IOException("'"+element+"' is not a scrollable element");
                             }
-                            elements.insert(name, new GUIScrollBar(window, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
+                            definedGUIElements.insert(name, new GUIScrollBar(window, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
                         }
                         else if (gui == null && args[0].equals("skin_name"))
                         {
@@ -1620,12 +1620,12 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
-                            final Font font = fonts.lookup(args[8]);
+                            final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
                             final GUICommandList commandList = getCommandList(args[12]);
-                            elements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList));
+                            definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
@@ -1647,7 +1647,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final boolean autoRepeat = parseBoolean(args[6]);
                             final GUICommandList commandList = getCommandList(args[7]);
                             final String text = parseText(args, 8, lnr);
-                            elements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
+                            definedGUIElements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
                         }
                         else if (gui != null && args[0].equals("textgauge"))
                         {
@@ -1667,10 +1667,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = parseOrientation(args[10]);
                             final Color color = parseColor(args[11]);
-                            final Font font = fonts.lookup(args[12]);
+                            final Font font = definedFonts.lookup(args[12]);
                             final String tooltipPrefix = parseText(args, 13, lnr);
                             final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
-                            elements.insert(name, element);
+                            definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
                         else if (args[0].equals("tooltip"))
@@ -1680,7 +1680,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final Font font = fonts.lookup(args[1]);
+                            final Font font = definedFonts.lookup(args[1]);
                             final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
                             tooltipLabel.setAutoResize(true);
                             window.getWindowRenderer().setTooltip(tooltipLabel);
@@ -1727,10 +1727,10 @@ public abstract class JXCSkinLoader implements JXCSkin
             throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
         }
 
-        assert gui != null || !elements.iterator().hasNext();
+        assert gui != null || !definedGUIElements.iterator().hasNext();
 
         final Map<GUIElement, GUIElement> wildcardElements = new LinkedHashMap<GUIElement, GUIElement>();
-        for (final GUIElement element : elements)
+        for (final GUIElement element : definedGUIElements)
         {
             wildcardElements.put(element, element);
         }
@@ -2335,7 +2335,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            final GUIElement nextElement = elements.lookup(args[argc]);
+            final GUIElement nextElement = definedGUIElements.lookup(args[argc]);
             if (!(nextElement instanceof ActivatableGUIElement))
             {
                 throw new IOException("'"+args[argc]+"' cannot become active");
@@ -2407,7 +2407,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return images.lookup(name);
+            return definedImages.lookup(name);
         }
         catch (final JXCSkinException ex)
         {
@@ -2431,7 +2431,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         try
         {
-            images.insert(name, picture);
+            definedImages.insert(name, picture);
         }
         catch (final JXCSkinException ex)
         {
@@ -2451,7 +2451,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private GUIText lookupTextElement(final String name) throws JXCSkinException
     {
-        final GUIElement element = elements.lookup(name);
+        final GUIElement element = definedGUIElements.lookup(name);
         if (!(element instanceof GUIText))
         {
             throw new JXCSkinException("element "+name+" is not a text field");
@@ -2471,7 +2471,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
     {
-        final GUIElement element = elements.lookup(name);
+        final GUIElement element = definedGUIElements.lookup(name);
         if (!(element instanceof AbstractLabel))
         {
             throw new JXCSkinException("element "+name+" is not a label");
@@ -2483,7 +2483,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public Iterator<Gui> iterator()
     {
-        return dialogs.iterator();
+        return definedDialogs.iterator();
     }
 
     /** {@inheritDoc} */
@@ -2498,7 +2498,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public GUICommandList getCommandList(final String name) throws JXCSkinException
     {
-        return commandLists.lookup(name);
+        return definedCommandLists.lookup(name);
     }
 
     /**
@@ -2557,7 +2557,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     /** {@inheritDoc} */
     public boolean hasChangedDialog()
     {
-        for (final Gui dialog : dialogs)
+        for (final Gui dialog : definedDialogs)
         {
             if (dialog.isChangedFromDefault())
             {
