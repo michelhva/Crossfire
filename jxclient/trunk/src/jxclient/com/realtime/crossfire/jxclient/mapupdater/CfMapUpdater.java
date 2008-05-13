@@ -174,7 +174,7 @@ public class CfMapUpdater
             final Animation animation = animations.get(animationNum);
             if (animation == null)
             {
-                System.err.println("unknown animation id "+animation+", ignoring");
+                System.err.println("unknown animation id "+animationNum+", ignoring");
                 return;
             }
             processMapAnimation(x, y, layer, animation, animationType);
