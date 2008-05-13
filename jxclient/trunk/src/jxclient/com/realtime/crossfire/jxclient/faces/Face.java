@@ -154,13 +154,13 @@ public class Face
     }
 
     /** {@inheritDoc} */
-    public int hashCode()
+    @Override public int hashCode()
     {
         return faceChecksum;
     }
 
     /** {@inheritDoc} */
-    public boolean equals(final Object obj)
+    @Override public boolean equals(final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Face.class) return false;

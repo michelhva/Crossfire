@@ -280,7 +280,7 @@ public class CfMapSquare
     }
 
     /** {@inheritDoc} */
-    public String toString()
+    @Override public String toString()
     {
         return x+"/"+y;
     }
