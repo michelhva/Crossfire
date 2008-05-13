@@ -72,7 +72,7 @@ public class OrientationTest extends TestCase
         checkNegative(class_, useX, flip);
     }
 
-    private void checkPositive(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void checkPositive(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(false);
@@ -104,7 +104,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 0, 32, false);
     }
 
-    private void checkNegative(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void checkNegative(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(true);

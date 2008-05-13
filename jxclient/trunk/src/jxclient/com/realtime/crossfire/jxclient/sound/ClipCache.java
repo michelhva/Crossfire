@@ -42,7 +42,7 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    public Clip allocateClip(final String name, final String action)
+    public static Clip allocateClip(final String name, final String action)
     {
         return newClip(name, action);
     }

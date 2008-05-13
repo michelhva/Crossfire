@@ -1944,7 +1944,7 @@ public class CrossfireServerConnection extends ServerConnection
      * @param endPos the end position into <code>packet</code>
      * @throws IOException if the packet cannot be parsed
      */
-    private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    private static void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         SkillSet.clearSkills();
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);

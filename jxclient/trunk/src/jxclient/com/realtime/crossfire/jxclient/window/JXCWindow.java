@@ -476,7 +476,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         return isRunActive;
     }
 
-    public boolean checkFire()
+    public static boolean checkFire()
     {
         return false;
     }
