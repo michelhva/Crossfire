@@ -77,18 +77,18 @@ picture right_back_top     0+926   0 98 103 background_right_top 0.9
 
 # LInventory (26, 171)
 picture shortcuts_left_back 0+26 171 45 597 shortcuts_left 0.9
-item shortcut shortcut0 0+5+26   0+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  0 font_default_small
-item shortcut shortcut1 0+5+26  46+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  1 font_default_small
-item shortcut shortcut2 0+5+26  92+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  2 font_default_small
-item shortcut shortcut3 0+5+26 138+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  3 font_default_small
-item shortcut shortcut4 0+5+26 184+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  4 font_default_small
-item shortcut shortcut5 0+5+26 230+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  5 font_default_small
-item shortcut shortcut6 0+5+26 276+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  6 font_default_small
-item shortcut shortcut7 0+5+26 322+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  7 font_default_small
-item shortcut shortcut8 0+5+26 368+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  8 font_default_small
-item shortcut shortcut9 0+5+26 414+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked  9 font_default_small
-item shortcut shortcutA 0+5+26 460+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked 10 font_default_small
-item shortcut shortcutB 0+5+26 506+34+171 32 32 spell_cast spell_invoke inventory_selector marker_locked 11 font_default_small
+item shortcut shortcut0 0+5+26   0+34+171 32 32  0 spell_cast spell_invoke font_default_small
+item shortcut shortcut1 0+5+26  46+34+171 32 32  1 spell_cast spell_invoke font_default_small
+item shortcut shortcut2 0+5+26  92+34+171 32 32  2 spell_cast spell_invoke font_default_small
+item shortcut shortcut3 0+5+26 138+34+171 32 32  3 spell_cast spell_invoke font_default_small
+item shortcut shortcut4 0+5+26 184+34+171 32 32  4 spell_cast spell_invoke font_default_small
+item shortcut shortcut5 0+5+26 230+34+171 32 32  5 spell_cast spell_invoke font_default_small
+item shortcut shortcut6 0+5+26 276+34+171 32 32  6 spell_cast spell_invoke font_default_small
+item shortcut shortcut7 0+5+26 322+34+171 32 32  7 spell_cast spell_invoke font_default_small
+item shortcut shortcut8 0+5+26 368+34+171 32 32  8 spell_cast spell_invoke font_default_small
+item shortcut shortcut9 0+5+26 414+34+171 32 32  9 spell_cast spell_invoke font_default_small
+item shortcut shortcutA 0+5+26 460+34+171 32 32 10 spell_cast spell_invoke font_default_small
+item shortcut shortcutB 0+5+26 506+34+171 32 32 11 spell_cast spell_invoke font_default_small
 commandlist_add command_shortcut0 shortcut0 GUI_EXECUTE_ELEMENT
 commandlist_add command_shortcut1 shortcut1 GUI_EXECUTE_ELEMENT
 commandlist_add command_shortcut2 shortcut2 GUI_EXECUTE_ELEMENT
@@ -125,26 +125,26 @@ item inventory rinvH 0+973+14 595+53+9 32 32 17 marker_cursed marker_applied inv
 item inventory rinvI 0+973+14 630+53+9 32 32 18 marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
 item inventory rinvJ 0+973+14 665+53+9 32 32 19 marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
 
-item spelllist rsp0 0+973+14   0+53+9 32 32  0 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp1 0+973+14  35+53+9 32 32  1 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp2 0+973+14  70+53+9 32 32  2 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp3 0+973+14 105+53+9 32 32  3 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp4 0+973+14 140+53+9 32 32  4 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp5 0+973+14 175+53+9 32 32  5 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp6 0+973+14 210+53+9 32 32  6 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp7 0+973+14 245+53+9 32 32  7 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp8 0+973+14 280+53+9 32 32  8 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rsp9 0+973+14 315+53+9 32 32  9 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspA 0+973+14 350+53+9 32 32 10 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspB 0+973+14 385+53+9 32 32 11 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspC 0+973+14 420+53+9 32 32 12 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspD 0+973+14 455+53+9 32 32 13 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspE 0+973+14 490+53+9 32 32 14 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspF 0+973+14 525+53+9 32 32 15 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspG 0+973+14 560+53+9 32 32 16 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspH 0+973+14 595+53+9 32 32 17 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspI 0+973+14 630+53+9 32 32 18 marker_cursed marker_applied inventory_selector marker_locked font_default_small
-item spelllist rspJ 0+973+14 665+53+9 32 32 19 marker_cursed marker_applied inventory_selector marker_locked font_default_small
+item spelllist rsp0 0+973+14   0+53+9 32 32  0 inventory_selector
+item spelllist rsp1 0+973+14  35+53+9 32 32  1 inventory_selector
+item spelllist rsp2 0+973+14  70+53+9 32 32  2 inventory_selector
+item spelllist rsp3 0+973+14 105+53+9 32 32  3 inventory_selector
+item spelllist rsp4 0+973+14 140+53+9 32 32  4 inventory_selector
+item spelllist rsp5 0+973+14 175+53+9 32 32  5 inventory_selector
+item spelllist rsp6 0+973+14 210+53+9 32 32  6 inventory_selector
+item spelllist rsp7 0+973+14 245+53+9 32 32  7 inventory_selector
+item spelllist rsp8 0+973+14 280+53+9 32 32  8 inventory_selector
+item spelllist rsp9 0+973+14 315+53+9 32 32  9 inventory_selector
+item spelllist rspA 0+973+14 350+53+9 32 32 10 inventory_selector
+item spelllist rspB 0+973+14 385+53+9 32 32 11 inventory_selector
+item spelllist rspC 0+973+14 420+53+9 32 32 12 inventory_selector
+item spelllist rspD 0+973+14 455+53+9 32 32 13 inventory_selector
+item spelllist rspE 0+973+14 490+53+9 32 32 14 inventory_selector
+item spelllist rspF 0+973+14 525+53+9 32 32 15 inventory_selector
+item spelllist rspG 0+973+14 560+53+9 32 32 16 inventory_selector
+item spelllist rspH 0+973+14 595+53+9 32 32 17 inventory_selector
+item spelllist rspI 0+973+14 630+53+9 32 32 18 inventory_selector
+item spelllist rspJ 0+973+14 665+53+9 32 32 19 inventory_selector
 
 commandlist rinv_up AND
 commandlist_add rinv_up rinv0 SCROLL -1
