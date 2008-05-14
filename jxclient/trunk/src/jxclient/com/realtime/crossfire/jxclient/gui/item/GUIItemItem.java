@@ -48,6 +48,8 @@ public abstract class GUIItemItem extends GUIItem
 
     private final BufferedImage cursedImage;
 
+    private final BufferedImage damnedImage;
+
     private final BufferedImage appliedImage;
 
     private final BufferedImage selectorImage;
@@ -91,13 +93,14 @@ public abstract class GUIItemItem extends GUIItem
         }
     };
 
-    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
+    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.cursedImage = cursedImage;
+        this.damnedImage = damnedImage;
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
@@ -125,7 +128,11 @@ public abstract class GUIItemItem extends GUIItem
         {
             g.drawImage(appliedImage, 0, 0, null);
         }
-        if (tmpItem.isCursed() || tmpItem.isDamned())
+        if (tmpItem.isCursed())
+        {
+            g.drawImage(cursedImage, 0, 0, null);
+        }
+        if (tmpItem.isDamned())
         {
             g.drawImage(cursedImage, 0, 0, null);
         }
