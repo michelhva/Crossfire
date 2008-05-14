@@ -1150,7 +1150,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("item"))
                         {
-                            if (args.length < 13)
+                            if (args.length < 8)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1162,11 +1162,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[5]);
                             final int h = parseInt(args[6]);
                             final int index = parseInt(args[7]);
-                            final BufferedImage pictureCursed = getPicture(args[8]);
-                            final BufferedImage pictureApplied = getPicture(args[9]);
-                            final BufferedImage pictureSelector = getPicture(args[10]);
-                            final BufferedImage pictureLocked = getPicture(args[11]);
-                            final Font font = definedFonts.lookup(args[12]);
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
@@ -1175,6 +1170,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
+                                final BufferedImage pictureCursed = getPicture(args[8]);
+                                final BufferedImage pictureApplied = getPicture(args[9]);
+                                final BufferedImage pictureSelector = getPicture(args[10]);
+                                final BufferedImage pictureLocked = getPicture(args[11]);
+                                final Font font = definedFonts.lookup(args[12]);
                                 final Color nrofColor = parseColor(args[13]);
                                 element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, facesManager, font, nrofColor);
                             }
@@ -1185,31 +1185,34 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
+                                final BufferedImage pictureCursed = getPicture(args[8]);
+                                final BufferedImage pictureApplied = getPicture(args[9]);
+                                final BufferedImage pictureSelector = getPicture(args[10]);
+                                final BufferedImage pictureLocked = getPicture(args[11]);
+                                final Font font = definedFonts.lookup(args[12]);
                                 final Color nrofColor = parseColor(args[13]);
                                 element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
-                                if (args.length != 13)
+                                if (args.length != 11)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                // XXX: pictureSelector is unused
-                                // XXX: pictureLocked is unused
+                                final BufferedImage pictureCursed = getPicture(args[8]);
+                                final BufferedImage pictureApplied = getPicture(args[9]);
+                                final Font font = definedFonts.lookup(args[10]);
                                 element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, index, facesManager, shortcuts, font);
                             }
                             else if (type.equals("spelllist"))
                             {
-                                if (args.length != 13)
+                                if (args.length != 9)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
-                                // XXX: pictureCursed is unused
-                                // XXX: pictureApplied is unused
-                                // XXX: pictureLocked is unused
-                                // XXX: font is unused
+                                final BufferedImage pictureSelector = getPicture(args[8]);
                                 element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, pictureSelector, index, facesManager, spellsManager);
                             }
                             else
