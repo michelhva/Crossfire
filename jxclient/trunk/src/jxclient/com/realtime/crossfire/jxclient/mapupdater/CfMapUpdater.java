@@ -337,18 +337,11 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            final Face face;
             if (faceNum == 0)
             {
-                face = null;
                 visibleAnimations.remove(x, y, layer);
             }
-            else
-            {
-                face = faceCache.getFace(faceNum);
-            }
-
-            map.setFace(x, y, layer, face);
+            map.setFace(x, y, layer, getFace(faceNum));
         }
     }
 
@@ -454,11 +447,22 @@ public class CfMapUpdater
             return;
         }
 
-        final Face face = faceNum == 0 ? null : faceCache.getFace(faceNum);
+        final Face face = getFace(faceNum);
         synchronized (sync)
         {
             map.setMultiFace(x, y, layer, face);
         }
+    }
+
+    /**
+     * Returns the {@link Face} instance by face ID.
+     * @param faceNum the face ID
+     * @return return the face instance, or <code>null</code> if
+     * <code>faceNum==0</code>
+     */
+    private Face getFace(final int faceNum)
+    {
+        return faceNum == 0 ? null : faceCache.getFace(faceNum);
     }
 
     /**
