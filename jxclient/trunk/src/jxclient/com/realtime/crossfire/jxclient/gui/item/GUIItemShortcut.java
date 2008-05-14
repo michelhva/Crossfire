@@ -43,6 +43,12 @@ public class GUIItemShortcut extends GUIItem
      */
     private final FacesManager facesManager;
     
+    private final BufferedImage cursedImage;
+
+    private final BufferedImage appliedImage;
+
+    private final Font font;
+
     private final int index;
 
     private final ShortcutsListener shortcutsListener = new ShortcutsListener()
@@ -77,11 +83,14 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageCursed, final BufferedImage imageApplied, final BufferedImage imageSelector, final BufferedImage imageLocked, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font)
+    public GUIItemShortcut(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font)
     {
-        super(window, name, x, y, w, h, imageCursed, imageApplied, imageSelector, imageLocked, font);
+        super(window, name, x, y, w, h);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
+        this.cursedImage = cursedImage;
+        this.appliedImage = appliedImage;
+        this.font = font;
         this.index = index;
         shortcuts.addShortcutsListener(shortcutsListener);
     }

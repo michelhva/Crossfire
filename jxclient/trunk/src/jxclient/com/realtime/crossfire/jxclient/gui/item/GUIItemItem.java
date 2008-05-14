@@ -41,6 +41,16 @@ public abstract class GUIItemItem extends GUIItem
 
     private final FacesManager facesManager;
 
+    private final BufferedImage cursedImage;
+
+    private final BufferedImage appliedImage;
+
+    private final BufferedImage selectorImage;
+
+    private final BufferedImage lockedImage;
+
+    private final Font font;
+
     /**
      * The color for the "nrof" text.
      */
@@ -78,10 +88,15 @@ public abstract class GUIItemItem extends GUIItem
 
     protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
-        super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
+        super(window, name, x, y, w, h);
         if (nrofColor == null) throw new IllegalArgumentException();
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
+        this.cursedImage = cursedImage;
+        this.appliedImage = appliedImage;
+        this.selectorImage = selectorImage;
+        this.lockedImage = lockedImage;
+        this.font = font;
         this.nrofColor = nrofColor;
         facesManager.addFacesManagerListener(facesManagerListener);
     }

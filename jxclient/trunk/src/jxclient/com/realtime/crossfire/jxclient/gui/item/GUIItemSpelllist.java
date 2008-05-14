@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.util.List;
@@ -54,6 +53,8 @@ public class GUIItemSpelllist extends GUIItem
      * The {@link SpellsManager} instance to watch.
      */
     private final SpellsManager spellsManager;
+
+    private final BufferedImage selectorImage;
 
     private Spell spell = null;
 
@@ -107,13 +108,14 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final Font font)
+    public GUIItemSpelllist(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager)
     {
-        super(window, name, x, y, w, h, cursedImage, appliedImage, selectorImage, lockedImage, font);
+        super(window, name, x, y, w, h);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
+        this.selectorImage = selectorImage;
         setIndex(defaultIndex);
         spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         facesManager.addFacesManagerListener(facesManagerListener);

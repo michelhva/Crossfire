@@ -23,11 +23,9 @@ import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
-import java.awt.image.BufferedImage;
 
 /**
  *
@@ -38,29 +36,14 @@ import java.awt.image.BufferedImage;
  */
 public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
 {
-    protected final BufferedImage cursedImage;
-
-    protected final BufferedImage appliedImage;
-
-    protected final BufferedImage selectorImage;
-
-    protected final BufferedImage lockedImage;
-
-    protected final Font font;
-
     /**
      * The background color of this item.
      */
     private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
 
-    protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final Font font)
+    protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
-        this.cursedImage = cursedImage;
-        this.appliedImage = appliedImage;
-        this.selectorImage = selectorImage;
-        this.lockedImage = lockedImage;
-        this.font = font;
     }
 
     /** {@inheritDoc} */
