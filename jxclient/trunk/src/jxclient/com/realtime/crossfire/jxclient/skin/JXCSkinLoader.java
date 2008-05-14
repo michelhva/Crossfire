@@ -1161,11 +1161,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[4]);
                             final int w = parseInt(args[5]);
                             final int h = parseInt(args[6]);
-                            final BufferedImage pictureCursed = getPicture(args[7]);
-                            final BufferedImage pictureApplied = getPicture(args[8]);
-                            final BufferedImage pictureSelector = getPicture(args[9]);
-                            final BufferedImage pictureLocked = getPicture(args[10]);
-                            final int index = parseInt(args[11]);
+                            final int index = parseInt(args[7]);
+                            final BufferedImage pictureCursed = getPicture(args[8]);
+                            final BufferedImage pictureApplied = getPicture(args[9]);
+                            final BufferedImage pictureSelector = getPicture(args[10]);
+                            final BufferedImage pictureLocked = getPicture(args[11]);
                             final Font font = definedFonts.lookup(args[12]);
                             final GUIItem element;
                             if (type.equals("floor"))
