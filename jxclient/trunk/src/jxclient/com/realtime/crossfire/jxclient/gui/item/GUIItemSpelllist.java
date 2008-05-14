@@ -29,11 +29,17 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Graphics2D;
+import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
 public class GUIItemSpelllist extends GUIItem
 {
+    /**
+     * The background color of this item.
+     */
+    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
+
     /**
      * The command queue for sending commands.
      */
@@ -178,6 +184,9 @@ public class GUIItemSpelllist extends GUIItem
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
+
+        g.setBackground(backgroundColor);
+        g.clearRect(0, 0, w, h);
 
         if (spell == null)
         {
