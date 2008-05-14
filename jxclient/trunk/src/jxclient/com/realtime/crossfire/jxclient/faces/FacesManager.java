@@ -176,7 +176,7 @@ public class FacesManager
      * @param faceNum the face ID
      * @return the face images information
      */
-    private FaceImages getFaceImages(final int faceNum)
+    public FaceImages getFaceImages(final int faceNum)
     {
         if (faceNum == 0)
         {

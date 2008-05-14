@@ -56,6 +56,11 @@ public class CfMapUpdater
     private final Object sync = new Object();
 
     /**
+     * The {@link FacesManager} to track for updated faces.
+     */
+    private final FacesManager facesManager;
+
+    /**
      * The {@link FaceCache} instance for looking up faces.
      */
     private final FaceCache faceCache;
@@ -214,6 +219,7 @@ public class CfMapUpdater
      */
     public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache, final Animations animations)
     {
+        this.facesManager = facesManager;
         this.faceCache = faceCache;
         this.animations = animations;
         if (crossfireServerConnection != null)
@@ -462,6 +468,11 @@ public class CfMapUpdater
      */
     private Face getFace(final int faceNum)
     {
+        if (facesManager != null)
+        {
+            // request face information for later use
+            facesManager.getFaceImages(faceNum); 
+        }
         return faceNum == 0 ? null : faceCache.getFace(faceNum);
     }
 
