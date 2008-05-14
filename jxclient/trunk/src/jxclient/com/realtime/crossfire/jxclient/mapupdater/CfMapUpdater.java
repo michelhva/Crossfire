@@ -369,7 +369,7 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            visibleAnimations.add(x, y, layer, animation, type, faceCache);
+            visibleAnimations.add(x, y, layer, animation, type);
         }
     }
 

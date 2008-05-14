@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
-import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 
 /**
@@ -39,11 +38,6 @@ public class AnimationState
      * The animation type.
      */
     private final int type;
-
-    /**
-     * The {@link FaceCache} instance for looking up faces.
-     */
-    private final FaceCache faceCache;
 
     /**
      * The {@link CfMapUpdater} instance to use.
@@ -72,15 +66,12 @@ public class AnimationState
      *
      * @param type The animation type.
      *
-     * @param faceCache The instance for looking up faces.
-     *
      * @param mapUpdater the instance to use
      */
-    public AnimationState(final Animation animation, final int type, final FaceCache faceCache, final CfMapUpdater mapUpdater)
+    public AnimationState(final Animation animation, final int type, final CfMapUpdater mapUpdater)
     {
         this.animation = animation;
         this.type = type;
-        this.faceCache = faceCache;
         this.mapUpdater = mapUpdater;
     }
 
