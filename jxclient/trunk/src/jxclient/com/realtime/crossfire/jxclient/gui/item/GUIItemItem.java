@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
 public abstract class GUIItemItem extends GUIItem
 {
     /**
+     * The background color of this item.
+     */
+    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
+
+    /**
      * The connection instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
@@ -105,6 +110,9 @@ public abstract class GUIItemItem extends GUIItem
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
+
+        g.setBackground(backgroundColor);
+        g.clearRect(0, 0, w, h);
 
         final CfItem tmpItem = item;
         if (tmpItem == null)

@@ -36,6 +36,11 @@ import java.awt.image.BufferedImage;
 
 public class GUIItemShortcut extends GUIItem
 {
+    /**
+     * The background color of this item.
+     */
+    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
+
     private final Shortcuts shortcuts;
 
     /**
@@ -135,6 +140,9 @@ public class GUIItemShortcut extends GUIItem
     @Override protected void render(final Graphics2D g)
     {
         super.render(g);
+
+        g.setBackground(backgroundColor);
+        g.clearRect(0, 0, w, h);
 
         final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut == null)

@@ -36,11 +36,6 @@ import java.awt.event.MouseEvent;
  */
 public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
 {
-    /**
-     * The background color of this item.
-     */
-    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
-
     protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
@@ -78,14 +73,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     @Override public void activeChanged()
     {
         setChanged();
-    }
-
-    /** {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
-    {
-        super.render(g);
-        g.setBackground(backgroundColor);
-        g.clearRect(0, 0, w, h);
     }
 
     @Override public void setVisible(final boolean visible)
