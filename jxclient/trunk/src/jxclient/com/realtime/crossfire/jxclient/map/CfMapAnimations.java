@@ -75,16 +75,22 @@ public class CfMapAnimations
 
     /**
      * Creates a new instance.
+     * @param mapUpdater the instance to update
+     */
+    public CfMapAnimations(final CfMapUpdater mapUpdater)
+    {
+        this.mapUpdater = mapUpdater;
+    }
+
+    /**
+     * Creates a new instance.
      * @param crossfireServerConnection the connection to watch
      * @param mapUpdater the instance to update
      */
     public CfMapAnimations(final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
     {
-        this.mapUpdater = mapUpdater;
-        if (crossfireServerConnection != null)
-        {
-            crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
-        }
+        this(mapUpdater);
+        crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }
 
     /**
