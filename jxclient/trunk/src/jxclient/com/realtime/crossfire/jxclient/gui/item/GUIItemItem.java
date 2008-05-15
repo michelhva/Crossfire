@@ -50,11 +50,17 @@ public abstract class GUIItemItem extends GUIItem
 
     private final BufferedImage damnedImage;
 
+    private final BufferedImage magicImage;
+
+    private final BufferedImage blessedImage;
+
     private final BufferedImage appliedImage;
 
     private final BufferedImage selectorImage;
 
     private final BufferedImage lockedImage;
+
+    private final BufferedImage unpaidImage;
 
     private final Font font;
 
@@ -93,7 +99,7 @@ public abstract class GUIItemItem extends GUIItem
         }
     };
 
-    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
+    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h);
         if (nrofColor == null) throw new IllegalArgumentException();
@@ -101,9 +107,12 @@ public abstract class GUIItemItem extends GUIItem
         this.facesManager = facesManager;
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
+        this.magicImage = magicImage;
+        this.blessedImage = blessedImage;
         this.appliedImage = appliedImage;
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
+        this.unpaidImage = unpaidImage;
         this.font = font;
         this.nrofColor = nrofColor;
         facesManager.addFacesManagerListener(facesManagerListener);
@@ -134,7 +143,15 @@ public abstract class GUIItemItem extends GUIItem
         }
         if (tmpItem.isDamned())
         {
-            g.drawImage(cursedImage, 0, 0, null);
+            g.drawImage(damnedImage, 0, 0, null);
+        }
+        if (tmpItem.isMagic())
+        {
+            g.drawImage(magicImage, 0, 0, null);
+        }
+        if (tmpItem.isBlessed())
+        {
+            g.drawImage(blessedImage, 0, 0, null);
         }
         if (tmpItem.isLocked())
         {
@@ -143,6 +160,10 @@ public abstract class GUIItemItem extends GUIItem
         if (isActive())
         {
             g.drawImage(selectorImage, 0, 0, null);
+        }
+        if (tmpItem.isUnpaid())
+        {
+            g.drawImage(unpaidImage, 0, 0, null);
         }
         if (tmpItem.getNrOf() > 0)
         {

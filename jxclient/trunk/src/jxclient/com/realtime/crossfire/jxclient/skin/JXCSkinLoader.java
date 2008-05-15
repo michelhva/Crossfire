@@ -1165,35 +1165,41 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
-                                if (args.length != 15)
+                                if (args.length != 18)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
                                 final BufferedImage pictureCursed = getPicture(args[8]);
                                 final BufferedImage pictureDamned = getPicture(args[9]);
-                                final BufferedImage pictureApplied = getPicture(args[10]);
-                                final BufferedImage pictureSelector = getPicture(args[11]);
-                                final BufferedImage pictureLocked = getPicture(args[12]);
-                                final Font font = definedFonts.lookup(args[13]);
-                                final Color nrofColor = parseColor(args[14]);
-                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureApplied, pictureSelector, pictureLocked, index, server, itemsManager, facesManager, font, nrofColor);
+                                final BufferedImage pictureMagic = getPicture(args[10]);
+                                final BufferedImage pictureBlessed = getPicture(args[11]);
+                                final BufferedImage pictureApplied = getPicture(args[12]);
+                                final BufferedImage pictureSelector = getPicture(args[13]);
+                                final BufferedImage pictureLocked = getPicture(args[14]);
+                                final BufferedImage pictureUnpaid = getPicture(args[15]);
+                                final Font font = definedFonts.lookup(args[16]);
+                                final Color nrofColor = parseColor(args[17]);
+                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, index, server, itemsManager, facesManager, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
-                                if (args.length != 15)
+                                if (args.length != 18)
                                 {
                                     throw new IOException("syntax error");
                                 }
 
                                 final BufferedImage pictureCursed = getPicture(args[8]);
                                 final BufferedImage pictureDamned = getPicture(args[9]);
-                                final BufferedImage pictureApplied = getPicture(args[10]);
-                                final BufferedImage pictureSelector = getPicture(args[11]);
-                                final BufferedImage pictureLocked = getPicture(args[12]);
-                                final Font font = definedFonts.lookup(args[13]);
-                                final Color nrofColor = parseColor(args[14]);
-                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureApplied, pictureSelector, pictureLocked, index, server, facesManager, itemsManager, font, nrofColor);
+                                final BufferedImage pictureMagic = getPicture(args[10]);
+                                final BufferedImage pictureBlessed = getPicture(args[11]);
+                                final BufferedImage pictureApplied = getPicture(args[12]);
+                                final BufferedImage pictureSelector = getPicture(args[13]);
+                                final BufferedImage pictureLocked = getPicture(args[14]);
+                                final BufferedImage pictureUnpaid = getPicture(args[15]);
+                                final Font font = definedFonts.lookup(args[16]);
+                                final Color nrofColor = parseColor(args[17]);
+                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, index, server, facesManager, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {

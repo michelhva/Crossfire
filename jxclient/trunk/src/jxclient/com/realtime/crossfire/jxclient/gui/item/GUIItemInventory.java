@@ -71,9 +71,9 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
+    public GUIItemInventory(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
     {
-        super(window, name, x, y, w, h, cursedImage, damnedImage, appliedImage, selectorImage, lockedImage, crossfireServerConnection, facesManager, font, nrofColor);
+        super(window, name, x, y, w, h, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, crossfireServerConnection, facesManager, font, nrofColor);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
