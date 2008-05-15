@@ -22,8 +22,6 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.Color;
-import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 
