@@ -92,10 +92,10 @@ public class GUICommandList
     }
 
     /**
-     * Execute the command list by calling {@link GUICommand#execute()} for
-     * each command in order.
+     * Returns whether execution is possible.
+     * @return whether execution is possible
      */
-    public void execute()
+    public boolean canExecute()
     {
         switch (type)
         {
@@ -104,7 +104,7 @@ public class GUICommandList
             {
                 if (!command.canExecute())
                 {
-                    return;
+                    return false;
                 }
             }
             break;
@@ -121,9 +121,23 @@ public class GUICommandList
             }
             if (!ok)
             {
-                return;
+                return false;
             }
             break;
+        }
+
+        return true;
+    }
+
+    /**
+     * Execute the command list by calling {@link GUICommand#execute()} for
+     * each command in order.
+     */
+    public void execute()
+    {
+        if (!canExecute())
+        {
+            return;
         }
 
         for (final GUICommand command : commandList)

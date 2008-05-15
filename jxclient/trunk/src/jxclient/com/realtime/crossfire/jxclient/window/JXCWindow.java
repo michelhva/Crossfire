@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIText;
 import com.realtime.crossfire.jxclient.gui.Gui;
@@ -740,15 +739,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 final String serverName = settings.getString("server", "crossfire.metalforge.net");
                 if (serverName.length() > 0)
                 {
-                    final int metaIndex = metaserver.getServerIndex(serverName);
-                    if (metaIndex != -1)
-                    {
-                        final GUIMetaElement metaElement = windowRenderer.getCurrentGui().getMetaElement(metaIndex);
-                        if (metaElement != null)
-                        {
-                            metaElement.setActive(true);
-                        }
-                    }
+                    MetaserverUtils.selectEntry(windowRenderer.getCurrentGui(), metaserver, serverName);
                 }
                 break;
 
