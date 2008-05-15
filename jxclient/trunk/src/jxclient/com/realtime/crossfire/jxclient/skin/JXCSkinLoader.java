@@ -1170,17 +1170,25 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final BufferedImage pictureCursed = getPicture(args[8]);
-                                final BufferedImage pictureDamned = getPicture(args[9]);
-                                final BufferedImage pictureMagic = getPicture(args[10]);
-                                final BufferedImage pictureBlessed = getPicture(args[11]);
-                                final BufferedImage pictureApplied = getPicture(args[12]);
-                                final BufferedImage pictureSelector = getPicture(args[13]);
-                                final BufferedImage pictureLocked = getPicture(args[14]);
-                                final BufferedImage pictureUnpaid = getPicture(args[15]);
+                                final Color cursedColor = parseColorNull(args[8]);
+                                final BufferedImage pictureCursed = getPicture(cursedColor, args[8]);
+                                final Color damnedColor = parseColorNull(args[9]);
+                                final BufferedImage pictureDamned = getPicture(damnedColor, args[9]);
+                                final Color magicColor = parseColorNull(args[10]);
+                                final BufferedImage pictureMagic = getPicture(magicColor, args[10]);
+                                final Color blessedColor = parseColorNull(args[11]);
+                                final BufferedImage pictureBlessed = getPicture(blessedColor, args[11]);
+                                final Color appliedColor = parseColorNull(args[12]);
+                                final BufferedImage pictureApplied = getPicture(appliedColor, args[12]);
+                                final Color selectorColor = parseColorNull(args[13]);
+                                final BufferedImage pictureSelector = getPicture(selectorColor, args[13]);
+                                final Color lockedColor = parseColorNull(args[14]);
+                                final BufferedImage pictureLocked = getPicture(lockedColor, args[14]);
+                                final Color unpaidColor = parseColorNull(args[15]);
+                                final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = parseColor(args[17]);
-                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, index, server, itemsManager, facesManager, font, nrofColor);
+                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, index, server, itemsManager, facesManager, font, nrofColor);
                             }
                             else if (type.equals("inventory"))
                             {
@@ -1189,17 +1197,25 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final BufferedImage pictureCursed = getPicture(args[8]);
-                                final BufferedImage pictureDamned = getPicture(args[9]);
-                                final BufferedImage pictureMagic = getPicture(args[10]);
-                                final BufferedImage pictureBlessed = getPicture(args[11]);
-                                final BufferedImage pictureApplied = getPicture(args[12]);
-                                final BufferedImage pictureSelector = getPicture(args[13]);
-                                final BufferedImage pictureLocked = getPicture(args[14]);
-                                final BufferedImage pictureUnpaid = getPicture(args[15]);
+                                final Color cursedColor = parseColorNull(args[8]);
+                                final BufferedImage pictureCursed = getPicture(cursedColor, args[8]);
+                                final Color damnedColor = parseColorNull(args[9]);
+                                final BufferedImage pictureDamned = getPicture(damnedColor, args[9]);
+                                final Color magicColor = parseColorNull(args[10]);
+                                final BufferedImage pictureMagic = getPicture(magicColor, args[10]);
+                                final Color blessedColor = parseColorNull(args[11]);
+                                final BufferedImage pictureBlessed = getPicture(blessedColor, args[11]);
+                                final Color appliedColor = parseColorNull(args[12]);
+                                final BufferedImage pictureApplied = getPicture(appliedColor, args[12]);
+                                final Color selectorColor = parseColorNull(args[13]);
+                                final BufferedImage pictureSelector = getPicture(selectorColor, args[13]);
+                                final Color lockedColor = parseColorNull(args[14]);
+                                final BufferedImage pictureLocked = getPicture(lockedColor, args[14]);
+                                final Color unpaidColor = parseColorNull(args[15]);
+                                final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = parseColor(args[17]);
-                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, index, server, facesManager, itemsManager, font, nrofColor);
+                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, index, server, facesManager, itemsManager, font, nrofColor);
                             }
                             else if (type.equals("shortcut"))
                             {
@@ -2049,6 +2065,58 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private static Color parseColor(final String name) throws IOException
     {
+        final Color color = parseColorNull(name);
+        if (color != null)
+        {
+            return color;
+        }
+        throw new IOException("unknown color name "+name);
+    }
+
+    /**
+     * Parses a color name, optionally followed by "/&lt;alpha&gt;".
+     * @param name the color name to parse
+     * @return the color or <code>null</code> if the color name does not exist
+     */
+    private static Color parseColorNull(final String name)
+    {
+        final int pos = name.lastIndexOf('/');
+        if (pos == -1)
+        {
+            return parseColorName(name);
+        }
+
+        int alpha = 255;
+        try
+        {
+            alpha = (int)(255*parseFloat(name.substring(pos+1))+0.5);
+        }
+        catch (final IOException ex)
+        {
+            /* ignore */
+        }
+        if (alpha < 0 || alpha > 255)
+        {
+            return parseColorName(name);
+        }
+
+        final String colorName = name.substring(0, pos);
+        final Color color = parseColorName(colorName);
+        if (alpha == 255)
+        {
+            return color;
+        }
+
+        return new Color(color.getRed(), color.getGreen(), color.getBlue(), alpha);
+    }
+
+    /**
+     * Parses a color name.
+     * @param name the color name to parse
+     * @return the color or <code>null</code> if the color name does not exist
+     */
+    private static Color parseColorName(final String name)
+    {
         if (name.equals("BLACK")) return Color.BLACK;
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
         if (name.equals("GRAY")) return Color.GRAY;
@@ -2064,7 +2132,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 ; // ignore
             }
         }
-        throw new IOException("unknown color name "+name);
+        return null;
     }
 
     /**
@@ -2409,6 +2477,18 @@ public abstract class JXCSkinLoader implements JXCSkin
             throw new IOException(getURI(filename)+": i/o error: "+ex.getMessage());
         }
         return font;
+    }
+
+    /**
+     * Optionally load an picture by base file name.
+     * @param color if non-<code>null</code>, return <code>null</code>
+     * @param name the base file name
+     * @return the image, or <code>null</code> if <code>color!=null</code>
+     * @throws IOException if the picture cannot be loaded
+     */
+    private BufferedImage getPicture(final Color color, final String name) throws IOException
+    {
+        return color != null ? null : getPicture(name);
     }
 
     /**

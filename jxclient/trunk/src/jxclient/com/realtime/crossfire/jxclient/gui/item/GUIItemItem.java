@@ -62,6 +62,22 @@ public abstract class GUIItemItem extends GUIItem
 
     private final BufferedImage unpaidImage;
 
+    private final Color cursedColor;
+
+    private final Color damnedColor;
+
+    private final Color magicColor;
+
+    private final Color blessedColor;
+
+    private final Color appliedColor;
+
+    private final Color selectorColor;
+
+    private final Color lockedColor;
+
+    private final Color unpaidColor;
+
     private final Font font;
 
     /**
@@ -99,7 +115,7 @@ public abstract class GUIItemItem extends GUIItem
         }
     };
 
-    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
+    protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h);
         if (nrofColor == null) throw new IllegalArgumentException();
@@ -113,6 +129,14 @@ public abstract class GUIItemItem extends GUIItem
         this.selectorImage = selectorImage;
         this.lockedImage = lockedImage;
         this.unpaidImage = unpaidImage;
+        this.cursedColor = cursedColor;
+        this.damnedColor = damnedColor;
+        this.magicColor = magicColor;
+        this.blessedColor = blessedColor;
+        this.appliedColor = appliedColor;
+        this.selectorColor = selectorColor;
+        this.lockedColor = lockedColor;
+        this.unpaidColor = unpaidColor;
         this.font = font;
         this.nrofColor = nrofColor;
         facesManager.addFacesManagerListener(facesManagerListener);
@@ -132,44 +156,57 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
+        paintColor(g, appliedColor, tmpItem.isApplied());
+        paintColor(g, cursedColor, tmpItem.isCursed());
+        paintColor(g, damnedColor, tmpItem.isDamned());
+        paintColor(g, magicColor, tmpItem.isMagic());
+        paintColor(g, blessedColor, tmpItem.isBlessed());
+        paintColor(g, lockedColor, tmpItem.isLocked());
+        paintColor(g, selectorColor, isActive());
+        paintColor(g, unpaidColor, tmpItem.isUnpaid());
         g.drawImage(facesManager.getOriginalImageIcon(tmpItem.getFace().getFaceNum()).getImage(), 0, 0, null);
-        if (tmpItem.isApplied())
-        {
-            g.drawImage(appliedImage, 0, 0, null);
-        }
-        if (tmpItem.isCursed())
-        {
-            g.drawImage(cursedImage, 0, 0, null);
-        }
-        if (tmpItem.isDamned())
-        {
-            g.drawImage(damnedImage, 0, 0, null);
-        }
-        if (tmpItem.isMagic())
-        {
-            g.drawImage(magicImage, 0, 0, null);
-        }
-        if (tmpItem.isBlessed())
-        {
-            g.drawImage(blessedImage, 0, 0, null);
-        }
-        if (tmpItem.isLocked())
-        {
-            g.drawImage(lockedImage, 0, 0, null);
-        }
-        if (isActive())
-        {
-            g.drawImage(selectorImage, 0, 0, null);
-        }
-        if (tmpItem.isUnpaid())
-        {
-            g.drawImage(unpaidImage, 0, 0, null);
-        }
+        paintImage(g, appliedImage, tmpItem.isApplied());
+        paintImage(g, cursedImage, tmpItem.isCursed());
+        paintImage(g, damnedImage, tmpItem.isDamned());
+        paintImage(g, magicImage, tmpItem.isMagic());
+        paintImage(g, blessedImage, tmpItem.isBlessed());
+        paintImage(g, lockedImage, tmpItem.isLocked());
+        paintImage(g, selectorImage, isActive());
+        paintImage(g, unpaidImage, tmpItem.isUnpaid());
         if (tmpItem.getNrOf() > 0)
         {
             g.setFont(font);
             g.setColor(nrofColor);
             g.drawString(String.valueOf(tmpItem.getNrOf()), 1, 1+font.getSize());
+        }
+    }
+
+    /**
+     * Conditionally paints the background with a solid color.
+     * @param g the context to paint into
+     * @param color the color to use
+     * @param isActive whether painting should be done at all
+     */
+    private void paintColor(final Graphics2D g, final Color color, final boolean isActive)
+    {
+        if (isActive && color != null)
+        {
+            g.setColor(color);
+            g.fillRect(0, 0, w, h);
+        }
+    }
+
+    /**
+     * Conditionally paints an image.
+     * @param g the context to paint into
+     * @param image the image to paint
+     * @param isActive whether painting should be done at all
+     */
+    private static void paintImage(final Graphics2D g, final BufferedImage image, final boolean isActive)
+    {
+        if (isActive)
+        {
+            g.drawImage(image, 0, 0, null);
         }
     }
 
