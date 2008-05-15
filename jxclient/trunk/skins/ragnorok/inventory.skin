@@ -3,66 +3,66 @@ dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN NEWCHAR
 button button_close  484    4   16 16 close_up close_down false command_inventory_close
 
-item inventory inv0    4 30+4   32 32  0 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv1   36 30+4   32 32  1 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv2   68 30+4   32 32  2 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv3  100 30+4   32 32  3 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv4  132 30+4   32 32  4 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv5  164 30+4   32 32  5 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv6  196 30+4   32 32  6 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv7  228 30+4   32 32  7 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv8  260 30+4   32 32  8 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv9  292 30+4   32 32  9 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv10 324 30+4   32 32 10 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv11 356 30+4   32 32 11 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv12 388 30+4   32 32 12 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv13 420 30+4   32 32 13 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv14 452 30+4   32 32 14 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv15   4 30+36  32 32 15 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv16  36 30+36  32 32 16 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv17  68 30+36  32 32 17 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv18 100 30+36  32 32 18 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv19 132 30+36  32 32 19 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv20 164 30+36  32 32 20 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv21 196 30+36  32 32 21 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv22 228 30+36  32 32 22 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv23 260 30+36  32 32 23 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv24 292 30+36  32 32 24 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv25 324 30+36  32 32 25 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv26 356 30+36  32 32 26 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv27 388 30+36  32 32 27 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv28 420 30+36  32 32 28 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv29 452 30+36  32 32 29 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv30   4 30+68  32 32 30 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv31  36 30+68  32 32 31 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv32  68 30+68  32 32 32 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv33 100 30+68  32 32 33 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv34 132 30+68  32 32 34 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv35 164 30+68  32 32 35 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv36 196 30+68  32 32 36 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv37 228 30+68  32 32 37 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv38 260 30+68  32 32 38 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv39 292 30+68  32 32 39 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv40 324 30+68  32 32 40 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv41 356 30+68  32 32 41 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv42 388 30+68  32 32 42 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv43 420 30+68  32 32 43 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv44 452 30+68  32 32 44 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv45   4 30+100 32 32 45 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv46  36 30+100 32 32 46 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv47  68 30+100 32 32 47 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv48 100 30+100 32 32 48 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv49 132 30+100 32 32 49 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv50 164 30+100 32 32 50 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv51 196 30+100 32 32 51 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv52 228 30+100 32 32 52 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv53 260 30+100 32 32 53 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv54 292 30+100 32 32 54 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv55 324 30+100 32 32 55 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv56 356 30+100 32 32 56 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv57 388 30+100 32 32 57 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv58 420 30+100 32 32 58 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
-item inventory inv59 452 30+100 32 32 59 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_item BLACK
+item inventory inv0    4 30+4   32 32  0 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv1   36 30+4   32 32  1 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv2   68 30+4   32 32  2 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv3  100 30+4   32 32  3 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv4  132 30+4   32 32  4 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv5  164 30+4   32 32  5 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv6  196 30+4   32 32  6 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv7  228 30+4   32 32  7 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv8  260 30+4   32 32  8 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv9  292 30+4   32 32  9 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv10 324 30+4   32 32 10 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv11 356 30+4   32 32 11 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv12 388 30+4   32 32 12 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv13 420 30+4   32 32 13 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv14 452 30+4   32 32 14 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv15   4 30+36  32 32 15 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv16  36 30+36  32 32 16 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv17  68 30+36  32 32 17 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv18 100 30+36  32 32 18 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv19 132 30+36  32 32 19 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv20 164 30+36  32 32 20 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv21 196 30+36  32 32 21 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv22 228 30+36  32 32 22 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv23 260 30+36  32 32 23 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv24 292 30+36  32 32 24 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv25 324 30+36  32 32 25 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv26 356 30+36  32 32 26 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv27 388 30+36  32 32 27 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv28 420 30+36  32 32 28 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv29 452 30+36  32 32 29 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv30   4 30+68  32 32 30 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv31  36 30+68  32 32 31 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv32  68 30+68  32 32 32 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv33 100 30+68  32 32 33 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv34 132 30+68  32 32 34 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv35 164 30+68  32 32 35 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv36 196 30+68  32 32 36 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv37 228 30+68  32 32 37 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv38 260 30+68  32 32 38 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv39 292 30+68  32 32 39 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv40 324 30+68  32 32 40 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv41 356 30+68  32 32 41 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv42 388 30+68  32 32 42 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv43 420 30+68  32 32 43 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv44 452 30+68  32 32 44 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv45   4 30+100 32 32 45 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv46  36 30+100 32 32 46 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv47  68 30+100 32 32 47 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv48 100 30+100 32 32 48 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv49 132 30+100 32 32 49 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv50 164 30+100 32 32 50 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv51 196 30+100 32 32 51 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv52 228 30+100 32 32 52 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv53 260 30+100 32 32 53 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv54 292 30+100 32 32 54 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv55 324 30+100 32 32 55 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv56 356 30+100 32 32 56 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv57 388 30+100 32 32 57 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv58 420 30+100 32 32 58 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item inventory inv59 452 30+100 32 32 59 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
 
 button slider_up     484 30+4   16 16 slider_up_up slider_up_down true command_inventory_up
 button slider_down   484 30+116 16 16 slider_down_up slider_down_down true command_inventory_down

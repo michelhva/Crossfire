@@ -104,26 +104,26 @@ commandlist_add command_shortcutB shortcutB GUI_EXECUTE_ELEMENT
 
 # RInventory (973, 53)
 picture inv_right_back 8+973 0+53 43 715 inventory 0.9
-item inventory rinv0 0+973+14   0+53+9 32 32  0 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv1 0+973+14  35+53+9 32 32  1 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv2 0+973+14  70+53+9 32 32  2 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv3 0+973+14 105+53+9 32 32  3 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv4 0+973+14 140+53+9 32 32  4 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv5 0+973+14 175+53+9 32 32  5 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv6 0+973+14 210+53+9 32 32  6 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv7 0+973+14 245+53+9 32 32  7 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv8 0+973+14 280+53+9 32 32  8 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinv9 0+973+14 315+53+9 32 32  9 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvA 0+973+14 350+53+9 32 32 10 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvB 0+973+14 385+53+9 32 32 11 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvC 0+973+14 420+53+9 32 32 12 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvD 0+973+14 455+53+9 32 32 13 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvE 0+973+14 490+53+9 32 32 14 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvF 0+973+14 525+53+9 32 32 15 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvG 0+973+14 560+53+9 32 32 16 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvH 0+973+14 595+53+9 32 32 17 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvI 0+973+14 630+53+9 32 32 18 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item inventory rinvJ 0+973+14 665+53+9 32 32 19 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
+item inventory rinv0 0+973+14   0+53+9 32 32  0 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv1 0+973+14  35+53+9 32 32  1 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv2 0+973+14  70+53+9 32 32  2 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv3 0+973+14 105+53+9 32 32  3 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv4 0+973+14 140+53+9 32 32  4 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv5 0+973+14 175+53+9 32 32  5 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv6 0+973+14 210+53+9 32 32  6 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv7 0+973+14 245+53+9 32 32  7 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv8 0+973+14 280+53+9 32 32  8 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinv9 0+973+14 315+53+9 32 32  9 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvA 0+973+14 350+53+9 32 32 10 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvB 0+973+14 385+53+9 32 32 11 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvC 0+973+14 420+53+9 32 32 12 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvD 0+973+14 455+53+9 32 32 13 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvE 0+973+14 490+53+9 32 32 14 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvF 0+973+14 525+53+9 32 32 15 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvG 0+973+14 560+53+9 32 32 16 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvH 0+973+14 595+53+9 32 32 17 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvI 0+973+14 630+53+9 32 32 18 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item inventory rinvJ 0+973+14 665+53+9 32 32 19 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
 
 item spelllist rsp0 0+973+14   0+53+9 32 32  0 inventory_selector
 item spelllist rsp1 0+973+14  35+53+9 32 32  1 inventory_selector
@@ -286,17 +286,17 @@ set_invisible label_panel_spells_icon
 set_invisible label_panel_spells_name
 set_invisible label_panel_spells_description
 
-item floor floor0 0+199+9     0+551+165 32 32  0 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor1 0+199+9+34  0+551+165 32 32  1 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor2 0+199+9+68  0+551+165 32 32  2 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor3 0+199+9+102 0+551+165 32 32  3 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor4 0+199+9+136 0+551+165 32 32  4 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor5 0+199+9+170 0+551+165 32 32  5 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor6 0+199+9+204 0+551+165 32 32  6 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor7 0+199+9+238 0+551+165 32 32  7 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor8 0+199+9+272 0+551+165 32 32  8 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floor9 0+199+9+306 0+551+165 32 32  9 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
-item floor floorA 0+199+9+340 0+551+165 32 32 10 marker_cursed marker_cursed marker_applied inventory_selector marker_locked font_default_small WHITE
+item floor floor0 0+199+9     0+551+165 32 32  0 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor1 0+199+9+34  0+551+165 32 32  1 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor2 0+199+9+68  0+551+165 32 32  2 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor3 0+199+9+102 0+551+165 32 32  3 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor4 0+199+9+136 0+551+165 32 32  4 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor5 0+199+9+170 0+551+165 32 32  5 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor6 0+199+9+204 0+551+165 32 32  6 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor7 0+199+9+238 0+551+165 32 32  7 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor8 0+199+9+272 0+551+165 32 32  8 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floor9 0+199+9+306 0+551+165 32 32  9 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
+item floor floorA 0+199+9+340 0+551+165 32 32 10 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
 
 # Resistances (630, 628)
 picture gr0_back   0+630   0+628 29 11 res_gauge_empty 0.9
