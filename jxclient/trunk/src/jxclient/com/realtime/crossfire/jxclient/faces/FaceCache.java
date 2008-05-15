@@ -61,11 +61,12 @@ public class FaceCache
     }
 
     /**
-     * Initializes this instance.
+     * Creates a new instance.
      * @param crossfireServerConnection the server connection to use
      */
-    public void init(final CrossfireServerConnection crossfireServerConnection)
+    public FaceCache(final CrossfireServerConnection crossfireServerConnection)
     {
+        this();
         crossfireServerConnection.addCrossfireFaceListener(crossfireFaceListener);
     }
 
