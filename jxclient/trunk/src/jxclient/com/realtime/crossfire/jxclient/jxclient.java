@@ -52,13 +52,6 @@ public class jxclient
     public static final String DEFAULT_SKIN = "ragnorok";
 
     /**
-     * Proivate constructor to prevent instantiation.
-     */
-    private jxclient()
-    {
-    }
-
-    /**
      * The program entry point.
      * @param args The command line arguments.
      */
