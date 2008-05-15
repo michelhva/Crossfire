@@ -154,6 +154,15 @@ public abstract class AbstractButton extends ActivatableGUIElement
     }
 
     /**
+     * Returns whether the command actions can be executed.
+     * @return whether execution is possible
+     */
+    public boolean canExecute()
+    {
+        return commandList.canExecute();
+    }
+
+    /**
      * Execute the command actions.
      */
     public void execute()

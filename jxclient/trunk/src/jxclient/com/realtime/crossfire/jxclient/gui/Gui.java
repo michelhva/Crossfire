@@ -30,7 +30,9 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
@@ -320,25 +322,20 @@ public class Gui
     }
 
     /**
-     * Returns a {@link GUIMetaElement} gui element of this gui by index.
-     * @param index the index
-     * @return the gui element, or <code>null</code> if not found
+     * Returns all {@link GUIMetaElement} gui element of this gui.
+     * @return the gui elements
      */
-    public GUIMetaElement getMetaElement(final int index)
+    public Set<GUIMetaElement> getMetaElements()
     {
+        final Set<GUIMetaElement> result = new HashSet<GUIMetaElement>(16);
         for (final GUIElement element : visibleElements)
         {
             if (element instanceof GUIMetaElement)
             {
-                final GUIMetaElement metaElement = (GUIMetaElement)element;
-                if (metaElement.getIndex() == index)
-                {
-                    return metaElement;
-                }
+                result.add((GUIMetaElement)element);
             }
         }
-
-        return null;
+        return result;
     }
 
     /**
@@ -586,6 +583,26 @@ public class Gui
             return textArea;
         }
 
+        return null;
+    }
+
+    /**
+     * Returns the first button of this gui matching a given name.
+     * @param name the button's name
+     * @return the button or <code>null</code> if no button matches
+     */
+    public AbstractButton getButton(final String name)
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if (element.getName().equals(name))
+            {
+                if (element instanceof AbstractButton)
+                {
+                    return (AbstractButton)element;
+                }
+            }
+        }
         return null;
     }
 
