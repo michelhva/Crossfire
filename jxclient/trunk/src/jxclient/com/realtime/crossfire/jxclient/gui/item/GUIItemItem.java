@@ -37,7 +37,7 @@ public abstract class GUIItemItem extends GUIItem
     /**
      * The background color of this item.
      */
-    private static final Color backgroundColor = new Color(0, 0, 0, 0.0f);
+    private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
      * The connection instance.
@@ -147,7 +147,7 @@ public abstract class GUIItemItem extends GUIItem
     {
         super.render(g);
 
-        g.setBackground(backgroundColor);
+        g.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, w, h);
 
         final CfItem tmpItem = item;
