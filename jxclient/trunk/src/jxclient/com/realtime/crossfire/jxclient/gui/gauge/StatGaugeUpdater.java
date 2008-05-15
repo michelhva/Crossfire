@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
+import com.realtime.crossfire.jxclient.util.Formatter;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -85,8 +86,9 @@ public class StatGaugeUpdater extends GaugeUpdater
 
             case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
                 final int level = s.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
-                final int perc = getPercentsToNextLevel(level, s.getExperience());
-                setValues(perc, 0, 99, perc+"%", s.getExperience()+"/"+getExperience(level+1));
+                final long experience = s.getExperience();
+                final int perc = getPercentsToNextLevel(level, experience);
+                setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
                 break;
 
             case CrossfireStatsListener.C_STAT_POISONED:

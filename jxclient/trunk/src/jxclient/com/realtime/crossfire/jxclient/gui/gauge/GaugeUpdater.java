@@ -71,7 +71,16 @@ public abstract class GaugeUpdater
     {
         if (gauge != null)
         {
-            gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), Integer.toString(curValue));
+            final String tooltipText;
+            if (minValue == 0)
+            {
+                tooltipText = curValue+"/"+maxValue;
+            }
+            else
+            {
+                tooltipText = Integer.toString(curValue);
+            }
+            gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), tooltipText);
         }
     }
 
@@ -108,6 +117,20 @@ public abstract class GaugeUpdater
     protected int getPercentsToNextLevel(final int level, final long experience)
     {
         return experienceTable.getPercentsToNextLevel(level, experience);
+    }
+
+    /**
+     * Return the experience needed to reach nextlevel.
+     *
+     * @param level The level.
+     *
+     * @param experience The experience.
+     *
+     * @return The needed experience.
+     */
+    protected long getExperienceToNextLevel(final int level, final long experience)
+    {
+        return experienceTable.getExperienceToNextLevel(level, experience);
     }
 
     /**

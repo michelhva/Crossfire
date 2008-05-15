@@ -18,7 +18,7 @@ picture gauge_fp_back         280 10 80 20 gauge_frame 0.9
 textgauge gauge_fp            283 13 74 14 gauge_fp null gauge_empty FOOD WE BLACK font_label Food:
 
 picture gauge_xp_back         370 10 80 20 gauge_xp_frame 0.9
-duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Experience:
+duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
 
 # Hpbar in map view
 picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame 0.9
