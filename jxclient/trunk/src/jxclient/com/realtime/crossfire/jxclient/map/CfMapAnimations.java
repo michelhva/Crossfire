@@ -31,7 +31,6 @@ import java.util.Set;
 
 /**
  * Manages a set of animated map squares.
- *
  * @author Andreas Kirschbaum
  */
 public class CfMapAnimations
@@ -75,10 +74,8 @@ public class CfMapAnimations
     };
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param crossfireServerConnection the connection to watch
-     * 
      * @param mapUpdater the instance to update
      */
     public CfMapAnimations(final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
@@ -91,7 +88,7 @@ public class CfMapAnimations
     }
 
     /**
-     * Forget all animations.
+     * Forgets all animations.
      */
     public void clear()
     {
@@ -100,17 +97,12 @@ public class CfMapAnimations
     }
 
     /**
-     * Add a visible animation.
-     *
-     * @param x The x-coordinate to animate.
-     *
-     * @param y The y-coordinate to animate.
-     *
-     * @param layer The layer to animate.
-     *
-     * @param animation The animation to display.
-     *
-     * @param type The animation type.
+     * Adds a visible animation.
+     * @param x the x-coordinate to animate
+     * @param y the y-coordinate to animate
+     * @param layer the layer to animate
+     * @param animation the animation to display
+     * @param type the animation type
      */
     public void add(final int x, final int y, final int layer, final Animation animation, final int type)
     {
@@ -125,11 +117,9 @@ public class CfMapAnimations
     }
 
     /**
-     * Remove all visible animations for a tile.
-     *
-     * @param x The x-coordinate to un-animate.
-     *
-     * @param y The y-coordinate to un-animate.
+     * Removes all visible animations for a tile.
+     * @param x the x-coordinate to un-animate
+     * @param y the y-coordinate to un-animate
      */
     public void remove(final int x, final int y)
     {
@@ -140,13 +130,10 @@ public class CfMapAnimations
     }
 
     /**
-     * Remove a visible animation.
-     *
-     * @param x The x-coordinate to un-animate.
-     *
-     * @param y The y-coordinate to un-animate.
-     *
-     * @param layer The layer to un-animate.
+     * Removes a visible animation.
+     * @param x the x-coordinate to un-animate
+     * @param y the y-coordinate to un-animate
+     * @param layer the layer to un-animate
      */
     public void remove(final int x, final int y, final int layer)
     {
@@ -157,15 +144,11 @@ public class CfMapAnimations
     }
 
     /**
-     * Update the animation speed value.
-     *
-     * @param x The x-coordinate to update.
-     *
-     * @param y The y-coordinate to update.
-     *
-     * @param layer The layer to update.
-     *
-     * @param speed The new animation speed.
+     * Updates the animation speed value.
+     * @param x the x-coordinate to update
+     * @param y the y-coordinate to update
+     * @param layer the layer to update
+     * @param speed the new animation speed
      */
     public void updateSpeed(final int x, final int y, final int layer, final int speed)
     {
@@ -184,12 +167,10 @@ public class CfMapAnimations
     }
 
     /**
-     * Scroll the animations. Animations scrolled off the visible are are
+     * Scrolls the animations. Animations scrolled off the visible are are
      * dropped.
-     *
-     * @param dx The x-distance to scroll.
-     *
-     * @param dy The y-distance to scroll.
+     * @param dx the x-distance to scroll
+     * @param dy the y-distance to scroll
      */
     public void scroll(final int dx, final int dy)
     {
@@ -212,9 +193,8 @@ public class CfMapAnimations
     }
 
     /**
-     * Process a tick command.
-     *
-     * @param tickNo The current tick number.
+     * Processes a tick command.
+     * @param tickNo the current tick number
      */
     public void tick(final int tickNo)
     {
