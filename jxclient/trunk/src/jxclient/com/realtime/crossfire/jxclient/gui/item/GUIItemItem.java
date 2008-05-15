@@ -97,6 +97,7 @@ public abstract class GUIItemItem extends GUIItem
         public void itemModified()
         {
             setChanged();
+            updateTooltipText();
         }
     };
 
@@ -245,7 +246,20 @@ public abstract class GUIItemItem extends GUIItem
         }
 
         setChanged();
+        updateTooltipText();
+    }
 
-        setTooltipText(item == null ? null : item.getName());
+    /**
+     * Updates the tooltip text for the current {@link #item}.
+     */
+    private void updateTooltipText()
+    {
+        if (item == null)
+        {
+            setTooltipText(null);
+            return;
+        }
+
+        setTooltipText(item.getTooltipText());
     }
 }
