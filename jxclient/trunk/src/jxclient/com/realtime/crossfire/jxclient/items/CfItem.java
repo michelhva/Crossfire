@@ -328,4 +328,74 @@ public class CfItem
     {
         listeners.remove(CfItemListener.class, listener);
     }
+
+    /**
+     * Returns a description suitable for a tooltip text.
+     * @return the tooltip text
+     */
+    public String getTooltipText()
+    {
+        final StringBuilder sb = new StringBuilder(128);
+        if (nrof > 1)
+        {
+            sb.append(nrof);
+            sb.append(' ');
+            sb.append(namePl);
+        }
+        else
+        {
+            sb.append(name);
+        }
+        final int totalWeight = nrof > 0 ? weight*nrof : weight;
+        if (totalWeight > 0)
+        {
+            sb.append("<br>");
+            if (totalWeight < 1000)
+            {
+                sb.append(totalWeight);
+                sb.append(" g");
+            }
+            else if(totalWeight < 10000)
+            {
+                final int tmp = (totalWeight+50)/100;
+                sb.append(tmp/10);
+                sb.append('.');
+                sb.append(tmp%10);
+                sb.append(" kg");
+            }
+            else
+            {
+                final int tmp = (totalWeight+500)/1000;
+                sb.append(tmp);
+                sb.append(" kg");
+            }
+        }
+        if ((flags&(F_BLESSED|F_MAGIC|F_CURSED|F_DAMNED|F_UNPAID)) != 0)
+        {
+            sb.append("<br>");
+            appendFlag(sb, F_BLESSED, "blessed");
+            appendFlag(sb, F_MAGIC, "magic");
+            appendFlag(sb, F_CURSED, "cursed");
+            appendFlag(sb, F_DAMNED, "damned");
+            appendFlag(sb, F_UNPAID, "unpaid");
+        }
+        return sb.toString();
+    }
+
+    /**
+     * Appends "(&lt;ident&gt;)" if this item has the flag <code>flag</code>
+     * set.
+     * @param sb the string builder to append to
+     * @param flag the flag to check
+     * @param ident the ident string to append
+     */
+    private void appendFlag(final StringBuilder sb, final int flag, final String ident)
+    {
+        if ((flags&flag) != 0)
+        {
+            sb.append('(');
+            sb.append(ident);
+            sb.append(')');
+        }
+    }
 }
