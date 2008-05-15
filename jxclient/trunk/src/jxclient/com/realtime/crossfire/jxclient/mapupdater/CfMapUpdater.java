@@ -212,6 +212,20 @@ public class CfMapUpdater
 
     /**
      * Creates a new instance.
+     * @param faceCache the instance for looking up faces
+     * @param animations the defined animations
+     */
+    public CfMapUpdater(final FaceCache faceCache, final Animations animations)
+    {
+        facesManager = null;
+        this.faceCache = faceCache;
+        this.animations = animations;
+        map = new CfMap(mapSquareListener);
+        visibleAnimations = new CfMapAnimations(this);
+    }
+
+    /**
+     * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
      * @param faceCache the instance for looking up faces
@@ -222,10 +236,7 @@ public class CfMapUpdater
         this.facesManager = facesManager;
         this.faceCache = faceCache;
         this.animations = animations;
-        if (crossfireServerConnection != null)
-        {
-            crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
-        }
+        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
         if (facesManager != null)
         {
             facesManager.addFacesManagerListener(facesManagerListener);
