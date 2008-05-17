@@ -52,12 +52,7 @@ More
 Object big_demon_2
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -68,12 +63,7 @@ More
 Object big_demon_3
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x731
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -84,12 +74,7 @@ More
 Object big_demon_4
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -100,12 +85,7 @@ More
 Object big_demon_5
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -117,12 +97,7 @@ More
 Object big_demon_6
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -134,12 +109,7 @@ More
 Object big_demon_7
 name big demon
 face big_demon.x31
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -150,12 +120,7 @@ More
 Object big_demon_8
 name big demon
 face big_demon.x71
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -167,12 +132,7 @@ More
 Object big_demon_9
 name big demon
 face big_demon.x71
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -184,12 +144,7 @@ More
 Object big_demon_A
 name big demon
 face big_demon.x71
-color_fg green
-anim
-facings 2
-big_demon.x71
-big_demon.x31
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -200,12 +155,7 @@ More
 Object big_demon_B
 name big demon
 face big_demon.x71
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
@@ -217,12 +167,7 @@ More
 Object big_demon_C
 name big demon
 face big_demon.x71
-color_fg green
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 monster 1
 move_type walk
 alive 1
