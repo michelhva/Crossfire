@@ -142,3 +142,17 @@ no_pick 1
 blocksview 1
 visibility 100
 end
+Object white_wall_left
+name wall
+face white_wall_left.111
+color_fg brown
+no_pick 1
+visibility 100
+end
+Object white_wall_bottom
+name wall
+face white_wall_bottom.111
+color_fg brown
+no_pick 1
+visibility 100
+end
