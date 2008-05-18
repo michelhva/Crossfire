@@ -2,13 +2,14 @@ arch map
 name Resir's House
 reset_timeout 7200
 difficulty 1
+region scorn
 width 25
 height 20
 enter_x 1
 enter_y 1
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
-Modified: 2008-05-05 Nicolas Weeger
+Modified: 2008-05-18 Arvid Norlander
 endmsg
 maplore
 @def Resir's house
@@ -791,8 +792,8 @@ arch note
 msg
 Drats my house has been over run!!!
 It seem my pets are stronger than
-I first though.  I will attempt to excape
-to my bacement.Hope to see you soon!!!
+I first though. I will attempt to escape
+to my basement. Hope to see you soon!!!
 endmsg
 x 5
 y 4
