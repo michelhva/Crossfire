@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2007-12-24 tchize
+Modified: 2008-05-17 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -940,6 +940,9 @@ y 39
 move_block all
 end
 arch university
+slaying /navar_city/university
+hp 24
+sp 37
 x 2
 y 39
 end
