@@ -398,10 +398,10 @@ public class GUIMap extends GUIElement
     private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
     {
         cleanSquare(g, x, y);
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
-        {
-            redrawSquare(g, map, x, y, layer);
-        }
+        final CfMapSquare mapSquare = map.getMapSquare(x, y);
+        final int px = offsetX+x*tileSize;
+        final int py = offsetY+y*tileSize;
+        redrawSquare(g, px, py, mapSquare);
         if (map.isFogOfWar(x, y))
         {
             g.setColor(fogOfWarColor);
@@ -420,46 +420,48 @@ public class GUIMap extends GUIElement
      *
      * @param g The graphics to draw into.
      *
-     * @param map The map to redraw.
+     * @param px The x coordinate of the square to redraw.
      *
-     * @param x The x coordinate of the square to redraw.
+     * @param py The y coordinate of the square to redraw.
      *
-     * @param y The y coordinate of the square to redraw.
-     *
-     * @param layer The layer to redraw.
+     * @param mapSquare the map square
      */
-    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
+    private void redrawSquare(final Graphics g, final int px, final int py, final CfMapSquare mapSquare)
     {
-        final int px = offsetX+x*tileSize;
-        final int py = offsetY+y*tileSize;
-
-        final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
-        if (headMapSquare != null)
+        final int px2 = px+tileSize;
+        final int py2 = py+tileSize;
+        final int mapSquareX = mapSquare.getX();
+        final int mapSquareY = mapSquare.getY();
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
-            final Face headFace = headMapSquare.getFace(layer);
-            assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
-            final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
-            final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
-            assert dx > 0 || dy > 0;
-            final int sx = imageIcon.getIconWidth()-tileSize*(dx+1);
-            final int sy = imageIcon.getIconHeight()-tileSize*(dy+1);
-            g.drawImage(imageIcon.getImage(),
-                px, py, px+tileSize, py+tileSize,
-                sx, sy, sx+tileSize, sy+tileSize,
-                null);
-        }
+            final CfMapSquare headMapSquare = mapSquare.getHeadMapSquare(layer);
+            if (headMapSquare != null)
+            {
+                final Face headFace = headMapSquare.getFace(layer);
+                assert headFace != null; // getHeadMapSquare() would have been cleared in this case
+                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
+                final int dx = headMapSquare.getX()-mapSquareX;
+                final int dy = headMapSquare.getY()-mapSquareY;
+                assert dx > 0 || dy > 0;
+                final int sx = imageIcon.getIconWidth()-tileSize*(dx+1);
+                final int sy = imageIcon.getIconHeight()-tileSize*(dy+1);
+                g.drawImage(imageIcon.getImage(),
+                    px, py, px2, py2,
+                    sx, sy, sx+tileSize, sy+tileSize,
+                    null);
+            }
 
-        final Face face = map.getFace(x, y, layer);
-        if (face != null)
-        {
-            final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
-            final int sx = imageIcon.getIconWidth();
-            final int sy = imageIcon.getIconHeight();
-            g.drawImage(imageIcon.getImage(),
-                px, py, px+tileSize, py+tileSize,
-                sx-tileSize, sy-tileSize, sx, sy,
-                null);
+            final Face face = mapSquare.getFace(layer);
+            if (face != null)
+            {
+                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
+                final int sx = imageIcon.getIconWidth();
+                final int sy = imageIcon.getIconHeight();
+                g.drawImage(imageIcon.getImage(),
+                    px, py, px2, py2,
+                    sx-tileSize, sy-tileSize, sx, sy,
+                    null);
+            }
         }
     }
 
