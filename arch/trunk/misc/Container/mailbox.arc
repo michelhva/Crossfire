@@ -8,6 +8,7 @@ value 50
 container 1500
 weight 4000
 identified 1
+no_pick 1
 end
 Object close_mail
 name close the mailbox
