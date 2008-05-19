@@ -82,10 +82,10 @@ public class CfMap
     private int maxPy = -1;
 
     /**
-     * Result values for {@link #isWithinMap(int,int)} and {@link
+     * Result values for {@link #getMapPatch(int,int)} and {@link
      * #expandTo(int,int)}.
      */
-    private int px, py, ox, oy;
+    private int ox, oy;
 
     /**
      * Left edge of viewable area.
@@ -140,8 +140,7 @@ public class CfMap
      */
     public void setDarkness(final int x, final int y, final int darkness)
     {
-        expandTo(x, y);
-        if (patch[px][py].setDarkness(ox, oy, darkness))
+        if (expandTo(x, y).setDarkness(ox, oy, darkness))
         {
             for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
             {
@@ -162,7 +161,8 @@ public class CfMap
      */
     public int getDarkness(final int x, final int y)
     {
-        return isWithinMap(x, y) ? patch[px][py].getDarkness(ox, oy) : 0;
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        return mapPatch != null ? mapPatch.getDarkness(ox, oy) : 0;
     }
 
     /**
@@ -180,8 +180,7 @@ public class CfMap
      */
     public void setFace(final int x, final int y, final int layer, final Face face)
     {
-        expandTo(x, y);
-        if (patch[px][py].resetFogOfWar(ox, oy))
+        if (expandTo(x, y).resetFogOfWar(ox, oy))
         {
             setDarkness(x, y, 255);
             for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
@@ -210,8 +209,7 @@ public class CfMap
      */
     private void setFaceInternal(final int x, final int y, final int layer, final Face face)
     {
-        expandTo(x, y);
-        final CfMapSquare headMapSquare = patch[px][py].getSquare(ox, oy);
+        final CfMapSquare headMapSquare = expandTo(x, y).getSquare(ox, oy);
 
         final Face oldFace = headMapSquare.getFace(layer);
         if (oldFace != null)
@@ -315,7 +313,8 @@ public class CfMap
      */
     public Face getFace(final int x, final int y, final int layer)
     {
-        return isWithinMap(x, y) ? patch[px][py].getFace(ox, oy, layer) : null;
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : null;
     }
 
     /**
@@ -333,8 +332,7 @@ public class CfMap
      */
     private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
     {
-        expandTo(x, y);
-        patch[px][py].setHeadMapSquare(ox, oy, layer, mapSquare);
+        expandTo(x, y).setHeadMapSquare(ox, oy, layer, mapSquare);
     }
 
     /**
@@ -351,7 +349,8 @@ public class CfMap
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
-        return isWithinMap(x, y) ? patch[px][py].getHeadMapSquare(ox, oy, layer) : null;
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        return mapPatch != null ? mapPatch.getHeadMapSquare(ox, oy, layer) : null;
     }
 
     /**
@@ -404,11 +403,11 @@ public class CfMap
      */
     public void clearSquare(final int x, final int y)
     {
-        expandTo(x, y);
-        patch[px][py].clearSquare(ox, oy);
+        final CfMapPatch mapPatch = expandTo(x, y);
+        mapPatch.clearSquare(ox, oy);
         for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
         {
-            final Face face = patch[px][py].getFace(ox, oy, layer);
+            final Face face = mapPatch.getFace(ox, oy, layer);
             if (face != null)
             {
                 dirtyFace(x, y, layer, face);
@@ -425,8 +424,7 @@ public class CfMap
      */
     public void dirty(final int x, final int y)
     {
-        expandTo(x, y);
-        patch[px][py].dirty(ox, oy);
+        expandTo(x, y).dirty(ox, oy);
     }
 
     /**
@@ -440,31 +438,31 @@ public class CfMap
      */
     public boolean isFogOfWar(final int x, final int y)
     {
-        return isWithinMap(x, y) && patch[px][py].isFogOfWar(ox, oy);
+        final CfMapPatch mapPatch = getMapPatch(x, y);
+        return mapPatch != null && mapPatch.isFogOfWar(ox, oy);
     }
 
     /**
      * Check if a given position is within the defined map area.
      *
-     * <p>Returns additional information in {@link #px}, {@link #py}, {@link
-     * #ox} and {@link #py}.
+     * <p>Returns additional information in {@link #ox} and {@link #oy}.
      *
      * @param x The x-coordinate to check.
      *
      * @param y The y-coordinate to check.
      *
-     * @return <code>true</code> iff the given position is within the defined
-     * map area.
+     * @return the map patch or <code>null</code> if the coordinates are out of
+     * map bounds
      */
-    private boolean isWithinMap(final int x, final int y)
+    private CfMapPatch getMapPatch(final int x, final int y)
     {
         if (x < minX || x > maxX || y < minY || y > maxY)
         {
-            return false;
+            return null;
         }
 
-        px = ((x-patchX)>>CfMapPatch.SIZE_LOG)-minPx;
-        py = ((y-patchY)>>CfMapPatch.SIZE_LOG)-minPy;
+        final int px = ((x-patchX)>>CfMapPatch.SIZE_LOG)-minPx;
+        final int py = ((y-patchY)>>CfMapPatch.SIZE_LOG)-minPy;
         assert px >= 0;
         assert py >= 0;
         assert px <= maxPx-minPx;
@@ -476,12 +474,14 @@ public class CfMap
         assert ox < CfMapPatch.SIZE;
         assert oy < CfMapPatch.SIZE;
 
-        if (patch[px][py] == null)
+        final CfMapPatch mapPatch = patch[px][py];
+        if (mapPatch != null)
         {
-            patch[px][py] = new CfMapPatch(mapSquareListener, x-patchX-ox, y-patchY-oy);
+            return mapPatch;
         }
 
-        return true;
+        patch[px][py] = new CfMapPatch(mapSquareListener, x-patchX-ox, y-patchY-oy);
+        return patch[px][py];
     }
 
     /**
@@ -512,8 +512,11 @@ public class CfMap
      * @param x The x-coordinate to expand the defined area to.
      *
      * @param y The y-coordinate to expand the defined area to.
+     *
+     * @return the map patch or <code>null</code> if the coordinates are out of
+     * map bounds
      */
-    private void expandTo(final int x, final int y)
+    private CfMapPatch expandTo(final int x, final int y)
     {
         if (minX > maxX || minY > maxY)
         {
@@ -533,10 +536,7 @@ public class CfMap
             if (y > maxY) increase(0, y-maxY);
         }
 
-        if (!isWithinMap(x, y))
-        {
-            throw new AssertionError();
-        }
+        return getMapPatch(x, y);
     }
 
     /**
@@ -767,8 +767,7 @@ public class CfMap
      */
     public CfMapSquare getMapSquare(final int x, final int y)
     {
-        expandTo(x, y);
-        return patch[px][py].getSquare(ox, oy);
+        return expandTo(x, y).getSquare(ox, oy);
     }
 
     /**
