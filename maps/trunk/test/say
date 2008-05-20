@@ -4,7 +4,7 @@ width 10
 height 10
 msg
 Created:  2008-05-11 Nicolas Weeger
-Modified: 2008-05-11 Nicolas Weeger
+Modified: 2008-05-13 Nicolas Weeger
 endmsg
 end
 arch pstone_4
@@ -338,6 +338,18 @@ endmsg
 x 7
 y 8
 stand_still 1
+arch magic_ear
+msg
+@match test
+Something clongs.
+endmsg
+end
+arch magic_ear
+msg
+@match rewritten
+Something clicks nearby.
+endmsg
+end
 end
 arch pstone_4
 x 7
