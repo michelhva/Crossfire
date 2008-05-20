@@ -4,7 +4,7 @@ width 20
 height 20
 msg
 Created:  2008-05-10 Nicolas Weeger
-Modified: 2008-05-12 Nicolas Weeger
+Modified: 2008-05-20 Nicolas Weeger
 endmsg
 end
 arch pstone_1
@@ -1200,6 +1200,23 @@ end
 arch pstone_1
 x 14
 y 7
+end
+arch conjurer
+x 14
+y 7
+stand_still 1
+arch event_say
+title Python
+slaying /test/cfanim.py
+msg
+@match *
+hmmm
+endmsg
+end
+arch event_user
+title Animator
+slaying /test/cfanim.conjurer
+end
 end
 arch pstone_1
 x 14
