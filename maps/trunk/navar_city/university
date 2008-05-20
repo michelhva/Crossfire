@@ -8,7 +8,7 @@ enter_x 24
 enter_y 37
 msg
 Created:  2008-05-17 Nicolas Weeger
-Modified: 2008-05-19 Nicolas Weeger
+Modified: 2008-05-20 Nicolas Weeger
 endmsg
 maplore
 The university features:
@@ -3094,7 +3094,9 @@ You'll obviously want to talk to professor Ulote, the head of the history depart
 
 You can find his office on the west wing, he shouldn't be too far from it.
 @match monster
-Professor Drolf is out in the wilderness, so you cant talk to her for now...
+Ha, you'll want to talk to Professor Drolf.
+
+You can usually find her somewhere in the east wing.
 @match *
 @question magic Do you have a department of magical studies?
 @question geography Do you have a department of world geography?
@@ -5077,6 +5079,10 @@ arch cobblestones2
 x 23
 y 34
 end
+arch lamppost
+x 23
+y 34
+end
 arch cobblestones2
 x 23
 y 35
@@ -5265,10 +5271,6 @@ x 24
 y 34
 blocksview 0
 end
-arch lamppost
-x 24
-y 34
-end
 arch cobblestones2
 x 24
 y 35
@@ -5373,9 +5375,17 @@ arch large_vdoor1
 x 25
 y 8
 end
+arch mover_3
+x 25
+y 9
+end
 arch cobblestones2
 x 25
 y 9
+end
+arch mover_3
+x 25
+y 10
 end
 arch cobblestones2
 x 25
@@ -5721,6 +5731,10 @@ x 26
 y 33
 end
 arch cobblestones2
+x 26
+y 34
+end
+arch lamppost
 x 26
 y 34
 end
@@ -6226,9 +6240,10 @@ arch marble
 x 29
 y 14
 end
-arch close_desk
+arch desk
 x 29
 y 14
+no_pick 1
 end
 arch grass_only
 x 29
@@ -7739,9 +7754,17 @@ arch large_vdoor1
 x 36
 y 21
 end
+arch mover_3
+x 36
+y 22
+end
 arch cobblestones2
 x 36
 y 22
+end
+arch mover_3
+x 36
+y 23
 end
 arch cobblestones2
 x 36
@@ -7949,9 +7972,10 @@ arch marble
 x 37
 y 17
 end
-arch close_wizdesk
+arch wizdesk
 x 37
 y 17
+no_pick 1
 end
 arch marble
 x 37
@@ -8015,9 +8039,10 @@ arch marble
 x 37
 y 28
 end
-arch close_desk_cw
+arch desk_cw
 x 37
 y 28
+no_pick 1
 end
 arch grass_only
 x 37
@@ -8875,6 +8900,10 @@ arch marble
 x 41
 y 28
 end
+arch mover_1
+x 41
+y 29
+end
 arch cobblestones2
 x 41
 y 29
@@ -9105,6 +9134,10 @@ end
 arch marble
 x 42
 y 28
+end
+arch mover_1
+x 42
+y 29
 end
 arch cobblestones2
 x 42
@@ -9460,6 +9493,28 @@ arch marble
 x 44
 y 14
 end
+arch woman
+name Professor Drolf
+msg
+@match lorkas
+Lorkas, you say? Hum, let's see...
+@match *
+Howdy. I'm professor Drolf, and monsters are my speciality.
+
+Can I help you?
+endmsg
+x 44
+y 14
+random_movement 1
+arch event_say
+title Python
+slaying /python/maps/navar_city/university-dorlf.py
+end
+arch event_user
+title Animator
+slaying /animations/maps/navar_city/university-dorlf.animation
+end
+end
 arch marble
 x 44
 y 15
@@ -9674,9 +9729,10 @@ arch marble
 x 45
 y 16
 end
-arch close_desk
+arch desk
 x 45
 y 16
+no_pick 1
 end
 arch marble
 x 45
@@ -9745,9 +9801,10 @@ arch marble
 x 45
 y 26
 end
-arch close_desk_cw
+arch desk_cw
 x 45
 y 26
+no_pick 1
 end
 arch marble
 x 45
