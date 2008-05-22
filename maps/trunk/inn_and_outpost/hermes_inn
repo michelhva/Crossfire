@@ -7,6 +7,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -309,12 +310,15 @@ end
 arch fatman
 name Hermes
 msg
-@match hello|Hello
+@match hi|hello
+@question room Do you have a room for the night?
 Greetings, welcome to my inn.
 You must be cold and tired.
-@match room|Room|bed|Bed
+@match room|bed
+@question 50 Fifty goldcoins!?
 Need a room eh? Upstairs, cost ya 50 gold for one day.
-@match 50|fifty|Fifty
+@match 50|fifty
+@reply ripoff You are ripping me off!
 Not much else around friend.
 @match ripoff|cheat|robbery
 You could always go sleep with the bears...
@@ -327,6 +331,7 @@ Who?  Never heard of him.
 @match White|white
 Look. I'm getting tired of all your questions...understand me?
 @match *
+@question room Do you have a room for the night?
 What can I gettcha?
 endmsg
 x 3
@@ -743,6 +748,12 @@ end
 arch woodfloor2
 x 7
 y 8
+end
+arch button_small
+x 7
+y 9
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 7
