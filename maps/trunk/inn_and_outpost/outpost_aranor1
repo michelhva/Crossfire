@@ -6,6 +6,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  2004-03-07 Avion
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -2375,13 +2376,17 @@ end
 arch merchant
 msg
 @match merchant|trade
+@question elves Where are the elves?
+@question dangerous What do you mean with "dangerous"?
 I mostly trade with the elves.
 Some say it's dangerous but you just have to be cautious.
 @match elves
 Yes there is a elven village to the west of here.
 @match dangerous
+@question elves Where are the elves?
 Well the elves aren't really dangerous but the Dark Forest is...
 @match *
+@question merchant Who do you trade with out here in the wilderness?
 Hello, good to meet you.  I'm Zim, a merchant by trade.
 endmsg
 x 18

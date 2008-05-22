@@ -7,6 +7,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2008-05-22 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -728,7 +729,7 @@ end
 arch pixie
 name Sweet
 msg
-@match hello
+@match hi|hello
 Greetings, I am Sweet
 Please take advantage of my services.
 @match Sweet
@@ -1719,7 +1720,7 @@ msg
 @match Sweet
 No, I'm not Sweet
 Sweet is the big pixie over in the corner.
-@match Hello
+@match hi|hello
 Hello, welcome to Sweets.
 Food and drink available at a reasonable rate.
 Rooms are 50 gold.
