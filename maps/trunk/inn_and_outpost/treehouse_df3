@@ -6,6 +6,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2004-05-30 Avion
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -455,7 +456,7 @@ We are on watch.
 @match watch
 We must keep watch on the forest.
 @match forest
-The DarkForest is a chaotic and dangerous place.
+The Dark forest is a chaotic and dangerous place.
 @match *
 Greetings.
 endmsg

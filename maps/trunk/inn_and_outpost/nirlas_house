@@ -7,6 +7,7 @@ enter_x 23
 enter_y 6
 msg
 Created:  2004-05-28 Avion
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -1235,10 +1236,12 @@ msg
 @match hi|hello
 Hello, I am Nirla, please make yourself welcome.
 @match dark|forest
+@question greenway What is this "Greenway"?
 Although it may seem to be many places where you
 can find it, there is only one Dark Forest.
 It is all connected - these connections are called The Greenway.
-@match greenway|Greenway|way
+@match greenway
+@question portal Where can I find a portal?
 The Greenway of the forest spans the world (and some say even time itself).
 The portals are hard to find and the paths are chaotic and dangerous.
 Only the experienced may find their way.
@@ -5652,15 +5655,15 @@ smoothlevel 254
 end
 arch elf_1
 msg
-@match *
-Nirla keeps a restful house.
-
 @match Nirla
+@question queen What queen are you talking about?
 Yes this is her home. She is wise
 but also, she is the Queen's daughter.
-
-@match Queen
+@match queen
 The Queen of the elves.
+@match *
+@question Nirla Who is Nirla?
+Nirla keeps a restful house.
 endmsg
 x 21
 y 4
