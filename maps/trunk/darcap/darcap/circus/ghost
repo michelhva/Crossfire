@@ -7,6 +7,7 @@ width 32
 height 16
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-05-22 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -224,6 +225,7 @@ end
 arch torch_vermilion
 x 1
 y 13
+no_pick 1
 end
 arch dungeon_floor
 x 1
@@ -501,6 +503,7 @@ end
 arch torch_vermilion
 x 3
 y 13
+no_pick 1
 end
 arch dungeon_floor
 x 3
@@ -853,6 +856,7 @@ end
 arch torch_indigo
 x 6
 y 5
+no_pick 1
 end
 arch dungeon_floor
 x 6
@@ -888,6 +892,7 @@ end
 arch torch_indigo
 x 6
 y 9
+no_pick 1
 end
 arch dungeon_floor
 x 6
@@ -1926,6 +1931,7 @@ end
 arch torch_indigo
 x 13
 y 14
+no_pick 1
 end
 arch dungeon_floor
 x 13
@@ -2343,6 +2349,7 @@ end
 arch torch_indigo
 x 17
 y 1
+no_pick 1
 end
 arch dirtfloor
 x 17
@@ -2472,6 +2479,7 @@ end
 arch torch_indigo
 x 17
 y 14
+no_pick 1
 end
 arch dungeon_floor
 x 17
@@ -2626,6 +2634,7 @@ end
 arch torch_indigo
 x 19
 y 1
+no_pick 1
 end
 arch dirtfloor
 x 19
@@ -2988,6 +2997,7 @@ end
 arch torch_indigo
 x 21
 y 10
+no_pick 1
 end
 arch dungeon_floor
 x 21
@@ -3235,6 +3245,7 @@ end
 arch torch_indigo
 x 23
 y 6
+no_pick 1
 end
 arch dungeon_floor
 x 23
@@ -3586,6 +3597,7 @@ end
 arch torch_indigo
 x 25
 y 14
+no_pick 1
 end
 arch dungeon_floor
 x 25
@@ -3827,6 +3839,7 @@ end
 arch torch_indigo
 x 27
 y 12
+no_pick 1
 end
 arch dirtfloor
 x 27
@@ -4130,6 +4143,7 @@ end
 arch torch_indigo
 x 30
 y 1
+no_pick 1
 end
 arch dirtfloor
 x 30
@@ -4198,6 +4212,7 @@ end
 arch torch_indigo
 x 30
 y 8
+no_pick 1
 end
 arch dungeon_floor
 x 30

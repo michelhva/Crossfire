@@ -7,7 +7,7 @@ enter_x 13
 enter_y 7
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-22 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -600,6 +600,7 @@ end
 arch torch_vermilion
 x 6
 y 1
+no_pick 1
 end
 arch cobblestones2
 x 6
@@ -669,6 +670,7 @@ end
 arch torch_vermilion
 x 6
 y 12
+no_pick 1
 end
 arch cobblestones2
 x 6
@@ -1343,6 +1345,7 @@ end
 arch torch_cyan
 x 12
 y 4
+no_pick 1
 end
 arch cobblestones2
 x 12
@@ -1391,6 +1394,7 @@ end
 arch torch_cyan
 x 12
 y 10
+no_pick 1
 end
 arch cobblestones2
 x 12
