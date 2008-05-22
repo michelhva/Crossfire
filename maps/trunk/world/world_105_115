@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2007-12-24 tchize
+Modified: 2008-05-19 Arvid Norlander
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -795,6 +795,7 @@ end
 arch guard_house_1
 x 1
 y 45
+type 0
 end
 arch dungeon_magic
 x 1
@@ -808,6 +809,7 @@ end
 arch guard_house_1
 x 1
 y 46
+type 0
 end
 arch dungeon_magic
 x 1
@@ -1236,6 +1238,7 @@ end
 arch guard_house_2
 x 2
 y 45
+type 0
 end
 arch dungeon_magic
 x 2
@@ -1249,6 +1252,7 @@ end
 arch guard_house_2
 x 2
 y 46
+type 0
 end
 arch dungeon_magic
 x 2
