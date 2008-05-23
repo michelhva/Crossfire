@@ -6,6 +6,7 @@ width 15
 height 14
 msg
 Created:  2000-06-03
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -938,7 +939,7 @@ y 7
 end
 arch magic_ear
 msg
-@match favour|Favour
+@match favour
 endmsg
 x 6
 y 7
@@ -955,20 +956,20 @@ end
 arch merchant
 name Romeo
 msg
-@match Lara|lara
+@match lara
 You have seen her? In the castle...
 What did she say? - Afterlife?
 That is not an option, I want to have
 babies with her! Please, could you do
 me a favour?
-@match [Jj]ulia|[Jj]uliet
+@match julia|juliet
 It is not THAT easy, you know...
-@match [Ff]avour
+@match favour
 Great, please defeat the Evil Masters!
 Take this book of mine. It might help
 you to find your way through that
 castle.
-@match [Ww]ife
+@match wife
 You have seen her? You are a liar, you
 don't even know her name.
 @match *

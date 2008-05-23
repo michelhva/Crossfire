@@ -6,6 +6,7 @@ width 15
 height 15
 msg
 Created:  1996-02-13
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -621,16 +622,16 @@ end
 arch woman
 name Lauretta
 msg
-@match [Gg]hothwolte
+@match ghothwolte
 Ghothwolte is the "perfect being".
 Even Eureca couldn't defeat him...
-@match Eureca|eureca
+@match eureca
 Eureca and Cordish went to consult
 with Kurte.
-@match Cordish|cordish
+@match cordish
 Cordish is our servant. He is a
 coward... I don't like him.
-@match Kurte|kurte
+@match kurte
 Kurte are the elders of pupland.
 They know everything about pupland.
 So they'll solve this disaster.

@@ -6,7 +6,7 @@ width 24
 height 17
 msg
 Created:  1996-02-18
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch grass
@@ -464,7 +464,7 @@ end
 arch magic_ear
 name 1
 msg
-@match yes|Yes
+@match yes
 Click.
 endmsg
 x 4
@@ -478,7 +478,7 @@ end
 arch elf
 name Reception of ???
 msg
-@match Yes|yes
+@match yes
 Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll. I have opened the gate for you...
 @match *
 Sssh! Please lower your voice...
@@ -979,9 +979,9 @@ end
 arch elf
 name Regular Army
 msg
-@match [Rr]esistance
+@match resistance
 Lone town is the origin and center of the "resistance" movement.
-@match Regular|regular
+@match regular
 We'll win the war against the resistance because we can outnumber them.
 @match *
 This is the guild of Regular Army. I'm working as a spy.
@@ -1444,9 +1444,9 @@ end
 arch elf
 name Regular Army
 msg
-@match Resistance|resistance
+@match resistance
 We fight against them.
-@match [Bb]arrier|[Ss]tation
+@match barrier|station
 There is a barrior station to the
 south-east from this town.
 We prevent Liberation Army from
@@ -1946,7 +1946,7 @@ end
 arch guildmaster
 name James, the guildmaster
 msg
-@match Siegfried
+@match siegfried
 He is our Hero!
 @match *
 Conglaturations! Now you are a member of Regular Army. Don't loose your passport, it enables you to pass the barrier station.

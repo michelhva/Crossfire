@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch marble
@@ -932,14 +933,14 @@ end
 arch woman2
 name Lara
 msg
-@match [Mm]arr[iy]
+@match marr[iy]
 My husband's name is Romeo. If you
 ever see him, tell him that I love him
 and that I'll wait for him in
 afterlife!
 There's no way for you to set me free,
 I'm heavily chained... *crying*
-@match [Rr]omeo
+@match romeo
 He is working on the translation
 of ancient scripts. The Evil Masters
 don't want them to be translated...

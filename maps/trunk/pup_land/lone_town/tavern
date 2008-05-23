@@ -6,6 +6,7 @@ width 25
 height 25
 msg
 Created:  1997-02-22
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch afloor_left
@@ -220,13 +221,13 @@ y 9
 end
 arch dwarf
 msg
-@match Fox|fox|Tail|tail
+@match fox|tail
 Fox Tails live in the forest, somewhere in the center of lone town. But we don't know how to get there.
-@match Nazgul|nazgul
+@match nazgul
 Nazgul's crew lives in the power plant, to the west of lone town.
-@match Gang|gang|Bandit|bandit
+@match gang|bandit
 One is Nazgul and his devils, the other one is "Fox Tails". The former are very cruel, Nazgul kills anyone on sight. The latter don't murder people.
-@match Rob|rob
+@match rob
 There are two Gangs of Bandits in this town.
 @match *
 Don't Rob anything!
@@ -296,16 +297,16 @@ end
 arch wizard
 name Trainee
 msg
-@match no|No
+@match no
 You should see it.
-@match yes|Yes
+@match yes
 So where did the "paper-sword" go?
 @match underground
 You are very bright! I'll tell you a secret:
 There is an invisible stairway to the south, under the Dressing room.
-@match stair|Stair
+@match stair
 Be careful! The Magician Leader is very strong.
-@match fool|Fool
+@match fool
 He is just stupid. However, his queries can be difficult. So, if you can't think of any correct answer, say honestly "I don't know".
 @match *
 Have you ever seen the Magic Show?
@@ -681,9 +682,9 @@ y 3
 end
 arch thief
 msg
-@match No|no|Castle|castle
+@match no|castle
 There are two ways into the castle. Eureca was very smart. Don't you know the cave to the north of castle? A secret passage from that cave leads into the castle.
-@match Yes|yes
+@match Yes
 ...
 @match *
 Have you ever been to the Castle of Eureca?
@@ -1248,15 +1249,15 @@ end
 arch mage
 name Learned man
 msg
-@match Cordish|cordish
+@match cordish
 He lives in the south-eastern part of the town.
-@match son|Son|wife|Wife
+@match son|wife
 Ask Cordish about them.
-@match daughter|Daughter
+@match daughter
 "he has no daughter"
-@match family|Family
+@match family
 Eureca has a Wife and a Son.
-@match Eureca|eureca|No|no
+@match eureca|no
 He used to be the lord of this country. But he disappeared two years ago. His Family is still waiting for him to return...
 @match *
 Do you know the Castle of Eureca?
@@ -1319,11 +1320,11 @@ y 22
 end
 arch viking
 msg
-@match Item|item
+@match item
 Shopkeepers say, "Transports are stopped by the war". But they hide many items under their shop, and wait for a rise in prices!
-@match yes|Yes
+@match yes
 There are a few Items in it.
-@match No|no
+@match no
 You had not better going there.
 @match *
 Have you ever been to shops in Lone Town?
@@ -1448,9 +1449,9 @@ y 17
 end
 arch swashbuckler
 msg
-@match Tower|tower|No|no
+@match tower|no
 It's to the east of the Lone Town. I've heard there should be a powerful artifact, a cloak, inside that tower... If I only knew how to enter!!!
-@match yes|Yes
+@match yes
 I have been there too, but I couldn't enter... :-(
 @match *
 Do you know Tower of Ordeal yet?
@@ -1931,11 +1932,11 @@ y 3
 end
 arch northman
 msg
-@match Tree|tree
+@match tree
 He loves trees very much.
-@match Tower|tower
+@match tower
 He plants Tree around the tower.
-@match Pupuly|pupuly
+@match pupuly
 He lives in his Tower.
 @match *
 Pupuly is in his second childhood.
@@ -2139,9 +2140,9 @@ end
 arch viking
 name Frederick
 msg
-@match heinrich|Heinrich
+@match heinrich
 We live in sourth-eastern part of lone town.
-@match yes|Yes
+@match yes
 So you have traveled to many places yet, I guess? Have you ever seen the pre-historical site? My brother, Heinrich has searched for that pre-historical sites for many years now. If you know anything about it, please go and talk to Heinrich.
 @match *
 Are you an adventurer?
@@ -2479,11 +2480,11 @@ end
 arch swashbuckler
 name Canvasser
 msg
-@match yes|Yes
+@match yes
 Great, go to the guild of freedom, our guild.
-@match [Ll]iberation|[Aa]rmy
+@match liberation|army
 Do you wanna join us? :-)
-@match no|No
+@match no
 You are a member of Regular Army, aren't you? - I'LL KILL YOU!!
 @match *
 I'm a member of Liberation army.
@@ -2991,11 +2992,11 @@ y 12
 end
 arch sage
 msg
-@match Hello|Hi|hello|hi
+@match hello|hi
 Hello stranger! Do you buy a booze for me?
-@match no|No|nope
+@match no|nope
 Then go away!
-@match yes|Yes
+@match yes
 Thank you. Did you ever heared of Maveric the founder of the Forgotten Town? Until he died there was everything better in the Town. As he died only adventurers discovered the entrance to the town hidden under the earth.
 @match where
 When you want to see it travel to Darcap.
@@ -3261,15 +3262,15 @@ y 6
 end
 arch dwarf_priest
 msg
-@match [Ee]lectric|[Pp]ower|[Pp]lant
+@match electric|power|plant
 It's located to the west of Lone Town. Would you retrieve the report for me?
-@match Thieves|thieves
+@match thieves
 Their aggitating point (agito) is the Electric Power Plant.
-@match Nazgul|nazgul
+@match nazgul
 He is the boss of those Thieves.
-@match Note|note
+@match note
 It is the Nazgul Report. We must know him - to defeat him. Now he stole it!
-@match yes|Yes
+@match yes
 Thanks. If you get the Report, please put it on this table. I'll give you my special tool. But be careful! Nazgul is an odd creature. And his bodyguard, Ologhi is very strong.
 @match *
 My research Notes were stolen by thieves!
@@ -3361,7 +3362,7 @@ end
 arch guildmaster
 name Bob
 msg
-@match Nurnberg|nurnberg
+@match nurnberg
 Nurnberg is located far east from this here.
 @match Lickmond
 He works for Bauer. He is the general of Regular Army.
@@ -3369,13 +3370,13 @@ He works for Bauer. He is the general of Regular Army.
 He is the mayor of the Nurnberg. Shortly after Eureca was gone, he said:
 "The people of Lone Town kidnapped Eureca. We must not permit their reckless attempt."
 In fact, THEY have kidnapped Eureca, probably Bauer himself did it.
-@match Regular|regular
+@match regular
 Bauer and Lickmond are the leaders of Regular Army.
-@match Eureca|eureca
+@match eureca
 He is the lord of this country.
-@match no|No
+@match no
 They kidnapped the lord of the land, Eureca. Those dirty bastards!
-@match yes|Yes
+@match yes
 ...
 @match *
 Do you know why we fight agaist the Regular Army?
@@ -3507,13 +3508,13 @@ end
 arch elf
 name Spy of Regular Army
 msg
-@match No|no
+@match no
 You will regret your decision...
-@match spy|Spy
+@match spy
 Oops! Sure... I'm a spy of Regular Army. Please, don't tell anybody.
-@match Regular|regular
+@match regular
 Would you like to join us? :-)
-@match yes|Yes
+@match yes
 So, go to the guild of law, our guild. The password of the guild is "blackbird". Don't forget that...
 @match *
 Be quiet!

@@ -7,6 +7,7 @@ width 20
 height 20
 msg
 Created:  1996-06-08
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -1281,11 +1282,11 @@ end
 arch thief
 name Andersen, boss of the gang
 msg
-@match Siegfried|siegfried
+@match siegfried
 Haha, he is the hero of this land.
 He would never kill anybody!
 I don't believe you.
-@match Cordish|cordish
+@match cordish
 Siegfried and Cordish are one and the
 same person? Now I begin to
 understand...
@@ -1293,11 +1294,11 @@ I will kill him! And you may pass
 friend. But be careful...
 I hear frightening noises from the
 castle every night!
-@match Path|path|gate|Gate
+@match path|gate
 If you want to pass,
 please tell me "who killed Jacob, my
 follower".
-@match Boss|boss|Gang|gang
+@match boss|gang
 Yeah!
 We Robbed the mysterious cristal from
 the castle by using the secret Path!

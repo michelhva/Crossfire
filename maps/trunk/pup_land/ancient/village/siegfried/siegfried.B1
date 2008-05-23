@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-06-05
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch flagstone
@@ -327,7 +328,7 @@ y 10
 end
 arch magic_ear
 msg
-@match open|Open|OPEN
+@match open
 Click.
 endmsg
 x 3
