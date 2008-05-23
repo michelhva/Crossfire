@@ -680,7 +680,7 @@ y 7
 end
 arch magic_ear
 msg
-@match Yes|yes|Key|key
+@match yes|key
 Click.
 endmsg
 x 7
@@ -1398,10 +1398,10 @@ end
 arch thief
 name M. Frozen
 msg
-@match word|Word
+@match word
 I don't know.
 
-@match yes|Yes|key|Key
+@match yes|key
 O.K.
 
 @match *

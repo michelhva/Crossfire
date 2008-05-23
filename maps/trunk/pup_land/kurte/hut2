@@ -1283,10 +1283,10 @@ statue near the castle of Eureca:
   NW -> E -> S -> (appear)
 Eureca probaly got into trouble.
 Please meet Kurte for "saving eureca".
-@match Kurte|kurte
+@match kurte
 I'm a scholar of Kurte...
 You are not worthy to meet him yet.
-@match Eureca|eureca
+@match eureca
 I don't know where he is. Kurte is the
 only one who might know it...
 @match person|high position

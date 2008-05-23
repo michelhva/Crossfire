@@ -520,7 +520,7 @@ end
 arch guildmaster
 name Prof. Gill.
 msg
-@match yes|Yes
+@match yes
 Do your best, ha ha!
 @match *
 Welcome to my laboratory, adventurer!

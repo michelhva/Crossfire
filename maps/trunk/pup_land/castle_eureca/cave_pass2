@@ -1565,7 +1565,7 @@ connected 1
 end
 arch magic_ear
 msg
-@match Bernie|bernie|Barnard|barnard
+@match bernie|barnard
 Click.
 endmsg
 x 6
@@ -2478,7 +2478,7 @@ connected 2
 end
 arch magic_ear
 msg
-@match Lauretta|lauretta|Laurel|laurel
+@match lauretta|laurel
 Click.
 endmsg
 x 10
@@ -3240,7 +3240,7 @@ y 10
 end
 arch magic_ear
 msg
-@match Eureca|eureca
+@match eureca
 Click.
 endmsg
 x 13

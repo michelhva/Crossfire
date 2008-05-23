@@ -891,14 +891,14 @@ msg
 Oh yes!, and if you best me, I may let you see
 what lies beyond for THeeee....Do you accept
 my challenge??
-@match challenge|Challenge
+@match challenge
 Yes or no will do.
-@match yes|Yes
+@match yes
 Very well, White as a ghost, Faster than thee,
 Taller than a mountain, Louder than me,
 Bright as the brightest star, Silent as the best
 thief, what is it that thou doest see?
-@match no|No
+@match no
 Very well, bother me no more....Or tomorrow
 you will be Painfully sore
 @match *
@@ -912,7 +912,7 @@ unaggressive 1
 end
 arch magic_ear
 msg
-@match Cloud|cloud
+@match cloud
 Very good Adventurer! You have are indeed
 as cunning as me! but of course I will not
 FLEE!

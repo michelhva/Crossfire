@@ -3952,7 +3952,7 @@ blocksview 1
 end
 arch magic_ear
 msg
-@match wall|Wall
+@match wall
 There is a knock on the wall.
 endmsg
 x 15

@@ -730,7 +730,7 @@ y 8
 end
 arch magic_ear
 msg
-@match quest|Quest
+@match quest
 Praise God someone is here to save us.
 We are being overrun by damned
 creatures that stalk the night.  So
@@ -743,14 +743,14 @@ talking to that good for nothing High
 Wizzard of ours, Wizzo, you will find
 him in his shop, he may know something
 about the dead that plague us.
-@match necromancy|Necromancy
+@match necromancy
 why do you ask about that vile art of
 magic, it is banned because our
 previous High Wizard practiced it
 regularly.  Bringing forth vile
 creatures.  But we put a stop to him,
 threw him in prison we did.
-@match wizzo|Wizzo
+@match wizzo
 Yes that Wizzo is a good for nothing
 Leach, oh he was of some use to the
 city until he opened his shop.  He is
@@ -1616,7 +1616,7 @@ y 8
 end
 arch magic_ear
 msg
-@match quest|Quest
+@match quest
 So you are the ones who think they can
 get rid of these smugglers...well we
 have tried and they keep coming back.
@@ -1624,13 +1624,13 @@ Well you might want to talk to the
 Dwarven priests in the church, they do
 know something that they won't tell
 us, something about being worthy
-@match smugglers|Smugglers
+@match smugglers
 What a vile bunch they are those
 smugglers, with many allies
-@match allies|Allies
+@match allies
 Aye, some say they are in league
 with Devils
-@match priests|Priests
+@match priests
 Well if ya want ta know about
 them...go ask them yourself
 @match *

@@ -4798,9 +4798,9 @@ end
 arch pirate
 name Thief
 msg
-@match Bauer|bauer
+@match bauer
 He is very rich..
-@match Path|path
+@match path
 Yeah!, it leads to the treasure room
 of the castle!
 @match *

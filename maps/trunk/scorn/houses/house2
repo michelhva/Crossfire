@@ -1317,7 +1317,7 @@ end
 arch woman
 name Mrs. Patch
 msg
-@match name|Name
+@match name
 I'm Jane Patch.
 @match *
 Go away. I'm busy preparing dinner.
@@ -2435,7 +2435,7 @@ end
 arch man
 name Mr. Patch
 msg
-@match name|Name
+@match name
 I'm Art Patch.
 @match *
 Right now, my wife wants me to
