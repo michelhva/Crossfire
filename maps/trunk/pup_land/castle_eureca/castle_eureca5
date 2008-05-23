@@ -6,6 +6,7 @@ width 22
 height 45
 msg
 Created:  1996-02-07
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch flagstone
@@ -3783,7 +3784,7 @@ connected 15
 end
 arch magic_ear
 msg
-@match disperse|Disperse
+@match disperse
 endmsg
 x 9
 y 30
@@ -3803,7 +3804,7 @@ end
 arch corpse1
 name Lord Eureca
 msg
-@match disperse|Disperse
+@match disperse
 Good.. now kill.. that.. son of a..
 bitch...
 *Eureca is coughing blood*
@@ -4067,15 +4068,15 @@ end
 arch sailor
 name Gothwolte
 msg
-@match [Ff]amily
+@match family
 Eureca's family? I don't care, bua ha
 ha...
-@match Eureca|eureca
+@match eureca
 Eureca is the perfect body. He fled
 from my attack and I have to find him
 soon. I'll let you live if you help me
 find Eureca.
-@match [Bb]ody
+@match body
 My body... that is the guy who found
 me recently, after horrible decades of
 waiting. But you don't understand my

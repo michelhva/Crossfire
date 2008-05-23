@@ -6,6 +6,7 @@ width 6
 height 6
 msg
 Created:  1997-02-12
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch marble
@@ -171,7 +172,7 @@ y 2
 end
 arch slave
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 Hello! I'm waiting for my master.
 @match master
 Yes, he went adventuring and I await

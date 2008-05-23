@@ -9,6 +9,7 @@ width 16
 height 16
 msg
 Created:  1997-02-22
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -869,7 +870,7 @@ end
 arch madman
 name shopkeeper
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello there! Welcome to this fantastic
 shop! It is full of monsters, so
 please be careful!

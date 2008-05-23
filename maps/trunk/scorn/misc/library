@@ -10,6 +10,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch grass
@@ -1399,7 +1400,7 @@ end
 arch sage
 name Holtsapple the Sage
 msg
-@match Hi|hi|hello
+@match hi|hello
 Err... well welcome (*harumph*). Please
 try to keep quiet in the library.
 @match door|gate|enter|entrance|help
@@ -2483,7 +2484,7 @@ end
 arch sage
 name Narweenle the Librarian
 msg
-@match Hi|hi|hello
+@match hi|hello
 Err... well welcome (*harumph*). Please
 try to keep quiet in the library.
 @match door|gate|enter|entrance|help

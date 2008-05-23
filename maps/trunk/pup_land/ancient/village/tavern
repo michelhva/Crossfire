@@ -6,6 +6,7 @@ width 16
 height 18
 msg
 Created:  1996-02-21
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -533,12 +534,12 @@ y 2
 end
 arch priest
 msg
-@match Necromancer|necromancer
+@match necromancer
 He is very nasty because he dislikes
 Siegfried. He lives in the mountains.
 But Siegfried is kind enough to let
 him live for another weak or two.
-@match Hole|hole
+@match hole
 Monsters manage to come out.
 I guess they are Necromancer's work.
 @match *
@@ -1238,19 +1239,19 @@ y 2
 end
 arch siegfried
 msg
-@match Cordish|cordish
+@match cordish
 Psst! You know my old name, don't you?
 I want to have a talk with you.
 There is a switch in the tree of my
 house.
-@match [Yy]ou killed [Jj]acob
+@match you killed jacob
 Hahaha!
 I love such kind of joke.
 BTW, I wanna invite you to dinner.
 There is a switch in the tree of my
 house.
 I'll be waiting for you :)
-@match no|No
+@match no
 You refuse to fetch my beer? Don't
 forget that you all owe me for my
 heroic deeds!
@@ -1951,11 +1952,11 @@ y 3
 end
 arch sage
 msg
-@match Servant|servant
+@match servant
 Siegfried's servant got killed during
 the battle. He obviously wasn't much
 of help.
-@match Siegfried|siegfried
+@match siegfried
 We have been suffering from evil
 monsters for a long time.
 Six months ago, he and his servant

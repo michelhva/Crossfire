@@ -10,7 +10,7 @@ msg
 Created:  1996-02-25
 Updated 2007.11.12 by Gene Alexander
  - made this an outdoor map
-Modified: 2007-11-12 crossfire
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -2523,7 +2523,7 @@ end
 arch dog
 name Poppy the pup
 msg
-@match new|New
+@match new
 All of pupland has changed. Tons of
 bugfixes and new features. Enjoy it!
 @match friend|amigo

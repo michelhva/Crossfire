@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-02-17
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -342,10 +343,10 @@ end
 arch a_townsman2
 name father
 msg
-@match [Ss]iegfried
+@match siegfried
 This country is in serious need of a
 hero. Siegfried will save us!
-@match [Gg]othwolte
+@match gothwolte
 Shhh! You should only wisper that name.
 It can be dangerous to speak it loud.
 @match *
@@ -513,7 +514,7 @@ end
 arch woman
 name mother
 msg
-@match Daughter|daughter
+@match daughter
 Two weeks ago, suddenly she lost her
 speech...
 @match *
@@ -875,9 +876,9 @@ end
 arch woman
 name Janet
 msg
-@match Siegfried|siegfried
+@match siegfried
 ....
-@match Jacob|jacob
+@match jacob
 .. he was killed by ...
 @match *
 ...

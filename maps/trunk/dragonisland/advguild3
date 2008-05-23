@@ -6,7 +6,7 @@ width 32
 height 32
 msg
 Created:  1997-07-15 Viola Krings
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -1165,7 +1165,7 @@ end
 arch dark_elf
 name Shalathar
 msg
-@match [Hh][ea]llo|[Hh]i
+@match h[ea]llo|hi
 Hi there! I'm here to watch the
 dragons. They are beautiful, don't you
 think? Oh yes, if you want a
@@ -3205,7 +3205,7 @@ end
 arch big_dragon
 name friendly dragon
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 My greetings, proud adventurer!
 endmsg
 x 16

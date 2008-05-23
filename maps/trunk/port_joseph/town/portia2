@@ -6,7 +6,7 @@ width 24
 height 16
 msg
 Created:  1994-05-26 langley
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -2031,10 +2031,10 @@ end
 arch pirate_lass
 name Portia
 msg
-@match hello|hi|greetings|Hello|Hi
+@match hello|hi|greetings
 Hello, stranger, you sure do know
 how to make an entrance!
-@match percival|percy|Percival|Percy
+@match percival|percy
 Ah Percy!  Being stubborn is he?
 Well, he and I are old friends.
 Yes, just mention `violet'
@@ -2047,7 +2047,7 @@ My pirating days are over.
 @match entrance
 You handily dealt with my rough crew,
 now, what can I do for you?
-@match moogly|bill|Moogly|Bill
+@match moogly|bill
 The dread Moogly Bill.  It
 is said he haunts his grave tormented
 by the souls of those he murdered.

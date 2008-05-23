@@ -6,7 +6,7 @@ width 34
 height 19
 msg
 Created:  1996-02-21
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -1029,11 +1029,11 @@ y 11
 end
 arch viking
 msg
-@match [Pp]erson
+@match person
 I have never seen him.
 But I expect that he lives in the house
 where there is the burning fireplace.
-@match yes|Yes|No|no
+@match yes|no
 It's a ghost town now.
 But I've heard that one Person
 still lives in the town.
@@ -1788,7 +1788,7 @@ y 4
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Click.
 endmsg
 x 11
@@ -1802,10 +1802,10 @@ end
 arch swashbuckler
 name Hans
 msg
-@match Yes|yes
+@match yes
 Thanks.
 This symbol is needed to see him.
-@match [Bb]oss|find
+@match boss|find
 I can't tell you about the hiding
 place of the boss. There are too many
 people watching us.

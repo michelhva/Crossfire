@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-02-17
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -943,7 +944,7 @@ end
 arch human
 name Rloy
 msg
-@match Jacob|jacob
+@match jacob
 One day before he got killed,
 me and him went to Siegfried's
 house in order to rob his treasure.
@@ -953,12 +954,12 @@ I was not interested in it, But Jacob
 took it with brightening eyes.
 Next day he was killed by someone.
 I'm sad... he was my best friend...
-@match Boss|boss
+@match boss
 I don't know where he is.
 All I can say is  that he should live
 somewhere. I haven't seen him since
 the day Shining Village was destroyed.
-@match [Mm]ysterious|[Cc]rystal
+@match mysterious|crystal
 Yeah!, our Boss and us robbed that
 crystal from the evil masters.
 @match *
