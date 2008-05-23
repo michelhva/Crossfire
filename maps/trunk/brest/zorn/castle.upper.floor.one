@@ -6545,9 +6545,9 @@ arch fatwoman
 name Yolanda Zorn
 title wife
 msg
-@match zorn|Zorn
+@match zorn
 Yes, I am a member of the Zorn family.
-@match treasure|Treasure
+@match treasure
 Oh, I wouldn't know anything about any
 treasure. You must be mistaken.
 @match *
@@ -28591,15 +28591,15 @@ arch princess
 name Zerina Zorn
 title Eldest Daughter
 msg
-@match zorn|Zorn
+@match zorn
 Yes, I am a member of the Zorn family.
-@match treasure|Treasure
+@match treasure
 I have heard of this treasure but only
 my dad knows about it as far as I know.
 Have you asked him?
-@match yes|Yes
+@match yes
 Then why are you asking me?
-@match no|No
+@match no
 Then maybe you should ask him.
 @match *
 Hi. What are you doing in my room?

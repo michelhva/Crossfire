@@ -459,7 +459,7 @@ y 4
 end
 arch magic_ear
 msg
-@match down|Down
+@match down
 Click.
 endmsg
 x 4

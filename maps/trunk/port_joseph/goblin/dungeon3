@@ -1210,7 +1210,7 @@ y 1
 end
 arch magic_ear
 msg
-@match arglebargle|Arglebargle
+@match arglebargle
 You hear a clicking sound.
 endmsg
 x 8
@@ -1281,7 +1281,7 @@ y 10
 end
 arch magic_ear
 msg
-@match twining|Twining
+@match twining
 You hear a groaning sound.
 endmsg
 x 8
@@ -2561,7 +2561,7 @@ y 1
 end
 arch magic_ear
 msg
-@match Avarice|avarice
+@match avarice
 You hear a grinding noise
 endmsg
 x 17
@@ -2632,7 +2632,7 @@ y 10
 end
 arch magic_ear
 msg
-@match ogsnog|Ogsnog
+@match ogsnog
 Clackity clakity crunch.
 endmsg
 x 17

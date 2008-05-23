@@ -282,7 +282,7 @@ connected 8
 end
 arch magic_ear
 msg
-@match Windwalk|windwalk
+@match windwalk
 Click.
 endmsg
 x 2
@@ -380,7 +380,7 @@ connected 9
 end
 arch magic_ear
 msg
-@match Windwalk|windwalk
+@match windwalk
 Click.
 endmsg
 x 2
@@ -1619,7 +1619,7 @@ y 6
 end
 arch magic_ear
 msg
-@match Windwalk|windwalk
+@match windwalk
 Click.
 endmsg
 x 13

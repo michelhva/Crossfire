@@ -142,7 +142,7 @@ y 6
 end
 arch magic_ear
 msg
-@match slurp|Slurp|swallow|Swallow
+@match slurp|swallow
 Click.
 endmsg
 x 1
@@ -1001,7 +1001,7 @@ y 18
 end
 arch magic_ear
 msg
-@match slurp|Slurp|swallow|Swallow
+@match slurp|swallow
 Click.
 endmsg
 x 9

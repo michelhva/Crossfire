@@ -5,6 +5,7 @@ width 16
 height 40
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -4187,7 +4188,7 @@ y 5
 end
 arch prisoner
 msg
-@match sacrifice|altar|god|Gods|God
+@match sacrifice|altar|god|gods
 They sacrifice someone on the altar to
 please their god....
 endmsg

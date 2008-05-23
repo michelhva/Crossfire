@@ -310,7 +310,7 @@ y 13
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Click.
 endmsg
 x 2
@@ -324,7 +324,7 @@ end
 arch smith
 name Ninja Master, Galla
 msg
-@match yes|Yes
+@match yes
 Okay. You may go in. On each level you
 have to pay admission fee. Now I have
 opened the doors for you.
@@ -983,7 +983,7 @@ x 9
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Vumm..
 endmsg
 x 9
@@ -1333,7 +1333,7 @@ x 12
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Vumm..
 endmsg
 x 12
@@ -1513,7 +1513,7 @@ y 1
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Vummm..
 endmsg
 x 14
@@ -1550,7 +1550,7 @@ y 3
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 Vummm..
 endmsg
 x 14

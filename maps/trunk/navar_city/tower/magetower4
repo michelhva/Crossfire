@@ -6,6 +6,7 @@ width 25
 height 25
 msg
 Created:  1993-11-01
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch cobblestones
@@ -953,7 +954,7 @@ y 23
 end
 arch magic_ear
 msg
-@match e|E
+@match e
 Correct
 endmsg
 x 6

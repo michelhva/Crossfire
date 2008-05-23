@@ -4810,7 +4810,7 @@ y 5
 end
 arch prisoner
 msg
-@match job|Job
+@match job
 I am a prisoner.   Release me.
 @match release
 Death is the only release.  Save Me!!!
