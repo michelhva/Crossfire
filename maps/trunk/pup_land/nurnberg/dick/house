@@ -481,7 +481,7 @@ connected 1
 end
 arch magic_ear
 msg
-@match dot|DOT
+@match dot
 Click.
 endmsg
 x 4
@@ -490,7 +490,7 @@ connected 4
 end
 arch magic_ear
 msg
-@match tod|TOD|dot|Dot
+@match tod|dot
 Click.
 endmsg
 x 4
@@ -499,7 +499,7 @@ connected 2
 end
 arch magic_ear
 msg
-@match tod|TOD
+@match tod
 Click.
 endmsg
 x 4
@@ -517,27 +517,27 @@ end
 arch human
 name Dick, the carpenter
 msg
-@match Castle|castle
+@match castle
 Bauer is very stingy.
 So, I did jerry-building in the
 underground of castle :).
 Go there and look into one of the
 pillars.
-@match Bauer|bauer
+@match bauer
 I hate him!
 He is very stingy!
 I built his Castle, but he didn't pay
 enough money!!!
-@match dot|DOT
+@match dot
 Ok!
-@match tod|TOD
+@match tod
 Really,you want to get a death?
 @match extra
 Oh, You want to try a extra dungeon,
 don't you?
 Then please say the keyword that is
 obtained by Proof Scrolls.
-@match yes|Yes
+@match yes
 Ok. Please drop 5 platina on the alter,
 and go to next room.
 @match *

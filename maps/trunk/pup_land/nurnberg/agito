@@ -1400,17 +1400,17 @@ y 6
 end
 arch viking
 msg
-@match Weapon|weapon
+@match weapon
 I hear there are two weapons.
 One is a living thing.
 The other is an artifact.
-@match Regular|regular|Army|army
+@match regular|army
 We fight against it.
-@match Bauer|bauer
+@match bauer
 He is the leader of Regular army.
-@match Jungle|jungle|No|no
+@match jungle|no
 It is to the south of this town.
-@match Cave|cave|Yes|yes
+@match cave|yes
 In the cave, Bauer and his Army are
 doing research for new Weapons.
 @match *

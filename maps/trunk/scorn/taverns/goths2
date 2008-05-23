@@ -3797,15 +3797,15 @@ end
 arch thief_1
 name a sly thief
 msg
-@match apprentice|Apprentice
+@match apprentice
 ok ok...it figures...be quiet and lets
 open this chest.
-@match chest|Chest
+@match chest
 Yeah, under the bed.....geez did you
 study your rogue book?
-@match name|Name
+@match name
 Just call me Toad...shhhh
-@match job|Job
+@match job
 ohhhhh...newbies! I hate them!
 @match *
 shhhhhhhhhhhhhhhh...hey man..he'll hear

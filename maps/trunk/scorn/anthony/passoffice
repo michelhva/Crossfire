@@ -8,7 +8,7 @@ enter_x 10
 enter_y 8
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2008-04-09 Nicolas Weeger
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -1020,7 +1020,7 @@ y 6
 end
 arch courier
 msg
-@match pass|Pass|passes
+@match pass|passes
 What do you think this is? Grand Central
 Station! Of course we have passes. If
 the teleporters are working, that is!

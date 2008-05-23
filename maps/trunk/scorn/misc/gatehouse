@@ -7,7 +7,7 @@ height 14
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -161,10 +161,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -253,7 +253,7 @@ connected 14
 end
 arch magic_ear
 msg
-@match chain|Chain|CHAIN
+@match chain
 Well, you know the password,
 so you must be ok.   Pass Friend.
 endmsg
@@ -446,10 +446,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -1878,10 +1878,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -2161,7 +2161,7 @@ connected 24
 end
 arch magic_ear
 msg
-@match chain|Chain|CHAIN
+@match chain
 Well, you know the password,
 so you must be ok.   Pass Friend.
 endmsg
@@ -2448,10 +2448,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are

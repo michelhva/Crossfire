@@ -612,7 +612,7 @@ y 2
 end
 arch dwarf_priest
 msg
-@match smugglers|Smugglers
+@match smugglers
 Then I can help you....the smugglers are
 headquartered in one of the warehouses.
 Which one I do not know, but it may
@@ -1934,7 +1934,7 @@ y 2
 end
 arch dwarf_priest
 msg
-@match smugglers|Smugglers
+@match smugglers
 Then I can help you....the smugglers are
 headquartered in one of the warehouses.
 Which one I do not know, but it may
