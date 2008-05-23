@@ -9,6 +9,7 @@ width 22
 height 30
 msg
 Created:  1996-02-29
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -886,20 +887,20 @@ end
 arch neko
 name kitty
 msg
-@match mew|Mew|MEW
+@match mew
 Mew mew mew?!
 (You can understand our language,
  can't you?!)
-@match hello|Hello
+@match hello
 Mew mew.
 (Hello. I'm a Kitty.)
-@match hi|Hi
+@match hi
 Mew.
 (Hi. I'm a Kitty.)
-@match kitty|Kitty
+@match kitty
 Mew mew!
 (I'm Hungry!)
-@match hungry|Hungry
+@match hungry
 Mew mew mew mew!!!!
 (I like fish very much!)
 @match yes

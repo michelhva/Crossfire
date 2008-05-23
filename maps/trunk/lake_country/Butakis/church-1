@@ -6,6 +6,7 @@ width 20
 height 30
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dun10
@@ -130,17 +131,17 @@ end
 arch lich
 name Lich prisoner
 msg
-@match Hello|hello
+@match hello
 If you want to talk to me, release me
 first. I don't feel like talking in
 here.
-@match Yes|yes
+@match Yes
 Okay, go on turn the handle and
 release me. Then I will reward you and
 let you be one of us. Don't listen to
 whatever the others have to say about
 it.
-@match No|no
+@match no
 No? NO???!! If you don't release me,
 I will suck your brain dry, when I come
 out, which is very soon. Expect that
@@ -3738,7 +3739,7 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello
 What do you want to ask me about?
 Where am i from? what's my business
 here?

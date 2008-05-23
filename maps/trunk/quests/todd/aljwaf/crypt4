@@ -5,6 +5,7 @@ width 10
 height 20
 msg
 Created:  2002-06-30
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dirtfloor
@@ -797,13 +798,13 @@ arch madman
 name Olie
 title the deranged
 msg
-@match hello|Hello
+@match hello
 Who are you?  Come to get my mushrooms eh?
-@match mushrooms|Mushrooms
+@match mushrooms
 They're all I've got to eat!
-@match narcopin|Narcopin
+@match narcopin
 He he, I am the King!  Ruler of Narcopin!
-@match king|King
+@match king
 I am so the King, Guards - arrest them!
 @match *
 Keep out of my mushrooms!

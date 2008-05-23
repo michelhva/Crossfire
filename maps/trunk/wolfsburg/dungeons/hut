@@ -6,6 +6,9 @@ width 15
 height 16
 enter_x 3
 enter_y 3
+msg
+Modified: 2008-05-23 Arvid Norlander
+endmsg
 end
 arch woodfloor
 y 1
@@ -485,15 +488,15 @@ y 6
 end
 arch sage
 msg
-@match name|Name
+@match name
 I am Undling
-@match job|Job
+@match job
 I am a scholar
-@match scholar|Scholar
+@match scholar
 I study the Underworld
-@match underworld|Underworld
+@match underworld
 Pwill is the master of the underworld
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello sonny!
 @match *
 I enjoy reading

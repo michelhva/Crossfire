@@ -7,6 +7,7 @@ enter_x 12
 enter_y 7
 msg
 Created:  2004-10-19 majorwoo josh@woosworld.net
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dirtfloor
@@ -895,7 +896,7 @@ end
 arch thief_1
 name Thief
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 *Pssst...* Get me out of here!
 endmsg
 x 6
