@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -889,15 +890,15 @@ arch woodfloor
 x 7
 y 14
 end
-arch woodfloor
-x 7
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
 hp 19
 sp 8
+x 7
+y 15
+end
+arch woodfloor
 x 7
 y 15
 end
@@ -986,15 +987,15 @@ arch woodfloor
 x 8
 y 14
 end
-arch woodfloor
-x 8
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
 hp 19
 sp 8
+x 8
+y 15
+end
+arch woodfloor
 x 8
 y 15
 end
