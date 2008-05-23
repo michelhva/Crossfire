@@ -3879,7 +3879,7 @@ y 26
 end
 arch magic_ear
 msg
-@match Hello world|hello world|HELLO WORLD
+@match hello world
 Have a nice trip and don't die too
 quickly.
 endmsg
@@ -4728,7 +4728,7 @@ y 14
 end
 arch magic_ear
 msg
-@match Shazam|shazam
+@match shazam
 endmsg
 x 15
 y 14

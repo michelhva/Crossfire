@@ -2120,7 +2120,7 @@ end
 arch ogre
 name Big guy
 msg
-@match king|King
+@match king
 Yes, king!  All the treasure is mine!
 You will never find it!
 @match treasure

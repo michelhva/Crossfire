@@ -13861,7 +13861,7 @@ y 53
 end
 arch magic_ear
 msg
-@match Nazgul|nazgul
+@match nazgul
 seeessaaammeeee
 endmsg
 x 32
@@ -23025,7 +23025,7 @@ y 31
 end
 arch magic_ear
 msg
-@match ring|rings|Ring|Rings
+@match ring|rings
 endmsg
 x 53
 y 32

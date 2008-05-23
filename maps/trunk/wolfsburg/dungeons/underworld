@@ -1177,7 +1177,7 @@ y 8
 end
 arch magic_ear
 msg
-@match Pwill|pwill
+@match pwill
 Click.
 endmsg
 x 7
@@ -3190,9 +3190,9 @@ name Morgan
 msg
 @match name
 Morgan Queen of the Underlings.
-@match underlings|underlings
+@match underlings
 Those who tend the Underworld.
-@match underworld|Underworld.
+@match underworld
 The Underworld is where you are now.  This
 is a minor garden in the Underworld.
 @match garden
@@ -3344,7 +3344,7 @@ y 11
 end
 arch magic_ear
 msg
-@match lliwp|lliwP|Lliwp
+@match lliwp
 Click.
 endmsg
 x 15

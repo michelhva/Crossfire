@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-02-27
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch permanent_lava
@@ -1214,22 +1215,23 @@ y 6
 end
 arch prisoner
 msg
-@match DRAGONS|DRAGON|dragons|dragon
+@match dragons|dragon
 There names are :
 Will-Wips
 Gea-Ga-Ring
 Goraon
 Gran-Garan
 
-@match Rufto
+@match rufto
+@question dragons What dragons?
 He is a guard of this ruin. To enter
 his room you must get four keys. His
-four DRAGONS have the keys.
+four dragons have the keys.
 
 @match *
+@question rufto Who is Rufto the wizard?
 ...help me. I captured by Rufto the
 wizard.
-
 
 
 endmsg

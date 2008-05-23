@@ -2106,14 +2106,14 @@ end
 arch holy_priest
 name Holy Man of Gaea
 msg
-@match Gaea|gaea
+@match gaea
 Gaea is the mother of Nature and all
 the Elements
-@match Nature|nature
+@match nature
 Nature is the world around us - the
 air we breath the things that grow and
 live
-@match Elements|elements
+@match elements
 All things come from the four elements
 - Earth, Fire, Air and Water
 @match *

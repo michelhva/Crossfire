@@ -1016,7 +1016,7 @@ y 8
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
 x 6
@@ -1392,7 +1392,7 @@ y 6
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
 x 8
@@ -1454,7 +1454,7 @@ y 10
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
 x 8
@@ -1821,7 +1821,7 @@ y 8
 end
 arch magic_ear
 msg
-@match fire|Fire|FIRE
+@match fire
 Click.
 endmsg
 x 10

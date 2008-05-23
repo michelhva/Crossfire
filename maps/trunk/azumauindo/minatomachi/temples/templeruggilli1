@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-12 MikeeUSA
+Modified: 2008-05-24 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -379,7 +380,7 @@ arch fire_elemental
 name Knight of Ruggilli
 name_pl Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *
@@ -432,7 +433,7 @@ arch fire_elemental
 name Knight of Ruggilli
 name_pl Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *
@@ -1231,14 +1232,14 @@ arch faerie_dragon
 name Devotee of Ruggilli
 name_pl Devotee of Ruggilli
 msg
-@match Ruggilli|ruggilli
+@match ruggilli
 Ruggilli, God of Destruction and
 Chaos! His Followers are feared among
 all living!
-@match flame|Flame
+@match flame
 Ruggilli will lend the immolating
 fires to any who choose to follow!
-@match immolating|Immolating|fires|Fires
+@match immolating|fires
 Yes! A Flame which will consume your
 enemies!
 @match *
@@ -1471,7 +1472,7 @@ arch fire_elemental
 name Knight of Ruggilli
 name_pl Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *
@@ -1524,7 +1525,7 @@ arch fire_elemental
 name Knight of Ruggilli
 name_pl Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *

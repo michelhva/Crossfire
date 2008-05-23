@@ -3342,7 +3342,7 @@ end
 arch sage
 name Assistant
 msg
-@match yes|Yes|YES
+@match yes
 Then you only have to hit each different
 target with just one try.
 @match *

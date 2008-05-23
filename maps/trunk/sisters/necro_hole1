@@ -6,6 +6,7 @@ width 36
 height 36
 msg
 Created:  1994-12-29 bt (thomas@Nomad.astro.psu.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -1540,7 +1541,7 @@ end
 arch vampire
 name Farvaled the old vampire
 msg
-@match City|city|Gax|gax
+@match city|gax
 It is true, this was once my city.
 Long ago jealous gods came
 to destroy the three sisters who

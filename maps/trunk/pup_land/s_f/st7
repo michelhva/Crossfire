@@ -544,7 +544,7 @@ connected 20
 end
 arch magic_ear
 msg
-@match gold|Gold
+@match gold
 Good. You are honest.
 endmsg
 x 6
@@ -553,7 +553,7 @@ connected 11
 end
 arch magic_ear
 msg
-@match iron|Iron
+@match iron
 You are a liar!
 endmsg
 x 6

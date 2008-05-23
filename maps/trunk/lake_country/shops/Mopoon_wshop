@@ -9,7 +9,7 @@ width 28
 height 28
 msg
 Created:  1995-03-19 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-24 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -1005,7 +1005,7 @@ druid's name!"
 "Don't say that name again. It brings
 back some sad memories. How I wish to
 see him again, my old Zykie."
-@match Thanks|thanks|thank|thanx|Thank
+@match thanks|thank|thanx
 "You are welcome. Give me some of
 your rare discoveries next time."
 @match spirit|forest|druid
@@ -1014,7 +1014,7 @@ your rare discoveries next time."
 they say you can find the true name of
 the ancient druid if you stay in the
 forest long enough."
-@match lord|Lord|master|Master
+@match lord|master
 "Don't you think I am the Lord the
 land that I have slawn so many dragons
 and freed so many people of suffering."
@@ -1028,17 +1028,17 @@ my name with the sword's. I was named
 Dragonslayer by my father who tried all
 his life to avenge for the deaths of
 his village."
-@match Dragonbane|dragonbane
+@match dragonbane
 "What do you want of my Dragonbane?"
-@match Power|Mail|dragonmail|mail
+@match power|dragonmail|mail
 "What do you want of my Power Dragon
 Mail?"
-@match highlord|HighLord|highlords
+@match highlord|highlords
 "Dragon Highlords? They are really
 powerful. You can find a few of them
 in the dragon caves in the forest
 not far away from west of Navar."
-@match Dragon|dragon|dragons
+@match dragon|dragons
 "Ah, now you say the right word.
 There are three kinds of dragons, at
 least while I was out genociding them.
@@ -1046,21 +1046,21 @@ Fire dragon is the biggest. Ice dragon
 is the smallest and weakest. But the
 electric dragons are the hardest to
 deal with."
-@match buy|Buy|give|borrow|lend|take
+@match buy|give|borrow|lend|take
 "No. They are not for sale and I
 don't lend my Dragon mail or my
 Dragonbane. Unless you can impress me
 and prove yourself worthy."
-@match dragonsteak|Dragonsteak
+@match dragonsteak
 "You can get dragonsteaks from
 wyverns and hatchlings!"
 @match firedragon|Fire|red|flame
 "I tell you this, fire dragons are
 vulnerable to cold."
-@match electric|Electric|lightning
+@match electric|lightning
 "Lightning dragons fear fire just as
 much as cold dragons. "
-@match ice|Ice|chinese|Chinese
+@match ice|chinese
 "Ice dragons are vulnerable to fire.
 This advice worth a lot. But we are
 friends, arn't we?"
