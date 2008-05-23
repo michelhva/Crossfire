@@ -10,7 +10,7 @@ msg
 Created:  1996-02-25
 Updated 2007.11.12 by Gene Alexander
  - made this an outdoor map
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-05-24 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -218,91 +218,91 @@ arch sea
 x 1
 y 19
 end
-arch blocked
+arch sea
 x 1
 y 20
 end
-arch blocked
+arch sea
 x 1
 y 21
 end
-arch blocked
+arch sea
 x 1
 y 22
 end
-arch blocked
+arch sea
 x 1
 y 23
 end
-arch blocked
+arch sea
 x 1
 y 24
 end
-arch blocked
+arch sea
 x 1
 y 25
 end
-arch blocked
+arch sea
 x 1
 y 26
 end
-arch blocked
+arch sea
 x 1
 y 27
 end
-arch blocked
+arch sea
 x 1
 y 28
 end
-arch blocked
+arch sea
 x 1
 y 29
 end
-arch blocked
+arch sea
 x 1
 y 30
 end
-arch blocked
+arch sea
 x 1
 y 31
 end
-arch blocked
+arch sea
 x 1
 y 32
 end
-arch blocked
+arch sea
 x 1
 y 33
 end
-arch blocked
+arch sea
 x 1
 y 34
 end
-arch blocked
+arch sea
 x 1
 y 35
 end
-arch blocked
+arch sea
 x 1
 y 36
 end
-arch blocked
+arch sea
 x 1
 y 37
 end
-arch blocked
+arch sea
 x 1
 y 38
 end
-arch blocked
+arch sea
 x 1
 y 39
 end
-arch blocked
+arch sea
 x 1
 y 40
 end
-arch blocked
+arch sea
 x 1
 y 41
 end
@@ -385,91 +385,91 @@ arch sea
 x 2
 y 19
 end
-arch blocked
+arch sea
 x 2
 y 20
 end
-arch blocked
+arch sea
 x 2
 y 21
 end
-arch blocked
+arch sea
 x 2
 y 22
 end
-arch blocked
+arch sea
 x 2
 y 23
 end
-arch blocked
+arch sea
 x 2
 y 24
 end
-arch blocked
+arch sea
 x 2
 y 25
 end
-arch blocked
+arch sea
 x 2
 y 26
 end
-arch blocked
+arch sea
 x 2
 y 27
 end
-arch blocked
+arch sea
 x 2
 y 28
 end
-arch blocked
+arch sea
 x 2
 y 29
 end
-arch blocked
+arch sea
 x 2
 y 30
 end
-arch blocked
+arch sea
 x 2
 y 31
 end
-arch blocked
+arch sea
 x 2
 y 32
 end
-arch blocked
+arch sea
 x 2
 y 33
 end
-arch blocked
+arch sea
 x 2
 y 34
 end
-arch blocked
+arch sea
 x 2
 y 35
 end
-arch blocked
+arch sea
 x 2
 y 36
 end
-arch blocked
+arch sea
 x 2
 y 37
 end
-arch blocked
+arch sea
 x 2
 y 38
 end
-arch blocked
+arch sea
 x 2
 y 39
 end
-arch blocked
+arch sea
 x 2
 y 40
 end
-arch blocked
+arch sea
 x 2
 y 41
 end
@@ -552,91 +552,91 @@ arch sea
 x 3
 y 19
 end
-arch blocked
+arch sea
 x 3
 y 20
 end
-arch blocked
+arch sea
 x 3
 y 21
 end
-arch blocked
+arch sea
 x 3
 y 22
 end
-arch blocked
+arch sea
 x 3
 y 23
 end
-arch blocked
+arch sea
 x 3
 y 24
 end
-arch blocked
+arch sea
 x 3
 y 25
 end
-arch blocked
+arch sea
 x 3
 y 26
 end
-arch blocked
+arch sea
 x 3
 y 27
 end
-arch blocked
+arch sea
 x 3
 y 28
 end
-arch blocked
+arch sea
 x 3
 y 29
 end
-arch blocked
+arch sea
 x 3
 y 30
 end
-arch blocked
+arch sea
 x 3
 y 31
 end
-arch blocked
+arch sea
 x 3
 y 32
 end
-arch blocked
+arch sea
 x 3
 y 33
 end
-arch blocked
+arch sea
 x 3
 y 34
 end
-arch blocked
+arch sea
 x 3
 y 35
 end
-arch blocked
+arch sea
 x 3
 y 36
 end
-arch blocked
+arch sea
 x 3
 y 37
 end
-arch blocked
+arch sea
 x 3
 y 38
 end
-arch blocked
+arch sea
 x 3
 y 39
 end
-arch blocked
+arch sea
 x 3
 y 40
 end
-arch blocked
+arch sea
 x 3
 y 41
 end
@@ -5488,7 +5488,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 25
-sp 6
+sp 7
 x 28
 y 37
 invisible 0
@@ -5687,7 +5687,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 26
-sp 6
+sp 7
 x 29
 y 37
 invisible 0
@@ -5878,7 +5878,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 27
-sp 6
+sp 7
 x 30
 y 37
 invisible 0
@@ -6065,7 +6065,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 28
-sp 6
+sp 7
 x 31
 y 37
 invisible 0
@@ -6248,7 +6248,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 29
-sp 6
+sp 7
 x 32
 y 37
 invisible 0
@@ -6442,7 +6442,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 30
-sp 6
+sp 7
 x 33
 y 37
 invisible 0
@@ -6625,7 +6625,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 31
-sp 6
+sp 7
 x 34
 y 37
 invisible 0
@@ -6816,7 +6816,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 32
-sp 6
+sp 7
 x 35
 y 37
 invisible 0
@@ -7015,7 +7015,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 33
-sp 6
+sp 7
 x 36
 y 37
 invisible 0
@@ -7198,7 +7198,7 @@ end
 arch invis_exit
 slaying rainbow/islands
 hp 34
-sp 6
+sp 7
 x 37
 y 37
 invisible 0
