@@ -7,7 +7,7 @@ enter_x 13
 enter_y 7
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-05-22 Arvid Norlander
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -405,8 +405,10 @@ x 4
 y 5
 end
 arch neko
+name cat
 x 4
 y 5
+unaggressive 1
 end
 arch cobblestones2
 x 4
@@ -914,14 +916,16 @@ arch c_priest
 name Garlock the Great
 msg
 @match land
+@reply scorn I'm from Scorn.
 You do not come from here, I can tell
 by your strange accent. Where are you from?
-@match Scorn|scorn
+@match scorn
 I have heard of that city. Far away it is, and in
 this age, many people do not travel far from
 their birthplace. You would do well to ask
 one of the elders about our magic lore.
 @match *
+@question land Why do you think I'm a stranger?
 You seem a wise and honorable one. A
 stranger in a strange land.
 endmsg
@@ -1205,7 +1209,9 @@ y 2
 end
 arch crone
 msg
-@match scorn|Scorn
+@match scorn
+@question wizard What wizard?
+@question etheric What is this "etheric" of which you speak?
 That city to the west? Yes, it is said a great
 wizard founded that place. He was a
 master of the etheric.
@@ -1213,6 +1219,7 @@ master of the etheric.
 Skud the Great. He is long since
 departed from our plane of existence.
 @match land
+@question ship Why wouldn't there be a ship to Scorn?
 You wish to return to yours? A more
 powerful mage could perform a word of
 recall, but I am too frail. I doubt it possible
@@ -1223,7 +1230,6 @@ Few captains long to explore, and it
 is expensive to form an expedition. In this
 age they fear far waters, Navar, most of all
 fears.
-
 @match etheric
 Kaladon, the wise, has dabbled in the
 etheric plane. If he's not alseep, he

@@ -8,6 +8,7 @@ enter_y 13
 msg
 Grumm's Inn
 Created:  2002-10-27 Todd Mitchell
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -1153,6 +1154,7 @@ arch dwarf_wiz
 name Grumm
 msg
 @match chicken|garden
+@question priest What priest?
 Damn priest!
 His chickens are always in my garden!
 @match priest
@@ -1575,6 +1577,7 @@ arch c_man
 name Frank
 msg
 @match travellers
+@question bandits What bandits?
 Who would risk the south road with
 those bandits?
 @match bandits
@@ -1582,6 +1585,7 @@ My brother used to help station the
 signal tower. Now, I fear he's dead...
 <sob>
 @match *
+@question travellers Why are there so few travellers?
 Sigh, it's so boring when so few
 travellers come.
 endmsg
