@@ -10,6 +10,7 @@ msg
 Created:  1994-02-24
 Edited by: Gene Alexander
 Edit Date: 20050608
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch brush
@@ -4681,17 +4682,17 @@ arch fighter
 name TCI Representative
 name_pl TCI Representative
 msg
-@match TCI|tci
+@match tci
 Training Centers Incorporated is the best dang training
 you'll ever get. We have locations all over the world in
 exotic settings. Come fight with us! (heh, they tell us we
 have to say all that)
-@match Location|location
+@match location
 Well, I don't know about all of them. But our local TCI
 is off the road south of here just the other side of the
 mountain pass. The road may be easier to reach from
 the Lake Country side. Just look for one of our signs!
-@match Hello|hello|Hi|hi
+@match hello|hi
 Well, hello there! Sit down and chat with me a bit. I am
 always looking for new people to tell about TCI.
 @match *

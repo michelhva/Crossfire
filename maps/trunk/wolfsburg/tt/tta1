@@ -5,6 +5,9 @@ region wolfsburg
 width 53
 height 38
 enter_y 18
+msg
+Modified: 2008-05-23 Arvid Norlander
+endmsg
 end
 arch grass
 end
@@ -4166,10 +4169,10 @@ y 18
 end
 arch princess
 msg
-@match hello|Hello
+@match hello
 Oh,  thank you for saving me from the
 monsters.
-@match name|Name
+@match name
 I am the princess Corriann-Tremall
 @match monsters
 They were acctually after the magic

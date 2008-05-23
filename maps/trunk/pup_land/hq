@@ -8,6 +8,7 @@ enter_x 9
 enter_y 34
 msg
 Created:  1996-02-14
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -1297,7 +1298,7 @@ y 5
 end
 arch magic_ear
 msg
-@match Calvin|calvin
+@match calvin
 Click.
 endmsg
 x 6
@@ -1307,7 +1308,7 @@ end
 arch thief
 name councillor
 msg
-@match Calvin|calvin
+@match calvin
 What! He is a spy!?
 I see. We'll put him to torture.
 Thanks, this is your reward.
@@ -2220,7 +2221,7 @@ end
 arch medium_guard
 name guard
 msg
-@match hi|Hi|hello|Hello
+@match hi|hello
 Here is the headquarter of Liberation
 Army. Are you our member?
 If you are, please prove it
@@ -2282,7 +2283,7 @@ end
 arch warrior_1
 name Alex, the general
 msg
-@match Contributor|contributor
+@match contributor
 The guildmaster of lone town
 contributes us lots of money.
 @match *
@@ -2365,17 +2366,17 @@ end
 arch swashbuckler
 name councillor
 msg
-@match Eureca|eureca
+@match eureca
 He is our lord. But we don't know
 where he is.
-@match Bauer|bauer
+@match bauer
 He is the leader of Regular Army.
-@match Castle|castle
+@match castle
 They surely want to steal Eureca's
 money. I'm afraid that Bauer plans to
 become the new emperor of pupland!
 But we won't let this happen!!
-@match Regular|regular|Army|army
+@match regular|army
 We will kill them all!
 @match *
 I've heard rumors that the Regular
@@ -2964,10 +2965,10 @@ end
 arch fighter
 name councillor
 msg
-@match Eureca|eureca
+@match eureca
 He is the lord of this country.
 He was kidnapped by the government!!
-@match Barrier|barrier|house|House
+@match barrier|house
 To the south from here. We must rapidly
 rescue our lord, Eureca!
 @match *
@@ -3304,7 +3305,7 @@ end
 arch medium_guard
 name guard
 msg
-@match hi|Hi|hello|Hello
+@match hi|hello
 Here is the headquarter of Liberation
 Army. Are you our member?
 If you are, please prove it
@@ -3381,7 +3382,7 @@ y 11
 end
 arch human
 msg
-@match Escape|escape|Passage|passage
+@match escape|passage
 If you don't know about escape passage,
 please go to the tavern in lown town
 and talk with a thief.
@@ -3389,10 +3390,10 @@ If you don't know how to open the
 doors in the escape passage, then
 go to the tavern in lown town,
 and talk with the learned man.
-@match Hidden|hidden|Exit|exit
+@match hidden|exit
 You can see the hidden exit by using
 the spell of show invisible.
-@match Yes|yes
+@match yes
 I have been invited by Eureca once.
 So I know his castle. To reach the
 upper floor of the castle,

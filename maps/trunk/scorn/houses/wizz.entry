@@ -9,6 +9,7 @@ enter_x 14
 enter_y 7
 msg
 Created:  1996-01-06 Bjoern Helfesrieder (helfesri@igd.fhg.de)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -1120,7 +1121,7 @@ end
 arch charwoman
 name House Keeper
 msg
-@match hello|hello|hi|job|name
+@match hello|hi|job|name
 Oh good evening Zir, I am Charles,
 zee old wizzard's houze keeper!
 Can I HELP you, Zir?
