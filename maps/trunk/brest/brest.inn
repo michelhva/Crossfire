@@ -3454,6 +3454,8 @@ I managed to enter the first two of
 them, yet the monsters behind the
 third gate are too hard for me. *sigh*
 @match *
+@reply no No, I didn't.
+@reply yes Yes... what about it?
 Did you see the big palace in this
 city?
 endmsg
@@ -4429,11 +4431,13 @@ end
 arch sage
 msg
 @match irritable|zorn
+@question secretive How are they secretive?
 Ah, yes. I do not know much about
 the Zorn family. They are quite a
-SECRETIVE bunch.
+secretive bunch.
 @match secretive
-Yes, secretive and DANGEROUS. I do
+@question dangerous So they are dangerous too?
+Yes, secretive and dangerous. I do
 not want to be the subject of the
 Zorn family wrath.
 @match dangerous
@@ -4683,6 +4687,7 @@ name TCI Representative
 name_pl TCI Representative
 msg
 @match tci
+@question location Where are these locations?
 Training Centers Incorporated is the best dang training
 you'll ever get. We have locations all over the world in
 exotic settings. Come fight with us! (heh, they tell us we
@@ -4693,9 +4698,11 @@ is off the road south of here just the other side of the
 mountain pass. The road may be easier to reach from
 the Lake Country side. Just look for one of our signs!
 @match hello|hi
+@question tci What is TCI?
 Well, hello there! Sit down and chat with me a bit. I am
 always looking for new people to tell about TCI.
 @match *
+@question tci What is TCI?
 Hi there young'un. Wanna join TCI?
 endmsg
 x 25
