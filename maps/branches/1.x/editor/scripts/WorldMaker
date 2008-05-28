@@ -36,7 +36,7 @@ boolean updateMap(File mapFile, File pictureFile) {
     }
     try {
         try {
-            ImageIO.write(map.getFullImage(), "png", pictureFile);
+            ImageIO.write(map.getRenderer().getFullImage(), "png", pictureFile);
         } catch (IOException ex) {
             print("cannot write " + pictureFile + ": " + ex.getMessage());
             return false;
@@ -69,7 +69,7 @@ void checkDaList() {
     DestHeight = TileHeight.intValue() * NumY.intValue();
 
     if (Location == null || Location.length() < 1) {
-        Location = mainControl.getMapDefaultFolder();
+        Location = mainControl.getGlobalSettings().getMapDefaultFolder();
         print("autodetected location " + Location);
     }
 
