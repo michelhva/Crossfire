@@ -309,7 +309,7 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-String mapDefaultFolder = mainControl.getMapDefaultFolder();
+String mapDefaultFolder = mainControl.getGlobalSettings().getMapDefaultFolder();
 String rootDirectory = mapDefaultFolder + baseDirectory;
 Iterator it = new RecursiveFileIterator(new File(rootDirectory));
 while (it.hasNext()) {
