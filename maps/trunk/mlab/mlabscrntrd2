@@ -3,12 +3,13 @@ name West Scorn Trade Market
 reset_timeout 7200
 difficulty 1
 region scorn
-width 64
-height 64
+width 43
+height 23
 enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-05-28 Arvid Norlander
 endmsg
 end
 arch woodfloor2
@@ -188,27 +189,6 @@ end
 arch blocked
 y 22
 end
-arch blocked
-y 23
-end
-arch dungeon_magic
-y 61
-end
-arch blocked
-y 61
-end
-arch dungeon_magic
-y 62
-end
-arch blocked
-y 62
-end
-arch dungeon_magic
-y 63
-end
-arch blocked
-y 63
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -350,51 +330,6 @@ end
 arch blocked
 x 1
 y 22
-end
-arch blocked
-x 1
-y 23
-end
-arch dungeon_magic
-x 1
-y 61
-end
-arch blocked
-x 1
-y 61
-end
-arch dungeon_magic
-x 1
-y 62
-end
-arch dungeon_floor
-x 1
-y 62
-end
-arch button_plate
-x 1
-y 62
-connected 5
-end
-arch grate_closed_2
-x 1
-y 62
-speed 0.500000
-connected 4
-end
-arch grate_closed_2
-x 1
-y 62
-speed 0.500000
-connected 3
-end
-arch dungeon_magic
-x 1
-y 63
-end
-arch blocked
-x 1
-y 63
 end
 arch woodfloor2
 name woodfloor
@@ -538,56 +473,6 @@ arch blocked
 x 2
 y 22
 end
-arch blocked
-x 2
-y 23
-end
-arch dungeon_magic
-x 2
-y 61
-end
-arch blocked
-x 2
-y 61
-end
-arch dungeon_magic
-x 2
-y 62
-end
-arch dungeon_floor
-x 2
-y 62
-end
-arch spikes_open
-x 2
-y 62
-speed 0.500000
-value 1
-connected 4
-end
-arch spikes_open
-x 2
-y 62
-speed 0.500000
-value 1
-connected 3
-end
-arch button_plate
-x 2
-y 62
-end
-arch boulder
-x 2
-y 62
-end
-arch dungeon_magic
-x 2
-y 63
-end
-arch blocked
-x 2
-y 63
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -729,34 +614,6 @@ end
 arch blocked
 x 3
 y 22
-end
-arch blocked
-x 3
-y 23
-end
-arch dungeon_magic
-x 3
-y 61
-end
-arch blocked
-x 3
-y 61
-end
-arch dungeon_magic
-x 3
-y 62
-end
-arch blocked
-x 3
-y 62
-end
-arch dungeon_magic
-x 3
-y 63
-end
-arch blocked
-x 3
-y 63
 end
 arch woodfloor2
 name woodfloor
@@ -900,10 +757,6 @@ arch blocked
 x 4
 y 22
 end
-arch blocked
-x 4
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1045,10 +898,6 @@ end
 arch blocked
 x 5
 y 22
-end
-arch blocked
-x 5
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -1210,10 +1059,6 @@ end
 arch blocked
 x 6
 y 22
-end
-arch blocked
-x 6
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -1437,10 +1282,6 @@ arch blocked
 x 7
 y 22
 end
-arch blocked
-x 7
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1615,10 +1456,6 @@ arch blocked
 x 8
 y 22
 end
-arch blocked
-x 8
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -1784,10 +1621,6 @@ end
 arch blocked
 x 9
 y 22
-end
-arch blocked
-x 9
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -1963,10 +1796,6 @@ arch blocked
 x 10
 y 22
 end
-arch blocked
-x 10
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2133,10 +1962,6 @@ arch blocked
 x 11
 y 22
 end
-arch blocked
-x 11
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2290,10 +2115,6 @@ end
 arch blocked
 x 12
 y 22
-end
-arch blocked
-x 12
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -2457,10 +2278,6 @@ arch blocked
 x 13
 y 22
 end
-arch blocked
-x 13
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -2614,10 +2431,6 @@ end
 arch blocked
 x 14
 y 22
-end
-arch blocked
-x 14
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -2776,10 +2589,6 @@ end
 arch blocked
 x 15
 y 22
-end
-arch blocked
-x 15
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -2939,10 +2748,6 @@ arch blocked
 x 16
 y 22
 end
-arch blocked
-x 16
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3092,10 +2897,6 @@ end
 arch blocked
 x 17
 y 22
-end
-arch blocked
-x 17
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -3275,10 +3076,6 @@ arch blocked
 x 18
 y 22
 end
-arch blocked
-x 18
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3457,10 +3254,6 @@ arch blocked
 x 19
 y 22
 end
-arch blocked
-x 19
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -3634,10 +3427,6 @@ end
 arch blocked
 x 20
 y 22
-end
-arch blocked
-x 20
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -3821,10 +3610,6 @@ arch blocked
 x 21
 y 22
 end
-arch blocked
-x 21
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4038,10 +3823,6 @@ end
 arch blocked
 x 22
 y 22
-end
-arch blocked
-x 22
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -4272,10 +4053,6 @@ end
 arch blocked
 x 23
 y 22
-end
-arch blocked
-x 23
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -4500,10 +4277,6 @@ arch blocked
 x 24
 y 22
 end
-arch blocked
-x 24
-y 23
-end
 arch woodfloor2
 name woodfloor
 name_pl woodfloor
@@ -4817,10 +4590,6 @@ end
 arch blocked
 x 25
 y 22
-end
-arch blocked
-x 25
-y 23
 end
 arch woodfloor2
 name woodfloor
@@ -5057,10 +4826,6 @@ x 26
 y 22
 end
 arch blocked
-x 26
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 27
@@ -5292,10 +5057,6 @@ x 27
 y 22
 end
 arch blocked
-x 27
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 28
@@ -5479,10 +5240,6 @@ x 28
 y 22
 end
 arch blocked
-x 28
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 29
@@ -5664,10 +5421,6 @@ end
 arch blocked
 x 29
 y 22
-end
-arch blocked
-x 29
-y 23
 end
 arch blocked
 name nothing
@@ -5857,10 +5610,6 @@ x 30
 y 22
 end
 arch blocked
-x 30
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 31
@@ -6044,10 +5793,6 @@ x 31
 y 22
 end
 arch blocked
-x 31
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 32
@@ -6225,10 +5970,6 @@ end
 arch blocked
 x 32
 y 22
-end
-arch blocked
-x 32
-y 23
 end
 arch blocked
 name nothing
@@ -6418,10 +6159,6 @@ x 33
 y 22
 end
 arch blocked
-x 33
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 34
@@ -6605,10 +6342,6 @@ x 34
 y 22
 end
 arch blocked
-x 34
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 35
@@ -6786,10 +6519,6 @@ end
 arch blocked
 x 35
 y 22
-end
-arch blocked
-x 35
-y 23
 end
 arch blocked
 name nothing
@@ -6975,10 +6704,6 @@ x 36
 y 22
 end
 arch blocked
-x 36
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 37
@@ -7162,10 +6887,6 @@ x 37
 y 22
 end
 arch blocked
-x 37
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 38
@@ -7343,10 +7064,6 @@ end
 arch blocked
 x 38
 y 22
-end
-arch blocked
-x 38
-y 23
 end
 arch blocked
 name nothing
@@ -7536,10 +7253,6 @@ x 39
 y 22
 end
 arch blocked
-x 39
-y 23
-end
-arch blocked
 name nothing
 name_pl nothing
 x 40
@@ -7717,10 +7430,6 @@ end
 arch blocked
 x 40
 y 22
-end
-arch blocked
-x 40
-y 23
 end
 arch blocked
 name nothing
@@ -7902,10 +7611,6 @@ x 41
 y 22
 end
 arch blocked
-x 41
-y 23
-end
-arch blocked
 x 42
 end
 arch blocked
@@ -7995,103 +7700,4 @@ end
 arch blocked
 x 42
 y 22
-end
-arch blocked
-x 42
-y 23
-end
-arch blocked
-x 43
-end
-arch blocked
-x 43
-y 1
-end
-arch blocked
-x 43
-y 2
-end
-arch blocked
-x 43
-y 3
-end
-arch blocked
-x 43
-y 4
-end
-arch blocked
-x 43
-y 5
-end
-arch blocked
-x 43
-y 6
-end
-arch blocked
-x 43
-y 7
-end
-arch blocked
-x 43
-y 8
-end
-arch blocked
-x 43
-y 9
-end
-arch blocked
-x 43
-y 10
-end
-arch blocked
-x 43
-y 11
-end
-arch blocked
-x 43
-y 12
-end
-arch blocked
-x 43
-y 13
-end
-arch blocked
-x 43
-y 14
-end
-arch blocked
-x 43
-y 15
-end
-arch blocked
-x 43
-y 16
-end
-arch blocked
-x 43
-y 17
-end
-arch blocked
-x 43
-y 18
-end
-arch blocked
-x 43
-y 19
-end
-arch blocked
-x 43
-y 20
-end
-arch blocked
-x 43
-y 21
-end
-arch blocked
-x 43
-y 22
-end
-arch blocked
-x 43
-y 23
 end
