@@ -1,11 +1,14 @@
 arch map
-name Maze House
+name Marposist's Maze
 difficulty 10
 region darcap
 width 91
 height 61
+enter_x 85
+enter_y 30
 msg
 Created:  1999-01-19 Cater/Wade (john_cater@yahoo.com)
+Modified: 2008-05-29 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -31597,6 +31600,17 @@ end
 arch woodfloor
 x 84
 y 27
+end
+arch d_statue
+name Marposist
+msg
+By decision of the town concil, this house becomes the town's property, to be run as a place for adventurers to test their skills.
+
+-- 7392 EK
+endmsg
+x 84
+y 27
+move_block 0
 end
 arch dungeon_magic
 x 84

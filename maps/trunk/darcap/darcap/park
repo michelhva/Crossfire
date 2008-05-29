@@ -1,5 +1,5 @@
 arch map
-name Small park
+name Park of the Isolation
 region darcap
 width 9
 height 9
@@ -7,6 +7,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2007-05-08 ryo
+Modified: 2008-05-29 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -231,9 +232,10 @@ x 4
 y 1
 end
 arch statue2
-name Captain Herghist Appelnisht, Darcap Guard Commander
+name Captain Herghist Appelnisht, Honorary Darcap Guard Commander
 msg
-Famous explorer, disappeared during a mission in a deserted plain.
+Famous explorer, disappeared during a mission somewhere in a deserted plain.
+
 endmsg
 x 4
 y 1

@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2008-05-28 Arvid Norlander
+Modified: 2008-05-29 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7251,8 +7251,12 @@ elevation 0
 end
 arch statue
 name Julio the Great
+msg
+Julio the Great, ?-6813 EK, benefactor of the town.
+endmsg
 x 25
 y 41
+move_block 0
 end
 arch cobblestones2
 x 25
@@ -7592,6 +7596,7 @@ y 40
 elevation 0
 end
 arch smallpark
+name park of the Isolation
 slaying /darcap/darcap/park
 hp 4
 sp 8
@@ -8183,6 +8188,11 @@ arch grass
 x 28
 y 30
 elevation 0
+end
+arch t_house2
+name town library
+x 28
+y 30
 end
 arch grass
 x 28
@@ -9194,7 +9204,7 @@ y 27
 elevation 0
 end
 arch guild_northwest
-name Maze House
+name Marposist's House
 slaying /darcap/darcap/maze
 hp 85
 sp 29
