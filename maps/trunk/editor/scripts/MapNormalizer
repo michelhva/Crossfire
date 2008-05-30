@@ -3,7 +3,9 @@
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
 import java.util.Iterator;
+import net.sf.gridarta.CommonConstants;
 import net.sf.gridarta.io.RecursiveFileIterator;
+import net.sf.gridarta.map.ShrinkMapSizeUtils;
 
 void normalizeMap(File mapFile, String mapPath) {
     print(mapPath);
@@ -12,6 +14,20 @@ void normalizeMap(File mapFile, String mapPath) {
     if (map == null) {
         print("Cannot load map file");
         return;
+    }
+
+    if (!mapPath.startsWith("/styles")
+    && !mapPath.startsWith("/editor")) {
+        mapModel = map.getMapModel();
+        mapArchObject = mapModel.getMapArchObject();
+        int shrinkFlags = 0;
+        if (mapArchObject.getTilePath(CommonConstants.NORTH).length() <= 0 && mapArchObject.getTilePath(CommonConstants.SOUTH).length() <= 0) {
+            shrinkFlags |= ShrinkMapSizeUtils.SHRINK_EAST;
+        }
+        if (mapArchObject.getTilePath(CommonConstants.EAST).length() <= 0 && mapArchObject.getTilePath(CommonConstants.WEST).length() <= 0) {
+            shrinkFlags |= ShrinkMapSizeUtils.SHRINK_SOUTH;
+        }
+        ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
     }
 
     map.save();
