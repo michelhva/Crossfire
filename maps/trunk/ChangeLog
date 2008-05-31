@@ -1,40 +1,731 @@
-2008-05-21 06:31  rednaxela
-    * scorn/shops/armourshop: Make the smith of the Scorn armour shop able to
-      make coloured dragon mail.
+2008-05-30 07:32  akirschbaum
+
+	* HallOfSelection, brest/black_shield/upper, brest/sow/sow,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/upper,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, dungeons/trollbridge,
+	  inn_and_outpost/hermes_inn, marksel/grumms_inn,
+	  mlab/citydeclouds/bank/vaulta1, mlab/citydeclouds/bank/vaultb2,
+	  mlab/citydeclouds/bank/vaultc3, mlab/citydeclouds/bank/vaultd4,
+	  mlab/citydeclouds/bank/vaulte5, navar_city/dreaming_sage/upper,
+	  navar_city/jail/jail, navar_city/light/light3,
+	  navar_city/temples/gorokh2, planes/purpleworm,
+	  port_joseph/goblin/hole, pup_land/ancient/mountain/cave.b3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/world, pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/upper,
+	  pup_land/kurte/eureca_road31, pup_land/nurnberg/reception/water3,
+	  quests/greyshield/Finish, quests/mak/chaos/monsters.pick,
+	  quests/peterm/CTower/Chamber, quests/peterm/CTower/Laboratory,
+	  quests/peterm/CTower/Library, quests/peterm/CTower/Study,
+	  santo_dominion/guilds/drunken_barbarian/upper,
+	  santo_dominion/shaft/undeadshaft.3,
+	  scorn/guilds/mailed_fist/upper, scorn/houses/house.haunted2,
+	  scorn/kar/gorks2, scorn/kar/gorks3,
+	  scorn/mansion/witherspoon_manor_attic,
+	  scorn/misc/cider_house_top, scorn/shops/foodshop,
+	  scorn/towers/brewery.3, scorn/towers/tower.mad3,
+	  sisters/necro_ruin1a, templates/guild/hallofjoining,
+	  templates/guild/storage_hall.0, test/anthony/cascades,
+	  test/anthony/conveyor, test/bigmonpit, test/cyclops,
+	  test/diagonal, test/faceofdeath, test/multisquare, test/paralyze,
+	  test/pit, test/playermover, test/randomtreasure,
+	  test/remote_altar, test/templatetest, test/trigger,
+	  unlinked/Greyshield/Finish, unlinked/academy.crap/Fighter.5,
+	  unlinked/academy.crap/Fighter.5_2,
+	  unlinked/casino/casino_infernal, unlinked/kandora/circus/mp_cave,
+	  unlinked/kandora/circus/mp_start, unlinked/vol_vill_shops,
+	  whalingoutpost/misc/castleb1, whalingoutpost/taverns/storehouse1,
+	  wolfsburg/guilds/damned_heretics/upper: Run MapNormalizer script
+	  on all maps.
+
+2008-05-30 06:23  akirschbaum
+
+	* editor/scripts/MapNormalizer: Run 'Shrink Map Size' function from
+	  MapNormalizer editor script.
+
+2008-05-29 22:20  ryo_saeba
+
+	* dungeons/train/train-old: Remove unused map.
+
+2008-05-29 22:13  ryo_saeba
+
+	* quests/peterm/quests/dragon_quest: Remove unlinked map.
+
+2008-05-29 22:11  ryo_saeba
+
+	* darcap/darcap/circus/movers, darcap/darcap/circus/walls: Remove
+	  unlinked and empty maps.
+
+2008-05-29 22:02  ryo_saeba
+
+	* darcap/darcap/circus/strength: Make windows coherent with wall.
+
+2008-05-29 22:02  ryo_saeba
+
+	* darcap/darcap/maze, darcap/darcap/park, world/world_116_102:
+	  First pass to add lore to the town.
+
+2008-05-29 11:27  anmaster
+
+	* brest/asyvan/palace3, brest/brest.trademarket,
+	  navar_city/misc/aliswell, navar_city/misc/theaterb4,
+	  navar_city/spyhouse, whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1, whalingoutpost/lighthouse1,
+	  whalingoutpost/lighthouse2, whalingoutpost/lighthouse3,
+	  whalingoutpost/lighthouse4, whalingoutpost/lighthouse5,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle4,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/taverns/fishershall1: Resize some more maps with
+	  wasted empty space in the lower right part of the map.
+
+2008-05-29 09:36  anmaster
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/gates/gate1,
+	  azumauindo/minatomachi/gates/gate2, azumauindo/misc/cave1,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/apartments/sapartment,
+	  azumauindo/ranbounagisatoshi/gates/gate1,
+	  azumauindo/ranbounagisatoshi/gates/gate2,
+	  azumauindo/ranbounagisatoshi/shops/tradecenter,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  azumauindo/suno-yamatoshi/buildings/jadechesthouse1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/gates/gate1,
+	  azumauindo/suno-yamatoshi/gates/gate2,
+	  azumauindo/suno-yamatoshi/gates/gate3,
+	  azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5: Resize some Azumauindo
+	  maps that were mostly a lot of empty space.
+
+2008-05-29 09:06  anmaster
+
+	* mlab/citydeclouds/bank/bank2, mlab/citydeclouds/bank/bank3,
+	  mlab/citydeclouds/bank/bank4, mlab/citydeclouds/bank/bank5,
+	  mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/cdcapart1,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccastlekeep/cdckeepbarrack1,
+	  mlab/citydeclouds/cdcnwgateuprlv1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit2,
+	  mlab/citydeclouds/cwdcguestofmarquis1,
+	  mlab/citydeclouds/misc/cwdcchessarenaa2,
+	  mlab/citydeclouds/misc/cwdcchessarenab2,
+	  mlab/citydeclouds/shops/cdcwcafe1,
+	  mlab/citydeclouds/shops/cwdcgenshop1,
+	  mlab/citydeclouds/shops/cwdckitchen,
+	  mlab/citydeclouds/shops/cwdcpotionshop1,
+	  mlab/citydeclouds/villa/citydecloudsvillaC2,
+	  mlab/citydeclouds/villa/citydecloudsvillaC3,
+	  mlab/citydeclouds/villa/citydecloudsvillab2,
+	  navar_city/mlab/dream, navar_city/mlab/ttower23,
+	  navar_city/mlab/ttower24, navar_city/mlab/zealothouseb1: Resize
+	  some more mlab maps that were mostly a lot of empty space.
+
+2008-05-29 06:59  anmaster
+
+	* mlab/citydeclouds/IPO_citydeclouds, mlab/citydeclouds/cdcapart2,
+	  mlab/citydeclouds/cdcmesshluper1,
+	  mlab/citydeclouds/cdcnrkpdevtmp1, mlab/citydeclouds/cdcscasino,
+	  mlab/mlabscrntrd1, mlab/mlabscrntrd2, mlab/mlabscrntrdb1,
+	  mlab/mlabscrntrdb2, mlab/mlabscrntrdb3,
+	  navar_city/mlab/tadobebuild2, navar_city/mlab/tadobebuild3,
+	  navar_city/mlab/tavernb1, navar_city/mlab/tavernb3,
+	  navar_city/mlab/zealothouseb1: Resize some mlab maps that were
+	  mostly a lot of empty space, in some a few things outside map
+	  (like buttons/boulders) had to be moved a bit. In a few these
+	  things outside the map were actually not used.
+
+2008-05-29 06:56  anmaster
+
+	* whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3, world/world_128_128: Resize
+	  some maps in whalingoutpost to use smaller size, they were really
+	  wasteful, update to worldmap in order to fix exits for the new
+	  sizes.
+
+2008-05-29 06:54  anmaster
+
+	* scorn/misc/castle: Change exits in /scorn/misc/castle to be under
+	  ground and thus look nicer.
+
+2008-05-28 21:30  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with latest
+	  Gridarta build.
+
+2008-05-28 09:43  anmaster
+
+	* world/world_116_102: Fix some double ground in Darcap harbour.
+
+2008-05-28 08:22  anmaster
+
+	* azumauindo/misc/entrance1, world/world_128_101: Change
+	  /azumauindo/misc/entrance1 to use a creator instead of a conveyor
+	  belt for the passes. Also means the map doesn't have to be so
+	  wide so had to update entrances/exits on worldmap too.
+
+2008-05-25 13:38  anmaster
+
+	* brest/brest.inn, brest/taverns/brest.seaside.tavern: Add some
+	  more @question/@reply to some maps.
+
+2008-05-23 23:08  anmaster
+
+	* pup_land/rainbow/islands, pup_land/rainbow/l_h1,
+	  pup_land/rainbow/red_town/town, pup_land/rainbow/shore,
+	  pup_land/rainbow/station, pup_land/rainbow/well,
+	  pup_land/rainbow/woods, pup_land/s_f/ruin, pup_land/s_f/to-jyo,
+	  pup_land/world: Make Castle of Eureca show up on the south
+	  pupland world map part. Had to shift all tiles one step south to
+	  make the change work so a lot of exits updated too, none of them
+	  seems broken, but if they are that is a mistake. In the future
+	  tiling should probably be used for the south and north part of
+	  the pupland map.
+
+2008-05-23 22:30  anmaster
+
+	* azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  brest/brest.scrolls.right, brest/sow/sow,
+	  brest/taverns/brest.seaside.tavern,
+	  brest/zorn/castle.upper.floor.one, darcap/darcap/circus/wurfbude,
+	  darcap/darcap/temple, inn_and_outpost/hermes_inn,
+	  lake_country/Butakis/arena, lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w, lake_country/RETower/tower0,
+	  lake_country/RETower/tower1, lake_country/RETower/tower2,
+	  lake_country/RETower/tower3, lake_country/ebony/entrance1,
+	  lake_country/ebony/entrance2, lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.5, lake_country/marsh/marsh1_1,
+	  lake_country/marsh/marsh1_2, lake_country/marsh/marsh2_1,
+	  lake_country/marsh/marsh2_2, lake_country/shops/Mopoon_wshop,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/snakepit_1, marksel/grumms_inn,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis1,
+	  mlab/citydeclouds/citydeclouds2I, navar_city/city1prison,
+	  navar_city/misc/city1armour, navar_city/misc/city1gen,
+	  navar_city/misc/city1magic, navar_city/misc/city1weapon,
+	  navar_city/misc/navarwiz, navar_city/temples/gorokh,
+	  navar_city/temples/sorig, navar_city/temples/templelyth,
+	  navar_city/tower/magetower4, port_joseph/goblin/dungeon1,
+	  port_joseph/goblin/dungeon2, port_joseph/goblin/dungeon3,
+	  port_joseph/goblin/fortress, port_joseph/pirates/fortvsship,
+	  port_joseph/town/portia, pup_land/lone_town/thief_market,
+	  pup_land/nurnberg/guild, pup_land/raffle/raffle2_u4,
+	  pup_land/raffle/raffle3_u1, pup_land/raffle/raffle3_u2,
+	  pup_land/rainbow/Lv2/Kum, pup_land/rainbow/Lv3/Rufto,
+	  pup_land/rainbow/Lv3/prison, pup_land/s_f/st1, pup_land/s_f/st7,
+	  quests/greyshield/Castle, quests/greyshield/Fortress,
+	  quests/greyshield/Sphinx, quests/mcz/castle1,
+	  quests/peterm/CTower/Dungeon, quests/peterm/Demonology/AirStudy,
+	  quests/peterm/Demonology/EarthStudy,
+	  quests/peterm/Demonology/FireStudy,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/WaterStudy,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/temple/InnerTemple, quests/skud/entrance,
+	  quests/skud/north_1, sisters/entrance, sisters/necro_hole1,
+	  sisters/shrine_entrance, start/newbieshouse,
+	  whalingoutpost/taverns/storehouse1, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/underworld, wolfsburg/etern_rew,
+	  wolfsburg/volcano/vvmansion, world/world_101_114: Even more fixes
+	  for redundant patterns in @match (it is case insensitive, but a
+	  lot of maps treated it as if it was case sensitive). Mostly done
+	  with grep + sed. Also add @question to two pupland maps and fix a
+	  typo on a lake country map.
+
+2008-05-23 10:52  anmaster
+
+	* navar_city/city1church1, navar_city/city1court,
+	  navar_city/temples/ruggilli, navar_city/temples/ruggilli2,
+	  navar_city/tower/magetower1, navar_city/warehouse4,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/cave_pass2, pup_land/cave_weapon/cave4,
+	  pup_land/cave_weapon/cave5, pup_land/cave_weapon/cave51,
+	  pup_land/hq, pup_land/hq_ud, pup_land/kurte/eureca_road3,
+	  pup_land/kurte/hut2, pup_land/lone_town/church_ud,
+	  pup_land/lone_town/cordish, pup_land/nurnberg/agito,
+	  pup_land/nurnberg/aqueduct, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/castle_ud, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/nf_bar, pup_land/pplant/pplant2,
+	  pup_land/rainbow/Lv4/key, pup_land/ruin_barbarian/hole1,
+	  scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/anthony/prison, scorn/apartment/apartments,
+	  scorn/houses/cornerbrook, scorn/houses/house2,
+	  scorn/houses/riverside_manor, scorn/houses/smithery,
+	  scorn/houses/wizz.entry, scorn/kar/somehouse3,
+	  scorn/misc/gatehouse, scorn/misc/templelyth, scorn/misc/wizhide,
+	  scorn/oldcity/oldcity12, scorn/oldcity/oldcity3,
+	  scorn/oldcity/oldcity5, scorn/oldcity/oldcity54,
+	  scorn/oldcity/oldcity6, scorn/shops/oleds_cafe,
+	  scorn/shops/scorn.sale1, scorn/shops/scorn.sale2,
+	  scorn/taverns/barking_mule, scorn/taverns/goths2,
+	  scorn/temples/gorokh, scorn/temples/mostrai,
+	  scorn/temples/ruggilli1, scorn/temples/sorig,
+	  scorn/temples/valriel2, scorn/towers/brewery.2: Yet more fixes
+	  for redundant patterns in @match (it is case insensitive, but a
+	  lot of maps treated it as if it was case sensitive). Mostly done
+	  with a script.
+
+2008-05-23 09:49  anmaster
+
+	* dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/house4, dragonisland/house7, dragonisland/house8,
+	  dragonisland/house9, dragonisland/tavern,
+	  navar_city/misc/library, port_joseph/town/dshark,
+	  port_joseph/town/portia2, pup_land/ancient/castle/castle.4,
+	  pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/company,
+	  pup_land/ancient/kurte/house, pup_land/ancient/mountain/cave.b3,
+	  pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/ruin/underground,
+	  pup_land/ancient/village/hole/hole.B1,
+	  pup_land/ancient/village/hut1, pup_land/ancient/village/hut2,
+	  pup_land/ancient/village/hut3, pup_land/ancient/village/hut4,
+	  pup_land/ancient/village/hut5, pup_land/ancient/village/hut6,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/library,
+	  pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1, pup_land/barrier,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/castle_eureca9, pup_land/kurte/kurte,
+	  pup_land/lone_town/guild_freedom, pup_land/lone_town/guild_law,
+	  pup_land/lone_town/tavern, pup_land/lone_town/training,
+	  pup_land/world, quests/peterm/Demonology/Demon1,
+	  quests/peterm/Demonology/Demon3, scorn/misc/library: More fixes
+	  for redundant patterns in @match (it is case insensitive, but a
+	  lot of maps treated it as if it was case sensitive). Also fix
+	  some broken dialogs (missing the match part of @match and other
+	  such typos).
+
+2008-05-23 08:11  anmaster
+
+	* brest/brest.inn, brest/pshops/pshop1/basement,
+	  brest/pshops/pshop10/basement, brest/pshops/pshop11/basement,
+	  brest/pshops/pshop12/basement, brest/pshops/pshop13/basement,
+	  brest/pshops/pshop14/basement, brest/pshops/pshop15/basement,
+	  brest/pshops/pshop16/basement, brest/pshops/pshop17/basement,
+	  brest/pshops/pshop18/basement, brest/pshops/pshop19/basement,
+	  brest/pshops/pshop2/basement, brest/pshops/pshop20/basement,
+	  brest/pshops/pshop21/basement, brest/pshops/pshop22/basement,
+	  brest/pshops/pshop23/basement, brest/pshops/pshop24/basement,
+	  brest/pshops/pshop25/basement, brest/pshops/pshop26/basement,
+	  brest/pshops/pshop27/basement, brest/pshops/pshop3/basement,
+	  brest/pshops/pshop4/basement, brest/pshops/pshop5/basement,
+	  brest/pshops/pshop6/basement, brest/pshops/pshop7/basement,
+	  brest/pshops/pshop8/basement, brest/pshops/pshop9/basement,
+	  brest/pshops/pshopsinc, brest/pshops/pshopsinc2,
+	  darcap/darcap/shop_g, darcap/darcap/tavern, darcap/town2/shop_f,
+	  darcap/town2/towers, dragonisland/advguild, dragonisland/hangar,
+	  lake_country/Butakis/church-1, lake_country/Butakis/prison-1,
+	  lake_country/small_buildings/hut_Galmorus, navar_city/city1enter,
+	  navar_city/misc/city1mermaid, pup_land/hq,
+	  pup_land/raffle/raffle3, quests/todd/aljwaf/crypt4,
+	  santo_dominion/tavern, scorn/houses/wizz.entry,
+	  scorn/taverns/goths0, teamarena/twregister,
+	  wolfsburg/dungeons/hut, wolfsburg/temple/temp_dung1,
+	  wolfsburg/tt/tta1: The @match expression in npc dialog is case
+	  insensitive, but a lot of map treated it as if it was case
+	  sensitive, fixing a lot of them (there may be more left, that the
+	  grep didn't find).
+
+2008-05-23 07:20  anmaster
+
+	* marksel/grumms_inn2: Add buttons under the actual doors as well
+	  to prevent player getting crushed.
+
+2008-05-23 07:17  anmaster
+
+	* marksel/church, marksel/grumms_inn, marksel/wizard: Add
+	  @question/@reply stuff to some maps.
+
+2008-05-23 07:16  anmaster
+
+	* lake_country/Butakis/inn: Cosmetic change of
+	  /lake_country/Butakis/inn to hide the blue exits under the floor.
+
+2008-05-22 22:30  anmaster
+
+	* inn_and_outpost/nirlas_house, inn_and_outpost/outpost_aranor1,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/treehouse_df1,
+	  inn_and_outpost/treehouse_df2, inn_and_outpost/treehouse_df3,
+	  inn_and_outpost/treehouse_df4, inn_and_outpost/treehouse_df5,
+	  inn_and_outpost/treehouse_df6: Extend the dialog for the inn &
+	  outpost section of maps a bit.
+
+2008-05-22 22:18  anmaster
+
+	* inn_and_outpost/hermes_inn, inn_and_outpost/hermes_inn2: Add
+	  @question to hermes inn maps' dialogs and add some buttons to
+	  prevent doors from crushing you
+
+2008-05-22 21:45  anmaster
+
+	* brest/pshops/pshop13/floor1, brest/pshops/pshop16/floor1,
+	  brest/pshops/pshop2/floor1, brest/pshops/pshop3/floor1,
+	  brest/pshops/pshop4/floor1, brest/pshops/pshop5/floor1,
+	  brest/pshops/pshop6/floor1, brest/pshops/pshop7/floor1,
+	  brest/pshops/pshop8/floor1, brest/pshops/pshop9/floor1: Run the
+	  pshop_copier script to update the shops, some of the shops had
+	  small differences.
+
+2008-05-22 21:40  anmaster
+
+	* darcap/darcap/circus/ghost, darcap/lynn/castle1.0,
+	  marksel/wizard: Make some tourches that could be used to bypass
+	  some maps in puplands non-pickable.
+
+2008-05-22 21:26  anmaster
+
+	* python/IPO/say.py: Fix wrong price of objects in help for IPO.
+
+2008-05-22 21:24  anmaster
+
+	* world/world_105_115: Workaround for cfrhg causing random maps
+	  when walking on gates to castle of Scorn.
+
+2008-05-21 06:33  qal21
+
+	* ChangeLog, scorn/shops/armourshop: Make coloured mail work in the
+	  Scorn armour shop
+
+2008-05-20 22:02  ryo_saeba
+
+	* animations, animations/maps, animations/maps/navar_city,
+	  animations/maps/navar_city/university-dorlf.animation,
+	  navar_city/university, python/maps/navar_city,
+	  python/maps/navar_city/university-dorlf.py: Add a new professor
+	  to the university, and associated scripts (only Lorkas lore, for
+	  now). Fix some lights and wrong desks.
+
+2008-05-20 21:25  ryo_saeba
+
+	* test/cfanim, test/cfanim.conjurer, test/cfanim.py: Some fun with
+	  plugins.
+
+2008-05-20 21:24  ryo_saeba
+
+	* test/say: Misc say test.
 
 2008-05-20 16:01  anmaster
     * brest/pshops/pshop_copier: Update the script to make it work correctly,
       it assumed too much about the layout of the file, so it was broken.
       New script should be somewhat more robust.
 
-2008-05-18 19:37  rednaxela
-    * mlab/citydeclouds/*,
-      darcap/darcap/pirates.1,
-      navar_city/iscar,
-      wolfsburg/lursendis,
-      wolfsburg/apartments/pet-apartment/*,
-      brest/pshops/*/floor2,
-      brest/sow/sow.1,
-      scorn/houses/rolanda: Add missing region info. Coutesy of Arvid Norlander.
-    * scorn/houses/resir: Add missing region info and fix spelling. Courtesy of
-      Arvid Norlander.
+	* ChangeLog, brest/pshops/pshop_copier: Update the script to make
+	  it work correctly, it assumed too much about the layout of the
+	  file, so it was broken. New script should be somewhat more
+	  robust.
 
-2008-05-13 18:15  rednaxela
-    * darcap/temple_justice/temple_justice.2: Fix broken @match.
+2008-05-19 22:47  ryo_saeba
 
-2008-04-20 21:15  gros
-	* pup_land/begin/adv: Applied patch from tracker (#1945438),
-	  courtesy of Anthony Wyatt.
+	* navar_city/university: Add some stuff, fix a few rooms.
 
-2008-03-26 19:00  gros
-	* scorn/towers/brewery.1,
-	  scorn/towers/brewery.2,
-	  scorn/towers/brewery.3,
-	  scorn/towers/brewery.4,
-	  scorn/towers/tower.mad3,
-	  scorn/towers/tower,
-	  world/world_105_116: Part I of the Scorn's Brewery Quest,
-	  replacing the rather dumb Newbie Tower.
+2008-05-19 21:09  ryo_saeba
+
+	* navar_city/university, world/world_122_116: Navar university,
+	  first ground. Only one professor, but some lore already.
+
+2008-05-18 19:50  qal21
+
+	* ChangeLog, scorn/houses/resir, scorn/houses/rolanda: Add region
+	  info in Scorn, courtesy of Arvid Norlander
+
+2008-05-18 19:46  qal21
+
+	* ChangeLog, brest/pshops/pshop1/floor2,
+	  brest/pshops/pshop10/floor2, brest/pshops/pshop11/floor2,
+	  brest/pshops/pshop12/floor2, brest/pshops/pshop13/floor2,
+	  brest/pshops/pshop14/floor2, brest/pshops/pshop15/floor2,
+	  brest/pshops/pshop16/floor2, brest/pshops/pshop17/floor2,
+	  brest/pshops/pshop18/floor2, brest/pshops/pshop19/floor2,
+	  brest/pshops/pshop2/floor2, brest/pshops/pshop20/floor2,
+	  brest/pshops/pshop21/floor2, brest/pshops/pshop22/floor2,
+	  brest/pshops/pshop23/floor2, brest/pshops/pshop24/floor2,
+	  brest/pshops/pshop25/floor2, brest/pshops/pshop26/floor2,
+	  brest/pshops/pshop27/floor2, brest/pshops/pshop3/floor2,
+	  brest/pshops/pshop4/floor2, brest/pshops/pshop5/floor2,
+	  brest/pshops/pshop6/floor2, brest/pshops/pshop7/floor2,
+	  brest/pshops/pshop8/floor2, brest/pshops/pshop9/floor2,
+	  brest/sow/sow.1: Add region info in Brest, courtesy of Arvid
+	  Norlander
+
+2008-05-18 19:43  qal21
+
+	* ChangeLog, wolfsburg/apartments/pet-apartment/pet-apartment,
+	  wolfsburg/apartments/pet-apartment/pet-apartment2,
+	  wolfsburg/apartments/pet-apartment/pet-apartment3,
+	  wolfsburg/apartments/pet-apartment/torture-chamber,
+	  wolfsburg/lursendis: Add region info in Wolfsburg, courtesy of
+	  Arvid Norlander
+
+2008-05-18 19:41  qal21
+
+	* ChangeLog, navar_city/iscar: Add region info in , courtesy of
+	  Arvid Norlander
+
+2008-05-18 19:40  qal21
+
+	* ChangeLog, darcap/darcap/pirates.1: Add region info in darcap,
+	  courtesy of Arvid Norlander
+
+2008-05-18 19:38  qal21
+
+	* ChangeLog, mlab/citydeclouds/bank/bank1,
+	  mlab/citydeclouds/bank/bank2, mlab/citydeclouds/bank/bank3,
+	  mlab/citydeclouds/bank/bank4, mlab/citydeclouds/bank/bank5,
+	  mlab/citydeclouds/bank/vaulta1, mlab/citydeclouds/bank/vaultb2,
+	  mlab/citydeclouds/bank/vaultc3, mlab/citydeclouds/bank/vaultd4,
+	  mlab/citydeclouds/bank/vaulte5,
+	  mlab/citydeclouds/castle/cwdccastleb1,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore3f,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccastlekeep/cdckeepbarrack1,
+	  mlab/citydeclouds/cdcspire/cdcspire1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit2: Add region info in
+	  mlab, courtesy of Arvid Norlander
+
+2008-05-14 16:36  rjtanner
+
+	* pup_land/lone_town/guild_freedom: Typo correction, should be
+	  mission instead of misson
+
+2008-05-13 18:16  qal21
+
+	* ChangeLog, darcap/temple_justice/temple_justice.2: Fix broken
+	  dialog in darcap/temple_justice/temple_justice.2
+
+2008-05-12 20:46  ryo_saeba
+
+	* test/cfanim, test/cfanim.animation, test/cfanim.button: CFAnim
+	  basic test map.
+
+2008-05-12 19:35  akirschbaum
+
+	* dragonisland/keysale: Fix typo.
+
+2008-05-11 17:52  ryo_saeba
+
+	* test/say: Simple test map for the new dialog system.
+
+2008-05-11 09:59  akirschbaum
+
+	* azumauindo/minatomachi/stores/postoffice: Remove empty space
+	  around map.
+
+2008-05-11 09:50  akirschbaum
+
+	* azumauindo/minatomachi/stores/diamondex1: Remove empty space
+	  around map.
+
+2008-05-08 10:18  ryo_saeba
+
+	* pup_land/ancient/village/siegfried/siegfried.1: Fix for bug
+	  #1930002: Siegfried standing in wrong place ; cannot solve quest.
+	  Fix typos, remove useless tests.
+
+2008-05-07 18:25  ryo_saeba
+
+	* python/IPO/say.py: Fix bugs #1958325 and #1958326.
+
+2008-05-07 17:58  ryo_saeba
+
+	* unlinked/forgotten_town/README: Description of where those maps
+	  come from.
+
+2008-05-07 17:56  ryo_saeba
+
+	* lake_country/snake_pit/Chaos_lair1, quests/mak/MainFloor,
+	  quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/chaos/down4,
+	  quests/mak/chaos/down5, quests/mak/chaos/fallen,
+	  quests/mak/chaos/tritemples, quests/mak/chaos/up1,
+	  quests/mak/chaos/up2, quests/mak/chaos/up3, quests/mak/chaos/up4,
+	  quests/mak/chaos/up5: Add various links to other maps, set
+	  difficulty from monsters on map.
+
+2008-05-06 20:17  ryo_saeba
+
+	* darcap/forgotten_town, unlinked/forgotten_town,
+	  world/world_116_102: Totally unfinished, so move to unlinked.
+
+2008-05-06 20:11  ryo_saeba
+
+	* quests/mcz/castle1, quests/mcz/castle_air,
+	  quests/mcz/castle_earth, quests/mcz/castle_fire,
+	  quests/mcz/castle_water: Define good key/door slayings.
+
+2008-05-06 20:07  ryo_saeba
+
+	* quests/hendel/acid_room: Define good key/door slayings.
+
+2008-05-05 22:09  ryo_saeba
+
+	* scorn/houses/resir: Patch #1947664: Modified resir's house
+	  simi-harder some what moe fun, courtesy Anthony Wyatt
+	  (buzzsawddog), slightly modified.
+
+2008-04-24 22:08  akirschbaum
+
+	* editor/scripts/MapValidator: Adapt MapValidator script to
+	  Gridarta changes.
+
+2008-04-20 19:15  gros
+
+	* ChangeLog, pup_land/begin/adv: Applied patch #1945438, courtesy
+	  of Anthony Wyatt.
+
+2008-04-09 17:51  ryo_saeba
+
+	* scorn/anthony/passoffice: Fix broken connection resulting in no
+	  pass / 2 passes instead of 1 / 1.
+
+2008-04-08 21:56  ryo_saeba
+
+	* test/teleporter_test: Simple test map.
+
+2008-04-07 01:39  rjtanner
+
+	* templates/guild/README.txt: Updated the README file with a
+	  reminder to update the storage_hall map exit. Map template
+	  provided by Alestan jehloq@yahoo.com
+
+2008-04-07 01:31  rjtanner
+
+	* python/guilds/storage_entry.py, templates/guild/README.txt,
+	  templates/guild/storage_hall, templates/guild/storage_hall.0: New
+	  guild storage hall map based of the patch, [ 1854556 ] New Guild
+	  Storage Building (for laughing skulls guild), with included
+	  feature of using Python scripts for management and ownership
+
+2008-04-05 14:49  ryo_saeba
+
+	* wolfsburg/apartments/pet-apartment/pet-apartment,
+	  wolfsburg/apartments/pet-apartment/pet-apartment2: Wrong path was
+	  used, unique should be set.
+
+2008-04-05 12:27  ryo_saeba
+
+	* wolfsburg/apartments/pet-apartment,
+	  wolfsburg/apartments/pet-apartment/pet-apartment,
+	  wolfsburg/apartments/pet-apartment/pet-apartment2,
+	  wolfsburg/apartments/pet-apartment/pet-apartment3,
+	  wolfsburg/apartments/pet-apartment/torture-chamber,
+	  world/world_128_109: Commit patch #1817285: Pet apartments, by
+	  anonymous submitter.
+
+2008-04-05 10:34  ryo_saeba
+
+	* dungeons/valriel/valriel_treasure: Correct accidentally broken
+	  chests.
+
+2008-04-05 10:20  ryo_saeba
+
+	* dungeons/valriel/valriel_treasure: Update with chest from patch
+	  #1673796: White chests for errac's heaven treasure map, by Mike
+	  B.
+
+2008-04-05 07:53  ryo_saeba
+
+	* lake_country/sentrio_farmhouse,
+	  lake_country/small_buildings/sentrio_house,
+	  port_joseph/town/house, port_joseph/town/ruined_home,
+	  port_joseph/town/underground_tavern,
+	  quests/peterm/quests/mushroom_quest, scorn/houses/scorn_trappers,
+	  scorn/houses/woodhouse, scorn/misc/castle,
+	  scorn/misc/castle_kitchen, wolfsburg/lursendis: Link Lursendis
+	  quest maps.
+
+2008-04-05 07:46  ryo_saeba
+
+	* planes/purpleworm, python/misc/swallow_whole.py: Part of patch
+	  #1677738: Purple worm (with pythonscript and map), by Mike B.
+
+2008-04-04 23:21  akirschbaum
+
+	* editor/pickmaps/NPC, editor/pickmaps/armour,
+	  editor/pickmaps/background, editor/pickmaps/connected,
+	  editor/pickmaps/exit, editor/pickmaps/food,
+	  editor/pickmaps/indoor, editor/pickmaps/monster,
+	  editor/pickmaps/river, editor/pickmaps/runes,
+	  editor/pickmaps/supernatural, editor/pickmaps/treasure,
+	  editor/pickmaps/wall special, editor/pickmaps/weapon: Update
+	  pickmap names.
+
+2008-03-29 21:45  ryo_saeba
+
+	* test/python.py: Python hook check.
+
+2008-03-27 22:36  ryo_saeba
+
+	* pup_land/lone_town/town: Fix broken exit.
+
+2008-03-26 18:15  gros
+
+	* ChangeLog, python/maps/scorn/towers/mad_mage/mad_mage_user.py,
+	  python/maps/scorn/towers/mad_mage/milking_blueprints,
+	  scorn/towers/brewery.1, scorn/towers/brewery.2,
+	  scorn/towers/brewery.3, scorn/towers/brewery.4,
+	  scorn/towers/tower, scorn/towers/tower.mad3, world/world_105_116:
+	  Introduced Part I of the Brewery Quest, replacing Newbie Tower.
+
+2008-03-25 03:59  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-03-24 11:05  ryo_saeba
 

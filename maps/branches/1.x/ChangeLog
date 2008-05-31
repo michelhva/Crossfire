@@ -1,5 +1,69 @@
-2008-05-13 18:15  rednaxela
-    * darcap/temple_justice/temple_justice.2: Fix broken @match.
+2008-05-30 06:23  akirschbaum
+
+	* editor/scripts/MapNormalizer: Run 'Shrink Map Size' function from
+	  MapNormalizer editor script.
+
+2008-05-28 21:30  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with latest
+	  Gridarta build.
+
+2008-05-14 16:36  rjtanner
+
+	* pup_land/lone_town/guild_freedom: Typo correction, should be
+	  mission instead of misson
+
+2008-05-13 18:20  qal21
+
+	* ChangeLog, darcap/temple_justice/temple_justice.2: Backport
+	  darcap/temple_justice/temple_justice.2 fix from trunk
+
+2008-05-12 19:35  akirschbaum
+
+	* dragonisland/keysale: Fix typo.
+
+2008-05-08 10:20  ryo_saeba
+
+	* pup_land/ancient/village/siegfried/siegfried.1: Fix for bug
+	  #1930002: Siegfried standing in wrong place ; cannot solve quest.
+	  Fix typos, remove useless tests.
+
+2008-05-07 18:27  ryo_saeba
+
+	* python/IPO/say.py: Fix bugs #1958325 and #1958326.
+
+2008-04-24 22:08  akirschbaum
+
+	* editor/scripts/MapValidator: Adapt MapValidator script to
+	  Gridarta changes.
+
+2008-04-24 22:06  akirschbaum
+
+	* mlab/citydeclouds/cloudworlddecity: Fix syntax error.
+
+2008-04-13 21:04  rjtanner
+
+	* lake_country/small_buildings/LC_inn1: Removed duplicate inventory
+	  checks that was causing display issues (creeping darkness) ingame
+	  and a I/O error in the map editor (already reported that issue
+	  via IRC #gridarta)
+
+2008-04-04 23:21  akirschbaum
+
+	* editor/pickmaps/NPC, editor/pickmaps/armour,
+	  editor/pickmaps/background, editor/pickmaps/connected,
+	  editor/pickmaps/exit, editor/pickmaps/food,
+	  editor/pickmaps/indoor, editor/pickmaps/monster,
+	  editor/pickmaps/river, editor/pickmaps/runes,
+	  editor/pickmaps/supernatural, editor/pickmaps/treasure,
+	  editor/pickmaps/wall special, editor/pickmaps/weapon: Update
+	  pickmap names.
+
+2008-03-25 03:59  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
 
 2008-03-24 06:49  rjtanner
 
