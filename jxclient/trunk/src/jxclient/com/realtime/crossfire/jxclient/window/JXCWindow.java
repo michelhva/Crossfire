@@ -444,7 +444,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         spellsManager = new SpellsManager(server);
         commandQueue = new CommandQueue(server);
         shortcuts = new Shortcuts(commandQueue, spellsManager);
-        mapUpdater.reset();
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -671,6 +670,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 server.removeCrossfireDrawextinfoListener(this);
                 setTitle(TITLE_PREFIX);
                 itemsManager.reset();
+                mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -695,6 +695,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 itemsManager.reset();
                 spellsManager.reset();
                 animations.reset();
+                mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();

@@ -312,7 +312,7 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            visibleAnimations.clear();
+            processNewMap(1, 1);
         }
     }
 
