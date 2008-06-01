@@ -707,16 +707,6 @@ public class Gui
     }
 
     /**
-     * Return whether the state (position or size) has changed.
-     *
-     * @return Whether the state has changed.
-     */
-    public boolean isStateChanged()
-    {
-        return stateChanged;
-    }
-
-    /**
      * Set whether the state (position or size) has changed.
      *
      * @param stateChanged Whether the state has changed.

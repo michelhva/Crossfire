@@ -110,11 +110,6 @@ public class Segment
     private int width = -1;
 
     /**
-     * The total height of this line. Set to <code>-1</code> if unknown.
-     */
-    private int height = -1;
-
-    /**
      * The distance of the underline to the base line. Set to <code>0</code> if
      * unknown.
      */
@@ -266,16 +261,6 @@ public class Segment
     public void setWidth(final int width)
     {
         this.width = width;
-    }
-
-    /**
-     * Set the height to display the segment.
-     *
-     * @param height The height.
-     */
-    public void setHeight(final int height)
-    {
-        this.height = height;
     }
 
     /**
