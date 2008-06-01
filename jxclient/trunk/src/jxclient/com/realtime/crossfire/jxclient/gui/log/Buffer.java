@@ -285,7 +285,6 @@ public class Buffer implements Iterable<Line>
             final String text = segment.getText();
             final Font font = segment.getFont(fonts);
             final LineMetrics lineMetrics = font.getLineMetrics(text, context);
-            segment.setHeight(maxY-minY);
             segment.setY(y-minY);
             segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
         }
