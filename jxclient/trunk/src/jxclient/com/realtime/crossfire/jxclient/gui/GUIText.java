@@ -87,6 +87,12 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private int offset = 0;
 
+    /**
+     * Object used to synchronize on access to {@link #text}, {@link #cursor},
+     * and {@link #offset}.
+     */
+    private final Object syncCursor = new Object();
+
     protected GUIText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
@@ -120,19 +126,24 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
-        final String tmp = getDisplayText();
-        final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
-        final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
-        if (isActive())
+        final String tmp;
+        final int y;
+        synchronized (syncCursor)
         {
-            final String tmpPrefix = tmp.substring(0, cursor-offset);
-            final String tmpCursor = tmp.substring(0, cursor-offset+1);
-            final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
-            final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
-            final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
-            final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
-            g.setColor(inactiveColor);
-            g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
+            tmp = getDisplayText();
+            final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
+            y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+            if (isActive())
+            {
+                final String tmpPrefix = tmp.substring(0, cursor-offset);
+                final String tmpCursor = tmp.substring(0, cursor-offset+1);
+                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
+                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
+                final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
+                g.setColor(inactiveColor);
+                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
+            }
         }
         g.setColor(isActive() ? activeColor : inactiveColor);
         g.drawString(tmp, margin, y);
@@ -182,48 +193,66 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         switch (e.getKeyCode())
         {
         case KeyEvent.VK_BACK_SPACE:
-            if (cursor > 0)
+            synchronized (syncCursor)
             {
-                text.delete(cursor-1, cursor);
-                setCursor(cursor-1);
+                if (cursor > 0)
+                {
+                    text.delete(cursor-1, cursor);
+                    setCursor(cursor-1);
+                }
             }
             break;
 
         case KeyEvent.VK_DELETE:
-            if (cursor < text.length())
+            synchronized (syncCursor)
             {
-                text.delete(cursor, cursor+1);
-                setChanged();
+                if (cursor < text.length())
+                {
+                    text.delete(cursor, cursor+1);
+                    setChanged();
+                }
             }
             break;
 
         case KeyEvent.VK_KP_LEFT:
         case KeyEvent.VK_LEFT:
-            if (cursor > 0)
+            synchronized (syncCursor)
             {
-                setCursor(cursor-1);
+                if (cursor > 0)
+                {
+                    setCursor(cursor-1);
+                }
             }
             break;
 
         case KeyEvent.VK_KP_RIGHT:
         case KeyEvent.VK_RIGHT:
-            if (cursor < text.length())
+            synchronized (syncCursor)
             {
-                setCursor(cursor+1);
+                if (cursor < text.length())
+                {
+                    setCursor(cursor+1);
+                }
             }
             break;
 
         case KeyEvent.VK_HOME:
-            if (cursor > 0)
+            synchronized (syncCursor)
             {
-                setCursor(0);
+                if (cursor > 0)
+                {
+                    setCursor(0);
+                }
             }
             break;
 
         case KeyEvent.VK_END:
-            if (cursor < text.length())
+            synchronized (syncCursor)
             {
-                setCursor(text.length());
+                if (cursor < text.length())
+                {
+                    setCursor(text.length());
+                }
             }
             break;
         }
@@ -266,8 +295,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     public void insertChar(final char ch)
     {
-        text.insert(cursor, ch);
-        setCursor(cursor+1);
+        synchronized (syncCursor)
+        {
+            text.insert(cursor, ch);
+            setCursor(cursor+1);
+        }
     }
 
     /**
@@ -276,8 +308,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     public void insertString(final String str)
     {
-        text.insert(cursor, str);
-        setCursor(cursor+str.length());
+        synchronized (syncCursor)
+        {
+            text.insert(cursor, str);
+            setCursor(cursor+str.length());
+        }
     }
 
     /**
@@ -310,49 +345,52 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     public void setCursor(final int cursor)
     {
-        if (this.cursor < cursor)
+        synchronized (syncCursor)
         {
-            // cursor moved right
-
-            final Graphics2D g = bufferedImage.createGraphics();
-            for (;;)
+            if (this.cursor < cursor)
             {
-                final String tmp = getDisplayText();
-                final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
-                final int cursorX = (int)(rectCursor.getWidth()+0.5);
-                if (cursorX < w)
-                {
-                    break;
-                }
+                // cursor moved right
 
-                if (offset+SCROLL_CHARS <= cursor)
+                final Graphics2D g = bufferedImage.createGraphics();
+                for (;;)
                 {
-                    offset += SCROLL_CHARS;
-                }
-                else
-                {
-                    offset = cursor;
+                    final String tmp = getDisplayText();
+                    final String tmpCursor = tmp.substring(0, cursor-offset+1);
+                    final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                    final int cursorX = (int)(rectCursor.getWidth()+0.5);
+                    if (cursorX < w)
+                    {
+                        break;
+                    }
+
+                    if (offset+SCROLL_CHARS <= cursor)
+                    {
+                        offset += SCROLL_CHARS;
+                    }
+                    else
+                    {
+                        offset = cursor;
+                    }
                 }
             }
-        }
-        else if (this.cursor > cursor)
-        {
-            // cursor moved left
-
-            while (cursor < offset)
+            else if (this.cursor > cursor)
             {
-                if (offset <= SCROLL_CHARS)
+                // cursor moved left
+
+                while (cursor < offset)
                 {
-                    offset = 0;
-                    break;
+                    if (offset <= SCROLL_CHARS)
+                    {
+                        offset = 0;
+                        break;
+                    }
+
+                    offset -= SCROLL_CHARS;
                 }
-
-                offset -= SCROLL_CHARS;
             }
-        }
 
-        this.cursor = cursor;
+            this.cursor = cursor;
+        }
         setChanged();
     }
 
