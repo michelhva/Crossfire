@@ -1,12 +1,13 @@
 arch map
 name randomtreasure
-width 16
-height 16
+width 7
+height 8
 msg
 Created:  1999-06-04
 Map created to test random objects
 inside other objects get created
 properly.
+Modified: 2008-05-31 Rick Tanner
 endmsg
 end
 arch chest

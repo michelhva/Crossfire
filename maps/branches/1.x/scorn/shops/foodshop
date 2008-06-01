@@ -5,11 +5,12 @@ region scorn
 shopitems food:95;*:-100
 shopmax 2000
 shoprace dwarf
-width 16
+width 9
 height 16
 enter_x 14
 msg
 Created:  1993-10-15 MikeeUSA
+Modified: 2008-05-31 Rick Tanner
 endmsg
 end
 arch shop_empty
