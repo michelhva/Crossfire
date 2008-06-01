@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
 public abstract class GUIItemItem extends GUIItem
@@ -174,12 +175,30 @@ public abstract class GUIItemItem extends GUIItem
         paintImage(g, lockedImage, tmpItem.isLocked());
         paintImage(g, selectorImage, isActive());
         paintImage(g, unpaidImage, tmpItem.isUnpaid());
-        if (tmpItem.getNrOf() > 0)
+        if (w <= h)
+        {
+            if (tmpItem.getNrOf() > 0)
+            {
+                g.setFont(font);
+                g.setColor(nrofColor);
+                g.drawString(String.valueOf(tmpItem.getNrOf()), 1, 1+font.getSize());
+            }
+        }
+        else
         {
             g.setFont(font);
             g.setColor(nrofColor);
-            g.drawString(String.valueOf(tmpItem.getNrOf()), 1, 1+font.getSize());
+            g.setBackground(new Color(0, 0, 0, 0.0f));
+            renderText(g, h, 0, h/2, tmpItem.getTooltipText1());
+            renderText(g, h, h/2, h/2, tmpItem.getTooltipText2());
         }
+    }
+
+    private void renderText(final Graphics2D g, final int dx, final int dy, final int height, final String text)
+    {
+        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final int y = dy+(int)Math.round((height-rect.getMaxY()-rect.getMinY()))/2;
+        g.drawString(text, dx, y);
     }
 
     /**
