@@ -138,7 +138,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         g.drawString(tmp, margin, y);
     }
 
-    public String getDisplayText()
+    private String getDisplayText()
     {
         final String tmpText = text.substring(offset);
         if (!hideInput)
