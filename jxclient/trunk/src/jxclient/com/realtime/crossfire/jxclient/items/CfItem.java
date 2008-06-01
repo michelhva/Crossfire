@@ -335,40 +335,13 @@ public class CfItem
      */
     public String getTooltipText()
     {
-        final StringBuilder sb = new StringBuilder(128);
-        if (nrof > 1)
-        {
-            sb.append(nrof);
-            sb.append(' ');
-            sb.append(namePl);
-        }
-        else
-        {
-            sb.append(name);
-        }
-        final int totalWeight = nrof > 0 ? weight*nrof : weight;
-        if (totalWeight > 0)
+        final String tooltipText1 = getTooltipText1();
+        final String tooltipText2 = getTooltipText2();
+        final StringBuilder sb = new StringBuilder(tooltipText1);
+        if (tooltipText2.length() > 0)
         {
             sb.append("<br>");
-            if (totalWeight < 1000)
-            {
-                sb.append(totalWeight);
-                sb.append(" g");
-            }
-            else if(totalWeight < 10000)
-            {
-                final int tmp = (totalWeight+50)/100;
-                sb.append(tmp/10);
-                sb.append('.');
-                sb.append(tmp%10);
-                sb.append(" kg");
-            }
-            else
-            {
-                final int tmp = (totalWeight+500)/1000;
-                sb.append(tmp);
-                sb.append(" kg");
-            }
+            sb.append(tooltipText2);
         }
         if ((flags&(F_BLESSED|F_MAGIC|F_CURSED|F_DAMNED|F_UNPAID)) != 0)
         {
@@ -380,6 +353,39 @@ public class CfItem
             appendFlag(sb, F_UNPAID, "unpaid");
         }
         return sb.toString();
+    }
+
+    /**
+     * Returns the first line of the tooltip text.
+     * @return the tooltip text
+     */
+    public String getTooltipText1()
+    {
+        return nrof > 1 ? nrof+" "+namePl : name;
+    }
+
+    /**
+     * Returns the second line of the tooltip text.
+     * @return the tooltip text
+     */
+    public String getTooltipText2()
+    {
+        final int totalWeight = nrof > 0 ? weight*nrof : weight;
+        if (totalWeight <= 0)
+        {
+            return "";
+        }
+        if (totalWeight < 1000)
+        {
+            return totalWeight+" g";
+        }
+        if(totalWeight < 10000)
+        {
+            final int tmp = (totalWeight+50)/100;
+            return tmp/10+"."+tmp%10+" kg";
+        }
+        final int tmp = (totalWeight+500)/1000;
+        return tmp+" kg";
     }
 
     /**
