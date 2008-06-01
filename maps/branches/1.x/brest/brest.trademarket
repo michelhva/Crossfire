@@ -3,12 +3,13 @@ name Brest Trade Market
 reset_timeout 5
 difficulty 1
 region brest
-width 64
-height 64
+width 15
+height 20
 enter_x 1
 enter_y 1
 msg
 Created:  2004-02-03 Mikeeusa
+Modified: 2008-05-31 Rick Tanner
 endmsg
 end
 arch dungeon_magic
