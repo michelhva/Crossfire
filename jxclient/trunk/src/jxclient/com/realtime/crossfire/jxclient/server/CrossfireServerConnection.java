@@ -852,6 +852,7 @@ public class CrossfireServerConnection extends ServerConnection
                 if (packet[pos++] != 'y') break;
                 if (packet[pos++] != 'e') break;
                 if (packet[pos++] != ' ') break;
+                if (pos != end) break;
                 if (debugProtocol != null)
                 {
                     debugProtocolWrite("recv goodbye\n");
@@ -984,6 +985,7 @@ public class CrossfireServerConnection extends ServerConnection
                                     crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
                                 }
                             }
+                            if (pos != end) break;
                             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                             {
                                 crossfireUpdateItemListener.additemFinished();
@@ -1221,7 +1223,7 @@ public class CrossfireServerConnection extends ServerConnection
                     final List<String> options = new ArrayList<String>();
                     while (pos < end)
                     {
-                        while (pos < end && packet[pos] == ' ')
+                        while (packet[pos] == ' ')
                         {
                             pos++;
                         }
@@ -1236,6 +1238,7 @@ public class CrossfireServerConnection extends ServerConnection
                             pos++;
                         }
                     }
+                    if (pos != end) break;
                     if (debugProtocol != null)
                     {
                         debugProtocolWrite("recv setup "+options+"\n");
@@ -1446,11 +1449,11 @@ public class CrossfireServerConnection extends ServerConnection
                             break;
                         }
                     }
+                    if (pos != end) break;
                     for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                     {
                         crossfireStatsListener.statEnd();
                     }
-                    if (pos > end) break;
                     return;
                 }
                 break;
@@ -1816,6 +1819,10 @@ public class CrossfireServerConnection extends ServerConnection
                     }
                     throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
                 }
+            }
+            if (pos > end)
+            {
+                throw new UnknownCommandException("truncated map2 command");
             }
             if (debugProtocol != null)
             {
