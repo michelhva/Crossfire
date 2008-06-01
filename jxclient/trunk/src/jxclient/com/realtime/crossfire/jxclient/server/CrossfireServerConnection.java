@@ -1079,8 +1079,7 @@ public class CrossfireServerConnection extends ServerConnection
                             {
                                 debugProtocolWrite("recv mapextended\n");
                             }
-                            dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
-                            cmdMapextended(dis);
+                            cmdMapextended(packet, pos, end-pos);
                             return;
                         }
                         break;
@@ -2126,10 +2125,12 @@ public class CrossfireServerConnection extends ServerConnection
 
     /**
      * Handles the MapExtended server to client command.
-     * @param dis The DataInputStream holding the content of the message.
+     * @param buf the parameter buffer
+     * @param start the starting index into <code>buf</code>
+     * @param length the length of the parameter buffer
      * @since 1.0
      */
-    private void cmdMapextended(final DataInputStream dis)
+    private void cmdMapextended(final byte[] buf, final int start, final int length)
     {
         // XXX: "MapExtended" command not yet implemented
     }
