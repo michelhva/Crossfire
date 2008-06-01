@@ -132,16 +132,4 @@ public abstract class GaugeUpdater
     {
         return experienceTable.getExperienceToNextLevel(level, experience);
     }
-
-    /**
-     * Return the experience for the given level.
-     *
-     * @param level The level.
-     *
-     * @return The experience.
-     */
-    protected long getExperience(final int level)
-    {
-        return experienceTable.getExperience(level);
-    }
 }
