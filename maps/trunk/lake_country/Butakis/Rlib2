@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-06-01 Arvid Norlander
 endmsg
 end
 arch marble
@@ -205,6 +206,7 @@ end
 arch table_3
 x 2
 y 1
+no_pick 1
 end
 arch scroll
 x 2
@@ -242,6 +244,7 @@ end
 arch table_3
 x 2
 y 6
+no_pick 1
 end
 arch scroll
 x 2
@@ -263,6 +266,7 @@ end
 arch table_3
 x 2
 y 8
+no_pick 1
 end
 arch book_read
 name thin book
@@ -311,6 +315,7 @@ end
 arch table_3
 x 2
 y 14
+no_pick 1
 end
 arch book_read
 x 2
@@ -338,6 +343,7 @@ end
 arch table_3
 x 3
 y 1
+no_pick 1
 end
 arch scroll
 x 3
@@ -355,6 +361,7 @@ end
 arch table_3
 x 3
 y 3
+no_pick 1
 end
 arch scroll
 x 3
@@ -380,6 +387,7 @@ end
 arch table_3
 x 3
 y 6
+no_pick 1
 end
 arch scroll
 x 3
@@ -401,6 +409,7 @@ end
 arch table_3
 x 3
 y 8
+no_pick 1
 end
 arch book_read
 name rune covered book
@@ -426,6 +435,7 @@ end
 arch table_3
 x 3
 y 10
+no_pick 1
 end
 arch book_read
 x 3
@@ -447,6 +457,7 @@ end
 arch table_3
 x 3
 y 12
+no_pick 1
 end
 arch book_read
 x 3
@@ -464,6 +475,7 @@ end
 arch table_3
 x 3
 y 14
+no_pick 1
 end
 arch book_read
 x 3
@@ -491,6 +503,7 @@ end
 arch table_3
 x 4
 y 1
+no_pick 1
 end
 arch scroll
 x 4
@@ -508,6 +521,7 @@ end
 arch table_3
 x 4
 y 3
+no_pick 1
 end
 arch scroll
 x 4
@@ -533,6 +547,7 @@ end
 arch table_3
 x 4
 y 6
+no_pick 1
 end
 arch scroll
 x 4
@@ -554,6 +569,7 @@ end
 arch table_3
 x 4
 y 8
+no_pick 1
 end
 arch book_read
 name white book
@@ -585,6 +601,7 @@ end
 arch table_3
 x 4
 y 10
+no_pick 1
 end
 arch book_read
 x 4
@@ -606,6 +623,7 @@ end
 arch table_3
 x 4
 y 12
+no_pick 1
 end
 arch book_read
 x 4
@@ -623,6 +641,7 @@ end
 arch table_3
 x 4
 y 14
+no_pick 1
 end
 arch book_read
 x 4
@@ -650,6 +669,7 @@ end
 arch table_3
 x 5
 y 1
+no_pick 1
 end
 arch scroll
 x 5
@@ -667,6 +687,7 @@ end
 arch table_3
 x 5
 y 3
+no_pick 1
 end
 arch scroll
 x 5
@@ -710,6 +731,7 @@ end
 arch table_3
 x 5
 y 8
+no_pick 1
 end
 arch book_read
 name silver book
@@ -737,6 +759,7 @@ end
 arch table_3
 x 5
 y 10
+no_pick 1
 end
 arch book_read
 name copper studded book
@@ -769,6 +792,7 @@ end
 arch table_3
 x 5
 y 12
+no_pick 1
 end
 arch book_read
 x 5
@@ -786,6 +810,7 @@ end
 arch table_3
 x 5
 y 14
+no_pick 1
 end
 arch book_read
 name silver studded book
@@ -1031,6 +1056,7 @@ end
 arch table_3
 x 8
 y 3
+no_pick 1
 end
 arch scroll
 x 8
@@ -1126,6 +1152,7 @@ end
 arch table_3
 x 9
 y 3
+no_pick 1
 end
 arch scroll
 x 9
@@ -1195,6 +1222,7 @@ end
 arch table_3
 x 9
 y 12
+no_pick 1
 end
 arch note
 x 9
@@ -1212,6 +1240,7 @@ end
 arch table_3
 x 9
 y 14
+no_pick 1
 end
 arch note
 x 9
@@ -1239,6 +1268,7 @@ end
 arch table_3
 x 10
 y 1
+no_pick 1
 end
 arch scroll
 x 10
@@ -1256,6 +1286,7 @@ end
 arch table_3
 x 10
 y 3
+no_pick 1
 end
 arch scroll
 x 10
@@ -1325,6 +1356,7 @@ end
 arch table_3
 x 10
 y 12
+no_pick 1
 end
 arch note
 x 10
@@ -1342,6 +1374,7 @@ end
 arch table_3
 x 10
 y 14
+no_pick 1
 end
 arch note
 x 10
@@ -1369,6 +1402,7 @@ end
 arch table_3
 x 11
 y 1
+no_pick 1
 end
 arch scroll
 x 11
@@ -1386,6 +1420,7 @@ end
 arch table_3
 x 11
 y 3
+no_pick 1
 end
 arch scroll
 x 11
@@ -1457,6 +1492,7 @@ end
 arch table_3
 x 11
 y 12
+no_pick 1
 end
 arch note
 name crumbled note
@@ -1477,6 +1513,7 @@ end
 arch table_3
 x 11
 y 13
+no_pick 1
 end
 arch note
 x 11
@@ -1490,6 +1527,7 @@ end
 arch table_3
 x 11
 y 14
+no_pick 1
 end
 arch note
 x 11
@@ -1517,6 +1555,7 @@ end
 arch table_3
 x 12
 y 1
+no_pick 1
 end
 arch scroll
 x 12
@@ -1650,6 +1689,7 @@ end
 arch table_3
 x 13
 y 1
+no_pick 1
 end
 arch scroll
 x 13
@@ -1736,6 +1776,7 @@ end
 arch table_3
 x 13
 y 11
+no_pick 1
 end
 arch book_read
 name yellow book
@@ -1759,6 +1800,7 @@ end
 arch table_3
 x 13
 y 12
+no_pick 1
 end
 arch book_read
 name shiny black book
@@ -1779,6 +1821,7 @@ end
 arch table_3
 x 13
 y 13
+no_pick 1
 end
 arch book_read
 name blood stained book
@@ -1798,6 +1841,7 @@ end
 arch table_3
 x 13
 y 14
+no_pick 1
 end
 arch book_read
 x 13
@@ -1825,6 +1869,7 @@ end
 arch table_3
 x 14
 y 1
+no_pick 1
 end
 arch scroll
 x 14
