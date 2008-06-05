@@ -8,79 +8,154 @@ enter_x 11
 enter_y 11
 msg
 Created:  1996-10-25 Chris Jeske
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
+arch flagstone
+end
 arch dun10
+end
+arch flagstone
+y 1
 end
 arch dun3
 y 1
 end
+arch flagstone
+y 2
+end
 arch dun3
 y 2
+end
+arch flagstone
+y 3
 end
 arch dun3
 y 3
 end
+arch flagstone
+y 4
+end
 arch dun3
 y 4
+end
+arch flagstone
+y 5
 end
 arch dun3
 y 5
 end
+arch flagstone
+y 6
+end
 arch dun3
 y 6
+end
+arch flagstone
+y 7
 end
 arch dun3
 y 7
 end
+arch flagstone
+y 8
+end
 arch dun3
 y 8
+end
+arch flagstone
+y 9
 end
 arch dun3
 y 9
 end
+arch flagstone
+y 10
+end
 arch dun3
 y 10
+end
+arch flagstone
+y 11
 end
 arch dun3
 y 11
 end
+arch flagstone
+y 12
+end
 arch dun3
 y 12
+end
+arch flagstone
+y 13
 end
 arch dun3
 y 13
 end
+arch flagstone
+y 14
+end
 arch dun3
 y 14
+end
+arch flagstone
+y 15
 end
 arch dun3
 y 15
 end
+arch flagstone
+y 16
+end
 arch dun3
 y 16
+end
+arch flagstone
+y 17
 end
 arch dun3
 y 17
 end
+arch flagstone
+y 18
+end
 arch dun3
 y 18
+end
+arch flagstone
+y 19
 end
 arch dun3
 y 19
 end
+arch flagstone
+y 20
+end
 arch dun3
 y 20
+end
+arch flagstone
+y 21
 end
 arch dun3
 y 21
 end
+arch flagstone
+y 22
+end
 arch dun3
 y 22
+end
+arch flagstone
+y 23
 end
 arch dun4
 y 23
 end
+arch flagstone
+x 1
+end
 arch dun2
 x 1
 end
@@ -259,10 +334,17 @@ end
 arch flagstone
 x 1
 y 22
+end
+arch flagstone
+x 1
+y 23
 end
 arch dun2
 x 1
 y 23
+end
+arch flagstone
+x 2
 end
 arch dun2
 x 2
@@ -443,9 +525,16 @@ arch flagstone
 x 2
 y 22
 end
+arch flagstone
+x 2
+y 23
+end
 arch dun2
 x 2
 y 23
+end
+arch flagstone
+x 3
 end
 arch dun2
 x 3
@@ -626,11 +715,18 @@ arch flagstone
 x 3
 y 22
 end
-arch dun2
+arch flagstone
 x 3
 y 23
 end
 arch dun2
+x 3
+y 23
+end
+arch flagstone
+x 4
+end
+arch dun2
 x 4
 end
 arch unholy_ground
@@ -808,10 +904,17 @@ end
 arch flagstone
 x 4
 y 22
+end
+arch flagstone
+x 4
+y 23
 end
 arch dun2
 x 4
 y 23
+end
+arch flagstone
+x 5
 end
 arch dun2
 x 5
@@ -992,11 +1095,18 @@ arch flagstone
 x 5
 y 22
 end
-arch dun2
+arch flagstone
 x 5
 y 23
 end
 arch dun2
+x 5
+y 23
+end
+arch flagstone
+x 6
+end
+arch dun2
 x 6
 end
 arch unholy_ground
@@ -1174,10 +1284,17 @@ end
 arch flagstone
 x 6
 y 22
+end
+arch flagstone
+x 6
+y 23
 end
 arch dun2
 x 6
 y 23
+end
+arch flagstone
+x 7
 end
 arch dun2
 x 7
@@ -1358,9 +1475,16 @@ arch flagstone
 x 7
 y 22
 end
+arch flagstone
+x 7
+y 23
+end
 arch dun2
 x 7
 y 23
+end
+arch flagstone
+x 8
 end
 arch dun2
 x 8
@@ -1541,11 +1665,18 @@ arch flagstone
 x 8
 y 22
 end
-arch dun2
+arch flagstone
 x 8
 y 23
 end
 arch dun2
+x 8
+y 23
+end
+arch flagstone
+x 9
+end
+arch dun2
 x 9
 end
 arch unholy_ground
@@ -1723,11 +1854,18 @@ end
 arch flagstone
 x 9
 y 22
+end
+arch flagstone
+x 9
+y 23
 end
 arch dun2
 x 9
 y 23
 end
+arch flagstone
+x 10
+end
 arch dun2
 x 10
 end
@@ -1906,10 +2044,17 @@ end
 arch flagstone
 x 10
 y 22
+end
+arch flagstone
+x 10
+y 23
 end
 arch dun2
 x 10
 y 23
+end
+arch flagstone
+x 11
 end
 arch dun2
 x 11
@@ -2110,9 +2255,16 @@ arch flagstone
 x 11
 y 22
 end
+arch flagstone
+x 11
+y 23
+end
 arch dun2
 x 11
 y 23
+end
+arch flagstone
+x 12
 end
 arch dun2
 x 12
@@ -2313,11 +2465,18 @@ arch flagstone
 x 12
 y 22
 end
-arch dun2
+arch flagstone
 x 12
 y 23
 end
 arch dun2
+x 12
+y 23
+end
+arch flagstone
+x 13
+end
+arch dun2
 x 13
 end
 arch unholy_ground
@@ -2495,11 +2654,18 @@ end
 arch flagstone
 x 13
 y 22
+end
+arch flagstone
+x 13
+y 23
 end
 arch dun2
 x 13
 y 23
 end
+arch flagstone
+x 14
+end
 arch dun2
 x 14
 end
@@ -2678,10 +2844,17 @@ end
 arch flagstone
 x 14
 y 22
+end
+arch flagstone
+x 14
+y 23
 end
 arch dun2
 x 14
 y 23
+end
+arch flagstone
+x 15
 end
 arch dun2
 x 15
@@ -2862,9 +3035,16 @@ arch flagstone
 x 15
 y 22
 end
+arch flagstone
+x 15
+y 23
+end
 arch dun2
 x 15
 y 23
+end
+arch flagstone
+x 16
 end
 arch dun2
 x 16
@@ -3045,11 +3225,18 @@ arch flagstone
 x 16
 y 22
 end
-arch dun2
+arch flagstone
 x 16
 y 23
 end
 arch dun2
+x 16
+y 23
+end
+arch flagstone
+x 17
+end
+arch dun2
 x 17
 end
 arch unholy_ground
@@ -3227,10 +3414,17 @@ end
 arch flagstone
 x 17
 y 22
+end
+arch flagstone
+x 17
+y 23
 end
 arch dun2
 x 17
 y 23
+end
+arch flagstone
+x 18
 end
 arch dun2
 x 18
@@ -3411,11 +3605,18 @@ arch flagstone
 x 18
 y 22
 end
-arch dun2
+arch flagstone
 x 18
 y 23
 end
 arch dun2
+x 18
+y 23
+end
+arch flagstone
+x 19
+end
+arch dun2
 x 19
 end
 arch unholy_ground
@@ -3593,10 +3794,17 @@ end
 arch flagstone
 x 19
 y 22
+end
+arch flagstone
+x 19
+y 23
 end
 arch dun2
 x 19
 y 23
+end
+arch flagstone
+x 20
 end
 arch dun2
 x 20
@@ -3777,9 +3985,16 @@ arch flagstone
 x 20
 y 22
 end
+arch flagstone
+x 20
+y 23
+end
 arch dun2
 x 20
 y 23
+end
+arch flagstone
+x 21
 end
 arch dun2
 x 21
@@ -3960,11 +4175,18 @@ arch flagstone
 x 21
 y 22
 end
-arch dun2
+arch flagstone
 x 21
 y 23
 end
 arch dun2
+x 21
+y 23
+end
+arch flagstone
+x 22
+end
+arch dun2
 x 22
 end
 arch unholy_ground
@@ -4142,101 +4364,200 @@ end
 arch flagstone
 x 22
 y 22
+end
+arch flagstone
+x 22
+y 23
 end
 arch dun2
 x 22
 y 23
 end
+arch flagstone
+x 23
+end
 arch dun9
 x 23
 end
-arch dun3
+arch flagstone
 x 23
 y 1
 end
 arch dun3
 x 23
+y 1
+end
+arch flagstone
+x 23
 y 2
 end
 arch dun3
+x 23
+y 2
+end
+arch flagstone
 x 23
 y 3
 end
 arch dun3
 x 23
+y 3
+end
+arch flagstone
+x 23
 y 4
 end
 arch dun3
+x 23
+y 4
+end
+arch flagstone
 x 23
 y 5
 end
 arch dun3
 x 23
+y 5
+end
+arch flagstone
+x 23
 y 6
 end
 arch dun3
+x 23
+y 6
+end
+arch flagstone
 x 23
 y 7
 end
 arch dun3
 x 23
+y 7
+end
+arch flagstone
+x 23
 y 8
 end
 arch dun3
+x 23
+y 8
+end
+arch flagstone
 x 23
 y 9
 end
 arch dun3
 x 23
+y 9
+end
+arch flagstone
+x 23
 y 10
 end
 arch dun3
+x 23
+y 10
+end
+arch flagstone
 x 23
 y 11
 end
 arch dun3
 x 23
+y 11
+end
+arch flagstone
+x 23
 y 12
 end
 arch dun3
+x 23
+y 12
+end
+arch flagstone
 x 23
 y 13
 end
 arch dun3
 x 23
+y 13
+end
+arch flagstone
+x 23
 y 14
 end
 arch dun3
+x 23
+y 14
+end
+arch flagstone
 x 23
 y 15
 end
 arch dun3
 x 23
+y 15
+end
+arch flagstone
+x 23
 y 16
 end
 arch dun3
+x 23
+y 16
+end
+arch flagstone
 x 23
 y 17
 end
 arch dun3
 x 23
+y 17
+end
+arch flagstone
+x 23
 y 18
 end
 arch dun3
+x 23
+y 18
+end
+arch flagstone
 x 23
 y 19
 end
 arch dun3
 x 23
+y 19
+end
+arch flagstone
+x 23
 y 20
 end
 arch dun3
+x 23
+y 20
+end
+arch flagstone
 x 23
 y 21
 end
 arch dun3
 x 23
+y 21
+end
+arch flagstone
+x 23
 y 22
+end
+arch dun3
+x 23
+y 22
+end
+arch flagstone
+x 23
+y 23
 end
 arch dun7
 x 23
