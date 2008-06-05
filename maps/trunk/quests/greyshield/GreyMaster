@@ -8,25 +8,48 @@ Created:  1996-11-06 Chris Jeske
 Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
+arch marble
+end
 arch dun10
+end
+arch marble
+y 1
 end
 arch dun3
 y 1
 end
+arch marble
+y 2
+end
 arch dun3
 y 2
+end
+arch marble
+y 3
 end
 arch dun3
 y 3
 end
+arch marble
+y 4
+end
 arch dun11
 y 4
+end
+arch marble
+y 5
 end
 arch dun3
 y 5
 end
+arch marble
+y 6
+end
 arch dun3
 y 6
+end
+arch marble
+y 7
 end
 arch dun4
 y 7
@@ -168,6 +191,9 @@ arch guard
 hp 5000
 y 23
 end
+arch marble
+x 1
+end
 arch dun2
 x 1
 end
@@ -195,6 +221,10 @@ arch marble
 x 1
 y 3
 end
+arch marble
+x 1
+y 4
+end
 arch dun12
 x 1
 y 4
@@ -212,6 +242,10 @@ x 1
 y 6
 speed 1.000000
 connected 2
+end
+arch marble
+x 1
+y 7
 end
 arch dun2
 x 1
@@ -295,6 +329,9 @@ arch swall_1_2
 x 1
 y 23
 end
+arch marble
+x 2
+end
 arch dun2
 x 2
 end
@@ -349,6 +386,10 @@ arch table_3
 x 2
 y 6
 end
+arch marble
+x 2
+y 7
+end
 arch dun2
 x 2
 y 7
@@ -397,6 +438,9 @@ x 2
 y 23
 connected 8
 end
+arch marble
+x 3
+end
 arch dun2
 x 3
 end
@@ -424,17 +468,33 @@ arch marble
 x 3
 y 3
 end
+arch marble
+x 3
+y 4
+end
 arch dun10
 x 3
 y 4
 end
-arch dun3
+arch marble
 x 3
 y 5
 end
 arch dun3
 x 3
+y 5
+end
+arch marble
+x 3
 y 6
+end
+arch dun3
+x 3
+y 6
+end
+arch marble
+x 3
+y 7
 end
 arch dun7
 x 3
@@ -476,6 +536,9 @@ sp 7
 x 3
 y 23
 end
+arch marble
+x 4
+end
 arch dun2
 x 4
 end
@@ -502,6 +565,10 @@ end
 arch marble
 x 4
 y 3
+end
+arch marble
+x 4
+y 4
 end
 arch dun2
 x 4
@@ -594,6 +661,9 @@ sp 8
 x 4
 y 23
 end
+arch marble
+x 5
+end
 arch dun2
 x 5
 end
@@ -620,6 +690,10 @@ end
 arch marble
 x 5
 y 3
+end
+arch marble
+x 5
+y 4
 end
 arch dun2
 x 5
@@ -779,6 +853,9 @@ arch swall_1_2
 x 5
 y 23
 end
+arch marble
+x 6
+end
 arch dun2
 x 6
 end
@@ -806,13 +883,25 @@ arch marble
 x 6
 y 3
 end
+arch marble
+x 6
+y 4
+end
 arch dun9
 x 6
 y 4
 end
+arch marble
+x 6
+y 5
+end
 arch dun3
 x 6
 y 5
+end
+arch marble
+x 6
+y 6
 end
 arch dun4
 x 6
@@ -895,6 +984,9 @@ arch food
 x 6
 y 23
 end
+arch marble
+x 7
+end
 arch dun2
 x 7
 end
@@ -937,6 +1029,10 @@ end
 arch marble
 x 7
 y 5
+end
+arch marble
+x 7
+y 6
 end
 arch dun2
 x 7
@@ -995,6 +1091,9 @@ y 23
 speed 0.000000
 connected 2
 end
+arch marble
+x 8
+end
 arch dun2
 x 8
 end
@@ -1037,6 +1136,10 @@ end
 arch marble
 x 8
 y 5
+end
+arch marble
+x 8
+y 6
 end
 arch dun2
 x 8
@@ -1119,6 +1222,9 @@ y 23
 speed 0.000000
 connected 2
 end
+arch marble
+x 9
+end
 arch dun2
 x 9
 end
@@ -1161,6 +1267,10 @@ end
 arch marble
 x 9
 y 5
+end
+arch marble
+x 9
+y 6
 end
 arch dun2
 x 9
@@ -1255,6 +1365,9 @@ y 23
 speed 0.000000
 connected 2
 end
+arch marble
+x 10
+end
 arch dun2
 x 10
 end
@@ -1297,6 +1410,10 @@ end
 arch marble
 x 10
 y 5
+end
+arch marble
+x 10
+y 6
 end
 arch dun2
 x 10
@@ -1383,6 +1500,9 @@ x 10
 y 23
 connected 1
 end
+arch marble
+x 11
+end
 arch dun2
 x 11
 end
@@ -1425,6 +1545,10 @@ end
 arch marble
 x 11
 y 5
+end
+arch marble
+x 11
+y 6
 end
 arch dun2
 x 11
@@ -1497,6 +1621,9 @@ end
 arch blocked
 x 11
 y 23
+end
+arch marble
+x 12
 end
 arch dun16
 x 12
@@ -1581,77 +1708,152 @@ y 5
 connected 1
 blocksview 1
 end
+arch marble
+x 12
+y 6
+end
 arch dun14
 x 12
 y 6
 end
-arch dun3
+arch marble
 x 12
 y 7
 end
 arch dun3
 x 12
+y 7
+end
+arch marble
+x 12
 y 8
 end
 arch dun3
+x 12
+y 8
+end
+arch marble
 x 12
 y 9
 end
 arch dun3
 x 12
+y 9
+end
+arch marble
+x 12
 y 10
 end
 arch dun3
+x 12
+y 10
+end
+arch marble
 x 12
 y 11
 end
 arch dun3
 x 12
+y 11
+end
+arch marble
+x 12
 y 12
 end
 arch dun3
+x 12
+y 12
+end
+arch marble
 x 12
 y 13
 end
 arch dun3
 x 12
+y 13
+end
+arch marble
+x 12
 y 14
 end
 arch dun3
+x 12
+y 14
+end
+arch marble
 x 12
 y 15
 end
 arch dun3
 x 12
+y 15
+end
+arch marble
+x 12
 y 16
 end
 arch dun3
+x 12
+y 16
+end
+arch marble
 x 12
 y 17
 end
 arch dun3
 x 12
+y 17
+end
+arch marble
+x 12
 y 18
 end
 arch dun3
+x 12
+y 18
+end
+arch marble
 x 12
 y 19
 end
 arch dun3
 x 12
+y 19
+end
+arch marble
+x 12
 y 20
 end
 arch dun3
+x 12
+y 20
+end
+arch marble
 x 12
 y 21
 end
 arch dun3
 x 12
+y 21
+end
+arch marble
+x 12
 y 22
+end
+arch dun3
+x 12
+y 22
+end
+arch marble
+x 12
+y 23
 end
 arch cave_9
 x 12
 y 23
+end
+arch marble
+x 13
 end
 arch dun2
 x 13
@@ -1842,11 +2044,18 @@ arch marble
 x 13
 y 22
 end
-arch dun2
+arch marble
 x 13
 y 23
 end
 arch dun2
+x 13
+y 23
+end
+arch marble
+x 14
+end
+arch dun2
 x 14
 end
 arch unholy_ground
@@ -2024,10 +2233,17 @@ end
 arch marble
 x 14
 y 22
+end
+arch marble
+x 14
+y 23
 end
 arch dun2
 x 14
 y 23
+end
+arch marble
+x 15
 end
 arch dun2
 x 15
@@ -2144,21 +2360,41 @@ arch cave_14
 x 15
 y 14
 end
-arch dun3
+arch marble
 x 15
 y 15
 end
 arch dun3
 x 15
+y 15
+end
+arch marble
+x 15
 y 16
 end
 arch dun3
+x 15
+y 16
+end
+arch marble
 x 15
 y 17
 end
 arch dun3
 x 15
+y 17
+end
+arch marble
+x 15
 y 18
+end
+arch dun3
+x 15
+y 18
+end
+arch marble
+x 15
+y 19
 end
 arch dun3
 x 15
@@ -2188,11 +2424,18 @@ arch marble
 x 15
 y 22
 end
-arch dun2
+arch marble
 x 15
 y 23
 end
 arch dun2
+x 15
+y 23
+end
+arch marble
+x 16
+end
+arch dun2
 x 16
 end
 arch unholy_ground
@@ -2346,6 +2589,10 @@ end
 arch flagstone
 x 16
 y 19
+end
+arch marble
+x 16
+y 20
 end
 arch dun2
 x 16
@@ -2367,11 +2614,18 @@ arch marble
 x 16
 y 22
 end
-arch dun2
+arch marble
 x 16
 y 23
 end
 arch dun2
+x 16
+y 23
+end
+arch marble
+x 17
+end
+arch dun2
 x 17
 end
 arch unholy_ground
@@ -2525,6 +2779,10 @@ end
 arch flagstone
 x 17
 y 19
+end
+arch marble
+x 17
+y 20
 end
 arch dun2
 x 17
@@ -2546,11 +2804,18 @@ arch marble
 x 17
 y 22
 end
-arch dun2
+arch marble
 x 17
 y 23
 end
 arch dun2
+x 17
+y 23
+end
+arch marble
+x 18
+end
+arch dun2
 x 18
 end
 arch unholy_ground
@@ -2592,6 +2857,10 @@ end
 arch marble
 x 18
 y 5
+end
+arch marble
+x 18
+y 6
 end
 arch cave_12
 x 18
@@ -2621,25 +2890,49 @@ arch cave_14
 x 18
 y 9
 end
-arch dun3
+arch marble
 x 18
 y 10
 end
 arch dun3
 x 18
+y 10
+end
+arch marble
+x 18
 y 11
 end
 arch dun3
+x 18
+y 11
+end
+arch marble
 x 18
 y 12
 end
 arch dun3
 x 18
+y 12
+end
+arch marble
+x 18
 y 13
 end
 arch dun3
 x 18
+y 13
+end
+arch marble
+x 18
 y 14
+end
+arch dun3
+x 18
+y 14
+end
+arch marble
+x 18
+y 15
 end
 arch dun3
 x 18
@@ -2701,11 +2994,18 @@ arch marble
 x 18
 y 22
 end
-arch dun2
+arch marble
 x 18
 y 23
 end
 arch dun2
+x 18
+y 23
+end
+arch marble
+x 19
+end
+arch dun2
 x 19
 end
 arch unholy_ground
@@ -2747,6 +3047,10 @@ end
 arch marble
 x 19
 y 5
+end
+arch marble
+x 19
+y 6
 end
 arch cave_13
 x 19
@@ -2880,11 +3184,18 @@ arch marble
 x 19
 y 22
 end
-arch dun2
+arch marble
 x 19
 y 23
 end
 arch dun2
+x 19
+y 23
+end
+arch marble
+x 20
+end
+arch dun2
 x 20
 end
 arch unholy_ground
@@ -3062,11 +3373,18 @@ end
 arch marble
 x 20
 y 22
+end
+arch marble
+x 20
+y 23
 end
 arch dun2
 x 20
 y 23
 end
+arch marble
+x 21
+end
 arch dun2
 x 21
 end
@@ -3289,18 +3607,33 @@ end
 arch marble
 x 21
 y 20
+end
+arch marble
+x 21
+y 21
 end
 arch cave_7
 x 21
 y 21
 end
+arch marble
+x 21
+y 22
+end
 arch dun3
 x 21
 y 22
 end
+arch marble
+x 21
+y 23
+end
 arch dun13
 x 21
 y 23
+end
+arch marble
+x 22
 end
 arch dun2
 x 22
@@ -3602,11 +3935,18 @@ swept along with them forever...
 endmsg
 end
 end
-arch dun2
+arch marble
 x 22
 y 23
 end
 arch dun2
+x 22
+y 23
+end
+arch marble
+x 23
+end
+arch dun2
 x 23
 end
 arch unholy_ground
@@ -3849,9 +4189,16 @@ arch random_treasure
 x 23
 y 22
 end
+arch marble
+x 23
+y 23
+end
 arch dun2
 x 23
 y 23
+end
+arch marble
+x 24
 end
 arch dun2
 x 24
@@ -4036,9 +4383,16 @@ arch random_treasure
 x 24
 y 22
 end
+arch marble
+x 24
+y 23
+end
 arch dun2
 x 24
 y 23
+end
+arch marble
+x 25
 end
 arch dun2
 x 25
@@ -4223,9 +4577,16 @@ arch random_treasure
 x 25
 y 22
 end
+arch marble
+x 25
+y 23
+end
 arch dun2
 x 25
 y 23
+end
+arch marble
+x 26
 end
 arch dun2
 x 26
@@ -4402,9 +4763,16 @@ arch flagstone
 x 26
 y 22
 end
+arch marble
+x 26
+y 23
+end
 arch dun2
 x 26
 y 23
+end
+arch marble
+x 27
 end
 arch dun2
 x 27
@@ -4585,9 +4953,16 @@ arch flagstone
 x 27
 y 22
 end
+arch marble
+x 27
+y 23
+end
 arch dun2
 x 27
 y 23
+end
+arch marble
+x 28
 end
 arch dun2
 x 28
@@ -4763,9 +5138,16 @@ arch flagstone
 x 28
 y 22
 end
+arch marble
+x 28
+y 23
+end
 arch dun2
 x 28
 y 23
+end
+arch marble
+x 29
 end
 arch dun2
 x 29
@@ -4943,9 +5325,16 @@ arch flagstone
 x 29
 y 22
 end
+arch marble
+x 29
+y 23
+end
 arch dun2
 x 29
 y 23
+end
+arch marble
+x 30
 end
 arch dun2
 x 30
@@ -5090,100 +5479,199 @@ arch flagstone
 x 30
 y 22
 end
+arch marble
+x 30
+y 23
+end
 arch dun2
 x 30
 y 23
 end
+arch marble
+x 31
+end
 arch cave_8
 x 31
 end
-arch dun3
+arch marble
 x 31
 y 1
 end
 arch dun3
 x 31
+y 1
+end
+arch marble
+x 31
 y 2
 end
 arch dun3
+x 31
+y 2
+end
+arch marble
 x 31
 y 3
 end
 arch dun3
 x 31
+y 3
+end
+arch marble
+x 31
 y 4
 end
 arch dun3
+x 31
+y 4
+end
+arch marble
 x 31
 y 5
 end
 arch dun3
 x 31
+y 5
+end
+arch marble
+x 31
 y 6
 end
 arch dun3
+x 31
+y 6
+end
+arch marble
 x 31
 y 7
 end
 arch dun3
 x 31
+y 7
+end
+arch marble
+x 31
 y 8
 end
 arch dun3
+x 31
+y 8
+end
+arch marble
 x 31
 y 9
 end
 arch dun3
 x 31
+y 9
+end
+arch marble
+x 31
 y 10
+end
+arch dun3
+x 31
+y 10
+end
+arch marble
+x 31
+y 11
 end
 arch dun3
 x 31
 y 11
 end
+arch marble
+x 31
+y 12
+end
 arch dun14
 x 31
 y 12
 end
-arch dun3
+arch marble
 x 31
 y 13
 end
 arch dun3
 x 31
+y 13
+end
+arch marble
+x 31
 y 14
+end
+arch dun3
+x 31
+y 14
+end
+arch marble
+x 31
+y 15
 end
 arch dun14
 x 31
 y 15
 end
-arch dun3
+arch marble
 x 31
 y 16
 end
 arch dun3
 x 31
+y 16
+end
+arch marble
+x 31
 y 17
 end
 arch dun3
+x 31
+y 17
+end
+arch marble
 x 31
 y 18
 end
 arch dun3
 x 31
+y 18
+end
+arch marble
+x 31
 y 19
 end
 arch dun3
+x 31
+y 19
+end
+arch marble
 x 31
 y 20
 end
 arch dun3
 x 31
+y 20
+end
+arch marble
+x 31
 y 21
 end
 arch dun3
 x 31
+y 21
+end
+arch marble
+x 31
 y 22
+end
+arch dun3
+x 31
+y 22
+end
+arch marble
+x 31
+y 23
 end
 arch cave_10
 x 31
