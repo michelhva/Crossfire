@@ -6,6 +6,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch sea
@@ -47,6 +48,9 @@ arch woodfloor
 y 9
 end
 arch slum2
+slaying ship_city
+hp 9
+sp 4
 y 9
 end
 arch woodfloor
@@ -326,9 +330,9 @@ y 3
 end
 arch s_ship
 name Long Ship
-slaying /city/city
-hp 22
-sp 4
+slaying /world/world_105_115
+hp 0
+sp 20
 x 6
 y 3
 end
@@ -340,6 +344,13 @@ arch dungeon_magic
 x 6
 y 4
 end
+arch magic_mouth
+msg
+A long, hard voyage awaits you
+endmsg
+x 6
+y 5
+end
 arch sea
 x 6
 y 5
@@ -349,13 +360,6 @@ x 6
 y 5
 end
 arch dungeon_magic
-x 6
-y 5
-end
-arch magic_mouth
-msg
-A long, hard voyage awaits you
-endmsg
 x 6
 y 5
 end

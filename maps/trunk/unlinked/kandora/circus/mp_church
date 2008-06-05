@@ -5,7 +5,7 @@ height 16
 enter_x 8
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -808,15 +808,15 @@ hp 26
 sp 21
 x 8
 end
-arch dungeon_floor
-x 8
-y 1
-end
 arch magic_mouth
 msg
 smells of incense & sounds of chanting
 eminate beyond the doors
 endmsg
+x 8
+y 1
+end
+arch dungeon_floor
 x 8
 y 1
 end
