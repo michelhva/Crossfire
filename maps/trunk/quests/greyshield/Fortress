@@ -7,7 +7,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch marble
@@ -3265,16 +3265,16 @@ arch marble
 x 15
 y 25
 end
-arch marble
-x 15
-y 26
-end
 arch magic_ear
 msg
 @match altar|trigger
 The dragon appears to be daydreaming
 about a princess...
 endmsg
+x 15
+y 26
+end
+arch marble
 x 15
 y 26
 end
