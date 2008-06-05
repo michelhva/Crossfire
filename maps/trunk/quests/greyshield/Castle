@@ -6,6 +6,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-16 Chris Jeske
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch woods_3
@@ -2686,10 +2687,6 @@ arch dungeon_magic
 x 15
 y 23
 end
-arch cobblestones2
-x 15
-y 24
-end
 arch magic_ear
 msg
 @match Lothar
@@ -2699,6 +2696,10 @@ endmsg
 x 15
 y 24
 connected 1
+end
+arch cobblestones2
+x 15
+y 24
 end
 arch sea1
 name moat
