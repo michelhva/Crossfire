@@ -5,6 +5,7 @@ width 27
 height 16
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -230,9 +231,6 @@ arch cave20
 x 1
 y 15
 end
-arch pstone_1
-x 2
-end
 arch blocked
 x 2
 end
@@ -316,23 +314,12 @@ arch cave20
 x 2
 y 14
 end
-arch pstone_1
-x 2
-y 15
-end
 arch blocked
 x 2
 y 15
 end
-arch pstone_1
-x 3
-end
 arch blocked
 x 3
-end
-arch pstone_1
-x 3
-y 1
 end
 arch blocked
 x 3
@@ -418,24 +405,13 @@ arch cave20
 x 3
 y 13
 end
-arch pstone_1
+arch blocked
 x 3
 y 14
 end
 arch blocked
 x 3
-y 14
-end
-arch pstone_1
-x 3
 y 15
-end
-arch blocked
-x 3
-y 15
-end
-arch pstone_1
-x 4
 end
 arch blocked
 x 4
@@ -528,10 +504,6 @@ arch cave17
 x 4
 y 14
 end
-arch pstone_1
-x 4
-y 15
-end
 arch blocked
 x 4
 y 15
@@ -1052,10 +1024,6 @@ arch cave20
 x 10
 y 14
 end
-arch pstone_1
-x 10
-y 15
-end
 arch blocked
 x 10
 y 15
@@ -1149,10 +1117,6 @@ end
 arch cave17
 x 11
 y 14
-end
-arch pstone_1
-x 11
-y 15
 end
 arch blocked
 x 11
@@ -1424,10 +1388,6 @@ arch cave20
 x 14
 y 5
 end
-arch pstone_1
-x 14
-y 6
-end
 arch blocked
 x 14
 y 6
@@ -1463,10 +1423,6 @@ end
 arch cave20
 x 14
 y 10
-end
-arch pstone_1
-x 14
-y 11
 end
 arch blocked
 x 14
@@ -1530,10 +1486,6 @@ arch cave2
 x 15
 y 4
 end
-arch pstone_1
-x 15
-y 5
-end
 arch blocked
 x 15
 y 5
@@ -1541,10 +1493,6 @@ end
 arch blocked
 x 15
 y 6
-end
-arch pstone_1
-x 15
-y 7
 end
 arch blocked
 x 15
@@ -1566,25 +1514,13 @@ arch cave22
 x 15
 y 9
 end
-arch pstone_1
+arch blocked
 x 15
 y 10
 end
 arch blocked
 x 15
-y 10
-end
-arch pstone_1
-x 15
 y 11
-end
-arch blocked
-x 15
-y 11
-end
-arch pstone_1
-x 15
-y 12
 end
 arch blocked
 x 15
@@ -1605,10 +1541,6 @@ end
 arch cave20
 x 15
 y 14
-end
-arch pstone_1
-x 15
-y 15
 end
 arch blocked
 x 15
@@ -1652,10 +1584,6 @@ arch cave23
 x 16
 y 5
 end
-arch pstone_1
-x 16
-y 6
-end
 arch blocked
 x 16
 y 6
@@ -1664,17 +1592,9 @@ arch blocked
 x 16
 y 7
 end
-arch pstone_1
-x 16
-y 8
-end
 arch blocked
 x 16
 y 8
-end
-arch pstone_1
-x 16
-y 9
 end
 arch blocked
 x 16
@@ -1692,25 +1612,13 @@ arch blocked
 x 16
 y 12
 end
-arch pstone_1
+arch blocked
 x 16
 y 13
 end
 arch blocked
 x 16
-y 13
-end
-arch pstone_1
-x 16
 y 14
-end
-arch blocked
-x 16
-y 14
-end
-arch pstone_1
-x 16
-y 15
 end
 arch blocked
 x 16
@@ -1754,21 +1662,9 @@ arch cave22
 x 17
 y 5
 end
-arch pstone_1
-x 17
-y 6
-end
 arch blocked
 x 17
 y 6
-end
-arch pstone_1
-x 17
-y 15
-end
-arch blocked
-x 17
-y 15
 end
 arch pstone_1
 x 18
@@ -1800,10 +1696,6 @@ arch cave2
 x 18
 y 4
 end
-arch pstone_1
-x 18
-y 5
-end
 arch blocked
 x 18
 y 5
@@ -1811,14 +1703,6 @@ end
 arch blocked
 x 18
 y 6
-end
-arch pstone_1
-x 18
-y 15
-end
-arch blocked
-x 18
-y 15
 end
 arch pstone_1
 x 19
@@ -1858,21 +1742,9 @@ arch cave17
 x 19
 y 5
 end
-arch pstone_1
-x 19
-y 6
-end
 arch blocked
 x 19
 y 6
-end
-arch pstone_1
-x 19
-y 15
-end
-arch blocked
-x 19
-y 15
 end
 arch pstone_1
 x 20
@@ -1908,21 +1780,9 @@ arch cave20
 x 20
 y 5
 end
-arch pstone_1
-x 20
-y 6
-end
 arch blocked
 x 20
 y 6
-end
-arch pstone_1
-x 20
-y 15
-end
-arch blocked
-x 20
-y 15
 end
 arch pstone_2
 x 21
@@ -2073,6 +1933,10 @@ arch cave12
 x 23
 y 5
 end
+arch pstone_2
+x 23
+y 6
+end
 arch cave23
 x 23
 y 6
@@ -2114,6 +1978,10 @@ end
 arch cave11
 x 24
 y 5
+end
+arch pstone_2
+x 24
+y 6
 end
 arch cave22
 x 24
@@ -2190,10 +2058,6 @@ end
 arch cave2
 x 26
 y 5
-end
-arch pstone_2
-x 26
-y 6
 end
 arch blocked
 x 26
