@@ -5,7 +5,7 @@ height 11
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -174,14 +174,14 @@ arch dungeon_floor
 x 2
 y 9
 end
-arch dungeon_floor
-x 2
-y 10
-end
 arch invis_exit
 slaying mithril
 hp 10
 sp 4
+x 2
+y 10
+end
+arch dungeon_floor
 x 2
 y 10
 end
@@ -247,10 +247,6 @@ arch dungeon_floor
 x 3
 y 8
 end
-arch dungeon_floor
-x 3
-y 9
-end
 arch magic_mouth
 msg
 The temple is stark and forbidding.
@@ -263,12 +259,16 @@ y 9
 end
 arch dungeon_floor
 x 3
-y 10
+y 9
 end
 arch invis_exit
 slaying mithril
 hp 10
 sp 4
+x 3
+y 10
+end
+arch dungeon_floor
 x 3
 y 10
 end
@@ -516,20 +516,20 @@ arch permanent_lava
 x 6
 y 1
 end
-arch dungeon_floor
-x 6
-y 2
-end
-arch dungeon_magic
-x 6
-y 2
-end
 arch magic_mouth
 msg
 A large boulder sways above the lava,
 suspended by heavy chains bolted into
 the side of the mountain.
 endmsg
+x 6
+y 2
+end
+arch dungeon_floor
+x 6
+y 2
+end
+arch dungeon_magic
 x 6
 y 2
 end
@@ -577,14 +577,14 @@ arch dungeon_floor
 x 6
 y 9
 end
-arch dungeon_floor
-x 6
-y 10
-end
 arch invis_exit
 slaying mithril
 hp 10
 sp 4
+x 6
+y 10
+end
+arch dungeon_floor
 x 6
 y 10
 end
@@ -630,14 +630,14 @@ arch dungeon_floor
 x 7
 y 9
 end
-arch dungeon_floor
-x 7
-y 10
-end
 arch invis_exit
 slaying mithril
 hp 10
 sp 4
+x 7
+y 10
+end
+arch dungeon_floor
 x 7
 y 10
 end

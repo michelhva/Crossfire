@@ -5,6 +5,7 @@ height 14
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch grass
@@ -252,6 +253,10 @@ arch flagstone
 x 2
 y 12
 end
+arch flagstone
+x 2
+y 13
+end
 arch oakdoor
 slaying mithril
 hp 10
@@ -380,15 +385,15 @@ arch woodfloor2
 x 4
 y 4
 end
-arch flagstone
-x 4
-y 5
-end
 arch magic_mouth
 msg
 A nice porch with a view over the
 river..
 endmsg
+x 4
+y 5
+end
+arch flagstone
 x 4
 y 5
 end

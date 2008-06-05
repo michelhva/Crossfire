@@ -4,6 +4,7 @@ width 14
 height 6
 msg
 Created:  1999-02-04 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -19,7 +20,7 @@ end
 arch woodfloor
 y 2
 end
-arch wwall_win1
+arch window_win1
 y 2
 end
 arch woodfloor
@@ -86,7 +87,7 @@ arch woodfloor
 x 1
 y 5
 end
-arch wwall_win2
+arch window_win2
 x 1
 y 5
 end
@@ -123,7 +124,7 @@ arch woodfloor
 x 2
 y 5
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 2
 y 5
 end
@@ -165,7 +166,7 @@ arch woodfloor
 x 3
 y 5
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 3
 y 5
 end
@@ -245,7 +246,7 @@ arch woodfloor
 x 5
 y 5
 end
-arch wwall_win2
+arch window_win2
 x 5
 y 5
 end
@@ -283,7 +284,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 6
 y 5
 end
@@ -374,7 +375,7 @@ arch woodfloor
 x 8
 y 5
 end
-arch wwall_2_1_2
+arch wall_2_1_2
 x 8
 y 5
 end
@@ -421,7 +422,7 @@ arch woodfloor
 x 9
 y 5
 end
-arch wwall_win2
+arch window_win2
 x 9
 y 5
 end
@@ -517,7 +518,7 @@ arch woodfloor
 x 11
 y 5
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 11
 y 5
 end
@@ -559,7 +560,7 @@ arch woodfloor
 x 12
 y 5
 end
-arch wwall_win2
+arch window_win2
 x 12
 y 5
 end
@@ -581,7 +582,7 @@ arch woodfloor
 x 13
 y 2
 end
-arch wwall_win1
+arch window_win1
 x 13
 y 2
 end

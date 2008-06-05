@@ -5,6 +5,7 @@ height 11
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -499,6 +500,10 @@ end
 arch woodfloor
 x 5
 y 9
+end
+arch woodfloor
+x 5
+y 10
 end
 arch oakdoor
 slaying seacity

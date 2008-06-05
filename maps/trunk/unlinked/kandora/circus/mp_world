@@ -6,7 +6,7 @@ enter_x 39
 enter_y 39
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch desert
@@ -339,10 +339,6 @@ arch sea
 x 1
 y 34
 end
-arch sea
-x 1
-y 35
-end
 arch pstone_1
 x 1
 y 35
@@ -350,10 +346,6 @@ end
 arch palm
 x 1
 y 35
-end
-arch sea
-x 1
-y 36
 end
 arch pstone_1
 x 1
@@ -551,33 +543,17 @@ arch sea
 x 2
 y 33
 end
-arch sea
-x 2
-y 34
-end
 arch pstone_1
 x 2
 y 34
 end
-arch sea
+arch pstone_1
 x 2
 y 35
 end
 arch pstone_1
 x 2
-y 35
-end
-arch sea
-x 2
 y 36
-end
-arch pstone_1
-x 2
-y 36
-end
-arch sea
-x 2
-y 37
 end
 arch pstone_1
 x 2
@@ -788,10 +764,6 @@ arch sea
 x 3
 y 33
 end
-arch sea
-x 3
-y 34
-end
 arch pstone_1
 x 3
 y 34
@@ -800,10 +772,6 @@ arch sea
 x 3
 y 35
 end
-arch sea
-x 3
-y 36
-end
 arch pstone_1
 x 3
 y 36
@@ -811,10 +779,6 @@ end
 arch palm
 x 3
 y 36
-end
-arch sea
-x 3
-y 37
 end
 arch pstone_1
 x 3
@@ -1026,10 +990,6 @@ arch sea
 x 4
 y 33
 end
-arch sea
-x 4
-y 34
-end
 arch pstone_1
 x 4
 y 34
@@ -1047,17 +1007,9 @@ arch sea
 x 4
 y 35
 end
-arch sea
-x 4
-y 36
-end
 arch pstone_1
 x 4
 y 36
-end
-arch sea
-x 4
-y 37
 end
 arch pstone_1
 x 4
@@ -1252,25 +1204,13 @@ arch sea
 x 5
 y 33
 end
-arch sea
+arch pstone_1
 x 5
 y 34
 end
 arch pstone_1
 x 5
-y 34
-end
-arch sea
-x 5
 y 35
-end
-arch pstone_1
-x 5
-y 35
-end
-arch sea
-x 5
-y 36
 end
 arch pstone_1
 x 5
@@ -2219,14 +2159,14 @@ x 10
 y 18
 speed_left -13.600000
 end
-arch swamp
-x 10
-y 19
-end
 arch magic_mouth
 msg
 ...and you must give us all a spanking
 endmsg
+x 10
+y 19
+end
+arch swamp
 x 10
 y 19
 end
@@ -3450,9 +3390,6 @@ arch sea
 x 16
 y 39
 end
-arch sea
-x 17
-end
 arch small_stones
 x 17
 end
@@ -3694,6 +3631,7 @@ y 39
 end
 arch sea
 x 18
+move_block all -boat -walk
 end
 arch drawbridge_1
 x 18
@@ -3860,6 +3798,7 @@ y 39
 end
 arch sea
 x 19
+move_block all -boat -walk
 end
 arch drawbridge_1
 x 19
@@ -4016,7 +3955,7 @@ arch sea
 x 19
 y 38
 end
-arch pier_1_3
+arch pier_1_4
 x 19
 y 38
 end
@@ -4026,6 +3965,7 @@ y 39
 end
 arch sea
 x 20
+move_block all -boat -walk
 end
 arch drawbridge_1
 x 20
@@ -4384,6 +4324,7 @@ y 1
 end
 arch knight
 msg
+@match *
 we are no longer the Knights who say
 Nie!, we are now the Knights who say,
 "icky icky wicky betwoo betong whoop
@@ -5119,10 +5060,6 @@ arch fernsdense
 x 25
 y 9
 end
-arch brush
-x 25
-y 10
-end
 arch magic_mouth
 msg
 Hey you english sniggit!  I fling my
@@ -5130,6 +5067,10 @@ nostrils in your general direction.
 A Holy Grail?  We already got one!!
 har har har
 endmsg
+x 25
+y 10
+end
+arch brush
 x 25
 y 10
 end
@@ -5252,25 +5193,9 @@ arch grass
 x 25
 y 30
 end
-arch woods
-x 25
-y 30
-end
-arch grass
-x 25
-y 30
-end
-arch grass
-x 25
-y 31
-end
 arch farmland
 x 25
 y 31
-end
-arch grass
-x 25
-y 32
 end
 arch farmland
 x 25
@@ -5489,30 +5414,9 @@ arch woods
 x 26
 y 29
 end
-arch paved_2_1_1
-x 26
-y 30
-end
 arch grass
 x 26
 y 30
-end
-arch woods
-x 26
-y 30
-end
-arch sea
-x 26
-y 30
-speed_left -3.700000
-end
-arch grass
-x 26
-y 30
-end
-arch grass
-x 26
-y 31
 end
 arch farmland
 x 26
@@ -5539,7 +5443,7 @@ arch grass
 x 26
 y 34
 end
-arch yellow_1_3
+arch yellow_2_1_2
 x 26
 y 34
 end
@@ -5743,15 +5647,6 @@ arch grass
 x 27
 y 31
 end
-arch sea
-x 27
-y 31
-speed_left -1.900000
-end
-arch grass
-x 27
-y 31
-end
 arch grass
 x 27
 y 32
@@ -5768,7 +5663,7 @@ arch grass
 x 27
 y 34
 end
-arch yellow_1_3
+arch yellow_2_1_2
 x 27
 y 34
 end
@@ -5952,15 +5847,6 @@ arch grass
 x 28
 y 31
 end
-arch sea
-x 28
-y 31
-speed_left -1.900000
-end
-arch grass
-x 28
-y 31
-end
 arch grass
 x 28
 y 32
@@ -5973,7 +5859,7 @@ arch grass
 x 28
 y 34
 end
-arch yellow_1_3
+arch yellow_2_1_2
 x 28
 y 34
 end
@@ -6153,20 +6039,11 @@ arch grass
 x 29
 y 33
 end
-arch sea
-x 29
-y 33
-speed_left -1.900000
-end
-arch grass
-x 29
-y 33
-end
 arch grass
 x 29
 y 34
 end
-arch yellow_1_3
+arch yellow_2_1_2
 x 29
 y 34
 end
@@ -6346,24 +6223,11 @@ arch grass
 x 30
 y 33
 end
-arch paved_2_1_1
-x 30
-y 34
-end
 arch grass
 x 30
 y 34
 end
-arch sea
-x 30
-y 34
-speed_left -1.900000
-end
-arch grass
-x 30
-y 34
-end
-arch yellow_1_3
+arch yellow_2_1_2
 x 30
 y 34
 end
@@ -6521,11 +6385,7 @@ arch woods
 x 31
 y 29
 end
-arch yellow_1_1
-x 31
-y 29
-end
-arch yellow_1_3
+arch yellow_2_2_2
 x 31
 y 29
 end
@@ -6533,7 +6393,7 @@ arch grass
 x 31
 y 30
 end
-arch yellow_1_1
+arch yellow_2_1_1
 x 31
 y 30
 end
@@ -6541,15 +6401,7 @@ arch grass
 x 31
 y 31
 end
-arch paved_2_1_1
-x 31
-y 31
-end
-arch grass
-x 31
-y 31
-end
-arch yellow_1_1
+arch yellow_2_1_1
 x 31
 y 31
 end
@@ -6557,15 +6409,7 @@ arch grass
 x 31
 y 32
 end
-arch paved_2_1_1
-x 31
-y 32
-end
-arch grass
-x 31
-y 32
-end
-arch yellow_1_1
+arch yellow_2_1_1
 x 31
 y 32
 end
@@ -6573,15 +6417,7 @@ arch grass
 x 31
 y 33
 end
-arch paved_2_1_1
-x 31
-y 33
-end
-arch grass
-x 31
-y 33
-end
-arch yellow_1_1
+arch yellow_2_1_1
 x 31
 y 33
 end
@@ -6589,24 +6425,7 @@ arch grass
 x 31
 y 34
 end
-arch paved_2_1_1
-x 31
-y 34
-end
-arch sea
-x 31
-y 34
-speed_left -1.900000
-end
-arch grass
-x 31
-y 34
-end
-arch yellow_1_1
-x 31
-y 34
-end
-arch yellow_1_3
+arch yellow_2_2_4
 x 31
 y 34
 end
@@ -6820,10 +6639,12 @@ end
 arch sea
 x 32
 y 26
+move_block all -boat -walk
 end
 arch bridge_ns
 x 32
 y 26
+move_on walk
 end
 arch rune_drain_magic
 x 32
@@ -6833,7 +6654,7 @@ arch jungle_2
 x 32
 y 27
 end
-arch yellow_1_1
+arch yellow_2_1_1
 x 32
 y 27
 end
@@ -6867,7 +6688,11 @@ end
 arch high_boots
 end
 end
-arch yellow_1_1
+arch jungle_2
+x 32
+y 28
+end
+arch yellow_2_1_1
 x 32
 y 28
 end
@@ -6875,11 +6700,7 @@ arch woods
 x 32
 y 29
 end
-arch yellow_1_1
-x 32
-y 29
-end
-arch yellow_1_3
+arch yellow_2_2_4
 x 32
 y 29
 end

@@ -1,11 +1,11 @@
 arch map
 name c
-width 16
+width 15
 height 16
 enter_x 7
 msg
 Created:  1999-02-15 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch afloor_right
@@ -27,10 +27,7 @@ end
 arch afloor_right
 y 3
 end
-arch wall_2_1_1
-y 3
-end
-arch wwall_win1
+arch window_win1
 y 3
 end
 arch afloor_right
@@ -66,10 +63,7 @@ end
 arch afloor_right
 y 9
 end
-arch wall_2_1_1
-y 9
-end
-arch wwall_win1
+arch window_win1
 y 9
 end
 arch afloor_right
@@ -347,10 +341,10 @@ end
 arch afloor_right
 x 3
 end
-arch fireplace
+arch wall_2_1_2
 x 3
 end
-arch wall_2_1_2
+arch fireplace
 x 3
 end
 arch afloor_right
@@ -547,11 +541,7 @@ arch afloor_right
 x 4
 y 12
 end
-arch wall_2_1_2
-x 4
-y 12
-end
-arch wwall_win2
+arch window_win2
 x 4
 y 12
 end
@@ -790,6 +780,9 @@ end
 arch blackmarble
 x 6
 y 15
+end
+arch afloor_right
+x 7
 end
 arch oakdoor
 slaying petshop
@@ -1081,7 +1074,7 @@ arch afloor_right
 x 9
 y 10
 end
-arch wwall_weak_1
+arch wall_2_1_1
 x 9
 y 10
 end
@@ -1089,7 +1082,7 @@ arch afloor_right
 x 9
 y 11
 end
-arch wwall_weak_1
+arch wall_2_1_1
 x 9
 y 11
 end
@@ -1097,7 +1090,7 @@ arch afloor_right
 x 9
 y 12
 end
-arch wwall_3_1
+arch wall_3_1
 x 9
 y 12
 end
@@ -1117,14 +1110,6 @@ arch flagstone_2_1_1
 x 9
 y 14
 end
-arch afloor_right
-x 9
-y 15
-end
-arch trap_spikes2
-x 9
-y 15
-end
 arch magic_ear
 msg
 @match yellow submarine
@@ -1133,6 +1118,14 @@ endmsg
 x 9
 y 15
 connected 11
+end
+arch afloor_right
+x 9
+y 15
+end
+arch trap_spikes2
+x 9
+y 15
 end
 arch gateTrg2
 x 9
@@ -1205,7 +1198,7 @@ arch afloor_right
 x 10
 y 9
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 10
 y 9
 end
@@ -1248,10 +1241,10 @@ end
 arch afloor_right
 x 11
 end
-arch fireplace
+arch wall_2_1_2
 x 11
 end
-arch wall_2_1_2
+arch fireplace
 x 11
 end
 arch afloor_right
@@ -1330,7 +1323,7 @@ arch afloor_left
 x 11
 y 9
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 11
 y 9
 end
@@ -1367,11 +1360,7 @@ arch afloor_right
 x 11
 y 12
 end
-arch wall_2_1_2
-x 11
-y 12
-end
-arch wwall_win2
+arch window_win2
 x 11
 y 12
 end
@@ -1454,6 +1443,10 @@ x 12
 y 8
 end
 arch afloor_right
+x 12
+y 9
+end
+arch wall_door_1_4
 x 12
 y 9
 end
@@ -1575,7 +1568,7 @@ arch afloor_right
 x 13
 y 9
 end
-arch wwall_weak_2
+arch wall_2_1_2
 x 13
 y 9
 end
@@ -1698,7 +1691,7 @@ arch afloor_right
 x 14
 y 9
 end
-arch wall_2_1_1
+arch wall_3_4
 x 14
 y 9
 end
@@ -1737,28 +1730,4 @@ end
 arch afloor_right
 x 14
 y 15
-end
-arch wall_2_1_1
-x 15
-y 2
-end
-arch wall_2_1_1
-x 15
-y 3
-end
-arch wall_2_1_1
-x 15
-y 4
-end
-arch wall_2_1_1
-x 15
-y 5
-end
-arch wall_2_1_1
-x 15
-y 6
-end
-arch wall_2_1_1
-x 15
-y 7
 end

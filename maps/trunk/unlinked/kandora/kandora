@@ -4,6 +4,7 @@ width 40
 height 28
 msg
 Created:  1999-02-26 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch woods
@@ -691,8 +692,15 @@ arch woods_3
 x 4
 y 27
 end
+arch hills_rocky
+x 5
+end
 arch mountain3
 x 5
+end
+arch hills_rocky
+x 5
+y 1
 end
 arch mountain3
 x 5
@@ -956,11 +964,6 @@ arch mountain4
 x 7
 y 4
 end
-arch mountain4
-x 7
-y 5
-move_block 0
-end
 arch magic_ear
 msg
 @match mithril|Mithril
@@ -972,11 +975,17 @@ x 7
 y 5
 connected 22
 end
+arch mountain4
+x 7
+y 5
+move_block 0
+end
 arch teleporter
 slaying cave/mithril
 sp 15
 x 7
 y 5
+speed 0.0
 invisible 1
 connected 22
 end

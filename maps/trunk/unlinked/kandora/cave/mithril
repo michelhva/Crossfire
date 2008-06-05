@@ -5,6 +5,7 @@ height 14
 enter_y 10
 msg
 Created:  1999-02-28 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch mountain2
@@ -36,16 +37,16 @@ end
 arch grass
 y 8
 end
-arch grass
-y 9
-end
-arch dirtroad_2_1_2
-y 9
-end
 arch invis_exit
 slaying ../kandora
 hp 7
 sp 5
+y 9
+end
+arch grass
+y 9
+end
+arch dirtroad_2_1_2
 y 9
 end
 arch grass

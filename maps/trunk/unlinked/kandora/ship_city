@@ -6,6 +6,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1999-02-28 King Zoobus
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch grass
@@ -39,16 +40,16 @@ end
 arch grass
 y 7
 end
-arch grass
-y 8
-end
-arch dirtroad_2_1_2
-y 8
-end
 arch invis_exit
 slaying kandora
 hp 33
 sp 15
+y 8
+end
+arch grass
+y 8
+end
+arch dirtroad_2_1_2
 y 8
 end
 arch grass
@@ -900,6 +901,9 @@ x 10
 y 3
 end
 arch slum2
+slaying ship_home
+hp 1
+sp 10
 x 10
 y 3
 end
@@ -971,18 +975,18 @@ arch dirtroad_2_1_1
 x 10
 y 13
 end
+arch invis_exit
+slaying kandora
+hp 34
+sp 17
+x 10
+y 14
+end
 arch grass
 x 10
 y 14
 end
 arch dirtroad_2_1_1
-x 10
-y 14
-end
-arch invis_exit
-slaying kandora
-hp 34
-sp 17
 x 10
 y 14
 end
@@ -1002,6 +1006,9 @@ x 11
 y 3
 end
 arch slum3
+slaying ship_home
+hp 1
+sp 10
 x 11
 y 3
 end
@@ -1155,14 +1162,14 @@ arch pstone_2
 x 12
 y 13
 end
-arch pstone_2
-x 12
-y 14
-end
 arch invis_exit
 slaying ship_treasure
 hp 2
 sp 1
+x 12
+y 14
+end
+arch pstone_2
 x 12
 y 14
 end

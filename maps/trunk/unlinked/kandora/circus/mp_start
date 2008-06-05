@@ -4,7 +4,7 @@ width 15
 height 13
 msg
 Created:  1999-02-15 King Zoobus
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch goldfloor
@@ -47,6 +47,9 @@ y 10
 end
 arch goldfloor
 y 11
+end
+arch woodfloor
+y 12
 end
 arch earthwall
 y 12
@@ -110,6 +113,10 @@ arch goldfloor
 x 1
 y 11
 end
+arch woodfloor
+x 1
+y 12
+end
 arch earthwall
 x 1
 y 12
@@ -161,6 +168,10 @@ arch goldfloor
 x 2
 y 11
 end
+arch woodfloor
+x 2
+y 12
+end
 arch earthwall
 x 2
 y 12
@@ -222,6 +233,10 @@ arch wall_2_1_1
 x 3
 y 4
 end
+arch woodfloor
+x 3
+y 5
+end
 arch wall_2_2_1
 x 3
 y 5
@@ -261,6 +276,10 @@ end
 arch goldfloor
 x 3
 y 11
+end
+arch woodfloor
+x 3
+y 12
 end
 arch earthwall
 x 3
@@ -362,6 +381,10 @@ end
 arch goldfloor
 x 4
 y 11
+end
+arch woodfloor
+x 4
+y 12
 end
 arch earthwall
 x 4
@@ -468,6 +491,10 @@ arch goldfloor
 x 5
 y 11
 end
+arch woodfloor
+x 5
+y 12
+end
 arch earthwall
 x 5
 y 12
@@ -564,6 +591,10 @@ end
 arch goldfloor
 x 6
 y 11
+end
+arch woodfloor
+x 6
+y 12
 end
 arch earthwall
 x 6
@@ -672,6 +703,10 @@ x 7
 y 6
 connected 4
 end
+arch woodfloor
+x 7
+y 7
+end
 arch monument
 name happy monument
 msg
@@ -695,6 +730,10 @@ end
 arch goldfloor
 x 7
 y 11
+end
+arch woodfloor
+x 7
+y 12
 end
 arch earthwall
 x 7
@@ -792,6 +831,10 @@ end
 arch goldfloor
 x 8
 y 11
+end
+arch woodfloor
+x 8
+y 12
 end
 arch earthwall
 x 8
@@ -906,6 +949,10 @@ arch goldfloor
 x 9
 y 11
 end
+arch woodfloor
+x 9
+y 12
+end
 arch earthwall
 x 9
 y 12
@@ -1003,6 +1050,10 @@ arch goldfloor
 x 10
 y 11
 end
+arch woodfloor
+x 10
+y 12
+end
 arch earthwall
 x 10
 y 12
@@ -1064,6 +1115,10 @@ arch wall_2_1_1
 x 11
 y 4
 end
+arch woodfloor
+x 11
+y 5
+end
 arch wall_2_2_4
 x 11
 y 5
@@ -1095,6 +1150,10 @@ end
 arch goldfloor
 x 11
 y 11
+end
+arch woodfloor
+x 11
+y 12
 end
 arch earthwall
 x 11
@@ -1161,6 +1220,10 @@ arch generate_postman
 x 12
 y 11
 end
+arch woodfloor
+x 12
+y 12
+end
 arch earthwall
 x 12
 y 12
@@ -1219,56 +1282,111 @@ arch goldfloor
 x 13
 y 11
 end
-arch earthwall
+arch woodfloor
 x 13
 y 12
 end
 arch earthwall
+x 13
+y 12
+end
+arch woodfloor
 x 14
 end
 arch earthwall
+x 14
+end
+arch woodfloor
 x 14
 y 1
 end
 arch earthwall
 x 14
+y 1
+end
+arch woodfloor
+x 14
 y 2
 end
 arch earthwall
+x 14
+y 2
+end
+arch woodfloor
 x 14
 y 3
 end
 arch earthwall
 x 14
+y 3
+end
+arch woodfloor
+x 14
 y 4
 end
 arch earthwall
+x 14
+y 4
+end
+arch woodfloor
 x 14
 y 5
 end
 arch earthwall
 x 14
+y 5
+end
+arch woodfloor
+x 14
 y 6
 end
 arch earthwall
+x 14
+y 6
+end
+arch woodfloor
 x 14
 y 7
 end
 arch earthwall
 x 14
+y 7
+end
+arch woodfloor
+x 14
 y 8
 end
 arch earthwall
+x 14
+y 8
+end
+arch woodfloor
 x 14
 y 9
 end
 arch earthwall
 x 14
+y 9
+end
+arch woodfloor
+x 14
 y 10
 end
 arch earthwall
 x 14
+y 10
+end
+arch woodfloor
+x 14
 y 11
+end
+arch earthwall
+x 14
+y 11
+end
+arch woodfloor
+x 14
+y 12
 end
 arch earthwall
 x 14
