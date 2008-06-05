@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-28 mikeeusa
+Modified: 2008-06-04 Arvid Norlander
 endmsg
 outdoor 1
 tile_path_3 citydeclouds2H
@@ -2563,6 +2564,7 @@ end
 arch mat
 x 5
 y 47
+no_pick 1
 end
 arch light2
 x 5
@@ -4897,6 +4899,10 @@ arch cwall_2_2_4
 x 10
 y 22
 end
+arch dungeon_magic
+x 10
+y 23
+end
 arch flagstone
 name floor
 name_pl floor
@@ -4909,10 +4915,6 @@ x 10
 y 23
 speed 0.500000
 connected 10421
-end
-arch dungeon_magic
-x 10
-y 23
 end
 arch flagstone
 name floor
@@ -5972,6 +5974,7 @@ end
 arch sapphire
 x 12
 y 26
+no_pick 1
 end
 arch swall_2_1_1
 x 12
@@ -6032,6 +6035,7 @@ end
 arch sapphire
 x 12
 y 30
+no_pick 1
 end
 arch swall_2_1_1
 x 12
@@ -6048,6 +6052,7 @@ end
 arch sapphire
 x 12
 y 31
+no_pick 1
 end
 arch swall_2_1_1
 x 12
@@ -6064,6 +6069,7 @@ end
 arch sapphire
 x 12
 y 32
+no_pick 1
 end
 arch swall_2_1_1
 x 12
@@ -6124,6 +6130,7 @@ end
 arch ruby
 x 12
 y 36
+no_pick 1
 end
 arch swall_2_1_1
 x 12
@@ -7609,6 +7616,10 @@ arch dungeon_magic
 x 15
 y 19
 end
+arch dungeon_magic
+x 15
+y 20
+end
 arch grass
 x 15
 y 20
@@ -7618,10 +7629,6 @@ x 15
 y 20
 speed 0.500000
 connected 10422
-end
-arch dungeon_magic
-x 15
-y 20
 end
 arch dungeon_floor
 x 15
@@ -7681,6 +7688,7 @@ end
 arch pearl
 x 15
 y 26
+no_pick 1
 end
 arch cwall_2_2_2
 x 15
@@ -7693,6 +7701,7 @@ end
 arch pearl
 x 15
 y 27
+no_pick 1
 end
 arch cwall_2_1_1
 x 15
@@ -7705,6 +7714,7 @@ end
 arch pearl
 x 15
 y 28
+no_pick 1
 end
 arch cwall_2_1_1
 x 15
@@ -7717,6 +7727,7 @@ end
 arch pearl
 x 15
 y 29
+no_pick 1
 end
 arch cwall_1_2
 x 15
@@ -7742,6 +7753,7 @@ end
 arch pearl
 x 15
 y 31
+no_pick 1
 end
 arch cwall_0
 x 15
@@ -7767,6 +7779,7 @@ end
 arch pearl
 x 15
 y 33
+no_pick 1
 end
 arch cwall_1_1
 x 15
@@ -7779,6 +7792,7 @@ end
 arch pearl
 x 15
 y 34
+no_pick 1
 end
 arch cwall_2_1_1
 x 15
@@ -7803,6 +7817,7 @@ end
 arch ruby
 x 15
 y 36
+no_pick 1
 end
 arch swall_2_2_1
 x 15
@@ -8245,6 +8260,7 @@ end
 arch pearl
 x 16
 y 25
+no_pick 1
 end
 arch cwall_2_2_2
 x 16
@@ -8257,6 +8273,7 @@ end
 arch pearl
 x 16
 y 26
+no_pick 1
 end
 arch cwall_2_2_4
 x 16
@@ -8322,6 +8339,7 @@ end
 arch ruby
 x 16
 y 36
+no_pick 1
 end
 arch swall_2_2_3
 x 16
@@ -8334,6 +8352,7 @@ end
 arch ruby
 x 16
 y 37
+no_pick 1
 end
 arch swall_2_2_1
 x 16
@@ -8695,6 +8714,7 @@ end
 arch pearl
 x 17
 y 24
+no_pick 1
 end
 arch cwall_2_2_2
 x 17
@@ -8707,6 +8727,7 @@ end
 arch pearl
 x 17
 y 25
+no_pick 1
 end
 arch cwall_2_2_4
 x 17
@@ -8790,6 +8811,7 @@ end
 arch ruby
 x 17
 y 37
+no_pick 1
 end
 arch swall_2_2_3
 x 17
@@ -8802,6 +8824,7 @@ end
 arch ruby
 x 17
 y 38
+no_pick 1
 end
 arch swall_2_2_1
 x 17
@@ -9192,6 +9215,7 @@ end
 arch pearl
 x 18
 y 24
+no_pick 1
 end
 arch cwall_1_3
 x 18
@@ -9228,6 +9252,7 @@ end
 arch pearl
 x 18
 y 29
+no_pick 1
 end
 arch cwall_1_4
 x 18
@@ -9250,6 +9275,7 @@ end
 arch pearl
 x 18
 y 31
+no_pick 1
 end
 arch cwall_0
 x 18
@@ -9272,6 +9298,7 @@ end
 arch pearl
 x 18
 y 33
+no_pick 1
 end
 arch cwall_1_4
 x 18
@@ -9700,6 +9727,7 @@ end
 arch pearl
 x 19
 y 28
+no_pick 1
 end
 arch cwall_2_2_2
 x 19
@@ -9712,6 +9740,7 @@ end
 arch pearl
 x 19
 y 29
+no_pick 1
 end
 arch cwall_2_2_4
 x 19
@@ -9751,6 +9780,7 @@ end
 arch pearl
 x 19
 y 33
+no_pick 1
 end
 arch cwall_2_2_3
 x 19
@@ -9763,6 +9793,7 @@ end
 arch pearl
 x 19
 y 34
+no_pick 1
 end
 arch cwall_2_2_1
 x 19
@@ -10198,6 +10229,7 @@ end
 arch pearl
 x 20
 y 27
+no_pick 1
 end
 arch cwall_1_1
 x 20
@@ -10210,6 +10242,7 @@ end
 arch pearl
 x 20
 y 28
+no_pick 1
 end
 arch cwall_2_2_4
 x 20
@@ -10226,7 +10259,7 @@ unique 1
 end
 arch ladder_bi_up
 name ladder to secure discussion room (2nd floor)
-slaying /mlab/citydeclouds/villa/citydecloudsvillaC1
+slaying villa/citydecloudsvillaC1
 hp 6
 sp 6
 x 20
@@ -10275,6 +10308,7 @@ end
 arch pearl
 x 20
 y 34
+no_pick 1
 end
 arch cwall_2_2_3
 x 20
@@ -10287,6 +10321,7 @@ end
 arch pearl
 x 20
 y 35
+no_pick 1
 end
 arch cwall_1_2
 x 20
@@ -10932,6 +10967,7 @@ end
 arch ruby
 x 21
 y 43
+no_pick 1
 end
 arch swall_2_1_2
 x 21
@@ -11357,6 +11393,7 @@ end
 arch pearl
 x 22
 y 27
+no_pick 1
 end
 arch cwall_0
 x 22
@@ -11451,6 +11488,7 @@ end
 arch pearl
 x 22
 y 35
+no_pick 1
 end
 arch cwall_0
 x 22
@@ -11517,6 +11555,7 @@ end
 arch ruby
 x 22
 y 43
+no_pick 1
 end
 arch swall_2_1_2
 x 22
@@ -12163,6 +12202,7 @@ end
 arch ruby
 x 23
 y 43
+no_pick 1
 end
 arch swall_2_1_2
 x 23
@@ -12667,6 +12707,7 @@ end
 arch pearl
 x 24
 y 27
+no_pick 1
 end
 arch cwall_1_1
 x 24
@@ -12679,6 +12720,7 @@ end
 arch pearl
 x 24
 y 28
+no_pick 1
 end
 arch cwall_2_2_1
 x 24
@@ -12741,6 +12783,7 @@ end
 arch pearl
 x 24
 y 34
+no_pick 1
 end
 arch cwall_2_2_2
 x 24
@@ -12753,6 +12796,7 @@ end
 arch pearl
 x 24
 y 35
+no_pick 1
 end
 arch cwall_1_2
 x 24
@@ -13285,6 +13329,7 @@ end
 arch pearl
 x 25
 y 28
+no_pick 1
 end
 arch cwall_2_2_3
 x 25
@@ -13297,6 +13342,7 @@ end
 arch pearl
 x 25
 y 29
+no_pick 1
 end
 arch cwall_2_2_1
 x 25
@@ -13336,6 +13382,7 @@ end
 arch pearl
 x 25
 y 33
+no_pick 1
 end
 arch cwall_2_2_2
 x 25
@@ -13348,6 +13395,7 @@ end
 arch pearl
 x 25
 y 34
+no_pick 1
 end
 arch cwall_2_2_4
 x 25
@@ -13866,6 +13914,7 @@ end
 arch pearl
 x 26
 y 24
+no_pick 1
 end
 arch cwall_1_4
 x 26
@@ -13902,6 +13951,7 @@ end
 arch pearl
 x 26
 y 29
+no_pick 1
 end
 arch cwall_1_3
 x 26
@@ -13924,6 +13974,7 @@ end
 arch pearl
 x 26
 y 31
+no_pick 1
 end
 arch cwall_0
 x 26
@@ -13946,6 +13997,7 @@ end
 arch pearl
 x 26
 y 33
+no_pick 1
 end
 arch cwall_1_3
 x 26
@@ -14448,6 +14500,7 @@ end
 arch pearl
 x 27
 y 24
+no_pick 1
 end
 arch cwall_2_2_3
 x 27
@@ -14460,6 +14513,7 @@ end
 arch pearl
 x 27
 y 25
+no_pick 1
 end
 arch cwall_2_2_1
 x 27
@@ -14540,6 +14594,11 @@ arch dungeon_floor
 x 27
 y 37
 end
+arch emerald
+x 27
+y 37
+no_pick 1
+end
 arch swall_2_2_2
 x 27
 y 37
@@ -14551,6 +14610,7 @@ end
 arch emerald
 x 27
 y 38
+no_pick 1
 end
 arch swall_2_2_4
 x 27
@@ -14581,6 +14641,7 @@ end
 arch emerald
 x 27
 y 41
+no_pick 1
 end
 arch swall_2_1_2
 x 27
@@ -15089,6 +15150,7 @@ end
 arch pearl
 x 28
 y 25
+no_pick 1
 end
 arch cwall_2_2_3
 x 28
@@ -15101,6 +15163,7 @@ end
 arch pearl
 x 28
 y 26
+no_pick 1
 end
 arch cwall_2_2_1
 x 28
@@ -15163,6 +15226,11 @@ arch dungeon_floor
 x 28
 y 36
 end
+arch emerald
+x 28
+y 36
+no_pick 1
+end
 arch swall_2_2_2
 x 28
 y 36
@@ -15174,6 +15242,7 @@ end
 arch emerald
 x 28
 y 37
+no_pick 1
 end
 arch swall_2_2_4
 x 28
@@ -15190,7 +15259,7 @@ unique 1
 end
 arch stair_down_3
 name stairs to storage levels
-slaying /mlab/citydeclouds/villa/citydecloudsvillab1
+slaying villa/citydecloudsvillab1
 hp 23
 sp 31
 x 28
@@ -15221,6 +15290,7 @@ end
 arch emerald
 x 28
 y 41
+no_pick 1
 end
 arch swall_2_1_2
 x 28
@@ -15657,6 +15727,10 @@ arch dungeon_magic
 x 29
 y 19
 end
+arch dungeon_magic
+x 29
+y 20
+end
 arch grass
 x 29
 y 20
@@ -15666,10 +15740,6 @@ x 29
 y 20
 speed 0.500000
 connected 1042
-end
-arch dungeon_magic
-x 29
-y 20
 end
 arch dungeon_floor
 x 29
@@ -15729,6 +15799,7 @@ end
 arch pearl
 x 29
 y 26
+no_pick 1
 end
 arch cwall_2_2_3
 x 29
@@ -15741,6 +15812,7 @@ end
 arch pearl
 x 29
 y 27
+no_pick 1
 end
 arch cwall_2_1_1
 x 29
@@ -15753,6 +15825,7 @@ end
 arch pearl
 x 29
 y 28
+no_pick 1
 end
 arch cwall_2_1_1
 x 29
@@ -15765,6 +15838,7 @@ end
 arch pearl
 x 29
 y 29
+no_pick 1
 end
 arch cwall_1_2
 x 29
@@ -15790,6 +15864,7 @@ end
 arch pearl
 x 29
 y 31
+no_pick 1
 end
 arch cwall_0
 x 29
@@ -15815,6 +15890,7 @@ end
 arch pearl
 x 29
 y 33
+no_pick 1
 end
 arch cwall_1_1
 x 29
@@ -15827,6 +15903,7 @@ end
 arch pearl
 x 29
 y 34
+no_pick 1
 end
 arch cwall_2_1_1
 x 29
@@ -15851,6 +15928,7 @@ end
 arch emerald
 x 29
 y 36
+no_pick 1
 end
 arch swall_2_2_4
 x 29
@@ -17631,6 +17709,7 @@ end
 arch sapphire
 x 32
 y 26
+no_pick 1
 end
 arch swall_2_1_1
 x 32
@@ -17691,6 +17770,7 @@ end
 arch emerald
 x 32
 y 30
+no_pick 1
 end
 arch swall_2_1_1
 x 32
@@ -17707,6 +17787,7 @@ end
 arch emerald
 x 32
 y 31
+no_pick 1
 end
 arch swall_2_1_1
 x 32
@@ -17723,6 +17804,7 @@ end
 arch emerald
 x 32
 y 32
+no_pick 1
 end
 arch swall_2_1_1
 x 32
@@ -17794,6 +17876,7 @@ end
 arch emerald
 x 32
 y 36
+no_pick 1
 end
 arch swall_2_1_1
 x 32

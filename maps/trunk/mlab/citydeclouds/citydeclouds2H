@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-28 mikeeusa
+Modified: 2008-06-04 Arvid Norlander
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2G
@@ -14353,6 +14354,7 @@ name_pl floor
 face shop_empty.111
 x 31
 y 4
+smoothlevel 41
 unique 1
 end
 arch flagstone
@@ -14449,6 +14451,7 @@ name_pl floor
 face shop_empty.111
 x 31
 y 16
+smoothlevel 41
 unique 1
 end
 arch flagstone
@@ -14679,6 +14682,7 @@ name_pl floor
 face shop_empty.111
 x 32
 y 4
+smoothlevel 41
 unique 1
 end
 arch flagstone
@@ -14775,6 +14779,7 @@ name_pl floor
 face shop_empty.111
 x 32
 y 16
+smoothlevel 41
 unique 1
 end
 arch flagstone
