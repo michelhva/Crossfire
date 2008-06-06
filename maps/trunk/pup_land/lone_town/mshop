@@ -2,10 +2,12 @@ arch map
 name Magic Shop
 difficulty 1
 region lonetown
+shopitems book:85;spellbook:90;potion:75;rod:70;wand:75;amulet:15;gem:10;*:-90
 width 28
 height 28
 msg
 Created:  1996-02-29
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch grass
