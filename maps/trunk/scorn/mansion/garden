@@ -8,7 +8,7 @@ enter_x 31
 enter_y 29
 msg
 Created:  1994-02-28
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch grass
@@ -6142,6 +6142,10 @@ arch bwall_0
 x 16
 y 7
 end
+arch small_stones
+x 16
+y 8
+end
 arch false_wall
 x 16
 y 8
@@ -10830,6 +10834,10 @@ arch random_treasure
 x 28
 y 44
 end
+arch small_stones
+x 28
+y 45
+end
 arch block_door_closed
 x 28
 y 45
@@ -11161,6 +11169,10 @@ end
 arch earthwall
 x 29
 y 44
+end
+arch small_stones
+x 29
+y 45
 end
 arch block_door_closed
 x 29
@@ -11522,6 +11534,10 @@ arch small_stones
 x 30
 y 44
 end
+arch small_stones
+x 30
+y 45
+end
 arch block_door_closed
 x 30
 y 45
@@ -11842,6 +11858,10 @@ end
 arch small_stones
 x 31
 y 44
+end
+arch small_stones
+x 31
+y 45
 end
 arch block_door_closed
 x 31
@@ -22108,6 +22128,10 @@ end
 arch small_stones
 x 59
 y 24
+end
+arch small_stones
+x 59
+y 25
 end
 arch weak_wall_6
 x 59
