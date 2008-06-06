@@ -6,6 +6,7 @@ msg
 This map was 'pup_land/jk/Fogs'.  Best I can tell, nothing lead to it,
 and the exit it contained did not lead anyplace.
 MSW 2002-09-11
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch grass
@@ -458,6 +459,9 @@ arch grass
 x 5
 y 12
 end
+arch grass
+x 6
+end
 arch rjunct_ns-se
 x 6
 end
@@ -469,9 +473,17 @@ arch wall_2_1_2
 x 6
 y 1
 end
+arch grass
+x 6
+y 2
+end
 arch rjunct_ns-se
 x 6
 y 2
+end
+arch grass
+x 6
+y 3
 end
 arch bridge_we
 x 6
@@ -571,17 +583,33 @@ speed_left -10.100000
 level 100
 weight 4000
 end
+arch grass
+x 7
+y 4
+end
 arch river_nw-se_u
 x 7
 y 4
+end
+arch grass
+x 7
+y 5
 end
 arch river_nw-s
 x 7
 y 5
 end
+arch grass
+x 7
+y 6
+end
 arch river_se-n
 x 7
 y 6
+end
+arch grass
+x 7
+y 7
 end
 arch river_nw-se_l
 x 7
@@ -642,17 +670,33 @@ arch grass
 x 8
 y 5
 end
+arch grass
+x 8
+y 6
+end
 arch river_nw-se_u
 x 8
 y 6
+end
+arch grass
+x 8
+y 7
 end
 arch river_nw-s
 x 8
 y 7
 end
+arch grass
+x 8
+y 8
+end
 arch river_se-n
 x 8
 y 8
+end
+arch grass
+x 8
+y 9
 end
 arch river_nw-se_l
 x 8
@@ -736,9 +780,17 @@ arch evergreen
 x 9
 y 7
 end
+arch grass
+x 9
+y 8
+end
 arch river_nw-se_u
 x 9
 y 8
+end
+arch grass
+x 9
+y 9
 end
 arch river_nw-e
 x 9
@@ -807,9 +859,17 @@ arch grass
 x 10
 y 7
 end
+arch grass
+x 10
+y 8
+end
 arch river_sw-ne_u
 x 10
 y 8
+end
+arch grass
+x 10
+y 9
 end
 arch river_ne-w
 x 10
@@ -956,6 +1016,10 @@ end
 arch grass
 x 12
 y 7
+end
+arch grass
+x 12
+y 8
 end
 arch river_w-e
 x 12
