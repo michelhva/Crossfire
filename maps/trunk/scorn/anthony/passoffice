@@ -8,7 +8,7 @@ enter_x 10
 enter_y 8
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -86,6 +86,9 @@ arch mine11
 y 9
 no_magic 1
 damned 1
+end
+arch grass
+y 10
 end
 arch mine11
 y 10
@@ -259,6 +262,10 @@ end
 arch mine17
 x 1
 y 9
+end
+arch grass
+x 1
+y 10
 end
 arch mine17
 x 1
