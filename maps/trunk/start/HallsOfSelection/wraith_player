@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2007-12-24 Kevin Bulgrien
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -517,6 +517,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 15
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -524,6 +525,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 16
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -531,6 +533,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 17
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -538,6 +541,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 18
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -545,6 +549,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 19
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -552,6 +557,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 20
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -559,6 +565,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 21
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -566,6 +573,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 22
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -573,6 +581,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 23
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -580,6 +589,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 24
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -587,6 +597,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 25
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -594,6 +605,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 26
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -601,6 +613,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 27
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -608,6 +621,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 28
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -615,10 +629,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 29
-end
-arch fog
-x 2
-y 29
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -626,6 +637,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 30
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -633,6 +645,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 31
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -640,6 +653,7 @@ name_pl nothingness
 face blocked.111
 x 2
 y 32
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -741,7 +755,6 @@ end
 arch rough_wall_1_4
 x 3
 y 16
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -763,7 +776,6 @@ end
 arch rough_wall_1_4
 x 3
 y 18
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -785,7 +797,6 @@ end
 arch rough_wall_1_4
 x 3
 y 20
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -808,7 +819,6 @@ end
 arch rough_wall_1_4
 x 3
 y 22
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -830,7 +840,6 @@ end
 arch rough_wall_1_4
 x 3
 y 24
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -852,7 +861,6 @@ end
 arch rough_wall_1_4
 x 3
 y 26
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -874,7 +882,6 @@ end
 arch rough_wall_1_4
 x 3
 y 28
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -883,12 +890,10 @@ name_pl nothingness
 face blocked.111
 x 3
 y 29
-move_block walk fly_low fly_high swim
 end
 arch rough_wall_1_4
 x 3
 y 30
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -901,7 +906,6 @@ end
 arch rough_wall_1_4
 x 3
 y 32
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -1012,7 +1016,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 16
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1036,7 +1039,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 18
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1060,7 +1062,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 20
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1084,7 +1085,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 22
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1109,7 +1109,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 24
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1134,7 +1133,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 26
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1158,7 +1156,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 28
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1171,7 +1168,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 30
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1188,7 +1184,6 @@ end
 arch roughwall_2_1_2
 x 4
 y 32
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1341,7 +1336,6 @@ end
 arch rough_wall_1_3
 x 5
 y 16
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1369,7 +1363,6 @@ end
 arch rough_wall_1_3
 x 5
 y 18
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1396,7 +1389,6 @@ end
 arch rough_wall_1_3
 x 5
 y 20
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1423,7 +1415,6 @@ end
 arch rough_wall_1_3
 x 5
 y 22
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1451,7 +1442,6 @@ end
 arch rough_wall_1_3
 x 5
 y 24
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1479,7 +1469,6 @@ end
 arch rough_wall_1_3
 x 5
 y 26
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1506,7 +1495,6 @@ end
 arch rough_wall_1_3
 x 5
 y 28
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1519,7 +1507,6 @@ end
 arch rough_wall_1_3
 x 5
 y 30
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -1536,7 +1523,6 @@ end
 arch rough_wall_1_3
 x 5
 y 32
-move_block walk
 blocksview 0
 end
 arch blocked
@@ -1745,12 +1731,6 @@ end
 arch dungeon_magic
 x 6
 y 18
-end
-arch gravestone2
-x 6
-y 18
-weight 0
-no_pick 1
 end
 arch cobblestones2
 x 6
@@ -2825,7 +2805,6 @@ end
 arch rough_wall_1_4
 x 9
 y 16
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -2853,7 +2832,6 @@ end
 arch rough_wall_1_4
 x 9
 y 18
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -2880,7 +2858,6 @@ end
 arch rough_wall_1_4
 x 9
 y 20
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -2906,7 +2883,6 @@ end
 arch rough_wall_1_4
 x 9
 y 22
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -2960,7 +2936,6 @@ end
 arch rough_wall_1_4
 x 9
 y 26
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -2987,7 +2962,6 @@ end
 arch rough_wall_1_4
 x 9
 y 28
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -3014,7 +2988,6 @@ end
 arch rough_wall_1_4
 x 9
 y 30
-move_block 0
 blocksview 0
 end
 arch blackmarble
@@ -3027,7 +3000,6 @@ end
 arch rough_wall_1_4
 x 9
 y 32
-move_block 0
 blocksview 0
 end
 arch blocked
@@ -3123,7 +3095,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 16
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3147,7 +3118,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 18
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3171,7 +3141,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 20
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3195,7 +3164,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 22
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3219,7 +3187,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 24
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3245,7 +3212,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 26
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3269,7 +3235,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 28
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3293,7 +3258,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 30
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3306,7 +3270,6 @@ end
 arch roughwall_2_1_2
 x 10
 y 32
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3405,7 +3368,6 @@ end
 arch rough_wall_1_3
 x 11
 y 16
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3427,7 +3389,6 @@ end
 arch rough_wall_1_3
 x 11
 y 18
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3449,7 +3410,6 @@ end
 arch rough_wall_1_3
 x 11
 y 20
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3471,7 +3431,6 @@ end
 arch rough_wall_1_3
 x 11
 y 22
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3515,7 +3474,6 @@ end
 arch rough_wall_1_3
 x 11
 y 26
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3537,7 +3495,6 @@ end
 arch rough_wall_1_3
 x 11
 y 28
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3559,7 +3516,6 @@ end
 arch rough_wall_1_3
 x 11
 y 30
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3568,12 +3524,10 @@ name_pl nothingness
 face blocked.111
 x 11
 y 31
-move_block walk fly_low fly_high swim
 end
 arch rough_wall_1_3
 x 11
 y 32
-move_block walk
 blocksview 0
 end
 arch blackmarble
@@ -3655,6 +3609,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 15
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3662,6 +3617,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 16
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3669,6 +3625,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 17
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3676,6 +3633,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 18
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3683,6 +3641,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 19
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3690,6 +3649,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 20
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3697,6 +3657,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 21
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3704,6 +3665,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 22
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3711,6 +3673,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 23
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3718,6 +3681,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 24
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3725,6 +3689,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 25
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3732,6 +3697,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 26
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3739,6 +3705,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 27
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3746,6 +3713,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 28
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3753,6 +3721,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 29
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3760,6 +3729,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 30
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3767,6 +3737,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 31
+move_block all
 end
 arch blackmarble
 name nothingness
@@ -3774,6 +3745,7 @@ name_pl nothingness
 face blocked.111
 x 12
 y 32
+move_block all
 end
 arch blackmarble
 name nothingness
