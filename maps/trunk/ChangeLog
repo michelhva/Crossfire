@@ -1,3 +1,276 @@
+2008-06-06 01:03  anmaster
+
+	* pup_land/lone_town/mshop: Unbreak the bargaining skill in
+	  /pup_land/lone_town/mshop
+
+2008-06-06 00:57  anmaster
+
+	* pup_land/lone_town/gemshop: Unbreak the bargaining skill in
+	  /pup_land/lone_town/gemshop
+
+2008-06-06 00:51  anmaster
+
+	* pup_land/raffle/raffle3_u2a: Add missing floors under walls in
+	  /pup_land/raffle/raffle3_u2a
+
+2008-06-06 00:51  anmaster
+
+	* pup_land/pplant/pplant_ud2: Add missing floors under walls in
+	  /pup_land/pplant/pplant_ud2
+
+2008-06-06 00:46  anmaster
+
+	* pup_land/castle_eureca/cave_pass,
+	  pup_land/castle_eureca/cave_pass2: Adding missing floors under
+	  walls and remove duplicate walls in
+	  /pup_land/castle_eureca/cave_pass and
+	  /pup_land/castle_eureca/cave_pass2
+
+2008-06-06 00:33  anmaster
+
+	* pup_land/ruin_barbarian/hole2: Adding missing floors under walls
+	  in /pup_land/ruin_barbarian/hole2
+
+2008-06-06 00:30  anmaster
+
+	* pup_land/cave_weapon/cave1, pup_land/cave_weapon/cave2,
+	  pup_land/cave_weapon/cave3, pup_land/cave_weapon/cave4,
+	  pup_land/cave_weapon/cave5: Add missing floors under walls in
+	  /pup_land/cave_weapon/*
+
+2008-06-06 00:23  anmaster
+
+	* start/HallsOfSelection/wraith_player: The wraith Hall of
+	  selection was totally broken you could walk outside and around
+	  the teleporters and such. Fixing.
+
+2008-06-06 00:22  anmaster
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon: Add missing no magic tiles to
+	  fireborn and dragon hall of selections.
+
+2008-06-06 00:10  anmaster
+
+	* HallOfSelection: Add missing no_spells to /HallOfSelection
+
+2008-06-06 00:09  anmaster
+
+	* unlinked/Fogs: Add missing floor tiles to /unlinked/Fogs
+
+2008-06-06 00:00  anmaster
+
+	* unlinked/kandora/circus/mp_castle,
+	  unlinked/kandora/circus/mp_church,
+	  unlinked/kandora/circus/petshop, unlinked/kandora/dd_church,
+	  unlinked/kandora/dm_church: More kandora fixes, change the
+	  nonexisting altar_jehovah to altar_valriel (as done in some maps
+	  reused from kandora in bigworld). Clean up walls and floors in
+	  /unlinked/kandora/circus/petshop.
+
+2008-06-05 23:41  anmaster
+
+	* quests/peterm/quests/dragonquest2,
+	  quests/peterm/temple/GemTunnel: In
+	  /quests/peterm/quests/dragonquest2: add missing ground arches
+	  under walls and remove ground under blocked arches.
+
+2008-06-05 23:29  anmaster
+
+	* quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Passageway: Add missing ground arches
+	  under walls to /quests/peterm/FireTemple/* and remove ground
+	  under blocked arches (in same maps), also (in same maps) remove
+	  some duplicate floor tiles.
+
+2008-06-05 23:14  anmaster
+
+	* quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest: Add missing ground arches
+	  under walls to /quests/peterm/DragonQuest/* and remove ground
+	  under blocked arches (in same maps).
+
+2008-06-05 23:12  anmaster
+
+	* quests/hendel/pre_acid: Add missing floor tiles to
+	  /quests/hendel/pre_acid
+
+2008-06-05 22:53  anmaster
+
+	* quests/greyshield/GreyMaster: Oops, missed to add the missing
+	  floor tiles when I first changed GreyMaster a few minutes ago.
+	  Here they are now.
+
+2008-06-05 22:49  anmaster
+
+	* quests/greyshield/Chamber: In /quests/greyshield/Chamber, add
+	  missing floor tiles under walls.
+
+2008-06-05 22:48  anmaster
+
+	* quests/greyshield/Cave, quests/greyshield/Cavern: In
+	  /quests/greyshield/{Cave,Cavern}, remove floor tiles under
+	  blocked.
+
+2008-06-05 22:46  anmaster
+
+	* quests/greyshield/Castle: In /quests/greyshield/Castle, hide
+	  magic_ear under floor.
+
+2008-06-05 22:42  anmaster
+
+	* quests/greyshield/Cavern2: Add floor tiles under walls and remove
+	  floor tiles under blocked in /quests/greyshield/Cavern2.
+
+2008-06-05 22:39  anmaster
+
+	* quests/greyshield/GreyMaster: Hide magic_mouth under the floor in
+	  /quests/greyshield/GreyMaster.
+
+2008-06-05 22:37  anmaster
+
+	* quests/greyshield/Fortress: Hide magic_ear under the floor in
+	  /quests/greyshield/Fortress.
+
+2008-06-05 22:33  anmaster
+
+	* pup_land/jk/heads: Add missing floor tiles to /pup_land/jk/heads,
+	  note map is unlinked, but I think it is good to clean it up
+	  anyway.
+
+2008-06-05 22:12  anmaster
+
+	* unlinked/kandora/cave/cave3, unlinked/kandora/cave/m_inn,
+	  unlinked/kandora/cave/m_temple, unlinked/kandora/cave/mithril,
+	  unlinked/kandora/circus/mp_castle,
+	  unlinked/kandora/circus/mp_cave,
+	  unlinked/kandora/circus/mp_church,
+	  unlinked/kandora/circus/mp_start,
+	  unlinked/kandora/circus/mp_tavern,
+	  unlinked/kandora/circus/mp_world, unlinked/kandora/dd_alchemy,
+	  unlinked/kandora/dd_inn, unlinked/kandora/dd_keep,
+	  unlinked/kandora/denray, unlinked/kandora/dm_inn,
+	  unlinked/kandora/elcyon/merchant, unlinked/kandora/elcyon/plaza,
+	  unlinked/kandora/elcyon/seacity, unlinked/kandora/kandora,
+	  unlinked/kandora/ship_city, unlinked/kandora/ship_home,
+	  unlinked/kandora/signal: Clean up walls and floors in
+	  /unlinked/kandora, also possibly other cleanup in there that I
+	  forgot to mention. But it was sad to see these broken maps.
+
+2008-06-05 22:08  anmaster
+
+	* quests/mak/chaos/monsters.pick: Correct the monsters in the pick
+	  map /quests/mak/chaos/monsters.pick. They were broken (bad spell
+	  defintions it seems), copies broken monsters from the maps.
+
+2008-06-05 22:05  anmaster
+
+	* scorn/houses/house3.1st: Make /scorn/houses/ house3.1st look
+	  nicer, add doorway arches to it.
+
+2008-06-05 22:00  anmaster
+
+	* pup_land/ancient/castle/castle.4: Fix a wrong wall tile in
+	  /pup_land/ancient/castle/castle.4 to make it line up properly
+	  with walls around it.
+
+2008-06-05 21:57  anmaster
+
+	* mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/citydeclouds2H: Add some no_pick in order to
+	  fix sorting order for arches, clean up slaying for exits to use
+	  realtive paths in some places, fix some smoothing levels to make
+	  a bridge look better. All in city de clouds.
+
+2008-06-05 21:53  anmaster
+
+	* mlab/citydeclouds/cdcnwgateuprlv1: Clean up unneeded tiles that
+	  couldn't be seen or reached in /mlab/citydeclouds/cdcnwgateuprlv1
+	  to be able to shrink map
+
+2008-06-05 21:49  anmaster
+
+	* mlab/citydeclouds/cdcwgrotto1, mlab/citydeclouds/citydeclouds2F:
+	  Move a lot of the tiles up in cdcwgrotto1 to be able to shrink
+	  map a lot. Update exits to map.
+
+2008-06-05 21:47  anmaster
+
+	* mlab/citydeclouds/cdcapart1: Move some boulders/buttons
+	  connection stuff around in /mlab/citydeclouds/cdcapart1 to be
+	  able to shrink the map a lot.
+
+2008-06-05 21:41  anmaster
+
+	* mlab/citydeclouds/villa/citydecloudsvillab1,
+	  mlab/citydeclouds/villa/citydecloudsvillab2: Removed unreachable,
+	  unused monsters at unreachable edge of map in city de clouds.
+
+2008-06-03 19:54  anmaster
+
+	* quests/todd/aljwaf/ruins: Removed /quests/todd/aljwaf/ruins, the
+	  map has been integrated into big world since long ago.
+
+2008-06-03 19:34  anmaster
+
+	* lake_country/Butakis/Rlib2, lake_country/Butakis/prison_s: Add
+	  missing floor tiles under walls to /lake_country/Butakis/prison_s
+	  and make the books appear on top of the tables in
+	  /lake_country/Butakis/Rlib2.
+
+2008-06-03 19:32  anmaster
+
+	* navar_city/jail/jail: Remove duplicate no magic tiles from jail
+	  map in Navar.
+
+2008-06-03 19:31  anmaster
+
+	* scorn/misc/jail, scorn/misc/jail_upper: Add missing no magic
+	  tiles to jail maps in Scorn.
+
+2008-06-03 19:30  anmaster
+
+	* scorn/oldcity/oldcity4, scorn/oldcity/oldcity5: Get rid of
+	  unlinked /scorn/oldcity/oldcity[45]. Those maps had been
+	  converted to be parts of the single (tiled) oldcity54.
+
+2008-06-03 19:27  anmaster
+
+	* pup_land/lone_town/nf_bar, pup_land/rainbow/Lv5/romm88: Remove
+	  two more unlinked duplicates. romm88 was a duplicate of room88,
+	  and lone_town/nf_bar an unfinished duplicate of the map of the
+	  same name in nurnberg.
+
+2008-06-03 19:07  anmaster
+
+	* pup_land/cave_weapon/cave51, pup_land/kurte/eureca_road31:
+	  Removed two unlinked and duplicate maps from pupland, these were
+	  duplicates of the same maps without 1 suffix.
+
+2008-06-03 16:51  rjtanner
+
+	* regions: Removed unused regions
+
+2008-06-03 14:44  anmaster
+
+	* navar_city/city1court: Fix look of the semi-broken exits in
+	  /navar_city/city1court (they animated even though "is_animated 0"
+	  was set, which broke them).
+
+2008-05-31 22:44  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-05-30 07:32  akirschbaum
 
 	* HallOfSelection, brest/black_shield/upper, brest/sow/sow,
@@ -456,9 +729,6 @@
 	* test/say: Misc say test.
 
 2008-05-20 16:01  anmaster
-    * brest/pshops/pshop_copier: Update the script to make it work correctly,
-      it assumed too much about the layout of the file, so it was broken.
-      New script should be somewhat more robust.
 
 	* ChangeLog, brest/pshops/pshop_copier: Update the script to make
 	  it work correctly, it assumed too much about the layout of the
