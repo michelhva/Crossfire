@@ -8,6 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -3571,10 +3572,6 @@ arch woodfloor
 x 22
 y 8
 end
-arch woodfloor
-x 22
-y 9
-end
 arch magic_ear
 msg
 @match mumblypeg
@@ -3584,6 +3581,10 @@ endmsg
 x 22
 y 9
 connected 3
+end
+arch woodfloor
+x 22
+y 9
 end
 arch woodfloor
 x 22
@@ -3732,7 +3733,7 @@ slaying Chancy
 x 23
 y 1
 speed 1.0
-connected 6
+connected 8
 end
 arch brush
 x 23
@@ -3889,6 +3890,20 @@ end
 arch blocked
 x 23
 y 21
+end
+arch creator
+name creator_put_key
+other_arch food
+x 23
+y 24
+connected 6
+end
+arch altar_trigger
+name altar_put_key
+food 1
+x 23
+y 24
+connected 8
 end
 arch grass
 x 24
@@ -4095,7 +4110,7 @@ sp 1
 x 24
 y 24
 speed 0.0
-connected 6
+connected 8
 end
 arch key2
 name Mark's key
