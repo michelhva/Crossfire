@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2000-02-12
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -1050,6 +1050,10 @@ end
 arch flagstone
 name floor
 face shop_empty.111
+x 3
+y 32
+end
+arch dungeon_magic
 x 3
 y 32
 end
