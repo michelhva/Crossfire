@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2007-12-24 Kevin Bulgrien
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -54,6 +54,9 @@ y 13
 end
 arch blocked
 y 14
+end
+arch pstone_2
+y 16
 end
 arch cave15
 y 16
@@ -160,6 +163,10 @@ arch blocked
 x 1
 y 14
 end
+arch pstone_2
+x 1
+y 15
+end
 arch cave6
 x 1
 y 15
@@ -192,9 +199,17 @@ arch cave17
 x 1
 y 19
 end
+arch pstone_2
+x 1
+y 20
+end
 arch cave15
 x 1
 y 20
+end
+arch pstone_2
+x 1
+y 21
 end
 arch cave5
 x 1
@@ -720,7 +735,15 @@ arch cave21
 x 3
 y 31
 end
+arch dungeon_magic
+x 3
+y 32
+end
 arch pstone_2
+x 3
+y 32
+end
+arch dungeon_magic
 x 3
 y 32
 end
@@ -1626,6 +1649,10 @@ end
 arch cave12
 x 6
 y 33
+end
+arch pstone_2
+x 6
+y 34
 end
 arch cave23
 x 6
@@ -2933,6 +2960,10 @@ end
 arch cave11
 x 10
 y 33
+end
+arch pstone_2
+x 10
+y 34
 end
 arch cave22
 x 10

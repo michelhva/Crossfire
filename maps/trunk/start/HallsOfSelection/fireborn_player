@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2007-12-24 Kevin Bulgrien
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -797,6 +797,10 @@ x 3
 y 29
 blocksview 0
 end
+arch dungeon_magic
+x 3
+y 30
+end
 arch magma
 x 3
 y 30
@@ -813,6 +817,10 @@ arch burningwall_2_1_2
 x 3
 y 31
 blocksview 0
+end
+arch dungeon_magic
+x 3
+y 32
 end
 arch magma
 x 3
