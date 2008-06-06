@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
-Modified: 2008-05-18 Arvid Norlander
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 maplore
 @def Resir's house
@@ -268,14 +268,6 @@ arch dirtfloor
 x 2
 y 2
 end
-arch random_plant
-x 2
-y 2
-end
-arch stair2_down
-x 2
-y 2
-end
 arch magic_mouth
 msg
 DRATS THE STAIRS ARE BLOCKED.
@@ -283,6 +275,14 @@ DRATS THE STAIRS ARE BLOCKED.
 is still located behind the house)
 I MUST HURRY BEFORE ITS TO LATE
 endmsg
+x 2
+y 2
+end
+arch random_plant
+x 2
+y 2
+end
+arch stair2_down
 x 2
 y 2
 end
