@@ -6,7 +6,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -225,11 +225,11 @@ arch cobblestones2
 x 3
 y 1
 end
-arch altar_jehovah
+arch dungeon_magic
 x 3
 y 1
 end
-arch dungeon_magic
+arch altar_valriel
 x 3
 y 1
 end
