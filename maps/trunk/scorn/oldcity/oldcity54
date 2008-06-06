@@ -6,6 +6,7 @@ width 40
 height 40
 msg
 Created:  1993-10-19
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 tile_path_1 oldcity9
 tile_path_2 oldcity2
@@ -880,10 +881,6 @@ y 5
 speed_left -1.300000
 unaggressive 1
 end
-arch large_stones
-x 3
-y 6
-end
 arch magic_ear
 msg
 @match cloud
@@ -895,6 +892,10 @@ endmsg
 x 3
 y 6
 connected 1
+end
+arch large_stones
+x 3
+y 6
 end
 arch large_stones
 x 3
