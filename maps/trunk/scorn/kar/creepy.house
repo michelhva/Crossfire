@@ -8,6 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1993-02-07
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch dirtfloor
@@ -1025,6 +1026,9 @@ arch mine2
 x 6
 y 24
 end
+arch cobblestones2
+x 7
+end
 arch mine2
 x 7
 end
@@ -1205,6 +1209,9 @@ arch mine2
 x 7
 y 24
 end
+arch cobblestones2
+x 8
+end
 arch mine2
 x 8
 end
@@ -1384,6 +1391,9 @@ arch mine2
 x 8
 y 24
 end
+arch cobblestones2
+x 9
+end
 arch mine2
 x 9
 end
@@ -1526,6 +1536,9 @@ arch mine2
 x 9
 y 24
 end
+arch cobblestones2
+x 10
+end
 arch mine2
 x 10
 end
@@ -1654,6 +1667,9 @@ arch mine2
 x 10
 y 24
 end
+arch cobblestones2
+x 11
+end
 arch mine2
 x 11
 end
@@ -1773,6 +1789,9 @@ arch mine2
 x 11
 y 24
 end
+arch cobblestones2
+x 12
+end
 arch mine2
 x 12
 end
@@ -1883,6 +1902,9 @@ end
 arch mine2
 x 12
 y 24
+end
+arch cobblestones2
+x 13
 end
 arch mine2
 x 13
