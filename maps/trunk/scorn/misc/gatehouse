@@ -7,7 +7,7 @@ height 14
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -235,6 +235,16 @@ x 2
 y 7
 connected 14
 end
+arch magic_ear
+msg
+@match chain
+Well, you know the password,
+so you must be ok.   Pass Friend.
+endmsg
+x 2
+y 8
+connected 12
+end
 arch cobblestones2
 x 2
 y 8
@@ -250,16 +260,6 @@ slaying hero_of_scorn
 x 2
 y 8
 connected 14
-end
-arch magic_ear
-msg
-@match chain
-Well, you know the password,
-so you must be ok.   Pass Friend.
-endmsg
-x 2
-y 8
-connected 12
 end
 arch flagstone
 x 2
@@ -670,7 +670,10 @@ end
 arch dungeon_magic
 x 7
 end
-arch mine_1_1
+arch flagstone
+x 7
+end
+arch mine_2_1_1
 x 7
 end
 arch dungeon_magic
@@ -741,7 +744,11 @@ arch dungeon_magic
 x 7
 y 13
 end
-arch mine_1_2
+arch flagstone
+x 7
+y 13
+end
+arch mine_2_1_1
 x 7
 y 13
 end
@@ -2143,6 +2150,16 @@ arch mine_2_1_2
 x 20
 y 4
 end
+arch magic_ear
+msg
+@match chain
+Well, you know the password,
+so you must be ok.   Pass Friend.
+endmsg
+x 20
+y 5
+connected 21
+end
 arch cobblestones2
 x 20
 y 5
@@ -2158,16 +2175,6 @@ slaying hero_of_scorn
 x 20
 y 5
 connected 24
-end
-arch magic_ear
-msg
-@match chain
-Well, you know the password,
-so you must be ok.   Pass Friend.
-endmsg
-x 20
-y 5
-connected 21
 end
 arch cobblestones2
 x 20
@@ -2276,7 +2283,7 @@ end
 arch dwall_2_2_2
 x 21
 end
-arch mine_1_1
+arch mine_2_1_1
 x 21
 end
 arch dungeon_magic
@@ -2391,7 +2398,7 @@ arch dwall_2_2_1
 x 21
 y 13
 end
-arch mine_1_2
+arch mine_2_1_1
 x 21
 y 13
 end
