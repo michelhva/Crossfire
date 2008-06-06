@@ -6,6 +6,7 @@ width 20
 height 16
 msg
 Created:  1996-02-06
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -94,6 +95,10 @@ end
 arch blocked
 x 1
 y 1
+end
+arch cobblestones
+x 1
+y 2
 end
 arch cave24
 x 1
@@ -263,6 +268,10 @@ y 15
 end
 arch blocked
 x 3
+end
+arch cobblestones
+x 3
+y 1
 end
 arch cave24
 x 3
@@ -532,6 +541,9 @@ arch cave3
 x 5
 y 15
 end
+arch cobblestones
+x 6
+end
 arch mine_2_1_2
 x 6
 end
@@ -647,6 +659,9 @@ arch large_stones
 x 6
 y 15
 end
+arch cobblestones
+x 7
+end
 arch mine_2_1_2
 x 7
 end
@@ -753,9 +768,16 @@ arch mine_2_1_1
 x 7
 y 14
 end
+arch cobblestones
+x 7
+y 15
+end
 arch mine_2_2_1
 x 7
 y 15
+end
+arch cobblestones
+x 8
 end
 arch mine_2_1_2
 x 8
@@ -857,6 +879,9 @@ arch mine_2_1_2
 x 8
 y 15
 end
+arch pstone_1
+x 9
+end
 arch mine_2_1_2
 x 9
 end
@@ -956,6 +981,9 @@ end
 arch mine_2_1_2
 x 9
 y 15
+end
+arch sea
+x 10
 end
 arch mine_2_1_2
 x 10
