@@ -7,6 +7,7 @@ width 16
 height 24
 msg
 Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch small_stones
@@ -1347,6 +1348,10 @@ arch cave24
 x 9
 y 5
 end
+arch small_stones
+x 9
+y 6
+end
 arch cave3
 x 9
 y 6
@@ -1616,6 +1621,10 @@ end
 arch magic_banned
 x 10
 y 22
+end
+arch small_stones
+x 10
+y 23
 end
 arch cave2
 x 10
@@ -1953,6 +1962,10 @@ end
 arch cave12
 x 12
 y 22
+end
+arch small_stones
+x 12
+y 23
 end
 arch cave23
 x 12
@@ -2393,10 +2406,6 @@ end
 arch cave22
 x 15
 y 14
-end
-arch small_stones
-x 15
-y 15
 end
 arch blocked
 x 15

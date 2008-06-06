@@ -7,6 +7,7 @@ width 11
 height 9
 msg
 Created:  1994-06-11 larry langley (langley@fermat.dartmouth.edu)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -155,6 +156,10 @@ arch cave_14
 x 2
 y 6
 end
+arch cobblestones
+x 2
+y 7
+end
 arch dun3
 x 2
 y 7
@@ -299,6 +304,10 @@ end
 arch cave_7
 x 4
 y 6
+end
+arch cobblestones
+x 4
+y 7
 end
 arch dun3
 x 4
