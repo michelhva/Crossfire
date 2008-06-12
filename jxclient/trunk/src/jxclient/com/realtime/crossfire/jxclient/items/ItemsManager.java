@@ -421,7 +421,7 @@ public class ItemsManager
         {
             // inventory order differs from server order, so insert at correct
             // position
-            final int index = inventoryManager.getInsertionIndex(list, item);
+            final int index = InventoryManager.getInsertionIndex(list, item);
             list.add(index, item);
             inventoryManager.addModified(index, list.size());
         }
