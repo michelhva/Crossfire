@@ -238,7 +238,7 @@ public class Buffer implements Iterable<Line>
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {
-                updateAttributes(line, beginIndex, i, height, minY, maxY);
+                updateAttributes(line, beginIndex, i, height, minY);
 
                 height += maxY-minY;
                 x = 0;
@@ -256,7 +256,7 @@ public class Buffer implements Iterable<Line>
             maxY = (int)Math.max(maxY, Math.round(rect.getY()+rect.getHeight()));
         }
 
-        updateAttributes(line, beginIndex, imax, height, minY, maxY);
+        updateAttributes(line, beginIndex, imax, height, minY);
         height += maxY-minY;
 
         return Math.max(1, height);
@@ -274,10 +274,8 @@ public class Buffer implements Iterable<Line>
      * @param y The top border of the line's bounding box.
      *
      * @param minY The minimum bottom offset of all segments' bounding boxes.
-     *
-     * @param maxY The maximum top offset of all segments' bounding boxes.
      */
-    private void updateAttributes(final Line line, final int begin, final int end, final int y, final int minY, final int maxY)
+    private void updateAttributes(final Line line, final int begin, final int end, final int y, final int minY)
     {
         for (int i = begin; i < end; i++)
         {
