@@ -66,7 +66,7 @@ public class OrientationTest extends TestCase
         check(OrientationSN.class, false, true);
     }
 
-    private void check(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void check(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         checkPositive(class_, useX, flip);
         checkNegative(class_, useX, flip);
