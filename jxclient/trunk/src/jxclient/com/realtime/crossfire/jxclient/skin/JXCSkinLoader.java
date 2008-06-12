@@ -1255,7 +1255,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : window.getKeyBindings(false);
                             try
                             {
-                                keyBindings.parseKeyBinding(line.substring(4).trim(), window, true);
+                                keyBindings.parseKeyBinding(line.substring(4).trim(), true);
                             }
                             catch (final InvalidKeyBindingException ex)
                             {
