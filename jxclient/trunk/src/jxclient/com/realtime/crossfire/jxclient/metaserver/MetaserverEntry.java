@@ -121,6 +121,20 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return hostname.compareTo(o.hostname);
     }
 
+    /** {@inheritDoc} */
+    public int hashCode()
+    {
+        return hostname.hashCode();
+    }
+
+    /** {@inheritDoc} */
+    public boolean equals(final Object o)
+    {
+        if(o == null) return false;
+        if(o.getClass() != getClass()) return false;
+        final MetaserverEntry m = (MetaserverEntry)o;
+        return m.hostname.equals(hostname);
+    }
     /**
      * Return a formatted string using the given format.
      *
