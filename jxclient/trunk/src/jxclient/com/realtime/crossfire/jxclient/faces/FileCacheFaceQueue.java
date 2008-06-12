@@ -128,7 +128,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
      */
     private class LoadTask implements Runnable
     {
-        private final int id = FileCacheFaceQueue.this.id;
+        private final int taskId = id;
 
         /**
          * The face to load.
@@ -149,7 +149,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
         {
             try
             {
-                if (id != FileCacheFaceQueue.this.id)
+                if (taskId != id)
                 {
                     return;
                 }
