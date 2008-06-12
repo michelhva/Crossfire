@@ -1,5 +1,11 @@
 Changes for SVN top of tree:
 
+disease/incontinence.arc, disease/diarrhea.arc, disease/rabies.arc: Make puddles
+from diseases go away after some time, for incontinence and rabies we should
+probably have shrinking animations, like for icor (and thus also for diarrhea),
+but I can't draw.
+Arvid Norlander 2008-06-12
+
 ground/Pstone/pstone_1.arc: Add move_block for boats.
 Arvid Norlander 2008-05-29
 
