@@ -62,7 +62,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private final Clipboard selection = Toolkit.getDefaultToolkit().getSystemSelection();
 
-    protected final Font font;
+    private final Font font;
 
     private final Color inactiveColor;
 
