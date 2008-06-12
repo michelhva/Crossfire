@@ -1505,18 +1505,18 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         // check for skin in directory
         final File dir = new File(skinName);
-        final JXCSkin skin;
+        final JXCSkin newSkin;
         if (dir.exists() && dir.isDirectory())
         {
-            skin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
+            newSkin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
         }
         else
         {
             // fallback: built-in resource
-            skin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
+            newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        skin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands);
-        return skin;
+        newSkin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands);
+        return newSkin;
     }
 
     /**
