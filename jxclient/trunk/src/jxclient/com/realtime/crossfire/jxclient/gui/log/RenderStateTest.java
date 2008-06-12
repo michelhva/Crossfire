@@ -179,10 +179,10 @@ public class RenderStateTest extends TestCase
 
     private void checkState(final int expectedTopIndex, final int expectedTopOffset, final int expectedScrollPos)
     {
-        assertEquals(format(expectedTopIndex, expectedTopOffset, expectedScrollPos), format(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
+        assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
     }
 
-    private String format(final int topIndex, final int topOffset, final int scrollPos)
+    private String formatState(final int topIndex, final int topOffset, final int scrollPos)
     {
         return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
     }
