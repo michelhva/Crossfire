@@ -339,7 +339,7 @@ public class ParserTest extends TestCase
      *
      * @param buffer The <code>Buffer</code> to append.
      */
-    private void dumpBuffer(final StringBuilder sb, final Buffer buffer)
+    private static void dumpBuffer(final StringBuilder sb, final Buffer buffer)
     {
         sb.append("buffer:\n");
         for (final Line line : buffer)
@@ -355,7 +355,7 @@ public class ParserTest extends TestCase
      *
      * @param line The <code>Line</code> to append.
      */
-    private void dumpLine(final StringBuilder sb, final Line line)
+    private static void dumpLine(final StringBuilder sb, final Line line)
     {
         sb.append("line:\n");
         for (final Segment segment : line)
@@ -371,7 +371,7 @@ public class ParserTest extends TestCase
      *
      * @param segment The <code>Segment</code> to append.
      */
-    private void dumpSegment(final StringBuilder sb, final Segment segment)
+    private static void dumpSegment(final StringBuilder sb, final Segment segment)
     {
         sb.append("segment:");
         if (segment.isBold())
