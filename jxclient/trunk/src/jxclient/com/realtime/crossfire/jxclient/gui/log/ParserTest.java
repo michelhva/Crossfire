@@ -390,7 +390,7 @@ public class ParserTest extends TestCase
         final Color color = segment.getColor();
         if (color != null)
         {
-            sb.append('(').append(parser.toString(color)).append(')');
+            sb.append('(').append(Parser.toString(color)).append(')');
         }
         sb.append(segment.getText());
         sb.append('\n');
