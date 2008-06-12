@@ -221,5 +221,20 @@ public class Timeouts
             if (timeout > event.timeout) return +1;
             return 0;
         }
+
+        /** {@inheritDoc} */
+        public int hashCode()
+        {
+            return (int)timeout;
+        }
+
+        /** {@inheritDoc} */
+        public boolean equals(final Object o)
+        {
+            if(o == null) return false;
+            if(o.getClass() != getClass()) return false;
+            final Event m = (Event)o;
+            return m.timeout == timeout;
+        }
     }
 }
