@@ -912,43 +912,58 @@ public class CrossfireServerConnection extends ServerConnection
                     {
                     case '1':
                         if (packet[pos++] != ' ') break;
-                        dis = new DataInputStream(new ByteArrayInputStream(packet, pos, end-pos));
                         try
                         {
-                            final int len = dis.available();
-                            int pos2 = 0;
-                            final int location = dis.readInt();
-                            pos2 += 4;
-                            while (pos2 < len)
+                            final ByteArrayInputStream is = new ByteArrayInputStream(packet, pos, end-pos);
+                            try
                             {
-                                final int tag = dis.readInt();
-                                final int flags = dis.readInt();
-                                final int weight = dis.readInt();
-                                final int faceNum = dis.readInt();
-                                final int namelength = dis.readUnsignedByte();
-                                pos2 += 17;
-                                final byte[] buf = new byte[namelength];
-                                dis.readFully(buf);
-                                final String[] names = new String(buf).split("\0", 2);
-                                final String name = names[0];
-                                final String namePl = names[names.length >= 2 ? 1 : 0];
-                                pos2 += namelength;
-                                final int anim = dis.readUnsignedShort();
-                                final int animSpeed = dis.readUnsignedByte();
-                                final int nrof = dis.readInt();
-                                pos2 += 7;
-                                if (debugProtocol != null)
+                                dis = new DataInputStream(is);
+                                try
                                 {
-                                    debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
+                                    final int len = dis.available();
+                                    int pos2 = 0;
+                                    final int location = dis.readInt();
+                                    pos2 += 4;
+                                    while (pos2 < len)
+                                    {
+                                        final int tag = dis.readInt();
+                                        final int flags = dis.readInt();
+                                        final int weight = dis.readInt();
+                                        final int faceNum = dis.readInt();
+                                        final int namelength = dis.readUnsignedByte();
+                                        pos2 += 17;
+                                        final byte[] buf = new byte[namelength];
+                                        dis.readFully(buf);
+                                        final String[] names = new String(buf).split("\0", 2);
+                                        final String name = names[0];
+                                        final String namePl = names[names.length >= 2 ? 1 : 0];
+                                        pos2 += namelength;
+                                        final int anim = dis.readUnsignedShort();
+                                        final int animSpeed = dis.readUnsignedByte();
+                                        final int nrof = dis.readInt();
+                                        pos2 += 7;
+                                        if (debugProtocol != null)
+                                        {
+                                            debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
+                                        }
+                                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                        {
+                                            crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, -1);
+                                        }
+                                    }
+                                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                    {
+                                        crossfireUpdateItemListener.additemFinished();
+                                    }
                                 }
-                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                                finally
                                 {
-                                    crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, -1);
+                                    dis.close();
                                 }
                             }
-                            for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                            finally
                             {
-                                crossfireUpdateItemListener.additemFinished();
+                                is.close();
                             }
                         }
                         catch (final IOException ex)
