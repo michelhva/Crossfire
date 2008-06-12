@@ -26,12 +26,10 @@ import java.net.Socket;
 
 /**
  * A socket that processes incoming data.
- *
  * <pre>
  * final ClientSocket clientSocket = new ClientSocket(...);
  * clientSocket.writePacket(...);
  * clientSocket.disconnect();
- *
  * @author Andreas Kirschbaum
  */
 public class ClientSocket extends Thread
@@ -84,16 +82,13 @@ public class ClientSocket extends Thread
     private OutputStream outputStream = null;
 
     /**
-     * Create a new instance.
-     *
-     * @param host The host to connect to.
-     *
-     * @param port The port to connect to.
-     *
-     * @param packetListener The packet listener which receives the read
-     * packets.
-     *
-     * @param connectionListener The connection listener to notify.
+     * Creates a new instance.
+     * @param host the host to connect to
+     * @param port the port to connect to
+     * @param packetListener the packet listener which receives the read
+     * packets
+     * @param scriptMonitorListener the listener to notify
+     * @param connectionListener the connection listener to notify
      */
     public ClientSocket(final String host, final int port, final PacketListener packetListener, final CrossfireScriptMonitorListener scriptMonitorListener, final ConnectionListener connectionListener)
     {
@@ -106,7 +101,7 @@ public class ClientSocket extends Thread
     }
 
     /**
-     * Terminate the connection. Does nothing if not connected.
+     * Terminates the connection. Does nothing if not connected.
      */
     public void disconnect()
     {
@@ -224,15 +219,12 @@ LOOP:
     }
 
     /**
-     * Write a packet. The packet contents must not change until this function
+     * Writes a packet. The packet contents must not change until this function
      * has returned.
-     *
      * <p>This function may be called even if the socket has been closed. In
      * this case he packet is discarded.
-     *
-     * @param buf The packet to send.
-     *
-     * @param len The number of bytes to send.
+     * @param buf the packet to send
+     * @param len the number of bytes to send
      */
     public void writePacket(final byte[] buf, final int len)
     {
