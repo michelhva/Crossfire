@@ -214,7 +214,7 @@ public class KeyBindings
 
                             try
                             {
-                                parseKeyBinding(line, window, false);
+                                parseKeyBinding(line, false);
                             }
                             catch (final InvalidKeyBindingException ex)
                             {
@@ -381,14 +381,12 @@ public class KeyBindings
      *
      * @param line The key binding to parse.
      *
-     * @param window The window to add the key binding to.
-     *
      * @param isDefault Whether the key binding is a "default" binding which
      * should not be saved.
      *
      * @throws InvalidKeyBindingException If the key binding is invalid.
      */
-    public void parseKeyBinding(final String line, final JXCWindow window, final boolean isDefault) throws InvalidKeyBindingException
+    public void parseKeyBinding(final String line, final boolean isDefault) throws InvalidKeyBindingException
     {
         if (line.startsWith("char "))
         {
