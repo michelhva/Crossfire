@@ -463,6 +463,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             throw new AssertionError();
         }
+        setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         updateTitle();
