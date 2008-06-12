@@ -444,7 +444,6 @@ public class CrossfireServerConnection extends ServerConnection
     {
         try
         {
-            final DataInputStream dis;
             int pos = start;
             switch (packet[pos++])
             {
@@ -917,7 +916,7 @@ public class CrossfireServerConnection extends ServerConnection
                             final ByteArrayInputStream is = new ByteArrayInputStream(packet, pos, end-pos);
                             try
                             {
-                                dis = new DataInputStream(is);
+                                final DataInputStream dis = new DataInputStream(is);
                                 try
                                 {
                                     final int len = dis.available();
