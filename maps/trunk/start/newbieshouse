@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2008-01-01 Kevin Bulgrien
+Modified: 2008-06-11 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -303,6 +303,10 @@ arch woodfloor2
 x 1
 y 9
 end
+arch swall_1_4_half
+x 1
+y 9
+end
 arch wwall_2_1_1
 x 1
 y 9
@@ -315,10 +319,6 @@ arch woodfloor2
 x 1
 y 10
 end
-arch swall_1_1
-x 1
-y 10
-end
 arch wwall_2_1_1
 x 1
 y 10
@@ -328,10 +328,6 @@ x 1
 y 11
 end
 arch woodfloor2
-x 1
-y 11
-end
-arch swall_1_2
 x 1
 y 11
 end
@@ -601,6 +597,12 @@ arch dungeon_magic
 x 2
 y 6
 end
+arch button_small
+x 2
+y 6
+invisible 1
+connected 88
+end
 arch woodfloor2
 x 2
 y 6
@@ -726,6 +728,7 @@ x 2
 y 15
 resist_physical 100
 resist_magic 100
+generator_limit 50
 end
 arch dungeon_magic
 x 2
@@ -987,7 +990,7 @@ arch woodfloor2
 x 3
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 3
 y 9
 end
@@ -1328,10 +1331,6 @@ x 4
 y 14
 end
 arch woodfloor2
-x 4
-y 14
-end
-arch swall_0
 x 4
 y 14
 end
@@ -2406,6 +2405,7 @@ x 7
 y 26
 resist_physical 100
 resist_magic 100
+generator_limit 50
 end
 arch dungeon_magic
 x 7
@@ -2703,10 +2703,6 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch grass_only
-x 9
-y 4
-end
 arch marker
 slaying quest initial training start
 msg
@@ -2716,6 +2712,10 @@ food 0
 x 9
 y 4
 speed 1.0
+end
+arch grass_only
+x 9
+y 4
 end
 arch dungeon_magic
 x 9
@@ -2944,14 +2944,14 @@ arch dungeon_magic
 x 9
 y 28
 end
-arch woodfloor2
-x 9
-y 28
-end
 arch invis_exit
 slaying /start/Nexus
 hp 6
 sp 12
+x 9
+y 28
+end
+arch woodfloor2
 x 9
 y 28
 end
@@ -3209,14 +3209,14 @@ arch dungeon_magic
 x 10
 y 28
 end
-arch woodfloor2
-x 10
-y 28
-end
 arch invis_exit
 slaying /start/Nexus
 hp 6
 sp 12
+x 10
+y 28
+end
+arch woodfloor2
 x 10
 y 28
 end
@@ -3502,10 +3502,6 @@ arch dungeon_magic
 x 11
 y 22
 end
-arch woodfloor2
-x 11
-y 22
-end
 arch creator
 slaying Magical food
 other_arch food
@@ -3513,6 +3509,10 @@ x 11
 y 22
 connected 11
 lifesave 1
+end
+arch woodfloor2
+x 11
+y 22
 end
 arch dungeon_magic
 x 11
@@ -3804,10 +3804,6 @@ arch dungeon_magic
 x 12
 y 21
 end
-arch woodfloor2
-x 12
-y 21
-end
 arch magic_ear
 msg
 @match food
@@ -3816,6 +3812,10 @@ endmsg
 x 12
 y 21
 connected 11
+end
+arch woodfloor2
+x 12
+y 21
 end
 arch dungeon_magic
 x 12
@@ -3873,10 +3873,6 @@ arch dungeon_magic
 x 12
 y 26
 end
-arch woodfloor2
-x 12
-y 26
-end
 arch magic_ear
 msg
 @match hello world
@@ -3886,6 +3882,10 @@ endmsg
 x 12
 y 26
 connected 32
+end
+arch woodfloor2
+x 12
+y 26
 end
 arch dungeon_magic
 x 12
@@ -4185,15 +4185,15 @@ arch dungeon_magic
 x 13
 y 26
 end
-arch woodfloor2
-x 13
-y 26
-end
 arch magic_mouth
 msg
 say hello world
 if you want the door to open
 endmsg
+x 13
+y 26
+end
+arch woodfloor2
 x 13
 y 26
 end
