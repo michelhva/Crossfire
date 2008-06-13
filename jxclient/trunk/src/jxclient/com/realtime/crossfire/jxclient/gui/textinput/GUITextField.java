@@ -17,29 +17,34 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.textinput;
 
+import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 
 /**
- * Input field for "query" dialogs.
+ * A text input field which executes a {@link GUICommandList} when ENTER is
+ * pressed.
  *
  * @author Andreas Kirschbaum
  */
-public class GUIQueryText extends GUIText
+public class GUITextField extends GUIText
 {
-    public GUIQueryText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    private final GUICommandList commandList;
+
+    public GUITextField(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activePicture, final BufferedImage inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final GUICommandList commandList)
     {
-        super(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
+        super(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text);
+        if (commandList == null) throw new IllegalArgumentException();
+        this.commandList = commandList;
     }
 
     /** {@inheritDoc} */
     @Override protected void execute(final JXCWindow window, final String command)
     {
-        window.sendReply(command);
-        setText("");
+        commandList.execute();
     }
 }
