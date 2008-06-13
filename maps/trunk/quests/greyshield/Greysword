@@ -7,7 +7,7 @@ enter_x 8
 enter_y 7
 msg
 Created:  1996-11-14 Chris Jeske
-Modified: 2008-03-24 Nicolas Weeger
+Modified: 2008-06-12 Arvid Norlander
 endmsg
 end
 arch cave_7
@@ -218,6 +218,12 @@ arch random_artifact
 x 2
 y 1
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 2
+end
 arch dungeon_magic
 x 2
 y 2
@@ -234,6 +240,12 @@ arch angel
 x 2
 y 2
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 3
+end
 arch dungeon_magic
 x 2
 y 3
@@ -245,6 +257,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 4
 end
 arch dungeon_magic
 x 2
@@ -258,6 +276,12 @@ level 1
 attacktype 1
 move_type walk fly_low fly_high
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 5
+end
 arch dungeon_magic
 x 2
 y 5
@@ -269,6 +293,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 6
 end
 arch dungeon_magic
 x 2
@@ -282,6 +312,12 @@ level 1
 attacktype 1
 move_type walk fly_low fly_high
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 7
+end
 arch dungeon_magic
 x 2
 y 7
@@ -293,6 +329,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 8
 end
 arch dungeon_magic
 x 2
@@ -310,6 +352,12 @@ arch angel
 x 2
 y 8
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 9
+end
 arch dungeon_magic
 x 2
 y 9
@@ -325,6 +373,12 @@ end
 arch HighAngel
 x 2
 y 9
+end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 10
 end
 arch dungeon_magic
 x 2
@@ -342,6 +396,12 @@ arch HighAngel
 x 2
 y 10
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 11
+end
 arch dungeon_magic
 x 2
 y 11
@@ -358,6 +418,12 @@ arch HighAngel
 x 2
 y 11
 end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 12
+end
 arch dungeon_magic
 x 2
 y 12
@@ -373,6 +439,12 @@ end
 arch HighAngel
 x 2
 y 12
+end
+arch woodfloor
+name void
+face blocked.111
+x 2
+y 13
 end
 arch dungeon_magic
 x 2
@@ -419,6 +491,12 @@ arch random_artifact
 x 3
 y 1
 end
+arch woodfloor
+name void
+face blocked.111
+x 3
+y 2
+end
 arch dungeon_magic
 x 3
 y 2
@@ -535,6 +613,12 @@ face blocked.111
 x 3
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 3
+y 13
+end
 arch dungeon_magic
 x 3
 y 13
@@ -575,6 +659,12 @@ end
 arch random_artifact
 x 4
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 4
+y 2
 end
 arch dungeon_magic
 x 4
@@ -692,6 +782,12 @@ face blocked.111
 x 4
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 4
+y 13
+end
 arch dungeon_magic
 x 4
 y 13
@@ -732,6 +828,12 @@ end
 arch random_artifact
 x 5
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 5
+y 2
 end
 arch dungeon_magic
 x 5
@@ -849,6 +951,12 @@ face blocked.111
 x 5
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 5
+y 13
+end
 arch dungeon_magic
 x 5
 y 13
@@ -889,6 +997,12 @@ end
 arch random_artifact
 x 6
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 6
+y 2
 end
 arch dungeon_magic
 x 6
@@ -1008,6 +1122,12 @@ face blocked.111
 x 6
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 6
+y 13
+end
 arch dungeon_magic
 x 6
 y 13
@@ -1048,6 +1168,12 @@ end
 arch random_artifact
 x 7
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 7
+y 2
 end
 arch dungeon_magic
 x 7
@@ -1185,6 +1311,12 @@ face blocked.111
 x 7
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 7
+y 13
+end
 arch dungeon_magic
 x 7
 y 13
@@ -1225,6 +1357,12 @@ end
 arch random_artifact
 x 8
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 8
+y 2
 end
 arch dungeon_magic
 x 8
@@ -1347,6 +1485,12 @@ face blocked.111
 x 8
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 8
+y 13
+end
 arch dungeon_magic
 x 8
 y 13
@@ -1391,6 +1535,12 @@ end
 arch random_artifact
 x 9
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 9
+y 2
 end
 arch dungeon_magic
 x 9
@@ -1506,6 +1656,12 @@ face blocked.111
 x 9
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 9
+y 13
+end
 arch dungeon_magic
 x 9
 y 13
@@ -1550,6 +1706,12 @@ end
 arch random_artifact
 x 10
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 10
+y 2
 end
 arch dungeon_magic
 x 10
@@ -1663,6 +1825,12 @@ face blocked.111
 x 10
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 10
+y 13
+end
 arch dungeon_magic
 x 10
 y 13
@@ -1707,6 +1875,12 @@ end
 arch random_artifact
 x 11
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 11
+y 2
 end
 arch dungeon_magic
 x 11
@@ -1820,6 +1994,12 @@ face blocked.111
 x 11
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 11
+y 13
+end
 arch dungeon_magic
 x 11
 y 13
@@ -1864,6 +2044,12 @@ end
 arch random_artifact
 x 12
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 12
+y 2
 end
 arch dungeon_magic
 x 12
@@ -1977,6 +2163,12 @@ face blocked.111
 x 12
 y 12
 end
+arch woodfloor
+name void
+face blocked.111
+x 12
+y 13
+end
 arch dungeon_magic
 x 12
 y 13
@@ -2021,6 +2213,12 @@ end
 arch random_artifact
 x 13
 y 1
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 2
 end
 arch dungeon_magic
 x 13
@@ -2038,6 +2236,12 @@ arch angel
 x 13
 y 2
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 3
+end
 arch dungeon_magic
 x 13
 y 3
@@ -2053,6 +2257,12 @@ end
 arch HighAngel
 x 13
 y 3
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 4
 end
 arch dungeon_magic
 x 13
@@ -2070,6 +2280,12 @@ arch HighAngel
 x 13
 y 4
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 5
+end
 arch dungeon_magic
 x 13
 y 5
@@ -2086,6 +2302,12 @@ arch HighAngel
 x 13
 y 5
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 6
+end
 arch dungeon_magic
 x 13
 y 6
@@ -2101,6 +2323,12 @@ end
 arch HighAngel
 x 13
 y 6
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 7
 end
 arch dungeon_magic
 x 13
@@ -2118,6 +2346,12 @@ arch angel
 x 13
 y 7
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 8
+end
 arch dungeon_magic
 x 13
 y 8
@@ -2129,6 +2363,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 9
 end
 arch dungeon_magic
 x 13
@@ -2142,6 +2382,12 @@ level 1
 attacktype 1
 move_type walk fly_low fly_high
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 10
+end
 arch dungeon_magic
 x 13
 y 10
@@ -2153,6 +2399,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 11
 end
 arch dungeon_magic
 x 13
@@ -2166,6 +2418,12 @@ level 1
 attacktype 1
 move_type walk fly_low fly_high
 end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 12
+end
 arch dungeon_magic
 x 13
 y 12
@@ -2177,6 +2435,12 @@ speed -1.000000
 level 1
 attacktype 1
 move_type walk fly_low fly_high
+end
+arch woodfloor
+name void
+face blocked.111
+x 13
+y 13
 end
 arch dungeon_magic
 x 13
