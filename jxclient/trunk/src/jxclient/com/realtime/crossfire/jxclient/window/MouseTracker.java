@@ -79,7 +79,7 @@ public class MouseTracker implements MouseInputListener
     {
         if (mouseElement != null)
         {
-            e.translatePoint(-mouseElement.setElementX()-windowRenderer.getOffsetX(), -mouseElement.setElementY()-windowRenderer.getOffsetY());
+            e.translatePoint(-mouseElement.getElementX()-windowRenderer.getOffsetX(), -mouseElement.getElementY()-windowRenderer.getOffsetY());
             mouseElement.mouseMoved(e);
             mouseElement.mouseDragged(e);
         }
@@ -214,7 +214,7 @@ public class MouseTracker implements MouseInputListener
 
         if (elected != null)
         {
-            e.translatePoint(-elected.setElementX()-windowRenderer.getOffsetX(), -elected.setElementY()-windowRenderer.getOffsetY());
+            e.translatePoint(-elected.getElementX()-windowRenderer.getOffsetX(), -elected.getElementY()-windowRenderer.getOffsetY());
         }
 
         return elected;

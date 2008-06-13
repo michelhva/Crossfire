@@ -160,12 +160,12 @@ public abstract class GUIElement
         return name;
     }
 
-    public int setElementX()
+    public int getElementX()
     {
         return gui != null ? gui.getX()+x : x;
     }
 
-    public int setElementY()
+    public int getElementY()
     {
         return gui != null ? gui.getY()+y : y;
     }
@@ -478,7 +478,7 @@ public abstract class GUIElement
                 render();
             }
 
-            g.drawImage(bufferedImage, setElementX(), setElementY(), window);
+            g.drawImage(bufferedImage, getElementX(), getElementY(), window);
         }
     }
 }
