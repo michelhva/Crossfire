@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-06-13 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -409,11 +409,6 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
-x 1
-y 31
-end
-arch Wraith
-face wraithp.151
 x 1
 y 31
 end
@@ -891,6 +886,10 @@ face blocked.111
 x 3
 y 29
 end
+arch dungeon_magic
+x 3
+y 29
+end
 arch rough_wall_1_4
 x 3
 y 30
@@ -900,6 +899,10 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
+x 3
+y 31
+end
+arch dungeon_magic
 x 3
 y 31
 end
@@ -1162,6 +1165,10 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
+x 4
+y 29
+end
+arch dungeon_magic
 x 4
 y 29
 end
@@ -1501,6 +1508,10 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
+x 5
+y 29
+end
+arch dungeon_magic
 x 5
 y 29
 end
@@ -2997,6 +3008,10 @@ face blocked.111
 x 9
 y 31
 end
+arch dungeon_magic
+x 9
+y 31
+end
 arch rough_wall_1_4
 x 9
 y 32
@@ -3267,6 +3282,10 @@ face blocked.111
 x 10
 y 31
 end
+arch dungeon_magic
+x 10
+y 31
+end
 arch roughwall_2_1_2
 x 10
 y 32
@@ -3522,6 +3541,10 @@ arch blackmarble
 name nothingness
 name_pl nothingness
 face blocked.111
+x 11
+y 31
+end
+arch dungeon_magic
 x 11
 y 31
 end
