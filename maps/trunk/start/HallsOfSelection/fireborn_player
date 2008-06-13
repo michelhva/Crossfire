@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-06-11 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -373,6 +373,10 @@ x 2
 y 15
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 15
+end
 arch lava_biglake_3_2
 x 2
 y 16
@@ -381,6 +385,10 @@ arch burningwall_2_1_1
 x 2
 y 16
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 16
 end
 arch lava_biglake_3_1
 x 2
@@ -391,6 +399,10 @@ x 2
 y 17
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 17
+end
 arch lava_biglake_3_2
 x 2
 y 18
@@ -399,6 +411,10 @@ arch burningwall_2_1_1
 x 2
 y 18
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 18
 end
 arch lava_biglake_3_1
 x 2
@@ -409,6 +425,10 @@ x 2
 y 19
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 19
+end
 arch lava_biglake_3_2
 x 2
 y 20
@@ -417,6 +437,10 @@ arch burningwall_2_1_1
 x 2
 y 20
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 20
 end
 arch lava_biglake_3_1
 x 2
@@ -427,6 +451,10 @@ x 2
 y 21
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 21
+end
 arch lava_biglake_3_2
 x 2
 y 22
@@ -435,6 +463,10 @@ arch burningwall_2_1_1
 x 2
 y 22
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 22
 end
 arch lava_biglake_3_1
 x 2
@@ -445,6 +477,10 @@ x 2
 y 23
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 23
+end
 arch lava_biglake_3_2
 x 2
 y 24
@@ -453,6 +489,10 @@ arch burningwall_2_1_1
 x 2
 y 24
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 24
 end
 arch lava_biglake_3_1
 x 2
@@ -463,6 +503,10 @@ x 2
 y 25
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 25
+end
 arch lava_biglake_3_2
 x 2
 y 26
@@ -471,6 +515,10 @@ arch burningwall_2_1_1
 x 2
 y 26
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 26
 end
 arch lava_biglake_3_1
 x 2
@@ -481,6 +529,10 @@ x 2
 y 27
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 27
+end
 arch lava_biglake_3_2
 x 2
 y 28
@@ -489,6 +541,10 @@ arch burningwall_2_1_1
 x 2
 y 28
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 28
 end
 arch lava_biglake_3_1
 x 2
@@ -499,6 +555,10 @@ x 2
 y 29
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 29
+end
 arch lava_biglake_3_2
 x 2
 y 30
@@ -507,6 +567,10 @@ arch burningwall_2_1_1
 x 2
 y 30
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 30
 end
 arch lava_biglake_3_1
 x 2
@@ -517,6 +581,10 @@ x 2
 y 31
 blocksview 0
 end
+arch dungeon_magic
+x 2
+y 31
+end
 arch lava_biglake_3_2
 x 2
 y 32
@@ -525,6 +593,10 @@ arch burningwall_2_1_1
 x 2
 y 32
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 32
 end
 arch lava_biglake_3_1
 x 2
@@ -534,6 +606,10 @@ arch burningwall_2_2_1
 x 2
 y 33
 blocksview 0
+end
+arch dungeon_magic
+x 2
+y 33
 end
 arch lava_biglake_3_2
 x 2
@@ -614,6 +690,10 @@ arch burningwall_2_1_2
 x 3
 y 15
 blocksview 0
+end
+arch dungeon_magic
+x 3
+y 15
 end
 arch magma
 x 3
@@ -837,6 +917,10 @@ x 3
 y 33
 blocksview 0
 end
+arch dungeon_magic
+x 3
+y 33
+end
 arch lava_biglake_3_2
 x 3
 y 34
@@ -922,6 +1006,10 @@ arch burningwall_2_1_2
 x 4
 y 15
 blocksview 0
+end
+arch dungeon_magic
+x 4
+y 15
 end
 arch magic_mouth
 msg
@@ -1121,6 +1209,10 @@ x 4
 y 29
 blocksview 0
 end
+arch dungeon_magic
+x 4
+y 30
+end
 arch magma
 x 4
 y 30
@@ -1156,6 +1248,10 @@ arch burningwall_2_1_2
 x 4
 y 33
 blocksview 0
+end
+arch dungeon_magic
+x 4
+y 33
 end
 arch lava_biglake_3_2
 x 4
@@ -1277,6 +1373,10 @@ arch burningwall_2_1_2
 x 5
 y 15
 blocksview 0
+end
+arch dungeon_magic
+x 5
+y 15
 end
 arch magic_mouth
 msg
@@ -1491,6 +1591,10 @@ x 5
 y 29
 blocksview 0
 end
+arch dungeon_magic
+x 5
+y 30
+end
 arch magma
 x 5
 y 30
@@ -1523,6 +1627,10 @@ arch burningwall_2_1_2
 x 5
 y 33
 blocksview 0
+end
+arch dungeon_magic
+x 5
+y 33
 end
 arch lava_biglake_3_2
 x 5
@@ -1833,6 +1941,10 @@ arch burningwall_2_1_2
 x 6
 y 33
 blocksview 0
+end
+arch dungeon_magic
+x 6
+y 33
 end
 arch lava_biglake_3_2
 x 6
@@ -2242,6 +2354,10 @@ x 7
 y 33
 blocksview 0
 end
+arch dungeon_magic
+x 7
+y 33
+end
 arch lava_biglake_3_2
 x 7
 y 34
@@ -2547,6 +2663,10 @@ x 8
 y 33
 blocksview 0
 end
+arch dungeon_magic
+x 8
+y 33
+end
 arch lava_biglake_3_2
 x 8
 y 34
@@ -2667,6 +2787,10 @@ arch burningwall_2_1_2
 x 9
 y 15
 blocksview 0
+end
+arch dungeon_magic
+x 9
+y 15
 end
 arch magic_mouth
 msg
@@ -2994,6 +3118,10 @@ x 10
 y 15
 blocksview 0
 end
+arch dungeon_magic
+x 10
+y 15
+end
 arch magic_mouth
 msg
 Step on the circle to become a Warrior.
@@ -3318,6 +3446,10 @@ x 11
 y 15
 blocksview 0
 end
+arch dungeon_magic
+x 11
+y 15
+end
 arch magma
 x 11
 y 16
@@ -3545,6 +3677,10 @@ x 11
 y 33
 blocksview 0
 end
+arch dungeon_magic
+x 11
+y 33
+end
 arch lava_biglake_3_2
 x 11
 y 34
@@ -3617,6 +3753,10 @@ x 12
 y 15
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch lava_biglake_3_2
 x 12
 y 16
@@ -3625,6 +3765,10 @@ arch burningwall_2_1_1
 x 12
 y 16
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 16
 end
 arch lava_biglake_3_2
 x 12
@@ -3635,6 +3779,10 @@ x 12
 y 17
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 17
+end
 arch lava_biglake_3_2
 x 12
 y 18
@@ -3643,6 +3791,10 @@ arch burningwall_2_1_1
 x 12
 y 18
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 18
 end
 arch lava_biglake_3_2
 x 12
@@ -3653,6 +3805,10 @@ x 12
 y 19
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 19
+end
 arch lava_biglake_3_2
 x 12
 y 20
@@ -3661,6 +3817,10 @@ arch burningwall_2_1_1
 x 12
 y 20
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 20
 end
 arch lava_biglake_3_2
 x 12
@@ -3671,6 +3831,10 @@ x 12
 y 21
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 21
+end
 arch lava_biglake_3_2
 x 12
 y 22
@@ -3679,6 +3843,10 @@ arch burningwall_2_1_1
 x 12
 y 22
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 22
 end
 arch lava_biglake_3_2
 x 12
@@ -3689,6 +3857,10 @@ x 12
 y 23
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 23
+end
 arch lava_biglake_3_2
 x 12
 y 24
@@ -3697,6 +3869,10 @@ arch burningwall_2_1_1
 x 12
 y 24
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 24
 end
 arch lava_biglake_3_2
 x 12
@@ -3707,6 +3883,10 @@ x 12
 y 25
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 25
+end
 arch lava_biglake_3_2
 x 12
 y 26
@@ -3715,6 +3895,10 @@ arch burningwall_2_1_1
 x 12
 y 26
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 26
 end
 arch lava_biglake_3_2
 x 12
@@ -3725,6 +3909,10 @@ x 12
 y 27
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 27
+end
 arch lava_biglake_3_2
 x 12
 y 28
@@ -3733,6 +3921,10 @@ arch burningwall_2_1_1
 x 12
 y 28
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 28
 end
 arch lava_biglake_3_2
 x 12
@@ -3743,6 +3935,10 @@ x 12
 y 29
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 29
+end
 arch lava_biglake_3_2
 x 12
 y 30
@@ -3751,6 +3947,10 @@ arch burningwall_2_1_1
 x 12
 y 30
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 30
 end
 arch lava_biglake_3_2
 x 12
@@ -3761,6 +3961,10 @@ x 12
 y 31
 blocksview 0
 end
+arch dungeon_magic
+x 12
+y 31
+end
 arch lava_biglake_3_2
 x 12
 y 32
@@ -3769,6 +3973,10 @@ arch burningwall_2_1_1
 x 12
 y 32
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 32
 end
 arch lava_biglake_3_2
 x 12
@@ -3778,6 +3986,10 @@ arch burningwall_2_2_4
 x 12
 y 33
 blocksview 0
+end
+arch dungeon_magic
+x 12
+y 33
 end
 arch lava_biglake_3_2
 x 12
