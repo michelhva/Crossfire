@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
@@ -48,6 +49,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * outside of the visible area.
      */
     private static final int SCROLL_CHARS = 8;
+
+    /**
+     * The command history for this text field.
+     */
+    private final CommandHistory commandHistory;
 
     private final BufferedImage activeImage;
 
@@ -98,6 +104,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
+        commandHistory = new CommandHistory(name);
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
         this.font = font;
@@ -237,6 +244,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             }
             break;
 
+        case KeyEvent.VK_KP_UP:
+        case KeyEvent.VK_UP:
+            historyPrev();
+            break;
+
+        case KeyEvent.VK_KP_DOWN:
+        case KeyEvent.VK_DOWN:
+            historyNext();
+            break;
+
         case KeyEvent.VK_HOME:
             synchronized (syncCursor)
             {
@@ -259,6 +276,27 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         }
     }
 
+    /**
+     * Activate the previous command from the command history.
+     */
+    private void historyPrev()
+    {
+        final String commandUp = commandHistory.up();
+        if (commandUp != null)
+        {
+            setText(commandUp);
+        }
+    }
+
+    /**
+     * Activate the next command from the command history.
+     */
+    private void historyNext()
+    {
+        final String commandDown = commandHistory.down();
+        setText(commandDown != null ? commandDown : "");
+    }
+
     /** {@inheritDoc} */
     public void keyReleased(final KeyEvent e)
     {
@@ -272,9 +310,22 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         {
         case '\r':
         case '\n':
-            getWindow().updatePlayerName(text.toString());
-            execute((JXCWindow)e.getSource(), text.toString());
+            final String command = text.toString();
+            getWindow().updatePlayerName(command);
+            execute((JXCWindow)e.getSource(), command);
+            if (!hideInput)
+            {
+                commandHistory.addCommand(command);
+            }
             setActive(false);
+            break;
+
+        case 0x0e:              // CTRL-N
+            historyNext();
+            break;
+
+        case 0x10:              // CTRL-P
+            historyPrev();
             break;
 
         case 0x16:              // CTRL-V
