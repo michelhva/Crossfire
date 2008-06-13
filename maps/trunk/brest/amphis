@@ -6,8 +6,7 @@ width 80
 height 50
 msg
 Created:  1994-05-31
-Modified: 2006-03-20 Gene Alexander (poof@eracc.com)
-What: Fix half-baked job of replacing the walls with "new" red walls some time back.
+Modified: 2008-06-13 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -13321,13 +13320,25 @@ arch pstone_1
 x 60
 y 23
 end
-arch deathtree
+arch pstone_1
 x 60
 y 24
 end
 arch deathtree
 x 60
+y 24
+end
+arch pstone_1
+x 60
 y 25
+end
+arch deathtree
+x 60
+y 25
+end
+arch pstone_1
+x 60
+y 26
 end
 arch deathtree
 x 60
@@ -13472,6 +13483,10 @@ end
 arch pstone_1
 x 61
 y 23
+end
+arch pstone_1
+x 61
+y 24
 end
 arch deathtree
 x 61
@@ -13641,9 +13656,17 @@ arch bat
 x 62
 y 30
 end
+arch grass
+x 62
+y 31
+end
 arch deathtree
 x 62
 y 31
+end
+arch grass
+x 62
+y 32
 end
 arch deathtree
 x 62
@@ -13807,6 +13830,10 @@ arch bat
 x 63
 y 31
 end
+arch grass
+x 63
+y 32
+end
 arch deathtree
 x 63
 y 32
@@ -13930,6 +13957,10 @@ end
 arch ant
 x 64
 y 26
+end
+arch pstone_2
+x 64
+y 27
 end
 arch ytree
 x 64
@@ -14062,6 +14093,10 @@ arch pstone_2
 x 65
 y 24
 end
+arch pstone_2
+x 65
+y 25
+end
 arch ytree
 x 65
 y 25
@@ -14070,9 +14105,17 @@ arch crater
 x 65
 y 26
 end
+arch swamp
+x 65
+y 27
+end
 arch ytree
 x 65
 y 27
+end
+arch swamp
+x 65
+y 28
 end
 arch ytree
 x 65
@@ -14198,9 +14241,17 @@ arch swamp
 x 66
 y 25
 end
+arch swamp
+x 66
+y 26
+end
 arch ytree
 x 66
 y 26
+end
+arch swamp
+x 66
+y 27
 end
 arch ytree
 x 66
@@ -14748,6 +14799,10 @@ arch grass
 x 70
 y 25
 end
+arch swamp
+x 70
+y 26
+end
 arch deathtree
 x 70
 y 26
@@ -15060,6 +15115,10 @@ arch fungus
 x 72
 y 31
 end
+arch desert
+x 72
+y 32
+end
 arch deathtree
 x 72
 y 32
@@ -15176,13 +15235,25 @@ arch bee
 x 73
 y 26
 end
-arch ytree_2
+arch deep_swamp
 x 73
 y 27
 end
 arch ytree_2
 x 73
+y 27
+end
+arch deep_swamp
+x 73
 y 28
+end
+arch ytree_2
+x 73
+y 28
+end
+arch grass
+x 73
+y 29
 end
 arch ytree_2
 x 73
@@ -15327,6 +15398,10 @@ end
 arch tree
 x 74
 y 28
+end
+arch grass
+x 74
+y 29
 end
 arch ytree_2
 x 74
