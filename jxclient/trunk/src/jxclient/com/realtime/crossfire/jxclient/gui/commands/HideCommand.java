@@ -50,6 +50,6 @@ public class HideCommand implements GUICommand
     /** {@inheritDoc} */
     public void execute()
     {
-        target.setVisible(false);
+        target.setElementVisible(false);
     }
 }

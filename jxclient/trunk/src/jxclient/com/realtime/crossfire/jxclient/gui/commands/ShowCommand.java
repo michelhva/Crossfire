@@ -50,6 +50,6 @@ public class ShowCommand implements GUICommand
     /** {@inheritDoc} */
     public void execute()
     {
-        target.setVisible(true);
+        target.setElementVisible(true);
     }
 }

@@ -334,7 +334,7 @@ public class JXCWindowRenderer
     {
         if (tooltip != null)
         {
-            if (tooltip.isVisible())
+            if (tooltip.isElementVisible())
             {
                 tooltip.drawImage(g);
             }

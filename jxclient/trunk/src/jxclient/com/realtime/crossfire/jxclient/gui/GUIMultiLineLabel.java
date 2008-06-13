@@ -101,7 +101,7 @@ public class GUIMultiLineLabel extends GUILabel
             return;
         }
 
-        final Font font = getFont();
+        final Font font = getTextFont();
         if (font == null)
         {
             return;

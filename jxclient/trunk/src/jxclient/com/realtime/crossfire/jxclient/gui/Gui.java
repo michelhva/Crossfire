@@ -239,7 +239,7 @@ public class Gui
             {
                 element.drawImage(g);
                 g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
-                g.drawRect(element.getX(), element.getY(), element.getWidth()-1, element.getHeight()-1);
+                g.drawRect(element.setElementX(), element.setElementY(), element.getWidth()-1, element.getHeight()-1);
             }
 
             final long t1 = System.currentTimeMillis();
@@ -413,9 +413,9 @@ public class Gui
         {
             if (!element.isIgnore())
             {
-                if (element.getX() <= x && x < element.getX()+element.getWidth())
+                if (element.setElementX() <= x && x < element.setElementX()+element.getWidth())
                 {
-                    if (element.getY() <= y && y < element.getY()+element.getHeight())
+                    if (element.setElementY() <= y && y < element.setElementY()+element.getHeight())
                     {
                         elected = element;
                     }
@@ -733,7 +733,7 @@ public class Gui
 
     public void updateVisibleElement(final GUIElement element)
     {
-        if (element.isVisible())
+        if (element.isElementVisible())
         {
             visibleElements.add(element);
         }

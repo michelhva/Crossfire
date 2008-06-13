@@ -1591,7 +1591,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            definedGUIElements.lookup(args[1]).setVisible(false);
+                            definedGUIElements.lookup(args[1]).setElementVisible(false);
                         }
                         else if (gui != null && args[0].equals("set_modal"))
                         {
