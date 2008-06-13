@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.DisplayMode;
-import java.awt.EventQueue;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.io.BufferedWriter;
@@ -61,14 +60,7 @@ public class jxclient
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
-        EventQueue.invokeLater(new Runnable()
-        {
-            /** {@inheritDoc} */
-            public void run()
-            {
-                new jxclient(args);
-            }
-        });
+        new jxclient(args);
     }
 
     /**
