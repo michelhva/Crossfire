@@ -8,7 +8,7 @@ enter_y 13
 msg
 Grumm's Inn
 Created:  2002-10-27 Todd Mitchell
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2008-06-12 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -810,6 +810,11 @@ end
 arch woodfloor2
 x 7
 y 8
+end
+arch button_small
+x 7
+y 9
+connected 1
 end
 arch woodfloor2
 x 7
