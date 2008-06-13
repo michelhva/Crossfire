@@ -169,15 +169,15 @@ public class TooltipManager
         tooltip.setElementVisible(true);
         tooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.setElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(activeGuiElement.getElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.setElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
+        if (activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
         {
-            ty = activeGuiElement.setElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
+            ty = activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }
         else
         {
-            ty = activeGuiElement.setElementY()-tooltip.getHeight()-TOOLTIP_DISTANCE;
+            ty = activeGuiElement.getElementY()-tooltip.getHeight()-TOOLTIP_DISTANCE;
         }
         tooltip.setElementLocation(tx, ty);
     }
